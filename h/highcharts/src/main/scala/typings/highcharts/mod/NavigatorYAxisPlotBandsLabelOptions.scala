@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorYAxisPlotBandsLabelOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Horizontal alignment of the label. Can be
     * one of "left", "center" or "right".
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Rotation of the text label in degrees .
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) CSS styles for the text label.
@@ -25,13 +23,13 @@ trait NavigatorYAxisPlotBandsLabelOptions extends StObject {
     * In styled mode, the labels are styled by the
     * `.highcharts-plot-band-label` class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The string text itself. A subset of HTML
     * is supported.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The text alignment for the label. While
@@ -40,30 +38,30 @@ trait NavigatorYAxisPlotBandsLabelOptions extends StObject {
     * point. Possible values are "left", "center" and "right". Defaults to the
     * same as the `align` option.
     */
-  var textAlign: js.UndefOr[AlignValue] = js.native
+  var textAlign: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Vertical alignment of the label relative
     * to the plot band. Can be one of "top", "middle" or "bottom".
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Horizontal position relative the
     * alignment. Default varies by orientation.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Vertical position of the text baseline
     * relative to the alignment. Default varies by orientation.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object NavigatorYAxisPlotBandsLabelOptions {
   

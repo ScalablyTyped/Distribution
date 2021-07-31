@@ -2,46 +2,44 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactFlow extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the contact flow.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The content of the contact flow.
     */
-  var Content: js.UndefOr[ContactFlowContent] = js.native
+  var Content: js.UndefOr[ContactFlowContent] = js.undefined
   
   /**
     * The description of the contact flow.
     */
-  var Description: js.UndefOr[ContactFlowDescription] = js.native
+  var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
   /**
     * The identifier of the contact flow.
     */
-  var Id: js.UndefOr[ContactFlowId] = js.native
+  var Id: js.UndefOr[ContactFlowId] = js.undefined
   
   /**
     * The name of the contact flow.
     */
-  var Name: js.UndefOr[ContactFlowName] = js.native
+  var Name: js.UndefOr[ContactFlowName] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The type of the contact flow. For descriptions of the available types, see Choose a Contact Flow Type in the Amazon Connect Administrator Guide.
     */
-  var Type: js.UndefOr[ContactFlowType] = js.native
+  var Type: js.UndefOr[ContactFlowType] = js.undefined
 }
 object ContactFlow {
   

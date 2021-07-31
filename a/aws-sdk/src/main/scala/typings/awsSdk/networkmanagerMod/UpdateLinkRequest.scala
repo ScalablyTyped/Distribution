@@ -2,41 +2,39 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLinkRequest extends StObject {
   
   /**
     * The upload and download speed in Mbps. 
     */
-  var Bandwidth: js.UndefOr[typings.awsSdk.networkmanagerMod.Bandwidth] = js.native
+  var Bandwidth: js.UndefOr[typings.awsSdk.networkmanagerMod.Bandwidth] = js.undefined
   
   /**
     * A description of the link. Length Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The ID of the link.
     */
-  var LinkId: String = js.native
+  var LinkId: String
   
   /**
     * The provider of the link. Length Constraints: Maximum length of 128 characters.
     */
-  var Provider: js.UndefOr[String] = js.native
+  var Provider: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the link. Length Constraints: Maximum length of 128 characters.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object UpdateLinkRequest {
   

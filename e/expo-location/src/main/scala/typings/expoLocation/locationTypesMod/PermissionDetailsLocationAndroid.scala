@@ -5,13 +5,11 @@ import typings.expoLocation.expoLocationStrings.fine
 import typings.expoLocation.expoLocationStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionDetailsLocationAndroid extends StObject {
   
-  var scope: fine | coarse | none = js.native
+  var scope: fine | coarse | none
 }
 object PermissionDetailsLocationAndroid {
   

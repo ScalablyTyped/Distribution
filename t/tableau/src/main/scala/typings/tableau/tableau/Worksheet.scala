@@ -2,11 +2,12 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Worksheet extends Sheet {
+trait Worksheet
+  extends StObject
+     with Sheet {
   
   /**
     * Applies a simple categorical filter (non-date).

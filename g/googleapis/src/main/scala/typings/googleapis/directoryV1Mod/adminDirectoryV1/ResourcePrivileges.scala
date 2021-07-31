@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Privileges")
@@ -30,7 +29,7 @@ class ResourcePrivileges protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPrivileges] = js.native
   def list(callback: BodyResponseCallback[SchemaPrivileges]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPrivileges] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPrivileges] = js.native
   def list(params: ParamsResourcePrivilegesList): GaxiosPromise[SchemaPrivileges] = js.native
   def list(params: ParamsResourcePrivilegesList, callback: BodyResponseCallback[SchemaPrivileges]): Unit = js.native
   def list(

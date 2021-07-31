@@ -3,23 +3,23 @@ package typings.miniprogram
 import typings.miniprogram.anon.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadFileArgs extends AsyncCallback[Header] {
+trait UploadFileArgs
+  extends StObject
+     with AsyncCallback[Header] {
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var fileType: String = js.native
+  var fileType: String
   
-  var formData: js.UndefOr[js.Any] = js.native
+  var formData: js.UndefOr[js.Any] = js.undefined
   
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object UploadFileArgs {
   

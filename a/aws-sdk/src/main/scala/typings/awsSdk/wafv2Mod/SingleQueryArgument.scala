@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleQueryArgument extends StObject {
   
   /**
     * The name of the query argument to inspect.
     */
-  var Name: FieldToMatchData = js.native
+  var Name: FieldToMatchData
 }
 object SingleQueryArgument {
   

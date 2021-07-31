@@ -2,28 +2,26 @@ package typings.gatsbyCli
 
 import typings.gatsbyCli.prepareStackTraceMod.ErrorWithCodeFrame
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredStackFrame
-import typings.prettyError.mod.^
 import typings.stackTrace.mod.StackFrame
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
-  @JSImport("gatsby-cli/lib/reporter/errors", "createErrorFromString")
+  @JSImport("gatsby-cli/lib/reporter/errors", JSImport.Namespace)
   @js.native
-  def createErrorFromString(errorStr: js.UndefOr[scala.Nothing], sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = js.native
-  @JSImport("gatsby-cli/lib/reporter/errors", "createErrorFromString")
-  @js.native
-  def createErrorFromString(errorStr: String, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-cli/lib/reporter/errors", "getErrorFormatter")
-  @js.native
-  def getErrorFormatter(): ^ = js.native
+  @scala.inline
+  def createErrorFromString(errorStr: String, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
+  @scala.inline
+  def createErrorFromString(errorStr: Unit, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
   
-  @JSImport("gatsby-cli/lib/reporter/errors", "sanitizeStructuredStackTrace")
-  @js.native
-  def sanitizeStructuredStackTrace(stack: js.Array[StackFrame]): js.Array[IStructuredStackFrame] = js.native
+  @scala.inline
+  def getErrorFormatter(): typings.prettyError.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFormatter")().asInstanceOf[typings.prettyError.mod.^]
+  
+  @scala.inline
+  def sanitizeStructuredStackTrace(stack: js.Array[StackFrame]): js.Array[IStructuredStackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStructuredStackTrace")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[IStructuredStackFrame]]
 }

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.beans.XIntrospectionAccess
   * @see com.sun.star.container.XNameAccess
   */
-@js.native
-trait XExactName extends XInterface {
+trait XExactName
+  extends StObject
+     with XInterface {
   
   /** @returns the exact name for a given aprroximate name.  For example "getExactName" could be returned for "GETEXACTNAME" when "GETEXACTNAME" was used by a c */
-  def getExactName(aApproximateName: String): String = js.native
+  def getExactName(aApproximateName: String): String
 }
 object XExactName {
   

@@ -2,29 +2,27 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options allows customized resource handling by Deployment Manager.
   */
-@js.native
 trait SchemaOptions extends StObject {
   
   /**
     * Options regarding how to thread async requests.
     */
-  var asyncOptions: js.UndefOr[js.Array[SchemaAsyncOptions]] = js.native
+  var asyncOptions: js.UndefOr[js.Array[SchemaAsyncOptions]] = js.undefined
   
   /**
     * The mappings that apply for requests.
     */
-  var inputMappings: js.UndefOr[js.Array[SchemaInputMapping]] = js.native
+  var inputMappings: js.UndefOr[js.Array[SchemaInputMapping]] = js.undefined
   
   /**
     * Options for how to validate and process properties on a resource.
     */
-  var validationOptions: js.UndefOr[SchemaValidationOptions] = js.native
+  var validationOptions: js.UndefOr[SchemaValidationOptions] = js.undefined
   
   /**
     * Additional properties block described as a jsonSchema, these properties
@@ -35,7 +33,7 @@ trait SchemaOptions extends StObject {
     * From the payload and consumed explicitly by InputMappings. ex: field1:
     * type: string field2: type: number
     */
-  var virtualProperties: js.UndefOr[String] = js.native
+  var virtualProperties: js.UndefOr[String] = js.undefined
 }
 object SchemaOptions {
   

@@ -3,7 +3,6 @@ package typings.twilioMcsClient
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
@@ -42,14 +41,13 @@ object transportMod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
   trait Response extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var status: js.Any = js.native
+    var status: js.Any
   }
   object Response {
     

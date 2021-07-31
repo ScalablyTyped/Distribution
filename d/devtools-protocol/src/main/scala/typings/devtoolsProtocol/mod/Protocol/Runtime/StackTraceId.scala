@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackTraceId extends StObject {
   
-  var debuggerId: js.UndefOr[UniqueDebuggerId] = js.native
+  var debuggerId: js.UndefOr[UniqueDebuggerId] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object StackTraceId {
   

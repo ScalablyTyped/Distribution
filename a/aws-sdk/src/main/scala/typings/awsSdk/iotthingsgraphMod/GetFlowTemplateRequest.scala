@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFlowTemplateRequest extends StObject {
   
   /**
     * The ID of the workflow. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:workflow:WORKFLOWNAME 
     */
-  var id: Urn = js.native
+  var id: Urn
   
   /**
     * The number of the workflow revision to retrieve.
     */
-  var revisionNumber: js.UndefOr[Version] = js.native
+  var revisionNumber: js.UndefOr[Version] = js.undefined
 }
 object GetFlowTemplateRequest {
   

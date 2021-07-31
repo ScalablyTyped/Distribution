@@ -4,19 +4,17 @@ import typings.mongodb.mod.ClientSession
 import typings.mongodb.mod.ReadPreferenceOrMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchSize extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
-  var nameOnly: js.UndefOr[Boolean] = js.native
+  var nameOnly: js.UndefOr[Boolean] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 object BatchSize {
   

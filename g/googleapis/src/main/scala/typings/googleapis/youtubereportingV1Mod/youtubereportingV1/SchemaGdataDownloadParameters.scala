@@ -2,24 +2,22 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gdata
   */
-@js.native
 trait SchemaGdataDownloadParameters extends StObject {
   
   /**
     * gdata
     */
-  var allowGzipCompression: js.UndefOr[Boolean] = js.native
+  var allowGzipCompression: js.UndefOr[Boolean] = js.undefined
   
   /**
     * gdata
     */
-  var ignoreRange: js.UndefOr[Boolean] = js.native
+  var ignoreRange: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGdataDownloadParameters {
   

@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strictOptionsMod {
   
-  @js.native
   trait StrictOptions extends StObject {
     
     /**
       * A value indicatin whether only exact matching values should be included.
       */
-    var exactMatch: js.UndefOr[Boolean] = js.native
+    var exactMatch: js.UndefOr[Boolean] = js.undefined
   }
   object StrictOptions {
     

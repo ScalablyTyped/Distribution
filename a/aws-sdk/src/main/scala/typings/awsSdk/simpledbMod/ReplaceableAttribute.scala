@@ -2,26 +2,24 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceableAttribute extends StObject {
   
   /**
     * The name of the replaceable attribute.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * A flag specifying whether or not to replace the attribute/value pair or to add a new attribute/value pair. The default setting is false.
     */
-  var Replace: js.UndefOr[Boolean] = js.native
+  var Replace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the replaceable attribute.
     */
-  var Value: String = js.native
+  var Value: String
 }
 object ReplaceableAttribute {
   

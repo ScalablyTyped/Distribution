@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetScriptExecutionDisabledRequest extends StObject {
   
   /**
     * Whether script execution should be disabled in the page.
     */
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object SetScriptExecutionDisabledRequest {
   

@@ -4,13 +4,14 @@ import typings.rdfExt.anon.TermTypePropType
 import typings.rdfJs.mod.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object variableMod {
   
   @js.native
-  trait VariableExt extends Variable {
+  trait VariableExt
+    extends StObject
+       with Variable {
     
     def toCanonical(): String = js.native
     

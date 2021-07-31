@@ -5,7 +5,6 @@ import typings.plottable.datasetMod.Dataset
 import typings.plottable.stackingUtilsMod.IStackingOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackedAreaPlotMod {
@@ -58,6 +57,10 @@ object stackedAreaPlotMod {
   /* static members */
   object StackedArea {
     
+    @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Given an array of Datasets and the accessor function for the key, computes the
       * set reunion (no duplicates) of the domain of each Dataset. The keys are stringified
@@ -67,8 +70,7 @@ object stackedAreaPlotMod {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea._domainKeys")
-    @js.native
-    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
+    @scala.inline
+    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListActivatedRulesInRuleGroupResponse extends StObject {
   
   /**
     * An array of ActivatedRules objects.
     */
-  var ActivatedRules: js.UndefOr[typings.awsSdk.wafregionalMod.ActivatedRules] = js.native
+  var ActivatedRules: js.UndefOr[typings.awsSdk.wafregionalMod.ActivatedRules] = js.undefined
   
   /**
     * If you have more ActivatedRules than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more ActivatedRules, submit another ListActivatedRulesInRuleGroup request, and specify the NextMarker value from the response in the NextMarker value in the next request.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.undefined
 }
 object ListActivatedRulesInRuleGroupResponse {
   

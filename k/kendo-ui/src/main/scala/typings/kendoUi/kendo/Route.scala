@@ -3,17 +3,17 @@ package typings.kendoUi.kendo
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Route extends Class {
+trait Route
+  extends StObject
+     with Class {
   
-  def callback(url: String): Unit = js.native
+  def callback(url: String): Unit
   
-  var route: RegExp = js.native
+  var route: RegExp
   
-  def worksWith(url: String): Unit = js.native
+  def worksWith(url: String): Unit
 }
 object Route {
   

@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the additional service features that are supported with the model. */
-@js.native
 trait SupportedFeatures extends StObject {
   
   /** Indicates whether the customization interface can be used to create a custom language model based on the language model. */
-  var custom_language_model: Boolean = js.native
+  var custom_language_model: Boolean
   
   /** Indicates whether the `speaker_labels` parameter can be used with the language model. */
-  var speaker_labels: Boolean = js.native
+  var speaker_labels: Boolean
 }
 object SupportedFeatures {
   

@@ -5,51 +5,49 @@ import typings.postmark.messageSupportingTypesMod.Header
 import typings.postmark.outboundMessageMod.Recipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inboundMessageMod {
   
-  @js.native
   trait InboundMessage extends StObject {
     
-    var Attachments: js.Array[Attachment] = js.native
+    var Attachments: js.Array[Attachment]
     
-    var Bcc: String = js.native
+    var Bcc: String
     
-    var BccFull: js.Array[InboundRecipient] = js.native
+    var BccFull: js.Array[InboundRecipient]
     
-    var Cc: String = js.native
+    var Cc: String
     
-    var CcFull: js.Array[InboundRecipient] = js.native
+    var CcFull: js.Array[InboundRecipient]
     
-    var Date: String = js.native
+    var Date: String
     
-    var From: String = js.native
+    var From: String
     
-    var FromFull: InboundRecipient = js.native
+    var FromFull: InboundRecipient
     
-    var FromName: String = js.native
+    var FromName: String
     
-    var MailboxHash: String = js.native
+    var MailboxHash: String
     
-    var MessageID: String = js.native
+    var MessageID: String
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var OriginalRecipient: String = js.native
+    var OriginalRecipient: String
     
-    var ReplyTo: String = js.native
+    var ReplyTo: String
     
-    var Status: String = js.native
+    var Status: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var To: String = js.native
+    var To: String
     
-    var ToFull: js.Array[InboundRecipient] = js.native
+    var ToFull: js.Array[InboundRecipient]
   }
   object InboundMessage {
     
@@ -155,18 +153,19 @@ object inboundMessageMod {
     }
   }
   
-  @js.native
-  trait InboundMessageDetails extends InboundMessage {
+  trait InboundMessageDetails
+    extends StObject
+       with InboundMessage {
     
-    var BlockedReason: String = js.native
+    var BlockedReason: String
     
-    var Headers: js.Array[Header] = js.native
+    var Headers: js.Array[Header]
     
-    var HtmlBody: String = js.native
+    var HtmlBody: String
     
-    var StrippedTextReply: String = js.native
+    var StrippedTextReply: String
     
-    var TextBody: String = js.native
+    var TextBody: String
   }
   object InboundMessageDetails {
     
@@ -223,12 +222,11 @@ object inboundMessageMod {
     }
   }
   
-  @js.native
   trait InboundMessages extends StObject {
     
-    var InboundMessages: js.Array[InboundMessage] = js.native
+    var InboundMessages: js.Array[InboundMessage]
     
-    var TotalCount: String = js.native
+    var TotalCount: String
   }
   object InboundMessages {
     
@@ -252,10 +250,11 @@ object inboundMessageMod {
     }
   }
   
-  @js.native
-  trait InboundRecipient extends Recipient {
+  trait InboundRecipient
+    extends StObject
+       with Recipient {
     
-    var MailboxHash: String = js.native
+    var MailboxHash: String
   }
   object InboundRecipient {
     

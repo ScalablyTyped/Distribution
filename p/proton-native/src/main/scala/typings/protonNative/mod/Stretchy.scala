@@ -2,10 +2,8 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stretchy extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Stretchy extends StObject {
     * - Combobox/RadioButton Items
     * - MenuBar
     */
-  var stretchy: js.UndefOr[Boolean] = js.native
+  var stretchy: js.UndefOr[Boolean] = js.undefined
 }
 object Stretchy {
   

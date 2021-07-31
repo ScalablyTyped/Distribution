@@ -2,21 +2,19 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterOptions extends StObject {
   
-  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.native
+  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
   
-  var log: js.UndefOr[typings.bunyan.mod.^] = js.native
+  var log: js.UndefOr[typings.bunyan.mod.^] = js.undefined
   
-  var onceNext: js.UndefOr[Boolean] = js.native
+  var onceNext: js.UndefOr[Boolean] = js.undefined
   
-  var registry: js.UndefOr[RouterRegistryRadix] = js.native
+  var registry: js.UndefOr[RouterRegistryRadix] = js.undefined
   
-  var strictNext: js.UndefOr[Boolean] = js.native
+  var strictNext: js.UndefOr[Boolean] = js.undefined
 }
 object RouterOptions {
   

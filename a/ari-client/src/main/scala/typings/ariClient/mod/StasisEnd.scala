@@ -3,16 +3,16 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StasisEnd extends Event {
+trait StasisEnd
+  extends StObject
+     with Event {
   
   /**
     * Channel.
     */
-  var channel: Channel = js.native
+  var channel: Channel
 }
 object StasisEnd {
   

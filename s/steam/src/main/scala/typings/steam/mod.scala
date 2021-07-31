@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,11 +19,13 @@ object mod {
   object EChatEntryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EChatEntryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EChatEntryType & Double] = js.native
     
     @js.native
-    sealed trait ChatMsg extends EChatEntryType
-    /* 0 */ val ChatMsg: typings.steam.mod.EChatEntryType.ChatMsg with Double = js.native
+    sealed trait ChatMsg
+      extends StObject
+         with EChatEntryType
+    /* 0 */ val ChatMsg: typings.steam.mod.EChatEntryType.ChatMsg & Double = js.native
   }
   
   @js.native
@@ -34,11 +35,13 @@ object mod {
   object EChatMemberStateChange extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EChatMemberStateChange with Double] = js.native
+    def apply(value: Double): js.UndefOr[EChatMemberStateChange & Double] = js.native
     
     @js.native
-    sealed trait Kicked extends EChatMemberStateChange
-    /* 0 */ val Kicked: typings.steam.mod.EChatMemberStateChange.Kicked with Double = js.native
+    sealed trait Kicked
+      extends StObject
+         with EChatMemberStateChange
+    /* 0 */ val Kicked: typings.steam.mod.EChatMemberStateChange.Kicked & Double = js.native
   }
   
   @js.native
@@ -48,11 +51,13 @@ object mod {
   object EPersonaState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EPersonaState with Double] = js.native
+    def apply(value: Double): js.UndefOr[EPersonaState & Double] = js.native
     
     @js.native
-    sealed trait Online extends EPersonaState
-    /* 0 */ val Online: typings.steam.mod.EPersonaState.Online with Double = js.native
+    sealed trait Online
+      extends StObject
+         with EPersonaState
+    /* 0 */ val Online: typings.steam.mod.EPersonaState.Online & Double = js.native
   }
   
   @js.native
@@ -62,11 +67,13 @@ object mod {
   object EResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[EResult & Double] = js.native
     
     @js.native
-    sealed trait AccountLogonDenied extends EResult
-    /* 0 */ val AccountLogonDenied: typings.steam.mod.EResult.AccountLogonDenied with Double = js.native
+    sealed trait AccountLogonDenied
+      extends StObject
+         with EResult
+    /* 0 */ val AccountLogonDenied: typings.steam.mod.EResult.AccountLogonDenied & Double = js.native
   }
   
   @JSImport("steam", "SteamClient")
@@ -99,7 +106,7 @@ object mod {
     
     var steamID: String = js.native
     
-    def webLogOn(callback: js.Function1[/* cookie */ js.Array[_], Unit]): Unit = js.native
+    def webLogOn(callback: js.Function1[/* cookie */ js.Array[js.Any], Unit]): Unit = js.native
   }
   
   @JSImport("steam", "servers")
@@ -108,16 +115,15 @@ object mod {
   @scala.inline
   def servers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("servers")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait LogonOptions extends StObject {
     
-    var accountName: String = js.native
+    var accountName: String
     
-    var authCode: js.UndefOr[String] = js.native
+    var authCode: js.UndefOr[String] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var shaSentryfile: js.UndefOr[String] = js.native
+    var shaSentryfile: js.UndefOr[String] = js.undefined
   }
   object LogonOptions {
     

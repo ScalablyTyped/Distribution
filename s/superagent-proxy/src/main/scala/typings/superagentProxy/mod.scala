@@ -3,22 +3,23 @@ package typings.superagentProxy
 import typings.superagent.mod.SuperAgentStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(s: SuperAgentStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("superagent-proxy", JSImport.Namespace)
   @js.native
-  def apply(s: SuperAgentStatic): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object superagentAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      def proxy(url: String): this.type = js.native
+      def proxy(url: String): this.type
     }
     object Request {
       

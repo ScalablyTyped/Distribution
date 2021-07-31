@@ -4,7 +4,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,18 +50,13 @@ trait IChartistSvg extends StObject {
     * Create a new SVG element whose wrapper object will be selected for further operations. This way you can also create nested groups easily.
     */
   def elem(name: String): IChartistSvg = js.native
-  def elem(
-    name: String,
-    attributes: js.UndefOr[scala.Nothing],
-    className: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean
-  ): IChartistSvg = js.native
-  def elem(name: String, attributes: js.UndefOr[scala.Nothing], className: String): IChartistSvg = js.native
-  def elem(name: String, attributes: js.UndefOr[scala.Nothing], className: String, insertFirst: Boolean): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object): IChartistSvg = js.native
-  def elem(name: String, attributes: js.Object, className: js.UndefOr[scala.Nothing], insertFirst: Boolean): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object, className: String): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object, className: String, insertFirst: Boolean): IChartistSvg = js.native
+  def elem(name: String, attributes: js.Object, className: Unit, insertFirst: Boolean): IChartistSvg = js.native
+  def elem(name: String, attributes: Unit, className: String): IChartistSvg = js.native
+  def elem(name: String, attributes: Unit, className: String, insertFirst: Boolean): IChartistSvg = js.native
+  def elem(name: String, attributes: Unit, className: Unit, insertFirst: Boolean): IChartistSvg = js.native
   
   /**
     * This method will clear all child nodes of the current wrapper object.
@@ -74,18 +68,13 @@ trait IChartistSvg extends StObject {
     * This method creates a foreignObject (see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) that allows to embed HTML content into a SVG graphic. With the help of foreignObjects you can enable the usage of regular HTML elements inside of SVG where they are subject for SVG positioning and transformation but the Browser will use the HTML rendering capabilities for the containing DOM.
     */
   def foreignObject(content: js.Any): IChartistSvg = js.native
-  def foreignObject(
-    content: js.Any,
-    attributes: js.UndefOr[scala.Nothing],
-    className: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean
-  ): IChartistSvg = js.native
-  def foreignObject(content: js.Any, attributes: js.UndefOr[scala.Nothing], className: String): IChartistSvg = js.native
-  def foreignObject(content: js.Any, attributes: js.UndefOr[scala.Nothing], className: String, insertFirst: Boolean): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object): IChartistSvg = js.native
-  def foreignObject(content: js.Any, attributes: js.Object, className: js.UndefOr[scala.Nothing], insertFirst: Boolean): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object, className: String): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object, className: String, insertFirst: Boolean): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: js.Object, className: Unit, insertFirst: Boolean): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: Unit, className: String): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: Unit, className: String, insertFirst: Boolean): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: Unit, className: Unit, insertFirst: Boolean): IChartistSvg = js.native
   
   /**
     * "Safe" way to get property value from svg BoundingBox. This is a workaround. Firefox throws an NS_ERROR_FAILURE error if getBBox() is called on an invisible node.

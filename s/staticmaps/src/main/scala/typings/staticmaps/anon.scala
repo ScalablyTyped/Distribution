@@ -3,17 +3,15 @@ package typings.staticmaps
 import typings.staticmaps.mod.ZoomLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[ZoomLevel] = js.native
+    var max: js.UndefOr[ZoomLevel] = js.undefined
     
-    var min: js.UndefOr[ZoomLevel] = js.native
+    var min: js.UndefOr[ZoomLevel] = js.undefined
   }
   object Max {
     

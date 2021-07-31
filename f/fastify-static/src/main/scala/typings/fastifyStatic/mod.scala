@@ -6,7 +6,6 @@ import typings.fastifyStatic.fastifyStaticStrings.html
 import typings.fastifyStatic.fastifyStaticStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,47 +14,46 @@ object mod extends Shortcut {
   @js.native
   val default: FastifyPlugin[FastifyStaticOptions] = js.native
   
-  @js.native
   trait FastifyStaticOptions extends StObject {
     
     // Passed on to `send`
-    var acceptRanges: js.UndefOr[Boolean] = js.native
+    var acceptRanges: js.UndefOr[Boolean] = js.undefined
     
-    var cacheControl: js.UndefOr[Boolean] = js.native
+    var cacheControl: js.UndefOr[Boolean] = js.undefined
     
-    var decorateReply: js.UndefOr[Boolean] = js.native
+    var decorateReply: js.UndefOr[Boolean] = js.undefined
     
-    var dotfiles: js.UndefOr[Boolean] = js.native
+    var dotfiles: js.UndefOr[Boolean] = js.undefined
     
-    var etag: js.UndefOr[Boolean] = js.native
+    var etag: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var immutable: js.UndefOr[Boolean] = js.native
+    var immutable: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[js.Array[String]] = js.native
+    var index: js.UndefOr[js.Array[String]] = js.undefined
     
-    var lastModified: js.UndefOr[Boolean] = js.native
+    var lastModified: js.UndefOr[Boolean] = js.undefined
     
-    var list: js.UndefOr[Boolean | ListOptions] = js.native
+    var list: js.UndefOr[Boolean | ListOptions] = js.undefined
     
-    var maxAge: js.UndefOr[String | Double] = js.native
+    var maxAge: js.UndefOr[String | Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var prefixAvoidTrailingSlash: js.UndefOr[Boolean] = js.native
+    var prefixAvoidTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[Boolean] = js.native
+    var redirect: js.UndefOr[Boolean] = js.undefined
     
-    var root: String = js.native
+    var root: String
     
-    var schemaHide: js.UndefOr[Boolean] = js.native
+    var schemaHide: js.UndefOr[Boolean] = js.undefined
     
-    var serve: js.UndefOr[Boolean] = js.native
+    var serve: js.UndefOr[Boolean] = js.undefined
     
-    var setHeaders: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var setHeaders: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var wildcard: js.UndefOr[Boolean | String] = js.native
+    var wildcard: js.UndefOr[Boolean | String] = js.undefined
   }
   object FastifyStaticOptions {
     
@@ -187,12 +185,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ListDir extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var name: String = js.native
+    var name: String
   }
   object ListDir {
     
@@ -213,12 +210,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ListFile extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var name: String = js.native
+    var name: String
   }
   object ListFile {
     
@@ -239,16 +235,43 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
-    var format: json | html = js.native
+    var format: json | html
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    def render(dirs: js.Array[ListDir], files: js.Array[ListFile]): String = js.native
+    def render(dirs: js.Array[ListDir], files: js.Array[ListFile]): String
     @JSName("render")
-    var render_Original: ListRender = js.native
+    var render_Original: ListRender
+  }
+  object ListOptions {
+    
+    @scala.inline
+    def apply(
+      format: json | html,
+      names: js.Array[String],
+      render: (/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile]) => String
+    ): ListOptions = {
+      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
+      __obj.asInstanceOf[ListOptions]
+    }
+    
+    @scala.inline
+    implicit class ListOptionsMutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFormat(value: json | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      
+      @scala.inline
+      def setRender(value: (/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    }
   }
   
   type ListRender = js.Function2[/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile], String]

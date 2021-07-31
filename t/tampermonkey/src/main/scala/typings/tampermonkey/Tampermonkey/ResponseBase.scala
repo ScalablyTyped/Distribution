@@ -3,25 +3,23 @@ package typings.tampermonkey.Tampermonkey
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseBase extends StObject {
   
-  val readyState: ReadyState = js.native
+  val readyState: ReadyState
   
-  val response: js.Any = js.native
+  val response: js.Any
   
-  val responseHeaders: String = js.native
+  val responseHeaders: String
   
-  val responseText: String = js.native
+  val responseText: String
   
-  val responseXML: Document | Null = js.native
+  val responseXML: Document | Null
   
-  val status: Double = js.native
+  val status: Double
   
-  val statusText: String = js.native
+  val statusText: String
 }
 object ResponseBase {
   
@@ -34,7 +32,7 @@ object ResponseBase {
     status: Double,
     statusText: String
   ): ResponseBase = {
-    val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], responseXML = null)
     __obj.asInstanceOf[ResponseBase]
   }
   

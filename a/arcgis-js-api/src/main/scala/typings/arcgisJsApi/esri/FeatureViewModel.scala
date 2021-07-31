@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureViewModel extends Accessor {
+trait FeatureViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) of the feature.

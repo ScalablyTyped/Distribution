@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeContextMod extends Shortcut {
@@ -14,10 +13,9 @@ object resizeContextMod extends Shortcut {
   @js.native
   val default: Context[ResizeContextProps] = js.native
   
-  @js.native
   trait ResizeContextProps extends StObject {
     
-    def onColumnResize(columnKey: Key, width: Double): Unit = js.native
+    def onColumnResize(columnKey: Key, width: Double): Unit
   }
   object ResizeContextProps {
     

@@ -10,9 +10,9 @@ Returns `true` if the string is lower case only
 | ------------------ | :-------------: |
 | Full name          | is-lower-case |
 | Keywords           | is, lower, case, check, boolean |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 54867440 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 55916936 |
 | # stars            | 1 |
 
 ## Links

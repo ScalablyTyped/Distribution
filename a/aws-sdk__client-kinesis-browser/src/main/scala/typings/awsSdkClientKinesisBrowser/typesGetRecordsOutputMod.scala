@@ -5,34 +5,34 @@ import typings.awsSdkClientKinesisBrowser.typesRecordMod.UnmarshalledRecord
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetRecordsOutputMod {
   
-  @js.native
-  trait GetRecordsOutput extends OutputTypesUnion {
+  trait GetRecordsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The number of milliseconds the <a>GetRecords</a> response is from the tip of the stream, indicating how far behind current time the consumer is. A value of zero indicates that record processing is caught up, and there are no new records to process at this moment.</p>
       */
-    var MillisBehindLatest: js.UndefOr[Double] = js.native
+    var MillisBehindLatest: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The next position in the shard from which to start sequentially reading data records. If set to <code>null</code>, the shard has been closed and the requested iterator does not return any more data. </p>
       */
-    var NextShardIterator: js.UndefOr[String] = js.native
+    var NextShardIterator: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The data records retrieved from the shard.</p>
       */
-    var Records: js.Array[UnmarshalledRecord] = js.native
+    var Records: js.Array[UnmarshalledRecord]
   }
   object GetRecordsOutput {
     

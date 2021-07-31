@@ -2,20 +2,18 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The answer field is true if the current context size is between the minSize and maxSize values that are specified in the object, and false otherwise.
   */
-@js.native
 trait ContextSizeResponse extends StObject {
   
-  var answer: Boolean = js.native
+  var answer: Boolean
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
 }
 object ContextSizeResponse {
   

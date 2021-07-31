@@ -3,7 +3,6 @@ package typings.durandal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,19 +13,19 @@ trait DurandalSystemModule extends StObject {
     * @param {string} moduleId The id of the module to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(moduleId: String): DurandalPromise[_] = js.native
+  def acquire(moduleId: String): DurandalPromise[js.Any] = js.native
   /**
     * Uses require.js to obtain multiple modules. This function returns a promise which resolves with the module instances in an array.
     * @param {string} moduleIds* The ids of the modules to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(moduleIds: String*): DurandalPromise[js.Array[_]] = js.native
+  def acquire(moduleIds: String*): DurandalPromise[js.Array[js.Any]] = js.native
   /**
     * Uses require.js to obtain an array of modules. This function returns a promise which resolves with the modules instances in an array.
     * @param {string[]} moduleIds The ids of the modules to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(modules: js.Array[String]): DurandalPromise[js.Array[_]] = js.native
+  def acquire(modules: js.Array[String]): DurandalPromise[js.Array[js.Any]] = js.native
   
   /**
     * Asserts a condition by throwing an error if the condition fails.
@@ -194,5 +193,5 @@ trait DurandalSystemModule extends StObject {
     * @param {number} milliseconds The number of milliseconds to wait.
     * @returns {Promise}
     */
-  def wait(milliseconds: Double): DurandalPromise[_] = js.native
+  def wait(milliseconds: Double): DurandalPromise[js.Any] = js.native
 }

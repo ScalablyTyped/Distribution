@@ -10,9 +10,9 @@ JavaScript code generator from an ESTree-compliant AST.
 | ------------------ | :-------------: |
 | Full name          | astring |
 | Keywords           | ast, codegen, code generator, estree, astravel |
-| # releases         | 5 |
-| # dependents       | 80 |
-| # downloads        | 381218 |
+| # releases         | 9 |
+| # dependents       | 95 |
+| # downloads        | 1065088 |
 | # stars            | 1 |
 
 ## Links

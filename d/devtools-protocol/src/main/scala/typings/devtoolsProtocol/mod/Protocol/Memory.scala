@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Memory {
   
-  @js.native
   trait GetAllTimeSamplingProfileResponse extends StObject {
     
-    var profile: SamplingProfile = js.native
+    var profile: SamplingProfile
   }
   object GetAllTimeSamplingProfileResponse {
     
@@ -28,10 +26,9 @@ object Memory {
     }
   }
   
-  @js.native
   trait GetBrowserSamplingProfileResponse extends StObject {
     
-    var profile: SamplingProfile = js.native
+    var profile: SamplingProfile
   }
   object GetBrowserSamplingProfileResponse {
     
@@ -49,14 +46,13 @@ object Memory {
     }
   }
   
-  @js.native
   trait GetDOMCountersResponse extends StObject {
     
-    var documents: integer = js.native
+    var documents: integer
     
-    var jsEventListeners: integer = js.native
+    var jsEventListeners: integer
     
-    var nodes: integer = js.native
+    var nodes: integer
   }
   object GetDOMCountersResponse {
     
@@ -80,10 +76,9 @@ object Memory {
     }
   }
   
-  @js.native
   trait GetSamplingProfileResponse extends StObject {
     
-    var profile: SamplingProfile = js.native
+    var profile: SamplingProfile
   }
   object GetSamplingProfileResponse {
     
@@ -101,29 +96,28 @@ object Memory {
     }
   }
   
-  @js.native
   trait Module extends StObject {
     
     /**
       * Base address where the module is loaded into memory. Encoded as a decimal
       * or hexadecimal (0x prefixed) string.
       */
-    var baseAddress: String = js.native
+    var baseAddress: String
     
     /**
       * Name of the module.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Size of the module in bytes.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * UUID of the module.
       */
-    var uuid: String = js.native
+    var uuid: String
   }
   object Module {
     
@@ -164,12 +158,11 @@ object Memory {
     def moderate: typings.devtoolsProtocol.devtoolsProtocolStrings.moderate = "moderate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.moderate]
   }
   
-  @js.native
   trait SamplingProfile extends StObject {
     
-    var modules: js.Array[Module] = js.native
+    var modules: js.Array[Module]
     
-    var samples: js.Array[SamplingProfileNode] = js.native
+    var samples: js.Array[SamplingProfileNode]
   }
   object SamplingProfile {
     
@@ -196,23 +189,22 @@ object Memory {
     }
   }
   
-  @js.native
   trait SamplingProfileNode extends StObject {
     
     /**
       * Size of the sampled allocation.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Execution stack at the point of allocation.
       */
-    var stack: js.Array[String] = js.native
+    var stack: js.Array[String]
     
     /**
       * Total bytes attributed to this sample.
       */
-    var total: Double = js.native
+    var total: Double
   }
   object SamplingProfileNode {
     
@@ -239,13 +231,12 @@ object Memory {
     }
   }
   
-  @js.native
   trait SetPressureNotificationsSuppressedRequest extends StObject {
     
     /**
       * If true, memory pressure notifications will be suppressed.
       */
-    var suppressed: Boolean = js.native
+    var suppressed: Boolean
   }
   object SetPressureNotificationsSuppressedRequest {
     
@@ -263,13 +254,12 @@ object Memory {
     }
   }
   
-  @js.native
   trait SimulatePressureNotificationRequest extends StObject {
     
     /**
       * Memory pressure level of the notification.
       */
-    var level: PressureLevel = js.native
+    var level: PressureLevel
   }
   object SimulatePressureNotificationRequest {
     
@@ -287,18 +277,17 @@ object Memory {
     }
   }
   
-  @js.native
   trait StartSamplingRequest extends StObject {
     
     /**
       * Average number of bytes between samples.
       */
-    var samplingInterval: js.UndefOr[integer] = js.native
+    var samplingInterval: js.UndefOr[integer] = js.undefined
     
     /**
       * Do not randomize intervals between samples.
       */
-    var suppressRandomness: js.UndefOr[Boolean] = js.native
+    var suppressRandomness: js.UndefOr[Boolean] = js.undefined
   }
   object StartSamplingRequest {
     

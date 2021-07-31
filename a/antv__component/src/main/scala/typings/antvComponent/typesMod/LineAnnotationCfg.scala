@@ -5,35 +5,35 @@ import typings.antvGBase.typesMod.Point
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineAnnotationCfg extends GroupComponentCfg {
+trait LineAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 结束点
     * @type {Point}
     */
-  var end: js.UndefOr[Point] = js.native
+  var end: js.UndefOr[Point] = js.undefined
   
   /**
     * 起始点
     * @type {Point}
     */
-  var start: js.UndefOr[Point] = js.native
+  var start: js.UndefOr[Point] = js.undefined
   
   /**
     * 线的样式
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
   
   /**
     * 线上的文本配置
     * @type {LineAnnotationTextCfg}
     */
-  var text: js.UndefOr[LineAnnotationTextCfg] = js.native
+  var text: js.UndefOr[LineAnnotationTextCfg] = js.undefined
 }
 object LineAnnotationCfg {
   

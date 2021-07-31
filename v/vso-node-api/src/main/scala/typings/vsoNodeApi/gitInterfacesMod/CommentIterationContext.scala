@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentIterationContext extends StObject {
   
   /**
     * The iteration of the file on the left side of the diff when the thread was created. If this value is equal to SecondComparingIteration, then this version is the common commit between the source and target branches of the pull request.
     */
-  var firstComparingIteration: Double = js.native
+  var firstComparingIteration: Double
   
   /**
     * The iteration of the file on the right side of the diff when the thread was created.
     */
-  var secondComparingIteration: Double = js.native
+  var secondComparingIteration: Double
 }
 object CommentIterationContext {
   

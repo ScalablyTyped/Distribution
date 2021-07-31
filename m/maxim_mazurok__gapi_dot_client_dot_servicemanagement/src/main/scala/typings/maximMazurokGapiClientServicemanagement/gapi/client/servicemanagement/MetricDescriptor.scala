@@ -2,51 +2,49 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricDescriptor extends StObject {
   
   /** A detailed description of the metric, which can be used in documentation. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example "Request count". This field is optional but it is
     * recommended to be set for any metrics associated with user-visible concepts, such as Quota.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The set of labels that can be used to describe a specific instance of this metric type. For example, the `appengine.googleapis.com/http/server/response_latencies` metric type has a
     * label for the HTTP response code, `response_code`, so you can look at latencies for successful responses or just for responses that failed.
     */
-  var labels: js.UndefOr[js.Array[LabelDescriptor]] = js.native
+  var labels: js.UndefOr[js.Array[LabelDescriptor]] = js.undefined
   
   /** Optional. The launch stage of the metric definition. */
-  var launchStage: js.UndefOr[String] = js.native
+  var launchStage: js.UndefOr[String] = js.undefined
   
   /** Optional. Metadata which can be used to guide usage of the metric. */
-  var metadata: js.UndefOr[MetricDescriptorMetadata] = js.native
+  var metadata: js.UndefOr[MetricDescriptorMetadata] = js.undefined
   
   /** Whether the metric records instantaneous values, changes to a value, etc. Some combinations of `metric_kind` and `value_type` might not be supported. */
-  var metricKind: js.UndefOr[String] = js.native
+  var metricKind: js.UndefOr[String] = js.undefined
   
   /**
     * Read-only. If present, then a time series, which is identified partially by a metric type and a MonitoredResourceDescriptor, that is associated with this metric type can only be
     * associated with one of the monitored resource types listed here.
     */
-  var monitoredResourceTypes: js.UndefOr[js.Array[String]] = js.native
+  var monitoredResourceTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The resource name of the metric descriptor. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined metric types have the DNS name `custom.googleapis.com` or `external.googleapis.com`.
     * Metric types should use a natural hierarchical grouping. For example: "custom.googleapis.com/invoice/paid/amount" "external.googleapis.com/prometheus/up"
     * "appengine.googleapis.com/http/server/response_latencies"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The units in which the metric value is reported. It is only applicable if the `value_type` is `INT64`, `DOUBLE`, or `DISTRIBUTION`. The `unit` defines the representation of the
@@ -70,10 +68,10 @@ trait MetricDescriptor extends StObject {
     * giving a percentage (so the metric values are typically in the range of 0..100, and a metric value `3` means "3 percent"). * `10^2.%` indicates a metric contains a ratio, typically
     * in the range 0..1, that will be multiplied by 100 and displayed as a percentage (so a metric value `0.03` means "3 percent").
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /** Whether the measurement is an integer, a floating-point number, etc. Some combinations of `metric_kind` and `value_type` might not be supported. */
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object MetricDescriptor {
   

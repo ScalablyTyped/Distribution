@@ -4,7 +4,6 @@ import typings.nightwatch.nightwatchStrings.LANDSCAPE
 import typings.nightwatch.nightwatchStrings.PORTRAIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,7 +16,7 @@ trait WebDriverProtocolMobileRelated extends StObject {
     */
   def contexts(): this.type = js.native
   def contexts(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[_], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[js.Any], Unit]
   ): this.type = js.native
   
   /**
@@ -25,7 +24,7 @@ trait WebDriverProtocolMobileRelated extends StObject {
     */
   def currentContext(): this.type = js.native
   def currentContext(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[_], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[js.Any], Unit]
   ): this.type = js.native
   
   /**

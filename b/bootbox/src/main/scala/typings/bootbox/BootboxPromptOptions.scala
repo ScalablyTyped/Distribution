@@ -14,29 +14,29 @@ import typings.bootbox.bootboxStrings.textarea
 import typings.bootbox.bootboxStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Bootbox options available for prompt modals */
-@js.native
-trait BootboxPromptOptions extends BootboxBaseOptions[String] {
+trait BootboxPromptOptions
+  extends StObject
+     with BootboxBaseOptions[String] {
   
   @JSName("buttons")
-  var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.native
+  var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
   
   @JSName("callback")
-  def callback_MBootboxPromptOptions(result: String): js.Any = js.native
+  def callback_MBootboxPromptOptions(result: String): js.Any
   
-  var inputOptions: js.UndefOr[js.Array[Group]] = js.native
+  var inputOptions: js.UndefOr[js.Array[Group]] = js.undefined
   
   var inputType: js.UndefOr[
     text | textarea | email | select | checkbox | date | time | number | password | radio | range
-  ] = js.native
+  ] = js.undefined
   
   @JSName("title")
-  var title_BootboxPromptOptions: String = js.native
+  var title_BootboxPromptOptions: String
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object BootboxPromptOptions {
   

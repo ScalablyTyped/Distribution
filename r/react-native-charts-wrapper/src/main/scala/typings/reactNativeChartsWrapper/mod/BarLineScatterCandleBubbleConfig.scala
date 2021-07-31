@@ -2,13 +2,11 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarLineScatterCandleBubbleConfig extends StObject {
   
-  var highlightColor: js.UndefOr[Color] = js.native
+  var highlightColor: js.UndefOr[Color] = js.undefined
 }
 object BarLineScatterCandleBubbleConfig {
   

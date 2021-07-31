@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ProfileMediaType extends StObject
 object ProfileMediaType extends StObject {
   
   @js.native
-  sealed trait wlan extends ProfileMediaType
+  sealed trait wlan
+    extends StObject
+       with ProfileMediaType
   
   @js.native
-  sealed trait wwan extends ProfileMediaType
+  sealed trait wwan
+    extends StObject
+       with ProfileMediaType
 }

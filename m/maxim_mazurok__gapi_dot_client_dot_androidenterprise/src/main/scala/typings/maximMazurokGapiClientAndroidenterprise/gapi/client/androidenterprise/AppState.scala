@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppState extends StObject {
   
   /** List of keyed app states. This field will always be present. */
-  var keyedAppState: js.UndefOr[js.Array[KeyedAppState]] = js.native
+  var keyedAppState: js.UndefOr[js.Array[KeyedAppState]] = js.undefined
   
   /** The package name of the app. This field will always be present. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object AppState {
   

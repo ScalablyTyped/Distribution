@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sourcetype extends StObject {
   
-  var source_type: String = js.native
+  var source_type: String
   
-  var upload_id: String = js.native
+  var upload_id: String
   
-  var video: js.UndefOr[Audiomuted] = js.native
+  var video: js.UndefOr[Audiomuted] = js.undefined
 }
 object Sourcetype {
   

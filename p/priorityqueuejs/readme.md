@@ -11,8 +11,8 @@ a simple priority queue data structure
 | Full name          | priorityqueuejs |
 | Keywords           | heap, priority, queue, priority queue, data structure |
 | # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 2577763 |
+| # dependents       | 24 |
+| # downloads        | 3040707 |
 | # stars            | 1 |
 
 ## Links

@@ -2,19 +2,17 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for KeyManagementService.Decrypt.
   */
-@js.native
 trait SchemaDecryptResponse extends StObject {
   
   /**
     * The decrypted data originally supplied in EncryptRequest.plaintext.
     */
-  var plaintext: js.UndefOr[String] = js.native
+  var plaintext: js.UndefOr[String] = js.undefined
 }
 object SchemaDecryptResponse {
   

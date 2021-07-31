@@ -1,8 +1,6 @@
 package typings.flatpickr
 
 import org.scalablytyped.runtime.Shortcut
-import typings.flatpickr.anon.GetDaysInMonth
-import typings.flatpickr.anon.kinkeyofOptionsOptionsk
 import typings.flatpickr.flatpickrStrings.above
 import typings.flatpickr.flatpickrStrings.auto
 import typings.flatpickr.flatpickrStrings.below
@@ -12,28 +10,14 @@ import typings.flatpickr.flatpickrStrings.range
 import typings.flatpickr.flatpickrStrings.single
 import typings.flatpickr.flatpickrStrings.static
 import typings.flatpickr.flatpickrStrings.time
-import typings.flatpickr.formattingMod.Formats_
-import typings.flatpickr.formattingMod.RevFormat_
-import typings.flatpickr.formattingMod.TokenRegex_
 import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.globalsMod.global.HTMLElement
-import typings.flatpickr.instanceMod.DayElement
 import typings.flatpickr.instanceMod.FlatpickrFn
 import typings.flatpickr.localeMod.key
-import typings.flatpickr.optionsMod.DateOption
-import typings.flatpickr.optionsMod.ParsedOptions
 import typings.std.Element
 import typings.std.Error
-import typings.std.FocusEvent
-import typings.std.HTMLDivElement
-import typings.std.HTMLInputElement
-import typings.std.HTMLSelectElement
-import typings.std.HTMLSpanElement
-import typings.std.MouseEvent
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,217 +38,7 @@ object mod {
     
     type CustomLocale = typings.flatpickr.localeMod.CustomLocale
     
-    /* Inlined flatpickr.flatpickr/dist/types/instance.Instance */
-    @js.native
-    trait Instance extends StObject {
-      
-      var __hideNextMonthArrow: Boolean = js.native
-      
-      var __hidePrevMonthArrow: Boolean = js.native
-      
-      def _bind[E /* <: Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-      def _bind[E /* <: Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-      def _bind[E /* <: Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-      def _bind[E /* <: Element */](
-        element: js.Array[E],
-        event: js.Array[String],
-        handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-      ): Unit = js.native
-      
-      def _createElement[E /* <: HTMLElement */](
-        tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
-        className: String
-      ): E = js.native
-      def _createElement[E /* <: HTMLElement */](
-        tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
-        className: String,
-        content: String
-      ): E = js.native
-      
-      def _debouncedChange(): Unit = js.native
-      
-      var _handlers: js.Array[typings.flatpickr.anon.Element] = js.native
-      
-      var _hideNextMonthArrow: Boolean = js.native
-      
-      var _hidePrevMonthArrow: Boolean = js.native
-      
-      var _initialDate: Date = js.native
-      
-      var _input: HTMLInputElement = js.native
-      
-      def _positionCalendar(): Unit = js.native
-      def _positionCalendar(customPositionElement: HTMLElement): Unit = js.native
-      
-      var _positionElement: HTMLElement = js.native
-      
-      var _selectedDateObj: js.UndefOr[Date] = js.native
-      
-      def _setHoursFromDate(date: Date): Unit = js.native
-      
-      var altInput: js.UndefOr[HTMLInputElement] = js.native
-      
-      var amPM: js.UndefOr[HTMLSpanElement] = js.native
-      
-      var calendarContainer: HTMLDivElement = js.native
-      
-      def changeMonth(value: Double): Unit = js.native
-      def changeMonth(value: Double, isOffset: js.UndefOr[scala.Nothing], fromKeyboard: Boolean): Unit = js.native
-      def changeMonth(value: Double, isOffset: Boolean): Unit = js.native
-      def changeMonth(value: Double, isOffset: Boolean, fromKeyboard: Boolean): Unit = js.native
-      
-      def changeYear(year: Double): Unit = js.native
-      
-      def clear(): Unit = js.native
-      def clear(emitChangeEvent: js.UndefOr[scala.Nothing], toInitial: Boolean): Unit = js.native
-      def clear(emitChangeEvent: Boolean): Unit = js.native
-      def clear(emitChangeEvent: Boolean, toInitial: Boolean): Unit = js.native
-      
-      def close(): Unit = js.native
-      
-      var config: ParsedOptions = js.native
-      
-      var currentMonth: Double = js.native
-      
-      var currentMonthElement: HTMLSpanElement = js.native
-      
-      var currentYear: Double = js.native
-      
-      var currentYearElement: HTMLInputElement = js.native
-      
-      var days: HTMLDivElement = js.native
-      
-      var daysContainer: js.UndefOr[HTMLDivElement] = js.native
-      
-      def destroy(): Unit = js.native
-      
-      var element: HTMLElement = js.native
-      
-      def formatDate(dateObj: Date, frmt: String): String = js.native
-      
-      var formats: Formats_ = js.native
-      
-      var hourElement: js.UndefOr[HTMLInputElement] = js.native
-      
-      var innerContainer: js.UndefOr[HTMLDivElement] = js.native
-      
-      var input: HTMLInputElement = js.native
-      
-      def isEnabled(date: DateOption): Boolean = js.native
-      def isEnabled(date: DateOption, timeless: Boolean): Boolean = js.native
-      
-      var isMobile: Boolean = js.native
-      
-      var isOpen: Boolean = js.native
-      
-      def jumpToDate(): Unit = js.native
-      def jumpToDate(date: js.UndefOr[DateOption], triggerChange: Boolean): Unit = js.native
-      def jumpToDate(date: DateOption): Unit = js.native
-      
-      var l10n: typings.flatpickr.localeMod.Locale = js.native
-      
-      var latestSelectedDateObj: js.UndefOr[Date] = js.native
-      
-      var loadedPlugins: js.Array[String] = js.native
-      
-      var maxDateHasTime: Boolean = js.native
-      
-      var maxRangeDate: js.UndefOr[Date] = js.native
-      
-      var minDateHasTime: Boolean = js.native
-      
-      var minRangeDate: js.UndefOr[Date] = js.native
-      
-      var minuteElement: js.UndefOr[HTMLInputElement] = js.native
-      
-      var mobileFormatStr: js.UndefOr[String] = js.native
-      
-      var mobileInput: js.UndefOr[HTMLInputElement] = js.native
-      
-      var monthElements: js.Array[HTMLSpanElement] = js.native
-      
-      var monthNav: HTMLDivElement = js.native
-      
-      var monthsDropdownContainer: HTMLSelectElement = js.native
-      
-      var nextMonthNav: HTMLElement = js.native
-      
-      var now: Date = js.native
-      
-      def open(): Unit = js.native
-      def open(e: js.UndefOr[scala.Nothing], positionElement: HTMLElement): Unit = js.native
-      def open(e: FocusEvent): Unit = js.native
-      def open(e: FocusEvent, positionElement: HTMLElement): Unit = js.native
-      def open(e: MouseEvent): Unit = js.native
-      def open(e: MouseEvent, positionElement: HTMLElement): Unit = js.native
-      
-      def pad(num: String): String = js.native
-      def pad(num: Double): String = js.native
-      
-      def parseDate(date: String): js.UndefOr[Date] = js.native
-      def parseDate(date: String, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
-      def parseDate(date: String, givenFormat: String): js.UndefOr[Date] = js.native
-      def parseDate(date: String, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
-      def parseDate(date: Double): js.UndefOr[Date] = js.native
-      def parseDate(date: Double, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
-      def parseDate(date: Double, givenFormat: String): js.UndefOr[Date] = js.native
-      def parseDate(date: Double, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
-      def parseDate(date: Date): js.UndefOr[Date] = js.native
-      def parseDate(date: Date, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
-      def parseDate(date: Date, givenFormat: String): js.UndefOr[Date] = js.native
-      def parseDate(date: Date, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
-      
-      var pluginElements: js.Array[Node] = js.native
-      
-      var prevMonthNav: HTMLElement = js.native
-      
-      var rContainer: js.UndefOr[HTMLDivElement] = js.native
-      
-      def redraw(): Unit = js.native
-      
-      var revFormat: RevFormat_ = js.native
-      
-      var secondElement: js.UndefOr[HTMLInputElement] = js.native
-      
-      var selectedDateElem: js.UndefOr[DayElement] = js.native
-      
-      var selectedDates: js.Array[Date] = js.native
-      
-      def set(option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any): Unit = js.native
-      def set(
-        option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any,
-        value: js.Any
-      ): Unit = js.native
-      def set(option: kinkeyofOptionsOptionsk): Unit = js.native
-      def set(option: kinkeyofOptionsOptionsk, value: js.Any): Unit = js.native
-      
-      def setDate(date: js.Array[DateOption]): Unit = js.native
-      def setDate(date: js.Array[DateOption], triggerChange: js.UndefOr[scala.Nothing], format: String): Unit = js.native
-      def setDate(date: js.Array[DateOption], triggerChange: Boolean): Unit = js.native
-      def setDate(date: js.Array[DateOption], triggerChange: Boolean, format: String): Unit = js.native
-      def setDate(date: DateOption): Unit = js.native
-      def setDate(date: DateOption, triggerChange: js.UndefOr[scala.Nothing], format: String): Unit = js.native
-      def setDate(date: DateOption, triggerChange: Boolean): Unit = js.native
-      def setDate(date: DateOption, triggerChange: Boolean, format: String): Unit = js.native
-      
-      var timeContainer: js.UndefOr[HTMLDivElement] = js.native
-      
-      var todayDateElem: js.UndefOr[DayElement] = js.native
-      
-      def toggle(): Unit = js.native
-      
-      var tokenRegex: TokenRegex_ = js.native
-      
-      var utils: GetDaysInMonth = js.native
-      
-      var weekNumbers: js.UndefOr[HTMLDivElement] = js.native
-      
-      var weekWrapper: js.UndefOr[HTMLDivElement] = js.native
-      
-      var weekdayContainer: HTMLDivElement = js.native
-      
-      var yearElements: js.Array[HTMLInputElement] = js.native
-    }
+    type Instance = typings.flatpickr.instanceMod.Instance
     
     type Locale = typings.flatpickr.localeMod.Locale
     
@@ -283,60 +57,59 @@ object mod {
       type LocaleKey = key
       
       /* Inlined flatpickr.flatpickr/dist/types/options.Options */
-      @js.native
       trait Options extends StObject {
         
-        var allowInput: js.UndefOr[Boolean] = js.native
+        var allowInput: js.UndefOr[Boolean] = js.undefined
         
-        var allowInvalidPreload: js.UndefOr[Boolean] = js.native
+        var allowInvalidPreload: js.UndefOr[Boolean] = js.undefined
         
-        var altFormat: js.UndefOr[String] = js.native
+        var altFormat: js.UndefOr[String] = js.undefined
         
-        var altInput: js.UndefOr[Boolean] = js.native
+        var altInput: js.UndefOr[Boolean] = js.undefined
         
-        var altInputClass: js.UndefOr[String] = js.native
+        var altInputClass: js.UndefOr[String] = js.undefined
         
-        var animate: js.UndefOr[Boolean] = js.native
+        var animate: js.UndefOr[Boolean] = js.undefined
         
-        var appendTo: js.UndefOr[HTMLElement] = js.native
+        var appendTo: js.UndefOr[HTMLElement] = js.undefined
         
-        var ariaDateFormat: js.UndefOr[String] = js.native
+        var ariaDateFormat: js.UndefOr[String] = js.undefined
         
-        var autoFillDefaultTime: js.UndefOr[Boolean] = js.native
+        var autoFillDefaultTime: js.UndefOr[Boolean] = js.undefined
         
-        var clickOpens: js.UndefOr[Boolean] = js.native
+        var clickOpens: js.UndefOr[Boolean] = js.undefined
         
-        var closeOnSelect: js.UndefOr[Boolean] = js.native
+        var closeOnSelect: js.UndefOr[Boolean] = js.undefined
         
-        var conjunction: js.UndefOr[String] = js.native
+        var conjunction: js.UndefOr[String] = js.undefined
         
-        var dateFormat: js.UndefOr[String] = js.native
+        var dateFormat: js.UndefOr[String] = js.undefined
         
         var defaultDate: js.UndefOr[
                 typings.flatpickr.optionsMod.DateOption | js.Array[typings.flatpickr.optionsMod.DateOption]
-              ] = js.native
+              ] = js.undefined
         
-        var defaultHour: js.UndefOr[Double] = js.native
+        var defaultHour: js.UndefOr[Double] = js.undefined
         
-        var defaultMinute: js.UndefOr[Double] = js.native
+        var defaultMinute: js.UndefOr[Double] = js.undefined
         
-        var defaultSeconds: js.UndefOr[Double] = js.native
+        var defaultSeconds: js.UndefOr[Double] = js.undefined
         
         var disable: js.UndefOr[
                 js.Array[typings.flatpickr.optionsMod.DateLimit[typings.flatpickr.optionsMod.DateOption]]
-              ] = js.native
+              ] = js.undefined
         
-        var disableMobile: js.UndefOr[Boolean] = js.native
+        var disableMobile: js.UndefOr[Boolean] = js.undefined
         
         var enable: js.UndefOr[
                 js.Array[typings.flatpickr.optionsMod.DateLimit[typings.flatpickr.optionsMod.DateOption]]
-              ] = js.native
+              ] = js.undefined
         
-        var enableSeconds: js.UndefOr[Boolean] = js.native
+        var enableSeconds: js.UndefOr[Boolean] = js.undefined
         
-        var enableTime: js.UndefOr[Boolean] = js.native
+        var enableTime: js.UndefOr[Boolean] = js.undefined
         
-        var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+        var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
         
         var formatDate: js.UndefOr[
                 js.Function3[
@@ -345,83 +118,83 @@ object mod {
                   /* locale */ typings.flatpickr.localeMod.Locale, 
                   String
                 ]
-              ] = js.native
+              ] = js.undefined
         
-        var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
+        var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.undefined
         
-        var hourIncrement: js.UndefOr[Double] = js.native
+        var hourIncrement: js.UndefOr[Double] = js.undefined
         
-        var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.native
+        var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
         
-        var `inline`: js.UndefOr[Boolean] = js.native
+        var `inline`: js.UndefOr[Boolean] = js.undefined
         
-        var locale: js.UndefOr[key | typings.flatpickr.localeMod.CustomLocale] = js.native
+        var locale: js.UndefOr[key | typings.flatpickr.localeMod.CustomLocale] = js.undefined
         
-        var maxDate: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.native
+        var maxDate: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.undefined
         
-        var maxTime: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.native
+        var maxTime: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.undefined
         
-        var minDate: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.native
+        var minDate: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.undefined
         
-        var minTime: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.native
+        var minTime: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.undefined
         
-        var minuteIncrement: js.UndefOr[Double] = js.native
+        var minuteIncrement: js.UndefOr[Double] = js.undefined
         
-        var mode: js.UndefOr[single | multiple | range | time] = js.native
+        var mode: js.UndefOr[single | multiple | range | time] = js.undefined
         
-        var monthSelectorType: js.UndefOr[dropdown | static] = js.native
+        var monthSelectorType: js.UndefOr[dropdown | static] = js.undefined
         
-        var nextArrow: js.UndefOr[String] = js.native
+        var nextArrow: js.UndefOr[String] = js.undefined
         
-        var noCalendar: js.UndefOr[Boolean] = js.native
+        var noCalendar: js.UndefOr[Boolean] = js.undefined
         
-        var now: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.native
+        var now: js.UndefOr[typings.flatpickr.optionsMod.DateOption] = js.undefined
         
-        var onChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onClose: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onClose: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onDayCreate: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onDayCreate: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onDestroy: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onDestroy: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onKeyDown: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onKeyDown: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onMonthChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onMonthChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onOpen: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onOpen: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onParseConfig: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onParseConfig: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onPreCalendarPosition: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onPreCalendarPosition: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onReady: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onReady: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onValueUpdate: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onValueUpdate: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var onYearChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.native
+        var onYearChange: js.UndefOr[typings.flatpickr.optionsMod.Hook | js.Array[typings.flatpickr.optionsMod.Hook]] = js.undefined
         
-        var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.native
+        var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.undefined
         
-        var plugins: js.UndefOr[js.Array[typings.flatpickr.optionsMod.Plugin[js.Object]]] = js.native
+        var plugins: js.UndefOr[js.Array[typings.flatpickr.optionsMod.Plugin[js.Object]]] = js.undefined
         
-        var position: js.UndefOr[auto | above | below] = js.native
+        var position: js.UndefOr[auto | above | below] = js.undefined
         
-        var positionElement: js.UndefOr[Element] = js.native
+        var positionElement: js.UndefOr[Element] = js.undefined
         
-        var prevArrow: js.UndefOr[String] = js.native
+        var prevArrow: js.UndefOr[String] = js.undefined
         
-        var shorthandCurrentMonth: js.UndefOr[Boolean] = js.native
+        var shorthandCurrentMonth: js.UndefOr[Boolean] = js.undefined
         
-        var showMonths: js.UndefOr[Double] = js.native
+        var showMonths: js.UndefOr[Double] = js.undefined
         
-        var static: js.UndefOr[Boolean] = js.native
+        var static: js.UndefOr[Boolean] = js.undefined
         
-        var time_24hr: js.UndefOr[Boolean] = js.native
+        var time_24hr: js.UndefOr[Boolean] = js.undefined
         
-        var weekNumbers: js.UndefOr[Boolean] = js.native
+        var weekNumbers: js.UndefOr[Boolean] = js.undefined
         
-        var wrap: js.UndefOr[Boolean] = js.native
+        var wrap: js.UndefOr[Boolean] = js.undefined
       }
       object Options {
         

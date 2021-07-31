@@ -11,8 +11,8 @@ Easiest way to tap into a pipeline
 | Full name          | gulp-tap |
 | Keywords           | tap, gulp, stream |
 | # releases         | 2 |
-| # dependents       | 155 |
-| # downloads        | 2899222 |
+| # dependents       | 158 |
+| # downloads        | 3136993 |
 | # stars            | 34 |
 
 ## Links

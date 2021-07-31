@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,11 +22,13 @@ object mod extends Shortcut {
     * @author Miller Medeiros
     */
   class SignalCls ()
-    extends Signal[js.Any]
+    extends StObject
+       with Signal[js.Any]
   
   @js.native
   trait Signal[T]
-    extends /**
+    extends StObject
+       with /**
     * Custom event broadcaster
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
@@ -54,13 +55,9 @@ object mod extends Shortcut {
       *        Listeners with same priority level will be executed at the same order as they were added. (default = 0)
       */
     def add(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
-    def add(
-      listener: js.Function1[/* repeated */ T, Unit],
-      listenerContext: js.UndefOr[scala.Nothing],
-      priority: Number
-    ): SignalBinding[T] = js.native
     def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
     def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
+    def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Unit, priority: Number): SignalBinding[T] = js.native
     
     /**
       * Add listener to the signal that should be removed after first execution (will be executed only once).
@@ -72,13 +69,9 @@ object mod extends Shortcut {
       *                 Listeners with same priority level will be executed at the same order as they were added. (default = 0)
       */
     def addOnce(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
-    def addOnce(
-      listener: js.Function1[/* repeated */ T, Unit],
-      listenerContext: js.UndefOr[scala.Nothing],
-      priority: Number
-    ): SignalBinding[T] = js.native
     def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
     def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
+    def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Unit, priority: Number): SignalBinding[T] = js.native
     
     /**
       * Dispatch/Broadcast Signal to all listeners added to the queue.
@@ -138,7 +131,7 @@ object mod extends Shortcut {
     def detach(): js.Function = js.native
     
     def execute(): js.Any = js.native
-    def execute(paramsArr: js.Array[_]): js.Any = js.native
+    def execute(paramsArr: js.Array[js.Any]): js.Any = js.native
     
     def getListener(): js.Function1[/* repeated */ T, Unit] = js.native
     
@@ -151,10 +144,9 @@ object mod extends Shortcut {
     var params: js.Any = js.native
   }
   
-  @js.native
   trait SignalWrapper[T] extends StObject {
     
-    var Signal: typings.signals.mod.Signal[T] = js.native
+    var Signal: typings.signals.mod.Signal[T]
   }
   object SignalWrapper {
     
@@ -165,7 +157,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class SignalWrapperMutableBuilder[Self <: SignalWrapper[_], T] (val x: Self with SignalWrapper[T]) extends AnyVal {
+    implicit class SignalWrapperMutableBuilder[Self <: SignalWrapper[?], T] (val x: Self & SignalWrapper[T]) extends AnyVal {
       
       @scala.inline
       def setSignal(value: Signal[T]): Self = StObject.set(x, "Signal", value.asInstanceOf[js.Any])

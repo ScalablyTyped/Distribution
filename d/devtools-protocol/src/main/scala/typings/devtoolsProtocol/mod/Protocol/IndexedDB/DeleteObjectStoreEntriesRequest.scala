@@ -2,22 +2,20 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteObjectStoreEntriesRequest extends StObject {
   
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * Range of entry keys to delete
     */
-  var keyRange: KeyRange = js.native
+  var keyRange: KeyRange
   
-  var objectStoreName: String = js.native
+  var objectStoreName: String
   
-  var securityOrigin: String = js.native
+  var securityOrigin: String
 }
 object DeleteObjectStoreEntriesRequest {
   

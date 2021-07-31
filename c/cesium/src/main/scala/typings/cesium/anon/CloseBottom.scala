@@ -4,31 +4,29 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseBottom extends StObject {
   
-  var closeBottom: js.UndefOr[Boolean] = js.native
+  var closeBottom: js.UndefOr[Boolean] = js.undefined
   
-  var closeTop: js.UndefOr[Boolean] = js.native
+  var closeTop: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var extrudedHeight: js.UndefOr[Double] = js.native
+  var extrudedHeight: js.UndefOr[Double] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var perPositionHeight: js.UndefOr[Boolean] = js.native
+  var perPositionHeight: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.Array[Cartesian3] = js.native
+  var positions: js.Array[Cartesian3]
   
-  var stRotation: js.UndefOr[Double] = js.native
+  var stRotation: js.UndefOr[Double] = js.undefined
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object CloseBottom {
   

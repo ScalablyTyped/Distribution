@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMaintenanceWindowExecutionTasksRequest extends StObject {
   
   /**
     * Optional filters used to scope down the returned tasks. The supported filter key is STATUS with the corresponding values PENDING, IN_PROGRESS, SUCCESS, FAILED, TIMED_OUT, CANCELLING, and CANCELLED. 
     */
-  var Filters: js.UndefOr[MaintenanceWindowFilterList] = js.native
+  var Filters: js.UndefOr[MaintenanceWindowFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[MaintenanceWindowMaxResults] = js.native
+  var MaxResults: js.UndefOr[MaintenanceWindowMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The ID of the maintenance window execution whose task executions should be retrieved.
     */
-  var WindowExecutionId: MaintenanceWindowExecutionId = js.native
+  var WindowExecutionId: MaintenanceWindowExecutionId
 }
 object DescribeMaintenanceWindowExecutionTasksRequest {
   

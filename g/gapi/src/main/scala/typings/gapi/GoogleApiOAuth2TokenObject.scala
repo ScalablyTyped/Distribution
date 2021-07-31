@@ -2,33 +2,31 @@ package typings.gapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiOAuth2TokenObject extends StObject {
   
   /**
     * The OAuth 2.0 token. Only present in successful responses
     */
-  var access_token: String = js.native
+  var access_token: String
   
   /**
     * Details about the error. Only present in error responses
     */
-  var error: String = js.native
+  var error: String
   
   /**
     * The duration, in seconds, the token is valid for. Only present in successful responses
     */
-  var expires_in: String = js.native
+  var expires_in: String
   
-  var session_state: js.UndefOr[GoogleApiOAuth2TokenSessionState] = js.native
+  var session_state: js.UndefOr[GoogleApiOAuth2TokenSessionState] = js.undefined
   
   /**
     * The Google API scopes related to this token
     */
-  var state: String = js.native
+  var state: String
 }
 object GoogleApiOAuth2TokenObject {
   

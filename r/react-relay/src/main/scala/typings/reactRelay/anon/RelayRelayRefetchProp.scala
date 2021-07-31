@@ -3,13 +3,11 @@ package typings.reactRelay.anon
 import typings.reactRelay.mod.RelayRefetchProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelayRelayRefetchProp extends StObject {
   
-  var relay: RelayRefetchProp = js.native
+  var relay: RelayRefetchProp
 }
 object RelayRelayRefetchProp {
   

@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeJsonrpc.mod.ProgressToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkDoneProgressParams extends StObject {
   
   /**
     * An optional token that a server can use to report work done progress.
     */
-  var workDoneToken: js.UndefOr[ProgressToken] = js.native
+  var workDoneToken: js.UndefOr[ProgressToken] = js.undefined
 }
 object WorkDoneProgressParams {
   

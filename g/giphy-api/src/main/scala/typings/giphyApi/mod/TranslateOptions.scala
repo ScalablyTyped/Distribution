@@ -2,13 +2,13 @@ package typings.giphyApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TranslateOptions extends BaseOptions {
+trait TranslateOptions
+  extends StObject
+     with BaseOptions {
   
-  var s: String = js.native
+  var s: String
 }
 object TranslateOptions {
   

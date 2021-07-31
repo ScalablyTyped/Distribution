@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventTypeCategory extends StObject {
   
   /**
     * Gets or sets the unique identifier of this category.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Gets or sets the friendly name of this category.
     */
-  var name: String = js.native
+  var name: String
 }
 object NotificationEventTypeCategory {
   

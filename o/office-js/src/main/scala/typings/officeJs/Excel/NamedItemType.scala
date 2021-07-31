@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait NamedItemType extends StObject
 object NamedItemType extends StObject {
   
   @js.native
-  sealed trait array extends NamedItemType
+  sealed trait array
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait boolean extends NamedItemType
+  sealed trait boolean
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait double extends NamedItemType
+  sealed trait double
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait error extends NamedItemType
+  sealed trait error
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait integer extends NamedItemType
+  sealed trait integer
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait range extends NamedItemType
+  sealed trait range
+    extends StObject
+       with NamedItemType
   
   @js.native
-  sealed trait string extends NamedItemType
+  sealed trait string
+    extends StObject
+       with NamedItemType
 }

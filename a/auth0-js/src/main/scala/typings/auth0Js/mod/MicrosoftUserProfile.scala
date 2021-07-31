@@ -2,13 +2,13 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MicrosoftUserProfile extends Auth0UserProfile {
+trait MicrosoftUserProfile
+  extends StObject
+     with Auth0UserProfile {
   
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object MicrosoftUserProfile {
   

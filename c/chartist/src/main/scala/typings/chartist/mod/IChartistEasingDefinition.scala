@@ -2,19 +2,17 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartistEasingDefinition extends StObject {
   
-  var `0`: Double = js.native
+  var `0`: Double
   
-  var `1`: Double = js.native
+  var `1`: Double
   
-  var `2`: Double = js.native
+  var `2`: Double
   
-  var `3`: Double = js.native
+  var `3`: Double
 }
 object IChartistEasingDefinition {
   

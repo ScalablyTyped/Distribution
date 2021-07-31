@@ -2,15 +2,15 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MKSliderProperties extends BaseSlider {
+trait MKSliderProperties
+  extends StObject
+     with BaseSlider {
   
-  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function0[Unit]] = js.native
+  var onConfirm: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object MKSliderProperties {
   

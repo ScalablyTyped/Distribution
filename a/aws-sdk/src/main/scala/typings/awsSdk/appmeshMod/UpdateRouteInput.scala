@@ -2,41 +2,39 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRouteInput extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service mesh that the route resides in.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
   /**
     * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with shared meshes.
     */
-  var meshOwner: js.UndefOr[AccountId] = js.native
+  var meshOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The name of the route to update.
     */
-  var routeName: ResourceName = js.native
+  var routeName: ResourceName
   
   /**
     * The new route specification to apply. This overwrites the existing data.
     */
-  var spec: RouteSpec = js.native
+  var spec: RouteSpec
   
   /**
     * The name of the virtual router that the route is associated with.
     */
-  var virtualRouterName: ResourceName = js.native
+  var virtualRouterName: ResourceName
 }
 object UpdateRouteInput {
   

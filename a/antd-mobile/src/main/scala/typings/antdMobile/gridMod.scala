@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -37,9 +36,9 @@ object gridMod {
     @JSName("componentDidMount")
     def componentDidMount_MGrid(): Unit = js.native
     
-    def getRows(rowCount: Double, dataLength: Double): js.Array[_] = js.native
+    def getRows(rowCount: Double, dataLength: Double): js.Array[js.Any] = js.native
     
-    def renderCarousel(rowsArr: js.Array[_], pageCount: Double, rowCount: Double): js.Array[_] = js.native
+    def renderCarousel(rowsArr: js.Array[js.Any], pageCount: Double, rowCount: Double): js.Array[js.Any] = js.native
     
     def renderItem(dataItem: js.Any, index: Double, columnNum: Double, renderItem: js.Any): Element = js.native
     
@@ -47,20 +46,21 @@ object gridMod {
     var state_Grid: InitialSlideWidth = js.native
   }
   
-  @js.native
-  trait GridProps extends GridPropsType {
+  trait GridProps
+    extends StObject
+       with GridPropsType {
     
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
-    var activeStyle: js.UndefOr[Boolean | CSSProperties] = js.native
+    var activeStyle: js.UndefOr[Boolean | CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var itemStyle: js.UndefOr[CSSProperties] = js.native
+    var itemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var square: js.UndefOr[Boolean] = js.native
+    var square: js.UndefOr[Boolean] = js.undefined
   }
   object GridProps {
     

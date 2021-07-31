@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientContent.anon.CssDomainId
 import typings.maximMazurokGapiClientContent.anon.CssGroupId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

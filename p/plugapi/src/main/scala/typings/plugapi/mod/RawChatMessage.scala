@@ -2,21 +2,19 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawChatMessage extends StObject {
   
-  var cid: String = js.native
+  var cid: String
   
-  var message: String = js.native
+  var message: String
   
-  var sub: Double = js.native
+  var sub: Double
   
-  var uid: Double = js.native
+  var uid: Double
   
-  var un: String = js.native
+  var un: String
 }
 object RawChatMessage {
   

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Classifier and score combination. */
-@js.native
 trait ClassifierResult extends StObject {
   
   /** Classes within the classifier. */
-  var classes: js.Array[ClassResult] = js.native
+  var classes: js.Array[ClassResult]
   
   /** ID of a classifier identified in the image. */
-  var classifier_id: String = js.native
+  var classifier_id: String
   
   /** Name of the classifier. */
-  var name: String = js.native
+  var name: String
 }
 object ClassifierResult {
   

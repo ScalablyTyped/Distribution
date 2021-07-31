@@ -4,25 +4,23 @@ import typings.devtoolsProtocol.mod.Protocol.Network.LoaderId
 import typings.devtoolsProtocol.mod.Protocol.Network.MonotonicTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleEventEvent extends StObject {
   
   /**
     * Id of the frame.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Loader identifier. Empty string if the request is fetched from worker.
     */
-  var loaderId: LoaderId = js.native
+  var loaderId: LoaderId
   
-  var name: String = js.native
+  var name: String
   
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
 }
 object LifecycleEventEvent {
   

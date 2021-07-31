@@ -2,7 +2,6 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,15 +17,9 @@ trait StaticRenderFunctions extends StObject {
     * @param postfix Postfix (/suffix) (optional).
     */
   def number(thousands: String, decimal: String, precision: Double): ObjectColumnRender = js.native
-  def number(
-    thousands: String,
-    decimal: String,
-    precision: Double,
-    prefix: js.UndefOr[scala.Nothing],
-    postfix: String
-  ): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String, postfix: String): ObjectColumnRender = js.native
+  def number(thousands: String, decimal: String, precision: Double, prefix: Unit, postfix: String): ObjectColumnRender = js.native
   
   /**
     * Escape HTML to help prevent XSS attacks. It has no optional parameters.

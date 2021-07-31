@@ -2,13 +2,11 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for leasing tasks using LeaseTasks.
   */
-@js.native
 trait SchemaLeaseTasksRequest extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait SchemaLeaseTasksRequest extends StObject {
     * UTF-8 encoded can&#39;t be used in the filter and the task&#39;s tag will
     * be displayed as empty in Cloud Tasks.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     *  After the worker has successfully finished the work associated with the
@@ -37,7 +35,7 @@ trait SchemaLeaseTasksRequest extends StObject {
     * another worker can retry it.  The maximum lease duration is 1 week.
     * `lease_duration` will be truncated to the nearest second.
     */
-  var leaseDuration: js.UndefOr[String] = js.native
+  var leaseDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of tasks to lease.  The system will make a best effort
@@ -46,7 +44,7 @@ trait SchemaLeaseTasksRequest extends StObject {
     * response is 32 MB. If the sum of all task sizes requested reaches this
     * limit, fewer tasks than requested are returned.
     */
-  var maxTasks: js.UndefOr[Double] = js.native
+  var maxTasks: js.UndefOr[Double] = js.undefined
   
   /**
     * The response_view specifies which subset of the Task will be returned. By
@@ -57,7 +55,7 @@ trait SchemaLeaseTasksRequest extends StObject {
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
     * permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaseTasksRequest {
   

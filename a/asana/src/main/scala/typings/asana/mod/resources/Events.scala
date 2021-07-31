@@ -7,7 +7,6 @@ import typings.asana.mod.resources.Events.Type
 import typings.asana.mod.resources.Users.ShortType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Events
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * Dispatches a GET request to /events of the API to get a set of recent
@@ -54,20 +54,22 @@ trait Events
     *                       may not exist if sync token is new.
     */
   def get(resourceId: String): typings.bluebird.mod.^[Type] = js.native
-  def get(resourceId: String, syncToken: js.UndefOr[scala.Nothing], params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: String, syncToken: String): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: String, syncToken: String, params: Params): typings.bluebird.mod.^[Type] = js.native
+  def get(resourceId: String, syncToken: Unit, params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double): typings.bluebird.mod.^[Type] = js.native
-  def get(resourceId: Double, syncToken: js.UndefOr[scala.Nothing], params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double, syncToken: String): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double, syncToken: String, params: Params): typings.bluebird.mod.^[Type] = js.native
+  def get(resourceId: Double, syncToken: Unit, params: Params): typings.bluebird.mod.^[Type] = js.native
 }
 object Events extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Events")
   @js.native
-  class ^ protected () extends Events {
+  class ^ protected ()
+    extends StObject
+       with Events {
     /**
       * @param dispatcher
       * @return
@@ -79,20 +81,19 @@ object Events extends Shortcut {
   @js.native
   val ^ : EventsStatic = js.native
   
-  @js.native
   trait EventDataEntity extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var parent: EventTask | EventProject | EventSection | Null = js.native
+    var parent: EventTask | EventProject | EventSection | Null
     
-    var resource: EventTask | EventProject | EventSection | EventStory = js.native
+    var resource: EventTask | EventProject | EventSection | EventStory
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var user: ShortType | Null = js.native
+    var user: ShortType | Null
   }
   object EventDataEntity {
     
@@ -103,7 +104,7 @@ object Events extends Shortcut {
       resource: EventTask | EventProject | EventSection | EventStory,
       `type`: String
     ): EventDataEntity = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], parent = null, user = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventDataEntity]
     }
@@ -137,10 +138,9 @@ object Events extends Shortcut {
     }
   }
   
-  @js.native
   trait EventError extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object EventError {
     
@@ -178,7 +178,7 @@ object Events extends Shortcut {
         js.Function2[
           /* path */ String, 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -192,15 +192,15 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchDelete(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchDelete(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGet: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -216,17 +216,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGet(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGet(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGetCollection: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -242,17 +242,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGetCollection(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGetCollection(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPost: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -268,17 +268,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPost(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPost(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPut: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -294,49 +294,50 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPut(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPut(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var due_at: js.UndefOr[String] = js.native
     
     var due_on: js.UndefOr[String] = js.native
     
-    var followers: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var followers: js.UndefOr[js.Array[Resource]] = js.native
     
-    var gid: String with js.UndefOr[String] = js.native
+    var gid: String & js.UndefOr[String] = js.native
     
     var hearted: js.UndefOr[Boolean] = js.native
     
-    var id: Double with js.UndefOr[Double] = js.native
+    var id: Double & js.UndefOr[Double] = js.native
     
     var memberships: js.UndefOr[js.Array[Membership]] = js.native
     
     var modified_at: js.UndefOr[String] = js.native
     
-    var name: String with js.UndefOr[String] = js.native
+    var name: String & js.UndefOr[String] = js.native
     
     var notes: js.UndefOr[String] = js.native
     
     var num_hearts: js.UndefOr[Double] = js.native
     
-    var parent: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var parent: js.UndefOr[Resource] = js.native
     
-    var projects: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var projects: js.UndefOr[js.Array[Resource]] = js.native
     
     var resource_subtype: String = js.native
     
     var resource_type: String = js.native
     
-    var tags: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var tags: js.UndefOr[js.Array[Resource]] = js.native
     
-    var workspace: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var workspace: js.UndefOr[Resource] = js.native
   }
   
   @js.native
   trait EventResource
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var resource_subtype: String = js.native
     
@@ -353,7 +354,7 @@ object Events extends Shortcut {
         js.Function2[
           /* path */ String, 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -367,15 +368,15 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchDelete(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchDelete(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGet: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -391,17 +392,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGet(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGet(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGetCollection: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -417,17 +418,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGetCollection(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGetCollection(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPost: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -443,17 +444,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPost(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPost(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPut: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -469,16 +470,16 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPut(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPut(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
-    var gid: String with js.UndefOr[String] = js.native
+    var gid: String & js.UndefOr[String] = js.native
     
-    var id: Double with js.UndefOr[Double] = js.native
+    var id: Double & js.UndefOr[Double] = js.native
     
-    var name: String with js.UndefOr[String] = js.native
+    var name: String & js.UndefOr[String] = js.native
     
     var project: Gid = js.native
     
@@ -488,7 +489,9 @@ object Events extends Shortcut {
   }
   
   @js.native
-  trait EventSectionResource extends EventResource {
+  trait EventSectionResource
+    extends StObject
+       with EventResource {
     
     var project: Gid = js.native
   }
@@ -499,13 +502,13 @@ object Events extends Shortcut {
     
     var created_at: js.UndefOr[String] = js.native
     
-    var created_by: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var created_by: js.UndefOr[Resource] = js.native
     
     var dispatchDelete: js.UndefOr[
         js.Function2[
           /* path */ String, 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -519,15 +522,15 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchDelete(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchDelete(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGet: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -543,17 +546,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGet(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGet(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGetCollection: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -569,17 +572,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGetCollection(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGetCollection(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPost: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -595,17 +598,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPost(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPost(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPut: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -621,20 +624,20 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPut(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPut(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
-    var gid: String with js.UndefOr[String] = js.native
+    var gid: String & js.UndefOr[String] = js.native
     
     var hearts: js.UndefOr[js.Array[typings.asana.mod.resources.Stories.Type]] = js.native
     
     var html_text: js.UndefOr[String] = js.native
     
-    var id: Double with js.UndefOr[Double] = js.native
+    var id: Double & js.UndefOr[Double] = js.native
     
-    var name: String with js.UndefOr[String] = js.native
+    var name: String & js.UndefOr[String] = js.native
     
     var resource_subtype: String = js.native
     
@@ -642,7 +645,7 @@ object Events extends Shortcut {
     
     var source: js.UndefOr[String] = js.native
     
-    var target: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var target: js.UndefOr[Resource] = js.native
     
     var text: js.UndefOr[String] = js.native
     
@@ -669,7 +672,7 @@ object Events extends Shortcut {
         js.Function2[
           /* path */ String, 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -683,15 +686,15 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchDelete(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchDelete(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGet: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -707,17 +710,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGet(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGet(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchGetCollection: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -733,17 +736,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGetCollection(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchGetCollection(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPost: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -759,17 +762,17 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPost(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPost(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var dispatchPut: js.UndefOr[
         js.Function3[
           /* path */ String, 
           /* query */ js.UndefOr[js.Any], 
           /* dispatchOptions */ js.UndefOr[js.Any], 
-          typings.bluebird.mod.^[_]
+          typings.bluebird.mod.^[js.Any]
         ]
       ] = js.native
     /**
@@ -785,54 +788,53 @@ object Events extends Shortcut {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPut(path: String): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+    def dispatchPut(path: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
     
     var due_at: js.UndefOr[String] = js.native
     
     var due_on: js.UndefOr[String] = js.native
     
-    var followers: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var followers: js.UndefOr[js.Array[Resource]] = js.native
     
-    var gid: String with js.UndefOr[String] = js.native
+    var gid: String & js.UndefOr[String] = js.native
     
     var hearted: js.UndefOr[Boolean] = js.native
     
-    var id: Double with js.UndefOr[Double] = js.native
+    var id: Double & js.UndefOr[Double] = js.native
     
     var memberships: js.UndefOr[js.Array[Membership]] = js.native
     
     var modified_at: js.UndefOr[String] = js.native
     
-    var name: String with js.UndefOr[String] = js.native
+    var name: String & js.UndefOr[String] = js.native
     
     var notes: js.UndefOr[String] = js.native
     
     var num_hearts: js.UndefOr[Double] = js.native
     
-    var parent: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var parent: js.UndefOr[Resource] = js.native
     
-    var projects: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var projects: js.UndefOr[js.Array[Resource]] = js.native
     
     var resource_subtype: String = js.native
     
     var resource_type: String = js.native
     
-    var tags: js.UndefOr[js.Array[typings.asana.mod.resources.Resource]] = js.native
+    var tags: js.UndefOr[js.Array[Resource]] = js.native
     
-    var workspace: js.UndefOr[typings.asana.mod.resources.Resource] = js.native
+    var workspace: js.UndefOr[Resource] = js.native
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var data: js.UndefOr[js.Array[EventDataEntity]] = js.native
+    var data: js.UndefOr[js.Array[EventDataEntity]] = js.undefined
     
-    var errors: js.UndefOr[js.Array[EventError]] = js.native
+    var errors: js.UndefOr[js.Array[EventError]] = js.undefined
     
-    var sync: String = js.native
+    var sync: String
   }
   object Type {
     

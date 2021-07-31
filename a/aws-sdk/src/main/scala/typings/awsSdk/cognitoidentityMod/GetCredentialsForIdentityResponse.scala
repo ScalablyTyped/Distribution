@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCredentialsForIdentityResponse extends StObject {
   
   /**
     * Credentials for the provided identity ID.
     */
-  var Credentials: js.UndefOr[typings.awsSdk.cognitoidentityMod.Credentials] = js.native
+  var Credentials: js.UndefOr[typings.awsSdk.cognitoidentityMod.Credentials] = js.undefined
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.undefined
 }
 object GetCredentialsForIdentityResponse {
   

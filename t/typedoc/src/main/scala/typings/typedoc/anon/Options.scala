@@ -2,13 +2,11 @@ package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var options: typings.typedoc.optionsOptionsMod.Options = js.native
+  var options: typings.typedoc.optionsOptionsMod.Options
 }
 object Options {
   

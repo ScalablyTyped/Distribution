@@ -2,21 +2,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a QueryInput. */
-@js.native
 trait IQueryInput extends StObject {
   
   /** QueryInput audioConfig */
-  var audioConfig: js.UndefOr[IInputAudioConfig | Null] = js.native
+  var audioConfig: js.UndefOr[IInputAudioConfig | Null] = js.undefined
   
   /** QueryInput event */
-  var event: js.UndefOr[IEventInput | Null] = js.native
+  var event: js.UndefOr[IEventInput | Null] = js.undefined
   
   /** QueryInput text */
-  var text: js.UndefOr[ITextInput | Null] = js.native
+  var text: js.UndefOr[ITextInput | Null] = js.undefined
 }
 object IQueryInput {
   

@@ -2,62 +2,60 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieParam extends StObject {
   
   /**
     * Cookie domain.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Cookie expiration date, session cookie if not set
     */
-  var expires: js.UndefOr[TimeSinceEpoch] = js.native
+  var expires: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * True if cookie is http-only.
     */
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Cookie name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Cookie path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Cookie Priority.
     */
-  var priority: js.UndefOr[CookiePriority] = js.native
+  var priority: js.UndefOr[CookiePriority] = js.undefined
   
   /**
     * Cookie SameSite type.
     */
-  var sameSite: js.UndefOr[CookieSameSite] = js.native
+  var sameSite: js.UndefOr[CookieSameSite] = js.undefined
   
   /**
     * True if cookie is secure.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The request-URI to associate with the setting of the cookie. This value can affect the
     * default domain and path values of the created cookie.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Cookie value.
     */
-  var value: String = js.native
+  var value: String
 }
 object CookieParam {
   

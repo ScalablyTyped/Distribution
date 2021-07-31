@@ -7,22 +7,22 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnType[RecordType] extends ColumnSharedType[RecordType] {
+trait ColumnType[RecordType]
+  extends StObject
+     with ColumnSharedType[RecordType] {
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var dataIndex: js.UndefOr[DataIndex] = js.native
+  var dataIndex: js.UndefOr[DataIndex] = js.undefined
   
-  var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.native
+  var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
   
   /** @deprecated Please use `onCell` instead */
   var onCellClick: js.UndefOr[
     js.Function2[/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var render: js.UndefOr[
     js.Function3[
@@ -31,13 +31,13 @@ trait ColumnType[RecordType] extends ColumnSharedType[RecordType] {
       /* index */ Double, 
       ReactNode | RenderedCell[RecordType]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.native
+  var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ColumnType {
   
@@ -48,7 +48,7 @@ object ColumnType {
   }
   
   @scala.inline
-  implicit class ColumnTypeMutableBuilder[Self <: ColumnType[_], RecordType] (val x: Self with ColumnType[RecordType]) extends AnyVal {
+  implicit class ColumnTypeMutableBuilder[Self <: ColumnType[?], RecordType] (val x: Self & ColumnType[RecordType]) extends AnyVal {
     
     @scala.inline
     def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])

@@ -2,14 +2,12 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Retry config.  These settings determine how a failed task attempt is
   * retried.
   */
-@js.native
 trait SchemaRetryConfig extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaRetryConfig extends StObject {
     * task `max_attempts` times (that is, if the first attempt fails, then
     * there will be `max_attempts - 1` retries).  Must be &gt; 0.
     */
-  var maxAttempts: js.UndefOr[Double] = js.native
+  var maxAttempts: js.UndefOr[Double] = js.undefined
   
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff
@@ -28,7 +26,7 @@ trait SchemaRetryConfig extends StObject {
     * field has the same meaning as [max_backoff_seconds in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxBackoff: js.UndefOr[String] = js.native
+  var maxBackoff: js.UndefOr[String] = js.undefined
   
   /**
     * The time between retries will double `max_doublings` times.  A task&#39;s
@@ -45,7 +43,7 @@ trait SchemaRetryConfig extends StObject {
     * field has the same meaning as [max_doublings in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxDoublings: js.UndefOr[Double] = js.native
+  var maxDoublings: js.UndefOr[Double] = js.undefined
   
   /**
     * If positive, `max_retry_duration` specifies the time limit for retrying a
@@ -59,7 +57,7 @@ trait SchemaRetryConfig extends StObject {
     * in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxRetryDuration: js.UndefOr[String] = js.native
+  var maxRetryDuration: js.UndefOr[String] = js.undefined
   
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff
@@ -70,12 +68,12 @@ trait SchemaRetryConfig extends StObject {
     * field has the same meaning as [min_backoff_seconds in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var minBackoff: js.UndefOr[String] = js.native
+  var minBackoff: js.UndefOr[String] = js.undefined
   
   /**
     * If true, then the number of attempts is unlimited.
     */
-  var unlimitedAttempts: js.UndefOr[Boolean] = js.native
+  var unlimitedAttempts: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaRetryConfig {
   

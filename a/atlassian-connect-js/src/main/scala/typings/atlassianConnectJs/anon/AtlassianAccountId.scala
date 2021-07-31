@@ -2,13 +2,11 @@ package typings.atlassianConnectJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AtlassianAccountId extends StObject {
   
-  var atlassianAccountId: String = js.native
+  var atlassianAccountId: String
 }
 object AtlassianAccountId {
   

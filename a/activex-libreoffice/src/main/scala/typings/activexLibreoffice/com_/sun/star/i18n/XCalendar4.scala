@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It is derived from {@link com.sun.star.i18n.XCalendar3} and provides additional methods to set and get the local time.
   * @since LibreOffice 5.0
   */
-@js.native
-trait XCalendar4 extends XCalendar3 {
+trait XCalendar4
+  extends StObject
+     with XCalendar3 {
   
   /**
     * Get the local date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since
@@ -23,7 +23,7 @@ trait XCalendar4 extends XCalendar3 {
     *
     * The actual timezone and daylight saving time offsets effective at the given date and time are considered and added to the UTC time at the calendar.
     */
-  var LocalDateTime: Double = js.native
+  var LocalDateTime: Double
   
   /**
     * Get the local date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since
@@ -31,7 +31,7 @@ trait XCalendar4 extends XCalendar3 {
     *
     * The actual timezone and daylight saving time offsets effective at the given date and time are considered and added to the UTC time at the calendar.
     */
-  def getLocalDateTime(): Double = js.native
+  def getLocalDateTime(): Double
   
   /**
     * Set the local date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since
@@ -40,7 +40,7 @@ trait XCalendar4 extends XCalendar3 {
     * The actual timezone and daylight saving time offsets effective at the given date and time are considered and subtracted before setting the UTC time at
     * the calendar.
     */
-  def setLocalDateTime(TimeInDays: Double): Unit = js.native
+  def setLocalDateTime(TimeInDays: Double): Unit
 }
 object XCalendar4 {
   

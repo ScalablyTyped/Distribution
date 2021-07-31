@@ -4,7 +4,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,11 +15,14 @@ object mod {
   @param toStream - The stream to copy the properties to.
   @return The same object as `toStream`.
   */
-  @JSImport("mimic-response", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[T /* <: ReadableStream */](
     fromStream: IncomingMessage,
     // eslint-disable-line @typescript-eslint/prefer-readonly-parameter-types
   toStream: T
-  ): T with IncomingMessage = js.native
+  ): T & IncomingMessage = (^.asInstanceOf[js.Dynamic].apply(fromStream.asInstanceOf[js.Any], toStream.asInstanceOf[js.Any])).asInstanceOf[T & IncomingMessage]
+  
+  @JSImport("mimic-response", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

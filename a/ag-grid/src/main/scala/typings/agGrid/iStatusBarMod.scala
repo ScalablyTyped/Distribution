@@ -5,16 +5,15 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iStatusBarMod {
   
-  @js.native
   trait IStatusBar
-    extends IComponent[js.Any] {
+    extends StObject
+       with IComponent[js.Any] {
     
-    def registerGridPanel(gridPanel: GridPanel): Unit = js.native
+    def registerGridPanel(gridPanel: GridPanel): Unit
   }
   object IStatusBar {
     

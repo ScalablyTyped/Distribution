@@ -3,20 +3,20 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullLiteral extends Type_ {
+trait NullLiteral
+  extends StObject
+     with Type_ {
   
-  var `type`: typings.doctrine.doctrineStrings.NullLiteral = js.native
+  var `type`: typings.doctrine.doctrineStrings.NullLiteral
 }
 object NullLiteral {
   
   @scala.inline
-  def apply(`type`: typings.doctrine.doctrineStrings.NullLiteral): NullLiteral = {
+  def apply(): NullLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral]
   }
   

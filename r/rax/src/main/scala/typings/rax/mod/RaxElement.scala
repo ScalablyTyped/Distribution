@@ -2,29 +2,27 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RaxElement[P, T /* <: String | JSXElementConstructor[_] */] extends StObject {
+trait RaxElement[P, T /* <: String | JSXElementConstructor[js.Any] */] extends StObject {
   
-  var key: Key | Null = js.native
+  var key: Key | Null
   
-  var props: P = js.native
+  var props: P
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object RaxElement {
   
   @scala.inline
-  def apply[P, T /* <: String | JSXElementConstructor[_] */](props: P, `type`: T): RaxElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+  def apply[P, T /* <: String | JSXElementConstructor[js.Any] */](props: P, `type`: T): RaxElement[P, T] = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxElement[P, T]]
   }
   
   @scala.inline
-  implicit class RaxElementMutableBuilder[Self <: RaxElement[_, _], P, T /* <: String | JSXElementConstructor[_] */] (val x: Self with (RaxElement[P, T])) extends AnyVal {
+  implicit class RaxElementMutableBuilder[Self <: RaxElement[?, ?], P, T /* <: String | JSXElementConstructor[js.Any] */] (val x: Self & (RaxElement[P, T])) extends AnyVal {
     
     @scala.inline
     def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

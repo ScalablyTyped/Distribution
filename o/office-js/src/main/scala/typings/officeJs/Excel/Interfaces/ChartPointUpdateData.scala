@@ -16,11 +16,9 @@ import typings.officeJs.officeJsStrings.Triangle
 import typings.officeJs.officeJsStrings.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`. */
-@js.native
 trait ChartPointUpdateData extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var dataLabel: js.UndefOr[ChartDataLabelUpdateData] = js.native
+  var dataLabel: js.UndefOr[ChartDataLabelUpdateData] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartPointFormatUpdateData] = js.native
+  var format: js.UndefOr[ChartPointFormatUpdateData] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hasDataLabel: js.UndefOr[Boolean] = js.native
+  var hasDataLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerBackgroundColor: js.UndefOr[String] = js.native
+  var markerBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerForegroundColor: js.UndefOr[String] = js.native
+  var markerForegroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ChartPointUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ChartPointUpdateData extends StObject {
     */
   var markerStyle: js.UndefOr[
     ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
-  ] = js.native
+  ] = js.undefined
 }
 object ChartPointUpdateData {
   

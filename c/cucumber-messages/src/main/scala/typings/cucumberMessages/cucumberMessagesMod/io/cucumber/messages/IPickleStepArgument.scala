@@ -4,18 +4,16 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleS
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PickleStepArgument. */
-@js.native
 trait IPickleStepArgument extends StObject {
   
   /** PickleStepArgument dataTable */
-  var dataTable: js.UndefOr[IPickleTable | Null] = js.native
+  var dataTable: js.UndefOr[IPickleTable | Null] = js.undefined
   
   /** PickleStepArgument docString */
-  var docString: js.UndefOr[IPickleDocString | Null] = js.native
+  var docString: js.UndefOr[IPickleDocString | Null] = js.undefined
 }
 object IPickleStepArgument {
   

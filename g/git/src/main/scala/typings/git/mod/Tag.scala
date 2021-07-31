@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Tag")
@@ -17,10 +16,12 @@ class Tag protected () extends StObject {
 /* static members */
 object Tag {
   
-  @JSImport("git", "Tag.find_all")
+  @JSImport("git", "Tag")
   @js.native
-  def find_all(repo: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Tag.find_all")
-  @js.native
-  def find_all(repo: js.Any, options: js.Any, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def find_all(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def find_all(repo: js.Any, options: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

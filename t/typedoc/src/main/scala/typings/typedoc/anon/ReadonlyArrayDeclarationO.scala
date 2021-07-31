@@ -4,24 +4,22 @@ import typings.typedoc.optionsDeclarationMod.ParameterScope
 import typings.typedoc.optionsDeclarationMod.ParameterType.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.ArrayDeclarationOption> */
-@js.native
 trait ReadonlyArrayDeclarationO extends StObject {
   
-  val defaultValue: js.UndefOr[js.Array[String]] = js.native
+  val defaultValue: js.UndefOr[js.Array[String]] = js.undefined
   
-  val help: String = js.native
+  val help: String
   
-  val name: String = js.native
+  val name: String
   
-  val scope: js.UndefOr[ParameterScope] = js.native
+  val scope: js.UndefOr[ParameterScope] = js.undefined
   
-  val short: js.UndefOr[String] = js.native
+  val short: js.UndefOr[String] = js.undefined
   
-  val `type`: Array = js.native
+  val `type`: Array
 }
 object ReadonlyArrayDeclarationO {
   

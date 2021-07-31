@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountOpenWorkflowExecutionsInput extends StObject {
   
   /**
     * The name of the domain containing the workflow executions to count.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * If specified, only workflow executions matching the WorkflowId in the filter are counted.   executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.native
+  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.undefined
   
   /**
     * Specifies the start time criteria that workflow executions must meet in order to be counted.
     */
-  var startTimeFilter: ExecutionTimeFilter = js.native
+  var startTimeFilter: ExecutionTimeFilter
   
   /**
     * If specified, only executions that have a tag that matches the filter are counted.   executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var tagFilter: js.UndefOr[TagFilter] = js.native
+  var tagFilter: js.UndefOr[TagFilter] = js.undefined
   
   /**
     * Specifies the type of the workflow executions to be counted.   executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.native
+  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.undefined
 }
 object CountOpenWorkflowExecutionsInput {
   

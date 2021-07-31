@@ -7,21 +7,19 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.POST
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var headers: Dictkey = js.native
+  var headers: Dictkey
   
-  var method: GET | POST | DELETE | PUT = js.native
+  var method: GET | POST | DELETE | PUT
   
-  var timeout: Double = js.native
+  var timeout: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Options {
   

@@ -2,28 +2,26 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonMock extends StObject {
   
   /**
     * Overrides obj.method with a mock function and returns it.
     */
-  def expects(method: String): SinonExpectation = js.native
+  def expects(method: String): SinonExpectation
   
   /**
     * Restores all mocked methods.
     */
-  def restore(): Unit = js.native
+  def restore(): Unit
   
   /**
     * Verifies all expectations on the mock.
     * If any expectation is not satisfied, an exception is thrown.
     * Also restores the mocked methods.
     */
-  def verify(): Unit = js.native
+  def verify(): Unit
 }
 object SinonMock {
   

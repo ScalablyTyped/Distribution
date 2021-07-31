@@ -3,10 +3,13 @@ package typings.autolinker
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regexLibMod {
+  
+  @JSImport("autolinker/dist/commonjs/regex-lib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "alphaCharsAndMarksStr")
   @js.native
@@ -48,9 +51,8 @@ object regexLibMod {
   @js.native
   val emojiStr: String = js.native
   
-  @JSImport("autolinker/dist/commonjs/regex-lib", "getDomainNameStr")
-  @js.native
-  def getDomainNameStr(group: Double): String = js.native
+  @scala.inline
+  def getDomainNameStr(group: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameStr")(group.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "letterRe")
   @js.native

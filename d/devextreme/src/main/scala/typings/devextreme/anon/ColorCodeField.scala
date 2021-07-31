@@ -24,25 +24,23 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorCodeField extends StObject {
   
-  var colorCodeField: js.UndefOr[String] = js.native
+  var colorCodeField: js.UndefOr[String] = js.undefined
   
-  var colorizeGroups: js.UndefOr[Boolean] = js.native
+  var colorizeGroups: js.UndefOr[Boolean] = js.undefined
   
   var palette: js.UndefOr[
     js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.native
+  ] = js.undefined
   
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
   
-  var range: js.UndefOr[js.Array[Double]] = js.native
+  var range: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: js.UndefOr[discrete | gradient | none | range] = js.native
+  var `type`: js.UndefOr[discrete | gradient | none | range] = js.undefined
 }
 object ColorCodeField {
   

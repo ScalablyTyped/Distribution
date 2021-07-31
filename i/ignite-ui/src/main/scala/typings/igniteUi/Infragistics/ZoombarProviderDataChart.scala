@@ -2,31 +2,29 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoombarProviderDataChart extends StObject {
   
-  def clean(): Unit = js.native
+  def clean(): Unit
   
-  def cleanOptsForZoom(options: js.Object): Unit = js.native
+  def cleanOptsForZoom(options: js.Object): Unit
   
-  def createClone(container: js.Object, options: js.Object): Unit = js.native
+  def createClone(container: js.Object, options: js.Object): Unit
   
-  def getBaseOpts(options: js.Object): Unit = js.native
+  def getBaseOpts(options: js.Object): Unit
   
-  def setSize(width: js.Object, height: js.Object): Unit = js.native
+  def setSize(width: js.Object, height: js.Object): Unit
   
-  def syncMinWidth(minWidth: js.Object): Unit = js.native
+  def syncMinWidth(minWidth: js.Object): Unit
   
-  def targetObject(obj: js.Object): Unit = js.native
+  def targetObject(obj: js.Object): Unit
   
-  def targetWidth(): Unit = js.native
+  def targetWidth(): Unit
   
-  def update(a: js.Object, b: js.Object): Unit = js.native
+  def update(a: js.Object, b: js.Object): Unit
   
-  def widgetName(): Unit = js.native
+  def widgetName(): Unit
 }
 object ZoombarProviderDataChart {
   

@@ -3,13 +3,13 @@ package typings.baseui.menuMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupedItemsT extends /* key */ StringDictionary[ArrayItemsT] {
+trait GroupedItemsT
+  extends StObject
+     with /* key */ StringDictionary[ArrayItemsT] {
   
-  var __ungrouped: ArrayItemsT = js.native
+  var __ungrouped: ArrayItemsT
 }
 object GroupedItemsT {
   

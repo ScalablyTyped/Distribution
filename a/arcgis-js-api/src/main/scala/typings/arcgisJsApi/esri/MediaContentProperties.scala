@@ -2,11 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaContentProperties extends ContentProperties {
+trait MediaContentProperties
+  extends StObject
+     with ContentProperties {
   
   /**
     * Contains the media elements representing images or charts to display within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
@@ -14,8 +14,8 @@ trait MediaContentProperties extends ContentProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#mediaInfos)
     */
   var mediaInfos: js.UndefOr[
-    BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[_]
-  ] = js.native
+    BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[js.Any]
+  ] = js.undefined
 }
 object MediaContentProperties {
   
@@ -30,7 +30,7 @@ object MediaContentProperties {
     
     @scala.inline
     def setMediaInfos(
-      value: BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[_]
+      value: BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[js.Any]
     ): Self = StObject.set(x, "mediaInfos", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -3,17 +3,17 @@ package typings.openfin
 import typings.openfin.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monitorMod {
   
-  @js.native
-  trait DipRect extends Rect {
+  trait DipRect
+    extends StObject
+       with Rect {
     
-    var dipRect: Rect = js.native
+    var dipRect: Rect
     
-    var scaledRect: Rect = js.native
+    var scaledRect: Rect
   }
   object DipRect {
     
@@ -34,12 +34,11 @@ object monitorMod {
     }
   }
   
-  @js.native
   trait DipScaleRects extends StObject {
     
-    var dipRect: Rect = js.native
+    var dipRect: Rect
     
-    var scaledRect: Rect = js.native
+    var scaledRect: Rect
   }
   object DipScaleRects {
     
@@ -60,26 +59,25 @@ object monitorMod {
     }
   }
   
-  @js.native
   trait MonitorDetails extends StObject {
     
-    var available: DipScaleRects = js.native
+    var available: DipScaleRects
     
-    var availableRect: Rect = js.native
+    var availableRect: Rect
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var deviceScaleFactor: Double = js.native
+    var deviceScaleFactor: Double
     
-    var displayDeviceActive: Boolean = js.native
+    var displayDeviceActive: Boolean
     
-    var dpi: Point = js.native
+    var dpi: Point
     
-    var monitor: DipScaleRects = js.native
+    var monitor: DipScaleRects
     
-    var monitorRect: Rect = js.native
+    var monitorRect: Rect
     
-    var name: String = js.native
+    var name: String
   }
   object MonitorDetails {
     
@@ -131,22 +129,21 @@ object monitorMod {
     }
   }
   
-  @js.native
   trait MonitorInfo extends StObject {
     
-    var deviceScaleFactor: Double = js.native
+    var deviceScaleFactor: Double
     
-    var dpi: Point = js.native
+    var dpi: Point
     
-    var nonPrimaryMonitors: js.Array[MonitorDetails] = js.native
+    var nonPrimaryMonitors: js.Array[MonitorDetails]
     
-    var primaryMonitor: MonitorDetails = js.native
+    var primaryMonitor: MonitorDetails
     
-    var reason: String = js.native
+    var reason: String
     
-    var taskBar: TaskBar = js.native
+    var taskBar: TaskBar
     
-    var virtualScreen: DipRect = js.native
+    var virtualScreen: DipRect
   }
   object MonitorInfo {
     
@@ -193,16 +190,15 @@ object monitorMod {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Rect {
     
@@ -229,12 +225,13 @@ object monitorMod {
     }
   }
   
-  @js.native
-  trait TaskBar extends DipScaleRects {
+  trait TaskBar
+    extends StObject
+       with DipScaleRects {
     
-    var edge: String = js.native
+    var edge: String
     
-    var rect: Rect = js.native
+    var rect: Rect
   }
   object TaskBar {
     

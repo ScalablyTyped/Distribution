@@ -20,23 +20,21 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointUserMod.UnmarshalledEndp
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointResponseMod {
   
-  @js.native
   trait EndpointResponse extends StObject {
     
     /**
       * The address of the endpoint as provided by your push provider. For example, the DeviceToken or RegistrationId.
       */
-    var Address: js.UndefOr[String] = js.native
+    var Address: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the application that is associated with the endpoint.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * Custom attributes that describe the endpoint by associating a name with an array of values. For example, an attribute named "interests" might have the following values: ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create segments.
@@ -45,7 +43,7 @@ object typesEndpointResponseMod {
       */
     var Attributes: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The channel type.
@@ -54,47 +52,47 @@ object typesEndpointResponseMod {
       */
     var ChannelType: js.UndefOr[
         GCM | APNS | APNS_SANDBOX | APNS_VOIP | APNS_VOIP_SANDBOX | ADM | SMS | EMAIL | BAIDU | CUSTOM | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A number from 0-99 that represents the cohort the endpoint is assigned to. Endpoints are grouped into cohorts randomly, and each cohort contains approximately 1 percent of the endpoints for an app. Amazon Pinpoint assigns cohorts to the holdout or treatment allocations for a campaign.
       */
-    var CohortId: js.UndefOr[String] = js.native
+    var CohortId: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when the endpoint was created, shown in ISO 8601 format.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The endpoint demographic attributes.
       */
-    var Demographic: js.UndefOr[EndpointDemographic] = js.native
+    var Demographic: js.UndefOr[EndpointDemographic] = js.undefined
     
     /**
       * The date and time when the endpoint was last updated, shown in ISO 8601 format.
       */
-    var EffectiveDate: js.UndefOr[String] = js.native
+    var EffectiveDate: js.UndefOr[String] = js.undefined
     
     /**
       * Unused.
       */
-    var EndpointStatus: js.UndefOr[String] = js.native
+    var EndpointStatus: js.UndefOr[String] = js.undefined
     
     /**
       * The unique ID that you assigned to the endpoint. The ID should be a globally unique identifier (GUID) to ensure that it doesn't conflict with other endpoint IDs associated with the application.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * The endpoint location attributes.
       */
-    var Location: js.UndefOr[EndpointLocation] = js.native
+    var Location: js.UndefOr[EndpointLocation] = js.undefined
     
     /**
       * Custom metrics that your app reports to Amazon Pinpoint.
       */
-    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.native
+    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * Indicates whether a user has opted out of receiving messages with one of the following values:
@@ -103,17 +101,17 @@ object typesEndpointResponseMod {
       *
       * NONE - Users has not opted out and receives all messages.
       */
-    var OptOut: js.UndefOr[String] = js.native
+    var OptOut: js.UndefOr[String] = js.undefined
     
     /**
       * The unique ID for the most recent request to update the endpoint.
       */
-    var RequestId: js.UndefOr[String] = js.native
+    var RequestId: js.UndefOr[String] = js.undefined
     
     /**
       * Custom user-specific attributes that your app reports to Amazon Pinpoint.
       */
-    var User: js.UndefOr[EndpointUser] = js.native
+    var User: js.UndefOr[EndpointUser] = js.undefined
   }
   object EndpointResponse {
     
@@ -222,8 +220,9 @@ object typesEndpointResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEndpointResponse extends EndpointResponse {
+  trait UnmarshalledEndpointResponse
+    extends StObject
+       with EndpointResponse {
     
     /**
       * Custom attributes that describe the endpoint by associating a name with an array of values. For example, an attribute named "interests" might have the following values: ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create segments.
@@ -231,31 +230,31 @@ object typesEndpointResponseMod {
       * The Amazon Pinpoint console can't display attribute names that include the following characters: hash/pound sign (#), colon (:), question mark (?), backslash (\), and forward slash (/). For this reason, you should avoid using these characters in the names of custom attributes.
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledEndpointResponse: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Attributes_UnmarshalledEndpointResponse: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
     /**
       * The endpoint demographic attributes.
       */
     @JSName("Demographic")
-    var Demographic_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointDemographic] = js.native
+    var Demographic_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointDemographic] = js.undefined
     
     /**
       * The endpoint location attributes.
       */
     @JSName("Location")
-    var Location_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointLocation] = js.native
+    var Location_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointLocation] = js.undefined
     
     /**
       * Custom metrics that your app reports to Amazon Pinpoint.
       */
     @JSName("Metrics")
-    var Metrics_UnmarshalledEndpointResponse: js.UndefOr[StringDictionary[Double]] = js.native
+    var Metrics_UnmarshalledEndpointResponse: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Custom user-specific attributes that your app reports to Amazon Pinpoint.
       */
     @JSName("User")
-    var User_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointUser] = js.native
+    var User_UnmarshalledEndpointResponse: js.UndefOr[UnmarshalledEndpointUser] = js.undefined
   }
   object UnmarshalledEndpointResponse {
     

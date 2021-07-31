@@ -9,7 +9,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colMod {
@@ -21,27 +20,27 @@ object colMod {
   
   type Col = Component[ColProps, js.Object, js.Any]
   
-  @js.native
   trait ColProps
-    extends HTMLAttributes[HTMLDivElement]
+    extends StObject
+       with HTMLAttributes[HTMLDivElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var lg: js.UndefOr[ColumnProps] = js.native
+    var lg: js.UndefOr[ColumnProps] = js.undefined
     
-    var md: js.UndefOr[ColumnProps] = js.native
+    var md: js.UndefOr[ColumnProps] = js.undefined
     
-    var sm: js.UndefOr[ColumnProps] = js.native
+    var sm: js.UndefOr[ColumnProps] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     // custom widths
-    var widths: js.UndefOr[js.Array[String]] = js.native
+    var widths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var xl: js.UndefOr[ColumnProps] = js.native
+    var xl: js.UndefOr[ColumnProps] = js.undefined
     
-    var xs: js.UndefOr[ColumnProps] = js.native
+    var xs: js.UndefOr[ColumnProps] = js.undefined
   }
   object ColProps {
     
@@ -79,7 +78,7 @@ object colMod {
       def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

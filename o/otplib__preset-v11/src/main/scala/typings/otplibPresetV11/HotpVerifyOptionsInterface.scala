@@ -2,17 +2,15 @@ package typings.otplibPresetV11
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HotpVerifyOptionsInterface extends StObject {
   
-  var counter: js.UndefOr[Double] = js.native
+  var counter: js.UndefOr[Double] = js.undefined
   
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object HotpVerifyOptionsInterface {
   

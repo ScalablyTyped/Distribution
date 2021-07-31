@@ -2,23 +2,23 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileCreationInformation extends ClientValueObject {
+trait FileCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_content(): Base64EncodedByteArray = js.native
+  def get_content(): Base64EncodedByteArray
   
-  def get_overwrite(): Boolean = js.native
+  def get_overwrite(): Boolean
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_content(value: Base64EncodedByteArray): Unit = js.native
+  def set_content(value: Base64EncodedByteArray): Unit
   
-  def set_overwrite(value: Boolean): Unit = js.native
+  def set_overwrite(value: Boolean): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object FileCreationInformation {
   

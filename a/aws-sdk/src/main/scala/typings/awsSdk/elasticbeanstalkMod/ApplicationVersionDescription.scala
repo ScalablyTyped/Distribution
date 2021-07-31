@@ -2,61 +2,59 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationVersionDescription extends StObject {
   
   /**
     * The name of the application to which the application version belongs.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the application version.
     */
-  var ApplicationVersionArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationVersionArn] = js.native
+  var ApplicationVersionArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationVersionArn] = js.undefined
   
   /**
     * Reference to the artifact from the AWS CodeBuild build.
     */
-  var BuildArn: js.UndefOr[String] = js.native
+  var BuildArn: js.UndefOr[String] = js.undefined
   
   /**
     * The creation date of the application version.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.native
+  var DateCreated: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The last modified date of the application version.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.native
+  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
   
   /**
     * The description of the application version.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * If the version's source code was retrieved from AWS CodeCommit, the location of the source code for the application version.
     */
-  var SourceBuildInformation: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SourceBuildInformation] = js.native
+  var SourceBuildInformation: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SourceBuildInformation] = js.undefined
   
   /**
     * The storage location of the application version's source bundle in Amazon S3.
     */
-  var SourceBundle: js.UndefOr[S3Location] = js.native
+  var SourceBundle: js.UndefOr[S3Location] = js.undefined
   
   /**
     * The processing status of the application version. Reflects the state of the application version during its creation. Many of the values are only applicable if you specified True for the Process parameter of the CreateApplicationVersion action. The following list describes the possible values.    Unprocessed – Application version wasn't pre-processed or validated. Elastic Beanstalk will validate configuration files during deployment of the application version to an environment.    Processing – Elastic Beanstalk is currently processing the application version.    Building – Application version is currently undergoing an AWS CodeBuild build.    Processed – Elastic Beanstalk was successfully pre-processed and validated.    Failed – Either the AWS CodeBuild build failed or configuration files didn't pass validation. This application version isn't usable.  
     */
-  var Status: js.UndefOr[ApplicationVersionStatus] = js.native
+  var Status: js.UndefOr[ApplicationVersionStatus] = js.undefined
   
   /**
     * A unique identifier for the application version.
     */
-  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.native
+  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.undefined
 }
 object ApplicationVersionDescription {
   

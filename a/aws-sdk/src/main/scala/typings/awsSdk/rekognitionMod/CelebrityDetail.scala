@@ -2,41 +2,39 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CelebrityDetail extends StObject {
   
   /**
     * Bounding box around the body of a celebrity.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * The confidence, in percentage, that Amazon Rekognition has that the recognized face is the celebrity. 
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * Face details for the recognized celebrity.
     */
-  var Face: js.UndefOr[FaceDetail] = js.native
+  var Face: js.UndefOr[FaceDetail] = js.undefined
   
   /**
     * The unique identifier for the celebrity. 
     */
-  var Id: js.UndefOr[RekognitionUniqueId] = js.native
+  var Id: js.UndefOr[RekognitionUniqueId] = js.undefined
   
   /**
     * The name of the celebrity.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * An array of URLs pointing to additional celebrity information. 
     */
-  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.native
+  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.undefined
 }
 object CelebrityDetail {
   

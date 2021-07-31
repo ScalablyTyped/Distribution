@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. You can retrieve this ARN by calling  ListRepositoryAssociations . 
     */
-  var resourceArn: AssociationArn = js.native
+  var resourceArn: AssociationArn
 }
 object ListTagsForResourceRequest {
   

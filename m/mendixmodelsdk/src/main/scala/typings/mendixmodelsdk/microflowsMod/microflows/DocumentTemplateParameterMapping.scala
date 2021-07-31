@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DocumentTemplateParameterMapping")
@@ -60,9 +59,8 @@ object DocumentTemplateParameterMapping {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DocumentTemplateParameterMapping.create")
-  @js.native
-  def create(model: IModel): DocumentTemplateParameterMapping = js.native
+  @scala.inline
+  def create(model: IModel): DocumentTemplateParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DocumentTemplateParameterMapping]
   
   /**
     * Creates and returns a new DocumentTemplateParameterMapping instance in the SDK and on the server.
@@ -70,9 +68,8 @@ object DocumentTemplateParameterMapping {
     * of the parent GenerateDocumentAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DocumentTemplateParameterMapping.createIn")
-  @js.native
-  def createIn(container: GenerateDocumentAction): DocumentTemplateParameterMapping = js.native
+  @scala.inline
+  def createIn(container: GenerateDocumentAction): DocumentTemplateParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DocumentTemplateParameterMapping]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DocumentTemplateParameterMapping.structureTypeName")

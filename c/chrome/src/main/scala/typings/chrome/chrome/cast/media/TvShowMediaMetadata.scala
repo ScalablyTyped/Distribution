@@ -3,40 +3,38 @@ package typings.chrome.chrome.cast.media
 import typings.chrome.chrome.cast.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TvShowMediaMetadata extends StObject {
   
-  var episode: Double = js.native
+  var episode: Double
   
   /** @deprecated. Use episode instead. */
-  var episodeNumber: Double = js.native
+  var episodeNumber: Double
   
   /** @deprecated. Use title instead. */
-  var episodeTitle: String = js.native
+  var episodeTitle: String
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var metadataType: MetadataType = js.native
+  var metadataType: MetadataType
   
-  var originalAirdate: String = js.native
+  var originalAirdate: String
   
   /** @deprecated. Use originalAirdate instead. */
-  var releaseYear: Double = js.native
+  var releaseYear: Double
   
-  var season: Double = js.native
+  var season: Double
   
   /** @deprecated. Use season instead. */
-  var seasonNumber: Double = js.native
+  var seasonNumber: Double
   
-  var seriesTitle: String = js.native
+  var seriesTitle: String
   
-  var title: String = js.native
+  var title: String
   
   /** @deprecated. Use metadataType instead. */
-  var `type`: MetadataType = js.native
+  var `type`: MetadataType
 }
 object TvShowMediaMetadata {
   

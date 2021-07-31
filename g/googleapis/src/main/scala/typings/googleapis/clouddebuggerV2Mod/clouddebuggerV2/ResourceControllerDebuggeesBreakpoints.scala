@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Controller$Debuggees$Breakpoints")
@@ -92,7 +91,7 @@ class ResourceControllerDebuggeesBreakpoints protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListActiveBreakpointsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(params: ParamsResourceControllerDebuggeesBreakpointsList): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(
     params: ParamsResourceControllerDebuggeesBreakpointsList,
@@ -192,7 +191,7 @@ class ResourceControllerDebuggeesBreakpoints protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(callback: BodyResponseCallback[SchemaUpdateActiveBreakpointResponse]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(params: ParamsResourceControllerDebuggeesBreakpointsUpdate): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(
     params: ParamsResourceControllerDebuggeesBreakpointsUpdate,

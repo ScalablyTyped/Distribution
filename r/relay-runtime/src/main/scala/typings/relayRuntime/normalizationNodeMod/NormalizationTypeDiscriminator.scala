@@ -2,16 +2,16 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationTypeDiscriminator extends NormalizationSelection {
+trait NormalizationTypeDiscriminator
+  extends StObject
+     with NormalizationSelection {
   
   // 'TypeDiscriminator';
-  val abstractKey: String = js.native
+  val abstractKey: String
   
-  val kind: String = js.native
+  val kind: String
 }
 object NormalizationTypeDiscriminator {
   

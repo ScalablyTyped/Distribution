@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachCertificateFromDistributionRequest extends StObject {
   
   /**
     * The name of the distribution from which to detach the certificate. Use the GetDistributions action to get a list of distribution names that you can specify.
     */
-  var distributionName: ResourceName = js.native
+  var distributionName: ResourceName
 }
 object DetachCertificateFromDistributionRequest {
   

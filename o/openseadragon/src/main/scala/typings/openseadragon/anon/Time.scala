@@ -2,15 +2,13 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var time: Double = js.native
+  var time: Double
   
-  var value: Double = js.native
+  var value: Double
 }
 object Time {
   

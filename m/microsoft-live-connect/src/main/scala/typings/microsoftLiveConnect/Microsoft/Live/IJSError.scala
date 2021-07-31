@@ -2,25 +2,23 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error returned by the JavaScript library, as opposed to an error
   * object from the REST API (which we represent with IError).
   */
-@js.native
 trait IJSError extends StObject {
   
   /**
     * The error code.
     */
-  var error: String = js.native
+  var error: String
   
   /**
     * A description of the error.
     */
-  var error_description: String = js.native
+  var error_description: String
 }
 object IJSError {
   

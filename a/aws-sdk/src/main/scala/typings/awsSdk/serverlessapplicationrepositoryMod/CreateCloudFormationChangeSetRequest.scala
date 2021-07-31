@@ -2,16 +2,14 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCloudFormationChangeSetRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * A list of values that you must specify before you can deploy certain applications.
@@ -38,72 +36,72 @@ trait CreateCloudFormationChangeSetRequest extends StObject {
     all permissions associated with the application before deploying. If you don't specify
     this parameter for an application that requires capabilities, the call will fail.
     */
-  var Capabilities: js.UndefOr[listOfString] = js.native
+  var Capabilities: js.UndefOr[listOfString] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ChangeSetName: js.UndefOr[string] = js.native
+  var ChangeSetName: js.UndefOr[string] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ClientToken: js.UndefOr[string] = js.native
+  var ClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var NotificationArns: js.UndefOr[listOfString] = js.native
+  var NotificationArns: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A list of parameter values for the parameters of the application.
     */
-  var ParameterOverrides: js.UndefOr[listOfParameterValue] = js.native
+  var ParameterOverrides: js.UndefOr[listOfParameterValue] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ResourceTypes: js.UndefOr[listOfString] = js.native
+  var ResourceTypes: js.UndefOr[listOfString] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var RollbackConfiguration: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.RollbackConfiguration] = js.native
+  var RollbackConfiguration: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.RollbackConfiguration] = js.undefined
   
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[string] = js.native
+  var SemanticVersion: js.UndefOr[string] = js.undefined
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var StackName: string = js.native
+  var StackName: string
   
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var Tags: js.UndefOr[listOfTag] = js.native
+  var Tags: js.UndefOr[listOfTag] = js.undefined
   
   /**
     * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
     */
-  var TemplateId: js.UndefOr[string] = js.native
+  var TemplateId: js.UndefOr[string] = js.undefined
 }
 object CreateCloudFormationChangeSetRequest {
   

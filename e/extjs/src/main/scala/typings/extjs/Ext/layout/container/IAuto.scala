@@ -3,61 +3,61 @@ package typings.extjs.Ext.layout.container
 import typings.extjs.Ext.layout.IContextItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAuto extends IContainer {
+trait IAuto
+  extends StObject
+     with IContainer {
   
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayoutCycle_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Handles overflow processing for a container
     * @param ownerContext Ext.layout.ContextItem
     */
-  var calculateOverflow: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], Unit]] = js.native
+  var calculateOverflow: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], Unit]] = js.undefined
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] This method if implemented is called at the end of the cycle in which this layout completes by not setting done to
     * @param ownerContext Object
     */
   @JSName("completeLayout")
-  var completeLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var completeLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM
     * @param ownerContext Object
     */
   @JSName("finishedLayout")
-  var finishedLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var finishedLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Returns the overflow x style of the render target
     * @param ownerContext Ext.layout.ContextItem
     * @returns String
     */
-  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.native
+  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   
   /** [Method] Returns the overflow y style of the render target
     * @param ownerContext Ext.layout.ContextItem
     * @returns String
     */
-  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.native
+  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   
   /** [Property] (Boolean) */
-  var manageOverflow: js.UndefOr[Boolean] = js.native
+  var manageOverflow: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var managePadding: js.UndefOr[Boolean] = js.native
+  var managePadding: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var reserveScrollbar: js.UndefOr[Boolean] = js.native
+  var reserveScrollbar: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] This method sets the height and or width of the outerCt innerCt to adjust for the following browser specific issues
     * @param ownerContext Ext.layout.ContextItem
@@ -69,7 +69,7 @@ trait IAuto extends IContainer {
       /* containerSize */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IAuto {
   

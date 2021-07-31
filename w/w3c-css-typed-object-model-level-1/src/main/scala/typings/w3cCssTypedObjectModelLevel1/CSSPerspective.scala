@@ -3,15 +3,15 @@ package typings.w3cCssTypedObjectModelLevel1
 import typings.std.DOMMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),
   thus the separate interfaces for all three. */
-@js.native
-trait CSSPerspective extends CSSTransformComponent {
+trait CSSPerspective
+  extends StObject
+     with CSSTransformComponent {
   
-  var length: CSSNumericValue = js.native
+  var length: CSSNumericValue
 }
 object CSSPerspective {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTargetsForSecurityProfileResponse extends StObject {
   
   /**
     * A token that can be used to retrieve the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The thing groups to which the security profile is attached.
     */
-  var securityProfileTargets: js.UndefOr[SecurityProfileTargets] = js.native
+  var securityProfileTargets: js.UndefOr[SecurityProfileTargets] = js.undefined
 }
 object ListTargetsForSecurityProfileResponse {
   

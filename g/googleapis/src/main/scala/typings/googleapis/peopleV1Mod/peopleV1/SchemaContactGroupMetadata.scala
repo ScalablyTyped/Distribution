@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The read-only metadata about a contact group.
   */
-@js.native
 trait SchemaContactGroupMetadata extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaContactGroupMetadata extends StObject {
     * [`ListContactGroups`](/people/api/rest/v1/contactgroups/list) requests
     * that include a sync token.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time the group was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaContactGroupMetadata {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendingCopy extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait BulkSendingCopy extends StObject {
       /* This object contains details about a custom field for a bulk send copy. In a bulk send request, each custom field in the bulk send list
     must match a custom field in the envelope or template that you want to send. */ BulkSendingCopyCustomField
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The email body for this copy of the envelope.
     */
-  var emailBlurb: js.UndefOr[String] = js.native
+  var emailBlurb: js.UndefOr[String] = js.undefined
   
   /**
     * The email subject line for this copy of the envelope. For information about adding merge field information to the email subject, see
     * [Template Email Subject Merge Fields](https://developers.docusign.com/esign-rest-api/reference/Templates/Templates/create#template-email-subject-merge-fields).
     */
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the recipients associated with this copy of the envelope.
@@ -38,7 +36,7 @@ trait BulkSendingCopy extends StObject {
     js.Array[
       /* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BulkSendingCopy {
   

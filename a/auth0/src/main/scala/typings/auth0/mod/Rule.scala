@@ -2,41 +2,39 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
     * `true` if the connection is enabled, `false` otherwise.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The rule's identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the rule.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The rule's order in relation to other rules. A rule with a lower order than another rule executes first.
     */
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
   /**
     * The code to be executed when the rule runs.
     */
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
   
   /**
     * The rule's execution stage.
     */
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
 }
 object Rule {
   

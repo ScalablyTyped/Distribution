@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigsRequest extends StObject {
   
   /**
     * Maximum number of Configs returned.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * Next token returned in the request of a previous ListConfigs call. Used to get the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object ListConfigsRequest {
   

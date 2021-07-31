@@ -2,27 +2,25 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliveryPreferencesEditable extends StObject {
   
-  var deliveryPreferencesEditable: scala.Double = js.native
+  var deliveryPreferencesEditable: scala.Double
   
-  var isGroup: scala.Double = js.native
+  var isGroup: scala.Double
   
-  var isTeam: scala.Double = js.native
+  var isTeam: scala.Double
   
-  var isUser: scala.Double = js.native
+  var isUser: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var supportsEachMemberDelivery: scala.Double = js.native
+  var supportsEachMemberDelivery: scala.Double
   
-  var supportsNoDelivery: scala.Double = js.native
+  var supportsNoDelivery: scala.Double
   
-  var supportsPreferredEmailAddressDelivery: scala.Double = js.native
+  var supportsPreferredEmailAddressDelivery: scala.Double
 }
 object DeliveryPreferencesEditable {
   

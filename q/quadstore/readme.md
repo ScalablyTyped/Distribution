@@ -10,9 +10,9 @@ A LevelDB-backed graph database for Node.js and the browser. Supports quads, RDF
 | ------------------ | :-------------: |
 | Full name          | quadstore |
 | Keywords           | node, nodejs, quadstore, graph, rdf, database, sparql, rdfjs, browser |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 4464 |
+| # releases         | 35 |
+| # dependents       | 1 |
+| # downloads        | 7904 |
 | # stars            | 1 |
 
 ## Links

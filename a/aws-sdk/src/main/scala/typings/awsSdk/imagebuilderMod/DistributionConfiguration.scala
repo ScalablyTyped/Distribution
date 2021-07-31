@@ -2,51 +2,49 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which this distribution configuration was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which this distribution configuration was last updated.
     */
-  var dateUpdated: js.UndefOr[DateTime] = js.native
+  var dateUpdated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the distribution configuration.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The distributions of the distribution configuration.
     */
-  var distributions: js.UndefOr[DistributionList] = js.native
+  var distributions: js.UndefOr[DistributionList] = js.undefined
   
   /**
     * The name of the distribution configuration.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The tags of the distribution configuration.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The maximum duration in minutes for this distribution configuration.
     */
-  var timeoutMinutes: DistributionTimeoutMinutes = js.native
+  var timeoutMinutes: DistributionTimeoutMinutes
 }
 object DistributionConfiguration {
   

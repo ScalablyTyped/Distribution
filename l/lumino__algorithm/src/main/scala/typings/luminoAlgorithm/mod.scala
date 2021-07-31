@@ -11,12 +11,19 @@ import typings.luminoAlgorithm.stringMod.StringExt.IMatchResult
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@lumino/algorithm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object ArrayExt {
+    
+    @JSImport("@lumino/algorithm", "ArrayExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Fill an array with a static value.
@@ -53,18 +60,14 @@ object mod {
       * ArrayExt.fill(data, 'z', 3, 1);  // ['z', 'z', 'b', 'z']
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.fill")
-    @js.native
-    def fill[T](array: MutableArrayLike[T], value: T): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.fill")
-    @js.native
-    def fill[T](array: MutableArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.fill")
-    @js.native
-    def fill[T](array: MutableArrayLike[T], value: T, start: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.fill")
-    @js.native
-    def fill[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = js.native
+    @scala.inline
+    def fill[T](array: MutableArrayLike[T], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fill[T](array: MutableArrayLike[T], value: T, start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fill[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fill[T](array: MutableArrayLike[T], value: T, start: Unit, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Find the index of the first value which matches a predicate.
@@ -110,28 +113,24 @@ object mod {
       * ArrayExt.findFirstIndex(data, isEven, 6, 5); // 1
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
-    @js.native
-    def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
-    @js.native
-    def findFirstIndex[T](
-      array: ArrayLike[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
-    @js.native
-    def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
-    @js.native
+    @scala.inline
+    def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def findFirstIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def findFirstIndex[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the first value which matches a predicate.
@@ -177,28 +176,24 @@ object mod {
       * ArrayExt.findFirstValue(data, isEven, 6, 5); // 2
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
-    @js.native
-    def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
-    @js.native
-    def findFirstValue[T](
-      array: ArrayLike[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
-    @js.native
-    def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
-    @js.native
+    @scala.inline
+    def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
+    def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
     def findFirstValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): js.UndefOr[T] = js.native
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
+    def findFirstValue[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFirstValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     /**
       * Find the index of the last value which matches a predicate.
@@ -244,28 +239,24 @@ object mod {
       * ArrayExt.findLastIndex(data, isEven, 0, 1);  // 5
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
-    @js.native
-    def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
-    @js.native
-    def findLastIndex[T](
-      array: ArrayLike[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
-    @js.native
-    def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
-    @js.native
+    @scala.inline
+    def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def findLastIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def findLastIndex[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the last value which matches a predicate.
@@ -311,28 +302,24 @@ object mod {
       * ArrayExt.findLastValue(data, isEven, 0, 1);  // 2
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
-    @js.native
-    def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
-    @js.native
-    def findLastValue[T](
-      array: ArrayLike[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
-    @js.native
-    def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
-    @js.native
+    @scala.inline
+    def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
+    def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
     def findLastValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): js.UndefOr[T] = js.native
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    @scala.inline
+    def findLastValue[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLastValue")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     /**
       * Find the index of the first occurrence of a value in an array.
@@ -374,18 +361,14 @@ object mod {
       * ArrayExt.firstIndexOf(data, 'two', 2, 1);  // 1
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
-    @js.native
-    def firstIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
-    @js.native
-    def firstIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
-    @js.native
-    def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
-    @js.native
-    def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def firstIndexOf[T](array: ArrayLike[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def firstIndexOf[T](array: ArrayLike[T], value: T, start: Unit, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Insert a value into an array at a specific index.
@@ -414,9 +397,8 @@ object mod {
       * ArrayExt.insert(data, 6, 19);  // [-1, 0, 12, 1, 7, 2, 19]
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.insert")
-    @js.native
-    def insert[T](array: js.Array[T], index: Double, value: T): Unit = js.native
+    @scala.inline
+    def insert[T](array: js.Array[T], index: Double, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Find the index of the last occurrence of a value in an array.
@@ -458,18 +440,14 @@ object mod {
       * ArrayExt.lastIndexOf(data, 'two', 0, 1);  // 1
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def lastIndexOf[T](array: ArrayLike[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def lastIndexOf[T](array: ArrayLike[T], value: T, start: Unit, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the index of the first element which compares `>=` to a value.
@@ -526,35 +504,31 @@ object mod {
       * ArrayExt.lowerBound(data, 10, numberCmp);  // 6
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
-    @js.native
-    def lowerBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
-    @js.native
-    def lowerBound[T, U](
-      array: ArrayLike[T],
-      value: U,
-      fn: js.Function2[/* element */ T, /* value */ U, Double],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
-    @js.native
+    @scala.inline
+    def lowerBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double,
       stop: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def lowerBound[T, U](
+      array: ArrayLike[T],
+      value: U,
+      fn: js.Function2[/* element */ T, /* value */ U, Double],
+      start: Unit,
+      stop: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Move an element in an array from one index to another.
@@ -582,9 +556,8 @@ object mod {
       * ArrayExt.move(data, 4, 2);  // [0, 2, 4, 1, 3]
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.move")
-    @js.native
-    def move[T](array: MutableArrayLike[T], fromIndex: Double, toIndex: Double): Unit = js.native
+    @scala.inline
+    def move[T](array: MutableArrayLike[T], fromIndex: Double, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove all occurrences of a value from an array.
@@ -621,18 +594,14 @@ object mod {
       * ArrayExt.removeAllOf(data, 14, 1, 4);  // 1
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
-    @js.native
-    def removeAllOf[T](array: js.Array[T], value: T): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
-    @js.native
-    def removeAllOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
-    @js.native
-    def removeAllOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
-    @js.native
-    def removeAllOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def removeAllOf[T](array: js.Array[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeAllOf[T](array: js.Array[T], value: T, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeAllOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeAllOf[T](array: js.Array[T], value: T, start: Unit, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Remove all occurrences of values which match a predicate.
@@ -675,28 +644,24 @@ object mod {
       * ArrayExt.removeAllWhere(data, isNegative, 0, 3);  // 2
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
-    @js.native
-    def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
-    @js.native
-    def removeAllWhere[T](
-      array: js.Array[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
-    @js.native
-    def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
-    @js.native
+    @scala.inline
+    def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def removeAllWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeAllWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Remove and return a value at a specific index in an array.
@@ -725,9 +690,8 @@ object mod {
       * ArrayExt.removeAt(data, 10);  // undefined;
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeAt")
-    @js.native
-    def removeAt[T](array: js.Array[T], index: Double): js.UndefOr[T] = js.native
+    @scala.inline
+    def removeAt[T](array: js.Array[T], index: Double): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     /**
       * Remove the first occurrence of a value from an array.
@@ -765,18 +729,14 @@ object mod {
       * ArrayExt.removeFirstOf(data, 39, 3, 2);  // 2
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
-    @js.native
-    def removeFirstOf[T](array: js.Array[T], value: T): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
-    @js.native
-    def removeFirstOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
-    @js.native
-    def removeFirstOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
-    @js.native
-    def removeFirstOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def removeFirstOf[T](array: js.Array[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeFirstOf[T](array: js.Array[T], value: T, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeFirstOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeFirstOf[T](array: js.Array[T], value: T, start: Unit, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Remove the first occurrence of a value which matches a predicate.
@@ -816,28 +776,24 @@ object mod {
       * ArrayExt.removeFirstWhere(data, isEven, 4);  // { index: -1, value: undefined }
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
-    @js.native
-    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
-    @js.native
-    def removeFirstWhere[T](
-      array: js.Array[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
-    @js.native
-    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
-    @js.native
+    @scala.inline
+    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
+    def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
     def removeFirstWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): Index[T] = js.native
+    ): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
+    def removeFirstWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
     
     /**
       * Remove the last occurrence of a value from an array.
@@ -875,18 +831,14 @@ object mod {
       * ArrayExt.removeLastOf(data, 39, 2, 3);  // 3
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
-    @js.native
-    def removeLastOf[T](array: js.Array[T], value: T): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
-    @js.native
-    def removeLastOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
-    @js.native
-    def removeLastOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
-    @js.native
-    def removeLastOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def removeLastOf[T](array: js.Array[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeLastOf[T](array: js.Array[T], value: T, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeLastOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def removeLastOf[T](array: js.Array[T], value: T, start: Unit, stop: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastOf")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Remove the last occurrence of a value which matches a predicate.
@@ -926,28 +878,24 @@ object mod {
       * ArrayExt.removeLastWhere(data, isEven, 2, 1);  // { index: -1, value: undefined }
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
-    @js.native
-    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
-    @js.native
-    def removeLastWhere[T](
-      array: js.Array[T],
-      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
-    @js.native
-    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
-    @js.native
+    @scala.inline
+    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
+    def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
     def removeLastWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: Double,
       stop: Double
-    ): Index[T] = js.native
+    ): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
+    @scala.inline
+    def removeLastWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: Unit,
+      stop: Double
+    ): Index[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastWhere")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Index[T]]
     
     /**
       * Reverse an array in-place.
@@ -978,18 +926,14 @@ object mod {
       * ArrayExt.reverse(data);        // [1, 4, 2, 3, 0]
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
-    @js.native
-    def reverse[T](array: MutableArrayLike[T]): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
-    @js.native
-    def reverse[T](array: MutableArrayLike[T], start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
-    @js.native
-    def reverse[T](array: MutableArrayLike[T], start: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
-    @js.native
-    def reverse[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = js.native
+    @scala.inline
+    def reverse[T](array: MutableArrayLike[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def reverse[T](array: MutableArrayLike[T], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def reverse[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def reverse[T](array: MutableArrayLike[T], start: Unit, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Rotate the elements of an array in-place.
@@ -1026,18 +970,14 @@ object mod {
       * ArrayExt.rotate(data, 2, 1, 3);  // [4, 2, 0, 1, 3]
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
-    @js.native
-    def rotate[T](array: MutableArrayLike[T], delta: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
-    @js.native
-    def rotate[T](array: MutableArrayLike[T], delta: Double, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
-    @js.native
-    def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
-    @js.native
-    def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
+    @scala.inline
+    def rotate[T](array: MutableArrayLike[T], delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(array.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(array.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(array.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def rotate[T](array: MutableArrayLike[T], delta: Double, start: Unit, stop: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(array.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Test whether two arrays are shallowly equal.
@@ -1069,12 +1009,10 @@ object mod {
       * ArrayExt.shallowEqual(d2, d3);  // false
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.shallowEqual")
-    @js.native
-    def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T]): Boolean = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.shallowEqual")
-    @js.native
-    def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
+    @scala.inline
+    def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * The namespace for the `slice` function statics.
@@ -1110,12 +1048,14 @@ object mod {
         * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
         * ```
         */
+      @scala.inline
+      def apply[T](array: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+      @scala.inline
+      def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+      
       @JSImport("@lumino/algorithm", "ArrayExt.slice")
       @js.native
-      def apply[T](array: ArrayLike[T]): js.Array[T] = js.native
-      @JSImport("@lumino/algorithm", "ArrayExt.slice")
-      @js.native
-      def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -1173,35 +1113,31 @@ object mod {
       * ArrayExt.upperBound(data, 10, numberCmp);  // 6
       * ```
       */
-    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
-    @js.native
-    def upperBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
-    @js.native
-    def upperBound[T, U](
-      array: ArrayLike[T],
-      value: U,
-      fn: js.Function2[/* element */ T, /* value */ U, Double],
-      start: js.UndefOr[scala.Nothing],
-      stop: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
-    @js.native
+    @scala.inline
+    def upperBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double
-    ): Double = js.native
-    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double,
       stop: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def upperBound[T, U](
+      array: ArrayLike[T],
+      value: U,
+      fn: js.Function2[/* element */ T, /* value */ U, Double],
+      start: Unit,
+      stop: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("@lumino/algorithm", "ArrayIterator")
@@ -1379,6 +1315,10 @@ object mod {
   
   object StringExt {
     
+    @JSImport("@lumino/algorithm", "StringExt")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A 3-way string comparison function.
       *
@@ -1388,9 +1328,8 @@ object mod {
       *
       * @returns `-1` if `a < b`, else `1` if `a > b`, else `0`.
       */
-    @JSImport("@lumino/algorithm", "StringExt.cmp")
-    @js.native
-    def cmp(a: String, b: String): Double = js.native
+    @scala.inline
+    def cmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the indices of characters in a source text.
@@ -1412,12 +1351,10 @@ object mod {
       *
       * Characters are matched using strict `===` equality.
       */
-    @JSImport("@lumino/algorithm", "StringExt.findIndices")
-    @js.native
-    def findIndices(source: String, query: String): js.Array[Double] | Null = js.native
-    @JSImport("@lumino/algorithm", "StringExt.findIndices")
-    @js.native
-    def findIndices(source: String, query: String, start: Double): js.Array[Double] | Null = js.native
+    @scala.inline
+    def findIndices(source: String, query: String): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
+    @scala.inline
+    def findIndices(source: String, query: String, start: Double): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
     
     /**
       * Highlight the matched characters of a source text.
@@ -1431,9 +1368,8 @@ object mod {
       *
       * @returns An array of unmatched and highlighted chunks.
       */
-    @JSImport("@lumino/algorithm", "StringExt.highlight")
-    @js.native
-    def highlight[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = js.native
+    @scala.inline
+    def highlight[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(source.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | T]]
     
     /**
       * A string matcher which uses a sum-of-deltas algorithm.
@@ -1458,12 +1394,10 @@ object mod {
       * of matched characters are preferred, while fragmented matches are
       * penalized.
       */
-    @JSImport("@lumino/algorithm", "StringExt.matchSumOfDeltas")
-    @js.native
-    def matchSumOfDeltas(source: String, query: String): IMatchResult | Null = js.native
-    @JSImport("@lumino/algorithm", "StringExt.matchSumOfDeltas")
-    @js.native
-    def matchSumOfDeltas(source: String, query: String, start: Double): IMatchResult | Null = js.native
+    @scala.inline
+    def matchSumOfDeltas(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    @scala.inline
+    def matchSumOfDeltas(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
     
     /**
       * A string matcher which uses a sum-of-squares algorithm.
@@ -1488,12 +1422,10 @@ object mod {
       * that early and consecutive character matches are preferred, while
       * late matches are heavily penalized.
       */
-    @JSImport("@lumino/algorithm", "StringExt.matchSumOfSquares")
-    @js.native
-    def matchSumOfSquares(source: String, query: String): IMatchResult | Null = js.native
-    @JSImport("@lumino/algorithm", "StringExt.matchSumOfSquares")
-    @js.native
-    def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = js.native
+    @scala.inline
+    def matchSumOfSquares(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    @scala.inline
+    def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
   }
   
   @JSImport("@lumino/algorithm", "TakeIterator")
@@ -1537,144 +1469,110 @@ object mod {
     def this(source: js.Array[IIterator[T]]) = this()
   }
   
-  @JSImport("@lumino/algorithm", "chain")
-  @js.native
-  def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = js.native
+  @scala.inline
+  def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "each")
-  @js.native
+  @scala.inline
   def each[T](
     `object`: IterableOrArrayLike[T],
     fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@lumino/algorithm", "empty")
-  @js.native
-  def empty[T](): IIterator[T] = js.native
+  @scala.inline
+  def empty[T](): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "enumerate")
-  @js.native
-  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = js.native
-  @JSImport("@lumino/algorithm", "enumerate")
-  @js.native
-  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = js.native
+  @scala.inline
+  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
+  @scala.inline
+  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
   
-  @JSImport("@lumino/algorithm", "every")
-  @js.native
-  def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
+  @scala.inline
+  def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@lumino/algorithm", "filter")
-  @js.native
-  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = js.native
+  @scala.inline
+  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "find")
-  @js.native
-  def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+  @scala.inline
+  def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("@lumino/algorithm", "findIndex")
-  @js.native
-  def findIndex[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+  @scala.inline
+  def findIndex[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@lumino/algorithm", "iter")
-  @js.native
-  def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = js.native
+  @scala.inline
+  def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iter")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "iterFn")
-  @js.native
-  def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = js.native
+  @scala.inline
+  def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterFn")(fn.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "iterItems")
-  @js.native
-  def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = js.native
+  @scala.inline
+  def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterItems")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[String, T]]]
   
-  @JSImport("@lumino/algorithm", "iterKeys")
-  @js.native
-  def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = js.native
+  @scala.inline
+  def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[String]]
   
-  @JSImport("@lumino/algorithm", "iterValues")
-  @js.native
-  def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = js.native
+  @scala.inline
+  def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "map")
-  @js.native
-  def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = js.native
+  @scala.inline
+  def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[U]]
   
-  @JSImport("@lumino/algorithm", "max")
-  @js.native
-  def max[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
+  @scala.inline
+  def max[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("@lumino/algorithm", "min")
-  @js.native
-  def min[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
+  @scala.inline
+  def min[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("@lumino/algorithm", "minmax")
-  @js.native
-  def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = js.native
+  @scala.inline
+  def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("minmax")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[T, T]]]
   
-  @JSImport("@lumino/algorithm", "once")
-  @js.native
-  def once[T](value: T): IIterator[T] = js.native
+  @scala.inline
+  def once[T](value: T): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "range")
-  @js.native
-  def range(start: Double): IIterator[Double] = js.native
-  @JSImport("@lumino/algorithm", "range")
-  @js.native
-  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): IIterator[Double] = js.native
-  @JSImport("@lumino/algorithm", "range")
-  @js.native
-  def range(start: Double, stop: Double): IIterator[Double] = js.native
-  @JSImport("@lumino/algorithm", "range")
-  @js.native
-  def range(start: Double, stop: Double, step: Double): IIterator[Double] = js.native
+  @scala.inline
+  def range(start: Double): IIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[IIterator[Double]]
+  @scala.inline
+  def range(start: Double, stop: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  @scala.inline
+  def range(start: Double, stop: Double, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  @scala.inline
+  def range(start: Double, stop: Unit, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
   
-  @JSImport("@lumino/algorithm", "reduce")
-  @js.native
+  @scala.inline
   def reduce[T](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
-  ): T = js.native
-  @JSImport("@lumino/algorithm", "reduce")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def reduce[T, U](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
     initial: U
-  ): U = js.native
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any])).asInstanceOf[U]
   
-  @JSImport("@lumino/algorithm", "repeat")
-  @js.native
-  def repeat[T](value: T, count: Double): IIterator[T] = js.native
+  @scala.inline
+  def repeat[T](value: T, count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "retro")
-  @js.native
-  def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = js.native
+  @scala.inline
+  def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "some")
-  @js.native
-  def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
+  @scala.inline
+  def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@lumino/algorithm", "stride")
-  @js.native
-  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = js.native
+  @scala.inline
+  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stride")(`object`.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "take")
-  @js.native
-  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = js.native
+  @scala.inline
+  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(`object`.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
   
-  @JSImport("@lumino/algorithm", "toArray")
-  @js.native
-  def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = js.native
+  @scala.inline
+  def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("@lumino/algorithm", "toObject")
-  @js.native
-  def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = js.native
+  @scala.inline
+  def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
   
-  @JSImport("@lumino/algorithm", "topologicSort")
-  @js.native
-  def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = js.native
+  @scala.inline
+  def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topologicSort")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("@lumino/algorithm", "zip")
-  @js.native
-  def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = js.native
+  @scala.inline
+  def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Array[T]]]
 }

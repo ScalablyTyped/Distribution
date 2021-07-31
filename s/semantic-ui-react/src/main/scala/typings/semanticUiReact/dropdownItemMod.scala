@@ -21,7 +21,6 @@ import typings.semanticUiReact.labelLabelMod.LabelProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownItemMod extends Shortcut {
@@ -38,9 +37,9 @@ object dropdownItemMod extends Shortcut {
   @js.native
   val default: ComponentClass[DropdownItemProps, ComponentState] = js.native
   
-  @js.native
   trait DropdownItemProps
-    extends StrictDropdownItemProps
+    extends StObject
+       with StrictDropdownItemProps
        with /* key */ StringDictionary[js.Any]
   object DropdownItemProps {
     
@@ -51,41 +50,40 @@ object dropdownItemMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDropdownItemProps extends StObject {
     
     /** Style as the currently chosen item. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Additional text with less emphasis. */
-    var description: js.UndefOr[SemanticShorthandItem[HtmlSpanProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[HtmlSpanProps]] = js.undefined
     
     /** A dropdown item can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Flag. */
-    var flag: js.UndefOr[SemanticShorthandItem[FlagProps]] = js.native
+    var flag: js.UndefOr[SemanticShorthandItem[FlagProps]] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** Shorthand for Image. */
-    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.native
+    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.undefined
     
     /** Shorthand for Label. */
-    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     /**
       * Called on click.
@@ -99,19 +97,19 @@ object dropdownItemMod extends Shortcut {
           /* data */ DropdownItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The item currently selected by keyboard shortcut.
       * This is not the active item.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** Display text. */
-    var text: js.UndefOr[SemanticShorthandContent] = js.native
+    var text: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Stored value. */
-    var value: js.UndefOr[Boolean | Double | String] = js.native
+    var value: js.UndefOr[Boolean | Double | String] = js.undefined
   }
   object StrictDropdownItemProps {
     

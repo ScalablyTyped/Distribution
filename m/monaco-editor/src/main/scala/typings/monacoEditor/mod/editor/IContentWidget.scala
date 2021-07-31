@@ -3,34 +3,32 @@ package typings.monacoEditor.mod.editor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContentWidget extends StObject {
   
   /**
     * Render this content widget in a location where it could overflow the editor's view dom node.
     */
-  var allowEditorOverflow: js.UndefOr[Boolean] = js.native
+  var allowEditorOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Get the dom node of the content widget.
     */
-  def getDomNode(): HTMLElement = js.native
+  def getDomNode(): HTMLElement
   
   /**
     * Get a unique identifier of the content widget.
     */
-  def getId(): String = js.native
+  def getId(): String
   
   /**
     * Get the placement of the content widget.
     * If null is returned, the content widget will be placed off screen.
     */
-  def getPosition(): IContentWidgetPosition | Null = js.native
+  def getPosition(): IContentWidgetPosition | Null
   
-  var suppressMouseDown: js.UndefOr[Boolean] = js.native
+  var suppressMouseDown: js.UndefOr[Boolean] = js.undefined
 }
 object IContentWidget {
   

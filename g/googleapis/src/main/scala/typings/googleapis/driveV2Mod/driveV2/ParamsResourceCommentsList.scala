@@ -6,46 +6,46 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentsList extends StandardParameters {
+trait ParamsResourceCommentsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * If set, all comments and replies, including deleted comments and replies
     * (with content stripped) will be returned.
     */
-  var includeDeleted: js.UndefOr[Boolean] = js.native
+  var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of discussions to include in the response, used for
     * paging.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. To get
     * the next page of results, set this parameter to the value of
     * "nextPageToken" from the previous response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Only discussions that were updated after this timestamp will be returned.
     * Formatted as an RFC 3339 timestamp.
     */
-  var updatedMin: js.UndefOr[String] = js.native
+  var updatedMin: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentsList {
   

@@ -2,32 +2,30 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents the state of a VR sensor at a given timestamp (which includes orientation, position, velocity, and acceleration information.) */
-@js.native
 trait VRPose extends StObject {
   
-  val angularAcceleration: Float32Array | Null = js.native
+  val angularAcceleration: Float32Array | Null
   
-  val angularVelocity: Float32Array | Null = js.native
+  val angularVelocity: Float32Array | Null
   
-  val linearAcceleration: Float32Array | Null = js.native
+  val linearAcceleration: Float32Array | Null
   
-  val linearVelocity: Float32Array | Null = js.native
+  val linearVelocity: Float32Array | Null
   
-  val orientation: Float32Array | Null = js.native
+  val orientation: Float32Array | Null
   
-  val position: Float32Array | Null = js.native
+  val position: Float32Array | Null
   
-  val timestamp: Double = js.native
+  val timestamp: Double
 }
 object VRPose {
   
   @scala.inline
   def apply(timestamp: Double): VRPose = {
-    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], angularAcceleration = null, angularVelocity = null, linearAcceleration = null, linearVelocity = null, orientation = null, position = null)
     __obj.asInstanceOf[VRPose]
   }
   

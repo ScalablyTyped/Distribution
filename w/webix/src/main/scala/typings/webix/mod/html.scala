@@ -2,9 +2,9 @@ package typings.webix.mod
 
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,13 +26,13 @@ trait html extends StObject {
   def denySelect(): Unit = js.native
   
   def getTextSize(text: String): SizeInfo = js.native
-  def getTextSize(text: String, css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: String, css: String): SizeInfo = js.native
   def getTextSize(text: String, css: String, width: Double): SizeInfo = js.native
+  def getTextSize(text: String, css: Unit, width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String]): SizeInfo = js.native
-  def getTextSize(text: js.Array[String], css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String, width: Double): SizeInfo = js.native
+  def getTextSize(text: js.Array[String], css: Unit, width: Double): SizeInfo = js.native
   
   def getValue(node: HTMLElement): String = js.native
   
@@ -60,4 +60,9 @@ trait html extends StObject {
   def stopEvent(ev: Event): Boolean = js.native
   
   def triggerEvent(node: HTMLElement, `type`: String, name: String): Unit = js.native
+}
+object html {
+  
+  @scala.inline
+  def apply: typings.webix.webix.html = ^.asInstanceOf[js.Dynamic].selectDynamic("html").asInstanceOf[typings.webix.webix.html]
 }

@@ -2,18 +2,16 @@ package typings.webicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identifiableMod {
   
-  @js.native
   trait Identifiable extends StObject {
     
     /**
       * The id of the object.
       */
-    var id: String = js.native
+    var id: String
   }
   object Identifiable {
     

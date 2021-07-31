@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object SyncButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.create")
-  @js.native
-  def create(model: IModel): SyncButton = js.native
+  @scala.inline
+  def create(model: IModel): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object SyncButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): SyncButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): SyncButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -79,9 +75,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): SyncButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -92,9 +87,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): SyncButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -105,9 +99,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): SyncButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -118,9 +111,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): SyncButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -131,9 +123,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SyncButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -144,9 +135,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SyncButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -157,9 +147,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): SyncButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -170,9 +159,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SyncButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -183,9 +171,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): SyncButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -196,9 +183,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SyncButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -209,9 +195,8 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SyncButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -222,9 +207,8 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): SyncButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -235,9 +219,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SyncButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -248,9 +231,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): SyncButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -261,9 +243,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SyncButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -274,9 +255,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SyncButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -287,9 +267,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): SyncButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -300,9 +279,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): SyncButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -313,9 +291,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SyncButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -326,9 +303,8 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SyncButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.structureTypeName")

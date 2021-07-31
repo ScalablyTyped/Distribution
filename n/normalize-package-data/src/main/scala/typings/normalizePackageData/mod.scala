@@ -6,76 +6,74 @@ import typings.normalizePackageData.anon.Type
 import typings.normalizePackageData.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(data: Input): Unit = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(data: Input, strict: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(data: Input, warn: Unit, strict: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(data: Input, warn: WarnFn): Unit = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(data: Input, warn: WarnFn, strict: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("normalize-package-data", JSImport.Namespace)
   @js.native
-  def apply(data: Input): Unit = js.native
-  @JSImport("normalize-package-data", JSImport.Namespace)
-  @js.native
-  def apply(data: Input, strict: Boolean): Unit = js.native
-  @JSImport("normalize-package-data", JSImport.Namespace)
-  @js.native
-  def apply(data: Input, warn: js.UndefOr[scala.Nothing], strict: Boolean): Unit = js.native
-  @JSImport("normalize-package-data", JSImport.Namespace)
-  @js.native
-  def apply(data: Input, warn: WarnFn): Unit = js.native
-  @JSImport("normalize-package-data", JSImport.Namespace)
-  @js.native
-  def apply(data: Input, warn: WarnFn, strict: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Input = StringDictionary[js.Any]
   
-  @js.native
   trait Package
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var _id: String = js.native
+    var _id: String
     
-    var author: js.UndefOr[Person] = js.native
+    var author: js.UndefOr[Person] = js.undefined
     
-    var bin: js.UndefOr[StringDictionary[String]] = js.native
+    var bin: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var bugs: js.UndefOr[Email | Url] = js.native
+    var bugs: js.UndefOr[Email | Url] = js.undefined
     
-    var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var contributors: js.UndefOr[js.Array[Person]] = js.native
+    var contributors: js.UndefOr[js.Array[Person]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var devDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var engines: js.UndefOr[StringDictionary[String]] = js.native
+    var engines: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var license: js.UndefOr[String] = js.native
+    var license: js.UndefOr[String] = js.undefined
     
-    var maintainers: js.UndefOr[js.Array[Person]] = js.native
+    var maintainers: js.UndefOr[js.Array[Person]] = js.undefined
     
-    var man: js.UndefOr[js.Array[String]] = js.native
+    var man: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var readme: String = js.native
+    var readme: String
     
-    var repository: js.UndefOr[Type] = js.native
+    var repository: js.UndefOr[Type] = js.undefined
     
-    var scripts: js.UndefOr[StringDictionary[String]] = js.native
+    var scripts: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object Package {
     
@@ -225,14 +223,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Person extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Person {
     

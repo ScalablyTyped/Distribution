@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeUrl extends StObject {
   
-  var badgeUrl: js.UndefOr[String] = js.native
+  var badgeUrl: js.UndefOr[String] = js.undefined
   
-  var categoryId: js.UndefOr[String] = js.native
+  var categoryId: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BadgeUrl {
   

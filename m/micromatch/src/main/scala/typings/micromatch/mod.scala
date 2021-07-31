@@ -7,7 +7,6 @@ import typings.std.Partial
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,16 +15,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : Micromatch = js.native
   
-  @js.native
   trait Item extends StObject {
     
-    var glob: String = js.native
+    var glob: String
     
-    var input: String = js.native
+    var input: String
     
-    var output: String = js.native
+    var output: String
     
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Item {
     
@@ -435,7 +433,6 @@ object mod extends Shortcut {
     def some(list: js.Array[String], patterns: js.Array[String], options: Options): Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -452,7 +449,7 @@ object mod extends Shortcut {
       * //=> ['a/b.js']
       * ```
       */
-    var basename: js.UndefOr[Boolean] = js.native
+    var basename: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enabled by default, this option enforces bash-like behavior with stars immediately following a bracket expression.
@@ -470,42 +467,42 @@ object mod extends Shortcut {
       * console.log(mm(files, '[a-c]*', {bash: false}));
       * ```
       */
-    var bash: js.UndefOr[Boolean] = js.native
+    var bash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return regex matches in supporting methods.
       *
       * @default undefined
       */
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows glob to match any part of the given string(s).
       *
       * @default undefined
       */
-    var contains: js.UndefOr[Boolean] = js.native
+    var contains: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Current working directory. Used by `picomatch.split()`
       *
       * @default process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Debug regular expressions when an error is thrown.
       *
       * @default undefined
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Match dotfiles. Otherwise dotfiles are ignored unless a `.` is explicitly defined in the pattern.
       *
       * @default false
       */
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom function for expanding ranges in brace patterns, such as `{a..z}`.
@@ -516,91 +513,91 @@ object mod extends Shortcut {
       */
     var expandRange: js.UndefOr[
         js.Function3[/* left */ String, /* right */ String, /* options */ this.type, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Similar to the `--failglob` behavior in Bash, throws an error when no matches are found.
       *
       * @default false
       */
-    var failglob: js.UndefOr[Boolean] = js.native
+    var failglob: js.UndefOr[Boolean] = js.undefined
     
     /**
       * To speed up processing, full parsing is skipped for a handful common glob patterns. Disable this behavior by setting this option to false.
       *
       * @default true
       */
-    var fastpaths: js.UndefOr[Boolean] = js.native
+    var fastpaths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Regex flags to use in the generated regex. If defined, the `nocase` option will be overridden.
       *
       * @default undefined
       */
-    var flags: js.UndefOr[Boolean] = js.native
+    var flags: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom function for formatting the returned string. This is useful for removing leading slashes, converting Windows paths to Posix paths, etc.
       *
       * @default undefined
       */
-    var format: js.UndefOr[js.Function1[/* returnedString */ String, String]] = js.native
+    var format: js.UndefOr[js.Function1[/* returnedString */ String, String]] = js.undefined
     
     /**
       * One or more glob patterns for excluding strings that should not be matched from the result.
       *
       * @default undefined
       */
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Retain quotes in the generated regex, since quotes may also be used as an alternative to backslashes.
       *
       * @default false
       */
-    var keepQuotes: js.UndefOr[Boolean] = js.native
+    var keepQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true`, brackets in the glob pattern will be escaped so that only literal brackets will be matched.
       *
       * @default undefined
       */
-    var literalBrackets: js.UndefOr[Boolean] = js.native
+    var literalBrackets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Support regex positive and negative lookbehinds. Note that you must be using Node 8.1.10 or higher to enable regex lookbehinds.
       *
       * @default true
       */
-    var lookbehinds: js.UndefOr[Boolean] = js.native
+    var lookbehinds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for `basename`.
       *
       * @default false
       */
-    var matchBase: js.UndefOr[Boolean] = js.native
+    var matchBase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limit the max length of the input string. An error is thrown if the input string is longer than this value.
       *
       * @default 65536
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Disable brace matching, so that `{a,b}` and `{1..3}` would be treated as literal characters.
       *
       * @default false
       */
-    var nobrace: js.UndefOr[Boolean] = js.native
+    var nobrace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable matching with regex brackets.
       *
       * @default undefined
       */
-    var nobracket: js.UndefOr[Boolean] = js.native
+    var nobracket: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Perform case-insensitive matching. Equivalent to the regex `i` flag.
@@ -608,98 +605,98 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for `noextglob`
       *
       * @default false
       */
-    var noext: js.UndefOr[Boolean] = js.native
+    var noext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable support for matching with extglobs (like `+(a|b)`)
       *
       * @default false
       */
-    var noextglob: js.UndefOr[Boolean] = js.native
+    var noextglob: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable matching with globstars (`**`).
       *
       * @default undefined
       */
-    var noglobstar: js.UndefOr[Boolean] = js.native
+    var noglobstar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disallow negation (`!`) patterns, and treat leading `!` as a literal character to match.
       *
       * @default undefined
       */
-    var nonegate: js.UndefOr[Boolean] = js.native
+    var nonegate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable support for regex quantifiers (like `a{1,2}`) and treat them as brace patterns to be expanded.
       *
       * @default false
       */
-    var noquantifiers: js.UndefOr[Boolean] = js.native
+    var noquantifiers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function to be called on ignored items.
       *
       * @default undefined
       */
-    var onIgnore: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.native
+    var onIgnore: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.undefined
     
     /**
       * Function to be called on matched items.
       *
       * @default undefined
       */
-    var onMatch: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.native
+    var onMatch: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.undefined
     
     /**
       * Function to be called on all items, regardless of whether or not they are matched or ignored.
       *
       * @default undefined
       */
-    var onResult: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.native
+    var onResult: js.UndefOr[js.Function1[/* item */ Item, Unit]] = js.undefined
     
     /**
       * Support POSIX character classes ("posix brackets").
       *
       * @default false
       */
-    var posix: js.UndefOr[Boolean] = js.native
+    var posix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String to prepend to the generated regex used for matching.
       *
       * @default undefined
       */
-    var prepend: js.UndefOr[Boolean] = js.native
+    var prepend: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use regular expression rules for `+` (instead of matching literal `+`), and for stars that follow closing parentheses or brackets (as in `)*` and `]*`).
       *
       * @default false
       */
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Throw an error if brackets, braces, or parens are imbalanced.
       *
       * @default undefined
       */
-    var strictBrackets: js.UndefOr[Boolean] = js.native
+    var strictBrackets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, picomatch won't match trailing slashes with single stars.
       *
       * @default undefined
       */
-    var strictSlashes: js.UndefOr[Boolean] = js.native
+    var strictSlashes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove backslashes from returned matches.
@@ -717,14 +714,14 @@ object mod extends Shortcut {
       * //=> ['a*c']
       * ```
       */
-    var unescape: js.UndefOr[Boolean] = js.native
+    var unescape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Convert all slashes in file paths to forward slashes. This does not convert slashes in the glob pattern itself
       *
       * @default undefined
       */
-    var windows: js.UndefOr[Boolean] = js.native
+    var windows: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -958,30 +955,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ScanInfo extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var glob: String = js.native
+    var glob: String
     
-    var input: String = js.native
+    var input: String
     
-    var isBrace: Boolean = js.native
+    var isBrace: Boolean
     
-    var isBracket: Boolean = js.native
+    var isBracket: Boolean
     
-    var isExtglob: Boolean = js.native
+    var isExtglob: Boolean
     
-    var isGlob: Boolean = js.native
+    var isGlob: Boolean
     
-    var isGlobstar: Boolean = js.native
+    var isGlobstar: Boolean
     
-    var negated: Boolean = js.native
+    var negated: Boolean
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var start: Double = js.native
+    var start: Double
   }
   object ScanInfo {
     
@@ -1041,28 +1037,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ScanInfoToken extends StObject {
     
-    var backslashes: js.UndefOr[Boolean] = js.native
+    var backslashes: js.UndefOr[Boolean] = js.undefined
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var isBrace: js.UndefOr[Boolean] = js.native
+    var isBrace: js.UndefOr[Boolean] = js.undefined
     
-    var isBracket: js.UndefOr[Boolean] = js.native
+    var isBracket: js.UndefOr[Boolean] = js.undefined
     
-    var isExtglob: js.UndefOr[Boolean] = js.native
+    var isExtglob: js.UndefOr[Boolean] = js.undefined
     
-    var isGlob: Boolean = js.native
+    var isGlob: Boolean
     
-    var isGlobstar: js.UndefOr[Boolean] = js.native
+    var isGlobstar: js.UndefOr[Boolean] = js.undefined
     
-    var isPrefix: js.UndefOr[Boolean] = js.native
+    var isPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var negated: js.UndefOr[Boolean] = js.native
+    var negated: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ScanInfoToken {
     
@@ -1128,12 +1123,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait ScanInfoWithParts extends ScanInfo {
+  trait ScanInfoWithParts
+    extends StObject
+       with ScanInfo {
     
-    var parts: js.Array[String] = js.native
+    var parts: js.Array[String]
     
-    var slashes: js.Array[Double] = js.native
+    var slashes: js.Array[Double]
   }
   object ScanInfoWithParts {
     
@@ -1174,12 +1170,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait ScanInfoWithTokens extends ScanInfoWithParts {
+  trait ScanInfoWithTokens
+    extends StObject
+       with ScanInfoWithParts {
     
-    var maxDepth: Double = js.native
+    var maxDepth: Double
     
-    var tokens: js.Array[ScanInfoToken] = js.native
+    var tokens: js.Array[ScanInfoToken]
   }
   object ScanInfoWithTokens {
     
@@ -1219,8 +1216,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait ScanOptions extends Options {
+  trait ScanOptions
+    extends StObject
+       with Options {
     
     /**
       * When `true`, the returned object will include an array of strings representing each path "segment" in the scanned glob pattern.
@@ -1228,14 +1226,14 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var parts: js.UndefOr[Boolean] = js.native
+    var parts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true`, the returned object will include an array of `tokens` (objects), representing each path "segment" in the scanned glob pattern.
       *
       * @default false
       */
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
   }
   object ScanOptions {
     

@@ -11,29 +11,27 @@ import typings.overwatchApi.mod.HeroWins
 import typings.overwatchApi.mod.QuickplayCompetitiveStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Assists extends StObject {
     
-    var assists: QuickplayCompetitiveStats = js.native
+    var assists: QuickplayCompetitiveStats
     
-    var average: QuickplayCompetitiveStats = js.native
+    var average: QuickplayCompetitiveStats
     
-    var best: QuickplayCompetitiveStats = js.native
+    var best: QuickplayCompetitiveStats
     
-    var combat: QuickplayCompetitiveStats = js.native
+    var combat: QuickplayCompetitiveStats
     
-    var game: QuickplayCompetitiveStats = js.native
+    var game: QuickplayCompetitiveStats
     
-    var match_awards: QuickplayCompetitiveStats = js.native
+    var match_awards: QuickplayCompetitiveStats
     
-    var miscellaneous: QuickplayCompetitiveStats = js.native
+    var miscellaneous: QuickplayCompetitiveStats
     
-    var top_heroes: CompetitiveQuickplay = js.native
+    var top_heroes: CompetitiveQuickplay
   }
   object Assists {
     
@@ -81,12 +79,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Competitive extends StObject {
     
-    var competitive: Draw = js.native
+    var competitive: Draw
     
-    var quickplay: Played = js.native
+    var quickplay: Played
   }
   object Competitive {
     
@@ -107,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CompetitiveQuickplay extends StObject {
     
-    var competitive: Gameswon = js.native
+    var competitive: Gameswon
     
-    var quickplay: Eliminationsperlife = js.native
+    var quickplay: Eliminationsperlife
   }
   object CompetitiveQuickplay {
     
@@ -133,14 +129,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Damage extends StObject {
     
-    var damage: Rank = js.native
+    var damage: Rank
     
-    var support: Rank = js.native
+    var support: Rank
     
-    var tank: Rank = js.native
+    var tank: Rank
   }
   object Damage {
     
@@ -164,18 +159,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Draw extends StObject {
     
-    var draw: Double = js.native
+    var draw: Double
     
-    var lost: Double = js.native
+    var lost: Double
     
-    var played: Double = js.native
+    var played: Double
     
-    var win_rate: Double = js.native
+    var win_rate: Double
     
-    var won: Double = js.native
+    var won: Double
   }
   object Draw {
     
@@ -205,20 +199,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Eliminationsperlife extends StObject {
     
-    var eliminations_per_life: js.Array[HeroElimsPerLife] = js.native
+    var eliminations_per_life: js.Array[HeroElimsPerLife]
     
-    var games_won: js.Array[HeroWins] = js.native
+    var games_won: js.Array[HeroWins]
     
-    var multikill_best: js.Array[HeroMultiKillBest] = js.native
+    var multikill_best: js.Array[HeroMultiKillBest]
     
-    var objective_kills_average: js.Array[HeroObjectiveKillsAverage] = js.native
+    var objective_kills_average: js.Array[HeroObjectiveKillsAverage]
     
-    var played: js.Array[HeroPlaytime] = js.native
+    var played: js.Array[HeroPlaytime]
     
-    var weapon_accuracy: js.Array[HeroAccuracy] = js.native
+    var weapon_accuracy: js.Array[HeroAccuracy]
   }
   object Eliminationsperlife {
     
@@ -276,20 +269,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Frame extends StObject {
     
-    var frame: String = js.native
+    var frame: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var level: Double = js.native
+    var level: Double
     
-    var shotcaller: Endorsement = js.native
+    var shotcaller: Endorsement
     
-    var sportsmanship: Endorsement = js.native
+    var sportsmanship: Endorsement
     
-    var teammate: Endorsement = js.native
+    var teammate: Endorsement
   }
   object Frame {
     
@@ -329,22 +321,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Gameswon extends StObject {
     
-    var eliminations_per_life: js.Array[HeroElimsPerLife] = js.native
+    var eliminations_per_life: js.Array[HeroElimsPerLife]
     
-    var games_won: js.Array[HeroWins] = js.native
+    var games_won: js.Array[HeroWins]
     
-    var multikill_best: js.Array[HeroMultiKillBest] = js.native
+    var multikill_best: js.Array[HeroMultiKillBest]
     
-    var objective_kills_average: js.Array[HeroObjectiveKillsAverage] = js.native
+    var objective_kills_average: js.Array[HeroObjectiveKillsAverage]
     
-    var played: js.Array[HeroPlaytime] = js.native
+    var played: js.Array[HeroPlaytime]
     
-    var weapon_accuracy: js.Array[HeroAccuracy] = js.native
+    var weapon_accuracy: js.Array[HeroAccuracy]
     
-    var win_rate: js.Array[HeroWinRate] = js.native
+    var win_rate: js.Array[HeroWinRate]
   }
   object Gameswon {
     
@@ -409,18 +400,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Played extends StObject {
     
-    var played: js.UndefOr[scala.Nothing] = js.native
+    var played: Unit
     
-    var won: Double = js.native
+    var won: Double
   }
   object Played {
     
     @scala.inline
-    def apply(won: Double): Played = {
-      val __obj = js.Dynamic.literal(won = won.asInstanceOf[js.Any])
+    def apply(played: Unit, won: Double): Played = {
+      val __obj = js.Dynamic.literal(played = played.asInstanceOf[js.Any], won = won.asInstanceOf[js.Any])
       __obj.asInstanceOf[Played]
     }
     
@@ -428,16 +418,18 @@ object anon {
     implicit class PlayedMutableBuilder[Self <: Played] (val x: Self) extends AnyVal {
       
       @scala.inline
+      def setPlayed(value: Unit): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setWon(value: Double): Self = StObject.set(x, "won", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Quickplay extends StObject {
     
-    var competitive: String = js.native
+    var competitive: String
     
-    var quickplay: String = js.native
+    var quickplay: String
   }
   object Quickplay {
     
@@ -458,12 +450,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Rank extends StObject {
     
-    var rank: Double = js.native
+    var rank: Double
     
-    var rank_img: String = js.native
+    var rank_img: String
   }
   object Rank {
     

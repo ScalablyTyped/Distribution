@@ -2,14 +2,12 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Chips, 'deleteChip'> */
-@js.native
 trait PickChipsdeleteChip extends StObject {
   
-  var deleteChip: js.UndefOr[js.Any] = js.native
+  var deleteChip: js.UndefOr[js.Any] = js.undefined
 }
 object PickChipsdeleteChip {
   

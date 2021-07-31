@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageEditorMessagesToolbar extends StObject {
   
-  var crop: js.UndefOr[String] = js.native
+  var crop: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[String] = js.native
+  var open: js.UndefOr[String] = js.undefined
   
-  var redo: js.UndefOr[String] = js.native
+  var redo: js.UndefOr[String] = js.undefined
   
-  var resize: js.UndefOr[String] = js.native
+  var resize: js.UndefOr[String] = js.undefined
   
-  var save: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.undefined
   
-  var undo: js.UndefOr[String] = js.native
+  var undo: js.UndefOr[String] = js.undefined
   
-  var zoomActualSize: js.UndefOr[String] = js.native
+  var zoomActualSize: js.UndefOr[String] = js.undefined
   
-  var zoomDropdown: js.UndefOr[String] = js.native
+  var zoomDropdown: js.UndefOr[String] = js.undefined
   
-  var zoomFitToScreen: js.UndefOr[String] = js.native
+  var zoomFitToScreen: js.UndefOr[String] = js.undefined
   
-  var zoomIn: js.UndefOr[String] = js.native
+  var zoomIn: js.UndefOr[String] = js.undefined
   
-  var zoomOut: js.UndefOr[String] = js.native
+  var zoomOut: js.UndefOr[String] = js.undefined
 }
 object ImageEditorMessagesToolbar {
   

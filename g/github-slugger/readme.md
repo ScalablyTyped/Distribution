@@ -10,10 +10,10 @@ Generate a slug just like GitHub does for markdown headings.
 | ------------------ | :-------------: |
 | Full name          | github-slugger |
 | Keywords           | anchor, github, hash, heading, markdown, slug, slugger, url |
-| # releases         | 3 |
-| # dependents       | 160 |
-| # downloads        | 30190158 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 176 |
+| # downloads        | 46954042 |
+| # stars            | 3 |
 
 ## Links
 - [Homepage](https://github.com/Flet/github-slugger)

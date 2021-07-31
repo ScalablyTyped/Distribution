@@ -3,31 +3,30 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.IfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait IfStatement_
-  extends Conditional
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait IfStatement_
+  extends StObject
      with BaseNode
+     with Conditional
      with Statement {
   
-  var alternate: Statement | Null = js.native
+  var alternate: Statement | Null
   
-  var consequent: Statement = js.native
+  var consequent: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_IfStatement_ : IfStatement = js.native
+  var type_IfStatement_ : IfStatement
 }
 object IfStatement_ {
   
   @scala.inline
-  def apply(consequent: Statement, test: Expression, `type`: IfStatement): IfStatement_ = {
-    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(consequent: Statement, test: Expression): IfStatement_ = {
+    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], alternate = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement_]
   }
   

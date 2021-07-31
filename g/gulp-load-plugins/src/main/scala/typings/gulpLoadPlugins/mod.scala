@@ -4,43 +4,43 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Loads in any gulp plugins and attaches them to an object, freeing you up from having to manually require each gulp plugin. */
 object mod {
   
   /** Loads in any gulp plugins and attaches them to an object, freeing you up from having to manually require each gulp plugin. */
-  @JSImport("gulp-load-plugins", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: IGulpPlugins */](): T = js.native
-  @JSImport("gulp-load-plugins", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: IGulpPlugins */](options: IOptions): T = js.native
+  @scala.inline
+  def apply[T /* <: IGulpPlugins */](): T = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[T]
+  @scala.inline
+  def apply[T /* <: IGulpPlugins */](options: IOptions): T = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[T]
   
+  @JSImport("gulp-load-plugins", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IOptions extends StObject {
     
     /** if true, transforms hyphenated plugin names to camel case, default true */
-    var camelize: js.UndefOr[Boolean] = js.native
+    var camelize: js.UndefOr[Boolean] = js.undefined
     
     /** where to find the plugins, searched up from process.cwd(), default 'package.json' */
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
     /** whether the plugins should be lazy loaded on demand, default true */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /** the glob(s) to search for, default ['gulp-*', 'gulp.*'] */
-    var pattern: js.UndefOr[js.Array[String]] = js.native
+    var pattern: js.UndefOr[js.Array[String]] = js.undefined
     
     /** a mapping of plugins to rename, the key being the NPM name of the package, and the value being an alias you define */
-    var rename: js.UndefOr[IPluginNameMappings] = js.native
+    var rename: js.UndefOr[IPluginNameMappings] = js.undefined
     
     /** what to remove from the name of the module when adding it to the context, default /^gulp(-|\.)/ */
-    var replaceString: js.UndefOr[RegExp] = js.native
+    var replaceString: js.UndefOr[RegExp] = js.undefined
     
     /** which keys in the config to look within, default ['dependencies', 'devDependencies', 'peerDependencies'] */
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IOptions {
     

@@ -10,7 +10,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,26 +26,25 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[StickyBoxProps, ComponentState] = js.native
   
-  @js.native
   trait StickyBoxInstance extends StObject {
     
-    var latestScrollY: Double = js.native
+    var latestScrollY: Double
     
-    var mode: StickyBoxMode = js.native
+    var mode: StickyBoxMode
     
-    var naturalTop: Double = js.native
+    var naturalTop: Double
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var nodeHeight: Double = js.native
+    var nodeHeight: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var parentHeight: Double = js.native
+    var parentHeight: Double
     
-    var scrollPane: HTMLElement | Window = js.native
+    var scrollPane: HTMLElement | Window
     
-    var viewportHeight: Double = js.native
+    var viewportHeight: Double
   }
   object StickyBoxInstance {
     
@@ -116,24 +114,23 @@ object mod extends Shortcut {
     def stickyTop: typings.reactStickyBox.reactStickyBoxStrings.stickyTop = "stickyTop".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyTop]
   }
   
-  @js.native
   trait StickyBoxProps extends StObject {
     
-    var bottom: js.UndefOr[Boolean] = js.native
+    var bottom: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var offsetBottom: js.UndefOr[Double] = js.native
+    var offsetBottom: js.UndefOr[Double] = js.undefined
     
-    var offsetTop: js.UndefOr[Double] = js.native
+    var offsetTop: js.UndefOr[Double] = js.undefined
     
     var onChangeMode: js.UndefOr[
-        js.Function2[/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode, _]
-      ] = js.native
+        js.Function2[/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode, js.Any]
+      ] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StickyBoxProps {
     
@@ -177,7 +174,7 @@ object mod extends Shortcut {
       def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       
       @scala.inline
-      def setOnChangeMode(value: (/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode) => _): Self = StObject.set(x, "onChangeMode", js.Any.fromFunction2(value))
+      def setOnChangeMode(value: (/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode) => js.Any): Self = StObject.set(x, "onChangeMode", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeModeUndefined: Self = StObject.set(x, "onChangeMode", js.undefined)

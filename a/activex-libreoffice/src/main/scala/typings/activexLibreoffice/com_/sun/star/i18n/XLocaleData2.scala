@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * elements available for that locale.
   * @since OOo 2.0.3
   */
-@js.native
-trait XLocaleData2 extends XLocaleData {
+trait XLocaleData2
+  extends StObject
+     with XLocaleData {
   
   /** returns all LC_CURRENCY currencies for a locale. */
-  def getAllCurrencies2(aLocale: Locale): SafeArray[Currency2] = js.native
+  def getAllCurrencies2(aLocale: Locale): SafeArray[Currency2]
 }
 object XLocaleData2 {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportInstanceRequest extends StObject {
   
   /**
     * A description for the instance being imported.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The disk image.
     */
-  var DiskImages: js.UndefOr[DiskImageList] = js.native
+  var DiskImages: js.UndefOr[DiskImageList] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The launch specification.
     */
-  var LaunchSpecification: js.UndefOr[ImportInstanceLaunchSpecification] = js.native
+  var LaunchSpecification: js.UndefOr[ImportInstanceLaunchSpecification] = js.undefined
   
   /**
     * The instance operating system.
     */
-  var Platform: PlatformValues = js.native
+  var Platform: PlatformValues
 }
 object ImportInstanceRequest {
   

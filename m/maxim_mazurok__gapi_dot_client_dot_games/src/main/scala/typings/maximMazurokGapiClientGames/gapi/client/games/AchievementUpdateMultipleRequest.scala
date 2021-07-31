@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchievementUpdateMultipleRequest extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateMultipleRequest`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The individual achievement update requests. */
-  var updates: js.UndefOr[js.Array[AchievementUpdateRequest]] = js.native
+  var updates: js.UndefOr[js.Array[AchievementUpdateRequest]] = js.undefined
 }
 object AchievementUpdateMultipleRequest {
   

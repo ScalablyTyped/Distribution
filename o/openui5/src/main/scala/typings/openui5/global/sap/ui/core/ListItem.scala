@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.ListItem")
 @js.native
 class ListItem protected ()
-  extends typings.openui5.sap.ui.core.ListItem {
+  extends StObject
+     with typings.openui5.sap.ui.core.ListItem {
   /**
     * Constructor for a new ListItem.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

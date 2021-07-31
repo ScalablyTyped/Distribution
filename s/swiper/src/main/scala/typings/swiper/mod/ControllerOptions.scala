@@ -4,10 +4,8 @@ import typings.swiper.swiperStrings.container
 import typings.swiper.swiperStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControllerOptions extends StObject {
   
   /**
@@ -17,20 +15,20 @@ trait ControllerOptions extends StObject {
     *
     * @default 'slide'
     */
-  var by: js.UndefOr[slide | container] = js.native
+  var by: js.UndefOr[slide | container] = js.undefined
   
   /**
     * Pass here another Swiper instance or array with Swiper instances that should be controlled
     * by this Swiper
     */
-  var control: js.UndefOr[Swiper] = js.native
+  var control: js.UndefOr[Swiper] = js.undefined
   
   /**
     * Set to true and controlling will be in inverse direction
     *
     * @default false
     */
-  var inverse: js.UndefOr[Boolean] = js.native
+  var inverse: js.UndefOr[Boolean] = js.undefined
 }
 object ControllerOptions {
   

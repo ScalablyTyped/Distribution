@@ -4,25 +4,25 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface allows to set a password for an object. */
-@js.native
-trait XEncryptionProtectedSource extends XInterface {
+trait XEncryptionProtectedSource
+  extends StObject
+     with XInterface {
   
   /**
     * removes encryption from the object.
     * @throws com::sun::star::io::IOException in case encryption could not be removed
     */
-  def removeEncryption(): Unit = js.native
+  def removeEncryption(): Unit
   
   /**
     * sets a password for the object.
     * @param sPassword the new password
     * @throws com::sun::star::io::IOException in case password could not be set
     */
-  def setEncryptionPassword(sPassword: String): Unit = js.native
+  def setEncryptionPassword(sPassword: String): Unit
 }
 object XEncryptionProtectedSource {
   

@@ -3,29 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSTypeParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSTypeParameter_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var default: TSType | Null = js.native
+  var default: TSType | Null
   
-  var constraint: TSType | Null = js.native
+  var constraint: TSType | Null
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_TSTypeParameter_ : TSTypeParameter = js.native
+  var type_TSTypeParameter_ : TSTypeParameter
 }
 object TSTypeParameter_ {
   
   @scala.inline
-  def apply(name: String, `type`: TSTypeParameter): TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): TSTypeParameter_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[TSTypeParameter_]
   }
   

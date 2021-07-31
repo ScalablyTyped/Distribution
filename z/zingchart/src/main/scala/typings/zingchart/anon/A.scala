@@ -2,62 +2,60 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A extends StObject {
   
   @JSName("`%A`")
-  var GraveaccentPercentsignAGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignAGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%D`")
-  var GraveaccentPercentsignDGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignDGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%G`")
-  var GraveaccentPercentsignGGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignGGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%H`")
-  var GraveaccentPercentsignHGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignHGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%M`")
-  var GraveaccentPercentsignMGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignMGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%Y`")
-  var GraveaccentPercentsignYGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignYGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%a`")
-  var GraveaccentPercentsignaGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignaGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%d`")
-  var GraveaccentPercentsigndGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsigndGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%dd`")
-  var GraveaccentPercentsignddGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignddGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%g`")
-  var GraveaccentPercentsigngGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsigngGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%h`")
-  var GraveaccentPercentsignhGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignhGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%i`")
-  var GraveaccentPercentsigniGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsigniGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%m`")
-  var GraveaccentPercentsignmGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignmGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%mm`")
-  var GraveaccentPercentsignmmGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignmmGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%q`")
-  var GraveaccentPercentsignqGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignqGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%s`")
-  var GraveaccentPercentsignsGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignsGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   @JSName("`%y`")
-  var GraveaccentPercentsignyGraveaccent: js.UndefOr[js.Any] = js.native
+  var GraveaccentPercentsignyGraveaccent: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To format your date values. Use this attribute with the `type` value (set to `true`). Token Description `%A` Displays the ante or
@@ -71,11 +69,11 @@ trait A extends StObject {
     *  numerically with a leading 0 if the month is single digit. `%q` Displays the milliseconds. `%s` Displays the seconds. `%Y` Displa
     * ys the year in 4-digit format. `%y` Displays the year in 2-digit format.
     */
-  var all: js.UndefOr[String] = js.native
+  var all: js.UndefOr[String] = js.undefined
   
-  var guide: js.UndefOr[LinewidthVisible] = js.native
+  var guide: js.UndefOr[LinewidthVisible] = js.undefined
   
-  var item: js.UndefOr[Borderradiustopright] = js.native
+  var item: js.UndefOr[Borderradiustopright] = js.undefined
 }
 object A {
   

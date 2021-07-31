@@ -3,52 +3,51 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tunnel
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var creation_time: js.UndefOr[Double] = js.native
+  var creation_time: js.UndefOr[Double] = js.undefined
   
-  var direct_domains: js.UndefOr[js.Array[String]] = js.native
+  var direct_domains: js.UndefOr[js.Array[String]] = js.undefined
   
-  var domain_names: js.UndefOr[js.Array[String]] = js.native
+  var domain_names: js.UndefOr[js.Array[String]] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var last_connected: js.UndefOr[Double] = js.native
+  var last_connected: js.UndefOr[Double] = js.undefined
   
-  var launch_time: js.UndefOr[Double] = js.native
+  var launch_time: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[TunnelMetaData] = js.native
+  var metadata: js.UndefOr[TunnelMetaData] = js.undefined
   
-  var no_proxy_caching: js.UndefOr[Boolean] = js.native
+  var no_proxy_caching: js.UndefOr[Boolean] = js.undefined
   
-  var no_ssl_bump_domains: js.UndefOr[js.Array[String]] = js.native
+  var no_ssl_bump_domains: js.UndefOr[js.Array[String]] = js.undefined
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var shared_tunnel: js.UndefOr[Boolean] = js.native
+  var shared_tunnel: js.UndefOr[Boolean] = js.undefined
   
-  var shutdown_time: js.UndefOr[Double] = js.native
+  var shutdown_time: js.UndefOr[Double] = js.undefined
   
-  var ssh_port: js.UndefOr[Double] = js.native
+  var ssh_port: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var tunnel_identifier: js.UndefOr[String] = js.native
+  var tunnel_identifier: js.UndefOr[String] = js.undefined
   
-  var use_caching_proxy: js.UndefOr[Boolean] = js.native
+  var use_caching_proxy: js.UndefOr[Boolean] = js.undefined
   
-  var use_kgp: js.UndefOr[Boolean] = js.native
+  var use_kgp: js.UndefOr[Boolean] = js.undefined
   
-  var user_shutdown: js.UndefOr[Boolean] = js.native
+  var user_shutdown: js.UndefOr[Boolean] = js.undefined
   
-  var vm_version: js.UndefOr[String] = js.native
+  var vm_version: js.UndefOr[String] = js.undefined
 }
 object Tunnel {
   

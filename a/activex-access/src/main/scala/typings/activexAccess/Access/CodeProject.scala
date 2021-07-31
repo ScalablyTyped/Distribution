@@ -2,7 +2,6 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,17 +67,13 @@ trait CodeProject extends StObject {
   val Name: String = js.native
   
   def OpenConnection(): Unit = js.native
-  def OpenConnection(
-    BaseConnectionString: js.UndefOr[scala.Nothing],
-    UserID: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def OpenConnection(BaseConnectionString: js.UndefOr[scala.Nothing], UserID: String): Unit = js.native
-  def OpenConnection(BaseConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String): Unit = js.native
-  def OpenConnection(BaseConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String, UserID: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String, UserID: String, Password: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: String, UserID: Unit, Password: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: Unit, UserID: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: Unit, UserID: String, Password: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: Unit, UserID: Unit, Password: String): Unit = js.native
   
   val Parent: js.Any = js.native
   

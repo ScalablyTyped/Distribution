@@ -7,7 +7,6 @@ import typings.rmcCalendar.rmcCalendarStrings.range
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmPanelMod {
@@ -38,24 +37,23 @@ object confirmPanelMod {
     def onConfirm(): Unit = js.native
   }
   
-  @js.native
   trait ConfirmPanelPropsType extends StObject {
     
-    var disableBtn: js.UndefOr[Boolean] = js.native
+    var disableBtn: js.UndefOr[Boolean] = js.undefined
     
-    var endDateTime: js.UndefOr[Date] = js.native
+    var endDateTime: js.UndefOr[Date] = js.undefined
     
-    var formatStr: js.UndefOr[String] = js.native
+    var formatStr: js.UndefOr[String] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    def onConfirm(): Unit = js.native
+    def onConfirm(): Unit
     
-    var onlyConfirm: js.UndefOr[Boolean] = js.native
+    var onlyConfirm: js.UndefOr[Boolean] = js.undefined
     
-    var startDateTime: js.UndefOr[Date] = js.native
+    var startDateTime: js.UndefOr[Date] = js.undefined
     
-    var `type`: js.UndefOr[one | range] = js.native
+    var `type`: js.UndefOr[one | range] = js.undefined
   }
   object ConfirmPanelPropsType {
     

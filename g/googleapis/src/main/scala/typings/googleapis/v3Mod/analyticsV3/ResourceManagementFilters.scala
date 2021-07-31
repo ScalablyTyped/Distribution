@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Filters")
@@ -31,7 +30,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaFilter] = js.native
   def delete(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def delete(params: ParamsResourceManagementFiltersDelete): GaxiosPromise[SchemaFilter] = js.native
   def delete(params: ParamsResourceManagementFiltersDelete, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFilter] = js.native
   def get(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceManagementFiltersGet): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceManagementFiltersGet, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaFilter] = js.native
   def insert(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def insert(params: ParamsResourceManagementFiltersInsert): GaxiosPromise[SchemaFilter] = js.native
   def insert(params: ParamsResourceManagementFiltersInsert, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def insert(
@@ -122,7 +121,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaFilters] = js.native
   def list(callback: BodyResponseCallback[SchemaFilters]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilters] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilters] = js.native
   def list(params: ParamsResourceManagementFiltersList): GaxiosPromise[SchemaFilters] = js.native
   def list(params: ParamsResourceManagementFiltersList, callback: BodyResponseCallback[SchemaFilters]): Unit = js.native
   def list(
@@ -153,7 +152,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaFilter] = js.native
   def patch(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def patch(params: ParamsResourceManagementFiltersPatch): GaxiosPromise[SchemaFilter] = js.native
   def patch(params: ParamsResourceManagementFiltersPatch, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def patch(
@@ -184,7 +183,7 @@ class ResourceManagementFilters protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaFilter] = js.native
   def update(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def update(params: ParamsResourceManagementFiltersUpdate): GaxiosPromise[SchemaFilter] = js.native
   def update(params: ParamsResourceManagementFiltersUpdate, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def update(

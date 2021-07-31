@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileAppAssignment extends Entity {
+trait MobileAppAssignment
+  extends StObject
+     with Entity {
   
   /**
     * The install intent defined by the admin. Possible values are: available, required, uninstall,
     * availableWithoutEnrollment.
     */
-  var intent: js.UndefOr[InstallIntent] = js.native
+  var intent: js.UndefOr[InstallIntent] = js.undefined
   
   // The settings for target assignment defined by the admin.
-  var settings: js.UndefOr[NullableOption[MobileAppAssignmentSettings]] = js.native
+  var settings: js.UndefOr[NullableOption[MobileAppAssignmentSettings]] = js.undefined
   
   // The target group assignment defined by the admin.
-  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.native
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object MobileAppAssignment {
   

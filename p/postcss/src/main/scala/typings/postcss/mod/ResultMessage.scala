@@ -3,16 +3,15 @@ package typings.postcss.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultMessage
-  extends /* others */ StringDictionary[js.Any] {
+  extends StObject
+     with /* others */ StringDictionary[js.Any] {
   
-  var plugin: String = js.native
+  var plugin: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ResultMessage {
   

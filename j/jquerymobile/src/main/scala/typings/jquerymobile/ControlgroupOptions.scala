@@ -2,21 +2,19 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlgroupOptions extends StObject {
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var excludeInvisible: js.UndefOr[Boolean] = js.native
+  var excludeInvisible: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ControlgroupOptions {
   

@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasTextDrawingStyles extends StObject {
   
-  var direction: CanvasDirection = js.native
+  var direction: CanvasDirection
   
-  var font: java.lang.String = js.native
+  var font: java.lang.String
   
-  var textAlign: CanvasTextAlign = js.native
+  var textAlign: CanvasTextAlign
   
-  var textBaseline: CanvasTextBaseline = js.native
+  var textBaseline: CanvasTextBaseline
 }
 object CanvasTextDrawingStyles {
   

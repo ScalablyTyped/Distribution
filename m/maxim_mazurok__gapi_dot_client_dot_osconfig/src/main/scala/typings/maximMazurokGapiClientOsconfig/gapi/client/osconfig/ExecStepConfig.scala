@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecStepConfig extends StObject {
   
   /** Defaults to [0]. A list of possible return values that the execution can return to indicate a success. */
-  var allowedSuccessCodes: js.UndefOr[js.Array[Double]] = js.native
+  var allowedSuccessCodes: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** A Cloud Storage object containing the executable. */
-  var gcsObject: js.UndefOr[GcsObject] = js.native
+  var gcsObject: js.UndefOr[GcsObject] = js.undefined
   
   /**
     * The script interpreter to use to run the script. If no interpreter is specified the script will be executed directly, which will likely only succeed for scripts with [shebang lines]
     * (https://en.wikipedia.org/wiki/Shebang_\(Unix\)).
     */
-  var interpreter: js.UndefOr[String] = js.native
+  var interpreter: js.UndefOr[String] = js.undefined
   
   /** An absolute path to the executable on the VM. */
-  var localPath: js.UndefOr[String] = js.native
+  var localPath: js.UndefOr[String] = js.undefined
 }
 object ExecStepConfig {
   

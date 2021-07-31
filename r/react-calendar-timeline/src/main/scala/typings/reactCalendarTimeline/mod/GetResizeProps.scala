@@ -3,19 +3,17 @@ package typings.reactCalendarTimeline.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResizeProps extends StObject {
   
-  var leftClassName: js.UndefOr[String] = js.native
+  var leftClassName: js.UndefOr[String] = js.undefined
   
-  var leftStyle: js.UndefOr[CSSProperties] = js.native
+  var leftStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var rightClassName: js.UndefOr[String] = js.native
+  var rightClassName: js.UndefOr[String] = js.undefined
   
-  var rightStyle: js.UndefOr[CSSProperties] = js.native
+  var rightStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 object GetResizeProps {
   

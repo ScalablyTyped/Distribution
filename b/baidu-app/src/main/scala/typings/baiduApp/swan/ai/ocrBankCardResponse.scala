@@ -3,16 +3,14 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.anon.Bankcardnumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ocrBankCardResponse extends StObject {
   
-  var log_id: String = js.native
+  var log_id: String
   
   // 请求标识码，随机数，唯一。
-  var result: Bankcardnumber = js.native
+  var result: Bankcardnumber
 }
 object ocrBankCardResponse {
   

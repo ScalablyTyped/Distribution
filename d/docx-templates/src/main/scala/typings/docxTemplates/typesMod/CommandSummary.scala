@@ -2,17 +2,15 @@ package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandSummary extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var raw: String = js.native
+  var raw: String
   
-  var `type`: BuiltInCommand = js.native
+  var `type`: BuiltInCommand
 }
 object CommandSummary {
   

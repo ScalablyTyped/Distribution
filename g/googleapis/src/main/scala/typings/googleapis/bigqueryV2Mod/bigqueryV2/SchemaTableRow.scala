@@ -2,17 +2,15 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTableRow extends StObject {
   
   /**
     * Represents a single row in the result set, consisting of one or more
     * fields.
     */
-  var f: js.UndefOr[js.Array[SchemaTableCell]] = js.native
+  var f: js.UndefOr[js.Array[SchemaTableCell]] = js.undefined
 }
 object SchemaTableRow {
   

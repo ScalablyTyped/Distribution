@@ -4,14 +4,14 @@ import typings.bull.mod.JobStatus
 import typings.bull.mod.JobStatusClean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bullStrings {
   
   @js.native
   sealed trait active
-    extends JobStatus
+    extends StObject
+       with JobStatus
        with JobStatusClean
   @scala.inline
   def active: active = "active".asInstanceOf[active]
@@ -33,14 +33,16 @@ object bullStrings {
   
   @js.native
   sealed trait completed
-    extends JobStatus
+    extends StObject
+       with JobStatus
        with JobStatusClean
   @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
   sealed trait delayed
-    extends JobStatus
+    extends StObject
+       with JobStatus
        with JobStatusClean
   @scala.inline
   def delayed: delayed = "delayed".asInstanceOf[delayed]
@@ -57,14 +59,16 @@ object bullStrings {
   
   @js.native
   sealed trait failed
-    extends JobStatus
+    extends StObject
+       with JobStatus
        with JobStatusClean
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait paused
-    extends JobStatus
+    extends StObject
+       with JobStatus
        with JobStatusClean
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
@@ -95,10 +99,14 @@ object bullStrings {
   def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
   
   @js.native
-  sealed trait wait extends JobStatusClean
+  sealed trait wait
+    extends StObject
+       with JobStatusClean
   
   @js.native
-  sealed trait waiting extends JobStatus
+  sealed trait waiting
+    extends StObject
+       with JobStatus
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
 }

@@ -2,16 +2,14 @@ package typings.mendixmodelsdk.deltasDeltasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDelta extends StObject {
   
   /**
     * The ID of the unit (containing an element or property value) to which the delta is to be applied.
     */
-  var unitId: String = js.native
+  var unitId: String
 }
 object IDelta {
   

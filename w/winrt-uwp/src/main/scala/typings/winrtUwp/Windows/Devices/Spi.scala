@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.Devices
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SPI is a high speed interface used to communicate among integrated components on the same board. */
@@ -18,19 +17,27 @@ object Spi {
     
     /** CPOL = 0, CPHA = 0. */
     @js.native
-    sealed trait mode0 extends SpiMode
+    sealed trait mode0
+      extends StObject
+         with SpiMode
     
     /** CPOL = 0, CPHA = 1. */
     @js.native
-    sealed trait mode1 extends SpiMode
+    sealed trait mode1
+      extends StObject
+         with SpiMode
     
     /** CPOL = 1, CPHA = 0. */
     @js.native
-    sealed trait mode2 extends SpiMode
+    sealed trait mode2
+      extends StObject
+         with SpiMode
     
     /** CPOL = 1, CPHA = 1. */
     @js.native
-    sealed trait mode3 extends SpiMode
+    sealed trait mode3
+      extends StObject
+         with SpiMode
   }
   
   @js.native
@@ -42,21 +49,24 @@ object Spi {
     
     /** SPI bus segment is not shared. */
     @js.native
-    sealed trait exclusive extends SpiSharingMode
+    sealed trait exclusive
+      extends StObject
+         with SpiSharingMode
     
     /** SPI bus is shared. */
     @js.native
-    sealed trait shared extends SpiSharingMode
+    sealed trait shared
+      extends StObject
+         with SpiSharingMode
   }
   
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The SPI API needs a SPI Provider implementation to talk to the SPI controller. */
   object Provider {
     
     /** Represents actions common to SPI controller providers. */
-    @js.native
     trait ISpiProvider extends StObject {
       
-      var getControllersAsync: js.Any = js.native
+      var getControllersAsync: js.Any
     }
     object ISpiProvider {
       
@@ -74,22 +84,21 @@ object Spi {
       }
     }
     
-    @js.native
     trait ProviderSpiConnectionSettings extends StObject {
       
-      var chipSelectLine: js.Any = js.native
+      var chipSelectLine: js.Any
       
       /* unmapped type */
-      var clockFrequency: js.Any = js.native
+      var clockFrequency: js.Any
       
       /* unmapped type */
-      var dataBitLength: js.Any = js.native
+      var dataBitLength: js.Any
       
       /* unmapped type */
-      var mode: js.Any = js.native
+      var mode: js.Any
       
       /* unmapped type */
-      var sharingMode: js.Any = js.native
+      var sharingMode: js.Any
     }
     object ProviderSpiConnectionSettings {
       
@@ -127,20 +136,19 @@ object Spi {
   }
   
   /** Represents the info about a SPI bus. */
-  @js.native
   trait SpiBusInfo extends StObject {
     
     /** Gets the number of chip select lines available on the bus. */
-    var chipSelectLineCount: Double = js.native
+    var chipSelectLineCount: Double
     
     /** Maximum clock cycle frequency of the bus. */
-    var maxClockFrequency: Double = js.native
+    var maxClockFrequency: Double
     
     /** Minimum clock cycle frequency of the bus. */
-    var minClockFrequency: Double = js.native
+    var minClockFrequency: Double
     
     /** Gets the bit lengths that can be used on the bus for transmitting data. */
-    var supportedDataBitLengths: IVectorView[Double] = js.native
+    var supportedDataBitLengths: IVectorView[Double]
   }
   object SpiBusInfo {
     
@@ -173,23 +181,22 @@ object Spi {
   }
   
   /** Represents the settings for the connection with a device. */
-  @js.native
   trait SpiConnectionSettings extends StObject {
     
     /** Gets or sets the chip select line for the connection to the SPI device. */
-    var chipSelectLine: Double = js.native
+    var chipSelectLine: Double
     
     /** Gets or sets the clock frequency for the connection. */
-    var clockFrequency: Double = js.native
+    var clockFrequency: Double
     
     /** Gets or sets the bit length for data on this connection. */
-    var dataBitLength: Double = js.native
+    var dataBitLength: Double
     
     /** Gets or sets the SpiMode for this connection. */
-    var mode: SpiMode = js.native
+    var mode: SpiMode
     
     /** Gets or sets the sharing mode for the SPI connection. */
-    var sharingMode: SpiSharingMode = js.native
+    var sharingMode: SpiSharingMode
   }
   object SpiConnectionSettings {
     
@@ -226,7 +233,6 @@ object Spi {
   }
   
   /** Represents the SPI controller on the system. */
-  @js.native
   trait SpiController extends StObject {
     
     /**
@@ -234,7 +240,7 @@ object Spi {
       * @param settings The desired connection settings.
       * @return The SPI device.
       */
-    def getDevice(settings: SpiConnectionSettings): SpiDevice = js.native
+    def getDevice(settings: SpiConnectionSettings): SpiDevice
   }
   object SpiController {
     
@@ -253,43 +259,42 @@ object Spi {
   }
   
   /** Represents a device connected through the SPI bus. */
-  @js.native
   trait SpiDevice extends StObject {
     
     /** Closes the connection to the device. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Gets the connection settings for the device. */
-    var connectionSettings: SpiConnectionSettings = js.native
+    var connectionSettings: SpiConnectionSettings
     
     /** Gets the unique ID associated with the device. */
-    var deviceId: String = js.native
+    var deviceId: String
     
     /**
       * Reads from the connected device.
       * @return Array containing data read from the device.
       */
-    def read(): js.Array[Double] = js.native
+    def read(): js.Array[Double]
     
     /**
       * Transfer data using a full duplex communication system. Full duplex allows both the master and the slave to communicate simultaneously.
       * @param writeBuffer Array containing data to write to the device.
       * @return Array containing data read from the device.
       */
-    def transferFullDuplex(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
+    def transferFullDuplex(writeBuffer: js.Array[Double]): js.Array[Double]
     
     /**
       * Transfer data sequentially to the device.
       * @param writeBuffer Array containing data to write to the device.
       * @return Array containing data read from the device.
       */
-    def transferSequential(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
+    def transferSequential(writeBuffer: js.Array[Double]): js.Array[Double]
     
     /**
       * Writes to the connected device.
       * @param buffer Array containing the data to write to the device.
       */
-    def write(buffer: js.Array[Double]): Unit = js.native
+    def write(buffer: js.Array[Double]): Unit
   }
   object SpiDevice {
     

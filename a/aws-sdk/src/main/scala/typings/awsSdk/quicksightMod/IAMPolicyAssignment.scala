@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAMPolicyAssignment extends StObject {
   
   /**
     * Assignment ID.
     */
-  var AssignmentId: js.UndefOr[String] = js.native
+  var AssignmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Assignment name.
     */
-  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.native
+  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   
   /**
     * Assignment status.
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: js.UndefOr[typings.awsSdk.quicksightMod.AwsAccountId] = js.native
+  var AwsAccountId: js.UndefOr[typings.awsSdk.quicksightMod.AwsAccountId] = js.undefined
   
   /**
     * Identities.
     */
-  var Identities: js.UndefOr[IdentityMap] = js.native
+  var Identities: js.UndefOr[IdentityMap] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the IAM policy.
     */
-  var PolicyArn: js.UndefOr[Arn] = js.native
+  var PolicyArn: js.UndefOr[Arn] = js.undefined
 }
 object IAMPolicyAssignment {
   

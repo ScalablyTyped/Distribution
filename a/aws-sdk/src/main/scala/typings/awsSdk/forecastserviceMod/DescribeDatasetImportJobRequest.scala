@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetImportJobRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset import job.
     */
-  var DatasetImportJobArn: Arn = js.native
+  var DatasetImportJobArn: Arn
 }
 object DescribeDatasetImportJobRequest {
   

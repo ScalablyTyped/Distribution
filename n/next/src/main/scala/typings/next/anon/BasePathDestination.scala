@@ -3,18 +3,17 @@ package typings.next.anon
 import typings.next.nextBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasePathDestination
-  extends typings.next.mod.Redirect {
+  extends StObject
+     with typings.next.mod.Redirect {
   
-  var basePath: js.UndefOr[`false`] = js.native
+  var basePath: js.UndefOr[`false`] = js.undefined
   
-  var destination: String = js.native
+  var destination: String
   
-  var permanent: Boolean = js.native
+  var permanent: Boolean
 }
 object BasePathDestination {
   

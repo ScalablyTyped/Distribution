@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,14 +28,10 @@ trait FileSystemWatcher extends Disposable {
   /**
     * An event which fires on file/folder change.
     */
-  def onDidChange(listener: js.Function1[/* e */ Uri, _]): Disposable = js.native
-  def onDidChange(
-    listener: js.Function1[/* e */ Uri, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event which fires on file/folder change.
     */
@@ -46,14 +41,10 @@ trait FileSystemWatcher extends Disposable {
   /**
     * An event which fires on file/folder creation.
     */
-  def onDidCreate(listener: js.Function1[/* e */ Uri, _]): Disposable = js.native
-  def onDidCreate(
-    listener: js.Function1[/* e */ Uri, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidCreate(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any): Disposable = js.native
-  def onDidCreate(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event which fires on file/folder creation.
     */
@@ -63,14 +54,10 @@ trait FileSystemWatcher extends Disposable {
   /**
     * An event which fires on file/folder deletion.
     */
-  def onDidDelete(listener: js.Function1[/* e */ Uri, _]): Disposable = js.native
-  def onDidDelete(
-    listener: js.Function1[/* e */ Uri, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidDelete(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any): Disposable = js.native
-  def onDidDelete(listener: js.Function1[/* e */ Uri, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event which fires on file/folder deletion.
     */

@@ -2,32 +2,30 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentTemplate extends StObject {
   
-  var documentEndPage: js.UndefOr[String] = js.native
+  var documentEndPage: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the document ID number that the tab is placed on. This must refer to an existing Document's ID attribute.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
-  var documentStartPage: js.UndefOr[String] = js.native
+  var documentStartPage: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The unique identifier of the template. If this is not provided, DocuSign generates an error and the call fails.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object DocumentTemplate {
   

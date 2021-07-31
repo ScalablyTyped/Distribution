@@ -8,17 +8,15 @@ import typings.extenso.extensoStrings.informal
 import typings.extenso.extensoStrings.m
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Decimal extends StObject {
     
-    var decimal: js.UndefOr[formal | informal] = js.native
+    var decimal: js.UndefOr[formal | informal] = js.undefined
     
-    var gender: js.UndefOr[m | f] = js.native
+    var gender: js.UndefOr[m | f] = js.undefined
   }
   object Decimal {
     
@@ -45,10 +43,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: js.UndefOr[BRL | EUR] = js.native
+    var `type`: js.UndefOr[BRL | EUR] = js.undefined
   }
   object Type {
     

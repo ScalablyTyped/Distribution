@@ -3,47 +3,47 @@ package typings.react.mod
 import typings.react.reactStrings.eager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IframeHTMLAttributes[T] extends HTMLAttributes[T] {
+trait IframeHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var allow: js.UndefOr[String] = js.native
+  var allow: js.UndefOr[String] = js.undefined
   
-  var allowFullScreen: js.UndefOr[Boolean] = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var allowTransparency: js.UndefOr[Boolean] = js.native
-  
-  /** @deprecated */
-  var frameBorder: js.UndefOr[Double | String] = js.native
-  
-  var height: js.UndefOr[Double | String] = js.native
-  
-  var loading: js.UndefOr[eager | typings.react.reactStrings.`lazy`] = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.undefined
   
   /** @deprecated */
-  var marginHeight: js.UndefOr[Double] = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.undefined
+  
+  var height: js.UndefOr[Double | String] = js.undefined
+  
+  var loading: js.UndefOr[eager | typings.react.reactStrings.`lazy`] = js.undefined
   
   /** @deprecated */
-  var marginWidth: js.UndefOr[Double] = js.native
-  
-  var name: js.UndefOr[String] = js.native
-  
-  var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.native
-  
-  var sandbox: js.UndefOr[String] = js.native
+  var marginHeight: js.UndefOr[Double] = js.undefined
   
   /** @deprecated */
-  var scrolling: js.UndefOr[String] = js.native
+  var marginWidth: js.UndefOr[Double] = js.undefined
   
-  var seamless: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
-  var srcDoc: js.UndefOr[String] = js.native
+  var sandbox: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  /** @deprecated */
+  var scrolling: js.UndefOr[String] = js.undefined
+  
+  var seamless: js.UndefOr[Boolean] = js.undefined
+  
+  var src: js.UndefOr[String] = js.undefined
+  
+  var srcDoc: js.UndefOr[String] = js.undefined
+  
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IframeHTMLAttributes {
   
@@ -54,7 +54,7 @@ object IframeHTMLAttributes {
   }
   
   @scala.inline
-  implicit class IframeHTMLAttributesMutableBuilder[Self <: IframeHTMLAttributes[_], T] (val x: Self with IframeHTMLAttributes[T]) extends AnyVal {
+  implicit class IframeHTMLAttributesMutableBuilder[Self <: IframeHTMLAttributes[?], T] (val x: Self & IframeHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])

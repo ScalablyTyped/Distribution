@@ -9,7 +9,6 @@ import typings.awsSdk.stsMod.^
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chainableTemporaryCredentialsMod {
@@ -30,14 +29,13 @@ object chainableTemporaryCredentialsMod {
   // Needed to expose interfaces on the class
   object ChainableTemporaryCredentials {
     
-    @js.native
     trait ChainableTemporaryCredentialsOptions extends StObject {
       
-      var masterCredentials: js.UndefOr[Credentials] = js.native
+      var masterCredentials: js.UndefOr[Credentials] = js.undefined
       
-      var params: js.UndefOr[AssumeRoleRequest | GetSessionTokenRequest] = js.native
+      var params: js.UndefOr[AssumeRoleRequest | GetSessionTokenRequest] = js.undefined
       
-      var stsConfig: js.UndefOr[ClientConfiguration] = js.native
+      var stsConfig: js.UndefOr[ClientConfiguration] = js.undefined
       
       var tokenCodeFn: js.UndefOr[
             js.Function2[
@@ -45,7 +43,7 @@ object chainableTemporaryCredentialsMod {
               /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object ChainableTemporaryCredentialsOptions {
       

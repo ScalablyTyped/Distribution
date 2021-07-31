@@ -4,17 +4,15 @@ import typings.reactCalendarTimeline.reactCalendarTimelineStrings.move
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnItemDragObjectBase extends StObject {
   
-  var eventType: move | resize = js.native
+  var eventType: move | resize
   
-  var itemId: Id = js.native
+  var itemId: Id
   
-  var time: Double = js.native
+  var time: Double
 }
 object OnItemDragObjectBase {
   

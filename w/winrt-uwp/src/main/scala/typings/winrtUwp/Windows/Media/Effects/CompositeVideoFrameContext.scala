@@ -6,28 +6,26 @@ import typings.winrtUwp.Windows.Media.Editing.MediaOverlay
 import typings.winrtUwp.Windows.Media.VideoFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides context for performing a custom overlay operation within the CompositeFrame method. */
-@js.native
 trait CompositeVideoFrameContext extends StObject {
   
   /** Gets the background frame for an overlay operation. */
-  var backgroundFrame: VideoFrame = js.native
+  var backgroundFrame: VideoFrame
   
   /**
     * Gets a MediaOverlay object for the provided Direct3D surface.
     * @param surfaceToOverlay The Direct3D surface.
     * @return The created MediaOverlay object.
     */
-  def getOverlayForSurface(surfaceToOverlay: IDirect3DSurface): MediaOverlay = js.native
+  def getOverlayForSurface(surfaceToOverlay: IDirect3DSurface): MediaOverlay
   
   /** Gets the output frame for an overlay operation. */
-  var outputFrame: VideoFrame = js.native
+  var outputFrame: VideoFrame
   
   /** Gets the list of Direct3D surfaces to be used in an overlay operation. */
-  var surfacesToOverlay: IVectorView[IDirect3DSurface] = js.native
+  var surfacesToOverlay: IVectorView[IDirect3DSurface]
 }
 object CompositeVideoFrameContext {
   

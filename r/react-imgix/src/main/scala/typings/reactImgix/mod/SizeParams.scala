@@ -2,31 +2,29 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeParams extends StObject {
   
-  var ar: js.UndefOr[ImgixParamType] = js.native
+  var ar: js.UndefOr[ImgixParamType] = js.undefined
   
-  var crop: js.UndefOr[ImgixParamType] = js.native
+  var crop: js.UndefOr[ImgixParamType] = js.undefined
   
-  var fit: js.UndefOr[ImgixParamType] = js.native
+  var fit: js.UndefOr[ImgixParamType] = js.undefined
   
-  var h: js.UndefOr[ImgixParamType] = js.native
+  var h: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `max-h`: js.UndefOr[ImgixParamType] = js.native
+  var `max-h`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `max-w`: js.UndefOr[ImgixParamType] = js.native
+  var `max-w`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `min-h`: js.UndefOr[ImgixParamType] = js.native
+  var `min-h`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `min-w`: js.UndefOr[ImgixParamType] = js.native
+  var `min-w`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var rect: js.UndefOr[ImgixParamType] = js.native
+  var rect: js.UndefOr[ImgixParamType] = js.undefined
   
-  var w: js.UndefOr[ImgixParamType] = js.native
+  var w: js.UndefOr[ImgixParamType] = js.undefined
 }
 object SizeParams {
   

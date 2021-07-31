@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for receiving "rowsChanged" events posted by, for example, a row set. */
-@js.native
-trait XRowsChangeListener extends XEventListener {
+trait XRowsChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when rows are inserted, updated, or deleted.
     * @param event contains information about the event
     */
-  def rowsChanged(event: RowsChangeEvent): Unit = js.native
+  def rowsChanged(event: RowsChangeEvent): Unit
 }
 object XRowsChangeListener {
   

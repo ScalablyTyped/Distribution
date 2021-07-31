@@ -2,35 +2,33 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitSortableOptions extends StObject {
   
-  var animation: js.UndefOr[Double] = js.native
+  var animation: js.UndefOr[Double] = js.undefined
   
-  var `cls-base`: js.UndefOr[String] = js.native
+  var `cls-base`: js.UndefOr[String] = js.undefined
   
-  var `cls-custom`: String = js.native
+  var `cls-custom`: String
   
-  var `cls-drag`: js.UndefOr[String] = js.native
+  var `cls-drag`: js.UndefOr[String] = js.undefined
   
-  var `cls-drag-state`: js.UndefOr[String] = js.native
+  var `cls-drag-state`: js.UndefOr[String] = js.undefined
   
-  var `cls-empty`: js.UndefOr[String] = js.native
+  var `cls-empty`: js.UndefOr[String] = js.undefined
   
-  var `cls-item`: js.UndefOr[String] = js.native
+  var `cls-item`: js.UndefOr[String] = js.undefined
   
-  var `cls-no-drag`: js.UndefOr[String] = js.native
+  var `cls-no-drag`: js.UndefOr[String] = js.undefined
   
-  var `cls-placeholder`: js.UndefOr[String] = js.native
+  var `cls-placeholder`: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object UIkitSortableOptions {
   

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShiftPreferences extends ChangeTrackedEntity {
+trait ShiftPreferences
+  extends StObject
+     with ChangeTrackedEntity {
   
   // Availability of the user to be scheduled for work and its recurrence pattern.
-  var availability: js.UndefOr[NullableOption[js.Array[ShiftAvailability]]] = js.native
+  var availability: js.UndefOr[NullableOption[js.Array[ShiftAvailability]]] = js.undefined
 }
 object ShiftPreferences {
   

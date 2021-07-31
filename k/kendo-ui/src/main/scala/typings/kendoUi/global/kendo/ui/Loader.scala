@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.LoaderOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Loader")
 @js.native
 class Loader protected ()
-  extends typings.kendoUi.kendo.ui.Loader {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Loader {
   def this(element: Element) = this()
   def this(element: Element, options: LoaderOptions) = this()
 }
@@ -21,9 +21,8 @@ object Loader {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Loader.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Loader = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Loader]
   
   /* static member */
   @JSGlobal("kendo.ui.Loader.fn")

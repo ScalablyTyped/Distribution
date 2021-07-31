@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogConfigCounterOptions extends StObject {
   
   /** Custom fields. */
-  var customFields: js.UndefOr[js.Array[LogConfigCounterOptionsCustomField]] = js.native
+  var customFields: js.UndefOr[js.Array[LogConfigCounterOptionsCustomField]] = js.undefined
   
   /** The field value to attribute. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** The metric to update. */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
 }
 object LogConfigCounterOptions {
   

@@ -7,25 +7,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildingFilterBlockFilterMode extends Object {
+trait BuildingFilterBlockFilterMode
+  extends StObject
+     with Object {
   
   /**
     * Defines the type of edges used to display a [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) filtered in `wire-frame` mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
     */
-  var edges: js.UndefOr[SolidEdges3D | SketchEdges3D] = js.native
+  var edges: js.UndefOr[SolidEdges3D | SketchEdges3D] = js.undefined
   
   /**
     * Defines how features are drawn while the filter is active.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
     */
-  var `type`: js.UndefOr[solid | `wire-frame` | `x-ray`] = js.native
+  var `type`: js.UndefOr[solid | `wire-frame` | `x-ray`] = js.undefined
 }
 object BuildingFilterBlockFilterMode {
   

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a default audio capture device change event. */
-@js.native
 trait DefaultAudioCaptureDeviceChangedEventArgs extends StObject {
   
   /** Gets the ID of the newly selected audio capture device that caused the change event. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the role of the newly selected audio capture device that caused the change event. */
-  var role: AudioDeviceRole = js.native
+  var role: AudioDeviceRole
 }
 object DefaultAudioCaptureDeviceChangedEventArgs {
   

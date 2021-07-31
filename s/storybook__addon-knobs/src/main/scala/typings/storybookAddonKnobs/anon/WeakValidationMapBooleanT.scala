@@ -5,20 +5,18 @@ import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnob
 import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeProps> */
-@js.native
 trait WeakValidationMapBooleanT extends StObject {
   
-  var knob: js.UndefOr[Validator[js.UndefOr[BooleanTypeKnob | Null]]] = js.native
+  var knob: js.UndefOr[Validator[js.UndefOr[BooleanTypeKnob | Null]]] = js.undefined
   
   var onChange: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* value */ BooleanTypeKnobValue, BooleanTypeKnobValue]) | Null]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WeakValidationMapBooleanT {
   

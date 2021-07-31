@@ -5,7 +5,6 @@ import typings.storybookAddonActions.actionDisplayMod.ActionDisplay
 import typings.storybookApi.mod.API
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containersActionLoggerMod {
@@ -35,12 +34,11 @@ object containersActionLoggerMod {
     var mounted: js.Any = js.native
   }
   
-  @js.native
   trait ActionLoggerProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var api: API = js.native
+    var api: API
   }
   object ActionLoggerProps {
     
@@ -61,10 +59,9 @@ object containersActionLoggerMod {
     }
   }
   
-  @js.native
   trait ActionLoggerState extends StObject {
     
-    var actions: js.Array[ActionDisplay] = js.native
+    var actions: js.Array[ActionDisplay]
   }
   object ActionLoggerState {
     

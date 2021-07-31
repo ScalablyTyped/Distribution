@@ -2,7 +2,6 @@ package typings.promClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Registry")
@@ -73,11 +72,14 @@ class Registry () extends StObject {
 /* static members */
 object Registry {
   
+  @JSImport("prom-client", "Registry")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   	 * Merge registers
   	 * @param registers The registers you want to merge together
   	 */
-  @JSImport("prom-client", "Registry.merge")
-  @js.native
-  def merge(registers: js.Array[Registry]): Registry = js.native
+  @scala.inline
+  def merge(registers: js.Array[Registry]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(registers.asInstanceOf[js.Any]).asInstanceOf[Registry]
 }

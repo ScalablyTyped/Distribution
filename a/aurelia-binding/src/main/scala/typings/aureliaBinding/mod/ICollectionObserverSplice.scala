@@ -8,43 +8,41 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollectionObserverSplice[T, K] extends StObject {
   
   /* ArrayObserverSplice */
   /**
     * Number of items added to the collection.
     */
-  var addedCount: Double = js.native
+  var addedCount: Double
   
   /**
     * The position at which the items were added.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * The key of the Map item that was changed.
     */
-  var key: K = js.native
+  var key: K
   
   /* End ArrayObserverSplice */
   /**
     * The observed Set or Map after the change.
     */
-  var `object`: Set[T] | (Map[K, T]) = js.native
+  var `object`: Set[T] | (Map[K, T])
   
   /**
     * The value of the Map item prior to the change.
     */
-  var oldValue: T = js.native
+  var oldValue: T
   
   /**
     * A collection of items that were removed from the collection.
     */
-  var removed: js.Array[T] = js.native
+  var removed: js.Array[T]
   
   /**
     * The type of change that has taken place. Valid options are "add", "delete", "update", and  "clear".
@@ -53,12 +51,12 @@ trait ICollectionObserverSplice[T, K] extends StObject {
     * 
     * *Note:* "clear" is only valid for Map and Set.
     */
-  var `type`: add | delete | update | clear = js.native
+  var `type`: add | delete | update | clear
   
   /**
     * The Set value that was either added or removed.
     */
-  var value: T = js.native
+  var value: T
 }
 object ICollectionObserverSplice {
   
@@ -80,7 +78,7 @@ object ICollectionObserverSplice {
   }
   
   @scala.inline
-  implicit class ICollectionObserverSpliceMutableBuilder[Self <: ICollectionObserverSplice[_, _], T, K] (val x: Self with (ICollectionObserverSplice[T, K])) extends AnyVal {
+  implicit class ICollectionObserverSpliceMutableBuilder[Self <: ICollectionObserverSplice[?, ?], T, K] (val x: Self & (ICollectionObserverSplice[T, K])) extends AnyVal {
     
     @scala.inline
     def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])

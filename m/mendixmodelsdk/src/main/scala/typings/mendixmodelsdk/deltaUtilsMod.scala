@@ -15,85 +15,72 @@ import typings.mendixmodelsdk.unitsMod.ModelUnit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deltaUtilsMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "asModelUnit")
+  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", JSImport.Namespace)
   @js.native
-  def asModelUnit(unit: IAbstractUnit, delta: Delta): ModelUnit[IAbstractModel] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "checkInsertionIndex")
-  @js.native
-  def checkInsertionIndex(index: Double, property: AbstractProperty[js.Array[_], _]): Unit = js.native
+  @scala.inline
+  def asModelUnit(unit: IAbstractUnit, delta: Delta): ModelUnit[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("asModelUnit")(unit.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[ModelUnit[IAbstractModel]]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "checkMutator")
-  @js.native
-  def checkMutator(mutator: Mutator, property: AbstractProperty[_, _]): Unit = js.native
+  @scala.inline
+  def checkInsertionIndex(index: Double, property: AbstractProperty[js.Array[js.Any], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkInsertionIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "checkUpdateOrRemovalIndex")
-  @js.native
-  def checkUpdateOrRemovalIndex(index: Double, property: AbstractProperty[js.Array[_], _]): Unit = js.native
+  @scala.inline
+  def checkMutator(mutator: Mutator, property: AbstractProperty[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMutator")(mutator.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "findElement")
-  @js.native
-  def findElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): (AbstractElement[IAbstractModel, Container]) | Null = js.native
+  @scala.inline
+  def checkUpdateOrRemovalIndex(index: Double, property: AbstractProperty[js.Array[js.Any], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUpdateOrRemovalIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "getContainmentInfo")
-  @js.native
-  def getContainmentInfo(unit: ModelUnit[IAbstractModel], model: AbstractModel, elementId: String): IContainmentInfo = js.native
+  @scala.inline
+  def findElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): (AbstractElement[IAbstractModel, Container]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[(AbstractElement[IAbstractModel, Container]) | Null]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "getElement")
-  @js.native
-  def getElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): AbstractElement[IAbstractModel, Container] = js.native
+  @scala.inline
+  def getContainmentInfo(unit: ModelUnit[IAbstractModel], model: AbstractModel, elementId: String): IContainmentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainmentInfo")(unit.asInstanceOf[js.Any], model.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[IContainmentInfo]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "getElementNotFoundError")
-  @js.native
-  def getElementNotFoundError(unit: ModelUnit[IAbstractModel], elementId: String): Error = js.native
+  @scala.inline
+  def getElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): AbstractElement[IAbstractModel, Container] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[AbstractElement[IAbstractModel, Container]]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "getProperty")
-  @js.native
-  def getProperty(structure: IStructure, propertyName: String): AbstractProperty[_, _] = js.native
+  @scala.inline
+  def getElementNotFoundError(unit: ModelUnit[IAbstractModel], elementId: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementNotFoundError")(unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "getUnit")
-  @js.native
-  def getUnit(model: AbstractModel, unitId: String): IAbstractUnit = js.native
+  @scala.inline
+  def getProperty(structure: IStructure, propertyName: String): AbstractProperty[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(structure.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[AbstractProperty[js.Any, js.Any]]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "isListProperty")
-  @js.native
-  def isListProperty(property: AbstractProperty[_, _]): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean = js.native
+  @scala.inline
+  def getUnit(model: AbstractModel, unitId: String): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnit")(model.asInstanceOf[js.Any], unitId.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "rawList")
-  @js.native
-  def rawList(property: AbstractProperty[js.Array[_], _]): js.Array[_] = js.native
+  @scala.inline
+  def isListProperty(property: AbstractProperty[js.Any, js.Any]): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isListProperty")(property.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "rawValue")
-  @js.native
-  def rawValue(property: AbstractProperty[_, _]): js.Any = js.native
+  @scala.inline
+  def rawList(property: AbstractProperty[js.Array[js.Any], js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawList")(property.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "removeUselessDeltas")
-  @js.native
-  def removeUselessDeltas(deltas: js.Array[Delta]): js.Array[Delta] = js.native
+  @scala.inline
+  def rawValue(property: AbstractProperty[js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rawValue")(property.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", "updateStructure")
-  @js.native
+  @scala.inline
+  def removeUselessDeltas(deltas: js.Array[Delta]): js.Array[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUselessDeltas")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Array[Delta]]
+  
+  @scala.inline
   def updateStructure(
     structure: Structure[IAbstractModel, IContainer | Null],
     isReverting: Boolean,
     updateAction: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStructure")(structure.asInstanceOf[js.Any], isReverting.asInstanceOf[js.Any], updateAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait IContainmentInfo extends StObject {
     
-    var element: AbstractElement[IAbstractModel, Container] = js.native
+    var element: AbstractElement[IAbstractModel, Container]
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var parentId: String = js.native
+    var parentId: String
     
-    var parentPropertyName: String = js.native
+    var parentPropertyName: String
   }
   object IContainmentInfo {
     

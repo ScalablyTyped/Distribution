@@ -2,35 +2,33 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpstreamProxy extends StObject {
   
   /**
     * Will be used as the hostname when launching browsers
     * @default 'localhost'
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * Will be prepended to the base url when launching browsers and prepended to internal urls as loaded by the browsers
     * @default '/'
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Will be used as the port when launching browsers
     * @default 9875
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Will be used as the protocol when launching browsers
     * @default 'http'
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
 }
 object UpstreamProxy {
   

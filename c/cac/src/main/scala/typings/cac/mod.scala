@@ -5,20 +5,21 @@ import typings.cac.anon.Run
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("cac", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param name The program name to display in help and version message
     */
-  @JSImport("cac", JSImport.Default)
-  @js.native
-  def default(): CAC_ = js.native
-  @JSImport("cac", JSImport.Default)
-  @js.native
-  def default(name: String): CAC_ = js.native
+  @scala.inline
+  def default(): CAC_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[CAC_]
+  @scala.inline
+  def default(name: String): CAC_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[CAC_]
   
   @JSImport("cac", "CAC")
   @js.native
@@ -37,9 +38,9 @@ object mod {
       * Add a sub-command
       */
     def command(rawName: String): Command = js.native
-    def command(rawName: String, description: js.UndefOr[scala.Nothing], config: CommandConfig): Command = js.native
     def command(rawName: String, description: String): Command = js.native
     def command(rawName: String, description: String, config: CommandConfig): Command = js.native
+    def command(rawName: String, description: Unit, config: CommandConfig): Command = js.native
     
     var commands: js.Array[Command] = js.native
     
@@ -99,9 +100,9 @@ object mod {
       * Parse argv
       */
     def parse(): ParsedArgv = js.native
-    def parse(argv: js.UndefOr[scala.Nothing], hasRun: Run): ParsedArgv = js.native
     def parse(argv: js.Array[String]): ParsedArgv = js.native
     def parse(argv: js.Array[String], hasRun: Run): ParsedArgv = js.native
+    def parse(argv: Unit, hasRun: Run): ParsedArgv = js.native
     
     /**
       * Raw CLI arguments
@@ -138,7 +139,7 @@ object mod {
   class Command protected () extends StObject {
     def this(rawName: String, description: String, config: CommandConfig, cli: CAC_) = this()
     
-    def action(callback: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+    def action(callback: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
     
     def alias(name: String): this.type = js.native
     
@@ -164,7 +165,7 @@ object mod {
     
     var cli: CAC_ = js.native
     
-    var commandAction: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var commandAction: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
     
     var config: CommandConfig = js.native
     
@@ -228,21 +229,18 @@ object mod {
   /**
     * @param name The program name to display in help and version message
     */
-  @JSImport("cac", "cac")
-  @js.native
-  def cac(): CAC_ = js.native
-  @JSImport("cac", "cac")
-  @js.native
-  def cac(name: String): CAC_ = js.native
+  @scala.inline
+  def cac(): CAC_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cac")().asInstanceOf[CAC_]
+  @scala.inline
+  def cac(name: String): CAC_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cac")(name.asInstanceOf[js.Any]).asInstanceOf[CAC_]
   
-  @js.native
   trait CommandArg extends StObject {
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var value: String = js.native
+    var value: String
     
-    var variadic: Boolean = js.native
+    var variadic: Boolean
   }
   object CommandArg {
     
@@ -266,12 +264,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CommandConfig extends StObject {
     
-    var allowUnknownOptions: js.UndefOr[Boolean] = js.native
+    var allowUnknownOptions: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreOptionDefaultValue: js.UndefOr[Boolean] = js.native
+    var ignoreOptionDefaultValue: js.UndefOr[Boolean] = js.undefined
   }
   object CommandConfig {
     
@@ -304,12 +301,11 @@ object mod {
   
   type HelpCallback = js.Function1[/* sections */ js.Array[HelpSection], Unit | js.Array[HelpSection]]
   
-  @js.native
   trait HelpSection extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object HelpSection {
     
@@ -333,26 +329,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var config: OptionConfig = js.native
+    var config: OptionConfig
     
-    var description: String = js.native
+    var description: String
     
-    var isBoolean: js.UndefOr[Boolean] = js.native
+    var isBoolean: js.UndefOr[Boolean] = js.undefined
     
     /** Option name */
-    var name: String = js.native
+    var name: String
     
     /** Option name and aliases */
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var negated: Boolean = js.native
+    var negated: Boolean
     
-    var rawName: String = js.native
+    var rawName: String
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object Option {
     
@@ -407,12 +402,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionConfig extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[js.Array[_]] = js.native
+    var `type`: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object OptionConfig {
     
@@ -432,7 +426,7 @@ object mod {
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       @scala.inline
-      def setType(value: js.Array[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -442,12 +436,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedArgv extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[js.Any]
   }
   object ParsedArgv {
     

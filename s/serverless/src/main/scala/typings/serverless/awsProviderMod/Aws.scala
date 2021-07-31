@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.serverless.anon.Region
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,8 +21,8 @@ trait Aws extends StObject {
   
   var naming: StringDictionary[js.Function0[String]] = js.native
   
-  def request(service: String, method: String): js.Promise[_] = js.native
-  def request(service: String, method: String, params: js.UndefOr[scala.Nothing], options: Region): js.Promise[_] = js.native
-  def request(service: String, method: String, params: js.Object): js.Promise[_] = js.native
-  def request(service: String, method: String, params: js.Object, options: Region): js.Promise[_] = js.native
+  def request(service: String, method: String): js.Promise[js.Any] = js.native
+  def request(service: String, method: String, params: js.Object): js.Promise[js.Any] = js.native
+  def request(service: String, method: String, params: js.Object, options: Region): js.Promise[js.Any] = js.native
+  def request(service: String, method: String, params: Unit, options: Region): js.Promise[js.Any] = js.native
 }

@@ -4,14 +4,15 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("quick-lru", JSImport.Namespace)
   @js.native
-  class ^[KeyType, ValueType] protected () extends QuickLRU[KeyType, ValueType] {
+  class ^[KeyType, ValueType] protected ()
+    extends StObject
+       with QuickLRU[KeyType, ValueType] {
     /**
     	Simple ["Least Recently Used" (LRU) cache](https://en.m.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_.28LRU.29).
     	The instance is [`iterable`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Iteration_protocols) so you can use it directly in a [`for…of`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...of) loop.
@@ -29,19 +30,18 @@ object mod {
     def this(options: Options[KeyType, ValueType]) = this()
   }
   
-  @js.native
   trait Options[KeyType, ValueType] extends StObject {
     
     /**
     		The maximum number of items before evicting the least recently used items.
     		*/
-    val maxSize: Double = js.native
+    val maxSize: Double
     
     /**
     		Called right before an item is evicted from the cache.
     		Useful for side effects or for items like object URLs that need explicit cleanup (`revokeObjectURL`).
     		*/
-    var onEviction: js.UndefOr[js.Function2[/* key */ KeyType, /* value */ ValueType, Unit]] = js.native
+    var onEviction: js.UndefOr[js.Function2[/* key */ KeyType, /* value */ ValueType, Unit]] = js.undefined
   }
   object Options {
     
@@ -52,7 +52,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], KeyType, ValueType] (val x: Self with (Options[KeyType, ValueType])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], KeyType, ValueType] (val x: Self & (Options[KeyType, ValueType])) extends AnyVal {
       
       @scala.inline
       def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
@@ -67,7 +67,8 @@ object mod {
   
   @js.native
   trait QuickLRU[KeyType, ValueType]
-    extends Iterable[js.Tuple2[KeyType, ValueType]] {
+    extends StObject
+       with Iterable[js.Tuple2[KeyType, ValueType]] {
     
     /**
     	Delete all items.

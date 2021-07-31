@@ -3,30 +3,30 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 import typings.rsocketTypes.rsocketTypesNumbers.`0x0b`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorFrame extends Frame {
+trait ErrorFrame
+  extends StObject
+     with Frame {
   
-  var code: Double = js.native
+  var code: Double
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var streamId: Double = js.native
+  var streamId: Double
   
-  var `type`: `0x0b` = js.native
+  var `type`: `0x0b`
 }
 object ErrorFrame {
   
   @scala.inline
-  def apply(code: Double, flags: Double, message: String, streamId: Double, `type`: `0x0b`): ErrorFrame = {
+  def apply(code: Double, flags: Double, message: String, streamId: Double): ErrorFrame = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0x0b)
     __obj.asInstanceOf[ErrorFrame]
   }
   

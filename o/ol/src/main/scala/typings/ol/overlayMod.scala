@@ -16,7 +16,6 @@ import typings.ol.sizeMod.Size
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayMod {
@@ -27,32 +26,31 @@ object overlayMod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoPan: js.UndefOr[PanIntoViewOptions | Boolean] = js.native
+    var autoPan: js.UndefOr[PanIntoViewOptions | Boolean] = js.undefined
     
-    var autoPanAnimation: js.UndefOr[PanOptions] = js.native
+    var autoPanAnimation: js.UndefOr[PanOptions] = js.undefined
     
-    var autoPanMargin: js.UndefOr[Double] = js.native
+    var autoPanMargin: js.UndefOr[Double] = js.undefined
     
-    var autoPanOptions: js.UndefOr[PanIntoViewOptions] = js.native
+    var autoPanOptions: js.UndefOr[PanIntoViewOptions] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
-    var insertFirst: js.UndefOr[Boolean] = js.native
+    var insertFirst: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[js.Array[Double]] = js.native
+    var offset: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var position: js.UndefOr[Coordinate] = js.native
+    var position: js.UndefOr[Coordinate] = js.undefined
     
-    var positioning: js.UndefOr[OverlayPositioning] = js.native
+    var positioning: js.UndefOr[OverlayPositioning] = js.undefined
     
-    var stopEvent: js.UndefOr[Boolean] = js.native
+    var stopEvent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -306,12 +304,11 @@ object overlayMod {
     /* protected */ def updateRenderedPosition(pixel: Pixel, mapSize: Size): Unit = js.native
   }
   
-  @js.native
   trait PanIntoViewOptions extends StObject {
     
-    var animation: js.UndefOr[PanOptions] = js.native
+    var animation: js.UndefOr[PanOptions] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
   }
   object PanIntoViewOptions {
     
@@ -338,12 +335,11 @@ object overlayMod {
     }
   }
   
-  @js.native
   trait PanOptions extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.undefined
   }
   object PanOptions {
     

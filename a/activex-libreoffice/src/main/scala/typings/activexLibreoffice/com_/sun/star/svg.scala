@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svg {
   
   /** @deprecated Deprecated */
-  @js.native
-  trait XSVGPrinter extends XInterface {
+  trait XSVGPrinter
+    extends StObject
+       with XInterface {
     
-    def endJob(): Unit = js.native
+    def endJob(): Unit
     
-    def printPage(aPrintPage: SeqEquiv[Double]): Unit = js.native
+    def printPage(aPrintPage: SeqEquiv[Double]): Unit
     
     def startJob(
       aHandler: XDocumentHandler,
@@ -25,7 +25,7 @@ object svg {
       aJobName: String,
       nCopies: Double,
       bCollate: Boolean
-    ): Boolean = js.native
+    ): Boolean
   }
   object XSVGPrinter {
     
@@ -57,10 +57,11 @@ object svg {
   }
   
   /** @deprecated Deprecated */
-  @js.native
-  trait XSVGWriter extends XInterface {
+  trait XSVGWriter
+    extends StObject
+       with XInterface {
     
-    def write(aHandler: XDocumentHandler, aMtf: SeqEquiv[Double]): Unit = js.native
+    def write(aHandler: XDocumentHandler, aMtf: SeqEquiv[Double]): Unit
   }
   object XSVGWriter {
     

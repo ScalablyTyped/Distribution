@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalog/v1beta1", "cloudprivatecatalog_v1beta1.Resource$Organizations$Catalogs")
@@ -34,7 +33,7 @@ class ResourceOrganizationsCatalogs protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(params: ParamsResourceOrganizationsCatalogsSearch): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(
     params: ParamsResourceOrganizationsCatalogsSearch,

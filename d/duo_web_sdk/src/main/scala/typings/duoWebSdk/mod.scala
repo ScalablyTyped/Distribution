@@ -6,49 +6,46 @@ import typings.std.HTMLIFrameElement
 import typings.std.MessageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("duo_web_sdk", "_doPostBack")
+  @JSImport("duo_web_sdk", JSImport.Namespace)
   @js.native
-  def doPostBack(response: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("duo_web_sdk", "init")
-  @js.native
-  def init(options: InitOptions): Unit = js.native
+  @scala.inline
+  def doPostBack(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_doPostBack")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("duo_web_sdk", "_isDuoMessage")
-  @js.native
-  def isDuoMessage(event: MessageEvent[_]): Boolean = js.native
+  @scala.inline
+  def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("duo_web_sdk", "_onReady")
-  @js.native
-  def onReady(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def isDuoMessage(event: MessageEvent[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isDuoMessage")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("duo_web_sdk", "_parseSigRequest")
-  @js.native
-  def parseSigRequest(sig: String): ParsedSig = js.native
+  @scala.inline
+  def onReady(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def parseSigRequest(sig: String): ParsedSig = ^.asInstanceOf[js.Dynamic].applyDynamic("_parseSigRequest")(sig.asInstanceOf[js.Any]).asInstanceOf[ParsedSig]
+  
   trait InitOptions extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var iframe: js.UndefOr[String | HTMLIFrameElement] = js.native
+    var iframe: js.UndefOr[String | HTMLIFrameElement] = js.undefined
     
-    var iframeAttributes: js.UndefOr[js.Object] = js.native
+    var iframeAttributes: js.UndefOr[js.Object] = js.undefined
     
-    var iframeContainer: js.UndefOr[String | HTMLElement] = js.native
+    var iframeContainer: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var post_action: js.UndefOr[String] = js.native
+    var post_action: js.UndefOr[String] = js.undefined
     
-    var post_argument: js.UndefOr[String] = js.native
+    var post_argument: js.UndefOr[String] = js.undefined
     
-    var sig_request: String = js.native
+    var sig_request: String
     
-    var submit_callback: js.UndefOr[js.Function1[/* duo_form */ HTMLFormElement, Unit]] = js.native
+    var submit_callback: js.UndefOr[js.Function1[/* duo_form */ HTMLFormElement, Unit]] = js.undefined
   }
   object InitOptions {
     
@@ -105,14 +102,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedSig extends StObject {
     
-    var appSig: String = js.native
+    var appSig: String
     
-    var duoSig: String = js.native
+    var duoSig: String
     
-    var sigRequest: String = js.native
+    var sigRequest: String
   }
   object ParsedSig {
     

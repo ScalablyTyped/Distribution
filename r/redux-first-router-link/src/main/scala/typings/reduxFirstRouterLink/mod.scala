@@ -7,7 +7,6 @@ import typings.reduxFirstRouter.mod.Location
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,22 +30,23 @@ object mod {
   
   type Link = Component[LinkProps, js.Object, js.Any]
   
-  @js.native
-  trait LinkProps extends HTMLAttributes[HTMLElement] {
+  trait LinkProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
-    var down: js.UndefOr[Boolean] = js.native
+    var down: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[Boolean] = js.native
+    var redirect: js.UndefOr[Boolean] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var shouldDispatch: js.UndefOr[Boolean] = js.native
+    var shouldDispatch: js.UndefOr[Boolean] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var to: To = js.native
+    var to: To
   }
   object LinkProps {
     
@@ -103,16 +103,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Match[P] extends StObject {
     
-    var isExact: Boolean = js.native
+    var isExact: Boolean
     
-    var params: P = js.native
+    var params: P
     
-    var path: String = js.native
+    var path: String
     
-    var url: String = js.native
+    var url: String
   }
   object Match {
     
@@ -123,7 +122,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match[_], P] (val x: Self with Match[P]) extends AnyVal {
+    implicit class MatchMutableBuilder[Self <: Match[?], P] (val x: Self & Match[P]) extends AnyVal {
       
       @scala.inline
       def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
@@ -139,20 +138,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait NavLinkProps extends LinkProps {
+  trait NavLinkProps
+    extends StObject
+       with LinkProps {
     
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
-    var activeStyle: js.UndefOr[CSSProperties] = js.native
+    var activeStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var ariaCurrent: js.UndefOr[String] = js.native
+    var ariaCurrent: js.UndefOr[String] = js.undefined
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var isActive: js.UndefOr[js.Function2[/* match */ Match[js.Object], /* location */ Location, Boolean]] = js.native
+    var isActive: js.UndefOr[js.Function2[/* match */ Match[js.Object], /* location */ Location, Boolean]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object NavLinkProps {
     

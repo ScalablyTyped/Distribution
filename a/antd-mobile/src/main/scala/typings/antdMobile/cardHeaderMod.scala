@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardHeaderMod {
@@ -32,16 +31,17 @@ object cardHeaderMod {
   trait CardHeader
     extends Component[CardHeaderProps, js.Any, js.Any]
   
-  @js.native
-  trait CardHeaderProps extends CardHeaderPropsType {
+  trait CardHeaderProps
+    extends StObject
+       with CardHeaderPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var thumbStyle: js.UndefOr[CSSProperties] = js.native
+    var thumbStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardHeaderProps {
     

@@ -4,34 +4,32 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellType[RecordType] extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var colEnd: js.UndefOr[Double] = js.native
+  var colEnd: js.UndefOr[Double] = js.undefined
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var colStart: js.UndefOr[Double] = js.native
+  var colStart: js.UndefOr[Double] = js.undefined
   
   var column: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /** Only used for table header */
-  var hasSubColumns: js.UndefOr[Boolean] = js.native
+  var hasSubColumns: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object CellType {
   
@@ -42,7 +40,7 @@ object CellType {
   }
   
   @scala.inline
-  implicit class CellTypeMutableBuilder[Self <: CellType[_], RecordType] (val x: Self with CellType[RecordType]) extends AnyVal {
+  implicit class CellTypeMutableBuilder[Self <: CellType[?], RecordType] (val x: Self & CellType[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

@@ -8,83 +8,83 @@ import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PropagatedWindowEventMapping[Topic, Type] extends BaseEventMap {
+trait PropagatedWindowEventMapping[Topic, Type]
+  extends StObject
+     with BaseEventMap {
   
-  var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type] = js.native
+  var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type]
   
-  var `window-blurred`: WindowEvent[Topic, Type] = js.native
+  var `window-blurred`: WindowEvent[Topic, Type]
   
-  var `window-bounds-changed`: WindowBoundsChange[Topic, Type] = js.native
+  var `window-bounds-changed`: WindowBoundsChange[Topic, Type]
   
-  var `window-bounds-changing`: WindowBoundsChange[Topic, Type] = js.native
+  var `window-bounds-changing`: WindowBoundsChange[Topic, Type]
   
-  var `window-closed`: WindowEvent[Topic, Type] = js.native
+  var `window-closed`: WindowEvent[Topic, Type]
   
-  var `window-closing`: WindowEvent[Topic, Type] = js.native
+  var `window-closing`: WindowEvent[Topic, Type]
   
-  var `window-crashed`: CrashedEvent with (WindowEvent[Topic, Type]) = js.native
+  var `window-crashed`: CrashedEvent & (WindowEvent[Topic, Type])
   
-  var `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, Type] = js.native
+  var `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, Type]
   
-  var `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, Type] = js.native
+  var `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, Type]
   
-  var `window-embedded`: WindowEvent[Topic, Type] = js.native
+  var `window-embedded`: WindowEvent[Topic, Type]
   
-  var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type] = js.native
+  var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type]
   
-  var `window-external-process-exited`: WindowExternalProcessExitedEvent[Topic, Type] = js.native
+  var `window-external-process-exited`: WindowExternalProcessExitedEvent[Topic, Type]
   
-  var `window-external-process-started`: WindowExternalProcessStartedEvent[Topic, Type] = js.native
+  var `window-external-process-started`: WindowExternalProcessStartedEvent[Topic, Type]
   
-  var `window-focused`: WindowEvent[Topic, Type] = js.native
+  var `window-focused`: WindowEvent[Topic, Type]
   
-  var `window-group-changed`: WindowGroupChanged[Topic, Type] = js.native
+  var `window-group-changed`: WindowGroupChanged[Topic, Type]
   
-  var `window-hidden`: WindowHiddenEvent[Topic, Type] = js.native
+  var `window-hidden`: WindowHiddenEvent[Topic, Type]
   
-  var `window-hotkey`: InputEvent with (WindowEvent[Topic, Type]) = js.native
+  var `window-hotkey`: InputEvent & (WindowEvent[Topic, Type])
   
-  var `window-initialized`: WindowEvent[Topic, Type] = js.native
+  var `window-initialized`: WindowEvent[Topic, Type]
   
-  var `window-layout-initialized`: WindowEvent[Topic, Type] = js.native
+  var `window-layout-initialized`: WindowEvent[Topic, Type]
   
-  var `window-layout-ready`: WindowEvent[Topic, Type] = js.native
+  var `window-layout-ready`: WindowEvent[Topic, Type]
   
-  var `window-maximized`: WindowEvent[Topic, Type] = js.native
+  var `window-maximized`: WindowEvent[Topic, Type]
   
-  var `window-minimized`: WindowEvent[Topic, Type] = js.native
+  var `window-minimized`: WindowEvent[Topic, Type]
   
-  var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type] = js.native
+  var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type]
   
-  var `window-options-changed`: WindowOptionsChangedEvent[Topic, Type] = js.native
+  var `window-options-changed`: WindowOptionsChangedEvent[Topic, Type]
   
-  var `window-performance-report`: WindowPerformanceReport[Topic, Type] = js.native
+  var `window-performance-report`: WindowPerformanceReport[Topic, Type]
   
-  var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, Type] = js.native
+  var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, Type]
   
-  var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[Topic, Type] = js.native
+  var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[Topic, Type]
   
-  var `window-reloaded`: WindowReloadedEvent[Topic, Type] = js.native
+  var `window-reloaded`: WindowReloadedEvent[Topic, Type]
   
-  var `window-resource-load-failed`: WindowResourceLoadFailedEvent[Topic, Type] = js.native
+  var `window-resource-load-failed`: WindowResourceLoadFailedEvent[Topic, Type]
   
-  var `window-resource-response-received`: WindowResourceResponseReceivedEvent[Topic, Type] = js.native
+  var `window-resource-response-received`: WindowResourceResponseReceivedEvent[Topic, Type]
   
-  var `window-restored`: WindowEvent[Topic, Type] = js.native
+  var `window-restored`: WindowEvent[Topic, Type]
   
-  var `window-shown`: WindowEvent[Topic, Type] = js.native
+  var `window-shown`: WindowEvent[Topic, Type]
   
-  var `window-user-movement-disabled`: WindowEvent[Topic, Type] = js.native
+  var `window-user-movement-disabled`: WindowEvent[Topic, Type]
   
-  var `window-user-movement-enabled`: WindowEvent[Topic, Type] = js.native
+  var `window-user-movement-enabled`: WindowEvent[Topic, Type]
   
-  var `window-will-move`: WillMoveOrResize[Topic, Type] = js.native
+  var `window-will-move`: WillMoveOrResize[Topic, Type]
   
-  var `window-will-resize`: WillMoveOrResize[Topic, Type] = js.native
+  var `window-will-resize`: WillMoveOrResize[Topic, Type]
 }
 object PropagatedWindowEventMapping {
   
@@ -98,7 +98,7 @@ object PropagatedWindowEventMapping {
     `window-bounds-changing`: WindowBoundsChange[Topic, Type],
     `window-closed`: WindowEvent[Topic, Type],
     `window-closing`: WindowEvent[Topic, Type],
-    `window-crashed`: CrashedEvent with (WindowEvent[Topic, Type]),
+    `window-crashed`: CrashedEvent & (WindowEvent[Topic, Type]),
     `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, Type],
     `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, Type],
     `window-embedded`: WindowEvent[Topic, Type],
@@ -108,7 +108,7 @@ object PropagatedWindowEventMapping {
     `window-focused`: WindowEvent[Topic, Type],
     `window-group-changed`: WindowGroupChanged[Topic, Type],
     `window-hidden`: WindowHiddenEvent[Topic, Type],
-    `window-hotkey`: InputEvent with (WindowEvent[Topic, Type]),
+    `window-hotkey`: InputEvent & (WindowEvent[Topic, Type]),
     `window-initialized`: WindowEvent[Topic, Type],
     `window-layout-initialized`: WindowEvent[Topic, Type],
     `window-layout-ready`: WindowEvent[Topic, Type],
@@ -170,7 +170,7 @@ object PropagatedWindowEventMapping {
   }
   
   @scala.inline
-  implicit class PropagatedWindowEventMappingMutableBuilder[Self <: PropagatedWindowEventMapping[_, _], Topic, Type] (val x: Self with (PropagatedWindowEventMapping[Topic, Type])) extends AnyVal {
+  implicit class PropagatedWindowEventMappingMutableBuilder[Self <: PropagatedWindowEventMapping[?, ?], Topic, Type] (val x: Self & (PropagatedWindowEventMapping[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def `setWindow-begin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[Topic, Type]): Self = StObject.set(x, "window-begin-user-bounds-changing", value.asInstanceOf[js.Any])
@@ -191,7 +191,7 @@ object PropagatedWindowEventMapping {
     def `setWindow-closing`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "window-closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setWindow-crashed`(value: CrashedEvent with (WindowEvent[Topic, Type])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
+    def `setWindow-crashed`(value: CrashedEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setWindow-disabled-movement-bounds-changed`(value: WindowBoundsChange[Topic, Type]): Self = StObject.set(x, "window-disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
@@ -221,7 +221,7 @@ object PropagatedWindowEventMapping {
     def `setWindow-hidden`(value: WindowHiddenEvent[Topic, Type]): Self = StObject.set(x, "window-hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setWindow-hotkey`(value: InputEvent with (WindowEvent[Topic, Type])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
+    def `setWindow-hotkey`(value: InputEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setWindow-initialized`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "window-initialized", value.asInstanceOf[js.Any])

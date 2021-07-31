@@ -3,17 +3,15 @@ package typings.creativebulmaBulmaTagsinput
 import typings.creativebulmaBulmaTagsinput.mod.BulmaTagsInputItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Item extends StObject {
     
-    var item: String | BulmaTagsInputItem = js.native
+    var item: String | BulmaTagsInputItem
     
-    var tag: String = js.native
+    var tag: String
   }
   object Item {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelRequest extends StObject {
   
   /**
     * The name of the channel to be updated.
     */
-  var channelName: ChannelName = js.native
+  var channelName: ChannelName
   
   /**
     * Where channel data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the channel is created.
     */
-  var channelStorage: js.UndefOr[ChannelStorage] = js.native
+  var channelStorage: js.UndefOr[ChannelStorage] = js.undefined
   
   /**
     * How long, in days, message data is kept for the channel. The retention period cannot be updated if the channel's S3 storage is customer-managed.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
 }
 object UpdateChannelRequest {
   

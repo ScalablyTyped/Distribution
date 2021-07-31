@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCostCategoryDefinitionResponse extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
     */
-  var CostCategoryArn: js.UndefOr[Arn] = js.native
+  var CostCategoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The Cost Category's effective start date. 
     */
-  var EffectiveStart: js.UndefOr[ZonedDateTime] = js.native
+  var EffectiveStart: js.UndefOr[ZonedDateTime] = js.undefined
 }
 object UpdateCostCategoryDefinitionResponse {
   

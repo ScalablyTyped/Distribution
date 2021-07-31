@@ -2,30 +2,28 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * OleDbProvider...
   */
-@js.native
 trait IOleDbProvider extends StObject {
   
   /**
     * This parameter is optional. Default is false.
     * Is set to true if the version of the OLEDB provider is 32-bit.
     */
-  var qBit32: js.UndefOr[Boolean] = js.native
+  var qBit32: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Description of the OLEDB provider.
     */
-  var qDescription: String = js.native
+  var qDescription: String
   
   /**
     * Name of the OLEDB provider.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object IOleDbProvider {
   

@@ -7,7 +7,6 @@ import typings.forgeApis.anon.XAdsForce
 import typings.forgeApis.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "DerivativesApi")

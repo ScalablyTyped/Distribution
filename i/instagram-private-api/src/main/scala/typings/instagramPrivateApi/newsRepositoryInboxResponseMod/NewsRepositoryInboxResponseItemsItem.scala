@@ -2,37 +2,35 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseItemsItem extends StObject {
   
-  var algorithm: String = js.native
+  var algorithm: String
   
-  var caption: String = js.native
+  var caption: String
   
-  var followed_by: Boolean = js.native
+  var followed_by: Boolean
   
-  var icon: String = js.native
+  var icon: String
   
-  var is_new_suggestion: Boolean = js.native
+  var is_new_suggestion: Boolean
   
-  var large_urls: js.Array[_] = js.native
+  var large_urls: js.Array[js.Any]
   
-  var media_ids: js.Array[_] = js.native
+  var media_ids: js.Array[js.Any]
   
-  var media_infos: js.Array[_] = js.native
+  var media_infos: js.Array[js.Any]
   
-  var social_context: String = js.native
+  var social_context: String
   
-  var thumbnail_urls: js.Array[_] = js.native
+  var thumbnail_urls: js.Array[js.Any]
   
-  var user: NewsRepositoryInboxResponseUser = js.native
+  var user: NewsRepositoryInboxResponseUser
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object NewsRepositoryInboxResponseItemsItem {
   
@@ -43,11 +41,11 @@ object NewsRepositoryInboxResponseItemsItem {
     followed_by: Boolean,
     icon: String,
     is_new_suggestion: Boolean,
-    large_urls: js.Array[_],
-    media_ids: js.Array[_],
-    media_infos: js.Array[_],
+    large_urls: js.Array[js.Any],
+    media_ids: js.Array[js.Any],
+    media_infos: js.Array[js.Any],
     social_context: String,
-    thumbnail_urls: js.Array[_],
+    thumbnail_urls: js.Array[js.Any],
     user: NewsRepositoryInboxResponseUser,
     uuid: String,
     value: Double
@@ -75,19 +73,19 @@ object NewsRepositoryInboxResponseItemsItem {
     def setIs_new_suggestion(value: Boolean): Self = StObject.set(x, "is_new_suggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge_urls(value: js.Array[_]): Self = StObject.set(x, "large_urls", value.asInstanceOf[js.Any])
+    def setLarge_urls(value: js.Array[js.Any]): Self = StObject.set(x, "large_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLarge_urlsVarargs(value: js.Any*): Self = StObject.set(x, "large_urls", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_ids(value: js.Array[_]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
+    def setMedia_ids(value: js.Array[js.Any]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMedia_idsVarargs(value: js.Any*): Self = StObject.set(x, "media_ids", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_infos(value: js.Array[_]): Self = StObject.set(x, "media_infos", value.asInstanceOf[js.Any])
+    def setMedia_infos(value: js.Array[js.Any]): Self = StObject.set(x, "media_infos", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMedia_infosVarargs(value: js.Any*): Self = StObject.set(x, "media_infos", js.Array(value :_*))
@@ -96,7 +94,7 @@ object NewsRepositoryInboxResponseItemsItem {
     def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail_urls(value: js.Array[_]): Self = StObject.set(x, "thumbnail_urls", value.asInstanceOf[js.Any])
+    def setThumbnail_urls(value: js.Array[js.Any]): Self = StObject.set(x, "thumbnail_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setThumbnail_urlsVarargs(value: js.Any*): Self = StObject.set(x, "thumbnail_urls", js.Array(value :_*))

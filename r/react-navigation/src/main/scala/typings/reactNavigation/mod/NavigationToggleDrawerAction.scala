@@ -3,22 +3,22 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashTOGGLE_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationToggleDrawerAction extends NavigationDrawerAction {
+trait NavigationToggleDrawerAction
+  extends StObject
+     with NavigationDrawerAction {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var `type`: NavigationSlashTOGGLE_DRAWER = js.native
+  var `type`: NavigationSlashTOGGLE_DRAWER
 }
 object NavigationToggleDrawerAction {
   
   @scala.inline
-  def apply(`type`: NavigationSlashTOGGLE_DRAWER): NavigationToggleDrawerAction = {
+  def apply(): NavigationToggleDrawerAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/TOGGLE_DRAWER")
     __obj.asInstanceOf[NavigationToggleDrawerAction]
   }
   

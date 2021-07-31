@@ -2,17 +2,15 @@ package typings.cadesplugin.CAPICOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OID extends StObject {
   
-  var FriendlyName: String = js.native
+  var FriendlyName: String
   
-  var Name: CAPICOM_OID = js.native
+  var Name: CAPICOM_OID
   
-  var Value: String = js.native
+  var Value: String
 }
 object OID {
   

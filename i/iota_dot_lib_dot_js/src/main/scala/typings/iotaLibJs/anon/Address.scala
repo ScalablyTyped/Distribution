@@ -2,17 +2,15 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[String]] = js.native
+  var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var security: js.UndefOr[typings.iotaLibJs.mod.Security] = js.native
+  var security: js.UndefOr[typings.iotaLibJs.mod.Security] = js.undefined
 }
 object Address {
   

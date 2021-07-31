@@ -2,13 +2,13 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASPxClientChartDesignerSaveCommandExecuteEventArgs extends ASPxClientEventArgs {
+trait ASPxClientChartDesignerSaveCommandExecuteEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object ASPxClientChartDesignerSaveCommandExecuteEventArgs {
   

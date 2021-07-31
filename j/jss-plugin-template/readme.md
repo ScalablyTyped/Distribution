@@ -10,9 +10,9 @@ JSS plugin enables string templates
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-template |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, template |
-| # releases         | 39 |
+| # releases         | 30 |
 | # dependents       | 2 |
-| # downloads        | 2570762 |
+| # downloads        | 3031931 |
 | # stars            | 0 |
 
 ## Links

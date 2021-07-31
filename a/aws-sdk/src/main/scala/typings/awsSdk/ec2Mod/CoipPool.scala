@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoipPool extends StObject {
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.undefined
   
   /**
     * The ARN of the address pool.
     */
-  var PoolArn: js.UndefOr[ResourceArn] = js.native
+  var PoolArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The address ranges of the address pool.
     */
-  var PoolCidrs: js.UndefOr[ValueStringList] = js.native
+  var PoolCidrs: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ID of the address pool.
     */
-  var PoolId: js.UndefOr[CoipPoolId] = js.native
+  var PoolId: js.UndefOr[CoipPoolId] = js.undefined
   
   /**
     * The tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CoipPool {
   

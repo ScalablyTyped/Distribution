@@ -2,27 +2,25 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVolumes extends StObject {
   
   /**
     * A list of volumes.
     */
-  var items: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var items: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of volumes found. This might be greater than the number of
     * volumes returned in this response if results have been paginated.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaVolumes {
   

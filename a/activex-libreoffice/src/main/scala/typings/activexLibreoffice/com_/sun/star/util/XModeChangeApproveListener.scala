@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XModeChangeBroadcaster
   * @since OOo 1.1.2
   */
-@js.native
-trait XModeChangeApproveListener extends XEventListener {
+trait XModeChangeApproveListener
+  extends StObject
+     with XEventListener {
   
   /**
     * indicates that the mode of the broadcasting component is about to change.
@@ -22,7 +22,7 @@ trait XModeChangeApproveListener extends XEventListener {
     * The {@link ModeChangeEvent.NewMode} indicates the new mode which is to be set on the component
     * @throws VetoException when the mode change is vetoed
     */
-  def approveModeChange(rSource: ModeChangeEvent): Unit = js.native
+  def approveModeChange(rSource: ModeChangeEvent): Unit
 }
 object XModeChangeApproveListener {
   

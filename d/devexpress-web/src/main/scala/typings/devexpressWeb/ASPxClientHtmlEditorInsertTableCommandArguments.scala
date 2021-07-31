@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTTABLE_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertTableCommandArguments extends ASPxClientHtmlEditorTablePropertiesCommandArguments {
+trait ASPxClientHtmlEditorInsertTableCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorTablePropertiesCommandArguments {
   
   /**
     * Gets or sets the count of columns in the table.
     */
-  var columns: Double = js.native
+  var columns: Double
   
   /**
     * Gets or sets a value indicating whether all table columns should have equal width.
     */
-  var isEqualColumnWidth: Boolean = js.native
+  var isEqualColumnWidth: Boolean
   
   /**
     * Gets or sets the count of rows in the table.
     */
-  var rows: Double = js.native
+  var rows: Double
 }
 object ASPxClientHtmlEditorInsertTableCommandArguments {
   

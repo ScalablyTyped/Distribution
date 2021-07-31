@@ -2,16 +2,14 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectResult extends StObject {
   
   /**
     *  Detailed information about the updated AWS Mobile Hub project. 
     */
-  var details: js.UndefOr[ProjectDetails] = js.native
+  var details: js.UndefOr[ProjectDetails] = js.undefined
 }
 object UpdateProjectResult {
   

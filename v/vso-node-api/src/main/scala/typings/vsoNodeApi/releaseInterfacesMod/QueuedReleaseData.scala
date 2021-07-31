@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueuedReleaseData extends StObject {
   
-  var projectId: String = js.native
+  var projectId: String
   
-  var queuePosition: Double = js.native
+  var queuePosition: Double
   
-  var releaseId: Double = js.native
+  var releaseId: Double
 }
 object QueuedReleaseData {
   

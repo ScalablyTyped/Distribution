@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketInfo extends StObject {
   
   /**
     * A list of the calculated facet values and counts.
     */
-  var buckets: js.UndefOr[BucketList] = js.native
+  var buckets: js.UndefOr[BucketList] = js.undefined
 }
 object BucketInfo {
   

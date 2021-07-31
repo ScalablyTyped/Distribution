@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceState extends StObject {
   
   /**
     * The state of the Google account on the device. "enabled" indicates that the Google account on the device can be used to access Google services (including Google Play), while
     * "disabled" means that it cannot. A new device is initially in the "disabled" state.
     */
-  var accountState: js.UndefOr[String] = js.native
+  var accountState: js.UndefOr[String] = js.undefined
 }
 object DeviceState {
   

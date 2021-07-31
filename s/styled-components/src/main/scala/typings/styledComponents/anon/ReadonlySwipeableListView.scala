@@ -4,22 +4,20 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.SwipeableListViewDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.SwipeableListViewProps> */
-@js.native
 trait ReadonlySwipeableListView extends StObject {
   
-  val bounceFirstRowOnMount: Boolean = js.native
+  val bounceFirstRowOnMount: Boolean
   
-  val dataSource: SwipeableListViewDataSource = js.native
+  val dataSource: SwipeableListViewDataSource
   
-  val maxSwipeDistance: Double = js.native
+  val maxSwipeDistance: Double
   
-  val renderQuickActions: js.Function3[/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String, ReactElement] = js.native
+  val renderQuickActions: js.Function3[/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String, ReactElement]
   
-  val renderRow: js.Function3[/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String, ReactElement] = js.native
+  val renderRow: js.Function3[/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String, ReactElement]
 }
 object ReadonlySwipeableListView {
   

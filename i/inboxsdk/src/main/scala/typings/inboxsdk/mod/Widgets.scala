@@ -13,23 +13,21 @@ import typings.inboxsdk.mod.Compose.ComposeView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Widgets {
   
-  @js.native
   trait DrawerOptions extends StObject {
     
-    var chrome: js.UndefOr[Boolean] = js.native
+    var chrome: js.UndefOr[Boolean] = js.undefined
     
-    var closeWithCompose: js.UndefOr[Boolean] = js.native
+    var closeWithCompose: js.UndefOr[Boolean] = js.undefined
     
-    var composeView: js.UndefOr[ComposeView] = js.native
+    var composeView: js.UndefOr[ComposeView] = js.undefined
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object DrawerOptions {
     
@@ -92,20 +90,19 @@ object Widgets {
     def on_slideAnimationDone(name: slideAnimationDone, cb: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait ModalButtonDescriptor extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: js.UndefOr[PRIMARY_ACTION | SECONDARY_ACTION] = js.native
+    var `type`: js.UndefOr[PRIMARY_ACTION | SECONDARY_ACTION] = js.undefined
   }
   object ModalButtonDescriptor {
     
@@ -147,20 +144,19 @@ object Widgets {
     }
   }
   
-  @js.native
   trait ModalOptions extends StObject {
     
-    var buttons: js.UndefOr[js.Array[ModalButtonDescriptor]] = js.native
+    var buttons: js.UndefOr[js.Array[ModalButtonDescriptor]] = js.undefined
     
-    var chrome: js.UndefOr[Boolean] = js.native
+    var chrome: js.UndefOr[Boolean] = js.undefined
     
-    var constrainTitleWidth: js.UndefOr[Boolean] = js.native
+    var constrainTitleWidth: js.UndefOr[Boolean] = js.undefined
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ModalOptions {
     
@@ -211,15 +207,14 @@ object Widgets {
     }
   }
   
-  @js.native
   trait ModalView extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
     @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
   }
   object ModalView {
     
@@ -243,16 +238,15 @@ object Widgets {
     }
   }
   
-  @js.native
   trait MoleButtonDescriptor extends StObject {
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: String = js.native
+    var iconUrl: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var title: String = js.native
+    var title: String
   }
   object MoleButtonDescriptor {
     
@@ -282,22 +276,21 @@ object Widgets {
     }
   }
   
-  @js.native
   trait MoleOptions extends StObject {
     
-    var chrome: js.UndefOr[Boolean] = js.native
+    var chrome: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var minimizedTitleEl: js.UndefOr[HTMLElement] = js.native
+    var minimizedTitleEl: js.UndefOr[HTMLElement] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleButtons: js.UndefOr[js.Array[MoleButtonDescriptor]] = js.native
+    var titleButtons: js.UndefOr[js.Array[MoleButtonDescriptor]] = js.undefined
     
-    var titleEl: js.UndefOr[HTMLElement] = js.native
+    var titleEl: js.UndefOr[HTMLElement] = js.undefined
   }
   object MoleOptions {
     
@@ -375,14 +368,13 @@ object Widgets {
     def setTitle(text: String): Unit = js.native
   }
   
-  @js.native
   trait WidgetsInstance extends StObject {
     
-    def showDrawerView(options: DrawerOptions): DrawerView = js.native
+    def showDrawerView(options: DrawerOptions): DrawerView
     
-    def showModalView(options: ModalOptions): ModalView = js.native
+    def showModalView(options: ModalOptions): ModalView
     
-    def showMoleView(options: MoleOptions): MoleView = js.native
+    def showMoleView(options: MoleOptions): MoleView
   }
   object WidgetsInstance {
     

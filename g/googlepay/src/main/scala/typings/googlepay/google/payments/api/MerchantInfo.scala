@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed information about the merchant.
   */
-@js.native
 trait MerchantInfo extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait MerchantInfo extends StObject {
     * This field should only be set when you integrate on web on the
     * production environment.
     */
-  var merchantId: String = js.native
+  var merchantId: String
   
   /**
     * A user visible merchant name.
@@ -32,7 +30,7 @@ trait MerchantInfo extends StObject {
     * This field is optional. If not set, the Business name in your Google
     * Pay Developer Profile will be used.
     */
-  var merchantName: js.UndefOr[String] = js.native
+  var merchantName: js.UndefOr[String] = js.undefined
   
   /**
     * The info of the software used by merchants to integrate with GPay.
@@ -40,7 +38,7 @@ trait MerchantInfo extends StObject {
     * This field is optional and its values may be set by software
     * providers to identify the software the merchant is using.
     */
-  var softwareInfo: js.UndefOr[SoftwareInfo] = js.native
+  var softwareInfo: js.UndefOr[SoftwareInfo] = js.undefined
 }
 object MerchantInfo {
   

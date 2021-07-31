@@ -26,25 +26,23 @@ import typings.autolinker.urlMatcherMod.UrlMatcher
 import typings.autolinker.urlMatcherMod.UrlMatcherConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
-    var Email: Instantiable0[EmailMatcher] = js.native
+    var Email: Instantiable0[EmailMatcher]
     
-    var Hashtag: Instantiable1[/* cfg */ HashtagMatcherConfig, HashtagMatcher] = js.native
+    var Hashtag: Instantiable1[/* cfg */ HashtagMatcherConfig, HashtagMatcher]
     
-    var Matcher: Instantiable1[/* cfg */ MatcherConfig, typings.autolinker.matcherMatcherMod.Matcher] = js.native
+    var Matcher: Instantiable1[/* cfg */ MatcherConfig, typings.autolinker.matcherMatcherMod.Matcher]
     
-    var Mention: Instantiable1[/* cfg */ MentionMatcherConfig, MentionMatcher] = js.native
+    var Mention: Instantiable1[/* cfg */ MentionMatcherConfig, MentionMatcher]
     
-    var Phone: Instantiable0[PhoneMatcher] = js.native
+    var Phone: Instantiable0[PhoneMatcher]
     
-    var Url: Instantiable1[/* cfg */ UrlMatcherConfig, UrlMatcher] = js.native
+    var Url: Instantiable1[/* cfg */ UrlMatcherConfig, UrlMatcher]
   }
   object Email {
     
@@ -84,20 +82,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Hashtag extends StObject {
     
-    var Email: Instantiable1[/* cfg */ EmailMatchConfig, EmailMatch] = js.native
+    var Email: Instantiable1[/* cfg */ EmailMatchConfig, EmailMatch]
     
-    var Hashtag: Instantiable1[/* cfg */ HashtagMatchConfig, HashtagMatch] = js.native
+    var Hashtag: Instantiable1[/* cfg */ HashtagMatchConfig, HashtagMatch]
     
-    var Match: Instantiable1[/* cfg */ MatchConfig, typings.autolinker.matchMatchMod.Match] = js.native
+    var Match: Instantiable1[/* cfg */ MatchConfig, typings.autolinker.matchMatchMod.Match]
     
-    var Mention: Instantiable1[/* cfg */ MentionMatchConfig, MentionMatch] = js.native
+    var Mention: Instantiable1[/* cfg */ MentionMatchConfig, MentionMatch]
     
-    var Phone: Instantiable1[/* cfg */ PhoneMatchConfig, PhoneMatch] = js.native
+    var Phone: Instantiable1[/* cfg */ PhoneMatchConfig, PhoneMatch]
     
-    var Url: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch] = js.native
+    var Url: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch]
   }
   object Hashtag {
     
@@ -137,18 +134,17 @@ object anon {
     }
   }
   
-  @js.native
   trait OnCloseTag extends StObject {
     
-    def onCloseTag(tagName: String, offset: Double): Unit = js.native
+    def onCloseTag(tagName: String, offset: Double): Unit
     
-    def onComment(offset: Double): Unit = js.native
+    def onComment(offset: Double): Unit
     
-    def onDoctype(offset: Double): Unit = js.native
+    def onDoctype(offset: Double): Unit
     
-    def onOpenTag(tagName: String, offset: Double): Unit = js.native
+    def onOpenTag(tagName: String, offset: Double): Unit
     
-    def onText(text: String, offset: Double): Unit = js.native
+    def onText(text: String, offset: Double): Unit
   }
   object OnCloseTag {
     
@@ -185,12 +181,11 @@ object anon {
   }
   
   /* Inlined std.Required<autolinker.autolinker/dist/commonjs/autolinker.StripPrefixConfigObj> */
-  @js.native
   trait RequiredStripPrefixConfig extends StObject {
     
-    var scheme: Boolean = js.native
+    var scheme: Boolean
     
-    var www: Boolean = js.native
+    var www: Boolean
   }
   object RequiredStripPrefixConfig {
     

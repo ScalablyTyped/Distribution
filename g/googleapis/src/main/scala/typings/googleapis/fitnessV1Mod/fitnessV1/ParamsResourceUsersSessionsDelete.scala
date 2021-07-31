@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersSessionsDelete extends StandardParameters {
+trait ParamsResourceUsersSessionsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The client's current time in milliseconds since epoch.
     */
-  var currentTimeMillis: js.UndefOr[String] = js.native
+  var currentTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the session to be deleted.
     */
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
   
   /**
     * Delete a session for the person identified. Use me to indicate the
     * authenticated user. Only me is supported at this time.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersSessionsDelete {
   

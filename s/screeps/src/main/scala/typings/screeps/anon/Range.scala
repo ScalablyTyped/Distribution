@@ -3,15 +3,13 @@ package typings.screeps.anon
 import typings.screeps.RoomPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
-  var pos: RoomPosition = js.native
+  var pos: RoomPosition
   
-  var range: Double = js.native
+  var range: Double
 }
 object Range {
   

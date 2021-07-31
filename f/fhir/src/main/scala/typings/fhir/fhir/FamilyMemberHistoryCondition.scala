@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Condition that the related person had
   */
-@js.native
-trait FamilyMemberHistoryCondition extends BackboneElement {
+trait FamilyMemberHistoryCondition
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'onsetString'.
     */
-  var _onsetString: js.UndefOr[Element] = js.native
+  var _onsetString: js.UndefOr[Element] = js.undefined
   
   /**
     * Condition suffered by relation
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Extra information about condition
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * When condition first manifested
     */
-  var onsetAge: js.UndefOr[Age] = js.native
+  var onsetAge: js.UndefOr[Age] = js.undefined
   
   /**
     * When condition first manifested
     */
-  var onsetPeriod: js.UndefOr[Period] = js.native
+  var onsetPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * When condition first manifested
     */
-  var onsetRange: js.UndefOr[Range] = js.native
+  var onsetRange: js.UndefOr[Range] = js.undefined
   
   /**
     * When condition first manifested
     */
-  var onsetString: js.UndefOr[String] = js.native
+  var onsetString: js.UndefOr[String] = js.undefined
   
   /**
     * deceased | permanent disability | etc.
     */
-  var outcome: js.UndefOr[CodeableConcept] = js.native
+  var outcome: js.UndefOr[CodeableConcept] = js.undefined
 }
 object FamilyMemberHistoryCondition {
   

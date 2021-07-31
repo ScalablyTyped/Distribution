@@ -2,15 +2,13 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
 }
 object DialogOptions {
   

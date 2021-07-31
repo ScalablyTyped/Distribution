@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the Check method.
   */
-@js.native
 trait SchemaCheckResponse extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait SchemaCheckResponse extends StObject {
     * service should process the operation. Otherwise the service should use
     * the list of errors to determine the appropriate action.
     */
-  var checkErrors: js.UndefOr[js.Array[SchemaCheckError]] = js.native
+  var checkErrors: js.UndefOr[js.Array[SchemaCheckError]] = js.undefined
   
   /**
     * Feedback data returned from the server during processing a Check request.
     */
-  var checkInfo: js.UndefOr[SchemaCheckInfo] = js.native
+  var checkInfo: js.UndefOr[SchemaCheckInfo] = js.undefined
   
   /**
     * The same operation_id value used in the CheckRequest. Used for logging
     * and diagnostics purposes.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * Quota information for the check request associated with this response.
     */
-  var quotaInfo: js.UndefOr[SchemaQuotaInfo] = js.native
+  var quotaInfo: js.UndefOr[SchemaQuotaInfo] = js.undefined
   
   /**
     * The actual config id used to process the request.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object SchemaCheckResponse {
   

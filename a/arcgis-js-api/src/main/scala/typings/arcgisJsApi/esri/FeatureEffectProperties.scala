@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureEffectProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait FeatureEffectProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedEffect)
     */
-  var excludedEffect: js.UndefOr[String] = js.native
+  var excludedEffect: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if labels for features that are [excluded](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedEffect) from the effect are visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedLabelsVisible)
     */
-  var excludedLabelsVisible: js.UndefOr[Boolean] = js.native
+  var excludedLabelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The filter that drives the effect.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter)
     */
-  var filter: js.UndefOr[FeatureFilterProperties] = js.native
+  var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
     * The graphical [css filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) operation applied to the features that meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter) requirements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#includedEffect)
     */
-  var includedEffect: js.UndefOr[String] = js.native
+  var includedEffect: js.UndefOr[String] = js.undefined
 }
 object FeatureEffectProperties {
   

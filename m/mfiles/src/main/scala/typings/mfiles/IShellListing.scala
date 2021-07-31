@@ -3,77 +3,75 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFolderDefType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShellListing extends StObject {
   
-  def ActivateListing(): Unit = js.native
+  def ActivateListing(): Unit
   
-  def ActivateSelected(): Unit = js.native
+  def ActivateSelected(): Unit
   
-  var AutoFitAllColumns: Boolean = js.native
+  var AutoFitAllColumns: Boolean
   
-  var AutoFitFirstColumn: Boolean = js.native
+  var AutoFitFirstColumn: Boolean
   
-  var ColumnHeadersVisible: Boolean = js.native
+  var ColumnHeadersVisible: Boolean
   
-  val CurrentPath: String = js.native
+  val CurrentPath: String
   
-  val CurrentSelection: IShellItems = js.native
+  val CurrentSelection: IShellItems
   
-  val Events: IShellListingEvents = js.native
+  val Events: IShellListingEvents
   
-  var GroupObjectsByObjectType: Boolean = js.native
+  var GroupObjectsByObjectType: Boolean
   
-  var GroupViewsAndFolders: Boolean = js.native
+  var GroupViewsAndFolders: Boolean
   
-  val IsActive: Boolean = js.native
+  val IsActive: Boolean
   
-  val Items: IShellItems = js.native
+  val Items: IShellItems
   
-  def RefreshListing(smartUpdate: Boolean, refreshFromServer: Boolean, forceFullRefreshFromServer: Boolean): Unit = js.native
+  def RefreshListing(smartUpdate: Boolean, refreshFromServer: Boolean, forceFullRefreshFromServer: Boolean): Unit
   
-  def RefreshListingAsync(): Unit = js.native
+  def RefreshListingAsync(): Unit
   
-  def RefreshObject(objID: IObjID, refreshFromServer: Boolean, updateRelatedObjects: Boolean): Unit = js.native
+  def RefreshObject(objID: IObjID, refreshFromServer: Boolean, updateRelatedObjects: Boolean): Unit
   
-  def RefreshSelectedObjects(refreshFromServer: Boolean, updateRelatedObjects: Boolean): Unit = js.native
+  def RefreshSelectedObjects(refreshFromServer: Boolean, updateRelatedObjects: Boolean): Unit
   
-  def SelectFolder(folderDef: IFolderDef): Unit = js.native
+  def SelectFolder(folderDef: IFolderDef): Unit
   
-  def SelectNextFolder(folderDefType: MFFolderDefType): Boolean = js.native
+  def SelectNextFolder(folderDefType: MFFolderDefType): Boolean
   
-  def SelectNextObject(): Boolean = js.native
+  def SelectNextObject(): Boolean
   
-  def SelectNextObjectFile(allowMoveToNextObject: Boolean): Boolean = js.native
+  def SelectNextObjectFile(allowMoveToNextObject: Boolean): Boolean
   
-  def SelectObjectFile(objVer: IObjVer, fileVer: IFileVer): Unit = js.native
+  def SelectObjectFile(objVer: IObjVer, fileVer: IFileVer): Unit
   
-  def SelectObjectOrObjectFileVersion(objOrFileVer: IObjOrFileVer): Unit = js.native
+  def SelectObjectOrObjectFileVersion(objOrFileVer: IObjOrFileVer): Unit
   
-  def SelectObjectVersion(objVer: IObjVer): Unit = js.native
+  def SelectObjectVersion(objVer: IObjVer): Unit
   
-  def SelectPrevFolder(folderDefType: MFFolderDefType): Boolean = js.native
+  def SelectPrevFolder(folderDefType: MFFolderDefType): Boolean
   
-  def SelectPrevObject(): Boolean = js.native
+  def SelectPrevObject(): Boolean
   
-  def SelectPrevObjectFile(allowMoveToPrevObject: Boolean): Boolean = js.native
+  def SelectPrevObjectFile(allowMoveToPrevObject: Boolean): Boolean
   
-  def SetFolderSelectionStates(folderDefs: IFolderDefs, select: Boolean): Unit = js.native
+  def SetFolderSelectionStates(folderDefs: IFolderDefs, select: Boolean): Unit
   
-  def SetObjectOrObjectFileVersionSelectionStates(objOrFileVers: IObjOrFileVers, select: Boolean): Unit = js.native
+  def SetObjectOrObjectFileVersionSelectionStates(objOrFileVers: IObjOrFileVers, select: Boolean): Unit
   
-  def SetObjectVersionSelectionStates(objVers: IObjVers, select: Boolean): Unit = js.native
+  def SetObjectVersionSelectionStates(objVers: IObjVers, select: Boolean): Unit
   
-  def SetTheme(theme: ITheme): Unit = js.native
+  def SetTheme(theme: ITheme): Unit
   
-  def SetVirtualSelection(objOrFileVers: IObjOrFileVers): Unit = js.native
+  def SetVirtualSelection(objOrFileVers: IObjOrFileVers): Unit
   
-  val SumOfResultCounts: Double = js.native
+  val SumOfResultCounts: Double
   
-  def UnselectAll(): Unit = js.native
+  def UnselectAll(): Unit
 }
 object IShellListing {
   

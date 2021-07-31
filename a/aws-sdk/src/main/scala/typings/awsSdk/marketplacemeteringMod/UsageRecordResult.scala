@@ -2,26 +2,24 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageRecordResult extends StObject {
   
   /**
     * The MeteringRecordId is a unique identifier for this metering event.
     */
-  var MeteringRecordId: js.UndefOr[String] = js.native
+  var MeteringRecordId: js.UndefOr[String] = js.undefined
   
   /**
     * The UsageRecordResult Status indicates the status of an individual UsageRecord processed by BatchMeterUsage.    Success- The UsageRecord was accepted and honored by BatchMeterUsage.    CustomerNotSubscribed- The CustomerIdentifier specified is not subscribed to your product. The UsageRecord was not honored. Future UsageRecords for this customer will fail until the customer subscribes to your product.    DuplicateRecord- Indicates that the UsageRecord was invalid and not honored. A previously metered UsageRecord had the same customer, dimension, and time, but a different quantity.  
     */
-  var Status: js.UndefOr[UsageRecordResultStatus] = js.native
+  var Status: js.UndefOr[UsageRecordResultStatus] = js.undefined
   
   /**
     * The UsageRecord that was part of the BatchMeterUsage request.
     */
-  var UsageRecord: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageRecord] = js.native
+  var UsageRecord: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageRecord] = js.undefined
 }
 object UsageRecordResult {
   

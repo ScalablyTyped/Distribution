@@ -10,9 +10,9 @@ React version of Fullscreen Lightbox. Modern and easy plugin for displaying imag
 | ------------------ | :-------------: |
 | Full name          | fslightbox-react |
 | Keywords           | react lightbox, react image lightbox, slide gallery, fslightbox, lightbox, carousel |
-| # releases         | 40 |
+| # releases         | 44 |
 | # dependents       | 1 |
-| # downloads        | 146635 |
+| # downloads        | 154651 |
 | # stars            | 0 |
 
 ## Links

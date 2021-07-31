@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object base {
@@ -10,7 +9,8 @@ object base {
   @JSGlobal("sap.ui.base.Event")
   @js.native
   class Event protected ()
-    extends typings.openui5.sap.ui.base.Event {
+    extends StObject
+       with typings.openui5.sap.ui.base.Event {
     /**
       * Creates an event with the given <code>sId</code>, linked to the provided <code>oSource</code> and
       * enriched with the <code>mParameters</code>.
@@ -27,12 +27,14 @@ object base {
     * Creates an instance of EventProvider.
     */
   abstract class EventProvider ()
-    extends typings.openui5.sap.ui.base.EventProvider
+    extends StObject
+       with typings.openui5.sap.ui.base.EventProvider
   
   @JSGlobal("sap.ui.base.Interface")
   @js.native
   class Interface protected ()
-    extends typings.openui5.sap.ui.base.Interface {
+    extends StObject
+       with typings.openui5.sap.ui.base.Interface {
     /**
       * Constructs an instance of sap.ui.base.Interface which restricts access to methods marked as public.
       * @param oObject the instance that needs an interface created
@@ -44,7 +46,8 @@ object base {
   @JSGlobal("sap.ui.base.ManagedObject")
   @js.native
   class ManagedObject protected ()
-    extends typings.openui5.sap.ui.base.ManagedObject {
+    extends StObject
+       with typings.openui5.sap.ui.base.ManagedObject {
     /**
       * Constructs and initializes a managed object with the given <code>sId</code> and settings.If the
       * optional <code>mSettings</code> are given, they must be a simple objectthat defines values for
@@ -88,14 +91,15 @@ object base {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
-    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
+    def this(sId: String, mSettings: Unit, oScope: js.Any) = this()
   }
   
   @JSGlobal("sap.ui.base.Metadata")
   @js.native
   class Metadata protected ()
-    extends typings.openui5.sap.ui.base.Metadata {
+    extends StObject
+       with typings.openui5.sap.ui.base.Metadata {
     /**
       * Creates a new metadata object from the given static infos.Note: throughout this class documentation,
       * the described subclass of Objectis referenced as <i>the described class</i>.
@@ -103,6 +107,66 @@ object base {
       * @param oClassInfo info to construct the class and its metadata from
       */
     def this(sClassName: String, oClassInfo: js.Any) = this()
+    
+    /**
+      * Returns an array with the names of all public methods declared by the described classand its
+      * ancestors.
+      * @returns array with names of all public methods provided by the described class and its ancestors
+      */
+    /* CompleteClass */
+    override def getAllPublicMethods(): js.Array[String] = js.native
+    
+    /**
+      * Returns the fully qualified name of the described class
+      * @returns name of the described class
+      */
+    /* CompleteClass */
+    override def getName(): String = js.native
+    
+    /**
+      * Returns the metadata object of the base class of the described classor null if the class has no
+      * (documented) base class.
+      * @returns metadata of the base class
+      */
+    /* CompleteClass */
+    override def getParent(): typings.openui5.sap.ui.base.Metadata = js.native
+    
+    /**
+      * Returns an array with the names of the public methods declared by the described class.
+      * @returns array with names of public methods declared by the described class
+      */
+    /* CompleteClass */
+    override def getPublicMethods(): js.Array[String] = js.native
+    
+    /**
+      * Returns whether the described class is abstract
+      * @returns whether the class is abstract
+      */
+    /* CompleteClass */
+    override def isAbstract(): Boolean = js.native
+    
+    /**
+      * Whether the described class is deprecated and should not be used any more
+      * @since 1.26.4
+      * @returns whether the class is considered deprecated
+      */
+    /* CompleteClass */
+    override def isDeprecated(): Boolean = js.native
+    
+    /**
+      * Returns whether the described class is final
+      * @returns whether the class is final
+      */
+    /* CompleteClass */
+    override def isFinal(): Boolean = js.native
+    
+    /**
+      * Checks whether the described class or one of its ancestor classes implements the given interface.
+      * @param sInterface name of the interface to test for (in dot notation)
+      * @returns whether this class implements the interface
+      */
+    /* CompleteClass */
+    override def isInstanceOf(sInterface: String): Boolean = js.native
   }
   
   @JSGlobal("sap.ui.base.Object")
@@ -111,12 +175,14 @@ object base {
     * Constructor for a sap.ui.base.Object.
     */
   abstract class Object ()
-    extends typings.openui5.sap.ui.base.Object
+    extends StObject
+       with typings.openui5.sap.ui.base.Object
   
   @JSGlobal("sap.ui.base.ObjectPool")
   @js.native
   class ObjectPool protected ()
-    extends typings.openui5.sap.ui.base.ObjectPool {
+    extends StObject
+       with typings.openui5.sap.ui.base.ObjectPool {
     /**
       * Creates an ObjectPool instance based on the given oObjectClass.&lt;br/&gt;If there is a free pooled
       * instance, returns that one, otherwise creates a new one.&lt;br/&gt;In order to be maintained by the

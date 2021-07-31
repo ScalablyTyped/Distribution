@@ -2,16 +2,14 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUndeleteServiceAccountResponse extends StObject {
   
   /**
     * Metadata for the restored service account.
     */
-  var restoredAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var restoredAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
 }
 object SchemaUndeleteServiceAccountResponse {
   

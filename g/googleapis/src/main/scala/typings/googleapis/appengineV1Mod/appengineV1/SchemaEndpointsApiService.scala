@@ -2,7 +2,6 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ID of a &quot;service&quot; resource in the Service Management API
   * (https://cloud.google.com/service-management/overview).
   */
-@js.native
 trait SchemaEndpointsApiService extends StObject {
   
   /**
@@ -28,26 +26,26 @@ trait SchemaEndpointsApiService extends StObject {
     * latest configuration and does not need the configuration ID. In this
     * case, config_id must be omitted.
     */
-  var configId: js.UndefOr[String] = js.native
+  var configId: js.UndefOr[String] = js.undefined
   
   /**
     * Enable or disable trace sampling. By default, this is set to false for
     * enabled.
     */
-  var disableTraceSampling: js.UndefOr[Boolean] = js.native
+  var disableTraceSampling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Endpoints service name which is the name of the &quot;service&quot;
     * resource in the Service Management API. For example
     * &quot;myapi.endpoints.myproject.cloud.goog&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Endpoints rollout strategy. If FIXED, config_id must be specified. If
     * MANAGED, config_id must be omitted.
     */
-  var rolloutStrategy: js.UndefOr[String] = js.native
+  var rolloutStrategy: js.UndefOr[String] = js.undefined
 }
 object SchemaEndpointsApiService {
   

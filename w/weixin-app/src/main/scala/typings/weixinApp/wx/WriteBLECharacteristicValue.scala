@@ -3,41 +3,40 @@ package typings.weixinApp.wx
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteBLECharacteristicValue
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 蓝牙特征值的 uuid
     */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   @JSName("complete")
-  var complete_WriteBLECharacteristicValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete_WriteBLECharacteristicValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   @JSName("fail")
-  var fail_WriteBLECharacteristicValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail_WriteBLECharacteristicValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 蓝牙特征值对应服务的 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   @JSName("success")
-  def success_MWriteBLECharacteristicValue(res: ErrMsgResponse): Unit = js.native
+  def success_MWriteBLECharacteristicValue(res: ErrMsgResponse): Unit
   
   /**
     * 蓝牙设备特征值对应的二进制值
     */
-  var value: ArrayBuffer = js.native
+  var value: ArrayBuffer
 }
 object WriteBLECharacteristicValue {
   

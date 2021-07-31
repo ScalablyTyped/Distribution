@@ -5,23 +5,26 @@ import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
 import typings.officeUiFabricReact.ithemeslotruleMod.IThemeSlotRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libThemeGeneratorMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ThemeGenerator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "BaseSlots")
   @js.native
   object BaseSlots extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots & Double] = js.native
     
-    /* 1 */ val backgroundColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.backgroundColor with Double = js.native
+    /* 1 */ val backgroundColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.backgroundColor & Double = js.native
     
-    /* 2 */ val foregroundColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.foregroundColor with Double = js.native
+    /* 2 */ val foregroundColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.foregroundColor & Double = js.native
     
-    /* 0 */ val primaryColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.primaryColor with Double = js.native
+    /* 0 */ val primaryColor: typings.officeUiFabricReact.themeRulesStandardMod.BaseSlots.primaryColor & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "FabricSlots")
@@ -29,51 +32,51 @@ object libThemeGeneratorMod {
   object FabricSlots extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots & Double] = js.native
     
-    /* 20 */ val black: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.black with Double = js.native
+    /* 20 */ val black: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.black & Double = js.native
     
-    /* 19 */ val neutralDark: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralDark with Double = js.native
+    /* 19 */ val neutralDark: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralDark & Double = js.native
     
-    /* 11 */ val neutralLight: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLight with Double = js.native
+    /* 11 */ val neutralLight: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLight & Double = js.native
     
-    /* 10 */ val neutralLighter: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLighter with Double = js.native
+    /* 10 */ val neutralLighter: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLighter & Double = js.native
     
-    /* 9 */ val neutralLighterAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLighterAlt with Double = js.native
+    /* 9 */ val neutralLighterAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralLighterAlt & Double = js.native
     
-    /* 18 */ val neutralPrimary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralPrimary with Double = js.native
+    /* 18 */ val neutralPrimary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralPrimary & Double = js.native
     
-    /* 17 */ val neutralPrimaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralPrimaryAlt with Double = js.native
+    /* 17 */ val neutralPrimaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralPrimaryAlt & Double = js.native
     
-    /* 13 */ val neutralQuaternary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralQuaternary with Double = js.native
+    /* 13 */ val neutralQuaternary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralQuaternary & Double = js.native
     
-    /* 12 */ val neutralQuaternaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralQuaternaryAlt with Double = js.native
+    /* 12 */ val neutralQuaternaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralQuaternaryAlt & Double = js.native
     
-    /* 16 */ val neutralSecondary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralSecondary with Double = js.native
+    /* 16 */ val neutralSecondary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralSecondary & Double = js.native
     
-    /* 15 */ val neutralTertiary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralTertiary with Double = js.native
+    /* 15 */ val neutralTertiary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralTertiary & Double = js.native
     
-    /* 14 */ val neutralTertiaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralTertiaryAlt with Double = js.native
+    /* 14 */ val neutralTertiaryAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.neutralTertiaryAlt & Double = js.native
     
-    /* 7 */ val themeDark: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDark with Double = js.native
+    /* 7 */ val themeDark: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDark & Double = js.native
     
-    /* 6 */ val themeDarkAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDarkAlt with Double = js.native
+    /* 6 */ val themeDarkAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDarkAlt & Double = js.native
     
-    /* 8 */ val themeDarker: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDarker with Double = js.native
+    /* 8 */ val themeDarker: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeDarker & Double = js.native
     
-    /* 3 */ val themeLight: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLight with Double = js.native
+    /* 3 */ val themeLight: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLight & Double = js.native
     
-    /* 2 */ val themeLighter: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLighter with Double = js.native
+    /* 2 */ val themeLighter: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLighter & Double = js.native
     
-    /* 1 */ val themeLighterAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLighterAlt with Double = js.native
+    /* 1 */ val themeLighterAlt: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeLighterAlt & Double = js.native
     
-    /* 0 */ val themePrimary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themePrimary with Double = js.native
+    /* 0 */ val themePrimary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themePrimary & Double = js.native
     
-    /* 5 */ val themeSecondary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeSecondary with Double = js.native
+    /* 5 */ val themeSecondary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeSecondary & Double = js.native
     
-    /* 4 */ val themeTertiary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeTertiary with Double = js.native
+    /* 4 */ val themeTertiary: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.themeTertiary & Double = js.native
     
-    /* 21 */ val white: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.white with Double = js.native
+    /* 21 */ val white: typings.officeUiFabricReact.themeRulesStandardMod.FabricSlots.white & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "SemanticColorSlots")
@@ -81,15 +84,15 @@ object libThemeGeneratorMod {
   object SemanticColorSlots extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots & Double] = js.native
     
-    /* 0 */ val bodyBackground: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyBackground with Double = js.native
+    /* 0 */ val bodyBackground: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyBackground & Double = js.native
     
-    /* 1 */ val bodyText: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyText with Double = js.native
+    /* 1 */ val bodyText: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyText & Double = js.native
     
-    /* 2 */ val disabledBackground: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledBackground with Double = js.native
+    /* 2 */ val disabledBackground: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledBackground & Double = js.native
     
-    /* 3 */ val disabledText: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledText with Double = js.native
+    /* 3 */ val disabledText: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledText & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator")
@@ -141,18 +144,16 @@ object libThemeGeneratorMod {
       * Only used for the old theme designer, where loadTheme usage is acceptable,
       * unlike in the new theme designer.
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.getThemeAsCode")
-    @js.native
-    def getThemeAsCode(slotRules: IThemeRules): js.Any = js.native
+    @scala.inline
+    def getThemeAsCode(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets code-formatted load theme blob, specifically for the new theme designer,
       * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
       * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.getThemeAsCodeWithCreateTheme")
-    @js.native
-    def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = js.native
+    @scala.inline
+    def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
@@ -163,9 +164,8 @@ object libThemeGeneratorMod {
       *   ... }
       * ```
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.getThemeAsJson")
-    @js.native
-    def getThemeAsJson(slotRules: IThemeRules): js.Any = js.native
+    @scala.inline
+    def getThemeAsJson(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets the theme as a list of SASS variables that can be used in code
@@ -175,9 +175,8 @@ object libThemeGeneratorMod {
       * ...
       * ```
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.getThemeAsSass")
-    @js.native
-    def getThemeAsSass(slotRules: IThemeRules): js.Any = js.native
+    @scala.inline
+    def getThemeAsSass(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets the theme formatted for PowerShell scripts
@@ -189,9 +188,8 @@ object libThemeGeneratorMod {
       * }
       * ```
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.getThemeForPowerShell")
-    @js.native
-    def getThemeForPowerShell(slotRules: IThemeRules): js.Any = js.native
+    @scala.inline
+    def getThemeForPowerShell(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Sets the color of each slot based on its rule. Slots that don't inherit must have a color already.
@@ -199,9 +197,8 @@ object libThemeGeneratorMod {
       * setSlot() can be called before this, but this must be called before getThemeAs*().
       * Does not override colors of rules where isCustomized is true (i.e. doesn't override existing customizations).
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.insureSlots")
-    @js.native
-    def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = js.native
+    @scala.inline
+    def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insureSlots")(slotRules.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets an IThemeSlotRule to the given color and cascades it to the rest of the theme, updating other IThemeSlotRules
@@ -213,115 +210,88 @@ object libThemeGeneratorMod {
       * is false), or a custom color based on user input (isCustomized is true). This bool tells us whether to override
       * existing customized colors.
       */
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: String): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(
-      rule: IThemeSlotRule,
-      color: String,
-      isInverted: js.UndefOr[scala.Nothing],
-      isCustomization: js.UndefOr[scala.Nothing],
-      overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(
-      rule: IThemeSlotRule,
-      color: String,
-      isInverted: js.UndefOr[scala.Nothing],
-      isCustomization: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(
-      rule: IThemeSlotRule,
-      color: String,
-      isInverted: js.UndefOr[scala.Nothing],
-      isCustomization: Boolean,
-      overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(
-      rule: IThemeSlotRule,
-      color: String,
-      isInverted: Boolean,
-      isCustomization: js.UndefOr[scala.Nothing],
-      overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setSlot(
       rule: IThemeSlotRule,
       color: String,
       isInverted: Boolean,
       isCustomization: Boolean,
       overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: IColor): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setSlot(
       rule: IThemeSlotRule,
-      color: IColor,
-      isInverted: js.UndefOr[scala.Nothing],
-      isCustomization: js.UndefOr[scala.Nothing],
+      color: String,
+      isInverted: Boolean,
+      isCustomization: Unit,
       overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: String, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setSlot(
       rule: IThemeSlotRule,
-      color: IColor,
-      isInverted: js.UndefOr[scala.Nothing],
-      isCustomization: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(
-      rule: IThemeSlotRule,
-      color: IColor,
-      isInverted: js.UndefOr[scala.Nothing],
+      color: String,
+      isInverted: Unit,
       isCustomization: Boolean,
       overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setSlot(
       rule: IThemeSlotRule,
-      color: IColor,
-      isInverted: Boolean,
-      isCustomization: js.UndefOr[scala.Nothing],
+      color: String,
+      isInverted: Unit,
+      isCustomization: Unit,
       overwriteCustomColor: Boolean
-    ): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
-    def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
-    @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "ThemeGenerator.setSlot")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: IColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setSlot(
       rule: IThemeSlotRule,
       color: IColor,
       isInverted: Boolean,
       isCustomization: Boolean,
       overwriteCustomColor: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: Boolean,
+      isCustomization: Unit,
+      overwriteCustomColor: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: Unit,
+      isCustomization: Boolean,
+      overwriteCustomColor: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: Unit,
+      isCustomization: Unit,
+      overwriteCustomColor: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("office-ui-fabric-react/lib/ThemeGenerator", "themeRulesStandardCreator")
-  @js.native
-  def themeRulesStandardCreator(): IThemeRules = js.native
+  @scala.inline
+  def themeRulesStandardCreator(): IThemeRules = ^.asInstanceOf[js.Dynamic].applyDynamic("themeRulesStandardCreator")().asInstanceOf[IThemeRules]
 }

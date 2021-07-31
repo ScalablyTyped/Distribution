@@ -105,14 +105,14 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Methods prefixed with doc. can, unless otherwise specified, be called both on CodeMirror (editor) instances and
   CodeMirror.Doc instances. Thus, the Editor interface extends Doc. **/
 @js.native
 trait Editor
-  extends typings.codemirror.mod.Doc {
+  extends StObject
+     with Doc {
   
   /** Attach an additional keymap to the editor.
     This is mostly useful for add - ons that need to register some key handlers without trampling on the extraKeys option.
@@ -179,10 +179,10 @@ trait Editor
     If it is "page" or not given, they are relative to the top-left corner of the page.
     where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
   def cursorCoords(): Left = js.native
-  def cursorCoords(where: js.UndefOr[scala.Nothing], mode: CoordsMode): Left = js.native
   def cursorCoords(where: Boolean): Left = js.native
   def cursorCoords(where: Boolean, mode: CoordsMode): Left = js.native
   def cursorCoords(where: Null, mode: CoordsMode): Left = js.native
+  def cursorCoords(where: Unit, mode: CoordsMode): Left = js.native
   def cursorCoords(where: Position): Left = js.native
   def cursorCoords(where: Position, mode: CoordsMode): Left = js.native
   
@@ -216,7 +216,7 @@ trait Editor
   def focus(): Unit = js.native
   
   /** Retrieve the currently active document from an editor. */
-  def getDoc(): typings.codemirror.mod.Doc = js.native
+  def getDoc(): Doc = js.native
   
   /** Fetches the DOM node that contains the editor gutters. */
   def getGutterElement(): HTMLElement = js.native
@@ -395,7 +395,7 @@ trait Editor
     is the bottom of the last line in the document. By default, the position of the actual text is returned.
     If includeWidgets is true and the line has line widgets, the position above the first line widget is returned. */
   def heightAtLine(line: js.Any): Double = js.native
-  def heightAtLine(line: js.Any, mode: js.UndefOr[scala.Nothing], includeWidgets: Boolean): Double = js.native
+  def heightAtLine(line: js.Any, mode: Unit, includeWidgets: Boolean): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode, includeWidgets: Boolean): Double = js.native
   
@@ -427,11 +427,8 @@ trait Editor
   def lineInfo(line: js.Any): BgClass = js.native
   
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
-  def off(
-    eventName: String,
-    handler: js.Function2[/* doc */ typings.codemirror.mod.Doc, /* event */ js.Any, Unit]
-  ): Unit = js.native
-  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
+  def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
+  def off[K /* <: DOMEvent & (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -440,7 +437,7 @@ trait Editor
     ]
   ): Unit = js.native
   @JSName("off")
-  def off_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent with (copy | cut | paste) */](
+  def off_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent & (copy | cut | paste) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -528,10 +525,7 @@ trait Editor
     handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]
   ): Unit = js.native
   @JSName("off")
-  def off_swapDoc(
-    eventName: swapDoc,
-    handler: js.Function2[/* instance */ this.type, /* oldDoc */ typings.codemirror.mod.Doc, Unit]
-  ): Unit = js.native
+  def off_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
   @JSName("off")
   def off_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   @JSName("off")
@@ -545,12 +539,9 @@ trait Editor
     The instance argument always refers to the editor instance. */
   def on(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
-  def on(
-    eventName: String,
-    handler: js.Function2[/* doc */ typings.codemirror.mod.Doc, /* event */ js.Any, Unit]
-  ): Unit = js.native
+  def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   /** Fires when one of the global DOM events fires. */
-  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
+  def on[K /* <: DOMEvent & (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -560,7 +551,7 @@ trait Editor
   ): Unit = js.native
   /** Fires when one of the clipboard DOM events fires. */
   @JSName("on")
-  def on_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent with (copy | cut | paste) */](
+  def on_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent & (copy | cut | paste) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -686,10 +677,7 @@ trait Editor
   ): Unit = js.native
   /** This is signalled when the editor's document is replaced using the swapDoc method. */
   @JSName("on")
-  def on_swapDoc(
-    eventName: swapDoc,
-    handler: js.Function2[/* instance */ this.type, /* oldDoc */ typings.codemirror.mod.Doc, Unit]
-  ): Unit = js.native
+  def on_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
   /** Will be fired whenever CodeMirror updates its DOM display. */
   @JSName("on")
   def on_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
@@ -746,10 +734,10 @@ trait Editor
   
   /** Scroll the editor to a given(pixel) position.Both arguments may be left as null or undefined to have no effect. */
   def scrollTo(): Unit = js.native
-  def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Null, y: Double): Unit = js.native
+  def scrollTo(x: Unit, y: Double): Unit = js.native
   
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
@@ -1046,7 +1034,7 @@ trait Editor
   def startOperation(): Unit = js.native
   
   /** Attach a new document to the editor. Returns the old document, which is now no longer associated with an editor. */
-  def swapDoc(doc: typings.codemirror.mod.Doc): typings.codemirror.mod.Doc = js.native
+  def swapDoc(doc: Doc): Doc = js.native
   
   /** Tries to uncomment the current selection, and if that fails, line-comments it. */
   def toggleComment(): Unit = js.native

@@ -5,46 +5,44 @@ import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Folder extends StObject {
   
   /**
     * The process or person who created the folder.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * The date the folder was created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * The description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The process or person that last changed the folder.
     */
-  var lastChangedBy: IdentityRef = js.native
+  var lastChangedBy: IdentityRef
   
   /**
     * The date the folder was last changed.
     */
-  var lastChangedDate: Date = js.native
+  var lastChangedDate: Date
   
   /**
     * The full path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The project.
     */
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
 }
 object Folder {
   

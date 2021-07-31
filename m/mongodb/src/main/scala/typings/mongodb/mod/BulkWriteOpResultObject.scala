@@ -3,27 +3,25 @@ package typings.mongodb.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteOpResultObject extends StObject {
   
-  var deletedCount: js.UndefOr[scala.Double] = js.native
+  var deletedCount: js.UndefOr[scala.Double] = js.undefined
   
-  var insertedCount: js.UndefOr[scala.Double] = js.native
+  var insertedCount: js.UndefOr[scala.Double] = js.undefined
   
-  var insertedIds: js.UndefOr[NumberDictionary[js.Any]] = js.native
+  var insertedIds: js.UndefOr[NumberDictionary[js.Any]] = js.undefined
   
-  var matchedCount: js.UndefOr[scala.Double] = js.native
+  var matchedCount: js.UndefOr[scala.Double] = js.undefined
   
-  var modifiedCount: js.UndefOr[scala.Double] = js.native
+  var modifiedCount: js.UndefOr[scala.Double] = js.undefined
   
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
   
-  var upsertedCount: js.UndefOr[scala.Double] = js.native
+  var upsertedCount: js.UndefOr[scala.Double] = js.undefined
   
-  var upsertedIds: js.UndefOr[NumberDictionary[js.Any]] = js.native
+  var upsertedIds: js.UndefOr[NumberDictionary[js.Any]] = js.undefined
 }
 object BulkWriteOpResultObject {
   

@@ -3,41 +3,39 @@ package typings.pulumiAws.outputMod.glue
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerAction extends StObject {
   
   /**
     * Arguments to be passed to the job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes.
     */
-  var arguments: js.UndefOr[StringDictionary[String]] = js.native
+  var arguments: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The name of the crawler to be executed. Conflicts with `jobName`.
     */
-  var crawlerName: js.UndefOr[String] = js.native
+  var crawlerName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a job to be executed. Conflicts with `crawlerName`.
     */
-  var jobName: js.UndefOr[String] = js.native
+  var jobName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies configuration properties of a job run notification. see Notification Property details below.
     */
-  var notificationProperty: js.UndefOr[TriggerActionNotificationProperty] = js.native
+  var notificationProperty: js.UndefOr[TriggerActionNotificationProperty] = js.undefined
   
   /**
     * The name of the Security Configuration structure to be used with this action.
     */
-  var securityConfiguration: js.UndefOr[String] = js.native
+  var securityConfiguration: js.UndefOr[String] = js.undefined
   
   /**
     * The job run timeout in minutes. It overrides the timeout value of the job.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object TriggerAction {
   

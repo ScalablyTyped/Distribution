@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.events.UrlFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -17,11 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object webNavigation {
   
-  @js.native
   trait GetAllFrameDetails extends StObject {
     
     /** The ID of the tab. */
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object GetAllFrameDetails {
     
@@ -39,14 +37,15 @@ object webNavigation {
     }
   }
   
-  @js.native
-  trait GetAllFrameResultDetails extends GetFrameResultDetails {
+  trait GetAllFrameResultDetails
+    extends StObject
+       with GetFrameResultDetails {
     
     /** The ID of the frame. 0 indicates that this is the main frame; a positive value indicates the ID of a subframe. */
-    var frameId: Double = js.native
+    var frameId: Double
     
     /** The ID of the process runs the renderer for this tab. */
-    var processId: Double = js.native
+    var processId: Double
   }
   object GetAllFrameResultDetails {
     
@@ -67,21 +66,20 @@ object webNavigation {
     }
   }
   
-  @js.native
   trait GetFrameDetails extends StObject {
     
     /** The ID of the frame in the given tab. */
-    var frameId: Double = js.native
+    var frameId: Double
     
     /**
       * The ID of the process runs the renderer for this tab.
       * @since Chrome 22.
       * @deprecated since Chrome 49. Frames are now uniquely identified by their tab ID and frame ID; the process ID is no longer needed and therefore ignored.
       */
-    var processId: js.UndefOr[Double] = js.native
+    var processId: js.UndefOr[Double] = js.undefined
     
     /** The ID of the tab in which the frame is. */
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object GetFrameDetails {
     
@@ -108,17 +106,16 @@ object webNavigation {
     }
   }
   
-  @js.native
   trait GetFrameResultDetails extends StObject {
     
     /** True if the last navigation in this frame was interrupted by an error, i.e. the onErrorOccurred event fired. */
-    var errorOccurred: Boolean = js.native
+    var errorOccurred: Boolean
     
     /** ID of frame that wraps the frame. Set to -1 of no parent frame exists. */
-    var parentFrameId: Double = js.native
+    var parentFrameId: Double
     
     /** The URL currently associated with this frame, if the frame identified by the frameId existed at one point in the given tab. The fact that an URL is associated with a given frameId does not imply that the corresponding frame still exists. */
-    var url: String = js.native
+    var url: String
   }
   object GetFrameResultDetails {
     
@@ -142,14 +139,13 @@ object webNavigation {
     }
   }
   
-  @js.native
   trait WebNavigationCallbackDetails extends StObject {
     
     /** The ID of the tab in which the navigation is about to occur. */
-    var tabId: Double = js.native
+    var tabId: Double
     
     /** The time when the browser was about to start the navigation, in milliseconds since the epoch. */
-    var timeStamp: Double = js.native
+    var timeStamp: Double
   }
   object WebNavigationCallbackDetails {
     
@@ -172,16 +168,16 @@ object webNavigation {
   
   @js.native
   trait WebNavigationEvent[T /* <: WebNavigationCallbackDetails */]
-    extends Event[js.Function1[/* details */ T, Unit]] {
+    extends StObject
+       with Event[js.Function1[/* details */ T, Unit]] {
     
     def addListener(callback: js.Function1[/* details */ T, Unit], filters: WebNavigationEventFilter): Unit = js.native
   }
   
-  @js.native
   trait WebNavigationEventFilter extends StObject {
     
     /** Conditions that the URL being navigated to must satisfy. The 'schemes' and 'ports' fields of UrlFilter are ignored for this event. */
-    var url: js.Array[UrlFilter] = js.native
+    var url: js.Array[UrlFilter]
   }
   object WebNavigationEventFilter {
     
@@ -202,17 +198,18 @@ object webNavigation {
     }
   }
   
-  @js.native
-  trait WebNavigationFramedCallbackDetails extends WebNavigationUrlCallbackDetails {
+  trait WebNavigationFramedCallbackDetails
+    extends StObject
+       with WebNavigationUrlCallbackDetails {
     
     /** 0 indicates the navigation happens in the tab content window; a positive value indicates navigation in a subframe. Frame IDs are unique for a given tab and process. */
-    var frameId: Double = js.native
+    var frameId: Double
     
     /**
       * The ID of the process runs the renderer for this tab.
       * @since Chrome 22.
       */
-    var processId: Double = js.native
+    var processId: Double
   }
   object WebNavigationFramedCallbackDetails {
     
@@ -233,11 +230,12 @@ object webNavigation {
     }
   }
   
-  @js.native
-  trait WebNavigationFramedErrorCallbackDetails extends WebNavigationFramedCallbackDetails {
+  trait WebNavigationFramedErrorCallbackDetails
+    extends StObject
+       with WebNavigationFramedCallbackDetails {
     
     /** The error description. */
-    var error: String = js.native
+    var error: String
   }
   object WebNavigationFramedErrorCallbackDetails {
     
@@ -259,14 +257,15 @@ object webNavigation {
   
   type WebNavigationFramedEvent = WebNavigationEvent[WebNavigationFramedCallbackDetails]
   
-  @js.native
-  trait WebNavigationParentedCallbackDetails extends WebNavigationFramedCallbackDetails {
+  trait WebNavigationParentedCallbackDetails
+    extends StObject
+       with WebNavigationFramedCallbackDetails {
     
     /**
       * ID of frame that wraps the frame. Set to -1 of no parent frame exists.
       * @since Chrome 24.
       */
-    var parentFrameId: Double = js.native
+    var parentFrameId: Double
   }
   object WebNavigationParentedCallbackDetails {
     
@@ -293,11 +292,12 @@ object webNavigation {
   
   type WebNavigationParentedEvent = WebNavigationEvent[WebNavigationParentedCallbackDetails]
   
-  @js.native
-  trait WebNavigationReplacementCallbackDetails extends WebNavigationCallbackDetails {
+  trait WebNavigationReplacementCallbackDetails
+    extends StObject
+       with WebNavigationCallbackDetails {
     
     /** The ID of the tab that was replaced. */
-    var replacedTabId: Double = js.native
+    var replacedTabId: Double
   }
   object WebNavigationReplacementCallbackDetails {
     
@@ -317,20 +317,21 @@ object webNavigation {
   
   type WebNavigationReplacementEvent = WebNavigationEvent[WebNavigationReplacementCallbackDetails]
   
-  @js.native
-  trait WebNavigationSourceCallbackDetails extends WebNavigationUrlCallbackDetails {
+  trait WebNavigationSourceCallbackDetails
+    extends StObject
+       with WebNavigationUrlCallbackDetails {
     
     /** The ID of the frame with sourceTabId in which the navigation is triggered. 0 indicates the main frame. */
-    var sourceFrameId: Double = js.native
+    var sourceFrameId: Double
     
     /**
       * The ID of the process runs the renderer for the source tab.
       * @since Chrome 22.
       */
-    var sourceProcessId: Double = js.native
+    var sourceProcessId: Double
     
     /** The ID of the tab in which the navigation is triggered. */
-    var sourceTabId: Double = js.native
+    var sourceTabId: Double
   }
   object WebNavigationSourceCallbackDetails {
     
@@ -363,20 +364,21 @@ object webNavigation {
   
   type WebNavigationSourceEvent = WebNavigationEvent[WebNavigationSourceCallbackDetails]
   
-  @js.native
-  trait WebNavigationTransitionCallbackDetails extends WebNavigationFramedCallbackDetails {
+  trait WebNavigationTransitionCallbackDetails
+    extends StObject
+       with WebNavigationFramedCallbackDetails {
     
     /**
       * A list of transition qualifiers.
       * Each element one of: "client_redirect", "server_redirect", "forward_back", or "from_address_bar"
       */
-    var transitionQualifiers: js.Array[String] = js.native
+    var transitionQualifiers: js.Array[String]
     
     /**
       * Cause of the navigation.
       * One of: "link", "typed", "auto_bookmark", "auto_subframe", "manual_subframe", "generated", "start_page", "form_submit", "reload", "keyword", or "keyword_generated"
       */
-    var transitionType: String = js.native
+    var transitionType: String
   }
   object WebNavigationTransitionCallbackDetails {
     
@@ -410,10 +412,11 @@ object webNavigation {
   
   type WebNavigationTransitionalEvent = WebNavigationEvent[WebNavigationTransitionCallbackDetails]
   
-  @js.native
-  trait WebNavigationUrlCallbackDetails extends WebNavigationCallbackDetails {
+  trait WebNavigationUrlCallbackDetails
+    extends StObject
+       with WebNavigationCallbackDetails {
     
-    var url: String = js.native
+    var url: String
   }
   object WebNavigationUrlCallbackDetails {
     

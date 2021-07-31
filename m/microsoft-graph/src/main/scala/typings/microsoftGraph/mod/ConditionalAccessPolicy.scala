@@ -2,43 +2,43 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionalAccessPolicy extends Entity {
+trait ConditionalAccessPolicy
+  extends StObject
+     with Entity {
   
   // Specifies the rules that must be met for the policy to apply. Required.
-  var conditions: js.UndefOr[ConditionalAccessConditionSet] = js.native
+  var conditions: js.UndefOr[ConditionalAccessConditionSet] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Readonly.
     */
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies a display name for the conditionalAccessPolicy object.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Specifies the grant controls that must be fulfilled to pass the policy.
-  var grantControls: js.UndefOr[NullableOption[ConditionalAccessGrantControls]] = js.native
+  var grantControls: js.UndefOr[NullableOption[ConditionalAccessGrantControls]] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Readonly.
     */
-  var modifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var modifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the session controls that are enforced after sign-in.
-  var sessionControls: js.UndefOr[NullableOption[ConditionalAccessSessionControls]] = js.native
+  var sessionControls: js.UndefOr[NullableOption[ConditionalAccessSessionControls]] = js.undefined
   
   /**
     * Specifies the state of the conditionalAccessPolicy object. Possible values are: enabled, disabled,
     * enabledForReportingButNotEnforced. Required.
     */
-  var state: js.UndefOr[ConditionalAccessPolicyState] = js.native
+  var state: js.UndefOr[ConditionalAccessPolicyState] = js.undefined
 }
 object ConditionalAccessPolicy {
   

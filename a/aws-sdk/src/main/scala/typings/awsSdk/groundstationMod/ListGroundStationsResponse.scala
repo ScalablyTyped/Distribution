@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGroundStationsResponse extends StObject {
   
   /**
     * List of ground stations.
     */
-  var groundStationList: js.UndefOr[GroundStationList] = js.native
+  var groundStationList: js.UndefOr[GroundStationList] = js.undefined
   
   /**
     * Next token that can be supplied in the next call to get the next page of ground stations.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object ListGroundStationsResponse {
   

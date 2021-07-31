@@ -5,19 +5,17 @@ import typings.greasemonkey.GM.Response
 import typings.greasemonkey.GM.ScriptInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mimetype extends StObject {
     
-    var mimetype: String = js.native
+    var mimetype: String
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object Mimetype {
     
@@ -41,16 +39,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Onabort[TContext] extends StObject {
     
-    var onabort: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onabort: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
-    var onerror: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onerror: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
-    var onload: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onload: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
-    var onprogress: js.UndefOr[js.Function1[/* response */ ProgressResponse[TContext], Unit]] = js.native
+    var onprogress: js.UndefOr[js.Function1[/* response */ ProgressResponse[TContext], Unit]] = js.undefined
   }
   object Onabort {
     
@@ -61,7 +58,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class OnabortMutableBuilder[Self <: Onabort[_], TContext] (val x: Self with Onabort[TContext]) extends AnyVal {
+    implicit class OnabortMutableBuilder[Self <: Onabort[?], TContext] (val x: Self & Onabort[TContext]) extends AnyVal {
       
       @scala.inline
       def setOnabort(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
@@ -89,26 +86,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Script extends StObject {
     
     /** An object containing data about the currently running script */
-    var script: ScriptInfo = js.native
+    var script: ScriptInfo
     
     /**
       * The name of the user script engine handling this script's execution.
       * The string `Greasemonkey`
       */
-    var scriptHandler: String = js.native
+    var scriptHandler: String
     
     /**
       * A string, the entire literal Metadata Block (without the delimiters)
       * for the currently running script
       */
-    var scriptMetaStr: String = js.native
+    var scriptMetaStr: String
     
     /** The version of Greasemonkey, a string e.g. `4.0` */
-    var version: String = js.native
+    var version: String
   }
   object Script {
     

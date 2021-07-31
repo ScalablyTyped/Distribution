@@ -15,23 +15,21 @@ import typings.marked.mod.Token
 import typings.marked.mod.TokensList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: center | left | right | Null = js.native
+    var align: center | left | right | Null
     
-    var header: Boolean = js.native
+    var header: Boolean
   }
   object Align {
     
     @scala.inline
     def apply(header: Boolean): Align = {
-      val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], align = null)
       __obj.asInstanceOf[Align]
     }
     
@@ -49,18 +47,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Href extends StObject {
     
-    var href: String | Null = js.native
+    var href: String | Null
     
-    var title: String | Null = js.native
+    var title: String | Null
   }
   object Href {
     
     @scala.inline
     def apply(): Href = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(href = null, title = null)
       __obj.asInstanceOf[Href]
     }
     
@@ -149,11 +146,11 @@ object anon {
       callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
     ): Unit = js.native
     
-    var InlineLexer: (Instantiable2[/* links */ js.Array[String], /* options */ js.UndefOr[MarkedOptions], InlineLexer_]) with TypeofInlineLexer = js.native
+    var InlineLexer: (Instantiable2[/* links */ js.Array[String], /* options */ js.UndefOr[MarkedOptions], InlineLexer_]) & TypeofInlineLexer = js.native
     
-    var Lexer: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Lexer_]) with TypeofLexer = js.native
+    var Lexer: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Lexer_]) & TypeofLexer = js.native
     
-    var Parser: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Parser_]) with TypeofParser = js.native
+    var Parser: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Parser_]) & TypeofParser = js.native
     
     var Renderer: Instantiable1[/* options */ js.UndefOr[MarkedOptions], typings.marked.mod.Renderer] = js.native
     
@@ -217,7 +214,7 @@ object anon {
     ): String = js.native
     def parse(
       src: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
     ): String = js.native
     def parse(src: String, options: MarkedOptions): String = js.native

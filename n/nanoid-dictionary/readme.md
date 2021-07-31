@@ -10,9 +10,9 @@ Predefined character sets to use with nanoid
 | ------------------ | :-------------: |
 | Full name          | nanoid-dictionary |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 92565 |
+| # releases         | 5 |
+| # dependents       | 11 |
+| # downloads        | 151705 |
 | # stars            | 0 |
 
 ## Links

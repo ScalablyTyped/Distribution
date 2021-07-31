@@ -2,23 +2,21 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowChangeInfo extends StObject {
   
   /** The number of columns for the pseudo-TTY. */
-  var cols: Double = js.native
+  var cols: Double
   
   /** The height of the pseudo-TTY in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** The number of rows for the pseudo-TTY. */
-  var rows: Double = js.native
+  var rows: Double
   
   /** The width of the pseudo-TTY in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object WindowChangeInfo {
   

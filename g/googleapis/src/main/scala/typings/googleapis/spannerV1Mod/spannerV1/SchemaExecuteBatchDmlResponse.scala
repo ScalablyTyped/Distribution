@@ -2,7 +2,6 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (INVALID_ARGUMENT) status. From result_set_size() client can determine that
   * the 3rd statement has failed.
   */
-@js.native
 trait SchemaExecuteBatchDmlResponse extends StObject {
   
   /**
@@ -31,13 +29,13 @@ trait SchemaExecuteBatchDmlResponse extends StObject {
     * the number of rows modified by the statement.  Only the first ResultSet
     * in the response contains a valid ResultSetMetadata.
     */
-  var resultSets: js.UndefOr[js.Array[SchemaResultSet]] = js.native
+  var resultSets: js.UndefOr[js.Array[SchemaResultSet]] = js.undefined
   
   /**
     * If all DML statements are executed successfully, status will be OK.
     * Otherwise, the error status of the first failed statement.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object SchemaExecuteBatchDmlResponse {
   

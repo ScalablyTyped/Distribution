@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the application to assign the tags.
     */
-  var ResourceARN: KinesisAnalyticsARN = js.native
+  var ResourceARN: KinesisAnalyticsARN
   
   /**
     * The key-value tags to assign to the application.
     */
-  var Tags: typings.awsSdk.kinesisanalyticsv2Mod.Tags = js.native
+  var Tags: typings.awsSdk.kinesisanalyticsv2Mod.Tags
 }
 object TagResourceRequest {
   

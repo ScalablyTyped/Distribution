@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UplinkEchoConfig extends StObject {
   
   /**
     * ARN of an uplink Config.
     */
-  var antennaUplinkConfigArn: ConfigArn = js.native
+  var antennaUplinkConfigArn: ConfigArn
   
   /**
     * Whether or not an uplink Config is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object UplinkEchoConfig {
   

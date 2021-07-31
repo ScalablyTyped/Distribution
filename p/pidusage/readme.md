@@ -10,9 +10,9 @@ Cross-platform process cpu % and memory usage of a PID
 | ------------------ | :-------------: |
 | Full name          | pidusage |
 | Keywords           | pid, usage, ps, cpu, memory, proc |
-| # releases         | 6 |
-| # dependents       | 169 |
-| # downloads        | 28937509 |
+| # releases         | 5 |
+| # dependents       | 177 |
+| # downloads        | 35565070 |
 | # stars            | 13 |
 
 ## Links

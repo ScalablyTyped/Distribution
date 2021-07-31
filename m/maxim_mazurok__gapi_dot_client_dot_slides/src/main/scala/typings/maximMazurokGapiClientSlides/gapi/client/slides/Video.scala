@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Video extends StObject {
   
   /** The video source's unique identifier for this video. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The video source. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** An URL to a video. The URL is valid as long as the source video exists and sharing settings do not change. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** The properties of the video. */
-  var videoProperties: js.UndefOr[VideoProperties] = js.native
+  var videoProperties: js.UndefOr[VideoProperties] = js.undefined
 }
 object Video {
   

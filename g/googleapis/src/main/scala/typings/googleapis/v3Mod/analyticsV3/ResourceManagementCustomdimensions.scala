@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Customdimensions")
@@ -32,7 +31,7 @@ class ResourceManagementCustomdimensions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCustomDimension] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomDimension]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
   def get(params: ParamsResourceManagementCustomdimensionsGet): GaxiosPromise[SchemaCustomDimension] = js.native
   def get(
     params: ParamsResourceManagementCustomdimensionsGet,
@@ -66,7 +65,7 @@ class ResourceManagementCustomdimensions protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCustomDimension] = js.native
   def insert(callback: BodyResponseCallback[SchemaCustomDimension]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
   def insert(params: ParamsResourceManagementCustomdimensionsInsert): GaxiosPromise[SchemaCustomDimension] = js.native
   def insert(
     params: ParamsResourceManagementCustomdimensionsInsert,
@@ -101,7 +100,7 @@ class ResourceManagementCustomdimensions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCustomDimensions] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomDimensions]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDimensions] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomDimensions] = js.native
   def list(params: ParamsResourceManagementCustomdimensionsList): GaxiosPromise[SchemaCustomDimensions] = js.native
   def list(
     params: ParamsResourceManagementCustomdimensionsList,
@@ -138,7 +137,7 @@ class ResourceManagementCustomdimensions protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCustomDimension] = js.native
   def patch(callback: BodyResponseCallback[SchemaCustomDimension]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
   def patch(params: ParamsResourceManagementCustomdimensionsPatch): GaxiosPromise[SchemaCustomDimension] = js.native
   def patch(
     params: ParamsResourceManagementCustomdimensionsPatch,
@@ -174,7 +173,7 @@ class ResourceManagementCustomdimensions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCustomDimension] = js.native
   def update(callback: BodyResponseCallback[SchemaCustomDimension]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomDimension] = js.native
   def update(params: ParamsResourceManagementCustomdimensionsUpdate): GaxiosPromise[SchemaCustomDimension] = js.native
   def update(
     params: ParamsResourceManagementCustomdimensionsUpdate,

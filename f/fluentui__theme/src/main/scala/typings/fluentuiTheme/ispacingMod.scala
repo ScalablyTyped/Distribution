@@ -2,23 +2,21 @@ package typings.fluentuiTheme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ispacingMod {
   
-  @js.native
   trait ISpacing extends StObject {
     
-    var l1: String = js.native
+    var l1: String
     
-    var l2: String = js.native
+    var l2: String
     
-    var m: String = js.native
+    var m: String
     
-    var s1: String = js.native
+    var s1: String
     
-    var s2: String = js.native
+    var s2: String
   }
   object ISpacing {
     

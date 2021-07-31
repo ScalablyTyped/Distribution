@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesGetRepositoryTriggersInputMod.Get
 import typings.awsSdkClientCodecommitNode.typesGetRepositoryTriggersOutputMod.GetRepositoryTriggersOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRepositoryTriggersCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/GetRepositoryTriggersCommand", "GetRepositoryTriggersCommand")
   @js.native
-  class GetRepositoryTriggersCommand protected () extends Command[
+  class GetRepositoryTriggersCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetRepositoryTriggersInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object getRepositoryTriggersCommandMod {
         ] {
     def this(input: GetRepositoryTriggersInput) = this()
     
+    /* CompleteClass */
+    override val input: GetRepositoryTriggersInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetRepositoryTriggersInput, GetRepositoryTriggersOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[GetRepositoryTriggersInput, GetRepositoryTriggersOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[GetRepositoryTriggersInput, GetRepositoryTriggersOutput] = js.native
   }
 }

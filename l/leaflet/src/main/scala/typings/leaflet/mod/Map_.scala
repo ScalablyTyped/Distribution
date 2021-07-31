@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Map")
@@ -60,9 +59,9 @@ class Map_ protected () extends Evented {
   def fitWorld(options: FitBoundsOptions): this.type = js.native
   
   def flyTo(latlng: LatLngExpression): this.type = js.native
-  def flyTo(latlng: LatLngExpression, zoom: js.UndefOr[scala.Nothing], options: ZoomPanOptions): this.type = js.native
   def flyTo(latlng: LatLngExpression, zoom: Double): this.type = js.native
   def flyTo(latlng: LatLngExpression, zoom: Double, options: ZoomPanOptions): this.type = js.native
+  def flyTo(latlng: LatLngExpression, zoom: Unit, options: ZoomPanOptions): this.type = js.native
   
   def flyToBounds(bounds: LatLngBoundsExpression): this.type = js.native
   def flyToBounds(bounds: LatLngBoundsExpression, options: FitBoundsOptions): this.type = js.native
@@ -70,9 +69,9 @@ class Map_ protected () extends Evented {
   def getBounds(): LatLngBounds_ = js.native
   
   def getBoundsZoom(bounds: LatLngBoundsExpression): Double = js.native
-  def getBoundsZoom(bounds: LatLngBoundsExpression, inside: js.UndefOr[scala.Nothing], padding: Point_): Double = js.native
   def getBoundsZoom(bounds: LatLngBoundsExpression, inside: Boolean): Double = js.native
   def getBoundsZoom(bounds: LatLngBoundsExpression, inside: Boolean, padding: Point_): Double = js.native
+  def getBoundsZoom(bounds: LatLngBoundsExpression, inside: Unit, padding: Point_): Double = js.native
   
   // Methods for getting map state
   def getCenter(): LatLng_ = js.native
@@ -209,12 +208,12 @@ class Map_ protected () extends Evented {
   var zoomControl: typings.leaflet.mod.Control_.Zoom = js.native
   
   def zoomIn(): this.type = js.native
-  def zoomIn(delta: js.UndefOr[scala.Nothing], options: ZoomOptions): this.type = js.native
   def zoomIn(delta: Double): this.type = js.native
   def zoomIn(delta: Double, options: ZoomOptions): this.type = js.native
+  def zoomIn(delta: Unit, options: ZoomOptions): this.type = js.native
   
   def zoomOut(): this.type = js.native
-  def zoomOut(delta: js.UndefOr[scala.Nothing], options: ZoomOptions): this.type = js.native
   def zoomOut(delta: Double): this.type = js.native
   def zoomOut(delta: Double, options: ZoomOptions): this.type = js.native
+  def zoomOut(delta: Unit, options: ZoomOptions): this.type = js.native
 }

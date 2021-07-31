@@ -3,38 +3,36 @@ package typings.gapiClient
 import typings.gapiClient.gapi.client.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
     /**
       * The HTTP request body (applies to PUT or POST).
       */
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Additional HTTP request headers
       */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The HTTP request method to use. Default is GET
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * URL params in key-value pair form
       */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The URL to handle the request
       */
-    var path: String = js.native
+    var path: String
   }
   object Body {
     
@@ -76,7 +74,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback[T] extends StObject {
     
     def callback(
@@ -88,12 +85,12 @@ object anon {
       * is the raw batch ID-response map as a string. It contains all responses to all requests in the batch.
       */
     rawBatchResponse: String
-    ): js.Any = js.native
+    ): js.Any
     
     /**
       * Identifies the response for this request in the map of batch responses. If one is not provided, the system generates a random ID.
       */
-    var id: String = js.native
+    var id: String
   }
   object Callback {
     
@@ -104,7 +101,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback[_], T] (val x: Self with Callback[T]) extends AnyVal {
+    implicit class CallbackMutableBuilder[Self <: Callback[?], T] (val x: Self & Callback[T]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: (Response[T], String) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
@@ -114,28 +111,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Clientid extends StObject {
     
     /**
       * The application's client ID. Visit the Google Developers Console to get an OAuth 2.0 client ID.
       */
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
     /**
       * If true, then login uses "immediate mode", which means that the token is refreshed behind the scenes, and no UI is shown to the user.
       */
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The OAuth 2.0 response type property. Default: token
       */
-    var response_type: js.UndefOr[String] = js.native
+    var response_type: js.UndefOr[String] = js.undefined
     
     /**
       * The auth scope or scopes to authorize. Auth scopes for individual APIs can be found in their documentation.
       */
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Clientid {
     

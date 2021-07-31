@@ -2,61 +2,59 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceImage extends StObject {
   
   /**
     * The date when the image was created. If the image has been shared, the AWS account that the image has been shared with sees the original creation date of the image.
     */
-  var Created: js.UndefOr[Timestamp] = js.native
+  var Created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the image.
     */
-  var Description: js.UndefOr[WorkspaceImageDescription] = js.native
+  var Description: js.UndefOr[WorkspaceImageDescription] = js.undefined
   
   /**
     * The error code that is returned for the image.
     */
-  var ErrorCode: js.UndefOr[WorkspaceImageErrorCode] = js.native
+  var ErrorCode: js.UndefOr[WorkspaceImageErrorCode] = js.undefined
   
   /**
     * The text of the error message that is returned for the image.
     */
-  var ErrorMessage: js.UndefOr[Description] = js.native
+  var ErrorMessage: js.UndefOr[Description] = js.undefined
   
   /**
     * The identifier of the image.
     */
-  var ImageId: js.UndefOr[WorkspaceImageId] = js.native
+  var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
   
   /**
     * The name of the image.
     */
-  var Name: js.UndefOr[WorkspaceImageName] = js.native
+  var Name: js.UndefOr[WorkspaceImageName] = js.undefined
   
   /**
     * The operating system that the image is running. 
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.workspacesMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.workspacesMod.OperatingSystem] = js.undefined
   
   /**
     * The identifier of the AWS account that owns the image.
     */
-  var OwnerAccountId: js.UndefOr[AwsAccount] = js.native
+  var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   
   /**
     * Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to DEDICATED. For more information, see Bring Your Own Windows Desktop Images.
     */
-  var RequiredTenancy: js.UndefOr[WorkspaceImageRequiredTenancy] = js.native
+  var RequiredTenancy: js.UndefOr[WorkspaceImageRequiredTenancy] = js.undefined
   
   /**
     * The status of the image.
     */
-  var State: js.UndefOr[WorkspaceImageState] = js.native
+  var State: js.UndefOr[WorkspaceImageState] = js.undefined
 }
 object WorkspaceImage {
   

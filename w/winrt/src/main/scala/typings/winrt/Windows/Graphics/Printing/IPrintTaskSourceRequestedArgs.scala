@@ -3,17 +3,15 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTaskSourceRequestedArgs extends StObject {
   
-  var deadline: Date = js.native
+  var deadline: Date
   
-  def getDeferral(): PrintTaskSourceRequestedDeferral = js.native
+  def getDeferral(): PrintTaskSourceRequestedDeferral
   
-  def setSource(source: IPrintDocumentSource): Unit = js.native
+  def setSource(source: IPrintDocumentSource): Unit
 }
 object IPrintTaskSourceRequestedArgs {
   

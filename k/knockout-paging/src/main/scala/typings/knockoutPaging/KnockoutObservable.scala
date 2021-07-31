@@ -2,12 +2,12 @@ package typings.knockoutPaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KnockoutObservable[T]
-  extends KnockoutSubscribable[T]
+  extends StObject
+     with KnockoutSubscribable[T]
      with KnockoutObservableFunctions[T] {
   
   def apply(): T = js.native

@@ -2,17 +2,17 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplyPatchesOptions extends ApplyPatchOptions {
+trait ApplyPatchesOptions
+  extends StObject
+     with ApplyPatchOptions {
   
-  def complete(err: js.Any): Unit = js.native
+  def complete(err: js.Any): Unit
   
-  def loadFile(index: ParsedDiff, callback: js.Function2[/* err */ js.Any, /* data */ String, Unit]): Unit = js.native
+  def loadFile(index: ParsedDiff, callback: js.Function2[/* err */ js.Any, /* data */ String, Unit]): Unit
   
-  def patched(index: ParsedDiff, content: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def patched(index: ParsedDiff, content: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit
 }
 object ApplyPatchesOptions {
   

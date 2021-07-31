@@ -34,108 +34,100 @@ import typings.std.Pick
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](obj: T): Immutable[T, js.Object] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Immutable[T, js.Object]]
+  @scala.inline
+  def apply[T](obj: T, options: Options): Immutable[T, js.Object] = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[T, js.Object]]
+  
   @JSImport("seamless-immutable", JSImport.Namespace)
   @js.native
-  def apply[T](obj: T): Immutable[T, js.Object] = js.native
-  @JSImport("seamless-immutable", JSImport.Namespace)
-  @js.native
-  def apply[T](obj: T, options: Options): Immutable[T, js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("seamless-immutable", "ImmutableError")
-  @js.native
-  def ImmutableError(message: String): Error = js.native
+  @scala.inline
+  def ImmutableError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ImmutableError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+  @scala.inline
   def asMutable[T](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable with TopLevel[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]]
+  @scala.inline
   def asMutable[T](obj: T, opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable with TopLevel[T]) = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable[T](obj: js.Array[T]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable[T](obj: js.Array[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable[T](obj: ImmutableArray[T]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable[T](obj: ImmutableArray[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T])]
+  @scala.inline
+  def asMutable[T](obj: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asMutable[T](obj: js.Array[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[(Immutable[T, js.Object]) | T]]
+  @scala.inline
   def asMutable[T](obj: ImmutableObject[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable with TopLevel[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]]
+  @scala.inline
   def asMutable[T](obj: ImmutableObject[T], opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable with TopLevel[T]) = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T])]
+  
+  @scala.inline
+  def asMutable_T_Array[T](obj: ImmutableArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asMutable_T_Array[T](obj: ImmutableArray[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[(Immutable[T, js.Object]) | T]]
+  
+  @scala.inline
   def asMutable_false[T](obj: T, opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable with TopLevel[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_false[T](obj: js.Array[T], opts: AsMutableOptions[`false`]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_false[T](obj: ImmutableArray[T], opts: AsMutableOptions[`false`]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
+    */ asMutable & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ asMutable & TopLevel[T]]
+  @scala.inline
+  def asMutable_false[T](obj: js.Array[T], opts: AsMutableOptions[`false`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
   def asMutable_false[T](obj: ImmutableObject[T], opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable with TopLevel[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_true[T](obj: T, opts: AsMutableOptions[`true`]): T = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_true[T](obj: js.Array[T], opts: AsMutableOptions[`true`]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_true[T](obj: ImmutableArray[T], opts: AsMutableOptions[`true`]): js.Array[T] = js.native
-  @JSImport("seamless-immutable", "asMutable")
-  @js.native
-  def asMutable_true[T](obj: ImmutableObject[T], opts: AsMutableOptions[`true`]): T = js.native
+    */ asMutable & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ asMutable & TopLevel[T]]
   
-  @JSImport("seamless-immutable", "from")
-  @js.native
-  def from[T](obj: T): Immutable[T, js.Object] = js.native
-  @JSImport("seamless-immutable", "from")
-  @js.native
-  def from[T](obj: T, options: Options): Immutable[T, js.Object] = js.native
+  @scala.inline
+  def asMutable_false_T_Array[T](obj: ImmutableArray[T], opts: AsMutableOptions[`false`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("seamless-immutable", "isImmutable")
-  @js.native
-  def isImmutable[T](target: T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = js.native
-  @JSImport("seamless-immutable", "isImmutable")
-  @js.native
-  def isImmutable[T](target: Immutable[T, js.Object]): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = js.native
+  @scala.inline
+  def asMutable_true[T](obj: T, opts: AsMutableOptions[`true`]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def asMutable_true[T](obj: js.Array[T], opts: AsMutableOptions[`true`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asMutable_true[T](obj: ImmutableArray[T], opts: AsMutableOptions[`true`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("seamless-immutable", "replace")
-  @js.native
-  def replace[T, S](obj: Immutable[T, js.Object], valueObj: S): Immutable[S, js.Object] = js.native
-  @JSImport("seamless-immutable", "replace")
-  @js.native
-  def replace[T, S](obj: Immutable[T, js.Object], valueObj: S, options: ReplaceConfig): Immutable[S, js.Object] = js.native
+  @scala.inline
+  def asMutable_true_T_T[T](obj: ImmutableObject[T], opts: AsMutableOptions[`true`]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @js.native
+  @scala.inline
+  def from[T](obj: T): Immutable[T, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[Immutable[T, js.Object]]
+  @scala.inline
+  def from[T](obj: T, options: Options): Immutable[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[T, js.Object]]
+  
+  @scala.inline
+  def isImmutable[T](target: (Immutable[T, js.Object]) | T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
+  
+  @scala.inline
+  def replace[T, S](obj: Immutable[T, js.Object], valueObj: S): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
+  @scala.inline
+  def replace[T, S](obj: Immutable[T, js.Object], valueObj: S, options: ReplaceConfig): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
+  
   trait AsMutableOptions[TDeep /* <: Boolean */] extends StObject {
     
-    var deep: TDeep = js.native
+    var deep: TDeep
   }
   object AsMutableOptions {
     
@@ -146,7 +138,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AsMutableOptionsMutableBuilder[Self <: AsMutableOptions[_], TDeep /* <: Boolean */] (val x: Self with AsMutableOptions[TDeep]) extends AnyVal {
+    implicit class AsMutableOptionsMutableBuilder[Self <: AsMutableOptions[?], TDeep /* <: Boolean */] (val x: Self & AsMutableOptions[TDeep]) extends AnyVal {
       
       @scala.inline
       def setDeep(value: TDeep): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
@@ -155,13 +147,17 @@ object mod {
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias seamless-immutable.seamless-immutable.DeepPartial<T[P]> * / object}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.DeepPartial with TopLevel[js.Any]
+    */ typings.seamlessImmutable.seamlessImmutableStrings.DeepPartial & TopLevel[js.Any]
   
   object Immutable {
     
     type AlreadyImmutable[O /* <: js.Object */] = ImmutableObject[O] | ImmutableArray[js.Any] | ImmutableDate
     
-    type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
+    @js.native
+    trait AnyFunction extends StObject {
+      
+      def apply(args: js.Any*): js.Any = js.native
+    }
     
     type CannotMakeImmutable[O /* <: js.Object */] = AlreadyImmutable[O] | Primitive
     
@@ -316,15 +312,15 @@ object mod {
       ): Immutable[TTarget, js.Object] = js.native
       
       def slice(): Immutable[js.Array[T], js.Object] = js.native
-      def slice(start: js.UndefOr[scala.Nothing], end: Double): Immutable[js.Array[T], js.Object] = js.native
       def slice(start: Double): Immutable[js.Array[T], js.Object] = js.native
       def slice(start: Double, end: Double): Immutable[js.Array[T], js.Object] = js.native
+      def slice(start: Unit, end: Double): Immutable[js.Array[T], js.Object] = js.native
     }
     
     /** Merging this into Overrides breaks stuff, so this is split out */
-    @js.native
     trait ReadOnlyIndexer[T]
-      extends /* key */ NumberDictionary[Immutable[T, js.Object]]
+      extends StObject
+         with /* key */ NumberDictionary[Immutable[T, js.Object]]
     object ReadOnlyIndexer {
       
       @scala.inline
@@ -341,135 +337,171 @@ object mod {
       ]
   }
   /** An ImmutableArray provides read-only access to the array elements, and provides functions (such as `map()`) that return immutable data structures. */
-  type ImmutableArray[T] = Remaining[T] with Additions[T] with Overrides[T] with ReadOnlyIndexer[T]
+  type ImmutableArray[T] = Remaining[T] & Additions[T] & Overrides[T] & ReadOnlyIndexer[T]
   
   /** An ImmutableDate disables the use of mutating functions like `setDate` and `setFullYear`. */
   /* Inlined seamless-immutable.seamless-immutable.ImmutableDate.Remaining & seamless-immutable.seamless-immutable.ImmutableDate.Additions */
-  @js.native
   trait ImmutableDate extends StObject {
     
-    def asMutable(): Date = js.native
+    def asMutable(): Date
     
-    def getDate(): Double = js.native
+    def getDate(): Double
     @JSName("getDate")
-    var getDate_Original: js.Function0[Double] = js.native
+    var getDate_Original: js.Function0[Double]
     
-    def getDay(): Double = js.native
+    def getDay(): Double
     @JSName("getDay")
-    var getDay_Original: js.Function0[Double] = js.native
+    var getDay_Original: js.Function0[Double]
     
-    def getFullYear(): Double = js.native
+    def getFullYear(): Double
     @JSName("getFullYear")
-    var getFullYear_Original: js.Function0[Double] = js.native
+    var getFullYear_Original: js.Function0[Double]
     
-    def getHours(): Double = js.native
+    def getHours(): Double
     @JSName("getHours")
-    var getHours_Original: js.Function0[Double] = js.native
+    var getHours_Original: js.Function0[Double]
     
-    def getMilliseconds(): Double = js.native
+    def getMilliseconds(): Double
     @JSName("getMilliseconds")
-    var getMilliseconds_Original: js.Function0[Double] = js.native
+    var getMilliseconds_Original: js.Function0[Double]
     
-    def getMinutes(): Double = js.native
+    def getMinutes(): Double
     @JSName("getMinutes")
-    var getMinutes_Original: js.Function0[Double] = js.native
+    var getMinutes_Original: js.Function0[Double]
     
-    def getMonth(): Double = js.native
+    def getMonth(): Double
     @JSName("getMonth")
-    var getMonth_Original: js.Function0[Double] = js.native
+    var getMonth_Original: js.Function0[Double]
     
-    def getSeconds(): Double = js.native
+    def getSeconds(): Double
     @JSName("getSeconds")
-    var getSeconds_Original: js.Function0[Double] = js.native
+    var getSeconds_Original: js.Function0[Double]
     
-    def getTime(): Double = js.native
+    def getTime(): Double
     @JSName("getTime")
-    var getTime_Original: js.Function0[Double] = js.native
+    var getTime_Original: js.Function0[Double]
     
-    def getTimezoneOffset(): Double = js.native
+    def getTimezoneOffset(): Double
     @JSName("getTimezoneOffset")
-    var getTimezoneOffset_Original: js.Function0[Double] = js.native
+    var getTimezoneOffset_Original: js.Function0[Double]
     
-    def getUTCDate(): Double = js.native
+    def getUTCDate(): Double
     @JSName("getUTCDate")
-    var getUTCDate_Original: js.Function0[Double] = js.native
+    var getUTCDate_Original: js.Function0[Double]
     
-    def getUTCDay(): Double = js.native
+    def getUTCDay(): Double
     @JSName("getUTCDay")
-    var getUTCDay_Original: js.Function0[Double] = js.native
+    var getUTCDay_Original: js.Function0[Double]
     
-    def getUTCFullYear(): Double = js.native
+    def getUTCFullYear(): Double
     @JSName("getUTCFullYear")
-    var getUTCFullYear_Original: js.Function0[Double] = js.native
+    var getUTCFullYear_Original: js.Function0[Double]
     
-    def getUTCHours(): Double = js.native
+    def getUTCHours(): Double
     @JSName("getUTCHours")
-    var getUTCHours_Original: js.Function0[Double] = js.native
+    var getUTCHours_Original: js.Function0[Double]
     
-    def getUTCMilliseconds(): Double = js.native
+    def getUTCMilliseconds(): Double
     @JSName("getUTCMilliseconds")
-    var getUTCMilliseconds_Original: js.Function0[Double] = js.native
+    var getUTCMilliseconds_Original: js.Function0[Double]
     
-    def getUTCMinutes(): Double = js.native
+    def getUTCMinutes(): Double
     @JSName("getUTCMinutes")
-    var getUTCMinutes_Original: js.Function0[Double] = js.native
+    var getUTCMinutes_Original: js.Function0[Double]
     
-    def getUTCMonth(): Double = js.native
+    def getUTCMonth(): Double
     @JSName("getUTCMonth")
-    var getUTCMonth_Original: js.Function0[Double] = js.native
+    var getUTCMonth_Original: js.Function0[Double]
     
-    def getUTCSeconds(): Double = js.native
+    def getUTCSeconds(): Double
     @JSName("getUTCSeconds")
-    var getUTCSeconds_Original: js.Function0[Double] = js.native
+    var getUTCSeconds_Original: js.Function0[Double]
     
-    def getVarDate(): VarDate = js.native
+    def getVarDate(): VarDate
     @JSName("getVarDate")
-    var getVarDate_Original: js.Function0[VarDate] = js.native
+    var getVarDate_Original: js.Function0[VarDate]
     
-    def toDateString(): String = js.native
+    def toDateString(): String
     @JSName("toDateString")
-    var toDateString_Original: js.Function0[String] = js.native
+    var toDateString_Original: js.Function0[String]
     
-    def toISOString(): String = js.native
+    def toISOString(): String
     @JSName("toISOString")
-    var toISOString_Original: js.Function0[String] = js.native
+    var toISOString_Original: js.Function0[String]
     
-    def toJSON(): String = js.native
+    def toJSON(): String
     @JSName("toJSON")
-    var toJSON_Original: js.Function0[String] = js.native
+    var toJSON_Original: js.Function0[String]
     
-    def toLocaleDateString(): String = js.native
+    def toLocaleDateString(): String
     @JSName("toLocaleDateString")
-    var toLocaleDateString_Original: js.Function0[String] = js.native
+    var toLocaleDateString_Original: js.Function0[String]
     
     @JSName("toLocaleString")
-    var toLocaleString_Original: js.Function0[String] = js.native
+    var toLocaleString_Original: js.Function0[String]
     
-    def toLocaleTimeString(): String = js.native
+    def toLocaleTimeString(): String
     @JSName("toLocaleTimeString")
-    var toLocaleTimeString_Original: js.Function0[String] = js.native
+    var toLocaleTimeString_Original: js.Function0[String]
     
     @JSName("toString")
-    var toString_Original: js.Function0[String] = js.native
+    var toString_Original: js.Function0[String]
     
-    def toTimeString(): String = js.native
+    def toTimeString(): String
     @JSName("toTimeString")
-    var toTimeString_Original: js.Function0[String] = js.native
+    var toTimeString_Original: js.Function0[String]
     
-    def toUTCString(): String = js.native
+    def toUTCString(): String
     @JSName("toUTCString")
-    var toUTCString_Original: js.Function0[String] = js.native
+    var toUTCString_Original: js.Function0[String]
     
     @JSName("valueOf")
-    var valueOf_Original: js.Function0[Double] = js.native
+    var valueOf_Original: js.Function0[Double]
   }
   object ImmutableDate {
     
+    @scala.inline
+    def apply(
+      asMutable: () => Date,
+      getDate: () => Double,
+      getDay: () => Double,
+      getFullYear: () => Double,
+      getHours: () => Double,
+      getMilliseconds: () => Double,
+      getMinutes: () => Double,
+      getMonth: () => Double,
+      getSeconds: () => Double,
+      getTime: () => Double,
+      getTimezoneOffset: () => Double,
+      getUTCDate: () => Double,
+      getUTCDay: () => Double,
+      getUTCFullYear: () => Double,
+      getUTCHours: () => Double,
+      getUTCMilliseconds: () => Double,
+      getUTCMinutes: () => Double,
+      getUTCMonth: () => Double,
+      getUTCSeconds: () => Double,
+      getVarDate: () => VarDate,
+      toDateString: () => String,
+      toISOString: () => String,
+      toJSON: () => String,
+      toLocaleDateString: () => String,
+      toLocaleString: () => String,
+      toLocaleTimeString: () => String,
+      toString_ : () => String,
+      toTimeString: () => String,
+      toUTCString: () => String,
+      valueOf: () => Double
+    ): ImmutableDate = {
+      val __obj = js.Dynamic.literal(asMutable = js.Any.fromFunction0(asMutable), getDate = js.Any.fromFunction0(getDate), getDay = js.Any.fromFunction0(getDay), getFullYear = js.Any.fromFunction0(getFullYear), getHours = js.Any.fromFunction0(getHours), getMilliseconds = js.Any.fromFunction0(getMilliseconds), getMinutes = js.Any.fromFunction0(getMinutes), getMonth = js.Any.fromFunction0(getMonth), getSeconds = js.Any.fromFunction0(getSeconds), getTime = js.Any.fromFunction0(getTime), getTimezoneOffset = js.Any.fromFunction0(getTimezoneOffset), getUTCDate = js.Any.fromFunction0(getUTCDate), getUTCDay = js.Any.fromFunction0(getUTCDay), getUTCFullYear = js.Any.fromFunction0(getUTCFullYear), getUTCHours = js.Any.fromFunction0(getUTCHours), getUTCMilliseconds = js.Any.fromFunction0(getUTCMilliseconds), getUTCMinutes = js.Any.fromFunction0(getUTCMinutes), getUTCMonth = js.Any.fromFunction0(getUTCMonth), getUTCSeconds = js.Any.fromFunction0(getUTCSeconds), getVarDate = js.Any.fromFunction0(getVarDate), toDateString = js.Any.fromFunction0(toDateString), toISOString = js.Any.fromFunction0(toISOString), toJSON = js.Any.fromFunction0(toJSON), toLocaleDateString = js.Any.fromFunction0(toLocaleDateString), toLocaleString = js.Any.fromFunction0(toLocaleString), toLocaleTimeString = js.Any.fromFunction0(toLocaleTimeString), toTimeString = js.Any.fromFunction0(toTimeString), toUTCString = js.Any.fromFunction0(toUTCString), valueOf = js.Any.fromFunction0(valueOf))
+      __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
+      __obj.asInstanceOf[ImmutableDate]
+    }
+    
     /** New functions added by seamless-immutable. */
-    @js.native
     trait Additions extends StObject {
       
-      def asMutable(): Date = js.native
+      def asMutable(): Date
     }
     object Additions {
       
@@ -485,6 +517,100 @@ object mod {
         @scala.inline
         def setAsMutable(value: () => Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
       }
+    }
+    
+    @scala.inline
+    implicit class ImmutableDateMutableBuilder[Self <: ImmutableDate] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAsMutable(value: () => Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetDay(value: () => Double): Self = StObject.set(x, "getDay", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetFullYear(value: () => Double): Self = StObject.set(x, "getFullYear", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetHours(value: () => Double): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetMilliseconds(value: () => Double): Self = StObject.set(x, "getMilliseconds", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetMinutes(value: () => Double): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetTimezoneOffset(value: () => Double): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCDate(value: () => Double): Self = StObject.set(x, "getUTCDate", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCDay(value: () => Double): Self = StObject.set(x, "getUTCDay", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCFullYear(value: () => Double): Self = StObject.set(x, "getUTCFullYear", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCHours(value: () => Double): Self = StObject.set(x, "getUTCHours", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCMilliseconds(value: () => Double): Self = StObject.set(x, "getUTCMilliseconds", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCMinutes(value: () => Double): Self = StObject.set(x, "getUTCMinutes", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCMonth(value: () => Double): Self = StObject.set(x, "getUTCMonth", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetUTCSeconds(value: () => Double): Self = StObject.set(x, "getUTCSeconds", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetVarDate(value: () => VarDate): Self = StObject.set(x, "getVarDate", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToDateString(value: () => String): Self = StObject.set(x, "toDateString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToISOString(value: () => String): Self = StObject.set(x, "toISOString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToLocaleDateString(value: () => String): Self = StObject.set(x, "toLocaleDateString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToLocaleString(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToLocaleTimeString(value: () => String): Self = StObject.set(x, "toLocaleTimeString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToTimeString(value: () => String): Self = StObject.set(x, "toTimeString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setToUTCString(value: () => String): Self = StObject.set(x, "toUTCString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setValueOf(value: () => Double): Self = StObject.set(x, "valueOf", js.Any.fromFunction0(value))
     }
     
     // These methods are banned by seamless-immutable
@@ -557,143 +683,272 @@ object mod {
     
     /** Only allows Date methods, which are the getters. */
     /* Inlined seamless-immutable.seamless-immutable.Omit<std.Date, seamless-immutable.seamless-immutable.ImmutableDate.MutatingDateMethods> */
-    @js.native
     trait Remaining extends StObject {
       
-      def getDate(): Double = js.native
+      def getDate(): Double
       @JSName("getDate")
-      var getDate_Original: js.Function0[Double] = js.native
+      var getDate_Original: js.Function0[Double]
       
-      def getDay(): Double = js.native
+      def getDay(): Double
       @JSName("getDay")
-      var getDay_Original: js.Function0[Double] = js.native
+      var getDay_Original: js.Function0[Double]
       
-      def getFullYear(): Double = js.native
+      def getFullYear(): Double
       @JSName("getFullYear")
-      var getFullYear_Original: js.Function0[Double] = js.native
+      var getFullYear_Original: js.Function0[Double]
       
-      def getHours(): Double = js.native
+      def getHours(): Double
       @JSName("getHours")
-      var getHours_Original: js.Function0[Double] = js.native
+      var getHours_Original: js.Function0[Double]
       
-      def getMilliseconds(): Double = js.native
+      def getMilliseconds(): Double
       @JSName("getMilliseconds")
-      var getMilliseconds_Original: js.Function0[Double] = js.native
+      var getMilliseconds_Original: js.Function0[Double]
       
-      def getMinutes(): Double = js.native
+      def getMinutes(): Double
       @JSName("getMinutes")
-      var getMinutes_Original: js.Function0[Double] = js.native
+      var getMinutes_Original: js.Function0[Double]
       
-      def getMonth(): Double = js.native
+      def getMonth(): Double
       @JSName("getMonth")
-      var getMonth_Original: js.Function0[Double] = js.native
+      var getMonth_Original: js.Function0[Double]
       
-      def getSeconds(): Double = js.native
+      def getSeconds(): Double
       @JSName("getSeconds")
-      var getSeconds_Original: js.Function0[Double] = js.native
+      var getSeconds_Original: js.Function0[Double]
       
-      def getTime(): Double = js.native
+      def getTime(): Double
       @JSName("getTime")
-      var getTime_Original: js.Function0[Double] = js.native
+      var getTime_Original: js.Function0[Double]
       
-      def getTimezoneOffset(): Double = js.native
+      def getTimezoneOffset(): Double
       @JSName("getTimezoneOffset")
-      var getTimezoneOffset_Original: js.Function0[Double] = js.native
+      var getTimezoneOffset_Original: js.Function0[Double]
       
-      def getUTCDate(): Double = js.native
+      def getUTCDate(): Double
       @JSName("getUTCDate")
-      var getUTCDate_Original: js.Function0[Double] = js.native
+      var getUTCDate_Original: js.Function0[Double]
       
-      def getUTCDay(): Double = js.native
+      def getUTCDay(): Double
       @JSName("getUTCDay")
-      var getUTCDay_Original: js.Function0[Double] = js.native
+      var getUTCDay_Original: js.Function0[Double]
       
-      def getUTCFullYear(): Double = js.native
+      def getUTCFullYear(): Double
       @JSName("getUTCFullYear")
-      var getUTCFullYear_Original: js.Function0[Double] = js.native
+      var getUTCFullYear_Original: js.Function0[Double]
       
-      def getUTCHours(): Double = js.native
+      def getUTCHours(): Double
       @JSName("getUTCHours")
-      var getUTCHours_Original: js.Function0[Double] = js.native
+      var getUTCHours_Original: js.Function0[Double]
       
-      def getUTCMilliseconds(): Double = js.native
+      def getUTCMilliseconds(): Double
       @JSName("getUTCMilliseconds")
-      var getUTCMilliseconds_Original: js.Function0[Double] = js.native
+      var getUTCMilliseconds_Original: js.Function0[Double]
       
-      def getUTCMinutes(): Double = js.native
+      def getUTCMinutes(): Double
       @JSName("getUTCMinutes")
-      var getUTCMinutes_Original: js.Function0[Double] = js.native
+      var getUTCMinutes_Original: js.Function0[Double]
       
-      def getUTCMonth(): Double = js.native
+      def getUTCMonth(): Double
       @JSName("getUTCMonth")
-      var getUTCMonth_Original: js.Function0[Double] = js.native
+      var getUTCMonth_Original: js.Function0[Double]
       
-      def getUTCSeconds(): Double = js.native
+      def getUTCSeconds(): Double
       @JSName("getUTCSeconds")
-      var getUTCSeconds_Original: js.Function0[Double] = js.native
+      var getUTCSeconds_Original: js.Function0[Double]
       
-      def getVarDate(): VarDate = js.native
+      def getVarDate(): VarDate
       @JSName("getVarDate")
-      var getVarDate_Original: js.Function0[VarDate] = js.native
+      var getVarDate_Original: js.Function0[VarDate]
       
-      def toDateString(): String = js.native
+      def toDateString(): String
       @JSName("toDateString")
-      var toDateString_Original: js.Function0[String] = js.native
+      var toDateString_Original: js.Function0[String]
       
-      def toISOString(): String = js.native
+      def toISOString(): String
       @JSName("toISOString")
-      var toISOString_Original: js.Function0[String] = js.native
+      var toISOString_Original: js.Function0[String]
       
-      def toJSON(): String = js.native
+      def toJSON(): String
       @JSName("toJSON")
-      var toJSON_Original: js.Function0[String] = js.native
+      var toJSON_Original: js.Function0[String]
       
-      def toLocaleDateString(): String = js.native
+      def toLocaleDateString(): String
       @JSName("toLocaleDateString")
-      var toLocaleDateString_Original: js.Function0[String] = js.native
+      var toLocaleDateString_Original: js.Function0[String]
       
       @JSName("toLocaleString")
-      var toLocaleString_Original: js.Function0[String] = js.native
+      var toLocaleString_Original: js.Function0[String]
       
-      def toLocaleTimeString(): String = js.native
+      def toLocaleTimeString(): String
       @JSName("toLocaleTimeString")
-      var toLocaleTimeString_Original: js.Function0[String] = js.native
+      var toLocaleTimeString_Original: js.Function0[String]
       
       @JSName("toString")
-      var toString_Original: js.Function0[String] = js.native
+      var toString_Original: js.Function0[String]
       
-      def toTimeString(): String = js.native
+      def toTimeString(): String
       @JSName("toTimeString")
-      var toTimeString_Original: js.Function0[String] = js.native
+      var toTimeString_Original: js.Function0[String]
       
-      def toUTCString(): String = js.native
+      def toUTCString(): String
       @JSName("toUTCString")
-      var toUTCString_Original: js.Function0[String] = js.native
+      var toUTCString_Original: js.Function0[String]
       
       @JSName("valueOf")
-      var valueOf_Original: js.Function0[Double] = js.native
+      var valueOf_Original: js.Function0[Double]
+    }
+    object Remaining {
+      
+      @scala.inline
+      def apply(
+        getDate: () => Double,
+        getDay: () => Double,
+        getFullYear: () => Double,
+        getHours: () => Double,
+        getMilliseconds: () => Double,
+        getMinutes: () => Double,
+        getMonth: () => Double,
+        getSeconds: () => Double,
+        getTime: () => Double,
+        getTimezoneOffset: () => Double,
+        getUTCDate: () => Double,
+        getUTCDay: () => Double,
+        getUTCFullYear: () => Double,
+        getUTCHours: () => Double,
+        getUTCMilliseconds: () => Double,
+        getUTCMinutes: () => Double,
+        getUTCMonth: () => Double,
+        getUTCSeconds: () => Double,
+        getVarDate: () => VarDate,
+        toDateString: () => String,
+        toISOString: () => String,
+        toJSON: () => String,
+        toLocaleDateString: () => String,
+        toLocaleString: () => String,
+        toLocaleTimeString: () => String,
+        toString_ : () => String,
+        toTimeString: () => String,
+        toUTCString: () => String,
+        valueOf: () => Double
+      ): typings.seamlessImmutable.mod.ImmutableDate.Remaining = {
+        val __obj = js.Dynamic.literal(getDate = js.Any.fromFunction0(getDate), getDay = js.Any.fromFunction0(getDay), getFullYear = js.Any.fromFunction0(getFullYear), getHours = js.Any.fromFunction0(getHours), getMilliseconds = js.Any.fromFunction0(getMilliseconds), getMinutes = js.Any.fromFunction0(getMinutes), getMonth = js.Any.fromFunction0(getMonth), getSeconds = js.Any.fromFunction0(getSeconds), getTime = js.Any.fromFunction0(getTime), getTimezoneOffset = js.Any.fromFunction0(getTimezoneOffset), getUTCDate = js.Any.fromFunction0(getUTCDate), getUTCDay = js.Any.fromFunction0(getUTCDay), getUTCFullYear = js.Any.fromFunction0(getUTCFullYear), getUTCHours = js.Any.fromFunction0(getUTCHours), getUTCMilliseconds = js.Any.fromFunction0(getUTCMilliseconds), getUTCMinutes = js.Any.fromFunction0(getUTCMinutes), getUTCMonth = js.Any.fromFunction0(getUTCMonth), getUTCSeconds = js.Any.fromFunction0(getUTCSeconds), getVarDate = js.Any.fromFunction0(getVarDate), toDateString = js.Any.fromFunction0(toDateString), toISOString = js.Any.fromFunction0(toISOString), toJSON = js.Any.fromFunction0(toJSON), toLocaleDateString = js.Any.fromFunction0(toLocaleDateString), toLocaleString = js.Any.fromFunction0(toLocaleString), toLocaleTimeString = js.Any.fromFunction0(toLocaleTimeString), toTimeString = js.Any.fromFunction0(toTimeString), toUTCString = js.Any.fromFunction0(toUTCString), valueOf = js.Any.fromFunction0(valueOf))
+        __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
+        __obj.asInstanceOf[typings.seamlessImmutable.mod.ImmutableDate.Remaining]
+      }
+      
+      @scala.inline
+      implicit class RemainingMutableBuilder[Self <: typings.seamlessImmutable.mod.ImmutableDate.Remaining] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetDay(value: () => Double): Self = StObject.set(x, "getDay", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetFullYear(value: () => Double): Self = StObject.set(x, "getFullYear", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetHours(value: () => Double): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetMilliseconds(value: () => Double): Self = StObject.set(x, "getMilliseconds", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetMinutes(value: () => Double): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetTimezoneOffset(value: () => Double): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCDate(value: () => Double): Self = StObject.set(x, "getUTCDate", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCDay(value: () => Double): Self = StObject.set(x, "getUTCDay", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCFullYear(value: () => Double): Self = StObject.set(x, "getUTCFullYear", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCHours(value: () => Double): Self = StObject.set(x, "getUTCHours", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCMilliseconds(value: () => Double): Self = StObject.set(x, "getUTCMilliseconds", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCMinutes(value: () => Double): Self = StObject.set(x, "getUTCMinutes", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCMonth(value: () => Double): Self = StObject.set(x, "getUTCMonth", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetUTCSeconds(value: () => Double): Self = StObject.set(x, "getUTCSeconds", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setGetVarDate(value: () => VarDate): Self = StObject.set(x, "getVarDate", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToDateString(value: () => String): Self = StObject.set(x, "toDateString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToISOString(value: () => String): Self = StObject.set(x, "toISOString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToLocaleDateString(value: () => String): Self = StObject.set(x, "toLocaleDateString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToLocaleString(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToLocaleTimeString(value: () => String): Self = StObject.set(x, "toLocaleTimeString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToTimeString(value: () => String): Self = StObject.set(x, "toTimeString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToUTCString(value: () => String): Self = StObject.set(x, "toUTCString", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setValueOf(value: () => Double): Self = StObject.set(x, "valueOf", js.Any.fromFunction0(value))
+      }
     }
   }
   
-  type ImmutableObject[T] = ImmutableObjectMixin[T] with typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObject with TopLevel[T]
+  type ImmutableObject[T] = ImmutableObjectMixin[T] & typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObject & TopLevel[T]
   
   @js.native
   trait ImmutableObjectMixin[T] extends StObject {
     
     def asMutable(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin with TopLevel[T] = js.native
+      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T] = js.native
     def asMutable(opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin with TopLevel[T]) = js.native
+      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T]) = js.native
     @JSName("asMutable")
     def asMutable_false(opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin with TopLevel[T] = js.native
+      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T] = js.native
     @JSName("asMutable")
     def asMutable_true(opts: AsMutableOptions[`true`]): T = js.native
     
-    def getIn(propertyPath: js.Array[String]): Immutable[_, js.Object] = js.native
+    def getIn(propertyPath: js.Array[String]): Immutable[js.Any, js.Object] = js.native
     def getIn[TValue](propertyPath: js.Array[String], defaultValue: TValue): Immutable[TValue, js.Object] = js.native
     def getIn[K /* <: /* keyof T */ String */](
       propertyPath: js.Array[K],
@@ -787,13 +1042,13 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
     def update[TValue](
       property: String,
-      updaterFunction: js.Function2[/* value */ Immutable[TValue, js.Object], /* repeated */ js.Any, _],
+      updaterFunction: js.Function2[/* value */ Immutable[TValue, js.Object], /* repeated */ js.Any, js.Any],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
     
@@ -805,7 +1060,7 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
@@ -817,7 +1072,7 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
@@ -829,7 +1084,7 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
@@ -841,7 +1096,7 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
@@ -853,14 +1108,14 @@ object mod {
             js.Object
           ], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
     @JSName("updateIn")
     def updateIn_TValue[TValue](
       propertyPath: js.Array[String],
-      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ js.Any, _],
+      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ js.Any, js.Any],
       additionalArguments: js.Any*
     ): Immutable[T, js.Object] = js.native
     
@@ -875,14 +1130,13 @@ object mod {
     def without[K /* <: /* keyof T */ String */](property: K): Immutable[T, js.Object] = js.native
   }
   
-  @js.native
   trait MergeConfig extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var merger: js.UndefOr[js.Function3[/* a */ js.Any, /* b */ js.Any, /* config */ js.Any, _]] = js.native
+    var merger: js.UndefOr[js.Function3[/* a */ js.Any, /* b */ js.Any, /* config */ js.Any, js.Any]] = js.undefined
     
-    var mode: js.UndefOr[replace | merge] = js.native
+    var mode: js.UndefOr[replace | merge] = js.undefined
   }
   object MergeConfig {
     
@@ -902,7 +1156,7 @@ object mod {
       def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
       @scala.inline
-      def setMerger(value: (/* a */ js.Any, /* b */ js.Any, /* config */ js.Any) => _): Self = StObject.set(x, "merger", js.Any.fromFunction3(value))
+      def setMerger(value: (/* a */ js.Any, /* b */ js.Any, /* config */ js.Any) => js.Any): Self = StObject.set(x, "merger", js.Any.fromFunction3(value))
       
       @scala.inline
       def setMergerUndefined: Self = StObject.set(x, "merger", js.undefined)
@@ -918,13 +1172,11 @@ object mod {
   /** From type T, take all properties except those specified by K. */
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
   trait Options extends StObject
   
-  @js.native
   trait ReplaceConfig extends StObject {
     
-    var deep: Boolean = js.native
+    var deep: Boolean
   }
   object ReplaceConfig {
     

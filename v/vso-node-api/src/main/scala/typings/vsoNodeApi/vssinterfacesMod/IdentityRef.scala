@@ -2,31 +2,29 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityRef extends StObject {
   
-  var directoryAlias: String = js.native
+  var directoryAlias: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var id: String = js.native
+  var id: String
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var inactive: Boolean = js.native
+  var inactive: Boolean
   
-  var isAadIdentity: Boolean = js.native
+  var isAadIdentity: Boolean
   
-  var isContainer: Boolean = js.native
+  var isContainer: Boolean
   
-  var profileUrl: String = js.native
+  var profileUrl: String
   
-  var uniqueName: String = js.native
+  var uniqueName: String
   
-  var url: String = js.native
+  var url: String
 }
 object IdentityRef {
   

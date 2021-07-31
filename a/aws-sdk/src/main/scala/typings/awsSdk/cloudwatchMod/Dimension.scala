@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /**
     * The name of the dimension. Dimension names cannot contain blank spaces or non-ASCII characters.
     */
-  var Name: DimensionName = js.native
+  var Name: DimensionName
   
   /**
     * The value of the dimension. Dimension values cannot contain blank spaces or non-ASCII characters.
     */
-  var Value: DimensionValue = js.native
+  var Value: DimensionValue
 }
 object Dimension {
   

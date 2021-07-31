@@ -2,29 +2,27 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
-  var duplicates_timeout: js.UndefOr[Double] = js.native
+  var duplicates_timeout: js.UndefOr[Double] = js.undefined
   
-  var enableTransactions: js.UndefOr[Boolean] = js.native
+  var enableTransactions: js.UndefOr[Boolean] = js.undefined
   
-  var failAfter: js.UndefOr[Double] = js.native
+  var failAfter: js.UndefOr[Double] = js.undefined
   
-  var request_timeout: js.UndefOr[Double] = js.native
+  var request_timeout: js.UndefOr[Double] = js.undefined
   
-  var response_timeout: js.UndefOr[Double] = js.native
+  var response_timeout: js.UndefOr[Double] = js.undefined
   
-  var socket: js.UndefOr[js.Any] = js.native
+  var socket: js.UndefOr[js.Any] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var useImplicitTransactions: js.UndefOr[Boolean] = js.native
+  var useImplicitTransactions: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

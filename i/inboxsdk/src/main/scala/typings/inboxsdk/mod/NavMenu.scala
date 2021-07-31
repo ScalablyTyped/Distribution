@@ -9,24 +9,22 @@ import typings.inboxsdk.mod.Common.DropdownView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavMenu {
   
-  @js.native
   trait CreateAccessoryDescriptor extends StObject {
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var `type`: CREATE = js.native
+    var `type`: CREATE
   }
   object CreateAccessoryDescriptor {
     
     @scala.inline
-    def apply(onClick: () => Unit, `type`: CREATE): CreateAccessoryDescriptor = {
+    def apply(onClick: () => Unit): CreateAccessoryDescriptor = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("CREATE")
       __obj.asInstanceOf[CreateAccessoryDescriptor]
     }
     
@@ -41,16 +39,15 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait DropdownButtonAccessoryDescriptor extends StObject {
     
-    var buttonBackgroundColor: String = js.native
+    var buttonBackgroundColor: String
     
-    var buttonForegroundColor: String = js.native
+    var buttonForegroundColor: String
     
-    def onClick(event: DropdownButtonClickEvent): Unit = js.native
+    def onClick(event: DropdownButtonClickEvent): Unit
     
-    var `type`: DROPDOWN_BUTTON = js.native
+    var `type`: DROPDOWN_BUTTON
   }
   object DropdownButtonAccessoryDescriptor {
     
@@ -58,11 +55,10 @@ object NavMenu {
     def apply(
       buttonBackgroundColor: String,
       buttonForegroundColor: String,
-      onClick: DropdownButtonClickEvent => Unit,
-      `type`: DROPDOWN_BUTTON
+      onClick: DropdownButtonClickEvent => Unit
     ): DropdownButtonAccessoryDescriptor = {
       val __obj = js.Dynamic.literal(buttonBackgroundColor = buttonBackgroundColor.asInstanceOf[js.Any], buttonForegroundColor = buttonForegroundColor.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("DROPDOWN_BUTTON")
       __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
     }
     
@@ -83,10 +79,9 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait DropdownButtonClickEvent extends StObject {
     
-    var dropdown: DropdownView = js.native
+    var dropdown: DropdownView
   }
   object DropdownButtonClickEvent {
     
@@ -104,23 +99,22 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait IconButtonAccessoryDescriptor extends StObject {
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: String = js.native
+    var iconUrl: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var `type`: ICON_BUTTON = js.native
+    var `type`: ICON_BUTTON
   }
   object IconButtonAccessoryDescriptor {
     
     @scala.inline
-    def apply(iconUrl: String, onClick: () => Unit, `type`: ICON_BUTTON): IconButtonAccessoryDescriptor = {
+    def apply(iconUrl: String, onClick: () => Unit): IconButtonAccessoryDescriptor = {
       val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ICON_BUTTON")
       __obj.asInstanceOf[IconButtonAccessoryDescriptor]
     }
     
@@ -164,28 +158,27 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait NavItemDescriptorBase extends StObject {
     
     var accessory: js.UndefOr[
         CreateAccessoryDescriptor | IconButtonAccessoryDescriptor | DropdownButtonAccessoryDescriptor
-      ] = js.native
+      ] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var expanderForegroundColor: js.UndefOr[String] = js.native
+    var expanderForegroundColor: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var onClick: js.UndefOr[js.Function1[/* event */ PreventDefault, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ PreventDefault, Unit]] = js.undefined
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
     
-    var routeID: js.UndefOr[String] = js.native
+    var routeID: js.UndefOr[String] = js.undefined
     
-    var routeParams: js.UndefOr[js.Object] = js.native
+    var routeParams: js.UndefOr[js.Object] = js.undefined
     
-    var `type`: js.UndefOr[NavItemTypes] = js.native
+    var `type`: js.UndefOr[NavItemTypes] = js.undefined
   }
   object NavItemDescriptorBase {
     
@@ -253,12 +246,12 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait NavItemIconHtmlDescriptor
-    extends NavItemDescriptorBase
+    extends StObject
+       with NavItemDescriptorBase
        with NavItemDescriptor {
     
-    var iconElement: js.UndefOr[HTMLElement] = js.native
+    var iconElement: js.UndefOr[HTMLElement] = js.undefined
   }
   object NavItemIconHtmlDescriptor {
     
@@ -279,14 +272,14 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait NavItemIconUrlDescriptor
-    extends NavItemDescriptorBase
+    extends StObject
+       with NavItemDescriptorBase
        with NavItemDescriptor {
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
   }
   object NavItemIconUrlDescriptor {
     
@@ -327,21 +320,20 @@ object NavMenu {
     def NAVIGATION: typings.inboxsdk.inboxsdkStrings.NAVIGATION = "NAVIGATION".asInstanceOf[typings.inboxsdk.inboxsdkStrings.NAVIGATION]
   }
   
-  @js.native
   trait NavItemView extends StObject {
     
-    def addNavItem(navItemDescriptor: NavItemDescriptor): NavItemView = js.native
+    def addNavItem(navItemDescriptor: NavItemDescriptor): NavItemView
     
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
-    def isCollapsed(): Boolean = js.native
+    def isCollapsed(): Boolean
     
     @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def setCollapsed(collapseValue: Boolean): Unit = js.native
+    def setCollapsed(collapseValue: Boolean): Unit
   }
   object NavItemView {
     
@@ -381,10 +373,9 @@ object NavMenu {
     }
   }
   
-  @js.native
   trait NavMenuInstance extends StObject {
     
-    def addNavItem(navItemDescriptor: NavItemDescriptor): NavItemView = js.native
+    def addNavItem(navItemDescriptor: NavItemDescriptor): NavItemView
   }
   object NavMenuInstance {
     

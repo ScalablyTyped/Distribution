@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTimeBasedAutoScalingResult extends StObject {
   
   /**
     * An array of TimeBasedAutoScalingConfiguration objects that describe the configuration for the specified instances.
     */
-  var TimeBasedAutoScalingConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.TimeBasedAutoScalingConfigurations] = js.native
+  var TimeBasedAutoScalingConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.TimeBasedAutoScalingConfigurations] = js.undefined
 }
 object DescribeTimeBasedAutoScalingResult {
   

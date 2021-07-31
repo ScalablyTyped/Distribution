@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItemVersion extends BaseItemVersion {
+trait ListItemVersion
+  extends StObject
+     with BaseItemVersion {
   
   // A collection of the fields and values for this version of the list item.
-  var fields: js.UndefOr[NullableOption[FieldValueSet]] = js.native
+  var fields: js.UndefOr[NullableOption[FieldValueSet]] = js.undefined
 }
 object ListItemVersion {
   

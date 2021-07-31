@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BundleTask extends StObject {
   
   /**
     * The ID of the bundle task.
     */
-  var BundleId: js.UndefOr[String] = js.native
+  var BundleId: js.UndefOr[String] = js.undefined
   
   /**
     * If the task fails, a description of the error.
     */
-  var BundleTaskError: js.UndefOr[typings.awsSdk.ec2Mod.BundleTaskError] = js.native
+  var BundleTaskError: js.UndefOr[typings.awsSdk.ec2Mod.BundleTaskError] = js.undefined
   
   /**
     * The ID of the instance associated with this bundle task.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The level of task completion, as a percent (for example, 20%).
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * The time this task started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The state of the task.
     */
-  var State: js.UndefOr[BundleTaskState] = js.native
+  var State: js.UndefOr[BundleTaskState] = js.undefined
   
   /**
     * The Amazon S3 storage locations.
     */
-  var Storage: js.UndefOr[typings.awsSdk.ec2Mod.Storage] = js.native
+  var Storage: js.UndefOr[typings.awsSdk.ec2Mod.Storage] = js.undefined
   
   /**
     * The time of the most recent update for the task.
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.native
+  var UpdateTime: js.UndefOr[DateTime] = js.undefined
 }
 object BundleTask {
   

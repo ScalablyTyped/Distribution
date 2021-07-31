@@ -2,29 +2,27 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0DecodedHash extends StObject {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var appState: js.UndefOr[js.Any] = js.native
+  var appState: js.UndefOr[js.Any] = js.undefined
   
-  var expiresIn: js.UndefOr[Double] = js.native
+  var expiresIn: js.UndefOr[Double] = js.undefined
   
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
-  var idTokenPayload: js.UndefOr[js.Any] = js.native
+  var idTokenPayload: js.UndefOr[js.Any] = js.undefined
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var tokenType: js.UndefOr[String] = js.native
+  var tokenType: js.UndefOr[String] = js.undefined
 }
 object Auth0DecodedHash {
   

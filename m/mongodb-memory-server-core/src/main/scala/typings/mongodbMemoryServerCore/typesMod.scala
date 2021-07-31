@@ -2,27 +2,33 @@ package typings.mongodbMemoryServerCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type CallbackFn = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait CallbackFn extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
-  type DebugFn = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait DebugFn extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   type DebugPropT = Boolean
   
-  @js.native
   trait DownloadProgressT extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var lastPrintedAt: Double = js.native
+    var lastPrintedAt: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var totalMb: Double = js.native
+    var totalMb: Double
   }
   object DownloadProgressT {
     
@@ -53,16 +59,15 @@ object typesMod {
   
   type ErrorVoidCallback = js.Function1[/* err */ js.Any, Unit]
   
-  @js.native
   trait MongoMemoryInstancePropBaseT extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var dbPath: js.UndefOr[String] = js.native
+    var dbPath: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double | Null] = js.native
+    var port: js.UndefOr[Double | Null] = js.undefined
     
-    var storageEngine: js.UndefOr[StorageEngineT] = js.native
+    var storageEngine: js.UndefOr[StorageEngineT] = js.undefined
   }
   object MongoMemoryInstancePropBaseT {
     
@@ -107,16 +112,17 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait MongoMemoryInstancePropT extends MongoMemoryInstancePropBaseT {
+  trait MongoMemoryInstancePropT
+    extends StObject
+       with MongoMemoryInstancePropBaseT {
     
-    var auth: js.UndefOr[Boolean] = js.native
+    var auth: js.UndefOr[Boolean] = js.undefined
     
-    var dbName: js.UndefOr[String] = js.native
+    var dbName: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
-    var replSet: js.UndefOr[String] = js.native
+    var replSet: js.UndefOr[String] = js.undefined
   }
   object MongoMemoryInstancePropT {
     
@@ -155,10 +161,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ReplStatusReplT extends StObject {
     
-    var ismaster: Boolean = js.native
+    var ismaster: Boolean
   }
   object ReplStatusReplT {
     
@@ -176,10 +181,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ReplStatusResultT extends StObject {
     
-    var repl: ReplStatusReplT = js.native
+    var repl: ReplStatusReplT
   }
   object ReplStatusResultT {
     

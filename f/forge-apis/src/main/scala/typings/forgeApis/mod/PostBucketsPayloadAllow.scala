@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostBucketsPayloadAllow extends StObject {
   
-  var access: String = js.native
+  var access: String
   
-  var authId: String = js.native
+  var authId: String
 }
 object PostBucketsPayloadAllow {
   

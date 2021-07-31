@@ -2,25 +2,23 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message representing why the survey was rejected from review, if it was.
   */
-@js.native
 trait SchemaSurveyRejection extends StObject {
   
   /**
     * A human-readable explanation of what was wrong with the survey.
     */
-  var explanation: js.UndefOr[String] = js.native
+  var explanation: js.UndefOr[String] = js.undefined
   
   /**
     * Which category of rejection this was. See the  Google Surveys Help Center
     * for additional details on each category.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveyRejection {
   

@@ -2,7 +2,6 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * how those tasks are dispatched. Configurable properties include rate
   * limits, retry options, target types, and others.
   */
-@js.native
 trait SchemaQueue extends StObject {
   
   /**
     * App Engine HTTP target.  An App Engine queue is a queue that has an
     * AppEngineHttpTarget.
     */
-  var appEngineHttpTarget: js.UndefOr[SchemaAppEngineHttpTarget] = js.native
+  var appEngineHttpTarget: js.UndefOr[SchemaAppEngineHttpTarget] = js.undefined
   
   /**
     * Caller-specified and required in CreateQueue, after which it becomes
@@ -33,12 +31,12 @@ trait SchemaQueue extends StObject {
     * `QUEUE_ID` can contain letters ([A-Za-z]), numbers ([0-9]), or   hyphens
     * (-). The maximum length is 100 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Pull target.  A pull queue is a queue that has a PullTarget.
     */
-  var pullTarget: js.UndefOr[SchemaPullTarget] = js.native
+  var pullTarget: js.UndefOr[SchemaPullTarget] = js.undefined
   
   /**
     * Output only. The last time this queue was purged.  All tasks that were
@@ -48,7 +46,7 @@ trait SchemaQueue extends StObject {
     * Purge time will be truncated to the nearest microsecond. Purge time will
     * be unset if the queue has never been purged.
     */
-  var purgeTime: js.UndefOr[String] = js.native
+  var purgeTime: js.UndefOr[String] = js.undefined
   
   /**
     * Rate limits for task dispatches.  rate_limits and retry_config are
@@ -60,7 +58,7 @@ trait SchemaQueue extends StObject {
     * its first attempt fails. That is,   retry_config controls task retries
     * (the   second attempt, third attempt, etc).
     */
-  var rateLimits: js.UndefOr[SchemaRateLimits] = js.native
+  var rateLimits: js.UndefOr[SchemaRateLimits] = js.undefined
   
   /**
     * Settings that determine the retry behavior.  * For tasks created using
@@ -72,7 +70,7 @@ trait SchemaQueue extends StObject {
     * App Engine SDK. See   [App Engine
     * documentation](https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/retrying-tasks).
     */
-  var retryConfig: js.UndefOr[SchemaRetryConfig] = js.native
+  var retryConfig: js.UndefOr[SchemaRetryConfig] = js.undefined
   
   /**
     * Output only. The state of the queue.  `state` can only be changed by
@@ -80,7 +78,7 @@ trait SchemaQueue extends StObject {
     * [queue.yaml/xml](https://cloud.google.com/appengine/docs/python/config/queueref).
     * UpdateQueue cannot be used to change `state`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaQueue {
   

@@ -4,7 +4,6 @@ import typings.cesium.anon.ContextOptions
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Scene")
@@ -22,33 +21,18 @@ class Scene () extends StObject {
   def cartesianToCanvasCoordinates(position: Cartesian3, result: Cartesian2): Cartesian2 = js.native
   
   def clampToHeight(cartesian: Cartesian3): Cartesian3 = js.native
-  def clampToHeight(
-    cartesian: Cartesian3,
-    objectsToExclude: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.UndefOr[scala.Nothing], width: Double): Cartesian3 = js.native
-  def clampToHeight(
-    cartesian: Cartesian3,
-    objectsToExclude: js.UndefOr[scala.Nothing],
-    width: Double,
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_]): Cartesian3 = js.native
-  def clampToHeight(
-    cartesian: Cartesian3,
-    objectsToExclude: js.Array[_],
-    width: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_], width: Double): Cartesian3 = js.native
-  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_], width: Double, result: Cartesian3): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[js.Any]): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[js.Any], width: Double): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[js.Any], width: Double, result: Cartesian3): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[js.Any], width: Unit, result: Cartesian3): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: Unit, width: Double): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: Unit, width: Double, result: Cartesian3): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: Unit, width: Unit, result: Cartesian3): Cartesian3 = js.native
   
   def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3]): js.Promise[js.Array[Cartesian3]] = js.native
-  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.UndefOr[scala.Nothing], width: Double): js.Promise[js.Array[Cartesian3]] = js.native
-  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[_]): js.Promise[js.Array[Cartesian3]] = js.native
-  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[_], width: Double): js.Promise[js.Array[Cartesian3]] = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[js.Any]): js.Promise[js.Array[Cartesian3]] = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[js.Any], width: Double): js.Promise[js.Array[Cartesian3]] = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: Unit, width: Double): js.Promise[js.Array[Cartesian3]] = js.native
   
   def completeMorph(): Unit = js.native
   
@@ -74,8 +58,8 @@ class Scene () extends StObject {
   
   val drawingBufferWidth: Double = js.native
   
-  def drillPick(windowPosition: Cartesian2): js.Array[_] = js.native
-  def drillPick(windowPosition: Cartesian2, limit: Double): js.Array[_] = js.native
+  def drillPick(windowPosition: Cartesian2): js.Array[js.Any] = js.native
+  def drillPick(windowPosition: Cartesian2, limit: Double): js.Array[js.Any] = js.native
   
   var eyeSeparation: Double = js.native
   
@@ -133,9 +117,9 @@ class Scene () extends StObject {
   
   var moon: js.UndefOr[Moon] = js.native
   
-  var morphComplete: Event[js.Array[_]] = js.native
+  var morphComplete: Event[js.Array[js.Any]] = js.native
   
-  var morphStart: Event[js.Array[_]] = js.native
+  var morphStart: Event[js.Array[js.Any]] = js.native
   
   var morphTime: Double = js.native
   
@@ -153,9 +137,9 @@ class Scene () extends StObject {
   val orderIndependentTranslucency: Boolean = js.native
   
   def pick(windowPosition: Cartesian2): js.Any = js.native
-  def pick(windowPosition: Cartesian2, width: js.UndefOr[scala.Nothing], height: Double): js.Any = js.native
   def pick(windowPosition: Cartesian2, width: Double): js.Any = js.native
   def pick(windowPosition: Cartesian2, width: Double, height: Double): js.Any = js.native
+  def pick(windowPosition: Cartesian2, width: Unit, height: Double): js.Any = js.native
   
   def pickPosition(windowPosition: Cartesian2): Cartesian3 = js.native
   def pickPosition(windowPosition: Cartesian2, result: Cartesian3): Cartesian3 = js.native
@@ -166,17 +150,17 @@ class Scene () extends StObject {
   
   var postProcessStages: PostProcessStageCollection = js.native
   
-  val postRender: Event[js.Array[_]] = js.native
+  val postRender: Event[js.Array[js.Any]] = js.native
   
-  val postUpdate: Event[js.Array[_]] = js.native
+  val postUpdate: Event[js.Array[js.Any]] = js.native
   
-  val preRender: Event[js.Array[_]] = js.native
+  val preRender: Event[js.Array[js.Any]] = js.native
   
-  val preUpdate: Event[js.Array[_]] = js.native
+  val preUpdate: Event[js.Array[js.Any]] = js.native
   
   val primitives: PrimitiveCollection = js.native
   
-  val renderError: Event[js.Array[_]] = js.native
+  val renderError: Event[js.Array[js.Any]] = js.native
   
   def requestRender(): Unit = js.native
   
@@ -185,14 +169,14 @@ class Scene () extends StObject {
   var rethrowRenderErrors: Boolean = js.native
   
   def sampleHeight(cartographic: Cartographic): Double = js.native
-  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.UndefOr[scala.Nothing], width: Double): Double = js.native
-  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[_]): Double = js.native
-  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[_], width: Double): Double = js.native
+  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[js.Any]): Double = js.native
+  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[js.Any], width: Double): Double = js.native
+  def sampleHeight(cartographic: Cartographic, objectsToExclude: Unit, width: Double): Double = js.native
   
   def sampleHeightMostDetailed(cartographic: Cartographic): js.Promise[js.Array[Double]] = js.native
-  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.UndefOr[scala.Nothing], width: Double): js.Promise[js.Array[Double]] = js.native
-  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[_]): js.Promise[js.Array[Double]] = js.native
-  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[_], width: Double): js.Promise[js.Array[Double]] = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[js.Any]): js.Promise[js.Array[Double]] = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[js.Any], width: Double): js.Promise[js.Array[Double]] = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: Unit, width: Double): js.Promise[js.Array[Double]] = js.native
   
   val sampleHeightSupported: Boolean = js.native
   
@@ -214,7 +198,7 @@ class Scene () extends StObject {
   
   var terrainProvider: TerrainProvider = js.native
   
-  val terrainProviderChanged: Event[js.Array[_]] = js.native
+  val terrainProviderChanged: Event[js.Array[js.Any]] = js.native
   
   var useDepthPicking: Boolean = js.native
   

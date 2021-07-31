@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTagsResponse extends StObject {
   
   /**
     * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * The number of query results that AWS returns at a time.
     */
-  var ReturnSize: PageSize = js.native
+  var ReturnSize: PageSize
   
   /**
     * The tags that match your request.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
   
   /**
     * The total number of query results.
     */
-  var TotalSize: PageSize = js.native
+  var TotalSize: PageSize
 }
 object GetTagsResponse {
   

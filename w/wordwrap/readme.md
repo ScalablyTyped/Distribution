@@ -11,8 +11,8 @@ Wrap those words. Show them at what columns to start and stop.
 | Full name          | wordwrap |
 | Keywords           | word, wrap, rule, format, column |
 | # releases         | 0 |
-| # dependents       | 376 |
-| # downloads        | 795440353 |
+| # dependents       | 400 |
+| # downloads        | 709355879 |
 | # stars            | 13 |
 
 ## Links

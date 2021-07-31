@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetableRemarketingList extends StObject {
   
   /** Account ID of this remarketing list. This is a read-only, auto-generated field that is only returned in GET requests. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Whether this targetable remarketing list is active. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Dimension value for the advertiser ID that owns this targetable remarketing list. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the advertiser. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Targetable remarketing list description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Targetable remarketing list ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#targetableRemarketingList". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Number of days that a user should remain in the targetable remarketing list without an impression. */
-  var lifeSpan: js.UndefOr[String] = js.native
+  var lifeSpan: js.UndefOr[String] = js.undefined
   
   /** Number of users currently in the list. This is a read-only field. */
-  var listSize: js.UndefOr[String] = js.native
+  var listSize: js.UndefOr[String] = js.undefined
   
   /** Product from which this targetable remarketing list was originated. */
-  var listSource: js.UndefOr[String] = js.native
+  var listSource: js.UndefOr[String] = js.undefined
   
   /** Name of the targetable remarketing list. Is no greater than 128 characters long. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Subaccount ID of this remarketing list. This is a read-only, auto-generated field that is only returned in GET requests. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object TargetableRemarketingList {
   

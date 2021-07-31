@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushNodesByBackendIdsToFrontendResponse extends StObject {
   
   /**
     * The array of ids of pushed nodes that correspond to the backend ids specified in
     * backendNodeIds.
     */
-  var nodeIds: js.Array[NodeId] = js.native
+  var nodeIds: js.Array[NodeId]
 }
 object PushNodesByBackendIdsToFrontendResponse {
   

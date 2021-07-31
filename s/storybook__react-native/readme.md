@@ -10,9 +10,9 @@ A better way to develop React Native Components for your app
 | ------------------ | :-------------: |
 | Full name          | @storybook/react-native |
 | Keywords           | react, react-native, storybook |
-| # releases         | 353 |
-| # dependents       | 19 |
-| # downloads        | 3232023 |
+| # releases         | 279 |
+| # dependents       | 21 |
+| # downloads        | 3458909 |
 | # stars            | 0 |
 
 ## Links

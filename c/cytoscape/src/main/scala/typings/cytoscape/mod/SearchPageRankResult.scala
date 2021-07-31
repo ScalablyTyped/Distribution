@@ -2,17 +2,15 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.pageRank
   */
-@js.native
 trait SearchPageRankResult extends StObject {
   
   /** function that computes the rank of a given node (either object or selector string) */
-  def rank(node: NodeCollection): Double = js.native
+  def rank(node: NodeCollection): Double
 }
 object SearchPageRankResult {
   

@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBackendServiceReference extends StObject {
   
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendServiceReference {
   

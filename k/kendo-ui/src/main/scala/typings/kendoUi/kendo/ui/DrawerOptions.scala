@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerOptions extends StObject {
   
-  var hide: js.UndefOr[js.Function1[/* e */ DrawerHideEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ DrawerHideEvent, Unit]] = js.undefined
   
-  var itemClick: js.UndefOr[js.Function1[/* e */ DrawerEvent, Unit]] = js.native
+  var itemClick: js.UndefOr[js.Function1[/* e */ DrawerEvent, Unit]] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var mini: js.UndefOr[Boolean | DrawerMini] = js.native
+  var mini: js.UndefOr[Boolean | DrawerMini] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ DrawerEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ DrawerEvent, Unit]] = js.undefined
   
-  var swipeToOpen: js.UndefOr[Boolean] = js.native
+  var swipeToOpen: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
 }
 object DrawerOptions {
   

@@ -18,94 +18,92 @@ import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Annotations> */
-@js.native
 trait PartialAnnotationsAlign extends StObject {
   
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
-  var arrowcolor: js.UndefOr[String] = js.native
+  var arrowcolor: js.UndefOr[String] = js.undefined
   
-  var arrowhead: js.UndefOr[Double] = js.native
+  var arrowhead: js.UndefOr[Double] = js.undefined
   
-  var arrowside: js.UndefOr[end | start] = js.native
+  var arrowside: js.UndefOr[end | start] = js.undefined
   
-  var arrowsize: js.UndefOr[Double] = js.native
+  var arrowsize: js.UndefOr[Double] = js.undefined
   
-  var arrowwidth: js.UndefOr[Double] = js.native
+  var arrowwidth: js.UndefOr[Double] = js.undefined
   
-  var ax: js.UndefOr[Double] = js.native
+  var ax: js.UndefOr[Double] = js.undefined
   
-  var axref: js.UndefOr[pixel | XAxisName] = js.native
+  var axref: js.UndefOr[pixel | XAxisName] = js.undefined
   
-  var ay: js.UndefOr[Double] = js.native
+  var ay: js.UndefOr[Double] = js.undefined
   
-  var ayref: js.UndefOr[pixel | YAxisName] = js.native
+  var ayref: js.UndefOr[pixel | YAxisName] = js.undefined
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var bordercolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.undefined
   
-  var borderpad: js.UndefOr[Double] = js.native
+  var borderpad: js.UndefOr[Double] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var captureevents: js.UndefOr[Boolean] = js.native
+  var captureevents: js.UndefOr[Boolean] = js.undefined
   
-  var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.native
+  var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
   
-  var font: js.UndefOr[PartialFont] = js.native
+  var font: js.UndefOr[PartialFont] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.native
+  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   
-  var hovertext: js.UndefOr[String] = js.native
+  var hovertext: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var showarrow: js.UndefOr[Boolean] = js.native
+  var showarrow: js.UndefOr[Boolean] = js.undefined
   
-  var standoff: js.UndefOr[Double] = js.native
+  var standoff: js.UndefOr[Double] = js.undefined
   
-  var startarrowhead: js.UndefOr[Double] = js.native
+  var startarrowhead: js.UndefOr[Double] = js.undefined
   
-  var startarrowsize: js.UndefOr[Double] = js.native
+  var startarrowsize: js.UndefOr[Double] = js.undefined
   
-  var startstandoff: js.UndefOr[Double] = js.native
+  var startstandoff: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textangle: js.UndefOr[String] = js.native
+  var textangle: js.UndefOr[String] = js.undefined
   
-  var valign: js.UndefOr[top | middle | bottom] = js.native
+  var valign: js.UndefOr[top | middle | bottom] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double | String] = js.native
+  var x: js.UndefOr[Double | String] = js.undefined
   
-  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var xclick: js.UndefOr[js.Any] = js.native
+  var xclick: js.UndefOr[js.Any] = js.undefined
   
-  var xref: js.UndefOr[paper | XAxisName] = js.native
+  var xref: js.UndefOr[paper | XAxisName] = js.undefined
   
-  var xshift: js.UndefOr[Double] = js.native
+  var xshift: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double | String] = js.native
+  var y: js.UndefOr[Double | String] = js.undefined
   
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
   
-  var yclick: js.UndefOr[js.Any] = js.native
+  var yclick: js.UndefOr[js.Any] = js.undefined
   
-  var yref: js.UndefOr[paper | YAxisName] = js.native
+  var yref: js.UndefOr[paper | YAxisName] = js.undefined
   
-  var yshift: js.UndefOr[Double] = js.native
+  var yshift: js.UndefOr[Double] = js.undefined
 }
 object PartialAnnotationsAlign {
   

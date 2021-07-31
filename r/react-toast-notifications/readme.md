@@ -10,9 +10,9 @@ A configurable, composable, toast notification system for react.
 | ------------------ | :-------------: |
 | Full name          | react-toast-notifications |
 | Keywords           | react, toast, toasts, notification, notifications |
-| # releases         | 20 |
-| # dependents       | 30 |
-| # downloads        | 1587207 |
+| # releases         | 19 |
+| # dependents       | 42 |
+| # downloads        | 2453512 |
 | # stars            | 0 |
 
 ## Links

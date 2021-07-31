@@ -2,17 +2,17 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TradePayArgs extends AsyncCallback[String] {
+trait TradePayArgs
+  extends StObject
+     with AsyncCallback[String] {
   
-  var orderStr: js.UndefOr[String] = js.native
+  var orderStr: js.UndefOr[String] = js.undefined
   
-  var paymentUrl: js.UndefOr[String] = js.native
+  var paymentUrl: js.UndefOr[String] = js.undefined
   
-  var tradeNO: js.UndefOr[String] = js.native
+  var tradeNO: js.UndefOr[String] = js.undefined
 }
 object TradePayArgs {
   

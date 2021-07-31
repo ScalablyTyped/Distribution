@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultSetStats extends StObject {
   
   /** QueryPlan for the query associated with this result. */
-  var queryPlan: js.UndefOr[QueryPlan] = js.native
+  var queryPlan: js.UndefOr[QueryPlan] = js.undefined
   
   /**
     * Aggregated statistics from the execution of the query. Only present when the query is profiled. For example, a query could return the statistics as follows: { "rows_returned": "3",
@@ -19,14 +17,14 @@ trait ResultSetStats extends StObject {
   var queryStats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Standard DML returns an exact count of rows that were modified. */
-  var rowCountExact: js.UndefOr[String] = js.native
+  var rowCountExact: js.UndefOr[String] = js.undefined
   
   /** Partitioned DML does not offer exactly-once semantics, so it returns a lower bound of the rows modified. */
-  var rowCountLowerBound: js.UndefOr[String] = js.native
+  var rowCountLowerBound: js.UndefOr[String] = js.undefined
 }
 object ResultSetStats {
   
@@ -49,7 +47,7 @@ object ResultSetStats {
     def setQueryStats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[js.Any]
     ): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
     
     @scala.inline

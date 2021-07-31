@@ -11,20 +11,36 @@ import typings.broccoliPlugin.interfacesMod.PluginOptions
 import typings.fsMerger.mod.FS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("broccoli-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Plugin {
+  class ^ protected ()
+    extends StObject
+       with Plugin {
     def this(inputNodes: js.Array[InputNode]) = this()
     def this(inputNodes: js.Array[InputNode], options: PluginOptions) = this()
+    
+    /**
+      The node's feature set, indicating the API version
+      */
+    /* CompleteClass */
+    var __broccoliFeatures__ : FeatureSet = js.native
+    
+    /**
+      A function to be called by the Builder, taking the Builder's feature set as
+      an argument and returning a `NodeInfo` object
+      */
+    /* CompleteClass */
+    override def __broccoliGetInfo__(builderFeatures: FeatureSet): TransformNodeInfo = js.native
   }
   
   @js.native
-  trait Plugin extends NodeCommon[TransformNodeInfo] {
+  trait Plugin
+    extends StObject
+       with NodeCommon[TransformNodeInfo] {
     
     def __broccoliGetInfo__(): TransformNodeInfo = js.native
     

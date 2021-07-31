@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait CodePipeline extends Service {
   ): Request[AcknowledgeThirdPartyJobOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_CodePipeline: ConfigBase with ClientConfiguration = js.native
+  var config_CodePipeline: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new custom action that can be used in all pipelines associated with the AWS account. Only used for custom actions.

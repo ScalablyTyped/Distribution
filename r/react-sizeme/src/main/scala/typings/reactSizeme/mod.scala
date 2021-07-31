@@ -11,23 +11,26 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-sizeme", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(): js.Function1[
     /* component */ ComponentType[js.Object], 
-    ComponentType[(Omit[js.Object, size]) with WithSizeProps]
-  ] = js.native
-  @JSImport("react-sizeme", JSImport.Namespace)
-  @js.native
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Object], 
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ]]
+  @scala.inline
   def apply(options: SizeMeOptions): js.Function1[
     /* component */ ComponentType[js.Object], 
-    ComponentType[(Omit[js.Object, size]) with WithSizeProps]
-  ] = js.native
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Object], 
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ]]
   
   @JSImport("react-sizeme", JSImport.Namespace)
   @js.native
@@ -51,35 +54,38 @@ object mod {
   @scala.inline
   def noPlaceholders_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noPlaceholders")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-sizeme", "withSize")
-  @js.native
+  @scala.inline
   def withSize(): js.Function1[
     /* component */ ComponentType[js.Object], 
-    ComponentType[(Omit[js.Object, size]) with WithSizeProps]
-  ] = js.native
-  @JSImport("react-sizeme", "withSize")
-  @js.native
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSize")().asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Object], 
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ]]
+  @scala.inline
   def withSize(options: SizeMeOptions): js.Function1[
     /* component */ ComponentType[js.Object], 
-    ComponentType[(Omit[js.Object, size]) with WithSizeProps]
-  ] = js.native
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Object], 
+    ComponentType[(Omit[js.Object, size]) & WithSizeProps]
+  ]]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
   trait SizeMeOptions extends StObject {
     
-    var monitorHeight: js.UndefOr[Boolean] = js.native
+    var monitorHeight: js.UndefOr[Boolean] = js.undefined
     
-    var monitorPosition: js.UndefOr[Boolean] = js.native
+    var monitorPosition: js.UndefOr[Boolean] = js.undefined
     
-    var monitorWidth: js.UndefOr[Boolean] = js.native
+    var monitorWidth: js.UndefOr[Boolean] = js.undefined
     
-    var noPlaceholder: js.UndefOr[Boolean] = js.native
+    var noPlaceholder: js.UndefOr[Boolean] = js.undefined
     
-    var refreshMode: js.UndefOr[throttle | debounce] = js.native
+    var refreshMode: js.UndefOr[throttle | debounce] = js.undefined
     
-    var refreshRate: js.UndefOr[Double] = js.native
+    var refreshRate: js.UndefOr[Double] = js.undefined
   }
   object SizeMeOptions {
     
@@ -130,10 +136,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SizeMeProps extends StObject {
     
-    val size: Height = js.native
+    val size: Height
   }
   object SizeMeProps {
     
@@ -151,10 +156,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait SizeMeRenderProps extends SizeMeOptions {
+  trait SizeMeRenderProps
+    extends StObject
+       with SizeMeOptions {
     
-    def children(props: SizeMeProps): ReactElement = js.native
+    def children(props: SizeMeProps): ReactElement
   }
   object SizeMeRenderProps {
     
@@ -174,10 +180,9 @@ object mod {
   
   type WithSizeOnSizeCallback = js.Function1[/* size */ Height, Unit]
   
-  @js.native
   trait WithSizeProps extends StObject {
     
-    var onSize: js.UndefOr[WithSizeOnSizeCallback] = js.native
+    var onSize: js.UndefOr[WithSizeOnSizeCallback] = js.undefined
   }
   object WithSizeProps {
     

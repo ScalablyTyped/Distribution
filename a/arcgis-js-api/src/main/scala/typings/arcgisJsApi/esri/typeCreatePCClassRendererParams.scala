@@ -5,60 +5,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait typeCreatePCClassRendererParams extends Object {
+trait typeCreatePCClassRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The number of points per inch in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var density: js.UndefOr[Double] = js.native
+  var density: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the field containing classification data for the given layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var layer: PointCloudLayer = js.native
+  var layer: PointCloudLayer
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * The size of each point expressed as a percentage.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var statistics: js.UndefOr[UniqueValuesResult] = js.native
+  var statistics: js.UndefOr[UniqueValuesResult] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined type scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  var typeScheme: js.UndefOr[TypeSchemeForPoint] = js.native
+  var typeScheme: js.UndefOr[TypeSchemeForPoint] = js.undefined
 }
 object typeCreatePCClassRendererParams {
   

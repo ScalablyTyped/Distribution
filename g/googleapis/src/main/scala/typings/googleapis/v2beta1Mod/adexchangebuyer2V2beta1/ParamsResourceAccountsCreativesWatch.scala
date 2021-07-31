@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsCreativesWatch extends StandardParameters {
+trait ParamsResourceAccountsCreativesWatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * The account of the creative to watch.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The creative ID to watch for status changes. Specify "-" to watch all
@@ -28,12 +28,12 @@ trait ParamsResourceAccountsCreativesWatch extends StandardParameters {
     * account-level notifications are sent, only a single notification will be
     * sent to the creative-level notification topic.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaWatchCreativeRequest] = js.native
+  var requestBody: js.UndefOr[SchemaWatchCreativeRequest] = js.undefined
 }
 object ParamsResourceAccountsCreativesWatch {
   

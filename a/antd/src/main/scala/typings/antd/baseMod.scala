@@ -15,7 +15,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -51,9 +50,8 @@ object baseMod {
     }
     
     /* static member */
-    @JSImport("antd/lib/typography/Base", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: BlockProps): js.Object = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: BlockProps): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   @js.native
@@ -131,22 +129,21 @@ object baseMod {
     def triggerEdit(edit: Boolean): Unit = js.native
   }
   
-  @js.native
   trait BaseState extends StObject {
     
-    var clientRendered: Boolean = js.native
+    var clientRendered: Boolean
     
-    var copied: Boolean = js.native
+    var copied: Boolean
     
-    var edit: Boolean = js.native
+    var edit: Boolean
     
-    var ellipsisContent: ReactNode = js.native
+    var ellipsisContent: ReactNode
     
-    var ellipsisText: String = js.native
+    var ellipsisText: String
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var isEllipsis: Boolean = js.native
+    var isEllipsis: Boolean
   }
   object BaseState {
     
@@ -214,32 +211,33 @@ object baseMod {
     def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
-  @js.native
-  trait BlockProps extends TypographyProps {
+  trait BlockProps
+    extends StObject
+       with TypographyProps {
     
-    var code: js.UndefOr[Boolean] = js.native
+    var code: js.UndefOr[Boolean] = js.undefined
     
-    var copyable: js.UndefOr[Boolean | CopyConfig] = js.native
+    var copyable: js.UndefOr[Boolean | CopyConfig] = js.undefined
     
-    var delete: js.UndefOr[Boolean] = js.native
+    var delete: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean | EditConfig] = js.native
+    var editable: js.UndefOr[Boolean | EditConfig] = js.undefined
     
-    var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.native
+    var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var strong: js.UndefOr[Boolean] = js.native
+    var strong: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[BaseType] = js.native
+    var `type`: js.UndefOr[BaseType] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object BlockProps {
     
@@ -326,16 +324,15 @@ object baseMod {
     }
   }
   
-  @js.native
   trait CopyConfig extends StObject {
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var onCopy: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var tooltips: js.UndefOr[Boolean | ReactNode] = js.native
+    var tooltips: js.UndefOr[Boolean | ReactNode] = js.undefined
   }
   object CopyConfig {
     
@@ -374,22 +371,21 @@ object baseMod {
     }
   }
   
-  @js.native
   trait EditConfig extends StObject {
     
-    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.native
+    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.undefined
     
-    var editing: js.UndefOr[Boolean] = js.native
+    var editing: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean | ReactNode] = js.native
+    var tooltip: js.UndefOr[Boolean | ReactNode] = js.undefined
   }
   object EditConfig {
     
@@ -446,20 +442,19 @@ object baseMod {
     }
   }
   
-  @js.native
   trait EllipsisConfig extends StObject {
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var onEllipsis: js.UndefOr[js.Function1[/* ellipsis */ Boolean, Unit]] = js.native
+    var onEllipsis: js.UndefOr[js.Function1[/* ellipsis */ Boolean, Unit]] = js.undefined
     
-    var onExpand: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onExpand: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var symbol: js.UndefOr[ReactNode] = js.native
+    var symbol: js.UndefOr[ReactNode] = js.undefined
   }
   object EllipsisConfig {
     
@@ -510,10 +505,11 @@ object baseMod {
     }
   }
   
-  @js.native
-  trait InternalBlockProps extends BlockProps {
+  trait InternalBlockProps
+    extends StObject
+       with BlockProps {
     
-    var component: String = js.native
+    var component: String
   }
   object InternalBlockProps {
     

@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideTime extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait GlideTime extends StObject {
     * gt.setValue('12:00:00');
     * gs.info(gt.getByFormat("HH:mm"));
     */
-  def getByFormat(format: String): String = js.native
+  def getByFormat(format: String): String
   
   /**
     * Gets the time in the current user's display format and time zone.
@@ -31,7 +29,7 @@ trait GlideTime extends StObject {
     * gt.setDisplayValue("12:00:00"); // User Time Zone
     * gs.info(gt.getDisplayValue()); // User Time Zone
     */
-  def getDisplayValue(): String = js.native
+  def getDisplayValue(): String
   
   /**
     * Gets the display value in the current user's time zone and the internal format
@@ -45,14 +43,14 @@ trait GlideTime extends StObject {
     * gt.setValue("01:00:00"); //Internal Time Zone , UTC
     * gs.info(gt.getDisplayValueInternal()); //User Time Zone
     */
-  def getDisplayValueInternal(): String = js.native
+  def getDisplayValueInternal(): String
   
   /**
     * Returns the hours part of the time using the local time zone.
     *
     * @returns The hours using the local time zone.
     */
-  def getHourLocalTime(): Double = js.native
+  def getHourLocalTime(): Double
   
   /**
     * Returns the hours part of the time using the local time zone. The number of hours is
@@ -61,7 +59,7 @@ trait GlideTime extends StObject {
     * @returns The hours using the local time zone. The number of hours is based on a 24 hour
     * clock.
     */
-  def getHourOfDayLocalTime(): Double = js.native
+  def getHourOfDayLocalTime(): Double
   
   /**
     * Returns the hours part of the time using the UTC time zone. The number of hours is
@@ -70,7 +68,7 @@ trait GlideTime extends StObject {
     * @returns The hours using the UTC time zone. The number of hours is based on a 24 hour
     * clock.
     */
-  def getHourOfDayUTC(): Double = js.native
+  def getHourOfDayUTC(): Double
   
   /**
     * Returns the hours part of the time using the UTC time zone. The number of hours is
@@ -79,28 +77,28 @@ trait GlideTime extends StObject {
     * @returns The hours using the UTC time zone. The number of hours is based on a 12 hour
     * clock. Noon and midnight are represented by 0, not 12.
     */
-  def getHourUTC(): Double = js.native
+  def getHourUTC(): Double
   
   /**
     * Returns the number of minutes using the local time zone.
     *
     * @returns The number of minutes using the local time zone.
     */
-  def getMinutesLocalTime(): Double = js.native
+  def getMinutesLocalTime(): Double
   
   /**
     * Returns the number of minutes in the hour based on the UTC time zone.
     *
     * @returns The number of minutes in the hour using the UTC time zone.
     */
-  def getMinutesUTC(): Double = js.native
+  def getMinutesUTC(): Double
   
   /**
     * Returns the number of seconds in the current minute.
     *
     * @returns The number of seconds in the minute.
     */
-  def getSeconds(): Double = js.native
+  def getSeconds(): Double
   
   /**
     * Gets the time value stored in the database by the GlideTime object in the internal
@@ -112,7 +110,7 @@ trait GlideTime extends StObject {
     * var gt = new GlideTime();
     * gs.info(gt.getValue()); // Internal Time Zone, UTC
     */
-  def getValue(): String = js.native
+  def getValue(): String
   
   /**
     * Sets a time value using the current user's display format and time zone.
@@ -126,7 +124,7 @@ trait GlideTime extends StObject {
     * gt.setDisplayValue('01:00:00');   // User Time Zone
     * gs.info(gt.getDisplayValueInternal()); // User Time Zone
     */
-  def setDisplayValue(asDisplayed: String): Unit = js.native
+  def setDisplayValue(asDisplayed: String): Unit
   
   /**
     * Sets the time of the GlideTime object in the internal time zone.
@@ -139,7 +137,7 @@ trait GlideTime extends StObject {
     * gt.setValue('01:00:00');  //Internal Time Zone, UTC
     * gs.info("time is "+ gt.getByFormat('hh:mm:ss'));
     */
-  def setValue(o: String): Unit = js.native
+  def setValue(o: String): Unit
   
   /**
     * Gets the duration difference between two GlideTime object values.
@@ -156,7 +154,7 @@ trait GlideTime extends StObject {
     * var dur = GlideDate.subtract(gd1, gd2); //the difference between gdt1 and gdt2
     * gs.info(dur.getDisplayValue());
     */
-  def subtract(start: GlideTime, end: GlideTime): GlideDuration = js.native
+  def subtract(start: GlideTime, end: GlideTime): GlideDuration
 }
 object GlideTime {
   

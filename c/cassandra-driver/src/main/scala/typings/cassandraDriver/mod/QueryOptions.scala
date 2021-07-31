@@ -5,55 +5,53 @@ import typings.cassandraDriver.typesMod.types.Long
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var autoPage: js.UndefOr[Boolean] = js.native
+  var autoPage: js.UndefOr[Boolean] = js.undefined
   
-  var captureStackTrace: js.UndefOr[Boolean] = js.native
+  var captureStackTrace: js.UndefOr[Boolean] = js.undefined
   
-  var consistency: js.UndefOr[Double] = js.native
+  var consistency: js.UndefOr[Double] = js.undefined
   
-  var counter: js.UndefOr[Boolean] = js.native
+  var counter: js.UndefOr[Boolean] = js.undefined
   
-  var customPayload: js.UndefOr[js.Any] = js.native
+  var customPayload: js.UndefOr[js.Any] = js.undefined
   
-  var executionProfile: js.UndefOr[String | ExecutionProfile] = js.native
+  var executionProfile: js.UndefOr[String | ExecutionProfile] = js.undefined
   
-  var fetchSize: js.UndefOr[Double] = js.native
+  var fetchSize: js.UndefOr[Double] = js.undefined
   
-  var hints: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+  var hints: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
   
-  var host: js.UndefOr[Host] = js.native
+  var host: js.UndefOr[Host] = js.undefined
   
-  var isIdempotent: js.UndefOr[Boolean] = js.native
+  var isIdempotent: js.UndefOr[Boolean] = js.undefined
   
-  var keyspace: js.UndefOr[String] = js.native
+  var keyspace: js.UndefOr[String] = js.undefined
   
-  var logged: js.UndefOr[Boolean] = js.native
+  var logged: js.UndefOr[Boolean] = js.undefined
   
-  var pageState: js.UndefOr[Buffer | String] = js.native
+  var pageState: js.UndefOr[Buffer | String] = js.undefined
   
-  var prepare: js.UndefOr[Boolean] = js.native
+  var prepare: js.UndefOr[Boolean] = js.undefined
   
-  var readTimeout: js.UndefOr[Double] = js.native
+  var readTimeout: js.UndefOr[Double] = js.undefined
   
-  var retry: js.UndefOr[RetryPolicy] = js.native
+  var retry: js.UndefOr[RetryPolicy] = js.undefined
   
-  var routingIndexes: js.UndefOr[js.Array[Double]] = js.native
+  var routingIndexes: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var routingKey: js.UndefOr[Buffer | js.Array[Buffer]] = js.native
+  var routingKey: js.UndefOr[Buffer | js.Array[Buffer]] = js.undefined
   
-  var routingNames: js.UndefOr[js.Array[String]] = js.native
+  var routingNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var serialConsistency: js.UndefOr[Double] = js.native
+  var serialConsistency: js.UndefOr[Double] = js.undefined
   
-  var timestamp: js.UndefOr[Double | Long] = js.native
+  var timestamp: js.UndefOr[Double | Long] = js.undefined
   
-  var traceQuery: js.UndefOr[Boolean] = js.native
+  var traceQuery: js.UndefOr[Boolean] = js.undefined
 }
 object QueryOptions {
   

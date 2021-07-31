@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,50 +15,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For XML locale data files definitions see [the DTD file]{@link
   * url="http://cgit.freedesktop.org/libreoffice/core/tree/i18npool/source/localedata/data/locale.dtd"} .
   */
-@js.native
-trait XLocaleData extends XInterface {
+trait XLocaleData
+  extends StObject
+     with XInterface {
   
   /** returns all available locales. */
-  val AllInstalledLocaleNames: SafeArray[Locale] = js.native
+  val AllInstalledLocaleNames: SafeArray[Locale]
   
   /** returns all LC_CALENDAR calendars for a locale. */
-  def getAllCalendars(aLocale: Locale): SafeArray[Calendar] = js.native
+  def getAllCalendars(aLocale: Locale): SafeArray[Calendar]
   
   /** returns all LC_CURRENCY currencies for a locale. */
-  def getAllCurrencies(aLocale: Locale): SafeArray[Currency] = js.native
+  def getAllCurrencies(aLocale: Locale): SafeArray[Currency]
   
   /** returns all LC_FORMAT format elements for a locale. */
-  def getAllFormats(aLocale: Locale): SafeArray[FormatElement] = js.native
+  def getAllFormats(aLocale: Locale): SafeArray[FormatElement]
   
   /** returns all available locales. */
-  def getAllInstalledLocaleNames(): SafeArray[Locale] = js.native
+  def getAllInstalledLocaleNames(): SafeArray[Locale]
   
   /** returns all LC_COLLATION collation options for a locale. */
-  def getCollationOptions(aLocale: Locale): SafeArray[String] = js.native
+  def getCollationOptions(aLocale: Locale): SafeArray[String]
   
   /** returns all LC_COLLATION collators for a locale. */
-  def getCollatorImplementations(aLocale: Locale): SafeArray[Implementation] = js.native
+  def getCollatorImplementations(aLocale: Locale): SafeArray[Implementation]
   
   /** returns all LC_MISC forbidden characters for a locale. */
-  def getForbiddenCharacters(aLocale: Locale): ForbiddenCharacters = js.native
+  def getForbiddenCharacters(aLocale: Locale): ForbiddenCharacters
   
   /** returns the LC_INFO locale information. */
-  def getLanguageCountryInfo(aLocale: Locale): LanguageCountryInfo = js.native
+  def getLanguageCountryInfo(aLocale: Locale): LanguageCountryInfo
   
   /** returns LC_CTYPE separators and markers. */
-  def getLocaleItem(aLocale: Locale): LocaleDataItem = js.native
+  def getLocaleItem(aLocale: Locale): LocaleDataItem
   
   /**
     * returns all LC_MISC reserved words for a locale.
     * @see reservedWords
     */
-  def getReservedWord(aLocale: Locale): SafeArray[String] = js.native
+  def getReservedWord(aLocale: Locale): SafeArray[String]
   
   /** returns all LC_SEARCH search options for a locale. */
-  def getSearchOptions(aLocale: Locale): SafeArray[String] = js.native
+  def getSearchOptions(aLocale: Locale): SafeArray[String]
   
   /** returns all LC_TRANSLITERATION transliterations for a locale. */
-  def getTransliterations(aLocale: Locale): SafeArray[String] = js.native
+  def getTransliterations(aLocale: Locale): SafeArray[String]
 }
 object XLocaleData {
   

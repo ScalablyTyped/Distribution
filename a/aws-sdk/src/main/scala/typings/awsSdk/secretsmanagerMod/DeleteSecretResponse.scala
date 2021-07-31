@@ -2,26 +2,24 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSecretResponse extends StObject {
   
   /**
     * The ARN of the secret that is now scheduled for deletion.
     */
-  var ARN: js.UndefOr[SecretARNType] = js.native
+  var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
     * The date and time after which this secret can be deleted by Secrets Manager and can no longer be restored. This value is the date and time of the delete request plus the number of days specified in RecoveryWindowInDays.
     */
-  var DeletionDate: js.UndefOr[DeletionDateType] = js.native
+  var DeletionDate: js.UndefOr[DeletionDateType] = js.undefined
   
   /**
     * The friendly name of the secret that is now scheduled for deletion.
     */
-  var Name: js.UndefOr[SecretNameType] = js.native
+  var Name: js.UndefOr[SecretNameType] = js.undefined
 }
 object DeleteSecretResponse {
   

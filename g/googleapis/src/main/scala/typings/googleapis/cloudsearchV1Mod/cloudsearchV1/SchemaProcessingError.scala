@@ -2,27 +2,25 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProcessingError extends StObject {
   
   /**
     * Error code indicating the nature of the error.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the error.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * In case the item fields are invalid, this field contains the details
     * about the validation errors.
     */
-  var fieldViolations: js.UndefOr[js.Array[SchemaFieldViolation]] = js.native
+  var fieldViolations: js.UndefOr[js.Array[SchemaFieldViolation]] = js.undefined
 }
 object SchemaProcessingError {
   

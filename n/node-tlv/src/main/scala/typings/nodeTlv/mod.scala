@@ -11,28 +11,25 @@ import typings.nodeTlv.nodeTlvStrings.hex
 import typings.nodeTlv.nodeTlvStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* static member */
-  @JSImport("node-tlv", JSImport.Namespace)
-  @js.native
-  def apply(tag: String, value: String): String = js.native
-  @JSImport("node-tlv", JSImport.Namespace)
-  @js.native
-  def apply(tag: String, value: String, encoding: Double): String = js.native
-  @JSImport("node-tlv", JSImport.Namespace)
-  @js.native
-  def apply(tag: Double, value: String): String = js.native
-  @JSImport("node-tlv", JSImport.Namespace)
-  @js.native
-  def apply(tag: Double, value: String, encoding: Double): String = js.native
+  @scala.inline
+  def apply(tag: String, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(tag: String, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(tag: Double, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(tag: Double, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-tlv", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TLV {
+  class ^ protected ()
+    extends StObject
+       with TLV {
     // @param value Source code docs say "string" only but can support a "Buffer" as well
     // Source code has tests to use a buffer as a value
     def this(tag: String, value: String) = this()
@@ -56,7 +53,9 @@ object mod {
   def DGI_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DGI")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait DOL extends Instantiable1[
+  trait DOL
+    extends StObject
+       with Instantiable1[
           (/* dolData */ Buffer) | (/* dolData */ Double) | (/* dolData */ String), 
           DOLConstructed
         ] {
@@ -73,10 +72,33 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("node-tlv", "DOL")
   @js.native
-  class DOLCls protected () extends DOLConstructed {
+  class DOLCls protected ()
+    extends StObject
+       with DOLConstructed {
     def this(dolData: String) = this()
     def this(dolData: Double) = this()
     def this(dolData: Buffer) = this()
+    
+    /* CompleteClass */
+    override def count(): Double = js.native
+    
+    /* CompleteClass */
+    override def find(args: js.Any*): TL = js.native
+    
+    /* CompleteClass */
+    override def getDolRelatedDataLength(): Double = js.native
+    
+    /* CompleteClass */
+    override def getList(): js.Array[TL] = js.native
+    
+    /* CompleteClass */
+    var list: js.Array[TL] = js.native
+    
+    /* CompleteClass */
+    override def print(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setValue(args: js.Any*): js.Array[TLV] = js.native
   }
   
   @scala.inline
@@ -93,35 +115,27 @@ object mod {
     * Return value of the length field as a hex string.
     */
   /* static member */
-  @JSImport("node-tlv", "L")
-  @js.native
-  def L(value: String): String = js.native
-  @JSImport("node-tlv", "L")
-  @js.native
-  def L(value: String, flag: Boolean): String = js.native
-  @JSImport("node-tlv", "L")
-  @js.native
-  def L(value: Buffer): String = js.native
-  @JSImport("node-tlv", "L")
-  @js.native
-  def L(value: Buffer, flag: Boolean): String = js.native
+  @scala.inline
+  def L(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def L(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def L(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def L(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return value of the length field and the value field as hex string
     */
   /* static member */
-  @JSImport("node-tlv", "LV")
-  @js.native
-  def LV(value: String): String = js.native
-  @JSImport("node-tlv", "LV")
-  @js.native
-  def LV(value: String, flag: Boolean): String = js.native
-  @JSImport("node-tlv", "LV")
-  @js.native
-  def LV(value: Buffer): String = js.native
-  @JSImport("node-tlv", "LV")
-  @js.native
-  def LV(value: Buffer, flag: Boolean): String = js.native
+  @scala.inline
+  def LV(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def LV(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def LV(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def LV(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return value of the length field as a hex string
@@ -347,19 +361,22 @@ object mod {
     
     var value: String = js.native
   }
-  /* static member */
-  @JSImport("node-tlv", "TLV")
-  @js.native
-  def TLV(tag: String, value: String): String = js.native
-  @JSImport("node-tlv", "TLV")
-  @js.native
-  def TLV(tag: String, value: String, encoding: Double): String = js.native
-  @JSImport("node-tlv", "TLV")
-  @js.native
-  def TLV(tag: Double, value: String): String = js.native
-  @JSImport("node-tlv", "TLV")
-  @js.native
-  def TLV(tag: Double, value: String, encoding: Double): String = js.native
+  object TLV {
+    
+    /* static member */
+    @JSImport("node-tlv", "TLV")
+    @js.native
+    def apply(tag: String, value: String): String = js.native
+    @JSImport("node-tlv", "TLV")
+    @js.native
+    def apply(tag: String, value: String, encoding: Double): String = js.native
+    @JSImport("node-tlv", "TLV")
+    @js.native
+    def apply(tag: Double, value: String): String = js.native
+    @JSImport("node-tlv", "TLV")
+    @js.native
+    def apply(tag: Double, value: String, encoding: Double): String = js.native
+  }
   
   @scala.inline
   def TL_=(x: TL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TL")(x.asInstanceOf[js.Any])
@@ -371,86 +388,65 @@ object mod {
     * Return value of the value field as string
     */
   /* static member */
-  @JSImport("node-tlv", "V")
-  @js.native
-  def V(value: String): String = js.native
+  @scala.inline
+  def V(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("V")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("node-tlv", "adjustLength")
-  @js.native
-  def adjustLength(): Double = js.native
-  @JSImport("node-tlv", "adjustLength")
-  @js.native
-  def adjustLength(length: String): Double = js.native
-  @JSImport("node-tlv", "adjustLength")
-  @js.native
-  def adjustLength(length: Double): Double = js.native
+  @scala.inline
+  def adjustLength(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")().asInstanceOf[Double]
+  @scala.inline
+  def adjustLength(length: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def adjustLength(length: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: js.UndefOr[scala.Nothing], encoding: Double): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: String): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: String, encoding: Double): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: Double): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: Double, encoding: Double): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: Buffer): String = js.native
-  @JSImport("node-tlv", "adjustTag")
-  @js.native
-  def adjustTag(tag: Buffer, encoding: Double): String = js.native
+  @scala.inline
+  def adjustTag(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")().asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: Double, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: Unit, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def adjustTag(tag: Buffer, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("node-tlv", "adjustValue")
-  @js.native
-  def adjustValue(): String = js.native
-  @JSImport("node-tlv", "adjustValue")
-  @js.native
-  def adjustValue(value: String): String = js.native
-  @JSImport("node-tlv", "adjustValue")
-  @js.native
-  def adjustValue(value: Buffer): String = js.native
+  @scala.inline
+  def adjustValue(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")().asInstanceOf[String]
+  @scala.inline
+  def adjustValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def adjustValue(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("node-tlv", "getBufferLength")
-  @js.native
-  def getBufferLength(len: Double): Buffer = js.native
-  @JSImport("node-tlv", "getBufferLength")
-  @js.native
-  def getBufferLength(len: Double, encoding: Double): Buffer = js.native
+  @scala.inline
+  def getBufferLength(len: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def getBufferLength(len: Double, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* static member */
-  @JSImport("node-tlv", "getBufferTag")
-  @js.native
-  def getBufferTag(buf: Buffer, encoding: Double): Buffer = js.native
+  @scala.inline
+  def getBufferTag(buf: Buffer, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferTag")(buf.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("node-tlv", "getName")
-  @js.native
-  def getName(tag: String): String = js.native
+  @scala.inline
+  def getName(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Return the name of the TLV.
     */
   /* static member */
-  @JSImport("node-tlv", "getName")
-  @js.native
-  def getName(tag: Double): String = js.native
+  @scala.inline
+  def getName(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("node-tlv", "log")
-  @js.native
-  def log(): Unit = js.native
+  @scala.inline
+  def log(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[Unit]
   
   /**
     * Parse
@@ -465,38 +461,33 @@ object mod {
     * Get TLV objects.
     */
   /* static member */
-  @JSImport("node-tlv", "parseList")
-  @js.native
-  def parseList(data: String): js.Array[TLV] = js.native
-  @JSImport("node-tlv", "parseList")
-  @js.native
-  def parseList(data: String, encoding: Double): js.Array[TLV] = js.native
-  @JSImport("node-tlv", "parseList")
-  @js.native
-  def parseList(data: Buffer): js.Array[TLV] = js.native
-  @JSImport("node-tlv", "parseList")
-  @js.native
-  def parseList(data: Buffer, encoding: Double): js.Array[TLV] = js.native
+  @scala.inline
+  def parseList(data: String): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
+  @scala.inline
+  def parseList(data: String, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
+  @scala.inline
+  def parseList(data: Buffer): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
+  @scala.inline
+  def parseList(data: Buffer, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
   
   @scala.inline
   def parse_=(x: js.Function2[/* data */ js.UndefOr[String | Buffer], /* encoding */ js.UndefOr[Double], TLV]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait DOLConstructed extends StObject {
     
-    def count(): Double = js.native
+    def count(): Double
     
-    def find(args: js.Any*): TL = js.native
+    def find(args: js.Any*): TL
     
-    def getDolRelatedDataLength(): Double = js.native
+    def getDolRelatedDataLength(): Double
     
-    def getList(): js.Array[TL] = js.native
+    def getList(): js.Array[TL]
     
-    var list: js.Array[TL] = js.native
+    var list: js.Array[TL]
     
-    def print(): Unit = js.native
+    def print(): Unit
     
-    def setValue(args: js.Any*): js.Array[TLV] = js.native
+    def setValue(args: js.Any*): js.Array[TLV]
   }
   object DOLConstructed {
     

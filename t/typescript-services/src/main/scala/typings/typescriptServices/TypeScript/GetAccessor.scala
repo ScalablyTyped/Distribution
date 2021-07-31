@@ -2,21 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAccessor extends AST {
+trait GetAccessor
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  var parameterList: ParameterList = js.native
+  var parameterList: ParameterList
   
-  var propertyName: IASTToken = js.native
+  var propertyName: IASTToken
   
-  var typeAnnotation: TypeAnnotation = js.native
+  var typeAnnotation: TypeAnnotation
 }
 object GetAccessor {
   

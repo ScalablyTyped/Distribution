@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to navigate to the next data record of the bound data source.
   */
-@js.native
-trait GoToDataRecordCommand extends CommandBase {
+trait GoToDataRecordCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the GoToDataRecordCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param activeRecordIndex An integer value specifying index of the next data record.
     */
-  def execute(activeRecordIndex: Double): Boolean = js.native
+  def execute(activeRecordIndex: Double): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[DataRecordOptions] = js.native
+  def getState(): CommandState[DataRecordOptions]
 }
 object GoToDataRecordCommand {
   

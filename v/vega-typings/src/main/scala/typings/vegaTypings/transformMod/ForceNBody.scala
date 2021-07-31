@@ -4,27 +4,27 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.nbody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceNBody extends Force {
+trait ForceNBody
+  extends StObject
+     with Force {
   
-  var distanceMax: js.UndefOr[Double | SignalRef] = js.native
+  var distanceMax: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var distanceMin: js.UndefOr[Double | SignalRef] = js.native
+  var distanceMin: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var force: nbody = js.native
+  var force: nbody
   
-  var strength: js.UndefOr[Double | SignalRef] = js.native
+  var strength: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var theta: js.UndefOr[Double | SignalRef] = js.native
+  var theta: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ForceNBody {
   
   @scala.inline
-  def apply(force: nbody): ForceNBody = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+  def apply(): ForceNBody = {
+    val __obj = js.Dynamic.literal(force = "nbody")
     __obj.asInstanceOf[ForceNBody]
   }
   

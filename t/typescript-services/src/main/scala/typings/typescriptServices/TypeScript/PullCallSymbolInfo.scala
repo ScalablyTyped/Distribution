@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullCallSymbolInfo extends StObject {
   
-  var ast: AST = js.native
+  var ast: AST
   
-  var candidateSignature: PullSignatureSymbol = js.native
+  var candidateSignature: PullSignatureSymbol
   
-  var enclosingScopeSymbol: PullSymbol = js.native
+  var enclosingScopeSymbol: PullSymbol
   
-  var isConstructorCall: Boolean = js.native
+  var isConstructorCall: Boolean
   
-  var resolvedSignatures: js.Array[PullSignatureSymbol] = js.native
+  var resolvedSignatures: js.Array[PullSignatureSymbol]
   
-  var targetSymbol: PullSymbol = js.native
+  var targetSymbol: PullSymbol
 }
 object PullCallSymbolInfo {
   

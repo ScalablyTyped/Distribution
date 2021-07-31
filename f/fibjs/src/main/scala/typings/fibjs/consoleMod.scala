@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 全局对象。可用于提示信息，警告和错误记录。通过启动配置文件，可将日志定位到不同的设备，以便于跟踪。日志支持格式化输出，例如：,```JavaScript,console.log("%d + %d = %d", 100, 200, 100 + 200);,```,可以使用的格式化参数如下：,- %s - 字符串,- %d - 数字，包括整数和数字,- %j - 以 JSON 格式输出对象,- %% - 输出字符 '%' 本身
   */
 object consoleMod {
+  
+  @JSImport("console", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("console", "ALERT")
   @js.native
@@ -52,205 +55,151 @@ object consoleMod {
   @js.native
   val WARN_ : /* 4 */ Double = js.native
   
-  @JSImport("console", "add")
-  @js.native
-  def add(cfg: js.Array[_]): Unit = js.native
-  @JSImport("console", "add")
-  @js.native
-  def add(cfg: js.Object): Unit = js.native
-  @JSImport("console", "add")
-  @js.native
-  def add(`type`: String): Unit = js.native
+  @scala.inline
+  def add(cfg: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def add(cfg: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def add(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "alert")
-  @js.native
-  def alert(args: js.Any*): Unit = js.native
-  @JSImport("console", "alert")
-  @js.native
-  def alert(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def alert(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def alert(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "assert")
-  @js.native
-  def assert(value: js.Any): Unit = js.native
-  @JSImport("console", "assert")
-  @js.native
-  def assert(value: js.Any, msg: String): Unit = js.native
+  @scala.inline
+  def assert(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def assert(value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("console", "clickMouse")
-  @js.native
-  def clickMouse(button: String): Unit = js.native
-  @JSImport("console", "clickMouse")
-  @js.native
-  def clickMouse(button: String, dbclick: Boolean): Unit = js.native
+  @scala.inline
+  def clickMouse(button: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickMouse")(button.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def clickMouse(button: String, dbclick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickMouse")(button.asInstanceOf[js.Any], dbclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "crit")
-  @js.native
-  def crit(args: js.Any*): Unit = js.native
-  @JSImport("console", "crit")
-  @js.native
-  def crit(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def crit(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def crit(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crit")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "debug")
-  @js.native
-  def debug(args: js.Any*): Unit = js.native
-  @JSImport("console", "debug")
-  @js.native
-  def debug(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def debug(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "dir")
-  @js.native
-  def dir(obj: js.Any): Unit = js.native
+  @scala.inline
+  def dir(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "error")
-  @js.native
-  def error(args: js.Any*): Unit = js.native
-  @JSImport("console", "error")
-  @js.native
-  def error(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def error(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("console", "height")
   @js.native
   val height: Double = js.native
   
-  @JSImport("console", "hideCursor")
-  @js.native
-  def hideCursor(): Unit = js.native
+  @scala.inline
+  def hideCursor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideCursor")().asInstanceOf[Unit]
   
-  @JSImport("console", "info")
-  @js.native
-  def info(args: js.Any*): Unit = js.native
-  @JSImport("console", "info")
-  @js.native
-  def info(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def info(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "keyDown")
-  @js.native
-  def keyDown(key: String): Unit = js.native
-  @JSImport("console", "keyDown")
-  @js.native
-  def keyDown(key: String, modifier: String): Unit = js.native
-  @JSImport("console", "keyDown")
-  @js.native
-  def keyDown(key: String, modifier: js.Array[_]): Unit = js.native
+  @scala.inline
+  def keyDown(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def keyDown(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keyDown(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "keyTap")
-  @js.native
-  def keyTap(key: String): Unit = js.native
-  @JSImport("console", "keyTap")
-  @js.native
-  def keyTap(key: String, modifier: String): Unit = js.native
-  @JSImport("console", "keyTap")
-  @js.native
-  def keyTap(key: String, modifier: js.Array[_]): Unit = js.native
+  @scala.inline
+  def keyTap(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def keyTap(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keyTap(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "keyUp")
-  @js.native
-  def keyUp(key: String): Unit = js.native
-  @JSImport("console", "keyUp")
-  @js.native
-  def keyUp(key: String, modifier: String): Unit = js.native
-  @JSImport("console", "keyUp")
-  @js.native
-  def keyUp(key: String, modifier: js.Array[_]): Unit = js.native
+  @scala.inline
+  def keyUp(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def keyUp(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keyUp(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "log")
-  @js.native
-  def log(args: js.Any*): Unit = js.native
-  @JSImport("console", "log")
-  @js.native
-  def log(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def log(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("console", "loglevel")
   @js.native
   val loglevel: Double = js.native
   
-  @JSImport("console", "mouseDown")
-  @js.native
-  def mouseDown(button: String): Unit = js.native
+  @scala.inline
+  def mouseDown(button: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseDown")(button.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "mouseUp")
-  @js.native
-  def mouseUp(button: String): Unit = js.native
+  @scala.inline
+  def mouseUp(button: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseUp")(button.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "moveMouse")
-  @js.native
-  def moveMouse(x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def moveMouse(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveMouse")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "moveTo")
-  @js.native
-  def moveTo(row: Double, column: Double): Unit = js.native
+  @scala.inline
+  def moveTo(row: Double, column: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")(row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "notice")
-  @js.native
-  def notice(args: js.Any*): Unit = js.native
-  @JSImport("console", "notice")
-  @js.native
-  def notice(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def notice(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def notice(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notice")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "print")
-  @js.native
-  def print(args: js.Any*): Unit = js.native
-  @JSImport("console", "print")
-  @js.native
-  def print(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def print(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def print(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("console", "readLine")
-  @js.native
-  def readLine(): String = js.native
-  @JSImport("console", "readLine")
-  @js.native
-  def readLine(msg: String): String = js.native
+  @scala.inline
+  def readLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")().asInstanceOf[String]
+  @scala.inline
+  def readLine(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("console", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("console", "showCursor")
-  @js.native
-  def showCursor(): Unit = js.native
+  @scala.inline
+  def showCursor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showCursor")().asInstanceOf[Unit]
   
-  @JSImport("console", "time")
-  @js.native
-  def time(): Unit = js.native
-  @JSImport("console", "time")
-  @js.native
-  def time(label: String): Unit = js.native
+  @scala.inline
+  def time(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Unit]
+  @scala.inline
+  def time(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "timeElapse")
-  @js.native
-  def timeElapse(): Unit = js.native
-  @JSImport("console", "timeElapse")
-  @js.native
-  def timeElapse(label: String): Unit = js.native
+  @scala.inline
+  def timeElapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeElapse")().asInstanceOf[Unit]
+  @scala.inline
+  def timeElapse(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeElapse")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "timeEnd")
-  @js.native
-  def timeEnd(): Unit = js.native
-  @JSImport("console", "timeEnd")
-  @js.native
-  def timeEnd(label: String): Unit = js.native
+  @scala.inline
+  def timeEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")().asInstanceOf[Unit]
+  @scala.inline
+  def timeEnd(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "trace")
-  @js.native
-  def trace(): Unit = js.native
-  @JSImport("console", "trace")
-  @js.native
-  def trace(label: String): Unit = js.native
+  @scala.inline
+  def trace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")().asInstanceOf[Unit]
+  @scala.inline
+  def trace(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "typeString")
-  @js.native
-  def typeString(text: String): Unit = js.native
+  @scala.inline
+  def typeString(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("typeString")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("console", "warn")
-  @js.native
-  def warn(args: js.Any*): Unit = js.native
-  @JSImport("console", "warn")
-  @js.native
-  def warn(fmt: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def warn(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("console", "width")
   @js.native

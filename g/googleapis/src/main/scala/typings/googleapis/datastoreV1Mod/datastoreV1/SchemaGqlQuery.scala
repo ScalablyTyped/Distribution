@@ -3,14 +3,12 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A [GQL
   * query](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
   */
-@js.native
 trait SchemaGqlQuery extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGqlQuery extends StObject {
     * &#39;string literal&#39;` is not allowed, while `SELECT * FROM Kind WHERE
     * a = @value` is.
     */
-  var allowLiterals: js.UndefOr[Boolean] = js.native
+  var allowLiterals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For each non-reserved named binding site in the query string, there must
@@ -27,7 +25,7 @@ trait SchemaGqlQuery extends StObject {
     * must match regex `A-Za-z_$*`, must not match regex `__.*__`, and must not
     * be `&quot;&quot;`.
     */
-  var namedBindings: js.UndefOr[StringDictionary[SchemaGqlQueryParameter]] = js.native
+  var namedBindings: js.UndefOr[StringDictionary[SchemaGqlQueryParameter]] = js.undefined
   
   /**
     * Numbered binding site @1 references the first numbered parameter,
@@ -35,13 +33,13 @@ trait SchemaGqlQuery extends StObject {
     * binding site numbered i in `query_string`, there must be an i-th numbered
     * parameter. The inverse must also be true.
     */
-  var positionalBindings: js.UndefOr[js.Array[SchemaGqlQueryParameter]] = js.native
+  var positionalBindings: js.UndefOr[js.Array[SchemaGqlQueryParameter]] = js.undefined
   
   /**
     * A string of the format described
     * [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
     */
-  var queryString: js.UndefOr[String] = js.native
+  var queryString: js.UndefOr[String] = js.undefined
 }
 object SchemaGqlQuery {
   

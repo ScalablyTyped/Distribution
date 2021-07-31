@@ -9,54 +9,43 @@ import typings.leaflet.mod.Control_.Scale
 import typings.leaflet.mod.Control_.ScaleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object control {
   
-  @JSImport("leaflet", "control.attribution")
+  @JSImport("leaflet", "control")
   @js.native
-  def attribution(): Attribution = js.native
-  @JSImport("leaflet", "control.attribution")
-  @js.native
-  def attribution(options: AttributionOptions): Attribution = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: js.UndefOr[scala.Nothing], options: LayersOptions): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject, options: LayersOptions): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: LayersObject): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: LayersObject, overlays: js.UndefOr[scala.Nothing], options: LayersOptions): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: LayersObject, overlays: LayersObject): Layers = js.native
-  @JSImport("leaflet", "control.layers")
-  @js.native
-  def layers(baseLayers: LayersObject, overlays: LayersObject, options: LayersOptions): Layers = js.native
+  @scala.inline
+  def attribution(): Attribution = ^.asInstanceOf[js.Dynamic].applyDynamic("attribution")().asInstanceOf[Attribution]
+  @scala.inline
+  def attribution(options: AttributionOptions): Attribution = ^.asInstanceOf[js.Dynamic].applyDynamic("attribution")(options.asInstanceOf[js.Any]).asInstanceOf[Attribution]
   
-  @JSImport("leaflet", "control.scale")
-  @js.native
-  def scale(): Scale = js.native
-  @JSImport("leaflet", "control.scale")
-  @js.native
-  def scale(options: ScaleOptions): Scale = js.native
+  @scala.inline
+  def layers(): Layers = ^.asInstanceOf[js.Dynamic].applyDynamic("layers")().asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: Unit, overlays: Unit, options: LayersOptions): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: Unit, overlays: LayersObject): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any])).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: Unit, overlays: LayersObject, options: LayersOptions): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: LayersObject): Layers = ^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any]).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: LayersObject, overlays: Unit, options: LayersOptions): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: LayersObject, overlays: LayersObject): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any])).asInstanceOf[Layers]
+  @scala.inline
+  def layers(baseLayers: LayersObject, overlays: LayersObject, options: LayersOptions): Layers = (^.asInstanceOf[js.Dynamic].applyDynamic("layers")(baseLayers.asInstanceOf[js.Any], overlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layers]
   
-  @JSImport("leaflet", "control.zoom")
-  @js.native
-  def zoom(): typings.leaflet.mod.Control_.Zoom = js.native
-  @JSImport("leaflet", "control.zoom")
-  @js.native
-  def zoom(options: typings.leaflet.mod.Control_.ZoomOptions): typings.leaflet.mod.Control_.Zoom = js.native
+  @scala.inline
+  def scale(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("scale")().asInstanceOf[Scale]
+  @scala.inline
+  def scale(options: ScaleOptions): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("scale")(options.asInstanceOf[js.Any]).asInstanceOf[Scale]
+  
+  @scala.inline
+  def zoom(): typings.leaflet.mod.Control_.Zoom = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[typings.leaflet.mod.Control_.Zoom]
+  @scala.inline
+  def zoom(options: typings.leaflet.mod.Control_.ZoomOptions): typings.leaflet.mod.Control_.Zoom = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Control_.Zoom]
 }

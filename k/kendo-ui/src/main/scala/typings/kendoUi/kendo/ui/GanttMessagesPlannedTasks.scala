@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttMessagesPlannedTasks extends StObject {
   
-  var days: js.UndefOr[String] = js.native
+  var days: js.UndefOr[String] = js.undefined
   
-  var hours: js.UndefOr[String] = js.native
+  var hours: js.UndefOr[String] = js.undefined
   
-  var minutes: js.UndefOr[String] = js.native
+  var minutes: js.UndefOr[String] = js.undefined
   
-  var offsetTooltipAdvanced: js.UndefOr[String] = js.native
+  var offsetTooltipAdvanced: js.UndefOr[String] = js.undefined
   
-  var offsetTooltipDelay: js.UndefOr[String] = js.native
+  var offsetTooltipDelay: js.UndefOr[String] = js.undefined
   
-  var seconds: js.UndefOr[String] = js.native
+  var seconds: js.UndefOr[String] = js.undefined
   
-  var switchText: js.UndefOr[String] = js.native
+  var switchText: js.UndefOr[String] = js.undefined
 }
 object GanttMessagesPlannedTasks {
   

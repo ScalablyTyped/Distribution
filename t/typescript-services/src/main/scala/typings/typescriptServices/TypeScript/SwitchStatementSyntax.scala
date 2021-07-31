@@ -2,12 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SwitchStatementSyntax
-  extends SyntaxNode
+  extends StObject
+     with SyntaxNode
      with IStatementSyntax {
   
   var closeBraceToken: ISyntaxToken = js.native

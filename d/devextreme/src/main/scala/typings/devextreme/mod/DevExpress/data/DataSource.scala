@@ -4,7 +4,6 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -56,17 +55,17 @@ trait DataSource extends StObject {
   /**
     * [descr:DataSource.items()]
     */
-  def items(): js.Array[_] = js.native
+  def items(): js.Array[js.Any] = js.native
   
   /**
     * [descr:DataSource.key()]
     */
-  def key(): js.Any with String with Double = js.native
+  def key(): js.Any & String & Double = js.native
   
   /**
     * [descr:DataSource.load()]
     */
-  def load(): Promise[_] with JQueryPromise[_] = js.native
+  def load(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:DataSource.loadOptions()]
@@ -121,7 +120,7 @@ trait DataSource extends StObject {
   /**
     * [descr:DataSource.reload()]
     */
-  def reload(): Promise[_] with JQueryPromise[_] = js.native
+  def reload(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:DataSource.requireTotalCount()]
@@ -135,7 +134,7 @@ trait DataSource extends StObject {
   /**
     * [descr:DataSource.searchExpr()]
     */
-  def searchExpr(): String with js.Function with (js.Array[String | js.Function]) = js.native
+  def searchExpr(): String & js.Function & (js.Array[String | js.Function]) = js.native
   /**
     * [descr:DataSource.searchExpr(expr)]
     */

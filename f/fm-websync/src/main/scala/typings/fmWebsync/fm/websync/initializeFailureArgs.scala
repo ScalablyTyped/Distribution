@@ -2,16 +2,16 @@ package typings.fmWebsync.fm.websync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait initializeFailureArgs extends baseArgs {
+trait initializeFailureArgs
+  extends StObject
+     with baseArgs {
   
   /**
     * The error generated while initializing.
     */
-  var error: String = js.native
+  var error: String
 }
 object initializeFailureArgs {
   

@@ -2,55 +2,55 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Resizable //////////////////////////////////////////////////
-@js.native
-trait ResizableOptions extends ResizableEvents {
+trait ResizableOptions
+  extends StObject
+     with ResizableEvents {
   
-  var alsoResize: js.UndefOr[js.Any] = js.native
+  var alsoResize: js.UndefOr[js.Any] = js.undefined
   
   // Selector, JQuery or Element
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animateDuration: js.UndefOr[js.Any] = js.native
+  var animateDuration: js.UndefOr[js.Any] = js.undefined
   
   // number or string
-  var animateEasing: js.UndefOr[String] = js.native
+  var animateEasing: js.UndefOr[String] = js.undefined
   
-  var aspectRatio: js.UndefOr[js.Any] = js.native
+  var aspectRatio: js.UndefOr[js.Any] = js.undefined
   
   // boolean or number
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.native
+  var containment: js.UndefOr[js.Any] = js.undefined
   
   // Selector, Element or string
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var ghost: js.UndefOr[Boolean] = js.native
+  var ghost: js.UndefOr[Boolean] = js.undefined
   
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
-  var handles: js.UndefOr[js.Any] = js.native
+  var handles: js.UndefOr[js.Any] = js.undefined
   
   // string or object
-  var helper: js.UndefOr[String] = js.native
+  var helper: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
 }
 object ResizableOptions {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServingRestriction extends StObject {
   
   /** The contexts for the restriction. */
-  var contexts: js.UndefOr[js.Array[ServingContext]] = js.native
+  var contexts: js.UndefOr[js.Array[ServingContext]] = js.undefined
   
   /** Disapproval bound to this restriction. Only present if status=DISAPPROVED. Can be used to filter the response of the creatives.list method. */
-  var disapproval: js.UndefOr[Disapproval] = js.native
+  var disapproval: js.UndefOr[Disapproval] = js.undefined
   
   /**
     * Any disapprovals bound to this restriction. Only present if status=DISAPPROVED. Can be used to filter the response of the creatives.list method. Deprecated; please use disapproval
     * field instead.
     */
-  var disapprovalReasons: js.UndefOr[js.Array[Disapproval]] = js.native
+  var disapprovalReasons: js.UndefOr[js.Array[Disapproval]] = js.undefined
   
   /** The status of the creative in this context (for example, it has been explicitly disapproved or is pending review). */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object ServingRestriction {
   

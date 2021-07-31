@@ -2,13 +2,11 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ORIGINSCOPED extends StObject {
   
-  var ORIGIN_SCOPED: Boolean = js.native
+  var ORIGIN_SCOPED: Boolean
 }
 object ORIGINSCOPED {
   

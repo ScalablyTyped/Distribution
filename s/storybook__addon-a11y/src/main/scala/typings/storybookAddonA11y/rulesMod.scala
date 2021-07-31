@@ -4,7 +4,6 @@ import typings.axeCore.mod.CheckResult
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rulesMod {
@@ -16,33 +15,40 @@ object rulesMod {
   object ImpactValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ImpactValue with String] = js.native
+    def apply(value: String): js.UndefOr[ImpactValue & String] = js.native
     
     @js.native
-    sealed trait CRITICAL extends ImpactValue
-    /* "critical" */ val CRITICAL: typings.storybookAddonA11y.rulesMod.ImpactValue.CRITICAL with String = js.native
+    sealed trait CRITICAL
+      extends StObject
+         with ImpactValue
+    /* "critical" */ val CRITICAL: typings.storybookAddonA11y.rulesMod.ImpactValue.CRITICAL & String = js.native
     
     @js.native
-    sealed trait MINOR extends ImpactValue
-    /* "minor" */ val MINOR: typings.storybookAddonA11y.rulesMod.ImpactValue.MINOR with String = js.native
+    sealed trait MINOR
+      extends StObject
+         with ImpactValue
+    /* "minor" */ val MINOR: typings.storybookAddonA11y.rulesMod.ImpactValue.MINOR & String = js.native
     
     @js.native
-    sealed trait MODERATE extends ImpactValue
-    /* "moderate" */ val MODERATE: typings.storybookAddonA11y.rulesMod.ImpactValue.MODERATE with String = js.native
+    sealed trait MODERATE
+      extends StObject
+         with ImpactValue
+    /* "moderate" */ val MODERATE: typings.storybookAddonA11y.rulesMod.ImpactValue.MODERATE & String = js.native
     
     @js.native
-    sealed trait SERIOUS extends ImpactValue
-    /* "serious" */ val SERIOUS: typings.storybookAddonA11y.rulesMod.ImpactValue.SERIOUS with String = js.native
+    sealed trait SERIOUS
+      extends StObject
+         with ImpactValue
+    /* "serious" */ val SERIOUS: typings.storybookAddonA11y.rulesMod.ImpactValue.SERIOUS & String = js.native
   }
   
   @JSImport("@storybook/addon-a11y/dist/components/Report/Rules", "Rules")
   @js.native
   val Rules: FunctionComponent[RulesProps] = js.native
   
-  @js.native
   trait RulesProps extends StObject {
     
-    var rules: js.Array[CheckResult] = js.native
+    var rules: js.Array[CheckResult]
   }
   object RulesProps {
     

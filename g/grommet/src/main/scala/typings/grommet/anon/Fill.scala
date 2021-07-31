@@ -4,19 +4,17 @@ import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[SideSize] = js.native
+  var border: js.UndefOr[SideSize] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var pad: js.UndefOr[PadType] = js.native
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object Fill {
   

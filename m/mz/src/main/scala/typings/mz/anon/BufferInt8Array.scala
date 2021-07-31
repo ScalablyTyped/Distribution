@@ -3,15 +3,13 @@ package typings.mz.anon
 import typings.std.Int8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferInt8Array extends StObject {
   
-  var buffer: Int8Array = js.native
+  var buffer: Int8Array
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object BufferInt8Array {
   

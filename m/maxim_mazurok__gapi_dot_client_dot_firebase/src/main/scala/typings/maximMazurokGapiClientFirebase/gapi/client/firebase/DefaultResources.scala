@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultResources extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait DefaultResources extends StObject {
     * five alphanumeric characters to create your default Hosting site name. For example, if your `projectId` is `myproject123`, your default Hosting site name might be:
     * `myproject123-a5c16`
     */
-  var hostingSite: js.UndefOr[String] = js.native
+  var hostingSite: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Project's default GCP resource location. The location is one of the available [GCP resource locations](https://firebase.google.com/docs/projects/locations). This field
     * is omitted if the default GCP resource location has not been finalized yet. To set a Project's default GCP resource location, call
     * [`FinalizeDefaultLocation`](../projects.defaultLocation/finalize) after you add Firebase resources to the Project.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * The default Firebase Realtime Database instance name, in the format: PROJECT_ID Though rare, your `projectId` might already be used as the name for an existing Realtime Database
@@ -29,10 +27,10 @@ trait DefaultResources extends StObject {
     * hyphen then five alphanumeric characters to create your default Realtime Database instance name. For example, if your `projectId` is `myproject123`, your default database instance
     * name might be: `myproject123-a5c16`
     */
-  var realtimeDatabaseInstance: js.UndefOr[String] = js.native
+  var realtimeDatabaseInstance: js.UndefOr[String] = js.undefined
   
   /** The default Cloud Storage for Firebase storage bucket, in the format: PROJECT_ID.appspot.com */
-  var storageBucket: js.UndefOr[String] = js.native
+  var storageBucket: js.UndefOr[String] = js.undefined
 }
 object DefaultResources {
   

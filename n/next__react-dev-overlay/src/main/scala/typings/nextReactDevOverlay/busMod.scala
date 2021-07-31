@@ -4,10 +4,13 @@ import typings.stacktraceParser.mod.StackFrame
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object busMod {
+  
+  @JSImport("@next/react-dev-overlay/lib/internal/bus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@next/react-dev-overlay/lib/internal/bus", "TYPE_BUILD_ERROR")
   @js.native
@@ -29,24 +32,22 @@ object busMod {
   @js.native
   val TYPE_UNHANDLED_REJECTION: /* "unhandled-rejection" */ String = js.native
   
-  @JSImport("@next/react-dev-overlay/lib/internal/bus", "emit")
-  @js.native
-  def emit(ev: BusEvent): Unit = js.native
+  @scala.inline
+  def emit(ev: BusEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(ev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@next/react-dev-overlay/lib/internal/bus", "off")
-  @js.native
-  def off(fn: BusEventHandler): Boolean = js.native
+  @scala.inline
+  def off(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@next/react-dev-overlay/lib/internal/bus", "on")
-  @js.native
-  def on(fn: BusEventHandler): Boolean = js.native
+  @scala.inline
+  def on(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
-  trait BuildError extends BusEvent {
+  trait BuildError
+    extends StObject
+       with BusEvent {
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: /* "build-error" */ String = js.native
+    var `type`: /* "build-error" */ String
   }
   object BuildError {
     
@@ -68,10 +69,11 @@ object busMod {
     }
   }
   
-  @js.native
-  trait BuildOk extends BusEvent {
+  trait BuildOk
+    extends StObject
+       with BusEvent {
     
-    var `type`: /* "build-ok" */ String = js.native
+    var `type`: /* "build-ok" */ String
   }
   object BuildOk {
     
@@ -138,10 +140,11 @@ object busMod {
   
   type BusEventHandler = js.Function1[/* ev */ BusEvent, Unit]
   
-  @js.native
-  trait FastRefresh extends BusEvent {
+  trait FastRefresh
+    extends StObject
+       with BusEvent {
     
-    var `type`: /* "fast-refresh" */ String = js.native
+    var `type`: /* "fast-refresh" */ String
   }
   object FastRefresh {
     
@@ -160,14 +163,15 @@ object busMod {
     }
   }
   
-  @js.native
-  trait UnhandledError extends BusEvent {
+  trait UnhandledError
+    extends StObject
+       with BusEvent {
     
-    var frames: js.Array[StackFrame] = js.native
+    var frames: js.Array[StackFrame]
     
-    var reason: Error = js.native
+    var reason: Error
     
-    var `type`: /* "unhandled-error" */ String = js.native
+    var `type`: /* "unhandled-error" */ String
   }
   object UnhandledError {
     
@@ -195,14 +199,15 @@ object busMod {
     }
   }
   
-  @js.native
-  trait UnhandledRejection extends BusEvent {
+  trait UnhandledRejection
+    extends StObject
+       with BusEvent {
     
-    var frames: js.Array[StackFrame] = js.native
+    var frames: js.Array[StackFrame]
     
-    var reason: Error = js.native
+    var reason: Error
     
-    var `type`: /* "unhandled-rejection" */ String = js.native
+    var `type`: /* "unhandled-rejection" */ String
   }
   object UnhandledRejection {
     

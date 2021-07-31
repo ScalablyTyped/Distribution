@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gatway deletion confirmation. */
-@js.native
 trait GatewayDelete extends StObject {
   
   /** The gateway ID of the deleted gateway. */
-  var gateway_id: js.UndefOr[String] = js.native
+  var gateway_id: js.UndefOr[String] = js.undefined
   
   /** The status of the request. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object GatewayDelete {
   

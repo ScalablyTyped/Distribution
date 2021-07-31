@@ -2,29 +2,30 @@ package typings.antvPathUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLineIntersectMod {
   
-  @JSImport("@antv/path-util/lib/get-line-intersect", JSImport.Default)
+  @JSImport("@antv/path-util/lib/get-line-intersect", JSImport.Namespace)
   @js.native
-  def default(p0: Point, p1: Point, p2: Point, p3: Point): Point | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(p0: Point, p1: Point, p2: Point, p3: Point): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
+  
   trait Point extends StObject {
     
     /**
       * x 值
       * @type {number}
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * y 值
       * @type {number}
       */
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     

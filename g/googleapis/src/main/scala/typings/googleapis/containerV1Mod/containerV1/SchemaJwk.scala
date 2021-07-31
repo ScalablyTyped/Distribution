@@ -2,59 +2,57 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Jwk is a JSON Web Key as specified in RFC 7517
   */
-@js.native
 trait SchemaJwk extends StObject {
   
   /**
     * NOLINT
     */
-  var alg: js.UndefOr[String] = js.native
+  var alg: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var crv: js.UndefOr[String] = js.native
+  var crv: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var e: js.UndefOr[String] = js.native
+  var e: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var kid: js.UndefOr[String] = js.native
+  var kid: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var kty: js.UndefOr[String] = js.native
+  var kty: js.UndefOr[String] = js.undefined
   
   /**
     * Fields for RSA keys. NOLINT
     */
-  var n: js.UndefOr[String] = js.native
+  var n: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var use: js.UndefOr[String] = js.native
+  var use: js.UndefOr[String] = js.undefined
   
   /**
     * Fields for ECDSA keys. NOLINT
     */
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var y: js.UndefOr[String] = js.native
+  var y: js.UndefOr[String] = js.undefined
 }
 object SchemaJwk {
   

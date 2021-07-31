@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadBalancerBackendServerPolicyMod {
@@ -44,6 +43,10 @@ object loadBalancerBackendServerPolicyMod {
   /* static members */
   object LoadBalancerBackendServerPolicy {
     
+    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoadBalancerBackendServerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,50 +56,44 @@ object loadBalancerBackendServerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoadBalancerBackendServerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoadBalancerBackendServerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerBackendServerPolicyState): LoadBalancerBackendServerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoadBalancerBackendServerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerBackendServerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancerBackendServerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerBackendServerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerBackendServerPolicyState): LoadBalancerBackendServerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerBackendServerPolicy]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: LoadBalancerBackendServerPolicyState,
       opts: CustomResourceOptions
-    ): LoadBalancerBackendServerPolicy = js.native
+    ): LoadBalancerBackendServerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerBackendServerPolicy]
     
     /**
       * Returns true if the given object is an instance of LoadBalancerBackendServerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy */ Boolean]
   }
   
-  @js.native
   trait LoadBalancerBackendServerPolicyArgs extends StObject {
     
     /**
       * The instance port to apply the policy to.
       */
-    val instancePort: Input[Double] = js.native
+    val instancePort: Input[Double]
     
     /**
       * The load balancer to attach the policy to.
       */
-    val loadBalancerName: Input[String] = js.native
+    val loadBalancerName: Input[String]
     
     /**
       * List of Policy Names to apply to the backend server.
       */
-    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object LoadBalancerBackendServerPolicyArgs {
     
@@ -126,23 +123,22 @@ object loadBalancerBackendServerPolicyMod {
     }
   }
   
-  @js.native
   trait LoadBalancerBackendServerPolicyState extends StObject {
     
     /**
       * The instance port to apply the policy to.
       */
-    val instancePort: js.UndefOr[Input[Double]] = js.native
+    val instancePort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The load balancer to attach the policy to.
       */
-    val loadBalancerName: js.UndefOr[Input[String]] = js.native
+    val loadBalancerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Policy Names to apply to the backend server.
       */
-    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object LoadBalancerBackendServerPolicyState {
     

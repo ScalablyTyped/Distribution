@@ -4,7 +4,6 @@ import typings.vscodeLanguageserver.callHierarchyProposedMod.CallHierarchy
 import typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ProposedFeatures {
@@ -24,6 +23,6 @@ object ProposedFeatures {
     _underscore, 
     _underscore, 
     _underscore, 
-    CallHierarchy with SemanticTokens
+    CallHierarchy & SemanticTokens
   ] = js.native
 }

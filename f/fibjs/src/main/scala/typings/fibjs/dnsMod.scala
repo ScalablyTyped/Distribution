@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object dnsMod {
   
-  @JSImport("dns", "lookup")
+  @JSImport("dns", JSImport.Namespace)
   @js.native
-  def lookup(name: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dns", "resolve")
-  @js.native
-  def resolve(name: String): js.Array[_] = js.native
+  @scala.inline
+  def lookup(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def resolve(name: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

@@ -2,11 +2,11 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UseComboboxGetMenuPropsOptions extends GetMenuPropsOptions
+trait UseComboboxGetMenuPropsOptions
+  extends StObject
+     with GetMenuPropsOptions
 object UseComboboxGetMenuPropsOptions {
   
   @scala.inline

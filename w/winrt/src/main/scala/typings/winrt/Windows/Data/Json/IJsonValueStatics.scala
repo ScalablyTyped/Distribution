@@ -3,21 +3,19 @@ package typings.winrt.Windows.Data.Json
 import typings.winrt.anon.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonValueStatics extends StObject {
   
-  def createBooleanValue(input: Boolean): JsonValue = js.native
+  def createBooleanValue(input: Boolean): JsonValue
   
-  def createNumberValue(input: Double): JsonValue = js.native
+  def createNumberValue(input: Double): JsonValue
   
-  def createStringValue(input: String): JsonValue = js.native
+  def createStringValue(input: String): JsonValue
   
-  def parse(input: String): JsonValue = js.native
+  def parse(input: String): JsonValue
   
-  def tryParse(input: String): Result = js.native
+  def tryParse(input: String): Result
 }
 object IJsonValueStatics {
   

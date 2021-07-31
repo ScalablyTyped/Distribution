@@ -8,7 +8,6 @@ import typings.reactBootstrap.mod.Omit
 import typings.reactBootstrap.reactBootstrapStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navDropdownMod {
@@ -22,16 +21,17 @@ object navDropdownMod {
   trait NavDropdown
     extends Component[NavDropdownProps, js.Object, js.Any]
   
-  @js.native
-  trait NavDropdownBaseProps extends DropdownBaseProps {
+  trait NavDropdownBaseProps
+    extends StObject
+       with DropdownBaseProps {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var noCaret: js.UndefOr[Boolean] = js.native
+    var noCaret: js.UndefOr[Boolean] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object NavDropdownBaseProps {
     
@@ -70,5 +70,5 @@ object navDropdownMod {
     }
   }
   
-  type NavDropdownProps = NavDropdownBaseProps with (Omit[HTMLProps[NavDropdown], title])
+  type NavDropdownProps = NavDropdownBaseProps & (Omit[HTMLProps[NavDropdown], title])
 }

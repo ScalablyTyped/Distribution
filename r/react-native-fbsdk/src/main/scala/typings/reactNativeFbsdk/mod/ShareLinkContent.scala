@@ -3,16 +3,16 @@ package typings.reactNativeFbsdk.mod
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareLinkContent extends ShareContent {
+trait ShareLinkContent
+  extends StObject
+     with ShareContent {
   
   /**
     * Common parameters for share content;
     */
-  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.native
+  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.undefined
   
   /**
     * The Description of the link.
@@ -21,43 +21,43 @@ trait ShareLinkContent extends ShareContent {
     * @deprecated `contentDescription` is deprecated from Graph API 2.9.
     * For more information, see https://developers.facebook.com/docs/apps/changelog#v2_9_deprecations.
     */
-  var contentDescription: js.UndefOr[String] = js.native
+  var contentDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The title to display for this link.
     * @deprecated `contentTitle` is deprecated from Graph API 2.9.
     * For more information, see https://developers.facebook.com/docs/apps/changelog#v2_9_deprecations.
     */
-  var contentTitle: js.UndefOr[String] = js.native
+  var contentTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The type of content to be shared is link.
     */
-  var contentType: link = js.native
+  var contentType: link
   
   /**
     * URL for the content being shared.
     */
-  var contentUrl: String = js.native
+  var contentUrl: String
   
   /**
     * The URL of a picture to attach to this comment.
     * @deprecated `imageUrl` is deprecated from Graph API 2.9.
     * For more information, see https://developers.facebook.com/docs/apps/changelog#v2_9_deprecations.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The predefined quote to attach to this comment.
     * If specified, the quote text will render with custom styling on top of the link.
     */
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
 }
 object ShareLinkContent {
   
   @scala.inline
-  def apply(contentType: link, contentUrl: String): ShareLinkContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], contentUrl = contentUrl.asInstanceOf[js.Any])
+  def apply(contentUrl: String): ShareLinkContent = {
+    val __obj = js.Dynamic.literal(contentType = "link", contentUrl = contentUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareLinkContent]
   }
   

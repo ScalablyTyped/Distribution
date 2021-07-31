@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,15 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * collected in the service {@link FunctionDescription} .
   * @see com.sun.star.sheet.FunctionDescriptions
   */
-@js.native
-trait XFunctionDescriptions extends XIndexAccess {
+trait XFunctionDescriptions
+  extends StObject
+     with XIndexAccess {
   
   /**
     * finds a function description by the identifier of the function.
     * @param nId is the identifier of the function description (the same that is used in the service {@link RecentFunctions} .
     * @returns the sequence of property values (described in {@link FunctionDescription} ).
     */
-  def getById(nId: Double): SafeArray[PropertyValue] = js.native
+  def getById(nId: Double): SafeArray[PropertyValue]
 }
 object XFunctionDescriptions {
   

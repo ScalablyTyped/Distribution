@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** Percentage of completion of this operation, ranging from 0 to 100. */
-  var progressPercentage: js.UndefOr[Double] = js.native
+  var progressPercentage: js.UndefOr[Double] = js.undefined
   
   /** The full name of the resources that this operation is directly associated with. */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.native
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The start time of the operation. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Detailed status information for each step. The order is undetermined. */
-  var steps: js.UndefOr[js.Array[Step]] = js.native
+  var steps: js.UndefOr[js.Array[Step]] = js.undefined
 }
 object OperationMetadata {
   

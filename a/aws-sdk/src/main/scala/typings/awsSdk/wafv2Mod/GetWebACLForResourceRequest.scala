@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWebACLForResourceRequest extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) of the resource.
     */
-  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn
 }
 object GetWebACLForResourceRequest {
   

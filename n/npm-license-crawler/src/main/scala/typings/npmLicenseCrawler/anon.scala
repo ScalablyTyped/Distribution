@@ -2,21 +2,19 @@ package typings.npmLicenseCrawler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LicenseUrl extends StObject {
     
-    var licenseUrl: String = js.native
+    var licenseUrl: String
     
-    var licenses: String = js.native
+    var licenses: String
     
-    var parents: String = js.native
+    var parents: String
     
-    var repository: String = js.native
+    var repository: String
   }
   object LicenseUrl {
     

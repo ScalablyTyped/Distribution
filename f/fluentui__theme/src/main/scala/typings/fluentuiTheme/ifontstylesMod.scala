@@ -3,47 +3,45 @@ package typings.fluentuiTheme
 import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ifontstylesMod {
   
-  @js.native
   trait IFontStyles extends StObject {
     
-    var large: IRawStyle = js.native
+    var large: IRawStyle
     
-    var medium: IRawStyle = js.native
+    var medium: IRawStyle
     
-    var mediumPlus: IRawStyle = js.native
+    var mediumPlus: IRawStyle
     
-    var mega: IRawStyle = js.native
+    var mega: IRawStyle
     
-    var small: IRawStyle = js.native
+    var small: IRawStyle
     
-    var smallPlus: IRawStyle = js.native
+    var smallPlus: IRawStyle
     
-    var superLarge: IRawStyle = js.native
+    var superLarge: IRawStyle
     
-    var tiny: IRawStyle = js.native
+    var tiny: IRawStyle
     
-    var xLarge: IRawStyle = js.native
+    var xLarge: IRawStyle
     
     /**
       * @deprecated Exists for forward compatibility with Fabric 7's Fluent theme.
       * Not recommended for use with Fabric 6.
       */
-    var xLargePlus: IRawStyle = js.native
+    var xLargePlus: IRawStyle
     
-    var xSmall: IRawStyle = js.native
+    var xSmall: IRawStyle
     
-    var xxLarge: IRawStyle = js.native
+    var xxLarge: IRawStyle
     
     /**
       * @deprecated Exists for forward compatibility with Fabric 7's Fluent theme
       * Not recommended for use with Fabric 6.
       */
-    var xxLargePlus: IRawStyle = js.native
+    var xxLargePlus: IRawStyle
   }
   object IFontStyles {
     

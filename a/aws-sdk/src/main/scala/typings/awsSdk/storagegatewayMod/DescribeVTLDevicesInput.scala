@@ -2,28 +2,26 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVTLDevicesInput extends StObject {
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * Specifies that the number of VTL devices described be limited to the specified number.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin describing the VTL devices.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * An array of strings, where each string represents the Amazon Resource Name (ARN) of a VTL device.  All of the specified VTL devices must be from the same gateway. If no VTL devices are specified, the result will contain all devices on the specified gateway. 
     */
-  var VTLDeviceARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceARNs] = js.native
+  var VTLDeviceARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceARNs] = js.undefined
 }
 object DescribeVTLDevicesInput {
   

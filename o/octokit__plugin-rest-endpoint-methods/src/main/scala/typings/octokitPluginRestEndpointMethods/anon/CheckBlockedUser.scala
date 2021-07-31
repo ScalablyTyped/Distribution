@@ -2,81 +2,79 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckBlockedUser extends StObject {
   
-  var blockUser: `785` = js.native
+  var blockUser: `785`
   
-  var checkBlockedUser: `786` = js.native
+  var checkBlockedUser: `786`
   
-  var checkMembershipForUser: `787` = js.native
+  var checkMembershipForUser: `787`
   
-  var checkPublicMembershipForUser: `788` = js.native
+  var checkPublicMembershipForUser: `788`
   
-  var convertMemberToOutsideCollaborator: `789` = js.native
+  var convertMemberToOutsideCollaborator: `789`
   
-  var createInvitation: `790` = js.native
+  var createInvitation: `790`
   
-  var createWebhook: `791` = js.native
+  var createWebhook: `791`
   
-  var deleteWebhook: `792` = js.native
+  var deleteWebhook: `792`
   
-  var get: `793` = js.native
+  var get: `793`
   
-  var getMembershipForAuthenticatedUser: `794` = js.native
+  var getMembershipForAuthenticatedUser: `794`
   
-  var getMembershipForUser: `795` = js.native
+  var getMembershipForUser: `795`
   
-  var getWebhook: `796` = js.native
+  var getWebhook: `796`
   
-  var list: `797` = js.native
+  var list: `797`
   
-  var listAppInstallations: `798` = js.native
+  var listAppInstallations: `798`
   
-  var listBlockedUsers: `799` = js.native
+  var listBlockedUsers: `799`
   
-  var listForAuthenticatedUser: `800` = js.native
+  var listForAuthenticatedUser: `800`
   
-  var listForUser: `801` = js.native
+  var listForUser: `801`
   
-  var listInvitationTeams: `802` = js.native
+  var listInvitationTeams: `802`
   
-  var listMembers: `803` = js.native
+  var listMembers: `803`
   
-  var listMembershipsForAuthenticatedUser: `804` = js.native
+  var listMembershipsForAuthenticatedUser: `804`
   
-  var listOutsideCollaborators: `805` = js.native
+  var listOutsideCollaborators: `805`
   
-  var listPendingInvitations: `806` = js.native
+  var listPendingInvitations: `806`
   
-  var listPublicMembers: `807` = js.native
+  var listPublicMembers: `807`
   
-  var listWebhooks: `808` = js.native
+  var listWebhooks: `808`
   
-  var pingWebhook: `809` = js.native
+  var pingWebhook: `809`
   
-  var removeMember: `810` = js.native
+  var removeMember: `810`
   
-  var removeMembershipForUser: `811` = js.native
+  var removeMembershipForUser: `811`
   
-  var removeOutsideCollaborator: `812` = js.native
+  var removeOutsideCollaborator: `812`
   
-  var removePublicMembershipForAuthenticatedUser: `813` = js.native
+  var removePublicMembershipForAuthenticatedUser: `813`
   
-  var setMembershipForUser: `814` = js.native
+  var setMembershipForUser: `814`
   
-  var setPublicMembershipForAuthenticatedUser: `815` = js.native
+  var setPublicMembershipForAuthenticatedUser: `815`
   
-  var unblockUser: `816` = js.native
+  var unblockUser: `816`
   
-  var update: `817` = js.native
+  var update: `817`
   
-  var updateMembershipForAuthenticatedUser: `818` = js.native
+  var updateMembershipForAuthenticatedUser: `818`
   
-  var updateWebhook: `819` = js.native
+  var updateWebhook: `819`
 }
 object CheckBlockedUser {
   

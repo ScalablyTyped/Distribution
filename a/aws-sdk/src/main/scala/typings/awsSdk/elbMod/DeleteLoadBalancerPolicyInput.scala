@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLoadBalancerPolicyInput extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The name of the policy.
     */
-  var PolicyName: typings.awsSdk.elbMod.PolicyName = js.native
+  var PolicyName: typings.awsSdk.elbMod.PolicyName
 }
 object DeleteLoadBalancerPolicyInput {
   

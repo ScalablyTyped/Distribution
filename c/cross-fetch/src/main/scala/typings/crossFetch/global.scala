@@ -7,7 +7,6 @@ import typings.std.RequestInit
 import typings.std.ResponseInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -42,30 +41,30 @@ object global {
   class Response ()
     extends typings.std.global.Response {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
     def this(body: Null, init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
   }
   /* was `typeof Response` */
   object Response {
     
-    @JSGlobal("_Response.error")
+    @JSGlobal("_Response")
     @js.native
-    def error(): typings.std.Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("_Response.redirect")
-    @js.native
-    def redirect(url: String): typings.std.Response = js.native
-    @JSGlobal("_Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): typings.std.Response = js.native
+    @scala.inline
+    def error(): typings.std.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.std.Response]
+    
+    @scala.inline
+    def redirect(url: String): typings.std.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.std.Response]
+    @scala.inline
+    def redirect(url: String, status: Double): typings.std.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.std.Response]
   }
   
   /* was `typeof fetch` */
-  @JSGlobal("_fetch")
-  @js.native
-  def fetch(input: RequestInfo): js.Promise[typings.std.Response] = js.native
+  @scala.inline
+  def fetch(input: RequestInfo): js.Promise[typings.std.Response] = js.Dynamic.global.applyDynamic("_fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Response]]
   /* was `typeof fetch` */
-  @JSGlobal("_fetch")
-  @js.native
-  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.std.Response] = js.native
+  @scala.inline
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.std.Response] = (js.Dynamic.global.applyDynamic("_fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
 }

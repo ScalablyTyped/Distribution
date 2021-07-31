@@ -3,21 +3,19 @@ package typings.googleapis.anon
 import typings.googleapis.booksV1Mod.booksV1.SchemaBooksAnnotationsRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CfiRange extends StObject {
   
-  var cfiRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.native
+  var cfiRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.undefined
   
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
-  var gbImageRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.native
+  var gbImageRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.undefined
   
-  var gbTextRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.native
+  var gbTextRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.undefined
   
-  var imageCfiRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.native
+  var imageCfiRange: js.UndefOr[SchemaBooksAnnotationsRange] = js.undefined
 }
 object CfiRange {
   

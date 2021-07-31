@@ -2,7 +2,6 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -21,9 +20,7 @@ object global {
     
     @JSGlobal("safari.extension")
     @js.native
-    def extension: SafariExtension = js.native
-    @scala.inline
-    def extension_=(x: SafariExtension): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extension")(x.asInstanceOf[js.Any])
+    val `extension`: SafariExtension = js.native
     
     @JSGlobal("safari.self")
     @js.native

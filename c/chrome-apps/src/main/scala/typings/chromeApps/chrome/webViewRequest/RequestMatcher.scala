@@ -2,24 +2,22 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Matches network events by various criteria.
   */
-@js.native
 trait RequestMatcher extends StObject {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RequestMatcher = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RequestMatcher
 }
 object RequestMatcher {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RequestMatcher): RequestMatcher = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RequestMatcher = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RequestMatcher")
     __obj.asInstanceOf[RequestMatcher]
   }
   

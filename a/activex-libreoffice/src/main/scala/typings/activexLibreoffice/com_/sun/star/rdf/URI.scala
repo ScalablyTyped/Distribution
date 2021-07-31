@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,15 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-@js.native
-trait URI extends XURI {
+trait URI
+  extends StObject
+     with XURI {
   
   /**
     * creates an {@link URI} RDF node.
     * @param Value the {@link URI} , represented as `string` .
     * @throws com::sun::star::lang::IllegalArgumentException if the argument does not represent a valid {@link URI}
     */
-  def create(Value: String): Unit = js.native
+  def create(Value: String): Unit
   
   /**
     * creates an {@link URI} RDF node for a well-known {@link URI} .
@@ -26,7 +26,7 @@ trait URI extends XURI {
     * @see URIs
     * @throws com::sun::star::lang::IllegalArgumentException if the argument is not a valid constant from {@link URIs}
     */
-  def createKnown(Id: Double): Unit = js.native
+  def createKnown(Id: Double): Unit
   
   /**
     * creates an {@link URI} RDF node from namespace prefix and local name.
@@ -34,7 +34,7 @@ trait URI extends XURI {
     * @param LocalName the local name of the {@link URI} , represented as `string` .
     * @throws com::sun::star::lang::IllegalArgumentException if the arguments do not represent a valid {@link URI}
     */
-  def createNS(Namespace: String, LocalName: String): Unit = js.native
+  def createNS(Namespace: String, LocalName: String): Unit
 }
 object URI {
   

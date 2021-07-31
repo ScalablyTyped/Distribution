@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDetectionResult extends StObject {
   
   /**
     * Details about text detected in a video.
     */
-  var TextDetection: js.UndefOr[typings.awsSdk.rekognitionMod.TextDetection] = js.native
+  var TextDetection: js.UndefOr[typings.awsSdk.rekognitionMod.TextDetection] = js.undefined
   
   /**
     * The time, in milliseconds from the start of the video, that the text was detected.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object TextDetectionResult {
   

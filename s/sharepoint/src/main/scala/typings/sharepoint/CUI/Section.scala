@@ -3,17 +3,17 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Section extends RibbonComponent {
+trait Section
+  extends StObject
+     with RibbonComponent {
   
-  def getRow(rowIndex: Double): Row = js.native
+  def getRow(rowIndex: Double): Row
   
-  def get_alignment(): Double = js.native
+  def get_alignment(): Double
   
-  def get_type(): Double = js.native
+  def get_type(): Double
 }
 object Section {
   

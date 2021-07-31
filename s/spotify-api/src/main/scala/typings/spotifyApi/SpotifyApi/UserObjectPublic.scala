@@ -3,38 +3,36 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Object (Public)
   * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
-@js.native
 trait UserObjectPublic extends StObject {
   
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var followers: js.UndefOr[FollowersObject] = js.native
+  var followers: js.UndefOr[FollowersObject] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.UndefOr[js.Array[ImageObject]] = js.native
+  var images: js.UndefOr[js.Array[ImageObject]] = js.undefined
   
-  var `type`: user = js.native
+  var `type`: user
   
-  var uri: String = js.native
+  var uri: String
 }
 object UserObjectPublic {
   
   @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, id: String, `type`: user, uri: String): UserObjectPublic = {
+  def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): UserObjectPublic = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObjectPublic]
   }
   

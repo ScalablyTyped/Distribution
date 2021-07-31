@@ -2,13 +2,11 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USERDATAPATH extends StObject {
   
-  var USER_DATA_PATH: String = js.native
+  var USER_DATA_PATH: String
 }
 object USERDATAPATH {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setOpenLink(CardService.newOpenLink()
   *             .setUrl("https://www.google.com"));
   */
-@js.native
 trait TextButton extends StObject {
   
-  def setAuthorizationAction(action: AuthorizationAction): TextButton = js.native
+  def setAuthorizationAction(action: AuthorizationAction): TextButton
   
-  def setBackgroundColor(backgroundColor: String): TextButton = js.native
+  def setBackgroundColor(backgroundColor: String): TextButton
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): TextButton = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): TextButton
   
-  def setDisabled(disabled: Boolean): TextButton = js.native
+  def setDisabled(disabled: Boolean): TextButton
   
-  def setOnClickAction(action: Action): TextButton = js.native
+  def setOnClickAction(action: Action): TextButton
   
-  def setOnClickOpenLinkAction(action: Action): TextButton = js.native
+  def setOnClickOpenLinkAction(action: Action): TextButton
   
-  def setOpenLink(openLink: OpenLink): TextButton = js.native
+  def setOpenLink(openLink: OpenLink): TextButton
   
-  def setText(text: String): TextButton = js.native
+  def setText(text: String): TextButton
   
-  def setTextButtonStyle(textButtonStyle: TextButtonStyle): TextButton = js.native
+  def setTextButtonStyle(textButtonStyle: TextButtonStyle): TextButton
 }
 object TextButton {
   

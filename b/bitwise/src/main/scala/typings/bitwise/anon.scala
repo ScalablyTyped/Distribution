@@ -6,17 +6,15 @@ import typings.bitwise.typesMod.UInt8
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = js.native
+    def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit]
     
-    def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4 = js.native
+    def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4
   }
   object `0` {
     
@@ -37,10 +35,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    def toBits(string: String): js.Array[Bit] = js.native
+    def toBits(string: String): js.Array[Bit]
   }
   object `1` {
     
@@ -86,9 +83,9 @@ object anon {
     def toBoolean(bits: js.Array[typings.bitwise.typesMod.Bit]): js.Array[Boolean] = js.native
     
     def toString(bits: js.Array[typings.bitwise.typesMod.Bit]): String = js.native
-    def toString(bits: js.Array[typings.bitwise.typesMod.Bit], spacing: js.UndefOr[scala.Nothing], spacer: String): String = js.native
     def toString(bits: js.Array[typings.bitwise.typesMod.Bit], spacing: Double): String = js.native
     def toString(bits: js.Array[typings.bitwise.typesMod.Bit], spacing: Double, spacer: String): String = js.native
+    def toString(bits: js.Array[typings.bitwise.typesMod.Bit], spacing: Unit, spacer: String): String = js.native
     
     def xnor(bits1: js.Array[typings.bitwise.typesMod.Bit], bits2: js.Array[typings.bitwise.typesMod.Bit]): js.Array[typings.bitwise.typesMod.Bit] = js.native
     
@@ -118,19 +115,19 @@ object anon {
     def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
     
     def read(buffer: Buffer): js.Array[typings.bitwise.typesMod.Bit] = js.native
-    def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[typings.bitwise.typesMod.Bit] = js.native
     def read(buffer: Buffer, offset: Double): js.Array[typings.bitwise.typesMod.Bit] = js.native
     def read(buffer: Buffer, offset: Double, length: Double): js.Array[typings.bitwise.typesMod.Bit] = js.native
+    def read(buffer: Buffer, offset: Unit, length: Double): js.Array[typings.bitwise.typesMod.Bit] = js.native
     
     def readInt(buffer: Buffer): Double = js.native
-    def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    def readInt(buffer: Buffer, offset: Unit, length: Double): Double = js.native
     
     def readUInt(buffer: Buffer): Double = js.native
-    def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    def readUInt(buffer: Buffer, offset: Unit, length: Double): Double = js.native
     
     def xnor(a: Buffer, b: Buffer): Buffer = js.native
     def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
@@ -139,14 +136,13 @@ object anon {
     def xor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
   }
   
-  @js.native
   trait GetBit extends StObject {
     
-    def getBit(int32: Double, position: Double): typings.bitwise.typesMod.Bit = js.native
+    def getBit(int32: Double, position: Double): typings.bitwise.typesMod.Bit
     
-    def setBit(int32: Double, position: Double, value: typings.bitwise.typesMod.Bit): typings.bitwise.typesMod.Bit = js.native
+    def setBit(int32: Double, position: Double, value: typings.bitwise.typesMod.Bit): typings.bitwise.typesMod.Bit
     
-    def toggleBit(int32: Double, position: Double): Double = js.native
+    def toggleBit(int32: Double, position: Double): Double
   }
   object GetBit {
     
@@ -197,19 +193,19 @@ object anon {
     def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
     
     def read(buffer: Buffer): js.Array[Bit] = js.native
-    def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[Bit] = js.native
     def read(buffer: Buffer, offset: Double): js.Array[Bit] = js.native
     def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = js.native
+    def read(buffer: Buffer, offset: Unit, length: Double): js.Array[Bit] = js.native
     
     def readInt(buffer: Buffer): Double = js.native
-    def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    def readInt(buffer: Buffer, offset: Unit, length: Double): Double = js.native
     
     def readUInt(buffer: Buffer): Double = js.native
-    def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    def readUInt(buffer: Buffer, offset: Unit, length: Double): Double = js.native
     
     def xnor(a: Buffer, b: Buffer): Buffer = js.native
     def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
@@ -246,16 +242,15 @@ object anon {
     def toBoolean(bits: js.Array[Bit]): js.Array[Boolean] = js.native
     
     def toString(bits: js.Array[Bit]): String = js.native
-    def toString(bits: js.Array[Bit], spacing: js.UndefOr[scala.Nothing], spacer: String): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double, spacer: String): String = js.native
+    def toString(bits: js.Array[Bit], spacing: Unit, spacer: String): String = js.native
     
     def xnor(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native
     
     def xor(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native
   }
   
-  @js.native
   trait Read extends StObject {
     
     def read(byte: UInt8): js.Tuple8[
@@ -267,7 +262,7 @@ object anon {
         typings.bitwise.typesMod.Bit, 
         typings.bitwise.typesMod.Bit, 
         typings.bitwise.typesMod.Bit
-      ] = js.native
+      ]
     
     def write(
       byte: js.Tuple8[
@@ -280,7 +275,7 @@ object anon {
           typings.bitwise.typesMod.Bit, 
           typings.bitwise.typesMod.Bit
         ]
-    ): UInt8 = js.native
+    ): UInt8
   }
   object Read {
     
@@ -344,12 +339,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ReadWrite extends StObject {
     
-    def read(byte: typings.bitwise.bitwiseTypesMod.UInt8): js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] = js.native
+    def read(byte: typings.bitwise.bitwiseTypesMod.UInt8): js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]
     
-    def write(byte: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): typings.bitwise.bitwiseTypesMod.UInt8 = js.native
+    def write(byte: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): typings.bitwise.bitwiseTypesMod.UInt8
   }
   object ReadWrite {
     
@@ -373,14 +367,13 @@ object anon {
     }
   }
   
-  @js.native
   trait SetBit extends StObject {
     
-    def getBit(int32: Double, position: Double): Bit = js.native
+    def getBit(int32: Double, position: Double): Bit
     
-    def setBit(int32: Double, position: Double, value: Bit): Bit = js.native
+    def setBit(int32: Double, position: Double, value: Bit): Bit
     
-    def toggleBit(int32: Double, position: Double): Double = js.native
+    def toggleBit(int32: Double, position: Double): Double
   }
   object SetBit {
     
@@ -408,10 +401,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ToBits extends StObject {
     
-    def toBits(string: String): js.Array[typings.bitwise.typesMod.Bit] = js.native
+    def toBits(string: String): js.Array[typings.bitwise.typesMod.Bit]
   }
   object ToBits {
     
@@ -429,7 +421,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Write extends StObject {
     
     def read(nibble: typings.bitwise.typesMod.UInt4): js.Tuple4[
@@ -437,7 +428,7 @@ object anon {
         typings.bitwise.typesMod.Bit, 
         typings.bitwise.typesMod.Bit, 
         typings.bitwise.typesMod.Bit
-      ] = js.native
+      ]
     
     def write(
       nibble: js.Tuple4[
@@ -446,7 +437,7 @@ object anon {
           typings.bitwise.typesMod.Bit, 
           typings.bitwise.typesMod.Bit
         ]
-    ): typings.bitwise.typesMod.UInt4 = js.native
+    ): typings.bitwise.typesMod.UInt4
   }
   object Write {
     

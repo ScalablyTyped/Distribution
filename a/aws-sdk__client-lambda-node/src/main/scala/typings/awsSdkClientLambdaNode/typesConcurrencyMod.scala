@@ -2,18 +2,16 @@ package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesConcurrencyMod {
   
-  @js.native
   trait Concurrency extends StObject {
     
     /**
       * <p>The number of concurrent executions reserved for this function. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html">Managing Concurrency</a>.</p>
       */
-    var ReservedConcurrentExecutions: js.UndefOr[Double] = js.native
+    var ReservedConcurrentExecutions: js.UndefOr[Double] = js.undefined
   }
   object Concurrency {
     

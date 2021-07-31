@@ -3,7 +3,6 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,26 +28,11 @@ trait Presentations extends StObject {
     * @param Office.MsoTriState [WithWindow=-1]
     */
   def Open(FileName: String): Presentation = js.native
-  def Open(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
-  def Open(FileName: String, ReadOnly: js.UndefOr[scala.Nothing], Untitled: MsoTriState): Presentation = js.native
-  def Open(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: MsoTriState,
-    WithWindow: MsoTriState
-  ): Presentation = js.native
+  def Open(FileName: String, ReadOnly: Unit, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
+  def Open(FileName: String, ReadOnly: Unit, Untitled: MsoTriState): Presentation = js.native
+  def Open(FileName: String, ReadOnly: Unit, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   def Open(FileName: String, ReadOnly: MsoTriState): Presentation = js.native
-  def Open(
-    FileName: String,
-    ReadOnly: MsoTriState,
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
+  def Open(FileName: String, ReadOnly: MsoTriState, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
   def Open(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState): Presentation = js.native
   def Open(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   
@@ -59,43 +43,27 @@ trait Presentations extends StObject {
     * @param Office.MsoTriState [OpenAndRepair=0]
     */
   def Open2007(FileName: String): Presentation = js.native
+  def Open2007(FileName: String, ReadOnly: Unit, Untitled: Unit, WithWindow: Unit, OpenAndRepair: MsoTriState): Presentation = js.native
+  def Open2007(FileName: String, ReadOnly: Unit, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
   def Open2007(
     FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: js.UndefOr[scala.Nothing],
-    OpenAndRepair: MsoTriState
-  ): Presentation = js.native
-  def Open2007(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
-  def Open2007(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: js.UndefOr[scala.Nothing],
+    ReadOnly: Unit,
+    Untitled: Unit,
     WithWindow: MsoTriState,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
-  def Open2007(FileName: String, ReadOnly: js.UndefOr[scala.Nothing], Untitled: MsoTriState): Presentation = js.native
+  def Open2007(FileName: String, ReadOnly: Unit, Untitled: MsoTriState): Presentation = js.native
   def Open2007(
     FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
+    ReadOnly: Unit,
     Untitled: MsoTriState,
-    WithWindow: js.UndefOr[scala.Nothing],
+    WithWindow: Unit,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
+  def Open2007(FileName: String, ReadOnly: Unit, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   def Open2007(
     FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: MsoTriState,
-    WithWindow: MsoTriState
-  ): Presentation = js.native
-  def Open2007(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
+    ReadOnly: Unit,
     Untitled: MsoTriState,
     WithWindow: MsoTriState,
     OpenAndRepair: MsoTriState
@@ -104,20 +72,15 @@ trait Presentations extends StObject {
   def Open2007(
     FileName: String,
     ReadOnly: MsoTriState,
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: js.UndefOr[scala.Nothing],
+    Untitled: Unit,
+    WithWindow: Unit,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
+  def Open2007(FileName: String, ReadOnly: MsoTriState, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
   def Open2007(
     FileName: String,
     ReadOnly: MsoTriState,
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
-  def Open2007(
-    FileName: String,
-    ReadOnly: MsoTriState,
-    Untitled: js.UndefOr[scala.Nothing],
+    Untitled: Unit,
     WithWindow: MsoTriState,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
@@ -126,7 +89,7 @@ trait Presentations extends StObject {
     FileName: String,
     ReadOnly: MsoTriState,
     Untitled: MsoTriState,
-    WithWindow: js.UndefOr[scala.Nothing],
+    WithWindow: Unit,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
   def Open2007(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
@@ -144,26 +107,11 @@ trait Presentations extends StObject {
     * @param Office.MsoTriState [WithWindow=-1]
     */
   def OpenOld(FileName: String): Presentation = js.native
-  def OpenOld(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
-  def OpenOld(FileName: String, ReadOnly: js.UndefOr[scala.Nothing], Untitled: MsoTriState): Presentation = js.native
-  def OpenOld(
-    FileName: String,
-    ReadOnly: js.UndefOr[scala.Nothing],
-    Untitled: MsoTriState,
-    WithWindow: MsoTriState
-  ): Presentation = js.native
+  def OpenOld(FileName: String, ReadOnly: Unit, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
+  def OpenOld(FileName: String, ReadOnly: Unit, Untitled: MsoTriState): Presentation = js.native
+  def OpenOld(FileName: String, ReadOnly: Unit, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState): Presentation = js.native
-  def OpenOld(
-    FileName: String,
-    ReadOnly: MsoTriState,
-    Untitled: js.UndefOr[scala.Nothing],
-    WithWindow: MsoTriState
-  ): Presentation = js.native
+  def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: Unit, WithWindow: MsoTriState): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   

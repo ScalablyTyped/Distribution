@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationInsights extends Service {
   
   @JSName("config")
-  var config_ApplicationInsights: ConfigBase with ClientConfiguration = js.native
+  var config_ApplicationInsights: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Adds an application that is created from a resource group.

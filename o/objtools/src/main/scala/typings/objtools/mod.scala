@@ -7,10 +7,13 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("objtools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("objtools", "ObjectMask")
   @js.native
@@ -35,7 +38,7 @@ object mod {
       * @param dottedObj - Mapping from dot-separated paths to values
       * @returns The check result.
       */
-    def checkDottedFields(dottedObj: Record[String, _]): Boolean = js.native
+    def checkDottedFields(dottedObj: Record[String, js.Any]): Boolean = js.native
     
     /**
       * Given a structured document, ensures that all fields are allowed by the
@@ -43,7 +46,7 @@ object mod {
       * @param obj - Object to check.
       * @returns The check result
       */
-    def checkFields(obj: Record[String, _]): Boolean = js.native
+    def checkFields(obj: Record[String, js.Any]): Boolean = js.native
     
     /**
       * Returns true if the given path is allowed by the mask. false otherwise.
@@ -58,7 +61,7 @@ object mod {
       * @returns A function(obj) that is the equivalent of callingfilterObject()
       * on obj.
       */
-    def createFilterFunc(): js.Function1[/* obj */ Record[String, _], Record[String, _]] = js.native
+    def createFilterFunc(): js.Function1[/* obj */ Record[String, js.Any], Record[String, js.Any]] = js.native
     
     /**
       * Given a dot-notation mapping from fields to values, remove all fields
@@ -68,8 +71,8 @@ object mod {
       * @param maskedOutHook - Function to call for removed fields
       * @returns The result
       */
-    def filterDottedObject(dottedObj: Record[String, _]): Record[String, _] = js.native
-    def filterDottedObject(dottedObj: Record[String, _], maskedOutHook: MaskedOutHook): Record[String, _] = js.native
+    def filterDottedObject(dottedObj: Record[String, js.Any]): Record[String, js.Any] = js.native
+    def filterDottedObject(dottedObj: Record[String, js.Any], maskedOutHook: MaskedOutHook): Record[String, js.Any] = js.native
     
     /**
       * Returns a copy of the given object, but only including the fields allowed
@@ -83,8 +86,8 @@ object mod {
       * @param maskedOutHook - Function to call for fields disallowed
       * by the mask
       */
-    def filterObject(obj: Record[String, _]): Record[String, _] = js.native
-    def filterObject(obj: Record[String, _], maskedOutHook: MaskedOutHook): Record[String, _] = js.native
+    def filterObject(obj: Record[String, js.Any]): Record[String, js.Any] = js.native
+    def filterObject(obj: Record[String, js.Any], maskedOutHook: MaskedOutHook): Record[String, js.Any] = js.native
     
     /**
       * Returns an array of fields in the given object which are restricted by
@@ -93,7 +96,7 @@ object mod {
       * @param obj - The object to check against
       * @returns Paths to fields that are restricted by the mask
       */
-    def getDottedMaskedOutFields(obj: Record[String, _]): js.Array[String] = js.native
+    def getDottedMaskedOutFields(obj: Record[String, js.Any]): js.Array[String] = js.native
     
     /**
       * Returns an array of fields in the given object which are restricted by
@@ -101,7 +104,7 @@ object mod {
       * @param obj - The object to check against
       * @returns Paths to fields that are restricted by the mask
       */
-    def getMaskedOutFields(obj: Record[String, _]): js.Array[String] = js.native
+    def getMaskedOutFields(obj: Record[String, js.Any]): js.Array[String] = js.native
     
     /**
       * Returns a subsection of a mask given a dot-separated path to the
@@ -143,6 +146,10 @@ object mod {
   /* static members */
   object ObjectMask {
     
+    @JSImport("objtools", "ObjectMask")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Combines two or more masks such that the result mask matches fields
       * matched by any of the combined masks.
@@ -151,9 +158,8 @@ object mod {
       *   `true` if either of the masks is `true` or an ObjectMask wrapping
       *   `true`.
       */
-    @JSImport("objtools", "ObjectMask.addMasks")
-    @js.native
-    def addMasks(masks: (ObjectMask | Mask)*): ObjectMask | `true` = js.native
+    @scala.inline
+    def addMasks(masks: (ObjectMask | Mask)*): ObjectMask | `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("addMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `true`]
     
     /**
       * Adds a set of masks together, but using a logical AND instead of a
@@ -163,9 +169,8 @@ object mod {
       * @returns The result of ANDing together the component masks. Will be
       *   `false` if the result would be an empty mask.
       */
-    @JSImport("objtools", "ObjectMask.andMasks")
-    @js.native
-    def andMasks(masks: (ObjectMask | Mask)*): ObjectMask | `false` = js.native
+    @scala.inline
+    def andMasks(masks: (ObjectMask | Mask)*): ObjectMask | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("andMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `false`]
     
     /**
       * Creates a structured mask given a list of fields that should be included
@@ -173,44 +178,36 @@ object mod {
       * @param fields - Array of fields to include
       * @returns The created mask
       */
-    @JSImport("objtools", "ObjectMask.createMaskFromFieldList")
-    @js.native
-    def createMaskFromFieldList(fields: js.Array[String]): ObjectMask = js.native
+    @scala.inline
+    def createMaskFromFieldList(fields: js.Array[String]): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaskFromFieldList")(fields.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     
-    @JSImport("objtools", "ObjectMask.invertMask")
-    @js.native
-    def invertMask(mask: Mask): ObjectMask = js.native
+    @scala.inline
+    def invertMask(mask: Mask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     /**
       * Inverts a mask. The resulting mask disallows all fields previously
       * allowed, and allows all fields previously disallowed.
       * @param - the mask to invert
       * @returns the inverted mask
       */
-    @JSImport("objtools", "ObjectMask.invertMask")
-    @js.native
-    def invertMask(mask: ObjectMask): ObjectMask = js.native
+    @scala.inline
+    def invertMask(mask: ObjectMask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     
-    @JSImport("objtools", "ObjectMask.isObjectMask")
-    @js.native
-    def isObjectMask(mask: Mask): Boolean = js.native
+    @scala.inline
+    def isObjectMask(mask: Mask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     /**
       * Check if an object is an ObjectMask
       * @param obj - the object to determine if is an ObjectMask
       * @returns true if obj is an ObjectMask, false otherwise
       */
-    @JSImport("objtools", "ObjectMask.isObjectMask")
-    @js.native
-    def isObjectMask(mask: ObjectMask): Boolean = js.native
+    @scala.inline
+    def isObjectMask(mask: ObjectMask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("objtools", "ObjectMask.subtractMasks")
-    @js.native
-    def subtractMasks(min: Mask, sub: Mask): ObjectMask = js.native
-    @JSImport("objtools", "ObjectMask.subtractMasks")
-    @js.native
-    def subtractMasks(min: Mask, sub: ObjectMask): ObjectMask = js.native
-    @JSImport("objtools", "ObjectMask.subtractMasks")
-    @js.native
-    def subtractMasks(min: ObjectMask, sub: Mask): ObjectMask = js.native
+    @scala.inline
+    def subtractMasks(min: Mask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    @scala.inline
+    def subtractMasks(min: Mask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    @scala.inline
+    def subtractMasks(min: ObjectMask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
     /**
       * Combines two or more masks such that the result mask matches fields
       * matched by the first mask but not the second
@@ -218,122 +215,92 @@ object mod {
       * @param sub - the subtrahend
       * @returns The result of subtracting the second mask from the first
       */
-    @JSImport("objtools", "ObjectMask.subtractMasks")
-    @js.native
-    def subtractMasks(min: ObjectMask, sub: ObjectMask): ObjectMask = js.native
+    @scala.inline
+    def subtractMasks(min: ObjectMask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
   }
   
-  @JSImport("objtools", "collapseToDotted")
-  @js.native
-  def collapseToDotted(obj: Record[String, _]): Record[String, _] = js.native
-  @JSImport("objtools", "collapseToDotted")
-  @js.native
-  def collapseToDotted(obj: Record[String, _], includeRedundantLevels: js.UndefOr[scala.Nothing], stopAtArrays: Boolean): Record[String, _] = js.native
-  @JSImport("objtools", "collapseToDotted")
-  @js.native
-  def collapseToDotted(obj: Record[String, _], includeRedundantLevels: Boolean): Record[String, _] = js.native
-  @JSImport("objtools", "collapseToDotted")
-  @js.native
-  def collapseToDotted(obj: Record[String, _], includeRedundantLevels: Boolean, stopAtArrays: Boolean): Record[String, _] = js.native
+  @scala.inline
+  def collapseToDotted(obj: Record[String, js.Any]): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Unit, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("objtools", "deepCopy")
-  @js.native
-  def deepCopy(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def deepCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("objtools", "deepEquals")
-  @js.native
-  def deepEquals(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def deepEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "deletePath")
-  @js.native
-  def deletePath(obj: Record[String, _], path: String): Record[String, _] = js.native
+  @scala.inline
+  def deletePath(obj: Record[String, js.Any], path: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("objtools", "diffObjects")
-  @js.native
-  def diffObjects(args: js.Any*): js.Any = js.native
-  @JSImport("objtools", "diffObjects")
-  @js.native
-  def diffObjects_Record(objects: (Record[String, _])*): Record[String, _] = js.native
+  @scala.inline
+  def diffObjects(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("objtools", "dottedDiff")
-  @js.native
-  def dottedDiff(val1: js.Any, val2: js.Any): js.Array[String] = js.native
+  @scala.inline
+  def diffObjects_Record(objects: (Record[String, js.Any])*): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("objtools", "getDuplicates")
-  @js.native
-  def getDuplicates(arr: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def dottedDiff(val1: js.Any, val2: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("dottedDiff")(val1.asInstanceOf[js.Any], val2.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("objtools", "getPath")
-  @js.native
-  def getPath(obj: Record[String, _], path: String): js.Any = js.native
-  @JSImport("objtools", "getPath")
-  @js.native
-  def getPath(obj: Record[String, _], path: String, allowSkipArrays: Boolean): js.Any = js.native
+  @scala.inline
+  def getDuplicates(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuplicates")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("objtools", "isEmpty")
-  @js.native
-  def isEmpty(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def getPath(obj: Record[String, js.Any], path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getPath(obj: Record[String, js.Any], path: String, allowSkipArrays: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], allowSkipArrays.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("objtools", "isEmptyArray")
-  @js.native
-  def isEmptyArray(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmpty(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "isEmptyObject")
-  @js.native
-  def isEmptyObject(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmptyArray(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "isPlainObject")
-  @js.native
-  def isPlainObject(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmptyObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "isScalar")
-  @js.native
-  def isScalar(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isPlainObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "isTerminal")
-  @js.native
-  def isTerminal(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isScalar(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "matchDottedObject")
-  @js.native
-  def matchDottedObject(doc: Record[String, _], query: Record[String, _]): Boolean = js.native
+  @scala.inline
+  def isTerminal(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerminal")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "matchObject")
-  @js.native
-  def matchObject(doc: Record[String, _], query: Record[String, _]): Boolean = js.native
+  @scala.inline
+  def matchDottedObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchDottedObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge(args: js.Any*): js.Any = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource](target: TTarget, source: TSource): TTarget with TSource = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget with TSource = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget with TSource1 with TSource2 = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget with TSource1 with TSource2 = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget with TSource1 with TSource2 with TSource3 = js.native
-  @JSImport("objtools", "merge")
-  @js.native
+  @scala.inline
+  def matchObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def merge(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def merge[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  @scala.inline
+  def merge[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  @scala.inline
+  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  @scala.inline
+  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  @scala.inline
+  def merge[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  @scala.inline
   def merge[TTarget, TSource1, TSource2, TSource3](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
     source3: TSource3,
     customizer: MergeCustomizer
-  ): TTarget with TSource1 with TSource2 with TSource3 = js.native
-  @JSImport("objtools", "merge")
-  @js.native
-  def merge[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
-  @JSImport("objtools", "merge")
-  @js.native
+  ): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  @scala.inline
+  def merge[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
+  @scala.inline
   def merge[TTarget, TSource1, TSource2, TSource3, TSource4](
     target: TTarget,
     source1: TSource1,
@@ -341,40 +308,31 @@ object mod {
     source3: TSource3,
     source4: TSource4,
     customizer: MergeCustomizer
-  ): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
+  ): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy(args: js.Any*): js.Any = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource): TTarget with TSource = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget with TSource = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget with TSource1 with TSource2 = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget with TSource1 with TSource2 = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget with TSource1 with TSource2 with TSource3 = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
+  @scala.inline
+  def mergeHeavy(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  @scala.inline
   def mergeHeavy[TTarget, TSource1, TSource2, TSource3](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
     source3: TSource3,
     customizer: MergeCustomizer
-  ): TTarget with TSource1 with TSource2 with TSource3 = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
-  @JSImport("objtools", "mergeHeavy")
-  @js.native
+  ): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  @scala.inline
+  def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
+  @scala.inline
   def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](
     target: TTarget,
     source1: TSource1,
@@ -382,51 +340,41 @@ object mod {
     source3: TSource3,
     source4: TSource4,
     customizer: MergeCustomizer
-  ): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
+  ): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @JSImport("objtools", "mergeLight")
-  @js.native
-  def mergeLight(args: js.Any*): js.Any = js.native
-  @JSImport("objtools", "mergeLight")
-  @js.native
-  def mergeLight[TTarget, TSource](target: TTarget, source: TSource): TTarget with TSource = js.native
-  @JSImport("objtools", "mergeLight")
-  @js.native
-  def mergeLight[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget with TSource1 with TSource2 = js.native
-  @JSImport("objtools", "mergeLight")
-  @js.native
-  def mergeLight[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget with TSource1 with TSource2 with TSource3 = js.native
-  @JSImport("objtools", "mergeLight")
-  @js.native
-  def mergeLight[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
+  @scala.inline
+  def mergeLight(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def mergeLight[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  @scala.inline
+  def mergeLight[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  @scala.inline
+  def mergeLight[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  @scala.inline
+  def mergeLight[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @JSImport("objtools", "objectHash")
-  @js.native
-  def objectHash(obj: js.Any): String = js.native
+  @scala.inline
+  def objectHash(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectHash")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("objtools", "sanitizeDate")
-  @js.native
-  def sanitizeDate(value: js.Any): Date | Null = js.native
+  @scala.inline
+  def sanitizeDate(value: js.Any): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
   
-  @JSImport("objtools", "scalarEquals")
-  @js.native
-  def scalarEquals(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def scalarEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("objtools", "setPath")
-  @js.native
-  def setPath(obj: Record[String, _], path: String, value: js.Any): Record[String, _] = js.native
+  @scala.inline
+  def setPath(obj: Record[String, js.Any], path: String, value: js.Any): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("objtools", "syncObject")
-  @js.native
-  def syncObject(toObj: Record[String, _], fromObj: Record[String, _]): Record[String, _] = js.native
-  @JSImport("objtools", "syncObject")
-  @js.native
-  def syncObject(toObj: Record[String, _], fromObj: Record[String, _], options: SyncObjectOptions): Record[String, _] = js.native
+  @scala.inline
+  def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any], options: SyncObjectOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
   type Mask = MaskObj | js.Array[MaskObj] | Boolean
   
-  @js.native
-  trait MaskObj extends /* key */ StringDictionary[Mask]
+  trait MaskObj
+    extends StObject
+       with /* key */ StringDictionary[Mask]
   object MaskObj {
     
     @scala.inline
@@ -454,31 +402,55 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait SyncObjectOptions extends StObject {
     
     /**
       * Optional function to be called when a value changes.
       */
-    def onChange(field: String, toVal: js.Any, fromVal: js.Any, parentObj: Record[String, _]): js.Any = js.native
+    def onChange(field: String, toVal: js.Any, fromVal: js.Any, parentObj: Record[String, js.Any]): js.Any
     /**
       * Optional function to be called when a value changes.
       */
     @JSName("onChange")
-    var onChange_Original: OnFieldHook = js.native
+    var onChange_Original: OnFieldHook
     
     /**
       * An optional callback to call whenever a field is traversed during this
       * function.  If it returns a boolean `false`, any modification is prevented
       * and further subfields will not be traversed.
       */
-    def onField(field: String, toVal: js.Any, fromVal: js.Any, parentObj: Record[String, _]): js.Any = js.native
+    def onField(field: String, toVal: js.Any, fromVal: js.Any, parentObj: Record[String, js.Any]): js.Any
     /**
       * An optional callback to call whenever a field is traversed during this
       * function.  If it returns a boolean `false`, any modification is prevented
       * and further subfields will not be traversed.
       */
     @JSName("onField")
-    var onField_Original: OnFieldHook = js.native
+    var onField_Original: OnFieldHook
+  }
+  object SyncObjectOptions {
+    
+    @scala.inline
+    def apply(
+      onChange: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any,
+      onField: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
+    ): SyncObjectOptions = {
+      val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction4(onChange), onField = js.Any.fromFunction4(onField))
+      __obj.asInstanceOf[SyncObjectOptions]
+    }
+    
+    @scala.inline
+    implicit class SyncObjectOptionsMutableBuilder[Self <: SyncObjectOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnChange(
+        value: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setOnField(
+        value: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
+      ): Self = StObject.set(x, "onField", js.Any.fromFunction4(value))
+    }
   }
 }

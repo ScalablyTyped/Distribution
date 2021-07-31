@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mitigation extends StObject {
   
   /**
     * The name of the mitigation taken for this attack.
     */
-  var MitigationName: js.UndefOr[String] = js.native
+  var MitigationName: js.UndefOr[String] = js.undefined
 }
 object Mitigation {
   

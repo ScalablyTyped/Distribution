@@ -2,17 +2,17 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathConstraint extends Updatable {
+trait PathConstraint
+  extends StObject
+     with Updatable {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  def addAfterPosition(p: Double, temp: js.Array[Double], i: Double, out: js.Array[Double], o: Double): Unit = js.native
+  def addAfterPosition(p: Double, temp: js.Array[Double], i: Double, out: js.Array[Double], o: Double): Unit
   
-  def addBeforePosition(p: Double, temp: js.Array[Double], i: Double, out: js.Array[Double], o: Double): Unit = js.native
+  def addBeforePosition(p: Double, temp: js.Array[Double], i: Double, out: js.Array[Double], o: Double): Unit
   
   def addCurvePosition(
     p: Double,
@@ -27,12 +27,12 @@ trait PathConstraint extends Updatable {
     out: js.Array[Double],
     o: Double,
     tangents: Boolean
-  ): Unit = js.native
+  ): Unit
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
   
-  var bones: js.Array[Bone] = js.native
+  var bones: js.Array[Bone]
   
   def computeWorldPositions(
     path: PathAttachment,
@@ -40,31 +40,31 @@ trait PathConstraint extends Updatable {
     tangents: Boolean,
     percentPosition: Boolean,
     percentSpacing: Boolean
-  ): js.Array[Double] = js.native
+  ): js.Array[Double]
   
-  var curves: js.Array[Double] = js.native
+  var curves: js.Array[Double]
   
-  var data: PathConstraintData = js.native
+  var data: PathConstraintData
   
-  var lengths: js.Array[Double] = js.native
+  var lengths: js.Array[Double]
   
-  var position: Double = js.native
+  var position: Double
   
-  var positions: js.Array[Double] = js.native
+  var positions: js.Array[Double]
   
-  var rotateMix: Double = js.native
+  var rotateMix: Double
   
-  var segments: js.Array[Double] = js.native
+  var segments: js.Array[Double]
   
-  var spaces: js.Array[Double] = js.native
+  var spaces: js.Array[Double]
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var target: Slot = js.native
+  var target: Slot
   
-  var translateMix: Double = js.native
+  var translateMix: Double
   
-  var world: js.Array[Double] = js.native
+  var world: js.Array[Double]
 }
 object PathConstraint {
   

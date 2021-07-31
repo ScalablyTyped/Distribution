@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleStatementXssMatchStatementFieldToMatch extends StObject {
   
   /**
     * Inspect all query arguments.
     */
-  var allQueryArguments: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchAllQueryArguments] = js.native
+  var allQueryArguments: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchAllQueryArguments] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
     */
-  var body: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchBody] = js.native
+  var body: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchBody] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
     */
-  var method: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchMethod] = js.native
+  var method: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchMethod] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
     */
-  var queryString: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchQueryString] = js.native
+  var queryString: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchQueryString] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
     */
-  var singleHeader: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeader] = js.native
+  var singleHeader: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeader] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
     */
-  var singleQueryArgument: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument] = js.native
+  var singleQueryArgument: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
     */
-  var uriPath: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPath] = js.native
+  var uriPath: js.UndefOr[RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPath] = js.undefined
 }
 object RuleGroupRuleStatementXssMatchStatementFieldToMatch {
   

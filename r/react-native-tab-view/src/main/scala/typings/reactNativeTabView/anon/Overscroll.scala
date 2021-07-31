@@ -1,36 +1,28 @@
 package typings.reactNativeTabView.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Overscroll extends js.Object {
-  var overscroll: js.UndefOr[Boolean] = js.native
+trait Overscroll extends StObject {
+  
+  var overscroll: js.UndefOr[Boolean] = js.undefined
 }
-
 object Overscroll {
+  
   @scala.inline
   def apply(): Overscroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Overscroll]
   }
-  @scala.inline
-  implicit class OverscrollOps[Self <: Overscroll] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setOverscroll(value: Boolean): Self = this.set("overscroll", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteOverscroll: Self = this.set("overscroll", js.undefined)
-  }
   
+  @scala.inline
+  implicit class OverscrollMutableBuilder[Self <: Overscroll] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOverscroll(value: Boolean): Self = StObject.set(x, "overscroll", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
+  }
 }
-

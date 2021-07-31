@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeechRecognitionAlternative extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait SpeechRecognitionAlternative extends StObject {
     * alternative of a non-streaming result or, of a streaming result where `is_final=true`. This field is not guaranteed to be accurate and users should not rely on it to be always
     * provided. The default of 0.0 is a sentinel value indicating `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** Transcript text representing the words that the user spoke. */
-  var transcript: js.UndefOr[String] = js.native
+  var transcript: js.UndefOr[String] = js.undefined
   
   /** A list of word-specific information for each recognized word. Note: When `enable_speaker_diarization` is true, you will see all the words from the beginning of the audio. */
-  var words: js.UndefOr[js.Array[WordInfo]] = js.native
+  var words: js.UndefOr[js.Array[WordInfo]] = js.undefined
 }
 object SpeechRecognitionAlternative {
   

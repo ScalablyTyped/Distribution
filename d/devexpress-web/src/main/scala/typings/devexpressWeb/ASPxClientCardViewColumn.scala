@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client column.
   */
-@js.native
-trait ASPxClientCardViewColumn extends ASPxClientGridColumnBase {
+trait ASPxClientCardViewColumn
+  extends StObject
+     with ASPxClientGridColumnBase {
   
   /**
     * Gets the name of the database field assigned to the current column.
     */
-  var fieldName: String = js.native
+  var fieldName: String
   
   /**
     * Gets the column's position within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name that uniquely identifies the column.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets whether the column is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientCardViewColumn {
   

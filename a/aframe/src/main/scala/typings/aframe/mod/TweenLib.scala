@@ -11,7 +11,6 @@ import typings.tweenjsTweenJs.mod.Tween
 import typings.tweenjsTweenJs.mod.UnknownProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait TweenLib extends StObject {
   /**
     * Utils
     */
-  val Sequence: TypeofSequence with Instantiable0[typings.tweenjsTweenJs.mod.Sequence] = js.native
+  val Sequence: TypeofSequence & Instantiable0[typings.tweenjsTweenJs.mod.Sequence] = js.native
   
   var Tween: Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ js.Any, 
@@ -49,9 +48,9 @@ trait TweenLib extends StObject {
   
   val VERSION: /* "18.6.4" */ String = js.native
   
-  def add(tween: Tween[Record[String, _]]): Unit = js.native
+  def add(tween: Tween[Record[String, js.Any]]): Unit = js.native
   
-  def getAll(): js.Array[Tween[Record[String, _]]] = js.native
+  def getAll(): js.Array[Tween[Record[String, js.Any]]] = js.native
   
   /* static member */
   /* was `typeof Sequence.nextId` */
@@ -61,12 +60,12 @@ trait TweenLib extends StObject {
   @JSName("now")
   var now_Original: js.Function0[Double] = js.native
   
-  def remove(tween: Tween[Record[String, _]]): Unit = js.native
+  def remove(tween: Tween[Record[String, js.Any]]): Unit = js.native
   
   def removeAll(): Unit = js.native
   
   def update(): Boolean = js.native
-  def update(time: js.UndefOr[scala.Nothing], preserve: Boolean): Boolean = js.native
   def update(time: Double): Boolean = js.native
   def update(time: Double, preserve: Boolean): Boolean = js.native
+  def update(time: Unit, preserve: Boolean): Boolean = js.native
 }

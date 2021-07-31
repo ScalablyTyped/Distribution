@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesEditor extends StObject {
   
-  var allDayEvent: js.UndefOr[String] = js.native
+  var allDayEvent: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var editorTitle: js.UndefOr[String] = js.native
+  var editorTitle: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var endTimezone: js.UndefOr[String] = js.native
+  var endTimezone: js.UndefOr[String] = js.undefined
   
-  var repeat: js.UndefOr[String] = js.native
+  var repeat: js.UndefOr[String] = js.undefined
   
-  var separateTimezones: js.UndefOr[String] = js.native
+  var separateTimezones: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var startTimezone: js.UndefOr[String] = js.native
+  var startTimezone: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var timezoneEditorButton: js.UndefOr[String] = js.native
+  var timezoneEditorButton: js.UndefOr[String] = js.undefined
   
-  var timezoneEditorTitle: js.UndefOr[String] = js.native
+  var timezoneEditorTitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesEditor {
   

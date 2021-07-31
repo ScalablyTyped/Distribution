@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CorrelationPropertyRetrievalExpression extends BaseElement {
+trait CorrelationPropertyRetrievalExpression
+  extends StObject
+     with BaseElement {
   
-  var messagePath: FormalExpression = js.native
+  var messagePath: FormalExpression
   
-  var messageRef: Message = js.native
+  var messageRef: Message
 }
 object CorrelationPropertyRetrievalExpression {
   

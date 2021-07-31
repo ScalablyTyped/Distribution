@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Aggregated$Usablesubnetworks")
@@ -34,7 +33,7 @@ class ResourceProjectsAggregatedUsablesubnetworks protected () extends StObject 
     */
   def list(): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUsableSubnetworksResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(params: ParamsResourceProjectsAggregatedUsablesubnetworksList): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(
     params: ParamsResourceProjectsAggregatedUsablesubnetworksList,

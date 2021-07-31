@@ -5,13 +5,13 @@ import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlidesOnOpen extends AppsScriptEvent {
+trait SlidesOnOpen
+  extends StObject
+     with AppsScriptEvent {
   
-  var source: Presentation = js.native
+  var source: Presentation
 }
 object SlidesOnOpen {
   

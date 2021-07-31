@@ -22,10 +22,13 @@ import typings.angularCore.mod.Version
 import typings.angularCore.mod.ɵConsole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@angular/platform-browser-dynamic", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/platform-browser-dynamic", "JitCompilerFactory")
   @js.native
@@ -42,12 +45,10 @@ object mod {
   @js.native
   val VERSION: Version = js.native
   
-  @JSImport("@angular/platform-browser-dynamic", "platformBrowserDynamic")
-  @js.native
-  def platformBrowserDynamic(): PlatformRef = js.native
-  @JSImport("@angular/platform-browser-dynamic", "platformBrowserDynamic")
-  @js.native
-  def platformBrowserDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = js.native
+  @scala.inline
+  def platformBrowserDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")().asInstanceOf[PlatformRef]
+  @scala.inline
+  def platformBrowserDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser-dynamic", "\u0275COMPILER_PROVIDERS__POST_R3__")
   @js.native
@@ -63,7 +64,7 @@ object mod {
       styleCompiler: StyleCompiler,
       viewCompiler: ViewCompiler,
       ngModuleCompiler: NgModuleCompiler,
-      summaryResolver: SummaryResolver[Type[_]],
+      summaryResolver: SummaryResolver[Type[js.Any]],
       compileReflector: CompileReflector,
       jitEvaluator: JitEvaluator,
       compilerConfig: CompilerConfig,
@@ -78,11 +79,11 @@ object mod {
     
     var getExtraNgModuleProviders: js.Any = js.native
     
-    def hasAotSummary(ref: Type[_]): Boolean = js.native
+    def hasAotSummary(ref: Type[js.Any]): Boolean = js.native
     
     val injector: Injector = js.native
     
-    def loadAotSummaries(summaries: js.Function0[js.Array[_]]): Unit = js.native
+    def loadAotSummaries(summaries: js.Function0[js.Array[js.Any]]): Unit = js.native
   }
   
   @JSImport("@angular/platform-browser-dynamic", "\u0275INTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS")
@@ -100,10 +101,8 @@ object mod {
     var _cache: js.Any = js.native
   }
   
-  @JSImport("@angular/platform-browser-dynamic", "\u0275platformCoreDynamic")
-  @js.native
-  def ɵplatformCoreDynamic(): PlatformRef = js.native
-  @JSImport("@angular/platform-browser-dynamic", "\u0275platformCoreDynamic")
-  @js.native
-  def ɵplatformCoreDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = js.native
+  @scala.inline
+  def ɵplatformCoreDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")().asInstanceOf[PlatformRef]
+  @scala.inline
+  def ɵplatformCoreDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 }

@@ -5,22 +5,20 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Record[String, _] = js.native
+    var data: Record[String, js.Any]
     
-    var project: Record[String, _] = js.native
+    var project: Record[String, js.Any]
   }
   object Data {
     
     @scala.inline
-    def apply(data: Record[String, _], project: Record[String, _]): Data = {
+    def apply(data: Record[String, js.Any], project: Record[String, js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -29,21 +27,20 @@ object anon {
     implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProject(value: Record[String, _]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      def setProject(value: Record[String, js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var title: String = js.native
+    var title: String
   }
   object Description {
     
@@ -67,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DocBlocksRegExp extends StObject {
     
-    var docBlocksRegExp: RegExp = js.native
+    var docBlocksRegExp: RegExp
     
-    var inlineRegExp: RegExp = js.native
+    var inlineRegExp: RegExp
   }
   object DocBlocksRegExp {
     
@@ -93,18 +89,17 @@ object anon {
     }
   }
   
-  @js.native
   trait GetGroup extends StObject {
     
-    var getGroup: js.UndefOr[js.Function0[String]] = js.native
+    var getGroup: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var markdownFields: js.UndefOr[js.Array[String]] = js.native
+    var markdownFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var markdownRemovePTags: js.UndefOr[js.Array[String]] = js.native
+    var markdownRemovePTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    def parse(content: String, source: String, messages: String): Description = js.native
+    def parse(content: String, source: String, messages: String): Description
     
-    var path: String = js.native
+    var path: String
   }
   object GetGroup {
     
@@ -149,12 +144,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Global extends StObject {
     
-    var global: js.Any = js.native
+    var global: js.Any
     
-    var local: js.Any = js.native
+    var local: js.Any
   }
   object Global {
     
@@ -175,10 +169,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PostFilter extends StObject {
     
-    def postFilter(parsedFiles: js.Array[ParsedFile], parsedFilenames: js.Array[String]): Unit = js.native
+    def postFilter(parsedFiles: js.Array[ParsedFile], parsedFilenames: js.Array[String]): Unit
   }
   object PostFilter {
     

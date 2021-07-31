@@ -2,28 +2,26 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UdpOutputSettings extends StObject {
   
   /**
     * UDP output buffering in milliseconds. Larger values increase latency through the transcoder but simultaneously assist the transcoder in maintaining a constant, low-jitter UDP/RTP output while accommodating clock recovery, input switching, input disruptions, picture reordering, etc.
     */
-  var BufferMsec: js.UndefOr[integerMin0Max10000] = js.native
+  var BufferMsec: js.UndefOr[integerMin0Max10000] = js.undefined
   
-  var ContainerSettings: UdpContainerSettings = js.native
+  var ContainerSettings: UdpContainerSettings
   
   /**
     * Destination address and port number for RTP or UDP packets. Can be unicast or multicast RTP or UDP (eg. rtp://239.10.10.10:5001 or udp://10.100.100.100:5002).
     */
-  var Destination: OutputLocationRef = js.native
+  var Destination: OutputLocationRef
   
   /**
     * Settings for enabling and adjusting Forward Error Correction on UDP outputs.
     */
-  var FecOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.FecOutputSettings] = js.native
+  var FecOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.FecOutputSettings] = js.undefined
 }
 object UdpOutputSettings {
   

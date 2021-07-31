@@ -2,7 +2,6 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -46,7 +45,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ariaQuery.ariaQueryStrings.`doc-tip`
   - typings.ariaQuery.ariaQueryStrings.`doc-toc`
 */
-trait ARIADPubRole extends _ARIARoleDefintionKey
+trait ARIADPubRole
+  extends StObject
+     with _ARIARoleDefintionKey
 object ARIADPubRole {
   
   @scala.inline

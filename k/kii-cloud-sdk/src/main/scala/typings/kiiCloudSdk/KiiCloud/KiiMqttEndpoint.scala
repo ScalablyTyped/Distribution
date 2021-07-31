@@ -2,31 +2,29 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiMqttEndpoint extends StObject {
   
-  var `X-MQTT-TTL`: Double = js.native
+  var `X-MQTT-TTL`: Double
   
-  var host: String = js.native
+  var host: String
   
-  var installationID: String = js.native
+  var installationID: String
   
-  var mqttTopic: String = js.native
+  var mqttTopic: String
   
-  var password: String = js.native
+  var password: String
   
-  var portSSL: Double = js.native
+  var portSSL: Double
   
-  var portTCP: Double = js.native
+  var portTCP: Double
   
-  var portWS: Double = js.native
+  var portWS: Double
   
-  var portWSS: Double = js.native
+  var portWSS: Double
   
-  var username: String = js.native
+  var username: String
 }
 object KiiMqttEndpoint {
   

@@ -3,7 +3,6 @@ package typings.scriptableIos.global
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("RecurrenceRule")
 @js.native
 class RecurrenceRule ()
-  extends typings.scriptableIos.RecurrenceRule
+  extends StObject
+     with typings.scriptableIos.RecurrenceRule
 object RecurrenceRule {
+  
+  @JSGlobal("RecurrenceRule")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Constructs a complex monthly recurrence rule._
@@ -30,14 +34,13 @@ object RecurrenceRule {
     * @param setPositions - Filters which recurrences to include in the rule's frequency.
     * @see https://docs.scriptable.app/recurrencerule/#complexmonthly
     */
-  @JSGlobal("RecurrenceRule.complexMonthly")
-  @js.native
+  @scala.inline
   def complexMonthly(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
     daysOfTheMonth: js.Array[Double],
     setPositions: js.Array[Double]
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexMonthly")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], daysOfTheMonth.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex monthly recurrence rule with an end date._
@@ -54,15 +57,14 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#complexmonthlyenddate
     */
-  @JSGlobal("RecurrenceRule.complexMonthlyEndDate")
-  @js.native
+  @scala.inline
   def complexMonthlyEndDate(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
     daysOfTheMonth: js.Array[Double],
     setPositions: js.Array[Double],
     endDate: Date
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexMonthlyEndDate")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], daysOfTheMonth.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex monthly recurrence rule with an occurrence count._
@@ -79,15 +81,14 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#complexmonthlyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.complexMonthlyOccurrenceCount")
-  @js.native
+  @scala.inline
   def complexMonthlyOccurrenceCount(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
     daysOfTheMonth: js.Array[Double],
     setPositions: js.Array[Double],
     occurrenceCount: Double
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexMonthlyOccurrenceCount")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], daysOfTheMonth.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex weekly recurrence rule._
@@ -102,9 +103,8 @@ object RecurrenceRule {
     * @param setPositions - Filters which recurrences to include in the rule's frequency.
     * @see https://docs.scriptable.app/recurrencerule/#complexweekly
     */
-  @JSGlobal("RecurrenceRule.complexWeekly")
-  @js.native
-  def complexWeekly(interval: Double, daysOfTheWeek: js.Array[Double], setPositions: js.Array[Double]): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def complexWeekly(interval: Double, daysOfTheWeek: js.Array[Double], setPositions: js.Array[Double]): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexWeekly")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex weekly recurrence rule with an end date._
@@ -120,9 +120,8 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#complexweeklyenddate
     */
-  @JSGlobal("RecurrenceRule.complexWeeklyEndDate")
-  @js.native
-  def complexWeeklyEndDate(interval: Double, daysOfTheWeek: js.Array[Double], setPositions: js.Array[Double], endDate: Date): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def complexWeeklyEndDate(interval: Double, daysOfTheWeek: js.Array[Double], setPositions: js.Array[Double], endDate: Date): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexWeeklyEndDate")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex weekly recurrence rule with an occurrence count._
@@ -138,14 +137,13 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#complexweeklyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.complexWeeklyOccurrenceCount")
-  @js.native
+  @scala.inline
   def complexWeeklyOccurrenceCount(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
     setPositions: js.Array[Double],
     occurrenceCount: Double
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexWeeklyOccurrenceCount")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex yearly recurrence rule._
@@ -163,8 +161,7 @@ object RecurrenceRule {
     * @param setPositions - Filters which recurrences to include in the rule's frequency.
     * @see https://docs.scriptable.app/recurrencerule/#complexyearly
     */
-  @JSGlobal("RecurrenceRule.complexYearly")
-  @js.native
+  @scala.inline
   def complexYearly(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
@@ -172,7 +169,7 @@ object RecurrenceRule {
     weeksOfTheYear: js.Array[Double],
     daysOfTheYear: js.Array[Double],
     setPositions: js.Array[Double]
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexYearly")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], monthsOfTheYear.asInstanceOf[js.Any], weeksOfTheYear.asInstanceOf[js.Any], daysOfTheYear.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex yearly recurrence rule with an end date._
@@ -191,8 +188,7 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#complexyearlyenddate
     */
-  @JSGlobal("RecurrenceRule.complexYearlyEndDate")
-  @js.native
+  @scala.inline
   def complexYearlyEndDate(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
@@ -201,7 +197,7 @@ object RecurrenceRule {
     daysOfTheYear: js.Array[Double],
     setPositions: js.Array[Double],
     endDate: Date
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexYearlyEndDate")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], monthsOfTheYear.asInstanceOf[js.Any], weeksOfTheYear.asInstanceOf[js.Any], daysOfTheYear.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a complex yearly recurrence rule with an occurrence count._
@@ -220,8 +216,7 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#complexyearlyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.complexYearlyOccurrenceCount")
-  @js.native
+  @scala.inline
   def complexYearlyOccurrenceCount(
     interval: Double,
     daysOfTheWeek: js.Array[Double],
@@ -230,7 +225,7 @@ object RecurrenceRule {
     daysOfTheYear: js.Array[Double],
     setPositions: js.Array[Double],
     occurrenceCount: Double
-  ): typings.scriptableIos.RecurrenceRule = js.native
+  ): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("complexYearlyOccurrenceCount")(interval.asInstanceOf[js.Any], daysOfTheWeek.asInstanceOf[js.Any], monthsOfTheYear.asInstanceOf[js.Any], weeksOfTheYear.asInstanceOf[js.Any], daysOfTheYear.asInstanceOf[js.Any], setPositions.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a daily recurrence rule._
@@ -240,9 +235,8 @@ object RecurrenceRule {
     * @param interval - Interval at which to repeat the rule.
     * @see https://docs.scriptable.app/recurrencerule/#daily
     */
-  @JSGlobal("RecurrenceRule.daily")
-  @js.native
-  def daily(interval: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def daily(interval: Double): typings.scriptableIos.RecurrenceRule = ^.asInstanceOf[js.Dynamic].applyDynamic("daily")(interval.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a daily recurrence rule with an end date._
@@ -253,9 +247,8 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#dailyenddate
     */
-  @JSGlobal("RecurrenceRule.dailyEndDate")
-  @js.native
-  def dailyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def dailyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("dailyEndDate")(interval.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a daily recurrence rule with an occurrence count._
@@ -266,9 +259,8 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#dailyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.dailyOccurrenceCount")
-  @js.native
-  def dailyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def dailyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("dailyOccurrenceCount")(interval.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a monthly recurrence rule._
@@ -278,9 +270,8 @@ object RecurrenceRule {
     * @param interval - Interval at which to repeat the rule.
     * @see https://docs.scriptable.app/recurrencerule/#monthly
     */
-  @JSGlobal("RecurrenceRule.monthly")
-  @js.native
-  def monthly(interval: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def monthly(interval: Double): typings.scriptableIos.RecurrenceRule = ^.asInstanceOf[js.Dynamic].applyDynamic("monthly")(interval.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a monthly recurrence rule with an end date._
@@ -291,9 +282,8 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#monthlyenddate
     */
-  @JSGlobal("RecurrenceRule.monthlyEndDate")
-  @js.native
-  def monthlyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def monthlyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("monthlyEndDate")(interval.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a monthly recurrence rule with an occurrence count._
@@ -304,9 +294,8 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#monthlyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.monthlyOccurrenceCount")
-  @js.native
-  def monthlyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def monthlyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("monthlyOccurrenceCount")(interval.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a weekly recurrence rule._
@@ -316,9 +305,8 @@ object RecurrenceRule {
     * @param interval - Interval at which to repeat the rule.
     * @see https://docs.scriptable.app/recurrencerule/#weekly
     */
-  @JSGlobal("RecurrenceRule.weekly")
-  @js.native
-  def weekly(interval: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def weekly(interval: Double): typings.scriptableIos.RecurrenceRule = ^.asInstanceOf[js.Dynamic].applyDynamic("weekly")(interval.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a weekly recurrence rule with an end date._
@@ -329,9 +317,8 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#weeklyenddate
     */
-  @JSGlobal("RecurrenceRule.weeklyEndDate")
-  @js.native
-  def weeklyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def weeklyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("weeklyEndDate")(interval.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a weekly recurrence rule with an occurrence count._
@@ -342,9 +329,8 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#weeklyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.weeklyOccurrenceCount")
-  @js.native
-  def weeklyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def weeklyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("weeklyOccurrenceCount")(interval.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a yearly recurrence rule._
@@ -354,9 +340,8 @@ object RecurrenceRule {
     * @param interval - Interval at which to repeat the rule.
     * @see https://docs.scriptable.app/recurrencerule/#yearly
     */
-  @JSGlobal("RecurrenceRule.yearly")
-  @js.native
-  def yearly(interval: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def yearly(interval: Double): typings.scriptableIos.RecurrenceRule = ^.asInstanceOf[js.Dynamic].applyDynamic("yearly")(interval.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a yearly recurrence rule with an end date._
@@ -367,9 +352,8 @@ object RecurrenceRule {
     * @param endDate - Date at which the recurrence rule should end.
     * @see https://docs.scriptable.app/recurrencerule/#yearlyenddate
     */
-  @JSGlobal("RecurrenceRule.yearlyEndDate")
-  @js.native
-  def yearlyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def yearlyEndDate(interval: Double, endDate: Date): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("yearlyEndDate")(interval.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
   
   /**
     * _Constructs a yearly recurrence rule with an occurrence count._
@@ -380,7 +364,6 @@ object RecurrenceRule {
     * @param occurrenceCount - Number of times the rule should repeat before it ends.
     * @see https://docs.scriptable.app/recurrencerule/#yearlyoccurrencecount
     */
-  @JSGlobal("RecurrenceRule.yearlyOccurrenceCount")
-  @js.native
-  def yearlyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = js.native
+  @scala.inline
+  def yearlyOccurrenceCount(interval: Double, occurrenceCount: Double): typings.scriptableIos.RecurrenceRule = (^.asInstanceOf[js.Dynamic].applyDynamic("yearlyOccurrenceCount")(interval.asInstanceOf[js.Any], occurrenceCount.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.RecurrenceRule]
 }

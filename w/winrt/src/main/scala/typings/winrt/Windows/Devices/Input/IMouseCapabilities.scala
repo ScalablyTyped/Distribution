@@ -2,21 +2,19 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseCapabilities extends StObject {
   
-  var horizontalWheelPresent: Double = js.native
+  var horizontalWheelPresent: Double
   
-  var mousePresent: Double = js.native
+  var mousePresent: Double
   
-  var numberOfButtons: Double = js.native
+  var numberOfButtons: Double
   
-  var swapButtons: Double = js.native
+  var swapButtons: Double
   
-  var verticalWheelPresent: Double = js.native
+  var verticalWheelPresent: Double
 }
 object IMouseCapabilities {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListElasticsearchInstanceTypesRequest extends StObject {
   
   /**
     * DomainName represents the name of the Domain that we are trying to modify. This should be present only if we are querying for list of available Elasticsearch instance types when modifying existing domain. 
     */
-  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.undefined
   
   /**
     * Version of Elasticsearch for which list of supported elasticsearch instance types are needed. 
     */
-  var ElasticsearchVersion: ElasticsearchVersionString = js.native
+  var ElasticsearchVersion: ElasticsearchVersionString
   
   /**
     *  Set this value to limit the number of results returned. Value provided must be greater than 30 else it wont be honored. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.undefined
   
   /**
     * NextToken should be sent in case if earlier API call produced result containing NextToken. It is used for pagination. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
 }
 object ListElasticsearchInstanceTypesRequest {
   

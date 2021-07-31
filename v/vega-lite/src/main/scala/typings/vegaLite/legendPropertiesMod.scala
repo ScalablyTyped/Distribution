@@ -48,55 +48,53 @@ import typings.vegaTypings.valuesMod.SymbolShapeValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendPropertiesMod {
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "clipHeight")
+  @JSImport("vega-lite/build/src/compile/legend/properties", JSImport.Namespace)
   @js.native
-  def clipHeight(legendType: LegendType): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultDirection")
-  @js.native
-  def defaultDirection(orient: LegendOrient, legendType: LegendType): js.UndefOr[horizontal] = js.native
+  @scala.inline
+  def clipHeight(legendType: LegendType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clipHeight")(legendType.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultGradientLength")
-  @js.native
-  def defaultGradientLength(hasLegendConfigModelDirectionOrientScaleType: Direction): Double | Signal = js.native
+  @scala.inline
+  def defaultDirection(orient: LegendOrient, legendType: LegendType): js.UndefOr[horizontal] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultDirection")(orient.asInstanceOf[js.Any], legendType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[horizontal]]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultLabelOverlap")
-  @js.native
-  def defaultLabelOverlap(scaleType: ScaleType): LabelOverlap = js.native
+  @scala.inline
+  def defaultGradientLength(hasLegendConfigModelDirectionOrientScaleType: Direction): Double | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGradientLength")(hasLegendConfigModelDirectionOrientScaleType.asInstanceOf[js.Any]).asInstanceOf[Double | Signal]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultSymbolType")
-  @js.native
+  @scala.inline
+  def defaultLabelOverlap(scaleType: ScaleType): LabelOverlap = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelOverlap")(scaleType.asInstanceOf[js.Any]).asInstanceOf[LabelOverlap]
+  
+  @scala.inline
+  def defaultSymbolType(mark: Mark, channel: NonPositionScaleChannel, shapeChannelDef: Unit, markShape: SymbolShape): SymbolShape | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSymbolType")(mark.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], shapeChannelDef.asInstanceOf[js.Any], markShape.asInstanceOf[js.Any])).asInstanceOf[SymbolShape | SignalRef]
+  @scala.inline
+  def defaultSymbolType(mark: Mark, channel: NonPositionScaleChannel, shapeChannelDef: Unit, markShape: SignalRef): SymbolShape | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSymbolType")(mark.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], shapeChannelDef.asInstanceOf[js.Any], markShape.asInstanceOf[js.Any])).asInstanceOf[SymbolShape | SignalRef]
+  @scala.inline
   def defaultSymbolType(
     mark: Mark,
     channel: NonPositionScaleChannel,
-    shapeChannelDef: js.UndefOr[ShapeDef[String]],
+    shapeChannelDef: ShapeDef[String],
     markShape: SymbolShape
-  ): SymbolShape | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultSymbolType")
-  @js.native
+  ): SymbolShape | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSymbolType")(mark.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], shapeChannelDef.asInstanceOf[js.Any], markShape.asInstanceOf[js.Any])).asInstanceOf[SymbolShape | SignalRef]
+  @scala.inline
   def defaultSymbolType(
     mark: Mark,
     channel: NonPositionScaleChannel,
-    shapeChannelDef: js.UndefOr[ShapeDef[String]],
+    shapeChannelDef: ShapeDef[String],
     markShape: SignalRef
-  ): SymbolShape | SignalRef = js.native
+  ): SymbolShape | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSymbolType")(mark.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], shapeChannelDef.asInstanceOf[js.Any], markShape.asInstanceOf[js.Any])).asInstanceOf[SymbolShape | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "defaultType")
-  @js.native
-  def defaultType(hasChannelTimeUnitScaleType: typings.vegaLite.anon.ScaleType): LegendType = js.native
+  @scala.inline
+  def defaultType(hasChannelTimeUnitScaleType: typings.vegaLite.anon.ScaleType): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultType")(hasChannelTimeUnitScaleType.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "getDirection")
-  @js.native
-  def getDirection(hasLegendConfigLegendTypeOrientLegend: LegendConfig): Orientation = js.native
+  @scala.inline
+  def getDirection(hasLegendConfigLegendTypeOrientLegend: LegendConfig): Orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(hasLegendConfigLegendTypeOrientLegend.asInstanceOf[js.Any]).asInstanceOf[Orientation]
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "getLegendType")
-  @js.native
-  def getLegendType(params: Legend): LegendType = js.native
+  @scala.inline
+  def getLegendType(params: Legend): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendType")(params.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   
   /* Inlined {[ k in keyof vega-lite.vega-lite/build/src/compile/legend/component.LegendComponentProps ]:? (params : vega-lite.vega-lite/build/src/compile/legend/properties.LegendRuleParams): vega-lite.vega-lite/build/src/compile/legend/component.LegendComponentProps[k]} */
   object legendRules {
@@ -580,6 +578,10 @@ object legendPropertiesMod {
     @scala.inline
     def title_=(x: js.UndefOr[js.Function1[/* params */ LegendRuleParams, js.UndefOr[Text | SignalRef]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
     
+    @JSImport("vega-lite/build/src/compile/legend/properties", "legendRules.type")
+    @js.native
+    val `type`: js.UndefOr[js.Function1[/* params */ LegendRuleParams, js.UndefOr[LegendType]]] = js.native
+    
     @JSImport("vega-lite/build/src/compile/legend/properties", "legendRules.values")
     @js.native
     def values: js.UndefOr[
@@ -597,51 +599,45 @@ object legendPropertiesMod {
     def zindex: js.UndefOr[js.Function1[/* params */ LegendRuleParams, js.UndefOr[Double]]] = js.native
     @scala.inline
     def zindex_=(x: js.UndefOr[js.Function1[/* params */ LegendRuleParams, js.UndefOr[Double]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zindex")(x.asInstanceOf[js.Any])
-    
-    @JSImport("vega-lite/build/src/compile/legend/properties", "legendRules.type")
-    @js.native
-    val `type`: js.UndefOr[js.Function1[/* params */ LegendRuleParams, js.UndefOr[LegendType]]] = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/legend/properties", "values")
-  @js.native
+  @scala.inline
   def values(
     legend: LegendInternal,
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]
-  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = js.native
-  @JSImport("vega-lite/build/src/compile/legend/properties", "values")
-  @js.native
+  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(legend.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
+  
+  @scala.inline
   def values_binned(
     legend: LegendInternal,
-    fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]
-  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = js.native
+    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(legend.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
   
-  @js.native
   trait LegendRuleParams extends StObject {
     
-    var channel: NonPositionScaleChannel = js.native
+    var channel: NonPositionScaleChannel
     
-    var config: Config[SignalRef] = js.native
+    var config: Config[SignalRef]
     
-    var direction: Orientation = js.native
+    var direction: Orientation
     
-    var encoding: Encoding[String] = js.native
+    var encoding: Encoding[String]
     
-    var fieldOrDatumDef: MarkPropFieldOrDatumDef[String, Type] = js.native
+    var fieldOrDatumDef: MarkPropFieldOrDatumDef[String, Type]
     
-    var legend: LegendInternal = js.native
+    var legend: LegendInternal
     
-    var legendConfig: typings.vegaLite.legendMod.LegendConfig[SignalRef] = js.native
+    var legendConfig: typings.vegaLite.legendMod.LegendConfig[SignalRef]
     
-    var legendType: LegendType = js.native
+    var legendType: LegendType
     
-    var markDef: MarkDef[Mark, SignalRef] = js.native
+    var markDef: MarkDef[Mark, SignalRef]
     
-    var model: UnitModel = js.native
+    var model: UnitModel
     
-    var orient: LegendOrient = js.native
+    var orient: LegendOrient
     
-    var scaleType: ScaleType = js.native
+    var scaleType: ScaleType
   }
   object LegendRuleParams {
     

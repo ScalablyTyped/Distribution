@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspacesDirectoryMod {
@@ -101,6 +100,10 @@ object workspacesDirectoryMod {
   /* static members */
   object Directory {
     
+    @JSImport("@pulumi/aws/workspaces/directory", "Directory")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Directory resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -110,57 +113,51 @@ object workspacesDirectoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Directory = js.native
-    @JSImport("@pulumi/aws/workspaces/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Directory = js.native
-    @JSImport("@pulumi/aws/workspaces/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState): Directory = js.native
-    @JSImport("@pulumi/aws/workspaces/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
     
     /**
       * Returns true if the given object is an instance of Directory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces/directory", "Directory.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean]
   }
   
-  @js.native
   trait DirectoryArgs extends StObject {
     
     /**
       * The directory identifier for registration in WorkSpaces service.
       */
-    val directoryId: Input[String] = js.native
+    val directoryId: Input[String]
     
     /**
       * Permissions to enable or disable self-service capabilities. Defined below.
       */
-    val selfServicePermissions: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.DirectorySelfServicePermissions]] = js.native
+    val selfServicePermissions: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.DirectorySelfServicePermissions]] = js.undefined
     
     /**
       * The subnets identifiers where the workspaces are created.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags assigned to the WorkSpaces directory.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Default properties that are used for creating WorkSpaces. Defined below.
       */
     val workspaceCreationProperties: js.UndefOr[
         Input[typings.pulumiAws.inputMod.workspaces.DirectoryWorkspaceCreationProperties]
-      ] = js.native
+      ] = js.undefined
   }
   object DirectoryArgs {
     
@@ -205,80 +202,79 @@ object workspacesDirectoryMod {
     }
   }
   
-  @js.native
   trait DirectoryState extends StObject {
     
     /**
       * The directory alias.
       */
-    val alias: js.UndefOr[Input[String]] = js.native
+    val alias: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user name for the service account.
       */
-    val customerUserName: js.UndefOr[Input[String]] = js.native
+    val customerUserName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The directory identifier for registration in WorkSpaces service.
       */
-    val directoryId: js.UndefOr[Input[String]] = js.native
+    val directoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the directory.
       */
-    val directoryName: js.UndefOr[Input[String]] = js.native
+    val directoryName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The directory type.
       */
-    val directoryType: js.UndefOr[Input[String]] = js.native
+    val directoryType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP addresses of the DNS servers for the directory.
       */
-    val dnsIpAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dnsIpAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The identifier of the IAM role. This is the role that allows Amazon WorkSpaces to make calls to other services, such as Amazon EC2, on your behalf.
       */
-    val iamRoleId: js.UndefOr[Input[String]] = js.native
+    val iamRoleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifiers of the IP access control groups associated with the directory.
       */
-    val ipGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ipGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The registration code for the directory. This is the code that users enter in their Amazon WorkSpaces client application to connect to the directory.
       */
-    val registrationCode: js.UndefOr[Input[String]] = js.native
+    val registrationCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Permissions to enable or disable self-service capabilities. Defined below.
       */
-    val selfServicePermissions: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.DirectorySelfServicePermissions]] = js.native
+    val selfServicePermissions: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.DirectorySelfServicePermissions]] = js.undefined
     
     /**
       * The subnets identifiers where the workspaces are created.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags assigned to the WorkSpaces directory.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Default properties that are used for creating WorkSpaces. Defined below.
       */
     val workspaceCreationProperties: js.UndefOr[
         Input[typings.pulumiAws.inputMod.workspaces.DirectoryWorkspaceCreationProperties]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The identifier of the security group that is assigned to new WorkSpaces.
       */
-    val workspaceSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    val workspaceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
   }
   object DirectoryState {
     

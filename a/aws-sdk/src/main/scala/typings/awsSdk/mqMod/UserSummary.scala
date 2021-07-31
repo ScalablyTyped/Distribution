@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSummary extends StObject {
   
   /**
     * The type of change pending for the broker user.
     */
-  var PendingChange: js.UndefOr[ChangeType] = js.native
+  var PendingChange: js.UndefOr[ChangeType] = js.undefined
   
   /**
     * Required. The username of the broker user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object UserSummary {
   

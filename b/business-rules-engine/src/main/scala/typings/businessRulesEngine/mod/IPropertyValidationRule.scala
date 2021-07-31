@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValidationRule[T] extends StObject {
   
-  def Validate(context: IValidationContext[T]): js.Array[IValidationFailure] = js.native
+  def Validate(context: IValidationContext[T]): js.Array[IValidationFailure]
   
-  def ValidateAsync(context: IValidationContext[T]): Promise[js.Array[IValidationFailure]] = js.native
+  def ValidateAsync(context: IValidationContext[T]): Promise[js.Array[IValidationFailure]]
   
-  var Validators: StringDictionary[js.Any] = js.native
+  var Validators: StringDictionary[js.Any]
 }
 object IPropertyValidationRule {
   
@@ -29,7 +27,7 @@ object IPropertyValidationRule {
   }
   
   @scala.inline
-  implicit class IPropertyValidationRuleMutableBuilder[Self <: IPropertyValidationRule[_], T] (val x: Self with IPropertyValidationRule[T]) extends AnyVal {
+  implicit class IPropertyValidationRuleMutableBuilder[Self <: IPropertyValidationRule[?], T] (val x: Self & IPropertyValidationRule[T]) extends AnyVal {
     
     @scala.inline
     def setValidate(value: IValidationContext[T] => js.Array[IValidationFailure]): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))

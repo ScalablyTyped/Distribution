@@ -2,13 +2,11 @@ package typings.phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Math extends StObject {
   
-  def fround(n: Double): Double = js.native
+  def fround(n: Double): Double
 }
 object Math {
   

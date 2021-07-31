@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusStation extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var position: Point = js.native
+  var position: Point
 }
 object BusStation {
   

@@ -23,7 +23,6 @@ import typings.rangeParser.mod.Result
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,17 +30,17 @@ object mod {
   @JSImport("passport-http-bearer", "Strategy")
   @js.native
   class Strategy[T /* <: VerifyFunctions */] protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: IStrategyOptions, verify: T) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
   trait IKoaContextContainer extends StObject {
     
-    var ctx: Context = js.native
+    var ctx: Context
   }
   object IKoaContextContainer {
     
@@ -59,14 +58,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IStrategyOptions extends StObject {
     
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object IStrategyOptions {
     
@@ -102,12 +100,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IVerifyOptions extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var scope: String | js.Array[String] = js.native
+    var scope: String | js.Array[String]
   }
   object IVerifyOptions {
     
@@ -135,7 +132,6 @@ object mod {
   }
   
   /* Inlined std.Partial<express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary, any, any, express-serve-static-core.express-serve-static-core.Query>> & passport-http-bearer.passport-http-bearer.IKoaContextContainer */
-  @js.native
   trait KoaPassportExpressRequestMock extends StObject {
     
     var _destroy: js.UndefOr[
@@ -144,89 +140,89 @@ object mod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var _read: js.UndefOr[js.Function1[/* size */ Double, Unit]] = js.native
+    var _read: js.UndefOr[js.Function1[/* size */ Double, Unit]] = js.undefined
     
-    var aborted: js.UndefOr[Boolean] = js.native
+    var aborted: js.UndefOr[Boolean] = js.undefined
     
-    var accepted: js.UndefOr[js.Array[MediaType]] = js.native
+    var accepted: js.UndefOr[js.Array[MediaType]] = js.undefined
     
-    var accepts: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var accepts: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var acceptsCharsets: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var acceptsCharsets: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var acceptsEncodings: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var acceptsEncodings: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var acceptsLanguages: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var acceptsLanguages: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var addListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var addListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
     var app: js.UndefOr[
         js.Function2[
-          /* req */ Request[ParamsDictionary, _, _, ParsedQs], 
-          /* res */ Response[_, Double], 
-          _
+          /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], 
+          /* res */ Response[js.Any, Double], 
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var connection: js.UndefOr[Socket] = js.native
+    var connection: js.UndefOr[Socket] = js.undefined
     
-    var constructor: js.UndefOr[js.Function1[/* socket */ Socket, js.Any]] = js.native
+    var constructor: js.UndefOr[js.Function1[/* socket */ Socket, js.Any]] = js.undefined
     
-    var cookies: js.UndefOr[js.Any] = js.native
+    var cookies: js.UndefOr[js.Any] = js.undefined
     
-    var ctx: Context = js.native
+    var ctx: Context
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var destroyed: js.UndefOr[Boolean] = js.native
+    var destroyed: js.UndefOr[Boolean] = js.undefined
     
-    var emit: js.UndefOr[js.Function1[close, Boolean]] = js.native
+    var emit: js.UndefOr[js.Function1[close, Boolean]] = js.undefined
     
-    var eventNames: js.UndefOr[js.Function0[js.Array[String | js.Symbol]]] = js.native
+    var eventNames: js.UndefOr[js.Function0[js.Array[String | js.Symbol]]] = js.undefined
     
-    var fresh: js.UndefOr[Boolean] = js.native
+    var fresh: js.UndefOr[Boolean] = js.undefined
     
-    var get: js.UndefOr[js.Function1[`set-cookie`, js.UndefOr[js.Array[String]]]] = js.native
+    var get: js.UndefOr[js.Function1[`set-cookie`, js.UndefOr[js.Array[String]]]] = js.undefined
     
-    var getMaxListeners: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxListeners: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var header: js.UndefOr[js.Function1[`set-cookie`, js.UndefOr[js.Array[String]]]] = js.native
+    var header: js.UndefOr[js.Function1[`set-cookie`, js.UndefOr[js.Array[String]]]] = js.undefined
     
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var httpVersion: js.UndefOr[String] = js.native
+    var httpVersion: js.UndefOr[String] = js.undefined
     
-    var httpVersionMajor: js.UndefOr[Double] = js.native
+    var httpVersionMajor: js.UndefOr[Double] = js.undefined
     
-    var httpVersionMinor: js.UndefOr[Double] = js.native
+    var httpVersionMinor: js.UndefOr[Double] = js.undefined
     
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
-    var ips: js.UndefOr[js.Array[String]] = js.native
+    var ips: js.UndefOr[js.Array[String]] = js.undefined
     
-    var is: js.UndefOr[js.Function1[/* type */ String, String | `false` | Null]] = js.native
+    var is: js.UndefOr[js.Function1[/* type */ String, String | `false` | Null]] = js.undefined
     
-    var isPaused: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isPaused: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var listenerCount: js.UndefOr[js.Function1[/* event */ String, Double]] = js.native
+    var listenerCount: js.UndefOr[js.Function1[/* event */ String, Double]] = js.undefined
     
-    var listeners: js.UndefOr[js.Function1[/* event */ String, js.Array[js.Function]]] = js.native
+    var listeners: js.UndefOr[js.Function1[/* event */ String, js.Array[js.Function]]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var next: js.UndefOr[NextFunction] = js.native
+    var next: js.UndefOr[NextFunction] = js.undefined
     
     var off: js.UndefOr[
         js.Function2[
@@ -234,99 +230,99 @@ object mod {
           /* listener */ js.Function1[/* repeated */ js.Any, Unit], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var on: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var on: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
-    var once: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var once: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
-    var originalUrl: js.UndefOr[String] = js.native
+    var originalUrl: js.UndefOr[String] = js.undefined
     
-    var param: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+    var param: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
     
-    var params: js.UndefOr[ParamsDictionary] = js.native
+    var params: js.UndefOr[ParamsDictionary] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pause: js.UndefOr[js.Function0[this.type]] = js.native
+    var pause: js.UndefOr[js.Function0[this.type]] = js.undefined
     
-    var pipe: js.UndefOr[js.Function1[/* destination */ WritableStream, WritableStream]] = js.native
+    var pipe: js.UndefOr[js.Function1[/* destination */ WritableStream, WritableStream]] = js.undefined
     
-    var prependListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var prependListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
-    var prependOnceListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var prependOnceListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var push: js.UndefOr[js.Function1[/* chunk */ js.Any, Boolean]] = js.native
+    var push: js.UndefOr[js.Function1[/* chunk */ js.Any, Boolean]] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
     
-    var range: js.UndefOr[js.Function1[/* size */ Double, js.UndefOr[Ranges | Result]]] = js.native
+    var range: js.UndefOr[js.Function1[/* size */ Double, js.UndefOr[Ranges | Result]]] = js.undefined
     
-    var rawHeaders: js.UndefOr[js.Array[String]] = js.native
+    var rawHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rawListeners: js.UndefOr[js.Function1[/* event */ String, js.Array[js.Function]]] = js.native
+    var rawListeners: js.UndefOr[js.Function1[/* event */ String, js.Array[js.Function]]] = js.undefined
     
-    var rawTrailers: js.UndefOr[js.Array[String]] = js.native
+    var rawTrailers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var read: js.UndefOr[js.Function0[_]] = js.native
+    var read: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var readableEncoding: js.UndefOr[BufferEncoding | Null] = js.native
+    var readableEncoding: js.UndefOr[BufferEncoding | Null] = js.undefined
     
-    var readableEnded: js.UndefOr[Boolean] = js.native
+    var readableEnded: js.UndefOr[Boolean] = js.undefined
     
-    var readableFlowing: js.UndefOr[Boolean | Null] = js.native
+    var readableFlowing: js.UndefOr[Boolean | Null] = js.undefined
     
-    var readableHighWaterMark: js.UndefOr[Double] = js.native
+    var readableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var readableLength: js.UndefOr[Double] = js.native
+    var readableLength: js.UndefOr[Double] = js.undefined
     
-    var readableObjectMode: js.UndefOr[Boolean] = js.native
+    var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
-    var removeAllListeners: js.UndefOr[js.Function0[this.type]] = js.native
+    var removeAllListeners: js.UndefOr[js.Function0[this.type]] = js.undefined
     
-    var removeListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.native
+    var removeListener: js.UndefOr[js.Function2[close, /* listener */ js.Function0[Unit], this.type]] = js.undefined
     
-    var res: js.UndefOr[Response[_, Double]] = js.native
+    var res: js.UndefOr[Response[js.Any, Double]] = js.undefined
     
-    var resume: js.UndefOr[js.Function0[this.type]] = js.native
+    var resume: js.UndefOr[js.Function0[this.type]] = js.undefined
     
-    var route: js.UndefOr[js.Any] = js.native
+    var route: js.UndefOr[js.Any] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var setEncoding: js.UndefOr[js.Function1[/* encoding */ BufferEncoding, this.type]] = js.native
+    var setEncoding: js.UndefOr[js.Function1[/* encoding */ BufferEncoding, this.type]] = js.undefined
     
-    var setMaxListeners: js.UndefOr[js.Function1[/* n */ Double, this.type]] = js.native
+    var setMaxListeners: js.UndefOr[js.Function1[/* n */ Double, this.type]] = js.undefined
     
-    var setTimeout: js.UndefOr[js.Function1[/* msecs */ Double, this.type]] = js.native
+    var setTimeout: js.UndefOr[js.Function1[/* msecs */ Double, this.type]] = js.undefined
     
-    var signedCookies: js.UndefOr[js.Any] = js.native
+    var signedCookies: js.UndefOr[js.Any] = js.undefined
     
-    var socket: js.UndefOr[Socket] = js.native
+    var socket: js.UndefOr[Socket] = js.undefined
     
-    var stale: js.UndefOr[Boolean] = js.native
+    var stale: js.UndefOr[Boolean] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
-    var statusMessage: js.UndefOr[String] = js.native
+    var statusMessage: js.UndefOr[String] = js.undefined
     
-    var subdomains: js.UndefOr[js.Array[String]] = js.native
+    var subdomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var trailers: js.UndefOr[Dict[String]] = js.native
+    var trailers: js.UndefOr[Dict[String]] = js.undefined
     
-    var unpipe: js.UndefOr[js.Function0[this.type]] = js.native
+    var unpipe: js.UndefOr[js.Function0[this.type]] = js.undefined
     
-    var unshift: js.UndefOr[js.Function1[/* chunk */ js.Any, Unit]] = js.native
+    var unshift: js.UndefOr[js.Function1[/* chunk */ js.Any, Unit]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var wrap: js.UndefOr[js.Function1[/* oldStream */ ReadableStream, this.type]] = js.native
+    var wrap: js.UndefOr[js.Function1[/* oldStream */ ReadableStream, this.type]] = js.undefined
     
-    var xhr: js.UndefOr[Boolean] = js.native
+    var xhr: js.UndefOr[Boolean] = js.undefined
   }
   object KoaPassportExpressRequestMock {
     
@@ -385,7 +381,9 @@ object mod {
       def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
       
       @scala.inline
-      def setApp(value: (/* req */ Request[ParamsDictionary, _, _, ParsedQs], /* res */ Response[_, Double]) => _): Self = StObject.set(x, "app", js.Any.fromFunction2(value))
+      def setApp(
+        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], /* res */ Response[js.Any, Double]) => js.Any
+      ): Self = StObject.set(x, "app", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
@@ -681,7 +679,7 @@ object mod {
       def setRawTrailersVarargs(value: String*): Self = StObject.set(x, "rawTrailers", js.Array(value :_*))
       
       @scala.inline
-      def setRead(value: () => _): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
       @scala.inline
       def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
@@ -747,7 +745,7 @@ object mod {
       def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
       
       @scala.inline
-      def setRes(value: Response[_, Double]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      def setRes(value: Response[js.Any, Double]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResUndefined: Self = StObject.set(x, "res", js.undefined)

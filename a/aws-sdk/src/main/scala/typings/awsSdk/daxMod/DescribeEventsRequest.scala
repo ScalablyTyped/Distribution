@@ -2,46 +2,44 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventsRequest extends StObject {
   
   /**
     * The number of minutes' worth of events to retrieve.
     */
-  var Duration: js.UndefOr[IntegerOptional] = js.native
+  var Duration: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The end of the time interval for which to retrieve events, specified in ISO 8601 format.
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. The value for MaxResults must be between 20 and 100.
     */
-  var MaxResults: js.UndefOr[IntegerOptional] = js.native
+  var MaxResults: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the event source for which events will be returned. If not specified, then all sources are included in the response.
     */
-  var SourceName: js.UndefOr[String] = js.native
+  var SourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The event source to retrieve events for. If no value is specified, all events are returned.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.daxMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.daxMod.SourceType] = js.undefined
   
   /**
     * The beginning of the time interval to retrieve events for, specified in ISO 8601 format.
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
 }
 object DescribeEventsRequest {
   

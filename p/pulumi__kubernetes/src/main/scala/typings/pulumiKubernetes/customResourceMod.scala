@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customResourceMod {
@@ -56,6 +55,10 @@ object customResourceMod {
   /* static members */
   object CustomResource {
     
+    @JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CustomResource resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,13 +66,13 @@ object customResourceMod {
       * @param name The _unique_ name of the resulting resource.
       * @param opts Uniquely specifies a CustomResource to select.
       */
-    @JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource.get")
-    @js.native
-    def get(name: String, opts: CustomResourceGetOptions): CustomResource = js.native
+    @scala.inline
+    def get(name: String, opts: CustomResourceGetOptions): CustomResource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomResource]
   }
   
-  @js.native
-  trait CustomResourceArgs extends /* othersFields */ StringDictionary[Input[_]] {
+  trait CustomResourceArgs
+    extends StObject
+       with /* othersFields */ StringDictionary[Input[js.Any]] {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should
@@ -77,7 +80,7 @@ object customResourceMod {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
       */
-    var apiVersion: Input[String] = js.native
+    var apiVersion: Input[String]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
@@ -85,13 +88,13 @@ object customResourceMod {
       * CamelCase. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
       */
-    var kind: Input[String] = js.native
+    var kind: Input[String]
     
     /**
       * Standard object metadata; More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
       */
-    var metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
   }
   object CustomResourceArgs {
     
@@ -118,27 +121,28 @@ object customResourceMod {
     }
   }
   
-  @js.native
-  trait CustomResourceGetOptions extends CustomResourceOptions {
+  trait CustomResourceGetOptions
+    extends StObject
+       with CustomResourceOptions {
     
     /**
       * apiVersion is the API version of the apiExtensions.CustomResource we wish to select,
       * as specified by the CustomResourceDefinition that defines it on the API server.
       */
-    var apiVersion: Input[String] = js.native
+    var apiVersion: Input[String]
     
     /**
       * An ID for the Kubernetes resource to retrieve. Takes the form [namespace]/[name] or
       * [name].
       */
     @JSName("id")
-    var id_CustomResourceGetOptions: Input[ID] = js.native
+    var id_CustomResourceGetOptions: Input[ID]
     
     /**
       * kind is the kind of the apiextensions.CustomResource we wish to select, as specified by
       * the CustomResourceDefinition that defines it on the API server.
       */
-    var kind: Input[String] = js.native
+    var kind: Input[String]
   }
   object CustomResourceGetOptions {
     

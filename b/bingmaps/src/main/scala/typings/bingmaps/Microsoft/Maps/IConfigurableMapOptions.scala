@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConfigurableMapOptions extends StObject {
   
   /** Initial map options. */
-  var mapOptions: IMapOptions = js.native
+  var mapOptions: IMapOptions
   
   /** List of configuration modules to load. */
-  var modules: js.Array[IConfigurableMapModule] = js.native
+  var modules: js.Array[IConfigurableMapModule]
 }
 object IConfigurableMapOptions {
   

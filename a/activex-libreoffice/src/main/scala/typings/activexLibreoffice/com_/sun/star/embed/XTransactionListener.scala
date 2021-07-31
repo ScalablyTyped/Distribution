@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events when a transacted object is committed or reverted. */
-@js.native
-trait XTransactionListener extends XEventListener {
+trait XTransactionListener
+  extends StObject
+     with XEventListener {
   
   /** is called after the object is committed. */
-  def commited(aEvent: EventObject): Unit = js.native
+  def commited(aEvent: EventObject): Unit
   
   /** is called just before the object is committed. */
-  def preCommit(aEvent: EventObject): Unit = js.native
+  def preCommit(aEvent: EventObject): Unit
   
   /** is called just before the object is reverted. */
-  def preRevert(aEvent: EventObject): Unit = js.native
+  def preRevert(aEvent: EventObject): Unit
   
   /** is called after the object is reverted. */
-  def reverted(aEvent: EventObject): Unit = js.native
+  def reverted(aEvent: EventObject): Unit
 }
 object XTransactionListener {
   

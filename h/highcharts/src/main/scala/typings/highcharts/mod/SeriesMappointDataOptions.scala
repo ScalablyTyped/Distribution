@@ -2,70 +2,68 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesMappointDataOptions extends StObject {
   
   /**
     * (Highmaps) Individual color for the point. By default the color is either
     * used to denote the value, or pulled from the global `colors` array.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highmaps) Individual data label for each point. The options are the same
     * as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptions] = js.native
+  var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   
   /**
     * (Highmaps) The `id` of a series in the drilldown.series array to use for
     * a drilldown for this point.
     */
-  var drilldown: js.UndefOr[String] = js.native
+  var drilldown: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) Individual point events
     */
-  var events: js.UndefOr[PointEventsOptionsObject] = js.native
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   
   /**
     * (Highmaps) An id for the point. This can be used after render time to get
     * a pointer to the point object through `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) The latitude of the point. Must be combined with the `lon`
     * option to work. Overrides `x` and `y` values.
     */
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The longitude of the point. Must be combined with the `lon`
     * option to work. Overrides `x` and `y` values.
     */
-  var lon: js.UndefOr[Double] = js.native
+  var lon: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The name of the point as shown in the legend, tooltip,
     * dataLabel etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) The x coordinate of the point in terms of the map path
     * coordinates.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The x coordinate of the point in terms of the map path
     * coordinates.
     */
-  var y: js.UndefOr[Double | Null] = js.native
+  var y: js.UndefOr[Double | Null] = js.undefined
 }
 object SeriesMappointDataOptions {
   

@@ -3,15 +3,13 @@ package typings.paystack.anon
 import typings.paystack.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listbanks extends StObject {
   
-  def list_banks(params: Page): js.Promise[ResponsedataArrayany] = js.native
+  def list_banks(params: Page): js.Promise[ResponsedataArrayany]
   
-  def resolve_bin(bin: String): js.Promise[Response] = js.native
+  def resolve_bin(bin: String): js.Promise[Response]
 }
 object Listbanks {
   

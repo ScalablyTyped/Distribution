@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeprecateActivityTypeInput extends StObject {
   
   /**
     * The activity type to undeprecate.
     */
-  var activityType: ActivityType = js.native
+  var activityType: ActivityType
   
   /**
     * The name of the domain of the deprecated activity type.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
 }
 object UndeprecateActivityTypeInput {
   

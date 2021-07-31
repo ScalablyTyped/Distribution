@@ -10,14 +10,13 @@ import typings.tablesorter.stickyHeaderOptionsMod.StickyHeaderOptions
 import typings.tablesorter.zebraOptionsMod.ZebraOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetOptionsMod {
   
-  @js.native
   trait WidgetOptions[TElement]
-    extends ColumnOptions
+    extends StObject
+       with ColumnOptions
        with FilterOptions[TElement]
        with ResizingOptions
        with SaveSortOptions

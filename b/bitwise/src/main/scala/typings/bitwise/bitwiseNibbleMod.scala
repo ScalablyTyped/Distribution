@@ -4,27 +4,30 @@ import typings.bitwise.bitwiseTypesMod.Bit
 import typings.bitwise.bitwiseTypesMod.UInt4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitwiseNibbleMod {
   
+  @JSImport("bitwise/nibble", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("bitwise/nibble", "default.read")
+    @JSImport("bitwise/nibble", JSImport.Default)
     @js.native
-    def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitwise/nibble", "default.write")
-    @js.native
-    def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4 = js.native
+    @scala.inline
+    def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(nibble.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[Bit, Bit, Bit, Bit]]
+    
+    @scala.inline
+    def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4 = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(nibble.asInstanceOf[js.Any]).asInstanceOf[UInt4]
   }
   
-  @JSImport("bitwise/nibble", "read")
-  @js.native
-  def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = js.native
+  @scala.inline
+  def read(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(nibble.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[Bit, Bit, Bit, Bit]]
   
-  @JSImport("bitwise/nibble", "write")
-  @js.native
-  def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4 = js.native
+  @scala.inline
+  def write(nibble: js.Tuple4[Bit, Bit, Bit, Bit]): UInt4 = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(nibble.asInstanceOf[js.Any]).asInstanceOf[UInt4]
 }

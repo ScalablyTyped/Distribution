@@ -3,15 +3,13 @@ package typings.errCode
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var code: NonNullable[Boolean] = js.native
+    var code: NonNullable[Boolean]
   }
   object `0` {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var code: NonNullable[js.BigInt] = js.native
+    var code: NonNullable[js.BigInt]
   }
   object `1` {
     
@@ -50,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var code: NonNullable[Null] = js.native
+    var code: NonNullable[Null]
   }
   object `2` {
     
@@ -71,16 +67,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `3` extends StObject {
     
-    var code: NonNullable[js.UndefOr[scala.Nothing]] = js.native
+    var code: NonNullable[Unit]
   }
   object `3` {
     
     @scala.inline
-    def apply(): `3` = {
-      val __obj = js.Dynamic.literal()
+    def apply(code: NonNullable[Unit]): `3` = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[`3`]
     }
     
@@ -88,17 +83,13 @@ object anon {
     implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCode(value: NonNullable[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      def setCode(value: NonNullable[Unit]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: NonNullable[Double] = js.native
+    var code: NonNullable[Double]
   }
   object Code {
     
@@ -116,10 +107,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CodeNonNullable extends StObject {
     
-    var code: NonNullable[String] = js.native
+    var code: NonNullable[String]
   }
   object CodeNonNullable {
     

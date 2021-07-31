@@ -4,21 +4,19 @@ import typings.firebaseAuthTypes.anon.BundleId
 import typings.firebaseAuthTypes.anon.InstallApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionCodeSettings extends StObject {
   
-  var android: js.UndefOr[InstallApp] = js.native
+  var android: js.UndefOr[InstallApp] = js.undefined
   
-  var dynamicLinkDomain: js.UndefOr[String] = js.native
+  var dynamicLinkDomain: js.UndefOr[String] = js.undefined
   
-  var handleCodeInApp: js.UndefOr[Boolean] = js.native
+  var handleCodeInApp: js.UndefOr[Boolean] = js.undefined
   
-  var iOS: js.UndefOr[BundleId] = js.native
+  var iOS: js.UndefOr[BundleId] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object ActionCodeSettings {
   

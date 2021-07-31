@@ -14,52 +14,44 @@ import typings.nodePgMigrate.tablesTypesMod.RenameConstraint
 import typings.nodePgMigrate.tablesTypesMod.RenameTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesMod {
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "addColumns")
+  @JSImport("node-pg-migrate/dist/operations/tables", JSImport.Namespace)
   @js.native
-  def addColumns(mOptions: MigrationOptions): AddColumns = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "addConstraint")
-  @js.native
-  def addConstraint(mOptions: MigrationOptions): CreateConstraint = js.native
+  @scala.inline
+  def addColumns(mOptions: MigrationOptions): AddColumns = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumns")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AddColumns]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "alterColumn")
-  @js.native
-  def alterColumn(mOptions: MigrationOptions): AlterColumn = js.native
+  @scala.inline
+  def addConstraint(mOptions: MigrationOptions): CreateConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateConstraint]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "alterTable")
-  @js.native
-  def alterTable(mOptions: MigrationOptions): AlterTable = js.native
+  @scala.inline
+  def alterColumn(mOptions: MigrationOptions): AlterColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("alterColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterColumn]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "createTable")
-  @js.native
-  def createTable(mOptions: MigrationOptions): CreateTable = js.native
+  @scala.inline
+  def alterTable(mOptions: MigrationOptions): AlterTable = ^.asInstanceOf[js.Dynamic].applyDynamic("alterTable")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterTable]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "dropColumns")
-  @js.native
-  def dropColumns(mOptions: MigrationOptions): DropColumns = js.native
+  @scala.inline
+  def createTable(mOptions: MigrationOptions): CreateTable = ^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateTable]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "dropConstraint")
-  @js.native
-  def dropConstraint(mOptions: MigrationOptions): DropConstraint = js.native
+  @scala.inline
+  def dropColumns(mOptions: MigrationOptions): DropColumns = ^.asInstanceOf[js.Dynamic].applyDynamic("dropColumns")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropColumns]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "dropTable")
-  @js.native
-  def dropTable(mOptions: MigrationOptions): DropTable = js.native
+  @scala.inline
+  def dropConstraint(mOptions: MigrationOptions): DropConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("dropConstraint")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropConstraint]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "renameColumn")
-  @js.native
-  def renameColumn(mOptions: MigrationOptions): RenameColumn = js.native
+  @scala.inline
+  def dropTable(mOptions: MigrationOptions): DropTable = ^.asInstanceOf[js.Dynamic].applyDynamic("dropTable")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropTable]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "renameConstraint")
-  @js.native
-  def renameConstraint(mOptions: MigrationOptions): RenameConstraint = js.native
+  @scala.inline
+  def renameColumn(mOptions: MigrationOptions): RenameColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("renameColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameColumn]
   
-  @JSImport("node-pg-migrate/dist/operations/tables", "renameTable")
-  @js.native
-  def renameTable(mOptions: MigrationOptions): RenameTable = js.native
+  @scala.inline
+  def renameConstraint(mOptions: MigrationOptions): RenameConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("renameConstraint")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameConstraint]
+  
+  @scala.inline
+  def renameTable(mOptions: MigrationOptions): RenameTable = ^.asInstanceOf[js.Dynamic].applyDynamic("renameTable")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameTable]
 }

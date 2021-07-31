@@ -3,15 +3,13 @@ package typings.actionsOnGoogle.apiV1Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1QueryRequestDevices extends StObject {
   
-  var customData: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var customData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object SmartHomeV1QueryRequestDevices {
   
@@ -25,7 +23,7 @@ object SmartHomeV1QueryRequestDevices {
   implicit class SmartHomeV1QueryRequestDevicesMutableBuilder[Self <: SmartHomeV1QueryRequestDevices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCustomData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)

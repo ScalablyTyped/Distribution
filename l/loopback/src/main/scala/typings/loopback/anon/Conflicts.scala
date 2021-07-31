@@ -3,15 +3,13 @@ package typings.loopback.anon
 import typings.loopback.mod.Conflict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflicts extends StObject {
   
-  var conflicts: js.Array[Conflict] = js.native
+  var conflicts: js.Array[Conflict]
   
-  var params: js.Any = js.native
+  var params: js.Any
 }
 object Conflicts {
   

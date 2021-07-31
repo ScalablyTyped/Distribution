@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
   /**
     * User-defined criteria for sending commands that target instances that meet the criteria.
     */
-  var Key: js.UndefOr[TargetKey] = js.native
+  var Key: js.UndefOr[TargetKey] = js.undefined
   
   /**
     * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include EC2 tags of ServerRole,WebServer. 
     */
-  var Values: js.UndefOr[TargetValues] = js.native
+  var Values: js.UndefOr[TargetValues] = js.undefined
 }
 object Target {
   

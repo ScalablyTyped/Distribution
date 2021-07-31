@@ -7,29 +7,26 @@ import typings.awsSdkClientCodecommitNode.getDifferencesExceptionsUnionMod.GetDi
 import typings.awsSdkClientCodecommitNode.listPullRequestsExceptionsUnionMod.ListPullRequestsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidMaxResultsExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMaxResultsExceptionDetails> * / any */ @js.native
-  trait InvalidMaxResultsException
-    extends DescribePullRequestEventsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMaxResultsExceptionDetails> * / any */ trait InvalidMaxResultsException
+    extends StObject
+       with DescribePullRequestEventsExceptionsUnion
        with GetCommentsForComparedCommitExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetDifferencesExceptionsUnion
        with ListPullRequestsExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMaxResultsException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMaxResultsException
   }
   object InvalidMaxResultsException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMaxResultsException
-    ): InvalidMaxResultsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidMaxResultsException = {
+      val __obj = js.Dynamic.literal(name = "InvalidMaxResultsException")
       __obj.asInstanceOf[InvalidMaxResultsException]
     }
     
@@ -43,6 +40,5 @@ object typesInvalidMaxResultsExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidMaxResultsExceptionDetails extends StObject
 }

@@ -11,21 +11,19 @@ import typings.workerbApi.workerbApiStrings.mouseover
 import typings.workerbApi.workerbApiStrings.mouseup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventConfig extends StObject {
   
   /**
     * An object used to specify the event properties. For key related event types, KeyboardEvent is supported. For mouse related event types, MouseEvent is supported.
     */
-  var eventProps: js.UndefOr[js.Object] = js.native
+  var eventProps: js.UndefOr[js.Object] = js.undefined
   
   /**
     * A string value used to the specify the type of the event.
     */
-  var eventType: keydown | keyup | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup = js.native
+  var eventType: keydown | keyup | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup
 }
 object EventConfig {
   

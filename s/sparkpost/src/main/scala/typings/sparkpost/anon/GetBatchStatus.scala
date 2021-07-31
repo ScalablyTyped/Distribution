@@ -9,7 +9,6 @@ import typings.sparkpost.mod.Webhook
 import typings.sparkpost.mod.WebhookLinks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -50,15 +49,15 @@ trait GetBatchStatus extends StObject {
     * @param [options] the timezone to use for the last_successful and last_failure properties
     * @returns The RelayWebhook results
     */
-  def get(id: String): ResultsPromise[WebhookLinks with Webhook] = js.native
+  def get(id: String): ResultsPromise[WebhookLinks & Webhook] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
     * @param id The id of the webhook to get
     * @param callback The request callback with RelayWebhook results
     */
-  def get(id: String, callback: ResultsCallback[WebhookLinks with Webhook]): Unit = js.native
-  def get(id: String, options: Timezone): ResultsPromise[WebhookLinks with Webhook] = js.native
+  def get(id: String, callback: ResultsCallback[WebhookLinks & Webhook]): Unit = js.native
+  def get(id: String, options: Timezone): ResultsPromise[WebhookLinks & Webhook] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -66,7 +65,7 @@ trait GetBatchStatus extends StObject {
     * @param options Object containing id and optional timezone
     * @param callback The request callback with RelayWebhook results
     */
-  def get(id: String, options: Timezone, callback: ResultsCallback[WebhookLinks with Webhook]): Unit = js.native
+  def get(id: String, options: Timezone, callback: ResultsCallback[WebhookLinks & Webhook]): Unit = js.native
   
   /**
     * Gets recent status information about a webhook.
@@ -97,12 +96,12 @@ trait GetBatchStatus extends StObject {
     *
     * @returns The documentation results
     */
-  def getDocumentation(): ResultsPromise[_] = js.native
+  def getDocumentation(): ResultsPromise[js.Any] = js.native
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     * @param callback The request callback containing documentation results
     */
-  def getDocumentation(callback: ResultsCallback[_]): Unit = js.native
+  def getDocumentation(callback: ResultsCallback[js.Any]): Unit = js.native
   
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
@@ -110,37 +109,37 @@ trait GetBatchStatus extends StObject {
     * @param options [event types]{@link https://support.sparkpost.com/customer/portal/articles/1976204} for which to get a sample payload
     * Default: all event types returned
     */
-  def getSamples(): js.Promise[Response[_]] = js.native
+  def getSamples(): js.Promise[Response[js.Any]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param callback The request callback containing examples
     */
-  def getSamples(callback: Callback[_]): Unit = js.native
-  def getSamples(options: Events): js.Promise[Response[_]] = js.native
+  def getSamples(callback: Callback[js.Any]): Unit = js.native
+  def getSamples(options: Events): js.Promise[Response[js.Any]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param options The optional event name
     * @param callback The request callback containing examples
     */
-  def getSamples(options: Events, callback: Callback[_]): Unit = js.native
+  def getSamples(options: Events, callback: Callback[js.Any]): Unit = js.native
   
   /**
     * List currently existing webhooks.the timezone to use for the last_successful and last_failure properties | Default: UTC
     *
     */
-  def list(): ResultsPromise[js.Array[WebhookLinks with Webhook]] = js.native
+  def list(): ResultsPromise[js.Array[WebhookLinks & Webhook]] = js.native
   /**
     * List currently existing webhooks.
     * @param callback The request callback with RelayWebhook results array
     */
-  def list(callback: ResultsCallback[js.Array[WebhookLinks with Webhook]]): Unit = js.native
-  def list(options: Timezone): ResultsPromise[js.Array[WebhookLinks with Webhook]] = js.native
+  def list(callback: ResultsCallback[js.Array[WebhookLinks & Webhook]]): Unit = js.native
+  def list(options: Timezone): ResultsPromise[js.Array[WebhookLinks & Webhook]] = js.native
   /**
     * List currently existing webhooks.
     * @param options Object containing optional timezone
     * @param callback The request callback with RelayWebhook results array
     */
-  def list(options: Timezone, callback: ResultsCallback[js.Array[WebhookLinks with Webhook]]): Unit = js.native
+  def list(options: Timezone, callback: ResultsCallback[js.Array[WebhookLinks & Webhook]]): Unit = js.native
   
   /**
     * Update an existing webhook

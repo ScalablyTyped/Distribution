@@ -11,8 +11,8 @@ Fuzzy filtering and string scoring
 | Full name          | fuzzaldrin |
 | Keywords           | fuzzy, filter, stringscore |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 4376368 |
+| # dependents       | 56 |
+| # downloads        | 6067651 |
 | # stars            | 6 |
 
 ## Links

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.unimodulesReactNativeAdapter.nativeModulesProxyTypesMod.ProxyNativeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoWebBrowserMod extends Shortcut {

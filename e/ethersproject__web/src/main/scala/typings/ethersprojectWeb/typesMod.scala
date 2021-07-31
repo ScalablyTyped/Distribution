@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait GetUrlResponse extends StObject {
     
-    var body: Uint8Array = js.native
+    var body: Uint8Array
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusMessage: String = js.native
+    var statusMessage: String
   }
   object GetUrlResponse {
     
@@ -45,16 +43,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowGzip: js.UndefOr[Boolean] = js.native
+    var allowGzip: js.UndefOr[Boolean] = js.undefined
     
-    var body: js.UndefOr[Uint8Array] = js.native
+    var body: js.UndefOr[Uint8Array] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
   }
   object Options {
     

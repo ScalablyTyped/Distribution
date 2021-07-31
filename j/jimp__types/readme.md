@@ -10,9 +10,9 @@ Default Jimp encoder/decoders.
 | ------------------ | :-------------: |
 | Full name          | @jimp/types |
 | Keywords           | - |
-| # releases         | 103 |
+| # releases         | 102 |
 | # dependents       | 3 |
-| # downloads        | 33517492 |
+| # downloads        | 43324354 |
 | # stars            | 0 |
 
 ## Links

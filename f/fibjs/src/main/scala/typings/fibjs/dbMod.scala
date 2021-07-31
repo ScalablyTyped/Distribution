@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,50 +11,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object dbMod {
   
-  @JSImport("db", "escape")
+  @JSImport("db", JSImport.Namespace)
   @js.native
-  def escape(str: String): String = js.native
-  @JSImport("db", "escape")
-  @js.native
-  def escape(str: String, mysql: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("db", "format")
-  @js.native
-  def format(sql: String, args: js.Any*): String = js.native
+  @scala.inline
+  def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def escape(str: String, mysql: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any], mysql.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("db", "formatMSSQL")
-  @js.native
-  def formatMSSQL(sql: String, args: js.Any*): String = js.native
+  @scala.inline
+  def format(sql: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("db", "formatMySQL")
-  @js.native
-  def formatMySQL(sql: String, args: js.Any*): String = js.native
+  @scala.inline
+  def formatMSSQL(sql: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMSSQL")(sql.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("db", "open")
-  @js.native
-  def open(connString: String): ClassObject = js.native
+  @scala.inline
+  def formatMySQL(sql: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMySQL")(sql.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("db", "openLevelDB")
-  @js.native
-  def openLevelDB(connString: String): ClassLevelDB = js.native
+  @scala.inline
+  def open(connString: String): ClassObject = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassObject]
   
-  @JSImport("db", "openMSSQL")
-  @js.native
-  def openMSSQL(connString: String): ClassMSSQL = js.native
+  @scala.inline
+  def openLevelDB(connString: String): ClassLevelDB = ^.asInstanceOf[js.Dynamic].applyDynamic("openLevelDB")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassLevelDB]
   
-  @JSImport("db", "openMongoDB")
-  @js.native
-  def openMongoDB(connString: String): ClassMongoDB = js.native
+  @scala.inline
+  def openMSSQL(connString: String): ClassMSSQL = ^.asInstanceOf[js.Dynamic].applyDynamic("openMSSQL")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassMSSQL]
   
-  @JSImport("db", "openMySQL")
-  @js.native
-  def openMySQL(connString: String): ClassMySQL = js.native
+  @scala.inline
+  def openMongoDB(connString: String): ClassMongoDB = ^.asInstanceOf[js.Dynamic].applyDynamic("openMongoDB")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassMongoDB]
   
-  @JSImport("db", "openRedis")
-  @js.native
-  def openRedis(connString: String): ClassRedis = js.native
+  @scala.inline
+  def openMySQL(connString: String): ClassMySQL = ^.asInstanceOf[js.Dynamic].applyDynamic("openMySQL")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassMySQL]
   
-  @JSImport("db", "openSQLite")
-  @js.native
-  def openSQLite(connString: String): ClassSQLite = js.native
+  @scala.inline
+  def openRedis(connString: String): ClassRedis = ^.asInstanceOf[js.Dynamic].applyDynamic("openRedis")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassRedis]
+  
+  @scala.inline
+  def openSQLite(connString: String): ClassSQLite = ^.asInstanceOf[js.Dynamic].applyDynamic("openSQLite")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassSQLite]
 }

@@ -3,11 +3,12 @@ package typings.yandexMaps.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILayout extends IEventEmitter {
+trait ILayout
+  extends StObject
+     with IEventEmitter {
   
   // new (data: object);
   def destroy(): Unit = js.native

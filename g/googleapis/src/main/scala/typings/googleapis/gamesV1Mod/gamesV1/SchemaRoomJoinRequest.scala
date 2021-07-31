@@ -2,35 +2,33 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a join room request.
   */
-@js.native
 trait SchemaRoomJoinRequest extends StObject {
   
   /**
     * The capabilities that this client supports for realtime communication.
     */
-  var capabilities: js.UndefOr[js.Array[String]] = js.native
+  var capabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Client address for the player joining the room.
     */
-  var clientAddress: js.UndefOr[SchemaRoomClientAddress] = js.native
+  var clientAddress: js.UndefOr[SchemaRoomClientAddress] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomJoinRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Network diagnostics for the client joining the room.
     */
-  var networkDiagnostics: js.UndefOr[SchemaNetworkDiagnostics] = js.native
+  var networkDiagnostics: js.UndefOr[SchemaNetworkDiagnostics] = js.undefined
 }
 object SchemaRoomJoinRequest {
   

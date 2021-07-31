@@ -2,20 +2,18 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  type :string,   payload :object | undefined,   source :string | undefined,   target :string | undefined}> */
-@js.native
 trait Readonlytypestringpayload extends StObject {
   
-  val payload: js.UndefOr[js.Object] = js.native
+  val payload: js.UndefOr[js.Object] = js.undefined
   
-  val source: js.UndefOr[String] = js.native
+  val source: js.UndefOr[String] = js.undefined
   
-  val target: js.UndefOr[String] = js.native
+  val target: js.UndefOr[String] = js.undefined
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object Readonlytypestringpayload {
   

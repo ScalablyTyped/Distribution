@@ -3,11 +3,12 @@ package typings.sharepoint.SP
 import typings.microsoftAjax.Sys.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientRuntimeContext extends IDisposable {
+trait ClientRuntimeContext
+  extends StObject
+     with IDisposable {
   
   def addQuery(query: ClientAction): Unit = js.native
   
@@ -25,14 +26,14 @@ trait ClientRuntimeContext extends IDisposable {
   
   def executeQueryAsync(): Unit = js.native
   def executeQueryAsync(
-    succeededCallback: js.UndefOr[scala.Nothing],
-    failedCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit]
-  ): Unit = js.native
-  def executeQueryAsync(
     succeededCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit]
   ): Unit = js.native
   def executeQueryAsync(
     succeededCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit],
+    failedCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit]
+  ): Unit = js.native
+  def executeQueryAsync(
+    succeededCallback: Unit,
     failedCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit]
   ): Unit = js.native
   

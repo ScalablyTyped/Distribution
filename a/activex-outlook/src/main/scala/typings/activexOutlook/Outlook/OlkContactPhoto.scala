@@ -3,20 +3,18 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkContactPhoto extends StObject {
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkContactPhoto_typekey")
-  var OutlookDotOlkContactPhoto_typekey: OlkContactPhoto = js.native
+  var OutlookDotOlkContactPhoto_typekey: OlkContactPhoto
 }
 object OlkContactPhoto {
   

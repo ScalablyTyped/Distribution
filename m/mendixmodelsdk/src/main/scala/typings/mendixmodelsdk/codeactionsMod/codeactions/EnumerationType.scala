@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,9 +64,8 @@ object EnumerationType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType.create")
-  @js.native
-  def create(model: IModel): EnumerationType = js.native
+  @scala.inline
+  def create(model: IModel): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -78,9 +76,8 @@ object EnumerationType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): EnumerationType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -91,9 +88,8 @@ object EnumerationType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType.createInCodeActionUnderActionReturnType")
-  @js.native
-  def createInCodeActionUnderActionReturnType(container: CodeAction): EnumerationType = js.native
+  @scala.inline
+  def createInCodeActionUnderActionReturnType(container: CodeAction): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType.structureTypeName")

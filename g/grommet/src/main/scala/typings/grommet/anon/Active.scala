@@ -3,23 +3,21 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: js.UndefOr[`3`] = js.native
+  var active: js.UndefOr[`3`] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var disabled: js.UndefOr[`3`] = js.native
+  var disabled: js.UndefOr[`3`] = js.undefined
   
-  var hover: js.UndefOr[ColorExtend] = js.native
+  var hover: js.UndefOr[ColorExtend] = js.undefined
   
-  var side: js.UndefOr[String] = js.native
+  var side: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object Active {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackStatisticsDataItem extends StObject {
   
   /**
     * The number of attacks detected during the time period. This is always present, but might be zero. 
     */
-  var AttackCount: Long = js.native
+  var AttackCount: Long
   
   /**
     * Information about the volume of attacks during the time period. If the accompanying AttackCount is zero, this setting might be empty.
     */
-  var AttackVolume: js.UndefOr[typings.awsSdk.shieldMod.AttackVolume] = js.native
+  var AttackVolume: js.UndefOr[typings.awsSdk.shieldMod.AttackVolume] = js.undefined
 }
 object AttackStatisticsDataItem {
   

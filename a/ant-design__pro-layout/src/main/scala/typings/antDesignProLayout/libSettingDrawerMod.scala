@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.anon.ColorWeak
 import typings.antDesignProLayout.anon.DefaultMessageId
 import typings.antDesignProLayout.anon.DefaultOpenAll
@@ -18,10 +17,13 @@ import typings.react.mod.ReactNode
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libSettingDrawerMod extends Shortcut {
+object libSettingDrawerMod {
+  
+  @JSImport("@ant-design/pro-layout/lib/SettingDrawer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 可视化配置组件
@@ -31,36 +33,34 @@ object libSettingDrawerMod extends Shortcut {
   @js.native
   val default: FC[SettingDrawerProps] = js.native
   
-  @JSImport("@ant-design/pro-layout/lib/SettingDrawer", "getFormatMessage")
-  @js.native
-  def getFormatMessage(): js.Function1[/* data */ DefaultMessageId, String] = js.native
+  @scala.inline
+  def getFormatMessage(): js.Function1[/* data */ DefaultMessageId, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatMessage")().asInstanceOf[js.Function1[/* data */ DefaultMessageId, String]]
   
-  type MergerSettingsType[T] = Partial[T] with ColorWeak
+  type MergerSettingsType[T] = Partial[T] & ColorWeak
   
-  @js.native
   trait SettingDrawerProps extends StObject {
     
-    var collapse: js.UndefOr[Boolean] = js.native
+    var collapse: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[js.Any] = js.native
+    var getContainer: js.UndefOr[js.Any] = js.undefined
     
-    var hideColors: js.UndefOr[Boolean] = js.native
+    var hideColors: js.UndefOr[Boolean] = js.undefined
     
-    var hideCopyButton: js.UndefOr[Boolean] = js.native
+    var hideCopyButton: js.UndefOr[Boolean] = js.undefined
     
-    var hideHintAlert: js.UndefOr[Boolean] = js.native
+    var hideHintAlert: js.UndefOr[Boolean] = js.undefined
     
-    var hideLoading: js.UndefOr[Boolean] = js.native
+    var hideLoading: js.UndefOr[Boolean] = js.undefined
     
-    var onCollapseChange: js.UndefOr[js.Function1[/* collapse */ Boolean, Unit]] = js.native
+    var onCollapseChange: js.UndefOr[js.Function1[/* collapse */ Boolean, Unit]] = js.undefined
     
-    var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeProSett, Unit]] = js.native
+    var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeProSett, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
-    var settings: js.UndefOr[MergerSettingsTypeProSett] = js.native
+    var settings: js.UndefOr[MergerSettingsTypeProSett] = js.undefined
   }
   object SettingDrawerProps {
     
@@ -142,46 +142,45 @@ object libSettingDrawerMod extends Shortcut {
   }
   
   /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/lib/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings> */
-  @js.native
   trait SettingDrawerState extends StObject {
     
-    var collapse: js.UndefOr[Boolean] = js.native
+    var collapse: js.UndefOr[Boolean] = js.undefined
     
-    var colorWeak: js.UndefOr[Boolean] = js.native
+    var colorWeak: js.UndefOr[Boolean] = js.undefined
     
-    var contentWidth: js.UndefOr[ContentWidth] = js.native
+    var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
-    var fixSiderbar: js.UndefOr[Boolean] = js.native
+    var fixSiderbar: js.UndefOr[Boolean] = js.undefined
     
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var footerRender: js.UndefOr[`false`] = js.native
+    var footerRender: js.UndefOr[`false`] = js.undefined
     
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
-    var headerRender: js.UndefOr[`false`] = js.native
+    var headerRender: js.UndefOr[`false`] = js.undefined
     
-    var headerTheme: js.UndefOr[MenuTheme] = js.native
+    var headerTheme: js.UndefOr[MenuTheme] = js.undefined
     
-    var iconfontUrl: js.UndefOr[String] = js.native
+    var iconfontUrl: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[side | top | mix] = js.native
+    var layout: js.UndefOr[side | top | mix] = js.undefined
     
-    var menu: js.UndefOr[DefaultOpenAll] = js.native
+    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
     
-    var menuHeaderRender: js.UndefOr[`false`] = js.native
+    var menuHeaderRender: js.UndefOr[`false`] = js.undefined
     
-    var menuRender: js.UndefOr[`false`] = js.native
+    var menuRender: js.UndefOr[`false`] = js.undefined
     
-    var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+    var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var splitMenus: js.UndefOr[Boolean] = js.native
+    var splitMenus: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String | `false`] = js.native
+    var title: js.UndefOr[String | `false`] = js.undefined
   }
   object SettingDrawerState {
     
@@ -310,16 +309,15 @@ object libSettingDrawerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SettingItemProps extends StObject {
     
-    var action: ReactElement = js.native
+    var action: ReactElement
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledReason: js.UndefOr[ReactNode] = js.native
+    var disabledReason: js.UndefOr[ReactNode] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object SettingItemProps {
     
@@ -354,9 +352,4 @@ object libSettingDrawerMod extends Shortcut {
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
-  
-  type _To = FC[SettingDrawerProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `libSettingDrawerMod.foo` */
-  override def _to: FC[SettingDrawerProps] = default
 }

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remediationConfigurationMod {
@@ -62,6 +61,10 @@ object remediationConfigurationMod {
   /* static members */
   object RemediationConfiguration {
     
+    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RemediationConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,35 +74,29 @@ object remediationConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RemediationConfiguration = js.native
-    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RemediationConfiguration = js.native
-    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RemediationConfigurationState): RemediationConfiguration = js.native
-    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RemediationConfigurationState, opts: CustomResourceOptions): RemediationConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RemediationConfigurationState): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RemediationConfigurationState, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
     
     /**
       * Returns true if the given object is an instance of RemediationConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/remediationConfiguration", "RemediationConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean]
   }
   
-  @js.native
   trait RemediationConfigurationArgs extends StObject {
     
     /**
       * The name of the AWS Config rule
       */
-    val configRuleName: Input[String] = js.native
+    val configRuleName: Input[String]
     
     /**
       * Can be specified multiple times for each
@@ -109,27 +106,27 @@ object remediationConfigurationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of a resource
       */
-    val resourceType: js.UndefOr[Input[String]] = js.native
+    val resourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Target ID is the name of the public document
       */
-    val targetId: Input[String] = js.native
+    val targetId: Input[String]
     
     /**
       * The type of the target. Target executes remediation. For example, SSM document
       */
-    val targetType: Input[String] = js.native
+    val targetType: Input[String]
     
     /**
       * Version of the target. For example, version of the SSM document
       */
-    val targetVersion: js.UndefOr[Input[String]] = js.native
+    val targetVersion: js.UndefOr[Input[String]] = js.undefined
   }
   object RemediationConfigurationArgs {
     
@@ -178,15 +175,14 @@ object remediationConfigurationMod {
     }
   }
   
-  @js.native
   trait RemediationConfigurationState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the AWS Config rule
       */
-    val configRuleName: js.UndefOr[Input[String]] = js.native
+    val configRuleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Can be specified multiple times for each
@@ -196,27 +192,27 @@ object remediationConfigurationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of a resource
       */
-    val resourceType: js.UndefOr[Input[String]] = js.native
+    val resourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Target ID is the name of the public document
       */
-    val targetId: js.UndefOr[Input[String]] = js.native
+    val targetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the target. Target executes remediation. For example, SSM document
       */
-    val targetType: js.UndefOr[Input[String]] = js.native
+    val targetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version of the target. For example, version of the SSM document
       */
-    val targetVersion: js.UndefOr[Input[String]] = js.native
+    val targetVersion: js.UndefOr[Input[String]] = js.undefined
   }
   object RemediationConfigurationState {
     

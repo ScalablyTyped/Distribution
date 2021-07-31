@@ -3,13 +3,13 @@ package typings.winrt.Windows.Storage.Streams
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileInputStream extends IInputStream {
+trait FileInputStream
+  extends StObject
+     with IInputStream {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object FileInputStream {
   

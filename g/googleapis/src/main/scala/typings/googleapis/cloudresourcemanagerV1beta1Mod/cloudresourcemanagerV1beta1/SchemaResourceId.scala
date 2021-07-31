@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,21 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * want to interact with through one of our API&#39;s. Some examples are an
   * App Engine app, a Compute Engine instance, a Cloud SQL database, and so on.
   */
-@js.native
 trait SchemaResourceId extends StObject {
   
   /**
     * Required field for the type-specific id. This should correspond to the id
     * used in the type-specific API&#39;s.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Required field representing the resource type this id is for. At present,
     * the valid types are &quot;project&quot;, &quot;folder&quot;, and
     * &quot;organization&quot;.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceId {
   

@@ -3,14 +3,27 @@ package typings.semanticUiTransition.anon
 import typings.semanticUiTransition.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, 'onHide'> */
-@js.native
 trait PickImplonHide extends StObject {
   
-  def onHide(): Unit = js.native
+  def onHide(): Unit
   @JSName("onHide")
-  var onHide_Original: js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  var onHide_Original: js.ThisFunction0[/* this */ JQuery, Unit]
+}
+object PickImplonHide {
+  
+  @scala.inline
+  def apply(onHide: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonHide = {
+    val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonHide]
+  }
+  
+  @scala.inline
+  implicit class PickImplonHideMutableBuilder[Self <: PickImplonHide] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+  }
 }

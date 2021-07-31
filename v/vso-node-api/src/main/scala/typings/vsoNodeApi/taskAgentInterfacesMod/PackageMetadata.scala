@@ -3,51 +3,49 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageMetadata extends StObject {
   
   /**
     * The date the package was created
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * A direct link to download the package.
     */
-  var downloadUrl: String = js.native
+  var downloadUrl: String
   
   /**
     * The UI uses this to display instructions, i.e. "unzip MyAgent.zip"
     */
-  var filename: String = js.native
+  var filename: String
   
   /**
     * MD5 hash as a base64 string
     */
-  var hashValue: String = js.native
+  var hashValue: String
   
   /**
     * A link to documentation
     */
-  var infoUrl: String = js.native
+  var infoUrl: String
   
   /**
     * The platform (win7, linux, etc.)
     */
-  var platform: String = js.native
+  var platform: String
   
   /**
     * The type of package (e.g. "agent")
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The package version.
     */
-  var version: PackageVersion = js.native
+  var version: PackageVersion
 }
 object PackageMetadata {
   

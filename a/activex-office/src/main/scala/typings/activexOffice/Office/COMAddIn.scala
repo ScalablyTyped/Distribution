@@ -2,30 +2,28 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait COMAddIn extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Connect: Boolean = js.native
+  var Connect: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Description: String = js.native
+  var Description: String
   
-  val Guid: String = js.native
+  val Guid: String
   
-  var Object: js.Any = js.native
+  var Object: js.Any
   
   @JSName("Office.COMAddIn_typekey")
-  var OfficeDotCOMAddIn_typekey: COMAddIn = js.native
+  var OfficeDotCOMAddIn_typekey: COMAddIn
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val ProgId: String = js.native
+  val ProgId: String
 }
 object COMAddIn {
   

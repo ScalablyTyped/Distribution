@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,12 +18,16 @@ object GroupOption extends StObject {
     *
     */
   @js.native
-  sealed trait byColumns extends GroupOption
+  sealed trait byColumns
+    extends StObject
+       with GroupOption
   
   /**
     * Group by rows.
     *
     */
   @js.native
-  sealed trait byRows extends GroupOption
+  sealed trait byRows
+    extends StObject
+       with GroupOption
 }

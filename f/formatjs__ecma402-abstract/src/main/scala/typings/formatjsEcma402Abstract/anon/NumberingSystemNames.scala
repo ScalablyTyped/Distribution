@@ -7,23 +7,21 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberingSystemNames extends StObject {
   
-  var availableLocales: Set[String] = js.native
+  var availableLocales: Set[String]
   
-  var currencyDigitsData: Record[String, Double] = js.native
+  var currencyDigitsData: Record[String, Double]
   
-  def getDefaultLocale(): String = js.native
+  def getDefaultLocale(): String
   
-  def getInternalSlots(nf: NumberFormat): NumberFormatInternal = js.native
+  def getInternalSlots(nf: NumberFormat): NumberFormatInternal
   
-  var localeData: Record[String, js.UndefOr[NumberFormatLocaleInternalData]] = js.native
+  var localeData: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]
   
-  var numberingSystemNames: js.Array[String] = js.native
+  var numberingSystemNames: js.Array[String]
 }
 object NumberingSystemNames {
   

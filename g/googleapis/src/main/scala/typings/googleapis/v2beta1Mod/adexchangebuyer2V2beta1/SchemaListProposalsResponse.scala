@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing proposals.
   */
-@js.native
 trait SchemaListProposalsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of proposals.
     */
-  var proposals: js.UndefOr[js.Array[SchemaProposal]] = js.native
+  var proposals: js.UndefOr[js.Array[SchemaProposal]] = js.undefined
 }
 object SchemaListProposalsResponse {
   

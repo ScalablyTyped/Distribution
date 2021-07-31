@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministratorWebTokenSpec extends StObject {
   
   /** Options for displaying the Managed Configuration page. */
-  var managedConfigurations: js.UndefOr[AdministratorWebTokenSpecManagedConfigurations] = js.native
+  var managedConfigurations: js.UndefOr[AdministratorWebTokenSpecManagedConfigurations] = js.undefined
   
   /** The URI of the parent frame hosting the iframe. To prevent XSS, the iframe may not be hosted at other URIs. This URI must be https. Use whitespaces to separate multiple parent URIs. */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Use PlaySearch.approveApps. */
-  var permission: js.UndefOr[js.Array[String]] = js.native
+  var permission: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Options for displaying the managed Play Search apps page. */
-  var playSearch: js.UndefOr[AdministratorWebTokenSpecPlaySearch] = js.native
+  var playSearch: js.UndefOr[AdministratorWebTokenSpecPlaySearch] = js.undefined
   
   /** Options for displaying the Private Apps page. */
-  var privateApps: js.UndefOr[AdministratorWebTokenSpecPrivateApps] = js.native
+  var privateApps: js.UndefOr[AdministratorWebTokenSpecPrivateApps] = js.undefined
   
   /** Options for displaying the Organize apps page. */
-  var storeBuilder: js.UndefOr[AdministratorWebTokenSpecStoreBuilder] = js.native
+  var storeBuilder: js.UndefOr[AdministratorWebTokenSpecStoreBuilder] = js.undefined
   
   /** Options for displaying the Web Apps page. */
-  var webApps: js.UndefOr[AdministratorWebTokenSpecWebApps] = js.native
+  var webApps: js.UndefOr[AdministratorWebTokenSpecWebApps] = js.undefined
 }
 object AdministratorWebTokenSpec {
   

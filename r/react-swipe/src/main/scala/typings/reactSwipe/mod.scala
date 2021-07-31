@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.swipe.SwipeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,17 @@ object mod {
   @js.native
   class ^ () extends ReactSwipe
   
-  @js.native
   trait Props extends StObject {
     
-    var childCount: js.UndefOr[Double] = js.native
+    var childCount: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var swipeOptions: js.UndefOr[SwipeOptions] = js.native
+    var swipeOptions: js.UndefOr[SwipeOptions] = js.undefined
   }
   object Props {
     
@@ -85,14 +83,13 @@ object mod {
     def slide(index: Double, duration: Double): Unit = js.native
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var child: CSSProperties = js.native
+    var child: CSSProperties
     
-    var container: CSSProperties = js.native
+    var container: CSSProperties
     
-    var wrapper: CSSProperties = js.native
+    var wrapper: CSSProperties
   }
   object Style {
     

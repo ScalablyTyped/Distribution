@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventRuleMixinsMod {
@@ -34,7 +33,7 @@ object eventRuleMixinsMod {
       name: String,
       eventRuleOrSchedule: String,
       handler: EventRuleEventHandler,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       opts: ComponentResourceOptions
     ) = this()
     def this(
@@ -48,7 +47,7 @@ object eventRuleMixinsMod {
       name: String,
       eventRuleOrSchedule: EventRule,
       handler: EventRuleEventHandler,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       opts: ComponentResourceOptions
     ) = this()
     def this(
@@ -64,33 +63,32 @@ object eventRuleMixinsMod {
     val target: EventTarget = js.native
   }
   
-  @js.native
   trait EventRuleEvent extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var detail: Record[String, _] = js.native
+    var detail: Record[String, js.Any]
     
-    var `detail-type`: String = js.native
+    var `detail-type`: String
     
-    var id: String = js.native
+    var id: String
     
-    var region: String = js.native
+    var region: String
     
-    var resources: js.Array[String] = js.native
+    var resources: js.Array[String]
     
-    var source: String = js.native
+    var source: String
     
-    var time: String = js.native
+    var time: String
     
-    var version: String = js.native
+    var version: String
   }
   object EventRuleEvent {
     
     @scala.inline
     def apply(
       account: String,
-      detail: Record[String, _],
+      detail: Record[String, js.Any],
       `detail-type`: String,
       id: String,
       region: String,
@@ -111,7 +109,7 @@ object eventRuleMixinsMod {
       def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDetail(value: Record[String, _]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      def setDetail(value: Record[String, js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setDetail-type`(value: String): Self = StObject.set(x, "detail-type", value.asInstanceOf[js.Any])
@@ -141,7 +139,6 @@ object eventRuleMixinsMod {
   
   type EventRuleEventHandler = EventHandler[EventRuleEvent, Unit]
   
-  @js.native
   trait EventRuleEventSubscriptionArgs extends StObject
   
   /* augmented module */
@@ -155,12 +152,7 @@ object eventRuleMixinsMod {
         * with options to control the behavior of the subscription.
         */
       def onEvent(name: String, handler: EventRuleEventHandler): EventRuleEventSubscription = js.native
-      def onEvent(
-        name: String,
-        handler: EventRuleEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): EventRuleEventSubscription = js.native
+      def onEvent(name: String, handler: EventRuleEventHandler, args: Unit, opts: ComponentResourceOptions): EventRuleEventSubscription = js.native
       def onEvent(name: String, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs): EventRuleEventSubscription = js.native
       def onEvent(
         name: String,

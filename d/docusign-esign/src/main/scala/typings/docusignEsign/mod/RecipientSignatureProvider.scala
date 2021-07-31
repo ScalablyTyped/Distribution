@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientSignatureProvider extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait RecipientSignatureProvider extends StObject {
     * To apply electronic seals on specific documents only, you must enable the  `sealDocumentsWithTabsOnly` parameter.
     * In this case, Electronic Seal applies only on documents that have `signHere` tabs set for the Electronic Seal recipient. Other documents won't be sealed.
     */
-  var sealDocumentsWithTabsOnly: js.UndefOr[String] = js.native
+  var sealDocumentsWithTabsOnly: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the name of the electronic seal to apply on documents.
     *
     */
-  var sealName: js.UndefOr[String] = js.native
+  var sealName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of an Electronic or Standards Based Signature (digital signature) provider for the signer to use.
@@ -34,18 +32,18 @@ trait RecipientSignatureProvider extends StObject {
     *
     *
     */
-  var signatureProviderName: js.UndefOr[String] = js.native
+  var signatureProviderName: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `signatureProviderName` property is editable.
     *
     */
-  var signatureProviderNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var signatureProviderNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Not applicable for this object.
     */
-  var signatureProviderOptions: js.UndefOr[RecipientSignatureProviderOptions] = js.native
+  var signatureProviderOptions: js.UndefOr[RecipientSignatureProviderOptions] = js.undefined
 }
 object RecipientSignatureProvider {
   

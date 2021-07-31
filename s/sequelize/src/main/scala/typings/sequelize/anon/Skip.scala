@@ -2,13 +2,11 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Skip extends StObject {
   
-  var skip: js.UndefOr[js.Array[String]] = js.native
+  var skip: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Skip {
   

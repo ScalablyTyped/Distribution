@@ -2,19 +2,17 @@ package typings.long
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait High extends StObject {
     
-    var high: Double = js.native
+    var high: Double
     
-    var low: Double = js.native
+    var low: Double
     
-    var unsigned: Boolean = js.native
+    var unsigned: Boolean
   }
   object High {
     

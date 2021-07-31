@@ -3,32 +3,30 @@ package typings.mobx
 import typings.mobx.utilsMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interceptUtilsMod {
   
-  @JSImport("mobx/lib/types/intercept-utils", "hasInterceptors")
+  @JSImport("mobx/lib/types/intercept-utils", JSImport.Namespace)
   @js.native
-  def hasInterceptors(interceptable: IInterceptable[_]): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/types/intercept-utils", "interceptChange")
-  @js.native
-  def interceptChange[T](interceptable: IInterceptable[T | Null]): T | Null = js.native
-  @JSImport("mobx/lib/types/intercept-utils", "interceptChange")
-  @js.native
-  def interceptChange[T](interceptable: IInterceptable[T | Null], change: T): T | Null = js.native
+  @scala.inline
+  def hasInterceptors(interceptable: IInterceptable[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInterceptors")(interceptable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/types/intercept-utils", "registerInterceptor")
-  @js.native
-  def registerInterceptor[T](interceptable: IInterceptable[T], handler: IInterceptor[T]): Lambda = js.native
+  @scala.inline
+  def interceptChange[T](interceptable: IInterceptable[T | Null]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptChange")(interceptable.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  @scala.inline
+  def interceptChange[T](interceptable: IInterceptable[T | Null], change: T): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptChange")(interceptable.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
-  @js.native
+  @scala.inline
+  def registerInterceptor[T](interceptable: IInterceptable[T], handler: IInterceptor[T]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInterceptor")(interceptable.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  
   trait IInterceptable[T] extends StObject {
     
-    def intercept(handler: IInterceptor[T]): Lambda = js.native
+    def intercept(handler: IInterceptor[T]): Lambda
     
-    var interceptors: js.UndefOr[js.Array[IInterceptor[T]]] = js.native
+    var interceptors: js.UndefOr[js.Array[IInterceptor[T]]] = js.undefined
   }
   object IInterceptable {
     
@@ -39,7 +37,7 @@ object interceptUtilsMod {
     }
     
     @scala.inline
-    implicit class IInterceptableMutableBuilder[Self <: IInterceptable[_], T] (val x: Self with IInterceptable[T]) extends AnyVal {
+    implicit class IInterceptableMutableBuilder[Self <: IInterceptable[?], T] (val x: Self & IInterceptable[T]) extends AnyVal {
       
       @scala.inline
       def setIntercept(value: IInterceptor[T] => Lambda): Self = StObject.set(x, "intercept", js.Any.fromFunction1(value))

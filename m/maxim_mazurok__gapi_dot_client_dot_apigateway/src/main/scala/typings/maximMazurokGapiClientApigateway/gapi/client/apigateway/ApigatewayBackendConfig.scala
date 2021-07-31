@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayBackendConfig extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ApigatewayBackendConfig extends StObject {
     * service. Note that this token is always sent as an authorization header bearer token. The audience of the OIDC token is configured in the associated Service Config in the
     * BackendRule option (https: //github.com/googleapis/googleapis/blob/ // master/google/api/backend.proto#L125).
     */
-  var googleServiceAccount: js.UndefOr[String] = js.native
+  var googleServiceAccount: js.UndefOr[String] = js.undefined
 }
 object ApigatewayBackendConfig {
   

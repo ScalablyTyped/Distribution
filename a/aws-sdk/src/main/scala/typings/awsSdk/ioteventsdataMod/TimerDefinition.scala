@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimerDefinition extends StObject {
   
   /**
     * The name of the timer.
     */
-  var name: TimerName = js.native
+  var name: TimerName
   
   /**
     * The new setting of the timer (the number of seconds before the timer elapses).
     */
-  var seconds: Seconds = js.native
+  var seconds: Seconds
 }
 object TimerDefinition {
   

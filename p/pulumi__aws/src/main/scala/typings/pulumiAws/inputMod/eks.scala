@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eks {
   
-  @js.native
   trait ClusterCertificateAuthority extends StObject {
     
     /**
       * The base64 encoded certificate data required to communicate with your cluster. Add this to the `certificate-authority-data` section of the `kubeconfig` file for your cluster.
       */
-    var data: js.UndefOr[Input[String]] = js.native
+    var data: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterCertificateAuthority {
     
@@ -36,18 +34,17 @@ object eks {
     }
   }
   
-  @js.native
   trait ClusterEncryptionConfig extends StObject {
     
     /**
       * Configuration block with provider for encryption. Detailed below.
       */
-    var provider: Input[ClusterEncryptionConfigProvider] = js.native
+    var provider: Input[ClusterEncryptionConfigProvider]
     
     /**
       * List of strings with resources to be encrypted. Valid values: `secrets`
       */
-    var resources: Input[js.Array[Input[String]]] = js.native
+    var resources: Input[js.Array[Input[String]]]
   }
   object ClusterEncryptionConfig {
     
@@ -71,13 +68,12 @@ object eks {
     }
   }
   
-  @js.native
   trait ClusterEncryptionConfigProvider extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the Key Management Service (KMS) customer master key (CMK). The CMK must be symmetric, created in the same region as the cluster, and if the CMK was created in a different account, the user must have access to the CMK. For more information, see [Allowing Users in Other Accounts to Use a CMK in the AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html).
       */
-    var keyArn: Input[String] = js.native
+    var keyArn: Input[String]
   }
   object ClusterEncryptionConfigProvider {
     
@@ -95,13 +91,12 @@ object eks {
     }
   }
   
-  @js.native
   trait ClusterIdentity extends StObject {
     
     /**
       * Nested attribute containing [OpenID Connect](https://openid.net/connect/) identity provider information for the cluster.
       */
-    var oidcs: js.UndefOr[Input[js.Array[Input[ClusterIdentityOidc]]]] = js.native
+    var oidcs: js.UndefOr[Input[js.Array[Input[ClusterIdentityOidc]]]] = js.undefined
   }
   object ClusterIdentity {
     
@@ -125,13 +120,12 @@ object eks {
     }
   }
   
-  @js.native
   trait ClusterIdentityOidc extends StObject {
     
     /**
       * Issuer URL for the OpenID Connect identity provider.
       */
-    var issuer: js.UndefOr[Input[String]] = js.native
+    var issuer: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterIdentityOidc {
     
@@ -152,43 +146,42 @@ object eks {
     }
   }
   
-  @js.native
   trait ClusterVpcConfig extends StObject {
     
     /**
       * The cluster security group that was created by Amazon EKS for the cluster.
       */
-    var clusterSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    var clusterSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether or not the Amazon EKS private API server endpoint is enabled. Default is `false`.
       */
-    var endpointPrivateAccess: js.UndefOr[Input[Boolean]] = js.native
+    var endpointPrivateAccess: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether or not the Amazon EKS public API server endpoint is enabled. Default is `true`.
       */
-    var endpointPublicAccess: js.UndefOr[Input[Boolean]] = js.native
+    var endpointPublicAccess: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of CIDR blocks. Indicates which CIDR blocks can access the Amazon EKS public API server endpoint when enabled. EKS defaults this to a list with `0.0.0.0/0`. This provider will only perform drift detection of its value when present in a configuration.
       */
-    var publicAccessCidrs: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var publicAccessCidrs: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
       */
-    var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of subnet IDs. Must be in at least two different availability zones. Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your worker nodes and the Kubernetes control plane.
       */
-    var subnetIds: Input[js.Array[Input[String]]] = js.native
+    var subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * The VPC associated with your cluster.
       */
-    var vpcId: js.UndefOr[Input[String]] = js.native
+    var vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterVpcConfig {
     
@@ -251,18 +244,17 @@ object eks {
     }
   }
   
-  @js.native
   trait FargateProfileSelector extends StObject {
     
     /**
       * Key-value map of Kubernetes labels for selection.
       */
-    var labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Kubernetes namespace for selection.
       */
-    var namespace: Input[String] = js.native
+    var namespace: Input[String]
   }
   object FargateProfileSelector {
     
@@ -286,20 +278,19 @@ object eks {
     }
   }
   
-  @js.native
   trait NodeGroupLaunchTemplate extends StObject {
     
     /**
       * Identifier of the EC2 Launch Template. Conflicts with `name`.
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the EC2 Launch Template. Conflicts with `id`.
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
-    var version: Input[String] = js.native
+    var version: Input[String]
   }
   object NodeGroupLaunchTemplate {
     
@@ -329,18 +320,17 @@ object eks {
     }
   }
   
-  @js.native
   trait NodeGroupRemoteAccess extends StObject {
     
     /**
       * EC2 Key Pair name that provides access for SSH communication with the worker nodes in the EKS Node Group. If you specify this configuration, but do not specify `sourceSecurityGroupIds` when you create an EKS Node Group, port 22 on the worker nodes is opened to the Internet (0.0.0.0/0).
       */
-    var ec2SshKey: js.UndefOr[Input[String]] = js.native
+    var ec2SshKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of EC2 Security Group IDs to allow SSH access (port 22) from on the worker nodes. If you specify `ec2SshKey`, but do not specify this configuration when you create an EKS Node Group, port 22 on the worker nodes is opened to the Internet (0.0.0.0/0).
       */
-    var sourceSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var sourceSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object NodeGroupRemoteAccess {
     
@@ -370,18 +360,17 @@ object eks {
     }
   }
   
-  @js.native
   trait NodeGroupResource extends StObject {
     
     /**
       * List of objects containing information about AutoScaling Groups.
       */
-    var autoscalingGroups: js.UndefOr[Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]]] = js.native
+    var autoscalingGroups: js.UndefOr[Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]]] = js.undefined
     
     /**
       * Identifier of the remote access EC2 Security Group.
       */
-    var remoteAccessSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    var remoteAccessSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
   }
   object NodeGroupResource {
     
@@ -411,13 +400,12 @@ object eks {
     }
   }
   
-  @js.native
   trait NodeGroupResourceAutoscalingGroup extends StObject {
     
     /**
       * Name of the EC2 Launch Template. Conflicts with `id`.
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
   }
   object NodeGroupResourceAutoscalingGroup {
     
@@ -438,23 +426,22 @@ object eks {
     }
   }
   
-  @js.native
   trait NodeGroupScalingConfig extends StObject {
     
     /**
       * Desired number of worker nodes.
       */
-    var desiredSize: Input[Double] = js.native
+    var desiredSize: Input[Double]
     
     /**
       * Maximum number of worker nodes.
       */
-    var maxSize: Input[Double] = js.native
+    var maxSize: Input[Double]
     
     /**
       * Minimum number of worker nodes.
       */
-    var minSize: Input[Double] = js.native
+    var minSize: Input[Double]
   }
   object NodeGroupScalingConfig {
     

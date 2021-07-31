@@ -2,19 +2,17 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decode extends StObject {
   
-  var decode: js.Any = js.native
+  var decode: js.Any
   
-  var encode: js.Any = js.native
+  var encode: js.Any
   
-  var format: js.Any = js.native
+  var format: js.Any
   
-  var parse: js.Any = js.native
+  var parse: js.Any
 }
 object Decode {
   

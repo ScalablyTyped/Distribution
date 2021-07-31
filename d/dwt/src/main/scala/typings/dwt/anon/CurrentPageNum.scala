@@ -2,13 +2,11 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentPageNum extends StObject {
   
-  var currentPageNum: js.UndefOr[Double] = js.native
+  var currentPageNum: js.UndefOr[Double] = js.undefined
 }
 object CurrentPageNum {
   

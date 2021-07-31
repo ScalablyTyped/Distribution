@@ -4,17 +4,15 @@ import typings.browserSync.mod.BrowserSyncInstance
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fn extends StObject {
     
-    var fn: js.UndefOr[js.Function2[/* snippet */ String, /* match */ String, _]] = js.native
+    var fn: js.UndefOr[js.Function2[/* snippet */ String, /* match */ String, js.Any]] = js.undefined
     
-    var `match`: js.UndefOr[RegExp] = js.native
+    var `match`: js.UndefOr[RegExp] = js.undefined
   }
   object Fn {
     
@@ -28,7 +26,7 @@ object anon {
     implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFn(value: (/* snippet */ String, /* match */ String) => _): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      def setFn(value: (/* snippet */ String, /* match */ String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
@@ -41,10 +39,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HeartbeatTimeout extends StObject {
     
-    var heartbeatTimeout: js.UndefOr[Double] = js.native
+    var heartbeatTimeout: js.UndefOr[Double] = js.undefined
   }
   object HeartbeatTimeout {
     
@@ -65,13 +62,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    def plugin(opts: js.Object, bs: BrowserSyncInstance): js.Any = js.native
+    def plugin(opts: js.Object, bs: BrowserSyncInstance): js.Any
     
     @JSName("plugin:name")
-    var pluginColonname: js.UndefOr[String] = js.native
+    var pluginColonname: js.UndefOr[String] = js.undefined
   }
   object Plugin {
     
@@ -95,10 +91,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Port {
     
@@ -119,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var stream: Boolean = js.native
+    var stream: Boolean
   }
   object Stream {
     

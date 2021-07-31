@@ -19,7 +19,6 @@ import typings.node.streamMod.Writable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,23 +45,22 @@ object mod {
     def this(config: Config) = this()
   }
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * This is the boundary used to detect the beginning of a new part.
       */
-    var boundary: js.UndefOr[String] = js.native
+    var boundary: js.UndefOr[String] = js.undefined
     
     /**
       * If true, preamble header parsing will be performed first.
       */
-    var headerFirst: js.UndefOr[Boolean] = js.native
+    var headerFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of header key=>value pairs to parse Default: 2000 (same as node's http).
       */
-    var maxHeaderPairs: js.UndefOr[Double] = js.native
+    var maxHeaderPairs: js.UndefOr[Double] = js.undefined
   }
   object Config {
     

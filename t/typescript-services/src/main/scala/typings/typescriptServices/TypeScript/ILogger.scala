@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILogger extends StObject {
   
-  def debug(): Boolean = js.native
+  def debug(): Boolean
   
-  def error(): Boolean = js.native
+  def error(): Boolean
   
-  def fatal(): Boolean = js.native
+  def fatal(): Boolean
   
-  def information(): Boolean = js.native
+  def information(): Boolean
   
-  def log(s: String): Unit = js.native
+  def log(s: String): Unit
   
-  def warning(): Boolean = js.native
+  def warning(): Boolean
 }
 object ILogger {
   

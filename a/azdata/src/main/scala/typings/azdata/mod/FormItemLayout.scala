@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormItemLayout extends StObject {
   
-  var componentHeight: js.UndefOr[Double | String] = js.native
+  var componentHeight: js.UndefOr[Double | String] = js.undefined
   
-  var componentWidth: js.UndefOr[Double | String] = js.native
+  var componentWidth: js.UndefOr[Double | String] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double | String] = js.native
+  var titleFontSize: js.UndefOr[Double | String] = js.undefined
 }
 object FormItemLayout {
   

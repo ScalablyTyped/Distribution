@@ -5,43 +5,39 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-ensure-login", "ensureLoggedIn")
+  @JSImport("connect-ensure-login", JSImport.Namespace)
   @js.native
-  def ensureLoggedIn(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-ensure-login", "ensureLoggedIn")
-  @js.native
-  def ensureLoggedIn(options: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-ensure-login", "ensureLoggedIn")
-  @js.native
-  def ensureLoggedIn(options: LoggedInOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("connect-ensure-login", "ensureLoggedOut")
-  @js.native
-  def ensureLoggedOut(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-ensure-login", "ensureLoggedOut")
-  @js.native
-  def ensureLoggedOut(options: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-ensure-login", "ensureLoggedOut")
-  @js.native
-  def ensureLoggedOut(options: LoggedOutOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def ensureLoggedIn(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def ensureLoggedIn(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def ensureLoggedIn(options: LoggedInOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
+  @scala.inline
+  def ensureLoggedOut(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def ensureLoggedOut(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def ensureLoggedOut(options: LoggedOutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   trait LoggedInOptions extends StObject {
     
     /**
       * URL to redirect to for login, defaults to _/login_
       */
-    var redirectTo: js.UndefOr[String] = js.native
+    var redirectTo: js.UndefOr[String] = js.undefined
     
     /**
       * set redirectTo in session, defaults to _true_
       */
-    var setRedirectTo: js.UndefOr[Boolean] = js.native
+    var setRedirectTo: js.UndefOr[Boolean] = js.undefined
   }
   object LoggedInOptions {
     
@@ -68,13 +64,12 @@ object mod {
     }
   }
   
-  @js.native
   trait LoggedOutOptions extends StObject {
     
     /**
       * URL to redirect to in logged in, defaults to _/_
       */
-    var redirectTo: js.UndefOr[String] = js.native
+    var redirectTo: js.UndefOr[String] = js.undefined
   }
   object LoggedOutOptions {
     

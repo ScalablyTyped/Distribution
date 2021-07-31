@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersActionProvidedPaymentOptions extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait GoogleActionsV2OrdersActionProvidedPaymentOptions extends StObject {
     * For `LOYALTY_PROGRAM`, this could be \"Starbuck's points\".
     * For `ON_FULFILLMENT`, this could be something like \"pay on delivery\".
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Type of payment.
     * Required.
     */
-  var paymentType: js.UndefOr[GoogleActionsV2OrdersActionProvidedPaymentOptionsPaymentType] = js.native
+  var paymentType: js.UndefOr[GoogleActionsV2OrdersActionProvidedPaymentOptionsPaymentType] = js.undefined
 }
 object GoogleActionsV2OrdersActionProvidedPaymentOptions {
   

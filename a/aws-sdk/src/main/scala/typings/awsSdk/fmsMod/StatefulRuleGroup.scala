@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulRuleGroup extends StObject {
   
   /**
     * The resource ID of the rule group.
     */
-  var ResourceId: js.UndefOr[typings.awsSdk.fmsMod.ResourceId] = js.native
+  var ResourceId: js.UndefOr[typings.awsSdk.fmsMod.ResourceId] = js.undefined
   
   /**
     * The name of the rule group.
     */
-  var RuleGroupName: js.UndefOr[NetworkFirewallResourceName] = js.native
+  var RuleGroupName: js.UndefOr[NetworkFirewallResourceName] = js.undefined
 }
 object StatefulRuleGroup {
   

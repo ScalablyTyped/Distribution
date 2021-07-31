@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrowingList extends List {
+trait GrowingList
+  extends StObject
+     with List {
   
   /**
     * Gets current value of property <code>scrollToLoad</code>.If you set this property to true then user

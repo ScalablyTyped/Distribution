@@ -2,16 +2,14 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
   /**
     * List of selectors that define the query. An object must satisfy all of the selectors to match the query.
     */
-  var selectors: js.UndefOr[SelectorList] = js.native
+  var selectors: js.UndefOr[SelectorList] = js.undefined
 }
 object Query {
   

@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProcessingModeEventArgs extends EventArgs {
+trait ProcessingModeEventArgs
+  extends StObject
+     with EventArgs {
   
-  var processOnServer: Boolean = js.native
+  var processOnServer: Boolean
 }
 object ProcessingModeEventArgs {
   

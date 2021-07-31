@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** controls a presentation directly. This supplier will do this. */
-@js.native
-trait XPresentationSupplier extends XInterface {
+trait XPresentationSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns an interface to control a presentation. */
-  val Presentation: XPresentation = js.native
+  val Presentation: XPresentation
   
   /** @returns an interface to control a presentation. */
-  def getPresentation(): XPresentation = js.native
+  def getPresentation(): XPresentation
 }
 object XPresentationSupplier {
   

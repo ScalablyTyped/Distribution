@@ -2,17 +2,15 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<PushpinOptions> * / any */ @js.native
-trait Pushpin extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<PushpinOptions> * / any */ trait Pushpin extends StObject {
   
   /**
     * Original offsetTop of element
     */
-  var originalOffset: Double = js.native
+  var originalOffset: Double
 }
 object Pushpin {
   

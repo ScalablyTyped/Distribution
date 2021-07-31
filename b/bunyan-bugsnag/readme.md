@@ -10,9 +10,9 @@ A Bunyan stream for logging errors and warnings to Bugsnag
 | ------------------ | :-------------: |
 | Full name          | bunyan-bugsnag |
 | Keywords           | bunyan, bugsnag, logging |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 13946 |
+| # downloads        | 18874 |
 | # stars            | 0 |
 
 ## Links

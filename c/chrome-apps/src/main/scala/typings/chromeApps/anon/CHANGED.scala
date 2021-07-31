@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.created
 import typings.chromeApps.chromeAppsStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CHANGED extends StObject {
   
-  var CHANGED: changed_ = js.native
+  var CHANGED: changed_
   
-  var CREATED: created = js.native
+  var CREATED: created
   
-  var REMOVED: removed = js.native
+  var REMOVED: removed
 }
 object CHANGED {
   
   @scala.inline
-  def apply(CHANGED: changed_, CREATED: created, REMOVED: removed): CHANGED = {
-    val __obj = js.Dynamic.literal(CHANGED = CHANGED.asInstanceOf[js.Any], CREATED = CREATED.asInstanceOf[js.Any], REMOVED = REMOVED.asInstanceOf[js.Any])
+  def apply(): CHANGED = {
+    val __obj = js.Dynamic.literal(CHANGED = "changed", CREATED = "created", REMOVED = "removed")
     __obj.asInstanceOf[CHANGED]
   }
   

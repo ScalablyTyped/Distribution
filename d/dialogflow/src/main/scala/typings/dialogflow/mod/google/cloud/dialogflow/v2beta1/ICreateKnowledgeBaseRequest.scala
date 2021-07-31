@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CreateKnowledgeBaseRequest. */
-@js.native
 trait ICreateKnowledgeBaseRequest extends StObject {
   
   /** CreateKnowledgeBaseRequest knowledgeBase */
-  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.native
+  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.undefined
   
   /** CreateKnowledgeBaseRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
 }
 object ICreateKnowledgeBaseRequest {
   

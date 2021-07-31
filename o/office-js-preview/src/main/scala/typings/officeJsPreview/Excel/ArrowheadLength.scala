@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ArrowheadLength extends StObject
 object ArrowheadLength extends StObject {
   
   @js.native
-  sealed trait long extends ArrowheadLength
+  sealed trait long
+    extends StObject
+       with ArrowheadLength
   
   @js.native
-  sealed trait medium extends ArrowheadLength
+  sealed trait medium
+    extends StObject
+       with ArrowheadLength
   
   @js.native
-  sealed trait short extends ArrowheadLength
+  sealed trait short
+    extends StObject
+       with ArrowheadLength
 }

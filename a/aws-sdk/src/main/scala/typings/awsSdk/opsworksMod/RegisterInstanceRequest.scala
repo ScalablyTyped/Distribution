@@ -2,46 +2,44 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterInstanceRequest extends StObject {
   
   /**
     * The instance's hostname.
     */
-  var Hostname: js.UndefOr[String] = js.native
+  var Hostname: js.UndefOr[String] = js.undefined
   
   /**
     * An InstanceIdentity object that contains the instance's identity.
     */
-  var InstanceIdentity: js.UndefOr[typings.awsSdk.opsworksMod.InstanceIdentity] = js.native
+  var InstanceIdentity: js.UndefOr[typings.awsSdk.opsworksMod.InstanceIdentity] = js.undefined
   
   /**
     * The instance's private IP address.
     */
-  var PrivateIp: js.UndefOr[String] = js.native
+  var PrivateIp: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's public IP address.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
   
   /**
     * The instances public RSA key. This key is used to encrypt communication between the instance and the service.
     */
-  var RsaPublicKey: js.UndefOr[String] = js.native
+  var RsaPublicKey: js.UndefOr[String] = js.undefined
   
   /**
     * The instances public RSA key fingerprint.
     */
-  var RsaPublicKeyFingerprint: js.UndefOr[String] = js.native
+  var RsaPublicKeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the stack that the instance is to be registered with.
     */
-  var StackId: String = js.native
+  var StackId: String
 }
 object RegisterInstanceRequest {
   

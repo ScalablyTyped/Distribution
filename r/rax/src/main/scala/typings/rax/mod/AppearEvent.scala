@@ -5,13 +5,13 @@ import typings.rax.raxStrings.up
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppearEvent[T] extends BaseSyntheticEvent[Event, EventTarget with T, EventTarget] {
+trait AppearEvent[T]
+  extends StObject
+     with BaseSyntheticEvent[Event, EventTarget & T, EventTarget] {
   
-  var direction: up | down = js.native
+  var direction: up | down
 }
 object AppearEvent {
   
@@ -19,7 +19,7 @@ object AppearEvent {
   def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     direction: up | down,
     eventPhase: Double,
@@ -40,7 +40,7 @@ object AppearEvent {
   }
   
   @scala.inline
-  implicit class AppearEventMutableBuilder[Self <: AppearEvent[_], T] (val x: Self with AppearEvent[T]) extends AnyVal {
+  implicit class AppearEventMutableBuilder[Self <: AppearEvent[?], T] (val x: Self & AppearEvent[T]) extends AnyVal {
     
     @scala.inline
     def setDirection(value: up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])

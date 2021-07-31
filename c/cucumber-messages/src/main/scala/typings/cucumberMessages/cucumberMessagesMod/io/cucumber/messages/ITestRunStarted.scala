@@ -2,15 +2,13 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestRunStarted. */
-@js.native
 trait ITestRunStarted extends StObject {
   
   /** TestRunStarted timestamp */
-  var timestamp: js.UndefOr[ITimestamp | Null] = js.native
+  var timestamp: js.UndefOr[ITimestamp | Null] = js.undefined
 }
 object ITestRunStarted {
   

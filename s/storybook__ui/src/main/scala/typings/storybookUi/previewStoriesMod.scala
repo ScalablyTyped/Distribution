@@ -7,10 +7,13 @@ import typings.storybookReact.typesMod.StoryFnReactReturnType
 import typings.storybookUi.typesMod.PreviewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/preview/preview.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -37,11 +40,9 @@ object previewStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/preview/preview.stories", "noTabs")
-  @js.native
-  def noTabs(): Element = js.native
+  @scala.inline
+  def noTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("noTabs")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/preview/preview.stories", "withTabs")
-  @js.native
-  def withTabs(): Element = js.native
+  @scala.inline
+  def withTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("withTabs")().asInstanceOf[Element]
 }

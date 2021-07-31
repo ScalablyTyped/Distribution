@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullscreenViewModelProperties extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait FullscreenViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#element)
     */
-  var element: js.UndefOr[HTMLElement] = js.native
+  var element: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * The view associated with the widget instance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object FullscreenViewModelProperties {
   

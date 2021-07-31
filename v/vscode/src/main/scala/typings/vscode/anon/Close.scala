@@ -2,19 +2,17 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Close extends StObject {
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var lineStart: String = js.native
+  var lineStart: String
   
-  var open: String = js.native
+  var open: String
   
-  var scope: String = js.native
+  var scope: String
 }
 object Close {
   

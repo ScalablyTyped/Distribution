@@ -3,20 +3,18 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Code and application artifacts used to deploy a version to App Engine.
   */
-@js.native
 trait SchemaDeployment extends StObject {
   
   /**
     * Google Cloud Build build information. Only applicable for instances
     * running in the App Engine flexible environment.
     */
-  var build: js.UndefOr[SchemaBuildInfo] = js.native
+  var build: js.UndefOr[SchemaBuildInfo] = js.undefined
   
   /**
     * Options for any Google Cloud Build builds created as a part of this
@@ -24,25 +22,25 @@ trait SchemaDeployment extends StObject {
     * such as when deploying to the App Engine flexible environment using files
     * or zip.
     */
-  var cloudBuildOptions: js.UndefOr[SchemaCloudBuildOptions] = js.native
+  var cloudBuildOptions: js.UndefOr[SchemaCloudBuildOptions] = js.undefined
   
   /**
     * The Docker image for the container that runs the version. Only applicable
     * for instances running in the App Engine flexible environment.
     */
-  var container: js.UndefOr[SchemaContainerInfo] = js.native
+  var container: js.UndefOr[SchemaContainerInfo] = js.undefined
   
   /**
     * Manifest of the files stored in Google Cloud Storage that are included as
     * part of this version. All files must be readable using the credentials
     * supplied with this call.
     */
-  var files: js.UndefOr[StringDictionary[SchemaFileInfo]] = js.native
+  var files: js.UndefOr[StringDictionary[SchemaFileInfo]] = js.undefined
   
   /**
     * The zip file for this deployment, if this is a zip deployment.
     */
-  var zip: js.UndefOr[SchemaZipInfo] = js.native
+  var zip: js.UndefOr[SchemaZipInfo] = js.undefined
 }
 object SchemaDeployment {
   

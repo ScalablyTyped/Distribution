@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcknowledgeRequest extends StObject {
   
   /** Required. The acknowledgment ID for the messages being acknowledged that was returned by the Pub/Sub system in the `Pull` response. Must not be empty. */
-  var ackIds: js.UndefOr[js.Array[String]] = js.native
+  var ackIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AcknowledgeRequest {
   

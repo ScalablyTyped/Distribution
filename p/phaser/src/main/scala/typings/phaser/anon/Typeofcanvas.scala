@@ -8,20 +8,18 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofcanvas extends StObject {
   
-  var AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], typings.phaser.spine.canvas.AssetManager] = js.native
+  var AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], typings.phaser.spine.canvas.AssetManager]
   
-  var CanvasTexture: Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.canvas.CanvasTexture] = js.native
+  var CanvasTexture: Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.canvas.CanvasTexture]
   
   var SkeletonRenderer: (Instantiable1[
     /* context */ CanvasRenderingContext2D, 
     typings.phaser.spine.canvas.SkeletonRenderer
-  ]) with TypeofSkeletonRenderer = js.native
+  ]) & TypeofSkeletonRenderer
 }
 object Typeofcanvas {
   
@@ -29,7 +27,7 @@ object Typeofcanvas {
   def apply(
     AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager],
     CanvasTexture: Instantiable1[/* image */ HTMLImageElement, CanvasTexture],
-    SkeletonRenderer: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) with TypeofSkeletonRenderer
+    SkeletonRenderer: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
   ): Typeofcanvas = {
     val __obj = js.Dynamic.literal(AssetManager = AssetManager.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], SkeletonRenderer = SkeletonRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcanvas]
@@ -46,7 +44,7 @@ object Typeofcanvas {
     
     @scala.inline
     def setSkeletonRenderer(
-      value: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) with TypeofSkeletonRenderer
+      value: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
     ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
   }
 }

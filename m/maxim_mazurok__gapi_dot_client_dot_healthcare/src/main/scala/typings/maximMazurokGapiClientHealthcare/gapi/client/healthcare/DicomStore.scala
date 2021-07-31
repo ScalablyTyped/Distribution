@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DicomStore extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait DicomStore extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.DicomStore with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.DicomStore & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Resource name of the DICOM store, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Notification destination for new DICOM instances. Supplied by the client. */
-  var notificationConfig: js.UndefOr[NotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
 }
 object DicomStore {
   
@@ -41,7 +39,7 @@ object DicomStore {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.DicomStore with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.DicomStore & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

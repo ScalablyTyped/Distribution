@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComplianceByConfigRuleRequest extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
     */
-  var ComplianceTypes: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceTypes] = js.native
+  var ComplianceTypes: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceTypes] = js.undefined
   
   /**
     * Specify one or more AWS Config rule names to filter the results by rule.
     */
-  var ConfigRuleNames: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleNames] = js.native
+  var ConfigRuleNames: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleNames] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeComplianceByConfigRuleRequest {
   

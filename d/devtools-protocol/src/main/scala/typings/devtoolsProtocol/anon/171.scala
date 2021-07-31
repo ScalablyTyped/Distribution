@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.DeliverPushMessageRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `171` extends StObject {
   
-  var paramsType: js.Array[DeliverPushMessageRequest] = js.native
+  var paramsType: js.Array[DeliverPushMessageRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `171` {
   

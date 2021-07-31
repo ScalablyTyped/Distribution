@@ -2,51 +2,49 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var defaultCfg: Region = js.native
+  var defaultCfg: Region
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var lineLength: Double = js.native
+  var lineLength: Double
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var points: js.Array[_] = js.native
+  var points: js.Array[js.Any]
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Container {
   
@@ -68,7 +66,7 @@ object Container {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    points: js.Array[_],
+    points: js.Array[js.Any],
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -130,7 +128,7 @@ object Container {
     def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[_]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))

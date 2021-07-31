@@ -2,15 +2,13 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmallTheme extends StObject {
   
-  var small: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[`9`] = js.native
+  var theme: js.UndefOr[`9`] = js.undefined
 }
 object SmallTheme {
   

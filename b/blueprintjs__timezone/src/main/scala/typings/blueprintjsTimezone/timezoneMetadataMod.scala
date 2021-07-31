@@ -3,30 +3,30 @@ package typings.blueprintjsTimezone
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timezoneMetadataMod {
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneMetadata", "getTimezoneMetadata")
+  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneMetadata", JSImport.Namespace)
   @js.native
-  def getTimezoneMetadata(timezone: String): ITimezoneMetadata = js.native
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneMetadata", "getTimezoneMetadata")
-  @js.native
-  def getTimezoneMetadata(timezone: String, date: Date): ITimezoneMetadata = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTimezoneMetadata(timezone: String): ITimezoneMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any]).asInstanceOf[ITimezoneMetadata]
+  @scala.inline
+  def getTimezoneMetadata(timezone: String, date: Date): ITimezoneMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[ITimezoneMetadata]
+  
   trait ITimezoneMetadata extends StObject {
     
-    var abbreviation: js.UndefOr[String] = js.native
+    var abbreviation: js.UndefOr[String] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var offsetAsString: String = js.native
+    var offsetAsString: String
     
-    var population: js.UndefOr[Double] = js.native
+    var population: js.UndefOr[Double] = js.undefined
     
-    var timezone: String = js.native
+    var timezone: String
   }
   object ITimezoneMetadata {
     

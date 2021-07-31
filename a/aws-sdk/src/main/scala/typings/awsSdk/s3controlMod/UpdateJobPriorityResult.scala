@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobPriorityResult extends StObject {
   
   /**
     * The ID for the job whose priority Amazon S3 updated.
     */
-  var JobId: typings.awsSdk.s3controlMod.JobId = js.native
+  var JobId: typings.awsSdk.s3controlMod.JobId
   
   /**
     * The new priority assigned to the specified job.
     */
-  var Priority: JobPriority = js.native
+  var Priority: JobPriority
 }
 object UpdateJobPriorityResult {
   

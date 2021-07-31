@@ -2,26 +2,22 @@ package typings.webassemblyWebApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebAssembly {
   
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait Instance extends StObject
   
   /// Other WebAssembly declarations, for compatibility with older versions of Typescript
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait Module extends StObject
   
-  @js.native
   trait ResultObject extends StObject {
     
-    var instance: Instance = js.native
+    var instance: Instance
     
-    var module: Module = js.native
+    var module: Module
   }
   object ResultObject {
     

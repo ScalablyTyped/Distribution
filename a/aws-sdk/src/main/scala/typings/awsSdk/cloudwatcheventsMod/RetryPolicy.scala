@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryPolicy extends StObject {
   
   /**
     * The maximum amount of time, in seconds, to continue to make retry attempts.
     */
-  var MaximumEventAgeInSeconds: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.MaximumEventAgeInSeconds] = js.native
+  var MaximumEventAgeInSeconds: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.MaximumEventAgeInSeconds] = js.undefined
   
   /**
     * The maximum number of retry attempts to make before the request fails. Retry attempts continue until either the maximum number of attempts is made or until the duration of the MaximumEventAgeInSeconds is met.
     */
-  var MaximumRetryAttempts: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.MaximumRetryAttempts] = js.native
+  var MaximumRetryAttempts: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.MaximumRetryAttempts] = js.undefined
 }
 object RetryPolicy {
   

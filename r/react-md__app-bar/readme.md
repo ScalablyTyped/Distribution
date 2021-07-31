@@ -10,9 +10,9 @@ This small package implments the AppBar spec in material design.
 | ------------------ | :-------------: |
 | Full name          | @react-md/app-bar |
 | Keywords           | react-md, material design, react, app bar, appbar, toolbar, component |
-| # releases         | 32 |
+| # releases         | 39 |
 | # dependents       | 4 |
-| # downloads        | 7898 |
+| # downloads        | 20725 |
 | # stars            | 0 |
 
 ## Links

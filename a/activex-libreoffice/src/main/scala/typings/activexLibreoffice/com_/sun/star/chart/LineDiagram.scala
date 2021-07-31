@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies line, spline and symbol diagrams. */
-@js.native
 trait LineDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with ChartStatistics
      with ChartAxisXSupplier
      with ChartTwoAxisYSupplier
@@ -27,23 +26,23 @@ trait LineDiagram
      with StackableDiagram {
   
   /** determines if the chart type has lines connecting the data points or contains just symbols. */
-  var Lines: Boolean = js.native
+  var Lines: Boolean
   
   /**
     * specifies the power of the polynomials used for spline calculation
     *
     * This property is only valid for B-splines
     */
-  var SplineOrder: Double = js.native
+  var SplineOrder: Double
   
   /** determines the number of sampling points of a spline */
-  var SplineResolution: Double = js.native
+  var SplineResolution: Double
   
   /**
     * determines if the chart is a spline-chart type and specifies the type of splines.
     * @see CurveStyle You can set the following values: {{table here, see documentation}}
     */
-  var SplineType: Double = js.native
+  var SplineType: Double
   
   /**
     * Set this property to any valid URL that points to a graphic file. This graphic is then used as symbol for all series.
@@ -52,10 +51,10 @@ trait LineDiagram
     * @deprecated Deprecated
     * @see ChartSymbolType
     */
-  var SymbolBitmapURL: String = js.native
+  var SymbolBitmapURL: String
   
   /** specifies the size of symbols in 1/100th of a millimeter. */
-  var SymbolSize: Size = js.native
+  var SymbolSize: Size
   
   /**
     * determines which type of symbols are displayed.
@@ -68,7 +67,7 @@ trait LineDiagram
     * @see ChartDataPointProperties
     * @see ChartDataRowProperties
     */
-  var SymbolType: Double = js.native
+  var SymbolType: Double
 }
 object LineDiagram {
   

@@ -2,41 +2,39 @@ package typings.nodeForge.mod.pki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * Extensions
     */
-  var extensions: js.UndefOr[js.Array[_]] = js.native
+  var extensions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * e.g. challengePassword
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Short name, if available (e.g. 'CN' for 'commonName')
     */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
   /**
     * OID, e.g. '1.2.840.113549.1.9.7'
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Attribute value
     */
-  var value: js.Any = js.native
+  var value: js.Any
   
   /**
     * Attribute value data type
     */
-  var valueTagClass: Double = js.native
+  var valueTagClass: Double
 }
 object Attribute {
   
@@ -51,7 +49,7 @@ object Attribute {
   implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtensions(value: js.Array[_]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)

@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnowflakeParameters extends StObject {
   
   /**
     * Database.
     */
-  var Database: typings.awsSdk.quicksightMod.Database = js.native
+  var Database: typings.awsSdk.quicksightMod.Database
   
   /**
     * Host.
     */
-  var Host: typings.awsSdk.quicksightMod.Host = js.native
+  var Host: typings.awsSdk.quicksightMod.Host
   
   /**
     * Warehouse.
     */
-  var Warehouse: typings.awsSdk.quicksightMod.Warehouse = js.native
+  var Warehouse: typings.awsSdk.quicksightMod.Warehouse
 }
 object SnowflakeParameters {
   

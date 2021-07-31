@@ -2,17 +2,15 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBudgetActionResponse extends StObject {
   
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
-  var Action: typings.awsSdk.budgetsMod.Action = js.native
+  var Action: typings.awsSdk.budgetsMod.Action
   
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
 }
 object DeleteBudgetActionResponse {
   

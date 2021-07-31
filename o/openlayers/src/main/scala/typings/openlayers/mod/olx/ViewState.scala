@@ -4,19 +4,17 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.proj.Projection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewState extends StObject {
   
-  var center: Coordinate_ = js.native
+  var center: Coordinate_
   
-  var projection: Projection = js.native
+  var projection: Projection
   
-  var resolution: Double = js.native
+  var resolution: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
 }
 object ViewState {
   

@@ -5,7 +5,6 @@ import typings.reactNativeModal.typesMod.Orientation
 import typings.reactNativeModal.typesMod.PresentationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeModalStrings {
@@ -76,7 +75,9 @@ object reactNativeModalStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait down extends Direction
+  sealed trait down
+    extends StObject
+       with Direction
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
@@ -196,12 +197,16 @@ object reactNativeModalStrings {
   def flipOutY: flipOutY = "flipOutY".asInstanceOf[flipOutY]
   
   @js.native
-  sealed trait formSheet extends PresentationStyle
+  sealed trait formSheet
+    extends StObject
+       with PresentationStyle
   @scala.inline
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   
   @js.native
-  sealed trait fullScreen extends PresentationStyle
+  sealed trait fullScreen
+    extends StObject
+       with PresentationStyle
   @scala.inline
   def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
@@ -211,22 +216,30 @@ object reactNativeModalStrings {
   def jello: jello = "jello".asInstanceOf[jello]
   
   @js.native
-  sealed trait landscape extends Orientation
+  sealed trait landscape
+    extends StObject
+       with Orientation
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait `landscape-left` extends Orientation
+  sealed trait `landscape-left`
+    extends StObject
+       with Orientation
   @scala.inline
   def `landscape-left`: `landscape-left` = "landscape-left".asInstanceOf[`landscape-left`]
   
   @js.native
-  sealed trait `landscape-right` extends Orientation
+  sealed trait `landscape-right`
+    extends StObject
+       with Orientation
   @scala.inline
   def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait left
+    extends StObject
+       with Direction
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -241,22 +254,30 @@ object reactNativeModalStrings {
   def lightSpeedOut: lightSpeedOut = "lightSpeedOut".asInstanceOf[lightSpeedOut]
   
   @js.native
-  sealed trait overFullScreen extends PresentationStyle
+  sealed trait overFullScreen
+    extends StObject
+       with PresentationStyle
   @scala.inline
   def overFullScreen: overFullScreen = "overFullScreen".asInstanceOf[overFullScreen]
   
   @js.native
-  sealed trait pageSheet extends PresentationStyle
+  sealed trait pageSheet
+    extends StObject
+       with PresentationStyle
   @scala.inline
   def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
   
   @js.native
-  sealed trait portrait extends Orientation
+  sealed trait portrait
+    extends StObject
+       with Orientation
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait `portrait-upside-down` extends Orientation
+  sealed trait `portrait-upside-down`
+    extends StObject
+       with Orientation
   @scala.inline
   def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
   
@@ -266,7 +287,9 @@ object reactNativeModalStrings {
   def pulse: pulse = "pulse".asInstanceOf[pulse]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait right
+    extends StObject
+       with Direction
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -336,7 +359,9 @@ object reactNativeModalStrings {
   def tada: tada = "tada".asInstanceOf[tada]
   
   @js.native
-  sealed trait up extends Direction
+  sealed trait up
+    extends StObject
+       with Direction
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   

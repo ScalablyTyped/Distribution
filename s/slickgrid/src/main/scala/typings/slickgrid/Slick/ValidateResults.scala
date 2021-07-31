@@ -2,15 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateResults extends StObject {
   
-  var msg: String = js.native
+  var msg: String
   
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object ValidateResults {
   

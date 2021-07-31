@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeTransactionStatus extends StObject {
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the envelope status. Valid values are:
@@ -26,14 +24,14 @@ trait EnvelopeTransactionStatus extends StObject {
     * * sent - The envelope is sent to the recipients.
     * * created - The envelope is saved as a draft and can be modified and sent later.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     *  Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for
     * offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status
     * (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object EnvelopeTransactionStatus {
   

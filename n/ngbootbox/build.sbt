@@ -1,16 +1,14 @@
 organization := "org.scalablytyped"
 name := "ngbootbox"
-version := "0.0-unknown-dt-20201002Z-387fda"
-scalaVersion := "2.13.3"
+version := "0.0-unknown-dt-20201002Z-f67683"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "bootbox" % "5.2.0-dt-20200923Z-b5e301",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-ec453d",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-ba78fd",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "bootbox" % "5.2.0-dt-20200923Z-cca5b1",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-b9c3f6",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-27ba00",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

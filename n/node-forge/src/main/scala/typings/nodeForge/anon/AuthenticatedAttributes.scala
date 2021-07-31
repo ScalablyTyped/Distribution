@@ -3,19 +3,17 @@ package typings.nodeForge.anon
 import typings.nodeForge.mod.pki.Certificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticatedAttributes extends StObject {
   
-  var authenticatedAttributes: js.Array[Type] = js.native
+  var authenticatedAttributes: js.Array[Type]
   
-  var certificate: Certificate | String = js.native
+  var certificate: Certificate | String
   
-  var digestAlgorithm: String = js.native
+  var digestAlgorithm: String
   
-  var key: String = js.native
+  var key: String
 }
 object AuthenticatedAttributes {
   

@@ -5,30 +5,29 @@ import typings.angularCompiler.staticReflectorMod.StaticReflector
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lazyRoutesMod {
   
-  @JSImport("@angular/compiler/src/aot/lazy_routes", "listLazyRoutes")
+  @JSImport("@angular/compiler/src/aot/lazy_routes", JSImport.Namespace)
   @js.native
-  def listLazyRoutes(moduleMeta: CompileNgModuleMetadata, reflector: StaticReflector): js.Array[LazyRoute] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/aot/lazy_routes", "parseLazyRoute")
-  @js.native
-  def parseLazyRoute(route: String, reflector: StaticReflector): LazyRoute = js.native
-  @JSImport("@angular/compiler/src/aot/lazy_routes", "parseLazyRoute")
-  @js.native
-  def parseLazyRoute(route: String, reflector: StaticReflector, module: StaticSymbol): LazyRoute = js.native
+  @scala.inline
+  def listLazyRoutes(moduleMeta: CompileNgModuleMetadata, reflector: StaticReflector): js.Array[LazyRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("listLazyRoutes")(moduleMeta.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[LazyRoute]]
   
-  @js.native
+  @scala.inline
+  def parseLazyRoute(route: String, reflector: StaticReflector): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
+  @scala.inline
+  def parseLazyRoute(route: String, reflector: StaticReflector, module: StaticSymbol): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
+  
   trait LazyRoute extends StObject {
     
-    var module: StaticSymbol = js.native
+    var module: StaticSymbol
     
-    var referencedModule: StaticSymbol = js.native
+    var referencedModule: StaticSymbol
     
-    var route: String = js.native
+    var route: String
   }
   object LazyRoute {
     

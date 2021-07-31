@@ -5,95 +5,95 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderCamera extends Object {
+trait RenderCamera
+  extends StObject
+     with Object {
   
   /**
     * The camera target ("look at") position in the internal Cartesian rendering coordinate system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var center: ArrayLike[Double] = js.native
+  var center: ArrayLike[Double]
   
   /**
     * The position of the camera in the internal Cartesian rendering coordinate system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var eye: ArrayLike[Double] = js.native
+  var eye: ArrayLike[Double]
   
   /**
     * The distance to the far plane.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var far: Double = js.native
+  var far: Double
   
   /**
     * The horizontal field of view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var fovX: Double = js.native
+  var fovX: Double
   
   /**
     * The vertical field of view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var fovY: Double = js.native
+  var fovY: Double
   
   /**
     * The distance to the near plane.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var near: Double = js.native
+  var near: Double
   
   /**
     * The render pixel ratio.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   /**
     * A 4x4 matrix that defines the perspective projection transformation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var projectionMatrix: ArrayLike[Double] = js.native
+  var projectionMatrix: ArrayLike[Double]
   
   /**
     * The camera up vector.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var up: ArrayLike[Double] = js.native
+  var up: ArrayLike[Double]
   
   /**
     * The inverse transpose of `viewMatrix`, used to transform normals from world space to camera space.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var viewInverseTransposeMatrix: ArrayLike[Double] = js.native
+  var viewInverseTransposeMatrix: ArrayLike[Double]
   
   /**
     * A 4x4 matrix that transforms coordinates from world space to camera space.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var viewMatrix: ArrayLike[Double] = js.native
+  var viewMatrix: ArrayLike[Double]
   
   /**
     * The viewport (x, y, width, height).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var viewport: js.Any = js.native
+  var viewport: js.Any
 }
 object RenderCamera {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceRequest extends StObject {
   
   /**
     * The identifier of the bundle for the WorkSpace. You can use DescribeWorkspaceBundles to list the available bundles.
     */
-  var BundleId: typings.awsSdk.workspacesMod.BundleId = js.native
+  var BundleId: typings.awsSdk.workspacesMod.BundleId
   
   /**
     * The identifier of the AWS Directory Service directory for the WorkSpace. You can use DescribeWorkspaceDirectories to list the available directories.
     */
-  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId
   
   /**
     * Indicates whether the data stored on the root volume is encrypted.
     */
-  var RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.native
+  var RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The tags for the WorkSpace.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The user name of the user for the WorkSpace. This user name must exist in the AWS Directory Service directory for the WorkSpace.
     */
-  var UserName: typings.awsSdk.workspacesMod.UserName = js.native
+  var UserName: typings.awsSdk.workspacesMod.UserName
   
   /**
     * Indicates whether the data stored on the user volume is encrypted.
     */
-  var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.native
+  var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
     */
-  var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.native
+  var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.undefined
   
   /**
     * The WorkSpace properties.
     */
-  var WorkspaceProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceProperties] = js.native
+  var WorkspaceProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceProperties] = js.undefined
 }
 object WorkspaceRequest {
   

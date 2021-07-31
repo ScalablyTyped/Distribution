@@ -4,7 +4,6 @@ import typings.materialTextfield.anon.PartialMDCTextFieldCharac
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexMod {
@@ -13,7 +12,7 @@ object indexMod {
   @js.native
   class MDCTextFieldCharacterCounter protected ()
     extends typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
@@ -23,9 +22,12 @@ object indexMod {
   /* static members */
   object MDCTextFieldCharacterCounter {
     
-    @JSImport("@material/textfield/character-counter/index", "MDCTextFieldCharacterCounter.attachTo")
+    @JSImport("@material/textfield/character-counter/index", "MDCTextFieldCharacterCounter")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("@material/textfield/character-counter/index", "MDCTextFieldCharacterCounterFoundation")

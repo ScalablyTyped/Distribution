@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2KAnonymityResult extends StObject {
   
   /** Histogram of k-anonymity equivalence classes. */
-  var equivalenceClassHistogramBuckets: js.UndefOr[js.Array[GooglePrivacyDlpV2KAnonymityHistogramBucket]] = js.native
+  var equivalenceClassHistogramBuckets: js.UndefOr[js.Array[GooglePrivacyDlpV2KAnonymityHistogramBucket]] = js.undefined
 }
 object GooglePrivacyDlpV2KAnonymityResult {
   

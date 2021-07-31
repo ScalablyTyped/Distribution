@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionSns extends StObject {
   
   /**
     * The message format of the message to publish. Accepted values are "JSON" and "RAW".
     */
-  var messageFormat: js.UndefOr[Input[String]] = js.native
+  var messageFormat: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * The ARN of the SNS topic.
     */
-  var targetArn: Input[String] = js.native
+  var targetArn: Input[String]
 }
 object TopicRuleErrorActionSns {
   

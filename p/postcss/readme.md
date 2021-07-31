@@ -10,9 +10,9 @@ Tool for transforming styles with JS plugins
 | ------------------ | :-------------: |
 | Full name          | postcss |
 | Keywords           | css, postcss, rework, preprocessor, parser, source map, transform, manipulation, transpiler |
-| # releases         | 47 |
-| # dependents       | 4867 |
-| # downloads        | 1256888325 |
+| # releases         | 52 |
+| # dependents       | 5212 |
+| # downloads        | 1410183442 |
 | # stars            | 137 |
 
 ## Links

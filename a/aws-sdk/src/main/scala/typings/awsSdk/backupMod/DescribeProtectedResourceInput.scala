@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProtectedResourceInput extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a resource. The format of the ARN depends on the resource type.
     */
-  var ResourceArn: ARN = js.native
+  var ResourceArn: ARN
 }
 object DescribeProtectedResourceInput {
   

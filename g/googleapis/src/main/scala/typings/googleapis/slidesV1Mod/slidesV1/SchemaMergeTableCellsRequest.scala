@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Merges cells in a Table.
   */
-@js.native
 trait SchemaMergeTableCellsRequest extends StObject {
   
   /**
     * The object ID of the table.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The table range specifying which cells of the table to merge.  Any text
@@ -23,7 +21,7 @@ trait SchemaMergeTableCellsRequest extends StObject {
     * non-rectangular (which can occur in some cases where the range covers
     * cells that are already merged), a 400 bad request error is returned.
     */
-  var tableRange: js.UndefOr[SchemaTableRange] = js.native
+  var tableRange: js.UndefOr[SchemaTableRange] = js.undefined
 }
 object SchemaMergeTableCellsRequest {
   

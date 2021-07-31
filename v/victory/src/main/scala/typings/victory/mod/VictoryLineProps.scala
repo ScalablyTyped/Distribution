@@ -5,14 +5,13 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryLineProps
-  extends VictorySingleLabableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictorySingleLabableProps {
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -51,32 +50,32 @@ trait VictoryLineProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.native
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.undefined
   
   /**
     * The interpolation prop determines how data points should be connected
     * when plotting a line
     */
-  var interpolation: js.UndefOr[InterpolationPropType] = js.native
+  var interpolation: js.UndefOr[InterpolationPropType] = js.undefined
   
   /**
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
-  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.native
+  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.undefined
   
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     */
-  var samples: js.UndefOr[Double] = js.native
+  var samples: js.UndefOr[Double] = js.undefined
   
   /**
     * Use the sortKey prop to indicate how data should be sorted. This prop
     * is given directly to the lodash sortBy function to be executed on the
     * final dataset.
     */
-  var sortKey: js.UndefOr[String | js.Array[String] | js.Function] = js.native
+  var sortKey: js.UndefOr[String | js.Array[String] | js.Function] = js.undefined
   
   /**
     * The style prop specifies styles for your VictoryLine. Any valid inline style properties
@@ -87,7 +86,7 @@ trait VictoryLineProps
     * VictoryLabel, or any custom labelComponent.
     * @examples{data: {stroke: "red"}, labels: {fontSize: 12}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 object VictoryLineProps {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: string = js.native
+  var BrokerId: string
   
   /**
     * Enables access to the the ActiveMQ Web Console for the ActiveMQ user.
     */
-  var ConsoleAccess: js.UndefOr[boolean] = js.native
+  var ConsoleAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * The list of groups (20 maximum) to which the ActiveMQ user belongs. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Groups: js.UndefOr[listOfString] = js.native
+  var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * Required. The password of the user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas.
     */
-  var Password: js.UndefOr[string] = js.native
+  var Password: js.UndefOr[string] = js.undefined
   
   /**
     * The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: string = js.native
+  var Username: string
 }
 object CreateUserRequest {
   

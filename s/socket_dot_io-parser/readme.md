@@ -10,9 +10,9 @@ socket.io protocol parser
 | ------------------ | :-------------: |
 | Full name          | socket.io-parser |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 86 |
-| # downloads        | 248260252 |
+| # releases         | 13 |
+| # dependents       | 90 |
+| # downloads        | 289778573 |
 | # stars            | 6 |
 
 ## Links

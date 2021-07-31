@@ -7,45 +7,45 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to columns in text (e.g., in {@link TextFrames} ). */
-@js.native
-trait TextColumns extends XTextColumns {
+trait TextColumns
+  extends StObject
+     with XTextColumns {
   
   /**
     * contains the distance between the columns. It is valid if the property IsAutomatic is set. Half of this distance is set to the left and right margins
     * of all columns, except for the left margin of the first column, and the right margin of the last column.
     */
-  var AutomaticDistance: Double = js.native
+  var AutomaticDistance: Double
   
   /**
     * determines whether the columns all have equal width. This flag is set if {@link XTextColumns.setColumnCount()} is called and it is reset if {@link
     * XTextColumns.setColumns()} is called.
     */
-  var IsAutomatic: Boolean = js.native
+  var IsAutomatic: Boolean
   
   /** determines the color of the separator lines between the columns. */
-  var SeparatorLineColor: Color = js.native
+  var SeparatorLineColor: Color
   
   /** determines whether separator lines are on. */
-  var SeparatorLineIsOn: Boolean = js.native
+  var SeparatorLineIsOn: Boolean
   
   /** determines the relative height of the separator lines between the columns. */
-  var SeparatorLineRelativeHeight: Double = js.native
+  var SeparatorLineRelativeHeight: Double
   
   /**
     * determines the style of the separator lines between the columns.
     * @see com.sun.star.text:ColumnSeparatorStyle for the possible values.
     */
-  var SeparatorLineStyle: Double = js.native
+  var SeparatorLineStyle: Double
   
   /** determines the vertical alignment of the separator lines between the columns. */
-  var SeparatorLineVerticalAlignment: VerticalAlignment = js.native
+  var SeparatorLineVerticalAlignment: VerticalAlignment
   
   /** determines the width of the separator lines between the columns. */
-  var SeparatorLineWidth: Double = js.native
+  var SeparatorLineWidth: Double
 }
 object TextColumns {
   

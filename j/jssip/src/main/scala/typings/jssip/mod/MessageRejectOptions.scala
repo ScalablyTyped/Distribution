@@ -2,19 +2,17 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageRejectOptions extends StObject {
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reason_phrase: String = js.native
+  var reason_phrase: String
   
-  var status_code: js.UndefOr[js.Array[Double]] = js.native
+  var status_code: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object MessageRejectOptions {
   

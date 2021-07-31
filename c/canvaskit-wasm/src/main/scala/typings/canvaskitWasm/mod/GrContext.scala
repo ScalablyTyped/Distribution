@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GrContext extends EmbindObject[GrContext] {
+trait GrContext
+  extends StObject
+     with EmbindObject[GrContext] {
   
-  def getResourceCacheLimitBytes(): Double = js.native
+  def getResourceCacheLimitBytes(): Double
   
-  def getResourceCacheUsageBytes(): Double = js.native
+  def getResourceCacheUsageBytes(): Double
   
-  def releaseResourcesAndAbandonContext(): Unit = js.native
+  def releaseResourcesAndAbandonContext(): Unit
   
-  def setResourceCacheLimitBytes(bytes: Double): Unit = js.native
+  def setResourceCacheLimitBytes(bytes: Double): Unit
 }
 object GrContext {
   

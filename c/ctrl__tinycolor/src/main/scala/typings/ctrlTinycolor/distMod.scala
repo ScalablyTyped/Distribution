@@ -8,24 +8,30 @@ import typings.ctrlTinycolor.ctrlTinycolorBooleans.`false`
 import typings.ctrlTinycolor.interfacesMod.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
   
+  @JSImport("@ctrl/tinycolor/dist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@ctrl/tinycolor/dist", "TinyColor")
   @js.native
-  class TinyColor_ () extends _ColorInput {
+  class TinyColor_ ()
+    extends StObject
+       with _ColorInput {
     def this(color: ColorInput) = this()
-    def this(color: js.UndefOr[ColorInput], opts: PartialTinyColorOptions) = this()
+    def this(color: Unit, opts: PartialTinyColorOptions) = this()
+    def this(color: ColorInput, opts: PartialTinyColorOptions) = this()
     
     /** alpha */
     var a: Double = js.native
     
     def analogous(): js.Array[TinyColor_] = js.native
-    def analogous(results: js.UndefOr[scala.Nothing], slices: Double): js.Array[TinyColor_] = js.native
     def analogous(results: Double): js.Array[TinyColor_] = js.native
     def analogous(results: Double, slices: Double): js.Array[TinyColor_] = js.native
+    def analogous(results: Unit, slices: Double): js.Array[TinyColor_] = js.native
     
     /** blue */
     var b: Double = js.native
@@ -62,7 +68,6 @@ object distMod {
       * compare color vs current color
       */
     def equals(): Boolean = js.native
-    def equals(color: ColorInput): Boolean = js.native
     
     /** the format used to create the tinycolor instance */
     var format: ColorFormats = js.native
@@ -263,15 +268,14 @@ object distMod {
     def triad(): js.Array[TinyColor_] = js.native
   }
   
-  @JSImport("@ctrl/tinycolor/dist", "tinycolor")
-  @js.native
-  def tinycolor(): TinyColor_ = js.native
-  @JSImport("@ctrl/tinycolor/dist", "tinycolor")
-  @js.native
-  def tinycolor(color: js.UndefOr[ColorInput], opts: PartialTinyColorOptions): TinyColor_ = js.native
-  @JSImport("@ctrl/tinycolor/dist", "tinycolor")
-  @js.native
-  def tinycolor(color: ColorInput): TinyColor_ = js.native
+  @scala.inline
+  def tinycolor(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")().asInstanceOf[TinyColor_]
+  @scala.inline
+  def tinycolor(color: Unit, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
+  @scala.inline
+  def tinycolor(color: ColorInput): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
+  @scala.inline
+  def tinycolor(color: ColorInput, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ctrlTinycolor.ctrlTinycolorStrings.rgb
@@ -332,12 +336,11 @@ object distMod {
   */
   type ColorInput = _ColorInput | String | Double
   
-  @js.native
   trait TinyColorOptions extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var gradientType: String = js.native
+    var gradientType: String
   }
   object TinyColorOptions {
     

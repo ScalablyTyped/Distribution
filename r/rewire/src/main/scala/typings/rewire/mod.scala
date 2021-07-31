@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rewire.mod.RewireInterfaces.RewiredModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,9 +11,12 @@ object mod {
   /**
     * Returns a rewired version of the module found at filename. Use rewire() exactly like require().
     */
+  @scala.inline
+  def apply[T](filename: String): RewiredModule & T = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[RewiredModule & T]
+  
   @JSImport("rewire", JSImport.Namespace)
   @js.native
-  def apply[T](filename: String): RewiredModule with T = js.native
+  val ^ : js.Any = js.native
   
   object RewireInterfaces {
     
@@ -39,7 +41,7 @@ object mod {
         * Returns a function which - when being called - sets obj, executes the given callback and reverts obj. If callback returns a promise, obj is only reverted after
         * the promise has been resolved or rejected. For your convenience the returned function passes the received promise through.
         */
-      def __with__(obj: StringDictionary[js.Any]): js.Function1[/* callback */ js.Function0[_], _] = js.native
+      def __with__(obj: StringDictionary[js.Any]): js.Function1[/* callback */ js.Function0[js.Any], js.Any] = js.native
     }
   }
 }

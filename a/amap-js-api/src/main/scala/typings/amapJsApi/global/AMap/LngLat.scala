@@ -2,13 +2,13 @@ package typings.amapJsApi.global.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.LngLat")
 @js.native
 class LngLat protected ()
-  extends typings.amapJsApi.AMap.LngLat {
+  extends StObject
+     with typings.amapJsApi.AMap.LngLat {
   /**
     * 构造一个地理坐标对象
     * @param lng 经度

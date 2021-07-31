@@ -2,23 +2,21 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Solver extends StObject {
   
-  def addEquation(eq: Equation): Unit = js.native
+  def addEquation(eq: Equation): Unit
   
-  var equations: js.Array[Equation] = js.native
+  var equations: js.Array[Equation]
   
-  var iterations: Double = js.native
+  var iterations: Double
   
-  def removeAllEquations(): Unit = js.native
+  def removeAllEquations(): Unit
   
-  def removeEquation(eq: Equation): Unit = js.native
+  def removeEquation(eq: Equation): Unit
   
-  def solve(dy: Double, world: World): Double = js.native
+  def solve(dy: Double, world: World): Double
 }
 object Solver {
   

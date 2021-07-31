@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntroductoryPriceInfo extends StObject {
   
   /**
     * Introductory price of the subscription, not including tax. The currency is the same as price_currency_code. Price is expressed in micro-units, where 1,000,000 micro-units represents
     * one unit of the currency. For example, if the subscription price is €1.99, price_amount_micros is 1990000.
     */
-  var introductoryPriceAmountMicros: js.UndefOr[String] = js.native
+  var introductoryPriceAmountMicros: js.UndefOr[String] = js.undefined
   
   /** ISO 4217 currency code for the introductory subscription price. For example, if the price is specified in British pounds sterling, price_currency_code is "GBP". */
-  var introductoryPriceCurrencyCode: js.UndefOr[String] = js.native
+  var introductoryPriceCurrencyCode: js.UndefOr[String] = js.undefined
   
   /** The number of billing period to offer introductory pricing. */
-  var introductoryPriceCycles: js.UndefOr[Double] = js.native
+  var introductoryPriceCycles: js.UndefOr[Double] = js.undefined
   
   /**
     * Introductory price period, specified in ISO 8601 format. Common values are (but not limited to) "P1W" (one week), "P1M" (one month), "P3M" (three months), "P6M" (six months), and
     * "P1Y" (one year).
     */
-  var introductoryPricePeriod: js.UndefOr[String] = js.native
+  var introductoryPricePeriod: js.UndefOr[String] = js.undefined
 }
 object IntroductoryPriceInfo {
   

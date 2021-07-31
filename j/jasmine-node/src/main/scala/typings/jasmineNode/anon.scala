@@ -2,21 +2,19 @@ package typings.jasmineNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Consolidate extends StObject {
     
-    var consolidate: Boolean = js.native
+    var consolidate: Boolean
     
-    var report: Boolean = js.native
+    var report: Boolean
     
-    var savePath: String = js.native
+    var savePath: String
     
-    var useDotNotation: Boolean = js.native
+    var useDotNotation: Boolean
   }
   object Consolidate {
     

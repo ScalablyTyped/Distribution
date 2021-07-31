@@ -3,28 +3,27 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseGetManualJob200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var browser: String = js.native
+  var browser: String
   
-  var members: js.Array[String] = js.native
+  var members: js.Array[String]
   
-  var os: String = js.native
+  var os: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var resolution: String = js.native
+  var resolution: String
   
-  var tunnel: js.UndefOr[Unit] = js.native
+  var tunnel: js.UndefOr[Unit] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var version: String = js.native
+  var version: String
 }
 object ResponseGetManualJob200 {
   

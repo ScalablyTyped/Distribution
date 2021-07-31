@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation extends StObject {
   
   /** Label of the object tracked in this annotation. */
-  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.native
+  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.undefined
   
   /** The list of frames where this object track appears. */
-  var objectTrackingFrames: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]] = js.native
+  var objectTrackingFrames: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]] = js.undefined
   
   /** The time segment of the video to which object tracking applies. */
-  var timeSegment: js.UndefOr[GoogleCloudDatalabelingV1beta1TimeSegment] = js.native
+  var timeSegment: js.UndefOr[GoogleCloudDatalabelingV1beta1TimeSegment] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation {
   

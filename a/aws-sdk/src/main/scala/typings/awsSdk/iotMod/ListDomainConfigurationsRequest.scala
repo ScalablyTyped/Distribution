@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDomainConfigurationsRequest extends StObject {
   
   /**
     * The marker for the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The result page size.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The type of service delivered by the endpoint.
     */
-  var serviceType: js.UndefOr[ServiceType] = js.native
+  var serviceType: js.UndefOr[ServiceType] = js.undefined
 }
 object ListDomainConfigurationsRequest {
   

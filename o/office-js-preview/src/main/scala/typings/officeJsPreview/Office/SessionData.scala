@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,10 +39,7 @@ trait SessionData extends StObject {
     * @beta
     */
   def clearAsync(): Unit = js.native
-  def clearAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def clearAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def clearAsync(options: AsyncContextOptions): Unit = js.native
   def clearAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
@@ -104,11 +100,7 @@ trait SessionData extends StObject {
     * @beta
     */
   def removeAsync(name: String): Unit = js.native
-  def removeAsync(
-    name: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeAsync(name: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAsync(name: String, options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     name: String,
@@ -139,7 +131,7 @@ trait SessionData extends StObject {
   def setAsync(
     name: String,
     value: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(name: String, value: String, options: AsyncContextOptions): Unit = js.native

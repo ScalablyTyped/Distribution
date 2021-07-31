@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicFilter extends StObject {
   
   /**
     * The name of a topic on which you wish to apply the filter.
     */
-  var TopicName: js.UndefOr[typings.awsSdk.sesv2Mod.TopicName] = js.native
+  var TopicName: js.UndefOr[typings.awsSdk.sesv2Mod.TopicName] = js.undefined
   
   /**
     * Notes that the default subscription status should be applied to a contact because the contact has not noted their preference for subscribing to a topic.
     */
-  var UseDefaultIfPreferenceUnavailable: js.UndefOr[typings.awsSdk.sesv2Mod.UseDefaultIfPreferenceUnavailable] = js.native
+  var UseDefaultIfPreferenceUnavailable: js.UndefOr[typings.awsSdk.sesv2Mod.UseDefaultIfPreferenceUnavailable] = js.undefined
 }
 object TopicFilter {
   

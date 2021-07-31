@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientInfo extends StObject {
   
   /** A client ID that (hopefully) uniquely identifies the client implementation of the Safe Browsing API. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** The version of the client implementation. */
-  var clientVersion: js.UndefOr[String] = js.native
+  var clientVersion: js.UndefOr[String] = js.undefined
 }
 object ClientInfo {
   

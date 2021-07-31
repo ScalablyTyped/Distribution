@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CallArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetReturnValueRequest extends StObject {
   
   /**
     * New return value.
     */
-  var newValue: CallArgument = js.native
+  var newValue: CallArgument
 }
 object SetReturnValueRequest {
   

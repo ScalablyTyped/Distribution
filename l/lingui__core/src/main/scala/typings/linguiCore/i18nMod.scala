@@ -8,10 +8,13 @@ import typings.linguiCore.selectMod.SelectProps
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nMod {
+  
+  @JSImport("@lingui/core/i18n", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@lingui/core/i18n", "I18n")
   @js.native
@@ -20,11 +23,11 @@ object i18nMod {
     @JSName("_")
     def _underscore(id: String): String = js.native
     @JSName("_")
-    def _underscore(id: String, values: js.UndefOr[scala.Nothing], messageOptions: MessageOptions): String = js.native
-    @JSName("_")
     def _underscore(id: String, values: js.Object): String = js.native
     @JSName("_")
     def _underscore(id: String, values: js.Object, messageOptions: MessageOptions): String = js.native
+    @JSName("_")
+    def _underscore(id: String, values: Unit, messageOptions: MessageOptions): String = js.native
     @JSName("_")
     def _underscore(id: MessageDescriptor): String = js.native
     
@@ -65,19 +68,16 @@ object i18nMod {
   @js.native
   val i18n: I18n_ = js.native
   
-  @JSImport("@lingui/core/i18n", "setupI18n")
-  @js.native
-  def setupI18n(): I18n_ = js.native
-  @JSImport("@lingui/core/i18n", "setupI18n")
-  @js.native
-  def setupI18n(params: setupI18nProps): I18n_ = js.native
+  @scala.inline
+  def setupI18n(): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")().asInstanceOf[I18n_]
+  @scala.inline
+  def setupI18n(params: setupI18nProps): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")(params.asInstanceOf[js.Any]).asInstanceOf[I18n_]
   
-  @js.native
   trait Catalog extends StObject {
     
-    var languageData: js.UndefOr[LanguageData] = js.native
+    var languageData: js.UndefOr[LanguageData] = js.undefined
     
-    var messages: Messages = js.native
+    var messages: Messages
   }
   object Catalog {
     
@@ -103,12 +103,11 @@ object i18nMod {
   
   type Catalogs = StringDictionary[Catalog]
   
-  @js.native
   trait LanguageData extends StObject {
     
     var plurals: js.UndefOr[
         js.Function2[/* n */ Double, /* pluralType */ js.UndefOr[cardinal | ordinal], String]
-      ] = js.native
+      ] = js.undefined
   }
   object LanguageData {
     
@@ -129,16 +128,15 @@ object i18nMod {
     }
   }
   
-  @js.native
   trait MessageDescriptor extends StObject {
     
-    var defaults: js.UndefOr[String] = js.native
+    var defaults: js.UndefOr[String] = js.undefined
     
-    var formats: js.UndefOr[js.Object] = js.native
+    var formats: js.UndefOr[js.Object] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var values: js.UndefOr[js.Object] = js.native
+    var values: js.UndefOr[js.Object] = js.undefined
   }
   object MessageDescriptor {
     
@@ -174,12 +172,11 @@ object i18nMod {
     }
   }
   
-  @js.native
   trait MessageOptions extends StObject {
     
-    var defaults: js.UndefOr[String] = js.native
+    var defaults: js.UndefOr[String] = js.undefined
     
-    var formats: js.UndefOr[js.Object] = js.native
+    var formats: js.UndefOr[js.Object] = js.undefined
   }
   object MessageOptions {
     
@@ -218,18 +215,17 @@ object i18nMod {
     ])
   ]
   
-  @js.native
   trait setupI18nProps extends StObject {
     
-    var catalogs: js.UndefOr[Catalogs] = js.native
+    var catalogs: js.UndefOr[Catalogs] = js.undefined
     
-    var development: js.UndefOr[js.Object] = js.native
+    var development: js.UndefOr[js.Object] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
-    var missing: js.UndefOr[String | (js.Function2[/* language */ String, /* id */ String, String])] = js.native
+    var missing: js.UndefOr[String | (js.Function2[/* language */ String, /* id */ String, String])] = js.undefined
   }
   object setupI18nProps {
     

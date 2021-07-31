@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XPathPatterns. */
-@js.native
 trait XPathPatterns extends StObject {
   
   /** An array to XPaths. */
-  var xpaths: js.UndefOr[js.Array[String]] = js.native
+  var xpaths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object XPathPatterns {
   

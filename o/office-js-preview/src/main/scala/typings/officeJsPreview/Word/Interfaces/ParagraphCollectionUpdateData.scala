@@ -2,14 +2,12 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
-@js.native
 trait ParagraphCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var items: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
 object ParagraphCollectionUpdateData {
   

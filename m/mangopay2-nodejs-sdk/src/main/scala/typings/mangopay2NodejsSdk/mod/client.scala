@@ -4,7 +4,6 @@ import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object client {
@@ -31,88 +30,89 @@ object client {
     def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
   }
   
-  @js.native
-  trait ClientData extends EntityBaseData {
+  trait ClientData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A list of email addresses to use when contacting you for admin/commercial issues/communications
       */
-    var AdminEmails: js.Array[String] = js.native
+    var AdminEmails: js.Array[String]
     
     /**
       * A list of email addresses to use when contacting you for billing issues/communications
       */
-    var BillingEmails: js.Array[String] = js.native
+    var BillingEmails: js.Array[String]
     
     /**
       * An ID for the client (i.e. url friendly, lowercase etc - sort of namespace identifier)
       */
-    var ClientId: String = js.native
+    var ClientId: String
     
     /**
       * Your unique MANGOPAY reference which you should use when contacting us
       */
-    var CompanyReference: String = js.native
+    var CompanyReference: String
     
     /**
       * A list of email addresses to use when contacting you for fraud/compliance issues/communications
       */
-    var FraudEmails: js.Array[String] = js.native
+    var FraudEmails: js.Array[String]
     
     /**
       * The address of the company’s headquarters
       */
-    var HeadquartersAddress: AddressType = js.native
+    var HeadquartersAddress: AddressType
     
     /**
       * The URL of the logo of your client
       */
-    var Logo: String = js.native
+    var Logo: String
     
     /**
       * The pretty name for the client
       */
-    var Name: String = js.native
+    var Name: String
     
     /**
       * The Categorization of your platform, in terms of Business Type and Sector
       */
-    var PlatformCategorization: typings.mangopay2NodejsSdk.mod.client.PlatformCategorization = js.native
+    var PlatformCategorization: typings.mangopay2NodejsSdk.mod.client.PlatformCategorization
     
     /**
       * A description of what your platform does
       */
-    var PlatformDescription: String = js.native
+    var PlatformDescription: String
     
     /**
       * The URL for your website
       */
-    var PlatformURL: String = js.native
+    var PlatformURL: String
     
     /**
       * The primary branding colour to use for buttons for your merchant
       */
-    var PrimaryButtonColour: String = js.native
+    var PrimaryButtonColour: String
     
     /**
       * The primary branding colour to use for your merchant
       */
-    var PrimaryThemeColour: String = js.native
+    var PrimaryThemeColour: String
     
     /**
       * The registered name of your company
       */
-    var RegisteredName: String = js.native
+    var RegisteredName: String
     
     /**
       * The tax (or VAT) number for your company
       */
-    var TaxNumber: String = js.native
+    var TaxNumber: String
     
     /**
       * A list of email addresses to use when contacting you for technical issues/communications
       */
-    var TechEmails: js.Array[String] = js.native
+    var TechEmails: js.Array[String]
   }
   object ClientData {
     
@@ -207,12 +207,11 @@ object client {
     }
   }
   
-  @js.native
   trait PlatformCategorization extends StObject {
     
-    var BusinessType: typings.mangopay2NodejsSdk.mod.client.BusinessType = js.native
+    var BusinessType: typings.mangopay2NodejsSdk.mod.client.BusinessType
     
-    var Sector: typings.mangopay2NodejsSdk.mod.client.Sector = js.native
+    var Sector: typings.mangopay2NodejsSdk.mod.client.Sector
   }
   object PlatformCategorization {
     
@@ -318,63 +317,62 @@ object client {
     def TICKETING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING = "TICKETING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING]
   }
   
-  @js.native
   trait UpdateClient extends StObject {
     
     /**
       * A list of email addresses to use when contacting you for admin/commercial issues/communications
       */
-    var AdminEmails: js.UndefOr[js.Array[String]] = js.native
+    var AdminEmails: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of email addresses to use when contacting you for billing issues/communications
       */
-    var BillingEmails: js.UndefOr[js.Array[String]] = js.native
+    var BillingEmails: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of email addresses to use when contacting you for fraud/compliance issues/communications
       */
-    var FraudEmails: js.UndefOr[js.Array[String]] = js.native
+    var FraudEmails: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The address of the company’s headquarters
       */
-    var HeadquartersAddress: js.UndefOr[AddressType] = js.native
+    var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
     
     /**
       * A description of what your platform does
       */
-    var PlatformDescription: js.UndefOr[String] = js.native
+    var PlatformDescription: js.UndefOr[String] = js.undefined
     
     /**
       * The type of platform
       */
-    var PlatformType: js.UndefOr[typings.mangopay2NodejsSdk.mod.client.PlatformType] = js.native
+    var PlatformType: js.UndefOr[typings.mangopay2NodejsSdk.mod.client.PlatformType] = js.undefined
     
     /**
       * The URL for your website
       */
-    var PlatformURL: js.UndefOr[String] = js.native
+    var PlatformURL: js.UndefOr[String] = js.undefined
     
     /**
       * The primary branding colour to use for buttons for your merchant
       */
-    var PrimaryButtonColour: js.UndefOr[String] = js.native
+    var PrimaryButtonColour: js.UndefOr[String] = js.undefined
     
     /**
       * The primary branding colour to use for your merchant
       */
-    var PrimaryThemeColour: js.UndefOr[String] = js.native
+    var PrimaryThemeColour: js.UndefOr[String] = js.undefined
     
     /**
       * The tax (or VAT) number for your company
       */
-    var TaxNumber: js.UndefOr[String] = js.native
+    var TaxNumber: js.UndefOr[String] = js.undefined
     
     /**
       * A list of email addresses to use when contacting you for technical issues/communications
       */
-    var TechEmails: js.UndefOr[js.Array[String]] = js.native
+    var TechEmails: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UpdateClient {
     
@@ -467,13 +465,12 @@ object client {
     }
   }
   
-  @js.native
   trait UpdateClientLogo extends StObject {
     
     /**
       * The base64 encoded file which needs to be uploaded
       */
-    var File: String = js.native
+    var File: String
   }
   object UpdateClientLogo {
     

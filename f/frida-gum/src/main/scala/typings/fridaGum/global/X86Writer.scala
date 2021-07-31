@@ -4,7 +4,6 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.X86WriterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("X86Writer")
 @js.native
 class X86Writer protected ()
-  extends typings.fridaGum.X86Writer {
+  extends StObject
+     with typings.fridaGum.X86Writer {
   /**
     * Creates a new code writer for generating x86 machine code
     * written directly to memory at `codeAddress`.

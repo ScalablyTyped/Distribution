@@ -3,17 +3,15 @@ package typings.showdown
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Codeblock extends StObject {
     
-    var codeblock: js.UndefOr[String] = js.native
+    var codeblock: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Codeblock {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var parsed: js.UndefOr[StringDictionary[String]] = js.native
+    var parsed: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
   }
   object Format {
     
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayAuthorizerMod {
@@ -75,6 +74,10 @@ object apigatewayAuthorizerMod {
   /* static members */
   object Authorizer {
     
+    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Authorizer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -84,76 +87,70 @@ object apigatewayAuthorizerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
     
     /**
       * Returns true if the given object is an instance of Authorizer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ Boolean]
   }
   
-  @js.native
   trait AuthorizerArgs extends StObject {
     
     /**
       * The credentials required for the authorizer. To specify an IAM Role for API Gateway to assume, use the IAM Role ARN.
       */
-    val authorizerCredentials: js.UndefOr[Input[String]] = js.native
+    val authorizerCredentials: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The TTL of cached authorizer results in seconds. Defaults to `300`.
       */
-    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authorizer's Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of `arn:aws:apigateway:{region}:lambda:path/{service_api}`,
       * e.g. `arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations`
       */
-    val authorizerUri: js.UndefOr[Input[String]] = js.native
+    val authorizerUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The source of the identity in an incoming request. Defaults to `method.request.header.Authorization`. For `REQUEST` type, this may be a comma-separated list of values, including headers, query string parameters and stage variables - e.g. `"method.request.header.SomeHeaderName,method.request.querystring.SomeQueryStringName,stageVariables.SomeStageVariableName"`
       */
-    val identitySource: js.UndefOr[Input[String]] = js.native
+    val identitySource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A validation expression for the incoming identity. For `TOKEN` type, this value should be a regular expression. The incoming token from the client is matched against this expression, and will proceed if the token matches. If the token doesn't match, the client receives a 401 Unauthorized response.
       */
-    val identityValidationExpression: js.UndefOr[Input[String]] = js.native
+    val identityValidationExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the authorizer
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of the Amazon Cognito user pool ARNs. Each element is of this format: `arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}`.
       */
-    val providerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val providerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool. Defaults to `TOKEN`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object AuthorizerArgs {
     
@@ -222,54 +219,53 @@ object apigatewayAuthorizerMod {
     }
   }
   
-  @js.native
   trait AuthorizerState extends StObject {
     
     /**
       * The credentials required for the authorizer. To specify an IAM Role for API Gateway to assume, use the IAM Role ARN.
       */
-    val authorizerCredentials: js.UndefOr[Input[String]] = js.native
+    val authorizerCredentials: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The TTL of cached authorizer results in seconds. Defaults to `300`.
       */
-    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authorizer's Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of `arn:aws:apigateway:{region}:lambda:path/{service_api}`,
       * e.g. `arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations`
       */
-    val authorizerUri: js.UndefOr[Input[String]] = js.native
+    val authorizerUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The source of the identity in an incoming request. Defaults to `method.request.header.Authorization`. For `REQUEST` type, this may be a comma-separated list of values, including headers, query string parameters and stage variables - e.g. `"method.request.header.SomeHeaderName,method.request.querystring.SomeQueryStringName,stageVariables.SomeStageVariableName"`
       */
-    val identitySource: js.UndefOr[Input[String]] = js.native
+    val identitySource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A validation expression for the incoming identity. For `TOKEN` type, this value should be a regular expression. The incoming token from the client is matched against this expression, and will proceed if the token matches. If the token doesn't match, the client receives a 401 Unauthorized response.
       */
-    val identityValidationExpression: js.UndefOr[Input[String]] = js.native
+    val identityValidationExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the authorizer
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of the Amazon Cognito user pool ARNs. Each element is of this format: `arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}`.
       */
-    val providerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val providerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool. Defaults to `TOKEN`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object AuthorizerState {
     

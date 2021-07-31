@@ -2,10 +2,10 @@ package typings.activexOutlook.global.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Outlook.DoNotUseMeFolder")
 @js.native
 class DoNotUseMeFolder protected ()
-  extends typings.activexOutlook.Outlook.DoNotUseMeFolder
+  extends StObject
+     with typings.activexOutlook.Outlook.DoNotUseMeFolder

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,8 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `org.openoffice.ucb.Configuration.ContentProviders.key1.SecondaryKeys.key2.ProviderData` within the configuration management's hierarchy). The
   * retrieved descriptions are in turn used to register the corresponding content provider services at the broker.)
   */
-@js.native
-trait UniversalContentBroker extends XUniversalContentBroker {
+trait UniversalContentBroker
+  extends StObject
+     with XUniversalContentBroker {
   
   /**
     * The (default) constructor.
@@ -33,7 +33,7 @@ trait UniversalContentBroker extends XUniversalContentBroker {
     * (This default constructor is only mentioned explicitly for technical reasons, so that its implementation calls the service implementation's {@link
     * com.sun.star.lang.XInitialization.initialize()} .)
     */
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object UniversalContentBroker {
   

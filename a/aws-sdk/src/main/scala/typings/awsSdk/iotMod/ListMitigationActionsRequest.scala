@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMitigationActionsRequest extends StObject {
   
   /**
     * Specify a value to limit the result to mitigation actions with a specific action type.
     */
-  var actionType: js.UndefOr[MitigationActionType] = js.native
+  var actionType: js.UndefOr[MitigationActionType] = js.undefined
   
   /**
     * The maximum number of results to return at one time. The default is 25.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListMitigationActionsRequest {
   

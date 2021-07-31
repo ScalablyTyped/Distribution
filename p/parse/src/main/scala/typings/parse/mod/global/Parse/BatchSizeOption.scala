@@ -2,13 +2,11 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchSizeOption extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
 }
 object BatchSizeOption {
   

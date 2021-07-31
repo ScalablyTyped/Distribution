@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Attribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see DefineOptions
   */
-@js.native
 trait DefineIndexesOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait DefineIndexesOptions extends StObject {
     *
     * Defaults to false
     */
-  var concurrently: js.UndefOr[Boolean] = js.native
+  var concurrently: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of the fields to index. Each field can either be a string containing the name of the field,
@@ -27,45 +25,45 @@ trait DefineIndexesOptions extends StObject {
     * (field name), `length` (create a prefix index of length chars), `order` (the direction the column
     * should be sorted in), `collate` (the collation (sort order) for the column)
     */
-  var fields: js.UndefOr[js.Array[String | fn | Attribute]] = js.native
+  var fields: js.UndefOr[js.Array[String | fn | Attribute]] = js.undefined
   
   /**
     * The method to create the index by (`USING` statement in SQL). BTREE and HASH are supported by mysql and
     * postgres, and postgres additionally supports GIST and GIN.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the index. Defaults to model name + _ + fields concatenated
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Operator that should be used by gin index, see Built-in GIN Operator Classes
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * Index type. Only used by mysql. One of `UNIQUE`, `FULLTEXT` and `SPATIAL`
     */
-  var `type`: js.UndefOr[IndexType] = js.native
+  var `type`: js.UndefOr[IndexType] = js.undefined
   
   /**
     * Should the index by unique? Can also be triggered by setting type to `UNIQUE`
     *
     * Defaults to false
     */
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Method the index should use, for example 'gin' index.
     */
-  var using: js.UndefOr[String] = js.native
+  var `using`: js.UndefOr[String] = js.undefined
   
   /**
     * Condition for partioal index
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object DefineIndexesOptions {
   

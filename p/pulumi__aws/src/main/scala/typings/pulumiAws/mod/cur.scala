@@ -10,10 +10,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cur {
+  
+  @JSImport("@pulumi/aws", "cur")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "cur.ReportDefinition")
   @js.native
@@ -32,6 +35,10 @@ object cur {
   /* static members */
   object ReportDefinition {
     
+    @JSImport("@pulumi/aws", "cur.ReportDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReportDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -41,32 +48,25 @@ object cur {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "cur.ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
-    @JSImport("@pulumi/aws", "cur.ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
-    @JSImport("@pulumi/aws", "cur.ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportDefinitionState): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
-    @JSImport("@pulumi/aws", "cur.ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.reportDefinitionMod.ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.reportDefinitionMod.ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.reportDefinitionMod.ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportDefinitionState): typings.pulumiAws.reportDefinitionMod.ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.reportDefinitionMod.ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.reportDefinitionMod.ReportDefinition]
     
     /**
       * Returns true if the given object is an instance of ReportDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "cur.ReportDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "cur.getReportDefinition")
-  @js.native
-  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = js.native
-  @JSImport("@pulumi/aws", "cur.getReportDefinition")
-  @js.native
-  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = js.native
+  @scala.inline
+  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReportDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetReportDefinitionResult]]
+  @scala.inline
+  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReportDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetReportDefinitionResult]]
 }

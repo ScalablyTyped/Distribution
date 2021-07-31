@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.entryPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `28` extends StObject {
   
-  var name: entryPoint = js.native
+  var name: entryPoint
 }
 object `28` {
   
   @scala.inline
-  def apply(name: entryPoint): `28` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `28` = {
+    val __obj = js.Dynamic.literal(name = "entryPoint")
     __obj.asInstanceOf[`28`]
   }
   

@@ -4,21 +4,19 @@ import typings.reactVis.reactVisStrings.horizontal
 import typings.reactVis.reactVisStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HORIZONTAL_ extends StObject {
   
-  var HORIZONTAL: horizontal = js.native
+  var HORIZONTAL: horizontal
   
-  var VERTICAL: vertical = js.native
+  var VERTICAL: vertical
 }
 object HORIZONTAL_ {
   
   @scala.inline
-  def apply(HORIZONTAL: horizontal, VERTICAL: vertical): HORIZONTAL_ = {
-    val __obj = js.Dynamic.literal(HORIZONTAL = HORIZONTAL.asInstanceOf[js.Any], VERTICAL = VERTICAL.asInstanceOf[js.Any])
+  def apply(): HORIZONTAL_ = {
+    val __obj = js.Dynamic.literal(HORIZONTAL = "horizontal", VERTICAL = "vertical")
     __obj.asInstanceOf[HORIZONTAL_]
   }
   

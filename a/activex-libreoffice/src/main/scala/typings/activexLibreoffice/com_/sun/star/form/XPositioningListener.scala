@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service, as well as the {@link com.sun.star.sdbc.XRowSetListener} .
   * @deprecated Deprecated
   */
-@js.native
-trait XPositioningListener extends XEventListener {
+trait XPositioningListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the database form has been positioned on a data record. */
-  def positioned(aEvent: EventObject): Unit = js.native
+  def positioned(aEvent: EventObject): Unit
 }
 object XPositioningListener {
   

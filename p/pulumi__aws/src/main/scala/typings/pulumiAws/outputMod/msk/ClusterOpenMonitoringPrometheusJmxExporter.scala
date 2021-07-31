@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOpenMonitoringPrometheusJmxExporter extends StObject {
   
   /**
     * Indicates whether you want to enable or disable the JMX Exporter.
     */
-  var enabledInBroker: Boolean = js.native
+  var enabledInBroker: Boolean
 }
 object ClusterOpenMonitoringPrometheusJmxExporter {
   

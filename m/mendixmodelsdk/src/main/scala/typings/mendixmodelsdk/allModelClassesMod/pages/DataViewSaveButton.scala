@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,9 +41,8 @@ object DataViewSaveButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewSaveButton.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton]
   
   /**
     * Creates and returns a new DataViewSaveButton instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object DataViewSaveButton {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewSaveButton.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DataViewSaveButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewSaveButton.structureTypeName")

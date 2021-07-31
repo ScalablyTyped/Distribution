@@ -2,16 +2,14 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Color> */
-@js.native
 trait PartialColor extends StObject {
   
-  var argb: js.UndefOr[String] = js.native
+  var argb: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[Double] = js.undefined
 }
 object PartialColor {
   

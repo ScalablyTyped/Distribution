@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCreativesRemovedeal extends StandardParameters {
+trait ParamsResourceCreativesRemovedeal
+  extends StObject
+     with StandardParameters {
   
   /**
     * The id for the account that will serve this creative.
     */
-  var accountId: js.UndefOr[Double] = js.native
+  var accountId: js.UndefOr[Double] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The buyer-specific id for this creative.
     */
-  var buyerCreativeId: js.UndefOr[String] = js.native
+  var buyerCreativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the deal id to disassociate with this creative.
     */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCreativesRemovedeal {
   

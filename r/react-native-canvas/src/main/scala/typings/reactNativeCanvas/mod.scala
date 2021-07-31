@@ -9,7 +9,6 @@ import typings.std.HTMLElement
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,10 @@ object mod {
   class Image protected () extends StObject {
     def this(canvas: Canvas) = this()
     def this(canvas: Canvas, height: Double) = this()
-    def this(canvas: Canvas, height: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(canvas: Canvas, height: Double, width: Double) = this()
+    def this(canvas: Canvas, height: Unit, width: Double) = this()
     
-    def addEventListener(event: String, func: js.Function1[/* args */ js.Any, _]): Unit = js.native
+    def addEventListener(event: String, func: js.Function1[/* args */ js.Any, js.Any]): Unit = js.native
     
     var crossOrigin: js.UndefOr[String] = js.native
     
@@ -118,10 +117,9 @@ object mod {
     var width: Double = js.native
   }
   
-  @js.native
   trait CanvasGradient extends StObject {
     
-    def addColorStop(offset: Double, color: String): Unit = js.native
+    def addColorStop(offset: Double, color: String): Unit
   }
   object CanvasGradient {
     
@@ -146,21 +144,20 @@ object mod {
     def setTransform(transform: DOMMatrix2DInit): Unit = js.native
   }
   
-  @js.native
   trait CanvasProps extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var originWhitelist: js.UndefOr[js.Array[String]] = js.native
+    var originWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ref: (js.Function1[/* canvas */ Canvas, _]) | RefObject[Canvas] = js.native
+    var ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CanvasProps {
     
     @scala.inline
-    def apply(ref: (js.Function1[/* canvas */ Canvas, _]) | RefObject[Canvas]): CanvasProps = {
+    def apply(ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): CanvasProps = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanvasProps]
     }
@@ -184,10 +181,10 @@ object mod {
       def setOriginWhitelistVarargs(value: String*): Self = StObject.set(x, "originWhitelist", js.Array(value :_*))
       
       @scala.inline
-      def setRef(value: (js.Function1[/* canvas */ Canvas, _]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* canvas */ Canvas => _): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* canvas */ Canvas => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
@@ -268,7 +265,7 @@ object mod {
     
     //
     def fill(): Unit = js.native
-    def fill(Path2D: js.UndefOr[scala.Nothing], fillRule: js.Any): Unit = js.native
+    def fill(Path2D: Unit, fillRule: js.Any): Unit = js.native
     def fill(Path2D: Path2D): Unit = js.native
     def fill(Path2D: Path2D, fillRule: js.Any): Unit = js.native
     
@@ -310,96 +307,8 @@ object mod {
     def moveTo(x: Double, y: Double): Unit = js.native
     
     def putImageData(imageData: ImageData, dx: Double, dy: Double): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: js.UndefOr[scala.Nothing],
-      dirtyHeight: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: Double,
-      dirtyHeight: Double
-    ): Unit = js.native
-    def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: js.UndefOr[scala.Nothing], dirtyY: Double): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: Double,
-      dirtyWidth: js.UndefOr[scala.Nothing],
-      dirtyHeight: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: Double,
-      dirtyWidth: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: js.UndefOr[scala.Nothing],
-      dirtyY: Double,
-      dirtyWidth: Double,
-      dirtyHeight: Double
-    ): Unit = js.native
     def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: Double,
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: js.UndefOr[scala.Nothing],
-      dirtyHeight: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: Double,
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: Double
-    ): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: Double,
-      dirtyY: js.UndefOr[scala.Nothing],
-      dirtyWidth: Double,
-      dirtyHeight: Double
-    ): Unit = js.native
     def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double, dirtyY: Double): Unit = js.native
-    def putImageData(
-      imageData: ImageData,
-      dx: Double,
-      dy: Double,
-      dirtyX: Double,
-      dirtyY: Double,
-      dirtyWidth: js.UndefOr[scala.Nothing],
-      dirtyHeight: Double
-    ): Unit = js.native
     def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double, dirtyY: Double, dirtyWidth: Double): Unit = js.native
     def putImageData(
       imageData: ImageData,
@@ -408,6 +317,73 @@ object mod {
       dirtyX: Double,
       dirtyY: Double,
       dirtyWidth: Double,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Double,
+      dirtyY: Double,
+      dirtyWidth: Unit,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double, dirtyY: Unit, dirtyWidth: Double): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Double,
+      dirtyY: Unit,
+      dirtyWidth: Double,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Double,
+      dirtyY: Unit,
+      dirtyWidth: Unit,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Unit, dirtyY: Double): Unit = js.native
+    def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Unit, dirtyY: Double, dirtyWidth: Double): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Unit,
+      dirtyY: Double,
+      dirtyWidth: Double,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Unit,
+      dirtyY: Double,
+      dirtyWidth: Unit,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Unit, dirtyY: Unit, dirtyWidth: Double): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Unit,
+      dirtyY: Unit,
+      dirtyWidth: Double,
+      dirtyHeight: Double
+    ): Unit = js.native
+    def putImageData(
+      imageData: ImageData,
+      dx: Double,
+      dy: Double,
+      dirtyX: Unit,
+      dirtyY: Unit,
+      dirtyWidth: Unit,
       dirtyHeight: Double
     ): Unit = js.native
     
@@ -452,32 +428,31 @@ object mod {
     def translate(x: Double, y: Double): Unit = js.native
   }
   
-  @js.native
   trait DOMMatrix2DInit extends StObject {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
-    var c: js.UndefOr[Double] = js.native
+    var c: js.UndefOr[Double] = js.undefined
     
-    var d: js.UndefOr[Double] = js.native
+    var d: js.UndefOr[Double] = js.undefined
     
-    var e: js.UndefOr[Double] = js.native
+    var e: js.UndefOr[Double] = js.undefined
     
-    var f: js.UndefOr[Double] = js.native
+    var f: js.UndefOr[Double] = js.undefined
     
-    var m11: js.UndefOr[Double] = js.native
+    var m11: js.UndefOr[Double] = js.undefined
     
-    var m12: js.UndefOr[Double] = js.native
+    var m12: js.UndefOr[Double] = js.undefined
     
-    var m21: js.UndefOr[Double] = js.native
+    var m21: js.UndefOr[Double] = js.undefined
     
-    var m22: js.UndefOr[Double] = js.native
+    var m22: js.UndefOr[Double] = js.undefined
     
-    var m41: js.UndefOr[Double] = js.native
+    var m41: js.UndefOr[Double] = js.undefined
     
-    var m42: js.UndefOr[Double] = js.native
+    var m42: js.UndefOr[Double] = js.undefined
   }
   object DOMMatrix2DInit {
     

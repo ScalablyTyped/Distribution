@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorPlugins extends StObject {
   
-  def javaEnabled(): scala.Boolean = js.native
+  def javaEnabled(): scala.Boolean
   
-  val mimeTypes: MimeTypeArray = js.native
+  val mimeTypes: MimeTypeArray
   
-  val plugins: PluginArray = js.native
+  val plugins: PluginArray
 }
 object NavigatorPlugins {
   

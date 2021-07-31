@@ -7,12 +7,10 @@ import typings.materialDataTable.typesMod.SortActionEventDetail
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCDataTableAdapter extends StObject {
     
     /**
@@ -20,7 +18,7 @@ object adapterMod {
       *
       * @param className CSS class name to add to root element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Adds a class name to row element at given row index excluding header row.
@@ -28,32 +26,32 @@ object adapterMod {
       * @param rowIndex Index of row element excluding header row.
       * @param cssClasses CSS Class string to add.
       */
-    def addClassAtRowIndex(rowIndex: Double, cssClasses: String): Unit = js.native
+    def addClassAtRowIndex(rowIndex: Double, cssClasses: String): Unit
     
     /**
       * @return Attribute value for given header cell index.
       */
-    def getAttributeByHeaderCellIndex(columnIndex: Double, attribute: String): String | Null = js.native
+    def getAttributeByHeaderCellIndex(columnIndex: Double, attribute: String): String | Null
     
     /**
       * @return Total count of header cells.
       */
-    def getHeaderCellCount(): Double = js.native
+    def getHeaderCellCount(): Double
     
     /**
       * @return Array of header cell elements.
       */
-    def getHeaderCellElements(): js.Array[Element] = js.native
+    def getHeaderCellElements(): js.Array[Element]
     
     /**
       * @return Row count excluding header row.
       */
-    def getRowCount(): Double = js.native
+    def getRowCount(): Double
     
     /**
       * @return Array of row elements excluding header row.
       */
-    def getRowElements(): js.Array[Element] = js.native
+    def getRowElements(): js.Array[Element]
     
     /**
       * Returns row id of row element at given row index based on `data-row-id` attribute on row element `tr`.
@@ -61,7 +59,7 @@ object adapterMod {
       * @param rowIndex Index of row element.
       * @return Row id of row element, returns `null` in absence of `data-row-id` attribute on row element.
       */
-    def getRowIdAtIndex(rowIndex: Double): String | Null = js.native
+    def getRowIdAtIndex(rowIndex: Double): String | Null
     
     /**
       * Returns index of row element that contains give child element. Returns -1 if element is not child of any row
@@ -70,80 +68,80 @@ object adapterMod {
       * @param el Child element of row element.
       * @return Index of row element.
       */
-    def getRowIndexByChildElement(el: Element): Double = js.native
+    def getRowIndexByChildElement(el: Element): Double
     
     /**
       * @return Selected row count.
       */
-    def getSelectedRowCount(): Double = js.native
+    def getSelectedRowCount(): Double
     
     /**
       * @return Returns computed styles height of table container element.
       */
-    def getTableContainerHeight(): Double = js.native
+    def getTableContainerHeight(): Double
     
     /**
       * @return Returns computed styles height of table's header element.
       */
-    def getTableHeaderHeight(): Double = js.native
+    def getTableHeaderHeight(): Double
     
     /**
       * @param rowIndex Index of row element.
       * @return True if row checkbox at given row index is checked.
       */
-    def isCheckboxAtRowIndexChecked(rowIndex: Double): Boolean = js.native
+    def isCheckboxAtRowIndexChecked(rowIndex: Double): Boolean
     
     /**
       * @return True if header row checkbox is checked.
       */
-    def isHeaderRowCheckboxChecked(): Boolean = js.native
+    def isHeaderRowCheckboxChecked(): Boolean
     
     /**
       * @return True if table rows are selectable.
       */
-    def isRowsSelectable(): Boolean = js.native
+    def isRowsSelectable(): Boolean
     
     /**
       * Notifies when row selection is changed.
       *
       * @param data Event detail data for row selection changed event.
       */
-    def notifyRowSelectionChanged(data: MDCDataTableRowSelectionChangedEventDetail): Unit = js.native
+    def notifyRowSelectionChanged(data: MDCDataTableRowSelectionChangedEventDetail): Unit
     
     /**
       * Notifies when header row is checked.
       */
-    def notifySelectedAll(): Unit = js.native
+    def notifySelectedAll(): Unit
     
     /**
       * Notifies when column is sorted.
       */
-    def notifySortAction(data: SortActionEventDetail): Unit = js.native
+    def notifySortAction(data: SortActionEventDetail): Unit
     
     /**
       * Notifies when header row is unchecked.
       */
-    def notifyUnselectedAll(): Unit = js.native
+    def notifyUnselectedAll(): Unit
     
     /**
       * Initializes header row checkbox. Destroys previous header row checkbox instance if any.
       * @return Can return Promise only if registering checkbox is asynchronous.
       */
-    def registerHeaderRowCheckbox(): js.Promise[Unit] | Unit = js.native
+    def registerHeaderRowCheckbox(): js.Promise[Unit] | Unit
     
     /**
       * Initializes all row checkboxes. Destroys previous row checkbox instances if any. This is usually called when row
       * checkboxes are added or removed from table.
       * @return Can return Promise only if registering checkbox is asynchronous.
       */
-    def registerRowCheckboxes(): js.Promise[Unit] | Unit = js.native
+    def registerRowCheckboxes(): js.Promise[Unit] | Unit
     
     /**
       * Removes CSS class name from root element.
       *
       * @param className CSS class name to add to root element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Removes class name from row element at give row index.
@@ -151,12 +149,12 @@ object adapterMod {
       * @param rowIndex Index of row element excluding header row element.
       * @param cssClasses Class name string.
       */
-    def removeClassAtRowIndex(rowIndex: Double, cssClasses: String): Unit = js.native
+    def removeClassAtRowIndex(rowIndex: Double, cssClasses: String): Unit
     
     /**
       * Removes a class name of a header cell by index.
       */
-    def removeClassNameByHeaderCellIndex(columnIndex: Double, className: String): Unit = js.native
+    def removeClassNameByHeaderCellIndex(columnIndex: Double, className: String): Unit
     
     /**
       * Sets attribute to row element at given row index.
@@ -165,36 +163,36 @@ object adapterMod {
       * @param attr Name of attribute.
       * @param value Value of attribute.
       */
-    def setAttributeAtRowIndex(rowIndex: Double, attr: String, value: String): Unit = js.native
+    def setAttributeAtRowIndex(rowIndex: Double, attr: String, value: String): Unit
     
     /**
       * Sets attribute of a header cell by index.
       */
-    def setAttributeByHeaderCellIndex(columnIndex: Double, attribute: String, value: String): Unit = js.native
+    def setAttributeByHeaderCellIndex(columnIndex: Double, attribute: String, value: String): Unit
     
     /**
       * Sets class name of a header cell by index.
       */
-    def setClassNameByHeaderCellIndex(columnIndex: Double, className: String): Unit = js.native
+    def setClassNameByHeaderCellIndex(columnIndex: Double, className: String): Unit
     
     /**
       * Sets header row checkbox checked or unchecked.
       *
       * @param checked True to set header row checkbox checked.
       */
-    def setHeaderRowCheckboxChecked(checked: Boolean): Unit = js.native
+    def setHeaderRowCheckboxChecked(checked: Boolean): Unit
     
     /**
       * Sets header row checkbox to indeterminate.
       *
       * @param indeterminate True to set header row checkbox indeterminate.
       */
-    def setHeaderRowCheckboxIndeterminate(indeterminate: Boolean): Unit = js.native
+    def setHeaderRowCheckboxIndeterminate(indeterminate: Boolean): Unit
     
     /**
       * Sets progress indicator CSS styles to position it on top of table body.
       */
-    def setProgressIndicatorStyles(styles: ProgressIndicatorStyles): Unit = js.native
+    def setProgressIndicatorStyles(styles: ProgressIndicatorStyles): Unit
     
     /**
       * Sets row checkbox to checked or unchecked at given row index.
@@ -202,7 +200,7 @@ object adapterMod {
       * @param rowIndex Index of row element excluding header row element.
       * @param checked True to set checked.
       */
-    def setRowCheckboxCheckedAtIndex(rowIndex: Double, checked: Boolean): Unit = js.native
+    def setRowCheckboxCheckedAtIndex(rowIndex: Double, checked: Boolean): Unit
     
     /**
       * Sets appropriate sort status label by header cell index. Skips setting sort
@@ -214,7 +212,7 @@ object adapterMod {
       *   - `SortValue.DESCENDING`: 'Sorted in descending order'
       *   - `SortValue.NONE`: '' (Empty string)
       */
-    def setSortStatusLabelByHeaderCellIndex(columnIndex: Double, sortValue: SortValue): Unit = js.native
+    def setSortStatusLabelByHeaderCellIndex(columnIndex: Double, sortValue: SortValue): Unit
   }
   object MDCDataTableAdapter {
     

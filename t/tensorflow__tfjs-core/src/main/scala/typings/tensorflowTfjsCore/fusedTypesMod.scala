@@ -7,7 +7,6 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fusedTypesMod {
@@ -38,22 +37,21 @@ object fusedTypesMod {
     def relu6: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6]
   }
   
-  @js.native
   trait FusedBatchMatMulConfig extends StObject {
     
-    var a: Tensor3D = js.native
+    var a: Tensor3D
     
-    var activation: js.UndefOr[Activation] = js.native
+    var activation: js.UndefOr[Activation] = js.undefined
     
-    var b: Tensor3D = js.native
+    var b: Tensor3D
     
-    var bias: js.UndefOr[Tensor[Rank]] = js.native
+    var bias: js.UndefOr[Tensor[Rank]] = js.undefined
     
-    var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.native
+    var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
     
-    var transposeA: Boolean = js.native
+    var transposeA: Boolean
     
-    var transposeB: Boolean = js.native
+    var transposeB: Boolean
   }
   object FusedBatchMatMulConfig {
     
@@ -98,20 +96,19 @@ object fusedTypesMod {
     }
   }
   
-  @js.native
   trait FusedConv2DConfig extends StObject {
     
-    var activation: js.UndefOr[Activation] = js.native
+    var activation: js.UndefOr[Activation] = js.undefined
     
-    var bias: js.UndefOr[Tensor[Rank]] = js.native
+    var bias: js.UndefOr[Tensor[Rank]] = js.undefined
     
-    var convInfo: Conv2DInfo = js.native
+    var convInfo: Conv2DInfo
     
-    var filter: Tensor4D = js.native
+    var filter: Tensor4D
     
-    var input: Tensor4D = js.native
+    var input: Tensor4D
     
-    var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.native
+    var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   }
   object FusedConv2DConfig {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerPolicies extends StObject {
   
   /**
     * The stickiness policies that are created using CreateAppCookieStickinessPolicy.
     */
-  var AppCookieStickinessPolicies: js.UndefOr[AwsElbAppCookieStickinessPolicies] = js.native
+  var AppCookieStickinessPolicies: js.UndefOr[AwsElbAppCookieStickinessPolicies] = js.undefined
   
   /**
     * The stickiness policies that are created using CreateLBCookieStickinessPolicy.
     */
-  var LbCookieStickinessPolicies: js.UndefOr[AwsElbLbCookieStickinessPolicies] = js.native
+  var LbCookieStickinessPolicies: js.UndefOr[AwsElbLbCookieStickinessPolicies] = js.undefined
   
   /**
     * The policies other than the stickiness policies.
     */
-  var OtherPolicies: js.UndefOr[StringList] = js.native
+  var OtherPolicies: js.UndefOr[StringList] = js.undefined
 }
 object AwsElbLoadBalancerPolicies {
   

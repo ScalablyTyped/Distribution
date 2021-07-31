@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.Devices
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Analog-Digital Converter, or ADC, is an electrical component that converts an analog electrical signal (usually voltage) to a digital representation. ADCs usually interface a digital circuit that processes signals from analog world. */
@@ -18,11 +17,15 @@ object Adc {
     
     /** Difference between two pins. */
     @js.native
-    sealed trait differential extends AdcChannelMode
+    sealed trait differential
+      extends StObject
+         with AdcChannelMode
     
     /** Simple value of a particular pin. */
     @js.native
-    sealed trait singleEnded extends AdcChannelMode
+    sealed trait singleEnded
+      extends StObject
+         with AdcChannelMode
   }
   
   /** This API exposes a Provider interface for the user to implement for a specific controller. The ADC API needs a ADC Provider implementation to talk to the ADC controller. */
@@ -37,57 +40,60 @@ object Adc {
       
       /** Difference between two pins. */
       @js.native
-      sealed trait differential extends ProviderAdcChannelMode
+      sealed trait differential
+        extends StObject
+           with ProviderAdcChannelMode
       
       /** Simple value of a particular pin. */
       @js.native
-      sealed trait singleEnded extends ProviderAdcChannelMode
+      sealed trait singleEnded
+        extends StObject
+           with ProviderAdcChannelMode
     }
     
     /** Represents properties and methods common to all ADC controllers. */
-    @js.native
     trait IAdcControllerProvider extends StObject {
       
       /**
         * Acquires a connection to the specified channel.
         * @param channel Which channel to connect to.
         */
-      def acquireChannel(channel: Double): Unit = js.native
+      def acquireChannel(channel: Double): Unit
       
       /** Gets the number of channels available on for the controller. */
-      var channelCount: Double = js.native
+      var channelCount: Double
       
       /** Gets or sets the controller channel mode. */
-      var channelMode: ProviderAdcChannelMode = js.native
+      var channelMode: ProviderAdcChannelMode
       
       /**
         * Determines if the specified channel mode is supported by the controller.
         * @param channelMode The channel mode in question.
         * @return True if the specified channel mode is supported, otherwise false.
         */
-      def isChannelModeSupported(channelMode: ProviderAdcChannelMode): Boolean = js.native
+      def isChannelModeSupported(channelMode: ProviderAdcChannelMode): Boolean
       
       /** Gets the maximum value that the controller can return. */
-      var maxValue: Double = js.native
+      var maxValue: Double
       
       /** Gets the minimum value that the controller can return. */
-      var minValue: Double = js.native
+      var minValue: Double
       
       /**
         * Gets the digital representation of the analog value on the specified channel.
         * @param channelNumber Which channel to read from.
         * @return The digital representation of the analog value.
         */
-      def readValue(channelNumber: Double): Double = js.native
+      def readValue(channelNumber: Double): Double
       
       /**
         * Releases the channel connection, opening that channel for others to use.
         * @param channel Which channel to close the connection to.
         */
-      def releaseChannel(channel: Double): Unit = js.native
+      def releaseChannel(channel: Double): Unit
       
       /** Gets the resolution of the controller as number of bits it has. */
-      var resolutionInBits: Double = js.native
+      var resolutionInBits: Double
     }
     object IAdcControllerProvider {
       
@@ -140,14 +146,13 @@ object Adc {
     }
     
     /** Represents methods common to all ADC providers. */
-    @js.native
     trait IAdcProvider extends StObject {
       
       /**
         * Gets the ADC controllers available on the system.
         * @return When this method completes it returns a list of all the available controllers on the system.
         */
-      def getControllers(): IVectorView[IAdcControllerProvider] = js.native
+      def getControllers(): IVectorView[IAdcControllerProvider]
     }
     object IAdcProvider {
       
@@ -167,26 +172,25 @@ object Adc {
   }
   
   /** Represents a single ADC channel. */
-  @js.native
   trait AdcChannel extends StObject {
     
     /** Closes the connection on this channel, making it available to be opened by others. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Gets the ADC controller for this channel. */
-    var controller: AdcController = js.native
+    var controller: AdcController
     
     /**
       * Reads the value as a percentage of the max value possible for this controller.
       * @return The value as percentage of the max value.
       */
-    def readRatio(): Double = js.native
+    def readRatio(): Double
     
     /**
       * Reads the digital representation of the analog value from the ADC.
       * @return The digital value.
       */
-    def readValue(): Double = js.native
+    def readValue(): Double
   }
   object AdcChannel {
     
@@ -214,37 +218,36 @@ object Adc {
   }
   
   /** Represents an ADC controller on the system */
-  @js.native
   trait AdcController extends StObject {
     
     /** The number of channels available on the ADC controller. */
-    var channelCount: Double = js.native
+    var channelCount: Double
     
     /** Gets or sets the channel mode for the ADC controller. */
-    var channelMode: AdcChannelMode = js.native
+    var channelMode: AdcChannelMode
     
     /**
       * Verifies that the specified channel mode is supported by the controller.
       * @param channelMode The channel mode.
       * @return True if the specified channel mode is supported, otherwise false.
       */
-    def isChannelModeSupported(channelMode: AdcChannelMode): Boolean = js.native
+    def isChannelModeSupported(channelMode: AdcChannelMode): Boolean
     
     /** Gets the maximum value that the controller can report. */
-    var maxValue: Double = js.native
+    var maxValue: Double
     
     /** The minimum value the controller can report. */
-    var minValue: Double = js.native
+    var minValue: Double
     
     /**
       * Opens a connection to the specified ADC channel.
       * @param channelNumber The channel to connect to.
       * @return The ADC channel.
       */
-    def openChannel(channelNumber: Double): AdcChannel = js.native
+    def openChannel(channelNumber: Double): AdcChannel
     
     /** Gets the resolution of the controller as number of bits it has. For example, if we have a 10-bit ADC, that means it can detect 1024 (2^10) discrete levels. */
-    var resolutionInBits: Double = js.native
+    var resolutionInBits: Double
   }
   object AdcController {
     

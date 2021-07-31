@@ -2,15 +2,13 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Register extends StObject {
   
-  def register(key: String): Unit = js.native
+  def register(key: String): Unit
   
-  def unregister(key: String): Unit = js.native
+  def unregister(key: String): Unit
 }
 object Register {
   

@@ -11,8 +11,8 @@ converts a JS object into a nice and readable tree structure for the console
 | Full name          | treeify |
 | Keywords           | object, tree, print, console, pretty |
 | # releases         | 0 |
-| # dependents       | 141 |
-| # downloads        | 33184876 |
+| # dependents       | 147 |
+| # downloads        | 43168856 |
 | # stars            | 6 |
 
 ## Links

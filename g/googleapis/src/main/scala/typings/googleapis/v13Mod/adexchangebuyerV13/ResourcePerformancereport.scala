@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Performancereport")
@@ -34,7 +33,7 @@ class ResourcePerformancereport protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPerformanceReportList] = js.native
   def list(callback: BodyResponseCallback[SchemaPerformanceReportList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerformanceReportList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPerformanceReportList] = js.native
   def list(params: ParamsResourcePerformancereportList): GaxiosPromise[SchemaPerformanceReportList] = js.native
   def list(
     params: ParamsResourcePerformancereportList,

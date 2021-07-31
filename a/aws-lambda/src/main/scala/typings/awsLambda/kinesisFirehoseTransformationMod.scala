@@ -4,23 +4,21 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisFirehoseTransformationMod {
   
-  @js.native
   trait FirehoseRecordMetadata extends StObject {
     
-    var approximateArrivalTimestamp: Double = js.native
+    var approximateArrivalTimestamp: Double
     
-    var partitionKey: String = js.native
+    var partitionKey: String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
     
-    var shardId: String = js.native
+    var shardId: String
     
-    var subsequenceNumber: String = js.native
+    var subsequenceNumber: String
   }
   object FirehoseRecordMetadata {
     
@@ -76,16 +74,15 @@ object kinesisFirehoseTransformationMod {
   
   type FirehoseTransformationCallback = Callback[FirehoseTransformationResult]
   
-  @js.native
   trait FirehoseTransformationEvent extends StObject {
     
-    var deliveryStreamArn: String = js.native
+    var deliveryStreamArn: String
     
-    var invocationId: String = js.native
+    var invocationId: String
     
-    var records: js.Array[FirehoseTransformationEventRecord] = js.native
+    var records: js.Array[FirehoseTransformationEventRecord]
     
-    var region: String = js.native
+    var region: String
   }
   object FirehoseTransformationEvent {
     
@@ -120,17 +117,16 @@ object kinesisFirehoseTransformationMod {
     }
   }
   
-  @js.native
   trait FirehoseTransformationEventRecord extends StObject {
     
-    var approximateArrivalTimestamp: Double = js.native
+    var approximateArrivalTimestamp: Double
     
     /** Base64 encoded */
-    var data: String = js.native
+    var data: String
     
-    var kinesisRecordMetadata: js.UndefOr[FirehoseRecordMetadata] = js.native
+    var kinesisRecordMetadata: js.UndefOr[FirehoseRecordMetadata] = js.undefined
     
-    var recordId: String = js.native
+    var recordId: String
   }
   object FirehoseTransformationEventRecord {
     
@@ -162,10 +158,9 @@ object kinesisFirehoseTransformationMod {
   
   type FirehoseTransformationHandler = Handler[FirehoseTransformationEvent, FirehoseTransformationResult]
   
-  @js.native
   trait FirehoseTransformationResult extends StObject {
     
-    var records: js.Array[FirehoseTransformationResultRecord] = js.native
+    var records: js.Array[FirehoseTransformationResultRecord]
   }
   object FirehoseTransformationResult {
     
@@ -186,15 +181,14 @@ object kinesisFirehoseTransformationMod {
     }
   }
   
-  @js.native
   trait FirehoseTransformationResultRecord extends StObject {
     
     /** Encode in Base64 */
-    var data: String = js.native
+    var data: String
     
-    var recordId: String = js.native
+    var recordId: String
     
-    var result: FirehoseRecordTransformationStatus = js.native
+    var result: FirehoseRecordTransformationStatus
   }
   object FirehoseTransformationResultRecord {
     

@@ -5,24 +5,24 @@ import typings.extjs.Ext.util.IObservable
 import typings.extjs.Ext.view.ITable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feature {
   
-  @js.native
-  trait IAbstractSummary extends IFeature {
+  trait IAbstractSummary
+    extends StObject
+       with IFeature {
     
     /** [Config Option] (String) */
-    var remoteRoot: js.UndefOr[String] = js.native
+    var remoteRoot: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showSummaryRow: js.UndefOr[Boolean] = js.native
+    var showSummaryRow: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Toggle whether or not to show the summary row
       * @param visible Boolean True to show the summary row
       */
-    var toggleSummaryRow: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], Unit]] = js.native
+    var toggleSummaryRow: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IAbstractSummary {
     
@@ -55,23 +55,24 @@ object feature {
     }
   }
   
-  @js.native
-  trait IFeature extends IObservable {
+  trait IFeature
+    extends StObject
+       with IObservable {
     
     /** [Method] Disables the feature  */
-    var disable: js.UndefOr[js.Function0[Unit]] = js.native
+    var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Enables the feature  */
-    var enable: js.UndefOr[js.Function0[Unit]] = js.native
+    var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (String) */
-    var eventPrefix: js.UndefOr[String] = js.native
+    var eventPrefix: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var eventSelector: js.UndefOr[String] = js.native
+    var eventSelector: js.UndefOr[String] = js.undefined
     
     /** [Method] Abstract method to be overriden when a feature should add additional arguments to its event signature
       * @param eventName Object
@@ -87,16 +88,16 @@ object feature {
           /* e */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Ext.grid.Panel) */
-    var grid: js.UndefOr[IPanel] = js.native
+    var grid: js.UndefOr[IPanel] = js.undefined
     
     /** [Property] (Boolean) */
-    var hasFeatureEvent: js.UndefOr[Boolean] = js.native
+    var hasFeatureEvent: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Ext.view.Table) */
-    var view: js.UndefOr[ITable] = js.native
+    var view: js.UndefOr[ITable] = js.undefined
   }
   object IFeature {
     
@@ -167,14 +168,15 @@ object feature {
     }
   }
   
-  @js.native
-  trait IGroupStore extends IObservable {
+  trait IGroupStore
+    extends StObject
+       with IObservable {
     
     /** [Method] Get the index within the entire dataset
       * @param record Ext.data.Model The Ext.data.Model object to find.
       * @returns Number The index of the passed Record. Returns -1 if not found.
       */
-    var indexOfTotal: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.native
+    var indexOfTotal: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.undefined
   }
   object IGroupStore {
     
@@ -195,8 +197,9 @@ object feature {
     }
   }
   
-  @js.native
-  trait IGrouping extends IAbstractSummary {
+  trait IGrouping
+    extends StObject
+       with IAbstractSummary {
     
     /** [Method] Collapse a group
       * @param groupName String The group name
@@ -204,22 +207,22 @@ object feature {
       */
     var collapse: js.UndefOr[
         js.Function2[/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Collapse all groups */
-    var collapseAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var collapseAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var depthToIndent: js.UndefOr[Double] = js.native
+    var depthToIndent: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableGroupingMenu: js.UndefOr[Boolean] = js.native
+    var enableGroupingMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableNoGroups: js.UndefOr[Boolean] = js.native
+    var enableNoGroups: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Expand a group
       * @param groupName String The group name
@@ -227,37 +230,37 @@ object feature {
       */
     var expand: js.UndefOr[
         js.Function2[/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expand all groups */
-    var expandAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var expandAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the group data object for the group to which the passed record belongs if the Store is grouped
       * @param record Ext.data.Model The record for which to return group information.
       * @returns Object A single group data block as returned from Store.getGroups. Returns undefined if the Store is not grouped.
       */
-    var getRecordGroup: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], _]] = js.native
+    var getRecordGroup: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var groupByText: js.UndefOr[String] = js.native
+    var groupByText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String/Array/Ext.Template) */
-    var groupHeaderTpl: js.UndefOr[js.Any] = js.native
+    var groupHeaderTpl: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideGroupedHeader: js.UndefOr[Boolean] = js.native
+    var hideGroupedHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns true if the named group is expanded
       * @param groupName String The group name as returned from getGroupString. This is usually the value of the groupField.
       * @returns Boolean true if the group defined by that value is expanded.
       */
-    var isExpanded: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], Boolean]] = js.native
+    var isExpanded: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var showGroupsText: js.UndefOr[String] = js.native
+    var showGroupsText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var startCollapsed: js.UndefOr[Boolean] = js.native
+    var startCollapsed: js.UndefOr[Boolean] = js.undefined
   }
   object IGrouping {
     
@@ -319,7 +322,7 @@ object feature {
       def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
       @scala.inline
-      def setGetRecordGroup(value: /* record */ js.UndefOr[IModel] => _): Self = StObject.set(x, "getRecordGroup", js.Any.fromFunction1(value))
+      def setGetRecordGroup(value: /* record */ js.UndefOr[IModel] => js.Any): Self = StObject.set(x, "getRecordGroup", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetRecordGroupUndefined: Self = StObject.set(x, "getRecordGroup", js.undefined)
@@ -362,8 +365,9 @@ object feature {
     }
   }
   
-  @js.native
-  trait IGroupingSummary extends IGrouping
+  trait IGroupingSummary
+    extends StObject
+       with IGrouping
   object IGroupingSummary {
     
     @scala.inline
@@ -373,8 +377,9 @@ object feature {
     }
   }
   
-  @js.native
-  trait IRowBody extends IFeature {
+  trait IRowBody
+    extends StObject
+       with IFeature {
     
     /** [Method] Provides additional data to the prepareData call within the grid view
       * @param data Object The data for this particular record.
@@ -390,7 +395,7 @@ object feature {
           /* orig */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IRowBody {
     
@@ -413,8 +418,9 @@ object feature {
     }
   }
   
-  @js.native
-  trait IRowWrap extends IFeature
+  trait IRowWrap
+    extends StObject
+       with IFeature
   object IRowWrap {
     
     @scala.inline
@@ -424,11 +430,12 @@ object feature {
     }
   }
   
-  @js.native
-  trait ISummary extends IAbstractSummary {
+  trait ISummary
+    extends StObject
+       with IAbstractSummary {
     
     /** [Config Option] (String) */
-    var dock: js.UndefOr[String] = js.native
+    var dock: js.UndefOr[String] = js.undefined
   }
   object ISummary {
     

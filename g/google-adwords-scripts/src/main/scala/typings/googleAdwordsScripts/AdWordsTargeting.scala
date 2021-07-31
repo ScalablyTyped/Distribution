@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsTargeting[A, E] extends StObject {
   
-  def audiences(): AdWordsSelector[A] = js.native
+  def audiences(): AdWordsSelector[A]
   
-  def exculdedAudiences(): AdWordsSelector[E] = js.native
+  def exculdedAudiences(): AdWordsSelector[E]
 }
 object AdWordsTargeting {
   
@@ -21,7 +19,7 @@ object AdWordsTargeting {
   }
   
   @scala.inline
-  implicit class AdWordsTargetingMutableBuilder[Self <: AdWordsTargeting[_, _], A, E] (val x: Self with (AdWordsTargeting[A, E])) extends AnyVal {
+  implicit class AdWordsTargetingMutableBuilder[Self <: AdWordsTargeting[?, ?], A, E] (val x: Self & (AdWordsTargeting[A, E])) extends AnyVal {
     
     @scala.inline
     def setAudiences(value: () => AdWordsSelector[A]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))

@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.rotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CompassViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with GoTo {
   
   /**

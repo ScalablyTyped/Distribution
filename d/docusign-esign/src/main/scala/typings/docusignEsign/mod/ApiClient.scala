@@ -6,7 +6,6 @@ import typings.docusignEsign.anon.CSV
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "ApiClient")
@@ -18,7 +17,7 @@ class ApiClient protected () extends StObject {
   
   def applyAuthToRequest(request: js.Any, authNames: js.Array[String]): Unit = js.native
   
-  def buildCollectionParam(param: js.Array[_], collectionFormat: js.Any): js.Array[String] = js.native
+  def buildCollectionParam(param: js.Array[js.Any], collectionFormat: js.Any): js.Array[String] = js.native
   
   def buildUrl(path: String, pathParams: js.Any): String = js.native
   
@@ -34,7 +33,7 @@ class ApiClient protected () extends StObject {
     contentTypes: js.Array[String],
     accepts: js.Array[String],
     returnType: js.Any
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   def callApi(
     path: String,
     httpMethod: String,
@@ -48,12 +47,12 @@ class ApiClient protected () extends StObject {
     accepts: js.Array[String],
     returnType: js.Any,
     callback: js.Function0[Unit]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   
   def deserialize(response: js.Object, returnType: js.Any): js.Any = js.native
   
-  def generateAccessToken(clientId: String, clientSecret: String, code: String): js.Promise[_] = js.native
-  def generateAccessToken(clientId: String, clientSecret: String, code: String, callback: js.Function0[Unit]): js.Promise[_] = js.native
+  def generateAccessToken(clientId: String, clientSecret: String, code: String): js.Promise[js.Any] = js.native
+  def generateAccessToken(clientId: String, clientSecret: String, code: String, callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
   
   def getAuthorizationUri(
     clientId: String,
@@ -69,8 +68,8 @@ class ApiClient protected () extends StObject {
   
   def getOAuthBasePath(): String = js.native
   
-  def getUserInfo(accessToken: String): js.Promise[_] = js.native
-  def getUserInfo(accessToken: String, callback: js.Function0[Unit]): js.Promise[_] = js.native
+  def getUserInfo(accessToken: String): js.Promise[js.Any] = js.native
+  def getUserInfo(accessToken: String, callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
   
   def hasNoInvalidScopes(scopes: js.Array[String]): Boolean = js.native
   
@@ -84,14 +83,14 @@ class ApiClient protected () extends StObject {
   
   def paramToString(param: js.Any): String = js.native
   
-  def requestJWTApplicationToken(clientId: String, scopes: js.Array[String], rsaPrivateKey: Buffer, expiresIn: Double): js.Promise[_] = js.native
+  def requestJWTApplicationToken(clientId: String, scopes: js.Array[String], rsaPrivateKey: Buffer, expiresIn: Double): js.Promise[js.Any] = js.native
   def requestJWTApplicationToken(
     clientId: String,
     scopes: js.Array[String],
     rsaPrivateKey: Buffer,
     expiresIn: Double,
     callback: js.Function0[Unit]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   
   def requestJWTUserToken(
     clientId: String,
@@ -99,7 +98,7 @@ class ApiClient protected () extends StObject {
     scopes: js.Array[String],
     rsaPrivateKey: Buffer,
     expiresIn: Double
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   def requestJWTUserToken(
     clientId: String,
     userId: String,
@@ -107,7 +106,7 @@ class ApiClient protected () extends StObject {
     rsaPrivateKey: Buffer,
     expiresIn: Double,
     callback: js.Function0[Unit]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   
   def setBasePath(basePath: String): Unit = js.native
   
@@ -218,15 +217,12 @@ object ApiClient {
   @scala.inline
   def RestApi_=(x: BasePathDEMO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApi")(x.asInstanceOf[js.Any])
   
-  @JSImport("docusign-esign", "ApiClient.constructFromObject")
-  @js.native
-  def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = js.native
+  @scala.inline
+  def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructFromObject")(data.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], itemType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("docusign-esign", "ApiClient.convertToType")
-  @js.native
-  def convertToType(data: js.Any, `type`: js.Any): js.Any = js.native
+  @scala.inline
+  def convertToType(data: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToType")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("docusign-esign", "ApiClient.parseDate")
-  @js.native
-  def parseDate(str: String): Date = js.native
+  @scala.inline
+  def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

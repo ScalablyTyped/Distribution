@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorInformation extends StObject {
   
   /**
     * The actual color value for this color range.
     */
-  var color: Color = js.native
+  var color: Color
   
   /**
     * The range in the document where this color appers.
     */
-  var range: Range = js.native
+  var range: Range
 }
 object ColorInformation {
   
@@ -26,19 +24,21 @@ object ColorInformation {
     __obj.asInstanceOf[ColorInformation]
   }
   
+  @JSImport("vscode-languageserver-types", "ColorInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ColorInformation literal.
     */
-  @JSImport("vscode-languageserver-types", "ColorInformation.create")
-  @js.native
-  def create(range: Range, color: Color): ColorInformation = js.native
+  @scala.inline
+  def create(range: Range, color: Color): ColorInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ColorInformation]
   
   /**
     * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
     */
-  @JSImport("vscode-languageserver-types", "ColorInformation.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
   
   @scala.inline
   implicit class ColorInformationMutableBuilder[Self <: ColorInformation] (val x: Self) extends AnyVal {

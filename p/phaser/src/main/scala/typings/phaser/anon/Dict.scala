@@ -3,14 +3,13 @@ package typings.phaser.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dict
-  extends /* _ */ StringDictionary[js.Any] {
+  extends StObject
+     with /* _ */ StringDictionary[js.Any] {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Dict {
   

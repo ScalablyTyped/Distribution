@@ -2,14 +2,12 @@ package typings.reactColor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<reactcss.reactcss.Classes<react-color.react-color/lib/components/github/Github.GithubPickerStylesProps>> */
-@js.native
 trait PartialClassesGithubPicke extends StObject {
   
-  var default: js.UndefOr[PartialGithubPickerStyles] = js.native
+  var default: js.UndefOr[PartialGithubPickerStyles] = js.undefined
 }
 object PartialClassesGithubPicke {
   

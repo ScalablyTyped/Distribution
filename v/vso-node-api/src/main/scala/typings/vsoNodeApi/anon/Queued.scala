@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queued extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var queued: scala.Double = js.native
+  var queued: scala.Double
   
-  var running: scala.Double = js.native
+  var running: scala.Double
 }
 object Queued {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpec extends StObject {
   
   /**
     * A reference to an object that represents the defaults for backends.
     */
-  var backendDefaults: js.UndefOr[BackendDefaults] = js.native
+  var backendDefaults: js.UndefOr[BackendDefaults] = js.undefined
   
   /**
     * The backends that the virtual node is expected to send outbound traffic to.
     */
-  var backends: js.UndefOr[Backends] = js.native
+  var backends: js.UndefOr[Backends] = js.undefined
   
   /**
     * The listener that the virtual node is expected to receive inbound traffic from. You can specify one listener.
     */
-  var listeners: js.UndefOr[Listeners] = js.native
+  var listeners: js.UndefOr[Listeners] = js.undefined
   
   /**
     * The inbound and outbound access logging information for the virtual node.
     */
-  var logging: js.UndefOr[Logging] = js.native
+  var logging: js.UndefOr[Logging] = js.undefined
   
   /**
     * The service discovery information for the virtual node. If your virtual node does not expect ingress traffic, you can omit this parameter. If you specify a listener, then you must specify service discovery information.
     */
-  var serviceDiscovery: js.UndefOr[ServiceDiscovery] = js.native
+  var serviceDiscovery: js.UndefOr[ServiceDiscovery] = js.undefined
 }
 object VirtualNodeSpec {
   

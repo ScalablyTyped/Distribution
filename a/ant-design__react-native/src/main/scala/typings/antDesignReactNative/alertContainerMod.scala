@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertContainerMod {
@@ -27,18 +26,17 @@ object alertContainerMod {
     def onClose(): Unit = js.native
   }
   
-  @js.native
   trait AlertContainerProps extends StObject {
     
-    var actions: js.Array[Action[TextStyle]] = js.native
+    var actions: js.Array[Action[TextStyle]]
     
-    var content: ReactNode = js.native
+    var content: ReactNode
     
-    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var onBackHandler: js.UndefOr[CallbackOnBackHandler] = js.native
+    var onBackHandler: js.UndefOr[CallbackOnBackHandler] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object AlertContainerProps {
     

@@ -9,7 +9,6 @@ import typings.reduxForm.fieldMod.Validator
 import typings.reduxForm.fieldMod.WrappedFieldProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldsMod {
@@ -17,32 +16,31 @@ object fieldsMod {
   @JSImport("redux-form/lib/Fields", "Fields")
   @js.native
   class Fields[P] protected () extends GenericFields[P] {
-    def this(props: BaseFieldsProps[P] with P) = this()
+    def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BaseFieldsProps[P] with P, context: js.Any) = this()
+    def this(props: BaseFieldsProps[P] & P, context: js.Any) = this()
   }
   
-  @js.native
   trait BaseFieldsProps[P] extends StObject {
     
-    var component: js.UndefOr[ComponentType[_]] = js.native
+    var component: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var format: js.UndefOr[Formatter | Null] = js.native
+    var format: js.UndefOr[Formatter | Null] = js.undefined
     
-    var forwardRef: js.UndefOr[Boolean] = js.native
+    var forwardRef: js.UndefOr[Boolean] = js.undefined
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var parse: js.UndefOr[Parser] = js.native
+    var parse: js.UndefOr[Parser] = js.undefined
     
-    var props: js.UndefOr[P] = js.native
+    var props: js.UndefOr[P] = js.undefined
     
-    var validate: js.UndefOr[FieldsWarnerOrValidator] = js.native
+    var validate: js.UndefOr[FieldsWarnerOrValidator] = js.undefined
     
-    var warn: js.UndefOr[FieldsWarnerOrValidator] = js.native
+    var warn: js.UndefOr[FieldsWarnerOrValidator] = js.undefined
   }
   object BaseFieldsProps {
     
@@ -53,10 +51,10 @@ object fieldsMod {
     }
     
     @scala.inline
-    implicit class BaseFieldsPropsMutableBuilder[Self <: BaseFieldsProps[_], P] (val x: Self with BaseFieldsProps[P]) extends AnyVal {
+    implicit class BaseFieldsPropsMutableBuilder[Self <: BaseFieldsProps[?], P] (val x: Self & BaseFieldsProps[P]) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -128,11 +126,11 @@ object fieldsMod {
   
   @js.native
   trait GenericFields[P]
-    extends Component[BaseFieldsProps[P] with P, js.Object, js.Any] {
+    extends Component[BaseFieldsProps[P] & P, js.Object, js.Any] {
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[BaseFieldsProps[js.Object] with WrappedFieldsProps with P, js.Object, _] = js.native
+    def getRenderedComponent(): Component[BaseFieldsProps[js.Object] & WrappedFieldsProps & P, js.Object, js.Any] = js.native
     
     var names: js.Array[String] = js.native
     
@@ -141,8 +139,9 @@ object fieldsMod {
     var values: StringDictionary[js.Any] = js.native
   }
   
-  @js.native
-  trait WrappedFieldsProps extends /* name */ StringDictionary[WrappedFieldsProps with WrappedFieldProps]
+  trait WrappedFieldsProps
+    extends StObject
+       with /* name */ StringDictionary[WrappedFieldsProps & WrappedFieldProps]
   object WrappedFieldsProps {
     
     @scala.inline

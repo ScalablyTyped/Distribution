@@ -22,10 +22,13 @@ import typings.reactNativeWindows.popupPropsMod.IPopupProps
 import typings.reactNativeWindows.viewWindowsMod.ViewWindowsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-windows", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-native-windows", "AppTheme")
   @js.native
@@ -56,15 +59,15 @@ object mod {
   object EventPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.EventPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.EventPhase & Double] = js.native
     
-    /* 2 */ val AtTarget: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.AtTarget with Double = js.native
+    /* 2 */ val AtTarget: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.AtTarget & Double = js.native
     
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Bubbling with Double = js.native
+    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Bubbling & Double = js.native
     
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Capturing with Double = js.native
+    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Capturing & Double = js.native
     
-    /* 0 */ val None: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.None with Double = js.native
+    /* 0 */ val None: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.None & Double = js.native
   }
   
   @JSImport("react-native-windows", "Flyout")
@@ -76,9 +79,12 @@ object mod {
   /* static members */
   object Flyout {
     
-    @JSImport("react-native-windows", "Flyout.getDerivedStateFromProps")
+    @JSImport("react-native-windows", "Flyout")
     @js.native
-    def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IFlyoutTargetState]
   }
   
   @JSImport("react-native-windows", "Glyph")
@@ -98,11 +104,11 @@ object mod {
   object HandledEventPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase & Double] = js.native
     
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Bubbling with Double = js.native
+    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Bubbling & Double = js.native
     
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Capturing with Double = js.native
+    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Capturing & Double = js.native
   }
   
   @JSImport("react-native-windows", "Picker")
@@ -124,9 +130,8 @@ object mod {
     @scala.inline
     def Item_=(x: Instantiable0[PickerItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-windows", "Picker.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: PickerPropsWithChildren): State = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: PickerPropsWithChildren): State = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[State]
   }
   
   @JSImport("react-native-windows", "Popup")
@@ -138,16 +143,18 @@ object mod {
   /* static members */
   object Popup {
     
-    @JSImport("react-native-windows", "Popup.getDerivedStateFromProps")
+    @JSImport("react-native-windows", "Popup")
     @js.native
-    def getDerivedStateFromProps(nextProps: IPopupProps, prevState: IPopupTargetState): IPopupTargetState = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IPopupProps, prevState: IPopupTargetState): IPopupTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IPopupTargetState]
   }
   
   @JSImport("react-native-windows", "ViewWindows")
   @js.native
   val ViewWindows: ViewWindowsType = js.native
   
-  @JSImport("react-native-windows", "supportKeyboard")
-  @js.native
-  def supportKeyboard[P /* <: js.Object */](WrappedComponent: ComponentType[P]): ForwardRefExoticComponent[(PropsWithoutRef[P with IKeyboardProps with Children]) with RefAttributes[_]] = js.native
+  @scala.inline
+  def supportKeyboard[P /* <: js.Object */](WrappedComponent: ComponentType[P]): ForwardRefExoticComponent[(PropsWithoutRef[P & IKeyboardProps & Children]) & RefAttributes[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportKeyboard")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[(PropsWithoutRef[P & IKeyboardProps & Children]) & RefAttributes[js.Any]]]
 }

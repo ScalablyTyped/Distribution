@@ -2,121 +2,119 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationDescription extends StObject {
   
   /**
     * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it.
     */
-  var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.native
+  var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.undefined
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * The association name.
     */
-  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.native
+  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.undefined
   
   /**
     * The association version.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
     */
-  var AutomationTargetParameterName: js.UndefOr[typings.awsSdk.ssmMod.AutomationTargetParameterName] = js.native
+  var AutomationTargetParameterName: js.UndefOr[typings.awsSdk.ssmMod.AutomationTargetParameterName] = js.undefined
   
   /**
     * The severity level that is assigned to the association.
     */
-  var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.native
+  var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
   
   /**
     * The date when the association was made.
     */
-  var Date: js.UndefOr[DateTime] = js.native
+  var Date: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The document version.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The date on which the association was last run.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The last date on which the association was successfully run.
     */
-  var LastSuccessfulExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastSuccessfulExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date when the association was last updated.
     */
-  var LastUpdateAssociationDate: js.UndefOr[DateTime] = js.native
+  var LastUpdateAssociationDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
     */
-  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.native
+  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
     * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify either an absolute number of errors, for example 10, or a percentage of the target set, for example 10%. If you specify 3, for example, the system stops sending requests when the fourth error is received. If you specify 0, then the system stops sending requests after the first error is returned. If you run an association on 50 instances and set MaxError to 10%, then the system stops sending the request when the sixth error is received. Executions that are already running an association when MaxErrors is reached are allowed to complete, but some of these executions may fail as well. If you need to ensure that there won't be more than max-errors failed executions, set MaxConcurrency to 1 so that executions proceed one at a time.
     */
-  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.native
+  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * An S3 bucket where you want to store the output details of the request.
     */
-  var OutputLocation: js.UndefOr[InstanceAssociationOutputLocation] = js.native
+  var OutputLocation: js.UndefOr[InstanceAssociationOutputLocation] = js.undefined
   
   /**
     * Information about the association.
     */
-  var Overview: js.UndefOr[AssociationOverview] = js.native
+  var Overview: js.UndefOr[AssociationOverview] = js.undefined
   
   /**
     * A description of the parameters for a document. 
     */
-  var Parameters: js.UndefOr[typings.awsSdk.ssmMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.ssmMod.Parameters] = js.undefined
   
   /**
     * A cron expression that specifies a schedule when the association runs.
     */
-  var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.native
+  var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.undefined
   
   /**
     * The association status.
     */
-  var Status: js.UndefOr[AssociationStatus] = js.native
+  var Status: js.UndefOr[AssociationStatus] = js.undefined
   
   /**
     * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API action. In this case, compliance data is not managed by State Manager. It is managed by your direct call to the PutComplianceItems API action. By default, all associations use AUTO mode.
     */
-  var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.native
+  var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.undefined
   
   /**
     * The instances targeted by the request. 
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
 }
 object AssociationDescription {
   

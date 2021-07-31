@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIAMPolicyAssignmentsRequest extends StObject {
   
   /**
     * The status of the assignments.
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
     * The ID of the AWS account that contains these IAM policy assignments.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The maximum number of results to be returned per request.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.undefined
   
   /**
     * The namespace for the assignments.
     */
-  var Namespace: typings.awsSdk.quicksightMod.Namespace = js.native
+  var Namespace: typings.awsSdk.quicksightMod.Namespace
   
   /**
     * The token for the next set of results, or null if there are no more results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListIAMPolicyAssignmentsRequest {
   

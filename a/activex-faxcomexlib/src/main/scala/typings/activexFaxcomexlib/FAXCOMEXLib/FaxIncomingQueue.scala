@@ -2,30 +2,28 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingQueue Class */
-@js.native
 trait FaxIncomingQueue extends StObject {
   
   /** Is queue blocked */
-  var Blocked: Boolean = js.native
+  var Blocked: Boolean
   
   @JSName("FAXCOMEXLib.FaxIncomingQueue_typekey")
-  var FAXCOMEXLibDotFaxIncomingQueue_typekey: FaxIncomingQueue = js.native
+  var FAXCOMEXLibDotFaxIncomingQueue_typekey: FaxIncomingQueue
   
   /** Get incoming job by ID */
-  def GetJob(bstrJobId: String): FaxIncomingJob = js.native
+  def GetJob(bstrJobId: String): FaxIncomingJob
   
   /** Collection of incoming jobs */
-  def GetJobs(): FaxIncomingJobs = js.native
+  def GetJobs(): FaxIncomingJobs
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
 }
 object FaxIncomingQueue {
   

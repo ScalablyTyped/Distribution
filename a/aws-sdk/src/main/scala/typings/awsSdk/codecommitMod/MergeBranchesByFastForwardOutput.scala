@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeBranchesByFastForwardOutput extends StObject {
   
   /**
     * The commit ID of the merge in the destination or target branch.
     */
-  var commitId: js.UndefOr[ObjectId] = js.native
+  var commitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The tree ID of the merge in the destination or target branch.
     */
-  var treeId: js.UndefOr[ObjectId] = js.native
+  var treeId: js.UndefOr[ObjectId] = js.undefined
 }
 object MergeBranchesByFastForwardOutput {
   

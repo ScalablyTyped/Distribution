@@ -3,68 +3,66 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Review extends StObject {
   
   /**
     * Admin Reply, if any, for this review
     */
-  var adminReply: ReviewReply = js.native
+  var adminReply: ReviewReply
   
   /**
     * Unique identifier of a review item
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Flag for soft deletion
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
-  var isIgnored: Boolean = js.native
+  var isIgnored: Boolean
   
   /**
     * Version of the product for which review was submitted
     */
-  var productVersion: String = js.native
+  var productVersion: String
   
   /**
     * Rating procided by the user
     */
-  var rating: Double = js.native
+  var rating: Double
   
   /**
     * Reply, if any, for this review
     */
-  var reply: ReviewReply = js.native
+  var reply: ReviewReply
   
   /**
     * Text description of the review
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Title of the review
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Time when the review was edited/updated
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
   /**
     * Name of the user
     */
-  var userDisplayName: String = js.native
+  var userDisplayName: String
   
   /**
     * Id of the user who submitted the review
     */
-  var userId: String = js.native
+  var userId: String
 }
 object Review {
   

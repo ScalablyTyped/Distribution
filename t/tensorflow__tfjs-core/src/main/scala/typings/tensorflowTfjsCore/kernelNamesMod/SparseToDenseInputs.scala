@@ -2,18 +2,16 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'sparseIndices' | 'sparseValues' | 'defaultValue'> */
-@js.native
 trait SparseToDenseInputs extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var sparseIndices: js.UndefOr[js.Any] = js.native
+  var sparseIndices: js.UndefOr[js.Any] = js.undefined
   
-  var sparseValues: js.UndefOr[js.Any] = js.native
+  var sparseValues: js.UndefOr[js.Any] = js.undefined
 }
 object SparseToDenseInputs {
   

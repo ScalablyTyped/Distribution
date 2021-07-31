@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWorkflowResponse extends StObject {
   
   /**
     * Name of the workflow specified in input.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
 }
 object DeleteWorkflowResponse {
   

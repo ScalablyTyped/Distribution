@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataGroupingInfoObject extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var options: js.UndefOr[SeriesOptionsType] = js.native
+  var options: js.UndefOr[SeriesOptionsType] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object DataGroupingInfoObject {
   

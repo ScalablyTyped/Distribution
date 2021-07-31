@@ -2,41 +2,39 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorldTemplateResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world template.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world template was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world template was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The name of the world template.
     */
-  var name: js.UndefOr[TemplateName] = js.native
+  var name: js.UndefOr[TemplateName] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the world template.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeWorldTemplateResponse {
   

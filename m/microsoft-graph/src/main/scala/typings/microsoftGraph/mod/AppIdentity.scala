@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppIdentity extends StObject {
   
   // Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Refers to the Application Name displayed in the Azure Portal.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
-  var servicePrincipalId: js.UndefOr[NullableOption[String]] = js.native
+  var servicePrincipalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Refers to the Service Principal Name is the Application name in the tenant.
-  var servicePrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var servicePrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AppIdentity {
   

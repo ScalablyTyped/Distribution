@@ -12,7 +12,6 @@ import typings.multibase.multibaseStrings.z_
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -403,12 +402,11 @@ object typesMod {
     def z: z_ = "z".asInstanceOf[z_]
   }
   
-  @js.native
   trait Codec extends StObject {
     
-    def decode(hash: String): Uint8Array = js.native
+    def decode(hash: String): Uint8Array
     
-    def encode(buffer: Uint8Array): String = js.native
+    def encode(buffer: Uint8Array): String
   }
   object Codec {
     

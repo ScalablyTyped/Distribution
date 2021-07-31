@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwapShiftsChangeRequest extends OfferShiftRequest {
+trait SwapShiftsChangeRequest
+  extends StObject
+     with OfferShiftRequest {
   
   // ShiftId for the recipient user with whom the request is to swap.
-  var recipientShiftId: js.UndefOr[NullableOption[String]] = js.native
+  var recipientShiftId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SwapShiftsChangeRequest {
   

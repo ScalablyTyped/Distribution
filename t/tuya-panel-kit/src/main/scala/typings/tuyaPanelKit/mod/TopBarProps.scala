@@ -6,23 +6,23 @@ import typings.tuyaPanelKit.anon.Color
 import typings.tuyaPanelKit.themeMod.BackgroundProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TopBarProps extends TopBarContentProps {
+trait TopBarProps
+  extends StObject
+     with TopBarContentProps {
   
-  var actions: js.UndefOr[js.Array[TopBarActionProps]] = js.native
+  var actions: js.UndefOr[js.Array[TopBarActionProps]] = js.undefined
   
-  var background: js.UndefOr[BackgroundProps] = js.native
+  var background: js.UndefOr[BackgroundProps] = js.undefined
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var leftActions: js.UndefOr[js.Array[TopBarActionProps]] = js.native
+  var leftActions: js.UndefOr[js.Array[TopBarActionProps]] = js.undefined
   
-  var onBack: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onBack: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var theme: js.UndefOr[Color] = js.native
+  var theme: js.UndefOr[Color] = js.undefined
 }
 object TopBarProps {
   

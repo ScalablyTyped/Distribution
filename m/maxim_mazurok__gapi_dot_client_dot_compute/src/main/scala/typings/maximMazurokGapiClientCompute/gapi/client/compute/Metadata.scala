@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait Metadata extends StObject {
     *
     * To see the latest fingerprint, make a get() request to retrieve the resource.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** Array of key/value pairs. The total size of all keys and values must be less than 512 KB. */
-  var items: js.UndefOr[js.Array[Key]] = js.native
+  var items: js.UndefOr[js.Array[Key]] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#metadata for metadata. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

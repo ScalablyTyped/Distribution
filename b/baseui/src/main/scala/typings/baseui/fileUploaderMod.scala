@@ -14,7 +14,6 @@ import typings.std.HTMLElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileUploaderMod {
@@ -56,44 +55,43 @@ object fileUploaderMod {
     js.Any
   ]
   
-  @js.native
   trait FileUploaderOverrides[T] extends StObject {
     
     var ButtonComponent: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ContentMessage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ContentSeparator: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ErrorMessage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var FileDragAndDrop: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var HiddenInput: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ProgressMessage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Spinner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object FileUploaderOverrides {
     
@@ -104,7 +102,7 @@ object fileUploaderMod {
     }
     
     @scala.inline
-    implicit class FileUploaderOverridesMutableBuilder[Self <: FileUploaderOverrides[_], T] (val x: Self with FileUploaderOverrides[T]) extends AnyVal {
+    implicit class FileUploaderOverridesMutableBuilder[Self <: FileUploaderOverrides[?], T] (val x: Self & FileUploaderOverrides[T]) extends AnyVal {
       
       @scala.inline
       def setButtonComponent(
@@ -180,62 +178,61 @@ object fileUploaderMod {
     }
   }
   
-  @js.native
   trait FileUploaderProps extends StObject {
     
-    var accept: js.UndefOr[String | js.Array[String]] = js.native
+    var accept: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var disableClick: js.UndefOr[Boolean] = js.native
+    var disableClick: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var getDataTransferItems: js.UndefOr[GetDataTransferItems] = js.native
+    var getDataTransferItems: js.UndefOr[GetDataTransferItems] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement], _]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[_]] = js.native
+    var onCancel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], js.Any]] = js.undefined
     
-    var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], _]] = js.native
+    var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], _]] = js.native
+    var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], _]] = js.native
+    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], _]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onDrop: js.UndefOr[DropFilesEventHandler] = js.native
+    var onDrop: js.UndefOr[DropFilesEventHandler] = js.undefined
     
-    var onDropAccepted: js.UndefOr[DropFileEventHandler] = js.native
+    var onDropAccepted: js.UndefOr[DropFileEventHandler] = js.undefined
     
-    var onDropRejected: js.UndefOr[DropFileEventHandler] = js.native
+    var onDropRejected: js.UndefOr[DropFileEventHandler] = js.undefined
     
-    var onFileDialogCancel: js.UndefOr[js.Function0[_]] = js.native
+    var onFileDialogCancel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement], _]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLElement], _]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLElement], js.Any]] = js.undefined
     
-    var onRetry: js.UndefOr[js.Function0[_]] = js.native
+    var onRetry: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[FileUploaderOverrides[StyleProps]] = js.native
+    var overrides: js.UndefOr[FileUploaderOverrides[StyleProps]] = js.undefined
     
-    var preventDropOnDocument: js.UndefOr[Boolean] = js.native
+    var preventDropOnDocument: js.UndefOr[Boolean] = js.undefined
     
-    var progressAmount: js.UndefOr[Double] = js.native
+    var progressAmount: js.UndefOr[Double] = js.undefined
     
-    var progressMessage: js.UndefOr[String] = js.native
+    var progressMessage: js.UndefOr[String] = js.undefined
   }
   object FileUploaderProps {
     
@@ -306,43 +303,43 @@ object fileUploaderMod {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnCancel(value: () => _): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnDragEnter(value: /* event */ DragEvent[HTMLElement] => _): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      def setOnDragEnter(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
       @scala.inline
-      def setOnDragLeave(value: /* event */ DragEvent[HTMLElement] => _): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      def setOnDragLeave(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
       @scala.inline
-      def setOnDragOver(value: /* event */ DragEvent[HTMLElement] => _): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      def setOnDragOver(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
       @scala.inline
-      def setOnDragStart(value: /* event */ DragEvent[HTMLElement] => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      def setOnDragStart(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
@@ -372,25 +369,25 @@ object fileUploaderMod {
       def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
       @scala.inline
-      def setOnFileDialogCancel(value: () => _): Self = StObject.set(x, "onFileDialogCancel", js.Any.fromFunction0(value))
+      def setOnFileDialogCancel(value: () => js.Any): Self = StObject.set(x, "onFileDialogCancel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnFileDialogCancelUndefined: Self = StObject.set(x, "onFileDialogCancel", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => _): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnRetry(value: () => _): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
+      def setOnRetry(value: () => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
@@ -426,26 +423,25 @@ object fileUploaderMod {
     js.Promise[js.Array[File | DataTransferItem]]
   ]
   
-  @js.native
   trait StyleProps extends StObject {
     
     @JSName("$afterFileDrop")
-    var $afterFileDrop: Boolean = js.native
+    var $afterFileDrop: Boolean
     
     @JSName("$isDisabled")
-    var $isDisabled: Boolean = js.native
+    var $isDisabled: Boolean
     
     @JSName("$isDragAccept")
-    var $isDragAccept: Boolean = js.native
+    var $isDragAccept: Boolean
     
     @JSName("$isDragActive")
-    var $isDragActive: Boolean = js.native
+    var $isDragActive: Boolean
     
     @JSName("$isDragReject")
-    var $isDragReject: Boolean = js.native
+    var $isDragReject: Boolean
     
     @JSName("$isFocused")
-    var $isFocused: Boolean = js.native
+    var $isFocused: Boolean
   }
   object StyleProps {
     

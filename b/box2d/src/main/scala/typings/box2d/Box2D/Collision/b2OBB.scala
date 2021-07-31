@@ -4,26 +4,24 @@ import typings.box2d.Box2D.Common.Math.b2Mat22
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2OBB extends StObject {
   
   /**
     * The rotation matrix.
     **/
-  var R: b2Mat22 = js.native
+  var R: b2Mat22
   
   /**
     * The local centroid.
     **/
-  var center: b2Vec2 = js.native
+  var center: b2Vec2
   
   /**
     * The half-widths.
     **/
-  var extents: b2Vec2 = js.native
+  var extents: b2Vec2
 }
 object b2OBB {
   

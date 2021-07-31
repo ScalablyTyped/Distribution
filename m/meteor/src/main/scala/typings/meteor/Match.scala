@@ -10,15 +10,13 @@ import typings.std.ObjectConstructor
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Match {
   
-  @js.native
   trait Matcher[T] extends StObject {
     
-    var _meteorCheckMatcherBrand: Unit = js.native
+    var _meteorCheckMatcherBrand: Unit
   }
   object Matcher {
     
@@ -29,7 +27,7 @@ object Match {
     }
     
     @scala.inline
-    implicit class MatcherMutableBuilder[Self <: Matcher[_], T] (val x: Self with Matcher[T]) extends AnyVal {
+    implicit class MatcherMutableBuilder[Self <: Matcher[?], T] (val x: Self & Matcher[T]) extends AnyVal {
       
       @scala.inline
       def set_meteorCheckMatcherBrand(value: Unit): Self = StObject.set(x, "_meteorCheckMatcherBrand", value.asInstanceOf[js.Any])
@@ -46,7 +44,7 @@ object Match {
   
   type PatternMatch[T /* <: Pattern */] = js.Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.PatternMatch<T[K]> * / object}
-    */ typings.meteor.meteorStrings.PatternMatch with TopLevel[js.Any]) | (js.Array[
+    */ typings.meteor.meteorStrings.PatternMatch & TopLevel[js.Any]) | (js.Array[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.PatternMatch<T[0]> */ js.Object
   ]) | T | js.Function | Boolean | Double | String
 }

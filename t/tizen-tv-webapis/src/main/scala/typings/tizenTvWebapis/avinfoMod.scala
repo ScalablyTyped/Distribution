@@ -3,7 +3,6 @@ package typings.tizenTvWebapis
 import typings.tizenTvWebapis.anon.DOLBYDIGITALCOMPMODELINE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avinfoMod {
@@ -15,29 +14,32 @@ object avinfoMod {
   object AvInfoDigitalCompMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AvInfoDigitalCompMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[AvInfoDigitalCompMode & Double] = js.native
     
     /**
       * line mode
       * @since 2.3
       */
     @js.native
-    sealed trait DOLBY_DIGITAL_COMP_MODE_LINE extends AvInfoDigitalCompMode
-    /* 0 */ val DOLBY_DIGITAL_COMP_MODE_LINE: typings.tizenTvWebapis.avinfoMod.AvInfoDigitalCompMode.DOLBY_DIGITAL_COMP_MODE_LINE with Double = js.native
+    sealed trait DOLBY_DIGITAL_COMP_MODE_LINE
+      extends StObject
+         with AvInfoDigitalCompMode
+    /* 0 */ val DOLBY_DIGITAL_COMP_MODE_LINE: typings.tizenTvWebapis.avinfoMod.AvInfoDigitalCompMode.DOLBY_DIGITAL_COMP_MODE_LINE & Double = js.native
     
     /**
       * rf mode
       * @since 2.3
       */
     @js.native
-    sealed trait DOLBY_DIGITAL_COMP_MODE_RF extends AvInfoDigitalCompMode
-    /* 1 */ val DOLBY_DIGITAL_COMP_MODE_RF: typings.tizenTvWebapis.avinfoMod.AvInfoDigitalCompMode.DOLBY_DIGITAL_COMP_MODE_RF with Double = js.native
+    sealed trait DOLBY_DIGITAL_COMP_MODE_RF
+      extends StObject
+         with AvInfoDigitalCompMode
+    /* 1 */ val DOLBY_DIGITAL_COMP_MODE_RF: typings.tizenTvWebapis.avinfoMod.AvInfoDigitalCompMode.DOLBY_DIGITAL_COMP_MODE_RF & Double = js.native
   }
   
-  @js.native
   trait AVInfoManager extends StObject {
     
-    var AvInfoDigitalCompMode: DOLBYDIGITALCOMPMODELINE = js.native
+    var AvInfoDigitalCompMode: DOLBYDIGITALCOMPMODELINE
     
     /**
       * This method get dolby digital component mode.
@@ -46,7 +48,7 @@ object avinfoMod {
       * @since 2.3
       * @note `deprecated` 4.0
       */
-    def getDolbyDigitalCompMode(): AvInfoDigitalCompMode = js.native
+    def getDolbyDigitalCompMode(): AvInfoDigitalCompMode
     
     /**
       * This method get the plugin's version number.
@@ -54,7 +56,7 @@ object avinfoMod {
       * @throw WebAPIException SecurityError
       * @since 2.3
       */
-    def getVersion(): String = js.native
+    def getVersion(): String
     
     /**
       * This method is to check whether the HDR is supported or not.
@@ -62,7 +64,7 @@ object avinfoMod {
       * @throw WebAPIException SecurityError
       * @since 2.3
       */
-    def isHdrTvSupport(): Boolean = js.native
+    def isHdrTvSupport(): Boolean
   }
   object AVInfoManager {
     

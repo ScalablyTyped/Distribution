@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -94,9 +93,8 @@ object DynamicImageViewer {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.create")
-  @js.native
-  def create(model: IModel): DynamicImageViewer = js.native
+  @scala.inline
+  def create(model: IModel): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -107,9 +105,8 @@ object DynamicImageViewer {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): DynamicImageViewer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -120,9 +117,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DynamicImageViewer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -133,9 +129,8 @@ object DynamicImageViewer {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -146,9 +141,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -159,9 +153,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -172,9 +165,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -185,9 +177,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -198,9 +189,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): DynamicImageViewer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -211,9 +201,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): DynamicImageViewer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -224,9 +213,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): DynamicImageViewer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -237,9 +225,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): DynamicImageViewer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -250,9 +237,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): DynamicImageViewer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -263,9 +249,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): DynamicImageViewer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -276,9 +261,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): DynamicImageViewer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -289,9 +273,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -302,9 +285,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -315,9 +297,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -328,9 +309,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -341,9 +321,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -354,9 +333,8 @@ object DynamicImageViewer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): DynamicImageViewer = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -367,9 +345,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DynamicImageViewer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -380,9 +357,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DynamicImageViewer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -393,9 +369,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -406,9 +381,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): DynamicImageViewer = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -419,9 +393,8 @@ object DynamicImageViewer {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DynamicImageViewer = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -432,9 +405,8 @@ object DynamicImageViewer {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -445,9 +417,8 @@ object DynamicImageViewer {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -458,9 +429,8 @@ object DynamicImageViewer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -471,9 +441,8 @@ object DynamicImageViewer {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -484,9 +453,8 @@ object DynamicImageViewer {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -497,9 +465,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -510,9 +477,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DynamicImageViewer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -523,9 +489,8 @@ object DynamicImageViewer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -536,9 +501,8 @@ object DynamicImageViewer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -549,9 +513,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DynamicImageViewer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -562,9 +525,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DynamicImageViewer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -575,9 +537,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -588,9 +549,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -601,9 +561,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -614,9 +573,8 @@ object DynamicImageViewer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -627,9 +585,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -640,9 +597,8 @@ object DynamicImageViewer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DynamicImageViewer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -653,9 +609,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -666,9 +621,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -679,9 +633,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -692,9 +645,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -705,9 +657,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -718,9 +669,8 @@ object DynamicImageViewer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DynamicImageViewer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -731,9 +681,8 @@ object DynamicImageViewer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DynamicImageViewer = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -744,9 +693,8 @@ object DynamicImageViewer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DynamicImageViewer = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -757,9 +705,8 @@ object DynamicImageViewer {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): DynamicImageViewer = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicImageViewer]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.structureTypeName")

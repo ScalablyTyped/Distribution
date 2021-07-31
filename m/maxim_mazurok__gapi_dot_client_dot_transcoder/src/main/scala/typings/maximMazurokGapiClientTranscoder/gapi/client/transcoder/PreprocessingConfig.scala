@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreprocessingConfig extends StObject {
   
   /** Audio preprocessing configuration. */
-  var audio: js.UndefOr[Audio] = js.native
+  var audio: js.UndefOr[Audio] = js.undefined
   
   /** Color preprocessing configuration. */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /** Specify the video cropping configuration. */
-  var crop: js.UndefOr[Crop] = js.native
+  var crop: js.UndefOr[Crop] = js.undefined
   
   /** Deblock preprocessing configuration. */
-  var deblock: js.UndefOr[Deblock] = js.native
+  var deblock: js.UndefOr[Deblock] = js.undefined
   
   /** Denoise preprocessing configuration. */
-  var denoise: js.UndefOr[Denoise] = js.native
+  var denoise: js.UndefOr[Denoise] = js.undefined
 }
 object PreprocessingConfig {
   

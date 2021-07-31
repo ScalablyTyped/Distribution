@@ -2,17 +2,15 @@ package typings.deluge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait State extends StObject {
     
-    var state: js.Array[js.Tuple2[String, Double]] = js.native
+    var state: js.Array[js.Tuple2[String, Double]]
     
-    var tracker_host: js.Array[js.Tuple2[String, Double]] = js.native
+    var tracker_host: js.Array[js.Tuple2[String, Double]]
   }
   object State {
     

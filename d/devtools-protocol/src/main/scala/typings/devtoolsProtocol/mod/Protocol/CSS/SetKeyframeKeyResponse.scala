@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetKeyframeKeyResponse extends StObject {
   
   /**
     * The resulting key text after modification.
     */
-  var keyText: Value = js.native
+  var keyText: Value
 }
 object SetKeyframeKeyResponse {
   

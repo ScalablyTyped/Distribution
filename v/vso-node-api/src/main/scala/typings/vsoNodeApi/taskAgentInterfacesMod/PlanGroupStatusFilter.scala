@@ -2,7 +2,6 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait PlanGroupStatusFilter extends StObject
 object PlanGroupStatusFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlanGroupStatusFilter with Double] = js.native
+  def apply(value: Double): js.UndefOr[PlanGroupStatusFilter & Double] = js.native
   
   @js.native
-  sealed trait All extends PlanGroupStatusFilter
-  /* 3 */ val All: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.All with Double = js.native
+  sealed trait All
+    extends StObject
+       with PlanGroupStatusFilter
+  /* 3 */ val All: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.All & Double = js.native
   
   @js.native
-  sealed trait Queued extends PlanGroupStatusFilter
-  /* 2 */ val Queued: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.Queued with Double = js.native
+  sealed trait Queued
+    extends StObject
+       with PlanGroupStatusFilter
+  /* 2 */ val Queued: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.Queued & Double = js.native
   
   @js.native
-  sealed trait Running extends PlanGroupStatusFilter
-  /* 1 */ val Running: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.Running with Double = js.native
+  sealed trait Running
+    extends StObject
+       with PlanGroupStatusFilter
+  /* 1 */ val Running: typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter.Running & Double = js.native
 }

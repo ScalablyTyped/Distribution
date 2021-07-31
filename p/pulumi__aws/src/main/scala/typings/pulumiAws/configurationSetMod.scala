@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationSetMod {
@@ -24,7 +23,7 @@ object configurationSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ConfigurationSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ConfigurationSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -35,6 +34,10 @@ object configurationSetMod {
   /* static members */
   object ConfigurationSet {
     
+    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConfigurationSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,35 +47,29 @@ object configurationSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ConfigurationSet = js.native
-    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConfigurationSet = js.native
-    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationSetState): ConfigurationSet = js.native
-    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationSetState, opts: CustomResourceOptions): ConfigurationSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationSetState): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationSetState, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
     
     /**
       * Returns true if the given object is an instance of ConfigurationSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/configurationSet", "ConfigurationSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean]
   }
   
-  @js.native
   trait ConfigurationSetArgs extends StObject {
     
     /**
       * The name of the configuration set
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ConfigurationSetArgs {
     
@@ -93,13 +90,12 @@ object configurationSetMod {
     }
   }
   
-  @js.native
   trait ConfigurationSetState extends StObject {
     
     /**
       * The name of the configuration set
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ConfigurationSetState {
     

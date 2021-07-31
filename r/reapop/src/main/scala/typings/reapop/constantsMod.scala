@@ -18,7 +18,6 @@ import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -119,13 +118,11 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("reapop/dist/constants", "classnames.container")
-    @js.native
-    def container(position: Position, singleContainer: Boolean): js.Array[String] = js.native
+    @scala.inline
+    def container(position: Position, singleContainer: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any], singleContainer.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSImport("reapop/dist/constants", "classnames.notification")
-    @js.native
-    def notification(notification: Notification): js.Array[String] = js.native
+    @scala.inline
+    def notification(notification: Notification): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("notification")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     @JSImport("reapop/dist/constants", "classnames.notificationButton")
     @js.native
@@ -190,20 +187,19 @@ object constantsMod {
     def notificationTitle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notificationTitle")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait NotificationConfig extends StObject {
     
-    var customizeNotification: (js.Function1[/* notification */ NewNotification, Unit]) | Null = js.native
+    var customizeNotification: (js.Function1[/* notification */ NewNotification, Unit]) | Null
     
-    var defaultProps: PartialNotification = js.native
+    var defaultProps: PartialNotification
     
-    var generateId: (js.Function1[/* notification */ NewNotification, String]) | Null = js.native
+    var generateId: (js.Function1[/* notification */ NewNotification, String]) | Null
   }
   object NotificationConfig {
     
     @scala.inline
     def apply(defaultProps: PartialNotification): NotificationConfig = {
-      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], customizeNotification = null, generateId = null)
       __obj.asInstanceOf[NotificationConfig]
     }
     

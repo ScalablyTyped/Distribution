@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApiKeyResponse extends StObject {
   
   /**
     * The api key.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Date of update
     */
-  var updatedAt: String = js.native
+  var updatedAt: String
 }
 object UpdateApiKeyResponse {
   

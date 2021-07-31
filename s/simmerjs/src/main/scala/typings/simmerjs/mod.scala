@@ -10,7 +10,6 @@ import typings.std.ArrayLike
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,17 +37,18 @@ object mod extends Shortcut {
     * another custom function, such as your own tweaked version of jQuery, you
     * can do so by passing the third argument to the Simmer constructor.
     */
-  class defaultCls () extends Simmer {
+  class defaultCls ()
+    extends StObject
+       with Simmer {
     def this(scope: Scope) = this()
-    def this(scope: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(scope: Unit, options: Options) = this()
     def this(scope: Scope, options: Options) = this()
-    def this(scope: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], query: QueryEngine) = this()
-    def this(scope: js.UndefOr[scala.Nothing], options: Options, query: QueryEngine) = this()
-    def this(scope: Scope, options: js.UndefOr[scala.Nothing], query: QueryEngine) = this()
+    def this(scope: Unit, options: Unit, query: QueryEngine) = this()
+    def this(scope: Unit, options: Options, query: QueryEngine) = this()
+    def this(scope: Scope, options: Unit, query: QueryEngine) = this()
     def this(scope: Scope, options: Options, query: QueryEngine) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -61,7 +61,7 @@ object mod extends Shortcut {
       *
       * @default 3
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * How to handle errors which occur during the analysis
@@ -72,7 +72,7 @@ object mod extends Shortcut {
       *  - _a function callback will be called with two parameters_: the
       *    exception and the element being analyzed
       */
-    var errorHandling: js.UndefOr[Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])] = js.native
+    var errorHandling: js.UndefOr[Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])] = js.undefined
     
     /**
       * A maximum length for the CSS selector can be specified - if no specific
@@ -81,7 +81,7 @@ object mod extends Shortcut {
       *
       * @default 520
       */
-    var selectorMaxLength: js.UndefOr[Double] = js.native
+    var selectorMaxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * A minimum specificty level. Once the parser reaches this level it starts
@@ -93,7 +93,7 @@ object mod extends Shortcut {
       *
       * @default 100
       */
-    var specificityThreshold: js.UndefOr[Double] = js.native
+    var specificityThreshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -141,12 +141,32 @@ object mod extends Shortcut {
     ArrayLike[Element]
   ]
   
-  @js.native
-  trait Queryable extends Scope {
+  trait Queryable
+    extends StObject
+       with Scope {
     
-    def querySelectorAll(selector: String, onError: js.Function1[/* error */ js.Any, Unit]): ArrayLike[Element] = js.native
+    def querySelectorAll(selector: String, onError: js.Function1[/* error */ js.Any, Unit]): ArrayLike[Element]
     @JSName("querySelectorAll")
-    var querySelectorAll_Original: QueryEngine = js.native
+    var querySelectorAll_Original: QueryEngine
+  }
+  object Queryable {
+    
+    @scala.inline
+    def apply(
+      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+    ): Queryable = {
+      val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
+      __obj.asInstanceOf[Queryable]
+    }
+    
+    @scala.inline
+    implicit class QueryableMutableBuilder[Self <: Queryable] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setQuerySelectorAll(
+        value: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+      ): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction2(value))
+    }
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -154,6 +174,22 @@ object mod extends Shortcut {
     - typings.simmerjs.mod.WindowLike
   */
   trait Scope extends StObject
+  object Scope {
+    
+    @scala.inline
+    def Queryable(
+      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+    ): typings.simmerjs.mod.Queryable = {
+      val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
+      __obj.asInstanceOf[typings.simmerjs.mod.Queryable]
+    }
+    
+    @scala.inline
+    def WindowLike(document: Queryable): typings.simmerjs.mod.WindowLike = {
+      val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.simmerjs.mod.WindowLike]
+    }
+  }
   
   @js.native
   trait Simmer extends StObject {
@@ -174,7 +210,8 @@ object mod extends Shortcut {
   
   @js.native
   trait SimmerConstructor
-    extends /**
+    extends StObject
+       with /**
     * @param scope The context in which Simmer should query for elements.
     * Generally speaking this would be the window, which is the default value,
     * but it would be overriden in a situation where you might be using Simmer
@@ -192,10 +229,10 @@ object mod extends Shortcut {
     */
   Instantiable0[Simmer]
        with Instantiable1[/* scope */ Scope, Simmer]
-       with Instantiable2[js.UndefOr[/* scope */ Scope], /* options */ Options, Simmer]
+       with Instantiable2[(/* scope */ Scope) | (/* scope */ Unit), /* options */ Options, Simmer]
        with Instantiable3[
-          js.UndefOr[/* scope */ Scope], 
-          js.UndefOr[/* options */ Options], 
+          (/* scope */ Scope) | (/* scope */ Unit), 
+          (/* options */ Options) | (/* options */ Unit), 
           /* query */ QueryEngine, 
           Simmer
         ] {
@@ -217,19 +254,20 @@ object mod extends Shortcut {
       * can do so by passing the third argument to the Simmer constructor.
       */
     def apply(): Simmer = js.native
-    def apply(scope: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], query: QueryEngine): Simmer = js.native
-    def apply(scope: js.UndefOr[scala.Nothing], options: Options): Simmer = js.native
-    def apply(scope: js.UndefOr[scala.Nothing], options: Options, query: QueryEngine): Simmer = js.native
+    def apply(scope: Unit, options: Unit, query: QueryEngine): Simmer = js.native
+    def apply(scope: Unit, options: Options): Simmer = js.native
+    def apply(scope: Unit, options: Options, query: QueryEngine): Simmer = js.native
     def apply(scope: Scope): Simmer = js.native
-    def apply(scope: Scope, options: js.UndefOr[scala.Nothing], query: QueryEngine): Simmer = js.native
+    def apply(scope: Scope, options: Unit, query: QueryEngine): Simmer = js.native
     def apply(scope: Scope, options: Options): Simmer = js.native
     def apply(scope: Scope, options: Options, query: QueryEngine): Simmer = js.native
   }
   
-  @js.native
-  trait WindowLike extends Scope {
+  trait WindowLike
+    extends StObject
+       with Scope {
     
-    var document: Queryable = js.native
+    var document: Queryable
   }
   object WindowLike {
     
@@ -254,7 +292,6 @@ object mod extends Shortcut {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
       /**
@@ -267,7 +304,7 @@ object mod extends Shortcut {
         * meant to maintain the original API dating back to 2011 when this library
         * was originally written.
         */
-      def Simmer(element: Element): String = js.native
+      def Simmer(element: Element): String
       /**
         * A global Simmer function will be exposed on the window. This is not the
         * constructor, but rather a default instance which has exposed itself on
@@ -276,7 +313,22 @@ object mod extends Shortcut {
         * was originally written.
         */
       @JSName("Simmer")
-      var Simmer_Original: SimmernoConflictany = js.native
+      var Simmer_Original: SimmernoConflictany
+    }
+    object Window {
+      
+      @scala.inline
+      def apply(Simmer: SimmernoConflictany): Window = {
+        val __obj = js.Dynamic.literal(Simmer = Simmer.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Window]
+      }
+      
+      @scala.inline
+      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setSimmer(value: SimmernoConflictany): Self = StObject.set(x, "Simmer", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

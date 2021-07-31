@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2InstanceViolation extends StObject {
   
   /**
     * Violations for network interfaces associated with the EC2 instance.
     */
-  var AwsEc2NetworkInterfaceViolations: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolations] = js.native
+  var AwsEc2NetworkInterfaceViolations: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolations] = js.undefined
   
   /**
     * The resource ID of the EC2 instance.
     */
-  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.native
+  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
 }
 object AwsEc2InstanceViolation {
   

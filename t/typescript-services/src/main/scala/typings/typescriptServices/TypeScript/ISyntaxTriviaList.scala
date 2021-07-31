@@ -2,33 +2,31 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyntaxTriviaList extends StObject {
   
-  def collectTextElements(elements: js.Array[String]): Unit = js.native
+  def collectTextElements(elements: js.Array[String]): Unit
   
-  def concat(trivia: ISyntaxTriviaList): ISyntaxTriviaList = js.native
+  def concat(trivia: ISyntaxTriviaList): ISyntaxTriviaList
   
-  def count(): Double = js.native
+  def count(): Double
   
-  def fullText(): String = js.native
+  def fullText(): String
   
-  def fullWidth(): Double = js.native
+  def fullWidth(): Double
   
-  def hasComment(): Boolean = js.native
+  def hasComment(): Boolean
   
-  def hasNewLine(): Boolean = js.native
+  def hasNewLine(): Boolean
   
-  def hasSkippedToken(): Boolean = js.native
+  def hasSkippedToken(): Boolean
   
-  def last(): ISyntaxTrivia = js.native
+  def last(): ISyntaxTrivia
   
-  def syntaxTriviaAt(index: Double): ISyntaxTrivia = js.native
+  def syntaxTriviaAt(index: Double): ISyntaxTrivia
   
-  def toArray(): js.Array[ISyntaxTrivia] = js.native
+  def toArray(): js.Array[ISyntaxTrivia]
 }
 object ISyntaxTriviaList {
   

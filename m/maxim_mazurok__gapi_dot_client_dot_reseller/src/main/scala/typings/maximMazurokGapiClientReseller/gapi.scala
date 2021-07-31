@@ -20,7 +20,6 @@ import typings.maximMazurokGapiClientReseller.anon.SubscriptionId
 import typings.maximMazurokGapiClientReseller.anon.UserIp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -29,41 +28,40 @@ object gapi {
     
     object reseller {
       
-      @js.native
       trait Address extends StObject {
         
         /** A customer's physical address. An address can be composed of one to three lines. The addressline2 and addressLine3 are optional. */
-        var addressLine1: js.UndefOr[String] = js.native
+        var addressLine1: js.UndefOr[String] = js.undefined
         
         /** Line 2 of the address. */
-        var addressLine2: js.UndefOr[String] = js.native
+        var addressLine2: js.UndefOr[String] = js.undefined
         
         /** Line 3 of the address. */
-        var addressLine3: js.UndefOr[String] = js.native
+        var addressLine3: js.UndefOr[String] = js.undefined
         
         /** The customer contact's name. This is required. */
-        var contactName: js.UndefOr[String] = js.native
+        var contactName: js.UndefOr[String] = js.undefined
         
         /**
           * For countryCode information, see the ISO 3166 country code elements. Verify that country is approved for resale of Google products. This property is required when creating a new
           * customer.
           */
-        var countryCode: js.UndefOr[String] = js.native
+        var countryCode: js.UndefOr[String] = js.undefined
         
         /** Identifies the resource as a customer address. Value: customers#address */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** An example of a locality value is the city of San Francisco. */
-        var locality: js.UndefOr[String] = js.native
+        var locality: js.UndefOr[String] = js.undefined
         
         /** The company or company division name. This is required. */
-        var organizationName: js.UndefOr[String] = js.native
+        var organizationName: js.UndefOr[String] = js.undefined
         
         /** A postalCode example is a postal zip code such as 94043. This property is required when creating a new customer. */
-        var postalCode: js.UndefOr[String] = js.native
+        var postalCode: js.UndefOr[String] = js.undefined
         
         /** An example of a region value is CA for the state of California. */
-        var region: js.UndefOr[String] = js.native
+        var region: js.UndefOr[String] = js.undefined
       }
       object Address {
         
@@ -138,7 +136,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait ChangePlanRequest extends StObject {
         
         /**
@@ -146,10 +143,10 @@ object gapi {
           * is optional. If a deal code has already been added to a subscription, this property may be left empty and the existing discounted rate will still apply (if not empty, only provide
           * the deal code that is already present on the subscription). If a deal code has never been added to a subscription and this property is left blank, regular pricing will apply.
           */
-        var dealCode: js.UndefOr[String] = js.native
+        var dealCode: js.UndefOr[String] = js.undefined
         
         /** Identifies the resource as a subscription change plan request. Value: subscriptions#changePlanRequest */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * The planName property is required. This is the name of the subscription's payment plan. For more information about the Google payment plans, see API concepts.
@@ -160,16 +157,16 @@ object gapi {
           * - FLEXIBLE - The flexible plan
           * - TRIAL - The 30-day free trial plan
           */
-        var planName: js.UndefOr[String] = js.native
+        var planName: js.UndefOr[String] = js.undefined
         
         /**
           * This is an optional property. This purchase order (PO) information is for resellers to use for their company tracking usage. If a purchaseOrderId value is given it appears in the
           * API responses and shows up in the invoice. The property accepts up to 80 plain text characters.
           */
-        var purchaseOrderId: js.UndefOr[String] = js.native
+        var purchaseOrderId: js.UndefOr[String] = js.undefined
         
         /** This is a required property. The seats property is the number of user seat licenses. */
-        var seats: js.UndefOr[Seats] = js.native
+        var seats: js.UndefOr[Seats] = js.undefined
       }
       object ChangePlanRequest {
         
@@ -214,44 +211,43 @@ object gapi {
         }
       }
       
-      @js.native
       trait Customer extends StObject {
         
         /**
           * Like the "Customer email" in the reseller tools, this email is the secondary contact used if something happens to the customer's service such as service outage or a security issue.
           * This property is required when creating a new customer and should not use the same domain as customerDomain.
           */
-        var alternateEmail: js.UndefOr[String] = js.native
+        var alternateEmail: js.UndefOr[String] = js.undefined
         
         /** The customer's primary domain name string. customerDomain is required when creating a new customer. Do not include the www prefix in the domain when adding a customer. */
-        var customerDomain: js.UndefOr[String] = js.native
+        var customerDomain: js.UndefOr[String] = js.undefined
         
         /** Whether the customer's primary domain has been verified. */
-        var customerDomainVerified: js.UndefOr[Boolean] = js.native
+        var customerDomainVerified: js.UndefOr[Boolean] = js.undefined
         
         /**
           * This property will always be returned in a response as the unique identifier generated by Google. In a request, this property can be either the primary domain or the unique
           * identifier generated by Google.
           */
-        var customerId: js.UndefOr[String] = js.native
+        var customerId: js.UndefOr[String] = js.undefined
         
         /** Identifies the resource as a customer. Value: reseller#customer */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * Customer contact phone number. Must start with "+" followed by the country code. The rest of the number can be contiguous numbers or respect the phone local format conventions, but
           * it must be a real phone number and not, for example, "123". This field is silently ignored if invalid.
           */
-        var phoneNumber: js.UndefOr[String] = js.native
+        var phoneNumber: js.UndefOr[String] = js.undefined
         
         /** A customer's address information. Each field has a limit of 255 charcters. */
-        var postalAddress: js.UndefOr[Address] = js.native
+        var postalAddress: js.UndefOr[Address] = js.undefined
         
         /**
           * URL to customer's Admin console dashboard. The read-only URL is generated by the API service. This is used if your client application requires the customer to complete a task in the
           * Admin console.
           */
-        var resourceUiUrl: js.UndefOr[String] = js.native
+        var resourceUiUrl: js.UndefOr[String] = js.undefined
       }
       object Customer {
         
@@ -334,17 +330,16 @@ object gapi {
         def update(request: Oauthtoken): Request[Customer] = js.native
       }
       
-      @js.native
       trait RenewalSettings extends StObject {
         
         /** Identifies the resource as a subscription renewal setting. Value: subscriptions#renewalSettings */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * Renewal settings for the annual commitment plan. For more detailed information, see renewal options in the administrator help center. When renewing a subscription, the renewalType
           * is a required property.
           */
-        var renewalType: js.UndefOr[String] = js.native
+        var renewalType: js.UndefOr[String] = js.undefined
       }
       object RenewalSettings {
         
@@ -371,14 +366,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ResellernotifyGetwatchdetailsResponse extends StObject {
         
         /** List of registered service accounts. */
-        var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.native
+        var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Topic name of the PubSub */
-        var topicName: js.UndefOr[String] = js.native
+        var topicName: js.UndefOr[String] = js.undefined
       }
       object ResellernotifyGetwatchdetailsResponse {
         
@@ -427,31 +421,30 @@ object gapi {
         def unregister(request: Fields): Request[ResellernotifyResource] = js.native
       }
       
-      @js.native
       trait Seats extends StObject {
         
         /** Identifies the resource as a subscription seat setting. Value: subscriptions#seats */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * Read-only field containing the current number of users that are assigned a license for the product defined in skuId. This field's value is equivalent to the numerical count of users
           * returned by the Enterprise License Manager API method: listForProductAndSku
           */
-        var licensedNumberOfSeats: js.UndefOr[Double] = js.native
+        var licensedNumberOfSeats: js.UndefOr[Double] = js.undefined
         
         /**
           * This is a required property and is exclusive to subscriptions with FLEXIBLE or TRIAL plans. This property sets the maximum number of licensed users allowed on a subscription. This
           * quantity can be increased up to the maximum limit defined in the reseller's contract. The minimum quantity is the current number of users in the customer account. Note: G Suite
           * subscriptions automatically assign a license to every user.
           */
-        var maximumNumberOfSeats: js.UndefOr[Double] = js.native
+        var maximumNumberOfSeats: js.UndefOr[Double] = js.undefined
         
         /**
           * This is a required property and is exclusive to subscriptions with ANNUAL_MONTHLY_PAY and ANNUAL_YEARLY_PAY plans. This property sets the maximum number of licenses assignable to
           * users on a subscription. The reseller can add more licenses, but once set, the numberOfSeats cannot be reduced until renewal. The reseller is invoiced based on the numberOfSeats
           * value regardless of how many of these user licenses are assigned. Note: G Suite subscriptions automatically assign a license to every user.
           */
-        var numberOfSeats: js.UndefOr[Double] = js.native
+        var numberOfSeats: js.UndefOr[Double] = js.undefined
       }
       object Seats {
         
@@ -490,77 +483,76 @@ object gapi {
         }
       }
       
-      @js.native
       trait Subscription extends StObject {
         
         /** Read-only field that returns the current billing method for a subscription. */
-        var billingMethod: js.UndefOr[String] = js.native
+        var billingMethod: js.UndefOr[String] = js.undefined
         
         /** The creationTime property is the date when subscription was created. It is in milliseconds using the Epoch format. See an example Epoch converter. */
-        var creationTime: js.UndefOr[String] = js.native
+        var creationTime: js.UndefOr[String] = js.undefined
         
         /** Primary domain name of the customer */
-        var customerDomain: js.UndefOr[String] = js.native
+        var customerDomain: js.UndefOr[String] = js.undefined
         
         /**
           * This property will always be returned in a response as the unique identifier generated by Google. In a request, this property can be either the primary domain or the unique
           * identifier generated by Google.
           */
-        var customerId: js.UndefOr[String] = js.native
+        var customerId: js.UndefOr[String] = js.undefined
         
         /**
           * Google-issued code (100 char max) for discounted pricing on subscription plans. Deal code must be included in insert requests in order to receive discounted rate. This property is
           * optional, regular pricing applies if left empty.
           */
-        var dealCode: js.UndefOr[String] = js.native
+        var dealCode: js.UndefOr[String] = js.undefined
         
         /** Identifies the resource as a Subscription. Value: reseller#subscription */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * The plan property is required. In this version of the API, the G Suite plans are the flexible plan, annual commitment plan, and the 30-day free trial plan. For more information
           * about the API"s payment plans, see the API concepts.
           */
-        var plan: js.UndefOr[CommitmentInterval] = js.native
+        var plan: js.UndefOr[CommitmentInterval] = js.undefined
         
         /**
           * This is an optional property. This purchase order (PO) information is for resellers to use for their company tracking usage. If a purchaseOrderId value is given it appears in the
           * API responses and shows up in the invoice. The property accepts up to 80 plain text characters.
           */
-        var purchaseOrderId: js.UndefOr[String] = js.native
+        var purchaseOrderId: js.UndefOr[String] = js.undefined
         
         /** Renewal settings for the annual commitment plan. For more detailed information, see renewal options in the administrator help center. */
-        var renewalSettings: js.UndefOr[RenewalSettings] = js.native
+        var renewalSettings: js.UndefOr[RenewalSettings] = js.undefined
         
         /**
           * URL to customer's Subscriptions page in the Admin console. The read-only URL is generated by the API service. This is used if your client application requires the customer to
           * complete a task using the Subscriptions page in the Admin console.
           */
-        var resourceUiUrl: js.UndefOr[String] = js.native
+        var resourceUiUrl: js.UndefOr[String] = js.undefined
         
         /** This is a required property. The number and limit of user seat licenses in the plan. */
-        var seats: js.UndefOr[Seats] = js.native
+        var seats: js.UndefOr[Seats] = js.undefined
         
         /**
           * A required property. The skuId is a unique system identifier for a product's SKU assigned to a customer in the subscription. For products and SKUs available in this version of the
           * API, see  Product and SKU IDs.
           */
-        var skuId: js.UndefOr[String] = js.native
+        var skuId: js.UndefOr[String] = js.undefined
         
         /**
           * Read-only external display name for a product's SKU assigned to a customer in the subscription. SKU names are subject to change at Google's discretion. For products and SKUs
           * available in this version of the API, see  Product and SKU IDs.
           */
-        var skuName: js.UndefOr[String] = js.native
+        var skuName: js.UndefOr[String] = js.undefined
         
         /** This is an optional property. */
-        var status: js.UndefOr[String] = js.native
+        var status: js.UndefOr[String] = js.undefined
         
         /**
           * The subscriptionId is the subscription identifier and is unique for each customer. This is a required property. Since a subscriptionId changes when a subscription is updated, we
           * recommend not using this ID as a key for persistent data. Use the subscriptionId as described in retrieve all reseller subscriptions.
           */
-        var subscriptionId: js.UndefOr[String] = js.native
+        var subscriptionId: js.UndefOr[String] = js.undefined
         
         /**
           * Read-only field containing an enumerable of all the current suspension reasons for a subscription. It is possible for a subscription to have many concurrent, overlapping suspension
@@ -573,13 +565,13 @@ object gapi {
           * - TRIAL_ENDED - The customer's trial expired without a plan selected.
           * - OTHER - The customer is suspended for an internal Google reason (e.g. abuse or otherwise).
           */
-        var suspensionReasons: js.UndefOr[js.Array[String]] = js.native
+        var suspensionReasons: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Read-only transfer related information for the subscription. For more information, see retrieve transferable subscriptions for a customer. */
-        var transferInfo: js.UndefOr[MinimumTransferableSeats] = js.native
+        var transferInfo: js.UndefOr[MinimumTransferableSeats] = js.undefined
         
         /** The G Suite annual commitment and flexible payment plans can be in a 30-day free trial. For more information, see the API concepts. */
-        var trialSettings: js.UndefOr[IsInTrial] = js.native
+        var trialSettings: js.UndefOr[IsInTrial] = js.undefined
       }
       object Subscription {
         
@@ -705,17 +697,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait Subscriptions extends StObject {
         
         /** Identifies the resource as a collection of subscriptions. Value: reseller#subscriptions */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The continuation token, used to page through large result sets. Provide this value in a subsequent request to return the next page of results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** The subscriptions in this page of results. */
-        var subscriptions: js.UndefOr[js.Array[Subscription]] = js.native
+        var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
       }
       object Subscriptions {
         

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,35 +19,44 @@ object mod extends Shortcut {
   object DownloadTaskState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[DownloadTaskState with String] = js.native
+    def apply(value: String): js.UndefOr[DownloadTaskState & String] = js.native
     
     @js.native
-    sealed trait DONE extends DownloadTaskState
-    /* "DONE" */ val DONE: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DONE with String = js.native
+    sealed trait DONE
+      extends StObject
+         with DownloadTaskState
+    /* "DONE" */ val DONE: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DONE & String = js.native
     
     @js.native
-    sealed trait DOWNLOADING extends DownloadTaskState
-    /* "DOWNLOADING" */ val DOWNLOADING: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DOWNLOADING with String = js.native
+    sealed trait DOWNLOADING
+      extends StObject
+         with DownloadTaskState
+    /* "DOWNLOADING" */ val DOWNLOADING: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DOWNLOADING & String = js.native
     
     @js.native
-    sealed trait FAILED extends DownloadTaskState
-    /* "FAILED" */ val FAILED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.FAILED with String = js.native
+    sealed trait FAILED
+      extends StObject
+         with DownloadTaskState
+    /* "FAILED" */ val FAILED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.FAILED & String = js.native
     
     @js.native
-    sealed trait PAUSED extends DownloadTaskState
-    /* "PAUSED" */ val PAUSED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.PAUSED with String = js.native
+    sealed trait PAUSED
+      extends StObject
+         with DownloadTaskState
+    /* "PAUSED" */ val PAUSED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.PAUSED & String = js.native
     
     @js.native
-    sealed trait STOPPED extends DownloadTaskState
-    /* "STOPPED" */ val STOPPED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.STOPPED with String = js.native
+    sealed trait STOPPED
+      extends StObject
+         with DownloadTaskState
+    /* "STOPPED" */ val STOPPED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.STOPPED & String = js.native
   }
   
-  @js.native
   trait Network extends StObject {
     
-    var ALL: String = js.native
+    var ALL: String
     
-    var WIFI_ONLY: String = js.native
+    var WIFI_ONLY: String
   }
   object Network {
     
@@ -67,14 +75,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Priority extends StObject {
     
-    var HIGH: String = js.native
+    var HIGH: String
     
-    var LOW: String = js.native
+    var LOW: String
     
-    var MEDIUM: String = js.native
+    var MEDIUM: String
   }
   object Priority {
     
@@ -116,10 +123,9 @@ object mod extends Shortcut {
   
   type CheckForExistingDownloads_ = js.Function0[js.Promise[js.Array[DownloadTask]]]
   
-  @js.native
   trait Directories_ extends StObject {
     
-    var documents: String = js.native
+    var documents: String
   }
   object Directories_ {
     
@@ -141,16 +147,15 @@ object mod extends Shortcut {
   
   type DownloadHeaders = StringDictionary[String | Null]
   
-  @js.native
   trait DownloadOption extends StObject {
     
-    var destination: String = js.native
+    var destination: String
     
-    var headers: js.UndefOr[DownloadHeaders] = js.native
+    var headers: js.UndefOr[DownloadHeaders] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var url: String = js.native
+    var url: String
   }
   object DownloadOption {
     
@@ -180,48 +185,124 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DownloadTask extends StObject {
     
-    def _beginHandler(expectedBytes: Double): js.Any = js.native
+    def _beginHandler(expectedBytes: Double): js.Any
     @JSName("_beginHandler")
-    var _beginHandler_Original: BeginHandler = js.native
+    var _beginHandler_Original: BeginHandler
     
-    def _doneHandler(): js.Any = js.native
+    def _doneHandler(): js.Any
     @JSName("_doneHandler")
-    var _doneHandler_Original: DoneHandler = js.native
+    var _doneHandler_Original: DoneHandler
     
-    def _errorHandler(error: js.Any, errorCode: js.Any): js.Any = js.native
+    def _errorHandler(error: js.Any, errorCode: js.Any): js.Any
     @JSName("_errorHandler")
-    var _errorHandler_Original: ErrorHandler = js.native
+    var _errorHandler_Original: ErrorHandler
     
-    def _progressHandler(percent: Double, bytesWritten: Double, totalBytes: Double): js.Any = js.native
+    def _progressHandler(percent: Double, bytesWritten: Double, totalBytes: Double): js.Any
     @JSName("_progressHandler")
-    var _progressHandler_Original: ProgressHandler = js.native
+    var _progressHandler_Original: ProgressHandler
     
-    def begin(handler: BeginHandler): DownloadTask = js.native
+    def begin(handler: BeginHandler): DownloadTask
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
     
-    def done(handler: DoneHandler): DownloadTask = js.native
+    def done(handler: DoneHandler): DownloadTask
     
-    def error(handler: ErrorHandler): DownloadTask = js.native
+    def error(handler: ErrorHandler): DownloadTask
     
-    var id: String = js.native
+    var id: String
     
-    def pause(): js.Any = js.native
+    def pause(): js.Any
     
-    var percent: Double = js.native
+    var percent: Double
     
-    def progress(handler: ProgressHandler): DownloadTask = js.native
+    def progress(handler: ProgressHandler): DownloadTask
     
-    def resume(): js.Any = js.native
+    def resume(): js.Any
     
-    var state: DownloadTaskState = js.native
+    var state: DownloadTaskState
     
-    def stop(): js.Any = js.native
+    def stop(): js.Any
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
+  }
+  object DownloadTask {
+    
+    @scala.inline
+    def apply(
+      _beginHandler: /* expectedBytes */ Double => js.Any,
+      _doneHandler: () => js.Any,
+      _errorHandler: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any,
+      _progressHandler: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any,
+      begin: BeginHandler => DownloadTask,
+      bytesWritten: Double,
+      done: DoneHandler => DownloadTask,
+      error: ErrorHandler => DownloadTask,
+      id: String,
+      pause: () => js.Any,
+      percent: Double,
+      progress: ProgressHandler => DownloadTask,
+      resume: () => js.Any,
+      state: DownloadTaskState,
+      stop: () => js.Any,
+      totalBytes: Double
+    ): DownloadTask = {
+      val __obj = js.Dynamic.literal(_beginHandler = js.Any.fromFunction1(_beginHandler), _doneHandler = js.Any.fromFunction0(_doneHandler), _errorHandler = js.Any.fromFunction2(_errorHandler), _progressHandler = js.Any.fromFunction3(_progressHandler), begin = js.Any.fromFunction1(begin), bytesWritten = bytesWritten.asInstanceOf[js.Any], done = js.Any.fromFunction1(done), error = js.Any.fromFunction1(error), id = id.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), percent = percent.asInstanceOf[js.Any], progress = js.Any.fromFunction1(progress), resume = js.Any.fromFunction0(resume), state = state.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), totalBytes = totalBytes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DownloadTask]
+    }
+    
+    @scala.inline
+    implicit class DownloadTaskMutableBuilder[Self <: DownloadTask] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBegin(value: BeginHandler => DownloadTask): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDone(value: DoneHandler => DownloadTask): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setError(value: ErrorHandler => DownloadTask): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProgress(value: ProgressHandler => DownloadTask): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setState(value: DownloadTaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_beginHandler(value: /* expectedBytes */ Double => js.Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def set_doneHandler(value: () => js.Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def set_errorHandler(value: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any): Self = StObject.set(x, "_errorHandler", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
+    }
   }
   
   type Download_ = js.Function1[/* options */ DownloadOption, DownloadTask]
@@ -230,42 +311,77 @@ object mod extends Shortcut {
   
   type ProgressHandler = js.Function3[/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double, js.Any]
   
-  @js.native
   trait RNBackgroundDownloader extends StObject {
     
-    var Network: typings.reactNativeBackgroundDownloader.mod.Network = js.native
+    var Network: typings.reactNativeBackgroundDownloader.mod.Network
     
-    var Priority: typings.reactNativeBackgroundDownloader.mod.Priority = js.native
+    var Priority: typings.reactNativeBackgroundDownloader.mod.Priority
     
-    def checkForExistingDownloads(): js.Promise[js.Array[DownloadTask]] = js.native
+    def checkForExistingDownloads(): js.Promise[js.Array[DownloadTask]]
     @JSName("checkForExistingDownloads")
-    var checkForExistingDownloads_Original: CheckForExistingDownloads_ = js.native
+    var checkForExistingDownloads_Original: CheckForExistingDownloads_
     
-    var directories: Directories_ = js.native
+    var directories: Directories_
     
-    def download(options: DownloadOption): DownloadTask = js.native
+    def download(options: DownloadOption): DownloadTask
     @JSName("download")
-    var download_Original: Download_ = js.native
+    var download_Original: Download_
     
-    def setHeaders(h: DownloadHeaders): Unit = js.native
+    def setHeaders(h: DownloadHeaders): Unit
     @JSName("setHeaders")
-    var setHeaders_Original: SetHeaders_ = js.native
+    var setHeaders_Original: SetHeaders_
+  }
+  object RNBackgroundDownloader {
+    
+    @scala.inline
+    def apply(
+      Network: Network,
+      Priority: Priority,
+      checkForExistingDownloads: () => js.Promise[js.Array[DownloadTask]],
+      directories: Directories_,
+      download: /* options */ DownloadOption => DownloadTask,
+      setHeaders: /* h */ DownloadHeaders => Unit
+    ): RNBackgroundDownloader = {
+      val __obj = js.Dynamic.literal(Network = Network.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], checkForExistingDownloads = js.Any.fromFunction0(checkForExistingDownloads), directories = directories.asInstanceOf[js.Any], download = js.Any.fromFunction1(download), setHeaders = js.Any.fromFunction1(setHeaders))
+      __obj.asInstanceOf[RNBackgroundDownloader]
+    }
+    
+    @scala.inline
+    implicit class RNBackgroundDownloaderMutableBuilder[Self <: RNBackgroundDownloader] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCheckForExistingDownloads(value: () => js.Promise[js.Array[DownloadTask]]): Self = StObject.set(x, "checkForExistingDownloads", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setDirectories(value: Directories_): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDownload(value: /* options */ DownloadOption => DownloadTask): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSetHeaders(value: /* h */ DownloadHeaders => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    }
   }
   
   type SetHeaders_ = js.Function1[/* h */ DownloadHeaders, Unit]
   
   type TaskInfo = String | TaskInfoObject
   
-  @js.native
   trait TaskInfoObject extends StObject {
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
     
-    var id: String = js.native
+    var id: String
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object TaskInfoObject {
     

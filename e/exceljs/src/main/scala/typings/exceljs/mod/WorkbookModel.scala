@@ -3,55 +3,53 @@ package typings.exceljs.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookModel extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var company: String = js.native
+  var company: String
   
-  var contentStatus: String = js.native
+  var contentStatus: String
   
-  var created: Date = js.native
+  var created: Date
   
-  var creator: String = js.native
+  var creator: String
   
-  var definedNames: DefinedNamesModel = js.native
+  var definedNames: DefinedNamesModel
   
-  var description: String = js.native
+  var description: String
   
-  var keywords: String = js.native
+  var keywords: String
   
-  var language: String = js.native
+  var language: String
   
-  var lastModifiedBy: String = js.native
+  var lastModifiedBy: String
   
-  var lastPrinted: Date = js.native
+  var lastPrinted: Date
   
-  var manager: String = js.native
+  var manager: String
   
-  var media: js.Array[Media] = js.native
+  var media: js.Array[Media]
   
-  var modified: Date = js.native
+  var modified: Date
   
-  var properties: WorkbookProperties = js.native
+  var properties: WorkbookProperties
   
-  var revision: Date = js.native
+  var revision: Date
   
-  var sheets: js.Array[WorksheetModel] = js.native
+  var sheets: js.Array[WorksheetModel]
   
-  var subject: String = js.native
+  var subject: String
   
-  var themes: js.Array[String] = js.native
+  var themes: js.Array[String]
   
-  var title: String = js.native
+  var title: String
   
-  var views: js.Array[WorkbookView] = js.native
+  var views: js.Array[WorkbookView]
   
-  var worksheets: js.Array[Worksheet] = js.native
+  var worksheets: js.Array[Worksheet]
 }
 object WorkbookModel {
   

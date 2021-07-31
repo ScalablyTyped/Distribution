@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,24 +50,24 @@ trait Series extends StObject {
   
   def DataLabels(Index: Double): DataLabel = js.native
   @JSName("DataLabels")
-  var DataLabels_Original: DataLabels with (js.Function1[/* Index */ Double, DataLabel]) = js.native
+  var DataLabels_Original: DataLabels & (js.Function1[/* Index */ Double, DataLabel]) = js.native
   
   def Delete(): js.Any = js.native
   
   def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType): js.Any = js.native
-  def ErrorBar(
-    Direction: XlErrorBarDirection,
-    Include: XlErrorBarInclude,
-    Type: XlErrorBarType,
-    Amount: js.UndefOr[scala.Nothing],
-    MinusValues: js.Any
-  ): js.Any = js.native
   def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType, Amount: js.Any): js.Any = js.native
   def ErrorBar(
     Direction: XlErrorBarDirection,
     Include: XlErrorBarInclude,
     Type: XlErrorBarType,
     Amount: js.Any,
+    MinusValues: js.Any
+  ): js.Any = js.native
+  def ErrorBar(
+    Direction: XlErrorBarDirection,
+    Include: XlErrorBarInclude,
+    Type: XlErrorBarType,
+    Amount: Unit,
     MinusValues: js.Any
   ): js.Any = js.native
   
@@ -139,7 +138,7 @@ trait Series extends StObject {
   
   def Points(Index: Double): Point = js.native
   @JSName("Points")
-  var Points_Original: Points with (js.Function1[/* Index */ Double, Point]) = js.native
+  var Points_Original: Points & (js.Function1[/* Index */ Double, Point]) = js.native
   
   def Select(): js.Any = js.native
   
@@ -150,7 +149,7 @@ trait Series extends StObject {
   def Trendlines(Index: String): Trendline = js.native
   def Trendlines(Index: Double): Trendline = js.native
   @JSName("Trendlines")
-  var Trendlines_Original: Trendlines with (js.Function1[/* Index */ Double | String, Trendline]) = js.native
+  var Trendlines_Original: Trendlines & (js.Function1[/* Index */ Double | String, Trendline]) = js.native
   
   var Type: Double = js.native
   
@@ -160,49 +159,19 @@ trait Series extends StObject {
   
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
 }

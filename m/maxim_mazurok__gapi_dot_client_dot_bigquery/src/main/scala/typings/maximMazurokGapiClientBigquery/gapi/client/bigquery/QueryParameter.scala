@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryParameter extends StObject {
   
   /** [Optional] If unset, this is a positional parameter. Otherwise, should be unique within a query. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Required] The type of this parameter. */
-  var parameterType: js.UndefOr[QueryParameterType] = js.native
+  var parameterType: js.UndefOr[QueryParameterType] = js.undefined
   
   /** [Required] The value of this parameter. */
-  var parameterValue: js.UndefOr[QueryParameterValue] = js.native
+  var parameterValue: js.UndefOr[QueryParameterValue] = js.undefined
 }
 object QueryParameter {
   

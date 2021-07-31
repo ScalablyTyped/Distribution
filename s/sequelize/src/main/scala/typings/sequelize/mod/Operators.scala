@@ -2,90 +2,88 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Operator symbols to be used when querying data
   */
-@js.native
 trait Operators extends StObject {
   
-  var adjacent: js.Symbol = js.native
+  var adjacent: js.Symbol
   
-  var all: js.Symbol = js.native
+  var all: js.Symbol
   
-  var and: js.Symbol = js.native
+  var and: js.Symbol
   
-  var any: js.Symbol = js.native
+  var any: js.Symbol
   
-  var between: js.Symbol = js.native
+  var between: js.Symbol
   
-  var col: js.Symbol = js.native
+  var col: js.Symbol
   
-  var contained: js.Symbol = js.native
+  var contained: js.Symbol
   
-  var contains: js.Symbol = js.native
+  var contains: js.Symbol
   
   @JSName("eq")
-  var eq_FOperators: js.Symbol = js.native
+  var eq_FOperators: js.Symbol
   
-  var gt: js.Symbol = js.native
+  var gt: js.Symbol
   
-  var gte: js.Symbol = js.native
+  var gte: js.Symbol
   
-  var iLike: js.Symbol = js.native
+  var iLike: js.Symbol
   
-  var iRegexp: js.Symbol = js.native
+  var iRegexp: js.Symbol
   
-  var in: js.Symbol = js.native
+  var in: js.Symbol
   
-  var is: js.Symbol = js.native
+  var is: js.Symbol
   
-  var join: js.Symbol = js.native
+  var join: js.Symbol
   
-  var like: js.Symbol = js.native
+  var like: js.Symbol
   
-  var lt: js.Symbol = js.native
+  var lt: js.Symbol
   
-  var lte: js.Symbol = js.native
+  var lte: js.Symbol
   
   @JSName("ne")
-  var ne_FOperators: js.Symbol = js.native
+  var ne_FOperators: js.Symbol
   
-  var noExtendLeft: js.Symbol = js.native
+  var noExtendLeft: js.Symbol
   
-  var noExtendRight: js.Symbol = js.native
+  var noExtendRight: js.Symbol
   
-  var not: js.Symbol = js.native
+  var not: js.Symbol
   
-  var notBetween: js.Symbol = js.native
+  var notBetween: js.Symbol
   
-  var notILike: js.Symbol = js.native
+  var notILike: js.Symbol
   
-  var notIRegexp: js.Symbol = js.native
+  var notIRegexp: js.Symbol
   
-  var notIn: js.Symbol = js.native
+  var notIn: js.Symbol
   
-  var notLike: js.Symbol = js.native
+  var notLike: js.Symbol
   
-  var notRegexp: js.Symbol = js.native
+  var notRegexp: js.Symbol
   
-  var or: js.Symbol = js.native
+  var or: js.Symbol
   
-  var overlap: js.Symbol = js.native
+  var overlap: js.Symbol
   
-  var placeholder: js.Symbol = js.native
+  var placeholder: js.Symbol
   
-  var raw: js.Symbol = js.native
+  var raw: js.Symbol
   
-  var regexp: js.Symbol = js.native
+  var regexp: js.Symbol
   
-  var strictLeft: js.Symbol = js.native
+  var strictLeft: js.Symbol
   
-  var strictRight: js.Symbol = js.native
+  var strictRight: js.Symbol
   
-  var values: js.Symbol = js.native
+  var values: js.Symbol
 }
 object Operators {
   

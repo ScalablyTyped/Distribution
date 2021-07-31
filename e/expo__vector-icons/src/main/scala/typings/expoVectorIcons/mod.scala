@@ -21,10 +21,13 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@expo/vector-icons", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@expo/vector-icons", "AntDesign")
@@ -394,29 +397,22 @@ object mod {
     override def _to: Icon[String, zocial] = ^
   }
   
-  @JSImport("@expo/vector-icons", "createIconSet")
-  @js.native
-  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = js.native
-  @JSImport("@expo/vector-icons", "createIconSet")
-  @js.native
-  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = js.native
+  @scala.inline
+  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
+  @scala.inline
+  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any], fontStyle.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
   
-  @JSImport("@expo/vector-icons", "createIconSetFromFontello")
-  @js.native
-  def createIconSetFromFontello(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): js.Any = js.native
+  @scala.inline
+  def createIconSetFromFontello(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@expo/vector-icons", "createIconSetFromIcoMoon")
-  @js.native
-  def createIconSetFromIcoMoon(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = js.native
+  @scala.inline
+  def createIconSetFromIcoMoon(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
   
-  @JSImport("@expo/vector-icons", "createMu")
-  @js.native
-  def createMu(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = js.native
+  @scala.inline
+  def createMu(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMu")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
   
-  @JSImport("@expo/vector-icons", "createMultiStyleIconSet")
-  @js.native
-  def createMultiStyleIconSet(styles: FontStyles): js.Any = js.native
-  @JSImport("@expo/vector-icons", "createMultiStyleIconSet")
-  @js.native
-  def createMultiStyleIconSet(styles: FontStyles, optionsInput: js.Object): js.Any = js.native
+  @scala.inline
+  def createMultiStyleIconSet(styles: FontStyles): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createMultiStyleIconSet(styles: FontStyles, optionsInput: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any], optionsInput.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

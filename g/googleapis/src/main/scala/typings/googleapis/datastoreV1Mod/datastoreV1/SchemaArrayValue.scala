@@ -2,20 +2,18 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An array value.
   */
-@js.native
 trait SchemaArrayValue extends StObject {
   
   /**
     * Values in the array. The order of values in an array is preserved as long
     * as all values have identical settings for &#39;exclude_from_indexes&#39;.
     */
-  var values: js.UndefOr[js.Array[SchemaValue]] = js.native
+  var values: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
 object SchemaArrayValue {
   

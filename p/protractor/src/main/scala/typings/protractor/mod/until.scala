@@ -9,105 +9,84 @@ import typings.seleniumWebdriver.mod.WebElementCondition
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object until {
   
-  @JSImport("protractor", "until.ableToSwitchToFrame")
+  @JSImport("protractor", "until")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def ableToSwitchToFrame(
     frame: js.Function1[
       /* webdriver */ typings.seleniumWebdriver.mod.WebDriver, 
       typings.seleniumWebdriver.mod.WebElement
     ]
-  ): Condition[Boolean] = js.native
-  @JSImport("protractor", "until.ableToSwitchToFrame")
-  @js.native
-  def ableToSwitchToFrame(frame: Double): Condition[Boolean] = js.native
-  @JSImport("protractor", "until.ableToSwitchToFrame")
-  @js.native
-  def ableToSwitchToFrame(frame: ByHash): Condition[Boolean] = js.native
-  @JSImport("protractor", "until.ableToSwitchToFrame")
-  @js.native
-  def ableToSwitchToFrame(frame: By): Condition[Boolean] = js.native
-  @JSImport("protractor", "until.ableToSwitchToFrame")
-  @js.native
-  def ableToSwitchToFrame(frame: typings.seleniumWebdriver.mod.WebElement): Condition[Boolean] = js.native
+  ): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ableToSwitchToFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
+  @scala.inline
+  def ableToSwitchToFrame(frame: Double): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ableToSwitchToFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
+  @scala.inline
+  def ableToSwitchToFrame(frame: ByHash): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ableToSwitchToFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
+  @scala.inline
+  def ableToSwitchToFrame(frame: By): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ableToSwitchToFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
+  @scala.inline
+  def ableToSwitchToFrame(frame: typings.seleniumWebdriver.mod.WebElement): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ableToSwitchToFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.alertIsPresent")
-  @js.native
-  def alertIsPresent(): Condition[Alert] = js.native
+  @scala.inline
+  def alertIsPresent(): Condition[Alert] = ^.asInstanceOf[js.Dynamic].applyDynamic("alertIsPresent")().asInstanceOf[Condition[Alert]]
   
-  @JSImport("protractor", "until.elementIsDisabled")
-  @js.native
-  def elementIsDisabled(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsDisabled(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementIsEnabled")
-  @js.native
-  def elementIsEnabled(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsEnabled(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsEnabled")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementIsNotSelected")
-  @js.native
-  def elementIsNotSelected(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsNotSelected(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsNotSelected")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementIsNotVisible")
-  @js.native
-  def elementIsNotVisible(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsNotVisible(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsNotVisible")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementIsSelected")
-  @js.native
-  def elementIsSelected(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsSelected(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsSelected")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementIsVisible")
-  @js.native
-  def elementIsVisible(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = js.native
+  @scala.inline
+  def elementIsVisible(element: typings.seleniumWebdriver.mod.WebElement): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsVisible")(element.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementLocated")
-  @js.native
-  def elementLocated(locator: Locator): WebElementCondition = js.native
+  @scala.inline
+  def elementLocated(locator: Locator): WebElementCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("elementLocated")(locator.asInstanceOf[js.Any]).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementTextContains")
-  @js.native
-  def elementTextContains(element: typings.seleniumWebdriver.mod.WebElement, substr: String): WebElementCondition = js.native
+  @scala.inline
+  def elementTextContains(element: typings.seleniumWebdriver.mod.WebElement, substr: String): WebElementCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("elementTextContains")(element.asInstanceOf[js.Any], substr.asInstanceOf[js.Any])).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementTextIs")
-  @js.native
-  def elementTextIs(element: typings.seleniumWebdriver.mod.WebElement, text: String): WebElementCondition = js.native
+  @scala.inline
+  def elementTextIs(element: typings.seleniumWebdriver.mod.WebElement, text: String): WebElementCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("elementTextIs")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementTextMatches")
-  @js.native
-  def elementTextMatches(element: typings.seleniumWebdriver.mod.WebElement, regex: RegExp): WebElementCondition = js.native
+  @scala.inline
+  def elementTextMatches(element: typings.seleniumWebdriver.mod.WebElement, regex: RegExp): WebElementCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("elementTextMatches")(element.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[WebElementCondition]
   
-  @JSImport("protractor", "until.elementsLocated")
-  @js.native
-  def elementsLocated(locator: Locator): Condition[js.Array[typings.seleniumWebdriver.mod.WebElement]] = js.native
+  @scala.inline
+  def elementsLocated(locator: Locator): Condition[js.Array[typings.seleniumWebdriver.mod.WebElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementsLocated")(locator.asInstanceOf[js.Any]).asInstanceOf[Condition[js.Array[typings.seleniumWebdriver.mod.WebElement]]]
   
-  @JSImport("protractor", "until.stalenessOf")
-  @js.native
-  def stalenessOf(element: typings.seleniumWebdriver.mod.WebElement): Condition[Boolean] = js.native
+  @scala.inline
+  def stalenessOf(element: typings.seleniumWebdriver.mod.WebElement): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("stalenessOf")(element.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.titleContains")
-  @js.native
-  def titleContains(substr: String): Condition[Boolean] = js.native
+  @scala.inline
+  def titleContains(substr: String): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("titleContains")(substr.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.titleIs")
-  @js.native
-  def titleIs(title: String): Condition[Boolean] = js.native
+  @scala.inline
+  def titleIs(title: String): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("titleIs")(title.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.titleMatches")
-  @js.native
-  def titleMatches(regex: RegExp): Condition[Boolean] = js.native
+  @scala.inline
+  def titleMatches(regex: RegExp): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("titleMatches")(regex.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.urlContains")
-  @js.native
-  def urlContains(substrUrl: String): Condition[Boolean] = js.native
+  @scala.inline
+  def urlContains(substrUrl: String): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlContains")(substrUrl.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.urlIs")
-  @js.native
-  def urlIs(url: String): Condition[Boolean] = js.native
+  @scala.inline
+  def urlIs(url: String): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlIs")(url.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
   
-  @JSImport("protractor", "until.urlMatches")
-  @js.native
-  def urlMatches(regex: RegExp): Condition[Boolean] = js.native
+  @scala.inline
+  def urlMatches(regex: RegExp): Condition[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(regex.asInstanceOf[js.Any]).asInstanceOf[Condition[Boolean]]
 }

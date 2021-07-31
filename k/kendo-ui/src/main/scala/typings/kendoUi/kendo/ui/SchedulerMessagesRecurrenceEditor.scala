@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesRecurrenceEditor extends StObject {
   
-  var daily: js.UndefOr[SchedulerMessagesRecurrenceEditorDaily] = js.native
+  var daily: js.UndefOr[SchedulerMessagesRecurrenceEditorDaily] = js.undefined
   
-  var end: js.UndefOr[SchedulerMessagesRecurrenceEditorEnd] = js.native
+  var end: js.UndefOr[SchedulerMessagesRecurrenceEditorEnd] = js.undefined
   
-  var frequencies: js.UndefOr[SchedulerMessagesRecurrenceEditorFrequencies] = js.native
+  var frequencies: js.UndefOr[SchedulerMessagesRecurrenceEditorFrequencies] = js.undefined
   
-  var monthly: js.UndefOr[SchedulerMessagesRecurrenceEditorMonthly] = js.native
+  var monthly: js.UndefOr[SchedulerMessagesRecurrenceEditorMonthly] = js.undefined
   
-  var offsetPositions: js.UndefOr[SchedulerMessagesRecurrenceEditorOffsetPositions] = js.native
+  var offsetPositions: js.UndefOr[SchedulerMessagesRecurrenceEditorOffsetPositions] = js.undefined
   
-  var recurrenceEditorTitle: js.UndefOr[String] = js.native
+  var recurrenceEditorTitle: js.UndefOr[String] = js.undefined
   
-  var weekdays: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekdays] = js.native
+  var weekdays: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekdays] = js.undefined
   
-  var weekly: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekly] = js.native
+  var weekly: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekly] = js.undefined
   
-  var yearly: js.UndefOr[SchedulerMessagesRecurrenceEditorYearly] = js.native
+  var yearly: js.UndefOr[SchedulerMessagesRecurrenceEditorYearly] = js.undefined
 }
 object SchedulerMessagesRecurrenceEditor {
   

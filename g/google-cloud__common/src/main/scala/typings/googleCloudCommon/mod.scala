@@ -9,7 +9,6 @@ import typings.googleCloudCommon.utilMod.GoogleInnerError
 import typings.googleCloudCommon.utilMod.Util_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,6 +23,10 @@ object mod {
   /* static members */
   object ApiError {
     
+    @JSImport("@google-cloud/common", "ApiError")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Pieces together an error message by combining all unique error messages
       * returned from a single GoogleError
@@ -34,12 +37,10 @@ object mod {
       * @param {GoogleInnerError[]} [errors] Inner errors, if any.
       * @returns {string}
       */
-    @JSImport("@google-cloud/common", "ApiError.createMultiErrorMessage")
-    @js.native
-    def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
-    @JSImport("@google-cloud/common", "ApiError.createMultiErrorMessage")
-    @js.native
-    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
+    @scala.inline
+    def createMultiErrorMessage(err: GoogleErrorBody): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiErrorMessage")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiErrorMessage")(err.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@google-cloud/common", "Operation")

@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes the requested sheet.
   */
-@js.native
 trait SchemaDeleteSheetRequest extends StObject {
   
   /**
     * The ID of the sheet to delete.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeleteSheetRequest {
   

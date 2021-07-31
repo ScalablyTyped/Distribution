@@ -2,24 +2,22 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to path.intersection()
   */
-@js.native
 trait IPathIntersectionBaseOptions extends StObject {
   
   /**
     * Optional boolean to only return deep intersections, i.e. not on an end point or tangent.
     */
-  var excludeTangents: js.UndefOr[Boolean] = js.native
+  var excludeTangents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional output variable which will be set to true if the paths are overlapped.
     */
-  var out_AreOverlapped: js.UndefOr[Boolean] = js.native
+  var out_AreOverlapped: js.UndefOr[Boolean] = js.undefined
 }
 object IPathIntersectionBaseOptions {
   

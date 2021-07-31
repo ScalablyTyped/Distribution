@@ -3,14 +3,12 @@ package typings.semanticUiSidebar.anon
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'defaultTransition'> */
-@js.native
 trait PickImpldefaultTransition extends StObject {
   
-  var defaultTransition: DefaultTransitionSettings = js.native
+  var defaultTransition: DefaultTransitionSettings
 }
 object PickImpldefaultTransition {
   

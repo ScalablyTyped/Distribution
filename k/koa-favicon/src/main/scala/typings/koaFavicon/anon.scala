@@ -2,18 +2,16 @@ package typings.koaFavicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Maxage extends StObject {
     
     /**
       * cache-control max-age directive in ms, defaulting to 1 day.
       */
-    var maxage: js.UndefOr[Double] = js.native
+    var maxage: js.UndefOr[Double] = js.undefined
   }
   object Maxage {
     

@@ -85,10 +85,8 @@ import typings.phaser.spine.WindowedMean
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofspine extends StObject {
   
   var Animation: (Instantiable3[
@@ -96,43 +94,43 @@ trait Typeofspine extends StObject {
     /* timelines */ js.Array[Timeline], 
     /* duration */ Double, 
     typings.phaser.spine.Animation
-  ]) with TypeofAnimation = js.native
+  ]) & TypeofAnimation
   
-  var AnimationState: (Instantiable1[/* data */ AnimationStateData, typings.phaser.spine.AnimationState]) with TypeofAnimationState = js.native
+  var AnimationState: (Instantiable1[/* data */ AnimationStateData, typings.phaser.spine.AnimationState]) & TypeofAnimationState
   
-  var AnimationStateAdapter2: Instantiable0[typings.phaser.spine.AnimationStateAdapter2] = js.native
+  var AnimationStateAdapter2: Instantiable0[typings.phaser.spine.AnimationStateAdapter2]
   
-  var AnimationStateData: Instantiable1[/* skeletonData */ SkeletonData, typings.phaser.spine.AnimationStateData] = js.native
+  var AnimationStateData: Instantiable1[/* skeletonData */ SkeletonData, typings.phaser.spine.AnimationStateData]
   
   var AssetManager: (Instantiable2[
     /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
     /* pathPrefix */ js.UndefOr[String], 
     typings.phaser.spine.AssetManager
-  ]) with TypeofAssetManager = js.native
+  ]) & TypeofAssetManager
   
-  var AtlasAttachmentLoader: Instantiable1[/* atlas */ TextureAtlas, typings.phaser.spine.AtlasAttachmentLoader] = js.native
+  var AtlasAttachmentLoader: Instantiable1[/* atlas */ TextureAtlas, typings.phaser.spine.AtlasAttachmentLoader]
   
-  var Attachment: Instantiable1[/* name */ String, typings.phaser.spine.Attachment] = js.native
+  var Attachment: Instantiable1[/* name */ String, typings.phaser.spine.Attachment]
   
-  var AttachmentTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.AttachmentTimeline] = js.native
+  var AttachmentTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.AttachmentTimeline]
   
   var Bone: Instantiable3[
     /* data */ BoneData, 
     /* skeleton */ Skeleton, 
     /* parent */ typings.phaser.spine.Bone, 
     typings.phaser.spine.Bone
-  ] = js.native
+  ]
   
   var BoneData: Instantiable3[
     /* index */ Double, 
     /* name */ String, 
     /* parent */ typings.phaser.spine.BoneData, 
     typings.phaser.spine.BoneData
-  ] = js.native
+  ]
   
-  var BoundingBoxAttachment: Instantiable1[/* name */ String, typings.phaser.spine.BoundingBoxAttachment] = js.native
+  var BoundingBoxAttachment: Instantiable1[/* name */ String, typings.phaser.spine.BoundingBoxAttachment]
   
-  var ClippingAttachment: Instantiable1[/* name */ String, typings.phaser.spine.ClippingAttachment] = js.native
+  var ClippingAttachment: Instantiable1[/* name */ String, typings.phaser.spine.ClippingAttachment]
   
   var Color: (Instantiable4[
     /* r */ js.UndefOr[Double], 
@@ -140,169 +138,169 @@ trait Typeofspine extends StObject {
     /* b */ js.UndefOr[Double], 
     /* a */ js.UndefOr[Double], 
     typings.phaser.spine.Color
-  ]) with TypeofColor = js.native
+  ]) & TypeofColor
   
-  var ColorTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.ColorTimeline]) with TypeofColorTimeline = js.native
+  var ColorTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.ColorTimeline]) & TypeofColorTimeline
   
   var ConstraintData: Instantiable3[
     /* name */ String, 
     /* order */ Double, 
     /* skinRequired */ Boolean, 
     typings.phaser.spine.ConstraintData
-  ] = js.native
+  ]
   
-  var CurveTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.CurveTimeline]) with TypeofCurveTimeline = js.native
+  var CurveTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.CurveTimeline]) & TypeofCurveTimeline
   
-  var DebugUtils: Instantiable0[typings.phaser.spine.DebugUtils] with TypeofDebugUtils = js.native
+  var DebugUtils: Instantiable0[typings.phaser.spine.DebugUtils] & TypeofDebugUtils
   
-  var DeformTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.DeformTimeline] = js.native
+  var DeformTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.DeformTimeline]
   
-  var DrawOrderTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.DrawOrderTimeline] = js.native
+  var DrawOrderTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.DrawOrderTimeline]
   
-  var Event: Instantiable2[/* time */ Double, /* data */ EventData, typings.phaser.spine.Event] = js.native
+  var Event: Instantiable2[/* time */ Double, /* data */ EventData, typings.phaser.spine.Event]
   
-  var EventData: Instantiable1[/* name */ String, typings.phaser.spine.EventData] = js.native
+  var EventData: Instantiable1[/* name */ String, typings.phaser.spine.EventData]
   
-  var EventQueue: Instantiable1[/* animState */ AnimationState, typings.phaser.spine.EventQueue] = js.native
+  var EventQueue: Instantiable1[/* animState */ AnimationState, typings.phaser.spine.EventQueue]
   
-  var EventTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.EventTimeline] = js.native
+  var EventTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.EventTimeline]
   
-  var FakeTexture: Instantiable0[typings.phaser.spine.FakeTexture] = js.native
+  var FakeTexture: Instantiable0[typings.phaser.spine.FakeTexture]
   
   var IkConstraint: Instantiable2[
     /* data */ IkConstraintData, 
     /* skeleton */ Skeleton, 
     typings.phaser.spine.IkConstraint
-  ] = js.native
+  ]
   
-  var IkConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.IkConstraintData] = js.native
+  var IkConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.IkConstraintData]
   
-  var IkConstraintTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.IkConstraintTimeline]) with TypeofIkConstraintTimelin = js.native
+  var IkConstraintTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.IkConstraintTimeline]) & TypeofIkConstraintTimelin
   
-  var IntSet: Instantiable0[typings.phaser.spine.IntSet] = js.native
+  var IntSet: Instantiable0[typings.phaser.spine.IntSet]
   
-  var Interpolation: Instantiable0[typings.phaser.spine.Interpolation] = js.native
+  var Interpolation: Instantiable0[typings.phaser.spine.Interpolation]
   
-  var JitterEffect: Instantiable2[/* jitterX */ Double, /* jitterY */ Double, typings.phaser.spine.JitterEffect] = js.native
+  var JitterEffect: Instantiable2[/* jitterX */ Double, /* jitterY */ Double, typings.phaser.spine.JitterEffect]
   
-  var MathUtils: Instantiable0[typings.phaser.spine.MathUtils] with TypeofMathUtils = js.native
+  var MathUtils: Instantiable0[typings.phaser.spine.MathUtils] & TypeofMathUtils
   
-  var MeshAttachment: Instantiable1[/* name */ String, typings.phaser.spine.MeshAttachment] = js.native
+  var MeshAttachment: Instantiable1[/* name */ String, typings.phaser.spine.MeshAttachment]
   
-  var PathAttachment: Instantiable1[/* name */ String, typings.phaser.spine.PathAttachment] = js.native
+  var PathAttachment: Instantiable1[/* name */ String, typings.phaser.spine.PathAttachment]
   
   var PathConstraint: (Instantiable2[
     /* data */ PathConstraintData, 
     /* skeleton */ Skeleton, 
     typings.phaser.spine.PathConstraint
-  ]) with TypeofPathConstraint = js.native
+  ]) & TypeofPathConstraint
   
-  var PathConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.PathConstraintData] = js.native
+  var PathConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.PathConstraintData]
   
-  var PathConstraintMixTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintMixTimeline]) with TypeofPathConstraintMixTi = js.native
+  var PathConstraintMixTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintMixTimeline]) & TypeofPathConstraintMixTi
   
-  var PathConstraintPositionTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintPositionTimeline]) with TypeofPathConstraintPosit = js.native
+  var PathConstraintPositionTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintPositionTimeline]) & TypeofPathConstraintPosit
   
-  var PathConstraintSpacingTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintSpacingTimeline] = js.native
+  var PathConstraintSpacingTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.PathConstraintSpacingTimeline]
   
-  var PointAttachment: Instantiable1[/* name */ String, typings.phaser.spine.PointAttachment] = js.native
+  var PointAttachment: Instantiable1[/* name */ String, typings.phaser.spine.PointAttachment]
   
   var Pool: Instantiable1[
     /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
     typings.phaser.spine.Pool[js.Object]
-  ] = js.native
+  ]
   
-  var Pow: Instantiable1[/* power */ Double, typings.phaser.spine.Pow] = js.native
+  var Pow: Instantiable1[/* power */ Double, typings.phaser.spine.Pow]
   
-  var PowOut: Instantiable1[/* power */ Double, typings.phaser.spine.PowOut] = js.native
+  var PowOut: Instantiable1[/* power */ Double, typings.phaser.spine.PowOut]
   
-  var RegionAttachment: (Instantiable1[/* name */ String, typings.phaser.spine.RegionAttachment]) with TypeofRegionAttachment = js.native
+  var RegionAttachment: (Instantiable1[/* name */ String, typings.phaser.spine.RegionAttachment]) & TypeofRegionAttachment
   
-  var RotateTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.RotateTimeline]) with TypeofRotateTimeline = js.native
+  var RotateTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.RotateTimeline]) & TypeofRotateTimeline
   
-  var ScaleTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.ScaleTimeline] = js.native
+  var ScaleTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.ScaleTimeline]
   
-  var SharedAssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], typings.phaser.spine.SharedAssetManager] = js.native
+  var SharedAssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], typings.phaser.spine.SharedAssetManager]
   
-  var ShearTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.ShearTimeline] = js.native
+  var ShearTimeline: Instantiable1[/* frameCount */ Double, typings.phaser.spine.ShearTimeline]
   
-  var Skeleton: Instantiable1[/* data */ SkeletonData, typings.phaser.spine.Skeleton] = js.native
+  var Skeleton: Instantiable1[/* data */ SkeletonData, typings.phaser.spine.Skeleton]
   
-  var SkeletonBinary: (Instantiable1[/* attachmentLoader */ AttachmentLoader, typings.phaser.spine.SkeletonBinary]) with TypeofSkeletonBinary = js.native
+  var SkeletonBinary: (Instantiable1[/* attachmentLoader */ AttachmentLoader, typings.phaser.spine.SkeletonBinary]) & TypeofSkeletonBinary
   
-  var SkeletonBounds: Instantiable0[typings.phaser.spine.SkeletonBounds] = js.native
+  var SkeletonBounds: Instantiable0[typings.phaser.spine.SkeletonBounds]
   
-  var SkeletonClipping: Instantiable0[typings.phaser.spine.SkeletonClipping] with TypeofSkeletonClipping = js.native
+  var SkeletonClipping: Instantiable0[typings.phaser.spine.SkeletonClipping] & TypeofSkeletonClipping
   
-  var SkeletonData: Instantiable0[typings.phaser.spine.SkeletonData] = js.native
+  var SkeletonData: Instantiable0[typings.phaser.spine.SkeletonData]
   
-  var SkeletonJson: (Instantiable1[/* attachmentLoader */ AttachmentLoader, typings.phaser.spine.SkeletonJson]) with TypeofSkeletonJson = js.native
+  var SkeletonJson: (Instantiable1[/* attachmentLoader */ AttachmentLoader, typings.phaser.spine.SkeletonJson]) & TypeofSkeletonJson
   
-  var Skin: Instantiable1[/* name */ String, typings.phaser.spine.Skin] = js.native
+  var Skin: Instantiable1[/* name */ String, typings.phaser.spine.Skin]
   
   var SkinEntry: Instantiable3[
     /* slotIndex */ Double, 
     /* name */ String, 
     /* attachment */ Attachment, 
     typings.phaser.spine.SkinEntry
-  ] = js.native
+  ]
   
-  var Slot: Instantiable2[/* data */ SlotData, /* bone */ Bone, typings.phaser.spine.Slot] = js.native
+  var Slot: Instantiable2[/* data */ SlotData, /* bone */ Bone, typings.phaser.spine.Slot]
   
   var SlotData: Instantiable3[
     /* index */ Double, 
     /* name */ String, 
     /* boneData */ BoneData, 
     typings.phaser.spine.SlotData
-  ] = js.native
+  ]
   
-  var SwirlEffect: (Instantiable1[/* radius */ Double, typings.phaser.spine.SwirlEffect]) with TypeofSwirlEffect = js.native
+  var SwirlEffect: (Instantiable1[/* radius */ Double, typings.phaser.spine.SwirlEffect]) & TypeofSwirlEffect
   
-  var Texture: (Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.Texture]) with TypeofTexture = js.native
+  var Texture: (Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.Texture]) & TypeofTexture
   
   var TextureAtlas: Instantiable2[
     /* atlasText */ String, 
     /* textureLoader */ js.Function1[/* path */ String, js.Any], 
     typings.phaser.spine.TextureAtlas
-  ] = js.native
+  ]
   
-  var TextureAtlasPage: Instantiable0[typings.phaser.spine.TextureAtlasPage] = js.native
+  var TextureAtlasPage: Instantiable0[typings.phaser.spine.TextureAtlasPage]
   
-  var TextureAtlasRegion: Instantiable0[typings.phaser.spine.TextureAtlasRegion] = js.native
+  var TextureAtlasRegion: Instantiable0[typings.phaser.spine.TextureAtlasRegion]
   
-  var TextureRegion: Instantiable0[typings.phaser.spine.TextureRegion] = js.native
+  var TextureRegion: Instantiable0[typings.phaser.spine.TextureRegion]
   
-  var TimeKeeper: Instantiable0[typings.phaser.spine.TimeKeeper] = js.native
+  var TimeKeeper: Instantiable0[typings.phaser.spine.TimeKeeper]
   
-  var TrackEntry: Instantiable0[typings.phaser.spine.TrackEntry] = js.native
+  var TrackEntry: Instantiable0[typings.phaser.spine.TrackEntry]
   
   var TransformConstraint: Instantiable2[
     /* data */ TransformConstraintData, 
     /* skeleton */ Skeleton, 
     typings.phaser.spine.TransformConstraint
-  ] = js.native
+  ]
   
-  var TransformConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.TransformConstraintData] = js.native
+  var TransformConstraintData: Instantiable1[/* name */ String, typings.phaser.spine.TransformConstraintData]
   
-  var TransformConstraintTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TransformConstraintTimeline]) with TypeofTransformConstraint = js.native
+  var TransformConstraintTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TransformConstraintTimeline]) & TypeofTransformConstraint
   
-  var TranslateTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TranslateTimeline]) with TypeofTranslateTimeline = js.native
+  var TranslateTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TranslateTimeline]) & TypeofTranslateTimeline
   
-  var Triangulator: Instantiable0[typings.phaser.spine.Triangulator] with TypeofTriangulator = js.native
+  var Triangulator: Instantiable0[typings.phaser.spine.Triangulator] & TypeofTriangulator
   
-  var TwoColorTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TwoColorTimeline]) with TypeofTwoColorTimeline = js.native
+  var TwoColorTimeline: (Instantiable1[/* frameCount */ Double, typings.phaser.spine.TwoColorTimeline]) & TypeofTwoColorTimeline
   
-  var Utils: Instantiable0[typings.phaser.spine.Utils] with TypeofUtils = js.native
+  var Utils: Instantiable0[typings.phaser.spine.Utils] & TypeofUtils
   
-  var Vector2: Instantiable2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], typings.phaser.spine.Vector2] = js.native
+  var Vector2: Instantiable2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], typings.phaser.spine.Vector2]
   
-  var VertexAttachment: (Instantiable1[/* name */ String, typings.phaser.spine.VertexAttachment]) with TypeofVertexAttachment = js.native
+  var VertexAttachment: (Instantiable1[/* name */ String, typings.phaser.spine.VertexAttachment]) & TypeofVertexAttachment
   
-  var WindowedMean: Instantiable1[/* windowSize */ js.UndefOr[Double], typings.phaser.spine.WindowedMean] = js.native
+  var WindowedMean: Instantiable1[/* windowSize */ js.UndefOr[Double], typings.phaser.spine.WindowedMean]
   
-  val canvas: Typeofcanvas = js.native
+  val canvas: Typeofcanvas
   
-  val webgl: Typeofwebgl = js.native
+  val webgl: Typeofwebgl
 }
 object Typeofspine {
   
@@ -313,15 +311,15 @@ object Typeofspine {
       /* timelines */ js.Array[Timeline], 
       /* duration */ Double, 
       Animation
-    ]) with TypeofAnimation,
-    AnimationState: (Instantiable1[/* data */ AnimationStateData, AnimationState]) with TypeofAnimationState,
+    ]) & TypeofAnimation,
+    AnimationState: (Instantiable1[/* data */ AnimationStateData, AnimationState]) & TypeofAnimationState,
     AnimationStateAdapter2: Instantiable0[AnimationStateAdapter2],
     AnimationStateData: Instantiable1[/* skeletonData */ SkeletonData, AnimationStateData],
     AssetManager: (Instantiable2[
       /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
       /* pathPrefix */ js.UndefOr[String], 
       AssetManager
-    ]) with TypeofAssetManager,
+    ]) & TypeofAssetManager,
     AtlasAttachmentLoader: Instantiable1[/* atlas */ TextureAtlas, AtlasAttachmentLoader],
     Attachment: Instantiable1[/* name */ String, Attachment],
     AttachmentTimeline: Instantiable1[/* frameCount */ Double, AttachmentTimeline],
@@ -335,11 +333,11 @@ object Typeofspine {
       /* b */ js.UndefOr[Double], 
       /* a */ js.UndefOr[Double], 
       Color
-    ]) with TypeofColor,
-    ColorTimeline: (Instantiable1[/* frameCount */ Double, ColorTimeline]) with TypeofColorTimeline,
+    ]) & TypeofColor,
+    ColorTimeline: (Instantiable1[/* frameCount */ Double, ColorTimeline]) & TypeofColorTimeline,
     ConstraintData: Instantiable3[/* name */ String, /* order */ Double, /* skinRequired */ Boolean, ConstraintData],
-    CurveTimeline: (Instantiable1[/* frameCount */ Double, CurveTimeline]) with TypeofCurveTimeline,
-    DebugUtils: Instantiable0[DebugUtils] with TypeofDebugUtils,
+    CurveTimeline: (Instantiable1[/* frameCount */ Double, CurveTimeline]) & TypeofCurveTimeline,
+    DebugUtils: Instantiable0[DebugUtils] & TypeofDebugUtils,
     DeformTimeline: Instantiable1[/* frameCount */ Double, DeformTimeline],
     DrawOrderTimeline: Instantiable1[/* frameCount */ Double, DrawOrderTimeline],
     Event: Instantiable2[/* time */ Double, /* data */ EventData, Event],
@@ -349,17 +347,17 @@ object Typeofspine {
     FakeTexture: Instantiable0[FakeTexture],
     IkConstraint: Instantiable2[/* data */ IkConstraintData, /* skeleton */ Skeleton, IkConstraint],
     IkConstraintData: Instantiable1[/* name */ String, IkConstraintData],
-    IkConstraintTimeline: (Instantiable1[/* frameCount */ Double, IkConstraintTimeline]) with TypeofIkConstraintTimelin,
+    IkConstraintTimeline: (Instantiable1[/* frameCount */ Double, IkConstraintTimeline]) & TypeofIkConstraintTimelin,
     IntSet: Instantiable0[IntSet],
     Interpolation: Instantiable0[Interpolation],
     JitterEffect: Instantiable2[/* jitterX */ Double, /* jitterY */ Double, JitterEffect],
-    MathUtils: Instantiable0[MathUtils] with TypeofMathUtils,
+    MathUtils: Instantiable0[MathUtils] & TypeofMathUtils,
     MeshAttachment: Instantiable1[/* name */ String, MeshAttachment],
     PathAttachment: Instantiable1[/* name */ String, PathAttachment],
-    PathConstraint: (Instantiable2[/* data */ PathConstraintData, /* skeleton */ Skeleton, PathConstraint]) with TypeofPathConstraint,
+    PathConstraint: (Instantiable2[/* data */ PathConstraintData, /* skeleton */ Skeleton, PathConstraint]) & TypeofPathConstraint,
     PathConstraintData: Instantiable1[/* name */ String, PathConstraintData],
-    PathConstraintMixTimeline: (Instantiable1[/* frameCount */ Double, PathConstraintMixTimeline]) with TypeofPathConstraintMixTi,
-    PathConstraintPositionTimeline: (Instantiable1[/* frameCount */ Double, PathConstraintPositionTimeline]) with TypeofPathConstraintPosit,
+    PathConstraintMixTimeline: (Instantiable1[/* frameCount */ Double, PathConstraintMixTimeline]) & TypeofPathConstraintMixTi,
+    PathConstraintPositionTimeline: (Instantiable1[/* frameCount */ Double, PathConstraintPositionTimeline]) & TypeofPathConstraintPosit,
     PathConstraintSpacingTimeline: Instantiable1[/* frameCount */ Double, PathConstraintSpacingTimeline],
     PointAttachment: Instantiable1[/* name */ String, PointAttachment],
     Pool: Instantiable1[
@@ -368,23 +366,23 @@ object Typeofspine {
     ],
     Pow: Instantiable1[/* power */ Double, Pow],
     PowOut: Instantiable1[/* power */ Double, PowOut],
-    RegionAttachment: (Instantiable1[/* name */ String, RegionAttachment]) with TypeofRegionAttachment,
-    RotateTimeline: (Instantiable1[/* frameCount */ Double, RotateTimeline]) with TypeofRotateTimeline,
+    RegionAttachment: (Instantiable1[/* name */ String, RegionAttachment]) & TypeofRegionAttachment,
+    RotateTimeline: (Instantiable1[/* frameCount */ Double, RotateTimeline]) & TypeofRotateTimeline,
     ScaleTimeline: Instantiable1[/* frameCount */ Double, ScaleTimeline],
     SharedAssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], SharedAssetManager],
     ShearTimeline: Instantiable1[/* frameCount */ Double, ShearTimeline],
     Skeleton: Instantiable1[/* data */ SkeletonData, Skeleton],
-    SkeletonBinary: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonBinary]) with TypeofSkeletonBinary,
+    SkeletonBinary: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonBinary]) & TypeofSkeletonBinary,
     SkeletonBounds: Instantiable0[SkeletonBounds],
-    SkeletonClipping: Instantiable0[SkeletonClipping] with TypeofSkeletonClipping,
+    SkeletonClipping: Instantiable0[SkeletonClipping] & TypeofSkeletonClipping,
     SkeletonData: Instantiable0[SkeletonData],
-    SkeletonJson: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonJson]) with TypeofSkeletonJson,
+    SkeletonJson: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonJson]) & TypeofSkeletonJson,
     Skin: Instantiable1[/* name */ String, Skin],
     SkinEntry: Instantiable3[/* slotIndex */ Double, /* name */ String, /* attachment */ Attachment, SkinEntry],
     Slot: Instantiable2[/* data */ SlotData, /* bone */ Bone, Slot],
     SlotData: Instantiable3[/* index */ Double, /* name */ String, /* boneData */ BoneData, SlotData],
-    SwirlEffect: (Instantiable1[/* radius */ Double, SwirlEffect]) with TypeofSwirlEffect,
-    Texture: (Instantiable1[/* image */ HTMLImageElement, Texture]) with TypeofTexture,
+    SwirlEffect: (Instantiable1[/* radius */ Double, SwirlEffect]) & TypeofSwirlEffect,
+    Texture: (Instantiable1[/* image */ HTMLImageElement, Texture]) & TypeofTexture,
     TextureAtlas: Instantiable2[
       /* atlasText */ String, 
       /* textureLoader */ js.Function1[/* path */ String, js.Any], 
@@ -397,13 +395,13 @@ object Typeofspine {
     TrackEntry: Instantiable0[TrackEntry],
     TransformConstraint: Instantiable2[/* data */ TransformConstraintData, /* skeleton */ Skeleton, TransformConstraint],
     TransformConstraintData: Instantiable1[/* name */ String, TransformConstraintData],
-    TransformConstraintTimeline: (Instantiable1[/* frameCount */ Double, TransformConstraintTimeline]) with TypeofTransformConstraint,
-    TranslateTimeline: (Instantiable1[/* frameCount */ Double, TranslateTimeline]) with TypeofTranslateTimeline,
-    Triangulator: Instantiable0[Triangulator] with TypeofTriangulator,
-    TwoColorTimeline: (Instantiable1[/* frameCount */ Double, TwoColorTimeline]) with TypeofTwoColorTimeline,
-    Utils: Instantiable0[Utils] with TypeofUtils,
+    TransformConstraintTimeline: (Instantiable1[/* frameCount */ Double, TransformConstraintTimeline]) & TypeofTransformConstraint,
+    TranslateTimeline: (Instantiable1[/* frameCount */ Double, TranslateTimeline]) & TypeofTranslateTimeline,
+    Triangulator: Instantiable0[Triangulator] & TypeofTriangulator,
+    TwoColorTimeline: (Instantiable1[/* frameCount */ Double, TwoColorTimeline]) & TypeofTwoColorTimeline,
+    Utils: Instantiable0[Utils] & TypeofUtils,
     Vector2: Instantiable2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Vector2],
-    VertexAttachment: (Instantiable1[/* name */ String, VertexAttachment]) with TypeofVertexAttachment,
+    VertexAttachment: (Instantiable1[/* name */ String, VertexAttachment]) & TypeofVertexAttachment,
     WindowedMean: Instantiable1[/* windowSize */ js.UndefOr[Double], WindowedMean],
     canvas: Typeofcanvas,
     webgl: Typeofwebgl
@@ -422,11 +420,11 @@ object Typeofspine {
           /* timelines */ js.Array[Timeline], 
           /* duration */ Double, 
           Animation
-        ]) with TypeofAnimation
+        ]) & TypeofAnimation
     ): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationState(value: (Instantiable1[/* data */ AnimationStateData, AnimationState]) with TypeofAnimationState): Self = StObject.set(x, "AnimationState", value.asInstanceOf[js.Any])
+    def setAnimationState(value: (Instantiable1[/* data */ AnimationStateData, AnimationState]) & TypeofAnimationState): Self = StObject.set(x, "AnimationState", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationStateAdapter2(value: Instantiable0[AnimationStateAdapter2]): Self = StObject.set(x, "AnimationStateAdapter2", value.asInstanceOf[js.Any])
@@ -440,7 +438,7 @@ object Typeofspine {
           /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
           /* pathPrefix */ js.UndefOr[String], 
           AssetManager
-        ]) with TypeofAssetManager
+        ]) & TypeofAssetManager
     ): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -475,11 +473,11 @@ object Typeofspine {
           /* b */ js.UndefOr[Double], 
           /* a */ js.UndefOr[Double], 
           Color
-        ]) with TypeofColor
+        ]) & TypeofColor
     ): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTimeline(value: (Instantiable1[/* frameCount */ Double, ColorTimeline]) with TypeofColorTimeline): Self = StObject.set(x, "ColorTimeline", value.asInstanceOf[js.Any])
+    def setColorTimeline(value: (Instantiable1[/* frameCount */ Double, ColorTimeline]) & TypeofColorTimeline): Self = StObject.set(x, "ColorTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConstraintData(
@@ -487,10 +485,10 @@ object Typeofspine {
     ): Self = StObject.set(x, "ConstraintData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveTimeline(value: (Instantiable1[/* frameCount */ Double, CurveTimeline]) with TypeofCurveTimeline): Self = StObject.set(x, "CurveTimeline", value.asInstanceOf[js.Any])
+    def setCurveTimeline(value: (Instantiable1[/* frameCount */ Double, CurveTimeline]) & TypeofCurveTimeline): Self = StObject.set(x, "CurveTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugUtils(value: Instantiable0[DebugUtils] with TypeofDebugUtils): Self = StObject.set(x, "DebugUtils", value.asInstanceOf[js.Any])
+    def setDebugUtils(value: Instantiable0[DebugUtils] & TypeofDebugUtils): Self = StObject.set(x, "DebugUtils", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDeformTimeline(value: Instantiable1[/* frameCount */ Double, DeformTimeline]): Self = StObject.set(x, "DeformTimeline", value.asInstanceOf[js.Any])
@@ -520,9 +518,7 @@ object Typeofspine {
     def setIkConstraintData(value: Instantiable1[/* name */ String, IkConstraintData]): Self = StObject.set(x, "IkConstraintData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIkConstraintTimeline(
-      value: (Instantiable1[/* frameCount */ Double, IkConstraintTimeline]) with TypeofIkConstraintTimelin
-    ): Self = StObject.set(x, "IkConstraintTimeline", value.asInstanceOf[js.Any])
+    def setIkConstraintTimeline(value: (Instantiable1[/* frameCount */ Double, IkConstraintTimeline]) & TypeofIkConstraintTimelin): Self = StObject.set(x, "IkConstraintTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIntSet(value: Instantiable0[IntSet]): Self = StObject.set(x, "IntSet", value.asInstanceOf[js.Any])
@@ -534,7 +530,7 @@ object Typeofspine {
     def setJitterEffect(value: Instantiable2[/* jitterX */ Double, /* jitterY */ Double, JitterEffect]): Self = StObject.set(x, "JitterEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMathUtils(value: Instantiable0[MathUtils] with TypeofMathUtils): Self = StObject.set(x, "MathUtils", value.asInstanceOf[js.Any])
+    def setMathUtils(value: Instantiable0[MathUtils] & TypeofMathUtils): Self = StObject.set(x, "MathUtils", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMeshAttachment(value: Instantiable1[/* name */ String, MeshAttachment]): Self = StObject.set(x, "MeshAttachment", value.asInstanceOf[js.Any])
@@ -544,7 +540,7 @@ object Typeofspine {
     
     @scala.inline
     def setPathConstraint(
-      value: (Instantiable2[/* data */ PathConstraintData, /* skeleton */ Skeleton, PathConstraint]) with TypeofPathConstraint
+      value: (Instantiable2[/* data */ PathConstraintData, /* skeleton */ Skeleton, PathConstraint]) & TypeofPathConstraint
     ): Self = StObject.set(x, "PathConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -552,12 +548,12 @@ object Typeofspine {
     
     @scala.inline
     def setPathConstraintMixTimeline(
-      value: (Instantiable1[/* frameCount */ Double, PathConstraintMixTimeline]) with TypeofPathConstraintMixTi
+      value: (Instantiable1[/* frameCount */ Double, PathConstraintMixTimeline]) & TypeofPathConstraintMixTi
     ): Self = StObject.set(x, "PathConstraintMixTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPathConstraintPositionTimeline(
-      value: (Instantiable1[/* frameCount */ Double, PathConstraintPositionTimeline]) with TypeofPathConstraintPosit
+      value: (Instantiable1[/* frameCount */ Double, PathConstraintPositionTimeline]) & TypeofPathConstraintPosit
     ): Self = StObject.set(x, "PathConstraintPositionTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -581,10 +577,10 @@ object Typeofspine {
     def setPowOut(value: Instantiable1[/* power */ Double, PowOut]): Self = StObject.set(x, "PowOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionAttachment(value: (Instantiable1[/* name */ String, RegionAttachment]) with TypeofRegionAttachment): Self = StObject.set(x, "RegionAttachment", value.asInstanceOf[js.Any])
+    def setRegionAttachment(value: (Instantiable1[/* name */ String, RegionAttachment]) & TypeofRegionAttachment): Self = StObject.set(x, "RegionAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateTimeline(value: (Instantiable1[/* frameCount */ Double, RotateTimeline]) with TypeofRotateTimeline): Self = StObject.set(x, "RotateTimeline", value.asInstanceOf[js.Any])
+    def setRotateTimeline(value: (Instantiable1[/* frameCount */ Double, RotateTimeline]) & TypeofRotateTimeline): Self = StObject.set(x, "RotateTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScaleTimeline(value: Instantiable1[/* frameCount */ Double, ScaleTimeline]): Self = StObject.set(x, "ScaleTimeline", value.asInstanceOf[js.Any])
@@ -600,22 +596,20 @@ object Typeofspine {
     
     @scala.inline
     def setSkeletonBinary(
-      value: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonBinary]) with TypeofSkeletonBinary
+      value: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonBinary]) & TypeofSkeletonBinary
     ): Self = StObject.set(x, "SkeletonBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSkeletonBounds(value: Instantiable0[SkeletonBounds]): Self = StObject.set(x, "SkeletonBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkeletonClipping(value: Instantiable0[SkeletonClipping] with TypeofSkeletonClipping): Self = StObject.set(x, "SkeletonClipping", value.asInstanceOf[js.Any])
+    def setSkeletonClipping(value: Instantiable0[SkeletonClipping] & TypeofSkeletonClipping): Self = StObject.set(x, "SkeletonClipping", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSkeletonData(value: Instantiable0[SkeletonData]): Self = StObject.set(x, "SkeletonData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkeletonJson(
-      value: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonJson]) with TypeofSkeletonJson
-    ): Self = StObject.set(x, "SkeletonJson", value.asInstanceOf[js.Any])
+    def setSkeletonJson(value: (Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonJson]) & TypeofSkeletonJson): Self = StObject.set(x, "SkeletonJson", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSkin(value: Instantiable1[/* name */ String, Skin]): Self = StObject.set(x, "Skin", value.asInstanceOf[js.Any])
@@ -632,10 +626,10 @@ object Typeofspine {
     def setSlotData(value: Instantiable3[/* index */ Double, /* name */ String, /* boneData */ BoneData, SlotData]): Self = StObject.set(x, "SlotData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwirlEffect(value: (Instantiable1[/* radius */ Double, SwirlEffect]) with TypeofSwirlEffect): Self = StObject.set(x, "SwirlEffect", value.asInstanceOf[js.Any])
+    def setSwirlEffect(value: (Instantiable1[/* radius */ Double, SwirlEffect]) & TypeofSwirlEffect): Self = StObject.set(x, "SwirlEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexture(value: (Instantiable1[/* image */ HTMLImageElement, Texture]) with TypeofTexture): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
+    def setTexture(value: (Instantiable1[/* image */ HTMLImageElement, Texture]) & TypeofTexture): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextureAtlas(
@@ -671,26 +665,26 @@ object Typeofspine {
     
     @scala.inline
     def setTransformConstraintTimeline(
-      value: (Instantiable1[/* frameCount */ Double, TransformConstraintTimeline]) with TypeofTransformConstraint
+      value: (Instantiable1[/* frameCount */ Double, TransformConstraintTimeline]) & TypeofTransformConstraint
     ): Self = StObject.set(x, "TransformConstraintTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateTimeline(value: (Instantiable1[/* frameCount */ Double, TranslateTimeline]) with TypeofTranslateTimeline): Self = StObject.set(x, "TranslateTimeline", value.asInstanceOf[js.Any])
+    def setTranslateTimeline(value: (Instantiable1[/* frameCount */ Double, TranslateTimeline]) & TypeofTranslateTimeline): Self = StObject.set(x, "TranslateTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangulator(value: Instantiable0[Triangulator] with TypeofTriangulator): Self = StObject.set(x, "Triangulator", value.asInstanceOf[js.Any])
+    def setTriangulator(value: Instantiable0[Triangulator] & TypeofTriangulator): Self = StObject.set(x, "Triangulator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwoColorTimeline(value: (Instantiable1[/* frameCount */ Double, TwoColorTimeline]) with TypeofTwoColorTimeline): Self = StObject.set(x, "TwoColorTimeline", value.asInstanceOf[js.Any])
+    def setTwoColorTimeline(value: (Instantiable1[/* frameCount */ Double, TwoColorTimeline]) & TypeofTwoColorTimeline): Self = StObject.set(x, "TwoColorTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtils(value: Instantiable0[Utils] with TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
+    def setUtils(value: Instantiable0[Utils] & TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVector2(value: Instantiable2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Vector2]): Self = StObject.set(x, "Vector2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexAttachment(value: (Instantiable1[/* name */ String, VertexAttachment]) with TypeofVertexAttachment): Self = StObject.set(x, "VertexAttachment", value.asInstanceOf[js.Any])
+    def setVertexAttachment(value: (Instantiable1[/* name */ String, VertexAttachment]) & TypeofVertexAttachment): Self = StObject.set(x, "VertexAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWebgl(value: Typeofwebgl): Self = StObject.set(x, "webgl", value.asInstanceOf[js.Any])

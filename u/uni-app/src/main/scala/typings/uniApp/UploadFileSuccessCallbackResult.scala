@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileSuccessCallbackResult extends StObject {
   
   /**
     * 开发者服务器返回的数据
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * 开发者服务器返回的 HTTP 状态码
     */
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
 }
 object UploadFileSuccessCallbackResult {
   

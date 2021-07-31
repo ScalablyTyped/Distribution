@@ -6,24 +6,23 @@ import typings.elementtree.elementtreeStrings.text
 import typings.elementtree.elementtreeStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("elementtree", "CData")
+  @JSImport("elementtree", JSImport.Namespace)
   @js.native
-  def CData(): Element = js.native
-  @JSImport("elementtree", "CData")
-  @js.native
-  def CData(text: ElementText): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("elementtree", "Comment")
-  @js.native
-  def Comment(): Element = js.native
-  @JSImport("elementtree", "Comment")
-  @js.native
-  def Comment(text: ElementText): Element = js.native
+  @scala.inline
+  def CData(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")().asInstanceOf[Element]
+  @scala.inline
+  def CData(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def Comment(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")().asInstanceOf[Element]
+  @scala.inline
+  def Comment(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait Element extends StObject {
@@ -80,12 +79,15 @@ object mod {
     
     var text: ElementText | Null = js.native
   }
-  @JSImport("elementtree", "Element")
-  @js.native
-  def Element(ElementTag: String): Element = js.native
-  @JSImport("elementtree", "Element")
-  @js.native
-  def Element(ElementTag: String, attrib: Attributes): Element = js.native
+  object Element {
+    
+    @JSImport("elementtree", "Element")
+    @js.native
+    def apply(ElementTag: String): Element = js.native
+    @JSImport("elementtree", "Element")
+    @js.native
+    def apply(ElementTag: String, attrib: Attributes): Element = js.native
+  }
   
   @JSImport("elementtree", "ElementTree")
   @js.native
@@ -108,12 +110,10 @@ object mod {
     def write(options: ElementTreeWriteOptions): String = js.native
   }
   
-  @JSImport("elementtree", "ProcessingInstruction")
-  @js.native
-  def ProcessingInstruction(target: ElementText): Element = js.native
-  @JSImport("elementtree", "ProcessingInstruction")
-  @js.native
-  def ProcessingInstruction(target: ElementText, text: ElementText): Element = js.native
+  @scala.inline
+  def ProcessingInstruction(target: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def ProcessingInstruction(target: ElementText, text: ElementText): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   @JSImport("elementtree", "QName")
   @js.native
@@ -124,28 +124,22 @@ object mod {
     var text: String = js.native
   }
   
-  @JSImport("elementtree", "SubElement")
-  @js.native
-  def SubElement(parent: Element, ElementTag: String): Element = js.native
-  @JSImport("elementtree", "SubElement")
-  @js.native
-  def SubElement(parent: Element, ElementTag: String, attrib: Attributes): Element = js.native
+  @scala.inline
+  def SubElement(parent: Element, ElementTag: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def SubElement(parent: Element, ElementTag: String, attrib: Attributes): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any], attrib.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("elementtree", "XML")
-  @js.native
-  def XML(data: String): Element = js.native
+  @scala.inline
+  def XML(data: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("XML")(data.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("elementtree", "parse")
-  @js.native
-  def parse(source: String): ElementTree = js.native
+  @scala.inline
+  def parse(source: String): ElementTree = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ElementTree]
   
-  @JSImport("elementtree", "register_namespace")
-  @js.native
-  def registerNamespace(prefix: String, uri: String): Unit = js.native
+  @scala.inline
+  def registerNamespace(prefix: String, uri: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_namespace")(prefix.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("elementtree", "tostring")
-  @js.native
-  def tostring(element: Element, options: ElementTreeWriteOptions): String = js.native
+  @scala.inline
+  def tostring(element: Element, options: ElementTreeWriteOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tostring")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Attributes = StringDictionary[js.UndefOr[String]]
   
@@ -153,20 +147,19 @@ object mod {
   
   type ElementText = ToString | String
   
-  @js.native
   trait ElementTreeWriteOptions extends StObject {
     
-    var default_namespace: js.UndefOr[String] = js.native
+    var default_namespace: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     // default is 'utf-8'
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[xml | text] = js.native
+    var method: js.UndefOr[xml | text] = js.undefined
     
     // default is 'xml'
-    var xml_declaration: js.UndefOr[Boolean] = js.native
+    var xml_declaration: js.UndefOr[Boolean] = js.undefined
   }
   object ElementTreeWriteOptions {
     

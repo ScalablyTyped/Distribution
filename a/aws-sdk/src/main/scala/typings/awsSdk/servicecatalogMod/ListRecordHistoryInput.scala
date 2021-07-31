@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecordHistoryInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The access level to use to obtain results. The default is User.
     */
-  var AccessLevelFilter: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessLevelFilter] = js.native
+  var AccessLevelFilter: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessLevelFilter] = js.undefined
   
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.native
+  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * The search filter to scope the results.
     */
-  var SearchFilter: js.UndefOr[ListRecordHistorySearchFilter] = js.native
+  var SearchFilter: js.UndefOr[ListRecordHistorySearchFilter] = js.undefined
 }
 object ListRecordHistoryInput {
   

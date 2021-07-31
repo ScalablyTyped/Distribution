@@ -12,7 +12,7 @@ Convert an object of time properties to milliseconds: `{seconds: 2}` → `2000`
 | Keywords           | parse, object, properties, to, into, time, ms, milliseconds, microseconds, nanoseconds, duration, period, range, interval |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 50426 |
+| # downloads        | 62751 |
 | # stars            | 0 |
 
 ## Links

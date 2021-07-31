@@ -13,7 +13,6 @@ import typings.multibase.typesMod.Codec
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -27,7 +26,9 @@ object baseMod {
     */
   @JSImport("multibase/dist/src/base", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Base {
+  class ^ protected ()
+    extends StObject
+       with Base {
     /**
       * @param {BaseName} name
       * @param {BaseCode} code
@@ -35,6 +36,35 @@ object baseMod {
       * @param {string} alphabet
       */
     def this(name: BaseName, code: BaseCode, factory: CodecFactory, alphabet: String) = this()
+    
+    /* CompleteClass */
+    var alphabet: String = js.native
+    
+    /* CompleteClass */
+    var code: typings.multibase.typesMod.BaseCode = js.native
+    
+    /* CompleteClass */
+    var codeBuf: Uint8Array = js.native
+    
+    /* CompleteClass */
+    var codec: Codec = js.native
+    
+    /**
+      * @param {string} string
+      * @returns {Uint8Array}
+      */
+    /* CompleteClass */
+    override def decode(string: String): Uint8Array = js.native
+    
+    /**
+      * @param {Uint8Array} buf
+      * @returns {string}
+      */
+    /* CompleteClass */
+    override def encode(buf: Uint8Array): String = js.native
+    
+    /* CompleteClass */
+    var name: typings.multibase.typesMod.BaseName = js.native
   }
   
   /** @typedef {import('./types').CodecFactory} CodecFactory */
@@ -44,30 +74,29 @@ object baseMod {
     * Class to encode/decode in the supported Bases
     *
     */
-  @js.native
   trait Base extends StObject {
     
-    var alphabet: String = js.native
+    var alphabet: String
     
-    var code: typings.multibase.typesMod.BaseCode = js.native
+    var code: typings.multibase.typesMod.BaseCode
     
-    var codeBuf: Uint8Array = js.native
+    var codeBuf: Uint8Array
     
-    var codec: Codec = js.native
+    var codec: Codec
     
     /**
       * @param {string} string
       * @returns {Uint8Array}
       */
-    def decode(string: String): Uint8Array = js.native
+    def decode(string: String): Uint8Array
     
     /**
       * @param {Uint8Array} buf
       * @returns {string}
       */
-    def encode(buf: Uint8Array): String = js.native
+    def encode(buf: Uint8Array): String
     
-    var name: typings.multibase.typesMod.BaseName = js.native
+    var name: typings.multibase.typesMod.BaseName
   }
   object Base {
     

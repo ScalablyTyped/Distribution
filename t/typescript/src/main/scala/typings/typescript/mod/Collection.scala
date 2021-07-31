@@ -2,16 +2,16 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Common write methods for ES6 Map/Set. */
-@js.native
-trait Collection[K] extends ReadonlyCollection[K] {
+trait Collection[K]
+  extends StObject
+     with ReadonlyCollection[K] {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def delete(key: K): Boolean = js.native
+  def delete(key: K): Boolean
 }
 object Collection {
   
@@ -22,7 +22,7 @@ object Collection {
   }
   
   @scala.inline
-  implicit class CollectionMutableBuilder[Self <: Collection[_], K] (val x: Self with Collection[K]) extends AnyVal {
+  implicit class CollectionMutableBuilder[Self <: Collection[?], K] (val x: Self & Collection[K]) extends AnyVal {
     
     @scala.inline
     def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

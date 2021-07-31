@@ -6,59 +6,59 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceActivitiesList extends StandardParameters {
+trait ParamsResourceActivitiesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifies the Drive folder containing the items for which to return
     * activities.
     */
   @JSName("drive.ancestorId")
-  var driveDotancestorId: js.UndefOr[String] = js.native
+  var driveDotancestorId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the Drive item to return activities for.
     */
   @JSName("drive.fileId")
-  var driveDotfileId: js.UndefOr[String] = js.native
+  var driveDotfileId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the strategy to use when grouping singleEvents items in the
     * associated combinedEvent object.
     */
-  var groupingStrategy: js.UndefOr[String] = js.native
+  var groupingStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of events to return on a page. The response includes a
     * continuation token if there are more events.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token to retrieve a specific page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Google service from which to return activities. Possible values of
     * source are:  - drive.google.com
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The ID used for ACL checks (does not filter the resulting event list by
     * the assigned value). Use the special value me to indicate the currently
     * authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceActivitiesList {
   

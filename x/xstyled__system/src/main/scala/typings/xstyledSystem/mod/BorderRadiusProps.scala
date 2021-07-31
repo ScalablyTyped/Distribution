@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRadiusProps[TLength] extends StObject {
   
   val borderRadius: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BorderRadiusProps {
   
@@ -23,12 +21,12 @@ object BorderRadiusProps {
   }
   
   @scala.inline
-  implicit class BorderRadiusPropsMutableBuilder[Self <: BorderRadiusProps[_], TLength] (val x: Self with BorderRadiusProps[TLength]) extends AnyVal {
+  implicit class BorderRadiusPropsMutableBuilder[Self <: BorderRadiusProps[?], TLength] (val x: Self & BorderRadiusProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBorderRadius(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BorderRadiusProps {
     def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def setBorderRadiusVarargs(value: js.Any*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+    def setBorderRadiusVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
   }
 }

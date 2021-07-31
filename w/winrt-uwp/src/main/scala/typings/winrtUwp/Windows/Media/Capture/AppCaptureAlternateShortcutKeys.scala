@@ -4,48 +4,46 @@ import typings.winrtUwp.Windows.System.VirtualKey
 import typings.winrtUwp.Windows.System.VirtualKeyModifiers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines alternate shortcut keys for app capture. */
-@js.native
 trait AppCaptureAlternateShortcutKeys extends StObject {
   
   /** Gets or sets the save historical video shortcut key. */
-  var saveHistoricalVideoKey: VirtualKey = js.native
+  var saveHistoricalVideoKey: VirtualKey
   
   /** Gets or sets the save historical video shortcut key modifiers. */
-  var saveHistoricalVideoKeyModifiers: VirtualKeyModifiers = js.native
+  var saveHistoricalVideoKeyModifiers: VirtualKeyModifiers
   
   /** Gets or sets the take screenshot shortcut key. */
-  var takeScreenshotKey: VirtualKey = js.native
+  var takeScreenshotKey: VirtualKey
   
   /** Gets or sets the take screenshot shortcut key modifiers. */
-  var takeScreenshotKeyModifiers: VirtualKeyModifiers = js.native
+  var takeScreenshotKeyModifiers: VirtualKeyModifiers
   
   /** Gets or sets the toggle game bar shortcut key. */
-  var toggleGameBarKey: VirtualKey = js.native
+  var toggleGameBarKey: VirtualKey
   
   /** Gets or sets the toggle game bar shortcut key modifiers. */
-  var toggleGameBarKeyModifiers: VirtualKeyModifiers = js.native
+  var toggleGameBarKeyModifiers: VirtualKeyModifiers
   
-  var toggleMicrophoneCaptureKey: js.Any = js.native
+  var toggleMicrophoneCaptureKey: js.Any
   
   /* unmapped type */
-  var toggleMicrophoneCaptureKeyModifiers: js.Any = js.native
+  var toggleMicrophoneCaptureKeyModifiers: js.Any
   
   /* unmapped type */
   /** Gets or sets the toggle recording indicator shortcut key. */
-  var toggleRecordingIndicatorKey: VirtualKey = js.native
+  var toggleRecordingIndicatorKey: VirtualKey
   
   /** Gets or sets the toggle recording indicator shortcut key modifiers. */
-  var toggleRecordingIndicatorKeyModifiers: VirtualKeyModifiers = js.native
+  var toggleRecordingIndicatorKeyModifiers: VirtualKeyModifiers
   
   /** Gets or sets the toggle recording shortcut key. */
-  var toggleRecordingKey: VirtualKey = js.native
+  var toggleRecordingKey: VirtualKey
   
   /** Gets or sets the toggle recording shortcut key modifiers. */
-  var toggleRecordingKeyModifiers: VirtualKeyModifiers = js.native
+  var toggleRecordingKeyModifiers: VirtualKeyModifiers
 }
 object AppCaptureAlternateShortcutKeys {
   

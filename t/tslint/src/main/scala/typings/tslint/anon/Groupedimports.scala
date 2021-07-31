@@ -2,19 +2,17 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groupedimports extends StObject {
   
-  var `grouped-imports`: Boolean = js.native
+  var `grouped-imports`: Boolean
   
-  var `import-sources-order`: String = js.native
+  var `import-sources-order`: String
   
-  var `module-source-path`: String = js.native
+  var `module-source-path`: String
   
-  var `named-imports-order`: String = js.native
+  var `named-imports-order`: String
 }
 object Groupedimports {
   

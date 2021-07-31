@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalBulkCreateDeviceResponse extends StObject {
   
   /** Required. The devices that were imported. */
-  var devices: js.UndefOr[js.Array[SasPortalDevice]] = js.native
+  var devices: js.UndefOr[js.Array[SasPortalDevice]] = js.undefined
 }
 object SasPortalBulkCreateDeviceResponse {
   

@@ -2,20 +2,18 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container message for hashes of byte content of files, used in source
   * messages to verify integrity of source input to the build.
   */
-@js.native
 trait SchemaFileHashes extends StObject {
   
   /**
     * Required. Collection of file hashes.
     */
-  var fileHash: js.UndefOr[js.Array[SchemaHash]] = js.native
+  var fileHash: js.UndefOr[js.Array[SchemaHash]] = js.undefined
 }
 object SchemaFileHashes {
   

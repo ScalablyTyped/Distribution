@@ -3,27 +3,25 @@ package typings.atom.mod
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferScanResult extends StObject {
   
-  var buffer: TextBuffer = js.native
+  var buffer: TextBuffer
   
-  var lineText: String = js.native
+  var lineText: String
   
-  var `match`: RegExpExecArray = js.native
+  var `match`: RegExpExecArray
   
-  var matchText: String = js.native
+  var matchText: String
   
-  var range: Range = js.native
+  var range: Range
   
-  def replace(replacementText: String): Unit = js.native
+  def replace(replacementText: String): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
   
-  var stopped: Boolean = js.native
+  var stopped: Boolean
 }
 object BufferScanResult {
   

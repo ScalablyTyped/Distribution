@@ -2,24 +2,23 @@ package typings.randomName
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("random-name", "first")
+  @JSImport("random-name", JSImport.Namespace)
   @js.native
-  def first(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("random-name", "last")
-  @js.native
-  def last(): String = js.native
+  @scala.inline
+  def first(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[String]
   
-  @JSImport("random-name", "middle")
-  @js.native
-  def middle(): String = js.native
+  @scala.inline
+  def last(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[String]
   
-  @JSImport("random-name", "place")
-  @js.native
-  def place(): String = js.native
+  @scala.inline
+  def middle(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("middle")().asInstanceOf[String]
+  
+  @scala.inline
+  def place(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("place")().asInstanceOf[String]
 }

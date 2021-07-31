@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusStateEntry extends StObject {
   
   /** ConsensusStateEntry address */
-  var address: js.UndefOr[String | Null] = js.native
+  var address: js.UndefOr[String | Null] = js.undefined
   
   /** ConsensusStateEntry data */
-  var data: js.UndefOr[Uint8Array | Null] = js.native
+  var data: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IConsensusStateEntry {
   

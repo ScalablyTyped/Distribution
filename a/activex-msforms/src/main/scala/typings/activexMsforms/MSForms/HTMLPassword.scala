@@ -2,24 +2,22 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLPassword extends StObject {
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLPassword_typekey")
-  var MSFormsDotHTMLPassword_typekey: HTMLPassword = js.native
+  var MSFormsDotHTMLPassword_typekey: HTMLPassword
   
-  var MaxLength: Double = js.native
+  var MaxLength: Double
   
-  var Value: String = js.native
+  var Value: String
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object HTMLPassword {
   

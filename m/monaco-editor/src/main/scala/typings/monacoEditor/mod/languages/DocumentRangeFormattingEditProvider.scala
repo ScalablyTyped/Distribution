@@ -5,13 +5,11 @@ import typings.monacoEditor.mod.Range
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentRangeFormattingEditProvider extends StObject {
   
-  val displayName: js.UndefOr[String] = js.native
+  val displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Provide formatting edits for a range in a document.
@@ -20,7 +18,7 @@ trait DocumentRangeFormattingEditProvider extends StObject {
     * or larger range. Often this is done by adjusting the start and end
     * of the range to full syntax nodes.
     */
-  def provideDocumentRangeFormattingEdits(model: ITextModel, range: Range, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]] = js.native
+  def provideDocumentRangeFormattingEdits(model: ITextModel, range: Range, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]]
 }
 object DocumentRangeFormattingEditProvider {
   

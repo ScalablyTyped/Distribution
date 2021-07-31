@@ -6,7 +6,6 @@ import typings.twilioChat.sessionMod.Session
 import typings.twilioChat.synclistdescriptorMod.SyncListDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object synclistMod {
@@ -32,12 +31,11 @@ object synclistMod {
     val services: js.Any = js.native
   }
   
-  @js.native
   trait SyncListServices extends StObject {
     
-    var network: Network = js.native
+    var network: Network
     
-    var session: Session = js.native
+    var session: Session
   }
   object SyncListServices {
     

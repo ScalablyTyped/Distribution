@@ -4,7 +4,6 @@ import typings.mongodb.mod.Db
 import typings.mongodb.mod.MongoClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongorito", "Database")
@@ -12,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Database () extends StObject {
   def this(urls: String) = this()
   def this(urls: js.Array[String]) = this()
-  def this(urls: js.UndefOr[scala.Nothing], options: MongoClientOptions) = this()
   def this(urls: String, options: MongoClientOptions) = this()
   def this(urls: js.Array[String], options: MongoClientOptions) = this()
+  def this(urls: Unit, options: MongoClientOptions) = this()
   
   def connect(): js.Promise[Db] = js.native
   

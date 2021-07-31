@@ -2,17 +2,15 @@ package typings.watchify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cache extends StObject {
     
-    var cache: js.Any = js.native
+    var cache: js.Any
     
-    var packageCache: js.Any = js.native
+    var packageCache: js.Any
   }
   object Cache {
     

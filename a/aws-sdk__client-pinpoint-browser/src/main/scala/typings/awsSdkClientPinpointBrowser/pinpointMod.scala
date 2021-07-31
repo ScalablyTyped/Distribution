@@ -146,7 +146,6 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelInputMod.UpdateS
 import typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelOutputMod.UpdateSmsChannelOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinpointMod {

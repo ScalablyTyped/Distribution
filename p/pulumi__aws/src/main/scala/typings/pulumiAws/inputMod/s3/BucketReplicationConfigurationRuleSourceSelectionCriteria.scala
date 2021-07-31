@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends StObject
     */
   var sseKmsEncryptedObjects: js.UndefOr[
     Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]
-  ] = js.native
+  ] = js.undefined
 }
 object BucketReplicationConfigurationRuleSourceSelectionCriteria {
   

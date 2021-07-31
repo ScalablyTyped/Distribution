@@ -4,13 +4,11 @@ import typings.expoFileSystem.expoFileSystemStrings.base64
 import typings.expoFileSystem.expoFileSystemStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WritingOptions extends StObject {
   
-  var encoding: js.UndefOr[EncodingType | utf8 | base64] = js.native
+  var encoding: js.UndefOr[EncodingType | utf8 | base64] = js.undefined
 }
 object WritingOptions {
   

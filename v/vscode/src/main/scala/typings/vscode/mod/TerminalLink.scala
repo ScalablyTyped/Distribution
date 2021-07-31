@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminalLink extends StObject {
   
   /**
     * The length of the link on [TerminalLinkContext.line](#TerminalLinkContext.line]
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * The start index of the link on [TerminalLinkContext.line](#TerminalLinkContext.line].
     */
-  var startIndex: Double = js.native
+  var startIndex: Double
   
   /**
     * The tooltip text when you hover over this link.
@@ -25,7 +23,7 @@ trait TerminalLink extends StObject {
     * how to trigger the link, such as `{0} (ctrl + click)`. The specific instructions vary
     * depending on OS, user settings, and localization.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object TerminalLink {
   

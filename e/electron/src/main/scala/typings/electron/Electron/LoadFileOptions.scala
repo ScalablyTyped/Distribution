@@ -3,26 +3,24 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadFileOptions extends StObject {
   
   /**
     * Passed to `url.format()`.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * Passed to `url.format()`.
     */
-  var query: js.UndefOr[Record[String, String]] = js.native
+  var query: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * Passed to `url.format()`.
     */
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
 }
 object LoadFileOptions {
   

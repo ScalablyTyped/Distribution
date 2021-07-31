@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Replaces all instances of text matching a criteria with replace text.
   */
-@js.native
 trait SchemaReplaceAllTextRequest extends StObject {
   
   /**
     * Finds text in a shape matching this substring.
     */
-  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.native
+  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.undefined
   
   /**
     * If non-empty, limits the matches to page elements only on the given
@@ -22,12 +20,12 @@ trait SchemaReplaceAllTextRequest extends StObject {
     * notes master, or if a page with that object ID doesn&#39;t exist in the
     * presentation.
     */
-  var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The text that will replace the matched text.
     */
-  var replaceText: js.UndefOr[String] = js.native
+  var replaceText: js.UndefOr[String] = js.undefined
 }
 object SchemaReplaceAllTextRequest {
   

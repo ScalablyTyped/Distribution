@@ -1,18 +1,17 @@
 package typings.echarts.anon
 
 import typings.echarts.echarts.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Data extends js.Object {
+trait Data extends StObject {
   
   // The data to be appended.
-  var data: js.UndefOr[js.Array[_] | TypedArray] = js.native
+  var data: js.UndefOr[js.Array[js.Any] | TypedArray] = js.undefined
   
   // Specify which series the data will be appended to.
-  var seriesIndex: js.UndefOr[String] = js.native
+  var seriesIndex: js.UndefOr[String] = js.undefined
 }
 object Data {
   
@@ -23,33 +22,21 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data] (val x: Self) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[js.Any] | TypedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setSeriesIndex(value: String): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_] | TypedArray): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setSeriesIndex(value: String): Self = this.set("seriesIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesIndex: Self = this.set("seriesIndex", js.undefined)
+    def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
   }
 }

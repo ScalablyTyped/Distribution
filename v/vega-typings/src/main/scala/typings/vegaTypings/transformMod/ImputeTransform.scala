@@ -4,32 +4,32 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.impute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImputeTransform extends _Transforms {
+trait ImputeTransform
+  extends StObject
+     with _Transforms {
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var key: FieldRef = js.native
+  var key: FieldRef
   
-  var keyvals: js.UndefOr[js.Array[_] | SignalRef] = js.native
+  var keyvals: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
   
-  var method: js.UndefOr[ImputeMethod | SignalRef] = js.native
+  var method: js.UndefOr[ImputeMethod | SignalRef] = js.undefined
   
-  var `type`: impute = js.native
+  var `type`: impute
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ImputeTransform {
   
   @scala.inline
-  def apply(field: FieldRef, key: FieldRef, `type`: impute): ImputeTransform = {
+  def apply(field: FieldRef, key: FieldRef): ImputeTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("impute")
     __obj.asInstanceOf[ImputeTransform]
   }
   
@@ -52,7 +52,7 @@ object ImputeTransform {
     def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyvals(value: js.Array[_] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+    def setKeyvals(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)

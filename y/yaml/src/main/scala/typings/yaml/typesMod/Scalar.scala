@@ -8,7 +8,6 @@ import typings.yaml.yamlStrings.OCT
 import typings.yaml.yamlStrings.TIME
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Scalar")
@@ -22,8 +21,8 @@ class Scalar protected () extends Node {
     */
   var format: js.UndefOr[BIN | HEX | OCT | TIME] = js.native
   
-  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Any = js.native
   def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Any = js.native
+  def toJSON(arg: Unit, ctx: NodeToJsonContext): js.Any = js.native
   
   @JSName("type")
   var type_Scalar: js.UndefOr[Type] = js.native

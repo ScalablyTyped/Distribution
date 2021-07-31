@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcsTokenLink extends StObject {
   
-  var acsTokenLink: js.UndefOr[String] = js.native
+  var acsTokenLink: js.UndefOr[String] = js.undefined
   
-  var downloadLink: js.UndefOr[String] = js.native
+  var downloadLink: js.UndefOr[String] = js.undefined
   
-  var isAvailable: js.UndefOr[Boolean] = js.native
+  var isAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object AcsTokenLink {
   

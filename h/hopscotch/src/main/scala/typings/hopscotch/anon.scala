@@ -2,25 +2,23 @@ package typings.hopscotch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CloseTooltip extends StObject {
     
-    var closeTooltip: js.UndefOr[String] = js.native
+    var closeTooltip: js.UndefOr[String] = js.undefined
     
-    var doneBtn: js.UndefOr[String] = js.native
+    var doneBtn: js.UndefOr[String] = js.undefined
     
-    var nextBtn: js.UndefOr[String] = js.native
+    var nextBtn: js.UndefOr[String] = js.undefined
     
-    var prevBtn: js.UndefOr[String] = js.native
+    var prevBtn: js.UndefOr[String] = js.undefined
     
-    var skipBtn: js.UndefOr[String] = js.native
+    var skipBtn: js.UndefOr[String] = js.undefined
     
-    var stepNums: js.UndefOr[js.Array[String]] = js.native
+    var stepNums: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CloseTooltip {
     

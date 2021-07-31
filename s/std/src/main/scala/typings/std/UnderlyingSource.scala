@@ -2,30 +2,29 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnderlyingSource[R] extends StObject {
   
-  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.native
+  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
   
-  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.native
+  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
   
-  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.native
+  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
   
-  var `type`: js.UndefOr[scala.Nothing] = js.native
+  var `type`: Unit
 }
 object UnderlyingSource {
   
   @scala.inline
-  def apply[R](): UnderlyingSource[R] = {
+  def apply[R](`type`: Unit): UnderlyingSource[R] = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
   
   @scala.inline
-  implicit class UnderlyingSourceMutableBuilder[Self <: UnderlyingSource[_], R] (val x: Self with UnderlyingSource[R]) extends AnyVal {
+  implicit class UnderlyingSourceMutableBuilder[Self <: UnderlyingSource[?], R] (val x: Self & UnderlyingSource[R]) extends AnyVal {
     
     @scala.inline
     def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
@@ -44,5 +43,8 @@ object UnderlyingSource {
     
     @scala.inline
     def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    @scala.inline
+    def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

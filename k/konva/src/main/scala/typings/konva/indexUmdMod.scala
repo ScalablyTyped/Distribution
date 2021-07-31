@@ -27,7 +27,6 @@ import typings.konva.tweenMod.TweenConfig
 import typings.konva.typesMod.AnimationFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexUmdMod {
@@ -511,9 +510,8 @@ object indexUmdMod {
     @scala.inline
     def enableTrace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableTrace")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/index-umd", "default.getAngle")
-    @js.native
-    def getAngle(angle: js.Any): js.Any = js.native
+    @scala.inline
+    def getAngle(angle: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("konva/types/index-umd", "default._global")
     @js.native
@@ -540,9 +538,8 @@ object indexUmdMod {
     @scala.inline
     def inDblClickWindow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inDblClickWindow")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/index-umd", "default._injectGlobal")
-    @js.native
-    def injectGlobal(Konva: js.Any): Unit = js.native
+    @scala.inline
+    def injectGlobal(Konva: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_injectGlobal")(Konva.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/index-umd", "default.isBrowser")
     @js.native
@@ -550,13 +547,11 @@ object indexUmdMod {
     @scala.inline
     def isBrowser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowser")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/index-umd", "default.isDragReady")
-    @js.native
-    def isDragReady(): Boolean = js.native
+    @scala.inline
+    def isDragReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragReady")().asInstanceOf[Boolean]
     
-    @JSImport("konva/types/index-umd", "default.isDragging")
-    @js.native
-    def isDragging(): js.Any = js.native
+    @scala.inline
+    def isDragging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragging")().asInstanceOf[js.Any]
     
     @JSImport("konva/types/index-umd", "default.isUnminified")
     @js.native
@@ -576,9 +571,8 @@ object indexUmdMod {
     @scala.inline
     def names_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("names")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/index-umd", "default._parseUA")
-    @js.native
-    def parseUA(userAgent: js.Any): Browser = js.native
+    @scala.inline
+    def parseUA(userAgent: js.Any): Browser = ^.asInstanceOf[js.Dynamic].applyDynamic("_parseUA")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Browser]
     
     @JSImport("konva/types/index-umd", "default.pixelRatio")
     @js.native

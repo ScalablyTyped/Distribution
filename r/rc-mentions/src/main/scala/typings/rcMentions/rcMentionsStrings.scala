@@ -4,7 +4,6 @@ import typings.rcMentions.mentionsMod.Direction
 import typings.rcMentions.mentionsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcMentionsStrings {
@@ -50,7 +49,9 @@ object rcMentionsStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends Placement
+  sealed trait bottom
+    extends StObject
+       with Placement
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -135,7 +136,9 @@ object rcMentionsStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait ltr extends Direction
+  sealed trait ltr
+    extends StObject
+       with Direction
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
@@ -215,7 +218,9 @@ object rcMentionsStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait rtl extends Direction
+  sealed trait rtl
+    extends StObject
+       with Direction
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
@@ -260,7 +265,9 @@ object rcMentionsStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait top extends Placement
+  sealed trait top
+    extends StObject
+       with Placement
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

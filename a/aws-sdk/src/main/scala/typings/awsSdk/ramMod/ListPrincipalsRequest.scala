@@ -2,46 +2,44 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPrincipalsRequest extends StObject {
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The principals.
     */
-  var principals: js.UndefOr[PrincipalArnOrIdList] = js.native
+  var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var resourceArn: js.UndefOr[String] = js.native
+  var resourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The type of owner.
     */
-  var resourceOwner: ResourceOwner = js.native
+  var resourceOwner: ResourceOwner
   
   /**
     * The Amazon Resource Names (ARN) of the resource shares.
     */
-  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.native
+  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   
   /**
     * The resource type. Valid values: codebuild:Project | codebuild:ReportGroup | ec2:CapacityReservation | ec2:DedicatedHost | ec2:Subnet | ec2:TrafficMirrorTarget | ec2:TransitGateway | imagebuilder:Component | imagebuilder:Image | imagebuilder:ImageRecipe | license-manager:LicenseConfiguration I resource-groups:Group | rds:Cluster | route53resolver:ResolverRule 
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object ListPrincipalsRequest {
   

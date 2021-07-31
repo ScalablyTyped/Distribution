@@ -2,17 +2,15 @@ package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchPatternContext extends StObject {
   
-  var caller: js.UndefOr[TransformCaller] = js.native
+  var caller: js.UndefOr[TransformCaller] = js.undefined
   
-  var dirname: String = js.native
+  var dirname: String
   
-  var envName: String = js.native
+  var envName: String
 }
 object MatchPatternContext {
   

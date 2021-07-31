@@ -2,19 +2,17 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTestFailure extends StObject {
   
-  var actualService: js.UndefOr[String] = js.native
+  var actualService: js.UndefOr[String] = js.undefined
   
-  var expectedService: js.UndefOr[String] = js.native
+  var expectedService: js.UndefOr[String] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaTestFailure {
   

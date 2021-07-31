@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * should be available at same implementation too.
   * @see ImportFilter
   */
-@js.native
 trait ExportFilter
-  extends XExporter
+  extends StObject
+     with XExporter
      with XFilter
      with XInitialization
      with XNamed
@@ -33,7 +32,7 @@ object ExportFilter {
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
     getName: () => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setName: String => Unit,

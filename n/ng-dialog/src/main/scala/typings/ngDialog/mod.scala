@@ -7,7 +7,6 @@ import typings.angular.mod.IServiceProvider
 import typings.angular.mod.global.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,12 +34,11 @@ object mod {
     
     object dialog {
       
-      @js.native
       trait IDialogClosePromise extends StObject {
         
-        var id: String = js.native
+        var id: String
         
-        var value: js.Any = js.native
+        var value: js.Any
       }
       object IDialogClosePromise {
         
@@ -63,7 +61,8 @@ object mod {
       
       @js.native
       trait IDialogConfirmScope
-        extends typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope {
+        extends StObject
+           with typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope {
         
         /**
           * Use this method to close the dialog and resolve the promise that was returned when opening the modal.
@@ -75,12 +74,12 @@ object mod {
         def confirm(value: js.Any): Unit = js.native
       }
       
-      @js.native
       trait IDialogOpenConfirmOptions
-        extends typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions {
+        extends StObject
+           with typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions {
         
         @JSName("scope")
-        var scope_IDialogOpenConfirmOptions: js.UndefOr[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogConfirmScope] = js.native
+        var scope_IDialogOpenConfirmOptions: js.UndefOr[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogConfirmScope] = js.undefined
       }
       object IDialogOpenConfirmOptions {
         
@@ -104,35 +103,35 @@ object mod {
       /**
         * Options which are provided to open a dialog.
         */
-      @js.native
       trait IDialogOpenOptions
-        extends typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions {
+        extends StObject
+           with typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions {
         
-        var bindToController: js.UndefOr[Boolean] = js.native
+        var bindToController: js.UndefOr[Boolean] = js.undefined
         
-        var controller: js.UndefOr[String | js.Array[_] | js.Any] = js.native
+        var controller: js.UndefOr[String | js.Array[js.Any] | js.Any] = js.undefined
         
-        var controllerAs: js.UndefOr[String] = js.native
+        var controllerAs: js.UndefOr[String] = js.undefined
         
         /**
           * Any serializable data that you want to be stored in the controller's dialog scope. ($scope.ngDialogData).
           * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.
           */
-        var data: js.UndefOr[String | js.Object | js.Array[_]] = js.native
+        var data: js.UndefOr[String | js.Object | js.Array[js.Any]] = js.undefined
         
         /**
           * An optional map of dependencies which should be injected into the controller. If any of these dependencies
           * are promises, ngDialog will wait for them all to be resolved or one to be rejected before the controller
           * is instantiated.
           */
-        var resolve: js.UndefOr[StringDictionary[String | Function]] = js.native
+        var resolve: js.UndefOr[StringDictionary[String | Function]] = js.undefined
         
         /**
           * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.
           */
-        var scope: js.UndefOr[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope] = js.native
+        var scope: js.UndefOr[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope] = js.undefined
         
-        var template: String = js.native
+        var template: String
       }
       object IDialogOpenOptions {
         
@@ -152,7 +151,7 @@ object mod {
           def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
           
           @scala.inline
-          def setController(value: String | js.Array[_] | js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+          def setController(value: String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
@@ -167,7 +166,7 @@ object mod {
           def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
           
           @scala.inline
-          def setData(value: String | js.Object | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          def setData(value: String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -203,38 +202,37 @@ object mod {
         var id: String = js.native
       }
       
-      @js.native
       trait IDialogOptions extends StObject {
         
         /**
           * Unlike the className property, which overrides any default classes specified through the setDefaults() method (see docs), appendClassName allows for the addition of a class on top of any defaults.
           */
-        var appendClassName: js.UndefOr[String] = js.native
+        var appendClassName: js.UndefOr[String] = js.undefined
         
         /**
           * Specify your element where to append dialog instance, accepts selector string (e.g. #yourId, .yourClass).
           * If not specified appends dialog to body as default behavior.
           */
-        var appendTo: js.UndefOr[String] = js.native
+        var appendTo: js.UndefOr[String] = js.undefined
         
         /**
           * When true, automatically selects appropriate values for any unspecified accessibility attributes. Default value is true
           */
-        var ariaAuto: js.UndefOr[Boolean] = js.native
+        var ariaAuto: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Specifies the value for the aria-describedby attribute that should be applied to the dialog element. Default value is null (unspecified)
           *
           * If specified, the value is not validated against the DOM.
           */
-        var ariaDescribedById: js.UndefOr[String] = js.native
+        var ariaDescribedById: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the CSS selector for the element to be referenced by the aria-describedby attribute on the dialog element. Default value is null (unspecified)
           *
           * If specified, the first matching element is used.
           */
-        var ariaDescribedBySelector: js.UndefOr[String] = js.native
+        var ariaDescribedBySelector: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the value for the aria-labelledby attribute that should be applied to the dialog element.
@@ -242,72 +240,72 @@ object mod {
           *
           * If specified, the value is not validated against the DOM
           */
-        var ariaLabelledById: js.UndefOr[String] = js.native
+        var ariaLabelledById: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the CSS selector for the element to be referenced by the aria-labelledby attribute on the dialog element. Default value is null (unspecified)
           *
           * If specified, the first matching element is used.
           */
-        var ariaLabelledBySelector: js.UndefOr[String] = js.native
+        var ariaLabelledBySelector: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the value for the role attribute that should be applied to the dialog element. Default value is null (unspecified)
           */
-        var ariaRole: js.UndefOr[String] = js.native
+        var ariaRole: js.UndefOr[String] = js.undefined
         
         /**
           * Pass false to disable template caching. Useful for developing purposes, default is true.
           */
-        var cache: js.UndefOr[Boolean] = js.native
+        var cache: js.UndefOr[Boolean] = js.undefined
         
         /**
           * This option allows you to control the dialog's look, you can use built-in themes or create your own styled modals.
           * It will be appended with the "ngdialog" class e.g. className is "default-theme flat-ui" it will be class="ngdialog default-theme flat-ui".
           */
-        var className: js.UndefOr[String] = js.native
+        var className: js.UndefOr[String] = js.undefined
         
         /**
           * It allows to close modals by clicking on overlay background, default true. If @see Hammer.js is loaded, it will listen for tap instead of click.
           */
-        var closeByDocument: js.UndefOr[Boolean] = js.native
+        var closeByDocument: js.UndefOr[Boolean] = js.undefined
         
         /**
           * It allows to close modals by clicking Esc button, default true.
           * This will close all open modals if there several of them open at the same time.
           */
-        var closeByEscape: js.UndefOr[Boolean] = js.native
+        var closeByEscape: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Listens for $locationChangeSuccess event and closes open dialogs if true (also handles the ui.router $stateChangeSuccess event if ui.router is used)
           * default : false
           */
-        var closeByNavigation: js.UndefOr[Boolean] = js.native
+        var closeByNavigation: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If true then animation for the dialog will be disabled, default false.
           */
-        var disableAnimation: js.UndefOr[Boolean] = js.native
+        var disableAnimation: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Specifies the height of the dialog content element. Default value is null (unspecified)
           */
-        var height: js.UndefOr[String | Double] = js.native
+        var height: js.UndefOr[String | Double] = js.undefined
         
         /**
           * Give a name for a dialog instance. It is useful for identifying specific dialog if there are multiple dialog boxes opened.
           */
-        var name: js.UndefOr[String | Double] = js.native
+        var name: js.UndefOr[String | Double] = js.undefined
         
         /**
           * If false it allows to hide overlay div behind the modals, default true.
           */
-        var overlay: js.UndefOr[Boolean] = js.native
+        var overlay: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If true allows to use plain string as template, default false.
           */
-        var plain: js.UndefOr[Boolean] = js.native
+        var plain: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Provide either the name of a function or a function to be called before the dialog is closed.
@@ -316,29 +314,29 @@ object mod {
           *
           * more: https://github.com/likeastore/ngDialog#preclosecallback-string--function
           */
-        var preCloseCallback: js.UndefOr[String | Function] = js.native
+        var preCloseCallback: js.UndefOr[String | Function] = js.undefined
         
         /**
           * When true, closing the dialog restores focus to the element that launched it. Designed to improve keyboard
           * accessibility. Default value is true
           */
-        var preserveFocus: js.UndefOr[Boolean] = js.native
+        var preserveFocus: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If false it allows to hide close button on modals, default true.
           */
-        var showClose: js.UndefOr[Boolean] = js.native
+        var showClose: js.UndefOr[Boolean] = js.undefined
         
         /**
           * When true, ensures that the focused element remains within the dialog to conform to accessibility recommendations.
           * Default value is true
           */
-        var trapFocus: js.UndefOr[Boolean] = js.native
+        var trapFocus: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Specifies the width of the dialog content element. Default value is null (unspecified)
           */
-        var width: js.UndefOr[String | Double] = js.native
+        var width: js.UndefOr[String | Double] = js.undefined
       }
       object IDialogOptions {
         
@@ -491,15 +489,16 @@ object mod {
         }
       }
       
-      @js.native
-      trait IDialogProvider extends IServiceProvider {
+      trait IDialogProvider
+        extends StObject
+           with IServiceProvider {
         
         /**
           * Default options for the dialogs.
           * @param defaultOptions
           * @returns {}
           */
-        def setDefaults(defaultOptions: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions): Unit = js.native
+        def setDefaults(defaultOptions: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions): Unit
         
         /**
           * Adds additional listener on every $locationChangeSuccess event and gets updated version of body into dialog.
@@ -507,14 +506,14 @@ object mod {
           * config as provider instance:
           * @param {boolean} force
           */
-        def setForceBodyReload(force: Boolean): Unit = js.native
+        def setForceBodyReload(force: Boolean): Unit
         
         /**
           * Adds an additional listener on every $locationChangeSuccess event and gets update version of html into dialog.
           * May be useful in some rare cases when you're dependant on DOM changes, defaults to false.
           * @param {boolean} force
           */
-        def setForceHtmlReload(force: Boolean): Unit = js.native
+        def setForceHtmlReload(force: Boolean): Unit
       }
       object IDialogProvider {
         
@@ -547,7 +546,9 @@ object mod {
         * Dialog Scope which extends the $scope.
         */
       @js.native
-      trait IDialogScope extends IRootScopeService {
+      trait IDialogScope
+        extends StObject
+           with IRootScopeService {
         
         /**
           * This allows you to close dialog straight from handler in a popup element.
@@ -561,7 +562,7 @@ object mod {
           * Any serializable data that you want to be stored in the controller's dialog scope.
           * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.
           */
-        var ngDialogData: String | js.Object | js.Array[_] = js.native
+        var ngDialogData: String | js.Object | js.Array[js.Any] = js.native
         
         /**
           * The id of the dialog. If you you ngDialogData, it'll be also available under ngDialogData.ngDialogId
@@ -591,7 +592,7 @@ object mod {
         
         def open(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenResult = js.native
         
-        def openConfirm(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions): IPromise[_] = js.native
+        def openConfirm(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions): IPromise[js.Any] = js.native
       }
     }
   }

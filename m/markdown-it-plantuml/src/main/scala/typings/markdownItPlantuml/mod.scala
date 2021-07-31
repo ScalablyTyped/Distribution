@@ -6,7 +6,6 @@ import typings.markdownIt.rendererMod.RenderRule
 import typings.markdownIt.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,22 +14,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : PluginWithOptions[Options] = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var closeMarker: js.UndefOr[String] = js.native
+    var closeMarker: js.UndefOr[String] = js.undefined
     
-    var diagramName: js.UndefOr[String] = js.native
+    var diagramName: js.UndefOr[String] = js.undefined
     
-    var generateSource: js.UndefOr[js.Function2[/* umlCode */ String, /* pluginOptions */ this.type, String]] = js.native
+    var generateSource: js.UndefOr[js.Function2[/* umlCode */ String, /* pluginOptions */ this.type, String]] = js.undefined
     
-    var imageFormat: js.UndefOr[String] = js.native
+    var imageFormat: js.UndefOr[String] = js.undefined
     
-    var openMarker: js.UndefOr[String] = js.native
+    var openMarker: js.UndefOr[String] = js.undefined
     
-    var render: js.UndefOr[RenderRule] = js.native
+    var render: js.UndefOr[RenderRule] = js.undefined
     
-    var server: js.UndefOr[String] = js.native
+    var server: js.UndefOr[String] = js.undefined
   }
   object Options {
     

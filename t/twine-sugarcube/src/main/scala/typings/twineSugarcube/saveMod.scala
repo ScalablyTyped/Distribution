@@ -7,7 +7,6 @@ import typings.twineSugarcube.anon.Get
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saveMod {
@@ -39,10 +38,10 @@ object saveMod {
       * @param metadata The data to be stored in the save object's metadata property. Must be JSON-serializable.
       * @since 2.8.0
       */
-    def export(): Unit = js.native
-    def export(filename: js.UndefOr[scala.Nothing], metadata: js.Any): Unit = js.native
-    def export(filename: String): Unit = js.native
-    def export(filename: String, metadata: js.Any): Unit = js.native
+    def `export`(): Unit = js.native
+    def `export`(filename: String): Unit = js.native
+    def `export`(filename: String, metadata: js.Any): Unit = js.native
+    def `export`(filename: Unit, metadata: js.Any): Unit = js.native
     
     /**
       * Returns the saves object.
@@ -84,26 +83,25 @@ object saveMod {
     var slots: Count = js.native
   }
   
-  @js.native
   trait SaveObject extends StObject {
     
     /** The date when the save was created(in milliseconds elapsed since epoch). */
-    var date: Double = js.native
+    var date: Double
     
     /** The story's save ID. */
-    var id: String = js.native
+    var id: String
     
     /** Save metadata(end - user specified; must be JSON - serializable). */
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
     /** The marshaled story history(see below for details). */
-    var state: SavedState = js.native
+    var state: SavedState
     
     /** The title of the save. */
-    var title: String = js.native
+    var title: String
     
     /** Save version(end - user specified via Config.saves.version). */
-    var version: js.UndefOr[js.Any] = js.native
+    var version: js.UndefOr[js.Any] = js.undefined
   }
   object SaveObject {
     
@@ -142,17 +140,16 @@ object saveMod {
     }
   }
   
-  @js.native
   trait SavedMoment extends StObject {
     
     /** The current pull count of SugarCube's seedable PRNG, exists only if enabled. */
-    var pull: js.UndefOr[Double] = js.native
+    var pull: js.UndefOr[Double] = js.undefined
     
     /** The title of the associated passage. */
-    var title: String = js.native
+    var title: String
     
     /** The current variable store object, which contains sigil - less name ⇒ value pairs(e.g.$foo exists as foo). */
-    var variables: StringDictionary[js.Any] = js.native
+    var variables: StringDictionary[js.Any]
   }
   object SavedMoment {
     
@@ -179,20 +176,19 @@ object saveMod {
     }
   }
   
-  @js.native
   trait SavedState extends StObject {
     
     /** The array of expired moment passage titles, exists only if any moments have expired. */
-    var expired: js.UndefOr[Array[String]] = js.native
+    var expired: js.UndefOr[Array[String]] = js.undefined
     
     /** The array of moment objects. */
-    var history: Array[SavedMoment] = js.native
+    var history: Array[SavedMoment]
     
     /** The index of the active moment. */
-    var index: Double = js.native
+    var index: Double
     
     /** The seed of SugarCube's seedable PRNG, exists only if enabled. */
-    var seed: js.UndefOr[String] = js.native
+    var seed: js.UndefOr[String] = js.undefined
   }
   object SavedState {
     

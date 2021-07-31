@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Object {
@@ -95,11 +94,11 @@ object Object {
     def keys[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def least[T, U](): SugarDefaultChainable[T] = js.native
-    def least[T, U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def least[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def least[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
     def least[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def least[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def least[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def least[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
@@ -107,11 +106,11 @@ object Object {
     def map[T, U](map: mapFn[T, U]): SugarDefaultChainable[js.Object] = js.native
     
     def max[T, U](): SugarDefaultChainable[T] = js.native
-    def max[T, U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def max[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def max[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
     def max[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def max[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def max[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def max[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
@@ -126,20 +125,20 @@ object Object {
     def mergeAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
     
     def min[T, U](): SugarDefaultChainable[T] = js.native
-    def min[T, U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def min[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def min[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
     def min[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def min[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def min[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def min[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
     def most[T, U](): SugarDefaultChainable[T] = js.native
-    def most[T, U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def most[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def most[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
     def most[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def most[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def most[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def most[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
@@ -194,7 +193,7 @@ object Object {
     def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
     def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
-    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[_]]): SugarDefaultChainable[js.Object] = js.native
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
     
     def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
     def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
@@ -204,7 +203,8 @@ object Object {
   
   @js.native
   trait Constructor
-    extends SugarNamespace
+    extends StObject
+       with SugarNamespace
        with Instantiable0[Chainable[js.Object]]
        with Instantiable1[/* raw */ js.Object, Chainable[js.Object]] {
     
@@ -292,11 +292,11 @@ object Object {
     def keys[T](instance: js.Object): typings.sugar.Array[T] = js.native
     
     def least[T, U](instance: js.Object): T = js.native
-    def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def least[T, U](instance: js.Object, all: Boolean): T = js.native
     def least[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
     def least[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+    def least[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+    def least[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
     def least[T, U](instance: js.Object, map: java.lang.String): T = js.native
     def least[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
     
@@ -304,11 +304,11 @@ object Object {
     def map[T, U](instance: js.Object, map: mapFn[T, U]): js.Object = js.native
     
     def max[T, U](instance: js.Object): T = js.native
-    def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def max[T, U](instance: js.Object, all: Boolean): T = js.native
     def max[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
     def max[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+    def max[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+    def max[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
     def max[T, U](instance: js.Object, map: java.lang.String): T = js.native
     def max[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
     
@@ -323,20 +323,20 @@ object Object {
     def mergeAll[T](instance: js.Object, sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): js.Object = js.native
     
     def min[T, U](instance: js.Object): T = js.native
-    def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def min[T, U](instance: js.Object, all: Boolean): T = js.native
     def min[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
     def min[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+    def min[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+    def min[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
     def min[T, U](instance: js.Object, map: java.lang.String): T = js.native
     def min[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
     
     def most[T, U](instance: js.Object): T = js.native
-    def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def most[T, U](instance: js.Object, all: Boolean): T = js.native
     def most[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
     def most[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+    def most[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+    def most[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
     def most[T, U](instance: js.Object, map: java.lang.String): T = js.native
     def most[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
     
@@ -379,7 +379,7 @@ object Object {
     def sum[T, U](instance: js.Object, map: java.lang.String): Double = js.native
     def sum[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
     
-    def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, _]): js.Object = js.native
+    def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, js.Any]): js.Object = js.native
     
     def toQueryString[T, U](instance: js.Object): js.Object = js.native
     def toQueryString[T, U](instance: js.Object, options: QueryStringOptions[T, U]): js.Object = js.native
@@ -387,16 +387,15 @@ object Object {
     def values[T](instance: js.Object): typings.sugar.Array[T] = js.native
   }
   
-  @js.native
   trait ObjectMergeOptions[T] extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var descriptor: js.UndefOr[Boolean] = js.native
+    var descriptor: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var resolve: js.UndefOr[Boolean | resolveFn[T]] = js.native
+    var resolve: js.UndefOr[Boolean | resolveFn[T]] = js.undefined
   }
   object ObjectMergeOptions {
     
@@ -407,7 +406,7 @@ object Object {
     }
     
     @scala.inline
-    implicit class ObjectMergeOptionsMutableBuilder[Self <: ObjectMergeOptions[_], T] (val x: Self with ObjectMergeOptions[T]) extends AnyVal {
+    implicit class ObjectMergeOptionsMutableBuilder[Self <: ObjectMergeOptions[?], T] (val x: Self & ObjectMergeOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
@@ -440,16 +439,15 @@ object Object {
     }
   }
   
-  @js.native
   trait QueryStringOptions[T, U] extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var prefix: js.UndefOr[java.lang.String] = js.native
+    var prefix: js.UndefOr[java.lang.String] = js.undefined
     
-    var separator: js.UndefOr[java.lang.String] = js.native
+    var separator: js.UndefOr[java.lang.String] = js.undefined
     
-    var transform: js.UndefOr[js.Function3[/* key */ java.lang.String, /* val */ T, /* obj */ js.Object, U]] = js.native
+    var transform: js.UndefOr[js.Function3[/* key */ java.lang.String, /* val */ T, /* obj */ js.Object, U]] = js.undefined
   }
   object QueryStringOptions {
     
@@ -460,7 +458,7 @@ object Object {
     }
     
     @scala.inline
-    implicit class QueryStringOptionsMutableBuilder[Self <: QueryStringOptions[_, _], T, U] (val x: Self with (QueryStringOptions[T, U])) extends AnyVal {
+    implicit class QueryStringOptionsMutableBuilder[Self <: QueryStringOptions[?, ?], T, U] (val x: Self & (QueryStringOptions[T, U])) extends AnyVal {
       
       @scala.inline
       def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
@@ -488,16 +486,15 @@ object Object {
     }
   }
   
-  @js.native
   trait QueryStringParseOptions[T, U] extends StObject {
     
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[java.lang.String] = js.native
+    var separator: js.UndefOr[java.lang.String] = js.undefined
     
-    var transform: js.UndefOr[js.Function3[/* key */ java.lang.String, /* val */ T, /* obj */ js.Object, U]] = js.native
+    var transform: js.UndefOr[js.Function3[/* key */ java.lang.String, /* val */ T, /* obj */ js.Object, U]] = js.undefined
   }
   object QueryStringParseOptions {
     
@@ -508,7 +505,7 @@ object Object {
     }
     
     @scala.inline
-    implicit class QueryStringParseOptionsMutableBuilder[Self <: QueryStringParseOptions[_, _], T, U] (val x: Self with (QueryStringParseOptions[T, U])) extends AnyVal {
+    implicit class QueryStringParseOptionsMutableBuilder[Self <: QueryStringParseOptions[?, ?], T, U] (val x: Self & (QueryStringParseOptions[T, U])) extends AnyVal {
       
       @scala.inline
       def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])

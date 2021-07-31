@@ -5,15 +5,15 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapOverlayProps extends ViewProps {
+trait MapOverlayProps
+  extends StObject
+     with ViewProps {
   
-  var bounds: js.Tuple2[Coordinate, Coordinate] = js.native
+  var bounds: js.Tuple2[Coordinate, Coordinate]
   
-  var image: js.UndefOr[ImageURISource | ImageRequireSource] = js.native
+  var image: js.UndefOr[ImageURISource | ImageRequireSource] = js.undefined
 }
 object MapOverlayProps {
   

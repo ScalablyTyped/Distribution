@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesPreliminary extends StObject {
   
-  var enumValues: Preliminary = js.native
+  var enumValues: Preliminary
 }
 object EnumValuesPreliminary {
   

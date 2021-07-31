@@ -2,26 +2,24 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyRuleInput extends StObject {
   
   /**
     * The actions.
     */
-  var Actions: js.UndefOr[typings.awsSdk.elbv2Mod.Actions] = js.native
+  var Actions: js.UndefOr[typings.awsSdk.elbv2Mod.Actions] = js.undefined
   
   /**
     * The conditions.
     */
-  var Conditions: js.UndefOr[RuleConditionList] = js.native
+  var Conditions: js.UndefOr[RuleConditionList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var RuleArn: typings.awsSdk.elbv2Mod.RuleArn = js.native
+  var RuleArn: typings.awsSdk.elbv2Mod.RuleArn
 }
 object ModifyRuleInput {
   

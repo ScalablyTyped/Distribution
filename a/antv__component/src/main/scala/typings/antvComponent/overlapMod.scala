@@ -3,78 +3,81 @@ package typings.antvComponent
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlapMod {
   
   object autoEllipsis {
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoEllipsis.ellipsisHead")
+    @JSImport("@antv/component/lib/axis/overlap", "autoEllipsis")
     @js.native
-    def ellipsisHead(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoEllipsis.ellipsisMiddle")
-    @js.native
-    def ellipsisMiddle(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = js.native
+    @scala.inline
+    def ellipsisHead(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisHead")(isVertical.asInstanceOf[js.Any], labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoEllipsis.ellipsisTail")
-    @js.native
-    def ellipsisTail(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = js.native
+    @scala.inline
+    def ellipsisMiddle(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisMiddle")(isVertical.asInstanceOf[js.Any], labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoEllipsis.getDefault")
-    @js.native
-    def getDefault(): js.Function3[/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ Double, Boolean] = js.native
+    @scala.inline
+    def ellipsisTail(isVertical: Boolean, labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisTail")(isVertical.asInstanceOf[js.Any], labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getDefault(): js.Function3[/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[js.Function3[/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ Double, Boolean]]
   }
   
   object autoHide {
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.equidistance")
+    @JSImport("@antv/component/lib/axis/overlap", "autoHide")
     @js.native
-    def equidistance(isVertical: Boolean, labelsGroup: IGroup): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.equidistanceWithReverseBoth")
-    @js.native
-    def equidistanceWithReverseBoth(isVertical: Boolean, labelsGroup: IGroup): Boolean = js.native
+    @scala.inline
+    def equidistance(isVertical: Boolean, labelsGroup: IGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equidistance")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.getDefault")
-    @js.native
-    def getDefault(): js.Function2[/* isVertical */ Boolean, /* labelsGroup */ IGroup, Boolean] = js.native
+    @scala.inline
+    def equidistanceWithReverseBoth(isVertical: Boolean, labelsGroup: IGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equidistanceWithReverseBoth")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.reserveBoth")
-    @js.native
-    def reserveBoth(isVertical: Boolean, labelsGroup: IGroup): Boolean = js.native
+    @scala.inline
+    def getDefault(): js.Function2[/* isVertical */ Boolean, /* labelsGroup */ IGroup, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[js.Function2[/* isVertical */ Boolean, /* labelsGroup */ IGroup, Boolean]]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.reserveFirst")
-    @js.native
-    def reserveFirst(isVertical: Boolean, labelsGroup: IGroup): Boolean = js.native
+    @scala.inline
+    def reserveBoth(isVertical: Boolean, labelsGroup: IGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reserveBoth")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoHide.reserveLast")
-    @js.native
-    def reserveLast(isVertical: Boolean, labelsGroup: IGroup): Boolean = js.native
+    @scala.inline
+    def reserveFirst(isVertical: Boolean, labelsGroup: IGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reserveFirst")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def reserveLast(isVertical: Boolean, labelsGroup: IGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reserveLast")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object autoRotate {
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoRotate.fixedAngle")
+    @JSImport("@antv/component/lib/axis/overlap", "autoRotate")
     @js.native
-    def fixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double): Boolean = js.native
-    @JSImport("@antv/component/lib/axis/overlap", "autoRotate.fixedAngle")
-    @js.native
-    def fixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double, customRotate: Double): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoRotate.getDefault")
-    @js.native
+    @scala.inline
+    def fixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fixedAngle")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def fixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double, customRotate: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fixedAngle")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any], customRotate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
     def getDefault(): js.Function4[
         /* isVertical */ Boolean, 
         /* labelsGroup */ IGroup, 
         /* limitLength */ Double, 
         /* customRotate */ js.UndefOr[Double], 
         Boolean
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[js.Function4[
+        /* isVertical */ Boolean, 
+        /* labelsGroup */ IGroup, 
+        /* limitLength */ Double, 
+        /* customRotate */ js.UndefOr[Double], 
+        Boolean
+      ]]
     
-    @JSImport("@antv/component/lib/axis/overlap", "autoRotate.unfixedAngle")
-    @js.native
-    def unfixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double): Boolean = js.native
+    @scala.inline
+    def unfixedAngle(isVertical: Boolean, labelsGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unfixedAngle")(isVertical.asInstanceOf[js.Any], labelsGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

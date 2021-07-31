@@ -2,7 +2,6 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DiagnosticCode {
@@ -10,6 +9,54 @@ object DiagnosticCode {
   @JSImport("typescript-services", "DiagnosticCode")
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_1_is_inaccessible")
+  @js.native
+  val `01IsInaccessible`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_expected")
+  @js.native
+  val `0Expected`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_keyword_expected")
+  @js.native
+  val `0KeywordExpected`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_already_seen")
+  @js.native
+  val `0ModifierAlreadySeen`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_class_element")
+  @js.native
+  val `0ModifierCannotAppearOnAClassElement`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_constructor_declaration")
+  @js.native
+  val `0ModifierCannotAppearOnAConstructorDeclaration`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_module_element")
+  @js.native
+  val `0ModifierCannotAppearOnAModuleElement`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_parameter")
+  @js.native
+  val `0ModifierCannotAppearOnAParameter`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_modifier_must_precede_1_modifier")
+  @js.native
+  val `0ModifierMustPrecede1Modifier`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_overload_s")
+  @js.native
+  val `0OverloadS`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_which_lacks_get_accessor_and_parameter_type_annotation_on_set_accessor_implicitly_has_an_any_type")
+  @js.native
+  val `0WhichLacksGetAccessorAndParameterTypeAnnotationOnSetAccessorImplicitlyHasAnAnyType`: String = js.native
+  
+  @JSImport("typescript-services", "DiagnosticCode._0_which_lacks_return_type_annotation_implicitly_has_an_any_return_type")
+  @js.native
+  val `0WhichLacksReturnTypeAnnotationImplicitlyHasAnAnyReturnType`: String = js.native
   
   @JSImport("typescript-services", "DiagnosticCode.A_class_may_only_extend_another_class")
   @js.native
@@ -2930,6 +2977,10 @@ object DiagnosticCode {
   @scala.inline
   def thisCannotBeReferencedWithinModuleBodies_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("this_cannot_be_referenced_within_module_bodies")(x.asInstanceOf[js.Any])
   
+  @JSImport("typescript-services", "DiagnosticCode.type")
+  @js.native
+  val `type`: String = js.native
+  
   @JSImport("typescript-services", "DiagnosticCode.type_name")
   @js.native
   def typeName: String = js.native
@@ -2950,56 +3001,4 @@ object DiagnosticCode {
   
   @scala.inline
   def warningTS01_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning_TS_0_1")(x.asInstanceOf[js.Any])
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_1_is_inaccessible")
-  @js.native
-  val `01IsInaccessible`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_expected")
-  @js.native
-  val `0Expected`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_keyword_expected")
-  @js.native
-  val `0KeywordExpected`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_already_seen")
-  @js.native
-  val `0ModifierAlreadySeen`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_class_element")
-  @js.native
-  val `0ModifierCannotAppearOnAClassElement`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_constructor_declaration")
-  @js.native
-  val `0ModifierCannotAppearOnAConstructorDeclaration`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_module_element")
-  @js.native
-  val `0ModifierCannotAppearOnAModuleElement`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_cannot_appear_on_a_parameter")
-  @js.native
-  val `0ModifierCannotAppearOnAParameter`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_modifier_must_precede_1_modifier")
-  @js.native
-  val `0ModifierMustPrecede1Modifier`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_overload_s")
-  @js.native
-  val `0OverloadS`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_which_lacks_get_accessor_and_parameter_type_annotation_on_set_accessor_implicitly_has_an_any_type")
-  @js.native
-  val `0WhichLacksGetAccessorAndParameterTypeAnnotationOnSetAccessorImplicitlyHasAnAnyType`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode._0_which_lacks_return_type_annotation_implicitly_has_an_any_return_type")
-  @js.native
-  val `0WhichLacksReturnTypeAnnotationImplicitlyHasAnAnyReturnType`: String = js.native
-  
-  @JSImport("typescript-services", "DiagnosticCode.type")
-  @js.native
-  val `type`: String = js.native
 }

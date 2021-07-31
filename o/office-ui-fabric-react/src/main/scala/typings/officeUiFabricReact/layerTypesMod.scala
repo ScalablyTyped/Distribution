@@ -10,29 +10,28 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerTypesMod {
   
-  @js.native
   trait ILayer extends StObject
   
-  @js.native
-  trait ILayerProps extends HTMLAttributes[HTMLDivElement | LayerBase] {
+  trait ILayerProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement | LayerBase] {
     
     /**
       * Optional callback to access the ILayer interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ILayer]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ILayer]] = js.undefined
     
     /**
       * When enabled, Layer allows events to bubble up from Layer content.
       * Traditionally Layer has not had this behavior. This prop preserves backwards compatibility by
       * default while allowing users to opt in to the new event bubbling functionality.
       */
-    var eventBubblingEnabled: js.UndefOr[Boolean] = js.native
+    var eventBubblingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The optional id property provided on a LayerHost that this Layer should render within. The LayerHost does
@@ -40,40 +39,40 @@ object layerTypesMod {
       * to render the Layer content until the host is available. If an id is not provided, we will render the Layer
       * content in a fixed position element rendered at the end of the document.
       */
-    var hostId: js.UndefOr[String] = js.native
+    var hostId: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the layer should be added as the first child of the host.
       * If true, the layer will be inserted as the first child of the host
       * By default, the layer will be appended at the end to the host
       */
-    var insertFirst: js.UndefOr[Boolean] = js.native
+    var insertFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback for when the layer is mounted.
       */
-    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback for when the layer is mounted.
       * @deprecated Use onLayerDidMount.
       */
-    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback for when the layer is unmounted.
       */
-    var onLayerWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerWillUnmount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ILayerStyleProps, ILayerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ILayerStyleProps, ILayerStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ILayerProps {
     
@@ -148,23 +147,22 @@ object layerTypesMod {
     }
   }
   
-  @js.native
   trait ILayerStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Check if Host
       */
-    var isNotHost: js.UndefOr[Boolean] = js.native
+    var isNotHost: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ILayerStyleProps {
     
@@ -194,18 +192,17 @@ object layerTypesMod {
     }
   }
   
-  @js.native
   trait ILayerStyles extends StObject {
     
     /**
       * Style for the Fabric component.
       */
-    var content: js.UndefOr[IStyle] = js.native
+    var content: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element when fixed.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object ILayerStyles {
     

@@ -2,37 +2,35 @@ package typings.headroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
     /** when at bottom of scoll area */
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
     /** when frozen method has been called */
-    var frozen: js.UndefOr[String] = js.native
+    var frozen: js.UndefOr[String] = js.undefined
     
     /** when element is initialised */
-    var initial: js.UndefOr[String] = js.native
+    var initial: js.UndefOr[String] = js.undefined
     
     /** when not at bottom of scroll area */
-    var notBottom: js.UndefOr[String] = js.native
+    var notBottom: js.UndefOr[String] = js.undefined
     
     /** when below offset */
-    var notTop: js.UndefOr[String] = js.native
+    var notTop: js.UndefOr[String] = js.undefined
     
     /** when scrolling up */
-    var pinned: js.UndefOr[String] = js.native
+    var pinned: js.UndefOr[String] = js.undefined
     
     /** when above offset */
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
     /** when scrolling down */
-    var unpinned: js.UndefOr[String] = js.native
+    var unpinned: js.UndefOr[String] = js.undefined
   }
   object Bottom {
     
@@ -95,12 +93,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Down extends StObject {
     
-    var down: js.UndefOr[Double] = js.native
+    var down: js.UndefOr[Double] = js.undefined
     
-    var up: js.UndefOr[Double] = js.native
+    var up: js.UndefOr[Double] = js.undefined
   }
   object Down {
     

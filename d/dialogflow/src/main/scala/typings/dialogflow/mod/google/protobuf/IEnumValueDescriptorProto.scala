@@ -2,21 +2,19 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EnumValueDescriptorProto. */
-@js.native
 trait IEnumValueDescriptorProto extends StObject {
   
   /** EnumValueDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** EnumValueDescriptorProto number */
-  var number: js.UndefOr[Double | Null] = js.native
+  var number: js.UndefOr[Double | Null] = js.undefined
   
   /** EnumValueDescriptorProto options */
-  var options: js.UndefOr[IEnumValueOptions | Null] = js.native
+  var options: js.UndefOr[IEnumValueOptions | Null] = js.undefined
 }
 object IEnumValueDescriptorProto {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Use this interface to accept requests from peers to join a session. */
-@js.native
 trait IAllJoynAcceptSessionJoiner extends StObject {
   
   /** Accept an incoming request to join the session. */
-  def accept(): Unit = js.native
+  def accept(): Unit
 }
 object IAllJoynAcceptSessionJoiner {
   

@@ -2,15 +2,13 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrRecognizerStatic extends StObject {
   
-  def attrTest(input: HammerInput): Boolean = js.native
+  def attrTest(input: HammerInput): Boolean
   
-  def process(input: HammerInput): js.Any = js.native
+  def process(input: HammerInput): js.Any
 }
 object AttrRecognizerStatic {
   

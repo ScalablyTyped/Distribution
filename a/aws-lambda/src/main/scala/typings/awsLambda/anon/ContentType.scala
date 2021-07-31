@@ -4,27 +4,21 @@ import typings.awsLambda.awsLambdaStrings.applicationSlashvndDotamazonawsDotcard
 import typings.awsLambda.lexMod.LexGenericAttachment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentType extends StObject {
   
-  var contentType: applicationSlashvndDotamazonawsDotcardDotgeneric = js.native
+  var contentType: applicationSlashvndDotamazonawsDotcardDotgeneric
   
-  var genericAttachments: js.Array[LexGenericAttachment] = js.native
+  var genericAttachments: js.Array[LexGenericAttachment]
   
-  var version: Double = js.native
+  var version: Double
 }
 object ContentType {
   
   @scala.inline
-  def apply(
-    contentType: applicationSlashvndDotamazonawsDotcardDotgeneric,
-    genericAttachments: js.Array[LexGenericAttachment],
-    version: Double
-  ): ContentType = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], genericAttachments = genericAttachments.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(genericAttachments: js.Array[LexGenericAttachment], version: Double): ContentType = {
+    val __obj = js.Dynamic.literal(contentType = "application/vnd.amazonaws.card.generic", genericAttachments = genericAttachments.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
   

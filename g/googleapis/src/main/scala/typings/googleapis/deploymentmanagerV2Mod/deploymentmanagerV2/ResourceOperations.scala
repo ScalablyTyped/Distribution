@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2", "deploymentmanager_v2.Resource$Operations")
@@ -87,7 +86,7 @@ class ResourceOperations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceOperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceOperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
@@ -187,7 +186,7 @@ class ResourceOperations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaOperationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOperationsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperationsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperationsListResponse] = js.native
   def list(params: ParamsResourceOperationsList): GaxiosPromise[SchemaOperationsListResponse] = js.native
   def list(params: ParamsResourceOperationsList, callback: BodyResponseCallback[SchemaOperationsListResponse]): Unit = js.native
   def list(

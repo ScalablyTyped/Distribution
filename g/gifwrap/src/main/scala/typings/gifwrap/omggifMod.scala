@@ -7,40 +7,38 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object omggifMod {
   
   type ByteArray = Uint8Array | Buffer
   
-  @js.native
   trait FrameInfo extends StObject {
     
-    var data_length: Double = js.native
+    var data_length: Double
     
-    var data_offset: Double = js.native
+    var data_offset: Double
     
-    var delay: Double = js.native
+    var delay: Double
     
     // 100ths of a second
-    var disposal: Double = js.native
+    var disposal: Double
     
-    var has_local_palette: Boolean = js.native
+    var has_local_palette: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var interlaced: Boolean = js.native
+    var interlaced: Boolean
     
-    var palette_offset: Double = js.native
+    var palette_offset: Double
     
-    var transparent_index: Double = js.native
+    var transparent_index: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object FrameInfo {
     
@@ -104,19 +102,18 @@ object omggifMod {
     }
   }
   
-  @js.native
   trait FrameOptions extends StObject {
     
     // RGB by color index
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     // duation in 100s of a second
-    var disposal: js.UndefOr[Double] = js.native
+    var disposal: js.UndefOr[Double] = js.undefined
     
-    var palette: js.UndefOr[js.Array[Double]] = js.native
+    var palette: js.UndefOr[js.Array[Double]] = js.undefined
     
     // what to do with background color (0-3)
-    var transparent: js.UndefOr[Double] = js.native
+    var transparent: js.UndefOr[Double] = js.undefined
   }
   object FrameOptions {
     
@@ -159,7 +156,9 @@ object omggifMod {
   }
   
   @js.native
-  trait GifReader extends Instantiable1[/* buffer */ ByteArray, GifReader] {
+  trait GifReader
+    extends StObject
+       with Instantiable1[/* buffer */ ByteArray, GifReader] {
     
     def decodeAndBlitFrameBGRA(frameNumber: Double, pixels: js.Array[Double]): Unit = js.native
     
@@ -178,7 +177,8 @@ object omggifMod {
   
   @js.native
   trait GifWriter
-    extends Instantiable3[/* buffer */ ByteArray, /* width */ Double, /* height */ Double, GifWriter]
+    extends StObject
+       with Instantiable3[/* buffer */ ByteArray, /* width */ Double, /* height */ Double, GifWriter]
        with Instantiable4[
           /* buffer */ ByteArray, 
           /* width */ Double, 
@@ -209,16 +209,15 @@ object omggifMod {
     def setOutputBufferPosition(position: Double): Unit = js.native
   }
   
-  @js.native
   trait GlobalOptions extends StObject {
     
     // global palette RGB by color index
-    var background: js.UndefOr[Double] = js.native
+    var background: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Double] = js.native
+    var loop: js.UndefOr[Double] = js.undefined
     
     // 0 = unending loop; n > 0 = (n+1) iterations; null = once
-    var palette: js.UndefOr[js.Array[Double]] = js.native
+    var palette: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object GlobalOptions {
     
@@ -254,12 +253,11 @@ object omggifMod {
     }
   }
   
-  @js.native
   trait OmggifModule extends StObject {
     
-    var GifReader: typings.gifwrap.omggifMod.GifReader = js.native
+    var GifReader: typings.gifwrap.omggifMod.GifReader
     
-    var GifWriter: typings.gifwrap.omggifMod.GifWriter = js.native
+    var GifWriter: typings.gifwrap.omggifMod.GifWriter
   }
   object OmggifModule {
     

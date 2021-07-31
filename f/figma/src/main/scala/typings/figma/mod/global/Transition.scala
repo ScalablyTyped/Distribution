@@ -13,7 +13,6 @@ import typings.figma.figmaStrings.SMART_ANIMATE
 import typings.figma.figmaStrings.TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

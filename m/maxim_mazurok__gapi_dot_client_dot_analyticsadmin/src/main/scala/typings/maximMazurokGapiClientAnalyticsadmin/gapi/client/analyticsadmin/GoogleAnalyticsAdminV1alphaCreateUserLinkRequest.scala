@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaCreateUserLinkRequest extends StObject {
   
   /** Optional. If set, then email the new user notifying them that they've been granted permissions to the resource. */
-  var notifyNewUser: js.UndefOr[Boolean] = js.native
+  var notifyNewUser: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Example format: accounts/1234 */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Required. The user link to create. */
-  var userLink: js.UndefOr[GoogleAnalyticsAdminV1alphaUserLink] = js.native
+  var userLink: js.UndefOr[GoogleAnalyticsAdminV1alphaUserLink] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaCreateUserLinkRequest {
   

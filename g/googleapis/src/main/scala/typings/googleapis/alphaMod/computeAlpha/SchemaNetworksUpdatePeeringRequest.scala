@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworksUpdatePeeringRequest extends StObject {
   
-  var networkPeering: js.UndefOr[SchemaNetworkPeering] = js.native
+  var networkPeering: js.UndefOr[SchemaNetworkPeering] = js.undefined
 }
 object SchemaNetworksUpdatePeeringRequest {
   

@@ -4,10 +4,13 @@ import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useCustomEffectMod {
+  
+  @JSImport("@restart/hooks/cjs/useCustomEffect", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * a useEffect() hook with customized depedency comparision
@@ -16,9 +19,8 @@ object useCustomEffectMod {
     * @param dependencies A list of dependencies
     * @param isEqual A function comparing the next and previous dependencyLists
     */
-  @JSImport("@restart/hooks/cjs/useCustomEffect", JSImport.Default)
-  @js.native
-  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, isEqual: IsEqual[TDeps]): Unit = js.native
+  @scala.inline
+  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, isEqual: IsEqual[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * a useEffect() hook with customized depedency comparision
     *
@@ -28,16 +30,14 @@ object useCustomEffectMod {
     * @param options.isEqual A function comparing the next and previous dependencyLists
     * @param options.effectHook the underlying effect hook used, defaults to useEffect
     */
-  @JSImport("@restart/hooks/cjs/useCustomEffect", JSImport.Default)
-  @js.native
-  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, options: CustomEffectOptions[TDeps]): Unit = js.native
+  @scala.inline
+  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, options: CustomEffectOptions[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CustomEffectOptions[TDeps /* <: DependencyList */] extends StObject {
     
-    var effectHook: js.UndefOr[EffectHook] = js.native
+    var effectHook: js.UndefOr[EffectHook] = js.undefined
     
-    var isEqual: IsEqual[TDeps] = js.native
+    var isEqual: IsEqual[TDeps]
   }
   object CustomEffectOptions {
     
@@ -48,7 +48,7 @@ object useCustomEffectMod {
     }
     
     @scala.inline
-    implicit class CustomEffectOptionsMutableBuilder[Self <: CustomEffectOptions[_], TDeps /* <: DependencyList */] (val x: Self with CustomEffectOptions[TDeps]) extends AnyVal {
+    implicit class CustomEffectOptionsMutableBuilder[Self <: CustomEffectOptions[?], TDeps /* <: DependencyList */] (val x: Self & CustomEffectOptions[TDeps]) extends AnyVal {
       
       @scala.inline
       def setEffectHook(value: (/* effect */ EffectCallback, /* deps */ js.UndefOr[DependencyList]) => Unit): Self = StObject.set(x, "effectHook", js.Any.fromFunction2(value))

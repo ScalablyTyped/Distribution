@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpHeaderExtensionParameters extends StObject {
   
-  var encrypted: js.UndefOr[scala.Boolean] = js.native
+  var encrypted: js.UndefOr[scala.Boolean] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var uri: java.lang.String = js.native
+  var uri: java.lang.String
 }
 object RTCRtpHeaderExtensionParameters {
   

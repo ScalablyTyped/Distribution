@@ -26,19 +26,17 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsRowTypesMod {
   
-  @js.native
   trait ICellStyleProps extends StObject {
     
-    var cellExtraRightPadding: Double = js.native
+    var cellExtraRightPadding: Double
     
-    var cellLeftPadding: Double = js.native
+    var cellLeftPadding: Double
     
-    var cellRightPadding: Double = js.native
+    var cellRightPadding: Double
   }
   object ICellStyleProps {
     
@@ -62,57 +60,56 @@ object detailsRowTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsItemProps extends StObject {
     
     /**
       * Rules for rendering column cells.
       */
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
     /**
       * Checkbox visibility
       */
-    var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.native
+    var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
     
     /**
       * Column metadata
       */
-    var columns: js.UndefOr[js.Array[IColumn]] = js.native
+    var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
     
     /**
       * Nesting depth of a grouping
       */
-    var groupNestingDepth: js.UndefOr[Double] = js.native
+    var groupNestingDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * How much to indent
       */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum width of the row.
       *
       * @defaultvalue 0
       */
-    var rowWidth: js.UndefOr[Double] = js.native
+    var rowWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Selection from utilities
       */
-    var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
+    var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
     
     /**
       * Selection mode
       */
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
     
     /**
       * View port of the virtualized list
       *
       * @deprecated use rowWidth instead
       */
-    var viewport: js.UndefOr[IViewport] = js.native
+    var viewport: js.UndefOr[IViewport] = js.undefined
   }
   object IDetailsItemProps {
     
@@ -184,82 +181,80 @@ object detailsRowTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsRow extends StObject
   
   /* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'onRenderItemColumn' | 'getCellValueKey'> */
   /* Inlined parent office-ui-fabric-react.office-ui-fabric-react/lib/Utilities.IBaseProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRow> */
   /* Inlined parent office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsItemProps */
-  @js.native
   trait IDetailsRowBaseProps extends StObject {
     
     /**
       * Rules for rendering column cells.
       */
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
     /**
       * Optional pre-rendered content per column. Preferred over onRender or onRenderItemColumn if provided.
       */
-    var cellsByColumn: js.UndefOr[StringDictionary[ReactNode]] = js.native
+    var cellsByColumn: js.UndefOr[StringDictionary[ReactNode]] = js.undefined
     
     /**
       * Check button's aria label
       */
-    var checkButtonAriaLabel: js.UndefOr[String] = js.native
+    var checkButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Class name for the checkbox cell
       */
-    var checkboxCellClassName: js.UndefOr[String] = js.native
+    var checkboxCellClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Checkbox visibility
       */
-    var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.native
+    var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
     
     /**
       * Overriding class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Collapse all visibility
       */
-    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.native
+    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.undefined
     
     /**
       * Column metadata
       */
-    var columns: js.UndefOr[js.Array[IColumn]] = js.native
+    var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
     
     /**
       * Whether to render in compact mode
       */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ref of the component
       */
-    var componentRef: js.UndefOr[IRefObject[IDetailsRow]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDetailsRow]] = js.undefined
     
     /**
       * Handling drag and drop events
       */
-    var dragDropEvents: js.UndefOr[IDragDropEvents] = js.native
+    var dragDropEvents: js.UndefOr[IDragDropEvents] = js.undefined
     
     /**
       * Helper for the drag and drop
       */
-    var dragDropHelper: js.UndefOr[IDragDropHelper] = js.native
+    var dragDropHelper: js.UndefOr[IDragDropHelper] = js.undefined
     
     /** Whether to animate updates */
-    var enableUpdateAnimations: js.UndefOr[Boolean] = js.native
+    var enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A list of events to register
       */
-    var eventsToRegister: js.UndefOr[js.Array[EventName]] = js.native
+    var eventsToRegister: js.UndefOr[js.Array[EventName]] = js.undefined
     
     var getCellValueKey: js.UndefOr[
         js.Function3[
@@ -268,52 +263,52 @@ object detailsRowTypesMod {
           /* column */ js.UndefOr[IColumn], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for getting the row aria-describedby
       */
-    var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
+    var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
     
     /**
       * Callback for getting the row aria label
       */
-    var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
+    var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
     
     /**
       * Nesting depth of a grouping
       */
-    var groupNestingDepth: js.UndefOr[Double] = js.native
+    var groupNestingDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * How much to indent
       */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Data source for this component
       */
-    var item: js.Any = js.native
+    var item: js.Any
     
     /**
       * Index of the collection of items of the DetailsList
       */
-    var itemIndex: Double = js.native
+    var itemIndex: Double
     
     /**
       * Callback for did mount for parent
       */
-    var onDidMount: js.UndefOr[js.Function1[/* row */ js.UndefOr[DetailsRowBase], Unit]] = js.native
+    var onDidMount: js.UndefOr[js.Function1[/* row */ js.UndefOr[DetailsRowBase], Unit]] = js.undefined
     
     /**
       * Callback for rendering a checkbox
       */
-    var onRenderCheck: js.UndefOr[js.Function1[/* props */ IDetailsRowCheckProps, Element]] = js.native
+    var onRenderCheck: js.UndefOr[js.Function1[/* props */ IDetailsRowCheckProps, Element]] = js.undefined
     
     /**
       * If provided, can be used to render a custom checkbox
       */
-    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.native
+    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.undefined
     
     var onRenderItemColumn: js.UndefOr[
         js.Function3[
@@ -322,64 +317,64 @@ object detailsRowTypesMod {
           /* column */ js.UndefOr[IColumn], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for will mount for parent
       */
-    var onWillUnmount: js.UndefOr[js.Function1[/* row */ js.UndefOr[DetailsRowBase], Unit]] = js.native
+    var onWillUnmount: js.UndefOr[js.Function1[/* row */ js.UndefOr[DetailsRowBase], Unit]] = js.undefined
     
     /**
       * DOM element into which to render row field
       */
-    var rowFieldsAs: js.UndefOr[ComponentType[IDetailsRowFieldsProps]] = js.native
+    var rowFieldsAs: js.UndefOr[ComponentType[IDetailsRowFieldsProps]] = js.undefined
     
     /**
       * Minimum width of the row.
       *
       * @defaultvalue 0
       */
-    var rowWidth: js.UndefOr[Double] = js.native
+    var rowWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Selection from utilities
       */
-    var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
+    var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
     
     /**
       * Selection mode
       */
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
     
     /**
       * Overriding styles to this row
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsRowStyleProps, IDetailsRowStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsRowStyleProps, IDetailsRowStyles]] = js.undefined
     
     /**
       * Theme provided by styled() function
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether to use fast icon and check components. The icons can't be targeted by customization
       * but are still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
       * @defaultvalue false
       */
-    var useReducedRowRenderer: js.UndefOr[Boolean] = js.native
+    var useReducedRowRenderer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * View port of the virtualized list
       *
       * @deprecated use rowWidth instead
       */
-    var viewport: js.UndefOr[IViewport] = js.native
+    var viewport: js.UndefOr[IViewport] = js.undefined
   }
   object IDetailsRowBaseProps {
     
@@ -616,26 +611,27 @@ object detailsRowTypesMod {
     }
   }
   
-  @js.native
-  trait IDetailsRowProps extends IDetailsRowBaseProps {
+  trait IDetailsRowProps
+    extends StObject
+       with IDetailsRowBaseProps {
     
     /**
       * Column metadata
       */
     @JSName("columns")
-    var columns_IDetailsRowProps: js.Array[IColumn] = js.native
+    var columns_IDetailsRowProps: js.Array[IColumn]
     
     /**
       * Selection mode
       */
     @JSName("selectionMode")
-    var selectionMode_IDetailsRowProps: SelectionMode = js.native
+    var selectionMode_IDetailsRowProps: SelectionMode
     
     /**
       * Selection from utilities
       */
     @JSName("selection")
-    var selection_IDetailsRowProps: ISelection[IObjectWithKey] = js.native
+    var selection_IDetailsRowProps: ISelection[IObjectWithKey]
   }
   object IDetailsRowProps {
     
@@ -669,42 +665,41 @@ object detailsRowTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowProps, 'theme'>> & {  isSelected :boolean | undefined,   anySelected :boolean | undefined,   canSelect :boolean | undefined,   droppingClassName :string | undefined,   isCheckVisible :boolean | undefined,   isRowHeader :boolean | undefined,   checkboxCellClassName :string | undefined,   className :string | undefined,   compact :boolean | undefined,   cellStyleProps :office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.ICellStyleProps | undefined,   enableUpdateAnimations :boolean | undefined} */
-  @js.native
   trait IDetailsRowStyleProps extends StObject {
     
     /** Whether there are any rows in the list selected */
-    var anySelected: js.UndefOr[Boolean] = js.native
+    var anySelected: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this row can be selected */
-    var canSelect: js.UndefOr[Boolean] = js.native
+    var canSelect: js.UndefOr[Boolean] = js.undefined
     
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
     /** A class name from the checkbox cell, so proper styling can be targeted */
-    var checkboxCellClassName: js.UndefOr[String] = js.native
+    var checkboxCellClassName: js.UndefOr[String] = js.undefined
     
     /** CSS class name for the component */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Is list in compact mode */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Class name of when this becomes a drop target. */
-    var droppingClassName: js.UndefOr[String] = js.native
+    var droppingClassName: js.UndefOr[String] = js.undefined
     
     /** Whether to animate updates */
-    var enableUpdateAnimations: js.UndefOr[Boolean] = js.native
+    var enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
     
     /** Is the checkbox visible */
-    var isCheckVisible: js.UndefOr[Boolean] = js.native
+    var isCheckVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Is this a row header */
-    var isRowHeader: js.UndefOr[Boolean] = js.native
+    var isRowHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the row is selected  */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDetailsRowStyleProps {
     
@@ -788,32 +783,31 @@ object detailsRowTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsRowStyles extends StObject {
     
-    var cell: IStyle = js.native
+    var cell: IStyle
     
-    var cellAnimation: IStyle = js.native
+    var cellAnimation: IStyle
     
-    var cellMeasurer: IStyle = js.native
+    var cellMeasurer: IStyle
     
-    var cellPadded: IStyle = js.native
+    var cellPadded: IStyle
     
-    var cellUnpadded: IStyle = js.native
+    var cellUnpadded: IStyle
     
-    var check: IStyle = js.native
+    var check: IStyle
     
-    var checkCell: IStyle = js.native
+    var checkCell: IStyle
     
-    var checkCover: IStyle = js.native
+    var checkCover: IStyle
     
-    var fields: IStyle = js.native
+    var fields: IStyle
     
-    var isMultiline: IStyle = js.native
+    var isMultiline: IStyle
     
-    var isRowHeader: IStyle = js.native
+    var isRowHeader: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDetailsRowStyles {
     

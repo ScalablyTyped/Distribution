@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DeleteClusterResponse extends StObject {
     The Amazon Resource Name (ARN) of the cluster.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The state of the cluster. The possible states are CREATING, ACTIVE, and FAILED.
     
     */
-  var State: js.UndefOr[ClusterState] = js.native
+  var State: js.UndefOr[ClusterState] = js.undefined
 }
 object DeleteClusterResponse {
   

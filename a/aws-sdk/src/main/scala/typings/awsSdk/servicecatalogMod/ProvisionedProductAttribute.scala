@@ -2,106 +2,104 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedProductAttribute extends StObject {
   
   /**
     * The ARN of the provisioned product.
     */
-  var Arn: js.UndefOr[ProvisionedProductNameOrArn] = js.native
+  var Arn: js.UndefOr[ProvisionedProductNameOrArn] = js.undefined
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
   
   /**
     * The identifier of the provisioned product.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: js.UndefOr[typings.awsSdk.servicecatalogMod.IdempotencyToken] = js.native
+  var IdempotencyToken: js.UndefOr[typings.awsSdk.servicecatalogMod.IdempotencyToken] = js.undefined
   
   /**
     * The record identifier of the last request performed on this provisioned product of the following types:    ProvisionedProduct     UpdateProvisionedProduct     ExecuteProvisionedProductPlan     TerminateProvisionedProduct   
     */
-  var LastProvisioningRecordId: js.UndefOr[Id] = js.native
+  var LastProvisioningRecordId: js.UndefOr[Id] = js.undefined
   
   /**
     * The record identifier of the last request performed on this provisioned product.
     */
-  var LastRecordId: js.UndefOr[Id] = js.native
+  var LastRecordId: js.UndefOr[Id] = js.undefined
   
   /**
     * The record identifier of the last successful request performed on this provisioned product of the following types:    ProvisionedProduct     UpdateProvisionedProduct     ExecuteProvisionedProductPlan     TerminateProvisionedProduct   
     */
-  var LastSuccessfulProvisioningRecordId: js.UndefOr[Id] = js.native
+  var LastSuccessfulProvisioningRecordId: js.UndefOr[Id] = js.undefined
   
   /**
     * The user-friendly name of the provisioned product.
     */
-  var Name: js.UndefOr[ProvisionedProductNameOrArn] = js.native
+  var Name: js.UndefOr[ProvisionedProductNameOrArn] = js.undefined
   
   /**
     * The assigned identifier for the resource, such as an EC2 instance ID or an S3 bucket name.
     */
-  var PhysicalId: js.UndefOr[typings.awsSdk.servicecatalogMod.PhysicalId] = js.native
+  var PhysicalId: js.UndefOr[typings.awsSdk.servicecatalogMod.PhysicalId] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the product.
     */
-  var ProductName: js.UndefOr[ProductViewName] = js.native
+  var ProductName: js.UndefOr[ProductViewName] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the provisioning artifact.
     */
-  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.native
+  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.undefined
   
   /**
     * The current status of the provisioned product.    AVAILABLE - Stable state, ready to perform any operation. The most recent operation succeeded and completed.    UNDER_CHANGE - Transitive state. Operations performed might not have valid results. Wait for an AVAILABLE status before performing operations.    TAINTED - Stable state, ready to perform any operation. The stack has completed the requested operation but is not exactly what was requested. For example, a request to update to a new version failed and the stack rolled back to the current version.    ERROR - An unexpected error occurred. The provisioned product exists but the stack is not running. For example, CloudFormation received a parameter value that was not valid and could not launch the stack.    PLAN_IN_PROGRESS - Transitive state. The plan operations were performed to provision a new product, but resources have not yet been created. After reviewing the list of resources to be created, execute the plan. Wait for an AVAILABLE status before performing operations.  
     */
-  var Status: js.UndefOr[ProvisionedProductStatus] = js.native
+  var Status: js.UndefOr[ProvisionedProductStatus] = js.undefined
   
   /**
     * The current status message of the provisioned product.
     */
-  var StatusMessage: js.UndefOr[ProvisionedProductStatusMessage] = js.native
+  var StatusMessage: js.UndefOr[ProvisionedProductStatusMessage] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
   
   /**
     * The type of provisioned product. The supported values are CFN_STACK and CFN_STACKSET.
     */
-  var Type: js.UndefOr[ProvisionedProductType] = js.native
+  var Type: js.UndefOr[ProvisionedProductType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM user.
     */
-  var UserArn: js.UndefOr[typings.awsSdk.servicecatalogMod.UserArn] = js.native
+  var UserArn: js.UndefOr[typings.awsSdk.servicecatalogMod.UserArn] = js.undefined
   
   /**
     * The ARN of the IAM user in the session. This ARN might contain a session ID.
     */
-  var UserArnSession: js.UndefOr[typings.awsSdk.servicecatalogMod.UserArnSession] = js.native
+  var UserArnSession: js.UndefOr[typings.awsSdk.servicecatalogMod.UserArnSession] = js.undefined
 }
 object ProvisionedProductAttribute {
   

@@ -2,13 +2,13 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SettingsResponse extends Settings {
+trait SettingsResponse
+  extends StObject
+     with Settings {
   
-  var meta: js.Any = js.native
+  var meta: js.Any
 }
 object SettingsResponse {
   

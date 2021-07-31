@@ -8,33 +8,32 @@ import typings.reactTestRenderer.reactTestRendererStrings.component
 import typings.reactTestRenderer.reactTestRendererStrings.host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-test-renderer", "act")
+  @JSImport("react-test-renderer", JSImport.Namespace)
   @js.native
-  def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = js.native
-  @JSImport("react-test-renderer", "act")
-  @js.native
-  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-test-renderer", "create")
-  @js.native
-  def create(nextElement: ReactElement): ReactTestRenderer = js.native
-  @JSImport("react-test-renderer", "create")
-  @js.native
-  def create(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = js.native
+  @scala.inline
+  def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
   
-  @js.native
+  @scala.inline
+  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def create(nextElement: ReactElement): ReactTestRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any]).asInstanceOf[ReactTestRenderer]
+  @scala.inline
+  def create(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactTestRenderer]
+  
   trait DebugPromiseLike extends StObject {
     
     // the actual then() in here is 1-ary, but that doesn't count as a PromiseLike.
     def `then`(
       onfulfilled: js.Function1[/* value */ scala.Nothing, scala.Nothing],
       onrejected: js.Function1[/* reason */ scala.Nothing, scala.Nothing]
-    ): scala.Nothing = js.native
+    ): scala.Nothing
   }
   object DebugPromiseLike {
     
@@ -70,12 +69,12 @@ object mod {
     def findAllByProps(props: StringDictionary[js.Any]): js.Array[ReactTestInstance] = js.native
     def findAllByProps(props: StringDictionary[js.Any], options: Deep): js.Array[ReactTestInstance] = js.native
     
-    def findAllByType(`type`: ElementType[_]): js.Array[ReactTestInstance] = js.native
-    def findAllByType(`type`: ElementType[_], options: Deep): js.Array[ReactTestInstance] = js.native
+    def findAllByType(`type`: ElementType[js.Any]): js.Array[ReactTestInstance] = js.native
+    def findAllByType(`type`: ElementType[js.Any], options: Deep): js.Array[ReactTestInstance] = js.native
     
     def findByProps(props: StringDictionary[js.Any]): ReactTestInstance = js.native
     
-    def findByType(`type`: ElementType[_]): ReactTestInstance = js.native
+    def findByType(`type`: ElementType[js.Any]): ReactTestInstance = js.native
     
     var instance: js.Any = js.native
     
@@ -83,7 +82,7 @@ object mod {
     
     var props: StringDictionary[js.Any] = js.native
     
-    var `type`: ElementType[_] = js.native
+    var `type`: ElementType[js.Any] = js.native
   }
   
   @js.native
@@ -103,20 +102,19 @@ object mod {
     def update(nextElement: ReactElement): Unit = js.native
   }
   
-  @js.native
   trait ReactTestRendererJSON extends StObject {
     
-    var children: Null | js.Array[ReactTestRendererNode] = js.native
+    var children: Null | js.Array[ReactTestRendererNode]
     
-    var props: StringDictionary[js.Any] = js.native
+    var props: StringDictionary[js.Any]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ReactTestRendererJSON {
     
     @scala.inline
     def apply(props: StringDictionary[js.Any], `type`: String): ReactTestRendererJSON = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], children = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererJSON]
     }
@@ -143,20 +141,21 @@ object mod {
   
   type ReactTestRendererNode = ReactTestRendererJSON | String
   
-  @js.native
-  trait ReactTestRendererTree extends ReactTestRendererJSON {
+  trait ReactTestRendererTree
+    extends StObject
+       with ReactTestRendererJSON {
     
-    var instance: js.Any = js.native
+    var instance: js.Any
     
-    var nodeType: component | host = js.native
+    var nodeType: component | host
     
-    var rendered: Null | ReactTestRendererTree | js.Array[ReactTestRendererTree] = js.native
+    var rendered: Null | ReactTestRendererTree | js.Array[ReactTestRendererTree]
   }
   object ReactTestRendererTree {
     
     @scala.inline
     def apply(instance: js.Any, nodeType: component | host, props: StringDictionary[js.Any], `type`: String): ReactTestRendererTree = {
-      val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], children = null, rendered = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererTree]
     }
@@ -181,10 +180,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TestRendererOptions extends StObject {
     
-    def createNodeMock(element: ReactElement): js.Any = js.native
+    def createNodeMock(element: ReactElement): js.Any
   }
   object TestRendererOptions {
     

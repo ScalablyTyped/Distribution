@@ -2,40 +2,38 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AboutPanelOptionsOptions extends StObject {
   
   /**
     * The app's name.
     */
-  var applicationName: js.UndefOr[String] = js.native
+  var applicationName: js.UndefOr[String] = js.undefined
   
   /**
     * The app's version.
     */
-  var applicationVersion: js.UndefOr[String] = js.native
+  var applicationVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of app authors.
     *
     * @platform linux
     */
-  var authors: js.UndefOr[js.Array[String]] = js.native
+  var authors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Copyright information.
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * Credit information.
     *
     * @platform darwin,win32
     */
-  var credits: js.UndefOr[String] = js.native
+  var credits: js.UndefOr[String] = js.undefined
   
   /**
     * Path to the app's icon in a JPEG or PNG file format. On Linux, will be shown as
@@ -43,21 +41,21 @@ trait AboutPanelOptionsOptions extends StObject {
     *
     * @platform linux,win32
     */
-  var iconPath: js.UndefOr[String] = js.native
+  var iconPath: js.UndefOr[String] = js.undefined
   
   /**
     * The app's build version number.
     *
     * @platform darwin
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * The app's website.
     *
     * @platform linux
     */
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object AboutPanelOptionsOptions {
   

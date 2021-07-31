@@ -2,13 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServoPCA9685Option extends ServoGeneralOption {
+trait ServoPCA9685Option
+  extends StObject
+     with ServoGeneralOption {
   
-  var address: js.UndefOr[Double] = js.native
+  var address: js.UndefOr[Double] = js.undefined
 }
 object ServoPCA9685Option {
   

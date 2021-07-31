@@ -3,7 +3,6 @@ package typings.rcUtil
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyCodeMod {
@@ -983,15 +982,13 @@ object keyCodeMod {
     /**
       * whether character is entered.
       */
-    @JSImport("rc-util/lib/KeyCode", "default.isCharacterKey")
-    @js.native
-    def isCharacterKey(keyCode: Double): Boolean = js.native
+    @scala.inline
+    def isCharacterKey(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCharacterKey")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * whether text and modified key is entered at the same time.
       */
-    @JSImport("rc-util/lib/KeyCode", "default.isTextModifyingKeyEvent")
-    @js.native
-    def isTextModifyingKeyEvent(e: KeyboardEvent): Boolean = js.native
+    @scala.inline
+    def isTextModifyingKeyEvent(e: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextModifyingKeyEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

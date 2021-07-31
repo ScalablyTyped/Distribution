@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,44 +13,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Can be obtained from interface {@link XChartDocument} via method {@link getData()} .
   * @since OOo 3.3
   */
-@js.native
-trait XComplexDescriptionAccess extends XChartDataArray {
+trait XComplexDescriptionAccess
+  extends StObject
+     with XChartDataArray {
   
   /**
     * retrieves the description texts for all columns.
     * @returns a sequence of sequences of strings representing the descriptions of all columns. The outer index represents different columns. The inner index re
     */
-  var ComplexColumnDescriptions: SafeArray[SafeArray[String]] = js.native
+  var ComplexColumnDescriptions: SafeArray[SafeArray[String]]
   
   /**
     * retrieves the description texts for all rows.
     * @returns a sequence of sequences of strings representing the descriptions of all rows. The outer index represents different rows. The inner index represen
     */
-  var ComplexRowDescriptions: SafeArray[SafeArray[String]] = js.native
+  var ComplexRowDescriptions: SafeArray[SafeArray[String]]
   
   /**
     * retrieves the description texts for all columns.
     * @returns a sequence of sequences of strings representing the descriptions of all columns. The outer index represents different columns. The inner index re
     */
-  def getComplexColumnDescriptions(): SafeArray[SafeArray[String]] = js.native
+  def getComplexColumnDescriptions(): SafeArray[SafeArray[String]]
   
   /**
     * retrieves the description texts for all rows.
     * @returns a sequence of sequences of strings representing the descriptions of all rows. The outer index represents different rows. The inner index represen
     */
-  def getComplexRowDescriptions(): SafeArray[SafeArray[String]] = js.native
+  def getComplexRowDescriptions(): SafeArray[SafeArray[String]]
   
   /**
     * sets the description texts for all columns.
     * @param rColumnDescriptions a sequence of sequences of strings which represent the descriptions of all columns. The outer index represents different colu
     */
-  def setComplexColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[String]]): Unit = js.native
+  def setComplexColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[String]]): Unit
   
   /**
     * sets the description texts for all rows.
     * @param rRowDescriptions a sequence of sequences of strings representing the descriptions of all rows. The outer index represents different rows. The inn
     */
-  def setComplexRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[String]]): Unit = js.native
+  def setComplexRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[String]]): Unit
 }
 object XComplexDescriptionAccess {
   

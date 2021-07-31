@@ -3,24 +3,24 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GraphQuads extends Quads {
+trait GraphQuads
+  extends StObject
+     with Quads {
   
-  var name: IriTerm = js.native
+  var name: IriTerm
   
-  var triples: js.Array[Triple] = js.native
+  var triples: js.Array[Triple]
   
-  var `type`: graph = js.native
+  var `type`: graph
 }
 object GraphQuads {
   
   @scala.inline
-  def apply(name: IriTerm, triples: js.Array[Triple], `type`: graph): GraphQuads = {
+  def apply(name: IriTerm, triples: js.Array[Triple]): GraphQuads = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], triples = triples.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphQuads]
   }
   

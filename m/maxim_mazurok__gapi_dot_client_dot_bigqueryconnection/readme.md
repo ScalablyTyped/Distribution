@@ -10,9 +10,9 @@ TypeScript typings for BigQuery Connection API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigqueryconnection |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 883 |
+| # downloads        | 1037 |
 | # stars            | 0 |
 
 ## Links

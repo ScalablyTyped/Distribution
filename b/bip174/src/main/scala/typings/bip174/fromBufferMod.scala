@@ -7,31 +7,30 @@ import typings.bip174.parserMod.PsbtAttributes
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromBufferMod {
   
-  @JSImport("bip174/src/lib/parser/fromBuffer", "checkKeyBuffer")
+  @JSImport("bip174/src/lib/parser/fromBuffer", JSImport.Namespace)
   @js.native
-  def checkKeyBuffer(`type`: String, keyBuf: Buffer, keyNum: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip174/src/lib/parser/fromBuffer", "psbtFromBuffer")
-  @js.native
-  def psbtFromBuffer(buffer: Buffer, txGetter: TransactionFromBuffer): PsbtAttributes = js.native
+  @scala.inline
+  def checkKeyBuffer(`type`: String, keyBuf: Buffer, keyNum: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkKeyBuffer")(`type`.asInstanceOf[js.Any], keyBuf.asInstanceOf[js.Any], keyNum.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/parser/fromBuffer", "psbtFromKeyVals")
-  @js.native
-  def psbtFromKeyVals(unsignedTx: Transaction, hasGlobalMapKeyValsInputKeyValsOutputKeyVals: PsbtFromKeyValsArg): PsbtAttributes = js.native
+  @scala.inline
+  def psbtFromBuffer(buffer: Buffer, txGetter: TransactionFromBuffer): PsbtAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("psbtFromBuffer")(buffer.asInstanceOf[js.Any], txGetter.asInstanceOf[js.Any])).asInstanceOf[PsbtAttributes]
   
-  @js.native
+  @scala.inline
+  def psbtFromKeyVals(unsignedTx: Transaction, hasGlobalMapKeyValsInputKeyValsOutputKeyVals: PsbtFromKeyValsArg): PsbtAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("psbtFromKeyVals")(unsignedTx.asInstanceOf[js.Any], hasGlobalMapKeyValsInputKeyValsOutputKeyVals.asInstanceOf[js.Any])).asInstanceOf[PsbtAttributes]
+  
   trait PsbtFromKeyValsArg extends StObject {
     
-    var globalMapKeyVals: js.Array[KeyValue] = js.native
+    var globalMapKeyVals: js.Array[KeyValue]
     
-    var inputKeyVals: js.Array[js.Array[KeyValue]] = js.native
+    var inputKeyVals: js.Array[js.Array[KeyValue]]
     
-    var outputKeyVals: js.Array[js.Array[KeyValue]] = js.native
+    var outputKeyVals: js.Array[js.Array[KeyValue]]
   }
   object PsbtFromKeyValsArg {
     

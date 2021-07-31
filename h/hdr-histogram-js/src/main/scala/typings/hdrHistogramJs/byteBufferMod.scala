@@ -4,53 +4,91 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object byteBufferMod {
   
   @JSImport("hdr-histogram-js/ByteBuffer", JSImport.Default)
   @js.native
-  class default protected () extends ByteBuffer {
+  class default protected ()
+    extends StObject
+       with ByteBuffer {
     def this(data: Uint8Array) = this()
+    
+    /* CompleteClass */
+    var data: Uint8Array = js.native
+    
+    /* CompleteClass */
+    override def get(): Double = js.native
+    
+    /* CompleteClass */
+    override def getInt32(): Double = js.native
+    
+    /* CompleteClass */
+    override def getInt64(): Double = js.native
+    
+    /* CompleteClass */
+    var int32ArrayForConvert: Uint32Array = js.native
+    
+    /* CompleteClass */
+    var int8ArrayForConvert: Uint8Array = js.native
+    
+    /* CompleteClass */
+    var position: Double = js.native
+    
+    /* CompleteClass */
+    override def put(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def putArray(array: Uint8Array): Unit = js.native
+    
+    /* CompleteClass */
+    override def putInt32(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def putInt64(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetPosition(): Unit = js.native
   }
   object default {
     
+    @JSImport("hdr-histogram-js/ByteBuffer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("hdr-histogram-js/ByteBuffer", "default.allocate")
-    @js.native
-    def allocate(): ByteBuffer = js.native
-    @JSImport("hdr-histogram-js/ByteBuffer", "default.allocate")
-    @js.native
-    def allocate(size: Double): ByteBuffer = js.native
+    @scala.inline
+    def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
+    @scala.inline
+    def allocate(size: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
   }
   
-  @js.native
   trait ByteBuffer extends StObject {
     
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
-    def get(): Double = js.native
+    def get(): Double
     
-    def getInt32(): Double = js.native
+    def getInt32(): Double
     
-    def getInt64(): Double = js.native
+    def getInt64(): Double
     
-    var int32ArrayForConvert: Uint32Array = js.native
+    var int32ArrayForConvert: Uint32Array
     
-    var int8ArrayForConvert: Uint8Array = js.native
+    var int8ArrayForConvert: Uint8Array
     
-    var position: Double = js.native
+    var position: Double
     
-    def put(value: Double): Unit = js.native
+    def put(value: Double): Unit
     
-    def putArray(array: Uint8Array): Unit = js.native
+    def putArray(array: Uint8Array): Unit
     
-    def putInt32(value: Double): Unit = js.native
+    def putInt32(value: Double): Unit
     
-    def putInt64(value: Double): Unit = js.native
+    def putInt64(value: Double): Unit
     
-    def resetPosition(): Unit = js.native
+    def resetPosition(): Unit
   }
   object ByteBuffer {
     

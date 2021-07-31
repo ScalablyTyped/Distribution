@@ -22,37 +22,33 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
   
   @JSImport("grommet/components/Stack", "Stack")
   @js.native
-  val Stack: FC[
-    StackProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Stack: FC[StackProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
-  @js.native
   trait StackProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
     var anchor: js.UndefOr[
         center | left | right | top | bottom | `top-left` | `bottom-left` | `top-right` | `bottom-right`
-      ] = js.native
+      ] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var guidingChild: js.UndefOr[Double | first | last] = js.native
+    var guidingChild: js.UndefOr[Double | first | last] = js.undefined
     
-    var interactiveChild: js.UndefOr[Double | first | last] = js.native
+    var interactiveChild: js.UndefOr[Double | first | last] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
   }
   object StackProps {
     

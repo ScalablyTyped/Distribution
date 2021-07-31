@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdFormat extends StObject {
   
   /**
     * The date in UTC at which you are permanently switched over to using longer IDs. If a deadline is not yet available for this resource type, this field is not returned.
     */
-  var Deadline: js.UndefOr[DateTime] = js.native
+  var Deadline: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The type of resource.
     */
-  var Resource: js.UndefOr[String] = js.native
+  var Resource: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether longer IDs (17-character IDs) are enabled for the resource.
     */
-  var UseLongIds: js.UndefOr[Boolean] = js.native
+  var UseLongIds: js.UndefOr[Boolean] = js.undefined
 }
 object IdFormat {
   

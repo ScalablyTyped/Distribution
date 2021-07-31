@@ -3,27 +3,25 @@ package typings.grommet.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prefix extends StObject {
   
-  var label: js.UndefOr[String | ReactNode] = js.native
+  var label: js.UndefOr[String | ReactNode] = js.undefined
   
   // used for legend and/or hover/touch detail
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   // used for values in axes and hover/touch detail
-  var property: String = js.native
+  var property: String
   
   // property key to get values from objects in data
   var render: js.UndefOr[
     js.Function3[/* value */ js.Any, /* datum */ js.Object, /* property */ String, ReactNode]
-  ] = js.native
+  ] = js.undefined
   
   // used for hover/touch detail
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
 }
 object Prefix {
   

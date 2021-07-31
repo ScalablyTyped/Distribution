@@ -2,21 +2,19 @@ package typings.firebaseInstallations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appConfigMod {
   
-  @js.native
   trait AppConfig extends StObject {
     
-    val apiKey: String = js.native
+    val apiKey: String
     
-    val appId: String = js.native
+    val appId: String
     
-    val appName: String = js.native
+    val appName: String
     
-    val projectId: String = js.native
+    val projectId: String
   }
   object AppConfig {
     

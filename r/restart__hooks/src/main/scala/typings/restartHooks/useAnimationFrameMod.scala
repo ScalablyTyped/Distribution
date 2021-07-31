@@ -3,14 +3,16 @@ package typings.restartHooks
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useAnimationFrameMod {
   
-  @JSImport("@restart/hooks/cjs/useAnimationFrame", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useAnimationFrame", JSImport.Namespace)
   @js.native
-  def default(): UseAnimationFrameReturn = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): UseAnimationFrameReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UseAnimationFrameReturn]
   
   @js.native
   trait UseAnimationFrameReturn extends StObject {

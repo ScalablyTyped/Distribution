@@ -2,7 +2,6 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * person&#39;s profile page that represents who they are or what they care
   * about.
   */
-@js.native
 trait SchemaCoverPhoto extends StObject {
   
   /**
     * True if the cover photo is the default cover photo; false if the cover
     * photo is a user-provided cover photo.
     */
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Metadata about the cover photo.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The URL of the cover photo.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaCoverPhoto {
   

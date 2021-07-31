@@ -3,31 +3,29 @@ package typings.dynogels.mod
 import typings.joi.mod.ValidationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelConfiguration extends StObject {
   
-  var createdAt: js.UndefOr[Boolean | String] = js.native
+  var createdAt: js.UndefOr[Boolean | String] = js.undefined
   
-  var hashKey: String = js.native
+  var hashKey: String
   
-  var indexes: js.UndefOr[js.Array[_]] = js.native
+  var indexes: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var log: js.UndefOr[Log_] = js.native
+  var log: js.UndefOr[Log_] = js.undefined
   
-  var rangeKey: js.UndefOr[String] = js.native
+  var rangeKey: js.UndefOr[String] = js.undefined
   
-  var schema: js.UndefOr[SchemaType] = js.native
+  var schema: js.UndefOr[SchemaType] = js.undefined
   
-  var tableName: js.UndefOr[String | tableResolve] = js.native
+  var tableName: js.UndefOr[String | tableResolve] = js.undefined
   
-  var timestamps: js.UndefOr[Boolean] = js.native
+  var timestamps: js.UndefOr[Boolean] = js.undefined
   
-  var updatedAt: js.UndefOr[Boolean | String] = js.native
+  var updatedAt: js.UndefOr[Boolean | String] = js.undefined
   
-  var validation: js.UndefOr[ValidationOptions] = js.native
+  var validation: js.UndefOr[ValidationOptions] = js.undefined
 }
 object ModelConfiguration {
   
@@ -50,7 +48,7 @@ object ModelConfiguration {
     def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexes(value: js.Array[_]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)

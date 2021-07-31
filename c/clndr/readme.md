@@ -12,7 +12,7 @@ A jQuery calendar plugin that uses HTML templates.
 | Keywords           | clndr, calendar, jquery, plugin, widget, jquery-plugin |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 107272 |
+| # downloads        | 107698 |
 | # stars            | 4 |
 
 ## Links

@@ -3,10 +3,8 @@ package typings.jqgrid
 import typings.jqgrid.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJqGridJsonReader extends StObject {
   
   /**
@@ -14,34 +12,34 @@ trait IJqGridJsonReader extends StObject {
     * @param obj 
     * @returns {} 
     */
-  var page: String | (js.Function1[/* obj */ js.Any, Double]) = js.native
+  var page: String | (js.Function1[/* obj */ js.Any, Double])
   
   /**
     * total number of records for the query
     * @param obj 
     * @returns {} 
     */
-  var records: String | (js.Function1[/* obj */ Data, Double]) = js.native
+  var records: String | (js.Function1[/* obj */ Data, Double])
   
   /**
     * tells jqGrid that the information for the data in the row is repeatable - i.e. the elements have the same tag cell described in cell element. Setting this option to false instructs jqGrid to search elements in the json data by name.
     * This is the name from colModel or the name described with the jsonmap option in colModel
     */
-  var repeatitems: Boolean = js.native
+  var repeatitems: Boolean
   
   /**
     * Name of the root property
     * @param obj 
     * @returns {} 
     */
-  var root: String | (js.Function1[/* obj */ js.Any, _]) = js.native
+  var root: String | (js.Function1[/* obj */ js.Any, js.Any])
   
   /**
     * total pages for the query
     * @param obj 
     * @returns {} 
     */
-  var total: String | (js.Function1[/* obj */ js.Any, Double]) = js.native
+  var total: String | (js.Function1[/* obj */ js.Any, Double])
 }
 object IJqGridJsonReader {
   
@@ -50,7 +48,7 @@ object IJqGridJsonReader {
     page: String | (js.Function1[/* obj */ js.Any, Double]),
     records: String | (js.Function1[/* obj */ Data, Double]),
     repeatitems: Boolean,
-    root: String | (js.Function1[/* obj */ js.Any, _]),
+    root: String | (js.Function1[/* obj */ js.Any, js.Any]),
     total: String | (js.Function1[/* obj */ js.Any, Double])
   ): IJqGridJsonReader = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], repeatitems = repeatitems.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
@@ -76,10 +74,10 @@ object IJqGridJsonReader {
     def setRepeatitems(value: Boolean): Self = StObject.set(x, "repeatitems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String | (js.Function1[/* obj */ js.Any, _])): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    def setRoot(value: String | (js.Function1[/* obj */ js.Any, js.Any])): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFunction1(value: /* obj */ js.Any => _): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    def setRootFunction1(value: /* obj */ js.Any => js.Any): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTotal(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])

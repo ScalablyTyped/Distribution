@@ -2,16 +2,14 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeCommitCodeDestination extends StObject {
   
   /**
     * The name of the AWS CodeCommit repository to be created in AWS CodeStar.
     */
-  var name: RepositoryName = js.native
+  var name: RepositoryName
 }
 object CodeCommitCodeDestination {
   

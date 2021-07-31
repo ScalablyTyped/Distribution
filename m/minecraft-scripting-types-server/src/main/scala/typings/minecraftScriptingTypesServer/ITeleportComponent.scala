@@ -3,62 +3,60 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.VectorArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This controls the entity's ability to teleport itself (similar to the Enderman). If you wish to teleport the entity once use the Position component instead.
   */
-@js.native
 trait ITeleportComponent extends StObject {
   
   /**
     * Modifies the chance that the entity will teleport if the entity is in darkness
     * @default 0.01
     */
-  var darkTeleportChance: Double = js.native
+  var darkTeleportChance: Double
   
   /**
     * Modifies the chance that the entity will teleport if the entity is in daylight
     * @default 0.01
     */
-  var lightTeleportChance: Double = js.native
+  var lightTeleportChance: Double
   
   /**
     * Maximum amount of time in seconds between random teleports
     * @default 20.0
     */
-  var maxRandomTeleportTime: Double = js.native
+  var maxRandomTeleportTime: Double
   
   /**
     * Minimum amount of time in seconds between random teleports
     * @default 0.0
     */
-  var minRandomTeleportTime: Double = js.native
+  var minRandomTeleportTime: Double
   
   /**
     * Entity will teleport to a random position within the area defined by this cube
     * @default [32.0, 16.0, 32.0]
     */
-  var randomTeleportCube: VectorArray = js.native
+  var randomTeleportCube: VectorArray
   
   /**
     * If true, the entity will teleport randomly
     * @default true
     */
-  var randomTeleports: Boolean = js.native
+  var randomTeleports: Boolean
   
   /**
     * Maximum distance the entity will teleport when chasing a target
     * @default 16.0
     */
-  var targetDistance: Double = js.native
+  var targetDistance: Double
   
   /**
     * The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100%
     * @default 1.0
     */
-  var target_teleport_chance: Double = js.native
+  var target_teleport_chance: Double
 }
 object ITeleportComponent {
   

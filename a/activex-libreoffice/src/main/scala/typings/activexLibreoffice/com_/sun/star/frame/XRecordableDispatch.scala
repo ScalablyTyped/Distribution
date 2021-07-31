@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,8 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatch
   * @since OOo 1.1.2
   */
-@js.native
-trait XRecordableDispatch extends XInterface {
+trait XRecordableDispatch
+  extends StObject
+     with XInterface {
   
   /**
     * dispatch and record it
@@ -34,7 +34,7 @@ trait XRecordableDispatch extends XInterface {
     * @param Arguments optional arguments for this request (see {@link com.sun.star.document.MediaDescriptor} for details)
     * @param Recorder object which can be used to record the request (available on {@link XDispatchRecorderSupplier.getDispatchRecorder()} )
     */
-  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Recorder: XDispatchRecorder): Unit = js.native
+  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Recorder: XDispatchRecorder): Unit
 }
 object XRecordableDispatch {
   

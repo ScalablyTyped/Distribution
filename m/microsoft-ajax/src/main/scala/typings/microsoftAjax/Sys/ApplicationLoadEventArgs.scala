@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used by the Application class to hold event arguments for the load event.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb383787(v=vs.100).aspx}
   */
-@js.native
 trait ApplicationLoadEventArgs extends StObject {
   
   //#endregion
@@ -20,13 +18,13 @@ trait ApplicationLoadEventArgs extends StObject {
     * Gets an array of all the components that were created since the last time the load event was raised.
     * @return An array of all the components that were created since the last time the load event was raised.
     */
-  def get_components(): js.Array[Component] = js.native
+  def get_components(): js.Array[Component]
   
   /**
     * Returns a value that indicates whether the page is engaged in a partial-page update.
     * @return true if the page is engaged in a partial-page update; otherwise, false.
     */
-  def get_isPartialLoad(): Boolean = js.native
+  def get_isPartialLoad(): Boolean
 }
 object ApplicationLoadEventArgs {
   

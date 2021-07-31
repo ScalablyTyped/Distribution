@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -155,7 +154,7 @@ trait ServiceCatalog extends Service {
   ): Request[BatchDisassociateServiceActionFromProvisioningArtifactOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_ServiceCatalog: ConfigBase with ClientConfiguration = js.native
+  var config_ServiceCatalog: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.

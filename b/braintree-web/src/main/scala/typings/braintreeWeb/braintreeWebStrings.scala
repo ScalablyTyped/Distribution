@@ -6,7 +6,6 @@ import typings.braintreeWeb.hostedFieldsMod.HostedFieldEventType
 import typings.braintreeWeb.hostedFieldsMod.HostedFieldsHostedFieldsFieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object braintreeWebStrings {
@@ -32,102 +31,142 @@ object braintreeWebStrings {
   def `2-inline-iframe`: `2-inline-iframe` = "2-inline-iframe".asInstanceOf[`2-inline-iframe`]
   
   @js.native
-  sealed trait CUSTOMER extends BraintreeErrorTypes
+  sealed trait CUSTOMER
+    extends StObject
+       with BraintreeErrorTypes
   @scala.inline
   def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
   
   @js.native
-  sealed trait INTERNAL extends BraintreeErrorTypes
+  sealed trait INTERNAL
+    extends StObject
+       with BraintreeErrorTypes
   @scala.inline
   def INTERNAL: INTERNAL = "INTERNAL".asInstanceOf[INTERNAL]
   
   @js.native
-  sealed trait MERCHANT extends BraintreeErrorTypes
+  sealed trait MERCHANT
+    extends StObject
+       with BraintreeErrorTypes
   @scala.inline
   def MERCHANT: MERCHANT = "MERCHANT".asInstanceOf[MERCHANT]
   
   @js.native
-  sealed trait NETWORK extends BraintreeErrorTypes
+  sealed trait NETWORK
+    extends StObject
+       with BraintreeErrorTypes
   @scala.inline
   def NETWORK: NETWORK = "NETWORK".asInstanceOf[NETWORK]
   
   @js.native
-  sealed trait No extends GooglePaymentTokenizeValues
+  sealed trait No
+    extends StObject
+       with GooglePaymentTokenizeValues
   @scala.inline
   def No: No = "No".asInstanceOf[No]
   
   @js.native
-  sealed trait UNKNOWN extends BraintreeErrorTypes
+  sealed trait UNKNOWN
+    extends StObject
+       with BraintreeErrorTypes
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait Unknown_ extends GooglePaymentTokenizeValues
+  sealed trait Unknown_
+    extends StObject
+       with GooglePaymentTokenizeValues
   @scala.inline
   def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   
   @js.native
-  sealed trait Yes extends GooglePaymentTokenizeValues
+  sealed trait Yes
+    extends StObject
+       with GooglePaymentTokenizeValues
   @scala.inline
   def Yes: Yes = "Yes".asInstanceOf[Yes]
   
   @js.native
-  sealed trait blur extends HostedFieldEventType
+  sealed trait blur
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait cardTypeChange extends HostedFieldEventType
+  sealed trait cardTypeChange
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def cardTypeChange: cardTypeChange = "cardTypeChange".asInstanceOf[cardTypeChange]
   
   @js.native
-  sealed trait cvv extends HostedFieldsHostedFieldsFieldName
+  sealed trait cvv
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def cvv: cvv = "cvv".asInstanceOf[cvv]
   
   @js.native
-  sealed trait empty extends HostedFieldEventType
+  sealed trait empty
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
-  sealed trait expirationDate extends HostedFieldsHostedFieldsFieldName
+  sealed trait expirationDate
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def expirationDate: expirationDate = "expirationDate".asInstanceOf[expirationDate]
   
   @js.native
-  sealed trait expirationMonth extends HostedFieldsHostedFieldsFieldName
+  sealed trait expirationMonth
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def expirationMonth: expirationMonth = "expirationMonth".asInstanceOf[expirationMonth]
   
   @js.native
-  sealed trait expirationYear extends HostedFieldsHostedFieldsFieldName
+  sealed trait expirationYear
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def expirationYear: expirationYear = "expirationYear".asInstanceOf[expirationYear]
   
   @js.native
-  sealed trait focus extends HostedFieldEventType
+  sealed trait focus
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait notEmpty extends HostedFieldEventType
+  sealed trait notEmpty
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
   
   @js.native
-  sealed trait number extends HostedFieldsHostedFieldsFieldName
+  sealed trait number
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait postalCode extends HostedFieldsHostedFieldsFieldName
+  sealed trait postalCode
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
   @js.native
-  sealed trait validityChange extends HostedFieldEventType
+  sealed trait validityChange
+    extends StObject
+       with HostedFieldEventType
   @scala.inline
   def validityChange: validityChange = "validityChange".asInstanceOf[validityChange]
 }

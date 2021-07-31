@@ -10,9 +10,9 @@ A wrapper for the fantastic whois module that parses whois data into consistent 
 | ------------------ | :-------------: |
 | Full name          | whois-parsed |
 | Keywords           | whois |
-| # releases         | 27 |
-| # dependents       | 2 |
-| # downloads        | 1686 |
+| # releases         | 7 |
+| # dependents       | 3 |
+| # downloads        | 2648 |
 | # stars            | 0 |
 
 ## Links

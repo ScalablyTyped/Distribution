@@ -2,23 +2,21 @@ package typings.consul.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsulOptions extends StObject {
   
-  var ca: js.UndefOr[js.Array[String]] = js.native
+  var ca: js.UndefOr[js.Array[String]] = js.undefined
   
-  var defaults: js.UndefOr[CommonOptions] = js.native
+  var defaults: js.UndefOr[CommonOptions] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
-  var promisify: js.UndefOr[Boolean | js.Function] = js.native
+  var promisify: js.UndefOr[Boolean | js.Function] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
 }
 object ConsulOptions {
   

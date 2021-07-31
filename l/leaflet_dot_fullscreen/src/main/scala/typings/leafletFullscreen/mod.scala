@@ -7,7 +7,6 @@ import typings.leafletFullscreen.mod.Control_.FullscreenOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -25,24 +24,23 @@ object mod {
       var options_Fullscreen: FullscreenOptions = js.native
     }
     
-    @js.native
     trait FullscreenOptions extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var forcePseudoFullscreen: js.UndefOr[Boolean] = js.native
+      var forcePseudoFullscreen: js.UndefOr[Boolean] = js.undefined
       
-      var forceSeparateButton: js.UndefOr[Boolean] = js.native
+      var forceSeparateButton: js.UndefOr[Boolean] = js.undefined
       
-      var fullscreenElement: js.UndefOr[`false` | HTMLElement] = js.native
+      var fullscreenElement: js.UndefOr[`false` | HTMLElement] = js.undefined
       
-      var position: js.UndefOr[ControlPosition] = js.native
+      var position: js.UndefOr[ControlPosition] = js.undefined
       
-      var pseudoFullscreen: js.UndefOr[Boolean] = js.native
+      var pseudoFullscreen: js.UndefOr[Boolean] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var titleCancel: js.UndefOr[String] = js.native
+      var titleCancel: js.UndefOr[String] = js.undefined
     }
     object FullscreenOptions {
       
@@ -108,21 +106,22 @@ object mod {
   
   object control {
     
+    @JSImport("leaflet", "control")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a fullscreen control.
       */
-    @JSImport("leaflet", "control.fullscreen")
-    @js.native
-    def fullscreen(): Fullscreen = js.native
-    @JSImport("leaflet", "control.fullscreen")
-    @js.native
-    def fullscreen(options: FullscreenOptions): Fullscreen = js.native
+    @scala.inline
+    def fullscreen(): Fullscreen = ^.asInstanceOf[js.Dynamic].applyDynamic("fullscreen")().asInstanceOf[Fullscreen]
+    @scala.inline
+    def fullscreen(options: FullscreenOptions): Fullscreen = ^.asInstanceOf[js.Dynamic].applyDynamic("fullscreen")(options.asInstanceOf[js.Any]).asInstanceOf[Fullscreen]
   }
   
-  @js.native
   trait Map extends StObject {
     
-    def toggleFullScreen(): Unit = js.native
+    def toggleFullScreen(): Unit
   }
   object Map {
     
@@ -140,12 +139,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var fullscreenControl: js.UndefOr[Boolean] = js.native
+    var fullscreenControl: js.UndefOr[Boolean] = js.undefined
     
-    var fullscreenControlOptions: js.UndefOr[FullscreenOptions] = js.native
+    var fullscreenControlOptions: js.UndefOr[FullscreenOptions] = js.undefined
   }
   object MapOptions {
     

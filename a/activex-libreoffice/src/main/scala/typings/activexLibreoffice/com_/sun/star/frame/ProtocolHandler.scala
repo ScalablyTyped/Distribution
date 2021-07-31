@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,16 +17,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Supported URLs must match follow format: `protocol scheme:protocol specific part` If a handler provides optional arguments ("?") or jump marks ("#")
   * depends from its definition and implementation. The generic dispatch provider will use registered URL pattern to detect right handler.
   */
-@js.native
 trait ProtocolHandler
-  extends XDispatchProvider
+  extends StObject
+     with XDispatchProvider
      with XInitialization
 object ProtocolHandler {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
     queryInterface: `type` => js.Any,

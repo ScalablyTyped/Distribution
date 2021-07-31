@@ -2,15 +2,15 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 设置
-@js.native
-trait SettingOptions extends CommonCallbackOptions {
+trait SettingOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   @JSName("success")
-  var success_SettingOptions: js.UndefOr[js.Function1[/* res */ AuthSetting, Unit]] = js.native
+  var success_SettingOptions: js.UndefOr[js.Function1[/* res */ AuthSetting, Unit]] = js.undefined
 }
 object SettingOptions {
   

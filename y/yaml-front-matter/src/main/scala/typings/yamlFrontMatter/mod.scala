@@ -10,46 +10,39 @@ import typings.yamlFrontMatter.yamlFrontMatterStrings.loadFront
 import typings.yamlFrontMatter.yamlFrontMatterStrings.safeLoadFront
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yaml-front-matter", "loadFront")
+  @JSImport("yaml-front-matter", JSImport.Namespace)
   @js.native
-  def loadFront(content: String): Dictkey = js.native
-  @JSImport("yaml-front-matter", "loadFront")
-  @js.native
-  def loadFront(content: String, options: LoadOptions): Dictkey = js.native
-  @JSImport("yaml-front-matter", "loadFront")
-  @js.native
-  def loadFront(content: Buffer): Dictkey = js.native
-  @JSImport("yaml-front-matter", "loadFront")
-  @js.native
-  def loadFront(content: Buffer, options: LoadOptions): Dictkey = js.native
-  @JSImport("yaml-front-matter", "loadFront")
-  @js.native
-  def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions with ContentKeyName[contentKeyName]): loadFront with TopLevel[js.Any] with StringDictionary[js.Any] = js.native
-  @JSImport("yaml-front-matter", "loadFront")
-  @js.native
-  def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions with ContentKeyName[contentKeyName]): loadFront with TopLevel[js.Any] with StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront(content: String): Dictkey = js.native
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront(content: String, options: LoadOptions): Dictkey = js.native
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront(content: Buffer): Dictkey = js.native
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront(content: Buffer, options: LoadOptions): Dictkey = js.native
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions with ContentKeyName[contentKeyName]): safeLoadFront with TopLevel[js.Any] with StringDictionary[js.Any] = js.native
-  @JSImport("yaml-front-matter", "safeLoadFront")
-  @js.native
-  def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions with ContentKeyName[contentKeyName]): safeLoadFront with TopLevel[js.Any] with StringDictionary[js.Any] = js.native
+  @scala.inline
+  def loadFront(content: String): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
+  @scala.inline
+  def loadFront(content: String, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
+  @scala.inline
+  def loadFront(content: Buffer): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
+  @scala.inline
+  def loadFront(content: Buffer, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
+  
+  @scala.inline
+  def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
+  @scala.inline
+  def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
+  
+  @scala.inline
+  def safeLoadFront(content: String): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
+  @scala.inline
+  def safeLoadFront(content: String, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
+  @scala.inline
+  def safeLoadFront(content: Buffer): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
+  @scala.inline
+  def safeLoadFront(content: Buffer, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
+  
+  @scala.inline
+  def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
+  @scala.inline
+  def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
 }

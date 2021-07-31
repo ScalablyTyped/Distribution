@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityPoolRoleAttachmentMod {
@@ -45,6 +44,10 @@ object identityPoolRoleAttachmentMod {
   /* static members */
   object IdentityPoolRoleAttachment {
     
+    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityPoolRoleAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -54,35 +57,29 @@ object identityPoolRoleAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
     
     /**
       * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean]
   }
   
-  @js.native
   trait IdentityPoolRoleAttachmentArgs extends StObject {
     
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    val identityPoolId: Input[String] = js.native
+    val identityPoolId: Input[String]
     
     /**
       * A List of Role Mapping.
@@ -91,12 +88,12 @@ object identityPoolRoleAttachmentMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
       */
-    val roles: Input[StringDictionary[Input[String]]] = js.native
+    val roles: Input[StringDictionary[Input[String]]]
   }
   object IdentityPoolRoleAttachmentArgs {
     
@@ -130,13 +127,12 @@ object identityPoolRoleAttachmentMod {
     }
   }
   
-  @js.native
   trait IdentityPoolRoleAttachmentState extends StObject {
     
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    val identityPoolId: js.UndefOr[Input[String]] = js.native
+    val identityPoolId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A List of Role Mapping.
@@ -145,12 +141,12 @@ object identityPoolRoleAttachmentMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
       */
-    val roles: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val roles: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IdentityPoolRoleAttachmentState {
     

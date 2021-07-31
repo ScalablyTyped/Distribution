@@ -2,15 +2,13 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PickleRejected. */
-@js.native
 trait IPickleRejected extends StObject {
   
   /** PickleRejected pickleId */
-  var pickleId: js.UndefOr[String | Null] = js.native
+  var pickleId: js.UndefOr[String | Null] = js.undefined
 }
 object IPickleRejected {
   

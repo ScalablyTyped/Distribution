@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexMatcher extends StObject {
   
   /** Google's RE2 regex engine. */
-  var googleRe2: js.UndefOr[GoogleRE2] = js.native
+  var googleRe2: js.UndefOr[GoogleRE2] = js.undefined
   
   /** The regex match string. The string must be supported by the configured engine. */
-  var regex: js.UndefOr[String] = js.native
+  var regex: js.UndefOr[String] = js.undefined
 }
 object RegexMatcher {
   

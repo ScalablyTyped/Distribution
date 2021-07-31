@@ -2,36 +2,34 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a set of properties to describe the model of an {@link UnoControl} which is embedded in a {@link UnoControlDialogModel} . */
-@js.native
 trait UnoControlDialogElement extends StObject {
   
   /** specifies the height of the control. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** specifies the name of the control. */
-  var Name: String = js.native
+  var Name: String
   
   /** specifies the horizontal position of the control. */
-  var PositionX: String = js.native
+  var PositionX: String
   
   /** specifies the vertical position of the control. */
-  var PositionY: String = js.native
+  var PositionY: String
   
   /** specifies the step of the control. */
-  var Step: Double = js.native
+  var Step: Double
   
   /** specifies the tabindex of the control. */
-  var TabIndex: Double = js.native
+  var TabIndex: Double
   
   /** specifies the tag of the control. */
-  var Tag: String = js.native
+  var Tag: String
   
   /** specifies the width of the control. */
-  var Width: Double = js.native
+  var Width: Double
 }
 object UnoControlDialogElement {
   

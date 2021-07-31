@@ -2,7 +2,6 @@ package typings.angularStrap.mgcrea.ngStrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object navbar {
   
-  @js.native
   trait INavbarOptions extends StObject {
     
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
-    var routeAttr: js.UndefOr[String] = js.native
+    var routeAttr: js.UndefOr[String] = js.undefined
   }
   object INavbarOptions {
     
@@ -43,10 +41,9 @@ object navbar {
     }
   }
   
-  @js.native
   trait INavbarProvider extends StObject {
     
-    var defaults: INavbarOptions = js.native
+    var defaults: INavbarOptions
   }
   object INavbarProvider {
     
@@ -64,10 +61,9 @@ object navbar {
     }
   }
   
-  @js.native
   trait INavbarService extends StObject {
     
-    var defaults: INavbarOptions = js.native
+    var defaults: INavbarOptions
   }
   object INavbarService {
     

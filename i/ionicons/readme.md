@@ -10,9 +10,9 @@ Premium icons for Ionic.
 | ------------------ | :-------------: |
 | Full name          | ionicons |
 | Keywords           | icon pack, ionic, icon, svg, mobile, web component, component, custom element, material design, ios |
-| # releases         | 60 |
-| # dependents       | 308 |
-| # downloads        | 20695282 |
+| # releases         | 52 |
+| # dependents       | 316 |
+| # downloads        | 24504084 |
 | # stars            | 17 |
 
 ## Links

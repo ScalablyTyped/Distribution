@@ -4,7 +4,6 @@ import typings.antdMobile.anon.AntLocale
 import typings.antdMobile.anon.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeProviderMod {

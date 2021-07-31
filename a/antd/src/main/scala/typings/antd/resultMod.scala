@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultMod extends Shortcut {
@@ -20,17 +19,18 @@ object resultMod extends Shortcut {
   
   object ExceptionMap {
     
-    @JSImport("antd/lib/result", "ExceptionMap.403")
+    @JSImport("antd/lib/result", "ExceptionMap")
     @js.native
-    def `403`(): Element = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("antd/lib/result", "ExceptionMap.404")
-    @js.native
-    def `404`(): Element = js.native
+    @scala.inline
+    def `403`(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("403")().asInstanceOf[Element]
     
-    @JSImport("antd/lib/result", "ExceptionMap.500")
-    @js.native
-    def `500`(): Element = js.native
+    @scala.inline
+    def `404`(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("404")().asInstanceOf[Element]
+    
+    @scala.inline
+    def `500`(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("500")().asInstanceOf[Element]
   }
   
   object IconMap {
@@ -72,7 +72,9 @@ object resultMod extends Shortcut {
     - typings.antd.antdStrings.`404`
     - typings.antd.antdStrings.`500`
   */
-  trait ExceptionStatusType extends ResultStatusType
+  trait ExceptionStatusType
+    extends StObject
+       with ResultStatusType
   object ExceptionStatusType {
     
     @scala.inline
@@ -85,24 +87,23 @@ object resultMod extends Shortcut {
     def `500`: typings.antd.antdNumbers.`500` = 500.asInstanceOf[typings.antd.antdNumbers.`500`]
   }
   
-  @js.native
   trait ResultProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[ResultStatusType] = js.native
+    var status: js.UndefOr[ResultStatusType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ResultProps {
     
@@ -175,7 +176,9 @@ object resultMod extends Shortcut {
   trait ResultStatusType extends StObject
   
   @js.native
-  trait ResultType extends FunctionComponent[ResultProps] {
+  trait ResultType
+    extends StObject
+       with FunctionComponent[ResultProps] {
     
     var PRESENTED_IMAGE_403: ReactNode = js.native
     

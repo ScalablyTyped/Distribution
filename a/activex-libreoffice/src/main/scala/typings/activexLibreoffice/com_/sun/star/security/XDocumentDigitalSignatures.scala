@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,92 +15,93 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface can be used to digitally sign different content in a office document. It can also be used to verify digital signatures.
   */
-@js.native
-trait XDocumentDigitalSignatures extends XInterface {
+trait XDocumentDigitalSignatures
+  extends StObject
+     with XInterface {
   
   /** allows to get the default stream name for storing of the signature of the document content. */
-  val DocumentContentSignatureDefaultStreamName: String = js.native
+  val DocumentContentSignatureDefaultStreamName: String
   
   /** allows to get the default stream name for storing of the signature of the package. */
-  val PackageSignatureDefaultStreamName: String = js.native
+  val PackageSignatureDefaultStreamName: String
   
   /** allows to get the default stream name for storing of the signature of the scripting content. */
-  val ScriptingContentSignatureDefaultStreamName: String = js.native
+  val ScriptingContentSignatureDefaultStreamName: String
   
-  def addAuthorToTrustedSources(Author: XCertificate): Unit = js.native
+  def addAuthorToTrustedSources(Author: XCertificate): Unit
   
-  def addLocationToTrustedSources(Location: String): Unit = js.native
+  def addLocationToTrustedSources(Location: String): Unit
   
   /**
     * This method shows CertificateChooser dialog, used by document and PDF signing
     * @since LibreOffice 5.3
     */
-  def chooseCertificate(Description: js.Array[String]): XCertificate = js.native
+  def chooseCertificate(Description: js.Array[String]): XCertificate
   
   /** allows to get the default stream name for storing of the signature of the document content. */
-  def getDocumentContentSignatureDefaultStreamName(): String = js.native
+  def getDocumentContentSignatureDefaultStreamName(): String
   
   /** allows to get the default stream name for storing of the signature of the package. */
-  def getPackageSignatureDefaultStreamName(): String = js.native
+  def getPackageSignatureDefaultStreamName(): String
   
   /** allows to get the default stream name for storing of the signature of the scripting content. */
-  def getScriptingContentSignatureDefaultStreamName(): String = js.native
+  def getScriptingContentSignatureDefaultStreamName(): String
   
-  def isAuthorTrusted(Author: XCertificate): Boolean = js.native
+  def isAuthorTrusted(Author: XCertificate): Boolean
   
-  def isLocationTrusted(Location: String): Boolean = js.native
+  def isLocationTrusted(Location: String): Boolean
   
   /** manages trusted sources (Authors and paths ) */
-  def manageTrustedSources(): Unit = js.native
+  def manageTrustedSources(): Unit
   
-  def showCertificate(Certificate: XCertificate): Unit = js.native
+  def showCertificate(Certificate: XCertificate): Unit
   
   /** shows the digital signatures of the document content */
-  def showDocumentContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit = js.native
+  def showDocumentContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit
   
   /** shows the digital signatures of the package */
-  def showPackageSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit = js.native
+  def showPackageSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit
   
   /** shows the digital signatures of the scripting content */
-  def showScriptingContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit = js.native
+  def showScriptingContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): Unit
   
   /**
     * signs the content of the document including text and pictures.
     *
     * Macros will not be signed.
     */
-  def signDocumentContent(xStorage: XStorage, xSignStream: XStream): Boolean = js.native
+  def signDocumentContent(xStorage: XStorage, xSignStream: XStream): Boolean
   
   /** signs the full Package, which means everything in the storage except the content of META-INF */
-  def signPackage(Storage: XStorage, xSignStream: XStream): Boolean = js.native
+  def signPackage(Storage: XStorage, xSignStream: XStream): Boolean
   
   /**
     * signs the content of the Scripting including macros and basic dialogs
     *
     * The rest of document content will not be signed.
     */
-  def signScriptingContent(xStorage: XStorage, xSignStream: XStream): Boolean = js.native
+  def signScriptingContent(xStorage: XStorage, xSignStream: XStream): Boolean
   
   /**
     * checks for digital signatures and their status.
     *
     * Only document content will be checked.
     */
-  def verifyDocumentContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation] = js.native
+  def verifyDocumentContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation]
   
   /**
     * checks for digital signatures and their status.
     *
     * Only Package content will be checked.
     */
-  def verifyPackageSignatures(Storage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation] = js.native
+  def verifyPackageSignatures(Storage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation]
   
   /**
     * checks for digital signatures and their status.
     *
     * Only Scripting content will be checked.
     */
-  def verifyScriptingContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation] = js.native
+  def verifyScriptingContentSignatures(xStorage: XStorage, xSignInStream: XInputStream): SafeArray[DocumentSignatureInformation]
 }
 object XDocumentDigitalSignatures {
   

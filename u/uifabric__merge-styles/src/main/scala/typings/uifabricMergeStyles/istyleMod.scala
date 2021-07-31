@@ -3,7 +3,6 @@ package typings.uifabricMergeStyles
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istyleMod {
@@ -19,16 +18,19 @@ object istyleMod {
     - java.lang.String
     - typings.uifabricMergeStyles.uifabricMergeStylesBooleans.`false`
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type IStyleBase = js.UndefOr[_IStyleBase | String | Null]
   
   @js.native
   trait IStyleBaseArray
-    extends Array[IStyle]
+    extends StObject
+       with Array[IStyle]
        with _IStyle
   
   trait _IStyle extends StObject
   
-  trait _IStyleBase extends _IStyle
+  trait _IStyleBase
+    extends StObject
+       with _IStyle
 }

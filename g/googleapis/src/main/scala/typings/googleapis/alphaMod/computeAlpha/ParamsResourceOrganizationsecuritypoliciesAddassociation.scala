@@ -5,28 +5,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsecuritypoliciesAddassociation extends StandardParameters {
+trait ParamsResourceOrganizationsecuritypoliciesAddassociation
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Indicates whether or not to replace it if an association of the
     * attachment already exists. This is false by default, in which case an
     * error will be returned if an assocation already exists.
     */
-  var replaceExistingAssociation: js.UndefOr[Boolean] = js.native
+  var replaceExistingAssociation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSecurityPolicyAssociation] = js.native
+  var requestBody: js.UndefOr[SchemaSecurityPolicyAssociation] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -40,12 +40,12 @@ trait ParamsResourceOrganizationsecuritypoliciesAddassociation extends StandardP
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the security policy to update.
     */
-  var securityPolicy: js.UndefOr[String] = js.native
+  var securityPolicy: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsecuritypoliciesAddassociation {
   

@@ -3,15 +3,13 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 import typings.reactDataGrid.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionMenu extends StObject {
   
-  var actions: js.Array[Callback] = js.native
+  var actions: js.Array[Callback]
   
-  var icon: String = js.native
+  var icon: String
 }
 object ActionMenu {
   

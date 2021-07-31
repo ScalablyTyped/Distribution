@@ -2,21 +2,20 @@ package typings.typedoc.optionsDeclarationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringDeclarationOption
-  extends DeclarationOptionBase
+  extends StObject
+     with DeclarationOptionBase
      with _DeclarationOption
      with _KeyToDeclaration[js.Any] {
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var hint: js.UndefOr[ParameterHint] = js.native
+  var hint: js.UndefOr[ParameterHint] = js.undefined
   
   @JSName("type")
-  var type_StringDeclarationOption: js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType.String] = js.native
+  var type_StringDeclarationOption: js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType.String] = js.undefined
 }
 object StringDeclarationOption {
   

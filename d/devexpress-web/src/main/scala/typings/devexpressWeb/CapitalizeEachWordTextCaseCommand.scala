@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to capitalize each word in the selected sentence.
   */
-@js.native
-trait CapitalizeEachWordTextCaseCommand extends CommandWithSimpleStateBase {
+trait CapitalizeEachWordTextCaseCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CapitalizeEachWordTextCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CapitalizeEachWordTextCaseCommand {
   

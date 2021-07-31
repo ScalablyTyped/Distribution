@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkPolicy extends StObject {
   
   /** Whether network policy is enabled on the cluster. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** The selected network policy provider. */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
 }
 object NetworkPolicy {
   

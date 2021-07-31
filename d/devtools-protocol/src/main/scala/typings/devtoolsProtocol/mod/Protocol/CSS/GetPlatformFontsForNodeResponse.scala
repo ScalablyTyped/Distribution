@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPlatformFontsForNodeResponse extends StObject {
   
   /**
     * Usage statistics for every employed platform font.
     */
-  var fonts: js.Array[PlatformFontUsage] = js.native
+  var fonts: js.Array[PlatformFontUsage]
 }
 object GetPlatformFontsForNodeResponse {
   

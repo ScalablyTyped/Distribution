@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends S
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/top)
     */
-  var bottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var bottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BottomProps {
   
@@ -25,7 +23,7 @@ object BottomProps {
   }
   
   @scala.inline
-  implicit class BottomPropsMutableBuilder[Self <: BottomProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BottomProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BottomPropsMutableBuilder[Self <: BottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BottomProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportLabelsTaskRunProperties extends StObject {
   
   /**
     * The Amazon Simple Storage Service (Amazon S3) path where you will export the labels.
     */
-  var OutputS3Path: js.UndefOr[UriString] = js.native
+  var OutputS3Path: js.UndefOr[UriString] = js.undefined
 }
 object ExportLabelsTaskRunProperties {
   

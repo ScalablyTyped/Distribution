@@ -4,21 +4,19 @@ import typings.babelCore.anon.File
 import typings.babelTypes.mod.File_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BabelFileResult extends StObject {
   
-  var ast: js.UndefOr[File_ | Null] = js.native
+  var ast: js.UndefOr[File_ | Null] = js.undefined
   
-  var code: js.UndefOr[String | Null] = js.native
+  var code: js.UndefOr[String | Null] = js.undefined
   
-  var ignored: js.UndefOr[Boolean] = js.native
+  var ignored: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[File | Null] = js.native
+  var map: js.UndefOr[File | Null] = js.undefined
   
-  var metadata: js.UndefOr[BabelFileMetadata] = js.native
+  var metadata: js.UndefOr[BabelFileMetadata] = js.undefined
 }
 object BabelFileResult {
   

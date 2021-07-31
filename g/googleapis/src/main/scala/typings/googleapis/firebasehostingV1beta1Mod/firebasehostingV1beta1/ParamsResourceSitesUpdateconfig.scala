@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSitesUpdateconfig extends StandardParameters {
+trait ParamsResourceSitesUpdateconfig
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The site for which to update the SiteConfig, in the format:
     * <code>sites/<var>site-name</var>/config</code>
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSiteConfig] = js.native
+  var requestBody: js.UndefOr[SchemaSiteConfig] = js.undefined
   
   /**
     * A set of field names from your [site configuration](../sites.SiteConfig)
@@ -34,7 +34,7 @@ trait ParamsResourceSitesUpdateconfig extends StandardParameters {
     * it's in the mask. <br>If a mask is not provided then a default mask of
     * only [`max_versions`](../sites.SiteConfig.max_versions) will be used.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSitesUpdateconfig {
   

@@ -3,21 +3,22 @@ package typings.antvDataSet
 import typings.antvDataSet.viewMod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hexjsonMod {
   
-  @JSImport("@antv/data-set/lib/connector/hexjson", JSImport.Default)
+  @JSImport("@antv/data-set/lib/connector/hexjson", JSImport.Namespace)
   @js.native
-  def default(data: js.Array[_], options: Options, dataView: View): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(data: js.Array[js.Any], options: Options, dataView: View): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait Options extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

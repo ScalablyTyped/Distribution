@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Websocket extends StObject {
   
-  var authorizer: js.UndefOr[WebsocketAuthorizer] = js.native
+  var authorizer: js.UndefOr[WebsocketAuthorizer] = js.undefined
   
-  var route: String = js.native
+  var route: String
   
-  var routeResponseSelectionExpression: js.UndefOr[String] = js.native
+  var routeResponseSelectionExpression: js.UndefOr[String] = js.undefined
 }
 object Websocket {
   

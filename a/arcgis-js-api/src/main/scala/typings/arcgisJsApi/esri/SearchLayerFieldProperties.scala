@@ -15,10 +15,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.string
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchLayerFieldProperties extends StObject {
   
   /**
@@ -26,14 +24,14 @@ trait SearchLayerFieldProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#exactMatch)
     */
-  var exactMatch: js.UndefOr[Boolean] = js.native
+  var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The data type of the field.
@@ -42,7 +40,7 @@ trait SearchLayerFieldProperties extends StObject {
     */
   var `type`: js.UndefOr[
     `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
-  ] = js.native
+  ] = js.undefined
 }
 object SearchLayerFieldProperties {
   

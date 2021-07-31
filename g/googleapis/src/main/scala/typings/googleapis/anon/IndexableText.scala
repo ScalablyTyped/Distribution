@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexableText extends StObject {
   
-  var indexableText: js.UndefOr[String] = js.native
+  var indexableText: js.UndefOr[String] = js.undefined
   
-  var thumbnail: js.UndefOr[MimeType] = js.native
+  var thumbnail: js.UndefOr[MimeType] = js.undefined
 }
 object IndexableText {
   

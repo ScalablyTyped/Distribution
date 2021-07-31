@@ -2,34 +2,32 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsEncryption extends StObject {
   
   /**
     * A constant initialization vector for encryption (optional).
   When not specified the initialization vector will be periodically rotated.
     */
-  var ConstantInitializationVector: js.UndefOr[string] = js.native
+  var ConstantInitializationVector: js.UndefOr[string] = js.undefined
   
   /**
     * The encryption method to use.
     */
-  var EncryptionMethod: js.UndefOr[typings.awsSdk.mediapackageMod.EncryptionMethod] = js.native
+  var EncryptionMethod: js.UndefOr[typings.awsSdk.mediapackageMod.EncryptionMethod] = js.undefined
   
   /**
     * Interval (in seconds) between each encryption key rotation.
     */
-  var KeyRotationIntervalSeconds: js.UndefOr[integer] = js.native
+  var KeyRotationIntervalSeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * When enabled, the EXT-X-KEY tag will be repeated in output manifests.
     */
-  var RepeatExtXKey: js.UndefOr[boolean] = js.native
+  var RepeatExtXKey: js.UndefOr[boolean] = js.undefined
   
-  var SpekeKeyProvider: typings.awsSdk.mediapackageMod.SpekeKeyProvider = js.native
+  var SpekeKeyProvider: typings.awsSdk.mediapackageMod.SpekeKeyProvider
 }
 object HlsEncryption {
   

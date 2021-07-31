@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new canvas to draw images, shapes and texts on.
   * @see https://docs.scriptable.app/drawcontext/#-new-drawcontext
   */
-@js.native
 trait DrawContext extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait DrawContext extends StObject {
     * @param path - Path to add to the context.
     * @see https://docs.scriptable.app/drawcontext/#-addpath
     */
-  def addPath(path: Path): Unit = js.native
+  def addPath(path: Path): Unit
   
   /**
     * _Draws an image at the specified point._
@@ -32,7 +30,7 @@ trait DrawContext extends StObject {
     * @param point - Point at which to draw top-left corner of the image.
     * @see https://docs.scriptable.app/drawcontext/#-drawimageatpoint
     */
-  def drawImageAtPoint(image: Image, point: Point): Unit = js.native
+  def drawImageAtPoint(image: Image, point: Point): Unit
   
   /**
     * _Draws an image in the specified rect._
@@ -42,7 +40,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to draw the image in.
     * @see https://docs.scriptable.app/drawcontext/#-drawimageinrect
     */
-  def drawImageInRect(image: Image, rect: Rect): Unit = js.native
+  def drawImageInRect(image: Image, rect: Rect): Unit
   
   /**
     * _Draws text at a position._
@@ -52,7 +50,7 @@ trait DrawContext extends StObject {
     * @param pos - Position to draw the top-left of the text.
     * @see https://docs.scriptable.app/drawcontext/#-drawtext
     */
-  def drawText(text: String, pos: Point): Unit = js.native
+  def drawText(text: String, pos: Point): Unit
   
   /**
     * _Draws text in a rectangle._
@@ -63,7 +61,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to draw text in.
     * @see https://docs.scriptable.app/drawcontext/#-drawtextinrect
     */
-  def drawTextInRect(text: String, rect: Rect): Unit = js.native
+  def drawTextInRect(text: String, rect: Rect): Unit
   
   /**
     * _Fills a rectangle._
@@ -72,7 +70,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to fill.
     * @see https://docs.scriptable.app/drawcontext/#-fill
     */
-  def fill(rect: Rect): Unit = js.native
+  def fill(rect: Rect): Unit
   
   /**
     * _Fills an ellipse._
@@ -81,7 +79,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle incapsulating the ellipse to fill.
     * @see https://docs.scriptable.app/drawcontext/#-fillellipse
     */
-  def fillEllipse(rect: Rect): Unit = js.native
+  def fillEllipse(rect: Rect): Unit
   
   /**
     * _Fills the path that was added the latest._
@@ -89,7 +87,7 @@ trait DrawContext extends StObject {
     * The path that was latest added to the context is filled with the color set using setFillColor.
     * @see https://docs.scriptable.app/drawcontext/#-fillpath
     */
-  def fillPath(): Unit = js.native
+  def fillPath(): Unit
   
   /**
     * _Fills a rectangle._
@@ -98,7 +96,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to fill.
     * @see https://docs.scriptable.app/drawcontext/#-fillrect
     */
-  def fillRect(rect: Rect): Unit = js.native
+  def fillRect(rect: Rect): Unit
   
   /**
     * _Retrieves the image._
@@ -106,7 +104,7 @@ trait DrawContext extends StObject {
     * Call this to retrieve the image you have drawn to the context. Note that this should be called before calling endDrawing().
     * @see https://docs.scriptable.app/drawcontext/#-getimage
     */
-  def getImage(): Image = js.native
+  def getImage(): Image
   
   /**
     * _Determines whether the context is opaque._
@@ -114,7 +112,7 @@ trait DrawContext extends StObject {
     * When enabled your image will be rendered opaque. Default is true.
     * @see https://docs.scriptable.app/drawcontext/#opaque
     */
-  var opaque: Boolean = js.native
+  var opaque: Boolean
   
   /**
     * _Enable to respect the scale of the screen._
@@ -125,7 +123,7 @@ trait DrawContext extends StObject {
     * disabled, you may experience that your images looks blurry because essentially the size you have specified will be stretched when rendered on the screen. Default is false.
     * @see https://docs.scriptable.app/drawcontext/#respectscreenscale
     */
-  var respectScreenScale: Boolean = js.native
+  var respectScreenScale: Boolean
   
   /**
     * _Sets the fill color._
@@ -135,7 +133,7 @@ trait DrawContext extends StObject {
     * @param color - Color to set for filling.
     * @see https://docs.scriptable.app/drawcontext/#-setfillcolor
     */
-  def setFillColor(color: Color): Unit = js.native
+  def setFillColor(color: Color): Unit
   
   /**
     * _Sets the font to use when drawing text._
@@ -144,7 +142,7 @@ trait DrawContext extends StObject {
     * @param font - Font to use when drawing text.
     * @see https://docs.scriptable.app/drawcontext/#-setfont
     */
-  def setFont(font: Font): Unit = js.native
+  def setFont(font: Font): Unit
   
   /**
     * _Sets the line width for stroking._
@@ -153,7 +151,7 @@ trait DrawContext extends StObject {
     * @param width - Line width to use for stroking.
     * @see https://docs.scriptable.app/drawcontext/#-setlinewidth
     */
-  def setLineWidth(width: Double): Unit = js.native
+  def setLineWidth(width: Double): Unit
   
   /**
     * _Sets the stroke color._
@@ -163,7 +161,7 @@ trait DrawContext extends StObject {
     * @param color - Color to set for stroking.
     * @see https://docs.scriptable.app/drawcontext/#-setstrokecolor
     */
-  def setStrokeColor(color: Color): Unit = js.native
+  def setStrokeColor(color: Color): Unit
   
   /**
     * _Specifies that texts should be center aligned._
@@ -171,7 +169,7 @@ trait DrawContext extends StObject {
     * Sets text alignment to center. Texts drawn after calling this will be center aligned inside the provided rectangle.
     * @see https://docs.scriptable.app/drawcontext/#-settextalignedcenter
     */
-  def setTextAlignedCenter(): Unit = js.native
+  def setTextAlignedCenter(): Unit
   
   /**
     * _Specifies that texts should be left aligned._
@@ -179,7 +177,7 @@ trait DrawContext extends StObject {
     * Sets text alignment to left. Texts drawn after calling this will be left aligned inside the provided rectangle.
     * @see https://docs.scriptable.app/drawcontext/#-settextalignedleft
     */
-  def setTextAlignedLeft(): Unit = js.native
+  def setTextAlignedLeft(): Unit
   
   /**
     * _Specifies that texts should be right aligned._
@@ -187,7 +185,7 @@ trait DrawContext extends StObject {
     * Sets text alignment to right. Texts drawn after calling this will be right aligned inside the provided rectangle.
     * @see https://docs.scriptable.app/drawcontext/#-settextalignedright
     */
-  def setTextAlignedRight(): Unit = js.native
+  def setTextAlignedRight(): Unit
   
   /**
     * _Sets the text color used when drawing text._
@@ -196,7 +194,7 @@ trait DrawContext extends StObject {
     * @param color - Color to use when drawing text.
     * @see https://docs.scriptable.app/drawcontext/#-settextcolor
     */
-  def setTextColor(color: Color): Unit = js.native
+  def setTextColor(color: Color): Unit
   
   /**
     * _Size of canvas._
@@ -204,7 +202,7 @@ trait DrawContext extends StObject {
     * Specifies the size of the canvas on which you are drawing. The image returned by getImage() will have this exact size, except if respectScreenScale is true.
     * @see https://docs.scriptable.app/drawcontext/#size
     */
-  var size: Size = js.native
+  var size: Size
   
   /**
     * _Strokes a rectangle._
@@ -213,7 +211,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to stroke.
     * @see https://docs.scriptable.app/drawcontext/#-stroke
     */
-  def stroke(rect: Rect): Unit = js.native
+  def stroke(rect: Rect): Unit
   
   /**
     * _Strokes an ellipse._
@@ -222,7 +220,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle incapsulating the ellipse to stroke.
     * @see https://docs.scriptable.app/drawcontext/#-strokeellipse
     */
-  def strokeEllipse(rect: Rect): Unit = js.native
+  def strokeEllipse(rect: Rect): Unit
   
   /**
     * _Strokes the path that was added the latest._
@@ -230,7 +228,7 @@ trait DrawContext extends StObject {
     * The path that was added the latest to the context is stroked with the color set using setStrokeColor and the line width set using setLineWidth.
     * @see https://docs.scriptable.app/drawcontext/#-strokepath
     */
-  def strokePath(): Unit = js.native
+  def strokePath(): Unit
   
   /**
     * _Strokes a rectangle._
@@ -239,7 +237,7 @@ trait DrawContext extends StObject {
     * @param rect - Rectangle to stroke.
     * @see https://docs.scriptable.app/drawcontext/#-strokerect
     */
-  def strokeRect(rect: Rect): Unit = js.native
+  def strokeRect(rect: Rect): Unit
 }
 object DrawContext {
   

@@ -5,69 +5,58 @@ import typings.restartHooks.restartHooksStrings.anonymous
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useImageMod {
   
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useImage", JSImport.Namespace)
   @js.native
-  def default(): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: js.UndefOr[scala.Nothing], crossOrigin: String): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: String): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: String, crossOrigin: String): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: Null, crossOrigin: String): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: HTMLImageElement): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default(imageOrUrl: HTMLImageElement, crossOrigin: String): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_anonymous(imageOrUrl: js.UndefOr[scala.Nothing], crossOrigin: anonymous): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_anonymous(imageOrUrl: String, crossOrigin: anonymous): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_anonymous(imageOrUrl: Null, crossOrigin: anonymous): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_anonymous(imageOrUrl: HTMLImageElement, crossOrigin: anonymous): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_usecredentials(imageOrUrl: js.UndefOr[scala.Nothing], crossOrigin: `use-credentials`): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_usecredentials(imageOrUrl: String, crossOrigin: `use-credentials`): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_usecredentials(imageOrUrl: Null, crossOrigin: `use-credentials`): State = js.native
-  @JSImport("@restart/hooks/cjs/useImage", JSImport.Default)
-  @js.native
-  def default_usecredentials(imageOrUrl: HTMLImageElement, crossOrigin: `use-credentials`): State = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: String): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: String, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: Null, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: Unit, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: HTMLImageElement): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  @scala.inline
+  def default(imageOrUrl: HTMLImageElement, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  
+  @scala.inline
+  def default_anonymous(imageOrUrl: String, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_anonymous(imageOrUrl: Null, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_anonymous(imageOrUrl: Unit, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_anonymous(imageOrUrl: HTMLImageElement, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  
+  @scala.inline
+  def default_usecredentials(imageOrUrl: String, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_usecredentials(imageOrUrl: Null, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_usecredentials(imageOrUrl: Unit, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def default_usecredentials(imageOrUrl: HTMLImageElement, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  
   trait State extends StObject {
     
-    var error: js.Any | Null = js.native
+    var error: js.Any | Null
     
-    var image: HTMLImageElement | Null = js.native
+    var image: HTMLImageElement | Null
   }
   object State {
     
     @scala.inline
     def apply(): State = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(error = null, image = null)
       __obj.asInstanceOf[State]
     }
     

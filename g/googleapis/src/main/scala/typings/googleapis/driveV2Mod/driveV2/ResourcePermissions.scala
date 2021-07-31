@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Permissions")
@@ -33,7 +32,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePermissionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePermissionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPermission] = js.native
   def get(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def get(
@@ -94,7 +93,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def getIdForEmail(): GaxiosPromise[SchemaPermissionId] = js.native
   def getIdForEmail(callback: BodyResponseCallback[SchemaPermissionId]): Unit = js.native
-  def getIdForEmail(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermissionId] = js.native
+  def getIdForEmail(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermissionId] = js.native
   def getIdForEmail(params: ParamsResourcePermissionsGetidforemail): GaxiosPromise[SchemaPermissionId] = js.native
   def getIdForEmail(params: ParamsResourcePermissionsGetidforemail, callback: BodyResponseCallback[SchemaPermissionId]): Unit = js.native
   def getIdForEmail(
@@ -128,7 +127,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPermission] = js.native
   def insert(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def insert(params: ParamsResourcePermissionsInsert): GaxiosPromise[SchemaPermission] = js.native
   def insert(params: ParamsResourcePermissionsInsert, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def insert(
@@ -161,7 +160,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPermissionList] = js.native
   def list(callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermissionList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermissionList] = js.native
   def list(params: ParamsResourcePermissionsList): GaxiosPromise[SchemaPermissionList] = js.native
   def list(params: ParamsResourcePermissionsList, callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
   def list(
@@ -196,7 +195,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaPermission] = js.native
   def patch(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def patch(params: ParamsResourcePermissionsPatch): GaxiosPromise[SchemaPermission] = js.native
   def patch(params: ParamsResourcePermissionsPatch, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def patch(
@@ -231,7 +230,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaPermission] = js.native
   def update(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def update(params: ParamsResourcePermissionsUpdate): GaxiosPromise[SchemaPermission] = js.native
   def update(params: ParamsResourcePermissionsUpdate, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def update(

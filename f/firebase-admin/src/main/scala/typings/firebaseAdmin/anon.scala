@@ -5,28 +5,26 @@ import typings.firebaseAdmin.authMod.auth.HashAlgorithmType
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Action extends StObject {
     
     /**
       * An action available to the user when the notification is presented
       */
-    var action: String = js.native
+    var action: String
     
     /**
       * Optional icon for a notification action.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * Title of the notification action.
       */
-    var title: String = js.native
+    var title: String
   }
   object Action {
     
@@ -53,7 +51,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Algorithm extends StObject {
     
     /**
@@ -63,51 +60,51 @@ object anon {
       * `HMAC_MD5`, `MD5`, `PBKDF_SHA1`, `BCRYPT`, `PBKDF2_SHA256`, `SHA512`,
       * `SHA256` and `SHA1`.
       */
-    var algorithm: HashAlgorithmType = js.native
+    var algorithm: HashAlgorithmType
     
     /**
       * The block size (normally 8) of the hashing algorithm. Required for the
       * `STANDARD_SCRYPT` algorithm.
       */
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The derived key length of the hashing algorithm. Required for the
       * `STANDARD_SCRYPT` algorithm.
       */
-    var derivedKeyLength: js.UndefOr[Double] = js.native
+    var derivedKeyLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The signing key used in the hash algorithm in buffer bytes.
       * Required by hashing algorithms `SCRYPT`, `HMAC_SHA512`, `HMAC_SHA256`,
       * `HAMC_SHA1` and `HMAC_MD5`.
       */
-    var key: js.UndefOr[Buffer] = js.native
+    var key: js.UndefOr[Buffer] = js.undefined
     
     /**
       * The memory cost required for `SCRYPT` algorithm, or the CPU/memory cost.
       * Required for `STANDARD_SCRYPT` algorithm.
       */
-    var memoryCost: js.UndefOr[Double] = js.native
+    var memoryCost: js.UndefOr[Double] = js.undefined
     
     /**
       * The parallelization of the hashing algorithm. Required for the
       * `STANDARD_SCRYPT` algorithm.
       */
-    var parallelization: js.UndefOr[Double] = js.native
+    var parallelization: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of rounds for hashing calculation.
       * Required for `SCRYPT`, `MD5`, `SHA512`, `SHA256`, `SHA1`, `PBKDF_SHA1` and
       * `PBKDF2_SHA256`.
       */
-    var rounds: js.UndefOr[Double] = js.native
+    var rounds: js.UndefOr[Double] = js.undefined
     
     /**
       * The salt separator in buffer bytes which is appended to salt when
       * verifying a password. This is only used by the `SCRYPT` algorithm.
       */
-    var saltSeparator: js.UndefOr[Buffer] = js.native
+    var saltSeparator: js.UndefOr[Buffer] = js.undefined
   }
   object Algorithm {
     
@@ -167,10 +164,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AutomlModel extends StObject {
     
-    var automlModel: String = js.native
+    var automlModel: String
   }
   object AutomlModel {
     
@@ -188,14 +184,13 @@ object anon {
     }
   }
   
-  @js.native
   trait BundleId extends StObject {
     
     /**
       * Defines the required iOS bundle ID of the app where the link should be
       * handled if the application is already installed on the device.
       */
-    var bundleId: String = js.native
+    var bundleId: String
   }
   object BundleId {
     
@@ -213,40 +208,40 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Provider-specific identity details corresponding
       * to the provider used to sign in the user.
       */
-    var identities: StringDictionary[js.Any] = js.native
+    var identities: StringDictionary[js.Any]
     
     /**
       * The `uid` of the second factor used to sign in, provided the
       * ID token was obtained from a multi-factor authenticated user.
       */
-    var second_factor_identifier: js.UndefOr[String] = js.native
+    var second_factor_identifier: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the provider used to sign in the user.
       * One of `"anonymous"`, `"password"`, `"facebook.com"`, `"github.com"`,
       * `"google.com"`, `"twitter.com"`, or `"custom"`.
       */
-    var sign_in_provider: String = js.native
+    var sign_in_provider: String
     
     /**
       * The type identifier or `factorId` of the second factor, provided the
       * ID token was obtained from a multi-factor authenticated user.
       * For phone, this is `"phone"`.
       */
-    var sign_in_second_factor: js.UndefOr[String] = js.native
+    var sign_in_second_factor: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the tenant the user belongs to, if available.
       */
-    var tenant: js.UndefOr[String] = js.native
+    var tenant: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -285,19 +280,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
     /**
       * Whether email provider is enabled.
       */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * Whether password is required for email sign-in. When not required,
       * email sign-in can be performed with password or via email link sign-in.
       */
-    var passwordRequired: js.UndefOr[Boolean] = js.native
+    var passwordRequired: js.UndefOr[Boolean] = js.undefined
   }
   object Enabled {
     
@@ -321,10 +315,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Force extends StObject {
     
-    var force: Boolean = js.native
+    var force: Boolean
   }
   object Force {
     
@@ -342,10 +335,9 @@ object anon {
     }
   }
   
-  @js.native
   trait GcsTfliteUri extends StObject {
     
-    var gcsTfliteUri: String = js.native
+    var gcsTfliteUri: String
   }
   object GcsTfliteUri {
     
@@ -363,26 +355,25 @@ object anon {
     }
   }
   
-  @js.native
   trait InstallApp extends StObject {
     
     /**
       * Whether to install the Android app if the device supports it and the app is
       * not already installed.
       */
-    var installApp: js.UndefOr[Boolean] = js.native
+    var installApp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Android minimum version if available. If the installed app is an older
       * version, the user is taken to the GOogle Play Store to upgrade the app.
       */
-    var minimumVersion: js.UndefOr[String] = js.native
+    var minimumVersion: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the required Android package name of the app where the link should be
       * handled if the Android app is installed.
       */
-    var packageName: String = js.native
+    var packageName: String
   }
   object InstallApp {
     

@@ -6,16 +6,17 @@ import typings.std.Blob
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebSocket extends EventTarget {
+trait WebSocket
+  extends StObject
+     with EventTarget {
   
   def close(): Unit = js.native
-  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: String): Unit = js.native
+  def close(code: Unit, reason: String): Unit = js.native
   
   var onclose: (js.Function1[/* event */ WebSocketCloseEvent, Unit]) | Null = js.native
   

@@ -3,19 +3,19 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.encodeMod._ColorValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Count extends _ColorValueRef {
+trait Count
+  extends StObject
+     with _ColorValueRef {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var gradient: typings.vegaTypings.encodeMod.Field = js.native
+  var gradient: typings.vegaTypings.encodeMod.Field
   
-  var start: js.UndefOr[js.Array[Double]] = js.native
+  var start: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var stop: js.UndefOr[js.Array[Double]] = js.native
+  var stop: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Count {
   

@@ -5,24 +5,24 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a reference to a post in another thread.
   The referenced post can be a post with a tag, a post that is liked, a post that mentions a user, or a post that is a reply. */
-@js.native
-trait SocialPostReference extends ClientValueObject {
+trait SocialPostReference
+  extends StObject
+     with ClientValueObject {
   
   /** Provides a digest of the thread containing the referenced post */
-  def get_digest(): SocialThread = js.native
+  def get_digest(): SocialThread
   
-  def get_post(): SocialPost = js.native
+  def get_post(): SocialPost
   
   /** Specifies the unique identifier of the thread containing the referenced post. */
-  def get_threadId(): String = js.native
+  def get_threadId(): String
   
   /** Specifies the current owner of the thread as an index into the SocialThreadActors array. */
-  def get_threadOwnerIndex(): Double = js.native
+  def get_threadOwnerIndex(): Double
 }
 object SocialPostReference {
   

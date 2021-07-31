@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderableClusterOption extends StObject {
   
   /**
     * A list of availability zones for the orderable cluster.
     */
-  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
   
   /**
     * The cluster type, for example multi-node. 
     */
-  var ClusterType: js.UndefOr[String] = js.native
+  var ClusterType: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the orderable cluster.
     */
-  var ClusterVersion: js.UndefOr[String] = js.native
+  var ClusterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The node type for the orderable cluster.
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
 }
 object OrderableClusterOption {
   

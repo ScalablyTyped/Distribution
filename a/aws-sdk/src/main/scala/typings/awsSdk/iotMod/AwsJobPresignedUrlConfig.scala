@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsJobPresignedUrlConfig extends StObject {
   
   /**
     * How long (in seconds) pre-signed URLs are valid. Valid values are 60 - 3600, the default value is 1800 seconds. Pre-signed URLs are generated when a request for the job document is received.
     */
-  var expiresInSec: js.UndefOr[ExpiresInSeconds] = js.native
+  var expiresInSec: js.UndefOr[ExpiresInSeconds] = js.undefined
 }
 object AwsJobPresignedUrlConfig {
   

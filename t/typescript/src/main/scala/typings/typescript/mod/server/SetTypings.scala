@@ -5,23 +5,23 @@ import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetTypings extends ProjectResponse {
+trait SetTypings
+  extends StObject
+     with ProjectResponse {
   
-  val compilerOptions: CompilerOptions = js.native
+  val compilerOptions: CompilerOptions
   
   @JSName("kind")
-  val kind_SetTypings: ActionSet = js.native
+  val kind_SetTypings: ActionSet
   
-  val typeAcquisition: TypeAcquisition = js.native
+  val typeAcquisition: TypeAcquisition
   
   @JSName("typings")
-  val typings_ : js.Array[String] = js.native
+  val typings_ : js.Array[String]
   
-  val unresolvedImports: SortedReadonlyArray[String] = js.native
+  val unresolvedImports: SortedReadonlyArray[String]
 }
 object SetTypings {
   

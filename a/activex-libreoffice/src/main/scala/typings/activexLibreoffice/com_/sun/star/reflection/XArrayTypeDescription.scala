@@ -5,51 +5,51 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated, UNOIDL does not have an array concept.
   * @deprecated Deprecated
   */
-@js.native
-trait XArrayTypeDescription extends XTypeDescription {
+trait XArrayTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns dimensions of array (same length as {@link getNumberOfDimensions()} ).
     * @returns dimensions of array
     */
-  val Dimensions: SafeArray[Double] = js.native
+  val Dimensions: SafeArray[Double]
   
   /**
     * Returns the number of dimensions of the array.
     * @returns dimension of the array
     */
-  val NumberOfDimensions: Double = js.native
+  val NumberOfDimensions: Double
   
   /**
     * Returns the element type of the array.
     * @returns element type of the array
     */
-  val Type: XTypeDescription = js.native
+  val Type: XTypeDescription
   
   /**
     * Returns dimensions of array (same length as {@link getNumberOfDimensions()} ).
     * @returns dimensions of array
     */
-  def getDimensions(): SafeArray[Double] = js.native
+  def getDimensions(): SafeArray[Double]
   
   /**
     * Returns the number of dimensions of the array.
     * @returns dimension of the array
     */
-  def getNumberOfDimensions(): Double = js.native
+  def getNumberOfDimensions(): Double
   
   /**
     * Returns the element type of the array.
     * @returns element type of the array
     */
-  def getType(): XTypeDescription = js.native
+  def getType(): XTypeDescription
 }
 object XArrayTypeDescription {
   

@@ -2,17 +2,15 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsStreamOptions extends StObject {
   
   /**
     * Whether the Windows `HANDLE` should be closed when the stream is closed,
     * either through `close()` or future garbage-collection.
     */
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsStreamOptions {
   

@@ -2,15 +2,13 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeOptions extends StObject {
   
-  var only: js.UndefOr[String | js.Array[String]] = js.native
+  var only: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object AttributeOptions {
   
@@ -33,7 +31,7 @@ object AttributeOptions {
     def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

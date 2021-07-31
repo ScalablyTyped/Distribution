@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Measure results for each group
   */
-@js.native
-trait MeasureReportGroup extends BackboneElement {
+trait MeasureReportGroup
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'measureScore'.
     */
-  var _measureScore: js.UndefOr[Element] = js.native
+  var _measureScore: js.UndefOr[Element] = js.undefined
   
   /**
     * What group of the measure
     */
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
   /**
     * What score this group achieved
     */
-  var measureScore: js.UndefOr[decimal] = js.native
+  var measureScore: js.UndefOr[decimal] = js.undefined
   
   /**
     * The populations in the group
     */
-  var population: js.UndefOr[js.Array[MeasureReportGroupPopulation]] = js.native
+  var population: js.UndefOr[js.Array[MeasureReportGroupPopulation]] = js.undefined
   
   /**
     * Stratification results
     */
-  var stratifier: js.UndefOr[js.Array[MeasureReportGroupStratifier]] = js.native
+  var stratifier: js.UndefOr[js.Array[MeasureReportGroupStratifier]] = js.undefined
 }
 object MeasureReportGroup {
   

@@ -3,7 +3,6 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * order to run. Should only be used by VMs created by the Pipelines Service
   * and not by end users.
   */
-@js.native
 trait SchemaControllerConfig extends StObject {
   
-  var cmd: js.UndefOr[String] = js.native
+  var cmd: js.UndefOr[String] = js.undefined
   
-  var disks: js.UndefOr[StringDictionary[String]] = js.native
+  var disks: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var gcsLogPath: js.UndefOr[String] = js.native
+  var gcsLogPath: js.UndefOr[String] = js.undefined
   
-  var gcsSinks: js.UndefOr[StringDictionary[SchemaRepeatedString]] = js.native
+  var gcsSinks: js.UndefOr[StringDictionary[SchemaRepeatedString]] = js.undefined
   
-  var gcsSources: js.UndefOr[StringDictionary[SchemaRepeatedString]] = js.native
+  var gcsSources: js.UndefOr[StringDictionary[SchemaRepeatedString]] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
-  var vars: js.UndefOr[StringDictionary[String]] = js.native
+  var vars: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaControllerConfig {
   

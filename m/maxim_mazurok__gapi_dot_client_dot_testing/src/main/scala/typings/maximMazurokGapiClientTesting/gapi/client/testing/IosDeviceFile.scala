@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosDeviceFile extends StObject {
   
   /** The bundle id of the app where this file lives. iOS apps sandbox their own filesystem, so app files must specify which app installed on the device. */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /** The source file */
-  var content: js.UndefOr[FileReference] = js.native
+  var content: js.UndefOr[FileReference] = js.undefined
   
   /** Location of the file on the device, inside the app's sandboxed filesystem */
-  var devicePath: js.UndefOr[String] = js.native
+  var devicePath: js.UndefOr[String] = js.undefined
 }
 object IosDeviceFile {
   

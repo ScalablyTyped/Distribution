@@ -1,12 +1,12 @@
 package typings.raphael.mod
 
+import typings.raphael.mod.^
 import typings.raphael.raphaelStrings.SVG
 import typings.raphael.raphaelStrings.VML
 import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -17,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
   * @return A new raphael paper that can be used for drawing shapes to the canvas.
   */
-class default () extends RaphaelPaper[SVG | VML] {
+class default ()
+  extends StObject
+     with RaphaelPaper[SVG | VML] {
   def this(onReadyCallback: js.ThisFunction0[/* this */ Window, Unit]) = this()
   def this(container: String, width: Double, height: Double) = this()
   /**
@@ -62,4 +64,9 @@ class default () extends RaphaelPaper[SVG | VML] {
     height: Double,
     callback: js.ThisFunction0[/* this */ RaphaelPaper[SVG | VML], Unit]
   ) = this()
+}
+object default {
+  
+  @scala.inline
+  def apply: RaphaelStatic[SVG | VML] = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[RaphaelStatic[SVG | VML]]
 }

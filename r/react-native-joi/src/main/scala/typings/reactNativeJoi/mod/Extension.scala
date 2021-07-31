@@ -2,13 +2,11 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extension extends StObject {
   
-  var base: js.UndefOr[Schema] = js.native
+  var base: js.UndefOr[Schema] = js.undefined
   
   var coerce: js.UndefOr[
     js.ThisFunction3[
@@ -16,17 +14,17 @@ trait Extension extends StObject {
       /* value */ js.Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var describe: js.UndefOr[
     js.ThisFunction1[/* this */ Schema, /* description */ Description_, Description_]
-  ] = js.native
+  ] = js.undefined
   
-  var language: js.UndefOr[LanguageOptions] = js.native
+  var language: js.UndefOr[LanguageOptions] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var pre: js.UndefOr[
     js.ThisFunction3[
@@ -34,11 +32,11 @@ trait Extension extends StObject {
       /* value */ js.Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var rules: js.UndefOr[js.Array[Rules[_]]] = js.native
+  var rules: js.UndefOr[js.Array[Rules[js.Any]]] = js.undefined
 }
 object Extension {
   
@@ -64,7 +62,7 @@ object Extension {
           /* value */ js.Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     
@@ -96,7 +94,7 @@ object Extension {
           /* value */ js.Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
@@ -104,7 +102,7 @@ object Extension {
     def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
     @scala.inline
-    def setRules(value: js.Array[Rules[_]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    def setRules(value: js.Array[Rules[js.Any]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)

@@ -6,85 +6,85 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePlacementgroupsList extends StandardParameters {
+trait ParamsResourcePlacementgroupsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only placement groups that belong to these advertisers.
     */
-  var advertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only archived placements. Don't set this field to select both
     * archived and non-archived placements.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only placement groups that belong to these campaigns.
     */
-  var campaignIds: js.UndefOr[js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only placement groups that are associated with these content
     * categories.
     */
-  var contentCategoryIds: js.UndefOr[js.Array[String]] = js.native
+  var contentCategoryIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only placement groups that are associated with these directory
     * sites.
     */
-  var directorySiteIds: js.UndefOr[js.Array[String]] = js.native
+  var directorySiteIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only placement groups with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only placements or placement groups whose end date is on or before
     * the specified maxEndDate. The date should be formatted as "yyyy-MM-dd".
     */
-  var maxEndDate: js.UndefOr[String] = js.native
+  var maxEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only placements or placement groups whose start date is on or
     * before the specified maxStartDate. The date should be formatted as
     * "yyyy-MM-dd".
     */
-  var maxStartDate: js.UndefOr[String] = js.native
+  var maxStartDate: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placements or placement groups whose end date is on or after
     * the specified minEndDate. The date should be formatted as "yyyy-MM-dd".
     */
-  var minEndDate: js.UndefOr[String] = js.native
+  var minEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placements or placement groups whose start date is on or
     * after the specified minStartDate. The date should be formatted as
     * "yyyy-MM-dd".
     */
-  var minStartDate: js.UndefOr[String] = js.native
+  var minStartDate: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placement groups belonging with this group type. A package is
@@ -94,23 +94,23 @@ trait ParamsResourcePlacementgroupsList extends StandardParameters {
     * served at the same time. A roadblock requires one of its assigned
     * placements to be marked as primary for reporting.
     */
-  var placementGroupType: js.UndefOr[String] = js.native
+  var placementGroupType: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placement groups that are associated with these placement
     * strategies.
     */
-  var placementStrategyIds: js.UndefOr[js.Array[String]] = js.native
+  var placementStrategyIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only placement groups with these pricing types.
     */
-  var pricingTypes: js.UndefOr[js.Array[String]] = js.native
+  var pricingTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for placement groups by name or ID. Wildcards (*) are
@@ -121,22 +121,22 @@ trait ParamsResourcePlacementgroupsList extends StandardParameters {
     * search string of "placementgroup" will match placement groups with name
     * "my placementgroup", "placementgroup 2015", or simply "placementgroup".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placement groups that are associated with these sites.
     */
-  var siteIds: js.UndefOr[js.Array[String]] = js.native
+  var siteIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePlacementgroupsList {
   

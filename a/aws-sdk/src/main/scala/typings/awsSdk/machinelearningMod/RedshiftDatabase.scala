@@ -2,15 +2,13 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftDatabase extends StObject {
   
-  var ClusterIdentifier: RedshiftClusterIdentifier = js.native
+  var ClusterIdentifier: RedshiftClusterIdentifier
   
-  var DatabaseName: RedshiftDatabaseName = js.native
+  var DatabaseName: RedshiftDatabaseName
 }
 object RedshiftDatabase {
   

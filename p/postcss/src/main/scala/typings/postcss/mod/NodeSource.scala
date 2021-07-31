@@ -3,23 +3,21 @@ package typings.postcss.mod
 import typings.postcss.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSource extends StObject {
   
   /**
     * The ending position of the node's source.
     */
-  var end: js.UndefOr[Column] = js.native
+  var end: js.UndefOr[Column] = js.undefined
   
-  var input: Input = js.native
+  var input: Input
   
   /**
     * The starting position of the node's source.
     */
-  var start: js.UndefOr[Column] = js.native
+  var start: js.UndefOr[Column] = js.undefined
 }
 object NodeSource {
   

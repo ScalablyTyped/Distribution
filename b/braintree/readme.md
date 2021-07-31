@@ -10,9 +10,9 @@ A library for server-side integrating with Braintree.
 | ------------------ | :-------------: |
 | Full name          | braintree |
 | Keywords           | braintree, payments |
-| # releases         | 13 |
-| # dependents       | 31 |
-| # downloads        | 1671973 |
+| # releases         | 12 |
+| # dependents       | 33 |
+| # downloads        | 1962914 |
 | # stars            | 20 |
 
 ## Links

@@ -3,81 +3,81 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
+trait MediaHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean | String] = js.native
+  var autoplay: js.UndefOr[Boolean | String] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mediaGroup: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.undefined
   
-  var mediagroup: js.UndefOr[String] = js.native
+  var mediagroup: js.UndefOr[String] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var onAbort: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onAbort: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onCanPlay: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onCanPlay: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onCanPlayThrough: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onDurationChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onDurationChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onEmptied: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onEmptied: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onEnded: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onEnded: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onInterruptBegin: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInterruptBegin: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onInterruptEnd: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInterruptEnd: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onLoadStart: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoadStart: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onLoadedData: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoadedData: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onLoadedMetaData: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoadedMetaData: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onMozAudioAvailable: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onMozAudioAvailable: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onPause: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onPause: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onPlay: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onPlay: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onPlaying: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onPlaying: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onProgress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onRateChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onRateChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onSeeked: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSeeked: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onSeeking: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSeeking: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onStalled: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onStalled: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onSuspend: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSuspend: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onTimeUpdate: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onVolumeChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onWaiting: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onWaiting: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
 }
 object MediaHTMLAttributes {
   
@@ -88,7 +88,7 @@ object MediaHTMLAttributes {
   }
   
   @scala.inline
-  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[_], T] (val x: Self with MediaHTMLAttributes[T]) extends AnyVal {
+  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[?], T] (val x: Self & MediaHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])

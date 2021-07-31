@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object ContactCardTabKind extends StObject {
   
   /** The default tab. */
   @js.native
-  sealed trait default extends ContactCardTabKind
+  sealed trait default
+    extends StObject
+       with ContactCardTabKind
   
   /** The email tab. */
   @js.native
-  sealed trait email extends ContactCardTabKind
+  sealed trait email
+    extends StObject
+       with ContactCardTabKind
   
   /** The messaging tab. */
   @js.native
-  sealed trait messaging extends ContactCardTabKind
+  sealed trait messaging
+    extends StObject
+       with ContactCardTabKind
   
   /** The phone tab. */
   @js.native
-  sealed trait phone extends ContactCardTabKind
+  sealed trait phone
+    extends StObject
+       with ContactCardTabKind
   
   /** The video tab. */
   @js.native
-  sealed trait video extends ContactCardTabKind
+  sealed trait video
+    extends StObject
+       with ContactCardTabKind
 }

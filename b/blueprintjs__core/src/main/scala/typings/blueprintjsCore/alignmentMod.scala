@@ -5,7 +5,6 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.left
 import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignmentMod {

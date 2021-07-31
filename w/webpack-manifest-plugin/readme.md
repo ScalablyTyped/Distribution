@@ -4,21 +4,21 @@
 Typings are for version 2.1
 
 ## Library description:
-webpack plugin for generating asset manifests
+A Webpack Plugin for generating Asset Manifests
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | webpack-manifest-plugin |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3640 |
-| # downloads        | 112129129 |
+| # releases         | 7 |
+| # dependents       | 3758 |
+| # downloads        | 124344982 |
 | # stars            | 23 |
 
 ## Links
-- [Homepage](https://github.com/danethurber/webpack-manifest-plugin)
-- [Bugs](https://github.com/danethurber/webpack-manifest-plugin/issues)
-- [Repository](https://github.com/danethurber/webpack-manifest-plugin)
+- [Homepage](https://github.com/shellscape/webpack-manifest-plugin)
+- [Bugs](https://github.com/shellscape/webpack-manifest-plugin/issues)
+- [Repository](https://github.com/shellscape/webpack-manifest-plugin)
 - [Npm](https://www.npmjs.com/package/webpack-manifest-plugin)
     
 

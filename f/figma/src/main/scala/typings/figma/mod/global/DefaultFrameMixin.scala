@@ -7,12 +7,12 @@ import typings.figma.figmaStrings.NONE
 import typings.figma.figmaStrings.VERTICAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DefaultFrameMixin
-  extends BaseNodeMixin
+  extends StObject
+     with BaseNodeMixin
      with SceneNodeMixin
      with ReactionMixin
      with ChildrenMixin

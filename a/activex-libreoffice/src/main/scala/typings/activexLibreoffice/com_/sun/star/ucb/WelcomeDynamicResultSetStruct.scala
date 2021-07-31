@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ListAction
   * @see ListActionType
   */
-@js.native
 trait WelcomeDynamicResultSetStruct extends StObject {
   
   /** The static result set containing the new version of result set data. */
-  var New: XResultSet = js.native
+  var New: XResultSet
   
   /** The static result set containing the previous version of result set data. */
-  var Old: XResultSet = js.native
+  var Old: XResultSet
 }
 object WelcomeDynamicResultSetStruct {
   

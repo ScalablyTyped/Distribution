@@ -2,52 +2,50 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the iOS details resource.
   */
-@js.native
 trait SchemaInstanceIosDetails extends StObject {
   
   /**
     * Bundle identifier.
     */
-  var bundleIdentifier: js.UndefOr[String] = js.native
+  var bundleIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * iTunes App ID.
     */
-  var itunesAppId: js.UndefOr[String] = js.native
+  var itunesAppId: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#instanceIosDetails.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that this instance is the default for new installations on iPad
     * devices.
     */
-  var preferredForIpad: js.UndefOr[Boolean] = js.native
+  var preferredForIpad: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that this instance is the default for new installations on
     * iPhone devices.
     */
-  var preferredForIphone: js.UndefOr[Boolean] = js.native
+  var preferredForIphone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to indicate if this instance supports iPad.
     */
-  var supportIpad: js.UndefOr[Boolean] = js.native
+  var supportIpad: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to indicate if this instance supports iPhone.
     */
-  var supportIphone: js.UndefOr[Boolean] = js.native
+  var supportIphone: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInstanceIosDetails {
   

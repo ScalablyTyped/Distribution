@@ -10,7 +10,6 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -23,14 +22,13 @@ object typesMod {
   
   type TensorArrayMap = NumberDictionary[TensorArray]
   
-  @js.native
   trait TensorInfo extends StObject {
     
-    var dtype: DataType = js.native
+    var dtype: DataType
     
-    var name: String = js.native
+    var name: String
     
-    var shape: js.UndefOr[js.Array[Double]] = js.native
+    var shape: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object TensorInfo {
     

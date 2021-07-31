@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasChangesChangedEventArgs extends StObject {
   
-  var entityManager: EntityManager = js.native
+  var entityManager: EntityManager
   
-  var hasChanges: Boolean = js.native
+  var hasChanges: Boolean
 }
 object HasChangesChangedEventArgs {
   

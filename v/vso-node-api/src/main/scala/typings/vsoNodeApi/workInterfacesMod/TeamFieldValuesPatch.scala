@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamFieldValuesPatch extends StObject {
   
-  var defaultValue: String = js.native
+  var defaultValue: String
   
-  var values: js.Array[TeamFieldValue] = js.native
+  var values: js.Array[TeamFieldValue]
 }
 object TeamFieldValuesPatch {
   

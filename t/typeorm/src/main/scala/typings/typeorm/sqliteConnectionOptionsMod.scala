@@ -5,14 +5,13 @@ import typings.typeorm.connectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.sqlite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteConnectionOptionsMod {
   
-  @js.native
   trait SqliteConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
@@ -26,37 +25,37 @@ object sqliteConnectionOptionsMod {
       * Enabling WAL can improve your app performance and face less SQLITE_BUSY issues.
       * Time in milliseconds.
       */
-    val busyErrorRetry: js.UndefOr[Double] = js.native
+    val busyErrorRetry: js.UndefOr[Double] = js.undefined
     
     /**
       * Storage type or path to the storage.
       */
-    val database: String = js.native
+    val database: String
     
     /**
       * Enables WAL mode. By default its disabled.
       *
       * @see https://www.sqlite.org/wal.html
       */
-    val enableWAL: js.UndefOr[Boolean] = js.native
+    val enableWAL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Encryption key for for SQLCipher.
       */
-    val key: js.UndefOr[String] = js.native
+    val key: js.UndefOr[String] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_SqliteConnectionOptions: sqlite = js.native
+    val type_SqliteConnectionOptions: sqlite
   }
   object SqliteConnectionOptions {
     
     @scala.inline
-    def apply(database: String, `type`: sqlite): SqliteConnectionOptions = {
+    def apply(database: String): SqliteConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sqlite")
       __obj.asInstanceOf[SqliteConnectionOptions]
     }
     

@@ -24,27 +24,34 @@ import typings.std.Error
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("helmet/dist", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
     Unit
-  ] = js.native
-  @JSImport("helmet/dist", JSImport.Namespace)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+    Unit
+  ]]
+  @scala.inline
   def apply(options: ReadonlyHelmetOptions): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+    Unit
+  ]]
   
   @JSImport("helmet/dist", JSImport.Namespace)
   @js.native
@@ -52,29 +59,37 @@ object mod {
   
   object contentSecurityPolicy {
     
-    @JSImport("helmet/dist", "contentSecurityPolicy")
-    @js.native
+    @scala.inline
     def apply(): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
         Unit
-      ] = js.native
-    @JSImport("helmet/dist", "contentSecurityPolicy")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse, 
+        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        Unit
+      ]]
+    @scala.inline
     def apply(options: ReadonlyContentSecurityPo): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
         Unit
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse, 
+        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        Unit
+      ]]
+    
     @JSImport("helmet/dist", "contentSecurityPolicy")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("helmet/dist", "contentSecurityPolicy.getDefaultDirectives")
-    @js.native
-    def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = js.native
+    @scala.inline
+    def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDirectives")().asInstanceOf[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]
     @JSImport("helmet/dist", "contentSecurityPolicy.getDefaultDirectives")
     @js.native
     def getDefaultDirectives_FcontentSecurityPolicy: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]] = js.native
@@ -333,30 +348,29 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xssFilter")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait HelmetOptions extends StObject {
     
-    var contentSecurityPolicy: js.UndefOr[MiddlewareOption[ContentSecurityPolicyOptions]] = js.native
+    var contentSecurityPolicy: js.UndefOr[MiddlewareOption[ContentSecurityPolicyOptions]] = js.undefined
     
-    var dnsPrefetchControl: js.UndefOr[MiddlewareOption[XDnsPrefetchControlOptions]] = js.native
+    var dnsPrefetchControl: js.UndefOr[MiddlewareOption[XDnsPrefetchControlOptions]] = js.undefined
     
-    var expectCt: js.UndefOr[MiddlewareOption[ExpectCtOptions]] = js.native
+    var expectCt: js.UndefOr[MiddlewareOption[ExpectCtOptions]] = js.undefined
     
-    var frameguard: js.UndefOr[MiddlewareOption[XFrameOptionsOptions]] = js.native
+    var frameguard: js.UndefOr[MiddlewareOption[XFrameOptionsOptions]] = js.undefined
     
-    var hidePoweredBy: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    var hidePoweredBy: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    var hsts: js.UndefOr[MiddlewareOption[StrictTransportSecurityOptions]] = js.native
+    var hsts: js.UndefOr[MiddlewareOption[StrictTransportSecurityOptions]] = js.undefined
     
-    var ieNoOpen: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    var ieNoOpen: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    var noSniff: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    var noSniff: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    var permittedCrossDomainPolicies: js.UndefOr[MiddlewareOption[XPermittedCrossDomainPoliciesOptions]] = js.native
+    var permittedCrossDomainPolicies: js.UndefOr[MiddlewareOption[XPermittedCrossDomainPoliciesOptions]] = js.undefined
     
-    var referrerPolicy: js.UndefOr[MiddlewareOption[ReferrerPolicyOptions]] = js.native
+    var referrerPolicy: js.UndefOr[MiddlewareOption[ReferrerPolicyOptions]] = js.undefined
     
-    var xssFilter: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    var xssFilter: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
   }
   object HelmetOptions {
     

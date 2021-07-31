@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNumberOfDomainControllersRequest extends StObject {
   
   /**
     * The number of domain controllers desired in the directory.
     */
-  var DesiredNumber: DesiredNumberOfDomainControllers = js.native
+  var DesiredNumber: DesiredNumberOfDomainControllers
   
   /**
     * Identifier of the directory to which the domain controllers will be added or removed.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
 }
 object UpdateNumberOfDomainControllersRequest {
   

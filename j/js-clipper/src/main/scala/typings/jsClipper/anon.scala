@@ -3,15 +3,13 @@ package typings.jsClipper
 import typings.jsClipper.ClipperLib.Polygons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Value extends StObject {
     
-    var value: Polygons = js.native
+    var value: Polygons
   }
   object Value {
     

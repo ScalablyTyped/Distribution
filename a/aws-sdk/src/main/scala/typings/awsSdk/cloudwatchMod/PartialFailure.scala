@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialFailure extends StObject {
   
   /**
     * The type of error.
     */
-  var ExceptionType: js.UndefOr[typings.awsSdk.cloudwatchMod.ExceptionType] = js.native
+  var ExceptionType: js.UndefOr[typings.awsSdk.cloudwatchMod.ExceptionType] = js.undefined
   
   /**
     * The code of the error.
     */
-  var FailureCode: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureCode] = js.native
+  var FailureCode: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureCode] = js.undefined
   
   /**
     * A description of the error.
     */
-  var FailureDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureDescription] = js.native
+  var FailureDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureDescription] = js.undefined
   
   /**
     * The specified rule that could not be deleted.
     */
-  var FailureResource: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureResource] = js.native
+  var FailureResource: js.UndefOr[typings.awsSdk.cloudwatchMod.FailureResource] = js.undefined
 }
 object PartialFailure {
   

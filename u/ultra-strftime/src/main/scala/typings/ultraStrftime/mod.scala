@@ -3,123 +3,96 @@ package typings.ultraStrftime
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale, options: Options): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: Date): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: Date, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: Date, locale: Locale): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, d: Date, locale: Locale, options: Options): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, locale: Locale): String = js.native
-  @JSImport("ultra-strftime", JSImport.Namespace)
-  @js.native
-  def apply(fmt: String, locale: Locale, options: Options): String = js.native
+  @scala.inline
+  def apply(fmt: String): String = ^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ultra-strftime", "localizedStrftime")
+  @JSImport("ultra-strftime", JSImport.Namespace)
   @js.native
-  def localizedStrftime(locale: Locale): StrftimeFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: js.UndefOr[scala.Nothing], locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale, options: Options): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: Date): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: Date, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: Date, locale: Locale): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, d: Date, locale: Locale, options: Options): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, locale: Locale): String = js.native
-  @JSImport("ultra-strftime", "strftime")
-  @js.native
-  def strftime(fmt: String, locale: Locale, options: Options): String = js.native
+  @scala.inline
+  def localizedStrftime(locale: Locale): StrftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("localizedStrftime")(locale.asInstanceOf[js.Any]).asInstanceOf[StrftimeFunction]
   
-  @JSImport("ultra-strftime", "strftimeTZ")
-  @js.native
-  def strftimeTZ(fmt: String, d: Date, locale: Locale, timezone: Double): String = js.native
-  @JSImport("ultra-strftime", "strftimeTZ")
-  @js.native
-  def strftimeTZ(fmt: String, d: Date, timezone: Double): String = js.native
+  @scala.inline
+  def strftime(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftime(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ultra-strftime", "strftimeUTC")
-  @js.native
-  def strftimeUTC(fmt: String): String = js.native
-  @JSImport("ultra-strftime", "strftimeUTC")
-  @js.native
-  def strftimeUTC(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale): String = js.native
-  @JSImport("ultra-strftime", "strftimeUTC")
-  @js.native
-  def strftimeUTC(fmt: String, d: Date): String = js.native
-  @JSImport("ultra-strftime", "strftimeUTC")
-  @js.native
-  def strftimeUTC(fmt: String, d: Date, locale: Locale): String = js.native
+  @scala.inline
+  def strftimeTZ(fmt: String, d: Date, locale: Locale, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftimeTZ(fmt: String, d: Date, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def strftimeUTC(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def strftimeUTC(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftimeUTC(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def strftimeUTC(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Locale extends StObject {
     
-    var AM: String = js.native
+    var AM: String
     
-    var PM: String = js.native
+    var PM: String
     
-    var am: String = js.native
+    var am: String
     
-    var days: js.Array[String] = js.native
+    var days: js.Array[String]
     
-    var formats: LocaleFormats = js.native
+    var formats: LocaleFormats
     
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
-    var pm: String = js.native
+    var pm: String
     
-    var shortDays: js.Array[String] = js.native
+    var shortDays: js.Array[String]
     
-    var shortMonths: js.Array[String] = js.native
+    var shortMonths: js.Array[String]
   }
   object Locale {
     
@@ -177,35 +150,34 @@ object mod {
     }
   }
   
-  @js.native
   trait LocaleFormats extends StObject {
     
     /** equivalent to %m/%d/%y in en_US */
-    var D: String = js.native
+    var D: String
     
     /** equivalent to %Y-%m-%d in en_US */
-    var F: String = js.native
+    var F: String
     
     /** equivalent to %H:%M in en_US */
-    var R: String = js.native
+    var R: String
     
     /** equivalent to %H:%M:%S in en_US */
-    var T: String = js.native
+    var T: String
     
     /** equivalent to %D in en_US */
-    var X: String = js.native
+    var X: String
     
     /** equivalent to %a %b %d %X %Y %Z in en_US */
-    var c: String = js.native
+    var c: String
     
     /** equivalent to %I:%M:%S %p in en_US */
-    var r: String = js.native
+    var r: String
     
     /** equivalent to %e-%b-%Y in en_US */
-    var v: String = js.native
+    var v: String
     
     /** equivalent to %T in en_US */
-    var x: String = js.native
+    var x: String
   }
   object LocaleFormats {
     
@@ -241,12 +213,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var timezone: js.UndefOr[String | Double] = js.native
+    var timezone: js.UndefOr[String | Double] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

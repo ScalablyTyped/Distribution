@@ -18,28 +18,26 @@ import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryPointTypesMod {
   
   type EntryPoint[TEntryPointComponent, TEntryPointParams /* <: js.Object */] = InternalEntryPointRepresentation[TEntryPointParams, js.Any, js.Any, js.Any, js.Any]
   
-  type EntryPointComponent[TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[_, _]]] */, TRuntimeProps /* <: js.Object */, TExtraProps /* <: js.Object | Null */] = ComponentType[
+  type EntryPointComponent[TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TRuntimeProps /* <: js.Object */, TExtraProps /* <: js.Object | Null */] = ComponentType[
     EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
   ]
   
   /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedEntryPoints<TPreloadedEntryPoints>,   extraProps :TExtraProps,   props :TRuntimeProps,   queries :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedQueries<TPreloadedQueries>}> */
-  @js.native
   trait EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] extends StObject {
     
-    val entryPoints: PreloadedEntryPoints[TPreloadedEntryPoints] = js.native
+    val entryPoints: PreloadedEntryPoints[TPreloadedEntryPoints]
     
-    val extraProps: TExtraProps = js.native
+    val extraProps: TExtraProps
     
-    val props: TRuntimeProps = js.native
+    val props: TRuntimeProps
     
-    val queries: PreloadedQueries[TPreloadedQueries] = js.native
+    val queries: PreloadedQueries[TPreloadedQueries]
   }
   object EntryPointProps {
     
@@ -55,7 +53,7 @@ object entryPointTypesMod {
     }
     
     @scala.inline
-    implicit class EntryPointPropsMutableBuilder[Self <: EntryPointProps[_, _, _, _], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] (val x: Self with (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
+    implicit class EntryPointPropsMutableBuilder[Self <: EntryPointProps[?, ?, ?, ?], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] (val x: Self & (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
       
       @scala.inline
       def setEntryPoints(value: PreloadedEntryPoints[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
@@ -71,7 +69,7 @@ object entryPointTypesMod {
     }
   }
   
-  type EnvironmentProviderOptions[T /* <: Record[String, _] */] = T
+  type EnvironmentProviderOptions[T /* <: Record[String, js.Any] */] = T
   
   @js.native
   trait IEnvironmentProvider[TOptions] extends StObject {
@@ -103,7 +101,6 @@ object entryPointTypesMod {
     * and they will be passed to the EntryPointComponent as `extraProps`
     */
   /* Inlined parent std.Readonly<{  root :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.JSResourceReference<react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EntryPointComponent<TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps>>, getPreloadProps (entryPointParams : TEntryPointParams): react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadProps<TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps>}> */
-  @js.native
   trait InternalEntryPointRepresentation[/**
     * object that contains all necessary information to execute the preloaders (routeParams, query variables)
     */
@@ -126,11 +123,11 @@ object entryPointTypesMod {
     val getPreloadProps: js.Function1[
         /* entryPointParams */ TEntryPointParams, 
         PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
-      ] = js.native
+      ]
     
     val root: JSResourceReference[
         EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
-      ] = js.native
+      ]
   }
   object InternalEntryPointRepresentation {
     
@@ -163,7 +160,7 @@ object entryPointTypesMod {
     }
     
     @scala.inline
-    implicit class InternalEntryPointRepresentationMutableBuilder[Self <: InternalEntryPointRepresentation[_, _, _, _, _], /**
+    implicit class InternalEntryPointRepresentationMutableBuilder[Self <: InternalEntryPointRepresentation[?, ?, ?, ?, ?], /**
       * object that contains all necessary information to execute the preloaders (routeParams, query variables)
       */
     TEntryPointParams /* <: js.Object */, /**
@@ -180,7 +177,7 @@ object entryPointTypesMod {
       * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
       * as `extraProps`
       */
-    TExtraProps] (val x: Self with (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
+    TExtraProps] (val x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
       
       @scala.inline
       def setGetPreloadProps(
@@ -196,14 +193,13 @@ object entryPointTypesMod {
     }
   }
   
-  @js.native
   trait JSResourceReference[TModule] extends StObject {
     
-    def getModuleId(): String = js.native
+    def getModuleId(): String
     
-    def getModuleIfRequired(): TModule | Null = js.native
+    def getModuleIfRequired(): TModule | Null
     
-    def load(): js.Promise[TModule] = js.native
+    def load(): js.Promise[TModule]
   }
   object JSResourceReference {
     
@@ -218,7 +214,7 @@ object entryPointTypesMod {
     }
     
     @scala.inline
-    implicit class JSResourceReferenceMutableBuilder[Self <: JSResourceReference[_], TModule] (val x: Self with JSResourceReference[TModule]) extends AnyVal {
+    implicit class JSResourceReferenceMutableBuilder[Self <: JSResourceReference[?], TModule] (val x: Self & JSResourceReference[TModule]) extends AnyVal {
       
       @scala.inline
       def setGetModuleId(value: () => String): Self = StObject.set(x, "getModuleId", js.Any.fromFunction0(value))
@@ -232,14 +228,13 @@ object entryPointTypesMod {
   }
   
   /* Inlined std.Readonly<{  fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   onQueryAstLoadTimeout :(): void | null | undefined}> */
-  @js.native
   trait LoadQueryOptions extends StObject {
     
-    val fetchPolicy: js.UndefOr[PreloadFetchPolicy | Null] = js.native
+    val fetchPolicy: js.UndefOr[PreloadFetchPolicy | Null] = js.undefined
     
-    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.native
+    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
     
-    val onQueryAstLoadTimeout: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    val onQueryAstLoadTimeout: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   }
   object LoadQueryOptions {
     
@@ -300,14 +295,13 @@ object entryPointTypesMod {
   }
   
   /* Inlined std.Readonly<{  fetchKey :string | number | undefined,   fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined}> */
-  @js.native
   trait PreloadOptions extends StObject {
     
-    val fetchKey: js.UndefOr[String | Double] = js.native
+    val fetchKey: js.UndefOr[String | Double] = js.undefined
     
-    val fetchPolicy: js.UndefOr[PreloadFetchPolicy | Null] = js.native
+    val fetchPolicy: js.UndefOr[PreloadFetchPolicy | Null] = js.undefined
     
-    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.native
+    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
   }
   object PreloadOptions {
     
@@ -347,25 +341,24 @@ object entryPointTypesMod {
   }
   
   /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinNestedEntryPointParamsObject<TPreloadedEntryPoints> | undefined,   extraProps :TExtraProps | undefined,   queries :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinQueryParamsObject<TPreloadedQueries> | undefined}> */
-  @js.native
-  trait PreloadProps[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[_, _]]] */, TExtraProps /* <: js.Object | Null */] extends StObject {
+  trait PreloadProps[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */] extends StObject {
     
-    val entryPoints: js.UndefOr[ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]] = js.native
+    val entryPoints: js.UndefOr[ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]] = js.undefined
     
-    val extraProps: js.UndefOr[TExtraProps] = js.native
+    val extraProps: js.UndefOr[TExtraProps] = js.undefined
     
-    val queries: js.UndefOr[ThinQueryParamsObject[TPreloadedQueries]] = js.native
+    val queries: js.UndefOr[ThinQueryParamsObject[TPreloadedQueries]] = js.undefined
   }
   object PreloadProps {
     
     @scala.inline
-    def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[_, _]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
+    def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]]
     }
     
     @scala.inline
-    implicit class PreloadPropsMutableBuilder[Self <: PreloadProps[_, _, _, _], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[_, _]]] */, TExtraProps /* <: js.Object | Null */] (val x: Self with (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) extends AnyVal {
+    implicit class PreloadPropsMutableBuilder[Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */] (val x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) extends AnyVal {
       
       @scala.inline
       def setEntryPoints(value: ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
@@ -388,14 +381,13 @@ object entryPointTypesMod {
   }
   
   /* Inlined std.Readonly<{  cacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   source :'cache' | 'network',   fetchTime :number | null | undefined}> */
-  @js.native
   trait PreloadQueryStatus extends StObject {
     
-    val cacheConfig: js.UndefOr[CacheConfig | Null] = js.native
+    val cacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
     
-    val fetchTime: js.UndefOr[Double | Null] = js.native
+    val fetchTime: js.UndefOr[Double | Null] = js.undefined
     
-    val source: cache | network = js.native
+    val source: cache | network
   }
   object PreloadQueryStatus {
     
@@ -431,23 +423,22 @@ object entryPointTypesMod {
     }
   }
   
-  @js.native
   trait PreloadableConcreteRequest[TQuery /* <: OperationType */] extends StObject {
     
-    var kind: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest = js.native
+    var kind: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest
     
-    var params: RequestParameters = js.native
+    var params: RequestParameters
   }
   object PreloadableConcreteRequest {
     
     @scala.inline
-    def apply[TQuery /* <: OperationType */](kind: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest, params: RequestParameters): PreloadableConcreteRequest[TQuery] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    def apply[TQuery /* <: OperationType */](params: RequestParameters): PreloadableConcreteRequest[TQuery] = {
+      val __obj = js.Dynamic.literal(kind = "PreloadableConcreteRequest", params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadableConcreteRequest[TQuery]]
     }
     
     @scala.inline
-    implicit class PreloadableConcreteRequestMutableBuilder[Self <: PreloadableConcreteRequest[_], TQuery /* <: OperationType */] (val x: Self with PreloadableConcreteRequest[TQuery]) extends AnyVal {
+    implicit class PreloadableConcreteRequestMutableBuilder[Self <: PreloadableConcreteRequest[?], TQuery /* <: OperationType */] (val x: Self & PreloadableConcreteRequest[TQuery]) extends AnyVal {
       
       @scala.inline
       def setKind(value: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -461,39 +452,38 @@ object entryPointTypesMod {
   
   type PreloadedEntryPoints[TPreloadedEntryPoints] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedEntryPoint<react-relay.react-relay/lib/relay-experimental/helpers.GetEntryPointComponentFromEntryPoint<TPreloadedEntryPoints[T]>>}
-    */ typings.reactRelay.reactRelayStrings.PreloadedEntryPoints with TopLevel[TPreloadedEntryPoints]
+    */ typings.reactRelay.reactRelayStrings.PreloadedEntryPoints & TopLevel[TPreloadedEntryPoints]
   
   type PreloadedQueries[TPreloadedQueries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedQuery<TPreloadedQueries[T], react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
-    */ typings.reactRelay.reactRelayStrings.PreloadedQueries with TopLevel[TPreloadedQueries]
+    */ typings.reactRelay.reactRelayStrings.PreloadedQueries & TopLevel[TPreloadedQueries]
   
   /* Inlined parent std.Readonly<{  kind :'PreloadedQuery',   environment :relay-runtime.relay-runtime.IEnvironment,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined,   fetchKey :string | number,   fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   id :string | null | undefined,   name :string,   source :relay-runtime.relay-runtime.Observable<relay-runtime.relay-runtime.GraphQLResponse> | null | undefined,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   dispose :relay-runtime.relay-runtime.DisposeFn,   isDisposed :boolean}> */
-  @js.native
   trait PreloadedQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions] extends StObject {
     
-    val dispose: DisposeFn = js.native
+    val dispose: DisposeFn
     
-    val environment: Environment = js.native
+    val environment: Environment
     
-    val environmentProviderOptions: js.UndefOr[TEnvironmentProviderOptions | Null] = js.native
+    val environmentProviderOptions: js.UndefOr[TEnvironmentProviderOptions | Null] = js.undefined
     
-    val fetchKey: String | Double = js.native
+    val fetchKey: String | Double
     
-    val fetchPolicy: PreloadFetchPolicy = js.native
+    val fetchPolicy: PreloadFetchPolicy
     
-    val id: js.UndefOr[String | Null] = js.native
+    val id: js.UndefOr[String | Null] = js.undefined
     
-    val isDisposed: Boolean = js.native
+    val isDisposed: Boolean
     
-    val kind: typings.reactRelay.reactRelayStrings.PreloadedQuery = js.native
+    val kind: typings.reactRelay.reactRelayStrings.PreloadedQuery
     
-    val name: String = js.native
+    val name: String
     
-    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.native
+    val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
     
-    val source: js.UndefOr[Observable[GraphQLResponse] | Null] = js.native
+    val source: js.UndefOr[Observable[GraphQLResponse] | Null] = js.undefined
     
-    val variables: VariablesOf[TQuery] = js.native
+    val variables: VariablesOf[TQuery]
   }
   object PreloadedQuery {
     
@@ -504,16 +494,15 @@ object entryPointTypesMod {
       fetchKey: String | Double,
       fetchPolicy: PreloadFetchPolicy,
       isDisposed: Boolean,
-      kind: typings.reactRelay.reactRelayStrings.PreloadedQuery,
       name: String,
       variables: VariablesOf[TQuery]
     ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), environment = environment.asInstanceOf[js.Any], fetchKey = fetchKey.asInstanceOf[js.Any], fetchPolicy = fetchPolicy.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), environment = environment.asInstanceOf[js.Any], fetchKey = fetchKey.asInstanceOf[js.Any], fetchPolicy = fetchPolicy.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kind = "PreloadedQuery", name = name.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
     }
     
     @scala.inline
-    implicit class PreloadedQueryMutableBuilder[Self <: PreloadedQuery[_, _], TQuery /* <: OperationType */, TEnvironmentProviderOptions] (val x: Self with (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
+    implicit class PreloadedQueryMutableBuilder[Self <: PreloadedQuery[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions] (val x: Self & (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
       
       @scala.inline
       def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
@@ -578,12 +567,11 @@ object entryPointTypesMod {
   }
   
   /* Inlined parent std.Readonly<{  entryPoint :TEntryPoint,   entryPointParams :react-relay.react-relay/lib/relay-experimental/helpers.GetEntryPointParamsFromEntryPoint<TEntryPoint>}> */
-  @js.native
   trait ThinNestedEntryPointParams[TEntryPoint] extends StObject {
     
-    val entryPoint: TEntryPoint = js.native
+    val entryPoint: TEntryPoint
     
-    val entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint] = js.native
+    val entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]
   }
   object ThinNestedEntryPointParams {
     
@@ -594,7 +582,7 @@ object entryPointTypesMod {
     }
     
     @scala.inline
-    implicit class ThinNestedEntryPointParamsMutableBuilder[Self <: ThinNestedEntryPointParams[_], TEntryPoint] (val x: Self with ThinNestedEntryPointParams[TEntryPoint]) extends AnyVal {
+    implicit class ThinNestedEntryPointParamsMutableBuilder[Self <: ThinNestedEntryPointParams[?], TEntryPoint] (val x: Self & ThinNestedEntryPointParams[TEntryPoint]) extends AnyVal {
       
       @scala.inline
       def setEntryPoint(value: TEntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
@@ -604,32 +592,31 @@ object entryPointTypesMod {
     }
   }
   
-  type ThinNestedEntryPointParamsObject[TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[_, _]]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ThinNestedEntryPointParamsObject[TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinNestedEntryPointParams<TPreloadedEntryPoints[K]>}
-    */ typings.reactRelay.reactRelayStrings.ThinNestedEntryPointParamsObject with TopLevel[TPreloadedEntryPoints]
+    */ typings.reactRelay.reactRelayStrings.ThinNestedEntryPointParamsObject & TopLevel[TPreloadedEntryPoints]
   
   /* Inlined parent std.Readonly<{  parameters :relay-runtime.relay-runtime.ConcreteRequest | react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadableConcreteRequest<TQuery>,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   options :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadOptions | null | undefined,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined}> */
-  @js.native
-  trait ThinQueryParams[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */] extends StObject {
+  trait ThinQueryParams[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */] extends StObject {
     
-    val environmentProviderOptions: js.UndefOr[TEnvironmentProviderOptions | Null] = js.native
+    val environmentProviderOptions: js.UndefOr[TEnvironmentProviderOptions | Null] = js.undefined
     
-    val options: js.UndefOr[PreloadOptions | Null] = js.native
+    val options: js.UndefOr[PreloadOptions | Null] = js.undefined
     
-    val parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery] = js.native
+    val parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery]
     
-    val variables: VariablesOf[TQuery] = js.native
+    val variables: VariablesOf[TQuery]
   }
   object ThinQueryParams {
     
     @scala.inline
-    def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
+    def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThinQueryParams[TQuery, TEnvironmentProviderOptions]]
     }
     
     @scala.inline
-    implicit class ThinQueryParamsMutableBuilder[Self <: ThinQueryParams[_, _], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */] (val x: Self with (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
+    implicit class ThinQueryParamsMutableBuilder[Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */] (val x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
       
       @scala.inline
       def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
@@ -659,5 +646,5 @@ object entryPointTypesMod {
   
   type ThinQueryParamsObject[TPreloadedQueries /* <: Record[String, OperationType] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinQueryParams<TPreloadedQueries[K], react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
-    */ typings.reactRelay.reactRelayStrings.ThinQueryParamsObject with TopLevel[TPreloadedQueries]
+    */ typings.reactRelay.reactRelayStrings.ThinQueryParamsObject & TopLevel[TPreloadedQueries]
 }

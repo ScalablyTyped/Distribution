@@ -2,26 +2,24 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInfrastructureConfigurationResponse extends StObject {
   
   /**
     * The idempotency token used to make this request idempotent. 
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration that was created by this request. 
     */
-  var infrastructureConfigurationArn: js.UndefOr[InfrastructureConfigurationArn] = js.native
+  var infrastructureConfigurationArn: js.UndefOr[InfrastructureConfigurationArn] = js.undefined
   
   /**
     * The request ID that uniquely identifies this request. 
     */
-  var requestId: js.UndefOr[NonEmptyString] = js.native
+  var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object CreateInfrastructureConfigurationResponse {
   

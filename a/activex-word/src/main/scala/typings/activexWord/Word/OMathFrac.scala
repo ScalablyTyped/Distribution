@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathFrac extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Den: OMath = js.native
+  val Den: OMath
   
-  val Num: OMath = js.native
+  val Num: OMath
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Type: WdOMathFracType = js.native
+  var Type: WdOMathFracType
   
   @JSName("Word.OMathFrac_typekey")
-  var WordDotOMathFrac_typekey: OMathFrac = js.native
+  var WordDotOMathFrac_typekey: OMathFrac
 }
 object OMathFrac {
   

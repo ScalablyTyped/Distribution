@@ -7,43 +7,39 @@ import typings.typescript.mod.OutputFile
 import typings.typescript.mod.ResolvedProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instancesMod {
   
-  @JSImport("ts-loader/dist/instances", "forEachResolvedProjectReference")
+  @JSImport("ts-loader/dist/instances", JSImport.Namespace)
   @js.native
-  def forEachResolvedProjectReference[T](
-    resolvedProjectReferences: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* resolvedProjectReference */ ResolvedProjectReference, js.UndefOr[T]]
-  ): js.UndefOr[T] = js.native
-  @JSImport("ts-loader/dist/instances", "forEachResolvedProjectReference")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def forEachResolvedProjectReference[T](
     resolvedProjectReferences: js.Array[js.UndefOr[ResolvedProjectReference]],
     cb: js.Function1[/* resolvedProjectReference */ ResolvedProjectReference, js.UndefOr[T]]
-  ): js.UndefOr[T] = js.native
+  ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachResolvedProjectReference")(resolvedProjectReferences.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def forEachResolvedProjectReference[T](
+    resolvedProjectReferences: Unit,
+    cb: js.Function1[/* resolvedProjectReference */ ResolvedProjectReference, js.UndefOr[T]]
+  ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachResolvedProjectReference")(resolvedProjectReferences.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("ts-loader/dist/instances", "getEmitFromWatchHost")
-  @js.native
-  def getEmitFromWatchHost(instance: TSInstance): js.UndefOr[js.Array[OutputFile]] = js.native
-  @JSImport("ts-loader/dist/instances", "getEmitFromWatchHost")
-  @js.native
-  def getEmitFromWatchHost(instance: TSInstance, filePath: String): js.UndefOr[js.Array[OutputFile]] = js.native
+  @scala.inline
+  def getEmitFromWatchHost(instance: TSInstance): js.UndefOr[js.Array[OutputFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmitFromWatchHost")(instance.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[OutputFile]]]
+  @scala.inline
+  def getEmitFromWatchHost(instance: TSInstance, filePath: String): js.UndefOr[js.Array[OutputFile]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEmitFromWatchHost")(instance.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[OutputFile]]]
   
-  @JSImport("ts-loader/dist/instances", "getEmitOutput")
-  @js.native
-  def getEmitOutput(instance: TSInstance, filePath: String): js.Array[OutputFile] = js.native
+  @scala.inline
+  def getEmitOutput(instance: TSInstance, filePath: String): js.Array[OutputFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEmitOutput")(instance.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Array[OutputFile]]
   
-  @JSImport("ts-loader/dist/instances", "getTypeScriptInstance")
-  @js.native
+  @scala.inline
   def getTypeScriptInstance(
     loaderOptions: LoaderOptions,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any
-  ): Error = js.native
+  ): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeScriptInstance")(loaderOptions.asInstanceOf[js.Any], loader.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("ts-loader/dist/instances", "isReferencedFile")
-  @js.native
-  def isReferencedFile(instance: TSInstance, filePath: String): Boolean = js.native
+  @scala.inline
+  def isReferencedFile(instance: TSInstance, filePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedFile")(instance.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

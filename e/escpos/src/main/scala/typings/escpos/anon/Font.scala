@@ -7,26 +7,24 @@ import typings.escpos.escposStrings.BLW
 import typings.escpos.escposStrings.BTH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var font: A | B = js.native
+  var font: A | B
   
-  var height: Double = js.native
+  var height: Double
   
-  var includeParity: Boolean = js.native
+  var includeParity: Boolean
   
   /**
     * OFF, ABOVE, BELOW, BOTH
     *
     * @default BELOW
     */
-  var position: typings.escpos.escposStrings.OFF | ABV | BLW | BTH = js.native
+  var position: typings.escpos.escposStrings.OFF | ABV | BLW | BTH
   
-  var width: Double = js.native
+  var width: Double
 }
 object Font {
   

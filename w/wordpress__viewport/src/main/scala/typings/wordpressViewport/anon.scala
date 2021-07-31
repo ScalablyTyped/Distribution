@@ -3,15 +3,13 @@ package typings.wordpressViewport
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofimportedActions extends StObject {
     
-    def setIsMatching(values: Record[String, Boolean]): Unit = js.native
+    def setIsMatching(values: Record[String, Boolean]): Unit
   }
   object TypeofimportedActions {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofimportedSelectors extends StObject {
     
-    def isViewportMatch(query: String): Boolean = js.native
+    def isViewportMatch(query: String): Boolean
   }
   object TypeofimportedSelectors {
     

@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Media.Protection.PlayReady.IPlayReadyLicense
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsIPlayReadyLicense extends StObject {
   
-  /** The items in the collection. */ var items: IPlayReadyLicense = js.native
+  /** The items in the collection. */ var items: IPlayReadyLicense
   
-  /** The number of items in the collection. */ var returnValue: Double = js.native
+  /** The number of items in the collection. */ var returnValue: Double
 }
 object ItemsIPlayReadyLicense {
   

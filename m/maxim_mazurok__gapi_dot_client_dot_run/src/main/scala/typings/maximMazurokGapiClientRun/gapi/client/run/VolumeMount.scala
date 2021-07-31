@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeMount extends StObject {
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported Path within the container at which the volume should be mounted. Must not contain ':'. */
-  var mountPath: js.UndefOr[String] = js.native
+  var mountPath: js.UndefOr[String] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported This must match the Name of a Volume. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Only true is accepted. Defaults to true. */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Path within the volume from which the container's volume should be mounted. Defaults to ""
     * (volume's root).
     */
-  var subPath: js.UndefOr[String] = js.native
+  var subPath: js.UndefOr[String] = js.undefined
 }
 object VolumeMount {
   

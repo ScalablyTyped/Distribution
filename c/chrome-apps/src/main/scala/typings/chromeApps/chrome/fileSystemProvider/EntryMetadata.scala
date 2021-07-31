@@ -4,20 +4,18 @@ import typings.chromeApps.chrome.double
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntryMetadata extends StObject {
   
   /** True if it is a directory. Must be provided if requested in options */
-  var isDirectory: js.UndefOr[Boolean] = js.native
+  var isDirectory: js.UndefOr[Boolean] = js.undefined
   
   /** Mime type for the entry.  */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** The last modified time of this entry. */
-  var modificationTime: js.UndefOr[Date] = js.native
+  var modificationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Name of this entry (not full path name).
@@ -25,17 +23,17 @@ trait EntryMetadata extends StObject {
     * For root it must be empty.
     * Must be provided if requested in options.
     **/
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** File size in bytes. Must be provided if requested in options. */
-  var size: js.UndefOr[double] = js.native
+  var size: js.UndefOr[double] = js.undefined
   
   /**
     * Thumbnail image as a data URI in either PNG, JPEG or WEBP format, at most 32 KB in size.
     * Optional, but can be provided only when explicitly requested
     * by the onGetMetadataRequested event.
     */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
 }
 object EntryMetadata {
   

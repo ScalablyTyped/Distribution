@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEmailIdentityPolicyRequest extends StObject {
   
   /**
     * The email identity for which you want to create a policy.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * The text of the policy in JSON format. The policy cannot exceed 4 KB. For information about the syntax of sending authorization policies, see the Amazon SES Developer Guide.
     */
-  var Policy: typings.awsSdk.sesv2Mod.Policy = js.native
+  var Policy: typings.awsSdk.sesv2Mod.Policy
   
   /**
     * The name of the policy. The policy name cannot exceed 64 characters and can only include alphanumeric characters, dashes, and underscores.
     */
-  var PolicyName: typings.awsSdk.sesv2Mod.PolicyName = js.native
+  var PolicyName: typings.awsSdk.sesv2Mod.PolicyName
 }
 object CreateEmailIdentityPolicyRequest {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ot.mod.EditorClient.OtherClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "EditorClient")
@@ -30,7 +29,7 @@ class EditorClient protected () extends Client {
   
   def initializeClientList(): Unit = js.native
   
-  def initializeClients(clients: Clients[_]): Unit = js.native
+  def initializeClients(clients: Clients[js.Any]): Unit = js.native
   
   def onBlur(): Unit = js.native
   

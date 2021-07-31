@@ -3,16 +3,17 @@ package typings.graphqlDeduplicator
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("graphql-deduplicator", "deflate")
+  @JSImport("graphql-deduplicator", JSImport.Namespace)
   @js.native
-  def deflate(response: js.Object): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("graphql-deduplicator", "inflate")
-  @js.native
-  def inflate(response: js.Object): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def deflate(response: js.Object): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  
+  @scala.inline
+  def inflate(response: js.Object): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
 }

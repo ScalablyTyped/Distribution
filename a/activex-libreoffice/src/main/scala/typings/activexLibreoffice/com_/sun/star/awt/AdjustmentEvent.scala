@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** adjustment event emitted by adjustable objects. */
-@js.native
-trait AdjustmentEvent extends EventObject {
+trait AdjustmentEvent
+  extends StObject
+     with EventObject {
   
   /** contains the type of the adjustment event. */
-  var Type: AdjustmentType = js.native
+  var Type: AdjustmentType
   
   /** contains the current value in the adjustment event. */
-  var Value: Double = js.native
+  var Value: Double
 }
 object AdjustmentEvent {
   

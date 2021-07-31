@@ -2,26 +2,24 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateRepositoryRequest extends StObject {
   
   /**
     * Amazon CodeGuru Reviewer uses this value to prevent the accidental creation of duplicate repository associations if there are failures and retries. 
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.ClientRequestToken] = js.undefined
   
   /**
     * The repository to associate.
     */
-  var Repository: typings.awsSdk.codegurureviewerMod.Repository = js.native
+  var Repository: typings.awsSdk.codegurureviewerMod.Repository
   
   /**
     *  An array of key-value pairs used to tag an associated repository. A tag is a custom attribute label with two parts:    A tag key (for example, CostCenter, Environment, Project, or Secret). Tag keys are case sensitive.   An optional field known as a tag value (for example, 111122223333, Production, or a team name). Omitting the tag value is the same as using an empty string. Like tag keys, tag values are case sensitive.  
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object AssociateRepositoryRequest {
   

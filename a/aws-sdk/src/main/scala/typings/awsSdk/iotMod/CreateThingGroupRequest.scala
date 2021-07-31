@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThingGroupRequest extends StObject {
   
   /**
     * The name of the parent thing group.
     */
-  var parentGroupName: js.UndefOr[ThingGroupName] = js.native
+  var parentGroupName: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * Metadata which can be used to manage the thing group.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The thing group name to create.
     */
-  var thingGroupName: ThingGroupName = js.native
+  var thingGroupName: ThingGroupName
   
   /**
     * The thing group properties.
     */
-  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.native
+  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.undefined
 }
 object CreateThingGroupRequest {
   

@@ -2,15 +2,13 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deserialize extends StObject {
   
-  def deserialize(v: js.Any): js.Any = js.native
+  def deserialize(v: js.Any): js.Any
   
-  def serialize(v: js.Any): js.Any = js.native
+  def serialize(v: js.Any): js.Any
 }
 object Deserialize {
   

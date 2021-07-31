@@ -3,15 +3,16 @@ package typings.printf
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(writeStream: WritableStream, format: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].apply(writeStream.asInstanceOf[js.Any], format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("printf", JSImport.Namespace)
   @js.native
-  def apply(format: String, args: js.Any*): String = js.native
-  @JSImport("printf", JSImport.Namespace)
-  @js.native
-  def apply(writeStream: WritableStream, format: String, args: js.Any*): Unit = js.native
+  val ^ : js.Any = js.native
 }

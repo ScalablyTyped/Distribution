@@ -3,30 +3,28 @@ package typings.meteorUniverseI18n
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<meteor-universe-i18n.meteor/universe:i18n.i18nOptions> */
-  @js.native
   trait Partiali18nOptions extends StObject {
     
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var hideMissing: js.UndefOr[Boolean] = js.native
+    var hideMissing: js.UndefOr[Boolean] = js.undefined
     
-    var hostUrl: js.UndefOr[String] = js.native
+    var hostUrl: js.UndefOr[String] = js.undefined
     
-    var open: js.UndefOr[String] = js.native
+    var open: js.UndefOr[String] = js.undefined
     
-    var purify: js.UndefOr[js.Function0[Unit]] = js.native
+    var purify: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var sameLocaleOnServerConnection: js.UndefOr[Boolean] = js.native
+    var sameLocaleOnServerConnection: js.UndefOr[Boolean] = js.undefined
     
-    var translationsHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var translationsHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   }
   object Partiali18nOptions {
     

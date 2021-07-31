@@ -2,19 +2,17 @@ package typings.apolloServerCaching
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MaxSize[V] extends StObject {
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var onDispose: js.UndefOr[js.Function2[/* key */ String, /* value */ V, Unit]] = js.native
+    var onDispose: js.UndefOr[js.Function2[/* key */ String, /* value */ V, Unit]] = js.undefined
     
-    var sizeCalculator: js.UndefOr[js.Function2[/* value */ V, /* key */ String, Double]] = js.native
+    var sizeCalculator: js.UndefOr[js.Function2[/* value */ V, /* key */ String, Double]] = js.undefined
   }
   object MaxSize {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class MaxSizeMutableBuilder[Self <: MaxSize[_], V] (val x: Self with MaxSize[V]) extends AnyVal {
+    implicit class MaxSizeMutableBuilder[Self <: MaxSize[?], V] (val x: Self & MaxSize[V]) extends AnyVal {
       
       @scala.inline
       def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ttl extends StObject {
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object Ttl {
     

@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChangelogsList extends StandardParameters {
+trait ParamsResourceChangelogsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only change logs with the specified action.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only change logs with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only change logs whose change time is before the specified
@@ -35,12 +35,12 @@ trait ParamsResourceChangelogsList extends StandardParameters {
     * words, the year, month, day, the letter T, the hour (24-hour clock
     * system), minute, second, and then the time zone offset.
     */
-  var maxChangeTime: js.UndefOr[String] = js.native
+  var maxChangeTime: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only change logs whose change time is before the specified
@@ -50,38 +50,38 @@ trait ParamsResourceChangelogsList extends StandardParameters {
     * words, the year, month, day, the letter T, the hour (24-hour clock
     * system), minute, second, and then the time zone offset.
     */
-  var minChangeTime: js.UndefOr[String] = js.native
+  var minChangeTime: js.UndefOr[String] = js.undefined
   
   /**
     * Select only change logs with these object IDs.
     */
-  var objectIds: js.UndefOr[js.Array[String]] = js.native
+  var objectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only change logs with the specified object type.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only change logs whose object ID, user name, old or new values
     * match the search string.
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only change logs with these user profile IDs.
     */
-  var userProfileIds: js.UndefOr[js.Array[String]] = js.native
+  var userProfileIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceChangelogsList {
   

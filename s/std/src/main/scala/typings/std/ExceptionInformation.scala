@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionInformation extends StObject {
   
-  var domain: js.UndefOr[java.lang.String | Null] = js.native
+  var domain: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 object ExceptionInformation {
   

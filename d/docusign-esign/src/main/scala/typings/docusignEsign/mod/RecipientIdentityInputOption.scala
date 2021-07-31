@@ -2,17 +2,15 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientIdentityInputOption extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var phoneNumberList: js.UndefOr[js.Array[RecipientIdentityPhoneNumber]] = js.native
+  var phoneNumberList: js.UndefOr[js.Array[RecipientIdentityPhoneNumber]] = js.undefined
   
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object RecipientIdentityInputOption {
   

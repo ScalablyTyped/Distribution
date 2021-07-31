@@ -10,9 +10,9 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-update |
 | Keywords           | react, react-addon |
-| # releases         | 0 |
-| # dependents       | 215 |
-| # downloads        | 2798395 |
+| # releases         | 2 |
+| # dependents       | 219 |
+| # downloads        | 2827307 |
 | # stars            | 9 |
 
 ## Links

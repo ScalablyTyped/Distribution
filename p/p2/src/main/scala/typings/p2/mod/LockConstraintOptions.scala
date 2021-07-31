@@ -2,17 +2,17 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LockConstraintOptions extends ConstraintOptions {
+trait LockConstraintOptions
+  extends StObject
+     with ConstraintOptions {
   
-  var localAngleB: js.UndefOr[Double] = js.native
+  var localAngleB: js.UndefOr[Double] = js.undefined
   
-  var localOffsetB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localOffsetB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
 }
 object LockConstraintOptions {
   

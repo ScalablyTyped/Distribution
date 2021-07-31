@@ -9,65 +9,65 @@ import typings.reactNativeMaps.anon.Id
 import typings.reactNativeMaps.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerProps extends ViewProps {
+trait MarkerProps
+  extends StObject
+     with ViewProps {
   
-  var anchor: js.UndefOr[Point] = js.native
+  var anchor: js.UndefOr[Point] = js.undefined
   
-  var calloutAnchor: js.UndefOr[Point] = js.native
+  var calloutAnchor: js.UndefOr[Point] = js.undefined
   
-  var calloutOffset: js.UndefOr[Point] = js.native
+  var calloutOffset: js.UndefOr[Point] = js.undefined
   
-  var centerOffset: js.UndefOr[Point] = js.native
+  var centerOffset: js.UndefOr[Point] = js.undefined
   
-  var coordinate: LatLng | AnimatedRegion = js.native
+  var coordinate: LatLng | AnimatedRegion
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var flat: js.UndefOr[Boolean] = js.native
+  var flat: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[ImageURISource | ImageRequireSource] = js.native
+  var icon: js.UndefOr[ImageURISource | ImageRequireSource] = js.undefined
   
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[ImageURISource | ImageRequireSource] = js.native
+  var image: js.UndefOr[ImageURISource | ImageRequireSource] = js.undefined
   
-  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.native
+  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.undefined
   
-  var onDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[ActionId], Unit]] = js.native
+  var onDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[ActionId], Unit]] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[Action], Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[Action], Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* event */ MapEvent[Id], Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* event */ MapEvent[Id], Unit]] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pinColor: js.UndefOr[String] = js.native
+  var pinColor: js.UndefOr[String] = js.undefined
   
-  var reuseIdentifier: js.UndefOr[String] = js.native
+  var reuseIdentifier: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var tracksInfoWindowChanges: js.UndefOr[Boolean] = js.native
+  var tracksInfoWindowChanges: js.UndefOr[Boolean] = js.undefined
   
-  var tracksViewChanges: js.UndefOr[Boolean] = js.native
+  var tracksViewChanges: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MarkerProps {
   

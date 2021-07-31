@@ -3,21 +3,19 @@ package typings.reactNavigation.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationDescriptor[Params, Options, NavigationScreenPropType] extends StObject {
   
-  def getComponent(): ComponentType[js.Object] = js.native
+  def getComponent(): ComponentType[js.Object]
   
-  var key: String = js.native
+  var key: String
   
-  var navigation: NavigationScreenPropType = js.native
+  var navigation: NavigationScreenPropType
   
-  var options: Options = js.native
+  var options: Options
   
-  var state: NavigationLeafRoute[Params] | NavigationStateRoute[Params] = js.native
+  var state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
 }
 object NavigationDescriptor {
   
@@ -34,7 +32,7 @@ object NavigationDescriptor {
   }
   
   @scala.inline
-  implicit class NavigationDescriptorMutableBuilder[Self <: NavigationDescriptor[_, _, _], Params, Options, NavigationScreenPropType] (val x: Self with (NavigationDescriptor[Params, Options, NavigationScreenPropType])) extends AnyVal {
+  implicit class NavigationDescriptorMutableBuilder[Self <: NavigationDescriptor[?, ?, ?], Params, Options, NavigationScreenPropType] (val x: Self & (NavigationDescriptor[Params, Options, NavigationScreenPropType])) extends AnyVal {
     
     @scala.inline
     def setGetComponent(value: () => ComponentType[js.Object]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))

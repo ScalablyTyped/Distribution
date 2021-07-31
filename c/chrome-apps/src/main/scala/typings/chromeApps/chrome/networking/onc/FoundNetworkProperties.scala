@@ -2,26 +2,24 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoundNetworkProperties extends StObject {
   
   /** The network operator's long-format name. */
-  var LongName: js.UndefOr[String] = js.native
+  var LongName: js.UndefOr[String] = js.undefined
   
   /** Network ID. */
-  var NetworkId: String = js.native
+  var NetworkId: String
   
   /** The network operator's short-format name. */
-  var ShortName: js.UndefOr[String] = js.native
+  var ShortName: js.UndefOr[String] = js.undefined
   
   /** Network availability. */
-  var Status: String = js.native
+  var Status: String
   
   /** Access technology used by the network. */
-  var Technology: String = js.native
+  var Technology: String
 }
 object FoundNetworkProperties {
   

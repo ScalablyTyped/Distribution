@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. The first call does not contain any tokens.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * The identifier for the organization under which the resources exist.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object ListResourcesRequest {
   

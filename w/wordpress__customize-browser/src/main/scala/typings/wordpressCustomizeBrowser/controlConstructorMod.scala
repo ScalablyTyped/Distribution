@@ -15,37 +15,35 @@ import typings.wordpressCustomizeBrowser.themeControlMod.ThemeControl
 import typings.wordpressCustomizeBrowser.uploadControlMod.UploadControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlConstructorMod {
   
-  @js.native
   trait ControlConstructor extends StObject {
     
-    var background: Instantiable0[BackgroundControl] = js.native
+    var background: Instantiable0[BackgroundControl]
     
-    var background_position: Instantiable0[BackgroundPositionControl] = js.native
+    var background_position: Instantiable0[BackgroundPositionControl]
     
-    var code_editor: Instantiable0[CodeEditorControl] = js.native
+    var code_editor: Instantiable0[CodeEditorControl]
     
-    var color: Instantiable0[ColorControl] = js.native
+    var color: Instantiable0[ColorControl]
     
-    var cropped_image: Instantiable0[CroppedImageControl] = js.native
+    var cropped_image: Instantiable0[CroppedImageControl]
     
-    var date_time: Instantiable0[DateTimeControl] = js.native
+    var date_time: Instantiable0[DateTimeControl]
     
-    var header: Instantiable0[HeaderControl] = js.native
+    var header: Instantiable0[HeaderControl]
     
-    var image: Instantiable0[ImageControl] = js.native
+    var image: Instantiable0[ImageControl]
     
-    var media: Instantiable0[MediaControl] = js.native
+    var media: Instantiable0[MediaControl]
     
-    var site_icon: Instantiable0[SiteIconControl] = js.native
+    var site_icon: Instantiable0[SiteIconControl]
     
-    var theme: Instantiable0[ThemeControl] = js.native
+    var theme: Instantiable0[ThemeControl]
     
-    var upload: Instantiable0[UploadControl] = js.native
+    var upload: Instantiable0[UploadControl]
   }
   object ControlConstructor {
     

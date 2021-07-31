@@ -10,25 +10,23 @@ import typings.angularCommon.httpHttpMod.HttpObserve
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserveParamsReportProgress extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: js.UndefOr[HttpObserve] = js.native
+  var observe: js.UndefOr[HttpObserve] = js.undefined
   
-  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.native
+  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.native
+  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ObserveParamsReportProgress {
   

@@ -2,36 +2,34 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A superChatEvent resource represents a Super Chat purchase on a YouTube
   * channel.
   */
-@js.native
 trait SchemaSuperChatEvent extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the Super Chat event.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#superChatEvent&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the Super Chat event.
     */
-  var snippet: js.UndefOr[SchemaSuperChatEventSnippet] = js.native
+  var snippet: js.UndefOr[SchemaSuperChatEventSnippet] = js.undefined
 }
 object SchemaSuperChatEvent {
   

@@ -2,33 +2,31 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoUpgradeError extends StObject {
   
-  var autoUpgradeError: scala.Double = js.native
+  var autoUpgradeError: scala.Double
   
-  var builtIn: scala.Double = js.native
+  var builtIn: scala.Double
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var error: scala.Double = js.native
+  var error: scala.Double
   
-  var multiVersion: scala.Double = js.native
+  var multiVersion: scala.Double
   
-  var needsReauthorization: scala.Double = js.native
+  var needsReauthorization: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var trusted: scala.Double = js.native
+  var trusted: scala.Double
   
-  var unInstalled: scala.Double = js.native
+  var unInstalled: scala.Double
   
-  var versionCheckError: scala.Double = js.native
+  var versionCheckError: scala.Double
   
-  var warning: scala.Double = js.native
+  var warning: scala.Double
 }
 object AutoUpgradeError {
   

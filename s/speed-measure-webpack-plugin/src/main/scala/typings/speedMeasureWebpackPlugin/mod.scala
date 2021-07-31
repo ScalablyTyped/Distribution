@@ -3,7 +3,6 @@ package typings.speedMeasureWebpackPlugin
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,21 +12,27 @@ object mod {
     */
   @JSImport("speed-measure-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends SpeedMeasurePlugin {
+  class ^ ()
+    extends StObject
+       with SpeedMeasurePlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def wrap(
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+    ): js.Any = js.native
   }
   
   /**
     * Pass these into the constructor, as an object:
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * If truthy, this plugin does nothing at all.
       * @default false
       */
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, SMP measures loaders in groups.
@@ -38,22 +43,22 @@ object mod {
       * We will find solutions to these issues before removing the (experimental) flag on this option.
       * @default false
       */
-    var granularLoaderData: js.UndefOr[Boolean] = js.native
+    var granularLoaderData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines in what format this plugin prints its measurements
       * @default 'human'
       */
-    var outputFormat: js.UndefOr[OutputFormat] = js.native
+    var outputFormat: js.UndefOr[OutputFormat] = js.undefined
     
-    var outputTarget: js.UndefOr[OutputTarget] = js.native
+    var outputTarget: js.UndefOr[OutputTarget] = js.undefined
     
     /**
       * By default, SMP derives plugin names through plugin.constructor.name.
       * For some plugins this doesn't work (or you may want to override this default).
       * This option takes an object of pluginName: PluginConstructor
       */
-    var pluginNames: js.UndefOr[StringDictionary[js.Object]] = js.native
+    var pluginNames: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   }
   object Options {
     
@@ -117,12 +122,11 @@ object mod {
   /**
     * See how fast (or not) your plugins and loaders are, so you can optimise your builds
     */
-  @js.native
   trait SpeedMeasurePlugin extends StObject {
     
     def wrap(
       config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-    ): js.Any = js.native
+    ): js.Any
   }
   object SpeedMeasurePlugin {
     

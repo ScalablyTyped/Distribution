@@ -2,32 +2,30 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentProperty[TApplication] extends StObject {
   
-  var Application: TApplication = js.native
+  var Application: TApplication
   
-  var Creator: Double = js.native
+  var Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var LinkSource: String = js.native
+  var LinkSource: String
   
-  var LinkToContent: Boolean = js.native
+  var LinkToContent: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Office.DocumentProperty_typekey")
-  var OfficeDotDocumentProperty_typekey: DocumentProperty[TApplication] = js.native
+  var OfficeDotDocumentProperty_typekey: DocumentProperty[TApplication]
   
-  var Parent: js.Any = js.native
+  var Parent: js.Any
   
-  var Type: MsoDocProperties = js.native
+  var Type: MsoDocProperties
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object DocumentProperty {
   
@@ -50,7 +48,7 @@ object DocumentProperty {
   }
   
   @scala.inline
-  implicit class DocumentPropertyMutableBuilder[Self <: DocumentProperty[_], TApplication] (val x: Self with DocumentProperty[TApplication]) extends AnyVal {
+  implicit class DocumentPropertyMutableBuilder[Self <: DocumentProperty[?], TApplication] (val x: Self & DocumentProperty[TApplication]) extends AnyVal {
     
     @scala.inline
     def setApplication(value: TApplication): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])

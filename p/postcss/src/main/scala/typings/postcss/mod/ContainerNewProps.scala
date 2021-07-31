@@ -2,19 +2,19 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContainerNewProps extends NodeNewProps {
+trait ContainerNewProps
+  extends StObject
+     with NodeNewProps {
   
   /**
     * Contains the container's children.
     */
-  var nodes: js.UndefOr[js.Array[ChildNode]] = js.native
+  var nodes: js.UndefOr[js.Array[ChildNode]] = js.undefined
   
   @JSName("raws")
-  var raws_ContainerNewProps: js.UndefOr[ContainerRaws] = js.native
+  var raws_ContainerNewProps: js.UndefOr[ContainerRaws] = js.undefined
 }
 object ContainerNewProps {
   

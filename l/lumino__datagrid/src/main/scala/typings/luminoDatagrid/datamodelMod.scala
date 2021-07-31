@@ -17,7 +17,6 @@ import typings.luminoDatagrid.luminoDatagridStrings.`rows-removed`
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datamodelMod {
@@ -145,52 +144,46 @@ object datamodelMod {
       * Data models should emit the `changed` signal with this args object
       * type when cells are changed in-place.
       */
-    @js.native
-    trait CellsChangedArgs extends ChangedArgs {
+    trait CellsChangedArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The column index of the first modified cell.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The number of columns in the modified cell range.
         */
-      val columnSpan: Double = js.native
+      val columnSpan: Double
       
       /**
         * The region which contains the modified cells.
         */
-      val region: CellRegion = js.native
+      val region: CellRegion
       
       /**
         * The row index of the first modified cell.
         */
-      val row: Double = js.native
+      val row: Double
       
       /**
         * The number of rows in the modified cell range.
         */
-      val rowSpan: Double = js.native
+      val rowSpan: Double
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `cells-changed` = js.native
+      val `type`: `cells-changed`
     }
     object CellsChangedArgs {
       
       @scala.inline
-      def apply(
-        column: Double,
-        columnSpan: Double,
-        region: CellRegion,
-        row: Double,
-        rowSpan: Double,
-        `type`: `cells-changed`
-      ): CellsChangedArgs = {
+      def apply(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): CellsChangedArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("cells-changed")
         __obj.asInstanceOf[CellsChangedArgs]
       }
       
@@ -232,16 +225,9 @@ object datamodelMod {
     object ChangedArgs {
       
       @scala.inline
-      def CellsChangedArgs(
-        column: Double,
-        columnSpan: Double,
-        region: CellRegion,
-        row: Double,
-        rowSpan: Double,
-        `type`: `cells-changed`
-      ): typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs = {
+      def CellsChangedArgs(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("cells-changed")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs]
       }
       
@@ -253,16 +239,16 @@ object datamodelMod {
       }
       
       @scala.inline
-      def ColumnsMovedArgs(destination: Double, index: Double, region: ColumnRegion, span: Double, `type`: `columns-moved`): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs = {
+      def ColumnsMovedArgs(destination: Double, index: Double, region: ColumnRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("columns-moved")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs]
       }
       
       @scala.inline
-      def ModelResetArgs(`type`: `model-reset`): typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs = {
+      def ModelResetArgs(): typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs = {
         val __obj = js.Dynamic.literal()
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("model-reset")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs]
       }
       
@@ -274,9 +260,9 @@ object datamodelMod {
       }
       
       @scala.inline
-      def RowsMovedArgs(destination: Double, index: Double, region: RowRegion, span: Double, `type`: `rows-moved`): typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs = {
+      def RowsMovedArgs(destination: Double, index: Double, region: RowRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("rows-moved")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs]
       }
     }
@@ -305,28 +291,29 @@ object datamodelMod {
       * Data models should emit the `changed` signal with this args object
       * type when columns are inserted or removed.
       */
-    @js.native
-    trait ColumnsChangedArgs extends ChangedArgs {
+    trait ColumnsChangedArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The index of the first modified column.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The region which contains the modified columns.
         */
-      val region: ColumnRegion = js.native
+      val region: ColumnRegion
       
       /**
         * The number of modified columns.
         */
-      val span: Double = js.native
+      val span: Double
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `columns-inserted` | `columns-removed` = js.native
+      val `type`: `columns-inserted` | `columns-removed`
     }
     object ColumnsChangedArgs {
       
@@ -361,40 +348,41 @@ object datamodelMod {
       * Data models should emit the `changed` signal with this args object
       * type when columns are moved.
       */
-    @js.native
-    trait ColumnsMovedArgs extends ChangedArgs {
+    trait ColumnsMovedArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The ending index of the first modified column.
         */
-      val destination: Double = js.native
+      val destination: Double
       
       /**
         * The starting index of the first modified column.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The region which contains the modified columns.
         */
-      val region: ColumnRegion = js.native
+      val region: ColumnRegion
       
       /**
         * The number of modified columns.
         */
-      val span: Double = js.native
+      val span: Double
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `columns-moved` = js.native
+      val `type`: `columns-moved`
     }
     object ColumnsMovedArgs {
       
       @scala.inline
-      def apply(destination: Double, index: Double, region: ColumnRegion, span: Double, `type`: `columns-moved`): ColumnsMovedArgs = {
+      def apply(destination: Double, index: Double, region: ColumnRegion, span: Double): ColumnsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("columns-moved")
         __obj.asInstanceOf[ColumnsMovedArgs]
       }
       
@@ -435,20 +423,21 @@ object datamodelMod {
       * data grid to perform a full reset. The other changed args types
       * should be used whenever possible.
       */
-    @js.native
-    trait ModelResetArgs extends ChangedArgs {
+    trait ModelResetArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `model-reset` = js.native
+      val `type`: `model-reset`
     }
     object ModelResetArgs {
       
       @scala.inline
-      def apply(`type`: `model-reset`): ModelResetArgs = {
+      def apply(): ModelResetArgs = {
         val __obj = js.Dynamic.literal()
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("model-reset")
         __obj.asInstanceOf[ModelResetArgs]
       }
       
@@ -484,28 +473,29 @@ object datamodelMod {
       * Data models should emit the `changed` signal with this args object
       * type when rows are inserted or removed.
       */
-    @js.native
-    trait RowsChangedArgs extends ChangedArgs {
+    trait RowsChangedArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The index of the first modified row.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The region which contains the modified rows.
         */
-      val region: RowRegion = js.native
+      val region: RowRegion
       
       /**
         * The number of modified rows.
         */
-      val span: Double = js.native
+      val span: Double
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `rows-inserted` | `rows-removed` = js.native
+      val `type`: `rows-inserted` | `rows-removed`
     }
     object RowsChangedArgs {
       
@@ -540,40 +530,41 @@ object datamodelMod {
       * Data models should emit the `changed` signal with this args object
       * type when rows are moved.
       */
-    @js.native
-    trait RowsMovedArgs extends ChangedArgs {
+    trait RowsMovedArgs
+      extends StObject
+         with ChangedArgs {
       
       /**
         * The ending index of the first modified row.
         */
-      val destination: Double = js.native
+      val destination: Double
       
       /**
         * The starting index of the first modified row.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The region which contains the modified rows.
         */
-      val region: RowRegion = js.native
+      val region: RowRegion
       
       /**
         * The number of modified rows.
         */
-      val span: Double = js.native
+      val span: Double
       
       /**
         * The discriminated type of the args object.
         */
-      val `type`: `rows-moved` = js.native
+      val `type`: `rows-moved`
     }
     object RowsMovedArgs {
       
       @scala.inline
-      def apply(destination: Double, index: Double, region: RowRegion, span: Double, `type`: `rows-moved`): RowsMovedArgs = {
+      def apply(destination: Double, index: Double, region: RowRegion, span: Double): RowsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("rows-moved")
         __obj.asInstanceOf[RowsMovedArgs]
       }
       

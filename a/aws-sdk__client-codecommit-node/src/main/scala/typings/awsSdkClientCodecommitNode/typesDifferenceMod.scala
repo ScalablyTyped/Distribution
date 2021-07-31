@@ -7,28 +7,26 @@ import typings.awsSdkClientCodecommitNode.typesBlobMetadataMod.BlobMetadata
 import typings.awsSdkClientCodecommitNode.typesBlobMetadataMod.UnmarshalledBlobMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDifferenceMod {
   
-  @js.native
   trait Difference extends StObject {
     
     /**
       * <p>Information about an <code>afterBlob</code> data type object, including the ID, the file mode permission code, and the path.</p>
       */
-    var afterBlob: js.UndefOr[BlobMetadata] = js.native
+    var afterBlob: js.UndefOr[BlobMetadata] = js.undefined
     
     /**
       * <p>Information about a <code>beforeBlob</code> data type object, including the ID, the file mode permission code, and the path.</p>
       */
-    var beforeBlob: js.UndefOr[BlobMetadata] = js.native
+    var beforeBlob: js.UndefOr[BlobMetadata] = js.undefined
     
     /**
       * <p>Whether the change type of the difference is an addition (A), deletion (D), or modification (M).</p>
       */
-    var changeType: js.UndefOr[A | M | D | String] = js.native
+    var changeType: js.UndefOr[A | M | D | String] = js.undefined
   }
   object Difference {
     
@@ -61,20 +59,21 @@ object typesDifferenceMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDifference extends Difference {
+  trait UnmarshalledDifference
+    extends StObject
+       with Difference {
     
     /**
       * <p>Information about an <code>afterBlob</code> data type object, including the ID, the file mode permission code, and the path.</p>
       */
     @JSName("afterBlob")
-    var afterBlob_UnmarshalledDifference: js.UndefOr[UnmarshalledBlobMetadata] = js.native
+    var afterBlob_UnmarshalledDifference: js.UndefOr[UnmarshalledBlobMetadata] = js.undefined
     
     /**
       * <p>Information about a <code>beforeBlob</code> data type object, including the ID, the file mode permission code, and the path.</p>
       */
     @JSName("beforeBlob")
-    var beforeBlob_UnmarshalledDifference: js.UndefOr[UnmarshalledBlobMetadata] = js.native
+    var beforeBlob_UnmarshalledDifference: js.UndefOr[UnmarshalledBlobMetadata] = js.undefined
   }
   object UnmarshalledDifference {
     

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceManagementTroubleshootingEvent extends Entity {
+trait DeviceManagementTroubleshootingEvent
+  extends StObject
+     with Entity {
   
   // Id used for tracing the failure in the service.
-  var correlationId: js.UndefOr[NullableOption[String]] = js.native
+  var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Time when the event occurred .
-  var eventDateTime: js.UndefOr[String] = js.native
+  var eventDateTime: js.UndefOr[String] = js.undefined
 }
 object DeviceManagementTroubleshootingEvent {
   

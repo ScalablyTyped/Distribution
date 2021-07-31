@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.documentOutlineMod.DocumentOutline.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentOutlineMod {
@@ -24,14 +23,13 @@ object documentOutlineMod {
   
   object DocumentOutline {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var hasOutlineItemsDisabled: js.UndefOr[Boolean] = js.native
+      var hasOutlineItemsDisabled: js.UndefOr[Boolean] = js.undefined
       
-      def onSelect(): Unit = js.native
+      def onSelect(): Unit
     }
     object Props {
       

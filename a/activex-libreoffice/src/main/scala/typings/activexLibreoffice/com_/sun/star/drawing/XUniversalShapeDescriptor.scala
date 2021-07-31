@@ -3,14 +3,14 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XUniversalShapeDescriptor extends XShapeDescriptor {
+trait XUniversalShapeDescriptor
+  extends StObject
+     with XShapeDescriptor {
   
-  def setShapeType(aShapeTypeName: String): Unit = js.native
+  def setShapeType(aShapeTypeName: String): Unit
 }
 object XUniversalShapeDescriptor {
   

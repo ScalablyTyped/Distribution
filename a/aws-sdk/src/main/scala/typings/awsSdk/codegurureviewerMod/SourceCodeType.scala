@@ -2,18 +2,16 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceCodeType extends StObject {
   
   /**
     *  A  SourceCodeType  that specifies a commit diff created by a pull request on an associated repository. 
     */
-  var CommitDiff: js.UndefOr[CommitDiffSourceCodeType] = js.native
+  var CommitDiff: js.UndefOr[CommitDiffSourceCodeType] = js.undefined
   
-  var RepositoryHead: js.UndefOr[RepositoryHeadSourceCodeType] = js.native
+  var RepositoryHead: js.UndefOr[RepositoryHeadSourceCodeType] = js.undefined
 }
 object SourceCodeType {
   

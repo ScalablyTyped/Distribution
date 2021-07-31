@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliveryControlFrequencyCap extends StObject {
   
-  var maxImpressions: js.UndefOr[Double] = js.native
+  var maxImpressions: js.UndefOr[Double] = js.undefined
   
-  var numTimeUnits: js.UndefOr[Double] = js.native
+  var numTimeUnits: js.UndefOr[Double] = js.undefined
   
-  var timeUnitType: js.UndefOr[String] = js.native
+  var timeUnitType: js.UndefOr[String] = js.undefined
 }
 object DeliveryControlFrequencyCap {
   

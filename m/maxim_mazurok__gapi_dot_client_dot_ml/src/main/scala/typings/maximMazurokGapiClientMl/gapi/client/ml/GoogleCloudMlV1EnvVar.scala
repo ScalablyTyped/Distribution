@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1EnvVar extends StObject {
   
   /**
     * Name of the environment variable. Must be a [valid C
     * identifier](https://github.com/kubernetes/kubernetes/blob/v1.18.8/staging/src/k8s.io/apimachinery/pkg/util/validation/validation.go#L258) and must not begin with the prefix `AIP_`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the environment variable. Defaults to an empty string. In this field, you can reference [environment variables set by AI Platform
@@ -21,7 +19,7 @@ trait GoogleCloudMlV1EnvVar extends StObject {
     * Note that this differs from Bash variable expansion, which does not use parentheses. If a variable cannot be resolved, the reference in the input string is used unchanged. To avoid
     * variable expansion, you can escape this syntax with `$$`; for example: $$(VARIABLE_NAME)
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1EnvVar {
   

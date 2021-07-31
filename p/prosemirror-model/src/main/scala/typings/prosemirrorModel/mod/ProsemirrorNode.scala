@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [the guide](/docs/guide/#doc) for more information.
   */
 @js.native
-trait ProsemirrorNode[S /* <: Schema[_, _] */] extends StObject {
+trait ProsemirrorNode[S /* <: Schema[js.Any, js.Any] */] extends StObject {
   
   /**
     * An object mapping attribute names to values. The kind of
@@ -47,19 +46,13 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends StObject {
     * replacement fragment.
     */
   def canReplace(from: Double, to: Double): Boolean = js.native
-  def canReplace(
-    from: Double,
-    to: Double,
-    replacement: js.UndefOr[scala.Nothing],
-    start: js.UndefOr[scala.Nothing],
-    end: Double
-  ): Boolean = js.native
-  def canReplace(from: Double, to: Double, replacement: js.UndefOr[scala.Nothing], start: Double): Boolean = js.native
-  def canReplace(from: Double, to: Double, replacement: js.UndefOr[scala.Nothing], start: Double, end: Double): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: Unit, start: Double): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: Unit, start: Double, end: Double): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: Unit, start: Unit, end: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S]): Boolean = js.native
-  def canReplace(from: Double, to: Double, replacement: Fragment[S], start: js.UndefOr[scala.Nothing], end: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S], start: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S], start: Double, end: Double): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: Fragment[S], start: Unit, end: Double): Boolean = js.native
   
   /**
     * Test whether replacing the range `from` to `to` (by index) with a
@@ -159,9 +152,9 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends StObject {
     * attributes, and marks.
     */
   def hasMarkup(`type`: NodeType[S]): Boolean = js.native
-  def hasMarkup(`type`: NodeType[S], attrs: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): Boolean = js.native
   def hasMarkup(`type`: NodeType[S], attrs: StringDictionary[js.Any]): Boolean = js.native
   def hasMarkup(`type`: NodeType[S], attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): Boolean = js.native
+  def hasMarkup(`type`: NodeType[S], attrs: Unit, marks: js.Array[Mark[S]]): Boolean = js.native
   
   /**
     * True when this node has inline content.
@@ -321,9 +314,9 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends StObject {
     * inserted for every non-text leaf node encountered.
     */
   def textBetween(from: Double, to: Double): String = js.native
-  def textBetween(from: Double, to: Double, blockSeparator: js.UndefOr[scala.Nothing], leafText: String): String = js.native
   def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
   def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
+  def textBetween(from: Double, to: Double, blockSeparator: Unit, leafText: String): String = js.native
   
   /**
     * Concatenates all the text nodes found in this fragment and its

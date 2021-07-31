@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Jobholduntil
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoldRestartJobRequest extends StObject {
   
-  var `operation-attributes-tag`: Jobholduntil = js.native
+  var `operation-attributes-tag`: Jobholduntil
 }
 object HoldRestartJobRequest {
   

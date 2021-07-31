@@ -5,33 +5,31 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPackage extends StObject {
   
-  var dependencies: IVectorView[Package] = js.native
+  var dependencies: IVectorView[Package]
   
-  var description: String = js.native
+  var description: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var id: PackageId = js.native
+  var id: PackageId
   
-  var installedLocation: StorageFolder = js.native
+  var installedLocation: StorageFolder
   
-  var isBundle: Boolean = js.native
+  var isBundle: Boolean
   
-  var isDevelopmentMode: Boolean = js.native
+  var isDevelopmentMode: Boolean
   
-  var isFramework: Boolean = js.native
+  var isFramework: Boolean
   
-  var isResourcePackage: Boolean = js.native
+  var isResourcePackage: Boolean
   
-  var logo: Uri = js.native
+  var logo: Uri
   
-  var publisherDisplayName: String = js.native
+  var publisherDisplayName: String
 }
 object IPackage {
   

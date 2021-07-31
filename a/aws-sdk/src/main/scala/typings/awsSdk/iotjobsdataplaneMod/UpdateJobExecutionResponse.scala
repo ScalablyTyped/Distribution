@@ -2,21 +2,19 @@ package typings.awsSdk.iotjobsdataplaneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobExecutionResponse extends StObject {
   
   /**
     * A JobExecutionState object.
     */
-  var executionState: js.UndefOr[JobExecutionState] = js.native
+  var executionState: js.UndefOr[JobExecutionState] = js.undefined
   
   /**
     * The contents of the Job Documents.
     */
-  var jobDocument: js.UndefOr[JobDocument] = js.native
+  var jobDocument: js.UndefOr[JobDocument] = js.undefined
 }
 object UpdateJobExecutionResponse {
   

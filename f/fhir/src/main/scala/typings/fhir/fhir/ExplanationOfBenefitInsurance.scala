@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insurance or medical plan
   */
-@js.native
-trait ExplanationOfBenefitInsurance extends BackboneElement {
+trait ExplanationOfBenefitInsurance
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'preAuthRef'.
     */
-  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.native
+  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Insurance information
     */
-  var coverage: js.UndefOr[Reference] = js.native
+  var coverage: js.UndefOr[Reference] = js.undefined
   
   /**
     * Pre-Authorization/Determination Reference
     */
-  var preAuthRef: js.UndefOr[js.Array[String]] = js.native
+  var preAuthRef: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExplanationOfBenefitInsurance {
   

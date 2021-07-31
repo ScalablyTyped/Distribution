@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueChangedEventUIParam extends StObject {
   
   /**
     * Gets the editor input.
     */
-  var editorInput: js.UndefOr[js.Any] = js.native
+  var editorInput: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the value entered from the user after internal formatting. The argument type might differ depending on the editor type.
     */
-  var newValue: js.UndefOr[js.Any] = js.native
+  var newValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the value entered from the user before internal formatting. The argument type might differ depending on the editor type.
     */
-  var originalValue: js.UndefOr[js.Any] = js.native
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ValueChangedEventUIParam {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStacksResult extends StObject {
   
   /**
     * An array of Stack objects that describe the stacks.
     */
-  var Stacks: js.UndefOr[typings.awsSdk.opsworksMod.Stacks] = js.native
+  var Stacks: js.UndefOr[typings.awsSdk.opsworksMod.Stacks] = js.undefined
 }
 object DescribeStacksResult {
   

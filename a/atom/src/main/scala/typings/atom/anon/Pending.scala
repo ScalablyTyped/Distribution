@@ -2,13 +2,11 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pending extends StObject {
   
-  var pending: Boolean = js.native
+  var pending: Boolean
 }
 object Pending {
   

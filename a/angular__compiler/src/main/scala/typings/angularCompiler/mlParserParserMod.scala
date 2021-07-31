@@ -7,7 +7,6 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.angularCompiler.tagsMod.TagDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mlParserParserMod {
@@ -44,11 +43,13 @@ object mlParserParserMod {
   /* static members */
   object TreeError {
     
-    @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError.create")
+    @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError")
     @js.native
-    def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = js.native
-    @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError.create")
-    @js.native
-    def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
+    @scala.inline
+    def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
   }
 }

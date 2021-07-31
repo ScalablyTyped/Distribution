@@ -4,21 +4,22 @@ import typings.react.mod.Key
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object measureCellMod {
   
-  @JSImport("rc-table/lib/Body/MeasureCell", JSImport.Default)
+  @JSImport("rc-table/lib/Body/MeasureCell", JSImport.Namespace)
   @js.native
-  def default(hasColumnKeyOnColumnResize: MeasureCellProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasColumnKeyOnColumnResize: MeasureCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColumnKeyOnColumnResize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait MeasureCellProps extends StObject {
     
-    var columnKey: Key = js.native
+    var columnKey: Key
     
-    def onColumnResize(key: Key, width: Double): Unit = js.native
+    def onColumnResize(key: Key, width: Double): Unit
   }
   object MeasureCellProps {
     

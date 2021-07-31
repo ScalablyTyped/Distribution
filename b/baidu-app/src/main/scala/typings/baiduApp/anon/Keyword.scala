@@ -2,20 +2,18 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Keyword extends StObject {
   
   // 标签结果数组
-  var keyword: String = js.native
+  var keyword: String
   
   // 置信度，0-1
-  var root: String = js.native
+  var root: String
   
   // 图片中的物体或场景名称
-  var score: Double = js.native
+  var score: Double
 }
 object Keyword {
   

@@ -12,7 +12,7 @@ Get the hash of a string
 | Keywords           | string, hash, code, hashcode, hash-code, fnv1a, fnv-1a, fnv, algorithm, hashing, function |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 84586 |
+| # downloads        | 132089 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinalizeDeviceClaimResponse extends StObject {
   
   /**
     * The device's final claim state.
     */
-  var State: js.UndefOr[string] = js.native
+  var State: js.UndefOr[string] = js.undefined
 }
 object FinalizeDeviceClaimResponse {
   

@@ -2,7 +2,6 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ object Async {
   /**
     * Object passed to ErrorCallbackDelegate.
     */
-  @js.native
   trait ErrorCallbackObject extends StObject {
     
     /**
       * The error code.
       */
-    var errorCode: Double = js.native
+    var errorCode: Double
     
     /**
       * An error message describing the issue.
       */
-    var message: String = js.native
+    var message: String
   }
   object ErrorCallbackObject {
     
@@ -48,13 +46,14 @@ object Async {
   /**
     * Object passed to OfflineErrorCallbackDelegate.
     */
-  @js.native
-  trait OfflineErrorCallbackObject extends ErrorCallbackObject {
+  trait OfflineErrorCallbackObject
+    extends StObject
+       with ErrorCallbackObject {
     
     /**
       * An internal error message that might contain additional details about the issue.
       */
-    var debugMessage: String = js.native
+    var debugMessage: String
   }
   object OfflineErrorCallbackObject {
     
@@ -75,18 +74,17 @@ object Async {
   /**
     * Object passed to OfflineOperationSuccessCallbackDelegate;
     */
-  @js.native
   trait OfflineOperationSuccessCallbackObject extends StObject {
     
     /**
       * GUID of the record;
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Logical name of the entity.
       */
-    var logicalName: String = js.native
+    var logicalName: String
   }
   object OfflineOperationSuccessCallbackObject {
     
@@ -110,13 +108,12 @@ object Async {
   /**
     * Object passed to QuickCreateSuccessCallbackDelegate.
     */
-  @js.native
   trait OpenQuickCreateSuccessCallbackObject extends StObject {
     
     /**
       * A lookup value which identifies the record which has been created.
       */
-    var savedEntityReference: LookupValue = js.native
+    var savedEntityReference: LookupValue
   }
   object OpenQuickCreateSuccessCallbackObject {
     
@@ -169,14 +166,11 @@ object Async {
       * @returns A Promise for the completion of which ever callback is executed.
       */
     def `then`[U](): PromiseLike[U] = js.native
-    def `then`[U](
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* error */ js.Any, PromiseLike[U] | U | Unit]
-    ): PromiseLike[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ T, U | PromiseLike[U]]): PromiseLike[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ T, PromiseLike[U] | U],
       onRejected: js.Function1[/* error */ js.Any, PromiseLike[U] | U | Unit]
     ): PromiseLike[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, PromiseLike[U] | U | Unit]): PromiseLike[U] = js.native
   }
 }

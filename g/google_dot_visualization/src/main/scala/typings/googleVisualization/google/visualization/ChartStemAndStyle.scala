@@ -2,15 +2,13 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartStemAndStyle extends StObject {
   
-  var stem: js.UndefOr[ChartStem] = js.native
+  var stem: js.UndefOr[ChartStem] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object ChartStemAndStyle {
   

@@ -2,23 +2,21 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBackendServiceGroupHealth extends StObject {
   
   /**
     * Health state of the backend instances or endpoints in requested instance
     * or network endpoint group, determined based on configured health checks.
     */
-  var healthStatus: js.UndefOr[js.Array[SchemaHealthStatus]] = js.native
+  var healthStatus: js.UndefOr[js.Array[SchemaHealthStatus]] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#backendServiceGroupHealth
     * for the health of backend services.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendServiceGroupHealth {
   

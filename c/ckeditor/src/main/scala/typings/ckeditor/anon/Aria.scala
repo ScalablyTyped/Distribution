@@ -2,15 +2,13 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aria extends StObject {
   
-  var aria: js.Array[String] = js.native
+  var aria: js.Array[String]
   
-  var display: js.Array[String] = js.native
+  var display: js.Array[String]
 }
 object Aria {
   

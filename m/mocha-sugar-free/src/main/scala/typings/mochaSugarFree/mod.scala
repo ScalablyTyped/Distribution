@@ -22,7 +22,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,212 +31,305 @@ object mod extends Shortcut {
   val ^ : AnyInterface = js.native
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Omit<mocha-sugar-free.mocha-sugar-free.BDD, 'detectedInterface'> & mocha-sugar-free.mocha-sugar-free.Omit<mocha-sugar-free.mocha-sugar-free.TDD, 'detectedInterface'> & mocha-sugar-free.mocha-sugar-free.Omit<mocha-sugar-free.mocha-sugar-free.QUnit, 'detectedInterface'> & mocha-sugar-free.mocha-sugar-free.BaseInterface */
-  @js.native
   trait AnyInterface extends StObject {
     
-    def after(): Unit = js.native
-    def after(fn: HookFunc): Unit = js.native
-    def after(options: OptionsfnHookFuncundefine): Unit = js.native
-    def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def after(): Unit
+    def after(fn: HookFunc): Unit
+    def after(options: OptionsfnHookFuncundefine): Unit
+    def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     
-    def afterEach(): Unit = js.native
-    def afterEach(fn: HookFunc): Unit = js.native
-    def afterEach(options: OptionsfnHookFuncundefine): Unit = js.native
-    def afterEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def afterEach(): Unit
+    def afterEach(fn: HookFunc): Unit
+    def afterEach(options: OptionsfnHookFuncundefine): Unit
+    def afterEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("afterEach")
-    var afterEach_Original: HookFunction = js.native
+    var afterEach_Original: HookFunction
     
     @JSName("after")
-    var after_Original: HookFunction = js.native
+    var after_Original: HookFunction
     
-    def before(): Unit = js.native
-    def before(fn: HookFunc): Unit = js.native
-    def before(options: OptionsfnHookFuncundefine): Unit = js.native
-    def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def before(): Unit
+    def before(fn: HookFunc): Unit
+    def before(options: OptionsfnHookFuncundefine): Unit
+    def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     
-    def beforeEach(): Unit = js.native
-    def beforeEach(fn: HookFunc): Unit = js.native
-    def beforeEach(options: OptionsfnHookFuncundefine): Unit = js.native
-    def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def beforeEach(): Unit
+    def beforeEach(fn: HookFunc): Unit
+    def beforeEach(options: OptionsfnHookFuncundefine): Unit
+    def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("beforeEach")
-    var beforeEach_Original: HookFunction = js.native
+    var beforeEach_Original: HookFunction
     
     @JSName("before")
-    var before_Original: HookFunction = js.native
+    var before_Original: HookFunction
     
     // tslint:disable-next-line: unified-signatures
-    def context(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def context(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
-    def context(title: String): Suite_ = js.native
-    def context(title: String, fn: SuiteFunc): Suite_ = js.native
-    def context(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def context(options: OptionstitlestringfnSuite): Suite_
+    def context(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
+    def context(title: String): Suite_
+    def context(title: String, fn: SuiteFunc): Suite_
+    def context(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     @JSName("context")
-    var context_Original: SuiteFunction = js.native
+    var context_Original: SuiteFunction
     
     // tslint:disable-next-line: unified-signatures
-    def describe(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def describe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
-    def describe(title: String): Suite_ = js.native
-    def describe(title: String, fn: SuiteFunc): Suite_ = js.native
-    def describe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def describe(options: OptionstitlestringfnSuite): Suite_
+    def describe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
+    def describe(title: String): Suite_
+    def describe(title: String, fn: SuiteFunc): Suite_
+    def describe(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     @JSName("describe")
-    var describe_Original: SuiteFunction = js.native
+    var describe_Original: SuiteFunction
     
     /**
       * The detected Mocha interface.
       *
       * @default "bdd"
       */
-    var detectedInterface: bdd | tdd | qunit = js.native
+    var detectedInterface: bdd | tdd | qunit
     
-    def it(fn: TestCase): Test_ = js.native
+    def it(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def it(options: Optionsasyncfalseundefine): Test_ = js.native
-    def it(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def it(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def it(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def it(title: String): Test_ = js.native
-    def it(title: String, fn: TestCase): Test_ = js.native
-    def it(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def it(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def it(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def it(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def it(options: Optionsasyncfalseundefine): Test_
+    def it(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def it(options: OptionsasynctruefnTestCas): Test_
+    def it(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def it(title: String): Test_
+    def it(title: String, fn: TestCase): Test_
+    def it(title: String, options: Optionsasyncfalseundefine): Test_
+    def it(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def it(title: String, options: OptionsasynctruefnTestCas): Test_
+    def it(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("it")
-    var it_Original: TestFunction = js.native
+    var it_Original: TestFunction
     
-    def run(): Unit = js.native
+    def run(): Unit
     @JSName("run")
-    var run_Original: js.Function0[Unit] = js.native
+    var run_Original: js.Function0[Unit]
     
-    def setup(): Unit = js.native
-    def setup(fn: HookFunc): Unit = js.native
-    def setup(options: OptionsfnHookFuncundefine): Unit = js.native
-    def setup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def setup(): Unit
+    def setup(fn: HookFunc): Unit
+    def setup(options: OptionsfnHookFuncundefine): Unit
+    def setup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("setup")
-    var setup_Original: HookFunction = js.native
+    var setup_Original: HookFunction
     
-    def specify(fn: TestCase): Test_ = js.native
+    def specify(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def specify(options: Optionsasyncfalseundefine): Test_ = js.native
-    def specify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def specify(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def specify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def specify(title: String): Test_ = js.native
-    def specify(title: String, fn: TestCase): Test_ = js.native
-    def specify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def specify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def specify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def specify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def specify(options: Optionsasyncfalseundefine): Test_
+    def specify(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def specify(options: OptionsasynctruefnTestCas): Test_
+    def specify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def specify(title: String): Test_
+    def specify(title: String, fn: TestCase): Test_
+    def specify(title: String, options: Optionsasyncfalseundefine): Test_
+    def specify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def specify(title: String, options: OptionsasynctruefnTestCas): Test_
+    def specify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("specify")
-    var specify_Original: TestFunction = js.native
+    var specify_Original: TestFunction
     
     // tslint:disable-next-line: unified-signatures
-    def suite(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String): Suite_ = js.native
-    def suite(title: String, fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def suite(options: OptionstitlestringfnSuite): Suite_
+    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
+    def suite(title: String): Suite_
+    def suite(title: String, fn: SuiteFunc): Suite_
+    def suite(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     
-    def suiteSetup(): Unit = js.native
-    def suiteSetup(fn: HookFunc): Unit = js.native
-    def suiteSetup(options: OptionsfnHookFuncundefine): Unit = js.native
-    def suiteSetup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def suiteSetup(): Unit
+    def suiteSetup(fn: HookFunc): Unit
+    def suiteSetup(options: OptionsfnHookFuncundefine): Unit
+    def suiteSetup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("suiteSetup")
-    var suiteSetup_Original: HookFunction = js.native
+    var suiteSetup_Original: HookFunction
     
-    def suiteTeardown(): Unit = js.native
-    def suiteTeardown(fn: HookFunc): Unit = js.native
-    def suiteTeardown(options: OptionsfnHookFuncundefine): Unit = js.native
-    def suiteTeardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def suiteTeardown(): Unit
+    def suiteTeardown(fn: HookFunc): Unit
+    def suiteTeardown(options: OptionsfnHookFuncundefine): Unit
+    def suiteTeardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("suiteTeardown")
-    var suiteTeardown_Original: HookFunction = js.native
+    var suiteTeardown_Original: HookFunction
     
     @JSName("suite")
-    var suite_Original: SuiteFunction = js.native
+    var suite_Original: SuiteFunction
     
-    def teardown(): Unit = js.native
-    def teardown(fn: HookFunc): Unit = js.native
-    def teardown(options: OptionsfnHookFuncundefine): Unit = js.native
-    def teardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def teardown(): Unit
+    def teardown(fn: HookFunc): Unit
+    def teardown(options: OptionsfnHookFuncundefine): Unit
+    def teardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     @JSName("teardown")
-    var teardown_Original: HookFunction = js.native
+    var teardown_Original: HookFunction
     
-    def test(fn: TestCase): Test_ = js.native
+    def test(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def test(options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def test(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def test(title: String): Test_ = js.native
-    def test(title: String, fn: TestCase): Test_ = js.native
-    def test(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def test(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def test(options: Optionsasyncfalseundefine): Test_
+    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def test(options: OptionsasynctruefnTestCas): Test_
+    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def test(title: String): Test_
+    def test(title: String, fn: TestCase): Test_
+    def test(title: String, options: Optionsasyncfalseundefine): Test_
+    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def test(title: String, options: OptionsasynctruefnTestCas): Test_
+    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("test")
-    var test_Original: TestFunction = js.native
+    var test_Original: TestFunction
     
     // tslint:disable-next-line: unified-signatures
-    def xcontext(options: OptionstitlestringfnSuite): Suite_ | Unit = js.native
-    def xcontext(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xcontext(title: String): Suite_ | Unit = js.native
-    def xcontext(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xcontext(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
-    def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
-    def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xcontext(options: OptionstitlestringfnSuite): Suite_ | Unit
+    def xcontext(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit
+    def xcontext(title: String): Suite_ | Unit
+    def xcontext(title: String, fn: SuiteFunc): Suite_ | Unit
+    def xcontext(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit
+    def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit
+    def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit
     @JSName("xcontext")
-    var xcontext_Original: PendingSuiteFunction = js.native
+    var xcontext_Original: PendingSuiteFunction
     
     // tslint:disable-next-line: unified-signatures
-    def xdescribe(options: OptionstitlestringfnSuite): Suite_ | Unit = js.native
-    def xdescribe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xdescribe(title: String): Suite_ | Unit = js.native
-    def xdescribe(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xdescribe(options: OptionstitlestringfnSuite): Suite_ | Unit
+    def xdescribe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit
+    def xdescribe(title: String): Suite_ | Unit
+    def xdescribe(title: String, fn: SuiteFunc): Suite_ | Unit
+    def xdescribe(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit
+    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit
+    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit
     @JSName("xdescribe")
-    var xdescribe_Original: PendingSuiteFunction = js.native
+    var xdescribe_Original: PendingSuiteFunction
     
-    def xit(fn: TestCase): Test_ = js.native
+    def xit(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def xit(options: Optionsasyncfalseundefine): Test_ = js.native
-    def xit(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def xit(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xit(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def xit(title: String): Test_ = js.native
-    def xit(title: String, fn: TestCase): Test_ = js.native
-    def xit(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def xit(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def xit(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xit(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xit(options: Optionsasyncfalseundefine): Test_
+    def xit(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def xit(options: OptionsasynctruefnTestCas): Test_
+    def xit(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def xit(title: String): Test_
+    def xit(title: String, fn: TestCase): Test_
+    def xit(title: String, options: Optionsasyncfalseundefine): Test_
+    def xit(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def xit(title: String, options: OptionsasynctruefnTestCas): Test_
+    def xit(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("xit")
-    var xit_Original: PendingTestFunction = js.native
+    var xit_Original: PendingTestFunction
     
-    def xspecify(fn: TestCase): Test_ = js.native
+    def xspecify(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def xspecify(options: Optionsasyncfalseundefine): Test_ = js.native
-    def xspecify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def xspecify(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xspecify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def xspecify(title: String): Test_ = js.native
-    def xspecify(title: String, fn: TestCase): Test_ = js.native
-    def xspecify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def xspecify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def xspecify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xspecify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xspecify(options: Optionsasyncfalseundefine): Test_
+    def xspecify(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def xspecify(options: OptionsasynctruefnTestCas): Test_
+    def xspecify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def xspecify(title: String): Test_
+    def xspecify(title: String, fn: TestCase): Test_
+    def xspecify(title: String, options: Optionsasyncfalseundefine): Test_
+    def xspecify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def xspecify(title: String, options: OptionsasynctruefnTestCas): Test_
+    def xspecify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("xspecify")
-    var xspecify_Original: PendingTestFunction = js.native
+    var xspecify_Original: PendingTestFunction
+  }
+  object AnyInterface {
+    
+    @scala.inline
+    def apply(
+      after: HookFunction,
+      afterEach: HookFunction,
+      before: HookFunction,
+      beforeEach: HookFunction,
+      context: SuiteFunction,
+      describe: SuiteFunction,
+      detectedInterface: bdd | tdd | qunit,
+      it: TestFunction,
+      run: () => Unit,
+      setup: HookFunction,
+      specify: TestFunction,
+      suite: SuiteFunction,
+      suiteSetup: HookFunction,
+      suiteTeardown: HookFunction,
+      teardown: HookFunction,
+      test: TestFunction,
+      xcontext: PendingSuiteFunction,
+      xdescribe: PendingSuiteFunction,
+      xit: PendingTestFunction,
+      xspecify: PendingTestFunction
+    ): AnyInterface = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], afterEach = afterEach.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], beforeEach = beforeEach.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any], detectedInterface = detectedInterface.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), setup = setup.asInstanceOf[js.Any], specify = specify.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], suiteSetup = suiteSetup.asInstanceOf[js.Any], suiteTeardown = suiteTeardown.asInstanceOf[js.Any], teardown = teardown.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], xcontext = xcontext.asInstanceOf[js.Any], xdescribe = xdescribe.asInstanceOf[js.Any], xit = xit.asInstanceOf[js.Any], xspecify = xspecify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AnyInterface]
+    }
+    
+    @scala.inline
+    implicit class AnyInterfaceMutableBuilder[Self <: AnyInterface] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  trait BDD extends BaseInterface {
+  trait BDD
+    extends StObject
+       with BaseInterface {
     
     /**
       * [bdd]
@@ -246,8 +338,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def after(): Unit = js.native
-    def after(fn: HookFunc): Unit = js.native
+    def after(): Unit
+    def after(fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -255,8 +347,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def after(options: OptionsfnHookFuncundefine): Unit = js.native
-    def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def after(options: OptionsfnHookFuncundefine): Unit
+    def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     
     /**
       * [bdd]
@@ -265,8 +357,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def afterEach(): Unit = js.native
-    def afterEach(fn: HookFunc): Unit = js.native
+    def afterEach(): Unit
+    def afterEach(fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -274,8 +366,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def afterEach(options: OptionsfnHookFuncundefine): Unit = js.native
-    def afterEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def afterEach(options: OptionsfnHookFuncundefine): Unit
+    def afterEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -284,7 +376,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#afterEach
       */
     @JSName("afterEach")
-    var afterEach_Original: HookFunction = js.native
+    var afterEach_Original: HookFunction
     
     /**
       * [bdd]
@@ -294,7 +386,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#after
       */
     @JSName("after")
-    var after_Original: HookFunction = js.native
+    var after_Original: HookFunction
     
     /**
       * [bdd]
@@ -303,8 +395,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def before(): Unit = js.native
-    def before(fn: HookFunc): Unit = js.native
+    def before(): Unit
+    def before(fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -312,8 +404,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def before(options: OptionsfnHookFuncundefine): Unit = js.native
-    def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def before(options: OptionsfnHookFuncundefine): Unit
+    def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     
     /**
       * [bdd]
@@ -322,8 +414,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def beforeEach(): Unit = js.native
-    def beforeEach(fn: HookFunc): Unit = js.native
+    def beforeEach(): Unit
+    def beforeEach(fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -331,8 +423,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def beforeEach(options: OptionsfnHookFuncundefine): Unit = js.native
-    def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def beforeEach(options: OptionsfnHookFuncundefine): Unit
+    def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [bdd]
       *
@@ -341,7 +433,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#beforeEach
       */
     @JSName("beforeEach")
-    var beforeEach_Original: HookFunction = js.native
+    var beforeEach_Original: HookFunction
     
     /**
       * [bdd]
@@ -351,7 +443,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#before
       */
     @JSName("before")
-    var before_Original: HookFunction = js.native
+    var before_Original: HookFunction
     
     // tslint:disable-next-line: unified-signatures
     /**
@@ -359,25 +451,25 @@ object mod extends Shortcut {
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def context(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def context(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
+    def context(options: OptionstitlestringfnSuite): Suite_
+    def context(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
     /**
       * [bdd]
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def context(title: String): Suite_ = js.native
-    def context(title: String, fn: SuiteFunc): Suite_ = js.native
-    def context(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def context(title: String): Suite_
+    def context(title: String, fn: SuiteFunc): Suite_
+    def context(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     /**
       * [bdd]
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
     @JSName("context")
-    var context_Original: SuiteFunction = js.native
+    var context_Original: SuiteFunction
     
     // tslint:disable-next-line: unified-signatures
     /**
@@ -385,28 +477,28 @@ object mod extends Shortcut {
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def describe(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def describe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
+    def describe(options: OptionstitlestringfnSuite): Suite_
+    def describe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
     /**
       * [bdd]
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def describe(title: String): Suite_ = js.native
-    def describe(title: String, fn: SuiteFunc): Suite_ = js.native
-    def describe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def describe(title: String): Suite_
+    def describe(title: String, fn: SuiteFunc): Suite_
+    def describe(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     /**
       * [bdd]
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
     @JSName("describe")
-    var describe_Original: SuiteFunction = js.native
+    var describe_Original: SuiteFunction
     
     @JSName("detectedInterface")
-    var detectedInterface_BDD: bdd = js.native
+    var detectedInterface_BDD: bdd
     
     /**
       * [bdd]
@@ -415,7 +507,7 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(fn: TestCase): Test_ = js.native
+    def it(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
     /**
       * [bdd]
@@ -424,8 +516,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(options: Optionsasyncfalseundefine): Test_ = js.native
-    def it(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def it(options: Optionsasyncfalseundefine): Test_
+    def it(options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -433,8 +525,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def it(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def it(options: OptionsasynctruefnTestCas): Test_
+    def it(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -442,8 +534,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(title: String): Test_ = js.native
-    def it(title: String, fn: TestCase): Test_ = js.native
+    def it(title: String): Test_
+    def it(title: String, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -451,8 +543,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def it(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def it(title: String, options: Optionsasyncfalseundefine): Test_
+    def it(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -460,8 +552,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def it(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def it(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def it(title: String, options: OptionsasynctruefnTestCas): Test_
+    def it(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -470,7 +562,7 @@ object mod extends Shortcut {
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
     @JSName("it")
-    var it_Original: TestFunction = js.native
+    var it_Original: TestFunction
     
     /**
       * [bdd]
@@ -479,7 +571,7 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(fn: TestCase): Test_ = js.native
+    def specify(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
     /**
       * [bdd]
@@ -488,8 +580,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(options: Optionsasyncfalseundefine): Test_ = js.native
-    def specify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def specify(options: Optionsasyncfalseundefine): Test_
+    def specify(options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -497,8 +589,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def specify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def specify(options: OptionsasynctruefnTestCas): Test_
+    def specify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -506,8 +598,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(title: String): Test_ = js.native
-    def specify(title: String, fn: TestCase): Test_ = js.native
+    def specify(title: String): Test_
+    def specify(title: String, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -515,8 +607,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def specify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def specify(title: String, options: Optionsasyncfalseundefine): Test_
+    def specify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -524,8 +616,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def specify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def specify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def specify(title: String, options: OptionsasynctruefnTestCas): Test_
+    def specify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -534,7 +626,7 @@ object mod extends Shortcut {
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
     @JSName("specify")
-    var specify_Original: TestFunction = js.native
+    var specify_Original: TestFunction
     
     // tslint:disable-next-line: unified-signatures
     /**
@@ -544,8 +636,8 @@ object mod extends Shortcut {
       *
       * Indicates this suite should not be executed.
       */
-    def xcontext(options: OptionstitlestringfnSuite): Suite_ | Unit = js.native
-    def xcontext(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xcontext(options: OptionstitlestringfnSuite): Suite_ | Unit
+    def xcontext(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit
     /**
       * [bdd]
       *
@@ -553,11 +645,11 @@ object mod extends Shortcut {
       *
       * Indicates this suite should not be executed.
       */
-    def xcontext(title: String): Suite_ | Unit = js.native
-    def xcontext(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xcontext(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
-    def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
-    def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xcontext(title: String): Suite_ | Unit
+    def xcontext(title: String, fn: SuiteFunc): Suite_ | Unit
+    def xcontext(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit
+    def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit
+    def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit
     /**
       * [bdd]
       *
@@ -566,7 +658,7 @@ object mod extends Shortcut {
       * Indicates this suite should not be executed.
       */
     @JSName("xcontext")
-    var xcontext_Original: PendingSuiteFunction = js.native
+    var xcontext_Original: PendingSuiteFunction
     
     // tslint:disable-next-line: unified-signatures
     /**
@@ -576,8 +668,8 @@ object mod extends Shortcut {
       *
       * Indicates this suite should not be executed.
       */
-    def xdescribe(options: OptionstitlestringfnSuite): Suite_ | Unit = js.native
-    def xdescribe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xdescribe(options: OptionstitlestringfnSuite): Suite_ | Unit
+    def xdescribe(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit
     /**
       * [bdd]
       *
@@ -585,11 +677,11 @@ object mod extends Shortcut {
       *
       * Indicates this suite should not be executed.
       */
-    def xdescribe(title: String): Suite_ | Unit = js.native
-    def xdescribe(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
-    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+    def xdescribe(title: String): Suite_ | Unit
+    def xdescribe(title: String, fn: SuiteFunc): Suite_ | Unit
+    def xdescribe(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit
+    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit
+    def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit
     /**
       * [bdd]
       *
@@ -598,7 +690,7 @@ object mod extends Shortcut {
       * Indicates this suite should not be executed.
       */
     @JSName("xdescribe")
-    var xdescribe_Original: PendingSuiteFunction = js.native
+    var xdescribe_Original: PendingSuiteFunction
     
     /**
       * [bdd]
@@ -609,7 +701,7 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(fn: TestCase): Test_ = js.native
+    def xit(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
     /**
       * [bdd]
@@ -620,8 +712,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(options: Optionsasyncfalseundefine): Test_ = js.native
-    def xit(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def xit(options: Optionsasyncfalseundefine): Test_
+    def xit(options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -631,8 +723,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xit(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xit(options: OptionsasynctruefnTestCas): Test_
+    def xit(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -642,8 +734,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(title: String): Test_ = js.native
-    def xit(title: String, fn: TestCase): Test_ = js.native
+    def xit(title: String): Test_
+    def xit(title: String, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -653,8 +745,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def xit(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def xit(title: String, options: Optionsasyncfalseundefine): Test_
+    def xit(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -664,8 +756,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xit(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xit(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xit(title: String, options: OptionsasynctruefnTestCas): Test_
+    def xit(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -676,7 +768,7 @@ object mod extends Shortcut {
       * Indicates this test should not be executed.
       */
     @JSName("xit")
-    var xit_Original: PendingTestFunction = js.native
+    var xit_Original: PendingTestFunction
     
     /**
       * [bdd]
@@ -687,7 +779,7 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(fn: TestCase): Test_ = js.native
+    def xspecify(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
     /**
       * [bdd]
@@ -698,8 +790,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(options: Optionsasyncfalseundefine): Test_ = js.native
-    def xspecify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def xspecify(options: Optionsasyncfalseundefine): Test_
+    def xspecify(options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -709,8 +801,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xspecify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xspecify(options: OptionsasynctruefnTestCas): Test_
+    def xspecify(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -720,8 +812,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(title: String): Test_ = js.native
-    def xspecify(title: String, fn: TestCase): Test_ = js.native
+    def xspecify(title: String): Test_
+    def xspecify(title: String, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -731,8 +823,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def xspecify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def xspecify(title: String, options: Optionsasyncfalseundefine): Test_
+    def xspecify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [bdd]
       *
@@ -742,8 +834,8 @@ object mod extends Shortcut {
       *
       * Indicates this test should not be executed.
       */
-    def xspecify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def xspecify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def xspecify(title: String, options: OptionsasynctruefnTestCas): Test_
+    def xspecify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [bdd]
       *
@@ -754,11 +846,75 @@ object mod extends Shortcut {
       * Indicates this test should not be executed.
       */
     @JSName("xspecify")
-    var xspecify_Original: PendingTestFunction = js.native
+    var xspecify_Original: PendingTestFunction
+  }
+  object BDD {
+    
+    @scala.inline
+    def apply(
+      after: HookFunction,
+      afterEach: HookFunction,
+      before: HookFunction,
+      beforeEach: HookFunction,
+      context: SuiteFunction,
+      describe: SuiteFunction,
+      it: TestFunction,
+      run: () => Unit,
+      specify: TestFunction,
+      xcontext: PendingSuiteFunction,
+      xdescribe: PendingSuiteFunction,
+      xit: PendingTestFunction,
+      xspecify: PendingTestFunction
+    ): BDD = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], afterEach = afterEach.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], beforeEach = beforeEach.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any], detectedInterface = "bdd", it = it.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), specify = specify.asInstanceOf[js.Any], xcontext = xcontext.asInstanceOf[js.Any], xdescribe = xdescribe.asInstanceOf[js.Any], xit = xit.asInstanceOf[js.Any], xspecify = xspecify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BDD]
+    }
+    
+    @scala.inline
+    implicit class BDDMutableBuilder[Self <: BDD] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDetectedInterface(value: bdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+    }
   }
   
   // #region Test functions
-  @js.native
   trait BaseInterface extends StObject {
     
     /**
@@ -766,7 +922,7 @@ object mod extends Shortcut {
       *
       * @default "bdd"
       */
-    var detectedInterface: bdd | tdd | qunit = js.native
+    var detectedInterface: bdd | tdd | qunit
     
     /**
       * Triggers root suite execution.
@@ -775,7 +931,7 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#runWithSuite
       */
-    def run(): Unit = js.native
+    def run(): Unit
   }
   object BaseInterface {
     
@@ -811,7 +967,7 @@ object mod extends Shortcut {
     def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
     def apply(title: String): Suite_ = js.native
     def apply(title: String, fn: SuiteFunc): Suite_ = js.native
-    def apply(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+    def apply(title: String, options: Unit, fn: SuiteFunc): Suite_ = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
   }
@@ -842,22 +998,21 @@ object mod extends Shortcut {
     def apply(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
   }
   
-  @js.native
   trait HookContext extends StObject {
     
-    var hook: before | after | beforeEach | afterEach = js.native
+    var hook: before | after | beforeEach | afterEach
     
-    var isHook: `true` = js.native
+    var isHook: `true`
     
-    var isSuite: `false` = js.native
+    var isSuite: `false`
     
-    var isTest: `false` = js.native
+    var isTest: `false`
   }
   object HookContext {
     
     @scala.inline
-    def apply(hook: before | after | beforeEach | afterEach, isHook: `true`, isSuite: `false`, isTest: `false`): HookContext = {
-      val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], isHook = isHook.asInstanceOf[js.Any], isSuite = isSuite.asInstanceOf[js.Any], isTest = isTest.asInstanceOf[js.Any])
+    def apply(hook: before | after | beforeEach | afterEach): HookContext = {
+      val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], isHook = true, isSuite = false, isTest = false)
       __obj.asInstanceOf[HookContext]
     }
     
@@ -878,7 +1033,7 @@ object mod extends Shortcut {
     }
   }
   
-  type HookFunc = js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* context */ HookContext, Unit]
+  type HookFunc = js.ThisFunction1[/* this */ Unit, /* context */ HookContext, Unit]
   
   // #endregion
   // #region Test function types
@@ -901,64 +1056,64 @@ object mod extends Shortcut {
   /** Construct a type with the properties of T except for those in type K. */
   type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
   trait Options
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.native
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -1057,7 +1212,7 @@ object mod extends Shortcut {
     def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ | Unit = js.native
     def apply(title: String): Suite_ | Unit = js.native
     def apply(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def apply(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
+    def apply(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
   }
@@ -1088,55 +1243,76 @@ object mod extends Shortcut {
     def apply(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
   }
   
-  @js.native
-  trait QUnit extends BaseInterface {
+  trait QUnit
+    extends StObject
+       with BaseInterface {
     
     @JSName("detectedInterface")
-    var detectedInterface_QUnit: qunit = js.native
+    var detectedInterface_QUnit: qunit
     
     // tslint:disable-next-line: unified-signatures
-    def suite(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String): Suite_ = js.native
-    def suite(title: String, fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def suite(options: OptionstitlestringfnSuite): Suite_
+    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
+    def suite(title: String): Suite_
+    def suite(title: String, fn: SuiteFunc): Suite_
+    def suite(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     @JSName("suite")
-    var suite_Original: SuiteFunction = js.native
+    var suite_Original: SuiteFunction
     
-    def test(fn: TestCase): Test_ = js.native
+    def test(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
-    def test(options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def test(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
-    def test(title: String): Test_ = js.native
-    def test(title: String, fn: TestCase): Test_ = js.native
-    def test(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
-    def test(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def test(options: Optionsasyncfalseundefine): Test_
+    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def test(options: OptionsasynctruefnTestCas): Test_
+    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
+    def test(title: String): Test_
+    def test(title: String, fn: TestCase): Test_
+    def test(title: String, options: Optionsasyncfalseundefine): Test_
+    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
+    def test(title: String, options: OptionsasynctruefnTestCas): Test_
+    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     @JSName("test")
-    var test_Original: TestFunction = js.native
+    var test_Original: TestFunction
+  }
+  object QUnit {
+    
+    @scala.inline
+    def apply(run: () => Unit, suite: SuiteFunction, test: TestFunction): QUnit = {
+      val __obj = js.Dynamic.literal(detectedInterface = "qunit", run = js.Any.fromFunction0(run), suite = suite.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QUnit]
+    }
+    
+    @scala.inline
+    implicit class QUnitMutableBuilder[Self <: QUnit] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDetectedInterface(value: qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    }
   }
   
   // #endregion
   // #region Test context
-  @js.native
   trait SuiteContext extends StObject {
     
-    var isHook: `false` = js.native
+    var isHook: `false`
     
-    var isSuite: `true` = js.native
+    var isSuite: `true`
     
-    var isTest: `false` = js.native
+    var isTest: `false`
   }
   object SuiteContext {
     
     @scala.inline
-    def apply(isHook: `false`, isSuite: `true`, isTest: `false`): SuiteContext = {
-      val __obj = js.Dynamic.literal(isHook = isHook.asInstanceOf[js.Any], isSuite = isSuite.asInstanceOf[js.Any], isTest = isTest.asInstanceOf[js.Any])
+    def apply(): SuiteContext = {
+      val __obj = js.Dynamic.literal(isHook = false, isSuite = true, isTest = false)
       __obj.asInstanceOf[SuiteContext]
     }
     
@@ -1154,7 +1330,7 @@ object mod extends Shortcut {
     }
   }
   
-  type SuiteFunc = js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* context */ SuiteContext, Unit]
+  type SuiteFunc = js.ThisFunction1[/* this */ Unit, /* context */ SuiteContext, Unit]
   
   /**
     * [bdd, tdd, qunit]
@@ -1169,7 +1345,7 @@ object mod extends Shortcut {
     def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
     def apply(title: String): Suite_ = js.native
     def apply(title: String, fn: SuiteFunc): Suite_ = js.native
-    def apply(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+    def apply(title: String, options: Unit, fn: SuiteFunc): Suite_ = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
     def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
     
@@ -1188,7 +1364,7 @@ object mod extends Shortcut {
       */
     def only(title: String): Suite_ = js.native
     def only(title: String, fn: SuiteFunc): Suite_ = js.native
-    def only(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+    def only(title: String, options: Unit, fn: SuiteFunc): Suite_ = js.native
     def only(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
     def only(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
     /**
@@ -1214,7 +1390,7 @@ object mod extends Shortcut {
       */
     def skip(title: String): Suite_ | Unit = js.native
     def skip(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-    def skip(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
+    def skip(title: String, options: Unit, fn: SuiteFunc): Suite_ | Unit = js.native
     def skip(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
     def skip(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
     /**
@@ -1226,11 +1402,12 @@ object mod extends Shortcut {
     var skip_Original: PendingSuiteFunction = js.native
   }
   
-  @js.native
-  trait TDD extends BaseInterface {
+  trait TDD
+    extends StObject
+       with BaseInterface {
     
     @JSName("detectedInterface")
-    var detectedInterface_TDD: tdd = js.native
+    var detectedInterface_TDD: tdd
     
     /**
       * [tdd]
@@ -1239,8 +1416,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def setup(): Unit = js.native
-    def setup(fn: HookFunc): Unit = js.native
+    def setup(): Unit
+    def setup(fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1248,8 +1425,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def setup(options: OptionsfnHookFuncundefine): Unit = js.native
-    def setup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def setup(options: OptionsfnHookFuncundefine): Unit
+    def setup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1258,7 +1435,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#beforeEach
       */
     @JSName("setup")
-    var setup_Original: HookFunction = js.native
+    var setup_Original: HookFunction
     
     // tslint:disable-next-line: unified-signatures
     /**
@@ -1266,18 +1443,18 @@ object mod extends Shortcut {
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def suite(options: OptionstitlestringfnSuite): Suite_ = js.native
-    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
+    def suite(options: OptionstitlestringfnSuite): Suite_
+    def suite(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_
     /**
       * [tdd, qunit]
       *
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
-    def suite(title: String): Suite_ = js.native
-    def suite(title: String, fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
-    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+    def suite(title: String): Suite_
+    def suite(title: String, fn: SuiteFunc): Suite_
+    def suite(title: String, options: Unit, fn: SuiteFunc): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin): Suite_
+    def suite(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_
     
     /**
       * [tdd]
@@ -1286,8 +1463,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def suiteSetup(): Unit = js.native
-    def suiteSetup(fn: HookFunc): Unit = js.native
+    def suiteSetup(): Unit
+    def suiteSetup(fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1295,8 +1472,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def suiteSetup(options: OptionsfnHookFuncundefine): Unit = js.native
-    def suiteSetup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def suiteSetup(options: OptionsfnHookFuncundefine): Unit
+    def suiteSetup(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1305,7 +1482,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#before
       */
     @JSName("suiteSetup")
-    var suiteSetup_Original: HookFunction = js.native
+    var suiteSetup_Original: HookFunction
     
     /**
       * [tdd]
@@ -1314,8 +1491,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def suiteTeardown(): Unit = js.native
-    def suiteTeardown(fn: HookFunc): Unit = js.native
+    def suiteTeardown(): Unit
+    def suiteTeardown(fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1323,8 +1500,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def suiteTeardown(options: OptionsfnHookFuncundefine): Unit = js.native
-    def suiteTeardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def suiteTeardown(options: OptionsfnHookFuncundefine): Unit
+    def suiteTeardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1333,7 +1510,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#after
       */
     @JSName("suiteTeardown")
-    var suiteTeardown_Original: HookFunction = js.native
+    var suiteTeardown_Original: HookFunction
     
     /**
       * [tdd, qunit]
@@ -1341,7 +1518,7 @@ object mod extends Shortcut {
       * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
       */
     @JSName("suite")
-    var suite_Original: SuiteFunction = js.native
+    var suite_Original: SuiteFunction
     
     /**
       * [tdd]
@@ -1350,8 +1527,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def teardown(): Unit = js.native
-    def teardown(fn: HookFunc): Unit = js.native
+    def teardown(): Unit
+    def teardown(fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1359,8 +1536,8 @@ object mod extends Shortcut {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def teardown(options: OptionsfnHookFuncundefine): Unit = js.native
-    def teardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+    def teardown(options: OptionsfnHookFuncundefine): Unit
+    def teardown(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit
     /**
       * [tdd]
       *
@@ -1369,7 +1546,7 @@ object mod extends Shortcut {
       * @see https://mochajs.org/api/global.html#afterEach
       */
     @JSName("teardown")
-    var teardown_Original: HookFunction = js.native
+    var teardown_Original: HookFunction
     
     /**
       * [tdd, qunit]
@@ -1378,7 +1555,7 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(fn: TestCase): Test_ = js.native
+    def test(fn: TestCase): Test_
     // tslint:disable-next-line: unified-signatures
     /**
       * [tdd, qunit]
@@ -1387,8 +1564,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def test(options: Optionsasyncfalseundefine): Test_
+    def test(options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [tdd, qunit]
       *
@@ -1396,8 +1573,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def test(options: OptionsasynctruefnTestCas): Test_
+    def test(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [tdd, qunit]
       *
@@ -1405,8 +1582,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(title: String): Test_ = js.native
-    def test(title: String, fn: TestCase): Test_ = js.native
+    def test(title: String): Test_
+    def test(title: String, fn: TestCase): Test_
     /**
       * [tdd, qunit]
       *
@@ -1414,8 +1591,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
-    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
+    def test(title: String, options: Optionsasyncfalseundefine): Test_
+    def test(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_
     /**
       * [tdd, qunit]
       *
@@ -1423,8 +1600,8 @@ object mod extends Shortcut {
       *
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
-    def test(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
-    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+    def test(title: String, options: OptionsasynctruefnTestCas): Test_
+    def test(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_
     /**
       * [tdd, qunit]
       *
@@ -1433,19 +1610,58 @@ object mod extends Shortcut {
       * The name of the function is used as the name of the test if `title` is not supplied.
       */
     @JSName("test")
-    var test_Original: TestFunction = js.native
+    var test_Original: TestFunction
+  }
+  object TDD {
+    
+    @scala.inline
+    def apply(
+      run: () => Unit,
+      setup: HookFunction,
+      suite: SuiteFunction,
+      suiteSetup: HookFunction,
+      suiteTeardown: HookFunction,
+      teardown: HookFunction,
+      test: TestFunction
+    ): TDD = {
+      val __obj = js.Dynamic.literal(detectedInterface = "tdd", run = js.Any.fromFunction0(run), setup = setup.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], suiteSetup = suiteSetup.asInstanceOf[js.Any], suiteTeardown = suiteTeardown.asInstanceOf[js.Any], teardown = teardown.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TDD]
+    }
+    
+    @scala.inline
+    implicit class TDDMutableBuilder[Self <: TDD] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDetectedInterface(value: tdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    }
   }
   
-  type TestCase = js.ThisFunction1[
-    /* this */ js.UndefOr[scala.Nothing], 
-    /* context */ TestContext, 
-    Unit | js.Thenable[js.Any]
-  ]
+  type TestCase = js.ThisFunction1[/* this */ Unit, /* context */ TestContext, Unit | js.Thenable[js.Any]]
   
-  type TestCaseWithDone = js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* context */ TestContextWithDone, Unit]
+  type TestCaseWithDone = js.ThisFunction1[/* this */ Unit, /* context */ TestContextWithDone, Unit]
   
   @js.native
-  trait TestContext extends TestContextBase {
+  trait TestContext
+    extends StObject
+       with TestContextBase {
     
     /**
       * Mark a test as completed.
@@ -1498,7 +1714,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait TestContextWithDone extends TestContextBase {
+  trait TestContextWithDone
+    extends StObject
+       with TestContextBase {
     
     /**
       * Mark a test as completed.

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InviteMembersRequest extends StObject {
   
   /**
     * The list of account IDs of the AWS accounts to invite to Security Hub as members. 
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.native
+  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }
 object InviteMembersRequest {
   

@@ -10,7 +10,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
@@ -46,9 +45,9 @@ object dialogMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDialogProps
-    extends IOverlayableProps
+    extends StObject
+       with IOverlayableProps
        with IBackdropProps
        with IProps {
     
@@ -57,38 +56,38 @@ object dialogMod {
       * dialog's header. Note that the header will only be rendered if `title` is
       * provided.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /**
       * Whether to show the close button in the dialog's header.
       * Note that the header will only be rendered if `title` is provided.
       * @default true
       */
-    var isCloseButtonShown: js.UndefOr[Boolean] = js.native
+    var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Toggles the visibility of the overlay and its children.
       * This prop is required because the component is controlled.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * CSS styles to apply to the dialog.
       * @default {}
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Title of the dialog. If provided, an element with `Classes.DIALOG_HEADER`
       * will be rendered inside the dialog before any children elements.
       */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Name of the transition for internal `CSSTransition`. Providing your own
       * name here will require defining new CSS transition properties.
       */
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object IDialogProps {
     

@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteLogEntriesRequest extends StObject {
   
   /**
     * Optional. If true, the request should expect normal response, but the entries won't be persisted nor exported. Useful for checking whether the logging API endpoints are working
     * properly before sending valuable data.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The log entries to send to Logging. The order of log entries in this list does not matter. Values supplied in this method's log_name, resource, and labels fields are
@@ -25,7 +23,7 @@ trait WriteLogEntriesRequest extends StObject {
     * exceeding the quota limit (https://cloud.google.com/logging/quota-policy) for calls to entries.write, you should try to include several log entries in this list, rather than calling
     * this method for each individual log entry.
     */
-  var entries: js.UndefOr[js.Array[LogEntry]] = js.native
+  var entries: js.UndefOr[js.Array[LogEntry]] = js.undefined
   
   /**
     * Optional. Default labels that are added to the labels field of all log entries in entries. If a log entry already has a label with the same key as a label in this parameter, then
@@ -34,8 +32,8 @@ trait WriteLogEntriesRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.WriteLogEntriesRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.WriteLogEntriesRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. A default log resource name that is assigned to all log entries in entries that do not specify a value for log_name: "projects/[PROJECT_ID]/logs/[LOG_ID]"
@@ -43,19 +41,19 @@ trait WriteLogEntriesRequest extends StObject {
     * "projects/my-project-id/logs/syslog" "organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity" The permission logging.logEntries.create is needed on each
     * project, organization, billing account, or folder that is receiving new log entries, whether the resource is specified in logName or in an individual log entry.
     */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Whether valid entries should be written even if some other entries fail due to INVALID_ARGUMENT or PERMISSION_DENIED errors. If any entry is not written, then the response
     * status is the error associated with one of the failed entries and the response includes error details keyed by the entries' zero-based index in the entries.write method.
     */
-  var partialSuccess: js.UndefOr[Boolean] = js.native
+  var partialSuccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. A default monitored resource object that is assigned to all log entries in entries that do not specify a value for resource. Example: { "type": "gce_instance", "labels": {
     * "zone": "us-central1-a", "instance_id": "00000000000000000000" }} See LogEntry.
     */
-  var resource: js.UndefOr[MonitoredResource] = js.native
+  var resource: js.UndefOr[MonitoredResource] = js.undefined
 }
 object WriteLogEntriesRequest {
   
@@ -87,7 +85,7 @@ object WriteLogEntriesRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.WriteLogEntriesRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.WriteLogEntriesRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

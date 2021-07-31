@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object FilterType extends StObject {
     * Return all data (not filtered by the host application).
     */
   @js.native
-  sealed trait All extends FilterType
+  sealed trait All
+    extends StObject
+       with FilterType
   
   /**
     * Return only the visible data (as filtered by the host application).
     */
   @js.native
-  sealed trait OnlyVisible extends FilterType
+  sealed trait OnlyVisible
+    extends StObject
+       with FilterType
 }

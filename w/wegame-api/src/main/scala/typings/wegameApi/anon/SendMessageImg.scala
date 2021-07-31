@@ -2,42 +2,40 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageImg extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 会话内消息卡片图片路径
     */
-  var sendMessageImg: js.UndefOr[String] = js.native
+  var sendMessageImg: js.UndefOr[String] = js.undefined
   
   /**
     * 会话内消息卡片路径
     */
-  var sendMessagePath: js.UndefOr[String] = js.native
+  var sendMessagePath: js.UndefOr[String] = js.undefined
   
   /**
     * 会话内消息卡片标题
     */
-  var sendMessageTitle: js.UndefOr[String] = js.native
+  var sendMessageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * 会话来源
     */
-  var sessionFrom: js.UndefOr[String] = js.native
+  var sessionFrom: js.UndefOr[String] = js.undefined
   
   /**
     * 是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话之后会收到一个消息卡片，通过以下三个参数设置卡片的内容
     */
-  var showMessageCard: js.UndefOr[Boolean] = js.native
+  var showMessageCard: js.UndefOr[Boolean] = js.undefined
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object SendMessageImg {
   

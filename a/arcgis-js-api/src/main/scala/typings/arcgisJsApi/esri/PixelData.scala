@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PixelData extends Object {
+trait PixelData
+  extends StObject
+     with Object {
   
   /**
     * The extent of the `pixelBlock`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#PixelData)
     */
-  var extent: Extent = js.native
+  var extent: Extent
   
   /**
     * An object representing the pixels in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#PixelData)
     */
-  var pixelBlock: PixelBlock = js.native
+  var pixelBlock: PixelBlock
 }
 object PixelData {
   

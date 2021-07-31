@@ -3,13 +3,11 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Octicon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersGetContextForUserResponseData extends StObject {
   
-  var contexts: js.Array[Octicon] = js.native
+  var contexts: js.Array[Octicon]
 }
 object UsersGetContextForUserResponseData {
   

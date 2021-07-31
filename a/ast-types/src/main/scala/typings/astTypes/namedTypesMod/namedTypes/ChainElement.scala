@@ -3,13 +3,13 @@ package typings.astTypes.namedTypesMod.namedTypes
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChainElement extends Node {
+trait ChainElement
+  extends StObject
+     with Node {
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object ChainElement {
   

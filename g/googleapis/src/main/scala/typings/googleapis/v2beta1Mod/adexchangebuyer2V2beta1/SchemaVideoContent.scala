@@ -2,25 +2,23 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video content for a creative.
   */
-@js.native
 trait SchemaVideoContent extends StObject {
   
   /**
     * The URL to fetch a video ad.
     */
-  var videoUrl: js.UndefOr[String] = js.native
+  var videoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The contents of a VAST document for a video ad. This document should
     * conform to the VAST 2.0 or 3.0 standard.
     */
-  var videoVastXml: js.UndefOr[String] = js.native
+  var videoVastXml: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoContent {
   

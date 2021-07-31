@@ -2,17 +2,15 @@ package typings.ebml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object Length {
     
@@ -34,10 +32,9 @@ object anon {
   }
   
   /* Inlined std.Pick<ebml.ebml.Encoder.TagStackItem, 'end'> */
-  @js.native
   trait PickTagStackItemend extends StObject {
     
-    var end: Double = js.native
+    var end: Double
   }
   object PickTagStackItemend {
     

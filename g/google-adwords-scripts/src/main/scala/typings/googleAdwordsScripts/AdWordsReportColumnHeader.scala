@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsReportColumnHeader extends StObject {
   
-  def getBulkUploadColumnName(): String = js.native
+  def getBulkUploadColumnName(): String
   
-  def getReportColumnName(): String = js.native
+  def getReportColumnName(): String
 }
 object AdWordsReportColumnHeader {
   

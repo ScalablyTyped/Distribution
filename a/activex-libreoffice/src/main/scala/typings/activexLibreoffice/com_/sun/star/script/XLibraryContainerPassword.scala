@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extension of {@link XLibraryContainer} to provide password functionality. This interface should be implemented together with {@link
   * XLibraryContainer2}
   */
-@js.native
-trait XLibraryContainerPassword extends XInterface {
+trait XLibraryContainerPassword
+  extends StObject
+     with XInterface {
   
   /**
     * Changes the library's password.
@@ -32,14 +32,14 @@ trait XLibraryContainerPassword extends XInterface {
     * If the library exists and isn't password protected and the OldPassword isn't an empty string or the library is read only a {@link
     * com.sun.star.lang.IllegalArgumentException} is thrown.
     */
-  def changeLibraryPassword(Name: String, OldPassword: String, NewPassword: String): Unit = js.native
+  def changeLibraryPassword(Name: String, OldPassword: String, NewPassword: String): Unit
   
   /**
     * Returns true if the accessed library item is protected by a password.
     *
     * If a library with the this name doesn't exist a {@link com.sun.star.container.NoSuchElementException} is thrown.
     */
-  def isLibraryPasswordProtected(Name: String): Boolean = js.native
+  def isLibraryPasswordProtected(Name: String): Boolean
   
   /**
     * Returns true if the accessed library item is protected by a password (see isLibraryPasswordProtected) and the password was already verified with
@@ -49,7 +49,7 @@ trait XLibraryContainerPassword extends XInterface {
     *
     * If the library exists but isn't password protected a {@link com.sun.star.lang.IllegalArgumentException} is thrown.
     */
-  def isLibraryPasswordVerified(Name: String): Boolean = js.native
+  def isLibraryPasswordVerified(Name: String): Boolean
   
   /**
     * Verifies the library's password. If the correct password was passed, the method returns true and further calls to isLibraryPasswordVerified will also
@@ -61,7 +61,7 @@ trait XLibraryContainerPassword extends XInterface {
     *
     * If the library password is already verified a {@link com.sun.star.lang.IllegalArgumentException} is thrown.
     */
-  def verifyLibraryPassword(Name: String, Password: String): Boolean = js.native
+  def verifyLibraryPassword(Name: String, Password: String): Boolean
 }
 object XLibraryContainerPassword {
   

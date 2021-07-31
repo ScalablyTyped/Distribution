@@ -2,11 +2,11 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXTemplate extends ITemplate {
+trait IXTemplate
+  extends StObject
+     with ITemplate {
   
   /** [Method] Appends the result of this template to the provided output array
     * @param values Object
@@ -22,10 +22,10 @@ trait IXTemplate extends ITemplate {
       /* parent */ js.UndefOr[js.Any], 
       Array
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String/Array) */
-  var definitions: js.UndefOr[js.Any] = js.native
+  var definitions: js.UndefOr[js.Any] = js.undefined
 }
 object IXTemplate {
   

@@ -20,53 +20,50 @@ import typings.std.ArrayBuffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontsMod {
   
-  @JSImport("@devexpress/utils/lib/utils/fonts", "addFontToDocument")
+  @JSImport("@devexpress/utils/lib/utils/fonts", JSImport.Namespace)
   @js.native
-  def addFontToDocument(loadedFace: Record[String, _]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@devexpress/utils/lib/utils/fonts", "afterFontsLoaded")
-  @js.native
-  def afterFontsLoaded(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def addFontToDocument(loadedFace: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFontToDocument")(loadedFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@devexpress/utils/lib/utils/fonts", "checkFont")
-  @js.native
-  def checkFont(fontFamily: IFontFace): Boolean = js.native
-  @JSImport("@devexpress/utils/lib/utils/fonts", "checkFont")
-  @js.native
-  def checkFont(fontFamily: IFontFace, text: String): Boolean = js.native
+  @scala.inline
+  def afterFontsLoaded(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFontsLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@devexpress/utils/lib/utils/fonts", "fontWebApiAvailable")
-  @js.native
-  def fontWebApiAvailable(): Boolean = js.native
+  @scala.inline
+  def checkFont(fontFamily: IFontFace): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def checkFont(fontFamily: IFontFace, text: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@devexpress/utils/lib/utils/fonts", "loadFont")
-  @js.native
+  @scala.inline
+  def fontWebApiAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWebApiAvailable")().asInstanceOf[Boolean]
+  
+  @scala.inline
   def loadFont(
     fontFamily: String,
     source: String,
     fontFaceDescriptors: IFontFaceDescriptors,
     callback: js.Function1[/* error */ String | Null, Unit]
-  ): Unit = js.native
-  @JSImport("@devexpress/utils/lib/utils/fonts", "loadFont")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontFamily.asInstanceOf[js.Any], source.asInstanceOf[js.Any], fontFaceDescriptors.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def loadFont(
     fontFamily: String,
     source: ArrayBuffer,
     fontFaceDescriptors: IFontFaceDescriptors,
     callback: js.Function1[/* error */ String | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontFamily.asInstanceOf[js.Any], source.asInstanceOf[js.Any], fontFaceDescriptors.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait IFontFace extends IFontFaceDescriptors {
+  trait IFontFace
+    extends StObject
+       with IFontFaceDescriptors {
     
-    var family: String = js.native
+    var family: String
     
-    val status: unloaded | loading | loaded | error = js.native
+    val status: unloaded | loading | loaded | error
   }
   object IFontFace {
     
@@ -87,26 +84,25 @@ object fontsMod {
     }
   }
   
-  @js.native
   trait IFontFaceDescriptors extends StObject {
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
-    var featureSettings: js.UndefOr[String] = js.native
+    var featureSettings: js.UndefOr[String] = js.undefined
     
-    var stretch: js.UndefOr[String] = js.native
+    var stretch: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[normal | italic | String] = js.native
+    var style: js.UndefOr[normal | italic | String] = js.undefined
     
-    var unicodeRange: js.UndefOr[String] = js.native
+    var unicodeRange: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
     
-    var variationSettings: js.UndefOr[String] = js.native
+    var variationSettings: js.UndefOr[String] = js.undefined
     
     var weight: js.UndefOr[
         normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | String | Double
-      ] = js.native
+      ] = js.undefined
   }
   object IFontFaceDescriptors {
     

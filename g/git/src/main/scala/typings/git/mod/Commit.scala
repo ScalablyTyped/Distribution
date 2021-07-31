@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Commit")
@@ -11,7 +10,7 @@ class Commit protected () extends StObject {
   def this(
     repo: Repo,
     id: String,
-    parents: js.Array[_],
+    parents: js.Array[js.Any],
     tree: js.Any,
     author: Actor,
     authoredDate: String,
@@ -44,7 +43,7 @@ class Commit protected () extends StObject {
   
   var message: String = js.native
   
-  var parents: js.Array[_] = js.native
+  var parents: js.Array[js.Any] = js.native
   
   var repo: Repo = js.native
   
@@ -61,31 +60,27 @@ class Commit protected () extends StObject {
 /* static members */
 object Commit {
   
-  @JSImport("git", "Commit.count")
+  @JSImport("git", "Commit")
   @js.native
-  def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("git", "Commit.diff")
-  @js.native
-  def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Commit.diff")
-  @js.native
-  def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Commit.diff")
-  @js.native
-  def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = js.native
+  @scala.inline
+  def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("git", "Commit.find_all")
-  @js.native
-  def find_all(repo: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Commit.find_all")
-  @js.native
-  def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Commit.find_all")
-  @js.native
-  def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = js.native
+  @scala.inline
+  def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("git", "Commit.list_from_string")
-  @js.native
-  def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = js.native
+  @scala.inline
+  def find_all(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Commit]]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveIpRoutesRequest extends StObject {
   
   /**
     * IP address blocks that you want to remove.
     */
-  var CidrIps: typings.awsSdk.directoryserviceMod.CidrIps = js.native
+  var CidrIps: typings.awsSdk.directoryserviceMod.CidrIps
   
   /**
     * Identifier (ID) of the directory from which you want to remove the IP addresses.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
 }
 object RemoveIpRoutesRequest {
   

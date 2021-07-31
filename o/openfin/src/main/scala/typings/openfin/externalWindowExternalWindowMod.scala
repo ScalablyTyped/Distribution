@@ -9,7 +9,6 @@ import typings.openfin.shapesMod.Bounds
 import typings.openfin.windowWindowMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalWindowExternalWindowMod {
@@ -80,7 +79,7 @@ object externalWindowExternalWindowMod {
       * @experimental
       * @tutorial Window.getInfo
       */
-    def getInfo(): js.Promise[_] = js.native
+    def getInfo(): js.Promise[js.Any] = js.native
     
     /**
       * Gets an external window's options.
@@ -88,7 +87,7 @@ object externalWindowExternalWindowMod {
       * @experimental
       * @tutorial Window.getOptions
       */
-    def getOptions(): js.Promise[_] = js.native
+    def getOptions(): js.Promise[js.Any] = js.native
     
     /**
       * Gets the current state ("minimized", "maximized", or "restored") of

@@ -2,56 +2,54 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInstanceSummary extends StObject {
   
   /**
     * The ARN of the system instance.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The date when the system instance was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the Greengrass group where the system instance is deployed.
     */
-  var greengrassGroupId: js.UndefOr[GreengrassGroupId] = js.native
+  var greengrassGroupId: js.UndefOr[GreengrassGroupId] = js.undefined
   
   /**
     * The ID of the Greengrass group where the system instance is deployed.
     */
-  var greengrassGroupName: js.UndefOr[GroupName] = js.native
+  var greengrassGroupName: js.UndefOr[GroupName] = js.undefined
   
   /**
     * The version of the Greengrass group where the system instance is deployed.
     */
-  var greengrassGroupVersionId: js.UndefOr[GreengrassGroupVersionId] = js.native
+  var greengrassGroupVersionId: js.UndefOr[GreengrassGroupVersionId] = js.undefined
   
   /**
     * The ID of the system instance.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
   
   /**
     * The status of the system instance.
     */
-  var status: js.UndefOr[SystemInstanceDeploymentStatus] = js.native
+  var status: js.UndefOr[SystemInstanceDeploymentStatus] = js.undefined
   
   /**
     * The target of the system instance.
     */
-  var target: js.UndefOr[DeploymentTarget] = js.native
+  var target: js.UndefOr[DeploymentTarget] = js.undefined
   
   /**
     *  The date and time when the system instance was last updated.
     */
-  var updatedAt: js.UndefOr[Timestamp] = js.native
+  var updatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object SystemInstanceSummary {
   

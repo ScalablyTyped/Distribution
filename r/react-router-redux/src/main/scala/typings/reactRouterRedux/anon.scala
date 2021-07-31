@@ -9,19 +9,17 @@ import typings.history.mod.Search
 import typings.reactRouterRedux.mod.RouterState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait History extends StObject {
     
-    var history: typings.history.mod.History[LocationState] = js.native
+    var history: typings.history.mod.History[LocationState]
     
-    var location: Location[LocationState] = js.native
+    var location: Location[LocationState]
     
-    var `match`: IsExact = js.native
+    var `match`: IsExact
   }
   object History {
     
@@ -50,16 +48,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsExact extends StObject {
     
-    var isExact: Boolean = js.native
+    var isExact: Boolean
     
-    var params: js.Any = js.native
+    var params: js.Any
     
-    var path: String = js.native
+    var path: String
     
-    var url: String = js.native
+    var url: String
   }
   object IsExact {
     
@@ -87,20 +84,19 @@ object anon {
   }
   
   /* Inlined history.history.Location<history.history.LocationState> & {  props :{  match :{  path :string,   url :string,   params :any,   isExact :boolean},   location :history.history.Location<history.history.LocationState>,   history :history.history.History<history.history.LocationState>} | undefined} */
-  @js.native
   trait LocationLocationStateprop extends StObject {
     
-    var hash: Hash = js.native
+    var hash: Hash
     
-    var key: js.UndefOr[LocationKey] = js.native
+    var key: js.UndefOr[LocationKey] = js.undefined
     
-    var pathname: Pathname = js.native
+    var pathname: Pathname
     
-    var props: js.UndefOr[History] = js.native
+    var props: js.UndefOr[History] = js.undefined
     
-    var search: Search = js.native
+    var search: Search
     
-    var state: LocationState = js.native
+    var state: LocationState
   }
   object LocationLocationStateprop {
     
@@ -139,10 +135,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Router extends StObject {
     
-    var router: RouterState = js.native
+    var router: RouterState
   }
   object Router {
     

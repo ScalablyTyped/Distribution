@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterCriteria extends StObject {
   
   /** A condition that must be true for values to be shown. (This does not override hidden_values -- if a value is listed there, it will still be hidden.) */
-  var condition: js.UndefOr[BooleanCondition] = js.native
+  var condition: js.UndefOr[BooleanCondition] = js.undefined
   
   /** Values that should be hidden. */
-  var hiddenValues: js.UndefOr[js.Array[String]] = js.native
+  var hiddenValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The background fill color to filter by; only cells with this fill color are shown. Mutually exclusive with visible_foreground_color. */
-  var visibleBackgroundColor: js.UndefOr[Color] = js.native
+  var visibleBackgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The background fill color to filter by; only cells with this fill color are shown. This field is mutually exclusive with visible_foreground_color, and must be set to an RGB-type
     * color. If visible_background_color is also set, this field takes precedence.
     */
-  var visibleBackgroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var visibleBackgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The foreground color to filter by; only cells with this foreground color are shown. Mutually exclusive with visible_background_color. */
-  var visibleForegroundColor: js.UndefOr[Color] = js.native
+  var visibleForegroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The foreground color to filter by; only cells with this foreground color are shown. This field is mutually exclusive with visible_background_color, and must be set to an RGB-type
     * color. If visible_foreground_color is also set, this field takes precedence.
     */
-  var visibleForegroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var visibleForegroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
 }
 object FilterCriteria {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigRuleComplianceSummaryFilters extends StObject {
   
   /**
     * The 12-digit account ID of the source account.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.undefined
   
   /**
     * The source region where the data is aggregated.
     */
-  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.native
+  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
 }
 object ConfigRuleComplianceSummaryFilters {
   

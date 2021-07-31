@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,6 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.I18n")
 @js.native
 class I18n protected ()
-  extends typings.playcanvas.pc.I18n {
+  extends StObject
+     with typings.playcanvas.pc.I18n {
   def this(app: typings.playcanvas.pc.Application) = this()
 }

@@ -2,19 +2,17 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopologicalSort extends StObject {
   
-  def dfs(G: DiGraph, v: Double): Unit = js.native
+  def dfs(G: DiGraph, v: Double): Unit
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  def order(): js.Array[Double] = js.native
+  def order(): js.Array[Double]
   
-  var postOrder: js.Any = js.native
+  var postOrder: js.Any
 }
 object TopologicalSort {
   

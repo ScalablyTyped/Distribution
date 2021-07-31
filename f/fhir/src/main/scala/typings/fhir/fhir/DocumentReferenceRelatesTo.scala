@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relationships to other documents
   */
-@js.native
-trait DocumentReferenceRelatesTo extends BackboneElement {
+trait DocumentReferenceRelatesTo
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * replaces | transforms | signs | appends
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Target of the relationship
     */
-  var target: Reference = js.native
+  var target: Reference
 }
 object DocumentReferenceRelatesTo {
   

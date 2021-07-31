@@ -2,7 +2,6 @@ package typings.reactNativeGoby.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Goby {
@@ -20,19 +19,25 @@ object Goby {
       * Don't automatically check for updates, but only do it when goby.sync() is manully called inside app code.
       */
     @js.native
-    sealed trait MANUAL extends CheckFrequency
+    sealed trait MANUAL
+      extends StObject
+         with CheckFrequency
     
     /**
       * When the app re-enters the foreground.
       */
     @js.native
-    sealed trait ON_APP_RESUME extends CheckFrequency
+    sealed trait ON_APP_RESUME
+      extends StObject
+         with CheckFrequency
     
     /**
       * When the app is fully initialized (or more specifically, when the root component is mounted).
       */
     @js.native
-    sealed trait ON_APP_START extends CheckFrequency
+    sealed trait ON_APP_START
+      extends StObject
+         with CheckFrequency
   }
   
   @js.native
@@ -48,13 +53,17 @@ object Goby {
       * The deployment failed (and was rolled back).
       */
     @js.native
-    sealed trait FAILED extends DeploymentStatus
+    sealed trait FAILED
+      extends StObject
+         with DeploymentStatus
     
     /**
       * The deployment succeeded.
       */
     @js.native
-    sealed trait SUCCEEDED extends DeploymentStatus
+    sealed trait SUCCEEDED
+      extends StObject
+         with DeploymentStatus
   }
   
   @js.native
@@ -70,20 +79,26 @@ object Goby {
       * Indicates that you want to install the update and restart the app immediately.
       */
     @js.native
-    sealed trait IMMEDIATE extends InstallMode
+    sealed trait IMMEDIATE
+      extends StObject
+         with InstallMode
     
     /**
       * Indicates that you want to install the update, but not forcibly restart the app.
       */
     @js.native
-    sealed trait ON_NEXT_RESTART extends InstallMode
+    sealed trait ON_NEXT_RESTART
+      extends StObject
+         with InstallMode
     
     /**
       * Indicates that you want to install the update, but don't want to restart the
       * app until the next time the end user resumes it from the background.
       */
     @js.native
-    sealed trait ON_NEXT_RESUME extends InstallMode
+    sealed trait ON_NEXT_RESUME
+      extends StObject
+         with InstallMode
   }
   
   @js.native
@@ -100,44 +115,58 @@ object Goby {
       * to the end user. (This is only applicable when the updateDialog is used)
       */
     @js.native
-    sealed trait AWAITING_USER_ACTION extends SyncStatus
+    sealed trait AWAITING_USER_ACTION
+      extends StObject
+         with SyncStatus
     
     /**
       * The Goby server is being queried for an update.
       */
     @js.native
-    sealed trait CHECKING_FOR_UPDATE extends SyncStatus
+    sealed trait CHECKING_FOR_UPDATE
+      extends StObject
+         with SyncStatus
     
     /**
       * An available update is being downloaded from the Goby server.
       */
     @js.native
-    sealed trait DOWNLOADING_PACKAGE extends SyncStatus
+    sealed trait DOWNLOADING_PACKAGE
+      extends StObject
+         with SyncStatus
     
     /**
       * An available update was downloaded and is about to be installed.
       */
     @js.native
-    sealed trait INSTALLING_UPDATE extends SyncStatus
+    sealed trait INSTALLING_UPDATE
+      extends StObject
+         with SyncStatus
     
     /**
       * There is an ongoing sync operation running which prevents the current call from being executed.
       */
     @js.native
-    sealed trait SYNC_IN_PROGRESS extends SyncStatus
+    sealed trait SYNC_IN_PROGRESS
+      extends StObject
+         with SyncStatus
     
     /**
       * The sync operation encountered an unknown error.
       */
     @js.native
-    sealed trait UNKNOWN_ERROR extends SyncStatus
+    sealed trait UNKNOWN_ERROR
+      extends StObject
+         with SyncStatus
     
     /**
       * The app had an optional update which the end user chose to ignore.
       * (This is only applicable when the updateDialog is used)
       */
     @js.native
-    sealed trait UPDATE_IGNORED extends SyncStatus
+    sealed trait UPDATE_IGNORED
+      extends StObject
+         with SyncStatus
     
     /**
       * An available update has been installed and will be run either immediately after the
@@ -145,13 +174,17 @@ object Goby {
       * depending on the InstallMode specified in SyncOptions
       */
     @js.native
-    sealed trait UPDATE_INSTALLED extends SyncStatus
+    sealed trait UPDATE_INSTALLED
+      extends StObject
+         with SyncStatus
     
     /**
       * The app is up-to-date with the Goby server.
       */
     @js.native
-    sealed trait UP_TO_DATE extends SyncStatus
+    sealed trait UP_TO_DATE
+      extends StObject
+         with SyncStatus
   }
   
   @js.native
@@ -168,20 +201,26 @@ object Goby {
       * release, and can be either currently running or pending.
       */
     @js.native
-    sealed trait LATEST extends UpdateState
+    sealed trait LATEST
+      extends StObject
+         with UpdateState
     
     /**
       * Indicates than an update has been installed, but the
       * app hasn't been restarted yet in order to apply it.
       */
     @js.native
-    sealed trait PENDING extends UpdateState
+    sealed trait PENDING
+      extends StObject
+         with UpdateState
     
     /**
       * Indicates that an update represents the
       * version of the app that is currently running.
       */
     @js.native
-    sealed trait RUNNING extends UpdateState
+    sealed trait RUNNING
+      extends StObject
+         with UpdateState
   }
 }

@@ -4,35 +4,33 @@ import typings.vexflow.Vex.Flow.StaveLine.TextJustification
 import typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arrowheadangle extends StObject {
   
-  var arrowhead_angle: Double = js.native
+  var arrowhead_angle: Double
   
-  var arrowhead_length: Double = js.native
+  var arrowhead_length: Double
   
-  var color: String = js.native
+  var color: String
   
-  var draw_end_arrow: Boolean = js.native
+  var draw_end_arrow: Boolean
   
-  var draw_start_arrow: Boolean = js.native
+  var draw_start_arrow: Boolean
   
-  var line_dash: js.Array[Double] = js.native
+  var line_dash: js.Array[Double]
   
-  var line_width: Double = js.native
+  var line_width: Double
   
-  var padding_left: Double = js.native
+  var padding_left: Double
   
-  var padding_right: Double = js.native
+  var padding_right: Double
   
-  var rounded_end: Boolean = js.native
+  var rounded_end: Boolean
   
-  var text_justification: TextJustification = js.native
+  var text_justification: TextJustification
   
-  var text_position_vertical: TextVerticalPosition = js.native
+  var text_position_vertical: TextVerticalPosition
 }
 object Arrowheadangle {
   

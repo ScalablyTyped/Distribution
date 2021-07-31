@@ -3,7 +3,6 @@ package typings.agiledigitalMulePreview
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,11 @@ object mod {
   @js.native
   val MulePreviewUrl: SFC[MulePreviewUrlProps] = js.native
   
-  @js.native
   trait MulePreviewContentProps extends StObject {
     
-    val contentRoot: String = js.native
+    val contentRoot: String
     
-    val contentString: String = js.native
+    val contentString: String
   }
   object MulePreviewContentProps {
     
@@ -50,12 +48,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MulePreviewDiffContentProps extends StObject {
     
-    val contentRoot: String = js.native
+    val contentRoot: String
     
-    val contentStrings: js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
+    val contentStrings: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]
   }
   object MulePreviewDiffContentProps {
     
@@ -76,12 +73,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MulePreviewDiffUrlProps extends StObject {
     
-    val contentRoot: String = js.native
+    val contentRoot: String
     
-    val contentUrls: js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
+    val contentUrls: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]
   }
   object MulePreviewDiffUrlProps {
     
@@ -102,12 +98,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MulePreviewUrlProps extends StObject {
     
-    val contentRoot: String = js.native
+    val contentRoot: String
     
-    val contentUrl: String = js.native
+    val contentUrl: String
   }
   object MulePreviewUrlProps {
     

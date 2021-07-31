@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,7 +59,7 @@ trait Recipients extends StObject {
   def addAsync(recipients: js.Array[String | EmailUser | EmailAddressDetails]): Unit = js.native
   def addAsync(
     recipients: js.Array[String | EmailUser | EmailAddressDetails],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(recipients: js.Array[String | EmailUser | EmailAddressDetails], options: AsyncContextOptions): Unit = js.native

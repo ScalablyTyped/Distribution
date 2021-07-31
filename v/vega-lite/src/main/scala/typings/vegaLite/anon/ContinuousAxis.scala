@@ -6,21 +6,19 @@ import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousAxis extends StObject {
   
-  var continuousAxis: x | y = js.native
+  var continuousAxis: x | y
   
-  var continuousAxisChannelDef: PositionFieldDef[String] = js.native
+  var continuousAxisChannelDef: PositionFieldDef[String]
   
-  var continuousAxisChannelDef2: SecondaryFieldDef[String] = js.native
+  var continuousAxisChannelDef2: SecondaryFieldDef[String]
   
-  var continuousAxisChannelDefError: SecondaryFieldDef[String] = js.native
+  var continuousAxisChannelDefError: SecondaryFieldDef[String]
   
-  var continuousAxisChannelDefError2: SecondaryFieldDef[String] = js.native
+  var continuousAxisChannelDefError2: SecondaryFieldDef[String]
 }
 object ContinuousAxis {
   

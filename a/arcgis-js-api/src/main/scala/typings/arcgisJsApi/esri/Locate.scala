@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`locate-error`
 import typings.arcgisJsApi.arcgisJsApiStrings.locate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Locate
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
   
   /**
@@ -53,7 +53,7 @@ trait Locate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#locate)
     */
-  def locate(): js.Promise[_] = js.native
+  def locate(): js.Promise[js.Any] = js.native
   
   @JSName("on")
   def on_locate(name: locate, eventHandler: LocateLocateEventHandler): IHandle = js.native

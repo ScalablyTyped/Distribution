@@ -1,11 +1,8 @@
-package typings
+package typings.vscodeLanguageserver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object vscodeLanguageserver {
-  
-  type Thenable[T] = js.Thenable[T]
-}
+
+type Thenable[T] = js.Thenable[T]

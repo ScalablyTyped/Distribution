@@ -2,13 +2,13 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationFocusInjectedProps[P] extends NavigationInjectedProps[P] {
+trait NavigationFocusInjectedProps[P]
+  extends StObject
+     with NavigationInjectedProps[P] {
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
 }
 object NavigationFocusInjectedProps {
   
@@ -19,7 +19,7 @@ object NavigationFocusInjectedProps {
   }
   
   @scala.inline
-  implicit class NavigationFocusInjectedPropsMutableBuilder[Self <: NavigationFocusInjectedProps[_], P] (val x: Self with NavigationFocusInjectedProps[P]) extends AnyVal {
+  implicit class NavigationFocusInjectedPropsMutableBuilder[Self <: NavigationFocusInjectedProps[?], P] (val x: Self & NavigationFocusInjectedProps[P]) extends AnyVal {
     
     @scala.inline
     def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])

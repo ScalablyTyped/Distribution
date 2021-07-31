@@ -4,30 +4,28 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__Job
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Job extends StObject {
   
   /** Output only. When the job was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. When the job processing was completed. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The details of a failure or a cancellation. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a job from overwriting each other. It is strongly suggested that systems make use
     * of the `etag` in the read-modify-write cycle to perform job updates in order to avoid race conditions: An `etag` is returned in the response to `GetJob`, and systems are expected to
     * put that etag in the request to `UpdateJob` to ensure that their change will be applied to the same version of the job.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Required. The user-specified id of the job. */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. One or more labels that you can add, to organize your jobs. Each label is a key-value pair, where both the key and the value are arbitrary strings that you supply. For
@@ -36,26 +34,26 @@ trait GoogleCloudMlV1Job extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__Job with TopLevel[js.Any]
-  ] = js.native
+    */ GoogleCloudMlV1__Job & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Input parameters to create a prediction job. */
-  var predictionInput: js.UndefOr[GoogleCloudMlV1PredictionInput] = js.native
+  var predictionInput: js.UndefOr[GoogleCloudMlV1PredictionInput] = js.undefined
   
   /** The current prediction job result. */
-  var predictionOutput: js.UndefOr[GoogleCloudMlV1PredictionOutput] = js.native
+  var predictionOutput: js.UndefOr[GoogleCloudMlV1PredictionOutput] = js.undefined
   
   /** Output only. When the job processing was started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The detailed state of a job. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Input parameters to create a training job. */
-  var trainingInput: js.UndefOr[GoogleCloudMlV1TrainingInput] = js.native
+  var trainingInput: js.UndefOr[GoogleCloudMlV1TrainingInput] = js.undefined
   
   /** The current training job result. */
-  var trainingOutput: js.UndefOr[GoogleCloudMlV1TrainingOutput] = js.native
+  var trainingOutput: js.UndefOr[GoogleCloudMlV1TrainingOutput] = js.undefined
 }
 object GoogleCloudMlV1Job {
   
@@ -102,7 +100,7 @@ object GoogleCloudMlV1Job {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__Job with TopLevel[js.Any]
+      */ GoogleCloudMlV1__Job & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

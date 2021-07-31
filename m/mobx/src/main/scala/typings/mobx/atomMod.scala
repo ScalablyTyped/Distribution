@@ -6,10 +6,13 @@ import typings.mobx.derivationMod.IDerivationState
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object atomMod {
+  
+  @JSImport("mobx/lib/core/atom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx/lib/core/atom", "Atom")
   @js.native
@@ -17,45 +20,77 @@ object atomMod {
     * Create a new atom. For debugging purposes it is recommended to give it a name.
     * The onBecomeObserved and onBecomeUnobserved callbacks can be used for resource management.
     */
-  class Atom () extends IAtom {
+  class Atom ()
+    extends StObject
+       with IAtom {
     def this(name: String) = this()
+    
+    /* CompleteClass */
+    var diffValue: Double = js.native
+    
+    /* CompleteClass */
+    var isBeingObserved: Boolean = js.native
+    
+    /* CompleteClass */
+    var isPendingUnobservation: Boolean = js.native
+    
+    /**
+      * Id of the derivation *run* that last accessed this observable.
+      * If this id equals the *run* id of the current derivation,
+      * the dependency is already established
+      */
+    /* CompleteClass */
+    var lastAccessedBy: Double = js.native
+    
+    /* CompleteClass */
+    var lowestObserverState: IDerivationState = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var observers: Set[IDerivation] = js.native
+    
+    /* CompleteClass */
+    override def onBecomeObserved(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onBecomeUnobserved(): Unit = js.native
+    
+    /* CompleteClass */
+    override def reportChanged(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def reportObserved(): js.Any = js.native
   }
   
-  @JSImport("mobx/lib/core/atom", "createAtom")
-  @js.native
-  def createAtom(name: String): IAtom = js.native
-  @JSImport("mobx/lib/core/atom", "createAtom")
-  @js.native
-  def createAtom(
-    name: String,
-    onBecomeObservedHandler: js.UndefOr[scala.Nothing],
-    onBecomeUnobservedHandler: js.Function0[Unit]
-  ): IAtom = js.native
-  @JSImport("mobx/lib/core/atom", "createAtom")
-  @js.native
-  def createAtom(name: String, onBecomeObservedHandler: js.Function0[Unit]): IAtom = js.native
-  @JSImport("mobx/lib/core/atom", "createAtom")
-  @js.native
+  @scala.inline
+  def createAtom(name: String): IAtom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any]).asInstanceOf[IAtom]
+  @scala.inline
+  def createAtom(name: String, onBecomeObservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
+  @scala.inline
   def createAtom(
     name: String,
     onBecomeObservedHandler: js.Function0[Unit],
     onBecomeUnobservedHandler: js.Function0[Unit]
-  ): IAtom = js.native
+  ): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any], onBecomeUnobservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
+  @scala.inline
+  def createAtom(name: String, onBecomeObservedHandler: Unit, onBecomeUnobservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any], onBecomeUnobservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
   
-  @JSImport("mobx/lib/core/atom", "isAtom")
-  @js.native
-  def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ Boolean = js.native
+  @scala.inline
+  def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAtom")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/atom.Atom */ Boolean]
   
   @JSImport("mobx/lib/core/atom", "$mobx")
   @js.native
   val mobx: js.Symbol = js.native
   
-  @js.native
-  trait IAtom extends IObservable {
+  trait IAtom
+    extends StObject
+       with IObservable {
     
-    def reportChanged(): js.Any = js.native
+    def reportChanged(): js.Any
     
-    def reportObserved(): js.Any = js.native
+    def reportObserved(): js.Any
   }
   object IAtom {
     

@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcObject
-  extends /* name */ StringDictionary[
+  extends StObject
+     with /* name */ StringDictionary[
       GrpcObject | (Instantiable3[
         /* address */ String, 
         /* credentials */ ChannelCredentials, 

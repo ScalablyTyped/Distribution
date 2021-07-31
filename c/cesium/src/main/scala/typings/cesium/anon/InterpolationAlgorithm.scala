@@ -2,15 +2,13 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterpolationAlgorithm extends StObject {
   
-  var interpolationAlgorithm: js.UndefOr[typings.cesium.mod.InterpolationAlgorithm] = js.native
+  var interpolationAlgorithm: js.UndefOr[typings.cesium.mod.InterpolationAlgorithm] = js.undefined
   
-  var interpolationDegree: js.UndefOr[Double] = js.native
+  var interpolationDegree: js.UndefOr[Double] = js.undefined
 }
 object InterpolationAlgorithm {
   

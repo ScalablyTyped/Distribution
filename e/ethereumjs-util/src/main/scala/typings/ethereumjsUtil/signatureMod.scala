@@ -3,61 +3,51 @@ package typings.ethereumjsUtil
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
   
-  @JSImport("ethereumjs-util/dist/signature", "ecrecover")
+  @JSImport("ethereumjs-util/dist/signature", JSImport.Namespace)
   @js.native
-  def ecrecover(msgHash: Buffer, v: Double, r: Buffer, s: Buffer): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/signature", "ecrecover")
-  @js.native
-  def ecrecover(msgHash: Buffer, v: Double, r: Buffer, s: Buffer, chainId: Double): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-util/dist/signature", "ecsign")
-  @js.native
-  def ecsign(msgHash: Buffer, privateKey: Buffer): ECDSASignature = js.native
-  @JSImport("ethereumjs-util/dist/signature", "ecsign")
-  @js.native
-  def ecsign(msgHash: Buffer, privateKey: Buffer, chainId: Double): ECDSASignature = js.native
+  @scala.inline
+  def ecrecover(msgHash: Buffer, v: Double, r: Buffer, s: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ecrecover")(msgHash.asInstanceOf[js.Any], v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def ecrecover(msgHash: Buffer, v: Double, r: Buffer, s: Buffer, chainId: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ecrecover")(msgHash.asInstanceOf[js.Any], v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/signature", "fromRpcSig")
-  @js.native
-  def fromRpcSig(sig: String): ECDSASignature = js.native
+  @scala.inline
+  def ecsign(msgHash: Buffer, privateKey: Buffer): ECDSASignature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecsign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[ECDSASignature]
+  @scala.inline
+  def ecsign(msgHash: Buffer, privateKey: Buffer, chainId: Double): ECDSASignature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecsign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[ECDSASignature]
   
-  @JSImport("ethereumjs-util/dist/signature", "hashPersonalMessage")
-  @js.native
-  def hashPersonalMessage(message: Buffer): Buffer = js.native
+  @scala.inline
+  def fromRpcSig(sig: String): ECDSASignature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRpcSig")(sig.asInstanceOf[js.Any]).asInstanceOf[ECDSASignature]
   
-  @JSImport("ethereumjs-util/dist/signature", "isValidSignature")
-  @js.native
-  def isValidSignature(v: Double, r: Buffer, s: Buffer): Boolean = js.native
-  @JSImport("ethereumjs-util/dist/signature", "isValidSignature")
-  @js.native
-  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: js.UndefOr[scala.Nothing], chainId: Double): Boolean = js.native
-  @JSImport("ethereumjs-util/dist/signature", "isValidSignature")
-  @js.native
-  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean): Boolean = js.native
-  @JSImport("ethereumjs-util/dist/signature", "isValidSignature")
-  @js.native
-  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean, chainId: Double): Boolean = js.native
+  @scala.inline
+  def hashPersonalMessage(message: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hashPersonalMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/signature", "toRpcSig")
-  @js.native
-  def toRpcSig(v: Double, r: Buffer, s: Buffer): String = js.native
-  @JSImport("ethereumjs-util/dist/signature", "toRpcSig")
-  @js.native
-  def toRpcSig(v: Double, r: Buffer, s: Buffer, chainId: Double): String = js.native
+  @scala.inline
+  def isValidSignature(v: Double, r: Buffer, s: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidSignature")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidSignature")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], homesteadOrLater.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidSignature")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], homesteadOrLater.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidSignature(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Unit, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidSignature")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], homesteadOrLater.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def toRpcSig(v: Double, r: Buffer, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toRpcSig")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toRpcSig(v: Double, r: Buffer, s: Buffer, chainId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toRpcSig")(v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ECDSASignature extends StObject {
     
-    var r: Buffer = js.native
+    var r: Buffer
     
-    var s: Buffer = js.native
+    var s: Buffer
     
-    var v: Double = js.native
+    var v: Double
   }
   object ECDSASignature {
     

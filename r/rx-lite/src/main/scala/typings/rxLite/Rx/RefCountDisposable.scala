@@ -3,15 +3,15 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefCountDisposable extends IDisposable {
+trait RefCountDisposable
+  extends StObject
+     with IDisposable {
   
-  def getDisposable(): IDisposable = js.native
+  def getDisposable(): IDisposable
   
-  var isDisposed: Boolean = js.native
+  var isDisposed: Boolean
 }
 object RefCountDisposable {
   

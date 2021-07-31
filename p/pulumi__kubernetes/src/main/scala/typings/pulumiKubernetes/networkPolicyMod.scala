@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkPolicyMod {
@@ -27,7 +26,7 @@ object networkPolicyMod {
       */
     def this(name: String) = this()
     def this(name: String, args: NetworkPolicyArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: NetworkPolicyArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object networkPolicyMod {
   /* static members */
   object NetworkPolicy {
     
+    @JSImport("@pulumi/kubernetes/extensions/v1beta1/networkPolicy", "NetworkPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object networkPolicyMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/extensions/v1beta1/networkPolicy", "NetworkPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkPolicy = js.native
-    @JSImport("@pulumi/kubernetes/extensions/v1beta1/networkPolicy", "NetworkPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): NetworkPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkPolicy]
     
     /**
       * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/extensions/v1beta1/networkPolicy", "NetworkPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean]
   }
   
-  @js.native
   trait NetworkPolicyArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Specification of the desired behavior for this NetworkPolicy.
       */
-    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.extensions.v1beta1.NetworkPolicySpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.extensions.v1beta1.NetworkPolicySpec]] = js.undefined
   }
   object NetworkPolicyArgs {
     

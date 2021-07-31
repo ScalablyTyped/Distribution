@@ -2,23 +2,21 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMergeMetadataMod {
   
-  @js.native
   trait MergeMetadata extends StObject {
     
     /**
       * <p>A Boolean value indicating whether the merge has been made.</p>
       */
-    var isMerged: js.UndefOr[Boolean] = js.native
+    var isMerged: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>The Amazon Resource Name (ARN) of the user who merged the branches.</p>
       */
-    var mergedBy: js.UndefOr[String] = js.native
+    var mergedBy: js.UndefOr[String] = js.undefined
   }
   object MergeMetadata {
     

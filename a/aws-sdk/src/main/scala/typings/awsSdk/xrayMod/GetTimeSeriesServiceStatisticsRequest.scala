@@ -2,51 +2,49 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTimeSeriesServiceStatisticsRequest extends StObject {
   
   /**
     * The end of the time frame for which to aggregate statistics.
     */
-  var EndTime: Timestamp = js.native
+  var EndTime: Timestamp
   
   /**
     * A filter expression defining entities that will be aggregated for statistics. Supports ID, service, and edge functions. If no selector expression is specified, edge statistics are returned. 
     */
-  var EntitySelectorExpression: js.UndefOr[typings.awsSdk.xrayMod.EntitySelectorExpression] = js.native
+  var EntitySelectorExpression: js.UndefOr[typings.awsSdk.xrayMod.EntitySelectorExpression] = js.undefined
   
   /**
     * The forecasted high and low fault count values. Forecast enabled requests require the EntitySelectorExpression ID be provided.
     */
-  var ForecastStatistics: js.UndefOr[NullableBoolean] = js.native
+  var ForecastStatistics: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the group for which to pull statistics from.
     */
-  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.native
+  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.undefined
   
   /**
     * The case-sensitive name of the group for which to pull statistics from.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Aggregation period in seconds.
     */
-  var Period: js.UndefOr[NullableInteger] = js.native
+  var Period: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The start of the time frame for which to aggregate statistics.
     */
-  var StartTime: Timestamp = js.native
+  var StartTime: Timestamp
 }
 object GetTimeSeriesServiceStatisticsRequest {
   

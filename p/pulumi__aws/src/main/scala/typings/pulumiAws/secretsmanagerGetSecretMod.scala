@@ -5,36 +5,34 @@ import typings.pulumiAws.outputMod.secretsmanager.GetSecretRotationRule
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretsmanagerGetSecretMod {
   
-  @JSImport("@pulumi/aws/secretsmanager/getSecret", "getSecret")
+  @JSImport("@pulumi/aws/secretsmanager/getSecret", JSImport.Namespace)
   @js.native
-  def getSecret(): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager/getSecret", "getSecret")
-  @js.native
-  def getSecret(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager/getSecret", "getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager/getSecret", "getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecret(): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")().asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: Unit, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
+  
   trait GetSecretArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the secret to retrieve.
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the secret to retrieve.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object GetSecretArgs {
     
@@ -61,61 +59,60 @@ object secretsmanagerGetSecretMod {
     }
   }
   
-  @js.native
   trait GetSecretResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the secret.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * A description of the secret.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The Key Management Service (KMS) Customer Master Key (CMK) associated with the secret.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The resource-based policy document that's attached to the secret.
       */
-    val policy: String = js.native
+    val policy: String
     
     /**
       * Whether rotation is enabled or not.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation data source instead
       */
-    val rotationEnabled: Boolean = js.native
+    val rotationEnabled: Boolean
     
     /**
       * Rotation Lambda function Amazon Resource Name (ARN) if rotation is enabled.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation data source instead
       */
-    val rotationLambdaArn: String = js.native
+    val rotationLambdaArn: String
     
     /**
       * Rotation rules if rotation is enabled.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation data source instead
       */
-    val rotationRules: js.Array[GetSecretRotationRule] = js.native
+    val rotationRules: js.Array[GetSecretRotationRule]
     
     /**
       * Tags of the secret.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetSecretResult {
     

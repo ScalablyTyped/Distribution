@@ -3,7 +3,6 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For fast, straight line edges (curve - style: haystack):
   * http://js.cytoscape.org/#style/haystack-edges
   */
-@js.native
 trait HaystackEdges extends StObject {
   
   /**
     * A value between 0 and 1 inclusive that indicates the relative radius used to position haystack edges on their connected nodes.
     * The outside of the node is at 1, and the centre of the node is at 0.
     */
-  var `haystack-radius`: PropertyValueEdge[Double] = js.native
+  var `haystack-radius`: PropertyValueEdge[Double]
 }
 object HaystackEdges {
   

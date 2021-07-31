@@ -3,7 +3,6 @@ package typings.yui
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object YUITest {
@@ -102,7 +101,8 @@ object YUITest {
   
   @js.native
   trait TestCase
-    extends Instantiable1[/* template */ js.Object, TestCase] {
+    extends StObject
+       with Instantiable1[/* template */ js.Object, TestCase] {
     
     var DEFAULT_WAIT: Double = js.native
     
@@ -124,23 +124,20 @@ object YUITest {
     
     def tearDown(): Unit = js.native
     
-    def wait(segment: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
     def wait(segment: js.Function): Unit = js.native
     def wait(segment: js.Function, delay: Double): Unit = js.native
+    def wait(segment: Unit, delay: Double): Unit = js.native
     
     def waitFor(condition: js.Function, segment: js.Function): Unit = js.native
-    def waitFor(
-      condition: js.Function,
-      segment: js.Function,
-      timeout: js.UndefOr[scala.Nothing],
-      increment: Double
-    ): Unit = js.native
     def waitFor(condition: js.Function, segment: js.Function, timeout: Double): Unit = js.native
     def waitFor(condition: js.Function, segment: js.Function, timeout: Double, increment: Double): Unit = js.native
+    def waitFor(condition: js.Function, segment: js.Function, timeout: Unit, increment: Double): Unit = js.native
   }
   
   @js.native
-  trait TestRunner extends EventTarget {
+  trait TestRunner
+    extends StObject
+       with EventTarget {
     
     var BEGIN_EVENT: String = js.native
     
@@ -207,14 +204,13 @@ object YUITest {
     def tearDown(): Unit = js.native
   }
   
-  @js.native
   trait YUITestStatic extends StObject {
     
-    var Assert: IAssert = js.native
+    var Assert: IAssert
     
-    var Case: TestCase = js.native
+    var Case: TestCase
     
-    var Runner: TestRunner = js.native
+    var Runner: TestRunner
   }
   object YUITestStatic {
     

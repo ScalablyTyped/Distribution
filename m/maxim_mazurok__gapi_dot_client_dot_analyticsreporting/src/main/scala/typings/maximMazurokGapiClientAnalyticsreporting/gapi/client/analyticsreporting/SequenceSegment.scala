@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceSegment extends StObject {
   
   /** If set, first step condition must match the first hit of the visitor (in the date range). */
-  var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.native
+  var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.undefined
   
   /** The list of steps in the sequence. */
-  var segmentSequenceSteps: js.UndefOr[js.Array[SegmentSequenceStep]] = js.native
+  var segmentSequenceSteps: js.UndefOr[js.Array[SegmentSequenceStep]] = js.undefined
 }
 object SequenceSegment {
   

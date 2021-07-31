@@ -3,19 +3,17 @@ package typings.knuddelsUserappsApi.anon
 import typings.knuddelsUserappsApi.mod.global.ExternalServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnFailure extends StObject {
   
   var onFailure: js.UndefOr[
     js.Function2[/* responseData */ String, /* externalServerResponse */ ExternalServerResponse, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onSuccess: js.UndefOr[
     js.Function2[/* responseData */ String, /* externalServerResponse */ ExternalServerResponse, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object OnFailure {
   

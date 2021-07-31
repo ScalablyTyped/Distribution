@@ -2,65 +2,63 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Step extends StObject {
   
   /** Display info of the final state "abort" and reason. */
-  var abort: js.UndefOr[AbortInfo] = js.native
+  var abort: js.UndefOr[AbortInfo] = js.undefined
   
   /** This is a step that leads to the final state Drop. */
-  var causesDrop: js.UndefOr[Boolean] = js.native
+  var causesDrop: js.UndefOr[Boolean] = js.undefined
   
   /** Display info of the final state "deliver" and reason. */
-  var deliver: js.UndefOr[DeliverInfo] = js.native
+  var deliver: js.UndefOr[DeliverInfo] = js.undefined
   
   /** A description of the step. Usually this is a summary of the state. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Display info of the final state "drop" and reason. */
-  var drop: js.UndefOr[DropInfo] = js.native
+  var drop: js.UndefOr[DropInfo] = js.undefined
   
   /**
     * Display info of the source and destination under analysis. The endpiont info in an intermediate state may differ with the initial input, as it might be modified by state like NAT,
     * or Connection Proxy.
     */
-  var endpoint: js.UndefOr[EndpointInfo] = js.native
+  var endpoint: js.UndefOr[EndpointInfo] = js.undefined
   
   /** Display info of a Compute Engine firewall rule. */
-  var firewall: js.UndefOr[FirewallInfo] = js.native
+  var firewall: js.UndefOr[FirewallInfo] = js.undefined
   
   /** Display info of the final state "forward" and reason. */
-  var forward: js.UndefOr[ForwardInfo] = js.native
+  var forward: js.UndefOr[ForwardInfo] = js.undefined
   
   /** Display info of a Compute Engine forwarding rule. */
-  var forwardingRule: js.UndefOr[ForwardingRuleInfo] = js.native
+  var forwardingRule: js.UndefOr[ForwardingRuleInfo] = js.undefined
   
   /** Display info of a Compute Engine instance. */
-  var instance: js.UndefOr[InstanceInfo] = js.native
+  var instance: js.UndefOr[InstanceInfo] = js.undefined
   
   /** Display info of the load balancers. */
-  var loadBalancer: js.UndefOr[LoadBalancerInfo] = js.native
+  var loadBalancer: js.UndefOr[LoadBalancerInfo] = js.undefined
   
   /** Display info of a GCP network. */
-  var network: js.UndefOr[NetworkInfo] = js.native
+  var network: js.UndefOr[NetworkInfo] = js.undefined
   
   /** Project ID that contains the configuration this step is validating. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Display info of a Compute Engine route. */
-  var route: js.UndefOr[RouteInfo] = js.native
+  var route: js.UndefOr[RouteInfo] = js.undefined
   
   /** Each step is in one of the pre-defined states. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Display info of a Compute Engine VPN gateway. */
-  var vpnGateway: js.UndefOr[VpnGatewayInfo] = js.native
+  var vpnGateway: js.UndefOr[VpnGatewayInfo] = js.undefined
   
   /** Display info of a Compute Engine VPN tunnel. */
-  var vpnTunnel: js.UndefOr[VpnTunnelInfo] = js.native
+  var vpnTunnel: js.UndefOr[VpnTunnelInfo] = js.undefined
 }
 object Step {
   

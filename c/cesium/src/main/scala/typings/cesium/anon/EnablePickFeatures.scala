@@ -3,33 +3,31 @@ package typings.cesium.anon
 import typings.cesium.mod.TileDiscardPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnablePickFeatures extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var enablePickFeatures: js.UndefOr[Boolean] = js.native
+  var enablePickFeatures: js.UndefOr[Boolean] = js.undefined
   
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
-  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.native
+  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.native
+  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var usePreCachedTilesIfAvailable: js.UndefOr[Boolean] = js.native
+  var usePreCachedTilesIfAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object EnablePickFeatures {
   

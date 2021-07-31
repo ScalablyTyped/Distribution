@@ -2,34 +2,32 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickPickItem extends StObject {
   
   /**
     * Always show this item.
     */
-  var alwaysShow: js.UndefOr[Boolean] = js.native
+  var alwaysShow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A human-readable string which is rendered less prominent in the same line. Supports rendering of
     * [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable string which is rendered less prominent in a separate line. Supports rendering of
     * [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable string which is rendered prominent. Supports rendering of [theme icons](#ThemeIcon) via
     * the `$(<name>)`-syntax.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Optional flag indicating if this item is picked initially.
@@ -37,7 +35,7 @@ trait QuickPickItem extends StObject {
     *
     * @see [QuickPickOptions.canPickMany](#QuickPickOptions.canPickMany)
     */
-  var picked: js.UndefOr[Boolean] = js.native
+  var picked: js.UndefOr[Boolean] = js.undefined
 }
 object QuickPickItem {
   

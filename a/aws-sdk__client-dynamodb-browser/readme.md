@@ -12,7 +12,7 @@ Browser SDK for Amazon DynamoDB
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 1121 |
+| # downloads        | 915 |
 | # stars            | 0 |
 
 ## Links

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used for establishing connections via a factory which is identified by its name. A DataSource object is typically registered by a naming service
   * provider.
   */
-@js.native
-trait XDataSource extends XInterface {
+trait XDataSource
+  extends StObject
+     with XInterface {
   
   /**
     * gets the maximum time in seconds that this data source can wait while attempting to connect to a database.
@@ -22,7 +22,7 @@ trait XDataSource extends XInterface {
     * @returns the login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  var LoginTimeout: Double = js.native
+  var LoginTimeout: Double
   
   /**
     * attempts to establish a database connection.
@@ -31,7 +31,7 @@ trait XDataSource extends XInterface {
     * @returns the connection object
     * @throws SQLException if a database access error occurs.
     */
-  def getConnection(user: String, password: String): XConnection = js.native
+  def getConnection(user: String, password: String): XConnection
   
   /**
     * gets the maximum time in seconds that this data source can wait while attempting to connect to a database.
@@ -41,7 +41,7 @@ trait XDataSource extends XInterface {
     * @returns the login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  def getLoginTimeout(): Double = js.native
+  def getLoginTimeout(): Double
   
   /**
     * sets the maximum time in seconds that this data source will wait while attempting to connect to a database.
@@ -51,7 +51,7 @@ trait XDataSource extends XInterface {
     * @param seconds the login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  def setLoginTimeout(seconds: Double): Unit = js.native
+  def setLoginTimeout(seconds: Double): Unit
 }
 object XDataSource {
   

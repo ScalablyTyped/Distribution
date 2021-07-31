@@ -3,46 +3,44 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementXssMatchStatementFieldToMatch extends StObject {
   
   /**
     * Inspect all query arguments.
     */
-  var allQueryArguments: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArguments]] = js.native
+  var allQueryArguments: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArguments]] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
     */
-  var body: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchBody]] = js.native
+  var body: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchBody]] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
     */
-  var method: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchMethod]] = js.native
+  var method: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchMethod]] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
     */
-  var queryString: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchQueryString]] = js.native
+  var queryString: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchQueryString]] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
     */
-  var singleHeader: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeader]] = js.native
+  var singleHeader: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeader]] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
     */
-  var singleQueryArgument: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument]] = js.native
+  var singleQueryArgument: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument]] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
     */
-  var uriPath: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchUriPath]] = js.native
+  var uriPath: js.UndefOr[Input[WebAclRuleStatementXssMatchStatementFieldToMatchUriPath]] = js.undefined
 }
 object WebAclRuleStatementXssMatchStatementFieldToMatch {
   

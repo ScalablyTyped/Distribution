@@ -3,12 +3,12 @@ package typings.screeps
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RoomConstructor
-  extends Constructor[Room]
+  extends StObject
+     with Constructor[Room]
      with Instantiable1[/* id */ String, Room] {
   
   var Terrain: RoomTerrainConstructor = js.native

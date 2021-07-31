@@ -7,7 +7,6 @@ import typings.sigmajs.SigmaJs.SigmaFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -27,7 +26,9 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("sigma")
   @js.native
-  class sigma () extends Sigma {
+  class sigma ()
+    extends StObject
+       with Sigma {
     def this(configuration: SigmaConfigs) = this()
     def this(container: String) = this()
     def this(container: Element) = this()

@@ -2,22 +2,20 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.ErrorSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplAction extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var alreadySetup: js.UndefOr[String] = js.native
+  var alreadySetup: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var noTransition: js.UndefOr[String] = js.native
+  var noTransition: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplAction {
   

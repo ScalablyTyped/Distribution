@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficControl extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def setPanelOffset(offset: Size): Unit = js.native
+  def setPanelOffset(offset: Size): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object TrafficControl {
   

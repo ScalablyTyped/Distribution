@@ -140,8 +140,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.Context
-import typings.react.mod.DOMAttributes
-import typings.react.mod.DOMElement
 import typings.react.mod.DetailedReactHTMLElement
 import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
@@ -154,28 +152,28 @@ import typings.react.mod.ReactSVGElement
 import typings.react.mod.Ref
 import typings.react.mod.SVGAttributes
 import typings.std.Array
-import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.SVGElement
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emotionReactMod {
+  
+  @JSImport("@emotion/react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@emotion/react", "CacheProvider")
   @js.native
   val CacheProvider: Provider[EmotionCache] = js.native
   
-  @JSImport("@emotion/react", "ClassNames")
-  @js.native
-  def ClassNames(props: ClassNamesProps): ReactElement = js.native
+  @scala.inline
+  def ClassNames(props: ClassNamesProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@emotion/react", "Global")
-  @js.native
-  def Global(props: GlobalProps): ReactElement = js.native
+  @scala.inline
+  def Global(props: GlobalProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Global")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@emotion/react", "ThemeContext")
   @js.native
@@ -185,109 +183,87 @@ object emotionReactMod {
   @js.native
   val ThemeProvider: typings.emotionReact.themingMod.ThemeProvider = js.native
   
-  @JSImport("@emotion/react", "css")
-  @js.native
-  def css(args: CSSInterpolation*): SerializedStyles = js.native
-  @JSImport("@emotion/react", "css")
-  @js.native
-  def css(template: TemplateStringsArray, args: CSSInterpolation*): SerializedStyles = js.native
+  @scala.inline
+  def css(args: CSSInterpolation*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
+  @scala.inline
+  def css(template: TemplateStringsArray, args: CSSInterpolation*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
   
   object jsx {
     
-    @JSImport("@emotion/react", "jsx")
-    @js.native
+    @scala.inline
     def apply(
       `type`: input,
-      props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
+      props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
       children: ReactNode*
-    ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
+    ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+    @scala.inline
+    def apply(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+    @scala.inline
+    def apply(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
     def apply[P /* <: js.Object */](
       `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-      props: (ClassAttributes[ClassicComponent[P, ComponentState]]) with P,
+      props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
       children: ReactNode*
-    ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](
-      `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-      props: js.UndefOr[scala.Nothing],
-      children: ReactNode*
-    ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
+    ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+    @scala.inline
     def apply[P /* <: js.Object */](
       `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
       props: Null,
       children: ReactNode*
-    ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
+    ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+    @scala.inline
+    def apply[P /* <: js.Object */](
+      `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+      props: Unit,
+      children: ReactNode*
+    ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+    @scala.inline
+    def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+    @scala.inline
     def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-      props: ClassAttributes[T] with P,
+      props: ClassAttributes[T] & P,
       children: ReactNode*
-    ): ReactSVGElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-      props: js.UndefOr[scala.Nothing],
-      children: ReactNode*
-    ): ReactSVGElement = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
+    ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+    @scala.inline
     def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
       props: Null,
       children: ReactNode*
-    ): ReactSVGElement = js.native
+    ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+    @scala.inline
+    def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+      props: Unit,
+      children: ReactNode*
+    ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+    @scala.inline
+    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+    @scala.inline
+    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+    @scala.inline
+    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+    
     @JSImport("@emotion/react", "jsx")
     @js.native
-    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
-    @JSImport("@emotion/react", "jsx")
-    @js.native
-    def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
+    val ^ : js.Any = js.native
     
     object JSX {
       
@@ -304,358 +280,357 @@ object emotionReactMod {
       type IntrinsicClassAttributes[T] = typings.emotionReact.jsxNamespaceMod.EmotionJSX.IntrinsicClassAttributes[T]
       
       /* Inlined @emotion/react.@emotion/react/types/jsx-namespace.EmotionJSX.IntrinsicElements */
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var a: DetailedHTMLPropsAnchorHT = js.native
+        var a: DetailedHTMLPropsAnchorHT
         
-        var abbr: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var abbr: DetailedHTMLPropsHTMLAttrAbout
         
-        var address: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var address: DetailedHTMLPropsHTMLAttrAbout
         
-        var animate: SVGPropsSVGElementcssInte = js.native
+        var animate: SVGPropsSVGElementcssInte
         
-        var animateMotion: SVGPropsSVGElementcssInte = js.native
+        var animateMotion: SVGPropsSVGElementcssInte
         
-        var animateTransform: SVGPropsSVGElementcssInte = js.native
+        var animateTransform: SVGPropsSVGElementcssInte
         
-        var area: DetailedHTMLPropsAreaHTML = js.native
+        var area: DetailedHTMLPropsAreaHTML
         
-        var article: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var article: DetailedHTMLPropsHTMLAttrAbout
         
-        var aside: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var aside: DetailedHTMLPropsHTMLAttrAbout
         
-        var audio: DetailedHTMLPropsAudioHTM = js.native
+        var audio: DetailedHTMLPropsAudioHTM
         
-        var b: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var b: DetailedHTMLPropsHTMLAttrAbout
         
-        var base: DetailedHTMLPropsBaseHTML = js.native
+        var base: DetailedHTMLPropsBaseHTML
         
-        var bdi: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var bdi: DetailedHTMLPropsHTMLAttrAbout
         
-        var bdo: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var bdo: DetailedHTMLPropsHTMLAttrAbout
         
-        var big: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var big: DetailedHTMLPropsHTMLAttrAbout
         
-        var blockquote: DetailedHTMLPropsBlockquo = js.native
+        var blockquote: DetailedHTMLPropsBlockquo
         
-        var body: DetailedHTMLPropsHTMLAttrAriacolspan = js.native
+        var body: DetailedHTMLPropsHTMLAttrAriacolspan
         
-        var br: DetailedHTMLPropsHTMLAttrAriadisabled = js.native
+        var br: DetailedHTMLPropsHTMLAttrAriadisabled
         
-        var button: DetailedHTMLPropsButtonHT = js.native
+        var button: DetailedHTMLPropsButtonHT
         
-        var canvas: DetailedHTMLPropsCanvasHT = js.native
+        var canvas: DetailedHTMLPropsCanvasHT
         
-        var caption: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var caption: DetailedHTMLPropsHTMLAttrAbout
         
-        var circle: SVGPropsSVGCircleElementc = js.native
+        var circle: SVGPropsSVGCircleElementc
         
-        var cite: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var cite: DetailedHTMLPropsHTMLAttrAbout
         
-        var clipPath: SVGPropsSVGClipPathElemen = js.native
+        var clipPath: SVGPropsSVGClipPathElemen
         
-        var code: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var code: DetailedHTMLPropsHTMLAttrAbout
         
-        var col: DetailedHTMLPropsColHTMLA = js.native
+        var col: DetailedHTMLPropsColHTMLA
         
-        var colgroup: DetailedHTMLPropsColgroup = js.native
+        var colgroup: DetailedHTMLPropsColgroup
         
-        var data: DetailedHTMLPropsDataHTML = js.native
+        var data: DetailedHTMLPropsDataHTML
         
-        var datalist: DetailedHTMLPropsHTMLAttrAriacolindex = js.native
+        var datalist: DetailedHTMLPropsHTMLAttrAriacolindex
         
-        var dd: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var dd: DetailedHTMLPropsHTMLAttrAbout
         
-        var defs: SVGPropsSVGDefsElementcss = js.native
+        var defs: SVGPropsSVGDefsElementcss
         
-        var del: DetailedHTMLPropsDelHTMLA = js.native
+        var del: DetailedHTMLPropsDelHTMLA
         
-        var desc: SVGPropsSVGDescElementcss = js.native
+        var desc: SVGPropsSVGDescElementcss
         
-        var details: DetailedHTMLPropsDetailsH = js.native
+        var details: DetailedHTMLPropsDetailsH
         
-        var dfn: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var dfn: DetailedHTMLPropsHTMLAttrAbout
         
-        var dialog: DetailedHTMLPropsDialogHT = js.native
+        var dialog: DetailedHTMLPropsDialogHT
         
-        var div: DetailedHTMLPropsHTMLAttrAriaatomic = js.native
+        var div: DetailedHTMLPropsHTMLAttrAriaatomic
         
-        var dl: DetailedHTMLPropsHTMLAttrAriadescribedby = js.native
+        var dl: DetailedHTMLPropsHTMLAttrAriadescribedby
         
-        var dt: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var dt: DetailedHTMLPropsHTMLAttrAbout
         
-        var ellipse: SVGPropsSVGEllipseElement = js.native
+        var ellipse: SVGPropsSVGEllipseElement
         
-        var em: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var em: DetailedHTMLPropsHTMLAttrAbout
         
-        var embed: DetailedHTMLPropsEmbedHTM = js.native
+        var embed: DetailedHTMLPropsEmbedHTM
         
-        var feBlend: SVGPropsSVGFEBlendElement = js.native
+        var feBlend: SVGPropsSVGFEBlendElement
         
-        var feColorMatrix: SVGPropsSVGFEColorMatrixE = js.native
+        var feColorMatrix: SVGPropsSVGFEColorMatrixE
         
-        var feComponentTransfer: SVGPropsSVGFEComponentTra = js.native
+        var feComponentTransfer: SVGPropsSVGFEComponentTra
         
-        var feComposite: SVGPropsSVGFECompositeEle = js.native
+        var feComposite: SVGPropsSVGFECompositeEle
         
-        var feConvolveMatrix: SVGPropsSVGFEConvolveMatr = js.native
+        var feConvolveMatrix: SVGPropsSVGFEConvolveMatr
         
-        var feDiffuseLighting: SVGPropsSVGFEDiffuseLight = js.native
+        var feDiffuseLighting: SVGPropsSVGFEDiffuseLight
         
-        var feDisplacementMap: SVGPropsSVGFEDisplacement = js.native
+        var feDisplacementMap: SVGPropsSVGFEDisplacement
         
-        var feDistantLight: SVGPropsSVGFEDistantLight = js.native
+        var feDistantLight: SVGPropsSVGFEDistantLight
         
-        var feDropShadow: SVGPropsSVGFEDropShadowEl = js.native
+        var feDropShadow: SVGPropsSVGFEDropShadowEl
         
-        var feFlood: SVGPropsSVGFEFloodElement = js.native
+        var feFlood: SVGPropsSVGFEFloodElement
         
-        var feFuncA: SVGPropsSVGFEFuncAElement = js.native
+        var feFuncA: SVGPropsSVGFEFuncAElement
         
-        var feFuncB: SVGPropsSVGFEFuncBElement = js.native
+        var feFuncB: SVGPropsSVGFEFuncBElement
         
-        var feFuncG: SVGPropsSVGFEFuncGElement = js.native
+        var feFuncG: SVGPropsSVGFEFuncGElement
         
-        var feFuncR: SVGPropsSVGFEFuncRElement = js.native
+        var feFuncR: SVGPropsSVGFEFuncRElement
         
-        var feGaussianBlur: SVGPropsSVGFEGaussianBlur = js.native
+        var feGaussianBlur: SVGPropsSVGFEGaussianBlur
         
-        var feImage: SVGPropsSVGFEImageElement = js.native
+        var feImage: SVGPropsSVGFEImageElement
         
-        var feMerge: SVGPropsSVGFEMergeElement = js.native
+        var feMerge: SVGPropsSVGFEMergeElement
         
-        var feMergeNode: SVGPropsSVGFEMergeNodeEle = js.native
+        var feMergeNode: SVGPropsSVGFEMergeNodeEle
         
-        var feMorphology: SVGPropsSVGFEMorphologyEl = js.native
+        var feMorphology: SVGPropsSVGFEMorphologyEl
         
-        var feOffset: SVGPropsSVGFEOffsetElemen = js.native
+        var feOffset: SVGPropsSVGFEOffsetElemen
         
-        var fePointLight: SVGPropsSVGFEPointLightEl = js.native
+        var fePointLight: SVGPropsSVGFEPointLightEl
         
-        var feSpecularLighting: SVGPropsSVGFESpecularLigh = js.native
+        var feSpecularLighting: SVGPropsSVGFESpecularLigh
         
-        var feSpotLight: SVGPropsSVGFESpotLightEle = js.native
+        var feSpotLight: SVGPropsSVGFESpotLightEle
         
-        var feTile: SVGPropsSVGFETileElementc = js.native
+        var feTile: SVGPropsSVGFETileElementc
         
-        var feTurbulence: SVGPropsSVGFETurbulenceEl = js.native
+        var feTurbulence: SVGPropsSVGFETurbulenceEl
         
-        var fieldset: DetailedHTMLPropsFieldset = js.native
+        var fieldset: DetailedHTMLPropsFieldset
         
-        var figcaption: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var figcaption: DetailedHTMLPropsHTMLAttrAbout
         
-        var figure: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var figure: DetailedHTMLPropsHTMLAttrAbout
         
-        var filter: SVGPropsSVGFilterElementc = js.native
+        var filter: SVGPropsSVGFilterElementc
         
-        var footer: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var footer: DetailedHTMLPropsHTMLAttrAbout
         
-        var foreignObject: SVGPropsSVGForeignObjectE = js.native
+        var foreignObject: SVGPropsSVGForeignObjectE
         
-        var form: DetailedHTMLPropsFormHTML = js.native
+        var form: DetailedHTMLPropsFormHTML
         
-        var g: SVGPropsSVGGElementcssInt = js.native
+        var g: SVGPropsSVGGElementcssInt
         
-        var h1: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h1: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var h2: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h2: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var h3: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h3: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var h4: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h4: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var h5: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h5: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var h6: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+        var h6: DetailedHTMLPropsHTMLAttrAriachecked
         
-        var head: DetailedHTMLPropsHTMLAttrAriacolcount = js.native
+        var head: DetailedHTMLPropsHTMLAttrAriacolcount
         
-        var header: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var header: DetailedHTMLPropsHTMLAttrAbout
         
-        var hgroup: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var hgroup: DetailedHTMLPropsHTMLAttrAbout
         
-        var hr: DetailedHTMLPropsHTMLAttrAriadetails = js.native
+        var hr: DetailedHTMLPropsHTMLAttrAriadetails
         
-        var html: DetailedHTMLPropsHtmlHTML = js.native
+        var html: DetailedHTMLPropsHtmlHTML
         
-        var i: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var i: DetailedHTMLPropsHTMLAttrAbout
         
-        var iframe: DetailedHTMLPropsIframeHT = js.native
+        var iframe: DetailedHTMLPropsIframeHT
         
-        var image: SVGPropsSVGImageElementcs = js.native
+        var image: SVGPropsSVGImageElementcs
         
-        var img: DetailedHTMLPropsImgHTMLA = js.native
+        var img: DetailedHTMLPropsImgHTMLA
         
-        var input: DetailedHTMLPropsInputHTM = js.native
+        var input: DetailedHTMLPropsInputHTM
         
-        var ins: DetailedHTMLPropsInsHTMLA = js.native
+        var ins: DetailedHTMLPropsInsHTMLA
         
-        var kbd: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var kbd: DetailedHTMLPropsHTMLAttrAbout
         
-        var keygen: DetailedHTMLPropsKeygenHT = js.native
+        var keygen: DetailedHTMLPropsKeygenHT
         
-        var label: DetailedHTMLPropsLabelHTM = js.native
+        var label: DetailedHTMLPropsLabelHTM
         
-        var legend: DetailedHTMLPropsHTMLAttrAriabusy = js.native
+        var legend: DetailedHTMLPropsHTMLAttrAriabusy
         
-        var li: DetailedHTMLPropsLiHTMLAt = js.native
+        var li: DetailedHTMLPropsLiHTMLAt
         
-        var line: SVGPropsSVGLineElementcss = js.native
+        var line: SVGPropsSVGLineElementcss
         
-        var linearGradient: SVGPropsSVGLinearGradient = js.native
+        var linearGradient: SVGPropsSVGLinearGradient
         
-        var link: DetailedHTMLPropsLinkHTML = js.native
+        var link: DetailedHTMLPropsLinkHTML
         
-        var main: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var main: DetailedHTMLPropsHTMLAttrAbout
         
-        var map: DetailedHTMLPropsMapHTMLA = js.native
+        var map: DetailedHTMLPropsMapHTMLA
         
-        var mark: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var mark: DetailedHTMLPropsHTMLAttrAbout
         
-        var marker: SVGPropsSVGMarkerElementc = js.native
+        var marker: SVGPropsSVGMarkerElementc
         
-        var mask: SVGPropsSVGMaskElementcss = js.native
+        var mask: SVGPropsSVGMaskElementcss
         
-        var menu: DetailedHTMLPropsMenuHTML = js.native
+        var menu: DetailedHTMLPropsMenuHTML
         
-        var menuitem: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var menuitem: DetailedHTMLPropsHTMLAttrAbout
         
-        var meta: DetailedHTMLPropsMetaHTML = js.native
+        var meta: DetailedHTMLPropsMetaHTML
         
-        var metadata: SVGPropsSVGMetadataElemen = js.native
+        var metadata: SVGPropsSVGMetadataElemen
         
-        var meter: DetailedHTMLPropsMeterHTM = js.native
+        var meter: DetailedHTMLPropsMeterHTM
         
-        var mpath: SVGPropsSVGElementcssInte = js.native
+        var mpath: SVGPropsSVGElementcssInte
         
-        var nav: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var nav: DetailedHTMLPropsHTMLAttrAbout
         
-        var noindex: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var noindex: DetailedHTMLPropsHTMLAttrAbout
         
-        var noscript: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var noscript: DetailedHTMLPropsHTMLAttrAbout
         
-        var `object`: DetailedHTMLPropsObjectHT = js.native
+        var `object`: DetailedHTMLPropsObjectHT
         
-        var ol: DetailedHTMLPropsOlHTMLAt = js.native
+        var ol: DetailedHTMLPropsOlHTMLAt
         
-        var optgroup: DetailedHTMLPropsOptgroup = js.native
+        var optgroup: DetailedHTMLPropsOptgroup
         
-        var option: DetailedHTMLPropsOptionHT = js.native
+        var option: DetailedHTMLPropsOptionHT
         
-        var output: DetailedHTMLPropsOutputHT = js.native
+        var output: DetailedHTMLPropsOutputHT
         
-        var p: DetailedHTMLPropsHTMLAttrAriaerrormessage = js.native
+        var p: DetailedHTMLPropsHTMLAttrAriaerrormessage
         
-        var param: DetailedHTMLPropsParamHTM = js.native
+        var param: DetailedHTMLPropsParamHTM
         
-        var path: SVGPropsSVGPathElementcss = js.native
+        var path: SVGPropsSVGPathElementcss
         
-        var pattern: SVGPropsSVGPatternElement = js.native
+        var pattern: SVGPropsSVGPatternElement
         
-        var picture: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var picture: DetailedHTMLPropsHTMLAttrAbout
         
-        var polygon: SVGPropsSVGPolygonElement = js.native
+        var polygon: SVGPropsSVGPolygonElement
         
-        var polyline: SVGPropsSVGPolylineElemen = js.native
+        var polyline: SVGPropsSVGPolylineElemen
         
-        var pre: DetailedHTMLPropsHTMLAttrAriaautocomplete = js.native
+        var pre: DetailedHTMLPropsHTMLAttrAriaautocomplete
         
-        var progress: DetailedHTMLPropsProgress = js.native
+        var progress: DetailedHTMLPropsProgress
         
-        var q: DetailedHTMLPropsQuoteHTM = js.native
+        var q: DetailedHTMLPropsQuoteHTM
         
-        var radialGradient: SVGPropsSVGRadialGradient = js.native
+        var radialGradient: SVGPropsSVGRadialGradient
         
-        var rect: SVGPropsSVGRectElementcss = js.native
+        var rect: SVGPropsSVGRectElementcss
         
-        var rp: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var rp: DetailedHTMLPropsHTMLAttrAbout
         
-        var rt: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var rt: DetailedHTMLPropsHTMLAttrAbout
         
-        var ruby: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var ruby: DetailedHTMLPropsHTMLAttrAbout
         
-        var s: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var s: DetailedHTMLPropsHTMLAttrAbout
         
-        var samp: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var samp: DetailedHTMLPropsHTMLAttrAbout
         
-        var script: DetailedHTMLPropsScriptHT = js.native
+        var script: DetailedHTMLPropsScriptHT
         
-        var section: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var section: DetailedHTMLPropsHTMLAttrAbout
         
-        var select: DetailedHTMLPropsSelectHT = js.native
+        var select: DetailedHTMLPropsSelectHT
         
-        var slot: DetailedHTMLPropsSlotHTML = js.native
+        var slot: DetailedHTMLPropsSlotHTML
         
-        var small: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var small: DetailedHTMLPropsHTMLAttrAbout
         
-        var source: DetailedHTMLPropsSourceHT = js.native
+        var source: DetailedHTMLPropsSourceHT
         
-        var span: DetailedHTMLPropsHTMLAttrAriacurrent = js.native
+        var span: DetailedHTMLPropsHTMLAttrAriacurrent
         
-        var stop: SVGPropsSVGStopElementcss = js.native
+        var stop: SVGPropsSVGStopElementcss
         
-        var strong: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var strong: DetailedHTMLPropsHTMLAttrAbout
         
-        var style: DetailedHTMLPropsStyleHTM = js.native
+        var style: DetailedHTMLPropsStyleHTM
         
-        var sub: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var sub: DetailedHTMLPropsHTMLAttrAbout
         
-        var summary: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var summary: DetailedHTMLPropsHTMLAttrAbout
         
-        var sup: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var sup: DetailedHTMLPropsHTMLAttrAbout
         
-        var svg: SVGPropsSVGSVGElementcssI = js.native
+        var svg: SVGPropsSVGSVGElementcssI
         
-        var switch: SVGPropsSVGSwitchElementc = js.native
+        var switch: SVGPropsSVGSwitchElementc
         
-        var symbol: SVGPropsSVGSymbolElementc = js.native
+        var symbol: SVGPropsSVGSymbolElementc
         
-        var table: DetailedHTMLPropsTableHTM = js.native
+        var table: DetailedHTMLPropsTableHTM
         
-        var tbody: DetailedHTMLPropsHTMLAttr = js.native
+        var tbody: DetailedHTMLPropsHTMLAttr
         
-        var td: DetailedHTMLPropsTdHTMLAt = js.native
+        var td: DetailedHTMLPropsTdHTMLAt
         
-        var template: DetailedHTMLPropsHTMLAttrAriacontrols = js.native
+        var template: DetailedHTMLPropsHTMLAttrAriacontrols
         
-        var text: SVGPropsSVGTextElementcss = js.native
+        var text: SVGPropsSVGTextElementcss
         
-        var textPath: SVGPropsSVGTextPathElemen = js.native
+        var textPath: SVGPropsSVGTextPathElemen
         
-        var textarea: DetailedHTMLPropsTextarea = js.native
+        var textarea: DetailedHTMLPropsTextarea
         
-        var tfoot: DetailedHTMLPropsHTMLAttr = js.native
+        var tfoot: DetailedHTMLPropsHTMLAttr
         
-        var th: DetailedHTMLPropsThHTMLAt = js.native
+        var th: DetailedHTMLPropsThHTMLAt
         
-        var thead: DetailedHTMLPropsHTMLAttr = js.native
+        var thead: DetailedHTMLPropsHTMLAttr
         
-        var time: DetailedHTMLPropsTimeHTML = js.native
+        var time: DetailedHTMLPropsTimeHTML
         
-        var title: DetailedHTMLPropsHTMLAttrAccessKey = js.native
+        var title: DetailedHTMLPropsHTMLAttrAccessKey
         
-        var tr: DetailedHTMLPropsHTMLAttrAriaactivedescendant = js.native
+        var tr: DetailedHTMLPropsHTMLAttrAriaactivedescendant
         
-        var track: DetailedHTMLPropsTrackHTM = js.native
+        var track: DetailedHTMLPropsTrackHTM
         
-        var tspan: SVGPropsSVGTSpanElementcs = js.native
+        var tspan: SVGPropsSVGTSpanElementcs
         
-        var u: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var u: DetailedHTMLPropsHTMLAttrAbout
         
-        var ul: DetailedHTMLPropsHTMLAttrAriadropeffect = js.native
+        var ul: DetailedHTMLPropsHTMLAttrAriadropeffect
         
-        var use: SVGPropsSVGUseElementcssI = js.native
+        var use: SVGPropsSVGUseElementcssI
         
-        var `var`: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var `var`: DetailedHTMLPropsHTMLAttrAbout
         
-        var video: DetailedHTMLPropsVideoHTM = js.native
+        var video: DetailedHTMLPropsVideoHTM
         
-        var view: SVGPropsSVGViewElementcss = js.native
+        var view: SVGPropsSVGViewElementcss
         
-        var wbr: DetailedHTMLPropsHTMLAttrAbout = js.native
+        var wbr: DetailedHTMLPropsHTMLAttrAbout
         
-        var webview: DetailedHTMLPropsWebViewH = js.native
+        var webview: DetailedHTMLPropsWebViewH
       }
       object IntrinsicElements {
         
@@ -1377,29 +1352,27 @@ object emotionReactMod {
     }
   }
   
-  @JSImport("@emotion/react", "keyframes")
-  @js.native
-  def keyframes(args: CSSInterpolation*): Keyframes = js.native
-  @JSImport("@emotion/react", "keyframes")
-  @js.native
-  def keyframes(template: TemplateStringsArray, args: CSSInterpolation*): Keyframes = js.native
+  @scala.inline
+  def keyframes(args: CSSInterpolation*): Keyframes = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(args.asInstanceOf[js.Any]).asInstanceOf[Keyframes]
+  @scala.inline
+  def keyframes(template: TemplateStringsArray, args: CSSInterpolation*): Keyframes = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Keyframes]
   
-  @JSImport("@emotion/react", "useTheme")
-  @js.native
-  def useTheme(): Theme = js.native
+  @scala.inline
+  def useTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Theme]
   
-  @JSImport("@emotion/react", "withEmotionCache")
-  @js.native
+  @scala.inline
   def withEmotionCache[Props, RefType](
     func: js.Function3[/* props */ Props, /* context */ EmotionCache, /* ref */ Ref[RefType], ReactNode]
-  ): FC[Props with ClassAttributes[RefType]] = js.native
+  ): FC[Props & ClassAttributes[RefType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEmotionCache")(func.asInstanceOf[js.Any]).asInstanceOf[FC[Props & ClassAttributes[RefType]]]
   
   @JSImport("@emotion/react", "withTheme")
   @js.native
   val withTheme: typings.emotionReact.themingMod.withTheme = js.native
   
   @js.native
-  trait ArrayClassNamesArg extends Array[ClassNamesArg]
+  trait ArrayClassNamesArg
+    extends StObject
+       with Array[ClassNamesArg]
   
   type ClassNamesArg = js.UndefOr[
     Null | String | Boolean | (StringDictionary[js.UndefOr[Boolean | Null]]) | ArrayClassNamesArg
@@ -1416,10 +1389,9 @@ object emotionReactMod {
     var theme: Theme = js.native
   }
   
-  @js.native
   trait ClassNamesProps extends StObject {
     
-    def children(content: ClassNamesContent): ReactNode = js.native
+    def children(content: ClassNamesContent): ReactNode
   }
   object ClassNamesProps {
     
@@ -1437,10 +1409,9 @@ object emotionReactMod {
     }
   }
   
-  @js.native
   trait GlobalProps extends StObject {
     
-    var styles: Interpolation[Theme] = js.native
+    var styles: Interpolation[Theme]
   }
   object GlobalProps {
     
@@ -1464,6 +1435,5 @@ object emotionReactMod {
     }
   }
   
-  @js.native
   trait Theme extends StObject
 }

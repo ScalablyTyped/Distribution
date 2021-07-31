@@ -2,17 +2,17 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RectOptions extends ShapeOptions {
+trait RectOptions
+  extends StObject
+     with ShapeOptions {
   
   /** @default 1 */
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
   /** @default 1 */
-  val width: js.UndefOr[Double] = js.native
+  val width: js.UndefOr[Double] = js.undefined
 }
 object RectOptions {
   

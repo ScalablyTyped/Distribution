@@ -18,34 +18,30 @@ import typings.when.When._underscore.LiftedFn4
 import typings.when.When._underscore.LiftedFn5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object When {
     
+    @scala.inline
+    def apply(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Promise[Unit]]
+    @scala.inline
+    def apply[T](promiseOrValue: T): Promise[T] = ^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def apply[T](promiseOrValue: Promise[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def apply[T](promiseOrValue: Thenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def apply[T, U](promiseOrValue: T, transform: js.Function1[/* val */ T, U]): Promise[U] = (^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
+    @scala.inline
+    def apply[T, U](promiseOrValue: Promise[T], transform: js.Function1[/* val */ T, U]): Promise[U] = (^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
+    @scala.inline
+    def apply[T, U](promiseOrValue: Thenable[T], transform: js.Function1[/* val */ T, U]): Promise[U] = (^.asInstanceOf[js.Dynamic].apply(promiseOrValue.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
+    
     @JSGlobal("When")
     @js.native
-    def apply(): Promise[Unit] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T](promiseOrValue: T): Promise[T] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T](promiseOrValue: Promise[T]): Promise[T] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T, U](promiseOrValue: T, transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T, U](promiseOrValue: Promise[T], transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
-    @JSGlobal("When")
-    @js.native
-    def apply[T, U](promiseOrValue: Thenable[T], transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Return a promise that will resolve only once all the supplied promisesOrValues
@@ -56,132 +52,92 @@ object global {
       * @param promisesOrValues array of anything, may contain a mix
       *      of {@link Promise}s and values
       */
-    @JSGlobal("When.all")
-    @js.native
-    def all[T](promisesOrValues: js.Array[_]): Promise[T] = js.native
+    @scala.inline
+    def all[T](promisesOrValues: js.Array[js.Any]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[T](f: Fn0[T]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, T](f: Fn1[A1, T], arg1: A1): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, T](f: Fn1[A1, T], arg1: Promise[A1]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: A2): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: Promise[A2]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: A2): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: Promise[A2]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: A3): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    @scala.inline
+    def attempt[T](f: Fn0[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, T](f: Fn1[A1, T], arg1: A1): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, T](f: Fn1[A1, T], arg1: Promise[A1]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: A2): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: Promise[A2]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: A2): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: Promise[A2]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, T](
       f: Fn4[A1, A2, A3, A4, T],
       arg1: Promise[A1],
       arg2: Promise[A2],
       arg3: Promise[A3],
       arg4: Promise[A4]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: Promise[A5]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4], arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4], arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: A1,
@@ -189,18 +145,14 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: A1,
@@ -208,12 +160,10 @@ object global {
       arg3: A3,
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: A1,
@@ -221,9 +171,8 @@ object global {
       arg3: Promise[A3],
       arg4: A4,
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: A1,
@@ -231,9 +180,8 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: A5
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: A1,
@@ -241,18 +189,14 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -260,12 +204,10 @@ object global {
       arg3: A3,
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -273,9 +215,8 @@ object global {
       arg3: Promise[A3],
       arg4: A4,
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -283,9 +224,8 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: A5
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -293,12 +233,10 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
-    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
+    def attempt[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -306,9 +244,8 @@ object global {
       arg3: A3,
       arg4: A4,
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -316,9 +253,8 @@ object global {
       arg3: A3,
       arg4: Promise[A4],
       arg5: A5
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -326,9 +262,8 @@ object global {
       arg3: A3,
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -336,9 +271,8 @@ object global {
       arg3: Promise[A3],
       arg4: A4,
       arg5: A5
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -346,9 +280,8 @@ object global {
       arg3: Promise[A3],
       arg4: A4,
       arg5: Promise[A5]
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -356,9 +289,8 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: A5
-    ): Promise[T] = js.native
-    @JSGlobal("When.attempt")
-    @js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    @scala.inline
     def attempt[A1, A2, A3, A4, A5, T](
       f: Fn5[A1, A2, A3, A4, A5, T],
       arg1: Promise[A1],
@@ -366,7 +298,7 @@ object global {
       arg3: Promise[A3],
       arg4: Promise[A4],
       arg5: Promise[A5]
-    ): Promise[T] = js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
     /**
       * Creates a {promise, resolver} pair, either or both of which
@@ -374,9 +306,8 @@ object global {
       * The resolver has resolve, reject, and progress.  The promise
       * has then plus extended promise API.
       */
-    @JSGlobal("When.defer")
-    @js.native
-    def defer[T](): Deferred[T] = js.native
+    @scala.inline
+    def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
     
     /**
       * Generates a potentially infinite stream of promises by repeatedly calling f until predicate becomes true.
@@ -386,50 +317,41 @@ object global {
       * @param handler function that receives each value as it is produced by f. It may return a promise to delay the next iteration.
       * @param seed initial value provided to the handler, and first f invocation. May be a promise.
       */
-    @JSGlobal("When.iterate")
-    @js.native
+    @scala.inline
     def iterate[U](
       f: js.Function1[/* seed */ U, U | Promise[U]],
       predicate: js.Function1[/* value */ U, Boolean],
-      handler: js.Function1[/* value */ U, Promise[_] | Unit],
+      handler: js.Function1[/* value */ U, Promise[js.Any] | Unit],
       seed: U
-    ): Promise[U] = js.native
-    @JSGlobal("When.iterate")
-    @js.native
+    ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(f.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
+    @scala.inline
     def iterate[U](
       f: js.Function1[/* seed */ U, U | Promise[U]],
       predicate: js.Function1[/* value */ U, Boolean],
-      handler: js.Function1[/* value */ U, Promise[_] | Unit],
+      handler: js.Function1[/* value */ U, Promise[js.Any] | Unit],
       seed: Promise[U]
-    ): Promise[U] = js.native
+    ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(f.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     
     /**
       * Joins multiple promises into a single returned promise.
       * @return a promise that will fulfill when *all* the input promises
       * have fulfilled, or will reject when *any one* of the input promises rejects.
       */
-    @JSGlobal("When.join")
-    @js.native
-    def join[T](promises: (js.Any | Promise[T])*): Promise[js.Array[T]] = js.native
+    @scala.inline
+    def join[T](promises: (js.Any | Promise[T])*): Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T]]]
     
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[T](f: Fn0[T]): LiftedFn0[T] = js.native
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[A1, T](f: Fn1[A1, T]): LiftedFn1[A1, T] = js.native
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[A1, A2, T](f: Fn2[A1, A2, T]): LiftedFn2[A1, A2, T] = js.native
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[A1, A2, A3, T](f: Fn3[A1, A2, A3, T]): LiftedFn3[A1, A2, A3, T] = js.native
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T]): LiftedFn4[A1, A2, A3, A4, T] = js.native
-    @JSGlobal("When.lift")
-    @js.native
-    def lift[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T]): LiftedFn5[A1, A2, A3, A4, A5, T] = js.native
+    @scala.inline
+    def lift[T](f: Fn0[T]): LiftedFn0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn0[T]]
+    @scala.inline
+    def lift[A1, T](f: Fn1[A1, T]): LiftedFn1[A1, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn1[A1, T]]
+    @scala.inline
+    def lift[A1, A2, T](f: Fn2[A1, A2, T]): LiftedFn2[A1, A2, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn2[A1, A2, T]]
+    @scala.inline
+    def lift[A1, A2, A3, T](f: Fn3[A1, A2, A3, T]): LiftedFn3[A1, A2, A3, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn3[A1, A2, A3, T]]
+    @scala.inline
+    def lift[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T]): LiftedFn4[A1, A2, A3, A4, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn4[A1, A2, A3, A4, T]]
+    @scala.inline
+    def lift[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T]): LiftedFn5[A1, A2, A3, A4, A5, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn5[A1, A2, A3, A4, A5, T]]
     
     /**
       * Promise-aware array map function, similar to `Array.prototype.map()`,
@@ -439,19 +361,20 @@ object global {
       * @returns a promise that will fulfill with an array of mapped values
       *  or reject if any input promise rejects.
       */
-    @JSGlobal("When.map")
-    @js.native
-    def map[T](promisesOrValues: js.Array[_], mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, _]): Promise[T] = js.native
+    @scala.inline
+    def map[T](
+      promisesOrValues: js.Array[js.Any],
+      mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, js.Any]
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(promisesOrValues.asInstanceOf[js.Any], mapFunc.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    @JSGlobal("When.promise")
-    @js.native
+    @scala.inline
     def promise[T](
       resolver: js.Function2[
           /* resolve */ js.Function1[/* value */ T, Unit], 
           /* reject */ js.Function1[/* reason */ js.Any, Unit], 
           Unit
         ]
-    ): Promise[T] = js.native
+    ): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(resolver.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     /**
       * Traditional reduce function, similar to `Array.prototype.reduce()`, but
@@ -463,13 +386,12 @@ object global {
       * @param reduceFunc function(accumulated:*, x:*, index:number):*} f reduce function
       * @returns a promise that will resolve to the final reduced value
       */
-    @JSGlobal("When.reduce")
-    @js.native
+    @scala.inline
     def reduce[T](
-      promisesOrValues: js.Array[_],
+      promisesOrValues: js.Array[js.Any],
       reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
       initialValue: T
-    ): Promise[T] = js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(promisesOrValues.asInstanceOf[js.Any], reduceFunc.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
     /**
       * Traditional reduce function, similar to `Array.prototype.reduceRight()`, but
@@ -481,17 +403,15 @@ object global {
       * @param reduceFunc function(accumulated:*, x:*, index:number):*} f reduce function
       * @returns a promise that will resolve to the final reduced value
       */
-    @JSGlobal("When.reduceRight")
-    @js.native
+    @scala.inline
     def reduceRight[T](
-      promisesOrValues: js.Array[_],
+      promisesOrValues: js.Array[js.Any],
       reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
       initialValue: T
-    ): Promise[T] = js.native
+    ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(promisesOrValues.asInstanceOf[js.Any], reduceFunc.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    @JSGlobal("When.reject")
-    @js.native
-    def reject[T](reason: js.Any): Promise[T] = js.native
+    @scala.inline
+    def reject[T](reason: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     /**
       * Returns a resolved promise. The returned promise will be
@@ -500,18 +420,14 @@ object global {
       *    - fulfilled with promiseOrValue's value after it is fulfilled
       *    - rejected with promiseOrValue's reason after it is rejected
       */
-    @JSGlobal("When.resolve")
-    @js.native
-    def resolve(): Promise[Unit] = js.native
-    @JSGlobal("When.resolve")
-    @js.native
-    def resolve[T](promiseOrValue: T): Promise[T] = js.native
-    @JSGlobal("When.resolve")
-    @js.native
-    def resolve[T](promiseOrValue: Promise[T]): Promise[T] = js.native
-    @JSGlobal("When.resolve")
-    @js.native
-    def resolve[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
+    @scala.inline
+    def resolve(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[Unit]]
+    @scala.inline
+    def resolve[T](promiseOrValue: T): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def resolve[T](promiseOrValue: Promise[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    @scala.inline
+    def resolve[T](promiseOrValue: Thenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(promiseOrValue.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     /**
       * Returns a promise for an array containing the same number of elements as the input array.
@@ -524,9 +440,8 @@ object global {
       * @param promisesOrValues array of anything, may contain a mix
       *      of {@link Promise}s and values
       */
-    @JSGlobal("When.settle")
-    @js.native
-    def settle[T](promisesOrValues: js.Array[_]): Promise[js.Array[Descriptor[T]]] = js.native
+    @scala.inline
+    def settle[T](promisesOrValues: js.Array[js.Any]): Promise[js.Array[Descriptor[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settle")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[Descriptor[T]]]]
     
     /**
       * Similar to when/iterate, when.unfold generates a potentially infinite stream of promises by repeatedly calling
@@ -540,28 +455,26 @@ object global {
       * It may return a promise to delay the next iteration of the unfold.
       * @param seed initial value provided to the first unspool invocation. May be a promise.
       */
-    @JSGlobal("When.unfold")
-    @js.native
+    @scala.inline
     def unfold[T, U](
       unspool: js.Function1[
           /* seed */ U, 
           (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
         ],
       predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-      handler: js.Function1[/* value */ T, Promise[_] | Unit],
+      handler: js.Function1[/* value */ T, Promise[js.Any] | Unit],
       seed: U
-    ): Promise[Unit] = js.native
-    @JSGlobal("When.unfold")
-    @js.native
+    ): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(unspool.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    @scala.inline
     def unfold[T, U](
       unspool: js.Function1[
           /* seed */ U, 
           (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
         ],
       predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-      handler: js.Function1[/* value */ T, Promise[_] | Unit],
+      handler: js.Function1[/* value */ T, Promise[js.Any] | Unit],
       seed: Promise[U]
-    ): Promise[Unit] = js.native
+    ): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(unspool.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     
     // Helper interfaces
     object _underscore

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelMembershipsForAppInstanceUserResponse extends StObject {
   
   /**
     * The token passed by previous API calls until all requested users are returned.
     */
-  var ChannelMemberships: js.UndefOr[ChannelMembershipForAppInstanceUserSummaryList] = js.native
+  var ChannelMemberships: js.UndefOr[ChannelMembershipForAppInstanceUserSummaryList] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested users are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelMembershipsForAppInstanceUserResponse {
   

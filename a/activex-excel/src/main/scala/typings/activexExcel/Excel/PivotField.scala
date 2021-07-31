@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,9 +26,9 @@ trait PivotField extends StObject {
   val AutoShowType: Double = js.native
   
   def AutoSort(Order: Double, Field: String): Unit = js.native
-  def AutoSort(Order: Double, Field: String, PivotLine: js.UndefOr[scala.Nothing], CustomSubtotal: js.Any): Unit = js.native
   def AutoSort(Order: Double, Field: String, PivotLine: js.Any): Unit = js.native
   def AutoSort(Order: Double, Field: String, PivotLine: js.Any, CustomSubtotal: js.Any): Unit = js.native
+  def AutoSort(Order: Double, Field: String, PivotLine: Unit, CustomSubtotal: js.Any): Unit = js.native
   
   val AutoSortCustomSubtotal: Double = js.native
   

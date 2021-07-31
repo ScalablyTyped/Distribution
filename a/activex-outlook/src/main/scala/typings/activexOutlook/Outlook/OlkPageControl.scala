@@ -2,16 +2,14 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkPageControl extends StObject {
   
   @JSName("Outlook.OlkPageControl_typekey")
-  var OutlookDotOlkPageControl_typekey: OlkPageControl = js.native
+  var OutlookDotOlkPageControl_typekey: OlkPageControl
   
-  var Page: OlPageType = js.native
+  var Page: OlPageType
 }
 object OlkPageControl {
   

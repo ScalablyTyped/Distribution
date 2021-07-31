@@ -5,7 +5,6 @@ import typings.rest.mod.Interceptor
 import typings.rest.registryMod.Registry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mimeMod extends Shortcut {
@@ -14,16 +13,15 @@ object mimeMod extends Shortcut {
   @js.native
   val ^ : Interceptor[Config] = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var mime: js.UndefOr[String] = js.native
+    var mime: js.UndefOr[String] = js.undefined
     
-    var permissive: js.UndefOr[Boolean] = js.native
+    var permissive: js.UndefOr[Boolean] = js.undefined
     
-    var registry: js.UndefOr[Registry] = js.native
+    var registry: js.UndefOr[Registry] = js.undefined
   }
   object Config {
     

@@ -5,23 +5,21 @@ import typings.superstruct.indexCjsMod.StructContext
 import typings.superstruct.indexCjsMod.StructResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Coercer[S, T] extends StObject {
     
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
-    var refiner: js.UndefOr[js.Function2[/* value */ T, /* context */ StructContext, StructResult]] = js.native
+    var refiner: js.UndefOr[js.Function2[/* value */ T, /* context */ StructContext, StructResult]] = js.undefined
     
-    var schema: S = js.native
+    var schema: S
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var validator: js.UndefOr[js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]] = js.native
+    var validator: js.UndefOr[js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]] = js.undefined
   }
   object Coercer {
     
@@ -33,10 +31,10 @@ object anon {
     }
     
     @scala.inline
-    implicit class CoercerMutableBuilder[Self <: Coercer[_, _], S, T] (val x: Self with (Coercer[S, T])) extends AnyVal {
+    implicit class CoercerMutableBuilder[Self <: Coercer[?, ?], S, T] (val x: Self & (Coercer[S, T])) extends AnyVal {
       
       @scala.inline
-      def setCoercer(value: /* value */ js.Any => _): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
+      def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)
@@ -63,23 +61,23 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* args */ js.Any, js.Any]
+    extends StObject
+       with Instantiable1[/* args */ js.Any, js.Any]
   
   /* Inlined std.Partial<superstruct.superstruct/lib/typings.Failure> */
-  @js.native
   trait PartialFailure extends StObject {
     
-    var branch: js.UndefOr[js.Array[_]] = js.native
+    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.native
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var refinement: js.UndefOr[String] = js.native
+    var refinement: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     var value: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialFailure {
     
@@ -93,7 +91,7 @@ object anon {
     implicit class PartialFailureMutableBuilder[Self <: PartialFailure] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
@@ -133,18 +131,17 @@ object anon {
   }
   
   /* Inlined std.Partial<superstruct.superstruct/lib/index.cjs.StructFailure> */
-  @js.native
   trait PartialStructFailure extends StObject {
     
-    var branch: js.UndefOr[js.Array[_]] = js.native
+    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.native
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     var value: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.cjs.StructContext['value'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialStructFailure {
     
@@ -158,7 +155,7 @@ object anon {
     implicit class PartialStructFailureMutableBuilder[Self <: PartialStructFailure] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
@@ -192,18 +189,17 @@ object anon {
   }
   
   /* Inlined std.Partial<superstruct.superstruct/lib/index.es.StructFailure> */
-  @js.native
   trait PartialStructFailureBranch extends StObject {
     
-    var branch: js.UndefOr[js.Array[_]] = js.native
+    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.native
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     var value: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.es.StructContext['value'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialStructFailureBranch {
     
@@ -217,7 +213,7 @@ object anon {
     implicit class PartialStructFailureBranchMutableBuilder[Self <: PartialStructFailureBranch] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
@@ -251,18 +247,17 @@ object anon {
   }
   
   /* Inlined std.Partial<superstruct.superstruct/lib/struct.StructFailure> */
-  @js.native
   trait PartialStructFailurePath extends StObject {
     
-    var branch: js.UndefOr[js.Array[_]] = js.native
+    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.native
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     var value: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialStructFailurePath {
     
@@ -276,7 +271,7 @@ object anon {
     implicit class PartialStructFailurePathMutableBuilder[Self <: PartialStructFailurePath] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
@@ -309,10 +304,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Refiner[S, T] extends StObject {
     
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
     var refiner: js.UndefOr[
         js.Function2[
@@ -320,11 +314,11 @@ object anon {
           /* context */ typings.superstruct.structMod.StructContext, 
           typings.superstruct.structMod.StructResult
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var schema: S = js.native
+    var schema: S
     
-    var `type`: String = js.native
+    var `type`: String
     
     var validator: js.UndefOr[
         js.Function2[
@@ -332,7 +326,7 @@ object anon {
           /* context */ typings.superstruct.structMod.StructContext, 
           typings.superstruct.structMod.StructResult
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Refiner {
     
@@ -344,10 +338,10 @@ object anon {
     }
     
     @scala.inline
-    implicit class RefinerMutableBuilder[Self <: Refiner[_, _], S, T] (val x: Self with (Refiner[S, T])) extends AnyVal {
+    implicit class RefinerMutableBuilder[Self <: Refiner[?, ?], S, T] (val x: Self & (Refiner[S, T])) extends AnyVal {
       
       @scala.inline
-      def setCoercer(value: /* value */ js.Any => _): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
+      def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)
@@ -376,10 +370,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Schema[S, T] extends StObject {
     
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
     var refiner: js.UndefOr[
         js.Function2[
@@ -387,11 +380,11 @@ object anon {
           /* context */ typings.superstruct.indexEsMod.StructContext, 
           typings.superstruct.indexEsMod.StructResult
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var schema: S = js.native
+    var schema: S
     
-    var `type`: String = js.native
+    var `type`: String
     
     var validator: js.UndefOr[
         js.Function2[
@@ -399,7 +392,7 @@ object anon {
           /* context */ typings.superstruct.indexEsMod.StructContext, 
           typings.superstruct.indexEsMod.StructResult
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Schema {
     
@@ -411,10 +404,10 @@ object anon {
     }
     
     @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema[_, _], S, T] (val x: Self with (Schema[S, T])) extends AnyVal {
+    implicit class SchemaMutableBuilder[Self <: Schema[?, ?], S, T] (val x: Self & (Schema[S, T])) extends AnyVal {
       
       @scala.inline
-      def setCoercer(value: /* value */ js.Any => _): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
+      def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)

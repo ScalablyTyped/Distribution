@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgVideoPlayerCommercialsEmbeddedCommercial
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgVideoPlayerCommercialsEmbeddedCommercial
     * Gets/Sets the end second of the embedded commercial.
     *
     */
-  var endTime: js.UndefOr[Double] = js.native
+  var endTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the sponsored link of the embedded commercial.
     *
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the start second of the embedded commercial.
     *
     */
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the tooltip for the bookmark of the embedded commercial.
     *
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IgVideoPlayerCommercialsEmbeddedCommercial {
   

@@ -5,7 +5,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeProviderMod {
@@ -43,10 +42,9 @@ object themeProviderMod {
     def defaultProps_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IThemeProviderContext extends StObject {
     
-    var reactThemeable: js.Any = js.native
+    var reactThemeable: js.Any
   }
   object IThemeProviderContext {
     
@@ -64,12 +62,11 @@ object themeProviderMod {
     }
   }
   
-  @js.native
   trait IThemeProviderProps extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var reactThemeable: js.Any = js.native
+    var reactThemeable: js.Any
   }
   object IThemeProviderProps {
     

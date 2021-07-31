@@ -3,53 +3,51 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 import typings.maximMazurokGapiClientAnalytics.anon.ExcludeConditions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemarketingAudience extends StObject {
   
   /** Account ID to which this remarketing audience belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The simple audience definition that will cause a user to be added to an audience. */
-  var audienceDefinition: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.IncludeConditions] = js.native
+  var audienceDefinition: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.IncludeConditions] = js.undefined
   
   /** The type of audience, either SIMPLE or STATE_BASED. */
-  var audienceType: js.UndefOr[String] = js.native
+  var audienceType: js.UndefOr[String] = js.undefined
   
   /** Time this remarketing audience was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The description of this remarketing audience. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Remarketing Audience ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Internal ID for the web property to which this remarketing audience belongs. */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /** Collection type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The linked ad accounts associated with this remarketing audience. A remarketing audience can have only one linkedAdAccount currently. */
-  var linkedAdAccounts: js.UndefOr[js.Array[LinkedForeignAccount]] = js.native
+  var linkedAdAccounts: js.UndefOr[js.Array[LinkedForeignAccount]] = js.undefined
   
   /** The views (profiles) that this remarketing audience is linked to. */
-  var linkedViews: js.UndefOr[js.Array[String]] = js.native
+  var linkedViews: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of this remarketing audience. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A state based audience definition that will cause a user to be added or removed from an audience. */
-  var stateBasedAudienceDefinition: js.UndefOr[ExcludeConditions] = js.native
+  var stateBasedAudienceDefinition: js.UndefOr[ExcludeConditions] = js.undefined
   
   /** Time this remarketing audience was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** Web property ID of the form UA-XXXXX-YY to which this remarketing audience belongs. */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object RemarketingAudience {
   

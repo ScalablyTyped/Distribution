@@ -2,7 +2,6 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Defined in lib.d.ts
@@ -14,28 +13,27 @@ interface LocalStorage {
   clear;
 }
 */
-@js.native
 trait StatusBar extends StObject {
   
-  def backgroundColorByHexString(hexString: String): Unit = js.native
+  def backgroundColorByHexString(hexString: String): Unit
   
-  def backgroundColorByName(colorname: String): Unit = js.native
+  def backgroundColorByName(colorname: String): Unit
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  def overlaysWebView(doOverlay: Boolean): Unit = js.native
+  def overlaysWebView(doOverlay: Boolean): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  def styleBlackOpaque(): Unit = js.native
+  def styleBlackOpaque(): Unit
   
-  def styleBlackTranslucent(): Unit = js.native
+  def styleBlackTranslucent(): Unit
   
-  def styleDefault(): Unit = js.native
+  def styleDefault(): Unit
   
-  def styleLightContent(): Unit = js.native
+  def styleLightContent(): Unit
 }
 object StatusBar {
   

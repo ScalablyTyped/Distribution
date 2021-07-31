@@ -2,17 +2,15 @@ package typings.nedb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NewDoc[T /* <: G */, G] extends StObject {
     
-    var newDoc: T = js.native
+    var newDoc: T
     
-    var oldDoc: T = js.native
+    var oldDoc: T
   }
   object NewDoc {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NewDocMutableBuilder[Self <: NewDoc[_, _], T /* <: G */, G] (val x: Self with (NewDoc[T, G])) extends AnyVal {
+    implicit class NewDocMutableBuilder[Self <: NewDoc[?, ?], T /* <: G */, G] (val x: Self & (NewDoc[T, G])) extends AnyVal {
       
       @scala.inline
       def setNewDoc(value: T): Self = StObject.set(x, "newDoc", value.asInstanceOf[js.Any])

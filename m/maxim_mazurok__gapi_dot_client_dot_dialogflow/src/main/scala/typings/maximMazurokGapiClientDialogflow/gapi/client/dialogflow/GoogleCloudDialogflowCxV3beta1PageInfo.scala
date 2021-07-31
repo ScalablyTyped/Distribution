@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1PageInfo extends StObject {
   
   /** Always present for WebhookRequest. Ignored for WebhookResponse. The unique identifier of the current page. Format: `projects//locations//agents//flows//pages/`. */
-  var currentPage: js.UndefOr[String] = js.native
+  var currentPage: js.UndefOr[String] = js.undefined
   
   /** Optional for both WebhookRequest and WebhookResponse. Information about the form. */
-  var formInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1PageInfoFormInfo] = js.native
+  var formInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1PageInfoFormInfo] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1PageInfo {
   

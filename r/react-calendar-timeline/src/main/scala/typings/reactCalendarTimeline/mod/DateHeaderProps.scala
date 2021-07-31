@@ -6,21 +6,19 @@ import typings.react.mod.ReactNode
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.primaryHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateHeaderProps[Data] extends StObject {
   
-  var children: js.UndefOr[js.Function1[/* props */ SidebarHeaderChildrenFnProps[Data], ReactNode]] = js.native
+  var children: js.UndefOr[js.Function1[/* props */ SidebarHeaderChildrenFnProps[Data], ReactNode]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var headerData: js.UndefOr[Data] = js.native
+  var headerData: js.UndefOr[Data] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var intervalRenderer: js.UndefOr[js.Function1[/* props */ js.UndefOr[IntervalRenderer[Data]], ReactNode]] = js.native
+  var intervalRenderer: js.UndefOr[js.Function1[/* props */ js.UndefOr[IntervalRenderer[Data]], ReactNode]] = js.undefined
   
   var labelFormat: js.UndefOr[
     String | (js.Function3[
@@ -29,11 +27,11 @@ trait DateHeaderProps[Data] extends StObject {
       /* labelWidth */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var unit: js.UndefOr[Unit | primaryHeader] = js.native
+  var unit: js.UndefOr[Unit | primaryHeader] = js.undefined
 }
 object DateHeaderProps {
   
@@ -44,7 +42,7 @@ object DateHeaderProps {
   }
   
   @scala.inline
-  implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[_], Data] (val x: Self with DateHeaderProps[Data]) extends AnyVal {
+  implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[?], Data] (val x: Self & DateHeaderProps[Data]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: /* props */ SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait RightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends St
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/right)
     */
-  var right: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var right: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object RightProps {
   
@@ -25,7 +23,7 @@ object RightProps {
   }
   
   @scala.inline
-  implicit class RightPropsMutableBuilder[Self <: RightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (RightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class RightPropsMutableBuilder[Self <: RightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (RightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])

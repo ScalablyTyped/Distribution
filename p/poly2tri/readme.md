@@ -12,7 +12,7 @@ A 2D constrained Delaunay triangulation library
 | Keywords           | 2D, constrained, Delaunay, triangulation, geometry, polygon, point, triangle, tessellation, Steiner |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 40988 |
+| # downloads        | 42012 |
 | # stars            | 3 |
 
 ## Links

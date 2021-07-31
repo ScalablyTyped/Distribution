@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Networkendpointgroups")
@@ -33,7 +32,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaNetworkEndpointGroupAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaNetworkEndpointGroupAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceNetworkendpointgroupsAggregatedlist): GaxiosPromise[SchemaNetworkEndpointGroupAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceNetworkendpointgroupsAggregatedlist,
@@ -70,7 +69,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def attachNetworkEndpoints(): GaxiosPromise[SchemaOperation] = js.native
   def attachNetworkEndpoints(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def attachNetworkEndpoints(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def attachNetworkEndpoints(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def attachNetworkEndpoints(params: ParamsResourceNetworkendpointgroupsAttachnetworkendpoints): GaxiosPromise[SchemaOperation] = js.native
   def attachNetworkEndpoints(
     params: ParamsResourceNetworkendpointgroupsAttachnetworkendpoints,
@@ -110,7 +109,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNetworkendpointgroupsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNetworkendpointgroupsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -144,7 +143,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def detachNetworkEndpoints(): GaxiosPromise[SchemaOperation] = js.native
   def detachNetworkEndpoints(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def detachNetworkEndpoints(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def detachNetworkEndpoints(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def detachNetworkEndpoints(params: ParamsResourceNetworkendpointgroupsDetachnetworkendpoints): GaxiosPromise[SchemaOperation] = js.native
   def detachNetworkEndpoints(
     params: ParamsResourceNetworkendpointgroupsDetachnetworkendpoints,
@@ -179,7 +178,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaNetworkEndpointGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaNetworkEndpointGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroup] = js.native
   def get(params: ParamsResourceNetworkendpointgroupsGet): GaxiosPromise[SchemaNetworkEndpointGroup] = js.native
   def get(
     params: ParamsResourceNetworkendpointgroupsGet,
@@ -215,7 +214,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNetworkendpointgroupsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNetworkendpointgroupsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -250,7 +249,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaNetworkEndpointGroupList] = js.native
   def list(callback: BodyResponseCallback[SchemaNetworkEndpointGroupList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupList] = js.native
   def list(params: ParamsResourceNetworkendpointgroupsList): GaxiosPromise[SchemaNetworkEndpointGroupList] = js.native
   def list(
     params: ParamsResourceNetworkendpointgroupsList,
@@ -290,7 +289,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def listNetworkEndpoints(): GaxiosPromise[SchemaNetworkEndpointGroupsListNetworkEndpoints] = js.native
   def listNetworkEndpoints(callback: BodyResponseCallback[SchemaNetworkEndpointGroupsListNetworkEndpoints]): Unit = js.native
-  def listNetworkEndpoints(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupsListNetworkEndpoints] = js.native
+  def listNetworkEndpoints(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNetworkEndpointGroupsListNetworkEndpoints] = js.native
   def listNetworkEndpoints(params: ParamsResourceNetworkendpointgroupsListnetworkendpoints): GaxiosPromise[SchemaNetworkEndpointGroupsListNetworkEndpoints] = js.native
   def listNetworkEndpoints(
     params: ParamsResourceNetworkendpointgroupsListnetworkendpoints,
@@ -325,7 +324,7 @@ class ResourceNetworkendpointgroups protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceNetworkendpointgroupsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceNetworkendpointgroupsTestiampermissions,

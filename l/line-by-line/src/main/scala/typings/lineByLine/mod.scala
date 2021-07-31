@@ -15,7 +15,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -80,14 +79,15 @@ object mod {
     def resume(): Unit = js.native
   }
   
-  @js.native
-  trait LineByLineReaderFileOptions extends LineByLineReaderOptions {
+  trait LineByLineReaderFileOptions
+    extends StObject
+       with LineByLineReaderOptions {
     
     /** The `end` position in bytes to read from the file. */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** The `start` position in bytes to read from the file. */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object LineByLineReaderFileOptions {
     
@@ -114,14 +114,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LineByLineReaderOptions extends StObject {
     
     /** The encoding to use. */
-    var encoding: js.UndefOr[ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex] = js.native
+    var encoding: js.UndefOr[ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex] = js.undefined
     
     /** If set to true, empty lines do not emit the "line" event. */
-    var skipEmptyLines: js.UndefOr[Boolean] = js.native
+    var skipEmptyLines: js.UndefOr[Boolean] = js.undefined
   }
   object LineByLineReaderOptions {
     

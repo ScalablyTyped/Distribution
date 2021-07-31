@@ -2,21 +2,19 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncResult extends StObject {
   
-  var done: Boolean = js.native
+  var done: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var state: String = js.native
+  var state: String
   
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
 }
 object AsyncResult {
   

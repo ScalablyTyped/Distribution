@@ -2,47 +2,45 @@ package typings.pgwmodal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PgwModalOption extends StObject {
   
-  var ajaxOptions: js.UndefOr[js.Any] = js.native
+  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   
-  var angular: js.UndefOr[Boolean] = js.native
+  var angular: js.UndefOr[Boolean] = js.undefined
   
-  var backdropClassName: js.UndefOr[String] = js.native
+  var backdropClassName: js.UndefOr[String] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var closeContent: js.UndefOr[String] = js.native
+  var closeContent: js.UndefOr[String] = js.undefined
   
-  var closeOnBackgroundClick: js.UndefOr[Boolean] = js.native
+  var closeOnBackgroundClick: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var errorContent: js.UndefOr[String] = js.native
+  var errorContent: js.UndefOr[String] = js.undefined
   
-  var loadingContent: js.UndefOr[String] = js.native
+  var loadingContent: js.UndefOr[String] = js.undefined
   
-  var mainClassName: js.UndefOr[String] = js.native
+  var mainClassName: js.UndefOr[String] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var modalData: js.UndefOr[js.Any] = js.native
+  var modalData: js.UndefOr[js.Any] = js.undefined
   
-  var pushContent: js.UndefOr[String] = js.native
+  var pushContent: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleBar: js.UndefOr[Boolean] = js.native
+  var titleBar: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PgwModalOption {
   

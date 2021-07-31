@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandLink extends StObject {
   
   /**
     * The text used for the link.
     */
-  var linkText: js.UndefOr[String] = js.native
+  var linkText: js.UndefOr[String] = js.undefined
   
   /**
     * The type of link. Valid values include:
@@ -19,17 +17,17 @@ trait BrandLink extends StObject {
     * - `aboutDocusign`
     * - `closeButton`
     */
-  var linkType: js.UndefOr[String] = js.native
+  var linkType: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the link displays to the recipient.
     */
-  var showLink: js.UndefOr[String] = js.native
+  var showLink: js.UndefOr[String] = js.undefined
   
   /**
     * The URL or mailto address of the link.
     */
-  var urlOrMailTo: js.UndefOr[String] = js.native
+  var urlOrMailTo: js.UndefOr[String] = js.undefined
 }
 object BrandLink {
   

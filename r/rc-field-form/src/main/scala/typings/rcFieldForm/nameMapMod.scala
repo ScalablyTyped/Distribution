@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rcFieldForm.interfaceMod.InternalNamePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nameMapMod {
@@ -14,14 +13,37 @@ object nameMapMod {
     */
   @JSImport("rc-field-form/es/utils/NameMap", JSImport.Default)
   @js.native
-  class default[T] () extends NameMap[T]
+  class default[T] ()
+    extends StObject
+       with NameMap[T] {
+    
+    /* CompleteClass */
+    override def delete(key: InternalNamePath): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(key: InternalNamePath): T = js.native
+    
+    /* CompleteClass */
+    var list: js.Any = js.native
+    
+    /* CompleteClass */
+    override def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U] = js.native
+    
+    /* CompleteClass */
+    override def set(key: InternalNamePath, value: T): Unit = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): StringDictionary[T] = js.native
+    
+    /* CompleteClass */
+    override def update(key: InternalNamePath, updater: js.Function1[T, T | Null]): Unit = js.native
+  }
   
-  @js.native
   trait KV[T] extends StObject {
     
-    var key: InternalNamePath = js.native
+    var key: InternalNamePath
     
-    var value: T = js.native
+    var value: T
   }
   object KV {
     
@@ -32,7 +54,7 @@ object nameMapMod {
     }
     
     @scala.inline
-    implicit class KVMutableBuilder[Self <: KV[_], T] (val x: Self with KV[T]) extends AnyVal {
+    implicit class KVMutableBuilder[Self <: KV[?], T] (val x: Self & KV[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: InternalNamePath): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -48,22 +70,21 @@ object nameMapMod {
   /**
     * NameMap like a `Map` but accepts `string[]` as key.
     */
-  @js.native
   trait NameMap[T] extends StObject {
     
-    def delete(key: InternalNamePath): Unit = js.native
+    def delete(key: InternalNamePath): Unit
     
-    def get(key: InternalNamePath): T = js.native
+    def get(key: InternalNamePath): T
     
-    var list: js.Any = js.native
+    var list: js.Any
     
-    def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U] = js.native
+    def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U]
     
-    def set(key: InternalNamePath, value: T): Unit = js.native
+    def set(key: InternalNamePath, value: T): Unit
     
-    def toJSON(): StringDictionary[T] = js.native
+    def toJSON(): StringDictionary[T]
     
-    def update(key: InternalNamePath, updater: js.Function1[/* origin */ T, T | Null]): Unit = js.native
+    def update(key: InternalNamePath, updater: js.Function1[/* origin */ T, T | Null]): Unit
   }
   object NameMap {
     
@@ -82,7 +103,7 @@ object nameMapMod {
     }
     
     @scala.inline
-    implicit class NameMapMutableBuilder[Self <: NameMap[_], T] (val x: Self with NameMap[T]) extends AnyVal {
+    implicit class NameMapMutableBuilder[Self <: NameMap[?], T] (val x: Self & NameMap[T]) extends AnyVal {
       
       @scala.inline
       def setDelete(value: InternalNamePath => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))

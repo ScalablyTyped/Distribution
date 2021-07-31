@@ -11,8 +11,8 @@ A JS implementation of JSONPath with some additional operators
 | Full name          | jsonpath-plus |
 | Keywords           | json, jsonpath |
 | # releases         | 12 |
-| # dependents       | 154 |
-| # downloads        | 20621426 |
+| # dependents       | 187 |
+| # downloads        | 25858799 |
 | # stars            | 11 |
 
 ## Links

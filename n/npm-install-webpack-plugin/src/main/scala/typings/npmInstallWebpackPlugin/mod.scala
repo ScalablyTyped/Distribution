@@ -3,7 +3,6 @@ package typings.npmInstallWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
     */
   @JSImport("npm-install-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
@@ -24,31 +25,30 @@ object mod {
     */
   type NpmInstallPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Use --save or --save-dev
       * @default false
       */
-    var dev: js.UndefOr[Boolean | DevFunction] = js.native
+    var dev: js.UndefOr[Boolean | DevFunction] = js.undefined
     
     /**
       * npm command used inside company, yarn is not supported yet
       */
-    var npm: js.UndefOr[String] = js.native
+    var npm: js.UndefOr[String] = js.undefined
     
     /**
       * Install missing peerDependencies
       * @default true
       */
-    var peerDependencies: js.UndefOr[Boolean] = js.native
+    var peerDependencies: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reduce amount of console logging
       * @default false
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

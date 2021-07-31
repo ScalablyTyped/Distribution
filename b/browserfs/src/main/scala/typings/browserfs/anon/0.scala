@@ -2,59 +2,57 @@ package typings.browserfs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var `0`: String = js.native
+  var `0`: String
   
-  var `1`: String = js.native
+  var `1`: String
   
-  var `1024`: String = js.native
+  var `1024`: String
   
-  var `1025`: String = js.native
+  var `1025`: String
   
-  var `1026`: String = js.native
+  var `1026`: String
   
-  var `1089`: String = js.native
+  var `1089`: String
   
-  var `1090`: String = js.native
+  var `1090`: String
   
-  var `1153`: String = js.native
+  var `1153`: String
   
-  var `1154`: String = js.native
+  var `1154`: String
   
-  var `1217`: String = js.native
+  var `1217`: String
   
-  var `1218`: String = js.native
+  var `1218`: String
   
-  var `129`: String = js.native
+  var `129`: String
   
-  var `193`: String = js.native
+  var `193`: String
   
-  var `2`: String = js.native
+  var `2`: String
   
-  var `4096`: String = js.native
+  var `4096`: String
   
-  var `4098`: String = js.native
+  var `4098`: String
   
-  var `514`: String = js.native
+  var `514`: String
   
-  var `577`: String = js.native
+  var `577`: String
   
-  var `578`: String = js.native
+  var `578`: String
   
-  var `64`: String = js.native
+  var `64`: String
   
-  var `65`: String = js.native
+  var `65`: String
   
-  var `66`: String = js.native
+  var `66`: String
   
-  var `705`: String = js.native
+  var `705`: String
   
-  var `706`: String = js.native
+  var `706`: String
 }
 object `0` {
   

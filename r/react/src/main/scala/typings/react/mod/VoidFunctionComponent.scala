@@ -3,7 +3,6 @@ package typings.react.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,7 +11,7 @@ trait VoidFunctionComponent[P] extends StObject {
   def apply(props: P): ReactElement | Null = js.native
   def apply(props: P, context: js.Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   

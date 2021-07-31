@@ -2,31 +2,25 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleCallExpression
-  extends BaseCallExpression
+  extends StObject
+     with BaseCallExpression
      with CallExpression
      with ChainElement {
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
   @JSName("type")
-  var type_SimpleCallExpression: typings.estree.estreeStrings.CallExpression = js.native
+  var type_SimpleCallExpression: typings.estree.estreeStrings.CallExpression
 }
 object SimpleCallExpression {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[Expression | SpreadElement],
-    callee: Expression | Super,
-    optional: Boolean,
-    `type`: typings.estree.estreeStrings.CallExpression
-  ): SimpleCallExpression = {
+  def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): SimpleCallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CallExpression")
     __obj.asInstanceOf[SimpleCallExpression]
   }
   

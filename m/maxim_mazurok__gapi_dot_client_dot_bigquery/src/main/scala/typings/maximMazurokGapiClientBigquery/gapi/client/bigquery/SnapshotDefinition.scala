@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotDefinition extends StObject {
   
   /** [Required] Reference describing the ID of the table that is snapshotted. */
-  var baseTableReference: js.UndefOr[TableReference] = js.native
+  var baseTableReference: js.UndefOr[TableReference] = js.undefined
   
   /** [Required] The time at which the base table was snapshot. */
-  var snapshotTime: js.UndefOr[String] = js.native
+  var snapshotTime: js.UndefOr[String] = js.undefined
 }
 object SnapshotDefinition {
   

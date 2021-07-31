@@ -3,17 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.stepper.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepperActivateEvent extends StObject {
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var sender: js.UndefOr[Stepper] = js.native
+  var sender: js.UndefOr[Stepper] = js.undefined
   
-  var step: js.UndefOr[Step] = js.native
+  var step: js.UndefOr[Step] = js.undefined
 }
 object StepperActivateEvent {
   

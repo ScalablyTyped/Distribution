@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageTableCard extends StObject {
   
   /** Optional. List of buttons for the card. */
-  var buttons: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageBasicCardButton]] = js.native
+  var buttons: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageBasicCardButton]] = js.undefined
   
   /** Optional. Display properties for the columns in this table. */
-  var columnProperties: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageColumnProperties]] = js.native
+  var columnProperties: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageColumnProperties]] = js.undefined
   
   /** Optional. Image which should be displayed on the card. */
-  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /** Optional. Rows in this table of data. */
-  var rows: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageTableCardRow]] = js.native
+  var rows: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageTableCardRow]] = js.undefined
   
   /** Optional. Subtitle to the title. */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /** Required. Title of the card. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageTableCard {
   

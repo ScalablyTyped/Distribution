@@ -4,15 +4,15 @@ import typings.wechatMiniprogram.IAPISuccessParam
 import typings.wechatMiniprogram.anon.Created
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISetResult extends IAPISuccessParam {
+trait ISetResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var _id: DocumentId = js.native
+  var _id: DocumentId
   
-  var stats: Created = js.native
+  var stats: Created
 }
 object ISetResult {
   

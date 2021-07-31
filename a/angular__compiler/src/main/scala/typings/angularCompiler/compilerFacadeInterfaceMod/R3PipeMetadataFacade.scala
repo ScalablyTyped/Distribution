@@ -2,29 +2,27 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3PipeMetadataFacade extends StObject {
   
-  var deps: js.Array[R3DependencyMetadataFacade] | Null = js.native
+  var deps: js.Array[R3DependencyMetadataFacade] | Null
   
-  var name: String = js.native
+  var name: String
   
-  var pipeName: String = js.native
+  var pipeName: String
   
-  var pure: Boolean = js.native
+  var pure: Boolean
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var typeArgumentCount: Double = js.native
+  var typeArgumentCount: Double
 }
 object R3PipeMetadataFacade {
   
   @scala.inline
   def apply(name: String, pipeName: String, pure: Boolean, `type`: js.Any, typeArgumentCount: Double): R3PipeMetadataFacade = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pipeName = pipeName.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pipeName = pipeName.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3PipeMetadataFacade]
   }

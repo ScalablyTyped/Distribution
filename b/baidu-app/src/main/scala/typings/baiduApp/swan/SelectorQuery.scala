@@ -2,7 +2,6 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,7 @@ trait SelectorQuery extends StObject {
     * 请求结果按请求次序构成数组，在callback的第一个参数中返回。
     */
   def exec(): Unit = js.native
-  def exec(callback: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
+  def exec(callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
   
   /**
     * 将选择器的选取范围更改为自定义组件component内

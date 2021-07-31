@@ -2,31 +2,29 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Number of errors per day for a specific error type (defined by platform and
   * category).
   */
-@js.native
 trait SchemaUrlCrawlErrorCountsPerType extends StObject {
   
   /**
     * The crawl error type.
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * The error count entries time series.
     */
-  var entries: js.UndefOr[js.Array[SchemaUrlCrawlErrorCount]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaUrlCrawlErrorCount]] = js.undefined
   
   /**
     * The general type of Googlebot that made the request (see list of
     * Googlebot user-agents for the user-agents used).
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlCrawlErrorCountsPerType {
   

@@ -4,42 +4,40 @@ import typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.IExtensio
 import typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.IReservedRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DescriptorProto. */
-@js.native
 trait IDescriptorProto extends StObject {
   
   /** DescriptorProto enumType */
-  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto] | Null] = js.native
+  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto] | Null] = js.undefined
   
   /** DescriptorProto extension */
-  var extension: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.native
+  var `extension`: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.undefined
   
   /** DescriptorProto extensionRange */
-  var extensionRange: js.UndefOr[js.Array[IExtensionRange] | Null] = js.native
+  var extensionRange: js.UndefOr[js.Array[IExtensionRange] | Null] = js.undefined
   
   /** DescriptorProto field */
-  var field: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.native
+  var field: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.undefined
   
   /** DescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** DescriptorProto nestedType */
-  var nestedType: js.UndefOr[js.Array[IDescriptorProto] | Null] = js.native
+  var nestedType: js.UndefOr[js.Array[IDescriptorProto] | Null] = js.undefined
   
   /** DescriptorProto oneofDecl */
-  var oneofDecl: js.UndefOr[js.Array[IOneofDescriptorProto] | Null] = js.native
+  var oneofDecl: js.UndefOr[js.Array[IOneofDescriptorProto] | Null] = js.undefined
   
   /** DescriptorProto options */
-  var options: js.UndefOr[IMessageOptions | Null] = js.native
+  var options: js.UndefOr[IMessageOptions | Null] = js.undefined
   
   /** DescriptorProto reservedName */
-  var reservedName: js.UndefOr[js.Array[String] | Null] = js.native
+  var reservedName: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** DescriptorProto reservedRange */
-  var reservedRange: js.UndefOr[js.Array[IReservedRange] | Null] = js.native
+  var reservedRange: js.UndefOr[js.Array[IReservedRange] | Null] = js.undefined
 }
 object IDescriptorProto {
   

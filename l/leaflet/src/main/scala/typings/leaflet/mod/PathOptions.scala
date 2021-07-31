@@ -2,39 +2,39 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathOptions extends InteractiveLayerOptions {
+trait PathOptions
+  extends StObject
+     with InteractiveLayerOptions {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dashArray: js.UndefOr[String | js.Array[Double]] = js.native
+  var dashArray: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var dashOffset: js.UndefOr[String] = js.native
+  var dashOffset: js.UndefOr[String] = js.undefined
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var fillRule: js.UndefOr[FillRule] = js.native
+  var fillRule: js.UndefOr[FillRule] = js.undefined
   
-  var lineCap: js.UndefOr[LineCapShape] = js.native
+  var lineCap: js.UndefOr[LineCapShape] = js.undefined
   
-  var lineJoin: js.UndefOr[LineJoinShape] = js.native
+  var lineJoin: js.UndefOr[LineJoinShape] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
   
-  var stroke: js.UndefOr[Boolean] = js.native
+  var stroke: js.UndefOr[Boolean] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object PathOptions {
   

@@ -3,28 +3,27 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
-  var hideSpacer: js.UndefOr[Boolean] = js.native
+  var hideSpacer: js.UndefOr[Boolean] = js.undefined
   
-  var hideTop: js.UndefOr[Boolean] = js.native
+  var hideTop: js.UndefOr[Boolean] = js.undefined
   
   // string | JSX.Element
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
   
-  var seamed: js.UndefOr[Boolean] = js.native
+  var seamed: js.UndefOr[Boolean] = js.undefined
   
   @JSName("title")
-  var title_HeaderProps: js.UndefOr[js.Any] = js.native
+  var title_HeaderProps: js.UndefOr[js.Any] = js.undefined
   
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
-  var waterfall: js.UndefOr[Boolean] = js.native
+  var waterfall: js.UndefOr[Boolean] = js.undefined
 }
 object HeaderProps {
   

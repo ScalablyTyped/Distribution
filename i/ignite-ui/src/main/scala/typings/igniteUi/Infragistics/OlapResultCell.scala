@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapResultCell extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait OlapResultCell extends StObject {
     *
     * @param value
     */
-  def cellOrdinal(value: js.Object): Double = js.native
+  def cellOrdinal(value: js.Object): Double
   
   /**
     * Returns a key value map of the cell's properties. Currently only 'Value' and 'FmtValue' properties are available.
     *
     * @param value
     */
-  def properties(value: js.Object): js.Object = js.native
+  def properties(value: js.Object): js.Object
 }
 object OlapResultCell {
   

@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesApnssandboxchannelresponseMod.Un
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateApnsSandboxChannelOutputMod {
   
-  @js.native
-  trait UpdateApnsSandboxChannelOutput extends OutputTypesUnion {
+  trait UpdateApnsSandboxChannelOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Apple Development Push Notification Service channel definition.
       */
-    var APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse = js.native
+    var APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse
   }
   object UpdateApnsSandboxChannelOutput {
     

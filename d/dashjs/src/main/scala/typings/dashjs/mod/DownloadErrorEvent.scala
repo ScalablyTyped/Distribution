@@ -5,27 +5,26 @@ import typings.dashjs.dashjsStrings.download
 import typings.dashjs.dashjsStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadErrorEvent
-  extends Event
+  extends StObject
+     with Event
      with ErrorEvent {
   
-  var error: download = js.native
+  var error: download
   
-  var event: Id = js.native
+  var event: Id
   
   @JSName("type")
-  var type_DownloadErrorEvent: error = js.native
+  var type_DownloadErrorEvent: error
 }
 object DownloadErrorEvent {
   
   @scala.inline
-  def apply(error: download, event: Id, `type`: error): DownloadErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(event: Id): DownloadErrorEvent = {
+    val __obj = js.Dynamic.literal(error = "download", event = event.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[DownloadErrorEvent]
   }
   

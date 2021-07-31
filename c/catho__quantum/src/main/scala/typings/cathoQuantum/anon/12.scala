@@ -2,13 +2,11 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `12` extends StObject {
   
-  var components: js.UndefOr[ProgressBar] = js.native
+  var components: js.UndefOr[ProgressBar] = js.undefined
 }
 object `12` {
   

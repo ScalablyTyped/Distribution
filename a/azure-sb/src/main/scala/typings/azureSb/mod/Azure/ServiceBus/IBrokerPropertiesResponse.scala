@@ -2,19 +2,17 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBrokerPropertiesResponse extends StObject {
   
-  val DeliveryCount: Double = js.native
+  val DeliveryCount: Double
   
-  val LockToken: String = js.native
+  val LockToken: String
   
-  val LockedUntil: DateString = js.native
+  val LockedUntil: DateString
   
-  val SequenceNumber: Double = js.native
+  val SequenceNumber: Double
 }
 object IBrokerPropertiesResponse {
   

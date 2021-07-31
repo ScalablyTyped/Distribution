@@ -4,7 +4,6 @@ import typings.sipJs.bodyMod.Body
 import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core", "OutgoingRequestMessage")
@@ -29,7 +28,7 @@ class OutgoingRequestMessage protected ()
     ruri: typings.sipJs.grammarMod.URI,
     fromURI: typings.sipJs.grammarMod.URI,
     toURI: typings.sipJs.grammarMod.URI,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     extraHeaders: js.Array[String]
   ) = this()
   def this(
@@ -45,16 +44,7 @@ class OutgoingRequestMessage protected ()
     ruri: typings.sipJs.grammarMod.URI,
     fromURI: typings.sipJs.grammarMod.URI,
     toURI: typings.sipJs.grammarMod.URI,
-    options: js.UndefOr[scala.Nothing],
-    extraHeaders: js.UndefOr[scala.Nothing],
-    body: Body
-  ) = this()
-  def this(
-    method: String,
-    ruri: typings.sipJs.grammarMod.URI,
-    fromURI: typings.sipJs.grammarMod.URI,
-    toURI: typings.sipJs.grammarMod.URI,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
@@ -63,8 +53,8 @@ class OutgoingRequestMessage protected ()
     ruri: typings.sipJs.grammarMod.URI,
     fromURI: typings.sipJs.grammarMod.URI,
     toURI: typings.sipJs.grammarMod.URI,
-    options: OutgoingRequestMessageOptions,
-    extraHeaders: js.UndefOr[scala.Nothing],
+    options: Unit,
+    extraHeaders: Unit,
     body: Body
   ) = this()
   def this(
@@ -74,6 +64,15 @@ class OutgoingRequestMessage protected ()
     toURI: typings.sipJs.grammarMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
+    options: OutgoingRequestMessageOptions,
+    extraHeaders: Unit,
     body: Body
   ) = this()
 }

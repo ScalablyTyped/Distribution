@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends StObject {
     * following well known protocol strings (tcp, udp, icmp, esp, ah, ipip,
     * sctp), or the IP protocol number.
     */
-  var ipProtocol: js.UndefOr[String] = js.native
+  var ipProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * An optional list of ports to which this rule applies. This field is only
@@ -24,7 +22,7 @@ trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends StObject {
     * [&quot;80&quot;,&quot;443&quot;], and [&quot;12345-12349&quot;].  This
     * field may only be specified when versioned_expr is set to FIREWALL.
     */
-  var ports: js.UndefOr[js.Array[String]] = js.native
+  var ports: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSecurityPolicyRuleMatcherConfigDestinationPort {
   

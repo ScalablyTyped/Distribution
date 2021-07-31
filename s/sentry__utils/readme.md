@@ -10,9 +10,9 @@ Utilities for all Sentry JavaScript SDKs
 | ------------------ | :-------------: |
 | Full name          | @sentry/utils |
 | Keywords           | - |
-| # releases         | 113 |
-| # dependents       | 36 |
-| # downloads        | 86163889 |
+| # releases         | 117 |
+| # dependents       | 37 |
+| # downloads        | 117509650 |
 | # stars            | 0 |
 
 ## Links

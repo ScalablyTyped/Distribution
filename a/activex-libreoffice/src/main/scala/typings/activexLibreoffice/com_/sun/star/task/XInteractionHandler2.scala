@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * handled by the interaction handler.
   * @since OOo 3.2
   */
-@js.native
-trait XInteractionHandler2 extends XInteractionHandler {
+trait XInteractionHandler2
+  extends StObject
+     with XInteractionHandler {
   
   /**
     * Handle an interaction request.
     * @param Request the inteaction request to handle.
     * @returns `TRUE` , if the handler handled the request, `FALSE` otherwise.
     */
-  def handleInteractionRequest(Request: XInteractionRequest): Boolean = js.native
+  def handleInteractionRequest(Request: XInteractionRequest): Boolean
 }
 object XInteractionHandler2 {
   

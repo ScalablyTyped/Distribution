@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateKeysAndCertificateResponse extends StObject {
   
   /**
     * The ARN of the certificate.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.native
+  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
     * The ID of the certificate. AWS IoT issues a default subject name for the certificate (for example, AWS IoT Certificate).
     */
-  var certificateId: js.UndefOr[CertificateId] = js.native
+  var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The certificate data, in PEM format.
     */
-  var certificatePem: js.UndefOr[CertificatePem] = js.native
+  var certificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * The generated key pair.
     */
-  var keyPair: js.UndefOr[KeyPair] = js.native
+  var keyPair: js.UndefOr[KeyPair] = js.undefined
 }
 object CreateKeysAndCertificateResponse {
   

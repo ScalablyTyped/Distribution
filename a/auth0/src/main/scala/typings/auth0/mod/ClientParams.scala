@@ -2,13 +2,11 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientParams extends StObject {
   
-  var client_id: String = js.native
+  var client_id: String
 }
 object ClientParams {
   

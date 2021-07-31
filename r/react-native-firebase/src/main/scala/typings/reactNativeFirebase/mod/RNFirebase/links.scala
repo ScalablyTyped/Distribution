@@ -5,7 +5,6 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.SHORT
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.UNGUESSABLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object links {
@@ -28,18 +27,17 @@ object links {
     var social: SocialParameters = js.native
   }
   
-  @js.native
   trait AnalyticsParameters extends StObject {
     
-    def setCampaign(campaign: String): DynamicLink = js.native
+    def setCampaign(campaign: String): DynamicLink
     
-    def setContent(content: String): DynamicLink = js.native
+    def setContent(content: String): DynamicLink
     
-    def setMedium(medium: String): DynamicLink = js.native
+    def setMedium(medium: String): DynamicLink
     
-    def setSource(source: String): DynamicLink = js.native
+    def setSource(source: String): DynamicLink
     
-    def setTerm(term: String): DynamicLink = js.native
+    def setTerm(term: String): DynamicLink
   }
   object AnalyticsParameters {
     
@@ -75,14 +73,13 @@ object links {
     }
   }
   
-  @js.native
   trait AndroidParameters extends StObject {
     
-    def setFallbackUrl(fallbackUrl: String): DynamicLink = js.native
+    def setFallbackUrl(fallbackUrl: String): DynamicLink
     
-    def setMinimumVersion(minimumVersion: Double): DynamicLink = js.native
+    def setMinimumVersion(minimumVersion: Double): DynamicLink
     
-    def setPackageName(packageName: String): DynamicLink = js.native
+    def setPackageName(packageName: String): DynamicLink
   }
   object AndroidParameters {
     
@@ -110,22 +107,21 @@ object links {
     }
   }
   
-  @js.native
   trait IOSParameters extends StObject {
     
-    def setAppStoreId(appStoreId: String): DynamicLink = js.native
+    def setAppStoreId(appStoreId: String): DynamicLink
     
-    def setBundleId(bundleId: String): DynamicLink = js.native
+    def setBundleId(bundleId: String): DynamicLink
     
-    def setCustomScheme(customScheme: String): DynamicLink = js.native
+    def setCustomScheme(customScheme: String): DynamicLink
     
-    def setFallbackUrl(fallbackUrl: String): DynamicLink = js.native
+    def setFallbackUrl(fallbackUrl: String): DynamicLink
     
-    def setIPadBundleId(iPadBundleId: String): DynamicLink = js.native
+    def setIPadBundleId(iPadBundleId: String): DynamicLink
     
-    def setIPadFallbackUrl(iPadFallbackUrl: String): DynamicLink = js.native
+    def setIPadFallbackUrl(iPadFallbackUrl: String): DynamicLink
     
-    def setMinimumVersion(minimumVersion: String): DynamicLink = js.native
+    def setMinimumVersion(minimumVersion: String): DynamicLink
   }
   object IOSParameters {
     
@@ -169,14 +165,13 @@ object links {
     }
   }
   
-  @js.native
   trait ITunesParameters extends StObject {
     
-    def setAffiliateToken(affiliateToken: String): DynamicLink = js.native
+    def setAffiliateToken(affiliateToken: String): DynamicLink
     
-    def setCampaignToken(campaignToken: String): DynamicLink = js.native
+    def setCampaignToken(campaignToken: String): DynamicLink
     
-    def setProviderToken(providerToken: String): DynamicLink = js.native
+    def setProviderToken(providerToken: String): DynamicLink
   }
   object ITunesParameters {
     
@@ -233,14 +228,13 @@ object links {
     def onLink(listener: js.Function1[/* url */ String, Unit]): js.Function0[Unit] = js.native
   }
   
-  @js.native
   trait LinksStatics extends StObject {
     
     var DynamicLink: Instantiable2[
         /* link */ String, 
         /* domainURIPrefix */ String, 
         typings.reactNativeFirebase.mod.RNFirebase.links.DynamicLink
-      ] = js.native
+      ]
   }
   object LinksStatics {
     
@@ -258,10 +252,9 @@ object links {
     }
   }
   
-  @js.native
   trait NavigationParameters extends StObject {
     
-    def setForcedRedirectEnabled(forcedRedirectEnabled: Boolean): DynamicLink = js.native
+    def setForcedRedirectEnabled(forcedRedirectEnabled: Boolean): DynamicLink
   }
   object NavigationParameters {
     
@@ -279,14 +272,13 @@ object links {
     }
   }
   
-  @js.native
   trait SocialParameters extends StObject {
     
-    def setDescriptionText(descriptionText: String): DynamicLink = js.native
+    def setDescriptionText(descriptionText: String): DynamicLink
     
-    def setImageUrl(imageUrl: String): DynamicLink = js.native
+    def setImageUrl(imageUrl: String): DynamicLink
     
-    def setTitle(title: String): DynamicLink = js.native
+    def setTitle(title: String): DynamicLink
   }
   object SocialParameters {
     

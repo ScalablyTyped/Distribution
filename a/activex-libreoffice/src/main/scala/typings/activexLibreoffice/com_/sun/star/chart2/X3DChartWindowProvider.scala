@@ -2,13 +2,11 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X3DChartWindowProvider extends StObject {
   
-  def setWindow(window: Double): Unit = js.native
+  def setWindow(window: Double): Unit
 }
 object X3DChartWindowProvider {
   

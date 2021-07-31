@@ -2,10 +2,8 @@ package typings.protractor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JvmArgs extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait JvmArgs extends StObject {
     * if you need to change the browser timeout, use
     * seleniumArgs: ['-browserTimeout=60']
     */
-  var args: js.UndefOr[js.Any] = js.native
+  var args: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Additional command line jvm options to pass to selenium. For example,
     * if you need to change the browser driver, use
     * jvmArgs: ['-Dwebdriver.ie.driver=IEDriverServer_Win32_2.53.1.exe']
     */
-  var jvmArgs: js.UndefOr[js.Array[String]] = js.native
+  var jvmArgs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The port to start the Selenium Server on, or null if the server should
     * find its own unused port.
     */
-  var port: js.UndefOr[js.Any] = js.native
+  var port: js.UndefOr[js.Any] = js.undefined
 }
 object JvmArgs {
   

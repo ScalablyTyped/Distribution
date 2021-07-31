@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableProvidedProps extends StObject {
   
   // used for shared global styles
-  var `data-rbd-droppable-context-id`: String = js.native
+  var `data-rbd-droppable-context-id`: String
   
   // Used to lookup. Currently not used for drag and drop lifecycle
-  var `data-rbd-droppable-id`: DroppableId = js.native
+  var `data-rbd-droppable-id`: DroppableId
 }
 object DroppableProvidedProps {
   

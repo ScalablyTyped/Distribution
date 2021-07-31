@@ -2,15 +2,13 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabHighlightInfo extends StObject {
   
-  var tabIds: js.Array[Double] = js.native
+  var tabIds: js.Array[Double]
   
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object TabHighlightInfo {
   

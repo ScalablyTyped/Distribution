@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.IConsensusNotifyAck
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck")
@@ -24,17 +23,19 @@ class ConsensusNotifyAck ()
 /* static members */
 object ConsensusNotifyAck {
   
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ConsensusNotifyAck instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusNotifyAck instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.create")
-  @js.native
-  def create(properties: IConsensusNotifyAck): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
+  @scala.inline
+  def create(properties: IConsensusNotifyAck): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
   
   /**
     * Decodes a ConsensusNotifyAck message from the specified reader or buffer.
@@ -44,18 +45,14 @@ object ConsensusNotifyAck {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
   
   /**
     * Decodes a ConsensusNotifyAck message from the specified reader or buffer, length delimited.
@@ -64,12 +61,10 @@ object ConsensusNotifyAck {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
   
   /**
     * Encodes the specified ConsensusNotifyAck message. Does not implicitly {@link ConsensusNotifyAck.verify|verify} messages.
@@ -77,12 +72,10 @@ object ConsensusNotifyAck {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.encode")
-  @js.native
-  def encode(message: IConsensusNotifyAck): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.encode")
-  @js.native
-  def encode(message: IConsensusNotifyAck, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IConsensusNotifyAck): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IConsensusNotifyAck, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusNotifyAck message, length delimited. Does not implicitly {@link ConsensusNotifyAck.verify|verify} messages.
@@ -90,21 +83,18 @@ object ConsensusNotifyAck {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusNotifyAck): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusNotifyAck, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IConsensusNotifyAck): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IConsensusNotifyAck, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusNotifyAck message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusNotifyAck
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusNotifyAck = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyAck]
   
   /**
     * Creates a plain object from a ConsensusNotifyAck message. Also converts values to other types if specified.
@@ -112,19 +102,16 @@ object ConsensusNotifyAck {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyAck): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyAck, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyAck): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyAck, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusNotifyAck message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyAck.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

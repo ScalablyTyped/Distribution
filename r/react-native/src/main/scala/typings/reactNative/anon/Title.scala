@@ -3,15 +3,15 @@ package typings.reactNative.anon
 import typings.reactNative.mod.ShareContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Title extends ShareContent {
+trait Title
+  extends StObject
+     with ShareContent {
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Title {
   

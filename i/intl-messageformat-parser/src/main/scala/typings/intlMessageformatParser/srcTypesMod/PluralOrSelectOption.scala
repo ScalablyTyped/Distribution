@@ -2,15 +2,13 @@ package typings.intlMessageformatParser.srcTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluralOrSelectOption extends StObject {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var value: js.Array[MessageFormatElement] = js.native
+  var value: js.Array[MessageFormatElement]
 }
 object PluralOrSelectOption {
   

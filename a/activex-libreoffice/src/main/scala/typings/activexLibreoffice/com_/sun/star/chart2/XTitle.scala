@@ -6,17 +6,17 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XTitle extends XInterface {
+trait XTitle
+  extends StObject
+     with XInterface {
   
-  var Text: SafeArray[XFormattedString] = js.native
+  var Text: SafeArray[XFormattedString]
   
-  def getText(): SafeArray[XFormattedString] = js.native
+  def getText(): SafeArray[XFormattedString]
   
-  def setText(Strings: SeqEquiv[XFormattedString]): Unit = js.native
+  def setText(Strings: SeqEquiv[XFormattedString]): Unit
 }
 object XTitle {
   

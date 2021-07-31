@@ -3,25 +3,24 @@ package typings.gitlab.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  projectId :string | number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.PaginatedRequestOptions */
-@js.native
 trait projectIdstringnumberunde
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var maxPages: js.UndefOr[Double] = js.native
+  var maxPages: js.UndefOr[Double] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var perPage: js.UndefOr[Double] = js.native
+  var perPage: js.UndefOr[Double] = js.undefined
   
-  var projectId: js.UndefOr[String | Double] = js.native
+  var projectId: js.UndefOr[String | Double] = js.undefined
   
-  var showPagination: js.UndefOr[Boolean] = js.native
+  var showPagination: js.UndefOr[Boolean] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object projectIdstringnumberunde {
   

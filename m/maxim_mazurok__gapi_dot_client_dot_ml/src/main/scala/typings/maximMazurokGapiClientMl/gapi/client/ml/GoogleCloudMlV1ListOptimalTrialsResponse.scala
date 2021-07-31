@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ListOptimalTrialsResponse extends StObject {
   
   /**
     * The pareto-optimal trials for multiple objective study or the optimal trial for single objective study. The definition of pareto-optimal can be checked in wiki page.
     * https://en.wikipedia.org/wiki/Pareto_efficiency
     */
-  var trials: js.UndefOr[js.Array[GoogleCloudMlV1Trial]] = js.native
+  var trials: js.UndefOr[js.Array[GoogleCloudMlV1Trial]] = js.undefined
 }
 object GoogleCloudMlV1ListOptimalTrialsResponse {
   

@@ -6,37 +6,28 @@ import typings.glaze.glazeNumbers.`1.5`
 import typings.glaze.glazeNumbers.`1.625`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  val `1`: typings.glaze.glazeNumbers.`1` = js.native
+  val `1`: typings.glaze.glazeNumbers.`1`
   
-  val base: `1.5` = js.native
+  val base: `1.5`
   
-  val loose: typings.glaze.glazeNumbers.`2` = js.native
+  val loose: typings.glaze.glazeNumbers.`2`
   
-  val relaxed: `1.625` = js.native
+  val relaxed: `1.625`
   
-  val snug: `1.375` = js.native
+  val snug: `1.375`
   
-  val tight: `1.25` = js.native
+  val tight: `1.25`
 }
 object Base {
   
   @scala.inline
-  def apply(
-    `1`: typings.glaze.glazeNumbers.`1`,
-    base: `1.5`,
-    loose: typings.glaze.glazeNumbers.`2`,
-    relaxed: `1.625`,
-    snug: `1.375`,
-    tight: `1.25`
-  ): Base = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], loose = loose.asInstanceOf[js.Any], relaxed = relaxed.asInstanceOf[js.Any], snug = snug.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
-    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+  def apply(): Base = {
+    val __obj = js.Dynamic.literal(base = 1.5, loose = 2, relaxed = 1.625, snug = 1.375, tight = 1.25)
+    __obj.updateDynamic("1")(1)
     __obj.asInstanceOf[Base]
   }
   

@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseButtonMod {
@@ -149,12 +148,13 @@ object baseButtonMod {
     def defaultProps_=(x: PartialIBaseButtonProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IBaseButtonProps extends IButtonProps {
+  trait IBaseButtonProps
+    extends StObject
+       with IButtonProps {
     
-    var baseClassName: js.UndefOr[String] = js.native
+    var baseClassName: js.UndefOr[String] = js.undefined
     
-    var variantClassName: js.UndefOr[String] = js.native
+    var variantClassName: js.UndefOr[String] = js.undefined
   }
   object IBaseButtonProps {
     
@@ -181,10 +181,9 @@ object baseButtonMod {
     }
   }
   
-  @js.native
   trait IBaseButtonState extends StObject {
     
-    var menuHidden: Boolean = js.native
+    var menuHidden: Boolean
   }
   object IBaseButtonState {
     

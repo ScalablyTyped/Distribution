@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileTreeNode extends StObject {
   
-  var children: js.Array[FileTreeNode] = js.native
+  var children: js.Array[FileTreeNode]
   
-  var fullPath: String = js.native
+  var fullPath: String
   
-  var isExpanded: Boolean = js.native
+  var isExpanded: Boolean
   
-  var isFile: Boolean = js.native
+  var isFile: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object FileTreeNode {
   

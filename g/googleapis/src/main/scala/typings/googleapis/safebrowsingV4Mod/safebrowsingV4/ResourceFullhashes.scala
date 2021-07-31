@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Fullhashes")
@@ -30,7 +29,7 @@ class ResourceFullhashes protected () extends StObject {
     */
   def find(): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(callback: BodyResponseCallback[SchemaFindFullHashesResponse]): Unit = js.native
-  def find(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
+  def find(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(params: ParamsResourceFullhashesFind): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(params: ParamsResourceFullhashesFind, callback: BodyResponseCallback[SchemaFindFullHashesResponse]): Unit = js.native
   def find(

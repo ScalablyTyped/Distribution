@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotAliasRequest extends StObject {
   
   /**
     * The name of the bot.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     * The name of the bot alias. The name is case sensitive.
     */
-  var name: AliasName = js.native
+  var name: AliasName
 }
 object GetBotAliasRequest {
   

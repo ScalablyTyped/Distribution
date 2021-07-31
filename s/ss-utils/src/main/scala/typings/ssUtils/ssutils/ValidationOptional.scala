@@ -3,19 +3,17 @@ package typings.ssUtils.ssutils
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOptional extends StObject {
   
   var errorFilter: js.UndefOr[
     js.Function3[/* errorMsg */ String, /* errorCode */ String, /* type */ String, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var messages: js.UndefOr[StringDictionary[String]] = js.native
+  var messages: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var overrideMessages: js.UndefOr[Boolean] = js.native
+  var overrideMessages: js.UndefOr[Boolean] = js.undefined
 }
 object ValidationOptional {
   

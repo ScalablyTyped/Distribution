@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,5 +30,5 @@ trait Disabled extends StObject {
   
   var pressIn: Boolean = js.native
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]] = js.native
 }

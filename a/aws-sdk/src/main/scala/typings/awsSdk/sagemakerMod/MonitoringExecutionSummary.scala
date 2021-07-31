@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringExecutionSummary extends StObject {
   
   /**
     * The time at which the monitoring job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The name of teh endpoint used to run the monitoring job.
     */
-  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.native
+  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.undefined
   
   /**
     * Contains the reason a monitoring job failed, if it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * A timestamp that indicates the last time the monitoring job was modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * The status of the monitoring job.
     */
-  var MonitoringExecutionStatus: ExecutionStatus = js.native
+  var MonitoringExecutionStatus: ExecutionStatus
   
   /**
     * The name of the monitoring schedule.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
   
   /**
     * The Amazon Resource Name (ARN) of the monitoring job.
     */
-  var ProcessingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobArn] = js.native
+  var ProcessingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobArn] = js.undefined
   
   /**
     * The time the monitoring job was scheduled.
     */
-  var ScheduledTime: Timestamp = js.native
+  var ScheduledTime: Timestamp
 }
 object MonitoringExecutionSummary {
   

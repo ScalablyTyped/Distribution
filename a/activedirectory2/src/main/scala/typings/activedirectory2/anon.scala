@@ -24,23 +24,21 @@ import typings.activedirectory2.activedirectory2Strings.userPrincipalName
 import typings.activedirectory2.activedirectory2Strings.whenCreated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ca extends StObject {
     
-    var ca: js.UndefOr[String] = js.native
+    var ca: js.UndefOr[String] = js.undefined
     
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: Boolean = js.native
+    var rejectUnauthorized: Boolean
   }
   object Ca {
     
@@ -82,29 +80,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: `false` = js.native
+    var enabled: `false`
     
     var exclude: js.Tuple3[
         ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
         ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
         ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
-      ] = js.native
+      ]
   }
   object Enabled {
     
     @scala.inline
     def apply(
-      enabled: `false`,
       exclude: js.Tuple3[
           ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
           ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
           ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
         ]
     ): Enabled = {
-      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(enabled = false, exclude = exclude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enabled]
     }
     
@@ -125,10 +121,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
-    var group: js.Tuple5[dn, cn, description, distinguishedName, objectCategory] = js.native
+    var group: js.Tuple5[dn, cn, description, distinguishedName, objectCategory]
     
     var user: js.Tuple17[
         dn, 
@@ -148,7 +143,7 @@ object anon {
         displayName, 
         comment, 
         description
-      ] = js.native
+      ]
   }
   object Group {
     

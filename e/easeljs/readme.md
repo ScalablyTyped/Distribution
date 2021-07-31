@@ -12,7 +12,7 @@ EaselJS is a library for building high-performance interactive 2D content in HTM
 | Keywords           | canvas, webgl, graphics, animation, html5 |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 15723 |
+| # downloads        | 11927 |
 | # stars            | 3 |
 
 ## Links

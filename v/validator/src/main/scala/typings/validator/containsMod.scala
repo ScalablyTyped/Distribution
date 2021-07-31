@@ -2,10 +2,13 @@ package typings.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containsMod {
+  
+  @JSImport("validator/lib/contains", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /******************
     *** Validators ***
@@ -15,7 +18,6 @@ object containsMod {
     *
     * @param seed - Seed
     */
-  @JSImport("validator/lib/contains", JSImport.Default)
-  @js.native
-  def default(str: String, seed: js.Any): Boolean = js.native
+  @scala.inline
+  def default(str: String, seed: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

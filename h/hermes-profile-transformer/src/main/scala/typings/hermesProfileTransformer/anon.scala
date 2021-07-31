@@ -2,27 +2,25 @@ package typings.hermesProfileTransformer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Category extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var column: String = js.native
+    var column: String
     
-    var funcColumn: String = js.native
+    var funcColumn: String
     
-    var funcLine: String = js.native
+    var funcLine: String
     
-    var line: String = js.native
+    var line: String
     
-    var name: String = js.native
+    var name: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Category {
     
@@ -61,12 +59,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Issuets extends StObject {
     
-    var issue_ts: js.UndefOr[Double] = js.native
+    var issue_ts: js.UndefOr[Double] = js.undefined
     
-    var sync_id: String = js.native
+    var sync_id: String
   }
   object Issuets {
     
@@ -90,10 +87,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Linkedid extends StObject {
     
-    var linked_id: Double = js.native
+    var linked_id: Double
   }
   object Linkedid {
     
@@ -111,12 +107,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Mappings extends StObject {
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
   }
   object Mappings {
     

@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,9 +16,10 @@ object mod extends Shortcut {
   val default: FastifyPlugin[FastifyCorsOptions] = js.native
   
   @js.native
-  trait ArrayOfValueOrArray[T] extends Array[ValueOrArray[T]]
+  trait ArrayOfValueOrArray[T]
+    extends StObject
+       with Array[ValueOrArray[T]]
   
-  @js.native
   trait FastifyCorsOptions extends StObject {
     
     /**
@@ -29,13 +29,13 @@ object mod extends Shortcut {
       * specified, defaults to reflecting the headers specified in the
       * request's Access-Control-Request-Headers header.
       */
-    var allowedHeaders: js.UndefOr[String | js.Array[String]] = js.native
+    var allowedHeaders: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Configures the Access-Control-Allow-Credentials CORS header.
       * Set to true to pass the header, otherwise it is omitted.
       */
-    var credentials: js.UndefOr[Boolean] = js.native
+    var credentials: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configures the Access-Control-Expose-Headers CORS header.
@@ -43,45 +43,45 @@ object mod extends Shortcut {
       * or an array (ex: ['Content-Range', 'X-Content-Range']).
       * If not specified, no custom headers are exposed.
       */
-    var exposedHeaders: js.UndefOr[String | js.Array[String]] = js.native
+    var exposedHeaders: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Hide options route from the documentation built using fastify-swagger (default: true).
       */
-    var hideOptionsRoute: js.UndefOr[Boolean] = js.native
+    var hideOptionsRoute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configures the Access-Control-Max-Age CORS header.
       * Set to an integer to pass the header, otherwise it is omitted.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * Configures the Access-Control-Allow-Methods CORS header.
       * Expects a comma-delimited string (ex: 'GET,PUT,POST') or an array (ex: ['GET', 'PUT', 'POST']).
       */
-    var methods: js.UndefOr[String | js.Array[String]] = js.native
+    var methods: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Provides a status code to use for successful OPTIONS requests,
       * since some legacy browsers (IE11, various SmartTVs) choke on 204.
       */
-    var optionsSuccessStatus: js.UndefOr[Double] = js.native
+    var optionsSuccessStatus: js.UndefOr[Double] = js.undefined
     
     /**
       * Configures the Access-Control-Allow-Origin CORS header.
       */
-    var origin: js.UndefOr[ValueOrArray[OriginType] | OriginFunction] = js.native
+    var origin: js.UndefOr[ValueOrArray[OriginType] | OriginFunction] = js.undefined
     
     /**
       * Pass the CORS preflight response to the route handler (default: false).
       */
-    var preflight: js.UndefOr[Boolean] = js.native
+    var preflight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass the CORS preflight response to the route handler (default: false).
       */
-    var preflightContinue: js.UndefOr[Boolean] = js.native
+    var preflightContinue: js.UndefOr[Boolean] = js.undefined
   }
   object FastifyCorsOptions {
     

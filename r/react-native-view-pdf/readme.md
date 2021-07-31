@@ -10,9 +10,9 @@ React native Pdf viewer implementation
 | ------------------ | :-------------: |
 | Full name          | react-native-view-pdf |
 | Keywords           | react-native react-component pdf viewer view android ios pdf |
-| # releases         | 31 |
+| # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 205538 |
+| # downloads        | 305595 |
 | # stars            | 0 |
 
 ## Links

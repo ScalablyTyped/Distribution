@@ -2,7 +2,6 @@ package typings.grunt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object node {
@@ -10,18 +9,17 @@ object node {
   /**
     * {@link http://npmjs.org/doc/json.html}
     */
-  @js.native
   trait NodePackage extends StObject {
     
-    var description: js.UndefOr[java.lang.String] = js.native
+    var description: js.UndefOr[java.lang.String] = js.undefined
     
-    var homepage: js.UndefOr[java.lang.String] = js.native
+    var homepage: js.UndefOr[java.lang.String] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var keywords: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     
-    var name: java.lang.String = js.native
+    var name: java.lang.String
     
-    var version: java.lang.String = js.native
+    var version: java.lang.String
   }
   object NodePackage {
     

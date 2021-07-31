@@ -2,62 +2,60 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Datafeed configuration data.
   */
-@js.native
 trait SchemaDatafeed extends StObject {
   
   /**
     * The two-letter ISO 639-1 language in which the attributes are defined in
     * the data feed.
     */
-  var attributeLanguage: js.UndefOr[String] = js.native
+  var attributeLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The type of data feed. For product inventory feeds, only feeds for local
     * stores, not online stores, are supported.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Fetch schedule for the feed file.
     */
-  var fetchSchedule: js.UndefOr[SchemaDatafeedFetchSchedule] = js.native
+  var fetchSchedule: js.UndefOr[SchemaDatafeedFetchSchedule] = js.undefined
   
   /**
     * The filename of the feed. All feeds must have a unique file name.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * Format of the feed file.
     */
-  var format: js.UndefOr[SchemaDatafeedFormat] = js.native
+  var format: js.UndefOr[SchemaDatafeedFormat] = js.undefined
   
   /**
     * The ID of the data feed.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#datafeed&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A descriptive name of the data feed.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The targets this feed should apply to (country, language, destinations).
     */
-  var targets: js.UndefOr[js.Array[SchemaDatafeedTarget]] = js.native
+  var targets: js.UndefOr[js.Array[SchemaDatafeedTarget]] = js.undefined
 }
 object SchemaDatafeed {
   

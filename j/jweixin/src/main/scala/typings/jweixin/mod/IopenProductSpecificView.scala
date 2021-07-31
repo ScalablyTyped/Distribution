@@ -5,18 +5,18 @@ import typings.jweixin.jweixinStrings.`1`
 import typings.jweixin.jweixinStrings.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================微信扫一扫================================*/
 /*=============================微信小店================================*/
-@js.native
-trait IopenProductSpecificView extends BaseParams {
+trait IopenProductSpecificView
+  extends StObject
+     with BaseParams {
   
-  var productId: String = js.native
+  var productId: String
   
   // 商品id
-  var viewType: `0` | `1` | `2` = js.native
+  var viewType: `0` | `1` | `2`
 }
 object IopenProductSpecificView {
   

@@ -9,31 +9,29 @@ import typings.plottable.plottableStrings.week
 import typings.plottable.plottableStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
-  var day: typings.plottable.plottableStrings.day = js.native
+  var day: typings.plottable.plottableStrings.day
   
-  var hour: typings.plottable.plottableStrings.hour = js.native
+  var hour: typings.plottable.plottableStrings.hour
   
-  var minute: typings.plottable.plottableStrings.minute = js.native
+  var minute: typings.plottable.plottableStrings.minute
   
-  var month: typings.plottable.plottableStrings.month = js.native
+  var month: typings.plottable.plottableStrings.month
   
-  var second: typings.plottable.plottableStrings.second = js.native
+  var second: typings.plottable.plottableStrings.second
   
-  var week: typings.plottable.plottableStrings.week = js.native
+  var week: typings.plottable.plottableStrings.week
   
-  var year: typings.plottable.plottableStrings.year = js.native
+  var year: typings.plottable.plottableStrings.year
 }
 object Day {
   
   @scala.inline
-  def apply(day: day, hour: hour, minute: minute, month: month, second: second, week: week, year: year): Day = {
-    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+  def apply(): Day = {
+    val __obj = js.Dynamic.literal(day = "day", hour = "hour", minute = "minute", month = "month", second = "second", week = "week", year = "year")
     __obj.asInstanceOf[Day]
   }
   

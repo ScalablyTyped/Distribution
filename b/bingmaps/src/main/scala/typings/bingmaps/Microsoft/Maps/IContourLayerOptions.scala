@@ -2,26 +2,24 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The contour layer options
   */
-@js.native
 trait IContourLayerOptions extends StObject {
   
   /** A callback function which defines the color of the contour line fill. */
-  var colorCallback: js.UndefOr[js.Function1[/* contourValue */ Double | String, String | Color]] = js.native
+  var colorCallback: js.UndefOr[js.Function1[/* contourValue */ Double | String, String | Color]] = js.undefined
   
   /** The polygon options that apply to all contour lines of this layer */
-  var polygonOptions: js.UndefOr[IPolygonOptions] = js.native
+  var polygonOptions: js.UndefOr[IPolygonOptions] = js.undefined
   
   /** Whether the layer is visible */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /** The z-index of this layer */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IContourLayerOptions {
   

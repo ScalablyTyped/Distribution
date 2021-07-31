@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
   */
-@js.native
 trait PlusNavigatorSplashscreenOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var autoclose: js.UndefOr[Boolean] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否自动关闭启动界面（WAP2APP应用）
@@ -28,7 +26,7 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var autoclose_w2a: js.UndefOr[Boolean] = js.native
+  var autoclose_w2a: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 启动界面延时关闭时间
@@ -36,7 +34,7 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * 启动界面延时关闭时间（WAP2APP应用）
@@ -45,7 +43,7 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var delay_w2a: js.UndefOr[Double] = js.native
+  var delay_w2a: js.UndefOr[Double] = js.undefined
   
   /**
     * 启动界面的图片路径
@@ -53,7 +51,7 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
 }
 object PlusNavigatorSplashscreenOptions {
   

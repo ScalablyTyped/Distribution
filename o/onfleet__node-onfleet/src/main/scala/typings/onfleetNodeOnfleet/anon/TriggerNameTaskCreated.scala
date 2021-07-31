@@ -5,21 +5,21 @@ import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCreated
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TriggerNameTaskCreated extends WebhookTriggerType {
+trait TriggerNameTaskCreated
+  extends StObject
+     with WebhookTriggerType {
   
-  var triggerId: `6` = js.native
+  var triggerId: `6`
   
-  var triggerName: TaskCreated = js.native
+  var triggerName: TaskCreated
 }
 object TriggerNameTaskCreated {
   
   @scala.inline
-  def apply(triggerId: `6`, triggerName: TaskCreated): TriggerNameTaskCreated = {
-    val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+  def apply(triggerName: TaskCreated): TriggerNameTaskCreated = {
+    val __obj = js.Dynamic.literal(triggerId = 6, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameTaskCreated]
   }
   

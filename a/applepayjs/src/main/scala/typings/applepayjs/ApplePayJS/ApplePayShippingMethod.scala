@@ -2,34 +2,32 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a shipping method for delivering physical goods.
   */
-@js.native
 trait ApplePayShippingMethod extends StObject {
   
   /**
     * The amount associated with this shipping method.
     */
-  var amount: String = js.native
+  var amount: String
   
   /**
     * A further description of the shipping method.
     */
-  var detail: String = js.native
+  var detail: String
   
   /**
     * A client-defined identifier.
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * A short description of the shipping method.
     */
-  var label: String = js.native
+  var label: String
 }
 object ApplePayShippingMethod {
   

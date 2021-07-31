@@ -12,7 +12,7 @@ Simplifies creation of a service worker to serve your webpack bundles
 | Keywords           | serviceworker, webpack, plugin |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 773425 |
+| # downloads        | 964810 |
 | # stars            | 5 |
 
 ## Links

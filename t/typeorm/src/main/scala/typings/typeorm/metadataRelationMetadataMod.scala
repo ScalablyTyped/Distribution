@@ -13,7 +13,6 @@ import typings.typeorm.typesPropertyTypeInFunctionMod.PropertyTypeFactory
 import typings.typeorm.typesRelationTypesMod.RelationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataRelationMetadataMod {
@@ -95,7 +94,7 @@ object metadataRelationMetadataMod {
       * either can be a function that accepts a map of properties with the object and returns one of them.
       * Second approach is used to achieve type-safety.
       */
-    var givenInverseSidePropertyFactory: PropertyTypeFactory[_] = js.native
+    var givenInverseSidePropertyFactory: PropertyTypeFactory[js.Any] = js.native
     
     /**
       * Entity metadata of the entity that is targeted by this relation.

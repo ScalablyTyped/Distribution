@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenModifiers extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait TokenModifiers extends StObject {
     * the client supports the new `(TextDocumentRegistrationOptions & StaticRegistrationOptions)`
     * return value for the corresponding server capability as well.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The token modifiers know by the client.
     */
-  var tokenModifiers: js.Array[String] = js.native
+  var tokenModifiers: js.Array[String]
   
   /**
     * The token types know by the client.
     */
-  var tokenTypes: js.Array[String] = js.native
+  var tokenTypes: js.Array[String]
 }
 object TokenModifiers {
   

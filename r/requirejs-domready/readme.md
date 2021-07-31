@@ -12,7 +12,7 @@ An AMD loader plugin for detecting DOM ready. An AMD loader plugin for detecting
 | Keywords           | requirejs |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 104405 |
+| # downloads        | 101746 |
 | # stars            | 1 |
 
 ## Links

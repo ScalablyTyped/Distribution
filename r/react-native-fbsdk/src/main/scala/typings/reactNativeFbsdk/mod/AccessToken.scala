@@ -2,7 +2,6 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "AccessToken")
@@ -96,25 +95,26 @@ class AccessToken protected () extends StObject {
 /* static members */
 object AccessToken {
   
+  @JSImport("react-native-fbsdk", "AccessToken")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Getter for the access token that is current for the application.
     */
-  @JSImport("react-native-fbsdk", "AccessToken.getCurrentAccessToken")
-  @js.native
-  def getCurrentAccessToken(): js.Promise[AccessToken | Null] = js.native
+  @scala.inline
+  def getCurrentAccessToken(): js.Promise[AccessToken | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentAccessToken")().asInstanceOf[js.Promise[AccessToken | Null]]
   
   /**
     * Updates the current access token with up to date permissions,
     * and extends the expiration date, if extension is possible.
     */
-  @JSImport("react-native-fbsdk", "AccessToken.refreshCurrentAccessTokenAsync")
-  @js.native
-  def refreshCurrentAccessTokenAsync(): js.Promise[_] = js.native
+  @scala.inline
+  def refreshCurrentAccessTokenAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCurrentAccessTokenAsync")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Setter for the access token that is current for the application.
     */
-  @JSImport("react-native-fbsdk", "AccessToken.setCurrentAccessToken")
-  @js.native
-  def setCurrentAccessToken(accessToken: AccessTokenMap): Unit = js.native
+  @scala.inline
+  def setCurrentAccessToken(accessToken: AccessTokenMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentAccessToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

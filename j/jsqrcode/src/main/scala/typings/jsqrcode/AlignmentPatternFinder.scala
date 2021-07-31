@@ -3,37 +3,35 @@ package typings.jsqrcode
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignmentPatternFinder extends StObject {
   
-  /* private */ def centerFromEnd(stateCount: Double, end: Double): Double = js.native
+  /* private */ def centerFromEnd(stateCount: Double, end: Double): Double
   
-  var crossCheckStateCount: js.Tuple3[Double, Double, Double] = js.native
+  var crossCheckStateCount: js.Tuple3[Double, Double, Double]
   
-  def find(): AlignmentPattern = js.native
+  def find(): AlignmentPattern
   
-  /* private */ def foundPatternCross(stateCount: Double): Boolean = js.native
+  /* private */ def foundPatternCross(stateCount: Double): Boolean
   
-  /* private */ def handlePossibleCenter(stateCount: Double, i: Double, j: Double): AlignmentPattern = js.native
+  /* private */ def handlePossibleCenter(stateCount: Double, i: Double, j: Double): AlignmentPattern
   
-  var height: Double = js.native
+  var height: Double
   
-  var image: Uint8Array = js.native
+  var image: Uint8Array
   
-  var moduleSize: Double = js.native
+  var moduleSize: Double
   
-  var possibleCenters: js.Array[AlignmentPattern] = js.native
+  var possibleCenters: js.Array[AlignmentPattern]
   
-  var resultPointCallback: ResultPointCallback = js.native
+  var resultPointCallback: ResultPointCallback
   
-  var startX: Double = js.native
+  var startX: Double
   
-  var startY: Double = js.native
+  var startY: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object AlignmentPatternFinder {
   

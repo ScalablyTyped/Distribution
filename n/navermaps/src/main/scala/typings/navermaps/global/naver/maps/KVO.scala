@@ -2,7 +2,6 @@ package typings.navermaps.global.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,4 +11,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("naver.maps.KVO")
 @js.native
 class KVO ()
-  extends typings.navermaps.naver.maps.KVO
+  extends StObject
+     with typings.navermaps.naver.maps.KVO

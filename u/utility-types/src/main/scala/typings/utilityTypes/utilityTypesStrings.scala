@@ -3,7 +3,6 @@ package typings.utilityTypes
 import typings.utilityTypes.aliasesAndGuardsMod._Falsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilityTypesStrings {
@@ -39,7 +38,9 @@ object utilityTypesStrings {
   def _DeepRequiredObject: _DeepRequiredObject = "_DeepRequiredObject".asInstanceOf[_DeepRequiredObject]
   
   @js.native
-  sealed trait _empty extends _Falsy
+  sealed trait _empty
+    extends StObject
+       with _Falsy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
 }

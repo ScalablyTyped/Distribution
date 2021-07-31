@@ -2,19 +2,17 @@ package typings.mosca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CertPath extends StObject {
     
-    var certPath: String = js.native
+    var certPath: String
     
-    var keyPath: String = js.native
+    var keyPath: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object CertPath {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var port: Double = js.native
+    var port: Double
   }
   object Port {
     

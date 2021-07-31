@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes. */
-@js.native
 trait SVGUnitTypes extends StObject {
   
-  val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double = js.native
+  val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double
   
-  val SVG_UNIT_TYPE_UNKNOWN: Double = js.native
+  val SVG_UNIT_TYPE_UNKNOWN: Double
   
-  val SVG_UNIT_TYPE_USERSPACEONUSE: Double = js.native
+  val SVG_UNIT_TYPE_USERSPACEONUSE: Double
 }
 object SVGUnitTypes {
   

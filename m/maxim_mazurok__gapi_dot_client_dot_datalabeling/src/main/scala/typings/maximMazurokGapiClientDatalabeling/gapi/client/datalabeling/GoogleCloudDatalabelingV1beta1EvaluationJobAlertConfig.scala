@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends StObject {
   
   /** Required. An email address to send alerts to. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A number between 0 and 1 that describes a minimum mean average precision threshold. When the evaluation job runs, if it calculates that your model version's predictions
     * from the recent interval have meanAveragePrecision below this threshold, then it sends an alert to your specified email.
     */
-  var minAcceptableMeanAveragePrecision: js.UndefOr[Double] = js.native
+  var minAcceptableMeanAveragePrecision: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig {
   

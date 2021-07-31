@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait NamedItemLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var arrayValues: js.UndefOr[NamedItemArrayValuesLoadOptions] = js.native
+  var arrayValues: js.UndefOr[NamedItemArrayValuesLoadOptions] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var comment: js.UndefOr[Boolean] = js.native
+  var comment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var formula: js.UndefOr[Boolean] = js.native
+  var formula: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var scope: js.UndefOr[Boolean] = js.native
+  var scope: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait NamedItemLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var worksheetOrNullObject: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheetOrNullObject: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 object NamedItemLoadOptions {
   

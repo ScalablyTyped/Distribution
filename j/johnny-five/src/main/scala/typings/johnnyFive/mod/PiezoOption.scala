@@ -2,13 +2,11 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PiezoOption extends StObject {
   
-  var pin: Double = js.native
+  var pin: Double
 }
 object PiezoOption {
   

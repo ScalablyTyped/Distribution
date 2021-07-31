@@ -7,61 +7,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(torrent: Buffer): Instance = ^.asInstanceOf[js.Dynamic].apply(torrent.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  @scala.inline
+  def apply(torrent: Torrent): Instance = ^.asInstanceOf[js.Dynamic].apply(torrent.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  
   @JSImport("parse-torrent-file", JSImport.Namespace)
   @js.native
-  def apply(torrent: Buffer): Instance = js.native
-  @JSImport("parse-torrent-file", JSImport.Namespace)
-  @js.native
-  def apply(torrent: Torrent): Instance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("parse-torrent-file", "decode")
-  @js.native
-  def decode(torrent: Buffer): Instance = js.native
-  @JSImport("parse-torrent-file", "decode")
-  @js.native
-  def decode(torrent: Torrent): Instance = js.native
+  @scala.inline
+  def decode(torrent: Buffer): Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(torrent.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  @scala.inline
+  def decode(torrent: Torrent): Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(torrent.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
-  @JSImport("parse-torrent-file", "encode")
-  @js.native
-  def encode(parsed: Instance): Buffer = js.native
+  @scala.inline
+  def encode(parsed: Instance): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(parsed.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @js.native
-  trait Instance extends Object {
+  trait Instance
+    extends StObject
+       with Object {
     
-    var announce: js.UndefOr[js.Array[String]] = js.native
+    var announce: js.UndefOr[js.Array[String]] = js.undefined
     
-    var created: js.UndefOr[Date] = js.native
+    var created: js.UndefOr[Date] = js.undefined
     
-    var createdBy: js.UndefOr[String] = js.native
+    var createdBy: js.UndefOr[String] = js.undefined
     
-    var files: js.UndefOr[js.Array[ParsedFile]] = js.native
+    var files: js.UndefOr[js.Array[ParsedFile]] = js.undefined
     
-    var info: js.UndefOr[TorrentInfo] = js.native
+    var info: js.UndefOr[TorrentInfo] = js.undefined
     
-    var infoBuffer: js.UndefOr[Buffer] = js.native
+    var infoBuffer: js.UndefOr[Buffer] = js.undefined
     
-    var infoHash: js.UndefOr[String] = js.native
+    var infoHash: js.UndefOr[String] = js.undefined
     
-    var infoHashBuffer: js.UndefOr[Buffer] = js.native
+    var infoHashBuffer: js.UndefOr[Buffer] = js.undefined
     
-    var lastPieceLength: js.UndefOr[Double] = js.native
+    var lastPieceLength: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var pieceLength: js.UndefOr[Double] = js.native
+    var pieceLength: js.UndefOr[Double] = js.undefined
     
-    var pieces: js.UndefOr[js.Array[String]] = js.native
+    var pieces: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var urlList: js.UndefOr[js.Array[String]] = js.native
+    var urlList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Instance {
     
@@ -182,16 +181,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedFile extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var path: String = js.native
+    var path: String
   }
   object ParsedFile {
     
@@ -218,22 +216,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Torrent extends StObject {
     
-    var announce: js.UndefOr[String] = js.native
+    var announce: js.UndefOr[String] = js.undefined
     
-    var `announce-list`: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var `announce-list`: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
-    var comment: js.UndefOr[Buffer] = js.native
+    var comment: js.UndefOr[Buffer] = js.undefined
     
-    var `created by`: js.UndefOr[String] = js.native
+    var `created by`: js.UndefOr[String] = js.undefined
     
-    var `creation date`: js.UndefOr[Double] = js.native
+    var `creation date`: js.UndefOr[Double] = js.undefined
     
-    var info: js.UndefOr[TorrentInfo] = js.native
+    var info: js.UndefOr[TorrentInfo] = js.undefined
     
-    var `url-list`: js.UndefOr[Buffer] = js.native
+    var `url-list`: js.UndefOr[Buffer] = js.undefined
   }
   object Torrent {
     
@@ -293,21 +290,20 @@ object mod {
     }
   }
   
-  @js.native
   trait TorrentInfo extends StObject {
     
-    var files: js.UndefOr[js.Array[File]] = js.native
+    var files: js.UndefOr[js.Array[File]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     @JSName("name.utf-8")
-    var `nameDotutf-8`: js.UndefOr[String] = js.native
+    var `nameDotutf-8`: js.UndefOr[String] = js.undefined
     
-    var `piece length`: js.UndefOr[Double] = js.native
+    var `piece length`: js.UndefOr[Double] = js.undefined
     
-    var pieces: js.UndefOr[Double] = js.native
+    var pieces: js.UndefOr[Double] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
   }
   object TorrentInfo {
     

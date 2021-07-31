@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SampleCriterion extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait GoogleMapsPlayablelocationsV3SampleCriterion extends StObject {
     * following fields are omitted unless you specify them here: * snapped_point * types Note: The more fields you include, the more expensive in terms of data and associated latency your
     * query will be.
     */
-  var fieldsToReturn: js.UndefOr[String] = js.native
+  var fieldsToReturn: js.UndefOr[String] = js.undefined
   
   /** Specifies filtering options, and specifies what will be included in the result set. */
-  var filter: js.UndefOr[GoogleMapsPlayablelocationsV3SampleFilter] = js.native
+  var filter: js.UndefOr[GoogleMapsPlayablelocationsV3SampleFilter] = js.undefined
   
   /**
     * Required. An arbitrary, developer-defined identifier of the type of game object that the playable location is used for. This field allows you to specify criteria per game object
     * type when searching for playable locations. You should assign a unique `game_object_type` ID across all `request_criteria` to represent a distinct type of game object. For example,
     * 1=monster location, 2=powerup location. The response contains a map.
     */
-  var gameObjectType: js.UndefOr[Double] = js.native
+  var gameObjectType: js.UndefOr[Double] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SampleCriterion {
   

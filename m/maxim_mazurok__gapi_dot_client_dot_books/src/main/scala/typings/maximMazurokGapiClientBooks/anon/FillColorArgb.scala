@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillColorArgb extends StObject {
   
-  var fillColorArgb: js.UndefOr[String] = js.native
+  var fillColorArgb: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var maskColorArgb: js.UndefOr[String] = js.native
+  var maskColorArgb: js.UndefOr[String] = js.undefined
   
-  var moreButtonText: js.UndefOr[String] = js.native
+  var moreButtonText: js.UndefOr[String] = js.undefined
   
-  var moreButtonUrl: js.UndefOr[String] = js.native
+  var moreButtonUrl: js.UndefOr[String] = js.undefined
   
-  var textColorArgb: js.UndefOr[String] = js.native
+  var textColorArgb: js.UndefOr[String] = js.undefined
 }
 object FillColorArgb {
   

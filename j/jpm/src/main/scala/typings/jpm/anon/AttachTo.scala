@@ -9,33 +9,31 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachTo extends StObject {
   
-  var attachTo: js.UndefOr[attachmentMode | js.Array[attachmentMode]] = js.native
+  var attachTo: js.UndefOr[attachmentMode | js.Array[attachmentMode]] = js.undefined
   
-  var contentScript: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptOptions: js.UndefOr[js.Any] = js.native
+  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
   
-  var contentScriptWhen: js.UndefOr[start | ready | end] = js.native
+  var contentScriptWhen: js.UndefOr[start | ready | end] = js.undefined
   
-  var contentStyle: js.UndefOr[String | js.Array[String]] = js.native
+  var contentStyle: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentStyleFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentStyleFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var include: String | (js.Array[RegExp | String]) | RegExp = js.native
+  var include: String | (js.Array[RegExp | String]) | RegExp
   
-  var onAttach: js.UndefOr[js.Function1[/* worker */ ContentWorker, _]] = js.native
+  var onAttach: js.UndefOr[js.Function1[/* worker */ ContentWorker, js.Any]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ Error, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
 }
 object AttachTo {
   
@@ -121,13 +119,13 @@ object AttachTo {
     def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setOnAttach(value: /* worker */ ContentWorker => _): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
+    def setOnAttach(value: /* worker */ ContentWorker => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* error */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)

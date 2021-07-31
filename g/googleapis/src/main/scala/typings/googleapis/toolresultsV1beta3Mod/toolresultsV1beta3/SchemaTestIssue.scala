@@ -2,45 +2,43 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An issue detected occurring during a test execution.
   */
-@js.native
 trait SchemaTestIssue extends StObject {
   
   /**
     * Category of issue. Required.
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * A brief human-readable message describing the issue. Required.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Severity of issue. Required.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated in favor of stack trace fields inside specific warnings.
     */
-  var stackTrace: js.UndefOr[SchemaStackTrace] = js.native
+  var stackTrace: js.UndefOr[SchemaStackTrace] = js.undefined
   
   /**
     * Type of issue. Required.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Warning message with additional details of the issue. Should always be a
     * message from com.google.devtools.toolresults.v1.warnings
     */
-  var warning: js.UndefOr[SchemaAny] = js.native
+  var warning: js.UndefOr[SchemaAny] = js.undefined
 }
 object SchemaTestIssue {
   

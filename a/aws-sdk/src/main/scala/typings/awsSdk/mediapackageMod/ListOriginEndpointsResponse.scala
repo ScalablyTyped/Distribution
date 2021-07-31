@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOriginEndpointsResponse extends StObject {
   
   /**
     * A token that can be used to resume pagination from the end of the collection.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * A list of OriginEndpoint records.
     */
-  var OriginEndpoints: js.UndefOr[listOfOriginEndpoint] = js.native
+  var OriginEndpoints: js.UndefOr[listOfOriginEndpoint] = js.undefined
 }
 object ListOriginEndpointsResponse {
   

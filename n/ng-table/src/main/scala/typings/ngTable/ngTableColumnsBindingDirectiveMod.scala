@@ -8,12 +8,14 @@ import typings.angular.mod.IParseService
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableColumnsBindingDirectiveMod {
   
-  @JSImport("ng-table/src/browser/ngTableColumnsBinding.directive", "ngTableColumnsBinding")
+  @JSImport("ng-table/src/browser/ngTableColumnsBinding.directive", JSImport.Namespace)
   @js.native
-  def ngTableColumnsBinding[T]($parse: IParseService): IDirective[IScope, JQLite, IAttributes, IController] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ngTableColumnsBinding[T]($parse: IParseService): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableColumnsBinding")($parse.asInstanceOf[js.Any]).asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
 }

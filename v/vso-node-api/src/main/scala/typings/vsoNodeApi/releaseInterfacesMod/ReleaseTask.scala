@@ -3,41 +3,39 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseTask extends StObject {
   
-  var agentName: String = js.native
+  var agentName: String
   
-  var dateEnded: Date = js.native
+  var dateEnded: Date
   
-  var dateStarted: Date = js.native
+  var dateStarted: Date
   
-  var finishTime: Date = js.native
+  var finishTime: Date
   
-  var id: Double = js.native
+  var id: Double
   
-  var issues: js.Array[Issue] = js.native
+  var issues: js.Array[Issue]
   
-  var lineCount: Double = js.native
+  var lineCount: Double
   
-  var logUrl: String = js.native
+  var logUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var percentComplete: Double = js.native
+  var percentComplete: Double
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var status: TaskStatus = js.native
+  var status: TaskStatus
   
-  var task: WorkflowTaskReference = js.native
+  var task: WorkflowTaskReference
   
-  var timelineRecordId: String = js.native
+  var timelineRecordId: String
 }
 object ReleaseTask {
   

@@ -21,72 +21,70 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> */
-@js.native
 trait PartialModalPropsRefAttri extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var backdrop: js.UndefOr[`true` | `false` | static] = js.native
+  var backdrop: js.UndefOr[`true` | `false` | static] = js.undefined
   
-  var backdropTransition: js.UndefOr[ModalTransitionComponent] = js.native
+  var backdropTransition: js.UndefOr[ModalTransitionComponent] = js.undefined
   
-  var children: js.UndefOr[ReactElement] = js.native
+  var children: js.UndefOr[ReactElement] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[DOMContainer[HTMLElement]] = js.native
+  var container: js.UndefOr[DOMContainer[HTMLElement]] = js.undefined
   
-  var containerClassName: js.UndefOr[String] = js.native
+  var containerClassName: js.UndefOr[String] = js.undefined
   
-  var enforceFocus: js.UndefOr[Boolean] = js.native
+  var enforceFocus: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var manager: js.UndefOr[default] = js.native
+  var manager: js.UndefOr[default] = js.undefined
   
-  var onBackdropClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.native
+  var onBackdropClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
   
-  var onEnter: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onEnter: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onEntered: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onEntered: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onEntering: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onEntering: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onEscapeKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, Unit]] = js.native
+  var onEscapeKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, Unit]] = js.undefined
   
-  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ref: js.UndefOr[typings.react.mod.Ref[ModalHandle]] = js.native
+  var ref: js.UndefOr[typings.react.mod.Ref[ModalHandle]] = js.undefined
   
-  var renderBackdrop: js.UndefOr[js.Function1[/* props */ RenderModalBackdropProps, ReactNode]] = js.native
+  var renderBackdrop: js.UndefOr[js.Function1[/* props */ RenderModalBackdropProps, ReactNode]] = js.undefined
   
-  var renderDialog: js.UndefOr[js.Function1[/* props */ RenderModalDialogProps, ReactNode]] = js.native
+  var renderDialog: js.UndefOr[js.Function1[/* props */ RenderModalDialogProps, ReactNode]] = js.undefined
   
-  var restoreFocus: js.UndefOr[Boolean] = js.native
+  var restoreFocus: js.UndefOr[Boolean] = js.undefined
   
-  var restoreFocusOptions: js.UndefOr[PreventScroll] = js.native
+  var restoreFocusOptions: js.UndefOr[PreventScroll] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var transition: js.UndefOr[ModalTransitionComponent] = js.native
+  var transition: js.UndefOr[ModalTransitionComponent] = js.undefined
 }
 object PartialModalPropsRefAttri {
   
@@ -181,19 +179,19 @@ object PartialModalPropsRefAttri {
     def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
     @scala.inline
-    def setOnEnter(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+    def setOnEnter(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def setOnEntered(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+    def setOnEntered(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
     @scala.inline
-    def setOnEntering(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+    def setOnEntering(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
@@ -205,19 +203,19 @@ object PartialModalPropsRefAttri {
     def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
     
     @scala.inline
-    def setOnExit(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+    def setOnExit(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def setOnExited(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    def setOnExited(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def setOnExiting(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
+    def setOnExiting(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)

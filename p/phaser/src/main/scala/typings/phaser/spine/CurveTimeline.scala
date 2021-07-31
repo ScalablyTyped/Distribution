@@ -2,25 +2,25 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CurveTimeline extends Timeline {
+trait CurveTimeline
+  extends StObject
+     with Timeline {
   
-  var curves: js.Any = js.native
+  var curves: js.Any
   
-  def getCurvePercent(frameIndex: Double, percent: Double): Double = js.native
+  def getCurvePercent(frameIndex: Double, percent: Double): Double
   
-  def getCurveType(frameIndex: Double): Double = js.native
+  def getCurveType(frameIndex: Double): Double
   
-  def getFrameCount(): Double = js.native
+  def getFrameCount(): Double
   
-  def setCurve(frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit = js.native
+  def setCurve(frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit
   
-  def setLinear(frameIndex: Double): Unit = js.native
+  def setLinear(frameIndex: Double): Unit
   
-  def setStepped(frameIndex: Double): Unit = js.native
+  def setStepped(frameIndex: Double): Unit
 }
 object CurveTimeline {
   

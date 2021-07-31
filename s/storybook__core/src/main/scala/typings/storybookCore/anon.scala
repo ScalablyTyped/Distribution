@@ -15,25 +15,23 @@ import typings.storybookCore.typesMod.Loadable
 import typings.storybookCore.typesMod.RenderStoryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Centered extends StObject {
     
-    val centered: `sb-main-centered` = js.native
+    val centered: `sb-main-centered`
     
-    val fullscreen: `sb-main-fullscreen` = js.native
+    val fullscreen: `sb-main-fullscreen`
     
-    val padded: `sb-main-padded` = js.native
+    val padded: `sb-main-padded`
   }
   object Centered {
     
     @scala.inline
-    def apply(centered: `sb-main-centered`, fullscreen: `sb-main-fullscreen`, padded: `sb-main-padded`): Centered = {
-      val __obj = js.Dynamic.literal(centered = centered.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any], padded = padded.asInstanceOf[js.Any])
+    def apply(): Centered = {
+      val __obj = js.Dynamic.literal(centered = "sb-main-centered", fullscreen = "sb-main-fullscreen", padded = "sb-main-padded")
       __obj.asInstanceOf[Centered]
     }
     
@@ -66,14 +64,13 @@ object anon {
     def forceReRender(): Unit = js.native
   }
   
-  @js.native
   trait ClientApi extends StObject {
     
-    var clientApi: typings.storybookClientApi.mod.ClientApi = js.native
+    var clientApi: typings.storybookClientApi.mod.ClientApi
     
-    var configApi: ConfigApi = js.native
+    var configApi: ConfigApi
     
-    var storyStore: typings.storybookClientApi.mod.StoryStore = js.native
+    var storyStore: typings.storybookClientApi.mod.StoryStore
   }
   object ClientApi {
     
@@ -101,12 +98,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var context: RenderContextWithoutStoryContext = js.native
+    var context: RenderContextWithoutStoryContext
     
-    var metadata: RenderMetadata = js.native
+    var metadata: RenderMetadata
   }
   object Context {
     
@@ -127,10 +123,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ContextRenderContextWithoutStoryContext extends StObject {
     
-    var context: RenderContextWithoutStoryContext = js.native
+    var context: RenderContextWithoutStoryContext
   }
   object ContextRenderContextWithoutStoryContext {
     
@@ -148,10 +143,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DecorateStory extends StObject {
     
-    var decorateStory: js.UndefOr[DecorateStoryFunction[_]] = js.native
+    var decorateStory: js.UndefOr[DecorateStoryFunction[js.Any]] = js.undefined
   }
   object DecorateStory {
     
@@ -165,19 +159,20 @@ object anon {
     implicit class DecorateStoryMutableBuilder[Self <: DecorateStory] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDecorateStory(value: (/* storyFn */ StoryFn[_], /* decorators */ js.Array[DecoratorFunction[_]]) => StoryFn[_]): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
+      def setDecorateStory(
+        value: (/* storyFn */ StoryFn[js.Any], /* decorators */ js.Array[DecoratorFunction[js.Any]]) => StoryFn[js.Any]
+      ): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDecorateStoryUndefined: Self = StObject.set(x, "decorateStory", js.undefined)
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: String = js.native
+    var title: String
   }
   object Description {
     
@@ -198,12 +193,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object Message {
     
@@ -230,14 +224,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Render extends StObject {
     
-    var channel: js.UndefOr[typings.storybookAddons.mod.Channel] = js.native
+    var channel: js.UndefOr[typings.storybookAddons.mod.Channel] = js.undefined
     
-    var render: RenderStoryFunction = js.native
+    var render: RenderStoryFunction
     
-    var storyStore: typings.storybookClientApi.mod.StoryStore = js.native
+    var storyStore: typings.storybookClientApi.mod.StoryStore
   }
   object Render {
     
@@ -264,12 +257,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StoryStore extends StObject {
     
-    var context: RenderContextWithoutStoryContext = js.native
+    var context: RenderContextWithoutStoryContext
     
-    var storyStore: typings.storybookClientApi.mod.StoryStore = js.native
+    var storyStore: typings.storybookClientApi.mod.StoryStore
   }
   object StoryStore {
     

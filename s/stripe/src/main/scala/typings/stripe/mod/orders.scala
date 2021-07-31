@@ -15,98 +15,98 @@ import typings.stripe.stripeStrings.sku
 import typings.stripe.stripeStrings.tax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orders {
   
-  @js.native
-  trait IOrder extends IResourceObject {
+  trait IOrder
+    extends StObject
+       with IResourceObject {
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1, Japanese Yen being a 0-decimal
       * currency) representing the total amount for the order.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1, Japanese Yen being a 0-decimal
       * currency) representing the total amount returned for the order thus far.
       */
-    var amount_returned: Double = js.native
+    var amount_returned: Double
     
     /**
       * ID of the Connect Application that created the order.
       */
-    var application: String = js.native
+    var application: String
     
-    var application_fee: Double = js.native
+    var application_fee: Double
     
     /**
       * The ID of the payment used to pay for the order. Present if the order status is paid, fulfilled, or refunded. [Expandable]
       */
-    var charge: String | ICharge = js.native
+    var charge: String | ICharge
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * 3-letter ISO code representing the currency in which the order was made.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The customer used for the order. [Expandable]
       */
-    var customer: String | ICustomer = js.native
+    var customer: String | ICustomer
     
     /**
       * The email address of the customer placing the order.
       */
-    var email: String = js.native
+    var email: String
     
-    var external_coupon_code: String = js.native
+    var external_coupon_code: String
     
     /**
       * List of items constituting the order.
       */
-    var items: js.Array[IOrderItem] = js.native
+    var items: js.Array[IOrderItem]
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is "order"
       */
     @JSName("object")
-    var object_IOrder: order = js.native
+    var object_IOrder: order
     
     /**
       * The shipping method that is currently selected for this order, if any. If present, it is equal to one of the ids of shipping methods
       * in the shipping_methods array. At order creation time, if there are multiple shipping methods, Stripe will automatically selected
       * the first method.
       */
-    var selected_shipping_method: String = js.native
+    var selected_shipping_method: String
     
     /**
       * The shipping address for the order. Present if the order is for goods to be shipped.
       */
-    var shipping: IShippingInformation = js.native
+    var shipping: IShippingInformation
     
     /**
       * A list of supported shipping methods for this order. The desired shipping method can be specified either by updating the order, or
       * when paying it.
       */
-    var shipping_methods: js.Array[IShippingMethod] = js.native
+    var shipping_methods: js.Array[IShippingMethod]
     
-    var status: OrderStatus = js.native
+    var status: OrderStatus
     
     /**
       * The timestamps at which the order status was updated
       */
-    var status_transitions: Canceled = js.native
+    var status_transitions: Canceled
     
-    var updated: Double = js.native
+    var updated: Double
   }
   object IOrder {
     
@@ -126,7 +126,6 @@ object orders {
       items: js.Array[IOrderItem],
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: order,
       selected_shipping_method: String,
       shipping: IShippingInformation,
       shipping_methods: js.Array[IShippingMethod],
@@ -135,7 +134,7 @@ object orders {
       updated: Double
     ): IOrder = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_coupon_code = external_coupon_code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], selected_shipping_method = selected_shipping_method.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any], shipping_methods = shipping_methods.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_transitions = status_transitions.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("order")
       __obj.asInstanceOf[IOrder]
     }
     
@@ -210,41 +209,42 @@ object orders {
     }
   }
   
-  @js.native
-  trait IOrderCreationOptions extends IDataOptionsWithMetadata {
+  trait IOrderCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A coupon code that represents a discount to be applied to this order. Must be one-time duration and in same currency as the order.
       */
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
     /**
       * 3-letter ISO code representing the currency in which the order should be made. Stripe will validate that all entries in items match
       * the currency specified here.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The ID of an existing customer to use for this order. If provided, the customer email and shipping address will be used to create
       * the order. Subsequently, the customer will also be charged to pay the order. If email or shipping are also provided, they will
       * override the values retrieved from the customer object.
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * The email address of the customer placing the order.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * List of items constituting the order.
       */
-    var items: js.UndefOr[js.Array[IOrderItemCreationHash]] = js.native
+    var items: js.UndefOr[js.Array[IOrderItemCreationHash]] = js.undefined
     
     /**
       * Shipping address for the order. Required if any of the SKUs are for products that have shippable set to true.
       */
-    var shipping: js.UndefOr[IShippingInformation] = js.native
+    var shipping: js.UndefOr[IShippingInformation] = js.undefined
   }
   object IOrderCreationOptions {
     
@@ -295,46 +295,47 @@ object orders {
     }
   }
   
-  @js.native
-  trait IOrderItem extends IObject {
+  trait IOrderItem
+    extends StObject
+       with IObject {
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1, Japanese Yen being a 0-decimal currency)
       * representing the total amount for the line item.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * 3-letter ISO code representing the currency of the line item.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * Description of the line item, meant to be displayable to the user (e.g., "Express shipping").
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * value is "order_item"
       */
     @JSName("object")
-    var object_IOrderItem: order_item = js.native
+    var object_IOrderItem: order_item
     
     /**
       * The ID of the associated object for this line item. Expandable if not null (e.g., expandable to a SKU). [Expandable]
       */
-    var parent: String | ISku = js.native
+    var parent: String | ISku
     
     /**
       * A positive integer representing the number of instances of parent that are included in this order item.
       * Applicable/present only if type is sku.
       */
-    var quantity: Double = js.native
+    var quantity: Double
     
     /**
       * The type of line item. One of "sku", "tax", "shipping", or "discount".
       */
-    var `type`: sku | tax | shipping | discount = js.native
+    var `type`: sku | tax | shipping | discount
   }
   object IOrderItem {
     
@@ -343,13 +344,12 @@ object orders {
       amount: Double,
       currency: String,
       description: String,
-      `object`: order_item,
       parent: String | ISku,
       quantity: Double,
       `type`: sku | tax | shipping | discount
     ): IOrderItem = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("order_item")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOrderItem]
     }
@@ -380,39 +380,38 @@ object orders {
     }
   }
   
-  @js.native
   trait IOrderItemCreationHash extends StObject {
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1, Japanese Yen being a 0-decimal currency)
       * representing the total amount for the line item.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * 3-letter ISO code representing the currency of the line item.
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * Description of the line item, meant to be displayable to the user (e.g., "Express shipping").
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the SKU being ordered.
       */
-    var parent: String = js.native
+    var parent: String
     
     /**
       * The quantity of this order item. When type is sku, this is the number of instances of the SKU to be ordered.
       */
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
     /**
       * The type of line item. One of "sku", "tax", "shipping", or "discount".
       */
-    var `type`: js.UndefOr[sku | tax | shipping | discount] = js.native
+    var `type`: js.UndefOr[sku | tax | shipping | discount] = js.undefined
   }
   object IOrderItemCreationHash {
     
@@ -460,28 +459,29 @@ object orders {
     }
   }
   
-  @js.native
-  trait IOrderListOptions extends IListOptionsCreated {
+  trait IOrderListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * Only return orders for the given customer
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * Only return orders with the given IDs
       */
-    var ids: js.UndefOr[js.Array[String]] = js.native
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Only return orders that have the given status. One of "created", "paid", "fulfilled", or "refunded".
       */
-    var status: OrderStatus = js.native
+    var status: OrderStatus
     
     /**
       * Filter orders based on when they were "paid", "fulfilled", "canceled", or "returned"
       */
-    var status_transitions: js.UndefOr[Fulfilled] = js.native
+    var status_transitions: js.UndefOr[Fulfilled] = js.undefined
   }
   object IOrderListOptions {
     
@@ -520,29 +520,30 @@ object orders {
     }
   }
   
-  @js.native
-  trait IOrderPayOptions extends IDataOptionsWithMetadata {
+  trait IOrderPayOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A fee in cents/pence that will be applied to the order and transferred to the application owner's Stripe account. To use an application
       * fee, the request must be made on behalf of another account, using the Stripe-Account header or OAuth key. For more information, see
       * the application fees documentation.
       */
-    var application_fee: js.UndefOr[Double] = js.native
+    var application_fee: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of an existing customer that will be charged in this request.
       *
       * Either customer or source is required
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * The email address of the customer placing the order. If a customer is specified, that customer's email address will be used.
       *
       * Optional, but required if not previously specified.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * A payment source to be charged, such as a credit card. If you also pass a customer ID, the source must be the ID of a source belonging
@@ -552,7 +553,7 @@ object orders {
       *
       * Either source or customer is required
       */
-    var source: js.UndefOr[String | ICardSourceCreationOptions] = js.native
+    var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   }
   object IOrderPayOptions {
     
@@ -591,21 +592,22 @@ object orders {
     }
   }
   
-  @js.native
-  trait IOrderUpdateOptions extends IDataOptionsWithMetadata {
+  trait IOrderUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A coupon code that represents a discount to be applied to this order. Must be one-time duration and in same currency as the order.
       */
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
     /**
       * The shipping method to select for fulfilling this order. If specified, must be one of the ids of a shipping method in the
       * shipping_methods array. If specified, will overwrite the existing selected shipping method, updating items as necessary.
       */
-    var selected_shipping_method: js.UndefOr[String] = js.native
+    var selected_shipping_method: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[OrderStatus] = js.native
+    var status: js.UndefOr[OrderStatus] = js.undefined
   }
   object IOrderUpdateOptions {
     
@@ -638,31 +640,30 @@ object orders {
     }
   }
   
-  @js.native
   trait IShippingMethod extends StObject {
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00, or 1 for ¥1, Japanese Yen being a 0-decimal currency)
       * representing the total amount for the line item.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * 3-letter ISO code representing the currency of the line item.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The estimated delivery date for the given shipping method. Can be either a specific date or a range.
       */
-    var delivery_estimate: Earliest = js.native
+    var delivery_estimate: Earliest
     
     /**
       * Description of the line item, meant to be displayable to the user (e.g., "Express shipping").
       */
-    var description: String = js.native
+    var description: String
     
-    var id: String = js.native
+    var id: String
   }
   object IShippingMethod {
     

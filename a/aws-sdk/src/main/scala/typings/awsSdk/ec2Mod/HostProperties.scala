@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostProperties extends StObject {
   
   /**
     * The number of cores on the Dedicated Host.
     */
-  var Cores: js.UndefOr[Integer] = js.native
+  var Cores: js.UndefOr[Integer] = js.undefined
   
   /**
     * The instance family supported by the Dedicated Host. For example, m5.
     */
-  var InstanceFamily: js.UndefOr[String] = js.native
+  var InstanceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type supported by the Dedicated Host. For example, m5.large. If the host supports multiple instance types, no instanceType is returned.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of sockets on the Dedicated Host.
     */
-  var Sockets: js.UndefOr[Integer] = js.native
+  var Sockets: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of vCPUs on the Dedicated Host.
     */
-  var TotalVCpus: js.UndefOr[Integer] = js.native
+  var TotalVCpus: js.UndefOr[Integer] = js.undefined
 }
 object HostProperties {
   

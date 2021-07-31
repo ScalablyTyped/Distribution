@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResult extends StObject {
   
   /**
     * A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the
     * user interacts with this item to improve the quality of results.
     */
-  var onClickTelemetryUrl: js.UndefOr[NullableOption[String]] = js.native
+  var onClickTelemetryUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SearchResult {
   

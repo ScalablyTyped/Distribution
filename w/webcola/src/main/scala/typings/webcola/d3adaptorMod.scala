@@ -6,25 +6,24 @@ import typings.webcola.layoutMod.EventType
 import typings.webcola.layoutMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3adaptorMod {
   
-  @JSImport("webcola/dist/src/d3adaptor", "d3adaptor")
+  @JSImport("webcola/dist/src/d3adaptor", JSImport.Namespace)
   @js.native
-  def d3adaptor(): Layout with ID3StyleLayoutAdaptor = js.native
-  @JSImport("webcola/dist/src/d3adaptor", "d3adaptor")
-  @js.native
-  def d3adaptor(d3Context: D3v3Context): Layout with ID3StyleLayoutAdaptor = js.native
-  @JSImport("webcola/dist/src/d3adaptor", "d3adaptor")
-  @js.native
-  def d3adaptor(d3Context: D3Context): Layout with ID3StyleLayoutAdaptor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def d3adaptor(): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  @scala.inline
+  def d3adaptor(d3Context: D3v3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  @scala.inline
+  def d3adaptor(d3Context: D3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  
   trait D3v3Context extends StObject {
     
-    var version: String = js.native
+    var version: String
   }
   object D3v3Context {
     

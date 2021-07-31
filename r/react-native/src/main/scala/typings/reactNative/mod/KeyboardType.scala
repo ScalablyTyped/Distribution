@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.`number-pad`
   - typings.reactNative.reactNativeStrings.`decimal-pad`
 */
-trait KeyboardType extends _KeyboardTypeOptions
+trait KeyboardType
+  extends StObject
+     with _KeyboardTypeOptions
 object KeyboardType {
   
   @scala.inline

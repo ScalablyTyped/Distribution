@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * those filtered due to the requested filtering reason (i.e. creative
   * status), that have the specified detail.
   */
-@js.native
 trait SchemaFilteredBidDetailRow extends StObject {
   
   /**
     * The number of bids with the specified detail.
     */
-  var bidCount: js.UndefOr[SchemaMetricValue] = js.native
+  var bidCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The ID of the detail. The associated value can be looked up in the
     * dictionary file corresponding to the DetailType in the response message.
     */
-  var detailId: js.UndefOr[Double] = js.native
+  var detailId: js.UndefOr[Double] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
 }
 object SchemaFilteredBidDetailRow {
   

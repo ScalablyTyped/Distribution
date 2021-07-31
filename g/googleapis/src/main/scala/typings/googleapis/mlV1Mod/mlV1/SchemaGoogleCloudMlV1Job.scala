@@ -3,29 +3,27 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a training, prediction or explanation job.
   */
-@js.native
 trait SchemaGoogleCloudMlV1Job extends StObject {
   
   /**
     * Output only. When the job was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. When the job processing was completed.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The details of a failure or a cancellation.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help
@@ -36,12 +34,12 @@ trait SchemaGoogleCloudMlV1Job extends StObject {
     * systems are expected to put that etag in the request to `UpdateJob` to
     * ensure that their change will be applied to the same version of the job.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The user-specified id of the job.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. One or more labels that you can add, to organize your jobs.
@@ -51,37 +49,37 @@ trait SchemaGoogleCloudMlV1Job extends StObject {
     * href=&quot;/ml-engine/docs/tensorflow/resource-labels&quot;&gt;using
     * labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Input parameters to create a prediction job.
     */
-  var predictionInput: js.UndefOr[SchemaGoogleCloudMlV1PredictionInput] = js.native
+  var predictionInput: js.UndefOr[SchemaGoogleCloudMlV1PredictionInput] = js.undefined
   
   /**
     * The current prediction job result.
     */
-  var predictionOutput: js.UndefOr[SchemaGoogleCloudMlV1PredictionOutput] = js.native
+  var predictionOutput: js.UndefOr[SchemaGoogleCloudMlV1PredictionOutput] = js.undefined
   
   /**
     * Output only. When the job processing was started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The detailed state of a job.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Input parameters to create a training job.
     */
-  var trainingInput: js.UndefOr[SchemaGoogleCloudMlV1TrainingInput] = js.native
+  var trainingInput: js.UndefOr[SchemaGoogleCloudMlV1TrainingInput] = js.undefined
   
   /**
     * The current training job result.
     */
-  var trainingOutput: js.UndefOr[SchemaGoogleCloudMlV1TrainingOutput] = js.native
+  var trainingOutput: js.UndefOr[SchemaGoogleCloudMlV1TrainingOutput] = js.undefined
 }
 object SchemaGoogleCloudMlV1Job {
   

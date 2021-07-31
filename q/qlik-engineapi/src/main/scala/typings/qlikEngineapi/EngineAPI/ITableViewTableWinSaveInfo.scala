@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewTableWinSaveInfo...
   */
-@js.native
 trait ITableViewTableWinSaveInfo extends StObject {
   
   /**
     * Table name.
     */
-  var qCaption: String = js.native
+  var qCaption: String
   
   /**
     * Information about the position of the table.
     */
-  var qPos: IRect = js.native
+  var qPos: IRect
 }
 object ITableViewTableWinSaveInfo {
   

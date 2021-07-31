@@ -1,19 +1,18 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListDynamicSlotNode extends CallExpression {
+trait ListDynamicSlotNode
+  extends StObject
+     with CallExpression {
   
   @JSName("arguments")
-  var arguments_ListDynamicSlotNode: js.Tuple2[ExpressionNode, ListDynamicSlotIterator] = js.native
+  var arguments_ListDynamicSlotNode: js.Tuple2[ExpressionNode, ListDynamicSlotIterator]
   
   @JSName("callee")
-  var callee_ListDynamicSlotNode: js.Symbol = js.native
+  var callee_ListDynamicSlotNode: js.Symbol
 }
 object ListDynamicSlotNode {
   
@@ -21,11 +20,10 @@ object ListDynamicSlotNode {
   def apply(
     arguments: js.Tuple2[ExpressionNode, ListDynamicSlotIterator],
     callee: js.Symbol,
-    loc: SourceLocation,
-    `type`: `14`
+    loc: SourceLocation
   ): ListDynamicSlotNode = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(14)
     __obj.asInstanceOf[ListDynamicSlotNode]
   }
   

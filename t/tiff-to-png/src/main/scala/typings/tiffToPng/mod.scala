@@ -11,48 +11,47 @@ import typings.tiffToPng.tiffToPngStrings.jpg
 import typings.tiffToPng.tiffToPngStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tiff-to-png", JSImport.Namespace)
   @js.native
-  class ^ () extends TiffConverter {
+  class ^ ()
+    extends StObject
+       with TiffConverter {
     def this(options: Options) = this()
   }
+  @JSImport("tiff-to-png", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("tiff-to-png", "call")
-  @js.native
-  def call(command: String): js.Promise[`true`] = js.native
+  @scala.inline
+  def call(command: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
   
-  @JSImport("tiff-to-png", "count")
-  @js.native
-  def count(converted: js.Array[StringDictionary[_]], key: String, value: js.Any): Double = js.native
+  @scala.inline
+  def count(converted: js.Array[StringDictionary[js.Any]], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   /* static member */
-  @JSImport("tiff-to-png", "count")
-  @js.native
-  def count(converted: StringDictionary[js.Any], key: String, value: js.Any): Double = js.native
+  @scala.inline
+  def count(converted: StringDictionary[js.Any], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("tiff-to-png", "createDir")
-  @js.native
-  def createDir(target: String, filename: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def createDir(target: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDir")(target.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * The complete callback will be called when the conversion of the final TIFF has finished.
     */
   type CompleteCallback = js.Function2[/* errors */ js.Array[String], /* total */ js.UndefOr[Double], Unit]
   
-  @js.native
   trait ConvertResult extends StObject {
     
-    val converted: js.Array[Converted] = js.native
+    val converted: js.Array[Converted]
     
-    val errors: js.Array[TiffConverterError] = js.native
+    val errors: js.Array[TiffConverterError]
     
-    val total: Double = js.native
+    val total: Double
   }
   object ConvertResult {
     
@@ -82,16 +81,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Converted extends StObject {
     
-    val filename: String = js.native
+    val filename: String
     
-    val success: Boolean = js.native
+    val success: Boolean
     
-    val target: String = js.native
+    val target: String
     
-    val tiff: String = js.native
+    val tiff: String
   }
   object Converted {
     
@@ -118,60 +116,59 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Automatically removes all files from tmpPath prefixed with magick-*, this happens on process completion
       * @default false
       */
-    var autoRemoveTmp: js.UndefOr[Boolean] = js.native
+    var autoRemoveTmp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows the specification of the command path for use with binaries or aliased convert commands
       * @default null
       */
-    var commandPath: js.UndefOr[String] = js.native
+    var commandPath: js.UndefOr[String] = js.undefined
     
     /**
       * The level of the logs required. 0: Errors only, 1: Information
       * @default 0
       */
-    var logLevel: js.UndefOr[Double] = js.native
+    var logLevel: js.UndefOr[Double] = js.undefined
     
-    var page: js.UndefOr[A4 | A3] = js.native
+    var page: js.UndefOr[A4 | A3] = js.undefined
     
     /**
       * The string that will be prepended to the file names of the pages converted. E.g. 'page': `page1.png`
       * @default 'page'
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var saveFolder: js.UndefOr[String] = js.native
+    var saveFolder: js.UndefOr[String] = js.undefined
     
     /**
       * The image scene number
       * @default null
       */
-    var scene: js.UndefOr[`1` | `2`] = js.native
+    var scene: js.UndefOr[`1` | `2`] = js.undefined
     
     /**
       * The string that will be appended onto the end of the file names of the page converted. E.g. '_invoices': page1_invoices.png
       * @default ''
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * Overwrites the Imagemagick default tmp directory path
       * @default null
       */
-    var tmpPath: js.UndefOr[String] = js.native
+    var tmpPath: js.UndefOr[String] = js.undefined
     
     /**
       * The file type of the converted files
       * @default 'png'
       */
-    var `type`: js.UndefOr[png | jpg] = js.native
+    var `type`: js.UndefOr[png | jpg] = js.undefined
   }
   object Options {
     
@@ -251,12 +248,11 @@ object mod {
     */
   type ProgressCallback = js.Function2[/* converted */ js.Array[Converted], /* total */ Double, Unit]
   
-  @js.native
   trait SingleConvertResult extends StObject {
     
-    val converted: Converted = js.native
+    val converted: Converted
     
-    val error: TiffConverterError = js.native
+    val error: TiffConverterError
   }
   object SingleConvertResult {
     
@@ -309,16 +305,15 @@ object mod {
     def unlink(file: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait TiffConverterError extends StObject {
     
-    var error: Error = js.native
+    var error: Error
     
-    val filename: String = js.native
+    val filename: String
     
-    val target: String = js.native
+    val target: String
     
-    val tiff: String = js.native
+    val tiff: String
   }
   object TiffConverterError {
     

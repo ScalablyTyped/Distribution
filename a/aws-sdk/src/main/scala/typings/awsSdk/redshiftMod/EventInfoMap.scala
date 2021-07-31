@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventInfoMap extends StObject {
   
   /**
     * The category of an Amazon Redshift event.
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * The description of an Amazon Redshift event.
     */
-  var EventDescription: js.UndefOr[String] = js.native
+  var EventDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of an Amazon Redshift event.
     */
-  var EventId: js.UndefOr[String] = js.native
+  var EventId: js.UndefOr[String] = js.undefined
   
   /**
     * The severity of the event. Values: ERROR, INFO
     */
-  var Severity: js.UndefOr[String] = js.native
+  var Severity: js.UndefOr[String] = js.undefined
 }
 object EventInfoMap {
   

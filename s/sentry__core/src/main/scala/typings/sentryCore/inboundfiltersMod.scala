@@ -1,18 +1,21 @@
 package typings.sentryCore
 
 import typings.sentryCore.anon.PartialInboundFiltersOpti
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inboundfiltersMod {
   
   @JSImport("@sentry/core/dist/integrations/inboundfilters", "InboundFilters")
   @js.native
-  class InboundFilters () extends Integration {
+  class InboundFilters ()
+    extends StObject
+       with Integration {
     def this(_options: PartialInboundFiltersOpti) = this()
     
     /** JSDoc */
@@ -42,9 +45,24 @@ object inboundfiltersMod {
     var _shouldDropEvent: js.Any = js.native
     
     /**
+      * Returns {@link IntegrationClass.id}
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
       * @inheritDoc
       */
     def setupOnce(): Unit = js.native
+    /**
+      * Sets the integration up only once.
+      * This takes no options on purpose, options should be passed in the constructor
+      */
+    /* CompleteClass */
+    override def setupOnce(
+      addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
+      getCurrentHub: js.Function0[Hub]
+    ): Unit = js.native
   }
   /* static members */
   object InboundFilters {
@@ -64,22 +82,21 @@ object inboundfiltersMod {
   }
   
   /** JSDoc */
-  @js.native
   trait InboundFiltersOptions extends StObject {
     
-    var allowUrls: js.Array[String | RegExp] = js.native
+    var allowUrls: js.Array[String | RegExp]
     
     /** @deprecated use {@link InboundFiltersOptions.denyUrls} instead. */
-    var blacklistUrls: js.Array[String | RegExp] = js.native
+    var blacklistUrls: js.Array[String | RegExp]
     
-    var denyUrls: js.Array[String | RegExp] = js.native
+    var denyUrls: js.Array[String | RegExp]
     
-    var ignoreErrors: js.Array[String | RegExp] = js.native
+    var ignoreErrors: js.Array[String | RegExp]
     
-    var ignoreInternal: Boolean = js.native
+    var ignoreInternal: Boolean
     
     /** @deprecated use {@link InboundFiltersOptions.allowUrls} instead. */
-    var whitelistUrls: js.Array[String | RegExp] = js.native
+    var whitelistUrls: js.Array[String | RegExp]
   }
   object InboundFiltersOptions {
     

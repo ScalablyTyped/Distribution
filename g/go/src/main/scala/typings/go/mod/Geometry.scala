@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -79,9 +78,9 @@ class Geometry () extends StObject {
     * @return {Geometry} this
     */
   def rotate(angle: Double): Geometry = js.native
-  def rotate(angle: Double, x: js.UndefOr[scala.Nothing], y: Double): Geometry = js.native
   def rotate(angle: Double, x: Double): Geometry = js.native
   def rotate(angle: Double, x: Double, y: Double): Geometry = js.native
+  def rotate(angle: Double, x: Unit, y: Double): Geometry = js.native
   
   /**
     * Scales the Geometry in place by a given (x, y) scale factor
@@ -150,9 +149,8 @@ object Geometry {
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Geometry.fillPath")
-  @js.native
-  def fillPath(str: String): String = js.native
+  @scala.inline
+  def fillPath(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fillPath")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Produce a Geometry from a string that uses an SVG-like compact path geometry syntax.
@@ -164,12 +162,10 @@ object Geometry {
     * Default is false.
     */
   /* static member */
-  @JSImport("go", "Geometry.parse")
-  @js.native
-  def parse(str: String): Geometry = js.native
-  @JSImport("go", "Geometry.parse")
-  @js.native
-  def parse(str: String, filled: Boolean): Geometry = js.native
+  @scala.inline
+  def parse(str: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  @scala.inline
+  def parse(str: String, filled: Boolean): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
   /**
     * This static function can be used to write out a Geometry as a string
@@ -180,7 +176,6 @@ object Geometry {
     * @param {Geometry} val
     */
   /* static member */
-  @JSImport("go", "Geometry.stringify")
-  @js.native
-  def stringify(`val`: Geometry): String = js.native
+  @scala.inline
+  def stringify(`val`: Geometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

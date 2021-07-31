@@ -13,53 +13,43 @@ import typings.queryString.queryStringStrings.separator
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("query-string", "extract")
+  @JSImport("query-string", JSImport.Namespace)
   @js.native
-  def extract(url: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("query-string", "parse")
-  @js.native
-  def parse(query: String): ParsedQuery[String] = js.native
-  @JSImport("query-string", "parse")
-  @js.native
-  def parse(query: String, options: parseBooleanstrueParseOpt): ParsedQuery[String | Boolean] = js.native
-  @JSImport("query-string", "parse")
-  @js.native
-  def parse(query: String, options: parseBooleanstrueparseNum): ParsedQuery[String | Boolean | Double] = js.native
-  @JSImport("query-string", "parse")
-  @js.native
-  def parse(query: String, options: parseNumberstrueParseOpti): ParsedQuery[String | Double] = js.native
-  @JSImport("query-string", "parse")
-  @js.native
-  def parse(query: String, options: ParseOptions): ParsedQuery[String] = js.native
+  @scala.inline
+  def extract(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("query-string", "parseUrl")
-  @js.native
-  def parseUrl(url: String): ParsedUrl = js.native
-  @JSImport("query-string", "parseUrl")
-  @js.native
-  def parseUrl(url: String, options: ParseOptions): ParsedUrl = js.native
+  @scala.inline
+  def parse(query: String): ParsedQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[ParsedQuery[String]]
+  @scala.inline
+  def parse(query: String, options: parseBooleanstrueParseOpt): ParsedQuery[String | Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean]]
+  @scala.inline
+  def parse(query: String, options: parseBooleanstrueparseNum): ParsedQuery[String | Boolean | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean | Double]]
+  @scala.inline
+  def parse(query: String, options: parseNumberstrueParseOpti): ParsedQuery[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Double]]
+  @scala.inline
+  def parse(query: String, options: ParseOptions): ParsedQuery[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String]]
   
-  @JSImport("query-string", "stringify")
-  @js.native
-  def stringify(`object`: StringifiableRecord): String = js.native
-  @JSImport("query-string", "stringify")
-  @js.native
-  def stringify(`object`: StringifiableRecord, options: StringifyOptions): String = js.native
+  @scala.inline
+  def parseUrl(url: String): ParsedUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[ParsedUrl]
+  @scala.inline
+  def parseUrl(url: String, options: ParseOptions): ParsedUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedUrl]
   
-  @JSImport("query-string", "stringifyUrl")
-  @js.native
-  def stringifyUrl(`object`: UrlObject): String = js.native
-  @JSImport("query-string", "stringifyUrl")
-  @js.native
-  def stringifyUrl(`object`: UrlObject, options: StringifyOptions): String = js.native
+  @scala.inline
+  def stringify(`object`: StringifiableRecord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(`object`: StringifiableRecord, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def stringifyUrl(`object`: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyUrl")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringifyUrl(`object`: UrlObject, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyUrl")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ParseOptions extends StObject {
     
     /**
@@ -95,19 +85,19 @@ object mod {
     		//=> {foo: ['1', '2', '3']}
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
     	@default ,
     	*/
-    val arrayFormatSeparator: js.UndefOr[String] = js.native
+    val arrayFormatSeparator: js.UndefOr[String] = js.undefined
     
     /**
     	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
     	@default true
     	*/
-    val decode: js.UndefOr[Boolean] = js.native
+    val decode: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a boolean type instead of string type if it's a boolean.
@@ -119,7 +109,7 @@ object mod {
     	//=> {foo: true}
     	```
     	*/
-    val parseBooleans: js.UndefOr[Boolean] = js.native
+    val parseBooleans: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the fragment identifier from the URL and add it to result object.
@@ -131,7 +121,7 @@ object mod {
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
     	*/
-    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.native
+    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a number type instead of string type if it's a number.
@@ -143,7 +133,7 @@ object mod {
     	//=> {foo: 1}
     	```
     	*/
-    val parseNumbers: js.UndefOr[Boolean] = js.native
+    val parseNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Supports both `Function` as a custom sorting function or `false` to disable sorting.
@@ -165,7 +155,7 @@ object mod {
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
     	*/
-    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
+    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined
   }
   object ParseOptions {
     
@@ -227,18 +217,17 @@ object mod {
   
   type ParsedQuery[T] = StringDictionary[T | js.Array[T] | Null]
   
-  @js.native
   trait ParsedUrl extends StObject {
     
     /**
     	The fragment identifier of the URL.
     	Present when the `parseFragmentIdentifier` option is `true`.
     	*/
-    val fragmentIdentifier: js.UndefOr[String] = js.native
+    val fragmentIdentifier: js.UndefOr[String] = js.undefined
     
-    val query: ParsedQuery[String] = js.native
+    val query: ParsedQuery[String]
     
-    val url: String = js.native
+    val url: String
   }
   object ParsedUrl {
     
@@ -269,7 +258,6 @@ object mod {
   
   type StringifiableRecord = Record[String, Stringifiable | js.Array[Stringifiable]]
   
-  @js.native
   trait StringifyOptions extends StObject {
     
     /**
@@ -305,19 +293,19 @@ object mod {
     		//=> 'foo=1&foo=2&foo=3'
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
     	@default ,
     	*/
-    val arrayFormatSeparator: js.UndefOr[String] = js.native
+    val arrayFormatSeparator: js.UndefOr[String] = js.undefined
     
     /**
     	[URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
     	@default true
     	*/
-    val encode: js.UndefOr[Boolean] = js.native
+    val encode: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Skip keys with an empty string as the value.
@@ -339,7 +327,7 @@ object mod {
     	//=> ''
     	```
     	*/
-    val skipEmptyString: js.UndefOr[Boolean] = js.native
+    val skipEmptyString: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Skip keys with `null` as the value.
@@ -358,7 +346,7 @@ object mod {
     	//=> ''
     	```
     	*/
-    val skipNull: js.UndefOr[Boolean] = js.native
+    val skipNull: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Supports both `Function` as a custom sorting function or `false` to disable sorting.
@@ -380,13 +368,13 @@ object mod {
     	//=> 'b=1&c=2&a=3'
     	```
     	*/
-    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
+    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined
     
     /**
     	Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option.
     	@default true
     	*/
-    val strict: js.UndefOr[Boolean] = js.native
+    val strict: js.UndefOr[Boolean] = js.undefined
   }
   object StringifyOptions {
     
@@ -446,20 +434,19 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlObject extends StObject {
     
     /**
     	Overrides the fragment identifier in the `url` property.
     	*/
-    val fragmentIdentifier: js.UndefOr[String] = js.native
+    val fragmentIdentifier: js.UndefOr[String] = js.undefined
     
     /**
     	Overrides queries in the `url` property.
     	*/
-    val query: StringifiableRecord = js.native
+    val query: StringifiableRecord
     
-    val url: String = js.native
+    val url: String
   }
   object UrlObject {
     

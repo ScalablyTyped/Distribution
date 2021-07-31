@@ -2,25 +2,23 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top extends StObject {
   
   /**
     * 辅助框结束位置，值为原始数据值，支持 callback
     */
-  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
   /**
     * 辅助框起始位置，值为原始数据值，支持 callback
     */
-  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
 }
 object Top {
   

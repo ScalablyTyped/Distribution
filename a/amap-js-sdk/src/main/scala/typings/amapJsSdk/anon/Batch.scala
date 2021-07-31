@@ -2,19 +2,17 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Batch extends StObject {
   
-  var batch: js.UndefOr[Boolean] = js.native
+  var batch: js.UndefOr[Boolean] = js.undefined
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var extensions: js.UndefOr[String] = js.native
+  var extensions: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object Batch {
   

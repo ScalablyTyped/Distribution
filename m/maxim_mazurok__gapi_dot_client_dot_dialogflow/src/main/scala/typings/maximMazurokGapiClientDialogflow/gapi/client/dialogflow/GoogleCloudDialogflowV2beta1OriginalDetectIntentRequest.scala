@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends StObject {
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The source of this request, e.g., `google`, `facebook`, `slack`. It is set by Dialogflow-owned servers. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** Optional. The version of the protocol used for this request. This field is AoG-specific. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest {
   
@@ -42,7 +40,7 @@ object GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline

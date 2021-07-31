@@ -3,17 +3,15 @@ package typings.sequelize.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
-  var errors: js.UndefOr[js.Object] = js.native
+  var errors: js.UndefOr[js.Object] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[Error] = js.native
+  var parent: js.UndefOr[Error] = js.undefined
 }
 object Errors {
   

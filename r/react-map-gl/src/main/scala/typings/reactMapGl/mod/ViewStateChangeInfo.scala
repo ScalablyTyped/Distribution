@@ -2,13 +2,11 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewStateChangeInfo extends StObject {
   
-  var viewState: ViewportProps = js.native
+  var viewState: ViewportProps
 }
 object ViewStateChangeInfo {
   

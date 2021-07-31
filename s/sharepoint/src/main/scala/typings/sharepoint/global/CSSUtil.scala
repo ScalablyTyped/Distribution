@@ -3,53 +3,45 @@ package typings.sharepoint.global
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object CSSUtil {
   
-  @JSGlobal("CSSUtil.AddClass")
+  @JSGlobal("CSSUtil")
   @js.native
-  def AddClass(elem: HTMLElement, className: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("CSSUtil.HasClass")
-  @js.native
-  def HasClass(elem: HTMLElement, className: String): Boolean = js.native
+  @scala.inline
+  def AddClass(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddClass")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("CSSUtil.RemoveClass")
-  @js.native
-  def RemoveClass(elem: HTMLElement, className: String): Unit = js.native
+  @scala.inline
+  def HasClass(elem: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("HasClass")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("CSSUtil.getCurrentEltStyleByNames")
-  @js.native
-  def getCurrentEltStyleByNames(elem: HTMLElement, styleNames: js.Array[String]): String = js.native
+  @scala.inline
+  def RemoveClass(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveClass")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("CSSUtil.getCurrentStyle")
-  @js.native
-  def getCurrentStyle(elem: HTMLElement, cssStyle: String): String = js.native
+  @scala.inline
+  def getCurrentEltStyleByNames(elem: HTMLElement, styleNames: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentEltStyleByNames")(elem.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("CSSUtil.getCurrentStyleCorrect")
-  @js.native
-  def getCurrentStyleCorrect(element: HTMLElement, camelStyleName: String, dashStyleName: String): String = js.native
+  @scala.inline
+  def getCurrentStyle(elem: HTMLElement, cssStyle: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStyle")(elem.asInstanceOf[js.Any], cssStyle.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("CSSUtil.getOpacity")
-  @js.native
-  def getOpacity(element: HTMLElement): Double = js.native
+  @scala.inline
+  def getCurrentStyleCorrect(element: HTMLElement, camelStyleName: String, dashStyleName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStyleCorrect")(element.asInstanceOf[js.Any], camelStyleName.asInstanceOf[js.Any], dashStyleName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("CSSUtil.numToPx")
-  @js.native
-  def numToPx(n: Double): String = js.native
+  @scala.inline
+  def getOpacity(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpacity")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("CSSUtil.pxToFloat")
-  @js.native
-  def pxToFloat(pxString: String): Double = js.native
+  @scala.inline
+  def numToPx(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numToPx")(n.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("CSSUtil.pxToNum")
-  @js.native
-  def pxToNum(px: String): Double = js.native
+  @scala.inline
+  def pxToFloat(pxString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pxToFloat")(pxString.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("CSSUtil.setOpacity")
-  @js.native
-  def setOpacity(element: HTMLElement, value: Double): Unit = js.native
+  @scala.inline
+  def pxToNum(px: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pxToNum")(px.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def setOpacity(element: HTMLElement, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOpacity")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

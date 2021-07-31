@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `704` extends StObject {
   
-  var parameters: RequestParameters with (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[GitGetCommitResponseData] = js.native
+  var response: OctokitResponse[GitGetCommitResponseData]
 }
 object `704` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[GitGetCommitResponseData]
   ): `704` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -35,7 +33,7 @@ object `704` {
   implicit class `704MutableBuilder`[Self <: `704`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setParameters(value: RequestParameters with (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponse(value: OctokitResponse[GitGetCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])

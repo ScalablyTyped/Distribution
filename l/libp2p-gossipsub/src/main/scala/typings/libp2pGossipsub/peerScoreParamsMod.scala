@@ -6,24 +6,23 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerScoreParamsMod {
   
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "createPeerScoreParams")
+  @JSImport("libp2p-gossipsub/src/score/peer-score-params", JSImport.Namespace)
   @js.native
-  def createPeerScoreParams(): PeerScoreParams = js.native
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "createPeerScoreParams")
-  @js.native
-  def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "createTopicScoreParams")
-  @js.native
-  def createTopicScoreParams(): TopicScoreParams = js.native
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "createTopicScoreParams")
-  @js.native
-  def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = js.native
+  @scala.inline
+  def createPeerScoreParams(): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")().asInstanceOf[PeerScoreParams]
+  @scala.inline
+  def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreParams]
+  
+  @scala.inline
+  def createTopicScoreParams(): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")().asInstanceOf[TopicScoreParams]
+  @scala.inline
+  def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[TopicScoreParams]
   
   @JSImport("libp2p-gossipsub/src/score/peer-score-params", "defaultPeerScoreParams")
   @js.native
@@ -33,18 +32,15 @@ object peerScoreParamsMod {
   @js.native
   val defaultTopicScoreParams: TopicScoreParams = js.native
   
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "validatePeerScoreParams")
-  @js.native
-  def validatePeerScoreParams(p: PeerScoreParams): Unit = js.native
+  @scala.inline
+  def validatePeerScoreParams(p: PeerScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-gossipsub/src/score/peer-score-params", "validateTopicScoreParams")
-  @js.native
-  def validateTopicScoreParams(p: TopicScoreParams): Unit = js.native
+  @scala.inline
+  def validateTopicScoreParams(p: TopicScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait PeerScoreParams extends StObject {
     
-    var IPColocationFactorThreshold: Double = js.native
+    var IPColocationFactorThreshold: Double
     
     /**
       * P6: IP-colocation factor.
@@ -56,18 +52,18 @@ object peerScoreParamsMod {
       * Note: In order to simulate many IPs in a managable manner when testing, you can set the weight to 0
       *       thus disabling the IP colocation penalty.
       */
-    var IPColocationFactorWeight: Double = js.native
+    var IPColocationFactorWeight: Double
     
-    var IPColocationFactorWhitelist: Set[String] = js.native
+    var IPColocationFactorWhitelist: Set[String]
     
     /**
       * P5: Application-specific peer scoring
       */
-    def appSpecificScore(p: String): Double = js.native
+    def appSpecificScore(p: String): Double
     
-    var appSpecificWeight: Double = js.native
+    var appSpecificWeight: Double
     
-    var behaviourPenaltyDecay: Double = js.native
+    var behaviourPenaltyDecay: Double
     
     /**
       * P7: behavioural pattern penalties.
@@ -79,33 +75,33 @@ object peerScoreParamsMod {
       * The value of the parameter is the square of the counter, which decays with  BehaviourPenaltyDecay.
       * The weight of the parameter MUST be negative (or zero to disable).
       */
-    var behaviourPenaltyWeight: Double = js.native
+    var behaviourPenaltyWeight: Double
     
     /**
       * the decay interval for parameter counters.
       */
-    var decayInterval: Double = js.native
+    var decayInterval: Double
     
     /**
       * counter value below which it is considered 0.
       */
-    var decayToZero: Double = js.native
+    var decayToZero: Double
     
     /**
       * time to remember counters for a disconnected peer.
       */
-    var retainScore: Double = js.native
+    var retainScore: Double
     
     /**
       * Aggregate topic score cap; this limits the total contribution of topics towards a positive
       * score. It must be positive (or 0 for no cap).
       */
-    var topicScoreCap: Double = js.native
+    var topicScoreCap: Double
     
     /**
       * Score parameters per topic.
       */
-    var topics: Record[String, TopicScoreParams] = js.native
+    var topics: Record[String, TopicScoreParams]
   }
   object PeerScoreParams {
     
@@ -169,12 +165,11 @@ object peerScoreParamsMod {
     }
   }
   
-  @js.native
   trait TopicScoreParams extends StObject {
     
-    var firstMessageDeliveriesCap: Double = js.native
+    var firstMessageDeliveriesCap: Double
     
-    var firstMessageDeliveriesDecay: Double = js.native
+    var firstMessageDeliveriesDecay: Double
     
     /**
       * P2: first message deliveries
@@ -183,9 +178,9 @@ object peerScoreParamsMod {
       * by FirstMessageDeliveriesCap.
       * The weight of the parameter MUST be positive (or zero to disable).
       */
-    var firstMessageDeliveriesWeight: Double = js.native
+    var firstMessageDeliveriesWeight: Double
     
-    var invalidMessageDeliveriesDecay: Double = js.native
+    var invalidMessageDeliveriesDecay: Double
     
     /**
       * P4: invalid messages
@@ -194,9 +189,9 @@ object peerScoreParamsMod {
       * InvalidMessageDeliveriesDecay.
       * The weight of the parameter MUST be negative (or zero to disable).
       */
-    var invalidMessageDeliveriesWeight: Double = js.native
+    var invalidMessageDeliveriesWeight: Double
     
-    var meshFailurePenaltyDecay: Double = js.native
+    var meshFailurePenaltyDecay: Double
     
     /**
       * P3b: sticky mesh propagation failures
@@ -204,15 +199,15 @@ object peerScoreParamsMod {
       * mesh message delivery penalty.
       * The weight of the parameter MUST be negative (or zero to disable)
       */
-    var meshFailurePenaltyWeight: Double = js.native
+    var meshFailurePenaltyWeight: Double
     
-    var meshMessageDeliveriesActivation: Double = js.native
+    var meshMessageDeliveriesActivation: Double
     
-    var meshMessageDeliveriesCap: Double = js.native
+    var meshMessageDeliveriesCap: Double
     
-    var meshMessageDeliveriesDecay: Double = js.native
+    var meshMessageDeliveriesDecay: Double
     
-    var meshMessageDeliveriesThreshold: Double = js.native
+    var meshMessageDeliveriesThreshold: Double
     
     /**
       * P3: mesh message deliveries
@@ -230,13 +225,13 @@ object peerScoreParamsMod {
       * The penalty is only activated after MeshMessageDeliveriesActivation time in the mesh.
       * The weight of the parameter MUST be negative (or zero to disable).
       */
-    var meshMessageDeliveriesWeight: Double = js.native
+    var meshMessageDeliveriesWeight: Double
     
-    var meshMessageDeliveriesWindow: Double = js.native
+    var meshMessageDeliveriesWindow: Double
     
-    var timeInMeshCap: Double = js.native
+    var timeInMeshCap: Double
     
-    var timeInMeshQuantum: Double = js.native
+    var timeInMeshQuantum: Double
     
     /**
       * P1: time in the mesh
@@ -244,12 +239,12 @@ object peerScoreParamsMod {
       * The value of the parameter is the time/TimeInMeshQuantum, capped by TimeInMeshCap
       * The weight of the parameter MUST be positive (or zero to disable).
       */
-    var timeInMeshWeight: Double = js.native
+    var timeInMeshWeight: Double
     
     /**
       * The weight of the topic.
       */
-    var topicWeight: Double = js.native
+    var topicWeight: Double
   }
   object TopicScoreParams {
     

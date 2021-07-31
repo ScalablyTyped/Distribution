@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TwoInitialCapsExceptions extends StObject {
   
-  def Add(Name: String): TwoInitialCapsException = js.native
+  def Add(Name: String): TwoInitialCapsException
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): TwoInitialCapsException = js.native
+  def Item(Index: js.Any): TwoInitialCapsException
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.TwoInitialCapsExceptions_typekey")
-  var WordDotTwoInitialCapsExceptions_typekey: TwoInitialCapsExceptions = js.native
+  var WordDotTwoInitialCapsExceptions_typekey: TwoInitialCapsExceptions
 }
 object TwoInitialCapsExceptions {
   

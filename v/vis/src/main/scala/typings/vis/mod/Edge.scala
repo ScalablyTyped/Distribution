@@ -2,17 +2,17 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Edge extends EdgeOptions {
+trait Edge
+  extends StObject
+     with EdgeOptions {
   
-  var from: js.UndefOr[IdType] = js.native
+  var from: js.UndefOr[IdType] = js.undefined
   
-  var id: js.UndefOr[IdType] = js.native
+  var id: js.UndefOr[IdType] = js.undefined
   
-  var to: js.UndefOr[IdType] = js.native
+  var to: js.UndefOr[IdType] = js.undefined
 }
 object Edge {
   

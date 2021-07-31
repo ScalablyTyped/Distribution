@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachePolicyList extends StObject {
   
   /**
     * Contains the cache policies in the list.
     */
-  var Items: js.UndefOr[CachePolicySummaryList] = js.native
+  var Items: js.UndefOr[CachePolicySummaryList] = js.undefined
   
   /**
     * The maximum number of cache policies requested.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If there are more items in the list than are in this response, this element is present. It contains the value that you should use in the Marker field of a subsequent request to continue listing cache policies where you left off.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of cache policies returned in the response.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object CachePolicyList {
   

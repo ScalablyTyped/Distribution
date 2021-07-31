@@ -4,15 +4,13 @@ import typings.playable.playerFactoryMod.IPlayerInstance
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Player extends StObject {
   
-  var player: IPlayerInstance = js.native
+  var player: IPlayerInstance
   
-  var storyContainer: HTMLDivElement = js.native
+  var storyContainer: HTMLDivElement
 }
 object Player {
   

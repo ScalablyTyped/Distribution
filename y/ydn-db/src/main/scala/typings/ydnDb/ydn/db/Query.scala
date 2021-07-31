@@ -2,7 +2,6 @@ package typings.ydnDb.ydn.db
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,7 +21,7 @@ trait Query extends StObject {
   
   def patch(Object: js.Any): Request = js.native
   def patch(field_name: String, value: js.Any): Request = js.native
-  def patch(field_names: js.Array[String], value: js.Array[_]): Request = js.native
+  def patch(field_names: js.Array[String], value: js.Array[js.Any]): Request = js.native
   
   def reverse(): Query = js.native
   

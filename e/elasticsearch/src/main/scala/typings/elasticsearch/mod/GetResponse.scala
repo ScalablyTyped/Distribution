@@ -2,25 +2,23 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResponse[T] extends StObject {
   
-  var _id: String = js.native
+  var _id: String
   
-  var _index: String = js.native
+  var _index: String
   
-  var _routing: js.UndefOr[String] = js.native
+  var _routing: js.UndefOr[String] = js.undefined
   
-  var _source: T = js.native
+  var _source: T
   
-  var _type: String = js.native
+  var _type: String
   
-  var _version: Double = js.native
+  var _version: Double
   
-  var found: Boolean = js.native
+  var found: Boolean
 }
 object GetResponse {
   
@@ -31,7 +29,7 @@ object GetResponse {
   }
   
   @scala.inline
-  implicit class GetResponseMutableBuilder[Self <: GetResponse[_], T] (val x: Self with GetResponse[T]) extends AnyVal {
+  implicit class GetResponseMutableBuilder[Self <: GetResponse[?], T] (val x: Self & GetResponse[T]) extends AnyVal {
     
     @scala.inline
     def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])

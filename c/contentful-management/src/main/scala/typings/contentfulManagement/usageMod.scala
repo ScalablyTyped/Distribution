@@ -10,22 +10,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.QueryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usageMod {
   
-  @JSImport("contentful-management/dist/typings/entities/usage", "wrapUsage")
+  @JSImport("contentful-management/dist/typings/entities/usage", JSImport.Namespace)
   @js.native
-  def wrapUsage(http: AxiosInstance, data: UsageProps): Usage = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/usage", "wrapUsageCollection")
-  @js.native
-  def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps] = js.native
+  @scala.inline
+  def wrapUsage(http: AxiosInstance, data: UsageProps): Usage = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsage")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Usage]
   
-  @js.native
+  @scala.inline
+  def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsageCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Usage, UsageProps]]
+  
   trait Usage
-    extends UsageProps
+    extends StObject
+       with UsageProps
        with DefaultElements[UsageProps]
   object Usage {
     
@@ -66,38 +67,37 @@ object usageMod {
     def gql: typings.contentfulManagement.contentfulManagementStrings.gql = "gql".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.gql]
   }
   
-  @js.native
   trait UsageProps extends StObject {
     
     /**
       * Range of usage
       */
-    var dateRange: EndAt = js.native
+    var dateRange: EndAt
     
     /**
       * Type of usage
       */
-    var metric: UsageMetricEnum = js.native
+    var metric: UsageMetricEnum
     
     /**
       * System metadata
       */
-    var sys: MetaSysPropsorganizations = js.native
+    var sys: MetaSysPropsorganizations
     
     /**
       * Unit of usage metric
       */
-    var unitOfMeasure: String = js.native
+    var unitOfMeasure: String
     
     /**
       * Value of the usage
       */
-    var usage: Double = js.native
+    var usage: Double
     
     /**
       * Usage per day
       */
-    var usagePerDay: StringDictionary[Double] = js.native
+    var usagePerDay: StringDictionary[Double]
   }
   object UsageProps {
     
@@ -137,16 +137,17 @@ object usageMod {
     }
   }
   
-  @js.native
-  trait UsageQuery extends QueryOptions {
+  trait UsageQuery
+    extends StObject
+       with QueryOptions {
     
     @JSName("dateRange.endAt")
-    var dateRangeDotendAt: js.UndefOr[String] = js.native
+    var dateRangeDotendAt: js.UndefOr[String] = js.undefined
     
     @JSName("dateRange.startAt")
-    var dateRangeDotstartAt: js.UndefOr[String] = js.native
+    var dateRangeDotstartAt: js.UndefOr[String] = js.undefined
     
-    var `metric[in]`: js.UndefOr[String] = js.native
+    var `metric[in]`: js.UndefOr[String] = js.undefined
   }
   object UsageQuery {
     

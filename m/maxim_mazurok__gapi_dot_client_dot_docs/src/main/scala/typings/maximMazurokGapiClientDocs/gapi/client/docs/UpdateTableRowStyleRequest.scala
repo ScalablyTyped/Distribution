@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableRowStyleRequest extends StObject {
   
   /**
     * The fields that should be updated. At least one field must be specified. The root `tableRowStyle` is implied and should not be specified. A single `"*"` can be used as short-hand
     * for listing every field. For example to update the minimum row height, set `fields` to `"min_row_height"`.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The list of zero-based row indices whose style should be updated. If no indices are specified, all rows will be updated. */
-  var rowIndices: js.UndefOr[js.Array[Double]] = js.native
+  var rowIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The styles to be set on the rows. */
-  var tableRowStyle: js.UndefOr[TableRowStyle] = js.native
+  var tableRowStyle: js.UndefOr[TableRowStyle] = js.undefined
   
   /** The location where the table starts in the document. */
-  var tableStartLocation: js.UndefOr[Location] = js.native
+  var tableStartLocation: js.UndefOr[Location] = js.undefined
 }
 object UpdateTableRowStyleRequest {
   

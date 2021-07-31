@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.MessageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkingTypesMod {
   
-  @js.native
   trait EventType extends StObject {
     
-    var nativeEvent: js.UndefOr[MessageEvent[_]] = js.native
+    var nativeEvent: js.UndefOr[MessageEvent[js.Any]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object EventType {
     
@@ -28,7 +26,7 @@ object linkingTypesMod {
     implicit class EventTypeMutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNativeEvent(value: MessageEvent[_]): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      def setNativeEvent(value: MessageEvent[js.Any]): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNativeEventUndefined: Self = StObject.set(x, "nativeEvent", js.undefined)
@@ -40,22 +38,21 @@ object linkingTypesMod {
   
   type NativeURLListener = js.Function1[/* nativeEvent */ MessageEvent[js.Any], Unit]
   
-  @js.native
   trait ParsedURL extends StObject {
     
-    var hostname: String | Null = js.native
+    var hostname: String | Null
     
-    var path: String | Null = js.native
+    var path: String | Null
     
-    var queryParams: QueryParams | Null = js.native
+    var queryParams: QueryParams | Null
     
-    var scheme: String | Null = js.native
+    var scheme: String | Null
   }
   object ParsedURL {
     
     @scala.inline
     def apply(): ParsedURL = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(hostname = null, path = null, queryParams = null, scheme = null)
       __obj.asInstanceOf[ParsedURL]
     }
     

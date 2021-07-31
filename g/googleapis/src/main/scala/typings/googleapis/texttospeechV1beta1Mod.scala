@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object texttospeechV1beta1Mod {
@@ -42,7 +41,7 @@ object texttospeechV1beta1Mod {
         */
       def synthesize(): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
       def synthesize(callback: BodyResponseCallback[SchemaSynthesizeSpeechResponse]): Unit = js.native
-      def synthesize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
+      def synthesize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
       def synthesize(params: ParamsResourceTextSynthesize): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
       def synthesize(
         params: ParamsResourceTextSynthesize,
@@ -82,7 +81,7 @@ object texttospeechV1beta1Mod {
         */
       def list(): GaxiosPromise[SchemaListVoicesResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaListVoicesResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVoicesResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListVoicesResponse] = js.native
       def list(params: ParamsResourceVoicesList): GaxiosPromise[SchemaListVoicesResponse] = js.native
       def list(params: ParamsResourceVoicesList, callback: BodyResponseCallback[SchemaListVoicesResponse]): Unit = js.native
       def list(
@@ -127,16 +126,17 @@ object texttospeechV1beta1Mod {
       var voices: ResourceVoices = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1beta1 = js.native
+      var version: v1beta1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1beta1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1beta1")
         __obj.asInstanceOf[Options]
       }
       
@@ -148,18 +148,19 @@ object texttospeechV1beta1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceTextSynthesize extends StandardParameters {
+    trait ParamsResourceTextSynthesize
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaSynthesizeSpeechRequest] = js.native
+      var requestBody: js.UndefOr[SchemaSynthesizeSpeechRequest] = js.undefined
     }
     object ParamsResourceTextSynthesize {
       
@@ -186,13 +187,14 @@ object texttospeechV1beta1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceVoicesList extends StandardParameters {
+    trait ParamsResourceVoicesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Optional (but recommended)
@@ -204,7 +206,7 @@ object texttospeechV1beta1Mod {
         * will also get supported "cmn-*" voices; specifying "zh-hk" will also get
         * supported "yue-*" voices.
         */
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceVoicesList {
       
@@ -234,13 +236,12 @@ object texttospeechV1beta1Mod {
     /**
       * Description of audio data to be synthesized.
       */
-    @js.native
     trait SchemaAudioConfig extends StObject {
       
       /**
         * Required. The format of the requested audio byte stream.
         */
-      var audioEncoding: js.UndefOr[String] = js.native
+      var audioEncoding: js.UndefOr[String] = js.undefined
       
       /**
         * An identifier which selects &#39;audio effects&#39; profiles that are
@@ -249,14 +250,14 @@ object texttospeechV1beta1Mod {
         * //cloud.google.com/text-to-speech/docs/audio-profiles) for current
         * supported profile ids.
         */
-      var effectsProfileId: js.UndefOr[js.Array[String]] = js.native
+      var effectsProfileId: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Optional speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20
         * semitones from the original pitch. -20 means decrease 20 semitones from
         * the original pitch.
         */
-      var pitch: js.UndefOr[Double] = js.native
+      var pitch: js.UndefOr[Double] = js.undefined
       
       /**
         * The synthesis sample rate (in hertz) for this audio. Optional.  If this
@@ -266,7 +267,7 @@ object texttospeechV1beta1Mod {
         * sample rate is not supported for the encoding chosen, in which case it
         * will fail the request and return google.rpc.Code.INVALID_ARGUMENT.
         */
-      var sampleRateHertz: js.UndefOr[Double] = js.native
+      var sampleRateHertz: js.UndefOr[Double] = js.undefined
       
       /**
         * Optional speaking rate/speed, in the range [0.25, 4.0]. 1.0 is the normal
@@ -274,7 +275,7 @@ object texttospeechV1beta1Mod {
         * 0.5 is half as fast. If unset(0.0), defaults to the native 1.0 speed. Any
         * other values &lt; 0.25 or &gt; 4.0 will return an error.
         */
-      var speakingRate: js.UndefOr[Double] = js.native
+      var speakingRate: js.UndefOr[Double] = js.undefined
       
       /**
         * Optional volume gain (in dB) of the normal native volume supported by the
@@ -286,7 +287,7 @@ object texttospeechV1beta1Mod {
         * not to exceed +10 (dB) as there&#39;s usually no effective increase in
         * loudness for any value greater than that.
         */
-      var volumeGainDb: js.UndefOr[Double] = js.native
+      var volumeGainDb: js.UndefOr[Double] = js.undefined
     }
     object SchemaAudioConfig {
       
@@ -343,13 +344,12 @@ object texttospeechV1beta1Mod {
     /**
       * The message returned to the client by the `ListVoices` method.
       */
-    @js.native
     trait SchemaListVoicesResponse extends StObject {
       
       /**
         * The list of voices.
         */
-      var voices: js.UndefOr[js.Array[SchemaVoice]] = js.native
+      var voices: js.UndefOr[js.Array[SchemaVoice]] = js.undefined
     }
     object SchemaListVoicesResponse {
       
@@ -379,7 +379,6 @@ object texttospeechV1beta1Mod {
       * google.rpc.Code.INVALID_ARGUMENT. The input size is limited to 5000
       * characters.
       */
-    @js.native
     trait SchemaSynthesisInput extends StObject {
       
       /**
@@ -388,12 +387,12 @@ object texttospeechV1beta1Mod {
         * google.rpc.Code.INVALID_ARGUMENT. For more information, see
         * [SSML](/speech/text-to-speech/docs/ssml).
         */
-      var ssml: js.UndefOr[String] = js.native
+      var ssml: js.UndefOr[String] = js.undefined
       
       /**
         * The raw text to be synthesized.
         */
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object SchemaSynthesisInput {
       
@@ -423,23 +422,22 @@ object texttospeechV1beta1Mod {
     /**
       * The top-level message sent by the client for the `SynthesizeSpeech` method.
       */
-    @js.native
     trait SchemaSynthesizeSpeechRequest extends StObject {
       
       /**
         * Required. The configuration of the synthesized audio.
         */
-      var audioConfig: js.UndefOr[SchemaAudioConfig] = js.native
+      var audioConfig: js.UndefOr[SchemaAudioConfig] = js.undefined
       
       /**
         * Required. The Synthesizer requires either plain text or SSML as input.
         */
-      var input: js.UndefOr[SchemaSynthesisInput] = js.native
+      var input: js.UndefOr[SchemaSynthesisInput] = js.undefined
       
       /**
         * Required. The desired voice of the synthesized audio.
         */
-      var voice: js.UndefOr[SchemaVoiceSelectionParams] = js.native
+      var voice: js.UndefOr[SchemaVoiceSelectionParams] = js.undefined
     }
     object SchemaSynthesizeSpeechRequest {
       
@@ -475,7 +473,6 @@ object texttospeechV1beta1Mod {
     /**
       * The message returned to the client by the `SynthesizeSpeech` method.
       */
-    @js.native
     trait SchemaSynthesizeSpeechResponse extends StObject {
       
       /**
@@ -484,7 +481,7 @@ object texttospeechV1beta1Mod {
         * bytes fields, protobuffers use a pure binary representation, whereas JSON
         * representations use base64.
         */
-      var audioContent: js.UndefOr[String] = js.native
+      var audioContent: js.UndefOr[String] = js.undefined
     }
     object SchemaSynthesizeSpeechResponse {
       
@@ -508,7 +505,6 @@ object texttospeechV1beta1Mod {
     /**
       * Description of a voice supported by the TTS service.
       */
-    @js.native
     trait SchemaVoice extends StObject {
       
       /**
@@ -516,22 +512,22 @@ object texttospeechV1beta1Mod {
         * [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tags
         * (e.g. &quot;en-US&quot;, &quot;es-419&quot;, &quot;cmn-tw&quot;).
         */
-      var languageCodes: js.UndefOr[js.Array[String]] = js.native
+      var languageCodes: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The name of this voice.  Each distinct voice has a unique name.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The natural sample rate (in hertz) for this voice.
         */
-      var naturalSampleRateHertz: js.UndefOr[Double] = js.native
+      var naturalSampleRateHertz: js.UndefOr[Double] = js.undefined
       
       /**
         * The gender of this voice.
         */
-      var ssmlGender: js.UndefOr[String] = js.native
+      var ssmlGender: js.UndefOr[String] = js.undefined
     }
     object SchemaVoice {
       
@@ -576,7 +572,6 @@ object texttospeechV1beta1Mod {
     /**
       * Description of which voice to use for a synthesis request.
       */
-    @js.native
     trait SchemaVoiceSelectionParams extends StObject {
       
       /**
@@ -593,13 +588,13 @@ object texttospeechV1beta1Mod {
         * &quot;nb&quot; (Norwegian Bokmal) instead of &quot;no&quot;
         * (Norwegian)&quot;.
         */
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the voice. Optional; if not set, the service will choose a
         * voice based on the other parameters such as language_code and gender.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The preferred gender of the voice. Optional; if not set, the service will
@@ -609,7 +604,7 @@ object texttospeechV1beta1Mod {
         * substitute a voice with a different gender rather than failing the
         * request.
         */
-      var ssmlGender: js.UndefOr[String] = js.native
+      var ssmlGender: js.UndefOr[String] = js.undefined
     }
     object SchemaVoiceSelectionParams {
       
@@ -642,68 +637,67 @@ object texttospeechV1beta1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

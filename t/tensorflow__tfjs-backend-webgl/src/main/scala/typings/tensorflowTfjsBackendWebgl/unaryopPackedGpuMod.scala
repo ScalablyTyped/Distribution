@@ -3,7 +3,6 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unaryopPackedGpuMod {
@@ -30,13 +29,24 @@ object unaryopPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_packed_gpu", "UnaryOpPackedProgram")
   @js.native
-  class UnaryOpPackedProgram protected () extends GPGPUProgram {
+  class UnaryOpPackedProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(aShape: js.Array[Double], opSnippet: String) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
     
     @JSName("packedInputs")
     var packedInputs_UnaryOpPackedProgram: Boolean = js.native
     
     @JSName("packedOutput")
     var packedOutput_UnaryOpPackedProgram: Boolean = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
 }

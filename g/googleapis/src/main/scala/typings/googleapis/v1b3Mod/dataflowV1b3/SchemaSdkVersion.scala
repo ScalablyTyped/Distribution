@@ -2,29 +2,27 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The version of the SDK used to run the job.
   */
-@js.native
 trait SchemaSdkVersion extends StObject {
   
   /**
     * The support status for this SDK version.
     */
-  var sdkSupportStatus: js.UndefOr[String] = js.native
+  var sdkSupportStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the SDK used to run the job.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * A readable string describing the version of the SDK.
     */
-  var versionDisplayName: js.UndefOr[String] = js.native
+  var versionDisplayName: js.UndefOr[String] = js.undefined
 }
 object SchemaSdkVersion {
   

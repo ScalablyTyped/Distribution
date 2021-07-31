@@ -2,21 +2,19 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMenuItemDefinition extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var group: String = js.native
+  var group: String
   
-  var icon: String = js.native
+  var icon: String
   
-  var label: String = js.native
+  var label: String
   
-  var order: Double = js.native
+  var order: Double
 }
 object IMenuItemDefinition {
   

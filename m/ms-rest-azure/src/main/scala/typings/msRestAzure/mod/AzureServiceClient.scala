@@ -7,7 +7,6 @@ import typings.msRest.mod.ServiceClient
 import typings.msRest.mod.ServiceClientCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "AzureServiceClient")

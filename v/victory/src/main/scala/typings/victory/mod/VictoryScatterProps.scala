@@ -5,26 +5,25 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryScatterProps
-  extends VictoryMultiLabeableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictoryMultiLabeableProps {
   
   /**
     * The bubbleProperty prop indicates which property of the data object should be used
     * to scale data points in a bubble chart
     */
-  var bubbleProperty: js.UndefOr[String] = js.native
+  var bubbleProperty: js.UndefOr[String] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -68,23 +67,23 @@ trait VictoryScatterProps
     */
   var events: js.UndefOr[
     js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The maxBubbleSize prop sets an upper limit for scaling data points in a bubble chart
     */
-  var maxBubbleSize: js.UndefOr[Double] = js.native
+  var maxBubbleSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     */
-  var samples: js.UndefOr[Double] = js.native
+  var samples: js.UndefOr[Double] = js.undefined
   
   /**
     * The size prop determines how to scale each data point
     */
-  var size: js.UndefOr[Double | (js.Function1[/* data */ js.Any, Double])] = js.native
+  var size: js.UndefOr[Double | (js.Function1[/* data */ js.Any, Double])] = js.undefined
   
   /**
     * The style prop specifies styles for your VictoryScatter. Any valid inline style properties
@@ -95,12 +94,12 @@ trait VictoryScatterProps
     * VictoryLabel, or any custom labelComponent.
     * @example {data: {fill: "red"}, labels: {fontSize: 12}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
   
   /**
     * The symbol prop determines which symbol should be drawn to represent data points.
     */
-  var symbol: js.UndefOr[ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])] = js.native
+  var symbol: js.UndefOr[ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])] = js.undefined
 }
 object VictoryScatterProps {
   

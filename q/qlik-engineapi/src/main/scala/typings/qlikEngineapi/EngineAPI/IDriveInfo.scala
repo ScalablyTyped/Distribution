@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DriveInfo...
   */
-@js.native
 trait IDriveInfo extends StObject {
   
   /**
@@ -17,23 +15,23 @@ trait IDriveInfo extends StObject {
     * Examples:
     * C:\\, E:\\
     */
-  var qDrive: String = js.native
+  var qDrive: String
   
   /**
     * Name of the drive.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Type of the drive.
     * Fixed means physical drive.
     */
-  var qType: String = js.native
+  var qType: String
   
   /**
     * Information about the drive type.
     */
-  var qTypeIdentifier: DriveType = js.native
+  var qTypeIdentifier: DriveType
 }
 object IDriveInfo {
   

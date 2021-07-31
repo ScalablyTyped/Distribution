@@ -2,19 +2,17 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightLuminosity extends StObject {
   
-  var highlightLuminosity: js.UndefOr[Double] = js.native
+  var highlightLuminosity: js.UndefOr[Double] = js.undefined
   
-  var highlightSegmentOnMouseover: js.UndefOr[Boolean] = js.native
+  var highlightSegmentOnMouseover: js.UndefOr[Boolean] = js.undefined
   
-  var load: js.UndefOr[Effect] = js.native
+  var load: js.UndefOr[Effect] = js.undefined
   
-  var pullOutSegmentOnClick: js.UndefOr[Size] = js.native
+  var pullOutSegmentOnClick: js.UndefOr[Size] = js.undefined
 }
 object HighlightLuminosity {
   

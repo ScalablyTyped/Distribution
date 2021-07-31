@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListValue. */
-@js.native
 trait IListValue extends StObject {
   
   /** ListValue values */
-  var values: js.UndefOr[js.Array[IValue] | Null] = js.native
+  var values: js.UndefOr[js.Array[IValue] | Null] = js.undefined
 }
 object IListValue {
   

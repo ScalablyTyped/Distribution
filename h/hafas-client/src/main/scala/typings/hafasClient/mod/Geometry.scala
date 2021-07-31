@@ -3,22 +3,20 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
-  var coordinates: js.Array[Double] = js.native
+  var coordinates: js.Array[Double]
   
-  var `type`: Point = js.native
+  var `type`: Point
 }
 object Geometry {
   
   @scala.inline
-  def apply(coordinates: js.Array[Double], `type`: Point): Geometry = {
+  def apply(coordinates: js.Array[Double]): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Point")
     __obj.asInstanceOf[Geometry]
   }
   

@@ -2,15 +2,13 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldIndex extends StObject {
   
-  var newIndex: Double = js.native
+  var newIndex: Double
   
-  var oldIndex: Double = js.native
+  var oldIndex: Double
 }
 object OldIndex {
   

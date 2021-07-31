@@ -2,13 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnDefsSettings extends ColumnSettings {
+trait ColumnDefsSettings
+  extends StObject
+     with ColumnSettings {
   
-  var targets: String | Double | (js.Array[Double | String]) = js.native
+  var targets: String | Double | (js.Array[Double | String])
 }
 object ColumnDefsSettings {
   

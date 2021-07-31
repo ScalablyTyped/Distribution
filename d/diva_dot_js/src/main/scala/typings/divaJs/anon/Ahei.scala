@@ -2,27 +2,25 @@ package typings.divaJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ahei extends StObject {
   
-  var a_hei: Double = js.native
+  var a_hei: Double
   
-  var a_wid: Double = js.native
+  var a_wid: Double
   
-  var max_h: Double = js.native
+  var max_h: Double
   
-  var max_ratio: Double = js.native
+  var max_ratio: Double
   
-  var max_w: Double = js.native
+  var max_w: Double
   
-  var min_ratio: Double = js.native
+  var min_ratio: Double
   
-  var t_hei: Double = js.native
+  var t_hei: Double
   
-  var t_wid: Double = js.native
+  var t_wid: Double
 }
 object Ahei {
   

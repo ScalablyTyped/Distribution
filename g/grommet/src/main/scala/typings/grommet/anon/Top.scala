@@ -2,23 +2,21 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top extends StObject {
   
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
-  var horizontal: js.UndefOr[String] = js.native
+  var horizontal: js.UndefOr[String] = js.undefined
   
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
-  var right: js.UndefOr[String] = js.native
+  var right: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
-  var vertical: js.UndefOr[String] = js.native
+  var vertical: js.UndefOr[String] = js.undefined
 }
 object Top {
   

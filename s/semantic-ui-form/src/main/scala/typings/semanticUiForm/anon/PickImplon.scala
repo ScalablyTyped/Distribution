@@ -5,14 +5,12 @@ import typings.semanticUiForm.semanticUiFormStrings.change
 import typings.semanticUiForm.semanticUiFormStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, 'on'> */
-@js.native
 trait PickImplon extends StObject {
   
-  var on: submit | blur | change = js.native
+  var on: submit | blur | change
 }
 object PickImplon {
   

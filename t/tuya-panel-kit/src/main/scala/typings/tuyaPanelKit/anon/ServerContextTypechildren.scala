@@ -5,20 +5,18 @@ import typings.react.mod.Ref
 import typings.tuyaPanelKit.nativeTypesMod.ServerContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native/ServerContext.ServerContextType & {  children :react.react.ReactNode} & react.react.RefAttributes<tuya-panel-kit.tuya-panel-kit/@react-navigation/native/types.ServerContainerRef> */
-@js.native
 trait ServerContextTypechildren extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var key: js.UndefOr[typings.react.mod.Key | Null] = js.native
+  var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var location: js.UndefOr[Pathname] = js.native
+  var location: js.UndefOr[Pathname] = js.undefined
   
-  var ref: js.UndefOr[Ref[ServerContainerRef]] = js.native
+  var ref: js.UndefOr[Ref[ServerContainerRef]] = js.undefined
 }
 object ServerContextTypechildren {
   

@@ -3,48 +3,46 @@ package typings.classValidator
 import typings.classValidator.validationOptionsMod.ValidationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationMetadataArgsMod {
   
-  @js.native
   trait ValidationMetadataArgs extends StObject {
     
     /**
       * Constraint class that performs validation. Used only for custom validations.
       */
-    var constraintCls: js.UndefOr[js.Function] = js.native
+    var constraintCls: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Array of constraints of this validation.
       */
-    var constraints: js.UndefOr[js.Array[_]] = js.native
+    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Property of the object to be validated.
       */
-    var propertyName: String = js.native
+    var propertyName: String
     
     /**
       * Object that is used to be validated.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
     
     /**
       * Validation type.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Validation options.
       */
-    var validationOptions: js.UndefOr[ValidationOptions] = js.native
+    var validationOptions: js.UndefOr[ValidationOptions] = js.undefined
     
     /**
       * Extra options specific to validation type.
       */
-    var validationTypeOptions: js.UndefOr[js.Any] = js.native
+    var validationTypeOptions: js.UndefOr[js.Any] = js.undefined
   }
   object ValidationMetadataArgs {
     
@@ -65,7 +63,7 @@ object validationMetadataArgsMod {
       def setConstraintClsUndefined: Self = StObject.set(x, "constraintCls", js.undefined)
       
       @scala.inline
-      def setConstraints(value: js.Array[_]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)

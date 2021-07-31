@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,7 +47,7 @@ trait NotificationMessages extends StObject {
   def addAsync(
     key: String,
     JSONmessage: NotificationMessageDetails,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native
@@ -77,7 +76,7 @@ trait NotificationMessages extends StObject {
     */
   def getAllAsync(): Unit = js.native
   def getAllAsync(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[NotificationMessageDetails]], Unit]
   ): Unit = js.native
   def getAllAsync(options: AsyncContextOptions): Unit = js.native
@@ -104,11 +103,7 @@ trait NotificationMessages extends StObject {
     *                 of type `Office.AsyncResult`.
     */
   def removeAsync(key: String): Unit = js.native
-  def removeAsync(
-    key: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeAsync(key: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAsync(key: String, options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     key: String,
@@ -141,7 +136,7 @@ trait NotificationMessages extends StObject {
   def replaceAsync(
     key: String,
     JSONmessage: NotificationMessageDetails,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def replaceAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native

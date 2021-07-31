@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,9 +49,8 @@ object ImportMappingJavaActionParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ImportMappingJavaActionParameterType.create")
-  @js.native
-  def create(model: IModel): ImportMappingJavaActionParameterType = js.native
+  @scala.inline
+  def create(model: IModel): ImportMappingJavaActionParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImportMappingJavaActionParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ImportMappingJavaActionParameterType.structureTypeName")

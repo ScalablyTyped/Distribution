@@ -7,30 +7,30 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Print several pages on one printer page. */
-@js.native
-trait XPagePrintable extends XInterface {
+trait XPagePrintable
+  extends StObject
+     with XInterface {
   
   /** @returns the settings of printing of pages. These settings contains:   short PageRows - number of rows of pages printed to one page    short PageColumns - */
-  var PagePrintSettings: SafeArray[PropertyValue] = js.native
+  var PagePrintSettings: SafeArray[PropertyValue]
   
   /** @returns the settings of printing of pages. These settings contains:   short PageRows - number of rows of pages printed to one page    short PageColumns - */
-  def getPagePrintSettings(): SafeArray[PropertyValue] = js.native
+  def getPagePrintSettings(): SafeArray[PropertyValue]
   
   /**
     * prints the pages according to the {@link PagePrintSettings} .
     * @see com.sun.star.view.PrintOptions
     */
-  def printPages(xOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def printPages(xOptions: SeqEquiv[PropertyValue]): Unit
   
   /**
     * adjusts the settings of the page printing.
     * @see getPagePrintSettings
     */
-  def setPagePrintSettings(aSettings: SeqEquiv[PropertyValue]): Unit = js.native
+  def setPagePrintSettings(aSettings: SeqEquiv[PropertyValue]): Unit
 }
 object XPagePrintable {
   

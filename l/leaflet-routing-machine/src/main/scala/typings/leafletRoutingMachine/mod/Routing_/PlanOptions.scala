@@ -5,20 +5,18 @@ import typings.leaflet.mod.Marker_
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanOptions extends StObject {
   
-  var addButtonClassName: js.UndefOr[String] = js.native
+  var addButtonClassName: js.UndefOr[String] = js.undefined
   
   // IGeocoder
-  var addWaypoints: js.UndefOr[Boolean] = js.native
+  var addWaypoints: js.UndefOr[Boolean] = js.undefined
   
   var createGeocoder: js.UndefOr[
     js.Function3[/* waypointIndex */ Double, /* numberWaypoints */ Double, /* plan */ Plan_, js.Object]
-  ] = js.native
+  ] = js.undefined
   
   var createGeocoderElement: js.UndefOr[
     js.Function4[
@@ -28,38 +26,38 @@ trait PlanOptions extends StObject {
       /* options */ this.type, 
       GeocoderElement_
     ]
-  ] = js.native
+  ] = js.undefined
   
   var createMarker: js.UndefOr[
     js.Function3[
       /* waypointIndex */ Double, 
       /* waypoint */ Waypoint_, 
       /* numberWaypoints */ Double, 
-      Marker_[_]
+      Marker_[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var dragStyles: js.UndefOr[js.Array[PathOptions]] = js.native
+  var dragStyles: js.UndefOr[js.Array[PathOptions]] = js.undefined
   
-  var draggableWaypoints: js.UndefOr[Boolean] = js.native
+  var draggableWaypoints: js.UndefOr[Boolean] = js.undefined
   
-  var geocoder: js.UndefOr[js.Any] = js.native
+  var geocoder: js.UndefOr[js.Any] = js.undefined
   
-  var geocoderClass: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, Unit]] = js.native
+  var geocoderClass: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, Unit]] = js.undefined
   
-  var geocoderPlaceholder: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, String]] = js.native
+  var geocoderPlaceholder: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, String]] = js.undefined
   
-  var geocodersClassName: js.UndefOr[String] = js.native
+  var geocodersClassName: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var maxGeocoderTolerance: js.UndefOr[Double] = js.native
+  var maxGeocoderTolerance: js.UndefOr[Double] = js.undefined
   
-  var reverseWaypoints: js.UndefOr[Boolean] = js.native
+  var reverseWaypoints: js.UndefOr[Boolean] = js.undefined
   
-  var routeWhileDragging: js.UndefOr[Boolean] = js.native
+  var routeWhileDragging: js.UndefOr[Boolean] = js.undefined
   
-  var waypointNameFallback: js.UndefOr[js.Function1[/* latLng */ LatLng_, String]] = js.native
+  var waypointNameFallback: js.UndefOr[js.Function1[/* latLng */ LatLng_, String]] = js.undefined
 }
 object PlanOptions {
   
@@ -100,7 +98,7 @@ object PlanOptions {
     
     @scala.inline
     def setCreateMarker(
-      value: (/* waypointIndex */ Double, /* waypoint */ Waypoint_, /* numberWaypoints */ Double) => Marker_[_]
+      value: (/* waypointIndex */ Double, /* waypoint */ Waypoint_, /* numberWaypoints */ Double) => Marker_[js.Any]
     ): Self = StObject.set(x, "createMarker", js.Any.fromFunction3(value))
     
     @scala.inline

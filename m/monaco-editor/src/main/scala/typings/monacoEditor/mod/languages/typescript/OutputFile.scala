@@ -2,17 +2,15 @@ package typings.monacoEditor.mod.languages.typescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputFile extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var text: String = js.native
+  var text: String
   
-  var writeByteOrderMark: Boolean = js.native
+  var writeByteOrderMark: Boolean
 }
 object OutputFile {
   

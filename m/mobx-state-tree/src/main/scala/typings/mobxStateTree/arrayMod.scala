@@ -6,22 +6,24 @@ import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayMod {
   
-  @JSImport("mobx-state-tree/dist/types/complex-types/array", "array")
+  @JSImport("mobx-state-tree/dist/types/complex-types/array", JSImport.Namespace)
   @js.native
-  def array[IT /* <: IAnyType */](subtype: IT): IArrayType[IT] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/types/complex-types/array", "isArrayType")
-  @js.native
-  def isArrayType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean = js.native
+  @scala.inline
+  def array[IT /* <: IAnyType */](subtype: IT): IArrayType[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(subtype.asInstanceOf[js.Any]).asInstanceOf[IArrayType[IT]]
+  
+  @scala.inline
+  def isArrayType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean]
   
   @js.native
   trait IArrayType[IT /* <: IAnyType */]
-    extends IType[
+    extends StObject
+       with IType[
           js.UndefOr[
             js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
@@ -38,7 +40,8 @@ object arrayMod {
   
   @js.native
   trait IMSTArray[IT /* <: IAnyType */]
-    extends IObservableArray[
+    extends StObject
+       with IObservableArray[
           /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
         ] {
     

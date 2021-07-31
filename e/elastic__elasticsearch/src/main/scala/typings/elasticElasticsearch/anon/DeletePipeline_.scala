@@ -12,34 +12,33 @@ import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeletePipeline_ extends StObject {
   
   def deletePipeline[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def deletePipeline[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deletePipeline[TResponse, TContext](params: Unit, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def deletePipeline[TResponse, TContext](params: IngestDeletePipeline): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def deletePipeline[TResponse, TContext](params: IngestDeletePipeline, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   
   def getPipeline[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def getPipeline[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def getPipeline[TResponse, TContext](params: Unit, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def getPipeline[TResponse, TContext](params: IngestGetPipeline): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def getPipeline[TResponse, TContext](params: IngestGetPipeline, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   
   def processorGrok[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def processorGrok[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def processorGrok[TResponse, TContext](params: Unit, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def processorGrok[TResponse, TContext](params: IngestProcessorGrok): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def processorGrok[TResponse, TContext](params: IngestProcessorGrok, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   
-  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IngestPutPipeline[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IngestPutPipeline[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: Unit, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: IngestPutPipeline[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putPipeline[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: IngestPutPipeline[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   
-  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IngestSimulate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IngestSimulate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: Unit, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: IngestSimulate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate[TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: IngestSimulate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
 }

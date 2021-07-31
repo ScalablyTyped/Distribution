@@ -2,17 +2,15 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointDotOptions extends StObject {
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var hoverClass: js.UndefOr[String] = js.native
+  var hoverClass: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object EndpointDotOptions {
   

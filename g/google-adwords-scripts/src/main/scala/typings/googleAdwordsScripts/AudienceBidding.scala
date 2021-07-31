@@ -2,23 +2,23 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudienceBidding extends AdWordsBidding {
+trait AudienceBidding
+  extends StObject
+     with AdWordsBidding {
   
-  def clearCpc(): Unit = js.native
+  def clearCpc(): Unit
   
-  def clearCpm(): Unit = js.native
+  def clearCpm(): Unit
   
-  def getCpc(): Double = js.native
+  def getCpc(): Double
   
-  def getCpm(): Double = js.native
+  def getCpm(): Double
   
-  def setCpc(cpc: Double): Unit = js.native
+  def setCpc(cpc: Double): Unit
   
-  def setCpm(cpm: Double): Unit = js.native
+  def setCpm(cpm: Double): Unit
 }
 object AudienceBidding {
   

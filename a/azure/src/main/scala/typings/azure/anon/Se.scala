@@ -2,21 +2,19 @@ package typings.azure.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Se extends StObject {
   
-  var se: String = js.native
+  var se: String
   
-  var sig: String = js.native
+  var sig: String
   
-  var sp: String = js.native
+  var sp: String
   
-  var sr: String = js.native
+  var sr: String
   
-  var sv: String = js.native
+  var sv: String
 }
 object Se {
   

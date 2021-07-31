@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssetPropertyValueResponse extends StObject {
   
   /**
     * The current asset property value.
     */
-  var propertyValue: js.UndefOr[AssetPropertyValue] = js.native
+  var propertyValue: js.UndefOr[AssetPropertyValue] = js.undefined
 }
 object GetAssetPropertyValueResponse {
   

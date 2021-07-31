@@ -3,10 +3,8 @@ package typings.fineUploader.coreMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreOptions extends StObject {
   
   /**
@@ -14,68 +12,68 @@ trait CoreOptions extends StObject {
     *
     * @default `true`
     */
-  var autoUpload: js.UndefOr[Boolean] = js.native
+  var autoUpload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * blobs options
     */
-  var blobs: js.UndefOr[BlobsOptions] = js.native
+  var blobs: js.UndefOr[BlobsOptions] = js.undefined
   
   /**
     * Specify an element to use as the 'select files' button. Cannot be a `<button>`
     *
     * @default `null`
     */
-  var button: js.UndefOr[HTMLElement] = js.native
+  var button: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * Core callback functions
     */
-  var callbacks: js.UndefOr[CoreEvents] = js.native
+  var callbacks: js.UndefOr[CoreEvents] = js.undefined
   
   /**
     * camera options
     */
-  var camera: js.UndefOr[CameraOptions] = js.native
+  var camera: js.UndefOr[CameraOptions] = js.undefined
   
   /**
     * ChunkingOptions
     */
-  var chunking: js.UndefOr[ChunkingOptions] = js.native
+  var chunking: js.UndefOr[ChunkingOptions] = js.undefined
   
   /**
     * CorsOptions
     */
-  var cors: js.UndefOr[CorsOptions] = js.native
+  var cors: js.UndefOr[CorsOptions] = js.undefined
   
   /**
     * This will result in log messages being written to the `window.console` object
     *
     * @default `false`
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * DeleteFileOptions
     */
-  var deleteFile: js.UndefOr[DeleteFileOptions] = js.native
+  var deleteFile: js.UndefOr[DeleteFileOptions] = js.undefined
   
   /**
     * When true the cancel link does not appear next to files when the form uploader is used
     *
     * @default `false`
     */
-  var disableCancelForFormUploads: js.UndefOr[Boolean] = js.native
+  var disableCancelForFormUploads: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ExtraButtonsOptions
     */
-  var extraButtons: js.UndefOr[js.Array[ExtraButtonsOptions]] = js.native
+  var extraButtons: js.UndefOr[js.Array[ExtraButtonsOptions]] = js.undefined
   
   /**
     * FormOptions
     */
-  var form: js.UndefOr[FormOptions] = js.native
+  var form: js.UndefOr[FormOptions] = js.undefined
   
   /**
     * Provide a function to control the display of file names.
@@ -84,73 +82,73 @@ trait CoreOptions extends StObject {
     *
     * Note that this does not affect the actual file name, only the displayed file name
     */
-  var formatFileName: js.UndefOr[FormatFileNameFuncton] = js.native
+  var formatFileName: js.UndefOr[FormatFileNameFuncton] = js.undefined
   
   /**
     * Maximum allowable concurrent requests
     *
     * @default `3`
     */
-  var maxConnections: js.UndefOr[Double] = js.native
+  var maxConnections: js.UndefOr[Double] = js.undefined
   
   /**
     * Messages
     */
-  var messages: js.UndefOr[Messages] = js.native
+  var messages: js.UndefOr[Messages] = js.undefined
   
   /**
     * When false this will prevent the user from simultaneously selecting or dropping more than one item
     *
     * @default `true`
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * PasteOptions
     */
-  var paste: js.UndefOr[PasteOptions] = js.native
+  var paste: js.UndefOr[PasteOptions] = js.undefined
   
   /**
     * RequestOptions
     */
-  var request: js.UndefOr[RequestOptions] = js.native
+  var request: js.UndefOr[RequestOptions] = js.undefined
   
   /**
     * ResumeOptions
     */
-  var resume: js.UndefOr[ResumeOptions] = js.native
+  var resume: js.UndefOr[ResumeOptions] = js.undefined
   
   /**
     * ScalingOptions
     */
-  var scaling: js.UndefOr[ScalingOptions] = js.native
+  var scaling: js.UndefOr[ScalingOptions] = js.undefined
   
   /**
     * SessionOptions
     */
-  var session: js.UndefOr[SessionOptions] = js.native
+  var session: js.UndefOr[SessionOptions] = js.undefined
   
   /**
     * TextOptions
     */
-  var text: js.UndefOr[TextOptions] = js.native
+  var text: js.UndefOr[TextOptions] = js.undefined
   
   /**
     * ValidationOptions
     */
-  var validation: js.UndefOr[ValidationOptions] = js.native
+  var validation: js.UndefOr[ValidationOptions] = js.undefined
   
   /**
     * When true Fine Uploader will ensure a modal confirmation dialog appears whenever a user tries to navigate away from the page with uploads in progress
     *
     * @default `true`
     */
-  var warnBeforeUnload: js.UndefOr[Boolean] = js.native
+  var warnBeforeUnload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * WorkArounds
     */
-  var workarounds: js.UndefOr[WorkArounds] = js.native
+  var workarounds: js.UndefOr[WorkArounds] = js.undefined
 }
 object CoreOptions {
   

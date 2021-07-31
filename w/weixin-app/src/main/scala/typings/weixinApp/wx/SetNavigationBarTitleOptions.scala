@@ -2,16 +2,15 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 界面-----设置导航条
-@js.native
 trait SetNavigationBarTitleOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 页面标题 */
-  var title: String = js.native
+  var title: String
 }
 object SetNavigationBarTitleOptions {
   

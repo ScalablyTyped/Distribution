@@ -2,17 +2,15 @@ package typings.nunjucks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Async extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var useCache: js.UndefOr[Boolean] = js.native
+    var useCache: js.UndefOr[Boolean] = js.undefined
   }
   object Async {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Autoescape extends StObject {
     
-    var autoescape: Boolean = js.native
+    var autoescape: Boolean
   }
   object Autoescape {
     
@@ -60,20 +57,19 @@ object anon {
     }
   }
   
-  @js.native
   trait BlockEnd extends StObject {
     
-    var blockEnd: js.UndefOr[String] = js.native
+    var blockEnd: js.UndefOr[String] = js.undefined
     
-    var blockStart: js.UndefOr[String] = js.native
+    var blockStart: js.UndefOr[String] = js.undefined
     
-    var commentEnd: js.UndefOr[String] = js.native
+    var commentEnd: js.UndefOr[String] = js.undefined
     
-    var commentStart: js.UndefOr[String] = js.native
+    var commentStart: js.UndefOr[String] = js.undefined
     
-    var variableEnd: js.UndefOr[String] = js.native
+    var variableEnd: js.UndefOr[String] = js.undefined
     
-    var variableStart: js.UndefOr[String] = js.native
+    var variableStart: js.UndefOr[String] = js.undefined
   }
   object BlockEnd {
     
@@ -124,12 +120,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var template: String = js.native
+    var template: String
   }
   object Name {
     

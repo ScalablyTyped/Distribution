@@ -4,32 +4,28 @@ import typings.oauth.mod.oauth2tokenCallback
 import typings.passportOauth2.mod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("passport-oauth2-refresh", "has")
+  @JSImport("passport-oauth2-refresh", JSImport.Namespace)
   @js.native
-  def has(name: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("passport-oauth2-refresh", "requestNewAccessToken")
-  @js.native
-  def requestNewAccessToken(name: String, refreshToken: String, done: oauth2tokenCallback): js.Any = js.native
-  @JSImport("passport-oauth2-refresh", "requestNewAccessToken")
-  @js.native
-  def requestNewAccessToken(name: String, refreshToken: String, params: js.Any, done: oauth2tokenCallback): js.Any = js.native
+  @scala.inline
+  def has(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("passport-oauth2-refresh", "use")
-  @js.native
-  def use(name: String): Unit = js.native
-  @JSImport("passport-oauth2-refresh", "use")
-  @js.native
-  def use(name: String, strategy: Strategy): Unit = js.native
-  @JSImport("passport-oauth2-refresh", "use")
-  @js.native
-  def use(name: Strategy): Unit = js.native
-  @JSImport("passport-oauth2-refresh", "use")
-  @js.native
-  def use(name: Strategy, strategy: Strategy): Unit = js.native
+  @scala.inline
+  def requestNewAccessToken(name: String, refreshToken: String, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requestNewAccessToken(name: String, refreshToken: String, params: js.Any, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], params.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def use(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(name: String, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def use(name: Strategy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(name: Strategy, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

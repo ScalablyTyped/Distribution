@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionInfo extends StObject {
   
   /**
     * The role of the user.
     */
-  var Role: js.UndefOr[RoleType] = js.native
+  var Role: js.UndefOr[RoleType] = js.undefined
   
   /**
     * The type of permissions.
     */
-  var Type: js.UndefOr[RolePermissionType] = js.native
+  var Type: js.UndefOr[RolePermissionType] = js.undefined
 }
 object PermissionInfo {
   

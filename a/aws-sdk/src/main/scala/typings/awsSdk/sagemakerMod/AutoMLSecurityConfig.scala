@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLSecurityConfig extends StObject {
   
   /**
     * Whether to use traffic encryption between the container layers.
     */
-  var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.native
+  var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The key used to encrypt stored data.
     */
-  var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * VPC configuration.
     */
-  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.native
+  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.undefined
 }
 object AutoMLSecurityConfig {
   

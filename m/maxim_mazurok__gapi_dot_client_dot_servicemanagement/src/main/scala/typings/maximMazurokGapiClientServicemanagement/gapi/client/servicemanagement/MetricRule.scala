@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricRule extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait MetricRule extends StObject {
   var metricCosts: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Selects the methods to which this rule applies. Refer to selector for syntax details. */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object MetricRule {
   
@@ -37,7 +35,7 @@ object MetricRule {
     def setMetricCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[js.Any]
     ): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
     @scala.inline

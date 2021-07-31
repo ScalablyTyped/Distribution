@@ -6,7 +6,6 @@ import typings.googleapis.runtimeconfigV1Mod.runtimeconfigV1.Options
 import typings.googleapis.runtimeconfigV1Mod.runtimeconfigV1.Runtimeconfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

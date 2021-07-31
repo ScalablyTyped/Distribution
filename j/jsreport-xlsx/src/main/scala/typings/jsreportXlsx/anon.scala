@@ -2,20 +2,18 @@ package typings.jsreportXlsx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<jsreport-xlsx.jsreport-xlsx.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var addBufferSize: js.UndefOr[Double] = js.native
+    var addBufferSize: js.UndefOr[Double] = js.undefined
     
-    var escapeAmp: js.UndefOr[Boolean] = js.native
+    var escapeAmp: js.UndefOr[Boolean] = js.undefined
     
-    var numberOfParsedAddIterations: js.UndefOr[Double] = js.native
+    var numberOfParsedAddIterations: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     

@@ -2,21 +2,19 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Versions extends StObject {
   
   /**
     * The SSH protocol version supported by the remote party.
     */
-  var protocol: String = js.native
+  var protocol: String
   
   /**
     * The software name and version used by the remote party.
     */
-  var software: String = js.native
+  var software: String
 }
 object Versions {
   

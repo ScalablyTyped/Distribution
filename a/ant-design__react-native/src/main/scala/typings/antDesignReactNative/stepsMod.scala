@@ -11,7 +11,6 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.LayoutChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
@@ -48,18 +47,19 @@ object stepsMod {
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
   
-  @js.native
-  trait StepsProps extends WithThemeStyles[StepsStyle] {
+  trait StepsProps
+    extends StObject
+       with WithThemeStyles[StepsStyle] {
     
-    var children: js.Array[ReactElement] = js.native
+    var children: js.Array[ReactElement]
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[vertical | horizontal] = js.native
+    var direction: js.UndefOr[vertical | horizontal] = js.undefined
     
-    var finishIcon: js.UndefOr[String] = js.native
+    var finishIcon: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object StepsProps {
     

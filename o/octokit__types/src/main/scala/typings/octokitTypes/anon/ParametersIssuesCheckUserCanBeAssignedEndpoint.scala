@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.IssuesCheckUserCanBeAssignedRequestOpti
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersIssuesCheckUserCanBeAssignedEndpoint extends StObject {
   
-  var parameters: IssuesCheckUserCanBeAssignedEndpoint = js.native
+  var parameters: IssuesCheckUserCanBeAssignedEndpoint
   
-  var request: IssuesCheckUserCanBeAssignedRequestOptions = js.native
+  var request: IssuesCheckUserCanBeAssignedRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersIssuesCheckUserCanBeAssignedEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersIssuesCheckUserCanBeAssignedEndpoint {
   def apply(
     parameters: IssuesCheckUserCanBeAssignedEndpoint,
     request: IssuesCheckUserCanBeAssignedRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersIssuesCheckUserCanBeAssignedEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersIssuesCheckUserCanBeAssignedEndpoint]
@@ -39,6 +37,6 @@ object ParametersIssuesCheckUserCanBeAssignedEndpoint {
     def setRequest(value: IssuesCheckUserCanBeAssignedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

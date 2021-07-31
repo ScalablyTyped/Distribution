@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOperationStep extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ClusterOperationStep extends StObject {
     Information about the step and its status.
     
     */
-  var StepInfo: js.UndefOr[ClusterOperationStepInfo] = js.native
+  var StepInfo: js.UndefOr[ClusterOperationStepInfo] = js.undefined
   
   /**
     * 
     The name of the step.
     
     */
-  var StepName: js.UndefOr[string] = js.native
+  var StepName: js.UndefOr[string] = js.undefined
 }
 object ClusterOperationStep {
   

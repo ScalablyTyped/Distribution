@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsDicomstoresCreate extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsDicomstoresCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the DICOM store that is being created. Any string value up to
     * 256 characters in length.
     */
-  var dicomStoreId: js.UndefOr[String] = js.native
+  var dicomStoreId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the dataset this DICOM store belongs to.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDicomStore] = js.native
+  var requestBody: js.UndefOr[SchemaDicomStore] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsDicomstoresCreate {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectOutput extends StObject {
   
   /**
     * Information about the build project that was created.
     */
-  var project: js.UndefOr[Project] = js.native
+  var project: js.UndefOr[Project] = js.undefined
 }
 object CreateProjectOutput {
   

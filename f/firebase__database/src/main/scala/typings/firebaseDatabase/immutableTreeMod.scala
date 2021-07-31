@@ -5,7 +5,6 @@ import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.sortedMapMod.SortedMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object immutableTreeMod {
@@ -171,8 +170,7 @@ object immutableTreeMod {
       * @param {!Object.<string, !T>} obj
       * @return {!ImmutableTree.<!T>}
       */
-    @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree.fromObject")
-    @js.native
-    def fromObject[T](obj: StringDictionary[T]): ImmutableTree[T] = js.native
+    @scala.inline
+    def fromObject[T](obj: StringDictionary[T]): ImmutableTree[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[ImmutableTree[T]]
   }
 }

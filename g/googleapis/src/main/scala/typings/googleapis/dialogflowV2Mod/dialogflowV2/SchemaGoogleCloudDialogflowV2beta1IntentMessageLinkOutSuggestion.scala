@@ -2,26 +2,24 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The suggestion chip message that allows the user to jump out to the app or
   * website associated with this agent.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion extends StObject {
   
   /**
     * Required. The name of the app or site this chip is linking to.
     */
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The URI of the app or site to open when the user taps the
     * suggestion chip.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion {
   

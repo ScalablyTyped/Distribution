@@ -11,17 +11,15 @@ import typings.std.Intl.PluralRulesOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Currency extends StObject {
     
-    var currency: Style = js.native
+    var currency: Style
     
-    var percent: Style = js.native
+    var percent: Style
   }
   object Currency {
     
@@ -42,14 +40,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var date: Full = js.native
+    var date: Full
     
-    var number: Currency = js.native
+    var number: Currency
     
-    var time: Long = js.native
+    var time: Long
   }
   object Date {
     
@@ -73,14 +70,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Day extends StObject {
     
-    var day: String = js.native
+    var day: String
     
-    var month: String = js.native
+    var month: String
     
-    var year: String = js.native
+    var year: String
   }
   object Day {
     
@@ -111,16 +107,15 @@ object anon {
     def apply(input: String, opts: ParseOptions): js.Array[MessageFormatElement] = js.native
   }
   
-  @js.native
   trait Full extends StObject {
     
-    var full: Month = js.native
+    var full: Month
     
-    var long: Day = js.native
+    var long: Day
     
-    var medium: Day = js.native
+    var medium: Day
     
-    var short: Day = js.native
+    var short: Day
   }
   object Full {
     
@@ -147,12 +142,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Hour extends StObject {
     
-    var hour: String = js.native
+    var hour: String
     
-    var minute: String = js.native
+    var minute: String
   }
   object Hour {
     
@@ -173,10 +167,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: String = js.native
+    var locale: String
   }
   object Locale {
     
@@ -194,16 +187,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Long extends StObject {
     
-    var full: Second = js.native
+    var full: Second
     
-    var long: Second = js.native
+    var long: Second
     
-    var medium: Minute = js.native
+    var medium: Minute
     
-    var short: Hour = js.native
+    var short: Hour
   }
   object Long {
     
@@ -230,14 +222,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Minute extends StObject {
     
-    var hour: String = js.native
+    var hour: String
     
-    var minute: String = js.native
+    var minute: String
     
-    var second: String = js.native
+    var second: String
   }
   object Minute {
     
@@ -261,16 +252,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Month extends StObject {
     
-    var day: String = js.native
+    var day: String
     
-    var month: String = js.native
+    var month: String
     
-    var weekday: String = js.native
+    var weekday: String
     
-    var year: String = js.native
+    var year: String
   }
   object Month {
     
@@ -298,14 +288,13 @@ object anon {
   }
   
   /* Inlined std.Partial<intl-messageformat.intl-messageformat/src/formatters.Formats> */
-  @js.native
   trait PartialFormats extends StObject {
     
-    var date: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.native
+    var date: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.undefined
     
-    var number: js.UndefOr[Record[String, NumberFormatOptions]] = js.native
+    var number: js.UndefOr[Record[String, NumberFormatOptions]] = js.undefined
     
-    var time: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.native
+    var time: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.undefined
   }
   object PartialFormats {
     
@@ -338,16 +327,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Second extends StObject {
     
-    var hour: String = js.native
+    var hour: String
     
-    var minute: String = js.native
+    var minute: String
     
-    var second: String = js.native
+    var second: String
     
-    var timeZoneName: String = js.native
+    var timeZoneName: String
   }
   object Second {
     
@@ -374,10 +362,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: String = js.native
+    var style: String
   }
   object Style {
     
@@ -399,11 +386,11 @@ object anon {
   trait TypeofDateTimeFormat extends StObject {
     
     def apply(): DateTimeFormat = js.native
-    def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): DateTimeFormat = js.native
     def apply(locales: String): DateTimeFormat = js.native
     def apply(locales: String, options: DateTimeFormatOptions): DateTimeFormat = js.native
     def apply(locales: js.Array[String]): DateTimeFormat = js.native
     def apply(locales: js.Array[String], options: DateTimeFormatOptions): DateTimeFormat = js.native
+    def apply(locales: Unit, options: DateTimeFormatOptions): DateTimeFormat = js.native
     
     def supportedLocalesOf(locales: String): js.Array[String] = js.native
     def supportedLocalesOf(locales: String, options: DateTimeFormatOptions): js.Array[String] = js.native
@@ -415,11 +402,11 @@ object anon {
   trait TypeofNumberFormat extends StObject {
     
     def apply(): NumberFormat = js.native
-    def apply(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): NumberFormat = js.native
     def apply(locales: String): NumberFormat = js.native
     def apply(locales: String, options: NumberFormatOptions): NumberFormat = js.native
     def apply(locales: js.Array[String]): NumberFormat = js.native
     def apply(locales: js.Array[String], options: NumberFormatOptions): NumberFormat = js.native
+    def apply(locales: Unit, options: NumberFormatOptions): NumberFormat = js.native
     
     def supportedLocalesOf(locales: String): js.Array[String] = js.native
     def supportedLocalesOf(locales: String, options: NumberFormatOptions): js.Array[String] = js.native
@@ -431,11 +418,11 @@ object anon {
   trait TypeofPluralRules extends StObject {
     
     def apply(): PluralRules = js.native
-    def apply(locales: js.UndefOr[scala.Nothing], options: PluralRulesOptions): PluralRules = js.native
     def apply(locales: String): PluralRules = js.native
     def apply(locales: String, options: PluralRulesOptions): PluralRules = js.native
     def apply(locales: js.Array[String]): PluralRules = js.native
     def apply(locales: js.Array[String], options: PluralRulesOptions): PluralRules = js.native
+    def apply(locales: Unit, options: PluralRulesOptions): PluralRules = js.native
     
     def supportedLocalesOf(locales: String): js.Array[String] = js.native
     def supportedLocalesOf(locales: String, options: PluralRulesOptions): js.Array[String] = js.native

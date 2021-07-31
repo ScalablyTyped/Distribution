@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BootstrapClientTreeViewNodeClickEventArgs")
 @js.native
 class BootstrapClientTreeViewNodeClickEventArgs protected ()
-  extends typings.devexpressWeb.BootstrapClientTreeViewNodeClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.BootstrapClientTreeViewNodeClickEventArgs {
   /**
     * Initializes a new object of the BootstrapClientTreeViewNodeClickEventArgs type with the specified settings.
     * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
@@ -25,4 +25,28 @@ class BootstrapClientTreeViewNodeClickEventArgs protected ()
     htmlElement: js.Any,
     htmlEvent: js.Any
   ) = this()
+  
+  /**
+    * Gets an HTML object that contains the processed Tree View node.
+    */
+  /* CompleteClass */
+  var htmlElement: js.Any = js.native
+  
+  /**
+    * Gets a DHTML event object that relates to the processed event.
+    */
+  /* CompleteClass */
+  var htmlEvent: js.Any = js.native
+  
+  /**
+    * Gets a node object related to the event.
+    */
+  /* CompleteClass */
+  var node: typings.devexpressWeb.BootstrapClientTreeViewNode = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
+    */
+  /* CompleteClass */
+  var processOnServer: Boolean = js.native
 }

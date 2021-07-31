@@ -2,7 +2,6 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,19 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Cloud Run service (including when the service has been deleted) will be
   * passed back down to the end user.
   */
-@js.native
 trait SchemaCloudRunRewrite extends StObject {
   
   /**
     * Optional. The region where the Cloud Run service is hosted.  Defaults to
     * `us-central1` if not supplied.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Required. User supplied ID of the Cloud Run service.
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudRunRewrite {
   

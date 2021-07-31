@@ -2,15 +2,13 @@ package typings.arrayTreeFilter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChildrenKeyName extends StObject {
     
-    var childrenKeyName: js.UndefOr[String] = js.native
+    var childrenKeyName: js.UndefOr[String] = js.undefined
   }
   object ChildrenKeyName {
     

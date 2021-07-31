@@ -2,29 +2,29 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapDropDownEditEventMap extends BootstrapClientEditEventMap {
+trait BootstrapDropDownEditEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var buttonClick: ButtonEditClickEventArgs = js.native
+  var buttonClick: ButtonEditClickEventArgs
   
-  var closeUp: EventArgs = js.native
+  var closeUp: EventArgs
   
-  var dropDown: EventArgs = js.native
+  var dropDown: EventArgs
   
-  var keyDown: EditKeyEventArgs = js.native
+  var keyDown: EditKeyEventArgs
   
-  var keyPress: EditKeyEventArgs = js.native
+  var keyPress: EditKeyEventArgs
   
-  var keyUp: EditKeyEventArgs = js.native
+  var keyUp: EditKeyEventArgs
   
-  var queryCloseUp: CancelEventArgs = js.native
+  var queryCloseUp: CancelEventArgs
   
-  var textChanged: ProcessingModeEventArgs = js.native
+  var textChanged: ProcessingModeEventArgs
   
-  var userInput: EventArgs = js.native
+  var userInput: EventArgs
 }
 object BootstrapDropDownEditEventMap {
   

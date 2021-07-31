@@ -2,17 +2,15 @@ package typings.grpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var root: String = js.native
+    var root: String
   }
   object File {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Serviceurl extends StObject {
     
-    var service_url: String = js.native
+    var service_url: String
   }
   object Serviceurl {
     

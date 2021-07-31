@@ -2,17 +2,15 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SankeyNodeStyleOptions extends StObject {
   
-  var fillColor: js.UndefOr[js.Any] = js.native
+  var fillColor: js.UndefOr[js.Any] = js.undefined
   
-  var strokeColor: js.UndefOr[js.Any] = js.native
+  var strokeColor: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[js.Any] = js.undefined
 }
 object SankeyNodeStyleOptions {
   

@@ -2,22 +2,20 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISeriesList extends StObject {
   
-  def anyUsesAxes(): Boolean = js.native
+  def anyUsesAxes(): Boolean
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  def clicked(position: IPoint): Boolean = js.native
+  def clicked(position: IPoint): Boolean
   
   //each(f: function): void;
-  def firstVisible(): ISeries = js.native
+  def firstVisible(): ISeries
   
-  var items: js.Array[ISeries] = js.native
+  var items: js.Array[ISeries]
 }
 object ISeriesList {
   

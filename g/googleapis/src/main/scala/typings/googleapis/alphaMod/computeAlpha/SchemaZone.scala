@@ -2,66 +2,64 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Zone resource. (== resource_for beta.zones ==) (== resource_for v1.zones
   * ==)
   */
-@js.native
 trait SchemaZone extends StObject {
   
   /**
     * [Output Only] Available cpu/platform selections for the zone.
     */
-  var availableCpuPlatforms: js.UndefOr[js.Array[String]] = js.native
+  var availableCpuPlatforms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The deprecation status associated with this zone.
     */
-  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.native
+  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.undefined
   
   /**
     * [Output Only] Textual description of the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#zone for zones.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Full URL reference to the region which hosts the zone.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Status of the zone, either UP or DOWN.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaZone {
   

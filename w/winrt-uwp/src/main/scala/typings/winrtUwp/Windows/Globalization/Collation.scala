@@ -6,21 +6,19 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsCharacterGrouping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides read-only lists of character groupings. */
 object Collation {
   
   /** A container for character group information. Characters are grouped in an index that enables an application to determine where the grouping boundaries are. */
-  @js.native
   trait CharacterGrouping extends StObject {
     
     /** Gets the first item that appears in the grouping under this index. */
-    var first: String = js.native
+    var first: String
     
     /** Gets the label that is associated with this index. */
-    var label: String = js.native
+    var label: String
   }
   object CharacterGrouping {
     
@@ -43,7 +41,9 @@ object Collation {
   
   /** Contains the set of character groups and the functionality to get the label for any given string. */
   @js.native
-  trait CharacterGroupings extends Array[CharacterGrouping] {
+  trait CharacterGroupings
+    extends StObject
+       with Array[CharacterGrouping] {
     
     /**
       * Returns an iterator to enumerate the items in the set of character groups.

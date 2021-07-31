@@ -2,25 +2,26 @@ package typings.cwiseParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, js.Any]): CompiledRoutine = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[CompiledRoutine]
+  
   @JSImport("cwise-parser", JSImport.Namespace)
   @js.native
-  def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, _]): CompiledRoutine = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait CompiledArgument extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var lvalue: Boolean = js.native
+    var lvalue: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var rvalue: Boolean = js.native
+    var rvalue: Boolean
   }
   object CompiledArgument {
     
@@ -47,16 +48,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CompiledRoutine extends StObject {
     
-    var args: js.Array[CompiledArgument] = js.native
+    var args: js.Array[CompiledArgument]
     
-    var body: String = js.native
+    var body: String
     
-    var localVars: js.Array[String] = js.native
+    var localVars: js.Array[String]
     
-    var thisVars: js.Array[String] = js.native
+    var thisVars: js.Array[String]
   }
   object CompiledRoutine {
     

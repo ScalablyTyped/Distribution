@@ -4,12 +4,13 @@ import typings.coinbase.coinbaseStrings.address
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Address")
 @js.native
-class Address () extends Resource {
+class Address ()
+  extends StObject
+     with Resource {
   
   /**
     * Bitcoin, Litecoin or Ethereum address
@@ -30,6 +31,11 @@ class Address () extends Resource {
     */
   var name: js.UndefOr[String] = js.native
   
+  /**
+    * Resource type
+    */
+  /* CompleteClass */
+  var resource: ResourceType = js.native
   /**
     * Type of resource, constant string "address"
     */

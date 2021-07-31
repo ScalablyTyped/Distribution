@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Required  nutrient modifications
   */
-@js.native
-trait NutritionOrderOralDietNutrient extends BackboneElement {
+trait NutritionOrderOralDietNutrient
+  extends StObject
+     with BackboneElement {
   
   /**
     * Quantity of the specified nutrient
     */
-  var amount: js.UndefOr[Quantity] = js.native
+  var amount: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Type of nutrient that is being modified
     */
-  var modifier: js.UndefOr[CodeableConcept] = js.native
+  var modifier: js.UndefOr[CodeableConcept] = js.undefined
 }
 object NutritionOrderOralDietNutrient {
   

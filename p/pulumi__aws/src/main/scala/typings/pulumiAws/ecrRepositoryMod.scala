@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecrRepositoryMod {
@@ -27,7 +26,7 @@ object ecrRepositoryMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RepositoryArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -73,6 +72,10 @@ object ecrRepositoryMod {
   /* static members */
   object Repository {
     
+    @JSImport("@pulumi/aws/ecr/repository", "Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -82,29 +85,23 @@ object ecrRepositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecr/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Repository = js.native
-    @JSImport("@pulumi/aws/ecr/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Repository = js.native
-    @JSImport("@pulumi/aws/ecr/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): Repository = js.native
-    @JSImport("@pulumi/aws/ecr/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecr/repository", "Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean]
   }
   
-  @js.native
   trait RepositoryArgs extends StObject {
     
     /**
@@ -114,27 +111,27 @@ object ecrRepositoryMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block that defines image scanning configuration for the repository. By default, image scanning must be manually triggered. See the [ECR User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) for more information about image scanning.
       */
-    val imageScanningConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]] = js.native
+    val imageScanningConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]] = js.undefined
     
     /**
       * The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
       */
-    val imageTagMutability: js.UndefOr[Input[String]] = js.native
+    val imageTagMutability: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the repository.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RepositoryArgs {
     
@@ -186,13 +183,12 @@ object ecrRepositoryMod {
     }
   }
   
-  @js.native
   trait RepositoryState extends StObject {
     
     /**
       * Full ARN of the repository.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Encryption configuration for the repository. See below for schema.
@@ -201,37 +197,37 @@ object ecrRepositoryMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block that defines image scanning configuration for the repository. By default, image scanning must be manually triggered. See the [ECR User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) for more information about image scanning.
       */
-    val imageScanningConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]] = js.native
+    val imageScanningConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]] = js.undefined
     
     /**
       * The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
       */
-    val imageTagMutability: js.UndefOr[Input[String]] = js.native
+    val imageTagMutability: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the repository.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The registry ID where the repository was created.
       */
-    val registryId: js.UndefOr[Input[String]] = js.native
+    val registryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`).
       */
-    val repositoryUrl: js.UndefOr[Input[String]] = js.native
+    val repositoryUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RepositoryState {
     

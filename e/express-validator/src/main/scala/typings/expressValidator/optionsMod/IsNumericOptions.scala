@@ -2,15 +2,13 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsNumericOptions extends StObject {
   
-  var locale: js.UndefOr[AlphanumericLocale] = js.native
+  var locale: js.UndefOr[AlphanumericLocale] = js.undefined
   
-  var no_symbols: Boolean = js.native
+  var no_symbols: Boolean
 }
 object IsNumericOptions {
   

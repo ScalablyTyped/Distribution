@@ -2,19 +2,19 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Geolocation extends EventBindable {
+trait Geolocation
+  extends StObject
+     with EventBindable {
   
-  def clearWatch(watchId: Double): Double = js.native
+  def clearWatch(watchId: Double): Double
   
-  def getCurrentPosition(): Unit = js.native
+  def getCurrentPosition(): Unit
   
-  def isSupported(): Boolean = js.native
+  def isSupported(): Boolean
   
-  def watchPosition(): Double = js.native
+  def watchPosition(): Double
 }
 object Geolocation {
   

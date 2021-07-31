@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration controlling usage of a service.
   */
-@js.native
 trait SchemaUsage extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaUsage extends StObject {
     * name of a Cloud Pub/Sub topic that uses the Cloud Pub/Sub topic name
     * format documented in https://cloud.google.com/pubsub/docs/overview.
     */
-  var producerNotificationChannel: js.UndefOr[String] = js.native
+  var producerNotificationChannel: js.UndefOr[String] = js.undefined
   
   /**
     * Requirements that must be satisfied before a consumer project can use the
@@ -27,13 +25,13 @@ trait SchemaUsage extends StObject {
     * &lt;service.name&gt;/&lt;requirement-id&gt;; for example
     * &#39;serviceusage.googleapis.com/billing-enabled&#39;.
     */
-  var requirements: js.UndefOr[js.Array[String]] = js.native
+  var requirements: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of usage rules that apply to individual API methods.  **NOTE:**
     * All service configuration rules follow &quot;last one wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaUsageRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaUsageRule]] = js.undefined
 }
 object SchemaUsage {
   

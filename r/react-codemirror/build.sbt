@@ -1,19 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-codemirror"
-version := "v1.0.0-dt-20201002Z-dab4a9"
-scalaVersion := "2.13.3"
+version := "v1.0.0-dt-20201002Z-a4bf55"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20201121Z-5b9fa0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20201002Z-b374c7",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
-  "org.scalablytyped" %%% "std" % "4.1-40053c",
-  "org.scalablytyped" %%% "tern" % "0.23-dt-20200515Z-dde0c9")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20201121Z-4c8aa8",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20201002Z-1a0b24",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "std" % "4.1-044efb",
+  "org.scalablytyped" %%% "tern" % "0.23-dt-20200515Z-cc5639")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

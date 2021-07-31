@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamClassSettings extends StObject {
   
   /**
     * If set to true, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has
     * enabled the setting globally.
     */
-  var notifyGuardiansAboutAssignments: js.UndefOr[NullableOption[Boolean]] = js.native
+  var notifyGuardiansAboutAssignments: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object TeamClassSettings {
   

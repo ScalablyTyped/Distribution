@@ -2,15 +2,13 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableExpression extends StObject {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var variable: VariableTerm = js.native
+  var variable: VariableTerm
 }
 object VariableExpression {
   

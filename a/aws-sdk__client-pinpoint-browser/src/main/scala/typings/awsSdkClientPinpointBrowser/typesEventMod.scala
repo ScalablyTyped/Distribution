@@ -6,43 +6,41 @@ import typings.awsSdkClientPinpointBrowser.typesSessionMod.UnmarshalledSession
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventMod {
   
-  @js.native
   trait Event extends StObject {
     
     /**
       * Custom attributes that are associated with the event you're adding or updating.
       */
-    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * The version of the SDK that's running on the client device.
       */
-    var ClientSdkVersion: js.UndefOr[String] = js.native
+    var ClientSdkVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the custom event that you're recording.
       */
-    var EventType: js.UndefOr[String] = js.native
+    var EventType: js.UndefOr[String] = js.undefined
     
     /**
       * Custom metrics related to the event.
       */
-    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.native
+    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * Information about the session in which the event occurred.
       */
-    var Session: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSessionMod.Session] = js.native
+    var Session: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSessionMod.Session] = js.undefined
     
     /**
       * The date and time when the event occurred, in ISO 8601 format.
       */
-    var Timestamp: js.UndefOr[String] = js.native
+    var Timestamp: js.UndefOr[String] = js.undefined
   }
   object Event {
     
@@ -93,26 +91,27 @@ object typesEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEvent extends Event {
+  trait UnmarshalledEvent
+    extends StObject
+       with Event {
     
     /**
       * Custom attributes that are associated with the event you're adding or updating.
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledEvent: js.UndefOr[StringDictionary[String]] = js.native
+    var Attributes_UnmarshalledEvent: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Custom metrics related to the event.
       */
     @JSName("Metrics")
-    var Metrics_UnmarshalledEvent: js.UndefOr[StringDictionary[Double]] = js.native
+    var Metrics_UnmarshalledEvent: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Information about the session in which the event occurred.
       */
     @JSName("Session")
-    var Session_UnmarshalledEvent: js.UndefOr[UnmarshalledSession] = js.native
+    var Session_UnmarshalledEvent: js.UndefOr[UnmarshalledSession] = js.undefined
   }
   object UnmarshalledEvent {
     

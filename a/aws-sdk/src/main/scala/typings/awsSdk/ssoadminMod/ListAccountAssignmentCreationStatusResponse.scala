@@ -2,21 +2,19 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccountAssignmentCreationStatusResponse extends StObject {
   
   /**
     * The status object for the account assignment creation operation.
     */
-  var AccountAssignmentsCreationStatus: js.UndefOr[AccountAssignmentOperationStatusList] = js.native
+  var AccountAssignmentsCreationStatus: js.UndefOr[AccountAssignmentOperationStatusList] = js.undefined
   
   /**
     * The pagination token for the list API. Initially the value is null. Use the output of previous API calls to make subsequent calls.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListAccountAssignmentCreationStatusResponse {
   

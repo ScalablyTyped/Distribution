@@ -2,22 +2,20 @@ package typings.uifabricReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Condition extends StObject {
     
     /** Whether the condition is met */
-    var condition: Boolean = js.native
+    var condition: Boolean
     
     /** Name of the prop that the condition is based on */
-    var conditionalPropName: String = js.native
+    var conditionalPropName: String
     
     /** Props required when the condition is met */
-    var requiredProps: js.Array[String] = js.native
+    var requiredProps: js.Array[String]
   }
   object Condition {
     

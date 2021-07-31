@@ -2,13 +2,11 @@ package typings.reactOverlays.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreventScroll extends StObject {
   
-  var preventScroll: Boolean = js.native
+  var preventScroll: Boolean
 }
 object PreventScroll {
   

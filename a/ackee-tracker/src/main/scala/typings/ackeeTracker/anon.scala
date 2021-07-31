@@ -6,7 +6,6 @@ import typings.ackeeTracker.mod.DefaultData
 import typings.ackeeTracker.mod.DetailedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -16,13 +15,12 @@ object anon {
     
     def apply(): DefaultData = js.native
     def apply(detailed: `false`): DefaultData = js.native
-    def apply(detailed: `true`): DefaultData with DetailedData = js.native
+    def apply(detailed: `true`): DefaultData & DetailedData = js.native
   }
   
-  @js.native
   trait Stop extends StObject {
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Stop {
     

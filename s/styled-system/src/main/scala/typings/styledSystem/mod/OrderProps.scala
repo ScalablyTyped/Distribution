@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait OrderProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject
     */
   var order: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object OrderProps {
   
@@ -30,12 +28,12 @@ object OrderProps {
   }
   
   @scala.inline
-  implicit class OrderPropsMutableBuilder[Self <: OrderProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with OrderProps[ThemeType]) extends AnyVal {
+  implicit class OrderPropsMutableBuilder[Self <: OrderProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OrderProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setOrder(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object OrderProps {
     def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrderVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "order", js.Array(value :_*))
+    def setOrderVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
+    ): Self = StObject.set(x, "order", js.Array(value :_*))
   }
 }

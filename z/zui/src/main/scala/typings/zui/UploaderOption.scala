@@ -7,124 +7,122 @@ import typings.zui.anon.Id
 import typings.zui.anon.Maxfilesize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * uploader
   */
-@js.native
 trait UploaderOption extends StObject {
   
-  var autoUpload: js.UndefOr[Boolean] = js.native
+  var autoUpload: js.UndefOr[Boolean] = js.undefined
   
-  var browseByClickList: js.UndefOr[Boolean] = js.native
+  var browseByClickList: js.UndefOr[Boolean] = js.undefined
   
-  var browse_button: js.UndefOr[String] = js.native
+  var browse_button: js.UndefOr[String] = js.undefined
   
-  var chunk_size: js.UndefOr[String] = js.native
+  var chunk_size: js.UndefOr[String] = js.undefined
   
-  var deleteActionOnDone: js.UndefOr[Boolean] = js.native
+  var deleteActionOnDone: js.UndefOr[Boolean] = js.undefined
   
-  var deleteConfirm: js.UndefOr[Boolean | String] = js.native
+  var deleteConfirm: js.UndefOr[Boolean | String] = js.undefined
   
-  var dropPlaceholder: js.UndefOr[Boolean] = js.native
+  var dropPlaceholder: js.UndefOr[Boolean] = js.undefined
   
-  var drop_element: js.UndefOr[String] = js.native
+  var drop_element: js.UndefOr[String] = js.undefined
   
-  var fileFormater: js.UndefOr[js.Function3[/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS, Unit]] = js.native
+  var fileFormater: js.UndefOr[js.Function3[/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS, Unit]] = js.undefined
   
   var fileIconCreator: js.UndefOr[
     js.Function3[/* fileType */ String, /* file */ FileObj, /* uploader */ Uploader, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var fileList: js.UndefOr[String] = js.native
+  var fileList: js.UndefOr[String] = js.undefined
   
-  var fileTemplate: js.UndefOr[String] = js.native
+  var fileTemplate: js.UndefOr[String] = js.undefined
   
-  var file_data_name: js.UndefOr[String] = js.native
+  var file_data_name: js.UndefOr[String] = js.undefined
   
-  var filters: js.UndefOr[Maxfilesize] = js.native
+  var filters: js.UndefOr[Maxfilesize] = js.undefined
   
-  var flash_swf_url: js.UndefOr[String] = js.native
+  var flash_swf_url: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var limitFilesCount: js.UndefOr[Boolean | Double] = js.native
+  var limitFilesCount: js.UndefOr[Boolean | Double] = js.undefined
   
-  var max_retries: js.UndefOr[Double] = js.native
+  var max_retries: js.UndefOr[Double] = js.undefined
   
-  var multi_selection: js.UndefOr[Boolean] = js.native
+  var multi_selection: js.UndefOr[Boolean] = js.undefined
   
-  var multipart: js.UndefOr[Boolean] = js.native
+  var multipart: js.UndefOr[Boolean] = js.undefined
   
-  var multipart_params: js.UndefOr[js.Object | CallBack] = js.native
+  var multipart_params: js.UndefOr[js.Object | CallBack] = js.undefined
   
-  var onBeforeUpload: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.native
+  var onBeforeUpload: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   
-  var onChunkUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.native
+  var onChunkUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
   
-  var onFileUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.native
+  var onFileUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
   
-  var onFilesAdded: js.UndefOr[js.Function1[/* fiels */ js.Array[FileObj], Unit]] = js.native
+  var onFilesAdded: js.UndefOr[js.Function1[/* fiels */ js.Array[FileObj], Unit]] = js.undefined
   
-  var onFilesRemoved: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.native
+  var onFilesRemoved: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.undefined
   
-  var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+  var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onQueueChanged: js.UndefOr[js.Function0[Unit]] = js.native
+  var onQueueChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onStateChanged: js.UndefOr[js.Function1[/* status */ STATUS, Unit]] = js.native
+  var onStateChanged: js.UndefOr[js.Function1[/* status */ STATUS, Unit]] = js.undefined
   
-  var onUploadComplete: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.native
+  var onUploadComplete: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.undefined
   
-  var onUploadFile: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.native
+  var onUploadFile: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   
-  var onUploadProgress: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.native
+  var onUploadProgress: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   
-  var previewImageIcon: js.UndefOr[Boolean] = js.native
+  var previewImageIcon: js.UndefOr[Boolean] = js.undefined
   
-  var previewImageSize: js.UndefOr[Height] = js.native
+  var previewImageSize: js.UndefOr[Height] = js.undefined
   
-  var qiniu: js.UndefOr[js.Object] = js.native
+  var qiniu: js.UndefOr[js.Object] = js.undefined
   
-  var removeUploaded: js.UndefOr[Boolean] = js.native
+  var removeUploaded: js.UndefOr[Boolean] = js.undefined
   
-  var rename: js.UndefOr[Boolean] = js.native
+  var rename: js.UndefOr[Boolean] = js.undefined
   
-  var renameActionOnDone: js.UndefOr[Boolean] = js.native
+  var renameActionOnDone: js.UndefOr[Boolean] = js.undefined
   
-  var renameByClick: js.UndefOr[Boolean] = js.native
+  var renameByClick: js.UndefOr[Boolean] = js.undefined
   
-  var renameExtension: js.UndefOr[Boolean] = js.native
+  var renameExtension: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[Crop] = js.native
+  var resize: js.UndefOr[Crop] = js.undefined
   
-  var responseHandler: js.UndefOr[Boolean | CallBack] = js.native
+  var responseHandler: js.UndefOr[Boolean | CallBack] = js.undefined
   
-  var runtimes: js.UndefOr[String] = js.native
+  var runtimes: js.UndefOr[String] = js.undefined
   
-  var sendFileId: js.UndefOr[Boolean] = js.native
+  var sendFileId: js.UndefOr[Boolean] = js.undefined
   
-  var sendFileName: js.UndefOr[Boolean] = js.native
+  var sendFileName: js.UndefOr[Boolean] = js.undefined
   
-  var silverlight_xap_url: js.UndefOr[String] = js.native
+  var silverlight_xap_url: js.UndefOr[String] = js.undefined
   
-  var staticFiles: js.UndefOr[js.Array[Id]] = js.native
+  var staticFiles: js.UndefOr[js.Array[Id]] = js.undefined
   
   var statusCreator: js.UndefOr[
     js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var unique_names: js.UndefOr[Boolean] = js.native
+  var unique_names: js.UndefOr[Boolean] = js.undefined
   
-  var uploadedMessage: js.UndefOr[Boolean] = js.native
+  var uploadedMessage: js.UndefOr[Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object UploaderOption {
   

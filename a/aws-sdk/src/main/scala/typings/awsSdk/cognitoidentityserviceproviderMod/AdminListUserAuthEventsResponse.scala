@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminListUserAuthEventsResponse extends StObject {
   
   /**
     * The response object. It includes the EventID, EventType, CreationDate, EventRisk, and EventResponse.
     */
-  var AuthEvents: js.UndefOr[AuthEventsType] = js.native
+  var AuthEvents: js.UndefOr[AuthEventsType] = js.undefined
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
 }
 object AdminListUserAuthEventsResponse {
   

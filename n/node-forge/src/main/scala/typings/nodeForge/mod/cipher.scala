@@ -4,24 +4,23 @@ import typings.nodeForge.mod.util.ByteBuffer
 import typings.nodeForge.mod.util.ByteStringBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cipher {
   
-  @JSImport("node-forge", "cipher.createCipher")
+  @JSImport("node-forge", "cipher")
   @js.native
-  def createCipher(algorithm: Algorithm, payload: Bytes): BlockCipher = js.native
-  @JSImport("node-forge", "cipher.createCipher")
-  @js.native
-  def createCipher(algorithm: Algorithm, payload: ByteBuffer): BlockCipher = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-forge", "cipher.createDecipher")
-  @js.native
-  def createDecipher(algorithm: Algorithm, payload: Bytes): BlockCipher = js.native
-  @JSImport("node-forge", "cipher.createDecipher")
-  @js.native
-  def createDecipher(algorithm: Algorithm, payload: ByteBuffer): BlockCipher = js.native
+  @scala.inline
+  def createCipher(algorithm: Algorithm, payload: Bytes): BlockCipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[BlockCipher]
+  @scala.inline
+  def createCipher(algorithm: Algorithm, payload: ByteBuffer): BlockCipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[BlockCipher]
+  
+  @scala.inline
+  def createDecipher(algorithm: Algorithm, payload: Bytes): BlockCipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[BlockCipher]
+  @scala.inline
+  def createDecipher(algorithm: Algorithm, payload: ByteBuffer): BlockCipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[BlockCipher]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.nodeForgeStrings.`AES-ECB`
@@ -84,10 +83,9 @@ object cipher {
     def update(payload: ByteBuffer): Unit = js.native
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var tag: ByteStringBuffer = js.native
+    var tag: ByteStringBuffer
   }
   object Mode {
     
@@ -105,16 +103,15 @@ object cipher {
     }
   }
   
-  @js.native
   trait StartOptions extends StObject {
     
-    var additionalData: js.UndefOr[String] = js.native
+    var additionalData: js.UndefOr[String] = js.undefined
     
-    var iv: js.UndefOr[ByteBuffer | js.Array[Byte] | Bytes] = js.native
+    var iv: js.UndefOr[ByteBuffer | js.Array[Byte] | Bytes] = js.undefined
     
-    var tag: js.UndefOr[ByteStringBuffer] = js.native
+    var tag: js.UndefOr[ByteStringBuffer] = js.undefined
     
-    var tagLength: js.UndefOr[Double] = js.native
+    var tagLength: js.UndefOr[Double] = js.undefined
   }
   object StartOptions {
     

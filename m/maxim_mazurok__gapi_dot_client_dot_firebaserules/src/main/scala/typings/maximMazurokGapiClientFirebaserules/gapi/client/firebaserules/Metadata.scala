@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /** Services that this ruleset has declarations for (e.g., "cloud.firestore"). There may be 0+ of these. */
-  var services: js.UndefOr[js.Array[String]] = js.native
+  var services: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Metadata {
   

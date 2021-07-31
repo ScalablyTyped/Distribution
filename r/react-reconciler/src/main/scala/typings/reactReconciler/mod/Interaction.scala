@@ -2,20 +2,18 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // scheduler/Tracing
-@js.native
 trait Interaction extends StObject {
   
-  var __count: Double = js.native
+  var __count: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object Interaction {
   

@@ -12,7 +12,7 @@ return a throttled function
 | Keywords           | function, throttle, no-dependencies, just |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 140799 |
+| # downloads        | 161429 |
 | # stars            | 0 |
 
 ## Links

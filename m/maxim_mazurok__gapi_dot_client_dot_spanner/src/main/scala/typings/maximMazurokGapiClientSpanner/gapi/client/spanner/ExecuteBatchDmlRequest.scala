@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteBatchDmlRequest extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait ExecuteBatchDmlRequest extends StObject {
     * will succeed. The sequence number must be monotonically increasing within the transaction. If a request arrives for the first time with an out-of-order sequence number, the
     * transaction may be aborted. Replays of previously handled requests will yield the same response as the first execution.
     */
-  var seqno: js.UndefOr[String] = js.native
+  var seqno: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The list of statements to execute in this batch. Statements are executed serially, such that the effects of statement `i` are visible to statement `i+1`. Each statement
     * must be a DML statement. Execution stops at the first failed statement; the remaining statements are not executed. Callers must provide at least one statement.
     */
-  var statements: js.UndefOr[js.Array[Statement]] = js.native
+  var statements: js.UndefOr[js.Array[Statement]] = js.undefined
   
   /**
     * Required. The transaction to use. Must be a read-write transaction. To protect against replays, single-use transactions are not supported. The caller must either supply an existing
     * transaction ID or begin a new transaction.
     */
-  var transaction: js.UndefOr[TransactionSelector] = js.native
+  var transaction: js.UndefOr[TransactionSelector] = js.undefined
 }
 object ExecuteBatchDmlRequest {
   

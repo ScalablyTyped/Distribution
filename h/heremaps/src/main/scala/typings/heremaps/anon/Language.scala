@@ -2,15 +2,13 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Language extends StObject {
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var route: js.UndefOr[js.Array[Leg]] = js.native
+  var route: js.UndefOr[js.Array[Leg]] = js.undefined
 }
 object Language {
   

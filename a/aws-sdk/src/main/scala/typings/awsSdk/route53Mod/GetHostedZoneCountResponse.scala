@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostedZoneCountResponse extends StObject {
   
   /**
     * The total number of public and private hosted zones that are associated with the current AWS account.
     */
-  var HostedZoneCount: typings.awsSdk.route53Mod.HostedZoneCount = js.native
+  var HostedZoneCount: typings.awsSdk.route53Mod.HostedZoneCount
 }
 object GetHostedZoneCountResponse {
   

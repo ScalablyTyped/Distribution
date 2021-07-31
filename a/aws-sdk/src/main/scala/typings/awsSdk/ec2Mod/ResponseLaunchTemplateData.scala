@@ -2,146 +2,144 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseLaunchTemplateData extends StObject {
   
   /**
     * The block device mappings.
     */
-  var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingList] = js.undefined
   
   /**
     * Information about the Capacity Reservation targeting option.
     */
-  var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationResponse] = js.native
+  var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationResponse] = js.undefined
   
   /**
     * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
     */
-  var CpuOptions: js.UndefOr[LaunchTemplateCpuOptions] = js.native
+  var CpuOptions: js.UndefOr[LaunchTemplateCpuOptions] = js.undefined
   
   /**
     * The credit option for CPU usage of the instance.
     */
-  var CreditSpecification: js.UndefOr[typings.awsSdk.ec2Mod.CreditSpecification] = js.native
+  var CreditSpecification: js.UndefOr[typings.awsSdk.ec2Mod.CreditSpecification] = js.undefined
   
   /**
     * If set to true, indicates that the instance cannot be terminated using the Amazon EC2 console, command line tool, or API.
     */
-  var DisableApiTermination: js.UndefOr[Boolean] = js.native
+  var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for Amazon EBS I/O. 
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The elastic GPU specification.
     */
-  var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationResponseList] = js.native
+  var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationResponseList] = js.undefined
   
   /**
     *  The elastic inference accelerator for the instance. 
     */
-  var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorResponseList] = js.native
+  var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorResponseList] = js.undefined
   
   /**
     * Indicates whether the instance is enabled for AWS Nitro Enclaves.
     */
-  var EnclaveOptions: js.UndefOr[LaunchTemplateEnclaveOptions] = js.native
+  var EnclaveOptions: js.UndefOr[LaunchTemplateEnclaveOptions] = js.undefined
   
   /**
     * Indicates whether an instance is configured for hibernation. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
     */
-  var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptions] = js.native
+  var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptions] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecification] = js.native
+  var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecification] = js.undefined
   
   /**
     * The ID of the AMI that was used to launch the instance.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
     */
-  var InstanceInitiatedShutdownBehavior: js.UndefOr[ShutdownBehavior] = js.native
+  var InstanceInitiatedShutdownBehavior: js.UndefOr[ShutdownBehavior] = js.undefined
   
   /**
     * The market (purchasing) option for the instances.
     */
-  var InstanceMarketOptions: js.UndefOr[LaunchTemplateInstanceMarketOptions] = js.native
+  var InstanceMarketOptions: js.UndefOr[LaunchTemplateInstanceMarketOptions] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The ID of the kernel, if applicable.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The license configurations.
     */
-  var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseList] = js.native
+  var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseList] = js.undefined
   
   /**
     * The metadata options for the instance. For more information, see Instance Metadata and User Data in the Amazon Elastic Compute Cloud User Guide.
     */
-  var MetadataOptions: js.UndefOr[LaunchTemplateInstanceMetadataOptions] = js.native
+  var MetadataOptions: js.UndefOr[LaunchTemplateInstanceMetadataOptions] = js.undefined
   
   /**
     * The monitoring for the instance.
     */
-  var Monitoring: js.UndefOr[LaunchTemplatesMonitoring] = js.native
+  var Monitoring: js.UndefOr[LaunchTemplatesMonitoring] = js.undefined
   
   /**
     * The network interfaces.
     */
-  var NetworkInterfaces: js.UndefOr[LaunchTemplateInstanceNetworkInterfaceSpecificationList] = js.native
+  var NetworkInterfaces: js.UndefOr[LaunchTemplateInstanceNetworkInterfaceSpecificationList] = js.undefined
   
   /**
     * The placement of the instance.
     */
-  var Placement: js.UndefOr[LaunchTemplatePlacement] = js.native
+  var Placement: js.UndefOr[LaunchTemplatePlacement] = js.undefined
   
   /**
     * The ID of the RAM disk, if applicable.
     */
-  var RamDiskId: js.UndefOr[String] = js.native
+  var RamDiskId: js.UndefOr[String] = js.undefined
   
   /**
     * The security group IDs.
     */
-  var SecurityGroupIds: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroupIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The security group names.
     */
-  var SecurityGroups: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroups: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The tags.
     */
-  var TagSpecifications: js.UndefOr[LaunchTemplateTagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[LaunchTemplateTagSpecificationList] = js.undefined
   
   /**
     * The user data for the instance. 
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
 }
 object ResponseLaunchTemplateData {
   

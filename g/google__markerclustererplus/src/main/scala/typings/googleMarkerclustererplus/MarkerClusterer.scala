@@ -6,11 +6,12 @@ import typings.googlemaps.google.maps.Marker
 import typings.googlemaps.google.maps.OverlayView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerClusterer extends OverlayView {
+trait MarkerClusterer
+  extends StObject
+     with OverlayView {
   
   /**
     * Adds a marker to the clusterer. The clusters are redrawn unless
@@ -260,9 +261,9 @@ trait MarkerClusterer extends OverlayView {
     * @return True if the marker was removed from the clusterer.
     */
   def removeMarker(marker: Marker): Boolean = js.native
-  def removeMarker(marker: Marker, noDraw: js.UndefOr[scala.Nothing], noMapRemove: Boolean): Boolean = js.native
   def removeMarker(marker: Marker, noDraw: Boolean): Boolean = js.native
   def removeMarker(marker: Marker, noDraw: Boolean, noMapRemove: Boolean): Boolean = js.native
+  def removeMarker(marker: Marker, noDraw: Unit, noMapRemove: Boolean): Boolean = js.native
   
   /**
     * Removes a marker and returns true if removed, false if not.
@@ -285,9 +286,9 @@ trait MarkerClusterer extends OverlayView {
     * @return True if markers were removed from the clusterer.
     */
   def removeMarkers(markers: js.Array[Marker]): Boolean = js.native
-  def removeMarkers(markers: js.Array[Marker], noDraw: js.UndefOr[scala.Nothing], noMapRemove: Boolean): Boolean = js.native
   def removeMarkers(markers: js.Array[Marker], noDraw: Boolean): Boolean = js.native
   def removeMarkers(markers: js.Array[Marker], noDraw: Boolean, noMapRemove: Boolean): Boolean = js.native
+  def removeMarkers(markers: js.Array[Marker], noDraw: Unit, noMapRemove: Boolean): Boolean = js.native
   
   /**
     * Recalculates and redraws all the marker clusters from scratch.

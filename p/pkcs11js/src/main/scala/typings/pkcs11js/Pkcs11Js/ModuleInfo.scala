@@ -2,21 +2,19 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleInfo extends StObject {
   
-  var cryptokiVersion: Version = js.native
+  var cryptokiVersion: Version
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var libraryDescription: String = js.native
+  var libraryDescription: String
   
-  var libraryVersion: Version = js.native
+  var libraryVersion: Version
   
-  var manufacturerID: String = js.native
+  var manufacturerID: String
 }
 object ModuleInfo {
   

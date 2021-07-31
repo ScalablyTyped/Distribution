@@ -2,23 +2,21 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X11Info extends StObject {
   
   /** The X11 authentication cookie encoded in hexadecimal. */
-  var cookie: String = js.native
+  var cookie: String
   
   /** The name of the X11 authentication method used. */
-  var protocol: String = js.native
+  var protocol: String
   
   /** The screen number for which to forward X11 connections. */
-  var screen: Double = js.native
+  var screen: Double
   
   /** true if only a single connection should be forwarded. */
-  var single: Boolean = js.native
+  var single: Boolean
 }
 object X11Info {
   

@@ -4,33 +4,31 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonProps extends StObject {
   
-  var accent: js.UndefOr[Boolean] = js.native
+  var accent: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String | Element] = js.native
+  var icon: js.UndefOr[String | Element] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[Text] = js.native
+  var style: js.UndefOr[Text] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var upperCase: js.UndefOr[Boolean] = js.native
+  var upperCase: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonProps {
   

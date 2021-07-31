@@ -4,30 +4,28 @@ import typings.iobroker.objectsMod.global.ioBroker.EvaluatedFileACL
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the return values of readDir */
-@js.native
 trait ReadDirResult extends StObject {
   
   /** Access rights */
-  var acl: js.UndefOr[EvaluatedFileACL] = js.native
+  var acl: js.UndefOr[EvaluatedFileACL] = js.undefined
   
   /** Date of creation */
-  var createdAt: js.UndefOr[Double] = js.native
+  var createdAt: js.UndefOr[Double] = js.undefined
   
   /** Name of the file or directory */
-  var file: String = js.native
+  var file: String
   
   /** Whether this is a directory or a file */
-  var isDir: Boolean = js.native
+  var isDir: Boolean
   
   /** Date of last modification */
-  var modifiedAt: js.UndefOr[Double] = js.native
+  var modifiedAt: js.UndefOr[Double] = js.undefined
   
   /** File system stats */
-  var stats: Stats = js.native
+  var stats: Stats
 }
 object ReadDirResult {
   

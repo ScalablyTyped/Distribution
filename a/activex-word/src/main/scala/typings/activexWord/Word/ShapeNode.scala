@@ -4,26 +4,24 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeNode extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val EditingType: MsoEditingType = js.native
+  val EditingType: MsoEditingType
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Points: js.Any = js.native
+  val Points: js.Any
   
-  val SegmentType: MsoSegmentType = js.native
+  val SegmentType: MsoSegmentType
   
   @JSName("Word.ShapeNode_typekey")
-  var WordDotShapeNode_typekey: ShapeNode = js.native
+  var WordDotShapeNode_typekey: ShapeNode
 }
 object ShapeNode {
   

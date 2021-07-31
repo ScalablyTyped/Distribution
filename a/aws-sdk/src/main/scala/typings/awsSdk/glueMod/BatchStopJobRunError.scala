@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchStopJobRunError extends StObject {
   
   /**
     * Specifies details about the error that was encountered.
     */
-  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.native
+  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.undefined
   
   /**
     * The name of the job definition that is used in the job run in question.
     */
-  var JobName: js.UndefOr[NameString] = js.native
+  var JobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The JobRunId of the job run in question.
     */
-  var JobRunId: js.UndefOr[IdString] = js.native
+  var JobRunId: js.UndefOr[IdString] = js.undefined
 }
 object BatchStopJobRunError {
   

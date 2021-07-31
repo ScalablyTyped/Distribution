@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * take place.
   * @since OOo 1.1.2
   */
-@js.native
-trait XKeyHandler extends XEventListener {
+trait XKeyHandler
+  extends StObject
+     with XEventListener {
   
   /**
     * This function is called by the broadcaster, an {@link com.sun.star.awt.XExtendedToolkit} for instance, after a key has been pressed but before it is
@@ -28,7 +28,7 @@ trait XKeyHandler extends XEventListener {
     * @param aEvent The key event informs about the pressed key.
     * @returns When `FALSE` is returned the other handlers are called and a following handling of the event by the broadcaster takes place. Otherwise, when `TRU
     */
-  def keyPressed(aEvent: KeyEvent): Boolean = js.native
+  def keyPressed(aEvent: KeyEvent): Boolean
   
   /**
     * This function is called by the broadcaster, an {@link com.sun.star.awt.XExtendedToolkit} for instance, after a key has been pressed and released. The
@@ -39,7 +39,7 @@ trait XKeyHandler extends XEventListener {
     * @param aEvent The key event informs about the pressed key.
     * @returns When `FALSE` is returned the other handlers are called and a following handling of the event by the broadcaster takes place. Otherwise, when `TRU
     */
-  def keyReleased(aEvent: KeyEvent): Boolean = js.native
+  def keyReleased(aEvent: KeyEvent): Boolean
 }
 object XKeyHandler {
   

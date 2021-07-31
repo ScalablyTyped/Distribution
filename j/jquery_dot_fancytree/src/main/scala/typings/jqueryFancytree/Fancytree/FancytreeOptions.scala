@@ -20,133 +20,132 @@ import typings.jqueryFancytree.jqueryFancytreeStrings.table
 import typings.jqueryui.JQueryUI.EffectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancytreeOptions
-  extends FancytreeEvents
+  extends StObject
+     with FancytreeEvents
      with /** Options for misc extensions - see docs for typings */
 /* extension */ StringDictionary[js.Any] {
   
   /** Make sure that the active node is always visible, i.e. its parents are expanded (default: true). */
-  var activeVisible: js.UndefOr[Boolean] = js.native
+  var activeVisible: js.UndefOr[Boolean] = js.undefined
   
   /** Default options for ajax requests. */
-  var ajax: js.UndefOr[Cache] = js.native
+  var ajax: js.UndefOr[Cache] = js.undefined
   
   /** (default: false) Add WAI-ARIA attributes to markup */
-  var aria: js.UndefOr[Boolean] = js.native
+  var aria: js.UndefOr[Boolean] = js.undefined
   
   /** Activate a node when focused with the keyboard (default: true) */
-  var autoActivate: js.UndefOr[Boolean] = js.native
+  var autoActivate: js.UndefOr[Boolean] = js.undefined
   
   /** Automatically collapse all siblings, when a node is expanded (default: false). */
-  var autoCollapse: js.UndefOr[Boolean] = js.native
+  var autoCollapse: js.UndefOr[Boolean] = js.undefined
   
   /** Scroll node into visible area, when focused by keyboard (default: false). */
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
   /** Display checkboxes to allow selection (default: false) */
   var checkbox: js.UndefOr[
     Boolean | String | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean])
-  ] = js.native
+  ] = js.undefined
   
   /** Defines what happens, when the user click a folder node. (default: activate_dblclick_expands) */
-  var clickFolderMode: js.UndefOr[FancytreeClickFolderMode] = js.native
+  var clickFolderMode: js.UndefOr[FancytreeClickFolderMode] = js.undefined
   
   /** 0..4 (null: use global setting $.ui.fancytree.debugInfo) */
-  var debugLevel: js.UndefOr[`0` | `1` | `2` | `3` | `4`] = js.native
+  var debugLevel: js.UndefOr[`0` | `1` | `2` | `3` | `4`] = js.undefined
   
   /** callback(node) is called for new nodes without a key. Must return a new unique key. (default null: generates default keys like that: "_" + counter) */
-  var defaultKey: js.UndefOr[js.Function1[/* node */ FancytreeNode, String]] = js.native
+  var defaultKey: js.UndefOr[js.Function1[/* node */ FancytreeNode, String]] = js.undefined
   
   ////////////////
   // EXTENSIONS //
   ////////////////
-  var dnd5: js.UndefOr[DragAndDrop5] = js.native
+  var dnd5: js.UndefOr[DragAndDrop5] = js.undefined
   
   /** Accept passing ajax data in a property named `d` (default: true). */
-  var enableAspx: js.UndefOr[Boolean] = js.native
+  var enableAspx: js.UndefOr[Boolean] = js.undefined
   
   /** Enable titles (default: false) */
-  var enableTitles: js.UndefOr[Boolean] = js.native
+  var enableTitles: js.UndefOr[Boolean] = js.undefined
   
   /** List of active extensions (default: []) */
-  var extensions: js.UndefOr[js.Array[dnd5 | filter | table | String]] = js.native
+  var extensions: js.UndefOr[js.Array[dnd5 | filter | table | String]] = js.undefined
   
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
   /** Set focus when node is checked by a mouse click (default: false) */
-  var focusOnSelect: js.UndefOr[Boolean] = js.native
+  var focusOnSelect: js.UndefOr[Boolean] = js.undefined
   
   /** Add `id="..."` to node markup (default: true). */
-  var generateIds: js.UndefOr[Boolean] = js.native
+  var generateIds: js.UndefOr[Boolean] = js.undefined
   
   /** Node icon url, if only filename, please use imagePath to set the path */
-  var icon: js.UndefOr[Boolean | String] = js.native
+  var icon: js.UndefOr[Boolean | String] = js.undefined
   
   /** Prefix (default: "ft_") */
-  var idPrefix: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.undefined
   
   /** Path to a folder containing icons (default: null, using 'skin/' subdirectory). */
-  var imagePath: js.UndefOr[String] = js.native
+  var imagePath: js.UndefOr[String] = js.undefined
   
   /** (default: "/") */
-  var keyPathSeparator: js.UndefOr[String] = js.native
+  var keyPathSeparator: js.UndefOr[String] = js.undefined
   
   /** Support keyboard navigation (default: true). */
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
   /** 2: top-level nodes are not collapsible (default: 1) */
-  var minExpandLevel: js.UndefOr[Double] = js.native
+  var minExpandLevel: js.UndefOr[Double] = js.undefined
   
   /** navigate to next node by typing the first letters (default: false) */
-  var quicksearch: js.UndefOr[Boolean] = js.native
+  var quicksearch: js.UndefOr[Boolean] = js.undefined
   
   /** optional margins for node.scrollIntoView() (default: {top: 0, bottom: 0}) */
-  var scrollOfs: js.UndefOr[Bottom] = js.native
+  var scrollOfs: js.UndefOr[Bottom] = js.undefined
   
   /** scrollable container for node.scrollIntoView() (default: $container) */
-  var scrollParent: js.UndefOr[JQuery | Null] = js.native
+  var scrollParent: js.UndefOr[JQuery | Null] = js.undefined
   
   /** default: multi_hier */
-  var selectMode: js.UndefOr[FancytreeSelectMode] = js.native
+  var selectMode: js.UndefOr[FancytreeSelectMode] = js.undefined
   
   /** Used to Initialize the tree. */
-  var source: js.UndefOr[js.Array[_] | js.Any] = js.native
+  var source: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
   
   /** Translation table */
-  var strings: js.UndefOr[TranslationTable] = js.native
+  var strings: js.UndefOr[TranslationTable] = js.undefined
   
   /** Add tabindex='0' to container, so tree can be reached using TAB */
-  var tabbable: js.UndefOr[Boolean] = js.native
+  var tabbable: js.UndefOr[Boolean] = js.undefined
   
-  var table: js.UndefOr[Table] = js.native
+  var table: js.UndefOr[Table] = js.undefined
   
   /** Add tabindex='0' to node title span, so it can receive keyboard focus */
-  var titlesTabbable: js.UndefOr[Boolean] = js.native
+  var titlesTabbable: js.UndefOr[Boolean] = js.undefined
   
   /** Animation options, false:off (default: { effect: "blind", options: {direction: "vertical", scale: "box"}, duration: 200 }) */
-  var toggleEffect: js.UndefOr[`false` | EffectOptions] = js.native
+  var toggleEffect: js.UndefOr[`false` | EffectOptions] = js.undefined
   
   /** Tooltips */
-  var tooltip: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.undefined
   
   /** (dynamic Option)Prevent (de-)selection using mouse or keyboard. */
   var unselectable: js.UndefOr[
     Boolean | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, js.UndefOr[Boolean]])
-  ] = js.native
+  ] = js.undefined
   
   /** (dynamic Option)Ignore this node when calculating the partsel status of parent nodes in selectMode 3 propagation. */
   var unselectableIgnore: js.UndefOr[
     Boolean | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, js.UndefOr[Boolean]])
-  ] = js.native
+  ] = js.undefined
   
   /** (dynamic Option)Use this as constant selected value (overriding selectMode 3 propagation). */
   var unselectableStatus: js.UndefOr[
     Boolean | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, js.UndefOr[Boolean]])
-  ] = js.native
+  ] = js.undefined
 }
 object FancytreeOptions {
   
@@ -333,7 +332,7 @@ object FancytreeOptions {
     def setSelectModeUndefined: Self = StObject.set(x, "selectMode", js.undefined)
     
     @scala.inline
-    def setSource(value: js.Array[_] | js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    def setSource(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)

@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options defining a data set within Google Cloud Datastore.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DatastoreOptions extends StObject {
   
   /**
     * The kind to process.
     */
-  var kind: js.UndefOr[SchemaGooglePrivacyDlpV2KindExpression] = js.native
+  var kind: js.UndefOr[SchemaGooglePrivacyDlpV2KindExpression] = js.undefined
   
   /**
     * A partition ID identifies a grouping of entities. The grouping is always
     * by project and namespace, however the namespace ID may be empty.
     */
-  var partitionId: js.UndefOr[SchemaGooglePrivacyDlpV2PartitionId] = js.native
+  var partitionId: js.UndefOr[SchemaGooglePrivacyDlpV2PartitionId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DatastoreOptions {
   

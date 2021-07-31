@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageBitmapRenderingContextSettings extends StObject {
   
-  var alpha: js.UndefOr[scala.Boolean] = js.native
+  var alpha: js.UndefOr[scala.Boolean] = js.undefined
 }
 object ImageBitmapRenderingContextSettings {
   

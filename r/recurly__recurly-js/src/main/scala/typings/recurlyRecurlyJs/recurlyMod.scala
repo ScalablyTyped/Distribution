@@ -20,20 +20,18 @@ import typings.recurlyRecurlyJs.giftCardMod.GiftCardOptions
 import typings.recurlyRecurlyJs.paypalMod.PayPal
 import typings.recurlyRecurlyJs.paypalMod.PayPalConfig
 import typings.recurlyRecurlyJs.paypalMod.PayPalInstance
-import typings.recurlyRecurlyJs.tokenMod.CustomerData
 import typings.recurlyRecurlyJs.tokenMod.Token
-import typings.recurlyRecurlyJs.tokenMod.TokenHandler
 import typings.recurlyRecurlyJs.validateMod.Validate
-import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recurlyMod {
   
   @js.native
-  trait Recurly extends Emitter[RecurlyEvent] {
+  trait Recurly
+    extends StObject
+       with Emitter[RecurlyEvent] {
     
     def Adyen(): AdyenInstance = js.native
     def Adyen(adyenOptions: AdyenOptions): AdyenInstance = js.native
@@ -164,7 +162,6 @@ object recurlyMod {
     @JSName("giftCard")
     var giftCard_Original: GiftCard = js.native
     
-    def token(elements: ElementsInstance, second: CustomerData, third: TokenHandler): Unit = js.native
     /**
       * Recurly.js works with tokens, which represent secure and temporary storage for your customer’s sensitive billing
       * information. They are stored directly on Recurly servers to reduce your PCI exposure.
@@ -174,29 +171,7 @@ object recurlyMod {
       *
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#getting-a-token|Token}
       */
-    def token(elements: ElementsInstance, second: HTMLFormElement, third: TokenHandler): Unit = js.native
-    def token(form: CustomerData, second: TokenHandler): Unit = js.native
-    /**
-      * Recurly.js works with tokens, which represent secure and temporary storage for your customer’s sensitive billing
-      * information. They are stored directly on Recurly servers to reduce your PCI exposure.
-      *
-      * When your customers submit your billing form, you’ll need to interrupt the submit and ask Recurly.js to create a
-      * token from the form.
-      *
-      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#getting-a-token|Token}
-      */
-    def token(form: HTMLFormElement, second: TokenHandler): Unit = js.native
-    /**
-      * Recurly.js works with tokens, which represent secure and temporary storage for your customer’s sensitive billing
-      * information. They are stored directly on Recurly servers to reduce your PCI exposure.
-      *
-      * When your customers submit your billing form, you’ll need to interrupt the submit and ask Recurly.js to create a
-      * token from the form.
-      *
-      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#getting-a-token|Token}
-      */
-    @JSName("token")
-    var token_Original: Token = js.native
+    var token: Token = js.native
     
     /**
       * Recurly.js bundles a few helpful methods for validating payment information prior to processing. These methods are

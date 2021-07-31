@@ -3,19 +3,17 @@ package typings.sudoPrompt
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Env extends StObject {
     
-    var env: js.UndefOr[StringDictionary[String]] = js.native
+    var env: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var icns: js.UndefOr[String] = js.native
+    var icns: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Env {
     

@@ -4,19 +4,19 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayBase64TranslatorMod {
   
-  @JSImport("@firebase/messaging/dist/helpers/array-base64-translator", "arrayToBase64")
+  @JSImport("@firebase/messaging/dist/helpers/array-base64-translator", JSImport.Namespace)
   @js.native
-  def arrayToBase64(array: ArrayBuffer): String = js.native
-  @JSImport("@firebase/messaging/dist/helpers/array-base64-translator", "arrayToBase64")
-  @js.native
-  def arrayToBase64(array: Uint8Array): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/messaging/dist/helpers/array-base64-translator", "base64ToArray")
-  @js.native
-  def base64ToArray(base64String: String): Uint8Array = js.native
+  @scala.inline
+  def arrayToBase64(array: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def arrayToBase64(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def base64ToArray(base64String: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArray")(base64String.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

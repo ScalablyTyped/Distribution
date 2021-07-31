@@ -3,15 +3,13 @@ package typings.node.cryptoMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPairSyncResult[T1 /* <: String | Buffer */, T2 /* <: String | Buffer */] extends StObject {
   
-  var privateKey: T2 = js.native
+  var privateKey: T2
   
-  var publicKey: T1 = js.native
+  var publicKey: T1
 }
 object KeyPairSyncResult {
   
@@ -22,7 +20,7 @@ object KeyPairSyncResult {
   }
   
   @scala.inline
-  implicit class KeyPairSyncResultMutableBuilder[Self <: KeyPairSyncResult[_, _], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */] (val x: Self with (KeyPairSyncResult[T1, T2])) extends AnyVal {
+  implicit class KeyPairSyncResultMutableBuilder[Self <: KeyPairSyncResult[?, ?], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */] (val x: Self & (KeyPairSyncResult[T1, T2])) extends AnyVal {
     
     @scala.inline
     def setPrivateKey(value: T2): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])

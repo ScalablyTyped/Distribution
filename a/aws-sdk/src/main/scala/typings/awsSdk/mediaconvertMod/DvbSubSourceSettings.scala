@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DvbSubSourceSettings extends StObject {
   
   /**
     * When using DVB-Sub with Burn-In or SMPTE-TT, use this PID for the source content. Unused for DVB-Sub passthrough. All DVB-Sub content is passed through, regardless of selectors.
     */
-  var Pid: js.UndefOr[integerMin1Max2147483647] = js.native
+  var Pid: js.UndefOr[integerMin1Max2147483647] = js.undefined
 }
 object DvbSubSourceSettings {
   

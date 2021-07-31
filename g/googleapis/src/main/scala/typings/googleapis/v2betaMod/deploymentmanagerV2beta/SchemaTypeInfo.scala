@@ -2,53 +2,51 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type Information. Contains detailed information about a composite type,
   * base type, or base type with specific collection.
   */
-@js.native
 trait SchemaTypeInfo extends StObject {
   
   /**
     * The description of the type.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * For swagger 2.0 externalDocs field will be used. For swagger 1.2 this
     * field will be empty.
     */
-  var documentationLink: js.UndefOr[String] = js.native
+  var documentationLink: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Type of the output. Always deploymentManager#TypeInfo for
     * TypeInfo.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The base type or composite type name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * For base types with a collection, we return a schema and documentation
     * link For template types, we return only a schema
     */
-  var schema: js.UndefOr[SchemaTypeInfoSchemaInfo] = js.native
+  var schema: js.UndefOr[SchemaTypeInfoSchemaInfo] = js.undefined
   
   /**
     * Output only. Self link for the type provider.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The title on the API descriptor URL provided.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaTypeInfo {
   

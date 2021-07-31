@@ -2,15 +2,15 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BorderlessButtonProperties extends BaseButtonProperties {
+trait BorderlessButtonProperties
+  extends StObject
+     with BaseButtonProperties {
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
 }
 object BorderlessButtonProperties {
   

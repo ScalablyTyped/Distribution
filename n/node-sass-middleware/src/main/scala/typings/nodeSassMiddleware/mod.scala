@@ -5,7 +5,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,53 +13,56 @@ object mod {
     * 
     *
     */
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("node-sass-middleware", JSImport.Namespace)
   @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options
-    extends typings.nodeSass.mod.Options {
+    extends StObject
+       with typings.nodeSass.mod.Options {
     
     /**
       * 
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * 
       */
-    var error: js.UndefOr[js.Function0[Unit]] = js.native
+    var error: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * 
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * 
       */
-    var response: js.UndefOr[Boolean] = js.native
+    var response: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * 
       */
-    var src: String = js.native
+    var src: String
   }
   object Options {
     

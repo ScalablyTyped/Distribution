@@ -2,38 +2,36 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   // configuration for ingestion from  a dynamodb table
-  var dynamodb: js.UndefOr[SourceDynamoDb] = js.native
+  var dynamodb: js.UndefOr[SourceDynamoDb] = js.undefined
   
   // file upload details
-  var file_upload: js.UndefOr[SourceFileUpload] = js.native
+  var file_upload: js.UndefOr[SourceFileUpload] = js.undefined
   
   // format parameters for data from this source
-  var format_params: js.UndefOr[FormatParams] = js.native
+  var format_params: js.UndefOr[FormatParams] = js.undefined
   
   // configuration for ingestion from GCS
-  var gcs: js.UndefOr[SourceGcs] = js.native
+  var gcs: js.UndefOr[SourceGcs] = js.undefined
   
   // name of integration to use
-  var integration_name: String = js.native
+  var integration_name: String
   
   // configuration for ingestion from kinesis stream
-  var kinesis: js.UndefOr[SourceKinesis] = js.native
+  var kinesis: js.UndefOr[SourceKinesis] = js.undefined
   
   // configuration for ingestion from Redshift
-  var redshift: js.UndefOr[SourceRedshift] = js.native
+  var redshift: js.UndefOr[SourceRedshift] = js.undefined
   
   // configuration for ingestion from S3
-  var s3: js.UndefOr[SourceS3] = js.native
+  var s3: js.UndefOr[SourceS3] = js.undefined
   
   // the ingest status of this source
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object Source {
   

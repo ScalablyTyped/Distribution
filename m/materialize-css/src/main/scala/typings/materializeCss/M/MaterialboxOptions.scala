@@ -3,47 +3,45 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaterialboxOptions extends StObject {
   
   /**
     * Transition in duration in milliseconds
     * @default 275
     */
-  var inDuration: Double = js.native
+  var inDuration: Double
   
   /**
     * Callback function called after materialbox is closed
     * @default null
     */
-  def onCloseEnd(el: Element): Unit = js.native
+  def onCloseEnd(el: Element): Unit
   
   /**
     * Callback function called before materialbox is closed
     * @default null
     */
-  def onCloseStart(el: Element): Unit = js.native
+  def onCloseStart(el: Element): Unit
   
   /**
     * Callback function called after materialbox is opened
     * @default null
     */
-  def onOpenEnd(el: Element): Unit = js.native
+  def onOpenEnd(el: Element): Unit
   
   /**
     * Callback function called before materialbox is opened
     * @default null
     */
-  def onOpenStart(el: Element): Unit = js.native
+  def onOpenStart(el: Element): Unit
   
   /**
     * Transition out duration in milliseconds
     * @default 200
     */
-  var outDuration: Double = js.native
+  var outDuration: Double
 }
 object MaterialboxOptions {
   

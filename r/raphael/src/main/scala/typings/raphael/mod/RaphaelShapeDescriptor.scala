@@ -2,83 +2,81 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<raphael.raphael.RaphaelAttributes> */
-@js.native
 trait RaphaelShapeDescriptor extends StObject {
   
-  var `arrow-end`: js.UndefOr[String] = js.native
+  var `arrow-end`: js.UndefOr[String] = js.undefined
   
-  var `clip-rect`: js.UndefOr[String] = js.native
+  var `clip-rect`: js.UndefOr[String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var `fill-opacity`: js.UndefOr[Double] = js.native
+  var `fill-opacity`: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
-  var `font-size`: js.UndefOr[Double | String] = js.native
+  var `font-size`: js.UndefOr[Double | String] = js.undefined
   
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var rx: js.UndefOr[Double] = js.native
+  var rx: js.UndefOr[Double] = js.undefined
   
-  var ry: js.UndefOr[Double] = js.native
+  var ry: js.UndefOr[Double] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var `stroke-dasharray`: js.UndefOr[RaphaelDashArrayType] = js.native
+  var `stroke-dasharray`: js.UndefOr[RaphaelDashArrayType] = js.undefined
   
-  var `stroke-linecap`: js.UndefOr[RaphaelLineCapType] = js.native
+  var `stroke-linecap`: js.UndefOr[RaphaelLineCapType] = js.undefined
   
-  var `stroke-linejoin`: js.UndefOr[RaphaelLineJoinType] = js.native
+  var `stroke-linejoin`: js.UndefOr[RaphaelLineJoinType] = js.undefined
   
-  var `stroke-miterlimit`: js.UndefOr[Double] = js.native
+  var `stroke-miterlimit`: js.UndefOr[Double] = js.undefined
   
-  var `stroke-opacity`: js.UndefOr[Double] = js.native
+  var `stroke-opacity`: js.UndefOr[Double] = js.undefined
   
-  var `stroke-width`: js.UndefOr[Double] = js.native
+  var `stroke-width`: js.UndefOr[Double] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `text-anchor`: js.UndefOr[RaphaelTextAnchorType] = js.native
+  var `text-anchor`: js.UndefOr[RaphaelTextAnchorType] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var transform: js.UndefOr[String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]] = js.native
+  var transform: js.UndefOr[String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]] = js.undefined
   
   /** Type of the shape, e.g. `circle` or `rect`. Could also be a custom plugin shape. */
-  var `type`: RaphaelShapeType | String = js.native
+  var `type`: RaphaelShapeType | String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object RaphaelShapeDescriptor {
   

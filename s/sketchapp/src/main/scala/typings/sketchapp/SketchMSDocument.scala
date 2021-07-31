@@ -3,51 +3,48 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.documentData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSDocument extends StObject {
   
-  var _class: documentData = js.native
+  var _class: documentData
   
-  var assets: SketchMSDocumentAssets = js.native
+  var assets: SketchMSDocumentAssets
   
-  var colorSpace: Double = js.native
+  var colorSpace: Double
   
-  var currentPageIndex: Double = js.native
+  var currentPageIndex: Double
   
-  var do_objectID: String = js.native
+  var do_objectID: String
   
-  var foreignSymbols: js.Array[SketchMSImmutableForeignSymbol] = js.native
+  var foreignSymbols: js.Array[SketchMSImmutableForeignSymbol]
   
-  var foreignTextStyles: js.Array[_] = js.native
+  var foreignTextStyles: js.Array[js.Any]
   
-  var layerStyles: SketchMSSharedStyleContainer = js.native
+  var layerStyles: SketchMSSharedStyleContainer
   
-  var layerSymbols: SketchMSSymbolContainers = js.native
+  var layerSymbols: SketchMSSymbolContainers
   
-  var layerTextStyles: SketchMSSharedTextStyleContainer = js.native
+  var layerTextStyles: SketchMSSharedTextStyleContainer
   
-  var pages: js.Array[SketchMSPageReference] = js.native
+  var pages: js.Array[SketchMSPageReference]
 }
 object SketchMSDocument {
   
   @scala.inline
   def apply(
-    _class: documentData,
     assets: SketchMSDocumentAssets,
     colorSpace: Double,
     currentPageIndex: Double,
     do_objectID: String,
     foreignSymbols: js.Array[SketchMSImmutableForeignSymbol],
-    foreignTextStyles: js.Array[_],
+    foreignTextStyles: js.Array[js.Any],
     layerStyles: SketchMSSharedStyleContainer,
     layerSymbols: SketchMSSymbolContainers,
     layerTextStyles: SketchMSSharedTextStyleContainer,
     pages: js.Array[SketchMSPageReference]
   ): SketchMSDocument = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], assets = assets.asInstanceOf[js.Any], colorSpace = colorSpace.asInstanceOf[js.Any], currentPageIndex = currentPageIndex.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], foreignSymbols = foreignSymbols.asInstanceOf[js.Any], foreignTextStyles = foreignTextStyles.asInstanceOf[js.Any], layerStyles = layerStyles.asInstanceOf[js.Any], layerSymbols = layerSymbols.asInstanceOf[js.Any], layerTextStyles = layerTextStyles.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "documentData", assets = assets.asInstanceOf[js.Any], colorSpace = colorSpace.asInstanceOf[js.Any], currentPageIndex = currentPageIndex.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], foreignSymbols = foreignSymbols.asInstanceOf[js.Any], foreignTextStyles = foreignTextStyles.asInstanceOf[js.Any], layerStyles = layerStyles.asInstanceOf[js.Any], layerSymbols = layerSymbols.asInstanceOf[js.Any], layerTextStyles = layerTextStyles.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSDocument]
   }
   
@@ -73,7 +70,7 @@ object SketchMSDocument {
     def setForeignSymbolsVarargs(value: SketchMSImmutableForeignSymbol*): Self = StObject.set(x, "foreignSymbols", js.Array(value :_*))
     
     @scala.inline
-    def setForeignTextStyles(value: js.Array[_]): Self = StObject.set(x, "foreignTextStyles", value.asInstanceOf[js.Any])
+    def setForeignTextStyles(value: js.Array[js.Any]): Self = StObject.set(x, "foreignTextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setForeignTextStylesVarargs(value: js.Any*): Self = StObject.set(x, "foreignTextStyles", js.Array(value :_*))

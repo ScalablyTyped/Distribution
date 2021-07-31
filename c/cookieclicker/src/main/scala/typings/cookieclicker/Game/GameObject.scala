@@ -9,304 +9,302 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameObject extends StObject {
   
   /**
     * The way the building makes cookies
     */
-  var actionName: String = js.native
+  var actionName: String
   
   /**
     * The amount of buildings owned, including free ones
     */
-  var amount: Double = js.native
+  var amount: Double
   
   /**
     * The art the building uses
     */
-  var art: Art = js.native
+  var art: Art
   
   /**
     * The CpS the building generates without any boosts
     */
-  var baseCps: Double = js.native
+  var baseCps: Double
   
   /**
     * The price the building generates without any boosts
     */
-  var basePrice: Double = js.native
+  var basePrice: Double
   
   /**
     * The amount of times a building has been bought, including free buys
     */
-  var bought: Double = js.native
+  var bought: Double
   
   /**
     * The current price displayed in store
     */
-  var bulkPrice: Double = js.native
+  var bulkPrice: Double
   
   /**
     * Buys a building
     * @param amount Amount of buildings to buy, defaults to `Game.buyBulk`
     */
-  def buy(amount: Double): Unit | `0` = js.native
+  def buy(amount: Double): Unit | `0`
   
   /**
     * Buys a building for free, while increasing the price
     * @param amount Amount of buildings to buy
     */
-  def buyFree(amount: Double): Unit = js.native
+  def buyFree(amount: Double): Unit
   
   /**
     * The function that gets called on buy
     */
-  def buyFunction(): Unit = js.native
+  def buyFunction(): Unit
   
   /**
     * The canvas for art
     */
-  var canvas: HTMLCanvasElement = js.native
+  var canvas: HTMLCanvasElement
   
   /**
     * The function to calculate CPS
     * @param me The building itself
     */
-  def cps(me: GameObject): Double = js.native
+  def cps(me: GameObject): Double
   
   /**
     * The context from canvas for the art
     */
-  var ctx: CanvasRenderingContext2D = js.native
+  var ctx: CanvasRenderingContext2D
   
   /**
     * The visual description for the building
     */
-  var desc: String = js.native
+  var desc: String
   
   /**
     * The visual name for the building(an html string)
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Redraws the art
     */
-  def draw(): Unit | `false` = js.native
+  def draw(): Unit | `false`
   
   /**
     * The function to get called, well, each frame
     */
-  var eachFrame: js.Function0[Unit] | PseudoNull = js.native
+  var eachFrame: js.Function0[Unit] | PseudoNull
   
   /**
     * The description of how the level changes the building, used for one lump, where [X] is the level
     */
-  var extraName: String = js.native
+  var extraName: String
   
   /**
     * The description of how the level changes the building, used for multiple lumps, where [X] is the level
     */
-  var extraPlural: String = js.native
+  var extraPlural: String
   
   /**
     * The fortune upgrade tied with the building
     */
-  var fortune: TieredUpgradeClass[typings.cookieclicker.cookieclickerStrings.fortune] | PseudoNull = js.native
+  var fortune: TieredUpgradeClass[typings.cookieclicker.cookieclickerStrings.fortune] | PseudoNull
   
   /**
     * The amount of buildings gotten for free
     */
-  var free: Double = js.native
+  var free: Double
   
   /**
     * Buys a building for free, while *not* increasing the price
     * @param amount Amount of buildings to get
     */
-  def getFree(amount: Double): Unit = js.native
+  def getFree(amount: Double): Unit
   
   /**
     * Convert buildings to free buildings
     * @param amount The amount of buildings to convert
     */
-  def getFreeRanks(amount: Double): Unit = js.native
+  def getFreeRanks(amount: Double): Unit
   
   /**
     * Get the current price of building
     * @param n Unused parameter
     */
-  def getPrice(n: Double): Double = js.native
+  def getPrice(n: Double): Double
   
   /**
     * Get the cookies gained by selling an amount of buildings
     * @param amount The amount of buildings to sell
     */
-  def getReverseSumPrice(amount: Double): Double = js.native
+  def getReverseSumPrice(amount: Double): Double
   
   /**
     * Gets the sell multiplier and returns it
     * As of 2.029, the multiplier is 25% * (1 + aura multiplier of Earth Shatterer)
     */
-  def getSellMultiplier(): Double = js.native
+  def getSellMultiplier(): Double
   
   /**
     * Get the price of buying an amount of buildings
     * @param amount The amount of buildings to buy
     */
-  def getSumPrice(amount: Double): Double = js.native
+  def getSumPrice(amount: Double): Double
   
-  var grandma: js.UndefOr[GrandmaSynergyClass] = js.native
+  var grandma: js.UndefOr[GrandmaSynergyClass] = js.undefined
   
   /**
     * The highest amount of buildings owned this run
     */
-  var highest: Double = js.native
+  var highest: Double
   
   /**
     * The row to be used in the big icon
     */
-  var icon: Double = js.native
+  var icon: Double
   
   /**
     * The column to be used for the icon (Tier upgrade icons are derived from this)
     */
-  var iconColumn: Double = js.native
+  var iconColumn: Double
   
   /**
     * The function that determines the buildings big icon, overridden by business day
     */
-  var iconFunc: js.UndefOr[js.Function1[/* type */ js.UndefOr[scala.Nothing], js.Tuple2[Double, Double]]] = js.native
+  var iconFunc: js.UndefOr[js.Function1[/* type */ Unit, js.Tuple2[Double, Double]]] = js.undefined
   
   /**
     * Buildings id, 0 based
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Buildings listing in store
     */
-  var l: HTMLDivElement = js.native
+  var l: HTMLDivElement
   
-  var level: Double = js.native
+  var level: Double
   
-  var levelAchiev10: Achievement = js.native
+  var levelAchiev10: Achievement
   
-  def levelTooltip(): String = js.native
+  def levelTooltip(): String
   
-  def levelUp(): js.Function0[Unit] = js.native
+  def levelUp(): js.Function0[Unit]
   
   /**
     * If the building is visually locked, is considered unlocked after CBTA is higher than the base cost
     */
-  var locked: PseudoBoolean = js.native
+  var locked: PseudoBoolean
   
-  var minigame: js.UndefOr[Minigame] = js.native
+  var minigame: js.UndefOr[Minigame] = js.undefined
   
-  var minigameLoaded: Boolean = js.native
+  var minigameLoaded: Boolean
   
-  var minigameLoading: js.UndefOr[Boolean] = js.native
+  var minigameLoading: js.UndefOr[Boolean] = js.undefined
   
-  var minigameName: String = js.native
+  var minigameName: String
   
-  var minigameSave: String = js.native
+  var minigameSave: String
   
-  var minigameUrl: String = js.native
+  var minigameUrl: String
   
-  var mouseOn: Boolean = js.native
+  var mouseOn: Boolean
   
-  var mousePos: js.Tuple2[Double, Double] = js.native
+  var mousePos: js.Tuple2[Double, Double]
   
   /**
     * Mutes or unmutes the building, depending on `val`
     * @param val The new muted status, 0 for unmuted, 1 for muted
     */
-  def mute(`val`: Double): Unit = js.native
+  def mute(`val`: Double): Unit
   
-  var muted: Double = js.native
+  var muted: Double
   
   /**
     * Same as id
     */
-  var n: Double = js.native
+  var n: Double
   
-  var name: String = js.native
+  var name: String
   
-  var onMinigame: Double = js.native
+  var onMinigame: Double
   
   /**
     * The singular pictures used in the art
     */
-  var pics: js.Array[Frame] = js.native
+  var pics: js.Array[Frame]
   
-  var plural: String = js.native
+  var plural: String
   
-  var price: Double = js.native
+  var price: Double
   
-  var productionAchievs: js.Array[ProductionAchievementRequirement] = js.native
+  var productionAchievs: js.Array[ProductionAchievementRequirement]
   
   /**
     * Updates store listing and art buttons
     */
-  def rebuild(): Unit = js.native
+  def rebuild(): Unit
   
   /**
     * Resets `this.pics`, see `draw` for actual redrawing
     */
-  def redraw(): Unit = js.native
+  def redraw(): Unit
   
   /**
     * Updates price, bulk price and art appearance, calls `rebuild`
     */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /**
     * Sells buildings without refunding the cookies
     * @param amount The amount of buildings to sacrifice
     */
-  def sacrafice(amount: Double): Unit = js.native
+  def sacrafice(amount: Double): Unit
   
   /**
     * Sells buildings and refunds a part of the cost, see `getSellMultiplier` for the exact multiplier
     * @param amount The amount of buildings to sell
     */
-  def sell(amount: Double, bypass: js.UndefOr[scala.Nothing]): Unit = js.native
+  def sell(amount: Double, bypass: Unit): Unit
   
-  var single: String = js.native
+  var single: String
   
   /**
     * Amount of CpS a building produces (as of 2.031, `this.cps` * level bonus)
     */
-  var storedCps: Double = js.native
+  var storedCps: Double
   
   /**
     *  Amount of CpS a building produces, multiplied by amount (as of 2.027, `this.cps` * level bonus)
     */
-  var storedTotalCps: Double = js.native
+  var storedTotalCps: Double
   
-  def switchMinigame(on: Double): Unit = js.native
+  def switchMinigame(on: Double): Unit
   
-  var synergies: js.Array[SynergyUpgradeClass[String]] = js.native
+  var synergies: js.Array[SynergyUpgradeClass[String]]
   
-  var tieredAchievs: js.Array[TieredAchievementClass[Double]] = js.native
+  var tieredAchievs: js.Array[TieredAchievementClass[Double]]
   
-  var tieredUpgrades: js.Array[TieredUpgradeClass[Double]] = js.native
+  var tieredUpgrades: js.Array[TieredUpgradeClass[Double]]
   
   /**
     * Generates a tooltip to show on the shop listing.
     * @return A string with the html elements
     */
-  def tooltip(): String = js.native
+  def tooltip(): String
   
   /**
     * Total cookies produced by the building
     */
-  var totalCookies: Double = js.native
+  var totalCookies: Double
   
-  var vanilla: PseudoBoolean = js.native
+  var vanilla: PseudoBoolean
 }
 object GameObject {
   
@@ -368,7 +366,7 @@ object GameObject {
     redraw: () => Unit,
     refresh: () => Unit,
     sacrafice: Double => Unit,
-    sell: (Double, js.UndefOr[scala.Nothing]) => Unit,
+    sell: (Double, Unit) => Unit,
     single: String,
     storedCps: Double,
     storedTotalCps: Double,
@@ -487,7 +485,7 @@ object GameObject {
     def setIconColumn(value: Double): Self = StObject.set(x, "iconColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconFunc(value: /* type */ js.UndefOr[scala.Nothing] => js.Tuple2[Double, Double]): Self = StObject.set(x, "iconFunc", js.Any.fromFunction1(value))
+    def setIconFunc(value: /* type */ Unit => js.Tuple2[Double, Double]): Self = StObject.set(x, "iconFunc", js.Any.fromFunction1(value))
     
     @scala.inline
     def setIconFuncUndefined: Self = StObject.set(x, "iconFunc", js.undefined)
@@ -589,7 +587,7 @@ object GameObject {
     def setSacrafice(value: Double => Unit): Self = StObject.set(x, "sacrafice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSell(value: (Double, js.UndefOr[scala.Nothing]) => Unit): Self = StObject.set(x, "sell", js.Any.fromFunction2(value))
+    def setSell(value: (Double, Unit) => Unit): Self = StObject.set(x, "sell", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSingle(value: String): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])

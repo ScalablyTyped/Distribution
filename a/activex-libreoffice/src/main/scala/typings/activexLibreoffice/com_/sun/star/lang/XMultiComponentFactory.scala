@@ -7,21 +7,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Factory interface for creating component instances giving a context from which to retrieve deployment values.
   * @see XInitialization
   */
-@js.native
-trait XMultiComponentFactory extends XInterface {
+trait XMultiComponentFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Gets the names of all supported services.
     * @returns sequence of all service names
     */
-  val AvailableServiceNames: SafeArray[String] = js.native
+  val AvailableServiceNames: SafeArray[String]
   
   /**
     * Creates an instance of a component which supports the services specified by the factory, and initializes the new instance with the given arguments and
@@ -31,7 +31,7 @@ trait XMultiComponentFactory extends XInterface {
     * @param Context context the component instance gets its deployment values from
     * @returns component instance
     */
-  def createInstanceWithArgumentsAndContext(ServiceSpecifier: String, Arguments: SeqEquiv[_], Context: XComponentContext): XInterface = js.native
+  def createInstanceWithArgumentsAndContext(ServiceSpecifier: String, Arguments: SeqEquiv[js.Any], Context: XComponentContext): XInterface
   
   /**
     * Creates an instance of a component which supports the services specified by the factory.
@@ -39,13 +39,13 @@ trait XMultiComponentFactory extends XInterface {
     * @param Context context the component instance gets its deployment values from
     * @returns component instance
     */
-  def createInstanceWithContext(aServiceSpecifier: String, Context: XComponentContext): XInterface = js.native
+  def createInstanceWithContext(aServiceSpecifier: String, Context: XComponentContext): XInterface
   
   /**
     * Gets the names of all supported services.
     * @returns sequence of all service names
     */
-  def getAvailableServiceNames(): SafeArray[String] = js.native
+  def getAvailableServiceNames(): SafeArray[String]
 }
 object XMultiComponentFactory {
   
@@ -53,7 +53,7 @@ object XMultiComponentFactory {
   def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (String, SeqEquiv[_], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,
     createInstanceWithContext: (String, XComponentContext) => XInterface,
     getAvailableServiceNames: () => SafeArray[String],
     queryInterface: `type` => js.Any,
@@ -70,7 +70,7 @@ object XMultiComponentFactory {
     def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[_], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
+    def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
     
     @scala.inline
     def setCreateInstanceWithContext(value: (String, XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction2(value))

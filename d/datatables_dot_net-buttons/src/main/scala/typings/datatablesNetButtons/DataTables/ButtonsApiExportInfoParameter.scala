@@ -2,21 +2,19 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonsApiExportInfoParameter extends StObject {
   
-  var extension: js.UndefOr[String | js.Function0[String]] = js.native
+  var `extension`: js.UndefOr[String | js.Function0[String]] = js.undefined
   
-  var filename: js.UndefOr[String | js.Function0[String]] = js.native
+  var filename: js.UndefOr[String | js.Function0[String]] = js.undefined
   
-  var messageBottom: js.UndefOr[Null | String | js.Function0[String]] = js.native
+  var messageBottom: js.UndefOr[Null | String | js.Function0[String]] = js.undefined
   
-  var messageTop: js.UndefOr[Null | String | js.Function0[String]] = js.native
+  var messageTop: js.UndefOr[Null | String | js.Function0[String]] = js.undefined
   
-  var title: js.UndefOr[Null | String | js.Function0[String]] = js.native
+  var title: js.UndefOr[Null | String | js.Function0[String]] = js.undefined
 }
 object ButtonsApiExportInfoParameter {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionConfiguration extends StObject {
   
   /**
     * True if account cleanup is enabled at the beginning of the test. Otherwise, false.
     */
-  var accountsCleanup: js.UndefOr[AccountsCleanup] = js.native
+  var accountsCleanup: js.UndefOr[AccountsCleanup] = js.undefined
   
   /**
     * True if app package cleanup is enabled at the beginning of the test. Otherwise, false.
     */
-  var appPackagesCleanup: js.UndefOr[AppPackagesCleanup] = js.native
+  var appPackagesCleanup: js.UndefOr[AppPackagesCleanup] = js.undefined
   
   /**
     * The number of minutes a test run executes before it times out.
     */
-  var jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * When set to true, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again. For more information about how Device Farm re-signs your apps, see Do you modify my app? in the AWS Device Farm FAQs.
     */
-  var skipAppResign: js.UndefOr[SkipAppResign] = js.native
+  var skipAppResign: js.UndefOr[SkipAppResign] = js.undefined
   
   /**
     * Set to true to enable video capture. Otherwise, set to false. The default is true.
     */
-  var videoCapture: js.UndefOr[VideoCapture] = js.native
+  var videoCapture: js.UndefOr[VideoCapture] = js.undefined
 }
 object ExecutionConfiguration {
   

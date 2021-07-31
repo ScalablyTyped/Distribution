@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMovingAddressesRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more filters.    moving-status - The status of the Elastic IP address (MovingToVpc | RestoringToClassic).  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The maximum number of results to return for the request in a single page. The remaining results of the initial request can be seen by sending another request with the returned NextToken value. This value can be between 5 and 1000; if MaxResults is given a value outside of this range, an error is returned. Default: If no value is provided, the default is 1000.
     */
-  var MaxResults: js.UndefOr[DescribeMovingAddressesMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeMovingAddressesMaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * One or more Elastic IP addresses.
     */
-  var PublicIps: js.UndefOr[ValueStringList] = js.native
+  var PublicIps: js.UndefOr[ValueStringList] = js.undefined
 }
 object DescribeMovingAddressesRequest {
   

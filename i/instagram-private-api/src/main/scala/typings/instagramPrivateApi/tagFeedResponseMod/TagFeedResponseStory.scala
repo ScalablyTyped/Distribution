@@ -2,35 +2,33 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseStory extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[TagFeedResponseItemsItem] = js.native
+  var items: js.Array[TagFeedResponseItemsItem]
   
-  var latest_reel_media: Double = js.native
+  var latest_reel_media: Double
   
-  var muted: Boolean = js.native
+  var muted: Boolean
   
-  var owner: TagFeedResponseOwner = js.native
+  var owner: TagFeedResponseOwner
   
-  var prefetch_count: Double = js.native
+  var prefetch_count: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var seen: Double = js.native
+  var seen: Double
   
-  var unique_integer_reel_id: String = js.native
+  var unique_integer_reel_id: String
 }
 object TagFeedResponseStory {
   

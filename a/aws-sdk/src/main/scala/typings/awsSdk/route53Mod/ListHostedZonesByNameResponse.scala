@@ -2,46 +2,44 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHostedZonesByNameResponse extends StObject {
   
   /**
     * For the second and subsequent calls to ListHostedZonesByName, DNSName is the value that you specified for the dnsname parameter in the request that produced the current response.
     */
-  var DNSName: js.UndefOr[typings.awsSdk.route53Mod.DNSName] = js.native
+  var DNSName: js.UndefOr[typings.awsSdk.route53Mod.DNSName] = js.undefined
   
   /**
     * The ID that Amazon Route 53 assigned to the hosted zone when you created it.
     */
-  var HostedZoneId: js.UndefOr[ResourceId] = js.native
+  var HostedZoneId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A complex type that contains general information about the hosted zone.
     */
-  var HostedZones: typings.awsSdk.route53Mod.HostedZones = js.native
+  var HostedZones: typings.awsSdk.route53Mod.HostedZones
   
   /**
     * A flag that indicates whether there are more hosted zones to be listed. If the response was truncated, you can get the next group of maxitems hosted zones by calling ListHostedZonesByName again and specifying the values of NextDNSName and NextHostedZoneId elements in the dnsname and hostedzoneid parameters.
     */
-  var IsTruncated: PageTruncated = js.native
+  var IsTruncated: PageTruncated
   
   /**
     * The value that you specified for the maxitems parameter in the call to ListHostedZonesByName that produced the current response.
     */
-  var MaxItems: PageMaxItems = js.native
+  var MaxItems: PageMaxItems
   
   /**
     * If IsTruncated is true, the value of NextDNSName is the name of the first hosted zone in the next group of maxitems hosted zones. Call ListHostedZonesByName again and specify the value of NextDNSName and NextHostedZoneId in the dnsname and hostedzoneid parameters, respectively. This element is present only if IsTruncated is true.
     */
-  var NextDNSName: js.UndefOr[DNSName] = js.native
+  var NextDNSName: js.UndefOr[DNSName] = js.undefined
   
   /**
     * If IsTruncated is true, the value of NextHostedZoneId identifies the first hosted zone in the next group of maxitems hosted zones. Call ListHostedZonesByName again and specify the value of NextDNSName and NextHostedZoneId in the dnsname and hostedzoneid parameters, respectively. This element is present only if IsTruncated is true.
     */
-  var NextHostedZoneId: js.UndefOr[ResourceId] = js.native
+  var NextHostedZoneId: js.UndefOr[ResourceId] = js.undefined
 }
 object ListHostedZonesByNameResponse {
   

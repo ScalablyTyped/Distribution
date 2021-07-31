@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait AuthType extends StObject
 object AuthType extends StObject {
   
   @js.native
-  sealed trait KEY extends AuthType
+  sealed trait KEY
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait NONE extends AuthType
+  sealed trait NONE
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait OAUTH2 extends AuthType
+  sealed trait OAUTH2
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait USER_PASS extends AuthType
+  sealed trait USER_PASS
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait USER_TOKEN extends AuthType
+  sealed trait USER_TOKEN
+    extends StObject
+       with AuthType
 }

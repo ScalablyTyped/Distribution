@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVPCAssociationAuthorizationRequest extends StObject {
   
   /**
     * The ID of the private hosted zone that you want to authorize associating a VPC with.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * A complex type that contains the VPC ID and region for the VPC that you want to authorize associating with your hosted zone.
     */
-  var VPC: typings.awsSdk.route53Mod.VPC = js.native
+  var VPC: typings.awsSdk.route53Mod.VPC
 }
 object CreateVPCAssociationAuthorizationRequest {
   

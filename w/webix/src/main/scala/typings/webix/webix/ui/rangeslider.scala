@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait rangeslider extends baseview {
+trait rangeslider
+  extends StObject
+     with baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -76,7 +77,7 @@ trait rangeslider extends baseview {
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_rangeslider: rangesliderConfig = js.native

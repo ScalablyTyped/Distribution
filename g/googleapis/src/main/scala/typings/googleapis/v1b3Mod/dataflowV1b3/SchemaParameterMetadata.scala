@@ -2,39 +2,37 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for a specific parameter.
   */
-@js.native
 trait SchemaParameterMetadata extends StObject {
   
   /**
     * Required. The help text to display for the parameter.
     */
-  var helpText: js.UndefOr[String] = js.native
+  var helpText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Whether the parameter is optional. Defaults to false.
     */
-  var isOptional: js.UndefOr[Boolean] = js.native
+  var isOptional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The label to display for the parameter.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the parameter.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Regexes that the parameter must match.
     */
-  var regexes: js.UndefOr[js.Array[String]] = js.native
+  var regexes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaParameterMetadata {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateActiveBreakpointRequest extends StObject {
   
   /** Required. Updated breakpoint information. The field `id` must be set. The agent must echo all Breakpoint specification fields in the update. */
-  var breakpoint: js.UndefOr[Breakpoint] = js.native
+  var breakpoint: js.UndefOr[Breakpoint] = js.undefined
 }
 object UpdateActiveBreakpointRequest {
   

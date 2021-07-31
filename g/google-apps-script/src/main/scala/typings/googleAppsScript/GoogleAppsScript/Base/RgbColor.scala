@@ -3,24 +3,22 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A color defined by red, green, blue color channels.
   */
-@js.native
 trait RgbColor extends StObject {
   
-  def asHexString(): String = js.native
+  def asHexString(): String
   
-  def getBlue(): Integer = js.native
+  def getBlue(): Integer
   
-  def getColorType(): ColorType = js.native
+  def getColorType(): ColorType
   
-  def getGreen(): Integer = js.native
+  def getGreen(): Integer
   
-  def getRed(): Integer = js.native
+  def getRed(): Integer
 }
 object RgbColor {
   

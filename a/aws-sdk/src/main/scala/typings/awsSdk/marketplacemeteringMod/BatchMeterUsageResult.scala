@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchMeterUsageResult extends StObject {
   
   /**
     * Contains all UsageRecords processed by BatchMeterUsage. These records were either honored by AWS Marketplace Metering Service or were invalid.
     */
-  var Results: js.UndefOr[UsageRecordResultList] = js.native
+  var Results: js.UndefOr[UsageRecordResultList] = js.undefined
   
   /**
     * Contains all UsageRecords that were not processed by BatchMeterUsage. This is a list of UsageRecords. You can retry the failed request by making another BatchMeterUsage call with this list as input in the BatchMeterUsageRequest.
     */
-  var UnprocessedRecords: js.UndefOr[UsageRecordList] = js.native
+  var UnprocessedRecords: js.UndefOr[UsageRecordList] = js.undefined
 }
 object BatchMeterUsageResult {
   

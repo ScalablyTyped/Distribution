@@ -5,18 +5,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSVLayerViewQueryFeaturesOptions extends Object {
+trait CSVLayerViewQueryFeaturesOptions
+  extends StObject
+     with Object {
   
   /**
     * Signal object that can be used to abort the asynchronous task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#queryFeatures)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object CSVLayerViewQueryFeaturesOptions {
   

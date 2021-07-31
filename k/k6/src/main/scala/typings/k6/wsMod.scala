@@ -3,16 +3,23 @@ package typings.k6
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wsMod {
+  
+  @JSImport("k6/ws", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This module provides a WebSocket client implementing the WebSocket protocol.
     * https://k6.io/docs/javascript-api/k6-ws
     */
   object default {
+    
+    @JSImport("k6/ws", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Open WebSocket connection.
@@ -28,12 +35,10 @@ object wsMod {
       *   });
       * });
       */
-    @JSImport("k6/ws", "default.connect")
-    @js.native
-    def connect(url: String, callback: Executor): Response = js.native
-    @JSImport("k6/ws", "default.connect")
-    @js.native
-    def connect(url: String, params: Null, callback: Executor): Response = js.native
+    @scala.inline
+    def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+    @scala.inline
+    def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
     /**
       * Open WebSocket connection.
       * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback
@@ -49,9 +54,8 @@ object wsMod {
       *   });
       * });
       */
-    @JSImport("k6/ws", "default.connect")
-    @js.native
-    def connect(url: String, params: Params, callback: Executor): Response = js.native
+    @scala.inline
+    def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
   @JSImport("k6/ws", "Socket")
@@ -135,15 +139,12 @@ object wsMod {
     def error(): String = js.native
   }
   
-  @JSImport("k6/ws", "connect")
-  @js.native
-  def connect(url: String, callback: Executor): Response = js.native
-  @JSImport("k6/ws", "connect")
-  @js.native
-  def connect(url: String, params: Null, callback: Executor): Response = js.native
-  @JSImport("k6/ws", "connect")
-  @js.native
-  def connect(url: String, params: Params, callback: Executor): Response = js.native
+  @scala.inline
+  def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+  @scala.inline
+  def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+  @scala.inline
+  def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   
   type CloseEventHandler = js.Function1[/* code */ Double, Unit]
   
@@ -187,14 +188,13 @@ object wsMod {
   
   type OpenEventHandler = js.Function0[Unit]
   
-  @js.native
   trait Params extends StObject {
     
     /** Request headers. */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Response time metric tags. */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object Params {
     
@@ -225,23 +225,22 @@ object wsMod {
   
   type PongEventHandler = js.Function0[Unit]
   
-  @js.native
   trait Response extends StObject {
     
     /** Response body. */
-    var body: String = js.native
+    var body: String
     
     /** Non-HTTP error message. */
-    var error: String = js.native
+    var error: String
     
     /** Response headers. */
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
     /** HTTP status code. */
-    var status: Double = js.native
+    var status: Double
     
     /** Fetched URL. May differ from request URL due to redirects. */
-    var url: String = js.native
+    var url: String
   }
   object Response {
     

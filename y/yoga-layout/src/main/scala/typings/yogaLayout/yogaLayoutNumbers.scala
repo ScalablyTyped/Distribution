@@ -13,14 +13,14 @@ import typings.yogaLayout.mod.YogaPositionType
 import typings.yogaLayout.mod.YogaUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yogaLayoutNumbers {
   
   @js.native
   sealed trait `0`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaDirection
        with YogaDisplay
        with YogaEdge
@@ -36,7 +36,8 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `1`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaDirection
        with YogaDisplay
        with YogaEdge
@@ -52,7 +53,8 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `2`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaDirection
        with YogaEdge
        with YogaFlexDirection
@@ -66,7 +68,8 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `3`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaEdge
        with YogaFlexDirection
        with YogaJustifyContent
@@ -77,7 +80,8 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `4`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaEdge
        with YogaFlexDirection
        with YogaJustifyContent
@@ -86,7 +90,8 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `5`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaEdge
        with YogaJustifyContent
   @scala.inline
@@ -94,20 +99,24 @@ object yogaLayoutNumbers {
   
   @js.native
   sealed trait `6`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaEdge
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
-    extends YogaAlign
+    extends StObject
+       with YogaAlign
        with YogaEdge
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
-  sealed trait `8` extends YogaEdge
+  sealed trait `8`
+    extends StObject
+       with YogaEdge
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   

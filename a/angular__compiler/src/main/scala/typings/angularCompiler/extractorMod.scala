@@ -7,7 +7,6 @@ import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolverHost
 import typings.angularCompiler.summaryResolverMod.AotSummaryResolverHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extractorMod {
@@ -35,17 +34,20 @@ object extractorMod {
   /* static members */
   object Extractor {
     
-    @JSImport("@angular/compiler/src/i18n/extractor", "Extractor.create")
+    @JSImport("@angular/compiler/src/i18n/extractor", "Extractor")
     @js.native
-    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
-    @JSImport("@angular/compiler/src/i18n/extractor", "Extractor.create")
-    @js.native
-    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.anon.Extractor]
+    @scala.inline
+    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.anon.Extractor]
   }
   
   @js.native
   trait ExtractorHost
-    extends StaticSymbolResolverHost
+    extends StObject
+       with StaticSymbolResolverHost
        with AotSummaryResolverHost {
     
     /**

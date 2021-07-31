@@ -5,7 +5,6 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.eventsMod.ColumnEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortControllerMod {
@@ -30,7 +29,7 @@ object sortControllerMod {
     
     /* private */ def getNextSortDirection(column: js.Any): js.Any = js.native
     
-    def getSortForRowController(): js.Array[_] = js.native
+    def getSortForRowController(): js.Array[js.Any] = js.native
     
     def getSortModel(): js.Array[ColId] = js.native
     

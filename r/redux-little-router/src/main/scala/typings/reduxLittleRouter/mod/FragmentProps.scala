@@ -2,29 +2,27 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentProps extends StObject {
   
-  var forNoMatch: js.UndefOr[Boolean] = js.native
+  var forNoMatch: js.UndefOr[Boolean] = js.undefined
   
-  var forRoute: js.UndefOr[String] = js.native
+  var forRoute: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var matchRoute: js.UndefOr[js.Function] = js.native
+  var matchRoute: js.UndefOr[js.Function] = js.undefined
   
-  var matchWildcardRoute: js.UndefOr[js.Function] = js.native
+  var matchWildcardRoute: js.UndefOr[js.Function] = js.undefined
   
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
   
-  var parentRoute: js.UndefOr[String] = js.native
+  var parentRoute: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[ObjectLiteral[_]] = js.native
+  var style: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
   
-  var withConditions: js.UndefOr[js.Function1[/* location */ Location, Boolean]] = js.native
+  var withConditions: js.UndefOr[js.Function1[/* location */ Location, Boolean]] = js.undefined
 }
 object FragmentProps {
   
@@ -80,7 +78,7 @@ object FragmentProps {
     def setParentRouteUndefined: Self = StObject.set(x, "parentRoute", js.undefined)
     
     @scala.inline
-    def setStyle(value: ObjectLiteral[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

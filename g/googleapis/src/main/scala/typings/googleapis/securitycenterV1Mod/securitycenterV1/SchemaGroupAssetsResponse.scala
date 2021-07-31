@@ -2,13 +2,11 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for grouping by assets.
   */
-@js.native
 trait SchemaGroupAssetsResponse extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait SchemaGroupAssetsResponse extends StObject {
     * combination of property/values. The element contains a count for the
     * number of times those specific property/values appear.
     */
-  var groupByResults: js.UndefOr[js.Array[SchemaGroupResult]] = js.native
+  var groupByResults: js.UndefOr[js.Array[SchemaGroupResult]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Time used for executing the groupBy request.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of results matching the query.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaGroupAssetsResponse {
   

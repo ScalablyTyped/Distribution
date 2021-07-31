@@ -1,21 +1,21 @@
 package typings.tabris.mod
 
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Headers
+/**
+  * Represents a set of HTTP headers as used by `fetch()`.
+  */
+/* was `typeof Headers` */
 @JSImport("tabris", "Headers")
 @js.native
-object Headers
-  extends TopLevel[
-      Instantiable1[
-        js.UndefOr[
-          typings.tabris.Headers | (js.Array[js.Tuple2[String, String]]) | StringDictionary[String]
-        ], 
-        typings.tabris.Headers
-      ]
-    ]
-
+class Headers ()
+  extends StObject
+     with typings.tabris.Headers {
+  def this(headers: js.Array[js.Tuple2[String, String]]) = this()
+  def this(headers: StringDictionary[String]) = this()
+  def this(headers: typings.tabris.Headers) = this()
+}

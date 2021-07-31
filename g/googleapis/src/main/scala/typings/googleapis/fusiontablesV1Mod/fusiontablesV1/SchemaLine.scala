@@ -2,24 +2,22 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a line geometry.
   */
-@js.native
 trait SchemaLine extends StObject {
   
   /**
     * The coordinates that define the line.
     */
-  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
     * Type: A line geometry.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaLine {
   

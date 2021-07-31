@@ -2,41 +2,39 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the Leaderboard resource.
   */
-@js.native
 trait SchemaLeaderboard extends StObject {
   
   /**
     * The icon for the leaderboard.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The leaderboard ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the icon image being returned is a default image, or is
     * game-provided.
     */
-  var isIconUrlDefault: js.UndefOr[Boolean] = js.native
+  var isIconUrlDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#leaderboard.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the leaderboard.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * How scores are ordered. Possible values are:   -
@@ -44,7 +42,7 @@ trait SchemaLeaderboard extends StObject {
     * sorted in descending order.  - &quot;SMALLER_IS_BETTER&quot; - Smaller
     * values are better; scores are sorted in ascending order.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaderboard {
   

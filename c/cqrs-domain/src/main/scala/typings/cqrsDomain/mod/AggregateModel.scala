@@ -2,7 +2,6 @@ package typings.cqrsDomain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // region AggregateModel and Command
@@ -18,11 +17,11 @@ trait AggregateModel extends StObject {
   @JSName("apply")
   def apply(event: js.Any): Unit = js.native
   @JSName("apply")
-  def apply(event: js.Any, data: js.UndefOr[scala.Nothing], version: Double): Unit = js.native
-  @JSName("apply")
   def apply(event: js.Any, data: js.Any): Unit = js.native
   @JSName("apply")
   def apply(event: js.Any, data: js.Any, version: Double): Unit = js.native
+  @JSName("apply")
+  def apply(event: js.Any, data: Unit, version: Double): Unit = js.native
   
   var attributes: js.Any = js.native
   
@@ -55,7 +54,7 @@ trait AggregateModel extends StObject {
   /**
     * Returns all uncommitted events.
     */
-  def getUncommittedEvents(): js.Array[_] = js.native
+  def getUncommittedEvents(): js.Array[js.Any] = js.native
   
   /**
     * Returns `true` if the attribute contains a value that is not null
@@ -107,5 +106,5 @@ trait AggregateModel extends StObject {
     */
   def toJSON(): js.Any = js.native
   
-  var uncommittedEvents: js.Array[_] = js.native
+  var uncommittedEvents: js.Array[js.Any] = js.native
 }

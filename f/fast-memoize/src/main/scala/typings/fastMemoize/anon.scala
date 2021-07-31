@@ -5,19 +5,17 @@ import typings.fastMemoize.mod.MemoizeFunc
 import typings.fastMemoize.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Get[K, V] extends StObject {
     
-    def get(key: K): V = js.native
+    def get(key: K): V
     
-    def has(key: K): Boolean = js.native
+    def has(key: K): Boolean
     
-    def set(key: K, value: V): Unit = js.native
+    def set(key: K, value: V): Unit
   }
   object Get {
     
@@ -28,7 +26,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class GetMutableBuilder[Self <: Get[_, _], K, V] (val x: Self with (Get[K, V])) extends AnyVal {
+    implicit class GetMutableBuilder[Self <: Get[?, ?], K, V] (val x: Self & (Get[K, V])) extends AnyVal {
       
       @scala.inline
       def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
@@ -41,17 +39,37 @@ object anon {
     }
   }
   
-  @js.native
   trait Monadic extends StObject {
     
-    def monadic[F /* <: Func */](fn: F): F = js.native
-    def monadic[F /* <: Func */](fn: F, options: Options[F]): F = js.native
+    def monadic[F /* <: Func */](fn: F): F
+    def monadic[F /* <: Func */](fn: F, options: Options[F]): F
     @JSName("monadic")
-    var monadic_Original: MemoizeFunc = js.native
+    var monadic_Original: MemoizeFunc
     
-    def variadic[F /* <: Func */](fn: F): F = js.native
-    def variadic[F /* <: Func */](fn: F, options: Options[F]): F = js.native
+    def variadic[F /* <: Func */](fn: F): F
+    def variadic[F /* <: Func */](fn: F, options: Options[F]): F
     @JSName("variadic")
-    var variadic_Original: MemoizeFunc = js.native
+    var variadic_Original: MemoizeFunc
+  }
+  object Monadic {
+    
+    @scala.inline
+    def apply(
+      monadic: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func,
+      variadic: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func
+    ): Monadic = {
+      val __obj = js.Dynamic.literal(monadic = js.Any.fromFunction2(monadic), variadic = js.Any.fromFunction2(variadic))
+      __obj.asInstanceOf[Monadic]
+    }
+    
+    @scala.inline
+    implicit class MonadicMutableBuilder[Self <: Monadic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMonadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "monadic", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setVariadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "variadic", js.Any.fromFunction2(value))
+    }
   }
 }

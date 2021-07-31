@@ -2,31 +2,29 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for Intents.BatchUpdateIntents.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsRequest extends StObject {
   
   /**
     * The collection of intents to update or create.
     */
-  var intentBatchInline: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentBatch] = js.native
+  var intentBatchInline: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentBatch] = js.undefined
   
   /**
     * The URI to a Google Cloud Storage file containing intents to update or
     * create. The file format can either be a serialized proto (of IntentBatch
     * type) or JSON object. Note: The URI must start with &quot;gs://&quot;.
     */
-  var intentBatchUri: js.UndefOr[String] = js.native
+  var intentBatchUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The resource view to apply to the returned intent.
     */
-  var intentView: js.UndefOr[String] = js.native
+  var intentView: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The language of training phrases, parameters and rich messages
@@ -36,12 +34,12 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsRequest extends StObje
     * are supported. Note: languages must be enabled in the agent before they
     * can be used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsRequest {
   

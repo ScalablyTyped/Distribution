@@ -4,15 +4,13 @@ import typings.awsSdkRoute53IdNormalizerMiddleware.mod.Change
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AliasTarget extends StObject {
     
-    var AliasTarget: js.UndefOr[HostedZoneId] = js.native
+    var AliasTarget: js.UndefOr[HostedZoneId] = js.undefined
   }
   object AliasTarget {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Changes extends StObject {
     
-    var Changes: Iterable[Change] = js.native
+    var Changes: Iterable[Change]
   }
   object Changes {
     
@@ -54,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HostedZoneId extends StObject {
     
-    var HostedZoneId: String = js.native
+    var HostedZoneId: String
   }
   object HostedZoneId {
     

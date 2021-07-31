@@ -12,7 +12,7 @@ Animated grid layout component for React
 | Keywords           | react, react-component, grid |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 87537 |
+| # downloads        | 101608 |
 | # stars            | 1 |
 
 ## Links

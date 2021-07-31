@@ -44,543 +44,541 @@ import typings.materialUi.anon.`2`
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Styles {
   
-  @js.native
   trait Colors extends StObject {
     
-    var amber100: String = js.native
+    var amber100: String
     
-    var amber200: String = js.native
+    var amber200: String
     
-    var amber300: String = js.native
+    var amber300: String
     
-    var amber400: String = js.native
+    var amber400: String
     
-    var amber50: String = js.native
+    var amber50: String
     
-    var amber500: String = js.native
+    var amber500: String
     
-    var amber600: String = js.native
+    var amber600: String
     
-    var amber700: String = js.native
+    var amber700: String
     
-    var amber800: String = js.native
+    var amber800: String
     
-    var amber900: String = js.native
+    var amber900: String
     
-    var amberA100: String = js.native
+    var amberA100: String
     
-    var amberA200: String = js.native
+    var amberA200: String
     
-    var amberA400: String = js.native
+    var amberA400: String
     
-    var amberA700: String = js.native
+    var amberA700: String
     
-    var black: String = js.native
+    var black: String
     
-    var blue100: String = js.native
+    var blue100: String
     
-    var blue200: String = js.native
+    var blue200: String
     
-    var blue300: String = js.native
+    var blue300: String
     
-    var blue400: String = js.native
+    var blue400: String
     
-    var blue50: String = js.native
+    var blue50: String
     
-    var blue500: String = js.native
+    var blue500: String
     
-    var blue600: String = js.native
+    var blue600: String
     
-    var blue700: String = js.native
+    var blue700: String
     
-    var blue800: String = js.native
+    var blue800: String
     
-    var blue900: String = js.native
+    var blue900: String
     
-    var blueA100: String = js.native
+    var blueA100: String
     
-    var blueA200: String = js.native
+    var blueA200: String
     
-    var blueA400: String = js.native
+    var blueA400: String
     
-    var blueA700: String = js.native
+    var blueA700: String
     
-    var blueGrey100: String = js.native
+    var blueGrey100: String
     
-    var blueGrey200: String = js.native
+    var blueGrey200: String
     
-    var blueGrey300: String = js.native
+    var blueGrey300: String
     
-    var blueGrey400: String = js.native
+    var blueGrey400: String
     
-    var blueGrey50: String = js.native
+    var blueGrey50: String
     
-    var blueGrey500: String = js.native
+    var blueGrey500: String
     
-    var blueGrey600: String = js.native
+    var blueGrey600: String
     
-    var blueGrey700: String = js.native
+    var blueGrey700: String
     
-    var blueGrey800: String = js.native
+    var blueGrey800: String
     
-    var blueGrey900: String = js.native
+    var blueGrey900: String
     
-    var brown100: String = js.native
+    var brown100: String
     
-    var brown200: String = js.native
+    var brown200: String
     
-    var brown300: String = js.native
+    var brown300: String
     
-    var brown400: String = js.native
+    var brown400: String
     
-    var brown50: String = js.native
+    var brown50: String
     
-    var brown500: String = js.native
+    var brown500: String
     
-    var brown600: String = js.native
+    var brown600: String
     
-    var brown700: String = js.native
+    var brown700: String
     
-    var brown800: String = js.native
+    var brown800: String
     
-    var brown900: String = js.native
+    var brown900: String
     
-    var cyan100: String = js.native
+    var cyan100: String
     
-    var cyan200: String = js.native
+    var cyan200: String
     
-    var cyan300: String = js.native
+    var cyan300: String
     
-    var cyan400: String = js.native
+    var cyan400: String
     
-    var cyan50: String = js.native
+    var cyan50: String
     
-    var cyan500: String = js.native
+    var cyan500: String
     
-    var cyan600: String = js.native
+    var cyan600: String
     
-    var cyan700: String = js.native
+    var cyan700: String
     
-    var cyan800: String = js.native
+    var cyan800: String
     
-    var cyan900: String = js.native
+    var cyan900: String
     
-    var cyanA100: String = js.native
+    var cyanA100: String
     
-    var cyanA200: String = js.native
+    var cyanA200: String
     
-    var cyanA400: String = js.native
+    var cyanA400: String
     
-    var cyanA700: String = js.native
+    var cyanA700: String
     
-    var darkBlack: String = js.native
+    var darkBlack: String
     
-    var darkWhite: String = js.native
+    var darkWhite: String
     
-    var deepOrange100: String = js.native
+    var deepOrange100: String
     
-    var deepOrange200: String = js.native
+    var deepOrange200: String
     
-    var deepOrange300: String = js.native
+    var deepOrange300: String
     
-    var deepOrange400: String = js.native
+    var deepOrange400: String
     
-    var deepOrange50: String = js.native
+    var deepOrange50: String
     
-    var deepOrange500: String = js.native
+    var deepOrange500: String
     
-    var deepOrange600: String = js.native
+    var deepOrange600: String
     
-    var deepOrange700: String = js.native
+    var deepOrange700: String
     
-    var deepOrange800: String = js.native
+    var deepOrange800: String
     
-    var deepOrange900: String = js.native
+    var deepOrange900: String
     
-    var deepOrangeA100: String = js.native
+    var deepOrangeA100: String
     
-    var deepOrangeA200: String = js.native
+    var deepOrangeA200: String
     
-    var deepOrangeA400: String = js.native
+    var deepOrangeA400: String
     
-    var deepOrangeA700: String = js.native
+    var deepOrangeA700: String
     
-    var deepPurple100: String = js.native
+    var deepPurple100: String
     
-    var deepPurple200: String = js.native
+    var deepPurple200: String
     
-    var deepPurple300: String = js.native
+    var deepPurple300: String
     
-    var deepPurple400: String = js.native
+    var deepPurple400: String
     
-    var deepPurple50: String = js.native
+    var deepPurple50: String
     
-    var deepPurple500: String = js.native
+    var deepPurple500: String
     
-    var deepPurple600: String = js.native
+    var deepPurple600: String
     
-    var deepPurple700: String = js.native
+    var deepPurple700: String
     
-    var deepPurple800: String = js.native
+    var deepPurple800: String
     
-    var deepPurple900: String = js.native
+    var deepPurple900: String
     
-    var deepPurpleA100: String = js.native
+    var deepPurpleA100: String
     
-    var deepPurpleA200: String = js.native
+    var deepPurpleA200: String
     
-    var deepPurpleA400: String = js.native
+    var deepPurpleA400: String
     
-    var deepPurpleA700: String = js.native
+    var deepPurpleA700: String
     
-    var faintBlack: String = js.native
+    var faintBlack: String
     
-    var fullBlack: String = js.native
+    var fullBlack: String
     
-    var fullWhite: String = js.native
+    var fullWhite: String
     
-    var green100: String = js.native
+    var green100: String
     
-    var green200: String = js.native
+    var green200: String
     
-    var green300: String = js.native
+    var green300: String
     
-    var green400: String = js.native
+    var green400: String
     
-    var green50: String = js.native
+    var green50: String
     
-    var green500: String = js.native
+    var green500: String
     
-    var green600: String = js.native
+    var green600: String
     
-    var green700: String = js.native
+    var green700: String
     
-    var green800: String = js.native
+    var green800: String
     
-    var green900: String = js.native
+    var green900: String
     
-    var greenA100: String = js.native
+    var greenA100: String
     
-    var greenA200: String = js.native
+    var greenA200: String
     
-    var greenA400: String = js.native
+    var greenA400: String
     
-    var greenA700: String = js.native
+    var greenA700: String
     
-    var grey100: String = js.native
+    var grey100: String
     
-    var grey200: String = js.native
+    var grey200: String
     
-    var grey300: String = js.native
+    var grey300: String
     
-    var grey400: String = js.native
+    var grey400: String
     
-    var grey50: String = js.native
+    var grey50: String
     
-    var grey500: String = js.native
+    var grey500: String
     
-    var grey600: String = js.native
+    var grey600: String
     
-    var grey700: String = js.native
+    var grey700: String
     
-    var grey800: String = js.native
+    var grey800: String
     
-    var grey900: String = js.native
+    var grey900: String
     
-    var indigo100: String = js.native
+    var indigo100: String
     
-    var indigo200: String = js.native
+    var indigo200: String
     
-    var indigo300: String = js.native
+    var indigo300: String
     
-    var indigo400: String = js.native
+    var indigo400: String
     
-    var indigo50: String = js.native
+    var indigo50: String
     
-    var indigo500: String = js.native
+    var indigo500: String
     
-    var indigo600: String = js.native
+    var indigo600: String
     
-    var indigo700: String = js.native
+    var indigo700: String
     
-    var indigo800: String = js.native
+    var indigo800: String
     
-    var indigo900: String = js.native
+    var indigo900: String
     
-    var indigoA100: String = js.native
+    var indigoA100: String
     
-    var indigoA200: String = js.native
+    var indigoA200: String
     
-    var indigoA400: String = js.native
+    var indigoA400: String
     
-    var indigoA700: String = js.native
+    var indigoA700: String
     
-    var lightBlack: String = js.native
+    var lightBlack: String
     
-    var lightBlue100: String = js.native
+    var lightBlue100: String
     
-    var lightBlue200: String = js.native
+    var lightBlue200: String
     
-    var lightBlue300: String = js.native
+    var lightBlue300: String
     
-    var lightBlue400: String = js.native
+    var lightBlue400: String
     
-    var lightBlue50: String = js.native
+    var lightBlue50: String
     
-    var lightBlue500: String = js.native
+    var lightBlue500: String
     
-    var lightBlue600: String = js.native
+    var lightBlue600: String
     
-    var lightBlue700: String = js.native
+    var lightBlue700: String
     
-    var lightBlue800: String = js.native
+    var lightBlue800: String
     
-    var lightBlue900: String = js.native
+    var lightBlue900: String
     
-    var lightBlueA100: String = js.native
+    var lightBlueA100: String
     
-    var lightBlueA200: String = js.native
+    var lightBlueA200: String
     
-    var lightBlueA400: String = js.native
+    var lightBlueA400: String
     
-    var lightBlueA700: String = js.native
+    var lightBlueA700: String
     
-    var lightGreen100: String = js.native
+    var lightGreen100: String
     
-    var lightGreen200: String = js.native
+    var lightGreen200: String
     
-    var lightGreen300: String = js.native
+    var lightGreen300: String
     
-    var lightGreen400: String = js.native
+    var lightGreen400: String
     
-    var lightGreen50: String = js.native
+    var lightGreen50: String
     
-    var lightGreen500: String = js.native
+    var lightGreen500: String
     
-    var lightGreen600: String = js.native
+    var lightGreen600: String
     
-    var lightGreen700: String = js.native
+    var lightGreen700: String
     
-    var lightGreen800: String = js.native
+    var lightGreen800: String
     
-    var lightGreen900: String = js.native
+    var lightGreen900: String
     
-    var lightGreenA100: String = js.native
+    var lightGreenA100: String
     
-    var lightGreenA200: String = js.native
+    var lightGreenA200: String
     
-    var lightGreenA400: String = js.native
+    var lightGreenA400: String
     
-    var lightGreenA700: String = js.native
+    var lightGreenA700: String
     
-    var lightWhite: String = js.native
+    var lightWhite: String
     
-    var lime100: String = js.native
+    var lime100: String
     
-    var lime200: String = js.native
+    var lime200: String
     
-    var lime300: String = js.native
+    var lime300: String
     
-    var lime400: String = js.native
+    var lime400: String
     
-    var lime50: String = js.native
+    var lime50: String
     
-    var lime500: String = js.native
+    var lime500: String
     
-    var lime600: String = js.native
+    var lime600: String
     
-    var lime700: String = js.native
+    var lime700: String
     
-    var lime800: String = js.native
+    var lime800: String
     
-    var lime900: String = js.native
+    var lime900: String
     
-    var limeA100: String = js.native
+    var limeA100: String
     
-    var limeA200: String = js.native
+    var limeA200: String
     
-    var limeA400: String = js.native
+    var limeA400: String
     
-    var limeA700: String = js.native
+    var limeA700: String
     
-    var minBlack: String = js.native
+    var minBlack: String
     
-    var orange100: String = js.native
+    var orange100: String
     
-    var orange200: String = js.native
+    var orange200: String
     
-    var orange300: String = js.native
+    var orange300: String
     
-    var orange400: String = js.native
+    var orange400: String
     
-    var orange50: String = js.native
+    var orange50: String
     
-    var orange500: String = js.native
+    var orange500: String
     
-    var orange600: String = js.native
+    var orange600: String
     
-    var orange700: String = js.native
+    var orange700: String
     
-    var orange800: String = js.native
+    var orange800: String
     
-    var orange900: String = js.native
+    var orange900: String
     
-    var orangeA100: String = js.native
+    var orangeA100: String
     
-    var orangeA200: String = js.native
+    var orangeA200: String
     
-    var orangeA400: String = js.native
+    var orangeA400: String
     
-    var orangeA700: String = js.native
+    var orangeA700: String
     
-    var pink100: String = js.native
+    var pink100: String
     
-    var pink200: String = js.native
+    var pink200: String
     
-    var pink300: String = js.native
+    var pink300: String
     
-    var pink400: String = js.native
+    var pink400: String
     
-    var pink50: String = js.native
+    var pink50: String
     
-    var pink500: String = js.native
+    var pink500: String
     
-    var pink600: String = js.native
+    var pink600: String
     
-    var pink700: String = js.native
+    var pink700: String
     
-    var pink800: String = js.native
+    var pink800: String
     
-    var pink900: String = js.native
+    var pink900: String
     
-    var pinkA100: String = js.native
+    var pinkA100: String
     
-    var pinkA200: String = js.native
+    var pinkA200: String
     
-    var pinkA400: String = js.native
+    var pinkA400: String
     
-    var pinkA700: String = js.native
+    var pinkA700: String
     
-    var purple100: String = js.native
+    var purple100: String
     
-    var purple200: String = js.native
+    var purple200: String
     
-    var purple300: String = js.native
+    var purple300: String
     
-    var purple400: String = js.native
+    var purple400: String
     
-    var purple50: String = js.native
+    var purple50: String
     
-    var purple500: String = js.native
+    var purple500: String
     
-    var purple600: String = js.native
+    var purple600: String
     
-    var purple700: String = js.native
+    var purple700: String
     
-    var purple800: String = js.native
+    var purple800: String
     
-    var purple900: String = js.native
+    var purple900: String
     
-    var purpleA100: String = js.native
+    var purpleA100: String
     
-    var purpleA200: String = js.native
+    var purpleA200: String
     
-    var purpleA400: String = js.native
+    var purpleA400: String
     
-    var purpleA700: String = js.native
+    var purpleA700: String
     
-    var red100: String = js.native
+    var red100: String
     
-    var red200: String = js.native
+    var red200: String
     
-    var red300: String = js.native
+    var red300: String
     
-    var red400: String = js.native
+    var red400: String
     
-    var red50: String = js.native
+    var red50: String
     
-    var red500: String = js.native
+    var red500: String
     
-    var red600: String = js.native
+    var red600: String
     
-    var red700: String = js.native
+    var red700: String
     
-    var red800: String = js.native
+    var red800: String
     
-    var red900: String = js.native
+    var red900: String
     
-    var redA100: String = js.native
+    var redA100: String
     
-    var redA200: String = js.native
+    var redA200: String
     
-    var redA400: String = js.native
+    var redA400: String
     
-    var redA700: String = js.native
+    var redA700: String
     
-    var teal100: String = js.native
+    var teal100: String
     
-    var teal200: String = js.native
+    var teal200: String
     
-    var teal300: String = js.native
+    var teal300: String
     
-    var teal400: String = js.native
+    var teal400: String
     
-    var teal50: String = js.native
+    var teal50: String
     
-    var teal500: String = js.native
+    var teal500: String
     
-    var teal600: String = js.native
+    var teal600: String
     
-    var teal700: String = js.native
+    var teal700: String
     
-    var teal800: String = js.native
+    var teal800: String
     
-    var teal900: String = js.native
+    var teal900: String
     
-    var tealA100: String = js.native
+    var tealA100: String
     
-    var tealA200: String = js.native
+    var tealA200: String
     
-    var tealA400: String = js.native
+    var tealA400: String
     
-    var tealA700: String = js.native
+    var tealA700: String
     
-    var transparent: String = js.native
+    var transparent: String
     
-    var white: String = js.native
+    var white: String
     
-    var yellow100: String = js.native
+    var yellow100: String
     
-    var yellow200: String = js.native
+    var yellow200: String
     
-    var yellow300: String = js.native
+    var yellow300: String
     
-    var yellow400: String = js.native
+    var yellow400: String
     
-    var yellow50: String = js.native
+    var yellow50: String
     
-    var yellow500: String = js.native
+    var yellow500: String
     
-    var yellow600: String = js.native
+    var yellow600: String
     
-    var yellow700: String = js.native
+    var yellow700: String
     
-    var yellow800: String = js.native
+    var yellow800: String
     
-    var yellow900: String = js.native
+    var yellow900: String
     
-    var yellowA100: String = js.native
+    var yellowA100: String
     
-    var yellowA200: String = js.native
+    var yellowA200: String
     
-    var yellowA400: String = js.native
+    var yellowA400: String
     
-    var yellowA700: String = js.native
+    var yellowA700: String
   }
   object Colors {
     
@@ -1645,116 +1643,115 @@ object Styles {
     }
   }
   
-  @js.native
   trait MuiTheme extends StObject {
     
-    var appBar: js.UndefOr[Color] = js.native
+    var appBar: js.UndefOr[Color] = js.undefined
     
-    var avatar: js.UndefOr[BackgroundColor] = js.native
+    var avatar: js.UndefOr[BackgroundColor] = js.undefined
     
-    var badge: js.UndefOr[FontWeight] = js.native
+    var badge: js.UndefOr[FontWeight] = js.undefined
     
-    var baseTheme: js.UndefOr[RawTheme] = js.native
+    var baseTheme: js.UndefOr[RawTheme] = js.undefined
     
-    var button: js.UndefOr[Height] = js.native
+    var button: js.UndefOr[Height] = js.undefined
     
-    var card: js.UndefOr[SubtitleColor] = js.native
+    var card: js.UndefOr[SubtitleColor] = js.undefined
     
-    var cardMedia: js.UndefOr[OverlayContentBackground] = js.native
+    var cardMedia: js.UndefOr[OverlayContentBackground] = js.undefined
     
-    var cardText: js.UndefOr[TextColor] = js.native
+    var cardText: js.UndefOr[TextColor] = js.undefined
     
-    var checkbox: js.UndefOr[BoxColor] = js.native
+    var checkbox: js.UndefOr[BoxColor] = js.undefined
     
-    var chip: js.UndefOr[DeleteIconColor] = js.native
+    var chip: js.UndefOr[DeleteIconColor] = js.undefined
     
-    var datePicker: js.UndefOr[CalendarTextColor] = js.native
+    var datePicker: js.UndefOr[CalendarTextColor] = js.undefined
     
-    var dialog: js.UndefOr[BodyColor] = js.native
+    var dialog: js.UndefOr[BodyColor] = js.undefined
     
-    var drawer: js.UndefOr[Width] = js.native
+    var drawer: js.UndefOr[Width] = js.undefined
     
-    var dropDownMenu: js.UndefOr[AccentColor] = js.native
+    var dropDownMenu: js.UndefOr[AccentColor] = js.undefined
     
-    var enhancedButton: js.UndefOr[TapHighlightColor] = js.native
+    var enhancedButton: js.UndefOr[TapHighlightColor] = js.undefined
     
-    var flatButton: js.UndefOr[ButtonFilterColor] = js.native
+    var flatButton: js.UndefOr[ButtonFilterColor] = js.undefined
     
-    var floatingActionButton: js.UndefOr[ButtonSize] = js.native
+    var floatingActionButton: js.UndefOr[ButtonSize] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var gridTile: js.UndefOr[TextColor] = js.native
+    var gridTile: js.UndefOr[TextColor] = js.undefined
     
-    var icon: js.UndefOr[BackgroundColorColor] = js.native
+    var icon: js.UndefOr[BackgroundColorColor] = js.undefined
     
-    var inkBar: js.UndefOr[`0`] = js.native
+    var inkBar: js.UndefOr[`0`] = js.undefined
     
-    var isRtl: js.UndefOr[Boolean] = js.native
+    var isRtl: js.UndefOr[Boolean] = js.undefined
     
-    var listItem: js.UndefOr[LeftIconColor] = js.native
+    var listItem: js.UndefOr[LeftIconColor] = js.undefined
     
-    var menu: js.UndefOr[ContainerBackgroundColor] = js.native
+    var menu: js.UndefOr[ContainerBackgroundColor] = js.undefined
     
-    var menuItem: js.UndefOr[DataHeight] = js.native
+    var menuItem: js.UndefOr[DataHeight] = js.undefined
     
-    var menuSubheader: js.UndefOr[BorderColor] = js.native
+    var menuSubheader: js.UndefOr[BorderColor] = js.undefined
     
-    var overlay: js.UndefOr[`0`] = js.native
+    var overlay: js.UndefOr[`0`] = js.undefined
     
-    var palette: js.UndefOr[ThemePalette] = js.native
+    var palette: js.UndefOr[ThemePalette] = js.undefined
     
-    var paper: js.UndefOr[ZDepthShadows] = js.native
+    var paper: js.UndefOr[ZDepthShadows] = js.undefined
     
-    var radioButton: js.UndefOr[CheckedColor] = js.native
+    var radioButton: js.UndefOr[CheckedColor] = js.undefined
     
-    var raisedButton: js.UndefOr[DisabledColor] = js.native
+    var raisedButton: js.UndefOr[DisabledColor] = js.undefined
     
-    var rawTheme: js.UndefOr[RawTheme] = js.native
+    var rawTheme: js.UndefOr[RawTheme] = js.undefined
     
-    var refreshIndicator: js.UndefOr[LoadingStrokeColor] = js.native
+    var refreshIndicator: js.UndefOr[LoadingStrokeColor] = js.undefined
     
-    var ripple: js.UndefOr[`1`] = js.native
+    var ripple: js.UndefOr[`1`] = js.undefined
     
-    var slider: js.UndefOr[HandleColorZero] = js.native
+    var slider: js.UndefOr[HandleColorZero] = js.undefined
     
-    var snackbar: js.UndefOr[ActionColor] = js.native
+    var snackbar: js.UndefOr[ActionColor] = js.undefined
     
-    var spacing: js.UndefOr[Spacing] = js.native
+    var spacing: js.UndefOr[Spacing] = js.undefined
     
-    var stepper: js.UndefOr[ConnectorLineColor] = js.native
+    var stepper: js.UndefOr[ConnectorLineColor] = js.undefined
     
-    var subheader: js.UndefOr[ColorFontWeight] = js.native
+    var subheader: js.UndefOr[ColorFontWeight] = js.undefined
     
-    var svgIcon: js.UndefOr[`1`] = js.native
+    var svgIcon: js.UndefOr[`1`] = js.undefined
     
-    var table: js.UndefOr[`0`] = js.native
+    var table: js.UndefOr[`0`] = js.undefined
     
-    var tableFooter: js.UndefOr[BorderColorTextColor] = js.native
+    var tableFooter: js.UndefOr[BorderColorTextColor] = js.undefined
     
-    var tableHeader: js.UndefOr[`2`] = js.native
+    var tableHeader: js.UndefOr[`2`] = js.undefined
     
-    var tableHeaderColumn: js.UndefOr[typings.materialUi.anon.Spacing] = js.native
+    var tableHeaderColumn: js.UndefOr[typings.materialUi.anon.Spacing] = js.undefined
     
-    var tableRow: js.UndefOr[HoverColor] = js.native
+    var tableRow: js.UndefOr[HoverColor] = js.undefined
     
-    var tableRowColumn: js.UndefOr[HeightSpacing] = js.native
+    var tableRowColumn: js.UndefOr[HeightSpacing] = js.undefined
     
-    var tabs: js.UndefOr[SelectedTextColor] = js.native
+    var tabs: js.UndefOr[SelectedTextColor] = js.undefined
     
-    var textField: js.UndefOr[DisabledTextColor] = js.native
+    var textField: js.UndefOr[DisabledTextColor] = js.undefined
     
-    var timePicker: js.UndefOr[ClockCircleColor] = js.native
+    var timePicker: js.UndefOr[ClockCircleColor] = js.undefined
     
-    var toggle: js.UndefOr[LabelColor] = js.native
+    var toggle: js.UndefOr[LabelColor] = js.undefined
     
-    var toolbar: js.UndefOr[IconColor] = js.native
+    var toolbar: js.UndefOr[IconColor] = js.undefined
     
-    var tooltip: js.UndefOr[RippleBackgroundColor] = js.native
+    var tooltip: js.UndefOr[RippleBackgroundColor] = js.undefined
     
-    var userAgent: js.UndefOr[String | Boolean] = js.native
+    var userAgent: js.UndefOr[String | Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[typings.materialUi.MaterialUI.Styles.zIndex] = js.native
+    var zIndex: js.UndefOr[typings.materialUi.MaterialUI.Styles.zIndex] = js.undefined
   }
   object MuiTheme {
     
@@ -2095,10 +2092,9 @@ object Styles {
   
   type MuiThemeProvider = Component[MuiThemeProviderProps, js.Object, js.Any]
   
-  @js.native
   trait MuiThemeProviderProps extends StObject {
     
-    var muiTheme: js.UndefOr[MuiTheme] = js.native
+    var muiTheme: js.UndefOr[MuiTheme] = js.undefined
   }
   object MuiThemeProviderProps {
     
@@ -2119,14 +2115,13 @@ object Styles {
     }
   }
   
-  @js.native
   trait RawTheme extends StObject {
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var palette: js.UndefOr[ThemePalette] = js.native
+    var palette: js.UndefOr[ThemePalette] = js.undefined
     
-    var spacing: js.UndefOr[Spacing] = js.native
+    var spacing: js.UndefOr[Spacing] = js.undefined
   }
   object RawTheme {
     
@@ -2159,30 +2154,29 @@ object Styles {
     }
   }
   
-  @js.native
   trait Spacing extends StObject {
     
-    var desktopDropDownMenuFontSize: js.UndefOr[Double] = js.native
+    var desktopDropDownMenuFontSize: js.UndefOr[Double] = js.undefined
     
-    var desktopDropDownMenuItemHeight: js.UndefOr[Double] = js.native
+    var desktopDropDownMenuItemHeight: js.UndefOr[Double] = js.undefined
     
-    var desktopGutter: js.UndefOr[Double] = js.native
+    var desktopGutter: js.UndefOr[Double] = js.undefined
     
-    var desktopGutterLess: js.UndefOr[Double] = js.native
+    var desktopGutterLess: js.UndefOr[Double] = js.undefined
     
-    var desktopGutterMini: js.UndefOr[Double] = js.native
+    var desktopGutterMini: js.UndefOr[Double] = js.undefined
     
-    var desktopGutterMore: js.UndefOr[Double] = js.native
+    var desktopGutterMore: js.UndefOr[Double] = js.undefined
     
-    var desktopKeylineIncrement: js.UndefOr[Double] = js.native
+    var desktopKeylineIncrement: js.UndefOr[Double] = js.undefined
     
-    var desktopLeftNavMenuItemHeight: js.UndefOr[Double] = js.native
+    var desktopLeftNavMenuItemHeight: js.UndefOr[Double] = js.undefined
     
-    var desktopSubheaderHeight: js.UndefOr[Double] = js.native
+    var desktopSubheaderHeight: js.UndefOr[Double] = js.undefined
     
-    var desktopToolbarHeight: js.UndefOr[Double] = js.native
+    var desktopToolbarHeight: js.UndefOr[Double] = js.undefined
     
-    var iconSize: js.UndefOr[Double] = js.native
+    var iconSize: js.UndefOr[Double] = js.undefined
   }
   object Spacing {
     
@@ -2263,38 +2257,37 @@ object Styles {
     }
   }
   
-  @js.native
   trait ThemePalette extends StObject {
     
-    var accent1Color: js.UndefOr[String] = js.native
+    var accent1Color: js.UndefOr[String] = js.undefined
     
-    var accent2Color: js.UndefOr[String] = js.native
+    var accent2Color: js.UndefOr[String] = js.undefined
     
-    var accent3Color: js.UndefOr[String] = js.native
+    var accent3Color: js.UndefOr[String] = js.undefined
     
-    var alternateTextColor: js.UndefOr[String] = js.native
+    var alternateTextColor: js.UndefOr[String] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var canvasColor: js.UndefOr[String] = js.native
+    var canvasColor: js.UndefOr[String] = js.undefined
     
-    var clockCircleColor: js.UndefOr[String] = js.native
+    var clockCircleColor: js.UndefOr[String] = js.undefined
     
-    var disabledColor: js.UndefOr[String] = js.native
+    var disabledColor: js.UndefOr[String] = js.undefined
     
-    var pickerHeaderColor: js.UndefOr[String] = js.native
+    var pickerHeaderColor: js.UndefOr[String] = js.undefined
     
-    var primary1Color: js.UndefOr[String] = js.native
+    var primary1Color: js.UndefOr[String] = js.undefined
     
-    var primary2Color: js.UndefOr[String] = js.native
+    var primary2Color: js.UndefOr[String] = js.undefined
     
-    var primary3Color: js.UndefOr[String] = js.native
+    var primary3Color: js.UndefOr[String] = js.undefined
     
-    var secondaryTextColor: js.UndefOr[String] = js.native
+    var secondaryTextColor: js.UndefOr[String] = js.undefined
     
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
   }
   object ThemePalette {
     
@@ -2403,132 +2396,76 @@ object Styles {
   trait Transitions extends StObject {
     
     def create(): String = js.native
-    def create(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.UndefOr[scala.Nothing],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def create(duration: js.UndefOr[scala.Nothing], property: js.UndefOr[scala.Nothing], delay: String): String = js.native
-    def create(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.UndefOr[scala.Nothing],
-      delay: String,
-      easeFunction: String
-    ): String = js.native
-    def create(duration: js.UndefOr[scala.Nothing], property: String): String = js.native
-    def create(
-      duration: js.UndefOr[scala.Nothing],
-      property: String,
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def create(duration: js.UndefOr[scala.Nothing], property: String, delay: String): String = js.native
-    def create(duration: js.UndefOr[scala.Nothing], property: String, delay: String, easeFunction: String): String = js.native
     def create(duration: String): String = js.native
-    def create(
-      duration: String,
-      property: js.UndefOr[scala.Nothing],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def create(duration: String, property: js.UndefOr[scala.Nothing], delay: String): String = js.native
-    def create(duration: String, property: js.UndefOr[scala.Nothing], delay: String, easeFunction: String): String = js.native
     def create(duration: String, property: String): String = js.native
-    def create(duration: String, property: String, delay: js.UndefOr[scala.Nothing], easeFunction: String): String = js.native
     def create(duration: String, property: String, delay: String): String = js.native
     def create(duration: String, property: String, delay: String, easeFunction: String): String = js.native
+    def create(duration: String, property: String, delay: Unit, easeFunction: String): String = js.native
+    def create(duration: String, property: Unit, delay: String): String = js.native
+    def create(duration: String, property: Unit, delay: String, easeFunction: String): String = js.native
+    def create(duration: String, property: Unit, delay: Unit, easeFunction: String): String = js.native
+    def create(duration: Unit, property: String): String = js.native
+    def create(duration: Unit, property: String, delay: String): String = js.native
+    def create(duration: Unit, property: String, delay: String, easeFunction: String): String = js.native
+    def create(duration: Unit, property: String, delay: Unit, easeFunction: String): String = js.native
+    def create(duration: Unit, property: Unit, delay: String): String = js.native
+    def create(duration: Unit, property: Unit, delay: String, easeFunction: String): String = js.native
+    def create(duration: Unit, property: Unit, delay: Unit, easeFunction: String): String = js.native
     
     var easeInOutFunction: String = js.native
     
     def easeOut(): String = js.native
-    def easeOut(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.UndefOr[scala.Nothing],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: js.UndefOr[scala.Nothing], delay: String): String = js.native
-    def easeOut(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.UndefOr[scala.Nothing],
-      delay: String,
-      easeFunction: String
-    ): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: String): String = js.native
-    def easeOut(
-      duration: js.UndefOr[scala.Nothing],
-      property: String,
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: String, delay: String): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: String, delay: String, easeFunction: String): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: js.Array[String]): String = js.native
-    def easeOut(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.Array[String],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def easeOut(duration: js.UndefOr[scala.Nothing], property: js.Array[String], delay: String): String = js.native
-    def easeOut(
-      duration: js.UndefOr[scala.Nothing],
-      property: js.Array[String],
-      delay: String,
-      easeFunction: String
-    ): String = js.native
     def easeOut(duration: String): String = js.native
-    def easeOut(
-      duration: String,
-      property: js.UndefOr[scala.Nothing],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
-    def easeOut(duration: String, property: js.UndefOr[scala.Nothing], delay: String): String = js.native
-    def easeOut(duration: String, property: js.UndefOr[scala.Nothing], delay: String, easeFunction: String): String = js.native
     def easeOut(duration: String, property: String): String = js.native
-    def easeOut(duration: String, property: String, delay: js.UndefOr[scala.Nothing], easeFunction: String): String = js.native
     def easeOut(duration: String, property: String, delay: String): String = js.native
     def easeOut(duration: String, property: String, delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: String, property: String, delay: Unit, easeFunction: String): String = js.native
     def easeOut(duration: String, property: js.Array[String]): String = js.native
-    def easeOut(
-      duration: String,
-      property: js.Array[String],
-      delay: js.UndefOr[scala.Nothing],
-      easeFunction: String
-    ): String = js.native
     def easeOut(duration: String, property: js.Array[String], delay: String): String = js.native
     def easeOut(duration: String, property: js.Array[String], delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: String, property: js.Array[String], delay: Unit, easeFunction: String): String = js.native
+    def easeOut(duration: String, property: Unit, delay: String): String = js.native
+    def easeOut(duration: String, property: Unit, delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: String, property: Unit, delay: Unit, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: String): String = js.native
+    def easeOut(duration: Unit, property: String, delay: String): String = js.native
+    def easeOut(duration: Unit, property: String, delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: String, delay: Unit, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: js.Array[String]): String = js.native
+    def easeOut(duration: Unit, property: js.Array[String], delay: String): String = js.native
+    def easeOut(duration: Unit, property: js.Array[String], delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: js.Array[String], delay: Unit, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: Unit, delay: String): String = js.native
+    def easeOut(duration: Unit, property: Unit, delay: String, easeFunction: String): String = js.native
+    def easeOut(duration: Unit, property: Unit, delay: Unit, easeFunction: String): String = js.native
     
     var easeOutFunction: String = js.native
   }
   
-  @js.native
   trait Typography extends StObject {
     
-    var fontStyleButtonFontSize: Double = js.native
+    var fontStyleButtonFontSize: Double
     
     // font weight
-    var fontWeightLight: Double = js.native
+    var fontWeightLight: Double
     
-    var fontWeightMedium: Double = js.native
+    var fontWeightMedium: Double
     
-    var fontWeightNormal: Double = js.native
+    var fontWeightNormal: Double
     
-    var textDarkBlack: String = js.native
+    var textDarkBlack: String
     
-    var textDarkWhite: String = js.native
+    var textDarkWhite: String
     
-    var textFullBlack: String = js.native
+    var textFullBlack: String
     
-    var textFullWhite: String = js.native
+    var textFullWhite: String
     
-    var textLightBlack: String = js.native
+    var textLightBlack: String
     
-    var textLightWhite: String = js.native
+    var textLightWhite: String
     
-    var textMinBlack: String = js.native
+    var textMinBlack: String
   }
   object Typography {
     
@@ -2588,28 +2525,27 @@ object Styles {
     }
   }
   
-  @js.native
   trait zIndex extends StObject {
     
-    var appBar: Double = js.native
+    var appBar: Double
     
-    var dialog: Double = js.native
+    var dialog: Double
     
-    var dialogOverlay: Double = js.native
+    var dialogOverlay: Double
     
-    var drawer: Double = js.native
+    var drawer: Double
     
-    var drawerOverlay: Double = js.native
+    var drawerOverlay: Double
     
-    var layer: Double = js.native
+    var layer: Double
     
-    var menu: Double = js.native
+    var menu: Double
     
-    var popover: Double = js.native
+    var popover: Double
     
-    var snackbar: Double = js.native
+    var snackbar: Double
     
-    var tooltip: Double = js.native
+    var tooltip: Double
   }
   object zIndex {
     

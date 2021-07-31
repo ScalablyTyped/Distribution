@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the possibility of reviving an event before changing the content of a row set. */
-@js.native
-trait XRowSetApproveBroadcaster extends XInterface {
+trait XRowSetApproveBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive the events "approveCursorMove", "approveRowChange", and "appproveRowSetChange". */
-  def addRowSetApproveListener(listener: XRowSetApproveListener): Unit = js.native
+  def addRowSetApproveListener(listener: XRowSetApproveListener): Unit
   
   /** removes the specified listener. */
-  def removeRowSetApproveListener(listener: XRowSetApproveListener): Unit = js.native
+  def removeRowSetApproveListener(listener: XRowSetApproveListener): Unit
 }
 object XRowSetApproveBroadcaster {
   

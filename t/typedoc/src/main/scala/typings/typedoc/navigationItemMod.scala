@@ -3,7 +3,6 @@ package typings.typedoc
 import typings.typedoc.abstractMod.Reflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationItemMod {
@@ -12,146 +11,36 @@ object navigationItemMod {
   @js.native
   class NavigationItem () extends StObject {
     def this(title: String) = this()
-    def this(title: js.UndefOr[scala.Nothing], url: String) = this()
     def this(title: String, url: String) = this()
-    def this(title: js.UndefOr[scala.Nothing], url: js.UndefOr[scala.Nothing], parent: NavigationItem) = this()
-    def this(title: js.UndefOr[scala.Nothing], url: String, parent: NavigationItem) = this()
-    def this(title: String, url: js.UndefOr[scala.Nothing], parent: NavigationItem) = this()
+    def this(title: Unit, url: String) = this()
     def this(title: String, url: String, parent: NavigationItem) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: NavigationItem,
-      cssClasses: String
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: String,
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String
-    ) = this()
-    def this(title: js.UndefOr[scala.Nothing], url: String, parent: NavigationItem, cssClasses: String) = this()
-    def this(
-      title: String,
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String
-    ) = this()
-    def this(title: String, url: js.UndefOr[scala.Nothing], parent: NavigationItem, cssClasses: String) = this()
-    def this(title: String, url: String, parent: js.UndefOr[scala.Nothing], cssClasses: String) = this()
+    def this(title: String, url: Unit, parent: NavigationItem) = this()
+    def this(title: Unit, url: String, parent: NavigationItem) = this()
+    def this(title: Unit, url: Unit, parent: NavigationItem) = this()
+    def this(title: String, url: String, parent: Unit, cssClasses: String) = this()
     def this(title: String, url: String, parent: NavigationItem, cssClasses: String) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: NavigationItem,
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      parent: NavigationItem,
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: String,
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: String,
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: String,
-      parent: NavigationItem,
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: js.UndefOr[scala.Nothing],
-      url: String,
-      parent: NavigationItem,
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: js.UndefOr[scala.Nothing],
-      parent: NavigationItem,
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: js.UndefOr[scala.Nothing],
-      parent: NavigationItem,
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: String,
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: String,
-      parent: js.UndefOr[scala.Nothing],
-      cssClasses: String,
-      reflection: Reflection
-    ) = this()
-    def this(
-      title: String,
-      url: String,
-      parent: NavigationItem,
-      cssClasses: js.UndefOr[scala.Nothing],
-      reflection: Reflection
-    ) = this()
+    def this(title: String, url: Unit, parent: Unit, cssClasses: String) = this()
+    def this(title: String, url: Unit, parent: NavigationItem, cssClasses: String) = this()
+    def this(title: Unit, url: String, parent: Unit, cssClasses: String) = this()
+    def this(title: Unit, url: String, parent: NavigationItem, cssClasses: String) = this()
+    def this(title: Unit, url: Unit, parent: Unit, cssClasses: String) = this()
+    def this(title: Unit, url: Unit, parent: NavigationItem, cssClasses: String) = this()
+    def this(title: String, url: String, parent: Unit, cssClasses: String, reflection: Reflection) = this()
+    def this(title: String, url: String, parent: Unit, cssClasses: Unit, reflection: Reflection) = this()
     def this(title: String, url: String, parent: NavigationItem, cssClasses: String, reflection: Reflection) = this()
+    def this(title: String, url: String, parent: NavigationItem, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: String, url: Unit, parent: Unit, cssClasses: String, reflection: Reflection) = this()
+    def this(title: String, url: Unit, parent: Unit, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: String, url: Unit, parent: NavigationItem, cssClasses: String, reflection: Reflection) = this()
+    def this(title: String, url: Unit, parent: NavigationItem, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: Unit, url: String, parent: Unit, cssClasses: String, reflection: Reflection) = this()
+    def this(title: Unit, url: String, parent: Unit, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: Unit, url: String, parent: NavigationItem, cssClasses: String, reflection: Reflection) = this()
+    def this(title: Unit, url: String, parent: NavigationItem, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: Unit, url: Unit, parent: Unit, cssClasses: String, reflection: Reflection) = this()
+    def this(title: Unit, url: Unit, parent: Unit, cssClasses: Unit, reflection: Reflection) = this()
+    def this(title: Unit, url: Unit, parent: NavigationItem, cssClasses: String, reflection: Reflection) = this()
+    def this(title: Unit, url: Unit, parent: NavigationItem, cssClasses: Unit, reflection: Reflection) = this()
     
     var children: js.UndefOr[js.Array[NavigationItem]] = js.native
     
@@ -180,17 +69,17 @@ object navigationItemMod {
   /* static members */
   object NavigationItem {
     
-    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
+    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem")
     @js.native
-    def create(reflection: Reflection): NavigationItem = js.native
-    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
-    @js.native
-    def create(reflection: Reflection, parent: js.UndefOr[scala.Nothing], useShortNames: Boolean): NavigationItem = js.native
-    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
-    @js.native
-    def create(reflection: Reflection, parent: NavigationItem): NavigationItem = js.native
-    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
-    @js.native
-    def create(reflection: Reflection, parent: NavigationItem, useShortNames: Boolean): NavigationItem = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(reflection: Reflection): NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[NavigationItem]
+    @scala.inline
+    def create(reflection: Reflection, parent: Unit, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
+    @scala.inline
+    def create(reflection: Reflection, parent: NavigationItem): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
+    @scala.inline
+    def create(reflection: Reflection, parent: NavigationItem, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
   }
 }

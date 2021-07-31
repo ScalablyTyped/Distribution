@@ -2,16 +2,14 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStreamResult extends StObject {
   
   // readable stream instance if response status is not 200, stream will be null.
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var stream: js.UndefOr[js.Any] = js.native
+  var stream: js.UndefOr[js.Any] = js.undefined
 }
 object GetStreamResult {
   

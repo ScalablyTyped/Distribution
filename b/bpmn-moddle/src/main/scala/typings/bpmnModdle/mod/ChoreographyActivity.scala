@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChoreographyActivity extends FlowNode {
+trait ChoreographyActivity
+  extends StObject
+     with FlowNode {
   
-  var correlationKeys: js.Array[CorrelationKey] = js.native
+  var correlationKeys: js.Array[CorrelationKey]
   
-  var initiatingParticipantRef: Participant = js.native
+  var initiatingParticipantRef: Participant
   
-  var loopType: ChoreographyLoopType = js.native
+  var loopType: ChoreographyLoopType
   
-  var participantRef: js.Array[Participant] = js.native
+  var participantRef: js.Array[Participant]
 }
 object ChoreographyActivity {
   

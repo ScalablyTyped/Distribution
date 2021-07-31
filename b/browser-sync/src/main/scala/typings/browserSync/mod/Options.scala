@@ -6,42 +6,40 @@ import typings.node.httpMod.ServerResponse
 import typings.serveStatic.mod.ServeStaticOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * The browser(s) to open
     * Default: default
     */
-  var browser: js.UndefOr[String | js.Array[String]] = js.native
+  var browser: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * ¯\_(ツ)_/¯
     * Best guess, when ghostMode (or SocketIO?) is setup the events
     * listed here will be emitted and able to hook into.
     */
-  var clientEvents: js.UndefOr[js.Array[String]] = js.native
+  var clientEvents: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Send file-change events to the browser
     * Default: true
     */
-  var codeSync: js.UndefOr[Boolean] = js.native
+  var codeSync: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add HTTP access control (CORS) headers to assets served by Browsersync.
     * Default: false
     * Note: Requires at least version 2.16.0.
     */
-  var cors: js.UndefOr[Boolean] = js.native
+  var cors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ¯\_(ツ)_/¯
     */
-  var excludeFileTypes: js.UndefOr[js.Array[String]] = js.native
+  var excludeFileTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Browsersync can watch your files as you work. Changes you make will either be injected into the page (CSS
@@ -49,7 +47,7 @@ trait Options extends StObject {
     * patterns.
     * Default: false
     */
-  var files: js.UndefOr[String | (js.Array[String | FileCallback | js.Object])] = js.native
+  var files: js.UndefOr[String | (js.Array[String | FileCallback | js.Object])] = js.undefined
   
   /**
     * Clicks, Scrolls & Form inputs on any device will be mirrored to all others.
@@ -57,17 +55,17 @@ trait Options extends StObject {
     * scroll - Default: true
     * forms - Default: true
     */
-  var ghostMode: js.UndefOr[GhostOptions | Boolean] = js.native
+  var ghostMode: js.UndefOr[GhostOptions | Boolean] = js.undefined
   
   /**
     * Override host detection if you know the correct IP to use
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Override http module to allow using 3rd party server modules (such as http2).
     */
-  var httpModule: js.UndefOr[String] = js.native
+  var httpModule: js.UndefOr[String] = js.undefined
   
   /**
     * Enable https for localhost development.
@@ -75,107 +73,107 @@ trait Options extends StObject {
     * Note: If privacy error is encountered please see HttpsOptions below, setting those will resolve.
     * Note: Requires at least version 1.3.0.
     */
-  var https: js.UndefOr[Boolean | HttpsOptions] = js.native
+  var https: js.UndefOr[Boolean | HttpsOptions] = js.undefined
   
   /**
     * Patterns for any watchers to ignore.
     * Anything provided here will end up inside 'watchOptions.ignored'.
     */
-  var ignore: js.UndefOr[js.Array[String]] = js.native
+  var ignore: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether to inject changes (rather than a page refresh)
     * Default: true
     */
-  var injectChanges: js.UndefOr[Boolean] = js.native
+  var injectChanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ¯\_(ツ)_/¯
     */
-  var injectFileTypes: js.UndefOr[js.Array[String]] = js.native
+  var injectFileTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Support environments where dynamic hostnames are not required (ie: electron).
     */
-  var localOnly: js.UndefOr[Boolean] = js.native
+  var localOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not to log connections
     * Default: false
     */
-  var logConnections: js.UndefOr[Boolean] = js.native
+  var logConnections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not to log information about changed files
     * Default: false
     */
-  var logFileChanges: js.UndefOr[Boolean] = js.native
+  var logFileChanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Can be either "info", "debug", "warn", or "silent"
     * Default: info
     */
-  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   
   /**
     * Change the console logging prefix. Useful if you're creating your own project based on Browsersync
     * Default: BS
     * Note: Requires at least version 1.5.1.
     */
-  var logPrefix: js.UndefOr[String] = js.native
+  var logPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Log the snippet to the console when you're in snippet mode (no proxy/server)
     * Default: true
     * Note: Requires at least version 1.5.2.
     */
-  var logSnippet: js.UndefOr[Boolean] = js.native
+  var logSnippet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Functions or actual plugins used as middleware.
     */
   var middleware: js.UndefOr[
     MiddlewareHandler | PerRouteMiddleware | (js.Array[MiddlewareHandler | PerRouteMiddleware])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Whether to minify the client script
     * Default: true
     */
-  var minify: js.UndefOr[Boolean] = js.native
+  var minify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The small pop-over notifications in the browser are not always needed/wanted.
     * Default: true
     */
   @JSName("notify")
-  var notify_FOptions: js.UndefOr[Boolean] = js.native
+  var notify_FOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Some features of Browsersync (such as xip & tunnel) require an internet connection, but if you're
     * working offline, you can reduce start-up time by setting this option to false
     */
-  var online: js.UndefOr[Boolean] = js.native
+  var online: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true
     * Decide which URL to open automatically when Browsersync starts. Defaults to "local" if none set.
     * Can be true, local, external, ui, ui-external, tunnel or false
     */
-  var open: js.UndefOr[OpenOptions | Boolean] = js.native
+  var open: js.UndefOr[OpenOptions | Boolean] = js.undefined
   
   /**
     * User provided plugins
     * Default: []
     * Note: Requires at least version 2.6.0.
     */
-  var plugins: js.UndefOr[js.Array[_]] = js.native
+  var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Use a specific port (instead of the one auto-detected by Browsersync)
     * Default: 3000
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Proxy an EXISTING vhost. Browsersync will wrap your vhost with a proxy URL to view your site.
@@ -187,47 +185,47 @@ trait Options extends StObject {
     * proxyRes - Default: undefined (http.ServerResponse if expecting single parameter)
     * proxyReq - Default: undefined
     */
-  var proxy: js.UndefOr[String | ProxyOptions] = js.native
+  var proxy: js.UndefOr[String | ProxyOptions] = js.undefined
   
   /**
     * Restrict the frequency in which browser:reload events can be emitted to connected clients
     * Default: 0
     * Note: Requires at least version 2.6.0.
     */
-  var reloadDebounce: js.UndefOr[Double] = js.native
+  var reloadDebounce: js.UndefOr[Double] = js.undefined
   
   /**
     * Time, in milliseconds, to wait before instructing the browser to reload/inject following a file
     * change event
     * Default: 0
     */
-  var reloadDelay: js.UndefOr[Double] = js.native
+  var reloadDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Reload each browser when Browsersync is restarted.
     * Default: false
     */
-  var reloadOnRestart: js.UndefOr[Boolean] = js.native
+  var reloadOnRestart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Emit only the first event during sequential time windows of a specified duration.
     * Note: Requires at least version 2.13.0.
     */
-  var reloadThrottle: js.UndefOr[Double] = js.native
+  var reloadThrottle: js.UndefOr[Double] = js.undefined
   
   /**
     * Add additional HTML rewriting rules.
     * Default: false
     * Note: Requires at least version 2.4.0.
     */
-  var rewriteRules: js.UndefOr[Boolean | js.Array[RewriteRules]] = js.native
+  var rewriteRules: js.UndefOr[Boolean | js.Array[RewriteRules]] = js.undefined
   
   /**
     * Alter the script path for complete control over where the Browsersync Javascript is served
     * from. Whatever you return from this function will be used as the script path.
     * Note: Requires at least version 1.5.0.
     */
-  var scriptPath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
+  var scriptPath: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
   
   /**
     * Default: []
@@ -236,33 +234,33 @@ trait Options extends StObject {
     * all others to match scroll position. This is helpful when a breakpoint alters which element
     * is actually scrolling
     */
-  var scrollElementMapping: js.UndefOr[js.Array[String]] = js.native
+  var scrollElementMapping: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Sync the scroll position of any element on the page. Add any amount of CSS selectors
     * Default: []
     * Note: Requires at least version 2.9.0.
     */
-  var scrollElements: js.UndefOr[js.Array[String]] = js.native
+  var scrollElements: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * scrollProportionally: false // Sync viewports to TOP position
     * Default: true
     */
-  var scrollProportionally: js.UndefOr[Boolean] = js.native
+  var scrollProportionally: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Decide which technique should be used to restore scroll position following a reload.
     * Can be window.name or cookie
     * Default: 'window.name'
     */
-  var scrollRestoreTechnique: js.UndefOr[String] = js.native
+  var scrollRestoreTechnique: js.UndefOr[String] = js.undefined
   
   /**
     * How often to send scroll events
     * Default: 0
     */
-  var scrollThrottle: js.UndefOr[Double] = js.native
+  var scrollThrottle: js.UndefOr[Double] = js.undefined
   
   /**
     * Add additional directories from which static files should be served.
@@ -270,33 +268,33 @@ trait Options extends StObject {
     * Default: []
     * Note: Requires at least version 2.8.0.
     */
-  var serveStatic: js.UndefOr[js.Array[StaticOptions | String]] = js.native
+  var serveStatic: js.UndefOr[js.Array[StaticOptions | String]] = js.undefined
   
   /**
     * Options that are passed to the serve-static middleware when you use the
     * string[] syntax: eg: `serveStatic: ['./app']`.
     * Please see [serve-static](https://github.com/expressjs/serve-static) for details.
     */
-  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.native
+  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
   
   /**
     * Use the built-in static server for basic HTML/JS/CSS websites.
     * Default: false
     */
-  var server: js.UndefOr[String | Boolean | js.Array[String] | ServerOptions] = js.native
+  var server: js.UndefOr[String | Boolean | js.Array[String] | ServerOptions] = js.undefined
   
   /**
     * Serve an index.html file for all non-asset routes.
     * Useful when using client-routers.
     */
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
   
   /**
     * You can control how the snippet is injected onto each page via a custom regex + function.
     * You can also provide patterns for certain urls that should be ignored from the snippet injection.
     * Note: Requires at least version 2.0.0.
     */
-  var snippetOptions: js.UndefOr[SnippetOptions] = js.native
+  var snippetOptions: js.UndefOr[SnippetOptions] = js.undefined
   
   /**
     * Configure the Socket.IO path and namespace & domain to avoid collisions.
@@ -308,29 +306,29 @@ trait Options extends StObject {
     * clients.heartbeatTimeout - Default: 5000
     * Note: Requires at least version 1.6.2.
     */
-  var socket: js.UndefOr[SocketOptions] = js.native
+  var socket: js.UndefOr[SocketOptions] = js.undefined
   
   /**
     * The initial path to load
     */
-  var startPath: js.UndefOr[String] = js.native
+  var startPath: js.UndefOr[String] = js.undefined
   
   /**
     * ¯\_(ツ)_/¯
     */
-  var tagNames: js.UndefOr[TagNamesOptions] = js.native
+  var tagNames: js.UndefOr[TagNamesOptions] = js.undefined
   
   /**
     * Append timestamps to injected files
     * Default: true
     */
-  var timestamps: js.UndefOr[Boolean] = js.native
+  var timestamps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Tunnel the Browsersync server through a random Public URL
     * Default: null
     */
-  var tunnel: js.UndefOr[String | Boolean] = js.native
+  var tunnel: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls
@@ -340,32 +338,32 @@ trait Options extends StObject {
     * weinre.port - Default: 8080
     * Note: Requires at least version 2.0.0.
     */
-  var ui: js.UndefOr[UIOptions | Boolean] = js.native
+  var ui: js.UndefOr[UIOptions | Boolean] = js.undefined
   
   /**
     * Watch files automatically.
     */
-  var watch: js.UndefOr[Boolean] = js.native
+  var watch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify which file events to respond to.
     * Available events: `add`, `change`, `unlink`, `addDir`, `unlinkDir`
     */
-  var watchEvents: js.UndefOr[WatchEvents | js.Array[String]] = js.native
+  var watchEvents: js.UndefOr[WatchEvents | js.Array[String]] = js.undefined
   
   /**
     * File watching options that get passed along to Chokidar. Check their docs for available options
     * Default: undefined
     * Note: Requires at least version 2.6.0.
     */
-  var watchOptions: js.UndefOr[WatchOptions] = js.native
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
   
   /**
     * Requires an internet connection - useful for services such as Typekit as it allows you to configure
     * domains such as *.xip.io in your kit settings
     * Default: false
     */
-  var xip: js.UndefOr[Boolean] = js.native
+  var xip: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   
@@ -549,7 +547,7 @@ object Options {
     def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)

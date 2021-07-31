@@ -10,7 +10,6 @@ import typings.pgPromise.pgSubsetMod.IConnectionParameters
 import typings.spex.mod.ISpex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Post-initialization interface;
@@ -18,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IMain[Ext, C /* <: IClient */] extends StObject {
   
-  def apply[T, C /* <: IClient */](cn: String): (IDatabase[T, C]) with T = js.native
-  def apply[T, C /* <: IClient */](cn: String, dc: js.Any): (IDatabase[T, C]) with T = js.native
-  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C]): (IDatabase[T, C]) with T = js.native
-  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C], dc: js.Any): (IDatabase[T, C]) with T = js.native
+  def apply[T, C /* <: IClient */](cn: String): (IDatabase[T, C]) & T = js.native
+  def apply[T, C /* <: IClient */](cn: String, dc: js.Any): (IDatabase[T, C]) & T = js.native
+  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C]): (IDatabase[T, C]) & T = js.native
+  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C], dc: js.Any): (IDatabase[T, C]) & T = js.native
   
   val ParameterizedQuery: Instantiable1[
     /* options */ js.UndefOr[String | typings.pgPromise.mod.QueryFile | IParameterizedQuery], 

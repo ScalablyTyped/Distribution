@@ -16,29 +16,27 @@ import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.File_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@babel/parser", "parse")
+  @JSImport("@babel/parser", JSImport.Namespace)
   @js.native
-  def parse(input: String): File_ = js.native
-  @JSImport("@babel/parser", "parse")
-  @js.native
-  def parse(input: String, options: ParserOptions): File_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@babel/parser", "parseExpression")
-  @js.native
-  def parseExpression(input: String): Expression = js.native
-  @JSImport("@babel/parser", "parseExpression")
-  @js.native
-  def parseExpression(input: String, options: ParserOptions): Expression = js.native
+  @scala.inline
+  def parse(input: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[File_]
+  @scala.inline
+  def parse(input: String, options: ParserOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
   
-  @js.native
+  @scala.inline
+  def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  @scala.inline
+  def parseExpression(input: String, options: ParserOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  
   trait DecoratorsPluginOptions extends StObject {
     
-    var decoratorsBeforeExport: js.UndefOr[Boolean] = js.native
+    var decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined
   }
   object DecoratorsPluginOptions {
     
@@ -59,10 +57,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FlowPluginOptions extends StObject {
     
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
   }
   object FlowPluginOptions {
     
@@ -83,34 +80,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
     /**
       * By default, await use is not allowed outside of an async function.
       * Set this to true to accept such code.
       */
-    var allowAwaitOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowAwaitOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, import and export declarations can only appear at a program's top level.
       * Setting this option to true allows them anywhere where a statement is allowed.
       */
-    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.native
+    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, a return statement at the top level raises an error.
       * Set this to true to accept such code.
       */
-    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
-    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.native
+    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, exported identifiers must refer to a declared variable.
       * Set this to true to allow export statements to reference undeclared variables.
       */
-    var allowUndeclaredExports: js.UndefOr[Boolean] = js.native
+    var allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, the parser adds information about parentheses by setting
@@ -118,23 +114,23 @@ object mod {
       * When this option is `true` the parser creates `ParenthesizedExpression`
       * AST nodes instead of using the `extra` property.
       */
-    var createParenthesizedExpressions: js.UndefOr[Boolean] = js.native
+    var createParenthesizedExpressions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array containing the plugins that you want to enable.
       */
-    var plugins: js.UndefOr[js.Array[ParserPlugin]] = js.native
+    var plugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
     
     /**
       * Adds a ranges property to each node: [node.start, node.end]
       */
-    var ranges: js.UndefOr[Boolean] = js.native
+    var ranges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Correlate output AST nodes with their source filename.
       * Useful when generating code and source maps from the ASTs of multiple input files.
       */
-    var sourceFilename: js.UndefOr[String] = js.native
+    var sourceFilename: js.UndefOr[String] = js.undefined
     
     /**
       * Indicate the mode the code should be parsed in.
@@ -143,25 +139,25 @@ object mod {
       * of ES6 import or export statements.
       * Files with ES6 imports and exports are considered "module" and are otherwise "script".
       */
-    var sourceType: js.UndefOr[script | module | unambiguous] = js.native
+    var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
     
     /**
       * By default, the first line of code parsed is treated as line 1.
       * You can provide a line number to alternatively start with.
       * Useful for integration with other source tools.
       */
-    var startLine: js.UndefOr[Double] = js.native
+    var startLine: js.UndefOr[Double] = js.undefined
     
     /**
       * Should the parser work in strict mode.
       * Defaults to true if sourceType === 'module'. Otherwise, false.
       */
-    var strictMode: js.UndefOr[Boolean] = js.native
+    var strictMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds all parsed tokens to a tokens property on the File node.
       */
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -303,10 +299,9 @@ object mod {
     DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions
   ]
   
-  @js.native
   trait PipelineOperatorPluginOptions extends StObject {
     
-    var proposal: fsharp | minimal | smart = js.native
+    var proposal: fsharp | minimal | smart
   }
   object PipelineOperatorPluginOptions {
     
@@ -324,10 +319,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RecordAndTuplePluginOptions extends StObject {
     
-    var syntaxType: bar | hash = js.native
+    var syntaxType: bar | hash
   }
   object RecordAndTuplePluginOptions {
     

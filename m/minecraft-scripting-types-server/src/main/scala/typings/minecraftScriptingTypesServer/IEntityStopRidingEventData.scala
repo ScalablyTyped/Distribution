@@ -3,34 +3,32 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity stops riding another entity.
   */
-@js.native
 trait IEntityStopRidingEventData extends StObject {
   
   /**
     * The entity that was riding another entity
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * If true, the rider stopped riding because they are now dead
     */
-  var entity_is_being_destroyed: Boolean = js.native
+  var entity_is_being_destroyed: Boolean
   
   /**
     * If true, the rider stopped riding by their own decision
     */
-  var exit_from_rider: Boolean = js.native
+  var exit_from_rider: Boolean
   
   /**
     * If true, the rider stopped riding because they are now riding a different entity
     */
-  var switching_rides: Boolean = js.native
+  var switching_rides: Boolean
 }
 object IEntityStopRidingEventData {
   

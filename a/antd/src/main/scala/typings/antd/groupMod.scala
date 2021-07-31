@@ -9,7 +9,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupMod extends Shortcut {
@@ -18,24 +17,23 @@ object groupMod extends Shortcut {
   @js.native
   val default: FC[GroupProps] = js.native
   
-  @js.native
   trait GroupProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
-    var maxPopoverPlacement: js.UndefOr[top | bottom] = js.native
+    var maxPopoverPlacement: js.UndefOr[top | bottom] = js.undefined
     
-    var maxStyle: js.UndefOr[CSSProperties] = js.native
+    var maxStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[AvatarSize] = js.native
+    var size: js.UndefOr[AvatarSize] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GroupProps {
     

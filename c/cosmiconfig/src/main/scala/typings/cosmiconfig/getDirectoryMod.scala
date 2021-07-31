@@ -2,16 +2,17 @@ package typings.cosmiconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDirectoryMod {
   
-  @JSImport("cosmiconfig/dist/getDirectory", "getDirectory")
+  @JSImport("cosmiconfig/dist/getDirectory", JSImport.Namespace)
   @js.native
-  def getDirectory(filepath: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cosmiconfig/dist/getDirectory", "getDirectorySync")
-  @js.native
-  def getDirectorySync(filepath: String): String = js.native
+  @scala.inline
+  def getDirectory(filepath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def getDirectorySync(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectorySync")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -7,23 +7,21 @@ import typings.awsSdkClientS3Browser.typesGranteeMod.Grantee
 import typings.awsSdkClientS3Browser.typesGranteeMod.UnmarshalledGrantee
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTargetGrantMod {
   
-  @js.native
   trait TargetGrant extends StObject {
     
     /**
       * _Grantee shape
       */
-    var Grantee: js.UndefOr[typings.awsSdkClientS3Browser.typesGranteeMod.Grantee] = js.native
+    var Grantee: js.UndefOr[typings.awsSdkClientS3Browser.typesGranteeMod.Grantee] = js.undefined
     
     /**
       * <p>Logging permissions assigned to the Grantee for the bucket.</p>
       */
-    var Permission: js.UndefOr[FULL_CONTROL | READ | WRITE | String] = js.native
+    var Permission: js.UndefOr[FULL_CONTROL | READ | WRITE | String] = js.undefined
   }
   object TargetGrant {
     
@@ -50,14 +48,15 @@ object typesTargetGrantMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTargetGrant extends TargetGrant {
+  trait UnmarshalledTargetGrant
+    extends StObject
+       with TargetGrant {
     
     /**
       * _Grantee shape
       */
     @JSName("Grantee")
-    var Grantee_UnmarshalledTargetGrant: js.UndefOr[UnmarshalledGrantee] = js.native
+    var Grantee_UnmarshalledTargetGrant: js.UndefOr[UnmarshalledGrantee] = js.undefined
   }
   object UnmarshalledTargetGrant {
     

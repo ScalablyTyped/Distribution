@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.releasedevicerequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represent a point-of-service printer that has been claimed for use. */
 @js.native
 trait ClaimedPosPrinter extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_releasedevicerequested(
     `type`: releasedevicerequested,
@@ -60,7 +59,7 @@ trait ClaimedPosPrinter extends StObject {
   var mapMode: PosPrinterMapMode = js.native
   
   /** Occurs when a point-of-service printer gets a request to release its exclusive claim. */
-  def onreleasedevicerequested(ev: PosPrinterReleaseDeviceRequestedEventArgs with WinRTEvent[ClaimedPosPrinter]): Unit = js.native
+  def onreleasedevicerequested(ev: PosPrinterReleaseDeviceRequestedEventArgs & WinRTEvent[ClaimedPosPrinter]): Unit = js.native
   /** Occurs when a point-of-service printer gets a request to release its exclusive claim. */
   @JSName("onreleasedevicerequested")
   var onreleasedevicerequested_Original: TypedEventHandler[ClaimedPosPrinter, PosPrinterReleaseDeviceRequestedEventArgs] = js.native
@@ -68,7 +67,7 @@ trait ClaimedPosPrinter extends StObject {
   /** Gets an object that represents the receipt station for a claimed point-of-service printer. */
   var receipt: ClaimedReceiptPrinter = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_releasedevicerequested(
     `type`: releasedevicerequested,
@@ -96,5 +95,5 @@ trait ClaimedPosPrinter extends StObject {
     * @param statistics The statistics to update.
     * @return An operation that returns true if the update succeeds, or otherwise returns false.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[_, _]]): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncOperation[Boolean] = js.native
 }

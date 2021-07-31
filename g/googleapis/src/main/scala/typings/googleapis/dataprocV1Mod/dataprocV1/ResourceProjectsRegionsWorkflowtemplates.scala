@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1", "dataproc_v1.Resource$Projects$Regions$Workflowtemplates")
@@ -31,7 +30,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(params: ParamsResourceProjectsRegionsWorkflowtemplatesCreate): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesCreate,
@@ -65,7 +64,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRegionsWorkflowtemplatesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesDelete,
@@ -99,7 +98,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(params: ParamsResourceProjectsRegionsWorkflowtemplatesGet): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesGet,
@@ -133,7 +132,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsRegionsWorkflowtemplatesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesGetiampolicy,
@@ -172,7 +171,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def instantiate(): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def instantiate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def instantiate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(params: ParamsResourceProjectsRegionsWorkflowtemplatesInstantiate): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesInstantiate,
@@ -214,7 +213,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def instantiateInline(): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def instantiateInline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def instantiateInline(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(params: ParamsResourceProjectsRegionsWorkflowtemplatesInstantiateinline): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesInstantiateinline,
@@ -248,7 +247,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(params: ParamsResourceProjectsRegionsWorkflowtemplatesList): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesList,
@@ -282,7 +281,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsRegionsWorkflowtemplatesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesSetiampolicy,
@@ -319,7 +318,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsRegionsWorkflowtemplatesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesTestiampermissions,
@@ -353,7 +352,7 @@ class ResourceProjectsRegionsWorkflowtemplates protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(params: ParamsResourceProjectsRegionsWorkflowtemplatesUpdate): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(
     params: ParamsResourceProjectsRegionsWorkflowtemplatesUpdate,

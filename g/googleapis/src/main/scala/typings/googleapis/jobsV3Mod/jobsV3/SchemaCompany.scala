@@ -2,7 +2,6 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * entity that owns job postings, that is, the hiring entity responsible for
   * employing applicants for the job position.
   */
-@js.native
 trait SchemaCompany extends StObject {
   
   /**
@@ -18,31 +16,31 @@ trait SchemaCompany extends StObject {
     * employer&#39;s web site, for example,
     * &quot;https://careers.google.com&quot;.
     */
-  var careerSiteUri: js.UndefOr[String] = js.native
+  var careerSiteUri: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Derived details about the company.
     */
-  var derivedInfo: js.UndefOr[SchemaCompanyDerivedInfo] = js.native
+  var derivedInfo: js.UndefOr[SchemaCompanyDerivedInfo] = js.undefined
   
   /**
     * Required.  The display name of the company, for example, &quot;Google,
     * LLC&quot;.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Equal Employment Opportunity legal disclaimer text to be
     * associated with all jobs, and typically to be displayed in all roles. The
     * maximum number of allowed characters is 500.
     */
-  var eeoText: js.UndefOr[String] = js.native
+  var eeoText: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  Client side company identifier, used to uniquely identify the
     * company.  The maximum number of allowed characters is 255.
     */
-  var externalId: js.UndefOr[String] = js.native
+  var externalId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The street address of the company&#39;s main headquarters,
@@ -50,18 +48,18 @@ trait SchemaCompany extends StObject {
     * geolocate the provided address, and populates a more specific location
     * wherever possible in DerivedInfo.headquarters_location.
     */
-  var headquartersAddress: js.UndefOr[String] = js.native
+  var headquartersAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Set to true if it is the hiring agency that post jobs for
     * other employers.  Defaults to false if not provided.
     */
-  var hiringAgency: js.UndefOr[Boolean] = js.native
+  var hiringAgency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  A URI that hosts the employer&#39;s company logo.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A list of keys of filterable Job.custom_attributes, whose
@@ -71,7 +69,7 @@ trait SchemaCompany extends StObject {
     * parenthesis, brackets and special symbols won&#39;t be properly
     * searchable, and those keyword queries need to be surrounded by quotes.
     */
-  var keywordSearchableJobCustomAttributes: js.UndefOr[js.Array[String]] = js.native
+  var keywordSearchableJobCustomAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required during company update.  The resource name for a company. This is
@@ -79,26 +77,26 @@ trait SchemaCompany extends StObject {
     * &quot;projects/{project_id}/companies/{company_id}&quot;, for example,
     * &quot;projects/api-test-project/companies/foo&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The employer&#39;s company size.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Indicates whether a company is flagged to be suspended from
     * public availability by the service when job content appears suspicious,
     * abusive, or spammy.
     */
-  var suspended: js.UndefOr[Boolean] = js.native
+  var suspended: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  The URI representing the company&#39;s primary web site or
     * home page, for example, &quot;https://www.google.com&quot;.  The maximum
     * number of allowed characters is 255.
     */
-  var websiteUri: js.UndefOr[String] = js.native
+  var websiteUri: js.UndefOr[String] = js.undefined
 }
 object SchemaCompany {
   

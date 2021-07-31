@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to duplicate pages within the same document. */
-@js.native
-trait XDrawPageDuplicator extends XInterface {
+trait XDrawPageDuplicator
+  extends StObject
+     with XInterface {
   
   /**
     * creates a duplicate of a {@link DrawPage} or {@link MasterPage} , including the {@link Shapes} on that page and inserts it into the same model.
     * @param xPage that is the source {@link DrawPage} or {@link MasterPage} that will be duplicated
     * @returns a newly created {@link DrawPage} or {@link MasterPage} that as all properties and copies of all {@link Shapes} from the source page.
     */
-  def duplicate(xPage: XDrawPage): XDrawPage = js.native
+  def duplicate(xPage: XDrawPage): XDrawPage
 }
 object XDrawPageDuplicator {
   

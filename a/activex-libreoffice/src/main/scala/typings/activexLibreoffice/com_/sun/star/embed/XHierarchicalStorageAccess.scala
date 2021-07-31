@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.embed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * access, another stream "a/b/d" can also be opened with hierarchical access ( if it is still not opened ), but the substorage "a" can not be opened (
   * it is locked by hierarchical access ).
   */
-@js.native
 trait XHierarchicalStorageAccess extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait XHierarchicalStorageAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openEncryptedStreamElementByHierarchicalName(sStreamName: String, nOpenMode: Double, sPassword: String): XExtendedStorageStream = js.native
+  def openEncryptedStreamElementByHierarchicalName(sStreamName: String, nOpenMode: Double, sPassword: String): XExtendedStorageStream
   
   /**
     * allows to get access to a child stream of the storage, using hierarchical path.
@@ -47,7 +45,7 @@ trait XHierarchicalStorageAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openStreamElementByHierarchicalName(sStreamPath: String, nOpenMode: Double): XExtendedStorageStream = js.native
+  def openStreamElementByHierarchicalName(sStreamPath: String, nOpenMode: Double): XExtendedStorageStream
   
   /**
     * removes a stream specified by hierarchical name from a storage.
@@ -58,7 +56,7 @@ trait XHierarchicalStorageAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during removing
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def removeStreamElementByHierarchicalName(sElementPath: String): Unit = js.native
+  def removeStreamElementByHierarchicalName(sElementPath: String): Unit
 }
 object XHierarchicalStorageAccess {
   

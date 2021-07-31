@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The message returned from the DetectIntent method.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2DetectIntentResponse extends StObject {
   
   /**
@@ -19,29 +17,29 @@ trait SchemaGoogleCloudDialogflowV2DetectIntentResponse extends StObject {
     * generating audio. If no default platform text responses exist, the
     * generated audio content will be empty.
     */
-  var outputAudio: js.UndefOr[String] = js.native
+  var outputAudio: js.UndefOr[String] = js.undefined
   
   /**
     * The config used by the speech synthesizer to generate the output audio.
     */
-  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2OutputAudioConfig] = js.native
+  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2OutputAudioConfig] = js.undefined
   
   /**
     * The selected results of the conversational query or event processing. See
     * `alternative_query_results` for additional potential results.
     */
-  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2QueryResult] = js.native
+  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2QueryResult] = js.undefined
   
   /**
     * The unique identifier of the response. It can be used to locate a
     * response in the training example set or for reporting issues.
     */
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of the webhook request.
     */
-  var webhookStatus: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var webhookStatus: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2DetectIntentResponse {
   

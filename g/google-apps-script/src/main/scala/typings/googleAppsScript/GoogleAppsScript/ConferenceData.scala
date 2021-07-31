@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ConferenceData {
@@ -17,22 +16,34 @@ object ConferenceData {
   object ConferenceErrorType extends StObject {
     
     @js.native
-    sealed trait AUTHENTICATION extends ConferenceErrorType
+    sealed trait AUTHENTICATION
+      extends StObject
+         with ConferenceErrorType
     
     @js.native
-    sealed trait CONFERENCE_SOLUTION_FORBIDDEN extends ConferenceErrorType
+    sealed trait CONFERENCE_SOLUTION_FORBIDDEN
+      extends StObject
+         with ConferenceErrorType
     
     @js.native
-    sealed trait PERMANENT extends ConferenceErrorType
+    sealed trait PERMANENT
+      extends StObject
+         with ConferenceErrorType
     
     @js.native
-    sealed trait PERMISSION_DENIED extends ConferenceErrorType
+    sealed trait PERMISSION_DENIED
+      extends StObject
+         with ConferenceErrorType
     
     @js.native
-    sealed trait TEMPORARY extends ConferenceErrorType
+    sealed trait TEMPORARY
+      extends StObject
+         with ConferenceErrorType
     
     @js.native
-    sealed trait UNKNOWN extends ConferenceErrorType
+    sealed trait UNKNOWN
+      extends StObject
+         with ConferenceErrorType
   }
   
   @js.native
@@ -45,13 +56,19 @@ object ConferenceData {
   object EntryPointFeature extends StObject {
     
     @js.native
-    sealed trait TOLL extends EntryPointFeature
+    sealed trait TOLL
+      extends StObject
+         with EntryPointFeature
     
     @js.native
-    sealed trait TOLL_FREE extends EntryPointFeature
+    sealed trait TOLL_FREE
+      extends StObject
+         with EntryPointFeature
     
     @js.native
-    sealed trait UNKNOWN_FEATURE extends EntryPointFeature
+    sealed trait UNKNOWN_FEATURE
+      extends StObject
+         with EntryPointFeature
   }
   
   @js.native
@@ -64,16 +81,24 @@ object ConferenceData {
   object EntryPointType extends StObject {
     
     @js.native
-    sealed trait MORE extends EntryPointType
+    sealed trait MORE
+      extends StObject
+         with EntryPointType
     
     @js.native
-    sealed trait PHONE extends EntryPointType
+    sealed trait PHONE
+      extends StObject
+         with EntryPointType
     
     @js.native
-    sealed trait SIP extends EntryPointType
+    sealed trait SIP
+      extends StObject
+         with EntryPointType
     
     @js.native
-    sealed trait VIDEO extends EntryPointType
+    sealed trait VIDEO
+      extends StObject
+         with EntryPointType
   }
   
   /**
@@ -94,14 +119,13 @@ object ConferenceData {
     *         .addConferenceParameter(conferenceParameter)
     *         .build();
     */
-  @js.native
   trait ConferenceData extends StObject {
     
     /**
       * Prints the JSON representation of this object. This is for debugging only.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data#printJson()
       */
-    def printJson(): String = js.native
+    def printJson(): String
   }
   object ConferenceData {
     
@@ -122,7 +146,6 @@ object ConferenceData {
   /**
     * Builder for creating for ConferenceData objects.
     */
-  @js.native
   trait ConferenceDataBuilder extends StObject {
     
     /**
@@ -131,7 +154,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#addConferenceParameter(ConferenceParameter)
       * @param conferenceParameter The parameter to add.
       */
-    def addConferenceParameter(conferenceParameter: ConferenceParameter): ConferenceDataBuilder = js.native
+    def addConferenceParameter(conferenceParameter: ConferenceParameter): ConferenceDataBuilder
     
     /**
       * Adds an EntryPoint to this ConferenceData. The maximum number of entry points
@@ -139,13 +162,13 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#addEntryPoint(EntryPoint)
       * @param entryPoint The entry point to add.
       */
-    def addEntryPoint(entryPoint: EntryPoint): ConferenceDataBuilder = js.native
+    def addEntryPoint(entryPoint: EntryPoint): ConferenceDataBuilder
     
     /**
       * Builds and validates the ConferenceData.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#build()
       */
-    def build(): typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData = js.native
+    def build(): typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData
     
     /**
       * Sets the conference ID of this ConferenceData. The maximum length for this field is 512
@@ -153,7 +176,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#setConferenceId(String)
       * @param conferenceId The ID to set.
       */
-    def setConferenceId(conferenceId: String): ConferenceDataBuilder = js.native
+    def setConferenceId(conferenceId: String): ConferenceDataBuilder
     
     /**
       * Sets the conference solution ID defined in the addon's manifest. The value must be specified
@@ -165,7 +188,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#setConferenceSolutionId(String)
       * @param conferenceSolutionId The ID matching the manifest.
       */
-    def setConferenceSolutionId(conferenceSolutionId: String): ConferenceDataBuilder = js.native
+    def setConferenceSolutionId(conferenceSolutionId: String): ConferenceDataBuilder
     
     /**
       * Sets the ConferenceError of this ConferenceData, indicating that the conference
@@ -173,7 +196,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#setError(ConferenceError)
       * @param conferenceError The error to set.
       */
-    def setError(conferenceError: ConferenceError): ConferenceDataBuilder = js.native
+    def setError(conferenceError: ConferenceError): ConferenceDataBuilder
     
     /**
       * Sets the additional notes of this ConferenceData, such as instructions from the
@@ -182,7 +205,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-builder#setNotes(String)
       * @param notes The additional notes to set.
       */
-    def setNotes(notes: String): ConferenceDataBuilder = js.native
+    def setNotes(notes: String): ConferenceDataBuilder
   }
   object ConferenceDataBuilder {
     
@@ -229,38 +252,37 @@ object ConferenceData {
   /**
     * Service that scripts can use to create conferencing information.
     */
-  @js.native
   trait ConferenceDataService extends StObject {
     
-    var ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any = js.native
+    var ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any
     
-    var EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any = js.native
+    var EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any
     
-    var EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any = js.native
+    var EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any
     
     /**
       * Returns a new, empty ConferenceDataBuilder.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-service#newConferenceDataBuilder()
       */
-    def newConferenceDataBuilder(): ConferenceDataBuilder = js.native
+    def newConferenceDataBuilder(): ConferenceDataBuilder
     
     /**
       * Returns a new, empty ConferenceError.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-service#newConferenceError()
       */
-    def newConferenceError(): ConferenceError = js.native
+    def newConferenceError(): ConferenceError
     
     /**
       * Returns a new, empty ConferenceParameter.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-service#newConferenceParameter()
       */
-    def newConferenceParameter(): ConferenceParameter = js.native
+    def newConferenceParameter(): ConferenceParameter
     
     /**
       * Returns a new, empty EntryPoint.
       * https://developers.google.com/apps-script/reference/conference-data/conference-data-service#newEntryPoint()
       */
-    def newEntryPoint(): EntryPoint = js.native
+    def newEntryPoint(): EntryPoint
   }
   object ConferenceDataService {
     
@@ -330,7 +352,6 @@ object ConferenceData {
     *         .setConferenceErrorType(ConferenceErrorType.UNAUTHENTICATED)
     *         .setAuthenticationUrl(authenticationUrl);
     */
-  @js.native
   trait ConferenceError extends StObject {
     
     /**
@@ -340,14 +361,14 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-error#setAuthenticationUrl(String)
       * @param authenticationUrl The authentication URL to set.
       */
-    def setAuthenticationUrl(authenticationUrl: String): ConferenceError = js.native
+    def setAuthenticationUrl(authenticationUrl: String): ConferenceError
     
     /**
       * Sets the error type of this ConferenceError.
       * https://developers.google.com/apps-script/reference/conference-data/conference-error#setConferenceErrorType(ConferenceErrorType)
       * @param conferenceErrorType The type of error to set.
       */
-    def setConferenceErrorType(conferenceErrorType: ConferenceErrorType): ConferenceError = js.native
+    def setConferenceErrorType(conferenceErrorType: ConferenceErrorType): ConferenceError
   }
   object ConferenceError {
     
@@ -379,7 +400,6 @@ object ConferenceData {
     *         .setKey('meetingId')
     *         .setValue('123456');
     */
-  @js.native
   trait ConferenceParameter extends StObject {
     
     /**
@@ -388,7 +408,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-parameter#setKey(String)
       * @param key The key to set.
       */
-    def setKey(key: String): ConferenceParameter = js.native
+    def setKey(key: String): ConferenceParameter
     
     /**
       * Sets the value of this ConferenceParameter. The maximum length for this field is 1024
@@ -396,7 +416,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/conference-parameter#setValue(String)
       * @param value The value to set.
       */
-    def setValue(value: String): ConferenceParameter = js.native
+    def setValue(value: String): ConferenceParameter
   }
   object ConferenceParameter {
     
@@ -440,7 +460,6 @@ object ConferenceData {
     *         .setEntryPointType(ConferenceDataService.EntryPointType.MORE)
     *         .setUri('https://example.com/moreJoiningInfo');
     */
-  @js.native
   trait EntryPoint extends StObject {
     
     /**
@@ -448,49 +467,49 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#addFeature(EntryPointFeature)
       * @param feature The feature to set.
       */
-    def addFeature(feature: EntryPointFeature): EntryPoint = js.native
+    def addFeature(feature: EntryPointFeature): EntryPoint
     
     /**
       * An access code for accessing the conference. Maximum length 128 characters. Optional.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setAccessCode(String)
       * @param accessCode The access code to set.
       */
-    def setAccessCode(accessCode: String): EntryPoint = js.native
+    def setAccessCode(accessCode: String): EntryPoint
     
     /**
       * Sets the type of this entry point. Required.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setEntryPointType(EntryPointType)
       * @param entryPointType The entry point type to set.
       */
-    def setEntryPointType(entryPointType: EntryPointType): EntryPoint = js.native
+    def setEntryPointType(entryPointType: EntryPointType): EntryPoint
     
     /**
       * A meeting code for accessing the conference. Maximum length 128 characters. Optional.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setMeetingCode(String)
       * @param meetingCode The meeting code to set.
       */
-    def setMeetingCode(meetingCode: String): EntryPoint = js.native
+    def setMeetingCode(meetingCode: String): EntryPoint
     
     /**
       * A passcode for accessing the conference. Maximum length 128 characters. Optional.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setPasscode(String)
       * @param passcode The passcode to set.
       */
-    def setPasscode(passcode: String): EntryPoint = js.native
+    def setPasscode(passcode: String): EntryPoint
     
     /**
       * A password code for accessing the conference. Maximum length 128 characters. Optional.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setPassword(String)
       * @param password The password to set.
       */
-    def setPassword(password: String): EntryPoint = js.native
+    def setPassword(password: String): EntryPoint
     
     /**
       * A PIN code for accessing the conference. Maximum length 128 characters. Optional.
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setPin(String)
       * @param pin The PIN code to set.
       */
-    def setPin(pin: String): EntryPoint = js.native
+    def setPin(pin: String): EntryPoint
     
     /**
       * The CLDR/ISO 3166 region code for the country associated with this entry point. Applicable only
@@ -498,7 +517,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setRegionCode(String)
       * @param regionCode The regionCode to set.
       */
-    def setRegionCode(regionCode: String): EntryPoint = js.native
+    def setRegionCode(regionCode: String): EntryPoint
     
     /**
       * Sets the URI for joining the conference through this entry point. For PHONE entry points, the prefix tel: is required. For SIP entry points, the prefix sip: is required. For VIDEO and MORE entry points, the prefixes
@@ -506,7 +525,7 @@ object ConferenceData {
       * https://developers.google.com/apps-script/reference/conference-data/entry-point#setUri(String)
       * @param uri The URI to set.
       */
-    def setUri(uri: String): EntryPoint = js.native
+    def setUri(uri: String): EntryPoint
   }
   object EntryPoint {
     

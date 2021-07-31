@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A component that implements this service can be used as data source for a data pilot table in a spreadsheet document.
   */
-@js.native
 trait DataPilotSource
-  extends XDimensionsSupplier
+  extends StObject
+     with XDimensionsSupplier
      with XDataPilotResults
      with XRefreshable
      with XPropertySet {
@@ -31,25 +30,25 @@ trait DataPilotSource
     * specifies the number of column fields.
     * @since OOo 3.0
     */
-  var ColumnFieldCount: Double = js.native
+  var ColumnFieldCount: Double
   
   /** specifies if grand totals for the columns are inserted. */
-  var ColumnGrand: Boolean = js.native
+  var ColumnGrand: Boolean
   
   /**
     * specifies the number of data fields.
     * @since OOo 3.0
     */
-  var DataFieldCount: Double = js.native
+  var DataFieldCount: Double
   
   /**
     * specifies the number of row fields.
     * @since OOo 3.0
     */
-  var RowFieldCount: Double = js.native
+  var RowFieldCount: Double
   
   /** specifies if grand totals for the rows are inserted. */
-  var RowGrand: Boolean = js.native
+  var RowGrand: Boolean
 }
 object DataPilotSource {
   

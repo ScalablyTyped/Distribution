@@ -5,7 +5,6 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewFactory")
@@ -27,7 +26,7 @@ class ViewFactory protected () extends StObject {
     * @return The created view.
     */
   def create(container: Container): View_ = js.native
-  def create(container: Container, createInstruction: js.UndefOr[scala.Nothing], element: Element): View_ = js.native
+  def create(container: Container, createInstruction: Unit, element: Element): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction, element: Element): View_ = js.native
   

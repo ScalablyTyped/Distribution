@@ -2,51 +2,49 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFaqRequest extends StObject {
   
   /**
     * A token that you provide to identify the request to create a FAQ. Multiple calls to the CreateFaqRequest operation with the same client token will create only one FAQ. 
     */
-  var ClientToken: js.UndefOr[ClientTokenName] = js.native
+  var ClientToken: js.UndefOr[ClientTokenName] = js.undefined
   
   /**
     * A description of the FAQ.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * The format of the input file. You can choose between a basic CSV format, a CSV format that includes customs attributes in a header, and a JSON format that includes custom attributes. The format must match the format of the file stored in the S3 bucket identified in the S3Path parameter. For more information, see Adding questions and answers.
     */
-  var FileFormat: js.UndefOr[FaqFileFormat] = js.native
+  var FileFormat: js.UndefOr[FaqFileFormat] = js.undefined
   
   /**
     * The identifier of the index that contains the FAQ.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The name that should be associated with the FAQ.
     */
-  var Name: FaqName = js.native
+  var Name: FaqName
   
   /**
     * The Amazon Resource Name (ARN) of a role with permission to access the S3 bucket that contains the FAQs. For more information, see IAM Roles for Amazon Kendra.
     */
-  var RoleArn: typings.awsSdk.kendraMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.kendraMod.RoleArn
   
   /**
     * The S3 location of the FAQ input data.
     */
-  var S3Path: typings.awsSdk.kendraMod.S3Path = js.native
+  var S3Path: typings.awsSdk.kendraMod.S3Path
   
   /**
     * A list of key-value pairs that identify the FAQ. You can use the tags to identify and organize your resources and to control access to resources.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateFaqRequest {
   

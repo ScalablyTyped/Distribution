@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxRadioButton control.
   */
-@js.native
-trait ASPxClientRadioButton extends ASPxClientCheckBox
+trait ASPxClientRadioButton
+  extends StObject
+     with ASPxClientCheckBox
 object ASPxClientRadioButton {
   
   @scala.inline

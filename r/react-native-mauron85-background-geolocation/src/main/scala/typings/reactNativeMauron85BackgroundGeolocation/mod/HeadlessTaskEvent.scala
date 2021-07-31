@@ -2,17 +2,15 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadlessTaskEvent extends StObject {
   
   /** Name of the event [ "location", "stationary", "activity" ] */
-  var name: HeadlessTaskEventName = js.native
+  var name: HeadlessTaskEventName
   
   /** Event parameters. */
-  var params: js.Any = js.native
+  var params: js.Any
 }
 object HeadlessTaskEvent {
   

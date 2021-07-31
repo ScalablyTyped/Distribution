@@ -7,81 +7,79 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.TV
 import typings.tizenCommonWeb.tizenCommonWebStrings.WEARABLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfoDeviceCapability extends StObject {
   
   /**
     * Indicates whether the device supports accelerometer.
     */
-  val accelerometer: Boolean = js.native
+  val accelerometer: Boolean
   
   /**
     * Indicates whether the device supports accelerometer wake-up feature.
     *
     * @since 2.1
     */
-  val accelerometerWakeup: Boolean = js.native
+  val accelerometerWakeup: Boolean
   
   /**
     * Indicates whether the device supports auto rotation.
     *
     * @since 2.1
     */
-  val autoRotation: Boolean = js.native
+  val autoRotation: Boolean
   
   /**
     * Indicates whether the device supports barometer.
     */
-  val barometer: Boolean = js.native
+  val barometer: Boolean
   
   /**
     * Indicates whether the device supports barometer wake-up feature.
     *
     * @since 2.1
     */
-  val barometerWakeup: Boolean = js.native
+  val barometerWakeup: Boolean
   
   /**
     * Indicates whether the device supports Bluetooth.
     */
-  val bluetooth: Boolean = js.native
+  val bluetooth: Boolean
   
   /**
     * Indicates whether the device supports camera.
     *
     * @since 2.1
     */
-  val camera: Boolean = js.native
+  val camera: Boolean
   
   /**
     * Indicates whether the device supports back-side camera.
     */
-  val cameraBack: Boolean = js.native
+  val cameraBack: Boolean
   
   /**
     * Indicates whether the device supports flash on the back-side camera.
     */
-  val cameraBackFlash: Boolean = js.native
+  val cameraBackFlash: Boolean
   
   /**
     * Indicates whether the device supports front camera.
     */
-  val cameraFront: Boolean = js.native
+  val cameraFront: Boolean
   
   /**
     * Indicates whether the device supports flash on the front camera.
     */
-  val cameraFrontFlash: Boolean = js.native
+  val cameraFrontFlash: Boolean
   
   /**
     * Indicates whether the device supports data encryption.
     *
     * @since 2.1
     */
-  val dataEncryption: Boolean = js.native
+  val dataEncryption: Boolean
   
   /**
     * Indicates the Tizen ID, not device's unique ID since Tizen 2.3.
@@ -91,80 +89,80 @@ trait SystemInfoDeviceCapability extends StObject {
     *
     *         It is recommended to use tizen.systeminfo.getCapability("http://tizen.org/system/tizenid") since Tizen 2.3 instead.
     */
-  val duid: String = js.native
+  val duid: String
   
   /**
     * Indicates whether the device supports FM radio.
     */
-  val fmRadio: Boolean = js.native
+  val fmRadio: Boolean
   
   /**
     * Indicates whether the device supports hardware acceleration for 2D/3D graphics.
     *
     * @since 2.1
     */
-  val graphicsAcceleration: Boolean = js.native
+  val graphicsAcceleration: Boolean
   
   /**
     * Indicates whether the device supports gyroscope.
     */
-  val gyroscope: Boolean = js.native
+  val gyroscope: Boolean
   
   /**
     * Indicates whether the device supports gyroscope wake-up feature.
     *
     * @since 2.1
     */
-  val gyroscopeWakeup: Boolean = js.native
+  val gyroscopeWakeup: Boolean
   
   /**
     * Indicates whether the device supports the built-in keyboard.
     */
-  val inputKeyboard: Boolean = js.native
+  val inputKeyboard: Boolean
   
   /**
     * Indicates whether the device supports the built-in keyboard layout.
     *
     * @since 2.1
     */
-  val inputKeyboardLayout: Boolean = js.native
+  val inputKeyboardLayout: Boolean
   
   /**
     * Indicates whether the device supports GPS or not.
     */
-  val location: Boolean = js.native
+  val location: Boolean
   
   /**
     * Indicates whether the device supports GPS based location feature.
     */
-  val locationGps: Boolean = js.native
+  val locationGps: Boolean
   
   /**
     * Indicates whether the device supports WPS based location feature.
     */
-  val locationWps: Boolean = js.native
+  val locationWps: Boolean
   
   /**
     * Indicates whether the device supports magnetometer.
     */
-  val magnetometer: Boolean = js.native
+  val magnetometer: Boolean
   
   /**
     * Indicates whether the device supports magnetometer wake-up feature.
     *
     * @since 2.1
     */
-  val magnetometerWakeup: Boolean = js.native
+  val magnetometerWakeup: Boolean
   
   /**
     * Indicates whether the device supports microphone.
     */
-  val microphone: Boolean = js.native
+  val microphone: Boolean
   
   /**
     * The number of point in Multi-point touch.
     */
-  val multiTouchCount: Double = js.native
+  val multiTouchCount: Double
   
   /**
     * The version of the Native API in the `[Major].[Minor].[Patch Version]` format.
@@ -182,43 +180,43 @@ trait SystemInfoDeviceCapability extends StObject {
     *
     * @throw WebAPIException `SecurityError`.
     */
-  val nativeApiVersion: String = js.native
+  val nativeApiVersion: String
   
   /**
     * Indicates whether the device supports native OSP API.
     *
     * @since 2.1
     */
-  val nativeOspCompatible: Boolean = js.native
+  val nativeOspCompatible: Boolean
   
   /**
     * Indicates whether the device supports NFC.
     */
-  val nfc: Boolean = js.native
+  val nfc: Boolean
   
   /**
     * Indicates whether the device supports NFC reserved push.
     *
     * @since 2.1
     */
-  val nfcReservedPush: Boolean = js.native
+  val nfcReservedPush: Boolean
   
   /**
     * Indicates whether the device supports OpenGL-ES.
     *
     * @since 2.1
     */
-  val opengles: Boolean = js.native
+  val opengles: Boolean
   
   /**
     * Indicates whether the device supports OpenGL-ES version 1.1.
     */
-  val openglesVersion1_1: Boolean = js.native
+  val openglesVersion1_1: Boolean
   
   /**
     * Indicates whether the device supports OpenGL-ES version 2.0.
     */
-  val openglesVersion2_0: Boolean = js.native
+  val openglesVersion2_0: Boolean
   
   /**
     * The device 3DC texture format for OpenGL-ES.
@@ -227,40 +225,40 @@ trait SystemInfoDeviceCapability extends StObject {
     *
     * @since 2.1
     */
-  val openglestextureFormat: String = js.native
+  val openglestextureFormat: String
   
   /**
     * Indicates whether the device supports photometer.
     *
     * @since 2.1
     */
-  val photometer: Boolean = js.native
+  val photometer: Boolean
   
   /**
     * Indicates whether the device supports photometer wake-up feature.
     *
     * @since 2.1
     */
-  val photometerWakeup: Boolean = js.native
+  val photometerWakeup: Boolean
   
   /**
     * The device CPU architecture.
     *
     * The possible values for this attribute are: ***armv6***, ***armv7***, ***x86***.
     */
-  val platformCoreCpuArch: String = js.native
+  val platformCoreCpuArch: String
   
   /**
     * The device FPU architecture.
     *
     * The possible values for this attribute are: ***vfpv3***, ***sse2***, ***sse3*** and ***ssse3***.
     */
-  val platformCoreFpuArch: String = js.native
+  val platformCoreFpuArch: String
   
   /**
     * The name of the platform.
     */
-  val platformName: String = js.native
+  val platformName: String
   
   /**
     * The version of the platform in the `[Major].[Minor].[Patch Version]` format.
@@ -277,168 +275,168 @@ trait SystemInfoDeviceCapability extends StObject {
     *
     * @throw WebAPIException `SecurityError`.
     */
-  val platformVersion: String = js.native
+  val platformVersion: String
   
   /**
     * Represents the profile of the current device.
     *
     * @since 2.2
     */
-  val profile: SystemInfoProfile | MOBILE_FULL | MOBILE_WEB | MOBILE | WEARABLE | TV = js.native
+  val profile: SystemInfoProfile | MOBILE_FULL | MOBILE_WEB | MOBILE | WEARABLE | TV
   
   /**
     * Indicates whether the device supports proximity.
     */
-  val proximity: Boolean = js.native
+  val proximity: Boolean
   
   /**
     * Indicates whether the device supports proximity wake-up feature.
     *
     * @since 2.1
     */
-  val proximityWakeup: Boolean = js.native
+  val proximityWakeup: Boolean
   
   /**
     * Indicates whether the device supports push service.
     *
     * @since 2.1
     */
-  val push: Boolean = js.native
+  val push: Boolean
   
   /**
     * Indicates whether the device supports HDMI output.
     */
-  val screenOutputHdmi: Boolean = js.native
+  val screenOutputHdmi: Boolean
   
   /**
     * Indicates whether the device supports RCA output.
     */
-  val screenOutputRca: Boolean = js.native
+  val screenOutputRca: Boolean
   
   /**
     * Indicates whether the device supports the 480 * 800 screen size.
     *
     * @since 2.1
     */
-  val screenSize480_800: Boolean = js.native
+  val screenSize480_800: Boolean
   
   /**
     * Indicates whether the device supports the 720 * 1280 screen size.
     *
     * @since 2.1
     */
-  val screenSize720_1280: Boolean = js.native
+  val screenSize720_1280: Boolean
   
   /**
     * Indicates whether the device supports the screen normal size.
     *
     * @since 2.1
     */
-  val screenSizeNormal: Boolean = js.native
+  val screenSizeNormal: Boolean
   
   /**
     * Indicates whether the device supports secure element.
     *
     * @since 2.1
     */
-  val secureElement: Boolean = js.native
+  val secureElement: Boolean
   
   /**
     * Indicates whether the device supports shell app widget (dynamic box).
     *
     * @since 2.1
     */
-  val shellAppWidget: Boolean = js.native
+  val shellAppWidget: Boolean
   
   /**
     * Indicates whether the device supports VOIP.
     */
-  val sipVoip: Boolean = js.native
+  val sipVoip: Boolean
   
   /**
     * Indicates whether the device supports speech recognition.
     */
-  val speechRecognition: Boolean = js.native
+  val speechRecognition: Boolean
   
   /**
     * Indicates whether the device supports speech synthesis.
     *
     * @since 2.1
     */
-  val speechSynthesis: Boolean = js.native
+  val speechSynthesis: Boolean
   
   /**
     * Indicates whether the device supports the telephony feature.
     *
     * @since 2.1
     */
-  val telephony: Boolean = js.native
+  val telephony: Boolean
   
   /**
     * Indicates whether the device supports the MMS feature.
     *
     * @since 2.1
     */
-  val telephonyMms: Boolean = js.native
+  val telephonyMms: Boolean
   
   /**
     * Indicates whether the device supports the SMS feature.
     *
     * @since 2.1
     */
-  val telephonySms: Boolean = js.native
+  val telephonySms: Boolean
   
   /**
     * Indicates whether the device supports tiltmeter.
     *
     * @since 2.1
     */
-  val tiltmeter: Boolean = js.native
+  val tiltmeter: Boolean
   
   /**
     * Indicates whether the device supports tiltmeter wake-up feature.
     *
     * @since 2.1
     */
-  val tiltmeterWakeup: Boolean = js.native
+  val tiltmeterWakeup: Boolean
   
   /**
     * Indicates whether the device supports USB accessory.
     */
-  val usbAccessory: Boolean = js.native
+  val usbAccessory: Boolean
   
   /**
     * Indicates whether the device supports USB host.
     */
-  val usbHost: Boolean = js.native
+  val usbHost: Boolean
   
   /**
     * Indicates whether the device supports vision face recognition.
     *
     * @since 2.1
     */
-  val visionFaceRecognition: Boolean = js.native
+  val visionFaceRecognition: Boolean
   
   /**
     * Indicates whether the device supports vision image recognition.
     *
     * @since 2.1
     */
-  val visionImageRecognition: Boolean = js.native
+  val visionImageRecognition: Boolean
   
   /**
     * Indicates whether the device supports vision QR code generation.
     *
     * @since 2.1
     */
-  val visionQrcodeGeneration: Boolean = js.native
+  val visionQrcodeGeneration: Boolean
   
   /**
     * Indicates whether the device supports vision QR code recognition.
     *
     * @since 2.1
     */
-  val visionQrcodeRecognition: Boolean = js.native
+  val visionQrcodeRecognition: Boolean
   
   /**
     * The version of the Web API in the `[Major].[Minor].[Patch Version]` format.
@@ -456,17 +454,17 @@ trait SystemInfoDeviceCapability extends StObject {
     *
     * @throw WebAPIException `SecurityError`.
     */
-  val webApiVersion: String = js.native
+  val webApiVersion: String
   
   /**
     * Indicates whether the device supports Wi-Fi.
     */
-  val wifi: Boolean = js.native
+  val wifi: Boolean
   
   /**
     * Indicates whether the device supports Wi-Fi Direct.
     */
-  val wifiDirect: Boolean = js.native
+  val wifiDirect: Boolean
 }
 object SystemInfoDeviceCapability {
   

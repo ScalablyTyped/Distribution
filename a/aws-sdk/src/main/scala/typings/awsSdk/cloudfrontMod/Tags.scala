@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tags extends StObject {
   
   /**
     *  A complex type that contains Tag elements.
     */
-  var Items: js.UndefOr[TagList] = js.native
+  var Items: js.UndefOr[TagList] = js.undefined
 }
 object Tags {
   

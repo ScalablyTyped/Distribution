@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3LogImpressionsRequest extends StObject {
   
   /** Required. Information about the client device. For example, device model and operating system. */
-  var clientInfo: js.UndefOr[GoogleMapsUnityClientInfo] = js.native
+  var clientInfo: js.UndefOr[GoogleMapsUnityClientInfo] = js.undefined
   
   /** Required. Impression event details. The maximum number of impression reports that you can log at once is 50. */
-  var impressions: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3Impression]] = js.native
+  var impressions: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3Impression]] = js.undefined
   
   /**
     * Required. A string that uniquely identifies the log impressions request. This allows you to detect duplicate requests. We recommend that you use UUIDs for this value. The value must
     * not exceed 50 characters. You should reuse the `request_id` only when retrying a request in case of failure. In this case, the request must be identical to the one that failed.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3LogImpressionsRequest {
   

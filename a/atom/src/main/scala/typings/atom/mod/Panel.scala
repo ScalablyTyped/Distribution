@@ -2,41 +2,39 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Panel[T] extends StObject {
   
   // Construction and Destruction
   /** Destroy and remove this panel from the UI. */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   // Panel Details
   /** Returns the panel's item. */
-  def getItem(): T = js.native
+  def getItem(): T
   
   /** Returns a number indicating this panel's priority. */
-  def getPriority(): Double = js.native
+  def getPriority(): Double
   
   /** Hide this panel. */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /** Returns a boolean true when the panel is visible. */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   // Event Subscription
   /** Invoke the given callback when the pane hidden or shown. */
-  def onDidChangeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable = js.native
+  def onDidChangeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable
   
   /** Invoke the given callback when the pane is destroyed. */
-  def onDidDestroy(callback: js.Function1[/* panel */ Panel[T], Unit]): Disposable = js.native
+  def onDidDestroy(callback: js.Function1[/* panel */ Panel[T], Unit]): Disposable
   
   /** Show this panel. */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /** Whether or not the Panel is visible. */
-  val visible: Boolean = js.native
+  val visible: Boolean
 }
 object Panel {
   
@@ -57,7 +55,7 @@ object Panel {
   }
   
   @scala.inline
-  implicit class PanelMutableBuilder[Self <: Panel[_], T] (val x: Self with Panel[T]) extends AnyVal {
+  implicit class PanelMutableBuilder[Self <: Panel[?], T] (val x: Self & Panel[T]) extends AnyVal {
     
     @scala.inline
     def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))

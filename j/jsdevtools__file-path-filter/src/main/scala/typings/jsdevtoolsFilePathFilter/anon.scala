@@ -4,18 +4,16 @@ import typings.jsdevtoolsFilePathFilter.typesMod.FilterCriteria
 import typings.jsdevtoolsFilePathFilter.typesMod.FilterCriterion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.Filters<@jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.FilterCriteria>> */
-  @js.native
   trait PartialFiltersFilterCrite extends StObject {
     
-    var exclude: js.UndefOr[FilterCriteria] = js.native
+    var exclude: js.UndefOr[FilterCriteria] = js.undefined
     
-    var include: js.UndefOr[FilterCriteria] = js.native
+    var include: js.UndefOr[FilterCriteria] = js.undefined
   }
   object PartialFiltersFilterCrite {
     
@@ -32,9 +30,6 @@ object anon {
       def setExclude(value: FilterCriteria): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setExcludeFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
-      
-      @scala.inline
       def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
       @scala.inline
@@ -42,9 +37,6 @@ object anon {
       
       @scala.inline
       def setInclude(value: FilterCriteria): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIncludeFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)

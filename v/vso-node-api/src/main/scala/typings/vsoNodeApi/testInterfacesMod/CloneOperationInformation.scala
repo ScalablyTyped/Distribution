@@ -3,78 +3,76 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloneOperationInformation extends StObject {
   
-  var cloneStatistics: CloneStatistics = js.native
+  var cloneStatistics: CloneStatistics
   
   /**
     * If the operation is complete, the DateTime of completion. If operation is not complete, this is DateTime.MaxValue
     */
-  var completionDate: Date = js.native
+  var completionDate: Date
   
   /**
     * DateTime when the operation was started
     */
-  var creationDate: Date = js.native
+  var creationDate: Date
   
   /**
     * Shallow reference of the destination
     */
-  var destinationObject: ShallowReference = js.native
+  var destinationObject: ShallowReference
   
   /**
     * Shallow reference of the destination
     */
-  var destinationPlan: ShallowReference = js.native
+  var destinationPlan: ShallowReference
   
   /**
     * Shallow reference of the destination
     */
-  var destinationProject: ShallowReference = js.native
+  var destinationProject: ShallowReference
   
   /**
     * If the operation has Failed, Message contains the reason for failure. Null otherwise.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The ID of the operation
     */
-  var opId: Double = js.native
+  var opId: Double
   
   /**
     * The type of the object generated as a result of the Clone operation
     */
-  var resultObjectType: ResultObjectType = js.native
+  var resultObjectType: ResultObjectType
   
   /**
     * Shallow reference of the source
     */
-  var sourceObject: ShallowReference = js.native
+  var sourceObject: ShallowReference
   
   /**
     * Shallow reference of the source
     */
-  var sourcePlan: ShallowReference = js.native
+  var sourcePlan: ShallowReference
   
   /**
     * Shallow reference of the source
     */
-  var sourceProject: ShallowReference = js.native
+  var sourceProject: ShallowReference
   
   /**
     * Current state of the operation. When State reaches Suceeded or Failed, the operation is complete
     */
-  var state: CloneOperationState = js.native
+  var state: CloneOperationState
   
   /**
     * Url for geting the clone information
     */
-  var url: String = js.native
+  var url: String
 }
 object CloneOperationInformation {
   

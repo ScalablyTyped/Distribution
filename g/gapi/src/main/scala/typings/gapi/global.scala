@@ -9,7 +9,6 @@ import typings.gapi.gapi.client.RpcRequest
 import typings.gapi.gapi.client.TokenObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -23,44 +22,52 @@ object global {
     */
   object gapi {
     
+    @JSGlobal("gapi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object auth {
       
-      @JSGlobal("gapi.auth.authorize")
+      @JSGlobal("gapi.auth")
       @js.native
-      def authorize(params: Clientid, callback: js.Function1[/* token */ GoogleApiOAuth2TokenObject, _]): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("gapi.auth.getToken")
-      @js.native
-      def getToken(): GoogleApiOAuth2TokenObject = js.native
+      @scala.inline
+      def authorize(params: Clientid, callback: js.Function1[/* token */ GoogleApiOAuth2TokenObject, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("gapi.auth.init")
-      @js.native
-      def init(callback: js.Function0[_]): Unit = js.native
+      @scala.inline
+      def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
       
-      @JSGlobal("gapi.auth.setToken")
-      @js.native
-      def setToken(token: GoogleApiOAuth2TokenObject): Unit = js.native
+      @scala.inline
+      def init(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("gapi.auth.signIn")
-      @js.native
-      def signIn(params: Apppackagename): Unit = js.native
+      @scala.inline
+      def setToken(token: GoogleApiOAuth2TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("gapi.auth.signOut")
-      @js.native
-      def signOut(): Unit = js.native
+      @scala.inline
+      def signIn(params: Apppackagename): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      @scala.inline
+      def signOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[Unit]
     }
     
     object client {
       
+      @JSGlobal("gapi.client")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSGlobal("gapi.client.HttpBatch")
       @js.native
       class HttpBatch ()
-        extends typings.gapi.gapi.client.HttpBatch
+        extends StObject
+           with typings.gapi.gapi.client.HttpBatch
       
       @JSGlobal("gapi.client.HttpRequest")
       @js.native
       class HttpRequest[T] ()
-        extends typings.gapi.gapi.client.HttpRequest[T]
+        extends StObject
+           with typings.gapi.gapi.client.HttpRequest[T]
       
       /**
         * HttpRequest supports promises.
@@ -69,61 +76,58 @@ object global {
       @JSGlobal("gapi.client.HttpRequestPromise")
       @js.native
       class HttpRequestPromise[T] ()
-        extends typings.gapi.gapi.client.HttpRequestPromise[T]
+        extends StObject
+           with typings.gapi.gapi.client.HttpRequestPromise[T]
       
       @JSGlobal("gapi.client.RpcRequest")
       @js.native
-      class RpcRequest_ () extends RpcRequest
+      class RpcRequest_ ()
+        extends StObject
+           with RpcRequest {
+        
+        /**
+          * Executes the request and runs the supplied callback with the response.
+          * @param callback The callback function which executes when the request succeeds or fails.
+          */
+        /* CompleteClass */
+        override def callback(callback: js.Function2[/* jsonResp */ js.Any, /* rawResp */ String, Unit]): Unit = js.native
+      }
       
-      @JSGlobal("gapi.client.getToken")
-      @js.native
-      def getToken(): GoogleApiOAuth2TokenObject = js.native
+      @scala.inline
+      def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
       
-      @JSGlobal("gapi.client.init")
-      @js.native
-      def init(args: ApiKey): js.Promise[Unit] = js.native
+      @scala.inline
+      def init(args: ApiKey): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
       
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: String, version: String): js.Promise[Unit] = js.native
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: String, version: String, callback: js.Function0[_]): Unit = js.native
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: String, version: String, callback: js.Function0[_], url: String): Unit = js.native
+      @scala.inline
+      def load(name: String, version: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+      @scala.inline
+      def load(name: String, version: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def load(name: String, version: String, callback: js.Function0[js.Any], url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("gapi.client.request")
-      @js.native
-      def request(args: RequestOptions): typings.gapi.gapi.client.HttpRequest[_] = js.native
+      @scala.inline
+      def request(args: RequestOptions): typings.gapi.gapi.client.HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[typings.gapi.gapi.client.HttpRequest[js.Any]]
       
-      @JSGlobal("gapi.client.rpcRequest")
-      @js.native
-      def rpcRequest(method: String): RpcRequest = js.native
-      @JSGlobal("gapi.client.rpcRequest")
-      @js.native
-      def rpcRequest(method: String, version: js.UndefOr[scala.Nothing], rpcParams: js.Any): RpcRequest = js.native
-      @JSGlobal("gapi.client.rpcRequest")
-      @js.native
-      def rpcRequest(method: String, version: String): RpcRequest = js.native
-      @JSGlobal("gapi.client.rpcRequest")
-      @js.native
-      def rpcRequest(method: String, version: String, rpcParams: js.Any): RpcRequest = js.native
+      @scala.inline
+      def rpcRequest(method: String): RpcRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any]).asInstanceOf[RpcRequest]
+      @scala.inline
+      def rpcRequest(method: String, version: String): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
+      @scala.inline
+      def rpcRequest(method: String, version: String, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
+      @scala.inline
+      def rpcRequest(method: String, version: Unit, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
       
-      @JSGlobal("gapi.client.setApiKey")
-      @js.native
-      def setApiKey(apiKey: String): Unit = js.native
+      @scala.inline
+      def setApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("gapi.client.setToken")
-      @js.native
-      def setToken(): Unit = js.native
-      @JSGlobal("gapi.client.setToken")
-      @js.native
-      def setToken(token: TokenObject): Unit = js.native
+      @scala.inline
+      def setToken(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")().asInstanceOf[Unit]
+      @scala.inline
+      def setToken(token: TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    @JSGlobal("gapi.load")
-    @js.native
-    def load(apiName: String, callback: CallbackOrConfig): Unit = js.native
+    @scala.inline
+    def load(apiName: String, callback: CallbackOrConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(apiName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

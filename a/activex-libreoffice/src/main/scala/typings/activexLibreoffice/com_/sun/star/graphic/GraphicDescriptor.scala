@@ -8,42 +8,42 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service describes all graphic properties that are available via the {@link com.sun.star.beans.XPropertySet} interface
   * @see XPropertySet
   */
-@js.native
-trait GraphicDescriptor extends XPropertySet {
+trait GraphicDescriptor
+  extends StObject
+     with XPropertySet {
   
   /**
     * Indicates that it is a pixel graphic with an alpha channel
     *
     * The status of this flag is not always clear if the graphic was not loaded at all, e.g. in case of just querying for the {@link GraphicDescriptor}
     */
-  var Alpha: Boolean = js.native
+  var Alpha: Boolean
   
   /**
     * Indicates that it is a graphic that consists of several frames that can be played as an animation
     *
     * The status of this flag is not always clear if the graphic was not loaded at all, e.g. in case of just querying for the {@link GraphicDescriptor}
     */
-  var Animated: Boolean = js.native
+  var Animated: Boolean
   
   /**
     * The number of bits per pixel used for the pixel graphic
     *
     * This property is not available for vector graphics and may not be available for some kinds of pixel graphics
     */
-  var BitsPerPixel: Double = js.native
+  var BitsPerPixel: Double
   
   /**
     * The type of the graphic
     * @see GraphicType
     */
-  var GraphicType: Double = js.native
+  var GraphicType: Double
   
   /**
     * The MimeType of the loaded graphic
@@ -55,7 +55,7 @@ trait GraphicDescriptor extends XPropertySet {
     *
     * erimage/x-targaimage/x-photoshopimage/x-epsimage/x-dxfimage/x-metimage/x-pictimage/x-sgfimage/x-svmimage/x-wmfimage/x-sgvimage/x-emfimage/x-vclgraphic
     */
-  var MimeType: String = js.native
+  var MimeType: String
   
   /**
     * The Size of the graphic in 100th mm.
@@ -63,7 +63,7 @@ trait GraphicDescriptor extends XPropertySet {
     * This property may not be available in case of pixel graphics or if the logical size can not be determined correctly for some formats without loading
     * the whole graphic
     */
-  var Size100thMM: Size = js.native
+  var Size100thMM: Size
   
   /**
     * The Size of the graphic in pixel.
@@ -71,7 +71,7 @@ trait GraphicDescriptor extends XPropertySet {
     * This property may not be available in case of vector graphics or if the pixel size can not be determined correctly for some formats without loading
     * the whole graphic
     */
-  var SizePixel: Size = js.native
+  var SizePixel: Size
   
   /**
     * Indicates that it is a transparent graphic
@@ -79,7 +79,7 @@ trait GraphicDescriptor extends XPropertySet {
     * This property is always `TRUE` for vector graphics. The status of this flag is not always clear if the graphic was not loaded at all, e.g. in case of
     * just querying for the {@link GraphicDescriptor} .
     */
-  var Transparent: Boolean = js.native
+  var Transparent: Boolean
 }
 object GraphicDescriptor {
   

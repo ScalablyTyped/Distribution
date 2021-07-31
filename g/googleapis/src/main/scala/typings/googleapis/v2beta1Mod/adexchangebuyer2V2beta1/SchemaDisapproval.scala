@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly The reason and details for a disapproval.
   */
-@js.native
 trait SchemaDisapproval extends StObject {
   
   /**
     * Additional details about the reason for disapproval.
     */
-  var details: js.UndefOr[js.Array[String]] = js.native
+  var details: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The categorized reason for disapproval.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaDisapproval {
   

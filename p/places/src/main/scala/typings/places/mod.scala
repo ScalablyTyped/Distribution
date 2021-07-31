@@ -7,29 +7,29 @@ import typings.std.HTMLInputElement
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: PlacesOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  
   @JSImport("places", JSImport.Namespace)
   @js.native
-  def apply(options: PlacesOptions): EventEmitter = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("places", "version")
-  @js.native
-  def version(): String = js.native
+  @scala.inline
+  def version(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[String]
   
-  @js.native
   trait AutompleteOptions extends StObject {
     
-    var autoselect: Boolean = js.native
+    var autoselect: Boolean
     
-    var cssClasses: Prefix = js.native
+    var cssClasses: Prefix
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var hint: Boolean = js.native
+    var hint: Boolean
   }
   object AutompleteOptions {
     
@@ -56,10 +56,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -77,16 +76,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Places extends StObject {
     
-    var query: js.Any = js.native
+    var query: js.Any
     
-    var rawAnswer: js.Any = js.native
+    var rawAnswer: js.Any
     
-    var suggestion: js.Any = js.native
+    var suggestion: js.Any
     
-    var suggestionIndex: js.Any = js.native
+    var suggestionIndex: js.Any
   }
   object Places {
     
@@ -113,14 +111,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PlacesOptions extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var appId: String = js.native
+    var appId: String
     
-    var container: String | HTMLInputElement | NodeList | Element = js.native
+    var container: String | HTMLInputElement | NodeList | Element
   }
   object PlacesOptions {
     

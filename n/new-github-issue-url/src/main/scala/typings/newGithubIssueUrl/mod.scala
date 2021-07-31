@@ -2,7 +2,6 @@ package typings.newGithubIssueUrl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
   	opn(url);
   	```
   	*/
-  @JSImport("new-github-issue-url", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("new-github-issue-url", JSImport.Namespace)
   @js.native
@@ -42,38 +40,37 @@ object mod {
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof newGithubIssueUrl */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait CommonOptions extends StObject {
     
     /**
     		The user to assign to the issue.
     		_Requires the user to have the permission to add assignee._
     		*/
-    val assignee: js.UndefOr[String] = js.native
+    val assignee: js.UndefOr[String] = js.undefined
     
     /**
     		The issue body.
     		*/
-    val body: js.UndefOr[String] = js.native
+    val body: js.UndefOr[String] = js.undefined
     
     /**
     		The labels for the issue.
     		_Requires the user to have the permission to add labels._
     		*/
-    val labels: js.UndefOr[js.Array[String]] = js.native
+    val labels: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		The milestone for the issue.
     		_Requires the user to have the permission to add milestone._
     		*/
-    val milestone: js.UndefOr[String] = js.native
+    val milestone: js.UndefOr[String] = js.undefined
     
     /**
     		The projects to add the issue to.
     		The project reference format is `user/<project-number>`, for example, if the URL to the project is `https://github.com/sindresorhus/some-repo/projects/3`, the project reference would be `some-repo/3`.
     		_Requires the user to have the permission to add projects._
     		*/
-    val projects: js.UndefOr[js.Array[String]] = js.native
+    val projects: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Use an [issue template](https://help.github.com/articles/manually-creating-a-single-issue-template-for-your-repository/).
@@ -82,12 +79,12 @@ object mod {
     		'unicorn.md' // If you want to use a template at `ISSUE_TEMPLATE/unicorn.md`.
     		```
     		*/
-    val template: js.UndefOr[String] = js.native
+    val template: js.UndefOr[String] = js.undefined
     
     /**
     		The issue title.
     		*/
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
   }
   object CommonOptions {
     
@@ -173,15 +170,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RepoUrlOptions
-    extends CommonOptions
+    extends StObject
+       with CommonOptions
        with Options {
     
     /**
     		The full URL to the repo.
     		*/
-    val repoUrl: String = js.native
+    val repoUrl: String
   }
   object RepoUrlOptions {
     
@@ -199,20 +196,20 @@ object mod {
     }
   }
   
-  @js.native
   trait UserAndRepoOptions
-    extends CommonOptions
+    extends StObject
+       with CommonOptions
        with Options {
     
     /**
     		GitHub repo.
     		*/
-    val repo: String = js.native
+    val repo: String
     
     /**
     		GitHub username or organization.
     		*/
-    val user: String = js.native
+    val user: String
   }
   object UserAndRepoOptions {
     

@@ -5,13 +5,11 @@ import typings.octokitTypes.octokitTypesStrings.pull
 import typings.octokitTypes.octokitTypesStrings.push
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsAddOrUpdateRepoPermissionsLegacyEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The permission to grant the team on this repository. Can be one of:
@@ -21,11 +19,11 @@ trait TeamsAddOrUpdateRepoPermissionsLegacyEndpoint extends StObject {
     *
     * If no permission is specified, the team's `permission` attribute will be used to determine what permission to grant the team on this repository.
     */
-  var permission: js.UndefOr[pull | push | admin] = js.native
+  var permission: js.UndefOr[pull | push | admin] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object TeamsAddOrUpdateRepoPermissionsLegacyEndpoint {
   

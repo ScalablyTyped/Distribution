@@ -2,30 +2,28 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an application category object.
   */
-@js.native
 trait SchemaApplicationCategory extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#applicationCategory.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The primary category.
     */
-  var primary: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.undefined
   
   /**
     * The secondary category.
     */
-  var secondary: js.UndefOr[String] = js.native
+  var secondary: js.UndefOr[String] = js.undefined
 }
 object SchemaApplicationCategory {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsServiceaccountsKeysGet extends StandardParameters {
+trait ParamsResourceProjectsServiceaccountsKeysGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The resource name of the service account key in the following format:
@@ -24,13 +24,13 @@ trait ParamsResourceProjectsServiceaccountsKeysGet extends StandardParameters {
     * account. The `ACCOUNT` value can be the `email` address or the
     * `unique_id` of the service account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The output format of the public key requested. X509_PEM is the default
     * output format.
     */
-  var publicKeyType: js.UndefOr[String] = js.native
+  var publicKeyType: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsServiceaccountsKeysGet {
   

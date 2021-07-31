@@ -12,7 +12,7 @@ Analyze IMSI (international mobile subscriber identity) number.
 | Keywords           | IMSI |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3180 |
+| # downloads        | 3489 |
 | # stars            | 0 |
 
 ## Links

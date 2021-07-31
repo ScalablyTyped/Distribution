@@ -15,7 +15,6 @@ import typings.agGrid.textFilterMod.INumberFilterParams
 import typings.agGrid.textFilterMod.ITextFilterParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseFilterMod {
@@ -51,6 +50,13 @@ object baseFilterMod {
     
     /* private */ def doOnFilterChanged(applyNow: js.Any): js.Any = js.native
     
+    /** The grid will ask each active filter, in turn, whether each row in the grid passes. If any
+      filter fails, then the row will be excluded from the final set. The method is provided a
+      params object with attributes node (the rodNode the grid creates that wraps the data) and data
+      (the data object that you provided to the grid for that row). */
+    /* CompleteClass */
+    override def doesFilterPass(params: IDoesFilterPassParams): Boolean = js.native
+    
     var eApplyButton: js.Any = js.native
     
     var eButtonsPanel: js.Any = js.native
@@ -76,6 +82,10 @@ object baseFilterMod {
     def getDebounceMs(filterParams: INumberFilterParams): Double = js.native
     def getDebounceMs(filterParams: ITextFilterParams): Double = js.native
     
+    /** Gets the filter state for storing */
+    /* CompleteClass */
+    override def getModel(): js.Any = js.native
+    
     def getNullableModel(): M | CombinedFilter[M] = js.native
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
@@ -84,6 +94,10 @@ object baseFilterMod {
     def init_MBaseFilter(params: P): Unit = js.native
     
     def initialiseFilterBodyUi(`type`: FilterConditionType): Unit = js.native
+    
+    /** This is used to show the filter icon in the header. If true, the filter icon will be shown. */
+    /* CompleteClass */
+    override def isFilterActive(): Boolean = js.native
     
     def isFilterConditionActive(`type`: FilterConditionType): Boolean = js.native
     
@@ -115,6 +129,9 @@ object baseFilterMod {
     def serialize(`type`: FilterConditionType): M = js.native
     
     def setModel(model: M): Unit = js.native
+    /** Restores the filter state. */
+    /* CompleteClass */
+    override def setModel(model: js.Any): Unit = js.native
     def setModel(model: CombinedFilter[M]): Unit = js.native
     
     def translate(toTranslate: String): String = js.native
@@ -229,15 +246,19 @@ object baseFilterMod {
   object FilterConditionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FilterConditionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[FilterConditionType & Double] = js.native
     
     @js.native
-    sealed trait CONDITION extends FilterConditionType
-    /* 1 */ val CONDITION: typings.agGrid.baseFilterMod.FilterConditionType.CONDITION with Double = js.native
+    sealed trait CONDITION
+      extends StObject
+         with FilterConditionType
+    /* 1 */ val CONDITION: typings.agGrid.baseFilterMod.FilterConditionType.CONDITION & Double = js.native
     
     @js.native
-    sealed trait MAIN extends FilterConditionType
-    /* 0 */ val MAIN: typings.agGrid.baseFilterMod.FilterConditionType.MAIN with Double = js.native
+    sealed trait MAIN
+      extends StObject
+         with FilterConditionType
+    /* 0 */ val MAIN: typings.agGrid.baseFilterMod.FilterConditionType.MAIN & Double = js.native
   }
   
   @JSImport("ag-grid/dist/lib/filter/baseFilter", "ScalarBaseFilter")
@@ -261,14 +282,13 @@ object baseFilterMod {
     val DEFAULT_NULL_COMPARATOR: NullComparator = js.native
   }
   
-  @js.native
   trait CombinedFilter[T] extends StObject {
     
-    var condition1: T = js.native
+    var condition1: T
     
-    var condition2: T = js.native
+    var condition2: T
     
-    var operator: String = js.native
+    var operator: String
   }
   object CombinedFilter {
     
@@ -279,7 +299,7 @@ object baseFilterMod {
     }
     
     @scala.inline
-    implicit class CombinedFilterMutableBuilder[Self <: CombinedFilter[_], T] (val x: Self with CombinedFilter[T]) extends AnyVal {
+    implicit class CombinedFilterMutableBuilder[Self <: CombinedFilter[?], T] (val x: Self & CombinedFilter[T]) extends AnyVal {
       
       @scala.inline
       def setCondition1(value: T): Self = StObject.set(x, "condition1", value.asInstanceOf[js.Any])
@@ -294,10 +314,11 @@ object baseFilterMod {
   
   type Comparator[T] = js.Function2[/* left */ T, /* right */ T, Double]
   
-  @js.native
-  trait IComparableFilterParams extends IFilterParams {
+  trait IComparableFilterParams
+    extends StObject
+       with IFilterParams {
     
-    var suppressAndOrCondition: Boolean = js.native
+    var suppressAndOrCondition: Boolean
   }
   object IComparableFilterParams {
     
@@ -326,12 +347,13 @@ object baseFilterMod {
     }
   }
   
-  @js.native
-  trait IScalarFilterParams extends IComparableFilterParams {
+  trait IScalarFilterParams
+    extends StObject
+       with IComparableFilterParams {
     
-    var inRangeInclusive: js.UndefOr[Boolean] = js.native
+    var inRangeInclusive: js.UndefOr[Boolean] = js.undefined
     
-    var nullComparator: js.UndefOr[NullComparator] = js.native
+    var nullComparator: js.UndefOr[NullComparator] = js.undefined
   }
   object IScalarFilterParams {
     
@@ -369,15 +391,14 @@ object baseFilterMod {
     }
   }
   
-  @js.native
   trait NullComparator extends StObject {
     
     @JSName("equals")
-    var equals_FNullComparator: js.UndefOr[Boolean] = js.native
+    var equals_FNullComparator: js.UndefOr[Boolean] = js.undefined
     
-    var greaterThan: js.UndefOr[Boolean] = js.native
+    var greaterThan: js.UndefOr[Boolean] = js.undefined
     
-    var lessThan: js.UndefOr[Boolean] = js.native
+    var lessThan: js.UndefOr[Boolean] = js.undefined
   }
   object NullComparator {
     

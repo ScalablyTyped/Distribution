@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeEditable extends StObject {
   
-  var connect: js.UndefOr[Boolean] = js.native
+  var connect: js.UndefOr[Boolean] = js.undefined
 }
 object ShapeEditable {
   

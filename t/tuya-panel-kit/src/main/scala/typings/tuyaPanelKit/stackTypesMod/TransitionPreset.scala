@@ -3,31 +3,29 @@ package typings.tuyaPanelKit.stackTypesMod
 import typings.tuyaPanelKit.anon.Close
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionPreset extends StObject {
   
   /**
     * Function which specifies interpolated styles for various parts of the card, e.g. the overlay, shadow etc.
     */
-  var cardStyleInterpolator: StackCardStyleInterpolator = js.native
+  var cardStyleInterpolator: StackCardStyleInterpolator
   
   /**
     * The direction of swipe gestures, `horizontal` or `vertical`.
     */
-  var gestureDirection: GestureDirection = js.native
+  var gestureDirection: GestureDirection
   
   /**
     * Function which specifies interpolated styles for various parts of the header, e.g. the title, left button etc.
     */
-  var headerStyleInterpolator: StackHeaderStyleInterpolator = js.native
+  var headerStyleInterpolator: StackHeaderStyleInterpolator
   
   /**
     * Object which specifies the animation type (timing or spring) and their options (such as duration for timing).
     */
-  var transitionSpec: Close = js.native
+  var transitionSpec: Close
 }
 object TransitionPreset {
   

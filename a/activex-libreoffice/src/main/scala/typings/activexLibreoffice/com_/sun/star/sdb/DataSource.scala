@@ -17,16 +17,15 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a factory to establish database connections. It should be registered at a {@link com.sun.star.uno.NamingService} .
   * @see com.sun.star.sdb.DatabaseContext
   */
-@js.native
 trait DataSource
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XCompletedConnection
      with XIsolatedConnection
      with XFlushable
@@ -45,13 +44,13 @@ trait DataSource
     * method. If not, the setting is ignored.External components may use the settings to carry arbitrary information with the data source. Usually, this is
     * used to control the behavior of components working with the data source.
     */
-  var Info: SafeArray[PropertyValue] = js.native
+  var Info: SafeArray[PropertyValue]
   
   /** indicates that a password is always necessary. */
-  var IsPasswordRequired: Boolean = js.native
+  var IsPasswordRequired: Boolean
   
   /** determines whether modifications on the data source are allowed or not. */
-  var IsReadOnly: Boolean = js.native
+  var IsReadOnly: Boolean
   
   /**
     * is the name of the data source.
@@ -61,13 +60,13 @@ trait DataSource
     *
     * If the same data source is registered under different names, the value of the `Name` property is not defined.
     */
-  var Name: String = js.native
+  var Name: String
   
   /** provides an object for formatting numbers. */
-  var NumberFormatsSupplier: XNumberFormatsSupplier = js.native
+  var NumberFormatsSupplier: XNumberFormatsSupplier
   
   /** determines a users password. The password is not persistent. */
-  var Password: String = js.native
+  var Password: String
   
   /**
     * is a convenience wrapper around the {@link Info} property.
@@ -104,22 +103,22 @@ trait DataSource
     * Similar, when you obtain the {@link Info} property of a `DataSource` , the `Settings` bag is asked for all its property values, and the ones which are
     * removable and in state default are stripped, and **not** returned in the `Info` sequence.
     */
-  var Settings: XPropertySet = js.native
+  var Settings: XPropertySet
   
   /** indicates that components displaying data obtained from this data source should suppress columns used for versioning. */
-  var SuppressVersionColumns: Boolean = js.native
+  var SuppressVersionColumns: Boolean
   
   /** defines a list of tables, on which the {@link DataSource} should have it's focus. If empty, all tables are rejected. */
-  var TableFilter: SafeArray[String] = js.native
+  var TableFilter: SafeArray[String]
   
   /** defines a list of table types, on which the {@link DataSource} should have it's focus. If empty, all table types are rejected. */
-  var TableTypeFilter: SafeArray[String] = js.native
+  var TableTypeFilter: SafeArray[String]
   
   /** indicates a database url of the form ; ` jdbc:subprotocol:subname` or `sdbc:subprotocol:subname` */
-  var URL: String = js.native
+  var URL: String
   
   /** determines a users login name. */
-  var User: String = js.native
+  var User: String
 }
 object DataSource {
   

@@ -2,10 +2,8 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IErrorHandlingConfig extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait IErrorHandlingConfig extends StObject {
     * Setting to a non-positive or non-numeric value, removes the max depth limit
     * @default 5
     */
-  var objectMaxDepth: js.UndefOr[Double] = js.native
+  var objectMaxDepth: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies whether the generated error url will contain the parameters of the thrown error.
     * Disabling the parameters can be useful if the generated error url is very long.
     * @default true;
     */
-  var urlErrorParamsEnabled: js.UndefOr[Boolean] = js.native
+  var urlErrorParamsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object IErrorHandlingConfig {
   

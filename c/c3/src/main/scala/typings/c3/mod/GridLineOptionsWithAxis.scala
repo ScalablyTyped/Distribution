@@ -3,13 +3,13 @@ package typings.c3.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridLineOptionsWithAxis extends GridLineOptions {
+trait GridLineOptionsWithAxis
+  extends StObject
+     with GridLineOptions {
   
-  var axis: js.UndefOr[AxisName] = js.native
+  var axis: js.UndefOr[AxisName] = js.undefined
 }
 object GridLineOptionsWithAxis {
   

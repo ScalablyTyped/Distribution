@@ -5,24 +5,22 @@ import typings.grpc.mod.CallCredentials
 import typings.grpc.mod.Deadline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<grpc.grpc.CallOptions> */
-  @js.native
   trait PartialCallOptions extends StObject {
     
-    var credentials: js.UndefOr[CallCredentials] = js.native
+    var credentials: js.UndefOr[CallCredentials] = js.undefined
     
-    var deadline: js.UndefOr[Deadline] = js.native
+    var deadline: js.UndefOr[Deadline] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[Call] = js.native
+    var parent: js.UndefOr[Call] = js.undefined
     
-    var propagate_flags: js.UndefOr[Double] = js.native
+    var propagate_flags: js.UndefOr[Double] = js.undefined
   }
   object PartialCallOptions {
     

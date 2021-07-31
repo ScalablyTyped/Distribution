@@ -2,15 +2,13 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupFunctions extends StObject {
   
-  def bindingBehaviors(name: String): js.Any = js.native
+  def bindingBehaviors(name: String): js.Any
   
-  def valueConverters(name: String): js.Any = js.native
+  def valueConverters(name: String): js.Any
 }
 object LookupFunctions {
   

@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a template for a style (aka style sheet). */
-@js.native
-trait XStyle extends XNamed {
+trait XStyle
+  extends StObject
+     with XNamed {
   
   /** @returns the name of the parent style, probably empty. */
-  var ParentStyle: String = js.native
+  var ParentStyle: String
   
   /** @returns the name of the parent style, probably empty. */
-  def getParentStyle(): String = js.native
+  def getParentStyle(): String
   
   /** @returns `TRUE` if this type is used in the document. */
-  def isInUse(): Boolean = js.native
+  def isInUse(): Boolean
   
   /** identifies a style as defined by the user. */
-  def isUserDefined(): Boolean = js.native
+  def isUserDefined(): Boolean
   
   /** sets the name of the parent style. */
-  def setParentStyle(aParentStyle: String): Unit = js.native
+  def setParentStyle(aParentStyle: String): Unit
 }
 object XStyle {
   

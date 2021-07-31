@@ -6,19 +6,17 @@ import typings.reactNative.reactNativeStrings.spinner
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePickerAndroidOpenOptions extends StObject {
   
-  var date: js.UndefOr[Date | Double] = js.native
+  var date: js.UndefOr[Date | Double] = js.undefined
   
-  var maxDate: js.UndefOr[Date | Double] = js.native
+  var maxDate: js.UndefOr[Date | Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | Double] = js.native
+  var minDate: js.UndefOr[Date | Double] = js.undefined
   
-  var mode: js.UndefOr[calendar | spinner | default] = js.native
+  var mode: js.UndefOr[calendar | spinner | default] = js.undefined
 }
 object DatePickerAndroidOpenOptions {
   

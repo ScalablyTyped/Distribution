@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNetworkAclResult extends StObject {
   
   /**
     * Information about the network ACL.
     */
-  var NetworkAcl: js.UndefOr[typings.awsSdk.ec2Mod.NetworkAcl] = js.native
+  var NetworkAcl: js.UndefOr[typings.awsSdk.ec2Mod.NetworkAcl] = js.undefined
 }
 object CreateNetworkAclResult {
   

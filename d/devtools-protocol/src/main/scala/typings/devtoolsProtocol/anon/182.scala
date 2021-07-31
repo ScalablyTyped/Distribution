@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `182` extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetCookiesRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetCookiesRequest]]
   
-  var returnType: GetCookiesResponse = js.native
+  var returnType: GetCookiesResponse
 }
 object `182` {
   

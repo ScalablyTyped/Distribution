@@ -22,54 +22,52 @@ import typings.fabric.anon.InstantiableISepiaFilter
 import typings.fabric.anon.InstantiableITintFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////
 // Filters
 ////////////////////////////////////////////////////////////
-@js.native
 trait IAllFilters extends StObject {
   
-  var BaseFilter: Instantiable = js.native
+  var BaseFilter: Instantiable
   
-  var BlendColor: FromObject = js.native
+  var BlendColor: FromObject
   
-  var BlendImage: InstantiableFromObject = js.native
+  var BlendImage: InstantiableFromObject
   
-  var Brightness: InstantiableIBrightnessFilter = js.native
+  var Brightness: InstantiableIBrightnessFilter
   
-  var ColorMatrix: InstantiableIColorMatrix = js.native
+  var ColorMatrix: InstantiableIColorMatrix
   
-  var Contrast: InstantiableIContrastFilter = js.native
+  var Contrast: InstantiableIContrastFilter
   
-  var Convolute: InstantiableIConvoluteFilter = js.native
+  var Convolute: InstantiableIConvoluteFilter
   
-  var GradientTransparency: InstantiableIGradientTransparencyFilter = js.native
+  var GradientTransparency: InstantiableIGradientTransparencyFilter
   
-  var Grayscale: InstantiableIGrayscaleFilter = js.native
+  var Grayscale: InstantiableIGrayscaleFilter
   
-  var Invert: InstantiableIInvertFilter = js.native
+  var Invert: InstantiableIInvertFilter
   
-  var Mask: InstantiableIMaskFilter = js.native
+  var Mask: InstantiableIMaskFilter
   
-  var Multiply: InstantiableIMultiplyFilter = js.native
+  var Multiply: InstantiableIMultiplyFilter
   
-  var Noise: InstantiableINoiseFilter = js.native
+  var Noise: InstantiableINoiseFilter
   
-  var Pixelate: InstantiableIPixelateFilter = js.native
+  var Pixelate: InstantiableIPixelateFilter
   
-  var RemoveWhite: InstantiableIRemoveWhiteFilter = js.native
+  var RemoveWhite: InstantiableIRemoveWhiteFilter
   
-  var Resize: InstantiableIResizeFilter = js.native
+  var Resize: InstantiableIResizeFilter
   
-  var Saturation: InstantiableISaturationFilter = js.native
+  var Saturation: InstantiableISaturationFilter
   
-  var Sepia: InstantiableISepiaFilter = js.native
+  var Sepia: InstantiableISepiaFilter
   
-  var Sepia2: InstantiableISepia2Filter = js.native
+  var Sepia2: InstantiableISepia2Filter
   
-  var Tint: InstantiableITintFilter = js.native
+  var Tint: InstantiableITintFilter
 }
 object IAllFilters {
   

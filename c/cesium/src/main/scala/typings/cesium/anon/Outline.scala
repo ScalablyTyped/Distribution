@@ -4,39 +4,37 @@ import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outline extends StObject {
   
-  var extrudedHeight: js.UndefOr[Property] = js.native
+  var extrudedHeight: js.UndefOr[Property] = js.undefined
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var granularity: js.UndefOr[Property] = js.native
+  var granularity: js.UndefOr[Property] = js.undefined
   
-  var height: js.UndefOr[Property] = js.native
+  var height: js.UndefOr[Property] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.native
+  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.undefined
   
-  var numberOfVerticalLines: js.UndefOr[Property] = js.native
+  var numberOfVerticalLines: js.UndefOr[Property] = js.undefined
   
-  var outline: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.undefined
   
-  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var outlineWidth: js.UndefOr[Double] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Property] = js.native
+  var rotation: js.UndefOr[Property] = js.undefined
   
-  var semiMajorAxis: js.UndefOr[Property | Double] = js.native
+  var semiMajorAxis: js.UndefOr[Property | Double] = js.undefined
   
-  var semiMinorAxis: js.UndefOr[Property | Double] = js.native
+  var semiMinorAxis: js.UndefOr[Property | Double] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
   
-  var stRotation: js.UndefOr[Property] = js.native
+  var stRotation: js.UndefOr[Property] = js.undefined
 }
 object Outline {
   

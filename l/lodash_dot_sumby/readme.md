@@ -12,7 +12,7 @@ The lodash method `_.sumBy` exported as a module.
 | Keywords           | lodash-modularized, sumby |
 | # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 678598 |
+| # downloads        | 720883 |
 | # stars            | 0 |
 
 ## Links

@@ -2,23 +2,21 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectRequest extends StObject {
   
   /**
     * The name of the project to be updated.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role to be assumed for this request.
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
   
-  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.native
+  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.undefined
 }
 object UpdateProjectRequest {
   

@@ -3,32 +3,32 @@ package typings.swaggerSchemaOfficial.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Schema extends BaseSchema {
+trait Schema
+  extends StObject
+     with BaseSchema {
   
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.native
+  var $ref: js.UndefOr[String] = js.undefined
   
-  var additionalProperties: js.UndefOr[Schema | Boolean] = js.native
+  var additionalProperties: js.UndefOr[Schema | Boolean] = js.undefined
   
-  var allOf: js.UndefOr[js.Array[Schema]] = js.native
+  var allOf: js.UndefOr[js.Array[Schema]] = js.undefined
   
-  var discriminator: js.UndefOr[String] = js.native
+  var discriminator: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocs] = js.native
+  var externalDocs: js.UndefOr[ExternalDocs] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[Schema]] = js.native
+  var properties: js.UndefOr[StringDictionary[Schema]] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
   
-  var xml: js.UndefOr[XML] = js.native
+  var xml: js.UndefOr[XML] = js.undefined
 }
 object Schema {
   

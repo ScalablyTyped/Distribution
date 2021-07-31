@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomViewEvent extends TableauEvent {
+trait CustomViewEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the CustomView object associated with the event. */
-  def getCustomViewAsync(): js.Promise[CustomView] = js.native
+  def getCustomViewAsync(): js.Promise[CustomView]
 }
 object CustomViewEvent {
   

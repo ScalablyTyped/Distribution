@@ -39,40 +39,38 @@ import typings.webpackDevServer.mod.ProxyConfigMap
 import typings.webpackDevServer.mod.WebpackDevServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * https://poi.js.org/config.html
   */
-@js.native
 trait Config extends StObject {
   
-  var assets: js.UndefOr[Assets] = js.native
+  var assets: js.UndefOr[Assets] = js.undefined
   
-  var babel: js.UndefOr[Babel] = js.native
+  var babel: js.UndefOr[Babel] = js.undefined
   
-  var chainWebpack: js.UndefOr[ChainWebpack] = js.native
+  var chainWebpack: js.UndefOr[ChainWebpack] = js.undefined
   
-  var configureWebpack: js.UndefOr[ConfigureWebpack] = js.native
+  var configureWebpack: js.UndefOr[ConfigureWebpack] = js.undefined
   
-  var constants: js.UndefOr[Constants] = js.native
+  var constants: js.UndefOr[Constants] = js.undefined
   
-  var css: js.UndefOr[Css] = js.native
+  var css: js.UndefOr[Css] = js.undefined
   
-  var devServer: js.UndefOr[DevServer] = js.native
+  var devServer: js.UndefOr[DevServer] = js.undefined
   
-  var entry: js.UndefOr[Entry] = js.native
+  var entry: js.UndefOr[Entry] = js.undefined
   
-  var envs: js.UndefOr[Envs] = js.native
+  var envs: js.UndefOr[Envs] = js.undefined
   
-  var output: js.UndefOr[Output] = js.native
+  var output: js.UndefOr[Output] = js.undefined
   
-  var pages: js.UndefOr[Pages] = js.native
+  var pages: js.UndefOr[Pages] = js.undefined
   
-  var plugins: js.UndefOr[Plugins] = js.native
+  var plugins: js.UndefOr[Plugins] = js.undefined
   
-  var publicFolder: js.UndefOr[PublicFolder] = js.native
+  var publicFolder: js.UndefOr[PublicFolder] = js.undefined
 }
 object Config {
   
@@ -82,10 +80,9 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @js.native
   trait Assets extends StObject {
     
-    var inlineImageMaxSize: js.UndefOr[Double] = js.native
+    var inlineImageMaxSize: js.UndefOr[Double] = js.undefined
   }
   object Assets {
     
@@ -106,14 +103,13 @@ object Config {
     }
   }
   
-  @js.native
   trait Babel extends StObject {
     
-    var jsx: js.UndefOr[String] = js.native
+    var jsx: js.UndefOr[String] = js.undefined
     
-    var namedImports: js.UndefOr[String | NamedImportsOptions] = js.native
+    var namedImports: js.UndefOr[String | NamedImportsOptions] = js.undefined
     
-    var transpileModules: js.UndefOr[String | js.Array[String]] = js.native
+    var transpileModules: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Babel {
     
@@ -251,14 +247,13 @@ object Config {
   
   type Constants = StringDictionary[String]
   
-  @js.native
   trait Css extends StObject {
     
-    var extract: js.UndefOr[Boolean] = js.native
+    var extract: js.UndefOr[Boolean] = js.undefined
     
-    var loaderOptions: js.UndefOr[LoaderOptions] = js.native
+    var loaderOptions: js.UndefOr[LoaderOptions] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
   }
   object Css {
     
@@ -290,18 +285,17 @@ object Config {
       def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
     
-    @js.native
     trait LoaderOptions extends StObject {
       
-      var css: js.UndefOr[js.Any] = js.native
+      var css: js.UndefOr[js.Any] = js.undefined
       
-      var less: js.UndefOr[js.Any] = js.native
+      var less: js.UndefOr[js.Any] = js.undefined
       
-      var postcss: js.UndefOr[js.Any] = js.native
+      var postcss: js.UndefOr[js.Any] = js.undefined
       
-      var sass: js.UndefOr[js.Any] = js.native
+      var sass: js.UndefOr[js.Any] = js.undefined
       
-      var stylus: js.UndefOr[js.Any] = js.native
+      var stylus: js.UndefOr[js.Any] = js.undefined
     }
     object LoaderOptions {
       
@@ -347,7 +341,6 @@ object Config {
     }
   }
   
-  @js.native
   trait DevServer extends StObject {
     
     var after: js.UndefOr[
@@ -357,7 +350,7 @@ object Config {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var before: js.UndefOr[
         js.Function3[
@@ -366,27 +359,27 @@ object Config {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var historyApiFallback: js.UndefOr[Boolean | Options] = js.native
+    var historyApiFallback: js.UndefOr[Boolean | Options] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hot: js.UndefOr[Boolean] = js.native
+    var hot: js.UndefOr[Boolean] = js.undefined
     
-    var hotEntries: js.UndefOr[js.Array[String]] = js.native
+    var hotEntries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hotOnly: js.UndefOr[Boolean] = js.native
+    var hotOnly: js.UndefOr[Boolean] = js.undefined
     
-    var https: js.UndefOr[Boolean | ServerOptions] = js.native
+    var https: js.UndefOr[Boolean | ServerOptions] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var port: js.UndefOr[String | Double] = js.native
+    var port: js.UndefOr[String | Double] = js.undefined
     
-    var proxy: js.UndefOr[String | ProxyConfigMap | ProxyConfigArray] = js.native
+    var proxy: js.UndefOr[String | ProxyConfigMap | ProxyConfigArray] = js.undefined
   }
   object DevServer {
     
@@ -487,30 +480,29 @@ object Config {
   
   type Envs = StringDictionary[String]
   
-  @js.native
   trait Output extends StObject {
     
-    var clean: js.UndefOr[Boolean] = js.native
+    var clean: js.UndefOr[Boolean] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var fileNames: js.UndefOr[FileNames] = js.native
+    var fileNames: js.UndefOr[FileNames] = js.undefined
     
-    var format: js.UndefOr[iife | cjs | umd] = js.native
+    var format: js.UndefOr[iife | cjs | umd] = js.undefined
     
-    var html: js.UndefOr[Html] = js.native
+    var html: js.UndefOr[Html] = js.undefined
     
-    var minimize: js.UndefOr[Boolean] = js.native
+    var minimize: js.UndefOr[Boolean] = js.undefined
     
-    var moduleName: js.UndefOr[String] = js.native
+    var moduleName: js.UndefOr[String] = js.undefined
     
-    var publicUrl: js.UndefOr[String] = js.native
+    var publicUrl: js.UndefOr[String] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
     var target: js.UndefOr[
         web | electron | `electron-renderer` | `electron-main` | node | `node-webkit` | `async-node` | webworker
-      ] = js.native
+      ] = js.undefined
   }
   object Output {
     
@@ -520,17 +512,16 @@ object Config {
       __obj.asInstanceOf[Output]
     }
     
-    @js.native
     trait FileNames extends StObject {
       
-      var css: js.UndefOr[String] = js.native
+      var css: js.UndefOr[String] = js.undefined
       
-      var font: js.UndefOr[String] = js.native
+      var font: js.UndefOr[String] = js.undefined
       
-      var image: js.UndefOr[String] = js.native
+      var image: js.UndefOr[String] = js.undefined
       
       @JSName("js")
-      var js_ : js.UndefOr[String] = js.native
+      var js_ : js.UndefOr[String] = js.undefined
     }
     object FileNames {
       
@@ -571,16 +562,15 @@ object Config {
     
     type Html = Boolean | HtmlOptions
     
-    @js.native
     trait HtmlOptions extends StObject {
       
-      var filename: js.UndefOr[String] = js.native
+      var filename: js.UndefOr[String] = js.undefined
       
-      var inject: js.UndefOr[Boolean] = js.native
+      var inject: js.UndefOr[Boolean] = js.undefined
       
-      var template: js.UndefOr[String] = js.native
+      var template: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object HtmlOptions {
       
@@ -688,12 +678,11 @@ object Config {
   
   type Pages = StringDictionary[String | PartialOptionsentrystring]
   
-  @js.native
   trait PluginOption extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var resolve: String = js.native
+    var resolve: String
   }
   object PluginOption {
     

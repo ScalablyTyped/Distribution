@@ -2,10 +2,13 @@ package typings.isbnUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("isbn-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("isbn-utils", "ISBN")
   @js.native
@@ -50,37 +53,28 @@ object mod {
     val source: String = js.native
   }
   
-  @JSImport("isbn-utils", "asIsbn10")
-  @js.native
-  def asIsbn10(isbn: String): String = js.native
-  @JSImport("isbn-utils", "asIsbn10")
-  @js.native
-  def asIsbn10(isbn: String, hyphenate: Boolean): String = js.native
+  @scala.inline
+  def asIsbn10(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def asIsbn10(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("isbn-utils", "asIsbn13")
-  @js.native
-  def asIsbn13(isbn: String): String = js.native
-  @JSImport("isbn-utils", "asIsbn13")
-  @js.native
-  def asIsbn13(isbn: String, hyphenate: Boolean): String = js.native
+  @scala.inline
+  def asIsbn13(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def asIsbn13(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("isbn-utils", "hyphenate")
-  @js.native
-  def hyphenate(isbn: String): String = js.native
+  @scala.inline
+  def hyphenate(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenate")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("isbn-utils", "isValid")
-  @js.native
-  def isValid(isbn: String): Boolean = js.native
-  @JSImport("isbn-utils", "isValid")
-  @js.native
-  def isValid(isbn: String, groups: IGroups): Boolean = js.native
+  @scala.inline
+  def isValid(isbn: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(isbn: String, groups: IGroups): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("isbn-utils", "parse")
-  @js.native
-  def parse(isbn: String): ISBN | Null = js.native
-  @JSImport("isbn-utils", "parse")
-  @js.native
-  def parse(isbn: String, groups: IGroups): ISBN | Null = js.native
+  @scala.inline
+  def parse(isbn: String): ISBN | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any]).asInstanceOf[ISBN | Null]
+  @scala.inline
+  def parse(isbn: String, groups: IGroups): ISBN | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[ISBN | Null]
   
   type IGroups = js.Any
 }

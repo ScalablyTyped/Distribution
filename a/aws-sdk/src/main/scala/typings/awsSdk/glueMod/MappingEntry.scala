@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingEntry extends StObject {
   
   /**
     * The source path.
     */
-  var SourcePath: js.UndefOr[SchemaPathString] = js.native
+  var SourcePath: js.UndefOr[SchemaPathString] = js.undefined
   
   /**
     * The name of the source table.
     */
-  var SourceTable: js.UndefOr[TableName] = js.native
+  var SourceTable: js.UndefOr[TableName] = js.undefined
   
   /**
     * The source type.
     */
-  var SourceType: js.UndefOr[FieldType] = js.native
+  var SourceType: js.UndefOr[FieldType] = js.undefined
   
   /**
     * The target path.
     */
-  var TargetPath: js.UndefOr[SchemaPathString] = js.native
+  var TargetPath: js.UndefOr[SchemaPathString] = js.undefined
   
   /**
     * The target table.
     */
-  var TargetTable: js.UndefOr[TableName] = js.native
+  var TargetTable: js.UndefOr[TableName] = js.undefined
   
   /**
     * The target type.
     */
-  var TargetType: js.UndefOr[FieldType] = js.native
+  var TargetType: js.UndefOr[FieldType] = js.undefined
 }
 object MappingEntry {
   

@@ -3,17 +3,15 @@ package typings.serverless.awsProviderMod
 import typings.serverless.anon.Host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlbEvent extends StObject {
   
-  var conditions: Host = js.native
+  var conditions: Host
   
-  var listenerArn: String = js.native
+  var listenerArn: String
   
-  var priority: Double | String = js.native
+  var priority: Double | String
 }
 object AlbEvent {
   

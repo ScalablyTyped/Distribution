@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicSourceSplit extends StObject {
   
   /** Primary part (continued to be processed by worker). Specified relative to the previously-current source. Becomes current. */
-  var primary: js.UndefOr[DerivedSource] = js.native
+  var primary: js.UndefOr[DerivedSource] = js.undefined
   
   /** Residual part (returned to the pool of work). Specified relative to the previously-current source. */
-  var residual: js.UndefOr[DerivedSource] = js.native
+  var residual: js.UndefOr[DerivedSource] = js.undefined
 }
 object DynamicSourceSplit {
   

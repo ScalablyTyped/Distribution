@@ -2,36 +2,34 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for iTunes Connect App Analytics.
   */
-@js.native
 trait SchemaITunesConnectAnalytics extends StObject {
   
   /**
     * Affiliate token used to create affiliate-coded links.
     */
-  var at: js.UndefOr[String] = js.native
+  var at: js.UndefOr[String] = js.undefined
   
   /**
     * Campaign text that developers can optionally add to any link in order to
     * track sales from a specific marketing campaign.
     */
-  var ct: js.UndefOr[String] = js.native
+  var ct: js.UndefOr[String] = js.undefined
   
   /**
     * iTune media types, including music, podcasts, audiobooks and so on.
     */
-  var mt: js.UndefOr[String] = js.native
+  var mt: js.UndefOr[String] = js.undefined
   
   /**
     * Provider token that enables analytics for Dynamic Links from within
     * iTunes Connect.
     */
-  var pt: js.UndefOr[String] = js.native
+  var pt: js.UndefOr[String] = js.undefined
 }
 object SchemaITunesConnectAnalytics {
   

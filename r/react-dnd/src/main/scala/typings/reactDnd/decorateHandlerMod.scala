@@ -6,37 +6,38 @@ import typings.react.mod.RefObject
 import typings.reactDnd.interfacesMod.DndComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decorateHandlerMod {
   
-  @JSImport("react-dnd/lib/decorators/decorateHandler", "decorateHandler")
+  @JSImport("react-dnd/lib/decorators/decorateHandler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def decorateHandler[Props, CollectedProps, ItemIdType](
     hasDecoratedComponentCreateHandlerCreateMonitorCreateConnectorRegisterHandlerContainerDisplayNameGetTypeCollectOptions: DecorateHandlerArgs[Props, ItemIdType]
-  ): DndComponent[Props] = js.native
+  ): DndComponent[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateHandler")(hasDecoratedComponentCreateHandlerCreateMonitorCreateConnectorRegisterHandlerContainerDisplayNameGetTypeCollectOptions.asInstanceOf[js.Any]).asInstanceOf[DndComponent[Props]]
   
-  @js.native
   trait DecorateHandlerArgs[Props, ItemIdType] extends StObject {
     
-    var DecoratedComponent: js.Any = js.native
+    var DecoratedComponent: js.Any
     
-    var collect: js.Any = js.native
+    var collect: js.Any
     
-    var containerDisplayName: String = js.native
+    var containerDisplayName: String
     
-    var createConnector: js.Any = js.native
+    var createConnector: js.Any
     
-    def createHandler(monitor: HandlerReceiver, ref: RefObject[_]): Handler[Props] = js.native
+    def createHandler(monitor: HandlerReceiver, ref: RefObject[js.Any]): Handler[Props]
     
-    def createMonitor(manager: DragDropManager): HandlerReceiver = js.native
+    def createMonitor(manager: DragDropManager): HandlerReceiver
     
-    def getType(props: Props): ItemIdType = js.native
+    def getType(props: Props): ItemIdType
     
-    var options: js.Any = js.native
+    var options: js.Any
     
-    var registerHandler: js.Any = js.native
+    var registerHandler: js.Any
   }
   object DecorateHandlerArgs {
     
@@ -46,7 +47,7 @@ object decorateHandlerMod {
       collect: js.Any,
       containerDisplayName: String,
       createConnector: js.Any,
-      createHandler: (HandlerReceiver, RefObject[_]) => Handler[Props],
+      createHandler: (HandlerReceiver, RefObject[js.Any]) => Handler[Props],
       createMonitor: DragDropManager => HandlerReceiver,
       getType: Props => ItemIdType,
       options: js.Any,
@@ -57,7 +58,7 @@ object decorateHandlerMod {
     }
     
     @scala.inline
-    implicit class DecorateHandlerArgsMutableBuilder[Self <: DecorateHandlerArgs[_, _], Props, ItemIdType] (val x: Self with (DecorateHandlerArgs[Props, ItemIdType])) extends AnyVal {
+    implicit class DecorateHandlerArgsMutableBuilder[Self <: DecorateHandlerArgs[?, ?], Props, ItemIdType] (val x: Self & (DecorateHandlerArgs[Props, ItemIdType])) extends AnyVal {
       
       @scala.inline
       def setCollect(value: js.Any): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
@@ -69,7 +70,7 @@ object decorateHandlerMod {
       def setCreateConnector(value: js.Any): Self = StObject.set(x, "createConnector", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCreateHandler(value: (HandlerReceiver, RefObject[_]) => Handler[Props]): Self = StObject.set(x, "createHandler", js.Any.fromFunction2(value))
+      def setCreateHandler(value: (HandlerReceiver, RefObject[js.Any]) => Handler[Props]): Self = StObject.set(x, "createHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCreateMonitor(value: DragDropManager => HandlerReceiver): Self = StObject.set(x, "createMonitor", js.Any.fromFunction1(value))
@@ -88,29 +89,28 @@ object decorateHandlerMod {
     }
   }
   
-  @js.native
   trait Handler[Props] extends StObject {
     
-    def receiveProps(props: Props): Unit = js.native
+    def receiveProps(props: Props): Unit
     
-    var ref: RefObject[_] = js.native
+    var ref: RefObject[js.Any]
   }
   object Handler {
     
     @scala.inline
-    def apply[Props](receiveProps: Props => Unit, ref: RefObject[_]): Handler[Props] = {
+    def apply[Props](receiveProps: Props => Unit, ref: RefObject[js.Any]): Handler[Props] = {
       val __obj = js.Dynamic.literal(receiveProps = js.Any.fromFunction1(receiveProps), ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Handler[Props]]
     }
     
     @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler[_], Props] (val x: Self with Handler[Props]) extends AnyVal {
+    implicit class HandlerMutableBuilder[Self <: Handler[?], Props] (val x: Self & Handler[Props]) extends AnyVal {
       
       @scala.inline
       def setReceiveProps(value: Props => Unit): Self = StObject.set(x, "receiveProps", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   

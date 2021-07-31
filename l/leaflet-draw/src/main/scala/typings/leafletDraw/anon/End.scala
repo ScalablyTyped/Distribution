@@ -2,13 +2,11 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: String = js.native
+  var end: String
 }
 object End {
   

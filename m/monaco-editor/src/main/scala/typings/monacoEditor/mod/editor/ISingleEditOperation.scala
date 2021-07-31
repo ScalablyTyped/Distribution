@@ -3,33 +3,31 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISingleEditOperation extends StObject {
   
   /**
     * This indicates that this operation has "insert" semantics.
     * i.e. forceMoveMarkers = true => if `range` is collapsed, all markers at the position will be moved.
     */
-  var forceMoveMarkers: js.UndefOr[Boolean] = js.native
+  var forceMoveMarkers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The range to replace. This can be empty to emulate a simple insert.
     */
-  var range: IRange = js.native
+  var range: IRange
   
   /**
     * The text to replace with. This can be null to emulate a simple delete.
     */
-  var text: String | Null = js.native
+  var text: String | Null
 }
 object ISingleEditOperation {
   
   @scala.inline
   def apply(range: IRange): ISingleEditOperation = {
-    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = null)
     __obj.asInstanceOf[ISingleEditOperation]
   }
   

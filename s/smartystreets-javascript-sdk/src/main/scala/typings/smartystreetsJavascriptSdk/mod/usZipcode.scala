@@ -2,7 +2,6 @@ package typings.smartystreetsJavascriptSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usZipcode {
@@ -10,48 +9,29 @@ object usZipcode {
   @JSImport("smartystreets-javascript-sdk", "usZipcode.Lookup")
   @js.native
   class Lookup ()
-    extends typings.smartystreetsJavascriptSdk.mod.core.Lookup {
+    extends StObject
+       with typings.smartystreetsJavascriptSdk.mod.core.Lookup {
     def this(city: String) = this()
-    def this(city: js.UndefOr[scala.Nothing], state: String) = this()
     def this(city: String, state: String) = this()
-    def this(city: js.UndefOr[scala.Nothing], state: js.UndefOr[scala.Nothing], zipCode: String) = this()
-    def this(city: js.UndefOr[scala.Nothing], state: String, zipCode: String) = this()
-    def this(city: String, state: js.UndefOr[scala.Nothing], zipCode: String) = this()
+    def this(city: Unit, state: String) = this()
     def this(city: String, state: String, zipCode: String) = this()
-    def this(
-      city: js.UndefOr[scala.Nothing],
-      state: js.UndefOr[scala.Nothing],
-      zipCode: js.UndefOr[scala.Nothing],
-      inputId: String
-    ) = this()
-    def this(
-      city: js.UndefOr[scala.Nothing],
-      state: js.UndefOr[scala.Nothing],
-      zipCode: String,
-      inputId: String
-    ) = this()
-    def this(
-      city: js.UndefOr[scala.Nothing],
-      state: String,
-      zipCode: js.UndefOr[scala.Nothing],
-      inputId: String
-    ) = this()
-    def this(city: js.UndefOr[scala.Nothing], state: String, zipCode: String, inputId: String) = this()
-    def this(
-      city: String,
-      state: js.UndefOr[scala.Nothing],
-      zipCode: js.UndefOr[scala.Nothing],
-      inputId: String
-    ) = this()
-    def this(city: String, state: js.UndefOr[scala.Nothing], zipCode: String, inputId: String) = this()
-    def this(city: String, state: String, zipCode: js.UndefOr[scala.Nothing], inputId: String) = this()
+    def this(city: String, state: Unit, zipCode: String) = this()
+    def this(city: Unit, state: String, zipCode: String) = this()
+    def this(city: Unit, state: Unit, zipCode: String) = this()
     def this(city: String, state: String, zipCode: String, inputId: String) = this()
+    def this(city: String, state: String, zipCode: Unit, inputId: String) = this()
+    def this(city: String, state: Unit, zipCode: String, inputId: String) = this()
+    def this(city: String, state: Unit, zipCode: Unit, inputId: String) = this()
+    def this(city: Unit, state: String, zipCode: String, inputId: String) = this()
+    def this(city: Unit, state: String, zipCode: Unit, inputId: String) = this()
+    def this(city: Unit, state: Unit, zipCode: String, inputId: String) = this()
+    def this(city: Unit, state: Unit, zipCode: Unit, inputId: String) = this()
     
     var city: String = js.native
     
     var inputId: String = js.native
     
-    var result: js.Array[_] = js.native
+    var result: js.Array[js.Any] = js.native
     
     var state: String = js.native
     
@@ -76,16 +56,15 @@ object usZipcode {
     var zipcodes: js.Array[ZipCode] = js.native
   }
   
-  @js.native
   trait City extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var mailableCity: String = js.native
+    var mailableCity: String
     
-    var state: String = js.native
+    var state: String
     
-    var stateAbbreviation: String = js.native
+    var stateAbbreviation: String
   }
   object City {
     
@@ -112,16 +91,15 @@ object usZipcode {
     }
   }
   
-  @js.native
   trait County extends StObject {
     
-    var countyFips: js.Any = js.native
+    var countyFips: js.Any
     
-    var countyName: String = js.native
+    var countyName: String
     
-    var state: String = js.native
+    var state: String
     
-    var stateAbbreviation: String = js.native
+    var stateAbbreviation: String
   }
   object County {
     
@@ -148,30 +126,29 @@ object usZipcode {
     }
   }
   
-  @js.native
   trait ZipCode extends StObject {
     
-    var alternateCounties: js.Array[County] = js.native
+    var alternateCounties: js.Array[County]
     
-    var countyFips: js.Any = js.native
+    var countyFips: js.Any
     
-    var countyName: String = js.native
+    var countyName: String
     
-    var defaultCity: String = js.native
+    var defaultCity: String
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var precision: String = js.native
+    var precision: String
     
-    var state: String = js.native
+    var state: String
     
-    var stateAbbreviation: String = js.native
+    var stateAbbreviation: String
     
-    var zipcode: String = js.native
+    var zipcode: String
     
-    var zipcodeType: String = js.native
+    var zipcodeType: String
   }
   object ZipCode {
     

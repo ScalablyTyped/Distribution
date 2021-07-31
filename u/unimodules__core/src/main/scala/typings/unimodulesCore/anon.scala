@@ -2,19 +2,17 @@ package typings.unimodulesCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrentVersion extends StObject {
     
-    var currentVersion: js.UndefOr[String] = js.native
+    var currentVersion: js.UndefOr[String] = js.undefined
     
-    var replacement: js.UndefOr[String] = js.native
+    var replacement: js.UndefOr[String] = js.undefined
     
-    var versionToRemove: js.UndefOr[String] = js.native
+    var versionToRemove: js.UndefOr[String] = js.undefined
   }
   object CurrentVersion {
     

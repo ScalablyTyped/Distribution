@@ -15,7 +15,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepMod {
@@ -33,48 +32,47 @@ object stepMod {
     def renderIconNode(): js.Any = js.native
   }
   
-  @js.native
   trait StepProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var icons: js.UndefOr[Icons] = js.native
+    var icons: js.UndefOr[Icons] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onStepClick: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var onStepClick: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.native
+    var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.undefined
     
-    var status: js.UndefOr[Status] = js.native
+    var status: js.UndefOr[Status] = js.undefined
     
-    var stepIcon: js.UndefOr[StepIconRender] = js.native
+    var stepIcon: js.UndefOr[StepIconRender] = js.undefined
     
-    var stepIndex: js.UndefOr[Double] = js.native
+    var stepIndex: js.UndefOr[Double] = js.undefined
     
-    var stepNumber: js.UndefOr[Double] = js.native
+    var stepNumber: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    var tailContent: js.UndefOr[ReactNode] = js.native
+    var tailContent: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var wrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object StepProps {
     

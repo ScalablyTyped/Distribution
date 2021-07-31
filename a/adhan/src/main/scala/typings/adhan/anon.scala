@@ -2,25 +2,23 @@ package typings.adhan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Asr extends StObject {
     
-    var asr: Double = js.native
+    var asr: Double
     
-    var dhuhr: Double = js.native
+    var dhuhr: Double
     
-    var fajr: Double = js.native
+    var fajr: Double
     
-    var isha: Double = js.native
+    var isha: Double
     
-    var maghrib: Double = js.native
+    var maghrib: Double
     
-    var sunrise: Double = js.native
+    var sunrise: Double
   }
   object Asr {
     

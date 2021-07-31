@@ -2,39 +2,39 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Heightfield extends Shape {
+trait Heightfield
+  extends StObject
+     with Shape {
   
-  var cacheEnabled: Boolean = js.native
+  var cacheEnabled: Boolean
   
-  var data: js.Array[js.Array[Double]] = js.native
+  var data: js.Array[js.Array[Double]]
   
-  var elementSize: Double = js.native
+  var elementSize: Double
   
-  def getConvexTrianglePillar(xi: Double, yi: Double, getUpperTriangle: Boolean): Unit = js.native
+  def getConvexTrianglePillar(xi: Double, yi: Double, getUpperTriangle: Boolean): Unit
   
-  def getIndexOfPosition(x: Double, y: Double, result: js.Array[_], clamp: Boolean): Boolean = js.native
+  def getIndexOfPosition(x: Double, y: Double, result: js.Array[js.Any], clamp: Boolean): Boolean
   
-  def getRectMinMax(iMinX: Double, iMinY: Double, iMaxX: Double, iMaxY: Double, result: js.Array[_]): Unit = js.native
+  def getRectMinMax(iMinX: Double, iMinY: Double, iMaxX: Double, iMaxY: Double, result: js.Array[js.Any]): Unit
   
-  var maxValue: Double = js.native
+  var maxValue: Double
   
-  var minValue: Double = js.native
+  var minValue: Double
   
-  var pillarConvex: ConvexPolyhedron = js.native
+  var pillarConvex: ConvexPolyhedron
   
-  var pillarOffset: Vec3 = js.native
+  var pillarOffset: Vec3
   
-  def setHeightValueAtIndex(xi: Double, yi: Double, value: Double): Unit = js.native
+  def setHeightValueAtIndex(xi: Double, yi: Double, value: Double): Unit
   
-  def update(): Unit = js.native
+  def update(): Unit
   
-  def updateMaxValue(): Unit = js.native
+  def updateMaxValue(): Unit
   
-  def updateMinValue(): Unit = js.native
+  def updateMinValue(): Unit
 }
 object Heightfield {
   
@@ -47,8 +47,8 @@ object Heightfield {
     data: js.Array[js.Array[Double]],
     elementSize: Double,
     getConvexTrianglePillar: (Double, Double, Boolean) => Unit,
-    getIndexOfPosition: (Double, Double, js.Array[_], Boolean) => Boolean,
-    getRectMinMax: (Double, Double, Double, Double, js.Array[_]) => Unit,
+    getIndexOfPosition: (Double, Double, js.Array[js.Any], Boolean) => Boolean,
+    getRectMinMax: (Double, Double, Double, Double, js.Array[js.Any]) => Unit,
     maxValue: Double,
     minValue: Double,
     pillarConvex: ConvexPolyhedron,
@@ -85,10 +85,10 @@ object Heightfield {
     def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "getConvexTrianglePillar", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetIndexOfPosition(value: (Double, Double, js.Array[_], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
+    def setGetIndexOfPosition(value: (Double, Double, js.Array[js.Any], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
+    def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
     
     @scala.inline
     def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])

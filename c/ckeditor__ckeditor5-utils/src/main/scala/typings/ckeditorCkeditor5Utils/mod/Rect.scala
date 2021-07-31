@@ -6,7 +6,6 @@ import typings.std.Range
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ckeditor/ckeditor5-utils", "Rect")
@@ -52,7 +51,10 @@ class Rect protected () extends StObject {
 /* static members */
 object Rect {
   
-  @JSImport("@ckeditor/ckeditor5-utils", "Rect.getDomRangeRects")
+  @JSImport("@ckeditor/ckeditor5-utils", "Rect")
   @js.native
-  def getDomRangeRects(range: Range): js.Array[Rect] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDomRangeRects(range: Range): js.Array[Rect] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomRangeRects")(range.asInstanceOf[js.Any]).asInstanceOf[js.Array[Rect]]
 }

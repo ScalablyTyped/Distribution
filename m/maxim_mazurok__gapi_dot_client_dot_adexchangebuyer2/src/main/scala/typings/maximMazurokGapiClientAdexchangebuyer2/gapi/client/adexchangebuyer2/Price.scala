@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Price extends StObject {
   
   /** The actual price with currency specified. */
-  var amount: js.UndefOr[Money] = js.native
+  var amount: js.UndefOr[Money] = js.undefined
   
   /** The pricing type for the deal/product. (default: CPM) */
-  var pricingType: js.UndefOr[String] = js.native
+  var pricingType: js.UndefOr[String] = js.undefined
 }
 object Price {
   

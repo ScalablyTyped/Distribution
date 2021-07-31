@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteWorldsRequest extends StObject {
   
   /**
     * A list of Amazon Resource Names (arns) that correspond to worlds to delete.
     */
-  var worlds: Arns = js.native
+  var worlds: Arns
 }
 object BatchDeleteWorldsRequest {
   

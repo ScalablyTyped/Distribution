@@ -5,7 +5,6 @@ import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.CreateCardPreAuthoriz
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.UpdateCardPreAuthorization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

@@ -10,9 +10,9 @@ Mutator for setting arbitrary metadata on fields in 🏁 Final Form
 | ------------------ | :-------------: |
 | Full name          | final-form-set-field-data |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 948214 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 772085 |
 | # stars            | 0 |
 
 ## Links

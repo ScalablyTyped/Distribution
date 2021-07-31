@@ -6,7 +6,6 @@ import typings.storybookUi.anon.IsMain
 import typings.storybookUi.anon.LoginUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refBlocksMod {

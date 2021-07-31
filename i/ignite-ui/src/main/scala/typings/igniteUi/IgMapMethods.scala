@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -56,9 +55,9 @@ trait IgMapMethods extends StObject {
     * @param height The height of the image.
     */
   def exportImage(): js.Object = js.native
-  def exportImage(width: js.UndefOr[scala.Nothing], height: js.Object): js.Object = js.native
   def exportImage(width: js.Object): js.Object = js.native
   def exportImage(width: js.Object, height: js.Object): js.Object = js.native
+  def exportImage(width: Unit, height: js.Object): js.Object = js.native
   
   /**
     * Exports visual data from the map to aid in unit testing

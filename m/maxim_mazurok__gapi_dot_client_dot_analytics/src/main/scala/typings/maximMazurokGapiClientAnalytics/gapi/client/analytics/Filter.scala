@@ -6,56 +6,54 @@ import typings.maximMazurokGapiClientAnalytics.anon.FieldIndex
 import typings.maximMazurokGapiClientAnalytics.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /** Account ID to which this filter belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Details for the filter of the type ADVANCED. */
-  var advancedDetails: js.UndefOr[CaseSensitive] = js.native
+  var advancedDetails: js.UndefOr[CaseSensitive] = js.undefined
   
   /** Time this filter was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Details for the filter of the type EXCLUDE. */
-  var excludeDetails: js.UndefOr[FilterExpression] = js.native
+  var excludeDetails: js.UndefOr[FilterExpression] = js.undefined
   
   /** Filter ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Details for the filter of the type INCLUDE. */
-  var includeDetails: js.UndefOr[FilterExpression] = js.native
+  var includeDetails: js.UndefOr[FilterExpression] = js.undefined
   
   /** Resource type for Analytics filter. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Details for the filter of the type LOWER. */
-  var lowercaseDetails: js.UndefOr[Field] = js.native
+  var lowercaseDetails: js.UndefOr[Field] = js.undefined
   
   /** Name of this filter. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Parent link for this filter. Points to the account to which this filter belongs. */
-  var parentLink: js.UndefOr[Href] = js.native
+  var parentLink: js.UndefOr[Href] = js.undefined
   
   /** Details for the filter of the type SEARCH_AND_REPLACE. */
-  var searchAndReplaceDetails: js.UndefOr[FieldIndex] = js.native
+  var searchAndReplaceDetails: js.UndefOr[FieldIndex] = js.undefined
   
   /** Link for this filter. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE, UPPERCASE, SEARCH_AND_REPLACE and ADVANCED. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Time this filter was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** Details for the filter of the type UPPER. */
-  var uppercaseDetails: js.UndefOr[Field] = js.native
+  var uppercaseDetails: js.UndefOr[Field] = js.undefined
 }
 object Filter {
   

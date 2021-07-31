@@ -2,7 +2,6 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,21 +12,29 @@ sealed trait SsmlVoiceGender extends StObject
 object SsmlVoiceGender extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SsmlVoiceGender with Double] = js.native
+  def apply(value: Double): js.UndefOr[SsmlVoiceGender & Double] = js.native
   
   @js.native
-  sealed trait SSML_VOICE_GENDER_FEMALE extends SsmlVoiceGender
-  /* 2 */ val SSML_VOICE_GENDER_FEMALE: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_FEMALE with Double = js.native
+  sealed trait SSML_VOICE_GENDER_FEMALE
+    extends StObject
+       with SsmlVoiceGender
+  /* 2 */ val SSML_VOICE_GENDER_FEMALE: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_FEMALE & Double = js.native
   
   @js.native
-  sealed trait SSML_VOICE_GENDER_MALE extends SsmlVoiceGender
-  /* 1 */ val SSML_VOICE_GENDER_MALE: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_MALE with Double = js.native
+  sealed trait SSML_VOICE_GENDER_MALE
+    extends StObject
+       with SsmlVoiceGender
+  /* 1 */ val SSML_VOICE_GENDER_MALE: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_MALE & Double = js.native
   
   @js.native
-  sealed trait SSML_VOICE_GENDER_NEUTRAL extends SsmlVoiceGender
-  /* 3 */ val SSML_VOICE_GENDER_NEUTRAL: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_NEUTRAL with Double = js.native
+  sealed trait SSML_VOICE_GENDER_NEUTRAL
+    extends StObject
+       with SsmlVoiceGender
+  /* 3 */ val SSML_VOICE_GENDER_NEUTRAL: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_NEUTRAL & Double = js.native
   
   @js.native
-  sealed trait SSML_VOICE_GENDER_UNSPECIFIED extends SsmlVoiceGender
-  /* 0 */ val SSML_VOICE_GENDER_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED with Double = js.native
+  sealed trait SSML_VOICE_GENDER_UNSPECIFIED
+    extends StObject
+       with SsmlVoiceGender
+  /* 0 */ val SSML_VOICE_GENDER_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED & Double = js.native
 }

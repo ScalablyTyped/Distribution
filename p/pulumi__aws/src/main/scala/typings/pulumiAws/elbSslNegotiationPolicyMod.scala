@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbSslNegotiationPolicyMod {
@@ -52,6 +51,10 @@ object elbSslNegotiationPolicyMod {
   /* static members */
   object SslNegotiationPolicy {
     
+    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SslNegotiationPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,29 +64,23 @@ object elbSslNegotiationPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SslNegotiationPolicy = js.native
-    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SslNegotiationPolicy = js.native
-    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SslNegotiationPolicyState): SslNegotiationPolicy = js.native
-    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SslNegotiationPolicyState, opts: CustomResourceOptions): SslNegotiationPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SslNegotiationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SslNegotiationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SslNegotiationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SslNegotiationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SslNegotiationPolicyState): SslNegotiationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SslNegotiationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SslNegotiationPolicyState, opts: CustomResourceOptions): SslNegotiationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SslNegotiationPolicy]
     
     /**
       * Returns true if the given object is an instance of SslNegotiationPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elb/sslNegotiationPolicy", "SslNegotiationPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/sslNegotiationPolicy.SslNegotiationPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/sslNegotiationPolicy.SslNegotiationPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/sslNegotiationPolicy.SslNegotiationPolicy */ Boolean]
   }
   
-  @js.native
   trait SslNegotiationPolicyArgs extends StObject {
     
     /**
@@ -91,25 +88,25 @@ object elbSslNegotiationPolicyMod {
       */
     val attributes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.elb.SslNegotiationPolicyAttribute]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: Input[Double] = js.native
+    val lbPort: Input[Double]
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: Input[String] = js.native
+    val loadBalancer: Input[String]
     
     /**
       * The name of the attribute
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object SslNegotiationPolicyArgs {
     
@@ -145,7 +142,6 @@ object elbSslNegotiationPolicyMod {
     }
   }
   
-  @js.native
   trait SslNegotiationPolicyState extends StObject {
     
     /**
@@ -153,25 +149,25 @@ object elbSslNegotiationPolicyMod {
       */
     val attributes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.elb.SslNegotiationPolicyAttribute]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: js.UndefOr[Input[Double]] = js.native
+    val lbPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: js.UndefOr[Input[String]] = js.native
+    val loadBalancer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the attribute
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object SslNegotiationPolicyState {
     

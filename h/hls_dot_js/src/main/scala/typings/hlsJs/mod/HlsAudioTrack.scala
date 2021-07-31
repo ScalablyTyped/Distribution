@@ -2,31 +2,29 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsAudioTrack extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var audioCodec: String = js.native
+  var audioCodec: String
   
-  var autoselect: Boolean = js.native
+  var autoselect: Boolean
   
-  var forced: Boolean = js.native
+  var forced: Boolean
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var lang: String = js.native
+  var lang: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object HlsAudioTrack {
   

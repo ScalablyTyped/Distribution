@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Escalation extends BaseElement {
+trait Escalation
+  extends StObject
+     with BaseElement {
   
-  var escalationCode: String = js.native
+  var escalationCode: String
   
-  var name: String = js.native
+  var name: String
   
-  var structureRef: ItemDefinition = js.native
+  var structureRef: ItemDefinition
 }
 object Escalation {
   

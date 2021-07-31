@@ -2,39 +2,37 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * openAddress的返回数据
   */
-@js.native
 trait OpenAddressResponse extends StObject {
   
   // 国标收货地址第一级地址（省）
-  var cityName: String = js.native
+  var cityName: String
   
   // 国标收货地址第二级地址（市）
-  var countryName: String = js.native
+  var countryName: String
   
   // 国标收货地址第三级地址（国家）
-  var detailInfo: String = js.native
+  var detailInfo: String
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   // 详细收货地址信息
-  var nationalCode: String = js.native
+  var nationalCode: String
   
   // 收货人姓名
-  var postalCode: String = js.native
+  var postalCode: String
   
   // 邮编
-  var provinceName: String = js.native
+  var provinceName: String
   
   // 收货地址国家码
-  var telNumber: String = js.native
+  var telNumber: String
   
-  var userName: String = js.native
+  var userName: String
 }
 object OpenAddressResponse {
   

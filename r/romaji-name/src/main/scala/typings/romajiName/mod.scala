@@ -3,7 +3,6 @@ package typings.romajiName
 import typings.romajiName.romajiNameBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,19 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("romaji-name", "init")
-  @js.native
-  def init(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("romaji-name", "parseName")
-  @js.native
-  def parseName(name: String): ParseResults = js.native
-  @JSImport("romaji-name", "parseName")
-  @js.native
-  def parseName(name: String, options: ParseOptions): ParseResults = js.native
-  @JSImport("romaji-name", "parseName")
-  @js.native
-  def parseName(results: ParseResults): ParseResults = js.native
+  @scala.inline
+  def parseName(name: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+  @scala.inline
+  def parseName(name: String, options: ParseOptions): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
+  @scala.inline
+  def parseName(results: ParseResults): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(results.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
   
   @JSImport("romaji-name", "settingsFile")
   @js.native
@@ -46,24 +41,23 @@ object mod {
     def ja: typings.romajiName.romajiNameStrings.ja = "ja".asInstanceOf[typings.romajiName.romajiNameStrings.ja]
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * Names that don't have a "ja" locale should be flipped ("Smith John" becomes "John Smith").
       */
-    var flipNonJa: js.UndefOr[Boolean] = js.native
+    var flipNonJa: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Assumes that the first name is always the given name.
       */
-    var givenFirst: js.UndefOr[Boolean] = js.native
+    var givenFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Removes anything that's wrapped in parentheses.
       * Normally this is left intact and any extra information is parsed from it.
       */
-    var stripParens: js.UndefOr[Boolean] = js.native
+    var stripParens: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -96,78 +90,77 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResults extends StObject {
     
     /**
       *  If the name includes some sort of "After" or "In the style of" or similar prefix then this will be true.
       */
-    var after: js.UndefOr[Boolean] = js.native
+    var after: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The full name, in ascii text, including the generation.
       * This is a proper ascii representation of the name (with long vowels converted from "ō" into "oo", for example).
       * Example: "Nakamura Gakuryoo II".
       */
-    var ascii: js.UndefOr[String] = js.native
+    var ascii: js.UndefOr[String] = js.undefined
     
     /**
       * If the name includes a prefix like "Attributed to" then this will be true.
       */
-    var attributed: js.UndefOr[Boolean] = js.native
+    var attributed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A number representing the generation of the name. For example "John Smith II" would have a generation of 2.
       */
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
     /**
       * A string of the Romaji form of the given name. (Will only exist if a Romaji form was originally provided.)
       */
-    var given: js.UndefOr[String] = js.native
+    var `given`: js.UndefOr[String] = js.undefined
     
     /**
       * A string of the Kana form of the given name.
       * (Will only exist if a Romaji form was originally provided and if the locale is "ja".)
       */
-    var given_kana: js.UndefOr[String] = js.native
+    var given_kana: js.UndefOr[String] = js.undefined
     
     /**
       * A string of the Kanji form of the given name. (Will only exist if a Kanji form was originally provided.)
       */
-    var given_kanji: js.UndefOr[String] = js.native
+    var given_kanji: js.UndefOr[String] = js.undefined
     
     /**
       * The full name, in kana, without the generation. For example: "なかむらがくりょう".
       */
-    var kana: js.UndefOr[String] = js.native
+    var kana: js.UndefOr[String] = js.undefined
     
     /**
       * The full name, in kanji, including the generation. For example: "戯画堂芦幸 2世".
       */
-    var kanji: js.UndefOr[String] = js.native
+    var kanji: js.UndefOr[String] = js.undefined
     
     /**
       * A guess at the locale of the name. Only two values exist: "ja" and "".
       * Note that just because "ja" was returned it does not guarantee that the person is actually Japanese,
       * just that the name looks to be Japanese-like (for example: Some Chinese names also return "ja").
       */
-    var locale: Locale = js.native
+    var locale: Locale
     
     /**
       * A string of the Romaji form of the middlename.
       */
-    var middle: js.UndefOr[String] = js.native
+    var middle: js.UndefOr[String] = js.undefined
     
     /**
       * The full name, in properly-stressed romaji, including the generation. For example: "Nakamura Gakuryō II".
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The original string that was passed in to parseName.
       */
-    var original: String = js.native
+    var original: String
     
     /**
       * The full name, in plain text, including the generation.
@@ -175,40 +168,40 @@ object mod {
       * This could be useful to use in the generation of a URL slug, or some such. It should never be displayed to an end-user as it will almost always be incorrect.
       * Example: "Nakamura Gakuryo II".
       */
-    var plain: String = js.native
+    var plain: String
     
     /**
       * If the name includes a prefix like "School of", "Pupil of", or similar then this will be true.
       */
-    var school: js.UndefOr[Boolean] = js.native
+    var school: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object holding the settings that were passed in to the parseName method.
       */
-    var settings: js.UndefOr[ParseOptions] = js.native
+    var settings: js.UndefOr[ParseOptions] = js.undefined
     
     /**
       * A string of the Romaji form of the surname.
       * (Will only exist if a Romaji form was originally provided.)
       */
-    var surname: js.UndefOr[String] = js.native
+    var surname: js.UndefOr[String] = js.undefined
     
     /**
       * A string of the Kana form of the surname.
       * (Will only exist if a Romaji form was originally provided and if the locale is "ja".)
       */
-    var surname_kana: js.UndefOr[String] = js.native
+    var surname_kana: js.UndefOr[String] = js.undefined
     
     /**
       * A string of the Kanji form of the surname. (Will only exist if a Kanji form was originally provided.)
       */
-    var surname_kanji: js.UndefOr[String] = js.native
+    var surname_kanji: js.UndefOr[String] = js.undefined
     
     /**
       * If the name is a representation of an unknown individual (e.g. it's the string "Unknown", "Not known", or many of the other variations)
       * then this property will exist and be true.
       */
-    var unknown: js.UndefOr[`true`] = js.native
+    var unknown: js.UndefOr[`true`] = js.undefined
   }
   object ParseResults {
     

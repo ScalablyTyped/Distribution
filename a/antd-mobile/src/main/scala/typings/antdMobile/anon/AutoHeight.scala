@@ -2,39 +2,37 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHeight extends StObject {
   
-  var autoHeight: Boolean = js.native
+  var autoHeight: Boolean
   
-  var clear: Boolean = js.native
+  var clear: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var labelNumber: Double = js.native
+  var labelNumber: Double
   
-  var onBlur: js.Function0[Unit] = js.native
+  var onBlur: js.Function0[Unit]
   
-  var onChange: js.Function0[Unit] = js.native
+  var onChange: js.Function0[Unit]
   
-  var onErrorClick: js.Function0[Unit] = js.native
+  var onErrorClick: js.Function0[Unit]
   
-  var onFocus: js.Function0[Unit] = js.native
+  var onFocus: js.Function0[Unit]
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var prefixListCls: String = js.native
+  var prefixListCls: String
   
-  var rows: Double = js.native
+  var rows: Double
 }
 object AutoHeight {
   

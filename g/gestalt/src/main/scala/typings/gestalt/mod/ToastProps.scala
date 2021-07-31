@@ -9,21 +9,19 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastProps extends StObject {
   
-  var button: js.UndefOr[ReactNode] = js.native
+  var button: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[darkGray | red] = js.native
+  var color: js.UndefOr[darkGray | red] = js.undefined
   
-  var text: js.UndefOr[String | ReactElement] = js.native
+  var text: js.UndefOr[String | ReactElement] = js.undefined
   
-  var thumbnail: js.UndefOr[ReactNode] = js.native
+  var thumbnail: js.UndefOr[ReactNode] = js.undefined
   
-  var thumbnailShape: js.UndefOr[circle | rectangle | square] = js.native
+  var thumbnailShape: js.UndefOr[circle | rectangle | square] = js.undefined
 }
 object ToastProps {
   

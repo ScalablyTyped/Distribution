@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGatewayResponse extends StObject {
   
   /**
     * The details of the gateway.
     */
-  var Gateway: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Gateway] = js.native
+  var Gateway: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Gateway] = js.undefined
 }
 object GetGatewayResponse {
   

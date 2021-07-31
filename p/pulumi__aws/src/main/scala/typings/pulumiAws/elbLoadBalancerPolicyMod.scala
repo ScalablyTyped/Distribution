@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbLoadBalancerPolicyMod {
@@ -49,6 +48,10 @@ object elbLoadBalancerPolicyMod {
   /* static members */
   object LoadBalancerPolicy {
     
+    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoadBalancerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,35 +61,29 @@ object elbLoadBalancerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoadBalancerPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoadBalancerPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): LoadBalancerPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): LoadBalancerPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
     
     /**
       * Returns true if the given object is an instance of LoadBalancerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elb/loadBalancerPolicy", "LoadBalancerPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean]
   }
   
-  @js.native
   trait LoadBalancerPolicyArgs extends StObject {
     
     /**
       * The load balancer on which the policy is defined.
       */
-    val loadBalancerName: Input[String] = js.native
+    val loadBalancerName: Input[String]
     
     /**
       * Policy attribute to apply to the policy.
@@ -95,17 +92,17 @@ object elbLoadBalancerPolicyMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the load balancer policy.
       */
-    val policyName: Input[String] = js.native
+    val policyName: Input[String]
     
     /**
       * The policy type.
       */
-    val policyTypeName: Input[String] = js.native
+    val policyTypeName: Input[String]
   }
   object LoadBalancerPolicyArgs {
     
@@ -142,13 +139,12 @@ object elbLoadBalancerPolicyMod {
     }
   }
   
-  @js.native
   trait LoadBalancerPolicyState extends StObject {
     
     /**
       * The load balancer on which the policy is defined.
       */
-    val loadBalancerName: js.UndefOr[Input[String]] = js.native
+    val loadBalancerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Policy attribute to apply to the policy.
@@ -157,17 +153,17 @@ object elbLoadBalancerPolicyMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the load balancer policy.
       */
-    val policyName: js.UndefOr[Input[String]] = js.native
+    val policyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy type.
       */
-    val policyTypeName: js.UndefOr[Input[String]] = js.native
+    val policyTypeName: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerPolicyState {
     

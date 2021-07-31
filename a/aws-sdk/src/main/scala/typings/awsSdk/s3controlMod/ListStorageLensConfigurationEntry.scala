@@ -2,31 +2,29 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStorageLensConfigurationEntry extends StObject {
   
   /**
     * A container for the S3 Storage Lens home Region. Your metrics data is stored and retained in your designated S3 Storage Lens home Region.
     */
-  var HomeRegion: S3AWSRegion = js.native
+  var HomeRegion: S3AWSRegion
   
   /**
     * A container for the S3 Storage Lens configuration ID.
     */
-  var Id: ConfigId = js.native
+  var Id: ConfigId
   
   /**
     * A container for whether the S3 Storage Lens configuration is enabled. This property is required.
     */
-  var IsEnabled: js.UndefOr[typings.awsSdk.s3controlMod.IsEnabled] = js.native
+  var IsEnabled: js.UndefOr[typings.awsSdk.s3controlMod.IsEnabled] = js.undefined
   
   /**
     * The ARN of the S3 Storage Lens configuration. This property is read-only.
     */
-  var StorageLensArn: typings.awsSdk.s3controlMod.StorageLensArn = js.native
+  var StorageLensArn: typings.awsSdk.s3controlMod.StorageLensArn
 }
 object ListStorageLensConfigurationEntry {
   

@@ -3,38 +3,31 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.typedef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedefType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLRootType {
   
   /** An IDL Type describing what typedef's type. */
-  var idlType: IDLTypeDescription = js.native
+  var idlType: IDLTypeDescription
   
   /** The typedef's name. */
-  var name: String = js.native
+  var name: String
   
   @JSName("parent")
-  var parent_TypedefType: Null = js.native
+  var parent_TypedefType: Null
   
   @JSName("type")
-  var type_TypedefType: typedef = js.native
+  var type_TypedefType: typedef
 }
 object TypedefType {
   
   @scala.inline
-  def apply(
-    extAttrs: js.Array[ExtendedAttribute],
-    idlType: IDLTypeDescription,
-    name: String,
-    parent: Null,
-    `type`: typedef
-  ): TypedefType = {
+  def apply(extAttrs: js.Array[ExtendedAttribute], idlType: IDLTypeDescription, name: String, parent: Null): TypedefType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("typedef")
     __obj.asInstanceOf[TypedefType]
   }
   

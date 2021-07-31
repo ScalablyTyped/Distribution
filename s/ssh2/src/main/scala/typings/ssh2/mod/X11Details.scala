@@ -2,17 +2,15 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X11Details extends StObject {
   
   /** The originating IP of the connection. */
-  var srcIP: String = js.native
+  var srcIP: String
   
   /** The originating port of the connection. */
-  var srcPort: Double = js.native
+  var srcPort: Double
 }
 object X11Details {
   

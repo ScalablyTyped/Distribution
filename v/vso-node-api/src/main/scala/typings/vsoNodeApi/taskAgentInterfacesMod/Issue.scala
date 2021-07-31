@@ -3,19 +3,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issue extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var data: StringDictionary[String] = js.native
+  var data: StringDictionary[String]
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: IssueType = js.native
+  var `type`: IssueType
 }
 object Issue {
   

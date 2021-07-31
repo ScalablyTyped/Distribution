@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceBufferListEventMap extends StObject {
   
-  var addsourcebuffer: Event = js.native
+  var addsourcebuffer: Event
   
-  var removesourcebuffer: Event = js.native
+  var removesourcebuffer: Event
 }
 object SourceBufferListEventMap {
   

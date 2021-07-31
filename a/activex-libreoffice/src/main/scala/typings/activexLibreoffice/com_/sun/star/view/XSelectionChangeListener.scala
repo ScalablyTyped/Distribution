@@ -5,22 +5,22 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to receive an event when the current selection changes.
   * @see com.sun.star.view.XSelectionSupplier
   */
-@js.native
-trait XSelectionChangeListener extends XEventListener {
+trait XSelectionChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when the selection changes.
     *
     * You can get the new selection via {@link XSelectionSupplier} from {@link com.sun.star.lang.EventObject.Source} .
     */
-  def selectionChanged(aEvent: EventObject): Unit = js.native
+  def selectionChanged(aEvent: EventObject): Unit
 }
 object XSelectionChangeListener {
   

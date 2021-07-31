@@ -3,21 +3,19 @@ package typings.nodeForge.anon
 import typings.nodeForge.mod.tls.ConnectionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: ConnectionState = js.native
+  var current: ConnectionState
   
-  var pending: ConnectionState | Null = js.native
+  var pending: ConnectionState | Null
 }
 object Current {
   
   @scala.inline
   def apply(current: ConnectionState): Current = {
-    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], pending = null)
     __obj.asInstanceOf[Current]
   }
   

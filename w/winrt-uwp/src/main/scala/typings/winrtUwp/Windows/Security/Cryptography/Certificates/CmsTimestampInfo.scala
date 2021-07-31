@@ -4,21 +4,19 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an RFC3161 unauthenticated timestamp attribute in a signed CMS message. */
-@js.native
 trait CmsTimestampInfo extends StObject {
   
   /** Gets the list of certificates that is used for chain building for the signing certificate. */
-  var certificates: IVectorView[Certificate] = js.native
+  var certificates: IVectorView[Certificate]
   
   /** Gets the certificate that is used to sign the timestamp. */
-  var signingCertificate: Certificate = js.native
+  var signingCertificate: Certificate
   
   /** Gets the date and time of the timestamp. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object CmsTimestampInfo {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /**
     * The classification within a configuration.
     */
-  var Classification: js.UndefOr[String] = js.native
+  var Classification: js.UndefOr[String] = js.undefined
   
   /**
     * A list of additional configurations to apply within a configuration object.
     */
-  var Configurations: js.UndefOr[ConfigurationList] = js.native
+  var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
     * A set of properties specified within a configuration classification.
     */
-  var Properties: js.UndefOr[StringMap] = js.native
+  var Properties: js.UndefOr[StringMap] = js.undefined
 }
 object Configuration {
   

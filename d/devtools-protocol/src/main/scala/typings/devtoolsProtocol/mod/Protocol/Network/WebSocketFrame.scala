@@ -2,28 +2,26 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebSocketFrame extends StObject {
   
   /**
     * WebSocket message mask.
     */
-  var mask: Boolean = js.native
+  var mask: Boolean
   
   /**
     * WebSocket message opcode.
     */
-  var opcode: Double = js.native
+  var opcode: Double
   
   /**
     * WebSocket message payload data.
     * If the opcode is 1, this is a text message and payloadData is a UTF-8 string.
     * If the opcode isn't 1, then payloadData is a base64 encoded string representing binary data.
     */
-  var payloadData: String = js.native
+  var payloadData: String
 }
 object WebSocketFrame {
   

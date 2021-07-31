@@ -5,27 +5,31 @@ import typings.expoPermissions.permissionsTypesMod.PermissionType
 import typings.std.PermissionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoPermissionsWebMod {
   
+  @JSImport("expo-permissions/build/ExpoPermissions.web", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("expo-permissions/build/ExpoPermissions.web", "default.askAsync")
+    @JSImport("expo-permissions/build/ExpoPermissions.web", JSImport.Default)
     @js.native
-    def askAsync(permissionTypes: js.Array[PermissionType]): js.Promise[PermissionMap] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo-permissions/build/ExpoPermissions.web", "default.getAsync")
-    @js.native
-    def getAsync(permissionTypes: js.Array[PermissionType]): js.Promise[PermissionMap] = js.native
+    @scala.inline
+    def askAsync(permissionTypes: js.Array[PermissionType]): js.Promise[PermissionMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(permissionTypes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionMap]]
+    
+    @scala.inline
+    def getAsync(permissionTypes: js.Array[PermissionType]): js.Promise[PermissionMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(permissionTypes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionMap]]
     
     @JSImport("expo-permissions/build/ExpoPermissions.web", "default.name")
     @js.native
     val name: String = js.native
   }
   
-  @JSImport("expo-permissions/build/ExpoPermissions.web", "getRequestMotionPermission")
-  @js.native
-  def getRequestMotionPermission(): js.Function0[js.Promise[PermissionState]] | Null = js.native
+  @scala.inline
+  def getRequestMotionPermission(): js.Function0[js.Promise[PermissionState]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMotionPermission")().asInstanceOf[js.Function0[js.Promise[PermissionState]] | Null]
 }

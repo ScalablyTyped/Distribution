@@ -11,8 +11,8 @@ The lodash method `_.property` exported as a module.
 | Full name          | lodash.property |
 | Keywords           | lodash-modularized, property |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 2240017 |
+| # dependents       | 20 |
+| # downloads        | 2116865 |
 | # stars            | 0 |
 
 ## Links

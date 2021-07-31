@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plus/v1", "plus_v1.Resource$People")
@@ -32,7 +31,7 @@ class ResourcePeople protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPerson] = js.native
   def get(callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerson] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPerson] = js.native
   def get(params: ParamsResourcePeopleGet): GaxiosPromise[SchemaPerson] = js.native
   def get(params: ParamsResourcePeopleGet, callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourcePeople protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPeopleFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
   def list(params: ParamsResourcePeopleList): GaxiosPromise[SchemaPeopleFeed] = js.native
   def list(params: ParamsResourcePeopleList, callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
   def list(
@@ -98,7 +97,7 @@ class ResourcePeople protected () extends StObject {
     */
   def listByActivity(): GaxiosPromise[SchemaPeopleFeed] = js.native
   def listByActivity(callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
-  def listByActivity(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
+  def listByActivity(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
   def listByActivity(params: ParamsResourcePeopleListbyactivity): GaxiosPromise[SchemaPeopleFeed] = js.native
   def listByActivity(params: ParamsResourcePeopleListbyactivity, callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
   def listByActivity(
@@ -131,7 +130,7 @@ class ResourcePeople protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaPeopleFeed] = js.native
   def search(callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPeopleFeed] = js.native
   def search(params: ParamsResourcePeopleSearch): GaxiosPromise[SchemaPeopleFeed] = js.native
   def search(params: ParamsResourcePeopleSearch, callback: BodyResponseCallback[SchemaPeopleFeed]): Unit = js.native
   def search(

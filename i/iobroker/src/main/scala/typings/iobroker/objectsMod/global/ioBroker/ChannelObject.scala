@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.channel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_ChannelObject: ChannelCommon = js.native
+  var common_ChannelObject: ChannelCommon
   
   @JSName("type")
-  var type_ChannelObject: channel = js.native
+  var type_ChannelObject: channel
 }
 object ChannelObject {
   
   @scala.inline
-  def apply(_id: String, common: ChannelCommon, native: Record[String, _], `type`: channel): ChannelObject = {
+  def apply(_id: String, common: ChannelCommon, native: Record[String, js.Any]): ChannelObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[ChannelObject]
   }
   

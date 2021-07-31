@@ -3,15 +3,13 @@ package typings.primereact.anon
 import typings.primereact.treeNodeMod.TreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeOriginalEvent extends StObject {
   
-  var node: TreeNode = js.native
+  var node: TreeNode
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
 }
 object NodeOriginalEvent {
   

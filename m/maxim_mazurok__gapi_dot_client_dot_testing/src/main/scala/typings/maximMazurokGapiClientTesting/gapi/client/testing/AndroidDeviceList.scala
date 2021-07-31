@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidDeviceList extends StObject {
   
   /** Required. A list of Android devices. */
-  var androidDevices: js.UndefOr[js.Array[AndroidDevice]] = js.native
+  var androidDevices: js.UndefOr[js.Array[AndroidDevice]] = js.undefined
 }
 object AndroidDeviceList {
   

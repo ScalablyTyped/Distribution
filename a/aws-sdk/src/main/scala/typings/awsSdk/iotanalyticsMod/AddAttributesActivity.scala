@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddAttributesActivity extends StObject {
   
   /**
     * A list of 1-50 AttributeNameMapping objects that map an existing attribute to a new attribute.  The existing attributes remain in the message, so if you want to remove the originals, use RemoveAttributeActivity. 
     */
-  var attributes: AttributeNameMapping = js.native
+  var attributes: AttributeNameMapping
   
   /**
     * The name of the addAttributes activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
 }
 object AddAttributesActivity {
   

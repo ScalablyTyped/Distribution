@@ -3,57 +3,58 @@ package typings.webfontloader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webfontloader", "load")
+  @JSImport("webfontloader", JSImport.Namespace)
   @js.native
-  def load(config: Config): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def load(config: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Config extends StObject {
     
     /** This event is triggered when the fonts have rendered. */
-    var active: js.UndefOr[js.Function0[Unit]] = js.native
+    var active: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Setting this to false will disable html classes (defaults to true) */
-    var classes: js.UndefOr[Boolean] = js.native
+    var classes: js.UndefOr[Boolean] = js.undefined
     
     /** Child window or iframes to manage fonts for */
-    var context: js.UndefOr[js.Array[String]] = js.native
+    var context: js.UndefOr[js.Array[String]] = js.undefined
     
-    var custom: js.UndefOr[Custom] = js.native
+    var custom: js.UndefOr[Custom] = js.undefined
     
     /** Settings this to false will disable callbacks/events (defaults to true) */
-    var events: js.UndefOr[Boolean] = js.native
+    var events: js.UndefOr[Boolean] = js.undefined
     
     /** This event is triggered once for each font that renders. */
-    var fontactive: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.native
+    var fontactive: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.undefined
     
-    var fontdeck: js.UndefOr[Fontdeck] = js.native
+    var fontdeck: js.UndefOr[Fontdeck] = js.undefined
     
     /** This event is triggered if the font can't be loaded. */
-    var fontinactive: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.native
+    var fontinactive: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.undefined
     
     /** This event is triggered once for each font that's loaded. */
-    var fontloading: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.native
+    var fontloading: js.UndefOr[js.Function2[/* familyName */ String, /* fvd */ String, Unit]] = js.undefined
     
-    var google: js.UndefOr[Google] = js.native
+    var google: js.UndefOr[Google] = js.undefined
     
     /** This event is triggered when the browser does not support linked fonts or if none of the fonts could be loaded. */
-    var inactive: js.UndefOr[js.Function0[Unit]] = js.native
+    var inactive: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** This event is triggered when all fonts have been requested. */
-    var loading: js.UndefOr[js.Function0[Unit]] = js.native
+    var loading: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var monotype: js.UndefOr[Monotype] = js.native
+    var monotype: js.UndefOr[Monotype] = js.undefined
     
     /** Time (in ms) until the fontinactive callback will be triggered (defaults to 5000) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var typekit: js.UndefOr[Typekit] = js.native
+    var typekit: js.UndefOr[Typekit] = js.undefined
   }
   object Config {
     
@@ -161,14 +162,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Custom extends StObject {
     
-    var families: js.UndefOr[js.Array[String]] = js.native
+    var families: js.UndefOr[js.Array[String]] = js.undefined
     
-    var testStrings: js.UndefOr[StringDictionary[String]] = js.native
+    var testStrings: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Custom {
     
@@ -207,10 +207,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Fontdeck extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object Fontdeck {
     
@@ -231,14 +230,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Google extends StObject {
     
-    var api: js.UndefOr[String] = js.native
+    var api: js.UndefOr[String] = js.undefined
     
-    var families: js.Array[String] = js.native
+    var families: js.Array[String]
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Google {
     
@@ -271,14 +269,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Monotype extends StObject {
     
-    var loadAllFonts: js.UndefOr[Boolean] = js.native
+    var loadAllFonts: js.UndefOr[Boolean] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Monotype {
     
@@ -311,10 +308,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Typekit extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object Typekit {
     

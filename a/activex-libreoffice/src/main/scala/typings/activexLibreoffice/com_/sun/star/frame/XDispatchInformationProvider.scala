@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,29 +15,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Frame
   * @since OOo 2.0
   */
-@js.native
-trait XDispatchInformationProvider extends XInterface {
+trait XDispatchInformationProvider
+  extends StObject
+     with XInterface {
   
   /**
     * returns all supported command groups.
     * @returns a sequence of supported command groups.
     * @see CommandGroup
     */
-  val SupportedCommandGroups: SafeArray[Double] = js.native
+  val SupportedCommandGroups: SafeArray[Double]
   
   /**
     * returns additional information about supported commands of a given command group.
     * @param CommandGroup specifies a command group.
     * @returns name and group name of every command supported. A group ID which is not supported returns an empty com::sun::star::uno::Sequence.
     */
-  def getConfigurableDispatchInformation(CommandGroup: Double): SafeArray[DispatchInformation] = js.native
+  def getConfigurableDispatchInformation(CommandGroup: Double): SafeArray[DispatchInformation]
   
   /**
     * returns all supported command groups.
     * @returns a sequence of supported command groups.
     * @see CommandGroup
     */
-  def getSupportedCommandGroups(): SafeArray[Double] = js.native
+  def getSupportedCommandGroups(): SafeArray[Double]
 }
 object XDispatchInformationProvider {
   

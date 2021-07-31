@@ -2,24 +2,23 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlWriter
-  extends typings.extjs.Ext.data.writer.IWriter {
+  extends StObject
+     with typings.extjs.Ext.data.writer.IWriter {
   
   /** [Config Option] (String) */
-  var defaultDocumentRoot: js.UndefOr[String] = js.native
+  var defaultDocumentRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var documentRoot: js.UndefOr[String] = js.native
+  var documentRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var record: js.UndefOr[String] = js.native
+  var record: js.UndefOr[String] = js.undefined
 }
 object IXmlWriter {
   

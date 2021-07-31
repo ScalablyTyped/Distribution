@@ -8,15 +8,13 @@ import typings.firebaseStorageTypes.mod.TaskEvent
 import typings.firebaseStorageTypes.mod.TaskState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
   }
   object AccessToken {
     
@@ -34,16 +32,15 @@ object anon {
     }
   }
   
-  @js.native
   trait BASE64 extends StObject {
     
-    var BASE64: StringFormat = js.native
+    var BASE64: StringFormat
     
-    var BASE64URL: StringFormat = js.native
+    var BASE64URL: StringFormat
     
-    var DATA_URL: StringFormat = js.native
+    var DATA_URL: StringFormat
     
-    var RAW: StringFormat = js.native
+    var RAW: StringFormat
   }
   object BASE64 {
     
@@ -70,18 +67,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CANCELED extends StObject {
     
-    var CANCELED: TaskState = js.native
+    var CANCELED: TaskState
     
-    var ERROR: TaskState = js.native
+    var ERROR: TaskState
     
-    var PAUSED: TaskState = js.native
+    var PAUSED: TaskState
     
-    var RUNNING: TaskState = js.native
+    var RUNNING: TaskState
     
-    var SUCCESS: TaskState = js.native
+    var SUCCESS: TaskState
   }
   object CANCELED {
     
@@ -126,13 +122,12 @@ object anon {
     var TaskState: CANCELED = js.native
   }
   
-  @js.native
   trait Delete extends StObject {
     
     /**
       * Called when the associated app is deleted.
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
   }
   object Delete {
     
@@ -150,10 +145,9 @@ object anon {
     }
   }
   
-  @js.native
   trait STATECHANGED extends StObject {
     
-    var STATE_CHANGED: TaskEvent = js.native
+    var STATE_CHANGED: TaskEvent
   }
   object STATECHANGED {
     
@@ -171,16 +165,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ServerResponse extends StObject {
     
-    var serverResponse: String | Null = js.native
+    var serverResponse: String | Null
   }
   object ServerResponse {
     
     @scala.inline
     def apply(): ServerResponse = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(serverResponse = null)
       __obj.asInstanceOf[ServerResponse]
     }
     

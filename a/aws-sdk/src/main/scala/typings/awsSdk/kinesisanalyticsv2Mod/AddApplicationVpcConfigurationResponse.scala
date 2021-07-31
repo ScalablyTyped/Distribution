@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddApplicationVpcConfigurationResponse extends StObject {
   
   /**
     * The ARN of the application.
     */
-  var ApplicationARN: js.UndefOr[ResourceARN] = js.native
+  var ApplicationARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * Provides the current application version. Kinesis Data Analytics updates the ApplicationVersionId each time you update the application. 
     */
-  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.native
+  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.undefined
   
   /**
     * The parameters of the new VPC configuration.
     */
-  var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescription] = js.native
+  var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescription] = js.undefined
 }
 object AddApplicationVpcConfigurationResponse {
   

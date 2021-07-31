@@ -1,8 +1,8 @@
 package typings.devexpressWeb.global
 
+import typings.devexpressWeb.ASPxClientEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,17 +11,118 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientHtmlEditor")
 @js.native
 class ASPxClientHtmlEditor ()
-  extends typings.devexpressWeb.ASPxClientHtmlEditor
+  extends StObject
+     with typings.devexpressWeb.ASPxClientHtmlEditor {
+  
+  /**
+    * Modifies the control's size against the control's container.
+    */
+  /* CompleteClass */
+  override def AdjustControl(): Unit = js.native
+  
+  /** @deprecated Use the GetVisible method instead. */
+  /**
+    * Returns a value specifying whether a control is displayed.
+    */
+  /* CompleteClass */
+  override def GetClientVisible(): Boolean = js.native
+  
+  /**
+    * Returns the control's height.
+    */
+  /* CompleteClass */
+  override def GetHeight(): Double = js.native
+  
+  /**
+    * Returns an HTML element that is the root of the control's hierarchy.
+    */
+  /* CompleteClass */
+  override def GetMainElement(): js.Any = js.native
+  
+  /**
+    * Returns a client instance of the control that is the parent for a specified control.
+    */
+  /* CompleteClass */
+  override def GetParentControl(): js.Any = js.native
+  
+  /**
+    * Returns a value specifying whether a control is displayed.
+    */
+  /* CompleteClass */
+  override def GetVisible(): Boolean = js.native
+  
+  /**
+    * Returns the control's width.
+    */
+  /* CompleteClass */
+  override def GetWidth(): Double = js.native
+  
+  /**
+    * Returns a value that determines whether a callback request sent by a web control is being currently processed on the server side.
+    */
+  /* CompleteClass */
+  override def InCallback(): Boolean = js.native
+  
+  /**
+    * Occurs on the client side after the control has been initialized.
+    */
+  /* CompleteClass */
+  var Init: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientControlBase]] = js.native
+  
+  /**
+    * Specifies the text that Assistive Technologies (screen readers or braille display, for example) will provide to a user.
+    * @param message A String value that specifies a text.
+    */
+  /* CompleteClass */
+  override def SendMessageToAssistiveTechnology(message: String): Unit = js.native
+  
+  /** @deprecated Use the SetVisible method instead. */
+  /**
+    * Specifies whether a control is displayed.
+    */
+  /* CompleteClass */
+  override def SetClientVisible(visible: Boolean): Unit = js.native
+  
+  /**
+    * Specifies the control's height.  Note that this method is not in effect for some controls.
+    * @param height An integer value that specifies the control's height.
+    */
+  /* CompleteClass */
+  override def SetHeight(height: Double): Unit = js.native
+  
+  /**
+    * Specifies whether a control is displayed.
+    * @param visible true to make a control visible; false to make it hidden.
+    */
+  /* CompleteClass */
+  override def SetVisible(visible: Boolean): Unit = js.native
+  
+  /**
+    * Specifies the control's width in pixels.
+    * @param width An integer value that specifies the control's width, in pixels.
+    */
+  /* CompleteClass */
+  override def SetWidth(width: Double): Unit = js.native
+  
+  /**
+    * Gets the unique, hierarchically-qualified identifier for the control.
+    */
+  /* CompleteClass */
+  var name: String = js.native
+}
 object ASPxClientHtmlEditor {
+  
+  @JSGlobal("ASPxClientHtmlEditor")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts the specified object to the ASPxClientHtmlEditor type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @JSGlobal("ASPxClientHtmlEditor.Cast")
-  @js.native
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHtmlEditor = js.native
+  @scala.inline
+  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHtmlEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHtmlEditor]
   
   /**
     * Programmatically closes a custom dialog, supplying it with specific parameters.
@@ -29,9 +130,8 @@ object ASPxClientHtmlEditor {
     * @param data An object representing custom data associated with a custom dialog.
     */
   /* static member */
-  @JSGlobal("ASPxClientHtmlEditor.CustomDialogComplete")
-  @js.native
-  def CustomDialogComplete(status: js.Any, data: js.Any): Unit = js.native
+  @scala.inline
+  def CustomDialogComplete(status: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CustomDialogComplete")(status.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Highlights the text with the specified text color and background color.
@@ -41,16 +141,12 @@ object ASPxClientHtmlEditor {
     * @param backgroundColor A string value specifying the background color.
     */
   /* static member */
-  @JSGlobal("ASPxClientHtmlEditor.HighlightText")
-  @js.native
-  def HighlightText(text: String, searchContainer: js.Any): Unit = js.native
-  @JSGlobal("ASPxClientHtmlEditor.HighlightText")
-  @js.native
-  def HighlightText(text: String, searchContainer: js.Any, color: js.UndefOr[scala.Nothing], backgroundColor: String): Unit = js.native
-  @JSGlobal("ASPxClientHtmlEditor.HighlightText")
-  @js.native
-  def HighlightText(text: String, searchContainer: js.Any, color: String): Unit = js.native
-  @JSGlobal("ASPxClientHtmlEditor.HighlightText")
-  @js.native
-  def HighlightText(text: String, searchContainer: js.Any, color: String, backgroundColor: String): Unit = js.native
+  @scala.inline
+  def HighlightText(text: String, searchContainer: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def HighlightText(text: String, searchContainer: js.Any, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def HighlightText(text: String, searchContainer: js.Any, color: String, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def HighlightText(text: String, searchContainer: js.Any, color: Unit, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,15 +2,13 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewClickEvent extends StObject {
   
-  var attachmentCardView: AttachmentCardView = js.native
+  var attachmentCardView: AttachmentCardView
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
 }
 object PreviewClickEvent {
   

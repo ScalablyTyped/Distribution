@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.GameObjectCreator")
 @js.native
 class GameObjectCreator protected ()
-  extends typings.phaser.Phaser.GameObjects.GameObjectCreator {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.GameObjectCreator {
   /**
     * 
     * @param scene The Scene to which this Game Object Factory belongs.

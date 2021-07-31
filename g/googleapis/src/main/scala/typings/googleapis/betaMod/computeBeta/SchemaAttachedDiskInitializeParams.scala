@@ -3,7 +3,6 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,25 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mutually exclusive with the source property; you can only define one or the
   * other, but not both.
   */
-@js.native
 trait SchemaAttachedDiskInitializeParams extends StObject {
   
   /**
     * An optional description. Provide this property when creating the disk.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the disk name. If not specified, the default is to use the name
     * of the instance. If the disk with the instance name exists already in the
     * given zone/region, a new name will be automatically generated.
     */
-  var diskName: js.UndefOr[String] = js.native
+  var diskName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the size of the disk in base-2 GB.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the disk type to use to create the instance. If not specified,
@@ -45,7 +43,7 @@ trait SchemaAttachedDiskInitializeParams extends StObject {
     * zones/zone/diskTypes/diskType  Note that for InstanceTemplate, this is
     * the name of the disk type, not URL.
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of features to enable on the guest operating system. Applicable
@@ -53,14 +51,14 @@ trait SchemaAttachedDiskInitializeParams extends StObject {
     * to see a list of available options.  Guest OS features are applied by
     * merging initializeParams.guestOsFeatures and disks.guestOsFeatures
     */
-  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.undefined
   
   /**
     * Labels to apply to this disk. These can be later modified by the
     * disks.setLabels method. This field is only applicable for persistent
     * disks.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The source image to create this disk. When creating a new instance, one
@@ -78,7 +76,7 @@ trait SchemaAttachedDiskInitializeParams extends StObject {
     * family/family-name: global/images/family/my-image-family   If the source
     * image is deleted later, this field will not be set.
     */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source image. Required if the
@@ -87,7 +85,7 @@ trait SchemaAttachedDiskInitializeParams extends StObject {
     * create disks for instances in a managed instance group if the source
     * images are encrypted with your own keys.
     */
-  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
 }
 object SchemaAttachedDiskInitializeParams {
   

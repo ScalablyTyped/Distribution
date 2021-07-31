@@ -4,7 +4,6 @@ import typings.vscode.Thenable
 import typings.vscode.anon.UndoStopAfter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,9 +48,9 @@ trait TextEditor extends StObject {
     * that the snippet is completely filled-in or accepted.
     */
   def insertSnippet(snippet: SnippetString): Thenable[Boolean] = js.native
-  def insertSnippet(snippet: SnippetString, location: js.UndefOr[scala.Nothing], options: UndoStopAfter): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: js.Array[Position | Range]): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: js.Array[Position | Range], options: UndoStopAfter): Thenable[Boolean] = js.native
+  def insertSnippet(snippet: SnippetString, location: Unit, options: UndoStopAfter): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: Position): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: Position, options: UndoStopAfter): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: Range): Thenable[Boolean] = js.native

@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the payment data requested in
   * [[PaymentDataRequest|`PaymentDataRequest`]]
   */
-@js.native
 trait PaymentData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PaymentData extends StObject {
     * This value will match what was set in
     * [[PaymentDataRequest.apiVersion|`PaymentDataRequest.apiVersion`]].
     */
-  var apiVersion: Double = js.native
+  var apiVersion: Double
   
   /**
     * Minor API version.
@@ -28,7 +26,7 @@ trait PaymentData extends StObject {
     * This value will match what was set in
     * [[PaymentDataRequest.apiVersionMinor|`PaymentDataRequest.apiVersionMinor`]].
     */
-  var apiVersionMinor: Double = js.native
+  var apiVersionMinor: Double
   
   /**
     * The buyer's email.
@@ -37,12 +35,12 @@ trait PaymentData extends StObject {
     * [[PaymentDataRequest.emailRequired|`PaymentDataRequest.emailRequired`]]
     * was set to `true`.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Data about the selected payment method.
     */
-  var paymentMethodData: PaymentMethodData = js.native
+  var paymentMethodData: PaymentMethodData
   
   /**
     * The shipping address.
@@ -51,12 +49,12 @@ trait PaymentData extends StObject {
     * [[PaymentDataRequest.shippingAddressRequired|`PaymentDataRequest.shippingAddressRequired`]]
     * was set to `true`.
     */
-  var shippingAddress: js.UndefOr[Address] = js.native
+  var shippingAddress: js.UndefOr[Address] = js.undefined
   
   /**
     * Contains the data for shipping option selected by the user.
     */
-  var shippingOptionData: js.UndefOr[SelectionOptionData] = js.native
+  var shippingOptionData: js.UndefOr[SelectionOptionData] = js.undefined
 }
 object PaymentData {
   

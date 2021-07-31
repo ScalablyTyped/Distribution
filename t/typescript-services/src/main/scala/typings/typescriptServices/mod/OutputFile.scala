@@ -2,13 +2,13 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "OutputFile")
 @js.native
 class OutputFile protected ()
-  extends typings.typescriptServices.TypeScript.OutputFile {
+  extends StObject
+     with typings.typescriptServices.TypeScript.OutputFile {
   def this(
     name: String,
     writeByteOrderMark: Boolean,
@@ -22,4 +22,19 @@ class OutputFile protected ()
     fileType: typings.typescriptServices.TypeScript.OutputFileType,
     sourceMapEntries: js.Array[typings.typescriptServices.TypeScript.SourceMapEntry]
   ) = this()
+  
+  /* CompleteClass */
+  var fileType: typings.typescriptServices.TypeScript.OutputFileType = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var sourceMapEntries: js.Array[typings.typescriptServices.TypeScript.SourceMapEntry] = js.native
+  
+  /* CompleteClass */
+  var text: String = js.native
+  
+  /* CompleteClass */
+  var writeByteOrderMark: Boolean = js.native
 }

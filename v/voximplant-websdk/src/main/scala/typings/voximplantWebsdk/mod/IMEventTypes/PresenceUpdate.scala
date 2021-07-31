@@ -4,34 +4,34 @@ import typings.voximplantWebsdk.mod.UserStatuses
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when self presence updated
   */
-@js.native
-trait PresenceUpdate extends VoxImplantIMEvent {
+trait PresenceUpdate
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    Status message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     *    Current presence status
     */
-  var presence: UserStatuses = js.native
+  var presence: UserStatuses
   
   /**
     *    Resource name
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object PresenceUpdate {
   

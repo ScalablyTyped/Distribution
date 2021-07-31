@@ -4,15 +4,13 @@ import typings.angularCompiler.outputAstMod.ExpressionType_
 import typings.angularCompiler.outputAstMod.InvokeFunctionExpr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expression extends StObject {
   
-  var expression: InvokeFunctionExpr = js.native
+  var expression: InvokeFunctionExpr
   
-  var `type`: ExpressionType_ = js.native
+  var `type`: ExpressionType_
 }
 object Expression {
   

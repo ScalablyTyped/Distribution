@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockedCookieWithReason extends StObject {
   
   /**
     * The reason(s) the cookie was blocked.
     */
-  var blockedReasons: js.Array[CookieBlockedReason] = js.native
+  var blockedReasons: js.Array[CookieBlockedReason]
   
   /**
     * The cookie object representing the cookie which was not sent.
     */
-  var cookie: Cookie = js.native
+  var cookie: Cookie
 }
 object BlockedCookieWithReason {
   

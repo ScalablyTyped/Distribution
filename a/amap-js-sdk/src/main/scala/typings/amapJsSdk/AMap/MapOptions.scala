@@ -2,63 +2,61 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var animateEnable: js.UndefOr[Boolean] = js.native
+  var animateEnable: js.UndefOr[Boolean] = js.undefined
   
-  var center: js.UndefOr[LngLat] = js.native
+  var center: js.UndefOr[LngLat] = js.undefined
   
-  var crs: js.UndefOr[String] = js.native
+  var crs: js.UndefOr[String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var defaultLayer: js.UndefOr[TileLayer] = js.native
+  var defaultLayer: js.UndefOr[TileLayer] = js.undefined
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dragEnable: js.UndefOr[Boolean] = js.native
+  var dragEnable: js.UndefOr[Boolean] = js.undefined
   
-  var expandZoomRange: js.UndefOr[Boolean] = js.native
+  var expandZoomRange: js.UndefOr[Boolean] = js.undefined
   
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
-  var indoorMap: js.UndefOr[IndoorMap] = js.native
+  var indoorMap: js.UndefOr[IndoorMap] = js.undefined
   
-  var isHotspot: js.UndefOr[Boolean] = js.native
+  var isHotspot: js.UndefOr[Boolean] = js.undefined
   
-  var jogEnable: js.UndefOr[Boolean] = js.native
+  var jogEnable: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardEnable: js.UndefOr[Boolean] = js.native
+  var keyboardEnable: js.UndefOr[Boolean] = js.undefined
   
-  var labelzIndex: js.UndefOr[Double] = js.native
+  var labelzIndex: js.UndefOr[Double] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var layers: js.UndefOr[js.Array[TileLayer]] = js.native
+  var layers: js.UndefOr[js.Array[TileLayer]] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var mapStyle: js.UndefOr[String] = js.native
+  var mapStyle: js.UndefOr[String] = js.undefined
   
-  var resizeEnable: js.UndefOr[Boolean] = js.native
+  var resizeEnable: js.UndefOr[Boolean] = js.undefined
   
-  var rotateEnable: js.UndefOr[Boolean] = js.native
+  var rotateEnable: js.UndefOr[Boolean] = js.undefined
   
-  var scrollWheel: js.UndefOr[Boolean] = js.native
+  var scrollWheel: js.UndefOr[Boolean] = js.undefined
   
-  var showIndoorMap: js.UndefOr[Boolean] = js.native
+  var showIndoorMap: js.UndefOr[Boolean] = js.undefined
   
-  var touchZoom: js.UndefOr[Boolean] = js.native
+  var touchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var view: js.UndefOr[View2D] = js.native
+  var view: js.UndefOr[View2D] = js.undefined
   
-  var zoomEnable: js.UndefOr[Boolean] = js.native
+  var zoomEnable: js.UndefOr[Boolean] = js.undefined
   
-  var zooms: js.UndefOr[js.Array[Double]] = js.native
+  var zooms: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object MapOptions {
   

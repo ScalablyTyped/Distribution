@@ -2,41 +2,39 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputConfiguration extends StObject {
   
   /**
     * The time the input was created.
     */
-  var creationTime: Timestamp = js.native
+  var creationTime: Timestamp
   
   /**
     * The ARN of the input.
     */
-  var inputArn: InputArn = js.native
+  var inputArn: InputArn
   
   /**
     * A brief description of the input.
     */
-  var inputDescription: js.UndefOr[InputDescription] = js.native
+  var inputDescription: js.UndefOr[InputDescription] = js.undefined
   
   /**
     * The name of the input.
     */
-  var inputName: InputName = js.native
+  var inputName: InputName
   
   /**
     * The last time the input was updated.
     */
-  var lastUpdateTime: Timestamp = js.native
+  var lastUpdateTime: Timestamp
   
   /**
     * The status of the input.
     */
-  var status: InputStatus = js.native
+  var status: InputStatus
 }
 object InputConfiguration {
   

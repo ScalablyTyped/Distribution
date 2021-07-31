@@ -2,17 +2,15 @@ package typings.vscodeLanguageclient.clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageTransports extends StObject {
   
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
-  var reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader = js.native
+  var reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader
   
-  var writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter = js.native
+  var writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
 }
 object MessageTransports {
   
@@ -25,9 +23,12 @@ object MessageTransports {
     __obj.asInstanceOf[MessageTransports]
   }
   
-  @JSImport("vscode-languageclient/lib/client", "MessageTransports.is")
+  @JSImport("vscode-languageclient/lib/client", "MessageTransports")
   @js.native
-  def is(value: js.Any): /* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean]
   
   @scala.inline
   implicit class MessageTransportsMutableBuilder[Self <: MessageTransports] (val x: Self) extends AnyVal {

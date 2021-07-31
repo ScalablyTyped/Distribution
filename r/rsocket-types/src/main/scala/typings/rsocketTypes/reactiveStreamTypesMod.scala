@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactiveStreamTypesMod {
@@ -18,14 +17,13 @@ object reactiveStreamTypesMod {
     def subscribe(subscriber: Partial[ISubscriber[T]]): Unit = js.native
   }
   
-  @js.native
   trait ISubject[T] extends StObject {
     
-    def onComplete(): Unit = js.native
+    def onComplete(): Unit
     
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
-    def onNext(value: T): Unit = js.native
+    def onNext(value: T): Unit
   }
   object ISubject {
     
@@ -36,7 +34,7 @@ object reactiveStreamTypesMod {
     }
     
     @scala.inline
-    implicit class ISubjectMutableBuilder[Self <: ISubject[_], T] (val x: Self with ISubject[T]) extends AnyVal {
+    implicit class ISubjectMutableBuilder[Self <: ISubject[?], T] (val x: Self & ISubject[T]) extends AnyVal {
       
       @scala.inline
       def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
@@ -49,16 +47,15 @@ object reactiveStreamTypesMod {
     }
   }
   
-  @js.native
   trait ISubscriber[T] extends StObject {
     
-    def onComplete(): Unit = js.native
+    def onComplete(): Unit
     
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
-    def onNext(value: T): Unit = js.native
+    def onNext(value: T): Unit
     
-    def onSubscribe(subscription: ISubscription): Unit = js.native
+    def onSubscribe(subscription: ISubscription): Unit
   }
   object ISubscriber {
     
@@ -74,7 +71,7 @@ object reactiveStreamTypesMod {
     }
     
     @scala.inline
-    implicit class ISubscriberMutableBuilder[Self <: ISubscriber[_], T] (val x: Self with ISubscriber[T]) extends AnyVal {
+    implicit class ISubscriberMutableBuilder[Self <: ISubscriber[?], T] (val x: Self & ISubscriber[T]) extends AnyVal {
       
       @scala.inline
       def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
@@ -90,12 +87,11 @@ object reactiveStreamTypesMod {
     }
   }
   
-  @js.native
   trait ISubscription extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def request(n: Double): Unit = js.native
+    def request(n: Double): Unit
   }
   object ISubscription {
     

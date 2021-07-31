@@ -4,15 +4,15 @@ import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.util.IMixedCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPropGridProperty extends IModel {
+trait IPropGridProperty
+  extends StObject
+     with IModel {
   
   /** [Property] (Ext.util.MixedCollection) */
   @JSName("fields")
-  var fields_IPropGridProperty: js.UndefOr[IMixedCollection] = js.native
+  var fields_IPropGridProperty: js.UndefOr[IMixedCollection] = js.undefined
 }
 object IPropGridProperty {
   

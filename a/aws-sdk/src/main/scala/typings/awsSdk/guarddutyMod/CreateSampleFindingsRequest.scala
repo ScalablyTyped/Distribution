@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSampleFindingsRequest extends StObject {
   
   /**
     * The ID of the detector to create sample findings for.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The types of sample findings to generate.
     */
-  var FindingTypes: js.UndefOr[typings.awsSdk.guarddutyMod.FindingTypes] = js.native
+  var FindingTypes: js.UndefOr[typings.awsSdk.guarddutyMod.FindingTypes] = js.undefined
 }
 object CreateSampleFindingsRequest {
   

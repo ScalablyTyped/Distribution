@@ -2,23 +2,22 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Super
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
   @JSName("type")
-  var type_Super: typings.estree.estreeStrings.Super = js.native
+  var type_Super: typings.estree.estreeStrings.Super
 }
 object Super {
   
   @scala.inline
-  def apply(`type`: typings.estree.estreeStrings.Super): Super = {
+  def apply(): Super = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Super")
     __obj.asInstanceOf[Super]
   }
   

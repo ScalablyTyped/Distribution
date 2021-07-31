@@ -2,26 +2,24 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleExportDetails extends StObject {
   
   /**
     * Absolute address.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * Exported symbol name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The kind of export.
     */
-  var `type`: ModuleExportType = js.native
+  var `type`: ModuleExportType
 }
 object ModuleExportDetails {
   

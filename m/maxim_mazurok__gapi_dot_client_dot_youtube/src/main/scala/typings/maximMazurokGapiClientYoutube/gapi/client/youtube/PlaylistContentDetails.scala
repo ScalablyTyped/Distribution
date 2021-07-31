@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistContentDetails extends StObject {
   
   /** The number of videos in the playlist. */
-  var itemCount: js.UndefOr[Double] = js.native
+  var itemCount: js.UndefOr[Double] = js.undefined
 }
 object PlaylistContentDetails {
   

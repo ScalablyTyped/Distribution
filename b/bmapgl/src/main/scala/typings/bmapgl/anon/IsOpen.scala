@@ -2,17 +2,15 @@ package typings.bmapgl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsOpen extends StObject {
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object IsOpen {
   

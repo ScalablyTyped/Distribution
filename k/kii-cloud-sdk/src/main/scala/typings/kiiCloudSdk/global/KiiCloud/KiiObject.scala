@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiObject")
 @js.native
 class KiiObject ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiObject
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiObject
 object KiiObject {
+  
+  @JSGlobal("KiiCloud.KiiObject")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Check if given ID is valid for object ID.
@@ -23,9 +27,8 @@ object KiiObject {
     * @return true if given ID is valid, false otherwise.
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiObject.isValidObjectID")
-  @js.native
-  def isValidObjectID(objectID: String): Boolean = js.native
+  @scala.inline
+  def isValidObjectID(objectID: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidObjectID")(objectID.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Generate a new KiiObject based on a given URI
@@ -40,7 +43,6 @@ object KiiObject {
     *     var group = new KiiObject.objectWithURI("kiicloud://myuri");
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiObject.objectWithURI")
-  @js.native
-  def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = js.native
+  @scala.inline
+  def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = ^.asInstanceOf[js.Dynamic].applyDynamic("objectWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiObject]
 }

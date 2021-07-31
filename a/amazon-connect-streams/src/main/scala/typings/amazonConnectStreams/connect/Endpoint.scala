@@ -2,25 +2,23 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
-  val agentLogin: String = js.native
+  val agentLogin: String
   
-  val endpointARN: String = js.native
+  val endpointARN: String
   
-  val endpointId: String = js.native
+  val endpointId: String
   
-  val name: String = js.native
+  val name: String
   
-  val phoneNumber: String = js.native
+  val phoneNumber: String
   
-  val queue: String = js.native
+  val queue: String
   
-  val `type`: EndpointType = js.native
+  val `type`: EndpointType
 }
 object Endpoint {
   

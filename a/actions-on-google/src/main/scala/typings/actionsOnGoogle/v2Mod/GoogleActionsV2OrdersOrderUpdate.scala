@@ -3,10 +3,8 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersOrderUpdate extends StObject {
   
   /**
@@ -14,81 +12,81 @@ trait GoogleActionsV2OrdersOrderUpdate extends StObject {
     * If integrators don't generate the canonical order id in their system,
     * they can simply copy over google_order_id included in order.
     */
-  var actionOrderId: js.UndefOr[String] = js.native
+  var actionOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about cancellation state.
     */
-  var cancellationInfo: js.UndefOr[GoogleActionsV2OrdersCancellationInfo] = js.native
+  var cancellationInfo: js.UndefOr[GoogleActionsV2OrdersCancellationInfo] = js.undefined
   
   /**
     * Information about fulfillment state.
     */
-  var fulfillmentInfo: js.UndefOr[GoogleActionsV2OrdersFulfillmentInfo] = js.native
+  var fulfillmentInfo: js.UndefOr[GoogleActionsV2OrdersFulfillmentInfo] = js.undefined
   
   /**
     * Id of the order is the Google-issued id.
     */
-  var googleOrderId: js.UndefOr[String] = js.native
+  var googleOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about in transit state.
     */
-  var inTransitInfo: js.UndefOr[GoogleActionsV2OrdersInTransitInfo] = js.native
+  var inTransitInfo: js.UndefOr[GoogleActionsV2OrdersInTransitInfo] = js.undefined
   
   /**
     * Extra data based on a custom order state or in addition to info of a
     * standard state.
     */
-  var infoExtension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var infoExtension: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Map of line item-level changes, keyed by item id. Optional.
     */
-  var lineItemUpdates: js.UndefOr[ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]] = js.native
+  var lineItemUpdates: js.UndefOr[ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]] = js.undefined
   
   /**
     * Updated applicable management actions for the order, e.g. manage, modify,
     * contact support.
     */
-  var orderManagementActions: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderUpdateAction]] = js.native
+  var orderManagementActions: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderUpdateAction]] = js.undefined
   
   /**
     * The new state of the order.
     */
-  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.native
+  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.undefined
   
   /**
     * Receipt for order.
     */
-  var receipt: js.UndefOr[GoogleActionsV2OrdersReceipt] = js.native
+  var receipt: js.UndefOr[GoogleActionsV2OrdersReceipt] = js.undefined
   
   /**
     * Information about rejection state.
     */
-  var rejectionInfo: js.UndefOr[GoogleActionsV2OrdersRejectionInfo] = js.native
+  var rejectionInfo: js.UndefOr[GoogleActionsV2OrdersRejectionInfo] = js.undefined
   
   /**
     * Information about returned state.
     */
-  var returnInfo: js.UndefOr[GoogleActionsV2OrdersReturnInfo] = js.native
+  var returnInfo: js.UndefOr[GoogleActionsV2OrdersReturnInfo] = js.undefined
   
   /**
     * New total price of the order
     */
-  var totalPrice: js.UndefOr[GoogleActionsV2OrdersPrice] = js.native
+  var totalPrice: js.UndefOr[GoogleActionsV2OrdersPrice] = js.undefined
   
   /**
     * When the order was updated from the app's perspective.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, displays a notification to the user with the specified
     * title and text. Specifying a notification is a suggestion to
     * notify and is not guaranteed to result in a notification.
     */
-  var userNotification: js.UndefOr[GoogleActionsV2OrdersOrderUpdateUserNotification] = js.native
+  var userNotification: js.UndefOr[GoogleActionsV2OrdersOrderUpdateUserNotification] = js.undefined
 }
 object GoogleActionsV2OrdersOrderUpdate {
   
@@ -132,7 +130,7 @@ object GoogleActionsV2OrdersOrderUpdate {
     def setInTransitInfoUndefined: Self = StObject.set(x, "inTransitInfo", js.undefined)
     
     @scala.inline
-    def setInfoExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "infoExtension", value.asInstanceOf[js.Any])
+    def setInfoExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "infoExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInfoExtensionUndefined: Self = StObject.set(x, "infoExtension", js.undefined)

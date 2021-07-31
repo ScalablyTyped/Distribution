@@ -2,30 +2,28 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLDialog extends StObject {
   
   @JSName("MSHTML.HTMLDialog_typekey")
-  var MSHTMLDotHTMLDialog_typekey: HTMLDialog = js.native
+  var MSHTMLDotHTMLDialog_typekey: HTMLDialog
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  val dialogArguments: js.Any = js.native
+  val dialogArguments: js.Any
   
-  var dialogHeight: js.Any = js.native
+  var dialogHeight: js.Any
   
-  var dialogLeft: js.Any = js.native
+  var dialogLeft: js.Any
   
-  var dialogTop: js.Any = js.native
+  var dialogTop: js.Any
   
-  var dialogWidth: js.Any = js.native
+  var dialogWidth: js.Any
   
-  val menuArguments: js.Any = js.native
+  val menuArguments: js.Any
   
-  var returnValue: js.Any = js.native
+  var returnValue: js.Any
 }
 object HTMLDialog {
   

@@ -2,17 +2,15 @@ package typings.reactCollapse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Collapse extends StObject {
     
-    var collapse: js.UndefOr[String] = js.native
+    var collapse: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
   }
   object Collapse {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var overflow: js.UndefOr[String] = js.native
+    var overflow: js.UndefOr[String] = js.undefined
   }
   object Height {
     

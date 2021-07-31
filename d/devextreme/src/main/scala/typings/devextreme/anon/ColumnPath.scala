@@ -2,21 +2,19 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnPath extends StObject {
   
-  var columnPath: js.UndefOr[js.Array[String | Double | typings.std.Date]] = js.native
+  var columnPath: js.UndefOr[js.Array[String | Double | typings.std.Date]] = js.undefined
   
-  var customColumns: js.UndefOr[js.Array[String]] = js.native
+  var customColumns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dataIndex: js.UndefOr[Double] = js.native
+  var dataIndex: js.UndefOr[Double] = js.undefined
   
-  var maxRowCount: js.UndefOr[Double] = js.native
+  var maxRowCount: js.UndefOr[Double] = js.undefined
   
-  var rowPath: js.UndefOr[js.Array[String | Double | typings.std.Date]] = js.native
+  var rowPath: js.UndefOr[js.Array[String | Double | typings.std.Date]] = js.undefined
 }
 object ColumnPath {
   

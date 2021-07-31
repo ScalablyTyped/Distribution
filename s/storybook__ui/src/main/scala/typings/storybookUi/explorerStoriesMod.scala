@@ -6,10 +6,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.explorerMod.ExplorerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object explorerStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -42,11 +45,9 @@ object explorerStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "Simple")
-  @js.native
-  def Simple(): Element = js.native
+  @scala.inline
+  def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "WithRefs")
-  @js.native
-  def WithRefs(): Element = js.native
+  @scala.inline
+  def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
 }

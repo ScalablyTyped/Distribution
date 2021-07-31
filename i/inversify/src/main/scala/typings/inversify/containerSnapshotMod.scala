@@ -5,7 +5,6 @@ import typings.inversify.interfacesMod.interfaces.Lookup
 import typings.inversify.interfacesMod.interfaces.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerSnapshotMod {
@@ -13,15 +12,25 @@ object containerSnapshotMod {
   @JSImport("inversify/dts/container/container_snapshot", "ContainerSnapshot")
   @js.native
   class ContainerSnapshot ()
-    extends typings.inversify.interfacesMod.interfaces.ContainerSnapshot
+    extends StObject
+       with typings.inversify.interfacesMod.interfaces.ContainerSnapshot {
+    
+    /* CompleteClass */
+    var bindings: Lookup[Binding[js.Any]] = js.native
+    
+    /* CompleteClass */
+    var middleware: Next | Null = js.native
+  }
   object ContainerSnapshot {
     
+    @JSImport("inversify/dts/container/container_snapshot", "ContainerSnapshot")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("inversify/dts/container/container_snapshot", "ContainerSnapshot.of")
-    @js.native
-    def of(bindings: Lookup[Binding[_]]): ContainerSnapshot = js.native
-    @JSImport("inversify/dts/container/container_snapshot", "ContainerSnapshot.of")
-    @js.native
-    def of(bindings: Lookup[Binding[_]], middleware: Next): ContainerSnapshot = js.native
+    @scala.inline
+    def of(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any]).asInstanceOf[ContainerSnapshot]
+    @scala.inline
+    def of(bindings: Lookup[Binding[js.Any]], middleware: Next): ContainerSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[ContainerSnapshot]
   }
 }

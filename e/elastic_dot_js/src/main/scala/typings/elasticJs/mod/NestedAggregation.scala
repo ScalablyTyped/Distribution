@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "NestedAggregation")
 @js.native
-class NestedAggregation protected () extends Aggregation {
+class NestedAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     A special single bucket aggregation that enables aggregating nested
     documents.

@@ -8,7 +8,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safeAnchorMod {
@@ -22,13 +21,14 @@ object safeAnchorMod {
   trait SafeAnchor
     extends Component[SafeAnchorProps, js.Object, js.Any]
   
-  @js.native
-  trait SafeAnchorProps extends HTMLProps[SafeAnchor] {
+  trait SafeAnchorProps
+    extends StObject
+       with HTMLProps[SafeAnchor] {
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     @JSName("onClick")
-    var onClick_SafeAnchorProps: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onClick_SafeAnchorProps: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   }
   object SafeAnchorProps {
     
@@ -42,7 +42,7 @@ object safeAnchorMod {
     implicit class SafeAnchorPropsMutableBuilder[Self <: SafeAnchorProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

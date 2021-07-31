@@ -2,17 +2,15 @@ package typings.log4javascript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppendResult extends StObject {
     
-    var appendResult: Boolean = js.native
+    var appendResult: Boolean
     
-    var isError: Boolean = js.native
+    var isError: Boolean
   }
   object AppendResult {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     

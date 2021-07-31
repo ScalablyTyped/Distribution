@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfig extends StObject {
   
   /** Event types for which a notification is desired. If empty, send notifications for all event types. */
-  var eventTypes: js.UndefOr[js.Array[String]] = js.native
+  var eventTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The desired format of the notification message payloads. */
-  var payloadFormat: js.UndefOr[String] = js.native
+  var payloadFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The `Topic.name` of the Cloud Pub/Sub topic to which to publish notifications. Must be of the format: `projects/{project}/topics/{topic}`. Not matching this format will
     * result in an INVALID_ARGUMENT error.
     */
-  var pubsubTopic: js.UndefOr[String] = js.native
+  var pubsubTopic: js.UndefOr[String] = js.undefined
 }
 object NotificationConfig {
   

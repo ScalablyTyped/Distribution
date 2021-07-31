@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketizedCount extends StObject {
   
   /** Number of jobs whose numeric field value fall into `range`. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** Bucket range on which histogram was performed for the numeric field, that is, the count represents number of jobs in this range. */
-  var range: js.UndefOr[BucketRange] = js.native
+  var range: js.UndefOr[BucketRange] = js.undefined
 }
 object BucketizedCount {
   

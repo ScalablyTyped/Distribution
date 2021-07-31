@@ -2,36 +2,34 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProfilingGroupRequest extends StObject {
   
   /**
     *  Specifies whether profiling is enabled or disabled for the created profiling group. 
     */
-  var agentOrchestrationConfig: js.UndefOr[AgentOrchestrationConfig] = js.native
+  var agentOrchestrationConfig: js.UndefOr[AgentOrchestrationConfig] = js.undefined
   
   /**
     *  Amazon CodeGuru Profiler uses this universally unique identifier (UUID) to prevent the accidental creation of duplicate profiling groups if there are failures and retries. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     *  The compute platform of the profiling group. Use AWSLambda if your application runs on AWS Lambda. Use Default if your application runs on a compute platform that is not AWS Lambda, such an Amazon EC2 instance, an on-premises server, or a different platform. If not specified, Default is used. 
     */
-  var computePlatform: js.UndefOr[ComputePlatform] = js.native
+  var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   
   /**
     * The name of the profiling group to create.
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
   
   /**
     *  A list of tags to add to the created profiling group. 
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateProfilingGroupRequest {
   

@@ -1,42 +1,40 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.closed
+import typings.octokitTypes.octokitTypesStrings.inertia
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  org :string,   state :'open' | 'closed' | 'all' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsListForOrgEndpoint extends StObject {
-  
-  var mediaType: `7` = js.native
+trait ProjectsListForOrgEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the state of the projects to return. Can be either `open`, `closed`, or `all`.
     */
-  var state: js.UndefOr[open | closed | all] = js.native
+  var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object ProjectsListForOrgEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, org_ : String): ProjectsListForOrgEndpoint = {
+  def apply(mediaType: `0`[inertia], org_ : String): ProjectsListForOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListForOrgEndpoint]
@@ -44,9 +42,6 @@ object ProjectsListForOrgEndpoint {
   
   @scala.inline
   implicit class ProjectsListForOrgEndpointMutableBuilder[Self <: ProjectsListForOrgEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])

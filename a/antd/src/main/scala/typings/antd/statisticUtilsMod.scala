@@ -3,23 +3,25 @@ package typings.antd
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticUtilsMod {
   
-  @JSImport("antd/lib/statistic/utils", "formatCountdown")
+  @JSImport("antd/lib/statistic/utils", JSImport.Namespace)
   @js.native
-  def formatCountdown(value: countdownValueType, config: CountdownFormatConfig): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/statistic/utils", "formatTimeStr")
-  @js.native
-  def formatTimeStr(duration: Double, format: String): String = js.native
+  @scala.inline
+  def formatCountdown(value: countdownValueType, config: CountdownFormatConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCountdown")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
-  trait CountdownFormatConfig extends FormatConfig {
+  @scala.inline
+  def formatTimeStr(duration: Double, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimeStr")(duration.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  trait CountdownFormatConfig
+    extends StObject
+       with FormatConfig {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object CountdownFormatConfig {
     
@@ -40,18 +42,17 @@ object statisticUtilsMod {
     }
   }
   
-  @js.native
   trait FormatConfig extends StObject {
     
-    var decimalSeparator: js.UndefOr[String] = js.native
+    var decimalSeparator: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[Formatter] = js.native
+    var formatter: js.UndefOr[Formatter] = js.undefined
     
-    var groupSeparator: js.UndefOr[String] = js.native
+    var groupSeparator: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object FormatConfig {
     

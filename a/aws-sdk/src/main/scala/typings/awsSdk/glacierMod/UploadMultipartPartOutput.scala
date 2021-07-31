@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadMultipartPartOutput extends StObject {
   
   /**
     * The SHA256 tree hash that Amazon S3 Glacier computed for the uploaded part.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
 }
 object UploadMultipartPartOutput {
   

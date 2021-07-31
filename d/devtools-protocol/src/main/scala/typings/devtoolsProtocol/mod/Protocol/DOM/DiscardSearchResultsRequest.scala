@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscardSearchResultsRequest extends StObject {
   
   /**
     * Unique search session identifier.
     */
-  var searchId: String = js.native
+  var searchId: String
 }
 object DiscardSearchResultsRequest {
   

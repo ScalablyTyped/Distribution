@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Kubernetes master through HTTPS except traffic from the given CIDR blocks,
   * Google Compute Engine Public IPs and Google Prod IPs.
   */
-@js.native
 trait SchemaMasterAuthorizedNetworksConfig extends StObject {
   
   /**
     * cidr_blocks define up to 10 external networks that could access
     * Kubernetes master through HTTPS.
     */
-  var cidrBlocks: js.UndefOr[js.Array[SchemaCidrBlock]] = js.native
+  var cidrBlocks: js.UndefOr[js.Array[SchemaCidrBlock]] = js.undefined
   
   /**
     * Whether or not master authorized networks is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMasterAuthorizedNetworksConfig {
   

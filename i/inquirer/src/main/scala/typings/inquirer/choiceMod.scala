@@ -4,7 +4,6 @@ import typings.inquirer.mod.Answers
 import typings.inquirer.mod.CheckboxChoiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choiceMod {
@@ -17,7 +16,9 @@ object choiceMod {
     */
   @JSImport("inquirer/lib/objects/choice", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Answers */] protected () extends Choice[T] {
+  class ^[T /* <: Answers */] protected ()
+    extends StObject
+       with Choice[T] {
     /**
       * Initializes a new instance of the `Choice` class.
       *
@@ -28,6 +29,27 @@ object choiceMod {
       * An object which contains the answers to the questions.
       */
     def this(value: js.Any, answers: T) = this()
+    
+    /**
+      * @inheritdoc
+      */
+    /* CompleteClass */
+    @JSName("disabled")
+    var disabled_Choice: Boolean = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    /* CompleteClass */
+    @JSName("name")
+    var name_Choice: String = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    /* CompleteClass */
+    @JSName("short")
+    var short_Choice: String = js.native
   }
   
   /**
@@ -39,33 +61,34 @@ object choiceMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.inquirer.mod.ChoiceBase because Already inherited
   - typings.inquirer.mod.ChoiceOptions because Already inherited
-  - typings.inquirer.mod.ExpandChoiceOptions because var conflicts: extra, name, short, `type`, value. Inlined key */ @js.native
-  trait Choice[T /* <: Answers */] extends CheckboxChoiceOptions[T] {
+  - typings.inquirer.mod.ExpandChoiceOptions because var conflicts: extra, name, short, `type`, value. Inlined key */ trait Choice[T /* <: Answers */]
+    extends StObject
+       with CheckboxChoiceOptions[T] {
     
     /**
       * @inheritdoc
       */
     @JSName("disabled")
-    var disabled_Choice: Boolean = js.native
+    var disabled_Choice: Boolean
     
     /**
       * The key to press for selecting the choice.
       *
       * @inheritdoc
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * @inheritdoc
       */
     @JSName("name")
-    var name_Choice: String = js.native
+    var name_Choice: String
     
     /**
       * @inheritdoc
       */
     @JSName("short")
-    var short_Choice: String = js.native
+    var short_Choice: String
   }
   object Choice {
     
@@ -76,7 +99,7 @@ object choiceMod {
     }
     
     @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice[_], T /* <: Answers */] (val x: Self with Choice[T]) extends AnyVal {
+    implicit class ChoiceMutableBuilder[Self <: Choice[?], T /* <: Answers */] (val x: Self & Choice[T]) extends AnyVal {
       
       @scala.inline
       def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

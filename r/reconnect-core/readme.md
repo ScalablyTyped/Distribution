@@ -12,7 +12,7 @@ Generic stream reconnection module.
 | Keywords           | reconnect, core |
 | # releases         | 0 |
 | # dependents       | 45 |
-| # downloads        | 2335505 |
+| # downloads        | 2349507 |
 | # stars            | 4 |
 
 ## Links

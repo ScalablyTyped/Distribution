@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBgpFailoverTestRequest extends StObject {
   
   /**
     * The ID of the virtual interface you no longer want to test.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object StopBgpFailoverTestRequest {
   

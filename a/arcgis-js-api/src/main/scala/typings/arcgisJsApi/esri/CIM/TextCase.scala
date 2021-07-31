@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ object TextCase extends StObject {
     * Text is all upper case.
     */
   @js.native
-  sealed trait Allcaps extends TextCase
+  sealed trait Allcaps
+    extends StObject
+       with TextCase
   
   /**
     * Text is all lower case.
     */
   @js.native
-  sealed trait LowerCase extends TextCase
+  sealed trait LowerCase
+    extends StObject
+       with TextCase
   
   /**
     * Text is proper/mixed case.
     */
   @js.native
-  sealed trait Normal extends TextCase
+  sealed trait Normal
+    extends StObject
+       with TextCase
 }

@@ -7,59 +7,57 @@ import typings.vis.anon.To
 import typings.vis.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeOptions extends StObject {
   
-  var arrowStrikethrough: js.UndefOr[Boolean] = js.native
+  var arrowStrikethrough: js.UndefOr[Boolean] = js.undefined
   
-  var arrows: js.UndefOr[String | From] = js.native
+  var arrows: js.UndefOr[String | From] = js.undefined
   
-  var chosen: js.UndefOr[Boolean | typings.vis.anon.Edge] = js.native
+  var chosen: js.UndefOr[Boolean | typings.vis.anon.Edge] = js.undefined
   
-  var color: js.UndefOr[String | typings.vis.anon.Color] = js.native
+  var color: js.UndefOr[String | typings.vis.anon.Color] = js.undefined
   
-  var dashes: js.UndefOr[Boolean | js.Array[Double]] = js.native
+  var dashes: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
   
-  var endPointOffset: js.UndefOr[To] = js.native
+  var endPointOffset: js.UndefOr[To] = js.undefined
   
-  var font: js.UndefOr[String | Font] = js.native
+  var font: js.UndefOr[String | Font] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var hoverWidth: js.UndefOr[Double] = js.native
+  var hoverWidth: js.UndefOr[Double] = js.undefined
   
   // please note, hoverWidth could be also a function. This case is not represented here
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelHighlightBold: js.UndefOr[Boolean] = js.native
+  var labelHighlightBold: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var physics: js.UndefOr[Boolean] = js.native
+  var physics: js.UndefOr[Boolean] = js.undefined
   
-  var scaling: js.UndefOr[OptionsScaling] = js.native
+  var scaling: js.UndefOr[OptionsScaling] = js.undefined
   
-  var selectionWidth: js.UndefOr[Double] = js.native
+  var selectionWidth: js.UndefOr[Double] = js.undefined
   
-  var selfReference: js.UndefOr[Angle] = js.native
+  var selfReference: js.UndefOr[Angle] = js.undefined
   
   // please note, selectionWidth could be also a function. This case is not represented here
-  var selfReferenceSize: js.UndefOr[Double] = js.native
+  var selfReferenceSize: js.UndefOr[Double] = js.undefined
   
-  var shadow: js.UndefOr[Boolean | OptionsShadow] = js.native
+  var shadow: js.UndefOr[Boolean | OptionsShadow] = js.undefined
   
-  var smooth: js.UndefOr[Boolean | Enabled] = js.native
+  var smooth: js.UndefOr[Boolean | Enabled] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var widthConstraint: js.UndefOr[Double | Boolean | `0`] = js.native
+  var widthConstraint: js.UndefOr[Double | Boolean | `0`] = js.undefined
 }
 object EdgeOptions {
   

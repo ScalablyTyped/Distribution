@@ -6,7 +6,6 @@ import typings.grpcGrpcJs.filterMod.BaseFilter
 import typings.grpcGrpcJs.filterMod.FilterFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deadlineFilterMod {
@@ -27,9 +26,14 @@ object deadlineFilterMod {
   
   @JSImport("@grpc/grpc-js/build/src/deadline-filter", "DeadlineFilterFactory")
   @js.native
-  class DeadlineFilterFactory protected () extends FilterFactory[DeadlineFilter] {
+  class DeadlineFilterFactory protected ()
+    extends StObject
+       with FilterFactory[DeadlineFilter] {
     def this(channel: Channel) = this()
     
     val channel: js.Any = js.native
+    
+    /* CompleteClass */
+    override def createFilter(callStream: Call): DeadlineFilter = js.native
   }
 }

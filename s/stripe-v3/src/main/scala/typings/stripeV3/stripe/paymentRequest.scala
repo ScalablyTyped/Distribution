@@ -13,20 +13,18 @@ import typings.stripeV3.stripeV3Strings.success
 import typings.stripeV3.stripeV3Strings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Container for all payment request related types
 object paymentRequest {
   
-  @js.native
   trait DisplayItem extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var label: String = js.native
+    var label: String
     
-    var pending: js.UndefOr[Boolean] = js.native
+    var pending: js.UndefOr[Boolean] = js.undefined
   }
   object DisplayItem {
     
@@ -53,26 +51,25 @@ object paymentRequest {
     }
   }
   
-  @js.native
   trait ShippingAddress extends StObject {
     
-    var addressLine: js.Array[String] = js.native
+    var addressLine: js.Array[String]
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var dependentLocality: js.UndefOr[String] = js.native
+    var dependentLocality: js.UndefOr[String] = js.undefined
     
-    var phone: String = js.native
+    var phone: String
     
-    var postalCode: String = js.native
+    var postalCode: String
     
-    var recipient: String = js.native
+    var recipient: String
     
-    var region: String = js.native
+    var region: String
     
-    var sortingCode: js.UndefOr[String] = js.native
+    var sortingCode: js.UndefOr[String] = js.undefined
   }
   object ShippingAddress {
     
@@ -131,16 +128,15 @@ object paymentRequest {
     }
   }
   
-  @js.native
   trait ShippingOption extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var label: String = js.native
+    var label: String
   }
   object ShippingOption {
     
@@ -170,10 +166,11 @@ object paymentRequest {
     }
   }
   
-  @js.native
-  trait StripePaymentMethodPaymentResponse extends StripePaymentResponse {
+  trait StripePaymentMethodPaymentResponse
+    extends StObject
+       with StripePaymentResponse {
     
-    var paymentMethod: PaymentMethod = js.native
+    var paymentMethod: PaymentMethod
   }
   object StripePaymentMethodPaymentResponse {
     
@@ -223,18 +220,19 @@ object paymentRequest {
     def update(options: StripePaymentRequestUpdateOptions): Unit = js.native
   }
   
-  @js.native
-  trait StripePaymentRequestOptions extends StripePaymentRequestUpdateOptions {
+  trait StripePaymentRequestOptions
+    extends StObject
+       with StripePaymentRequestUpdateOptions {
     
-    var country: String = js.native
+    var country: String
     
-    var requestPayerEmail: js.UndefOr[Boolean] = js.native
+    var requestPayerEmail: js.UndefOr[Boolean] = js.undefined
     
-    var requestPayerName: js.UndefOr[Boolean] = js.native
+    var requestPayerName: js.UndefOr[Boolean] = js.undefined
     
-    var requestPayerPhone: js.UndefOr[Boolean] = js.native
+    var requestPayerPhone: js.UndefOr[Boolean] = js.undefined
     
-    var requestShipping: js.UndefOr[Boolean] = js.native
+    var requestShipping: js.UndefOr[Boolean] = js.undefined
   }
   object StripePaymentRequestOptions {
     
@@ -276,16 +274,15 @@ object paymentRequest {
     }
   }
   
-  @js.native
   trait StripePaymentRequestUpdateOptions extends StObject {
     
-    var currency: String = js.native
+    var currency: String
     
-    var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.native
+    var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined
     
-    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.native
+    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.undefined
     
-    var total: DisplayItem = js.native
+    var total: DisplayItem
   }
   object StripePaymentRequestUpdateOptions {
     
@@ -324,22 +321,21 @@ object paymentRequest {
     }
   }
   
-  @js.native
   trait StripePaymentResponse extends StObject {
     
-    def complete(status: String): Unit = js.native
+    def complete(status: String): Unit
     
-    var methodName: String = js.native
+    var methodName: String
     
-    var payerEmail: js.UndefOr[String] = js.native
+    var payerEmail: js.UndefOr[String] = js.undefined
     
-    var payerName: js.UndefOr[String] = js.native
+    var payerName: js.UndefOr[String] = js.undefined
     
-    var payerPhone: js.UndefOr[String] = js.native
+    var payerPhone: js.UndefOr[String] = js.undefined
     
-    var shippingAddress: js.UndefOr[ShippingAddress] = js.native
+    var shippingAddress: js.UndefOr[ShippingAddress] = js.undefined
     
-    var shippingOption: js.UndefOr[ShippingOption] = js.native
+    var shippingOption: js.UndefOr[ShippingOption] = js.undefined
   }
   object StripePaymentResponse {
     
@@ -390,10 +386,11 @@ object paymentRequest {
     }
   }
   
-  @js.native
-  trait StripeSourcePaymentResponse extends StripePaymentResponse {
+  trait StripeSourcePaymentResponse
+    extends StObject
+       with StripePaymentResponse {
     
-    var source: Source = js.native
+    var source: Source
   }
   object StripeSourcePaymentResponse {
     
@@ -411,10 +408,11 @@ object paymentRequest {
     }
   }
   
-  @js.native
-  trait StripeTokenPaymentResponse extends StripePaymentResponse {
+  trait StripeTokenPaymentResponse
+    extends StObject
+       with StripePaymentResponse {
     
-    var token: Token = js.native
+    var token: Token
   }
   object StripeTokenPaymentResponse {
     
@@ -432,16 +430,15 @@ object paymentRequest {
     }
   }
   
-  @js.native
   trait UpdateDetails extends StObject {
     
-    var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.native
+    var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined
     
-    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.native
+    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.undefined
     
-    var status: success | fail | invalid_shipping_address = js.native
+    var status: success | fail | invalid_shipping_address
     
-    var total: js.UndefOr[DisplayItem] = js.native
+    var total: js.UndefOr[DisplayItem] = js.undefined
   }
   object UpdateDetails {
     

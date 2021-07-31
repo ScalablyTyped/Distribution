@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteListenerInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the listener.
     */
-  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn = js.native
+  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn
 }
 object DeleteListenerInput {
   

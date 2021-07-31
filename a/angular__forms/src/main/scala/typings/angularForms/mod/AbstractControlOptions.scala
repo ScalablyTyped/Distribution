@@ -6,29 +6,27 @@ import typings.angularForms.angularFormsStrings.submit
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractControlOptions extends StObject {
   
   /**
     * @description
     * The list of async validators applied to control.
     */
-  var asyncValidators: js.UndefOr[AsyncValidatorFn | js.Array[AsyncValidatorFn] | Null] = js.native
+  var asyncValidators: js.UndefOr[AsyncValidatorFn | js.Array[AsyncValidatorFn] | Null] = js.undefined
   
   /**
     * @description
     * The event name for control to update upon.
     */
-  var updateOn: js.UndefOr[change | blur | submit] = js.native
+  var updateOn: js.UndefOr[change | blur | submit] = js.undefined
   
   /**
     * @description
     * The list of validators applied to a control.
     */
-  var validators: js.UndefOr[ValidatorFn | js.Array[ValidatorFn] | Null] = js.native
+  var validators: js.UndefOr[ValidatorFn | js.Array[ValidatorFn] | Null] = js.undefined
 }
 object AbstractControlOptions {
   

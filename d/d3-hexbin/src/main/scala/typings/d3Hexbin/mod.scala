@@ -3,17 +3,21 @@ package typings.d3Hexbin
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-hexbin", "hexbin")
+  @JSImport("d3-hexbin", JSImport.Namespace)
   @js.native
-  def hexbin[T](): Hexbin_[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def hexbin[T](): Hexbin_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbin")().asInstanceOf[Hexbin_[T]]
   
   @js.native
-  trait HexbinBin[T] extends Array[T] {
+  trait HexbinBin[T]
+    extends StObject
+       with Array[T] {
     
     /**
       * The x-coordinate of the center of the associated bin’s hexagon.

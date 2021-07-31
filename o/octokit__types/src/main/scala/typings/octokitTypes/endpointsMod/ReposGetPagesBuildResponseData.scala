@@ -4,27 +4,25 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.MessageString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetPagesBuildResponseData extends StObject {
   
-  var commit: String = js.native
+  var commit: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var error: MessageString = js.native
+  var error: MessageString
   
-  var pusher: Avatarurl = js.native
+  var pusher: Avatarurl
   
-  var status: String = js.native
+  var status: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReposGetPagesBuildResponseData {
   

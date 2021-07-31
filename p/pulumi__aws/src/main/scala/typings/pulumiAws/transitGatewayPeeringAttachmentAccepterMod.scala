@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitGatewayPeeringAttachmentAccepterMod {
@@ -56,6 +55,10 @@ object transitGatewayPeeringAttachmentAccepterMod {
   /* static members */
   object TransitGatewayPeeringAttachmentAccepter {
     
+    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TransitGatewayPeeringAttachmentAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,45 +68,39 @@ object transitGatewayPeeringAttachmentAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TransitGatewayPeeringAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TransitGatewayPeeringAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TransitGatewayPeeringAttachmentAccepterState): TransitGatewayPeeringAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TransitGatewayPeeringAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TransitGatewayPeeringAttachmentAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TransitGatewayPeeringAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TransitGatewayPeeringAttachmentAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TransitGatewayPeeringAttachmentAccepterState): TransitGatewayPeeringAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TransitGatewayPeeringAttachmentAccepter]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: TransitGatewayPeeringAttachmentAccepterState,
       opts: CustomResourceOptions
-    ): TransitGatewayPeeringAttachmentAccepter = js.native
+    ): TransitGatewayPeeringAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TransitGatewayPeeringAttachmentAccepter]
     
     /**
       * Returns true if the given object is an instance of TransitGatewayPeeringAttachmentAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter", "TransitGatewayPeeringAttachmentAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter.TransitGatewayPeeringAttachmentAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter.TransitGatewayPeeringAttachmentAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter.TransitGatewayPeeringAttachmentAccepter */ Boolean]
   }
   
-  @js.native
   trait TransitGatewayPeeringAttachmentAccepterArgs extends StObject {
     
     /**
       * Key-value tags for the EC2 Transit Gateway Peering Attachment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the EC2 Transit Gateway Peering Attachment to manage.
       */
-    val transitGatewayAttachmentId: Input[String] = js.native
+    val transitGatewayAttachmentId: Input[String]
   }
   object TransitGatewayPeeringAttachmentAccepterArgs {
     
@@ -127,35 +124,34 @@ object transitGatewayPeeringAttachmentAccepterMod {
     }
   }
   
-  @js.native
   trait TransitGatewayPeeringAttachmentAccepterState extends StObject {
     
     /**
       * Identifier of the AWS account that owns the EC2 TGW peering.
       */
-    val peerAccountId: js.UndefOr[Input[String]] = js.native
+    val peerAccountId: js.UndefOr[Input[String]] = js.undefined
     
-    val peerRegion: js.UndefOr[Input[String]] = js.native
+    val peerRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway to peer with.
       */
-    val peerTransitGatewayId: js.UndefOr[Input[String]] = js.native
+    val peerTransitGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway Peering Attachment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the EC2 Transit Gateway Peering Attachment to manage.
       */
-    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object TransitGatewayPeeringAttachmentAccepterState {
     

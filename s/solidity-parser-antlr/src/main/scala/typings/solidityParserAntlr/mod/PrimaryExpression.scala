@@ -2,7 +2,6 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,48 +11,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.solidityParserAntlr.mod.TupleExpression
   - typings.solidityParserAntlr.mod.ElementaryTypeNameExpression
 */
-trait PrimaryExpression extends Expression
+trait PrimaryExpression
+  extends StObject
+     with Expression
 object PrimaryExpression {
   
   @scala.inline
-  def BooleanLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral, value: Boolean): typings.solidityParserAntlr.mod.BooleanLiteral = {
+  def BooleanLiteral(value: Boolean): typings.solidityParserAntlr.mod.BooleanLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.BooleanLiteral]
   }
   
   @scala.inline
-  def ElementaryTypeNameExpression(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
-    typeName: ElementaryTypeName
-  ): typings.solidityParserAntlr.mod.ElementaryTypeNameExpression = {
+  def ElementaryTypeNameExpression(typeName: ElementaryTypeName): typings.solidityParserAntlr.mod.ElementaryTypeNameExpression = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementaryTypeNameExpression")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.ElementaryTypeNameExpression]
   }
   
   @scala.inline
-  def Identifier(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier): typings.solidityParserAntlr.mod.Identifier = {
+  def Identifier(name: String): typings.solidityParserAntlr.mod.Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.Identifier]
   }
   
   @scala.inline
-  def NumberLiteral(number: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): typings.solidityParserAntlr.mod.NumberLiteral = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def NumberLiteral(number: String): typings.solidityParserAntlr.mod.NumberLiteral = {
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = null)
+    __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.NumberLiteral]
   }
   
   @scala.inline
-  def TupleExpression(
-    components: js.Array[Expression],
-    isArray: Boolean,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression
-  ): typings.solidityParserAntlr.mod.TupleExpression = {
+  def TupleExpression(components: js.Array[Expression], isArray: Boolean): typings.solidityParserAntlr.mod.TupleExpression = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], isArray = isArray.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.TupleExpression]
   }
 }

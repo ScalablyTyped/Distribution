@@ -2,31 +2,29 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateManyOptions extends StObject {
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Update operation is an upsert.
     */
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[js.Any] = js.native
+  var w: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object UpdateManyOptions {
   

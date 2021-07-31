@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertsListResponse extends StObject {
   
   /** List of client certificates for the instance. */
-  var items: js.UndefOr[js.Array[SslCert]] = js.native
+  var items: js.UndefOr[js.Array[SslCert]] = js.undefined
   
   /** This is always *sql#sslCertsList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SslCertsListResponse {
   

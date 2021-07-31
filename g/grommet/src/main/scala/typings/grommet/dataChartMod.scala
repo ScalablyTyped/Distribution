@@ -25,7 +25,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataChartMod {
@@ -36,56 +35,55 @@ object dataChartMod {
   
   type ChartType = String | Dash
   
-  @js.native
   trait DataChartProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
     // axis - when true, {
     //   x: { property: 'date' <if any>, granularity: 'coarse' },
     //   y: { property: property[0].property, granularity: 'coarse' },
     // }
-    var axis: js.UndefOr[Boolean | X] = js.native
+    var axis: js.UndefOr[Boolean | X] = js.undefined
     
-    var bounds: js.UndefOr[align] = js.native
+    var bounds: js.UndefOr[align] = js.undefined
     
     // chart - if undefined, { type: 'bar', property: <first series property> }
-    var chart: js.UndefOr[ChartType | js.Array[ChartType]] = js.native
+    var chart: js.UndefOr[ChartType | js.Array[ChartType]] = js.undefined
     
     // data - an array of objects containing data values
-    var data: js.Array[js.Object] = js.native
+    var data: js.Array[js.Object]
     
     // detail - whether to show details via hover/touch interaction
-    var detail: js.UndefOr[Boolean | (js.Function2[/* datum */ js.Object, /* index */ Double, ReactNode])] = js.native
+    var detail: js.UndefOr[Boolean | (js.Function2[/* datum */ js.Object, /* index */ Double, ReactNode])] = js.undefined
     
-    var gap: js.UndefOr[GapType | Column] = js.native
+    var gap: js.UndefOr[GapType | Column] = js.undefined
     
     // between axes and guides/visuals
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
     // generic
     // guide - when true, {
     //   x: { granularity: 'coarse' },
     //   y: { granularity: 'coarse' },
     // }
-    var guide: js.UndefOr[Boolean | Y] = js.native
+    var guide: js.UndefOr[Boolean | Y] = js.undefined
     
     // legend - when true, { side: 'bottom' }
-    var legend: js.UndefOr[Boolean | Side] = js.native
+    var legend: js.UndefOr[Boolean | Side] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
     // pad - padding around the guides/visuals
     // defaults to what's needed based on axis and chart types
-    var pad: js.UndefOr[PadType] = js.native
+    var pad: js.UndefOr[PadType] = js.undefined
     
     // series - the data item properties and any
-    var series: SeriesType | js.Array[SeriesType] = js.native
+    var series: SeriesType | js.Array[SeriesType]
     
     // generic
     var size: js.UndefOr[
         xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String
-      ] = js.native
+      ] = js.undefined
   }
   object DataChartProps {
     

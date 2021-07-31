@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMeteorData[TOwnProps, TDataProps] extends StObject {
   
-  def getMeteorData(props: TOwnProps): TDataProps = js.native
+  def getMeteorData(props: TOwnProps): TDataProps
   
-  var pure: js.UndefOr[Boolean] = js.native
+  var pure: js.UndefOr[Boolean] = js.undefined
 }
 object GetMeteorData {
   
@@ -21,7 +19,7 @@ object GetMeteorData {
   }
   
   @scala.inline
-  implicit class GetMeteorDataMutableBuilder[Self <: GetMeteorData[_, _], TOwnProps, TDataProps] (val x: Self with (GetMeteorData[TOwnProps, TDataProps])) extends AnyVal {
+  implicit class GetMeteorDataMutableBuilder[Self <: GetMeteorData[?, ?], TOwnProps, TDataProps] (val x: Self & (GetMeteorData[TOwnProps, TDataProps])) extends AnyVal {
     
     @scala.inline
     def setGetMeteorData(value: TOwnProps => TDataProps): Self = StObject.set(x, "getMeteorData", js.Any.fromFunction1(value))

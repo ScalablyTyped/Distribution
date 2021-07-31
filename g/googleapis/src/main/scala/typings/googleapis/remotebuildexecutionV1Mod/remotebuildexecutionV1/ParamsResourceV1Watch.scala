@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceV1Watch extends StandardParameters {
+trait ParamsResourceV1Watch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The `resume_marker` specifies how much of the existing underlying state
@@ -40,7 +40,7 @@ trait ParamsResourceV1Watch extends StandardParameters {
     * state fetching) and the "now" marker. It need not support resuming from a
     * specific point.
     */
-  var resumeMarker: js.UndefOr[String] = js.native
+  var resumeMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The `target` value **must** be a valid URL path pointing to an entity to
@@ -63,7 +63,7 @@ trait ParamsResourceV1Watch extends StandardParameters {
     * servers use their runtime's URL library to produce and consume target
     * values.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceV1Watch {
   

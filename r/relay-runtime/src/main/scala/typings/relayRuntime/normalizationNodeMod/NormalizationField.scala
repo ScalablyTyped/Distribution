@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.FragmentName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField
   - typings.relayRuntime.normalizationNodeMod.NormalizationMatchField
 */
-trait NormalizationField extends NormalizationSelection
+trait NormalizationField
+  extends StObject
+     with NormalizationSelection
 object NormalizationField {
   
   @scala.inline

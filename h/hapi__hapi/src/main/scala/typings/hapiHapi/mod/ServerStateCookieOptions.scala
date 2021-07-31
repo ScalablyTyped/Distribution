@@ -9,10 +9,8 @@ import typings.hapiHapi.hapiHapiStrings.none_
 import typings.hapiIron.mod.SealOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerStateCookieOptions extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait ServerStateCookieOptions extends StObject {
     * cookie is automatically added to the response with the provided value. The value can be
     * a function with signature async function(request) where:
     */
-  var autoValue: js.UndefOr[js.Function1[/* request */ Request, Unit]] = js.native
+  var autoValue: js.UndefOr[js.Function1[/* request */ Request, Unit]] = js.undefined
   
   /** if true, automatically instruct the client to remove invalid cookies. Defaults to false. */
-  var clearInvalid: js.UndefOr[Boolean] = js.native
+  var clearInvalid: js.UndefOr[Boolean] = js.undefined
   
   /** the domain scope. Defaults to null (no domain). */
-  var domain: js.UndefOr[String | Null] = js.native
+  var domain: js.UndefOr[String | Null] = js.undefined
   
   /**
     * encoding performs on the provided value before serialization. Options are:
@@ -36,16 +34,16 @@ trait ServerStateCookieOptions extends StObject {
     *  * 'form' - object value is encoded using the x-www-form-urlencoded method.
     *  * 'iron' - Encrypts and sign the value using iron.
     */
-  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.native
+  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.undefined
   
   /** if true, errors are ignored and treated as missing cookies. */
-  var ignoreErrors: js.UndefOr[Boolean] = js.native
+  var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   
   /** options for 'iron' encoding. Defaults to require('@hapi/iron').defaults. */
-  var iron: js.UndefOr[SealOptions] = js.native
+  var iron: js.UndefOr[SealOptions] = js.undefined
   
   /** sets the 'HttpOnly' flag. Defaults to true. */
-  var isHttpOnly: js.UndefOr[Boolean] = js.native
+  var isHttpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the 'SameSite' flag. The value must be one of:
@@ -53,19 +51,19 @@ trait ServerStateCookieOptions extends StObject {
     *  * 'Strict' - sets the value to 'Strict' (this is the default value).
     *  * 'Lax' - sets the value to 'Lax'.
     */
-  var isSameSite: js.UndefOr[SameSitePolicy] = js.native
+  var isSameSite: js.UndefOr[SameSitePolicy] = js.undefined
   
   /** sets the 'Secure' flag. Defaults to true. */
-  var isSecure: js.UndefOr[Boolean] = js.native
+  var isSecure: js.UndefOr[Boolean] = js.undefined
   
   /** used by proxy plugins (e.g. h2o2). */
-  var passThrough: js.UndefOr[js.Any] = js.native
+  var passThrough: js.UndefOr[js.Any] = js.undefined
   
   /** password used for 'iron' encoding (must be at least 32 characters long). */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** the path scope. Defaults to null (no path). */
-  var path: js.UndefOr[String | Null] = js.native
+  var path: js.UndefOr[String | Null] = js.undefined
   
   /**
     * an object used to calculate an HMAC for cookie integrity validation. This does not provide privacy, only a mean
@@ -73,13 +71,13 @@ trait ServerStateCookieOptions extends StObject {
     *  * integrity - algorithm options. Defaults to require('@hapi/iron').defaults.integrity.
     *  * password - password used for HMAC key generation (must be at least 32 characters long).
     */
-  var sign: js.UndefOr[Integrity] = js.native
+  var sign: js.UndefOr[Integrity] = js.undefined
   
   /** if false, allows any cookie value including values in violation of RFC 6265. Defaults to true. */
-  var strictHeader: js.UndefOr[Boolean] = js.native
+  var strictHeader: js.UndefOr[Boolean] = js.undefined
   
   /** time-to-live in milliseconds. Defaults to null (session time-life - cookies are deleted when the browser is closed). */
-  var ttl: js.UndefOr[Double | Null] = js.native
+  var ttl: js.UndefOr[Double | Null] = js.undefined
 }
 object ServerStateCookieOptions {
   

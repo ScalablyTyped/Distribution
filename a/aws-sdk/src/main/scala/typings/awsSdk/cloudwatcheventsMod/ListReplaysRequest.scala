@@ -2,36 +2,34 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReplaysRequest extends StObject {
   
   /**
     * The ARN of the event source associated with the replay.
     */
-  var EventSourceArn: js.UndefOr[Arn] = js.native
+  var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The maximum number of replays to retrieve.
     */
-  var Limit: js.UndefOr[LimitMax100] = js.native
+  var Limit: js.UndefOr[LimitMax100] = js.undefined
   
   /**
     * A name prefix to filter the replays returned. Only replays with name that match the prefix are returned.
     */
-  var NamePrefix: js.UndefOr[ReplayName] = js.native
+  var NamePrefix: js.UndefOr[ReplayName] = js.undefined
   
   /**
     * The token returned by a previous call to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.undefined
   
   /**
     * The state of the replay.
     */
-  var State: js.UndefOr[ReplayState] = js.native
+  var State: js.UndefOr[ReplayState] = js.undefined
 }
 object ListReplaysRequest {
   

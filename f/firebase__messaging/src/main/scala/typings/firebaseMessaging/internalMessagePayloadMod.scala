@@ -3,7 +3,6 @@ package typings.firebaseMessaging
 import typings.std.NotificationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalMessagePayloadMod {
@@ -15,26 +14,29 @@ object internalMessagePayloadMod {
   object MessageType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MessageType with String] = js.native
+    def apply(value: String): js.UndefOr[MessageType & String] = js.native
     
     @js.native
-    sealed trait NOTIFICATION_CLICKED extends MessageType
-    /* "notification-clicked" */ val NOTIFICATION_CLICKED: typings.firebaseMessaging.internalMessagePayloadMod.MessageType.NOTIFICATION_CLICKED with String = js.native
+    sealed trait NOTIFICATION_CLICKED
+      extends StObject
+         with MessageType
+    /* "notification-clicked" */ val NOTIFICATION_CLICKED: typings.firebaseMessaging.internalMessagePayloadMod.MessageType.NOTIFICATION_CLICKED & String = js.native
     
     @js.native
-    sealed trait PUSH_RECEIVED extends MessageType
-    /* "push-received" */ val PUSH_RECEIVED: typings.firebaseMessaging.internalMessagePayloadMod.MessageType.PUSH_RECEIVED with String = js.native
+    sealed trait PUSH_RECEIVED
+      extends StObject
+         with MessageType
+    /* "push-received" */ val PUSH_RECEIVED: typings.firebaseMessaging.internalMessagePayloadMod.MessageType.PUSH_RECEIVED & String = js.native
   }
   
   @js.native
   trait ConsoleMessageData extends StObject
   
-  @js.native
   trait FcmOptionsInternal extends StObject {
     
-    var analytics_label: js.UndefOr[String] = js.native
+    var analytics_label: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
   }
   object FcmOptionsInternal {
     
@@ -61,22 +63,21 @@ object internalMessagePayloadMod {
     }
   }
   
-  @js.native
   trait MessagePayloadInternal extends StObject {
     
-    var collapse_key: String = js.native
+    var collapse_key: String
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var fcmOptions: js.UndefOr[FcmOptionsInternal] = js.native
+    var fcmOptions: js.UndefOr[FcmOptionsInternal] = js.undefined
     
-    var from: String = js.native
+    var from: String
     
-    var isFirebaseMessaging: js.UndefOr[Boolean] = js.native
+    var isFirebaseMessaging: js.UndefOr[Boolean] = js.undefined
     
-    var messageType: js.UndefOr[MessageType] = js.native
+    var messageType: js.UndefOr[MessageType] = js.undefined
     
-    var notification: js.UndefOr[NotificationPayloadInternal] = js.native
+    var notification: js.UndefOr[NotificationPayloadInternal] = js.undefined
   }
   object MessagePayloadInternal {
     
@@ -127,12 +128,13 @@ object internalMessagePayloadMod {
     }
   }
   
-  @js.native
-  trait NotificationPayloadInternal extends NotificationOptions {
+  trait NotificationPayloadInternal
+    extends StObject
+       with NotificationOptions {
     
-    var click_action: js.UndefOr[String] = js.native
+    var click_action: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object NotificationPayloadInternal {
     

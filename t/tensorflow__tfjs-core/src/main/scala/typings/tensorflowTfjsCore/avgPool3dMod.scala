@@ -12,13 +12,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avgPool3dMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/avg_pool_3d", "avgPool3d")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/avg_pool_3d", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def avgPool3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
@@ -27,5 +29,5 @@ object avgPool3dMod {
     dimRoundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[NDHWC | NCDHW],
     dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
 }

@@ -7,46 +7,44 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.TooltipProps> */
-@js.native
 trait PartialTooltipProps extends StObject {
   
-  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var highlightColor: js.UndefOr[String] = js.native
+  var highlightColor: js.UndefOr[String] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var overlayColor: js.UndefOr[String] = js.native
+  var overlayColor: js.UndefOr[String] = js.undefined
   
-  var pointerColor: js.UndefOr[String] = js.native
+  var pointerColor: js.UndefOr[String] = js.undefined
   
-  var popover: js.UndefOr[ReactElement] = js.native
+  var popover: js.UndefOr[ReactElement] = js.undefined
   
-  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.native
+  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.undefined
   
-  var toggleAction: js.UndefOr[String] = js.native
+  var toggleAction: js.UndefOr[String] = js.undefined
   
-  var toggleOnPress: js.UndefOr[Boolean] = js.native
+  var toggleOnPress: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var withOverlay: js.UndefOr[Boolean] = js.native
+  var withOverlay: js.UndefOr[Boolean] = js.undefined
   
-  var withPointer: js.UndefOr[Boolean] = js.native
+  var withPointer: js.UndefOr[Boolean] = js.undefined
 }
 object PartialTooltipProps {
   

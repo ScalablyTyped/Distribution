@@ -4,51 +4,49 @@ import typings.cookieclicker.cookieclickerNumbers.`1`
 import typings.cookieclicker.cookieclickerNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buff extends StObject {
   
   /**
     * If true, when a buff it gained when it already exists, adds the buff times together
     */
-  var add: js.UndefOr[Boolean] = js.native
+  var add: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If 1, show the good aura, if 2, show the bad aura
     */
-  var aura: js.UndefOr[`1` | `2`] = js.native
+  var aura: js.UndefOr[`1` | `2`] = js.undefined
   
-  var desc: String = js.native
+  var desc: String
   
-  var icon: Icon = js.native
+  var icon: Icon
   
   /**
     * If true, when a buff it gained when it already exists, use the maximum buff time of the two
     */
-  var max: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Boolean] = js.undefined
   
-  var multClick: js.UndefOr[Double] = js.native
+  var multClick: js.UndefOr[Double] = js.undefined
   
-  var multCpS: js.UndefOr[Double] = js.native
+  var multCpS: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var onDie: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDie: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Rarely used, as of v2.031 only Cursed Finger uses this
     */
-  var pow: js.UndefOr[Double] = js.native
+  var pow: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of time this buff exists for, in frames
     */
-  var time: Double = js.native
+  var time: Double
   
   /** @deprecated */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Buff {
   

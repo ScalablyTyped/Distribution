@@ -2,15 +2,13 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlNodeSerializer extends StObject {
   
-  def getXml(): String = js.native
+  def getXml(): String
   
-  var innerText: String = js.native
+  var innerText: String
 }
 object IXmlNodeSerializer {
   

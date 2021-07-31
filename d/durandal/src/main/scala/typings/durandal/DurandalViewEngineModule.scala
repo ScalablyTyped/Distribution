@@ -5,10 +5,8 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalViewEngineModule extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait DurandalViewEngineModule extends StObject {
     * @param {string} viewId The view id to convert.
     * @returns {string} The require path.
     */
-  def convertViewIdToRequirePath(viewId: String): String = js.native
+  def convertViewIdToRequirePath(viewId: String): String
   
   /**
     * Converts a view url into a view id.
     * @param {string} url The url to convert.
     * @returns {string} The view id.
     */
-  def convertViewUrlToViewId(url: String): String = js.native
+  def convertViewUrlToViewId(url: String): String
   
   /**
     * Called when a view cannot be found to provide the opportunity to locate or generate a fallback view. Mainly used to ease development.
@@ -32,74 +30,74 @@ trait DurandalViewEngineModule extends StObject {
     * @param {Error} requirePath The error that was returned from the attempt to locate the default view.
     * @returns {Promise} A promise for the fallback view.
     */
-  def createFallbackView(viewId: String, requirePath: String, err: Error): DurandalPromise[HTMLElement] = js.native
+  def createFallbackView(viewId: String, requirePath: String, err: Error): DurandalPromise[HTMLElement]
   
   /**
     * Creates the view associated with the view id.
     * @param {string} viewId The view id whose view should be created.
     * @returns {DurandalPromise<HTMLElement>} A promise of the view.
     */
-  def createView(viewId: String): DurandalPromise[HTMLElement] = js.native
+  def createView(viewId: String): DurandalPromise[HTMLElement]
   
   /**
     * Converts an array of elements into a single element. White space and comments are removed. If a single element does not remain, then the elements are wrapped.
     * @param {HTMLElement[]} allElements The elements.
     * @returns {HTMLElement} A single element.
     */
-  def ensureSingleElement(allElements: js.Array[Node]): HTMLElement = js.native
+  def ensureSingleElement(allElements: js.Array[Node]): HTMLElement
   
   /**
     * Determines if the url is a url for a view, according to the view engine.
     * @param {string} url The potential view url.
     * @returns {boolean} True if the url is a view url, false otherwise.
     */
-  def isViewUrl(url: String): Boolean = js.native
+  def isViewUrl(url: String): Boolean
   
   /**
     * Parses the view engine recognized markup and returns DOM elements.
     * @param {string} markup The markup to parse.
     * @returns {HTMLElement[]} The elements.
     */
-  def parseMarkup(markup: String): js.Array[Node] = js.native
+  def parseMarkup(markup: String): js.Array[Node]
   
   /**
     * Calls `parseMarkup` and then pipes the results through `ensureSingleElement`.
     * @param {string} markup The markup to process.
     * @returns {HTMLElement} The view.
     */
-  def processMarkup(markup: String): HTMLElement = js.native
+  def processMarkup(markup: String): HTMLElement
   
   /**
     * Puts the view associated with the id into the cache of parsed views.
     * @param {string} id The view id whose view should be cached.
     * @param {DOMElement} view The view to cache.
     */
-  def putViewInCache(id: String, view: HTMLElement): Unit = js.native
+  def putViewInCache(id: String, view: HTMLElement): Unit
   
   /**
     * Gets the view associated with the id from the cache of parsed views.
     * @param {string} id The view id to lookup in the cache.
     * @return {DOMElement|null} The cached view or null if it's not in the cache.
     */
-  def tryGetViewFromCache(id: String): HTMLElement = js.native
+  def tryGetViewFromCache(id: String): HTMLElement
   
   /**
     * The file extension that view source files are expected to have.
     * @default .html
     */
-  var viewExtension: String = js.native
+  var viewExtension: String
   
   /**
     * The name of the RequireJS loader plugin used by the viewLocator to obtain the view source. (Use requirejs to map the plugin's full path).
     * @default text
     */
-  var viewPlugin: String = js.native
+  var viewPlugin: String
   
   /**
     * Parameters passed to the RequireJS loader plugin used by the viewLocator to obtain the view source.
     * @default The empty string by default.
     */
-  var viewPluginParameters: String = js.native
+  var viewPluginParameters: String
 }
 object DurandalViewEngineModule {
   

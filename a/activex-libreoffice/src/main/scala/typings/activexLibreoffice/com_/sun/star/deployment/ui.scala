@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XDialogClosedListener
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ui {
@@ -16,8 +15,9 @@ object ui {
     * The {@link LicenseDialog} is used to display a license text.
     * @since OOo 2.0.4
     */
-  @js.native
-  trait LicenseDialog extends XExecutableDialog {
+  trait LicenseDialog
+    extends StObject
+       with XExecutableDialog {
     
     /**
       * Create a GUI using the specific parent window and focus on the given context.
@@ -25,7 +25,7 @@ object ui {
       * @param extensionName the display name of the extension
       * @param licenseText text to be displayed
       */
-    def create(xParent: XWindow, extensionName: String, licenseText: String): Unit = js.native
+    def create(xParent: XWindow, extensionName: String, licenseText: String): Unit
   }
   object LicenseDialog {
     
@@ -55,25 +55,26 @@ object ui {
     * documents.
     * @since OOo 2.0
     */
-  @js.native
-  trait PackageManagerDialog extends XAsynchronousExecutableDialog {
+  trait PackageManagerDialog
+    extends StObject
+       with XAsynchronousExecutableDialog {
     
     /**
       * Create a GUI using the specific parent window and focus on the given context.
       * @param xParent parent window
       * @param focussedContext context to be focused
       */
-    def create(xParent: XWindow, focussedContext: String): Unit = js.native
+    def create(xParent: XWindow, focussedContext: String): Unit
     
     /**
       * Create a GUI and pass the URL of the extension which shall be installed right away. This constructor is intended for the case when unopkg is run as
       * result of clicking an extension in a file browser, etc. The extensions will always be installed for the current user.
       * @param extensionURL URL of extension
       */
-    def createAndInstall(extensionURL: String): Unit = js.native
+    def createAndInstall(extensionURL: String): Unit
     
     /** Create a default GUI. */
-    def createDefault(): Unit = js.native
+    def createDefault(): Unit
   }
   object PackageManagerDialog {
     
@@ -110,11 +111,12 @@ object ui {
     * The {@link UpdateRequiredDialog} is used to show a list of extensions not compatible with this office version.
     * @since OOo 3.2
     */
-  @js.native
-  trait UpdateRequiredDialog extends XExecutableDialog {
+  trait UpdateRequiredDialog
+    extends StObject
+       with XExecutableDialog {
     
     /** Create a GUI using the specific parent window and focus on the given context. */
-    def create(): Unit = js.native
+    def create(): Unit
   }
   object UpdateRequiredDialog {
     

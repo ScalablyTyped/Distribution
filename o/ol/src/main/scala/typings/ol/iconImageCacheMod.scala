@@ -3,44 +3,77 @@ package typings.ol
 import typings.ol.colorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconImageCacheMod {
   
+  @JSImport("ol/style/IconImageCache", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/style/IconImageCache", JSImport.Default)
   @js.native
-  class default () extends IconImageCache
-  
-  @JSImport("ol/style/IconImageCache", "shared")
-  @js.native
-  def shared(): Unit = js.native
-  
-  @js.native
-  trait IconImageCache extends StObject {
+  class default ()
+    extends StObject
+       with IconImageCache {
     
-    def canExpireCache(): Boolean = js.native
+    /* CompleteClass */
+    override def canExpireCache(): Boolean = js.native
     
     /**
       * FIXME empty description for jsdoc
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * FIXME empty description for jsdoc
       */
-    def expire(): Unit = js.native
+    /* CompleteClass */
+    override def expire(): Unit = js.native
     
-    def get(src: String, crossOrigin: String, color: Color): typings.ol.iconImageMod.default = js.native
+    /* CompleteClass */
+    override def get(src: String, crossOrigin: String, color: Color): typings.ol.iconImageMod.default = js.native
     
-    def set(src: String, crossOrigin: String, color: Color, iconImage: typings.ol.iconImageMod.default): Unit = js.native
+    /* CompleteClass */
+    override def set(src: String, crossOrigin: String, color: Color, iconImage: typings.ol.iconImageMod.default): Unit = js.native
     
     /**
       * Set the cache size of the icon cache. Default is 32. Change this value when
       * your map uses more than 32 different icon images and you are not caching icon
       * styles on the application level.
       */
-    def setSize(maxCacheSize: Double): Unit = js.native
+    /* CompleteClass */
+    override def setSize(maxCacheSize: Double): Unit = js.native
+  }
+  
+  @scala.inline
+  def shared(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shared")().asInstanceOf[Unit]
+  
+  trait IconImageCache extends StObject {
+    
+    def canExpireCache(): Boolean
+    
+    /**
+      * FIXME empty description for jsdoc
+      */
+    def clear(): Unit
+    
+    /**
+      * FIXME empty description for jsdoc
+      */
+    def expire(): Unit
+    
+    def get(src: String, crossOrigin: String, color: Color): typings.ol.iconImageMod.default
+    
+    def set(src: String, crossOrigin: String, color: Color, iconImage: typings.ol.iconImageMod.default): Unit
+    
+    /**
+      * Set the cache size of the icon cache. Default is 32. Change this value when
+      * your map uses more than 32 different icon images and you are not caching icon
+      * styles on the application level.
+      */
+    def setSize(maxCacheSize: Double): Unit
   }
   object IconImageCache {
     

@@ -5,17 +5,17 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorButton extends Widget {
+trait ColorButton
+  extends StObject
+     with Widget {
   
-  var color: Color = js.native
+  var color: Color
   
-  var dialogOnly: Boolean = js.native
+  var dialogOnly: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object ColorButton {
   

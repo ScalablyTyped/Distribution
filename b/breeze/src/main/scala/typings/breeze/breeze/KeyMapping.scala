@@ -2,17 +2,15 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyMapping extends StObject {
   
-  var entityTypeName: String = js.native
+  var entityTypeName: String
   
-  var realValue: js.Any = js.native
+  var realValue: js.Any
   
-  var tempValue: js.Any = js.native
+  var tempValue: js.Any
 }
 object KeyMapping {
   

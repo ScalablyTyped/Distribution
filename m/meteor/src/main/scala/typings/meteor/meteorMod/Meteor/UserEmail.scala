@@ -2,17 +2,15 @@ package typings.meteor.meteorMod.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Settings **/
 /** User **/
-@js.native
 trait UserEmail extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var verified: Boolean = js.native
+  var verified: Boolean
 }
 object UserEmail {
   

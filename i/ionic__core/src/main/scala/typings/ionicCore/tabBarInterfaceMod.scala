@@ -2,15 +2,13 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarInterfaceMod {
   
-  @js.native
   trait TabBarChangedEventDetail extends StObject {
     
-    var tab: js.UndefOr[String] = js.native
+    var tab: js.UndefOr[String] = js.undefined
   }
   object TabBarChangedEventDetail {
     
@@ -31,14 +29,13 @@ object tabBarInterfaceMod {
     }
   }
   
-  @js.native
   trait TabButtonClickEventDetail extends StObject {
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var selected: Boolean = js.native
+    var selected: Boolean
     
-    var tab: String = js.native
+    var tab: String
   }
   object TabButtonClickEventDetail {
     

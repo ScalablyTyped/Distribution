@@ -2,19 +2,17 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnCommandEventArgs[T /* <: SlickData */] extends StObject {
   
-  var button: HeaderButton = js.native
+  var button: HeaderButton
   
-  var column: Column[T] = js.native
+  var column: Column[T]
   
-  var command: String = js.native
+  var command: String
   
-  var grid: Grid[T] = js.native
+  var grid: Grid[T]
 }
 object OnCommandEventArgs {
   
@@ -25,7 +23,7 @@ object OnCommandEventArgs {
   }
   
   @scala.inline
-  implicit class OnCommandEventArgsMutableBuilder[Self <: OnCommandEventArgs[_], T /* <: SlickData */] (val x: Self with OnCommandEventArgs[T]) extends AnyVal {
+  implicit class OnCommandEventArgsMutableBuilder[Self <: OnCommandEventArgs[?], T /* <: SlickData */] (val x: Self & OnCommandEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setButton(value: HeaderButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])

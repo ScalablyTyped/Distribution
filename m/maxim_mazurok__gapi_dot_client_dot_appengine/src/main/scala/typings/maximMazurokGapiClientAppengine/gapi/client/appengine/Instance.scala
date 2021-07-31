@@ -2,59 +2,57 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /** Output only. App Engine release this instance is running on. */
-  var appEngineRelease: js.UndefOr[String] = js.native
+  var appEngineRelease: js.UndefOr[String] = js.undefined
   
   /** Output only. Availability of the instance. */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /** Output only. Average latency (ms) over the last minute. */
-  var averageLatency: js.UndefOr[Double] = js.native
+  var averageLatency: js.UndefOr[Double] = js.undefined
   
   /** Output only. Number of errors since this instance was started. */
-  var errors: js.UndefOr[Double] = js.native
+  var errors: js.UndefOr[Double] = js.undefined
   
   /** Output only. Relative name of the instance within the version. Example: instance-1. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Output only. Total memory in use (bytes). */
-  var memoryUsage: js.UndefOr[String] = js.native
+  var memoryUsage: js.UndefOr[String] = js.undefined
   
   /** Output only. Full path to the Instance resource in the API. Example: apps/myapp/services/default/versions/v1/instances/instance-1. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Average queries per second (QPS) over the last minute. */
-  var qps: js.UndefOr[Double] = js.native
+  var qps: js.UndefOr[Double] = js.undefined
   
   /** Output only. Number of requests since this instance was started. */
-  var requests: js.UndefOr[Double] = js.native
+  var requests: js.UndefOr[Double] = js.undefined
   
   /** Output only. Time that this instance was started.@OutputOnly */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Whether this instance is in debug mode. Only applicable for instances in App Engine flexible environment. */
-  var vmDebugEnabled: js.UndefOr[Boolean] = js.native
+  var vmDebugEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Virtual machine ID of this instance. Only applicable for instances in App Engine flexible environment. */
-  var vmId: js.UndefOr[String] = js.native
+  var vmId: js.UndefOr[String] = js.undefined
   
   /** Output only. The IP address of this instance. Only applicable for instances in App Engine flexible environment. */
-  var vmIp: js.UndefOr[String] = js.native
+  var vmIp: js.UndefOr[String] = js.undefined
   
   /** Output only. Name of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. */
-  var vmName: js.UndefOr[String] = js.native
+  var vmName: js.UndefOr[String] = js.undefined
   
   /** Output only. Status of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. */
-  var vmStatus: js.UndefOr[String] = js.native
+  var vmStatus: js.UndefOr[String] = js.undefined
   
   /** Output only. Zone where the virtual machine is located. Only applicable for instances in App Engine flexible environment. */
-  var vmZoneName: js.UndefOr[String] = js.native
+  var vmZoneName: js.UndefOr[String] = js.undefined
 }
 object Instance {
   

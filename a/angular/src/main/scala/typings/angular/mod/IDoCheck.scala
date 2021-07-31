@@ -2,14 +2,12 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $doCheck lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IDoCheck extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait IDoCheck extends StObject {
     * you must store the previous value(s) for comparison to the current values.
     */
   @JSName("$doCheck")
-  def $doCheck(): Unit = js.native
+  def $doCheck(): Unit
 }
 object IDoCheck {
   

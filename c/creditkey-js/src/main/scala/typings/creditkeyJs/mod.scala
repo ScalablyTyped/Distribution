@@ -2,10 +2,13 @@ package typings.creditkeyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("creditkey-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("creditkey-js", "Address")
   @js.native
@@ -124,45 +127,34 @@ object mod {
     def get_customer(email: String, customer_id: String): js.Promise[CustomerResponse] = js.native
     
     def get_marketing_display(charges: Charges): js.Promise[String] = js.native
-    def get_marketing_display(
-      charges: Charges,
-      `type`: js.UndefOr[scala.Nothing],
-      display: js.UndefOr[scala.Nothing],
-      size: Size
-    ): js.Promise[String] = js.native
-    def get_marketing_display(charges: Charges, `type`: js.UndefOr[scala.Nothing], display: Display): js.Promise[String] = js.native
-    def get_marketing_display(charges: Charges, `type`: js.UndefOr[scala.Nothing], display: Display, size: Size): js.Promise[String] = js.native
+    def get_marketing_display(charges: Charges, `type`: Unit, display: Unit, size: Size): js.Promise[String] = js.native
+    def get_marketing_display(charges: Charges, `type`: Unit, display: Display): js.Promise[String] = js.native
+    def get_marketing_display(charges: Charges, `type`: Unit, display: Display, size: Size): js.Promise[String] = js.native
     def get_marketing_display(charges: Charges, `type`: Copy): js.Promise[String] = js.native
-    def get_marketing_display(charges: Charges, `type`: Copy, display: js.UndefOr[scala.Nothing], size: Size): js.Promise[String] = js.native
+    def get_marketing_display(charges: Charges, `type`: Copy, display: Unit, size: Size): js.Promise[String] = js.native
     def get_marketing_display(charges: Charges, `type`: Copy, display: Display): js.Promise[String] = js.native
     def get_marketing_display(charges: Charges, `type`: Copy, display: Display, size: Size): js.Promise[String] = js.native
     
     def is_displayed_in_checkout(cartItems: js.Array[CartItem]): js.Promise[Boolean] = js.native
   }
   
-  @JSImport("creditkey-js", "apply")
-  @js.native
-  def apply(key: String): Unit = js.native
-  @JSImport("creditkey-js", "apply")
-  @js.native
-  def apply(key: String, `type`: js.UndefOr[scala.Nothing], platform: Platform): Unit = js.native
-  @JSImport("creditkey-js", "apply")
-  @js.native
-  def apply(key: String, `type`: Mode): Unit = js.native
-  @JSImport("creditkey-js", "apply")
-  @js.native
-  def apply(key: String, `type`: Mode, platform: Platform): Unit = js.native
+  @scala.inline
+  def apply(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(key: String, `type`: Unit, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(key: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(key: String, `type`: Mode, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("creditkey-js", "checkout")
-  @js.native
-  def checkout(source: String, `type`: Mode): Unit = js.native
+  @scala.inline
+  def checkout(source: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CheckoutResponse extends StObject {
     
-    var checkout_url: String = js.native
+    var checkout_url: String
     
-    var id: String = js.native
+    var id: String
   }
   object CheckoutResponse {
     
@@ -197,14 +189,13 @@ object mod {
     def pdp: typings.creditkeyJs.creditkeyJsStrings.pdp = "pdp".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.pdp]
   }
   
-  @js.native
   trait CustomerResponse extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var amount_available: Double = js.native
+    var amount_available: Double
     
-    var status: Status = js.native
+    var status: Status
   }
   object CustomerResponse {
     

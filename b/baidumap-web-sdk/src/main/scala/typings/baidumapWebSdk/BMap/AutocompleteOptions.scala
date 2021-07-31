@@ -3,19 +3,17 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteOptions extends StObject {
   
-  var input: js.UndefOr[String | HTMLElement] = js.native
+  var input: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var location: js.UndefOr[String | Map | Point] = js.native
+  var location: js.UndefOr[String | Map | Point] = js.undefined
   
-  var onSearchComplete: js.UndefOr[js.Function1[/* result */ AutocompleteResult, Unit]] = js.native
+  var onSearchComplete: js.UndefOr[js.Function1[/* result */ AutocompleteResult, Unit]] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AutocompleteOptions {
   

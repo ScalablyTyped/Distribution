@@ -2,17 +2,15 @@ package typings.waypoints
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Adapter extends StObject {
     
-    var Adapter: WaypointAdapter = js.native
+    var Adapter: WaypointAdapter
     
-    var name: String = js.native
+    var name: String
   }
   object Adapter {
     
@@ -33,15 +31,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Horizontal extends StObject
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     

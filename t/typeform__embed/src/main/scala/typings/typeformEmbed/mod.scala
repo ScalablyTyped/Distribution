@@ -11,30 +11,28 @@ import typings.typeformEmbed.typeformEmbedStrings.scroll
 import typings.typeformEmbed.typeformEmbedStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@typeform/embed", "makePopup")
+  @JSImport("@typeform/embed", JSImport.Namespace)
   @js.native
-  def makePopup(url: String): PopupInstance = js.native
-  @JSImport("@typeform/embed", "makePopup")
-  @js.native
-  def makePopup(url: String, options: PopupOptions): PopupInstance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@typeform/embed", "makeWidget")
-  @js.native
-  def makeWidget(element: HTMLElement, url: String): Unit = js.native
-  @JSImport("@typeform/embed", "makeWidget")
-  @js.native
-  def makeWidget(element: HTMLElement, url: String, options: WidgetOptions): Unit = js.native
+  @scala.inline
+  def makePopup(url: String): PopupInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("makePopup")(url.asInstanceOf[js.Any]).asInstanceOf[PopupInstance]
+  @scala.inline
+  def makePopup(url: String, options: PopupOptions): PopupInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("makePopup")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PopupInstance]
   
-  @js.native
+  @scala.inline
+  def makeWidget(element: HTMLElement, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWidget")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def makeWidget(element: HTMLElement, url: String, options: WidgetOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWidget")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait OnSubmitEvent extends StObject {
     
     /** ID of the response */
-    var response_id: String = js.native
+    var response_id: String
   }
   object OnSubmitEvent {
     
@@ -52,12 +50,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PopupInstance extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def open(): Unit = js.native
+    def open(): Unit
   }
   object PopupInstance {
     
@@ -78,48 +75,47 @@ object mod {
     }
   }
   
-  @js.native
   trait PopupOptions extends StObject {
     
-    var autoClose: js.UndefOr[Double] = js.native
+    var autoClose: js.UndefOr[Double] = js.undefined
     
     /**
       * @deprecated Use `open: 'load'` instead
       */
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var disableTracking: js.UndefOr[Boolean] = js.native
+    var disableTracking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated Use `width` instead
       */
-    var drawerWidth: js.UndefOr[Double] = js.native
+    var drawerWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the height of the popup (only applies if using mode "popover")
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hideFooter: js.UndefOr[Boolean] = js.native
+    var hideFooter: js.UndefOr[Boolean] = js.undefined
     
-    var hideHeaders: js.UndefOr[Boolean] = js.native
+    var hideHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var hideScrollbars: js.UndefOr[Boolean] = js.native
+    var hideScrollbars: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[popup | drawer_left | drawer_right | popover] = js.native
+    var mode: js.UndefOr[popup | drawer_left | drawer_right | popover] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* event */ OnSubmitEvent, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* event */ OnSubmitEvent, Unit]] = js.undefined
     
     /**
       * Launch based on behavioral triggers
       */
-    var open: js.UndefOr[exit | load | scroll | time] = js.native
+    var open: js.UndefOr[exit | load | scroll | time] = js.undefined
     
     /**
       * Configuration for behavioral triggers. Based on open:
@@ -127,13 +123,13 @@ object mod {
       *   - `scroll`: % of page scrolled
       *   - `time`: time in milliseconds
       */
-    var openValue: js.UndefOr[Double] = js.native
+    var openValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the width of the drawer or popup (only applies if using mode
       * "drawer_left" or "drawer_right" or "popover")
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PopupOptions {
     
@@ -244,24 +240,23 @@ object mod {
     }
   }
   
-  @js.native
   trait WidgetOptions extends StObject {
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var disableTracking: js.UndefOr[Boolean] = js.native
+    var disableTracking: js.UndefOr[Boolean] = js.undefined
     
-    var hideFooter: js.UndefOr[Boolean] = js.native
+    var hideFooter: js.UndefOr[Boolean] = js.undefined
     
-    var hideHeaders: js.UndefOr[Boolean] = js.native
+    var hideHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var hideScrollbars: js.UndefOr[Boolean] = js.native
+    var hideScrollbars: js.UndefOr[Boolean] = js.undefined
     
-    var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* event */ OnSubmitEvent, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* event */ OnSubmitEvent, Unit]] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object WidgetOptions {
     

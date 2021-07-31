@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional annotations that can be used to guide the usage of a metric.
   */
-@js.native
 trait SchemaMetricDescriptorMetadata extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaMetricDescriptorMetadata extends StObject {
     * age are guaranteed to be ingested and available to be read, excluding
     * data loss due to errors.
     */
-  var ingestDelay: js.UndefOr[String] = js.native
+  var ingestDelay: js.UndefOr[String] = js.undefined
   
   /**
     * The launch stage of the metric definition.
     */
-  var launchStage: js.UndefOr[String] = js.native
+  var launchStage: js.UndefOr[String] = js.undefined
   
   /**
     * The sampling period of metric data points. For metrics which are written
@@ -29,7 +27,7 @@ trait SchemaMetricDescriptorMetadata extends StObject {
     * excluding data loss due to errors. Metrics with a higher granularity have
     * a smaller sampling period.
     */
-  var samplePeriod: js.UndefOr[String] = js.native
+  var samplePeriod: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricDescriptorMetadata {
   

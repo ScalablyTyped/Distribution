@@ -7,15 +7,13 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -51,7 +49,7 @@ object sliderMod {
     
     def onChange(params: State): js.Any = js.native
     
-    var onFinalChange: js.UndefOr[js.Function1[/* params */ State, _]] = js.native
+    var onFinalChange: js.UndefOr[js.Function1[/* params */ State, js.Any]] = js.native
   }
   
   @JSImport("baseui/slider", "StatefulSlider")
@@ -90,29 +88,28 @@ object sliderMod {
   @js.native
   val StyledTrack: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait SharedProps extends StObject {
     
     @JSName("$disabled")
-    var $disabled: Boolean = js.native
+    var $disabled: Boolean
     
     @JSName("$isDragged")
-    var $isDragged: Boolean = js.native
+    var $isDragged: Boolean
     
     @JSName("$marks")
-    var $marks: Boolean = js.native
+    var $marks: Boolean
     
     @JSName("$max")
-    var $max: Double = js.native
+    var $max: Double
     
     @JSName("$min")
-    var $min: Double = js.native
+    var $min: Double
     
     @JSName("$thumbIndex")
-    var $thumbIndex: Double = js.native
+    var $thumbIndex: Double
     
     @JSName("$value")
-    var $value: js.Array[Double] = js.native
+    var $value: js.Array[Double]
   }
   object SharedProps {
     
@@ -159,44 +156,43 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait SliderOverrides extends StObject {
     
     var InnerThumb: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InnerTrack: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Mark: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Thumb: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ThumbValue: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Tick: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TickBar: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Track: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SliderOverrides {
     
@@ -283,26 +279,25 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait SliderProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var marks: js.UndefOr[Boolean] = js.native
+    var marks: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[SliderOverrides] = js.native
+    var overrides: js.UndefOr[SliderOverrides] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var value: js.Array[Double] = js.native
+    var value: js.Array[Double]
   }
   object SliderProps {
     
@@ -340,13 +335,13 @@ object sliderMod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* e */ State => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnFinalChange(value: /* e */ State => _): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
@@ -371,10 +366,9 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var value: js.Array[Double] = js.native
+    var value: js.Array[Double]
   }
   object State {
     
@@ -397,28 +391,27 @@ object sliderMod {
   
   type StateReducer = js.Function3[/* stateType */ String, /* nextState */ State, /* currentState */ State, State]
   
-  @js.native
   trait StatefulContainerProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var marks: js.UndefOr[Boolean] = js.native
+    var marks: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[SliderOverrides] = js.native
+    var overrides: js.UndefOr[SliderOverrides] = js.undefined
     
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object StatefulContainerProps {
     
@@ -462,13 +455,13 @@ object sliderMod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* e */ State => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnFinalChange(value: /* e */ State => _): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
@@ -493,24 +486,23 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait StatefulSliderProps extends StObject {
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var marks: js.UndefOr[Boolean] = js.native
+    var marks: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+    var onFinalChange: js.UndefOr[js.Function1[/* e */ State, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[SliderOverrides] = js.native
+    var overrides: js.UndefOr[SliderOverrides] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object StatefulSliderProps {
     
@@ -548,13 +540,13 @@ object sliderMod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* e */ State => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnFinalChange(value: /* e */ State => _): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)

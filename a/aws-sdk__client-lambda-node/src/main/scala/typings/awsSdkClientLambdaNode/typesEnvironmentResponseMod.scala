@@ -6,23 +6,21 @@ import typings.awsSdkClientLambdaNode.typesEnvironmentErrorMod.UnmarshalledEnvir
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEnvironmentResponseMod {
   
-  @js.native
   trait EnvironmentResponse extends StObject {
     
     /**
       * <p>Error messages for environment variables that could not be applied.</p>
       */
-    var Error: js.UndefOr[EnvironmentError] = js.native
+    var Error: js.UndefOr[EnvironmentError] = js.undefined
     
     /**
       * <p>Environment variable key-value pairs.</p>
       */
-    var Variables: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Variables: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object EnvironmentResponse {
     
@@ -49,20 +47,21 @@ object typesEnvironmentResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEnvironmentResponse extends EnvironmentResponse {
+  trait UnmarshalledEnvironmentResponse
+    extends StObject
+       with EnvironmentResponse {
     
     /**
       * <p>Error messages for environment variables that could not be applied.</p>
       */
     @JSName("Error")
-    var Error_UnmarshalledEnvironmentResponse: js.UndefOr[UnmarshalledEnvironmentError] = js.native
+    var Error_UnmarshalledEnvironmentResponse: js.UndefOr[UnmarshalledEnvironmentError] = js.undefined
     
     /**
       * <p>Environment variable key-value pairs.</p>
       */
     @JSName("Variables")
-    var Variables_UnmarshalledEnvironmentResponse: js.UndefOr[StringDictionary[String]] = js.native
+    var Variables_UnmarshalledEnvironmentResponse: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object UnmarshalledEnvironmentResponse {
     

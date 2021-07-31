@@ -3,13 +3,11 @@ package typings.winrt.Windows.Graphics.Imaging
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPixelDataProvider extends StObject {
   
-  def detachPixelData(): Uint8Array = js.native
+  def detachPixelData(): Uint8Array
 }
 object IPixelDataProvider {
   

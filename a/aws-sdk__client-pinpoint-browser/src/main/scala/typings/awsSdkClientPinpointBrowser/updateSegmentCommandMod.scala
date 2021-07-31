@@ -7,16 +7,18 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegm
 import typings.awsSdkClientPinpointBrowser.typesUpdateSegmentOutputMod.UpdateSegmentOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateSegmentCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateSegmentCommand", "UpdateSegmentCommand")
   @js.native
-  class UpdateSegmentCommand protected () extends Command[
+  class UpdateSegmentCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           UpdateSegmentInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object updateSegmentCommandMod {
         ] {
     def this(input: UpdateSegmentInput) = this()
     
+    /* CompleteClass */
+    override val input: UpdateSegmentInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[UpdateSegmentInput, UpdateSegmentOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: PinpointResolvedConfiguration
+    ): Handler[UpdateSegmentInput, UpdateSegmentOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: PinpointResolvedConfiguration,
+      options: js.Any
     ): Handler[UpdateSegmentInput, UpdateSegmentOutput] = js.native
   }
 }

@@ -6,10 +6,13 @@ import typings.firebaseRemoteConfigTypes.mod.FetchStatus
 import typings.std.IDBDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
+  
+  @JSImport("@firebase/remote-config/dist/src/storage/storage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/remote-config/dist/src/storage/storage", "APP_NAMESPACE_STORE")
   @js.native
@@ -69,9 +72,8 @@ object storageMod {
     def setThrottleMetadata(metadata: ThrottleMetadata): js.Promise[Unit] = js.native
   }
   
-  @JSImport("@firebase/remote-config/dist/src/storage/storage", "openDatabase")
-  @js.native
-  def openDatabase(): js.Promise[IDBDatabase] = js.native
+  @scala.inline
+  def openDatabase(): js.Promise[IDBDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")().asInstanceOf[js.Promise[IDBDatabase]]
   
   /**
     * Provides type-safety for the "key" field used by {@link APP_NAMESPACE_STORE}.
@@ -112,12 +114,11 @@ object storageMod {
     def throttle_metadata: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata = "throttle_metadata".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata]
   }
   
-  @js.native
   trait ThrottleMetadata extends StObject {
     
-    var backoffCount: Double = js.native
+    var backoffCount: Double
     
-    var throttleEndTimeMillis: Double = js.native
+    var throttleEndTimeMillis: Double
   }
   object ThrottleMetadata {
     

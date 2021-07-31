@@ -31,7 +31,6 @@ import typings.webtorrent.webtorrentStrings.warning
 import typings.webtorrent.webtorrentStrings.wire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,44 +38,48 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("webtorrent", JSImport.Namespace)
   @js.native
-  class ^ () extends Instance {
+  class ^ ()
+    extends StObject
+       with Instance {
     def this(config: Options) = this()
   }
   @JSImport("webtorrent", JSImport.Namespace)
   @js.native
-  val ^ : WebTorrent = js.native
+  val ^ : js.Object & WebTorrent = js.native
   
   @js.native
-  trait Instance extends EventEmitter {
+  trait Instance
+    extends StObject
+       with EventEmitter {
     
     def add(torrent: String): Torrent = js.native
-    def add(torrent: String, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def add(torrent: String, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: String, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(torrent: String, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(torrent: Buffer): Torrent = js.native
-    def add(torrent: Buffer, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def add(torrent: Buffer, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: Buffer, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(torrent: Buffer, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(torrent: typings.parseTorrent.mod.Instance): Torrent = js.native
-    def add(torrent: typings.parseTorrent.mod.Instance, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: typings.parseTorrent.mod.Instance, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(
       torrent: typings.parseTorrent.mod.Instance,
-      opts: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* torrent */ Torrent, _]
+      opts: Unit,
+      cb: js.Function1[/* torrent */ Torrent, js.Any]
     ): Torrent = js.native
     def add(torrent: typings.parseTorrent.mod.Instance, opts: TorrentOptions): Torrent = js.native
     def add(
       torrent: typings.parseTorrent.mod.Instance,
       opts: TorrentOptions,
-      cb: js.Function1[/* torrent */ Torrent, _]
+      cb: js.Function1[/* torrent */ Torrent, js.Any]
     ): Torrent = js.native
     def add(torrent: File): Torrent = js.native
-    def add(torrent: File, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def add(torrent: File, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: File, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def add(torrent: File, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def add(torrent: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     
     def destroy(): Unit = js.native
     def destroy(callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
@@ -97,11 +100,7 @@ object mod extends Shortcut {
     val ratio: Double = js.native
     
     def remove(torrentId: String): Unit = js.native
-    def remove(
-      torrentId: String,
-      opts: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | String, Unit]
-    ): Unit = js.native
+    def remove(torrentId: String, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
     def remove(torrentId: String, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: String,
@@ -109,11 +108,7 @@ object mod extends Shortcut {
       callback: js.Function1[/* err */ Error | String, Unit]
     ): Unit = js.native
     def remove(torrentId: Buffer): Unit = js.native
-    def remove(
-      torrentId: Buffer,
-      opts: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | String, Unit]
-    ): Unit = js.native
+    def remove(torrentId: Buffer, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
     def remove(torrentId: Buffer, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: Buffer,
@@ -121,11 +116,7 @@ object mod extends Shortcut {
       callback: js.Function1[/* err */ Error | String, Unit]
     ): Unit = js.native
     def remove(torrentId: Torrent): Unit = js.native
-    def remove(
-      torrentId: Torrent,
-      opts: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | String, Unit]
-    ): Unit = js.native
+    def remove(torrentId: Torrent, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
     def remove(torrentId: Torrent, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: Torrent,
@@ -134,68 +125,67 @@ object mod extends Shortcut {
     ): Unit = js.native
     
     def seed(input: String): Torrent = js.native
-    def seed(input: String, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: String, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: String, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: String, opts: TorrentOptions): Torrent = js.native
-    def seed(input: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: js.Array[Buffer | File | ReadableStream | String]): Torrent = js.native
     def seed(
       input: js.Array[Buffer | File | ReadableStream | String],
-      cb: js.Function1[/* torrent */ Torrent, _]
+      cb: js.Function1[/* torrent */ Torrent, js.Any]
     ): Torrent = js.native
     def seed(
       input: js.Array[Buffer | File | ReadableStream | String],
-      opts: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* torrent */ Torrent, _]
+      opts: Unit,
+      cb: js.Function1[/* torrent */ Torrent, js.Any]
     ): Torrent = js.native
     def seed(input: js.Array[Buffer | File | ReadableStream | String], opts: TorrentOptions): Torrent = js.native
     def seed(
       input: js.Array[Buffer | File | ReadableStream | String],
       opts: TorrentOptions,
-      cb: js.Function1[/* torrent */ Torrent, _]
+      cb: js.Function1[/* torrent */ Torrent, js.Any]
     ): Torrent = js.native
     def seed(input: Buffer): Torrent = js.native
-    def seed(input: Buffer, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: Buffer, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: Buffer, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: Buffer, opts: TorrentOptions): Torrent = js.native
-    def seed(input: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: ReadableStream): Torrent = js.native
-    def seed(input: ReadableStream, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: ReadableStream, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: ReadableStream, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: ReadableStream, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: ReadableStream, opts: TorrentOptions): Torrent = js.native
-    def seed(input: ReadableStream, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: ReadableStream, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: File): Torrent = js.native
     def seed(input: FileList): Torrent = js.native
-    def seed(input: FileList, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: FileList, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: FileList, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: FileList, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: FileList, opts: TorrentOptions): Torrent = js.native
-    def seed(input: FileList, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: File, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
-    def seed(input: File, opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: FileList, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: File, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     def seed(input: File, opts: TorrentOptions): Torrent = js.native
-    def seed(input: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+    def seed(input: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
     
     val torrents: js.Array[Torrent] = js.native
     
     val uploadSpeed: Double = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var dht: js.UndefOr[Boolean | js.Object] = js.native
+    var dht: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var maxConns: js.UndefOr[Double] = js.native
+    var maxConns: js.UndefOr[Double] = js.undefined
     
-    var nodeId: js.UndefOr[String | Buffer] = js.native
+    var nodeId: js.UndefOr[String | Buffer] = js.undefined
     
-    var peerId: js.UndefOr[String | Buffer] = js.native
+    var peerId: js.UndefOr[String | Buffer] = js.undefined
     
-    var tracker: js.UndefOr[Boolean | js.Object] = js.native
+    var tracker: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var utp: js.UndefOr[Boolean] = js.native
+    var utp: js.UndefOr[Boolean] = js.undefined
     
-    var webSeeds: js.UndefOr[Boolean] = js.native
+    var webSeeds: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -253,7 +243,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Torrent extends EventEmitter {
+  trait Torrent
+    extends StObject
+       with EventEmitter {
     
     def addPeer(peer: String): Boolean = js.native
     def addPeer(peer: typings.simplePeer.mod.Instance): Boolean = js.native
@@ -274,7 +266,7 @@ object mod extends Shortcut {
     def deselect(start: Double, end: Double, priority: Double): Unit = js.native
     
     def destroy(): Unit = js.native
-    def destroy(opts: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def destroy(opts: Unit, cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
     def destroy(opts: TorrentDestroyOptions): Unit = js.native
     def destroy(opts: TorrentDestroyOptions, cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
     
@@ -344,9 +336,9 @@ object mod extends Shortcut {
     def resume(): Unit = js.native
     
     def select(start: Double, end: Double): Unit = js.native
-    def select(start: Double, end: Double, priority: js.UndefOr[scala.Nothing], notify: js.Function0[Unit]): Unit = js.native
     def select(start: Double, end: Double, priority: Double): Unit = js.native
     def select(start: Double, end: Double, priority: Double, notify: js.Function0[Unit]): Unit = js.native
+    def select(start: Double, end: Double, priority: Unit, notify: js.Function0[Unit]): Unit = js.native
     
     val timeRemaining: Double = js.native
     
@@ -359,10 +351,9 @@ object mod extends Shortcut {
     val uploaded: Double = js.native
   }
   
-  @js.native
   trait TorrentDestroyOptions extends StObject {
     
-    var destroyStore: js.UndefOr[Boolean] = js.native
+    var destroyStore: js.UndefOr[Boolean] = js.undefined
   }
   object TorrentDestroyOptions {
     
@@ -384,7 +375,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait TorrentFile extends EventEmitter {
+  trait TorrentFile
+    extends StObject
+       with EventEmitter {
     
     def appendTo(rootElement: String): Unit = js.native
     def appendTo(
@@ -393,7 +386,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     def appendTo(
       rootElement: String,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(rootElement: String, opts: Autoplay): Unit = js.native
@@ -409,7 +402,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     def appendTo(
       rootElement: HTMLElement,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(rootElement: HTMLElement, opts: Autoplay): Unit = js.native
@@ -451,7 +444,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     def renderTo(
       rootElement: String,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(rootElement: String, opts: Autoplay): Unit = js.native
@@ -467,7 +460,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     def renderTo(
       rootElement: HTMLMediaElement,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(rootElement: HTMLMediaElement, opts: Autoplay): Unit = js.native
@@ -480,20 +473,19 @@ object mod extends Shortcut {
     def select(): Unit = js.native
   }
   
-  @js.native
   trait TorrentOptions extends StObject {
     
-    var announce: js.UndefOr[js.Array[_]] = js.native
+    var announce: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var getAnnounceOpts: js.UndefOr[js.Function0[Unit]] = js.native
+    var getAnnounceOpts: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var maxWebConns: js.UndefOr[Double] = js.native
+    var maxWebConns: js.UndefOr[Double] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, _]] = js.native
+    var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, js.Any]] = js.undefined
   }
   object TorrentOptions {
     
@@ -507,7 +499,7 @@ object mod extends Shortcut {
     implicit class TorrentOptionsMutableBuilder[Self <: TorrentOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnnounce(value: js.Array[_]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
+      def setAnnounce(value: js.Array[js.Any]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
@@ -540,19 +532,18 @@ object mod extends Shortcut {
       def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
       @scala.inline
-      def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => _): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
-  @js.native
   trait TorrentPiece extends StObject {
     
-    val length: Double = js.native
+    val length: Double
     
-    val missing: Double = js.native
+    val missing: Double
   }
   object TorrentPiece {
     
@@ -575,7 +566,8 @@ object mod extends Shortcut {
   
   @js.native
   trait WebTorrent
-    extends Instantiable0[Instance]
+    extends StObject
+       with Instantiable0[Instance]
        with Instantiable1[/* config */ Options, Instance] {
     
     def apply(): Instance = js.native
@@ -584,8 +576,8 @@ object mod extends Shortcut {
     var WEBRTC_SUPPORT: Boolean = js.native
   }
   
-  type _To = WebTorrent
+  type _To = js.Object & WebTorrent
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: WebTorrent = ^
+  override def _to: js.Object & WebTorrent = ^
 }

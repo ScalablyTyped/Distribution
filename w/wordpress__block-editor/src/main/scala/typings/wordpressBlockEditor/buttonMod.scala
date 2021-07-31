@@ -6,7 +6,6 @@ import typings.wordpressBlockEditor.buttonMod.URLInputButton.Props
 import typings.wordpressBlockEditor.urlInputMod.URLInput.PostType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -26,17 +25,16 @@ object buttonMod {
   object URLInputButton {
     
     /* Inlined parent std.Pick<@wordpress/block-editor.@wordpress/block-editor/components/url-input.default.Props, 'onChange'> */
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var onChange: js.Function2[/* url */ String, /* post */ PostType | Null, Unit] = js.native
+      var onChange: js.Function2[/* url */ String, /* post */ PostType | Null, Unit]
       
       /**
         * This should be set to the attribute (or component state) property used to store the URL.
         */
-      var url: String = js.native
+      var url: String
     }
     object Props {
       

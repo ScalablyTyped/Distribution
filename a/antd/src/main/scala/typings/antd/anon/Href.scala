@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var title: ReactNode = js.native
+  var title: ReactNode
 }
 object Href {
   

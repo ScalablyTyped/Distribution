@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.SupplyDelivery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodySupplyDeliveryHeaders extends StObject {
   
-  var body: SupplyDelivery = js.native
+  var body: SupplyDelivery
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery
 }
 object BodySupplyDeliveryHeaders {
   
   @scala.inline
-  def apply(
-    body: SupplyDelivery,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery
-  ): BodySupplyDeliveryHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: SupplyDelivery, id: String): BodySupplyDeliveryHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "SupplyDelivery")
     __obj.asInstanceOf[BodySupplyDeliveryHeaders]
   }
   

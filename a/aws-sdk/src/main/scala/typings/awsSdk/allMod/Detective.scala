@@ -4,7 +4,6 @@ import typings.awsSdk.detectiveMod.ClientConfiguration
 import typings.awsSdk.detectiveMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "Detective")

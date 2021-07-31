@@ -3,21 +3,24 @@ package typings.opentracing
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryCarrierMod {
   
   @JSImport("opentracing/lib/binary_carrier", JSImport.Default)
   @js.native
-  class default protected () extends BinaryCarrier {
+  class default protected ()
+    extends StObject
+       with BinaryCarrier {
     def this(buffer: ArrayLike[Double]) = this()
+    
+    /* CompleteClass */
+    var buffer: ArrayLike[Double] = js.native
   }
   
-  @js.native
   trait BinaryCarrier extends StObject {
     
-    var buffer: ArrayLike[Double] = js.native
+    var buffer: ArrayLike[Double]
   }
   object BinaryCarrier {
     

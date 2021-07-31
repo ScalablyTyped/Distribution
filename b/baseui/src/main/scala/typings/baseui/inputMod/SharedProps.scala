@@ -12,46 +12,44 @@ import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedProps extends StObject {
   
   /** Defines styles for inputs that are grouped with other controls. */
   @JSName("$adjoined")
-  var $adjoined: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both = js.native
+  var $adjoined: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both
   
   /** Renders UI in 'disabled' state */
   @JSName("$disabled")
-  var $disabled: Boolean = js.native
+  var $disabled: Boolean
   
   /** Renders UI in 'error' state */
   @JSName("$error")
-  var $error: Boolean = js.native
+  var $error: Boolean
   
   /** Defines if has a clearable or MaskToggleButton at the end */
   @JSName("$hasIconTrailing")
-  var $hasIconTrailing: Boolean = js.native
+  var $hasIconTrailing: Boolean
   
   /** Renders UI in 'focus' state */
   @JSName("$isFocused")
-  var $isFocused: Boolean = js.native
+  var $isFocused: Boolean
   
   @JSName("$position")
-  var $position: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end = js.native
+  var $position: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end
   
   /** Renders UI in 'positive' state */
   @JSName("$positive")
-  var $positive: Boolean = js.native
+  var $positive: Boolean
   
   /** Renders UI in 'required' state */
   @JSName("$required")
-  var $required: Boolean = js.native
+  var $required: Boolean
   
   /** Renders UI in provided size. */
   @JSName("$size")
-  var $size: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_ = js.native
+  var $size: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_
 }
 object SharedProps {
   

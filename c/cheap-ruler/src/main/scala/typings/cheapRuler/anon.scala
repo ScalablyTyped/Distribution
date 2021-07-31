@@ -3,19 +3,17 @@ package typings.cheapRuler
 import typings.cheapRuler.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var point: Point = js.native
+    var point: Point
     
-    var t: Double = js.native
+    var t: Double
   }
   object Index {
     

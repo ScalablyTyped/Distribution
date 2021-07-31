@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** manages the functionality specific for a top window. */
-@js.native
-trait XTopWindow extends XInterface {
+trait XTopWindow
+  extends StObject
+     with XInterface {
   
   /** adds the specified top window listener to receive window events from this window. */
-  def addTopWindowListener(xListener: XTopWindowListener): Unit = js.native
+  def addTopWindowListener(xListener: XTopWindowListener): Unit
   
   /** removes the specified top window listener so that it no longer receives window events from this window. */
-  def removeTopWindowListener(xListener: XTopWindowListener): Unit = js.native
+  def removeTopWindowListener(xListener: XTopWindowListener): Unit
   
   /** sets a menu bar. */
-  def setMenuBar(xMenu: XMenuBar): Unit = js.native
+  def setMenuBar(xMenu: XMenuBar): Unit
   
   /** places this window at the bottom of the stacking order and makes the corresponding adjustment to other visible windows. */
-  def toBack(): Unit = js.native
+  def toBack(): Unit
   
   /** places this window at the top of the stacking order and shows it in front of any other windows. */
-  def toFront(): Unit = js.native
+  def toFront(): Unit
 }
 object XTopWindow {
   

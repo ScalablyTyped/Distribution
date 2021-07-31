@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatientGeteverything extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatientGeteverything
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The response includes records prior to the end date. If no end date is
     * provided, all records subsequent to the start date are in scope.
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the patient for which the information is required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The response includes records subsequent to the start date. If no start
     * date is provided, all records prior to the end date are in scope.
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatientGeteverything {
   

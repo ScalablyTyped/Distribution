@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.anon.Dispose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Disposable")
@@ -24,6 +23,10 @@ class Disposable protected () extends StObject {
 /* static members */
 object Disposable {
   
+  @JSImport("vscode", "Disposable")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Combine many disposable-likes into one. Use this method
     * when having objects with a dispose function which are not
@@ -33,7 +36,6 @@ object Disposable {
     * @return Returns a new disposable which, upon dispose, will
     * dispose all provided disposables.
     */
-  @JSImport("vscode", "Disposable.from")
-  @js.native
-  def from(disposableLikes: Dispose*): Disposable = js.native
+  @scala.inline
+  def from(disposableLikes: Dispose*): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposableLikes.asInstanceOf[js.Any]).asInstanceOf[Disposable]
 }

@@ -2,24 +2,23 @@ package typings.esquery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Matches_
-  extends MultiSelectorAtom
+  extends StObject
+     with MultiSelectorAtom
      with MultiSelector
      with Selector {
   
   @JSName("type")
-  var type_Matches_ : typings.esquery.esqueryStrings.matches = js.native
+  var type_Matches_ : typings.esquery.esqueryStrings.matches
 }
 object Matches_ {
   
   @scala.inline
-  def apply(selectors: js.Array[SubjectSelector], `type`: typings.esquery.esqueryStrings.matches): Matches_ = {
+  def apply(selectors: js.Array[SubjectSelector]): Matches_ = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("matches")
     __obj.asInstanceOf[Matches_]
   }
   

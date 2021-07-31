@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentMod extends Shortcut {
@@ -15,35 +14,34 @@ object commentMod extends Shortcut {
   @js.native
   val default: FC[CommentProps] = js.native
   
-  @js.native
   trait CommentProps extends StObject {
     
     /** List of action items rendered below the comment content */
-    var actions: js.UndefOr[js.Array[ReactNode]] = js.native
+    var actions: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
     /** The element to display as the comment author. */
-    var author: js.UndefOr[ReactNode] = js.native
+    var author: js.UndefOr[ReactNode] = js.undefined
     
     /** The element to display as the comment avatar - generally an antd Avatar */
-    var avatar: js.UndefOr[ReactNode] = js.native
+    var avatar: js.UndefOr[ReactNode] = js.undefined
     
     /** Nested comments should be provided as children of the Comment */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** className of comment */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** The main content of the comment */
-    var content: ReactNode = js.native
+    var content: ReactNode
     
     /** A datetime element containing the time to be displayed */
-    var datetime: js.UndefOr[ReactNode] = js.native
+    var datetime: js.UndefOr[ReactNode] = js.undefined
     
     /** Comment prefix defaults to '.ant-comment' */
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
     /** Additional style for the comment */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CommentProps {
     

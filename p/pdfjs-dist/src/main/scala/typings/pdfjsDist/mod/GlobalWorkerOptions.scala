@@ -2,13 +2,11 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalWorkerOptions extends StObject {
   
-  var workerSrc: String = js.native
+  var workerSrc: String
 }
 object GlobalWorkerOptions {
   

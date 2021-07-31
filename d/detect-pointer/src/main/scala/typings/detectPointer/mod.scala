@@ -3,7 +3,6 @@ package typings.detectPointer
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,22 +16,21 @@ object mod extends Shortcut {
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
   override def _to: typings.detectPointer.mod.detectPointer = default
   
-  @js.native
   trait detectPointer extends StObject {
     
-    var anyCoarse: Boolean = js.native
+    var anyCoarse: Boolean
     
-    var anyFine: Boolean = js.native
+    var anyFine: Boolean
     
-    var anyNone: Boolean = js.native
+    var anyNone: Boolean
     
-    var coarse: Boolean = js.native
+    var coarse: Boolean
     
-    var fine: Boolean = js.native
+    var fine: Boolean
     
-    var none: Boolean = js.native
+    var none: Boolean
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object detectPointer {
     

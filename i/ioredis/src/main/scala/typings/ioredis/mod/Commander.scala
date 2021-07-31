@@ -3,19 +3,17 @@ package typings.ioredis.mod
 import typings.ioredis.anon.Lua
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commander extends StObject {
   
-  def createBuiltinCommand(commandName: String): js.Object = js.native
+  def createBuiltinCommand(commandName: String): js.Object
   
-  def defineCommand(name: String, definition: Lua): Unit = js.native
+  def defineCommand(name: String, definition: Lua): Unit
   
-  def getBuiltinCommands(): js.Array[String] = js.native
+  def getBuiltinCommands(): js.Array[String]
   
-  def sendCommand(): Unit = js.native
+  def sendCommand(): Unit
 }
 object Commander {
   

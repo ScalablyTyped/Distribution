@@ -4,32 +4,31 @@ import typings.iobroker.iobrokerStrings.adapter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdapterObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_AdapterObject: AdapterCommon = js.native
+  var common_AdapterObject: AdapterCommon
   
   /** Like protectedNative, but the properties are also encrypted and decrypted automatically */
-  var encryptedNative: js.UndefOr[js.Array[String]] = js.native
+  var encryptedNative: js.UndefOr[js.Array[String]] = js.undefined
   
   /** An array of `native` properties which cannot be accessed from outside the defining adapter */
-  var protectedNative: js.UndefOr[js.Array[String]] = js.native
+  var protectedNative: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_AdapterObject: adapter = js.native
+  var type_AdapterObject: adapter
 }
 object AdapterObject {
   
   @scala.inline
-  def apply(_id: String, common: AdapterCommon, native: Record[String, _], `type`: adapter): AdapterObject = {
+  def apply(_id: String, common: AdapterCommon, native: Record[String, js.Any]): AdapterObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("adapter")
     __obj.asInstanceOf[AdapterObject]
   }
   

@@ -2,16 +2,14 @@ package typings.websocket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouterConfig extends StObject {
   
   /*
     * The WebSocketServer instance to attach to.
     */
-  var server: typings.websocket.mod.server = js.native
+  var server: typings.websocket.mod.server
 }
 object IRouterConfig {
   

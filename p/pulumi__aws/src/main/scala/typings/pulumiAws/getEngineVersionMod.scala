@@ -3,46 +3,44 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEngineVersionMod {
   
-  @JSImport("@pulumi/aws/docdb/getEngineVersion", "getEngineVersion")
+  @JSImport("@pulumi/aws/docdb/getEngineVersion", JSImport.Namespace)
   @js.native
-  def getEngineVersion(): js.Promise[GetEngineVersionResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getEngineVersion", "getEngineVersion")
-  @js.native
-  def getEngineVersion(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEngineVersionResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getEngineVersion", "getEngineVersion")
-  @js.native
-  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getEngineVersion", "getEngineVersion")
-  @js.native
-  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEngineVersion(): js.Promise[GetEngineVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")().asInstanceOf[js.Promise[GetEngineVersionResult]]
+  @scala.inline
+  def getEngineVersion(args: Unit, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  @scala.inline
+  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  @scala.inline
+  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  
   trait GetEngineVersionArgs extends StObject {
     
     /**
       * DB engine. (Default: `docdb`)
       */
-    val engine: js.UndefOr[String] = js.native
+    val engine: js.UndefOr[String] = js.undefined
     
     /**
       * The name of a specific DB parameter group family. An example parameter group family is `docdb3.6`.
       */
-    val parameterGroupFamily: js.UndefOr[String] = js.native
+    val parameterGroupFamily: js.UndefOr[String] = js.undefined
     
     /**
       * Ordered list of preferred engine versions. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned. If both the `version` and `preferredVersions` arguments are not configured, the data source will return the default version for the engine.
       */
-    val preferredVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredVersions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Version of the DB engine. For example, `3.6.0`. If `version` and `preferredVersions` are not set, the data source will provide information for the AWS-defined default version. If both the `version` and `preferredVersions` arguments are not configured, the data source will return the default version for the engine.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetEngineVersionArgs {
     
@@ -84,46 +82,45 @@ object getEngineVersionMod {
     }
   }
   
-  @js.native
   trait GetEngineVersionResult extends StObject {
     
-    val engine: js.UndefOr[String] = js.native
+    val engine: js.UndefOr[String] = js.undefined
     
     /**
       * The description of the database engine.
       */
-    val engineDescription: String = js.native
+    val engineDescription: String
     
     /**
       * Set of log types that the database engine has available for export to CloudWatch Logs.
       */
-    val exportableLogTypes: js.Array[String] = js.native
+    val exportableLogTypes: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val parameterGroupFamily: String = js.native
+    val parameterGroupFamily: String
     
-    val preferredVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredVersions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Indicates whether the engine version supports exporting the log types specified by `exportableLogTypes` to CloudWatch Logs.
       */
-    val supportsLogExportsToCloudwatch: Boolean = js.native
+    val supportsLogExportsToCloudwatch: Boolean
     
     /**
       * A set of engine versions that this database engine version can be upgraded to.
       */
-    val validUpgradeTargets: js.Array[String] = js.native
+    val validUpgradeTargets: js.Array[String]
     
-    val version: String = js.native
+    val version: String
     
     /**
       * The description of the database engine version.
       */
-    val versionDescription: String = js.native
+    val versionDescription: String
   }
   object GetEngineVersionResult {
     

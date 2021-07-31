@@ -9,11 +9,12 @@ import typings.browserfs.folderAdapterMod.FolderAdapterOptions
 import typings.browserfs.folderAdapterMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofFolderAdapter extends Instantiable2[/* folder */ String, /* wrapped */ FileSystem, default] {
+trait TypeofFolderAdapter
+  extends StObject
+     with Instantiable2[/* folder */ String, /* wrapped */ FileSystem, default] {
   
   /**
     * Creates a FolderAdapter instance with the given options.

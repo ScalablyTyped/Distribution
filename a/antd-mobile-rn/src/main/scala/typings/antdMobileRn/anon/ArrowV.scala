@@ -2,45 +2,43 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowV extends StObject {
   
-  var Arrow: MarginLeftMarginTop = js.native
+  var Arrow: MarginLeftMarginTop
   
-  var ArrowV: MarginLeftWidth = js.native
+  var ArrowV: MarginLeftWidth
   
-  var Body: BorderTopColor = js.native
+  var Body: BorderTopColor
   
-  var BodyBottomLine: BorderBottomWidth = js.native
+  var BodyBottomLine: BorderBottomWidth
   
-  var Brief: MinHeightNumber = js.native
+  var Brief: MinHeightNumber
   
-  var BriefText: FontSizePaddingTop = js.native
+  var BriefText: FontSizePaddingTop
   
-  var Content: FontSizeTextAlignVertical = js.native
+  var Content: FontSizeTextAlignVertical
   
-  var Extra: FontSizeTextAlign = js.native
+  var Extra: FontSizeTextAlign
   
-  var Footer: PaddingVertical = js.native
+  var Footer: PaddingVertical
   
-  var Header: PaddingTop = js.native
+  var Header: PaddingTop
   
-  var Item: FlexGrow = js.native
+  var Item: FlexGrow
   
-  var Line: MinHeight = js.native
+  var Line: MinHeight
   
-  var Thumb: HeightMarginRight = js.native
+  var Thumb: HeightMarginRight
   
-  var column: FlexFlexDirection = js.native
+  var column: FlexFlexDirection
   
-  var multipleLine: PaddingVerticalNumber = js.native
+  var multipleLine: PaddingVerticalNumber
   
-  var multipleThumb: HeightWidth = js.native
+  var multipleThumb: HeightWidth
   
-  var underlayColor: BackgroundColorString = js.native
+  var underlayColor: BackgroundColorString
 }
 object ArrowV {
   

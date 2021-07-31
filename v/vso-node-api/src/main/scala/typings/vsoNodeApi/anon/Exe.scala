@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exe extends StObject {
   
-  var exe: scala.Double = js.native
+  var exe: scala.Double
   
-  var msi: scala.Double = js.native
+  var msi: scala.Double
   
-  var referralLink: scala.Double = js.native
+  var referralLink: scala.Double
   
-  var vsix: scala.Double = js.native
+  var vsix: scala.Double
 }
 object Exe {
   

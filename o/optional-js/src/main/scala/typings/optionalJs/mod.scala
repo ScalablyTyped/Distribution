@@ -3,59 +3,19 @@ package typings.optionalJs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("optional-js", JSImport.Default)
   @js.native
-  class default[T] protected () extends Optional[T] {
+  class default[T] protected ()
+    extends StObject
+       with Optional[T] {
     protected def this(value: T) = this()
-  }
-  /* static members */
-  object default {
     
-    /**
-      * Returns an empty Optional instance. No value is present for this Optional.
-      *
-      * @return an empty Optional
-      */
-    @JSImport("optional-js", "default.empty")
-    @js.native
-    def empty[T](): Optional[T] = js.native
-    
-    /**
-      * Returns an Optional describing the given non-null value.
-      *
-      * @typeparam T the type of the value
-      * @param value the value to describe, which must be non-null
-      * @return an Optional with the value present
-      * @throws Error if value is null
-      */
-    @JSImport("optional-js", "default.of")
-    @js.native
-    def of[T](value: T): Optional[T] = js.native
-    
-    /**
-      * Returns an Optional describing the given value, if non-null, otherwise returns an empty Optional.
-      *
-      * @typeparam T the type of the value
-      * @param value the possibly-null value to describe
-      * @return an Optional with a present value if the specified value is non-null, otherwise an empty Optional
-      */
-    @JSImport("optional-js", "default.ofNullable")
-    @js.native
-    def ofNullable[T](): Optional[T] = js.native
-    @JSImport("optional-js", "default.ofNullable")
-    @js.native
-    def ofNullable[T](value: T): Optional[T] = js.native
-  }
-  
-  @js.native
-  trait Optional[T] extends StObject {
-    
-    val _value: js.Any = js.native
+    /* CompleteClass */
+    override val _value: js.Any = js.native
     
     /**
       * If a value is present, and the value matches the given predicate, return an Optional describing the value,
@@ -66,7 +26,8 @@ object mod {
       * predicate, otherwise an empty Optional
       * @throws Error if the predicate is null
       */
-    def filter(predicate: js.Function1[/* value */ T, Boolean]): Optional[T] = js.native
+    /* CompleteClass */
+    override def filter(predicate: js.Function1[T, Boolean]): Optional[T] = js.native
     
     /**
       * If a value is present, apply the provided Optional-bearing mapping function to it, return that result,
@@ -79,7 +40,8 @@ object mod {
       * if a value is present, otherwise an empty Optional
       * @throws Error if the mapping function is null or returns a null result
       */
-    def flatMap[U](mapper: js.Function1[/* value */ T, js.UndefOr[Optional[U] | Null]]): Optional[U] = js.native
+    /* CompleteClass */
+    override def flatMap[U](mapper: js.Function1[T, js.UndefOr[Optional[U] | Null]]): Optional[U] = js.native
     
     /**
       * If a value is present in this Optional, returns the value, otherwise throws an Error.
@@ -87,14 +49,16 @@ object mod {
       * @return the non-null value held by this Optional
       * @throws Error if the value is null;
       */
-    def get(): T = js.native
+    /* CompleteClass */
+    override def get(): T = js.native
     
     /**
       * If a value is present, invoke the specified consumer with the value, otherwise do nothing.
       *
       * @param consumer function to be executed if a value is present
       */
-    def ifPresent(consumer: js.Function1[/* value */ T, Unit]): Unit = js.native
+    /* CompleteClass */
+    override def ifPresent(consumer: js.Function1[T, Unit]): Unit = js.native
     
     /**
       * If a value is present, performs the given action with the value, otherwise performs the given empty-based action.
@@ -103,14 +67,16 @@ object mod {
       * @param emptyAction the empty-based action to be performed, if no value is present
       * @throws if a value is present and the given action is null, or no value is present and the given empty-based action is null.
       */
-    def ifPresentOrElse(action: js.Function1[/* value */ T, Unit], emptyAction: js.Function0[Unit]): Unit = js.native
+    /* CompleteClass */
+    override def ifPresentOrElse(action: js.Function1[T, Unit], emptyAction: js.Function0[Unit]): Unit = js.native
     
     /**
       * Return true if there is a value present, otherwise false.
       *
       * @return true if there is a value present, otherwise false
       */
-    def isPresent(): Boolean = js.native
+    /* CompleteClass */
+    override def isPresent(): Boolean = js.native
     
     /**
       * If a value is present, apply the provided mapping function to it, and if the result is non-null,
@@ -122,7 +88,8 @@ object mod {
       * if a value is present, otherwise an empty Optional
       * @throws Error if the mapping function is null
       */
-    def map[U](mapper: js.Function1[/* value */ T, js.UndefOr[U | Null]]): Optional[U] = js.native
+    /* CompleteClass */
+    override def map[U](mapper: js.Function1[T, js.UndefOr[U | Null]]): Optional[U] = js.native
     
     /**
       * If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.
@@ -132,7 +99,8 @@ object mod {
       * otherwise an Optional produced by the supplying function.
       * @throws Error if the supplying function is null or produces a null result
       */
-    def or(optionalSupplier: js.Function0[Optional[T]]): Optional[T] = js.native
+    /* CompleteClass */
+    override def or(optionalSupplier: js.Function0[Optional[T]]): Optional[T] = js.native
     
     /**
       * If a value is present, returns the value, otherwise returns other.
@@ -140,7 +108,8 @@ object mod {
       * @param other the value to be returned, if no value is present. May be null.
       * @return the value, if present, otherwise other
       */
-    def orElse(other: T): T = js.native
+    /* CompleteClass */
+    override def orElse(other: T): T = js.native
     
     /**
       * If a value is present, returns the value, otherwise returns the result produced by the supplying function.
@@ -149,7 +118,8 @@ object mod {
       * @return the value, if present, otherwise the result produced by the supplying function
       * @throws Error if no value is present and the supplying function is null
       */
-    def orElseGet(supplier: js.Function0[T]): T = js.native
+    /* CompleteClass */
+    override def orElseGet(supplier: js.Function0[T]): T = js.native
     
     /**
       * If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function.
@@ -158,7 +128,154 @@ object mod {
       * @return the value, if present
       * @throws Error if no value is present and the exception supplying function is null
       */
-    def orElseThrow(exceptionSupplier: js.Function0[Error]): T = js.native
+    /* CompleteClass */
+    override def orElseThrow(exceptionSupplier: js.Function0[Error]): T = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("optional-js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Returns an empty Optional instance. No value is present for this Optional.
+      *
+      * @return an empty Optional
+      */
+    @scala.inline
+    def empty[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Optional[T]]
+    
+    /**
+      * Returns an Optional describing the given non-null value.
+      *
+      * @typeparam T the type of the value
+      * @param value the value to describe, which must be non-null
+      * @return an Optional with the value present
+      * @throws Error if value is null
+      */
+    @scala.inline
+    def of[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    
+    /**
+      * Returns an Optional describing the given value, if non-null, otherwise returns an empty Optional.
+      *
+      * @typeparam T the type of the value
+      * @param value the possibly-null value to describe
+      * @return an Optional with a present value if the specified value is non-null, otherwise an empty Optional
+      */
+    @scala.inline
+    def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
+    @scala.inline
+    def ofNullable[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+  }
+  
+  trait Optional[T] extends StObject {
+    
+    val _value: js.Any
+    
+    /**
+      * If a value is present, and the value matches the given predicate, return an Optional describing the value,
+      * otherwise return an empty Optional.
+      *
+      * @param predicate A predicate to apply to the value, if present
+      * @return an Optional describing the value of this Optional if a value is present and the value matches the given
+      * predicate, otherwise an empty Optional
+      * @throws Error if the predicate is null
+      */
+    def filter(predicate: js.Function1[/* value */ T, Boolean]): Optional[T]
+    
+    /**
+      * If a value is present, apply the provided Optional-bearing mapping function to it, return that result,
+      * otherwise return an empty Optional. This method is similar to map(Function), but the provided mapper is one whose
+      * result is already an Optional, and if invoked, flatMap does not wrap it with an additional Optional.
+      *
+      * @typeparam U The type parameter to the Optional returned by the mapping function
+      * @param mapper a mapping function to apply to the value, if present the mapping function
+      * @return the result of applying an Optional-bearing mapping function to the value of this Optional,
+      * if a value is present, otherwise an empty Optional
+      * @throws Error if the mapping function is null or returns a null result
+      */
+    def flatMap[U](mapper: js.Function1[/* value */ T, js.UndefOr[Optional[U] | Null]]): Optional[U]
+    
+    /**
+      * If a value is present in this Optional, returns the value, otherwise throws an Error.
+      *
+      * @return the non-null value held by this Optional
+      * @throws Error if the value is null;
+      */
+    def get(): T
+    
+    /**
+      * If a value is present, invoke the specified consumer with the value, otherwise do nothing.
+      *
+      * @param consumer function to be executed if a value is present
+      */
+    def ifPresent(consumer: js.Function1[/* value */ T, Unit]): Unit
+    
+    /**
+      * If a value is present, performs the given action with the value, otherwise performs the given empty-based action.
+      *
+      * @param action the action to be performed, if a value is present
+      * @param emptyAction the empty-based action to be performed, if no value is present
+      * @throws if a value is present and the given action is null, or no value is present and the given empty-based action is null.
+      */
+    def ifPresentOrElse(action: js.Function1[/* value */ T, Unit], emptyAction: js.Function0[Unit]): Unit
+    
+    /**
+      * Return true if there is a value present, otherwise false.
+      *
+      * @return true if there is a value present, otherwise false
+      */
+    def isPresent(): Boolean
+    
+    /**
+      * If a value is present, apply the provided mapping function to it, and if the result is non-null,
+      * return an Optional describing the result. Otherwise return an empty Optional.
+      *
+      * @typeparam U The type of the result of the mapping function
+      * @param mapper a mapping function to apply to the value, if present.
+      * @return an Optional describing the result of applying a mapping function to the value of this Optional,
+      * if a value is present, otherwise an empty Optional
+      * @throws Error if the mapping function is null
+      */
+    def map[U](mapper: js.Function1[/* value */ T, js.UndefOr[U | Null]]): Optional[U]
+    
+    /**
+      * If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.
+      *
+      * @param optionalSupplier the supplying function that produces an Optional to be returned
+      * @return returns an Optional describing the value of this Optional, if a value is present,
+      * otherwise an Optional produced by the supplying function.
+      * @throws Error if the supplying function is null or produces a null result
+      */
+    def or(optionalSupplier: js.Function0[Optional[T]]): Optional[T]
+    
+    /**
+      * If a value is present, returns the value, otherwise returns other.
+      *
+      * @param other the value to be returned, if no value is present. May be null.
+      * @return the value, if present, otherwise other
+      */
+    def orElse(other: T): T
+    
+    /**
+      * If a value is present, returns the value, otherwise returns the result produced by the supplying function.
+      *
+      * @param supplier the supplying function that produces a value to be returned
+      * @return the value, if present, otherwise the result produced by the supplying function
+      * @throws Error if no value is present and the supplying function is null
+      */
+    def orElseGet(supplier: js.Function0[T]): T
+    
+    /**
+      * If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function.
+      *
+      * @param exceptionSupplier the supplying function that produces an exception to be thrown
+      * @return the value, if present
+      * @throws Error if no value is present and the exception supplying function is null
+      */
+    def orElseThrow(exceptionSupplier: js.Function0[Error]): T
   }
   object Optional {
     
@@ -182,7 +299,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[_], T] (val x: Self with Optional[T]) extends AnyVal {
+    implicit class OptionalMutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: js.Function1[/* value */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))

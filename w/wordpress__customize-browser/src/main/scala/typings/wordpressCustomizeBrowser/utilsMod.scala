@@ -11,17 +11,15 @@ import typings.wordpressCustomizeBrowser.panelMod.Panel
 import typings.wordpressCustomizeBrowser.sectionMod.Section
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @js.native
   trait HighlightButtonOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var focusTarget: js.UndefOr[JQuery[HTMLElement]] = js.native
+    var focusTarget: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   }
   object HighlightButtonOptions {
     
@@ -53,7 +51,7 @@ object utilsMod {
     
     def areElementListsEqual(listA: js.Array[JQuery[HTMLElement]], listB: js.Array[JQuery[HTMLElement]]): Boolean = js.native
     
-    def bubbleChildValueChanges(instance: Class, properties: js.Array[_]): Unit = js.native
+    def bubbleChildValueChanges(instance: Class, properties: js.Array[js.Any]): Unit = js.native
     
     def getCurrentTimestamp(): Double = js.native
     

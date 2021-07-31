@@ -9,57 +9,55 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactUtilsMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "createReactRef")
+  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", JSImport.Namespace)
   @js.native
-  def createReactRef[T](): RefObject[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "ensureElement")
-  @js.native
-  def ensureElement(): js.UndefOr[ReactElement] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "ensureElement")
-  @js.native
+  @scala.inline
+  def createReactRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactRef")().asInstanceOf[RefObject[T]]
+  
+  @scala.inline
+  def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
   def ensureElement(
-    child: js.UndefOr[ReactNode],
+    child: Unit,
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
-  ): js.UndefOr[ReactElement] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "ensureElement")
-  @js.native
-  def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = js.native
+  ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
+  def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
+  def ensureElement(
+    child: ReactNode,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+  ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "getDisplayName")
-  @js.native
-  def getDisplayName(ComponentClass: INamed): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "getDisplayName")
-  @js.native
-  def getDisplayName(ComponentClass: ComponentType[js.Object]): String = js.native
+  @scala.inline
+  def getDisplayName(ComponentClass: INamed): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getDisplayName(ComponentClass: ComponentType[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "isElementOfType")
-  @js.native
-  def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "isReactElement")
-  @js.native
-  def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactElement")(child.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(node: js.UndefOr[ReactNode], skipArray: Boolean): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/reactUtils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(node: ReactNode): Boolean = js.native
+  @scala.inline
+  def isReactNodeEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")().asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: Unit, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: ReactNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait INamed extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object INamed {
     
@@ -82,6 +80,6 @@ object reactUtilsMod {
   
   type LifecycleCompatPolyfill[P, T /* <: ComponentClass[P, ComponentState] */] = js.Function1[
     /* Comp */ T, 
-    T with typings.blueprintjsCore.blueprintjsCoreStrings.LifecycleCompatPolyfill with TopLevel[T]
+    T & typings.blueprintjsCore.blueprintjsCoreStrings.LifecycleCompatPolyfill & TopLevel[T]
   ]
 }

@@ -11,8 +11,8 @@ An implementation of the DOMException class from browsers
 | Full name          | domexception |
 | Keywords           | dom, webidl, web idl, domexception, error, exception |
 | # releases         | 3 |
-| # dependents       | 62 |
-| # downloads        | 322741523 |
+| # dependents       | 101 |
+| # downloads        | 430263332 |
 | # stars            | 0 |
 
 ## Links

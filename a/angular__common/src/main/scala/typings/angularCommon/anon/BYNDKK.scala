@@ -2,33 +2,31 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BYNDKK extends StObject {
   
-  var BYN: js.Array[js.UndefOr[String]] = js.native
+  var BYN: js.Array[js.UndefOr[String]]
   
-  var DKK: js.Array[js.UndefOr[String]] = js.native
+  var DKK: js.Array[js.UndefOr[String]]
   
-  var HRK: js.Array[js.UndefOr[String]] = js.native
+  var HRK: js.Array[js.UndefOr[String]]
   
-  var ISK: js.Array[js.UndefOr[String]] = js.native
+  var ISK: js.Array[js.UndefOr[String]]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var NOK: js.Array[js.UndefOr[String]] = js.native
+  var NOK: js.Array[js.UndefOr[String]]
   
-  var PLN: js.Array[js.UndefOr[String]] = js.native
+  var PLN: js.Array[js.UndefOr[String]]
   
-  var SEK: js.Array[js.UndefOr[String]] = js.native
+  var SEK: js.Array[js.UndefOr[String]]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TWD: js.Array[String] = js.native
+  var TWD: js.Array[String]
   
-  var ZAR: js.Array[String] = js.native
+  var ZAR: js.Array[String]
 }
 object BYNDKK {
   

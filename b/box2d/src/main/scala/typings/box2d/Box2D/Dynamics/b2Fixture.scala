@@ -8,7 +8,6 @@ import typings.box2d.Box2D.Collision.b2RayCastOutput
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

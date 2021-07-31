@@ -15,117 +15,116 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLAttributes[T]
-  extends AriaAttributes
+  extends StObject
+     with AriaAttributes
      with DOMAttributes[T] {
   
   // RDFa Attributes
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
   // Standard HTML Attributes
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
   // Non-standard Attributes
-  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
   // React-specific Attributes
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Booleanish] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
   // Living Standard
   /**
     * Hints at the type of data that might be entered by the user while editing the element or its contents
     * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
     */
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
   /**
     * Specify that a standard HTML element should behave like a defined custom built-in element
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   // Unknown
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr[yes | no] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
 }
 object HTMLAttributes {
   
@@ -136,7 +135,7 @@ object HTMLAttributes {
   }
   
   @scala.inline
-  implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[_], T] (val x: Self with HTMLAttributes[T]) extends AnyVal {
+  implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])

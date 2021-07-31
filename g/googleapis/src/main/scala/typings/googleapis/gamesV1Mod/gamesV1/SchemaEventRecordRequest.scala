@@ -2,36 +2,34 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an event period update resource.
   */
-@js.native
 trait SchemaEventRecordRequest extends StObject {
   
   /**
     * The current time when this update was sent, in milliseconds, since 1970
     * UTC (Unix Epoch).
     */
-  var currentTimeMillis: js.UndefOr[String] = js.native
+  var currentTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#eventRecordRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The request ID used to identify this attempt to record events.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the time period updates being made in this request.
     */
-  var timePeriods: js.UndefOr[js.Array[SchemaEventPeriodUpdate]] = js.native
+  var timePeriods: js.UndefOr[js.Array[SchemaEventPeriodUpdate]] = js.undefined
 }
 object SchemaEventRecordRequest {
   

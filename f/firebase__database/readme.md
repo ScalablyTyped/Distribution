@@ -10,9 +10,9 @@ This is the Firebase Realtime Database component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/database |
 | Keywords           | - |
-| # releases         | 1211 |
+| # releases         | 1396 |
 | # dependents       | 18 |
-| # downloads        | 61575731 |
+| # downloads        | 68380496 |
 | # stars            | 0 |
 
 ## Links

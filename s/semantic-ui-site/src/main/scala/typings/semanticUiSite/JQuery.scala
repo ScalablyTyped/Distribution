@@ -16,37 +16,49 @@ import typings.semanticUiSite.semanticUiSiteStrings.siteNamespace
 import typings.semanticUiSite.semanticUiSiteStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def site(): JQuery = js.native
-  def site(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def site(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: modules, value: js.UndefOr[scala.Nothing]): js.Array[String] = js.native
-  def site(behavior: setting, name: modules, value: js.Array[String]): JQuery = js.native
-  def site(behavior: setting, name: namespaceStub, value: NamespaceStubSettings): JQuery = js.native
-  def site(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def site(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def site(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def site(behavior: setting, name: name, value: String): JQuery = js.native
-  def site(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def site(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def site(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: siteNamespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def site(behavior: setting, name: siteNamespace, value: String): JQuery = js.native
-  def site(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def site(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def site(settings: SiteSettings): JQuery = js.native
+  def site(): JQuery
+  def site(behavior: setting, name: debug, value: Boolean): JQuery
+  def site(behavior: setting, name: debug, value: Unit): Boolean
+  def site(behavior: setting, name: modules, value: js.Array[String]): JQuery
+  def site(behavior: setting, name: modules, value: Unit): js.Array[String]
+  def site(behavior: setting, name: namespaceStub, value: Unit): NamespaceStubSettings
+  def site(behavior: setting, name: namespaceStub, value: NamespaceStubSettings): JQuery
+  def site(behavior: setting, name: namespace, value: String): JQuery
+  def site(behavior: setting, name: namespace, value: Unit): String
+  def site(behavior: setting, name: name, value: String): JQuery
+  def site(behavior: setting, name: name, value: Unit): String
+  def site(behavior: setting, name: performance, value: Boolean): JQuery
+  def site(behavior: setting, name: performance, value: Unit): Boolean
+  def site(behavior: setting, name: silent, value: Boolean): JQuery
+  def site(behavior: setting, name: silent, value: Unit): Boolean
+  def site(behavior: setting, name: siteNamespace, value: String): JQuery
+  def site(behavior: setting, name: siteNamespace, value: Unit): String
+  def site(behavior: setting, name: verbose, value: Boolean): JQuery
+  def site(behavior: setting, name: verbose, value: Unit): Boolean
+  def site(settings: SiteSettings): JQuery
   @JSName("site")
-  def site_NamespaceStubSettings(behavior: setting, name: namespaceStub, value: js.UndefOr[scala.Nothing]): NamespaceStubSettings = js.native
+  var site_Original: Site
   @JSName("site")
-  var site_Original: Site = js.native
+  def site_destroy(behavior: destroy): JQuery
   @JSName("site")
-  def site_destroy(behavior: destroy): JQuery = js.native
-  @JSName("site")
-  def site_setting(behavior: setting, value: SiteSettings): JQuery = js.native
+  def site_setting(behavior: setting, value: SiteSettings): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(site: Site): JQuery = {
+    val __obj = js.Dynamic.literal(site = site.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSite(value: Site): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+  }
 }

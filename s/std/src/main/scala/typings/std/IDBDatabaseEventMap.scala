@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDBDatabaseEventMap extends StObject {
   
-  var abort: Event = js.native
+  var abort: Event
   
-  var close: Event = js.native
+  var close: Event
   
-  var error: Event = js.native
+  var error: Event
   
-  var versionchange: IDBVersionChangeEvent = js.native
+  var versionchange: IDBVersionChangeEvent
 }
 object IDBDatabaseEventMap {
   

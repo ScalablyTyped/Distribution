@@ -3,31 +3,29 @@ package typings.weixinApp.anon
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceId extends StObject {
   
   /**
     * 特征值 uuid
     */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 特征值所属服务 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /**
     * 特征值最新的值
     */
-  var value: ArrayBuffer = js.native
+  var value: ArrayBuffer
 }
 object DeviceId {
   

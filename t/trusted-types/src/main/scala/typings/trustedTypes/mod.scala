@@ -14,7 +14,6 @@ import typings.trustedTypes.trustedTypesStrings.createScriptURL
 import typings.trustedTypes.trustedTypesStrings.name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -51,25 +50,24 @@ object mod extends Shortcut {
       var brand: `true` = js.native
     }
     
-    @js.native
     trait TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] extends StObject {
       
       @JSName("createHTML")
       def createHTML_createHTML(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createHTML'> is not an array type */ args: Args[Options, createHTML]
-      ): TrustedHTML = js.native
+      ): TrustedHTML
       
       @JSName("createScriptURL")
       def createScriptURL_createScriptURL(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createScriptURL'> is not an array type */ args: Args[Options, createScriptURL]
-      ): TrustedScriptURL = js.native
+      ): TrustedScriptURL
       
       @JSName("createScript")
       def createScript_createScript(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createScript'> is not an array type */ args: Args[Options, createScript]
-      ): TrustedScript = js.native
+      ): TrustedScript
       
-      val name: String = js.native
+      val name: String
     }
     object TrustedTypePolicy {
       
@@ -85,7 +83,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class TrustedTypePolicyMutableBuilder[Self <: TrustedTypePolicy[_], Options /* <: TrustedTypePolicyOptions */] (val x: Self with TrustedTypePolicy[Options]) extends AnyVal {
+      implicit class TrustedTypePolicyMutableBuilder[Self <: TrustedTypePolicy[?], Options /* <: TrustedTypePolicyOptions */] (val x: Self & TrustedTypePolicy[Options]) extends AnyVal {
         
         @scala.inline
         def setCreateHTML(value: Args[Options, createHTML] => TrustedHTML): Self = StObject.set(x, "createHTML", js.Any.fromFunction1(value))
@@ -114,9 +112,9 @@ object mod extends Shortcut {
       val emptyScript: TrustedScript = js.native
       
       def getAttributeType(tagName: String, attribute: String): String | Null = js.native
-      def getAttributeType(tagName: String, attribute: String, elementNs: js.UndefOr[scala.Nothing], attrNs: String): String | Null = js.native
       def getAttributeType(tagName: String, attribute: String, elementNs: String): String | Null = js.native
       def getAttributeType(tagName: String, attribute: String, elementNs: String, attrNs: String): String | Null = js.native
+      def getAttributeType(tagName: String, attribute: String, elementNs: Unit, attrNs: String): String | Null = js.native
       
       def getPropertyType(tagName: String, property: String): String | Null = js.native
       def getPropertyType(tagName: String, property: String, elementNs: String): String | Null = js.native
@@ -128,14 +126,13 @@ object mod extends Shortcut {
       def isScriptURL(value: js.Any): /* is trusted-types.trusted-types.<global>.TrustedScriptURL */ Boolean = js.native
     }
     
-    @js.native
     trait TrustedTypePolicyOptions extends StObject {
       
-      var createHTML: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.native
+      var createHTML: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
       
-      var createScript: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.native
+      var createScript: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
       
-      var createScriptURL: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.native
+      var createScriptURL: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
     }
     object TrustedTypePolicyOptions {
       
@@ -168,23 +165,22 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Window extends StObject {
       
-      var TrustedHTML: typings.trustedTypes.mod.global.TrustedHTML = js.native
+      var TrustedHTML: typings.trustedTypes.mod.global.TrustedHTML
       
-      var TrustedScript: typings.trustedTypes.mod.global.TrustedScript = js.native
+      var TrustedScript: typings.trustedTypes.mod.global.TrustedScript
       
-      var TrustedScriptURL: typings.trustedTypes.mod.global.TrustedScriptURL = js.native
+      var TrustedScriptURL: typings.trustedTypes.mod.global.TrustedScriptURL
       
-      var TrustedTypePolicy: typings.trustedTypes.mod.global.TrustedTypePolicy[TrustedTypePolicyOptions] = js.native
+      var TrustedTypePolicy: typings.trustedTypes.mod.global.TrustedTypePolicy[TrustedTypePolicyOptions]
       
-      var TrustedTypePolicyFactory: typings.trustedTypes.mod.global.TrustedTypePolicyFactory = js.native
+      var TrustedTypePolicyFactory: typings.trustedTypes.mod.global.TrustedTypePolicyFactory
       
       // `trustedTypes` is left intentionally optional to make sure that
       // people handle the case when their code is running in a browser not
       // supporting trustedTypes.
-      var trustedTypes: js.UndefOr[TrustedTypePolicyFactory] = js.native
+      var trustedTypes: js.UndefOr[TrustedTypePolicyFactory] = js.undefined
     }
     object Window {
       

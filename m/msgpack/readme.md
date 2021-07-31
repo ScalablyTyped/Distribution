@@ -10,8 +10,8 @@ A space-efficient object serialization library for node.js
 | Full name          | msgpack |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 99 |
-| # downloads        | 282401 |
+| # dependents       | 98 |
+| # downloads        | 245475 |
 | # stars            | 12 |
 
 ## Links

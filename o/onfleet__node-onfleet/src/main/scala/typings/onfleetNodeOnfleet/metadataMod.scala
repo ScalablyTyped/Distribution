@@ -3,7 +3,6 @@ package typings.onfleetNodeOnfleet
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.worker_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
@@ -74,18 +73,17 @@ object metadataMod {
     def worker: worker_ = "worker".asInstanceOf[worker_]
   }
   
-  @js.native
   trait OnfleetMetadata extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var subtype: js.UndefOr[MetadataSubType] = js.native
+    var subtype: js.UndefOr[MetadataSubType] = js.undefined
     
-    var `type`: MetadataType = js.native
+    var `type`: MetadataType
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var visibility: js.UndefOr[js.Array[MetadataVisibility]] = js.native
+    var visibility: js.UndefOr[js.Array[MetadataVisibility]] = js.undefined
   }
   object OnfleetMetadata {
     

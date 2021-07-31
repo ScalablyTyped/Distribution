@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | @node-red/util |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 10 |
-| # downloads        | 830270 |
+| # releases         | 38 |
+| # dependents       | 11 |
+| # downloads        | 933688 |
 | # stars            | 0 |
 
 ## Links

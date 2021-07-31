@@ -2,34 +2,32 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single resource related to a threat hit.
   */
-@js.native
 trait SchemaThreatSource extends StObject {
   
   /**
     * Referrer of the resource. Only set if the referrer is available.
     */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /**
     * The remote IP of the resource in ASCII format. Either IPv4 or IPv6.
     */
-  var remoteIp: js.UndefOr[String] = js.native
+  var remoteIp: js.UndefOr[String] = js.undefined
   
   /**
     * The type of source reported.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the resource.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaThreatSource {
   

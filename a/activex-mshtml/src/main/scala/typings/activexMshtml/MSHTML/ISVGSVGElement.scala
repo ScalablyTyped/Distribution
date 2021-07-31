@@ -2,90 +2,88 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGSVGElement extends StObject {
   
   @JSName("MSHTML.ISVGSVGElement_typekey")
-  var MSHTMLDotISVGSVGElement_typekey: ISVGSVGElement = js.native
+  var MSHTMLDotISVGSVGElement_typekey: ISVGSVGElement
   
-  def animationsPaused(): Boolean = js.native
+  def animationsPaused(): Boolean
   
-  def checkEnclosure(element: ISVGElement, rect: SVGRect): Boolean = js.native
+  def checkEnclosure(element: ISVGElement, rect: SVGRect): Boolean
   
-  def checkIntersection(element: ISVGElement, rect: SVGRect): Boolean = js.native
+  def checkIntersection(element: ISVGElement, rect: SVGRect): Boolean
   
-  var contentScriptType: String = js.native
+  var contentScriptType: String
   
-  var contentStyleType: String = js.native
+  var contentStyleType: String
   
-  def createSVGAngle(): SVGAngle = js.native
+  def createSVGAngle(): SVGAngle
   
-  def createSVGLength(): SVGLength = js.native
+  def createSVGLength(): SVGLength
   
-  def createSVGMatrix(): SVGMatrix = js.native
+  def createSVGMatrix(): SVGMatrix
   
-  def createSVGNumber(): SVGNumber = js.native
+  def createSVGNumber(): SVGNumber
   
-  def createSVGPoint(): SVGPoint = js.native
+  def createSVGPoint(): SVGPoint
   
-  def createSVGRect(): SVGRect = js.native
+  def createSVGRect(): SVGRect
   
-  def createSVGTransform(): SVGTransform = js.native
+  def createSVGTransform(): SVGTransform
   
-  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform = js.native
+  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform
   
-  var currentScale: Double = js.native
+  var currentScale: Double
   
-  var currentTranslate: SVGPoint = js.native
+  var currentTranslate: SVGPoint
   
-  var currentView: ISVGViewSpec = js.native
+  var currentView: ISVGViewSpec
   
-  def deselectAll(): Unit = js.native
+  def deselectAll(): Unit
   
-  def forceRedraw(): Unit = js.native
+  def forceRedraw(): Unit
   
-  def getCurrentTime(): Double = js.native
+  def getCurrentTime(): Double
   
-  def getElementById(elementId: String): IHTMLElement = js.native
+  def getElementById(elementId: String): IHTMLElement
   
-  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any = js.native
+  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any
   
-  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any = js.native
+  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any
   
-  var height: SVGAnimatedLength = js.native
+  var height: SVGAnimatedLength
   
-  def pauseAnimations(): Unit = js.native
+  def pauseAnimations(): Unit
   
-  var pixelUnitToMillimeterX: Double = js.native
+  var pixelUnitToMillimeterX: Double
   
-  var pixelUnitToMillimeterY: Double = js.native
+  var pixelUnitToMillimeterY: Double
   
-  var screenPixelToMillimeterX: Double = js.native
+  var screenPixelToMillimeterX: Double
   
-  var screenPixelToMillimeterY: Double = js.native
+  var screenPixelToMillimeterY: Double
   
-  def setCurrentTime(seconds: Double): Unit = js.native
+  def setCurrentTime(seconds: Double): Unit
   
-  def suspendRedraw(maxWaitMilliseconds: Double): Double = js.native
+  def suspendRedraw(maxWaitMilliseconds: Double): Double
   
-  def unpauseAnimations(): Unit = js.native
+  def unpauseAnimations(): Unit
   
-  def unsuspendRedraw(suspendHandeID: Double): Unit = js.native
+  def unsuspendRedraw(suspendHandeID: Double): Unit
   
-  def unsuspendRedrawAll(): Unit = js.native
+  def unsuspendRedrawAll(): Unit
   
-  var useCurrentView: Boolean = js.native
+  var useCurrentView: Boolean
   
-  var viewport: SVGRect = js.native
+  var viewport: SVGRect
   
-  var width: SVGAnimatedLength = js.native
+  var width: SVGAnimatedLength
   
-  var x: SVGAnimatedLength = js.native
+  var x: SVGAnimatedLength
   
-  var y: SVGAnimatedLength = js.native
+  var y: SVGAnimatedLength
 }
 object ISVGSVGElement {
   

@@ -6,434 +6,434 @@ import typings.extjs.Ext.IElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.form.field.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate
-- typings.extjs.Ext.form.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ @js.native
-trait IBase extends IComponent {
+- typings.extjs.Ext.form.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ trait IBase
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (String) */
-  var activeError: js.UndefOr[String] = js.native
+  var activeError: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/String[]/Ext.XTemplate) */
-  var activeErrorsTpl: js.UndefOr[js.Any] = js.native
+  var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBodyEl: js.UndefOr[js.Any] = js.native
+  var afterBodyEl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTextTpl: js.UndefOr[js.Any] = js.native
+  var afterLabelTextTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTpl: js.UndefOr[js.Any] = js.native
+  var afterLabelTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterSubTpl: js.UndefOr[js.Any] = js.native
+  var afterSubTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoFitErrors: js.UndefOr[Boolean] = js.native
+  var autoFitErrors: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var baseBodyCls: js.UndefOr[String] = js.native
+  var baseBodyCls: js.UndefOr[String] = js.undefined
   
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
     * @param fn Object A function containing the transaction code
     */
-  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBodyEl: js.UndefOr[js.Any] = js.native
+  var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTextTpl: js.UndefOr[js.Any] = js.native
+  var beforeLabelTextTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTpl: js.UndefOr[js.Any] = js.native
+  var beforeLabelTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Template method before a field is reset  */
-  var beforeReset: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeSubTpl: js.UndefOr[js.Any] = js.native
+  var beforeSubTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var bodyEl: js.UndefOr[IElement] = js.native
+  var bodyEl: js.UndefOr[IElement] = js.undefined
   
   /** [Method] Checks whether the value of the field has changed since the last time it was checked  */
-  var checkChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var checkChangeBuffer: js.UndefOr[Double] = js.native
+  var checkChangeBuffer: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String[]) */
-  var checkChangeEvents: js.UndefOr[Array] = js.native
+  var checkChangeEvents: js.UndefOr[Array] = js.undefined
   
   /** [Method] Checks the isDirty state of the field and if it has changed since the last time it was checked fires the dirtychange  */
-  var checkDirty: js.UndefOr[js.Function0[Unit]] = js.native
+  var checkDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var clearCls: js.UndefOr[String] = js.native
+  var clearCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Clear any invalid styles messages for this field  */
-  var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var dirtyCls: js.UndefOr[String] = js.native
+  var dirtyCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var errorEl: js.UndefOr[IElement] = js.native
+  var errorEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (String) */
-  var errorMsgCls: js.UndefOr[String] = js.native
+  var errorMsgCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Only relevant if the instance s isFileUpload method returns true
     * @returns HTMLElement
     */
-  var extractFileInput: js.UndefOr[js.Function0[_ | HTMLElement]] = js.native
+  var extractFileInput: js.UndefOr[js.Function0[js.Any | HTMLElement]] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldBodyCls: js.UndefOr[String] = js.native
+  var fieldBodyCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldCls: js.UndefOr[String] = js.native
+  var fieldCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[String] = js.native
+  var fieldLabel: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldStyle: js.UndefOr[String] = js.native
+  var fieldStyle: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var focusCls: js.UndefOr[String] = js.native
+  var focusCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var formItemCls: js.UndefOr[String] = js.native
+  var formItemCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Gets the active error message for this component if any
     * @returns String The active error message on the component; if there is no error, an empty string is returned.
     */
-  var getActiveError: js.UndefOr[js.Function0[String]] = js.native
+  var getActiveError: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Gets an Array of any active error messages currently applied to the field
     * @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
     */
-  var getActiveErrors: js.UndefOr[js.Function0[Array]] = js.native
+  var getActiveErrors: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Runs this field s validators and returns an array of error messages for any validation failures
     * @param value Object The value to get errors for (defaults to the current field value)
     * @returns String[] All error messages for this field; an empty Array if none.
     */
-  var getErrors: js.UndefOr[js.Function1[js.UndefOr[js.Any], _ | Array]] = js.native
+  var getErrors: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any | Array]] = js.undefined
   
   /** [Method] Returns the label for the field
     * @returns String The configured field label, or empty string if not defined
     */
-  var getFieldLabel: js.UndefOr[js.Function0[String]] = js.native
+  var getFieldLabel: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Get the input id if any for this component
     * @returns String The input id
     */
-  var getInputId: js.UndefOr[js.Function0[String]] = js.native
+  var getInputId: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Gets the width of the label if visible
     * @returns Number The label width
     */
-  var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Generates the arguments for the field decorations rendering template
     * @returns Object The template arguments
     */
-  var getLabelableRenderData: js.UndefOr[js.Function0[_]] = js.native
+  var getLabelableRenderData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
     * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getModelData: js.UndefOr[js.Function0[_]] = js.native
+  var getModelData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the name attribute of the field
     * @returns String name The field name
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.native
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the raw value of the field without performing any normalization conversion or validation
     * @returns any value The raw String value of the field
     */
-  var getRawValue: js.UndefOr[js.Function0[_]] = js.native
+  var getRawValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Creates and returns the data object to be used when rendering the fieldSubTpl
     * @returns Object The template data
     */
-  var getSubTplData: js.UndefOr[js.Function0[_]] = js.native
+  var getSubTplData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
     * @returns String The markup to be inserted
     */
-  var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.native
+  var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] private override to use getSubmitValue  as a convenience
     * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getSubmitData: js.UndefOr[js.Function0[_]] = js.native
+  var getSubmitData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value that would be included in a standard form submit for this field
     * @returns any The value to be submitted, or null.
     */
-  var getSubmitValue: js.UndefOr[js.Function0[_]] = js.native
+  var getSubmitValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the current data value of the field
     * @returns Object value The field value
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Tells whether the field currently has an active error message
     * @returns Boolean
     */
-  var hasActiveError: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasActiveError: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Checks if the field has a visible label
     * @returns Boolean True if the field has a visible label
     */
-  var hasVisibleLabel: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasVisibleLabel: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideEmptyLabel: js.UndefOr[Boolean] = js.native
+  var hideEmptyLabel: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideLabel: js.UndefOr[Boolean] = js.native
+  var hideLabel: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Initializes this Field mixin on the current instance  */
-  var initField: js.UndefOr[js.Function0[Unit]] = js.native
+  var initField: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Performs initialization of this mixin  */
-  var initLabelable: js.UndefOr[js.Function0[Unit]] = js.native
+  var initLabelable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
   @JSName("initRenderData")
-  var initRenderData_IBase: js.UndefOr[js.Function0[_]] = js.native
+  var initRenderData_IBase: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Initializes the field s value based on the initial config  */
-  var initValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var initValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var inputAttrTpl: js.UndefOr[js.Any] = js.native
+  var inputAttrTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var inputEl: js.UndefOr[IElement] = js.native
+  var inputEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (String) */
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var inputType: js.UndefOr[String] = js.native
+  var inputType: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var invalidCls: js.UndefOr[String] = js.native
+  var invalidCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var invalidText: js.UndefOr[String] = js.native
+  var invalidText: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
     * @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
     */
-  var isDirty: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var isDirty: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
   
   /** [Method] Returns whether two field values are logically equal
     * @param value1 Object The first value to compare
     * @param value2 Object The second value to compare
     * @returns Boolean True if the values are equal, false if inequal.
     */
-  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _ | Boolean]] = js.native
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any | Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isFieldLabelable: js.UndefOr[Boolean] = js.native
+  var isFieldLabelable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
     * @returns Boolean
     */
-  var isFileUpload: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var isFileUpload: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isFormField: js.UndefOr[Boolean] = js.native
+  var isFormField: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns whether or not the field value is currently valid by validating the processed raw value of the field
     * @returns Boolean True if the value is valid, else false
     */
-  var isValid: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var isValid: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
   
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[String] = js.native
+  var labelAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var labelAttrTpl: js.UndefOr[js.Any] = js.native
+  var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var labelCell: js.UndefOr[IElement] = js.native
+  var labelCell: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[String] = js.native
+  var labelCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var labelClsExtra: js.UndefOr[String] = js.native
+  var labelClsExtra: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var labelEl: js.UndefOr[IElement] = js.native
+  var labelEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Number) */
-  var labelPad: js.UndefOr[Double] = js.native
+  var labelPad: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var labelSeparator: js.UndefOr[String] = js.native
+  var labelSeparator: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var labelStyle: js.UndefOr[String] = js.native
+  var labelStyle: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var labelWidth: js.UndefOr[Double] = js.native
+  var labelWidth: js.UndefOr[Double] = js.undefined
   
   /** [Method] Display one or more error messages associated with this field using msgTarget to determine how to display the messag
     * @param errors String/String[] The validation message(s) to display.
     */
-  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var msgTarget: js.UndefOr[String] = js.native
+  var msgTarget: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Method] private */
   @JSName("onRender")
-  var onRender_IBase: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRender_IBase: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Object) */
-  var originalValue: js.UndefOr[js.Any] = js.native
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var preventMark: js.UndefOr[Boolean] = js.native
+  var preventMark: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Performs any necessary manipulation of a raw field value to prepare it for conversion and or validation for instance
     * @param value Object The unprocessed string value
     * @returns Object The processed string value
     */
-  var processRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var processRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Converts a raw input field value into a mixed type value that is suitable for this particular field type
     * @param rawValue Object
     * @returns Object The converted value.
     */
-  var rawToValue: js.UndefOr[js.Function1[/* rawValue */ js.UndefOr[js.Any], _]] = js.native
+  var rawToValue: js.UndefOr[js.Function1[/* rawValue */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var readOnlyCls: js.UndefOr[String] = js.native
+  var readOnlyCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
-  var reset: js.UndefOr[js.Function0[Unit]] = js.native
+  var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Resets the field s originalValue property so it matches the current value  */
-  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the active error message to the given string
     * @param msg String The error message
     */
-  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.native
+  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Set the active error message to an Array of error messages
     * @param errors String[] The error messages
     */
-  var setActiveErrors: js.UndefOr[js.Function1[js.UndefOr[Array], Unit]] = js.native
+  var setActiveErrors: js.UndefOr[js.Function1[js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Applies a set of default configuration values to this Labelable instance
     * @param defaults Object The defaults to apply to the object.
     */
-  var setFieldDefaults: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  var setFieldDefaults: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Set the label of this field
     * @param label String The new label. The labelSeparator will be automatically appended to the label string.
     */
-  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.native
+  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Set the CSS style of the field input element
     * @param style String/Object/Function The style(s) to apply. Should be a valid argument to Ext.Element.applyStyles.
     */
-  var setFieldStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.native
+  var setFieldStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the field s raw value directly bypassing value conversion change detection and validation
     * @param value Object The value to set
     * @returns Object value The field value that is set
     */
-  var setRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var setRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets the read only state of this field
     * @param readOnly Boolean Whether the field should be read only.
     */
-  var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.native
+  var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets a data value into the field and runs the change detection and validation
     * @param value Object The value to set
     * @returns any this
     */
-  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var submitValue: js.UndefOr[Boolean] = js.native
+  var submitValue: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /** [Method] Allows for any necessary modifications before the original value is set
     * @param value Object The initial value
     * @returns Object The modified initial value
     */
-  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Transform the raw value before it is set
     * @param value Object The value
     * @returns Object The value to set
     */
-  var transformRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var transformRawValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns the trimmed label by slicing off the label separator character
     * @returns String The trimmed field label, or empty string if not defined
     */
-  var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.native
+  var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Clears the active error message s */
-  var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.native
+  var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
     * @returns Boolean True if the value is valid, else false
     */
-  var validate: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var validate: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var validateOnBlur: js.UndefOr[Boolean] = js.native
+  var validateOnBlur: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var validateOnChange: js.UndefOr[Boolean] = js.native
+  var validateOnChange: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Uses getErrors to build an array of validation errors
     * @param value Object The value to validate
     * @returns Boolean True if all validations passed, false if one or more failed
     */
-  var validateValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.native
+  var validateValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.undefined
   
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Converts a mixed type value to a raw representation suitable for displaying in the field
     * @param value Object The mixed-type value to convert to the raw representation.
     * @returns Object The converted raw value.
     */
-  var valueToRaw: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var valueToRaw: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
 }
 object IBase {
   
@@ -591,7 +591,7 @@ object IBase {
     def setErrorMsgClsUndefined: Self = StObject.set(x, "errorMsgCls", js.undefined)
     
     @scala.inline
-    def setExtractFileInput(value: () => _ | HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
+    def setExtractFileInput(value: () => js.Any | HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
     
     @scala.inline
     def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
@@ -645,7 +645,7 @@ object IBase {
     def setGetActiveErrorsUndefined: Self = StObject.set(x, "getActiveErrors", js.undefined)
     
     @scala.inline
-    def setGetErrors(value: js.UndefOr[js.Any] => _ | Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
+    def setGetErrors(value: js.UndefOr[js.Any] => js.Any | Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
@@ -669,13 +669,13 @@ object IBase {
     def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
     @scala.inline
-    def setGetLabelableRenderData(value: () => _): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
+    def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
     
     @scala.inline
-    def setGetModelData(value: () => _): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
+    def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
@@ -687,13 +687,13 @@ object IBase {
     def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
     @scala.inline
-    def setGetRawValue(value: () => _): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
+    def setGetRawValue(value: () => js.Any): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
     
     @scala.inline
-    def setGetSubTplData(value: () => _): Self = StObject.set(x, "getSubTplData", js.Any.fromFunction0(value))
+    def setGetSubTplData(value: () => js.Any): Self = StObject.set(x, "getSubTplData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubTplDataUndefined: Self = StObject.set(x, "getSubTplData", js.undefined)
@@ -705,19 +705,19 @@ object IBase {
     def setGetSubTplMarkupUndefined: Self = StObject.set(x, "getSubTplMarkup", js.undefined)
     
     @scala.inline
-    def setGetSubmitData(value: () => _): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
+    def setGetSubmitData(value: () => js.Any): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubmitDataUndefined: Self = StObject.set(x, "getSubmitData", js.undefined)
     
     @scala.inline
-    def setGetSubmitValue(value: () => _): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
+    def setGetSubmitValue(value: () => js.Any): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
@@ -759,7 +759,7 @@ object IBase {
     def setInitLabelableUndefined: Self = StObject.set(x, "initLabelable", js.undefined)
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
@@ -807,13 +807,13 @@ object IBase {
     def setInvalidTextUndefined: Self = StObject.set(x, "invalidText", js.undefined)
     
     @scala.inline
-    def setIsDirty(value: () => _ | Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    def setIsDirty(value: () => js.Any | Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def setIsEqual(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+    def setIsEqual(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
     
     @scala.inline
     def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
@@ -825,7 +825,7 @@ object IBase {
     def setIsFieldLabelableUndefined: Self = StObject.set(x, "isFieldLabelable", js.undefined)
     
     @scala.inline
-    def setIsFileUpload(value: () => _ | Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
+    def setIsFileUpload(value: () => js.Any | Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
@@ -837,7 +837,7 @@ object IBase {
     def setIsFormFieldUndefined: Self = StObject.set(x, "isFormField", js.undefined)
     
     @scala.inline
-    def setIsValid(value: () => _ | Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    def setIsValid(value: () => js.Any | Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
@@ -939,13 +939,13 @@ object IBase {
     def setPreventMarkUndefined: Self = StObject.set(x, "preventMark", js.undefined)
     
     @scala.inline
-    def setProcessRawValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "processRawValue", js.Any.fromFunction1(value))
+    def setProcessRawValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "processRawValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setProcessRawValueUndefined: Self = StObject.set(x, "processRawValue", js.undefined)
     
     @scala.inline
-    def setRawToValue(value: /* rawValue */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "rawToValue", js.Any.fromFunction1(value))
+    def setRawToValue(value: /* rawValue */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "rawToValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRawToValueUndefined: Self = StObject.set(x, "rawToValue", js.undefined)
@@ -1005,7 +1005,7 @@ object IBase {
     def setSetFieldStyleUndefined: Self = StObject.set(x, "setFieldStyle", js.undefined)
     
     @scala.inline
-    def setSetRawValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
+    def setSetRawValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetRawValueUndefined: Self = StObject.set(x, "setRawValue", js.undefined)
@@ -1017,7 +1017,7 @@ object IBase {
     def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
     @scala.inline
-    def setSetValue(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
@@ -1035,13 +1035,13 @@ object IBase {
     def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     @scala.inline
-    def setTransformOriginalValue(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    def setTransformOriginalValue(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
     
     @scala.inline
-    def setTransformRawValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "transformRawValue", js.Any.fromFunction1(value))
+    def setTransformRawValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformRawValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformRawValueUndefined: Self = StObject.set(x, "transformRawValue", js.undefined)
@@ -1059,7 +1059,7 @@ object IBase {
     def setUnsetActiveErrorUndefined: Self = StObject.set(x, "unsetActiveError", js.undefined)
     
     @scala.inline
-    def setValidate(value: () => _ | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    def setValidate(value: () => js.Any | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     @scala.inline
     def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
@@ -1086,7 +1086,7 @@ object IBase {
     def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueToRaw(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "valueToRaw", js.Any.fromFunction1(value))
+    def setValueToRaw(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "valueToRaw", js.Any.fromFunction1(value))
     
     @scala.inline
     def setValueToRawUndefined: Self = StObject.set(x, "valueToRaw", js.undefined)

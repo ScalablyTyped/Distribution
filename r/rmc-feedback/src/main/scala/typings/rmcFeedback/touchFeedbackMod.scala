@@ -7,7 +7,6 @@ import typings.rmcFeedback.propTypesMod.ITouchProps
 import typings.rmcFeedback.propTypesMod.ITouchState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchFeedbackMod {

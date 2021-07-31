@@ -2,76 +2,74 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositeAlarm extends StObject {
   
   /**
     * Indicates whether actions should be executed during any changes to the alarm state.
     */
-  var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.native
+  var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var AlarmActions: js.UndefOr[ResourceList] = js.native
+  var AlarmActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
     */
-  var AlarmArn: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmArn] = js.native
+  var AlarmArn: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmArn] = js.undefined
   
   /**
     * The time stamp of the last update to the alarm configuration.
     */
-  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the alarm.
     */
-  var AlarmDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmDescription] = js.native
+  var AlarmDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmDescription] = js.undefined
   
   /**
     * The name of the alarm.
     */
-  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.native
+  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.undefined
   
   /**
     * The rule that this alarm uses to evaluate its alarm state.
     */
-  var AlarmRule: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmRule] = js.native
+  var AlarmRule: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmRule] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var InsufficientDataActions: js.UndefOr[ResourceList] = js.native
+  var InsufficientDataActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var OKActions: js.UndefOr[ResourceList] = js.native
+  var OKActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * An explanation for the alarm state, in text format.
     */
-  var StateReason: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReason] = js.native
+  var StateReason: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReason] = js.undefined
   
   /**
     * An explanation for the alarm state, in JSON format.
     */
-  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.native
+  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.undefined
   
   /**
     * The time stamp of the last update to the alarm state.
     */
-  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state value for the alarm.
     */
-  var StateValue: js.UndefOr[typings.awsSdk.cloudwatchMod.StateValue] = js.native
+  var StateValue: js.UndefOr[typings.awsSdk.cloudwatchMod.StateValue] = js.undefined
 }
 object CompositeAlarm {
   

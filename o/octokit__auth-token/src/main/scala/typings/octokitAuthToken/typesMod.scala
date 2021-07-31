@@ -7,28 +7,28 @@ import typings.octokitAuthToken.octokitAuthTokenStrings.token
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type AnyResponse = OctokitResponse[js.Any]
   
-  @js.native
-  trait AppAuthentication extends Authentication {
+  trait AppAuthentication
+    extends StObject
+       with Authentication {
     
-    var token: Token = js.native
+    var token: Token
     
-    var tokenType: app = js.native
+    var tokenType: app
     
-    var `type`: token = js.native
+    var `type`: token
   }
   object AppAuthentication {
     
     @scala.inline
-    def apply(token: Token, tokenType: app, `type`: token): AppAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(token: Token): AppAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "app")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[AppAuthentication]
     }
     
@@ -55,23 +55,23 @@ object typesMod {
   object Authentication {
     
     @scala.inline
-    def AppAuthentication(token: Token, tokenType: app, `type`: token): typings.octokitAuthToken.typesMod.AppAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def AppAuthentication(token: Token): typings.octokitAuthToken.typesMod.AppAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "app")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[typings.octokitAuthToken.typesMod.AppAuthentication]
     }
     
     @scala.inline
-    def InstallationTokenAuthentication(token: Token, tokenType: installation, `type`: token): typings.octokitAuthToken.typesMod.InstallationTokenAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def InstallationTokenAuthentication(token: Token): typings.octokitAuthToken.typesMod.InstallationTokenAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "installation")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[typings.octokitAuthToken.typesMod.InstallationTokenAuthentication]
     }
     
     @scala.inline
-    def OAuthTokenAuthentication(token: Token, tokenType: oauth, `type`: token): typings.octokitAuthToken.typesMod.OAuthTokenAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def OAuthTokenAuthentication(token: Token): typings.octokitAuthToken.typesMod.OAuthTokenAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "oauth")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[typings.octokitAuthToken.typesMod.OAuthTokenAuthentication]
     }
   }
@@ -80,21 +80,22 @@ object typesMod {
   
   type EndpointOptions = typings.octokitTypes.endpointOptionsMod.EndpointOptions
   
-  @js.native
-  trait InstallationTokenAuthentication extends Authentication {
+  trait InstallationTokenAuthentication
+    extends StObject
+       with Authentication {
     
-    var token: Token = js.native
+    var token: Token
     
-    var tokenType: installation = js.native
+    var tokenType: installation
     
-    var `type`: token = js.native
+    var `type`: token
   }
   object InstallationTokenAuthentication {
     
     @scala.inline
-    def apply(token: Token, tokenType: installation, `type`: token): InstallationTokenAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(token: Token): InstallationTokenAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "installation")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[InstallationTokenAuthentication]
     }
     
@@ -112,21 +113,22 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait OAuthTokenAuthentication extends Authentication {
+  trait OAuthTokenAuthentication
+    extends StObject
+       with Authentication {
     
-    var token: Token = js.native
+    var token: Token
     
-    var tokenType: oauth = js.native
+    var tokenType: oauth
     
-    var `type`: token = js.native
+    var `type`: token
   }
   object OAuthTokenAuthentication {
     
     @scala.inline
-    def apply(token: Token, tokenType: oauth, `type`: token): OAuthTokenAuthentication = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(token: Token): OAuthTokenAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "oauth")
+      __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[OAuthTokenAuthentication]
     }
     

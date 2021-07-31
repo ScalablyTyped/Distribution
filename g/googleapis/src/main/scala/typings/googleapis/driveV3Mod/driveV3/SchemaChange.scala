@@ -2,59 +2,57 @@ package typings.googleapis.driveV3Mod.driveV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A change to a file or Team Drive.
   */
-@js.native
 trait SchemaChange extends StObject {
   
   /**
     * The updated state of the file. Present if the type is file and the file
     * has not been removed from this list of changes.
     */
-  var file: js.UndefOr[SchemaFile] = js.native
+  var file: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * The ID of the file which has changed.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;drive#change&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the file or Team Drive has been removed from this list of
     * changes, for example by deletion or loss of access.
     */
-  var removed: js.UndefOr[Boolean] = js.native
+  var removed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The updated state of the Team Drive. Present if the type is teamDrive,
     * the user is still a member of the Team Drive, and the Team Drive has not
     * been removed.
     */
-  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.native
+  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.undefined
   
   /**
     * The ID of the Team Drive associated with this change.
     */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
   
   /**
     * The time of this change (RFC 3339 date-time).
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the change. Possible values are file and teamDrive.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaChange {
   

@@ -2,7 +2,6 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gestureControllerMod {
@@ -11,12 +10,11 @@ object gestureControllerMod {
   @js.native
   val GESTURE_CONTROLLER: GestureController = js.native
   
-  @js.native
   trait BlockerConfig extends StObject {
     
-    var disable: js.UndefOr[js.Array[String]] = js.native
+    var disable: js.UndefOr[js.Array[String]] = js.undefined
     
-    var disableScroll: js.UndefOr[Boolean] = js.native
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
   }
   object BlockerConfig {
     
@@ -46,22 +44,21 @@ object gestureControllerMod {
     }
   }
   
-  @js.native
   trait BlockerDelegate extends StObject {
     
-    def block(): Unit = js.native
+    def block(): Unit
     
-    var ctrl: js.Any = js.native
+    var ctrl: js.Any
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var disable: js.Any = js.native
+    var disable: js.Any
     
-    var disableScroll: js.Any = js.native
+    var disableScroll: js.Any
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    def unblock(): Unit = js.native
+    def unblock(): Unit
   }
   object BlockerDelegate {
     
@@ -105,14 +102,13 @@ object gestureControllerMod {
     }
   }
   
-  @js.native
   trait GestureConfig extends StObject {
     
-    var disableScroll: js.UndefOr[Boolean] = js.native
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object GestureConfig {
     
@@ -191,28 +187,27 @@ object gestureControllerMod {
     def start(gestureName: String, id: Double, priority: Double): Boolean = js.native
   }
   
-  @js.native
   trait GestureDelegate extends StObject {
     
-    def canStart(): Boolean = js.native
+    def canStart(): Boolean
     
-    def capture(): Boolean = js.native
+    def capture(): Boolean
     
-    var ctrl: js.Any = js.native
+    var ctrl: js.Any
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var disableScroll: js.Any = js.native
+    var disableScroll: js.Any
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var name: js.Any = js.native
+    var name: js.Any
     
-    var priority: js.Any = js.native
+    var priority: js.Any
     
-    def release(): Unit = js.native
+    def release(): Unit
     
-    def start(): Boolean = js.native
+    def start(): Boolean
   }
   object GestureDelegate {
     

@@ -3,15 +3,13 @@ package typings.tensorflowTfjsCore.anon
 import typings.tensorflowTfjsCore.backendMod.KernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Factory extends StObject {
   
-  def factory(): KernelBackend | js.Promise[KernelBackend] = js.native
+  def factory(): KernelBackend | js.Promise[KernelBackend]
   
-  var priority: Double = js.native
+  var priority: Double
 }
 object Factory {
   

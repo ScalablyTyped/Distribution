@@ -4,42 +4,40 @@ import typings.chartmogulNode.commonMod.Cursor
 import typings.chartmogulNode.commonMod.CursorParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plan {
   
-  @JSImport("chartmogul-node", "Plan.all")
+  @JSImport("chartmogul-node", "Plan")
   @js.native
-  def all(config: Config): js.Promise[Plans] = js.native
-  @JSImport("chartmogul-node", "Plan.all")
-  @js.native
-  def all(config: Config, params: ListPlansParams): js.Promise[Plans] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "Plan.create")
-  @js.native
-  def create(config: Config, data: typings.chartmogulNode.mod.Plan.Plan): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = js.native
+  @scala.inline
+  def all(config: Config): js.Promise[Plans] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Plans]]
+  @scala.inline
+  def all(config: Config, params: ListPlansParams): js.Promise[Plans] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Plans]]
   
-  @JSImport("chartmogul-node", "Plan.destroy")
-  @js.native
-  def destroy(config: Config, uuid: String): js.Promise[js.Object] = js.native
+  @scala.inline
+  def create(config: Config, data: typings.chartmogulNode.mod.Plan.Plan): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Plan.Plan]]
   
-  @JSImport("chartmogul-node", "Plan.modify")
-  @js.native
-  def modify(config: Config, uuid: String, data: typings.chartmogulNode.mod.Plan.Plan): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = js.native
+  @scala.inline
+  def destroy(config: Config, uuid: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("chartmogul-node", "Plan.retrieve")
-  @js.native
-  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = js.native
+  @scala.inline
+  def modify(config: Config, uuid: String, data: typings.chartmogulNode.mod.Plan.Plan): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Plan.Plan]]
   
-  @js.native
-  trait ListPlansParams extends CursorParams {
+  @scala.inline
+  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Plan.Plan] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Plan.Plan]]
+  
+  trait ListPlansParams
+    extends StObject
+       with CursorParams {
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
   }
   object ListPlansParams {
     
@@ -72,20 +70,19 @@ object Plan {
     }
   }
   
-  @js.native
   trait Plan extends StObject {
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var interval_count: js.UndefOr[Double] = js.native
+    var interval_count: js.UndefOr[Double] = js.undefined
     
-    var interval_unit: js.UndefOr[String] = js.native
+    var interval_unit: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object Plan {
     
@@ -136,10 +133,11 @@ object Plan {
     }
   }
   
-  @js.native
-  trait Plans extends Cursor {
+  trait Plans
+    extends StObject
+       with Cursor {
     
-    var plans: js.Array[typings.chartmogulNode.mod.Plan.Plan] = js.native
+    var plans: js.Array[typings.chartmogulNode.mod.Plan.Plan]
   }
   object Plans {
     

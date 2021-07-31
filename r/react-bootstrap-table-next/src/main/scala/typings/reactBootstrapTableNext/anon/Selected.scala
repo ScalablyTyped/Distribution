@@ -2,13 +2,11 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selected extends StObject {
   
-  var selected: js.UndefOr[js.Array[_]] = js.native
+  var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object Selected {
   
@@ -22,7 +20,7 @@ object Selected {
   implicit class SelectedMutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setSelected(value: js.Array[_]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)

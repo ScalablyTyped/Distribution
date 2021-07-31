@@ -7,7 +7,6 @@ import typings.react.mod.ReactElement
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cliMod {
@@ -17,10 +16,13 @@ object cliMod {
   class default () extends CLI
   object default {
     
-    /* static member */
-    @JSImport("gatsby-cli/lib/reporter/loggers/ink/cli", "default.getDerivedStateFromError")
+    @JSImport("gatsby-cli/lib/reporter/loggers/ink/cli", JSImport.Default)
     @js.native
-    def getDerivedStateFromError(error: Error): ICLIState = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getDerivedStateFromError(error: Error): ICLIState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ICLIState]
   }
   
   @js.native
@@ -33,12 +35,11 @@ object cliMod {
     var memoizedReactElementsForMessages: js.Array[ReactElement] = js.native
   }
   
-  @js.native
   trait ICLIProps extends StObject {
     
-    var logs: IGatsbyCLIState = js.native
+    var logs: IGatsbyCLIState
     
-    var showStatusBar: Boolean = js.native
+    var showStatusBar: Boolean
   }
   object ICLIProps {
     
@@ -59,12 +60,11 @@ object cliMod {
     }
   }
   
-  @js.native
   trait ICLIState extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var hasError: Boolean = js.native
+    var hasError: Boolean
   }
   object ICLIState {
     

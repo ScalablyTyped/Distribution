@@ -2,17 +2,15 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerContextMenuItem extends StObject {
   
-  var click: js.UndefOr[js.Function0[Unit]] = js.native
+  var click: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object DPlayerContextMenuItem {
   

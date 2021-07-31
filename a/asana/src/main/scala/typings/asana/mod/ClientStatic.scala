@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientStatic
-  extends /**
+  extends StObject
+     with /**
   * Constructs a Client with instances of all the resources using the dispatcher.
   * It also keeps a reference to the dispatcher so that way the end user can have
   * access to it.
@@ -22,17 +22,13 @@ trait ClientStatic
   * @param {String} [redirectUri]  Default redirect URI for this client
   * @param {String} [asanaBaseUrl] Base URL for Asana, for debugging
   */
-Instantiable1[/* dispatcher */ typings.asana.mod.Dispatcher, typings.asana.mod.Client]
-     with Instantiable2[
-      /* dispatcher */ typings.asana.mod.Dispatcher, 
-      /* options */ ClientOptions, 
-      typings.asana.mod.Client
-    ] {
+Instantiable1[/* dispatcher */ Dispatcher, Client]
+     with Instantiable2[/* dispatcher */ Dispatcher, /* options */ ClientOptions, Client] {
   
   /**
     * Creates a new client.
     * @param {Object} options Options for specifying the client, see constructor.
     */
-  def create(): typings.asana.mod.Client = js.native
-  def create(options: ClientOptions): typings.asana.mod.Client = js.native
+  def create(): Client = js.native
+  def create(options: ClientOptions): Client = js.native
 }

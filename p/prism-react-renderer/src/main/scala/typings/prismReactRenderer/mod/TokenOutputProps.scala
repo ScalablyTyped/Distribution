@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenOutputProps
-  extends /* otherProps */ StringDictionary[js.Any] {
+  extends StObject
+     with /* otherProps */ StringDictionary[js.Any] {
   
-  var children: String = js.native
+  var children: String
   
-  var className: String = js.native
+  var className: String
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var style: js.UndefOr[StyleObj] = js.native
+  var style: js.UndefOr[StyleObj] = js.undefined
 }
 object TokenOutputProps {
   

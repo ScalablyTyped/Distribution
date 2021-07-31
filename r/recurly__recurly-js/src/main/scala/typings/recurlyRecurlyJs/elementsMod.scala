@@ -7,7 +7,6 @@ import typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.submit
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementsMod {
@@ -15,7 +14,9 @@ object elementsMod {
   type Attach[ElementType] = js.Function1[/* el */ String | HTMLElement, ElementType]
   
   @js.native
-  trait CardElement extends Emitter[ElementEvent] {
+  trait CardElement
+    extends StObject
+       with Emitter[ElementEvent] {
     
     /**
       * Attaches an Element to the DOM, as a child of the specified parent target.
@@ -49,13 +50,12 @@ object elementsMod {
     def remove(): CardElement = js.native
   }
   
-  @js.native
   trait CardElementOptions extends StObject {
     
     /**
       * If false, the card brand icon will be hidden
       */
-    var displayIcon: js.UndefOr[Boolean] = js.native
+    var displayIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Modifies the input type of the card field:
@@ -68,19 +68,19 @@ object elementsMod {
       * 'select' - Expiration date will be input using a select field on all devices. Mobile devices will display an
       * optimized interface.
       */
-    var inputType: js.UndefOr[String] = js.native
+    var inputType: js.UndefOr[String] = js.undefined
     
     /**
       * Style to apply to input elements
       *
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#styling-the-individual-card-elements|Styling the invididual card elements}
       */
-    var style: js.UndefOr[CommonElementStyleinvalid] = js.native
+    var style: js.UndefOr[CommonElementStyleinvalid] = js.undefined
     
     /**
       * `tabindex` property to be applied to the outer iframe.
       */
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
   }
   object CardElementOptions {
     
@@ -119,93 +119,92 @@ object elementsMod {
     }
   }
   
-  @js.native
   trait CommonElementStyle extends StObject {
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color|color}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-family|font-family}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings|feature-settings}
       */
-    var fontFeatureSettings: js.UndefOr[String] = js.native
+    var fontFeatureSettings: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning|font-kerning}
       */
-    var fontKerning: js.UndefOr[String] = js.native
+    var fontKerning: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-size|font-size}
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-smoothing|font-smoothing}
       */
-    var fontSmooth: js.UndefOr[String] = js.native
+    var fontSmooth: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch|font-stretch}
       */
-    var fontStretch: js.UndefOr[String] = js.native
+    var fontStretch: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-style|font-style}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant|font-variant}
       */
-    var fontVariant: js.UndefOr[String] = js.native
+    var fontVariant: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight|font-weight}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing|letter-spacing}
       */
-    var letterSpacing: js.UndefOr[String] = js.native
+    var letterSpacing: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/line-height|line-height}
       */
-    var lineHeight: js.UndefOr[String] = js.native
+    var lineHeight: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-align|text-align}
       */
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration|text-decoration}
       */
-    var textDecoration: js.UndefOr[String] = js.native
+    var textDecoration: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering|text-rendering}
       */
-    var textRendering: js.UndefOr[String] = js.native
+    var textRendering: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow|text-shadow}
       */
-    var textShadow: js.UndefOr[String] = js.native
+    var textShadow: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform|text-transform}
       */
-    var textTransform: js.UndefOr[String] = js.native
+    var textTransform: js.UndefOr[String] = js.undefined
   }
   object CommonElementStyle {
     
@@ -355,7 +354,9 @@ object elementsMod {
   type Elements = js.Function0[ElementsInstance]
   
   @js.native
-  trait ElementsInstance extends Emitter[ElementsInstanceEvents] {
+  trait ElementsInstance
+    extends StObject
+       with Emitter[ElementsInstanceEvents] {
     
     def CardCvvElement(): IndividualElement = js.native
     def CardCvvElement(cardCvvElementOptions: IndividualElementOptions): IndividualElement = js.native
@@ -379,7 +380,9 @@ object elementsMod {
   type ElementsInstanceEvents = submit
   
   @js.native
-  trait IndividualElement extends Emitter[ElementEvent] {
+  trait IndividualElement
+    extends StObject
+       with Emitter[ElementEvent] {
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#fn-elementattach|Element.attach}
@@ -405,30 +408,29 @@ object elementsMod {
     def remove(): IndividualElement = js.native
   }
   
-  @js.native
   trait IndividualElementOptions extends StObject {
     
     /**
       * Enables contextual input formatting, injecting spaces to match the card brand, and forcing numeric input on expiry
       * and cvv.
       */
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Modifies the input type of the expiry fields. 'text' - normal text input. 'mobileSelect' - if the user is using a
       * mobile device, a native select interface will appear. 'select' - A select field will display on all devices
       */
-    var inputType: js.UndefOr[String] = js.native
+    var inputType: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#common-field-style-properties|Common field style properties}
       */
-    var style: js.UndefOr[CommonElementStyleinvalidFontColor] = js.native
+    var style: js.UndefOr[CommonElementStyleinvalidFontColor] = js.undefined
     
     /**
       * tabIndex property to be applied to the outer iframe.
       */
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
   }
   object IndividualElementOptions {
     

@@ -9,12 +9,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoJSONLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with TemporalLayer
      with BlendLayer {
@@ -24,7 +24,7 @@ trait GeoJSONLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     */
-  def applyEdits(edits: GeoJSONLayerApplyEditsEdits): js.Promise[_] = js.native
+  def applyEdits(edits: GeoJSONLayerApplyEditsEdits): js.Promise[js.Any] = js.native
   
   /**
     * Describes the layer's supported capabilities.
@@ -183,12 +183,12 @@ trait GeoJSONLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryExtent)
     */
-  def queryExtent(): js.Promise[_] = js.native
-  def queryExtent(query: js.UndefOr[scala.Nothing], options: GeoJSONLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties, options: GeoJSONLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query, options: GeoJSONLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(): js.Promise[js.Any] = js.native
+  def queryExtent(query: Unit, options: GeoJSONLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties, options: GeoJSONLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query, options: GeoJSONLayerQueryExtentOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns the number of features that satisfy the query.
@@ -196,7 +196,7 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: GeoJSONLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Unit, options: GeoJSONLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: GeoJSONLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -208,7 +208,7 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: GeoJSONLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: GeoJSONLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: GeoJSONLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -220,7 +220,7 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: GeoJSONLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Unit, options: GeoJSONLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: GeoJSONLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

@@ -6,25 +6,25 @@ import typings.wordpressComponents.baseControlMod.BaseControl.Props
 import typings.wordpressComponents.baseControlMod.BaseControl.VisualLabelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseControlMod {
   
   object default {
     
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/components/base-control", JSImport.Default)
     @js.native
-    def apply(props: Props): Element = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/components/base-control", "default.VisualLabel")
-    @js.native
-    def VisualLabel(props: VisualLabelProps): Element = js.native
+    @scala.inline
+    def VisualLabel(props: VisualLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VisualLabel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
   object BaseControl {
     
-    @js.native
     trait ControlProps extends StObject {
       
       /**
@@ -32,24 +32,24 @@ object baseControlMod {
         * the classes of the wrapper div. If undefined, only
         * `"components-base-control"` is used.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * If this property is added, a help text will be generated using help
         * property as the content.
         */
-      var help: js.UndefOr[ReactNode] = js.native
+      var help: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * If true, the label will only be visible to screen readers.
         */
-      var hideLabelFromVision: js.UndefOr[Boolean] = js.native
+      var hideLabelFromVision: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If this property is added, a label will be generated using label
         * property as the content.
         */
-      var label: js.UndefOr[ReactNode] = js.native
+      var label: js.UndefOr[ReactNode] = js.undefined
     }
     object ControlProps {
       
@@ -88,19 +88,20 @@ object baseControlMod {
       }
     }
     
-    @js.native
-    trait Props extends ControlProps {
+    trait Props
+      extends StObject
+         with ControlProps {
       
       /**
         * The content to be displayed within the BaseControl.
         */
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * The id of the element to which labels and help text are being
         * generated. That element should be passed as a child.
         */
-      var id: String = js.native
+      var id: String
     }
     object Props {
       
@@ -124,12 +125,11 @@ object baseControlMod {
       }
     }
     
-    @js.native
     trait VisualLabelProps extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
     }
     object VisualLabelProps {
       

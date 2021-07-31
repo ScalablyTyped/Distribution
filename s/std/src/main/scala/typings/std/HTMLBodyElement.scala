@@ -3,13 +3,13 @@ package typings.std
 import typings.std.stdStrings.orientationchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties (beyond those inherited from the regular HTMLElement interface) for manipulating <body> elements. */
 @js.native
 trait HTMLBodyElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with WindowEventHandlers {
   
   /** @deprecated */
@@ -26,17 +26,20 @@ trait HTMLBodyElement
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_orientationchange(
+    `type`: orientationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -50,7 +53,7 @@ trait HTMLBodyElement
   var link: java.lang.String = js.native
   
   /** @deprecated */
-  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -63,17 +66,20 @@ trait HTMLBodyElement
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_orientationchange(
+    `type`: orientationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

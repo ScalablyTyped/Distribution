@@ -31,23 +31,23 @@ import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.ui._format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Currency extends _format {
+trait Currency
+  extends StObject
+     with _format {
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var formatter: js.UndefOr[js.Function1[/* value */ Double | typings.std.Date, String]] = js.native
+  var formatter: js.UndefOr[js.Function1[/* value */ Double | typings.std.Date, String]] = js.undefined
   
-  var parser: js.UndefOr[js.Function1[/* value */ String, Double | typings.std.Date]] = js.native
+  var parser: js.UndefOr[js.Function1[/* value */ String, Double | typings.std.Date]] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[
     billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
-  ] = js.native
+  ] = js.undefined
 }
 object Currency {
   

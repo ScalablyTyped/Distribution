@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Area extends StObject {
   
-  var area: scala.Double = js.native
+  var area: scala.Double
   
-  var iteration: scala.Double = js.native
+  var iteration: scala.Double
 }
 object Area {
   

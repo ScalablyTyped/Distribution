@@ -6,7 +6,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.serverActionsMod.ServerActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readonlyRestClientMod {
@@ -57,17 +56,19 @@ object readonlyRestClientMod {
   /* static members */
   object ReadonlyRestClient {
     
+    @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @param {!Query} query
       * @param {?number=} tag
       * @return {string}
       * @private
       */
-    @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient.getListenId_")
-    @js.native
-    def getListenId_(query: Query): String = js.native
-    @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient.getListenId_")
-    @js.native
-    def getListenId_(query: Query, tag: Double): String = js.native
+    @scala.inline
+    def getListenId_(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getListenId_(query: Query, tag: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

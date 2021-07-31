@@ -13,18 +13,19 @@ import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiValueMod {
   
-  @JSImport("react-select/src/animated/MultiValue", JSImport.Default)
+  @JSImport("react-select/src/animated/MultiValue", JSImport.Namespace)
   @js.native
-  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/animated/MultiValue", "AnimatedMultiValue")
-  @js.native
-  def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = js.native
+  @scala.inline
+  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
+  
+  @scala.inline
+  def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedMultiValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
   
   /* Inlined {  in :boolean,   onExited :react-select.react-select/src/animated/transitions.fn} & react-select.react-select/src/components/MultiValue.MultiValueProps<OptionType> */
   @js.native
@@ -41,8 +42,9 @@ object multiValueMod {
     var cropWithEllipsis: Boolean = js.native
     
     def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
+    def cx(state: Unit, className: String): String = js.native
     def cx(state: ClassNamesState): String = js.native
+    def cx(state: ClassNamesState, className: String): String = js.native
     
     var data: OptionType = js.native
     

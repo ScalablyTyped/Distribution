@@ -2,15 +2,13 @@ package typings.elasticlunr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchConfig[T] extends StObject {
   
-  var expand: js.UndefOr[Boolean] = js.native
+  var expand: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.UndefOr[FieldSearchConfig[T]] = js.native
+  var fields: js.UndefOr[FieldSearchConfig[T]] = js.undefined
 }
 object SearchConfig {
   
@@ -21,7 +19,7 @@ object SearchConfig {
   }
   
   @scala.inline
-  implicit class SearchConfigMutableBuilder[Self <: SearchConfig[_], T] (val x: Self with SearchConfig[T]) extends AnyVal {
+  implicit class SearchConfigMutableBuilder[Self <: SearchConfig[?], T] (val x: Self & SearchConfig[T]) extends AnyVal {
     
     @scala.inline
     def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])

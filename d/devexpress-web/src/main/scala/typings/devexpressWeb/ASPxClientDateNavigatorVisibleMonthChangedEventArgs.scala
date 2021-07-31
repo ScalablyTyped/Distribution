@@ -3,24 +3,24 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDateNavigator.VisibleMonthChanged event.
   */
-@js.native
-trait ASPxClientDateNavigatorVisibleMonthChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDateNavigatorVisibleMonthChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns the end date of the latest visible month.
     */
-  var endDate: Date = js.native
+  var endDate: Date
   
   /**
     * Returns the start date of the latest visible month.
     */
-  var startDate: Date = js.native
+  var startDate: Date
 }
 object ASPxClientDateNavigatorVisibleMonthChangedEventArgs {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GcRule extends StObject {
   
   /** Delete cells that would be deleted by every nested rule. */
-  var intersection: js.UndefOr[Intersection] = js.native
+  var intersection: js.UndefOr[Intersection] = js.undefined
   
   /** Delete cells in a column older than the given age. Values must be at least one millisecond, and will be truncated to microsecond granularity. */
-  var maxAge: js.UndefOr[String] = js.native
+  var maxAge: js.UndefOr[String] = js.undefined
   
   /** Delete all cells in a column except the most recent N. */
-  var maxNumVersions: js.UndefOr[Double] = js.native
+  var maxNumVersions: js.UndefOr[Double] = js.undefined
   
   /** Delete cells that would be deleted by any nested rule. */
-  var union: js.UndefOr[Union] = js.native
+  var union: js.UndefOr[Union] = js.undefined
 }
 object GcRule {
   

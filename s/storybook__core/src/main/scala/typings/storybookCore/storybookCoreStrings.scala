@@ -3,28 +3,35 @@ package typings.storybookCore
 import typings.storybookCore.storyRendererMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookCoreStrings {
   
   @js.native
-  sealed trait centered extends Layout
+  sealed trait centered
+    extends StObject
+       with Layout
   @scala.inline
   def centered: centered = "centered".asInstanceOf[centered]
   
   @js.native
-  sealed trait fullscreen extends Layout
+  sealed trait fullscreen
+    extends StObject
+       with Layout
   @scala.inline
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
-  sealed trait none extends Layout
+  sealed trait none
+    extends StObject
+       with Layout
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait padded extends Layout
+  sealed trait padded
+    extends StObject
+       with Layout
   @scala.inline
   def padded: padded = "padded".asInstanceOf[padded]
   

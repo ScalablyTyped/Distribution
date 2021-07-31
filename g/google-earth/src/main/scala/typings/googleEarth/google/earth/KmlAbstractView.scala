@@ -2,18 +2,18 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlAbstractView extends KmlObject {
+trait KmlAbstractView
+  extends StObject
+     with KmlObject {
   
   /**
     * Creates a new KmlCamera object that matches this KmlAbstractView.
     *
     * If this view is already a KmlCamera, this function returns a new KmlCamera representing the same view.
     */
-  def copyAsCamera(): KmlCamera = js.native
+  def copyAsCamera(): KmlCamera
   
   /**
     * Creates a new KmlLookAt object that matches as closely as possible this KmlAbstractView. 
@@ -21,12 +21,12 @@ trait KmlAbstractView extends KmlObject {
     *
     * If this view is already a KmlLookAt, this function returns a new KmlLookAt representing the same view.
     */
-  def copyAsLookAt(): KmlLookAt = js.native
+  def copyAsLookAt(): KmlLookAt
   
   /**
     * Returns the KmlTimeStamp or KmlTimeSpan object associated with this view.
     */
-  def getTimePrimitive(): KmlTimePrimitive = js.native
+  def getTimePrimitive(): KmlTimePrimitive
   
   /**
     * Returns the viewer options on the current view.
@@ -37,12 +37,12 @@ trait KmlAbstractView extends KmlObject {
     * * GEPlugin.OPTION_SUNLIGHT
     * * GEPlugin.OPTION_HISTORICAL_IMAGERY
     */
-  def getViewerOptions(): KmlViewerOptions = js.native
+  def getViewerOptions(): KmlViewerOptions
   
   /**
     * Associate a KmlTimeStamp or KmlTimeSpan object with this view.
     */
-  def setTimePrimitive(timePrimitive: KmlTimePrimitive): Unit = js.native
+  def setTimePrimitive(timePrimitive: KmlTimePrimitive): Unit
   
   /**
     * Sets the viewer options on the current view.
@@ -53,7 +53,7 @@ trait KmlAbstractView extends KmlObject {
     * * GEPlugin.OPTION_SUNLIGHT
     * * GEPlugin.OPTION_HISTORICAL_IMAGERY
     */
-  def setViewerOptions(viewerOptions: KmlViewerOptions): Unit = js.native
+  def setViewerOptions(viewerOptions: KmlViewerOptions): Unit
 }
 object KmlAbstractView {
   

@@ -2,30 +2,28 @@ package typings.swaggerSchemaOfficial.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Path extends StObject {
   
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.native
+  var $ref: js.UndefOr[String] = js.undefined
   
-  var delete: js.UndefOr[Operation] = js.native
+  var delete: js.UndefOr[Operation] = js.undefined
   
-  var get: js.UndefOr[Operation] = js.native
+  var get: js.UndefOr[Operation] = js.undefined
   
-  var head: js.UndefOr[Operation] = js.native
+  var head: js.UndefOr[Operation] = js.undefined
   
-  var options: js.UndefOr[Operation] = js.native
+  var options: js.UndefOr[Operation] = js.undefined
   
-  var parameters: js.UndefOr[js.Array[Parameter | Reference]] = js.native
+  var parameters: js.UndefOr[js.Array[Parameter | Reference]] = js.undefined
   
-  var patch: js.UndefOr[Operation] = js.native
+  var patch: js.UndefOr[Operation] = js.undefined
   
-  var post: js.UndefOr[Operation] = js.native
+  var post: js.UndefOr[Operation] = js.undefined
   
-  var put: js.UndefOr[Operation] = js.native
+  var put: js.UndefOr[Operation] = js.undefined
 }
 object Path {
   

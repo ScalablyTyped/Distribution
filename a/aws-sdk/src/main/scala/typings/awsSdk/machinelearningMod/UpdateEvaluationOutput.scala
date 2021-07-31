@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEvaluationOutput extends StObject {
   
   /**
     * The ID assigned to the Evaluation during creation. This value should be identical to the value of the Evaluation in the request.
     */
-  var EvaluationId: js.UndefOr[EntityId] = js.native
+  var EvaluationId: js.UndefOr[EntityId] = js.undefined
 }
 object UpdateEvaluationOutput {
   

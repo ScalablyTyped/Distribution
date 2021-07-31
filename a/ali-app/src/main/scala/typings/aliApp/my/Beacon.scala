@@ -6,29 +6,27 @@ import typings.aliApp.aliAppNumbers.`2`
 import typings.aliApp.aliAppNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beacon extends StObject {
   
   /** iBeacon 设备的距离 */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   /** iBeacon 设备的主 id */
-  var major: String = js.native
+  var major: String
   
   /** iBeacon 设备的次 id */
-  var minor: String = js.native
+  var minor: String
   
   /** 表示设备距离的枚举值(0-3分别代表：未知、极近、近、远) */
-  var proximity: `0` | `1` | `2` | `3` = js.native
+  var proximity: `0` | `1` | `2` | `3`
   
   /** iBeacon 信号强度 */
-  var rssi: Double = js.native
+  var rssi: Double
   
   /** iBeacon 设备广播的 uuid */
-  var uuid: String = js.native
+  var uuid: String
 }
 object Beacon {
   

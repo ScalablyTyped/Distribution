@@ -3,13 +3,11 @@ package typings.wxServerSdk.mod
 import typings.wxServerSdk.anon.Removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveCollectionResult extends StObject {
   
-  var stats: Removed = js.native
+  var stats: Removed
 }
 object RemoveCollectionResult {
   

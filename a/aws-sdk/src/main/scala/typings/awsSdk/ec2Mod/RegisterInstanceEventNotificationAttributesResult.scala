@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterInstanceEventNotificationAttributesResult extends StObject {
   
   /**
     * The resulting set of tag keys.
     */
-  var InstanceTagAttribute: js.UndefOr[InstanceTagNotificationAttribute] = js.native
+  var InstanceTagAttribute: js.UndefOr[InstanceTagNotificationAttribute] = js.undefined
 }
 object RegisterInstanceEventNotificationAttributesResult {
   

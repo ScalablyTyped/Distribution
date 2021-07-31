@@ -5,10 +5,13 @@ import typings.ol.doubleClickZoomMod.default
 import typings.ol.interactionInteractionMod.InteractionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionMod {
+  
+  @JSImport("ol/interaction", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/interaction", "DoubleClickZoom")
   @js.native
@@ -149,37 +152,34 @@ object interactionMod {
     def this(opt_options: typings.ol.translateMod.Options) = this()
   }
   
-  @JSImport("ol/interaction", "defaults")
-  @js.native
-  def defaults(): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
-  @JSImport("ol/interaction", "defaults")
-  @js.native
-  def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
+  @scala.inline
+  def defaults(): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]]
+  @scala.inline
+  def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]]
   
-  @js.native
   trait DefaultsOptions extends StObject {
     
-    var altShiftDragRotate: js.UndefOr[Boolean] = js.native
+    var altShiftDragRotate: js.UndefOr[Boolean] = js.undefined
     
-    var doubleClickZoom: js.UndefOr[Boolean] = js.native
+    var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
     
-    var dragPan: js.UndefOr[Boolean] = js.native
+    var dragPan: js.UndefOr[Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mouseWheelZoom: js.UndefOr[Boolean] = js.native
+    var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
     
-    var onFocusOnly: js.UndefOr[Boolean] = js.native
+    var onFocusOnly: js.UndefOr[Boolean] = js.undefined
     
-    var pinchRotate: js.UndefOr[Boolean] = js.native
+    var pinchRotate: js.UndefOr[Boolean] = js.undefined
     
-    var pinchZoom: js.UndefOr[Boolean] = js.native
+    var pinchZoom: js.UndefOr[Boolean] = js.undefined
     
-    var shiftDragZoom: js.UndefOr[Boolean] = js.native
+    var shiftDragZoom: js.UndefOr[Boolean] = js.undefined
     
-    var zoomDelta: js.UndefOr[Double] = js.native
+    var zoomDelta: js.UndefOr[Double] = js.undefined
     
-    var zoomDuration: js.UndefOr[Double] = js.native
+    var zoomDuration: js.UndefOr[Double] = js.undefined
   }
   object DefaultsOptions {
     

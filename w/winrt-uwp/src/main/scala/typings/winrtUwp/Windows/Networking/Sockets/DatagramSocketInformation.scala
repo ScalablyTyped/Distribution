@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Networking.Sockets
 import typings.winrtUwp.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket information on a DatagramSocket object. */
-@js.native
 trait DatagramSocketInformation extends StObject {
   
   /** The local IP address associated with a DatagramSocket object. */
-  var localAddress: HostName = js.native
+  var localAddress: HostName
   
   /** The local service name or UDP port number associated with a DatagramSocket . */
-  var localPort: String = js.native
+  var localPort: String
   
   /** The IP address of the remote network destination associated with a DatagramSocket object. */
-  var remoteAddress: HostName = js.native
+  var remoteAddress: HostName
   
   /** The UDP port number of the remote network destination associated with a DatagramSocket object. */
-  var remotePort: String = js.native
+  var remotePort: String
 }
 object DatagramSocketInformation {
   

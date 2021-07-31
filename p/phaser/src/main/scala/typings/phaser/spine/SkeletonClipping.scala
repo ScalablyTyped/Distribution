@@ -2,10 +2,8 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkeletonClipping extends StObject {
   
   def clip(
@@ -17,17 +15,17 @@ trait SkeletonClipping extends StObject {
     y3: Double,
     clippingArea: js.Array[Double],
     output: js.Array[Double]
-  ): Boolean = js.native
+  ): Boolean
   
-  var clipAttachment: js.Any = js.native
+  var clipAttachment: js.Any
   
-  def clipEnd(): Unit = js.native
+  def clipEnd(): Unit
   
-  def clipEndWithSlot(slot: Slot): Unit = js.native
+  def clipEndWithSlot(slot: Slot): Unit
   
-  var clipOutput: js.Any = js.native
+  var clipOutput: js.Any
   
-  def clipStart(slot: Slot, clip: ClippingAttachment): Double = js.native
+  def clipStart(slot: Slot, clip: ClippingAttachment): Double
   
   def clipTriangles(
     vertices: ArrayLike[Double],
@@ -38,21 +36,21 @@ trait SkeletonClipping extends StObject {
     light: Color,
     dark: Color,
     twoColor: Boolean
-  ): Unit = js.native
+  ): Unit
   
-  var clippedTriangles: js.Array[Double] = js.native
+  var clippedTriangles: js.Array[Double]
   
-  var clippedVertices: js.Array[Double] = js.native
+  var clippedVertices: js.Array[Double]
   
-  var clippingPolygon: js.Any = js.native
+  var clippingPolygon: js.Any
   
-  var clippingPolygons: js.Any = js.native
+  var clippingPolygons: js.Any
   
-  def isClipping(): Boolean = js.native
+  def isClipping(): Boolean
   
-  var scratch: js.Any = js.native
+  var scratch: js.Any
   
-  var triangulator: js.Any = js.native
+  var triangulator: js.Any
 }
 object SkeletonClipping {
   

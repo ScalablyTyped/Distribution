@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAppProfilesResponse extends StObject {
   
   /** The list of requested app profiles. */
-  var appProfiles: js.UndefOr[js.Array[AppProfile]] = js.native
+  var appProfiles: js.UndefOr[js.Array[AppProfile]] = js.undefined
   
   /**
     * Locations from which AppProfile information could not be retrieved, due to an outage or some other transient condition. AppProfiles from these locations may be missing from
     * `app_profiles`. Values are of the form `projects//locations/`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Set if not all app profiles could be returned in a single response. Pass this value to `page_token` in another request to get the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAppProfilesResponse {
   

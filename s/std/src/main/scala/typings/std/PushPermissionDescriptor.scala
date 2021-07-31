@@ -3,22 +3,22 @@ package typings.std
 import typings.std.stdStrings.push
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PushPermissionDescriptor extends PermissionDescriptor {
+trait PushPermissionDescriptor
+  extends StObject
+     with PermissionDescriptor {
   
   @JSName("name")
-  var name_PushPermissionDescriptor: push = js.native
+  var name_PushPermissionDescriptor: push
   
-  var userVisibleOnly: js.UndefOr[scala.Boolean] = js.native
+  var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PushPermissionDescriptor {
   
   @scala.inline
-  def apply(name: push): PushPermissionDescriptor = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): PushPermissionDescriptor = {
+    val __obj = js.Dynamic.literal(name = "push")
     __obj.asInstanceOf[PushPermissionDescriptor]
   }
   

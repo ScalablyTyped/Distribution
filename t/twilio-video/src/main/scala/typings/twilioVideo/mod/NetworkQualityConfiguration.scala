@@ -2,15 +2,13 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkQualityConfiguration extends StObject {
   
-  var local: js.UndefOr[NetworkQualityVerbosity] = js.native
+  var local: js.UndefOr[NetworkQualityVerbosity] = js.undefined
   
-  var remote: js.UndefOr[NetworkQualityVerbosity] = js.native
+  var remote: js.UndefOr[NetworkQualityVerbosity] = js.undefined
 }
 object NetworkQualityConfiguration {
   

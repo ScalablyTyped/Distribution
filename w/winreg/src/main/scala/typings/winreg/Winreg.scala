@@ -3,33 +3,31 @@ package typings.winreg
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Winreg {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Optional registry hive architecture ('x86' or 'x64'; only valid on Windows 64 Bit Operating Systems).
       */
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
     /**
       * Optional hive ID, default is HKLM.
       */
-    var hive: js.UndefOr[String] = js.native
+    var hive: js.UndefOr[String] = js.undefined
     
     /**
       * Optional hostname, must start with '\\' sequence.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Optional key, default is the root key.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -68,14 +66,13 @@ object Winreg {
     }
   }
   
-  @js.native
   trait Registry extends StObject {
     
     /**
       * The registry hive architecture ('x86' or 'x64').
       * @readonly
       */
-    var arch: String = js.native
+    var arch: String
     
     /**
       * Remove all subkeys and values (including the default value) from this registry key.
@@ -83,7 +80,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def clear(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def clear(cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Create this registry key. Note that this is a no-op if the key already exists.
@@ -91,7 +88,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def create(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def create(cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Delete this key and all subkeys from the registry.
@@ -99,7 +96,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def destroy(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def destroy(cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Alias for the clear method to keep it backward compatible.
@@ -109,7 +106,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def erase(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def erase(cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Gets a named value from this registry key.
@@ -119,25 +116,25 @@ object Winreg {
       * @param {RegistryItem=} cb.item - the retrieved registry item
       * @returns {Registry} this registry key object
       */
-    def get(name: String, cb: js.Function2[/* err */ Error, /* result */ RegistryItem, Unit]): Registry = js.native
+    def get(name: String, cb: js.Function2[/* err */ Error, /* result */ RegistryItem, Unit]): Registry
     
     /**
       * The hive id.
       * @readonly
       */
-    var hive: String = js.native
+    var hive: String
     
     /**
       * The hostname.
       * @readonly
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * The registry key name.
       * @readonly
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Checks if this key already exists.
@@ -146,7 +143,7 @@ object Winreg {
       * @param {boolean=} cb.exists - true if a registry key with this name already exists
       * @returns {Registry} this registry key object
       */
-    def keyExists(cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry = js.native
+    def keyExists(cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry
     
     /**
       * Retrieve all subkeys from this registry key.
@@ -155,19 +152,19 @@ object Winreg {
       * @param {array=} cb.items - an array of {@link Registry} objects
       * @returns {Registry} this registry key object
       */
-    def keys(cb: js.Function2[/* err */ Error, /* result */ js.Array[this.type], Unit]): Registry = js.native
+    def keys(cb: js.Function2[/* err */ Error, /* result */ js.Array[this.type], Unit]): Registry
     
     /**
       * Creates a new {@link Registry} instance that points to the parent registry key.
       * @readonly
       */
-    var parent: Registry = js.native
+    var parent: Registry
     
     /**
       * The full path to the registry key.
       * @readonly
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Remove a named value from this registry key. If name is empty, sets the default value of this key.
@@ -177,7 +174,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def remove(name: String, cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def remove(name: String, cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Sets a named value in this registry key, overwriting an already existing value.
@@ -188,7 +185,7 @@ object Winreg {
       * @param {error=} cb.err - error object or null if successful
       * @returns {Registry} this registry key object
       */
-    def set(name: String, `type`: String, value: String, cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+    def set(name: String, `type`: String, value: String, cb: js.Function1[/* err */ Error, Unit]): Registry
     
     /**
       * Checks if a value with the given name already exists within this key.
@@ -198,7 +195,7 @@ object Winreg {
       * @param {boolean=} cb.exists - true if a value with the given name was found in this key
       * @returns {Registry} this registry key object
       */
-    def valueExists(name: String, cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry = js.native
+    def valueExists(name: String, cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry
     
     /**
       * Retrieve all values from this registry key.
@@ -207,7 +204,7 @@ object Winreg {
       * @param {array=} cb.items - an array of {@link RegistryItem} objects
       * @returns {Registry} this registry key object
       */
-    def values(cb: js.Function2[/* err */ Error, /* result */ js.Array[RegistryItem], Unit]): Registry = js.native
+    def values(cb: js.Function2[/* err */ Error, /* result */ js.Array[RegistryItem], Unit]): Registry
   }
   object Registry {
     
@@ -291,50 +288,49 @@ object Winreg {
     }
   }
   
-  @js.native
   trait RegistryItem extends StObject {
     
     /**
       * The hive architecture.
       * @readonly
       */
-    var arch: String = js.native
+    var arch: String
     
     /**
       * The hive id.
       * @readonly
       */
-    var hive: String = js.native
+    var hive: String
     
     /**
       * The hostname.
       * @readonly
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * The registry key.
       * @readonly
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The value name.
       * @readonly
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value type.
       * @readonly
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The value.
       * @readonly
       */
-    var value: String = js.native
+    var value: String
   }
   object RegistryItem {
     

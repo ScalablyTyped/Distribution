@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,23 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous 
   * data operation, such as the `setSelectedDataAsync` method of the Document object.
   */
-@js.native
 trait Error extends StObject {
   
   /**
     * Gets the numeric code of the error. For a list of error codes, see {@link https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | JavaScript API for Office error codes}.
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     * Gets the name of the error.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Gets a detailed description of the error.
     */
-  var name: String = js.native
+  var name: String
 }
 object Error {
   

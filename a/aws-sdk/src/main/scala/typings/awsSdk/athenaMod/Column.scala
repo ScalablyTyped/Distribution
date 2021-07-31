@@ -2,26 +2,24 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /**
     * Optional information about the column.
     */
-  var Comment: js.UndefOr[CommentString] = js.native
+  var Comment: js.UndefOr[CommentString] = js.undefined
   
   /**
     * The name of the column.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The data type of the column.
     */
-  var Type: js.UndefOr[TypeString] = js.native
+  var Type: js.UndefOr[TypeString] = js.undefined
 }
 object Column {
   

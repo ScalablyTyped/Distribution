@@ -8,7 +8,6 @@ import typings.reactSortablePane.anon.ClassName
 import typings.reactSortablePane.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paneMod {
@@ -43,14 +42,13 @@ object paneMod {
     def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IsPaneResizable extends StObject {
     
-    var x: js.UndefOr[Boolean] = js.native
+    var x: js.UndefOr[Boolean] = js.undefined
     
-    var xy: js.UndefOr[Boolean] = js.native
+    var xy: js.UndefOr[Boolean] = js.undefined
     
-    var y: js.UndefOr[Boolean] = js.native
+    var y: js.UndefOr[Boolean] = js.undefined
   }
   object IsPaneResizable {
     
@@ -83,33 +81,33 @@ object paneMod {
     }
   }
   
-  @js.native
   trait PaneProps
-    extends /* otherProps */ StringDictionary[js.Any] {
+    extends StObject
+       with /* otherProps */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[String | ReactNode] = js.native
+    var children: js.UndefOr[String | ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultSize: js.UndefOr[Height] = js.native
+    var defaultSize: js.UndefOr[Height] = js.undefined
     
-    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var maxHeight: js.UndefOr[PaneSize] = js.native
+    var maxHeight: js.UndefOr[PaneSize] = js.undefined
     
-    var maxWidth: js.UndefOr[PaneSize] = js.native
+    var maxWidth: js.UndefOr[PaneSize] = js.undefined
     
-    var minHeight: js.UndefOr[PaneSize] = js.native
+    var minHeight: js.UndefOr[PaneSize] = js.undefined
     
-    var minWidth: js.UndefOr[PaneSize] = js.native
+    var minWidth: js.UndefOr[PaneSize] = js.undefined
     
-    var onSizeChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSizeChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var resizable: js.UndefOr[IsPaneResizable] = js.native
+    var resizable: js.UndefOr[IsPaneResizable] = js.undefined
     
-    var size: js.UndefOr[Height] = js.native
+    var size: js.UndefOr[Height] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PaneProps {
     

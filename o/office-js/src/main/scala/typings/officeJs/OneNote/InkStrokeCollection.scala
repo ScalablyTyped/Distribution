@@ -7,7 +7,6 @@ import typings.officeJs.OneNote.Interfaces.InkStrokeCollectionData
 import typings.officeJs.OneNote.Interfaces.InkStrokeCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait InkStrokeCollection extends ClientObject {
+trait InkStrokeCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -71,7 +72,7 @@ trait InkStrokeCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): InkStrokeCollection = js.native
-  def load(option: InkStrokeCollectionLoadOptions with CollectionLoadOptions): InkStrokeCollection = js.native
+  def load(option: InkStrokeCollectionLoadOptions & CollectionLoadOptions): InkStrokeCollection = js.native
   def load(option: String): InkStrokeCollection = js.native
   def load(option: js.Array[String]): InkStrokeCollection = js.native
   def load(option: LoadOption): InkStrokeCollection = js.native

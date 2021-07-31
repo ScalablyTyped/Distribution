@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEncryptionByDefaultMod {
   
-  @JSImport("@pulumi/aws/ebs/getEncryptionByDefault", "getEncryptionByDefault")
+  @JSImport("@pulumi/aws/ebs/getEncryptionByDefault", JSImport.Namespace)
   @js.native
-  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getEncryptionByDefault", "getEncryptionByDefault")
-  @js.native
-  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")().asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
+  @scala.inline
+  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
+  
   trait GetEncryptionByDefaultResult extends StObject {
     
     /**
       * Whether or not default EBS encryption is enabled. Returns as `true` or `false`.
       */
-    val enabled: Boolean = js.native
+    val enabled: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetEncryptionByDefaultResult {
     

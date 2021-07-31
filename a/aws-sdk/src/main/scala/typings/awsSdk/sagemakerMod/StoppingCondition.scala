@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoppingCondition extends StObject {
   
   /**
     * The maximum length of time, in seconds, that the training or compilation job can run. If job does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. The maximum value is 28 days.
     */
-  var MaxRuntimeInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.MaxRuntimeInSeconds] = js.native
+  var MaxRuntimeInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.MaxRuntimeInSeconds] = js.undefined
   
   /**
     * The maximum length of time, in seconds, how long you are willing to wait for a managed spot training job to complete. It is the amount of time spent waiting for Spot capacity plus the amount of time the training job runs. It must be equal to or greater than MaxRuntimeInSeconds. 
     */
-  var MaxWaitTimeInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.MaxWaitTimeInSeconds] = js.native
+  var MaxWaitTimeInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.MaxWaitTimeInSeconds] = js.undefined
 }
 object StoppingCondition {
   

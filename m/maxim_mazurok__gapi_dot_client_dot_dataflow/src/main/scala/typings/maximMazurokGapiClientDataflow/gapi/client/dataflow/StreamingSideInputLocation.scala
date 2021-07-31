@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingSideInputLocation extends StObject {
   
   /** Identifies the state family where this side input is stored. */
-  var stateFamily: js.UndefOr[String] = js.native
+  var stateFamily: js.UndefOr[String] = js.undefined
   
   /** Identifies the particular side input within the streaming Dataflow job. */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object StreamingSideInputLocation {
   

@@ -7,31 +7,31 @@ import typings.openfin.openfinStrings.connected
 import typings.openfin.openfinStrings.disconnected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
   
-  @js.native
-  trait ChannelEvent[Type] extends ApplicationEvent[channel, Type] {
+  trait ChannelEvent[Type]
+    extends StObject
+       with ApplicationEvent[channel, Type] {
     
-    var channelId: String = js.native
+    var channelId: String
     
-    var channelName: String = js.native
+    var channelName: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ChannelEvent {
     
     @scala.inline
-    def apply[Type](channelId: String, channelName: String, topic: channel, `type`: Type, uuid: String): ChannelEvent[Type] = {
-      val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelName = channelName.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    def apply[Type](channelId: String, channelName: String, `type`: Type, uuid: String): ChannelEvent[Type] = {
+      val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelName = channelName.asInstanceOf[js.Any], topic = "channel", uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEvent[Type]]
     }
     
     @scala.inline
-    implicit class ChannelEventMutableBuilder[Self <: ChannelEvent[_], Type] (val x: Self with ChannelEvent[Type]) extends AnyVal {
+    implicit class ChannelEventMutableBuilder[Self <: ChannelEvent[?], Type] (val x: Self & ChannelEvent[Type]) extends AnyVal {
       
       @scala.inline
       def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
@@ -47,12 +47,13 @@ object channelMod {
     }
   }
   
-  @js.native
-  trait ChannelEvents extends BaseEventMap {
+  trait ChannelEvents
+    extends StObject
+       with BaseEventMap {
     
-    var connected: ChannelEvent[typings.openfin.openfinStrings.connected] = js.native
+    var connected: ChannelEvent[typings.openfin.openfinStrings.connected]
     
-    var disconnected: ChannelEvent[typings.openfin.openfinStrings.disconnected] = js.native
+    var disconnected: ChannelEvent[typings.openfin.openfinStrings.disconnected]
   }
   object ChannelEvents {
     

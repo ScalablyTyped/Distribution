@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rating extends StObject {
   
   /**
     * The rating that the authorized user gave to the video.
     */
-  var rating: String = js.native
+  var rating: String
   
   /**
     * The ID that YouTube uses to uniquely identify the video.
     */
-  var videoId: String = js.native
+  var videoId: String
 }
 object Rating {
   

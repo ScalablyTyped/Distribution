@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachPrincipalPolicyRequest extends StObject {
   
   /**
     * The name of the policy to detach.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
   
   /**
     * The principal. Valid principals are CertificateArn (arn:aws:iot:region:accountId:cert/certificateId), thingGroupArn (arn:aws:iot:region:accountId:thinggroup/groupName) and CognitoId (region:id).
     */
-  var principal: Principal = js.native
+  var principal: Principal
 }
 object DetachPrincipalPolicyRequest {
   

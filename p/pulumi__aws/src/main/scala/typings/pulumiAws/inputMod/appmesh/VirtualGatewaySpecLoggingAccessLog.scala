@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecLoggingAccessLog extends StObject {
   
   /**
     * The file object to send virtual gateway access logs to.
     */
-  var file: js.UndefOr[Input[VirtualGatewaySpecLoggingAccessLogFile]] = js.native
+  var file: js.UndefOr[Input[VirtualGatewaySpecLoggingAccessLogFile]] = js.undefined
 }
 object VirtualGatewaySpecLoggingAccessLog {
   

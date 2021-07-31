@@ -16,13 +16,13 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textFieldTypesMod {
   
-  @js.native
-  trait IMaskedTextFieldProps extends ITextFieldProps
+  trait IMaskedTextFieldProps
+    extends StObject
+       with ITextFieldProps
   object IMaskedTextFieldProps {
     
     @scala.inline
@@ -32,26 +32,25 @@ object textFieldTypesMod {
     }
   }
   
-  @js.native
   trait ITextField extends StObject {
     
     /** Blurs the input */
-    def blur(): Unit = js.native
+    def blur(): Unit
     
     /** Sets focus to the input. */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /** Select the value of the text field. */
-    def select(): Unit = js.native
+    def select(): Unit
     
     /** Gets the selection end of the text field. Returns -1 if there is no selection. */
-    var selectionEnd: Double | Null = js.native
+    var selectionEnd: Double | Null
     
     /** Gets the selection start of the text field. Returns -1 if there is no selection. */
-    var selectionStart: Double | Null = js.native
+    var selectionStart: Double | Null
     
     /** Sets the selection end of the text field to a specified value. */
-    def setSelectionEnd(value: Double): Unit = js.native
+    def setSelectionEnd(value: Double): Unit
     
     /**
       * Sets the start and end positions of a selection in a text field.
@@ -59,13 +58,13 @@ object textFieldTypesMod {
       * @param start - Index of the start of the selection.
       * @param end - Index of the end of the selection.
       */
-    def setSelectionRange(start: Double, end: Double): Unit = js.native
+    def setSelectionRange(start: Double, end: Double): Unit
     
     /** Sets the selection start of the text field to a specified value. */
-    def setSelectionStart(value: Double): Unit = js.native
+    def setSelectionStart(value: Double): Unit
     
     /** Gets the current value of the input. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ITextField {
     
@@ -78,7 +77,7 @@ object textFieldTypesMod {
       setSelectionRange: (Double, Double) => Unit,
       setSelectionStart: Double => Unit
     ): ITextField = {
-      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), select = js.Any.fromFunction0(select), setSelectionEnd = js.Any.fromFunction1(setSelectionEnd), setSelectionRange = js.Any.fromFunction2(setSelectionRange), setSelectionStart = js.Any.fromFunction1(setSelectionStart))
+      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), select = js.Any.fromFunction0(select), setSelectionEnd = js.Any.fromFunction1(setSelectionEnd), setSelectionRange = js.Any.fromFunction2(setSelectionRange), setSelectionStart = js.Any.fromFunction1(setSelectionStart), selectionEnd = null, selectionStart = null)
       __obj.asInstanceOf[ITextField]
     }
     
@@ -123,94 +122,95 @@ object textFieldTypesMod {
     }
   }
   
-  @js.native
-  trait ITextFieldProps extends AllHTMLAttributes[HTMLInputElement | HTMLTextAreaElement] {
+  trait ITextFieldProps
+    extends StObject
+       with AllHTMLAttributes[HTMLInputElement | HTMLTextAreaElement] {
     
     /**
       * Aria label for the text field.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * For multiline text fields, whether or not to auto adjust text field height.
       * @defaultvalue false
       */
-    var autoAdjustHeight: js.UndefOr[Boolean] = js.native
+    var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the text field is borderless.
       * @defaultvalue false
       */
-    var borderless: js.UndefOr[Boolean] = js.native
+    var borderless: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the reveal password button for input type `'password'` (will be ignored unless
       * the `type` prop is set to `'password'`).
       */
-    var canRevealPassword: js.UndefOr[Boolean] = js.native
+    var canRevealPassword: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional callback to access the ITextField component. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ITextField]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ITextField]] = js.undefined
     
     /**
       * Default value of the text field. Only provide this if the text field is an uncontrolled component;
       * otherwise, use the `value` property.
       */
     @JSName("defaultValue")
-    var defaultValue_ITextFieldProps: js.UndefOr[String] = js.native
+    var defaultValue_ITextFieldProps: js.UndefOr[String] = js.undefined
     
     /**
       * Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds.
       * Updates to this prop will not be respected.
       * @defaultvalue 200
       */
-    var deferredValidationTime: js.UndefOr[Double] = js.native
+    var deferredValidationTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Description displayed below the text field to provide additional details about what text to enter.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Static error message displayed below the text field. Use `onGetErrorMessage` to dynamically
       * change the error message displayed (if any) based on the current value. `errorMessage` and
       * `onGetErrorMessage` are mutually exclusive (`errorMessage` takes precedence).
       */
-    var errorMessage: js.UndefOr[String | Element] = js.native
+    var errorMessage: js.UndefOr[String | Element] = js.undefined
     
     /**
       * Props for an optional icon, displayed in the far right end of the text field.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Optional class name that is added specifically to the input/textarea element.
       */
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.
       */
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.
       */
-    var maskChar: js.UndefOr[String] = js.native
+    var maskChar: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.
       */
-    var maskFormat: js.UndefOr[StringDictionary[RegExp]] = js.native
+    var maskFormat: js.UndefOr[StringDictionary[RegExp]] = js.undefined
     
     /**
       * Whether or not the text field is a multiline text field.
       * @defaultvalue false
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback for when the input value changes.
@@ -224,7 +224,7 @@ object textFieldTypesMod {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function used to determine whether the input value is valid and get an error message if not.
@@ -241,64 +241,64 @@ object textFieldTypesMod {
       */
     var onGetErrorMessage: js.UndefOr[
         js.Function1[/* value */ String, js.UndefOr[String | Element | (js.Thenable[String | Element])]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function called after validation completes.
       */
     var onNotifyValidationResult: js.UndefOr[
         js.Function2[/* errorMessage */ String | Element, /* value */ js.UndefOr[String], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom renderer for the description.
       */
-    var onRenderDescription: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.native
+    var onRenderDescription: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
     
     /**
       * Custom renderer for the label.
       * If you don't call defaultRender, ensure that you give your custom-rendered label an id and that
       * you set the textfield's aria-labelledby prop to that id.
       */
-    var onRenderLabel: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.native
+    var onRenderLabel: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
     
     /**
       * Custom render function for prefix.
       */
-    var onRenderPrefix: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.native
+    var onRenderPrefix: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
     
     /**
       * Custom render function for suffix.
       */
-    var onRenderSuffix: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.native
+    var onRenderSuffix: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
     
     /**
       * For multiline text fields, whether or not the field is resizable.
       * @defaultvalue true
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ITextFieldStyleProps, ITextFieldStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ITextFieldStyleProps, ITextFieldStyles]] = js.undefined
     
     /**
       * Suffix displayed after the text field contents. This is not included in the value.
       * Ensure a descriptive label is present to assist screen readers, as the value does not include the suffix.
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether or not the text field is underlined.
       * @defaultvalue false
       */
-    var underlined: js.UndefOr[Boolean] = js.native
+    var underlined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Run validation when focus moves into the input, and **do not** validate on change.
@@ -306,7 +306,7 @@ object textFieldTypesMod {
       * (Unless this prop and/or `validateOnFocusOut` is set to true, validation will run on every change.)
       * @defaultvalue false
       */
-    var validateOnFocusIn: js.UndefOr[Boolean] = js.native
+    var validateOnFocusIn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Run validation when focus moves out of the input, and **do not** validate on change.
@@ -314,20 +314,20 @@ object textFieldTypesMod {
       * (Unless this prop and/or `validateOnFocusIn` is set to true, validation will run on every change.)
       * @defaultvalue false
       */
-    var validateOnFocusOut: js.UndefOr[Boolean] = js.native
+    var validateOnFocusOut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether validation should run when the input is initially rendered.
       * @defaultvalue true
       */
-    var validateOnLoad: js.UndefOr[Boolean] = js.native
+    var validateOnLoad: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Current value of the text field. Only provide this if the text field is a controlled component where you
       * are maintaining its current state; otherwise, use the `defaultValue` property.
       */
     @JSName("value")
-    var value_ITextFieldProps: js.UndefOr[String] = js.native
+    var value_ITextFieldProps: js.UndefOr[String] = js.undefined
   }
   object ITextFieldProps {
     
@@ -545,43 +545,42 @@ object textFieldTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/TextField/TextField.types.ITextFieldProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/TextField/TextField.types.ITextFieldProps, 'className' | 'disabled' | 'inputClassName' | 'required' | 'multiline' | 'borderless' | 'resizable' | 'underlined' | 'autoAdjustHeight'> & {  hasErrorMessage :boolean | undefined,   hasIcon :boolean | undefined,   hasLabel :boolean | undefined,   focused :boolean | undefined,   hasRevealButton :boolean | undefined} */
-  @js.native
   trait ITextFieldStyleProps extends StObject {
     
-    var autoAdjustHeight: js.UndefOr[Boolean] = js.native
+    var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
     
-    var borderless: js.UndefOr[Boolean] = js.native
+    var borderless: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Element has focus. */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /** Element has an error message. */
-    var hasErrorMessage: js.UndefOr[Boolean] = js.native
+    var hasErrorMessage: js.UndefOr[Boolean] = js.undefined
     
     /** Element has an icon. */
-    var hasIcon: js.UndefOr[Boolean] = js.native
+    var hasIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Element has a label. */
-    var hasLabel: js.UndefOr[Boolean] = js.native
+    var hasLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Element has a peek button for passwords */
-    var hasRevealButton: js.UndefOr[Boolean] = js.native
+    var hasRevealButton: js.UndefOr[Boolean] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var underlined: js.UndefOr[Boolean] = js.native
+    var underlined: js.UndefOr[Boolean] = js.undefined
   }
   object ITextFieldStyleProps {
     
@@ -683,73 +682,72 @@ object textFieldTypesMod {
     }
   }
   
-  @js.native
   trait ITextFieldStyles extends StObject {
     
     /**
       * Style for description element.
       */
-    var description: IStyle = js.native
+    var description: IStyle
     
     /**
       * Style for error message element.
       */
-    var errorMessage: IStyle = js.native
+    var errorMessage: IStyle
     
     /**
       * Style for main field entry element.
       */
-    var field: IStyle = js.native
+    var field: IStyle
     
     /**
       * Style for field group encompassing entry area (prefix, field, icon and suffix).
       */
-    var fieldGroup: IStyle = js.native
+    var fieldGroup: IStyle
     
     /**
       * Style for icon prop element.
       */
-    var icon: IStyle = js.native
+    var icon: IStyle
     
     /**
       * Style for prefix element.
       */
-    var prefix: IStyle = js.native
+    var prefix: IStyle
     
     /**
       * Styling for reveal password button
       */
-    var revealButton: IStyle = js.native
+    var revealButton: IStyle
     
     /**
       * Styling for reveal password icon
       */
-    var revealIcon: IStyle = js.native
+    var revealIcon: IStyle
     
     /**
       * Styling for reveal password span
       */
-    var revealSpan: IStyle = js.native
+    var revealSpan: IStyle
     
     /**
       * Style for root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Styling for subcomponents.
       */
-    var subComponentStyles: ITextFieldSubComponentStyles = js.native
+    var subComponentStyles: ITextFieldSubComponentStyles
     
     /**
       * Style for suffix element.
       */
-    var suffix: IStyle = js.native
+    var suffix: IStyle
     
     /**
       * Style for TextField wrapper element.
       */
-    var wrapper: IStyle = js.native
+    var wrapper: IStyle
   }
   object ITextFieldStyles {
     
@@ -875,18 +873,17 @@ object textFieldTypesMod {
     }
   }
   
-  @js.native
   trait ITextFieldSubComponentStyles extends StObject {
     
     /**
       * Styling for Label child component.
       */
-    var label: IStyleFunctionOrObject[_, _] = js.native
+    var label: IStyleFunctionOrObject[js.Any, js.Any]
   }
   object ITextFieldSubComponentStyles {
     
     @scala.inline
-    def apply(label: IStyleFunctionOrObject[_, _]): ITextFieldSubComponentStyles = {
+    def apply(label: IStyleFunctionOrObject[js.Any, js.Any]): ITextFieldSubComponentStyles = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITextFieldSubComponentStyles]
     }
@@ -895,10 +892,10 @@ object textFieldTypesMod {
     implicit class ITextFieldSubComponentStylesMutableBuilder[Self <: ITextFieldSubComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLabel(value: IStyleFunctionOrObject[_, _]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      def setLabel(value: IStyleFunctionOrObject[js.Any, js.Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLabelFunction1(value: _ => DeepPartial[_]): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      def setLabelFunction1(value: js.Any => DeepPartial[js.Any]): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     }
   }
 }

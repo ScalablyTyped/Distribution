@@ -3,16 +3,14 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/team-space-membership.TeamSpaceMembershipProps, 'sys'> */
-@js.native
 trait OmitTeamSpaceMembershipPr extends StObject {
   
-  var admin: Boolean = js.native
+  var admin: Boolean
   
-  var roles: js.Array[MetaLinkProps] = js.native
+  var roles: js.Array[MetaLinkProps]
 }
 object OmitTeamSpaceMembershipPr {
   

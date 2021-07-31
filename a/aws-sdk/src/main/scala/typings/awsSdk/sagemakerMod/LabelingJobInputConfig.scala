@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobInputConfig extends StObject {
   
   /**
     * Attributes of the data specified by the customer.
     */
-  var DataAttributes: js.UndefOr[LabelingJobDataAttributes] = js.native
+  var DataAttributes: js.UndefOr[LabelingJobDataAttributes] = js.undefined
   
   /**
     * The location of the input data.
     */
-  var DataSource: LabelingJobDataSource = js.native
+  var DataSource: LabelingJobDataSource
 }
 object LabelingJobInputConfig {
   

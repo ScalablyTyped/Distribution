@@ -9,26 +9,24 @@ import typings.amapJsApiMap3d.anon.Path
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Object3D extends StObject {
   
-  var DEPTH_TEST: Boolean = js.native
+  var DEPTH_TEST: Boolean
   
-  val geometry: Geometry3D = js.native
+  val geometry: Geometry3D
   
-  var needUpdate: Boolean = js.native
+  var needUpdate: Boolean
   
-  def reDraw(): Unit = js.native
+  def reDraw(): Unit
   
   // internal
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  var textures: js.Array[String | HTMLCanvasElement] = js.native
+  var textures: js.Array[String | HTMLCanvasElement]
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
 }
 object Object3D {
   
@@ -46,11 +44,12 @@ object Object3D {
     __obj.asInstanceOf[Object3D]
   }
   
-  @js.native
-  trait Line extends Object3D {
+  trait Line
+    extends StObject
+       with Object3D {
     
     @JSName("geometry")
-    val geometry_Line: typings.amapJsApiMap3d.AMap.Geometry3D.Line = js.native
+    val geometry_Line: typings.amapJsApiMap3d.AMap.Geometry3D.Line
   }
   object Line {
     
@@ -76,11 +75,12 @@ object Object3D {
     }
   }
   
-  @js.native
-  trait Mesh extends Object3D {
+  trait Mesh
+    extends StObject
+       with Object3D {
     
     @JSName("geometry")
-    val geometry_Mesh: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh = js.native
+    val geometry_Mesh: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh
   }
   object Mesh {
     
@@ -106,11 +106,12 @@ object Object3D {
     }
   }
   
-  @js.native
-  trait MeshAcceptLights extends Mesh {
+  trait MeshAcceptLights
+    extends StObject
+       with Mesh {
     
     @JSName("geometry")
-    val geometry_MeshAcceptLights: MeshreadonlyvertexNormals = js.native
+    val geometry_MeshAcceptLights: MeshreadonlyvertexNormals
   }
   object MeshAcceptLights {
     
@@ -138,7 +139,9 @@ object Object3D {
   
   // inherit from WideLine
   @js.native
-  trait MeshLine extends Object3D {
+  trait MeshLine
+    extends StObject
+       with Object3D {
     
     @JSName("geometry")
     val geometry_MeshLine: Geometry3DreadonlyvertexI = js.native
@@ -156,7 +159,7 @@ object Object3D {
   }
   object MeshLine {
     
-    type Options = Color with (Path | typings.amapJsApiMap3d.anon.Unit)
+    type Options = Color & (Path | typings.amapJsApiMap3d.anon.Unit)
   }
   
   @scala.inline
@@ -187,15 +190,16 @@ object Object3D {
     def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait Points extends Object3D {
+  trait Points
+    extends StObject
+       with Object3D {
     
-    var borderColor: String = js.native
+    var borderColor: String
     
-    var borderWeight: Double = js.native
+    var borderWeight: Double
     
     @JSName("geometry")
-    val geometry_Points: typings.amapJsApiMap3d.AMap.Geometry3D.Points = js.native
+    val geometry_Points: typings.amapJsApiMap3d.AMap.Geometry3D.Points
   }
   object Points {
     
@@ -231,16 +235,15 @@ object Object3D {
   
   object Prism {
     
-    @js.native
     trait Options extends StObject {
       
-      var color: String | (js.Array[js.Array[Double] | Double | String]) = js.native
+      var color: String | (js.Array[js.Array[Double] | Double | String])
       
-      var color2: js.UndefOr[String | (js.Array[js.Array[Double] | Double | String])] = js.native
+      var color2: js.UndefOr[String | (js.Array[js.Array[Double] | Double | String])] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var path: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel] = js.native
+      var path: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel]
     }
     object Options {
       
@@ -287,10 +290,11 @@ object Object3D {
   }
   type Prism = MeshAcceptLights
   
-  @js.native
-  trait RoundPoints extends Points {
+  trait RoundPoints
+    extends StObject
+       with Points {
     
-    var merge: Boolean = js.native
+    var merge: Boolean
   }
   object RoundPoints {
     
@@ -321,16 +325,15 @@ object Object3D {
   
   object ThinLine {
     
-    @js.native
     trait Options extends StObject {
       
-      var altitude: js.UndefOr[Double] = js.native
+      var altitude: js.UndefOr[Double] = js.undefined
       
-      var color: String = js.native
+      var color: String
       
-      var dashArray: js.UndefOr[js.Array[Double]] = js.native
+      var dashArray: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var path: js.Array[js.Tuple2[Double, Double]] = js.native
+      var path: js.Array[js.Tuple2[Double, Double]]
     }
     object Options {
       

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryGrantableRolesResponse extends StObject {
   
   /** To retrieve the next page of results, set `QueryGrantableRolesRequest.page_token` to this value. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of matching roles. */
-  var roles: js.UndefOr[js.Array[Role]] = js.native
+  var roles: js.UndefOr[js.Array[Role]] = js.undefined
 }
 object QueryGrantableRolesResponse {
   

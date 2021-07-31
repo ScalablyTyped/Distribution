@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaneOptions extends StObject {
   
   /**
     * (Highcharts) An array of background items for the pane.
     */
-  var background: js.UndefOr[js.Array[PaneBackgroundOptions]] = js.native
+  var background: js.UndefOr[js.Array[PaneBackgroundOptions]] = js.undefined
   
   /**
     * (Highcharts) The center of a polar chart or angular gauge, given as an
     * array of [x, y] positions. Positions can be given as integers that
     * transform to pixels, or as percentages of the plot area size.
     */
-  var center: js.UndefOr[js.Array[String | Double]] = js.native
+  var center: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   /**
     * (Highcharts) The end angle of the polar X axis or gauge value axis, given
@@ -26,26 +24,26 @@ trait PaneOptions extends StObject {
     *
     * + 360.
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The inner size of the pane, either as a number defining
     * pixels, or a percentage defining a percentage of the pane's size.
     */
-  var innerSize: js.UndefOr[Double | String] = js.native
+  var innerSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The size of the pane, either as a number defining pixels, or
     * a percentage defining a percentage of the available plot area (the
     * smallest of the plot height or plot width).
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The start angle of the polar X axis or gauge axis, given in
     * degrees where 0 is north. Defaults to 0.
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object PaneOptions {
   

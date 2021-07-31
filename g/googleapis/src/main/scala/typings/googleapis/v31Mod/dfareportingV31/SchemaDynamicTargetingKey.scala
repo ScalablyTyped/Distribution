@@ -2,7 +2,6 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Manager IDs (such as placement IDs) to save time and avoid errors in your
   * dynamic feeds.
   */
-@js.native
 trait SchemaDynamicTargetingKey extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#dynamicTargetingKey&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this dynamic targeting key. This is a required field. Must be
     * less than 256 characters long and cannot contain commas. All characters
     * are converted to lowercase.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the object of this dynamic targeting key. This is a required field.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the object of this dynamic targeting key. This is a required
     * field.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
 }
 object SchemaDynamicTargetingKey {
   

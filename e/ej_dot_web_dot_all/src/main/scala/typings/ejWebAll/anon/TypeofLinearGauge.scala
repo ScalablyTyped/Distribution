@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.datavisualization.LinearGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofLinearGauge extends StObject {
   
   /* static member */
-  var Locale: js.Any = js.native
+  var Locale: js.Any
   
   /* static member */
-  var fn: LinearGauge = js.native
+  var fn: LinearGauge
 }
 object TypeofLinearGauge {
   

@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectiveTime extends StObject {
   
-  var effectiveTime: js.UndefOr[String] = js.native
+  var effectiveTime: js.UndefOr[String] = js.undefined
   
-  var isLocked: js.UndefOr[Boolean] = js.native
+  var isLocked: js.UndefOr[Boolean] = js.undefined
   
-  var retentionPeriod: js.UndefOr[String] = js.native
+  var retentionPeriod: js.UndefOr[String] = js.undefined
 }
 object EffectiveTime {
   

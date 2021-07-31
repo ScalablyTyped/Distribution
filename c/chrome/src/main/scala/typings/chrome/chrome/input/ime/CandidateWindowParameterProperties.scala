@@ -2,54 +2,52 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidateWindowParameterProperties extends StObject {
   
   /**
     * Optional.
     * Text that is shown at the bottom of the candidate window.
     */
-  var auxiliaryText: js.UndefOr[String] = js.native
+  var auxiliaryText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.
     * True to display the auxiliary text, false to hide it.
     */
-  var auxiliaryTextVisible: js.UndefOr[Boolean] = js.native
+  var auxiliaryTextVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * True to show the cursor, false to hide it.
     */
-  var cursorVisible: js.UndefOr[Boolean] = js.native
+  var cursorVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * The number of candidates to display per page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
     * True if the candidate window should be rendered vertical, false to make it horizontal.
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * True to show the Candidate window, false to hide it.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * Where to display the candidate window.
     * @since Chrome 28.
     */
-  var windowPosition: js.UndefOr[String] = js.native
+  var windowPosition: js.UndefOr[String] = js.undefined
 }
 object CandidateWindowParameterProperties {
   

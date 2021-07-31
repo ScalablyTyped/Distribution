@@ -4,33 +4,31 @@ import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Material extends StObject {
   
-  var bottomRadius: js.UndefOr[Property] = js.native
+  var bottomRadius: js.UndefOr[Property] = js.undefined
   
-  var fill: js.UndefOr[Property] = js.native
+  var fill: js.UndefOr[Property] = js.undefined
   
-  var length: js.UndefOr[Property] = js.native
+  var length: js.UndefOr[Property] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty] = js.native
+  var material: js.UndefOr[MaterialProperty] = js.undefined
   
-  var numberOfVerticalLines: js.UndefOr[Property] = js.native
+  var numberOfVerticalLines: js.UndefOr[Property] = js.undefined
   
-  var outline: js.UndefOr[Property] = js.native
+  var outline: js.UndefOr[Property] = js.undefined
   
-  var outlineColor: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[Property] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property] = js.native
+  var outlineWidth: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
   
-  var slices: js.UndefOr[Property] = js.native
+  var slices: js.UndefOr[Property] = js.undefined
   
-  var topRadius: js.UndefOr[Property] = js.native
+  var topRadius: js.UndefOr[Property] = js.undefined
 }
 object Material {
   

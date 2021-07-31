@@ -2,18 +2,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitTreeDiffResponse extends StObject {
   
   /**
     * The HTTP client methods find the continuation token header in the response and populate this field.
     */
-  var continuationToken: js.Array[String] = js.native
+  var continuationToken: js.Array[String]
   
-  var treeDiff: GitTreeDiff = js.native
+  var treeDiff: GitTreeDiff
 }
 object GitTreeDiffResponse {
   

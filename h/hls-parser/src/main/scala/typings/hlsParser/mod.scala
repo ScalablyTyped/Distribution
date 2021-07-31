@@ -27,10 +27,13 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("hls-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hls-parser", "Data")
   @js.native
@@ -39,24 +42,19 @@ object mod {
     var `type`: playlist | segment = js.native
   }
   
-  @JSImport("hls-parser", "getOptions")
-  @js.native
-  def getOptions(): Options = js.native
+  @scala.inline
+  def getOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[Options]
   
-  @JSImport("hls-parser", "parse")
-  @js.native
-  def parse(manifest: String): MasterPlaylist | MediaPlaylist = js.native
+  @scala.inline
+  def parse(manifest: String): MasterPlaylist | MediaPlaylist = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(manifest.asInstanceOf[js.Any]).asInstanceOf[MasterPlaylist | MediaPlaylist]
   
-  @JSImport("hls-parser", "setOptions")
-  @js.native
-  def setOptions(overrides: PartialOptions): Unit = js.native
+  @scala.inline
+  def setOptions(overrides: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(overrides.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hls-parser", "stringify")
-  @js.native
-  def stringify(playlist: MasterPlaylist): String = js.native
-  @JSImport("hls-parser", "stringify")
-  @js.native
-  def stringify(playlist: MediaPlaylist): String = js.native
+  @scala.inline
+  def stringify(playlist: MasterPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(playlist: MediaPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object types {
     
@@ -264,18 +262,17 @@ object mod {
       var video: js.Array[Rendition[VIDEO]] = js.native
     }
     
-    @js.native
     trait BasePlaylistConstructorProperties extends StObject {
       
-      var independentSegments: js.UndefOr[Boolean] = js.native
+      var independentSegments: js.UndefOr[Boolean] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var start: js.UndefOr[Offset] = js.native
+      var start: js.UndefOr[Offset] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[Double] = js.native
+      var version: js.UndefOr[Double] = js.undefined
     }
     object BasePlaylistConstructorProperties {
       
@@ -321,12 +318,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Byterange extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Byterange {
     
@@ -347,10 +343,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var strictMode: Boolean = js.native
+    var strictMode: Boolean
   }
   object Options {
     

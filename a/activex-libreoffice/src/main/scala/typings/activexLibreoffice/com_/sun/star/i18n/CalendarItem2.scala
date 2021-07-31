@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Derived from {@link com.sun.star.i18n.CalendarItem} this provides an additional member for narrow names.
   * @since LibreOffice 3.5
   */
-@js.native
-trait CalendarItem2 extends CalendarItem {
+trait CalendarItem2
+  extends StObject
+     with CalendarItem {
   
   /** The narrow name, for example, **"S"** for Sunday or **"J"** for January. */
-  var NarrowName: String = js.native
+  var NarrowName: String
 }
 object CalendarItem2 {
   

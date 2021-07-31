@@ -16,17 +16,17 @@ import typings.tensorflowTfjsLayers.typesMod.PyJson
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topologyConfigMod {
   
-  @js.native
-  trait BaseLayerSerialization[N /* <: String */, C /* <: LayerConfig */] extends BaseSerialization[N, JsonLayer[C]] {
+  trait BaseLayerSerialization[N /* <: String */, C /* <: LayerConfig */]
+    extends StObject
+       with BaseSerialization[N, JsonLayer[C]] {
     
-    var inbound_nodes: js.UndefOr[js.Array[NodeConfig]] = js.native
+    var inbound_nodes: js.UndefOr[js.Array[NodeConfig]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object BaseLayerSerialization {
     
@@ -37,7 +37,7 @@ object topologyConfigMod {
     }
     
     @scala.inline
-    implicit class BaseLayerSerializationMutableBuilder[Self <: BaseLayerSerialization[_, _], N /* <: String */, C /* <: LayerConfig */] (val x: Self with (BaseLayerSerialization[N, C])) extends AnyVal {
+    implicit class BaseLayerSerializationMutableBuilder[Self <: BaseLayerSerialization[?, ?], N /* <: String */, C /* <: LayerConfig */] (val x: Self & (BaseLayerSerialization[N, C])) extends AnyVal {
       
       @scala.inline
       def setInbound_nodes(value: js.Array[NodeConfig]): Self = StObject.set(x, "inbound_nodes", value.asInstanceOf[js.Any])
@@ -53,29 +53,30 @@ object topologyConfigMod {
     }
   }
   
-  type JsonLayer[C /* <: LayerConfig */] = C with LayerConfig with (PyJson[
+  type JsonLayer[C /* <: LayerConfig */] = C & LayerConfig & (PyJson[
     Extract[
       input_shape | batch_input_shape | batch_size | dtype | name | trainable | input_dtype | (/* keyof C */ String), 
       String
     ]
   ])
   
-  @js.native
-  trait LayerConfig extends PyJsonDict {
+  trait LayerConfig
+    extends StObject
+       with PyJsonDict {
     
-    var batch_input_shape: js.UndefOr[Shape] = js.native
+    var batch_input_shape: js.UndefOr[Shape] = js.undefined
     
-    var batch_size: js.UndefOr[Double] = js.native
+    var batch_size: js.UndefOr[Double] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
-    var input_dtype: js.UndefOr[DataType] = js.native
+    var input_dtype: js.UndefOr[DataType] = js.undefined
     
-    var input_shape: js.UndefOr[Shape] = js.native
+    var input_shape: js.UndefOr[Shape] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var trainable: js.UndefOr[Boolean] = js.native
+    var trainable: js.UndefOr[Boolean] = js.undefined
   }
   object LayerConfig {
     

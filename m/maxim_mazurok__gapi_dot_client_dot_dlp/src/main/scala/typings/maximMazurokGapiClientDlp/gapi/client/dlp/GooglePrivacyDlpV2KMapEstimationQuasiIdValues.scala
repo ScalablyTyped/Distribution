@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2KMapEstimationQuasiIdValues extends StObject {
   
   /** The estimated anonymity for these quasi-identifier values. */
-  var estimatedAnonymity: js.UndefOr[String] = js.native
+  var estimatedAnonymity: js.UndefOr[String] = js.undefined
   
   /** The quasi-identifier values. */
-  var quasiIdsValues: js.UndefOr[js.Array[GooglePrivacyDlpV2Value]] = js.native
+  var quasiIdsValues: js.UndefOr[js.Array[GooglePrivacyDlpV2Value]] = js.undefined
 }
 object GooglePrivacyDlpV2KMapEstimationQuasiIdValues {
   

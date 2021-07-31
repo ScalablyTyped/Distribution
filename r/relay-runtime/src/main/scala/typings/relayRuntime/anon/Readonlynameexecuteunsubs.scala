@@ -4,22 +4,22 @@ import typings.relayRuntime.relayRuntimeStrings.executeDotunsubscribe
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.unsubscribe',   transactionID :number}> */
-@js.native
-trait Readonlynameexecuteunsubs extends LogEvent {
+trait Readonlynameexecuteunsubs
+  extends StObject
+     with LogEvent {
   
-  val name: executeDotunsubscribe = js.native
+  val name: executeDotunsubscribe
   
-  val transactionID: Double = js.native
+  val transactionID: Double
 }
 object Readonlynameexecuteunsubs {
   
   @scala.inline
-  def apply(name: executeDotunsubscribe, transactionID: Double): Readonlynameexecuteunsubs = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
+  def apply(transactionID: Double): Readonlynameexecuteunsubs = {
+    val __obj = js.Dynamic.literal(name = "execute.unsubscribe", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecuteunsubs]
   }
   

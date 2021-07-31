@@ -2,21 +2,19 @@ package typings.sidewayAddress.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analysis extends StObject {
   
   /**
     * The error code.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * The reason validation failed.
     */
-  var error: String = js.native
+  var error: String
 }
 object Analysis {
   

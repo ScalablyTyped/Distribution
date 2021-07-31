@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messaging {
@@ -60,9 +59,9 @@ object messaging {
   trait Messaging extends StObject {
     
     def deleteToken(): js.Promise[Unit] = js.native
-    def deleteToken(authorizedEntity: js.UndefOr[scala.Nothing], scope: String): js.Promise[Unit] = js.native
     def deleteToken(authorizedEntity: String): js.Promise[Unit] = js.native
     def deleteToken(authorizedEntity: String, scope: String): js.Promise[Unit] = js.native
+    def deleteToken(authorizedEntity: Unit, scope: String): js.Promise[Unit] = js.native
     
     /**
       * Returns the devices FCM token.
@@ -85,13 +84,13 @@ object messaging {
       * the payload object is passed to the listener callback.
       * This method is only triggered when the app is running.
       */
-    def onMessage(listener: js.Function1[/* message */ js.Any, _]): js.Function0[_] = js.native
+    def onMessage(listener: js.Function1[/* message */ js.Any, js.Any]): js.Function0[js.Any] = js.native
     
     /**
       * On the event a devices FCM token is refreshed by Google,
       *  the new token is returned in a callback listener.
       */
-    def onTokenRefresh(listener: js.Function1[/* token */ String, _]): js.Function0[_] = js.native
+    def onTokenRefresh(listener: js.Function1[/* token */ String, js.Any]): js.Function0[js.Any] = js.native
     
     /**
       * Requests app notification permissions in an Alert dialog.
@@ -114,10 +113,9 @@ object messaging {
     def unsubscribeFromTopic(topic: String): Unit = js.native
   }
   
-  @js.native
   trait MessagingStatics extends StObject {
     
-    var RemoteMessage: Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.messaging.RemoteMessage] = js.native
+    var RemoteMessage: Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.messaging.RemoteMessage]
   }
   object MessagingStatics {
     

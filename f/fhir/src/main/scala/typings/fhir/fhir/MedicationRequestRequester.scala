@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who/What requested the Request
   */
-@js.native
-trait MedicationRequestRequester extends BackboneElement {
+trait MedicationRequestRequester
+  extends StObject
+     with BackboneElement {
   
   /**
     * Who ordered the initial medication(s)
     */
-  var agent: Reference = js.native
+  var agent: Reference
   
   /**
     * Organization agent is acting for
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.native
+  var onBehalfOf: js.UndefOr[Reference] = js.undefined
 }
 object MedicationRequestRequester {
   

@@ -10,9 +10,9 @@ TypeScript typings for Display & Video 360 API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.displayvideo |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 46 |
+| # downloads        | 1111 |
 | # stars            | 0 |
 
 ## Links

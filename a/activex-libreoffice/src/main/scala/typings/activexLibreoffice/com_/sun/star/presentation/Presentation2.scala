@@ -8,16 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * enhances the {@link Presentation} service to give access to a {@link XPresentation2} interface.
   * @since OOo 3.0
   */
-@js.native
 trait Presentation2
-  extends Presentation
+  extends StObject
+     with Presentation
      with XPresentation2
 object Presentation2 {
   

@@ -2,22 +2,20 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The MediaDevicesInfo interface contains information that describes a single media input or output device. */
-@js.native
 trait MediaDeviceInfo extends StObject {
   
-  val deviceId: java.lang.String = js.native
+  val deviceId: java.lang.String
   
-  val groupId: java.lang.String = js.native
+  val groupId: java.lang.String
   
-  val kind: MediaDeviceKind = js.native
+  val kind: MediaDeviceKind
   
-  val label: java.lang.String = js.native
+  val label: java.lang.String
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object MediaDeviceInfo {
   

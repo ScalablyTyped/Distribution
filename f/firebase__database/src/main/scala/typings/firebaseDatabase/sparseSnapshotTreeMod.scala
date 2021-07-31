@@ -4,7 +4,6 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sparseSnapshotTreeMod {
@@ -37,7 +36,7 @@ object sparseSnapshotTreeMod {
       * @param prefixPath Path to look up node for.
       * @param func The function to invoke for each tree.
       */
-    def forEachTree(prefixPath: Path, func: js.Function2[/* a */ Path, /* b */ Node, _]): Unit = js.native
+    def forEachTree(prefixPath: Path, func: js.Function2[/* a */ Path, /* b */ Node, js.Any]): Unit = js.native
     
     /**
       * Purge the data at path from the cache.

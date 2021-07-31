@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncounteredNonAndroidUiWidgetScreen extends StObject {
   
   /** Number of encountered distinct screens with non Android UI widgets. */
-  var distinctScreens: js.UndefOr[Double] = js.native
+  var distinctScreens: js.UndefOr[Double] = js.undefined
   
   /** Subset of screens which contain non Android UI widgets. */
-  var screenIds: js.UndefOr[js.Array[String]] = js.native
+  var screenIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object EncounteredNonAndroidUiWidgetScreen {
   

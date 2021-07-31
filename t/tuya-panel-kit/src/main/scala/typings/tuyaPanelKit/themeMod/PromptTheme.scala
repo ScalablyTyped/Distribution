@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptTheme extends StObject {
   
-  var bg: String = js.native
+  var bg: String
   
-  var padding: String = js.native
+  var padding: String
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var radius: Double = js.native
+  var radius: Double
 }
 object PromptTheme {
   

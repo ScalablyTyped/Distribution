@@ -2,19 +2,17 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The document classification response message.
   */
-@js.native
 trait SchemaClassifyTextResponse extends StObject {
   
   /**
     * Categories representing the input document.
     */
-  var categories: js.UndefOr[js.Array[SchemaClassificationCategory]] = js.native
+  var categories: js.UndefOr[js.Array[SchemaClassificationCategory]] = js.undefined
 }
 object SchemaClassifyTextResponse {
   

@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerId extends StObject {
   
   /** 标记点 ID */
-  var markerId: Double = js.native
+  var markerId: Double
 }
 object MarkerId {
   

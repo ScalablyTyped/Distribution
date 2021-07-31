@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a sorting info. */
-@js.native
 trait SortingInfo extends StObject {
   
   /** contains a flag indicating the sort mode (ascending or descending). */
-  var Ascending: Boolean = js.native
+  var Ascending: Boolean
   
   /** specifies the name of a property to use for sorting ( e.g. "Title" ). */
-  var PropertyName: String = js.native
+  var PropertyName: String
 }
 object SortingInfo {
   

@@ -4,7 +4,6 @@ import typings.yaml.typesMod.Schema.Name
 import typings.yaml.typesMod.Schema.TagId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yamlStrings {
@@ -115,97 +114,135 @@ object yamlStrings {
   def `]`: `]` = "]".asInstanceOf[`]`]
   
   @js.native
-  sealed trait binary extends TagId
+  sealed trait binary
+    extends StObject
+       with TagId
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait bool extends TagId
+  sealed trait bool
+    extends StObject
+       with TagId
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
-  sealed trait core extends Name
+  sealed trait core
+    extends StObject
+       with Name
   @scala.inline
   def core: core = "core".asInstanceOf[core]
   
   @js.native
-  sealed trait failsafe extends Name
+  sealed trait failsafe
+    extends StObject
+       with Name
   @scala.inline
   def failsafe: failsafe = "failsafe".asInstanceOf[failsafe]
   
   @js.native
-  sealed trait float extends TagId
+  sealed trait float
+    extends StObject
+       with TagId
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait floatExp extends TagId
+  sealed trait floatExp
+    extends StObject
+       with TagId
   @scala.inline
   def floatExp: floatExp = "floatExp".asInstanceOf[floatExp]
   
   @js.native
-  sealed trait floatNaN extends TagId
+  sealed trait floatNaN
+    extends StObject
+       with TagId
   @scala.inline
   def floatNaN: floatNaN = "floatNaN".asInstanceOf[floatNaN]
   
   @js.native
-  sealed trait floatTime extends TagId
+  sealed trait floatTime
+    extends StObject
+       with TagId
   @scala.inline
   def floatTime: floatTime = "floatTime".asInstanceOf[floatTime]
   
   @js.native
-  sealed trait int extends TagId
+  sealed trait int
+    extends StObject
+       with TagId
   @scala.inline
   def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait intHex extends TagId
+  sealed trait intHex
+    extends StObject
+       with TagId
   @scala.inline
   def intHex: intHex = "intHex".asInstanceOf[intHex]
   
   @js.native
-  sealed trait intOct extends TagId
+  sealed trait intOct
+    extends StObject
+       with TagId
   @scala.inline
   def intOct: intOct = "intOct".asInstanceOf[intOct]
   
   @js.native
-  sealed trait intTime extends TagId
+  sealed trait intTime
+    extends StObject
+       with TagId
   @scala.inline
   def intTime: intTime = "intTime".asInstanceOf[intTime]
   
   @js.native
-  sealed trait json extends Name
+  sealed trait json
+    extends StObject
+       with Name
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait `null` extends TagId
+  sealed trait `null`
+    extends StObject
+       with TagId
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait omap extends TagId
+  sealed trait omap
+    extends StObject
+       with TagId
   @scala.inline
   def omap: omap = "omap".asInstanceOf[omap]
   
   @js.native
-  sealed trait pairs extends TagId
+  sealed trait pairs
+    extends StObject
+       with TagId
   @scala.inline
   def pairs: pairs = "pairs".asInstanceOf[pairs]
   
   @js.native
-  sealed trait set extends TagId
+  sealed trait set
+    extends StObject
+       with TagId
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait timestamp extends TagId
+  sealed trait timestamp
+    extends StObject
+       with TagId
   @scala.inline
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
-  sealed trait `yaml-1Dot1` extends Name
+  sealed trait `yaml-1Dot1`
+    extends StObject
+       with Name
   @scala.inline
   def `yaml-1Dot1`: `yaml-1Dot1` = "yaml-1.1".asInstanceOf[`yaml-1Dot1`]
 }

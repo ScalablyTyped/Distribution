@@ -4,21 +4,21 @@
 Typings are for version 4.0.0
 
 ## Library description:
-This is an implementation of the modified merkle patricia tree as specified in the Ethereum's yellow paper.
+This is an implementation of the modified merkle patricia tree as specified in Ethereum's yellow paper.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | merkle-patricia-tree |
 | Keywords           | merkle, radix, trie, ethereum |
-| # releases         | 4 |
-| # dependents       | 86 |
-| # downloads        | 2505222 |
+| # releases         | 1 |
+| # dependents       | 105 |
+| # downloads        | 3097533 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/ethereumjs/merkle-patricia-tree#readme)
-- [Bugs](https://github.com/ethereumjs/merkle-patricia-tree/issues)
-- [Repository](https://github.com/ethereumjs/merkle-patricia-tree)
+- [Homepage](https://github.com/ethereumjs/ethereumjs-vm#readme)
+- [Bugs](https://github.com/ethereumjs/ethereumjs-vm/issues?q=is%3Aissue+label%3A%22package%3A+trie%22)
+- [Repository](https://github.com/ethereumjs/ethereumjs-vm)
 - [Npm](https://www.npmjs.com/package/merkle-patricia-tree)
     
 

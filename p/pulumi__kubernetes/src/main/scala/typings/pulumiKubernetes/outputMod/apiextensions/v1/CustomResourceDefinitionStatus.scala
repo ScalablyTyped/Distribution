@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.apiextensions.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CustomResourceDefinitionStatus indicates the state of the CustomResourceDefinition
   */
-@js.native
 trait CustomResourceDefinitionStatus extends StObject {
   
   /**
     * acceptedNames are the names that are actually being used to serve discovery. They may be different than the names in spec.
     */
-  var acceptedNames: CustomResourceDefinitionNames = js.native
+  var acceptedNames: CustomResourceDefinitionNames
   
   /**
     * conditions indicate state for particular aspects of a CustomResourceDefinition
     */
-  var conditions: js.Array[CustomResourceDefinitionCondition] = js.native
+  var conditions: js.Array[CustomResourceDefinitionCondition]
   
   /**
     * storedVersions lists all versions of CustomResources that were ever persisted. Tracking these versions allows a migration path for stored versions in etcd. The field is mutable so a migration controller can finish a migration to another version (ensuring no old objects are left in storage), and then remove the rest of the versions from this list. Versions may not be removed from `spec.versions` while they exist in this list.
     */
-  var storedVersions: js.Array[String] = js.native
+  var storedVersions: js.Array[String]
 }
 object CustomResourceDefinitionStatus {
   

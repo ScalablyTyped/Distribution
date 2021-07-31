@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,55 +9,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * href=&quot;/chart/interactive/docs/gallery/bubblechart&quot;&gt;bubble
   * chart&lt;/a&gt;.
   */
-@js.native
 trait SchemaBubbleChartSpec extends StObject {
   
   /**
     * The bubble border color.
     */
-  var bubbleBorderColor: js.UndefOr[SchemaColor] = js.native
+  var bubbleBorderColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The data containing the bubble labels.  These do not need to be unique.
     */
-  var bubbleLabels: js.UndefOr[SchemaChartData] = js.native
+  var bubbleLabels: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The max radius size of the bubbles, in pixels. If specified, the field
     * must be a positive value.
     */
-  var bubbleMaxRadiusSize: js.UndefOr[Double] = js.native
+  var bubbleMaxRadiusSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum radius size of the bubbles, in pixels. If specific, the field
     * must be a positive value.
     */
-  var bubbleMinRadiusSize: js.UndefOr[Double] = js.native
+  var bubbleMinRadiusSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the bubbles between 0 and 1.0. 0 is fully transparent and
     * 1 is fully opaque.
     */
-  var bubbleOpacity: js.UndefOr[Double] = js.native
+  var bubbleOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The data contianing the bubble sizes.  Bubble sizes are used to draw the
     * bubbles at different sizes relative to each other. If specified,
     * group_ids must also be specified.  This field is optional.
     */
-  var bubbleSizes: js.UndefOr[SchemaChartData] = js.native
+  var bubbleSizes: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The format of the text inside the bubbles. Underline and Strikethrough
     * are not supported.
     */
-  var bubbleTextStyle: js.UndefOr[SchemaTextFormat] = js.native
+  var bubbleTextStyle: js.UndefOr[SchemaTextFormat] = js.undefined
   
   /**
     * The data containing the bubble x-values.  These values locate the bubbles
     * in the chart horizontally.
     */
-  var domain: js.UndefOr[SchemaChartData] = js.native
+  var domain: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The data containing the bubble group IDs. All bubbles with the same group
@@ -66,18 +64,18 @@ trait SchemaBubbleChartSpec extends StObject {
     * field must also be specified but may contain blank values. This field is
     * optional.
     */
-  var groupIds: js.UndefOr[SchemaChartData] = js.native
+  var groupIds: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * Where the legend of the chart should be drawn.
     */
-  var legendPosition: js.UndefOr[String] = js.native
+  var legendPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The data contianing the bubble y-values.  These values locate the bubbles
     * in the chart vertically.
     */
-  var series: js.UndefOr[SchemaChartData] = js.native
+  var series: js.UndefOr[SchemaChartData] = js.undefined
 }
 object SchemaBubbleChartSpec {
   

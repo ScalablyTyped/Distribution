@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `214` extends StObject {
   
-  var `type`: UnionTypeAnnotation = js.native
+  var `type`: UnionTypeAnnotation
 }
 object `214` {
   
   @scala.inline
-  def apply(`type`: UnionTypeAnnotation): `214` = {
+  def apply(): `214` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[`214`]
   }
   

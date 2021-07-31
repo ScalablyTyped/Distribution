@@ -12,18 +12,19 @@ import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UI extends Accessor {
+trait UI
+  extends StObject
+     with Accessor {
   
   def add(component: String): Unit = js.native
   def add(component: String, position: String): Unit = js.native
   def add(component: String, position: UIAddPosition): Unit = js.native
-  def add(component: js.Array[_]): Unit = js.native
-  def add(component: js.Array[_], position: String): Unit = js.native
-  def add(component: js.Array[_], position: UIAddPosition): Unit = js.native
+  def add(component: js.Array[js.Any]): Unit = js.native
+  def add(component: js.Array[js.Any], position: String): Unit = js.native
+  def add(component: js.Array[js.Any], position: UIAddPosition): Unit = js.native
   def add(component: UIAddComponent): Unit = js.native
   def add(component: UIAddComponent, position: String): Unit = js.native
   def add(component: UIAddComponent, position: UIAddPosition): Unit = js.native
@@ -88,9 +89,9 @@ trait UI extends Accessor {
   def move(component: String): Unit = js.native
   def move(component: String, position: String): Unit = js.native
   def move(component: String, position: UIMovePosition): Unit = js.native
-  def move(component: js.Array[_]): Unit = js.native
-  def move(component: js.Array[_], position: String): Unit = js.native
-  def move(component: js.Array[_], position: UIMovePosition): Unit = js.native
+  def move(component: js.Array[js.Any]): Unit = js.native
+  def move(component: js.Array[js.Any], position: String): Unit = js.native
+  def move(component: js.Array[js.Any], position: UIMovePosition): Unit = js.native
   def move(component: UIMoveComponent): Unit = js.native
   def move(component: UIMoveComponent, position: String): Unit = js.native
   def move(component: UIMoveComponent, position: UIMovePosition): Unit = js.native
@@ -114,7 +115,7 @@ trait UI extends Accessor {
   var padding: js.Any | Double = js.native
   
   def remove(component: String): Unit = js.native
-  def remove(component: js.Array[_]): Unit = js.native
+  def remove(component: js.Array[js.Any]): Unit = js.native
   /**
     * Removes one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) from the UI.
     *

@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxGroupTail
   */
-@js.native
 trait INxGroupTail extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait INxGroupTail extends StObject {
     * This number depends on the paging, more particularly it depends on the values defined in qTop and qHeight
     * This parameter is optional. Is not shown if the value is 0.
     */
-  var qDown: js.UndefOr[Double] = js.native
+  var qDown: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of elements that are part of the previous tail.
     * This number depends on the paging, more particularly it depends on the values defined in qTop and qHeight
     * This parameter is optional. Is not shown if the value is 0.
     */
-  var qUp: js.UndefOr[Double] = js.native
+  var qUp: js.UndefOr[Double] = js.undefined
 }
 object INxGroupTail {
   

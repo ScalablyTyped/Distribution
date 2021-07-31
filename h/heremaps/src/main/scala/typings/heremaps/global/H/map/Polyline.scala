@@ -5,7 +5,6 @@ import typings.heremaps.H.geo.MultiLineString
 import typings.heremaps.H.map.Polyline.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Polyline")
 @js.native
 class Polyline protected ()
-  extends typings.heremaps.H.map.Polyline {
+  extends StObject
+     with typings.heremaps.H.map.Polyline {
   /**
     * Constructor
     * @param geometry {H.geo.LineString | H.geo.MultiLineString} - The geometry that defines the line segments of the polyline

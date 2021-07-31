@@ -4,87 +4,85 @@ import typings.react.mod.FormEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosuggestPropsBase[TSuggestion] extends StObject {
   
   /**
     * Set it to true if you'd like to render suggestions even when the input is not focused.
     */
-  var alwaysRenderSuggestions: js.UndefOr[Boolean] = js.native
+  var alwaysRenderSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set it to false if you don't want Autosuggest to keep the input focused when suggestions are clicked/tapped.
     */
-  var focusInputOnSuggestionClick: js.UndefOr[Boolean] = js.native
+  var focusInputOnSuggestionClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Implement it to teach Autosuggest what should be the input value when suggestion is clicked.
     */
-  var getSuggestionValue: GetSuggestionValue[TSuggestion] = js.native
+  var getSuggestionValue: GetSuggestionValue[TSuggestion]
   
   /**
     *     Set it to true if you'd like Autosuggest to automatically highlight the first suggestion.
     */
-  var highlightFirstSuggestion: js.UndefOr[Boolean] = js.native
+  var highlightFirstSuggestion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use it only if you have multiple Autosuggest components on a page.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Pass through arbitrary props to the input. It must contain at least value and onChange.
     */
-  var inputProps: InputProps[TSuggestion] = js.native
+  var inputProps: InputProps[TSuggestion]
   
   /**
     * Will be called every time the highlighted suggestion changes.
     */
-  var onSuggestionHighlighted: js.UndefOr[OnSuggestionHighlighted] = js.native
+  var onSuggestionHighlighted: js.UndefOr[OnSuggestionHighlighted] = js.undefined
   
   /**
     * Will be called every time suggestion is selected via mouse or keyboard.
     */
-  var onSuggestionSelected: js.UndefOr[OnSuggestionSelected[TSuggestion]] = js.native
+  var onSuggestionSelected: js.UndefOr[OnSuggestionSelected[TSuggestion]] = js.undefined
   
   /**
     * Will be called every time you need to set suggestions to [].
     */
-  var onSuggestionsClearRequested: js.UndefOr[OnSuggestionsClearRequested] = js.native
+  var onSuggestionsClearRequested: js.UndefOr[OnSuggestionsClearRequested] = js.undefined
   
   /**
     * Will be called every time you need to recalculate suggestions.
     */
-  var onSuggestionsFetchRequested: SuggestionsFetchRequested = js.native
+  var onSuggestionsFetchRequested: SuggestionsFetchRequested
   
   /**
     * Use it only if you need to customize the rendering of the input.
     */
-  var renderInputComponent: js.UndefOr[RenderInputComponent[TSuggestion]] = js.native
+  var renderInputComponent: js.UndefOr[RenderInputComponent[TSuggestion]] = js.undefined
   
   /**
     * Use your imagination to define how suggestions are rendered.
     */
-  var renderSuggestion: RenderSuggestion[TSuggestion] = js.native
+  var renderSuggestion: RenderSuggestion[TSuggestion]
   
   /**
     * Use it if you want to customize things inside the suggestions container beyond rendering the suggestions themselves.
     */
-  var renderSuggestionsContainer: js.UndefOr[RenderSuggestionsContainer] = js.native
+  var renderSuggestionsContainer: js.UndefOr[RenderSuggestionsContainer] = js.undefined
   
   /**
     * When the input is focused, Autosuggest will consult this function when to render suggestions.
     * Use it, for example, if you want to display suggestions when input value is at least 2 characters long.
     */
-  var shouldRenderSuggestions: js.UndefOr[ShouldRenderSuggestions] = js.native
+  var shouldRenderSuggestions: js.UndefOr[ShouldRenderSuggestions] = js.undefined
   
   /**
     * Use your imagination to style the Autosuggest.
     */
-  var theme: js.UndefOr[Theme] = js.native
+  var theme: js.UndefOr[Theme] = js.undefined
 }
 object AutosuggestPropsBase {
   
@@ -100,7 +98,7 @@ object AutosuggestPropsBase {
   }
   
   @scala.inline
-  implicit class AutosuggestPropsBaseMutableBuilder[Self <: AutosuggestPropsBase[_], TSuggestion] (val x: Self with AutosuggestPropsBase[TSuggestion]) extends AnyVal {
+  implicit class AutosuggestPropsBaseMutableBuilder[Self <: AutosuggestPropsBase[?], TSuggestion] (val x: Self & AutosuggestPropsBase[TSuggestion]) extends AnyVal {
     
     @scala.inline
     def setAlwaysRenderSuggestions(value: Boolean): Self = StObject.set(x, "alwaysRenderSuggestions", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProblemResponse extends StObject {
   
   /**
     * Information about the problem. 
     */
-  var Problem: js.UndefOr[typings.awsSdk.applicationinsightsMod.Problem] = js.native
+  var Problem: js.UndefOr[typings.awsSdk.applicationinsightsMod.Problem] = js.undefined
 }
 object DescribeProblemResponse {
   

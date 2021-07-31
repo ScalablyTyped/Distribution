@@ -2,32 +2,32 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassedSizeSliderProperties extends SmartMappingSliderBaseProperties {
+trait ClassedSizeSliderProperties
+  extends StObject
+     with SmartMappingSliderBaseProperties {
   
   /**
     * An array of class breaks with associated sizes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#breaks)
     */
-  var breaks: js.UndefOr[js.Array[ClassedSizeSliderBreaks]] = js.native
+  var breaks: js.UndefOr[js.Array[ClassedSizeSliderBreaks]] = js.undefined
   
   /**
     * Exposes various properties of the widget that can be styled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
-  var style: js.UndefOr[ClassedSizeSliderStyleProperties] = js.native
+  var style: js.UndefOr[ClassedSizeSliderStyleProperties] = js.undefined
   
   /**
     * The view model for the ClassedSizeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[ClassedSizeSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ClassedSizeSliderViewModelProperties] = js.undefined
 }
 object ClassedSizeSliderProperties {
   

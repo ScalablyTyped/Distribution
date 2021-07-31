@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,7 +41,7 @@ trait IgGridMultiColumnHeadersMethods extends StObject {
   /**
     * Returns multicolumn headers array. if there aren"t multicolumn headers returns undefined
     */
-  def getMultiColumnHeaders(): js.Array[_] = js.native
+  def getMultiColumnHeaders(): js.Array[js.Any] = js.native
   
   /**
     * Toggles a collapsible group.

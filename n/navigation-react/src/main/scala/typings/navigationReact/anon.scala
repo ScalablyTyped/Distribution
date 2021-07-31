@@ -2,15 +2,13 @@ package typings.navigationReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait StateNavigator extends StObject {
     
-    var stateNavigator: typings.navigation.mod.StateNavigator = js.native
+    var stateNavigator: typings.navigation.mod.StateNavigator
   }
   object StateNavigator {
     

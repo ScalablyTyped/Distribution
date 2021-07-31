@@ -2,17 +2,15 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: String = js.native
+  var current: String
   
-  var latest: String = js.native
+  var latest: String
   
-  var name: String = js.native
+  var name: String
 }
 object Current {
   

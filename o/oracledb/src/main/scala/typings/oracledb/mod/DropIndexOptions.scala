@@ -2,13 +2,11 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options which may be passed to SODA collection.dropIndex().
   */
-@js.native
 trait DropIndexOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait DropIndexOptions extends StObject {
     *
     * @see https://www.oracle.com/pls/topic/lookup?ctx=dblatest&id=GUID-F60F75DF-2866-4F93-BB7F-8FCE64BF67B6
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
 }
 object DropIndexOptions {
   

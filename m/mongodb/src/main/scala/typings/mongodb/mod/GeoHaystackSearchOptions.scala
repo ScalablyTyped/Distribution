@@ -2,21 +2,19 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoHaystackSearchOptions extends StObject {
   
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
-  var maxDistance: js.UndefOr[scala.Double] = js.native
+  var maxDistance: js.UndefOr[scala.Double] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var search: js.UndefOr[js.Object] = js.native
+  var search: js.UndefOr[js.Object] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 object GeoHaystackSearchOptions {
   

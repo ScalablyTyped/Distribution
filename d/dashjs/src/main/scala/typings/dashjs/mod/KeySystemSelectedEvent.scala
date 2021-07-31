@@ -3,25 +3,25 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_keySystemSelected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeySystemSelectedEvent extends Event {
+trait KeySystemSelectedEvent
+  extends StObject
+     with Event {
   
-  var data: js.Object | Null = js.native
+  var data: js.Object | Null
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_KeySystemSelectedEvent: public_keySystemSelected = js.native
+  var type_KeySystemSelectedEvent: public_keySystemSelected
 }
 object KeySystemSelectedEvent {
   
   @scala.inline
-  def apply(`type`: public_keySystemSelected): KeySystemSelectedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): KeySystemSelectedEvent = {
+    val __obj = js.Dynamic.literal(data = null)
+    __obj.updateDynamic("type")("public_keySystemSelected")
     __obj.asInstanceOf[KeySystemSelectedEvent]
   }
   

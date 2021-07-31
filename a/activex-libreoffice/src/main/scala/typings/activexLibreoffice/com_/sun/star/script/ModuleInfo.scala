@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleInfo extends StObject {
   
-  var ModuleObject: XInterface = js.native
+  var ModuleObject: XInterface
   
-  var ModuleType: Double = js.native
+  var ModuleType: Double
 }
 object ModuleInfo {
   

@@ -13,60 +13,58 @@ import typings.fastify.utilsMod.RequestParamsDefault
 import typings.fastify.utilsMod.RequestQuerystringDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
   
-  @js.native
   trait FastifyRequest[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] extends StObject {
     
-    var body: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any = js.native
+    var body: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any
     
     // Prefer `socket` over deprecated `connection` property in node 13.0.0 or higher
     // @deprecated
-    val connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any = js.native
+    val connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
     
-    val headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any = js.native
+    val headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any
     
-    val hostname: String = js.native
+    val hostname: String
     
-    var id: js.Any = js.native
+    var id: js.Any
     
     // this enables the developer to extend the existing http(s|2) headers list
-    val ip: String = js.native
+    val ip: String
     
-    val ips: js.UndefOr[js.Array[String]] = js.native
+    val ips: js.UndefOr[js.Array[String]] = js.undefined
     
-    val is404: Boolean = js.native
+    val is404: Boolean
     
-    var log: FastifyLoggerInstance = js.native
+    var log: FastifyLoggerInstance
     
-    val method: String = js.native
+    val method: String
     
-    var params: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any = js.native
+    var params: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any
     
-    val protocol: http | https = js.native
+    val protocol: http | https
     
-    var query: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any = js.native
+    var query: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any
     
-    var raw: RawRequest = js.native
+    var raw: RawRequest
     
     /**
       * @deprecated Use `raw` property
       */
-    val req: RawRequest = js.native
+    val req: RawRequest
     
-    val routerMethod: String = js.native
+    val routerMethod: String
     
-    val routerPath: String = js.native
+    val routerPath: String
     
-    val socket: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any = js.native
+    val socket: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
     
-    val url: String = js.native
+    val url: String
     
     /** in order for this to be used the user should ensure they have set the attachValidation option. */
-    var validationError: js.UndefOr[Errorvalidationanyvalidat] = js.native
+    var validationError: js.UndefOr[Errorvalidationanyvalidat] = js.undefined
   }
   object FastifyRequest {
     
@@ -96,7 +94,7 @@ object requestMod {
     }
     
     @scala.inline
-    implicit class FastifyRequestMutableBuilder[Self <: FastifyRequest[_, _, _], RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] (val x: Self with (FastifyRequest[RouteGeneric, RawServer, RawRequest])) extends AnyVal {
+    implicit class FastifyRequestMutableBuilder[Self <: FastifyRequest[?, ?, ?], RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] (val x: Self & (FastifyRequest[RouteGeneric, RawServer, RawRequest])) extends AnyVal {
       
       @scala.inline
       def setBody(
@@ -181,16 +179,15 @@ object requestMod {
     }
   }
   
-  @js.native
   trait RequestGenericInterface extends StObject {
     
-    var Body: js.UndefOr[RequestBodyDefault] = js.native
+    var Body: js.UndefOr[RequestBodyDefault] = js.undefined
     
-    var Headers: js.UndefOr[RequestHeadersDefault] = js.native
+    var Headers: js.UndefOr[RequestHeadersDefault] = js.undefined
     
-    var Params: js.UndefOr[RequestParamsDefault] = js.native
+    var Params: js.UndefOr[RequestParamsDefault] = js.undefined
     
-    var Querystring: js.UndefOr[RequestQuerystringDefault] = js.native
+    var Querystring: js.UndefOr[RequestQuerystringDefault] = js.undefined
   }
   object RequestGenericInterface {
     

@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsInsert extends StandardParameters {
+trait ParamsResourceAccountsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * The name of the account to be passed to the Android Account Manager.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * Account type to be passed to Android Account Manager.
     */
-  var accountType: js.UndefOr[String] = js.native
+  var accountType: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAccount] = js.native
+  var requestBody: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * The ID for the user.
     */
-  var userToken: js.UndefOr[String] = js.native
+  var userToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsInsert {
   

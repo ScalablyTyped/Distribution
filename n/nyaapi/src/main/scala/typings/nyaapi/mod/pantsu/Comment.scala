@@ -2,23 +2,21 @@ package typings.nyaapi.mod.pantsu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var date: String = js.native
+  var date: String
   
-  var user_avatar: String = js.native
+  var user_avatar: String
   
-  var user_id: Double = js.native
+  var user_id: Double
   
-  var user_status: String = js.native
+  var user_status: String
   
-  var username: String = js.native
+  var username: String
 }
 object Comment {
   

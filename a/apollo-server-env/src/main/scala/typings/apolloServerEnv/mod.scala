@@ -8,10 +8,13 @@ import typings.apolloServerEnv.fetchMod.ResponseInit
 import typings.apolloServerEnv.urlMod.URLSearchParamsInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("apollo-server-env", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("apollo-server-env", "Body")
   @js.native
@@ -40,21 +43,23 @@ object mod {
   class Response ()
     extends typings.apolloServerEnv.fetchMod.Response {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
   }
   /* static members */
   object Response {
     
-    @JSImport("apollo-server-env", "Response.error")
+    @JSImport("apollo-server-env", "Response")
     @js.native
-    def error(): typings.apolloServerEnv.fetchMod.Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apollo-server-env", "Response.redirect")
-    @js.native
-    def redirect(url: String): typings.apolloServerEnv.fetchMod.Response = js.native
-    @JSImport("apollo-server-env", "Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): typings.apolloServerEnv.fetchMod.Response = js.native
+    @scala.inline
+    def error(): typings.apolloServerEnv.fetchMod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.apolloServerEnv.fetchMod.Response]
+    
+    @scala.inline
+    def redirect(url: String): typings.apolloServerEnv.fetchMod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.apolloServerEnv.fetchMod.Response]
+    @scala.inline
+    def redirect(url: String, status: Double): typings.apolloServerEnv.fetchMod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.apolloServerEnv.fetchMod.Response]
   }
   
   @JSImport("apollo-server-env", "URL")
@@ -73,13 +78,12 @@ object mod {
     def this(init: URLSearchParamsInit) = this()
   }
   
-  @JSImport("apollo-server-env", "fetch")
-  @js.native
-  def fetch(): js.Promise[typings.apolloServerEnv.fetchMod.Response] = js.native
-  @JSImport("apollo-server-env", "fetch")
-  @js.native
-  def fetch(input: js.UndefOr[RequestInfo], init: RequestInit): js.Promise[typings.apolloServerEnv.fetchMod.Response] = js.native
-  @JSImport("apollo-server-env", "fetch")
-  @js.native
-  def fetch(input: RequestInfo): js.Promise[typings.apolloServerEnv.fetchMod.Response] = js.native
+  @scala.inline
+  def fetch(): js.Promise[typings.apolloServerEnv.fetchMod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
+  @scala.inline
+  def fetch(input: Unit, init: RequestInit): js.Promise[typings.apolloServerEnv.fetchMod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
+  @scala.inline
+  def fetch(input: RequestInfo): js.Promise[typings.apolloServerEnv.fetchMod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
+  @scala.inline
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.apolloServerEnv.fetchMod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
 }

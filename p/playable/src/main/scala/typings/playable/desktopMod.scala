@@ -5,19 +5,40 @@ import typings.std.EventListener
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object desktopMod {
   
   @JSImport("playable/dist/src/modules/full-screen-manager/desktop", JSImport.Default)
   @js.native
-  class default protected () extends DesktopFullScreen {
+  class default protected ()
+    extends StObject
+       with DesktopFullScreen {
     def this(elem: HTMLElement, callback: EventListener) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def exit(): Unit = js.native
+    
+    /* CompleteClass */
+    var isAPIExist: Boolean = js.native
+    
+    /* CompleteClass */
+    var isEnabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var isInFullScreen: Boolean = js.native
+    
+    /* CompleteClass */
+    override def request(): Unit = js.native
   }
   
   @js.native
-  trait DesktopFullScreen extends IFullScreenHelper {
+  trait DesktopFullScreen
+    extends StObject
+       with IFullScreenHelper {
     
     @JSName("_$elem")
     var _$elem: js.Any = js.native

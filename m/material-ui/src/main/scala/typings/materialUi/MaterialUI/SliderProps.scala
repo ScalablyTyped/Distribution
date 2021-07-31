@@ -12,51 +12,49 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderProps extends StObject {
   
-  var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.native
+  var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.undefined
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var disableFocusRipple: js.UndefOr[Boolean] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
   var onChange: js.UndefOr[
     js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* value */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onDragStart: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onDragStart: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onDragStop: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onDragStop: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var sliderStyle: js.UndefOr[CSSProperties] = js.native
+  var sliderStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SliderProps {
   

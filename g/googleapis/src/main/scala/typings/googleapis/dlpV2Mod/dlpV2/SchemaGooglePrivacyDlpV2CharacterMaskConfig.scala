@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data&#39;s type. (This allows you to take a long like 123 and modify it to
   * a string like **3.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
     * For example, if your string is 555-555-5555 and you ask us to skip `-`
     * and mask 5 chars with * we would produce ***-*55-5555.
     */
-  var charactersToIgnore: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore]] = js.native
+  var charactersToIgnore: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore]] = js.undefined
   
   /**
     * Character to mask the sensitive values&amp;mdash;for example,
@@ -30,13 +28,13 @@ trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
     * length 1. If not supplied, we will default to &quot;*&quot; for strings,
     * 0 for digits.
     */
-  var maskingCharacter: js.UndefOr[String] = js.native
+  var maskingCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * Number of characters to mask. If not set, all matching chars will be
     * masked. Skipped characters do not count towards this tally.
     */
-  var numberToMask: js.UndefOr[Double] = js.native
+  var numberToMask: js.UndefOr[Double] = js.undefined
   
   /**
     * Mask characters in reverse order. For example, if `masking_character` is
@@ -45,7 +43,7 @@ trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
     * &#39;*&#39;, `number_to_mask` is 3, and `reverse_order` is true, then
     * 12345 -&gt; 12***
     */
-  var reverseOrder: js.UndefOr[Boolean] = js.native
+  var reverseOrder: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CharacterMaskConfig {
   

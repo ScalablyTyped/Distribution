@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamLayerPurgeOptions extends Object {
+trait StreamLayerPurgeOptions
+  extends StObject
+     with Object {
   
   /**
     * Specifies the maximum age of a feature in minutes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var age: js.UndefOr[Double] = js.native
+  var age: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the maximum age of a feature in minutes since it arrived in the application.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var ageReceived: js.UndefOr[Double] = js.native
+  var ageReceived: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the overall maximum number of features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var displayCount: js.UndefOr[Double] = js.native
+  var displayCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the maximum number of observations to show within a [track](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var maxObservations: js.UndefOr[Double] = js.native
+  var maxObservations: js.UndefOr[Double] = js.undefined
 }
 object StreamLayerPurgeOptions {
   

@@ -14,11 +14,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.EdgeTop
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeBorder.toJSON()`. */
-@js.native
 trait ConditionalRangeBorderData extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait ConditionalRangeBorderData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ConditionalRangeBorderData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var sideIndex: js.UndefOr[ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight] = js.native
+  var sideIndex: js.UndefOr[ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ConditionalRangeBorderData extends StObject {
     */
   var style: js.UndefOr[
     ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot
-  ] = js.native
+  ] = js.undefined
 }
 object ConditionalRangeBorderData {
   

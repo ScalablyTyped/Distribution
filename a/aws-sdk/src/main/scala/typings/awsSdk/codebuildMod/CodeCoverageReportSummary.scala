@@ -2,41 +2,39 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeCoverageReportSummary extends StObject {
   
   /**
     * The percentage of branches that are covered by your tests.
     */
-  var branchCoveragePercentage: js.UndefOr[Percentage] = js.native
+  var branchCoveragePercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The number of conditional branches that are covered by your tests.
     */
-  var branchesCovered: js.UndefOr[NonNegativeInt] = js.native
+  var branchesCovered: js.UndefOr[NonNegativeInt] = js.undefined
   
   /**
     * The number of conditional branches that are not covered by your tests.
     */
-  var branchesMissed: js.UndefOr[NonNegativeInt] = js.native
+  var branchesMissed: js.UndefOr[NonNegativeInt] = js.undefined
   
   /**
     * The percentage of lines that are covered by your tests.
     */
-  var lineCoveragePercentage: js.UndefOr[Percentage] = js.native
+  var lineCoveragePercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The number of lines that are covered by your tests.
     */
-  var linesCovered: js.UndefOr[NonNegativeInt] = js.native
+  var linesCovered: js.UndefOr[NonNegativeInt] = js.undefined
   
   /**
     * The number of lines that are not covered by your tests.
     */
-  var linesMissed: js.UndefOr[NonNegativeInt] = js.native
+  var linesMissed: js.UndefOr[NonNegativeInt] = js.undefined
 }
 object CodeCoverageReportSummary {
   

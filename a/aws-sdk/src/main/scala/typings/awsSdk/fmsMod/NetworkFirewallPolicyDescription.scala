@@ -2,36 +2,34 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkFirewallPolicyDescription extends StObject {
   
   /**
     * The stateful rule groups that are used in the Network Firewall firewall policy. 
     */
-  var StatefulRuleGroups: js.UndefOr[StatefulRuleGroupList] = js.native
+  var StatefulRuleGroups: js.UndefOr[StatefulRuleGroupList] = js.undefined
   
   /**
     * Names of custom actions that are available for use in the stateless default actions settings.
     */
-  var StatelessCustomActions: js.UndefOr[NetworkFirewallActionList] = js.native
+  var StatelessCustomActions: js.UndefOr[NetworkFirewallActionList] = js.undefined
   
   /**
     * The actions to take on packets that don't match any of the stateless rule groups. 
     */
-  var StatelessDefaultActions: js.UndefOr[NetworkFirewallActionList] = js.native
+  var StatelessDefaultActions: js.UndefOr[NetworkFirewallActionList] = js.undefined
   
   /**
     * The actions to take on packet fragments that don't match any of the stateless rule groups. 
     */
-  var StatelessFragmentDefaultActions: js.UndefOr[NetworkFirewallActionList] = js.native
+  var StatelessFragmentDefaultActions: js.UndefOr[NetworkFirewallActionList] = js.undefined
   
   /**
     * The stateless rule groups that are used in the Network Firewall firewall policy. 
     */
-  var StatelessRuleGroups: js.UndefOr[StatelessRuleGroupList] = js.native
+  var StatelessRuleGroups: js.UndefOr[StatelessRuleGroupList] = js.undefined
 }
 object NetworkFirewallPolicyDescription {
   

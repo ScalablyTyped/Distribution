@@ -2,23 +2,21 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbsolutePath extends StObject {
   
-  var absolutePath: String = js.native
+  var absolutePath: String
   
-  var cacheable: Boolean = js.native
+  var cacheable: Boolean
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var hash: String = js.native
+  var hash: String
   
-  var sourceMapUrl: js.UndefOr[String] = js.native
+  var sourceMapUrl: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AbsolutePath {
   

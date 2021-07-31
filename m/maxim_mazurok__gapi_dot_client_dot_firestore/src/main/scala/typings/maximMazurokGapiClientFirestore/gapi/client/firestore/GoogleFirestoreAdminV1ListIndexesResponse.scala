@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1ListIndexesResponse extends StObject {
   
   /** The requested indexes. */
-  var indexes: js.UndefOr[js.Array[GoogleFirestoreAdminV1Index]] = js.native
+  var indexes: js.UndefOr[js.Array[GoogleFirestoreAdminV1Index]] = js.undefined
   
   /** A page token that may be used to request another page of results. If blank, this is the last page. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1ListIndexesResponse {
   

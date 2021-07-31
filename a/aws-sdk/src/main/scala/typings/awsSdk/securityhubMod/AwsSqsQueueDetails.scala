@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSqsQueueDetails extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dead-letter queue to which Amazon SQS moves messages after the value of maxReceiveCount is exceeded. 
     */
-  var DeadLetterTargetArn: js.UndefOr[NonEmptyString] = js.native
+  var DeadLetterTargetArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The length of time, in seconds, for which Amazon SQS can reuse a data key to encrypt or decrypt messages before calling AWS KMS again.
     */
-  var KmsDataKeyReusePeriodSeconds: js.UndefOr[Integer] = js.native
+  var KmsDataKeyReusePeriodSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of an AWS managed customer master key (CMK) for Amazon SQS or a custom CMK.
     */
-  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the new queue.
     */
-  var QueueName: js.UndefOr[NonEmptyString] = js.native
+  var QueueName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsSqsQueueDetails {
   

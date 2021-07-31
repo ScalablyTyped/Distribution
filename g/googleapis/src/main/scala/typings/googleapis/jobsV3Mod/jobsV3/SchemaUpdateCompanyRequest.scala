@@ -2,20 +2,18 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Request for updating a specified company.
   */
-@js.native
 trait SchemaUpdateCompanyRequest extends StObject {
   
   /**
     * Required.  The company resource to replace the current resource in the
     * system.
     */
-  var company: js.UndefOr[SchemaCompany] = js.native
+  var company: js.UndefOr[SchemaCompany] = js.undefined
   
   /**
     * Optional but strongly recommended for the best service experience.  If
@@ -24,7 +22,7 @@ trait SchemaUpdateCompanyRequest extends StObject {
     * the company fields to be updated. Only top level fields of Company are
     * supported.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateCompanyRequest {
   

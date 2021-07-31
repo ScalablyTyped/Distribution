@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintRange extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val End: Double = js.native
+  val End: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.PrintRange_typekey")
-  var PowerPointDotPrintRange_typekey: PrintRange = js.native
+  var PowerPointDotPrintRange_typekey: PrintRange
   
-  val Start: Double = js.native
+  val Start: Double
 }
 object PrintRange {
   

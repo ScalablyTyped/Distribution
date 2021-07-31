@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingValue extends StObject {
   
   /** The creative size value to exclude/include. */
-  var creativeSizeValue: js.UndefOr[TargetingValueCreativeSize] = js.native
+  var creativeSizeValue: js.UndefOr[TargetingValueCreativeSize] = js.undefined
   
   /** The daypart targeting to include / exclude. Filled in when the key is GOOG_DAYPART_TARGETING. */
-  var dayPartTargetingValue: js.UndefOr[TargetingValueDayPartTargeting] = js.native
+  var dayPartTargetingValue: js.UndefOr[TargetingValueDayPartTargeting] = js.undefined
   
-  var demogAgeCriteriaValue: js.UndefOr[TargetingValueDemogAgeCriteria] = js.native
+  var demogAgeCriteriaValue: js.UndefOr[TargetingValueDemogAgeCriteria] = js.undefined
   
-  var demogGenderCriteriaValue: js.UndefOr[TargetingValueDemogGenderCriteria] = js.native
+  var demogGenderCriteriaValue: js.UndefOr[TargetingValueDemogGenderCriteria] = js.undefined
   
   /** The long value to exclude/include. */
-  var longValue: js.UndefOr[String] = js.native
+  var longValue: js.UndefOr[String] = js.undefined
   
-  var requestPlatformTargetingValue: js.UndefOr[TargetingValueRequestPlatformTargeting] = js.native
+  var requestPlatformTargetingValue: js.UndefOr[TargetingValueRequestPlatformTargeting] = js.undefined
   
   /** The string value to exclude/include. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object TargetingValue {
   

@@ -2,15 +2,13 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frozen extends StObject {
   
-  var frozen: Boolean = js.native
+  var frozen: Boolean
   
-  var reversed: Boolean = js.native
+  var reversed: Boolean
 }
 object Frozen {
   

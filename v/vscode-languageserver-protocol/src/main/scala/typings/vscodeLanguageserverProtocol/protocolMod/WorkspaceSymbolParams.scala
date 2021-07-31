@@ -2,19 +2,18 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceSymbolParams
-  extends WorkDoneProgressParams
+  extends StObject
+     with WorkDoneProgressParams
      with PartialResultParams {
   
   /**
     * A query string to filter symbols by. Clients may send an empty
     * string here to request all symbols.
     */
-  var query: String = js.native
+  var query: String
 }
 object WorkspaceSymbolParams {
   

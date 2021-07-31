@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationFsxWindowsMod {
@@ -79,6 +78,10 @@ object locationFsxWindowsMod {
   /* static members */
   object LocationFsxWindows {
     
+    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LocationFsxWindows resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,65 +91,59 @@ object locationFsxWindowsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LocationFsxWindows = js.native
-    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LocationFsxWindows = js.native
-    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocationFsxWindowsState): LocationFsxWindows = js.native
-    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocationFsxWindowsState, opts: CustomResourceOptions): LocationFsxWindows = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocationFsxWindowsState): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocationFsxWindowsState, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
     
     /**
       * Returns true if the given object is an instance of LocationFsxWindows.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/datasync/locationFsxWindows", "LocationFsxWindows.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean]
   }
   
-  @js.native
   trait LocationFsxWindowsArgs extends StObject {
     
     /**
       * The name of the Windows domain that the FSx for Windows server belongs to.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the FSx for Windows file system.
       */
-    val fsxFilesystemArn: Input[String] = js.native
+    val fsxFilesystemArn: Input[String]
     
     /**
       * The password of the user who has the permissions to access files and folders in the FSx for Windows file system.
       */
-    val password: Input[String] = js.native
+    val password: Input[String]
     
     /**
       * The Amazon Resource Names (ARNs) of the security groups that are to use to configure the FSx for Windows file system.
       */
-    val securityGroupArns: Input[js.Array[Input[String]]] = js.native
+    val securityGroupArns: Input[js.Array[Input[String]]]
     
     /**
       * Subdirectory to perform actions as source or destination.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user who has the permissions to access files and folders in the FSx for Windows file system.
       */
-    val user: Input[String] = js.native
+    val user: Input[String]
   }
   object LocationFsxWindowsArgs {
     
@@ -199,58 +196,57 @@ object locationFsxWindowsMod {
     }
   }
   
-  @js.native
   trait LocationFsxWindowsState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the DataSync Location.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time that the FSx for Windows location was created.
       */
-    val creationTime: js.UndefOr[Input[String]] = js.native
+    val creationTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Windows domain that the FSx for Windows server belongs to.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the FSx for Windows file system.
       */
-    val fsxFilesystemArn: js.UndefOr[Input[String]] = js.native
+    val fsxFilesystemArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The password of the user who has the permissions to access files and folders in the FSx for Windows file system.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Names (ARNs) of the security groups that are to use to configure the FSx for Windows file system.
       */
-    val securityGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Subdirectory to perform actions as source or destination.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The URL of the FSx for Windows location that was described.
       */
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user who has the permissions to access files and folders in the FSx for Windows file system.
       */
-    val user: js.UndefOr[Input[String]] = js.native
+    val user: js.UndefOr[Input[String]] = js.undefined
   }
   object LocationFsxWindowsState {
     

@@ -2,47 +2,45 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtremesObject extends StObject {
   
   /**
     * The maximum value of the axis' associated series.
     */
-  var dataMax: Double = js.native
+  var dataMax: Double
   
   /**
     * The minimum value of the axis' associated series.
     */
-  var dataMin: Double = js.native
+  var dataMin: Double
   
   /**
     * The maximum axis value, either automatic or set manually. If the `max`
     * option is not set, `maxPadding` is 0 and `endOnTick` is false, this value
     * will be the same as `dataMax`.
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum axis value, either automatic or set manually. If the `min`
     * option is not set, `minPadding` is 0 and `startOnTick` is false, this
     * value will be the same as `dataMin`.
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The user defined maximum, either from the `max` option or from a zoom or
     * `setExtremes` action.
     */
-  var userMax: Double = js.native
+  var userMax: Double
   
   /**
     * The user defined minimum, either from the `min` option or from a zoom or
     * `setExtremes` action.
     */
-  var userMin: Double = js.native
+  var userMin: Double
 }
 object ExtremesObject {
   

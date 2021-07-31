@@ -2,33 +2,31 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbConnectionConfig extends StObject {
   
-  var forcePrepare: js.UndefOr[Boolean] = js.native
+  var forcePrepare: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var server: js.UndefOr[OServer] = js.native
+  var server: js.UndefOr[OServer] = js.undefined
   
-  var sessionId: js.UndefOr[Double] = js.native
+  var sessionId: js.UndefOr[Double] = js.undefined
   
-  var storage: js.UndefOr[String] = js.native
+  var storage: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[js.Any] = js.native
+  var token: js.UndefOr[js.Any] = js.undefined
   
-  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ ORecord, _]]] = js.native
+  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ ORecord, js.Any]]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var useToken: js.UndefOr[Boolean] = js.native
+  var useToken: js.UndefOr[Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object DbConnectionConfig {
   
@@ -84,7 +82,7 @@ object DbConnectionConfig {
     def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, _]]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+    def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, js.Any]]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)

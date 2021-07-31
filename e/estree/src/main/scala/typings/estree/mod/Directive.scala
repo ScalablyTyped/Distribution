@@ -2,25 +2,25 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Directive extends BaseNode {
+trait Directive
+  extends StObject
+     with BaseNode {
   
-  var directive: String = js.native
+  var directive: String
   
-  var expression: Literal = js.native
+  var expression: Literal
   
   @JSName("type")
-  var type_Directive: typings.estree.estreeStrings.ExpressionStatement = js.native
+  var type_Directive: typings.estree.estreeStrings.ExpressionStatement
 }
 object Directive {
   
   @scala.inline
-  def apply(directive: String, expression: Literal, `type`: typings.estree.estreeStrings.ExpressionStatement): Directive = {
+  def apply(directive: String, expression: Literal): Directive = {
     val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[Directive]
   }
   

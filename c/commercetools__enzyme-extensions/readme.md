@@ -10,9 +10,9 @@ Enzyme extensions tailored at improving dealing with shallowly rendered wrappers
 | ------------------ | :-------------: |
 | Full name          | @commercetools/enzyme-extensions |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 288226 |
+| # downloads        | 258202 |
 | # stars            | 0 |
 
 ## Links

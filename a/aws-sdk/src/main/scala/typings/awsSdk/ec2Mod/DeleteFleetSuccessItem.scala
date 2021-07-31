@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFleetSuccessItem extends StObject {
   
   /**
     * The current state of the EC2 Fleet.
     */
-  var CurrentFleetState: js.UndefOr[FleetStateCode] = js.native
+  var CurrentFleetState: js.UndefOr[FleetStateCode] = js.undefined
   
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
     * The previous state of the EC2 Fleet.
     */
-  var PreviousFleetState: js.UndefOr[FleetStateCode] = js.native
+  var PreviousFleetState: js.UndefOr[FleetStateCode] = js.undefined
 }
 object DeleteFleetSuccessItem {
   

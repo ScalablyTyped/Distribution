@@ -3,28 +3,27 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSuite
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var runCount: js.UndefOr[Double] = js.native
+  var runCount: js.UndefOr[Double] = js.undefined
   
-  var testDuration: js.UndefOr[Duration] = js.native
+  var testDuration: js.UndefOr[Duration] = js.undefined
   
-  var testsuiteFinishedAt: js.UndefOr[Instant] = js.native
+  var testsuiteFinishedAt: js.UndefOr[Instant] = js.undefined
   
-  var testsuiteStartedAt: js.UndefOr[Instant] = js.native
+  var testsuiteStartedAt: js.UndefOr[Instant] = js.undefined
   
-  var totalDuration: js.UndefOr[Duration] = js.native
+  var totalDuration: js.UndefOr[Duration] = js.undefined
   
-  var unexpected: js.UndefOr[Double] = js.native
+  var unexpected: js.UndefOr[Double] = js.undefined
   
-  var withFailures: js.UndefOr[Double] = js.native
+  var withFailures: js.UndefOr[Double] = js.undefined
 }
 object TestSuite {
   

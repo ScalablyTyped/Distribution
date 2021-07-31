@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.include
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointCloudValueFilter extends PointCloudFilter {
+trait PointCloudValueFilter
+  extends StObject
+     with PointCloudFilter {
   
   /**
     * Whether points should be included or excluded from the filter.

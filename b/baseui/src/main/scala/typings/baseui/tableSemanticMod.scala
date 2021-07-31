@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableSemanticMod {
@@ -104,24 +103,25 @@ object tableSemanticMod {
     def this(props: TableBuilderColumnProps[RowT], context: js.Any) = this()
   }
   
-  @js.native
-  trait BuilderOverrides extends TableOverrides {
+  trait BuilderOverrides
+    extends StObject
+       with TableOverrides {
     
     var SortAscIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SortDescIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SortNoneIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHeadCellSortable: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object BuilderOverrides {
     
@@ -168,32 +168,31 @@ object tableSemanticMod {
     }
   }
   
-  @js.native
   trait ColumnOverrides extends StObject {
     
     var SortAscIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SortDescIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SortNoneIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableBodyCell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHeadCell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHeadCellSortable: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ColumnOverrides {
     
@@ -277,28 +276,27 @@ object tableSemanticMod {
     var tableHeadAriaLabel: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait TableBuilderProps[RowT] extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var data: js.Array[RowT] = js.native
+    var data: js.Array[RowT]
     
-    var emptyMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
+    var emptyMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
-    var horizontalScrollWidth: js.UndefOr[String] = js.native
+    var horizontalScrollWidth: js.UndefOr[String] = js.undefined
     
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
+    var loadingMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
-    var onSort: js.UndefOr[js.Function1[/* columnId */ String, Unit]] = js.native
+    var onSort: js.UndefOr[js.Function1[/* columnId */ String, Unit]] = js.undefined
     
-    var overrides: js.UndefOr[BuilderOverrides] = js.native
+    var overrides: js.UndefOr[BuilderOverrides] = js.undefined
     
-    var sortColumn: js.UndefOr[String | Null] = js.native
+    var sortColumn: js.UndefOr[String | Null] = js.undefined
     
-    var sortOrder: js.UndefOr[ASC | DESC | Null] = js.native
+    var sortOrder: js.UndefOr[ASC | DESC | Null] = js.undefined
   }
   object TableBuilderProps {
     
@@ -309,7 +307,7 @@ object tableSemanticMod {
     }
     
     @scala.inline
-    implicit class TableBuilderPropsMutableBuilder[Self <: TableBuilderProps[_], RowT] (val x: Self with TableBuilderProps[RowT]) extends AnyVal {
+    implicit class TableBuilderPropsMutableBuilder[Self <: TableBuilderProps[?], RowT] (val x: Self & TableBuilderProps[RowT]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -385,48 +383,47 @@ object tableSemanticMod {
     }
   }
   
-  @js.native
   trait TableOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Table: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableBody: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableBodyCell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableBodyRow: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableEmptyMessage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHead: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHeadCell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableHeadRow: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TableLoadingMessage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TableOverrides {
     
@@ -521,22 +518,21 @@ object tableSemanticMod {
     }
   }
   
-  @js.native
   trait TableProps extends StObject {
     
-    var columns: js.Array[ReactNode] = js.native
+    var columns: js.Array[ReactNode]
     
-    var data: js.Array[js.Array[ReactNode]] = js.native
+    var data: js.Array[js.Array[ReactNode]]
     
-    var emptyMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
+    var emptyMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
-    var horizontalScrollWidth: js.UndefOr[String] = js.native
+    var horizontalScrollWidth: js.UndefOr[String] = js.undefined
     
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
+    var loadingMessage: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
-    var overrides: js.UndefOr[TableOverrides] = js.native
+    var overrides: js.UndefOr[TableOverrides] = js.undefined
   }
   object TableProps {
     

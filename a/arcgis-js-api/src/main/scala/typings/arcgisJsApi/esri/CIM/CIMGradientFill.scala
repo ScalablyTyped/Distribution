@@ -2,64 +2,63 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGradientFill
-  extends CIMSymbolLayerBase
+  extends StObject
+     with CIMSymbolLayerBase
      with CIMSymbolLayerType {
   
   /**
     * The angle of the gradient when the GradientMethod is set to Linear or Rectangular.
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * The color scheme that is applied to the fill.
     */
-  var colorRamp: js.UndefOr[js.Any] = js.native
+  var colorRamp: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A value which specifies how the gradient is applied within the fill.
     */
   var gradientMethod: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientFillMethod * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A value which determines how much of the feature is covered by the color scheme. This is either a percentage of the total area which the color scheme spans or the number of page units from the starting point at which the gradient displays.
     */
-  var gradientSize: js.UndefOr[Double] = js.native
+  var gradientSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A value which specifies whether GradientSize is applied with an absolute distance or a relative percentage.
     */
   var gradientSizeUnits: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A value which specifies if the gradient is applied with discrete intervals or if it is continuous.
     */
   var gradientType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * How many bands draw when the GradientType is set to Discrete.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGradientFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientFill = js.native
+  var type_CIMGradientFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientFill
 }
 object CIMGradientFill {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientFill): CIMGradientFill = {
+  def apply(): CIMGradientFill = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGradientFill")
     __obj.asInstanceOf[CIMGradientFill]
   }
   

@@ -2,19 +2,17 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for predictions to be issued against a trained model.
   */
-@js.native
 trait SchemaGoogleCloudMlV1PredictRequest extends StObject {
   
   /**
     *  Required. The prediction request body.
     */
-  var httpBody: js.UndefOr[SchemaGoogleApiHttpBody] = js.native
+  var httpBody: js.UndefOr[SchemaGoogleApiHttpBody] = js.undefined
 }
 object SchemaGoogleCloudMlV1PredictRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionOriginS3OriginConfig extends StObject {
   
   /**
     * The CloudFront origin access identity to associate with the origin.
     */
-  var OriginAccessIdentity: js.UndefOr[NonEmptyString] = js.native
+  var OriginAccessIdentity: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCloudFrontDistributionOriginS3OriginConfig {
   

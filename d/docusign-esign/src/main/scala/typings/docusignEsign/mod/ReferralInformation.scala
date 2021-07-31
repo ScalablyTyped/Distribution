@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferralInformation extends StObject {
   
   /**
@@ -17,73 +15,73 @@ trait ReferralInformation extends StObject {
     * ###### Note: saleDiscountPercent, saleDiscountAmount, saleDiscountFixedAmount, saleDiscountPeriods, and saleDiscountSeatPriceOverride are reserved for DoucSign use only.
     *
     */
-  var advertisementId: js.UndefOr[String] = js.native
+  var advertisementId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, customer support is provided as part of the account plan.
     */
-  var enableSupport: js.UndefOr[String] = js.native
+  var enableSupport: js.UndefOr[String] = js.undefined
   
   /**
     * An optional external id for the referral.
     */
-  var externalOrgId: js.UndefOr[String] = js.native
+  var externalOrgId: js.UndefOr[String] = js.undefined
   
-  var groupMemberId: js.UndefOr[String] = js.native
+  var groupMemberId: js.UndefOr[String] = js.undefined
   
-  var idType: js.UndefOr[String] = js.native
+  var idType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seats (users) included in the plan.
     */
-  var includedSeats: js.UndefOr[String] = js.native
+  var includedSeats: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the industry associated with the referral.
     *
     * Example: `Accounting`
     */
-  var industry: js.UndefOr[String] = js.native
+  var industry: js.UndefOr[String] = js.undefined
   
-  var planStartMonth: js.UndefOr[String] = js.native
+  var planStartMonth: js.UndefOr[String] = js.undefined
   
-  var promoCode: js.UndefOr[String] = js.native
+  var promoCode: js.UndefOr[String] = js.undefined
   
-  var publisherId: js.UndefOr[String] = js.native
+  var publisherId: js.UndefOr[String] = js.undefined
   
-  var referralCode: js.UndefOr[String] = js.native
+  var referralCode: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the referrer.
     */
-  var referrerName: js.UndefOr[String] = js.native
+  var referrerName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountAmount: js.UndefOr[String] = js.native
+  var saleDiscountAmount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountFixedAmount: js.UndefOr[String] = js.native
+  var saleDiscountFixedAmount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountPercent: js.UndefOr[String] = js.native
+  var saleDiscountPercent: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountPeriods: js.UndefOr[String] = js.native
+  var saleDiscountPeriods: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountSeatPriceOverride: js.UndefOr[String] = js.native
+  var saleDiscountSeatPriceOverride: js.UndefOr[String] = js.undefined
   
-  var shopperId: js.UndefOr[String] = js.native
+  var shopperId: js.UndefOr[String] = js.undefined
 }
 object ReferralInformation {
   

@@ -4,21 +4,19 @@ import typings.koa.mod.Context
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Custom extends StObject {
     
-    var custom: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.native
+    var custom: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.undefined
     
-    var ext: js.UndefOr[String | js.Array[String]] = js.native
+    var ext: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var method: js.UndefOr[String | js.Array[String]] = js.native
+    var method: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var path: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   }
   object Custom {
     

@@ -10,21 +10,19 @@ import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioInterfaceMod {
   
-  @js.native
   trait RadioChangeEvent extends StObject {
     
-    var nativeEvent: MouseEvent = js.native
+    var nativeEvent: MouseEvent
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var target: RadioChangeEventTarget = js.native
+    var target: RadioChangeEventTarget
   }
   object RadioChangeEvent {
     
@@ -56,11 +54,12 @@ object radioInterfaceMod {
     }
   }
   
-  @js.native
-  trait RadioChangeEventTarget extends AbstractCheckboxProps[RadioChangeEvent] {
+  trait RadioChangeEventTarget
+    extends StObject
+       with AbstractCheckboxProps[RadioChangeEvent] {
     
     @JSName("checked")
-    var checked_RadioChangeEventTarget: Boolean = js.native
+    var checked_RadioChangeEventTarget: Boolean
   }
   object RadioChangeEventTarget {
     
@@ -92,16 +91,15 @@ object radioInterfaceMod {
     def solid: typings.antd.antdStrings.solid = "solid".asInstanceOf[typings.antd.antdStrings.solid]
   }
   
-  @js.native
   trait RadioGroupContextProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    def onChange(e: RadioChangeEvent): Unit = js.native
+    def onChange(e: RadioChangeEvent): Unit
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object RadioGroupContextProps {
     
@@ -148,30 +146,31 @@ object radioInterfaceMod {
     def button: typings.antd.antdStrings.button = "button".asInstanceOf[typings.antd.antdStrings.button]
   }
   
-  @js.native
-  trait RadioGroupProps extends AbstractCheckboxGroupProps {
+  trait RadioGroupProps
+    extends StObject
+       with AbstractCheckboxGroupProps {
     
-    var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.native
+    var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var optionType: js.UndefOr[RadioGroupOptionType] = js.native
+    var optionType: js.UndefOr[RadioGroupOptionType] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object RadioGroupProps {
     

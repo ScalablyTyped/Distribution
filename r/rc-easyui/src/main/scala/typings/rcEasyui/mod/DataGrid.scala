@@ -4,7 +4,6 @@ import typings.rcEasyui.anon.IsMatch
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "DataGrid")
@@ -59,9 +58,12 @@ object DataGrid {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.contextTypes.locale
       @JSImport("rc-easyui", "DataGrid.contextTypes.locale.isRequired")
@@ -71,9 +73,12 @@ object DataGrid {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.contextTypes.t
       @JSImport("rc-easyui", "DataGrid.contextTypes.t.isRequired")
@@ -83,6 +88,10 @@ object DataGrid {
   }
   
   object defaultProps {
+    
+    @JSImport("rc-easyui", "DataGrid.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("rc-easyui", "DataGrid.defaultProps.border")
     @js.native
@@ -219,6 +228,10 @@ object DataGrid {
     @js.native
     val frozenWidth: String = js.native
     
+    @JSImport("rc-easyui", "DataGrid.defaultProps.lazy")
+    @js.native
+    val `lazy`: Boolean = js.native
+    
     @JSImport("rc-easyui", "DataGrid.defaultProps.loading")
     @js.native
     val loading: Boolean = js.native
@@ -227,101 +240,77 @@ object DataGrid {
     @js.native
     val multiSort: Boolean = js.native
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onCellClick")
-    @js.native
-    def onCellClick(): Unit = js.native
+    @scala.inline
+    def onCellClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onCellContextMenu")
-    @js.native
-    def onCellContextMenu(e: js.Any): Unit = js.native
+    @scala.inline
+    def onCellContextMenu(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellContextMenu")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onCellDblClick")
-    @js.native
-    def onCellDblClick(): Unit = js.native
+    @scala.inline
+    def onCellDblClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellDblClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onCellSelect")
-    @js.native
-    def onCellSelect(): Unit = js.native
+    @scala.inline
+    def onCellSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onCellUnselect")
-    @js.native
-    def onCellUnselect(): Unit = js.native
+    @scala.inline
+    def onCellUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onColumnMove")
-    @js.native
-    def onColumnMove(e: js.Any): Unit = js.native
+    @scala.inline
+    def onColumnMove(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onColumnMove")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onColumnResize")
-    @js.native
-    def onColumnResize(e: js.Any): Unit = js.native
+    @scala.inline
+    def onColumnResize(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onColumnResize")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onEditBegin")
-    @js.native
-    def onEditBegin(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditBegin(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditBegin")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onEditCancel")
-    @js.native
-    def onEditCancel(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditCancel(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditCancel")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onEditEnd")
-    @js.native
-    def onEditEnd(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditEnd(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditEnd")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onEditValidate")
-    @js.native
-    def onEditValidate(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditValidate(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditValidate")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onFilterChange")
-    @js.native
-    def onFilterChange(): Unit = js.native
+    @scala.inline
+    def onFilterChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFilterChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onGroupCollapse")
-    @js.native
-    def onGroupCollapse(e: js.Any): Unit = js.native
+    @scala.inline
+    def onGroupCollapse(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGroupCollapse")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onGroupExpand")
-    @js.native
-    def onGroupExpand(e: js.Any): Unit = js.native
+    @scala.inline
+    def onGroupExpand(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGroupExpand")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onPageChange")
-    @js.native
-    def onPageChange(): Unit = js.native
+    @scala.inline
+    def onPageChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowClick")
-    @js.native
-    def onRowClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowCollapse")
-    @js.native
-    def onRowCollapse(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowCollapse(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowCollapse")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowContextMenu")
-    @js.native
-    def onRowContextMenu(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowContextMenu(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowContextMenu")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowDblClick")
-    @js.native
-    def onRowDblClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowDblClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowDblClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowExpand")
-    @js.native
-    def onRowExpand(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowExpand(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowExpand")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowSelect")
-    @js.native
-    def onRowSelect(): Unit = js.native
+    @scala.inline
+    def onRowSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onRowUnselect")
-    @js.native
-    def onRowUnselect(): Unit = js.native
+    @scala.inline
+    def onRowUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onSelectionChange")
-    @js.native
-    def onSelectionChange(): Unit = js.native
+    @scala.inline
+    def onSelectionChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataGrid.defaultProps.onSortChange")
-    @js.native
-    def onSortChange(): Unit = js.native
+    @scala.inline
+    def onSortChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSortChange")().asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "DataGrid.defaultProps.pageNumber")
     @js.native
@@ -366,19 +355,18 @@ object DataGrid {
     @JSImport("rc-easyui", "DataGrid.defaultProps.virtualScroll")
     @js.native
     val virtualScroll: Boolean = js.native
-    
-    @JSImport("rc-easyui", "DataGrid.defaultProps.lazy")
-    @js.native
-    val `lazy`: Boolean = js.native
   }
   
   object propTypes {
     
     object border {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.border")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.border
       @JSImport("rc-easyui", "DataGrid.propTypes.border.isRequired")
@@ -388,9 +376,12 @@ object DataGrid {
     
     object clickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.clickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.clickToEdit
       @JSImport("rc-easyui", "DataGrid.propTypes.clickToEdit.isRequired")
@@ -400,9 +391,12 @@ object DataGrid {
     
     object columnMoving {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.columnMoving")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.columnMoving
       @JSImport("rc-easyui", "DataGrid.propTypes.columnMoving.isRequired")
@@ -412,9 +406,12 @@ object DataGrid {
     
     object data {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.data")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.data
       @JSImport("rc-easyui", "DataGrid.propTypes.data.isRequired")
@@ -424,9 +421,12 @@ object DataGrid {
     
     object dblclickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.dblclickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.dblclickToEdit
       @JSImport("rc-easyui", "DataGrid.propTypes.dblclickToEdit.isRequired")
@@ -436,9 +436,12 @@ object DataGrid {
     
     object editMode {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.editMode")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.editMode
       @JSImport("rc-easyui", "DataGrid.propTypes.editMode.isRequired")
@@ -448,9 +451,12 @@ object DataGrid {
     
     object expanderWidth {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.expanderWidth")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.expanderWidth
       @JSImport("rc-easyui", "DataGrid.propTypes.expanderWidth.isRequired")
@@ -460,9 +466,12 @@ object DataGrid {
     
     object filterBtnPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterBtnPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterBtnPosition
       @JSImport("rc-easyui", "DataGrid.propTypes.filterBtnPosition.isRequired")
@@ -472,9 +481,12 @@ object DataGrid {
     
     object filterDelay {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterDelay")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterDelay
       @JSImport("rc-easyui", "DataGrid.propTypes.filterDelay.isRequired")
@@ -484,9 +496,12 @@ object DataGrid {
     
     object filterMatchingType {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterMatchingType")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterMatchingType
       @JSImport("rc-easyui", "DataGrid.propTypes.filterMatchingType.isRequired")
@@ -496,9 +511,12 @@ object DataGrid {
     
     object filterOperators {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterOperators")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterOperators
       @JSImport("rc-easyui", "DataGrid.propTypes.filterOperators.isRequired")
@@ -508,9 +526,12 @@ object DataGrid {
     
     object filterPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterPosition
       @JSImport("rc-easyui", "DataGrid.propTypes.filterPosition.isRequired")
@@ -520,9 +541,12 @@ object DataGrid {
     
     object filterRules {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterRules")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterRules
       @JSImport("rc-easyui", "DataGrid.propTypes.filterRules.isRequired")
@@ -532,9 +556,12 @@ object DataGrid {
     
     object filterable {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.filterable")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.filterable
       @JSImport("rc-easyui", "DataGrid.propTypes.filterable.isRequired")
@@ -544,9 +571,12 @@ object DataGrid {
     
     object footerData {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.footerData")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.footerData
       @JSImport("rc-easyui", "DataGrid.propTypes.footerData.isRequired")
@@ -556,9 +586,12 @@ object DataGrid {
     
     object frozenAlign {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.frozenAlign")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.frozenAlign
       @JSImport("rc-easyui", "DataGrid.propTypes.frozenAlign.isRequired")
@@ -568,9 +601,12 @@ object DataGrid {
     
     object frozenWidth {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.frozenWidth")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.frozenWidth
       @JSImport("rc-easyui", "DataGrid.propTypes.frozenWidth.isRequired")
@@ -580,9 +616,12 @@ object DataGrid {
     
     object groupField {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.groupField")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.groupField
       @JSImport("rc-easyui", "DataGrid.propTypes.groupField.isRequired")
@@ -592,9 +631,12 @@ object DataGrid {
     
     object idField {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.idField")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.idField
       @JSImport("rc-easyui", "DataGrid.propTypes.idField.isRequired")
@@ -602,11 +644,29 @@ object DataGrid {
       val isRequired: js.Any = js.native
     }
     
+    object `lazy` {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSImport("rc-easyui", "DataGrid.propTypes.lazy")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      // Circular reference from rc_easyui.DataGrid.propTypes.lazy
+      @JSImport("rc-easyui", "DataGrid.propTypes.lazy.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
     object loadMsg {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "DataGrid.propTypes.loadMsg")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.loadMsg
       @JSImport("rc-easyui", "DataGrid.propTypes.loadMsg.isRequired")
@@ -616,9 +676,12 @@ object DataGrid {
     
     object loading {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.loading")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.loading
       @JSImport("rc-easyui", "DataGrid.propTypes.loading.isRequired")
@@ -628,9 +691,12 @@ object DataGrid {
     
     object multiSort {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.multiSort")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.multiSort
       @JSImport("rc-easyui", "DataGrid.propTypes.multiSort.isRequired")
@@ -640,9 +706,12 @@ object DataGrid {
     
     object pageNumber {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.pageNumber")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.pageNumber
       @JSImport("rc-easyui", "DataGrid.propTypes.pageNumber.isRequired")
@@ -652,9 +721,12 @@ object DataGrid {
     
     object pageOptions {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.pageOptions")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.pageOptions
       @JSImport("rc-easyui", "DataGrid.propTypes.pageOptions.isRequired")
@@ -664,9 +736,12 @@ object DataGrid {
     
     object pagePosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.pagePosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.pagePosition
       @JSImport("rc-easyui", "DataGrid.propTypes.pagePosition.isRequired")
@@ -676,9 +751,12 @@ object DataGrid {
     
     object pageSize {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.pageSize")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.pageSize
       @JSImport("rc-easyui", "DataGrid.propTypes.pageSize.isRequired")
@@ -688,9 +766,12 @@ object DataGrid {
     
     object pagination {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.pagination")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.pagination
       @JSImport("rc-easyui", "DataGrid.propTypes.pagination.isRequired")
@@ -700,9 +781,12 @@ object DataGrid {
     
     object renderDetail {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.renderDetail")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.renderDetail
       @JSImport("rc-easyui", "DataGrid.propTypes.renderDetail.isRequired")
@@ -712,9 +796,12 @@ object DataGrid {
     
     object renderGroup {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.renderGroup")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.renderGroup
       @JSImport("rc-easyui", "DataGrid.propTypes.renderGroup.isRequired")
@@ -724,9 +811,12 @@ object DataGrid {
     
     object rowCss {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.rowCss")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.rowCss
       @JSImport("rc-easyui", "DataGrid.propTypes.rowCss.isRequired")
@@ -736,9 +826,12 @@ object DataGrid {
     
     object rowHeight {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.rowHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.rowHeight
       @JSImport("rc-easyui", "DataGrid.propTypes.rowHeight.isRequired")
@@ -748,9 +841,12 @@ object DataGrid {
     
     object selection {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.selection")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.selection
       @JSImport("rc-easyui", "DataGrid.propTypes.selection.isRequired")
@@ -760,9 +856,12 @@ object DataGrid {
     
     object selectionMode {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.selectionMode")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.selectionMode
       @JSImport("rc-easyui", "DataGrid.propTypes.selectionMode.isRequired")
@@ -772,9 +871,12 @@ object DataGrid {
     
     object showFooter {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.showFooter")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.showFooter
       @JSImport("rc-easyui", "DataGrid.propTypes.showFooter.isRequired")
@@ -784,9 +886,12 @@ object DataGrid {
     
     object showHeader {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.showHeader")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.showHeader
       @JSImport("rc-easyui", "DataGrid.propTypes.showHeader.isRequired")
@@ -796,9 +901,12 @@ object DataGrid {
     
     object sorts {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.sorts")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.sorts
       @JSImport("rc-easyui", "DataGrid.propTypes.sorts.isRequired")
@@ -808,9 +916,12 @@ object DataGrid {
     
     object striped {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.striped")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.striped
       @JSImport("rc-easyui", "DataGrid.propTypes.striped.isRequired")
@@ -820,9 +931,12 @@ object DataGrid {
     
     object total {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.total")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.total
       @JSImport("rc-easyui", "DataGrid.propTypes.total.isRequired")
@@ -832,24 +946,15 @@ object DataGrid {
     
     object virtualScroll {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataGrid.propTypes.virtualScroll")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataGrid.propTypes.virtualScroll
       @JSImport("rc-easyui", "DataGrid.propTypes.virtualScroll.isRequired")
-      @js.native
-      val isRequired: js.Any = js.native
-    }
-    
-    object `lazy` {
-      
-      @JSImport("rc-easyui", "DataGrid.propTypes.lazy")
-      @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.DataGrid.propTypes.lazy
-      @JSImport("rc-easyui", "DataGrid.propTypes.lazy.isRequired")
       @js.native
       val isRequired: js.Any = js.native
     }

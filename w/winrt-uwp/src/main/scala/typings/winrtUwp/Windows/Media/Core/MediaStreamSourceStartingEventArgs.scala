@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaStreamSource.Starting event. */
-@js.native
 trait MediaStreamSourceStartingEventArgs extends StObject {
   
   /** Gets the object that represents the request to start accumulating MediaStreamSample data. */
-  var request: MediaStreamSourceStartingRequest = js.native
+  var request: MediaStreamSourceStartingRequest
 }
 object MediaStreamSourceStartingEventArgs {
   

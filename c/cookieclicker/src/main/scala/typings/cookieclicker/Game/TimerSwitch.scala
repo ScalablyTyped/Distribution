@@ -3,11 +3,12 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerStrings.toggle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimerSwitch extends Upgrade {
+trait TimerSwitch
+  extends StObject
+     with Upgrade {
   
   /**
     * Required to stay in the store after it's bought

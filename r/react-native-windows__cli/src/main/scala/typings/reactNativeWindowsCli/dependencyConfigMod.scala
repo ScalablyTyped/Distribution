@@ -5,32 +5,32 @@ import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cpp
 import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dependencyConfigMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/dependencyConfig", "dependencyConfigWindows")
+  @JSImport("@react-native-windows/cli/lib-commonjs/config/dependencyConfig", JSImport.Namespace)
   @js.native
-  def dependencyConfigWindows(folder: String): WindowsDependencyConfig | Null = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/dependencyConfig", "dependencyConfigWindows")
-  @js.native
-  def dependencyConfigWindows(folder: String, userConfig: PartialWindowsDependencyC): WindowsDependencyConfig | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def dependencyConfigWindows(folder: String): WindowsDependencyConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any]).asInstanceOf[WindowsDependencyConfig | Null]
+  @scala.inline
+  def dependencyConfigWindows(folder: String, userConfig: PartialWindowsDependencyC): WindowsDependencyConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[WindowsDependencyConfig | Null]
+  
   trait NuGetPackageDependency extends StObject {
     
-    var cppHeaders: js.Array[String] = js.native
+    var cppHeaders: js.Array[String]
     
-    var cppPackageProviders: js.Array[String] = js.native
+    var cppPackageProviders: js.Array[String]
     
-    var csNamespaces: js.Array[String] = js.native
+    var csNamespaces: js.Array[String]
     
-    var csPackageProviders: js.Array[String] = js.native
+    var csPackageProviders: js.Array[String]
     
-    var packageName: String = js.native
+    var packageName: String
     
-    var packageVersion: String = js.native
+    var packageVersion: String
   }
   object NuGetPackageDependency {
     
@@ -82,26 +82,25 @@ object dependencyConfigMod {
     }
   }
   
-  @js.native
   trait ProjectDependency extends StObject {
     
-    var cppHeaders: js.Array[String] = js.native
+    var cppHeaders: js.Array[String]
     
-    var cppPackageProviders: js.Array[String] = js.native
+    var cppPackageProviders: js.Array[String]
     
-    var csNamespaces: js.Array[String] = js.native
+    var csNamespaces: js.Array[String]
     
-    var csPackageProviders: js.Array[String] = js.native
+    var csPackageProviders: js.Array[String]
     
-    var directDependency: Boolean = js.native
+    var directDependency: Boolean
     
-    var projectFile: String = js.native
+    var projectFile: String
     
-    var projectGuid: String | Null = js.native
+    var projectGuid: String | Null
     
-    var projectLang: cpp | cs | Null = js.native
+    var projectLang: cpp | cs | Null
     
-    var projectName: String = js.native
+    var projectName: String
   }
   object ProjectDependency {
     
@@ -115,7 +114,7 @@ object dependencyConfigMod {
       projectFile: String,
       projectName: String
     ): ProjectDependency = {
-      val __obj = js.Dynamic.literal(cppHeaders = cppHeaders.asInstanceOf[js.Any], cppPackageProviders = cppPackageProviders.asInstanceOf[js.Any], csNamespaces = csNamespaces.asInstanceOf[js.Any], csPackageProviders = csPackageProviders.asInstanceOf[js.Any], directDependency = directDependency.asInstanceOf[js.Any], projectFile = projectFile.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cppHeaders = cppHeaders.asInstanceOf[js.Any], cppPackageProviders = cppPackageProviders.asInstanceOf[js.Any], csNamespaces = csNamespaces.asInstanceOf[js.Any], csPackageProviders = csPackageProviders.asInstanceOf[js.Any], directDependency = directDependency.asInstanceOf[js.Any], projectFile = projectFile.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectGuid = null, projectLang = null)
       __obj.asInstanceOf[ProjectDependency]
     }
     
@@ -169,18 +168,17 @@ object dependencyConfigMod {
     }
   }
   
-  @js.native
   trait WindowsDependencyConfig extends StObject {
     
-    var folder: String = js.native
+    var folder: String
     
-    var nugetPackages: js.Array[NuGetPackageDependency] = js.native
+    var nugetPackages: js.Array[NuGetPackageDependency]
     
-    var projects: js.Array[ProjectDependency] = js.native
+    var projects: js.Array[ProjectDependency]
     
-    var solutionFile: js.UndefOr[String | Null] = js.native
+    var solutionFile: js.UndefOr[String | Null] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
   }
   object WindowsDependencyConfig {
     

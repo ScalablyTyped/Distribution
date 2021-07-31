@@ -2,26 +2,24 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the cluster auto-delete schedule configuration.
   */
-@js.native
 trait SchemaLifecycleConfig extends StObject {
   
   /**
     * Optional. The time when cluster will be auto-deleted.
     */
-  var autoDeleteTime: js.UndefOr[String] = js.native
+  var autoDeleteTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The lifetime duration of cluster. The cluster will be
     * auto-deleted at the end of this period. Valid range: 10m, 14d.Example:
     * &quot;1d&quot;, to delete the cluster 1 day after its creation..
     */
-  var autoDeleteTtl: js.UndefOr[String] = js.native
+  var autoDeleteTtl: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The duration to keep the cluster alive while idling. Passing
@@ -29,7 +27,7 @@ trait SchemaLifecycleConfig extends StObject {
     * 14d.Example: &quot;10m&quot;, the minimum value, to delete the cluster
     * when it has had no jobs running for 10 minutes.
     */
-  var idleDeleteTtl: js.UndefOr[String] = js.native
+  var idleDeleteTtl: js.UndefOr[String] = js.undefined
 }
 object SchemaLifecycleConfig {
   

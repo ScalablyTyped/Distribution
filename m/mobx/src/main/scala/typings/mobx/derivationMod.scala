@@ -5,10 +5,13 @@ import typings.mobx.coreObservableMod.IDepTreeNode
 import typings.mobx.coreObservableMod.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object derivationMod {
+  
+  @JSImport("mobx/lib/core/derivation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx/lib/core/derivation", "CaughtException")
   @js.native
@@ -25,23 +28,31 @@ object derivationMod {
   object IDerivationState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[IDerivationState with Double] = js.native
+    def apply(value: Double): js.UndefOr[IDerivationState & Double] = js.native
     
     @js.native
-    sealed trait NOT_TRACKING extends IDerivationState
-    /* -1 */ val NOT_TRACKING: typings.mobx.derivationMod.IDerivationState.NOT_TRACKING with Double = js.native
+    sealed trait NOT_TRACKING
+      extends StObject
+         with IDerivationState
+    /* -1 */ val NOT_TRACKING: typings.mobx.derivationMod.IDerivationState.NOT_TRACKING & Double = js.native
     
     @js.native
-    sealed trait POSSIBLY_STALE extends IDerivationState
-    /* 1 */ val POSSIBLY_STALE: typings.mobx.derivationMod.IDerivationState.POSSIBLY_STALE with Double = js.native
+    sealed trait POSSIBLY_STALE
+      extends StObject
+         with IDerivationState
+    /* 1 */ val POSSIBLY_STALE: typings.mobx.derivationMod.IDerivationState.POSSIBLY_STALE & Double = js.native
     
     @js.native
-    sealed trait STALE extends IDerivationState
-    /* 2 */ val STALE: typings.mobx.derivationMod.IDerivationState.STALE with Double = js.native
+    sealed trait STALE
+      extends StObject
+         with IDerivationState
+    /* 2 */ val STALE: typings.mobx.derivationMod.IDerivationState.STALE & Double = js.native
     
     @js.native
-    sealed trait UP_TO_DATE extends IDerivationState
-    /* 0 */ val UP_TO_DATE: typings.mobx.derivationMod.IDerivationState.UP_TO_DATE with Double = js.native
+    sealed trait UP_TO_DATE
+      extends StObject
+         with IDerivationState
+    /* 0 */ val UP_TO_DATE: typings.mobx.derivationMod.IDerivationState.UP_TO_DATE & Double = js.native
   }
   
   @js.native
@@ -51,107 +62,100 @@ object derivationMod {
   object TraceMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TraceMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[TraceMode & Double] = js.native
     
     @js.native
-    sealed trait BREAK extends TraceMode
-    /* 2 */ val BREAK: typings.mobx.derivationMod.TraceMode.BREAK with Double = js.native
+    sealed trait BREAK
+      extends StObject
+         with TraceMode
+    /* 2 */ val BREAK: typings.mobx.derivationMod.TraceMode.BREAK & Double = js.native
     
     @js.native
-    sealed trait LOG extends TraceMode
-    /* 1 */ val LOG: typings.mobx.derivationMod.TraceMode.LOG with Double = js.native
+    sealed trait LOG
+      extends StObject
+         with TraceMode
+    /* 1 */ val LOG: typings.mobx.derivationMod.TraceMode.LOG & Double = js.native
     
     @js.native
-    sealed trait NONE extends TraceMode
-    /* 0 */ val NONE: typings.mobx.derivationMod.TraceMode.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with TraceMode
+    /* 0 */ val NONE: typings.mobx.derivationMod.TraceMode.NONE & Double = js.native
   }
   
-  @JSImport("mobx/lib/core/derivation", "allowStateReadsEnd")
-  @js.native
-  def allowStateReadsEnd(prev: Boolean): Unit = js.native
+  @scala.inline
+  def allowStateReadsEnd(prev: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "allowStateReadsStart")
-  @js.native
-  def allowStateReadsStart(allowStateReads: Boolean): Boolean = js.native
+  @scala.inline
+  def allowStateReadsStart(allowStateReads: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsStart")(allowStateReads.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/core/derivation", "changeDependenciesStateTo0")
-  @js.native
-  def changeDependenciesStateTo0(derivation: IDerivation): Unit = js.native
+  @scala.inline
+  def changeDependenciesStateTo0(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeDependenciesStateTo0")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "checkIfStateModificationsAreAllowed")
-  @js.native
-  def checkIfStateModificationsAreAllowed(atom: IAtom): Unit = js.native
+  @scala.inline
+  def checkIfStateModificationsAreAllowed(atom: IAtom): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateModificationsAreAllowed")(atom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "checkIfStateReadsAreAllowed")
-  @js.native
-  def checkIfStateReadsAreAllowed(observable: IObservable): Unit = js.native
+  @scala.inline
+  def checkIfStateReadsAreAllowed(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateReadsAreAllowed")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "clearObserving")
-  @js.native
-  def clearObserving(derivation: IDerivation): Unit = js.native
+  @scala.inline
+  def clearObserving(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearObserving")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "isCaughtException")
-  @js.native
-  def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean = js.native
+  @scala.inline
+  def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaughtException")(e.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean]
   
-  @JSImport("mobx/lib/core/derivation", "isComputingDerivation")
-  @js.native
-  def isComputingDerivation(): Boolean = js.native
+  @scala.inline
+  def isComputingDerivation(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingDerivation")().asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/core/derivation", "shouldCompute")
-  @js.native
-  def shouldCompute(derivation: IDerivation): Boolean = js.native
+  @scala.inline
+  def shouldCompute(derivation: IDerivation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCompute")(derivation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/core/derivation", "trackDerivedFunction")
-  @js.native
-  def trackDerivedFunction[T](derivation: IDerivation, f: js.Function0[T], context: js.Any): js.Any = js.native
+  @scala.inline
+  def trackDerivedFunction[T](derivation: IDerivation, f: js.Function0[T], context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trackDerivedFunction")(derivation.asInstanceOf[js.Any], f.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("mobx/lib/core/derivation", "untracked")
-  @js.native
-  def untracked[T](action: js.Function0[T]): T = js.native
+  @scala.inline
+  def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx/lib/core/derivation", "untrackedEnd")
-  @js.native
-  def untrackedEnd(): Unit = js.native
-  @JSImport("mobx/lib/core/derivation", "untrackedEnd")
-  @js.native
-  def untrackedEnd(prev: IDerivation): Unit = js.native
+  @scala.inline
+  def untrackedEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")().asInstanceOf[Unit]
+  @scala.inline
+  def untrackedEnd(prev: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/derivation", "untrackedStart")
-  @js.native
-  def untrackedStart(): IDerivation | Null = js.native
+  @scala.inline
+  def untrackedStart(): IDerivation | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedStart")().asInstanceOf[IDerivation | Null]
   
-  @js.native
-  trait IDerivation extends IDepTreeNode {
+  trait IDerivation
+    extends StObject
+       with IDepTreeNode {
     
-    var __mapid: String = js.native
+    var __mapid: String
     
-    var dependenciesState: IDerivationState = js.native
+    var dependenciesState: IDerivationState
     
-    var isTracing: TraceMode = js.native
+    var isTracing: TraceMode
     
-    var newObserving: Null | js.Array[IObservable] = js.native
+    var newObserving: Null | js.Array[IObservable]
     
     @JSName("observing")
-    var observing_IDerivation: js.Array[IObservable] = js.native
+    var observing_IDerivation: js.Array[IObservable]
     
-    def onBecomeStale(): Unit = js.native
+    def onBecomeStale(): Unit
     
     /**
       *  warn if the derivation has no dependencies after creation/update
       */
-    var requiresObservable: js.UndefOr[Boolean] = js.native
+    var requiresObservable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Id of the current run of a derivation. Each time the derivation is tracked
       * this number is increased by one. This number is globally unique
       */
-    var runId: Double = js.native
+    var runId: Double
     
     /**
       * amount of dependencies used by the derivation in this run, which has not been bound yet.
       */
-    var unboundDepsCount: Double = js.native
+    var unboundDepsCount: Double
   }
   object IDerivation {
     
@@ -166,7 +170,7 @@ object derivationMod {
       runId: Double,
       unboundDepsCount: Double
     ): IDerivation = {
-      val __obj = js.Dynamic.literal(__mapid = __mapid.asInstanceOf[js.Any], dependenciesState = dependenciesState.asInstanceOf[js.Any], isTracing = isTracing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], observing = observing.asInstanceOf[js.Any], onBecomeStale = js.Any.fromFunction0(onBecomeStale), runId = runId.asInstanceOf[js.Any], unboundDepsCount = unboundDepsCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(__mapid = __mapid.asInstanceOf[js.Any], dependenciesState = dependenciesState.asInstanceOf[js.Any], isTracing = isTracing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], observing = observing.asInstanceOf[js.Any], onBecomeStale = js.Any.fromFunction0(onBecomeStale), runId = runId.asInstanceOf[js.Any], unboundDepsCount = unboundDepsCount.asInstanceOf[js.Any], newObserving = null)
       __obj.asInstanceOf[IDerivation]
     }
     

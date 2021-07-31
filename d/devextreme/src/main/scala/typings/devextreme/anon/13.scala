@@ -4,19 +4,17 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.events.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `13`[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object `13` {
   
@@ -27,7 +25,7 @@ object `13` {
   }
   
   @scala.inline
-  implicit class `13MutableBuilder`[Self <: `13`[_], T] (val x: Self with `13`[T]) extends AnyVal {
+  implicit class `13MutableBuilder`[Self <: `13`[?], T] (val x: Self & `13`[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

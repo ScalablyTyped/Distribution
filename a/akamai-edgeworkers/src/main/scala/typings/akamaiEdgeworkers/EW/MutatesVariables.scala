@@ -2,17 +2,15 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutatesVariables extends StObject {
   
   /**
     * Sets the value of a metadata variable, throwing an error if the
     * variable name does not start with 'PMUSER_'
     */
-  def setVariable(name: String, value: String): Unit = js.native
+  def setVariable(name: String, value: String): Unit
 }
 object MutatesVariables {
   

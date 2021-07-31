@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides access to an XPropertySet of defaults. This can either be the parent of an XPropertySet or the global property defaults for a
   * document.
   */
-@js.native
-trait XDefaultsSupplier extends XInterface {
+trait XDefaultsSupplier
+  extends StObject
+     with XInterface {
   
   /** This method returns an XPropertySet of defaults. */
-  val Defaults: XPropertySet = js.native
+  val Defaults: XPropertySet
   
   /** This method returns an XPropertySet of defaults. */
-  def getDefaults(): XPropertySet = js.native
+  def getDefaults(): XPropertySet
 }
 object XDefaultsSupplier {
   

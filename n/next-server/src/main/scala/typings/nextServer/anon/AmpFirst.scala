@@ -2,17 +2,15 @@ package typings.nextServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmpFirst extends StObject {
   
-  var ampFirst: js.UndefOr[Boolean] = js.native
+  var ampFirst: js.UndefOr[Boolean] = js.undefined
   
-  var hasQuery: js.UndefOr[Boolean] = js.native
+  var hasQuery: js.UndefOr[Boolean] = js.undefined
   
-  var hybrid: js.UndefOr[Boolean] = js.native
+  var hybrid: js.UndefOr[Boolean] = js.undefined
 }
 object AmpFirst {
   

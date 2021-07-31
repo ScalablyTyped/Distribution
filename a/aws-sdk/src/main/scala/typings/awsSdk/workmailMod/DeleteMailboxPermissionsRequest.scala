@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMailboxPermissionsRequest extends StObject {
   
   /**
     * The identifier of the member (user or group) that owns the mailbox.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The identifier of the member (user or group) for which to delete granted permissions.
     */
-  var GranteeId: WorkMailIdentifier = js.native
+  var GranteeId: WorkMailIdentifier
   
   /**
     * The identifier of the organization under which the member (user or group) exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object DeleteMailboxPermissionsRequest {
   

@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HTMLMarqueeElementEventMap extends HTMLElementEventMap {
+trait HTMLMarqueeElementEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var bounce: Event = js.native
+  var bounce: Event
   
-  var finish: Event = js.native
+  var finish: Event
   
-  var start: Event = js.native
+  var start: Event
 }
 object HTMLMarqueeElementEventMap {
   

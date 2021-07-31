@@ -2,26 +2,24 @@ package typings.algoliaTransporter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timeouts extends StObject {
   
   /**
     * The timeout to stablish a connection with the server.
     */
-  val connect: Double = js.native
+  val connect: Double
   
   /**
     * The timeout to receive the response on read requests.
     */
-  val read: Double = js.native
+  val read: Double
   
   /**
     * The timeout to receive the response on write requests.
     */
-  val write: Double = js.native
+  val write: Double
 }
 object Timeouts {
   

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorsOptions extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait CorsOptions extends StObject {
     *
     * @default `false`
     */
-  var allowXdr: js.UndefOr[Boolean] = js.native
+  var allowXdr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable cross-domain requests
     *
     * @default `false`
     */
-  var expected: js.UndefOr[Boolean] = js.native
+  var expected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable sending credentials along with each cross-domain request. Ignored if allowXdr is true and IE9 is being used
     *
     * @default `false`
     */
-  var sendCredentials: js.UndefOr[Boolean] = js.native
+  var sendCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object CorsOptions {
   

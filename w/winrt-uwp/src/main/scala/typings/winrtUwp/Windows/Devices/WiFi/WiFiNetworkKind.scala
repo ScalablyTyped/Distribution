@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object WiFiNetworkKind extends StObject {
   
   /** An independent (IBSS) network. */
   @js.native
-  sealed trait adhoc extends WiFiNetworkKind
+  sealed trait adhoc
+    extends StObject
+       with WiFiNetworkKind
   
   /** Either an infrastructure or independent network. */
   @js.native
-  sealed trait any extends WiFiNetworkKind
+  sealed trait any
+    extends StObject
+       with WiFiNetworkKind
   
   /** An infrastructure network. */
   @js.native
-  sealed trait infrastructure extends WiFiNetworkKind
+  sealed trait infrastructure
+    extends StObject
+       with WiFiNetworkKind
 }

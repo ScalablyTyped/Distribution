@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchThingsResponse extends StObject {
   
   /**
     * The string to specify as nextToken when you request the next page of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An array of things in the result set.
     */
-  var things: js.UndefOr[Things] = js.native
+  var things: js.UndefOr[Things] = js.undefined
 }
 object SearchThingsResponse {
   

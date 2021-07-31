@@ -2,16 +2,14 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSettingSuccessCallbackResult extends StObject {
   
   /** [AuthSetting](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html)
     *
     * 用户授权结果 */
-  var authSetting: AuthSetting = js.native
+  var authSetting: AuthSetting
 }
 object GetSettingSuccessCallbackResult {
   

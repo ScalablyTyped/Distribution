@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversationHeader extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ConversationID: String = js.native
+  val ConversationID: String
   
-  val ConversationTopic: String = js.native
+  val ConversationTopic: String
   
-  def GetConversation(): Conversation = js.native
+  def GetConversation(): Conversation
   
-  def GetItems(): SimpleItems = js.native
+  def GetItems(): SimpleItems
   
   @JSName("Outlook.ConversationHeader_typekey")
-  var OutlookDotConversationHeader_typekey: ConversationHeader = js.native
+  var OutlookDotConversationHeader_typekey: ConversationHeader
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object ConversationHeader {
   

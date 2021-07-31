@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStatus extends StObject {
   
   /**
     * The Availability Zone of the instance.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Any scheduled events associated with the instance.
     */
-  var Events: js.UndefOr[InstanceStatusEventList] = js.native
+  var Events: js.UndefOr[InstanceStatusEventList] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The intended state of the instance. DescribeInstanceStatus requires that an instance be in the running state.
     */
-  var InstanceState: js.UndefOr[typings.awsSdk.ec2Mod.InstanceState] = js.native
+  var InstanceState: js.UndefOr[typings.awsSdk.ec2Mod.InstanceState] = js.undefined
   
   /**
     * Reports impaired functionality that stems from issues internal to the instance, such as impaired reachability.
     */
-  var InstanceStatus: js.UndefOr[InstanceStatusSummary] = js.native
+  var InstanceStatus: js.UndefOr[InstanceStatusSummary] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * Reports impaired functionality that stems from issues related to the systems that support an instance, such as hardware failures and network connectivity problems.
     */
-  var SystemStatus: js.UndefOr[InstanceStatusSummary] = js.native
+  var SystemStatus: js.UndefOr[InstanceStatusSummary] = js.undefined
 }
 object InstanceStatus {
   

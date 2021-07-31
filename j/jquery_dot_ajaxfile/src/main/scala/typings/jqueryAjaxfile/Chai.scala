@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Chai {
@@ -52,52 +51,32 @@ object Chai {
     def equal(act: js.Any, exp: js.Any, msg: String): Unit = js.native
     
     def fail(): Unit = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      msg: js.UndefOr[scala.Nothing],
-      operator: String
-    ): Unit = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      msg: String,
-      operator: String
-    ): Unit = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.Any,
-      msg: js.UndefOr[scala.Nothing],
-      operator: String
-    ): Unit = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String, operator: String): Unit = js.native
     def fail(actual: js.Any): Unit = js.native
-    def fail(
-      actual: js.Any,
-      expected: js.UndefOr[scala.Nothing],
-      msg: js.UndefOr[scala.Nothing],
-      operator: String
-    ): Unit = js.native
-    def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-    def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String, operator: String): Unit = js.native
     def fail(actual: js.Any, expected: js.Any): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, msg: js.UndefOr[scala.Nothing], operator: String): Unit = js.native
     def fail(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
     def fail(actual: js.Any, expected: js.Any, msg: String, operator: String): Unit = js.native
+    def fail(actual: js.Any, expected: js.Any, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: js.Any, expected: Unit, msg: String): Unit = js.native
+    def fail(actual: js.Any, expected: Unit, msg: String, operator: String): Unit = js.native
+    def fail(actual: js.Any, expected: Unit, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: js.Any): Unit = js.native
+    def fail(actual: Unit, expected: js.Any, msg: String): Unit = js.native
+    def fail(actual: Unit, expected: js.Any, msg: String, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: js.Any, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: Unit, msg: String): Unit = js.native
+    def fail(actual: Unit, expected: Unit, msg: String, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: Unit, msg: Unit, operator: String): Unit = js.native
     
     def ifError(`val`: js.Any): Unit = js.native
     def ifError(`val`: js.Any, msg: String): Unit = js.native
     
     def include(exp: String, inc: js.Any): Unit = js.native
     def include(exp: String, inc: js.Any, msg: String): Unit = js.native
-    def include(exp: js.Array[_], inc: js.Any): Unit = js.native
-    def include(exp: js.Array[_], inc: js.Any, msg: String): Unit = js.native
+    def include(exp: js.Array[js.Any], inc: js.Any): Unit = js.native
+    def include(exp: js.Array[js.Any], inc: js.Any, msg: String): Unit = js.native
     
-    def includeMembers(set1: js.Array[_], set2: js.Array[_]): Unit = js.native
-    def includeMembers(set1: js.Array[_], set2: js.Array[_], msg: String): Unit = js.native
+    def includeMembers(set1: js.Array[js.Any], set2: js.Array[js.Any]): Unit = js.native
+    def includeMembers(set1: js.Array[js.Any], set2: js.Array[js.Any], msg: String): Unit = js.native
     
     def instanceOf(`val`: js.Any, `type`: js.Function): Unit = js.native
     def instanceOf(`val`: js.Any, `type`: js.Function, msg: String): Unit = js.native
@@ -173,8 +152,8 @@ object Chai {
     
     def notInclude(exp: String, inc: js.Any): Unit = js.native
     def notInclude(exp: String, inc: js.Any, msg: String): Unit = js.native
-    def notInclude(exp: js.Array[_], inc: js.Any): Unit = js.native
-    def notInclude(exp: js.Array[_], inc: js.Any, msg: String): Unit = js.native
+    def notInclude(exp: js.Array[js.Any], inc: js.Any): Unit = js.native
+    def notInclude(exp: js.Array[js.Any], inc: js.Any, msg: String): Unit = js.native
     
     def notInstanceOf(`val`: js.Any, `type`: js.Function): Unit = js.native
     def notInstanceOf(`val`: js.Any, `type`: js.Function, msg: String): Unit = js.native
@@ -209,8 +188,8 @@ object Chai {
     def propertyVal(obj: Object, prop: String, `val`: js.Any): Unit = js.native
     def propertyVal(obj: Object, prop: String, `val`: js.Any, msg: String): Unit = js.native
     
-    def sameMembers(set1: js.Array[_], set2: js.Array[_]): Unit = js.native
-    def sameMembers(set1: js.Array[_], set2: js.Array[_], msg: String): Unit = js.native
+    def sameMembers(set1: js.Array[js.Any], set2: js.Array[js.Any]): Unit = js.native
+    def sameMembers(set1: js.Array[js.Any], set2: js.Array[js.Any], msg: String): Unit = js.native
     
     def strictEqual(act: js.Any, exp: js.Any): Unit = js.native
     def strictEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
@@ -238,7 +217,8 @@ object Chai {
   
   @js.native
   trait Assertion
-    extends LanguageChains
+    extends StObject
+       with LanguageChains
        with NumericComparison
        with TypeComparison {
     
@@ -249,15 +229,15 @@ object Chai {
     
     def Throw(): Assertion = js.native
     def Throw(constructor: js.Function): Assertion = js.native
-    def Throw(constructor: js.Function, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def Throw(constructor: js.Function, expected: String): Assertion = js.native
     def Throw(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def Throw(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
     def Throw(constructor: js.Function, expected: RegExp): Assertion = js.native
     def Throw(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
     def Throw(constructor: Error): Assertion = js.native
-    def Throw(constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def Throw(constructor: Error, expected: String): Assertion = js.native
     def Throw(constructor: Error, expected: String, message: String): Assertion = js.native
+    def Throw(constructor: Error, expected: Unit, message: String): Assertion = js.native
     def Throw(constructor: Error, expected: RegExp): Assertion = js.native
     def Throw(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def Throw(expected: String): Assertion = js.native
@@ -358,7 +338,7 @@ object Chai {
     def key(string: String): Assertion = js.native
     
     def keys(keys: String*): Assertion = js.native
-    def keys(keys: js.Array[_]): Assertion = js.native
+    def keys(keys: js.Array[js.Any]): Assertion = js.native
     @JSName("keys")
     var keys_Original: Keys = js.native
     
@@ -378,8 +358,8 @@ object Chai {
     def `match`(regexp: RegExp): Assertion = js.native
     def `match`(regexp: RegExp, message: String): Assertion = js.native
     
-    def members(set: js.Array[_]): Assertion = js.native
-    def members(set: js.Array[_], message: String): Assertion = js.native
+    def members(set: js.Array[js.Any]): Assertion = js.native
+    def members(set: js.Array[js.Any], message: String): Assertion = js.native
     @JSName("members")
     var members_Original: Members = js.native
     
@@ -404,9 +384,9 @@ object Chai {
     var ownProperty_Original: OwnProperty = js.native
     
     def property(name: String): Assertion = js.native
-    def property(name: String, value: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def property(name: String, value: js.Any): Assertion = js.native
     def property(name: String, value: js.Any, message: String): Assertion = js.native
+    def property(name: String, value: Unit, message: String): Assertion = js.native
     @JSName("property")
     var property_Original: Property = js.native
     
@@ -421,15 +401,15 @@ object Chai {
     
     def `throw`(): Assertion = js.native
     def `throw`(constructor: js.Function): Assertion = js.native
-    def `throw`(constructor: js.Function, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def `throw`(constructor: js.Function, expected: String): Assertion = js.native
     def `throw`(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def `throw`(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
     def `throw`(constructor: js.Function, expected: RegExp): Assertion = js.native
     def `throw`(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
     def `throw`(constructor: Error): Assertion = js.native
-    def `throw`(constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def `throw`(constructor: Error, expected: String): Assertion = js.native
     def `throw`(constructor: Error, expected: String, message: String): Assertion = js.native
+    def `throw`(constructor: Error, expected: Unit, message: String): Assertion = js.native
     def `throw`(constructor: Error, expected: RegExp): Assertion = js.native
     def `throw`(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def `throw`(expected: String): Assertion = js.native
@@ -441,15 +421,15 @@ object Chai {
     
     def throws(): Assertion = js.native
     def throws(constructor: js.Function): Assertion = js.native
-    def throws(constructor: js.Function, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def throws(constructor: js.Function, expected: String): Assertion = js.native
     def throws(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def throws(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
     def throws(constructor: js.Function, expected: RegExp): Assertion = js.native
     def throws(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
     def throws(constructor: Error): Assertion = js.native
-    def throws(constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def throws(constructor: Error, expected: String): Assertion = js.native
     def throws(constructor: Error, expected: String, message: String): Assertion = js.native
+    def throws(constructor: Error, expected: Unit, message: String): Assertion = js.native
     def throws(constructor: Error, expected: RegExp): Assertion = js.native
     def throws(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def throws(expected: String): Assertion = js.native
@@ -470,16 +450,15 @@ object Chai {
     var undefined_Original: Assertion = js.native
   }
   
-  @js.native
   trait AssertionError extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var showDiff: Boolean = js.native
+    var showDiff: Boolean
     
-    var stack: String = js.native
+    var stack: String
   }
   object AssertionError {
     
@@ -508,37 +487,68 @@ object Chai {
   
   type AssertionStatic = js.Function2[/* target */ js.Any, /* message */ js.UndefOr[String], Assertion]
   
-  @js.native
   trait ChaiStatic extends StObject {
     
     /**
       * @param expression Expression to test for truthiness.
       * @param message Message to display on error.
       */
-    def assert(expression: js.Any): Unit = js.native
-    def assert(expression: js.Any, message: String): Unit = js.native
+    def assert(expression: js.Any): Unit
+    def assert(expression: js.Any, message: String): Unit
     @JSName("assert")
-    var assert_Original: AssertStatic = js.native
+    var assert_Original: AssertStatic
     
-    var config: Config = js.native
+    var config: Config
     
-    def expect(target: js.Any): Assertion = js.native
-    def expect(target: js.Any, message: String): Assertion = js.native
+    def expect(target: js.Any): Assertion
+    def expect(target: js.Any, message: String): Assertion
     @JSName("expect")
-    var expect_Original: ExpectStatic = js.native
+    var expect_Original: ExpectStatic
     
-    def should(): Should = js.native
+    def should(): Should
     
     /**
       * Provides a way to extend the internals of Chai
       */
-    def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit]): js.Any = js.native
+    def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit]): js.Any
+  }
+  object ChaiStatic {
+    
+    @scala.inline
+    def apply(
+      assert: AssertStatic,
+      config: Config,
+      expect: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
+      should: () => Should,
+      use: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any
+    ): ChaiStatic = {
+      val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], expect = js.Any.fromFunction2(expect), should = js.Any.fromFunction0(should), use = js.Any.fromFunction1(use))
+      __obj.asInstanceOf[ChaiStatic]
+    }
+    
+    @scala.inline
+    implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExpect(value: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setUse(value: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var includeStack: Boolean = js.native
+    var includeStack: Boolean
   }
   object Config {
     
@@ -556,29 +566,55 @@ object Chai {
     }
   }
   
-  @js.native
   trait Deep extends StObject {
     
-    def equal(value: js.Any): Assertion = js.native
-    def equal(value: js.Any, message: String): Assertion = js.native
+    def equal(value: js.Any): Assertion
+    def equal(value: js.Any, message: String): Assertion
     @JSName("equal")
-    var equal_Original: Equal = js.native
+    var equal_Original: Equal
     
-    def include(value: String): Assertion = js.native
-    def include(value: String, message: String): Assertion = js.native
-    def include(value: Double): Assertion = js.native
-    def include(value: Double, message: String): Assertion = js.native
-    def include(value: Object): Assertion = js.native
-    def include(value: Object, message: String): Assertion = js.native
+    def include(value: String): Assertion
+    def include(value: String, message: String): Assertion
+    def include(value: Double): Assertion
+    def include(value: Double, message: String): Assertion
+    def include(value: Object): Assertion
+    def include(value: Object, message: String): Assertion
     @JSName("include")
-    var include_Original: Include = js.native
+    var include_Original: Include
     
-    def property(name: String): Assertion = js.native
-    def property(name: String, value: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
-    def property(name: String, value: js.Any): Assertion = js.native
-    def property(name: String, value: js.Any, message: String): Assertion = js.native
+    def property(name: String): Assertion
+    def property(name: String, value: js.Any): Assertion
+    def property(name: String, value: js.Any, message: String): Assertion
+    def property(name: String, value: Unit, message: String): Assertion
     @JSName("property")
-    var property_Original: Property = js.native
+    var property_Original: Property
+  }
+  object Deep {
+    
+    @scala.inline
+    def apply(
+      equal: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
+      include: Include,
+      property: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
+    ): Deep = {
+      val __obj = js.Dynamic.literal(equal = js.Any.fromFunction2(equal), include = include.asInstanceOf[js.Any], property = js.Any.fromFunction3(property))
+      __obj.asInstanceOf[Deep]
+    }
+    
+    @scala.inline
+    implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProperty(
+        value: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
+      ): Self = StObject.set(x, "property", js.Any.fromFunction3(value))
+    }
   }
   
   type Equal = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[String], Assertion]
@@ -596,12 +632,12 @@ object Chai {
     def apply(value: Object, message: String): Assertion = js.native
     
     def keys(keys: String*): Assertion = js.native
-    def keys(keys: js.Array[_]): Assertion = js.native
+    def keys(keys: js.Array[js.Any]): Assertion = js.native
     @JSName("keys")
     var keys_Original: Keys = js.native
     
-    def members(set: js.Array[_]): Assertion = js.native
-    def members(set: js.Array[_], message: String): Assertion = js.native
+    def members(set: js.Array[js.Any]): Assertion = js.native
+    def members(set: js.Array[js.Any], message: String): Assertion = js.native
     @JSName("members")
     var members_Original: Members = js.native
   }
@@ -612,81 +648,147 @@ object Chai {
   trait Keys extends StObject {
     
     def apply(keys: String*): Assertion = js.native
-    def apply(keys: js.Array[_]): Assertion = js.native
+    def apply(keys: js.Array[js.Any]): Assertion = js.native
   }
   
-  @js.native
   trait LanguageChains extends StObject {
     
-    def and(`type`: String): Assertion = js.native
-    def and(`type`: String, message: String): Assertion = js.native
+    def and(`type`: String): Assertion
+    def and(`type`: String, message: String): Assertion
     @JSName("and")
-    var and_Original: Assertion = js.native
+    var and_Original: Assertion
     
-    def at(`type`: String): Assertion = js.native
-    def at(`type`: String, message: String): Assertion = js.native
+    def at(`type`: String): Assertion
+    def at(`type`: String, message: String): Assertion
     @JSName("at")
-    var at_Original: Assertion = js.native
+    var at_Original: Assertion
     
-    def be(`type`: String): Assertion = js.native
-    def be(`type`: String, message: String): Assertion = js.native
+    def be(`type`: String): Assertion
+    def be(`type`: String, message: String): Assertion
     @JSName("be")
-    var be_Original: Assertion = js.native
+    var be_Original: Assertion
     
-    def been(`type`: String): Assertion = js.native
-    def been(`type`: String, message: String): Assertion = js.native
+    def been(`type`: String): Assertion
+    def been(`type`: String, message: String): Assertion
     @JSName("been")
-    var been_Original: Assertion = js.native
+    var been_Original: Assertion
     
-    def has(`type`: String): Assertion = js.native
-    def has(`type`: String, message: String): Assertion = js.native
+    def has(`type`: String): Assertion
+    def has(`type`: String, message: String): Assertion
     @JSName("has")
-    var has_Original: Assertion = js.native
+    var has_Original: Assertion
     
-    def have(`type`: String): Assertion = js.native
-    def have(`type`: String, message: String): Assertion = js.native
+    def have(`type`: String): Assertion
+    def have(`type`: String, message: String): Assertion
     @JSName("have")
-    var have_Original: Assertion = js.native
+    var have_Original: Assertion
     
-    def is(`type`: String): Assertion = js.native
-    def is(`type`: String, message: String): Assertion = js.native
+    def is(`type`: String): Assertion
+    def is(`type`: String, message: String): Assertion
     @JSName("is")
-    var is_Original: Assertion = js.native
+    var is_Original: Assertion
     
-    def of(`type`: String): Assertion = js.native
-    def of(`type`: String, message: String): Assertion = js.native
+    def of(`type`: String): Assertion
+    def of(`type`: String, message: String): Assertion
     @JSName("of")
-    var of_Original: Assertion = js.native
+    var of_Original: Assertion
     
-    def same(`type`: String): Assertion = js.native
-    def same(`type`: String, message: String): Assertion = js.native
+    def same(`type`: String): Assertion
+    def same(`type`: String, message: String): Assertion
     @JSName("same")
-    var same_Original: Assertion = js.native
+    var same_Original: Assertion
     
-    def that(`type`: String): Assertion = js.native
-    def that(`type`: String, message: String): Assertion = js.native
+    def that(`type`: String): Assertion
+    def that(`type`: String, message: String): Assertion
     @JSName("that")
-    var that_Original: Assertion = js.native
+    var that_Original: Assertion
     
-    def to(`type`: String): Assertion = js.native
-    def to(`type`: String, message: String): Assertion = js.native
+    def to(`type`: String): Assertion
+    def to(`type`: String, message: String): Assertion
     @JSName("to")
-    var to_Original: Assertion = js.native
+    var to_Original: Assertion
     
-    def which(`type`: String): Assertion = js.native
-    def which(`type`: String, message: String): Assertion = js.native
+    def which(`type`: String): Assertion
+    def which(`type`: String, message: String): Assertion
     @JSName("which")
-    var which_Original: Assertion = js.native
+    var which_Original: Assertion
     
-    def `with`(`type`: String): Assertion = js.native
-    def `with`(`type`: String, message: String): Assertion = js.native
+    def `with`(`type`: String): Assertion
+    def `with`(`type`: String, message: String): Assertion
     @JSName("with")
-    var with_Original: Assertion = js.native
+    var with_Original: Assertion
+  }
+  object LanguageChains {
+    
+    @scala.inline
+    def apply(
+      and: Assertion,
+      at: Assertion,
+      be: Assertion,
+      been: Assertion,
+      has: Assertion,
+      have: Assertion,
+      is: Assertion,
+      of: Assertion,
+      same: Assertion,
+      that: Assertion,
+      to: Assertion,
+      which: Assertion,
+      `with`: Assertion
+    ): LanguageChains = {
+      val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], be = be.asInstanceOf[js.Any], been = been.asInstanceOf[js.Any], has = has.asInstanceOf[js.Any], have = have.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any], of = of.asInstanceOf[js.Any], same = same.asInstanceOf[js.Any], that = that.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LanguageChains]
+    }
+    
+    @scala.inline
+    implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAt(value: Assertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBeen(value: Assertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHas(value: Assertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHave(value: Assertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIs(value: Assertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOf(value: Assertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSame(value: Assertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setThat(value: Assertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTo(value: Assertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWhich(value: Assertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
   trait Length
-    extends LanguageChains
+    extends StObject
+       with LanguageChains
        with NumericComparison {
     
     def apply(length: Double): Assertion = js.native
@@ -764,12 +866,14 @@ object Chai {
   ]
   
   @js.native
-  trait Should extends ShouldAssertion {
+  trait Should
+    extends StObject
+       with ShouldAssertion {
     
     def fail(actual: js.Any, expected: js.Any): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, message: js.UndefOr[scala.Nothing], operator: String): Unit = js.native
     def fail(actual: js.Any, expected: js.Any, message: String): Unit = js.native
     def fail(actual: js.Any, expected: js.Any, message: String, operator: String): Unit = js.native
+    def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): Unit = js.native
     
     var not: ShouldAssertion = js.native
   }
@@ -779,20 +883,15 @@ object Chai {
     
     def Throw(actual: js.Function): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function): Unit = js.native
-    def Throw(
-      actual: js.Function,
-      constructor: js.Function,
-      expected: js.UndefOr[scala.Nothing],
-      message: String
-    ): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: Error): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: Error, expected: String): Unit = js.native
     def Throw(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
     def Throw(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def Throw(actual: js.Function, expected: String): Unit = js.native
@@ -810,20 +909,15 @@ object Chai {
     
     def `throw`(actual: js.Function): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function): Unit = js.native
-    def `throw`(
-      actual: js.Function,
-      constructor: js.Function,
-      expected: js.UndefOr[scala.Nothing],
-      message: String
-    ): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: Error): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: Error, expected: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
     def `throw`(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def `throw`(actual: js.Function, expected: String): Unit = js.native
@@ -839,20 +933,15 @@ object Chai {
     
     def apply(actual: js.Function): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function): Unit = js.native
-    def apply(
-      actual: js.Function,
-      constructor: js.Function,
-      expected: js.UndefOr[scala.Nothing],
-      message: String
-    ): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
     def apply(actual: js.Function, constructor: Error): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Unit = js.native
     def apply(actual: js.Function, constructor: Error, expected: String): Unit = js.native
     def apply(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
+    def apply(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
     def apply(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
     def apply(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def apply(actual: js.Function, expected: String): Unit = js.native
@@ -866,15 +955,15 @@ object Chai {
     
     def apply(): Assertion = js.native
     def apply(constructor: js.Function): Assertion = js.native
-    def apply(constructor: js.Function, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def apply(constructor: js.Function, expected: String): Assertion = js.native
     def apply(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def apply(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
     def apply(constructor: js.Function, expected: RegExp): Assertion = js.native
     def apply(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
     def apply(constructor: Error): Assertion = js.native
-    def apply(constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
     def apply(constructor: Error, expected: String): Assertion = js.native
     def apply(constructor: Error, expected: String, message: String): Assertion = js.native
+    def apply(constructor: Error, expected: Unit, message: String): Assertion = js.native
     def apply(constructor: Error, expected: RegExp): Assertion = js.native
     def apply(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def apply(expected: String): Assertion = js.native

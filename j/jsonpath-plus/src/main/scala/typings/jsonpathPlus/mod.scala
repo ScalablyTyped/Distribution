@@ -11,7 +11,6 @@ import typings.jsonpathPlus.jsonpathPlusStrings.value
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,12 +26,7 @@ object mod {
     def apply[T](options: JSONPathOptionsAutoStart): JSONPathClass = js.native
     def apply[T](path: String): T = js.native
     def apply[T](path: String, json: String): T = js.native
-    def apply[T](
-      path: String,
-      json: String,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
+    def apply[T](path: String, json: String, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
     def apply[T](path: String, json: String, callback: JSONPathCallback): T = js.native
     def apply[T](
       path: String,
@@ -40,27 +34,17 @@ object mod {
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: String, json: js.Array[_]): T = js.native
+    def apply[T](path: String, json: js.Array[js.Any]): T = js.native
+    def apply[T](path: String, json: js.Array[js.Any], callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
+    def apply[T](path: String, json: js.Array[js.Any], callback: JSONPathCallback): T = js.native
     def apply[T](
       path: String,
-      json: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
-    def apply[T](path: String, json: js.Array[_], callback: JSONPathCallback): T = js.native
-    def apply[T](
-      path: String,
-      json: js.Array[_],
+      json: js.Array[js.Any],
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
     def apply[T](path: String, json: js.Object): T = js.native
-    def apply[T](
-      path: String,
-      json: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
+    def apply[T](path: String, json: js.Object, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
     def apply[T](path: String, json: js.Object, callback: JSONPathCallback): T = js.native
     def apply[T](
       path: String,
@@ -69,12 +53,7 @@ object mod {
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
     def apply[T](path: String, json: Boolean): T = js.native
-    def apply[T](
-      path: String,
-      json: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
+    def apply[T](path: String, json: Boolean, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
     def apply[T](path: String, json: Boolean, callback: JSONPathCallback): T = js.native
     def apply[T](
       path: String,
@@ -83,12 +62,7 @@ object mod {
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
     def apply[T](path: String, json: Double): T = js.native
-    def apply[T](
-      path: String,
-      json: Double,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
+    def apply[T](path: String, json: Double, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
     def apply[T](path: String, json: Double, callback: JSONPathCallback): T = js.native
     def apply[T](
       path: String,
@@ -96,94 +70,74 @@ object mod {
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](
-      path: String,
-      json: Null,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
+    def apply[T](path: String, json: Null, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
     def apply[T](path: String, json: Null, callback: JSONPathCallback): T = js.native
     def apply[T](path: String, json: Null, callback: JSONPathCallback, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
-    def apply[T](path: js.Array[_]): T = js.native
-    def apply[T](path: js.Array[_], json: String): T = js.native
+    def apply[T](path: js.Array[js.Any]): T = js.native
+    def apply[T](path: js.Array[js.Any], json: String): T = js.native
+    def apply[T](path: js.Array[js.Any], json: String, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: String, callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
-      json: String,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
-    def apply[T](path: js.Array[_], json: String, callback: JSONPathCallback): T = js.native
-    def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: String,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: js.Array[_]): T = js.native
+    def apply[T](path: js.Array[js.Any], json: js.Array[js.Any]): T = js.native
     def apply[T](
-      path: js.Array[_],
-      json: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
+      path: js.Array[js.Any],
+      json: js.Array[js.Any],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: js.Array[_], callback: JSONPathCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: js.Array[js.Any], callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
-      json: js.Array[_],
+      path: js.Array[js.Any],
+      json: js.Array[js.Any],
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: js.Object): T = js.native
+    def apply[T](path: js.Array[js.Any], json: js.Object): T = js.native
     def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: js.Object,
-      callback: js.UndefOr[scala.Nothing],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: js.Object, callback: JSONPathCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: js.Object, callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: js.Object,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: Boolean): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Boolean): T = js.native
     def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Boolean,
-      callback: js.UndefOr[scala.Nothing],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: Boolean, callback: JSONPathCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Boolean, callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Boolean,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
-    def apply[T](path: js.Array[_], json: Double): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Double): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Double, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Double, callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
-      json: Double,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
-    def apply[T](path: js.Array[_], json: Double, callback: JSONPathCallback): T = js.native
-    def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Double,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Null, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): T = js.native
+    def apply[T](path: js.Array[js.Any], json: Null, callback: JSONPathCallback): T = js.native
     def apply[T](
-      path: js.Array[_],
-      json: Null,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): T = js.native
-    def apply[T](path: js.Array[_], json: Null, callback: JSONPathCallback): T = js.native
-    def apply[T](
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Null,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
@@ -198,12 +152,7 @@ object mod {
     def evaluate(options: Callback): js.Any = js.native
     def evaluate(path: String): js.Any = js.native
     def evaluate(path: String, json: String): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: String,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
+    def evaluate(path: String, json: String, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
     def evaluate(path: String, json: String, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
       path: String,
@@ -211,27 +160,17 @@ object mod {
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: String, json: js.Array[_]): js.Any = js.native
+    def evaluate(path: String, json: js.Array[js.Any]): js.Any = js.native
+    def evaluate(path: String, json: js.Array[js.Any], callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
+    def evaluate(path: String, json: js.Array[js.Any], callback: JSONPathCallback): js.Any = js.native
     def evaluate(
       path: String,
-      json: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
-    def evaluate(path: String, json: js.Array[_], callback: JSONPathCallback): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: js.Array[_],
+      json: js.Array[js.Any],
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
     def evaluate(path: String, json: js.Object): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
+    def evaluate(path: String, json: js.Object, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
     def evaluate(path: String, json: js.Object, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
       path: String,
@@ -240,12 +179,7 @@ object mod {
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
     def evaluate(path: String, json: Boolean): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
+    def evaluate(path: String, json: Boolean, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
     def evaluate(path: String, json: Boolean, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
       path: String,
@@ -254,12 +188,7 @@ object mod {
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
     def evaluate(path: String, json: Double): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: Double,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
+    def evaluate(path: String, json: Double, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
     def evaluate(path: String, json: Double, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
       path: String,
@@ -267,101 +196,80 @@ object mod {
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(
-      path: String,
-      json: Null,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
+    def evaluate(path: String, json: Null, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
     def evaluate(path: String, json: Null, callback: JSONPathCallback): js.Any = js.native
     def evaluate(path: String, json: Null, callback: JSONPathCallback, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
-    def evaluate(path: js.Array[_]): js.Any = js.native
-    def evaluate(path: js.Array[_], json: String): js.Any = js.native
+    def evaluate(path: js.Array[js.Any]): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: String): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: String, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: String, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
-      json: String,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: String, callback: JSONPathCallback): js.Any = js.native
-    def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: String,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: js.Array[_]): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: js.Array[js.Any]): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
-      json: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
+      path: js.Array[js.Any],
+      json: js.Array[js.Any],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: js.Array[_], callback: JSONPathCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: js.Array[js.Any], callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
-      json: js.Array[_],
+      path: js.Array[js.Any],
+      json: js.Array[js.Any],
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: js.Object): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: js.Object): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: js.Object,
-      callback: js.UndefOr[scala.Nothing],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: js.Object, callback: JSONPathCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: js.Object, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: js.Object,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: Boolean): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Boolean): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Boolean,
-      callback: js.UndefOr[scala.Nothing],
+      callback: Unit,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: Boolean, callback: JSONPathCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Boolean, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Boolean,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: Double): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Double): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Double, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Double, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
-      json: Double,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: Double, callback: JSONPathCallback): js.Any = js.native
-    def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Double,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Null, callback: Unit, otherTypeCallback: JSONPathOtherTypeCallback): js.Any = js.native
+    def evaluate(path: js.Array[js.Any], json: Null, callback: JSONPathCallback): js.Any = js.native
     def evaluate(
-      path: js.Array[_],
-      json: Null,
-      callback: js.UndefOr[scala.Nothing],
-      otherTypeCallback: JSONPathOtherTypeCallback
-    ): js.Any = js.native
-    def evaluate(path: js.Array[_], json: Null, callback: JSONPathCallback): js.Any = js.native
-    def evaluate(
-      path: js.Array[_],
+      path: js.Array[js.Any],
       json: Null,
       callback: JSONPathCallback,
       otherTypeCallback: JSONPathOtherTypeCallback
     ): js.Any = js.native
   }
   
-  @js.native
   trait JSONPathOptions extends StObject {
     
     /**
@@ -370,7 +278,7 @@ object mod {
       *
       * @default true
       */
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If supplied, a callback will be called immediately upon retrieval of
@@ -383,7 +291,7 @@ object mod {
       *
       * @default undefined
       */
-    var callback: js.UndefOr[JSONPathCallback] = js.native
+    var callback: js.UndefOr[JSONPathCallback] = js.undefined
     
     /**
       * Whether the returned array of results will be flattened to a
@@ -391,13 +299,13 @@ object mod {
       *
       * @default false
       */
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The JSON object to evaluate (whether of null, boolean, number,
       *   string, object, or array type).
       */
-    var json: Null | Boolean | Double | String | js.Object | js.Array[_] = js.native
+    var json: Null | Boolean | Double | String | js.Object | js.Array[js.Any]
     
     /**
       * In the current absence of JSON Schema support,
@@ -413,7 +321,7 @@ object mod {
       * @default undefined
       *   <A function that throws an error when `@other()` is encountered>
       */
-    var otherTypeCallback: js.UndefOr[JSONPathOtherTypeCallback] = js.native
+    var otherTypeCallback: js.UndefOr[JSONPathOtherTypeCallback] = js.undefined
     
     /**
       * In the event that a query could be made to return the root node,
@@ -421,7 +329,7 @@ object mod {
       *
       * @default null
       */
-    var parent: js.UndefOr[Null | js.Any] = js.native
+    var parent: js.UndefOr[Null | js.Any] = js.undefined
     
     /**
       * In the event that a query could be made to return the root node,
@@ -430,13 +338,13 @@ object mod {
       *
       * @default null
       */
-    var parentProperty: js.UndefOr[Null | js.Any] = js.native
+    var parentProperty: js.UndefOr[Null | js.Any] = js.undefined
     
     /**
       * The JSONPath expression as a (normalized or unnormalized) string or
       *   array.
       */
-    var path: String | js.Array[_] = js.native
+    var path: String | js.Array[js.Any]
     
     /**
       * Although JavaScript evaluation expressions are allowed by default,
@@ -446,7 +354,7 @@ object mod {
       *
       * @default false
       */
-    var preventEval: js.UndefOr[Boolean] = js.native
+    var preventEval: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Can be case-insensitive form of "value", "path", "pointer", "parent",
@@ -460,7 +368,7 @@ object mod {
       *
       * @default 'value'
       */
-    var resultType: js.UndefOr[value | path | pointer | parent | parentProperty | all] = js.native
+    var resultType: js.UndefOr[value | path | pointer | parent | parentProperty | all] = js.undefined
     
     /**
       * Key-value map of variables to be available to code evaluations such
@@ -468,7 +376,7 @@ object mod {
       * (Note that the current path and value will also be available to those
       *   expressions; see the Syntax section for details.)
       */
-    var sandbox: js.UndefOr[Map[String, _]] = js.native
+    var sandbox: js.UndefOr[Map[String, js.Any]] = js.undefined
     
     /**
       * Whether or not to wrap the results in an array.
@@ -486,13 +394,13 @@ object mod {
       *
       * @default true
       */
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object JSONPathOptions {
     
     @scala.inline
-    def apply(path: String | js.Array[_]): JSONPathOptions = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    def apply(path: String | js.Array[js.Any]): JSONPathOptions = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], json = null)
       __obj.asInstanceOf[JSONPathOptions]
     }
     
@@ -518,7 +426,7 @@ object mod {
       def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
       @scala.inline
-      def setJson(value: Boolean | Double | String | js.Object | js.Array[_]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: Boolean | Double | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonNull: Self = StObject.set(x, "json", null)
@@ -527,7 +435,7 @@ object mod {
       def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
       
       @scala.inline
-      def setOtherTypeCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "otherTypeCallback", js.Any.fromFunction1(value))
+      def setOtherTypeCallback(value: JSONPathOtherTypeCallback): Self = StObject.set(x, "otherTypeCallback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOtherTypeCallbackUndefined: Self = StObject.set(x, "otherTypeCallback", js.undefined)
@@ -551,7 +459,7 @@ object mod {
       def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
       @scala.inline
-      def setPath(value: String | js.Array[_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: String | js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
@@ -569,7 +477,7 @@ object mod {
       def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
       
       @scala.inline
-      def setSandbox(value: Map[String, _]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      def setSandbox(value: Map[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
@@ -582,17 +490,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait JSONPathOptionsAutoStart extends JSONPathOptions {
+  trait JSONPathOptionsAutoStart
+    extends StObject
+       with JSONPathOptions {
     
     @JSName("autostart")
-    var autostart_JSONPathOptionsAutoStart: `false` = js.native
+    var autostart_JSONPathOptionsAutoStart: `false`
   }
   object JSONPathOptionsAutoStart {
     
     @scala.inline
-    def apply(autostart: `false`, path: String | js.Array[_]): JSONPathOptionsAutoStart = {
-      val __obj = js.Dynamic.literal(autostart = autostart.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String | js.Array[js.Any]): JSONPathOptionsAutoStart = {
+      val __obj = js.Dynamic.literal(autostart = false, path = path.asInstanceOf[js.Any], json = null)
       __obj.asInstanceOf[JSONPathOptionsAutoStart]
     }
     
@@ -604,7 +513,15 @@ object mod {
     }
   }
   
-  type JSONPathOtherTypeCallback = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait JSONPathOtherTypeCallback extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
-  type JSONPathType = JSONPathCallable with JSONPathClass
+  @js.native
+  trait JSONPathType
+    extends StObject
+       with JSONPathCallable
+       with JSONPathClass
 }

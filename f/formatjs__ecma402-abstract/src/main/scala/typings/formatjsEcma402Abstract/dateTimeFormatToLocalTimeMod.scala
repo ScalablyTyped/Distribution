@@ -5,19 +5,20 @@ import typings.formatjsEcma402Abstract.typesDateTimeMod.UnpackedZoneData
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimeFormatToLocalTimeMod {
   
-  @JSImport("@formatjs/ecma402-abstract/DateTimeFormat/ToLocalTime", "ToLocalTime")
+  @JSImport("@formatjs/ecma402-abstract/DateTimeFormat/ToLocalTime", JSImport.Namespace)
   @js.native
-  def ToLocalTime(t: Double, calendar: String, timeZone: String, hasTzData: ToLocalTimeImplDetails): Day = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def ToLocalTime(t: Double, calendar: String, timeZone: String, hasTzData: ToLocalTimeImplDetails): Day = (^.asInstanceOf[js.Dynamic].applyDynamic("ToLocalTime")(t.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], hasTzData.asInstanceOf[js.Any])).asInstanceOf[Day]
+  
   trait ToLocalTimeImplDetails extends StObject {
     
-    var tzData: Record[String, js.Array[UnpackedZoneData]] = js.native
+    var tzData: Record[String, js.Array[UnpackedZoneData]]
   }
   object ToLocalTimeImplDetails {
     

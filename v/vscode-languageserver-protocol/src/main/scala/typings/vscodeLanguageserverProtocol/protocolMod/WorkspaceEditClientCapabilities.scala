@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceEditClientCapabilities extends StObject {
   
   /**
     * The client supports versioned document changes in `WorkspaceEdit`s
     */
-  var documentChanges: js.UndefOr[Boolean] = js.native
+  var documentChanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The failure handling strategy of a client if applying the workspace edit
@@ -19,7 +17,7 @@ trait WorkspaceEditClientCapabilities extends StObject {
     *
     * @since 3.13.0
     */
-  var failureHandling: js.UndefOr[FailureHandlingKind] = js.native
+  var failureHandling: js.UndefOr[FailureHandlingKind] = js.undefined
   
   /**
     * The resource operations the client supports. Clients should at least
@@ -27,7 +25,7 @@ trait WorkspaceEditClientCapabilities extends StObject {
     *
     * @since 3.13.0
     */
-  var resourceOperations: js.UndefOr[js.Array[ResourceOperationKind]] = js.native
+  var resourceOperations: js.UndefOr[js.Array[ResourceOperationKind]] = js.undefined
 }
 object WorkspaceEditClientCapabilities {
   

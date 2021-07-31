@@ -3,19 +3,17 @@ package typings.browserSync.mod
 import typings.browserSync.anon.Fn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnippetOptions extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var blacklist: js.UndefOr[js.Array[String]] = js.native
+  var blacklist: js.UndefOr[js.Array[String]] = js.undefined
   
-  var rule: js.UndefOr[Fn] = js.native
+  var rule: js.UndefOr[Fn] = js.undefined
   
-  var whitelist: js.UndefOr[js.Array[String]] = js.native
+  var whitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SnippetOptions {
   

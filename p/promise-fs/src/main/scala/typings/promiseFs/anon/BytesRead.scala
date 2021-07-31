@@ -3,15 +3,13 @@ package typings.promiseFs.anon
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BytesRead extends StObject {
   
-  var buffer: Uint8ClampedArray = js.native
+  var buffer: Uint8ClampedArray
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object BytesRead {
   

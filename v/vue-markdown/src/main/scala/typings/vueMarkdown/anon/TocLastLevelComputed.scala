@@ -2,13 +2,11 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TocLastLevelComputed extends StObject {
   
-  var tocLastLevelComputed: js.Any = js.native
+  var tocLastLevelComputed: js.Any
 }
 object TocLastLevelComputed {
   

@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfClause
-  extends Base[typings.luaparse.luaparseStrings.IfClause]
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.IfClause]
      with _Node {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var condition: Expression = js.native
+  var condition: Expression
 }
 object IfClause {
   
   @scala.inline
-  def apply(
-    body: js.Array[Statement],
-    condition: Expression,
-    `type`: typings.luaparse.luaparseStrings.IfClause
-  ): IfClause = {
+  def apply(body: js.Array[Statement], condition: Expression): IfClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfClause")
     __obj.asInstanceOf[IfClause]
   }
   

@@ -2,10 +2,8 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofenterprise extends StObject {
   
   ////////////////////
@@ -18,7 +16,7 @@ trait Typeofenterprise extends StObject {
     * Important: This API works only on Chrome OS.
     * Note: This API is only for extensions pre-installed by policy.
     */
-  val deviceAttributes: TypeofdeviceAttributes = js.native
+  val deviceAttributes: TypeofdeviceAttributes
   
   ////////////////////
   // Enterprise Networking Attributes
@@ -28,7 +26,7 @@ trait Typeofenterprise extends StObject {
     * Important: This API works only on Chrome OS.
     * @since Chrome 85.
     */
-  val networkingAttributes: TypeofnetworkingAttribute = js.native
+  val networkingAttributes: TypeofnetworkingAttribute
   
   ////////////////////
   // Enterprise Platform Keys
@@ -40,7 +38,7 @@ trait Typeofenterprise extends StObject {
     * Important: This API works only on Chrome OS.
     * Note:  This API is only for extensions pre-installed by policy.
     */
-  val platformKeys: TypeofplatformKeys = js.native
+  val platformKeys: TypeofplatformKeys
 }
 object Typeofenterprise {
   

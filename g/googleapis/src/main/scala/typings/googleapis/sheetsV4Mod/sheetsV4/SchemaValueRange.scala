@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data within a range of the spreadsheet.
   */
-@js.native
 trait SchemaValueRange extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaValueRange extends StObject {
     * `A1=1,B1=3,A2=2,B2=4`.  When writing, if this field is not set, it
     * defaults to ROWS.
     */
-  var majorDimension: js.UndefOr[String] = js.native
+  var majorDimension: js.UndefOr[String] = js.undefined
   
   /**
     * The range the values cover, in A1 notation. For output, this range
@@ -30,7 +28,7 @@ trait SchemaValueRange extends StObject {
     * trailing rows and columns. When appending values, this field represents
     * the range to search for a table, after which values will be appended.
     */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
   
   /**
     * The data that was read or to be written.  This is an array of arrays, the
@@ -41,7 +39,7 @@ trait SchemaValueRange extends StObject {
     * will be skipped. To set a cell to an empty value, set the string value to
     * an empty string.
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object SchemaValueRange {
   
@@ -67,7 +65,7 @@ object SchemaValueRange {
     def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParameterResult extends StObject {
   
   /**
     * Information about a parameter.
     */
-  var Parameter: js.UndefOr[typings.awsSdk.ssmMod.Parameter] = js.native
+  var Parameter: js.UndefOr[typings.awsSdk.ssmMod.Parameter] = js.undefined
 }
 object GetParameterResult {
   

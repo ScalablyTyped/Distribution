@@ -2,25 +2,23 @@ package typings.highlightJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Emitter extends StObject {
   
-  def addKeyword(text: String, kind: String): Unit = js.native
+  def addKeyword(text: String, kind: String): Unit
   
-  def addSublanguage(emitter: Emitter, subLanguageName: String): Unit = js.native
+  def addSublanguage(emitter: Emitter, subLanguageName: String): Unit
   
-  def addText(text: String): Unit = js.native
+  def addText(text: String): Unit
   
-  def closeAllNodes(): Unit = js.native
+  def closeAllNodes(): Unit
   
-  def closeNode(): Unit = js.native
+  def closeNode(): Unit
   
-  def openNode(kind: String): Unit = js.native
+  def openNode(kind: String): Unit
   
-  def toHTML(): String = js.native
+  def toHTML(): String
 }
 object Emitter {
   

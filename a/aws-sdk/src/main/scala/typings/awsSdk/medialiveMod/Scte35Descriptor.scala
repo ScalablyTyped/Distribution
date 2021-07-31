@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scte35Descriptor extends StObject {
   
   /**
     * SCTE-35 Descriptor Settings.
     */
-  var Scte35DescriptorSettings: typings.awsSdk.medialiveMod.Scte35DescriptorSettings = js.native
+  var Scte35DescriptorSettings: typings.awsSdk.medialiveMod.Scte35DescriptorSettings
 }
 object Scte35Descriptor {
   

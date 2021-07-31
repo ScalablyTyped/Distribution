@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicationResponse extends StObject {
   
   /**
     * Provides a description of the application, such as the application's Amazon Resource Name (ARN), status, and latest version.
     */
-  var ApplicationDetail: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDetail = js.native
+  var ApplicationDetail: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDetail
 }
 object DescribeApplicationResponse {
   

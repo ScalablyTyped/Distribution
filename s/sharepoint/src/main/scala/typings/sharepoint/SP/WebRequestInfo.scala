@@ -2,27 +2,27 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRequestInfo extends ClientValueObject {
+trait WebRequestInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_body(): String = js.native
+  def get_body(): String
   
-  def get_headers(): js.Any = js.native
+  def get_headers(): js.Any
   
-  def get_method(): String = js.native
+  def get_method(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_body(value: String): Unit = js.native
+  def set_body(value: String): Unit
   
-  def set_headers(value: js.Any): Unit = js.native
+  def set_headers(value: js.Any): Unit
   
-  def set_method(value: String): Unit = js.native
+  def set_method(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object WebRequestInfo {
   

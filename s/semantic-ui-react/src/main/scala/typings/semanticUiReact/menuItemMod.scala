@@ -22,7 +22,6 @@ import typings.semanticUiReact.semanticUiReactStrings.vertically
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemMod extends Shortcut {
@@ -39,9 +38,9 @@ object menuItemMod extends Shortcut {
   @js.native
   val default: ComponentClass[MenuItemProps, ComponentState] = js.native
   
-  @js.native
   trait MenuItemProps
-    extends StrictMenuItemProps
+    extends StObject
+       with StrictMenuItemProps
        with /* key */ StringDictionary[js.Any]
   object MenuItemProps {
     
@@ -52,47 +51,46 @@ object menuItemMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictMenuItemProps extends StObject {
     
     /** A menu item can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Additional colors can be specified. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A menu item can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A menu item or menu can remove element padding, vertically or horizontally. */
-    var fitted: js.UndefOr[Boolean | horizontally | vertically] = js.native
+    var fitted: js.UndefOr[Boolean | horizontally | vertically] = js.undefined
     
     /** A menu item may include a header or may itself be a header. */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /** MenuItem can be only icon. */
-    var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.undefined
     
     /** MenuItem index inside Menu. */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** A menu item can be link. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /** Internal name of the MenuItem. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Called on click. When passed, the component will render as an `a`
@@ -107,10 +105,10 @@ object menuItemMod extends Shortcut {
           /* data */ MenuItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A menu item can take left or right position. */
-    var position: js.UndefOr[left | right] = js.native
+    var position: js.UndefOr[left | right] = js.undefined
   }
   object StrictMenuItemProps {
     

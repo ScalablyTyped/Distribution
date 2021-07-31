@@ -2,26 +2,24 @@ package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud asset. This includes all Google Cloud Platform resources, Cloud IAM
   * policies, and other non-GCP assets.
   */
-@js.native
 trait SchemaAsset extends StObject {
   
   /**
     * Type of the asset. Example: &quot;google.compute.Disk&quot;.
     */
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
   /**
     * Representation of the actual Cloud IAM policy set on a cloud resource.
     * For each resource, there must be at most one Cloud IAM policy set on it.
     */
-  var iamPolicy: js.UndefOr[SchemaPolicy] = js.native
+  var iamPolicy: js.UndefOr[SchemaPolicy] = js.undefined
   
   /**
     * The full name of the asset. For example:
@@ -30,12 +28,12 @@ trait SchemaAsset extends StObject {
     * Names](https://cloud.google.com/apis/design/resource_names#full_resource_name)
     * for more information.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Representation of the resource.
     */
-  var resource: js.UndefOr[SchemaResource] = js.native
+  var resource: js.UndefOr[SchemaResource] = js.undefined
 }
 object SchemaAsset {
   

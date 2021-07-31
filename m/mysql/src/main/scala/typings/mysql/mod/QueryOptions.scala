@@ -3,22 +3,20 @@ package typings.mysql.mod
 import typings.mysql.anon.UntypedFieldInfotypestrin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
   /**
     * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
     * nested as tableName_fieldName
     */
-  var nestTables: js.UndefOr[js.Any] = js.native
+  var nestTables: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The SQL for the query
     */
-  var sql: String = js.native
+  var sql: String
   
   /**
     * Every operation takes an optional inactivity timeout option. This allows you to specify appropriate timeouts for
@@ -26,7 +24,7 @@ trait QueryOptions extends StObject {
     * operations through the client. This means that when a timeout is reached, the connection it occurred on will be
     * destroyed and no further operations can be performed.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
@@ -48,12 +46,12 @@ trait QueryOptions extends StObject {
     *
     * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
     */
-  var typeCast: js.UndefOr[TypeCast] = js.native
+  var typeCast: js.UndefOr[TypeCast] = js.undefined
   
   /**
     * Values for template query
     */
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object QueryOptions {
   

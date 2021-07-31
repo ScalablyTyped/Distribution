@@ -4,18 +4,18 @@ import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlideEnvironment extends AnonymousAccessor {
+trait SlideEnvironment
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * Settings for defining the lighting of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
     */
-  var lighting: js.UndefOr[Lighting] = js.native
+  var lighting: js.UndefOr[Lighting] = js.undefined
 }
 object SlideEnvironment {
   
@@ -24,7 +24,7 @@ object SlideEnvironment {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideEnvironment]]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SlideEnvironment]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SlideEnvironment]])
   ): SlideEnvironment = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEnvironment]

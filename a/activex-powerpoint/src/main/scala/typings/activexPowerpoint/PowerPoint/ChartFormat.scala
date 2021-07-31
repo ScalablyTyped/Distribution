@@ -4,36 +4,34 @@ import typings.activexOffice.Office.GlowFormat
 import typings.activexOffice.Office.SoftEdgeFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartFormat extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Glow: GlowFormat = js.native
+  val Glow: GlowFormat
   
-  val Line: LineFormat = js.native
+  val Line: LineFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PictureFormat: typings.activexPowerpoint.PowerPoint.PictureFormat = js.native
+  val PictureFormat: typings.activexPowerpoint.PowerPoint.PictureFormat
   
   @JSName("PowerPoint.ChartFormat_typekey")
-  var PowerPointDotChartFormat_typekey: ChartFormat = js.native
+  var PowerPointDotChartFormat_typekey: ChartFormat
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
   
-  val SoftEdge: SoftEdgeFormat = js.native
+  val SoftEdge: SoftEdgeFormat
   
-  val TextFrame2: typings.activexPowerpoint.PowerPoint.TextFrame2 = js.native
+  val TextFrame2: typings.activexPowerpoint.PowerPoint.TextFrame2
   
-  val ThreeD: ThreeDFormat = js.native
+  val ThreeD: ThreeDFormat
 }
 object ChartFormat {
   

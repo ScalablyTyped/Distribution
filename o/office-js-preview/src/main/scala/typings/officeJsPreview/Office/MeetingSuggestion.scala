@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,38 +19,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait MeetingSuggestion extends StObject {
   
   /**
     * Gets the attendees for a suggested meeting.
     */
-  var attendees: js.Array[EmailUser] = js.native
+  var attendees: js.Array[EmailUser]
   
   /**
     * Gets the date and time that a suggested meeting is to end.
     */
-  var end: String = js.native
+  var end: String
   
   /**
     * Gets the location of a suggested meeting.
     */
-  var location: String = js.native
+  var location: String
   
   /**
     * Gets a string that was identified as a meeting suggestion.
     */
-  var meetingString: String = js.native
+  var meetingString: String
   
   /**
     * Gets the date and time that a suggested meeting is to begin.
     */
-  var start: String = js.native
+  var start: String
   
   /**
     * Gets the subject of a suggested meeting.
     */
-  var subject: String = js.native
+  var subject: String
 }
 object MeetingSuggestion {
   

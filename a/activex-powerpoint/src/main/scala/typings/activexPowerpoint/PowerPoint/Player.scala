@@ -2,32 +2,30 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Player extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var CurrentPosition: Double = js.native
+  var CurrentPosition: Double
   
-  def GoToNextBookmark(): Unit = js.native
+  def GoToNextBookmark(): Unit
   
-  def GoToPreviousBookmark(): Unit = js.native
+  def GoToPreviousBookmark(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Pause(): Unit = js.native
+  def Pause(): Unit
   
-  def Play(): Unit = js.native
+  def Play(): Unit
   
   @JSName("PowerPoint.Player_typekey")
-  var PowerPointDotPlayer_typekey: Player = js.native
+  var PowerPointDotPlayer_typekey: Player
   
-  val State: PpPlayerState = js.native
+  val State: PpPlayerState
   
-  def Stop(): Unit = js.native
+  def Stop(): Unit
 }
 object Player {
   

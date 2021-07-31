@@ -8,30 +8,28 @@ import typings.awsSdkClientDynamodbNode.typesSourceTableFeatureDetailsMod.Source
 import typings.awsSdkClientDynamodbNode.typesSourceTableFeatureDetailsMod.UnmarshalledSourceTableFeatureDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBackupDescriptionMod {
   
-  @js.native
   trait BackupDescription extends StObject {
     
     /**
       * <p>Contains the details of the backup created for the table. </p>
       */
-    var BackupDetails: js.UndefOr[typings.awsSdkClientDynamodbNode.typesBackupDetailsMod.BackupDetails] = js.native
+    var BackupDetails: js.UndefOr[typings.awsSdkClientDynamodbNode.typesBackupDetailsMod.BackupDetails] = js.undefined
     
     /**
       * <p>Contains the details of the table when the backup was created. </p>
       */
-    var SourceTableDetails: js.UndefOr[typings.awsSdkClientDynamodbNode.typesSourceTableDetailsMod.SourceTableDetails] = js.native
+    var SourceTableDetails: js.UndefOr[typings.awsSdkClientDynamodbNode.typesSourceTableDetailsMod.SourceTableDetails] = js.undefined
     
     /**
       * <p>Contains the details of the features enabled on the table when the backup was created. For example, LSIs, GSIs, streams, TTL.</p>
       */
     var SourceTableFeatureDetails: js.UndefOr[
         typings.awsSdkClientDynamodbNode.typesSourceTableFeatureDetailsMod.SourceTableFeatureDetails
-      ] = js.native
+      ] = js.undefined
   }
   object BackupDescription {
     
@@ -64,26 +62,27 @@ object typesBackupDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledBackupDescription extends BackupDescription {
+  trait UnmarshalledBackupDescription
+    extends StObject
+       with BackupDescription {
     
     /**
       * <p>Contains the details of the backup created for the table. </p>
       */
     @JSName("BackupDetails")
-    var BackupDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledBackupDetails] = js.native
+    var BackupDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledBackupDetails] = js.undefined
     
     /**
       * <p>Contains the details of the table when the backup was created. </p>
       */
     @JSName("SourceTableDetails")
-    var SourceTableDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledSourceTableDetails] = js.native
+    var SourceTableDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledSourceTableDetails] = js.undefined
     
     /**
       * <p>Contains the details of the features enabled on the table when the backup was created. For example, LSIs, GSIs, streams, TTL.</p>
       */
     @JSName("SourceTableFeatureDetails")
-    var SourceTableFeatureDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledSourceTableFeatureDetails] = js.native
+    var SourceTableFeatureDetails_UnmarshalledBackupDescription: js.UndefOr[UnmarshalledSourceTableFeatureDetails] = js.undefined
   }
   object UnmarshalledBackupDescription {
     

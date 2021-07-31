@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaleIpPermission extends StObject {
   
   /**
     * The start of the port range for the TCP and UDP protocols, or an ICMP type number. A value of -1 indicates all ICMP types. 
     */
-  var FromPort: js.UndefOr[Integer] = js.native
+  var FromPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IP protocol name (for tcp, udp, and icmp) or number (see Protocol Numbers).
     */
-  var IpProtocol: js.UndefOr[String] = js.native
+  var IpProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * The IP ranges. Not applicable for stale security group rules.
     */
-  var IpRanges: js.UndefOr[typings.awsSdk.ec2Mod.IpRanges] = js.native
+  var IpRanges: js.UndefOr[typings.awsSdk.ec2Mod.IpRanges] = js.undefined
   
   /**
     * The prefix list IDs. Not applicable for stale security group rules.
     */
-  var PrefixListIds: js.UndefOr[PrefixListIdSet] = js.native
+  var PrefixListIds: js.UndefOr[PrefixListIdSet] = js.undefined
   
   /**
     * The end of the port range for the TCP and UDP protocols, or an ICMP type number. A value of -1 indicates all ICMP types. 
     */
-  var ToPort: js.UndefOr[Integer] = js.native
+  var ToPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The security group pairs. Returns the ID of the referenced security group and VPC, and the ID and status of the VPC peering connection.
     */
-  var UserIdGroupPairs: js.UndefOr[UserIdGroupPairSet] = js.native
+  var UserIdGroupPairs: js.UndefOr[UserIdGroupPairSet] = js.undefined
 }
 object StaleIpPermission {
   

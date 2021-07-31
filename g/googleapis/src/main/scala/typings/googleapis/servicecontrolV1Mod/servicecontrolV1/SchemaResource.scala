@@ -3,7 +3,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * addressable (named) entity provided by the destination service. For
   * example, a file stored on a network storage service.
   */
-@js.native
 trait SchemaResource extends StObject {
   
   /**
     * The labels or tags on the resource, such as AWS resource tags and
     * Kubernetes resource labels.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The stable identifier (name) of a resource on the `service`. A resource
@@ -32,20 +30,20 @@ trait SchemaResource extends StObject {
     * `https://pubsub.googleapis.com/v1/projects/123/topics/news-feed`.  See
     * https://cloud.google.com/apis/design/resource_names for details.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service that this resource belongs to, such as
     * `pubsub.googleapis.com`. The service may be different from the DNS
     * hostname that actually serves the request.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the resource. The scheme is platform-specific because
     * different platforms define their resources differently.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaResource {
   

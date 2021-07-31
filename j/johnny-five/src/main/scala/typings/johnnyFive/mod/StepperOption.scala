@@ -2,21 +2,19 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepperOption extends StObject {
   
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
-  var pins: js.Any = js.native
+  var pins: js.Any
   
-  var rpm: js.UndefOr[Double] = js.native
+  var rpm: js.UndefOr[Double] = js.undefined
   
-  var stepsPerRev: Double = js.native
+  var stepsPerRev: Double
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object StepperOption {
   

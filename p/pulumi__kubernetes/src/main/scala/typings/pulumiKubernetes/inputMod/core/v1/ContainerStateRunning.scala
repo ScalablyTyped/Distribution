@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerStateRunning is a running state of a container.
   */
-@js.native
 trait ContainerStateRunning extends StObject {
   
   /**
     * Time at which the container was last (re-)started
     */
-  var startedAt: js.UndefOr[Input[String]] = js.native
+  var startedAt: js.UndefOr[Input[String]] = js.undefined
 }
 object ContainerStateRunning {
   

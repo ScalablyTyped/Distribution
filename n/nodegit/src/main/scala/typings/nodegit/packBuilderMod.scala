@@ -7,7 +7,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.revWalkMod.Revwalk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packBuilderMod {
@@ -39,9 +38,12 @@ object packBuilderMod {
   /* static members */
   object Packbuilder {
     
-    @JSImport("nodegit/pack-builder", "Packbuilder.create")
+    @JSImport("nodegit/pack-builder", "Packbuilder")
     @js.native
-    def create(repo: Repository): Packbuilder = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(repo: Repository): Packbuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Packbuilder]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

@@ -1,22 +1,64 @@
 package typings.playable
 
+import typings.playable.adaptersTypesMod.IAdapterDebugInfo
 import typings.playable.adaptersTypesMod.IPlaybackAdapter
 import typings.playable.anon.BwEstimate
 import typings.playable.eventEmitterTypesMod.IEventEmitter
+import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority
 import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.ADAPTIVE_VIA_MSE
 import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.FORCED
+import typings.playable.mediaStreamMod.MediaStreamType
 import typings.playable.playbackEngineTypesMod.IParsedPlayableSource
+import typings.playable.playbackEngineTypesMod.PlayableMediaSource
+import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hlsMod {
   
   @JSImport("playable/dist/src/adapters/hls", JSImport.Default)
   @js.native
-  class default protected () extends HlsAdapter {
+  class default protected ()
+    extends StObject
+       with HlsAdapter {
     def this(eventEmitter: IEventEmitter) = this()
+    
+    /* CompleteClass */
+    override def attach(videoElement: HTMLVideoElement): Unit = js.native
+    
+    /* CompleteClass */
+    override def canPlay(mediaType: MediaStreamType): Boolean = js.native
+    
+    /* CompleteClass */
+    var currentUrl: PlayableMediaSource = js.native
+    
+    /* CompleteClass */
+    var debugInfo: IAdapterDebugInfo = js.native
+    
+    /* CompleteClass */
+    override def detach(): Unit = js.native
+    
+    /* CompleteClass */
+    var isDynamicContent: Boolean = js.native
+    
+    /* CompleteClass */
+    var isDynamicContentEnded: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSeekAvailable: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSyncWithLive: Boolean = js.native
+    
+    /* CompleteClass */
+    var mediaStreamDeliveryPriority: MediaStreamDeliveryPriority = js.native
+    
+    /* CompleteClass */
+    override def setMediaStreams(mediaStreams: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var syncWithLiveTime: Double = js.native
   }
   /* static members */
   object default {
@@ -31,13 +73,14 @@ object hlsMod {
     @scala.inline
     def DEFAULT_HLS_CONFIG_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
     
-    @JSImport("playable/dist/src/adapters/hls", "default.isSupported")
-    @js.native
-    def isSupported(): Boolean = js.native
+    @scala.inline
+    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
   @js.native
-  trait HlsAdapter extends IPlaybackAdapter {
+  trait HlsAdapter
+    extends StObject
+       with IPlaybackAdapter {
     
     var _attachOnPlay: js.Any = js.native
     

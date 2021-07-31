@@ -2,25 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInfo extends StObject {
   
   /**
     * Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
     * For example – a high contrast image
     */
-  var addImageQuery: js.UndefOr[NullableOption[Boolean]] = js.native
+  var addImageQuery: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Optional; alt-text accessible content for the image
-  var alternateText: js.UndefOr[NullableOption[String]] = js.native
+  var alternateText: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var alternativeText: js.UndefOr[NullableOption[String]] = js.native
+  var alternativeText: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional; URI that points to an icon which represents the application used to generate the activity
-  var iconUrl: js.UndefOr[NullableOption[String]] = js.native
+  var iconUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ImageInfo {
   

@@ -2,39 +2,37 @@ package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Area extends StObject {
   
-  var area: Boolean = js.native
+  var area: Boolean
   
-  var base: Boolean = js.native
+  var base: Boolean
   
-  var br: Boolean = js.native
+  var br: Boolean
   
-  var col: Boolean = js.native
+  var col: Boolean
   
-  var command: Boolean = js.native
+  var command: Boolean
   
-  var embed: Boolean = js.native
+  var embed: Boolean
   
-  var hr: Boolean = js.native
+  var hr: Boolean
   
-  var img: Boolean = js.native
+  var img: Boolean
   
-  var input: Boolean = js.native
+  var input: Boolean
   
-  var link: Boolean = js.native
+  var link: Boolean
   
-  var meta: Boolean = js.native
+  var meta: Boolean
   
-  var param: Boolean = js.native
+  var param: Boolean
   
-  var source: Boolean = js.native
+  var source: Boolean
   
-  var wbr: Boolean = js.native
+  var wbr: Boolean
 }
 object Area {
   

@@ -4,18 +4,16 @@ import typings.std.Extract
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.PartialState<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase>> */
-@js.native
 trait PartialStateNavigationStaHistory extends StObject {
   
-  var history: js.UndefOr[js.Array[_]] = js.native
+  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   var routeNames: js.UndefOr[
     js.Array[
@@ -24,15 +22,15 @@ trait PartialStateNavigationStaHistory extends StObject {
         String
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   val routes: js.Array[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.PartialRoute<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.Route<std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number], object | undefined>> */ js.Object
-  ] = js.native
+  ]
   
-  val stale: js.UndefOr[`true`] = js.native
+  val stale: js.UndefOr[`true`] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PartialStateNavigationStaHistory {
   
@@ -50,7 +48,7 @@ object PartialStateNavigationStaHistory {
   implicit class PartialStateNavigationStaHistoryMutableBuilder[Self <: PartialStateNavigationStaHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

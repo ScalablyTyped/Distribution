@@ -2,15 +2,15 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BarDataset extends Dataset {
+trait BarDataset
+  extends StObject
+     with Dataset {
   
-  var config: js.UndefOr[BarDatasetConfig] = js.native
+  var config: js.UndefOr[BarDatasetConfig] = js.undefined
   
-  var values: js.UndefOr[js.Array[BarValue | Double | js.Array[Double]]] = js.native
+  var values: js.UndefOr[js.Array[BarValue | Double | js.Array[Double]]] = js.undefined
 }
 object BarDataset {
   

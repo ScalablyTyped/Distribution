@@ -2,7 +2,6 @@ package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information regarding timestamp and bounding box locations for the frames
   * containing detected OCR text snippets.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1TextFrame extends StObject {
   
   /**
     * Bounding polygon of the detected text for this frame.
     */
-  var rotatedBoundingBox: js.UndefOr[SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly] = js.native
+  var rotatedBoundingBox: js.UndefOr[SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly] = js.undefined
   
   /**
     * Timestamp of this frame.
     */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1TextFrame {
   

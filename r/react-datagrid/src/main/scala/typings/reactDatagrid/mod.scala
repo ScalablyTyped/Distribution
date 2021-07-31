@@ -9,7 +9,6 @@ import typings.reactDatagrid.anon.PageSize
 import typings.reactDatagrid.mod.ReactDataGrid.DataGridProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,28 +20,27 @@ object mod {
   
   object ReactDataGrid {
     
-    @js.native
     trait CellProps extends StObject {
       
       /**
         * a class name for the cell
         */
-      var className: String = js.native
+      var className: String
       
       /**
         * the index of the column
         */
-      var index: Double = js.native
+      var index: Double
       
       /**
         * the index of the row
         */
-      var rowIndex: Double = js.native
+      var rowIndex: Double
       
       /**
         * a style for the cell
         */
-      var style: CSSProperties = js.native
+      var style: CSSProperties
     }
     object CellProps {
       
@@ -69,34 +67,33 @@ object mod {
       }
     }
     
-    @js.native
     trait Column extends StObject {
       
       /**
         * String - a className to be applied to all cells in this column
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var defaultHidden: js.UndefOr[Boolean] = js.native
+      var defaultHidden: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specify a column as visible/hidden.
         */
-      var defaultVisible: js.UndefOr[Boolean] = js.native
+      var defaultVisible: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Columns are flexible via flexbox. Specify a flex property for this.
         * Unless a column specifies a flex or a width property, it is assumed
         * to have flex: 1.
         */
-      var flex: js.UndefOr[Double] = js.native
+      var flex: js.UndefOr[Double] = js.undefined
       
-      var minWidth: js.UndefOr[Double] = js.native
+      var minWidth: js.UndefOr[Double] = js.undefined
       
       /**
         * String - each column should have a name property.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Function - if you want custom rendering, specify this property.
@@ -107,19 +104,19 @@ object mod {
         cellProps - an object with props for the current cell
         */
       var render: js.UndefOr[
-            js.Function3[/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps, _]
-          ] = js.native
+            js.Function3[/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps, js.Any]
+          ] = js.undefined
       
       /**
         * Object - if you want cells in this column to be have a custom
         * style.
         */
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
       
       /**
         * String - one of 'left', 'right', 'center'.
         */
-      var textAlign: js.UndefOr[String] = js.native
+      var textAlign: js.UndefOr[String] = js.undefined
       
       /**
         * String/ReactElement - a title to show in the header. If not
@@ -127,15 +124,15 @@ object mod {
         * or anything that React can render, so you can customize it as you
         * please.
         */
-      var title: js.UndefOr[String | ReactElement] = js.native
+      var title: js.UndefOr[String | ReactElement] = js.undefined
       
       /**
         * Boolean - controlled (which means you have to manually set column
         * visibility when it changes, by using onColumnVisibilityChange).
         */
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Column {
       
@@ -182,7 +179,7 @@ object mod {
         def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setRender(value: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => _): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+        def setRender(value: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
         @scala.inline
         def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -223,64 +220,65 @@ object mod {
     trait DataGrid
       extends Component[DataGridProps, js.Object, js.Any]
     
-    @js.native
-    trait DataGridProps extends Props[DataGrid] {
+    trait DataGridProps
+      extends StObject
+         with Props[DataGrid] {
       
       /**
         * Array - an array of columns that are going to be rendered in the
         * grid.
         */
-      var columns: js.Array[Column] = js.native
+      var columns: js.Array[Column]
       
       /**
         * Array/String/Function/Promise - for local data, an array of object
         * to render in the grid. For remote data, a string url, or a function
         * that returns a promise.
         */
-      var dataSource: js.Array[_] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[_]]]) = js.native
+      var dataSource: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]])
       
-      var dataSourceCount: js.UndefOr[Double] = js.native
+      var dataSourceCount: js.UndefOr[Double] = js.undefined
       
-      var defaultPage: js.UndefOr[Double] = js.native
+      var defaultPage: js.UndefOr[Double] = js.undefined
       
-      var defaultPageSize: js.UndefOr[Double] = js.native
+      var defaultPageSize: js.UndefOr[Double] = js.undefined
       
       /**
         * Empty text for no records.
         */
-      var emptyText: js.UndefOr[String] = js.native
+      var emptyText: js.UndefOr[String] = js.undefined
       
       /**
         * Group rows by matching values.
         */
-      var groupBy: js.UndefOr[js.Array[_]] = js.native
+      var groupBy: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * String - the name of the property where the id is found for each
         * object in the data array.
         */
-      var idProperty: String = js.native
+      var idProperty: String
       
       /**
         * To apply the filter while typing.
         */
-      var liveFilter: js.UndefOr[Boolean] = js.native
+      var liveFilter: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If you dont want loadMask over header, specify
         */
-      var loadMaskOverHeader: js.UndefOr[Boolean] = js.native
+      var loadMaskOverHeader: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Loading grid.
         */
-      var loading: js.UndefOr[Boolean] = js.native
+      var loading: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If you want to enable column reordering, just specify the
         * onColumnOrderChange prop on the grid:
         */
-      var onColumnOrderChange: js.UndefOr[js.Function2[/* index */ Double, /* dropIndex */ Double, Unit]] = js.native
+      var onColumnOrderChange: js.UndefOr[js.Function2[/* index */ Double, /* dropIndex */ Double, Unit]] = js.undefined
       
       /**
         * If you want to enable column resized, just specify the
@@ -294,72 +292,72 @@ object mod {
               /* secondSize */ Double, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * When a column is shown/hidden, you can be notified using the
         * onColumnVisibilityChange callback prop.
         */
-      var onColumnVisibilityChange: js.UndefOr[js.Function2[/* column */ Column, /* visibility */ Boolean, Unit]] = js.native
+      var onColumnVisibilityChange: js.UndefOr[js.Function2[/* column */ Column, /* visibility */ Boolean, Unit]] = js.undefined
       
       /**
         * If you want to enable filter, just specify the
         * onFilter prop on the grid:
         */
       var onFilter: js.UndefOr[
-            js.Function3[/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[_], Unit]
-          ] = js.native
+            js.Function3[/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[js.Any], Unit]
+          ] = js.undefined
       
       /**
         * handle page changes.
         */
-      var onPageChange: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.native
+      var onPageChange: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.undefined
       
       /**
         * handle page size changes.
         */
-      var onPageSizeChange: js.UndefOr[js.Function2[/* pageSize */ Double, /* props */ this.type, Unit]] = js.native
+      var onPageSizeChange: js.UndefOr[js.Function2[/* pageSize */ Double, /* props */ this.type, Unit]] = js.undefined
       
       /**
         * If you want to enable selection, just specify the
         * onSelectionChange prop on the grid:
         */
-      var onSelectionChange: js.UndefOr[js.Function2[/* newSelected */ js.Object, /* data */ js.Any, Unit]] = js.native
+      var onSelectionChange: js.UndefOr[js.Function2[/* newSelected */ js.Object, /* data */ js.Any, Unit]] = js.undefined
       
       /**
         * Sorting the data array is not done by the grid. You can however
         * pass in sort info so the grid renders with sorting icons as needed.
         */
-      var onSortChange: js.UndefOr[js.Function1[/* sortInfo */ js.Array[SortInfo], Unit]] = js.native
+      var onSortChange: js.UndefOr[js.Function1[/* sortInfo */ js.Array[SortInfo], Unit]] = js.undefined
       
       /**
         * Number - controlled alternative for defaultPage. When page changes,
         * onPageChange(page) is called.
         */
-      var page: js.UndefOr[Double] = js.native
+      var page: js.UndefOr[Double] = js.undefined
       
       /**
         * Number - controlled alternative for defaultPageSize. When pageSize
         * changes, onPageSizeChange(pageSize) is called.
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
         * When you have remote data, pagination is setup by default. If you
         * want to disable pagination, specify the pagination prop with a false
         * value.
         */
-      var pagination: js.UndefOr[Boolean] = js.native
+      var pagination: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Customize the pagination toolbar.
         */
-      var paginationToolbarProps: js.UndefOr[PaginationToolbarProps] = js.native
+      var paginationToolbarProps: js.UndefOr[PaginationToolbarProps] = js.undefined
       
       /**
         * Custom row height.
         */
-      var rowHeight: js.UndefOr[Double] = js.native
+      var rowHeight: js.UndefOr[Double] = js.undefined
       
       /**
         * Object/Function - you can specify either a style object to be
@@ -369,36 +367,36 @@ object mod {
         */
       var rowStyle: js.UndefOr[
             CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, CSSProperties])
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The current selection.
         */
-      var selected: js.UndefOr[js.Object] = js.native
+      var selected: js.UndefOr[js.Object] = js.undefined
       
       /**
         * Show cell borders. Other valid values: 'horizontal', 'vertical'.
         */
-      var showCellBorders: js.UndefOr[Boolean | String] = js.native
+      var showCellBorders: js.UndefOr[Boolean | String] = js.undefined
       
       /**
         * Array - an array with sorting information.
         */
-      var sortInfo: js.UndefOr[js.Array[SortInfo]] = js.native
+      var sortInfo: js.UndefOr[js.Array[SortInfo]] = js.undefined
       
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
       
       /**
         * Boolean - show a column menu to show/hide columns.
         */
-      var withColumnMenu: js.UndefOr[Boolean] = js.native
+      var withColumnMenu: js.UndefOr[Boolean] = js.undefined
     }
     object DataGridProps {
       
       @scala.inline
       def apply(
         columns: js.Array[Column],
-        dataSource: js.Array[_] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[_]]]),
+        dataSource: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]]),
         idProperty: String
       ): DataGridProps = {
         val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], idProperty = idProperty.asInstanceOf[js.Any])
@@ -415,7 +413,9 @@ object mod {
         def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
         
         @scala.inline
-        def setDataSource(value: js.Array[_] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[_]]])): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+        def setDataSource(
+          value: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]])
+        ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDataSourceCount(value: Double): Self = StObject.set(x, "dataSourceCount", value.asInstanceOf[js.Any])
@@ -424,7 +424,7 @@ object mod {
         def setDataSourceCountUndefined: Self = StObject.set(x, "dataSourceCount", js.undefined)
         
         @scala.inline
-        def setDataSourceFunction1(value: /* query */ PageSize => js.Promise[js.Array[_]]): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
+        def setDataSourceFunction1(value: /* query */ PageSize => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
         
         @scala.inline
         def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
@@ -448,7 +448,7 @@ object mod {
         def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
         
         @scala.inline
-        def setGroupBy(value: js.Array[_]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+        def setGroupBy(value: js.Array[js.Any]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
@@ -498,7 +498,7 @@ object mod {
         def setOnColumnVisibilityChangeUndefined: Self = StObject.set(x, "onColumnVisibilityChange", js.undefined)
         
         @scala.inline
-        def setOnFilter(value: (/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[_]) => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction3(value))
+        def setOnFilter(value: (/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction3(value))
         
         @scala.inline
         def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
@@ -601,27 +601,26 @@ object mod {
       }
     }
     
-    @js.native
     trait PaginationToolbarProps extends StObject {
       
-      var iconProps: DisabledStyle = js.native
+      var iconProps: DisabledStyle
       
-      var iconSize: Double = js.native
+      var iconSize: Double
       
       /**
         * Available page sizes.
         */
-      var pageSizes: js.Array[Double] = js.native
+      var pageSizes: js.Array[Double]
       
       /**
         * Hide/show page sizes.
         */
-      var showPageSize: Boolean = js.native
+      var showPageSize: Boolean
       
       /**
         * Customize icons.
         */
-      var showRefreshIcon: Boolean = js.native
+      var showRefreshIcon: Boolean
     }
     object PaginationToolbarProps {
       
@@ -660,28 +659,27 @@ object mod {
       }
     }
     
-    @js.native
     trait RowProps extends StObject {
       
       /**
         * a class name for the row
         */
-      var className: String = js.native
+      var className: String
       
       /**
         * the index of the row
         */
-      var index: Double = js.native
+      var index: Double
       
       /**
         * a class name for the row when the mouse is over it
         */
-      var overClassName: String = js.native
+      var overClassName: String
       
       /**
         * a class name for the row when selected
         */
-      var selectedClassName: String = js.native
+      var selectedClassName: String
     }
     object RowProps {
       
@@ -708,12 +706,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SortInfo extends StObject {
       
-      var dir: String = js.native
+      var dir: String
       
-      var name: String = js.native
+      var name: String
     }
     object SortInfo {
       

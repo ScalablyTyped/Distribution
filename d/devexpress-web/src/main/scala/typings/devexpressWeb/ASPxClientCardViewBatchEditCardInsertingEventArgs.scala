@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditCardInserting event.
   */
-@js.native
-trait ASPxClientCardViewBatchEditCardInsertingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewBatchEditCardInsertingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed card visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewBatchEditCardInsertingEventArgs {
   

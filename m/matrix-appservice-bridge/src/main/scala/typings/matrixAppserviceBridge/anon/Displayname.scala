@@ -3,23 +3,21 @@ package typings.matrixAppserviceBridge.anon
 import typings.matrixAppserviceBridge.membershipCacheMod.UserMembership
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Displayname extends StObject {
   
-  var avatar_url: js.UndefOr[String] = js.native
+  var avatar_url: js.UndefOr[String] = js.undefined
   
-  var displayname: js.UndefOr[String] = js.native
+  var displayname: js.UndefOr[String] = js.undefined
   
-  var membership: UserMembership = js.native
+  var membership: UserMembership
 }
 object Displayname {
   
   @scala.inline
   def apply(): Displayname = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(membership = null)
     __obj.asInstanceOf[Displayname]
   }
   

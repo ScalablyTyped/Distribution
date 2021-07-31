@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object MagneticStripeReaderAuthenticationLevel extends StObject {
   
   /** Does not support authentication. */
   @js.native
-  sealed trait notSupported extends MagneticStripeReaderAuthenticationLevel
+  sealed trait notSupported
+    extends StObject
+       with MagneticStripeReaderAuthenticationLevel
   
   /** Supports authentication, but does not require it. */
   @js.native
-  sealed trait optional extends MagneticStripeReaderAuthenticationLevel
+  sealed trait optional
+    extends StObject
+       with MagneticStripeReaderAuthenticationLevel
   
   /** Requires authentication. */
   @js.native
-  sealed trait required extends MagneticStripeReaderAuthenticationLevel
+  sealed trait required
+    extends StObject
+       with MagneticStripeReaderAuthenticationLevel
 }

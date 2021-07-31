@@ -10,29 +10,27 @@ import typings.semanticUiReact.tabPaneMod.TabPaneProps
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `0`[TProps /* <: Record[String, _] */] extends StObject {
+  trait `0`[TProps /* <: Record[String, js.Any] */] extends StObject {
     
     // Not all TProps can have `children`, without this condition it will match to "any"
     var children: js.UndefOr[
         (ShorthandRenderFunction[ElementType[TProps], TProps]) | (/* import warning: importer.ImportType#apply Failed type conversion: TProps['children'] */ js.Any)
-      ] = js.native
+      ] = js.undefined
   }
   object `0` {
     
     @scala.inline
-    def apply[TProps /* <: Record[String, _] */](): `0`[TProps] = {
+    def apply[TProps /* <: Record[String, js.Any] */](): `0`[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`[TProps]]
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], TProps /* <: Record[String, _] */] (val x: Self with `0`[TProps]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], TProps /* <: Record[String, js.Any] */] (val x: Self & `0`[TProps]) extends AnyVal {
       
       @scala.inline
       def setChildren(
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.Any = js.native
+    var children: js.Any
   }
   object Children {
     
@@ -68,14 +65,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MenuItem extends StObject {
     
-    var menuItem: js.UndefOr[js.Any] = js.native
+    var menuItem: js.UndefOr[js.Any] = js.undefined
     
-    var pane: js.UndefOr[SemanticShorthandItem[TabPaneProps]] = js.native
+    var pane: js.UndefOr[SemanticShorthandItem[TabPaneProps]] = js.undefined
     
-    var render: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var render: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   }
   object MenuItem {
     

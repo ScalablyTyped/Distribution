@@ -2,29 +2,27 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CACHESDIRECTORYPATH extends StObject {
   
-  var CACHES_DIRECTORY_PATH: String = js.native
+  var CACHES_DIRECTORY_PATH: String
   
-  var DOCUMENT_DIRECTORY_PATH: String = js.native
+  var DOCUMENT_DIRECTORY_PATH: String
   
-  var EXTERNAL_DIRECTORY_PATH: String = js.native
+  var EXTERNAL_DIRECTORY_PATH: String
   
-  var EXTERNAL_STORAGE_DIRECTORY_PATH: String = js.native
+  var EXTERNAL_STORAGE_DIRECTORY_PATH: String
   
-  var FILETYPE_DIRECTORY: String = js.native
+  var FILETYPE_DIRECTORY: String
   
-  var FILETYPE_REGULAR: String = js.native
+  var FILETYPE_REGULAR: String
   
-  var LIBRARY_DIRECTORY_PATH: String = js.native
+  var LIBRARY_DIRECTORY_PATH: String
   
-  var MAIN_BUNDLE_PATH: String = js.native
+  var MAIN_BUNDLE_PATH: String
   
-  var TEMP_DIRECTORY_PATH: String = js.native
+  var TEMP_DIRECTORY_PATH: String
 }
 object CACHESDIRECTORYPATH {
   

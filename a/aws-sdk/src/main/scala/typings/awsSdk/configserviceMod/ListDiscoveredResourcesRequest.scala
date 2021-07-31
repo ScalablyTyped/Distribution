@@ -2,41 +2,39 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDiscoveredResourcesRequest extends StObject {
   
   /**
     * Specifies whether AWS Config includes deleted resources in the results. By default, deleted resources are not included.
     */
-  var includeDeletedResources: js.UndefOr[Boolean] = js.native
+  var includeDeletedResources: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
     */
-  var limit: js.UndefOr[Limit] = js.native
+  var limit: js.UndefOr[Limit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The IDs of only those resources that you want AWS Config to list in the response. If you do not specify this parameter, AWS Config lists all resources of the specified type that it has discovered.
     */
-  var resourceIds: js.UndefOr[ResourceIdList] = js.native
+  var resourceIds: js.UndefOr[ResourceIdList] = js.undefined
   
   /**
     * The custom name of only those resources that you want AWS Config to list in the response. If you do not specify this parameter, AWS Config lists all resources of the specified type that it has discovered.
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The type of resources that you want AWS Config to list in the response.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
 }
 object ListDiscoveredResourcesRequest {
   

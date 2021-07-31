@@ -2,13 +2,11 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Set[T] extends StObject {
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object Set {
   
@@ -19,7 +17,7 @@ object Set {
   }
   
   @scala.inline
-  implicit class SetMutableBuilder[Self <: Set[_], T] (val x: Self with Set[T]) extends AnyVal {
+  implicit class SetMutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
     
     @scala.inline
     def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCodeReviewsResponse extends StObject {
   
   /**
     *  A list of code reviews that meet the criteria of the request. 
     */
-  var CodeReviewSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.CodeReviewSummaries] = js.native
+  var CodeReviewSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.CodeReviewSummaries] = js.undefined
   
   /**
     *  Pagination token. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
 }
 object ListCodeReviewsResponse {
   

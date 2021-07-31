@@ -2,30 +2,28 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionDefaultCacheBehaviorForwardedValues extends StObject {
   
   /**
     * The forwarded values cookies
     * that specifies how CloudFront handles cookies (maximum one).
     */
-  var cookies: DistributionDefaultCacheBehaviorForwardedValuesCookies = js.native
+  var cookies: DistributionDefaultCacheBehaviorForwardedValuesCookies
   
   /**
     * Specifies the Headers, if any, that you want
     * CloudFront to vary upon for this cache behavior. Specify `*` to include all
     * headers.
     */
-  var headers: js.UndefOr[js.Array[String]] = js.native
+  var headers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether you want CloudFront to forward
     * query strings to the origin that is associated with this cache behavior.
     */
-  var queryString: Boolean = js.native
+  var queryString: Boolean
   
   /**
     * When specified, along with a value of
@@ -33,7 +31,7 @@ trait DistributionDefaultCacheBehaviorForwardedValues extends StObject {
     * query string keys listed in this argument are cached. When omitted with a
     * value of `true` for `queryString`, all query string keys are cached.
     */
-  var queryStringCacheKeys: js.UndefOr[js.Array[String]] = js.native
+  var queryStringCacheKeys: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DistributionDefaultCacheBehaviorForwardedValues {
   

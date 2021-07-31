@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStepsInput extends StObject {
   
   /**
     * The identifier of the cluster for which to list the steps.
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
   /**
     * The filter to limit the step list based on the identifier of the steps. You can specify a maximum of ten Step IDs. The character constraint applies to the overall length of the array.
     */
-  var StepIds: js.UndefOr[XmlStringList] = js.native
+  var StepIds: js.UndefOr[XmlStringList] = js.undefined
   
   /**
     * The filter to limit the step list based on certain states.
     */
-  var StepStates: js.UndefOr[StepStateList] = js.native
+  var StepStates: js.UndefOr[StepStateList] = js.undefined
 }
 object ListStepsInput {
   

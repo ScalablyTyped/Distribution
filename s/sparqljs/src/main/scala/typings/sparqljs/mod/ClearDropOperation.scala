@@ -4,17 +4,17 @@ import typings.sparqljs.sparqljsStrings.clear
 import typings.sparqljs.sparqljsStrings.drop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClearDropOperation extends ManagementOperation {
+trait ClearDropOperation
+  extends StObject
+     with ManagementOperation {
   
-  var graph: GraphReference = js.native
+  var graph: GraphReference
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var `type`: clear | drop = js.native
+  var `type`: clear | drop
 }
 object ClearDropOperation {
   

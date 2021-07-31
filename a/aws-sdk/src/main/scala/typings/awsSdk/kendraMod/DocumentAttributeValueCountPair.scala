@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentAttributeValueCountPair extends StObject {
   
   /**
     * The number of documents in the response that have the attribute value for the key.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * The value of the attribute. For example, "HR."
     */
-  var DocumentAttributeValue: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeValue] = js.native
+  var DocumentAttributeValue: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeValue] = js.undefined
 }
 object DocumentAttributeValueCountPair {
   

@@ -8,64 +8,64 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDiagram extends XInterface {
+trait XDiagram
+  extends StObject
+     with XInterface {
   
   /** returns an {@link XColorScheme} that defines the default colors for data series (or data points) in the diagram. */
-  var DefaultColorScheme: XColorScheme = js.native
+  var DefaultColorScheme: XColorScheme
   
   /**
     * returns the property set that determines the visual appearance of the floor if any.
     *
     * The floor is the bottom of a 3D diagram. For a 2D diagram NULL is returned.
     */
-  val Floor: XPropertySet = js.native
+  val Floor: XPropertySet
   
   /** returns the legend, which may represent data series and other information about a diagram in a separate box. */
-  var Legend: XLegend = js.native
+  var Legend: XLegend
   
   /**
     * returns the property set that determines the visual appearance of the wall.
     *
     * The wall is the area behind the union of all coordinate systems used in a diagram.
     */
-  val Wall: XPropertySet = js.native
+  val Wall: XPropertySet
   
   /** returns an {@link XColorScheme} that defines the default colors for data series (or data points) in the diagram. */
-  def getDefaultColorScheme(): XColorScheme = js.native
+  def getDefaultColorScheme(): XColorScheme
   
   /**
     * returns the property set that determines the visual appearance of the floor if any.
     *
     * The floor is the bottom of a 3D diagram. For a 2D diagram NULL is returned.
     */
-  def getFloor(): XPropertySet = js.native
+  def getFloor(): XPropertySet
   
   /** returns the legend, which may represent data series and other information about a diagram in a separate box. */
-  def getLegend(): XLegend = js.native
+  def getLegend(): XLegend
   
   /**
     * returns the property set that determines the visual appearance of the wall.
     *
     * The wall is the area behind the union of all coordinate systems used in a diagram.
     */
-  def getWall(): XPropertySet = js.native
+  def getWall(): XPropertySet
   
   /** sets an {@link XColorScheme} that defines the default colors for data series (or data points) in the diagram. */
-  def setDefaultColorScheme(xColorScheme: XColorScheme): Unit = js.native
+  def setDefaultColorScheme(xColorScheme: XColorScheme): Unit
   
   /**
     * sets new data to the diagram.
     * @param xDataSource This data source will be interpreted in a chart-type specific way and the {@link DataSeries} found in `xDiagram` will be adapted to t
     * @param aArguments Arguments tells how to slice the given data.  For standard parameters that may be used, see the service {@link StandardDiagramCreation
     */
-  def setDiagramData(xDataSource: XDataSource, aArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def setDiagramData(xDataSource: XDataSource, aArguments: SeqEquiv[PropertyValue]): Unit
   
   /** sets a new legend. */
-  def setLegend(xLegend: XLegend): Unit = js.native
+  def setLegend(xLegend: XLegend): Unit
 }
 object XDiagram {
   

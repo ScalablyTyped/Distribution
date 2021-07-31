@@ -6,7 +6,6 @@ import typings.commonmark.commonmarkStrings.bullet
 import typings.commonmark.commonmarkStrings.ordered
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -191,25 +190,26 @@ object mod {
     def render(root: Node): String = js.native
   }
   
-  @js.native
-  trait HtmlRenderingOptions extends XmlRenderingOptions {
+  trait HtmlRenderingOptions
+    extends StObject
+       with XmlRenderingOptions {
     
     /**
       *  if true, raw HTML will not be passed through to HTML output (it will be replaced by comments), and potentially unsafe URLs in links and images
       *  (those beginning with javascript:, vbscript:, file:, and with a few exceptions data:) will be replaced with empty strings.
       */
-    var safe: js.UndefOr[Boolean] = js.native
+    var safe: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  if true, straight quotes will be made curly, -- will be changed to an en dash, --- will be changed to an em dash, and ... will be changed to ellipses.
       */
-    var smart: js.UndefOr[Boolean] = js.native
+    var smart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A raw string to be used for a softbreak.
       * For example, `{ softbreak: "<br/>" }` treats a softbreak as `<br/>`.
       */
-    var softbreak: js.UndefOr[String] = js.native
+    var softbreak: js.UndefOr[String] = js.undefined
   }
   object HtmlRenderingOptions {
     
@@ -242,16 +242,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ListData extends StObject {
     
-    var bulletChar: js.UndefOr[String] = js.native
+    var bulletChar: js.UndefOr[String] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var tight: js.UndefOr[Boolean] = js.native
+    var tight: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ListData {
     
@@ -391,18 +390,17 @@ object mod {
     def resumeAt(node: Node, entering: Boolean): Unit = js.native
   }
   
-  @js.native
   trait NodeWalkingStep extends StObject {
     
     /**
       * a boolean, which is true when we enter a Node from a parent or sibling, and false when we reenter it from a child
       */
-    var entering: Boolean = js.native
+    var entering: Boolean
     
     /**
       * The node belonging to this step
       */
-    var node: Node = js.native
+    var node: Node
   }
   object NodeWalkingStep {
     
@@ -423,15 +421,14 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
     /**
       *  if true, straight quotes will be made curly, -- will be changed to an en dash, --- will be changed to an em dash, and ... will be changed to ellipses.
       */
-    var smart: js.UndefOr[Boolean] = js.native
+    var smart: js.UndefOr[Boolean] = js.undefined
     
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -460,12 +457,11 @@ object mod {
   
   type Position = js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]
   
-  @js.native
   trait XmlRenderingOptions extends StObject {
     
-    var sourcepos: js.UndefOr[Boolean] = js.native
+    var sourcepos: js.UndefOr[Boolean] = js.undefined
     
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
   }
   object XmlRenderingOptions {
     

@@ -3,32 +3,34 @@ package typings.reactMdAppBar
 import typings.reactMdAppBar.useInheritContextMod.AppBarColorInherit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useActionClassNameMod {
   
-  @JSImport("@react-md/app-bar/types/useActionClassName", "useActionClassName")
+  @JSImport("@react-md/app-bar/types/useActionClassName", JSImport.Namespace)
   @js.native
-  def useActionClassName(): String = js.native
-  @JSImport("@react-md/app-bar/types/useActionClassName", "useActionClassName")
-  @js.native
-  def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AppBarActionClassNameProps extends AppBarColorInherit {
+  @scala.inline
+  def useActionClassName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")().asInstanceOf[String]
+  @scala.inline
+  def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(hasFirstLastInheritColorClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  trait AppBarActionClassNameProps
+    extends StObject
+       with AppBarColorInherit {
     
     /**
       * An optional className to merge with the nav classes.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if this is the first action within the app bar. This is really just
       * used to automatically right-align all the actions by applying `margin-left:
       * auto` to this action.
       */
-    var first: js.UndefOr[Boolean] = js.native
+    var first: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if this is the last action within the app bar's row. This will just
@@ -36,7 +38,7 @@ object useActionClassNameMod {
       *
       * NOTE: This should not be used when using an overflow menu.
       */
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
   }
   object AppBarActionClassNameProps {
     

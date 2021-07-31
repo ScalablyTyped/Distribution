@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleEventBroadcaster
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleEventListener extends XEventListener {
+trait XAccessibleEventListener
+  extends StObject
+     with XEventListener {
   
   /** is called whenever a accessible event (see {@link AccessibleEventObject} ) occurs. */
-  def notifyEvent(aEvent: AccessibleEventObject): Unit = js.native
+  def notifyEvent(aEvent: AccessibleEventObject): Unit
 }
 object XAccessibleEventListener {
   

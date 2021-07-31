@@ -2,30 +2,28 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A worker_message response allows the server to pass information to the
   * sender.
   */
-@js.native
 trait SchemaWorkerMessageResponse extends StObject {
   
   /**
     * The service&#39;s response to a worker&#39;s health report.
     */
-  var workerHealthReportResponse: js.UndefOr[SchemaWorkerHealthReportResponse] = js.native
+  var workerHealthReportResponse: js.UndefOr[SchemaWorkerHealthReportResponse] = js.undefined
   
   /**
     * Service&#39;s response to reporting worker metrics (currently empty).
     */
-  var workerMetricsResponse: js.UndefOr[SchemaResourceUtilizationReportResponse] = js.native
+  var workerMetricsResponse: js.UndefOr[SchemaResourceUtilizationReportResponse] = js.undefined
   
   /**
     * Service&#39;s response to shutdown notice (currently empty).
     */
-  var workerShutdownNoticeResponse: js.UndefOr[SchemaWorkerShutdownNoticeResponse] = js.native
+  var workerShutdownNoticeResponse: js.UndefOr[SchemaWorkerShutdownNoticeResponse] = js.undefined
 }
 object SchemaWorkerMessageResponse {
   

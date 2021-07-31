@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DocumentCounts. */
-@js.native
 trait DocumentCounts extends StObject {
   
   /** The total number of available documents in the collection. */
-  var available: js.UndefOr[Double] = js.native
+  var available: js.UndefOr[Double] = js.undefined
   
   /** The number of documents in the collection that failed to be ingested. */
-  var failed: js.UndefOr[Double] = js.native
+  var failed: js.UndefOr[Double] = js.undefined
   
   /** The number of documents that have been uploaded to the collection, but have not yet started processing. */
-  var pending: js.UndefOr[Double] = js.native
+  var pending: js.UndefOr[Double] = js.undefined
   
   /** The number of documents in the collection that are currently being processed. */
-  var processing: js.UndefOr[Double] = js.native
+  var processing: js.UndefOr[Double] = js.undefined
 }
 object DocumentCounts {
   

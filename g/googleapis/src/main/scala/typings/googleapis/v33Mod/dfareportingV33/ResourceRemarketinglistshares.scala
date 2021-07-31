@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Remarketinglistshares")
@@ -31,7 +30,7 @@ class ResourceRemarketinglistshares protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(params: ParamsResourceRemarketinglistsharesGet): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(
     params: ParamsResourceRemarketinglistsharesGet,
@@ -66,7 +65,7 @@ class ResourceRemarketinglistshares protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(params: ParamsResourceRemarketinglistsharesPatch): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(
     params: ParamsResourceRemarketinglistsharesPatch,
@@ -99,7 +98,7 @@ class ResourceRemarketinglistshares protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(params: ParamsResourceRemarketinglistsharesUpdate): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(
     params: ParamsResourceRemarketinglistsharesUpdate,

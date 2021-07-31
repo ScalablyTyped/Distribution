@@ -12,23 +12,21 @@ import typings.uikit.uikitStrings.success
 import typings.uikit.uikitStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitNotificationOptions extends StObject {
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   var pos: js.UndefOr[
     `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`
-  ] = js.native
+  ] = js.undefined
   
-  var status: js.UndefOr[primary | success | warning | danger] = js.native
+  var status: js.UndefOr[primary | success | warning | danger] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object UIkitNotificationOptions {
   

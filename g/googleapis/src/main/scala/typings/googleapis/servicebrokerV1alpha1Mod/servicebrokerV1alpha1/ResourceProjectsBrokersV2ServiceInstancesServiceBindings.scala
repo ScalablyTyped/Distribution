@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$Projects$Brokers$V2$Service_instances$Service_bindings")
@@ -36,7 +35,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     */
   def create(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse] = js.native
   def create(params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse] = js.native
   def create(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate,
@@ -79,7 +78,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     */
   def delete(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse] = js.native
   def delete(params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsDelete): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse] = js.native
   def delete(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsDelete,
@@ -119,7 +118,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     */
   def get(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] = js.native
   def get(params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGet): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] = js.native
   def get(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGet,
@@ -158,7 +157,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     */
   def getLast_operation(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1Operation]): Unit = js.native
-  def getLast_operation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
+  def getLast_operation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation,

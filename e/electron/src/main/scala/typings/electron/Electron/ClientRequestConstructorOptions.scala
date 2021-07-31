@@ -2,50 +2,48 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientRequestConstructorOptions extends StObject {
   
   /**
     * The server host provided as a concatenation of the hostname and the port number
     * 'hostname:port'.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The server host name.
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request method. Defaults to the GET method.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the `partition` with which the request is associated. Defaults to
     * the empty string. The `session` option prevails on `partition`. Thus if a
     * `session` is explicitly specified, `partition` is ignored.
     */
-  var partition: js.UndefOr[String] = js.native
+  var partition: js.UndefOr[String] = js.undefined
   
   /**
     * The path part of the request URL.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The server's listening port number.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * The protocol scheme in the form 'scheme:'. Currently supported values are
     * 'http:' or 'https:'. Defaults to 'http:'.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The redirect mode for this request. Should be one of `follow`, `error` or
@@ -53,25 +51,25 @@ trait ClientRequestConstructorOptions extends StObject {
     * aborted. When mode is `manual` the redirection will be cancelled unless
     * `request.followRedirect` is invoked synchronously during the `redirect` event.
     */
-  var redirect: js.UndefOr[String] = js.native
+  var redirect: js.UndefOr[String] = js.undefined
   
   /**
     * The `Session` instance with which the request is associated.
     */
-  var session: js.UndefOr[Session_] = js.native
+  var session: js.UndefOr[Session_] = js.undefined
   
   /**
     * The request URL. Must be provided in the absolute form with the protocol scheme
     * specified as http or https.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to send cookies with this request from the provided session.  This will
     * make the `net` request's cookie behavior match a `fetch` request. Default is
     * `false`.
     */
-  var useSessionCookies: js.UndefOr[Boolean] = js.native
+  var useSessionCookies: js.UndefOr[Boolean] = js.undefined
 }
 object ClientRequestConstructorOptions {
   

@@ -6,16 +6,16 @@ import typings.activexLibreoffice.com_.sun.star.sheet.FormulaToken
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Interface specific to spreadsheet data provider backend. */
-@js.native
-trait XSheetDataProvider extends XInterface {
+trait XSheetDataProvider
+  extends StObject
+     with XInterface {
   
-  def createDataSequenceByFormulaTokens(aTokens: SeqEquiv[FormulaToken]): XDataSequence = js.native
+  def createDataSequenceByFormulaTokens(aTokens: SeqEquiv[FormulaToken]): XDataSequence
   
-  def createDataSequenceByFormulaTokensPossible(aTokens: SeqEquiv[FormulaToken]): Boolean = js.native
+  def createDataSequenceByFormulaTokensPossible(aTokens: SeqEquiv[FormulaToken]): Boolean
 }
 object XSheetDataProvider {
   

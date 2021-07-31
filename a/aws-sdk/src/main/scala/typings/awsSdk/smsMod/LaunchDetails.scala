@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchDetails extends StObject {
   
   /**
     * The latest time that this application was launched successfully.
     */
-  var latestLaunchTime: js.UndefOr[Timestamp] = js.native
+  var latestLaunchTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the latest stack launched for this application.
     */
-  var stackId: js.UndefOr[StackId] = js.native
+  var stackId: js.UndefOr[StackId] = js.undefined
   
   /**
     * The name of the latest stack launched for this application.
     */
-  var stackName: js.UndefOr[StackName] = js.native
+  var stackName: js.UndefOr[StackName] = js.undefined
 }
 object LaunchDetails {
   

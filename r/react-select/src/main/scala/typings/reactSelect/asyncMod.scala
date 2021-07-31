@@ -8,10 +8,13 @@ import typings.reactSelect.srcAsyncMod.Props
 import typings.reactSelect.typesMod.OptionTypeBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
+  
+  @JSImport("react-select/async", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/async", JSImport.Default)
   @js.native
@@ -67,7 +70,6 @@ object asyncMod {
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @JSImport("react-select/async", "makeAsyncSelect")
-  @js.native
-  def makeAsyncSelect[T /* <: ComponentType[_] */](SelectComponent: T): ComponentClass[AsyncComponentProps[T], ComponentState] = js.native
+  @scala.inline
+  def makeAsyncSelect[T /* <: ComponentType[js.Any] */](SelectComponent: T): ComponentClass[AsyncComponentProps[T], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAsyncSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AsyncComponentProps[T], ComponentState]]
 }

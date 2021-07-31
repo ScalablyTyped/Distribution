@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QualifiedName extends AST {
+trait QualifiedName
+  extends StObject
+     with AST {
   
-  var left: AST = js.native
+  var left: AST
   
-  var right: Identifier = js.native
+  var right: Identifier
   
-  def structuralEquals(ast: QualifiedName, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: QualifiedName, includingPosition: Boolean): Boolean
 }
 object QualifiedName {
   

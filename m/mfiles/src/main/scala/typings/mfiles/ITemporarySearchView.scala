@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITemporarySearchView extends StObject {
   
-  val BaseSearchConditions: ISearchConditions = js.native
+  val BaseSearchConditions: ISearchConditions
   
-  var SearchCriteria: ISearchCriteria = js.native
+  var SearchCriteria: ISearchCriteria
   
-  val View: IView = js.native
+  val View: IView
 }
 object ITemporarySearchView {
   

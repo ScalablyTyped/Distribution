@@ -3,15 +3,19 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inlineLoadingMod {
   
   @JSImport("carbon-components/components/inline-loading/inline-loading", JSImport.Default)
   @js.native
-  class default protected () extends InlineLoading {
+  class default protected ()
+    extends StObject
+       with InlineLoading {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def setState(state: js.Any): this.type = js.native
   }
   object default {
     
@@ -60,10 +64,9 @@ object inlineLoadingMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait InlineLoading extends StObject {
+  - Dropped any */ trait InlineLoading extends StObject {
     
-    def setState(state: js.Any): this.type = js.native
+    def setState(state: js.Any): this.type
   }
   object InlineLoading {
     

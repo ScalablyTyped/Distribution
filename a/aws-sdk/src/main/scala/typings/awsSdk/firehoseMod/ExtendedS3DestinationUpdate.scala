@@ -2,71 +2,69 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendedS3DestinationUpdate extends StObject {
   
   /**
     * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var BucketARN: js.UndefOr[typings.awsSdk.firehoseMod.BucketARN] = js.native
+  var BucketARN: js.UndefOr[typings.awsSdk.firehoseMod.BucketARN] = js.undefined
   
   /**
     * The buffering option.
     */
-  var BufferingHints: js.UndefOr[typings.awsSdk.firehoseMod.BufferingHints] = js.native
+  var BufferingHints: js.UndefOr[typings.awsSdk.firehoseMod.BufferingHints] = js.undefined
   
   /**
     * The Amazon CloudWatch logging options for your delivery stream.
     */
-  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.native
+  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.undefined
   
   /**
     * The compression format. If no value is specified, the default is UNCOMPRESSED. 
     */
-  var CompressionFormat: js.UndefOr[typings.awsSdk.firehoseMod.CompressionFormat] = js.native
+  var CompressionFormat: js.UndefOr[typings.awsSdk.firehoseMod.CompressionFormat] = js.undefined
   
   /**
     * The serializer, deserializer, and schema for converting data from the JSON format to the Parquet or ORC format before writing it to Amazon S3.
     */
-  var DataFormatConversionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.DataFormatConversionConfiguration] = js.native
+  var DataFormatConversionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.DataFormatConversionConfiguration] = js.undefined
   
   /**
     * The encryption configuration. If no value is specified, the default is no encryption.
     */
-  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.EncryptionConfiguration] = js.native
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.EncryptionConfiguration] = js.undefined
   
   /**
     * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.
     */
-  var ErrorOutputPrefix: js.UndefOr[typings.awsSdk.firehoseMod.ErrorOutputPrefix] = js.native
+  var ErrorOutputPrefix: js.UndefOr[typings.awsSdk.firehoseMod.ErrorOutputPrefix] = js.undefined
   
   /**
     * The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered Amazon S3 files. You can also specify a custom prefix, as described in Custom Prefixes for Amazon S3 Objects.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.firehoseMod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.firehoseMod.Prefix] = js.undefined
   
   /**
     * The data processing configuration.
     */
-  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.native
+  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.undefined
   
   /**
     * You can update a delivery stream to enable Amazon S3 backup if it is disabled. If backup is enabled, you can't update the delivery stream to disable it. 
     */
-  var S3BackupMode: js.UndefOr[typings.awsSdk.firehoseMod.S3BackupMode] = js.native
+  var S3BackupMode: js.UndefOr[typings.awsSdk.firehoseMod.S3BackupMode] = js.undefined
   
   /**
     * The Amazon S3 destination for backup.
     */
-  var S3BackupUpdate: js.UndefOr[S3DestinationUpdate] = js.native
+  var S3BackupUpdate: js.UndefOr[S3DestinationUpdate] = js.undefined
 }
 object ExtendedS3DestinationUpdate {
   

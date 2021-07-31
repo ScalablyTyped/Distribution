@@ -2,19 +2,17 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationData extends StObject {
   
-  var billingToken: js.UndefOr[String] = js.native
+  var billingToken: js.UndefOr[String] = js.undefined
   
-  var payerId: String = js.native
+  var payerId: String
   
-  var paymentId: js.UndefOr[String] = js.native
+  var paymentId: js.UndefOr[String] = js.undefined
   
-  var vault: js.UndefOr[Boolean] = js.native
+  var vault: js.UndefOr[Boolean] = js.undefined
 }
 object AuthorizationData {
   

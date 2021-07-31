@@ -2,13 +2,11 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for sonifying a point.
   */
-@js.native
 trait PointSonifyOptionsObject extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait PointSonifyOptionsObject extends StObject {
     * point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[js.Object] = js.native
+  var dataExtremes: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The instrument definitions for this point.
     */
-  var instruments: js.Array[PointInstrumentObject] = js.native
+  var instruments: js.Array[PointInstrumentObject]
   
   /**
     * Callback called when the sonification has finished.
     */
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
 }
 object PointSonifyOptionsObject {
   

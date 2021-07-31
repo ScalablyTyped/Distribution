@@ -2,17 +2,15 @@ package typings.cqrsDomain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleMetaInfos extends StObject {
   
-  var aggregate: String = js.native
+  var aggregate: String
   
-  var aggregateId: String = js.native
+  var aggregateId: String
   
-  var context: String = js.native
+  var context: String
 }
 object HandleMetaInfos {
   

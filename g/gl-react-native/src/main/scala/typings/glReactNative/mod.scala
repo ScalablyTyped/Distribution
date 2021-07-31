@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,13 +22,13 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.glReactNative.glviewnativeMod.GLViewNativeProps because var conflicts: children, style. Inlined onContextCreate, onContextFailure */ @js.native
-  trait SurfaceProps
-    extends typings.glReact.mod.SurfaceProps {
+  - typings.glReactNative.glviewnativeMod.GLViewNativeProps because var conflicts: children, style. Inlined onContextCreate, onContextFailure */ trait SurfaceProps
+    extends StObject
+       with typings.glReact.mod.SurfaceProps {
     
-    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.native
+    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
   }
   object SurfaceProps {
     

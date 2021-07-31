@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.LineSymbolMarkerConstructor
 import typings.arcgisJsApi.esri.LineSymbolMarkerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineSymbolMarkerMod extends Shortcut {
   
   @JSImport("esri/symbols/LineSymbolMarker", JSImport.Namespace)
   @js.native
-  val ^ : LineSymbolMarkerConstructor = js.native
+  val ^ : js.Object & LineSymbolMarkerConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/LineSymbolMarker", JSImport.Namespace)
@@ -23,12 +22,14 @@ object lineSymbolMarkerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html)
     */
-  class Class () extends LineSymbolMarker {
+  class Class ()
+    extends StObject
+       with LineSymbolMarker {
     def this(properties: LineSymbolMarkerProperties) = this()
   }
   
-  type _To = LineSymbolMarkerConstructor
+  type _To = js.Object & LineSymbolMarkerConstructor
   
   /* This means you don't have to write `^`, but can instead just say `lineSymbolMarkerMod.foo` */
-  override def _to: LineSymbolMarkerConstructor = ^
+  override def _to: js.Object & LineSymbolMarkerConstructor = ^
 }

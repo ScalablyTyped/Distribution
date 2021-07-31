@@ -3,22 +3,24 @@ package typings.appBuilderLib
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrityMod {
   
-  @JSImport("app-builder-lib/out/asar/integrity", "computeData")
+  @JSImport("app-builder-lib/out/asar/integrity", JSImport.Namespace)
   @js.native
-  def computeData(resourcesPath: String): js.Promise[AsarIntegrity] = js.native
-  @JSImport("app-builder-lib/out/asar/integrity", "computeData")
-  @js.native
-  def computeData(resourcesPath: String, options: AsarIntegrityOptions): js.Promise[AsarIntegrity] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AsarIntegrity extends AsarIntegrityOptions {
+  @scala.inline
+  def computeData(resourcesPath: String): js.Promise[AsarIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AsarIntegrity]]
+  @scala.inline
+  def computeData(resourcesPath: String, options: AsarIntegrityOptions): js.Promise[AsarIntegrity] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AsarIntegrity]]
+  
+  trait AsarIntegrity
+    extends StObject
+       with AsarIntegrityOptions {
     
-    var checksums: StringDictionary[String] = js.native
+    var checksums: StringDictionary[String]
   }
   object AsarIntegrity {
     
@@ -36,7 +38,6 @@ object integrityMod {
     }
   }
   
-  @js.native
   trait AsarIntegrityOptions extends StObject {
     
     /**
@@ -44,7 +45,7 @@ object integrityMod {
       *
       * @default false
       */
-    val externalAllowed: js.UndefOr[Boolean] = js.native
+    val externalAllowed: js.UndefOr[Boolean] = js.undefined
   }
   object AsarIntegrityOptions {
     

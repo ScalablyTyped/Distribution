@@ -4,15 +4,17 @@ import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileChecksumMod {
   
   object FileChecksum {
     
-    @JSImport("@rails/activestorage/src/file_checksum", "FileChecksum.create")
+    @JSImport("@rails/activestorage/src/file_checksum", "FileChecksum")
     @js.native
-    def create(file: File, callback: js.Function2[/* error */ Error, /* checksum */ String, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(file: File, callback: js.Function2[/* error */ Error, /* checksum */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

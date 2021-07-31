@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentFile extends StObject {
   
   /**
     * The file type to use. The only supported value is s3.
     */
-  var `type`: EnvironmentFileType = js.native
+  var `type`: EnvironmentFileType
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.
     */
-  var value: String = js.native
+  var value: String
 }
 object EnvironmentFile {
   

@@ -2,15 +2,13 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRange extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var pos: Double = js.native
+  var pos: Double
 }
 object TextRange {
   

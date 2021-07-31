@@ -3,20 +3,18 @@ package typings.reactCalendar
 import typings.reactCalendar.mod.Detail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined react-calendar.react-calendar.CalendarTileProperties & {  activeStartDate :std.Date} */
-  @js.native
   trait CalendarTilePropertiesact extends StObject {
     
-    var activeStartDate: typings.std.Date = js.native
+    var activeStartDate: typings.std.Date
     
-    var date: typings.std.Date = js.native
+    var date: typings.std.Date
     
-    var view: Detail = js.native
+    var view: Detail
   }
   object CalendarTilePropertiesact {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var date: typings.std.Date = js.native
+    var date: typings.std.Date
     
-    var label: String = js.native
+    var label: String
     
-    var view: Detail = js.native
+    var view: Detail
   }
   object Date {
     

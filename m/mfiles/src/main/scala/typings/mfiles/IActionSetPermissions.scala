@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionSetPermissions extends StObject {
   
-  def Clone(): IActionSetPermissions = js.native
+  def Clone(): IActionSetPermissions
   
-  var DiscardsAutomaticPermissions: Boolean = js.native
+  var DiscardsAutomaticPermissions: Boolean
   
-  var Permissions: IAccessControlList = js.native
+  var Permissions: IAccessControlList
 }
 object IActionSetPermissions {
   

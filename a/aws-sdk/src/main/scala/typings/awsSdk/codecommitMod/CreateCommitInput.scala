@@ -2,61 +2,59 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCommitInput extends StObject {
   
   /**
     * The name of the author who created the commit. This information is used as both the author and committer for the commit.
     */
-  var authorName: js.UndefOr[Name] = js.native
+  var authorName: js.UndefOr[Name] = js.undefined
   
   /**
     * The name of the branch where you create the commit.
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     * The commit message you want to include in the commit. Commit messages are limited to 256 KB. If no message is specified, a default message is used.
     */
-  var commitMessage: js.UndefOr[Message] = js.native
+  var commitMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The files to delete in this commit. These files still exist in earlier commits.
     */
-  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.native
+  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.undefined
   
   /**
     * The email address of the person who created the commit.
     */
-  var email: js.UndefOr[Email] = js.native
+  var email: js.UndefOr[Email] = js.undefined
   
   /**
     * If the commit contains deletions, whether to keep a folder or folder structure if the changes leave the folders empty. If true, a ..gitkeep file is created for empty folders. The default is false.
     */
-  var keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.native
+  var keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined
   
   /**
     * The ID of the commit that is the parent of the commit you create. Not required if this is an empty repository.
     */
-  var parentCommitId: js.UndefOr[CommitId] = js.native
+  var parentCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The files to add or update in this commit.
     */
-  var putFiles: js.UndefOr[PutFileEntries] = js.native
+  var putFiles: js.UndefOr[PutFileEntries] = js.undefined
   
   /**
     * The name of the repository where you create the commit.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The file modes to update for files in this commit.
     */
-  var setFileModes: js.UndefOr[SetFileModeEntries] = js.native
+  var setFileModes: js.UndefOr[SetFileModeEntries] = js.undefined
 }
 object CreateCommitInput {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see PropertySetInfoChangeEvent
   * @see XPropertySetInfoChangeNotifier
   */
-@js.native
-trait XPropertySetInfoChangeListener extends XEventListener {
+trait XPropertySetInfoChangeListener
+  extends StObject
+     with XEventListener {
   
   /** is called whenever changes of a {@link XPropertySetInfo} shall be propagated. */
-  def propertySetInfoChange(evt: PropertySetInfoChangeEvent): Unit = js.native
+  def propertySetInfoChange(evt: PropertySetInfoChangeEvent): Unit
 }
 object XPropertySetInfoChangeListener {
   

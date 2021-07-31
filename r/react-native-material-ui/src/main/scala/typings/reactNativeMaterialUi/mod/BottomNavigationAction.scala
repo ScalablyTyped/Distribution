@@ -4,27 +4,25 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.Active
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomNavigationAction extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: Element | String = js.native
+  var icon: Element | String
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var style: js.UndefOr[Active] = js.native
+  var style: js.UndefOr[Active] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object BottomNavigationAction {
   

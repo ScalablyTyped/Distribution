@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerMessagesViews extends StObject {
   
-  var dateCreatedField: js.UndefOr[String] = js.native
+  var dateCreatedField: js.UndefOr[String] = js.undefined
   
-  var dateModifiedField: js.UndefOr[String] = js.native
+  var dateModifiedField: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[String] = js.native
+  var items: js.UndefOr[String] = js.undefined
   
-  var nameField: js.UndefOr[String] = js.native
+  var nameField: js.UndefOr[String] = js.undefined
   
-  var sizeField: js.UndefOr[String] = js.native
+  var sizeField: js.UndefOr[String] = js.undefined
   
-  var typeField: js.UndefOr[String] = js.native
+  var typeField: js.UndefOr[String] = js.undefined
 }
 object FileManagerMessagesViews {
   

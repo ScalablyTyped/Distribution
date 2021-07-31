@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandlestickChartSpec extends StObject {
   
   /** The Candlestick chart data. Only one CandlestickData is supported. */
-  var data: js.UndefOr[js.Array[CandlestickData]] = js.native
+  var data: js.UndefOr[js.Array[CandlestickData]] = js.undefined
   
   /** The domain data (horizontal axis) for the candlestick chart. String data will be treated as discrete labels, other data will be treated as continuous values. */
-  var domain: js.UndefOr[CandlestickDomain] = js.native
+  var domain: js.UndefOr[CandlestickDomain] = js.undefined
 }
 object CandlestickChartSpec {
   

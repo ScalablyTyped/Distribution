@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, 'regExp'> */
-@js.native
 trait PickImplregExp extends StObject {
   
-  var regExp: String = js.native
+  var regExp: String
 }
 object PickImplregExp {
   

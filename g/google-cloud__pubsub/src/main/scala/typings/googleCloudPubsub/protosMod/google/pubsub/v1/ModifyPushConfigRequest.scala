@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ModifyPushConfigRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ModifyPushConfigRequest.
   * @param [properties] Properties to set
   */
-class ModifyPushConfigRequest () extends IModifyPushConfigRequest {
+class ModifyPushConfigRequest ()
+  extends StObject
+     with IModifyPushConfigRequest {
   def this(properties: IModifyPushConfigRequest) = this()
   
   /** ModifyPushConfigRequest subscription. */
@@ -32,18 +33,20 @@ class ModifyPushConfigRequest () extends IModifyPushConfigRequest {
 }
 object ModifyPushConfigRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ModifyPushConfigRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ModifyPushConfigRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.create")
-  @js.native
-  def create(): ModifyPushConfigRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.create")
-  @js.native
-  def create(properties: IModifyPushConfigRequest): ModifyPushConfigRequest = js.native
+  @scala.inline
+  def create(): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ModifyPushConfigRequest]
+  @scala.inline
+  def create(properties: IModifyPushConfigRequest): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Decodes a ModifyPushConfigRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object ModifyPushConfigRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decode")
-  @js.native
-  def decode(reader: Reader): ModifyPushConfigRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ModifyPushConfigRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ModifyPushConfigRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ModifyPushConfigRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Decodes a ModifyPushConfigRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object ModifyPushConfigRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ModifyPushConfigRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ModifyPushConfigRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Encodes the specified ModifyPushConfigRequest message. Does not implicitly {@link google.pubsub.v1.ModifyPushConfigRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object ModifyPushConfigRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.encode")
-  @js.native
-  def encode(message: IModifyPushConfigRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.encode")
-  @js.native
-  def encode(message: IModifyPushConfigRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ModifyPushConfigRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ModifyPushConfigRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object ModifyPushConfigRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IModifyPushConfigRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IModifyPushConfigRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ModifyPushConfigRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object ModifyPushConfigRequest {
     * @returns ModifyPushConfigRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ModifyPushConfigRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Creates a plain object from a ModifyPushConfigRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object ModifyPushConfigRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.toObject")
-  @js.native
-  def toObject(message: ModifyPushConfigRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.toObject")
-  @js.native
-  def toObject(message: ModifyPushConfigRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ModifyPushConfigRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ModifyPushConfigRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ModifyPushConfigRequest message.
@@ -140,7 +130,6 @@ object ModifyPushConfigRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyPushConfigRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

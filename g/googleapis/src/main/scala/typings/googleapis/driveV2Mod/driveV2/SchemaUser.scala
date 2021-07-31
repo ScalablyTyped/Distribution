@@ -3,45 +3,43 @@ package typings.googleapis.driveV2Mod.driveV2
 import typings.googleapis.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a Drive user.
   */
-@js.native
 trait SchemaUser extends StObject {
   
   /**
     * A plain text displayable name for this user.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this user is the same as the authenticated user for whom the
     * request was made.
     */
-  var isAuthenticatedUser: js.UndefOr[Boolean] = js.native
+  var isAuthenticatedUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always drive#user.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s ID as visible in the permissions collection.
     */
-  var permissionId: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s profile picture.
     */
-  var picture: js.UndefOr[Url] = js.native
+  var picture: js.UndefOr[Url] = js.undefined
 }
 object SchemaUser {
   

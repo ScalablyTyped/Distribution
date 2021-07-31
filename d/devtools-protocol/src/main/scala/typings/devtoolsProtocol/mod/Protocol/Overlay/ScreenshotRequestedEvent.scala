@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.Page.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenshotRequestedEvent extends StObject {
   
   /**
     * Viewport to capture, in device independent pixels (dip).
     */
-  var viewport: Viewport = js.native
+  var viewport: Viewport
 }
 object ScreenshotRequestedEvent {
   

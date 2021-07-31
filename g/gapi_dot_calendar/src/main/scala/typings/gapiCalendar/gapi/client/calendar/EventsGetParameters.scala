@@ -2,21 +2,19 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsGetParameters extends StObject {
   
-  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.native
+  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined
   
-  var calendarId: String = js.native
+  var calendarId: String
   
-  var eventId: String = js.native
+  var eventId: String
   
-  var maxAttendees: js.UndefOr[integer] = js.native
+  var maxAttendees: js.UndefOr[integer] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object EventsGetParameters {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskInfo extends StObject {
   
   /**
     * The number of disks with this configuration.
     */
-  var Count: js.UndefOr[DiskCount] = js.native
+  var Count: js.UndefOr[DiskCount] = js.undefined
   
   /**
     * The size of the disk in GB.
     */
-  var SizeInGB: js.UndefOr[DiskSize] = js.native
+  var SizeInGB: js.UndefOr[DiskSize] = js.undefined
   
   /**
     * The type of disk.
     */
-  var Type: js.UndefOr[DiskType] = js.native
+  var Type: js.UndefOr[DiskType] = js.undefined
 }
 object DiskInfo {
   

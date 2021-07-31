@@ -7,17 +7,18 @@ import typings.cssWhat.cssWhatStrings.tag
 import typings.cssWhat.cssWhatStrings.universal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("css-what/lib/parse", JSImport.Default)
+  @JSImport("css-what/lib/parse", JSImport.Namespace)
   @js.native
-  def default(selector: String): js.Array[js.Array[Selector]] = js.native
-  @JSImport("css-what/lib/parse", JSImport.Default)
-  @js.native
-  def default(selector: String, options: Options): js.Array[js.Array[Selector]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(selector: String): js.Array[js.Array[Selector]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Selector]]]
+  @scala.inline
+  def default(selector: String, options: Options): js.Array[js.Array[Selector]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Selector]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.cssWhat.cssWhatStrings.any
@@ -57,25 +58,26 @@ object parseMod {
     def start: typings.cssWhat.cssWhatStrings.start = "start".asInstanceOf[typings.cssWhat.cssWhatStrings.start]
   }
   
-  @js.native
-  trait AttributeSelector extends Selector {
+  trait AttributeSelector
+    extends StObject
+       with Selector {
     
-    var action: AttributeAction = js.native
+    var action: AttributeAction
     
-    var ignoreCase: Boolean = js.native
+    var ignoreCase: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: attribute = js.native
+    var `type`: attribute
     
-    var value: String = js.native
+    var value: String
   }
   object AttributeSelector {
     
     @scala.inline
-    def apply(action: AttributeAction, ignoreCase: Boolean, name: String, `type`: attribute, value: String): AttributeSelector = {
+    def apply(action: AttributeAction, ignoreCase: Boolean, name: String, value: String): AttributeSelector = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attribute")
       __obj.asInstanceOf[AttributeSelector]
     }
     
@@ -101,14 +103,13 @@ object parseMod {
   
   type DataType = js.Array[js.Array[Selector]] | Null | String
   
-  @js.native
   trait Options extends StObject {
     
-    var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.native
+    var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTags: js.UndefOr[Boolean] = js.native
+    var lowerCaseTags: js.UndefOr[Boolean] = js.undefined
     
-    var xmlMode: js.UndefOr[Boolean] = js.native
+    var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -141,19 +142,20 @@ object parseMod {
     }
   }
   
-  @js.native
-  trait PseudoElement extends Selector {
+  trait PseudoElement
+    extends StObject
+       with Selector {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: `pseudo-element` = js.native
+    var `type`: `pseudo-element`
   }
   object PseudoElement {
     
     @scala.inline
-    def apply(name: String, `type`: `pseudo-element`): PseudoElement = {
+    def apply(name: String): PseudoElement = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("pseudo-element")
       __obj.asInstanceOf[PseudoElement]
     }
     
@@ -168,21 +170,22 @@ object parseMod {
     }
   }
   
-  @js.native
-  trait PseudoSelector extends Selector {
+  trait PseudoSelector
+    extends StObject
+       with Selector {
     
-    var data: DataType = js.native
+    var data: DataType
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: pseudo = js.native
+    var `type`: pseudo
   }
   object PseudoSelector {
     
     @scala.inline
-    def apply(name: String, `type`: pseudo): PseudoSelector = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(name: String): PseudoSelector = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], data = null)
+      __obj.updateDynamic("type")("pseudo")
       __obj.asInstanceOf[PseudoSelector]
     }
     
@@ -218,30 +221,30 @@ object parseMod {
   object Selector {
     
     @scala.inline
-    def AttributeSelector(action: AttributeAction, ignoreCase: Boolean, name: String, `type`: attribute, value: String): typings.cssWhat.parseMod.AttributeSelector = {
+    def AttributeSelector(action: AttributeAction, ignoreCase: Boolean, name: String, value: String): typings.cssWhat.parseMod.AttributeSelector = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attribute")
       __obj.asInstanceOf[typings.cssWhat.parseMod.AttributeSelector]
     }
     
     @scala.inline
-    def PseudoElement(name: String, `type`: `pseudo-element`): typings.cssWhat.parseMod.PseudoElement = {
+    def PseudoElement(name: String): typings.cssWhat.parseMod.PseudoElement = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("pseudo-element")
       __obj.asInstanceOf[typings.cssWhat.parseMod.PseudoElement]
     }
     
     @scala.inline
-    def PseudoSelector(name: String, `type`: pseudo): typings.cssWhat.parseMod.PseudoSelector = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def PseudoSelector(name: String): typings.cssWhat.parseMod.PseudoSelector = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], data = null)
+      __obj.updateDynamic("type")("pseudo")
       __obj.asInstanceOf[typings.cssWhat.parseMod.PseudoSelector]
     }
     
     @scala.inline
-    def TagSelector(name: String, `type`: tag): typings.cssWhat.parseMod.TagSelector = {
+    def TagSelector(name: String): typings.cssWhat.parseMod.TagSelector = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("tag")
       __obj.asInstanceOf[typings.cssWhat.parseMod.TagSelector]
     }
     
@@ -253,26 +256,27 @@ object parseMod {
     }
     
     @scala.inline
-    def UniversalSelector(`type`: universal): typings.cssWhat.parseMod.UniversalSelector = {
+    def UniversalSelector(): typings.cssWhat.parseMod.UniversalSelector = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("universal")
       __obj.asInstanceOf[typings.cssWhat.parseMod.UniversalSelector]
     }
   }
   
-  @js.native
-  trait TagSelector extends Selector {
+  trait TagSelector
+    extends StObject
+       with Selector {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: tag = js.native
+    var `type`: tag
   }
   object TagSelector {
     
     @scala.inline
-    def apply(name: String, `type`: tag): TagSelector = {
+    def apply(name: String): TagSelector = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("tag")
       __obj.asInstanceOf[TagSelector]
     }
     
@@ -287,10 +291,11 @@ object parseMod {
     }
   }
   
-  @js.native
-  trait Traversal extends Selector {
+  trait Traversal
+    extends StObject
+       with Selector {
     
-    var `type`: TraversalType = js.native
+    var `type`: TraversalType
   }
   object Traversal {
     
@@ -335,17 +340,18 @@ object parseMod {
     def sibling: typings.cssWhat.cssWhatStrings.sibling = "sibling".asInstanceOf[typings.cssWhat.cssWhatStrings.sibling]
   }
   
-  @js.native
-  trait UniversalSelector extends Selector {
+  trait UniversalSelector
+    extends StObject
+       with Selector {
     
-    var `type`: universal = js.native
+    var `type`: universal
   }
   object UniversalSelector {
     
     @scala.inline
-    def apply(`type`: universal): UniversalSelector = {
+    def apply(): UniversalSelector = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("universal")
       __obj.asInstanceOf[UniversalSelector]
     }
     

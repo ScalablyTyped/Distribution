@@ -5,7 +5,6 @@ import typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3.Options
 import typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3.Toolresults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

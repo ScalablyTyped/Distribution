@@ -4,109 +4,107 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("cron-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Wrapper for CronExpression.parse method */
-  @JSImport("cron-parser", "parseExpression")
-  @js.native
-  def parseExpression(expression: String): CronExpression = js.native
-  @JSImport("cron-parser", "parseExpression")
-  @js.native
-  def parseExpression(expression: String, options: ParserOptions): CronExpression = js.native
+  @scala.inline
+  def parseExpression(expression: String): CronExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[CronExpression]
+  @scala.inline
+  def parseExpression(expression: String, options: ParserOptions): CronExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CronExpression]
   
   /** Parse crontab file */
-  @JSImport("cron-parser", "parseFile")
-  @js.native
-  def parseFile(filePath: String, callback: js.Function2[/* err */ js.Any, /* data */ StringResult, _]): Unit = js.native
+  @scala.inline
+  def parseFile(filePath: String, callback: js.Function2[/* err */ js.Any, /* data */ StringResult, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Parse content string */
-  @JSImport("cron-parser", "parseString")
-  @js.native
-  def parseString(data: String): StringResult = js.native
+  @scala.inline
+  def parseString(data: String): StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[StringResult]
   
-  @js.native
   trait CronDate extends StObject {
     
-    def addDay(): Unit = js.native
+    def addDay(): Unit
     
-    def addHour(): Unit = js.native
+    def addHour(): Unit
     
-    def addMinute(): Unit = js.native
+    def addMinute(): Unit
     
-    def addMonth(): Unit = js.native
+    def addMonth(): Unit
     
-    def addSecond(): Unit = js.native
+    def addSecond(): Unit
     
-    def addYear(): Unit = js.native
+    def addYear(): Unit
     
-    def getDate(): Double = js.native
+    def getDate(): Double
     
-    def getDay(): Double = js.native
+    def getDay(): Double
     
-    def getFullYear(): Double = js.native
+    def getFullYear(): Double
     
-    def getHours(): Double = js.native
+    def getHours(): Double
     
-    def getMilliseconds(): Double = js.native
+    def getMilliseconds(): Double
     
-    def getMinutes(): Double = js.native
+    def getMinutes(): Double
     
-    def getMonth(): Double = js.native
+    def getMonth(): Double
     
-    def getSeconds(): Double = js.native
+    def getSeconds(): Double
     
-    def getTime(): Double = js.native
+    def getTime(): Double
     
-    def getUTCDate(): Double = js.native
+    def getUTCDate(): Double
     
-    def getUTCDay(): Double = js.native
+    def getUTCDay(): Double
     
-    def getUTCFullYear(): Double = js.native
+    def getUTCFullYear(): Double
     
-    def getUTCHours(): Double = js.native
+    def getUTCHours(): Double
     
-    def getUTCMinutes(): Double = js.native
+    def getUTCMinutes(): Double
     
-    def getUTCMonth(): Double = js.native
+    def getUTCMonth(): Double
     
-    def getUTCSeconds(): Double = js.native
+    def getUTCSeconds(): Double
     
-    def setDate(d: Double): Unit = js.native
+    def setDate(d: Double): Unit
     
-    def setDay(d: Double): Unit = js.native
+    def setDay(d: Double): Unit
     
-    def setFullYear(y: Double): Unit = js.native
+    def setFullYear(y: Double): Unit
     
-    def setHours(h: Double): Unit = js.native
+    def setHours(h: Double): Unit
     
-    def setMilliseconds(s: Double): Unit = js.native
+    def setMilliseconds(s: Double): Unit
     
-    def setMinutes(m: Double): Unit = js.native
+    def setMinutes(m: Double): Unit
     
-    def setMonth(m: Double): Unit = js.native
+    def setMonth(m: Double): Unit
     
-    def setSeconds(s: Double): Unit = js.native
+    def setSeconds(s: Double): Unit
     
-    def subtractDay(): Unit = js.native
+    def subtractDay(): Unit
     
-    def subtractHour(): Unit = js.native
+    def subtractHour(): Unit
     
-    def subtractMinute(): Unit = js.native
+    def subtractMinute(): Unit
     
-    def subtractMonth(): Unit = js.native
+    def subtractMonth(): Unit
     
-    def subtractSecond(): Unit = js.native
+    def subtractSecond(): Unit
     
-    def subtractYear(): Unit = js.native
+    def subtractYear(): Unit
     
-    def toDate(): Date = js.native
+    def toDate(): Date
     
-    def toISOString(): String = js.native
+    def toISOString(): String
     
-    def toJSON(): String = js.native
+    def toJSON(): String
   }
   object CronDate {
     
@@ -289,16 +287,16 @@ object mod {
     
     /** Iterate over expression iterator */
     def iterate(steps: Double): js.Array[CronDate] = js.native
-    def iterate(steps: Double, callback: js.Function2[/* item */ CronDate, /* i */ Double, _]): js.Array[CronDate] = js.native
+    def iterate(steps: Double, callback: js.Function2[/* item */ CronDate, /* i */ Double, js.Any]): js.Array[CronDate] = js.native
     
     /** Find next suitable date */
     def next(): CronDate = js.native
     
     /** Parse input expression (async) */
     def parse(expression: String): CronExpression = js.native
-    def parse(expression: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[_]): CronExpression = js.native
+    def parse(expression: String, options: Unit, callback: js.Function0[js.Any]): CronExpression = js.native
     def parse(expression: String, options: ParserOptions): CronExpression = js.native
-    def parse(expression: String, options: ParserOptions, callback: js.Function0[_]): CronExpression = js.native
+    def parse(expression: String, options: ParserOptions, callback: js.Function0[js.Any]): CronExpression = js.native
     
     /** Find previous suitable date */
     def prev(): CronDate = js.native
@@ -310,20 +308,19 @@ object mod {
     def reset(resetDate: Date): Unit = js.native
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var currentDate: js.UndefOr[String | Double | Date] = js.native
+    var currentDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var endDate: js.UndefOr[String | Double | Date] = js.native
+    var endDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var iterator: js.UndefOr[Boolean] = js.native
+    var iterator: js.UndefOr[Boolean] = js.undefined
     
-    var startDate: js.UndefOr[String | Double | Date] = js.native
+    var startDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var tz: js.UndefOr[String] = js.native
+    var tz: js.UndefOr[String] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -374,14 +371,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StringResult extends StObject {
     
-    var errors: StringDictionary[String] = js.native
+    var errors: StringDictionary[String]
     
-    var expressions: js.Array[CronExpression] = js.native
+    var expressions: js.Array[CronExpression]
     
-    var variables: StringDictionary[String] = js.native
+    var variables: StringDictionary[String]
   }
   object StringResult {
     

@@ -3,10 +3,8 @@ package typings.fineUploader.coreMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraButtonsOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ExtraButtonsOptions extends StObject {
     *
     * @default `undefined`
     */
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
   /**
     * This value will be used when creating the `title` attribute for the underlying `<input type="file">`.
@@ -23,21 +21,21 @@ trait ExtraButtonsOptions extends StObject {
     *
     * @default `'file input'`
     */
-  var fileInputTitle: js.UndefOr[String] = js.native
+  var fileInputTitle: js.UndefOr[String] = js.undefined
   
   /**
     * `true` to allow folders to be selected, `false` to allow files to be selected.
     *
     * @default `false`
     */
-  var folders: js.UndefOr[Boolean] = js.native
+  var folders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify to override the default `multiple` value
     *
     * @default `true`
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify to override the default `validation` option specified.
@@ -46,7 +44,7 @@ trait ExtraButtonsOptions extends StObject {
     *
     * @default `validation`
     */
-  var validation: js.UndefOr[js.Any] = js.native
+  var validation: js.UndefOr[js.Any] = js.undefined
 }
 object ExtraButtonsOptions {
   

@@ -3,15 +3,13 @@ package typings.ionic.definitionsMod
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegrationAddHandlers extends StObject {
   
-  var conflictHandler: js.UndefOr[js.Function2[/* f */ String, /* stats */ Stats, js.Promise[Boolean]]] = js.native
+  var conflictHandler: js.UndefOr[js.Function2[/* f */ String, /* stats */ Stats, js.Promise[Boolean]]] = js.undefined
   
-  var onFileCreate: js.UndefOr[js.Function1[/* f */ String, Unit]] = js.native
+  var onFileCreate: js.UndefOr[js.Function1[/* f */ String, Unit]] = js.undefined
 }
 object IntegrationAddHandlers {
   

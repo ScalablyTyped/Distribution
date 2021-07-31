@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclineInvitationsResponse extends StObject {
   
   /**
     * The list of AWS accounts that were not processed. For each account, the list includes the account ID and the email address.
     */
-  var UnprocessedAccounts: js.UndefOr[ResultList] = js.native
+  var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }
 object DeclineInvitationsResponse {
   

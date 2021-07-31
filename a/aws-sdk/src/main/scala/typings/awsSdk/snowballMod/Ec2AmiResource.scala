@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ec2AmiResource extends StObject {
   
   /**
     * The ID of the AMI in Amazon EC2.
     */
-  var AmiId: typings.awsSdk.snowballMod.AmiId = js.native
+  var AmiId: typings.awsSdk.snowballMod.AmiId
   
   /**
     * The ID of the AMI on the Snow device.
     */
-  var SnowballAmiId: js.UndefOr[String] = js.native
+  var SnowballAmiId: js.UndefOr[String] = js.undefined
 }
 object Ec2AmiResource {
   

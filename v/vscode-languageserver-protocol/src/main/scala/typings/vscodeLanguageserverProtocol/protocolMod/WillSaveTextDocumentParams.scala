@@ -3,21 +3,19 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WillSaveTextDocumentParams extends StObject {
   
   /**
     * The 'TextDocumentSaveReason'.
     */
-  var reason: TextDocumentSaveReason = js.native
+  var reason: TextDocumentSaveReason
   
   /**
     * The document that will be saved.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object WillSaveTextDocumentParams {
   

@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridColumnFixing
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,56 +16,56 @@ trait IgTreeGridColumnFixing
   /**
     * Event which is fired when column fixing operation is finished
     */
-  var columnFixed: js.UndefOr[ColumnFixedEvent] = js.native
+  var columnFixed: js.UndefOr[ColumnFixedEvent] = js.undefined
   
   /**
     * Event which is fired when column fixing operation is initiated.
     */
-  var columnFixing: js.UndefOr[ColumnFixingEvent] = js.native
+  var columnFixing: js.UndefOr[ColumnFixingEvent] = js.undefined
   
   /**
     * Event which is fired when column fixing operation has failed - e.g. sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width
     */
-  var columnFixingRefused: js.UndefOr[ColumnFixingRefusedEvent] = js.native
+  var columnFixingRefused: js.UndefOr[ColumnFixingRefusedEvent] = js.undefined
   
   /**
     * List of column settings that specifies custom column fixing options on a per column basis.
     *
     */
-  var columnSettings: js.UndefOr[js.Array[IgGridColumnFixingColumnSetting]] = js.native
+  var columnSettings: js.UndefOr[js.Array[IgGridColumnFixingColumnSetting]] = js.undefined
   
   /**
     * Event which is fired when column unfixing operation is done
     */
-  var columnUnfixed: js.UndefOr[ColumnUnfixedEvent] = js.native
+  var columnUnfixed: js.UndefOr[ColumnUnfixedEvent] = js.undefined
   
   /**
     * Event which is fired when column unfixing operation is initiated
     */
-  var columnUnfixing: js.UndefOr[ColumnUnfixingEvent] = js.native
+  var columnUnfixing: js.UndefOr[ColumnUnfixingEvent] = js.undefined
   
   /**
     * Event which is fired when column unfixing operation has failed - e.g.: there is only one fixed visible column(and tries to unfix it) and at least one fixed hidden column
     */
-  var columnUnfixingRefused: js.UndefOr[ColumnUnfixingRefusedEvent] = js.native
+  var columnUnfixingRefused: js.UndefOr[ColumnUnfixingRefusedEvent] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     *                 Text of the feature chooser button for unfixing a currently fixed column. Use option [locale.featureChooserTextFixedColumn](ui.iggridcolumnfixing#options:locale.featureChooserTextFixedColumn).
     */
-  var featureChooserTextFixedColumn: js.UndefOr[String] = js.native
+  var featureChooserTextFixedColumn: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     *                 Text of the feature chooser button for unfixing a currently fixed column. Use option [locale.featureChooserTextUnfixedColumn](ui.iggridcolumnfixing#options:locale.featureChooserTextUnfixedColumn).
     */
-  var featureChooserTextUnfixedColumn: js.UndefOr[String] = js.native
+  var featureChooserTextUnfixedColumn: js.UndefOr[String] = js.undefined
   
   /**
     * Specify initial fixing of all non data columns. Non-data columns are columns in the grid rendered for specific features, like the row selectors feature. The column containing the row numbering is such a column. This option is applicable when [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is set to left. For a full column fixing configuration summary please refer to [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#configuration-summary).
     *
     */
-  var fixNondataColumns: js.UndefOr[Boolean] = js.native
+  var fixNondataColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configures which side the fixed columns of the grid will be rendered on. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#direction) out of more information.
@@ -76,21 +75,21 @@ trait IgTreeGridColumnFixing
     * "left" Fixed columns are rendered on the left side of the main grid.
     * "right" Fixed columns are rendered on the right side of the main grid.
     */
-  var fixingDirection: js.UndefOr[String] = js.native
+  var fixingDirection: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     *             Specifies the tooltip text on the column fixing header icon when column is not fixed. Use option [locale.headerFixButtonText](ui.iggridcolumnfixing#options:locale.headerFixButtonText).
     */
-  var headerFixButtonText: js.UndefOr[String] = js.native
+  var headerFixButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     *                 Specifies the tooltip text on the column fixing header icon when column is fixed. Use option [locale.headerUnfixButtonText](ui.iggridcolumnfixing#options:locale.headerUnfixButtonText).
     */
-  var headerUnfixButtonText: js.UndefOr[String] = js.native
+  var headerUnfixButtonText: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[IgGridColumnFixingLocale] = js.native
+  var locale: js.UndefOr[IgGridColumnFixingLocale] = js.undefined
   
   /**
     * Minimal visible area in pixels for the unfixed columns. If the end user tries to fix a column(or columns), which causes the width of the fixed columns to grow such that the width of visible area of unfixed columns is less than this option then fixing will be canceled. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#non-fixable-min-width) out for more information.
@@ -100,30 +99,30 @@ trait IgTreeGridColumnFixing
     * "string" The width can be set in pixels (px) and percentage (%).
     * "number" The width can be set in pixels as a number.
     */
-  var minimalVisibleAreaWidth: js.UndefOr[String | Double] = js.native
+  var minimalVisibleAreaWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * When true all the TR DOM attributes of the unfixed row will be copied to the fixed row. Note that when enabled this option negatively affects performance when fixing a column.
     */
-  var populateDataRowsAttributes: js.UndefOr[Boolean] = js.native
+  var populateDataRowsAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scroll delta in pixels when scrolling with the mouse wheel or the keyboard in the fixed columns area of the grid.
     *
     */
-  var scrollDelta: js.UndefOr[Double] = js.native
+  var scrollDelta: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies whether to show the column fixing buttons in header cells/feature chooser.
     *
     */
-  var showFixButtons: js.UndefOr[Boolean] = js.native
+  var showFixButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable row height sync for the fixed and unfixed portion of the grid. If you're observing row misalignment, please refer to [this article](http://www.igniteui.com/help/iggrid-known-issues#misalignment-ie9).
     *
     */
-  var syncRowHeights: js.UndefOr[Boolean] = js.native
+  var syncRowHeights: js.UndefOr[Boolean] = js.undefined
 }
 object IgTreeGridColumnFixing {
   

@@ -3,12 +3,12 @@ package typings.jasmine.jasmine
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Runner
-  extends Instantiable1[/* env */ Env, js.Any] {
+  extends StObject
+     with Instantiable1[/* env */ Env, js.Any] {
   
   def add(block: Block): Unit = js.native
   

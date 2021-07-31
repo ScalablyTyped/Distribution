@@ -2,31 +2,29 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of a group of similar error events.
   */
-@js.native
 trait SchemaErrorGroup extends StObject {
   
   /**
     * Group IDs are unique for a given project. If the same kind of error
     * occurs in different service contexts, it will receive the same group ID.
     */
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
   /**
     * The group resource name. Example:
     * &lt;code&gt;projects/my-project-123/groups/my-groupid&lt;/code&gt;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Associated tracking issues.
     */
-  var trackingIssues: js.UndefOr[js.Array[SchemaTrackingIssue]] = js.native
+  var trackingIssues: js.UndefOr[js.Array[SchemaTrackingIssue]] = js.undefined
 }
 object SchemaErrorGroup {
   

@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Participant extends Entity {
+trait Participant
+  extends StObject
+     with Entity {
   
   // The participant of the participant.
-  var info: js.UndefOr[ParticipantInfo] = js.native
+  var info: js.UndefOr[ParticipantInfo] = js.undefined
   
   // true if the participant is in lobby.
-  var isInLobby: js.UndefOr[Boolean] = js.native
+  var isInLobby: js.UndefOr[Boolean] = js.undefined
   
   // true if the participant is muted (client or server muted).
-  var isMuted: js.UndefOr[Boolean] = js.native
+  var isMuted: js.UndefOr[Boolean] = js.undefined
   
   // The list of media streams.
-  var mediaStreams: js.UndefOr[NullableOption[js.Array[MediaStream]]] = js.native
+  var mediaStreams: js.UndefOr[NullableOption[js.Array[MediaStream]]] = js.undefined
   
   // Information about whether the participant has recording capability.
-  var recordingInfo: js.UndefOr[NullableOption[RecordingInfo]] = js.native
+  var recordingInfo: js.UndefOr[NullableOption[RecordingInfo]] = js.undefined
 }
 object Participant {
   

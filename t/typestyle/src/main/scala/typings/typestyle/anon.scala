@@ -2,15 +2,13 @@ package typings.typestyle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoGenerateTag extends StObject {
     
-    var autoGenerateTag: Boolean = js.native
+    var autoGenerateTag: Boolean
   }
   object AutoGenerateTag {
     
@@ -28,16 +26,15 @@ object anon {
     }
   }
   
-  @js.native
   trait TextContent extends StObject {
     
-    var textContent: String | Null = js.native
+    var textContent: String | Null
   }
   object TextContent {
     
     @scala.inline
     def apply(): TextContent = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(textContent = null)
       __obj.asInstanceOf[TextContent]
     }
     

@@ -64,7 +64,6 @@ import typings.officeJs.officeJsStrings.Tabloid
 import typings.officeJs.officeJsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,7 +73,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait PageLayout extends ClientObject {
+trait PageLayout
+  extends StObject
+     with ClientObject {
   
   /**
     *

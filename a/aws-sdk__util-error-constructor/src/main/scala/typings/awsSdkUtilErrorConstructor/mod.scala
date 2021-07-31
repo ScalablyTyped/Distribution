@@ -4,32 +4,33 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/util-error-constructor", "initServiceException")
+  @JSImport("@aws-sdk/util-error-constructor", JSImport.Namespace)
   @js.native
-  def initServiceException(error: Error, option: ServiceExceptionOption): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def initServiceException(error: Error, option: ServiceExceptionOption): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initServiceException")(error.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait ServiceExceptionOption extends StObject {
     
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /** a human readable description of this exception */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** name of exception */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** the name of the operation that throws the exception */
-    var operationName: js.UndefOr[String] = js.native
+    var operationName: js.UndefOr[String] = js.undefined
     
     /** parsed exception object normalized according to its API model */
-    var rawException: js.UndefOr[js.Any] = js.native
+    var rawException: js.UndefOr[js.Any] = js.undefined
   }
   object ServiceExceptionOption {
     

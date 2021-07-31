@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,43 +14,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Can be registered as an interceptor by using interface {@link XDispatchProviderInterception} .
   * @see XDispatchProviderInterception
   */
-@js.native
-trait XDispatchProviderInterceptor extends XDispatchProvider {
+trait XDispatchProviderInterceptor
+  extends StObject
+     with XDispatchProvider {
   
   /**
     * access to the master {@link XDispatchProvider} of this interceptor
     * @returns the master of this interceptor
     * @see XDispatchProviderInterceptor.setMasterDispatchProvider()
     */
-  var MasterDispatchProvider: XDispatchProvider = js.native
+  var MasterDispatchProvider: XDispatchProvider
   
   /**
     * access to the slave {@link XDispatchProvider} of this interceptor
     * @returns the slave of this interceptor
     * @see XDispatchProviderInterceptor.setSlaveDispatchProvider()
     */
-  var SlaveDispatchProvider: XDispatchProvider = js.native
+  var SlaveDispatchProvider: XDispatchProvider
   
   /**
     * access to the master {@link XDispatchProvider} of this interceptor
     * @returns the master of this interceptor
     * @see XDispatchProviderInterceptor.setMasterDispatchProvider()
     */
-  def getMasterDispatchProvider(): XDispatchProvider = js.native
+  def getMasterDispatchProvider(): XDispatchProvider
   
   /**
     * access to the slave {@link XDispatchProvider} of this interceptor
     * @returns the slave of this interceptor
     * @see XDispatchProviderInterceptor.setSlaveDispatchProvider()
     */
-  def getSlaveDispatchProvider(): XDispatchProvider = js.native
+  def getSlaveDispatchProvider(): XDispatchProvider
   
   /**
     * sets the master {@link XDispatchProvider} , which may forward calls to its {@link XDispatchProvider.queryDispatch()} to this dispatch provider.
     * @param NewSupplier the master of this interceptor
     * @see XDispatchProviderInterceptor.getMasterDispatchProvider()
     */
-  def setMasterDispatchProvider(NewSupplier: XDispatchProvider): Unit = js.native
+  def setMasterDispatchProvider(NewSupplier: XDispatchProvider): Unit
   
   /**
     * sets the slave {@link XDispatchProvider} to which calls to {@link XDispatchProvider.queryDispatch()} can be forwarded under control of this dispatch
@@ -59,7 +59,7 @@ trait XDispatchProviderInterceptor extends XDispatchProvider {
     * @param NewDispatchProvider the new slave of this interceptor
     * @see XDispatchProviderInterceptor.getSlaveDispatchProvider()
     */
-  def setSlaveDispatchProvider(NewDispatchProvider: XDispatchProvider): Unit = js.native
+  def setSlaveDispatchProvider(NewDispatchProvider: XDispatchProvider): Unit
 }
 object XDispatchProviderInterceptor {
   

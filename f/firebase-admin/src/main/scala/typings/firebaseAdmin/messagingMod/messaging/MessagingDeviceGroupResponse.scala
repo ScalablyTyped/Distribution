@@ -2,26 +2,24 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingDeviceGroupResponse extends StObject {
   
   /**
     * An array of registration tokens that failed to receive the message.
     */
-  var failedRegistrationTokens: js.Array[String] = js.native
+  var failedRegistrationTokens: js.Array[String]
   
   /**
     * The number of messages that could not be processed and resulted in an error.
     */
-  var failureCount: Double = js.native
+  var failureCount: Double
   
   /**
     * The number of messages that could not be processed and resulted in an error.
     */
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object MessagingDeviceGroupResponse {
   

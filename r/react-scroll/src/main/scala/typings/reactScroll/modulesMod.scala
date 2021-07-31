@@ -12,10 +12,13 @@ import typings.reactScroll.scrollSpyMod.ScrollSpy
 import typings.reactScroll.scrollerMod.Scroller
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modulesMod {
+  
+  @JSImport("react-scroll/modules", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-scroll/modules", "Button")
   @js.native
@@ -35,16 +38,17 @@ object modulesMod {
   
   object Helpers {
     
-    @JSImport("react-scroll/modules", "Helpers.Element")
+    @JSImport("react-scroll/modules", "Helpers")
     @js.native
-    def Element(component: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-scroll/modules", "Helpers.Scroll")
-    @js.native
-    def Scroll(component: js.Any): js.Any = js.native
-    @JSImport("react-scroll/modules", "Helpers.Scroll")
-    @js.native
-    def Scroll(component: js.Any, customScroller: js.Any): js.Any = js.native
+    @scala.inline
+    def Element(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def Scroll(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def Scroll(component: js.Any, customScroller: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any], customScroller.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("react-scroll/modules", "Link")
@@ -52,54 +56,45 @@ object modulesMod {
   class Link ()
     extends typings.reactScroll.linkMod.default
   
-  @JSImport("react-scroll/modules", "ScrollElement")
-  @js.native
-  def ScrollElement[P](component: ComponentType[P]): ComponentClass[ScrollElementProps[P], ComponentState] = js.native
+  @scala.inline
+  def ScrollElement[P](component: ComponentType[P]): ComponentClass[ScrollElementProps[P], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollElement")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[ScrollElementProps[P], ComponentState]]
   
-  @JSImport("react-scroll/modules", "ScrollLink")
-  @js.native
-  def ScrollLink[P](component: ComponentType[P]): ComponentClass[ScrollLinkProps[P], ComponentState] = js.native
-  @JSImport("react-scroll/modules", "ScrollLink")
-  @js.native
-  def ScrollLink[P](component: ComponentType[P], customScroller: Scroller): ComponentClass[ScrollLinkProps[P], ComponentState] = js.native
+  @scala.inline
+  def ScrollLink[P](component: ComponentType[P]): ComponentClass[ScrollLinkProps[P], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollLink")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[ScrollLinkProps[P], ComponentState]]
+  @scala.inline
+  def ScrollLink[P](component: ComponentType[P], customScroller: Scroller): ComponentClass[ScrollLinkProps[P], ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("ScrollLink")(component.asInstanceOf[js.Any], customScroller.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[ScrollLinkProps[P], ComponentState]]
   
   object animateScroll {
     
-    @JSImport("react-scroll/modules", "animateScroll.animateTopScroll")
+    @JSImport("react-scroll/modules", "animateScroll")
     @js.native
-    def animateTopScroll(y: Double, options: js.Any, to: String, target: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-scroll/modules", "animateScroll.getAnimationType")
-    @js.native
-    def getAnimationType(options: Smooth): js.Function1[/* x */ Double, Double] = js.native
+    @scala.inline
+    def animateTopScroll(y: Double, options: js.Any, to: String, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateTopScroll")(y.asInstanceOf[js.Any], options.asInstanceOf[js.Any], to.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "animateScroll.scrollMore")
-    @js.native
-    def scrollMore(toY: Double): Unit = js.native
-    @JSImport("react-scroll/modules", "animateScroll.scrollMore")
-    @js.native
-    def scrollMore(toY: Double, options: js.Any): Unit = js.native
+    @scala.inline
+    def getAnimationType(options: Smooth): js.Function1[/* x */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimationType")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ Double, Double]]
     
-    @JSImport("react-scroll/modules", "animateScroll.scrollTo")
-    @js.native
-    def scrollTo(toY: Double): Unit = js.native
-    @JSImport("react-scroll/modules", "animateScroll.scrollTo")
-    @js.native
-    def scrollTo(toY: Double, options: js.Any): Unit = js.native
+    @scala.inline
+    def scrollMore(toY: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollMore")(toY.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def scrollMore(toY: Double, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollMore")(toY.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "animateScroll.scrollToBottom")
-    @js.native
-    def scrollToBottom(): Unit = js.native
-    @JSImport("react-scroll/modules", "animateScroll.scrollToBottom")
-    @js.native
-    def scrollToBottom(options: js.Any): Unit = js.native
+    @scala.inline
+    def scrollTo(toY: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(toY.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def scrollTo(toY: Double, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(toY.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "animateScroll.scrollToTop")
-    @js.native
-    def scrollToTop(): Unit = js.native
-    @JSImport("react-scroll/modules", "animateScroll.scrollToTop")
-    @js.native
-    def scrollToTop(options: js.Any): Unit = js.native
+    @scala.inline
+    def scrollToBottom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToBottom")().asInstanceOf[Unit]
+    @scala.inline
+    def scrollToBottom(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToBottom")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def scrollToTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToTop")().asInstanceOf[Unit]
+    @scala.inline
+    def scrollToTop(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToTop")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("react-scroll/modules", "scrollSpy")
@@ -108,32 +103,29 @@ object modulesMod {
   
   object scroller {
     
-    @JSImport("react-scroll/modules", "scroller.get")
+    @JSImport("react-scroll/modules", "scroller")
     @js.native
-    def get(name: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-scroll/modules", "scroller.getActiveLink")
-    @js.native
-    def getActiveLink(): String = js.native
+    @scala.inline
+    def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("react-scroll/modules", "scroller.register")
-    @js.native
-    def register(name: String, element: js.Any): Unit = js.native
+    @scala.inline
+    def getActiveLink(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveLink")().asInstanceOf[String]
     
-    @JSImport("react-scroll/modules", "scroller.scrollTo")
-    @js.native
-    def scrollTo(to: String, props: js.Any): Unit = js.native
+    @scala.inline
+    def register(name: String, element: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "scroller.setActiveLink")
-    @js.native
-    def setActiveLink(link: String): Unit = js.native
+    @scala.inline
+    def scrollTo(to: String, props: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(to.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "scroller.unmount")
-    @js.native
-    def unmount(): Unit = js.native
+    @scala.inline
+    def setActiveLink(link: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveLink")(link.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-scroll/modules", "scroller.unregister")
-    @js.native
-    def unregister(name: String): Unit = js.native
+    @scala.inline
+    def unmount(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def unregister(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

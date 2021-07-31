@@ -3,26 +3,26 @@ package typings.textareaCaret
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("textarea-caret", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement, position: Double): Caret = js.native
-  @JSImport("textarea-caret", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement, position: Double, options: Options): Caret = js.native
+  @scala.inline
+  def apply(element: HTMLElement, position: Double): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Caret]
+  @scala.inline
+  def apply(element: HTMLElement, position: Double, options: Options): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Caret]
   
+  @JSImport("textarea-caret", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Caret extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Caret {
     
@@ -46,10 +46,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

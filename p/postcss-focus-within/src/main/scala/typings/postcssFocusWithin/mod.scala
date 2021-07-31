@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,7 +17,6 @@ object mod extends Shortcut {
   /**
     * @see {@link https://github.com/csstools/postcss-focus-within#options}
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -26,14 +24,14 @@ object mod extends Shortcut {
       * By default, the original selector is preserved.
       * @default true
       */
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The replaceWith option defines the selector to replace `:focus-within`.
       * By default, the replacement selector is `[focus-within]`.
       * @default `[focus-within]`
       */
-    var replaceWith: js.UndefOr[String] = js.native
+    var replaceWith: js.UndefOr[String] = js.undefined
   }
   object Options {
     

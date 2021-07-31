@@ -2,26 +2,24 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorMetric extends StObject {
   
   /**
     *  Forecast types can be quantiles from 0.01 to 0.99 (by increments of 0.01), and the mean. 
     */
-  var ForecastType: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastType] = js.native
+  var ForecastType: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastType] = js.undefined
   
   /**
     *  The root-mean-square error (RMSE). 
     */
-  var RMSE: js.UndefOr[Double] = js.native
+  var RMSE: js.UndefOr[Double] = js.undefined
   
   /**
     *  The weighted absolute percentage error (WAPE). 
     */
-  var WAPE: js.UndefOr[Double] = js.native
+  var WAPE: js.UndefOr[Double] = js.undefined
 }
 object ErrorMetric {
   

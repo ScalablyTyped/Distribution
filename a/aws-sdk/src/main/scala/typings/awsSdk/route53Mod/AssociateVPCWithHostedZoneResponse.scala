@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateVPCWithHostedZoneResponse extends StObject {
   
   /**
     * A complex type that describes the changes made to your hosted zone.
     */
-  var ChangeInfo: typings.awsSdk.route53Mod.ChangeInfo = js.native
+  var ChangeInfo: typings.awsSdk.route53Mod.ChangeInfo
 }
 object AssociateVPCWithHostedZoneResponse {
   

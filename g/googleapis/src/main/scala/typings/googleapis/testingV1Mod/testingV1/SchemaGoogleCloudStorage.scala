@@ -2,13 +2,11 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A storage location within Google cloud storage (GCS).
   */
-@js.native
 trait SchemaGoogleCloudStorage extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleCloudStorage extends StObject {
     * results for this test. The requesting user must have write access on the
     * bucket in the supplied path.
     */
-  var gcsPath: js.UndefOr[String] = js.native
+  var gcsPath: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudStorage {
   

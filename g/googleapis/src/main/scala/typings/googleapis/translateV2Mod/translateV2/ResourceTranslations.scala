@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Resource$Translations")
@@ -35,7 +34,7 @@ class ResourceTranslations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTranslationsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(params: ParamsResourceTranslationsList): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(
     params: ParamsResourceTranslationsList,
@@ -67,7 +66,7 @@ class ResourceTranslations protected () extends StObject {
     */
   def translate(): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(callback: BodyResponseCallback[SchemaTranslationsListResponse]): Unit = js.native
-  def translate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
+  def translate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(params: ParamsResourceTranslationsTranslate): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(
     params: ParamsResourceTranslationsTranslate,

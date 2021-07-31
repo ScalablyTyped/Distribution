@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVideoabusereportreasonsList extends StandardParameters {
+trait ParamsResourceVideoabusereportreasonsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The hl parameter specifies the language that should be used for text
     * values in the API response.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies the videoCategory resource parts that the
     * API response will include. Supported values are id and snippet.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceVideoabusereportreasonsList {
   

@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Vertical Pod Autoscaler to automatically adjust the resources of pods
   * controlled by it.
   */
-@js.native
 trait SchemaVerticalPodAutoscaling extends StObject {
   
   /**
     * Enables vertical pod autoscaling.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaVerticalPodAutoscaling {
   

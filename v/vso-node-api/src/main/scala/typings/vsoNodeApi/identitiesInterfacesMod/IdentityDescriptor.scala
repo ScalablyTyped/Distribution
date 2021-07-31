@@ -2,21 +2,19 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityDescriptor extends StObject {
   
   /**
     * The unique identifier for this identity, not exceeding 256 chars, which will be persisted.
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * Type of descriptor (for example, Windows, Passport, etc.).
     */
-  var identityType: String = js.native
+  var identityType: String
 }
 object IdentityDescriptor {
   

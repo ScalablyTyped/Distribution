@@ -3,25 +3,23 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizableUIParams extends StObject {
   
-  var element: JQuery = js.native
+  var element: JQuery
   
-  var helper: JQuery = js.native
+  var helper: JQuery
   
-  var originalElement: JQuery = js.native
+  var originalElement: JQuery
   
-  var originalPosition: js.Any = js.native
+  var originalPosition: js.Any
   
-  var originalSize: js.Any = js.native
+  var originalSize: js.Any
   
-  var position: js.Any = js.native
+  var position: js.Any
   
-  var size: js.Any = js.native
+  var size: js.Any
 }
 object ResizableUIParams {
   

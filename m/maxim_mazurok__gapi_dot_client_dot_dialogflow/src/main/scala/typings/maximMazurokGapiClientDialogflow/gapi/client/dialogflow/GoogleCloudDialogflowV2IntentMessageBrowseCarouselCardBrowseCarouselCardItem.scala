@@ -2,28 +2,26 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem extends StObject {
   
   /** Optional. Description of the carousel item. Maximum of four lines of text. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. Text that appears at the bottom of the Browse Carousel Card. Maximum of one line of text. */
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
   /** Optional. Hero image for the carousel item. */
-  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /** Required. Action to present to the user. */
   var openUriAction: js.UndefOr[
     GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction
-  ] = js.native
+  ] = js.undefined
   
   /** Required. Title of the carousel item. Maximum of two lines of text. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem {
   

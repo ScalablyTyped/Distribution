@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderror
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRequestContext extends StObject {
   
   /** The type of HTTP request, such as `GET`, `POST`, etc. */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The referrer information that is provided with the request. */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address from which the request originated. This can be IPv4, IPv6, or a token which is derived from the IP address, depending on the data that has been provided in the error
     * report.
     */
-  var remoteIp: js.UndefOr[String] = js.native
+  var remoteIp: js.UndefOr[String] = js.undefined
   
   /** The HTTP response status code for the request. */
-  var responseStatusCode: js.UndefOr[Double] = js.native
+  var responseStatusCode: js.UndefOr[Double] = js.undefined
   
   /** The URL of the request. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** The user agent information that is provided with the request. */
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
 }
 object HttpRequestContext {
   

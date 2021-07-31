@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.WorksheetProtectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
-@js.native
 trait WorksheetProtectionData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WorksheetProtectionData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var options: js.UndefOr[WorksheetProtectionOptions] = js.native
+  var options: js.UndefOr[WorksheetProtectionOptions] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait WorksheetProtectionData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var `protected`: js.UndefOr[Boolean] = js.native
+  var `protected`: js.UndefOr[Boolean] = js.undefined
 }
 object WorksheetProtectionData {
   

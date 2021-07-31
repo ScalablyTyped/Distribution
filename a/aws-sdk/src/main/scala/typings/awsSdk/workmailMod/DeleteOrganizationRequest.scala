@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOrganizationRequest extends StObject {
   
   /**
     * The idempotency token associated with the request.
     */
-  var ClientToken: js.UndefOr[IdempotencyClientToken] = js.native
+  var ClientToken: js.UndefOr[IdempotencyClientToken] = js.undefined
   
   /**
     * If true, deletes the AWS Directory Service directory associated with the organization.
     */
-  var DeleteDirectory: Boolean = js.native
+  var DeleteDirectory: Boolean
   
   /**
     * The organization ID.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object DeleteOrganizationRequest {
   

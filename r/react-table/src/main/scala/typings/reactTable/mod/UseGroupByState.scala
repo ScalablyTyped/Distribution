@@ -2,13 +2,11 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseGroupByState[D /* <: js.Object */] extends StObject {
   
-  var groupBy: js.Array[IdType[D]] = js.native
+  var groupBy: js.Array[IdType[D]]
 }
 object UseGroupByState {
   
@@ -19,7 +17,7 @@ object UseGroupByState {
   }
   
   @scala.inline
-  implicit class UseGroupByStateMutableBuilder[Self <: UseGroupByState[_], D /* <: js.Object */] (val x: Self with UseGroupByState[D]) extends AnyVal {
+  implicit class UseGroupByStateMutableBuilder[Self <: UseGroupByState[?], D /* <: js.Object */] (val x: Self & UseGroupByState[D]) extends AnyVal {
     
     @scala.inline
     def setGroupBy(value: js.Array[IdType[D]]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])

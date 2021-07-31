@@ -3,12 +3,11 @@ package typings.argparse
 import typings.argparse.anon.Instantiable
 import typings.argparse.anon.InstantiableAction
 import typings.argparse.anon.Required
-import typings.argparse.anon._empty
 import typings.argparse.anon.`0`
 import typings.std.Error
+import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,8 +31,16 @@ object mod {
   
   @JSImport("argparse", "ArgumentError")
   @js.native
-  class ArgumentError protected () extends Error {
+  class ArgumentError protected ()
+    extends StObject
+       with Error {
     def this(argument: Action, message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     def str(): String = js.native
   }
@@ -79,18 +86,18 @@ object mod {
     def format_usage(): String = js.native
     
     def parse_args(): js.Any = js.native
-    def parse_args(args: js.UndefOr[scala.Nothing], ns: js.Object): js.Any = js.native
-    def parse_args(args: js.UndefOr[scala.Nothing], ns: Namespace): js.Any = js.native
     def parse_args(args: js.Array[String]): js.Any = js.native
     def parse_args(args: js.Array[String], ns: js.Object): js.Any = js.native
     def parse_args(args: js.Array[String], ns: Namespace): js.Any = js.native
+    def parse_args(args: Unit, ns: js.Object): js.Any = js.native
+    def parse_args(args: Unit, ns: Namespace): js.Any = js.native
     
-    def parse_known_args(): js.Array[_] = js.native
-    def parse_known_args(args: js.UndefOr[scala.Nothing], ns: js.Object): js.Array[_] = js.native
-    def parse_known_args(args: js.UndefOr[scala.Nothing], ns: Namespace): js.Array[_] = js.native
-    def parse_known_args(args: js.Array[String]): js.Array[_] = js.native
-    def parse_known_args(args: js.Array[String], ns: js.Object): js.Array[_] = js.native
-    def parse_known_args(args: js.Array[String], ns: Namespace): js.Array[_] = js.native
+    def parse_known_args(): js.Array[js.Any] = js.native
+    def parse_known_args(args: js.Array[String]): js.Array[js.Any] = js.native
+    def parse_known_args(args: js.Array[String], ns: js.Object): js.Array[js.Any] = js.native
+    def parse_known_args(args: js.Array[String], ns: Namespace): js.Array[js.Any] = js.native
+    def parse_known_args(args: Unit, ns: js.Object): js.Array[js.Any] = js.native
+    def parse_known_args(args: Unit, ns: Namespace): js.Array[js.Any] = js.native
     
     def print_help(): Unit = js.native
     
@@ -147,18 +154,24 @@ object mod {
   @js.native
   val ZERO_OR_MORE: String = js.native
   
-  type ActionConstructorOptions = Double with _empty
-  
   @js.native
+  trait ActionConstructorOptions
+    extends StObject
+       with Number {
+    
+    @JSName("_")
+    var _underscore: typings.argparse.argparseStrings.ActionConstructorOptions = js.native
+  }
+  
   trait ArgumentGroupOptions extends StObject {
     
-    var argument_default: js.UndefOr[js.Any] = js.native
+    var argument_default: js.UndefOr[js.Any] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var prefix_chars: js.UndefOr[String] = js.native
+    var prefix_chars: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ArgumentGroupOptions {
     
@@ -197,34 +210,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ArgumentOptions extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var action: js.UndefOr[String | InstantiableAction] = js.native
+    var action: js.UndefOr[String | InstantiableAction] = js.undefined
     
     // tslint:disable-line:ban-types
-    var choices: js.UndefOr[String | js.Array[String]] = js.native
+    var choices: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var const: js.UndefOr[js.Any] = js.native
+    var const: js.UndefOr[js.Any] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
     
-    var metavar: js.UndefOr[String | js.Array[String]] = js.native
+    var metavar: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var nargs: js.UndefOr[String | Double] = js.native
+    var nargs: js.UndefOr[String | Double] = js.undefined
     
-    var option_strings: js.UndefOr[js.Array[String]] = js.native
+    var option_strings: js.UndefOr[js.Array[String]] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     // type may be a string (primitive) or a Function (constructor)
-    var `type`: js.UndefOr[String | js.Function] = js.native
+    var `type`: js.UndefOr[String | js.Function] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ArgumentOptions {
     
@@ -320,28 +332,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ArgumentParserOptions extends StObject {
     
-    var add_help: js.UndefOr[Boolean] = js.native
+    var add_help: js.UndefOr[Boolean] = js.undefined
     
-    var argument_default: js.UndefOr[js.Any] = js.native
+    var argument_default: js.UndefOr[js.Any] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var epilog: js.UndefOr[String] = js.native
+    var epilog: js.UndefOr[String] = js.undefined
     
-    var exit_on_error: js.UndefOr[Boolean] = js.native
+    var exit_on_error: js.UndefOr[Boolean] = js.undefined
     
-    var formatter_class: js.UndefOr[`0`] = js.native
+    var formatter_class: js.UndefOr[`0`] = js.undefined
     
-    var parents: js.UndefOr[js.Array[ArgumentParser]] = js.native
+    var parents: js.UndefOr[js.Array[ArgumentParser]] = js.undefined
     
-    var prefix_chars: js.UndefOr[String] = js.native
+    var prefix_chars: js.UndefOr[String] = js.undefined
     
-    var prog: js.UndefOr[String] = js.native
+    var prog: js.UndefOr[String] = js.undefined
     
-    var usage: js.UndefOr[String] = js.native
+    var usage: js.UndefOr[String] = js.undefined
   }
   object ArgumentParserOptions {
     
@@ -419,12 +430,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait SubArgumentParserOptions extends ArgumentParserOptions {
+  trait SubArgumentParserOptions
+    extends StObject
+       with ArgumentParserOptions {
     
-    var aliases: js.UndefOr[js.Array[String]] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.undefined
     
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
   }
   object SubArgumentParserOptions {
     
@@ -454,24 +466,23 @@ object mod {
     }
   }
   
-  @js.native
   trait SubparserOptions extends StObject {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
     
-    var metavar: js.UndefOr[String] = js.native
+    var metavar: js.UndefOr[String] = js.undefined
     
-    var parser_class: js.UndefOr[Instantiable] = js.native
+    var parser_class: js.UndefOr[Instantiable] = js.undefined
     
-    var prog: js.UndefOr[String] = js.native
+    var prog: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object SubparserOptions {
     

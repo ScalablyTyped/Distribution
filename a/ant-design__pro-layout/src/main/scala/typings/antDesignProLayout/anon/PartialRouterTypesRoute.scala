@@ -8,24 +8,22 @@ import typings.reactRouter.mod.StaticContext
 import typings.reactRouter.mod.`match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.Route>> */
-@js.native
 trait PartialRouterTypesRoute extends StObject {
   
-  var computedMatch: js.UndefOr[`match`[Route]] = js.native
+  var computedMatch: js.UndefOr[`match`[Route]] = js.undefined
   
-  var history: js.UndefOr[History[LocationState]] = js.native
+  var history: js.UndefOr[History[LocationState]] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState] | Pathname] = js.native
+  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
   
-  var `match`: js.UndefOr[typings.reactRouter.mod.`match`[js.Object]] = js.native
+  var `match`: js.UndefOr[typings.reactRouter.mod.`match`[js.Object]] = js.undefined
   
-  var route: js.UndefOr[Route] = js.native
+  var route: js.UndefOr[Route] = js.undefined
   
-  var staticContext: js.UndefOr[StaticContext] = js.native
+  var staticContext: js.UndefOr[StaticContext] = js.undefined
 }
 object PartialRouterTypesRoute {
   

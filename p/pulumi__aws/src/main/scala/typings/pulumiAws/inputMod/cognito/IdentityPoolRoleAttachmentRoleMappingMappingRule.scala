@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityPoolRoleAttachmentRoleMappingMappingRule extends StObject {
   
   /**
     * The claim name that must be present in the token, for example, "isAdmin" or "paid".
     */
-  var claim: Input[String] = js.native
+  var claim: Input[String]
   
   /**
     * The match condition that specifies how closely the claim value in the IdP token must match Value.
     */
-  var matchType: Input[String] = js.native
+  var matchType: Input[String]
   
   /**
     * The role ARN.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * A brief string that the claim must match, for example, "paid" or "yes".
     */
-  var value: Input[String] = js.native
+  var value: Input[String]
 }
 object IdentityPoolRoleAttachmentRoleMappingMappingRule {
   

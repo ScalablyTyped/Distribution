@@ -2,17 +2,15 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelMax extends StObject {
   
-  var channelMax: Double = js.native
+  var channelMax: Double
   
-  var connection_timeout: Double = js.native
+  var connection_timeout: Double
   
-  var heartbeat: Double = js.native
+  var heartbeat: Double
 }
 object ChannelMax {
   

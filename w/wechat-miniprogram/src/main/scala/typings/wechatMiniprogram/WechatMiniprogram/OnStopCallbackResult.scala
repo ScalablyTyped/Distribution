@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnStopCallbackResult extends StObject {
   
   /** 录音总时长，单位：ms */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 录音文件大小，单位：Byte */
-  var fileSize: Double = js.native
+  var fileSize: Double
   
   /** 录音文件的临时路径 (本地路径) */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object OnStopCallbackResult {
   

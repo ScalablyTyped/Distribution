@@ -11,8 +11,8 @@ A library for binding to keys and key combos without the pain of key codes and k
 | Full name          | keyboardjs |
 | Keywords           | Key Binding, Keyboard, Key combos, Keyboard Shortcuts |
 | # releases         | 6 |
-| # dependents       | 29 |
-| # downloads        | 694448 |
+| # dependents       | 33 |
+| # downloads        | 679693 |
 | # stars            | 4 |
 
 ## Links

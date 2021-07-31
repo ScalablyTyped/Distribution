@@ -2,13 +2,11 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2LinkValueSpec extends StObject {
   
-  var dialogSpec: js.UndefOr[GoogleActionsV2DialogSpec] = js.native
+  var dialogSpec: js.UndefOr[GoogleActionsV2DialogSpec] = js.undefined
   
   /**
     * Destination that the app should link to. Could be a web URL, a
@@ -17,7 +15,7 @@ trait GoogleActionsV2LinkValueSpec extends StObject {
     * into another AoG app. An Android intent URI is used to trigger an Android
     * intent. This requires the package_name to be specified.
     */
-  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.native
+  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
 }
 object GoogleActionsV2LinkValueSpec {
   

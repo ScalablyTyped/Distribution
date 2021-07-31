@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoOptions extends StObject {
   
   /**
     * Specifies the option to enable Cognito for Kibana authentication.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the Cognito identity pool ID for Kibana authentication.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsSdk.esMod.IdentityPoolId] = js.native
+  var IdentityPoolId: js.UndefOr[typings.awsSdk.esMod.IdentityPoolId] = js.undefined
   
   /**
     * Specifies the role ARN that provides Elasticsearch permissions for accessing Cognito resources.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.esMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.esMod.RoleArn] = js.undefined
   
   /**
     * Specifies the Cognito user pool ID for Kibana authentication.
     */
-  var UserPoolId: js.UndefOr[typings.awsSdk.esMod.UserPoolId] = js.native
+  var UserPoolId: js.UndefOr[typings.awsSdk.esMod.UserPoolId] = js.undefined
 }
 object CognitoOptions {
   

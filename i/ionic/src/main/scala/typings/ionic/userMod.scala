@@ -11,7 +11,6 @@ import typings.ionic.definitionsMod.User
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
@@ -38,10 +37,9 @@ object userMod {
     val token: String = js.native
   }
   
-  @js.native
   trait UserClientDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
   }
   object UserClientDeps {
     

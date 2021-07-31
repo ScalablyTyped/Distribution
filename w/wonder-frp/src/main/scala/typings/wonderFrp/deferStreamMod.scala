@@ -1,24 +1,27 @@
 package typings.wonderFrp
 
 import typings.wonderFrp.baseStreamMod.BaseStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/DeferStream", JSImport.Namespace)
-@js.native
-object deferStreamMod extends js.Object {
+object deferStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/DeferStream", "DeferStream")
   @js.native
   class DeferStream protected () extends BaseStream {
     def this(buildStreamFunc: js.Function) = this()
+    
     var _buildStreamFunc: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object DeferStream extends js.Object {
-    def create(buildStreamFunc: js.Function): DeferStream = js.native
+  object DeferStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/DeferStream", "DeferStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(buildStreamFunc: js.Function): DeferStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buildStreamFunc.asInstanceOf[js.Any]).asInstanceOf[DeferStream]
   }
-  
 }
-

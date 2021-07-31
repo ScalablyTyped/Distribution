@@ -3,21 +3,19 @@ package typings.baidumapWebSdk.anon
 import typings.baidumapWebSdk.BMap.Polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var points: js.Array[typings.baidumapWebSdk.BMap.Point] = js.native
+  var points: js.Array[typings.baidumapWebSdk.BMap.Point]
   
-  var polylines: js.Array[Polyline] = js.native
+  var polylines: js.Array[Polyline]
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Distance {
   

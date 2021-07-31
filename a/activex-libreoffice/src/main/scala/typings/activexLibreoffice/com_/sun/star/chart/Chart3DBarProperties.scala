@@ -7,21 +7,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies all the properties for the graphic object of a data point in a three-dimensional bar diagram.
   * @see BarDiagram
   */
-@js.native
-trait Chart3DBarProperties extends XPropertySet {
+trait Chart3DBarProperties
+  extends StObject
+     with XPropertySet {
   
   /**
     * Specifies the solid shape of a data point.
     * @see ChartSolidType
     */
-  var SolidType: Double = js.native
+  var SolidType: Double
 }
 object Chart3DBarProperties {
   

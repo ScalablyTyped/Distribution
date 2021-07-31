@@ -2,25 +2,23 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listTrainingExamples` operation. */
-@js.native
 trait ListTrainingExamplesParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The ID of the query used for training. */
-  var query_id: String = js.native
+  var query_id: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object ListTrainingExamplesParams {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to replace contents in a collection by an implicit (unique) ID: */
-@js.native
-trait XImplicitIDReplace extends XInterface {
+trait XImplicitIDReplace
+  extends StObject
+     with XInterface {
   
   /** replaces the content which is specified by its implicit (unique) ID with a new content. */
-  def replaceByUniqueID(ID: String, aNewElement: js.Any): Unit = js.native
+  def replaceByUniqueID(ID: String, aNewElement: js.Any): Unit
 }
 object XImplicitIDReplace {
   

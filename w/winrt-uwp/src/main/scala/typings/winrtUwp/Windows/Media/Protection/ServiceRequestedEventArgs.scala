@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Protection
 import typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for a MediaProtectionManager object when a service is requested. */
-@js.native
 trait ServiceRequestedEventArgs extends StObject {
   
   /** Returns an indication of the completion of the service request. */
-  var completion: MediaProtectionServiceCompletion = js.native
+  var completion: MediaProtectionServiceCompletion
   
   /** Gets the MediaPlaybackItem associated with the service request. */
-  var mediaPlaybackItem: MediaPlaybackItem = js.native
+  var mediaPlaybackItem: MediaPlaybackItem
   
   /** Contains the service request. */
-  var request: IMediaProtectionServiceRequest = js.native
+  var request: IMediaProtectionServiceRequest
 }
 object ServiceRequestedEventArgs {
   

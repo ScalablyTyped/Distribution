@@ -3,23 +3,22 @@ package typings.randomatic
 import typings.randomatic.anon.Chars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(p: String): String = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(p: String, l: Double): String = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(p: String, l: Double, options: Chars): String = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], l.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(p: String, l: Unit, options: Chars): String = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], l.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("randomatic", JSImport.Namespace)
   @js.native
-  def apply(p: String): String = js.native
-  @JSImport("randomatic", JSImport.Namespace)
-  @js.native
-  def apply(p: String, l: js.UndefOr[scala.Nothing], options: Chars): String = js.native
-  @JSImport("randomatic", JSImport.Namespace)
-  @js.native
-  def apply(p: String, l: Double): String = js.native
-  @JSImport("randomatic", JSImport.Namespace)
-  @js.native
-  def apply(p: String, l: Double, options: Chars): String = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("randomatic", "isCrypto")
   @js.native

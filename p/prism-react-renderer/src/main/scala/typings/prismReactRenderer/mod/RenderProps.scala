@@ -2,21 +2,19 @@ package typings.prismReactRenderer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderProps extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  def getLineProps(input: LineInputProps): LineOutputProps = js.native
+  def getLineProps(input: LineInputProps): LineOutputProps
   
-  def getTokenProps(input: TokenInputProps): TokenOutputProps = js.native
+  def getTokenProps(input: TokenInputProps): TokenOutputProps
   
-  var style: StyleObj = js.native
+  var style: StyleObj
   
-  var tokens: js.Array[js.Array[Token]] = js.native
+  var tokens: js.Array[js.Array[Token]]
 }
 object RenderProps {
   

@@ -2,35 +2,33 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItemOption extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var group: js.UndefOr[Boolean] = js.native
+  var group: js.UndefOr[Boolean] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var onselect: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, Unit])] = js.native
+  var onselect: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, Unit])] = js.undefined
   
-  var options: js.UndefOr[js.Array[MenuItemOption | Null]] = js.native
+  var options: js.UndefOr[js.Array[MenuItemOption | Null]] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var setting: js.UndefOr[String] = js.native
+  var setting: js.UndefOr[String] = js.undefined
   
-  var sublabel: js.UndefOr[String] = js.native
+  var sublabel: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[Boolean] = js.native
+  var toggle: js.UndefOr[Boolean] = js.undefined
 }
 object MenuItemOption {
   

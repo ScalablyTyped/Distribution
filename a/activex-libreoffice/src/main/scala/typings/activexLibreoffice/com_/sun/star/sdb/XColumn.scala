@@ -14,19 +14,19 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to access data which is collected in a row. */
-@js.native
-trait XColumn extends XInterface {
+trait XColumn
+  extends StObject
+     with XInterface {
   
   /**
     * gets a SQL ARRAY value from the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Array: XArray = js.native
+  val Array: XArray
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -38,35 +38,35 @@ trait XColumn extends XInterface {
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val BinaryStream: XInputStream = js.native
+  val BinaryStream: XInputStream
   
   /**
     * gets a BLOB (Binary Large OBject) value in the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Blob: XBlob = js.native
+  val Blob: XBlob
   
   /**
     * gets the value of a column in the current row as boolean.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Boolean: scala.Boolean = js.native
+  val Boolean: scala.Boolean
   
   /**
     * gets the value of a column in the current row as a byte.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Byte: scala.Double = js.native
+  val Byte: scala.Double
   
   /**
     * gets the value of a column in the current row as a byte array. The bytes represent the raw values returned by the driver.
     * @returns the column value; if the value is SQL NULL, the result is empty.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Bytes: SafeArray[scala.Double] = js.native
+  val Bytes: SafeArray[scala.Double]
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -78,91 +78,91 @@ trait XColumn extends XInterface {
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val CharacterStream: XInputStream = js.native
+  val CharacterStream: XInputStream
   
   /**
     * gets a CLOB value in the current row of this `ResultSet` object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Clob: XClob = js.native
+  val Clob: XClob
   
   /**
     * gets the value of a column in the current row as a date object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Date: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+  val Date: typings.activexLibreoffice.com_.sun.star.util.Date
   
   /**
     * gets the value of a column in the current row as a double.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Double: scala.Double = js.native
+  val Double: scala.Double
   
   /**
     * gets the value of a column in the current row as a float.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Float: scala.Double = js.native
+  val Float: scala.Double
   
   /**
     * gets the value of a column in the current row as a long.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Int: scala.Double = js.native
+  val Int: scala.Double
   
   /**
     * gets the value of a column in the current row as a hyper.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Long: scala.Double = js.native
+  val Long: scala.Double
   
   /**
     * gets a REF(<structured-type&gt) column value from the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Ref: XRef = js.native
+  val Ref: XRef
   
   /**
     * gets the value of a column in the current row as a short.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Short: scala.Double = js.native
+  val Short: scala.Double
   
   /**
     * gets the value of a column in the current row as a String.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val String: java.lang.String = js.native
+  val String: java.lang.String
   
   /**
     * gets the value of a column in the current row as a time object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Time: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+  val Time: typings.activexLibreoffice.com_.sun.star.util.Time
   
   /**
     * gets the value of a column in the current row as a datetime object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Timestamp: DateTime = js.native
+  val Timestamp: DateTime
   
   /**
     * gets a SQL ARRAY value from the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getArray(): XArray = js.native
+  def getArray(): XArray
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -174,35 +174,35 @@ trait XColumn extends XInterface {
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBinaryStream(): XInputStream = js.native
+  def getBinaryStream(): XInputStream
   
   /**
     * gets a BLOB (Binary Large OBject) value in the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBlob(): XBlob = js.native
+  def getBlob(): XBlob
   
   /**
     * gets the value of a column in the current row as boolean.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBoolean(): scala.Boolean = js.native
+  def getBoolean(): scala.Boolean
   
   /**
     * gets the value of a column in the current row as a byte.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getByte(): scala.Double = js.native
+  def getByte(): scala.Double
   
   /**
     * gets the value of a column in the current row as a byte array. The bytes represent the raw values returned by the driver.
     * @returns the column value; if the value is SQL NULL, the result is empty.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBytes(): SafeArray[scala.Double] = js.native
+  def getBytes(): SafeArray[scala.Double]
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -214,49 +214,49 @@ trait XColumn extends XInterface {
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getCharacterStream(): XInputStream = js.native
+  def getCharacterStream(): XInputStream
   
   /**
     * gets a CLOB value in the current row of this `ResultSet` object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getClob(): XClob = js.native
+  def getClob(): XClob
   
   /**
     * gets the value of a column in the current row as a date object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getDate(): typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+  def getDate(): typings.activexLibreoffice.com_.sun.star.util.Date
   
   /**
     * gets the value of a column in the current row as a double.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getDouble(): scala.Double = js.native
+  def getDouble(): scala.Double
   
   /**
     * gets the value of a column in the current row as a float.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getFloat(): scala.Double = js.native
+  def getFloat(): scala.Double
   
   /**
     * gets the value of a column in the current row as a long.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getInt(): scala.Double = js.native
+  def getInt(): scala.Double
   
   /**
     * gets the value of a column in the current row as a hyper.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getLong(): scala.Double = js.native
+  def getLong(): scala.Double
   
   /**
     * @param typeMap the type map is used to fetch the correct type
@@ -264,42 +264,42 @@ trait XColumn extends XInterface {
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getObject(typeMap: XNameAccess): js.Any = js.native
+  def getObject(typeMap: XNameAccess): js.Any
   
   /**
     * gets a REF(<structured-type&gt) column value from the current row.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getRef(): XRef = js.native
+  def getRef(): XRef
   
   /**
     * gets the value of a column in the current row as a short.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getShort(): scala.Double = js.native
+  def getShort(): scala.Double
   
   /**
     * gets the value of a column in the current row as a String.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getString(): java.lang.String = js.native
+  def getString(): java.lang.String
   
   /**
     * gets the value of a column in the current row as a time object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getTime(): typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+  def getTime(): typings.activexLibreoffice.com_.sun.star.util.Time
   
   /**
     * gets the value of a column in the current row as a datetime object.
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getTimestamp(): DateTime = js.native
+  def getTimestamp(): DateTime
   
   /**
     * reports whether the last column read had a value of SQL NULL. Note that you must first call getXXX on a column to try to read its value and then call
@@ -307,7 +307,7 @@ trait XColumn extends XInterface {
     * @returns `TRUE` if so
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def wasNull(): scala.Boolean = js.native
+  def wasNull(): scala.Boolean
 }
 object XColumn {
   

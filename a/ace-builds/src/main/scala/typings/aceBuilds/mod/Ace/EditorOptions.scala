@@ -18,44 +18,43 @@ import typings.aceBuilds.aceBuildsStrings.text
 import typings.aceBuilds.aceBuildsStrings.wide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorOptions
-  extends EditSessionOptions
+  extends StObject
+     with EditSessionOptions
      with MouseHandlerOptions
      with VirtualRendererOptions {
   
-  var autoScrollEditorIntoView: Boolean = js.native
+  var autoScrollEditorIntoView: Boolean
   
-  var behavioursEnabled: Boolean = js.native
+  var behavioursEnabled: Boolean
   
-  var copyWithEmptySelection: Boolean = js.native
+  var copyWithEmptySelection: Boolean
   
-  var cursorStyle: ace | slim | smooth | wide = js.native
+  var cursorStyle: ace | slim | smooth | wide
   
-  var enableAutoIndent: Boolean = js.native
+  var enableAutoIndent: Boolean
   
-  var highlightActiveLine: Boolean = js.native
+  var highlightActiveLine: Boolean
   
-  var highlightSelectedWord: Boolean = js.native
+  var highlightSelectedWord: Boolean
   
-  var keyboardHandler: String = js.native
+  var keyboardHandler: String
   
-  var mergeUndoDeltas: `true` | `false` | always = js.native
+  var mergeUndoDeltas: `true` | `false` | always
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
-  var selectionStyle: String = js.native
+  var selectionStyle: String
   
-  var session: EditSession = js.native
+  var session: EditSession
   
-  var value: String = js.native
+  var value: String
   
-  var wrapBehavioursEnabled: Boolean = js.native
+  var wrapBehavioursEnabled: Boolean
 }
 object EditorOptions {
   

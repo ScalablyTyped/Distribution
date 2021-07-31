@@ -8,44 +8,42 @@ import typings.syncRequest.formDataMod.FormDataEntry
 import typings.syncRequest.syncRequestStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
   /* Inlined parent std.Pick<then-request.then-request.Options, 'allowRedirectHeaders' | 'followRedirects' | 'gzip' | 'headers' | 'maxRedirects' | 'maxRetries' | 'qs' | 'json'> */
-  @js.native
   trait BaseOptions extends StObject {
     
-    var agent: js.UndefOr[Boolean] = js.native
+    var agent: js.UndefOr[Boolean] = js.undefined
     
-    var allowRedirectHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowRedirectHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var body: js.UndefOr[String | Buffer] = js.native
+    var body: js.UndefOr[String | Buffer] = js.undefined
     
-    var cache: js.UndefOr[file] = js.native
+    var cache: js.UndefOr[file] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var qs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var qs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var retry: js.UndefOr[Boolean] = js.native
+    var retry: js.UndefOr[Boolean] = js.undefined
     
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -153,10 +151,11 @@ object optionsMod {
     }
   }
   
-  @js.native
-  trait MessageOptions extends BaseOptions {
+  trait MessageOptions
+    extends StObject
+       with BaseOptions {
     
-    var form: js.UndefOr[js.Array[FormDataEntry]] = js.native
+    var form: js.UndefOr[js.Array[FormDataEntry]] = js.undefined
   }
   object MessageOptions {
     
@@ -180,10 +179,11 @@ object optionsMod {
     }
   }
   
-  @js.native
-  trait Options extends BaseOptions {
+  trait Options
+    extends StObject
+       with BaseOptions {
     
-    var form: js.UndefOr[FormData] = js.native
+    var form: js.UndefOr[FormData] = js.undefined
   }
   object Options {
     

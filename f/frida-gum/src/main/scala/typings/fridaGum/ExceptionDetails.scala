@@ -2,26 +2,24 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionDetails extends StObject {
   
   /**
     * Address where the exception occurred.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * CPU registers. You may also update register values by assigning to these keys.
     */
-  var context: CpuContext = js.native
+  var context: CpuContext
   
   /**
     * Memory operation details, if relevant.
     */
-  var memory: js.UndefOr[ExceptionMemoryDetails] = js.native
+  var memory: js.UndefOr[ExceptionMemoryDetails] = js.undefined
   
   /**
     * Address of the OS and architecture-specific CPU context struct.
@@ -30,12 +28,12 @@ trait ExceptionDetails extends StObject {
     * We would however discourage using this and rather submit a pull-request to add the missing bits needed
     * for your use-case.
     */
-  var nativeContext: NativePointer = js.native
+  var nativeContext: NativePointer
   
   /**
     * The kind of exception that occurred.
     */
-  var `type`: ExceptionType = js.native
+  var `type`: ExceptionType
 }
 object ExceptionDetails {
   

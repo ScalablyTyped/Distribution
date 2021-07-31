@@ -3,15 +3,15 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowAlertRequestedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowAlertRequestedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var message: String = js.native
+  var message: String
   
-  var url: String = js.native
+  var url: String
 }
 object WindowAlertRequestedEvent {
   
@@ -23,7 +23,7 @@ object WindowAlertRequestedEvent {
   }
   
   @scala.inline
-  implicit class WindowAlertRequestedEventMutableBuilder[Self <: WindowAlertRequestedEvent[_, _], Topic, Type] (val x: Self with (WindowAlertRequestedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowAlertRequestedEventMutableBuilder[Self <: WindowAlertRequestedEvent[?, ?], Topic, Type] (val x: Self & (WindowAlertRequestedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

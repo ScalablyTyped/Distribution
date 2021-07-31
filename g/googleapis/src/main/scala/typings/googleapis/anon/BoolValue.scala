@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoolValue extends StObject {
   
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
-  var multiIntValue: js.UndefOr[js.Array[String]] = js.native
+  var multiIntValue: js.UndefOr[js.Array[String]] = js.undefined
   
-  var multiValue: js.UndefOr[js.Array[String]] = js.native
+  var multiValue: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object BoolValue {
   

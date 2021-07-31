@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,47 +17,63 @@ object FloatingObjectVerticalPositionType extends StObject {
     * Relative to bottom margin.
     */
   @js.native
-  sealed trait BottomMargin extends FloatingObjectVerticalPositionType
+  sealed trait BottomMargin
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to inside margin.
     */
   @js.native
-  sealed trait InsideMargin extends FloatingObjectVerticalPositionType
+  sealed trait InsideMargin
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to line.
     */
   @js.native
-  sealed trait Line extends FloatingObjectVerticalPositionType
+  sealed trait Line
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to margin.
     */
   @js.native
-  sealed trait Margin extends FloatingObjectVerticalPositionType
+  sealed trait Margin
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to outside margin.
     */
   @js.native
-  sealed trait OutsideMargin extends FloatingObjectVerticalPositionType
+  sealed trait OutsideMargin
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to page.
     */
   @js.native
-  sealed trait Page extends FloatingObjectVerticalPositionType
+  sealed trait Page
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to paragraph.
     */
   @js.native
-  sealed trait Paragraph extends FloatingObjectVerticalPositionType
+  sealed trait Paragraph
+    extends StObject
+       with FloatingObjectVerticalPositionType
   
   /**
     * Relative to top margin.
     */
   @js.native
-  sealed trait TopMargin extends FloatingObjectVerticalPositionType
+  sealed trait TopMargin
+    extends StObject
+       with FloatingObjectVerticalPositionType
 }

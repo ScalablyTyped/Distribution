@@ -6,25 +6,25 @@ import typings.ltijs.idTokenMod.UserInfo
 import typings.ltijs.ltijsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object namesAndRolesMod {
   
-  @js.native
-  trait Member extends UserInfo {
+  trait Member
+    extends StObject
+       with UserInfo {
     
-    var lis_person_sourcedid: String = js.native
+    var lis_person_sourcedid: String
     
-    var middle_name: String = js.native
+    var middle_name: String
     
-    var picture: String = js.native
+    var picture: String
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
     
-    var status: String = js.native
+    var status: String
     
-    var user_id: String = js.native
+    var user_id: String
   }
   object Member {
     
@@ -71,16 +71,15 @@ object namesAndRolesMod {
     }
   }
   
-  @js.native
   trait MemberFilters extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var pages: js.UndefOr[Double] = js.native
+    var pages: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object MemberFilters {
     
@@ -119,16 +118,15 @@ object namesAndRolesMod {
     }
   }
   
-  @js.native
   trait MembersResult extends StObject {
     
-    var context: Id = js.native
+    var context: Id
     
-    var id: String = js.native
+    var id: String
     
-    var members: js.Array[Member] = js.native
+    var members: js.Array[Member]
     
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
   }
   object MembersResult {
     

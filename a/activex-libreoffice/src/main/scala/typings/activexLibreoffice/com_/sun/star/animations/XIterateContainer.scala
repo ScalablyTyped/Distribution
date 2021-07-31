@@ -6,30 +6,30 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An iterate container iterates over subitems of a given target object and animates them by subsequently executes the contained effects on them. ;  This
   * could be used to animate a target text word by word or letter by letter.
   */
-@js.native
-trait XIterateContainer extends XTimeContainer {
+trait XIterateContainer
+  extends StObject
+     with XTimeContainer {
   
   /** the time interval in percentage of the containers running time before the next iterated content is animated. */
-  var IterateInterval: Double = js.native
+  var IterateInterval: Double
   
   /** the type of iteration, this depends on the target. ;  See documentation of used animation engine for supported iteration types. */
-  var IterateType: Double = js.native
+  var IterateType: Double
   
   /**
     * This attribute specifies an optional subitem from the target element that should be animated. ;  A value of zero should always be the default and
     * animate the complete target. ;  See documentation of used animation engine for supported subitems.
     */
-  var SubItem: Double = js.native
+  var SubItem: Double
   
   /** a target that contains iterable contents, f.e. a paragraph. ;  See documentation of used animation engine for supported targets. */
-  var Target: js.Any = js.native
+  var Target: js.Any
 }
 object XIterateContainer {
   

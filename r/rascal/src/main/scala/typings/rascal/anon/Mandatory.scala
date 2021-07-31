@@ -2,15 +2,13 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mandatory extends StObject {
   
-  var mandatory: Boolean = js.native
+  var mandatory: Boolean
   
-  var persistent: Boolean = js.native
+  var persistent: Boolean
 }
 object Mandatory {
   

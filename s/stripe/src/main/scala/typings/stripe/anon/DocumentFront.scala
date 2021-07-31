@@ -2,16 +2,14 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentFront extends StObject {
   
   /**
     * An identifying document, either a passport or local ID card.
     */
-  var document: Front = js.native
+  var document: Front
 }
 object DocumentFront {
   

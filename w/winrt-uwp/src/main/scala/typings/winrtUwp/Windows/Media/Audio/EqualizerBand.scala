@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an equalizer band for the equalizer effect. */
-@js.native
 trait EqualizerBand extends StObject {
   
   /** Gets or sets the bandwidth for the equalizer band. */
-  var bandwidth: Double = js.native
+  var bandwidth: Double
   
   /** Gets or sets the frequency center for the equalizer band. */
-  var frequencyCenter: Double = js.native
+  var frequencyCenter: Double
   
   /** Gets or sets the gain for the equalizer band. */
-  var gain: Double = js.native
+  var gain: Double
 }
 object EqualizerBand {
   

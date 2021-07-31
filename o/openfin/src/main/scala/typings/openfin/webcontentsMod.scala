@@ -14,19 +14,19 @@ import typings.openfin.openfinStrings.xhr
 import typings.openfin.windowMod.WindowNavigationRejectedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webcontentsMod {
   
-  @js.native
-  trait CertificateErrorEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+  trait CertificateErrorEvent[Topic, Type]
+    extends StObject
+       with WindowEvent[Topic, Type] {
     
-    var certificate: js.Any = js.native
+    var certificate: js.Any
     
-    var error: String = js.native
+    var error: String
     
-    var url: String = js.native
+    var url: String
   }
   object CertificateErrorEvent {
     
@@ -46,7 +46,7 @@ object webcontentsMod {
     }
     
     @scala.inline
-    implicit class CertificateErrorEventMutableBuilder[Self <: CertificateErrorEvent[_, _], Topic, Type] (val x: Self with (CertificateErrorEvent[Topic, Type])) extends AnyVal {
+    implicit class CertificateErrorEventMutableBuilder[Self <: CertificateErrorEvent[?, ?], Topic, Type] (val x: Self & (CertificateErrorEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
@@ -59,10 +59,11 @@ object webcontentsMod {
     }
   }
   
-  @js.native
-  trait PageTitleUpdatedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+  trait PageTitleUpdatedEvent[Topic, Type]
+    extends StObject
+       with WindowEvent[Topic, Type] {
     
-    var title: String = js.native
+    var title: String
   }
   object PageTitleUpdatedEvent {
     
@@ -74,37 +75,38 @@ object webcontentsMod {
     }
     
     @scala.inline
-    implicit class PageTitleUpdatedEventMutableBuilder[Self <: PageTitleUpdatedEvent[_, _], Topic, Type] (val x: Self with (PageTitleUpdatedEvent[Topic, Type])) extends AnyVal {
+    implicit class PageTitleUpdatedEventMutableBuilder[Self <: PageTitleUpdatedEvent[?, ?], Topic, Type] (val x: Self & (PageTitleUpdatedEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait WebContentsEventMapping[Topic, Type] extends BaseEventMap {
+  trait WebContentsEventMapping[Topic, Type]
+    extends StObject
+       with BaseEventMap {
     
-    var blurred: WindowEvent[Topic, Type] = js.native
+    var blurred: WindowEvent[Topic, Type]
     
-    var `certificate-error`: CertificateErrorEvent[Topic, Type] = js.native
+    var `certificate-error`: CertificateErrorEvent[Topic, Type]
     
-    var crashed: CrashedEvent with (WindowEvent[Topic, Type]) = js.native
+    var crashed: CrashedEvent & (WindowEvent[Topic, Type])
     
-    var `did-change-theme-color`: WindowEvent[Topic, Type] = js.native
+    var `did-change-theme-color`: WindowEvent[Topic, Type]
     
-    var focused: WindowEvent[Topic, Type] = js.native
+    var focused: WindowEvent[Topic, Type]
     
-    var `found-in-page`: WindowEvent[Topic, Type] = js.native
+    var `found-in-page`: WindowEvent[Topic, Type]
     
-    var `navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type] = js.native
+    var `navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type]
     
-    var `page-favicon-updated`: WindowEvent[Topic, Type] = js.native
+    var `page-favicon-updated`: WindowEvent[Topic, Type]
     
-    var `page-title-updated`: PageTitleUpdatedEvent[Topic, Type] = js.native
+    var `page-title-updated`: PageTitleUpdatedEvent[Topic, Type]
     
-    var `resource-load-failed`: WindowResourceLoadFailedEvent[Topic, Type] = js.native
+    var `resource-load-failed`: WindowResourceLoadFailedEvent[Topic, Type]
     
-    var `resource-response-received`: WindowResourceResponseReceivedEvent[Topic, Type] = js.native
+    var `resource-response-received`: WindowResourceResponseReceivedEvent[Topic, Type]
   }
   object WebContentsEventMapping {
     
@@ -112,7 +114,7 @@ object webcontentsMod {
     def apply[Topic, Type](
       blurred: WindowEvent[Topic, Type],
       `certificate-error`: CertificateErrorEvent[Topic, Type],
-      crashed: CrashedEvent with (WindowEvent[Topic, Type]),
+      crashed: CrashedEvent & (WindowEvent[Topic, Type]),
       `did-change-theme-color`: WindowEvent[Topic, Type],
       focused: WindowEvent[Topic, Type],
       `found-in-page`: WindowEvent[Topic, Type],
@@ -137,7 +139,7 @@ object webcontentsMod {
     }
     
     @scala.inline
-    implicit class WebContentsEventMappingMutableBuilder[Self <: WebContentsEventMapping[_, _], Topic, Type] (val x: Self with (WebContentsEventMapping[Topic, Type])) extends AnyVal {
+    implicit class WebContentsEventMappingMutableBuilder[Self <: WebContentsEventMapping[?, ?], Topic, Type] (val x: Self & (WebContentsEventMapping[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setBlurred(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
@@ -146,7 +148,7 @@ object webcontentsMod {
       def `setCertificate-error`(value: CertificateErrorEvent[Topic, Type]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCrashed(value: CrashedEvent with (WindowEvent[Topic, Type])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+      def setCrashed(value: CrashedEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setDid-change-theme-color`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
@@ -174,16 +176,17 @@ object webcontentsMod {
     }
   }
   
-  @js.native
-  trait WindowResourceLoadFailedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+  trait WindowResourceLoadFailedEvent[Topic, Type]
+    extends StObject
+       with WindowEvent[Topic, Type] {
     
-    var errorCode: Double = js.native
+    var errorCode: Double
     
-    var errorDescription: String = js.native
+    var errorDescription: String
     
-    var isMainFrame: Boolean = js.native
+    var isMainFrame: Boolean
     
-    var validatedURL: String = js.native
+    var validatedURL: String
   }
   object WindowResourceLoadFailedEvent {
     
@@ -204,7 +207,7 @@ object webcontentsMod {
     }
     
     @scala.inline
-    implicit class WindowResourceLoadFailedEventMutableBuilder[Self <: WindowResourceLoadFailedEvent[_, _], Topic, Type] (val x: Self with (WindowResourceLoadFailedEvent[Topic, Type])) extends AnyVal {
+    implicit class WindowResourceLoadFailedEventMutableBuilder[Self <: WindowResourceLoadFailedEvent[?, ?], Topic, Type] (val x: Self & (WindowResourceLoadFailedEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
@@ -220,24 +223,25 @@ object webcontentsMod {
     }
   }
   
-  @js.native
-  trait WindowResourceResponseReceivedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+  trait WindowResourceResponseReceivedEvent[Topic, Type]
+    extends StObject
+       with WindowEvent[Topic, Type] {
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var httpResponseCode: Double = js.native
+    var httpResponseCode: Double
     
-    var newUrl: String = js.native
+    var newUrl: String
     
-    var originalUrl: String = js.native
+    var originalUrl: String
     
-    var referrer: String = js.native
+    var referrer: String
     
-    var requestMethod: String = js.native
+    var requestMethod: String
     
-    var resourceType: mainFrame | subFrame | styleSheet | script | image | `object` | xhr | other = js.native
+    var resourceType: mainFrame | subFrame | styleSheet | script | image | `object` | xhr | other
     
-    var status: Boolean = js.native
+    var status: Boolean
   }
   object WindowResourceResponseReceivedEvent {
     
@@ -262,7 +266,7 @@ object webcontentsMod {
     }
     
     @scala.inline
-    implicit class WindowResourceResponseReceivedEventMutableBuilder[Self <: WindowResourceResponseReceivedEvent[_, _], Topic, Type] (val x: Self with (WindowResourceResponseReceivedEvent[Topic, Type])) extends AnyVal {
+    implicit class WindowResourceResponseReceivedEventMutableBuilder[Self <: WindowResourceResponseReceivedEvent[?, ?], Topic, Type] (val x: Self & (WindowResourceResponseReceivedEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

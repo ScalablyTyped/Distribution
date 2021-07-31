@@ -2,23 +2,21 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowHead extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var imageHeight: js.UndefOr[Double] = js.native
+  var imageHeight: js.UndefOr[Double] = js.undefined
   
-  var imageWidth: js.UndefOr[Double] = js.native
+  var imageWidth: js.UndefOr[Double] = js.undefined
   
-  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ArrowHead {
   

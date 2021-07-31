@@ -4,7 +4,6 @@ import typings.powerappsComponentFramework.ComponentFramework.UserSettingApi.Typ
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,33 +14,32 @@ object UserSettingApi {
   /**
     * The interface for the Calendar exposed in DateFormattingInfo
     */
-  @js.native
   trait Calendar extends StObject {
     
     /**
       * @example 1
       */
-    var algorithmType: Double = js.native
+    var algorithmType: Double
     
     /**
       * @example 1
       */
-    var calendarType: Double = js.native
+    var calendarType: Double
     
     /**
       * @example "/Date(253402300799999)/"
       */
-    var maxSupportedDateTime: Date = js.native
+    var maxSupportedDateTime: Date
     
     /**
       * @example "/Date(-62135568000000)/"
       */
-    var minSupportedDateTime: Date = js.native
+    var minSupportedDateTime: Date
     
     /**
       * @example  2029
       */
-    var twoDigitYearMax: Double = js.native
+    var twoDigitYearMax: Double
   }
   object Calendar {
     
@@ -81,123 +79,122 @@ object UserSettingApi {
     * The interface for Org Date Format Info exposed to a custom control
     * Result pattern is based on culture,examples are for 'USA' area
     */
-  @js.native
   trait DateFormattingInfo extends StObject {
     
     /**
       * @example { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" }
       */
-    var abbreviatedDayNames: js.Array[String] = js.native
+    var abbreviatedDayNames: js.Array[String]
     
     /**
       * @example { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "" }
       */
-    var abbreviatedMonthGenitiveNames: js.Array[String] = js.native
+    var abbreviatedMonthGenitiveNames: js.Array[String]
     
     /**
       * @example { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "" }
       */
-    var abbreviatedMonthNames: js.Array[String] = js.native
+    var abbreviatedMonthNames: js.Array[String]
     
     /**
       * @example "AM"
       */
-    var amDesignator: String = js.native
+    var amDesignator: String
     
     /**
       * @example See interface Calendar
       */
-    var calendar: Calendar = js.native
+    var calendar: Calendar
     
     /**
       * @example 0
       */
-    var calendarWeekRule: Double = js.native
+    var calendarWeekRule: Double
     
     /**
       * @example "/"
       */
-    var dateSeparator: String = js.native
+    var dateSeparator: String
     
     /**
       * @example { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" }
       */
-    var dayNames: js.Array[String] = js.native
+    var dayNames: js.Array[String]
     
     /**
       * @example See interface DayOfWeek
       */
-    var firstDayOfWeek: DayOfWeek = js.native
+    var firstDayOfWeek: DayOfWeek
     
     /**
       * @example "dddd, MMMM d, yyyy h:mm:ss tt"
       */
-    var fullDateTimePattern: String = js.native
+    var fullDateTimePattern: String
     
     /**
       * @example "dddd, MMMM d, yyyy"
       */
-    var longDatePattern: String = js.native
+    var longDatePattern: String
     
     /**
       * @example "hh:mm:ss tt"
       */
-    var longTimePattern: String = js.native
+    var longTimePattern: String
     
     /**
       * @example "MMMM dd"
       */
-    var monthDayPattern: String = js.native
+    var monthDayPattern: String
     
     /**
       * @example { "January", "February", "March", ...  "December", "" }
       */
-    var monthGenitiveNames: js.Array[String] = js.native
+    var monthGenitiveNames: js.Array[String]
     
     /**
       * @example { "January", "February", "March", ...  "December", "" }
       */
-    var monthNames: js.Array[String] = js.native
+    var monthNames: js.Array[String]
     
     /**
       * @example "PM"
       */
-    var pmDesignator: String = js.native
+    var pmDesignator: String
     
     /**
       * @example "M/d/yyyy"
       */
-    var shortDatePattern: String = js.native
+    var shortDatePattern: String
     
     /**
       * @example "h:mm tt"
       */
-    var shortTimePattern: String = js.native
+    var shortTimePattern: String
     
     /**
       * @example { "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" }
       */
-    var shortestDayNames: js.Array[String] = js.native
+    var shortestDayNames: js.Array[String]
     
     /**
       * @example "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
       */
-    var sortableDateTimePattern: String = js.native
+    var sortableDateTimePattern: String
     
     /**
       * @example ":"
       */
-    var timeSeparator: String = js.native
+    var timeSeparator: String
     
     /**
       * @example "yyyy'-'MM'-'dd HH':'mm':'ss'Z'"
       */
-    var universalSortableDateTimePattern: String = js.native
+    var universalSortableDateTimePattern: String
     
     /**
       * @example "MMMM yyyy"
       */
-    var yearMonthPattern: String = js.native
+    var yearMonthPattern: String
   }
   object DateFormattingInfo {
     
@@ -330,138 +327,137 @@ object UserSettingApi {
     * The interface for the Org System Settings Number Format Info exposed to a custom control
     * Comments indicate example values
     */
-  @js.native
   trait NumberFormattingInfo extends StObject {
     
     /**
       * @example 2
       */
-    var currencyDecimalDigits: Double = js.native
+    var currencyDecimalDigits: Double
     
     /**
       * @example "."
       */
-    var currencyDecimalSeparator: String = js.native
+    var currencyDecimalSeparator: String
     
     /**
       * @example ","
       */
-    var currencyGroupSeparator: String = js.native
+    var currencyGroupSeparator: String
     
     /**
       * @example [ 3 ]
       */
-    var currencyGroupSizes: js.Array[Double] = js.native
+    var currencyGroupSizes: js.Array[Double]
     
     /**
       * @example 0
       */
-    var currencyNegativePattern: Double = js.native
+    var currencyNegativePattern: Double
     
     /**
       * @example 0
       */
-    var currencyPositivePattern: Double = js.native
+    var currencyPositivePattern: Double
     
     /**
       * @example "$"
       */
-    var currencySymbol: String = js.native
+    var currencySymbol: String
     
     /**
       * @example "NaN"
       */
-    var nanSymbol: String = js.native
+    var nanSymbol: String
     
     /**
       * @example { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
       */
-    var nativeDigits: js.Array[String] = js.native
+    var nativeDigits: js.Array[String]
     
     /**
       * @example "-Infinity"
       */
-    var negativeInfinitySymbol: String = js.native
+    var negativeInfinitySymbol: String
     
     /**
       * @example "-"
       */
-    var negativeSign: String = js.native
+    var negativeSign: String
     
     /**
       * @example 2
       */
-    var numberDecimalDigits: Double = js.native
+    var numberDecimalDigits: Double
     
     /**
       * @example "."
       */
-    var numberDecimalSeparator: String = js.native
+    var numberDecimalSeparator: String
     
     /**
       * @example ","
       */
-    var numberGroupSeparator: String = js.native
+    var numberGroupSeparator: String
     
     /**
       * @example [3]
       */
-    var numberGroupSizes: js.Array[Double] = js.native
+    var numberGroupSizes: js.Array[Double]
     
     /**
       * @example 1
       */
-    var numberNegativePattern: Double = js.native
+    var numberNegativePattern: Double
     
     /**
       * @example ""
       */
-    var perMilleSymbol: String = js.native
+    var perMilleSymbol: String
     
     /**
       * @example 2
       */
-    var percentDecimalDigits: Double = js.native
+    var percentDecimalDigits: Double
     
     /**
       * @example "."
       */
-    var percentDecimalSeparator: String = js.native
+    var percentDecimalSeparator: String
     
     /**
       * @example ","
       */
-    var percentGroupSeparator: String = js.native
+    var percentGroupSeparator: String
     
     /**
       * @example [3]
       */
-    var percentGroupSizes: js.Array[Double] = js.native
+    var percentGroupSizes: js.Array[Double]
     
     /**
       * @example 0
       */
-    var percentNegativePattern: Double = js.native
+    var percentNegativePattern: Double
     
     /**
       * @example 0
       */
-    var percentPositivePattern: Double = js.native
+    var percentPositivePattern: Double
     
     /**
       * @example "%"
       */
-    var percentSymbol: String = js.native
+    var percentSymbol: String
     
     /**
       * @example "Infinity"
       */
-    var positiveInfinitySymbol: String = js.native
+    var positiveInfinitySymbol: String
     
     /**
       * @example "+"
       */
-    var positiveSign: String = js.native
+    var positiveSign: String
   }
   object NumberFormattingInfo {
     

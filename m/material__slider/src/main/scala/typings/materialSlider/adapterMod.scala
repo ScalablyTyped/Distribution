@@ -7,43 +7,41 @@ import typings.materialSlider.typesMod.TickMark
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCSliderAdapter extends StObject {
     
     /**
       * Adds the given class to the slider root element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Adds the class to the given thumb element.
       */
-    def addThumbClass(className: String, thumb: Thumb): Unit = js.native
+    def addThumbClass(className: String, thumb: Thumb): Unit
     
     /**
       * Deregisters an event listener on the body element.
       */
-    def deregisterBodyEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterBodyEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Deregisters an event listener on the root element.
       */
-    def deregisterEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Deregisters an event listener on the given thumb element.
       */
-    def deregisterThumbEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterThumbEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Deregisters an event listener on the window.
       */
-    def deregisterWindowEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterWindowEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Emits a `change` event from the slider root, indicating that the value
@@ -51,19 +49,19 @@ object adapterMod {
       * Mirrors the native `change` event:
       * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
       */
-    def emitChangeEvent(value: Double, thumb: Thumb): Unit = js.native
+    def emitChangeEvent(value: Double, thumb: Thumb): Unit
     
     /**
       * Emits an event on drag end, containing the final value on the
       * thumb that was dragged.
       */
-    def emitDragEndEvent(value: Double, thumb: Thumb): Unit = js.native
+    def emitDragEndEvent(value: Double, thumb: Thumb): Unit
     
     /**
       * Emits an event on drag start, containing the current value on the
       * thumb being dragged.
       */
-    def emitDragStartEvent(value: Double, thumb: Thumb): Unit = js.native
+    def emitDragStartEvent(value: Double, thumb: Thumb): Unit
     
     /**
       * Emits an `input` event from the slider root, indicating that the value
@@ -71,22 +69,22 @@ object adapterMod {
       * Mirrors the native `input` event:
       * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
       */
-    def emitInputEvent(value: Double, thumb: Thumb): Unit = js.native
+    def emitInputEvent(value: Double, thumb: Thumb): Unit
     
     /**
       * Adds browser focus to the given thumb.
       */
-    def focusThumb(thumb: Thumb): Unit = js.native
+    def focusThumb(thumb: Thumb): Unit
     
     /**
       * @return Returns the given attribute value on the slider root element.
       */
-    def getAttribute(attribute: String): String | Null = js.native
+    def getAttribute(attribute: String): String | Null
     
     /**
       * @return Returns the bounding client rect for the slider root element.
       */
-    def getBoundingClientRect(): ClientRect = js.native
+    def getBoundingClientRect(): ClientRect
     
     /**
       * - If thumb is `Thumb.START`, returns the value on the start thumb
@@ -94,69 +92,69 @@ object adapterMod {
       * - If thumb is `Thumb.END`, returns the value on the end thumb (or
       *   only thumb for single point slider).
       */
-    def getThumbAttribute(attribute: String, thumb: Thumb): String | Null = js.native
+    def getThumbAttribute(attribute: String, thumb: Thumb): String | Null
     
     /**
       * @return Returns the bounding client rect of the given thumb.
       */
-    def getThumbBoundingClientRect(thumb: Thumb): ClientRect = js.native
+    def getThumbBoundingClientRect(thumb: Thumb): ClientRect
     
     /**
       * @return Returns the width of the given thumb knob.
       */
-    def getThumbKnobWidth(thumb: Thumb): Double = js.native
+    def getThumbKnobWidth(thumb: Thumb): Double
     
     /**
       * Returns a function that maps the slider value to the value of the
       * `aria-valuetext` attribute on the thumb element. If null, the
       * `aria-valuetext` attribute is unchanged when the value changes.
       */
-    def getValueToAriaValueTextFn(): (js.Function1[/* value */ Double, String]) | Null = js.native
+    def getValueToAriaValueTextFn(): (js.Function1[/* value */ Double, String]) | Null
     
     /**
       * @return Returns true if the slider root element has the given class.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * @return Returns true if the root element is RTL, otherwise false
       */
-    def isRTL(): Boolean = js.native
+    def isRTL(): Boolean
     
     /**
       * @return Returns true if the given thumb is focused.
       */
-    def isThumbFocused(thumb: Thumb): Boolean = js.native
+    def isThumbFocused(thumb: Thumb): Boolean
     
     /**
       * Registers an event listener on the body element.
       */
-    def registerBodyEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerBodyEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Registers an event listener on the root element.
       */
-    def registerEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Registers an event listener on the given thumb element.
       */
-    def registerThumbEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerThumbEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Registers an event listener on the window.
       */
-    def registerWindowEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerWindowEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Removes the given class from the slider root element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Removes the class from the given thumb element.
       */
-    def removeThumbClass(className: String, thumb: Thumb): Unit = js.native
+    def removeThumbClass(className: String, thumb: Thumb): Unit
     
     /**
       * Removes the given style property from the thumb element.
@@ -165,18 +163,18 @@ object adapterMod {
       * - If thumb is `Thumb.END`, removes style from the end thumb (or only thumb
       *   for single point slider).
       */
-    def removeThumbStyleProperty(propertyName: String, thumb: Thumb): Unit = js.native
+    def removeThumbStyleProperty(propertyName: String, thumb: Thumb): Unit
     
     /**
       * Removes the given style property from the active track element.
       */
-    def removeTrackActiveStyleProperty(propertyName: String): Unit = js.native
+    def removeTrackActiveStyleProperty(propertyName: String): Unit
     
     /**
       * Sets pointer capture on the slider root.
       * https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture
       */
-    def setPointerCapture(pointerId: Double): Unit = js.native
+    def setPointerCapture(pointerId: Double): Unit
     
     /**
       * - If thumb is `Thumb.START`, sets the attribute on the start thumb
@@ -184,7 +182,7 @@ object adapterMod {
       * - If thumb is `Thumb.END`, sets the attribute on the end thumb (or
       *   only thumb for single point slider).
       */
-    def setThumbAttribute(attribute: String, value: String, thumb: Thumb): Unit = js.native
+    def setThumbAttribute(attribute: String, value: String, thumb: Thumb): Unit
     
     /**
       * Sets a style property of the thumb element to the passed value.
@@ -193,12 +191,12 @@ object adapterMod {
       * - If thumb is `Thumb.END`, sets style on the end thumb (or only thumb
       *   for single point slider).
       */
-    def setThumbStyleProperty(propertyName: String, value: String, thumb: Thumb): Unit = js.native
+    def setThumbStyleProperty(propertyName: String, value: String, thumb: Thumb): Unit
     
     /**
       * Sets a style property of the active track element to the passed value.
       */
-    def setTrackActiveStyleProperty(propertyName: String, value: String): Unit = js.native
+    def setTrackActiveStyleProperty(propertyName: String, value: String): Unit
     
     /**
       * Sets value indicator text based on the given value.
@@ -207,7 +205,7 @@ object adapterMod {
       * - If thumb is `Thumb.END`, updates value indicator on end thumb (or
       *   only thumb for single point slider).
       */
-    def setValueIndicatorText(value: Double, thumb: Thumb): Unit = js.native
+    def setValueIndicatorText(value: Double, thumb: Thumb): Unit
     
     /**
       * Updates tick marks container element with tick mark elements and their
@@ -215,7 +213,7 @@ object adapterMod {
       * - TickMark.ACTIVE => `cssClasses.TICK_MARK_ACTIVE`
       * - TickMark.INACTIVE => `cssClasses.TICK_MARK_INACTIVE`
       */
-    def updateTickMarks(tickMarks: js.Array[TickMark]): Unit = js.native
+    def updateTickMarks(tickMarks: js.Array[TickMark]): Unit
   }
   object MDCSliderAdapter {
     

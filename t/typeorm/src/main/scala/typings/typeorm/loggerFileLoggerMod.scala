@@ -12,23 +12,24 @@ import typings.typeorm.typeormStrings.schema
 import typings.typeorm.typeormStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerFileLoggerMod {
   
   @JSImport("typeorm/logger/FileLogger", "FileLogger")
   @js.native
-  class FileLogger () extends Logger {
+  class FileLogger ()
+    extends StObject
+       with Logger {
     def this(options: js.Array[log | info | warn | query | schema | error | migration]) = this()
     def this(options: Boolean) = this()
     def this(options: all) = this()
-    def this(options: js.UndefOr[scala.Nothing], fileLoggerOptions: FileLoggerOptions) = this()
     def this(
       options: js.Array[log | info | warn | query | schema | error | migration],
       fileLoggerOptions: FileLoggerOptions
     ) = this()
     def this(options: Boolean, fileLoggerOptions: FileLoggerOptions) = this()
+    def this(options: Unit, fileLoggerOptions: FileLoggerOptions) = this()
     def this(options: all, fileLoggerOptions: FileLoggerOptions) = this()
     
     var fileLoggerOptions: js.Any = js.native
@@ -39,7 +40,7 @@ object loggerFileLoggerMod {
       * Converts parameters to a string.
       * Sometimes parameters can have circular objects and therefor we are handle this case too.
       */
-    /* protected */ def stringifyParams(parameters: js.Array[_]): String | js.Array[_] = js.native
+    /* protected */ def stringifyParams(parameters: js.Array[js.Any]): String | js.Array[js.Any] = js.native
     
     /**
       * Writes given strings into the log file.

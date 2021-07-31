@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterEventTopicRequest extends StObject {
   
   /**
     * The Directory ID that will publish status messages to the SNS topic.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The SNS topic name to which the directory will publish status messages. This SNS topic must be in the same region as the specified Directory ID.
     */
-  var TopicName: typings.awsSdk.directoryserviceMod.TopicName = js.native
+  var TopicName: typings.awsSdk.directoryserviceMod.TopicName
 }
 object RegisterEventTopicRequest {
   

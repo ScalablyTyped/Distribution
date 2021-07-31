@@ -2,25 +2,25 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RadialGradientBackground extends _BackgroundProps {
+trait RadialGradientBackground
+  extends StObject
+     with _BackgroundProps {
   
-  var cx: js.UndefOr[String] = js.native
+  var cx: js.UndefOr[String] = js.undefined
   
-  var cy: js.UndefOr[String] = js.native
+  var cy: js.UndefOr[String] = js.undefined
   
-  var fx: js.UndefOr[String] = js.native
+  var fx: js.UndefOr[String] = js.undefined
   
-  var fy: js.UndefOr[String] = js.native
+  var fy: js.UndefOr[String] = js.undefined
   
-  var rx: js.UndefOr[String] = js.native
+  var rx: js.UndefOr[String] = js.undefined
   
-  var ry: js.UndefOr[String] = js.native
+  var ry: js.UndefOr[String] = js.undefined
   
-  var stops: js.UndefOr[js.Array[StopsProps]] = js.native
+  var stops: js.UndefOr[js.Array[StopsProps]] = js.undefined
 }
 object RadialGradientBackground {
   

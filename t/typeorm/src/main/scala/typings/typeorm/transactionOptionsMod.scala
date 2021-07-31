@@ -3,17 +3,15 @@ package typings.typeorm
 import typings.typeorm.isolationLevelMod.IsolationLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionOptionsMod {
   
-  @js.native
   trait TransactionOptions extends StObject {
     
-    var connectionName: js.UndefOr[String] = js.native
+    var connectionName: js.UndefOr[String] = js.undefined
     
-    var isolation: js.UndefOr[IsolationLevel] = js.native
+    var isolation: js.UndefOr[IsolationLevel] = js.undefined
   }
   object TransactionOptions {
     

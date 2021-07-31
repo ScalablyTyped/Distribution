@@ -2,26 +2,24 @@ package typings.ionicCore.componentsMod.Components
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonRadioGroup extends StObject {
   
   /**
     * If `true`, the radios can be deselected.
     */
-  var allowEmptySelection: Boolean = js.native
+  var allowEmptySelection: Boolean
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * the value of the radio group.
     */
-  var value: js.UndefOr[js.Any | Null] = js.native
+  var value: js.UndefOr[js.Any | Null] = js.undefined
 }
 object IonRadioGroup {
   

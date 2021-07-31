@@ -3,37 +3,35 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for the Tabs
   */
-@js.native
 trait TabsOptions extends StObject {
   
   /**
     * Transition duration in milliseconds.
     * @default 300
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Callback for when a new tab content is shown
     */
-  def onShow(newContent: Element): Unit = js.native
+  def onShow(newContent: Element): Unit
   
   /**
     * The maximum width of the screen, in pixels, where the swipeable functionality initializes.
     * @default infinity
     */
-  var responsiveThreshold: Double = js.native
+  var responsiveThreshold: Double
   
   /**
     * Set to true to enable swipeable tabs. This also uses the responsiveThreshold option
     * @default false
     */
-  var swipeable: Boolean = js.native
+  var swipeable: Boolean
 }
 object TabsOptions {
   

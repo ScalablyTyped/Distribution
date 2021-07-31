@@ -3,11 +3,11 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoreWindowPopupShowingEventArgs extends ICoreWindowPopupShowingEventArgs
+trait CoreWindowPopupShowingEventArgs
+  extends StObject
+     with ICoreWindowPopupShowingEventArgs
 object CoreWindowPopupShowingEventArgs {
   
   @scala.inline

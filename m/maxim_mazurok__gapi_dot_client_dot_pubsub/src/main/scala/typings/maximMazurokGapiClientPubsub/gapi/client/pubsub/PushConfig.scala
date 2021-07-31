@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushConfig extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait PushConfig extends StObject {
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /** If specified, Pub/Sub will generate and attach an OIDC JWT token as an `Authorization` header in the HTTP request for every pushed message. */
-  var oidcToken: js.UndefOr[OidcToken] = js.native
+  var oidcToken: js.UndefOr[OidcToken] = js.undefined
   
   /** A URL locating the endpoint to which messages should be pushed. For example, a Webhook endpoint might use `https://example.com/push`. */
-  var pushEndpoint: js.UndefOr[String] = js.native
+  var pushEndpoint: js.UndefOr[String] = js.undefined
 }
 object PushConfig {
   
@@ -44,7 +42,7 @@ object PushConfig {
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline

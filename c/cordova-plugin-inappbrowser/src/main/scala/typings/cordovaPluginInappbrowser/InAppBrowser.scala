@@ -5,7 +5,6 @@ import typings.cordovaPluginInappbrowser.anon.File
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -77,9 +76,9 @@ trait InAppBrowser extends StObject {
     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
     */
   def open(url: String): InAppBrowser = js.native
-  def open(url: String, target: js.UndefOr[scala.Nothing], options: String): InAppBrowser = js.native
   def open(url: String, target: String): InAppBrowser = js.native
   def open(url: String, target: String, options: String): InAppBrowser = js.native
+  def open(url: String, target: Unit, options: String): InAppBrowser = js.native
   
   // removeEventListener overloads
   /**

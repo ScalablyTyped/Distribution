@@ -4,7 +4,6 @@ import typings.cswAasJs.authMod.Auth
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authContextMod {
@@ -25,37 +24,34 @@ object authContextMod {
     
     @JSImport("csw-aas-js/dist/components/context/AuthContext", "AuthContextDefaultState.auth")
     @js.native
-    def auth: Null = js.native
+    def auth: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def auth_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth")(x.asInstanceOf[js.Any])
+    def auth_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth")(x.asInstanceOf[js.Any])
     
-    @JSImport("csw-aas-js/dist/components/context/AuthContext", "AuthContextDefaultState.login")
-    @js.native
-    def login(): Unit = js.native
+    @scala.inline
+    def login(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")().asInstanceOf[Unit]
     
-    @JSImport("csw-aas-js/dist/components/context/AuthContext", "AuthContextDefaultState.logout")
-    @js.native
-    def logout(): Unit = js.native
+    @scala.inline
+    def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
   }
   
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(Consumer) */ @JSImport("csw-aas-js/dist/components/context/AuthContext", "Provider")
   @js.native
   val Provider: typings.react.mod.Provider[AuthContextType] = js.native
   
-  @js.native
   trait AuthContextType extends StObject {
     
-    var auth: Auth | Null = js.native
+    var auth: Auth | Null
     
-    def login(): Unit = js.native
+    def login(): Unit
     
-    def logout(): Unit = js.native
+    def logout(): Unit
   }
   object AuthContextType {
     
     @scala.inline
     def apply(login: () => Unit, logout: () => Unit): AuthContextType = {
-      val __obj = js.Dynamic.literal(login = js.Any.fromFunction0(login), logout = js.Any.fromFunction0(logout))
+      val __obj = js.Dynamic.literal(login = js.Any.fromFunction0(login), logout = js.Any.fromFunction0(logout), auth = null)
       __obj.asInstanceOf[AuthContextType]
     }
     

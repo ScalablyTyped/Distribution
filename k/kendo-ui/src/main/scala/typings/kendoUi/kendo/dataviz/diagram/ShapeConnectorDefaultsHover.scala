@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeConnectorDefaultsHover extends StObject {
   
-  var fill: js.UndefOr[String | ShapeConnectorDefaultsHoverFill] = js.native
+  var fill: js.UndefOr[String | ShapeConnectorDefaultsHoverFill] = js.undefined
   
-  var stroke: js.UndefOr[String | ShapeConnectorDefaultsHoverStroke] = js.native
+  var stroke: js.UndefOr[String | ShapeConnectorDefaultsHoverStroke] = js.undefined
 }
 object ShapeConnectorDefaultsHover {
   

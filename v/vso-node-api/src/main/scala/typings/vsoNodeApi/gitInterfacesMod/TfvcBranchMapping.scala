@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcBranchMapping extends StObject {
   
   /**
     * Depth of the branch.
     */
-  var depth: String = js.native
+  var depth: String
   
   /**
     * Server item for the branch.
     */
-  var serverItem: String = js.native
+  var serverItem: String
   
   /**
     * Type of the branch.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TfvcBranchMapping {
   

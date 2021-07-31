@@ -1,21 +1,23 @@
 package typings.wonderJs
 
 import typings.wonderJs.timeControllerMod.TimeController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/utils/time/CommonTimeController", JSImport.Namespace)
-@js.native
-object commonTimeControllerMod extends js.Object {
+object commonTimeControllerMod {
+  
+  @JSImport("wonder.js/dist/es2015/utils/time/CommonTimeController", "CommonTimeController")
   @js.native
   class CommonTimeController () extends TimeController
-  
   /* static members */
-  @js.native
-  object CommonTimeController extends js.Object {
-    def create(): CommonTimeController = js.native
+  object CommonTimeController {
+    
+    @JSImport("wonder.js/dist/es2015/utils/time/CommonTimeController", "CommonTimeController")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): CommonTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonTimeController]
   }
-  
 }
-

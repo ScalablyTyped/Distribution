@@ -2,31 +2,29 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecommendationsRequest extends StObject {
   
   /**
     *  The start time of the profile to get analysis data about. You must specify startTime and endTime. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     *  The language used to provide analysis. Specify using a string that is one of the following BCP 47 language codes.     de-DE - German, Germany     en-GB - English, United Kingdom     en-US - English, United States     es-ES - Spanish, Spain     fr-FR - French, France     it-IT - Italian, Italy     ja-JP - Japanese, Japan     ko-KR - Korean, Republic of Korea     pt-BR - Portugese, Brazil     zh-CN - Chinese, China     zh-TW - Chinese, Taiwan   
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
   /**
     *  The name of the profiling group to get analysis data about. 
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
   
   /**
     *  The end time of the profile to get analysis data about. You must specify startTime and endTime. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
 }
 object GetRecommendationsRequest {
   

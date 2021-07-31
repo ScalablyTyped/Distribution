@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a contiguous range of text.
   */
-@js.native
 trait SchemaRange extends StObject {
   
   /**
@@ -17,20 +15,20 @@ trait SchemaRange extends StObject {
     * Int32Value in order to accommodate future use cases with open-ended
     * ranges.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the header, footer or footnote that this range is contained in.
     * An empty segment ID signifies the document&#39;s body.
     */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The zero-based start index of this range, in UTF-16 code units.  In all
     * current uses, a start index must be provided. This field is an Int32Value
     * in order to accommodate future use cases with open-ended ranges.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaRange {
   

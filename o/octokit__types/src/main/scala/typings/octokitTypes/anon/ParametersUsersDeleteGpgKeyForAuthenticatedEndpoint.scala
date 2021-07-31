@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.UsersDeleteGpgKeyForAuthenticatedReques
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersDeleteGpgKeyForAuthenticatedEndpoint = js.native
+  var parameters: UsersDeleteGpgKeyForAuthenticatedEndpoint
   
-  var request: UsersDeleteGpgKeyForAuthenticatedRequestOptions = js.native
+  var request: UsersDeleteGpgKeyForAuthenticatedRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint {
   def apply(
     parameters: UsersDeleteGpgKeyForAuthenticatedEndpoint,
     request: UsersDeleteGpgKeyForAuthenticatedRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint]
@@ -39,6 +37,6 @@ object ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint {
     def setRequest(value: UsersDeleteGpgKeyForAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

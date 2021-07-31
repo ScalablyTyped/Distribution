@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A descriptor contains at least the information of the name of an object.
   * @see com.sun.star.sdbcx.XAppend
   */
-@js.native
-trait Descriptor extends XPropertySet {
+trait Descriptor
+  extends StObject
+     with XPropertySet {
   
   /** is the name for the object to create. */
-  var Name: String = js.native
+  var Name: String
 }
 object Descriptor {
   

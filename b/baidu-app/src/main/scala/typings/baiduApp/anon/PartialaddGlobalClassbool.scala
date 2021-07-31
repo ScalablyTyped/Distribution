@@ -2,16 +2,14 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  addGlobalClass :boolean,   multipleSlots :boolean}> */
-@js.native
 trait PartialaddGlobalClassbool extends StObject {
   
-  var addGlobalClass: js.UndefOr[Boolean] = js.native
+  var addGlobalClass: js.UndefOr[Boolean] = js.undefined
   
-  var multipleSlots: js.UndefOr[Boolean] = js.native
+  var multipleSlots: js.UndefOr[Boolean] = js.undefined
 }
 object PartialaddGlobalClassbool {
   

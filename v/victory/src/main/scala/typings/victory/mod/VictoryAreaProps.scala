@@ -6,14 +6,13 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryAreaProps
-  extends VictorySingleLabableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictorySingleLabableProps {
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -52,26 +51,26 @@ trait VictoryAreaProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, all]]] = js.native
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, all]]] = js.undefined
   
   /**
     * The interpolation prop determines how data points should be connected when plotting a line
     * @default "linear"
     */
-  var interpolation: js.UndefOr[InterpolationPropType] = js.native
+  var interpolation: js.UndefOr[InterpolationPropType] = js.undefined
   
   /**
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
-  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.native
+  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.undefined
   
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     * @default 50
     */
-  var samples: js.UndefOr[Double] = js.native
+  var samples: js.UndefOr[Double] = js.undefined
   
   /**
     * The style prop specifies styles for your VictoryArea. Any valid inline style properties
@@ -80,7 +79,7 @@ trait VictoryAreaProps
     * components within chart.
     * @example {data: {fill: "red"}, labels: {fontSize: 12}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 object VictoryAreaProps {
   

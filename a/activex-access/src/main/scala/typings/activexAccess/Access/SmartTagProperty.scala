@@ -2,22 +2,20 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagProperty extends StObject {
   
   @JSName("Access.SmartTagProperty_typekey")
-  var AccessDotSmartTagProperty_typekey: SmartTagProperty = js.native
+  var AccessDotSmartTagProperty_typekey: SmartTagProperty
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var Value: String = js.native
+  var Value: String
 }
 object SmartTagProperty {
   

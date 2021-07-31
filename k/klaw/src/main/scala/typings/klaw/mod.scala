@@ -11,17 +11,18 @@ import typings.node.streamMod.ReadableOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(root: String): Walker = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  @scala.inline
+  def apply(root: String, options: Options): Walker = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  
   @JSImport("klaw", JSImport.Namespace)
   @js.native
-  def apply(root: String): Walker = js.native
-  @JSImport("klaw", JSImport.Namespace)
-  @js.native
-  def apply(root: String, options: Options): Walker = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.klaw.klawStrings.close
@@ -57,12 +58,11 @@ object mod {
     def resume: typings.klaw.klawStrings.resume = "resume".asInstanceOf[typings.klaw.klawStrings.resume]
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var stats: Stats = js.native
+    var stats: Stats
   }
   object Item {
     
@@ -83,21 +83,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends ReadableOptions {
+  trait Options
+    extends StObject
+       with ReadableOptions {
     
-    var depthLimit: js.UndefOr[Double] = js.native
+    var depthLimit: js.UndefOr[Double] = js.undefined
     
     // fs or mock-fs
-    var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
     
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
-    var pathSorter: js.UndefOr[js.Function2[/* pathA */ String, /* pathB */ String, Double]] = js.native
+    var pathSorter: js.UndefOr[js.Function2[/* pathA */ String, /* pathB */ String, Double]] = js.undefined
     
-    var preserveSymlinks: js.UndefOr[Boolean] = js.native
+    var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
     
-    var queueMethod: js.UndefOr[QueueMethod] = js.native
+    var queueMethod: js.UndefOr[QueueMethod] = js.undefined
   }
   object Options {
     

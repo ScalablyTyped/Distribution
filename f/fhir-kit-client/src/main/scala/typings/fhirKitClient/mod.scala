@@ -733,14 +733,15 @@ import typings.fhirKitClient.anon.`9`
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fhir-kit-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Client {
+  class ^ protected ()
+    extends StObject
+       with Client {
     /**
       * Create a FHIR client.
       *
@@ -1113,8 +1114,8 @@ object mod {
       *
       * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
       */
-    def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
-    def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+    def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle & Type[T])] = js.native
+    def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle & Type[T])] = js.native
     
     def patch(params: HeadersIdJSONPatch): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
     def patch(params: HeadersIdJSONPatchOptions): js.Promise[OperationOutcome | AuditEvent] = js.native
@@ -1291,8 +1292,8 @@ object mod {
       *
       * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
       */
-    def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
-    def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+    def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle & Type[T])] = js.native
+    def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle & Type[T])] = js.native
     
     def read(params: HeadersId): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
     def read(params: HeadersIdOptions): js.Promise[OperationOutcome | AuditEvent] = js.native
@@ -2072,12 +2073,11 @@ object mod {
     def vread(params: `210`): js.Promise[OperationOutcome | VisionPrescription] = js.native
   }
   
-  @js.native
   trait Compartment extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var resourceType: String = js.native
+    var resourceType: String
   }
   object Compartment {
     
@@ -2098,9 +2098,9 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomResource
-    extends ResourceBase
+    extends StObject
+       with ResourceBase
        with /* key */ StringDictionary[js.Any]
   object CustomResource {
     
@@ -2593,16 +2593,15 @@ object mod {
   
   type SearchParams = StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])]
   
-  @js.native
   trait SmartAuthMetadata extends StObject {
     
-    var authorizeUrl: js.UndefOr[String] = js.native
+    var authorizeUrl: js.UndefOr[String] = js.undefined
     
-    var manageUrl: js.UndefOr[String] = js.native
+    var manageUrl: js.UndefOr[String] = js.undefined
     
-    var registerUrl: js.UndefOr[String] = js.native
+    var registerUrl: js.UndefOr[String] = js.undefined
     
-    var tokenUrl: js.UndefOr[String] = js.native
+    var tokenUrl: js.UndefOr[String] = js.undefined
   }
   object SmartAuthMetadata {
     

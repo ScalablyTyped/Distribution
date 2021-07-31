@@ -6,17 +6,15 @@ import typings.ckeditor.CKEDITOR.htmlParser.rule
 import typings.ckeditor.CKEDITOR.htmlParser.ruleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option extends StObject {
   
-  var option: ruleOptions = js.native
+  var option: ruleOptions
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var value: rule = js.native
+  var value: rule
 }
 object Option {
   

@@ -12,7 +12,7 @@ Wrapper for fetch to simplify sending and receiving RDF data
 | Keywords           | rdf, rdfjs, fetch, light, lite |
 | # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 9453 |
+| # downloads        | 25540 |
 | # stars            | 0 |
 
 ## Links

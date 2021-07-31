@@ -2,25 +2,23 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceSignerAttachment extends StObject {
   
-  var attachmentDescription: js.UndefOr[String] = js.native
+  var attachmentDescription: js.UndefOr[String] = js.undefined
   
-  var attachmentTabId: js.UndefOr[String] = js.native
+  var attachmentTabId: js.UndefOr[String] = js.undefined
   
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
-  var pageId: js.UndefOr[String] = js.native
+  var pageId: js.UndefOr[String] = js.undefined
   
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
 }
 object DisplayApplianceSignerAttachment {
   

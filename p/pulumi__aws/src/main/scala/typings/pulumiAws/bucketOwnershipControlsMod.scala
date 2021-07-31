@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketOwnershipControlsMod {
@@ -39,6 +38,10 @@ object bucketOwnershipControlsMod {
   /* static members */
   object BucketOwnershipControls {
     
+    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketOwnershipControls resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object bucketOwnershipControlsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketOwnershipControls = js.native
-    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketOwnershipControls = js.native
-    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): BucketOwnershipControls = js.native
-    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): BucketOwnershipControls = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
     
     /**
       * Returns true if the given object is an instance of BucketOwnershipControls.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucketOwnershipControls", "BucketOwnershipControls.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean]
   }
   
-  @js.native
   trait BucketOwnershipControlsArgs extends StObject {
     
     /**
       * The name of the bucket that you want to associate this access point with.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Configuration block(s) with Ownership Controls rules. Detailed below.
       */
-    val rule: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule] = js.native
+    val rule: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]
   }
   object BucketOwnershipControlsArgs {
     
@@ -102,18 +99,17 @@ object bucketOwnershipControlsMod {
     }
   }
   
-  @js.native
   trait BucketOwnershipControlsState extends StObject {
     
     /**
       * The name of the bucket that you want to associate this access point with.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) with Ownership Controls rules. Detailed below.
       */
-    val rule: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]] = js.native
+    val rule: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]] = js.undefined
   }
   object BucketOwnershipControlsState {
     

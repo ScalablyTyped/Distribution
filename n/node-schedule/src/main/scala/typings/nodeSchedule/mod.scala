@@ -4,10 +4,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-schedule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-schedule", "Invocation")
   @js.native
@@ -40,11 +43,11 @@ object mod {
     def this(name: String, job: JobCallback) = this()
     def this(name: JobCallback, job: js.Function0[Unit]) = this()
     def this(name: JobCallback, job: JobCallback) = this()
-    def this(name: String, job: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
     def this(name: String, job: js.Function0[Unit], callback: js.Function0[Unit]) = this()
+    def this(name: String, job: Unit, callback: js.Function0[Unit]) = this()
     def this(name: String, job: JobCallback, callback: js.Function0[Unit]) = this()
-    def this(name: JobCallback, job: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
     def this(name: JobCallback, job: js.Function0[Unit], callback: js.Function0[Unit]) = this()
+    def this(name: JobCallback, job: Unit, callback: js.Function0[Unit]) = this()
     def this(name: JobCallback, job: JobCallback, callback: js.Function0[Unit]) = this()
     
     /**
@@ -122,12 +125,12 @@ object mod {
   @js.native
   class Range () extends StObject {
     def this(start: Double) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Double) = this()
     def this(start: Double, end: Double) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], step: Double) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Double, step: Double) = this()
-    def this(start: Double, end: js.UndefOr[scala.Nothing], step: Double) = this()
+    def this(start: Unit, end: Double) = this()
     def this(start: Double, end: Double, step: Double) = this()
+    def this(start: Double, end: Unit, step: Double) = this()
+    def this(start: Unit, end: Double, step: Double) = this()
+    def this(start: Unit, end: Unit, step: Double) = this()
     
     /** Whether the class contains the specified value. */
     def contains(value: Double): Boolean = js.native
@@ -169,80 +172,56 @@ object mod {
     var year: RecurrenceSegment = js.native
   }
   
-  @JSImport("node-schedule", "cancelJob")
-  @js.native
-  def cancelJob(job: String): Boolean = js.native
-  @JSImport("node-schedule", "cancelJob")
-  @js.native
-  def cancelJob(job: Job): Boolean = js.native
+  @scala.inline
+  def cancelJob(job: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def cancelJob(job: Job): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: String, spec: String): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: String, spec: RecurrenceRule): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: String, spec: RecurrenceSpecDateRange): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: String, spec: RecurrenceSpecObjLit): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: String, spec: Date): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: Job, spec: String): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: Job, spec: RecurrenceRule): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = js.native
-  @JSImport("node-schedule", "rescheduleJob")
-  @js.native
-  def rescheduleJob(job: Job, spec: Date): Job = js.native
+  @scala.inline
+  def rescheduleJob(job: String, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: String, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: String, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: String, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: String, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: Job, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: Job, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def rescheduleJob(job: Job, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: String, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: String, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: Double, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
-  @JSImport("node-schedule", "scheduleJob")
-  @js.native
-  def scheduleJob(rule: Date, callback: JobCallback): Job = js.native
+  @scala.inline
+  def scheduleJob(name: String, rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  @scala.inline
+  def scheduleJob(rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   
   type JobCallback = js.Function1[/* fireDate */ Date, Unit]
   
@@ -250,28 +229,27 @@ object mod {
   
   type RecurrenceSegment = Recurrence | js.Array[Recurrence]
   
-  @js.native
   trait RecurrenceSpecDateRange extends StObject {
     
     /**
       * Ending date in date range.
       */
-    var end: js.UndefOr[Date | String | Double] = js.native
+    var end: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * Cron expression string.
       */
-    var rule: String = js.native
+    var rule: String
     
     /**
       * Starting date in date range.
       */
-    var start: js.UndefOr[Date | String | Double] = js.native
+    var start: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * Timezone
       */
-    var tz: js.UndefOr[Timezone] = js.native
+    var tz: js.UndefOr[Timezone] = js.undefined
   }
   object RecurrenceSpecDateRange {
     
@@ -307,30 +285,29 @@ object mod {
     }
   }
   
-  @js.native
   trait RecurrenceSpecObjLit extends StObject {
     
     /**
       * Day of the month.
       */
-    var date: js.UndefOr[RecurrenceSegment] = js.native
+    var date: js.UndefOr[RecurrenceSegment] = js.undefined
     
-    var dayOfWeek: js.UndefOr[RecurrenceSegment] = js.native
+    var dayOfWeek: js.UndefOr[RecurrenceSegment] = js.undefined
     
-    var hour: js.UndefOr[RecurrenceSegment] = js.native
+    var hour: js.UndefOr[RecurrenceSegment] = js.undefined
     
-    var minute: js.UndefOr[RecurrenceSegment] = js.native
+    var minute: js.UndefOr[RecurrenceSegment] = js.undefined
     
-    var month: js.UndefOr[RecurrenceSegment] = js.native
+    var month: js.UndefOr[RecurrenceSegment] = js.undefined
     
-    var second: js.UndefOr[RecurrenceSegment] = js.native
+    var second: js.UndefOr[RecurrenceSegment] = js.undefined
     
     /**
       * Timezone
       */
-    var tz: js.UndefOr[Timezone] = js.native
+    var tz: js.UndefOr[Timezone] = js.undefined
     
-    var year: js.UndefOr[RecurrenceSegment] = js.native
+    var year: js.UndefOr[RecurrenceSegment] = js.undefined
   }
   object RecurrenceSpecObjLit {
     

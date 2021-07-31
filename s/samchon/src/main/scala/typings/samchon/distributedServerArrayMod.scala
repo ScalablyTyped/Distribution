@@ -4,7 +4,6 @@ import typings.samchon.distributedSystemArrayMod.DistributedSystemArray
 import typings.samchon.idistributedserverMod.IDistributedServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributedServerArrayMod {

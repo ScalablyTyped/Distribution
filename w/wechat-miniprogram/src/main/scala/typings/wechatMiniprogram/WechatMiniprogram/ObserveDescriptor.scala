@@ -2,33 +2,31 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** media query 描述符 */
-@js.native
 trait ObserveDescriptor extends StObject {
   
   /** 页面高度（ px 为单位） */
-  var height: Double = js.native
+  var height: Double
   
   /** 页面最大高度（ px 为单位） */
-  var maxHeight: Double = js.native
+  var maxHeight: Double
   
   /** 页面最大宽度（ px 为单位） */
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
   /** 页面最小高度（ px 为单位） */
-  var minHeight: Double = js.native
+  var minHeight: Double
   
   /** 页面最小宽度（ px 为单位） */
-  var minWidth: Double = js.native
+  var minWidth: Double
   
   /** 屏幕方向（ `landscape` 或 `portrait` ） */
-  var orientation: String = js.native
+  var orientation: String
   
   /** 页面宽度（ px 为单位） */
-  var width: Double = js.native
+  var width: Double
 }
 object ObserveDescriptor {
   

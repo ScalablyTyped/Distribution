@@ -4,32 +4,30 @@ import typings.maximMazurokGapiClientAdsensehost.anon.BackupOption
 import typings.maximMazurokGapiClientAdsensehost.anon.MarkupLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdUnit extends StObject {
   
   /** Identity code of this ad unit, not necessarily unique across ad clients. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated). */
-  var contentAdsSettings: js.UndefOr[BackupOption] = js.native
+  var contentAdsSettings: js.UndefOr[BackupOption] = js.undefined
   
   /** Custom style information specific to this ad unit. */
-  var customStyle: js.UndefOr[AdStyle] = js.native
+  var customStyle: js.UndefOr[AdStyle] = js.undefined
   
   /** Unique identifier of this ad unit. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Kind of resource this is, in this case adsensehost#adUnit. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Settings specific to WAP mobile content ads (AFMC - deprecated). */
-  var mobileContentAdsSettings: js.UndefOr[MarkupLanguage] = js.native
+  var mobileContentAdsSettings: js.UndefOr[MarkupLanguage] = js.undefined
   
   /** Name of this ad unit. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Status of this ad unit. Possible values are:
@@ -39,7 +37,7 @@ trait AdUnit extends StObject {
     *
     * INACTIVE: Indicates that there has been no activity on this ad unit in the last seven days.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object AdUnit {
   

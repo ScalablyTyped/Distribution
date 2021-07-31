@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edits extends StObject {
   
   /**
     * The server supports deltas for full documents.
     */
-  var edits: js.UndefOr[Boolean] = js.native
+  var edits: js.UndefOr[Boolean] = js.undefined
 }
 object Edits {
   

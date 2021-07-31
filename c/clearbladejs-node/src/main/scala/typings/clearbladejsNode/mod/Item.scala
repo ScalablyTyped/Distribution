@@ -2,19 +2,17 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
-  def save(): Unit = js.native
+  def save(): Unit
 }
 object Item {
   

@@ -11,26 +11,26 @@ import typings.angularCompiler.staticSymbolResolverMod.ResolvedStaticSymbol
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object summarySerializerMod {
   
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "createForJitStub")
+  @JSImport("@angular/compiler/src/aot/summary_serializer", JSImport.Namespace)
   @js.native
-  def createForJitStub(outputCtx: OutputContext, reference: StaticSymbol): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "deserializeSummaries")
-  @js.native
+  @scala.inline
+  def createForJitStub(outputCtx: OutputContext, reference: StaticSymbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createForJitStub")(outputCtx.asInstanceOf[js.Any], reference.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def deserializeSummaries(
     symbolCache: StaticSymbolCache,
     summaryResolver: SummaryResolver[StaticSymbol],
     libraryFileName: String,
     json: String
-  ): ModuleName = js.native
+  ): ModuleName = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSummaries")(symbolCache.asInstanceOf[js.Any], summaryResolver.asInstanceOf[js.Any], libraryFileName.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[ModuleName]
   
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
-  @js.native
+  @scala.inline
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -38,9 +38,8 @@ object summarySerializerMod {
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata]
-  ): Json = js.native
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
-  @js.native
+  ): Json = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeSummaries")(srcFileName.asInstanceOf[js.Any], forJitCtx.asInstanceOf[js.Any], summaryResolver.asInstanceOf[js.Any], symbolResolver.asInstanceOf[js.Any], symbols.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Json]
+  @scala.inline
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -49,9 +48,8 @@ object summarySerializerMod {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata],
     createExternalSymbolReexports: Boolean
-  ): Json = js.native
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
-  @js.native
+  ): Json = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeSummaries")(srcFileName.asInstanceOf[js.Any], forJitCtx.asInstanceOf[js.Any], summaryResolver.asInstanceOf[js.Any], symbolResolver.asInstanceOf[js.Any], symbols.asInstanceOf[js.Any], types.asInstanceOf[js.Any], createExternalSymbolReexports.asInstanceOf[js.Any])).asInstanceOf[Json]
+  @scala.inline
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
@@ -59,9 +57,8 @@ object summarySerializerMod {
     symbolResolver: StaticSymbolResolver,
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata]
-  ): Json = js.native
-  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
-  @js.native
+  ): Json = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeSummaries")(srcFileName.asInstanceOf[js.Any], forJitCtx.asInstanceOf[js.Any], summaryResolver.asInstanceOf[js.Any], symbolResolver.asInstanceOf[js.Any], symbols.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Json]
+  @scala.inline
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
@@ -70,5 +67,5 @@ object summarySerializerMod {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata],
     createExternalSymbolReexports: Boolean
-  ): Json = js.native
+  ): Json = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeSummaries")(srcFileName.asInstanceOf[js.Any], forJitCtx.asInstanceOf[js.Any], summaryResolver.asInstanceOf[js.Any], symbolResolver.asInstanceOf[js.Any], symbols.asInstanceOf[js.Any], types.asInstanceOf[js.Any], createExternalSymbolReexports.asInstanceOf[js.Any])).asInstanceOf[Json]
 }

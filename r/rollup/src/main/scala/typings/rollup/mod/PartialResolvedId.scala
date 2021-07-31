@@ -3,22 +3,22 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rollup.rollup.PartialNull<rollup.rollup.ModuleOptions>> */
-@js.native
-trait PartialResolvedId extends _ResolveIdResult {
+trait PartialResolvedId
+  extends StObject
+     with _ResolveIdResult {
   
-  var external: js.UndefOr[Boolean] = js.native
+  var external: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var meta: js.UndefOr[CustomPluginOptions | Null] = js.native
+  var meta: js.UndefOr[CustomPluginOptions | Null] = js.undefined
   
-  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.native
+  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.undefined
   
-  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.native
+  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.undefined
 }
 object PartialResolvedId {
   

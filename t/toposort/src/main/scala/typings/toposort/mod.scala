@@ -2,14 +2,16 @@ package typings.toposort
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
   @JSImport("toposort", JSImport.Namespace)
   @js.native
-  def apply[T](edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is a convenience method that allows you to define nodes that may or
@@ -21,7 +23,6 @@ object mod {
     * @returns a list of vertices, sorted from "start" to "end"
     * @throws if there are any cycles in the graph
     */
-  @JSImport("toposort", "array")
-  @js.native
-  def array[T](nodes: js.Array[T], edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
+  @scala.inline
+  def array[T](nodes: js.Array[T], edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(nodes.asInstanceOf[js.Any], edges.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

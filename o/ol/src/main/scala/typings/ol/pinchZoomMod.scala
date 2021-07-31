@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinchZoomMod {
@@ -13,10 +12,9 @@ object pinchZoomMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

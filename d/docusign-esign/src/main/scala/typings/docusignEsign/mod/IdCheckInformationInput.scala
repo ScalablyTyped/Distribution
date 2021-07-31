@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdCheckInformationInput extends StObject {
   
   /**
     * An object that specifies recipient address information and how it is displayed.
     */
-  var addressInformationInput: js.UndefOr[AddressInformationInput] = js.native
+  var addressInformationInput: js.UndefOr[AddressInformationInput] = js.undefined
   
   /**
     * An object that specifies recipient date of birth information and how it is displayed.
     */
-  var dobInformationInput: js.UndefOr[DobInformationInput] = js.native
+  var dobInformationInput: js.UndefOr[DobInformationInput] = js.undefined
   
   /**
     * An object that specifies the last four digits of the recipient's Social Security Number (SSN).
     */
-  var ssn4InformationInput: js.UndefOr[Ssn4InformationInput] = js.native
+  var ssn4InformationInput: js.UndefOr[Ssn4InformationInput] = js.undefined
   
   /**
     * An object that specifies the recipient's Social Security Number (SSN) information. Note that ssn9 information cannot be returned in a response.
     */
-  var ssn9InformationInput: js.UndefOr[Ssn9InformationInput] = js.native
+  var ssn9InformationInput: js.UndefOr[Ssn9InformationInput] = js.undefined
 }
 object IdCheckInformationInput {
   

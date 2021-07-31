@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorPalette extends Widget {
+trait ColorPalette
+  extends StObject
+     with Widget {
   
   def color(): Unit = js.native
   def color(color: Color): Unit = js.native

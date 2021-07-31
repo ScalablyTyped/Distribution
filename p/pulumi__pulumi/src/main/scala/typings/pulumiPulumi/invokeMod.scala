@@ -4,12 +4,10 @@ import typings.pulumiPulumi.resourceMod.ProviderResource
 import typings.pulumiPulumi.resourceMod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invokeMod {
   
-  @js.native
   trait InvokeOptions extends StObject {
     
     /**
@@ -20,24 +18,24 @@ object invokeMod {
       * synchronously is deprecated.  The ability to do this will be removed at a later point in
       * time.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional parent to use for default options for this invoke (e.g. the default provider to use).
       */
-    var parent: js.UndefOr[Resource] = js.native
+    var parent: js.UndefOr[Resource] = js.undefined
     
     /**
       * An optional provider to use for this invocation. If no provider is supplied, the default provider for the
       * invoked function's package will be used.
       */
-    var provider: js.UndefOr[ProviderResource] = js.native
+    var provider: js.UndefOr[ProviderResource] = js.undefined
     
     /**
       * An optional version, corresponding to the version of the provider plugin that should be used when performing this
       * invoke.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object InvokeOptions {
     

@@ -5,7 +5,6 @@ import typings.matrixAppserviceBridge.intentMod._UserProfileKeys
 import typings.matrixAppserviceBridge.membershipCacheMod._UserMembership
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrixAppserviceBridgeStrings {
@@ -31,12 +30,16 @@ object matrixAppserviceBridgeStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait avatar_url extends _UserProfileKeys
+  sealed trait avatar_url
+    extends StObject
+       with _UserProfileKeys
   @scala.inline
   def avatar_url: avatar_url = "avatar_url".asInstanceOf[avatar_url]
   
   @js.native
-  sealed trait ban extends _UserMembership
+  sealed trait ban
+    extends StObject
+       with _UserMembership
   @scala.inline
   def ban: ban = "ban".asInstanceOf[ban]
   
@@ -46,7 +49,9 @@ object matrixAppserviceBridgeStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait displayname extends _UserProfileKeys
+  sealed trait displayname
+    extends StObject
+       with _UserProfileKeys
   @scala.inline
   def displayname: displayname = "displayname".asInstanceOf[displayname]
   
@@ -61,42 +66,58 @@ object matrixAppserviceBridgeStrings {
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait invite extends _UserMembership
+  sealed trait invite
+    extends StObject
+       with _UserMembership
   @scala.inline
   def invite: invite = "invite".asInstanceOf[invite]
   
   @js.native
-  sealed trait join extends _UserMembership
+  sealed trait join
+    extends StObject
+       with _UserMembership
   @scala.inline
   def join: join = "join".asInstanceOf[join]
   
   @js.native
-  sealed trait leave extends _UserMembership
+  sealed trait leave
+    extends StObject
+       with _UserMembership
   @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
   
   @js.native
-  sealed trait mDotevent_not_handled extends BridgeErrorReason
+  sealed trait mDotevent_not_handled
+    extends StObject
+       with BridgeErrorReason
   @scala.inline
   def mDotevent_not_handled: mDotevent_not_handled = "m.event_not_handled".asInstanceOf[mDotevent_not_handled]
   
   @js.native
-  sealed trait mDotevent_too_old extends BridgeErrorReason
+  sealed trait mDotevent_too_old
+    extends StObject
+       with BridgeErrorReason
   @scala.inline
   def mDotevent_too_old: mDotevent_too_old = "m.event_too_old".asInstanceOf[mDotevent_too_old]
   
   @js.native
-  sealed trait mDotevent_unknown extends BridgeErrorReason
+  sealed trait mDotevent_unknown
+    extends StObject
+       with BridgeErrorReason
   @scala.inline
   def mDotevent_unknown: mDotevent_unknown = "m.event_unknown".asInstanceOf[mDotevent_unknown]
   
   @js.native
-  sealed trait mDotforeign_network_error extends BridgeErrorReason
+  sealed trait mDotforeign_network_error
+    extends StObject
+       with BridgeErrorReason
   @scala.inline
   def mDotforeign_network_error: mDotforeign_network_error = "m.foreign_network_error".asInstanceOf[mDotforeign_network_error]
   
   @js.native
-  sealed trait mDotinternal_error extends BridgeErrorReason
+  sealed trait mDotinternal_error
+    extends StObject
+       with BridgeErrorReason
   @scala.inline
   def mDotinternal_error: mDotinternal_error = "m.internal_error".asInstanceOf[mDotinternal_error]
   

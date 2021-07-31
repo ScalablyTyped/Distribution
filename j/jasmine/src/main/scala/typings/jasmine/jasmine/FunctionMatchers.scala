@@ -2,12 +2,12 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionMatchers[Fn /* <: Func */]
-  extends Matchers[js.Any] {
+  extends StObject
+     with Matchers[js.Any] {
   
   /**
     * Invert the matcher following this expect.

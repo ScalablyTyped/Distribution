@@ -5,39 +5,37 @@ import typings.overlayscrollbars.anon.XBoolean
 import typings.overlayscrollbars.anon.XNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Globals extends StObject {
   
-  var autoUpdateLoop: Boolean = js.native
+  var autoUpdateLoop: Boolean
   
-  var autoUpdateRecommended: Boolean = js.native
+  var autoUpdateRecommended: Boolean
   
-  var cssCalc: String | Null = js.native
+  var cssCalc: String | Null
   
-  var nativeScrollbarIsOverlaid: XBoolean = js.native
+  var nativeScrollbarIsOverlaid: XBoolean
   
-  var nativeScrollbarSize: XNumber = js.native
+  var nativeScrollbarSize: XNumber
   
-  var nativeScrollbarStyling: Boolean = js.native
+  var nativeScrollbarStyling: Boolean
   
-  var overlayScrollbarDummySize: XNumber = js.native
+  var overlayScrollbarDummySize: XNumber
   
-  var restrictedMeasuring: Boolean = js.native
+  var restrictedMeasuring: Boolean
   
-  var rtlScrollBehavior: I = js.native
+  var rtlScrollBehavior: I
   
-  var supportMutationObserver: Boolean = js.native
+  var supportMutationObserver: Boolean
   
-  var supportPassiveEvents: Boolean = js.native
+  var supportPassiveEvents: Boolean
   
-  var supportResizeObserver: Boolean = js.native
+  var supportResizeObserver: Boolean
   
-  var supportTransform: Boolean = js.native
+  var supportTransform: Boolean
   
-  var supportTransition: Boolean = js.native
+  var supportTransition: Boolean
 }
 object Globals {
   
@@ -57,7 +55,7 @@ object Globals {
     supportTransform: Boolean,
     supportTransition: Boolean
   ): Globals = {
-    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop.asInstanceOf[js.Any], autoUpdateRecommended = autoUpdateRecommended.asInstanceOf[js.Any], nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid.asInstanceOf[js.Any], nativeScrollbarSize = nativeScrollbarSize.asInstanceOf[js.Any], nativeScrollbarStyling = nativeScrollbarStyling.asInstanceOf[js.Any], overlayScrollbarDummySize = overlayScrollbarDummySize.asInstanceOf[js.Any], restrictedMeasuring = restrictedMeasuring.asInstanceOf[js.Any], rtlScrollBehavior = rtlScrollBehavior.asInstanceOf[js.Any], supportMutationObserver = supportMutationObserver.asInstanceOf[js.Any], supportPassiveEvents = supportPassiveEvents.asInstanceOf[js.Any], supportResizeObserver = supportResizeObserver.asInstanceOf[js.Any], supportTransform = supportTransform.asInstanceOf[js.Any], supportTransition = supportTransition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop.asInstanceOf[js.Any], autoUpdateRecommended = autoUpdateRecommended.asInstanceOf[js.Any], nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid.asInstanceOf[js.Any], nativeScrollbarSize = nativeScrollbarSize.asInstanceOf[js.Any], nativeScrollbarStyling = nativeScrollbarStyling.asInstanceOf[js.Any], overlayScrollbarDummySize = overlayScrollbarDummySize.asInstanceOf[js.Any], restrictedMeasuring = restrictedMeasuring.asInstanceOf[js.Any], rtlScrollBehavior = rtlScrollBehavior.asInstanceOf[js.Any], supportMutationObserver = supportMutationObserver.asInstanceOf[js.Any], supportPassiveEvents = supportPassiveEvents.asInstanceOf[js.Any], supportResizeObserver = supportResizeObserver.asInstanceOf[js.Any], supportTransform = supportTransform.asInstanceOf[js.Any], supportTransition = supportTransition.asInstanceOf[js.Any], cssCalc = null)
     __obj.asInstanceOf[Globals]
   }
   

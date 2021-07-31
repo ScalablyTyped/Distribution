@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointDragDropObject extends StObject {
   
   /**
     * New values.
     */
-  var newValues: Dictionary[Double] = js.native
+  var newValues: Dictionary[Double]
   
   /**
     * Updated point.
     */
-  var point: Point = js.native
+  var point: Point
 }
 object PointDragDropObject {
   

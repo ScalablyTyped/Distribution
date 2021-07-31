@@ -10,7 +10,6 @@ import typings.libraCore.proofPbMod.AccountStateProof
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountStateBlobPbMod {
@@ -35,13 +34,11 @@ object accountStateBlobPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): AccountStateBlob = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): AccountStateBlob = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateBlob]
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: AccountStateBlob, reader: BinaryReader): AccountStateBlob = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: AccountStateBlob, reader: BinaryReader): AccountStateBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateBlob]
     
     @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob.extensions")
     @js.native
@@ -56,18 +53,15 @@ object accountStateBlobPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: AccountStateBlob, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: AccountStateBlob, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: AccountStateBlob): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: AccountStateBlob): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var blob: Uint8Array | String = js.native
+      var blob: Uint8Array | String
     }
     object AsObject {
       
@@ -119,13 +113,11 @@ object accountStateBlobPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): AccountStateWithProof = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): AccountStateWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateWithProof]
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: AccountStateWithProof, reader: BinaryReader): AccountStateWithProof = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: AccountStateWithProof, reader: BinaryReader): AccountStateWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateWithProof]
     
     @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof.extensions")
     @js.native
@@ -140,22 +132,19 @@ object accountStateBlobPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: AccountStateWithProof, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: AccountStateWithProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: AccountStateWithProof): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: AccountStateWithProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var blob: js.UndefOr[typings.libraCore.accountStateBlobPbMod.AccountStateBlob.AsObject] = js.native
+      var blob: js.UndefOr[typings.libraCore.accountStateBlobPbMod.AccountStateBlob.AsObject] = js.undefined
       
-      var proof: js.UndefOr[typings.libraCore.proofPbMod.AccountStateProof.AsObject] = js.native
+      var proof: js.UndefOr[typings.libraCore.proofPbMod.AccountStateProof.AsObject] = js.undefined
       
-      var version: String = js.native
+      var version: String
     }
     object AsObject {
       

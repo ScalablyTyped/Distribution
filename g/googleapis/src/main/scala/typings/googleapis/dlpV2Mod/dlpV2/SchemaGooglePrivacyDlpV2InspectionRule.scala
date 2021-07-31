@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single inspection rule to be applied to infoTypes, specified in
   * `InspectionRuleSet`.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectionRule extends StObject {
   
   /**
     * Exclusion rule.
     */
-  var exclusionRule: js.UndefOr[SchemaGooglePrivacyDlpV2ExclusionRule] = js.native
+  var exclusionRule: js.UndefOr[SchemaGooglePrivacyDlpV2ExclusionRule] = js.undefined
   
   /**
     * Hotword-based detection rule.
     */
-  var hotwordRule: js.UndefOr[SchemaGooglePrivacyDlpV2HotwordRule] = js.native
+  var hotwordRule: js.UndefOr[SchemaGooglePrivacyDlpV2HotwordRule] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectionRule {
   

@@ -5,37 +5,38 @@ import typings.rrule.rruleNumbers.`366`
 import typings.rrule.typesMod.ParsedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yearinfoMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/yearinfo", "rebuildYear")
+  @JSImport("rrule/dist/esm/src/iterinfo/yearinfo", JSImport.Namespace)
   @js.native
-  def rebuildYear(year: Double, options: ParsedOptions): YearInfo = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def rebuildYear(year: Double, options: ParsedOptions): YearInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("rebuildYear")(year.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YearInfo]
+  
   trait YearInfo extends StObject {
     
-    var mdaymask: js.Array[Double] = js.native
+    var mdaymask: js.Array[Double]
     
-    var mmask: js.Array[Double] = js.native
+    var mmask: js.Array[Double]
     
-    var mrange: js.Array[Double] = js.native
+    var mrange: js.Array[Double]
     
-    var nextyearlen: `365` | `366` = js.native
+    var nextyearlen: `365` | `366`
     
-    var nmdaymask: js.Array[Double] = js.native
+    var nmdaymask: js.Array[Double]
     
-    var wdaymask: js.Array[Double] = js.native
+    var wdaymask: js.Array[Double]
     
-    var wnomask: js.Array[Double] | Null = js.native
+    var wnomask: js.Array[Double] | Null
     
-    var yearlen: `365` | `366` = js.native
+    var yearlen: `365` | `366`
     
-    var yearordinal: Double = js.native
+    var yearordinal: Double
     
-    var yearweekday: Double = js.native
+    var yearweekday: Double
   }
   object YearInfo {
     
@@ -51,7 +52,7 @@ object yearinfoMod {
       yearordinal: Double,
       yearweekday: Double
     ): YearInfo = {
-      val __obj = js.Dynamic.literal(mdaymask = mdaymask.asInstanceOf[js.Any], mmask = mmask.asInstanceOf[js.Any], mrange = mrange.asInstanceOf[js.Any], nextyearlen = nextyearlen.asInstanceOf[js.Any], nmdaymask = nmdaymask.asInstanceOf[js.Any], wdaymask = wdaymask.asInstanceOf[js.Any], yearlen = yearlen.asInstanceOf[js.Any], yearordinal = yearordinal.asInstanceOf[js.Any], yearweekday = yearweekday.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(mdaymask = mdaymask.asInstanceOf[js.Any], mmask = mmask.asInstanceOf[js.Any], mrange = mrange.asInstanceOf[js.Any], nextyearlen = nextyearlen.asInstanceOf[js.Any], nmdaymask = nmdaymask.asInstanceOf[js.Any], wdaymask = wdaymask.asInstanceOf[js.Any], yearlen = yearlen.asInstanceOf[js.Any], yearordinal = yearordinal.asInstanceOf[js.Any], yearweekday = yearweekday.asInstanceOf[js.Any], wnomask = null)
       __obj.asInstanceOf[YearInfo]
     }
     

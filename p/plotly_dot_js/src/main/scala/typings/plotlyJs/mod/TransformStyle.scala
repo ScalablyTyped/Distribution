@@ -3,15 +3,13 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialPlotDataAutobinx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformStyle extends StObject {
   
-  var target: Double | String | (js.Array[Double | String]) = js.native
+  var target: Double | String | (js.Array[Double | String])
   
-  var value: PartialPlotDataAutobinx = js.native
+  var value: PartialPlotDataAutobinx
 }
 object TransformStyle {
   

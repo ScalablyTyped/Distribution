@@ -10,21 +10,23 @@ import typings.std.ReturnType
 import typings.tokenizr.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tokenizr", JSImport.Default)
   @js.native
-  class default () extends Tokenizr
+  class default ()
+    extends StObject
+       with Tokenizr
   object default {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("tokenizr", "default.ActionContext")
     @js.native
     class ActionContext protected ()
-      extends typings.tokenizr.mod.ActionContext {
+      extends StObject
+         with typings.tokenizr.mod.ActionContext {
       def this(e: js.Any) = this()
     }
     /* static member */
@@ -37,8 +39,15 @@ object mod {
     @JSImport("tokenizr", "default.ParsingError")
     @js.native
     class ParsingError protected ()
-      extends typings.tokenizr.mod.ParsingError {
+      extends StObject
+         with typings.tokenizr.mod.ParsingError {
       def this(message: String, pos: Double, line: Double, column: Double, input: String) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
     }
     /* static member */
     /* was `typeof ParsingError` */
@@ -57,7 +66,8 @@ object mod {
     @JSImport("tokenizr", "default.Token")
     @js.native
     class Token[T] protected ()
-      extends typings.tokenizr.mod.Token[T] {
+      extends StObject
+         with typings.tokenizr.mod.Token[T] {
       def this(
         `type`: String,
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
@@ -73,13 +83,6 @@ object mod {
         `type`: String,
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
         text: String,
-        pos: js.UndefOr[scala.Nothing],
-        line: Double
-      ) = this()
-      def this(
-        `type`: String,
-        value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
-        text: String,
         pos: Double,
         line: Double
       ) = this()
@@ -87,15 +90,14 @@ object mod {
         `type`: String,
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
         text: String,
-        pos: js.UndefOr[scala.Nothing],
-        line: js.UndefOr[scala.Nothing],
-        column: Double
+        pos: Unit,
+        line: Double
       ) = this()
       def this(
         `type`: String,
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
         text: String,
-        pos: js.UndefOr[scala.Nothing],
+        pos: Double,
         line: Double,
         column: Double
       ) = this()
@@ -104,15 +106,23 @@ object mod {
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
         text: String,
         pos: Double,
-        line: js.UndefOr[scala.Nothing],
+        line: Unit,
         column: Double
       ) = this()
       def this(
         `type`: String,
         value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
         text: String,
-        pos: Double,
+        pos: Unit,
         line: Double,
+        column: Double
+      ) = this()
+      def this(
+        `type`: String,
+        value: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any,
+        text: String,
+        pos: Unit,
+        line: Unit,
         column: Double
       ) = this()
     }
@@ -216,8 +226,9 @@ object mod {
   
   type IToken[T] = Token[T]
   
-  @js.native
-  trait ParsingError extends Error
+  trait ParsingError
+    extends StObject
+       with Error
   object ParsingError {
     
     @scala.inline
@@ -259,7 +270,7 @@ object mod {
     /**
       * Execute multiple alternative callbacks
       */
-    def alternatives[X /* <: js.Array[js.ThisFunction0[/* this */ this.type, _]] */](
+    def alternatives[X /* <: js.Array[js.ThisFunction0[/* this */ this.type, js.Any]] */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param alternatives because its type X is not an array type */ alternatives: X
     ): ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: X[number] */ js.Any
@@ -283,8 +294,8 @@ object mod {
     /**
       * Consume the current token (by expecting it to be a particular symbol)
       */
-    def consume(`type`: String): Token[_] = js.native
-    def consume(`type`: String, value: js.Any): Token[_] = js.native
+    def consume(`type`: String): Token[js.Any] = js.native
+    def consume(`type`: String, value: js.Any): Token[js.Any] = js.native
     
     /**
       * Configure debug operation
@@ -315,8 +326,8 @@ object mod {
     /**
       * Peek at the next token or token at particular offset
       */
-    def peek(): Token[_] = js.native
-    def peek(offset: Double): Token[_] = js.native
+    def peek(): Token[js.Any] = js.native
+    def peek(offset: Double): Token[js.Any] = js.native
     
     /**
       * Pop state
@@ -373,12 +384,12 @@ object mod {
     /**
       * Determine and return next token
       */
-    def token(): Token[_] | Null = js.native
+    def token(): Token[js.Any] | Null = js.native
     
     /**
       * Determine and return all tokens
       */
-    def tokens(): js.Array[Token[_]] = js.native
+    def tokens(): js.Array[Token[js.Any]] = js.native
     
     /**
       * Unset a tag

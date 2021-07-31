@@ -3,7 +3,6 @@ package typings.requirejs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,7 +25,7 @@ trait RequireDefine extends StObject {
     * Define function.
     * @param func: The function module.
     **/
-  def apply(func: js.Function0[_]): Unit = js.native
+  def apply(func: js.Function0[js.Any]): Unit = js.native
   /**
     * Define a module with a name and dependencies.
     * @param name The name of the module.
@@ -56,7 +55,7 @@ trait RequireDefine extends StObject {
       /* require */ Require, 
       /* exports */ StringDictionary[js.Any], 
       /* module */ RequireModule, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   

@@ -2,22 +2,20 @@ package typings.ecmarkup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.SyntaxError & {  line :number | undefined,   column :number | undefined} */
-@js.native
 trait SyntaxErrorlinenumberunde extends StObject {
   
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
 }
 object SyntaxErrorlinenumberunde {
   

@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.ssh2.ssh2Strings.abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,9 +29,9 @@ trait AuthContextBase extends EventEmitter {
     * Rejects the authentication request.
     */
   def reject(): Unit = js.native
-  def reject(authMethodsLeft: js.UndefOr[scala.Nothing], isPartialSuccess: Boolean): Unit = js.native
   def reject(authMethodsLeft: js.Array[String]): Unit = js.native
   def reject(authMethodsLeft: js.Array[String], isPartialSuccess: Boolean): Unit = js.native
+  def reject(authMethodsLeft: Unit, isPartialSuccess: Boolean): Unit = js.native
   /**
     * Rejects the authentication request.
     */

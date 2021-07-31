@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.EditingFieldChanged and ASPxClientReportDesigner.PreviewEditingFieldChanged events.
   */
-@js.native
-trait ASPxClientWebDocumentViewerEditingFieldChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientWebDocumentViewerEditingFieldChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an editing field whose value has been changed.
     */
-  var Field: ASPxClientWebDocumentViewerEditingField = js.native
+  var Field: ASPxClientWebDocumentViewerEditingField
   
   /**
     * Provides access to a new value of an editing field.
     */
-  var NewValue: js.Any = js.native
+  var NewValue: js.Any
   
   /**
     * Provides access to a previous value of an editing field.
     */
-  var OldValue: js.Any = js.native
+  var OldValue: js.Any
 }
 object ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
   

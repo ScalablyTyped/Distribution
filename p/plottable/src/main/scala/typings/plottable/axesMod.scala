@@ -16,7 +16,6 @@ import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import typings.plottable.timeAxisMod.TimeAxisOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axesMod {

@@ -4,19 +4,17 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartPoint extends StObject {
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var t: js.UndefOr[Double | String | Date | Moment] = js.native
+  var t: js.UndefOr[Double | String | Date | Moment] = js.undefined
   
-  var x: js.UndefOr[Double | String | Date | Moment] = js.native
+  var x: js.UndefOr[Double | String | Date | Moment] = js.undefined
   
-  var y: js.UndefOr[Double | String | Date | Moment] = js.native
+  var y: js.UndefOr[Double | String | Date | Moment] = js.undefined
 }
 object ChartPoint {
   

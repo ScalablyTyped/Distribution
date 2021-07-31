@@ -5,15 +5,13 @@ import typings.std.DOMRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualElement extends StObject {
   
-  var contextElement: js.UndefOr[Element] = js.native
+  var contextElement: js.UndefOr[Element] = js.undefined
   
-  def getBoundingClientRect(): ClientRect | DOMRect = js.native
+  def getBoundingClientRect(): ClientRect | DOMRect
 }
 object VirtualElement {
   

@@ -2,17 +2,15 @@ package typings.betterScroll.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomOption extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object ZoomOption {
   

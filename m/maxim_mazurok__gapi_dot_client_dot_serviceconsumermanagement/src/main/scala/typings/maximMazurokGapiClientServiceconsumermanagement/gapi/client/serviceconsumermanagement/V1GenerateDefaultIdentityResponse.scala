@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait V1GenerateDefaultIdentityResponse extends StObject {
   
   /** Status of the role attachment. Under development (go/si-attach-role), currently always return ATTACH_STATUS_UNSPECIFIED) */
-  var attachStatus: js.UndefOr[String] = js.native
+  var attachStatus: js.UndefOr[String] = js.undefined
   
   /** DefaultIdentity that was created or retrieved. */
-  var identity: js.UndefOr[V1DefaultIdentity] = js.native
+  var identity: js.UndefOr[V1DefaultIdentity] = js.undefined
   
   /** Role attached to consumer project. Empty if not attached in this request. (Under development, currently always return empty.) */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object V1GenerateDefaultIdentityResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPermissionResponse extends StObject {
   
   /**
     * Information about the permission.
     */
-  var permission: js.UndefOr[ResourceSharePermissionDetail] = js.native
+  var permission: js.UndefOr[ResourceSharePermissionDetail] = js.undefined
 }
 object GetPermissionResponse {
   

@@ -8,7 +8,6 @@ import typings.react.mod.ReactHTMLElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,28 +19,27 @@ object mod {
     def this(props: LightboxProps) = this()
   }
   
-  @js.native
   trait Image extends StObject {
     
     /**
       * The alt text for the image.
       */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /**
       * The image caption.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * The source of the image. Required.
       */
-    var src: String = js.native
+    var src: String
     
     /**
       * array of strings or string
       */
-    var srcSet: js.UndefOr[String | js.Array[String]] = js.native
+    var srcSet: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Image {
     
@@ -82,128 +80,127 @@ object mod {
   
   type Lightbox = Component[LightboxProps, js.Object, js.Any]
   
-  @js.native
   trait LightboxProps extends StObject {
     
     /**
       * Allow users to exit the lightbox by clicking the backdrop. Default value: false.
       */
-    var backdropClosesModal: js.UndefOr[Boolean] = js.native
+    var backdropClosesModal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom close esc title. Default value: ' Close (Esc) '
       */
-    var closeButtonTitle: js.UndefOr[String] = js.native
+    var closeButtonTitle: js.UndefOr[String] = js.undefined
     
     /**
       * The index of the image to display initially. Default value: 0
       */
-    var currentImage: js.UndefOr[Double] = js.native
+    var currentImage: js.UndefOr[Double] = js.undefined
     
     /**
       * An array of elements to display as custom controls on the top of lightbox. Default value: undefined
       */
-    var customControls: js.UndefOr[js.Array[ReactHTMLElement[_]]] = js.native
+    var customControls: js.UndefOr[js.Array[ReactHTMLElement[js.Any]]] = js.undefined
     
     /**
       * Supports keyboard input - esc, arrow left, and arrow right. Default value: true
       */
-    var enableKeyboardInput: js.UndefOr[Boolean] = js.native
+    var enableKeyboardInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The image count separator. Default value: ' of '
       */
-    var imageCountSeparator: js.UndefOr[String] = js.native
+    var imageCountSeparator: js.UndefOr[String] = js.undefined
     
     /**
       * Array of image objects. Required.
       */
-    var images: js.Array[Image] = js.native
+    var images: js.Array[Image]
     
     /**
       * Whether or not the lightbox is displayed. Default value: false;
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom of left arrow title. Default value: ' Previous (Left arrow key) '
       */
-    var leftArrowTitle: js.UndefOr[String] = js.native
+    var leftArrowTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Handle click on image.
       */
-    var onClickImage: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLImageElement, NativeMouseEvent], Unit]] = js.native
+    var onClickImage: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLImageElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * Fired on request of the next image.
       */
-    var onClickNext: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClickNext: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Fired on request of the previous image.
       */
-    var onClickPrev: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClickPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Handle click on thumbnail.
       */
-    var onClickThumbnail: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var onClickThumbnail: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     /**
       * Handle closing of the lightbox. Required.
       */
-    def onClose(): Unit = js.native
+    def onClose(): Unit
     
     /**
       * Based on the direction the user is navigating, preload the next available image. Default value: true
       */
-    var preloadNextImage: js.UndefOr[Boolean] = js.native
+    var preloadNextImage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether scrolling is prevented via react-scrolllock. Default value: true
       */
-    var preventScroll: js.UndefOr[Boolean] = js.native
+    var preventScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize right arrow title. Default value: ' Next (Right arrow key) '
       */
-    var rightArrowTitle: js.UndefOr[String] = js.native
+    var rightArrowTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Optionally display a close "X" button in top right corner. Default value: true
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally display image index, e.g., "3 of 20". Default value: true
       */
-    var showImageCount: js.UndefOr[Boolean] = js.native
+    var showImageCount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally display thumbnails beneath the Lightbox
       */
-    var showThumbnails: js.UndefOr[Boolean] = js.native
+    var showThumbnails: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Spinner component.
       */
-    var spinner: js.UndefOr[js.Function0[ReactElement]] = js.native
+    var spinner: js.UndefOr[js.Function0[ReactElement]] = js.undefined
     
     /**
       *  Color of spinner. Default value: 'white'
       */
-    var spinnerColor: js.UndefOr[String] = js.native
+    var spinnerColor: js.UndefOr[String] = js.undefined
     
     /**
       * Size of spinner. Default value: 100
       */
-    var spinnerSize: js.UndefOr[Double] = js.native
+    var spinnerSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum width of the carousel; defaults to 1024px
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LightboxProps {
     
@@ -235,7 +232,7 @@ object mod {
       def setCurrentImageUndefined: Self = StObject.set(x, "currentImage", js.undefined)
       
       @scala.inline
-      def setCustomControls(value: js.Array[ReactHTMLElement[_]]): Self = StObject.set(x, "customControls", value.asInstanceOf[js.Any])
+      def setCustomControls(value: js.Array[ReactHTMLElement[js.Any]]): Self = StObject.set(x, "customControls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomControlsUndefined: Self = StObject.set(x, "customControls", js.undefined)

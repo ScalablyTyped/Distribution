@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainSnapshotOptions extends StObject {
   
   /**
     * Hour during which the service takes an automated daily snapshot of the indices in the domain.
     */
-  var automatedSnapshotStartHour: Double = js.native
+  var automatedSnapshotStartHour: Double
 }
 object DomainSnapshotOptions {
   

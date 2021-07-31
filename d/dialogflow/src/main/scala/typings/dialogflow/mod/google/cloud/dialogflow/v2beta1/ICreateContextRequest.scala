@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CreateContextRequest. */
-@js.native
 trait ICreateContextRequest extends StObject {
   
   /** CreateContextRequest context */
-  var context: js.UndefOr[IContext | Null] = js.native
+  var context: js.UndefOr[IContext | Null] = js.undefined
   
   /** CreateContextRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
 }
 object ICreateContextRequest {
   

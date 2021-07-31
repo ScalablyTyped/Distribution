@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offLabel: js.UndefOr[String] = js.native
+  var offLabel: js.UndefOr[String] = js.undefined
   
-  var onLabel: js.UndefOr[String] = js.native
+  var onLabel: js.UndefOr[String] = js.undefined
 }
 object SwitchOptions {
   

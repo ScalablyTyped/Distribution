@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDocumentPermissionRequest extends StObject {
   
   /**
     * The AWS user accounts that should have access to the document. The account IDs can either be a group of account IDs or All.
     */
-  var AccountIdsToAdd: js.UndefOr[AccountIdList] = js.native
+  var AccountIdsToAdd: js.UndefOr[AccountIdList] = js.undefined
   
   /**
     * The AWS user accounts that should no longer have access to the document. The AWS user account can either be a group of account IDs or All. This action has a higher priority than AccountIdsToAdd. If you specify an account ID to add and the same ID to remove, the system removes access to the document.
     */
-  var AccountIdsToRemove: js.UndefOr[AccountIdList] = js.native
+  var AccountIdsToRemove: js.UndefOr[AccountIdList] = js.undefined
   
   /**
     * The name of the document that you want to share.
     */
-  var Name: DocumentName = js.native
+  var Name: DocumentName
   
   /**
     * The permission type for the document. The permission type can be Share.
     */
-  var PermissionType: DocumentPermissionType = js.native
+  var PermissionType: DocumentPermissionType
   
   /**
     * (Optional) The version of the document to share. If it's not specified, the system choose the Default version to share.
     */
-  var SharedDocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.SharedDocumentVersion] = js.native
+  var SharedDocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.SharedDocumentVersion] = js.undefined
 }
 object ModifyDocumentPermissionRequest {
   

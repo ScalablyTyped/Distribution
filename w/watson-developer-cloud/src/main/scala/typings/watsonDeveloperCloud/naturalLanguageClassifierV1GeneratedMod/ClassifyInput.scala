@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Request payload to classify. */
-@js.native
 trait ClassifyInput extends StObject {
   
   /** The submitted phrase. The maximum length is 2048 characters. */
-  var text: String = js.native
+  var text: String
 }
 object ClassifyInput {
   

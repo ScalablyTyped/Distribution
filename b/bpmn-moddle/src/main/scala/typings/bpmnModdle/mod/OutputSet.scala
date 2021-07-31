@@ -2,21 +2,21 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutputSet extends BaseElement {
+trait OutputSet
+  extends StObject
+     with BaseElement {
   
-  var dataOutputRefs: js.Array[DataOutput] = js.native
+  var dataOutputRefs: js.Array[DataOutput]
   
-  var inputSetRefs: js.Array[InputSet] = js.native
+  var inputSetRefs: js.Array[InputSet]
   
-  var name: String = js.native
+  var name: String
   
-  var optionalOutputRefs: js.Array[DataOutput] = js.native
+  var optionalOutputRefs: js.Array[DataOutput]
   
-  var whileExecutingOutputREfs: js.Array[DataOutput] = js.native
+  var whileExecutingOutputREfs: js.Array[DataOutput]
 }
 object OutputSet {
   

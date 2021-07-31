@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectedAccount extends StObject {
   
-  val SelectedAccount: typings.activexOutlook.Outlook.Account = js.native
+  val SelectedAccount: typings.activexOutlook.Outlook.Account
 }
 object SelectedAccount {
   

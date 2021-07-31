@@ -9,7 +9,6 @@ import typings.ol.styleStyleMod.StyleLike
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
@@ -27,7 +26,9 @@ object selectMod {
   object SelectEventType extends StObject {
     
     @js.native
-    sealed trait SELECT extends SelectEventType
+    sealed trait SELECT
+      extends StObject
+         with SelectEventType
   }
   
   type FilterFunction = js.Function2[
@@ -36,35 +37,34 @@ object selectMod {
     Boolean
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var addCondition: js.UndefOr[Condition] = js.native
+    var addCondition: js.UndefOr[Condition] = js.undefined
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var filter: js.UndefOr[FilterFunction] = js.native
+    var filter: js.UndefOr[FilterFunction] = js.undefined
     
-    var hitTolerance: js.UndefOr[Double] = js.native
+    var hitTolerance: js.UndefOr[Double] = js.undefined
     
     var layers: js.UndefOr[
         js.Array[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] | (js.Function1[
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var removeCondition: js.UndefOr[Condition] = js.native
+    var removeCondition: js.UndefOr[Condition] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.native
+    var style: js.UndefOr[StyleLike] = js.undefined
     
-    var toggleCondition: js.UndefOr[Condition] = js.native
+    var toggleCondition: js.UndefOr[Condition] = js.undefined
   }
   object Options {
     

@@ -2,15 +2,13 @@ package typings.googleCloudTextToSpeech.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an OneofOptions. */
-@js.native
 trait IOneofOptions extends StObject {
   
   /** OneofOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IOneofOptions {
   

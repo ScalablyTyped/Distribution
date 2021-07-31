@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.jsonPatch.mod.OpPatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdStringJSONPatchArray extends StObject {
   
-  var JSONPatch: js.Array[OpPatch] = js.native
+  var JSONPatch: js.Array[OpPatch]
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle
 }
 object IdStringJSONPatchArray {
   
   @scala.inline
-  def apply(
-    JSONPatch: js.Array[OpPatch],
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle
-  ): IdStringJSONPatchArray = {
-    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(JSONPatch: js.Array[OpPatch], id: String): IdStringJSONPatchArray = {
+    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Bundle")
     __obj.asInstanceOf[IdStringJSONPatchArray]
   }
   

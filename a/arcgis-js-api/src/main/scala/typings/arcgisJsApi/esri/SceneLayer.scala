@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SceneLayer
-  extends Layer
+  extends StObject
+     with Layer
      with SceneService
      with PortalLayer
      with ScaleRangeLayer {
@@ -155,12 +155,12 @@ trait SceneLayer
     *
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the associated feature service and returns the 2D [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. At the moment the 3D Extent can be returned by using [SceneLayerView.queryExtent()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#queryExtent), but this will return the 3D extent only for features currently in the view. The query succeeds only if the SceneLayer has an associated feature layer. If an associated feature layer is not available, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.[Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryExtent)
     */
-  def queryExtent(): js.Promise[_] = js.native
-  def queryExtent(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties, options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query, options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(): js.Promise[js.Any] = js.native
+  def queryExtent(query: Unit, options: SceneLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties, options: SceneLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query, options: SceneLayerQueryExtentOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the associated feature service and returns the number of features that satisfy the query.
@@ -168,7 +168,7 @@ trait SceneLayer
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the associated feature service and returns the number of features that satisfy the query. The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.[Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Unit, options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -180,7 +180,7 @@ trait SceneLayer
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the associated feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.[Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -192,7 +192,7 @@ trait SceneLayer
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the associated feature service and returns an array of ObjectIDs of the features that satisfy the input query. The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.[Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Unit, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

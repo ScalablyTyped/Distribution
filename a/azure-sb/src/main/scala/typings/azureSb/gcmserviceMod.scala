@@ -5,14 +5,15 @@ import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gcmserviceMod {
   
   @JSImport("azure-sb/lib/gcmservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GcmService {
+  class ^ protected ()
+    extends StObject
+       with GcmService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()
   }
   
@@ -152,6 +153,5 @@ object gcmserviceMod {
   }
   
   /* Inlined std.Partial<{}> */
-  @js.native
   trait Template extends StObject
 }

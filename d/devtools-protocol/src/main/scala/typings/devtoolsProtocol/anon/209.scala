@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.RemoveCredentialRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `209` extends StObject {
   
-  var paramsType: js.Array[RemoveCredentialRequest] = js.native
+  var paramsType: js.Array[RemoveCredentialRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `209` {
   

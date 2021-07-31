@@ -4,18 +4,16 @@ import typings.c3.mod.ExpandOptions
 import typings.c3.mod.LabelOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arcs extends StObject {
   
-  var arcs: js.UndefOr[MinWidth] = js.native
+  var arcs: js.UndefOr[MinWidth] = js.undefined
   
   /**
     * Enable or disable expanding gauge.
     */
-  var expand: js.UndefOr[ExpandOptions] = js.native
+  var expand: js.UndefOr[ExpandOptions] = js.undefined
   
   /**
     * Whether this should be displayed
@@ -23,33 +21,33 @@ trait Arcs extends StObject {
     * half circle.
     * Defaults to `false`.
     */
-  var fullCircle: js.UndefOr[Boolean] = js.native
+  var fullCircle: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[LabelOptions] = js.native
+  var label: js.UndefOr[LabelOptions] = js.undefined
   
-  var labelLine: js.UndefOr[Show] = js.native
+  var labelLine: js.UndefOr[Show] = js.undefined
   
   /**
     * Set max value of the gauge.
     * Defaults to `100`.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Set min value of the gauge.
     * Defaults to `0`.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Set units of the gauge.
     */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
   
   /**
     * Set width of gauge chart.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Arcs {
   

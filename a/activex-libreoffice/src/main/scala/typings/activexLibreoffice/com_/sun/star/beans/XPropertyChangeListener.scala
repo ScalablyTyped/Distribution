@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to receive PropertyChangeEvents whenever a bound property is changed. */
-@js.native
-trait XPropertyChangeListener extends XEventListener {
+trait XPropertyChangeListener
+  extends StObject
+     with XEventListener {
   
   /** is called when a bound property is changed. */
-  def propertyChange(evt: PropertyChangeEvent): Unit = js.native
+  def propertyChange(evt: PropertyChangeEvent): Unit
 }
 object XPropertyChangeListener {
   

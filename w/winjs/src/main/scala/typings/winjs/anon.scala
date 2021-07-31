@@ -5,22 +5,20 @@ import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.Utilities.IPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Element extends StObject {
     
-    var element: Promise[HTMLElement] = js.native
+    var element: Promise[HTMLElement]
     
-    var renderComplete: Promise[_] = js.native
+    var renderComplete: Promise[js.Any]
   }
   object Element {
     
     @scala.inline
-    def apply(element: Promise[HTMLElement], renderComplete: Promise[_]): typings.winjs.anon.Element = {
+    def apply(element: Promise[HTMLElement], renderComplete: Promise[js.Any]): typings.winjs.anon.Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], renderComplete = renderComplete.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.winjs.anon.Element]
     }
@@ -32,18 +30,17 @@ object anon {
       def setElement(value: Promise[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRenderComplete(value: Promise[_]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
+      def setRenderComplete(value: Promise[js.Any]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Empty extends StObject {
     
-    var empty: js.UndefOr[Boolean] = js.native
+    var empty: js.UndefOr[Boolean] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object Empty {
     
@@ -73,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Entrance extends StObject {
     
-    var entrance: js.Function = js.native
+    var entrance: js.Function
     
-    var exit: js.Function = js.native
+    var exit: js.Function
   }
   object Entrance {
     
@@ -99,12 +95,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Item[T] extends StObject {
     
-    var item: T = js.native
+    var item: T
     
-    var position: IPosition = js.native
+    var position: IPosition
   }
   object Item {
     
@@ -115,7 +110,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item[_], T] (val x: Self with Item[T]) extends AnyVal {
+    implicit class ItemMutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -125,14 +120,13 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyCode extends StObject {
     
-    var keyCode: Double = js.native
+    var keyCode: Double
     
-    var nextFocusElement: HTMLElement = js.native
+    var nextFocusElement: HTMLElement
     
-    var previousFocusElement: HTMLElement = js.native
+    var previousFocusElement: HTMLElement
   }
   object KeyCode {
     
@@ -156,12 +150,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ScrollLeft extends StObject {
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object ScrollLeft {
     
@@ -182,12 +175,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

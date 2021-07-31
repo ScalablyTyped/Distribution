@@ -4,36 +4,34 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the XML that defines the toast notification that will display at the scheduled time. */
-@js.native
 trait ScheduledToastNotification extends StObject {
   
   /** Gets the XML that defines this scheduled toast notification. */
-  var content: XmlDocument = js.native
+  var content: XmlDocument
   
   /** Gets the time that this toast notification is scheduled to be displayed. */
-  var deliveryTime: Date = js.native
+  var deliveryTime: Date
   
   /** Gets or sets the group identifier for the notification. */
-  var group: String = js.native
+  var group: String
   
   /** Gets a developer-specified value used to identify a specific scheduled toast. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the maximum number of times to display this notification. */
-  var maximumSnoozeCount: Double = js.native
+  var maximumSnoozeCount: Double
   
   /** Gets the amount of time between occurrences of the notification. */
-  var snoozeInterval: Double = js.native
+  var snoozeInterval: Double
   
   /** Gets or sets whether a toast's pop-up UI is displayed on the Windows Phone 8.1 screen. */
-  var suppressPopup: Boolean = js.native
+  var suppressPopup: Boolean
   
   /** Gets or sets a string that uniquely identifies a toast notification inside a Group . */
-  var tag: String = js.native
+  var tag: String
 }
 object ScheduledToastNotification {
   

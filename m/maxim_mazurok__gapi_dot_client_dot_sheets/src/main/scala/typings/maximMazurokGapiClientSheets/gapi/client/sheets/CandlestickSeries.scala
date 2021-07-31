@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandlestickSeries extends StObject {
   
   /** The data of the CandlestickSeries. */
-  var data: js.UndefOr[ChartData] = js.native
+  var data: js.UndefOr[ChartData] = js.undefined
 }
 object CandlestickSeries {
   

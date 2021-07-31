@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TypeCastExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TypeCastExpression_
-  extends Expression
+- typings.babelTypes.mod._Node because Already inherited */ trait TypeCastExpression_
+  extends StObject
      with BaseNode
+     with Expression
      with ExpressionWrapper
      with Flow {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var typeAnnotation: TypeAnnotation_ = js.native
+  var typeAnnotation: TypeAnnotation_
   
   @JSName("type")
-  var type_TypeCastExpression_ : TypeCastExpression = js.native
+  var type_TypeCastExpression_ : TypeCastExpression
 }
 object TypeCastExpression_ {
   
   @scala.inline
-  def apply(expression: Expression, `type`: TypeCastExpression, typeAnnotation: TypeAnnotation_): TypeCastExpression_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression, typeAnnotation: TypeAnnotation_): TypeCastExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TypeCastExpression")
     __obj.asInstanceOf[TypeCastExpression_]
   }
   

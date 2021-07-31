@@ -2,33 +2,31 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadProgress extends StObject {
   
   /**
     * Whether the request is currently active. If this is false no other properties
     * will be set
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * The number of bytes that have been uploaded so far
     */
-  var current: Double = js.native
+  var current: Double
   
   /**
     * Whether the upload has started. If this is false both `current` and `total` will
     * be set to 0.
     */
-  var started: Boolean = js.native
+  var started: Boolean
   
   /**
     * The number of bytes that will be uploaded this request
     */
-  var total: Double = js.native
+  var total: Double
 }
 object UploadProgress {
   

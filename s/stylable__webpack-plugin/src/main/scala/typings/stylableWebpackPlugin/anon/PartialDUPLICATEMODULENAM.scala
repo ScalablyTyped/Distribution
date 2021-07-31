@@ -2,14 +2,12 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  DUPLICATE_MODULE_NAMESPACE :boolean}> */
-@js.native
 trait PartialDUPLICATEMODULENAM extends StObject {
   
-  var DUPLICATE_MODULE_NAMESPACE: js.UndefOr[Boolean] = js.native
+  var DUPLICATE_MODULE_NAMESPACE: js.UndefOr[Boolean] = js.undefined
 }
 object PartialDUPLICATEMODULENAM {
   

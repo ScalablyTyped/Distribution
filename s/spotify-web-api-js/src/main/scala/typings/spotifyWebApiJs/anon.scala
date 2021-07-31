@@ -2,17 +2,15 @@ package typings.spotifyWebApiJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Href extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var total: Double = js.native
+    var total: Double
   }
   object Href {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Position {
     

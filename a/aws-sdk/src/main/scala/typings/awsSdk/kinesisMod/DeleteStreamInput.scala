@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteStreamInput extends StObject {
   
   /**
     * If this parameter is unset (null) or if you set it to false, and the stream has registered consumers, the call to DeleteStream fails with a ResourceInUseException. 
     */
-  var EnforceConsumerDeletion: js.UndefOr[BooleanObject] = js.native
+  var EnforceConsumerDeletion: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The name of the stream to delete.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
 }
 object DeleteStreamInput {
   

@@ -29,10 +29,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelClassProperties extends StObject {
   
   /**
@@ -40,21 +38,21 @@ trait LabelClassProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#deconflictionStrategy)
     */
-  var deconflictionStrategy: js.UndefOr[none | static] = js.native
+  var deconflictionStrategy: js.UndefOr[none | static] = js.undefined
   
   /**
     * Defines the content of label text for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression)
     */
-  var labelExpression: js.UndefOr[String] = js.native
+  var labelExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the content of label text for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
     */
-  var labelExpressionInfo: js.UndefOr[LabelClassLabelExpressionInfo] = js.native
+  var labelExpressionInfo: js.UndefOr[LabelClassLabelExpressionInfo] = js.undefined
   
   /**
     * The position of the label.
@@ -63,42 +61,42 @@ trait LabelClassProperties extends StObject {
     */
   var labelPlacement: js.UndefOr[
     `above-center` | `above-left` | `above-right` | `below-center` | `below-left` | `below-right` | `center-center` | `center-left` | `center-right` | `above-after` | `above-along` | `above-before` | `above-start` | `above-end` | `below-after` | `below-along` | `below-before` | `below-start` | `below-end` | `center-after` | `center-along` | `center-before` | `center-start` | `center-end` | `always-horizontal`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The maximum scale (most zoomed in) at which labels are visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#maxScale)
     */
-  var maxScale: js.UndefOr[Double] = js.native
+  var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum scale (most zoomed out) at which labels are visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#minScale)
     */
-  var minScale: js.UndefOr[Double] = js.native
+  var minScale: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the symbol used for rendering the label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#symbol)
     */
-  var symbol: js.UndefOr[TextSymbolProperties | LabelSymbol3DProperties] = js.native
+  var symbol: js.UndefOr[TextSymbolProperties | LabelSymbol3DProperties] = js.undefined
   
   /**
     * Indicates whether to use domain names if the fields in the [labelExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression) or [labelExpressionInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo) have domains.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#useCodedValues)
     */
-  var useCodedValues: js.UndefOr[Boolean] = js.native
+  var useCodedValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A SQL where clause used to determine the features to which the label class should be applied.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object LabelClassProperties {
   

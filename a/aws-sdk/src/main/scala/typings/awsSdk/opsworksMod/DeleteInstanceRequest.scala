@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInstanceRequest extends StObject {
   
   /**
     * Whether to delete the instance Elastic IP address.
     */
-  var DeleteElasticIp: js.UndefOr[Boolean] = js.native
+  var DeleteElasticIp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to delete the instance's Amazon EBS volumes.
     */
-  var DeleteVolumes: js.UndefOr[Boolean] = js.native
+  var DeleteVolumes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: String = js.native
+  var InstanceId: String
 }
 object DeleteInstanceRequest {
   

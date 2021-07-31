@@ -3,22 +3,20 @@ package typings.webgme.anon
 import typings.webgme.GmeCommon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined webgme.GmeCommon.MetaCardRule & {  min :number,   max :number} */
-@js.native
 trait MetaCardRuleminnumbermaxn extends StObject {
   
-  var items: js.Array[Path] = js.native
+  var items: js.Array[Path]
   
-  var max: Double = js.native
+  var max: Double
   
-  var maxItems: js.Array[Double] = js.native
+  var maxItems: js.Array[Double]
   
-  var min: Double = js.native
+  var min: Double
   
-  var minItems: js.Array[Double] = js.native
+  var minItems: js.Array[Double]
 }
 object MetaCardRuleminnumbermaxn {
   

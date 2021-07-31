@@ -2,13 +2,11 @@ package typings.jqueryBase64
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var base64: JQueryBase64Static = js.native
+  var base64: JQueryBase64Static
 }
 object JQueryStatic {
   

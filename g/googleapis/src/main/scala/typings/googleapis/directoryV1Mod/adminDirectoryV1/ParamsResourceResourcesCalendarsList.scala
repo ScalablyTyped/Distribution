@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceResourcesCalendarsList extends StandardParameters {
+trait ParamsResourceResourcesCalendarsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The unique ID for the customer's G Suite account. As an account
     * administrator, you can also use the my_customer alias to represent your
     * account's customer ID.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Field(s) to sort results by in either ascending or descending order.
@@ -37,12 +37,12 @@ trait ParamsResourceResourcesCalendarsList extends StandardParameters {
     * buildingId, capacity desc would return results sorted first by buildingId
     * in ascending order then by capacity in descending order.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Token to specify the next page in the list.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * String query used to filter results. Should be of the form "field
@@ -54,7 +54,7 @@ trait ParamsResourceResourcesCalendarsList extends StandardParameters {
     * For example buildingId=US-NYC-9TH AND
     * featureInstances.feature.name:Phone.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceResourcesCalendarsList {
   

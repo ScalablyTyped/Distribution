@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentDrop event.
   */
-@js.native
-trait ASPxClientAppointmentDropEventArgs extends ASPxClientEventArgs {
+trait ASPxClientAppointmentDropEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides information about dropped appointments.
     */
-  var dragInformation: js.Array[ASPxClientAppointmentDragInfo] = js.native
+  var dragInformation: js.Array[ASPxClientAppointmentDragInfo]
   
   /**
     * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Provides access to an object that enables you to choose an operation to perform.
     */
-  var operation: ASPxClientAppointmentOperation = js.native
+  var operation: ASPxClientAppointmentOperation
 }
 object ASPxClientAppointmentDropEventArgs {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loader {
@@ -62,8 +61,9 @@ object loader {
     * handles activation (loading) of a UNO component.
     * @see com.sun.star.registry.XImplementationRegistration
     */
-  @js.native
-  trait XImplementationLoader extends XInterface {
+  trait XImplementationLoader
+    extends StObject
+       with XInterface {
     
     /**
       * activates a concrete implementation within a component.
@@ -78,7 +78,7 @@ object loader {
       implementationLoaderUrl: String,
       locationUrl: String,
       xKey: XRegistryKey
-    ): XInterface = js.native
+    ): XInterface
     
     /**
       * writes a list of all implementations hosted by this component into a registry key.
@@ -89,7 +89,7 @@ object loader {
       * @param locationUrl Points to the location of the file containing the component (for instance a .jar-file or a shared library). This parameter should be
       * @see com.sun.star.registry.XImplementationRegistration
       */
-    def writeRegistryInfo(xKey: XRegistryKey, implementationLoaderUrl: String, locationUrl: String): Boolean = js.native
+    def writeRegistryInfo(xKey: XRegistryKey, implementationLoaderUrl: String, locationUrl: String): Boolean
   }
   object XImplementationLoader {
     

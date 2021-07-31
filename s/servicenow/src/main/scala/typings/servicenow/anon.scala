@@ -2,17 +2,15 @@ package typings.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Get extends StObject {
     
-    def get(index: Double): String = js.native
+    def get(index: Double): String
     
-    def size(): Double = js.native
+    def size(): Double
   }
   object Get {
     

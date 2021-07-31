@@ -2,13 +2,11 @@ package typings.betterScroll.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollBarOption extends StObject {
   
-  var fade: Boolean = js.native
+  var fade: Boolean
 }
 object ScrollBarOption {
   

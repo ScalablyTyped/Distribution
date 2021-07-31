@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTargetsByRuleResponse extends StObject {
   
   /**
     * Indicates whether there are additional results to retrieve. If there are no more results, the value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.undefined
   
   /**
     * The targets assigned to the rule.
     */
-  var Targets: js.UndefOr[TargetList] = js.native
+  var Targets: js.UndefOr[TargetList] = js.undefined
 }
 object ListTargetsByRuleResponse {
   

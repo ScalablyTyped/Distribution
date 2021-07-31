@@ -2,7 +2,6 @@ package typings.menubar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronMod {
@@ -45,12 +44,10 @@ object electronMod {
       x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<string, []> */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAppPath")(x.asInstanceOf[js.Any])
     
-    @JSImport("menubar/lib/@/mocks/electron", "app.isReady")
-    @js.native
-    def isReady(): js.Promise[Unit] = js.native
+    @scala.inline
+    def isReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("menubar/lib/@/mocks/electron", "app.on")
-    @js.native
-    def on(): Unit = js.native
+    @scala.inline
+    def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
   }
 }

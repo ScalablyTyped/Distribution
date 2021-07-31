@@ -6,36 +6,32 @@ import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withWidthWithWidthMod {
   
-  @JSImport("@material-ui/core/withWidth/withWidth", JSImport.Default)
+  @JSImport("@material-ui/core/withWidth/withWidth", JSImport.Namespace)
   @js.native
-  def default(): PropInjector[WithWidth, WithWidthProps] = js.native
-  @JSImport("@material-ui/core/withWidth/withWidth", JSImport.Default)
-  @js.native
-  def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/withWidth/withWidth", "isWidthDown")
-  @js.native
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = js.native
-  @JSImport("@material-ui/core/withWidth/withWidth", "isWidthDown")
-  @js.native
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = js.native
+  @scala.inline
+  def default(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  @scala.inline
+  def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
   
-  @JSImport("@material-ui/core/withWidth/withWidth", "isWidthUp")
-  @js.native
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = js.native
-  @JSImport("@material-ui/core/withWidth/withWidth", "isWidthUp")
-  @js.native
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = js.native
+  @scala.inline
+  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait WithWidth extends StObject {
     
-    var width: Breakpoint = js.native
+    var width: Breakpoint
   }
   object WithWidth {
     
@@ -53,16 +49,15 @@ object withWidthWithWidthMod {
     }
   }
   
-  @js.native
   trait WithWidthOptions extends StObject {
     
-    var initialWidth: js.UndefOr[Breakpoint] = js.native
+    var initialWidth: js.UndefOr[Breakpoint] = js.undefined
     
-    var noSSR: js.UndefOr[Boolean] = js.native
+    var noSSR: js.UndefOr[Boolean] = js.undefined
     
-    var resizeInterval: js.UndefOr[Double] = js.native
+    var resizeInterval: js.UndefOr[Double] = js.undefined
     
-    var withTheme: js.UndefOr[Boolean] = js.native
+    var withTheme: js.UndefOr[Boolean] = js.undefined
   }
   object WithWidthOptions {
     
@@ -102,12 +97,11 @@ object withWidthWithWidthMod {
   }
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/withWidth/withWidth.WithWidth> */
-  @js.native
   trait WithWidthProps extends StObject {
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
     
-    var width: js.UndefOr[Breakpoint] = js.native
+    var width: js.UndefOr[Breakpoint] = js.undefined
   }
   object WithWidthProps {
     
@@ -121,10 +115,10 @@ object withWidthWithWidthMod {
     implicit class WithWidthPropsMutableBuilder[Self <: WithWidthProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

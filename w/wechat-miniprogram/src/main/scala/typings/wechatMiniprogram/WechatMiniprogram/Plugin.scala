@@ -2,18 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 插件帐号信息（仅在插件中调用时包含这一项） */
-@js.native
 trait Plugin extends StObject {
   
   /** 插件 appId */
-  var appId: String = js.native
+  var appId: String
   
   /** 插件版本号 */
-  var version: String = js.native
+  var version: String
 }
 object Plugin {
   

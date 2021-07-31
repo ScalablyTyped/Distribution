@@ -9,26 +9,24 @@ import typings.qs.qsStrings.value
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined qs.qs.IParseOptions & {  decoder :never | undefined} */
-  @js.native
   trait IParseOptionsdecodernever extends StObject {
     
-    var allowDots: js.UndefOr[Boolean] = js.native
+    var allowDots: js.UndefOr[Boolean] = js.undefined
     
-    var allowPrototypes: js.UndefOr[Boolean] = js.native
+    var allowPrototypes: js.UndefOr[Boolean] = js.undefined
     
-    var arrayLimit: js.UndefOr[Double] = js.native
+    var arrayLimit: js.UndefOr[Double] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.native
+    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
     
-    var charsetSentinel: js.UndefOr[Boolean] = js.native
+    var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
-    var comma: js.UndefOr[Boolean] = js.native
+    var comma: js.UndefOr[Boolean] = js.undefined
     
     var decoder: (js.UndefOr[
         js.Function4[
@@ -36,25 +34,25 @@ object anon {
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
           /* type */ key | value, 
-          _
+          js.Any
         ]
-      ]) with js.UndefOr[scala.Nothing] = js.native
+      ]) & js.UndefOr[scala.Nothing]
     
-    var delimiter: js.UndefOr[String | RegExp] = js.native
+    var delimiter: js.UndefOr[String | RegExp] = js.undefined
     
-    var depth: js.UndefOr[Double | `false`] = js.native
+    var depth: js.UndefOr[Double | `false`] = js.undefined
     
-    var ignoreQueryPrefix: js.UndefOr[Boolean] = js.native
+    var ignoreQueryPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var interpretNumericEntities: js.UndefOr[Boolean] = js.native
+    var interpretNumericEntities: js.UndefOr[Boolean] = js.undefined
     
-    var parameterLimit: js.UndefOr[Double] = js.native
+    var parameterLimit: js.UndefOr[Double] = js.undefined
     
-    var parseArrays: js.UndefOr[Boolean] = js.native
+    var parseArrays: js.UndefOr[Boolean] = js.undefined
     
-    var plainObjects: js.UndefOr[Boolean] = js.native
+    var plainObjects: js.UndefOr[Boolean] = js.undefined
     
-    var strictNullHandling: js.UndefOr[Boolean] = js.native
+    var strictNullHandling: js.UndefOr[Boolean] = js.undefined
   }
   object IParseOptionsdecodernever {
     
@@ -66,9 +64,9 @@ object anon {
             /* defaultDecoder */ defaultDecoder, 
             /* charset */ String, 
             /* type */ key | value, 
-            _
+            js.Any
           ]
-        ]) with js.UndefOr[scala.Nothing]
+        ]) & js.UndefOr[scala.Nothing]
     ): IParseOptionsdecodernever = {
       val __obj = js.Dynamic.literal(decoder = decoder.asInstanceOf[js.Any])
       __obj.asInstanceOf[IParseOptionsdecodernever]
@@ -121,9 +119,9 @@ object anon {
                 /* defaultDecoder */ defaultDecoder, 
                 /* charset */ String, 
                 /* type */ key | value, 
-                _
+                js.Any
               ]
-            ]) with js.UndefOr[scala.Nothing]
+            ]) & js.UndefOr[scala.Nothing]
       ): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
       @scala.inline

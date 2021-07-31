@@ -3,21 +3,19 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 import typings.onesignalCordovaPlugin.anon.KOSSettingsKeyAutoPrompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OneSignalBuilder extends StObject {
   
-  def endInit(): Unit = js.native
+  def endInit(): Unit
   
-  def handleNotificationOpened(callback: js.Function1[/* json */ OSNotificationOpenedResult, Unit]): OneSignalBuilder = js.native
+  def handleNotificationOpened(callback: js.Function1[/* json */ OSNotificationOpenedResult, Unit]): OneSignalBuilder
   
-  def handleNotificationReceived(callback: js.Function1[/* json */ OSNotification, Unit]): OneSignalBuilder = js.native
+  def handleNotificationReceived(callback: js.Function1[/* json */ OSNotification, Unit]): OneSignalBuilder
   
-  def iOSSettings(settings: KOSSettingsKeyAutoPrompt): OneSignalBuilder = js.native
+  def iOSSettings(settings: KOSSettingsKeyAutoPrompt): OneSignalBuilder
   
-  def inFocusDisplaying(displayOption: OSDisplayType): OneSignalBuilder = js.native
+  def inFocusDisplaying(displayOption: OSDisplayType): OneSignalBuilder
 }
 object OneSignalBuilder {
   

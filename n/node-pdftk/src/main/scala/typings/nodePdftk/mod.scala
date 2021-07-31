@@ -6,10 +6,13 @@ import typings.nodePdftk.nodePdftkBooleans.`true`
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-pdftk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-pdftk", "PDFTK")
   @js.native
@@ -266,101 +269,88 @@ object mod {
   /* static members */
   object PDFTK {
     
+    @JSImport("node-pdftk", "PDFTK")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a buffer from a file.
       */
-    @JSImport("node-pdftk", "PDFTK.fileToBuffer")
-    @js.native
-    def fileToBuffer(file: String): Buffer = js.native
-    @JSImport("node-pdftk", "PDFTK.fileToBuffer")
-    @js.native
-    def fileToBuffer(file: Buffer): Buffer = js.native
+    @scala.inline
+    def fileToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def fileToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Creates fdf file from JSON input.
       */
-    @JSImport("node-pdftk", "PDFTK.generateFdfFromJSON")
-    @js.native
-    def generateFdfFromJSON(data: js.Object): Buffer = js.native
+    @scala.inline
+    def generateFdfFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFdfFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Creates pdf info text file from JSON input.
       */
-    @JSImport("node-pdftk", "PDFTK.generateInfoFromJSON")
-    @js.native
-    def generateInfoFromJSON(data: js.Object): Buffer = js.native
+    @scala.inline
+    def generateInfoFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateInfoFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Simple object check. Arrays not included.
       */
-    @JSImport("node-pdftk", "PDFTK.isObject")
-    @js.native
-    def isObject(item: js.Any): Boolean = js.native
+    @scala.inline
+    def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Simple string check.
       */
-    @JSImport("node-pdftk", "PDFTK.isString")
-    @js.native
-    def isString(item: js.Any): Boolean = js.native
+    @scala.inline
+    def isString(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sanitizes fdf input
       */
-    @JSImport("node-pdftk", "PDFTK.sanitizeForFdf")
-    @js.native
-    def sanitizeForFdf(str: String): String = js.native
+    @scala.inline
+    def sanitizeForFdf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeForFdf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns a buffer from a string.
       */
-    @JSImport("node-pdftk", "PDFTK.stringToBuffer")
-    @js.native
-    def stringToBuffer(file: String): Buffer = js.native
-    @JSImport("node-pdftk", "PDFTK.stringToBuffer")
-    @js.native
-    def stringToBuffer(file: String, encoding: String): Buffer = js.native
-    @JSImport("node-pdftk", "PDFTK.stringToBuffer")
-    @js.native
-    def stringToBuffer(file: Buffer): Buffer = js.native
-    @JSImport("node-pdftk", "PDFTK.stringToBuffer")
-    @js.native
-    def stringToBuffer(file: Buffer, encoding: String): Buffer = js.native
+    @scala.inline
+    def stringToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def stringToBuffer(file: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def stringToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def stringToBuffer(file: Buffer, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
-  @JSImport("node-pdftk", "configure")
-  @js.native
-  def configure(opts: ConfigureOptions): Unit = js.native
+  @scala.inline
+  def configure(opts: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("node-pdftk", "input")
-  @js.native
-  def input(file: String): PDFTK = js.native
-  @JSImport("node-pdftk", "input")
-  @js.native
-  def input(file: js.Array[Buffer]): PDFTK = js.native
-  @JSImport("node-pdftk", "input")
-  @js.native
-  def input(file: Buffer): PDFTK = js.native
-  @JSImport("node-pdftk", "input")
-  @js.native
-  def input(file: PartialRecordLetterstring): PDFTK = js.native
+  @scala.inline
+  def input(file: String): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  @scala.inline
+  def input(file: js.Array[Buffer]): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  @scala.inline
+  def input(file: Buffer): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  @scala.inline
+  def input(file: PartialRecordLetterstring): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
   
-  @js.native
   trait ConfigureOptions extends StObject {
     
-    var Promise: PromiseConstructor = js.native
+    var Promise: PromiseConstructor
     
-    var bin: String = js.native
+    var bin: String
     
-    var ignoreWarnings: `true` = js.native
+    var ignoreWarnings: `true`
     
-    var tempDir: String = js.native
+    var tempDir: String
   }
   object ConfigureOptions {
     
     @scala.inline
-    def apply(Promise: PromiseConstructor, bin: String, ignoreWarnings: `true`, tempDir: String): ConfigureOptions = {
-      val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any], ignoreWarnings = ignoreWarnings.asInstanceOf[js.Any], tempDir = tempDir.asInstanceOf[js.Any])
+    def apply(Promise: PromiseConstructor, bin: String, tempDir: String): ConfigureOptions = {
+      val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any], ignoreWarnings = true, tempDir = tempDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigureOptions]
     }
     

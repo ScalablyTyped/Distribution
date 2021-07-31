@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -64,11 +63,11 @@ trait ContentControl extends StObject {
     * @param string [Text='']
     */
   def SetPlaceholderText(): Unit = js.native
-  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: js.UndefOr[scala.Nothing], Text: String): Unit = js.native
-  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: typings.activexWord.Word.Range): Unit = js.native
-  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: typings.activexWord.Word.Range, Text: String): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: Unit, Range: Unit, Text: String): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: Unit, Range: typings.activexWord.Word.Range): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: Unit, Range: typings.activexWord.Word.Range, Text: String): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock): Unit = js.native
-  def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: js.UndefOr[scala.Nothing], Text: String): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: Unit, Text: String): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: typings.activexWord.Word.Range): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: typings.activexWord.Word.Range, Text: String): Unit = js.native
   

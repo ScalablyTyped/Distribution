@@ -2,81 +2,79 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorOperator extends StObject {
   
   /**
     *  The operation to be performed on the provided Amplitude source fields. 
     */
-  var Amplitude: js.UndefOr[AmplitudeConnectorOperator] = js.native
+  var Amplitude: js.UndefOr[AmplitudeConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Datadog source fields. 
     */
-  var Datadog: js.UndefOr[DatadogConnectorOperator] = js.native
+  var Datadog: js.UndefOr[DatadogConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Dynatrace source fields. 
     */
-  var Dynatrace: js.UndefOr[DynatraceConnectorOperator] = js.native
+  var Dynatrace: js.UndefOr[DynatraceConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Google Analytics source fields. 
     */
-  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorOperator] = js.native
+  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Infor Nexus source fields. 
     */
-  var InforNexus: js.UndefOr[InforNexusConnectorOperator] = js.native
+  var InforNexus: js.UndefOr[InforNexusConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Marketo source fields. 
     */
-  var Marketo: js.UndefOr[MarketoConnectorOperator] = js.native
+  var Marketo: js.UndefOr[MarketoConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Amazon S3 source fields. 
     */
-  var S3: js.UndefOr[S3ConnectorOperator] = js.native
+  var S3: js.UndefOr[S3ConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Salesforce source fields. 
     */
-  var Salesforce: js.UndefOr[SalesforceConnectorOperator] = js.native
+  var Salesforce: js.UndefOr[SalesforceConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided ServiceNow source fields. 
     */
-  var ServiceNow: js.UndefOr[ServiceNowConnectorOperator] = js.native
+  var ServiceNow: js.UndefOr[ServiceNowConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Singular source fields. 
     */
-  var Singular: js.UndefOr[SingularConnectorOperator] = js.native
+  var Singular: js.UndefOr[SingularConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Slack source fields. 
     */
-  var Slack: js.UndefOr[SlackConnectorOperator] = js.native
+  var Slack: js.UndefOr[SlackConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Trend Micro source fields. 
     */
-  var Trendmicro: js.UndefOr[TrendmicroConnectorOperator] = js.native
+  var Trendmicro: js.UndefOr[TrendmicroConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Veeva source fields. 
     */
-  var Veeva: js.UndefOr[VeevaConnectorOperator] = js.native
+  var Veeva: js.UndefOr[VeevaConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Zendesk source fields. 
     */
-  var Zendesk: js.UndefOr[ZendeskConnectorOperator] = js.native
+  var Zendesk: js.UndefOr[ZendeskConnectorOperator] = js.undefined
 }
 object ConnectorOperator {
   

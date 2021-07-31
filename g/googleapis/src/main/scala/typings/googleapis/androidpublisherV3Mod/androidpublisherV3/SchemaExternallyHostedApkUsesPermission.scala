@@ -2,24 +2,22 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A permission used by this APK.
   */
-@js.native
 trait SchemaExternallyHostedApkUsesPermission extends StObject {
   
   /**
     * Optionally, the maximum SDK version for which the permission is required.
     */
-  var maxSdkVersion: js.UndefOr[Double] = js.native
+  var maxSdkVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the permission requested.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaExternallyHostedApkUsesPermission {
   

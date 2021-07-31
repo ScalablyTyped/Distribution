@@ -3,17 +3,15 @@ package typings.enigmaJs
 import typings.enigmaJs.enigmaJS.IGeneratedAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Api extends StObject {
     
-    var api: IGeneratedAPI = js.native
+    var api: IGeneratedAPI
     
-    var config: js.Any = js.native
+    var config: js.Any
   }
   object Api {
     

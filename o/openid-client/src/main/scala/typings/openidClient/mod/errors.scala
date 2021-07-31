@@ -3,7 +3,6 @@ package typings.openidClient.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errors {
@@ -14,7 +13,9 @@ object errors {
     */
   @JSImport("openid-client", "errors.OPError")
   @js.native
-  class OPError () extends Error {
+  class OPError ()
+    extends StObject
+       with Error {
     
     /**
       * The 'error' parameter from the AS response.
@@ -30,6 +31,12 @@ object errors {
       * The 'error_uri' parameter from the AS response.
       */
     var error_uri: js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * When the error is related to an http(s) request this propetty will hold the  response object
@@ -60,7 +67,9 @@ object errors {
     */
   @JSImport("openid-client", "errors.RPError")
   @js.native
-  class RPError () extends Error {
+  class RPError ()
+    extends StObject
+       with Error {
     
     var auth_time: js.UndefOr[Double] = js.native
     
@@ -73,6 +82,12 @@ object errors {
     var iat: js.UndefOr[Double] = js.native
     
     var jwt: js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var nbf: js.UndefOr[Double] = js.native
     

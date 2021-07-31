@@ -12,7 +12,6 @@ import typings.arcgisJsApi.esri.TextContentConstructor
 import typings.arcgisJsApi.esri.TextContentProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,8 +34,17 @@ object content {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html)
     */
   class AttachmentsContentCls ()
-    extends typings.arcgisJsApi.esri.AttachmentsContent {
+    extends StObject
+       with typings.arcgisJsApi.esri.AttachmentsContent {
     def this(properties: AttachmentsContentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.content.CustomContent")
@@ -47,8 +55,17 @@ object content {
   @JSGlobal("__esri.content.CustomContent")
   @js.native
   class CustomContentCls ()
-    extends typings.arcgisJsApi.esri.CustomContent {
+    extends StObject
+       with typings.arcgisJsApi.esri.CustomContent {
     def this(properties: CustomContentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.content.FieldsContent")
@@ -64,8 +81,17 @@ object content {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html)
     */
   class FieldsContentCls ()
-    extends typings.arcgisJsApi.esri.FieldsContent {
+    extends StObject
+       with typings.arcgisJsApi.esri.FieldsContent {
     def this(properties: FieldsContentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.content.MediaContent")
@@ -81,8 +107,17 @@ object content {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html)
     */
   class MediaContentCls ()
-    extends typings.arcgisJsApi.esri.MediaContent {
+    extends StObject
+       with typings.arcgisJsApi.esri.MediaContent {
     def this(properties: MediaContentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.content.TextContent")
@@ -98,7 +133,16 @@ object content {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html)
     */
   class TextContentCls ()
-    extends typings.arcgisJsApi.esri.TextContent {
+    extends StObject
+       with typings.arcgisJsApi.esri.TextContent {
     def this(properties: TextContentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
 }

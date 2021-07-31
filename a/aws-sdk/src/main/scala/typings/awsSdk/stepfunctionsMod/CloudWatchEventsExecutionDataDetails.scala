@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchEventsExecutionDataDetails extends StObject {
   
   /**
     * Indicates whether input or output was included in the response. Always true for API calls. 
     */
-  var included: js.UndefOr[typings.awsSdk.stepfunctionsMod.included] = js.native
+  var included: js.UndefOr[typings.awsSdk.stepfunctionsMod.included] = js.undefined
 }
 object CloudWatchEventsExecutionDataDetails {
   

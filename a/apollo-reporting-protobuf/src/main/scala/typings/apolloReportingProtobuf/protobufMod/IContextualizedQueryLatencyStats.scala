@@ -2,17 +2,15 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContextualizedQueryLatencyStats extends StObject {
   
   /** ContextualizedQueryLatencyStats context */
-  var context: js.UndefOr[IStatsContext | Null] = js.native
+  var context: js.UndefOr[IStatsContext | Null] = js.undefined
   
   /** ContextualizedQueryLatencyStats queryLatencyStats */
-  var queryLatencyStats: js.UndefOr[IQueryLatencyStats | Null] = js.native
+  var queryLatencyStats: js.UndefOr[IQueryLatencyStats | Null] = js.undefined
 }
 object IContextualizedQueryLatencyStats {
   

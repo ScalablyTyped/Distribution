@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollOptions extends StObject {
   
-  var behavior: js.UndefOr[ScrollBehavior] = js.native
+  var behavior: js.UndefOr[ScrollBehavior] = js.undefined
 }
 object ScrollOptions {
   

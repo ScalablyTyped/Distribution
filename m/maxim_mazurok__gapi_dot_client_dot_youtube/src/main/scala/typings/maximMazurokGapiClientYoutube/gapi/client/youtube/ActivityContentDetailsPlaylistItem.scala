@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityContentDetailsPlaylistItem extends StObject {
   
   /** The value that YouTube uses to uniquely identify the playlist. */
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
   /** ID of the item within the playlist. */
-  var playlistItemId: js.UndefOr[String] = js.native
+  var playlistItemId: js.UndefOr[String] = js.undefined
   
   /** The resourceId object contains information about the resource that was added to the playlist. */
-  var resourceId: js.UndefOr[ResourceId] = js.native
+  var resourceId: js.UndefOr[ResourceId] = js.undefined
 }
 object ActivityContentDetailsPlaylistItem {
   

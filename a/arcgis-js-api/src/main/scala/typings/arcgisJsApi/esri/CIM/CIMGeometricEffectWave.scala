@@ -2,45 +2,44 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectWave
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The distance perpendicular to a feature to display the curves for the symbol.
     */
-  var amplitude: js.UndefOr[Double] = js.native
+  var amplitude: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance along the line or polygon to display the curves for the symbol.
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
   
   /**
     * The staring value for generating a random number. This is only used when the Waveform is set to Random.
     */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectWave: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave = js.native
+  var type_CIMGeometricEffectWave: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave
   
   /**
     * The shape of the curves to be displayed along the symbol.
     */
   var waveform: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectWaveform * / any */ String
-  ] = js.native
+  ] = js.undefined
 }
 object CIMGeometricEffectWave {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave): CIMGeometricEffectWave = {
+  def apply(): CIMGeometricEffectWave = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectWave")
     __obj.asInstanceOf[CIMGeometricEffectWave]
   }
   

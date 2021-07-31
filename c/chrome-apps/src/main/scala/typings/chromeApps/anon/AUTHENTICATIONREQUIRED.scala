@@ -7,33 +7,25 @@ import typings.chromeApps.chromeAppsStrings.running_
 import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUTHENTICATIONREQUIRED extends StObject {
   
-  var AUTHENTICATION_REQUIRED: authentication_required_ = js.native
+  var AUTHENTICATION_REQUIRED: authentication_required_
   
-  var DISABLED: disabled__ = js.native
+  var DISABLED: disabled__
   
-  var INITIALIZING: initializing_ = js.native
+  var INITIALIZING: initializing_
   
-  var RUNNING: running_ = js.native
+  var RUNNING: running_
   
-  var TEMPORARY_UNAVAILABLE: temporary_unavailable_ = js.native
+  var TEMPORARY_UNAVAILABLE: temporary_unavailable_
 }
 object AUTHENTICATIONREQUIRED {
   
   @scala.inline
-  def apply(
-    AUTHENTICATION_REQUIRED: authentication_required_,
-    DISABLED: disabled__,
-    INITIALIZING: initializing_,
-    RUNNING: running_,
-    TEMPORARY_UNAVAILABLE: temporary_unavailable_
-  ): AUTHENTICATIONREQUIRED = {
-    val __obj = js.Dynamic.literal(AUTHENTICATION_REQUIRED = AUTHENTICATION_REQUIRED.asInstanceOf[js.Any], DISABLED = DISABLED.asInstanceOf[js.Any], INITIALIZING = INITIALIZING.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], TEMPORARY_UNAVAILABLE = TEMPORARY_UNAVAILABLE.asInstanceOf[js.Any])
+  def apply(): AUTHENTICATIONREQUIRED = {
+    val __obj = js.Dynamic.literal(AUTHENTICATION_REQUIRED = "authentication_required", DISABLED = "disabled", INITIALIZING = "initializing", RUNNING = "running", TEMPORARY_UNAVAILABLE = "temporary_unavailable")
     __obj.asInstanceOf[AUTHENTICATIONREQUIRED]
   }
   

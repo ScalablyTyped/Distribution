@@ -2,14 +2,12 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.ObjectTypeKnob<any>, 'value'> */
-@js.native
 trait PickObjectTypeKnobanyvalu extends StObject {
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object PickObjectTypeKnobanyvalu {
   

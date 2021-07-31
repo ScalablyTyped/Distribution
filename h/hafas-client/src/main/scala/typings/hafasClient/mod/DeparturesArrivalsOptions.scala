@@ -3,77 +3,75 @@ package typings.hafasClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeparturesArrivalsOptions extends StObject {
   
   /**
     * only show departures heading to this station
     * @default undefined
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * show departures for the next n minutes
     * @default 120
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * departures at related stations
     * @default false
     */
-  var includeRelatedStations: js.UndefOr[Boolean] = js.native
+  var includeRelatedStations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * language
     * @default en
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * parse & expose lines at the stop/station?
     * @default false
     */
-  var linesOfStops: js.UndefOr[Boolean] = js.native
+  var linesOfStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose hints & warnings?
     * @default false
     */
-  var remarks: js.UndefOr[Boolean] = js.native
+  var remarks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * max. number of results; `null` means "whatever HAFAS wants"
     * @default 10
     */
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   /**
     * fetch & parse previous/next stopovers?
     * @default false
     */
-  var stopovers: js.UndefOr[Boolean] = js.native
+  var stopovers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * departure date, undefined corresponds to Date.Now
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.native
+  var when: js.UndefOr[Date] = js.undefined
 }
 object DeparturesArrivalsOptions {
   

@@ -3,10 +3,13 @@ package typings.memoryCache
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("memory-cache", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("memory-cache", "Cache")
@@ -37,74 +40,56 @@ object mod {
     def misses(): Double = js.native
     
     def put(key: K, value: V): V = js.native
-    def put(
-      key: K,
-      value: V,
-      time: js.UndefOr[scala.Nothing],
-      timeoutCallback: js.Function2[/* key */ K, /* value */ V, Unit]
-    ): V = js.native
     def put(key: K, value: V, time: Double): V = js.native
     def put(key: K, value: V, time: Double, timeoutCallback: js.Function2[/* key */ K, /* value */ V, Unit]): V = js.native
+    def put(key: K, value: V, time: Unit, timeoutCallback: js.Function2[/* key */ K, /* value */ V, Unit]): V = js.native
     
     def size(): Double = js.native
   }
   
-  @JSImport("memory-cache", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("memory-cache", "debug")
-  @js.native
-  def debug(bool: Boolean): Unit = js.native
+  @scala.inline
+  def debug(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("memory-cache", "del")
-  @js.native
-  def del(key: js.Any): Unit = js.native
+  @scala.inline
+  def del(key: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("memory-cache", "get")
-  @js.native
-  def get(key: js.Any): js.Any = js.native
+  @scala.inline
+  def get(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("memory-cache", "hits")
-  @js.native
-  def hits(): Double = js.native
+  @scala.inline
+  def hits(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hits")().asInstanceOf[Double]
   
-  @JSImport("memory-cache", "keys")
-  @js.native
-  def keys(): js.Array[_] = js.native
+  @scala.inline
+  def keys(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("memory-cache", "memsize")
-  @js.native
-  def memsize(): Double = js.native
+  @scala.inline
+  def memsize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memsize")().asInstanceOf[Double]
   
-  @JSImport("memory-cache", "misses")
-  @js.native
-  def misses(): Double = js.native
+  @scala.inline
+  def misses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("misses")().asInstanceOf[Double]
   
-  @JSImport("memory-cache", "put")
-  @js.native
-  def put[V](key: js.Any, value: V): V = js.native
-  @JSImport("memory-cache", "put")
-  @js.native
-  def put[V](
-    key: js.Any,
-    value: V,
-    time: js.UndefOr[scala.Nothing],
-    timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
-  ): V = js.native
-  @JSImport("memory-cache", "put")
-  @js.native
-  def put[V](key: js.Any, value: V, time: Double): V = js.native
-  @JSImport("memory-cache", "put")
-  @js.native
+  @scala.inline
+  def put[V](key: js.Any, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.inline
+  def put[V](key: js.Any, value: V, time: Double): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.inline
   def put[V](
     key: js.Any,
     value: V,
     time: Double,
     timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
-  ): V = js.native
+  ): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any], timeoutCallback.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.inline
+  def put[V](
+    key: js.Any,
+    value: V,
+    time: Unit,
+    timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
+  ): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any], timeoutCallback.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("memory-cache", "size")
-  @js.native
-  def size(): Double = js.native
+  @scala.inline
+  def size(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")().asInstanceOf[Double]
 }

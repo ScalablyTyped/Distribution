@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3bucketAssociationMod {
@@ -49,6 +48,10 @@ object s3bucketAssociationMod {
   /* static members */
   object S3BucketAssociation {
     
+    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing S3BucketAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object s3bucketAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): S3BucketAssociation = js.native
-    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): S3BucketAssociation = js.native
-    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState): S3BucketAssociation = js.native
-    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): S3BucketAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: S3BucketAssociationState): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
     
     /**
       * Returns true if the given object is an instance of S3BucketAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/macie/s3bucketAssociation", "S3BucketAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean]
   }
   
-  @js.native
   trait S3BucketAssociationArgs extends StObject {
     
     /**
       * The name of the S3 bucket that you want to associate with Amazon Macie.
       */
-    val bucketName: Input[String] = js.native
+    val bucketName: Input[String]
     
     /**
       * The configuration of how Amazon Macie classifies the S3 objects.
       */
-    val classificationType: js.UndefOr[Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]] = js.native
+    val classificationType: js.UndefOr[Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]] = js.undefined
     
     /**
       * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
       */
-    val memberAccountId: js.UndefOr[Input[String]] = js.native
+    val memberAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Object key prefix identifying one or more S3 objects to which the association applies.
       */
-    val prefix: js.UndefOr[Input[String]] = js.native
+    val prefix: js.UndefOr[Input[String]] = js.undefined
   }
   object S3BucketAssociationArgs {
     
@@ -137,28 +134,27 @@ object s3bucketAssociationMod {
     }
   }
   
-  @js.native
   trait S3BucketAssociationState extends StObject {
     
     /**
       * The name of the S3 bucket that you want to associate with Amazon Macie.
       */
-    val bucketName: js.UndefOr[Input[String]] = js.native
+    val bucketName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The configuration of how Amazon Macie classifies the S3 objects.
       */
-    val classificationType: js.UndefOr[Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]] = js.native
+    val classificationType: js.UndefOr[Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]] = js.undefined
     
     /**
       * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
       */
-    val memberAccountId: js.UndefOr[Input[String]] = js.native
+    val memberAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Object key prefix identifying one or more S3 objects to which the association applies.
       */
-    val prefix: js.UndefOr[Input[String]] = js.native
+    val prefix: js.UndefOr[Input[String]] = js.undefined
   }
   object S3BucketAssociationState {
     

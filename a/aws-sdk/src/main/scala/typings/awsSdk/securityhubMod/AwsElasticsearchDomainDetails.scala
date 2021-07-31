@@ -2,61 +2,59 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElasticsearchDomainDetails extends StObject {
   
   /**
     * IAM policy document specifying the access policies for the new Amazon ES domain.
     */
-  var AccessPolicies: js.UndefOr[NonEmptyString] = js.native
+  var AccessPolicies: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Additional options for the domain endpoint.
     */
-  var DomainEndpointOptions: js.UndefOr[AwsElasticsearchDomainDomainEndpointOptions] = js.native
+  var DomainEndpointOptions: js.UndefOr[AwsElasticsearchDomainDomainEndpointOptions] = js.undefined
   
   /**
     * Unique identifier for an Amazon ES domain.
     */
-  var DomainId: js.UndefOr[NonEmptyString] = js.native
+  var DomainId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Name of an Amazon ES domain. Domain names are unique across all domains owned by the same account within an AWS Region. Domain names must start with a lowercase letter and must be between 3 and 28 characters. Valid characters are a-z (lowercase only), 0-9, and – (hyphen). 
     */
-  var DomainName: js.UndefOr[NonEmptyString] = js.native
+  var DomainName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Elasticsearch version.
     */
-  var ElasticsearchVersion: js.UndefOr[NonEmptyString] = js.native
+  var ElasticsearchVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Details about the configuration for encryption at rest.
     */
-  var EncryptionAtRestOptions: js.UndefOr[AwsElasticsearchDomainEncryptionAtRestOptions] = js.native
+  var EncryptionAtRestOptions: js.UndefOr[AwsElasticsearchDomainEncryptionAtRestOptions] = js.undefined
   
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests to an Amazon ES domain. The endpoint is a service URL. 
     */
-  var Endpoint: js.UndefOr[NonEmptyString] = js.native
+  var Endpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The key-value pair that exists if the Amazon ES domain uses VPC endpoints.
     */
-  var Endpoints: js.UndefOr[FieldMap] = js.native
+  var Endpoints: js.UndefOr[FieldMap] = js.undefined
   
   /**
     * Details about the configuration for node-to-node encryption.
     */
-  var NodeToNodeEncryptionOptions: js.UndefOr[AwsElasticsearchDomainNodeToNodeEncryptionOptions] = js.native
+  var NodeToNodeEncryptionOptions: js.UndefOr[AwsElasticsearchDomainNodeToNodeEncryptionOptions] = js.undefined
   
   /**
     * Information that Amazon ES derives based on VPCOptions for the domain.
     */
-  var VPCOptions: js.UndefOr[AwsElasticsearchDomainVPCOptions] = js.native
+  var VPCOptions: js.UndefOr[AwsElasticsearchDomainVPCOptions] = js.undefined
 }
 object AwsElasticsearchDomainDetails {
   

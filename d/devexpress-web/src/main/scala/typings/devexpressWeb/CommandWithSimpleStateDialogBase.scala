@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for dialog-related commands with a simple common command state.
   */
-@js.native
 trait CommandWithSimpleStateDialogBase extends StObject {
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): SimpleCommandState = js.native
+  def getState(): SimpleCommandState
 }
 object CommandWithSimpleStateDialogBase {
   

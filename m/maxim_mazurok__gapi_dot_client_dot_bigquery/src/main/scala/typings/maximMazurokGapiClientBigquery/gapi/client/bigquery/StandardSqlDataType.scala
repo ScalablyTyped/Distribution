@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardSqlDataType extends StObject {
   
   /** The type of the array's elements, if type_kind = "ARRAY". */
-  var arrayElementType: js.UndefOr[StandardSqlDataType] = js.native
+  var arrayElementType: js.UndefOr[StandardSqlDataType] = js.undefined
   
   /** The fields of this struct, in order, if type_kind = "STRUCT". */
-  var structType: js.UndefOr[StandardSqlStructType] = js.native
+  var structType: js.UndefOr[StandardSqlStructType] = js.undefined
   
   /** Required. The top level type of this field. Can be any standard SQL data type (e.g., "INT64", "DATE", "ARRAY"). */
-  var typeKind: js.UndefOr[String] = js.native
+  var typeKind: js.UndefOr[String] = js.undefined
 }
 object StandardSqlDataType {
   

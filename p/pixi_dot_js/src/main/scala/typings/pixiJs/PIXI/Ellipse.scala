@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Ellipse extends StObject {
   
   /**
@@ -21,20 +19,20 @@ trait Ellipse extends StObject {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coords are within this ellipse
     */
-  def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double): Boolean
   
   /**
     * Returns the framing rectangle of the ellipse as a Rectangle object
     *
     * @return {PIXI.Rectangle} the framing rectangle
     */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
   
   /**
     * @member {number} PIXI.Ellipse#height
     * @default 0
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
@@ -44,25 +42,25 @@ trait Ellipse extends StObject {
     * @default PIXI.SHAPES.ELIP
     * @see PIXI.SHAPES
     */
-  val `type`: Double = js.native
+  val `type`: Double
   
   /**
     * @member {number} PIXI.Ellipse#width
     * @default 0
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * @member {number} PIXI.Ellipse#x
     * @default 0
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * @member {number} PIXI.Ellipse#y
     * @default 0
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Ellipse {
   

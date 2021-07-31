@@ -2,56 +2,54 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePatchGroupStateResult extends StObject {
   
   /**
     * The number of instances in the patch group.
     */
-  var Instances: js.UndefOr[Integer] = js.native
+  var Instances: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with patches from the patch baseline that failed to install.
     */
-  var InstancesWithFailedPatches: js.UndefOr[Integer] = js.native
+  var InstancesWithFailedPatches: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with patches installed that aren't defined in the patch baseline.
     */
-  var InstancesWithInstalledOtherPatches: js.UndefOr[Integer] = js.native
+  var InstancesWithInstalledOtherPatches: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with installed patches.
     */
-  var InstancesWithInstalledPatches: js.UndefOr[Integer] = js.native
+  var InstancesWithInstalledPatches: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with patches installed by Patch Manager that have not been rebooted after the patch installation. The status of these instances is NON_COMPLIANT.
     */
-  var InstancesWithInstalledPendingRebootPatches: js.UndefOr[InstancesCount] = js.native
+  var InstancesWithInstalledPendingRebootPatches: js.UndefOr[InstancesCount] = js.undefined
   
   /**
     * The number of instances with patches installed that are specified in a RejectedPatches list. Patches with a status of INSTALLED_REJECTED were typically installed before they were added to a RejectedPatches list.  If ALLOW_AS_DEPENDENCY is the specified option for RejectedPatchesAction, the value of InstancesWithInstalledRejectedPatches will always be 0 (zero). 
     */
-  var InstancesWithInstalledRejectedPatches: js.UndefOr[InstancesCount] = js.native
+  var InstancesWithInstalledRejectedPatches: js.UndefOr[InstancesCount] = js.undefined
   
   /**
     * The number of instances with missing patches from the patch baseline.
     */
-  var InstancesWithMissingPatches: js.UndefOr[Integer] = js.native
+  var InstancesWithMissingPatches: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with patches that aren't applicable.
     */
-  var InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.native
+  var InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with NotApplicable patches beyond the supported limit, which are not reported by name to Systems Manager Inventory.
     */
-  var InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.native
+  var InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.undefined
 }
 object DescribePatchGroupStateResult {
   

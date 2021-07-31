@@ -4,11 +4,9 @@ import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tom Wu's RSA Key class and extension */
-@js.native
 trait RSAKey extends StObject {
   
   /**
@@ -16,37 +14,37 @@ trait RSAKey extends StObject {
     * @param h hexadecimal string of X.509 RSA public key certificate
     * @param nthPKI nth index of publicKeyInfo. (DEFAULT: 6 for X509v3)
     */
-  def readCertPubKeyHex(h: String, nthPKI: Double): Unit = js.native
+  def readCertPubKeyHex(h: String, nthPKI: Double): Unit
   
   /**
     * read an ASN.1 hexadecimal string of PKCS#1/5 plain RSA private key
     * @param h hexadecimal string of PKCS#1/5 plain RSA private key
     */
-  def readPKCS5PrvKeyHex(h: String): Unit = js.native
+  def readPKCS5PrvKeyHex(h: String): Unit
   
   /**
     * read an ASN.1 hexadecimal string of PKCS#5 RSA public key
     * @param h hexadecimal string of PKCS#5 public key
     */
-  def readPKCS5PubKeyHex(h: String): Unit = js.native
+  def readPKCS5PubKeyHex(h: String): Unit
   
   /**
     * read an ASN.1 hexadecimal string of PKCS#8 plain RSA private key
     * @param h hexadecimal string of PKCS#8 plain RSA private key
     */
-  def readPKCS8PrvKeyHex(h: String): Unit = js.native
+  def readPKCS8PrvKeyHex(h: String): Unit
   
   /**
     * read an ASN.1 hexadecimal string of PKCS#8 RSA public key
     * @param h hexadecimal string of PKCS#8 public key
     */
-  def readPKCS8PubKeyHex(h: String): Unit = js.native
+  def readPKCS8PubKeyHex(h: String): Unit
   
   /**
     * read PKCS#1 private key from a string
     * @param keyPEM string of PKCS#1 private key.
     */
-  def readPrivateKeyFromPEMString(keyPEM: String): Unit = js.native
+  def readPrivateKeyFromPEMString(keyPEM: String): Unit
   
   /**
     * verifies a sigature for a message string with RSA public key.
@@ -55,7 +53,7 @@ trait RSAKey extends StObject {
     *             non-hexadecimal characters including new lines will be ignored.
     * @return returns 1 if valid, otherwise 0
     */
-  def verify(sMsg: String, hSig: String): `0` | `1` = js.native
+  def verify(sMsg: String, hSig: String): `0` | `1`
 }
 object RSAKey {
   

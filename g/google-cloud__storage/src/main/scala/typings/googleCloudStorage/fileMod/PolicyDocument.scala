@@ -2,17 +2,15 @@ package typings.googleCloudStorage.fileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyDocument extends StObject {
   
-  var base64: String = js.native
+  var base64: String
   
-  var signature: String = js.native
+  var signature: String
   
-  var string: String = js.native
+  var string: String
 }
 object PolicyDocument {
   

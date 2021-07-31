@@ -4,12 +4,12 @@ import typings.datatablesNet.JQuery
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowMethods
-  extends CoreMethods
+  extends StObject
+     with CoreMethods
      with CommonRowMethod {
   
   /**
@@ -54,13 +54,13 @@ trait RowMethods
   /**
     * Get the data for the selected row
     */
-  def data(): js.Array[_] | js.Object = js.native
+  def data(): js.Array[js.Any] | js.Object = js.native
   /**
     * Set the data for the selected row
     *
     * @param d Data to use for the row.
     */
-  def data(d: js.Array[_]): Api = js.native
+  def data(d: js.Array[js.Any]): Api = js.native
   def data(d: js.Object): Api = js.native
   
   /**

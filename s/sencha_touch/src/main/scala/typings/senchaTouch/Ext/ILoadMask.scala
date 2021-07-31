@@ -3,80 +3,80 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.data.IStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILoadMask extends IMask {
+trait ILoadMask
+  extends StObject
+     with IMask {
   
   /** [Method] Changes the data store bound to this LoadMask
     * @param store Ext.data.Store The store to bind to this LoadMask
     */
-  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.native
+  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_ILoadMask: js.UndefOr[java.lang.String] = js.native
+  var cls_ILoadMask: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
     */
   @JSName("getCls")
-  var getCls_ILoadMask: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getCls_ILoadMask: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of indicator
     * @returns Boolean
     */
-  var getIndicator: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getIndicator: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of message
     * @returns String
     */
-  var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of messageCls
     * @returns String
     */
-  var getMessageCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getMessageCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var indicator: js.UndefOr[Boolean] = js.native
+  var indicator: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var message: js.UndefOr[java.lang.String] = js.native
+  var message: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var messageCls: js.UndefOr[java.lang.String] = js.native
+  var messageCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var msg: js.UndefOr[java.lang.String] = js.native
+  var msg: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var msgCls: js.UndefOr[java.lang.String] = js.native
+  var msgCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
   @JSName("setCls")
-  var setCls_ILoadMask: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setCls_ILoadMask: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicator
     * @param indicator Boolean The new value.
     */
-  var setIndicator: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[Boolean], Unit]] = js.native
+  var setIndicator: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of message
     * @param message String The new value.
     */
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of messageCls
     * @param messageCls String The new value.
     */
-  var setMessageCls: js.UndefOr[js.Function1[/* messageCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setMessageCls: js.UndefOr[js.Function1[/* messageCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.Store) */
-  var store: js.UndefOr[IStore] = js.native
+  var store: js.UndefOr[IStore] = js.undefined
 }
 object ILoadMask {
   

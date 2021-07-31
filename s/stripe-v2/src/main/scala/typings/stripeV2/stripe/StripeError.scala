@@ -2,19 +2,17 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeError extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var message: String = js.native
+  var message: String
   
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object StripeError {
   

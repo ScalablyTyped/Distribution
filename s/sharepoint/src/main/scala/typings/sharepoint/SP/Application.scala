@@ -6,19 +6,17 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Application {
   
   object UI {
     
-    @js.native
     trait DefaultFormsInformation extends StObject {
       
-      var DefaultForms: FormsInfo = js.native
+      var DefaultForms: FormsInfo
       
-      var OtherForms: js.Any = js.native
+      var OtherForms: js.Any
     }
     object DefaultFormsInformation {
       
@@ -39,12 +37,11 @@ object Application {
       }
     }
     
-    @js.native
     trait DefaultFormsInformationRequestor extends StObject {
       
-      def onDefaultFormsInformationRetrieveFailure(): Unit = js.native
+      def onDefaultFormsInformationRetrieveFailure(): Unit
       
-      def onDefaultFormsInformationRetrieveSuccess(defaultForms: DefaultFormsInformation): Unit = js.native
+      def onDefaultFormsInformationRetrieveSuccess(defaultForms: DefaultFormsInformation): Unit
     }
     object DefaultFormsInformationRequestor {
       
@@ -68,19 +65,17 @@ object Application {
       }
     }
     
-    @js.native
     trait DefaultFormsMenuBuilder extends StObject
     
-    @js.native
     trait FormsInfo extends StObject {
       
-      var ContentTypeName: String = js.native
+      var ContentTypeName: String
       
-      var DisplayFormUrl: String = js.native
+      var DisplayFormUrl: String
       
-      var EditFormUrl: String = js.native
+      var EditFormUrl: String
       
-      var NewFormUrl: String = js.native
+      var NewFormUrl: String
     }
     object FormsInfo {
       
@@ -107,12 +102,13 @@ object Application {
       }
     }
     
-    @js.native
-    trait MoreColorsPage extends Control {
+    trait MoreColorsPage
+      extends StObject
+         with Control {
       
-      def get_moreColorsPicker(): MoreColorsPicker = js.native
+      def get_moreColorsPicker(): MoreColorsPicker
       
-      def set_moreColorsPicker(value: MoreColorsPicker): Unit = js.native
+      def set_moreColorsPicker(value: MoreColorsPicker): Unit
     }
     object MoreColorsPage {
       
@@ -157,12 +153,13 @@ object Application {
       }
     }
     
-    @js.native
-    trait MoreColorsPicker extends Control {
+    trait MoreColorsPicker
+      extends StObject
+         with Control {
       
-      def get_colorValue(): String = js.native
+      def get_colorValue(): String
       
-      def set_colorValue(value: String): Unit = js.native
+      def set_colorValue(value: String): Unit
     }
     object MoreColorsPicker {
       
@@ -207,20 +204,21 @@ object Application {
       }
     }
     
-    @js.native
-    trait ThemeWebPage extends Control {
+    trait ThemeWebPage
+      extends StObject
+         with Control {
       
-      def add_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+      def add_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
       
-      def get_thmxThemes(): js.Any = js.native
+      def get_thmxThemes(): js.Any
       
-      def onThemeSelectionChanged(evt: DomEvent): Unit = js.native
+      def onThemeSelectionChanged(evt: DomEvent): Unit
       
-      def remove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+      def remove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
       
-      def set_thmxThemes(value: js.Any): Unit = js.native
+      def set_thmxThemes(value: js.Any): Unit
       
-      def updateThemeDisplay(): Unit = js.native
+      def updateThemeDisplay(): Unit
     }
     object ThemeWebPage {
       
@@ -281,10 +279,9 @@ object Application {
       }
     }
     
-    @js.native
     trait ViewInformationRequestor extends StObject {
       
-      def onViewInformationReturned(viewGroups: ViewSelectorGroups): Unit = js.native
+      def onViewInformationReturned(viewGroups: ViewSelectorGroups): Unit
     }
     object ViewInformationRequestor {
       
@@ -302,20 +299,19 @@ object Application {
       }
     }
     
-    @js.native
     trait ViewSelectorGroups extends StObject {
       
-      var DefaultView: ViewSelectorMenuItem = js.native
+      var DefaultView: ViewSelectorMenuItem
       
-      var ModeratedViews: js.Any = js.native
+      var ModeratedViews: js.Any
       
-      var OtherViews: js.Any = js.native
+      var OtherViews: js.Any
       
-      var PersonalViews: js.Any = js.native
+      var PersonalViews: js.Any
       
-      var PublicViews: js.Any = js.native
+      var PublicViews: js.Any
       
-      var ViewCreation: js.Any = js.native
+      var ViewCreation: js.Any
     }
     object ViewSelectorGroups {
       
@@ -355,29 +351,27 @@ object Application {
       }
     }
     
-    @js.native
     trait ViewSelectorMenuBuilder extends StObject
     
-    @js.native
     trait ViewSelectorMenuItem extends StObject {
       
-      var ActionScriptText: String = js.native
+      var ActionScriptText: String
       
-      var Description: String = js.native
+      var Description: String
       
-      var GroupId: Double = js.native
+      var GroupId: Double
       
-      var Id: String = js.native
+      var Id: String
       
-      var ImageSourceUrl: String = js.native
+      var ImageSourceUrl: String
       
-      var ItemType: String = js.native
+      var ItemType: String
       
-      var NavigateUrl: String = js.native
+      var NavigateUrl: String
       
-      var Sequence: Double = js.native
+      var Sequence: Double
       
-      var Text: String = js.native
+      var Text: String
     }
     object ViewSelectorMenuItem {
       
@@ -429,24 +423,23 @@ object Application {
       }
     }
     
-    @js.native
     trait ViewSelectorMenuOptions extends StObject {
       
-      var listId: String = js.native
+      var listId: String
       
-      var showApproverView: Boolean = js.native
+      var showApproverView: Boolean
       
-      var showCreateView: Boolean = js.native
+      var showCreateView: Boolean
       
-      var showEditView: Boolean = js.native
+      var showEditView: Boolean
       
-      var showMergeView: Boolean = js.native
+      var showMergeView: Boolean
       
-      var showRepairView: Boolean = js.native
+      var showRepairView: Boolean
       
-      var viewId: String = js.native
+      var viewId: String
       
-      var viewParameters: String = js.native
+      var viewParameters: String
     }
     object ViewSelectorMenuOptions {
       
@@ -494,14 +487,13 @@ object Application {
       }
     }
     
-    @js.native
     trait ViewSelectorSubMenu extends StObject {
       
-      var ImageSourceUrl: String = js.native
+      var ImageSourceUrl: String
       
-      var SubMenuItems: js.Any = js.native
+      var SubMenuItems: js.Any
       
-      var Text: String = js.native
+      var Text: String
     }
     object ViewSelectorSubMenu {
       
@@ -525,12 +517,11 @@ object Application {
       }
     }
     
-    @js.native
     trait WikiPageNameInPlaceEditor extends StObject {
       
-      def editingPageCallback(): Unit = js.native
+      def editingPageCallback(): Unit
       
-      def savingPageCallback(): Unit = js.native
+      def savingPageCallback(): Unit
     }
     object WikiPageNameInPlaceEditor {
       

@@ -2,37 +2,35 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateEntity` operation. */
-@js.native
 trait UpdateEntityParams extends StObject {
   
   /** The name of the entity. */
-  var entity: String = js.native
+  var entity: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The description of the entity. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 128 characters. */
-  var new_description: js.UndefOr[String] = js.native
+  var new_description: js.UndefOr[String] = js.undefined
   
   /** The name of the entity. This string must conform to the following restrictions: - It can contain only Unicode alphanumeric, underscore, and hyphen characters. - It cannot begin with the reserved prefix `sys-`. - It must be no longer than 64 characters. */
-  var new_entity: js.UndefOr[String] = js.native
+  var new_entity: js.UndefOr[String] = js.undefined
   
   /** Whether to use fuzzy matching for the entity. */
-  var new_fuzzy_match: js.UndefOr[Boolean] = js.native
+  var new_fuzzy_match: js.UndefOr[Boolean] = js.undefined
   
   /** Any metadata related to the entity. */
-  var new_metadata: js.UndefOr[js.Object] = js.native
+  var new_metadata: js.UndefOr[js.Object] = js.undefined
   
   /** An array of objects describing the entity values. */
-  var new_values: js.UndefOr[js.Array[CreateValue]] = js.native
+  var new_values: js.UndefOr[js.Array[CreateValue]] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object UpdateEntityParams {
   

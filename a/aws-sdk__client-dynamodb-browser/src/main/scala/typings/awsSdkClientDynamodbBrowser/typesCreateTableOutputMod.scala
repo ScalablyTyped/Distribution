@@ -5,24 +5,24 @@ import typings.awsSdkClientDynamodbBrowser.typesTableDescriptionMod.Unmarshalled
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateTableOutputMod {
   
-  @js.native
-  trait CreateTableOutput extends OutputTypesUnion {
+  trait CreateTableOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Represents the properties of the table.</p>
       */
-    var TableDescription: js.UndefOr[UnmarshalledTableDescription] = js.native
+    var TableDescription: js.UndefOr[UnmarshalledTableDescription] = js.undefined
   }
   object CreateTableOutput {
     

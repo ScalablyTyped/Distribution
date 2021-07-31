@@ -2,64 +2,62 @@ package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DaemonSetStatus represents the current status of a daemon set.
   */
-@js.native
 trait DaemonSetStatus extends StObject {
   
   /**
     * Count of hash collisions for the DaemonSet. The DaemonSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
     */
-  var collisionCount: Double = js.native
+  var collisionCount: Double
   
   /**
     * Represents the latest available observations of a DaemonSet's current state.
     */
-  var conditions: js.Array[DaemonSetCondition] = js.native
+  var conditions: js.Array[DaemonSetCondition]
   
   /**
     * The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var currentNumberScheduled: Double = js.native
+  var currentNumberScheduled: Double
   
   /**
     * The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var desiredNumberScheduled: Double = js.native
+  var desiredNumberScheduled: Double
   
   /**
     * The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)
     */
-  var numberAvailable: Double = js.native
+  var numberAvailable: Double
   
   /**
     * The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var numberMisscheduled: Double = js.native
+  var numberMisscheduled: Double
   
   /**
     * The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.
     */
-  var numberReady: Double = js.native
+  var numberReady: Double
   
   /**
     * The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)
     */
-  var numberUnavailable: Double = js.native
+  var numberUnavailable: Double
   
   /**
     * The most recent generation observed by the daemon set controller.
     */
-  var observedGeneration: Double = js.native
+  var observedGeneration: Double
   
   /**
     * The total number of nodes that are running updated daemon pod
     */
-  var updatedNumberScheduled: Double = js.native
+  var updatedNumberScheduled: Double
 }
 object DaemonSetStatus {
   

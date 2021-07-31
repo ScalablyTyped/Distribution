@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofLayout extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Layout = js.native
+  def extend(proto: js.Object): Layout
   
   /* static member */
-  var fn: Layout = js.native
+  var fn: Layout
 }
 object TypeofLayout {
   

@@ -2,36 +2,54 @@ package typings.jestMatcherUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replaceableMod {
   
   @JSImport("jest-matcher-utils/build/Replaceable", JSImport.Default)
   @js.native
-  class default protected () extends Replaceable {
+  class default protected ()
+    extends StObject
+       with Replaceable {
     def this(`object`: js.Any) = this()
+    
+    /* CompleteClass */
+    override def forEach(cb: ReplaceableForEachCallBack): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(key: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    var `object`: js.Any = js.native
+    
+    /* CompleteClass */
+    override def set(key: js.Any, value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("jest-matcher-utils/build/Replaceable", "default.isReplaceable")
+    @JSImport("jest-matcher-utils/build/Replaceable", JSImport.Default)
     @js.native
-    def isReplaceable(obj1: js.Any, obj2: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isReplaceable(obj1: js.Any, obj2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReplaceable")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait Replaceable extends StObject {
     
-    def forEach(cb: ReplaceableForEachCallBack): Unit = js.native
+    def forEach(cb: ReplaceableForEachCallBack): Unit
     
-    def get(key: js.Any): js.Any = js.native
+    def get(key: js.Any): js.Any
     
-    var `object`: js.Any = js.native
+    var `object`: js.Any
     
-    def set(key: js.Any, value: js.Any): Unit = js.native
+    def set(key: js.Any, value: js.Any): Unit
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Replaceable {
     

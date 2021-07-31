@@ -3,19 +3,17 @@ package typings.cassandraDriver.anon
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreConnectionsPerHost extends StObject {
   
-  var coreConnectionsPerHost: js.UndefOr[NumberDictionary[Double]] = js.native
+  var coreConnectionsPerHost: js.UndefOr[NumberDictionary[Double]] = js.undefined
   
-  var heartBeatInterval: js.UndefOr[Double] = js.native
+  var heartBeatInterval: js.UndefOr[Double] = js.undefined
   
-  var maxRequestsPerConnection: js.UndefOr[Double] = js.native
+  var maxRequestsPerConnection: js.UndefOr[Double] = js.undefined
   
-  var warmup: js.UndefOr[Boolean] = js.native
+  var warmup: js.UndefOr[Boolean] = js.undefined
 }
 object CoreConnectionsPerHost {
   

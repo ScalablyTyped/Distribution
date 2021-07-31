@@ -2,17 +2,15 @@ package typings.atlassianConnectJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullName extends StObject {
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var id: String = js.native
+  var id: String
   
-  var key: String = js.native
+  var key: String
 }
 object FullName {
   

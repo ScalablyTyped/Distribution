@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Latestcommenturl extends StObject {
   
-  var latest_comment_url: String = js.native
+  var latest_comment_url: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Latestcommenturl {
   

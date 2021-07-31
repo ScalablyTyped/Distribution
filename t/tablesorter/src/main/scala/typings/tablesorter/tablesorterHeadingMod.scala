@@ -7,48 +7,48 @@ import typings.tablesorter.stringSortingMod.StringSorting
 import typings.tablesorter.tablesorterConfigBaseMod.TablesorterConfigBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesorterHeadingMod {
   
-  @js.native
-  trait TablesorterHeading extends TablesorterConfigBase {
+  trait TablesorterHeading
+    extends StObject
+       with TablesorterConfigBase {
     
     /**
       * The sorting to apply for empty cells.
       */
-    var empty: js.UndefOr[EmptySorting] = js.native
+    var empty: js.UndefOr[EmptySorting] = js.undefined
     
     /**
       * The filter-concept for the column.
       */
-    var filter: js.UndefOr[ColumnFilter] = js.native
+    var filter: js.UndefOr[ColumnFilter] = js.undefined
     
     /**
       * The locked sort-order of the heading.
       */
-    var lockedOrder: js.UndefOr[SortOrder] = js.native
+    var lockedOrder: js.UndefOr[SortOrder] = js.undefined
     
     /**
       * Either the name of the parser to use for text-extraction or a value indicating whether text-extraction is enabled.
       */
-    var parser: js.UndefOr[String | Boolean] = js.native
+    var parser: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * A value indicating whether the column should be resizable.
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Either the name of the parser to use for sorting or a value indicating whether sorting is enabled.
       */
-    var sorter: js.UndefOr[String | Boolean] = js.native
+    var sorter: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * The sorting to apply for text-cells.
       */
-    var string: js.UndefOr[StringSorting] = js.native
+    var string: js.UndefOr[StringSorting] = js.undefined
   }
   object TablesorterHeading {
     

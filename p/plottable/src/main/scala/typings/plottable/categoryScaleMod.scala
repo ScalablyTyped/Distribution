@@ -4,7 +4,6 @@ import typings.plottable.scaleMod.Scale
 import typings.plottable.scalesMod.ITransformableScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryScaleMod {
@@ -59,6 +58,20 @@ object categoryScaleMod {
     def cloneWithoutProviders(): Category = js.native
     
     /**
+      * Returns the current transformed domain of the scale. This must be a
+      * numerical range in the same coordinate space used for
+      * `scaleTransformation`.
+      */
+    /* CompleteClass */
+    override def getTransformationDomain(): js.Tuple2[Double, Double] = js.native
+    
+    /**
+      * Gets the full extent of the transformation domain.
+      */
+    /* CompleteClass */
+    override def getTransformationExtent(): js.Tuple2[Double, Double] = js.native
+    
+    /**
       * Gets the inner padding.
       *
       * The inner padding is defined as the padding in between bands on the scale,
@@ -86,6 +99,12 @@ object categoryScaleMod {
     def invertRange(range: js.Tuple2[Double, Double]): js.Array[String] = js.native
     
     /**
+      * Returns value in *Transformation Space* for the provided *screen space*.
+      */
+    /* CompleteClass */
+    override def invertedTransformation(value: Double): Double = js.native
+    
+    /**
       * Gets the outer padding.
       *
       * The outer padding is the padding in between the outer bands and the edges of the range,
@@ -104,6 +123,14 @@ object categoryScaleMod {
       */
     def outerPadding(outerPadding: Double): this.type = js.native
     
+    /**
+      * Translates the scale by a number of pixels.
+      *
+      * @param {number} [translateAmount] The translation amount in screen space
+      */
+    /* CompleteClass */
+    override def pan(translateAmount: Double): Unit = js.native
+    
     def range(values: js.Tuple2[Double, Double]): this.type = js.native
     
     /**
@@ -114,6 +141,20 @@ object categoryScaleMod {
     def rangeBand(): Double = js.native
     
     /**
+      * Returns value in *screen space* for the given domain value.
+      */
+    /* CompleteClass */
+    override def scaleTransformation(value: Double): Double = js.native
+    
+    /**
+      * Directly set the transformation domain. Instead of calling `.zoom` or
+      * `.pan` perform calculations relative to the current domain, this can but
+      * used to pan/zoom to an exact domain interval (in transformation space).
+      */
+    /* CompleteClass */
+    override def setTransformationDomain(domain: js.Tuple2[Double, Double]): Unit = js.native
+    
+    /**
       * Returns the step width of the scale.
       *
       * The step width is the pixel distance between adjacent values in the domain.
@@ -121,16 +162,30 @@ object categoryScaleMod {
       * @returns {number}
       */
     def stepWidth(): Double = js.native
+    
+    /**
+      * Apply the magnification with the floating point `magnifyAmount` centered
+      * at the `centerValue` coordinate.
+      *
+      * @param {number} [magnifyAmount] The floating point zoom amount. `1.0` is
+      * no zoom change.
+      * @param {number} [centerValue] The coordinate of the mouse in screen
+      * space.
+      */
+    /* CompleteClass */
+    override def zoom(magnifyAmount: Double, centerValue: Double): Unit = js.native
   }
   /* static members */
   object Category {
     
-    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableInnerPadding")
+    @JSImport("plottable/build/src/scales/categoryScale", "Category")
     @js.native
-    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableOuterPadding")
-    @js.native
-    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
+    @scala.inline
+    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

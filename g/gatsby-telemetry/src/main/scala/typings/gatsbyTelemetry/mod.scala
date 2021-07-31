@@ -12,10 +12,13 @@ import typings.gatsbyTelemetry.telemetryMod.ITelemetryTagsPayload
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gatsby-telemetry/lib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gatsby-telemetry/lib", "AnalyticsTracker")
   @js.native
@@ -24,119 +27,92 @@ object mod {
     def this(hasComponentIdGatsbyCliVersionTrackingEnabled: IAnalyticsTrackerConstructorParameters) = this()
   }
   
-  @JSImport("gatsby-telemetry/lib", "addSiteMeasurement")
-  @js.native
-  def addSiteMeasurement(event: String, obj: js.Any): Unit = js.native
+  @scala.inline
+  def addSiteMeasurement(event: String, obj: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSiteMeasurement")(event.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "aggregateStats")
-  @js.native
-  def aggregateStats(data: js.Array[Double]): IAggregateStats = js.native
+  @scala.inline
+  def aggregateStats(data: js.Array[Double]): IAggregateStats = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregateStats")(data.asInstanceOf[js.Any]).asInstanceOf[IAggregateStats]
   
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: String): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: String, tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: String, tags: ITelemetryTagsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: js.Array[String]): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: js.Array[String], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: js.Array[String], tags: ITelemetryTagsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "captureEvent")
-  @js.native
-  def captureEvent(input: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
+  @scala.inline
+  def captureEvent(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: String, tags: Unit, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: String, tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: js.Array[String], tags: Unit, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: js.Array[String], tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureEvent(input: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "decorateEvent")
-  @js.native
-  def decorateEvent(event: String): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "decorateEvent")
-  @js.native
-  def decorateEvent(event: String, tags: Record[String, _]): Unit = js.native
+  @scala.inline
+  def decorateEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def decorateEvent(event: String, tags: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateEvent")(event.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "expressMiddleware")
-  @js.native
+  @scala.inline
   def expressMiddleware(source: String): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* _res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* _res */ Response_[js.Any], 
     /* next */ js.Any, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("expressMiddleware")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* _res */ Response_[js.Any], 
+    /* next */ js.Any, 
+    Unit
+  ]]
   
-  @JSImport("gatsby-telemetry/lib", "isTrackingEnabled")
-  @js.native
-  def isTrackingEnabled(): Boolean = js.native
+  @scala.inline
+  def isTrackingEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrackingEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("gatsby-telemetry/lib", "setDefaultComponentId")
-  @js.native
-  def setDefaultComponentId(componentId: String): Unit = js.native
+  @scala.inline
+  def setDefaultComponentId(componentId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultComponentId")(componentId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "setDefaultTags")
-  @js.native
-  def setDefaultTags(tags: IDefaultTelemetryTagsPayload): Unit = js.native
+  @scala.inline
+  def setDefaultTags(tags: IDefaultTelemetryTagsPayload): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "setGatsbyCliVersion")
-  @js.native
-  def setGatsbyCliVersion(version: String): Unit = js.native
+  @scala.inline
+  def setGatsbyCliVersion(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGatsbyCliVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "setTelemetryEnabled")
-  @js.native
-  def setTelemetryEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setTelemetryEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTelemetryEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "startBackgroundUpdate")
-  @js.native
-  def startBackgroundUpdate(): Unit = js.native
+  @scala.inline
+  def startBackgroundUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundUpdate")().asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "trackBuildError")
-  @js.native
-  def trackBuildError(input: String): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackBuildError")
-  @js.native
-  def trackBuildError(input: String, tags: ITelemetryTagsPayload): Unit = js.native
+  @scala.inline
+  def trackBuildError(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackBuildError")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def trackBuildError(input: String, tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackBuildError")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: String): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: String, tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: String, tags: ITelemetryTagsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: js.Array[String]): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: js.Array[String], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: js.Array[String], tags: ITelemetryTagsPayload): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackCli")
-  @js.native
-  def trackCli(input: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
+  @scala.inline
+  def trackCli(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: String, tags: Unit, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: String, tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: js.Array[String], tags: Unit, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: js.Array[String], tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCli(input: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCli")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "trackError")
-  @js.native
-  def trackError(input: String): Unit = js.native
-  @JSImport("gatsby-telemetry/lib", "trackError")
-  @js.native
-  def trackError(input: String, tags: ITelemetryTagsPayload): Unit = js.native
+  @scala.inline
+  def trackError(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackError")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def trackError(input: String, tags: ITelemetryTagsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackError")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gatsby-telemetry/lib", "trackFeatureIsUsed")
-  @js.native
-  def trackFeatureIsUsed(name: String): Unit = js.native
+  @scala.inline
+  def trackFeatureIsUsed(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackFeatureIsUsed")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

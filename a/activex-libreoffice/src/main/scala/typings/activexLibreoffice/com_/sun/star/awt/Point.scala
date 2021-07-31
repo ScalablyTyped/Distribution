@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a 2-dimensional point using the Cartesian coordinate system. */
-@js.native
 trait Point extends StObject {
   
   /** specifies the x-coordinate. */
-  var X: Double = js.native
+  var X: Double
   
   /** specifies the y-coordinate. */
-  var Y: Double = js.native
+  var Y: Double
 }
 object Point {
   

@@ -2,49 +2,47 @@ package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISymmetricAlgorithmNamesStatics extends StObject {
   
-  var aesCbc: String = js.native
+  var aesCbc: String
   
-  var aesCbcPkcs7: String = js.native
+  var aesCbcPkcs7: String
   
-  var aesCcm: String = js.native
+  var aesCcm: String
   
-  var aesEcb: String = js.native
+  var aesEcb: String
   
-  var aesEcbPkcs7: String = js.native
+  var aesEcbPkcs7: String
   
-  var aesGcm: String = js.native
+  var aesGcm: String
   
-  var desCbc: String = js.native
+  var desCbc: String
   
-  var desCbcPkcs7: String = js.native
+  var desCbcPkcs7: String
   
-  var desEcb: String = js.native
+  var desEcb: String
   
-  var desEcbPkcs7: String = js.native
+  var desEcbPkcs7: String
   
-  var rc2Cbc: String = js.native
+  var rc2Cbc: String
   
-  var rc2CbcPkcs7: String = js.native
+  var rc2CbcPkcs7: String
   
-  var rc2Ecb: String = js.native
+  var rc2Ecb: String
   
-  var rc2EcbPkcs7: String = js.native
+  var rc2EcbPkcs7: String
   
-  var rc4: String = js.native
+  var rc4: String
   
-  var tripleDesCbc: String = js.native
+  var tripleDesCbc: String
   
-  var tripleDesCbcPkcs7: String = js.native
+  var tripleDesCbcPkcs7: String
   
-  var tripleDesEcb: String = js.native
+  var tripleDesEcb: String
   
-  var tripleDesEcbPkcs7: String = js.native
+  var tripleDesEcbPkcs7: String
 }
 object ISymmetricAlgorithmNamesStatics {
   

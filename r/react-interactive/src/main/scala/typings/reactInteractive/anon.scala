@@ -9,15 +9,15 @@ import typings.reactInteractive.mod.State
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Active extends ActiveProps {
+  trait Active
+    extends StObject
+       with ActiveProps {
     
-    var active: js.UndefOr[CSSProperties] = js.native
+    var active: js.UndefOr[CSSProperties] = js.undefined
   }
   object Active {
     
@@ -38,30 +38,29 @@ object anon {
     }
   }
   
-  @js.native
   trait As extends StObject {
     
     // as: string | Component | ReactElement;
-    var as: js.Any = js.native
+    var as: js.Any
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extraTouchNoTap: js.UndefOr[Boolean] = js.native
+    var extraTouchNoTap: js.UndefOr[Boolean] = js.undefined
     
     // Not sure about this type
-    var focusToggleOff: js.UndefOr[Boolean] = js.native
+    var focusToggleOff: js.UndefOr[Boolean] = js.undefined
     
-    var forceState: js.UndefOr[State] = js.native
+    var forceState: js.UndefOr[State] = js.undefined
     
-    var hover: js.UndefOr[CSSProperties] = js.native
+    var hover: js.UndefOr[CSSProperties] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var interactiveChild: js.UndefOr[Boolean] = js.native
+    var interactiveChild: js.UndefOr[Boolean] = js.undefined
     
-    var mutableProps: js.UndefOr[Boolean] = js.native
+    var mutableProps: js.UndefOr[Boolean] = js.undefined
     
-    var nonContainedChild: js.UndefOr[Boolean] = js.native
+    var nonContainedChild: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[
@@ -69,33 +68,33 @@ object anon {
           /* clickType */ ClickType, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function1[/* arg0 */ Event, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* arg0 */ Event, Unit]] = js.undefined
     
-    var onTapFour: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.native
+    var onTapFour: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
     
-    var onTapThree: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.native
+    var onTapThree: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
     
-    var onTapTwo: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.native
+    var onTapTwo: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
     
-    var refDOMNode: js.UndefOr[js.Function1[/* node */ js.Any, _]] = js.native
+    var refDOMNode: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
     
-    var setStateCallback: js.UndefOr[js.Function1[/* arg0 */ NextState, Unit]] = js.native
+    var setStateCallback: js.UndefOr[js.Function1[/* arg0 */ NextState, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var styleProperty: js.UndefOr[js.Object] = js.native
+    var styleProperty: js.UndefOr[js.Object] = js.undefined
     
-    var tapTimeCutoff: js.UndefOr[Double] = js.native
+    var tapTimeCutoff: js.UndefOr[Double] = js.undefined
     
-    var touchActiveTapOnly: js.UndefOr[Boolean] = js.native
+    var touchActiveTapOnly: js.UndefOr[Boolean] = js.undefined
     
-    var wrapperClassName: js.UndefOr[String] = js.native
+    var wrapperClassName: js.UndefOr[String] = js.undefined
     
-    var wrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object As {
     
@@ -202,7 +201,7 @@ object anon {
       def setOnTapTwoUndefined: Self = StObject.set(x, "onTapTwo", js.undefined)
       
       @scala.inline
-      def setRefDOMNode(value: /* node */ js.Any => _): Self = StObject.set(x, "refDOMNode", js.Any.fromFunction1(value))
+      def setRefDOMNode(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "refDOMNode", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefDOMNodeUndefined: Self = StObject.set(x, "refDOMNode", js.undefined)
@@ -251,14 +250,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var event: SyntheticEvent[Element, typings.std.Event] = js.native
+    var event: SyntheticEvent[Element, typings.std.Event]
     
-    var nextState: State = js.native
+    var nextState: State
     
-    var prevState: State = js.native
+    var prevState: State
   }
   object Event {
     
@@ -282,10 +280,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Focus extends FocusProps {
+  trait Focus
+    extends StObject
+       with FocusProps {
     
-    var focus: js.UndefOr[CSSProperties] = js.native
+    var focus: js.UndefOr[CSSProperties] = js.undefined
   }
   object Focus {
     
@@ -306,14 +305,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait FocusFromMouse extends FocusProps {
+  trait FocusFromMouse
+    extends StObject
+       with FocusProps {
     
-    var focusFromMouse: js.UndefOr[CSSProperties] = js.native
+    var focusFromMouse: js.UndefOr[CSSProperties] = js.undefined
     
-    var focusFromTab: js.UndefOr[CSSProperties] = js.native
+    var focusFromTab: js.UndefOr[CSSProperties] = js.undefined
     
-    var focusFromTouch: js.UndefOr[CSSProperties] = js.native
+    var focusFromTouch: js.UndefOr[CSSProperties] = js.undefined
   }
   object FocusFromMouse {
     
@@ -346,14 +346,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait HoverActive extends ActiveProps {
+  trait HoverActive
+    extends StObject
+       with ActiveProps {
     
-    var hoverActive: js.UndefOr[CSSProperties] = js.native
+    var hoverActive: js.UndefOr[CSSProperties] = js.undefined
     
-    var keyActive: js.UndefOr[CSSProperties] = js.native
+    var keyActive: js.UndefOr[CSSProperties] = js.undefined
     
-    var touchActive: js.UndefOr[CSSProperties] = js.native
+    var touchActive: js.UndefOr[CSSProperties] = js.undefined
   }
   object HoverActive {
     
@@ -386,12 +387,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NextState extends StObject {
     
-    var nextState: State = js.native
+    var nextState: State
     
-    var prevState: State = js.native
+    var prevState: State
   }
   object NextState {
     

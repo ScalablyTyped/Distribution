@@ -3,25 +3,23 @@ package typings.ionic.definitionsMod
 import typings.ionic.anon.IdNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISession extends StObject {
   
-  def getUser(): IdNumber = js.native
+  def getUser(): IdNumber
   
-  def getUserToken(): String = js.native
+  def getUserToken(): String
   
-  def isLoggedIn(): Boolean = js.native
+  def isLoggedIn(): Boolean
   
-  def login(email: String, password: String): js.Promise[Unit] = js.native
+  def login(email: String, password: String): js.Promise[Unit]
   
-  def logout(): js.Promise[Unit] = js.native
+  def logout(): js.Promise[Unit]
   
-  def ssoLogin(email: String): js.Promise[Unit] = js.native
+  def ssoLogin(email: String): js.Promise[Unit]
   
-  def tokenLogin(token: String): js.Promise[Unit] = js.native
+  def tokenLogin(token: String): js.Promise[Unit]
 }
 object ISession {
   

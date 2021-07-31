@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2BucketingConfig extends StObject {
   
   /** Set of buckets. Ranges must be non-overlapping. */
-  var buckets: js.UndefOr[js.Array[GooglePrivacyDlpV2Bucket]] = js.native
+  var buckets: js.UndefOr[js.Array[GooglePrivacyDlpV2Bucket]] = js.undefined
 }
 object GooglePrivacyDlpV2BucketingConfig {
   

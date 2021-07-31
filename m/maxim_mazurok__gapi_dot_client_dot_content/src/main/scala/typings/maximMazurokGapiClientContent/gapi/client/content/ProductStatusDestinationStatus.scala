@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductStatusDestinationStatus extends StObject {
   
   /** List of country codes (ISO 3166-1 alpha-2) where the offer is approved. */
-  var approvedCountries: js.UndefOr[js.Array[String]] = js.native
+  var approvedCountries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the destination */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /** List of country codes (ISO 3166-1 alpha-2) where the offer is disapproved. */
-  var disapprovedCountries: js.UndefOr[js.Array[String]] = js.native
+  var disapprovedCountries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of country codes (ISO 3166-1 alpha-2) where the offer is pending approval. */
-  var pendingCountries: js.UndefOr[js.Array[String]] = js.native
+  var pendingCountries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Destination approval status in `targetCountry` of the offer. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object ProductStatusDestinationStatus {
   

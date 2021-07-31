@@ -16,33 +16,31 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.topLeft
 import typings.tuyaPanelKit.tuyaPanelKitStrings.topRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TipsProps extends StObject {
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var cornerPosition: js.UndefOr[topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight] = js.native
+  var cornerPosition: js.UndefOr[topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight] = js.undefined
   
   var motionConfig: js.UndefOr[
     MotionScaleFadeInProps | MotionFadeProps | MotionPullUpProps | MotionScalePullDownProps | MotionPushDownProps
-  ] = js.native
+  ] = js.undefined
   
-  var motionType: js.UndefOr[Fade | PullUp | ScaleFadeIn | ScalePullDown | PushDown] = js.native
+  var motionType: js.UndefOr[Fade | PullUp | ScaleFadeIn | ScalePullDown | PushDown] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var showCorner: js.UndefOr[Boolean] = js.native
+  var showCorner: js.UndefOr[Boolean] = js.undefined
   
-  var tipStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tipStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var withModal: js.UndefOr[Boolean] = js.native
+  var withModal: js.UndefOr[Boolean] = js.undefined
 }
 object TipsProps {
   

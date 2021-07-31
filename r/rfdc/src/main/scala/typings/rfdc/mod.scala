@@ -2,7 +2,6 @@ package typings.rfdc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,14 +47,15 @@ object mod {
     * rdfc({rx: /foo/}) // {rx: {}}
     * ```
     */
-  @JSImport("rfdc", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function1[/* obj */ js.Any, _] = js.native
-  @JSImport("rfdc", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): js.Function1[/* obj */ js.Any, _] = js.native
+  @scala.inline
+  def apply(): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
+  @scala.inline
+  def apply(opts: Options): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
   
+  @JSImport("rfdc", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -70,7 +70,7 @@ object mod {
       * reference from the object (set to `undefined`) and then add it back
       * manually after cloning instead of using this option.
       */
-    var circles: js.UndefOr[Boolean] = js.native
+    var circles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Copy prototype properties as well as own properties into the new
@@ -90,7 +90,7 @@ object mod {
       * Setting `proto` to `true` will provide an additional 2% performance
       * boost.
       */
-    var proto: js.UndefOr[Boolean] = js.native
+    var proto: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

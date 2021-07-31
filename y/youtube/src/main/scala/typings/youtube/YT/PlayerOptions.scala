@@ -2,41 +2,39 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerOptions extends StObject {
   
   /**
     * Handlers for events fired by the player.
     */
-  var events: js.UndefOr[Events] = js.native
+  var events: js.UndefOr[Events] = js.undefined
   
   /**
     * Player height
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Points host to correct origin for CORS
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Player parameters.
     */
-  var playerVars: js.UndefOr[PlayerVars] = js.native
+  var playerVars: js.UndefOr[PlayerVars] = js.undefined
   
   /**
     * ID of the video to load.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
   
   /**
     * Player width.
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object PlayerOptions {
   

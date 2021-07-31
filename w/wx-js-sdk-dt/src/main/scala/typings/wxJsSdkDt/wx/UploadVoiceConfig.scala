@@ -2,18 +2,18 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadVoiceConfig extends WxBaseRequestConfig {
+trait UploadVoiceConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
-  var isShowProgressTips: js.UndefOr[Double] = js.native
+  var isShowProgressTips: js.UndefOr[Double] = js.undefined
   
-  var localId: String = js.native
+  var localId: String
   
   @JSName("success")
-  def success_MUploadVoiceConfig(res: js.Any): Unit = js.native
+  def success_MUploadVoiceConfig(res: js.Any): Unit
 }
 object UploadVoiceConfig {
   

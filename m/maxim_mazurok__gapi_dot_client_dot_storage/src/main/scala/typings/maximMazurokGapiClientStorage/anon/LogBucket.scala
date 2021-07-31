@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogBucket extends StObject {
   
   /** The destination bucket where the current bucket's logs should be placed. */
-  var logBucket: js.UndefOr[String] = js.native
+  var logBucket: js.UndefOr[String] = js.undefined
   
   /** A prefix for log object names. */
-  var logObjectPrefix: js.UndefOr[String] = js.native
+  var logObjectPrefix: js.UndefOr[String] = js.undefined
 }
 object LogBucket {
   

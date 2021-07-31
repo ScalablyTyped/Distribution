@@ -3,19 +3,17 @@ package typings.sharepoint.SP.UI
 import typings.sharepoint.SPNotifications.EventID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Notify {
   
-  @js.native
   trait Notification extends StObject {
     
-    def Hide(bNoAnimate: Boolean): Unit = js.native
+    def Hide(bNoAnimate: Boolean): Unit
     
-    def Show(bNoAnimate: Boolean): Unit = js.native
+    def Show(bNoAnimate: Boolean): Unit
     
-    def get_id(): String = js.native
+    def get_id(): String
   }
   object Notification {
     
@@ -39,14 +37,13 @@ object Notify {
     }
   }
   
-  @js.native
   trait NotificationContainer extends StObject {
     
-    def Clear(): Unit = js.native
+    def Clear(): Unit
     
-    def GetCount(): Double = js.native
+    def GetCount(): Double
     
-    def SetEventHandler(eventId: EventID, eventHandler: js.Any): Unit = js.native
+    def SetEventHandler(eventId: EventID, eventHandler: js.Any): Unit
   }
   object NotificationContainer {
     

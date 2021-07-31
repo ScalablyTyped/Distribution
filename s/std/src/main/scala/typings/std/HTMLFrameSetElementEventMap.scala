@@ -2,12 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLFrameSetElementEventMap
-  extends HTMLElementEventMap
+  extends StObject
+     with HTMLElementEventMap
      with WindowEventHandlersEventMap
 object HTMLFrameSetElementEventMap {
   
@@ -64,8 +63,8 @@ object HTMLFrameSetElementEventMap {
     loadedmetadata: Event,
     loadstart: Event,
     lostpointercapture: PointerEvent,
-    message: MessageEvent[_],
-    messageerror: MessageEvent[_],
+    message: MessageEvent[js.Any],
+    messageerror: MessageEvent[js.Any],
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
     mouseleave: MouseEvent,

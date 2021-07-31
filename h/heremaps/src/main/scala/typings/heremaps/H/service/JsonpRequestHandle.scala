@@ -2,19 +2,17 @@ package typings.heremaps.H.service
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @property id {number} - the ID associated internally with this request
   * @property cancel {function()} - this function cancels the request and invokes the errback function
   */
-@js.native
 trait JsonpRequestHandle extends StObject {
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  var id: Double = js.native
+  var id: Double
 }
 object JsonpRequestHandle {
   

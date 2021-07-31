@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,27 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * borrowing and returning library items.       display_name: Activity labels:
   * - key: /customer_id         description: Identifier of a library customer
   */
-@js.native
 trait SchemaLogDescriptor extends StObject {
   
   /**
     * A human-readable description of this log. This information appears in the
     * documentation and can contain details.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable name for this log. This information appears on the
     * user interface and should be concise.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The set of labels that are available to describe a specific log entry.
     * Runtime requests that contain labels not specified here are considered
     * invalid.
     */
-  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.undefined
   
   /**
     * The name of the log. It must be less than 512 characters long and can
@@ -39,7 +37,7 @@ trait SchemaLogDescriptor extends StObject {
     * characters [A-Za-z0-9], and punctuation characters including slash,
     * underscore, hyphen, period [/_-.].
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLogDescriptor {
   

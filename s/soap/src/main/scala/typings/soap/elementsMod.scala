@@ -6,7 +6,6 @@ import typings.soap.anon.Types
 import typings.soap.typesMod.IWsdlBaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementsMod {
@@ -16,7 +15,7 @@ object elementsMod {
   class AllElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -36,7 +35,7 @@ object elementsMod {
   class AnyElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
   }
   
@@ -45,7 +44,7 @@ object elementsMod {
   class BindingElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$type")
@@ -80,7 +79,7 @@ object elementsMod {
   class BodyElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$encodingStyle")
@@ -95,7 +94,7 @@ object elementsMod {
   class ChoiceElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -115,7 +114,7 @@ object elementsMod {
   class ComplexContentElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -135,7 +134,7 @@ object elementsMod {
   class ComplexTypeElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -155,7 +154,7 @@ object elementsMod {
   class DefinitionsElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     def addChild(child: js.Any): Unit = js.native
@@ -191,7 +190,7 @@ object elementsMod {
   class DocumentationElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
   }
   
@@ -200,7 +199,7 @@ object elementsMod {
   class Element protected () extends StObject {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$name")
@@ -230,7 +229,7 @@ object elementsMod {
     def deleteFixedAttrs(): Unit = js.native
     
     def description(): js.Any = js.native
-    def description(definitions: js.UndefOr[scala.Nothing], xmlns: IXmlNs): js.Any = js.native
+    def description(definitions: Unit, xmlns: IXmlNs): js.Any = js.native
     def description(definitions: DefinitionsElement): js.Any = js.native
     def description(definitions: DefinitionsElement, xmlns: IXmlNs): js.Any = js.native
     
@@ -270,14 +269,14 @@ object elementsMod {
   class ElementElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$lookupType")
     var $lookupType: js.UndefOr[String] = js.native
     
     @JSName("$lookupTypes")
-    var $lookupTypes: js.UndefOr[js.Array[_]] = js.native
+    var $lookupTypes: js.UndefOr[js.Array[js.Any]] = js.native
     
     @JSName("$maxOccurs")
     var $maxOccurs: js.UndefOr[String] = js.native
@@ -312,7 +311,7 @@ object elementsMod {
   class EnumerationElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
   }
   
@@ -321,7 +320,7 @@ object elementsMod {
   class ExtensionElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$base")
@@ -344,7 +343,7 @@ object elementsMod {
   class ImportElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$location")
@@ -362,7 +361,7 @@ object elementsMod {
   class IncludeElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$location")
@@ -380,7 +379,7 @@ object elementsMod {
   class InputElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$lookupType")
@@ -416,7 +415,7 @@ object elementsMod {
   class MessageElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     /**
@@ -467,7 +466,7 @@ object elementsMod {
   class OperationElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$soapAction")
@@ -509,7 +508,7 @@ object elementsMod {
   class OutputElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$lookupTypes")
@@ -540,7 +539,7 @@ object elementsMod {
   class PortElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     def addChild(child: js.Any): Unit = js.native
@@ -564,7 +563,7 @@ object elementsMod {
   class PortTypeElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -588,7 +587,7 @@ object elementsMod {
   class RestrictionElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$base")
@@ -611,7 +610,7 @@ object elementsMod {
   class SchemaElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("$elementFormDefault")
@@ -644,7 +643,7 @@ object elementsMod {
   class SequenceElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -664,7 +663,7 @@ object elementsMod {
   class ServiceElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -688,7 +687,7 @@ object elementsMod {
   class SimpleContentElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -708,7 +707,7 @@ object elementsMod {
   class SimpleTypeElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     @JSName("allowedChildren")
@@ -728,7 +727,7 @@ object elementsMod {
   class TypesElement protected () extends Element {
     def this(nsName: String, attrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: js.UndefOr[scala.Nothing], schemaAttrs: js.Any) = this()
+    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
     def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
     
     def addChild(child: js.Any): Unit = js.native
@@ -747,12 +746,11 @@ object elementsMod {
     var schemas: StringDictionary[SchemaElement] = js.native
   }
   
-  @js.native
   trait IInclude extends StObject {
     
-    var location: String = js.native
+    var location: String
     
-    var namespace: String = js.native
+    var namespace: String
   }
   object IInclude {
     
@@ -773,12 +771,11 @@ object elementsMod {
     }
   }
   
-  @js.native
   trait IPort extends StObject {
     
-    var binding: BindingElement = js.native
+    var binding: BindingElement
     
-    var location: String = js.native
+    var location: String
   }
   object IPort {
     
@@ -799,12 +796,11 @@ object elementsMod {
     }
   }
   
-  @js.native
   trait ITopElement extends StObject {
     
-    var methodName: String = js.native
+    var methodName: String
     
-    var outputName: String = js.native
+    var outputName: String
   }
   object ITopElement {
     
@@ -827,22 +823,23 @@ object elementsMod {
   
   type ITopElements = StringDictionary[ITopElement]
   
-  @js.native
-  trait IWsdlXmlns extends /* prop */ StringDictionary[String | Unit] {
+  trait IWsdlXmlns
+    extends StObject
+       with /* prop */ StringDictionary[String | Unit] {
     
-    var __tns__ : js.UndefOr[String] = js.native
+    var __tns__ : js.UndefOr[String] = js.undefined
     
-    var soap: js.UndefOr[String] = js.native
+    var soap: js.UndefOr[String] = js.undefined
     
-    var tns: js.UndefOr[String] = js.native
+    var tns: js.UndefOr[String] = js.undefined
     
-    var wsam: js.UndefOr[String] = js.native
+    var wsam: js.UndefOr[String] = js.undefined
     
-    var wsp: js.UndefOr[String] = js.native
+    var wsp: js.UndefOr[String] = js.undefined
     
-    var wsu: js.UndefOr[String] = js.native
+    var wsu: js.UndefOr[String] = js.undefined
     
-    var xsd: js.UndefOr[String] = js.native
+    var xsd: js.UndefOr[String] = js.undefined
   }
   object IWsdlXmlns {
     

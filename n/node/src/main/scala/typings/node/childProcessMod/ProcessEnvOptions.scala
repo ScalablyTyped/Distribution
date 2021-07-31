@@ -3,19 +3,17 @@ package typings.node.childProcessMod
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessEnvOptions extends StObject {
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[ProcessEnv] = js.native
+  var env: js.UndefOr[ProcessEnv] = js.undefined
   
-  var gid: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.undefined
   
-  var uid: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.undefined
 }
 object ProcessEnvOptions {
   

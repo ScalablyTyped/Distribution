@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipNoteMod {
@@ -12,10 +11,9 @@ object tooltipNoteMod {
   @js.native
   val TooltipNote: FunctionComponent[TooltipNoteProps] = js.native
   
-  @js.native
   trait TooltipNoteProps extends StObject {
     
-    var note: String = js.native
+    var note: String
   }
   object TooltipNoteProps {
     

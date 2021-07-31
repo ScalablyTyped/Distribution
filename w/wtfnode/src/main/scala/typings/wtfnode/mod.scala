@@ -5,30 +5,29 @@ import typings.wtfnode.wtfnodeStrings.info
 import typings.wtfnode.wtfnodeStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wtfnode", "dump")
+  @JSImport("wtfnode", JSImport.Namespace)
   @js.native
-  def dump(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wtfnode", "init")
-  @js.native
-  def init(): Unit = js.native
+  @scala.inline
+  def dump(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")().asInstanceOf[Unit]
   
-  @JSImport("wtfnode", "resetLoggers")
-  @js.native
-  def resetLoggers(): Unit = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   
-  @JSImport("wtfnode", "setLogger")
-  @js.native
-  def setLogger_error(`type`: error, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("wtfnode", "setLogger")
-  @js.native
-  def setLogger_info(`type`: info, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("wtfnode", "setLogger")
-  @js.native
-  def setLogger_warn(`type`: warn, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def resetLoggers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetLoggers")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def setLogger_error(`type`: error, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setLogger_info(`type`: info, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setLogger_warn(`type`: warn, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

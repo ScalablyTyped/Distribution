@@ -2,15 +2,13 @@ package typings.nextReduxSaga
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Async extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
   }
   object Async {
     

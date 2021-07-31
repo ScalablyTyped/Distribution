@@ -2,7 +2,6 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reported as part of a ScanRunErrorTrace message if scan validation fails
   * due to a scan configuration error.
   */
-@js.native
 trait SchemaScanConfigError extends StObject {
   
   /**
     * Output only. Indicates the reason code for a configuration failure.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Indicates the full name of the ScanConfig field that
@@ -25,7 +23,7 @@ trait SchemaScanConfigError extends StObject {
     * field is provided for troubleshooting purposes only and its actual value
     * can change in the future.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
 }
 object SchemaScanConfigError {
   

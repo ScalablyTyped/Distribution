@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relationship to another action
   */
-@js.native
-trait RequestGroupActionRelatedAction extends BackboneElement {
+trait RequestGroupActionRelatedAction
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'actionId'.
     */
-  var _actionId: js.UndefOr[Element] = js.native
+  var _actionId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'relationship'.
     */
-  var _relationship: js.UndefOr[Element] = js.native
+  var _relationship: js.UndefOr[Element] = js.undefined
   
   /**
     * What action this is related to
     */
-  var actionId: id = js.native
+  var actionId: id
   
   /**
     * Time offset for the relationship
     */
-  var offsetDuration: js.UndefOr[Duration] = js.native
+  var offsetDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * Time offset for the relationship
     */
-  var offsetRange: js.UndefOr[Range] = js.native
+  var offsetRange: js.UndefOr[Range] = js.undefined
   
   /**
     * before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end
     */
-  var relationship: code = js.native
+  var relationship: code
 }
 object RequestGroupActionRelatedAction {
   

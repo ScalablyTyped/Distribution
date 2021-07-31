@@ -3,22 +3,22 @@ package typings.feathersjsSocketioClient
 import typings.socketIoClient.SocketIOClient.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@feathersjs/socketio-client", JSImport.Default)
+  @JSImport("@feathersjs/socketio-client", JSImport.Namespace)
   @js.native
-  def default(socket: Socket): js.Function0[Unit] = js.native
-  @JSImport("@feathersjs/socketio-client", JSImport.Default)
-  @js.native
-  def default(socket: Socket, options: FeathersSocketIOClientOptions): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(socket: Socket): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def default(socket: Socket, options: FeathersSocketIOClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   trait FeathersSocketIOClientOptions extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object FeathersSocketIOClientOptions {
     

@@ -6,7 +6,6 @@ import typings.rbacA.anon.Attributes
 import typings.rbacA.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -127,8 +126,9 @@ object mod {
   
   type AttributeFunction = js.Function3[/* user */ js.Any, /* role */ String, /* params */ js.Object, js.Any]
   
-  @js.native
-  trait Roles extends /* _ */ StringDictionary[Double | Roles]
+  trait Roles
+    extends StObject
+       with /* _ */ StringDictionary[Double | Roles]
   object Roles {
     
     @scala.inline

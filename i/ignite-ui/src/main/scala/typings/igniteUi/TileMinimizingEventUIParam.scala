@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileMinimizingEventUIParam extends StObject {
   
   /**
     * Used to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.
     */
-  var maximizingTile: js.UndefOr[js.Any] = js.native
+  var maximizingTile: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get a reference to the tile manager performing the minimizing the tile belongs to.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get the jQuery element of the tile being minimized
     */
-  var tile: js.UndefOr[js.Any] = js.native
+  var tile: js.UndefOr[js.Any] = js.undefined
 }
 object TileMinimizingEventUIParam {
   

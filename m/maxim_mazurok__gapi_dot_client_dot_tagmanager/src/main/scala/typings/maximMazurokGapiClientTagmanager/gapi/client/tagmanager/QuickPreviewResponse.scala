@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickPreviewResponse extends StObject {
   
   /** Were there compiler errors or not. */
-  var compilerError: js.UndefOr[Boolean] = js.native
+  var compilerError: js.UndefOr[Boolean] = js.undefined
   
   /** The quick previewed container version. */
-  var containerVersion: js.UndefOr[ContainerVersion] = js.native
+  var containerVersion: js.UndefOr[ContainerVersion] = js.undefined
   
   /** Whether quick previewing failed when syncing the workspace to the latest container version. */
-  var syncStatus: js.UndefOr[SyncStatus] = js.native
+  var syncStatus: js.UndefOr[SyncStatus] = js.undefined
 }
 object QuickPreviewResponse {
   

@@ -7,17 +7,20 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconImageMod {
+  
+  @JSImport("ol/style/IconImage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/style/IconImage", JSImport.Default)
   @js.native
   class default protected () extends IconImage {
     def this(
       image: HTMLCanvasElement,
-      src: js.UndefOr[scala.Nothing],
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -25,15 +28,7 @@ object iconImageMod {
     ) = this()
     def this(
       image: HTMLCanvasElement,
-      src: String,
-      size: Size,
-      crossOrigin: String,
-      imageState: ImageState,
-      color: Color
-    ) = this()
-    def this(
-      image: HTMLImageElement,
-      src: js.UndefOr[scala.Nothing],
+      src: Unit,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -42,6 +37,14 @@ object iconImageMod {
     def this(
       image: HTMLImageElement,
       src: String,
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLImageElement,
+      src: Unit,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -49,8 +52,7 @@ object iconImageMod {
     ) = this()
   }
   
-  @JSImport("ol/style/IconImage", "get")
-  @js.native
+  @scala.inline
   def get(
     image: HTMLCanvasElement,
     src: String,
@@ -58,9 +60,8 @@ object iconImageMod {
     crossOrigin: String,
     imageState: ImageState,
     color: Color
-  ): IconImage = js.native
-  @JSImport("ol/style/IconImage", "get")
-  @js.native
+  ): IconImage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any], size.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any], imageState.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IconImage]
+  @scala.inline
   def get(
     image: HTMLImageElement,
     src: String,
@@ -68,7 +69,7 @@ object iconImageMod {
     crossOrigin: String,
     imageState: ImageState,
     color: Color
-  ): IconImage = js.native
+  ): IconImage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any], size.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any], imageState.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IconImage]
   
   @js.native
   trait IconImage

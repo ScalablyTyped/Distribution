@@ -2,12 +2,10 @@ package typings.qrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dark extends StObject {
     
     /**
@@ -15,13 +13,13 @@ object anon {
       * Note: dark color should always be darker than color.light.
       * Default: #000000ff
       */
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
     /**
       * Color of light module. Value must be in hex format (RGBA).
       * Default: #ffffffff
       */
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
   }
   object Dark {
     
@@ -48,20 +46,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DeflateLevel extends StObject {
     
     /**
       * Compression level for deflate.
       * Default: 9
       */
-    var deflateLevel: js.UndefOr[Double] = js.native
+    var deflateLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * Compression strategy for deflate.
       * Default: 3
       */
-    var deflateStrategy: js.UndefOr[Double] = js.native
+    var deflateStrategy: js.UndefOr[Double] = js.undefined
   }
   object DeflateLevel {
     
@@ -88,14 +85,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Quality extends StObject {
     
     /**
       * A Number between 0 and 1 indicating image quality if the requested type is image/jpeg or image/webp.
       * Default: 0.92
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object Quality {
     

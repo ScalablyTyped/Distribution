@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /** `File` set constituting the `Source` bundle. */
-  var files: js.UndefOr[js.Array[File]] = js.native
+  var files: js.UndefOr[js.Array[File]] = js.undefined
 }
 object Source {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyResponse extends StObject {
   
   /**
     * The Amazon Resource Name (key ARN) of the asymmetric CMK that was used to verify the signature.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * A Boolean value that indicates whether the signature was verified. A value of True indicates that the Signature was produced by signing the Message with the specified KeyID and SigningAlgorithm. If the signature is not verified, the Verify operation fails with a KMSInvalidSignatureException exception. 
     */
-  var SignatureValid: js.UndefOr[BooleanType] = js.native
+  var SignatureValid: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The signing algorithm that was used to verify the signature.
     */
-  var SigningAlgorithm: js.UndefOr[SigningAlgorithmSpec] = js.native
+  var SigningAlgorithm: js.UndefOr[SigningAlgorithmSpec] = js.undefined
 }
 object VerifyResponse {
   

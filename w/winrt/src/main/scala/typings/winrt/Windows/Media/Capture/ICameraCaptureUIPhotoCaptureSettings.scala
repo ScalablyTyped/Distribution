@@ -3,21 +3,19 @@ package typings.winrt.Windows.Media.Capture
 import typings.winrt.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICameraCaptureUIPhotoCaptureSettings extends StObject {
   
-  var allowCropping: Boolean = js.native
+  var allowCropping: Boolean
   
-  var croppedAspectRatio: Size = js.native
+  var croppedAspectRatio: Size
   
-  var croppedSizeInPixels: Size = js.native
+  var croppedSizeInPixels: Size
   
-  var format: CameraCaptureUIPhotoFormat = js.native
+  var format: CameraCaptureUIPhotoFormat
   
-  var maxResolution: CameraCaptureUIMaxPhotoResolution = js.native
+  var maxResolution: CameraCaptureUIMaxPhotoResolution
 }
 object ICameraCaptureUIPhotoCaptureSettings {
   

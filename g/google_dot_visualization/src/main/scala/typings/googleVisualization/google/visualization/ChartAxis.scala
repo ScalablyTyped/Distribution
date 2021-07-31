@@ -3,61 +3,59 @@ package typings.googleVisualization.google.visualization
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAxis extends StObject {
   
-  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.native
+  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined
   
-  var baseline: js.UndefOr[Double] = js.native
+  var baseline: js.UndefOr[Double] = js.undefined
   
   // This option is only supported for a continuous axis. https://developers.google.com/chart/interactive/docs/customizing_axes#Terminology
-  var baselineColor: js.UndefOr[String] = js.native
+  var baselineColor: js.UndefOr[String] = js.undefined
   
   // google's documentation on this is wrong, specifies it as a number. The color of the baseline for the horizontal axis. Can be any HTML color string, for example: 'red' or '#00cc00'
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
   // The direction in which the values along the horizontal axis grow. Specify -1 to reverse the order of the values.
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   // icu pattern set http://icu-project.org/apiref/icu4c/classDecimalFormat.html#_details
-  var gridlines: js.UndefOr[ChartGridlines] = js.native
+  var gridlines: js.UndefOr[ChartGridlines] = js.undefined
   
-  var logScale: js.UndefOr[Boolean] = js.native
+  var logScale: js.UndefOr[Boolean] = js.undefined
   
-  var maxAlternation: js.UndefOr[Double] = js.native
+  var maxAlternation: js.UndefOr[Double] = js.undefined
   
-  var maxTextLines: js.UndefOr[Double] = js.native
+  var maxTextLines: js.UndefOr[Double] = js.undefined
   
-  var maxValue: js.UndefOr[Double | Date | js.Array[Double]] = js.native
+  var maxValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
   
-  var minTextSpacing: js.UndefOr[Double] = js.native
+  var minTextSpacing: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double | Date | js.Array[Double]] = js.native
+  var minValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
   
-  var minorGridlines: js.UndefOr[ChartGridlines] = js.native
+  var minorGridlines: js.UndefOr[ChartGridlines] = js.undefined
   
-  var showTextEvery: js.UndefOr[Double] = js.native
+  var showTextEvery: js.UndefOr[Double] = js.undefined
   
-  var slantedText: js.UndefOr[Boolean] = js.native
+  var slantedText: js.UndefOr[Boolean] = js.undefined
   
-  var slantedTextAngle: js.UndefOr[Double] = js.native
+  var slantedTextAngle: js.UndefOr[Double] = js.undefined
   
-  var textPosition: js.UndefOr[String] = js.native
+  var textPosition: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[_]] = js.native
+  var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var viewWindow: js.UndefOr[ChartViewWindow] = js.native
+  var viewWindow: js.UndefOr[ChartViewWindow] = js.undefined
   
-  var viewWindowMode: js.UndefOr[String] = js.native
+  var viewWindowMode: js.UndefOr[String] = js.undefined
 }
 object ChartAxis {
   
@@ -185,7 +183,7 @@ object ChartAxis {
     def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)

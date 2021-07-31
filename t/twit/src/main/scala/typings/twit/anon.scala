@@ -2,17 +2,15 @@ package typings.twit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var id_str: String = js.native
+    var id_str: String
   }
   object Id {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Text {
     

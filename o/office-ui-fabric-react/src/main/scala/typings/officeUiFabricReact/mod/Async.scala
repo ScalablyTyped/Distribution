@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "Async")
@@ -10,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Async ()
   extends typings.officeUiFabricReact.utilitiesMod.Async {
   def this(parent: js.Object) = this()
-  def this(parent: js.UndefOr[scala.Nothing], onError: js.Function1[/* e */ js.Any, Unit]) = this()
   def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
+  def this(parent: Unit, onError: js.Function1[/* e */ js.Any, Unit]) = this()
 }

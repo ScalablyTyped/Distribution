@@ -3,17 +3,15 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.PositionedToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPartiallyWrittenTypeArgumentListInformation extends StObject {
   
-  var argumentIndex: Double = js.native
+  var argumentIndex: Double
   
-  var genericIdentifer: PositionedToken = js.native
+  var genericIdentifer: PositionedToken
   
-  var lessThanToken: PositionedToken = js.native
+  var lessThanToken: PositionedToken
 }
 object IPartiallyWrittenTypeArgumentListInformation {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBackupsResponse extends StObject {
   
   /** The list of matching backups. Backups returned are ordered by `create_time` in descending order, starting from the most recent `create_time`. */
-  var backups: js.UndefOr[js.Array[Backup]] = js.native
+  var backups: js.UndefOr[js.Array[Backup]] = js.undefined
   
   /** `next_page_token` can be sent in a subsequent ListBackups call to fetch more of the matching backups. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListBackupsResponse {
   

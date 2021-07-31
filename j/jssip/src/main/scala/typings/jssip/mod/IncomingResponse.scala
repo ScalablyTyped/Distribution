@@ -2,11 +2,12 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncomingResponse extends IncomingMessage {
+trait IncomingResponse
+  extends StObject
+     with IncomingMessage {
   
   var reason_phrase: String = js.native
   

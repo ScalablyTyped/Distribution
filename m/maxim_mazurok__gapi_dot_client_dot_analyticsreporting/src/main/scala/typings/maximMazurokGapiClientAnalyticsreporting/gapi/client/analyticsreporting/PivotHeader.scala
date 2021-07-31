@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotHeader extends StObject {
   
   /** A single pivot section header. */
-  var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.native
+  var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.undefined
   
   /** The total number of groups for this pivot. */
-  var totalPivotGroupsCount: js.UndefOr[Double] = js.native
+  var totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
 }
 object PivotHeader {
   

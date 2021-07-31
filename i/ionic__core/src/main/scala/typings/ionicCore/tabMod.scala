@@ -6,14 +6,15 @@ import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod {
   
   @JSImport("@ionic/core/dist/types/components/tab/tab", "Tab")
   @js.native
-  class Tab () extends ComponentInterface {
+  class Tab ()
+    extends StObject
+       with ComponentInterface {
     
     /** @internal */
     var active: Boolean = js.native

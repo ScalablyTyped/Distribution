@@ -4,31 +4,29 @@ import typings.dayjs.anon.PartialLTstringLTSstringL
 import typings.dayjs.anon.Partialfuturestringpastst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocale extends StObject {
   
-  var formats: PartialLTstringLTSstringL = js.native
+  var formats: PartialLTstringLTSstringL
   
-  var months: js.UndefOr[js.Array[String]] = js.native
+  var months: js.UndefOr[js.Array[String]] = js.undefined
   
-  var monthsShort: js.UndefOr[js.Array[String]] = js.native
+  var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.native
+  var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.undefined
   
-  var relativeTime: Partialfuturestringpastst = js.native
+  var relativeTime: Partialfuturestringpastst
   
-  var weekStart: js.UndefOr[Double] = js.native
+  var weekStart: js.UndefOr[Double] = js.undefined
   
-  var weekdays: js.UndefOr[js.Array[String]] = js.native
+  var weekdays: js.UndefOr[js.Array[String]] = js.undefined
   
-  var weekdaysMin: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysMin: js.UndefOr[js.Array[String]] = js.undefined
   
-  var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ILocale {
   

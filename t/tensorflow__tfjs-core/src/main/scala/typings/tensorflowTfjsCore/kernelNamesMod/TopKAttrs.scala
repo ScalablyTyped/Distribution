@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopKAttrs extends StObject {
   
-  var k: Double = js.native
+  var k: Double
   
-  var sorted: Boolean = js.native
+  var sorted: Boolean
 }
 object TopKAttrs {
   

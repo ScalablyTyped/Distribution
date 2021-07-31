@@ -4,15 +4,13 @@ import typings.nodeZendesk.mod.AuditableModel
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Metrics {
   
-  @js.native
   trait ListPayload extends StObject {
     
-    val ticket_metrics: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel] = js.native
+    val ticket_metrics: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]
   }
   object ListPayload {
     
@@ -33,12 +31,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait MinutesObject extends StObject {
     
-    var business: Double = js.native
+    var business: Double
     
-    var calendar: Double = js.native
+    var calendar: Double
   }
   object MinutesObject {
     
@@ -59,48 +56,49 @@ object Metrics {
     }
   }
   
-  @js.native
-  trait ResponseModel extends AuditableModel {
+  trait ResponseModel
+    extends StObject
+       with AuditableModel {
     
-    val agent_wait_time_in_minutes: js.UndefOr[MinutesObject] = js.native
+    val agent_wait_time_in_minutes: js.UndefOr[MinutesObject] = js.undefined
     
-    val assigned_at: js.UndefOr[String | Null] = js.native
+    val assigned_at: js.UndefOr[String | Null] = js.undefined
     
-    val assignee_stations: js.UndefOr[Double] = js.native
+    val assignee_stations: js.UndefOr[Double] = js.undefined
     
-    val assignee_updated_at: js.UndefOr[String | Null] = js.native
+    val assignee_updated_at: js.UndefOr[String | Null] = js.undefined
     
-    val first_resolution_time_in_minutes: js.UndefOr[MinutesObject] = js.native
+    val first_resolution_time_in_minutes: js.UndefOr[MinutesObject] = js.undefined
     
-    val full_resolution_time_in_minutes: js.UndefOr[MinutesObject] = js.native
+    val full_resolution_time_in_minutes: js.UndefOr[MinutesObject] = js.undefined
     
-    val group_stations: js.UndefOr[Double] = js.native
+    val group_stations: js.UndefOr[Double] = js.undefined
     
-    val initially_assigned_at: js.UndefOr[String | Null] = js.native
+    val initially_assigned_at: js.UndefOr[String | Null] = js.undefined
     
-    val latest_comment_added_at: js.UndefOr[String | Null] = js.native
+    val latest_comment_added_at: js.UndefOr[String | Null] = js.undefined
     
-    val reopens: js.UndefOr[Double] = js.native
+    val reopens: js.UndefOr[Double] = js.undefined
     
-    val replies: js.UndefOr[Double] = js.native
+    val replies: js.UndefOr[Double] = js.undefined
     
-    val reply_time_in_minutes: js.UndefOr[MinutesObject] = js.native
+    val reply_time_in_minutes: js.UndefOr[MinutesObject] = js.undefined
     
-    val requester_updated_at: js.UndefOr[String | Null] = js.native
+    val requester_updated_at: js.UndefOr[String | Null] = js.undefined
     
-    val requester_wait_time_in_minutes: js.UndefOr[MinutesObject] = js.native
+    val requester_wait_time_in_minutes: js.UndefOr[MinutesObject] = js.undefined
     
-    val solved_at: js.UndefOr[String | Null] = js.native
+    val solved_at: js.UndefOr[String | Null] = js.undefined
     
-    val ticket_id: js.UndefOr[ZendeskID] = js.native
+    val ticket_id: js.UndefOr[ZendeskID] = js.undefined
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object ResponseModel {
     
     @scala.inline
     def apply(created_at: String, id: ZendeskID): typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel = {
-      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated_at = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]
     }
     
@@ -229,10 +227,9 @@ object Metrics {
     }
   }
   
-  @js.native
   trait ResponsePayload extends StObject {
     
-    val ticket_metric: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel = js.native
+    val ticket_metric: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel
   }
   object ResponsePayload {
     

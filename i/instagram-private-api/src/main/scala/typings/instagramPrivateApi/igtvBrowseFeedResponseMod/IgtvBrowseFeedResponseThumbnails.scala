@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseThumbnails extends StObject {
   
-  var max_thumbnails_per_sprite: Double = js.native
+  var max_thumbnails_per_sprite: Double
   
-  var rendered_width: Double = js.native
+  var rendered_width: Double
   
-  var sprite_height: Double = js.native
+  var sprite_height: Double
   
-  var sprite_urls: js.Array[String] = js.native
+  var sprite_urls: js.Array[String]
   
-  var sprite_width: Double = js.native
+  var sprite_width: Double
   
-  var thumbnail_duration: String = js.native
+  var thumbnail_duration: String
   
-  var thumbnail_height: Double = js.native
+  var thumbnail_height: Double
   
-  var thumbnail_width: Double = js.native
+  var thumbnail_width: Double
   
-  var thumbnails_per_row: Double = js.native
+  var thumbnails_per_row: Double
   
-  var video_length: Double = js.native
+  var video_length: Double
 }
 object IgtvBrowseFeedResponseThumbnails {
   

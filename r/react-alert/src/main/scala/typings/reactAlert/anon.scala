@@ -3,15 +3,13 @@ package typings.reactAlert
 import typings.reactAlert.mod.AlertManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alert extends StObject {
     
-    var alert: AlertManager = js.native
+    var alert: AlertManager
   }
   object Alert {
     

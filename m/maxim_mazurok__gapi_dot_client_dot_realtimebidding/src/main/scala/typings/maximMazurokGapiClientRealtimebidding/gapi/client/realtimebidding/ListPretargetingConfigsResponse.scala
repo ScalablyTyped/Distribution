@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPretargetingConfigsResponse extends StObject {
   
   /** A token which can be passed to a subsequent call to the `ListPretargetingConfigs` method to retrieve the next page of results in ListPretargetingConfigsRequest.pageToken. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of pretargeting configurations. */
-  var pretargetingConfigs: js.UndefOr[js.Array[PretargetingConfig]] = js.native
+  var pretargetingConfigs: js.UndefOr[js.Array[PretargetingConfig]] = js.undefined
 }
 object ListPretargetingConfigsResponse {
   

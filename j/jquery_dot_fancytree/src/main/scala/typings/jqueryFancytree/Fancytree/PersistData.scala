@@ -2,25 +2,23 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistData extends StObject {
   
-  var active: String | Null = js.native
+  var active: String | Null
   
-  var expanded: js.Array[String] = js.native
+  var expanded: js.Array[String]
   
-  var focus: String | Null = js.native
+  var focus: String | Null
   
-  var selected: js.Array[String] = js.native
+  var selected: js.Array[String]
 }
 object PersistData {
   
   @scala.inline
   def apply(expanded: js.Array[String], selected: js.Array[String]): PersistData = {
-    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], active = null, focus = null)
     __obj.asInstanceOf[PersistData]
   }
   

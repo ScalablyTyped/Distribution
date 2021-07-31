@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBlobOutput extends StObject {
   
   /**
     * The content of the blob, usually a file.
     */
-  var content: blob = js.native
+  var content: blob
 }
 object GetBlobOutput {
   

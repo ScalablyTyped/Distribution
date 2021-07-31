@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("trouter", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Trouter[T]
+  class ^[T] ()
+    extends StObject
+       with Trouter[T]
   
-  @js.native
   trait FindResult[T] extends StObject {
     
-    var handlers: js.Array[T] = js.native
+    var handlers: js.Array[T]
     
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
   }
   object FindResult {
     
@@ -29,7 +29,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FindResultMutableBuilder[Self <: FindResult[_], T] (val x: Self with FindResult[T]) extends AnyVal {
+    implicit class FindResultMutableBuilder[Self <: FindResult[?], T] (val x: Self & FindResult[T]) extends AnyVal {
       
       @scala.inline
       def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])

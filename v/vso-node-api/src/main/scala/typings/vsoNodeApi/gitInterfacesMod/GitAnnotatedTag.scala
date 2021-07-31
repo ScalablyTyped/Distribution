@@ -2,38 +2,36 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitAnnotatedTag extends StObject {
   
   /**
     * The tagging Message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The name of the annotated tag.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The objectId (Sha1Id) of the tag.
     */
-  var objectId: String = js.native
+  var objectId: String
   
   /**
     * User info and date of tagging.
     */
-  var taggedBy: GitUserDate = js.native
+  var taggedBy: GitUserDate
   
   /**
     * Tagged git object.
     */
-  var taggedObject: GitObject = js.native
+  var taggedObject: GitObject
   
-  var url: String = js.native
+  var url: String
 }
 object GitAnnotatedTag {
   

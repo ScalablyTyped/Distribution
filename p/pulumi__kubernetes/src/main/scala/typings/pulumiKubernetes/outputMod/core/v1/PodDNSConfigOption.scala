@@ -2,21 +2,19 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodDNSConfigOption defines DNS resolver options of a pod.
   */
-@js.native
 trait PodDNSConfigOption extends StObject {
   
   /**
     * Required.
     */
-  var name: String = js.native
+  var name: String
   
-  var value: String = js.native
+  var value: String
 }
 object PodDNSConfigOption {
   

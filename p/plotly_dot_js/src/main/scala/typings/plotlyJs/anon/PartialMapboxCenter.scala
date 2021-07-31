@@ -2,16 +2,14 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.MapboxCenter> */
-@js.native
 trait PartialMapboxCenter extends StObject {
   
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
-  var lon: js.UndefOr[Double] = js.native
+  var lon: js.UndefOr[Double] = js.undefined
 }
 object PartialMapboxCenter {
   

@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BitLockerRemovableDrivePolicy extends StObject {
   
   /**
     * This policy setting determines whether BitLocker protection is required for removable data drives to be writable on a
     * computer.
     */
-  var blockCrossOrganizationWriteAccess: js.UndefOr[Boolean] = js.native
+  var blockCrossOrganizationWriteAccess: js.UndefOr[Boolean] = js.undefined
   
   // Select the encryption method for removable drives. Possible values are: aesCbc128, aesCbc256, xtsAes128, xtsAes256.
-  var encryptionMethod: js.UndefOr[NullableOption[BitLockerEncryptionMethod]] = js.native
+  var encryptionMethod: js.UndefOr[NullableOption[BitLockerEncryptionMethod]] = js.undefined
   
   /**
     * Indicates whether to block write access to devices configured in another organization. If
     * requireEncryptionForWriteAccess is false, this value does not affect.
     */
-  var requireEncryptionForWriteAccess: js.UndefOr[Boolean] = js.native
+  var requireEncryptionForWriteAccess: js.UndefOr[Boolean] = js.undefined
 }
 object BitLockerRemovableDrivePolicy {
   

@@ -6,7 +6,6 @@ import typings.three.textureMod.Texture
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshDistanceMaterialMod {
@@ -69,24 +68,25 @@ object meshDistanceMaterialMod {
     var skinning: Boolean = js.native
   }
   
-  @js.native
-  trait MeshDistanceMaterialParameters extends MaterialParameters {
+  trait MeshDistanceMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementBias: js.UndefOr[Double] = js.native
+    var displacementBias: js.UndefOr[Double] = js.undefined
     
-    var displacementMap: js.UndefOr[Texture | Null] = js.native
+    var displacementMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementScale: js.UndefOr[Double] = js.native
+    var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var farDistance: js.UndefOr[Double] = js.native
+    var farDistance: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var nearDistance: js.UndefOr[Double] = js.native
+    var nearDistance: js.UndefOr[Double] = js.undefined
     
-    var referencePosition: js.UndefOr[Vector3] = js.native
+    var referencePosition: js.UndefOr[Vector3] = js.undefined
   }
   object MeshDistanceMaterialParameters {
     

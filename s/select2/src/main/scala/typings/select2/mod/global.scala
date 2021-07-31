@@ -15,7 +15,6 @@ import typings.select2.select2Strings.select2Colonunselect
 import typings.select2.select2Strings.select2Colonunselecting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {

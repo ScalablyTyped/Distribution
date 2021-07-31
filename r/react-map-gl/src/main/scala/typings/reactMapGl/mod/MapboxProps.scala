@@ -2,60 +2,58 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<react-map-gl.react-map-gl.ViewState> */
-@js.native
 trait MapboxProps extends StObject {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var attributionControl: js.UndefOr[Boolean] = js.native
+  var attributionControl: js.UndefOr[Boolean] = js.undefined
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
-  var container: js.UndefOr[js.Object] = js.native
+  var container: js.UndefOr[js.Object] = js.undefined
   
-  var gl: js.UndefOr[js.Object] = js.native
+  var gl: js.UndefOr[js.Object] = js.undefined
   
-  var height: Double | String = js.native
+  var height: Double | String
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var mapOptions: js.UndefOr[js.Object] = js.native
+  var mapOptions: js.UndefOr[js.Object] = js.undefined
   
-  var mapStyle: js.UndefOr[String | js.Object] = js.native
+  var mapStyle: js.UndefOr[String | js.Object] = js.undefined
   
-  var mapboxApiAccessToken: js.UndefOr[String] = js.native
+  var mapboxApiAccessToken: js.UndefOr[String] = js.undefined
   
-  var mapboxApiUrl: js.UndefOr[String] = js.native
+  var mapboxApiUrl: js.UndefOr[String] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* e */ MapError, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* e */ MapError, Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function1[/* event */ MapLoadEvent, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ MapLoadEvent, Unit]] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var reuseMap: js.UndefOr[Boolean] = js.native
+  var reuseMap: js.UndefOr[Boolean] = js.undefined
   
-  var reuseMaps: js.UndefOr[Boolean] = js.native
+  var reuseMaps: js.UndefOr[Boolean] = js.undefined
   
   var transformRequest: js.UndefOr[
     js.Function2[/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String], MapRequest]
-  ] = js.native
+  ] = js.undefined
   
-  var viewState: js.UndefOr[ViewState] = js.native
+  var viewState: js.UndefOr[ViewState] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: Double | String = js.native
+  var width: Double | String
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object MapboxProps {
   

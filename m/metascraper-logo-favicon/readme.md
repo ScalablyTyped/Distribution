@@ -10,13 +10,15 @@ metascraper logo favicon fallback
 | ------------------ | :-------------: |
 | Full name          | metascraper-logo-favicon |
 | Keywords           | favicon, logo, metascraper |
-| # releases         | 96 |
-| # dependents       | 11 |
-| # downloads        | 360404 |
+| # releases         | 122 |
+| # dependents       | 13 |
+| # downloads        | 517942 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-logo-favicon)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-logo-favicon)
     
 

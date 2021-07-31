@@ -2,12 +2,12 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
-trait Http2Server extends Http_
+trait Http2Server
+  extends StObject
+     with Http_
 object Http2Server {
   
   @scala.inline

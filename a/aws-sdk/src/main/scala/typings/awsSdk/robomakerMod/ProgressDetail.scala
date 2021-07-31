@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressDetail extends StObject {
   
   /**
     * The current progress status.  Validating  Validating the deployment.  DownloadingExtracting  Downloading and extracting the bundle on the robot.  ExecutingPreLaunch  Executing pre-launch script(s) if provided.  Launching  Launching the robot application.  ExecutingPostLaunch  Executing post-launch script(s) if provided.  Finished  Deployment is complete.  
     */
-  var currentProgress: js.UndefOr[RobotDeploymentStep] = js.native
+  var currentProgress: js.UndefOr[RobotDeploymentStep] = js.undefined
   
   /**
     * Estimated amount of time in seconds remaining in the step. This currently only applies to the Downloading/Extracting step of the deployment. It is empty for other steps.
     */
-  var estimatedTimeRemainingSeconds: js.UndefOr[GenericInteger] = js.native
+  var estimatedTimeRemainingSeconds: js.UndefOr[GenericInteger] = js.undefined
   
   /**
     * Precentage of the step that is done. This currently only applies to the Downloading/Extracting step of the deployment. It is empty for other steps.
     */
-  var percentDone: js.UndefOr[PercentDone] = js.native
+  var percentDone: js.UndefOr[PercentDone] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the deployment job.
     */
-  var targetResource: js.UndefOr[GenericString] = js.native
+  var targetResource: js.UndefOr[GenericString] = js.undefined
 }
 object ProgressDetail {
   

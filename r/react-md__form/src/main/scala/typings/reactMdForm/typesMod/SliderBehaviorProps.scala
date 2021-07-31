@@ -11,43 +11,41 @@ import typings.react.mod.TouchEventHandler
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Required<@react-md/form.@react-md/form/types/slider/types.SliderRangeOptions> */
 /* Inlined parent std.Required<@react-md/form.@react-md/form/types/slider/types.SliderEventHandlers> */
 /* Inlined parent std.Required<std.Pick<@react-md/form.@react-md/form/types/slider/types.SliderStateOptions, 'dragging'>> */
-@js.native
 trait SliderBehaviorProps extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var dragging: Boolean = js.native
+  var dragging: Boolean
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var onKeyDown: KeyboardEventHandler[HTMLSpanElement] = js.native
+  var onKeyDown: KeyboardEventHandler[HTMLSpanElement]
   
-  var onKeyUp: KeyboardEventHandler[HTMLSpanElement] = js.native
+  var onKeyUp: KeyboardEventHandler[HTMLSpanElement]
   
-  var onMouseDown: MouseEventHandler[HTMLSpanElement] = js.native
+  var onMouseDown: MouseEventHandler[HTMLSpanElement]
   
-  var onTouchStart: TouchEventHandler[HTMLSpanElement] = js.native
+  var onTouchStart: TouchEventHandler[HTMLSpanElement]
   
   /**
     * A ref that should be passed to the `Slider` component to handle calculating
     * the value based on the drag distance.
     */
-  var ref: RefCallback[HTMLSpanElement] = js.native
+  var ref: RefCallback[HTMLSpanElement]
   
   /**
     * The current value of the slider.
     */
-  var value: Double = js.native
+  var value: Double
   
-  var vertical: Boolean = js.native
+  var vertical: Boolean
 }
 object SliderBehaviorProps {
   

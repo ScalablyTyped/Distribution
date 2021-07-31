@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationGroup extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val GroupType: OlGroupType = js.native
+  val GroupType: OlGroupType
   
-  var Name: String = js.native
+  var Name: String
   
-  val NavigationFolders: typings.activexOutlook.Outlook.NavigationFolders = js.native
+  val NavigationFolders: typings.activexOutlook.Outlook.NavigationFolders
   
   @JSName("Outlook.NavigationGroup_typekey")
-  var OutlookDotNavigationGroup_typekey: NavigationGroup = js.native
+  var OutlookDotNavigationGroup_typekey: NavigationGroup
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: Double = js.native
+  var Position: Double
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object NavigationGroup {
   

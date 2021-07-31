@@ -2,29 +2,30 @@ package typings.parseKey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(s: String): KeyObject = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[KeyObject]
+  
   @JSImport("parse-key", JSImport.Namespace)
   @js.native
-  def apply(s: String): KeyObject = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait KeyObject extends StObject {
     
-    var alt: Boolean = js.native
+    var alt: Boolean
     
-    var ctrl: Boolean = js.native
+    var ctrl: Boolean
     
-    var meta: Boolean = js.native
+    var meta: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var sequence: String = js.native
+    var sequence: String
     
-    var shift: Boolean = js.native
+    var shift: Boolean
   }
   object KeyObject {
     

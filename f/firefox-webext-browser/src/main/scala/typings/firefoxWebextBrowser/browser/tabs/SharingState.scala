@@ -2,23 +2,21 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tab sharing state for screen, microphone and camera. */
-@js.native
 trait SharingState extends StObject {
   
   /** True if the tab is using the camera. */
-  var camera: Boolean = js.native
+  var camera: Boolean
   
   /** True if the tab is using the microphone. */
-  var microphone: Boolean = js.native
+  var microphone: Boolean
   
   /**
     * If the tab is sharing the screen the value will be one of "Screen", "Window", or "Application", or undefined if not screen sharing.
     */
-  var screen: js.UndefOr[String] = js.native
+  var screen: js.UndefOr[String] = js.undefined
 }
 object SharingState {
   

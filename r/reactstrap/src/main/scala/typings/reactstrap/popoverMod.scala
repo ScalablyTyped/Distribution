@@ -14,7 +14,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -28,10 +27,9 @@ object popoverMod {
   
   type PopoverChildren = (js.Function1[/* props */ PopoverChildrenRenderProps, ReactNode]) | ReactNode
   
-  @js.native
   trait PopoverChildrenRenderProps extends StObject {
     
-    def scheduleUpdate(): Unit = js.native
+    def scheduleUpdate(): Unit
   }
   object PopoverChildrenRenderProps {
     
@@ -49,51 +47,51 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait PopoverProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
     var boundariesElement: js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Boundary */ js.Any) | Element
-      ] = js.native
+      ] = js.undefined
     
     @JSName("children")
-    var children_PopoverProps: js.UndefOr[PopoverChildren] = js.native
+    var children_PopoverProps: js.UndefOr[PopoverChildren] = js.undefined
     
-    var container: js.UndefOr[String | HTMLElement | RefObject[HTMLElement]] = js.native
+    var container: js.UndefOr[String | HTMLElement | RefObject[HTMLElement]] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var hideArrow: js.UndefOr[Boolean] = js.native
+    var hideArrow: js.UndefOr[Boolean] = js.undefined
     
-    var innerClassName: js.UndefOr[String] = js.native
+    var innerClassName: js.UndefOr[String] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     var modifiers: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Modifiers */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var placement: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var placementPrefix: js.UndefOr[String] = js.native
+    var placementPrefix: js.UndefOr[String] = js.undefined
     
-    var popperClassName: js.UndefOr[String] = js.native
+    var popperClassName: js.UndefOr[String] = js.undefined
     
-    var target: String | HTMLElement | RefObject[HTMLElement] = js.native
+    var target: String | HTMLElement | RefObject[HTMLElement]
     
-    var toggle: js.UndefOr[MouseEventHandler[_] | js.Function0[Unit]] = js.native
+    var toggle: js.UndefOr[MouseEventHandler[js.Any] | js.Function0[Unit]] = js.undefined
   }
   object PopoverProps {
     
@@ -209,23 +207,24 @@ object popoverMod {
       def setTarget(value: String | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setToggle(value: MouseEventHandler[_] | js.Function0[Unit]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      def setToggle(value: MouseEventHandler[js.Any] | js.Function0[Unit]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setToggleFunction0(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setToggleFunction1(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      def setToggleFunction1(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
   
-  @js.native
-  trait UncontrolledPopoverProps extends PopoverProps {
+  trait UncontrolledPopoverProps
+    extends StObject
+       with PopoverProps {
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
   }
   object UncontrolledPopoverProps {
     

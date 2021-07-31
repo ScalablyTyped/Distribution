@@ -4,17 +4,15 @@ import typings.openlayers.mod.ProjectionLike
 import typings.std.PositionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationOptions extends StObject {
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var tracking: js.UndefOr[Boolean] = js.native
+  var tracking: js.UndefOr[Boolean] = js.undefined
   
-  var trackingOptions: js.UndefOr[PositionOptions] = js.native
+  var trackingOptions: js.UndefOr[PositionOptions] = js.undefined
 }
 object GeolocationOptions {
   

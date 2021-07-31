@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnersInG
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
   
-  var response: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0` = js.native
+  var response: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`
 }
 object ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint {
   
   @scala.inline
   def apply(
     parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
-    response: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`
+    response: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`
   ): ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint]
@@ -33,8 +31,6 @@ object ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoin
     def setParameters(value: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(
-      value: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`
-    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

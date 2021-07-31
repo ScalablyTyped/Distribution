@@ -4,36 +4,36 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.aggregate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AggregateTransform extends _Transforms {
+trait AggregateTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var cross: js.UndefOr[Boolean | SignalRef] = js.native
+  var cross: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var drop: js.UndefOr[Boolean | SignalRef] = js.native
+  var drop: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.native
+  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var key: js.UndefOr[String | TransformField] = js.native
+  var key: js.UndefOr[String | TransformField] = js.undefined
   
-  var ops: js.UndefOr[(js.Array[AggregateOp | SignalRef]) | SignalRef] = js.native
+  var ops: js.UndefOr[(js.Array[AggregateOp | SignalRef]) | SignalRef] = js.undefined
   
-  var signal: js.UndefOr[String] = js.native
+  var signal: js.UndefOr[String] = js.undefined
   
-  var `type`: aggregate = js.native
+  var `type`: aggregate
 }
 object AggregateTransform {
   
   @scala.inline
-  def apply(`type`: aggregate): AggregateTransform = {
+  def apply(): AggregateTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("aggregate")
     __obj.asInstanceOf[AggregateTransform]
   }
   

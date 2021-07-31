@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * about real closing.
   * @see
   */
-@js.native
-trait XCloseBroadcaster extends XInterface {
+trait XCloseBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive or have a veto for "close" events
     * @param Listener the listener which is interest on closing events
     */
-  def addCloseListener(Listener: XCloseListener): Unit = js.native
+  def addCloseListener(Listener: XCloseListener): Unit
   
   /**
     * removes the specified listener
     * @param Listener the listener which isn't interest on closing events any longer
     */
-  def removeCloseListener(Listener: XCloseListener): Unit = js.native
+  def removeCloseListener(Listener: XCloseListener): Unit
 }
 object XCloseBroadcaster {
   

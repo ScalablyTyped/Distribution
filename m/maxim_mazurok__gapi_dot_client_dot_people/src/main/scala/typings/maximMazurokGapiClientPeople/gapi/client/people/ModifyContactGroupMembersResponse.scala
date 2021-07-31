@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyContactGroupMembersResponse extends StObject {
   
   /** The contact people resource names that cannot be removed from their last contact group. */
-  var canNotRemoveLastContactGroupResourceNames: js.UndefOr[js.Array[String]] = js.native
+  var canNotRemoveLastContactGroupResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The contact people resource names that were not found. */
-  var notFoundResourceNames: js.UndefOr[js.Array[String]] = js.native
+  var notFoundResourceNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyContactGroupMembersResponse {
   

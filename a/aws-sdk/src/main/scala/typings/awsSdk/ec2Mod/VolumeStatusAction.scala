@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatusAction extends StObject {
   
   /**
     * The code identifying the operation, for example, enable-volume-io.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the operation.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the event associated with this operation.
     */
-  var EventId: js.UndefOr[String] = js.native
+  var EventId: js.UndefOr[String] = js.undefined
   
   /**
     * The event type associated with this operation.
     */
-  var EventType: js.UndefOr[String] = js.native
+  var EventType: js.UndefOr[String] = js.undefined
 }
 object VolumeStatusAction {
   

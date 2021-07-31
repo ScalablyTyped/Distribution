@@ -3,76 +3,74 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * Optional. Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two zones. If provided, it must be a different zone from
     * the one provided in location_id.
     */
-  var alternativeLocationId: js.UndefOr[String] = js.native
+  var alternativeLocationId: js.UndefOr[String] = js.undefined
   
   /** Optional. Indicates whether OSS Redis AUTH is enabled for the instance. If set to "true" AUTH is enabled on the instance. Default value is "false" meaning AUTH is disabled. */
-  var authEnabled: js.UndefOr[Boolean] = js.native
+  var authEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The full name of the Google Compute Engine [network](https://cloud.google.com/vpc/docs/vpc) to which the instance is connected. If left unspecified, the `default` network
     * will be used.
     */
-  var authorizedNetwork: js.UndefOr[String] = js.native
+  var authorizedNetwork: js.UndefOr[String] = js.undefined
   
   /** Optional. The network connect mode of the Redis instance. If not provided, the connect mode defaults to DIRECT_PEERING. */
-  var connectMode: js.UndefOr[String] = js.native
+  var connectMode: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the instance was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the location_id provided by the user at creation time.
     * For Standard Tier instances, this can be either location_id or alternative_location_id and can change after a failover event.
     */
-  var currentLocationId: js.UndefOr[String] = js.native
+  var currentLocationId: js.UndefOr[String] = js.undefined
   
   /** An arbitrary and optional user-provided name for the instance. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** Resource labels to represent user provided metadata */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For STANDARD_HA tier, instances will be created across
     * two zones for protection against zonal failures. If alternative_location_id is also provided, it must be different from location_id.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /** Required. Redis memory size in GiB. */
-  var memorySizeGb: js.UndefOr[Double] = js.native
+  var memorySizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. Unique name of the resource in this scope including project and location using the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}` Note:
     * Redis instances are managed and addressed at regional level so location_id here refers to a GCP region; however, users may choose which specific zone (or collection of zones for
     * cross-zone instances) an instance should be provisioned in. Refer to location_id and alternative_location_id fields for more details.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Cloud IAM identity used by import / export operations to transfer data to/from Cloud Storage. Format is "serviceAccount:". The value may change over time for a given
     * instance so should be checked before each import/export operation.
     */
-  var persistenceIamIdentity: js.UndefOr[String] = js.native
+  var persistenceIamIdentity: js.UndefOr[String] = js.undefined
   
   /** Output only. The port number of the exposed Redis endpoint. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Redis configuration parameters, according to http://redis.io/topics/config. Currently, the only supported parameters are: Redis version 3.2 and newer: * maxmemory-policy *
@@ -82,35 +80,35 @@ trait Instance extends StObject {
   var redisConfigs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values are: * `REDIS_3_2` for Redis 3.2 compatibility *
     * `REDIS_4_0` for Redis 4.0 compatibility (default) * `REDIS_5_0` for Redis 5.0 compatibility
     */
-  var redisVersion: js.UndefOr[String] = js.native
+  var redisVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an unused /29 block, for example, 10.0.0.0/29 or
     * 192.168.0.0/29. Ranges must be unique and non-overlapping with existing subnets in an authorized network.
     */
-  var reservedIpRange: js.UndefOr[String] = js.native
+  var reservedIpRange: js.UndefOr[String] = js.undefined
   
   /** Output only. List of server CA certificates for the instance. */
-  var serverCaCerts: js.UndefOr[js.Array[TlsCertificate]] = js.native
+  var serverCaCerts: js.UndefOr[js.Array[TlsCertificate]] = js.undefined
   
   /** Output only. The current state of this instance. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Additional information about the current status of this instance, if available. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /** Required. The service tier of the instance. */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
   
   /** Optional. The In-transit encryption mode of Redis instance. If not provided, in-transit encryption is disabled for instance. */
-  var transitEncryptionMode: js.UndefOr[String] = js.native
+  var transitEncryptionMode: js.UndefOr[String] = js.undefined
 }
 object Instance {
   
@@ -175,7 +173,7 @@ object Instance {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -215,7 +213,7 @@ object Instance {
     def setRedisConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "redisConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline

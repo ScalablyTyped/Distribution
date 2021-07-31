@@ -2,28 +2,26 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing all reasons that bid requests were filtered
   * and not sent to the buyer.
   */
-@js.native
 trait SchemaListFilteredBidRequestsResponse extends StObject {
   
   /**
     * List of rows, with counts of filtered bid requests aggregated by callout
     * status.
     */
-  var calloutStatusRows: js.UndefOr[js.Array[SchemaCalloutStatusRow]] = js.native
+  var calloutStatusRows: js.UndefOr[js.Array[SchemaCalloutStatusRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
     * ListFilteredBidRequestsRequest.pageToken field in the subsequent call to
     * the filteredBidRequests.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListFilteredBidRequestsResponse {
   

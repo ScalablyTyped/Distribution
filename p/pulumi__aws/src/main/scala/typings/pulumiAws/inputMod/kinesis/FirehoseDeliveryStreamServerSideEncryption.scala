@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamServerSideEncryption extends StObject {
   
   /**
     * Whether to enable encryption at rest. Default is `false`.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.native
+  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the encryption key. Required when `keyType` is `CUSTOMER_MANAGED_CMK`.
     */
-  var keyArn: js.UndefOr[Input[String]] = js.native
+  var keyArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Type of encryption key. Default is `AWS_OWNED_CMK`. Valid values are `AWS_OWNED_CMK` and `CUSTOMER_MANAGED_CMK`
     */
-  var keyType: js.UndefOr[Input[String]] = js.native
+  var keyType: js.UndefOr[Input[String]] = js.undefined
 }
 object FirehoseDeliveryStreamServerSideEncryption {
   

@@ -10,9 +10,9 @@ Plugin for serving static files as fast as possible.
 | ------------------ | :-------------: |
 | Full name          | fastify-static |
 | Keywords           | fastify, static |
-| # releases         | 20 |
-| # dependents       | 105 |
-| # downloads        | 1784152 |
+| # releases         | 15 |
+| # dependents       | 138 |
+| # downloads        | 2834810 |
 | # stars            | 1 |
 
 ## Links

@@ -10,10 +10,10 @@ Polyfill to remove click delays on browsers with touch UIs.
 | ------------------ | :-------------: |
 | Full name          | fastclick |
 | Keywords           | fastclick, mobile, touch, tap, click, delay |
-| # releases         | 0 |
-| # dependents       | 451 |
-| # downloads        | 4539949 |
-| # stars            | 38 |
+| # releases         | 1 |
+| # dependents       | 472 |
+| # downloads        | 4599324 |
+| # stars            | 39 |
 
 ## Links
 - [Homepage](https://github.com/ftlabs/fastclick)

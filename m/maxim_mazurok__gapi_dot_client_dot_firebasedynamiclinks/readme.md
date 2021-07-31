@@ -10,9 +10,9 @@ TypeScript typings for Firebase Dynamic Links API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebasedynamiclinks |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 1140 |
+| # downloads        | 1254 |
 | # stars            | 0 |
 
 ## Links

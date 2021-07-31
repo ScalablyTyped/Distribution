@@ -19,10 +19,13 @@ import typings.std.FormData
 import typings.std.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("graphql-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("graphql-react", "GraphQL")
   @js.native
@@ -55,48 +58,43 @@ object mod {
   @js.native
   val GraphQLContext: Context[GraphQL] = js.native
   
-  @JSImport("graphql-react", "reportCacheErrors")
-  @js.native
-  def reportCacheErrors(event: js.Any): Unit = js.native
+  @scala.inline
+  def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("graphql-react", "ssr")
-  @js.native
-  def ssr(grapphql: GraphQL, node: ReactNode): Unit = js.native
-  @JSImport("graphql-react", "ssr")
-  @js.native
-  def ssr(grapphql: GraphQL, node: ReactNode, render: js.Function1[/* element */ ReactNode, String]): Unit = js.native
+  @scala.inline
+  def ssr(grapphql: GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ssr(grapphql: GraphQL, node: ReactNode, render: js.Function1[/* element */ ReactNode, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("graphql-react", "useGraphQL")
-  @js.native
-  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = js.native
+  @scala.inline
+  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraphQL")(options.asInstanceOf[js.Any]).asInstanceOf[GraphQLOperationStatus[T]]
   
   type GraphQLCache = StringDictionary[GraphQLCacheValue[js.Any]]
   
   type GraphQLCacheKey = String
   
-  @js.native
   trait GraphQLCacheValue[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var fetchError: Null | String = js.native
+    var fetchError: Null | String
     
-    var graphQLErrors: Null | js.Array[Locations] = js.native
+    var graphQLErrors: Null | js.Array[Locations]
     
-    var httpError: Null | HttpError = js.native
+    var httpError: Null | HttpError
     
-    var parseError: Null | String = js.native
+    var parseError: Null | String
   }
   object GraphQLCacheValue {
     
     @scala.inline
     def apply[T](data: T): GraphQLCacheValue[T] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fetchError = null, graphQLErrors = null, httpError = null, parseError = null)
       __obj.asInstanceOf[GraphQLCacheValue[T]]
     }
     
     @scala.inline
-    implicit class GraphQLCacheValueMutableBuilder[Self <: GraphQLCacheValue[_], T] (val x: Self with GraphQLCacheValue[T]) extends AnyVal {
+    implicit class GraphQLCacheValueMutableBuilder[Self <: GraphQLCacheValue[?], T] (val x: Self & GraphQLCacheValue[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -130,22 +128,21 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphQLFetchOptions extends StObject {
     
-    var body: String | FormData = js.native
+    var body: String | FormData
     
-    var credentials: Null | String = js.native
+    var credentials: Null | String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var url: String = js.native
+    var url: String
   }
   object GraphQLFetchOptions {
     
     @scala.inline
     def apply(body: String | FormData, headers: Headers, url: String): GraphQLFetchOptions = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], credentials = null)
       __obj.asInstanceOf[GraphQLFetchOptions]
     }
     
@@ -171,16 +168,15 @@ object mod {
   
   type GraphQLFetchOptionsOverride = js.Function1[/* options */ GraphQLFetchOptions, Unit]
   
-  type GraphQLOperation[V] = Query with (Variables[V] | js.Object)
+  type GraphQLOperation[V] = Query & (Variables[V] | js.Object)
   
-  @js.native
   trait GraphQLOperationLoading[T] extends StObject {
     
-    var cacheKey: GraphQLCacheKey = js.native
+    var cacheKey: GraphQLCacheKey
     
-    var cacheValue: js.UndefOr[GraphQLCacheValue[T]] = js.native
+    var cacheValue: js.UndefOr[GraphQLCacheValue[T]] = js.undefined
     
-    var cacheValuePromise: js.Promise[GraphQLCacheValue[T]] = js.native
+    var cacheValuePromise: js.Promise[GraphQLCacheValue[T]]
   }
   object GraphQLOperationLoading {
     
@@ -191,7 +187,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphQLOperationLoadingMutableBuilder[Self <: GraphQLOperationLoading[_], T] (val x: Self with GraphQLOperationLoading[T]) extends AnyVal {
+    implicit class GraphQLOperationLoadingMutableBuilder[Self <: GraphQLOperationLoading[?], T] (val x: Self & GraphQLOperationLoading[T]) extends AnyVal {
       
       @scala.inline
       def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
@@ -207,16 +203,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphQLOperationStatus[T] extends StObject {
     
-    var cacheKey: GraphQLCacheKey = js.native
+    var cacheKey: GraphQLCacheKey
     
-    var cacheValue: js.UndefOr[GraphQLCacheValue[T]] = js.native
+    var cacheValue: js.UndefOr[GraphQLCacheValue[T]] = js.undefined
     
-    def load(): Unit = js.native
+    def load(): Unit
     
-    var loading: Boolean = js.native
+    var loading: Boolean
   }
   object GraphQLOperationStatus {
     
@@ -227,7 +222,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphQLOperationStatusMutableBuilder[Self <: GraphQLOperationStatus[_], T] (val x: Self with GraphQLOperationStatus[T]) extends AnyVal {
+    implicit class GraphQLOperationStatusMutableBuilder[Self <: GraphQLOperationStatus[?], T] (val x: Self & GraphQLOperationStatus[T]) extends AnyVal {
       
       @scala.inline
       def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
@@ -246,12 +241,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpError extends StObject {
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object HttpError {
     

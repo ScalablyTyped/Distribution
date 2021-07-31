@@ -10,10 +10,8 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Importan
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.RemoteInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   var Action: Instantiable3[
@@ -21,41 +19,41 @@ trait Action extends StObject {
     /* icon */ String, 
     /* title */ String, 
     typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Action
-  ] = js.native
+  ]
   
-  var BadgeIconType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.BadgeIconType */ js.Any = js.native
+  var BadgeIconType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.BadgeIconType */ js.Any
   
-  var Category: typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Category = js.native
+  var Category: typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Category
   
   var Channel: Instantiable3[
     /* channelId */ String, 
     /* name */ String, 
     /* importance */ Importance, 
     typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Channel
-  ] = js.native
+  ]
   
   var ChannelGroup: Instantiable2[
     /* groupId */ String, 
     /* name */ String, 
     typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.ChannelGroup
-  ] = js.native
+  ]
   
-  var Defaults: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Defaults */ js.Any = js.native
+  var Defaults: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Defaults */ js.Any
   
-  var GroupAlert: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.GroupAlert */ js.Any = js.native
+  var GroupAlert: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.GroupAlert */ js.Any
   
-  var Importance: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Importance */ js.Any = js.native
+  var Importance: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Importance */ js.Any
   
-  var Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Priority */ js.Any = js.native
+  var Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Priority */ js.Any
   
   var RemoteInput: Instantiable1[
     /* resultKey */ String, 
     typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.RemoteInput
-  ] = js.native
+  ]
   
-  var SemanticAction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any = js.native
+  var SemanticAction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any
   
-  var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any = js.native
+  var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
 }
 object Action {
   

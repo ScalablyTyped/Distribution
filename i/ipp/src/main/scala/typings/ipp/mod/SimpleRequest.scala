@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Attributescharset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleRequest extends StObject {
   
-  var `operation-attributes-tag`: Attributescharset = js.native
+  var `operation-attributes-tag`: Attributescharset
 }
 object SimpleRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster to delete.
     */
-  var cluster: String = js.native
+  var cluster: String
 }
 object DeleteClusterRequest {
   

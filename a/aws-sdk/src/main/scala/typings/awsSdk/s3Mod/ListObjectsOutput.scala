@@ -2,61 +2,59 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectsOutput extends StObject {
   
   /**
     * All of the keys rolled up in a common prefix count as a single return when calculating the number of returns.  A response can contain CommonPrefixes only if you specify a delimiter. CommonPrefixes contains all (if there are any) keys between Prefix and the next occurrence of the string specified by the delimiter.  CommonPrefixes lists keys that act like subdirectories in the directory specified by Prefix. For example, if the prefix is notes/ and the delimiter is a slash (/) as in notes/summer/july, the common prefix is notes/summer/. All of the keys that roll up into a common prefix count as a single return when calculating the number of returns.
     */
-  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.native
+  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
   
   /**
     * Metadata about each object returned.
     */
-  var Contents: js.UndefOr[ObjectList] = js.native
+  var Contents: js.UndefOr[ObjectList] = js.undefined
   
   /**
     * Causes keys that contain the same string between the prefix and the first occurrence of the delimiter to be rolled up into a single result element in the CommonPrefixes collection. These rolled-up keys are not returned elsewhere in the response. Each rolled-up result counts as only one return against the MaxKeys value.
     */
-  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.native
+  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.undefined
   
   /**
     * Encoding type used by Amazon S3 to encode object keys in the response.
     */
-  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.native
+  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.undefined
   
   /**
     * A flag that indicates whether Amazon S3 returned all of the results that satisfied the search criteria.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * Indicates where in the bucket listing begins. Marker is included in the response if it was sent with the request.
     */
-  var Marker: js.UndefOr[typings.awsSdk.s3Mod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.s3Mod.Marker] = js.undefined
   
   /**
     * The maximum number of keys returned in the response body.
     */
-  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
+  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.undefined
   
   /**
     * The bucket name.
     */
-  var Name: js.UndefOr[BucketName] = js.native
+  var Name: js.UndefOr[BucketName] = js.undefined
   
   /**
     * When response is truncated (the IsTruncated element value in the response is true), you can use the key name in this field as marker in the subsequent request to get next set of objects. Amazon S3 lists objects in alphabetical order Note: This element is returned only if you have delimiter request parameter specified. If response does not include the NextMarker and it is truncated, you can use the value of the last Key in the response as the marker in the subsequent request to get the next set of object keys.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.s3Mod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.s3Mod.NextMarker] = js.undefined
   
   /**
     * Keys that begin with the indicated prefix.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
 }
 object ListObjectsOutput {
   

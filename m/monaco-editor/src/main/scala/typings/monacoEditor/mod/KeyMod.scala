@@ -2,7 +2,6 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "KeyMod")
@@ -10,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class KeyMod () extends StObject
 /* static members */
 object KeyMod {
+  
+  @JSImport("monaco-editor", "KeyMod")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("monaco-editor", "KeyMod.Alt")
   @js.native
@@ -27,7 +30,6 @@ object KeyMod {
   @js.native
   val WinCtrl: Double = js.native
   
-  @JSImport("monaco-editor", "KeyMod.chord")
-  @js.native
-  def chord(firstPart: Double, secondPart: Double): Double = js.native
+  @scala.inline
+  def chord(firstPart: Double, secondPart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chord")(firstPart.asInstanceOf[js.Any], secondPart.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

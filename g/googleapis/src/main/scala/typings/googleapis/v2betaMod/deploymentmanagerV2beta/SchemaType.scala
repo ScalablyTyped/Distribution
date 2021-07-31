@@ -2,32 +2,30 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource type supported by Deployment Manager.
   */
-@js.native
 trait SchemaType extends StObject {
   
   /**
     * Base Type (configurable service) that backs this Type.
     */
-  var base: js.UndefOr[SchemaBaseType] = js.native
+  var base: js.UndefOr[SchemaBaseType] = js.undefined
   
   /**
     * An optional textual description of the resource; provided by the client
     * when the resource is created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Creation timestamp in RFC3339 text format.
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * Map of labels; provided by the client when the resource is created or
@@ -37,23 +35,23 @@ trait SchemaType extends StObject {
     * characters long and must conform to the regular expression
     * ([a-z]([-a-z0-9]*[a-z0-9])?)?
     */
-  var labels: js.UndefOr[js.Array[SchemaTypeLabelEntry]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaTypeLabelEntry]] = js.undefined
   
   /**
     * Name of the type.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The Operation that most recently ran, or is currently
     * running, on this type.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * Output only. Server defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaType {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDedicatedIpWarmupAttributesRequest extends StObject {
   
   /**
     * The dedicated IP address that you want to update the warm-up attributes for.
     */
-  var Ip: typings.awsSdk.sesv2Mod.Ip = js.native
+  var Ip: typings.awsSdk.sesv2Mod.Ip
   
   /**
     * The warm-up percentage that you want to associate with the dedicated IP address.
     */
-  var WarmupPercentage: Percentage100Wrapper = js.native
+  var WarmupPercentage: Percentage100Wrapper
 }
 object PutDedicatedIpWarmupAttributesRequest {
   

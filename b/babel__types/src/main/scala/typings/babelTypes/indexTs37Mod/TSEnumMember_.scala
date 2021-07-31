@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSEnumMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSEnumMember_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var id: Identifier_ | StringLiteral_ = js.native
+  var id: Identifier_ | StringLiteral_
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
   @JSName("type")
-  var type_TSEnumMember_ : TSEnumMember = js.native
+  var type_TSEnumMember_ : TSEnumMember
 }
 object TSEnumMember_ {
   
   @scala.inline
-  def apply(id: Identifier_ | StringLiteral_, `type`: TSEnumMember): TSEnumMember_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_ | StringLiteral_): TSEnumMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSEnumMember")
     __obj.asInstanceOf[TSEnumMember_]
   }
   

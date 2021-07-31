@@ -3,36 +3,35 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description
-  extends /* option */ StringDictionary[js.Any] {
+  extends StObject
+     with /* option */ StringDictionary[js.Any] {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Array[_]] = js.native
+  var example: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var flags: js.UndefOr[js.Object] = js.native
+  var flags: js.UndefOr[js.Object] = js.undefined
   
-  var invalids: js.UndefOr[js.Array[_]] = js.native
+  var invalids: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var meta: js.UndefOr[js.Array[_]] = js.native
+  var meta: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var notes: js.UndefOr[js.Array[String]] = js.native
+  var notes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var options: js.UndefOr[ValidationOptions] = js.native
+  var options: js.UndefOr[ValidationOptions] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `type`: js.UndefOr[Types | String] = js.native
+  var `type`: js.UndefOr[Types | String] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var valids: js.UndefOr[js.Array[_]] = js.native
+  var valids: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object Description {
   
@@ -52,7 +51,7 @@ object Description {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setExample(value: js.Array[_]): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    def setExample(value: js.Array[js.Any]): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
@@ -67,7 +66,7 @@ object Description {
     def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def setInvalids(value: js.Array[_]): Self = StObject.set(x, "invalids", value.asInstanceOf[js.Any])
+    def setInvalids(value: js.Array[js.Any]): Self = StObject.set(x, "invalids", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInvalidsUndefined: Self = StObject.set(x, "invalids", js.undefined)
@@ -82,7 +81,7 @@ object Description {
     def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -127,7 +126,7 @@ object Description {
     def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setValids(value: js.Array[_]): Self = StObject.set(x, "valids", value.asInstanceOf[js.Any])
+    def setValids(value: js.Array[js.Any]): Self = StObject.set(x, "valids", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValidsUndefined: Self = StObject.set(x, "valids", js.undefined)

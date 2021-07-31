@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorObservedEvent extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var pane: Pane = js.native
+  var pane: Pane
   
-  var textEditor: TextEditor = js.native
+  var textEditor: TextEditor
 }
 object TextEditorObservedEvent {
   

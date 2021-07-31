@@ -3,19 +3,19 @@ package typings.reactDndTouchBackend
 import typings.reactDndTouchBackend.interfacesMod.AngleRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathMod {
   
-  @JSImport("react-dnd-touch-backend/lib/utils/math", "distance")
+  @JSImport("react-dnd-touch-backend/lib/utils/math", JSImport.Namespace)
   @js.native
-  def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-dnd-touch-backend/lib/utils/math", "inAngleRanges")
-  @js.native
-  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double): Boolean = js.native
-  @JSImport("react-dnd-touch-backend/lib/utils/math", "inAngleRanges")
-  @js.native
-  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double, angleRanges: js.Array[AngleRange]): Boolean = js.native
+  @scala.inline
+  def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double, angleRanges: js.Array[AngleRange]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], angleRanges.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

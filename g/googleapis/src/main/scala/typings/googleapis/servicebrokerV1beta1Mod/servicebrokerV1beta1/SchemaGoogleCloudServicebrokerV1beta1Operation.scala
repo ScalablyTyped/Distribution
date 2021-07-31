@@ -2,25 +2,23 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a long running operation, which conforms to OpenService API.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1Operation extends StObject {
   
   /**
     * Optional description of the Operation state.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the operation. Valid values are: &quot;in progress&quot;,
     * &quot;succeeded&quot;, and &quot;failed&quot;.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1Operation {
   

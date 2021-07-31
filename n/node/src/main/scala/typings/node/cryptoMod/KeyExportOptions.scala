@@ -7,19 +7,17 @@ import typings.node.nodeStrings.sec1
 import typings.node.nodeStrings.spki
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyExportOptions[T /* <: KeyFormat */] extends StObject {
   
-  var cipher: js.UndefOr[String] = js.native
+  var cipher: js.UndefOr[String] = js.undefined
   
-  var format: T = js.native
+  var format: T
   
-  var passphrase: js.UndefOr[String | Buffer] = js.native
+  var passphrase: js.UndefOr[String | Buffer] = js.undefined
   
-  var `type`: pkcs1 | spki | pkcs8 | sec1 = js.native
+  var `type`: pkcs1 | spki | pkcs8 | sec1
 }
 object KeyExportOptions {
   
@@ -31,7 +29,7 @@ object KeyExportOptions {
   }
   
   @scala.inline
-  implicit class KeyExportOptionsMutableBuilder[Self <: KeyExportOptions[_], T /* <: KeyFormat */] (val x: Self with KeyExportOptions[T]) extends AnyVal {
+  implicit class KeyExportOptionsMutableBuilder[Self <: KeyExportOptions[?], T /* <: KeyFormat */] (val x: Self & KeyExportOptions[T]) extends AnyVal {
     
     @scala.inline
     def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])

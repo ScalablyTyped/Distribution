@@ -3,53 +3,50 @@ package typings.meow
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("meow", JSImport.Namespace)
-  @js.native
-  def apply(helpMessage: String, options: Options): Result = js.native
-  @JSImport("meow", JSImport.Namespace)
-  @js.native
-  def apply(helpMessage: js.Array[String], options: Options): Result = js.native
-  @JSImport("meow", JSImport.Namespace)
-  @js.native
-  def apply(options: String): Result = js.native
-  @JSImport("meow", JSImport.Namespace)
-  @js.native
-  def apply(options: js.Array[String]): Result = js.native
-  @JSImport("meow", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Result = js.native
+  @scala.inline
+  def apply(helpMessage: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(helpMessage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def apply(helpMessage: js.Array[String], options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(helpMessage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def apply(options: String): Result = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def apply(options: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def apply(options: Options): Result = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Result]
   
+  @JSImport("meow", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var argv: js.UndefOr[js.Array[String]] = js.native
+    var argv: js.UndefOr[js.Array[String]] = js.undefined
     
-    var autoHelp: js.UndefOr[Boolean] = js.native
+    var autoHelp: js.UndefOr[Boolean] = js.undefined
     
-    var autoVersion: js.UndefOr[Boolean] = js.native
+    var autoVersion: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Caution: Explicitly specifying undefined for booleanDefault
       * has different meaning from omitting key itself.
       */
-    var booleanDefault: js.UndefOr[Boolean | Null] = js.native
+    var booleanDefault: js.UndefOr[Boolean | Null] = js.undefined
     
-    var description: js.UndefOr[String | Boolean] = js.native
+    var description: js.UndefOr[String | Boolean] = js.undefined
     
-    var flags: js.UndefOr[typings.minimistOptions.mod.Options] = js.native
+    var flags: js.UndefOr[typings.minimistOptions.mod.Options] = js.undefined
     
-    var help: js.UndefOr[String | Boolean] = js.native
+    var help: js.UndefOr[String | Boolean] = js.undefined
     
-    var inferType: js.UndefOr[Boolean] = js.native
+    var inferType: js.UndefOr[Boolean] = js.undefined
     
-    var pkg: js.UndefOr[js.Any] = js.native
+    var pkg: js.UndefOr[js.Any] = js.undefined
     
-    var version: js.UndefOr[String | Boolean] = js.native
+    var version: js.UndefOr[String | Boolean] = js.undefined
   }
   object Options {
     

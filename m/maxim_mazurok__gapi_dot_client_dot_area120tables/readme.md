@@ -10,9 +10,9 @@ TypeScript typings for Area120 Tables API v1alpha1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.area120tables |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 178 |
+| # downloads        | 4417 |
 | # stars            | 0 |
 
 ## Links

@@ -2,37 +2,35 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCaptionListResponse extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Serialized EventId of the request which produced this response.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of captions that match the request criteria.
     */
-  var items: js.UndefOr[js.Array[SchemaCaption]] = js.native
+  var items: js.UndefOr[js.Array[SchemaCaption]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#captionListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The visitorId identifies the visitor.
     */
-  var visitorId: js.UndefOr[String] = js.native
+  var visitorId: js.UndefOr[String] = js.undefined
 }
 object SchemaCaptionListResponse {
   

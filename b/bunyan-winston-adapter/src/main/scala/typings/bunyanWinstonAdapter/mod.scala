@@ -1,18 +1,18 @@
 package typings.bunyanWinstonAdapter
 
-import typings.bunyan.mod.^
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bunyan-winston-adapter", "createAdapter")
+  @JSImport("bunyan-winston-adapter", JSImport.Namespace)
   @js.native
-  def createAdapter(logger: Logger): ^ = js.native
-  @JSImport("bunyan-winston-adapter", "createAdapter")
-  @js.native
-  def createAdapter(logger: Logger, mapping: js.Any): ^ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createAdapter(logger: Logger): typings.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(logger.asInstanceOf[js.Any]).asInstanceOf[typings.bunyan.mod.^]
+  @scala.inline
+  def createAdapter(logger: Logger, mapping: js.Any): typings.bunyan.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(logger.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[typings.bunyan.mod.^]
 }

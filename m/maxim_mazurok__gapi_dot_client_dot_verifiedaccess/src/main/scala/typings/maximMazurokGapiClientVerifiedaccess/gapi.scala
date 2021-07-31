@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientVerifiedaccess.anon.Alt
 import typings.maximMazurokGapiClientVerifiedaccess.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,14 +14,13 @@ object gapi {
     
     object verifiedaccess {
       
-      @js.native
       trait Challenge extends StObject {
         
         /** Challenge generated with the old signing key (this will only be present during key rotation) */
-        var alternativeChallenge: js.UndefOr[SignedData] = js.native
+        var alternativeChallenge: js.UndefOr[SignedData] = js.undefined
         
         /** Generated challenge */
-        var challenge: js.UndefOr[SignedData] = js.native
+        var challenge: js.UndefOr[SignedData] = js.undefined
       }
       object Challenge {
         
@@ -62,17 +60,15 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait SignedData extends StObject {
         
         /** The data to be signed. */
-        var data: js.UndefOr[String] = js.native
+        var data: js.UndefOr[String] = js.undefined
         
         /** The signature of the data field. */
-        var signature: js.UndefOr[String] = js.native
+        var signature: js.UndefOr[String] = js.undefined
       }
       object SignedData {
         
@@ -99,17 +95,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait VerifyChallengeResponseRequest extends StObject {
         
         /** The generated response to the challenge */
-        var challengeResponse: js.UndefOr[SignedData] = js.native
+        var challengeResponse: js.UndefOr[SignedData] = js.undefined
         
         /**
           * Service can optionally provide identity information about the device or user associated with the key. For an EMK, this value is the enrolled domain. For an EUK, this value is the
           * user's email address. If present, this value will be checked against contents of the response, and verification will fail if there is no match.
           */
-        var expectedIdentity: js.UndefOr[String] = js.native
+        var expectedIdentity: js.UndefOr[String] = js.undefined
       }
       object VerifyChallengeResponseRequest {
         
@@ -136,26 +131,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait VerifyChallengeResponseResult extends StObject {
         
         /** Device enrollment id is returned in this field (for the machine response only). */
-        var deviceEnrollmentId: js.UndefOr[String] = js.native
+        var deviceEnrollmentId: js.UndefOr[String] = js.undefined
         
         /** Device permanent id is returned in this field (for the machine response only). */
-        var devicePermanentId: js.UndefOr[String] = js.native
+        var devicePermanentId: js.UndefOr[String] = js.undefined
         
         /**
           * Certificate Signing Request (in the SPKAC format, base64 encoded) is returned in this field. This field will be set only if device has included CSR in its challenge response. (the
           * option to include CSR is now available for both user and machine responses)
           */
-        var signedPublicKeyAndChallenge: js.UndefOr[String] = js.native
+        var signedPublicKeyAndChallenge: js.UndefOr[String] = js.undefined
         
         /**
           * For EMCert check, device permanent id is returned here. For EUCert check, signed_public_key_and_challenge [base64 encoded] is returned if present, otherwise empty string is
           * returned. This field is deprecated, please use device_permanent_id or signed_public_key_and_challenge fields.
           */
-        var verificationOutput: js.UndefOr[String] = js.native
+        var verificationOutput: js.UndefOr[String] = js.undefined
       }
       object VerifyChallengeResponseResult {
         

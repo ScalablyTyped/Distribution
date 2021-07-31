@@ -7,14 +7,12 @@ import typings.chromeApps.chromeAppsStrings.WRITE
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenedFileInfo extends StObject {
   
   /** The path of the opened file. */
-  var filePath: String = js.native
+  var filePath: String
   
   /**
     * Whether the file was opened for reading or writing.
@@ -27,10 +25,10 @@ trait OpenedFileInfo extends StObject {
       /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
       typings.chromeApps.chromeAppsStrings.READ | WRITE
     ]
-  ] = js.native
+  ]
   
   /** A request ID to be be used by consecutive read/write and close requests. */
-  var openRequestId: integer = js.native
+  var openRequestId: integer
 }
 object OpenedFileInfo {
   

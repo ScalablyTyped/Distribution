@@ -2,29 +2,27 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingDetails extends StObject {
   
   /** Shipping address. */
-  var address: ShippingDetailsAddress = js.native
+  var address: ShippingDetailsAddress
   
   /** The delivery service that shipped a physical product, such as Fedex, UPS, USPS, etc. */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /** Recipient name. */
-  var name: String = js.native
+  var name: String
   
   /** Recipient phone (including extension). */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * The tracking number for a physical product, obtained from the delivery service.
     * If multiple tracking numbers were generated for this purchase, please separate them with commas.
     */
-  var tracking_number: js.UndefOr[String] = js.native
+  var tracking_number: js.UndefOr[String] = js.undefined
 }
 object ShippingDetails {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPaletteMod {
@@ -17,14 +16,13 @@ object colorPaletteMod {
   @js.native
   val ColorPalette: FunctionComponent[js.Object] = js.native
   
-  @js.native
   trait ColorProps extends StObject {
     
-    var colors: Colors = js.native
+    var colors: Colors
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var title: String = js.native
+    var title: String
   }
   object ColorProps {
     

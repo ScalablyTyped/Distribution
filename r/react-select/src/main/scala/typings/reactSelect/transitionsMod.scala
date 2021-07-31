@@ -7,7 +7,6 @@ import typings.reactSelect.anon.Exited
 import typings.reactSelect.reactSelectStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionsMod {
@@ -32,7 +31,7 @@ object transitionsMod {
     def getTransition(state: TransitionState): js.Any = js.native
     
     // width must be calculated; cannot transition from `undefined` to `number`
-    def getWidth(ref: Ref[_]): Unit = js.native
+    def getWidth(ref: Ref[js.Any]): Unit = js.native
     
     var transition: Exited = js.native
   }
@@ -45,14 +44,13 @@ object transitionsMod {
   @js.native
   val collapseDuration: Double = js.native
   
-  @js.native
   trait BaseTransition extends StObject {
     
     /** Whether we are in a transition. */
-    var in: Boolean = js.native
+    var in: Boolean
     
     /** Function to be called once transition finishes. */
-    var onExited: fn = js.native
+    var onExited: fn
   }
   object BaseTransition {
     
@@ -73,12 +71,11 @@ object transitionsMod {
     }
   }
   
-  @js.native
   trait CollapseProps extends StObject {
     
-    var children: js.Any = js.native
+    var children: js.Any
     
-    var in: Boolean = js.native
+    var in: Boolean
   }
   object CollapseProps {
     
@@ -99,10 +96,9 @@ object transitionsMod {
     }
   }
   
-  @js.native
   trait CollapseState extends StObject {
     
-    var width: Width = js.native
+    var width: Width
   }
   object CollapseState {
     
@@ -120,24 +116,18 @@ object transitionsMod {
     }
   }
   
-  /* Inlined react-select.react-select/src/animated/transitions.BaseTransition & {  component :react.react.ComponentType<any>,   duration :number} */
-  @js.native
-  trait FadeProps extends StObject {
+  trait FadeProps
+    extends StObject
+       with BaseTransition {
     
-    var component: ComponentType[_] = js.native
+    var component: ComponentType[js.Any]
     
-    var duration: Double = js.native
-    
-    /** Whether we are in a transition. */
-    var in: Boolean = js.native
-    
-    /** Function to be called once transition finishes. */
-    var onExited: fn = js.native
+    var duration: Double
   }
   object FadeProps {
     
     @scala.inline
-    def apply(component: ComponentType[_], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
+    def apply(component: ComponentType[js.Any], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
       __obj.asInstanceOf[FadeProps]
     }
@@ -146,16 +136,10 @@ object transitionsMod {
     implicit class FadePropsMutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
     }
   }
   

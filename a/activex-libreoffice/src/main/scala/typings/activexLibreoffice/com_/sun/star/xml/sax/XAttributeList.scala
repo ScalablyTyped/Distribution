@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,29 +15,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is a poor IDL version of the Java interface **org.xml.sax.AttributeList** . For example in getValueByName, it does not allow to
   * distinguish a missing value (for which the Java interface returns null) from an empty string value.
   */
-@js.native
-trait XAttributeList extends XInterface {
+trait XAttributeList
+  extends StObject
+     with XInterface {
   
   /** @returns the number of attributes in this list. */
-  val Length: Double = js.native
+  val Length: Double
   
   /** @returns the number of attributes in this list. */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /** @returns the name of an attribute in this list (by position). */
-  def getNameByIndex(i: Double): String = js.native
+  def getNameByIndex(i: Double): String
   
   /** @returns the type of an attribute in the list (by position). Non-validating parsers may return CDATA only. */
-  def getTypeByIndex(i: Double): String = js.native
+  def getTypeByIndex(i: Double): String
   
   /** @returns the type of an attribute in the list (by name). Non-validating parsers may return CDATA only. */
-  def getTypeByName(aName: String): String = js.native
+  def getTypeByName(aName: String): String
   
   /** @returns the value of an attribute in the list (by position). */
-  def getValueByIndex(i: Double): String = js.native
+  def getValueByIndex(i: Double): String
   
   /** @returns the value of an attribute in the list (by name). */
-  def getValueByName(aName: String): String = js.native
+  def getValueByName(aName: String): String
 }
 object XAttributeList {
   

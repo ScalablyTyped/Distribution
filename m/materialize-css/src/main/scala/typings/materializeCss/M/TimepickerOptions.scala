@@ -4,95 +4,93 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimepickerOptions extends StObject {
   
   /**
     * Automatically close picker when minute is selected.
     * @default false;
     */
-  var autoClose: Boolean = js.native
+  var autoClose: Boolean
   
   /**
     * Specify a selector for a DOM element to render the calendar in, by default it will be placed before the input.
     */
-  var container: String = js.native
+  var container: String
   
   /**
     * Default time to set on the timepicker 'now' or '13:14'
     * @default 'now';
     */
-  var defaultTime: String = js.native
+  var defaultTime: String
   
   /**
     * Duration of the transition from/to the hours/minutes view.
     * @default 350
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Millisecond offset from the defaultTime.
     * @default 0
     */
-  var fromNow: Double = js.native
+  var fromNow: Double
   
   /**
     * Internationalization options
     */
   var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
-  ] = js.native
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+  ]
   
   /**
     * Callback function called after modal is closed
     * @default null
     */
-  def onCloseEnd(el: Element): Unit = js.native
+  def onCloseEnd(el: Element): Unit
   
   /**
     * Callback function called before modal is closed
     * @default null
     */
-  def onCloseStart(el: Element): Unit = js.native
+  def onCloseStart(el: Element): Unit
   
   /**
     * Callback function called after modal is opened
     * @default null
     */
-  def onOpenEnd(el: Element): Unit = js.native
+  def onOpenEnd(el: Element): Unit
   
   /**
     * Callback function called before modal is opened
     * @default null
     */
-  def onOpenStart(el: Element): Unit = js.native
+  def onOpenStart(el: Element): Unit
   
   /**
     * Callback function when a time is selected
     * @default null
     */
-  def onSelect(hour: Double, minute: Double): Unit = js.native
+  def onSelect(hour: Double, minute: Double): Unit
   
   /**
     * Show the clear button in the Timepicker
     * @default false
     */
-  var showClearBtn: Boolean = js.native
+  var showClearBtn: Boolean
   
   /**
     * Use 12 hour AM/PM clock instead of 24 hour clock.
     * @default true
     */
-  var twelveHour: Boolean = js.native
+  var twelveHour: Boolean
   
   /**
     * Vibrate device when dragging clock hand.
     * @default true
     */
-  var vibrate: Boolean = js.native
+  var vibrate: Boolean
 }
 object TimepickerOptions {
   
@@ -104,7 +102,7 @@ object TimepickerOptions {
     duration: Double,
     fromNow: Double,
     i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
     ],
     onCloseEnd: Element => Unit,
     onCloseStart: Element => Unit,
@@ -140,7 +138,7 @@ object TimepickerOptions {
     @scala.inline
     def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

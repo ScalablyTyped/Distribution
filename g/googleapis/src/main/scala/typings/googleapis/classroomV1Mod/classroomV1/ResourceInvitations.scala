@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Invitations")
@@ -36,7 +35,7 @@ class ResourceInvitations protected () extends StObject {
     */
   def accept(): GaxiosPromise[SchemaEmpty] = js.native
   def accept(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def accept(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def accept(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def accept(params: ParamsResourceInvitationsAccept): GaxiosPromise[SchemaEmpty] = js.native
   def accept(params: ParamsResourceInvitationsAccept, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def accept(
@@ -75,7 +74,7 @@ class ResourceInvitations protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaInvitation] = js.native
   def create(callback: BodyResponseCallback[SchemaInvitation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInvitation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInvitation] = js.native
   def create(params: ParamsResourceInvitationsCreate): GaxiosPromise[SchemaInvitation] = js.native
   def create(params: ParamsResourceInvitationsCreate, callback: BodyResponseCallback[SchemaInvitation]): Unit = js.native
   def create(
@@ -107,7 +106,7 @@ class ResourceInvitations protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceInvitationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceInvitationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -139,7 +138,7 @@ class ResourceInvitations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInvitation] = js.native
   def get(callback: BodyResponseCallback[SchemaInvitation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInvitation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInvitation] = js.native
   def get(params: ParamsResourceInvitationsGet): GaxiosPromise[SchemaInvitation] = js.native
   def get(params: ParamsResourceInvitationsGet, callback: BodyResponseCallback[SchemaInvitation]): Unit = js.native
   def get(
@@ -175,7 +174,7 @@ class ResourceInvitations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListInvitationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInvitationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInvitationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListInvitationsResponse] = js.native
   def list(params: ParamsResourceInvitationsList): GaxiosPromise[SchemaListInvitationsResponse] = js.native
   def list(
     params: ParamsResourceInvitationsList,

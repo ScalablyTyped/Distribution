@@ -17,17 +17,15 @@ import typings.wordpressBlocks.wordpressBlocksStrings.target
 import typings.wordpressBlocks.wordpressBlocksStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
   val attributes: js.Array[
     charset | coords | download | hreflang | name | ping | referrerPolicy | rel | relList | rev | shape | target | text | `type`
-  ] = js.native
+  ]
   
-  val children: PhrasingContentSchema = js.native
+  val children: PhrasingContentSchema
 }
 object Attributes {
   

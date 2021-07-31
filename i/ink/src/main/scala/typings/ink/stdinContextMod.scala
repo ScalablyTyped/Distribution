@@ -5,7 +5,6 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stdinContextMod extends Shortcut {
@@ -17,26 +16,25 @@ object stdinContextMod extends Shortcut {
   @js.native
   val default: Context[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
-    val internal_exitOnCtrlC: Boolean = js.native
+    val internal_exitOnCtrlC: Boolean
     
     /**
       * A boolean flag determining if the current `stdin` supports `setRawMode`. A component using `setRawMode` might want to use `isRawModeSupported` to nicely fall back in environments where raw mode is not supported.
       */
-    val isRawModeSupported: Boolean = js.native
+    val isRawModeSupported: Boolean
     
     /**
       * Ink exposes this function via own `<StdinContext>` to be able to handle Ctrl+C, that's why you should use Ink's `setRawMode` instead of `process.stdin.setRawMode`.
       * If the `stdin` stream passed to Ink does not support setRawMode, this function does nothing.
       */
-    def setRawMode(value: Boolean): Unit = js.native
+    def setRawMode(value: Boolean): Unit
     
     /**
       * Stdin stream passed to `render()` in `options.stdin` or `process.stdin` by default. Useful if your app needs to handle user input.
       */
-    val stdin: js.UndefOr[ReadStream] = js.native
+    val stdin: js.UndefOr[ReadStream] = js.undefined
   }
   object Props {
     

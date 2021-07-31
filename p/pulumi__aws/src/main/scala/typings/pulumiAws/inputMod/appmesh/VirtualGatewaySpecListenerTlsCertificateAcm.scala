@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecListenerTlsCertificateAcm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  var certificateArn: Input[String] = js.native
+  var certificateArn: Input[String]
 }
 object VirtualGatewaySpecListenerTlsCertificateAcm {
   

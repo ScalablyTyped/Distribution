@@ -7,10 +7,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("apn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("apn", "Notification")
   @js.native
@@ -115,31 +118,28 @@ object mod {
     def shutdown(): Unit = js.native
   }
   
-  @JSImport("apn", "token")
-  @js.native
-  def token(token: String): String = js.native
-  @JSImport("apn", "token")
-  @js.native
-  def token(token: Buffer): String = js.native
+  @scala.inline
+  def token(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def token(token: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Aps extends StObject {
     
-    var alert: js.UndefOr[String | ApsAlert] = js.native
+    var alert: js.UndefOr[String | ApsAlert] = js.undefined
     
-    var badge: js.UndefOr[Double] = js.native
+    var badge: js.UndefOr[Double] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var `content-available`: js.UndefOr[`1`] = js.native
+    var `content-available`: js.UndefOr[`1`] = js.undefined
     
-    var `launch-image`: js.UndefOr[String] = js.native
+    var `launch-image`: js.UndefOr[String] = js.undefined
     
-    var `mutable-content`: js.UndefOr[`1`] = js.native
+    var `mutable-content`: js.UndefOr[`1`] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var `url-args`: js.UndefOr[js.Array[String]] = js.native
+    var `url-args`: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Aps {
     
@@ -205,24 +205,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ApsAlert extends StObject {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
-    var `action-loc-key`: js.UndefOr[String] = js.native
+    var `action-loc-key`: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var `loc-args`: js.UndefOr[js.Array[_]] = js.native
+    var `loc-args`: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var `loc-key`: js.UndefOr[String] = js.native
+    var `loc-key`: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `title-loc-args`: js.UndefOr[js.Array[_]] = js.native
+    var `title-loc-args`: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var `title-loc-key`: js.UndefOr[String] = js.native
+    var `title-loc-key`: js.UndefOr[String] = js.undefined
   }
   object ApsAlert {
     
@@ -254,7 +253,7 @@ object mod {
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def `setLoc-args`(value: js.Array[_]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
+      def `setLoc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
@@ -272,7 +271,7 @@ object mod {
       def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setTitle-loc-args`(value: js.Array[_]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
+      def `setTitle-loc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
@@ -291,26 +290,25 @@ object mod {
     }
   }
   
-  @js.native
   trait NotificationAlertOptions extends StObject {
     
-    var `action-loc-key`: js.UndefOr[String] = js.native
+    var `action-loc-key`: js.UndefOr[String] = js.undefined
     
-    var body: String = js.native
+    var body: String
     
-    var `launch-image`: js.UndefOr[String] = js.native
+    var `launch-image`: js.UndefOr[String] = js.undefined
     
-    var `loc-args`: js.UndefOr[js.Array[String]] = js.native
+    var `loc-args`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `loc-key`: js.UndefOr[String] = js.native
+    var `loc-key`: js.UndefOr[String] = js.undefined
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `title-loc-args`: js.UndefOr[js.Array[String]] = js.native
+    var `title-loc-args`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `title-loc-key`: js.UndefOr[String] = js.native
+    var `title-loc-key`: js.UndefOr[String] = js.undefined
   }
   object NotificationAlertOptions {
     
@@ -382,53 +380,52 @@ object mod {
     }
   }
   
-  @js.native
   trait ProviderOptions extends StObject {
     
     /**
       * An array of trusted certificates. Each element should contain either a filename to load, or a Buffer/String (in PEM format) to be used directly. If this is omitted several well known "root" CAs will be used. - You may need to use this as some environments don't include the CA used by Apple (entrust_2048).
       */
-    var ca: js.UndefOr[js.Array[String | Buffer]] = js.native
+    var ca: js.UndefOr[js.Array[String | Buffer]] = js.undefined
     
     /**
       * The filename of the connection certificate to load from disk, or a Buffer/String containing the certificate data. (Defaults to: `cert.pem`)
       */
-    var cert: js.UndefOr[String | Buffer] = js.native
+    var cert: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * The maximum number of connection failures that will be tolerated before `apn` will "terminate". (Defaults to: 3)
       */
-    var connectionRetryLimit: js.UndefOr[Double] = js.native
+    var connectionRetryLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * The filename of the connection key to load from disk, or a Buffer/String containing the key data. (Defaults to: `key.pem`)
       */
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * The passphrase for the connection key, if required
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * File path for private key, certificate and CA certs in PFX or PKCS12 format, or a Buffer containing the PFX data. If supplied will always be used instead of certificate and key above.
       */
-    var pfx: js.UndefOr[String | Buffer] = js.native
+    var pfx: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Specifies which environment to connect to: Production (if true) or Sandbox - The hostname will be set automatically. (Defaults to NODE_ENV == "production", i.e. false unless the NODE_ENV environment variable is set accordingly)
       */
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reject Unauthorized property to be passed through to tls.connect() (Defaults to `true`)
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration for Provider Authentication Tokens. (Defaults to: null i.e. fallback to Certificates)
       */
-    var token: js.UndefOr[ProviderToken] = js.native
+    var token: js.UndefOr[ProviderToken] = js.undefined
   }
   object ProviderOptions {
     
@@ -500,23 +497,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ProviderToken extends StObject {
     
     /**
       * The filename of the provider token key (as supplied by Apple) to load from disk, or a Buffer/String containing the key data.
       */
-    var key: Buffer | String = js.native
+    var key: Buffer | String
     
     /**
       * The ID of the key issued by Apple
       */
-    var keyId: String = js.native
+    var keyId: String
     
     /**
       * ID of the team associated with the provider token key
       */
-    var teamId: String = js.native
+    var teamId: String
   }
   object ProviderToken {
     
@@ -540,16 +536,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseFailure extends StObject {
     
-    var device: String = js.native
+    var device: String
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var response: js.UndefOr[Reason] = js.native
+    var response: js.UndefOr[Reason] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
   }
   object ResponseFailure {
     
@@ -585,10 +580,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseSent extends StObject {
     
-    var device: String = js.native
+    var device: String
   }
   object ResponseSent {
     
@@ -606,12 +600,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Responses extends StObject {
     
-    var failed: js.Array[ResponseFailure] = js.native
+    var failed: js.Array[ResponseFailure]
     
-    var sent: js.Array[ResponseSent] = js.native
+    var sent: js.Array[ResponseSent]
   }
   object Responses {
     

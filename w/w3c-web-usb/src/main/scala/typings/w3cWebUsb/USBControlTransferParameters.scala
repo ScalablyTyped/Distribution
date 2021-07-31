@@ -2,21 +2,19 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBControlTransferParameters extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var recipient: USBRecipient = js.native
+  var recipient: USBRecipient
   
-  var request: Double = js.native
+  var request: Double
   
-  var requestType: USBRequestType = js.native
+  var requestType: USBRequestType
   
-  var value: Double = js.native
+  var value: Double
 }
 object USBControlTransferParameters {
   

@@ -17,63 +17,45 @@ import typings.glaze.glazeStrings.paddingX
 import typings.glaze.glazeStrings.paddingY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bg extends StObject {
   
-  val bg: background = js.native
+  val bg: background
   
-  val m: margin = js.native
+  val m: margin
   
-  val mb: marginBottom = js.native
+  val mb: marginBottom
   
-  val ml: marginLeft = js.native
+  val ml: marginLeft
   
-  val mr: marginRight = js.native
+  val mr: marginRight
   
-  val mt: marginTop = js.native
+  val mt: marginTop
   
-  val mx: marginX = js.native
+  val mx: marginX
   
-  val my: marginY = js.native
+  val my: marginY
   
-  val p: padding = js.native
+  val p: padding
   
-  val pb: paddingBottom = js.native
+  val pb: paddingBottom
   
-  val pl: paddingLeft = js.native
+  val pl: paddingLeft
   
-  val pr: paddingRight = js.native
+  val pr: paddingRight
   
-  val pt: paddingTop = js.native
+  val pt: paddingTop
   
-  val px: paddingX = js.native
+  val px: paddingX
   
-  val py: paddingY = js.native
+  val py: paddingY
 }
 object Bg {
   
   @scala.inline
-  def apply(
-    bg: background,
-    m: margin,
-    mb: marginBottom,
-    ml: marginLeft,
-    mr: marginRight,
-    mt: marginTop,
-    mx: marginX,
-    my: marginY,
-    p: padding,
-    pb: paddingBottom,
-    pl: paddingLeft,
-    pr: paddingRight,
-    pt: paddingTop,
-    px: paddingX,
-    py: paddingY
-  ): Bg = {
-    val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], mb = mb.asInstanceOf[js.Any], ml = ml.asInstanceOf[js.Any], mr = mr.asInstanceOf[js.Any], mt = mt.asInstanceOf[js.Any], mx = mx.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], pb = pb.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], pr = pr.asInstanceOf[js.Any], pt = pt.asInstanceOf[js.Any], px = px.asInstanceOf[js.Any], py = py.asInstanceOf[js.Any])
+  def apply(): Bg = {
+    val __obj = js.Dynamic.literal(bg = "background", m = "margin", mb = "marginBottom", ml = "marginLeft", mr = "marginRight", mt = "marginTop", mx = "marginX", my = "marginY", p = "padding", pb = "paddingBottom", pl = "paddingLeft", pr = "paddingRight", pt = "paddingTop", px = "paddingX", py = "paddingY")
     __obj.asInstanceOf[Bg]
   }
   

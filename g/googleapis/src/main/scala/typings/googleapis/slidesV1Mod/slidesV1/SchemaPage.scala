@@ -2,50 +2,48 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A page in a presentation.
   */
-@js.native
 trait SchemaPage extends StObject {
   
   /**
     * Layout specific properties. Only set if page_type = LAYOUT.
     */
-  var layoutProperties: js.UndefOr[SchemaLayoutProperties] = js.native
+  var layoutProperties: js.UndefOr[SchemaLayoutProperties] = js.undefined
   
   /**
     * Master specific properties. Only set if page_type = MASTER.
     */
-  var masterProperties: js.UndefOr[SchemaMasterProperties] = js.native
+  var masterProperties: js.UndefOr[SchemaMasterProperties] = js.undefined
   
   /**
     * Notes specific properties. Only set if page_type = NOTES.
     */
-  var notesProperties: js.UndefOr[SchemaNotesProperties] = js.native
+  var notesProperties: js.UndefOr[SchemaNotesProperties] = js.undefined
   
   /**
     * The object ID for this page. Object IDs used by Page and PageElement
     * share the same namespace.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The page elements rendered on the page.
     */
-  var pageElements: js.UndefOr[js.Array[SchemaPageElement]] = js.native
+  var pageElements: js.UndefOr[js.Array[SchemaPageElement]] = js.undefined
   
   /**
     * The properties of the page.
     */
-  var pageProperties: js.UndefOr[SchemaPageProperties] = js.native
+  var pageProperties: js.UndefOr[SchemaPageProperties] = js.undefined
   
   /**
     * The type of the page.
     */
-  var pageType: js.UndefOr[String] = js.native
+  var pageType: js.UndefOr[String] = js.undefined
   
   /**
     * The revision ID of the presentation containing this page. Can be used in
@@ -60,12 +58,12 @@ trait SchemaPage extends StObject {
     * presentation has been updated; however, a changed ID can also be due to
     * internal factors such as ID format changes.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /**
     * Slide specific properties. Only set if page_type = SLIDE.
     */
-  var slideProperties: js.UndefOr[SchemaSlideProperties] = js.native
+  var slideProperties: js.UndefOr[SchemaSlideProperties] = js.undefined
 }
 object SchemaPage {
   

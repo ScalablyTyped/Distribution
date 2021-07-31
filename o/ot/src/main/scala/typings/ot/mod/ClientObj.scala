@@ -2,17 +2,15 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientObj extends StObject {
   
-  var clientId: String = js.native
+  var clientId: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var selection: String = js.native
+  var selection: String
 }
 object ClientObj {
   

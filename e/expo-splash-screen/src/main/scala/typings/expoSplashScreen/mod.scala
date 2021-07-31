@@ -2,24 +2,23 @@ package typings.expoSplashScreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("expo-splash-screen", "hide")
+  @JSImport("expo-splash-screen", JSImport.Namespace)
   @js.native
-  def hide(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-splash-screen", "hideAsync")
-  @js.native
-  def hideAsync(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
   
-  @JSImport("expo-splash-screen", "preventAutoHide")
-  @js.native
-  def preventAutoHide(): Unit = js.native
+  @scala.inline
+  def hideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAsync")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("expo-splash-screen", "preventAutoHideAsync")
-  @js.native
-  def preventAutoHideAsync(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def preventAutoHide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHide")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def preventAutoHideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHideAsync")().asInstanceOf[js.Promise[Boolean]]
 }

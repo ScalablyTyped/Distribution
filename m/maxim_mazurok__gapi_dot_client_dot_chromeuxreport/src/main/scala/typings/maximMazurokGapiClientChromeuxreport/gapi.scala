@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientChromeuxreport.anon.Accesstoken
 import typings.maximMazurokGapiClientChromeuxreport.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,17 +14,16 @@ object gapi {
     
     object chromeuxreport {
       
-      @js.native
       trait Bin extends StObject {
         
         /** The proportion of users that experienced this bin's value for the given metric. */
-        var density: js.UndefOr[Double] = js.native
+        var density: js.UndefOr[Double] = js.undefined
         
         /** End is the end of the data bin. If end is not populated, then the bin has no end and is valid from start to +inf. */
-        var end: js.UndefOr[js.Any] = js.native
+        var end: js.UndefOr[js.Any] = js.undefined
         
         /** Start is the beginning of the data bin. */
-        var start: js.UndefOr[js.Any] = js.native
+        var start: js.UndefOr[js.Any] = js.undefined
       }
       object Bin {
         
@@ -58,7 +56,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait Key extends StObject {
         
         /**
@@ -66,22 +63,22 @@ object gapi {
           * specified in: https://wicg.github.io/netinfo/#effective-connection-types If the effective connection type is unspecified, then aggregated data over all effective connection types
           * will be returned.
           */
-        var effectiveConnectionType: js.UndefOr[String] = js.native
+        var effectiveConnectionType: js.UndefOr[String] = js.undefined
         
         /**
           * The form factor is the device class that all users used to access the site for this record. If the form factor is unspecified, then aggregated data over all form factors will be
           * returned.
           */
-        var formFactor: js.UndefOr[String] = js.native
+        var formFactor: js.UndefOr[String] = js.undefined
         
         /**
           * Origin specifies the origin that this record is for. Note: When specifying an origin, data for loads under this origin over all pages are aggregated into origin level user
           * experience data.
           */
-        var origin: js.UndefOr[String] = js.native
+        var origin: js.UndefOr[String] = js.undefined
         
         /** Url specifies a specific url that this record is for. Note: When specifying a "url" only data for that specific url will be aggregated. */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object Key {
         
@@ -120,14 +117,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Metric extends StObject {
         
         /** The histogram of user experiences for a metric. The histogram will have at least one bin and the densities of all bins will add up to ~1. */
-        var histogram: js.UndefOr[js.Array[Bin]] = js.native
+        var histogram: js.UndefOr[js.Array[Bin]] = js.undefined
         
         /** Common useful percentiles of the Metric. The value type for the percentiles will be the same as the value types given for the Histogram bins. */
-        var percentiles: js.UndefOr[Percentiles] = js.native
+        var percentiles: js.UndefOr[Percentiles] = js.undefined
       }
       object Metric {
         
@@ -157,11 +153,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait Percentiles extends StObject {
         
         /** 75% of users experienced the given metric at or below this value. */
-        var p75: js.UndefOr[js.Any] = js.native
+        var p75: js.UndefOr[js.Any] = js.undefined
       }
       object Percentiles {
         
@@ -182,7 +177,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait QueryRequest extends StObject {
         
         /**
@@ -190,25 +184,25 @@ object gapi {
           * "slow-2G", "2G", "3G", "4G"] as specified in: https://wicg.github.io/netinfo/#effective-connection-types Note: If no effective connection type is specified, then a special record
           * with aggregated data over all effective connection types will be returned.
           */
-        var effectiveConnectionType: js.UndefOr[String] = js.native
+        var effectiveConnectionType: js.UndefOr[String] = js.undefined
         
         /**
           * The form factor is a query dimension that specifies the device class that the record's data should belong to. Note: If no form factor is specified, then a special record with
           * aggregated data over all form factors will be returned.
           */
-        var formFactor: js.UndefOr[String] = js.native
+        var formFactor: js.UndefOr[String] = js.undefined
         
         /**
           * The metrics that should be included in the response. If none are specified then any metrics found will be returned. Allowed values: ["first_contentful_paint", "first_input_delay",
           * "largest_contentful_paint", "cumulative_layout_shift"]
           */
-        var metrics: js.UndefOr[js.Array[String]] = js.native
+        var metrics: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The url pattern "origin" refers to a url pattern that is the origin of a website. Examples: "https://example.com", "https://cloud.google.com" */
-        var origin: js.UndefOr[String] = js.native
+        var origin: js.UndefOr[String] = js.undefined
         
         /** The url pattern "url" refers to a url pattern that is any arbitrary url. Examples: "https://example.com/", "https://cloud.google.com/why-google-cloud/" */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object QueryRequest {
         
@@ -256,14 +250,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait QueryResponse extends StObject {
         
         /** The record that was found. */
-        var record: js.UndefOr[Record] = js.native
+        var record: js.UndefOr[Record] = js.undefined
         
         /** These are details about automated normalization actions that were taken in order to make the requested `url_pattern` valid. */
-        var urlNormalizationDetails: js.UndefOr[UrlNormalization] = js.native
+        var urlNormalizationDetails: js.UndefOr[UrlNormalization] = js.undefined
       }
       object QueryResponse {
         
@@ -290,11 +283,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait Record extends StObject {
         
         /** Key defines all of the unique querying parameters needed to look up a user experience record. */
-        var key: js.UndefOr[Key] = js.native
+        var key: js.UndefOr[Key] = js.undefined
         
         /**
           * Metrics is the map of user experience data available for the record defined in the key field. Metrics are keyed on the metric name. Allowed key values: ["first_contentful_paint",
@@ -303,8 +295,8 @@ object gapi {
         var metrics: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-          */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[js.Any]
+              ] = js.undefined
       }
       object Record {
         
@@ -327,7 +319,7 @@ object gapi {
           def setMetrics(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-            */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[js.Any]
           ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -346,14 +338,13 @@ object gapi {
         def queryRecord(request: Alt, body: QueryRequest): Request[QueryResponse] = js.native
       }
       
-      @js.native
       trait UrlNormalization extends StObject {
         
         /** The URL after any normalization actions. This is a valid user experience URL that could reasonably be looked up. */
-        var normalizedUrl: js.UndefOr[String] = js.native
+        var normalizedUrl: js.UndefOr[String] = js.undefined
         
         /** The original requested URL prior to any normalization actions. */
-        var originalUrl: js.UndefOr[String] = js.native
+        var originalUrl: js.UndefOr[String] = js.undefined
       }
       object UrlNormalization {
         

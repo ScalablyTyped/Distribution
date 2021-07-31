@@ -5,10 +5,13 @@ import typings.ol.extentMod.Extent
 import typings.ol.sizeMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilegridWmtsMod {
+  
+  @JSImport("ol/tilegrid/WMTS", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/tilegrid/WMTS", JSImport.Default)
   @js.native
@@ -16,37 +19,32 @@ object tilegridWmtsMod {
     def this(options: Options) = this()
   }
   
-  @JSImport("ol/tilegrid/WMTS", "createFromCapabilitiesMatrixSet")
-  @js.native
-  def createFromCapabilitiesMatrixSet(matrixSet: js.Any): WMTSTileGrid = js.native
-  @JSImport("ol/tilegrid/WMTS", "createFromCapabilitiesMatrixSet")
-  @js.native
-  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: js.UndefOr[scala.Nothing], opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = js.native
-  @JSImport("ol/tilegrid/WMTS", "createFromCapabilitiesMatrixSet")
-  @js.native
-  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: Extent): WMTSTileGrid = js.native
-  @JSImport("ol/tilegrid/WMTS", "createFromCapabilitiesMatrixSet")
-  @js.native
-  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: Extent, opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = js.native
+  @scala.inline
+  def createFromCapabilitiesMatrixSet(matrixSet: js.Any): WMTSTileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any]).asInstanceOf[WMTSTileGrid]
+  @scala.inline
+  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: Unit, opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any], opt_matrixLimits.asInstanceOf[js.Any])).asInstanceOf[WMTSTileGrid]
+  @scala.inline
+  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: Extent): WMTSTileGrid = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[WMTSTileGrid]
+  @scala.inline
+  def createFromCapabilitiesMatrixSet(matrixSet: js.Any, opt_extent: Extent, opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any], opt_matrixLimits.asInstanceOf[js.Any])).asInstanceOf[WMTSTileGrid]
   
-  @js.native
   trait Options extends StObject {
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var matrixIds: js.Array[String] = js.native
+    var matrixIds: js.Array[String]
     
-    var origin: js.UndefOr[Coordinate] = js.native
+    var origin: js.UndefOr[Coordinate] = js.undefined
     
-    var origins: js.UndefOr[js.Array[Coordinate]] = js.native
+    var origins: js.UndefOr[js.Array[Coordinate]] = js.undefined
     
-    var resolutions: js.Array[Double] = js.native
+    var resolutions: js.Array[Double]
     
-    var sizes: js.UndefOr[js.Array[Size]] = js.native
+    var sizes: js.UndefOr[js.Array[Size]] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
     
-    var tileSizes: js.UndefOr[js.Array[Size]] = js.native
+    var tileSizes: js.UndefOr[js.Array[Size]] = js.undefined
   }
   object Options {
     

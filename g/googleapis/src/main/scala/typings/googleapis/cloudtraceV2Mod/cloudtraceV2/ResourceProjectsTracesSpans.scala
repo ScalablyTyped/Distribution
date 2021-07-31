@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace/v2", "cloudtrace_v2.Resource$Projects$Traces$Spans")
@@ -31,7 +30,7 @@ class ResourceProjectsTracesSpans protected () extends StObject {
     */
   def createSpan(): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(callback: BodyResponseCallback[SchemaSpan]): Unit = js.native
-  def createSpan(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSpan] = js.native
+  def createSpan(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(params: ParamsResourceProjectsTracesSpansCreatespan): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(params: ParamsResourceProjectsTracesSpansCreatespan, callback: BodyResponseCallback[SchemaSpan]): Unit = js.native
   def createSpan(

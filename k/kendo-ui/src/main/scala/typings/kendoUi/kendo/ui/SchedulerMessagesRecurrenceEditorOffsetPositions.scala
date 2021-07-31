@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesRecurrenceEditorOffsetPositions extends StObject {
   
-  var first: js.UndefOr[String] = js.native
+  var first: js.UndefOr[String] = js.undefined
   
-  var fourth: js.UndefOr[String] = js.native
+  var fourth: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var second: js.UndefOr[String] = js.native
+  var second: js.UndefOr[String] = js.undefined
   
-  var third: js.UndefOr[String] = js.native
+  var third: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesRecurrenceEditorOffsetPositions {
   

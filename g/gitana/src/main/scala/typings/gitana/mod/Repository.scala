@@ -2,7 +2,6 @@ package typings.gitana.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Repository")
@@ -70,14 +69,9 @@ class Repository protected () extends AbstractRepositoryObject {
   def readRelease(releaseId: String): Release = js.native
   
   def startChanges(sourceBranchId: String, targetBranchId: String): js.Any = js.native
-  def startChanges(
-    sourceBranchId: String,
-    targetBranchId: String,
-    optionsOrCallback: js.UndefOr[scala.Nothing],
-    callback: js.Any
-  ): js.Any = js.native
   def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any): js.Any = js.native
   def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
+  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: Unit, callback: js.Any): js.Any = js.native
   
   def startCopyFrom(sourceBranchId: String, targetBranchId: String, config: js.Any, callback: js.Any): js.Any = js.native
   
@@ -91,28 +85,27 @@ class Repository protected () extends AbstractRepositoryObject {
 }
 object Repository {
   
-  /* static member */
-  @JSImport("gitana", "Repository.extend")
+  @JSImport("gitana", "Repository")
   @js.native
-  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("gitana", "Repository.forEach")
-  @js.native
-  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
+  @scala.inline
+  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Repository.implement")
-  @js.native
-  def implement(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("gitana", "Repository.toString")
-  @js.native
-  def toString_(): js.Any = js.native
+  @scala.inline
+  def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Repository.valueOf")
-  @js.native
-  def valueOf_(`type`: js.Any): js.Any = js.native
+  @scala.inline
+  def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  
+  /* static member */
+  @scala.inline
+  def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

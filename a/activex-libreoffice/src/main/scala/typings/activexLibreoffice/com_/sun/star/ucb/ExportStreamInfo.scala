@@ -3,18 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** information needed to export an object in mbx format (supplying an output stream to export into). */
-@js.native
 trait ExportStreamInfo extends StObject {
   
   /** tries hard to make message (document) bodies available for export. */
-  var ForceBodies: Boolean = js.native
+  var ForceBodies: Boolean
   
   /** the output stream to export into. */
-  var Target: XOutputStream = js.native
+  var Target: XOutputStream
 }
 object ExportStreamInfo {
   

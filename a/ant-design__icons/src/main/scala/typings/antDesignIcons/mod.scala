@@ -1,6 +1,5 @@
 package typings.antDesignIcons
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIcons.anon.PickAntdIconPropstwoToneC
 import typings.antDesignIcons.anon.PickIconComponentPropsari
 import typings.antDesignIcons.iconFontMod.CustomIconOptions
@@ -10,10 +9,13 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("@ant-design/icons/dist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/icons/dist", JSImport.Default)
   @js.native
@@ -3171,23 +3173,14 @@ object mod extends Shortcut {
   @js.native
   val ZoomOutOutlined: ForwardRefExoticComponent[PickAntdIconPropstwoToneC] = js.native
   
-  @JSImport("@ant-design/icons/dist", "createFromIconfontCN")
-  @js.native
-  def createFromIconfontCN(): SFC[IconFontProps] = js.native
-  @JSImport("@ant-design/icons/dist", "createFromIconfontCN")
-  @js.native
-  def createFromIconfontCN(options: CustomIconOptions): SFC[IconFontProps] = js.native
+  @scala.inline
+  def createFromIconfontCN(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")().asInstanceOf[SFC[IconFontProps]]
+  @scala.inline
+  def createFromIconfontCN(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
   
-  @JSImport("@ant-design/icons/dist", "getTwoToneColor")
-  @js.native
-  def getTwoToneColor(): TwoToneColor = js.native
+  @scala.inline
+  def getTwoToneColor(): TwoToneColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColor")().asInstanceOf[TwoToneColor]
   
-  @JSImport("@ant-design/icons/dist", "setTwoToneColor")
-  @js.native
-  def setTwoToneColor(twoToneColor: TwoToneColor): Unit = js.native
-  
-  type _To = ForwardRefExoticComponent[PickIconComponentPropsari]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ForwardRefExoticComponent[PickIconComponentPropsari] = default
+  @scala.inline
+  def setTwoToneColor(twoToneColor: TwoToneColor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColor")(twoToneColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

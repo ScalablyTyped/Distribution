@@ -2,19 +2,17 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowBreak extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var man: Double = js.native
+  var man: Double
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
 }
 object RowBreak {
   

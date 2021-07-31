@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Workspace settings related to the Watson Assistant tool. */
-@js.native
 trait WorkspaceSystemSettingsTooling extends StObject {
   
   /** Whether the dialog JSON editor displays text responses within the `output.generic` object. */
-  var store_generic_responses: js.UndefOr[Boolean] = js.native
+  var store_generic_responses: js.UndefOr[Boolean] = js.undefined
 }
 object WorkspaceSystemSettingsTooling {
   

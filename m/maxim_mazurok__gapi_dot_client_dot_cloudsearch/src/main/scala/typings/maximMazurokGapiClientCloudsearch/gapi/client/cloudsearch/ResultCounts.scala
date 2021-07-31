@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultCounts extends StObject {
   
   /** Result count information for each source with results. */
-  var sourceResultCounts: js.UndefOr[js.Array[SourceResultCount]] = js.native
+  var sourceResultCounts: js.UndefOr[js.Array[SourceResultCount]] = js.undefined
 }
 object ResultCounts {
   

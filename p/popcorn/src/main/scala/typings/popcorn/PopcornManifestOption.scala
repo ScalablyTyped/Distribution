@@ -2,17 +2,15 @@ package typings.popcorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopcornManifestOption extends StObject {
   
-  var elem: String = js.native
+  var elem: String
   
-  var label: String = js.native
+  var label: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object PopcornManifestOption {
   

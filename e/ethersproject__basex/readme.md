@@ -10,9 +10,9 @@ Base-X without Buffer.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/basex |
 | Keywords           | Ethereum, ethers |
-| # releases         | 23 |
-| # dependents       | 7 |
-| # downloads        | 542779 |
+| # releases         | 26 |
+| # dependents       | 10 |
+| # downloads        | 1160625 |
 | # stars            | 0 |
 
 ## Links

@@ -13,10 +13,13 @@ import typings.std.RegExp
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("common-tags", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("common-tags", "TemplateTag")
@@ -25,9 +28,11 @@ object mod {
     * New Tag Constructor
     * @deprecated
     */
-  class TemplateTagCls () extends TemplateTag {
-    def this(transformers: (PluginFunction | TemplateTransformer[_])*) = this()
-    def this(transformers: js.Array[TemplateTransformer[_]]) = this()
+  class TemplateTagCls ()
+    extends StObject
+       with TemplateTag {
+    def this(transformers: (PluginFunction | TemplateTransformer[js.Any])*) = this()
+    def this(transformers: js.Array[TemplateTransformer[js.Any]]) = this()
   }
   
   @JSImport("common-tags", "codeBlock")
@@ -46,15 +51,12 @@ object mod {
   @js.native
   val commaListsOr: TemplateTag = js.native
   
-  @JSImport("common-tags", "createTag")
-  @js.native
-  def createTag(): TemplateTag = js.native
-  @JSImport("common-tags", "createTag")
-  @js.native
-  def createTag(transformers: (PluginFunction | TemplateTransformer[_])*): TemplateTag = js.native
-  @JSImport("common-tags", "createTag")
-  @js.native
-  def createTag(transformers: js.Array[TemplateTransformer[_]]): TemplateTag = js.native
+  @scala.inline
+  def createTag(): TemplateTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createTag")().asInstanceOf[TemplateTag]
+  @scala.inline
+  def createTag(transformers: (PluginFunction | TemplateTransformer[js.Any])*): TemplateTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createTag")(transformers.asInstanceOf[js.Any]).asInstanceOf[TemplateTag]
+  @scala.inline
+  def createTag(transformers: js.Array[TemplateTransformer[js.Any]]): TemplateTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createTag")(transformers.asInstanceOf[js.Any]).asInstanceOf[TemplateTag]
   
   @JSImport("common-tags", "html")
   @js.native
@@ -64,12 +66,10 @@ object mod {
   @js.native
   val id: TemplateTag = js.native
   
-  @JSImport("common-tags", "inlineArrayTransformer")
-  @js.native
-  def inlineArrayTransformer(): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "inlineArrayTransformer")
-  @js.native
-  def inlineArrayTransformer(opts: Conjunction): TemplateTransformer[StringDictionary[_]] = js.native
+  @scala.inline
+  def inlineArrayTransformer(): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inlineArrayTransformer")().asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
+  def inlineArrayTransformer(opts: Conjunction): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inlineArrayTransformer")(opts.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
   @JSImport("common-tags", "inlineLists")
   @js.native
@@ -99,62 +99,50 @@ object mod {
   @js.native
   val oneLineTrim: TemplateTag = js.native
   
-  @JSImport("common-tags", "replaceResultTransformer")
-  @js.native
-  def replaceResultTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceResultTransformer")
-  @js.native
+  @scala.inline
+  def replaceResultTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceResultTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceResultTransformer(
     replaceWhat: String,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceResultTransformer")
-  @js.native
-  def replaceResultTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceResultTransformer")
-  @js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceResultTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
+  def replaceResultTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceResultTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceResultTransformer(
     replaceWhat: RegExp,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceResultTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
-  @JSImport("common-tags", "replaceStringTransformer")
-  @js.native
-  def replaceStringTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceStringTransformer")
-  @js.native
+  @scala.inline
+  def replaceStringTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStringTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceStringTransformer(
     replaceWhat: String,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceStringTransformer")
-  @js.native
-  def replaceStringTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceStringTransformer")
-  @js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStringTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
+  def replaceStringTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStringTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceStringTransformer(
     replaceWhat: RegExp,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStringTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
-  @JSImport("common-tags", "replaceSubstitutionTransformer")
-  @js.native
-  def replaceSubstitutionTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceSubstitutionTransformer")
-  @js.native
+  @scala.inline
+  def replaceSubstitutionTransformer(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceSubstitutionTransformer(
     replaceWhat: String,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceSubstitutionTransformer")
-  @js.native
-  def replaceSubstitutionTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "replaceSubstitutionTransformer")
-  @js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
+  def replaceSubstitutionTransformer(replaceWhat: RegExp, replaceWith: String): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
   def replaceSubstitutionTransformer(
     replaceWhat: RegExp,
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
-  ): TemplateTransformer[StringDictionary[_]] = js.native
+  ): TemplateTransformer[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionTransformer")(replaceWhat.asInstanceOf[js.Any], replaceWith.asInstanceOf[js.Any])).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
   @JSImport("common-tags", "safeHtml")
   @js.native
@@ -164,48 +152,48 @@ object mod {
   @js.native
   val source: TemplateTag = js.native
   
-  @JSImport("common-tags", "splitStringTransformer")
-  @js.native
-  def splitStringTransformer(splitBy: String): TemplateTransformer[StringDictionary[_]] = js.native
+  @scala.inline
+  def splitStringTransformer(splitBy: String): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitStringTransformer")(splitBy.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
   @JSImport("common-tags", "stripIndent")
   @js.native
   val stripIndent: TemplateTag = js.native
   
-  @JSImport("common-tags", "stripIndentTransformer")
-  @js.native
-  def stripIndentTransformer(): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "stripIndentTransformer")
-  @js.native
-  def stripIndentTransformer_all(`type`: all): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "stripIndentTransformer")
-  @js.native
-  def stripIndentTransformer_initial(`type`: initial): TemplateTransformer[StringDictionary[_]] = js.native
+  @scala.inline
+  def stripIndentTransformer(): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripIndentTransformer")().asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @scala.inline
+  def stripIndentTransformer_all(`type`: all): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripIndentTransformer")(`type`.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @scala.inline
+  def stripIndentTransformer_initial(`type`: initial): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripIndentTransformer")(`type`.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
   @JSImport("common-tags", "stripIndents")
   @js.native
   val stripIndents: TemplateTag = js.native
   
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer(): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer(side: _empty): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer_end(side: end): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer_left(side: left): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer_right(side: right): TemplateTransformer[StringDictionary[_]] = js.native
-  @JSImport("common-tags", "trimResultTransformer")
-  @js.native
-  def trimResultTransformer_start(side: start): TemplateTransformer[StringDictionary[_]] = js.native
+  @scala.inline
+  def trimResultTransformer(): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")().asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  @scala.inline
+  def trimResultTransformer(side: _empty): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")(side.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
   
-  type JSTag = js.Function2[/* literals */ TemplateStringsArray, /* repeated */ js.Any, String]
+  @scala.inline
+  def trimResultTransformer_end(side: end): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")(side.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @scala.inline
+  def trimResultTransformer_left(side: left): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")(side.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @scala.inline
+  def trimResultTransformer_right(side: right): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")(side.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @scala.inline
+  def trimResultTransformer_start(side: start): TemplateTransformer[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimResultTransformer")(side.asInstanceOf[js.Any]).asInstanceOf[TemplateTransformer[StringDictionary[js.Any]]]
+  
+  @js.native
+  trait JSTag extends StObject {
+    
+    def apply(literals: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  }
   
   type PluginFunction = js.Function2[/* oldValue */ String, /* newValue */ String, TemplateTransformer[js.Any]]
   
@@ -217,7 +205,6 @@ object mod {
     def apply(tag: JSTag): TemplateTag = js.native
   }
   
-  @js.native
   trait TemplateTransformer[TCtx] extends StObject {
     
     /**
@@ -225,20 +212,20 @@ object mod {
       * The result of this hook will be passed to other hooks as `context`.
       * If omitted, `context` will be an empty object.
       */
-    var getInitialContext: js.UndefOr[js.Function0[TCtx]] = js.native
+    var getInitialContext: js.UndefOr[js.Function0[TCtx]] = js.undefined
     
     /**
       * Called when all substitutions have been parsed
       * `endResult` is the final value.
       */
-    var onEndResult: js.UndefOr[js.Function2[/* endResult */ String, /* context */ TCtx, String]] = js.native
+    var onEndResult: js.UndefOr[js.Function2[/* endResult */ String, /* context */ TCtx, String]] = js.undefined
     
     /**
       * Called when the tag encounters a string.
       * (a string is whatever's not inside "${}" in your template literal)
       * `str` is the value of the current string
       */
-    var onString: js.UndefOr[js.Function2[/* str */ String, /* context */ TCtx, String]] = js.native
+    var onString: js.UndefOr[js.Function2[/* str */ String, /* context */ TCtx, String]] = js.undefined
     
     /**
       * Called when the tag encounters a substitution.
@@ -248,7 +235,7 @@ object mod {
       */
     var onSubstitution: js.UndefOr[
         js.Function3[/* substitution */ String, /* resultSoFar */ String, /* context */ TCtx, String]
-      ] = js.native
+      ] = js.undefined
   }
   object TemplateTransformer {
     
@@ -259,7 +246,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TemplateTransformerMutableBuilder[Self <: TemplateTransformer[_], TCtx] (val x: Self with TemplateTransformer[TCtx]) extends AnyVal {
+    implicit class TemplateTransformerMutableBuilder[Self <: TemplateTransformer[?], TCtx] (val x: Self & TemplateTransformer[TCtx]) extends AnyVal {
       
       @scala.inline
       def setGetInitialContext(value: () => TCtx): Self = StObject.set(x, "getInitialContext", js.Any.fromFunction0(value))

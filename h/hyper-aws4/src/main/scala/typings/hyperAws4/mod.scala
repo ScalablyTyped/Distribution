@@ -3,24 +3,24 @@ package typings.hyperAws4
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hyper-aws4", "sign")
+  @JSImport("hyper-aws4", JSImport.Namespace)
   @js.native
-  def sign(request: Request): Header = js.native
-  @JSImport("hyper-aws4", "sign")
-  @js.native
-  def sign(request: Request, credential: Credentials): Header = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sign(request: Request): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(request.asInstanceOf[js.Any]).asInstanceOf[Header]
+  @scala.inline
+  def sign(request: Request, credential: Credentials): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(request.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[Header]
+  
   trait Credentials extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var secretKey: String = js.native
+    var secretKey: String
   }
   object Credentials {
     
@@ -69,18 +69,17 @@ object mod {
     def PUT: typings.hyperAws4.hyperAws4Strings.PUT = "PUT".asInstanceOf[typings.hyperAws4.hyperAws4Strings.PUT]
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var credential: js.UndefOr[Credentials] = js.native
+    var credential: js.UndefOr[Credentials] = js.undefined
     
-    var headers: js.UndefOr[Header] = js.native
+    var headers: js.UndefOr[Header] = js.undefined
     
-    var method: js.UndefOr[HttpMethods] = js.native
+    var method: js.UndefOr[HttpMethods] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Request {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGroupInput extends StObject {
   
   /**
     * A configuration associates the resource group with an AWS service and specifies how the service can interact with the resources in the group. A configuration is an array of GroupConfigurationItem elements.  You can specify either a Configuration or a ResourceQuery in a group, but not both. 
     */
-  var Configuration: js.UndefOr[GroupConfigurationList] = js.native
+  var Configuration: js.UndefOr[GroupConfigurationList] = js.undefined
   
   /**
     * The description of the resource group. Descriptions can consist of letters, numbers, hyphens, underscores, periods, and spaces.
     */
-  var Description: js.UndefOr[typings.awsSdk.resourcegroupsMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.resourcegroupsMod.Description] = js.undefined
   
   /**
     * The name of the group, which is the identifier of the group in other operations. You can't change the name of a resource group after you create it. A resource group name can consist of letters, numbers, hyphens, periods, and underscores. The name cannot start with AWS or aws; these are reserved. A resource group name must be unique within each AWS Region in your AWS account.
     */
-  var Name: GroupName = js.native
+  var Name: GroupName
   
   /**
     * The resource query that determines which AWS resources are members of this group.  You can specify either a ResourceQuery or a Configuration, but not both. 
     */
-  var ResourceQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceQuery] = js.native
+  var ResourceQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceQuery] = js.undefined
   
   /**
     * The tags to add to the group. A tag is key-value pair string.
     */
-  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.undefined
 }
 object CreateGroupInput {
   

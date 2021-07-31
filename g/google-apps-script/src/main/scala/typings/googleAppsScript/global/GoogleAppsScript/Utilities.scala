@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Utilities {
@@ -15,11 +14,11 @@ object Utilities {
   object Charset extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.Charset with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.Charset & Double] = js.native
     
-    /* 0 */ val US_ASCII: typings.googleAppsScript.GoogleAppsScript.Utilities.Charset.US_ASCII with Double = js.native
+    /* 0 */ val US_ASCII: typings.googleAppsScript.GoogleAppsScript.Utilities.Charset.US_ASCII & Double = js.native
     
-    /* 1 */ val UTF_8: typings.googleAppsScript.GoogleAppsScript.Utilities.Charset.UTF_8 with Double = js.native
+    /* 1 */ val UTF_8: typings.googleAppsScript.GoogleAppsScript.Utilities.Charset.UTF_8 & Double = js.native
   }
   
   /**
@@ -30,19 +29,19 @@ object Utilities {
   object DigestAlgorithm extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm & Double] = js.native
     
-    /* 0 */ val MD2: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2 with Double = js.native
+    /* 0 */ val MD2: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2 & Double = js.native
     
-    /* 1 */ val MD5: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5 with Double = js.native
+    /* 1 */ val MD5: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5 & Double = js.native
     
-    /* 2 */ val SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_1 with Double = js.native
+    /* 2 */ val SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_1 & Double = js.native
     
-    /* 3 */ val SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_256 with Double = js.native
+    /* 3 */ val SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_256 & Double = js.native
     
-    /* 4 */ val SHA_384: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384 with Double = js.native
+    /* 4 */ val SHA_384: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384 & Double = js.native
     
-    /* 5 */ val SHA_512: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512 with Double = js.native
+    /* 5 */ val SHA_512: typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512 & Double = js.native
   }
   
   /**
@@ -53,17 +52,17 @@ object Utilities {
   object MacAlgorithm extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm & Double] = js.native
     
-    /* 0 */ val HMAC_MD5: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5 with Double = js.native
+    /* 0 */ val HMAC_MD5: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5 & Double = js.native
     
-    /* 1 */ val HMAC_SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1 with Double = js.native
+    /* 1 */ val HMAC_SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1 & Double = js.native
     
-    /* 2 */ val HMAC_SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_256 with Double = js.native
+    /* 2 */ val HMAC_SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_256 & Double = js.native
     
-    /* 3 */ val HMAC_SHA_384: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384 with Double = js.native
+    /* 3 */ val HMAC_SHA_384: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384 & Double = js.native
     
-    /* 4 */ val HMAC_SHA_512: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512 with Double = js.native
+    /* 4 */ val HMAC_SHA_512: typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512 & Double = js.native
   }
   
   /**
@@ -74,10 +73,10 @@ object Utilities {
   object RsaAlgorithm extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm & Double] = js.native
     
-    /* 0 */ val RSA_SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_1 with Double = js.native
+    /* 0 */ val RSA_SHA_1: typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_1 & Double = js.native
     
-    /* 1 */ val RSA_SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_256 with Double = js.native
+    /* 1 */ val RSA_SHA_256: typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_256 & Double = js.native
   }
 }

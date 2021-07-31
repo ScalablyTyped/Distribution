@@ -12,7 +12,7 @@ Alter the query string parameters of url.
 | Keywords           | url, query, queryString |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 7456 |
+| # downloads        | 10875 |
 | # stars            | 0 |
 
 ## Links

@@ -4,44 +4,42 @@ import typings.electron.electronStrings.desktop
 import typings.electron.electronStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters extends StObject {
   
   /**
     * Set the device scale factor (if zero defaults to original device scale factor)
     * (default: `0`).
     */
-  var deviceScaleFactor: Double = js.native
+  var deviceScaleFactor: Double
   
   /**
     * Scale of emulated view inside available space (not in fit to view mode)
     * (default: `1`).
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * Specify the screen type to emulate (default: `desktop`):
     */
-  var screenPosition: desktop | mobile = js.native
+  var screenPosition: desktop | mobile
   
   /**
     * Set the emulated screen size (screenPosition == mobile).
     */
-  var screenSize: Size = js.native
+  var screenSize: Size
   
   /**
     * Position the view on the screen (screenPosition == mobile) (default: `{ x: 0, y:
     * 0 }`).
     */
-  var viewPosition: Point = js.native
+  var viewPosition: Point
   
   /**
     * Set the emulated view size (empty means no override)
     */
-  var viewSize: Size = js.native
+  var viewSize: Size
 }
 object Parameters {
   

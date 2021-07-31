@@ -4,31 +4,32 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/picker/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/picker/style", JSImport.Namespace)
   @js.native
-  def default(): PickerStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): PickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PickerStyle]
+  
   trait PickerStyle extends StObject {
     
-    var actionText: TextStyle = js.native
+    var actionText: TextStyle
     
-    var dismissText: TextStyle = js.native
+    var dismissText: TextStyle
     
-    var header: ViewStyle = js.native
+    var header: ViewStyle
     
-    var headerItem: ViewStyle = js.native
+    var headerItem: ViewStyle
     
-    var modal: ViewStyle = js.native
+    var modal: ViewStyle
     
-    var okText: TextStyle = js.native
+    var okText: TextStyle
     
-    var title: TextStyle = js.native
+    var title: TextStyle
   }
   object PickerStyle {
     

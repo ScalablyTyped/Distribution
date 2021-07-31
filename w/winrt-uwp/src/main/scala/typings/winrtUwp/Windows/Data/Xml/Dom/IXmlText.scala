@@ -2,19 +2,19 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the text content of an element or attribute. */
-@js.native
-trait IXmlText extends IXmlCharacterData {
+trait IXmlText
+  extends StObject
+     with IXmlCharacterData {
   
   /**
     * Splits this text node into two text nodes at the specified offset and inserts the new text node into the tree as a sibling that immediately follows this node.
     * @param offset The number of characters at which to split this text node into two nodes, starting from zero.
     * @return The new text node.
     */
-  def splitText(offset: Double): IXmlText = js.native
+  def splitText(offset: Double): IXmlText
 }
 object IXmlText {
   

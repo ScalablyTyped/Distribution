@@ -4,24 +4,22 @@ import typings.awsLambda.cloudfrontMod.CloudFrontHeaders
 import typings.awsLambda.cloudfrontMod.CloudFrontOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest, std.Exclude<keyof aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest, 'body'>> */
-@js.native
 trait PickCloudFrontRequestExcl extends StObject {
   
-  var clientIp: String = js.native
+  var clientIp: String
   
-  var headers: CloudFrontHeaders = js.native
+  var headers: CloudFrontHeaders
   
-  var method: String = js.native
+  var method: String
   
-  var origin: js.UndefOr[CloudFrontOrigin] = js.native
+  var origin: js.UndefOr[CloudFrontOrigin] = js.undefined
   
-  var querystring: String = js.native
+  var querystring: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object PickCloudFrontRequestExcl {
   

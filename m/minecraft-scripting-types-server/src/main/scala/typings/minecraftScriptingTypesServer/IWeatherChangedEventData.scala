@@ -3,29 +3,27 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.Dimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever the weather changes. It contains information about the weather it is changing to.
   */
-@js.native
 trait IWeatherChangedEventData extends StObject {
   
   /**
     * The name of the dimension where the weather change happened
     */
-  var dimension: Dimension = js.native
+  var dimension: Dimension
   
   /**
     * Tells if the new weather has lightning
     */
-  var lightning: Boolean = js.native
+  var lightning: Boolean
   
   /**
     * Tells if the new weather has rain
     */
-  var raining: Boolean = js.native
+  var raining: Boolean
 }
 object IWeatherChangedEventData {
   

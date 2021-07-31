@@ -3,16 +3,15 @@ package typings.consolidate
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DictotherOptions
-    extends /* otherOptions */ StringDictionary[js.Any] {
+    extends StObject
+       with /* otherOptions */ StringDictionary[js.Any] {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
   }
   object DictotherOptions {
     

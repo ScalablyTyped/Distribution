@@ -3,24 +3,22 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
-  var default: js.UndefOr[Permissions] = js.native
+  var default: js.UndefOr[Permissions] = js.undefined
   
-  var `type`: credentials = js.native
+  var `type`: credentials
   
-  var users: js.Array[Password] = js.native
+  var users: js.Array[Password]
 }
 object Default {
   
   @scala.inline
-  def apply(`type`: credentials, users: js.Array[Password]): Default = {
+  def apply(users: js.Array[Password]): Default = {
     val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("credentials")
     __obj.asInstanceOf[Default]
   }
   

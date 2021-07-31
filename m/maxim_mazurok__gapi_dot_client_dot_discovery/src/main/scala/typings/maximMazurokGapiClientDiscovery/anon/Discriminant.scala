@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDiscovery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Discriminant extends StObject {
   
   /** The name of the type discriminant property. */
-  var discriminant: js.UndefOr[String] = js.native
+  var discriminant: js.UndefOr[String] = js.undefined
   
   /** The map of discriminant value to schema to use for parsing.. */
-  var map: js.UndefOr[js.Array[Ref]] = js.native
+  var map: js.UndefOr[js.Array[Ref]] = js.undefined
 }
 object Discriminant {
   

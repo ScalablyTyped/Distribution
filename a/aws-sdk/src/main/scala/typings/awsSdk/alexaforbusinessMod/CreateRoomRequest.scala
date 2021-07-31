@@ -2,41 +2,39 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoomRequest extends StObject {
   
   /**
     * A unique, user-specified identifier for this request that ensures idempotency. 
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The description for the room.
     */
-  var Description: js.UndefOr[RoomDescription] = js.native
+  var Description: js.UndefOr[RoomDescription] = js.undefined
   
   /**
     * The profile ARN for the room. This is required.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.native
+  var ProfileArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The calendar ARN for the room.
     */
-  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.native
+  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.undefined
   
   /**
     * The name for the room.
     */
-  var RoomName: typings.awsSdk.alexaforbusinessMod.RoomName = js.native
+  var RoomName: typings.awsSdk.alexaforbusinessMod.RoomName
   
   /**
     * The tags for the room.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateRoomRequest {
   

@@ -2,7 +2,6 @@ package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,36 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * access policy is globally visible within an organization, and the
   * restrictions it specifies apply to all projects within an organization.
   */
-@js.native
 trait SchemaAccessPolicy extends StObject {
   
   /**
     * Output only. Time the `AccessPolicy` was created in UTC.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Resource name of the `AccessPolicy`. Format:
     * `accessPolicies/{policy_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The parent of this `AccessPolicy` in the Cloud Resource
     * Hierarchy. Currently immutable once created. Format:
     * `organizations/{organization_id}`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Human readable title. Does not affect behavior.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time the `AccessPolicy` was updated in UTC.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaAccessPolicy {
   

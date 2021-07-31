@@ -3,17 +3,15 @@ package typings.reactNativeMaterialUi.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RippleFeedbackProps extends StObject {
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var children: Element = js.native
+  var children: Element
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
 }
 object RippleFeedbackProps {
   

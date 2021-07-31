@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates a deprecation as Deprecate or Remove. */
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeprecationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType & Double] = js.native
   
-  /* 0 */ val deprecate: typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType.deprecate with Double = js.native
+  /* 0 */ val deprecate: typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType.deprecate & Double = js.native
   
-  /* 1 */ val remove: typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType.remove with Double = js.native
+  /* 1 */ val remove: typings.winrtUwp.Windows.Foundation.Metadata.DeprecationType.remove & Double = js.native
 }

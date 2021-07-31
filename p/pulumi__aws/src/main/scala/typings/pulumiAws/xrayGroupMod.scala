@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xrayGroupMod {
@@ -49,6 +48,10 @@ object xrayGroupMod {
   /* static members */
   object Group {
     
+    @JSImport("@pulumi/aws/xray/group", "Group")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Group resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,45 +61,39 @@ object xrayGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/xray/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Group = js.native
-    @JSImport("@pulumi/aws/xray/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Group = js.native
-    @JSImport("@pulumi/aws/xray/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState): Group = js.native
-    @JSImport("@pulumi/aws/xray/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/xray/group", "Group.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean]
   }
   
-  @js.native
   trait GroupArgs extends StObject {
     
     /**
       * The filter expression defining criteria by which to group traces. more info can be found in official [docs](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-filters.html).
       */
-    val filterExpression: Input[String] = js.native
+    val filterExpression: Input[String]
     
     /**
       * The name of the group.
       */
-    val groupName: Input[String] = js.native
+    val groupName: Input[String]
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object GroupArgs {
     
@@ -123,28 +120,27 @@ object xrayGroupMod {
     }
   }
   
-  @js.native
   trait GroupState extends StObject {
     
     /**
       * The ARN of the Group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The filter expression defining criteria by which to group traces. more info can be found in official [docs](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-filters.html).
       */
-    val filterExpression: js.UndefOr[Input[String]] = js.native
+    val filterExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the group.
       */
-    val groupName: js.UndefOr[Input[String]] = js.native
+    val groupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object GroupState {
     

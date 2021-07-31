@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatch
   * @see XStatusListener
   */
-@js.native
-trait XNotifyingDispatch extends XDispatch {
+trait XNotifyingDispatch
+  extends StObject
+     with XDispatch {
   
   /**
     * Do the same like {@link XDispatch.dispatch()} but notifies listener in every case. Should be used if result must be known.
@@ -23,7 +23,7 @@ trait XNotifyingDispatch extends XDispatch {
     * @param Arguments optional arguments for this request (see {@link com.sun.star.document.MediaDescriptor} )
     * @param Listener optional listener for guaranteed notifications of this request
     */
-  def dispatchWithNotification(URL: URL, Arguments: SeqEquiv[PropertyValue], Listener: XDispatchResultListener): Unit = js.native
+  def dispatchWithNotification(URL: URL, Arguments: SeqEquiv[PropertyValue], Listener: XDispatchResultListener): Unit
 }
 object XNotifyingDispatch {
   

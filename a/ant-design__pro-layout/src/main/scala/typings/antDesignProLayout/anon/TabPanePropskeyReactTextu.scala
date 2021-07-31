@@ -5,42 +5,40 @@ import typings.react.mod.ReactNode
 import typings.react.mod.ReactText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/tabs.TabPaneProps & {  key :react.react.ReactText | undefined} */
-@js.native
 trait TabPanePropskeyReactTextu extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var closeIcon: js.UndefOr[ReactNode] = js.native
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var destroyInactiveTabPane: js.UndefOr[Boolean] = js.native
+  var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var forceRender: js.UndefOr[Boolean] = js.native
+  var forceRender: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[ReactText] = js.native
+  var key: js.UndefOr[ReactText] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tab: js.UndefOr[ReactNode] = js.native
+  var tab: js.UndefOr[ReactNode] = js.undefined
   
-  var tabKey: js.UndefOr[String] = js.native
+  var tabKey: js.UndefOr[String] = js.undefined
 }
 object TabPanePropskeyReactTextu {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Layers")
@@ -35,7 +34,7 @@ class ResourceLayers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaLayersummary] = js.native
   def get(callback: BodyResponseCallback[SchemaLayersummary]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLayersummary] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLayersummary] = js.native
   def get(params: ParamsResourceLayersGet): GaxiosPromise[SchemaLayersummary] = js.native
   def get(params: ParamsResourceLayersGet, callback: BodyResponseCallback[SchemaLayersummary]): Unit = js.native
   def get(
@@ -68,7 +67,7 @@ class ResourceLayers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaLayersummaries] = js.native
   def list(callback: BodyResponseCallback[SchemaLayersummaries]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLayersummaries] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLayersummaries] = js.native
   def list(params: ParamsResourceLayersList): GaxiosPromise[SchemaLayersummaries] = js.native
   def list(params: ParamsResourceLayersList, callback: BodyResponseCallback[SchemaLayersummaries]): Unit = js.native
   def list(

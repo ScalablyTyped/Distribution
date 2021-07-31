@@ -2,7 +2,6 @@ package typings.barbellweights
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,22 +18,24 @@ object mod {
     
     object BarbellWeight {
       
-      @JSImport("barbellweights", "BarbellWeight.BarbellWeight.getResults")
+      @JSImport("barbellweights", "BarbellWeight.BarbellWeight")
       @js.native
-      def getResults(): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def getResults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getResults")().asInstanceOf[Unit]
     }
   }
   
-  @js.native
   trait options extends StObject {
     
-    var bar: js.UndefOr[Double] = js.native
+    var bar: js.UndefOr[Double] = js.undefined
     
-    var plates: js.UndefOr[js.Array[Double]] = js.native
+    var plates: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var program: js.UndefOr[String] = js.native
+    var program: js.UndefOr[String] = js.undefined
     
-    var warmup_round_to: js.UndefOr[Double] = js.native
+    var warmup_round_to: js.UndefOr[Double] = js.undefined
   }
   object options {
     

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
@@ -22,62 +21,61 @@ object dialogMod {
     def this(props: DialogProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DialogProps extends StObject {
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var ariaCloseIconLabel: js.UndefOr[String] = js.native
+    var ariaCloseIconLabel: js.UndefOr[String] = js.undefined
     
-    var baseZIndex: js.UndefOr[Double] = js.native
+    var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var blockScroll: js.UndefOr[Boolean] = js.native
+    var blockScroll: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnEscape: js.UndefOr[Boolean] = js.native
+    var closeOnEscape: js.UndefOr[Boolean] = js.undefined
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.native
+    var contentStyle: js.UndefOr[js.Object] = js.undefined
     
-    var dismissableMask: js.UndefOr[Boolean] = js.native
+    var dismissableMask: js.UndefOr[Boolean] = js.undefined
     
-    var focusOnShow: js.UndefOr[Boolean] = js.native
+    var focusOnShow: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var icons: js.UndefOr[js.Function1[/* props */ js.Object, _]] = js.native
+    var icons: js.UndefOr[js.Function1[/* props */ js.Object, js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var maskClassName: js.UndefOr[String] = js.native
+    var maskClassName: js.UndefOr[String] = js.undefined
     
-    var maximizable: js.UndefOr[Boolean] = js.native
+    var maximizable: js.UndefOr[Boolean] = js.undefined
     
-    var maximized: js.UndefOr[Boolean] = js.native
+    var maximized: js.UndefOr[Boolean] = js.undefined
     
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
-    def onHide(): Unit = js.native
+    def onHide(): Unit
     
-    var onMaximize: js.UndefOr[js.Function1[/* e */ Maximized, Unit]] = js.native
+    var onMaximize: js.UndefOr[js.Function1[/* e */ Maximized, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DialogProps {
     
@@ -169,7 +167,7 @@ object dialogMod {
       def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
       @scala.inline
-      def setIcons(value: /* props */ js.Object => _): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
+      def setIcons(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)

@@ -4,48 +4,48 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to perform cursor movements between pages. */
-@js.native
-trait XPageCursor extends XInterface {
+trait XPageCursor
+  extends StObject
+     with XInterface {
   
   /** @returns the number of the page within the document of this cursor. */
-  val Page: Double = js.native
+  val Page: Double
   
   /** @returns the number of the page within the document of this cursor. */
-  def getPage(): Double = js.native
+  def getPage(): Double
   
   /**
     * moves the cursor to the end of the current page.
     * @see XPageCursor.jumpToEndOfPreviousPage
     */
-  def jumpToEndOfPage(): Boolean = js.native
+  def jumpToEndOfPage(): Boolean
   
   /** moves the cursor to the first page. */
-  def jumpToFirstPage(): Boolean = js.native
+  def jumpToFirstPage(): Boolean
   
   /** moves the cursor to the last page. */
-  def jumpToLastPage(): Boolean = js.native
+  def jumpToLastPage(): Boolean
   
   /**
     * moves the cursor to the next page.
     * @see XPageCursor.jumpToPreviousPage
     */
-  def jumpToNextPage(): Boolean = js.native
+  def jumpToNextPage(): Boolean
   
   /** moves the cursor to the specified page. */
-  def jumpToPage(nPage: Double): Boolean = js.native
+  def jumpToPage(nPage: Double): Boolean
   
   /**
     * moves the cursor to the previous page.
     * @see XPageCursor.jumpToNextPage
     */
-  def jumpToPreviousPage(): Boolean = js.native
+  def jumpToPreviousPage(): Boolean
   
   /** moves the cursor to the start of the current page. */
-  def jumpToStartOfPage(): Boolean = js.native
+  def jumpToStartOfPage(): Boolean
 }
 object XPageCursor {
   

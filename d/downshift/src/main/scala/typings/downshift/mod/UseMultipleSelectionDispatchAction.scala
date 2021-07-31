@@ -2,21 +2,19 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionDispatchAction[Item] extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var selectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var selectedItems: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var `type`: UseMultipleSelectionStateChangeTypes = js.native
+  var `type`: UseMultipleSelectionStateChangeTypes
 }
 object UseMultipleSelectionDispatchAction {
   
@@ -28,7 +26,7 @@ object UseMultipleSelectionDispatchAction {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionDispatchActionMutableBuilder[Self <: UseMultipleSelectionDispatchAction[_], Item] (val x: Self with UseMultipleSelectionDispatchAction[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionDispatchActionMutableBuilder[Self <: UseMultipleSelectionDispatchAction[?], Item] (val x: Self & UseMultipleSelectionDispatchAction[Item]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

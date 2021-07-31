@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApnsConfig extends StObject {
   
   /** Options for features provided by the FCM SDK for iOS. */
-  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.undefined
   
   /**
     * HTTP request headers defined in Apple Push Notification Service. Refer to [APNs request
@@ -20,8 +18,8 @@ trait ApnsConfig extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * APNs payload as a JSON object, including both `aps` dictionary and custom payload. See [Payload Key
@@ -31,8 +29,8 @@ trait ApnsConfig extends StObject {
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ApnsConfig {
   
@@ -55,7 +53,7 @@ object ApnsConfig {
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -65,7 +63,7 @@ object ApnsConfig {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline

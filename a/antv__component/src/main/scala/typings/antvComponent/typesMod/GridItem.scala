@@ -4,24 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridItem
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * 唯一值，用于动画或者查找
     * @type {string}
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 栅格线的点集合
     * @type {Point[]}
     */
-  var points: js.Array[Point] = js.native
+  var points: js.Array[Point]
 }
 object GridItem {
   

@@ -2,17 +2,15 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allowed values for priority in ResultsCachePolicy Used for querying both
   * cache and execution valid priority ranges.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilities extends StObject {
   
-  var priorities: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]] = js.native
+  var priorities: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2PriorityCapabilities {
   

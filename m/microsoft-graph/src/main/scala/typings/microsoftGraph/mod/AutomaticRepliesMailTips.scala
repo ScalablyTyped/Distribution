@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticRepliesMailTips extends StObject {
   
   // The automatic reply message.
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The language that the automatic reply message is in.
-  var messageLanguage: js.UndefOr[NullableOption[LocaleInfo]] = js.native
+  var messageLanguage: js.UndefOr[NullableOption[LocaleInfo]] = js.undefined
   
   // The date and time that automatic replies are set to end.
-  var scheduledEndTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var scheduledEndTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The date and time that automatic replies are set to begin.
-  var scheduledStartTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var scheduledStartTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
 }
 object AutomaticRepliesMailTips {
   

@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of an accident
   */
-@js.native
-trait ExplanationOfBenefitAccident extends BackboneElement {
+trait ExplanationOfBenefitAccident
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * When the accident occurred
     */
-  var date: js.UndefOr[typings.fhir.fhir.date] = js.native
+  var date: js.UndefOr[typings.fhir.fhir.date] = js.undefined
   
   /**
     * Accident Place
     */
-  var locationAddress: js.UndefOr[Address] = js.native
+  var locationAddress: js.UndefOr[Address] = js.undefined
   
   /**
     * Accident Place
     */
-  var locationReference: js.UndefOr[Reference] = js.native
+  var locationReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * The nature of the accident
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ExplanationOfBenefitAccident {
   

@@ -3,24 +3,23 @@ package typings.jointjs.mod.attributes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAttributeTextWrap
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var ellipsis: js.UndefOr[Boolean | String] = js.native
+  var ellipsis: js.UndefOr[Boolean | String] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var hyphen: js.UndefOr[String] = js.native
+  var hyphen: js.UndefOr[String] = js.undefined
   
-  var maxLineCount: js.UndefOr[Double] = js.native
+  var maxLineCount: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object SVGAttributeTextWrap {
   

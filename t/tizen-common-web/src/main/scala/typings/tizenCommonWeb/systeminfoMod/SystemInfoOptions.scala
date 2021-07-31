@@ -2,10 +2,8 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfoOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SystemInfoOptions extends StObject {
     * operation will be triggered only if the device property is a number and its value is greater than or equal to this number.
     * This attribute has no effect on the `get()` method.
     */
-  var highThreshold: Double = js.native
+  var highThreshold: Double
   
   /**
     * An attribute to indicate that the `successCallback()` method in the watch operation must be triggered only if the property is a number and its value is lower than or equal to this number.
@@ -22,12 +20,12 @@ trait SystemInfoOptions extends StObject {
     * If both `highThreshold` and `lowThreshold` parameters are specified, the `successCallback()` is triggered if and only if the property value is either lower than the value of `lowThreshold` or higher than the value of `highThreshold`.
     * This attribute has no effect on the get method.
     */
-  var lowThreshold: Double = js.native
+  var lowThreshold: Double
   
   /**
     * The number of milliseconds beyond which the operation must be interrupted.
     */
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object SystemInfoOptions {
   

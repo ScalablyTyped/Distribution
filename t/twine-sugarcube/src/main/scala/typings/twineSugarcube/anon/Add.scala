@@ -3,10 +3,8 @@ package typings.twineSugarcube.anon
 import typings.twineSugarcube.audioMod.AudioTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Add extends StObject {
   
   /**
@@ -34,14 +32,14 @@ trait Add extends StObject {
     *
     * @since 2.28.0
     */
-  def add(trackId: String, sources: String*): Unit = js.native
+  def add(trackId: String, sources: String*): Unit
   
   /**
     * Deletes all audio tracks.
     * NOTE: Cannot delete tracks solely under the control of a playlist.
     * @since 2.28.0
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Deletes the audio track with the given track ID.
@@ -54,7 +52,7 @@ trait Add extends StObject {
     * @example
     * SimpleAudio.tracks.delete("bgm_space");
     */
-  def delete(trackId: String): Unit = js.native
+  def delete(trackId: String): Unit
   
   /**
     * Returns the AudioTrack instance with the given track ID, or null on failure.
@@ -68,13 +66,13 @@ trait Add extends StObject {
     * // Return the AudioTrack instance matching "swamped" and do something with it
     * SimpleAudio.tracks.get("swamped").volume(1).play();
     */
-  def get(trackId: String): AudioTrack | Null = js.native
+  def get(trackId: String): AudioTrack | Null
   
   /**
     * Returns whether an audio track with the given track ID exists.
     * @param trackId The ID of the track.
     */
-  def has(trackId: String): Boolean = js.native
+  def has(trackId: String): Boolean
 }
 object Add {
   

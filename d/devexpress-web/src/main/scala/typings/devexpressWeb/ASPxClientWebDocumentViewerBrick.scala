@@ -3,25 +3,23 @@ package typings.devexpressWeb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientWebDocumentViewerBrick extends StObject {
   
-  var content: StringDictionary[String] = js.native
+  var content: StringDictionary[String]
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var navigation: ASPxClientWebDocumentViewerBrickNavigation = js.native
+  var navigation: ASPxClientWebDocumentViewerBrickNavigation
   
-  var rtl: Boolean = js.native
+  var rtl: Boolean
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object ASPxClientWebDocumentViewerBrick {
   

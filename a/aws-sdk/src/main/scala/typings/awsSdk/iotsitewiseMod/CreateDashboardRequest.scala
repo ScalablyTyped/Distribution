@@ -2,41 +2,39 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDashboardRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The dashboard definition specified in a JSON literal. For detailed information, see Creating dashboards (CLI) in the AWS IoT SiteWise User Guide.
     */
-  var dashboardDefinition: DashboardDefinition = js.native
+  var dashboardDefinition: DashboardDefinition
   
   /**
     * A description for the dashboard.
     */
-  var dashboardDescription: js.UndefOr[Description] = js.native
+  var dashboardDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * A friendly name for the dashboard.
     */
-  var dashboardName: Name = js.native
+  var dashboardName: Name
   
   /**
     * The ID of the project in which to create the dashboard.
     */
-  var projectId: ID = js.native
+  var projectId: ID
   
   /**
     * A list of key-value pairs that contain metadata for the dashboard. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateDashboardRequest {
   

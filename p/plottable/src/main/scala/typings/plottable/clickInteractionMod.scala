@@ -6,7 +6,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clickInteractionMod {
@@ -86,9 +85,12 @@ object clickInteractionMod {
   /* static members */
   object Click {
     
-    @JSImport("plottable/build/src/interactions/clickInteraction", "Click._pointsEqual")
+    @JSImport("plottable/build/src/interactions/clickInteraction", "Click")
     @js.native
-    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   type ClickCallback = js.Function2[/* point */ Point, /* event */ MouseEvent | TouchEvent, Unit]

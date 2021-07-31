@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a infrared frame arrived event. */
-@js.native
 trait PerceptionInfraredFrameArrivedEventArgs extends StObject {
   
   /** Gets the relative time of this frame. */
-  var relativeTime: Double = js.native
+  var relativeTime: Double
   
   /**
     * Attempts to open the infrared frame that has arrived.
     * @return If the attempt is successful, this method returns the newly-arrived infrared frame. If the attempt is unsuccessful, this value is unchanged.
     */
-  def tryOpenFrame(): PerceptionInfraredFrame = js.native
+  def tryOpenFrame(): PerceptionInfraredFrame
 }
 object PerceptionInfraredFrameArrivedEventArgs {
   

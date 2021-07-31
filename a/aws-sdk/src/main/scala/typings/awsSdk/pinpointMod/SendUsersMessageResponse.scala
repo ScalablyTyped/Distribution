@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendUsersMessageResponse extends StObject {
   
   /**
     * The unique identifier for the application that was used to send the message.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The unique identifier that was assigned to the message request.
     */
-  var RequestId: js.UndefOr[string] = js.native
+  var RequestId: js.UndefOr[string] = js.undefined
   
   /**
     * An object that indicates which endpoints the message was sent to, for each user. The object lists user IDs and, for each user ID, provides the endpoint IDs that the message was sent to. For each endpoint ID, it provides an EndpointMessageResult object.
     */
-  var Result: js.UndefOr[MapOfMapOfEndpointMessageResult] = js.native
+  var Result: js.UndefOr[MapOfMapOfEndpointMessageResult] = js.undefined
 }
 object SendUsersMessageResponse {
   

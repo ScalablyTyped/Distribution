@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoryCount extends StObject {
   
   /** The name of category. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** The count of training samples matching the category within the cluster. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
 }
 object CategoryCount {
   

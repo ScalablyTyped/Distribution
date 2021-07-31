@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAutoScalingPolicyInput extends StObject {
   
   /**
     * Specifies the ID of a cluster. The instance group to which the automatic scaling policy is applied is within this cluster.
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
     * Specifies the ID of the instance group to which the scaling policy is applied.
     */
-  var InstanceGroupId: typings.awsSdk.emrMod.InstanceGroupId = js.native
+  var InstanceGroupId: typings.awsSdk.emrMod.InstanceGroupId
 }
 object RemoveAutoScalingPolicyInput {
   

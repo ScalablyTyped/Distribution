@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMailboxPermissionsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. The value is "null" when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * One page of the user, group, or resource mailbox permissions.
     */
-  var Permissions: js.UndefOr[typings.awsSdk.workmailMod.Permissions] = js.native
+  var Permissions: js.UndefOr[typings.awsSdk.workmailMod.Permissions] = js.undefined
 }
 object ListMailboxPermissionsResponse {
   

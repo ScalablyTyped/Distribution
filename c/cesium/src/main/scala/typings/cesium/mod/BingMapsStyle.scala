@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,45 +11,65 @@ sealed trait BingMapsStyle extends StObject
 object BingMapsStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[BingMapsStyle with String] = js.native
+  def apply(value: String): js.UndefOr[BingMapsStyle & String] = js.native
   
   @js.native
-  sealed trait AERIAL extends BingMapsStyle
-  /* "Aerial" */ val AERIAL: typings.cesium.mod.BingMapsStyle.AERIAL with String = js.native
+  sealed trait AERIAL
+    extends StObject
+       with BingMapsStyle
+  /* "Aerial" */ val AERIAL: typings.cesium.mod.BingMapsStyle.AERIAL & String = js.native
   
   @js.native
-  sealed trait AERIAL_WITH_LABELS extends BingMapsStyle
-  /* "AerialWithLabels" */ val AERIAL_WITH_LABELS: typings.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS with String = js.native
+  sealed trait AERIAL_WITH_LABELS
+    extends StObject
+       with BingMapsStyle
+  /* "AerialWithLabels" */ val AERIAL_WITH_LABELS: typings.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS & String = js.native
   
   @js.native
-  sealed trait AERIAL_WITH_LABELS_ON_DEMAND extends BingMapsStyle
-  /* "AerialWithLabelsOnDemand" */ val AERIAL_WITH_LABELS_ON_DEMAND: typings.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS_ON_DEMAND with String = js.native
+  sealed trait AERIAL_WITH_LABELS_ON_DEMAND
+    extends StObject
+       with BingMapsStyle
+  /* "AerialWithLabelsOnDemand" */ val AERIAL_WITH_LABELS_ON_DEMAND: typings.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS_ON_DEMAND & String = js.native
   
   @js.native
-  sealed trait CANVAS_DARK extends BingMapsStyle
-  /* "CanvasDark" */ val CANVAS_DARK: typings.cesium.mod.BingMapsStyle.CANVAS_DARK with String = js.native
+  sealed trait CANVAS_DARK
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasDark" */ val CANVAS_DARK: typings.cesium.mod.BingMapsStyle.CANVAS_DARK & String = js.native
   
   @js.native
-  sealed trait CANVAS_GRAY extends BingMapsStyle
-  /* "CanvasGray" */ val CANVAS_GRAY: typings.cesium.mod.BingMapsStyle.CANVAS_GRAY with String = js.native
+  sealed trait CANVAS_GRAY
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasGray" */ val CANVAS_GRAY: typings.cesium.mod.BingMapsStyle.CANVAS_GRAY & String = js.native
   
   @js.native
-  sealed trait CANVAS_LIGHT extends BingMapsStyle
-  /* "CanvasLight" */ val CANVAS_LIGHT: typings.cesium.mod.BingMapsStyle.CANVAS_LIGHT with String = js.native
+  sealed trait CANVAS_LIGHT
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasLight" */ val CANVAS_LIGHT: typings.cesium.mod.BingMapsStyle.CANVAS_LIGHT & String = js.native
   
   @js.native
-  sealed trait COLLINS_BART extends BingMapsStyle
-  /* "CollinsBart" */ val COLLINS_BART: typings.cesium.mod.BingMapsStyle.COLLINS_BART with String = js.native
+  sealed trait COLLINS_BART
+    extends StObject
+       with BingMapsStyle
+  /* "CollinsBart" */ val COLLINS_BART: typings.cesium.mod.BingMapsStyle.COLLINS_BART & String = js.native
   
   @js.native
-  sealed trait ORDNANCE_SURVEY extends BingMapsStyle
-  /* "OrdnanceSurvey" */ val ORDNANCE_SURVEY: typings.cesium.mod.BingMapsStyle.ORDNANCE_SURVEY with String = js.native
+  sealed trait ORDNANCE_SURVEY
+    extends StObject
+       with BingMapsStyle
+  /* "OrdnanceSurvey" */ val ORDNANCE_SURVEY: typings.cesium.mod.BingMapsStyle.ORDNANCE_SURVEY & String = js.native
   
   @js.native
-  sealed trait ROAD extends BingMapsStyle
-  /* "Road" */ val ROAD: typings.cesium.mod.BingMapsStyle.ROAD with String = js.native
+  sealed trait ROAD
+    extends StObject
+       with BingMapsStyle
+  /* "Road" */ val ROAD: typings.cesium.mod.BingMapsStyle.ROAD & String = js.native
   
   @js.native
-  sealed trait ROAD_ON_DEMAND extends BingMapsStyle
-  /* "RoadOnDemand" */ val ROAD_ON_DEMAND: typings.cesium.mod.BingMapsStyle.ROAD_ON_DEMAND with String = js.native
+  sealed trait ROAD_ON_DEMAND
+    extends StObject
+       with BingMapsStyle
+  /* "RoadOnDemand" */ val ROAD_ON_DEMAND: typings.cesium.mod.BingMapsStyle.ROAD_ON_DEMAND & String = js.native
 }

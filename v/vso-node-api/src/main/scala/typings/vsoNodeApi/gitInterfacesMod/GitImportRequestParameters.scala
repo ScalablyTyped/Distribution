@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportRequestParameters extends StObject {
   
   /**
     * Option to delete service endpoint when import is done
     */
-  var deleteServiceEndpointAfterImportIsDone: Boolean = js.native
+  var deleteServiceEndpointAfterImportIsDone: Boolean
   
   /**
     * Source for importing git repository
     */
-  var gitSource: GitImportGitSource = js.native
+  var gitSource: GitImportGitSource
   
   /**
     * Service Endpoint for connection to external endpoint
     */
-  var serviceEndpointId: String = js.native
+  var serviceEndpointId: String
   
   /**
     * Source for importing tfvc repository
     */
-  var tfvcSource: GitImportTfvcSource = js.native
+  var tfvcSource: GitImportTfvcSource
 }
 object GitImportRequestParameters {
   

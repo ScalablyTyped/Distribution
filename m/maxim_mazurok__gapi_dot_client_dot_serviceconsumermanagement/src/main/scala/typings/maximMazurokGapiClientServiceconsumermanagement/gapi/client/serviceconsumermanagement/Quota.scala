@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quota extends StObject {
   
   /** List of `QuotaLimit` definitions for the service. */
-  var limits: js.UndefOr[js.Array[QuotaLimit]] = js.native
+  var limits: js.UndefOr[js.Array[QuotaLimit]] = js.undefined
   
   /** List of `MetricRule` definitions, each one mapping a selected method to one or more metrics. */
-  var metricRules: js.UndefOr[js.Array[MetricRule]] = js.native
+  var metricRules: js.UndefOr[js.Array[MetricRule]] = js.undefined
 }
 object Quota {
   

@@ -7,17 +7,15 @@ import typings.torrentStream.torrentStreamStrings.torrent
 import typings.torrentStream.torrentStreamStrings.upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TorrentStream {
   
-  @js.native
   trait ReadStreamOptions extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object ReadStreamOptions {
     
@@ -38,10 +36,9 @@ object TorrentStream {
     }
   }
   
-  @js.native
   trait Swarm extends StObject {
     
-    var downloaded: Double = js.native
+    var downloaded: Double
   }
   object Swarm {
     
@@ -97,34 +94,33 @@ object TorrentStream {
     var swarm: Swarm = js.native
   }
   
-  @js.native
   trait TorrentEngineOptions extends StObject {
     
-    var connections: js.UndefOr[Double] = js.native
+    var connections: js.UndefOr[Double] = js.undefined
     
     // Verify previously stored data before starting.
-    var dht: js.UndefOr[Boolean] = js.native
+    var dht: js.UndefOr[Boolean] = js.undefined
     
     // Root folder for the files storage. Default folder under /tmp/torrent-stream/{infoHash}.
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     // Allows to declare additional custom trackers to use.
-    var storage: js.UndefOr[js.Any] = js.native
+    var storage: js.UndefOr[js.Any] = js.undefined
     
     // Number of upload slots.
-    var tmp: js.UndefOr[String] = js.native
+    var tmp: js.UndefOr[String] = js.undefined
     
     // Whether or not to use DHT to initialize the swarm.
-    var tracker: js.UndefOr[Boolean] = js.native
+    var tracker: js.UndefOr[Boolean] = js.undefined
     
     // Whether or not to use trackers from torrent file or magnet link.
-    var trackers: js.UndefOr[js.Array[String]] = js.native
+    var trackers: js.UndefOr[js.Array[String]] = js.undefined
     
     // Max amount of peers to be connected to.
-    var uploads: js.UndefOr[Double] = js.native
+    var uploads: js.UndefOr[Double] = js.undefined
     
     // Path where to save the files. Overrides 'tmp'.
-    var verify: js.UndefOr[Boolean] = js.native
+    var verify: js.UndefOr[Boolean] = js.undefined
   }
   object TorrentEngineOptions {
     

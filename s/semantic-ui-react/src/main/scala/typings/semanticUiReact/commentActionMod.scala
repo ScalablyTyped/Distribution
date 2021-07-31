@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentActionMod extends Shortcut {
@@ -26,9 +25,9 @@ object commentActionMod extends Shortcut {
   @js.native
   val default: ComponentClass[CommentActionProps, ComponentState] = js.native
   
-  @js.native
   trait CommentActionProps
-    extends StrictCommentActionProps
+    extends StObject
+       with StrictCommentActionProps
        with /* key */ StringDictionary[js.Any]
   object CommentActionProps {
     
@@ -39,23 +38,22 @@ object commentActionMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCommentActionProps extends StObject {
     
     /** Style as the currently active action. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
   }
   object StrictCommentActionProps {
     

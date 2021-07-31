@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceDestinationProperties extends StObject {
   
   /**
     *  The settings that determine how Amazon AppFlow handles an error when placing data in the Salesforce destination. For example, this setting would determine if the flow should fail after one insertion error, or continue and attempt to insert every record regardless of the initial failure. ErrorHandlingConfig is a part of the destination connector details. 
     */
-  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.native
+  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.undefined
   
   /**
     *  The name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete. 
     */
-  var idFieldNames: js.UndefOr[IdFieldNameList] = js.native
+  var idFieldNames: js.UndefOr[IdFieldNameList] = js.undefined
   
   /**
     *  The object specified in the Salesforce flow destination. 
     */
-  var `object`: Object = js.native
+  var `object`: Object
   
   /**
     *  This specifies the type of write operation to be performed in Salesforce. When the value is UPSERT, then idFieldNames is required. 
     */
-  var writeOperationType: js.UndefOr[WriteOperationType] = js.native
+  var writeOperationType: js.UndefOr[WriteOperationType] = js.undefined
 }
 object SalesforceDestinationProperties {
   

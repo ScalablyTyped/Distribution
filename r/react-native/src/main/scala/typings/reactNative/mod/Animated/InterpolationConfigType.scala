@@ -2,23 +2,21 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterpolationConfigType extends StObject {
   
-  var easing: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.native
+  var easing: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.undefined
   
-  var extrapolate: js.UndefOr[ExtrapolateType] = js.native
+  var extrapolate: js.UndefOr[ExtrapolateType] = js.undefined
   
-  var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.native
+  var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.undefined
   
-  var extrapolateRight: js.UndefOr[ExtrapolateType] = js.native
+  var extrapolateRight: js.UndefOr[ExtrapolateType] = js.undefined
   
-  var inputRange: js.Array[Double] = js.native
+  var inputRange: js.Array[Double]
   
-  var outputRange: js.Array[Double | String] = js.native
+  var outputRange: js.Array[Double | String]
 }
 object InterpolationConfigType {
   

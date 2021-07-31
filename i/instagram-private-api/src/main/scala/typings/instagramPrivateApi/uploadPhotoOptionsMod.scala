@@ -3,21 +3,19 @@ package typings.instagramPrivateApi
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadPhotoOptionsMod {
   
-  @js.native
   trait UploadPhotoOptions extends StObject {
     
-    var file: Buffer = js.native
+    var file: Buffer
     
-    var isSidecar: js.UndefOr[Boolean] = js.native
+    var isSidecar: js.UndefOr[Boolean] = js.undefined
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
     
-    var waterfallId: js.UndefOr[String] = js.native
+    var waterfallId: js.UndefOr[String] = js.undefined
   }
   object UploadPhotoOptions {
     

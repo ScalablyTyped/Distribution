@@ -2,41 +2,39 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateContactFlowRequest extends StObject {
   
   /**
     * The content of the contact flow. 
     */
-  var Content: ContactFlowContent = js.native
+  var Content: ContactFlowContent
   
   /**
     * The description of the contact flow. 
     */
-  var Description: js.UndefOr[ContactFlowDescription] = js.native
+  var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The name of the contact flow.
     */
-  var Name: ContactFlowName = js.native
+  var Name: ContactFlowName
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The type of the contact flow. For descriptions of the available types, see Choose a Contact Flow Type in the Amazon Connect Administrator Guide.
     */
-  var Type: ContactFlowType = js.native
+  var Type: ContactFlowType
 }
 object CreateContactFlowRequest {
   

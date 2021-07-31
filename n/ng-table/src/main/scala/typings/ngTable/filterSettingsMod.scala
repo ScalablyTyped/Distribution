@@ -5,7 +5,6 @@ import typings.ngTable.filterFuncMod.IFilterFunc
 import typings.ngTable.filterFuncMod.IFilterValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterSettingsMod {
@@ -24,7 +23,6 @@ object filterSettingsMod {
     def stack: typings.ngTable.ngTableStrings.stack = "stack".asInstanceOf[typings.ngTable.ngTableStrings.stack]
   }
   
-  @js.native
   trait IFilterSettings[T] extends StObject {
     
     /**
@@ -36,7 +34,7 @@ object filterSettingsMod {
       * `IDefaultGetData` service is supplying the implementation for the
       * `ISettings.getData` function
       */
-    var filterComparator: js.UndefOr[FilterComparator[T]] = js.native
+    var filterComparator: js.UndefOr[FilterComparator[T]] = js.undefined
     
     /**
       * A duration to wait for the user to stop typing before applying the filter.
@@ -44,12 +42,12 @@ object filterSettingsMod {
       *   supplied to `NgTableParams.settings`.
       * - Defaults to 500 milliseconds otherwise.
       */
-    var filterDelay: js.UndefOr[Double] = js.native
+    var filterDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of elements up to which a managed inmemory array is considered small. Defaults to 10000.
       */
-    var filterDelayThreshold: js.UndefOr[Double] = js.native
+    var filterDelayThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Overrides `IDefaultGetDataProvider.filterFilterName`.
@@ -57,17 +55,17 @@ object filterSettingsMod {
       * the actual filter logic.
       * Defaults to 'filter'.
       */
-    var filterFilterName: js.UndefOr[String] = js.native
+    var filterFilterName: js.UndefOr[String] = js.undefined
     
     /**
       * Tells `IDefaultGetData` to use this function supplied to perform the filtering instead of selecting an angular $filter.
       */
-    var filterFn: js.UndefOr[IFilterFunc[T]] = js.native
+    var filterFn: js.UndefOr[IFilterFunc[T]] = js.undefined
     
     /**
       * The layout to use when multiple html templates are to rendered in a single table header column.
       */
-    var filterLayout: js.UndefOr[FilterLayout] = js.native
+    var filterLayout: js.UndefOr[FilterLayout] = js.undefined
   }
   object IFilterSettings {
     
@@ -78,7 +76,7 @@ object filterSettingsMod {
     }
     
     @scala.inline
-    implicit class IFilterSettingsMutableBuilder[Self <: IFilterSettings[_], T] (val x: Self with IFilterSettings[T]) extends AnyVal {
+    implicit class IFilterSettingsMutableBuilder[Self <: IFilterSettings[?], T] (val x: Self & IFilterSettings[T]) extends AnyVal {
       
       @scala.inline
       def setFilterComparator(value: FilterComparator[T]): Self = StObject.set(x, "filterComparator", value.asInstanceOf[js.Any])

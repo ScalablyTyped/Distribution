@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineStateInput extends StObject {
   
   /**
     * The name of the pipeline about which you want to get information.
     */
-  var name: PipelineName = js.native
+  var name: PipelineName
 }
 object GetPipelineStateInput {
   

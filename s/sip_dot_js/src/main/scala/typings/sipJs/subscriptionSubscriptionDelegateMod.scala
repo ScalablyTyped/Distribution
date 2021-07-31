@@ -4,12 +4,10 @@ import typings.sipJs.notifyMod.IncomingNotifyRequest
 import typings.sipJs.subscribeMod.OutgoingSubscribeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionSubscriptionDelegateMod {
   
-  @js.native
   trait SubscriptionDelegate extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object subscriptionSubscriptionDelegateMod {
       * https://tools.ietf.org/html/rfc6665#section-4.1.3
       * @param request - Incoming NOTIFY request.
       */
-    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.undefined
     
     /**
       * Sent a SUBSCRIBE request. This includes "auto refresh" in dialog SUBSCRIBE requests only.
@@ -26,14 +24,14 @@ object subscriptionSubscriptionDelegateMod {
       * Thus the first SUBSCRIBE (the subscription creating SUBSCRIBE) will not be provided.
       * @param request - Outgoing SUBSCRIBE request.
       */
-    var onRefresh: js.UndefOr[js.Function1[/* request */ OutgoingSubscribeRequest, Unit]] = js.native
+    var onRefresh: js.UndefOr[js.Function1[/* request */ OutgoingSubscribeRequest, Unit]] = js.undefined
     
     /**
       * Subscription termination. This includes non-NOTIFY termination causes only.
       * Thus this will not be called if a NOTIFY is the cause of termination.
       * https://tools.ietf.org/html/rfc6665#section-4.4.1
       */
-    var onTerminated: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTerminated: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SubscriptionDelegate {
     

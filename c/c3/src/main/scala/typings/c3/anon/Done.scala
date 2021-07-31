@@ -3,16 +3,14 @@ package typings.c3.anon
 import typings.c3.mod.ArrayOrString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Done extends StObject {
   
   /** Called after data is loaded, but not after rendering. This is because rendering will finish after some transition and there is some time lag between loading and rendering. */
-  var done: js.UndefOr[js.Function0[Unit]] = js.native
+  var done: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ids: js.UndefOr[ArrayOrString] = js.native
+  var ids: js.UndefOr[ArrayOrString] = js.undefined
 }
 object Done {
   

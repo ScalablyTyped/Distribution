@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * elements available for that locale.
   * @since LibreOffice 3.5
   */
-@js.native
-trait XLocaleData3 extends XLocaleData2 {
+trait XLocaleData3
+  extends StObject
+     with XLocaleData2 {
   
   /** returns all LC_CALENDAR calendars for a locale. */
-  def getAllCalendars2(aLocale: Locale): SafeArray[Calendar2] = js.native
+  def getAllCalendars2(aLocale: Locale): SafeArray[Calendar2]
 }
 object XLocaleData3 {
   

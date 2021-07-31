@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clearfixMod {
@@ -19,20 +18,21 @@ object clearfixMod {
   trait Clearfix
     extends Component[ClearfixProps, js.Object, js.Any]
   
-  @js.native
-  trait ClearfixProps extends HTMLProps[Clearfix] {
+  trait ClearfixProps
+    extends StObject
+       with HTMLProps[Clearfix] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var visibleLgBlock: js.UndefOr[Boolean] = js.native
+    var visibleLgBlock: js.UndefOr[Boolean] = js.undefined
     
-    var visibleMdBlock: js.UndefOr[Boolean] = js.native
+    var visibleMdBlock: js.UndefOr[Boolean] = js.undefined
     
-    var visibleSmBlock: js.UndefOr[Boolean] = js.native
+    var visibleSmBlock: js.UndefOr[Boolean] = js.undefined
     
-    var visibleXsBlock: js.UndefOr[Boolean] = js.native
+    var visibleXsBlock: js.UndefOr[Boolean] = js.undefined
   }
   object ClearfixProps {
     
@@ -52,7 +52,7 @@ object clearfixMod {
       def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

@@ -5,17 +5,16 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link PasswordContainer} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XPasswordContainer2
-  extends XMasterPasswordHandling2
+  extends StObject
      with XPasswordContainer
+     with XMasterPasswordHandling2
      with XUrlContainer
 object XPasswordContainer2 {
   

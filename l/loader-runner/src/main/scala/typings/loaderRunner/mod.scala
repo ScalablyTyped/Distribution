@@ -5,66 +5,66 @@ import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("loader-runner", "getContext")
+  @JSImport("loader-runner", JSImport.Namespace)
   @js.native
-  def getContext(resource: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("loader-runner", "runLoaders")
-  @js.native
+  @scala.inline
+  def getContext(resource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
   def runLoaders(
     options: RunLoaderOption,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ RunLoaderResult, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ RunLoaderResult, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runLoaders")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ExtendedLoaderContext extends StObject {
     
-    def addContextDependency(context: String): Unit = js.native
+    def addContextDependency(context: String): Unit
     
-    def addDependency(file: String): Unit = js.native
+    def addDependency(file: String): Unit
     
-    var async: js.Function0[js.UndefOr[js.Function0[Unit]]] | Null = js.native
+    var async: js.Function0[js.UndefOr[js.Function0[Unit]]] | Null
     
-    def cacheable(flag: Boolean): Unit = js.native
+    def cacheable(flag: Boolean): Unit
     
-    var callback: js.Function0[Unit] | Null = js.native
+    var callback: js.Function0[Unit] | Null
     
-    def clearDependencies(): Unit = js.native
+    def clearDependencies(): Unit
     
-    var context: String | Null = js.native
+    var context: String | Null
     
-    var currentRequest: String = js.native
+    var currentRequest: String
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    def dependency(file: String): Unit = js.native
+    def dependency(file: String): Unit
     
-    def getContextDependencies(): js.Array[String] = js.native
+    def getContextDependencies(): js.Array[String]
     
-    def getDependencies(): js.Array[String] = js.native
+    def getDependencies(): js.Array[String]
     
-    var loaderIndex: Double = js.native
+    var loaderIndex: Double
     
-    var loaders: js.Array[Loader] = js.native
+    var loaders: js.Array[Loader]
     
-    var previousRequest: String = js.native
+    var previousRequest: String
     
-    var query: StringDictionary[js.Any] | String = js.native
+    var query: StringDictionary[js.Any] | String
     
-    var remainingRequest: String = js.native
+    var remainingRequest: String
     
-    var request: String = js.native
+    var request: String
     
-    var resource: String = js.native
+    var resource: String
     
-    var resourcePath: js.UndefOr[String] = js.native
+    var resourcePath: js.UndefOr[String] = js.undefined
     
-    var resourceQuery: js.UndefOr[String] = js.native
+    var resourceQuery: js.UndefOr[String] = js.undefined
   }
   object ExtendedLoaderContext {
     
@@ -87,7 +87,7 @@ object mod {
       request: String,
       resource: String
     ): ExtendedLoaderContext = {
-      val __obj = js.Dynamic.literal(addContextDependency = js.Any.fromFunction1(addContextDependency), addDependency = js.Any.fromFunction1(addDependency), cacheable = js.Any.fromFunction1(cacheable), clearDependencies = js.Any.fromFunction0(clearDependencies), currentRequest = currentRequest.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dependency = js.Any.fromFunction1(dependency), getContextDependencies = js.Any.fromFunction0(getContextDependencies), getDependencies = js.Any.fromFunction0(getDependencies), loaderIndex = loaderIndex.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], previousRequest = previousRequest.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], remainingRequest = remainingRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addContextDependency = js.Any.fromFunction1(addContextDependency), addDependency = js.Any.fromFunction1(addDependency), cacheable = js.Any.fromFunction1(cacheable), clearDependencies = js.Any.fromFunction0(clearDependencies), currentRequest = currentRequest.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dependency = js.Any.fromFunction1(dependency), getContextDependencies = js.Any.fromFunction0(getContextDependencies), getDependencies = js.Any.fromFunction0(getDependencies), loaderIndex = loaderIndex.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], previousRequest = previousRequest.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], remainingRequest = remainingRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], async = null, callback = null, context = null)
       __obj.asInstanceOf[ExtendedLoaderContext]
     }
     
@@ -177,28 +177,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Loader extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var normal: Null | (js.Function1[/* request */ String, String]) = js.native
+    var normal: Null | (js.Function1[/* request */ String, String])
     
-    var normalExecuted: Boolean = js.native
+    var normalExecuted: Boolean
     
-    var options: js.Any = js.native
+    var options: js.Any
     
-    var path: String = js.native
+    var path: String
     
-    var pitch: Null | (js.Function1[/* request */ String, String]) = js.native
+    var pitch: Null | (js.Function1[/* request */ String, String])
     
-    var pitchExecuted: Boolean = js.native
+    var pitchExecuted: Boolean
     
-    var query: String = js.native
+    var query: String
     
-    var raw: String = js.native
+    var raw: String
     
-    var request: String = js.native
+    var request: String
   }
   object Loader {
     
@@ -213,7 +212,7 @@ object mod {
       raw: String,
       request: String
     ): Loader = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], normalExecuted = normalExecuted.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pitchExecuted = pitchExecuted.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], normalExecuted = normalExecuted.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pitchExecuted = pitchExecuted.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], normal = null, pitch = null)
       __obj.asInstanceOf[Loader]
     }
     
@@ -258,26 +257,25 @@ object mod {
     }
   }
   
-  @js.native
   trait RunLoaderOption extends StObject {
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var loaders: js.Array[_] = js.native
+    var loaders: js.Array[js.Any]
     
     def readResource(
       filename: String,
       callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    var resource: String = js.native
+    var resource: String
   }
   object RunLoaderOption {
     
     @scala.inline
     def apply(
       context: js.Any,
-      loaders: js.Array[_],
+      loaders: js.Array[js.Any],
       readResource: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit,
       resource: String
     ): RunLoaderOption = {
@@ -292,7 +290,7 @@ object mod {
       def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLoaders(value: js.Array[_]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      def setLoaders(value: js.Array[js.Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLoadersVarargs(value: js.Any*): Self = StObject.set(x, "loaders", js.Array(value :_*))
@@ -307,18 +305,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RunLoaderResult extends StObject {
     
-    var cacheable: Boolean = js.native
+    var cacheable: Boolean
     
-    var contextDependencies: js.Array[String] = js.native
+    var contextDependencies: js.Array[String]
     
-    var fileDependencies: js.Array[String] = js.native
+    var fileDependencies: js.Array[String]
     
-    var resourceBuffer: js.UndefOr[Buffer | Null] = js.native
+    var resourceBuffer: js.UndefOr[Buffer | Null] = js.undefined
     
-    var result: js.UndefOr[js.Array[Buffer | Null]] = js.native
+    var result: js.UndefOr[js.Array[Buffer | Null]] = js.undefined
   }
   object RunLoaderResult {
     

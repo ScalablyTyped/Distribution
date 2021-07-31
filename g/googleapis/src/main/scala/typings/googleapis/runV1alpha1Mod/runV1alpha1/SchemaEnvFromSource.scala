@@ -2,30 +2,28 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnvFromSource represents the source of a set of ConfigMaps
   */
-@js.native
 trait SchemaEnvFromSource extends StObject {
   
   /**
     * The ConfigMap to select from +optional
     */
-  var configMapRef: js.UndefOr[SchemaConfigMapEnvSource] = js.native
+  var configMapRef: js.UndefOr[SchemaConfigMapEnvSource] = js.undefined
   
   /**
     * An optional identifier to prepend to each key in the ConfigMap. Must be a
     * C_IDENTIFIER. +optional
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The Secret to select from +optional
     */
-  var secretRef: js.UndefOr[SchemaSecretEnvSource] = js.native
+  var secretRef: js.UndefOr[SchemaSecretEnvSource] = js.undefined
 }
 object SchemaEnvFromSource {
   

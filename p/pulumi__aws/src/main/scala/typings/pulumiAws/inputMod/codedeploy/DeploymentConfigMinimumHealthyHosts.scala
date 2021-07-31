@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfigMinimumHealthyHosts extends StObject {
   
   /**
     * The type can either be `FLEET_PERCENT` or `HOST_COUNT`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The value when the type is `FLEET_PERCENT` represents the minimum number of healthy instances as
@@ -20,7 +18,7 @@ trait DeploymentConfigMinimumHealthyHosts extends StObject {
     * deployment, AWS CodeDeploy converts the percentage to the equivalent number of instance and rounds up fractional instances.
     * When the type is `HOST_COUNT`, the value represents the minimum number of healthy instances as an absolute value.
     */
-  var value: js.UndefOr[Input[Double]] = js.native
+  var value: js.UndefOr[Input[Double]] = js.undefined
 }
 object DeploymentConfigMinimumHealthyHosts {
   

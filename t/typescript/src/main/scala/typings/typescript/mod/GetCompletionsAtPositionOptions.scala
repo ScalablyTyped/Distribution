@@ -2,23 +2,23 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetCompletionsAtPositionOptions extends UserPreferences {
+trait GetCompletionsAtPositionOptions
+  extends StObject
+     with UserPreferences {
   
   /** @deprecated Use includeCompletionsForModuleExports */
-  var includeExternalModuleExports: js.UndefOr[Boolean] = js.native
+  var includeExternalModuleExports: js.UndefOr[Boolean] = js.undefined
   
   /** @deprecated Use includeCompletionsWithInsertText */
-  var includeInsertTextCompletions: js.UndefOr[Boolean] = js.native
+  var includeInsertTextCompletions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the editor is asking for completions because a certain character was typed
     * (as opposed to when the user explicitly requested them) this should be set.
     */
-  var triggerCharacter: js.UndefOr[CompletionsTriggerCharacter] = js.native
+  var triggerCharacter: js.UndefOr[CompletionsTriggerCharacter] = js.undefined
 }
 object GetCompletionsAtPositionOptions {
   

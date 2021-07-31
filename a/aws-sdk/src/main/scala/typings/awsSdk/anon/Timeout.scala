@@ -2,16 +2,14 @@ package typings.awsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timeout extends StObject {
   
   /**
     * a timeout value in milliseconds to wait before aborting the connection. Set to 0 for no timeout.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object Timeout {
   

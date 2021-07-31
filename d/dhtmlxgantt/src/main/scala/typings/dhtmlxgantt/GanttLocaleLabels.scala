@@ -2,53 +2,51 @@ package typings.dhtmlxgantt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttLocaleLabels extends StObject {
   
-  var confirm_closing: String = js.native
+  var confirm_closing: String
   
-  var confirm_deleting: String = js.native
+  var confirm_deleting: String
   
-  var confirm_link_deleting: String = js.native
+  var confirm_link_deleting: String
   
-  var days: String = js.native
+  var days: String
   
-  var hours: String = js.native
+  var hours: String
   
-  var icon_cancel: String = js.native
+  var icon_cancel: String
   
-  var icon_delete: String = js.native
+  var icon_delete: String
   
-  var icon_details: String = js.native
+  var icon_details: String
   
-  var icon_edit: String = js.native
+  var icon_edit: String
   
-  var icon_save: String = js.native
+  var icon_save: String
   
-  var link_end: String = js.native
+  var link_end: String
   
-  var link_from: String = js.native
+  var link_from: String
   
-  var link_start: String = js.native
+  var link_start: String
   
-  var link_to: String = js.native
+  var link_to: String
   
-  var minutes: String = js.native
+  var minutes: String
   
-  var months: String = js.native
+  var months: String
   
-  var new_task: String = js.native
+  var new_task: String
   
-  var section_description: String = js.native
+  var section_description: String
   
-  var section_time: String = js.native
+  var section_time: String
   
-  var weeks: String = js.native
+  var weeks: String
   
-  var years: String = js.native
+  var years: String
 }
 object GanttLocaleLabels {
   

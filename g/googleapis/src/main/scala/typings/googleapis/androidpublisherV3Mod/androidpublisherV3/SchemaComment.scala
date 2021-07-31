@@ -2,21 +2,19 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaComment extends StObject {
   
   /**
     * A comment from a developer.
     */
-  var developerComment: js.UndefOr[SchemaDeveloperComment] = js.native
+  var developerComment: js.UndefOr[SchemaDeveloperComment] = js.undefined
   
   /**
     * A comment from a user.
     */
-  var userComment: js.UndefOr[SchemaUserComment] = js.native
+  var userComment: js.UndefOr[SchemaUserComment] = js.undefined
 }
 object SchemaComment {
   

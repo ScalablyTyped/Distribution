@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of type boolean which can be animated. */
-@js.native
 trait SVGAnimatedBoolean extends StObject {
   
-  val animVal: scala.Boolean = js.native
+  val animVal: scala.Boolean
   
-  var baseVal: scala.Boolean = js.native
+  var baseVal: scala.Boolean
 }
 object SVGAnimatedBoolean {
   

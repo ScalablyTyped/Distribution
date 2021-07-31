@@ -2,45 +2,43 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServeOptions extends StObject {
   
-  var `--`: js.Array[String] = js.native
+  var `--`: js.Array[String]
   
-  var address: String = js.native
+  var address: String
   
-  var browser: js.UndefOr[String] = js.native
+  var browser: js.UndefOr[String] = js.undefined
   
-  var browserOption: js.UndefOr[String] = js.native
+  var browserOption: js.UndefOr[String] = js.undefined
   
-  var devapp: Boolean = js.native
+  var devapp: Boolean
   
-  var engine: String = js.native
+  var engine: String
   
-  var externalAddressRequired: js.UndefOr[Boolean] = js.native
+  var externalAddressRequired: js.UndefOr[Boolean] = js.undefined
   
-  var lab: Boolean = js.native
+  var lab: Boolean
   
-  var labHost: String = js.native
+  var labHost: String
   
-  var labPort: Double = js.native
+  var labPort: Double
   
-  var livereload: Boolean = js.native
+  var livereload: Boolean
   
-  var open: Boolean = js.native
+  var open: Boolean
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var port: Double = js.native
+  var port: Double
   
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
-  var proxy: Boolean = js.native
+  var proxy: Boolean
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object ServeOptions {
   

@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.Plain
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait CommentReply extends ClientObject {
+trait CommentReply
+  extends StObject
+     with ClientObject {
   
   /**
     *

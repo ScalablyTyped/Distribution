@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionDefinitionVersion extends StObject {
   
   /**
     * The default configuration that applies to all Lambda functions in this function definition version. Individual Lambda functions can override these settings.
     */
-  var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.native
+  var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.undefined
   
   /**
     * A list of Lambda functions in this function definition version.
     */
-  var Functions: js.UndefOr[listOfFunction] = js.native
+  var Functions: js.UndefOr[listOfFunction] = js.undefined
 }
 object FunctionDefinitionVersion {
   

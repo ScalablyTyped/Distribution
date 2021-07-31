@@ -4,15 +4,13 @@ import typings.devextreme.devextremeStrings.onClick
 import typings.devextreme.devextremeStrings.onHover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelayName extends StObject {
   
-  var delay: js.UndefOr[Show | Double] = js.native
+  var delay: js.UndefOr[Show | Double] = js.undefined
   
-  var name: js.UndefOr[onClick | onHover] = js.native
+  var name: js.UndefOr[onClick | onHover] = js.undefined
 }
 object DelayName {
   

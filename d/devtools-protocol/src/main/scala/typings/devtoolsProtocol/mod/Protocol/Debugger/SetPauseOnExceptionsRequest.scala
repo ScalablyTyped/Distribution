@@ -5,16 +5,14 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.none_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.uncaught
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPauseOnExceptionsRequest extends StObject {
   
   /**
     * Pause on exceptions mode. (SetPauseOnExceptionsRequestState enum)
     */
-  var state: none_ | uncaught | all = js.native
+  var state: none_ | uncaught | all
 }
 object SetPauseOnExceptionsRequest {
   

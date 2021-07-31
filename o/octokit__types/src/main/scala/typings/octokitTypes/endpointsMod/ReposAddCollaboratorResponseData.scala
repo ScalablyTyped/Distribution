@@ -4,27 +4,25 @@ import typings.octokitTypes.anon.Archiveurl
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposAddCollaboratorResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var invitee: Avatarurl = js.native
+  var invitee: Avatarurl
   
-  var inviter: Avatarurl = js.native
+  var inviter: Avatarurl
   
-  var permissions: String = js.native
+  var permissions: String
   
-  var repository: Archiveurl = js.native
+  var repository: Archiveurl
   
-  var url: String = js.native
+  var url: String
 }
 object ReposAddCollaboratorResponseData {
   

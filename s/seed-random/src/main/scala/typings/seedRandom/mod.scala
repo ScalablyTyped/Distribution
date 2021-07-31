@@ -2,34 +2,31 @@ package typings.seedRandom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("seed-random", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function0[Double] = js.native
-  @JSImport("seed-random", JSImport.Namespace)
-  @js.native
-  def apply(seed: js.UndefOr[scala.Nothing], options: Options): js.Function0[Double] = js.native
-  @JSImport("seed-random", JSImport.Namespace)
-  @js.native
-  def apply(seed: String): js.Function0[Double] = js.native
-  @JSImport("seed-random", JSImport.Namespace)
-  @js.native
-  def apply(seed: String, options: Options): js.Function0[Double] = js.native
+  @scala.inline
+  def apply(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def apply(seed: String): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def apply(seed: String, options: Options): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def apply(seed: Unit, options: Options): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("seed-random", "resetGlobal")
+  @JSImport("seed-random", JSImport.Namespace)
   @js.native
-  def resetGlobal(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def resetGlobal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobal")().asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var entropy: js.UndefOr[Boolean] = js.native
+    var entropy: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

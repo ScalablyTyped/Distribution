@@ -14,7 +14,6 @@ import typings.xmldsigjs.signedXmlMod.OptionsSign
 import typings.xmldsigjs.signedXmlMod.OptionsSignTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signedXmlMod {
@@ -62,12 +61,11 @@ object signedXmlMod {
     var properties: QualifyingProperties | Null = js.native
   }
   
-  @js.native
   trait OptionsNoticeReference extends StObject {
     
-    var noticeNumbers: js.Array[Double] = js.native
+    var noticeNumbers: js.Array[Double]
     
-    var organization: String = js.native
+    var organization: String
   }
   object OptionsNoticeReference {
     
@@ -91,18 +89,17 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsPolicyId extends StObject {
     
-    var digestValue: js.UndefOr[String] = js.native
+    var digestValue: js.UndefOr[String] = js.undefined
     
-    var hash: AlgorithmIdentifier = js.native
+    var hash: AlgorithmIdentifier
     
-    var identifier: OptionsPolicyIdentifier = js.native
+    var identifier: OptionsPolicyIdentifier
     
-    var qualifiers: js.UndefOr[js.Array[OptionsPolicyUserNotice | String]] = js.native
+    var qualifiers: js.UndefOr[js.Array[OptionsPolicyUserNotice | String]] = js.undefined
     
-    var transforms: js.UndefOr[js.Array[OptionsSignTransform]] = js.native
+    var transforms: js.UndefOr[js.Array[OptionsSignTransform]] = js.undefined
   }
   object OptionsPolicyId {
     
@@ -147,16 +144,15 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsPolicyIdentifier extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var qualifier: js.UndefOr[IdentifierQualifier] = js.native
+    var qualifier: js.UndefOr[IdentifierQualifier] = js.undefined
     
-    var references: js.UndefOr[js.Array[String]] = js.native
+    var references: js.UndefOr[js.Array[String]] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object OptionsPolicyIdentifier {
     
@@ -195,12 +191,11 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsPolicyUserNotice extends StObject {
     
-    var explicitText: js.UndefOr[String] = js.native
+    var explicitText: js.UndefOr[String] = js.undefined
     
-    var noticeRef: js.UndefOr[OptionsNoticeReference] = js.native
+    var noticeRef: js.UndefOr[OptionsNoticeReference] = js.undefined
   }
   object OptionsPolicyUserNotice {
     
@@ -227,16 +222,15 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsProductionPlace extends StObject {
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object OptionsProductionPlace {
     
@@ -275,12 +269,11 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsSignerRole extends StObject {
     
-    var certified: js.UndefOr[js.Array[String]] = js.native
+    var certified: js.UndefOr[js.Array[String]] = js.undefined
     
-    var claimed: js.UndefOr[js.Array[String]] = js.native
+    var claimed: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OptionsSignerRole {
     
@@ -313,18 +306,17 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsSigningTime extends StObject {
     
     /**
       * Format of the signing time. Default format is ISO
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Signing time value. Default value if now
       */
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object OptionsSigningTime {
     
@@ -351,22 +343,15 @@ object signedXmlMod {
     }
   }
   
-  @js.native
-  trait OptionsXAdES extends OptionsSign {
+  trait OptionsXAdES
+    extends StObject
+       with OptionsSign {
     
-    var policy: js.UndefOr[OptionsPolicyId | Boolean] = js.native
+    var policy: js.UndefOr[OptionsPolicyId | Boolean] = js.undefined
     
-    var productionPlace: js.UndefOr[OptionsProductionPlace] = js.native
+    var productionPlace: js.UndefOr[OptionsProductionPlace] = js.undefined
     
-    var signerRole: js.UndefOr[OptionsSignerRole] = js.native
-    
-    /**
-      * Sets a certificate of signer for signature. Optional
-      *
-      * @type {string} base64 string of X509 certificate
-      * @memberOf OptionsXAdES
-      */
-    var signingCertificate: js.UndefOr[String] = js.native
+    var signerRole: js.UndefOr[OptionsSignerRole] = js.undefined
     
     /**
       * Sets a certificate of signer for signature. Optional
@@ -374,12 +359,20 @@ object signedXmlMod {
       * @type {string} base64 string of X509 certificate
       * @memberOf OptionsXAdES
       */
-    var signingCertificateV2: js.UndefOr[String] = js.native
+    var signingCertificate: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Sets a certificate of signer for signature. Optional
+      *
+      * @type {string} base64 string of X509 certificate
+      * @memberOf OptionsXAdES
+      */
+    var signingCertificateV2: js.UndefOr[String] = js.undefined
     
     /**
       * Sets signing time options
       */
-    var signingTime: js.UndefOr[OptionsSigningTime] = js.native
+    var signingTime: js.UndefOr[OptionsSigningTime] = js.undefined
   }
   object OptionsXAdES {
     

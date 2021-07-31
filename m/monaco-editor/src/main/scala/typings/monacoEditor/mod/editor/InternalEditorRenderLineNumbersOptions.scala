@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalEditorRenderLineNumbersOptions extends StObject {
   
-  val renderFn: (js.Function1[/* lineNumber */ Double, String]) | Null = js.native
+  val renderFn: (js.Function1[/* lineNumber */ Double, String]) | Null
   
-  val renderType: RenderLineNumbersType = js.native
+  val renderType: RenderLineNumbersType
 }
 object InternalEditorRenderLineNumbersOptions {
   
   @scala.inline
   def apply(renderType: RenderLineNumbersType): InternalEditorRenderLineNumbersOptions = {
-    val __obj = js.Dynamic.literal(renderType = renderType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(renderType = renderType.asInstanceOf[js.Any], renderFn = null)
     __obj.asInstanceOf[InternalEditorRenderLineNumbersOptions]
   }
   

@@ -2,19 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentNotebookInfo extends AgentJobInfo {
+trait AgentNotebookInfo
+  extends StObject
+     with AgentJobInfo {
   
-  var executeDatabase: String = js.native
+  var executeDatabase: String
   
-  var lastRunNotebookError: String = js.native
+  var lastRunNotebookError: String
   
-  var targetDatabase: String = js.native
+  var targetDatabase: String
   
-  var templateId: Double = js.native
+  var templateId: Double
 }
 object AgentNotebookInfo {
   

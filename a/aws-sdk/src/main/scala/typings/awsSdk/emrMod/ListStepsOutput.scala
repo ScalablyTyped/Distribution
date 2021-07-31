@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStepsOutput extends StObject {
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
   /**
     * The filtered list of steps for the cluster.
     */
-  var Steps: js.UndefOr[StepSummaryList] = js.native
+  var Steps: js.UndefOr[StepSummaryList] = js.undefined
 }
 object ListStepsOutput {
   

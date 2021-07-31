@@ -3,17 +3,15 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigSpec extends StObject {
   
-  var Data: String = js.native
+  var Data: String
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var Name: String = js.native
+  var Name: String
 }
 object ConfigSpec {
   

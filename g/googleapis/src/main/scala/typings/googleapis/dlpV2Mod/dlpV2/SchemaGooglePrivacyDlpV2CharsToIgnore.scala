@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Characters to skip when doing deidentification of a value. These will be
   * left alone and skipped.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CharsToIgnore extends StObject {
   
-  var charactersToSkip: js.UndefOr[String] = js.native
+  var charactersToSkip: js.UndefOr[String] = js.undefined
   
-  var commonCharactersToIgnore: js.UndefOr[String] = js.native
+  var commonCharactersToIgnore: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CharsToIgnore {
   

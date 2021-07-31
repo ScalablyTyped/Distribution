@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InviteAction extends StObject {
   
   /**
     * The AWS account ID to invite.
     */
-  var Principal: PrincipalString = js.native
+  var Principal: PrincipalString
 }
 object InviteAction {
   

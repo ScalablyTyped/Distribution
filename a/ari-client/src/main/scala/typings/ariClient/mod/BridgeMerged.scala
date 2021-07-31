@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BridgeMerged extends Event {
+trait BridgeMerged
+  extends StObject
+     with Event {
   
   /**
     * Bridge.
     */
-  var bridge: Bridge = js.native
+  var bridge: Bridge
   
   /**
     * Bridge_from.
     */
-  var bridge_from: Bridge = js.native
+  var bridge_from: Bridge
 }
 object BridgeMerged {
   

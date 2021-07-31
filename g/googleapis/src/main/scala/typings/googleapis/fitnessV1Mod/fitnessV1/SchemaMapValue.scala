@@ -2,20 +2,18 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holder object for the value of an entry in a map field of a data point.  A
   * map value supports a subset of the formats that the regular Value supports.
   */
-@js.native
 trait SchemaMapValue extends StObject {
   
   /**
     * Floating point value.
     */
-  var fpVal: js.UndefOr[Double] = js.native
+  var fpVal: js.UndefOr[Double] = js.undefined
 }
 object SchemaMapValue {
   

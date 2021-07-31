@@ -3,15 +3,13 @@ package typings.daterangepicker
 import typings.daterangepicker.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var defaultOptions: js.UndefOr[Options] = js.native
+    var defaultOptions: js.UndefOr[Options] = js.undefined
   }
   object DefaultOptions {
     
@@ -33,30 +31,29 @@ object anon {
   }
   
   /* Inlined std.Required<daterangepicker.daterangepicker.Locale> */
-  @js.native
   trait RequiredLocale extends StObject {
     
-    var applyLabel: String = js.native
+    var applyLabel: String
     
-    var cancelLabel: String = js.native
+    var cancelLabel: String
     
-    var customRangeLabel: String = js.native
+    var customRangeLabel: String
     
-    var daysOfWeek: js.Array[String] = js.native
+    var daysOfWeek: js.Array[String]
     
-    var firstDay: Double = js.native
+    var firstDay: Double
     
-    var format: String = js.native
+    var format: String
     
-    var fromLabel: String = js.native
+    var fromLabel: String
     
-    var monthNames: js.Array[String] = js.native
+    var monthNames: js.Array[String]
     
-    var separator: String = js.native
+    var separator: String
     
-    var toLabel: String = js.native
+    var toLabel: String
     
-    var weekLabel: String = js.native
+    var weekLabel: String
   }
   object RequiredLocale {
     

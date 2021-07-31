@@ -11,8 +11,8 @@ Return a copy of an object excluding the given key, or array of keys. Also accep
 | Full name          | object.omit |
 | Keywords           | clear, delete, key, object, omit, property, remove, value |
 | # releases         | 0 |
-| # dependents       | 231 |
-| # downloads        | 194588897 |
+| # dependents       | 238 |
+| # downloads        | 183425340 |
 | # stars            | 6 |
 
 ## Links

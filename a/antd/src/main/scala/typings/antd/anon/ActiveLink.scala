@@ -2,13 +2,11 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveLink extends StObject {
   
-  var activeLink: Null = js.native
+  var activeLink: Null
 }
 object ActiveLink {
   

@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClassGroup extends StObject {
   
-  def AddMember(Member: Double): Unit = js.native
+  def AddMember(Member: Double): Unit
   
-  def Clone(): IClassGroup = js.native
+  def Clone(): IClassGroup
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Members: IIDs = js.native
+  var Members: IIDs
   
-  var Name: String = js.native
+  var Name: String
   
-  var ObjectType: MFBuiltInObjectType | Double = js.native
+  var ObjectType: MFBuiltInObjectType | Double
   
-  def RemoveMember(Member: Double): Unit = js.native
+  def RemoveMember(Member: Double): Unit
 }
 object IClassGroup {
   

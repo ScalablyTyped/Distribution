@@ -4,23 +4,21 @@ import typings.orientjs.anon.Max
 import typings.orientjs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrientDBClientConfig extends StObject {
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var logger: js.UndefOr[js.Any] = js.native
+  var logger: js.UndefOr[js.Any] = js.undefined
   
-  var pool: js.UndefOr[Max] = js.native
+  var pool: js.UndefOr[Max] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var servers: js.UndefOr[js.Array[OServerConfig]] = js.native
+  var servers: js.UndefOr[js.Array[OServerConfig]] = js.undefined
   
-  var subscribePool: js.UndefOr[`0`] = js.native
+  var subscribePool: js.UndefOr[`0`] = js.undefined
 }
 object OrientDBClientConfig {
   

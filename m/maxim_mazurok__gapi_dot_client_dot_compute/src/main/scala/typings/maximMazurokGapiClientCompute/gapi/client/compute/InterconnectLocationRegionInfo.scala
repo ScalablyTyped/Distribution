@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectLocationRegionInfo extends StObject {
   
   /** Expected round-trip time in milliseconds, from this InterconnectLocation to a VM in this region. */
-  var expectedRttMs: js.UndefOr[String] = js.native
+  var expectedRttMs: js.UndefOr[String] = js.undefined
   
   /** Identifies the network presence of this location. */
-  var locationPresence: js.UndefOr[String] = js.native
+  var locationPresence: js.UndefOr[String] = js.undefined
   
   /** URL for the region of this location. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object InterconnectLocationRegionInfo {
   

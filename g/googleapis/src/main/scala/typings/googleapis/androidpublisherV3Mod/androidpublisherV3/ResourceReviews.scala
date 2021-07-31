@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Reviews")
@@ -32,7 +31,7 @@ class ResourceReviews protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaReview] = js.native
   def get(callback: BodyResponseCallback[SchemaReview]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReview] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReview] = js.native
   def get(params: ParamsResourceReviewsGet): GaxiosPromise[SchemaReview] = js.native
   def get(params: ParamsResourceReviewsGet, callback: BodyResponseCallback[SchemaReview]): Unit = js.native
   def get(
@@ -66,7 +65,7 @@ class ResourceReviews protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaReviewsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReviewsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(params: ParamsResourceReviewsList): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(params: ParamsResourceReviewsList, callback: BodyResponseCallback[SchemaReviewsListResponse]): Unit = js.native
   def list(
@@ -97,7 +96,7 @@ class ResourceReviews protected () extends StObject {
     */
   def reply(): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(callback: BodyResponseCallback[SchemaReviewsReplyResponse]): Unit = js.native
-  def reply(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
+  def reply(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(params: ParamsResourceReviewsReply): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(params: ParamsResourceReviewsReply, callback: BodyResponseCallback[SchemaReviewsReplyResponse]): Unit = js.native
   def reply(

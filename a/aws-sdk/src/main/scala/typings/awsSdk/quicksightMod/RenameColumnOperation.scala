@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameColumnOperation extends StObject {
   
   /**
     * The name of the column to be renamed.
     */
-  var ColumnName: typings.awsSdk.quicksightMod.ColumnName = js.native
+  var ColumnName: typings.awsSdk.quicksightMod.ColumnName
   
   /**
     * The new name for the column.
     */
-  var NewColumnName: ColumnName = js.native
+  var NewColumnName: ColumnName
 }
 object RenameColumnOperation {
   

@@ -2,27 +2,27 @@ package typings.reactNativeSvgCharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PieChartProps[T /* <: PieChartData */] extends ChartProps[T] {
+trait PieChartProps[T /* <: PieChartData */]
+  extends StObject
+     with ChartProps[T] {
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var innerRadius: js.UndefOr[Double | String] = js.native
+  var innerRadius: js.UndefOr[Double | String] = js.undefined
   
-  var labelRadius: js.UndefOr[Double | String] = js.native
+  var labelRadius: js.UndefOr[Double | String] = js.undefined
   
-  var outerRadius: js.UndefOr[Double | String] = js.native
+  var outerRadius: js.UndefOr[Double | String] = js.undefined
   
-  var padAngle: js.UndefOr[Double] = js.native
+  var padAngle: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[SortFunction[T]] = js.native
+  var sort: js.UndefOr[SortFunction[T]] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var valueAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.native
+  var valueAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.undefined
 }
 object PieChartProps {
   
@@ -33,7 +33,7 @@ object PieChartProps {
   }
   
   @scala.inline
-  implicit class PieChartPropsMutableBuilder[Self <: PieChartProps[_], T /* <: PieChartData */] (val x: Self with PieChartProps[T]) extends AnyVal {
+  implicit class PieChartPropsMutableBuilder[Self <: PieChartProps[?], T /* <: PieChartData */] (val x: Self & PieChartProps[T]) extends AnyVal {
     
     @scala.inline
     def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])

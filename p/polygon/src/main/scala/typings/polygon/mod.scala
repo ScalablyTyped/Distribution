@@ -7,7 +7,6 @@ import typings.polygon.anon.X
 import typings.polygon.anon.X1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,7 +31,9 @@ object mod {
     */
   @JSImport("polygon", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Polygon {
+  class ^ protected ()
+    extends StObject
+       with Polygon {
     def this(points: js.Array[js.Array[Double] | X | typings.vec2.mod.^]) = this()
   }
   
@@ -127,7 +128,7 @@ object mod {
           /* current */ typings.vec2.mod.^, 
           /* next */ typings.vec2.mod.^, 
           /* idx */ Double, 
-          _
+          js.Any
         ]
     ): Polygon = js.native
     
@@ -155,7 +156,12 @@ object mod {
       * Iterate over the lines in this polygon
       */
     def lines(
-      fn: js.Function3[/* start */ typings.vec2.mod.^, /* end */ typings.vec2.mod.^, /* index */ Double, _]
+      fn: js.Function3[
+          /* start */ typings.vec2.mod.^, 
+          /* end */ typings.vec2.mod.^, 
+          /* index */ Double, 
+          js.Any
+        ]
     ): Polygon = js.native
     
     /**

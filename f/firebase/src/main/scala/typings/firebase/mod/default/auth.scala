@@ -1,10 +1,13 @@
 package typings.firebase.mod.default
 
 import typings.firebase.mod.firebase.app.App
+import typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation
 import typings.firebase.mod.firebase.auth.Auth
+import typings.firebase.mod.firebase.auth.AuthProvider
+import typings.firebase.mod.firebase.auth.MultiFactorInfo
+import typings.firebase.mod.firebase.auth.UserCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auth {
@@ -32,12 +35,14 @@ object auth {
     * ```
     * @param app
     */
+  @scala.inline
+  def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
+  @scala.inline
+  def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
+  
   @JSImport("firebase", "default.auth")
   @js.native
-  def apply(): Auth = js.native
-  @JSImport("firebase", "default.auth")
-  @js.native
-  def apply(app: App): Auth = js.native
+  val ^ : js.Any = js.native
   
   object ActionCodeInfo {
     
@@ -112,8 +117,52 @@ object auth {
   @JSImport("firebase", "default.auth.ActionCodeURL")
   @js.native
   class ActionCodeURL protected ()
-    extends typings.firebase.mod.firebase.auth.ActionCodeURL
+    extends StObject
+       with typings.firebase.mod.firebase.auth.ActionCodeURL {
+    
+    /**
+      * The API key of the email action link.
+      */
+    /* CompleteClass */
+    var apiKey: String = js.native
+    
+    /**
+      * The action code of the email action link.
+      */
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /**
+      * The continue URL of the email action link. Null if not provided.
+      */
+    /* CompleteClass */
+    var continueUrl: String | Null = js.native
+    
+    /**
+      * The language code of the email action link. Null if not provided.
+      */
+    /* CompleteClass */
+    var languageCode: String | Null = js.native
+    
+    /**
+      * The action performed by the email action link. It returns from one
+      * of the types from {@link firebase.auth.ActionCodeInfo}.
+      */
+    /* CompleteClass */
+    var operation: Operation = js.native
+    
+    /**
+      * The tenant ID of the email action link. Null if the email action
+      * is from the parent project.
+      */
+    /* CompleteClass */
+    var tenantId: String | Null = js.native
+  }
   object ActionCodeURL {
+    
+    @JSImport("firebase", "default.auth.ActionCodeURL")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parses the email action link string and returns an ActionCodeURL object
@@ -123,9 +172,8 @@ object auth {
       * @return The ActionCodeURL object, or null if the link is invalid.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.ActionCodeURL.parseLink")
-    @js.native
-    def parseLink(link: String): typings.firebase.mod.firebase.auth.ActionCodeURL | Null = js.native
+    @scala.inline
+    def parseLink(link: String): typings.firebase.mod.firebase.auth.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.ActionCodeURL | Null]
   }
   
   object Auth {
@@ -180,12 +228,39 @@ object auth {
   @JSImport("firebase", "default.auth.AuthCredential")
   @js.native
   abstract class AuthCredential ()
-    extends typings.firebase.mod.firebase.auth.AuthCredential
+    extends StObject
+       with typings.firebase.mod.firebase.auth.AuthCredential {
+    
+    /**
+      * The authentication provider ID for the credential.
+      * For example, 'facebook.com', or 'google.com'.
+      */
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * The authentication sign in method for the credential.
+      * For example, 'password', or 'emailLink. This corresponds to the sign-in
+      * method identifier as returned in
+      * {@link firebase.auth.Auth.fetchSignInMethodsForEmail}.
+      */
+    /* CompleteClass */
+    var signInMethod: String = js.native
+    
+    /**
+      * Returns a JSON-serializable representation of this object.
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Object = js.native
+  }
   object AuthCredential {
     
-    @JSImport("firebase", "default.auth.AuthCredential.fromJSON")
+    @JSImport("firebase", "default.auth.AuthCredential")
     @js.native
-    def fromJSON(json: String): typings.firebase.mod.firebase.auth.AuthCredential | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromJSON(json: String): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
     /**
       * Static method to deserialize a JSON representation of an object into an
       * {@link firebase.auth.AuthCredential}. Input can be either Object or the
@@ -196,9 +271,8 @@ object auth {
       *     AuthCredential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.AuthCredential.fromJSON")
-    @js.native
-    def fromJSON(json: js.Object): typings.firebase.mod.firebase.auth.AuthCredential | Null = js.native
+    @scala.inline
+    def fromJSON(json: js.Object): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
   }
   
   /**
@@ -210,7 +284,12 @@ object auth {
   @JSImport("firebase", "default.auth.EmailAuthProvider")
   @js.native
   class EmailAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.EmailAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.EmailAuthProviderInstance {
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+  }
   object EmailAuthProvider {
     
     @JSImport("firebase", "default.auth.EmailAuthProvider")
@@ -260,9 +339,8 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.EmailAuthProvider.credential")
-    @js.native
-    def credential(email: String, password: String): typings.firebase.mod.firebase.auth.AuthCredential = js.native
+    @scala.inline
+    def credential(email: String, password: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
     
     /**
       * Initialize an `EmailAuthProvider` credential using an email and an email link
@@ -281,9 +359,8 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.EmailAuthProvider.credentialWithLink")
-    @js.native
-    def credentialWithLink(email: String, emailLink: String): typings.firebase.mod.firebase.auth.AuthCredential = js.native
+    @scala.inline
+    def credentialWithLink(email: String, emailLink: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
   }
   
   /**
@@ -292,7 +369,12 @@ object auth {
   @JSImport("firebase", "default.auth.EmailAuthProvider_Instance")
   @js.native
   class EmailAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.EmailAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.EmailAuthProviderInstance {
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+  }
   
   /**
     * Facebook auth provider.
@@ -332,7 +414,35 @@ object auth {
   @JSImport("firebase", "default.auth.FacebookAuthProvider")
   @js.native
   class FacebookAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.FacebookAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.FacebookAuthProviderInstance {
+    
+    /**
+      * @param scope Facebook OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Facebook OAuth request for
+      * popup and redirect sign-in operations.
+      * Valid parameters include 'auth_type', 'display' and 'locale'.
+      * For a detailed list, check the
+      * {@link https://goo.gl/pve4fo Facebook}
+      * documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   object FacebookAuthProvider {
     
     @JSImport("firebase", "default.auth.FacebookAuthProvider")
@@ -369,9 +479,8 @@ object auth {
       * @param token Facebook access token.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.FacebookAuthProvider.credential")
-    @js.native
-    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
+    @scala.inline
+    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -380,7 +489,35 @@ object auth {
   @JSImport("firebase", "default.auth.FacebookAuthProvider_Instance")
   @js.native
   class FacebookAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.FacebookAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.FacebookAuthProviderInstance {
+    
+    /**
+      * @param scope Facebook OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Facebook OAuth request for
+      * popup and redirect sign-in operations.
+      * Valid parameters include 'auth_type', 'display' and 'locale'.
+      * For a detailed list, check the
+      * {@link https://goo.gl/pve4fo Facebook}
+      * documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   
   /**
     * GitHub auth provider.
@@ -452,7 +589,34 @@ object auth {
   @JSImport("firebase", "default.auth.GithubAuthProvider")
   @js.native
   class GithubAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.GithubAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.GithubAuthProviderInstance {
+    
+    /**
+      * @param scope Github OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a GitHub OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'allow_signup'.
+      * For a detailed list, check the
+      * {@link https://developer.github.com/v3/oauth/ GitHub} documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   object GithubAuthProvider {
     
     @JSImport("firebase", "default.auth.GithubAuthProvider")
@@ -490,9 +654,8 @@ object auth {
       * @return {!firebase.auth.OAuthCredential} The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.GithubAuthProvider.credential")
-    @js.native
-    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
+    @scala.inline
+    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -501,7 +664,34 @@ object auth {
   @JSImport("firebase", "default.auth.GithubAuthProvider_Instance")
   @js.native
   class GithubAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.GithubAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.GithubAuthProviderInstance {
+    
+    /**
+      * @param scope Github OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a GitHub OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'allow_signup'.
+      * For a detailed list, check the
+      * {@link https://developer.github.com/v3/oauth/ GitHub} documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   
   /**
     * Google auth provider.
@@ -544,7 +734,36 @@ object auth {
   @JSImport("firebase", "default.auth.GoogleAuthProvider")
   @js.native
   class GoogleAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.GoogleAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.GoogleAuthProviderInstance {
+    
+    /**
+      * @param scope Google OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Google OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'hd', 'hl', 'include_granted_scopes', 'login_hint'
+      * and 'prompt'.
+      * For a detailed list, check the
+      * {@link https://goo.gl/Xo01Jm Google}
+      * documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   object GoogleAuthProvider {
     
     @JSImport("firebase", "default.auth.GoogleAuthProvider")
@@ -585,21 +804,16 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.GoogleAuthProvider.credential")
-    @js.native
-    def credential(): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
-    @JSImport("firebase", "default.auth.GoogleAuthProvider.credential")
-    @js.native
-    def credential(idToken: js.UndefOr[scala.Nothing], accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
-    @JSImport("firebase", "default.auth.GoogleAuthProvider.credential")
-    @js.native
-    def credential(idToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
-    @JSImport("firebase", "default.auth.GoogleAuthProvider.credential")
-    @js.native
-    def credential(idToken: String, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
-    @JSImport("firebase", "default.auth.GoogleAuthProvider.credential")
-    @js.native
-    def credential(idToken: Null, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
+    @scala.inline
+    def credential(): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    @scala.inline
+    def credential(idToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    @scala.inline
+    def credential(idToken: String, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    @scala.inline
+    def credential(idToken: Null, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    @scala.inline
+    def credential(idToken: Unit, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -608,7 +822,36 @@ object auth {
   @JSImport("firebase", "default.auth.GoogleAuthProvider_Instance")
   @js.native
   class GoogleAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.GoogleAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.GoogleAuthProviderInstance {
+    
+    /**
+      * @param scope Google OAuth scope.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def addScope(scope: String): AuthProvider = js.native
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Google OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'hd', 'hl', 'include_granted_scopes', 'login_hint'
+      * and 'prompt'.
+      * For a detailed list, check the
+      * {@link https://goo.gl/Xo01Jm Google}
+      * documentation.
+      * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
+      * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   
   /**
     * The base class for asserting ownership of a second factor. This is used to
@@ -619,7 +862,15 @@ object auth {
   @JSImport("firebase", "default.auth.MultiFactorAssertion")
   @js.native
   abstract class MultiFactorAssertion ()
-    extends typings.firebase.mod.firebase.auth.MultiFactorAssertion
+    extends StObject
+       with typings.firebase.mod.firebase.auth.MultiFactorAssertion {
+    
+    /**
+      * The identifier of the second factor.
+      */
+    /* CompleteClass */
+    var factorId: String = js.native
+  }
   
   /**
     * The class used to facilitate recovery from
@@ -675,7 +926,62 @@ object auth {
   @JSImport("firebase", "default.auth.MultiFactorResolver")
   @js.native
   class MultiFactorResolver protected ()
-    extends typings.firebase.mod.firebase.auth.MultiFactorResolver
+    extends StObject
+       with typings.firebase.mod.firebase.auth.MultiFactorResolver {
+    
+    /**
+      * The Auth instance used to sign in with the first factor.
+      */
+    /* CompleteClass */
+    var auth: Auth = js.native
+    
+    /**
+      * The list of hints for the second factors needed to complete the sign-in
+      * for the current session.
+      */
+    /* CompleteClass */
+    var hints: js.Array[MultiFactorInfo] = js.native
+    
+    /**
+      * A helper function to help users complete sign in with a second factor
+      * using an {@link firebase.auth.MultiFactorAssertion} confirming the user
+      * successfully completed the second factor challenge.
+      *
+      * <h4>Error Codes</h4>
+      * <dl>
+      * <dt>auth/invalid-verification-code</dt>
+      * <dd>Thrown if the verification code is not valid.</dd>
+      * <dt>auth/missing-verification-code</dt>
+      * <dd>Thrown if the verification code is missing.</dd>
+      * <dt>auth/invalid-verification-id</dt>
+      * <dd>Thrown if the credential is a
+      *     {@link firebase.auth.PhoneAuthProvider.credential} and the verification
+      *     ID of the credential is not valid.</dd>
+      * <dt>auth/missing-verification-id</dt>
+      * <dd>Thrown if the verification ID is missing.</dd>
+      * <dt>auth/code-expired</dt>
+      * <dd>Thrown if the verification code has expired.</dd>
+      * <dt>auth/invalid-multi-factor-session</dt>
+      * <dd>Thrown if the request does not contain a valid proof of first factor
+      *     successful sign-in.</dd>
+      * <dt>auth/missing-multi-factor-session</dt>
+      * <dd>Thrown if The request is missing proof of first factor successful
+      *     sign-in.</dd>
+      * </dl>
+      *
+      * @param assertion The multi-factor assertion to resolve sign-in with.
+      * @return The promise that resolves with the user credential object.
+      */
+    /* CompleteClass */
+    override def resolveSignIn(assertion: typings.firebase.mod.firebase.auth.MultiFactorAssertion): js.Promise[UserCredential] = js.native
+    
+    /**
+      * The session identifier for the current sign-in flow, which can be used
+      * to complete the second factor sign-in.
+      */
+    /* CompleteClass */
+    var session: typings.firebase.mod.firebase.auth.MultiFactorSession = js.native
+  }
   
   /**
     * The multi-factor session object used for enrolling a second factor on a
@@ -684,7 +990,8 @@ object auth {
   @JSImport("firebase", "default.auth.MultiFactorSession")
   @js.native
   class MultiFactorSession protected ()
-    extends typings.firebase.mod.firebase.auth.MultiFactorSession
+    extends StObject
+       with typings.firebase.mod.firebase.auth.MultiFactorSession
   
   /**
     * Interface that represents the OAuth credentials returned by an OAuth
@@ -695,7 +1002,31 @@ object auth {
   @JSImport("firebase", "default.auth.OAuthCredential")
   @js.native
   class OAuthCredential protected ()
-    extends typings.firebase.mod.firebase.auth.OAuthCredential
+    extends StObject
+       with typings.firebase.mod.firebase.auth.OAuthCredential {
+    
+    /**
+      * The authentication provider ID for the credential.
+      * For example, 'facebook.com', or 'google.com'.
+      */
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * The authentication sign in method for the credential.
+      * For example, 'password', or 'emailLink. This corresponds to the sign-in
+      * method identifier as returned in
+      * {@link firebase.auth.Auth.fetchSignInMethodsForEmail}.
+      */
+    /* CompleteClass */
+    var signInMethod: String = js.native
+    
+    /**
+      * Returns a JSON-serializable representation of this object.
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Object = js.native
+  }
   
   /**
     * Generic OAuth provider.
@@ -738,8 +1069,12 @@ object auth {
   @JSImport("firebase", "default.auth.OAuthProvider")
   @js.native
   class OAuthProvider protected ()
-    extends typings.firebase.mod.firebase.auth.OAuthProvider {
+    extends StObject
+       with typings.firebase.mod.firebase.auth.OAuthProvider {
     def this(providerId: String) = this()
+    
+    /* CompleteClass */
+    var providerId: String = js.native
   }
   
   /**
@@ -750,7 +1085,31 @@ object auth {
   @JSImport("firebase", "default.auth.PhoneAuthCredential")
   @js.native
   class PhoneAuthCredential protected ()
-    extends typings.firebase.mod.firebase.auth.AuthCredential
+    extends StObject
+       with typings.firebase.mod.firebase.auth.AuthCredential {
+    
+    /**
+      * The authentication provider ID for the credential.
+      * For example, 'facebook.com', or 'google.com'.
+      */
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * The authentication sign in method for the credential.
+      * For example, 'password', or 'emailLink. This corresponds to the sign-in
+      * method identifier as returned in
+      * {@link firebase.auth.Auth.fetchSignInMethodsForEmail}.
+      */
+    /* CompleteClass */
+    var signInMethod: String = js.native
+    
+    /**
+      * Returns a JSON-serializable representation of this object.
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Object = js.native
+  }
   
   /**
     * Phone number auth provider.
@@ -778,7 +1137,12 @@ object auth {
   @JSImport("firebase", "default.auth.PhoneAuthProvider")
   @js.native
   class PhoneAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.PhoneAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.PhoneAuthProviderInstance {
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+  }
   object PhoneAuthProvider {
     
     @JSImport("firebase", "default.auth.PhoneAuthProvider")
@@ -823,9 +1187,8 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.PhoneAuthProvider.credential")
-    @js.native
-    def credential(verificationId: String, verificationCode: String): typings.firebase.mod.firebase.auth.AuthCredential = js.native
+    @scala.inline
+    def credential(verificationId: String, verificationCode: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(verificationId.asInstanceOf[js.Any], verificationCode.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
   }
   
   /**
@@ -834,8 +1197,12 @@ object auth {
   @JSImport("firebase", "default.auth.PhoneAuthProvider_Instance")
   @js.native
   class PhoneAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.PhoneAuthProviderInstance {
+    extends StObject
+       with typings.firebase.mod.firebase.auth.PhoneAuthProviderInstance {
     def this(auth: Auth) = this()
+    
+    /* CompleteClass */
+    var providerId: String = js.native
   }
   
   /**
@@ -844,7 +1211,15 @@ object auth {
   @JSImport("firebase", "default.auth.PhoneMultiFactorAssertion")
   @js.native
   class PhoneMultiFactorAssertion protected ()
-    extends typings.firebase.mod.firebase.auth.MultiFactorAssertion
+    extends StObject
+       with typings.firebase.mod.firebase.auth.MultiFactorAssertion {
+    
+    /**
+      * The identifier of the second factor.
+      */
+    /* CompleteClass */
+    var factorId: String = js.native
+  }
   
   /**
     * The class used to initialize {@link firebase.auth.PhoneMultiFactorAssertion}.
@@ -852,7 +1227,8 @@ object auth {
   @JSImport("firebase", "default.auth.PhoneMultiFactorGenerator")
   @js.native
   class PhoneMultiFactorGenerator protected ()
-    extends typings.firebase.mod.firebase.auth.PhoneMultiFactorGenerator
+    extends StObject
+       with typings.firebase.mod.firebase.auth.PhoneMultiFactorGenerator
   object PhoneMultiFactorGenerator {
     
     @JSImport("firebase", "default.auth.PhoneMultiFactorGenerator")
@@ -874,9 +1250,8 @@ object auth {
       * of the phone second factor.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.PhoneMultiFactorGenerator.assertion")
-    @js.native
-    def assertion(phoneAuthCredential: typings.firebase.mod.firebase.auth.PhoneAuthCredential): typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion = js.native
+    @scala.inline
+    def assertion(phoneAuthCredential: typings.firebase.mod.firebase.auth.PhoneAuthCredential): typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion]
   }
   
   /**
@@ -903,7 +1278,37 @@ object auth {
   @JSImport("firebase", "default.auth.RecaptchaVerifier")
   @js.native
   class RecaptchaVerifier ()
-    extends typings.firebase.mod.firebase.auth.RecaptchaVerifierInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.RecaptchaVerifierInstance {
+    
+    /**
+      * Clears the reCAPTCHA widget from the page and destroys the current instance.
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Renders the reCAPTCHA widget on the page.
+      * @return A Promise that resolves with the
+      *     reCAPTCHA widget ID.
+      */
+    /* CompleteClass */
+    override def render(): js.Promise[Double] = js.native
+    
+    /**
+      * Identifies the type of application verifier (e.g. "recaptcha").
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /**
+      * Executes the verification process.
+      * @return A Promise for a token that can be used to
+      *     assert the validity of a request.
+      */
+    /* CompleteClass */
+    override def verify(): js.Promise[String] = js.native
+  }
   
   /**
     * @webonly
@@ -912,24 +1317,57 @@ object auth {
   @JSImport("firebase", "default.auth.RecaptchaVerifier_Instance")
   @js.native
   class RecaptchaVerifierInstance protected ()
-    extends typings.firebase.mod.firebase.auth.RecaptchaVerifierInstance {
+    extends StObject
+       with typings.firebase.mod.firebase.auth.RecaptchaVerifierInstance {
     def this(container: String) = this()
     def this(container: js.Any) = this()
     def this(container: String, parameters: js.Object) = this()
     def this(container: js.Any, parameters: js.Object) = this()
-    def this(container: String, parameters: js.UndefOr[scala.Nothing], app: App) = this()
     def this(container: String, parameters: js.Object, app: App) = this()
     def this(container: String, parameters: Null, app: App) = this()
-    def this(container: js.Any, parameters: js.UndefOr[scala.Nothing], app: App) = this()
+    def this(container: String, parameters: Unit, app: App) = this()
     def this(container: js.Any, parameters: js.Object, app: App) = this()
     def this(container: js.Any, parameters: Null, app: App) = this()
+    def this(container: js.Any, parameters: Unit, app: App) = this()
+    
+    /**
+      * Clears the reCAPTCHA widget from the page and destroys the current instance.
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Renders the reCAPTCHA widget on the page.
+      * @return A Promise that resolves with the
+      *     reCAPTCHA widget ID.
+      */
+    /* CompleteClass */
+    override def render(): js.Promise[Double] = js.native
+    
+    /**
+      * Identifies the type of application verifier (e.g. "recaptcha").
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /**
+      * Executes the verification process.
+      * @return A Promise for a token that can be used to
+      *     assert the validity of a request.
+      */
+    /* CompleteClass */
+    override def verify(): js.Promise[String] = js.native
   }
   
   @JSImport("firebase", "default.auth.SAMLAuthProvider")
   @js.native
   class SAMLAuthProvider protected ()
-    extends typings.firebase.mod.firebase.auth.SAMLAuthProvider {
+    extends StObject
+       with typings.firebase.mod.firebase.auth.SAMLAuthProvider {
     def this(providerId: String) = this()
+    
+    /* CompleteClass */
+    var providerId: String = js.native
   }
   
   /**
@@ -970,7 +1408,25 @@ object auth {
   @JSImport("firebase", "default.auth.TwitterAuthProvider")
   @js.native
   class TwitterAuthProvider ()
-    extends typings.firebase.mod.firebase.auth.TwitterAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.TwitterAuthProviderInstance {
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Twitter OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'lang'.
+      * Reserved required OAuth 1.0 parameters such as 'oauth_consumer_key',
+      * 'oauth_token', 'oauth_signature', etc are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
   object TwitterAuthProvider {
     
     @JSImport("firebase", "default.auth.TwitterAuthProvider")
@@ -1002,9 +1458,8 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @JSImport("firebase", "default.auth.TwitterAuthProvider.credential")
-    @js.native
-    def credential(token: String, secret: String): typings.firebase.mod.firebase.auth.OAuthCredential = js.native
+    @scala.inline
+    def credential(token: String, secret: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -1013,5 +1468,23 @@ object auth {
   @JSImport("firebase", "default.auth.TwitterAuthProvider_Instance")
   @js.native
   class TwitterAuthProviderInstance ()
-    extends typings.firebase.mod.firebase.auth.TwitterAuthProviderInstance
+    extends StObject
+       with typings.firebase.mod.firebase.auth.TwitterAuthProviderInstance {
+    
+    /* CompleteClass */
+    var providerId: String = js.native
+    
+    /**
+      * Sets the OAuth custom parameters to pass in a Twitter OAuth request for popup
+      * and redirect sign-in operations.
+      * Valid parameters include 'lang'.
+      * Reserved required OAuth 1.0 parameters such as 'oauth_consumer_key',
+      * 'oauth_token', 'oauth_signature', etc are not allowed and will be ignored.
+      * @param customOAuthParameters The custom OAuth parameters to pass
+      *     in the OAuth request.
+      * @return The provider instance itself.
+      */
+    /* CompleteClass */
+    override def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  }
 }

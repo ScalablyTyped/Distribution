@@ -10,10 +10,10 @@ Human-friendly and powerful HTTP request library for Node.js
 | ------------------ | :-------------: |
 | Full name          | got |
 | Keywords           | http, https, http2, get, got, url, uri, request, simple, curl, wget, fetch, net, network, gzip, brotli, requests, human-friendly, axios, superagent, node-fetch, ky |
-| # releases         | 58 |
-| # dependents       | 3177 |
-| # downloads        | 507884465 |
-| # stars            | 127 |
+| # releases         | 55 |
+| # dependents       | 3670 |
+| # downloads        | 716267463 |
+| # stars            | 128 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/got#readme)

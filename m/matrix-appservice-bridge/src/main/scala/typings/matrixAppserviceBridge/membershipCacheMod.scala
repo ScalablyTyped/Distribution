@@ -2,7 +2,6 @@ package typings.matrixAppserviceBridge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object membershipCacheMod {
@@ -74,12 +73,11 @@ object membershipCacheMod {
   */
   type UserMembership = _UserMembership | Null
   
-  @js.native
   trait UserProfile extends StObject {
     
-    var avatar_url: js.UndefOr[String] = js.native
+    var avatar_url: js.UndefOr[String] = js.undefined
     
-    var displayname: js.UndefOr[String] = js.native
+    var displayname: js.UndefOr[String] = js.undefined
   }
   object UserProfile {
     

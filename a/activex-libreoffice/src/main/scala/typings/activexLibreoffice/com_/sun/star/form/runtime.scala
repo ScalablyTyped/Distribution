@@ -47,7 +47,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtime {
@@ -57,14 +56,13 @@ object runtime {
     * @see XFormOperations
     * @since OOo 2.2
     */
-  @js.native
   trait FeatureState extends StObject {
     
     /** determines whether the respective feature is enabled (i.e. available) in the current state of the form. */
-    var Enabled: Boolean = js.native
+    var Enabled: Boolean
     
     /** determines the state of the feature. The concrete semantics depends on the concrete {@link FormFeature} . */
-    var State: js.Any = js.native
+    var State: js.Any
   }
   object FeatureState {
     
@@ -90,17 +88,18 @@ object runtime {
     * @see XFilterController
     * @since OOo 3.3
     */
-  @js.native
-  trait FilterEvent extends EventObject {
+  trait FilterEvent
+    extends StObject
+       with EventObject {
     
     /** denotes the index of the **disjunctive term** to which the event applies, if any. */
-    var DisjunctiveTerm: Double = js.native
+    var DisjunctiveTerm: Double
     
     /** denotes the index of the **filter component** to which the event applies, if any. */
-    var FilterComponent: Double = js.native
+    var FilterComponent: Double
     
     /** denotes the **predicate expression** associated with the event. */
-    var PredicateExpression: String = js.native
+    var PredicateExpression: String
   }
   object FilterEvent {
     
@@ -216,20 +215,21 @@ object runtime {
     * encapsulates operations on a database form which has a UI representation, and is interacting with the user.
     * @since OOo 2.2
     */
-  @js.native
-  trait FormOperations extends XFormOperations {
+  trait FormOperations
+    extends StObject
+       with XFormOperations {
     
     /**
       * creates a `FormOperations` instance which works on a {@link com.sun.star.form.component.DataForm} instance.
       * @throws IllegalArgumentException if the given form is `NULL` , or does not support the {@link com.sun.star.form.component.DataForm} service.
       */
-    def createWithForm(Form: XForm): Unit = js.native
+    def createWithForm(Form: XForm): Unit
     
     /**
       * creates a `FormOperations` instance which works on a {@link com.sun.star.form.FormController} instance.
       * @throws IllegalArgumentException if the given form controller is `NULL` , or does not have a model denoting a valid {@link com.sun.star.form.component.Da
       */
-    def createWithFormController(Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Unit = js.native
+    def createWithFormController(Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Unit
   }
   object FormOperations {
     
@@ -276,7 +276,6 @@ object runtime {
     * @see XFormOperations
     * @since OOo 2.2
     */
-  @js.native
   trait XFeatureInvalidation extends StObject {
     
     /**
@@ -285,7 +284,7 @@ object runtime {
       * This method is used of it cannot be exactly and reliably determined which features might actually have changed their state. In this case, the callee
       * should assume all features it is interested in must be requeried.
       */
-    def invalidateAllFeatures(): Unit = js.native
+    def invalidateAllFeatures(): Unit
     
     /**
       * invalidates the given FormFeatures
@@ -294,7 +293,7 @@ object runtime {
       * potentially out-of-date, and need to be updated.
       * @param Features The set of features whose state might have changed.
       */
-    def invalidateFeatures(Features: SeqEquiv[Double]): Unit = js.native
+    def invalidateFeatures(Features: SeqEquiv[Double]): Unit
   }
   object XFeatureInvalidation {
     
@@ -346,21 +345,20 @@ object runtime {
     * @see com.sun.star.sdb.SQLFilterOperator
     * @since OOo 3.3
     */
-  @js.native
   trait XFilterController extends StObject {
     
     /** denotes the [**active term**]{@link url="#active_term"} of the filter controller. */
-    var ActiveTerm: Double = js.native
+    var ActiveTerm: Double
     
     /** is the number of **disjunctive terms** of the filter expression represented by the form based filter. */
-    var DisjunctiveTerms: Double = js.native
+    var DisjunctiveTerms: Double
     
     /**
       * is the number of **filter components** , or filter controls, which the filter controller is responsible for.
       *
       * This number is constant during one session of the form based filter.
       */
-    var FilterComponents: Double = js.native
+    var FilterComponents: Double
     
     /**
       * retrieves the entirety of the **predicate expressions** represented by the filter controller.
@@ -368,7 +366,7 @@ object runtime {
       * Each element of the returned sequence is a **disjunctive term** , having exactly {@link FilterComponents} elements, which denote the single
       * **predicate expressions** of this term.
       */
-    val PredicateExpressions: SafeArray[SafeArray[String]] = js.native
+    val PredicateExpressions: SafeArray[SafeArray[String]]
     
     /**
       * registers a listener to be notified of certain changes in the form based filter.
@@ -376,10 +374,10 @@ object runtime {
       * Registering the same listener multiple times results in multiple notifications of the same event, and also requires multiple revocations of the
       * listener.
       */
-    def addFilterControllerListener(Listener: XFilterControllerListener): Unit = js.native
+    def addFilterControllerListener(Listener: XFilterControllerListener): Unit
     
     /** appends an empty disjunctive term to the list of terms. */
-    def appendEmptyDisjunctiveTerm(): Unit = js.native
+    def appendEmptyDisjunctiveTerm(): Unit
     
     /**
       * retrieves the filter component with the given index.
@@ -390,7 +388,7 @@ object runtime {
       * @see com.sun.star.form.DataAwareControlModel.BoundField
       * @throws com::sun::star::lang::IndexOutOfBoundsException if Component is out of the allowed range.
       */
-    def getFilterComponent(Component: Double): XControl = js.native
+    def getFilterComponent(Component: Double): XControl
     
     /**
       * retrieves the entirety of the **predicate expressions** represented by the filter controller.
@@ -398,17 +396,17 @@ object runtime {
       * Each element of the returned sequence is a **disjunctive term** , having exactly {@link FilterComponents} elements, which denote the single
       * **predicate expressions** of this term.
       */
-    def getPredicateExpressions(): SafeArray[SafeArray[String]] = js.native
+    def getPredicateExpressions(): SafeArray[SafeArray[String]]
     
     /**
       * removes a given **disjunctive term**
       * @param Term the index of the term to remove. Must be greater than or equal to 0, and smaller than {@link DisjunctiveTerms} .
       * @throws com::sun::star::lang::IndexOutOfBoundsException if Term is out of the allowed range.
       */
-    def removeDisjunctiveTerm(Term: Double): Unit = js.native
+    def removeDisjunctiveTerm(Term: Double): Unit
     
     /** revokes a listener which was previously registered to be notified of certain changes in the form based filter. */
-    def removeFilterControllerListener(Listener: XFilterControllerListener): Unit = js.native
+    def removeFilterControllerListener(Listener: XFilterControllerListener): Unit
     
     /**
       * sets a given **predicate expression**
@@ -417,7 +415,7 @@ object runtime {
       * @param PredicateExpression denotes the **predicate expression** to set for the given filter component in the given term.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the indexes is out of the allowed range
       */
-    def setPredicateExpression(Component: Double, Term: Double, PredicateExpression: String): Unit = js.native
+    def setPredicateExpression(Component: Double, Term: Double, PredicateExpression: String): Unit
   }
   object XFilterController {
     
@@ -481,8 +479,9 @@ object runtime {
     * is implemented by components listening for events fired by an {@link XFilterController} .
     * @since OOo 3.3
     */
-  @js.native
-  trait XFilterControllerListener extends XEventListener {
+  trait XFilterControllerListener
+    extends StObject
+       with XEventListener {
     
     /**
       * is fired when a **disjunctive term** was added to the filter of the filter controller.
@@ -491,7 +490,7 @@ object runtime {
       *
       * {@link FilterEvent.FilterComponent} and {@link FilterEvent.PredicateExpression} are not used for this event type.
       */
-    def disjunctiveTermAdded(Event: FilterEvent): Unit = js.native
+    def disjunctiveTermAdded(Event: FilterEvent): Unit
     
     /**
       * is fired when a **disjunctive term** was removed from the filter of the filter controller.
@@ -500,7 +499,7 @@ object runtime {
       *
       * {@link FilterEvent.FilterComponent} and {@link FilterEvent.PredicateExpression} are not used for this event type.
       */
-    def disjunctiveTermRemoved(Event: FilterEvent): Unit = js.native
+    def disjunctiveTermRemoved(Event: FilterEvent): Unit
     
     /**
       * is fired when a single **predicate expression** of the filter represented by the filter controller changed.
@@ -512,7 +511,7 @@ object runtime {
       *
       * {@link FilterEvent.PredicateExpression} is the new **predicate expressions** .
       */
-    def predicateExpressionChanged(Event: FilterEvent): Unit = js.native
+    def predicateExpressionChanged(Event: FilterEvent): Unit
   }
   object XFilterControllerListener {
     
@@ -607,11 +606,11 @@ object runtime {
     * @see com.sun.star.sdb.DataSource.Settings
     * @since OOo 3.3
     */
-  @js.native
   trait XFormController
-    extends XIndexAccess
+    extends StObject
        with XTabController
        with XChild
+       with XIndexAccess
        with XEnumerationAccess
        with XComponent
        with XModifyBroadcaster
@@ -623,32 +622,32 @@ object runtime {
        with XFilterController {
     
     /** allows to delegate certain tasks to the context of the form controller */
-    var Context: XFormControllerContext = js.native
+    var Context: XFormControllerContext
     
     /** provides access to the currently active control */
-    var CurrentControl: XControl = js.native
+    var CurrentControl: XControl
     
     /**
       * denotes the instance which is used to implement operations on the form which the controller works for.
       *
       * This instance can be used, for instance, to determine the current state of certain form features.
       */
-    var FormOperations: XFormOperations = js.native
+    var FormOperations: XFormOperations
     
     /** used (if not `NULL` ) for user interactions triggered by the form controller. */
-    var InteractionHandler: XInteractionHandler = js.native
+    var InteractionHandler: XInteractionHandler
     
     /** adds the specified listener to receive notifications whenever the activation state of the controller changes. */
-    def addActivateListener(Listener: XFormControllerListener): Unit = js.native
+    def addActivateListener(Listener: XFormControllerListener): Unit
     
     /**
       * adds a controller to the list of child controllers
       * @throws com::sun::star::lang::IllegalArgumentException if the given controller is `NULL` , or cannot rightfully be a child controller. Since controllers
       */
-    def addChildController(ChildController: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Unit = js.native
+    def addChildController(ChildController: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Unit
     
     /** removes the specified listener from the list of components to receive notifications whenever the activation state of the controller changes. */
-    def removeActivateListener(Listener: XFormControllerListener): Unit = js.native
+    def removeActivateListener(Listener: XFormControllerListener): Unit
   }
   object XFormController {
     
@@ -755,11 +754,10 @@ object runtime {
     * doesn't know about a possible larger context, like a scrollable view which the controls are embedded into. To compensate this, it can be provided a
     * `XFormControllerContext` .
     */
-  @js.native
   trait XFormControllerContext extends StObject {
     
     /** ensures the given control is visible, by scrolling the view if necessary. */
-    def makeVisible(Control: XControl): Unit = js.native
+    def makeVisible(Control: XControl): Unit
   }
   object XFormControllerContext {
     
@@ -799,8 +797,9 @@ object runtime {
     * @see FormFeature
     * @since OOo 2.2
     */
-  @js.native
-  trait XFormOperations extends XComponent {
+  trait XFormOperations
+    extends StObject
+       with XComponent {
     
     /**
       * provides access to the form controller which the instance is operating on.
@@ -808,10 +807,10 @@ object runtime {
       * Note that it is possible to operate on a user interface form without actually having access to the form controller instance. However, in this case
       * some functionality will not be available. In particular, every feature which relies on the active control of the controller might be of limited use.
       */
-    var Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController = js.native
+    var Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController
     
     /** provides access to the cursor of the form the instance is operating on. */
-    var Cursor: XRowSet = js.native
+    var Cursor: XRowSet
     
     /**
       * denotes the instance which should be notified about features whose state might have changed.
@@ -826,16 +825,16 @@ object runtime {
       * burden this implementation here with such mechanisms.
       * @see FormFeature
       */
-    var FeatureInvalidation: XFeatureInvalidation = js.native
+    var FeatureInvalidation: XFeatureInvalidation
     
     /** provides access to the update cursor of the form the instance is operating on. */
-    var UpdateCursor: XResultSetUpdate = js.native
+    var UpdateCursor: XResultSetUpdate
     
     /**
       * commits the current control of our controller
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs
       */
-    def commitCurrentControl(): Boolean = js.native
+    def commitCurrentControl(): Boolean
     
     /**
       * commits the current record of the form
@@ -843,7 +842,7 @@ object runtime {
       * @returns `TRUE` if and only if the current record needed being committed. That's the case if the record or the active control of the form were modified.
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs
       */
-    def commitCurrentRecord(RecordInserted: js.Array[Boolean]): Boolean = js.native
+    def commitCurrentRecord(RecordInserted: js.Array[Boolean]): Boolean
     
     /**
       * executes the operation associated with the given feature
@@ -853,7 +852,7 @@ object runtime {
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs
       * @throws com::sun::star::lang::WrappedTargetException if an exception is caught which is no {@link com.sun.star.uno.RuntimeException} and no {@link com.su
       */
-    def execute(Feature: Double): Unit = js.native
+    def execute(Feature: Double): Unit
     
     /**
       * executes the operation associated with the given feature, with passing arguments for execution
@@ -864,7 +863,7 @@ object runtime {
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs
       * @throws com::sun::star::lang::WrappedTargetException if an exception is caught which is no {@link com.sun.star.uno.RuntimeException} and no {@link com.su
       */
-    def executeWithArguments(Feature: Double, Arguments: SeqEquiv[NamedValue]): Unit = js.native
+    def executeWithArguments(Feature: Double, Arguments: SeqEquiv[NamedValue]): Unit
     
     /**
       * retrieves the current state of the given feature
@@ -874,7 +873,7 @@ object runtime {
       * feature state is a `boolean` evaluating to `TRUE` .
       * @param Feature the feature whose state is to be determined. Must be one of the {@link FormFeature} constants. ;  An invalid value here will be silently
       */
-    def getState(Feature: Double): FeatureState = js.native
+    def getState(Feature: Double): FeatureState
     
     /**
       * determines whether a feature is currently enabled.
@@ -882,7 +881,7 @@ object runtime {
       * Calling this is equivalent to calling {@link getState()} , and evaluating the {@link FeatureState.Enabled} member.
       * @param Feature the feature whose state is to be determined. Must be one of the {@link FormFeature} constants. ;  An invalid value here will be silently
       */
-    def isEnabled(Feature: Double): Boolean = js.native
+    def isEnabled(Feature: Double): Boolean
     
     /**
       * determines whether the form is currently positioned on the insertion row
@@ -890,7 +889,7 @@ object runtime {
       * This is a convenience method only. Calling it is equivalent to examining the {@link com.sun.star.sdb.RowSet.IsNew} property of the form.
       * @throws com::sun::star::lang::WrappedTargetException if an error occurs obtaining the form property
       */
-    def isInsertionRow(): Boolean = js.native
+    def isInsertionRow(): Boolean
     
     /**
       * determines whether the current row of the form is modified
@@ -898,7 +897,7 @@ object runtime {
       * This is a convenience method only. Calling it is equivalent to examining the {@link com.sun.star.sdb.RowSet.IsModified} property of the form.
       * @throws com::sun::star::lang::WrappedTargetException if an error occurs obtaining the form property
       */
-    def isModifiedRow(): Boolean = js.native
+    def isModifiedRow(): Boolean
   }
   object XFormOperations {
     

@@ -2,48 +2,46 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 用户授权设置信息，详情参考[权限](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html) */
-@js.native
 trait AuthSetting extends StObject {
   
   /** 是否授权通讯地址，已取消此项授权，会默认返回true */
   @JSName("scope.address")
-  var scopeDotaddress: js.UndefOr[Boolean] = js.native
+  var scopeDotaddress: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权摄像头，对应[[camera](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html)](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html) 组件 */
   @JSName("scope.camera")
-  var scopeDotcamera: js.UndefOr[Boolean] = js.native
+  var scopeDotcamera: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权获取发票，已取消此项授权，会默认返回true */
   @JSName("scope.invoice")
-  var scopeDotinvoice: js.UndefOr[Boolean] = js.native
+  var scopeDotinvoice: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权发票抬头，已取消此项授权，会默认返回true */
   @JSName("scope.invoiceTitle")
-  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.native
+  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权录音功能，对应接口 [wx.startRecord](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/wx.startRecord.html) */
   @JSName("scope.record")
-  var scopeDotrecord: js.UndefOr[Boolean] = js.native
+  var scopeDotrecord: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权用户信息，对应接口 [wx.getUserInfo](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserInfo.html) */
   @JSName("scope.userInfo")
-  var scopeDotuserInfo: js.UndefOr[Boolean] = js.native
+  var scopeDotuserInfo: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权地理位置，对应接口 [wx.getLocation](https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.html), [wx.chooseLocation](https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.chooseLocation.html) */
   @JSName("scope.userLocation")
-  var scopeDotuserLocation: js.UndefOr[Boolean] = js.native
+  var scopeDotuserLocation: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权微信运动步数，对应接口 [wx.getWeRunData](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/werun/wx.getWeRunData.html) */
   @JSName("scope.werun")
-  var scopeDotwerun: js.UndefOr[Boolean] = js.native
+  var scopeDotwerun: js.UndefOr[Boolean] = js.undefined
   
   /** 是否授权保存到相册 [wx.saveImageToPhotosAlbum](https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.saveImageToPhotosAlbum.html), [wx.saveVideoToPhotosAlbum](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/wx.saveVideoToPhotosAlbum.html) */
   @JSName("scope.writePhotosAlbum")
-  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.native
+  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.undefined
 }
 object AuthSetting {
   

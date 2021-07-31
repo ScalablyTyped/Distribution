@@ -5,10 +5,13 @@ import typings.node.Buffer
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("tensorflow", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Types extends StObject
@@ -18,58 +21,50 @@ object mod {
   object Types extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Types with Double] = js.native
+    def apply(value: Double): js.UndefOr[Types & Double] = js.native
     
     @js.native
-    sealed trait float extends Types
-    /* 1 */ val float: typings.tensorflow.mod.Types.float with Double = js.native
+    sealed trait float
+      extends StObject
+         with Types
+    /* 1 */ val float: typings.tensorflow.mod.Types.float & Double = js.native
     
     @js.native
-    sealed trait int32 extends Types
-    /* 3 */ val int32: typings.tensorflow.mod.Types.int32 with Double = js.native
+    sealed trait int32
+      extends StObject
+         with Types
+    /* 3 */ val int32: typings.tensorflow.mod.Types.int32 & Double = js.native
   }
   
-  @JSImport("tensorflow", "graph")
-  @js.native
-  def graph(graphDef: String): Graph_ = js.native
-  @JSImport("tensorflow", "graph")
-  @js.native
-  def graph(graphDef: js.Object): Graph_ = js.native
-  @JSImport("tensorflow", "graph")
-  @js.native
-  def graph(graphDef: Buffer): Graph_ = js.native
+  @scala.inline
+  def graph(graphDef: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  @scala.inline
+  def graph(graphDef: js.Object): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  @scala.inline
+  def graph(graphDef: Buffer): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
   
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: Buffer): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: Buffer, `type`: js.UndefOr[scala.Nothing], shape: js.Array[Double]): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: Buffer, `type`: Types): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: Buffer, `type`: Types, shape: js.Array[Double]): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: TensorValue): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: TensorValue, `type`: js.UndefOr[scala.Nothing], shape: js.Array[Double]): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: TensorValue, `type`: Types): Tensor_ = js.native
-  @JSImport("tensorflow", "tensor")
-  @js.native
-  def tensor(value: TensorValue, `type`: Types, shape: js.Array[Double]): Tensor_ = js.native
+  @scala.inline
+  def tensor(value: Buffer): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: Buffer, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: Buffer, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: Buffer, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: TensorValue): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: TensorValue, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: TensorValue, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  @scala.inline
+  def tensor(value: TensorValue, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
   
-  @js.native
   trait Graph_ extends StObject {
     
-    def createSession(): Session = js.native
+    def createSession(): Session
     
-    def delete(): js.Any = js.native
+    def delete(): js.Any
   }
   object Graph_ {
     
@@ -115,14 +110,13 @@ object mod {
     (js.Array[(js.Array[js.Array[TensorData] | TensorData]) | TensorData]) | TensorData
   ])
   
-  @js.native
   trait Tensor_ extends StObject {
     
-    var shape: js.Array[Double] = js.native
+    var shape: js.Array[Double]
     
-    var `type`: Types = js.native
+    var `type`: Types
     
-    var value: Buffer | TensorValue = js.native
+    var value: Buffer | TensorValue
   }
   object Tensor_ {
     

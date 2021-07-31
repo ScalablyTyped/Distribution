@@ -5,7 +5,6 @@ import typings.std.MouseEvent
 import typings.std.TextMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
@@ -16,6 +15,10 @@ object utilsMod {
   
   object Utils {
     
+    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Takes an array of numbers, returns an array of numbers of the same length in which each
       * value is the sum of current and previous values in the input array.
@@ -23,9 +26,8 @@ object utilsMod {
       * Example input:  [10, 20, 50]
       *         output: [10, 30, 80]
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.accumulate")
-    @js.native
-    def accumulate(numbers: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def accumulate(numbers: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(numbers.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Returns a copy of the array that will have a length of the supplied parameter.
@@ -36,9 +38,8 @@ object utilsMod {
       * @param length - the target length of the array
       * @param fillValue - the value to add to the array if it is too short
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.arrayOfLength")
-    @js.native
-    def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = js.native
+    @scala.inline
+    def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfLength")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
     
     /**
       * Takes in one full array of values and one sparse array of the same
@@ -49,9 +50,8 @@ object utilsMod {
       * @param defaults - the full array of default values
       * @param sparseOverrides - the sparse array of override values
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.assignSparseValues")
-    @js.native
-    def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = js.native
+    @scala.inline
+    def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
     
     /**
       * Performs the binary search algorithm to find the index of the `value`
@@ -71,9 +71,8 @@ object utilsMod {
       * @param high - the length of the sorted list of numbers
       * @param lookup - returns the number from the list at the supplied index
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.binarySearch")
-    @js.native
-    def binarySearch(value: Double, high: Double, lookup: js.Function1[/* index */ Double, Double]): Double = js.native
+    @scala.inline
+    def binarySearch(value: Double, high: Double, lookup: js.Function1[/* index */ Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(value.asInstanceOf[js.Any], high.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given a number, returns a value that is clamped within a
@@ -82,21 +81,16 @@ object utilsMod {
       *
       * Assumes max >= min.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.clamp")
-    @js.native
-    def clamp(value: Double): Double = js.native
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.clamp")
-    @js.native
-    def clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.clamp")
-    @js.native
-    def clamp(value: Double, min: Double): Double = js.native
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.clamp")
-    @js.native
-    def clamp(value: Double, min: Double, max: Double): Double = js.native
+    @scala.inline
+    def clamp(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def clamp(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def clamp(value: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.getApproxCellHeight")
-    @js.native
+    @scala.inline
     def getApproxCellHeight(
       cellText: String,
       columnWidth: Double,
@@ -104,7 +98,7 @@ object utilsMod {
       approxLineHeight: Double,
       horizontalPadding: Double,
       numBufferLines: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getApproxCellHeight")(cellText.asInstanceOf[js.Any], columnWidth.asInstanceOf[js.Any], approxCharWidth.asInstanceOf[js.Any], approxLineHeight.asInstanceOf[js.Any], horizontalPadding.asInstanceOf[js.Any], numBufferLines.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
@@ -137,25 +131,22 @@ object utilsMod {
       *
       * The return value will then be 2, the left-most index of the columns in the new ordering.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.guideIndexToReorderedIndex")
-    @js.native
-    def guideIndexToReorderedIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+    @scala.inline
+    def guideIndexToReorderedIndex(oldIndex: Double, newIndex: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("guideIndexToReorderedIndex")(oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns true if the mouse event was triggered by the left mouse button.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.isLeftClick")
-    @js.native
-    def isLeftClick(event: MouseEvent): Boolean = js.native
+    @scala.inline
+    def isLeftClick(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeftClick")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Measures the bounds of supplied element's textContent.
       * We use the computed font from the supplied element and a non-DOM canvas
       * context to measure the text.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.measureElementTextContent")
-    @js.native
-    def measureElementTextContent(element: Element): TextMetrics = js.native
+    @scala.inline
+    def measureElementTextContent(element: Element): TextMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("measureElementTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[TextMetrics]
     
     /**
       * Returns a copy of the provided array with the `length` contiguous elements starting at the
@@ -164,12 +155,10 @@ object utilsMod {
       * For example, given the array [A,B,C,D,E,F], reordering the 3 contiguous elements starting at
       * index 1 (B, C, and D) to start at index 2 would yield [A,E,B,C,D,F].
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.reorderArray")
-    @js.native
-    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = js.native
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.reorderArray")
-    @js.native
-    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = js.native
+    @scala.inline
+    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
+    @scala.inline
+    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
     
     /**
       * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
@@ -184,17 +173,15 @@ object utilsMod {
       * The return value will then be 5, the index on whose left boundary the guide should appear in
       * the original ordering.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.reorderedIndexToGuideIndex")
-    @js.native
-    def reorderedIndexToGuideIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+    @scala.inline
+    def reorderedIndexToGuideIndex(oldIndex: Double, newIndex: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderedIndexToGuideIndex")(oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Invokes the callback `n` times, collecting the results in an array, which
       * is the return value. Similar to _.times
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.times")
-    @js.native
-    def times[T](n: Double, callback: js.Function1[/* i */ Double, T]): js.Array[T] = js.native
+    @scala.inline
+    def times[T](n: Double, callback: js.Function1[/* i */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(n.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     /**
       * Returns traditional spreadsheet-style column names
@@ -203,23 +190,20 @@ object utilsMod {
       * Note that this isn't technically mathematically equivalent to base 26 since
       * there is no zero element.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.toBase26Alpha")
-    @js.native
-    def toBase26Alpha(num: Double): String = js.native
+    @scala.inline
+    def toBase26Alpha(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase26Alpha")(num.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns traditional spreadsheet-style cell names
       * e.g. (A1, B2, ..., Z44, AA1) with rows 1-indexed.
       */
-    @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils.toBase26CellName")
-    @js.native
-    def toBase26CellName(rowIndex: Double, columnIndex: Double): String = js.native
+    @scala.inline
+    def toBase26CellName(rowIndex: Double, columnIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase26CellName")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
   trait IKeyAllowlist[T] extends StObject {
     
-    var include: js.Array[/* keyof T */ String] = js.native
+    var include: js.Array[/* keyof T */ String]
   }
   object IKeyAllowlist {
     
@@ -230,7 +214,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class IKeyAllowlistMutableBuilder[Self <: IKeyAllowlist[_], T] (val x: Self with IKeyAllowlist[T]) extends AnyVal {
+    implicit class IKeyAllowlistMutableBuilder[Self <: IKeyAllowlist[?], T] (val x: Self & IKeyAllowlist[T]) extends AnyVal {
       
       @scala.inline
       def setInclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
@@ -240,10 +224,9 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait IKeyDenylist[T] extends StObject {
     
-    var exclude: js.Array[/* keyof T */ String] = js.native
+    var exclude: js.Array[/* keyof T */ String]
   }
   object IKeyDenylist {
     
@@ -254,7 +237,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class IKeyDenylistMutableBuilder[Self <: IKeyDenylist[_], T] (val x: Self with IKeyDenylist[T]) extends AnyVal {
+    implicit class IKeyDenylistMutableBuilder[Self <: IKeyDenylist[?], T] (val x: Self & IKeyDenylist[T]) extends AnyVal {
       
       @scala.inline
       def setExclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])

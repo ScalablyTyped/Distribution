@@ -2,22 +2,20 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedInstanceVersion extends StObject {
   
   /**
     * [Output Only] The intended template of the instance. This field is empty
     * when current_action is one of { DELETING, ABANDONING }.
     */
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the version.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedInstanceVersion {
   

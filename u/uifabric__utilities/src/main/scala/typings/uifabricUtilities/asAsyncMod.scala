@@ -8,34 +8,37 @@ import typings.std.Error
 import typings.uifabricUtilities.anon.AsyncPlaceholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asAsyncMod {
   
-  @JSImport("@uifabric/utilities/lib/asAsync", "asAsync")
+  @JSImport("@uifabric/utilities/lib/asAsync", JSImport.Namespace)
   @js.native
-  def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
-    (PropsWithoutRef[TProps with AsyncPlaceholder]) with RefAttributes[ElementType[TProps]]
-  ] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
+    (PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[ElementType[TProps]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("asAsync")(options.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
+    (PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[ElementType[TProps]]
+  ]]
+  
   trait IAsAsyncOptions[TProps] extends StObject {
     
     /**
       * Callback which returns a promise resolving an object which exports the component.
       */
-    def load(): js.Promise[ElementType[TProps]] = js.native
+    def load(): js.Promise[ElementType[TProps]]
     
     /**
       * Callback when async loading fails.
       */
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Callback executed when async loading is complete.
       */
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IAsAsyncOptions {
     
@@ -46,7 +49,7 @@ object asAsyncMod {
     }
     
     @scala.inline
-    implicit class IAsAsyncOptionsMutableBuilder[Self <: IAsAsyncOptions[_], TProps] (val x: Self with IAsAsyncOptions[TProps]) extends AnyVal {
+    implicit class IAsAsyncOptionsMutableBuilder[Self <: IAsAsyncOptions[?], TProps] (val x: Self & IAsAsyncOptions[TProps]) extends AnyVal {
       
       @scala.inline
       def setLoad(value: () => js.Promise[ElementType[TProps]]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))

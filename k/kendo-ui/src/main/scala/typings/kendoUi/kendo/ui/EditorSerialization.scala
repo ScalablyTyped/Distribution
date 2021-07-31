@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorSerialization extends StObject {
   
-  var custom: js.UndefOr[js.Function] = js.native
+  var custom: js.UndefOr[js.Function] = js.undefined
   
-  var entities: js.UndefOr[Boolean] = js.native
+  var entities: js.UndefOr[Boolean] = js.undefined
   
-  var scripts: js.UndefOr[Boolean] = js.native
+  var scripts: js.UndefOr[Boolean] = js.undefined
   
-  var semantic: js.UndefOr[Boolean] = js.native
+  var semantic: js.UndefOr[Boolean] = js.undefined
 }
 object EditorSerialization {
   

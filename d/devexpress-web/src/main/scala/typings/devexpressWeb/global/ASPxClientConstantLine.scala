@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientConstantLine")
 @js.native
 class ASPxClientConstantLine ()
-  extends typings.devexpressWeb.ASPxClientConstantLine
+  extends StObject
+     with typings.devexpressWeb.ASPxClientConstantLine {
+  
+  /**
+    * Gets the axis that owns the current constant line object.
+    */
+  /* CompleteClass */
+  var axis: typings.devexpressWeb.ASPxClientAxis = js.native
+  
+  /**
+    * Gets the chart that owns the current chart element.
+    */
+  /* CompleteClass */
+  var chart: typings.devexpressWeb.ASPxClientWebChart = js.native
+  
+  /**
+    * Gets the name of the chart element.
+    */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /**
+    * Gets the constant line title.
+    */
+  /* CompleteClass */
+  var title: String = js.native
+  
+  /**
+    * Gets the constant line's position along the axis.
+    */
+  /* CompleteClass */
+  var value: js.Any = js.native
+}

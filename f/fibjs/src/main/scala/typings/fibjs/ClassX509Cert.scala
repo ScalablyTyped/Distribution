@@ -3,7 +3,6 @@ package typings.fibjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail X509Cert 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Cert();,```
   */
 @js.native
-trait ClassX509Cert extends ClassObject {
+trait ClassX509Cert
+  extends StObject
+     with ClassObject {
   
   /**
     * class prop 
@@ -41,7 +42,7 @@ trait ClassX509Cert extends ClassObject {
     * 
     * 
     */
-  def dump(): js.Array[_] = js.native
+  def dump(): js.Array[js.Any] = js.native
   
   /**
     * class prop 

@@ -12,7 +12,7 @@ Tape test runner with promise support
 | Keywords           | tape, bluebird, promises |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 214369 |
+| # downloads        | 258038 |
 | # stars            | 16 |
 
 ## Links

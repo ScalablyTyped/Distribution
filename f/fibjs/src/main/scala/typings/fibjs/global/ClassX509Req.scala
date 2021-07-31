@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   */
 class ClassX509Req ()
-  extends typings.fibjs.ClassX509Req {
+  extends StObject
+     with typings.fibjs.ClassX509Req {
   /**
     * 
     * @brief X509Req 构造函数，根据给定的信息创建一个证书请求

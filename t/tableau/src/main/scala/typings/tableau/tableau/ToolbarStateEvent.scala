@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToolbarStateEvent extends TableauEvent {
+trait ToolbarStateEvent
+  extends StObject
+     with TableauEvent {
   
   /** Returns the new ToolbarState. */
-  def getToolbarState(): ToolbarState = js.native
+  def getToolbarState(): ToolbarState
 }
 object ToolbarStateEvent {
   

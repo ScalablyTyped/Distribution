@@ -2,13 +2,11 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseTriggerBase extends StObject {
   
-  var triggerType: ReleaseTriggerType = js.native
+  var triggerType: ReleaseTriggerType
 }
 object ReleaseTriggerBase {
   

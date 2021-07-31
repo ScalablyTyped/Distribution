@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThingTypeRequest extends StObject {
   
   /**
     * Metadata which can be used to manage the thing type.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the thing type.
     */
-  var thingTypeName: ThingTypeName = js.native
+  var thingTypeName: ThingTypeName
   
   /**
     * The ThingTypeProperties for the thing type to create. It contains information about the new thing type including a description, and a list of searchable thing attribute names.
     */
-  var thingTypeProperties: js.UndefOr[ThingTypeProperties] = js.native
+  var thingTypeProperties: js.UndefOr[ThingTypeProperties] = js.undefined
 }
 object CreateThingTypeRequest {
   

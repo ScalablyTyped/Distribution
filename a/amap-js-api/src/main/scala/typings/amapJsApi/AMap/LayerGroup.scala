@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerGroup[L] extends Layer {
+trait LayerGroup[L]
+  extends StObject
+     with Layer {
   
   /**
     * 添加单个图层到集合中，不支持添加重复的图层

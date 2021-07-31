@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketLifecycleOutputMod {
   
-  @js.native
   trait GetBucketLifecycleOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _Rules shape
       */
-    var Rules: js.UndefOr[js.Array[UnmarshalledRule]] = js.native
+    var Rules: js.UndefOr[js.Array[UnmarshalledRule]] = js.undefined
   }
   object GetBucketLifecycleOutput {
     

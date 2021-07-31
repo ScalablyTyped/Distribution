@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait typeRendererResult extends Object {
+trait typeRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal color scheme to represent the categorical variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * An array of objects describing the values or categories excluded from consideration in visualizing data from the given field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var excludedUniqueValueInfos: js.Array[_] = js.native
+  var excludedUniqueValueInfos: js.Array[js.Any]
   
   /**
     * The renderer object configured to best match the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var renderer: UniqueValueRenderer = js.native
+  var renderer: UniqueValueRenderer
   
   /**
     * The scheme used to represent each category within the `uniqueValueInfos`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var typeScheme: TypeScheme = js.native
+  var typeScheme: TypeScheme
   
   /**
     * An array of objects describing the value, symbol, and count of each unique type or category represented in the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var uniqueValueInfos: js.Array[typeUniqueValueInfo] = js.native
+  var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 object typeRendererResult {
   
@@ -59,7 +59,7 @@ object typeRendererResult {
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
-    excludedUniqueValueInfos: js.Array[_],
+    excludedUniqueValueInfos: js.Array[js.Any],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     renderer: UniqueValueRenderer,
@@ -80,7 +80,7 @@ object typeRendererResult {
     def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedUniqueValueInfos(value: js.Array[_]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
+    def setExcludedUniqueValueInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value :_*))

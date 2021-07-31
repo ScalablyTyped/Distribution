@@ -4,15 +4,13 @@ import typings.typeorm.optionsColumnOptionsMod.ColumnOptions
 import typings.typeorm.typeormStrings.STI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern extends StObject {
   
-  var column: js.UndefOr[String | ColumnOptions] = js.native
+  var column: js.UndefOr[String | ColumnOptions] = js.undefined
   
-  var pattern: js.UndefOr[STI] = js.native
+  var pattern: js.UndefOr[STI] = js.undefined
 }
 object Pattern {
   

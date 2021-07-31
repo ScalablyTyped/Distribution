@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UtilizationMetric extends StObject {
   
   /**
     * The name of the utilization metric.  The Memory metric is returned only for resources that have the unified CloudWatch agent installed on them. For more information, see Enabling Memory Utilization with the CloudWatch Agent. 
     */
-  var name: js.UndefOr[MetricName] = js.native
+  var name: js.UndefOr[MetricName] = js.undefined
   
   /**
     * The statistic of the utilization metric.
     */
-  var statistic: js.UndefOr[MetricStatistic] = js.native
+  var statistic: js.UndefOr[MetricStatistic] = js.undefined
   
   /**
     * The value of the utilization metric.
     */
-  var value: js.UndefOr[MetricValue] = js.native
+  var value: js.UndefOr[MetricValue] = js.undefined
 }
 object UtilizationMetric {
   

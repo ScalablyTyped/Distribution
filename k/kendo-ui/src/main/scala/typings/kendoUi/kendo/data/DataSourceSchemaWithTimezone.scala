@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceSchemaWithTimezone extends DataSourceSchema {
+trait DataSourceSchemaWithTimezone
+  extends StObject
+     with DataSourceSchema {
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object DataSourceSchemaWithTimezone {
   

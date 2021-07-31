@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactListDestination extends StObject {
   
   /**
     * &gt;The type of action that you want to perform on the addresses. Acceptable values:   PUT: add the addresses to the contact list. If the record already exists, it will override it with the new value.   DELETE: remove the addresses from the contact list.  
     */
-  var ContactListImportAction: typings.awsSdk.sesv2Mod.ContactListImportAction = js.native
+  var ContactListImportAction: typings.awsSdk.sesv2Mod.ContactListImportAction
   
   /**
     * The name of the contact list.
     */
-  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName = js.native
+  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName
 }
 object ContactListDestination {
   

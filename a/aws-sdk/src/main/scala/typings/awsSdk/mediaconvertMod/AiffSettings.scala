@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AiffSettings extends StObject {
   
   /**
     * Specify Bit depth (BitDepth), in bits per sample, to choose the encoding quality for this audio track.
     */
-  var BitDepth: js.UndefOr[integerMin16Max24] = js.native
+  var BitDepth: js.UndefOr[integerMin16Max24] = js.undefined
   
   /**
     * Specify the number of channels in this output audio track. Valid values are 1 and even numbers up to 64. For example, 1, 2, 4, 6, and so on, up to 64.
     */
-  var Channels: js.UndefOr[integerMin1Max64] = js.native
+  var Channels: js.UndefOr[integerMin1Max64] = js.undefined
   
   /**
     * Sample rate in hz.
     */
-  var SampleRate: js.UndefOr[integerMin8000Max192000] = js.native
+  var SampleRate: js.UndefOr[integerMin8000Max192000] = js.undefined
 }
 object AiffSettings {
   

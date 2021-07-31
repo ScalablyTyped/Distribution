@@ -10,9 +10,9 @@ The base package for including a theme for react-md. This is required by most ot
 | ------------------ | :-------------: |
 | Full name          | @react-md/theme |
 | Keywords           | react-md, material design, react, theme, colors, css variables |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 30 |
-| # downloads        | 21128 |
+| # downloads        | 34398 |
 | # stars            | 0 |
 
 ## Links

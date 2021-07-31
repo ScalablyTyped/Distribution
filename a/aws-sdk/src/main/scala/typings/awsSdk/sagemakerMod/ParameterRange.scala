@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRange extends StObject {
   
   /**
     * A CategoricalParameterRangeSpecification object that defines the possible values for a categorical hyperparameter.
     */
-  var CategoricalParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.CategoricalParameterRangeSpecification] = js.native
+  var CategoricalParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.CategoricalParameterRangeSpecification] = js.undefined
   
   /**
     * A ContinuousParameterRangeSpecification object that defines the possible values for a continuous hyperparameter.
     */
-  var ContinuousParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.ContinuousParameterRangeSpecification] = js.native
+  var ContinuousParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.ContinuousParameterRangeSpecification] = js.undefined
   
   /**
     * A IntegerParameterRangeSpecification object that defines the possible values for an integer hyperparameter.
     */
-  var IntegerParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.IntegerParameterRangeSpecification] = js.native
+  var IntegerParameterRangeSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.IntegerParameterRangeSpecification] = js.undefined
 }
 object ParameterRange {
   

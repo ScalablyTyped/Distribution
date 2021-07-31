@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.ActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,29 +18,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @beta
   */
-@js.native
 trait NotificationMessageAction extends StObject {
   
   /**
     * The text of the action link.
     */
-  var actionText: String = js.native
+  var actionText: String
   
   /**
     * The type of action to be performed.
     * `ActionType.ShowTaskPane` is the only supported action.
     */
-  var actionType: String | ActionType = js.native
+  var actionType: String | ActionType
   
   /**
     * The button defined in the manifest based on the item type.
     */
-  var commandId: String = js.native
+  var commandId: String
   
   /**
     * Any JSON data the button needs to pass on.
     */
-  var contextData: js.Any = js.native
+  var contextData: js.Any
 }
 object NotificationMessageAction {
   

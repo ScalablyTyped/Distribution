@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessLogSettings extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with amazon-apigateway-.
     */
-  var destinationArn: js.UndefOr[String] = js.native
+  var destinationArn: js.UndefOr[String] = js.undefined
   
   /**
     * A single line format of the access logs of data, as specified by selected $context variables. The format must include at least $context.requestId.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object AccessLogSettings {
   

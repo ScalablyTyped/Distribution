@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,48 +15,47 @@ object mod {
   
   type StarRatingComponent = Component[StarRatingComponentProps, js.Object, js.Any]
   
-  @js.native
   trait StarRatingComponentProps extends StObject {
     
     /** is component available for editing, default `true` */
-    var editing: js.UndefOr[Boolean] = js.native
+    var editing: js.UndefOr[Boolean] = js.undefined
     
     /** color of non-selected icons */
-    var emptyStarColor: js.UndefOr[String] = js.native
+    var emptyStarColor: js.UndefOr[String] = js.undefined
     
     /** name of the radio input */
-    var name: String = js.native
+    var name: String
     
     var onStarClick: js.UndefOr[
         js.Function3[/* nextValue */ Double, /* prevValue */ Double, /* name */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onStarHover: js.UndefOr[
         js.Function3[/* nextValue */ Double, /* prevValue */ Double, /* name */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onStarHoverOut: js.UndefOr[
         js.Function3[/* nextValue */ Double, /* prevValue */ Double, /* name */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** render method for the full-star icon */
     var renderStarIcon: js.UndefOr[
         js.Function3[/* nextValue */ Double, /* prevValue */ Double, /* name */ String, ReactNode | String]
-      ] = js.native
+      ] = js.undefined
     
     /** render method for the half-star icon */
     var renderStarIconHalf: js.UndefOr[
         js.Function3[/* nextValue */ Double, /* prevValue */ Double, /* name */ String, ReactNode | String]
-      ] = js.native
+      ] = js.undefined
     
     /** color of selected icons */
-    var starColor: js.UndefOr[String] = js.native
+    var starColor: js.UndefOr[String] = js.undefined
     
     /** number of icons in rating, default `5` */
-    var starCount: js.UndefOr[Double] = js.native
+    var starCount: js.UndefOr[Double] = js.undefined
     
     /** the value of the star rating to display. i.e. the number of filled stars */
-    var value: Double = js.native
+    var value: Double
   }
   object StarRatingComponentProps {
     

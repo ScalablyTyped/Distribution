@@ -2,24 +2,22 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressComponent[T] extends StObject {
   
   /** is the full text description or name of the address component as returned by the Geocoder. */
-  var long_name: String = js.native
+  var long_name: String
   
   /**
     * is an abbreviated textual name for the address component, if available.
     * For example, an address component for the state of Alaska may have a `long_name` of "Alaska" and a `short_name` of "AK"
     * using the 2-letter postal abbreviation.
     */
-  var short_name: String = js.native
+  var short_name: String
   
   /** is an array indicating the *type* of the address component. */
-  var types: js.Array[T] = js.native
+  var types: js.Array[T]
 }
 object AddressComponent {
   
@@ -30,7 +28,7 @@ object AddressComponent {
   }
   
   @scala.inline
-  implicit class AddressComponentMutableBuilder[Self <: AddressComponent[_], T] (val x: Self with AddressComponent[T]) extends AnyVal {
+  implicit class AddressComponentMutableBuilder[Self <: AddressComponent[?], T] (val x: Self & AddressComponent[T]) extends AnyVal {
     
     @scala.inline
     def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])

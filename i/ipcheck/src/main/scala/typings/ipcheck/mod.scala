@@ -7,7 +7,6 @@ import typings.ipcheck.ipcheckNumbers.`4`
 import typings.ipcheck.ipcheckNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,7 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("ipcheck", JSImport.Namespace)
   @js.native
-  class ^ protected () extends IPCheck {
+  class ^ protected ()
+    extends StObject
+       with IPCheck {
     def this(input: String) = this()
   }
   @JSImport("ipcheck", JSImport.Namespace)
@@ -40,10 +41,14 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait IPCheckConstructor extends Instantiable1[/* input */ String, IPCheck]
+  trait IPCheckConstructor
+    extends StObject
+       with Instantiable1[/* input */ String, IPCheck]
   
   @js.native
-  trait IPCheckStatic extends IPCheckConstructor {
+  trait IPCheckStatic
+    extends StObject
+       with IPCheckConstructor {
     
     def `match`(ip: String, cidr: String): Boolean = js.native
     def `match`(ip: String, cidr: IPCheck): Boolean = js.native

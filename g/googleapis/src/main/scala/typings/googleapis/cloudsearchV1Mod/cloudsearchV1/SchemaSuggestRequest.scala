@@ -2,30 +2,28 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request of suggest API.
   */
-@js.native
 trait SchemaSuggestRequest extends StObject {
   
   /**
     * The sources to use for suggestions. If not specified, all data sources
     * from the current search application are used.
     */
-  var dataSourceRestrictions: js.UndefOr[js.Array[SchemaDataSourceRestriction]] = js.native
+  var dataSourceRestrictions: js.UndefOr[js.Array[SchemaDataSourceRestriction]] = js.undefined
   
   /**
     * Partial query for the completion suggestion.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Request options, such as the search application and user timezone.
     */
-  var requestOptions: js.UndefOr[SchemaRequestOptions] = js.native
+  var requestOptions: js.UndefOr[SchemaRequestOptions] = js.undefined
 }
 object SchemaSuggestRequest {
   

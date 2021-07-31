@@ -5,32 +5,30 @@ import typings.activexOffice.Office.MsoRGBType
 import typings.activexOffice.Office.MsoThemeColorIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Brightness: Double = js.native
+  var Brightness: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var ObjectThemeColor: MsoThemeColorIndex = js.native
+  var ObjectThemeColor: MsoThemeColorIndex
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ColorFormat_typekey")
-  var PowerPointDotColorFormat_typekey: ColorFormat = js.native
+  var PowerPointDotColorFormat_typekey: ColorFormat
   
-  var RGB: MsoRGBType = js.native
+  var RGB: MsoRGBType
   
-  var SchemeColor: PpColorSchemeIndex = js.native
+  var SchemeColor: PpColorSchemeIndex
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
   
-  val Type: MsoColorType = js.native
+  val Type: MsoColorType
 }
 object ColorFormat {
   

@@ -26,23 +26,24 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSizingDataMod {
   
-  @JSImport("react-textarea-autosize/dist/declarations/src/getSizingData", JSImport.Default)
+  @JSImport("react-textarea-autosize/dist/declarations/src/getSizingData", JSImport.Namespace)
   @js.native
-  def default(node: HTMLElement): SizingData | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(node: HTMLElement): SizingData | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[SizingData | Null]
+  
   trait SizingData extends StObject {
     
-    var borderSize: Double = js.native
+    var borderSize: Double
     
-    var paddingSize: Double = js.native
+    var paddingSize: Double
     
-    var sizingStyle: SizingStyle = js.native
+    var sizingStyle: SizingStyle
   }
   object SizingData {
     

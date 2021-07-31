@@ -2,26 +2,24 @@ package typings.awsSdk.stsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFederationTokenResponse extends StObject {
   
   /**
     * The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.  The size of the security token that STS API operations return is not fixed. We strongly recommend that you make no assumptions about the maximum size. 
     */
-  var Credentials: js.UndefOr[typings.awsSdk.stsMod.Credentials] = js.native
+  var Credentials: js.UndefOr[typings.awsSdk.stsMod.Credentials] = js.undefined
   
   /**
     * Identifiers for the federated user associated with the credentials (such as arn:aws:sts::123456789012:federated-user/Bob or 123456789012:Bob). You can use the federated user's ARN in your resource-based policies, such as an Amazon S3 bucket policy. 
     */
-  var FederatedUser: js.UndefOr[typings.awsSdk.stsMod.FederatedUser] = js.native
+  var FederatedUser: js.UndefOr[typings.awsSdk.stsMod.FederatedUser] = js.undefined
   
   /**
     * A percentage value that indicates the packed size of the session policies and session tags combined passed in the request. The request fails if the packed size is greater than 100 percent, which means the policies and tags exceeded the allowed space.
     */
-  var PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.native
+  var PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
 }
 object GetFederationTokenResponse {
   

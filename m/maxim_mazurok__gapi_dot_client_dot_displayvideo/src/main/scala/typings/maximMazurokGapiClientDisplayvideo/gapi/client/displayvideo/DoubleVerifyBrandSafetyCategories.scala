@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleVerifyBrandSafetyCategories extends StObject {
   
   /** Unknown or unrateable. */
-  var avoidUnknownBrandSafetyCategory: js.UndefOr[Boolean] = js.native
+  var avoidUnknownBrandSafetyCategory: js.UndefOr[Boolean] = js.undefined
   
   /** Brand safety high severity avoidance categories. */
-  var avoidedHighSeverityCategories: js.UndefOr[js.Array[String]] = js.native
+  var avoidedHighSeverityCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Brand safety medium severity avoidance categories. */
-  var avoidedMediumSeverityCategories: js.UndefOr[js.Array[String]] = js.native
+  var avoidedMediumSeverityCategories: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DoubleVerifyBrandSafetyCategories {
   

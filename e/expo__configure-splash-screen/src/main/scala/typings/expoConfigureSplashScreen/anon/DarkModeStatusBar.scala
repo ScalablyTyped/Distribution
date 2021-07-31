@@ -2,15 +2,13 @@ package typings.expoConfigureSplashScreen.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DarkModeStatusBar extends StObject {
   
-  var darkMode: js.UndefOr[`5`] = js.native
+  var darkMode: js.UndefOr[`5`] = js.undefined
   
-  var statusBar: js.UndefOr[BackgroundColorHidden] = js.native
+  var statusBar: js.UndefOr[BackgroundColorHidden] = js.undefined
 }
 object DarkModeStatusBar {
   

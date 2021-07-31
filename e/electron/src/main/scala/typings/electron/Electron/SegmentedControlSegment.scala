@@ -2,27 +2,25 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentedControlSegment extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/segmented-control-segment
   /**
     * Whether this segment is selectable. Default: true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The image to appear in this segment.
     */
-  var icon: js.UndefOr[NativeImage_] = js.native
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   
   /**
     * The text to appear in this segment.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object SegmentedControlSegment {
   

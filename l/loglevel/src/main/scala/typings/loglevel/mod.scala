@@ -16,7 +16,6 @@ import typings.loglevel.loglevelStrings.trace_
 import typings.loglevel.loglevelStrings.warn_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,26 +27,25 @@ object mod extends Shortcut {
   /**
     * Log levels
     */
-  @js.native
   trait LogLevel extends StObject {
     
-    var DEBUG: `1` = js.native
+    var DEBUG: `1`
     
-    var ERROR: `4` = js.native
+    var ERROR: `4`
     
-    var INFO: `2` = js.native
+    var INFO: `2`
     
-    var SILENT: `5` = js.native
+    var SILENT: `5`
     
-    var TRACE: `0` = js.native
+    var TRACE: `0`
     
-    var WARN: `3` = js.native
+    var WARN: `3`
   }
   object LogLevel {
     
     @scala.inline
-    def apply(DEBUG: `1`, ERROR: `4`, INFO: `2`, SILENT: `5`, TRACE: `0`, WARN: `3`): LogLevel = {
-      val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], SILENT = SILENT.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
+    def apply(): LogLevel = {
+      val __obj = js.Dynamic.literal(DEBUG = 1, ERROR = 4, INFO = 2, SILENT = 5, TRACE = 0, WARN = 3)
       __obj.asInstanceOf[LogLevel]
     }
     
@@ -314,7 +312,11 @@ object mod extends Shortcut {
     def warn(msg: js.Any*): Unit = js.native
   }
   
-  type LoggingMethod = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait LoggingMethod extends StObject {
+    
+    def apply(message: js.Any*): Unit = js.native
+  }
   
   type MethodFactory = js.Function3[
     /* methodName */ String, 
@@ -324,7 +326,9 @@ object mod extends Shortcut {
   ]
   
   @js.native
-  trait RootLogger extends Logger {
+  trait RootLogger
+    extends StObject
+       with Logger {
     
     /**
       * A .default property for ES6 default import compatibility

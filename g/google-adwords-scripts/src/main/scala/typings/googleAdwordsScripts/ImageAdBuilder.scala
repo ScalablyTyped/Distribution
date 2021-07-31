@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageAdBuilder[ImageAd] extends AdBuilder[ImageAdBuilder[ImageAd]] {
+trait ImageAdBuilder[ImageAd]
+  extends StObject
+     with AdBuilder[ImageAdBuilder[ImageAd]] {
   
-  def withDisplayUrl(displayUrl: String): ImageAdBuilder[ImageAd] = js.native
+  def withDisplayUrl(displayUrl: String): ImageAdBuilder[ImageAd]
   
-  def withImage(image: Media): ImageAdBuilder[ImageAd] = js.native
+  def withImage(image: Media): ImageAdBuilder[ImageAd]
   
-  def withName(name: String): ImageAdBuilder[ImageAd] = js.native
+  def withName(name: String): ImageAdBuilder[ImageAd]
 }
 object ImageAdBuilder {
   
@@ -32,7 +32,7 @@ object ImageAdBuilder {
   }
   
   @scala.inline
-  implicit class ImageAdBuilderMutableBuilder[Self <: ImageAdBuilder[_], ImageAd] (val x: Self with ImageAdBuilder[ImageAd]) extends AnyVal {
+  implicit class ImageAdBuilderMutableBuilder[Self <: ImageAdBuilder[?], ImageAd] (val x: Self & ImageAdBuilder[ImageAd]) extends AnyVal {
     
     @scala.inline
     def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))

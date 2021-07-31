@@ -3,17 +3,15 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Camera extends StObject {
   
-  var center: PartialPoint = js.native
+  var center: PartialPoint
   
-  var eye: PartialPoint = js.native
+  var eye: PartialPoint
   
-  var up: PartialPoint = js.native
+  var up: PartialPoint
 }
 object Camera {
   

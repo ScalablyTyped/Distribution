@@ -2,48 +2,48 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlCamera extends KmlAbstractView {
+trait KmlCamera
+  extends StObject
+     with KmlAbstractView {
   
   /**
     * Distance from the earth's surface.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * Specifies how altitude components in the coordinates are interpreted.
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   
   /**
     * Direction (that is, North, South, East, West), in degrees. Default=0 (North). Values range from 0 to 360 degrees.
     */
-  def getHeading(): Double = js.native
+  def getHeading(): Double
   
   /**
     * Latitude of the camera location. Degrees north or south of the Equator (0 degrees). Values range from -90 degrees to 90 degrees.
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * Longitude of the camera location. Angular distance in degrees, relative to the Prime Meridian. Values west of the Meridian range from -180 to 0 degrees.
     * Values east of the Meridian range from 0 to 180 degrees.
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
   
   /**
     * Rotation, in degrees, of the camera around the Z axis. Values range from -180 to +180 degrees.
     */
-  def getRoll(): Double = js.native
+  def getRoll(): Double
   
   /**
     * Angle between the direction of the camera position and the normal to the surface of the earth. Values range from 0 to 360 degrees.
     * A tilt value of 0 degrees indicates viewing from directly above, 90 degrees indicates viewing along the horizon, and 180 degrees indicates viewing straight up at the sky.
     */
-  def getTilt(): Double = js.native
+  def getTilt(): Double
   
   /**
     * Sets the latitude, longitude, altitude, alitudeMode, heading, tilt, and roll values.
@@ -56,44 +56,44 @@ trait KmlCamera extends KmlAbstractView {
     heading: Double,
     tilt: Double,
     roll: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Distance from the earth's surface.
     */
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
   /**
     * Specifies how altitude components in the coordinates are interpreted.
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit
   
   /**
     * Direction (that is, North, South, East, West), in degrees. Default=0 (North). Values range from 0 to 360 degrees.
     */
-  def setHeading(heading: Double): Unit = js.native
+  def setHeading(heading: Double): Unit
   
   /**
     * Latitude of the camera location. Degrees north or south of the Equator (0 degrees). Values range from -90 degrees to 90 degrees.
     */
-  def setLatitude(latitude: Double): Unit = js.native
+  def setLatitude(latitude: Double): Unit
   
   /**
     * Longitude of the camera location. Angular distance in degrees, relative to the Prime Meridian. Values west of the Meridian range from -180 to 0 degrees.
     * Values east of the Meridian range from 0 to 180 degrees.
     */
-  def setLongitude(longitude: Double): Unit = js.native
+  def setLongitude(longitude: Double): Unit
   
   /**
     * Rotation, in degrees, of the camera around the Z axis. Values range from -180 to +180 degrees.
     */
-  def setRoll(roll: Double): Unit = js.native
+  def setRoll(roll: Double): Unit
   
   /**
     * Angle between the direction of the camera position and the normal to the surface of the earth. Values range from 0 to 360 degrees.
     * A tilt value of 0 degrees indicates viewing from directly above, 90 degrees indicates viewing along the horizon, and 180 degrees indicates viewing straight up at the sky.
     */
-  def setTilt(tilt: Double): Unit = js.native
+  def setTilt(tilt: Double): Unit
 }
 object KmlCamera {
   

@@ -5,7 +5,6 @@ import typings.std.MediaStream
 import typings.std.MediaStreamAudioSourceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -84,13 +83,13 @@ trait AudioIn extends StObject {
     *   place of the callbacks, similar to the
     *   enumerateDevices() method
     */
-  def getSources(): js.Promise[_] = js.native
-  def getSources(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def getSources(successCallback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+  def getSources(): js.Promise[js.Any] = js.native
+  def getSources(successCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def getSources(
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def getSources(successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   
   var input: GainNode = js.native
   
@@ -131,12 +130,12 @@ trait AudioIn extends StObject {
     *   do not support getUserMedia.
     */
   def start(): Unit = js.native
-  def start(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-  def start(successCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def start(successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def start(
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
+  def start(successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     *   Turn the AudioIn off. If the AudioIn is stopped,

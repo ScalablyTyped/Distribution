@@ -2,13 +2,13 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchData extends NodeData {
+trait SearchData
+  extends StObject
+     with NodeData {
   
-  var searchQuery: js.Any = js.native
+  var searchQuery: js.Any
 }
 object SearchData {
   

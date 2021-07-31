@@ -6,7 +6,6 @@ import typings.antdMobileRn.imagePickerStyleIndexNativeMod.IImagePickerStyle
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerIndexNativeMod {
@@ -53,11 +52,12 @@ object imagePickerIndexNativeMod {
     def showPicker(): Unit = js.native
   }
   
-  @js.native
-  trait ImagePickerNativeProps extends ImagePickerPropTypes {
+  trait ImagePickerNativeProps
+    extends StObject
+       with ImagePickerPropTypes {
     
     @JSName("styles")
-    var styles_ImagePickerNativeProps: js.UndefOr[IImagePickerStyle] = js.native
+    var styles_ImagePickerNativeProps: js.UndefOr[IImagePickerStyle] = js.undefined
   }
   object ImagePickerNativeProps {
     

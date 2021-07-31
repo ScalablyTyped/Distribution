@@ -6,11 +6,12 @@ import typings.sharepoint.SP.ListItem
 import typings.sharepoint.SP.StringResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaxonomyField extends FieldLookup {
+trait TaxonomyField
+  extends StObject
+     with FieldLookup {
   
   def getFieldValueAsHtml(value: TaxonomyFieldValue): StringResult = js.native
   

@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeCustomEvent extends StObject {
   
   /** Unique ID of this event used by Reporting and Data Transfer. This is a read-only field. */
-  var advertiserCustomEventId: js.UndefOr[String] = js.native
+  var advertiserCustomEventId: js.UndefOr[String] = js.undefined
   
   /** User-entered name for the event. */
-  var advertiserCustomEventName: js.UndefOr[String] = js.native
+  var advertiserCustomEventName: js.UndefOr[String] = js.undefined
   
   /** Type of the event. This is a read-only field. */
-  var advertiserCustomEventType: js.UndefOr[String] = js.native
+  var advertiserCustomEventType: js.UndefOr[String] = js.undefined
   
   /** Artwork label column, used to link events in Campaign Manager back to events in Studio. This is a required field and should not be modified after insertion. */
-  var artworkLabel: js.UndefOr[String] = js.native
+  var artworkLabel: js.UndefOr[String] = js.undefined
   
   /** Artwork type used by the creative.This is a read-only field. */
-  var artworkType: js.UndefOr[String] = js.native
+  var artworkType: js.UndefOr[String] = js.undefined
   
   /** Exit click-through URL for the event. This field is used only for exit events. */
-  var exitClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.native
+  var exitClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.undefined
   
   /** ID of this event. This is a required field and should not be modified after insertion. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Properties for rich media popup windows. This field is used only for exit events. */
-  var popupWindowProperties: js.UndefOr[PopupWindowProperties] = js.native
+  var popupWindowProperties: js.UndefOr[PopupWindowProperties] = js.undefined
   
   /** Target type used by the event. */
-  var targetType: js.UndefOr[String] = js.native
+  var targetType: js.UndefOr[String] = js.undefined
   
   /** Video reporting ID, used to differentiate multiple videos in a single creative. This is a read-only field. */
-  var videoReportingId: js.UndefOr[String] = js.native
+  var videoReportingId: js.UndefOr[String] = js.undefined
 }
 object CreativeCustomEvent {
   

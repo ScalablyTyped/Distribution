@@ -4,53 +4,70 @@ import typings.canvasGauges.CanvasGauges.FontStyle
 import typings.canvasGauges.CanvasGauges.FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasGaugesStrings {
   
   @js.native
-  sealed trait `100` extends FontWeight
+  sealed trait `100`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   
   @js.native
-  sealed trait `200` extends FontWeight
+  sealed trait `200`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
   
   @js.native
-  sealed trait `300` extends FontWeight
+  sealed trait `300`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
   
   @js.native
-  sealed trait `400` extends FontWeight
+  sealed trait `400`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
   
   @js.native
-  sealed trait `500` extends FontWeight
+  sealed trait `500`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait `600` extends FontWeight
+  sealed trait `600`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
-  sealed trait `700` extends FontWeight
+  sealed trait `700`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `700`: `700` = "700".asInstanceOf[`700`]
   
   @js.native
-  sealed trait `800` extends FontWeight
+  sealed trait `800`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `800`: `800` = "800".asInstanceOf[`800`]
   
   @js.native
-  sealed trait `900` extends FontWeight
+  sealed trait `900`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
   
@@ -120,12 +137,16 @@ object canvasGaugesStrings {
   def beforeValueBox: beforeValueBox = "beforeValueBox".asInstanceOf[beforeValueBox]
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait bold
+    extends StObject
+       with FontWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait bolder extends FontWeight
+  sealed trait bolder
+    extends StObject
+       with FontWeight
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   
@@ -140,24 +161,31 @@ object canvasGaugesStrings {
   def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait italic extends FontStyle
+  sealed trait italic
+    extends StObject
+       with FontStyle
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait lighter extends FontWeight
+  sealed trait lighter
+    extends StObject
+       with FontWeight
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
   sealed trait normal
-    extends FontStyle
+    extends StObject
+       with FontStyle
        with FontWeight
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait oblique extends FontStyle
+  sealed trait oblique
+    extends StObject
+       with FontStyle
   @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   

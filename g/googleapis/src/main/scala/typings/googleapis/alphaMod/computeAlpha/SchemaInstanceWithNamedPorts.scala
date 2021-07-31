@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceWithNamedPorts extends StObject {
   
   /**
     * [Output Only] The URL of the instance.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The named ports that belong to this instance group.
     */
-  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.undefined
   
   /**
     * [Output Only] The status of the instance.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceWithNamedPorts {
   

@@ -5,36 +5,35 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryFormOptions
-  extends AjaxSettings[js.Any] {
+  extends StObject
+     with AjaxSettings[js.Any] {
   
-  var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ this.type, Boolean]] = js.native
+  var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ this.type, Boolean]] = js.undefined
   
   var beforeSubmit: js.UndefOr[
-    js.Function3[/* formData */ js.Array[_], /* $form */ JQuery, /* options */ this.type, Boolean]
-  ] = js.native
+    js.Function3[/* formData */ js.Array[js.Any], /* $form */ JQuery, /* options */ this.type, Boolean]
+  ] = js.undefined
   
-  var clearForm: js.UndefOr[Boolean] = js.native
+  var clearForm: js.UndefOr[Boolean] = js.undefined
   
-  var forceSync: js.UndefOr[Boolean] = js.native
+  var forceSync: js.UndefOr[Boolean] = js.undefined
   
-  var iframe: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.undefined
   
-  var iframeSrc: js.UndefOr[String] = js.native
+  var iframeSrc: js.UndefOr[String] = js.undefined
   
-  var iframeTarget: js.UndefOr[js.Any] = js.native
+  var iframeTarget: js.UndefOr[js.Any] = js.undefined
   
-  var replaceTarget: js.UndefOr[Boolean] = js.native
+  var replaceTarget: js.UndefOr[Boolean] = js.undefined
   
-  var resetForm: js.UndefOr[Boolean] = js.native
+  var resetForm: js.UndefOr[Boolean] = js.undefined
   
-  var semantic: js.UndefOr[Boolean] = js.native
+  var semantic: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
   var uploadProgress: js.UndefOr[
     js.Function4[
@@ -44,7 +43,7 @@ trait JQueryFormOptions
       /* percentComplete */ Double, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object JQueryFormOptions {
   
@@ -64,7 +63,7 @@ object JQueryFormOptions {
     def setBeforeSerializeUndefined: Self = StObject.set(x, "beforeSerialize", js.undefined)
     
     @scala.inline
-    def setBeforeSubmit(value: (/* formData */ js.Array[_], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction3(value))
+    def setBeforeSubmit(value: (/* formData */ js.Array[js.Any], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction3(value))
     
     @scala.inline
     def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)

@@ -2,26 +2,24 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A precondition on a document, used for conditional operations.
   */
-@js.native
 trait SchemaPrecondition extends StObject {
   
   /**
     * When set to `true`, the target document must exist. When set to `false`,
     * the target document must not exist.
     */
-  var exists: js.UndefOr[Boolean] = js.native
+  var exists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set, the target document must exist and have been last updated at
     * that time.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaPrecondition {
   

@@ -13,56 +13,54 @@ import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseRequest
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexedDBApi extends StObject {
   
   /**
     * Clears all entries from an object store.
     */
-  def clearObjectStore(params: ClearObjectStoreRequest): js.Promise[Unit] = js.native
+  def clearObjectStore(params: ClearObjectStoreRequest): js.Promise[Unit]
   
   /**
     * Deletes a database.
     */
-  def deleteDatabase(params: DeleteDatabaseRequest): js.Promise[Unit] = js.native
+  def deleteDatabase(params: DeleteDatabaseRequest): js.Promise[Unit]
   
   /**
     * Delete a range of entries from an object store
     */
-  def deleteObjectStoreEntries(params: DeleteObjectStoreEntriesRequest): js.Promise[Unit] = js.native
+  def deleteObjectStoreEntries(params: DeleteObjectStoreEntriesRequest): js.Promise[Unit]
   
   /**
     * Disables events from backend.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables events from backend.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Gets metadata of an object store
     */
-  def getMetadata(params: GetMetadataRequest): js.Promise[GetMetadataResponse] = js.native
+  def getMetadata(params: GetMetadataRequest): js.Promise[GetMetadataResponse]
   
   /**
     * Requests data from object store or index.
     */
-  def requestData(params: RequestDataRequest): js.Promise[RequestDataResponse] = js.native
+  def requestData(params: RequestDataRequest): js.Promise[RequestDataResponse]
   
   /**
     * Requests database with given name in given frame.
     */
-  def requestDatabase(params: RequestDatabaseRequest): js.Promise[RequestDatabaseResponse] = js.native
+  def requestDatabase(params: RequestDatabaseRequest): js.Promise[RequestDatabaseResponse]
   
   /**
     * Requests database names for given security origin.
     */
-  def requestDatabaseNames(params: RequestDatabaseNamesRequest): js.Promise[RequestDatabaseNamesResponse] = js.native
+  def requestDatabaseNames(params: RequestDatabaseNamesRequest): js.Promise[RequestDatabaseNamesResponse]
 }
 object IndexedDBApi {
   

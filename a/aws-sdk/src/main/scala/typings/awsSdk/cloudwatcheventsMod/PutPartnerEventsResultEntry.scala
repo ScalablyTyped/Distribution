@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPartnerEventsResultEntry extends StObject {
   
   /**
     * The error code that indicates why the event submission failed.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorCode] = js.undefined
   
   /**
     * The error message that explains why the event submission failed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorMessage] = js.undefined
   
   /**
     * The ID of the event.
     */
-  var EventId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EventId] = js.native
+  var EventId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EventId] = js.undefined
 }
 object PutPartnerEventsResultEntry {
   

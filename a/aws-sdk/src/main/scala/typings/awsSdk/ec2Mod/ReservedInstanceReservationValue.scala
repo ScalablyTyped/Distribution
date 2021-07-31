@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstanceReservationValue extends StObject {
   
   /**
     * The total value of the Convertible Reserved Instance that you are exchanging.
     */
-  var ReservationValue: js.UndefOr[typings.awsSdk.ec2Mod.ReservationValue] = js.native
+  var ReservationValue: js.UndefOr[typings.awsSdk.ec2Mod.ReservationValue] = js.undefined
   
   /**
     * The ID of the Convertible Reserved Instance that you are exchanging.
     */
-  var ReservedInstanceId: js.UndefOr[String] = js.native
+  var ReservedInstanceId: js.UndefOr[String] = js.undefined
 }
 object ReservedInstanceReservationValue {
   

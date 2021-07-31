@@ -24,25 +24,50 @@ import typings.zapierPlatformCore.zapierPlatformCoreStrings.follow
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zapier-platform-core", "createAppTester")
+  @JSImport("zapier-platform-core", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createAppTester(appRaw: js.Object): js.Function2[
-    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[_]], _ | js.Promise[_]], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[_]]]], 
-    js.Promise[_]
-  ] = js.native
-  @JSImport("zapier-platform-core", "createAppTester")
-  @js.native
+    /* func */ js.Function2[
+      /* z */ ZObject, 
+      /* bundle */ Bundle[StringDictionary[js.Any]], 
+      js.Any | js.Promise[js.Any]
+    ], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
+    js.Promise[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppTester")(appRaw.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* func */ js.Function2[
+      /* z */ ZObject, 
+      /* bundle */ Bundle[StringDictionary[js.Any]], 
+      js.Any | js.Promise[js.Any]
+    ], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
+    js.Promise[js.Any]
+  ]]
+  @scala.inline
   def createAppTester(appRaw: js.Object, options: CustomStoreKey): js.Function2[
-    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[_]], _ | js.Promise[_]], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[_]]]], 
-    js.Promise[_]
-  ] = js.native
+    /* func */ js.Function2[
+      /* z */ ZObject, 
+      /* bundle */ Bundle[StringDictionary[js.Any]], 
+      js.Any | js.Promise[js.Any]
+    ], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
+    js.Promise[js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppTester")(appRaw.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* func */ js.Function2[
+      /* z */ ZObject, 
+      /* bundle */ Bundle[StringDictionary[js.Any]], 
+      js.Any | js.Promise[js.Any]
+    ], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
+    js.Promise[js.Any]
+  ]]
   
   object tools {
     
@@ -63,20 +88,19 @@ object mod {
   
   type AppError = Error
   
-  @js.native
   trait BaseHttpResponse extends StObject {
     
-    def getHeader(key: String): js.UndefOr[String] = js.native
+    def getHeader(key: String): js.UndefOr[String]
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var request: HttpRequestOptions = js.native
+    var request: HttpRequestOptions
     
-    var skipThrowForStatus: Boolean = js.native
+    var skipThrowForStatus: Boolean
     
-    var status: Double = js.native
+    var status: Double
     
-    def throwForStatus(): Unit = js.native
+    def throwForStatus(): Unit
   }
   object BaseHttpResponse {
     
@@ -116,26 +140,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Bundle[InputData] extends StObject {
     
-    var authData: StringDictionary[String] = js.native
+    var authData: StringDictionary[String]
     
-    var cleanedRequest: js.UndefOr[PartialmethodHttpMethodquContent | js.Any] = js.native
+    var cleanedRequest: js.UndefOr[PartialmethodHttpMethodquContent | js.Any] = js.undefined
     
-    var inputData: InputData = js.native
+    var inputData: InputData
     
-    var inputDataRaw: StringDictionary[String] = js.native
+    var inputDataRaw: StringDictionary[String]
     
-    var meta: IsFillingDynamicDropdown = js.native
+    var meta: IsFillingDynamicDropdown
     
-    var outputData: js.UndefOr[js.Object] = js.native
+    var outputData: js.UndefOr[js.Object] = js.undefined
     
-    var rawRequest: js.UndefOr[PartialmethodHttpMethodqu] = js.native
+    var rawRequest: js.UndefOr[PartialmethodHttpMethodqu] = js.undefined
     
-    var subscribeData: js.UndefOr[Id] = js.native
+    var subscribeData: js.UndefOr[Id] = js.undefined
     
-    var targetUrl: js.UndefOr[String] = js.native
+    var targetUrl: js.UndefOr[String] = js.undefined
   }
   object Bundle {
     
@@ -151,7 +174,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BundleMutableBuilder[Self <: Bundle[_], InputData] (val x: Self with Bundle[InputData]) extends AnyVal {
+    implicit class BundleMutableBuilder[Self <: Bundle[?], InputData] (val x: Self & Bundle[InputData]) extends AnyVal {
       
       @scala.inline
       def setAuthData(value: StringDictionary[String]): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
@@ -245,40 +268,39 @@ object mod {
     def PUT: typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT = "PUT".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT]
   }
   
-  @js.native
   trait HttpRequestOptions extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.native
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var form: js.UndefOr[js.Object] = js.native
+    var form: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[_]] = js.native
+    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[manual | error | follow] = js.native
+    var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
-    var removeMissingValuesFrom: js.UndefOr[Body] = js.native
+    var removeMissingValuesFrom: js.UndefOr[Body] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var skipThrowForStatus: js.UndefOr[Boolean] = js.native
+    var skipThrowForStatus: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object HttpRequestOptions {
     
@@ -328,7 +350,7 @@ object mod {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setJson(value: js.Object | js.Array[_]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
@@ -392,14 +414,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpResponse extends BaseHttpResponse {
+  trait HttpResponse
+    extends StObject
+       with BaseHttpResponse {
     
-    var content: String = js.native
+    var content: String
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
   }
   object HttpResponse {
     
@@ -437,14 +460,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RawHttpResponse extends BaseHttpResponse {
+  trait RawHttpResponse
+    extends StObject
+       with BaseHttpResponse {
     
-    var body: ReadableStream = js.native
+    var body: ReadableStream
     
-    var content: Buffer = js.native
+    var content: Buffer
     
-    var json: js.Promise[js.UndefOr[js.Object]] = js.native
+    var json: js.Promise[js.UndefOr[js.Object]]
   }
   object RawHttpResponse {
     
@@ -489,9 +513,9 @@ object mod {
     
     var cursor: Get = js.native
     
-    def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
+    def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], js.Any], inputData: js.Object): String = js.native
     
-    def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
+    def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], js.Any], inputData: js.Object): String = js.native
     @JSName("dehydrateFile")
     var dehydrateFile_Original: DehydrateFunc = js.native
     
@@ -510,9 +534,9 @@ object mod {
       * @param input_encoding defaults to 'binary'
       */
     def hash(algorithm: String, data: String): String = js.native
-    def hash(algorithm: String, data: String, encoding: js.UndefOr[scala.Nothing], input_encoding: String): String = js.native
     def hash(algorithm: String, data: String, encoding: String): String = js.native
     def hash(algorithm: String, data: String, encoding: String, input_encoding: String): String = js.native
+    def hash(algorithm: String, data: String, encoding: Unit, input_encoding: String): String = js.native
     
     def request(options: HttpRequestOptionsrawtrueAgent): js.Promise[RawHttpResponse] = js.native
     def request(options: HttpRequestOptionsurlstri): js.Promise[HttpResponse] = js.native
@@ -524,57 +548,32 @@ object mod {
       * turns a file or request into a file into a publicly accessible url
       */
     def stashFile(input: String): String = js.native
-    def stashFile(
-      input: String,
-      knownLength: js.UndefOr[scala.Nothing],
-      filename: js.UndefOr[scala.Nothing],
-      contentType: String
-    ): String = js.native
-    def stashFile(input: String, knownLength: js.UndefOr[scala.Nothing], filename: String): String = js.native
-    def stashFile(input: String, knownLength: js.UndefOr[scala.Nothing], filename: String, contentType: String): String = js.native
     def stashFile(input: String, knownLength: Double): String = js.native
-    def stashFile(input: String, knownLength: Double, filename: js.UndefOr[scala.Nothing], contentType: String): String = js.native
     def stashFile(input: String, knownLength: Double, filename: String): String = js.native
     def stashFile(input: String, knownLength: Double, filename: String, contentType: String): String = js.native
+    def stashFile(input: String, knownLength: Double, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: String, knownLength: Unit, filename: String): String = js.native
+    def stashFile(input: String, knownLength: Unit, filename: String, contentType: String): String = js.native
+    def stashFile(input: String, knownLength: Unit, filename: Unit, contentType: String): String = js.native
     /**
       * turns a file or request into a file into a publicly accessible url
       */
     def stashFile(input: js.Promise[RawHttpResponse | String]): String = js.native
     def stashFile(input: Buffer): String = js.native
-    def stashFile(
-      input: Buffer,
-      knownLength: js.UndefOr[scala.Nothing],
-      filename: js.UndefOr[scala.Nothing],
-      contentType: String
-    ): String = js.native
-    def stashFile(input: Buffer, knownLength: js.UndefOr[scala.Nothing], filename: String): String = js.native
-    def stashFile(input: Buffer, knownLength: js.UndefOr[scala.Nothing], filename: String, contentType: String): String = js.native
     def stashFile(input: Buffer, knownLength: Double): String = js.native
-    def stashFile(input: Buffer, knownLength: Double, filename: js.UndefOr[scala.Nothing], contentType: String): String = js.native
     def stashFile(input: Buffer, knownLength: Double, filename: String): String = js.native
     def stashFile(input: Buffer, knownLength: Double, filename: String, contentType: String): String = js.native
+    def stashFile(input: Buffer, knownLength: Double, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: Buffer, knownLength: Unit, filename: String): String = js.native
+    def stashFile(input: Buffer, knownLength: Unit, filename: String, contentType: String): String = js.native
+    def stashFile(input: Buffer, knownLength: Unit, filename: Unit, contentType: String): String = js.native
     def stashFile(input: ReadableStream): String = js.native
-    def stashFile(
-      input: ReadableStream,
-      knownLength: js.UndefOr[scala.Nothing],
-      filename: js.UndefOr[scala.Nothing],
-      contentType: String
-    ): String = js.native
-    def stashFile(input: ReadableStream, knownLength: js.UndefOr[scala.Nothing], filename: String): String = js.native
-    def stashFile(
-      input: ReadableStream,
-      knownLength: js.UndefOr[scala.Nothing],
-      filename: String,
-      contentType: String
-    ): String = js.native
     def stashFile(input: ReadableStream, knownLength: Double): String = js.native
-    def stashFile(
-      input: ReadableStream,
-      knownLength: Double,
-      filename: js.UndefOr[scala.Nothing],
-      contentType: String
-    ): String = js.native
     def stashFile(input: ReadableStream, knownLength: Double, filename: String): String = js.native
     def stashFile(input: ReadableStream, knownLength: Double, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Double, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: Unit, contentType: String): String = js.native
   }
 }

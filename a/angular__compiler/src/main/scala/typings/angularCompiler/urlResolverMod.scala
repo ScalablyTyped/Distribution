@@ -4,15 +4,17 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlResolverMod {
   
+  @JSImport("@angular/compiler/src/url_resolver", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait UrlResolver extends StObject {
     
-    def resolve(baseUrl: String, url: String): String = js.native
+    def resolve(baseUrl: String, url: String): String
   }
   object UrlResolver {
     
@@ -31,24 +33,27 @@ object urlResolverMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@angular/compiler/src/url_resolver", "UrlResolver")
   @js.native
-  class UrlResolverCls () extends UrlResolver {
+  class UrlResolverCls ()
+    extends StObject
+       with UrlResolver {
     def this(packagePrefix: String) = this()
+    
+    /* CompleteClass */
+    override def resolve(baseUrl: String, url: String): String = js.native
   }
   
-  @JSImport("@angular/compiler/src/url_resolver", "createOfflineCompileUrlResolver")
-  @js.native
-  def createOfflineCompileUrlResolver(): UrlResolver = js.native
+  @scala.inline
+  def createOfflineCompileUrlResolver(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createOfflineCompileUrlResolver")().asInstanceOf[UrlResolver]
   
-  @JSImport("@angular/compiler/src/url_resolver", "createUrlResolverWithoutPackagePrefix")
-  @js.native
-  def createUrlResolverWithoutPackagePrefix(): UrlResolver = js.native
+  @scala.inline
+  def createUrlResolverWithoutPackagePrefix(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlResolverWithoutPackagePrefix")().asInstanceOf[UrlResolver]
   
-  @JSImport("@angular/compiler/src/url_resolver", "getUrlScheme")
-  @js.native
-  def getUrlScheme(url: String): String = js.native
+  @scala.inline
+  def getUrlScheme(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlScheme")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait UrlResolverCtor
-    extends Instantiable0[UrlResolver]
+    extends StObject
+       with Instantiable0[UrlResolver]
        with Instantiable1[/* packagePrefix */ String, UrlResolver]
 }

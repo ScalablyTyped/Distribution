@@ -3,25 +3,25 @@ package typings.screeps.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictpart extends /* part */ StringDictionary[StringDictionary[StringDictionary[Double]]] {
+trait Dictpart
+  extends StObject
+     with /* part */ StringDictionary[StringDictionary[StringDictionary[Double]]] {
   
-  var attack: UH = js.native
+  var attack: UH
   
-  var carry: KH = js.native
+  var carry: KH
   
-  var heal: LHO2 = js.native
+  var heal: LHO2
   
-  var move: XZHO2 = js.native
+  var move: XZHO2
   
-  var ranged_attack: KHO2 = js.native
+  var ranged_attack: KHO2
   
-  var tough: GHO2 = js.native
+  var tough: GHO2
   
-  var work: GH = js.native
+  var work: GH
 }
 object Dictpart {
   

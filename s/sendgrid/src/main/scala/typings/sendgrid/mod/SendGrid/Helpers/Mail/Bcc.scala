@@ -2,21 +2,19 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bcc extends StObject {
   
-  def getEmail(): Email = js.native
+  def getEmail(): Email
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def setEmail(value: Email): Unit = js.native
+  def setEmail(value: Email): Unit
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def toJSON(): typings.sendgrid.anon.Email = js.native
+  def toJSON(): typings.sendgrid.anon.Email
 }
 object Bcc {
   

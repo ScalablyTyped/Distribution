@@ -6,7 +6,6 @@ import typings.framebus.typesMod.FramebusSubscriberArg
 import typings.framebus.typesMod.global.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object framebusMod {
@@ -21,7 +20,7 @@ object framebusMod {
     var checkOrigin: js.Any = js.native
     
     def emit(eventName: String): Boolean = js.native
-    def emit(eventName: String, data: js.UndefOr[scala.Nothing], reply: FramebusReplyHandler): Boolean = js.native
+    def emit(eventName: String, data: Unit, reply: FramebusReplyHandler): Boolean = js.native
     def emit(eventName: String, data: FramebusReplyHandler): Boolean = js.native
     def emit(eventName: String, data: FramebusReplyHandler, reply: FramebusReplyHandler): Boolean = js.native
     def emit(eventName: String, data: FramebusSubscriberArg): Boolean = js.native
@@ -51,22 +50,23 @@ object framebusMod {
   /* static members */
   object Framebus {
     
-    @JSImport("framebus/dist/framebus", "Framebus.target")
+    @JSImport("framebus/dist/framebus", "Framebus")
     @js.native
-    def target(): Framebus = js.native
-    @JSImport("framebus/dist/framebus", "Framebus.target")
-    @js.native
-    def target(options: FramebusOptions): Framebus = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def target(): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")().asInstanceOf[Framebus]
+    @scala.inline
+    def target(options: FramebusOptions): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(options.asInstanceOf[js.Any]).asInstanceOf[Framebus]
   }
   
-  @js.native
   trait FramebusOptions extends StObject {
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var verifyDomain: js.UndefOr[VerifyDomainMethod] = js.native
+    var verifyDomain: js.UndefOr[VerifyDomainMethod] = js.undefined
   }
   object FramebusOptions {
     

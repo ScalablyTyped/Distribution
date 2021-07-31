@@ -3,21 +3,22 @@ package typings.reactAliceCarousel
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playPauseButtonMod {
   
-  @JSImport("react-alice-carousel/lib/views/PlayPauseButton", "PlayPauseButton")
+  @JSImport("react-alice-carousel/lib/views/PlayPauseButton", JSImport.Namespace)
   @js.native
-  def PlayPauseButton(hasIsPlayingOnClick: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def PlayPauseButton(hasIsPlayingOnClick: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PlayPauseButton")(hasIsPlayingOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var isPlaying: Boolean = js.native
+    var isPlaying: Boolean
     
-    def onClick(e: js.Any): Unit = js.native
+    def onClick(e: js.Any): Unit
   }
   object Props {
     

@@ -2,14 +2,12 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service with manual scaling runs continuously, allowing you to perform
   * complex initialization and rely on the state of its memory over time.
   */
-@js.native
 trait SchemaManualScaling extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaManualScaling extends StObject {
     * (https://cloud.google.com/appengine/docs/python/modules/functions)
     * set_num_instances() function.
     */
-  var instances: js.UndefOr[Double] = js.native
+  var instances: js.UndefOr[Double] = js.undefined
 }
 object SchemaManualScaling {
   

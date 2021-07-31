@@ -2,91 +2,89 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFlowResponse extends StObject {
   
   /**
     *  Specifies when the flow was created. 
     */
-  var createdAt: js.UndefOr[Date] = js.native
+  var createdAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  The ARN of the user who created the flow. 
     */
-  var createdBy: js.UndefOr[CreatedBy] = js.native
+  var createdBy: js.UndefOr[CreatedBy] = js.undefined
   
   /**
     *  A description of the flow. 
     */
-  var description: js.UndefOr[FlowDescription] = js.native
+  var description: js.UndefOr[FlowDescription] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow transfers data to the destination connector. 
     */
-  var destinationFlowConfigList: js.UndefOr[DestinationFlowConfigList] = js.native
+  var destinationFlowConfigList: js.UndefOr[DestinationFlowConfigList] = js.undefined
   
   /**
     *  The flow's Amazon Resource Name (ARN). 
     */
-  var flowArn: js.UndefOr[FlowArn] = js.native
+  var flowArn: js.UndefOr[FlowArn] = js.undefined
   
   /**
     *  The specified name of the flow. Spaces are not allowed. Use underscores (_) or hyphens (-) only. 
     */
-  var flowName: js.UndefOr[FlowName] = js.native
+  var flowName: js.UndefOr[FlowName] = js.undefined
   
   /**
     *  Indicates the current status of the flow. 
     */
-  var flowStatus: js.UndefOr[FlowStatus] = js.native
+  var flowStatus: js.UndefOr[FlowStatus] = js.undefined
   
   /**
     *  Contains an error message if the flow status is in a suspended or error state. This applies only to scheduled or event-triggered flows. 
     */
-  var flowStatusMessage: js.UndefOr[FlowStatusMessage] = js.native
+  var flowStatusMessage: js.UndefOr[FlowStatusMessage] = js.undefined
   
   /**
     *  The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key. 
     */
-  var kmsArn: js.UndefOr[KMSArn] = js.native
+  var kmsArn: js.UndefOr[KMSArn] = js.undefined
   
   /**
     *  Describes the details of the most recent flow run. 
     */
-  var lastRunExecutionDetails: js.UndefOr[ExecutionDetails] = js.native
+  var lastRunExecutionDetails: js.UndefOr[ExecutionDetails] = js.undefined
   
   /**
     *  Specifies when the flow was last updated. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.native
+  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  Specifies the user name of the account that performed the most recent update. 
     */
-  var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.native
+  var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow retrieves data from the source connector. 
     */
-  var sourceFlowConfig: js.UndefOr[SourceFlowConfig] = js.native
+  var sourceFlowConfig: js.UndefOr[SourceFlowConfig] = js.undefined
   
   /**
     *  The tags used to organize, track, or control access for your flow. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     *  A list of tasks that Amazon AppFlow performs while transferring the data in the flow run. 
     */
-  var tasks: js.UndefOr[Tasks] = js.native
+  var tasks: js.UndefOr[Tasks] = js.undefined
   
   /**
     *  The trigger settings that determine how and when the flow runs. 
     */
-  var triggerConfig: js.UndefOr[TriggerConfig] = js.native
+  var triggerConfig: js.UndefOr[TriggerConfig] = js.undefined
 }
 object DescribeFlowResponse {
   

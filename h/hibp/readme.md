@@ -4,15 +4,15 @@
 Typings are for version 9.0.0
 
 ## Library description:
-A Promise-based API for querying the 'Have I been pwned?' service.
+A Promise-based client for the 'Have I been pwned?' service.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | hibp |
-| Keywords           | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
-| # releases         | 17 |
-| # dependents       | 5 |
-| # downloads        | 55687 |
+| Keywords           | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords, client |
+| # releases         | 19 |
+| # dependents       | 6 |
+| # downloads        | 60692 |
 | # stars            | 1 |
 
 ## Links

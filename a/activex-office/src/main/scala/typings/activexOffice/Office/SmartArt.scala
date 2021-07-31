@@ -2,38 +2,94 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartArt extends StObject {
   
-  def AllNodes(Index: String): SmartArtNode = js.native
-  def AllNodes(Index: Double): SmartArtNode = js.native
+  def AllNodes(Index: String): SmartArtNode
+  def AllNodes(Index: Double): SmartArtNode
   @JSName("AllNodes")
-  val AllNodes_Original: SmartArtNodes = js.native
+  val AllNodes_Original: SmartArtNodes
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Color: SmartArtColor = js.native
+  var Color: SmartArtColor
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Layout: SmartArtLayout = js.native
+  var Layout: SmartArtLayout
   
-  def Nodes(Index: String): SmartArtNode = js.native
-  def Nodes(Index: Double): SmartArtNode = js.native
+  def Nodes(Index: String): SmartArtNode
+  def Nodes(Index: Double): SmartArtNode
   @JSName("Nodes")
-  val Nodes_Original: SmartArtNodes = js.native
+  val Nodes_Original: SmartArtNodes
   
   @JSName("Office.SmartArt_typekey")
-  var OfficeDotSmartArt_typekey: SmartArt = js.native
+  var OfficeDotSmartArt_typekey: SmartArt
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var QuickStyle: SmartArtQuickStyle = js.native
+  var QuickStyle: SmartArtQuickStyle
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  var Reverse: MsoTriState = js.native
+  var Reverse: MsoTriState
+}
+object SmartArt {
+  
+  @scala.inline
+  def apply(
+    AllNodes: SmartArtNodes,
+    Application: js.Any,
+    Color: SmartArtColor,
+    Creator: Double,
+    Layout: SmartArtLayout,
+    Nodes: SmartArtNodes,
+    OfficeDotSmartArt_typekey: SmartArt,
+    Parent: js.Any,
+    QuickStyle: SmartArtQuickStyle,
+    Reset: () => Unit,
+    Reverse: MsoTriState
+  ): SmartArt = {
+    val __obj = js.Dynamic.literal(AllNodes = AllNodes.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Layout = Layout.asInstanceOf[js.Any], Nodes = Nodes.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], QuickStyle = QuickStyle.asInstanceOf[js.Any], Reset = js.Any.fromFunction0(Reset), Reverse = Reverse.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.SmartArt_typekey")(OfficeDotSmartArt_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmartArt]
+  }
+  
+  @scala.inline
+  implicit class SmartArtMutableBuilder[Self <: SmartArt] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAllNodes(value: SmartArtNodes): Self = StObject.set(x, "AllNodes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setColor(value: SmartArtColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLayout(value: SmartArtLayout): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNodes(value: SmartArtNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOfficeDotSmartArt_typekey(value: SmartArt): Self = StObject.set(x, "Office.SmartArt_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setQuickStyle(value: SmartArtQuickStyle): Self = StObject.set(x, "QuickStyle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
+  }
 }

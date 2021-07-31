@@ -3,15 +3,13 @@ package typings.nodeDhtSensor
 import typings.nodeDhtSensor.mod.SensorData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fake extends StObject {
     
-    var fake: SensorData = js.native
+    var fake: SensorData
   }
   object Fake {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Test extends StObject {
     
-    var test: Fake = js.native
+    var test: Fake
   }
   object Test {
     

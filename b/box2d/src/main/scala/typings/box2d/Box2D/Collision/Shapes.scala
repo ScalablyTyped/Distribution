@@ -4,43 +4,43 @@ import typings.box2d.Box2D.Common.Math.b2Transform
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Shapes {
   
-  @js.native
-  trait b2CircleShape extends b2Shape {
+  trait b2CircleShape
+    extends StObject
+       with b2Shape {
     
     /**
       * Get the local position of this circle in its parent body.
       * @return This circle's local position.
       **/
-    def GetLocalPosition(): b2Vec2 = js.native
+    def GetLocalPosition(): b2Vec2
     
     /**
       * Get the radius of the circle.
       * @return This circle's radius.
       **/
-    def GetRadius(): Double = js.native
+    def GetRadius(): Double
     
     /**
       * Set the circle shape values from another shape.
       * @param other The other circle shape to copy values from.
       **/
-    def Set(other: b2CircleShape): Unit = js.native
+    def Set(other: b2CircleShape): Unit
     
     /**
       * Set the local position of this circle in its parent body.
       * @param position The new local position of this circle.
       **/
-    def SetLocalPosition(position: b2Vec2): Unit = js.native
+    def SetLocalPosition(position: b2Vec2): Unit
     
     /**
       * Set the radius of the circle.
       * @param radius The new radius of the circle.
       **/
-    def SetRadius(radius: Double): Unit = js.native
+    def SetRadius(radius: Double): Unit
   }
   object b2CircleShape {
     
@@ -83,23 +83,22 @@ object Shapes {
     }
   }
   
-  @js.native
   trait b2EdgeChainDef extends StObject {
     
     /**
       * Whether to create an extra edge between the first and last vertices.
       **/
-    var isALoop: Boolean = js.native
+    var isALoop: Boolean
     
     /**
       * The number of vertices in the chain.
       **/
-    var vertexCount: Double = js.native
+    var vertexCount: Double
     
     /**
       * The vertices in local coordinates.
       **/
-    var vertices: b2Vec2 = js.native
+    var vertices: b2Vec2
   }
   object b2EdgeChainDef {
     
@@ -123,93 +122,94 @@ object Shapes {
     }
   }
   
-  @js.native
-  trait b2EdgeShape extends b2Shape {
+  trait b2EdgeShape
+    extends StObject
+       with b2Shape {
     
     /**
       * Determines if the first corner of this edge bends towards the solid side.
       * @return True if convex, otherwise false.
       **/
-    def Corner1IsConvex(): Boolean = js.native
+    def Corner1IsConvex(): Boolean
     
     /**
       * Determines if the second corner of this edge bends towards the solid side.
       * @return True if convex, otherwise false.
       **/
-    def Corner2IsConvex(): Boolean = js.native
+    def Corner2IsConvex(): Boolean
     
     /**
       * Get a core vertex 1 in local coordinates.  These vertices represent a smaller edge that is used for time of impact.
       * @return core vertex 1 in local coordinates.
       **/
-    def GetCoreVertex1(): b2Vec2 = js.native
+    def GetCoreVertex1(): b2Vec2
     
     /**
       * Get a core vertex 2 in local coordinates.  These vertices represent a smaller edge that is used for time of impact.
       * @return core vertex 2 in local coordinates.
       **/
-    def GetCoreVertex2(): b2Vec2 = js.native
+    def GetCoreVertex2(): b2Vec2
     
     /**
       * Returns a unit vector halfway between direction and previous direction.
       * @return Halfway unit vector between direction and previous direction.
       **/
-    def GetCorner1Vector(): b2Vec2 = js.native
+    def GetCorner1Vector(): b2Vec2
     
     /**
       * Returns a unit vector halfway between direction and previous direction.
       * @return Halfway unit vector between direction and previous direction.
       **/
-    def GetCorner2Vector(): b2Vec2 = js.native
+    def GetCorner2Vector(): b2Vec2
     
     /**
       * Get a parallel unit vector, pointing from vertex 1 to vertex 2.
       * @return Vertex 1 to vertex 2 directional vector.
       **/
-    def GetDirectionVector(): b2Vec2 = js.native
+    def GetDirectionVector(): b2Vec2
     
     /**
       * Get the first vertex and apply the supplied transform.
       * @param xf Transform to apply.
       * @return First vertex with xf transform applied.
       **/
-    def GetFirstVertex(xf: b2Transform): b2Vec2 = js.native
+    def GetFirstVertex(xf: b2Transform): b2Vec2
     
     /**
       * Get the distance from vertex1 to vertex2.
       * @return Distance from vertex1 to vertex2.
       **/
-    def GetLength(): Double = js.native
+    def GetLength(): Double
     
     /**
       * Get the next edge in the chain.
       * @return Next edge shape or null if there is no next edge shape.
       **/
-    def GetNextEdge(): b2EdgeShape = js.native
+    def GetNextEdge(): b2EdgeShape
     
     /**
       * Get a perpendicular unit vector, pointing from the solid side to the empty side.
       * @return Normal vector.
       **/
-    def GetNormalVector(): b2Vec2 = js.native
+    def GetNormalVector(): b2Vec2
     
     /**
       * Get the previous edge in the chain.
       * @return Previous edge shape or null if there is no previous edge shape.
       **/
-    def GetPrevEdge(): b2EdgeShape = js.native
+    def GetPrevEdge(): b2EdgeShape
     
     /**
       * Get the local position of vertex1 in the parent body.
       * @return Local position of vertex1 in the parent body.
       **/
-    def GetVertex1(): b2Vec2 = js.native
+    def GetVertex1(): b2Vec2
     
     /**
       * Get the local position of vertex2 in the parent body.
       * @return Local position of vertex2 in the parent body.
       **/
-    def GetVertex2(): b2Vec2 = js.native
+    def GetVertex2(): b2Vec2
     
     /**
       * Get the support point in the given world direction with the supplied transform.
@@ -218,7 +218,7 @@ object Shapes {
       * @param dY Y world direction.
       * @return Support point.
       **/
-    def Support(xf: b2Transform, dX: Double, dY: Double): b2Vec2 = js.native
+    def Support(xf: b2Transform, dX: Double, dY: Double): b2Vec2
   }
   object b2EdgeShape {
     
@@ -302,23 +302,22 @@ object Shapes {
     }
   }
   
-  @js.native
   trait b2MassData extends StObject {
     
     /**
       * The rotational inertia of the shape. This may be about the center or local origin, depending on usage.
       **/
-    var I: Double = js.native
+    var I: Double
     
     /**
       * The position of the shape's centroid relative to the shape's origin.
       **/
-    var center: b2Vec2 = js.native
+    var center: b2Vec2
     
     /**
       * The mass of the shape, usually in kilograms.
       **/
-    var mass: Double = js.native
+    var mass: Double
   }
   object b2MassData {
     
@@ -343,7 +342,9 @@ object Shapes {
   }
   
   @js.native
-  trait b2PolygonShape extends b2Shape {
+  trait b2PolygonShape
+    extends StObject
+       with b2Shape {
     
     /**
       * Get the edge normal vectors. There is one for each vertex.
@@ -411,7 +412,7 @@ object Shapes {
       * @return Oriented box shape.
       **/
     def SetAsOrientedBox(hx: Double, hy: Double): Unit = js.native
-    def SetAsOrientedBox(hx: Double, hy: Double, center: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
+    def SetAsOrientedBox(hx: Double, hy: Double, center: Unit, angle: Double): Unit = js.native
     def SetAsOrientedBox(hx: Double, hy: Double, center: b2Vec2): Unit = js.native
     def SetAsOrientedBox(hx: Double, hy: Double, center: b2Vec2, angle: Double): Unit = js.native
     
@@ -421,11 +422,10 @@ object Shapes {
       * @param vertexCount The number of vertices, default is 0 and in the box2dweb.js code it is ignored.
       * @return Convex polygon shape.
       **/
-    def SetAsVector(vertices: js.Array[_]): Unit = js.native
-    def SetAsVector(vertices: js.Array[_], vertexCount: Double): Unit = js.native
+    def SetAsVector(vertices: js.Array[js.Any]): Unit = js.native
+    def SetAsVector(vertices: js.Array[js.Any], vertexCount: Double): Unit = js.native
   }
   
-  @js.native
   trait b2Shape extends StObject {
     
     /**
@@ -433,14 +433,14 @@ object Shapes {
       * @param aabb Calculated AABB, this argument is `out`.
       * @param xf Transform to calculate the AABB.
       **/
-    def ComputeAABB(aabb: b2AABB, xf: b2Transform): Unit = js.native
+    def ComputeAABB(aabb: b2AABB, xf: b2Transform): Unit
     
     /**
       * Compute the mass properties of this shape using its dimensions and density. The inertia tensor is computed about the local origin, not the centroid.
       * @param massData Calculate the mass, this argument is `out`.
       * @param density Density.
       **/
-    def ComputeMass(massData: b2MassData, density: Double): Unit = js.native
+    def ComputeMass(massData: b2MassData, density: Double): Unit
     
     /**
       * Compute the volume and centroid of this shape intersected with a half plane
@@ -449,17 +449,17 @@ object Shapes {
       * @param xf The shape transform.
       * @param c The centroid, this argument is `out`.
       **/
-    def ComputeSubmergedArea(normal: b2Vec2, offset: Double, xf: b2Transform, c: b2Vec2): Double = js.native
+    def ComputeSubmergedArea(normal: b2Vec2, offset: Double, xf: b2Transform, c: b2Vec2): Double
     
     /**
       * Clone the shape.
       **/
-    def Copy(): b2Shape = js.native
+    def Copy(): b2Shape
     
     /**
       * Get the type of this shape. You can use this to down cast to the concrete shape.
       **/
-    def GetType(): Double = js.native
+    def GetType(): Double
     
     /**
       * Cast a ray against this shape.
@@ -468,13 +468,13 @@ object Shapes {
       * @param transform The transform to be applied to the shape.
       * @param return True if the ray hits the shape, otherwise false.
       **/
-    def RayCast(output: b2RayCastOutput, input: b2RayCastInput, transform: b2Transform): Boolean = js.native
+    def RayCast(output: b2RayCastOutput, input: b2RayCastInput, transform: b2Transform): Boolean
     
     /**
       * Set the shape values from another shape.
       * @param other The other shape to copy values from.
       **/
-    def Set(other: b2Shape): Unit = js.native
+    def Set(other: b2Shape): Unit
     
     /**
       * Test a point for containment in this shape. This only works for convex shapes.
@@ -482,7 +482,7 @@ object Shapes {
       * @param p Point to test against, in world coordinates.
       * @return True if the point is in this shape, otherwise false.
       **/
-    def TestPoint(xf: b2Transform, p: b2Vec2): Boolean = js.native
+    def TestPoint(xf: b2Transform, p: b2Vec2): Boolean
   }
   object b2Shape {
     

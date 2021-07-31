@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Control extends Element {
+trait Control
+  extends StObject
+     with Element {
   
   /**
     * The string given as "sStyleClass" will be added to the "class" attribute of this control's root HTML
@@ -55,9 +56,9 @@ trait Control extends Element {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def attachBrowserEvent(sEventType: String): Control = js.native
-  def attachBrowserEvent(sEventType: String, fnHandler: js.UndefOr[scala.Nothing], oListener: js.Any): Control = js.native
   def attachBrowserEvent(sEventType: String, fnHandler: js.Any): Control = js.native
   def attachBrowserEvent(sEventType: String, fnHandler: js.Any, oListener: js.Any): Control = js.native
+  def attachBrowserEvent(sEventType: String, fnHandler: Unit, oListener: js.Any): Control = js.native
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>validateFieldGroup</code> event of this
@@ -98,9 +99,9 @@ trait Control extends Element {
     * @param oListener The context object that was given in the call to attachBrowserEvent.
     */
   def detachBrowserEvent(sEventType: String): Unit = js.native
-  def detachBrowserEvent(sEventType: String, fnHandler: js.UndefOr[scala.Nothing], oListener: js.Any): Unit = js.native
   def detachBrowserEvent(sEventType: String, fnHandler: js.Any): Unit = js.native
   def detachBrowserEvent(sEventType: String, fnHandler: js.Any, oListener: js.Any): Unit = js.native
+  def detachBrowserEvent(sEventType: String, fnHandler: Unit, oListener: js.Any): Unit = js.native
   
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>validateFieldGroup</code> event of

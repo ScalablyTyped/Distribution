@@ -3,39 +3,37 @@ package typings.mfiles
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectFile extends StObject {
   
-  val ChangeTimeUtc: Date = js.native
+  val ChangeTimeUtc: Date
   
-  val CreationTimeUtc: Date = js.native
+  val CreationTimeUtc: Date
   
-  val Extension: String = js.native
+  val Extension: String
   
-  val FileGUID: String = js.native
+  val FileGUID: String
   
-  val FileVer: IFileVer = js.native
+  val FileVer: IFileVer
   
-  def GetNameForFileSystem(): String = js.native
+  def GetNameForFileSystem(): String
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val LastAccessTimeUtc: Date = js.native
+  val LastAccessTimeUtc: Date
   
-  val LastWriteTimeUtc: Date = js.native
+  val LastWriteTimeUtc: Date
   
-  val LogicalSize: Double = js.native
+  val LogicalSize: Double
   
-  val LogicalSize_32bit: Double = js.native
+  val LogicalSize_32bit: Double
   
-  val Title: String = js.native
+  val Title: String
   
-  def ToJSON(): String = js.native
+  def ToJSON(): String
   
-  val Version: Double = js.native
+  val Version: Double
 }
 object IObjectFile {
   

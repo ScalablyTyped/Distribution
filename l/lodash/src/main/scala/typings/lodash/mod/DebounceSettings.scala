@@ -2,26 +2,24 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebounceSettings extends StObject {
   
   /**
     * @see _.leading
     */
-  var leading: js.UndefOr[Boolean] = js.native
+  var leading: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @see _.maxWait
     */
-  var maxWait: js.UndefOr[Double] = js.native
+  var maxWait: js.UndefOr[Double] = js.undefined
   
   /**
     * @see _.trailing
     */
-  var trailing: js.UndefOr[Boolean] = js.native
+  var trailing: js.UndefOr[Boolean] = js.undefined
 }
 object DebounceSettings {
   

@@ -3,14 +3,16 @@ package typings.ethereumCryptography
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdkeyCryptoMod {
   
-  @JSImport("ethereum-cryptography/pure/shims/hdkey-crypto", "createHash")
+  @JSImport("ethereum-cryptography/pure/shims/hdkey-crypto", JSImport.Namespace)
   @js.native
-  def createHash(name: String): Hash = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createHash(name: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(name.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
   @JSImport("ethereum-cryptography/pure/shims/hdkey-crypto", "createHmac")
   @js.native
@@ -20,16 +22,15 @@ object hdkeyCryptoMod {
   @js.native
   val randomBytes: js.Any = js.native
   
-  @js.native
   trait Hash extends StObject {
     
-    var buffers: js.Any = js.native
+    var buffers: js.Any
     
-    def digest(param: js.Any): Buffer = js.native
+    def digest(param: js.Any): Buffer
     
-    val hashFunction: js.Any = js.native
+    val hashFunction: js.Any
     
-    def update(buffer: Buffer): this.type = js.native
+    def update(buffer: Buffer): this.type
   }
   object Hash {
     

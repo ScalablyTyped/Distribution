@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InferenceAcceleratorOverride extends StObject {
   
   /**
     * The Elastic Inference accelerator device name to override for the task. This parameter must match a deviceName specified in the task definition.
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The Elastic Inference accelerator type to use.
     */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
 }
 object InferenceAcceleratorOverride {
   

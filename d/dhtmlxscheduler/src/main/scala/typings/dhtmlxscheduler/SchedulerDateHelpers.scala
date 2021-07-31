@@ -3,41 +3,39 @@ package typings.dhtmlxscheduler
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerDateHelpers extends StObject {
   
-  def add(origin: Date, count: Double, unit: String): Date = js.native
+  def add(origin: Date, count: Double, unit: String): Date
   
-  def add_map(origin: Date, count: Double): Date = js.native
+  def add_map(origin: Date, count: Double): Date
   
-  def convert_to_utc(origin: Date): Date = js.native
+  def convert_to_utc(origin: Date): Date
   
-  def copy(origin: Date): Date = js.native
+  def copy(origin: Date): Date
   
-  def date_part(origin: Date): Date = js.native
+  def date_part(origin: Date): Date
   
-  def date_to_str(format: String): js.Any = js.native
+  def date_to_str(format: String): js.Any
   
-  def day_start(origin: Date): Date = js.native
+  def day_start(origin: Date): Date
   
-  def getISOWeek(origin: Date): Double = js.native
+  def getISOWeek(origin: Date): Double
   
-  def getUTCISOWeek(origin: Date): Double = js.native
+  def getUTCISOWeek(origin: Date): Double
   
-  def month_start(origin: Date): Date = js.native
+  def month_start(origin: Date): Date
   
-  def str_to_date(format: String): js.Any = js.native
+  def str_to_date(format: String): js.Any
   
-  def time_part(origin: Date): Date = js.native
+  def time_part(origin: Date): Date
   
-  def to_fixed(value: Double): String = js.native
+  def to_fixed(value: Double): String
   
-  def week_start(origin: Date): Date = js.native
+  def week_start(origin: Date): Date
   
-  def year_start(origin: Date): Date = js.native
+  def year_start(origin: Date): Date
 }
 object SchedulerDateHelpers {
   

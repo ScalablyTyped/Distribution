@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the SelectionChanged event.
   */
-@js.native
-trait ASPxClientDiagramSelectionChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDiagramSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an array of the selected items (shapes or connectors).
     */
-  var items: js.Array[DiagramItem] = js.native
+  var items: js.Array[DiagramItem]
 }
 object ASPxClientDiagramSelectionChangedEventArgs {
   

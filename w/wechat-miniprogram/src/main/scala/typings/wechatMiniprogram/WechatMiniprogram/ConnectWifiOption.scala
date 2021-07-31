@@ -2,34 +2,32 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectWifiOption extends StObject {
   
   /** Wi-Fi 设备 BSSID */
-  var BSSID: js.UndefOr[String] = js.native
+  var BSSID: js.UndefOr[String] = js.undefined
   
   /** Wi-Fi 设备 SSID */
-  var SSID: String = js.native
+  var SSID: String
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ConnectWifiCompleteCallback] = js.native
+  var complete: js.UndefOr[ConnectWifiCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ConnectWifiFailCallback] = js.native
+  var fail: js.UndefOr[ConnectWifiFailCallback] = js.undefined
   
   /** 跳转到系统设置页进行连接，仅安卓生效
     *
     * 最低基础库： `2.12.0` */
-  var maunal: js.UndefOr[Boolean] = js.native
+  var maunal: js.UndefOr[Boolean] = js.undefined
   
   /** Wi-Fi 设备密码 */
-  var password: String = js.native
+  var password: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ConnectWifiSuccessCallback] = js.native
+  var success: js.UndefOr[ConnectWifiSuccessCallback] = js.undefined
 }
 object ConnectWifiOption {
   

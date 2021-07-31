@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the AxisBase class.
   */
-@js.native
-trait ASPxClientAxisBase extends ASPxClientWebChartElementNamed {
+trait ASPxClientAxisBase
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Provides access to the XY-diagram which contains the current axis.
     */
-  var diagram: ASPxClientXYDiagramBase = js.native
+  var diagram: ASPxClientXYDiagramBase
   
   /**
     * Provides acess to the range of the axis coordinates.
     */
-  var range: ASPxClientAxisRange = js.native
+  var range: ASPxClientAxisRange
 }
 object ASPxClientAxisBase {
   

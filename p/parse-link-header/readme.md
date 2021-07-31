@@ -11,8 +11,8 @@ Parses a link header and returns paging information for each contained link.
 | Full name          | parse-link-header |
 | Keywords           | parse, link, header, weblink, web, link, rel |
 | # releases         | 0 |
-| # dependents       | 169 |
-| # downloads        | 12310580 |
+| # dependents       | 182 |
+| # downloads        | 19418935 |
 | # stars            | 9 |
 
 ## Links

@@ -2,111 +2,109 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceSummary extends StObject {
   
   /**
     * Annotations from the trace's segment documents.
     */
-  var Annotations: js.UndefOr[typings.awsSdk.xrayMod.Annotations] = js.native
+  var Annotations: js.UndefOr[typings.awsSdk.xrayMod.Annotations] = js.undefined
   
   /**
     * A list of Availability Zones for any zone corresponding to the trace segments.
     */
-  var AvailabilityZones: js.UndefOr[TraceAvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[TraceAvailabilityZones] = js.undefined
   
   /**
     * The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.
     */
-  var Duration: js.UndefOr[NullableDouble] = js.native
+  var Duration: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * The root of a trace.
     */
-  var EntryPoint: js.UndefOr[ServiceId] = js.native
+  var EntryPoint: js.UndefOr[ServiceId] = js.undefined
   
   /**
     * A collection of ErrorRootCause structures corresponding to the trace segments.
     */
-  var ErrorRootCauses: js.UndefOr[typings.awsSdk.xrayMod.ErrorRootCauses] = js.native
+  var ErrorRootCauses: js.UndefOr[typings.awsSdk.xrayMod.ErrorRootCauses] = js.undefined
   
   /**
     * A collection of FaultRootCause structures corresponding to the trace segments.
     */
-  var FaultRootCauses: js.UndefOr[typings.awsSdk.xrayMod.FaultRootCauses] = js.native
+  var FaultRootCauses: js.UndefOr[typings.awsSdk.xrayMod.FaultRootCauses] = js.undefined
   
   /**
     * The root segment document has a 400 series error.
     */
-  var HasError: js.UndefOr[NullableBoolean] = js.native
+  var HasError: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The root segment document has a 500 series error.
     */
-  var HasFault: js.UndefOr[NullableBoolean] = js.native
+  var HasFault: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * One or more of the segment documents has a 429 throttling error.
     */
-  var HasThrottle: js.UndefOr[NullableBoolean] = js.native
+  var HasThrottle: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Information about the HTTP request served by the trace.
     */
-  var Http: js.UndefOr[typings.awsSdk.xrayMod.Http] = js.native
+  var Http: js.UndefOr[typings.awsSdk.xrayMod.Http] = js.undefined
   
   /**
     * The unique identifier for the request that generated the trace's segments and subsegments.
     */
-  var Id: js.UndefOr[TraceId] = js.native
+  var Id: js.UndefOr[TraceId] = js.undefined
   
   /**
     * A list of EC2 instance IDs for any instance corresponding to the trace segments.
     */
-  var InstanceIds: js.UndefOr[TraceInstanceIds] = js.native
+  var InstanceIds: js.UndefOr[TraceInstanceIds] = js.undefined
   
   /**
     * One or more of the segment documents is in progress.
     */
-  var IsPartial: js.UndefOr[NullableBoolean] = js.native
+  var IsPartial: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The matched time stamp of a defined event.
     */
-  var MatchedEventTime: js.UndefOr[Timestamp] = js.native
+  var MatchedEventTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A list of resource ARNs for any resource corresponding to the trace segments.
     */
-  var ResourceARNs: js.UndefOr[TraceResourceARNs] = js.native
+  var ResourceARNs: js.UndefOr[TraceResourceARNs] = js.undefined
   
   /**
     * The length of time in seconds between the start and end times of the root segment. If the service performs work asynchronously, the response time measures the time before the response is sent to the user, while the duration measures the amount of time before the last traced activity completes.
     */
-  var ResponseTime: js.UndefOr[NullableDouble] = js.native
+  var ResponseTime: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * A collection of ResponseTimeRootCause structures corresponding to the trace segments.
     */
-  var ResponseTimeRootCauses: js.UndefOr[typings.awsSdk.xrayMod.ResponseTimeRootCauses] = js.native
+  var ResponseTimeRootCauses: js.UndefOr[typings.awsSdk.xrayMod.ResponseTimeRootCauses] = js.undefined
   
   /**
     * The revision number of a trace.
     */
-  var Revision: js.UndefOr[Integer] = js.native
+  var Revision: js.UndefOr[Integer] = js.undefined
   
   /**
     * Service IDs from the trace's segment documents.
     */
-  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.native
+  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.undefined
   
   /**
     * Users from the trace's segment documents.
     */
-  var Users: js.UndefOr[TraceUsers] = js.native
+  var Users: js.UndefOr[TraceUsers] = js.undefined
 }
 object TraceSummary {
   

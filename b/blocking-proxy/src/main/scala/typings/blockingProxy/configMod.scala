@@ -2,33 +2,33 @@ package typings.blockingProxy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @JSImport("blocking-proxy/built/lib/config", "printHelp")
+  @JSImport("blocking-proxy/built/lib/config", JSImport.Namespace)
   @js.native
-  def printHelp(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("blocking-proxy/built/lib/config", "processArgs")
-  @js.native
-  def processArgs(argv: js.Array[String]): Config = js.native
+  @scala.inline
+  def printHelp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printHelp")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def processArgs(argv: js.Array[String]): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("processArgs")(argv.asInstanceOf[js.Any]).asInstanceOf[Config]
+  
   trait Config extends StObject {
     
-    var fork: js.UndefOr[Boolean] = js.native
+    var fork: js.UndefOr[Boolean] = js.undefined
     
-    var help: js.UndefOr[Boolean] = js.native
+    var help: js.UndefOr[Boolean] = js.undefined
     
-    var highlightDelay: js.UndefOr[String] = js.native
+    var highlightDelay: js.UndefOr[String] = js.undefined
     
-    var logDir: js.UndefOr[String] = js.native
+    var logDir: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var seleniumAddress: js.UndefOr[String] = js.native
+    var seleniumAddress: js.UndefOr[String] = js.undefined
   }
   object Config {
     

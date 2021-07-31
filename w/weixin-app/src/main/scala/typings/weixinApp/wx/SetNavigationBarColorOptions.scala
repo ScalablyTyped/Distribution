@@ -5,27 +5,26 @@ import typings.weixinApp.weixinAppStrings.Numbersign000000
 import typings.weixinApp.weixinAppStrings.Numbersignffffff
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNavigationBarColorOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 动画效果
     */
-  var animation: js.UndefOr[Duration] = js.native
+  var animation: js.UndefOr[Duration] = js.undefined
   
   /**
     * 背景颜色值，有效值为十六进制颜色
     */
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   /**
     * 前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000
     */
-  var frontColor: Numbersignffffff | Numbersign000000 = js.native
+  var frontColor: Numbersignffffff | Numbersign000000
 }
 object SetNavigationBarColorOptions {
   

@@ -3,7 +3,6 @@ package typings.scriptableIos
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In order to add the reminder to your calendar, you must call the save() function.
   * @see https://docs.scriptable.app/reminder/#-new-reminder
   */
-@js.native
 trait Reminder extends StObject {
   
   /**
@@ -22,31 +20,31 @@ trait Reminder extends StObject {
     * @param recurrenceRule - Recurrence rule to add to the reminder.
     * @see https://docs.scriptable.app/reminder/#-addrecurrencerule
     */
-  def addRecurrenceRule(recurrenceRule: RecurrenceRule): Unit = js.native
+  def addRecurrenceRule(recurrenceRule: RecurrenceRule): Unit
   
   /**
     * _Calendar the reminder is stored in._
     * @see https://docs.scriptable.app/reminder/#calendar
     */
-  var calendar: Calendar = js.native
+  var calendar: Calendar
   
   /**
     * _Completion date of reminder._
     * @see https://docs.scriptable.app/reminder/#completiondate
     */
-  var completionDate: Date = js.native
+  var completionDate: Date
   
   /**
     * _Creation date of reminder._
     * @see https://docs.scriptable.app/reminder/#creationdate
     */
-  var creationDate: Date = js.native
+  var creationDate: Date
   
   /**
     * _Due date of reminder._
     * @see https://docs.scriptable.app/reminder/#duedate
     */
-  var dueDate: Date = js.native
+  var dueDate: Date
   
   /**
     * _Whether the due date includes a time._
@@ -54,31 +52,31 @@ trait Reminder extends StObject {
     * When this is true, assignments to the `dueDate` property will include a time, when this is false, the time component of the date will be ignored. Defaults to true.
     * @see https://docs.scriptable.app/reminder/#duedateincludestime
     */
-  var dueDateIncludesTime: Boolean = js.native
+  var dueDateIncludesTime: Boolean
   
   /**
     * _Identifier of reminder._
     * @see https://docs.scriptable.app/reminder/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Whether the reminder is completed_
     * @see https://docs.scriptable.app/reminder/#iscompleted
     */
-  var isCompleted: Boolean = js.native
+  var isCompleted: Boolean
   
   /**
     * _Whether the reminder is overdue._
     * @see https://docs.scriptable.app/reminder/#isoverdue
     */
-  var isOverdue: Boolean = js.native
+  var isOverdue: Boolean
   
   /**
     * _Notes associated with reminder._
     * @see https://docs.scriptable.app/reminder/#notes
     */
-  var notes: String = js.native
+  var notes: String
   
   /**
     * _Priority of reminder._
@@ -86,19 +84,19 @@ trait Reminder extends StObject {
     * Specifies the prirority of the reminder with 0 representing an undefined priority, 1 the highest priority, and 9 the lowest priority.
     * @see https://docs.scriptable.app/reminder/#priority
     */
-  var priority: Double = js.native
+  var priority: Double
   
   /**
     * _Removes reminder from calendar._
     * @see https://docs.scriptable.app/reminder/#-remove
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   /**
     * _Removes all recurrence rules._
     * @see https://docs.scriptable.app/reminder/#-removeallrecurrencerules
     */
-  def removeAllRecurrenceRules(): Unit = js.native
+  def removeAllRecurrenceRules(): Unit
   
   /**
     * _Saves reminder._
@@ -106,13 +104,13 @@ trait Reminder extends StObject {
     * Saves changes to a reminder, inserting it into the calendar if it is newly created.
     * @see https://docs.scriptable.app/reminder/#-save
     */
-  def save(): Unit = js.native
+  def save(): Unit
   
   /**
     * _Title of reminder._
     * @see https://docs.scriptable.app/reminder/#title
     */
-  var title: String = js.native
+  var title: String
 }
 object Reminder {
   

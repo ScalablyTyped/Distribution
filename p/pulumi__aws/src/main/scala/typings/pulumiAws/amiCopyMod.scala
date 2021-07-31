@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amiCopyMod {
@@ -137,6 +136,10 @@ object amiCopyMod {
   /* static members */
   object AmiCopy {
     
+    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AmiCopy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -146,46 +149,40 @@ object amiCopyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AmiCopy = js.native
-    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AmiCopy = js.native
-    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AmiCopyState): AmiCopy = js.native
-    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AmiCopyState, opts: CustomResourceOptions): AmiCopy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AmiCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AmiCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AmiCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AmiCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AmiCopyState): AmiCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AmiCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AmiCopyState, opts: CustomResourceOptions): AmiCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AmiCopy]
     
     /**
       * Returns true if the given object is an instance of AmiCopy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiCopy.AmiCopy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiCopy.AmiCopy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/amiCopy.AmiCopy */ Boolean]
   }
   
-  @js.native
   trait AmiCopyArgs extends StObject {
     
     /**
       * A longer, human-readable description for the AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested block describing an EBS block device that should be
       * attached to created instances. The structure of this block is described below.
       */
-    val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEbsBlockDevice]]]] = js.native
+    val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEbsBlockDevice]]]] = js.undefined
     
     /**
       * Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshotId`.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Nested block describing an ephemeral block device that
@@ -193,36 +190,36 @@ object amiCopyMod {
       */
     val ephemeralBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEphemeralBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The full ARN of the AWS Key Management Service (AWS KMS) CMK to use when encrypting the snapshots of
       * an image during a copy operation. This parameter is only required if you want to use a non-default CMK;
       * if this parameter is not specified, the default CMK for EBS is used
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the AMI to copy. This id must be valid in the region
       * given by `sourceAmiRegion`.
       */
-    val sourceAmiId: Input[String] = js.native
+    val sourceAmiId: Input[String]
     
     /**
       * The region from which the AMI will be copied. This may be the
       * same as the AWS provider region in order to create a copy within the same region.
       */
-    val sourceAmiRegion: Input[String] = js.native
+    val sourceAmiRegion: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AmiCopyArgs {
     
@@ -291,39 +288,38 @@ object amiCopyMod {
     }
   }
   
-  @js.native
   trait AmiCopyState extends StObject {
     
     /**
       * Machine architecture for created instances. Defaults to "x8664".
       */
-    val architecture: js.UndefOr[Input[String]] = js.native
+    val architecture: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the AMI.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A longer, human-readable description for the AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested block describing an EBS block device that should be
       * attached to created instances. The structure of this block is described below.
       */
-    val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEbsBlockDevice]]]] = js.native
+    val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEbsBlockDevice]]]] = js.undefined
     
     /**
       * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
       */
-    val enaSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enaSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshotId`.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Nested block describing an ephemeral block device that
@@ -331,76 +327,76 @@ object amiCopyMod {
       */
     val ephemeralBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiCopyEphemeralBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Path to an S3 object containing an image manifest, e.g. created
       * by the `ec2-upload-bundle` command in the EC2 command line tools.
       */
-    val imageLocation: js.UndefOr[Input[String]] = js.native
+    val imageLocation: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the kernel image (AKI) that will be used as the paravirtual
       * kernel in created instances.
       */
-    val kernelId: js.UndefOr[Input[String]] = js.native
+    val kernelId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The full ARN of the AWS Key Management Service (AWS KMS) CMK to use when encrypting the snapshots of
       * an image during a copy operation. This parameter is only required if you want to use a non-default CMK;
       * if this parameter is not specified, the default CMK for EBS is used
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
-    val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.native
+    val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of an initrd image (ARI) that will be used when booting the
       * created instances.
       */
-    val ramdiskId: js.UndefOr[Input[String]] = js.native
+    val ramdiskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
       */
-    val rootDeviceName: js.UndefOr[Input[String]] = js.native
+    val rootDeviceName: js.UndefOr[Input[String]] = js.undefined
     
-    val rootSnapshotId: js.UndefOr[Input[String]] = js.native
+    val rootSnapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the AMI to copy. This id must be valid in the region
       * given by `sourceAmiRegion`.
       */
-    val sourceAmiId: js.UndefOr[Input[String]] = js.native
+    val sourceAmiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The region from which the AMI will be copied. This may be the
       * same as the AWS provider region in order to create a copy within the same region.
       */
-    val sourceAmiRegion: js.UndefOr[Input[String]] = js.native
+    val sourceAmiRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When set to "simple" (the default), enables enhanced networking
       * for created instances. No other value is supported at this time.
       */
-    val sriovNetSupport: js.UndefOr[Input[String]] = js.native
+    val sriovNetSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Keyword to choose what virtualization mode created instances
       * will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
       * changes the set of further arguments that are required, as described below.
       */
-    val virtualizationType: js.UndefOr[Input[String]] = js.native
+    val virtualizationType: js.UndefOr[Input[String]] = js.undefined
   }
   object AmiCopyState {
     

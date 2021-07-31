@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param T Type of the webview's state.
   */
-@js.native
 trait WebviewViewResolveContext[T] extends StObject {
   
   /**
@@ -42,7 +40,7 @@ trait WebviewViewResolveContext[T] extends StObject {
     * VS Code ensures that the persisted state is saved correctly when a webview is hidden and across
     * editor restarts.
     */
-  val state: js.UndefOr[T] = js.native
+  val state: js.UndefOr[T] = js.undefined
 }
 object WebviewViewResolveContext {
   
@@ -53,7 +51,7 @@ object WebviewViewResolveContext {
   }
   
   @scala.inline
-  implicit class WebviewViewResolveContextMutableBuilder[Self <: WebviewViewResolveContext[_], T] (val x: Self with WebviewViewResolveContext[T]) extends AnyVal {
+  implicit class WebviewViewResolveContextMutableBuilder[Self <: WebviewViewResolveContext[?], T] (val x: Self & WebviewViewResolveContext[T]) extends AnyVal {
     
     @scala.inline
     def setState(value: T): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])

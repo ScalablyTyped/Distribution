@@ -7,12 +7,11 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Storage.Pickers.Provider.FileOpenPickerUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUIFileOpenPickerActivatedEventArgs
-  extends IFileOpenPickerActivatedEventArgs
+  extends StObject
+     with IFileOpenPickerActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIFileOpenPickerActivatedEventArgs {
   

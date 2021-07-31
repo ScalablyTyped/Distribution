@@ -11,8 +11,8 @@ Checksum utility for node
 | Full name          | checksum |
 | Keywords           | checksum, shasum, hash, sha, sha1, md5 |
 | # releases         | 0 |
-| # dependents       | 105 |
-| # downloads        | 2140259 |
+| # dependents       | 110 |
+| # downloads        | 2260234 |
 | # stars            | 4 |
 
 ## Links

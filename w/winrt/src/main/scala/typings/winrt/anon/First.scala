@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait First[K, V] extends StObject {
   
-  var first: IMapView[K, V] = js.native
+  var first: IMapView[K, V]
   
-  var second: IMapView[K, V] = js.native
+  var second: IMapView[K, V]
 }
 object First {
   
@@ -22,7 +20,7 @@ object First {
   }
   
   @scala.inline
-  implicit class FirstMutableBuilder[Self <: First[_, _], K, V] (val x: Self with (First[K, V])) extends AnyVal {
+  implicit class FirstMutableBuilder[Self <: First[?, ?], K, V] (val x: Self & (First[K, V])) extends AnyVal {
     
     @scala.inline
     def setFirst(value: IMapView[K, V]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])

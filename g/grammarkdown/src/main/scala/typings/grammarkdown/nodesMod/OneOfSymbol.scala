@@ -4,7 +4,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OfKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OneKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "OneOfSymbol")
@@ -14,11 +13,7 @@ class OneOfSymbol protected ()
      with _LexicalSymbol {
   def this(oneKeyword: Token[OneKeyword]) = this()
   def this(oneKeyword: Token[OneKeyword], ofKeyword: Token[OfKeyword]) = this()
-  def this(
-    oneKeyword: Token[OneKeyword],
-    ofKeyword: js.UndefOr[scala.Nothing],
-    symbols: js.Array[LexicalSymbol]
-  ) = this()
+  def this(oneKeyword: Token[OneKeyword], ofKeyword: Unit, symbols: js.Array[LexicalSymbol]) = this()
   def this(oneKeyword: Token[OneKeyword], ofKeyword: Token[OfKeyword], symbols: js.Array[LexicalSymbol]) = this()
   
   val ofKeyword: js.UndefOr[Token[OfKeyword]] = js.native

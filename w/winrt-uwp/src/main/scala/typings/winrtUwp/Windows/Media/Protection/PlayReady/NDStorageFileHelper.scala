@@ -4,11 +4,9 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages PlayReady-ND storage files. */
-@js.native
 trait NDStorageFileHelper extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait NDStorageFileHelper extends StObject {
     * @param file A storage file object that a media server has discovered.
     * @return The transmitter settings found in the storage file.
     */
-  def getFileURLs(file: IStorageFile): IVector[String] = js.native
+  def getFileURLs(file: IStorageFile): IVector[String]
 }
 object NDStorageFileHelper {
   

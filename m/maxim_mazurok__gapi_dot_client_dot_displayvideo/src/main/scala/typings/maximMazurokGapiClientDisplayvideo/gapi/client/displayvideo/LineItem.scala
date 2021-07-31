@@ -2,84 +2,82 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineItem extends StObject {
   
   /** Output only. The unique ID of the advertiser the line item belongs to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Required. The bidding strategy of the line item. */
-  var bidStrategy: js.UndefOr[BiddingStrategy] = js.native
+  var bidStrategy: js.UndefOr[BiddingStrategy] = js.undefined
   
   /** Required. The budget allocation setting of the line item. */
-  var budget: js.UndefOr[LineItemBudget] = js.native
+  var budget: js.UndefOr[LineItemBudget] = js.undefined
   
   /** Output only. The unique ID of the campaign that the line item belongs to. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** The conversion tracking setting of the line item. */
-  var conversionCounting: js.UndefOr[ConversionCountingConfig] = js.native
+  var conversionCounting: js.UndefOr[ConversionCountingConfig] = js.undefined
   
   /** The IDs of the creatives associated with the line item. */
-  var creativeIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The display name of the line item. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Controls whether or not the line item can spend its budget and bid on inventory. * For CreateLineItem method, only `ENTITY_STATUS_DRAFT` is allowed. To activate a line
     * item, use UpdateLineItem method and update the status to `ENTITY_STATUS_ACTIVE` after creation. * A line item cannot be changed back to `ENTITY_STATUS_DRAFT` status from any other
     * status. * If the line item's parent insertion order is not active, the line item can't spend its budget even if its own status is `ENTITY_STATUS_ACTIVE`.
     */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Required. The start and end time of the line item's flight. */
-  var flight: js.UndefOr[LineItemFlight] = js.native
+  var flight: js.UndefOr[LineItemFlight] = js.undefined
   
   /** Required. The frequency capping setting of the line item. */
-  var frequencyCap: js.UndefOr[FrequencyCap] = js.native
+  var frequencyCap: js.UndefOr[FrequencyCap] = js.undefined
   
   /** Required. Immutable. The unique ID of the insertion order that the line item belongs to. */
-  var insertionOrderId: js.UndefOr[String] = js.native
+  var insertionOrderId: js.UndefOr[String] = js.undefined
   
   /** Integration details of the line item. */
-  var integrationDetails: js.UndefOr[IntegrationDetails] = js.native
+  var integrationDetails: js.UndefOr[IntegrationDetails] = js.undefined
   
   /** The IDs of the private inventory sources assigned to the line item. */
-  var inventorySourceIds: js.UndefOr[js.Array[String]] = js.native
+  var inventorySourceIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The unique ID of the line item. Assigned by the system. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The type of the line item. */
-  var lineItemType: js.UndefOr[String] = js.native
+  var lineItemType: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the line item. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The budget spending speed setting of the line item. */
-  var pacing: js.UndefOr[Pacing] = js.native
+  var pacing: js.UndefOr[Pacing] = js.undefined
   
   /** The partner costs associated with the line item. If absent or empty in CreateLineItem method, the newly created line item will inherit partner costs from its parent insertion order. */
-  var partnerCosts: js.UndefOr[js.Array[PartnerCost]] = js.native
+  var partnerCosts: js.UndefOr[js.Array[PartnerCost]] = js.undefined
   
   /** Required. The partner revenue model setting of the line item. */
-  var partnerRevenueModel: js.UndefOr[PartnerRevenueModel] = js.native
+  var partnerRevenueModel: js.UndefOr[PartnerRevenueModel] = js.undefined
   
   /**
     * The [targeting expansion](https://support.google.com/displayvideo/answer/10191558) settings of the line item. This config is only applicable when eligible audience list targeting is
     * assigned to the line item.
     */
-  var targetingExpansion: js.UndefOr[TargetingExpansionConfig] = js.native
+  var targetingExpansion: js.UndefOr[TargetingExpansionConfig] = js.undefined
   
   /** Output only. The timestamp when the line item was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The warning messages generated by the line item. These warnings do not block saving the line item, but some may block the line item from running. */
-  var warningMessages: js.UndefOr[js.Array[String]] = js.native
+  var warningMessages: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LineItem {
   

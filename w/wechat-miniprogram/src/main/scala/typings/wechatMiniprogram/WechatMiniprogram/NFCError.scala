@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NFCError extends StObject {
   
   /** 错误码
@@ -19,7 +17,7 @@ trait NFCError extends StObject {
     * | 13003 |  | AID列表参数格式错误 |
     * | 13004 |  | 未设置微信为默认NFC支付应用 |
     * | 13005 |  | 返回的指令不合法 |
-    * | 13006 |  | 注册AID失败 | */ var errCode: Double = js.native
+    * | 13006 |  | 注册AID失败 | */ var errCode: Double
   
   /** 错误信息
     *
@@ -32,7 +30,7 @@ trait NFCError extends StObject {
     * | 13003 |  | AID列表参数格式错误 |
     * | 13004 |  | 未设置微信为默认NFC支付应用 |
     * | 13005 |  | 返回的指令不合法 |
-    * | 13006 |  | 注册AID失败 | */ var errMsg: String = js.native
+    * | 13006 |  | 注册AID失败 | */ var errMsg: String
 }
 object NFCError {
   

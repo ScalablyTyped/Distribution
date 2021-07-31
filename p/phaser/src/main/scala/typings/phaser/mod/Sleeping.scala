@@ -3,7 +3,6 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.BodyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Sleeping")
 @js.native
 class Sleeping ()
-  extends typings.phaser.MatterJS.Sleeping
+  extends StObject
+     with typings.phaser.MatterJS.Sleeping
 object Sleeping {
   
-  /* static member */
-  @JSImport("matter", "Sleeping.set")
+  @JSImport("matter", "Sleeping")
   @js.native
-  def set(body: BodyType, isSleeping: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def set(body: BodyType, isSleeping: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], isSleeping.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

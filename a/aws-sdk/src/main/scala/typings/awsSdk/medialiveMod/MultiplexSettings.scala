@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexSettings extends StObject {
   
   /**
     * Maximum video buffer delay in milliseconds.
     */
-  var MaximumVideoBufferDelayMilliseconds: js.UndefOr[integerMin800Max3000] = js.native
+  var MaximumVideoBufferDelayMilliseconds: js.UndefOr[integerMin800Max3000] = js.undefined
   
   /**
     * Transport stream bit rate.
     */
-  var TransportStreamBitrate: integerMin1000000Max100000000 = js.native
+  var TransportStreamBitrate: integerMin1000000Max100000000
   
   /**
     * Transport stream ID.
     */
-  var TransportStreamId: integerMin0Max65535 = js.native
+  var TransportStreamId: integerMin0Max65535
   
   /**
     * Transport stream reserved bit rate.
     */
-  var TransportStreamReservedBitrate: js.UndefOr[integerMin0Max100000000] = js.native
+  var TransportStreamReservedBitrate: js.UndefOr[integerMin0Max100000000] = js.undefined
 }
 object MultiplexSettings {
   

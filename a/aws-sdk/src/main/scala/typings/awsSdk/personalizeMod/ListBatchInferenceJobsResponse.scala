@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBatchInferenceJobsResponse extends StObject {
   
   /**
     * A list containing information on each job that is returned.
     */
-  var batchInferenceJobs: js.UndefOr[BatchInferenceJobs] = js.native
+  var batchInferenceJobs: js.UndefOr[BatchInferenceJobs] = js.undefined
   
   /**
     * The token to use to retreive the next page of results. The value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBatchInferenceJobsResponse {
   

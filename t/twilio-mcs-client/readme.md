@@ -12,7 +12,7 @@ Twilio Media Content Service client library
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 2 |
-| # downloads        | 1765884 |
+| # downloads        | 2669723 |
 | # stars            | 0 |
 
 ## Links

@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.SequenceExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `53` extends StObject {
   
-  var `type`: SequenceExpression = js.native
+  var `type`: SequenceExpression
 }
 object `53` {
   
   @scala.inline
-  def apply(`type`: SequenceExpression): `53` = {
+  def apply(): `53` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SequenceExpression")
     __obj.asInstanceOf[`53`]
   }
   

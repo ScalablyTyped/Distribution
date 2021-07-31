@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountGoogleMyBusinessLink extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait SchemaAccountGoogleMyBusinessLink extends StObject {
     * sample account within a GMB account could be a business account with set
     * of locations, managed under the GMB account.
     */
-  var gmbEmail: js.UndefOr[String] = js.native
+  var gmbEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the link between this Merchant Center account and the GMB
     * account.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountGoogleMyBusinessLink {
   

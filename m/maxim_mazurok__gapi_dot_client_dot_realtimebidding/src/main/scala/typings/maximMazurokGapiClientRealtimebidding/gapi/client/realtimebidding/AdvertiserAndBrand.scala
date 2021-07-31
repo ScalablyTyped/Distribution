@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserAndBrand extends StObject {
   
   /** See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for the list of possible values. Can be used to filter the response of the creatives.list method. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Advertiser name. Can be used to filter the response of the creatives.list method. */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /**
     * Detected brand ID or zero if no brand has been detected. See https://storage.googleapis.com/adx-rtb-dictionaries/brands.txt for the list of possible values. Can be used to filter
     * the response of the creatives.list method.
     */
-  var brandId: js.UndefOr[String] = js.native
+  var brandId: js.UndefOr[String] = js.undefined
   
   /** Brand name. Can be used to filter the response of the creatives.list method. */
-  var brandName: js.UndefOr[String] = js.native
+  var brandName: js.UndefOr[String] = js.undefined
 }
 object AdvertiserAndBrand {
   

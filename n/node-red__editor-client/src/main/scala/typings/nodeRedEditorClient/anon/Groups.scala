@@ -3,33 +3,31 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.add
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
-  var groups: js.UndefOr[js.Array[js.Object]] = js.native
+  var groups: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var nodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflow: js.UndefOr[js.Object] = js.native
+  var subflow: js.UndefOr[js.Object] = js.undefined
   
-  var subflows: js.UndefOr[js.Array[js.Object]] = js.native
+  var subflows: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: add = js.native
+  var t: add
   
-  var workspaces: js.UndefOr[js.Array[js.Object]] = js.native
+  var workspaces: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object Groups {
   
   @scala.inline
-  def apply(t: add): Groups = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): Groups = {
+    val __obj = js.Dynamic.literal(t = "add")
     __obj.asInstanceOf[Groups]
   }
   

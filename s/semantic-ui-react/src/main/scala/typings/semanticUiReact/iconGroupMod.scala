@@ -8,7 +8,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.iconIconMod.IconSizeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconGroupMod extends Shortcut {
@@ -17,9 +16,9 @@ object iconGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[IconGroupProps] = js.native
   
-  @js.native
   trait IconGroupProps
-    extends StrictIconGroupProps
+    extends StObject
+       with StrictIconGroupProps
        with /* key */ StringDictionary[js.Any]
   object IconGroupProps {
     
@@ -30,23 +29,22 @@ object iconGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictIconGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Size of the icon group. */
-    var size: js.UndefOr[IconSizeProp] = js.native
+    var size: js.UndefOr[IconSizeProp] = js.undefined
   }
   object StrictIconGroupProps {
     

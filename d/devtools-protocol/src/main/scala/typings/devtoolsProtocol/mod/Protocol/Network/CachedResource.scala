@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachedResource extends StObject {
   
   /**
     * Cached response body size.
     */
-  var bodySize: Double = js.native
+  var bodySize: Double
   
   /**
     * Cached response data.
     */
-  var response: js.UndefOr[Response] = js.native
+  var response: js.UndefOr[Response] = js.undefined
   
   /**
     * Type of this resource.
     */
-  var `type`: ResourceType = js.native
+  var `type`: ResourceType
   
   /**
     * Resource URL. This is the url of the original network request.
     */
-  var url: String = js.native
+  var url: String
 }
 object CachedResource {
   

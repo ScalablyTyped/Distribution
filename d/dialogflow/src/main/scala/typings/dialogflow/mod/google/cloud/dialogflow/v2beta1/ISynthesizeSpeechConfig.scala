@@ -2,27 +2,25 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SynthesizeSpeechConfig. */
-@js.native
 trait ISynthesizeSpeechConfig extends StObject {
   
   /** SynthesizeSpeechConfig effectsProfileId */
-  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.native
+  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** SynthesizeSpeechConfig pitch */
-  var pitch: js.UndefOr[Double | Null] = js.native
+  var pitch: js.UndefOr[Double | Null] = js.undefined
   
   /** SynthesizeSpeechConfig speakingRate */
-  var speakingRate: js.UndefOr[Double | Null] = js.native
+  var speakingRate: js.UndefOr[Double | Null] = js.undefined
   
   /** SynthesizeSpeechConfig voice */
-  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.native
+  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.undefined
   
   /** SynthesizeSpeechConfig volumeGainDb */
-  var volumeGainDb: js.UndefOr[Double | Null] = js.native
+  var volumeGainDb: js.UndefOr[Double | Null] = js.undefined
 }
 object ISynthesizeSpeechConfig {
   

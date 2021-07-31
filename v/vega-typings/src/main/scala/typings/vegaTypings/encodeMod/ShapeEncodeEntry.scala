@@ -3,13 +3,13 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShapeEncodeEntry extends EncodeEntry {
+trait ShapeEncodeEntry
+  extends StObject
+     with EncodeEntry {
   
-  var shape: js.UndefOr[ProductionRule[StringValueRef]] = js.native
+  var shape: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
 }
 object ShapeEncodeEntry {
   
@@ -29,6 +29,6 @@ object ShapeEncodeEntry {
     def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def setShapeVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    def setShapeVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

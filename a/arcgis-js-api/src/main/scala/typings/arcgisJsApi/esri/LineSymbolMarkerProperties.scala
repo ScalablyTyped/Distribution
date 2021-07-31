@@ -11,10 +11,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.square
 import typings.arcgisJsApi.arcgisJsApiStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineSymbolMarkerProperties extends StObject {
   
   /**
@@ -22,21 +20,21 @@ trait LineSymbolMarkerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The placement of the marker(s) on the line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#placement)
     */
-  var placement: js.UndefOr[begin | end | `begin-end`] = js.native
+  var placement: js.UndefOr[begin | end | `begin-end`] = js.undefined
   
   /**
     * The marker style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#style)
     */
-  var style: js.UndefOr[arrow | circle | square | diamond | cross | x] = js.native
+  var style: js.UndefOr[arrow | circle | square | diamond | cross | x] = js.undefined
 }
 object LineSymbolMarkerProperties {
   

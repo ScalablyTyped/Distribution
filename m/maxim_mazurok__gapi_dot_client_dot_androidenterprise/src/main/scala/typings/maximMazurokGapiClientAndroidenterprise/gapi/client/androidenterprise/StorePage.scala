@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorePage extends StObject {
   
   /** Unique ID of this page. Assigned by the server. Immutable once assigned. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Ordered list of pages a user should be able to reach from this page. The list can't include this page. It is recommended that the basic pages are created first, before adding the
     * links between pages. The API doesn't verify that the pages exist or the pages are reachable.
     */
-  var link: js.UndefOr[js.Array[String]] = js.native
+  var link: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Ordered list of localized strings giving the name of this page. The text displayed is the one that best matches the user locale, or the first entry if there is no good match. There
     * needs to be at least one entry.
     */
-  var name: js.UndefOr[js.Array[LocalizedText]] = js.native
+  var name: js.UndefOr[js.Array[LocalizedText]] = js.undefined
 }
 object StorePage {
   

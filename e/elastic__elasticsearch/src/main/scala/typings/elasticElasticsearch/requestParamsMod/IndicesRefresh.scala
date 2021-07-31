@@ -7,19 +7,19 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesRefresh extends Generic {
+trait IndicesRefresh
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IndicesRefresh {
   

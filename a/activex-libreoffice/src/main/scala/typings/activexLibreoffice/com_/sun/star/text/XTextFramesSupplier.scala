@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access the {@link TextFrame} instances in this context (e.g. document). */
-@js.native
-trait XTextFramesSupplier extends XInterface {
+trait XTextFramesSupplier
+  extends StObject
+     with XInterface {
   
   /** returns a collection of text frames. */
-  val TextFrames: XNameAccess = js.native
+  val TextFrames: XNameAccess
   
   /** returns a collection of text frames. */
-  def getTextFrames(): XNameAccess = js.native
+  def getTextFrames(): XNameAccess
 }
 object XTextFramesSupplier {
   

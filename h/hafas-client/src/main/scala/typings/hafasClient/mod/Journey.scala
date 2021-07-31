@@ -3,36 +3,34 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.journey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A journey is a computed set of directions to get from A to B at a specific time.
   * It would typically be the result of a route planning algorithm.
   */
-@js.native
 trait Journey extends StObject {
   
-  var cycle: js.UndefOr[Cycle] = js.native
+  var cycle: js.UndefOr[Cycle] = js.undefined
   
-  var legs: js.Array[Leg] = js.native
+  var legs: js.Array[Leg]
   
-  var price: js.UndefOr[Price] = js.native
+  var price: js.UndefOr[Price] = js.undefined
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.native
+  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
   
-  var scheduledDays: js.UndefOr[ScheduledDays] = js.native
+  var scheduledDays: js.UndefOr[ScheduledDays] = js.undefined
   
-  var `type`: journey = js.native
+  var `type`: journey
 }
 object Journey {
   
   @scala.inline
-  def apply(legs: js.Array[Leg], `type`: journey): Journey = {
+  def apply(legs: js.Array[Leg]): Journey = {
     val __obj = js.Dynamic.literal(legs = legs.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("journey")
     __obj.asInstanceOf[Journey]
   }
   

@@ -12,14 +12,19 @@ import typings.angularCompiler.i18nAstMod.Message
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object r3AstMod {
   
+  @JSImport("@angular/compiler/src/render3/r3_ast", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@angular/compiler/src/render3/r3_ast", "BoundAttribute")
   @js.native
-  class BoundAttribute protected () extends Node {
+  class BoundAttribute protected ()
+    extends StObject
+       with Node {
     def this(
       name: String,
       `type`: BindingType,
@@ -66,7 +71,7 @@ object r3AstMod {
       unit: String,
       sourceSpan: ParseSourceSpan,
       keySpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       i18n: I18nMeta
     ) = this()
     def this(
@@ -88,7 +93,7 @@ object r3AstMod {
       unit: Null,
       sourceSpan: ParseSourceSpan,
       keySpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       i18n: I18nMeta
     ) = this()
     def this(
@@ -111,6 +116,9 @@ object r3AstMod {
     
     var securityContext: SecurityContext = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var `type`: BindingType = js.native
     
     var unit: String | Null = js.native
@@ -118,21 +126,28 @@ object r3AstMod {
     var value: AST = js.native
     
     var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   /* static members */
   object BoundAttribute {
     
-    @JSImport("@angular/compiler/src/render3/r3_ast", "BoundAttribute.fromBoundElementProperty")
+    @JSImport("@angular/compiler/src/render3/r3_ast", "BoundAttribute")
     @js.native
-    def fromBoundElementProperty(prop: BoundElementProperty): BoundAttribute = js.native
-    @JSImport("@angular/compiler/src/render3/r3_ast", "BoundAttribute.fromBoundElementProperty")
-    @js.native
-    def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta): BoundAttribute = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromBoundElementProperty(prop: BoundElementProperty): BoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundAttribute]
+    @scala.inline
+    def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta): BoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[BoundAttribute]
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
   @js.native
-  class BoundEvent protected () extends Node {
+  class BoundEvent protected ()
+    extends StObject
+       with Node {
     def this(
       name: String,
       `type`: ParsedEventType,
@@ -178,33 +193,52 @@ object r3AstMod {
     
     var phase: String | Null = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var target: String | Null = js.native
     
     var `type`: ParsedEventType = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   /* static members */
   object BoundEvent {
     
-    @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent.fromParsedEvent")
+    @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
     @js.native
-    def fromParsedEvent(event: ParsedEvent): BoundEvent = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromParsedEvent(event: ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "BoundText")
   @js.native
-  class BoundText protected () extends Node {
+  class BoundText protected ()
+    extends StObject
+       with Node {
     def this(value: AST, sourceSpan: ParseSourceSpan) = this()
     def this(value: AST, sourceSpan: ParseSourceSpan, i18n: Message) = this()
     def this(value: AST, sourceSpan: ParseSourceSpan, i18n: typings.angularCompiler.i18nAstMod.Node) = this()
     
     var i18n: js.UndefOr[Message | typings.angularCompiler.i18nAstMod.Node] = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: AST = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Content")
   @js.native
-  class Content protected () extends Node {
+  class Content protected ()
+    extends StObject
+       with Node {
     def this(selector: String, attributes: js.Array[TextAttribute], sourceSpan: ParseSourceSpan) = this()
     def this(selector: String, attributes: js.Array[TextAttribute], sourceSpan: ParseSourceSpan, i18n: Message) = this()
     def this(
@@ -221,11 +255,19 @@ object r3AstMod {
     val name: /* "ng-content" */ String = js.native
     
     var selector: String = js.native
+    
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Element")
   @js.native
-  class Element protected () extends Node {
+  class Element protected ()
+    extends StObject
+       with Node {
     def this(
       name: String,
       attributes: js.Array[TextAttribute],
@@ -312,12 +354,20 @@ object r3AstMod {
     
     var references: js.Array[Reference] = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var startSourceSpan: ParseSourceSpan = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Icu")
   @js.native
-  class Icu protected () extends Node {
+  class Icu protected ()
+    extends StObject
+       with Node {
     def this(
       vars: StringDictionary[BoundText],
       placeholders: StringDictionary[Text | BoundText],
@@ -340,33 +390,121 @@ object r3AstMod {
     
     var placeholders: StringDictionary[Text | BoundText] = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var vars: StringDictionary[BoundText] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "NullVisitor")
   @js.native
-  class NullVisitor () extends Visitor[Unit]
+  class NullVisitor ()
+    extends StObject
+       with Visitor[Unit] {
+    
+    /* CompleteClass */
+    override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitBoundEvent(attribute: BoundEvent): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitBoundText(text: BoundText): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitContent(content: Content): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitIcu(icu: Icu): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitReference(reference: Reference): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitTemplate(template: Template): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitText(text: Text): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitTextAttribute(attribute: TextAttribute): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitVariable(variable: Variable): Unit = js.native
+  }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "RecursiveVisitor")
   @js.native
-  class RecursiveVisitor () extends Visitor[Unit]
+  class RecursiveVisitor ()
+    extends StObject
+       with Visitor[Unit] {
+    
+    /* CompleteClass */
+    override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitBoundEvent(attribute: BoundEvent): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitBoundText(text: BoundText): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitContent(content: Content): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitIcu(icu: Icu): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitReference(reference: Reference): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitTemplate(template: Template): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitText(text: Text): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitTextAttribute(attribute: TextAttribute): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitVariable(variable: Variable): Unit = js.native
+  }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Reference")
   @js.native
-  class Reference protected () extends Node {
+  class Reference protected ()
+    extends StObject
+       with Node {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
     def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: ParseSourceSpan) = this()
     
     var name: String = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
     
     var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Template")
   @js.native
-  class Template protected () extends Node {
+  class Template protected ()
+    extends StObject
+       with Node {
     def this(
       tagName: String,
       attributes: js.Array[TextAttribute],
@@ -463,6 +601,9 @@ object r3AstMod {
     
     var references: js.Array[Reference] = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var startSourceSpan: ParseSourceSpan = js.native
     
     var tagName: String = js.native
@@ -470,33 +611,40 @@ object r3AstMod {
     var templateAttrs: js.Array[BoundAttribute | TextAttribute] = js.native
     
     var variables: js.Array[Variable] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Text")
   @js.native
-  class Text protected () extends Node {
+  class Text protected ()
+    extends StObject
+       with Node {
     def this(value: String, sourceSpan: ParseSourceSpan) = this()
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "TextAttribute")
   @js.native
-  class TextAttribute protected () extends Node {
+  class TextAttribute protected ()
+    extends StObject
+       with Node {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
     def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: ParseSourceSpan) = this()
+    def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: Unit, i18n: Message) = this()
     def this(
       name: String,
       value: String,
       sourceSpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
-      i18n: Message
-    ) = this()
-    def this(
-      name: String,
-      value: String,
-      sourceSpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       i18n: typings.angularCompiler.i18nAstMod.Node
     ) = this()
     def this(
@@ -518,18 +666,62 @@ object r3AstMod {
     
     var name: String = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
     
     var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "TransformVisitor")
   @js.native
-  class TransformVisitor () extends Visitor[Node]
+  class TransformVisitor ()
+    extends StObject
+       with Visitor[Node] {
+    
+    /* CompleteClass */
+    override def visitBoundAttribute(attribute: BoundAttribute): Node = js.native
+    
+    /* CompleteClass */
+    override def visitBoundEvent(attribute: BoundEvent): Node = js.native
+    
+    /* CompleteClass */
+    override def visitBoundText(text: BoundText): Node = js.native
+    
+    /* CompleteClass */
+    override def visitContent(content: Content): Node = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element): Node = js.native
+    
+    /* CompleteClass */
+    override def visitIcu(icu: Icu): Node = js.native
+    
+    /* CompleteClass */
+    override def visitReference(reference: Reference): Node = js.native
+    
+    /* CompleteClass */
+    override def visitTemplate(template: Template): Node = js.native
+    
+    /* CompleteClass */
+    override def visitText(text: Text): Node = js.native
+    
+    /* CompleteClass */
+    override def visitTextAttribute(attribute: TextAttribute): Node = js.native
+    
+    /* CompleteClass */
+    override def visitVariable(variable: Variable): Node = js.native
+  }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "Variable")
   @js.native
-  class Variable protected () extends Node {
+  class Variable protected ()
+    extends StObject
+       with Node {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan, keySpan: ParseSourceSpan) = this()
     def this(
       name: String,
@@ -543,25 +735,28 @@ object r3AstMod {
     
     var name: String = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
     
     var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+    
+    /* CompleteClass */
+    override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
-  @JSImport("@angular/compiler/src/render3/r3_ast", "transformAll")
-  @js.native
-  def transformAll[Result /* <: Node */](visitor: Visitor[Node], nodes: js.Array[Result]): js.Array[Result] = js.native
+  @scala.inline
+  def transformAll[Result /* <: Node */](visitor: Visitor[Node], nodes: js.Array[Result]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
   
-  @JSImport("@angular/compiler/src/render3/r3_ast", "visitAll")
-  @js.native
-  def visitAll[Result](visitor: Visitor[Result], nodes: js.Array[Node]): js.Array[Result] = js.native
+  @scala.inline
+  def visitAll[Result](visitor: Visitor[Result], nodes: js.Array[Node]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
   
-  @js.native
   trait Node extends StObject {
     
-    var sourceSpan: ParseSourceSpan = js.native
+    var sourceSpan: ParseSourceSpan
     
-    def visit[Result](visitor: Visitor[Result]): Result = js.native
+    def visit[Result](visitor: Visitor[Result]): Result
   }
   object Node {
     
@@ -582,32 +777,31 @@ object r3AstMod {
     }
   }
   
-  @js.native
   trait Visitor[Result] extends StObject {
     
-    var visit: js.UndefOr[js.Function1[/* node */ Node, Result]] = js.native
+    var visit: js.UndefOr[js.Function1[/* node */ Node, Result]] = js.undefined
     
-    def visitBoundAttribute(attribute: BoundAttribute): Result = js.native
+    def visitBoundAttribute(attribute: BoundAttribute): Result
     
-    def visitBoundEvent(attribute: BoundEvent): Result = js.native
+    def visitBoundEvent(attribute: BoundEvent): Result
     
-    def visitBoundText(text: BoundText): Result = js.native
+    def visitBoundText(text: BoundText): Result
     
-    def visitContent(content: Content): Result = js.native
+    def visitContent(content: Content): Result
     
-    def visitElement(element: Element): Result = js.native
+    def visitElement(element: Element): Result
     
-    def visitIcu(icu: Icu): Result = js.native
+    def visitIcu(icu: Icu): Result
     
-    def visitReference(reference: Reference): Result = js.native
+    def visitReference(reference: Reference): Result
     
-    def visitTemplate(template: Template): Result = js.native
+    def visitTemplate(template: Template): Result
     
-    def visitText(text: Text): Result = js.native
+    def visitText(text: Text): Result
     
-    def visitTextAttribute(attribute: TextAttribute): Result = js.native
+    def visitTextAttribute(attribute: TextAttribute): Result
     
-    def visitVariable(variable: Variable): Result = js.native
+    def visitVariable(variable: Variable): Result
   }
   object Visitor {
     
@@ -630,7 +824,7 @@ object r3AstMod {
     }
     
     @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[_], Result] (val x: Self with Visitor[Result]) extends AnyVal {
+    implicit class VisitorMutableBuilder[Self <: Visitor[?], Result] (val x: Self & Visitor[Result]) extends AnyVal {
       
       @scala.inline
       def setVisit(value: /* node */ Node => Result): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))

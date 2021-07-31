@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,9 +43,8 @@ object DataGrid {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataGrid.create")
-  @js.native
-  def create(model: IModel): DataGrid = js.native
+  @scala.inline
+  def create(model: IModel): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object DataGrid {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataGrid.createInDocumentTemplateUnderToplevels")
-  @js.native
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DataGrid = js.native
+  @scala.inline
+  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -64,9 +61,8 @@ object DataGrid {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataGrid.createInDropZoneUnderWidget")
-  @js.native
-  def createInDropZoneUnderWidget(container: DropZone): DataGrid = js.native
+  @scala.inline
+  def createInDropZoneUnderWidget(container: DropZone): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataGrid.structureTypeName")

@@ -2,7 +2,6 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,7 +11,16 @@ object global {
   @JSGlobal("SQLError")
   @js.native
   class SQLError ()
-    extends typings.websql.SQLError
+    extends StObject
+       with typings.websql.SQLError {
+    
+    // = 7;
+    /* CompleteClass */
+    var code: Double = js.native
+    
+    /* CompleteClass */
+    var message: DOMString = js.native
+  }
   object SQLError {
     
     @JSGlobal("SQLError")
@@ -87,7 +95,16 @@ object global {
   @JSGlobal("SQLException")
   @js.native
   class SQLException ()
-    extends typings.websql.SQLException
+    extends StObject
+       with typings.websql.SQLException {
+    
+    // = 7;
+    /* CompleteClass */
+    var code: Double = js.native
+    
+    /* CompleteClass */
+    var message: DOMString = js.native
+  }
   object SQLException {
     
     @JSGlobal("SQLException")

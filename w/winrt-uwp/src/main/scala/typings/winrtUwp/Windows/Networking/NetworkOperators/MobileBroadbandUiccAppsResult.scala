@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reports results of a call to MobileBroadbandUicc.GetUiccAppsAsync . */
-@js.native
 trait MobileBroadbandUiccAppsResult extends StObject {
   
   /** Gets the status of the completed MobileBroadbandUicc.GetUiccAppsAsync operation. If this value is not Success, then other properties may not be valid. */
-  var status: MobileBroadbandUiccAppOperationStatus = js.native
+  var status: MobileBroadbandUiccAppOperationStatus
   
   /** A list of UICC applications retrieved using MobileBroadbandUicc.GetUiccAppsAsync . Note that this is only valid when Status is Success. */
-  var uiccApps: IVectorView[MobileBroadbandUiccApp] = js.native
+  var uiccApps: IVectorView[MobileBroadbandUiccApp]
 }
 object MobileBroadbandUiccAppsResult {
   

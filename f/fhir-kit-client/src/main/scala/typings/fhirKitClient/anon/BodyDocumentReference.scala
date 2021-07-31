@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DocumentReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDocumentReference extends StObject {
   
-  var body: DocumentReference = js.native
+  var body: DocumentReference
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentReference = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentReference
 }
 object BodyDocumentReference {
   
   @scala.inline
-  def apply(
-    body: DocumentReference,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentReference
-  ): BodyDocumentReference = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DocumentReference): BodyDocumentReference = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "DocumentReference")
     __obj.asInstanceOf[BodyDocumentReference]
   }
   

@@ -5,19 +5,17 @@ import typings.next.routeRegexMod.Group
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
-  var groups: StringDictionary[Group] = js.native
+  var groups: StringDictionary[Group]
   
-  var namedRegex: js.UndefOr[String] = js.native
+  var namedRegex: js.UndefOr[String] = js.undefined
   
-  var re: RegExp = js.native
+  var re: RegExp
   
-  var routeKeys: js.UndefOr[StringDictionary[String]] = js.native
+  var routeKeys: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object Groups {
   

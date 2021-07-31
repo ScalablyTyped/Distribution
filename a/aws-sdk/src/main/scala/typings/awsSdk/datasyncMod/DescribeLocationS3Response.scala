@@ -2,38 +2,36 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationS3Response extends StObject {
   
   /**
     * If you are using DataSync on an AWS Outpost, the Amazon Resource Name (ARNs) of the EC2 agents deployed on your Outpost. For more information about launching a DataSync agent on an AWS Outpost, see outposts-agent.
     */
-  var AgentArns: js.UndefOr[AgentArnList] = js.native
+  var AgentArns: js.UndefOr[AgentArnList] = js.undefined
   
   /**
     * The time that the Amazon S3 bucket location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon S3 bucket or access point.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the Amazon S3 location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
-  var S3Config: js.UndefOr[typings.awsSdk.datasyncMod.S3Config] = js.native
+  var S3Config: js.UndefOr[typings.awsSdk.datasyncMod.S3Config] = js.undefined
   
   /**
     * The Amazon S3 storage class that you chose to store your files in when this location is used as a task destination. For more information about S3 storage classes, see Amazon S3 Storage Classes. Some storage classes have behaviors that can affect your S3 storage cost. For detailed information, see using-storage-classes.
     */
-  var S3StorageClass: js.UndefOr[typings.awsSdk.datasyncMod.S3StorageClass] = js.native
+  var S3StorageClass: js.UndefOr[typings.awsSdk.datasyncMod.S3StorageClass] = js.undefined
 }
 object DescribeLocationS3Response {
   

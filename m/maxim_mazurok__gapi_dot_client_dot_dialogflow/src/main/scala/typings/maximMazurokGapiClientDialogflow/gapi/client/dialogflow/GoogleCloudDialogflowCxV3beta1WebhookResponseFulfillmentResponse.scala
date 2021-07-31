@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse extends StObject {
   
   /** Merge behavior for `messages`. */
-  var mergeBehavior: js.UndefOr[String] = js.native
+  var mergeBehavior: js.UndefOr[String] = js.undefined
   
   /** The list of rich message responses to present to the user. */
-  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessage]] = js.native
+  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessage]] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse {
   

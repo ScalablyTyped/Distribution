@@ -16,47 +16,45 @@ import typings.stripeV3.stripeV3Strings.stripe_account
 import typings.stripeV3.stripeV3Strings.wechat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about the payment method at the time of the transaction.
   */
-@js.native
 trait PaymentMethodDetails extends StObject {
   
-  var ach_credit_transfer: js.UndefOr[AchCreditTransferDetails | Null] = js.native
+  var ach_credit_transfer: js.UndefOr[AchCreditTransferDetails | Null] = js.undefined
   
-  var ach_debit: js.UndefOr[AchDebitDetails | Null] = js.native
+  var ach_debit: js.UndefOr[AchDebitDetails | Null] = js.undefined
   
-  var alipay: js.UndefOr[js.Any | Null] = js.native
+  var alipay: js.UndefOr[js.Any | Null] = js.undefined
   
-  var bancontact: js.UndefOr[BanContactDetails | Null] = js.native
+  var bancontact: js.UndefOr[BanContactDetails | Null] = js.undefined
   
-  var card: js.UndefOr[PaymentMethodCard | Null] = js.native
+  var card: js.UndefOr[PaymentMethodCard | Null] = js.undefined
   
-  var eps: js.UndefOr[EpsDetails | Null] = js.native
+  var eps: js.UndefOr[EpsDetails | Null] = js.undefined
   
-  var giropay: js.UndefOr[GiropayDetails | Null] = js.native
+  var giropay: js.UndefOr[GiropayDetails | Null] = js.undefined
   
-  var ideal: js.UndefOr[IdealDetails | Null] = js.native
+  var ideal: js.UndefOr[IdealDetails | Null] = js.undefined
   
-  var multibanco: js.UndefOr[MultibancoDetails | Null] = js.native
+  var multibanco: js.UndefOr[MultibancoDetails | Null] = js.undefined
   
-  var p24: js.UndefOr[P24Details | Null] = js.native
+  var p24: js.UndefOr[P24Details | Null] = js.undefined
   
-  var sepa_debit: js.UndefOr[SepaDebitDetails | Null] = js.native
+  var sepa_debit: js.UndefOr[SepaDebitDetails | Null] = js.undefined
   
-  var sofort: js.UndefOr[SofortDetails | Null] = js.native
+  var sofort: js.UndefOr[SofortDetails | Null] = js.undefined
   
-  var stripe_account: js.UndefOr[js.Any | Null] = js.native
+  var stripe_account: js.UndefOr[js.Any | Null] = js.undefined
   
   /**
     * The type of transaction-specific details of the payment method used in the payment
     */
-  var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat = js.native
+  var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat
   
-  var wechat: js.UndefOr[js.Any | Null] = js.native
+  var wechat: js.UndefOr[js.Any | Null] = js.undefined
 }
 object PaymentMethodDetails {
   

@@ -2,7 +2,6 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,7 +10,7 @@ trait EntityQuery extends StObject {
   var entityManager: EntityManager = js.native
   
   def execute(): js.Promise[QueryResult] = js.native
-  def execute(callback: js.UndefOr[scala.Nothing], errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
+  def execute(callback: Unit, errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
   def execute(callback: ExecuteQuerySuccessCallback): js.Promise[QueryResult] = js.native
   def execute(callback: ExecuteQuerySuccessCallback, errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
   
@@ -64,12 +63,12 @@ trait EntityQuery extends StObject {
   
   def top(count: Double): EntityQuery = js.native
   
-  def using(obj: DataService): EntityQuery = js.native
-  def using(obj: EntityManager): EntityQuery = js.native
-  def using(obj: FetchStrategySymbol): EntityQuery = js.native
-  def using(obj: JsonResultsAdapter): EntityQuery = js.native
-  def using(obj: MergeStrategySymbol): EntityQuery = js.native
-  def using(obj: QueryOptions): EntityQuery = js.native
+  def `using`(obj: DataService): EntityQuery = js.native
+  def `using`(obj: EntityManager): EntityQuery = js.native
+  def `using`(obj: FetchStrategySymbol): EntityQuery = js.native
+  def `using`(obj: JsonResultsAdapter): EntityQuery = js.native
+  def `using`(obj: MergeStrategySymbol): EntityQuery = js.native
+  def `using`(obj: QueryOptions): EntityQuery = js.native
   
   def where(anArray: IRecursiveArray[String | Double | FilterQueryOpSymbol | Predicate]): EntityQuery = js.native
   // for any/all clauses

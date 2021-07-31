@@ -12,13 +12,10 @@ SAML 2.0 and 1.1 token parser for Node.js
 | Keywords           | SAML 2.0, SAML 1.1, Token Parser |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 29374 |
+| # downloads        | 46700 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/leandrob/saml20#readme)
-- [Bugs](https://github.com/leandrob/saml20/issues)
-- [Repository](https://github.com/leandrob/saml20)
 - [Npm](https://www.npmjs.com/package/saml20)
     
 

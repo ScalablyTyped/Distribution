@@ -2,21 +2,21 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModalAnimationOptions extends ViewAnimationOptions {
+trait ModalAnimationOptions
+  extends StObject
+     with ViewAnimationOptions {
   
   /**
     * Animations to be applied on views in the appearing or disappearing screens
     */
-  var elementTransitions: js.UndefOr[js.Array[ElementTransition]] = js.native
+  var elementTransitions: js.UndefOr[js.Array[ElementTransition]] = js.undefined
   
   /**
     * Animations to be applied on elements which are shared between the appearing and disappearing screens
     */
-  var sharedElementTransitions: js.UndefOr[js.Array[SharedElementTransition]] = js.native
+  var sharedElementTransitions: js.UndefOr[js.Array[SharedElementTransition]] = js.undefined
 }
 object ModalAnimationOptions {
   

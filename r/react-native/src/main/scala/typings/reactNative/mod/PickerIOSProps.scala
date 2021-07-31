@@ -2,17 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PickerIOSProps extends ViewProps {
+trait PickerIOSProps
+  extends StObject
+     with ViewProps {
   
-  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* value */ String | Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ String | Double, Unit]] = js.undefined
   
-  var selectedValue: js.UndefOr[String | Double] = js.native
+  var selectedValue: js.UndefOr[String | Double] = js.undefined
 }
 object PickerIOSProps {
   

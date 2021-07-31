@@ -2,26 +2,24 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericResourceFilter extends StObject {
   
   /**
     * The resource type.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The tag name.
     */
-  var tagname: js.UndefOr[String] = js.native
+  var tagname: js.UndefOr[String] = js.undefined
   
   /**
     * The tag value.
     */
-  var tagvalue: js.UndefOr[String] = js.native
+  var tagvalue: js.UndefOr[String] = js.undefined
 }
 object GenericResourceFilter {
   

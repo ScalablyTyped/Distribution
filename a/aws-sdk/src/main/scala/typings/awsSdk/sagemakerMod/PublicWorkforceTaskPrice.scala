@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicWorkforceTaskPrice extends StObject {
   
   /**
     * Defines the amount of money paid to an Amazon Mechanical Turk worker in United States dollars.
     */
-  var AmountInUsd: js.UndefOr[USD] = js.native
+  var AmountInUsd: js.UndefOr[USD] = js.undefined
 }
 object PublicWorkforceTaskPrice {
   

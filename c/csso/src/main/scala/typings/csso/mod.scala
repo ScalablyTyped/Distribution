@@ -7,7 +7,6 @@ import typings.csso.anon.Classes
 import typings.csso.anon.Typeofcsstree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,7 +19,6 @@ object mod extends Shortcut {
   
   type BeforeCompressFn = js.Function2[/* ast */ js.Object, /* options */ CompressOptions, Unit]
   
-  @js.native
   trait CompressOptions extends StObject {
     
     /**
@@ -28,7 +26,7 @@ object mod extends Shortcut {
       * @default false
       */
     @JSName("clone")
-    var clone_FCompressOptions: js.UndefOr[Boolean] = js.native
+    var clone_FCompressOptions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify what comments to leave:
@@ -37,30 +35,30 @@ object mod extends Shortcut {
       * - false – remove all comments
       * @default true
       */
-    var comments: js.UndefOr[String | Boolean] = js.native
+    var comments: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Enables merging of @media rules with the same media query by splitted by other rules.
       * The optimisation is unsafe in general, but should work fine in most cases. Use it on your own risk.
       * @default false
       */
-    var forceMediaMerge: js.UndefOr[Boolean] = js.native
+    var forceMediaMerge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function to track every step of transformation.
       */
-    var logger: js.UndefOr[js.Function0[Unit]] = js.native
+    var logger: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Disable or enable a structure optimisations.
       * @default true
       */
-    var restructure: js.UndefOr[Boolean] = js.native
+    var restructure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Usage data for advanced optimisations.
       */
-    var usage: js.UndefOr[Usage] = js.native
+    var usage: js.UndefOr[Usage] = js.undefined
   }
   object CompressOptions {
     
@@ -126,7 +124,7 @@ object mod extends Shortcut {
       * @param options
       */
     def minify(source: String): Result = js.native
-    def minify(source: String, options: MinifyOptions with CompressOptions): Result = js.native
+    def minify(source: String, options: MinifyOptions & CompressOptions): Result = js.native
     
     /**
       * The same as minify() but for list of declarations. Usually it's a style attribute value.
@@ -134,43 +132,42 @@ object mod extends Shortcut {
       * @param options
       */
     def minifyBlock(source: String): Result = js.native
-    def minifyBlock(source: String, options: MinifyOptions with CompressOptions): Result = js.native
+    def minifyBlock(source: String, options: MinifyOptions & CompressOptions): Result = js.native
     
     var syntax: Typeofcsstree = js.native
   }
   
-  @js.native
   trait MinifyOptions extends StObject {
     
     /**
       * Called right after compress() is run.
       */
-    var afterCompress: js.UndefOr[AfterCompressFn | js.Array[AfterCompressFn]] = js.native
+    var afterCompress: js.UndefOr[AfterCompressFn | js.Array[AfterCompressFn]] = js.undefined
     
     /**
       * Called right after parse is run.
       */
-    var beforeCompress: js.UndefOr[BeforeCompressFn | js.Array[BeforeCompressFn]] = js.native
+    var beforeCompress: js.UndefOr[BeforeCompressFn | js.Array[BeforeCompressFn]] = js.undefined
     
     /**
       * Output debug information to stderr.
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Filename of input CSS, uses for source map generation.
       * @default '<unknown>'
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var restructure: js.UndefOr[Boolean] = js.native
+    var restructure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generate a source map when true.
       * @default false
       */
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
   }
   object MinifyOptions {
     
@@ -233,24 +230,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     /**
       * Resulting CSS.
       */
-    var css: String = js.native
+    var css: String
     
     /**
       * Instance of SourceMapGenerator or null.
       */
-    var map: js.Object | Null = js.native
+    var map: js.Object | Null
   }
   object Result {
     
     @scala.inline
     def apply(css: String): Result = {
-      val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = null)
       __obj.asInstanceOf[Result]
     }
     
@@ -268,18 +264,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Usage extends StObject {
     
-    var blacklist: js.UndefOr[Classes] = js.native
+    var blacklist: js.UndefOr[Classes] = js.undefined
     
-    var classes: js.UndefOr[js.Array[String]] = js.native
+    var classes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ids: js.UndefOr[js.Array[String]] = js.native
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var scopes: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Usage {
     

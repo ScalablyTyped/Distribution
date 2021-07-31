@@ -2,22 +2,20 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
-  var currency: NarrowRecordShortRecord = js.native
+  var currency: NarrowRecordShortRecord
   
   /**
     * Maps language subtag like `zh-CN` to their display names.
     */
-  var language: NarrowRecord = js.native
+  var language: NarrowRecord
   
-  var region: ShortRecord = js.native
+  var region: ShortRecord
   
-  var script: LongRecordNarrowRecord = js.native
+  var script: LongRecordNarrowRecord
 }
 object Region {
   

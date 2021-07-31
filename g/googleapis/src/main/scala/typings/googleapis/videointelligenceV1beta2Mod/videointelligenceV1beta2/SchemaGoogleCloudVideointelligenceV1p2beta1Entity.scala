@@ -2,30 +2,28 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detected entity from video analysis.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1Entity extends StObject {
   
   /**
     * Textual description, e.g. `Fixed-gear bicycle`.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
     * Search API](https://developers.google.com/knowledge-graph/).
     */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /**
     * Language code for `description` in BCP-47 format.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1Entity {
   

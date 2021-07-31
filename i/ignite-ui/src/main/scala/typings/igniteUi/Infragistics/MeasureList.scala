@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeasureList extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait MeasureList extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns an array of $.ig.Measure objects this measure list is grouping.
     *
     * @param value
     */
-  def measures(value: js.Object): js.Array[_] = js.native
+  def measures(value: js.Object): js.Array[js.Any]
 }
 object MeasureList {
   
   @scala.inline
-  def apply(caption: js.Object => String, measures: js.Object => js.Array[_]): MeasureList = {
+  def apply(caption: js.Object => String, measures: js.Object => js.Array[js.Any]): MeasureList = {
     val __obj = js.Dynamic.literal(caption = js.Any.fromFunction1(caption), measures = js.Any.fromFunction1(measures))
     __obj.asInstanceOf[MeasureList]
   }
@@ -37,6 +35,6 @@ object MeasureList {
     def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMeasures(value: js.Object => js.Array[_]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
+    def setMeasures(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
   }
 }

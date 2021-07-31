@@ -12,50 +12,44 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ncp", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     source: String,
     destination: String,
     callback: js.Function1[/* err */ js.Array[Error] | Null, Unit]
-  ): Unit = js.native
-  @JSImport("ncp", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     source: String,
     destination: String,
     options: OptionserrsPathLike,
     callback: js.Function1[/* err */ WriteStream | Null, Unit]
-  ): Unit = js.native
-  @JSImport("ncp", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     source: String,
     destination: String,
     options: Optionserrsundefined,
     callback: js.Function1[/* err */ js.Array[Error] | Null, Unit]
-  ): Unit = js.native
-  @JSImport("ncp", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     source: String,
     destination: String,
     options: OptionsstopOnErrtrue,
     callback: js.Function1[/* err */ Error | Null, Unit]
-  ): Unit = js.native
-  @JSImport("ncp", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     source: String,
     destination: String,
     options: Options,
     callback: js.Function1[/* err */ Error | js.Array[Error] | WriteStream | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ncp", JSImport.Namespace)
   @js.native
@@ -72,25 +66,22 @@ object mod {
     *
     * It does not exist at runtime.
     */
-  @JSImport("ncp", "__promisify__")
-  @js.native
-  def promisify(source: String, destination: String): js.Promise[Unit] = js.native
-  @JSImport("ncp", "__promisify__")
-  @js.native
-  def promisify(source: String, destination: String, options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def promisify(source: String, destination: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("__promisify__")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def promisify(source: String, destination: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("__promisify__")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait File extends StObject {
     
     /** Accessed time */
-    var atime: Date = js.native
+    var atime: Date
     
-    var mode: Double = js.native
+    var mode: Double
     
     /** Modified time */
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var name: String = js.native
+    var name: String
   }
   object File {
     
@@ -117,24 +108,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var clobber: js.UndefOr[Boolean] = js.native
+    var clobber: js.UndefOr[Boolean] = js.undefined
     
-    var dereference: js.UndefOr[Boolean] = js.native
+    var dereference: js.UndefOr[Boolean] = js.undefined
     
-    var errs: js.UndefOr[PathLike] = js.native
+    var errs: js.UndefOr[PathLike] = js.undefined
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.native
+    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var stopOnErr: js.UndefOr[Boolean] = js.native
+    var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

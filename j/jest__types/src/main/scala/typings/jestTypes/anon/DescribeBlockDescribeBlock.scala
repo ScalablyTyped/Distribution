@@ -4,21 +4,21 @@ import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.jestTypesStrings.run_describe_finish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DescribeBlockDescribeBlock extends AsyncEvent {
+trait DescribeBlockDescribeBlock
+  extends StObject
+     with AsyncEvent {
   
-  var describeBlock: typings.jestTypes.circusMod.DescribeBlock = js.native
+  var describeBlock: typings.jestTypes.circusMod.DescribeBlock
   
-  var name: run_describe_finish = js.native
+  var name: run_describe_finish
 }
 object DescribeBlockDescribeBlock {
   
   @scala.inline
-  def apply(describeBlock: typings.jestTypes.circusMod.DescribeBlock, name: run_describe_finish): DescribeBlockDescribeBlock = {
-    val __obj = js.Dynamic.literal(describeBlock = describeBlock.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(describeBlock: typings.jestTypes.circusMod.DescribeBlock): DescribeBlockDescribeBlock = {
+    val __obj = js.Dynamic.literal(describeBlock = describeBlock.asInstanceOf[js.Any], name = "run_describe_finish")
     __obj.asInstanceOf[DescribeBlockDescribeBlock]
   }
   

@@ -6,61 +6,61 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectsGet extends StandardParameters {
+trait ParamsResourceObjectsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the bucket in which the object resides.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * If present, selects a specific revision of this object (as opposed to the
     * latest version, the default).
     */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's generation
     * matches the given value.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.native
+  var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's generation does
     * not match the given value.
     */
-  var ifGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
     * metageneration matches the given value.
     */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
     * metageneration does not match the given value.
     */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the object.
     */
-  var `object`: js.UndefOr[String] = js.native
+  var `object`: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceObjectsGet {
   

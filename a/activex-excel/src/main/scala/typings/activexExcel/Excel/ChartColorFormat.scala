@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartColorFormat extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.ChartColorFormat_typekey")
-  var ExcelDotChartColorFormat_typekey: ChartColorFormat = js.native
+  var ExcelDotChartColorFormat_typekey: ChartColorFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val RGB: Double = js.native
+  val RGB: Double
   
-  var SchemeColor: Double = js.native
+  var SchemeColor: Double
   
-  val Type: Double = js.native
+  val Type: Double
   
-  val _Default: Double = js.native
+  val _Default: Double
 }
 object ChartColorFormat {
   

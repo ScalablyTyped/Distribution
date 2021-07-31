@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeInvitationRequest extends StObject {
   
   /**
     * The ARN of the enrollment invitation to revoke. Required.
     */
-  var EnrollmentId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentId] = js.native
+  var EnrollmentId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentId] = js.undefined
   
   /**
     * The ARN of the user for whom to revoke an enrollment invitation. Required.
     */
-  var UserArn: js.UndefOr[Arn] = js.native
+  var UserArn: js.UndefOr[Arn] = js.undefined
 }
 object RevokeInvitationRequest {
   

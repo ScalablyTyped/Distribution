@@ -6,11 +6,12 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTimePicker extends Widget_ {
+trait DateTimePicker
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -49,28 +50,27 @@ trait DateTimePicker extends Widget_ {
 }
 object DateTimePicker {
   
-  @js.native
   trait BeforeCloseEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DateTimePicker popup.
       */
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     /** returns the event parameters from DateTimePicker.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DateTimePicker model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCloseEventArgs {
     
@@ -115,28 +115,27 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DateTimePicker popup.
       */
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     /** returns the event parameters from DateTimePicker.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DateTimePicker model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -181,24 +180,23 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait ButtonText extends StObject {
     
     /** Sets the text for the Done button inside the datetime popup.
       */
-    var done: js.UndefOr[String] = js.native
+    var done: js.UndefOr[String] = js.undefined
     
     /** Sets the text for the Now button inside the datetime popup.
       */
-    var timeNow: js.UndefOr[String] = js.native
+    var timeNow: js.UndefOr[String] = js.undefined
     
     /** Sets the header text for the Time dropdown.
       */
-    var timeTitle: js.UndefOr[String] = js.native
+    var timeTitle: js.UndefOr[String] = js.undefined
     
     /** Sets the text for the Today button inside the datetime popup.
       */
-    var today: js.UndefOr[String] = js.native
+    var today: js.UndefOr[String] = js.undefined
   }
   object ButtonText {
     
@@ -237,32 +235,31 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** returns true if change event triggered by interaction, otherwise returns false
       */
-    var isInteraction: js.UndefOr[Boolean] = js.native
+    var isInteraction: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current value is valid or not
       */
-    var isValidState: js.UndefOr[Boolean] = js.native
+    var isValidState: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected date time value
       */
-    var prevDateTime: js.UndefOr[String] = js.native
+    var prevDateTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the modified datetime value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -313,24 +310,23 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected date time value
       */
-    var prevDateTime: js.UndefOr[String] = js.native
+    var prevDateTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the modified datetime value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -369,16 +365,15 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** returns the DateTimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -405,20 +400,19 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DateTimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -451,20 +445,19 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait FocusInEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the datetime value, which is in text box
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusInEventArgs {
     
@@ -497,20 +490,19 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait FocusOutEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the datetime value, which is in text box
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusOutEventArgs {
     
@@ -543,228 +535,227 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Used to allow or restrict the editing in DateTimePicker input field directly. By setting false to this API, You can only pick the date and time values from DateTimePicker popup.
       * @Default {true}
       */
-    var allowEdit: js.UndefOr[Boolean] = js.native
+    var allowEdit: js.UndefOr[Boolean] = js.undefined
     
     /** Fires before the datetime popup closed in the DateTimePicker.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.native
+    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.undefined
     
     /** Fires before the datetime popup open in the DateTimePicker.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Disable the list of specified date value.
       * @Default {{}}
       */
-    var blackoutDates: js.UndefOr[js.Any] = js.native
+    var blackoutDates: js.UndefOr[js.Any] = js.undefined
     
     /** Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
       * @Default {{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }}
       */
-    var buttonText: js.UndefOr[ButtonText] = js.native
+    var buttonText: js.UndefOr[ButtonText] = js.undefined
     
     /** Fires when the datetime value changed in the DateTimePicker textbox.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires when DateTimePicker popup closes.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Fires after DateTimePicker control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Set the root class for DateTimePicker theme. This cssClass API helps to use custom skinning option for DateTimePicker control.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the datetime format displayed in the DateTimePicker. The value should be a combination of date format and time format.
       * @Default {M/d/yyyy h:mm tt}
       */
-    var dateTimeFormat: js.UndefOr[String] = js.native
+    var dateTimeFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the header format of the datepicker inside the DateTimePicker popup. See DatePicker.Header
       * @Default {ej.DatePicker.Header.Short}
       */
-    var dayHeaderFormat: js.UndefOr[Header | String] = js.native
+    var dayHeaderFormat: js.UndefOr[Header | String] = js.undefined
     
     /** Specifies the navigation depth level in DatePicker calendar inside DateTimePicker popup. This option is not applied when start level view option is lower than depth level view.
       * See ej.DatePicker.Level
       */
-    var depthLevel: js.UndefOr[Level | String] = js.native
+    var depthLevel: js.UndefOr[Level | String] = js.undefined
     
     /** Fires when the DateTimePicker is destroyed successfully
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the list of time range to be disabled.
       * @Default {{}}
       */
-    var disableTimeRanges: js.UndefOr[js.Any] = js.native
+    var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
     
     /** Enable or disable the animation effect in DateTimePicker.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the state maintenance of DateTimePicker.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DateTimePicker direction as right to left alignment.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When enableStrictMode true it allows the value outside of the range also but it highlights the textbox with error class, otherwise it internally changed to the correct value.
       * @Default {false}
       */
-    var enableStrictMode: js.UndefOr[Boolean] = js.native
+    var enableStrictMode: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the DateTimePicker control.
       * @Default {false}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the focus-in happens in the DateTimePicker textbox.
       */
-    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.undefined
     
     /** Fires when the focus-out happens in the DateTimePicker textbox.
       */
-    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Specifies the header format to be displayed in the DatePicker calendar inside the DateTimePicker popup.
       * @Default {MMMM yyyy}
       */
-    var headerFormat: js.UndefOr[String] = js.native
+    var headerFormat: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the DateTimePicker textbox.
       * @Default {30}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the ejDateTimePicker
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the time popup.
       * @Default {30}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the localization culture for DateTimePicker.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element when we set true to enableStrictMode.
       * @Default {new Date(12/31/2099 11:59:59 PM)}
       */
-    var maxDateTime: js.UndefOr[String | Date] = js.native
+    var maxDateTime: js.UndefOr[String | Date] = js.undefined
     
     /** Sets the minimum value to the DateTimePicker. Behind the minimum value an error class is added to the wrapper element.
       * @Default {new Date(1/1/1900 12:00:00 AM)}
       */
-    var minDateTime: js.UndefOr[String | Date] = js.native
+    var minDateTime: js.UndefOr[String | Date] = js.undefined
     
     /** Fires when DateTimePicker popup opens.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup position of DateTimePicker.See below to know available popup positions
       * @Default {ej.PopupPosition.Bottom}
       */
-    var popupPosition: js.UndefOr[String | typings.ejWebAll.ej.popupPosition] = js.native
+    var popupPosition: js.UndefOr[String | typings.ejWebAll.ej.popupPosition] = js.undefined
     
     /** Indicates that the DateTimePicker value can only be read and canâ€™t change.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** It allows showing days in other months of DatePicker calendar inside the DateTimePicker popup.
       * @Default {true}
       */
-    var showOtherMonths: js.UndefOr[Boolean] = js.native
+    var showOtherMonths: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the arrow button from the DateTimePicker textbox. When the button disabled, the DateTimePicker popup opens while focus in the textbox and hides while focus out from
       * the textbox.
       * @Default {true}
       */
-    var showPopupButton: js.UndefOr[Boolean] = js.native
+    var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** Changes the sharped edges into rounded corner for the DateTimePicker textbox and popup.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the special dates in DateTimePicker.
       * @Default {null}
       */
-    var specialDates: js.UndefOr[js.Any] = js.native
+    var specialDates: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the start day of the week in datepicker inside the DateTimePicker popup.
       * @Default {1}
       */
-    var startDay: js.UndefOr[Double] = js.native
+    var startDay: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start level view in datepicker inside the DateTimePicker popup. See DatePicker.Level
       * @Default {ej.DatePicker.Level.Month or month}
       */
-    var startLevel: js.UndefOr[Level | String] = js.native
+    var startLevel: js.UndefOr[Level | String] = js.undefined
     
     /** Specifies the number of months to navigate at one click of next and previous button in datepicker inside the DateTimePicker popup.
       * @Default {1}
       */
-    var stepMonths: js.UndefOr[Double] = js.native
+    var stepMonths: js.UndefOr[Double] = js.undefined
     
     /** Defines the time format displayed in the time dropdown inside the DateTimePicker popup.
       * @Default {h:mm tt}
       */
-    var timeDisplayFormat: js.UndefOr[String] = js.native
+    var timeDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** We can drill down up to time interval on selected date with meridian details.
       * @Default {{ enabled: false, interval: 5, showMeridian: false, autoClose: true }}
       */
-    var timeDrillDown: js.UndefOr[TimeDrillDown] = js.native
+    var timeDrillDown: js.UndefOr[TimeDrillDown] = js.undefined
     
     /** Defines the width of the time dropdown inside the DateTimePicker popup.
       * @Default {100}
       */
-    var timePopupWidth: js.UndefOr[String | Double] = js.native
+    var timePopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Set the jQuery validation error message in DateTimePicker.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** Set the jQuery validation rules in DateTimePicker.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the DateTime value to the control.
       */
-    var value: js.UndefOr[String | Date] = js.native
+    var value: js.UndefOr[String | Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
       * @Default {Select date and time}
       */
-    var watermarkText: js.UndefOr[String] = js.native
+    var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DateTimePicker textbox.
       * @Default {143}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1055,24 +1046,23 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected date time value
       */
-    var prevDateTime: js.UndefOr[String] = js.native
+    var prevDateTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the modified datetime value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -1111,24 +1101,23 @@ object DateTimePicker {
     }
   }
   
-  @js.native
   trait TimeDrillDown extends StObject {
     
     /** After choosing the time, the popup will close automatically if we set it as true, otherwise we focus out the DateTimePicker or choose timeNow button for closing the popup.
       */
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
     /** This is the field to show/hide the timeDrillDown in DateTimePicker.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the interval time of minutes on selected date.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Allows the user to show or hide the meridian with time in DateTimePicker.
       */
-    var showMeridian: js.UndefOr[Boolean] = js.native
+    var showMeridian: js.UndefOr[Boolean] = js.undefined
   }
   object TimeDrillDown {
     

@@ -2,7 +2,6 @@ package typings.importFrom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,12 @@ object mod {
   	}
   	```
   	*/
+  @scala.inline
+  def apply(fromDirectory: String, moduleId: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("import-from", JSImport.Namespace)
   @js.native
-  def apply(fromDirectory: String, moduleId: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Import a module like with [`require()`](https://nodejs.org/api/modules.html#modules_require_id) but from a given path.
@@ -39,7 +41,6 @@ object mod {
   	// Do something with `bar`, may be `undefined` when `./bar` can't be found
   	```
   	*/
-  @JSImport("import-from", "silent")
-  @js.native
-  def silent(fromDirectory: String, moduleId: String): js.Any = js.native
+  @scala.inline
+  def silent(fromDirectory: String, moduleId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("silent")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

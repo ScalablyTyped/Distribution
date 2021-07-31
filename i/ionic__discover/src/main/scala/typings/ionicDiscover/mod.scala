@@ -2,10 +2,13 @@ package typings.ionicDiscover
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/discover", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/discover", "CommServer")
   @js.native
@@ -32,11 +35,9 @@ object mod {
     def this(namespace: String, name: String, port: Double, commPort: Double) = this()
   }
   
-  @JSImport("@ionic/discover", "computeBroadcastAddress")
-  @js.native
-  def computeBroadcastAddress(address: String, netmask: String): String = js.native
+  @scala.inline
+  def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/discover", "newSilentPublisher")
-  @js.native
-  def newSilentPublisher(namespace: String, name: String, port: Double): typings.ionicDiscover.publisherMod.Publisher = js.native
+  @scala.inline
+  def newSilentPublisher(namespace: String, name: String, port: Double): typings.ionicDiscover.publisherMod.Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[typings.ionicDiscover.publisherMod.Publisher]
 }

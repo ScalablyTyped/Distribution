@@ -15,22 +15,21 @@ import typings.babelTypes.babelTypesStrings.`-Equalssign`
 import typings.babelTypes.babelTypesStrings.`^Equalssign`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression {
   
-  var left: LVal = js.native
+  var left: LVal
   
-  var operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign = js.native
+  var operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_AssignmentExpression_ : AssignmentExpression = js.native
+  var type_AssignmentExpression_ : AssignmentExpression
 }
 object AssignmentExpression_ {
   
@@ -41,11 +40,10 @@ object AssignmentExpression_ {
     loc: SourceLocation,
     operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign,
     right: Expression,
-    start: Double,
-    `type`: AssignmentExpression
+    start: Double
   ): AssignmentExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssignmentExpression")
     __obj.asInstanceOf[AssignmentExpression_]
   }
   

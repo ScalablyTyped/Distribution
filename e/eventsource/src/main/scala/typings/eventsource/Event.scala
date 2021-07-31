@@ -2,7 +2,6 @@ package typings.eventsource
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,16 +36,16 @@ trait Event extends StObject {
     */
   val composed: Boolean = js.native
   
-  def composedPath(): js.Array[_] = js.native
+  def composedPath(): js.Array[js.Any] = js.native
   
   val defaultPrevented: Boolean = js.native
   
   val eventPhase: Double = js.native
   
   def initEvent(`type`: String): Unit = js.native
-  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
   
   /**
     * Returns true if event was dispatched by the user agent, and

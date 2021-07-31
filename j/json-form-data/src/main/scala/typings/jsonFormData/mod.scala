@@ -10,7 +10,6 @@ import typings.std.FileList
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,7 +38,6 @@ object mod extends Shortcut {
     *       }
     *     }
     */
-  @js.native
   trait FormatOptions extends StObject {
     
     /**
@@ -59,13 +57,13 @@ object mod extends Shortcut {
       *     // }
       *
       */
-    var includeNullValues: js.UndefOr[Boolean] = js.native
+    var includeNullValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Existing form data which values will be appended to  (default: `new FormData()`).
       * This can be used to support environments that do not have a global FormData object.
       */
-    var initialFormData: js.UndefOr[InitialFormData] = js.native
+    var initialFormData: js.UndefOr[InitialFormData] = js.undefined
     
     /**
       * Modify outmost leaf values before calling formData.append. Default behaviour
@@ -88,7 +86,7 @@ object mod extends Shortcut {
       *     // }
       *
       */
-    var mapping: js.UndefOr[js.Function1[/* value */ ValidJSONValue, String | Blob]] = js.native
+    var mapping: js.UndefOr[js.Function1[/* value */ ValidJSONValue, String | Blob]] = js.undefined
     
     /**
       * Include index values in arrays (default: `true`).
@@ -110,7 +108,7 @@ object mod extends Shortcut {
       *     // }
       *
       */
-    var showLeafArrayIndexes: js.UndefOr[Boolean] = js.native
+    var showLeafArrayIndexes: js.UndefOr[Boolean] = js.undefined
   }
   object FormatOptions {
     
@@ -149,20 +147,34 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait InitialFormData extends StObject {
     
-    def append(name: String, value: String): Unit = js.native
-    def append(name: String, value: String, fileName: String): Unit = js.native
-    def append(name: String, value: Blob): Unit = js.native
-    def append(name: String, value: Blob, fileName: String): Unit = js.native
+    def append(name: String, value: String): Unit
+    def append(name: String, value: String, fileName: String): Unit
+    def append(name: String, value: Blob): Unit
+    def append(name: String, value: Blob, fileName: String): Unit
     @JSName("append")
-    var append_Original: FnCall = js.native
+    var append_Original: FnCall
+  }
+  object InitialFormData {
+    
+    @scala.inline
+    def apply(append: FnCall): InitialFormData = {
+      val __obj = js.Dynamic.literal(append = append.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InitialFormData]
+    }
+    
+    @scala.inline
+    implicit class InitialFormDataMutableBuilder[Self <: InitialFormData] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAppend(value: FnCall): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait ValidJSON
-    extends /* key */ StringDictionary[ValidJSON | ValidJSONValue | js.Array[ValidJSONValue] | FileList]
+    extends StObject
+       with /* key */ StringDictionary[ValidJSON | ValidJSONValue | js.Array[ValidJSONValue] | FileList]
   object ValidJSON {
     
     @scala.inline

@@ -2,15 +2,13 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
-  var ErrorMessage: js.UndefOr[typings.awsSdk.esMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.esMod.ErrorMessage] = js.undefined
   
-  var ErrorType: js.UndefOr[typings.awsSdk.esMod.ErrorType] = js.native
+  var ErrorType: js.UndefOr[typings.awsSdk.esMod.ErrorType] = js.undefined
 }
 object ErrorDetails {
   

@@ -3,17 +3,17 @@ package typings.vsoNodeApi.coreInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TemporaryDataCreatedDTO extends TemporaryDataDTO {
+trait TemporaryDataCreatedDTO
+  extends StObject
+     with TemporaryDataDTO {
   
-  var expirationDate: Date = js.native
+  var expirationDate: Date
   
-  var id: String = js.native
+  var id: String
   
-  var url: String = js.native
+  var url: String
 }
 object TemporaryDataCreatedDTO {
   

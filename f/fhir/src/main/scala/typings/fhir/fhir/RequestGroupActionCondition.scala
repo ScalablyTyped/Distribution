@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Whether or not the action is applicable
   */
-@js.native
-trait RequestGroupActionCondition extends BackboneElement {
+trait RequestGroupActionCondition
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'kind'.
     */
-  var _kind: js.UndefOr[Element] = js.native
+  var _kind: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'language'.
     */
-  var _language: js.UndefOr[Element] = js.native
+  var _language: js.UndefOr[Element] = js.undefined
   
   /**
     * Natural language description of the condition
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean-valued expression
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * applicability | start | stop
     */
-  var kind: code = js.native
+  var kind: code
   
   /**
     * Language of the expression
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object RequestGroupActionCondition {
   

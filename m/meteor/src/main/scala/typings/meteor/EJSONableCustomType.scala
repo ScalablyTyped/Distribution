@@ -2,21 +2,19 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EJSONableCustomType extends StObject {
   
   @JSName("clone")
-  var clone_FEJSONableCustomType: js.UndefOr[js.Function0[this.type]] = js.native
+  var clone_FEJSONableCustomType: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   @JSName("equals")
-  var equals_FEJSONableCustomType: js.UndefOr[js.Function1[/* other */ js.Object, Boolean]] = js.native
+  var equals_FEJSONableCustomType: js.UndefOr[js.Function1[/* other */ js.Object, Boolean]] = js.undefined
   
-  def toJSONValue(): JSONable = js.native
+  def toJSONValue(): JSONable
   
-  def typeName(): String = js.native
+  def typeName(): String
 }
 object EJSONableCustomType {
   

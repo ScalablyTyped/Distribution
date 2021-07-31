@@ -4,39 +4,34 @@ import typings.treat.typesMod.TreatModuleObject
 import typings.treat.typesMod.TreatModuleValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
   
-  @JSImport("treat/lib/types/browser", "createTheme")
+  @JSImport("treat/lib/types/browser", JSImport.Namespace)
   @js.native
-  def createTheme(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("treat/lib/types/browser", "globalStyle")
-  @js.native
-  def globalStyle(): Unit = js.native
+  @scala.inline
+  def createTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Unit]
   
-  @JSImport("treat/lib/types/browser", "resolveClassName")
-  @js.native
-  def resolveClassName(themeRef: String, classRef: String): String = js.native
+  @scala.inline
+  def globalStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalStyle")().asInstanceOf[Unit]
   
-  @JSImport("treat/lib/types/browser", "resolveStyles")
-  @js.native
-  def resolveStyles(themeRef: String, styles: js.Array[TreatModuleValue]): js.Array[TreatModuleValue] = js.native
-  @JSImport("treat/lib/types/browser", "resolveStyles")
-  @js.native
-  def resolveStyles(themeRef: String, styles: TreatModuleObject): TreatModuleObject = js.native
+  @scala.inline
+  def resolveClassName(themeRef: String, classRef: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveClassName")(themeRef.asInstanceOf[js.Any], classRef.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("treat/lib/types/browser", "style")
-  @js.native
-  def style(): Unit = js.native
+  @scala.inline
+  def resolveStyles(themeRef: String, styles: js.Array[TreatModuleValue]): js.Array[TreatModuleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyles")(themeRef.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[js.Array[TreatModuleValue]]
+  @scala.inline
+  def resolveStyles(themeRef: String, styles: TreatModuleObject): TreatModuleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyles")(themeRef.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[TreatModuleObject]
   
-  @JSImport("treat/lib/types/browser", "styleMap")
-  @js.native
-  def styleMap(): Unit = js.native
+  @scala.inline
+  def style(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("style")().asInstanceOf[Unit]
   
-  @JSImport("treat/lib/types/browser", "styleTree")
-  @js.native
-  def styleTree(): Unit = js.native
+  @scala.inline
+  def styleMap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("styleMap")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def styleTree(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("styleTree")().asInstanceOf[Unit]
 }

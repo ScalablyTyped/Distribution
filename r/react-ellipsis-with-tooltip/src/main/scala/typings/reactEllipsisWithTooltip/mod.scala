@@ -20,7 +20,6 @@ import typings.reactEllipsisWithTooltip.reactEllipsisWithTooltipStrings.right
 import typings.reactEllipsisWithTooltip.reactEllipsisWithTooltipStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,20 +31,19 @@ object mod {
   
   type EllipsisWithTooltip = Component[EllipsisWithTooltipProps, js.Object, js.Any]
   
-  @js.native
   trait EllipsisWithTooltipProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var delayHide: js.UndefOr[Double] = js.native
+    var delayHide: js.UndefOr[Double] = js.undefined
     
-    var delayShow: js.UndefOr[Double] = js.native
+    var delayShow: js.UndefOr[Double] = js.undefined
     
     var placement: js.UndefOr[
         `auto-start` | auto | `auto-end` | `top-start` | top | `top-end` | `right-start` | right | `right-end` | `bottom-end` | bottom | `bottom-start` | `left-end` | left | `left-start`
-      ] = js.native
+      ] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object EllipsisWithTooltipProps {
     

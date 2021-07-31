@@ -2,36 +2,34 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The builder for BigQueryDataSourceSpecBuilder.
   */
-@js.native
 trait BigQueryDataSourceSpecBuilder extends StObject {
   
-  def build(): DataSourceSpec = js.native
+  def build(): DataSourceSpec
   
-  def copy(): DataSourceSpecBuilder = js.native
+  def copy(): DataSourceSpecBuilder
   
-  def getParameters(): js.Array[DataSourceParameter] = js.native
+  def getParameters(): js.Array[DataSourceParameter]
   
-  def getProjectId(): String = js.native
+  def getProjectId(): String
   
-  def getRawQuery(): String = js.native
+  def getRawQuery(): String
   
-  def getType(): DataSourceType = js.native
+  def getType(): DataSourceType
   
-  def removeAllParameters(): BigQueryDataSourceSpecBuilder = js.native
+  def removeAllParameters(): BigQueryDataSourceSpecBuilder
   
-  def removeParameter(parameterName: String): BigQueryDataSourceSpecBuilder = js.native
+  def removeParameter(parameterName: String): BigQueryDataSourceSpecBuilder
   
-  def setParameterFromCell(parameterName: String, sourceCell: String): BigQueryDataSourceSpecBuilder = js.native
+  def setParameterFromCell(parameterName: String, sourceCell: String): BigQueryDataSourceSpecBuilder
   
-  def setProjectId(projectId: String): BigQueryDataSourceSpecBuilder = js.native
+  def setProjectId(projectId: String): BigQueryDataSourceSpecBuilder
   
-  def setRawQuery(rawQuery: String): BigQueryDataSourceSpecBuilder = js.native
+  def setRawQuery(rawQuery: String): BigQueryDataSourceSpecBuilder
 }
 object BigQueryDataSourceSpecBuilder {
   

@@ -10,9 +10,9 @@ Implementation of the session storage in Apache Cassandra as express middleware.
 | ------------------ | :-------------: |
 | Full name          | cassandra-store |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14061 |
+| # downloads        | 16544 |
 | # stars            | 4 |
 
 ## Links

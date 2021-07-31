@@ -2,19 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterOptions extends StObject {
   
-  var newLine: js.UndefOr[NewLineKind] = js.native
+  var newLine: js.UndefOr[NewLineKind] = js.undefined
   
-  var noEmitHelpers: js.UndefOr[Boolean] = js.native
+  var noEmitHelpers: js.UndefOr[Boolean] = js.undefined
   
-  var omitTrailingSemicolon: js.UndefOr[Boolean] = js.native
+  var omitTrailingSemicolon: js.UndefOr[Boolean] = js.undefined
   
-  var removeComments: js.UndefOr[Boolean] = js.native
+  var removeComments: js.UndefOr[Boolean] = js.undefined
 }
 object PrinterOptions {
   

@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveStyleElement extends PluginConfig {
+trait PluginRemoveStyleElement
+  extends StObject
+     with PluginConfig {
   
-  var removeStyleElement: Boolean | js.Object = js.native
+  var removeStyleElement: Boolean | js.Object
 }
 object PluginRemoveStyleElement {
   

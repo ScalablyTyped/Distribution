@@ -5,40 +5,38 @@ import typings.octokitTypes.octokitTypesStrings.commit
 import typings.octokitTypes.octokitTypesStrings.tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateTagEndpoint extends StObject {
   
   /**
     * The tag message.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The SHA of the git object this is tagging.
     */
-  var `object`: String = js.native
+  var `object`: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The tag's name. This is typically a version (e.g., "v0.0.1").
     */
-  var tag: String = js.native
+  var tag: String
   
   /**
     * An object with information about the individual creating the tag.
     */
-  var tagger: js.UndefOr[GitCreateTagParamsTagger] = js.native
+  var tagger: js.UndefOr[GitCreateTagParamsTagger] = js.undefined
   
   /**
     * The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
     */
-  var `type`: commit | tree | blob = js.native
+  var `type`: commit | tree | blob
 }
 object GitCreateTagEndpoint {
   

@@ -4,21 +4,19 @@ import typings.devtoolsProtocol.mod.Protocol.SystemInfo.GetInfoResponse
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.GetProcessInfoResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfoApi extends StObject {
   
   /**
     * Returns information about the system.
     */
-  def getInfo(): js.Promise[GetInfoResponse] = js.native
+  def getInfo(): js.Promise[GetInfoResponse]
   
   /**
     * Returns information about all running processes.
     */
-  def getProcessInfo(): js.Promise[GetProcessInfoResponse] = js.native
+  def getProcessInfo(): js.Promise[GetProcessInfoResponse]
 }
 object SystemInfoApi {
   

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,9 +71,8 @@ object CallWorkflowActivity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallWorkflowActivity.create")
-  @js.native
-  def create(model: IModel): CallWorkflowActivity = js.native
+  @scala.inline
+  def create(model: IModel): CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowActivity]
   
   /**
     * Creates and returns a new CallWorkflowActivity instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object CallWorkflowActivity {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallWorkflowActivity.createIn")
-  @js.native
-  def createIn(container: Flow): CallWorkflowActivity = js.native
+  @scala.inline
+  def createIn(container: Flow): CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowActivity]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallWorkflowActivity.structureTypeName")

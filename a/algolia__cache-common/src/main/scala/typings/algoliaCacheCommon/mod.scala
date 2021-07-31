@@ -4,18 +4,19 @@ import typings.algoliaCacheCommon.anon.ReadonlyPromiseany
 import typings.algoliaCacheCommon.anon.ReadonlyPromisevoid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/cache-common", "createFallbackableCache")
+  @JSImport("@algolia/cache-common", JSImport.Namespace)
   @js.native
-  def createFallbackableCache(options: FallbackableCacheOptions): Cache = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@algolia/cache-common", "createNullCache")
-  @js.native
-  def createNullCache(): Cache = js.native
+  @scala.inline
+  def createFallbackableCache(options: FallbackableCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFallbackableCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  
+  @scala.inline
+  def createNullCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullCache")().asInstanceOf[Cache]
   
   @js.native
   trait Cache extends StObject {
@@ -46,13 +47,12 @@ object mod {
     def set[TValue](key: js.Object, value: TValue): js.Promise[TValue] = js.native
   }
   
-  @js.native
   trait CacheEvents[TValue] extends StObject {
     
     /**
       * The callback when the given `key` is missing from the cache.
       */
-    def miss(value: TValue): ReadonlyPromiseany = js.native
+    def miss(value: TValue): ReadonlyPromiseany
   }
   object CacheEvents {
     
@@ -63,20 +63,19 @@ object mod {
     }
     
     @scala.inline
-    implicit class CacheEventsMutableBuilder[Self <: CacheEvents[_], TValue] (val x: Self with CacheEvents[TValue]) extends AnyVal {
+    implicit class CacheEventsMutableBuilder[Self <: CacheEvents[?], TValue] (val x: Self & CacheEvents[TValue]) extends AnyVal {
       
       @scala.inline
       def setMiss(value: TValue => ReadonlyPromiseany): Self = StObject.set(x, "miss", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait FallbackableCacheOptions extends StObject {
     
     /**
       * List of caches order by priority.
       */
-    val caches: js.Array[Cache] = js.native
+    val caches: js.Array[Cache]
   }
   object FallbackableCacheOptions {
     

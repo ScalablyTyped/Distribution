@@ -10,9 +10,9 @@ Parse dotenv files for Boolean, Array, and Number variable types, built for Croc
 | ------------------ | :-------------: |
 | Full name          | dotenv-parse-variables |
 | Keywords           | array, boolean, check, convert, dot, dotenv, env, number, parse, variables |
-| # releases         | 5 |
-| # dependents       | 15 |
-| # downloads        | 419962 |
+| # releases         | 7 |
+| # dependents       | 18 |
+| # downloads        | 850564 |
 | # stars            | 0 |
 
 ## Links

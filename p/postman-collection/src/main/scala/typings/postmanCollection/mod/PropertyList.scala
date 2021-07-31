@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "PropertyList")
@@ -50,8 +49,8 @@ class PropertyList[TElement] protected () extends PropertyBase[PropertyBaseDefin
   def insertAfter(item: TElement, after: TElement): Unit = js.native
   def insertAfter(item: TElement, after: String): Unit = js.native
   
-  def map(iterator: js.Function1[/* item */ TElement, _]): js.Any = js.native
-  def map(iterator: js.Function1[/* item */ TElement, _], context: js.Any): js.Any = js.native
+  def map(iterator: js.Function1[/* item */ TElement, js.Any]): js.Any = js.native
+  def map(iterator: js.Function1[/* item */ TElement, js.Any], context: js.Any): js.Any = js.native
   
   def one(id: String): TElement = js.native
   
@@ -66,67 +65,31 @@ class PropertyList[TElement] protected () extends PropertyBase[PropertyBaseDefin
   def repopulate(items: js.Any): Unit = js.native
   
   def toObject(): js.Any = js.native
-  def toObject(
-    excludeDisabled: js.UndefOr[scala.Nothing],
-    caseSensitive: js.UndefOr[scala.Nothing],
-    multiValue: js.UndefOr[scala.Nothing],
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
-  def toObject(
-    excludeDisabled: js.UndefOr[scala.Nothing],
-    caseSensitive: js.UndefOr[scala.Nothing],
-    multiValue: Boolean
-  ): js.Any = js.native
-  def toObject(
-    excludeDisabled: js.UndefOr[scala.Nothing],
-    caseSensitive: js.UndefOr[scala.Nothing],
-    multiValue: Boolean,
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
-  def toObject(excludeDisabled: js.UndefOr[scala.Nothing], caseSensitive: Boolean): js.Any = js.native
-  def toObject(
-    excludeDisabled: js.UndefOr[scala.Nothing],
-    caseSensitive: Boolean,
-    multiValue: js.UndefOr[scala.Nothing],
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
-  def toObject(excludeDisabled: js.UndefOr[scala.Nothing], caseSensitive: Boolean, multiValue: Boolean): js.Any = js.native
-  def toObject(
-    excludeDisabled: js.UndefOr[scala.Nothing],
-    caseSensitive: Boolean,
-    multiValue: Boolean,
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean): js.Any = js.native
-  def toObject(
-    excludeDisabled: Boolean,
-    caseSensitive: js.UndefOr[scala.Nothing],
-    multiValue: js.UndefOr[scala.Nothing],
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
-  def toObject(excludeDisabled: Boolean, caseSensitive: js.UndefOr[scala.Nothing], multiValue: Boolean): js.Any = js.native
-  def toObject(
-    excludeDisabled: Boolean,
-    caseSensitive: js.UndefOr[scala.Nothing],
-    multiValue: Boolean,
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean): js.Any = js.native
-  def toObject(
-    excludeDisabled: Boolean,
-    caseSensitive: Boolean,
-    multiValue: js.UndefOr[scala.Nothing],
-    sanitizeKeys: Boolean
-  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean, multiValue: Boolean): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean, multiValue: Boolean, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Boolean, caseSensitive: Boolean, multiValue: Unit, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Boolean, caseSensitive: Unit, multiValue: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Boolean, caseSensitive: Unit, multiValue: Boolean, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Boolean, caseSensitive: Unit, multiValue: Unit, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Boolean, multiValue: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Boolean, multiValue: Boolean, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Boolean, multiValue: Unit, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Unit, multiValue: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Unit, multiValue: Boolean, sanitizeKeys: Boolean): js.Any = js.native
+  def toObject(excludeDisabled: Unit, caseSensitive: Unit, multiValue: Unit, sanitizeKeys: Boolean): js.Any = js.native
   
   def upsert(item: TElement): Boolean | Null = js.native
 }
 /* static members */
 object PropertyList {
   
-  @JSImport("postman-collection", "PropertyList.isPropertyList")
+  @JSImport("postman-collection", "PropertyList")
   @js.native
-  def isPropertyList(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isPropertyList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

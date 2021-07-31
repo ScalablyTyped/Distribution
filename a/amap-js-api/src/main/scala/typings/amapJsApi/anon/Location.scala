@@ -3,17 +3,15 @@ package typings.amapJsApi.anon
 import typings.amapJsApi.AMap.LocationValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var location: js.UndefOr[LocationValue] = js.native
+  var location: js.UndefOr[LocationValue] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Location {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateTrialComponentRequest extends StObject {
   
   /**
     * The name of the component to disassociate from the trial.
     */
-  var TrialComponentName: ExperimentEntityName = js.native
+  var TrialComponentName: ExperimentEntityName
   
   /**
     * The name of the trial to disassociate from.
     */
-  var TrialName: ExperimentEntityName = js.native
+  var TrialName: ExperimentEntityName
 }
 object DisassociateTrialComponentRequest {
   

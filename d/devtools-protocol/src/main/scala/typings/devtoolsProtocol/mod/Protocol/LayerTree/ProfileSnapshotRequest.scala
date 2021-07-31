@@ -4,31 +4,29 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileSnapshotRequest extends StObject {
   
   /**
     * The clip rectangle to apply when replaying the snapshot.
     */
-  var clipRect: js.UndefOr[Rect] = js.native
+  var clipRect: js.UndefOr[Rect] = js.undefined
   
   /**
     * The minimum duration (in seconds) to replay the snapshot.
     */
-  var minDuration: js.UndefOr[Double] = js.native
+  var minDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of times to replay the snapshot (1, if not specified).
     */
-  var minRepeatCount: js.UndefOr[integer] = js.native
+  var minRepeatCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The id of the layer snapshot.
     */
-  var snapshotId: SnapshotId = js.native
+  var snapshotId: SnapshotId
 }
 object ProfileSnapshotRequest {
   

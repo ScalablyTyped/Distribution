@@ -2,43 +2,41 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBackendConnectionErrorsMod {
   
-  @js.native
   trait BackendConnectionErrors extends StObject {
     
     /**
       * <p/>
       */
-    var ConnectionRefusedCount: js.UndefOr[Double] = js.native
+    var ConnectionRefusedCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var HTTPCode4XXCount: js.UndefOr[Double] = js.native
+    var HTTPCode4XXCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var HTTPCode5XXCount: js.UndefOr[Double] = js.native
+    var HTTPCode5XXCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var OtherCount: js.UndefOr[Double] = js.native
+    var OtherCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var TimeoutCount: js.UndefOr[Double] = js.native
+    var TimeoutCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var UnknownHostCount: js.UndefOr[Double] = js.native
+    var UnknownHostCount: js.UndefOr[Double] = js.undefined
   }
   object BackendConnectionErrors {
     

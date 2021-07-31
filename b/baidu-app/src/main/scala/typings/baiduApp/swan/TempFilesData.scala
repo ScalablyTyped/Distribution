@@ -2,20 +2,18 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFilesData extends StObject {
   
   /** 文件的临时路径 */
-  var tempFilePaths: String = js.native
+  var tempFilePaths: String
   
   /**
     * 图片的本地文件列表，每一项是一个 File 对象
     * @version 1.2.0
     */
-  var tempFiles: js.Array[TempFile] = js.native
+  var tempFiles: js.Array[TempFile]
 }
 object TempFilesData {
   

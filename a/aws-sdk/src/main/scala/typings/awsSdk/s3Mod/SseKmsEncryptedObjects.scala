@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SseKmsEncryptedObjects extends StObject {
   
   /**
     * Specifies whether Amazon S3 replicates objects created with server-side encryption using a customer master key (CMK) stored in AWS Key Management Service.
     */
-  var Status: SseKmsEncryptedObjectsStatus = js.native
+  var Status: SseKmsEncryptedObjectsStatus
 }
 object SseKmsEncryptedObjects {
   

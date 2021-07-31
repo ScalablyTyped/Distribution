@@ -2,27 +2,25 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Md2 extends StObject {
   
-  var md2: String = js.native
+  var md2: String
   
-  var md5: String = js.native
+  var md5: String
   
-  var ripemd160: String = js.native
+  var ripemd160: String
   
-  var sha1: String = js.native
+  var sha1: String
   
-  var sha224: String = js.native
+  var sha224: String
   
-  var sha256: String = js.native
+  var sha256: String
   
-  var sha384: String = js.native
+  var sha384: String
   
-  var sha512: String = js.native
+  var sha512: String
 }
 object Md2 {
   

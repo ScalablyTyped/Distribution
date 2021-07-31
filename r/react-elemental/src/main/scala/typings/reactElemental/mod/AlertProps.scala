@@ -4,25 +4,23 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertProps extends StObject {
   
-  val dismissible: js.UndefOr[Boolean] = js.native
+  val dismissible: js.UndefOr[Boolean] = js.undefined
   
-  val message: String | ReactElement = js.native
+  val message: String | ReactElement
   
-  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val size: js.UndefOr[AlertSize] = js.native
+  val size: js.UndefOr[AlertSize] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val title: String = js.native
+  val title: String
   
-  val `type`: js.UndefOr[AlertType] = js.native
+  val `type`: js.UndefOr[AlertType] = js.undefined
 }
 object AlertProps {
   

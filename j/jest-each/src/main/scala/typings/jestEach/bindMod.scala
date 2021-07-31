@@ -8,13 +8,15 @@ import typings.jestTypes.globalMod.TemplateData
 import typings.jestTypes.globalMod.TestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bindMod {
   
-  @JSImport("jest-each/build/bind", JSImport.Default)
+  @JSImport("jest-each/build/bind", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -24,9 +26,17 @@ object bindMod {
       /* timeout */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
-  @JSImport("jest-each/build/bind", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* table */ EachTable, 
+    /* taggedTemplateData */ TemplateData, 
+    js.Function3[
+      /* title */ String, 
+      /* test */ EachTestFn[EachCallback], 
+      /* timeout */ js.UndefOr[Double], 
+      Unit
+    ]
+  ]]
+  @scala.inline
   def default[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -36,7 +46,16 @@ object bindMod {
       /* timeout */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* table */ EachTable, 
+    /* taggedTemplateData */ TemplateData, 
+    js.Function3[
+      /* title */ String, 
+      /* test */ EachTestFn[EachCallback], 
+      /* timeout */ js.UndefOr[Double], 
+      Unit
+    ]
+  ]]
   
   type EachTests = js.Array[Arguments]
   

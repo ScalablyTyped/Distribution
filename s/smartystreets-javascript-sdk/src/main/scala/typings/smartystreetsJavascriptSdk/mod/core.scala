@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
@@ -85,9 +84,9 @@ object core {
     def withMaxTimeout(timeout: Double): ClientBuilder[T] = js.native
     
     def withProxy(host: String, port: Double): ClientBuilder[T] = js.native
-    def withProxy(host: String, port: Double, username: js.UndefOr[scala.Nothing], password: String): ClientBuilder[T] = js.native
     def withProxy(host: String, port: Double, username: String): ClientBuilder[T] = js.native
     def withProxy(host: String, port: Double, username: String, password: String): ClientBuilder[T] = js.native
+    def withProxy(host: String, port: Double, username: Unit, password: String): ClientBuilder[T] = js.native
     
     def withSender(sender: js.Any): ClientBuilder[T] = js.native
   }
@@ -132,8 +131,16 @@ object core {
     
     @JSImport("smartystreets-javascript-sdk", "core.Errors.SmartyError")
     @js.native
-    class SmartyError protected () extends Error {
+    class SmartyError protected ()
+      extends StObject
+         with Error {
       def this(message: String) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
     }
     
     @JSImport("smartystreets-javascript-sdk", "core.Errors.TooManyRequestsError")
@@ -157,7 +164,7 @@ object core {
     def this(authId: String) = this()
     def this(authId: String, hostName: String) = this()
     
-    def sign(request: Request_[ParamsDictionary, _, _, Query]): js.Any = js.native
+    def sign(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Any = js.native
   }
   
   @JSImport("smartystreets-javascript-sdk", "core.StaticCredentials")
@@ -165,58 +172,51 @@ object core {
   class StaticCredentials protected () extends StObject {
     def this(authId: String, authToken: String) = this()
     
-    def sign(request: Request_[ParamsDictionary, _, _, Query]): js.Any = js.native
+    def sign(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Any = js.native
   }
   
   object buildClient {
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.internationalStreet")
+    @JSImport("smartystreets-javascript-sdk", "core.buildClient")
     @js.native
-    def internationalStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.internationalStreet")
-    @js.native
-    def internationalStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usAutocomplete")
-    @js.native
-    def usAutocomplete(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usAutocomplete")
-    @js.native
-    def usAutocomplete(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = js.native
+    @scala.inline
+    def internationalStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
+    @scala.inline
+    def internationalStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usAutocompletePro")
-    @js.native
-    def usAutocompletePro(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usAutocompletePro")
-    @js.native
-    def usAutocompletePro(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = js.native
+    @scala.inline
+    def usAutocomplete(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
+    @scala.inline
+    def usAutocomplete(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usExtract")
-    @js.native
-    def usExtract(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usExtract")
-    @js.native
-    def usExtract(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = js.native
+    @scala.inline
+    def usAutocompletePro(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
+    @scala.inline
+    def usAutocompletePro(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usStreet")
-    @js.native
-    def usStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usStreet")
-    @js.native
-    def usStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = js.native
+    @scala.inline
+    def usExtract(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
+    @scala.inline
+    def usExtract(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
     
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usZipcode")
-    @js.native
-    def usZipcode(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = js.native
-    @JSImport("smartystreets-javascript-sdk", "core.buildClient.usZipcode")
-    @js.native
-    def usZipcode(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = js.native
+    @scala.inline
+    def usStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
+    @scala.inline
+    def usStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
+    
+    @scala.inline
+    def usZipcode(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
+    @scala.inline
+    def usZipcode(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
   }
   
-  @js.native
-  trait Client[T] extends ClientInstance {
+  trait Client[T]
+    extends StObject
+       with ClientInstance {
     
-    def send(lookup: T): js.Promise[T] = js.native
+    def send(lookup: T): js.Promise[T]
   }
   object Client {
     
@@ -227,17 +227,16 @@ object core {
     }
     
     @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client[_], T] (val x: Self with Client[T]) extends AnyVal {
+    implicit class ClientMutableBuilder[Self <: Client[?], T] (val x: Self & Client[T]) extends AnyVal {
       
       @scala.inline
       def setSend(value: T => js.Promise[T]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait ClientInstance extends StObject {
     
-    var sender: js.Any = js.native
+    var sender: js.Any
   }
   object ClientInstance {
     

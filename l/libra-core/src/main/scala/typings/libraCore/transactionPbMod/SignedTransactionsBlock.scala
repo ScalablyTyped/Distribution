@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock")
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SignedTransactionsBlock () extends Message {
   
   def addTransactions(): SignedTransaction = js.native
-  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): SignedTransaction = js.native
+  def addTransactions(value: Unit, index: Double): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction, index: Double): SignedTransaction = js.native
   
@@ -52,13 +51,11 @@ object SignedTransactionsBlock {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): SignedTransactionsBlock = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): SignedTransactionsBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionsBlock]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: SignedTransactionsBlock, reader: BinaryReader): SignedTransactionsBlock = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: SignedTransactionsBlock, reader: BinaryReader): SignedTransactionsBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SignedTransactionsBlock]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock.extensions")
   @js.native
@@ -73,22 +70,19 @@ object SignedTransactionsBlock {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: SignedTransactionsBlock, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: SignedTransactionsBlock, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: SignedTransactionsBlock): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: SignedTransactionsBlock): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.native
+    var transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject]
     
-    var validatorPublicKey: Uint8Array | String = js.native
+    var validatorPublicKey: Uint8Array | String
     
-    var validatorSignature: Uint8Array | String = js.native
+    var validatorSignature: Uint8Array | String
   }
   object AsObject {
     

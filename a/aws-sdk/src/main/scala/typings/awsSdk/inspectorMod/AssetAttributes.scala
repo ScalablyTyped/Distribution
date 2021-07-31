@@ -2,51 +2,49 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetAttributes extends StObject {
   
   /**
     * The ID of the agent that is installed on the EC2 instance where the finding is generated.
     */
-  var agentId: js.UndefOr[AgentId] = js.native
+  var agentId: js.UndefOr[AgentId] = js.undefined
   
   /**
     * The ID of the Amazon Machine Image (AMI) that is installed on the EC2 instance where the finding is generated.
     */
-  var amiId: js.UndefOr[AmiId] = js.native
+  var amiId: js.UndefOr[AmiId] = js.undefined
   
   /**
     * The Auto Scaling group of the EC2 instance where the finding is generated.
     */
-  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.native
+  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.undefined
   
   /**
     * The hostname of the EC2 instance where the finding is generated.
     */
-  var hostname: js.UndefOr[Hostname] = js.native
+  var hostname: js.UndefOr[Hostname] = js.undefined
   
   /**
     * The list of IP v4 addresses of the EC2 instance where the finding is generated.
     */
-  var ipv4Addresses: js.UndefOr[Ipv4AddressList] = js.native
+  var ipv4Addresses: js.UndefOr[Ipv4AddressList] = js.undefined
   
   /**
     * An array of the network interfaces interacting with the EC2 instance where the finding is generated.
     */
-  var networkInterfaces: js.UndefOr[NetworkInterfaces] = js.native
+  var networkInterfaces: js.UndefOr[NetworkInterfaces] = js.undefined
   
   /**
     * The schema version of this data type.
     */
-  var schemaVersion: NumericVersion = js.native
+  var schemaVersion: NumericVersion
   
   /**
     * The tags related to the EC2 instance where the finding is generated.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object AssetAttributes {
   

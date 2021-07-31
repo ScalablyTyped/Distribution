@@ -3,24 +3,23 @@ package typings.pulumiPulumi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeConfigMod {
   
-  @JSImport("@pulumi/pulumi/runtime/config", "allConfig")
+  @JSImport("@pulumi/pulumi/runtime/config", JSImport.Namespace)
   @js.native
-  def allConfig(): StringDictionary[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/pulumi/runtime/config", "getConfig")
-  @js.native
-  def getConfig(k: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def allConfig(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConfig")().asInstanceOf[StringDictionary[String]]
   
-  @JSImport("@pulumi/pulumi/runtime/config", "setAllConfig")
-  @js.native
-  def setAllConfig(c: StringDictionary[String]): Unit = js.native
+  @scala.inline
+  def getConfig(k: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(k.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@pulumi/pulumi/runtime/config", "setConfig")
-  @js.native
-  def setConfig(k: String, v: String): Unit = js.native
+  @scala.inline
+  def setAllConfig(c: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAllConfig")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setConfig(k: String, v: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

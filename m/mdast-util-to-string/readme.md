@@ -10,9 +10,9 @@ mdast utility to get the plain text content of a node
 | ------------------ | :-------------: |
 | Full name          | mdast-util-to-string |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, node, string, serialize |
-| # releases         | 4 |
-| # dependents       | 150 |
-| # downloads        | 23016977 |
+| # releases         | 6 |
+| # dependents       | 167 |
+| # downloads        | 47588637 |
 | # stars            | 0 |
 
 ## Links

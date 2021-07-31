@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.types.ChromeSetting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -17,19 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object privacy {
   
-  @js.native
   trait Network extends StObject {
     
-    var networkPredictionEnabled: ChromeSetting = js.native
+    var networkPredictionEnabled: ChromeSetting
     
     /** @since Chrome 48. */
-    var webRTCIPHandlingPolicy: ChromeSetting = js.native
+    var webRTCIPHandlingPolicy: ChromeSetting
     
     /** @deprecated since Chrome 48. Please use privacy.network.webRTCIPHandlingPolicy. */
-    var webRTCMultipleRoutesEnabled: ChromeSetting = js.native
+    var webRTCMultipleRoutesEnabled: ChromeSetting
     
     /** @deprecated since Chrome 48. Please use privacy.network.webRTCIPHandlingPolicy. */
-    var webRTCNonProxiedUdpEnabled: ChromeSetting = js.native
+    var webRTCNonProxiedUdpEnabled: ChromeSetting
   }
   object Network {
     
@@ -61,39 +59,38 @@ object privacy {
     }
   }
   
-  @js.native
   trait Services extends StObject {
     
-    var alternateErrorPagesEnabled: ChromeSetting = js.native
+    var alternateErrorPagesEnabled: ChromeSetting
     
     /** @since Chrome 70. */
-    var autofillAddressEnabled: ChromeSetting = js.native
+    var autofillAddressEnabled: ChromeSetting
     
     /** @since Chrome 70. */
-    var autofillCreditCardEnabled: ChromeSetting = js.native
+    var autofillCreditCardEnabled: ChromeSetting
     
     /** @deprecated since Chrome 70. Please use privacy.services.autofillAddressEnabled and privacy.services.autofillCreditCardEnabled. */
-    var autofillEnabled: ChromeSetting = js.native
+    var autofillEnabled: ChromeSetting
     
     /** @since Chrome 42. */
-    var hotwordSearchEnabled: ChromeSetting = js.native
+    var hotwordSearchEnabled: ChromeSetting
     
-    var instantEnabled: ChromeSetting = js.native
+    var instantEnabled: ChromeSetting
     
     /** @since Chrome 38. */
-    var passwordSavingEnabled: ChromeSetting = js.native
+    var passwordSavingEnabled: ChromeSetting
     
-    var safeBrowsingEnabled: ChromeSetting = js.native
+    var safeBrowsingEnabled: ChromeSetting
     
     /** @since Chrome 42. */
-    var safeBrowsingExtendedReportingEnabled: ChromeSetting = js.native
+    var safeBrowsingExtendedReportingEnabled: ChromeSetting
     
-    var searchSuggestEnabled: ChromeSetting = js.native
+    var searchSuggestEnabled: ChromeSetting
     
     /** since Chrome 20. */
-    var spellingServiceEnabled: ChromeSetting = js.native
+    var spellingServiceEnabled: ChromeSetting
     
-    var translationServiceEnabled: ChromeSetting = js.native
+    var translationServiceEnabled: ChromeSetting
   }
   object Services {
     
@@ -157,20 +154,19 @@ object privacy {
     }
   }
   
-  @js.native
   trait Websites extends StObject {
     
     /** @since Chrome 65. */
-    var doNotTrackEnabled: ChromeSetting = js.native
+    var doNotTrackEnabled: ChromeSetting
     
-    var hyperlinkAuditingEnabled: ChromeSetting = js.native
+    var hyperlinkAuditingEnabled: ChromeSetting
     
     /** @since Chrome 21. Available on Windows and ChromeOS only. */
-    var protectedContentEnabled: ChromeSetting = js.native
+    var protectedContentEnabled: ChromeSetting
     
-    var referrersEnabled: ChromeSetting = js.native
+    var referrersEnabled: ChromeSetting
     
-    var thirdPartyCookiesAllowed: ChromeSetting = js.native
+    var thirdPartyCookiesAllowed: ChromeSetting
   }
   object Websites {
     

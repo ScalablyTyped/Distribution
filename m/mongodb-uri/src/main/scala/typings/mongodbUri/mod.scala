@@ -2,10 +2,13 @@ package typings.mongodbUri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mongodb-uri", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mongodb-uri", "MongodbUriParser")
   @js.native
@@ -45,30 +48,24 @@ object mod {
     def parse(uri: String): UriObject = js.native
   }
   
-  @JSImport("mongodb-uri", "format")
-  @js.native
-  def format(): String = js.native
-  @JSImport("mongodb-uri", "format")
-  @js.native
-  def format(uriObject: UriObject): String = js.native
+  @scala.inline
+  def format(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[String]
+  @scala.inline
+  def format(uriObject: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(uriObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mongodb-uri", "formatMongoose")
-  @js.native
-  def formatMongoose(uri: String): String = js.native
-  @JSImport("mongodb-uri", "formatMongoose")
-  @js.native
-  def formatMongoose(uri: UriObject): String = js.native
+  @scala.inline
+  def formatMongoose(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatMongoose(uri: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mongodb-uri", "parse")
-  @js.native
-  def parse(uri: String): UriObject = js.native
+  @scala.inline
+  def parse(uri: String): UriObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[UriObject]
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Host {
     
@@ -92,20 +89,19 @@ object mod {
     }
   }
   
-  @js.native
   trait UriObject extends StObject {
     
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
-    var hosts: js.Array[Host] = js.native
+    var hosts: js.Array[Host]
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object UriObject {
     
@@ -153,10 +149,9 @@ object mod {
     }
   }
   
-  @js.native
   trait parserOptions extends StObject {
     
-    var scheme: String = js.native
+    var scheme: String
   }
   object parserOptions {
     

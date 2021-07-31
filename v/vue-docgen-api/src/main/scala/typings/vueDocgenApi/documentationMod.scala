@@ -8,57 +8,114 @@ import typings.vueInbrowserCompilerUtils.typesMod.PropDescriptor
 import typings.vueInbrowserCompilerUtils.typesMod.SlotDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentationMod {
   
   @JSImport("vue-docgen-api/dist/Documentation", JSImport.Default)
   @js.native
-  class default protected () extends Documentation {
+  class default protected ()
+    extends StObject
+       with Documentation {
     def this(fullFilePath: String) = this()
-  }
-  
-  @js.native
-  trait Documentation extends StObject {
     
-    val componentFullfilePath: String = js.native
+    /* CompleteClass */
+    override val componentFullfilePath: String = js.native
     
+    /* CompleteClass */
     var dataMap: js.Any = js.native
     
+    /* CompleteClass */
     var docsBlocks: js.Any = js.native
     
+    /* CompleteClass */
     var eventsMap: js.Any = js.native
     
-    def get(key: String): js.Any = js.native
+    /* CompleteClass */
+    override def get(key: String): js.Any = js.native
     
+    /* CompleteClass */
     var getDescriptor: js.Any = js.native
     
-    def getEventDescriptor(eventName: String): EventDescriptor = js.native
+    /* CompleteClass */
+    override def getEventDescriptor(eventName: String): EventDescriptor = js.native
     
-    def getMethodDescriptor(methodName: String): MethodDescriptor = js.native
+    /* CompleteClass */
+    override def getMethodDescriptor(methodName: String): MethodDescriptor = js.native
     
+    /* CompleteClass */
     var getObjectFromDescriptor: js.Any = js.native
     
-    def getPropDescriptor(propName: String): PropDescriptor = js.native
+    /* CompleteClass */
+    override def getPropDescriptor(propName: String): PropDescriptor = js.native
     
-    def getSlotDescriptor(slotName: String): SlotDescriptor = js.native
+    /* CompleteClass */
+    override def getSlotDescriptor(slotName: String): SlotDescriptor = js.native
     
+    /* CompleteClass */
     var methodsMap: js.Any = js.native
     
+    /* CompleteClass */
     var originExtendsMixin: js.Any = js.native
     
+    /* CompleteClass */
     var propsMap: js.Any = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def set(key: String, value: js.Any): Unit = js.native
     
-    def setDocsBlocks(docsBlocks: js.Array[String]): Unit = js.native
+    /* CompleteClass */
+    override def setDocsBlocks(docsBlocks: js.Array[String]): Unit = js.native
     
-    def setOrigin(origin: Descriptor): Unit = js.native
+    /* CompleteClass */
+    override def setOrigin(origin: Descriptor): Unit = js.native
     
+    /* CompleteClass */
     var slotsMap: js.Any = js.native
     
-    def toObject(): ComponentDoc = js.native
+    /* CompleteClass */
+    override def toObject(): ComponentDoc = js.native
+  }
+  
+  trait Documentation extends StObject {
+    
+    val componentFullfilePath: String
+    
+    var dataMap: js.Any
+    
+    var docsBlocks: js.Any
+    
+    var eventsMap: js.Any
+    
+    def get(key: String): js.Any
+    
+    var getDescriptor: js.Any
+    
+    def getEventDescriptor(eventName: String): EventDescriptor
+    
+    def getMethodDescriptor(methodName: String): MethodDescriptor
+    
+    var getObjectFromDescriptor: js.Any
+    
+    def getPropDescriptor(propName: String): PropDescriptor
+    
+    def getSlotDescriptor(slotName: String): SlotDescriptor
+    
+    var methodsMap: js.Any
+    
+    var originExtendsMixin: js.Any
+    
+    var propsMap: js.Any
+    
+    def set(key: String, value: js.Any): Unit
+    
+    def setDocsBlocks(docsBlocks: js.Array[String]): Unit
+    
+    def setOrigin(origin: Descriptor): Unit
+    
+    var slotsMap: js.Any
+    
+    def toObject(): ComponentDoc
   }
   object Documentation {
     

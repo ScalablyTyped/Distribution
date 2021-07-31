@@ -3,21 +3,19 @@ package typings.antDesignProLayout.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var contentHeight: js.UndefOr[Double | String] = js.native
+  var contentHeight: js.UndefOr[Double | String] = js.undefined
   
-  var isChildrenLayout: js.UndefOr[Boolean] = js.native
+  var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   
-  var location: js.UndefOr[js.Any] = js.native
+  var location: js.UndefOr[js.Any] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object ClassName {
   

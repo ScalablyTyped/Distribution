@@ -3,29 +3,27 @@ package typings.typedGraphql.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLResolveInfo extends StObject {
   
-  var fieldASTs: js.Array[Field] = js.native
+  var fieldASTs: js.Array[Field]
   
-  var fieldName: String = js.native
+  var fieldName: String
   
-  var fragments: StringDictionary[FragmentDefinition] = js.native
+  var fragments: StringDictionary[FragmentDefinition]
   
-  var operation: OperationDefinition = js.native
+  var operation: OperationDefinition
   
-  var parentType: GraphQLCompositeType = js.native
+  var parentType: GraphQLCompositeType
   
-  var returnType: GraphQLOutputType = js.native
+  var returnType: GraphQLOutputType
   
-  var rootValue: js.Any = js.native
+  var rootValue: js.Any
   
-  var schema: GraphQLSchema = js.native
+  var schema: GraphQLSchema
   
-  var variableValues: StringDictionary[js.Any] = js.native
+  var variableValues: StringDictionary[js.Any]
 }
 object GraphQLResolveInfo {
   

@@ -2,22 +2,20 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectsQuery extends StObject {
   
   // search start from marker, including marker key
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   // search object using prefix key
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
   // delimiter search scope e.g. / only search current dir, not including subdir
-  var `max-keys`: String | Double = js.native
+  var `max-keys`: String | Double
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object ListObjectsQuery {
   

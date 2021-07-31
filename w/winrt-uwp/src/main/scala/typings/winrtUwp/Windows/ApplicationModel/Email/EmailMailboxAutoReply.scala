@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an auto-reply message set on a mailbox. */
-@js.native
 trait EmailMailboxAutoReply extends StObject {
   
   /** Gets or sets a Boolean value that indicates if the auto-reply message is enabled. */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   /** Gets or sets the auto-reply response text. */
-  var response: String = js.native
+  var response: String
 }
 object EmailMailboxAutoReply {
   

@@ -11,24 +11,24 @@ import typings.relayTestUtils.anon.HandlerProvider
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayModernMockEnvironmentMod {
   
-  @JSImport("relay-test-utils/lib/RelayModernMockEnvironment", "createMockEnvironment")
+  @JSImport("relay-test-utils/lib/RelayModernMockEnvironment", JSImport.Namespace)
   @js.native
-  def createMockEnvironment(): RelayMockEnvironment = js.native
-  @JSImport("relay-test-utils/lib/RelayModernMockEnvironment", "createMockEnvironment")
-  @js.native
-  def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
+  @scala.inline
+  def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
+  
   trait MockEnvironment extends StObject {
     
-    var mock: MockFunctions = js.native
+    var mock: MockFunctions
     
-    def mockClear(): Unit = js.native
+    def mockClear(): Unit
   }
   object MockEnvironment {
     
@@ -95,7 +95,8 @@ object relayModernMockEnvironmentMod {
   
   @js.native
   trait RelayMockEnvironment
-    extends MockEnvironment
+    extends StObject
+       with MockEnvironment
        with Environment {
     
     var configName: js.UndefOr[String | Null] = js.native

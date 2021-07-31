@@ -2,7 +2,6 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,53 +11,77 @@ sealed trait NotificationReasonType extends StObject
 object NotificationReasonType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotificationReasonType with Double] = js.native
+  def apply(value: Double): js.UndefOr[NotificationReasonType & Double] = js.native
   
   @js.native
-  sealed trait AliasMemberGroupRole extends NotificationReasonType
-  /* 11 */ val AliasMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.AliasMemberGroupRole with Double = js.native
+  sealed trait AliasMemberGroupRole
+    extends StObject
+       with NotificationReasonType
+  /* 11 */ val AliasMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.AliasMemberGroupRole & Double = js.native
   
   @js.native
-  sealed trait DirectMember extends NotificationReasonType
-  /* 4 */ val DirectMember: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.DirectMember with Double = js.native
+  sealed trait DirectMember
+    extends StObject
+       with NotificationReasonType
+  /* 4 */ val DirectMember: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.DirectMember & Double = js.native
   
   @js.native
-  sealed trait DirectMemberGroupRole extends NotificationReasonType
-  /* 9 */ val DirectMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.DirectMemberGroupRole with Double = js.native
+  sealed trait DirectMemberGroupRole
+    extends StObject
+       with NotificationReasonType
+  /* 9 */ val DirectMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.DirectMemberGroupRole & Double = js.native
   
   @js.native
-  sealed trait Follows extends NotificationReasonType
-  /* 1 */ val Follows: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Follows with Double = js.native
+  sealed trait Follows
+    extends StObject
+       with NotificationReasonType
+  /* 1 */ val Follows: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Follows & Double = js.native
   
   @js.native
-  sealed trait GroupAlias extends NotificationReasonType
-  /* 6 */ val GroupAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.GroupAlias with Double = js.native
+  sealed trait GroupAlias
+    extends StObject
+       with NotificationReasonType
+  /* 6 */ val GroupAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.GroupAlias & Double = js.native
   
   @js.native
-  sealed trait InDirectMemberGroupRole extends NotificationReasonType
-  /* 10 */ val InDirectMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.InDirectMemberGroupRole with Double = js.native
+  sealed trait InDirectMemberGroupRole
+    extends StObject
+       with NotificationReasonType
+  /* 10 */ val InDirectMemberGroupRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.InDirectMemberGroupRole & Double = js.native
   
   @js.native
-  sealed trait IndirectMember extends NotificationReasonType
-  /* 5 */ val IndirectMember: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.IndirectMember with Double = js.native
+  sealed trait IndirectMember
+    extends StObject
+       with NotificationReasonType
+  /* 5 */ val IndirectMember: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.IndirectMember & Double = js.native
   
   @js.native
-  sealed trait Personal extends NotificationReasonType
-  /* 2 */ val Personal: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Personal with Double = js.native
+  sealed trait Personal
+    extends StObject
+       with NotificationReasonType
+  /* 2 */ val Personal: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Personal & Double = js.native
   
   @js.native
-  sealed trait PersonalAlias extends NotificationReasonType
-  /* 3 */ val PersonalAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.PersonalAlias with Double = js.native
+  sealed trait PersonalAlias
+    extends StObject
+       with NotificationReasonType
+  /* 3 */ val PersonalAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.PersonalAlias & Double = js.native
   
   @js.native
-  sealed trait SingleRole extends NotificationReasonType
-  /* 8 */ val SingleRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.SingleRole with Double = js.native
+  sealed trait SingleRole
+    extends StObject
+       with NotificationReasonType
+  /* 8 */ val SingleRole: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.SingleRole & Double = js.native
   
   @js.native
-  sealed trait SubscriptionAlias extends NotificationReasonType
-  /* 7 */ val SubscriptionAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.SubscriptionAlias with Double = js.native
+  sealed trait SubscriptionAlias
+    extends StObject
+       with NotificationReasonType
+  /* 7 */ val SubscriptionAlias: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.SubscriptionAlias & Double = js.native
   
   @js.native
-  sealed trait Unknown extends NotificationReasonType
-  /* 0 */ val Unknown: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Unknown with Double = js.native
+  sealed trait Unknown
+    extends StObject
+       with NotificationReasonType
+  /* 0 */ val Unknown: typings.vsoNodeApi.notificationInterfacesMod.NotificationReasonType.Unknown & Double = js.native
 }

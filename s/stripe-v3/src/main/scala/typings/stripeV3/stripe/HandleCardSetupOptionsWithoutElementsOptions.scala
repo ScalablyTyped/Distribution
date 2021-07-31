@@ -2,18 +2,18 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HandleCardSetupOptionsWithoutElementsOptions extends HandleCardPaymentOptions {
+trait HandleCardSetupOptionsWithoutElementsOptions
+  extends StObject
+     with HandleCardPaymentOptions {
   
   /**
     * Only one of payment_method_data and payment_method is required.
     * Use payment_method to specify an existing PaymentMethod to use
     * for this payment.
     */
-  var payment_method: js.UndefOr[String] = js.native
+  var payment_method: js.UndefOr[String] = js.undefined
 }
 object HandleCardSetupOptionsWithoutElementsOptions {
   

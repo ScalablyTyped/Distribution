@@ -2,36 +2,34 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
   /**
     * The port on which the instance is listening.
     */
-  var InstancePort: typings.awsSdk.elbMod.InstancePort = js.native
+  var InstancePort: typings.awsSdk.elbMod.InstancePort
   
   /**
     * The protocol to use for routing traffic to instances: HTTP, HTTPS, TCP, or SSL. If the front-end protocol is TCP or SSL, the back-end protocol must be TCP or SSL. If the front-end protocol is HTTP or HTTPS, the back-end protocol must be HTTP or HTTPS. If there is another listener with the same InstancePort whose InstanceProtocol is secure, (HTTPS or SSL), the listener's InstanceProtocol must also be secure. If there is another listener with the same InstancePort whose InstanceProtocol is HTTP or TCP, the listener's InstanceProtocol must be HTTP or TCP.
     */
-  var InstanceProtocol: js.UndefOr[Protocol] = js.native
+  var InstanceProtocol: js.UndefOr[Protocol] = js.undefined
   
   /**
     * The port on which the load balancer is listening. On EC2-VPC, you can specify any port from the range 1-65535. On EC2-Classic, you can specify any port from the following list: 25, 80, 443, 465, 587, 1024-65535.
     */
-  var LoadBalancerPort: AccessPointPort = js.native
+  var LoadBalancerPort: AccessPointPort
   
   /**
     * The load balancer transport protocol to use for routing: HTTP, HTTPS, TCP, or SSL.
     */
-  var Protocol: typings.awsSdk.elbMod.Protocol = js.native
+  var Protocol: typings.awsSdk.elbMod.Protocol
   
   /**
     * The Amazon Resource Name (ARN) of the server certificate.
     */
-  var SSLCertificateId: js.UndefOr[typings.awsSdk.elbMod.SSLCertificateId] = js.native
+  var SSLCertificateId: js.UndefOr[typings.awsSdk.elbMod.SSLCertificateId] = js.undefined
 }
 object Listener {
   

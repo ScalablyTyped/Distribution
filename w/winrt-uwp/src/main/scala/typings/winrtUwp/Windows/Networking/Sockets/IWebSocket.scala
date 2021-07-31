@@ -6,12 +6,13 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to network communication that allows reading and writing using a WebSocket. */
 @js.native
-trait IWebSocket extends IClosable {
+trait IWebSocket
+  extends StObject
+     with IClosable {
   
   /**
     * Closes the IWebSocket .

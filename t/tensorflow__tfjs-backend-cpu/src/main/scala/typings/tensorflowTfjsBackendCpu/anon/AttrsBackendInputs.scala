@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.CastAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.CastInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsBackendInputs extends StObject {
   
-  var attrs: CastAttrs = js.native
+  var attrs: CastAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: CastInputs = js.native
+  var inputs: CastInputs
 }
 object AttrsBackendInputs {
   

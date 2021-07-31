@@ -3,53 +3,51 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiViewCalendarOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var dates: js.UndefOr[js.Any] = js.native
+  var dates: js.UndefOr[js.Any] = js.undefined
   
-  var depth: js.UndefOr[String] = js.native
+  var depth: js.UndefOr[String] = js.undefined
   
-  var disableDates: js.UndefOr[js.Any | js.Function] = js.native
+  var disableDates: js.UndefOr[js.Any | js.Function] = js.undefined
   
-  var footer: js.UndefOr[String | js.Function] = js.native
+  var footer: js.UndefOr[String | js.Function] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Date] = js.native
+  var max: js.UndefOr[Date] = js.undefined
   
-  var messages: js.UndefOr[MultiViewCalendarMessages] = js.native
+  var messages: js.UndefOr[MultiViewCalendarMessages] = js.undefined
   
-  var min: js.UndefOr[Date] = js.native
+  var min: js.UndefOr[Date] = js.undefined
   
-  var month: js.UndefOr[MultiViewCalendarMonth] = js.native
+  var month: js.UndefOr[MultiViewCalendarMonth] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.undefined
   
-  var range: js.UndefOr[MultiViewCalendarRange] = js.native
+  var range: js.UndefOr[MultiViewCalendarRange] = js.undefined
   
-  var selectDates: js.UndefOr[js.Any] = js.native
+  var selectDates: js.UndefOr[js.Any] = js.undefined
   
-  var selectable: js.UndefOr[String] = js.native
+  var selectable: js.UndefOr[String] = js.undefined
   
-  var showViewHeader: js.UndefOr[Boolean] = js.native
+  var showViewHeader: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Date] = js.native
+  var value: js.UndefOr[Date] = js.undefined
   
-  var views: js.UndefOr[Double] = js.native
+  var views: js.UndefOr[Double] = js.undefined
   
-  var weekNumber: js.UndefOr[Boolean] = js.native
+  var weekNumber: js.UndefOr[Boolean] = js.undefined
 }
 object MultiViewCalendarOptions {
   

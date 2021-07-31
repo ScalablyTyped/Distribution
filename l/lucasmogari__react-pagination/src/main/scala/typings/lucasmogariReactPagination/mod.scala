@@ -4,10 +4,13 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@lucasmogari/react-pagination", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait PageVariant extends StObject
@@ -16,37 +19,41 @@ object mod {
   object PageVariant extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PageVariant with String] = js.native
+    def apply(value: String): js.UndefOr[PageVariant & String] = js.native
     
     @js.native
-    sealed trait before extends PageVariant
-    /* "before" */ val before: typings.lucasmogariReactPagination.mod.PageVariant.before with String = js.native
+    sealed trait before
+      extends StObject
+         with PageVariant
+    /* "before" */ val before: typings.lucasmogariReactPagination.mod.PageVariant.before & String = js.native
     
     @js.native
-    sealed trait gap extends PageVariant
-    /* "gap" */ val gap: typings.lucasmogariReactPagination.mod.PageVariant.gap with String = js.native
+    sealed trait gap
+      extends StObject
+         with PageVariant
+    /* "gap" */ val gap: typings.lucasmogariReactPagination.mod.PageVariant.gap & String = js.native
     
     @js.native
-    sealed trait next extends PageVariant
-    /* "next" */ val next: typings.lucasmogariReactPagination.mod.PageVariant.next with String = js.native
+    sealed trait next
+      extends StObject
+         with PageVariant
+    /* "next" */ val next: typings.lucasmogariReactPagination.mod.PageVariant.next & String = js.native
   }
   
-  @JSImport("@lucasmogari/react-pagination", "useNavigation")
-  @js.native
-  def useNavigation(parameters: UseNavigationParameters): UseNavigationPayload = js.native
+  @scala.inline
+  def useNavigation(parameters: UseNavigationParameters): UseNavigationPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")(parameters.asInstanceOf[js.Any]).asInstanceOf[UseNavigationPayload]
   
   type Page = PageVariant | Double
   
-  @js.native
   trait PageItem extends StObject {
     
-    var current: js.UndefOr[Boolean] = js.native
+    var current: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var page: PageVariant | Double = js.native
+    var page: PageVariant | Double
     
-    var props: PageItemProps = js.native
+    var props: PageItemProps
   }
   object PageItem {
     
@@ -79,14 +86,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PageItemProps extends StObject {
     
-    var `aria-current`: js.UndefOr[Boolean] = js.native
+    var `aria-current`: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    def onClick(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit = js.native
+    def onClick(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit
   }
   object PageItemProps {
     
@@ -116,22 +122,21 @@ object mod {
     }
   }
   
-  @js.native
   trait UseNavigationParameters extends StObject {
     
-    var arrows: js.UndefOr[Boolean] = js.native
+    var arrows: js.UndefOr[Boolean] = js.undefined
     
-    def getPageItemProps(parameters: js.Any*): Unit = js.native
+    def getPageItemProps(parameters: js.Any*): Unit
     
-    var itemsPerPage: Double = js.native
+    var itemsPerPage: Double
     
-    var maxPageItems: js.UndefOr[Double] = js.native
+    var maxPageItems: js.UndefOr[Double] = js.undefined
     
-    var numbers: js.UndefOr[Boolean] = js.native
+    var numbers: js.UndefOr[Boolean] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var totalItems: Double = js.native
+    var totalItems: Double
   }
   object UseNavigationParameters {
     
@@ -179,40 +184,39 @@ object mod {
     }
   }
   
-  @js.native
   trait UseNavigationPayload extends StObject {
     
-    var arrows: Boolean = js.native
+    var arrows: Boolean
     
-    var fromItem: Double = js.native
+    var fromItem: Double
     
-    def getPageItem(pageIndex: Double): PageItem = js.native
+    def getPageItem(pageIndex: Double): PageItem
     
-    def goTo(page: Page): Unit = js.native
+    def goTo(page: Page): Unit
     
-    var itemsPerPage: Double = js.native
+    var itemsPerPage: Double
     
-    var maxPageItems: Double = js.native
+    var maxPageItems: Double
     
-    def next(): Unit = js.native
+    def next(): Unit
     
-    var numbers: Boolean = js.native
+    var numbers: Boolean
     
-    var page: Double = js.native
+    var page: Double
     
-    def previous(): Unit = js.native
+    def previous(): Unit
     
-    def setMaxPageItems(maxPageItems: Double): Unit = js.native
+    def setMaxPageItems(maxPageItems: Double): Unit
     
-    def setTotalItems(totalItem: Double): Unit = js.native
+    def setTotalItems(totalItem: Double): Unit
     
-    var size: Double = js.native
+    var size: Double
     
-    var toItem: Double = js.native
+    var toItem: Double
     
-    var totalItems: Double = js.native
+    var totalItems: Double
     
-    var totalPages: Double = js.native
+    var totalPages: Double
   }
   object UseNavigationPayload {
     

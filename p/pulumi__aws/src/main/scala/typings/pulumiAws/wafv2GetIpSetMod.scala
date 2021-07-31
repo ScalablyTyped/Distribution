@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafv2GetIpSetMod {
   
-  @JSImport("@pulumi/aws/wafv2/getIpSet", "getIpSet")
+  @JSImport("@pulumi/aws/wafv2/getIpSet", JSImport.Namespace)
   @js.native
-  def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = js.native
-  @JSImport("@pulumi/aws/wafv2/getIpSet", "getIpSet")
-  @js.native
-  def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpSetResult]]
+  @scala.inline
+  def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpSetResult]]
+  
   trait GetIpSetArgs extends StObject {
     
     /**
       * The name of the WAFv2 IP Set.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: String = js.native
+    val scope: String
   }
   object GetIpSetArgs {
     
@@ -47,37 +47,36 @@ object wafv2GetIpSetMod {
     }
   }
   
-  @js.native
   trait GetIpSetResult extends StObject {
     
     /**
       * An array of strings that specify one or more IP addresses or blocks of IP addresses in Classless Inter-Domain Routing (CIDR) notation.
       */
-    val addresses: js.Array[String] = js.native
+    val addresses: js.Array[String]
     
     /**
       * The Amazon Resource Name (ARN) of the entity.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The description of the set that helps with identification.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The IP address version of the set.
       */
-    val ipAddressVersion: String = js.native
+    val ipAddressVersion: String
     
-    val name: String = js.native
+    val name: String
     
-    val scope: String = js.native
+    val scope: String
   }
   object GetIpSetResult {
     

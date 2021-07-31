@@ -10,9 +10,9 @@ Open stuff like URLs, files, executables. Cross-platform.
 | ------------------ | :-------------: |
 | Full name          | open |
 | Keywords           | app, open, opener, opens, launch, start, xdg-open, xdg, default, cmd, browser, editor, executable, exe, url, urls, arguments, args, spawn, exec, child, process, website, file |
-| # releases         | 15 |
-| # dependents       | 3574 |
-| # downloads        | 353006892 |
+| # releases         | 17 |
+| # dependents       | 3941 |
+| # downloads        | 424697300 |
 | # stars            | 83 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntryCancel extends StObject {
   
   /**
     * The reason for the cancellation.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryCancel {
   

@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseClientGapEnforcerMatrixItem extends StObject {
   
-  var list: js.Array[Double] = js.native
+  var list: js.Array[Double]
 }
 object TimelineFeedResponseClientGapEnforcerMatrixItem {
   

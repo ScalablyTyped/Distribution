@@ -2,30 +2,28 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mobile app List Response
   */
-@js.native
 trait SchemaMobileAppsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#mobileAppsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile apps collection.
     */
-  var mobileApps: js.UndefOr[js.Array[SchemaMobileApp]] = js.native
+  var mobileApps: js.UndefOr[js.Array[SchemaMobileApp]] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaMobileAppsListResponse {
   

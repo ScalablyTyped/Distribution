@@ -6,24 +6,25 @@ import typings.std.EventListener
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollListenerMod {
   
-  @JSImport("@react-md/utils/types/events/ScrollListener", "ScrollListener")
+  @JSImport("@react-md/utils/types/events/ScrollListener", JSImport.Namespace)
   @js.native
-  def ScrollListener(props: ScrollListenerProps): Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ScrollListener(props: ScrollListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollListener")(props.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/events/useScrollListener.Options<std.HTMLElement>, 'enabled'> */
-  @js.native
   trait ScrollListenerProps extends StObject {
     
-    var element: js.UndefOr[HTMLElement | Null] = js.native
+    var element: js.UndefOr[HTMLElement | Null] = js.undefined
     
-    var onScroll: EventListener = js.native
+    var onScroll: EventListener
     
-    var options: js.UndefOr[AddEventListenerOptions | Boolean] = js.native
+    var options: js.UndefOr[AddEventListenerOptions | Boolean] = js.undefined
   }
   object ScrollListenerProps {
     

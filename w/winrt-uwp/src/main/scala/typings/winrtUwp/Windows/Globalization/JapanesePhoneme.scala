@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a single Japanese word (a "reading") that has been extracted from a Japanese string by JapanesePhoneticAnalyzer . */
-@js.native
 trait JapanesePhoneme extends StObject {
   
   /** Gets the text to display for this Japanese word. */
-  var displayText: String = js.native
+  var displayText: String
   
   /** Gets a Boolean that indicates if this Japanese word is the start of a phrase. */
-  var isPhraseStart: Boolean = js.native
+  var isPhraseStart: Boolean
   
   /** Gets the "reading" (the pronunciation of DisplayText ) for this Japanese word. */
-  var yomiText: String = js.native
+  var yomiText: String
 }
 object JapanesePhoneme {
   

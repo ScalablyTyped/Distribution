@@ -7,7 +7,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
@@ -19,15 +18,17 @@ object collapseMod {
   object AnimationStates extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AnimationStates with Double] = js.native
+    def apply(value: Double): js.UndefOr[AnimationStates & Double] = js.native
     
     /**
       * The contents of the collapse is not rendered, the collapse height is 0,
       * and the body Y is at -height (so that the bottom of the body is at Y=0).
       */
     @js.native
-    sealed trait CLOSED extends AnimationStates
-    /* 5 */ val CLOSED: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSED with Double = js.native
+    sealed trait CLOSED
+      extends StObject
+         with AnimationStates
+    /* 5 */ val CLOSED: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSED & Double = js.native
     
     /**
       * Height is set to 0 and the body Y is at -height. Both of these properties
@@ -35,40 +36,50 @@ object collapseMod {
       * changes to CLOSED.
       */
     @js.native
-    sealed trait CLOSING extends AnimationStates
-    /* 4 */ val CLOSING: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSING with Double = js.native
+    sealed trait CLOSING
+      extends StObject
+         with AnimationStates
+    /* 4 */ val CLOSING: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSING & Double = js.native
     
     /**
       * Height has been changed from auto to the measured height of the body to
       * prepare for the closing animation in CLOSING.
       */
     @js.native
-    sealed trait CLOSING_START extends AnimationStates
-    /* 3 */ val CLOSING_START: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSING_START with Double = js.native
+    sealed trait CLOSING_START
+      extends StObject
+         with AnimationStates
+    /* 3 */ val CLOSING_START: typings.blueprintjsCore.collapseMod.AnimationStates.CLOSING_START & Double = js.native
     
     /**
       * The collapse height is set to auto, and the body Y is set to 0 (so the
       * element can be seen as normal).
       */
     @js.native
-    sealed trait OPEN extends AnimationStates
-    /* 2 */ val OPEN: typings.blueprintjsCore.collapseMod.AnimationStates.OPEN with Double = js.native
+    sealed trait OPEN
+      extends StObject
+         with AnimationStates
+    /* 2 */ val OPEN: typings.blueprintjsCore.collapseMod.AnimationStates.OPEN & Double = js.native
     
     /**
       * Animation begins, height is set to auto. This is all animated, and on
       * complete, the state changes to OPEN.
       */
     @js.native
-    sealed trait OPENING extends AnimationStates
-    /* 1 */ val OPENING: typings.blueprintjsCore.collapseMod.AnimationStates.OPENING with Double = js.native
+    sealed trait OPENING
+      extends StObject
+         with AnimationStates
+    /* 1 */ val OPENING: typings.blueprintjsCore.collapseMod.AnimationStates.OPENING & Double = js.native
     
     /**
       * The body is re-rendered, height is set to the measured body height and
       * the body Y is set to 0.
       */
     @js.native
-    sealed trait OPEN_START extends AnimationStates
-    /* 0 */ val OPEN_START: typings.blueprintjsCore.collapseMod.AnimationStates.OPEN_START with Double = js.native
+    sealed trait OPEN_START
+      extends StObject
+         with AnimationStates
+    /* 0 */ val OPEN_START: typings.blueprintjsCore.collapseMod.AnimationStates.OPEN_START & Double = js.native
   }
   
   @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse")
@@ -109,33 +120,33 @@ object collapseMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationState | Height | Null]
   }
   
-  @js.native
-  trait ICollapseProps extends IProps {
+  trait ICollapseProps
+    extends StObject
+       with IProps {
     
     /**
       * Component to render as the root element.
       * Useful when rendering a `Collapse` inside a `<table>`, for instance.
       * @default "div"
       */
-    var component: js.UndefOr[ElementType[_]] = js.native
+    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     /**
       * Whether the component is open or closed.
       * @default false
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the child components will remain mounted when the `Collapse` is closed.
       * Setting to true may improve performance by avoiding re-mounting children.
       * @default false
       */
-    var keepChildrenMounted: js.UndefOr[Boolean] = js.native
+    var keepChildrenMounted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The length of time the transition takes, in milliseconds. This must match
@@ -144,7 +155,7 @@ object collapseMod {
       * length.
       * @default 200
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object ICollapseProps {
     
@@ -158,7 +169,7 @@ object collapseMod {
     implicit class ICollapsePropsMutableBuilder[Self <: ICollapseProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -183,19 +194,18 @@ object collapseMod {
     }
   }
   
-  @js.native
   trait ICollapseState extends StObject {
     
     /** The state the element is currently in. */
-    var animationState: AnimationStates = js.native
+    var animationState: AnimationStates
     
     /** The height that should be used for the content animations. This is a CSS value, not just a number. */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * The most recent non-zero height (once a height has been measured upon first open; it is undefined until then)
       */
-    var heightWhenOpen: js.UndefOr[Double] = js.native
+    var heightWhenOpen: js.UndefOr[Double] = js.undefined
   }
   object ICollapseState {
     

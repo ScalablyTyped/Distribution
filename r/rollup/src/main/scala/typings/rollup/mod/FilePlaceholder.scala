@@ -3,20 +3,18 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePlaceholder extends StObject {
   
-  var `type`: placeholder = js.native
+  var `type`: placeholder
 }
 object FilePlaceholder {
   
   @scala.inline
-  def apply(`type`: placeholder): FilePlaceholder = {
+  def apply(): FilePlaceholder = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("placeholder")
     __obj.asInstanceOf[FilePlaceholder]
   }
   

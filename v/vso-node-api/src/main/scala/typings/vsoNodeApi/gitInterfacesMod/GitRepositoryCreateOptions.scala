@@ -3,17 +3,15 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRepositoryCreateOptions extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var parentRepository: GitRepositoryRef = js.native
+  var parentRepository: GitRepositoryRef
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
 }
 object GitRepositoryCreateOptions {
   

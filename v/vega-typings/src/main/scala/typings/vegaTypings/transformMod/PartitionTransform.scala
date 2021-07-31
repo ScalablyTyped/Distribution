@@ -7,32 +7,32 @@ import typings.vegaTypings.utilMod.Vector6
 import typings.vegaTypings.vegaTypingsStrings.partition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PartitionTransform extends _Transforms {
+trait PartitionTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var round: js.UndefOr[Boolean | SignalRef] = js.native
+  var round: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: partition = js.native
+  var `type`: partition
 }
 object PartitionTransform {
   
   @scala.inline
-  def apply(`type`: partition): PartitionTransform = {
+  def apply(): PartitionTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("partition")
     __obj.asInstanceOf[PartitionTransform]
   }
   

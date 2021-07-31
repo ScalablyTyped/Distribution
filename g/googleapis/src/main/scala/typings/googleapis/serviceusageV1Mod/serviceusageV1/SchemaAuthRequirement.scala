@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Token
   * (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32).
   */
-@js.native
 trait SchemaAuthRequirement extends StObject {
   
   /**
@@ -26,13 +24,13 @@ trait SchemaAuthRequirement extends StObject {
     * Example:      audiences: bookstore_android.apps.googleusercontent.com,
     * bookstore_web.apps.googleusercontent.com
     */
-  var audiences: js.UndefOr[String] = js.native
+  var audiences: js.UndefOr[String] = js.undefined
   
   /**
     * id from authentication provider.  Example:      provider_id:
     * bookstore_auth
     */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthRequirement {
   

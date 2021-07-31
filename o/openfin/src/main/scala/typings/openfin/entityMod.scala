@@ -3,17 +3,15 @@ package typings.openfin
 import typings.openfin.identityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityMod {
   
-  @js.native
   trait Entity extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object Entity {
     
@@ -35,16 +33,15 @@ object entityMod {
     }
   }
   
-  @js.native
   trait EntityInfo extends StObject {
     
-    var entityType: String = js.native
+    var entityType: String
     
-    var name: String = js.native
+    var name: String
     
-    var parent: Identity = js.native
+    var parent: Identity
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object EntityInfo {
     

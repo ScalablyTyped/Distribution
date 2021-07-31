@@ -4,15 +4,13 @@ import typings.dropboxChooser.dropboxChooserStrings.direct
 import typings.dropboxChooser.dropboxChooserStrings.preview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dropbox {
   
-  @js.native
   trait Chooser extends StObject {
     
-    def choose(options: ChooserOptions): Unit = js.native
+    def choose(options: ChooserOptions): Unit
   }
   object Chooser {
     
@@ -30,31 +28,30 @@ object Dropbox {
     }
   }
   
-  @js.native
   trait ChooserFile extends StObject {
     
     // Size of the file in bytes.
-    var bytes: Double = js.native
+    var bytes: Double
     
     // URL to a 64x64px icon for the file based on the file's extension.
-    var icon: String = js.native
+    var icon: String
     
     // Unique ID for the file, compatible with Dropbox API v2.
-    var id: String = js.native
+    var id: String
     
     // whether or not the file is actually a directory
-    var isDir: Boolean = js.native
+    var isDir: Boolean
     
     // URL to access the file, which varies depending on the linkType specified when the
     // Chooser was triggered.
-    var link: String = js.native
+    var link: String
     
     // Name of the file.
-    var name: String = js.native
+    var name: String
     
     // A thumbnail URL generated when the user selects images and videos.
     // If the user didn't select an image or video, no thumbnail will be included.
-    var thumbnailLink: js.UndefOr[String] = js.native
+    var thumbnailLink: js.UndefOr[String] = js.undefined
   }
   object ChooserFile {
     
@@ -138,29 +135,28 @@ object Dropbox {
     def fit_one_and_overflow: typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow]
   }
   
-  @js.native
   trait ChooserOptions extends StObject {
     
     // called when the user closes the dialog without selecting a file
-    var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // eg. '.png'
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     // default: false
-    var folderselect: js.UndefOr[Boolean] = js.native
+    var folderselect: js.UndefOr[Boolean] = js.undefined
     
     // default: 'preview'
-    var linkType: js.UndefOr[preview | direct] = js.native
+    var linkType: js.UndefOr[preview | direct] = js.undefined
     
     // default: false
-    var multiselect: js.UndefOr[Boolean] = js.native
+    var multiselect: js.UndefOr[Boolean] = js.undefined
     
     // any positive number
-    var sizeLimit: js.UndefOr[Double] = js.native
+    var sizeLimit: js.UndefOr[Double] = js.undefined
     
     // called when a user selects an item in the Chooser
-    def success(files: js.Array[ChooserFile]): Unit = js.native
+    def success(files: js.Array[ChooserFile]): Unit
   }
   object ChooserOptions {
     

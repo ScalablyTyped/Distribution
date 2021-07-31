@@ -2,57 +2,55 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateParameterType extends StObject {
   
   /**
     * Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.
     */
-  var awaitPromise: js.UndefOr[Boolean] = js.native
+  var awaitPromise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies in which execution context to perform evaluation. If the parameter is omitted the evaluation will be performed in the context of the inspected page.
     */
-  var contextId: js.UndefOr[ExecutionContextId] = js.native
+  var contextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Expression to evaluate.
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Whether preview should be generated for the result.
     * @experimental
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether Command Line API should be available during the evaluation.
     */
-  var includeCommandLineAPI: js.UndefOr[Boolean] = js.native
+  var includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause execution. Overrides <code>setPauseOnException</code> state.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether execution should be treated as initiated by user in the UI.
     */
-  var userGesture: js.UndefOr[Boolean] = js.native
+  var userGesture: js.UndefOr[Boolean] = js.undefined
 }
 object EvaluateParameterType {
   

@@ -2,23 +2,21 @@ package typings.mapsjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait styleObj extends StObject {
   
-  var dashArray: js.UndefOr[String] = js.native
+  var dashArray: js.UndefOr[String] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var outlineColor: js.UndefOr[String] = js.native
+  var outlineColor: js.UndefOr[String] = js.undefined
   
-  var outlineOpacity: js.UndefOr[Double] = js.native
+  var outlineOpacity: js.UndefOr[Double] = js.undefined
   
-  var outlineThicknessPix: js.UndefOr[Double] = js.native
+  var outlineThicknessPix: js.UndefOr[Double] = js.undefined
 }
 object styleObj {
   

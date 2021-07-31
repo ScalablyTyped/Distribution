@@ -2,7 +2,6 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,35 +11,57 @@ sealed trait DashboardObjectType extends StObject
 object DashboardObjectType extends StObject {
   
   @js.native
-  sealed trait ADDIN extends DashboardObjectType
+  sealed trait ADDIN
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait BLANK extends DashboardObjectType
+  sealed trait BLANK
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait IMAGE extends DashboardObjectType
+  sealed trait IMAGE
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait LEGEND extends DashboardObjectType
+  sealed trait LEGEND
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait PAGE_FILTER extends DashboardObjectType
+  sealed trait PAGE_FILTER
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait PARAMETER_CONTROL extends DashboardObjectType
+  sealed trait PARAMETER_CONTROL
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait QUICK_FILTER extends DashboardObjectType
+  sealed trait QUICK_FILTER
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait TEXT extends DashboardObjectType
+  sealed trait TEXT
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait TITLE extends DashboardObjectType
+  sealed trait TITLE
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait WEB_PAGE extends DashboardObjectType
+  sealed trait WEB_PAGE
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait WORKSHEET extends DashboardObjectType
+  sealed trait WORKSHEET
+    extends StObject
+       with DashboardObjectType
 }

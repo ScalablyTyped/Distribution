@@ -2,17 +2,15 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeParams extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var redirectUri: String = js.native
+  var redirectUri: String
   
-  var verifier: String = js.native
+  var verifier: String
 }
 object ExchangeParams {
   

@@ -47,7 +47,6 @@ import typings.awsSdkClientCognitoIdentity.updateIdentityPoolCommandMod.UpdateId
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoIdentityMod {

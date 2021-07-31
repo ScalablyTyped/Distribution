@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The ARN of the EventBridge resource for which you want to view tags.
     */
-  var ResourceARN: Arn = js.native
+  var ResourceARN: Arn
 }
 object ListTagsForResourceRequest {
   

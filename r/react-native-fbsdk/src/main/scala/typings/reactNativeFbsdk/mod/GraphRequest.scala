@@ -2,7 +2,6 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "GraphRequest")
@@ -13,8 +12,8 @@ class GraphRequest protected () extends StObject {
     */
   def this(graphPath: String) = this()
   def this(graphPath: String, config: GraphRequestConfig) = this()
-  def this(graphPath: String, config: js.UndefOr[scala.Nothing], callback: GraphRequestCallback) = this()
   def this(graphPath: String, config: Null, callback: GraphRequestCallback) = this()
+  def this(graphPath: String, config: Unit, callback: GraphRequestCallback) = this()
   def this(graphPath: String, config: GraphRequestConfig, callback: GraphRequestCallback) = this()
   
   /**

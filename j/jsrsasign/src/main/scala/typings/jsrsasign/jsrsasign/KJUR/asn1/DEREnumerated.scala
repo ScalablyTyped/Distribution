@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,20 +20,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * new KJUR.asn1.DEREnumerated({int: 123});
   * new KJUR.asn1.DEREnumerated({hex: '1fad'});
   */
-@js.native
-trait DEREnumerated extends ASN1Object {
+trait DEREnumerated
+  extends StObject
+     with ASN1Object {
   
   /**
     * set value by Tom Wu's BigInteger object
     * @param bigIntegerValue value to set
     */
-  def setByBigInteger(bigIntegerValue: BigInteger): Unit = js.native
+  def setByBigInteger(bigIntegerValue: BigInteger): Unit
   
   /**
     * set value by integer value
     * @param intValue integer value to set
     */
-  def setByInteger(intValue: Double): Unit = js.native
+  def setByInteger(intValue: Double): Unit
   
   /**
     * set value by integer value
@@ -43,7 +43,7 @@ trait DEREnumerated extends ASN1Object {
     * NOTE: Value shall be represented by minimum octet length of
     * two's complement representation.
     */
-  def setValueHex(newHexString: String): Unit = js.native
+  def setValueHex(newHexString: String): Unit
 }
 object DEREnumerated {
   

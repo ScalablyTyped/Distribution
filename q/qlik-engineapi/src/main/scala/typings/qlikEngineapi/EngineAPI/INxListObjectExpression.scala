@@ -2,25 +2,23 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxListObjectExpression...
   */
-@js.native
 trait INxListObjectExpression extends StObject {
   
   /**
     * Gives information on the error.
     * >> This parameter is optional.
     */
-  var qError: js.UndefOr[INxLayoutErrors] = js.native
+  var qError: js.UndefOr[INxLayoutErrors] = js.undefined
   
   /**
     * Value of the expression.
     */
-  var qExpr: String = js.native
+  var qExpr: String
 }
 object INxListObjectExpression {
   

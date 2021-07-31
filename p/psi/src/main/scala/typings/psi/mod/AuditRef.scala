@@ -2,17 +2,15 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditRef extends StObject {
   
-  var group: String = js.native
+  var group: String
   
-  var id: String = js.native
+  var id: String
   
-  var weight: Double = js.native
+  var weight: Double
 }
 object AuditRef {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1", "dns_v1.Resource$Resourcerecordsets")
@@ -104,7 +103,7 @@ class ResourceResourcerecordsets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaResourceRecordSetsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(params: ParamsResourceResourcerecordsetsList): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(
     params: ParamsResourceResourcerecordsetsList,

@@ -6,12 +6,12 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWebElement
-  extends Instantiable2[/* driver */ WebDriver, /* id */ js.Promise[String], WebElement] {
+  extends StObject
+     with Instantiable2[/* driver */ WebDriver, /* id */ js.Promise[String], WebElement] {
   
   /**
     * @param {string} id The raw ID.

@@ -2,15 +2,18 @@ package typings.reapop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
+  @JSImport("reapop/dist/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("reapop/dist/utils", "Timer")
   @js.native
   class Timer protected () extends StObject {
-    def this(delay: Double, callback: js.Function1[/* repeated */ js.Any, _]) = this()
+    def this(delay: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]) = this()
     
     var callback: js.Any = js.native
     
@@ -25,11 +28,9 @@ object utilsMod {
     var timerId: js.Any = js.native
   }
   
-  @JSImport("reapop/dist/utils", "clone")
-  @js.native
-  def clone_[T /* <: js.Any */](origObject: T): T = js.native
+  @scala.inline
+  def clone_[T /* <: js.Any */](origObject: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(origObject.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("reapop/dist/utils", "isObject")
-  @js.native
-  def isObject(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

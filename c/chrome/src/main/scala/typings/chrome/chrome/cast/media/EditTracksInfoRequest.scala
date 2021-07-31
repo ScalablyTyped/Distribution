@@ -2,15 +2,13 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditTracksInfoRequest extends StObject {
   
-  var activeTrackIds: js.Array[Double] = js.native
+  var activeTrackIds: js.Array[Double]
   
-  var textTrackStyle: TextTrackStyle = js.native
+  var textTrackStyle: TextTrackStyle
 }
 object EditTracksInfoRequest {
   

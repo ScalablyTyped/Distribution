@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,47 +9,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource_for v1.addresses ==) (== resource_for beta.globalAddresses ==) (==
   * resource_for v1.globalAddresses ==)
   */
-@js.native
 trait SchemaAddress extends StObject {
   
   /**
     * The static IP address represented by this resource.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * The type of address to reserve, either INTERNAL or EXTERNAL. If
     * unspecified, defaults to EXTERNAL.
     */
-  var addressType: js.UndefOr[String] = js.native
+  var addressType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The IP Version that will be used by this address. Valid options are IPV4
     * or IPV6. This can only be specified for a global address.
     */
-  var ipVersion: js.UndefOr[String] = js.native
+  var ipVersion: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#address for addresses.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -61,13 +59,13 @@ trait SchemaAddress extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the network in which to reserve the address. This field can
     * only be used with INTERNAL type with VPC_PEERING purpose.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * This signifies the networking tier used for configuring this Address and
@@ -78,17 +76,17 @@ trait SchemaAddress extends StObject {
     * forwarding rules in Premium Tier can only be used with a Network load
     * balancer.  If this field is not specified, it is assumed to be PREMIUM.
     */
-  var networkTier: js.UndefOr[String] = js.native
+  var networkTier: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix length if the resource reprensents an IP range.
     */
-  var prefixLength: js.UndefOr[Double] = js.native
+  var prefixLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The purpose of resource, only used with INTERNAL type.
     */
-  var purpose: js.UndefOr[String] = js.native
+  var purpose: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional address resides. This
@@ -96,12 +94,12 @@ trait SchemaAddress extends StObject {
     * as part of the HTTP request URL. You cannot set this field in the request
     * body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the address, which can be one of RESERVING,
@@ -110,7 +108,7 @@ trait SchemaAddress extends StObject {
     * available to use. An IN_USE address is currently being used by another
     * resource and is not available.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the subnetwork in which to reserve the address. If an IP
@@ -118,12 +116,12 @@ trait SchemaAddress extends StObject {
     * This field can only be used with INTERNAL type with
     * GCE_ENDPOINT/DNS_RESOLVER purposes.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URLs of the resources that are using this address.
     */
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAddress {
   

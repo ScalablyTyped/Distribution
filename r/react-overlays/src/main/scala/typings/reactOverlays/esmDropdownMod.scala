@@ -17,7 +17,6 @@ import typings.reactOverlays.reactOverlaysStrings.keyboard
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmDropdownMod {
@@ -27,9 +26,11 @@ object esmDropdownMod {
     /**
       * @displayName Dropdown
       */
-    @JSImport("react-overlays/esm/Dropdown", JSImport.Default)
-    @js.native
-    def apply(hasDropAlignEndDefaultShowShowOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps): Element = js.native
+    @scala.inline
+    def apply(
+      hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-overlays/esm/Dropdown", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -43,9 +44,9 @@ object esmDropdownMod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      @JSImport("react-overlays/esm/Dropdown", "default.Menu")
-      @js.native
-      def apply(hasChildrenOptions: DropdownMenuProps): Element = js.native
+      @scala.inline
+      def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      
       @JSImport("react-overlays/esm/Dropdown", "default.Menu")
       @js.native
       val ^ : js.Any = js.native
@@ -171,9 +172,9 @@ object esmDropdownMod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      @JSImport("react-overlays/esm/Dropdown", "default.Toggle")
-      @js.native
-      def apply(hasChildren: DropdownToggleProps): Element = js.native
+      @scala.inline
+      def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      
       @JSImport("react-overlays/esm/Dropdown", "default.Toggle")
       @js.native
       val ^ : js.Any = js.native
@@ -335,10 +336,9 @@ object esmDropdownMod {
     object Toggle
   }
   
-  @js.native
   trait DropdownInjectedProps extends StObject {
     
-    var onKeyDown: KeyboardEventHandler[typings.std.Element] = js.native
+    var onKeyDown: KeyboardEventHandler[typings.std.Element]
   }
   object DropdownInjectedProps {
     

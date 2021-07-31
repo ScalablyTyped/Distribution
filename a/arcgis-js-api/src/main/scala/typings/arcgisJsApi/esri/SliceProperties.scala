@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliceProperties extends WidgetProperties {
+trait SliceProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#viewModel)
     */
-  var viewModel: js.UndefOr[SliceViewModelProperties] = js.native
+  var viewModel: js.UndefOr[SliceViewModelProperties] = js.undefined
 }
 object SliceProperties {
   

@@ -2,13 +2,11 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mount extends StObject {
   
-  var mount: js.UndefOr[String] = js.native
+  var mount: js.UndefOr[String] = js.undefined
 }
 object Mount {
   

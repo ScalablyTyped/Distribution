@@ -5,41 +5,39 @@ import typings.qlik.qlikStrings.P
 import typings.qlik.qlikStrings.S
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperCube extends StObject {
   
-  var qDataPages: js.Array[NxDataPage] = js.native
+  var qDataPages: js.Array[NxDataPage]
   
-  var qDimensionInfo: js.Array[NxDimensionInfo] = js.native
+  var qDimensionInfo: js.Array[NxDimensionInfo]
   
-  var qEffectiveInterColumnSortOrder: js.Array[Double] = js.native
+  var qEffectiveInterColumnSortOrder: js.Array[Double]
   
-  var qError: NxValidationError = js.native
+  var qError: NxValidationError
   
-  var qGrandTotalRow: js.Array[NxCell] = js.native
+  var qGrandTotalRow: js.Array[NxCell]
   
-  var qHasOtherValues: Boolean = js.native
+  var qHasOtherValues: Boolean
   
-  var qIndentMode: Boolean = js.native
+  var qIndentMode: Boolean
   
-  var qLastExpandedPos: NxCellPosition = js.native
+  var qLastExpandedPos: NxCellPosition
   
-  var qMeasureInfo: js.Array[NxMeasureInfo] = js.native
+  var qMeasureInfo: js.Array[NxMeasureInfo]
   
-  var qMode: S | P | K = js.native
+  var qMode: S | P | K
   
-  var qNoOfLeftDims: Double = js.native
+  var qNoOfLeftDims: Double
   
-  var qPivotDataPages: js.Array[NxPivotPage] = js.native
+  var qPivotDataPages: js.Array[NxPivotPage]
   
-  var qSize: Size = js.native
+  var qSize: Size
   
-  var qStackedDataPages: js.Array[NxStackPage] = js.native
+  var qStackedDataPages: js.Array[NxStackPage]
   
-  var qStateName: String = js.native
+  var qStateName: String
 }
 object HyperCube {
   

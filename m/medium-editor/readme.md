@@ -11,8 +11,8 @@ Medium.com WYSIWYG editor clone.
 | Full name          | medium-editor |
 | Keywords           | contenteditable, editor, medium, wysiwyg, rich-text |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 1189345 |
+| # dependents       | 71 |
+| # downloads        | 1461821 |
 | # stars            | 19 |
 
 ## Links

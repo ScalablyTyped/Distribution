@@ -2,17 +2,15 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Keyboard extends StObject {
   
-  def findFocusable($element: js.Object): js.Object = js.native
+  def findFocusable($element: js.Object): js.Object
   
-  def handleKey(event: js.Any, component: js.Any, functions: js.Any): Unit = js.native
+  def handleKey(event: js.Any, component: js.Any, functions: js.Any): Unit
   
-  def parseKey(event: js.Any): String = js.native
+  def parseKey(event: js.Any): String
 }
 object Keyboard {
   

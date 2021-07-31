@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "MarkdownString")
@@ -13,10 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param value Optional, initial value.
   * @param supportThemeIcons Optional, Specifies whether [ThemeIcons](#ThemeIcon) are supported within the [`MarkdownString`](#MarkdownString).
   */
-class MarkdownString () extends _MarkedString {
+class MarkdownString ()
+  extends StObject
+     with _MarkedString {
   def this(value: String) = this()
-  def this(value: js.UndefOr[scala.Nothing], supportThemeIcons: Boolean) = this()
   def this(value: String, supportThemeIcons: Boolean) = this()
+  def this(value: Unit, supportThemeIcons: Boolean) = this()
   
   /**
     * Appends the given string as codeblock using the provided language.

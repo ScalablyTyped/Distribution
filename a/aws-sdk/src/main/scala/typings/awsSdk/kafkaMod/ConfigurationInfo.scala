@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationInfo extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ConfigurationInfo extends StObject {
     ARN of the configuration to use.
     
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * 
     The revision of the configuration to use.
     
     */
-  var Revision: long = js.native
+  var Revision: long
 }
 object ConfigurationInfo {
   

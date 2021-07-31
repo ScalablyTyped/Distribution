@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerColumnMod {
   
   @JSImport("@ionic/core/dist/types/components/picker-column/picker-column", "PickerColumnCmp")
   @js.native
-  class PickerColumnCmp () extends ComponentInterface {
+  class PickerColumnCmp ()
+    extends StObject
+       with ComponentInterface {
     
     var bounceFrom: js.Any = js.native
     

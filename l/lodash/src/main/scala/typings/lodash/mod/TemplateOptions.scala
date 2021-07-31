@@ -2,16 +2,16 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TemplateOptions extends TemplateSettings {
+trait TemplateOptions
+  extends StObject
+     with TemplateSettings {
   
   /**
     * @see _.sourceURL
     */
-  var sourceURL: js.UndefOr[java.lang.String] = js.native
+  var sourceURL: js.UndefOr[java.lang.String] = js.undefined
 }
 object TemplateOptions {
   

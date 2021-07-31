@@ -2,16 +2,16 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoByMediaContentUrlSettings extends VideoOrPlaylistSettings {
+trait VideoByMediaContentUrlSettings
+  extends StObject
+     with VideoOrPlaylistSettings {
   
   /**
     * Fully qualified player URL.
     */
-  var mediaContentUrl: String = js.native
+  var mediaContentUrl: String
 }
 object VideoByMediaContentUrlSettings {
   

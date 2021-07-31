@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snippet extends StObject {
   
   /** The matched ranges in the snippet. */
-  var matchRanges: js.UndefOr[js.Array[MatchRange]] = js.native
+  var matchRanges: js.UndefOr[js.Array[MatchRange]] = js.undefined
   
   /** The snippet of the document. The snippet of the document. May contain escaped HTML character that should be unescaped prior to rendering. */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
 }
 object Snippet {
   

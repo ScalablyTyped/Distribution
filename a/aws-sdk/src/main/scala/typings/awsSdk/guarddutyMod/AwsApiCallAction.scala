@@ -2,41 +2,39 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiCallAction extends StObject {
   
   /**
     * The AWS API name.
     */
-  var Api: js.UndefOr[String] = js.native
+  var Api: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS API caller type.
     */
-  var CallerType: js.UndefOr[String] = js.native
+  var CallerType: js.UndefOr[String] = js.undefined
   
   /**
     * The domain information for the AWS API call.
     */
-  var DomainDetails: js.UndefOr[typings.awsSdk.guarddutyMod.DomainDetails] = js.native
+  var DomainDetails: js.UndefOr[typings.awsSdk.guarddutyMod.DomainDetails] = js.undefined
   
   /**
     * The error code of the failed AWS API action.
     */
-  var ErrorCode: js.UndefOr[String] = js.native
+  var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The remote IP information of the connection that initiated the AWS API call.
     */
-  var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.native
+  var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.undefined
   
   /**
     * The AWS service name whose API was invoked.
     */
-  var ServiceName: js.UndefOr[String] = js.native
+  var ServiceName: js.UndefOr[String] = js.undefined
 }
 object AwsApiCallAction {
   

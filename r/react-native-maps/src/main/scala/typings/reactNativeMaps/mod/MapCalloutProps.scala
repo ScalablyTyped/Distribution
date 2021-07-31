@@ -4,15 +4,15 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeMaps.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapCalloutProps extends ViewProps {
+trait MapCalloutProps
+  extends StObject
+     with ViewProps {
   
-  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.undefined
   
-  var tooltip: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.undefined
 }
 object MapCalloutProps {
   

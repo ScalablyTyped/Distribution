@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2ResourceUtilization extends StObject {
   
   /**
     *  The EBS field that contains a list of EBS metrics associated with the current instance. 
     */
-  var EBSResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EBSResourceUtilization] = js.native
+  var EBSResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EBSResourceUtilization] = js.undefined
   
   /**
     *  Maximum observed or expected CPU utilization of the instance.
     */
-  var MaxCpuUtilizationPercentage: js.UndefOr[GenericString] = js.native
+  var MaxCpuUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Maximum observed or expected memory utilization of the instance.
     */
-  var MaxMemoryUtilizationPercentage: js.UndefOr[GenericString] = js.native
+  var MaxMemoryUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Maximum observed or expected storage utilization of the instance (does not measure EBS storage).
     */
-  var MaxStorageUtilizationPercentage: js.UndefOr[GenericString] = js.native
+  var MaxStorageUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
 }
 object EC2ResourceUtilization {
   

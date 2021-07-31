@@ -3,75 +3,75 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRouteMod {
   
-  @JSImport("@pulumi/aws/ec2/getRoute", "getRoute")
+  @JSImport("@pulumi/aws/ec2/getRoute", JSImport.Namespace)
   @js.native
-  def getRoute(args: GetRouteArgs): js.Promise[GetRouteResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRoute", "getRoute")
-  @js.native
-  def getRoute(args: GetRouteArgs, opts: InvokeOptions): js.Promise[GetRouteResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRoute(args: GetRouteArgs): js.Promise[GetRouteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRouteResult]]
+  @scala.inline
+  def getRoute(args: GetRouteArgs, opts: InvokeOptions): js.Promise[GetRouteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteResult]]
+  
   trait GetRouteArgs extends StObject {
     
     /**
       * The CIDR block of the Route belonging to the Route Table.
       */
-    val destinationCidrBlock: js.UndefOr[String] = js.native
+    val destinationCidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * The IPv6 CIDR block of the Route belonging to the Route Table.
       */
-    val destinationIpv6CidrBlock: js.UndefOr[String] = js.native
+    val destinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * The Egress Only Gateway ID of the Route belonging to the Route Table.
       */
-    val egressOnlyGatewayId: js.UndefOr[String] = js.native
+    val egressOnlyGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The Gateway ID of the Route belonging to the Route Table.
       */
-    val gatewayId: js.UndefOr[String] = js.native
+    val gatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The Instance ID of the Route belonging to the Route Table.
       */
-    val instanceId: js.UndefOr[String] = js.native
+    val instanceId: js.UndefOr[String] = js.undefined
     
     /**
       * The Local Gateway ID of the Route belonging to the Route Table.
       */
-    val localGatewayId: js.UndefOr[String] = js.native
+    val localGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The NAT Gateway ID of the Route belonging to the Route Table.
       */
-    val natGatewayId: js.UndefOr[String] = js.native
+    val natGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The Network Interface ID of the Route belonging to the Route Table.
       */
-    val networkInterfaceId: js.UndefOr[String] = js.native
+    val networkInterfaceId: js.UndefOr[String] = js.undefined
     
     /**
       * The id of the specific Route Table containing the Route entry.
       */
-    val routeTableId: String = js.native
+    val routeTableId: String
     
     /**
       * The EC2 Transit Gateway ID of the Route belonging to the Route Table.
       */
-    val transitGatewayId: js.UndefOr[String] = js.native
+    val transitGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The VPC Peering Connection ID of the Route belonging to the Route Table.
       */
-    val vpcPeeringConnectionId: js.UndefOr[String] = js.native
+    val vpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   object GetRouteArgs {
     
@@ -149,35 +149,34 @@ object getRouteMod {
     }
   }
   
-  @js.native
   trait GetRouteResult extends StObject {
     
-    val destinationCidrBlock: String = js.native
+    val destinationCidrBlock: String
     
-    val destinationIpv6CidrBlock: String = js.native
+    val destinationIpv6CidrBlock: String
     
-    val egressOnlyGatewayId: String = js.native
+    val egressOnlyGatewayId: String
     
-    val gatewayId: String = js.native
+    val gatewayId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceId: String = js.native
+    val instanceId: String
     
-    val localGatewayId: String = js.native
+    val localGatewayId: String
     
-    val natGatewayId: String = js.native
+    val natGatewayId: String
     
-    val networkInterfaceId: String = js.native
+    val networkInterfaceId: String
     
-    val routeTableId: String = js.native
+    val routeTableId: String
     
-    val transitGatewayId: String = js.native
+    val transitGatewayId: String
     
-    val vpcPeeringConnectionId: String = js.native
+    val vpcPeeringConnectionId: String
   }
   object GetRouteResult {
     

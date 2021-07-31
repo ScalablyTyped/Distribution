@@ -4,43 +4,41 @@ import typings.reactVis.anon.Axes
 import typings.reactVis.anon.Domain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadarChartProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: 'category'
-  var colorRange: js.UndefOr[js.Array[String]] = js.native
+  var colorRange: js.UndefOr[js.Array[String]] = js.undefined
   
   // default: ''
-  var colorType: js.UndefOr[String] = js.native
+  var colorType: js.UndefOr[String] = js.undefined
   
   // default: ['#12939A','#79C7E3','#1A3177','#FF9833','#EF5D28']
-  var data: js.Array[RadarChartPoint] = js.native
+  var data: js.Array[RadarChartPoint]
   
-  var domains: js.Array[Domain] = js.native
+  var domains: js.Array[Domain]
   
-  var height: Double = js.native
+  var height: Double
   
-  var hideInnerMostValues: js.UndefOr[Boolean] = js.native
+  var hideInnerMostValues: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var margin: js.UndefOr[Margin | Double] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.undefined
   
-  var startingAngle: js.UndefOr[Double] = js.native
+  var startingAngle: js.UndefOr[Double] = js.undefined
   
   // default: 1.5707963267948966
-  var style: js.UndefOr[Axes] = js.native
+  var style: js.UndefOr[Axes] = js.undefined
   
   // default: {'axes':{'line':{},'ticks':{},'text':{}},'labels':{'fontSize':10,'textAnchor':'middle'},'polygons':{'strokeWidth':0.5,'strokeOpacity':1,'fillOpacity':0.1}}
-  var tickFormat: js.UndefOr[RVTickFormat] = js.native
+  var tickFormat: js.UndefOr[RVTickFormat] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object RadarChartProps {
   

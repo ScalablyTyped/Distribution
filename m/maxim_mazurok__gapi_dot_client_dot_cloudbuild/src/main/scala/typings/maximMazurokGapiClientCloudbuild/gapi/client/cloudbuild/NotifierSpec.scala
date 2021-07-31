@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifierSpec extends StObject {
   
   /** The configuration of this particular notifier. */
-  var notification: js.UndefOr[Notification] = js.native
+  var notification: js.UndefOr[Notification] = js.undefined
   
   /** Configurations for secret resources used by this particular notifier. */
-  var secrets: js.UndefOr[js.Array[NotifierSecret]] = js.native
+  var secrets: js.UndefOr[js.Array[NotifierSecret]] = js.undefined
 }
 object NotifierSpec {
   

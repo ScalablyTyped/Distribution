@@ -10,55 +10,47 @@ import typings.xmlJs.xmlJsStrings.no
 import typings.xmlJs.xmlJsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xml-js", "js2xml")
+  @JSImport("xml-js", JSImport.Namespace)
   @js.native
-  def js2xml(obj: Element): String = js.native
-  @JSImport("xml-js", "js2xml")
-  @js.native
-  def js2xml(obj: ElementCompact): String = js.native
-  @JSImport("xml-js", "js2xml")
-  @js.native
-  def js2xml(obj: ElementCompact, options: JS2XML): String = js.native
-  @JSImport("xml-js", "js2xml")
-  @js.native
-  def js2xml(obj: Element, options: JS2XML): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xml-js", "json2xml")
-  @js.native
-  def json2xml(json: String): String = js.native
-  @JSImport("xml-js", "json2xml")
-  @js.native
-  def json2xml(json: String, options: JS2XML): String = js.native
+  @scala.inline
+  def js2xml(obj: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("js2xml")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def js2xml(obj: ElementCompact): String = ^.asInstanceOf[js.Dynamic].applyDynamic("js2xml")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def js2xml(obj: ElementCompact, options: JS2XML): String = (^.asInstanceOf[js.Dynamic].applyDynamic("js2xml")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def js2xml(obj: Element, options: JS2XML): String = (^.asInstanceOf[js.Dynamic].applyDynamic("js2xml")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xml-js", "xml2js")
-  @js.native
-  def xml2js(xml: String): Element | ElementCompact = js.native
-  @JSImport("xml-js", "xml2js")
-  @js.native
-  def xml2js(xml: String, options: XML2JS): Element | ElementCompact = js.native
+  @scala.inline
+  def json2xml(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("json2xml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def json2xml(json: String, options: JS2XML): String = (^.asInstanceOf[js.Dynamic].applyDynamic("json2xml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xml-js", "xml2json")
-  @js.native
-  def xml2json(xml: String): String = js.native
-  @JSImport("xml-js", "xml2json")
-  @js.native
-  def xml2json(xml: String, options: XML2JSON): String = js.native
+  @scala.inline
+  def xml2js(xml: String): Element | ElementCompact = ^.asInstanceOf[js.Dynamic].applyDynamic("xml2js")(xml.asInstanceOf[js.Any]).asInstanceOf[Element | ElementCompact]
+  @scala.inline
+  def xml2js(xml: String, options: XML2JS): Element | ElementCompact = (^.asInstanceOf[js.Dynamic].applyDynamic("xml2js")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | ElementCompact]
+  
+  @scala.inline
+  def xml2json(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xml2json")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def xml2json(xml: String, options: XML2JSON): String = (^.asInstanceOf[js.Dynamic].applyDynamic("xml2json")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Attributes = StringDictionary[js.UndefOr[String | Double]]
   
-  @js.native
   trait DeclarationAttributes extends StObject {
     
-    var encoding: js.UndefOr[`utf-8` | String] = js.native
+    var encoding: js.UndefOr[`utf-8` | String] = js.undefined
     
-    var standalone: js.UndefOr[yes | no] = js.native
+    var standalone: js.UndefOr[yes | no] = js.undefined
     
-    var version: js.UndefOr[String | Double] = js.native
+    var version: js.UndefOr[String | Double] = js.undefined
   }
   object DeclarationAttributes {
     
@@ -91,28 +83,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var attributes: js.UndefOr[Attributes] = js.native
+    var attributes: js.UndefOr[Attributes] = js.undefined
     
-    var cdata: js.UndefOr[String] = js.native
+    var cdata: js.UndefOr[String] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var declaration: js.UndefOr[`0`] = js.native
+    var declaration: js.UndefOr[`0`] = js.undefined
     
-    var doctype: js.UndefOr[String] = js.native
+    var doctype: js.UndefOr[String] = js.undefined
     
-    var elements: js.UndefOr[js.Array[Element]] = js.native
+    var elements: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var instruction: js.UndefOr[String] = js.native
+    var instruction: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String | Double | Boolean] = js.native
+    var text: js.UndefOr[String | Double | Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Element {
     
@@ -190,23 +181,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ElementCompact
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var _attributes: js.UndefOr[Attributes] = js.native
+    var _attributes: js.UndefOr[Attributes] = js.undefined
     
-    var _cdata: js.UndefOr[String] = js.native
+    var _cdata: js.UndefOr[String] = js.undefined
     
-    var _comment: js.UndefOr[String] = js.native
+    var _comment: js.UndefOr[String] = js.undefined
     
-    var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.native
+    var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.undefined
     
-    var _doctype: js.UndefOr[String] = js.native
+    var _doctype: js.UndefOr[String] = js.undefined
     
-    var _instruction: js.UndefOr[StringDictionary[String]] = js.native
+    var _instruction: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var _text: js.UndefOr[String | Double] = js.native
+    var _text: js.UndefOr[String | Double] = js.undefined
   }
   object ElementCompact {
     
@@ -265,30 +256,29 @@ object mod {
   
   object Options {
     
-    @js.native
     trait ChangingKeyNames extends StObject {
       
-      var attributesKey: js.UndefOr[String] = js.native
+      var attributesKey: js.UndefOr[String] = js.undefined
       
-      var cdataKey: js.UndefOr[String] = js.native
+      var cdataKey: js.UndefOr[String] = js.undefined
       
-      var commentKey: js.UndefOr[String] = js.native
+      var commentKey: js.UndefOr[String] = js.undefined
       
-      var declarationKey: js.UndefOr[String] = js.native
+      var declarationKey: js.UndefOr[String] = js.undefined
       
-      var doctypeKey: js.UndefOr[String] = js.native
+      var doctypeKey: js.UndefOr[String] = js.undefined
       
-      var elementsKey: js.UndefOr[String] = js.native
+      var elementsKey: js.UndefOr[String] = js.undefined
       
-      var instructionKey: js.UndefOr[String] = js.native
+      var instructionKey: js.UndefOr[String] = js.undefined
       
-      var nameKey: js.UndefOr[String] = js.native
+      var nameKey: js.UndefOr[String] = js.undefined
       
-      var parentKey: js.UndefOr[String] = js.native
+      var parentKey: js.UndefOr[String] = js.undefined
       
-      var textKey: js.UndefOr[String] = js.native
+      var textKey: js.UndefOr[String] = js.undefined
       
-      var typeKey: js.UndefOr[String] = js.native
+      var typeKey: js.UndefOr[String] = js.undefined
     }
     object ChangingKeyNames {
       
@@ -369,22 +359,21 @@ object mod {
       }
     }
     
-    @js.native
     trait IgnoreOptions extends StObject {
       
-      var ignoreAttributes: js.UndefOr[Boolean] = js.native
+      var ignoreAttributes: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreCdata: js.UndefOr[Boolean] = js.native
+      var ignoreCdata: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreComment: js.UndefOr[Boolean] = js.native
+      var ignoreComment: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreDeclaration: js.UndefOr[Boolean] = js.native
+      var ignoreDeclaration: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreDoctype: js.UndefOr[Boolean] = js.native
+      var ignoreDoctype: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreInstruction: js.UndefOr[Boolean] = js.native
+      var ignoreInstruction: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreText: js.UndefOr[Boolean] = js.native
+      var ignoreText: js.UndefOr[Boolean] = js.undefined
     }
     object IgnoreOptions {
       
@@ -441,9 +430,9 @@ object mod {
       }
     }
     
-    @js.native
     trait JS2XML
-      extends ChangingKeyNames
+      extends StObject
+         with ChangingKeyNames
          with IgnoreOptions {
       
       var attributeNameFn: js.UndefOr[
@@ -454,7 +443,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var attributeValueFn: js.UndefOr[
             js.Function4[
@@ -464,7 +453,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var attributesFn: js.UndefOr[
             js.Function3[
@@ -473,7 +462,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var cdataFn: js.UndefOr[
             js.Function3[
@@ -482,7 +471,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var commentFn: js.UndefOr[
             js.Function3[
@@ -491,9 +480,9 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var compact: js.UndefOr[Boolean] = js.native
+      var compact: js.UndefOr[Boolean] = js.undefined
       
       var doctypeFn: js.UndefOr[
             js.Function3[
@@ -502,7 +491,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var elementNameFn: js.UndefOr[
             js.Function3[
@@ -511,21 +500,21 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var fullTagEmptyElement: js.UndefOr[Boolean] = js.native
+      var fullTagEmptyElement: js.UndefOr[Boolean] = js.undefined
       
       var fullTagEmptyElementFn: js.UndefOr[
             js.Function2[/* currentElementName */ String, /* currentElementObj */ js.Object, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var indentAttributes: js.UndefOr[Boolean] = js.native
+      var indentAttributes: js.UndefOr[Boolean] = js.undefined
       
-      var indentCdata: js.UndefOr[Boolean] = js.native
+      var indentCdata: js.UndefOr[Boolean] = js.undefined
       
-      var indentInstruction: js.UndefOr[Boolean] = js.native
+      var indentInstruction: js.UndefOr[Boolean] = js.undefined
       
-      var indentText: js.UndefOr[Boolean] = js.native
+      var indentText: js.UndefOr[Boolean] = js.undefined
       
       var instructionFn: js.UndefOr[
             js.Function4[
@@ -535,7 +524,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var instructionNameFn: js.UndefOr[
             js.Function4[
@@ -545,11 +534,11 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var noQuotesForNativeAttributes: js.UndefOr[Boolean] = js.native
+      var noQuotesForNativeAttributes: js.UndefOr[Boolean] = js.undefined
       
-      var spaces: js.UndefOr[Double | String] = js.native
+      var spaces: js.UndefOr[Double | String] = js.undefined
       
       var textFn: js.UndefOr[
             js.Function3[
@@ -558,7 +547,7 @@ object mod {
               /* currentElementObj */ js.Object, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object JS2XML {
       
@@ -707,16 +696,16 @@ object mod {
       }
     }
     
-    @js.native
     trait XML2JS
-      extends ChangingKeyNames
+      extends StObject
+         with ChangingKeyNames
          with IgnoreOptions {
       
-      var addParent: js.UndefOr[Boolean] = js.native
+      var addParent: js.UndefOr[Boolean] = js.undefined
       
-      var alwaysArray: js.UndefOr[Boolean | js.Array[String]] = js.native
+      var alwaysArray: js.UndefOr[Boolean | js.Array[String]] = js.undefined
       
-      var alwaysChildren: js.UndefOr[Boolean] = js.native
+      var alwaysChildren: js.UndefOr[Boolean] = js.undefined
       
       var attributeNameFn: js.UndefOr[
             js.Function3[
@@ -725,7 +714,7 @@ object mod {
               /* parentElement */ String, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var attributeValueFn: js.UndefOr[
             js.Function3[
@@ -734,21 +723,21 @@ object mod {
               /* parentElement */ String, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var attributesFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ String, Unit]] = js.native
+      var attributesFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ String, Unit]] = js.undefined
       
-      var captureSpacesBetweenElements: js.UndefOr[Boolean] = js.native
+      var captureSpacesBetweenElements: js.UndefOr[Boolean] = js.undefined
       
-      var cdataFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.native
+      var cdataFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.undefined
       
-      var commentFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.native
+      var commentFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.undefined
       
-      var compact: js.UndefOr[Boolean] = js.native
+      var compact: js.UndefOr[Boolean] = js.undefined
       
-      var doctypeFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.native
+      var doctypeFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.undefined
       
-      var elementNameFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.native
+      var elementNameFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.undefined
       
       var instructionFn: js.UndefOr[
             js.Function3[
@@ -757,9 +746,9 @@ object mod {
               /* parentElement */ String, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var instructionHasAttributes: js.UndefOr[Boolean] = js.native
+      var instructionHasAttributes: js.UndefOr[Boolean] = js.undefined
       
       var instructionNameFn: js.UndefOr[
             js.Function3[
@@ -768,15 +757,15 @@ object mod {
               /* parentElement */ String, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var nativeType: js.UndefOr[Boolean] = js.native
+      var nativeType: js.UndefOr[Boolean] = js.undefined
       
-      var sanitize: js.UndefOr[Boolean] = js.native
+      var sanitize: js.UndefOr[Boolean] = js.undefined
       
-      var textFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.native
+      var textFn: js.UndefOr[js.Function2[/* value */ String, /* parentElement */ js.Object, Unit]] = js.undefined
       
-      var trim: js.UndefOr[Boolean] = js.native
+      var trim: js.UndefOr[Boolean] = js.undefined
     }
     object XML2JS {
       
@@ -916,10 +905,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait XML2JSON extends XML2JS {
+    trait XML2JSON
+      extends StObject
+         with XML2JS {
       
-      var spaces: js.UndefOr[Double | String] = js.native
+      var spaces: js.UndefOr[Double | String] = js.undefined
     }
     object XML2JSON {
       

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularForms.anon.EmitEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormGroup")
@@ -29,16 +28,6 @@ class FormGroup protected () extends AbstractControl {
   def this(controls: StringDictionary[AbstractControl], validatorOrOpts: ValidatorFn) = this()
   def this(
     controls: StringDictionary[AbstractControl],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    controls: StringDictionary[AbstractControl],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    controls: StringDictionary[AbstractControl],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
@@ -55,6 +44,16 @@ class FormGroup protected () extends AbstractControl {
   def this(
     controls: StringDictionary[AbstractControl],
     validatorOrOpts: Null,
+    asyncValidator: AsyncValidatorFn
+  ) = this()
+  def this(
+    controls: StringDictionary[AbstractControl],
+    validatorOrOpts: Unit,
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ) = this()
+  def this(
+    controls: StringDictionary[AbstractControl],
+    validatorOrOpts: Unit,
     asyncValidator: AsyncValidatorFn
   ) = this()
   def this(
@@ -165,8 +164,8 @@ class FormGroup protected () extends AbstractControl {
     */
   def removeControl(name: String): Unit = js.native
   
-  def reset(value: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(value: js.Any, options: EmitEvent): Unit = js.native
+  def reset(value: Unit, options: EmitEvent): Unit = js.native
   
   /**
     * Replace an existing control.

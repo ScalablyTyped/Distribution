@@ -3,16 +3,14 @@ package typings.fridaGum.Java
 import typings.fridaGum.EnumerateAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseCallbacks extends StObject {
   
   /**
     * Called when all instances have been enumerated.
     */
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
   /**
     * Called with each live instance found with a ready-to-use `instance`
@@ -21,7 +19,7 @@ trait ChooseCallbacks extends StObject {
     *
     * May return `EnumerateAction.Stop` to stop the enumeration early.
     */
-  def onMatch(instance: typings.fridaGum.anon.Wrapper): Unit | EnumerateAction = js.native
+  def onMatch(instance: typings.fridaGum.anon.Wrapper): Unit | EnumerateAction
 }
 object ChooseCallbacks {
   

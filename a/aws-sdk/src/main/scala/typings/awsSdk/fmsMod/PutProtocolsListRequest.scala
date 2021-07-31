@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutProtocolsListRequest extends StObject {
   
   /**
     * The details of the AWS Firewall Manager protocols list to be created.
     */
-  var ProtocolsList: ProtocolsListData = js.native
+  var ProtocolsList: ProtocolsListData
   
   /**
     * The tags associated with the resource.
     */
-  var TagList: js.UndefOr[typings.awsSdk.fmsMod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.fmsMod.TagList] = js.undefined
 }
 object PutProtocolsListRequest {
   

@@ -6,23 +6,23 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SjclPointJacobianStatic
-  extends Instantiable1[/* curve */ SjclEllipticalCurve, SjclPointJacobian]
+  extends StObject
+     with Instantiable1[/* curve */ SjclEllipticalCurve, SjclPointJacobian]
      with Instantiable2[/* curve */ SjclEllipticalCurve, /* x */ BigNumber, SjclPointJacobian]
      with Instantiable3[
       /* curve */ SjclEllipticalCurve, 
-      js.UndefOr[/* x */ BigNumber], 
+      (/* x */ BigNumber) | (/* x */ Unit), 
       /* y */ BigNumber, 
       SjclPointJacobian
     ]
      with Instantiable4[
       /* curve */ SjclEllipticalCurve, 
-      js.UndefOr[/* x */ BigNumber], 
-      js.UndefOr[/* y */ BigNumber], 
+      (/* x */ BigNumber) | (/* x */ Unit), 
+      (/* y */ BigNumber) | (/* y */ Unit), 
       /* z */ BigNumber, 
       SjclPointJacobian
     ] {

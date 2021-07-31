@@ -4,39 +4,37 @@ import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
   */
-@js.native
 trait ObjectMetricSource extends StObject {
   
   /**
     * averageValue is the target value of the average of the metric across all relevant pods (as a quantity)
     */
-  var averageValue: js.UndefOr[Input[String]] = js.native
+  var averageValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * metricName is the name of the metric in question.
     */
-  var metricName: Input[String] = js.native
+  var metricName: Input[String]
   
   /**
     * selector is the string-encoded form of a standard kubernetes label selector for the given metric When set, it is passed as an additional parameter to the metrics server for more specific metrics scoping When unset, just the metricName will be used to gather metrics.
     */
-  var selector: js.UndefOr[Input[LabelSelector]] = js.native
+  var selector: js.UndefOr[Input[LabelSelector]] = js.undefined
   
   /**
     * target is the described Kubernetes object.
     */
-  var target: Input[CrossVersionObjectReference] = js.native
+  var target: Input[CrossVersionObjectReference]
   
   /**
     * targetValue is the target value of the metric (as a quantity).
     */
-  var targetValue: Input[String] = js.native
+  var targetValue: Input[String]
 }
 object ObjectMetricSource {
   

@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorHelpers extends StObject {
   
   /**
@@ -13,60 +11,60 @@ trait VectorHelpers extends StObject {
     * @param a
     * @param b
     */
-  def add(a: VectorN, b: VectorN): VectorN = js.native
+  def add(a: VectorN, b: VectorN): VectorN
   
   /**
     * Returns the cross product of the two vectors. Only works for length 3.
     * @param a
     * @param b
     */
-  def cross(a: Vector3, b: Vector3): Vector3 = js.native
+  def cross(a: Vector3, b: Vector3): Vector3
   
   /**
     * Returns the length(sub(a, b))
     * @param a
     * @param b
     */
-  def dist(a: VectorN, b: VectorN): Double = js.native
+  def dist(a: VectorN, b: VectorN): Double
   
   /**
     * Returns the dot product of the two vectors.
     * @param a
     * @param b
     */
-  def dot(a: VectorN, b: VectorN): Double = js.native
+  def dot(a: VectorN, b: VectorN): Double
   
   /**
     * Returns the length of this vector, which is always positive.
     * @param v
     */
-  def length(v: VectorN): Double = js.native
+  def length(v: VectorN): Double
   
   /**
     * Returns the length squared of this vector.
     * @param v
     */
-  def lengthSquared(v: VectorN): Double = js.native
+  def lengthSquared(v: VectorN): Double
   
   /**
     * Returns a new vector which is v multiplied by the scalar s.
     * @param v
     * @param s
     */
-  def mulScalar(v: VectorN, s: Double): VectorN = js.native
+  def mulScalar(v: VectorN, s: Double): VectorN
   
   /**
     * Returns a normalized vector.
     * @param v
     */
-  def normalize(v: VectorN): VectorN = js.native
+  def normalize(v: VectorN): VectorN
   
   /**
     * Subtracts vector b from vector a (termwise).
     * @param a
     * @param b
     */
-  def sub(a: VectorN, b: VectorN): VectorN = js.native
+  def sub(a: VectorN, b: VectorN): VectorN
 }
 object VectorHelpers {
   

@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertOptions extends StObject {
   
   /** @platform android */
-  var cancelable: js.UndefOr[Boolean] = js.native
+  var cancelable: js.UndefOr[Boolean] = js.undefined
   
   /** @platform android */
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object AlertOptions {
   

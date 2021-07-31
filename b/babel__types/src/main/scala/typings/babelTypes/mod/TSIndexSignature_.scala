@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSIndexSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSIndexSignature_
-  extends TSTypeElement
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSIndexSignature_
+  extends StObject
+     with BaseNode
+     with TSTypeElement {
   
-  var parameters: js.Array[Identifier_] = js.native
+  var parameters: js.Array[Identifier_]
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
   @JSName("type")
-  var type_TSIndexSignature_ : TSIndexSignature = js.native
+  var type_TSIndexSignature_ : TSIndexSignature
 }
 object TSIndexSignature_ {
   
   @scala.inline
-  def apply(parameters: js.Array[Identifier_], `type`: TSIndexSignature): TSIndexSignature_ = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(parameters: js.Array[Identifier_]): TSIndexSignature_ = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSIndexSignature")
     __obj.asInstanceOf[TSIndexSignature_]
   }
   

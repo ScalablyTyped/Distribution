@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,25 +15,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object telemetry {
   
   /** Represents registration data for a Telemetry event. */
-  @js.native
   trait EventData extends StObject {
     
     /**
       * True if this event entry is expired. This allows recording it without error, but it will be discarded.
       */
-    var expired: js.UndefOr[Boolean] = js.native
+    var expired: js.UndefOr[Boolean] = js.undefined
     
     /** List of allowed extra keys for this event entry. */
-    var extra_keys: js.Array[String] = js.native
+    var extra_keys: js.Array[String]
     
     /** List of methods for this event entry. */
-    var methods: js.Array[String] = js.native
+    var methods: js.Array[String]
     
     /** List of objects for this event entry. */
-    var objects: js.Array[String] = js.native
+    var objects: js.Array[String]
     
     /** True if this data should be recorded on release. */
-    var record_on_release: js.UndefOr[Boolean] = js.native
+    var record_on_release: js.UndefOr[Boolean] = js.undefined
   }
   object EventData {
     
@@ -80,21 +78,20 @@ object telemetry {
   }
   
   /** Represents registration data for a Telemetry scalar. */
-  @js.native
   trait ScalarData extends StObject {
     
     /**
       * True if this scalar entry is expired. This allows recording it without error, but it will be discarded.
       */
-    var expired: js.UndefOr[Boolean] = js.native
+    var expired: js.UndefOr[Boolean] = js.undefined
     
     /** True if this is a keyed scalar. */
-    var keyed: js.UndefOr[Boolean] = js.native
+    var keyed: js.UndefOr[Boolean] = js.undefined
     
-    var kind: ScalarType = js.native
+    var kind: ScalarType
     
     /** True if this data should be recorded on release. */
-    var record_on_release: js.UndefOr[Boolean] = js.native
+    var record_on_release: js.UndefOr[Boolean] = js.undefined
   }
   object ScalarData {
     
@@ -153,14 +150,13 @@ object telemetry {
   }
   
   /** Options object. */
-  @js.native
   trait SubmitEncryptedPingOptions extends StObject {
     
     /** Schema name used for payload. */
-    var schemaName: String = js.native
+    var schemaName: String
     
     /** Schema version used for payload. */
-    var schemaVersion: Double = js.native
+    var schemaVersion: Double
   }
   object SubmitEncryptedPingOptions {
     
@@ -182,20 +178,19 @@ object telemetry {
   }
   
   /** Options object. */
-  @js.native
   trait SubmitPingOptions extends StObject {
     
     /** True if the ping should contain the client id. */
-    var addClientId: js.UndefOr[Boolean] = js.native
+    var addClientId: js.UndefOr[Boolean] = js.undefined
     
     /** True if the ping should contain the environment data. */
-    var addEnvironment: js.UndefOr[Boolean] = js.native
+    var addEnvironment: js.UndefOr[Boolean] = js.undefined
     
     /** Set to override the environment data. */
-    var overrideEnvironment: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var overrideEnvironment: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** If true, send the ping using the PingSender. */
-    var usePingSender: js.UndefOr[Boolean] = js.native
+    var usePingSender: js.UndefOr[Boolean] = js.undefined
   }
   object SubmitPingOptions {
     

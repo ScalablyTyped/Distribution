@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TopBottomSelectionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.TopBottomSelectionType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.TopBottomSelectionType & String] = js.native
   
-  /* "Items" */ val items: typings.officeJs.Excel.TopBottomSelectionType.items with String = js.native
+  /* "Items" */ val items: typings.officeJs.Excel.TopBottomSelectionType.items & String = js.native
   
-  /* "Percent" */ val percent: typings.officeJs.Excel.TopBottomSelectionType.percent with String = js.native
+  /* "Percent" */ val percent: typings.officeJs.Excel.TopBottomSelectionType.percent & String = js.native
   
-  /* "Sum" */ val sum: typings.officeJs.Excel.TopBottomSelectionType.sum with String = js.native
+  /* "Sum" */ val sum: typings.officeJs.Excel.TopBottomSelectionType.sum & String = js.native
 }

@@ -2,13 +2,13 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod._Schema because Already inherited */ @js.native
 trait FunctionSchema
-  extends ObjectSchema[js.Any] {
+  extends StObject
+     with ObjectSchema[js.Any] {
   
   /**
     * Specifies the arity of the function where:

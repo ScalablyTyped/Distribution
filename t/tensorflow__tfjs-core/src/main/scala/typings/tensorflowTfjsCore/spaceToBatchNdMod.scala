@@ -5,15 +5,14 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceToBatchNdMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/space_to_batch_nd", "spaceToBatchND")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/space_to_batch_nd", JSImport.Namespace)
   @js.native
-  def spaceToBatchND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/space_to_batch_nd", "spaceToBatchND")
-  @js.native
-  def spaceToBatchND[T /* <: Tensor[Rank] */](x: TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def spaceToBatchND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
 }

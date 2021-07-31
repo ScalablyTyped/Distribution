@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a change of the active sheet. The new active sheet is given with this event.
   * @since OOo 2.0
   */
-@js.native
-trait ActivationEvent extends EventObject {
+trait ActivationEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the new active {@link Spreadsheet} . */
-  var ActiveSheet: XSpreadsheet = js.native
+  var ActiveSheet: XSpreadsheet
 }
 object ActivationEvent {
   

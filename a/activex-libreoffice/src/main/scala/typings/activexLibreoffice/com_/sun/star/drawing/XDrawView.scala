@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is implemented by views that display {@link DrawPages} or {@link MasterPages} . */
-@js.native
-trait XDrawView extends XInterface {
+trait XDrawView
+  extends StObject
+     with XInterface {
   
   /**
     * returns the current page.
     * @returns the {@link DrawPage} or {@link MasterPage} that is currently displayed.
     */
-  var CurrentPage: XDrawPage = js.native
+  var CurrentPage: XDrawPage
   
   /**
     * returns the current page.
     * @returns the {@link DrawPage} or {@link MasterPage} that is currently displayed.
     */
-  def getCurrentPage(): XDrawPage = js.native
+  def getCurrentPage(): XDrawPage
   
   /**
     * changes the current page.
     * @param xPage this {@link DrawPage} or {@link MasterPage} will be displayed inside this view.
     */
-  def setCurrentPage(xPage: XDrawPage): Unit = js.native
+  def setCurrentPage(xPage: XDrawPage): Unit
 }
 object XDrawView {
   

@@ -2,25 +2,26 @@ package typings.fitbitWeather
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object companionMod {
+  
+  @JSImport("fitbit-weather/companion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fitbit-weather/companion", "Providers")
   @js.native
   val Providers: ProvidersCodes = js.native
   
-  @JSImport("fitbit-weather/companion", "setup")
-  @js.native
-  def setup(configuration: Configuration): Unit = js.native
+  @scala.inline
+  def setup(configuration: Configuration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Configuration extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var provider: Double = js.native
+    var provider: Double
   }
   object Configuration {
     
@@ -41,14 +42,13 @@ object companionMod {
     }
   }
   
-  @js.native
   trait ProvidersCodes extends StObject {
     
-    var darksky: Double = js.native
+    var darksky: Double
     
-    var openweathermap: Double = js.native
+    var openweathermap: Double
     
-    var weatherbit: Double = js.native
+    var weatherbit: Double
   }
   object ProvidersCodes {
     

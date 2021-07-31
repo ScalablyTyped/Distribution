@@ -2,75 +2,73 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an snapshot object.
   */
-@js.native
 trait SchemaSnapshot extends StObject {
   
   /**
     * The cover image of this snapshot. May be absent if there is no image.
     */
-  var coverImage: js.UndefOr[SchemaSnapshotImage] = js.native
+  var coverImage: js.UndefOr[SchemaSnapshotImage] = js.undefined
   
   /**
     * The description of this snapshot.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the file underlying this snapshot in the Drive API. Only
     * present if the snapshot is a view on a Drive file and the file is owned
     * by the caller.
     */
-  var driveId: js.UndefOr[String] = js.native
+  var driveId: js.UndefOr[String] = js.undefined
   
   /**
     * The duration associated with this snapshot, in millis.
     */
-  var durationMillis: js.UndefOr[String] = js.native
+  var durationMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the snapshot.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#snapshot.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp (in millis since Unix epoch) of the last modification to
     * this snapshot.
     */
-  var lastModifiedMillis: js.UndefOr[String] = js.native
+  var lastModifiedMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The progress value (64-bit integer set by developer) associated with this
     * snapshot.
     */
-  var progressValue: js.UndefOr[String] = js.native
+  var progressValue: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this snapshot.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this snapshot. Possible values are:   - &quot;SAVE_GAME&quot;
     * - A snapshot representing a save game.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The unique name provided when the snapshot was created.
     */
-  var uniqueName: js.UndefOr[String] = js.native
+  var uniqueName: js.UndefOr[String] = js.undefined
 }
 object SchemaSnapshot {
   

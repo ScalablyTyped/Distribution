@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketPermissionConfiguration extends StObject {
   
   /**
     * The account-level permissions settings that apply to the bucket.
     */
-  var accountLevelPermissions: js.UndefOr[AccountLevelPermissions] = js.native
+  var accountLevelPermissions: js.UndefOr[AccountLevelPermissions] = js.undefined
   
   /**
     * The bucket-level permissions settings for the bucket.
     */
-  var bucketLevelPermissions: js.UndefOr[BucketLevelPermissions] = js.native
+  var bucketLevelPermissions: js.UndefOr[BucketLevelPermissions] = js.undefined
 }
 object BucketPermissionConfiguration {
   

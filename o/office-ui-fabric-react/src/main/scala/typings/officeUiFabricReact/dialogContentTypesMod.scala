@@ -17,7 +17,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogContentTypesMod {
@@ -29,22 +28,28 @@ object dialogContentTypesMod {
   object DialogType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DialogType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DialogType & Double] = js.native
     
     /** Dialog with an 'x' close button in the upper-right corner */
     @js.native
-    sealed trait close extends DialogType
-    /* 2 */ val close: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.close with Double = js.native
+    sealed trait close
+      extends StObject
+         with DialogType
+    /* 2 */ val close: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.close & Double = js.native
     
     /** Dialog with large header banner */
     @js.native
-    sealed trait largeHeader extends DialogType
-    /* 1 */ val largeHeader: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.largeHeader with Double = js.native
+    sealed trait largeHeader
+      extends StObject
+         with DialogType
+    /* 1 */ val largeHeader: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.largeHeader & Double = js.native
     
     /** Standard dialog */
     @js.native
-    sealed trait normal extends DialogType
-    /* 0 */ val normal: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with DialogType
+    /* 0 */ val normal: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.normal & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogContent.types", "ResponsiveMode")
@@ -52,120 +57,120 @@ object dialogContentTypesMod {
   object ResponsiveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode & Double] = js.native
     
-    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large with Double = js.native
+    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium with Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium & Double = js.native
     
-    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small with Double = js.native
+    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small & Double = js.native
     
-    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown with Double = js.native
+    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
     
-    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge with Double = js.native
+    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
     
-    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge with Double = js.native
+    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
     
-    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge with Double = js.native
+    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
   
-  @js.native
   trait IDialogContent extends StObject
   
-  @js.native
-  trait IDialogContentProps extends ClassAttributes[DialogContentBase] {
+  trait IDialogContentProps
+    extends StObject
+       with ClassAttributes[DialogContentBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Label to be passed to to aria-label of close button
       * @defaultvalue Close
       */
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IDialogContent interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IDialogContent]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDialogContent]] = js.undefined
     
     /**
       * The classname for when the header is draggable
       */
-    var draggableHeaderClassName: js.UndefOr[String] = js.native
+    var draggableHeaderClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Is inside a multiline wrapper
       */
-    var isMultiline: js.UndefOr[Boolean] = js.native
+    var isMultiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback for when the Dialog is dismissed from the close button or light dismiss, before the animation completes.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], _]
-      ] = js.native
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+      ] = js.undefined
     
     /**
       * Responsive mode passed in from decorator.
       */
-    var responsiveMode: js.UndefOr[ResponsiveMode] = js.native
+    var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
     
     /**
       * Show an 'x' close button in the upper-right corner
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogContentStyleProps, IDialogContentStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogContentStyleProps, IDialogContentStyles]] = js.undefined
     
     /**
       * The subtext to display in the dialog
       */
-    var subText: js.UndefOr[String] = js.native
+    var subText: js.UndefOr[String] = js.undefined
     
     /**
       * The Id for subText container
       */
-    var subTextId: js.UndefOr[String] = js.native
+    var subTextId: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The title text to display at the top of the dialog.
       */
-    var title: js.UndefOr[String | Element] = js.native
+    var title: js.UndefOr[String | Element] = js.undefined
     
     /**
       * The Id for title container
       *
       * @deprecated use the `id` attribute in `titleProps` instead.
       */
-    var titleId: js.UndefOr[String] = js.native
+    var titleId: js.UndefOr[String] = js.undefined
     
     /**
       * The props for title container.
       */
-    var titleProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var titleProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       * Other top buttons that will show up next to the close button
       */
-    var topButtonsProps: js.UndefOr[js.Array[IButtonProps]] = js.native
+    var topButtonsProps: js.UndefOr[js.Array[IButtonProps]] = js.undefined
     
     /**
       * The type of Dialog to display.
       * @defaultvalue DialogType.normal
       */
-    var `type`: js.UndefOr[DialogType] = js.native
+    var `type`: js.UndefOr[DialogType] = js.undefined
   }
   object IDialogContentProps {
     
@@ -212,7 +217,7 @@ object dialogContentTypesMod {
       def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
       
       @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
@@ -291,34 +296,33 @@ object dialogContentTypesMod {
     }
   }
   
-  @js.native
   trait IDialogContentStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * The classname for when the header is draggable
       */
-    var draggableHeaderClassName: js.UndefOr[String] = js.native
+    var draggableHeaderClassName: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var isClose: js.UndefOr[Boolean] = js.native
+    var isClose: js.UndefOr[Boolean] = js.undefined
     
-    var isLargeHeader: js.UndefOr[Boolean] = js.native
+    var isLargeHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is inside a multiline wrapper
       */
-    var isMultiline: js.UndefOr[Boolean] = js.native
+    var isMultiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDialogContentStyleProps {
     
@@ -372,27 +376,26 @@ object dialogContentTypesMod {
     }
   }
   
-  @js.native
   trait IDialogContentStyles extends StObject {
     
-    var button: IStyle = js.native
+    var button: IStyle
     
     /**
       * Style for the content element.
       */
-    var content: IStyle = js.native
+    var content: IStyle
     
-    var header: IStyle = js.native
+    var header: IStyle
     
-    var inner: IStyle = js.native
+    var inner: IStyle
     
-    var innerContent: IStyle = js.native
+    var innerContent: IStyle
     
-    var subText: IStyle = js.native
+    var subText: IStyle
     
-    var title: IStyle = js.native
+    var title: IStyle
     
-    var topButton: IStyle = js.native
+    var topButton: IStyle
   }
   object IDialogContentStyles {
     

@@ -3,38 +3,49 @@ package typings.eggLogger
 import typings.eggLogger.mod.LoggerLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eggLoggerStrings {
   
   @js.native
-  sealed trait ALL extends LoggerLevel
+  sealed trait ALL
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
-  sealed trait DEBUG extends LoggerLevel
+  sealed trait DEBUG
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait ERROR extends LoggerLevel
+  sealed trait ERROR
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait INFO extends LoggerLevel
+  sealed trait INFO
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait NONE extends LoggerLevel
+  sealed trait NONE
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait WARN extends LoggerLevel
+  sealed trait WARN
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   

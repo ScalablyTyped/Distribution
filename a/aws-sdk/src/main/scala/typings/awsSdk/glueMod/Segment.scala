@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Segment extends StObject {
   
   /**
     * The zero-based index number of the segment. For example, if the total number of segments is 4, SegmentNumber values range from 0 through 3.
     */
-  var SegmentNumber: NonNegativeInteger = js.native
+  var SegmentNumber: NonNegativeInteger
   
   /**
     * The total number of segments.
     */
-  var TotalSegments: TotalSegmentsInteger = js.native
+  var TotalSegments: TotalSegmentsInteger
 }
 object Segment {
   

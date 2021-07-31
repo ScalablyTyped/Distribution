@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contrastMod extends Shortcut {
@@ -15,10 +14,11 @@ object contrastMod extends Shortcut {
   @js.native
   val default: SFC[ContrastProps] = js.native
   
-  @js.native
-  trait ContrastProps extends SVGAttributes[SVGElement] {
+  trait ContrastProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ContrastProps {
     

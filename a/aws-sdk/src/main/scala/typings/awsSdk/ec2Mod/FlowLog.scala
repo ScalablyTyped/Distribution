@@ -2,81 +2,79 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowLog extends StObject {
   
   /**
     * The date and time the flow log was created.
     */
-  var CreationTime: js.UndefOr[MillisecondDateTime] = js.native
+  var CreationTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * Information about the error that occurred. Rate limited indicates that CloudWatch Logs throttling has been applied for one or more network interfaces, or that you've reached the limit on the number of log groups that you can create. Access error indicates that the IAM role associated with the flow log does not have sufficient permissions to publish to CloudWatch Logs. Unknown error indicates an internal error.
     */
-  var DeliverLogsErrorMessage: js.UndefOr[String] = js.native
+  var DeliverLogsErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role that posts logs to CloudWatch Logs.
     */
-  var DeliverLogsPermissionArn: js.UndefOr[String] = js.native
+  var DeliverLogsPermissionArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the logs delivery (SUCCESS | FAILED).
     */
-  var DeliverLogsStatus: js.UndefOr[String] = js.native
+  var DeliverLogsStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The flow log ID.
     */
-  var FlowLogId: js.UndefOr[String] = js.native
+  var FlowLogId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the flow log (ACTIVE).
     */
-  var FlowLogStatus: js.UndefOr[String] = js.native
+  var FlowLogStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the destination to which the flow log data is published. Flow log data can be published to an CloudWatch Logs log group or an Amazon S3 bucket. If the flow log publishes to CloudWatch Logs, this element indicates the Amazon Resource Name (ARN) of the CloudWatch Logs log group to which the data is published. If the flow log publishes to Amazon S3, this element indicates the ARN of the Amazon S3 bucket to which the data is published.
     */
-  var LogDestination: js.UndefOr[String] = js.native
+  var LogDestination: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of destination to which the flow log data is published. Flow log data can be published to CloudWatch Logs or Amazon S3.
     */
-  var LogDestinationType: js.UndefOr[typings.awsSdk.ec2Mod.LogDestinationType] = js.native
+  var LogDestinationType: js.UndefOr[typings.awsSdk.ec2Mod.LogDestinationType] = js.undefined
   
   /**
     * The format of the flow log record.
     */
-  var LogFormat: js.UndefOr[String] = js.native
+  var LogFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the flow log group.
     */
-  var LogGroupName: js.UndefOr[String] = js.native
+  var LogGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum interval of time, in seconds, during which a flow of packets is captured and aggregated into a flow log record. When a network interface is attached to a Nitro-based instance, the aggregation interval is always 60 seconds (1 minute) or less, regardless of the specified value. Valid Values: 60 | 600 
     */
-  var MaxAggregationInterval: js.UndefOr[Integer] = js.native
+  var MaxAggregationInterval: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the resource on which the flow log was created.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags for the flow log.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of traffic captured for the flow log.
     */
-  var TrafficType: js.UndefOr[typings.awsSdk.ec2Mod.TrafficType] = js.native
+  var TrafficType: js.UndefOr[typings.awsSdk.ec2Mod.TrafficType] = js.undefined
 }
 object FlowLog {
   

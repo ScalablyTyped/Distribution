@@ -3,20 +3,20 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the Calendar and CalendarFor extensions.
   */
-@js.native
-trait MVCxClientCalendar extends ASPxClientCalendar {
+trait MVCxClientCalendar
+  extends StObject
+     with ASPxClientCalendar {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
   @JSName("BeginCallback")
-  var BeginCallback_MVCxClientCalendar: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]] = js.native
+  var BeginCallback_MVCxClientCalendar: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]]
 }
 object MVCxClientCalendar {
   

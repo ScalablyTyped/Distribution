@@ -4,19 +4,20 @@ import typings.rax.anon.ReadonlychildrenRaxNodeun
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Base component for plain JS classes
 @JSImport("rax", "Component")
 @js.native
-class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
+class Component[P, S, SS] protected ()
+  extends StObject
+     with ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
   
-  val props: P with ReadonlychildrenRaxNodeun = js.native
+  val props: P & ReadonlychildrenRaxNodeun = js.native
   
   def render(): RaxNode = js.native
   

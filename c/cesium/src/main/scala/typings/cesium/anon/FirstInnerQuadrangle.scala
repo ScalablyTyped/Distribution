@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.Quaternion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstInnerQuadrangle extends StObject {
   
-  var firstInnerQuadrangle: js.UndefOr[Quaternion] = js.native
+  var firstInnerQuadrangle: js.UndefOr[Quaternion] = js.undefined
   
-  var lastInnerQuadrangle: js.UndefOr[Quaternion] = js.native
+  var lastInnerQuadrangle: js.UndefOr[Quaternion] = js.undefined
   
-  var points: js.Array[Quaternion] = js.native
+  var points: js.Array[Quaternion]
   
-  var times: js.Array[Double] = js.native
+  var times: js.Array[Double]
 }
 object FirstInnerQuadrangle {
   

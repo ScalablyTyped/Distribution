@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQueryObserverObserveCallbackResult extends StObject {
   
   /** 页面的当前状态是否满足所指定的 media query */
-  var matches: Boolean = js.native
+  var matches: Boolean
 }
 object MediaQueryObserverObserveCallbackResult {
   

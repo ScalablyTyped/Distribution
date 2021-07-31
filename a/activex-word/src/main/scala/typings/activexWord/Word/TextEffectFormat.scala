@@ -6,46 +6,44 @@ import typings.activexOffice.Office.MsoTextEffectAlignment
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEffectFormat extends StObject {
   
-  var Alignment: MsoTextEffectAlignment = js.native
+  var Alignment: MsoTextEffectAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var FontBold: MsoTriState = js.native
+  var FontBold: MsoTriState
   
-  var FontItalic: MsoTriState = js.native
+  var FontItalic: MsoTriState
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var FontSize: Double = js.native
+  var FontSize: Double
   
-  var KernedPairs: MsoTriState = js.native
+  var KernedPairs: MsoTriState
   
-  var NormalizedHeight: MsoTriState = js.native
+  var NormalizedHeight: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PresetShape: MsoPresetTextEffectShape = js.native
+  var PresetShape: MsoPresetTextEffectShape
   
-  var PresetTextEffect: MsoPresetTextEffect = js.native
+  var PresetTextEffect: MsoPresetTextEffect
   
-  var RotatedChars: MsoTriState = js.native
+  var RotatedChars: MsoTriState
   
-  var Text: String = js.native
+  var Text: String
   
-  def ToggleVerticalText(): Unit = js.native
+  def ToggleVerticalText(): Unit
   
-  var Tracking: Double = js.native
+  var Tracking: Double
   
   @JSName("Word.TextEffectFormat_typekey")
-  var WordDotTextEffectFormat_typekey: TextEffectFormat = js.native
+  var WordDotTextEffectFormat_typekey: TextEffectFormat
 }
 object TextEffectFormat {
   

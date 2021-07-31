@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Which other rules to apply in the context of this rule
   */
-@js.native
-trait StructureMapGroupRuleDependent extends BackboneElement {
+trait StructureMapGroupRuleDependent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'variable'.
     */
-  var _variable: js.UndefOr[js.Array[Element]] = js.native
+  var _variable: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Name of a rule or group to apply
     */
-  var name: id = js.native
+  var name: id
   
   /**
     * Variable to pass to the rule or group
     */
-  var variable: js.Array[String] = js.native
+  var variable: js.Array[String]
 }
 object StructureMapGroupRuleDependent {
   

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** main interface for an interprocess bridge. */
-@js.native
-trait XBridge extends XInterface {
+trait XBridge
+  extends StObject
+     with XInterface {
   
   /** a unique descriptive string: protocol + ":" + XConnection.getDescription() */
-  val Description: String = js.native
+  val Description: String
   
   /** name that the bridge got when it was created. */
-  val Name: String = js.native
+  val Name: String
   
   /** a unique descriptive string: protocol + ":" + XConnection.getDescription() */
-  def getDescription(): String = js.native
+  def getDescription(): String
   
   /**
     * tries to get an interface from the remote that is known by this name.
@@ -27,10 +27,10 @@ trait XBridge extends XInterface {
     * @param sInstanceName The name of the object, that shall be retrieved from the remote process. The call is delegated to {@link com.sun.star.bridge.XInsta
     * @see com.sun.star.bridge.XInstanceProvider
     */
-  def getInstance(sInstanceName: String): XInterface = js.native
+  def getInstance(sInstanceName: String): XInterface
   
   /** name that the bridge got when it was created. */
-  def getName(): String = js.native
+  def getName(): String
 }
 object XBridge {
   

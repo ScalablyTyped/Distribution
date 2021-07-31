@@ -4,31 +4,29 @@ import typings.hapi.anon.Access
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestRoute extends StObject {
   
-  var auth: Access = js.native
+  var auth: Access
   
   /** the route internal normalized string representing the normalized path. */
-  var fingerprint: String = js.native
+  var fingerprint: String
   
   /** the route HTTP method. */
-  var method: HTTP_METHODS_PARTIAL = js.native
+  var method: HTTP_METHODS_PARTIAL
   
   /** the route path. */
-  var path: String = js.native
+  var path: String
   
   /** the active realm associated with the route. */
-  var realm: ServerRealm = js.native
+  var realm: ServerRealm
   
   /** the route options object with all defaults applied. */
-  var settings: RouteOptions = js.native
+  var settings: RouteOptions
   
   /** the route vhost option if configured. */
-  var vhost: js.UndefOr[String | js.Array[String]] = js.native
+  var vhost: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object RequestRoute {
   

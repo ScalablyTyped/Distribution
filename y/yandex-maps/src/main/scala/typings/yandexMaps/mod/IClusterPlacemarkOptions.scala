@@ -6,51 +6,49 @@ import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarousel
 import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClusterPlacemarkOptions extends StObject {
   
   var balloonContentLayout: js.UndefOr[
     clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout]
-  ] = js.native
+  ] = js.undefined
   
-  var balloonContentLayoutHeight: js.UndefOr[Double] = js.native
+  var balloonContentLayoutHeight: js.UndefOr[Double] = js.undefined
   
-  var balloonContentLayoutWidth: js.UndefOr[Double] = js.native
+  var balloonContentLayoutWidth: js.UndefOr[Double] = js.undefined
   
-  var balloonItemContentLayout: js.UndefOr[ILayout | String] = js.native
+  var balloonItemContentLayout: js.UndefOr[ILayout | String] = js.undefined
   
-  var balloonPanelContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var balloonPanelContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var disableClickZoom: js.UndefOr[Boolean] = js.native
+  var disableClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var hideIconOnBalloonOpen: js.UndefOr[Boolean] = js.native
+  var hideIconOnBalloonOpen: js.UndefOr[Boolean] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var iconContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var iconLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var iconLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var iconShape: js.UndefOr[IGeometryJson] = js.native
+  var iconShape: js.UndefOr[IGeometryJson] = js.undefined
   
-  var icons: js.UndefOr[js.Array[Href]] = js.native
+  var icons: js.UndefOr[js.Array[Href]] = js.undefined
   
-  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.native
+  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   
-  var numbers: js.UndefOr[js.Array[Double]] = js.native
+  var numbers: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var openBalloonOnClick: js.UndefOr[Boolean] = js.native
+  var openBalloonOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var openEmptyHint: js.UndefOr[Boolean] = js.native
+  var openEmptyHint: js.UndefOr[Boolean] = js.undefined
   
-  var openHintOnHover: js.UndefOr[Boolean] = js.native
+  var openHintOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var zIndexHover: js.UndefOr[Double] = js.native
+  var zIndexHover: js.UndefOr[Double] = js.undefined
 }
 object IClusterPlacemarkOptions {
   

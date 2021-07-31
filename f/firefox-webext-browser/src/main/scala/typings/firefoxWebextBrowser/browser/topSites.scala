@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,34 +13,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object topSites {
   
-  @js.native
   trait GetOptions extends StObject {
     
     /** Include sites that the user has blocked from appearing on the Firefox new tab. */
-    var includeBlocked: js.UndefOr[Boolean] = js.native
+    var includeBlocked: js.UndefOr[Boolean] = js.undefined
     
     /** Include sites favicon if available. */
-    var includeFavicon: js.UndefOr[Boolean] = js.native
+    var includeFavicon: js.UndefOr[Boolean] = js.undefined
     
     /** Include sites that the user has pinned on the Firefox new tab. */
-    var includePinned: js.UndefOr[Boolean] = js.native
+    var includePinned: js.UndefOr[Boolean] = js.undefined
     
     /** Include search shortcuts appearing on the Firefox new tab. */
-    var includeSearchShortcuts: js.UndefOr[Boolean] = js.native
+    var includeSearchShortcuts: js.UndefOr[Boolean] = js.undefined
     
     /** The number of top sites to return, defaults to the value used by Firefox */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Return the sites that exactly appear on the user's new-tab page. When true, all other options are ignored except limit and includeFavicon. If the user disabled newtab Top Sites, the newtab parameter will be ignored.
       */
-    var newtab: js.UndefOr[Boolean] = js.native
+    var newtab: js.UndefOr[Boolean] = js.undefined
     
     /** Limit the result to a single top site link per domain */
-    var onePerDomain: js.UndefOr[Boolean] = js.native
+    var onePerDomain: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Please use the other options to tune the results received from topSites. */
-    var providers: js.UndefOr[js.Array[String]] = js.native
+    var providers: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetOptions {
     
@@ -109,20 +107,19 @@ object topSites {
   
   /* topSites types */
   /** An object encapsulating a most visited URL, such as the URLs on the new tab page. */
-  @js.native
   trait MostVisitedURL extends StObject {
     
     /** Data URL for the favicon, if available. */
-    var favicon: js.UndefOr[String] = js.native
+    var favicon: js.UndefOr[String] = js.undefined
     
     /** The title of the page. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The entry type, either `url` for a normal page link, or `search` for a search shortcut. */
-    var `type`: js.UndefOr[MostVisitedURLType] = js.native
+    var `type`: js.UndefOr[MostVisitedURLType] = js.undefined
     
     /** The most visited URL. */
-    var url: String = js.native
+    var url: String
   }
   object MostVisitedURL {
     

@@ -4,29 +4,30 @@ import typings.forkTsCheckerWebpackPlugin.rpcMessagePortMod.RpcMessagePort
 import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcServiceMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcService", "createRpcService")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcService", JSImport.Namespace)
   @js.native
-  def createRpcService(port: RpcMessagePort): RpcService = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRpcService(port: RpcMessagePort): RpcService = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcService")(port.asInstanceOf[js.Any]).asInstanceOf[RpcService]
   
   type RpcCallHandler[TPayload, TResult] = js.Function1[/* payload */ TPayload, js.Promise[TResult]]
   
-  @js.native
   trait RpcService extends StObject {
     
-    def addCallHandler[TPayload, TResult](procedure: RpcProcedure[TPayload, TResult], handler: RpcCallHandler[TPayload, TResult]): Unit = js.native
+    def addCallHandler[TPayload, TResult](procedure: RpcProcedure[TPayload, TResult], handler: RpcCallHandler[TPayload, TResult]): Unit
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def isOpen(): Boolean = js.native
+    def isOpen(): Boolean
     
-    def open(): js.Promise[Unit] = js.native
+    def open(): js.Promise[Unit]
     
-    def removeCallHandler[TPayload, TResult](procedure: RpcProcedure[TPayload, TResult]): Unit = js.native
+    def removeCallHandler[TPayload, TResult](procedure: RpcProcedure[TPayload, TResult]): Unit
   }
   object RpcService {
     

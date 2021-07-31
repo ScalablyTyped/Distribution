@@ -3,7 +3,6 @@ package typings.nodegit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeOptionsMod {
@@ -11,7 +10,8 @@ object mergeOptionsMod {
   @JSImport("nodegit/merge-options", "MergeOptions")
   @js.native
   class MergeOptions ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var defaultDriver: js.UndefOr[String] = js.native
     

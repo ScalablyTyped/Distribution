@@ -3,31 +3,29 @@ package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a content part of a multi-part transfer request. Each BackgroundTransferContentPart object can represent either a single string of text content or a single file payload, but not both. */
-@js.native
 trait BackgroundTransferContentPart extends StObject {
   
   /**
     * Sets the source file for a BackgroundTransferContentPart containing the file for upload.
     * @param value The source file.
     */
-  def setFile(value: IStorageFile): Unit = js.native
+  def setFile(value: IStorageFile): Unit
   
   /**
     * Sets content disposition header values that indicate the nature of the information that this BackgroundTransferContentPart represents.
     * @param headerName The header name.
     * @param headerValue The header value.
     */
-  def setHeader(headerName: String, headerValue: String): Unit = js.native
+  def setHeader(headerName: String, headerValue: String): Unit
   
   /**
     * Use this method to set text information that the BackgroundTransferContentPart represents.
     * @param value A string value used to represent text information. (e.g. api_sig, api_key, auth_token, etc...)
     */
-  def setText(value: String): Unit = js.native
+  def setText(value: String): Unit
 }
 object BackgroundTransferContentPart {
   

@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file.
   */
-@js.native
 trait HostAlias extends StObject {
   
   /**
     * Hostnames for the above IP address.
     */
-  var hostnames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var hostnames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * IP address of the host file entry.
     */
-  var ip: js.UndefOr[Input[String]] = js.native
+  var ip: js.UndefOr[Input[String]] = js.undefined
 }
 object HostAlias {
   

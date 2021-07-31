@@ -4,7 +4,6 @@ import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istylefunctionMod {

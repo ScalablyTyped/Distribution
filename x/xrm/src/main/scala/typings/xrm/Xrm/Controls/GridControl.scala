@@ -4,7 +4,6 @@ import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.XrmEnum.GridControlContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,59 +11,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see {@link Control}
   */
-@js.native
-trait GridControl extends Control {
+trait GridControl
+  extends StObject
+     with Control {
   
   /**
     * Use this method to add event handlers to the GridControl's OnLoad event.
     *
     * @param handler The event handler.
     */
-  def addOnLoad(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnLoad(handler: ContextSensitiveHandler): Unit
   
   /**
     * This method returns context information about the GridControl.
     *
     * @returns The context type.
     */
-  def getContextType(): GridControlContext = js.native
+  def getContextType(): GridControlContext
   
   /**
     * Use this method to get the logical name of the entity data displayed in the grid.
     *
     * @returns The entity name.
     */
-  def getEntityName(): String = js.native
+  def getEntityName(): String
   
   /**
     * Use this method to get access to the Grid available in the GridControl.
     * @returns The grid.
     */
-  def getGrid(): Grid = js.native
+  def getGrid(): Grid
   
   /**
     * Use this method to get access to the ViewSelector available for the GridControl when it is configured to display views.
     * @returns The view selector.
     */
-  def getViewSelector(): ViewSelector = js.native
+  def getViewSelector(): ViewSelector
   
   /**
     * Refreshes the sub grid.
     * @remarks Not available during the "on load" event of the form.
     */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /**
     * Refreshes the sub grid ribbon.
     * @see {@link https://docs.microsoft.com/it-it/powerapps/developer/model-driven-apps/clientapi/reference/grids/gridcontrol/refreshribbon External Link: refreshRibbon (Client API reference)}
     */
-  def refreshRibbon(): Unit = js.native
+  def refreshRibbon(): Unit
   
   /**
     * Use this method to remove event handlers from the GridControl's OnLoad event.
     * @param handler The handler.
     */
-  def removeOnLoad(handler: js.Function0[Unit]): Unit = js.native
+  def removeOnLoad(handler: js.Function0[Unit]): Unit
 }
 object GridControl {
   

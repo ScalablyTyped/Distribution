@@ -5,27 +5,28 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typographyUtilMod {
   
-  @JSImport("antd/lib/typography/util", JSImport.Default)
+  @JSImport("antd/lib/typography/util", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     originEle: HTMLElement,
     option: Option,
     content: ReactNode,
     fixedContent: js.Array[ReactNode],
     ellipsisStr: String
-  ): Content = js.native
+  ): Content = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(originEle.asInstanceOf[js.Any], option.asInstanceOf[js.Any], content.asInstanceOf[js.Any], fixedContent.asInstanceOf[js.Any], ellipsisStr.asInstanceOf[js.Any])).asInstanceOf[Content]
   
-  @js.native
   trait Option extends StObject {
     
-    var rows: Double = js.native
+    var rows: Double
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object Option {
     

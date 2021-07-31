@@ -2,13 +2,11 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Supported extends StObject {
   
-  var supported: js.UndefOr[Boolean] = js.native
+  var supported: js.UndefOr[Boolean] = js.undefined
 }
 object Supported {
   

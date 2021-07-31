@@ -3,21 +3,24 @@ package typings.htmltojsx
 import typings.htmltojsx.anon.CreateClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("htmltojsx", JSImport.Namespace)
   @js.native
-  class ^ () extends HTMLtoJSX {
+  class ^ ()
+    extends StObject
+       with HTMLtoJSX {
     def this(options: CreateClass) = this()
+    
+    /* CompleteClass */
+    override def convert(html: String): String = js.native
   }
   
-  @js.native
   trait HTMLtoJSX extends StObject {
     
-    def convert(html: String): String = js.native
+    def convert(html: String): String
   }
   object HTMLtoJSX {
     

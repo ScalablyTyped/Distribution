@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html)
   */
-@js.native
 trait clusters extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait clusters extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
     */
-  def getLabelSchemes(params: clustersGetLabelSchemesParams): js.Promise[Schemes] = js.native
+  def getLabelSchemes(params: clustersGetLabelSchemesParams): js.Promise[Schemes]
 }
 object clusters {
   

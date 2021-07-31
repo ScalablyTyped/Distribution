@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for these values are: offset_days &gt;= 0 duration_days &gt;= 1 offset_days
   * + duration_days &lt;= 30
   */
-@js.native
 trait SchemaRelativeDateRange extends StObject {
   
   /**
     * The number of days in the requested date range, e.g., for a range
     * spanning today: 1. For a range spanning the last 7 days: 7.
     */
-  var durationDays: js.UndefOr[Double] = js.native
+  var durationDays: js.UndefOr[Double] = js.undefined
   
   /**
     * The end date of the filter set, specified as the number of days before
     * today, e.g., for a range where the last date is today: 0.
     */
-  var offsetDays: js.UndefOr[Double] = js.native
+  var offsetDays: js.UndefOr[Double] = js.undefined
 }
 object SchemaRelativeDateRange {
   

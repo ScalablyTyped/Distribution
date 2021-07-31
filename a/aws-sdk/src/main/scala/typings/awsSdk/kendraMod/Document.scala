@@ -2,43 +2,41 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
   /**
     * Information to use for user context filtering.
     */
-  var AccessControlList: js.UndefOr[PrincipalList] = js.native
+  var AccessControlList: js.UndefOr[PrincipalList] = js.undefined
   
   /**
     * Custom attributes to apply to the document. Use the custom attributes to provide additional information for searching, to provide facets for refining searches, and to provide additional information in the query response.
     */
-  var Attributes: js.UndefOr[DocumentAttributeList] = js.native
+  var Attributes: js.UndefOr[DocumentAttributeList] = js.undefined
   
   /**
     * The contents of the document.  Documents passed to the Blob parameter must be base64 encoded. Your code might not need to encode the document file bytes if you're using an AWS SDK to call Amazon Kendra operations. If you are calling the Amazon Kendra endpoint directly using REST, you must base64 encode the contents before sending.
     */
-  var Blob: js.UndefOr[_Blob] = js.native
+  var Blob: js.UndefOr[_Blob] = js.undefined
   
   /**
     * The file type of the document in the Blob field.
     */
-  var ContentType: js.UndefOr[typings.awsSdk.kendraMod.ContentType] = js.native
+  var ContentType: js.UndefOr[typings.awsSdk.kendraMod.ContentType] = js.undefined
   
   /**
     * A unique identifier of the document in the index.
     */
-  var Id: DocumentId = js.native
+  var Id: DocumentId
   
-  var S3Path: js.UndefOr[typings.awsSdk.kendraMod.S3Path] = js.native
+  var S3Path: js.UndefOr[typings.awsSdk.kendraMod.S3Path] = js.undefined
   
   /**
     * The title of the document.
     */
-  var Title: js.UndefOr[typings.awsSdk.kendraMod.Title] = js.native
+  var Title: js.UndefOr[typings.awsSdk.kendraMod.Title] = js.undefined
 }
 object Document {
   

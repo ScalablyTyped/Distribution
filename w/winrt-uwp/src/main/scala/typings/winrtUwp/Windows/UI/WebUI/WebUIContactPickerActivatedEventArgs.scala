@@ -6,27 +6,25 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated because it uses the Contact Picker. */
-@js.native
 trait WebUIContactPickerActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the letterbox UI of the contact picker that is displayed when the user wants to pick contacts that are provided by the app. */
-  var contactPickerUI: ContactPickerUI = js.native
+  var contactPickerUI: ContactPickerUI
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object WebUIContactPickerActivatedEventArgs {
   

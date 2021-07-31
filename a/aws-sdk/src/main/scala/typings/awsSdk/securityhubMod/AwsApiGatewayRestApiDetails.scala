@@ -2,56 +2,54 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayRestApiDetails extends StObject {
   
   /**
     * The source of the API key for metering requests according to a usage plan.  HEADER indicates whether to read the API key from the X-API-Key header of a request.  AUTHORIZER indicates whether to read the API key from the UsageIdentifierKey from a custom authorizer.
     */
-  var ApiKeySource: js.UndefOr[NonEmptyString] = js.native
+  var ApiKeySource: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of binary media types supported by the REST API.
     */
-  var BinaryMediaTypes: js.UndefOr[NonEmptyStringList] = js.native
+  var BinaryMediaTypes: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * Indicates when the API was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedDate: js.UndefOr[NonEmptyString] = js.native
+  var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A description of the REST API.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The endpoint configuration of the REST API.
     */
-  var EndpointConfiguration: js.UndefOr[AwsApiGatewayEndpointConfiguration] = js.native
+  var EndpointConfiguration: js.UndefOr[AwsApiGatewayEndpointConfiguration] = js.undefined
   
   /**
     * The identifier of the REST API.
     */
-  var Id: js.UndefOr[NonEmptyString] = js.native
+  var Id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The minimum size in bytes of a payload before compression is enabled. If null, then compression is disabled. If 0, then all payloads are compressed.
     */
-  var MinimumCompressionSize: js.UndefOr[Integer] = js.native
+  var MinimumCompressionSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The name of the REST API.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version identifier for the REST API.
     */
-  var Version: js.UndefOr[NonEmptyString] = js.native
+  var Version: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsApiGatewayRestApiDetails {
   

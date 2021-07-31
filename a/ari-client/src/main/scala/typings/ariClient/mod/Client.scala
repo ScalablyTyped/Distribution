@@ -3,99 +3,100 @@ package typings.ariClient.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends Resource {
+trait Client
+  extends StObject
+     with Resource {
   
   /**
     *  Creates a new Application instance.
     */
   def Application(): typings.ariClient.mod.Application = js.native
-  def Application(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Application = js.native
   def Application(id: String): typings.ariClient.mod.Application = js.native
   def Application(id: String, objValues: IndexableObject): typings.ariClient.mod.Application = js.native
+  def Application(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Application = js.native
   
   /**
     *  Creates a new Asterisk instance.
     */
   def Asterisk(): typings.ariClient.mod.Asterisk = js.native
-  def Asterisk(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Asterisk = js.native
   def Asterisk(id: String): typings.ariClient.mod.Asterisk = js.native
   def Asterisk(id: String, objValues: IndexableObject): typings.ariClient.mod.Asterisk = js.native
+  def Asterisk(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Asterisk = js.native
   
   /**
     *  Creates a new Bridge instance.
     */
   def Bridge(): typings.ariClient.mod.Bridge = js.native
-  def Bridge(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Bridge = js.native
   def Bridge(id: String): typings.ariClient.mod.Bridge = js.native
   def Bridge(id: String, objValues: IndexableObject): typings.ariClient.mod.Bridge = js.native
+  def Bridge(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Bridge = js.native
   
   /**
     *  Creates a new Channel instance.
     */
   def Channel(): typings.ariClient.mod.Channel = js.native
-  def Channel(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Channel = js.native
   def Channel(id: String): typings.ariClient.mod.Channel = js.native
   def Channel(id: String, objValues: IndexableObject): typings.ariClient.mod.Channel = js.native
+  def Channel(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Channel = js.native
   
   /**
     *  Creates a new DeviceState instance.
     */
   def DeviceState(): typings.ariClient.mod.DeviceState = js.native
-  def DeviceState(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.DeviceState = js.native
   def DeviceState(id: String): typings.ariClient.mod.DeviceState = js.native
   def DeviceState(id: String, objValues: IndexableObject): typings.ariClient.mod.DeviceState = js.native
+  def DeviceState(id: Unit, objValues: IndexableObject): typings.ariClient.mod.DeviceState = js.native
   
   /**
     *  Creates a new Endpoint instance.
     */
   def Endpoint(): typings.ariClient.mod.Endpoint = js.native
-  def Endpoint(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Endpoint = js.native
   def Endpoint(id: String): typings.ariClient.mod.Endpoint = js.native
   def Endpoint(id: String, objValues: IndexableObject): typings.ariClient.mod.Endpoint = js.native
+  def Endpoint(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Endpoint = js.native
   
   /**
     *  Creates a new LiveRecording instance.
     */
   def LiveRecording(): typings.ariClient.mod.LiveRecording = js.native
-  def LiveRecording(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.LiveRecording = js.native
   def LiveRecording(id: String): typings.ariClient.mod.LiveRecording = js.native
   def LiveRecording(id: String, objValues: IndexableObject): typings.ariClient.mod.LiveRecording = js.native
+  def LiveRecording(id: Unit, objValues: IndexableObject): typings.ariClient.mod.LiveRecording = js.native
   
   /**
     *  Creates a new Mailbox instance.
     */
   def Mailbox(): typings.ariClient.mod.Mailbox = js.native
-  def Mailbox(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Mailbox = js.native
   def Mailbox(id: String): typings.ariClient.mod.Mailbox = js.native
   def Mailbox(id: String, objValues: IndexableObject): typings.ariClient.mod.Mailbox = js.native
+  def Mailbox(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Mailbox = js.native
   
   /**
     *  Creates a new Playback instance.
     */
   def Playback(): typings.ariClient.mod.Playback = js.native
-  def Playback(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Playback = js.native
   def Playback(id: String): typings.ariClient.mod.Playback = js.native
   def Playback(id: String, objValues: IndexableObject): typings.ariClient.mod.Playback = js.native
+  def Playback(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Playback = js.native
   
   /**
     *  Creates a new Sound instance.
     */
   def Sound(): typings.ariClient.mod.Sound = js.native
-  def Sound(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.Sound = js.native
   def Sound(id: String): typings.ariClient.mod.Sound = js.native
   def Sound(id: String, objValues: IndexableObject): typings.ariClient.mod.Sound = js.native
+  def Sound(id: Unit, objValues: IndexableObject): typings.ariClient.mod.Sound = js.native
   
   /**
     *  Creates a new StoredRecording instance.
     */
   def StoredRecording(): typings.ariClient.mod.StoredRecording = js.native
-  def StoredRecording(id: js.UndefOr[scala.Nothing], objValues: IndexableObject): typings.ariClient.mod.StoredRecording = js.native
   def StoredRecording(id: String): typings.ariClient.mod.StoredRecording = js.native
   def StoredRecording(id: String, objValues: IndexableObject): typings.ariClient.mod.StoredRecording = js.native
+  def StoredRecording(id: Unit, objValues: IndexableObject): typings.ariClient.mod.StoredRecording = js.native
   
   /**
     *  Available Applications resources.

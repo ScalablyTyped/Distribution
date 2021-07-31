@@ -2,38 +2,36 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointConfigOutput extends StObject {
   
   /**
     * A timestamp that shows when the endpoint configuration was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
-  var DataCaptureConfig: js.UndefOr[typings.awsSdk.sagemakerMod.DataCaptureConfig] = js.native
+  var DataCaptureConfig: js.UndefOr[typings.awsSdk.sagemakerMod.DataCaptureConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint configuration.
     */
-  var EndpointConfigArn: typings.awsSdk.sagemakerMod.EndpointConfigArn = js.native
+  var EndpointConfigArn: typings.awsSdk.sagemakerMod.EndpointConfigArn
   
   /**
     * Name of the Amazon SageMaker endpoint configuration.
     */
-  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName = js.native
+  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName
   
   /**
     * AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * An array of ProductionVariant objects, one for each model that you want to host at this endpoint.
     */
-  var ProductionVariants: ProductionVariantList = js.native
+  var ProductionVariants: ProductionVariantList
 }
 object DescribeEndpointConfigOutput {
   

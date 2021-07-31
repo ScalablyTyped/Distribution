@@ -2,31 +2,29 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateCollection` operation. */
-@js.native
 trait UpdateCollectionParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The ID of the configuration in which the collection is to be updated. */
-  var configuration_id: js.UndefOr[String] = js.native
+  var configuration_id: js.UndefOr[String] = js.undefined
   
   /** A description of the collection. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The name of the collection. */
-  var name: String = js.native
+  var name: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateCollectionParams {
   

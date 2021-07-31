@@ -2,23 +2,21 @@ package typings.jimpPluginCrop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CropOnlyFrames extends StObject {
     
-    var cropOnlyFrames: js.UndefOr[Boolean] = js.native
+    var cropOnlyFrames: js.UndefOr[Boolean] = js.undefined
     
-    var cropSymmetric: js.UndefOr[Boolean] = js.native
+    var cropSymmetric: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreSides: js.UndefOr[East] = js.native
+    var ignoreSides: js.UndefOr[East] = js.undefined
     
-    var leaveBorder: js.UndefOr[Double] = js.native
+    var leaveBorder: js.UndefOr[Double] = js.undefined
     
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object CropOnlyFrames {
     
@@ -63,16 +61,15 @@ object anon {
     }
   }
   
-  @js.native
   trait East extends StObject {
     
-    var east: Boolean = js.native
+    var east: Boolean
     
-    var north: Boolean = js.native
+    var north: Boolean
     
-    var south: Boolean = js.native
+    var south: Boolean
     
-    var west: Boolean = js.native
+    var west: Boolean
   }
   object East {
     

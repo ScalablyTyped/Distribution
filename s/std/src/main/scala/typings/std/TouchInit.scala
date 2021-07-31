@@ -2,41 +2,39 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchInit extends StObject {
   
-  var altitudeAngle: js.UndefOr[Double] = js.native
+  var altitudeAngle: js.UndefOr[Double] = js.undefined
   
-  var azimuthAngle: js.UndefOr[Double] = js.native
+  var azimuthAngle: js.UndefOr[Double] = js.undefined
   
-  var clientX: js.UndefOr[Double] = js.native
+  var clientX: js.UndefOr[Double] = js.undefined
   
-  var clientY: js.UndefOr[Double] = js.native
+  var clientY: js.UndefOr[Double] = js.undefined
   
-  var force: js.UndefOr[Double] = js.native
+  var force: js.UndefOr[Double] = js.undefined
   
-  var identifier: Double = js.native
+  var identifier: Double
   
-  var pageX: js.UndefOr[Double] = js.native
+  var pageX: js.UndefOr[Double] = js.undefined
   
-  var pageY: js.UndefOr[Double] = js.native
+  var pageY: js.UndefOr[Double] = js.undefined
   
-  var radiusX: js.UndefOr[Double] = js.native
+  var radiusX: js.UndefOr[Double] = js.undefined
   
-  var radiusY: js.UndefOr[Double] = js.native
+  var radiusY: js.UndefOr[Double] = js.undefined
   
-  var rotationAngle: js.UndefOr[Double] = js.native
+  var rotationAngle: js.UndefOr[Double] = js.undefined
   
-  var screenX: js.UndefOr[Double] = js.native
+  var screenX: js.UndefOr[Double] = js.undefined
   
-  var screenY: js.UndefOr[Double] = js.native
+  var screenY: js.UndefOr[Double] = js.undefined
   
-  var target: EventTarget = js.native
+  var target: EventTarget
   
-  var touchType: js.UndefOr[TouchType] = js.native
+  var touchType: js.UndefOr[TouchType] = js.undefined
 }
 object TouchInit {
   

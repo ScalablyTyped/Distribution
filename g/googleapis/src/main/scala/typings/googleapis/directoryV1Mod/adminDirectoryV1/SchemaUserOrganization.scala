@@ -2,69 +2,67 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an organization entry.
   */
-@js.native
 trait SchemaUserOrganization extends StObject {
   
   /**
     * The cost center of the users department.
     */
-  var costCenter: js.UndefOr[String] = js.native
+  var costCenter: js.UndefOr[String] = js.undefined
   
   /**
     * Custom type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * Department within the organization.
     */
-  var department: js.UndefOr[String] = js.native
+  var department: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the organization.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The domain to which the organization belongs to.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The full-time equivalent percent within the organization (100000 = 100%).
     */
-  var fullTimeEquivalent: js.UndefOr[Double] = js.native
+  var fullTimeEquivalent: js.UndefOr[Double] = js.undefined
   
   /**
     * Location of the organization. This need not be fully qualified address.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the organization
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If it user&#39;s primary organization.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Symbol of the organization.
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * Title (designation) of the user in the organization.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard types of that entry.
@@ -73,7 +71,7 @@ trait SchemaUserOrganization extends StObject {
     * Such types should have the CUSTOM value as type and also have a
     * CustomType value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserOrganization {
   

@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicPublicKe
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a key credential, an RSA, 2048-bit, asymmetric key that represents a user's identity for an application. */

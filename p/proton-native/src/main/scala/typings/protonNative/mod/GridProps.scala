@@ -2,26 +2,24 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridProps extends StObject {
   
   /**
     * Whether the Grid is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether there is padding between the components
     */
-  var padded: js.UndefOr[Boolean] = js.native
+  var padded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the Grid can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GridProps {
   

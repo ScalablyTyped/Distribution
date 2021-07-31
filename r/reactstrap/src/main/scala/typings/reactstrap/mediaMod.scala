@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaMod {
@@ -20,38 +19,38 @@ object mediaMod {
   
   type Media = Component[MediaProps, js.Object, js.Any]
   
-  @js.native
   trait MediaProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[Boolean] = js.native
+    var body: js.UndefOr[Boolean] = js.undefined
     
-    var bottom: js.UndefOr[Boolean] = js.native
+    var bottom: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var heading: js.UndefOr[Boolean] = js.native
+    var heading: js.UndefOr[Boolean] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[Boolean] = js.native
+    var left: js.UndefOr[Boolean] = js.undefined
     
-    var list: js.UndefOr[Boolean] = js.native
+    var list: js.UndefOr[Boolean] = js.undefined
     
-    var middle: js.UndefOr[Boolean] = js.native
+    var middle: js.UndefOr[Boolean] = js.undefined
     
-    var `object`: js.UndefOr[Boolean] = js.native
+    var `object`: js.UndefOr[Boolean] = js.undefined
     
-    var right: js.UndefOr[Boolean] = js.native
+    var right: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object MediaProps {
     
@@ -137,7 +136,7 @@ object mediaMod {
       def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

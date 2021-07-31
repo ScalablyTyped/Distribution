@@ -6,7 +6,6 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.typesMod.RequestDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
@@ -30,7 +29,7 @@ object platformMod {
       *     https://developer.mozilla.org/en-US/docs/Web/API/Request/Request
       */
     def fetch(path: String): js.Promise[Response] = js.native
-    def fetch(path: String, requestInits: js.UndefOr[scala.Nothing], options: RequestDetails): js.Promise[Response] = js.native
+    def fetch(path: String, requestInits: Unit, options: RequestDetails): js.Promise[Response] = js.native
     def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
     def fetch(path: String, requestInits: RequestInit, options: RequestDetails): js.Promise[Response] = js.native
     

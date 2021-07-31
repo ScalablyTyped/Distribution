@@ -3,24 +3,24 @@ package typings.materialList
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCListActionEvent extends Event {
+  trait MDCListActionEvent
+    extends StObject
+       with Event {
     
     var detail: MDCListActionEventDetail = js.native
   }
   
-  @js.native
   trait MDCListActionEventDetail extends StObject {
     
     /**
       * Index of the list item that was activated.
       */
-    var index: Double = js.native
+    var index: Double
   }
   object MDCListActionEventDetail {
     
@@ -40,12 +40,11 @@ object typesMod {
   
   type MDCListIndex = Double | js.Array[Double]
   
-  @js.native
   trait MDCListTextAndIndex extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var text: String = js.native
+    var text: String
   }
   object MDCListTextAndIndex {
     

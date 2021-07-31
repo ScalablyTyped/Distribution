@@ -3,12 +3,10 @@ package typings.tablesorter
 import typings.tablesorter.parserTypeMod.ParserType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
   
-  @js.native
   trait Parser[TElement] extends StObject {
     
     /**
@@ -23,12 +21,12 @@ object parserMod {
       * @return
       * The formatted text.
       */
-    def format(text: String, table: TElement): String = js.native
+    def format(text: String, table: TElement): String
     
     /**
       * The id of the parser.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Checks whether a text is applicable to the parser.
@@ -39,17 +37,17 @@ object parserMod {
       * @returns
       * A value indicating whether the parser is applicable to the `text`.
       */
-    def is(text: String): Boolean = js.native
+    def is(text: String): Boolean
     
     /**
       * A value indicating whether the tablesorter should use parsed text for searching.
       */
-    var parsed: Boolean = js.native
+    var parsed: Boolean
     
     /**
       * The type of the parser.
       */
-    var `type`: ParserType = js.native
+    var `type`: ParserType
   }
   object Parser {
     
@@ -67,7 +65,7 @@ object parserMod {
     }
     
     @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser[_], TElement] (val x: Self with Parser[TElement]) extends AnyVal {
+    implicit class ParserMutableBuilder[Self <: Parser[?], TElement] (val x: Self & Parser[TElement]) extends AnyVal {
       
       @scala.inline
       def setFormat(value: (String, TElement) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))

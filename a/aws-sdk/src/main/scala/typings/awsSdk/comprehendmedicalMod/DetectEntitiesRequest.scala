@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectEntitiesRequest extends StObject {
   
   /**
     *  A UTF-8 text string containing the clinical content being examined for entities. Each string must contain fewer than 20,000 bytes of characters.
     */
-  var Text: BoundedLengthString = js.native
+  var Text: BoundedLengthString
 }
 object DetectEntitiesRequest {
   

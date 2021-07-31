@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextCursor
   * @see com.sun.star.text.XTextViewCursor
   */
-@js.native
-trait XLineCursor extends XInterface {
+trait XLineCursor
+  extends StObject
+     with XInterface {
   
   /**
     * moves the cursor to the end of the current line.
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` ) or the cursor will be just at the new position after the move ( `F
     */
-  def gotoEndOfLine(bExpand: Boolean): Unit = js.native
+  def gotoEndOfLine(bExpand: Boolean): Unit
   
   /**
     * moves the cursor to the start of the current line.
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` ) or the cursor will be just at the new position after the move ( `F
     */
-  def gotoStartOfLine(bExpand: Boolean): Unit = js.native
+  def gotoStartOfLine(bExpand: Boolean): Unit
   
   /** determines if the cursor is positioned at the end of a line. */
-  def isAtEndOfLine(): Boolean = js.native
+  def isAtEndOfLine(): Boolean
   
   /** determines if the cursor is positioned at the start of a line. */
-  def isAtStartOfLine(): Boolean = js.native
+  def isAtStartOfLine(): Boolean
 }
 object XLineCursor {
   

@@ -2,44 +2,42 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 being co
     * mpletely opaque. Note that values require the leading zero before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15, 15)' | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[BackgroundcolorBordercolor]] = js.native
+  var items: js.UndefOr[js.Array[BackgroundcolorBordercolor]] = js.undefined
   
   /**
     * Sets the line color of the object. 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15, 15)' | ...
     */
-  var `line-color`: js.UndefOr[String] = js.native
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line style of the object. 'solid' | 'dotted' | 'dashed' | 'dashdot'
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line width of the object. 1 | 3 | '6px' | ...
     */
-  var `line-width`: js.UndefOr[Double] = js.native
+  var `line-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the visibility of the object. true | false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Items {
   

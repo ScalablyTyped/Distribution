@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageScanFindingsSummary extends StObject {
   
   /**
     * The image vulnerability counts, sorted by severity.
     */
-  var findingSeverityCounts: js.UndefOr[FindingSeverityCounts] = js.native
+  var findingSeverityCounts: js.UndefOr[FindingSeverityCounts] = js.undefined
   
   /**
     * The time of the last completed image scan.
     */
-  var imageScanCompletedAt: js.UndefOr[ScanTimestamp] = js.native
+  var imageScanCompletedAt: js.UndefOr[ScanTimestamp] = js.undefined
   
   /**
     * The time when the vulnerability data was last scanned.
     */
-  var vulnerabilitySourceUpdatedAt: js.UndefOr[VulnerabilitySourceUpdateTimestamp] = js.native
+  var vulnerabilitySourceUpdatedAt: js.UndefOr[VulnerabilitySourceUpdateTimestamp] = js.undefined
 }
 object ImageScanFindingsSummary {
   

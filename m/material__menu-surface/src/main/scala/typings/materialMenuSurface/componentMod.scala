@@ -7,7 +7,6 @@ import typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   @JSImport("@material/menu-surface/component", "MDCMenuSurface")
   @js.native
   class MDCMenuSurface protected () extends MDCComponent[MDCMenuSurfaceFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCMenuSurfaceFoundation, args: js.Any*) = this()
     
     var anchorElement: Element | Null = js.native
@@ -51,9 +50,12 @@ object componentMod {
   /* static members */
   object MDCMenuSurface {
     
-    @JSImport("@material/menu-surface/component", "MDCMenuSurface.attachTo")
+    @JSImport("@material/menu-surface/component", "MDCMenuSurface")
     @js.native
-    def attachTo(root: Element): MDCMenuSurface = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenuSurface]
   }
   
   type MDCMenuSurfaceFactory = js.Function2[

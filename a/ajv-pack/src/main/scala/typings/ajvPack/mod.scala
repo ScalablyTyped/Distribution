@@ -6,67 +6,67 @@ import typings.ajv.mod.ValidateFunction
 import typings.ajvPack.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(ajv: Ajv, validate: ValidateFunction): String = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("ajv-pack", JSImport.Namespace)
   @js.native
-  def apply(ajv: Ajv, validate: ValidateFunction): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ajv-pack", "instance")
-  @js.native
-  def instance(ajv: Ajv): AjvPack = js.native
+  @scala.inline
+  def instance(ajv: Ajv): AjvPack = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(ajv.asInstanceOf[js.Any]).asInstanceOf[AjvPack]
   
-  @js.native
   trait AjvPack extends StObject {
     
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
       */
-    def addKeyword(keyword: String, definition: KeywordDefinition): Ajv = js.native
+    def addKeyword(keyword: String, definition: KeywordDefinition): Ajv
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
       */
     @JSName("addKeyword")
-    var addKeyword_Original: js.Function2[/* keyword */ String, /* definition */ KeywordDefinition, Ajv] = js.native
+    var addKeyword_Original: js.Function2[/* keyword */ String, /* definition */ KeywordDefinition, Ajv]
     
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: js.Array[js.Object]): Ajv = js.native
+    def addSchema(schema: js.Array[js.Object]): Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: js.Array[js.Object], key: String): Ajv = js.native
+    def addSchema(schema: js.Array[js.Object], key: String): Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: js.Object): Ajv = js.native
+    def addSchema(schema: js.Object): Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: js.Object, key: String): Ajv = js.native
+    def addSchema(schema: js.Object, key: String): Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
     @JSName("addSchema")
-    var addSchema_Original: FnCall = js.native
+    var addSchema_Original: FnCall
     
     /**
       * compile the schema and require the module
       * @param  schema JSON-schema
       * @return validation function
       */
-    def compile(schema: js.Object): ValidateFunction = js.native
+    def compile(schema: js.Object): ValidateFunction
     
     /**
       * validate data against the schema
@@ -74,6 +74,35 @@ object mod {
       * @param data data to validate
       * @return validation result
       */
-    def validate(schema: js.Object, data: js.Any): Boolean = js.native
+    def validate(schema: js.Object, data: js.Any): Boolean
+  }
+  object AjvPack {
+    
+    @scala.inline
+    def apply(
+      addKeyword: (/* keyword */ String, /* definition */ KeywordDefinition) => Ajv,
+      addSchema: FnCall,
+      compile: js.Object => ValidateFunction,
+      validate: (js.Object, js.Any) => Boolean
+    ): AjvPack = {
+      val __obj = js.Dynamic.literal(addKeyword = js.Any.fromFunction2(addKeyword), addSchema = addSchema.asInstanceOf[js.Any], compile = js.Any.fromFunction1(compile), validate = js.Any.fromFunction2(validate))
+      __obj.asInstanceOf[AjvPack]
+    }
+    
+    @scala.inline
+    implicit class AjvPackMutableBuilder[Self <: AjvPack] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAddKeyword(value: (/* keyword */ String, /* definition */ KeywordDefinition) => Ajv): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setAddSchema(value: FnCall): Self = StObject.set(x, "addSchema", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompile(value: js.Object => ValidateFunction): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setValidate(value: (js.Object, js.Any) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    }
   }
 }

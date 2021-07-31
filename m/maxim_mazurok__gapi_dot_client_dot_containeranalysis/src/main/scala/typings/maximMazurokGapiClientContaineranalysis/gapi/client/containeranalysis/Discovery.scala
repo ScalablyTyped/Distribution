@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Discovery extends StObject {
   
   /** Required. Immutable. The kind of analysis that is handled by this discovery. */
-  var analysisKind: js.UndefOr[String] = js.native
+  var analysisKind: js.UndefOr[String] = js.undefined
 }
 object Discovery {
   

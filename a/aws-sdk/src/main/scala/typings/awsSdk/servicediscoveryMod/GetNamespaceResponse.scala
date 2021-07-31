@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNamespaceResponse extends StObject {
   
   /**
     * A complex type that contains information about the specified namespace.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.servicediscoveryMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.servicediscoveryMod.Namespace] = js.undefined
 }
 object GetNamespaceResponse {
   

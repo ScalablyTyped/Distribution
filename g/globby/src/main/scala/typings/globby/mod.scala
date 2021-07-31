@@ -5,7 +5,6 @@ import typings.globby.anon.Extensions
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,18 +25,18 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(patterns: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: String, options: GlobbyOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: js.Array[String], options: GlobbyOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
   @JSImport("globby", JSImport.Namespace)
   @js.native
-  def apply(patterns: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("globby", JSImport.Namespace)
-  @js.native
-  def apply(patterns: String, options: GlobbyOptions): js.Promise[js.Array[String]] = js.native
-  @JSImport("globby", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = js.native
-  @JSImport("globby", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String], options: GlobbyOptions): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Note that you should avoid running the same tasks multiple times as they contain a file system cache. Instead, run this method each time to ensure file system changes are taken into consideration.
@@ -45,18 +44,14 @@ object mod {
   	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
   	@returns An object in the format `{pattern: string, options: object}`, which can be passed as arguments to [`fast-glob`](https://github.com/mrmlnc/fast-glob). This is useful for other globbing-related packages.
   	*/
-  @JSImport("globby", "generateGlobTasks")
-  @js.native
-  def generateGlobTasks(patterns: String): js.Array[GlobTask] = js.native
-  @JSImport("globby", "generateGlobTasks")
-  @js.native
-  def generateGlobTasks(patterns: String, options: GlobbyOptions): js.Array[GlobTask] = js.native
-  @JSImport("globby", "generateGlobTasks")
-  @js.native
-  def generateGlobTasks(patterns: js.Array[String]): js.Array[GlobTask] = js.native
-  @JSImport("globby", "generateGlobTasks")
-  @js.native
-  def generateGlobTasks(patterns: js.Array[String], options: GlobbyOptions): js.Array[GlobTask] = js.native
+  @scala.inline
+  def generateGlobTasks(patterns: String): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
+  @scala.inline
+  def generateGlobTasks(patterns: String, options: GlobbyOptions): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
+  @scala.inline
+  def generateGlobTasks(patterns: js.Array[String]): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
+  @scala.inline
+  def generateGlobTasks(patterns: js.Array[String], options: GlobbyOptions): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
   
   /**
   	`.gitignore` files matched by the ignore config are not used for the resulting filter function.
@@ -70,12 +65,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("globby", "gitignore")
-  @js.native
-  def gitignore(): js.Promise[FilterFunction] = js.native
-  @JSImport("globby", "gitignore")
-  @js.native
-  def gitignore(options: GitignoreOptions): js.Promise[FilterFunction] = js.native
+  @scala.inline
+  def gitignore(): js.Promise[FilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitignore")().asInstanceOf[js.Promise[FilterFunction]]
+  @scala.inline
+  def gitignore(options: GitignoreOptions): js.Promise[FilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitignore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FilterFunction]]
   @JSImport("globby", "gitignore")
   @js.native
   val gitignore_Fmod: Gitignore = js.native
@@ -87,18 +80,14 @@ object mod {
   	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3).
   	@returns Whether there are any special glob characters in the `patterns`.
   	*/
-  @JSImport("globby", "hasMagic")
-  @js.native
-  def hasMagic(patterns: String): Boolean = js.native
-  @JSImport("globby", "hasMagic")
-  @js.native
-  def hasMagic(patterns: String, options: Options): Boolean = js.native
-  @JSImport("globby", "hasMagic")
-  @js.native
-  def hasMagic(patterns: js.Array[String]): Boolean = js.native
-  @JSImport("globby", "hasMagic")
-  @js.native
-  def hasMagic(patterns: js.Array[String], options: Options): Boolean = js.native
+  @scala.inline
+  def hasMagic(patterns: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasMagic(patterns: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasMagic(patterns: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasMagic(patterns: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
   	Find files and directories using glob patterns.
@@ -116,18 +105,14 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("globby", "stream")
-  @js.native
-  def stream(patterns: String): ReadableStream = js.native
-  @JSImport("globby", "stream")
-  @js.native
-  def stream(patterns: String, options: GlobbyOptions): ReadableStream = js.native
-  @JSImport("globby", "stream")
-  @js.native
-  def stream(patterns: js.Array[String]): ReadableStream = js.native
-  @JSImport("globby", "stream")
-  @js.native
-  def stream(patterns: js.Array[String], options: GlobbyOptions): ReadableStream = js.native
+  @scala.inline
+  def stream(patterns: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def stream(patterns: String, options: GlobbyOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def stream(patterns: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def stream(patterns: js.Array[String], options: GlobbyOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   /**
   	Find files and directories using glob patterns.
@@ -136,18 +121,14 @@ object mod {
   	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
   	@returns The matching paths.
   	*/
-  @JSImport("globby", "sync")
-  @js.native
-  def sync(patterns: String): js.Array[String] = js.native
-  @JSImport("globby", "sync")
-  @js.native
-  def sync(patterns: String, options: GlobbyOptions): js.Array[String] = js.native
-  @JSImport("globby", "sync")
-  @js.native
-  def sync(patterns: js.Array[String]): js.Array[String] = js.native
-  @JSImport("globby", "sync")
-  @js.native
-  def sync(patterns: js.Array[String], options: GlobbyOptions): js.Array[String] = js.native
+  @scala.inline
+  def sync(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: String, options: GlobbyOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: js.Array[String], options: GlobbyOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   type ExpandDirectoriesOption = Boolean | js.Array[String] | Extensions
   
@@ -178,12 +159,11 @@ object mod {
     def sync(options: GitignoreOptions): FilterFunction = js.native
   }
   
-  @js.native
   trait GitignoreOptions extends StObject {
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val ignore: js.UndefOr[js.Array[String]] = js.native
+    val ignore: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GitignoreOptions {
     
@@ -213,12 +193,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GlobTask extends StObject {
     
-    val options: GlobbyOptions = js.native
+    val options: GlobbyOptions
     
-    val pattern: String = js.native
+    val pattern: String
   }
   object GlobTask {
     
@@ -239,9 +218,9 @@ object mod {
     }
   }
   
-  @js.native
   trait GlobbyOptions
-    extends typings.fastGlob.settingsMod.Options {
+    extends StObject
+       with typings.fastGlob.settingsMod.Options {
     
     /**
     		If set to `true`, `globby` will automatically glob directories for you. If you define an `Array` it will only glob files that matches the patterns inside the `Array`. You can also define an `Object` with `files` and `extensions` like in the example below.
@@ -262,13 +241,13 @@ object mod {
     		})();
     		```
     		*/
-    val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.native
+    val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.undefined
     
     /**
     		Respect ignore patterns in `.gitignore` files that apply to the globbed files.
     		@default false
     		*/
-    val gitignore: js.UndefOr[Boolean] = js.native
+    val gitignore: js.UndefOr[Boolean] = js.undefined
   }
   object GlobbyOptions {
     

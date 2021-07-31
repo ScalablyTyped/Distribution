@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuDividerMod {
@@ -35,14 +34,15 @@ object menuDividerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IMenuDividerProps extends IProps {
+  trait IMenuDividerProps
+    extends StObject
+       with IProps {
     
     /** This component does not support children. */
-    var children: js.UndefOr[scala.Nothing] = js.native
+    var children: js.UndefOr[scala.Nothing] = js.undefined
     
     /** Optional header title. */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object IMenuDividerProps {
     

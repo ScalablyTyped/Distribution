@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,7 +9,7 @@ trait ContentControls extends StObject {
   
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native
-  def Add(Type: js.UndefOr[scala.Nothing], Range: js.Any): ContentControl = js.native
+  def Add(Type: Unit, Range: js.Any): ContentControl = js.native
   def Add(Type: WdContentControlType): ContentControl = js.native
   def Add(Type: WdContentControlType, Range: js.Any): ContentControl = js.native
   

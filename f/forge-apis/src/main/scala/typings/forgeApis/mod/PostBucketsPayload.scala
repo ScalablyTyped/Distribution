@@ -2,17 +2,15 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostBucketsPayload extends StObject {
   
-  var allow: js.UndefOr[js.Array[PostBucketsPayloadAllow]] = js.native
+  var allow: js.UndefOr[js.Array[PostBucketsPayloadAllow]] = js.undefined
   
-  var bucketKey: String = js.native
+  var bucketKey: String
   
-  var policyKey: String = js.native
+  var policyKey: String
 }
 object PostBucketsPayload {
   

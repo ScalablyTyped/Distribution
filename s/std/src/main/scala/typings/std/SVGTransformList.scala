@@ -2,32 +2,30 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGTransformList defines a list of SVGTransform objects. */
-@js.native
 trait SVGTransformList extends StObject {
   
-  def appendItem(newItem: SVGTransform): SVGTransform = js.native
+  def appendItem(newItem: SVGTransform): SVGTransform
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def consolidate(): SVGTransform = js.native
+  def consolidate(): SVGTransform
   
-  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform = js.native
+  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform
   
-  def getItem(index: Double): SVGTransform = js.native
+  def getItem(index: Double): SVGTransform
   
-  def initialize(newItem: SVGTransform): SVGTransform = js.native
+  def initialize(newItem: SVGTransform): SVGTransform
   
-  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform = js.native
+  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform
   
-  val numberOfItems: Double = js.native
+  val numberOfItems: Double
   
-  def removeItem(index: Double): SVGTransform = js.native
+  def removeItem(index: Double): SVGTransform
   
-  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform = js.native
+  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform
 }
 object SVGTransformList {
   

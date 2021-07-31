@@ -2,22 +2,20 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSortOptions extends StObject {
   
   /**
     * Name of the operator corresponding to the field to sort on. The
     * corresponding property must be marked as sortable.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Ascending is the default sort order
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object SchemaSortOptions {
   

@@ -5,7 +5,6 @@ import typings.baconjs.updatebarrierMod.EventSink
 import typings.baconjs.updatebarrierMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -38,7 +37,7 @@ object anon {
   @js.native
   trait Fn3 extends StObject {
     
-    def apply[A](xs: js.Any, f: js.Function2[/* key */ String, /* x */ A, _]): Unit = js.native
+    def apply[A](xs: js.Any, f: js.Function2[/* key */ String, /* x */ A, js.Any]): Unit = js.native
   }
   
   @js.native

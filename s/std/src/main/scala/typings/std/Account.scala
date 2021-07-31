@@ -2,24 +2,22 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////
 /// DOM APIs
 /////////////////////////////
-@js.native
 trait Account extends StObject {
   
-  var displayName: java.lang.String = js.native
+  var displayName: java.lang.String
   
-  var id: java.lang.String = js.native
+  var id: java.lang.String
   
-  var imageURL: js.UndefOr[java.lang.String] = js.native
+  var imageURL: js.UndefOr[java.lang.String] = js.undefined
   
-  var name: js.UndefOr[java.lang.String] = js.native
+  var name: js.UndefOr[java.lang.String] = js.undefined
   
-  var rpDisplayName: java.lang.String = js.native
+  var rpDisplayName: java.lang.String
 }
 object Account {
   

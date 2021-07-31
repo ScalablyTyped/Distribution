@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramResult extends StObject {
   
   /** The Histogram search filters. */
-  var searchType: js.UndefOr[String] = js.native
+  var searchType: js.UndefOr[String] = js.undefined
   
   /**
     * A map from the values of field to the number of jobs with that value in this search result. Key: search type (filter names, such as the companyName). Values: the count of jobs that
@@ -19,8 +17,8 @@ trait HistogramResult extends StObject {
   var values: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramResult with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramResult & TopLevel[js.Any]
+  ] = js.undefined
 }
 object HistogramResult {
   
@@ -43,7 +41,7 @@ object HistogramResult {
     def setValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline

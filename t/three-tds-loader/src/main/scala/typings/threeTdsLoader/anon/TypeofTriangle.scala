@@ -6,11 +6,12 @@ import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTriangle extends Instantiable0[Triangle] {
+trait TypeofTriangle
+  extends StObject
+     with Instantiable0[Triangle] {
   
   def containsPoint(point: Vector3, a: Vector3, b: Vector3, c: Vector3): Boolean = js.native
   

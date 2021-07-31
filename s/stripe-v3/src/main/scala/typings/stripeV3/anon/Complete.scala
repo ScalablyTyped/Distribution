@@ -4,21 +4,19 @@ import typings.stripeV3.stripe.elements.PaymentRequestButtonStyleOptions
 import typings.stripeV3.stripe.elements.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete extends StObject {
   
-  var base: js.UndefOr[Style] = js.native
+  var base: js.UndefOr[Style] = js.undefined
   
-  var complete: js.UndefOr[Style] = js.native
+  var complete: js.UndefOr[Style] = js.undefined
   
-  var empty: js.UndefOr[Style] = js.native
+  var empty: js.UndefOr[Style] = js.undefined
   
-  var invalid: js.UndefOr[Style] = js.native
+  var invalid: js.UndefOr[Style] = js.undefined
   
-  var paymentRequestButton: js.UndefOr[PaymentRequestButtonStyleOptions] = js.native
+  var paymentRequestButton: js.UndefOr[PaymentRequestButtonStyleOptions] = js.undefined
 }
 object Complete {
   

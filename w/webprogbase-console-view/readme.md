@@ -10,9 +10,9 @@ Console browser and server app module with simplified express-like API
 | ------------------ | :-------------: |
 | Full name          | webprogbase-console-view |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 489 |
+| # downloads        | 649 |
 | # stars            | 0 |
 
 ## Links

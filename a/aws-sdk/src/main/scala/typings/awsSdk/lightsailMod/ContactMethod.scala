@@ -2,53 +2,51 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactMethod extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the contact method.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The destination of the contact method, such as an email address or a mobile phone number.
     */
-  var contactEndpoint: js.UndefOr[NonEmptyString] = js.native
+  var contactEndpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The timestamp when the contact method was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the contact method.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The protocol of the contact method, such as email or SMS (text messaging).
     */
-  var protocol: js.UndefOr[ContactProtocol] = js.native
+  var protocol: js.UndefOr[ContactProtocol] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., ContactMethod).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The current status of the contact method. A contact method has the following possible status:    PendingVerification - The contact method has not yet been verified, and the verification has not yet expired.    Valid - The contact method has been verified.    InValid - An attempt was made to verify the contact method, but the verification has expired.  
     */
-  var status: js.UndefOr[ContactMethodStatus] = js.native
+  var status: js.UndefOr[ContactMethodStatus] = js.undefined
   
   /**
     * The support code. Include this code in your email to support when you have questions about your Lightsail contact method. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
 }
 object ContactMethod {
   

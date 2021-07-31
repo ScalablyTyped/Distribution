@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTypeSpecificValue extends StObject {
   
   /**
     * A node type to which the parameter value applies.
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The parameter value for this node type.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object NodeTypeSpecificValue {
   

@@ -8,39 +8,37 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.System.ProtocolForResultsOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the activation arguments when an app is launched via LaunchUriForResultsAsync . */
-@js.native
 trait WebUIProtocolForResultsActivatedEventArgs extends StObject {
   
   /** Gets the app activation operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the family name of the caller's package. */
-  var callerPackageFamilyName: String = js.native
+  var callerPackageFamilyName: String
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the data associated with the activation. */
-  var data: ValueSet = js.native
+  var data: ValueSet
   
   /** Gets the kind of activation. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the previous execution state. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets info about the protocol for results operation that triggered the activation. */
-  var protocolForResultsOperation: ProtocolForResultsOperation = js.native
+  var protocolForResultsOperation: ProtocolForResultsOperation
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the Uniform Resource Identifier (URI) for which the app was activated. */
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object WebUIProtocolForResultsActivatedEventArgs {
   

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait UpdateConfigurationRequest extends StObject {
     The Amazon Resource Name (ARN) of the configuration.
     
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * 
     The description of the configuration revision.
     
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * 
@@ -28,7 +26,7 @@ trait UpdateConfigurationRequest extends StObject {
     When using the AWS Management Console, the SDK, or the AWS CLI, the contents of server.properties can be in plaintext.
     
     */
-  var ServerProperties: _Blob = js.native
+  var ServerProperties: _Blob
 }
 object UpdateConfigurationRequest {
   

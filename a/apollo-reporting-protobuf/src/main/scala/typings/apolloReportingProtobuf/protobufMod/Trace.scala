@@ -22,7 +22,6 @@ import typings.apolloReportingProtobuf.protobufMod.google.protobuf.ITimestamp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace")
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Trace.
   * @param [properties] Properties to set
   */
-class Trace () extends ITrace {
+class Trace ()
+  extends StObject
+     with ITrace {
   def this(properties: ITrace) = this()
   
   /** Trace clientAddress. */
@@ -99,6 +100,10 @@ class Trace () extends ITrace {
 /* static members */
 object Trace {
   
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a CachePolicy. */
   @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy")
   @js.native
@@ -106,7 +111,9 @@ object Trace {
     * Constructs a new CachePolicy.
     * @param [properties] Properties to set
     */
-  class CachePolicy () extends ICachePolicy {
+  class CachePolicy ()
+    extends StObject
+       with ICachePolicy {
     def this(properties: ICachePolicy) = this()
     
     /** CachePolicy maxAgeNs. */
@@ -125,6 +132,10 @@ object Trace {
   }
   object CachePolicy {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @js.native
     sealed trait Scope extends StObject
     /** Scope enum. */
@@ -133,19 +144,25 @@ object Trace {
     object Scope extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Scope with Double] = js.native
+      def apply(value: Double): js.UndefOr[Scope & Double] = js.native
       
       @js.native
-      sealed trait PRIVATE extends Scope
-      /* 2 */ val PRIVATE: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.PRIVATE with Double = js.native
+      sealed trait PRIVATE
+        extends StObject
+           with Scope
+      /* 2 */ val PRIVATE: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.PRIVATE & Double = js.native
       
       @js.native
-      sealed trait PUBLIC extends Scope
-      /* 1 */ val PUBLIC: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.PUBLIC with Double = js.native
+      sealed trait PUBLIC
+        extends StObject
+           with Scope
+      /* 1 */ val PUBLIC: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.PUBLIC & Double = js.native
       
       @js.native
-      sealed trait UNKNOWN extends Scope
-      /* 0 */ val UNKNOWN: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.UNKNOWN with Double = js.native
+      sealed trait UNKNOWN
+        extends StObject
+           with Scope
+      /* 0 */ val UNKNOWN: typings.apolloReportingProtobuf.protobufMod.Trace.CachePolicy.Scope.UNKNOWN & Double = js.native
     }
     
     /**
@@ -154,12 +171,10 @@ object Trace {
       * @returns CachePolicy instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.create")
-    @js.native
-    def create(): CachePolicy = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.create")
-    @js.native
-    def create(properties: ICachePolicy): CachePolicy = js.native
+    @scala.inline
+    def create(): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CachePolicy]
+    @scala.inline
+    def create(properties: ICachePolicy): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
     
     /**
       * Decodes a CachePolicy message from the specified reader or buffer.
@@ -170,18 +185,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decode")
-    @js.native
-    def decode(reader: Reader): CachePolicy = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): CachePolicy = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decode")
-    @js.native
-    def decode(reader: Uint8Array): CachePolicy = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): CachePolicy = js.native
+    @scala.inline
+    def decode(reader: Reader): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
+    @scala.inline
+    def decode(reader: Reader, length: Double): CachePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CachePolicy]
+    @scala.inline
+    def decode(reader: Uint8Array): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): CachePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CachePolicy]
     
     /**
       * Decodes a CachePolicy message from the specified reader or buffer, length delimited.
@@ -191,12 +202,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): CachePolicy = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): CachePolicy = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
     
     /**
       * Encodes the specified CachePolicy message. Does not implicitly {@link Trace.CachePolicy.verify|verify} messages.
@@ -205,12 +214,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.encode")
-    @js.native
-    def encode(message: ICachePolicy): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.encode")
-    @js.native
-    def encode(message: ICachePolicy, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ICachePolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ICachePolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified CachePolicy message, length delimited. Does not implicitly {@link Trace.CachePolicy.verify|verify} messages.
@@ -219,12 +226,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICachePolicy): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICachePolicy, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ICachePolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ICachePolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a CachePolicy message from a plain object. Also converts values to their respective internal types.
@@ -232,9 +237,8 @@ object Trace {
       * @returns CachePolicy
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): CachePolicy = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
     
     /**
       * Creates a plain object from a CachePolicy message. Also converts values to other types if specified.
@@ -243,12 +247,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.toObject")
-    @js.native
-    def toObject(message: CachePolicy): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.toObject")
-    @js.native
-    def toObject(message: CachePolicy, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: CachePolicy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: CachePolicy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a CachePolicy message.
@@ -256,9 +258,8 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.CachePolicy.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Details. */
@@ -268,7 +269,9 @@ object Trace {
     * Constructs a new Details.
     * @param [properties] Properties to set
     */
-  class Details () extends IDetails {
+  class Details ()
+    extends StObject
+       with IDetails {
     def this(properties: IDetails) = this()
     
     /** Details deprecatedVariables. */
@@ -291,18 +294,20 @@ object Trace {
   }
   object Details {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Details instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Details instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.create")
-    @js.native
-    def create(): Details = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.create")
-    @js.native
-    def create(properties: IDetails): Details = js.native
+    @scala.inline
+    def create(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Details]
+    @scala.inline
+    def create(properties: IDetails): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Details]
     
     /**
       * Decodes a Details message from the specified reader or buffer.
@@ -313,18 +318,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decode")
-    @js.native
-    def decode(reader: Reader): Details = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Details = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decode")
-    @js.native
-    def decode(reader: Uint8Array): Details = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Details = js.native
+    @scala.inline
+    def decode(reader: Reader): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Details]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Details = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Details]
+    @scala.inline
+    def decode(reader: Uint8Array): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Details]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Details = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Details]
     
     /**
       * Decodes a Details message from the specified reader or buffer, length delimited.
@@ -334,12 +335,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Details = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Details = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Details]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Details]
     
     /**
       * Encodes the specified Details message. Does not implicitly {@link Trace.Details.verify|verify} messages.
@@ -348,12 +347,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.encode")
-    @js.native
-    def encode(message: IDetails): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.encode")
-    @js.native
-    def encode(message: IDetails, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IDetails): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IDetails, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Details message, length delimited. Does not implicitly {@link Trace.Details.verify|verify} messages.
@@ -362,12 +359,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IDetails): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IDetails, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IDetails): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IDetails, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Details message from a plain object. Also converts values to their respective internal types.
@@ -375,9 +370,8 @@ object Trace {
       * @returns Details
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Details = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Details]
     
     /**
       * Creates a plain object from a Details message. Also converts values to other types if specified.
@@ -386,12 +380,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.toObject")
-    @js.native
-    def toObject(message: Details): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.toObject")
-    @js.native
-    def toObject(message: Details, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Details): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Details, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Details message.
@@ -399,9 +391,8 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Details.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents an Error. */
@@ -411,7 +402,9 @@ object Trace {
     * Constructs a new Error.
     * @param [properties] Properties to set
     */
-  class Error () extends IError {
+  class Error ()
+    extends StObject
+       with IError {
     def this(properties: IError) = this()
     
     /** Error json. */
@@ -438,18 +431,20 @@ object Trace {
   }
   object Error {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Error instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Error instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.create")
-    @js.native
-    def create(): Error = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.create")
-    @js.native
-    def create(properties: IError): Error = js.native
+    @scala.inline
+    def create(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Error]
+    @scala.inline
+    def create(properties: IError): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Error]
     
     /**
       * Decodes an Error message from the specified reader or buffer.
@@ -460,18 +455,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decode")
-    @js.native
-    def decode(reader: Reader): Error = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Error = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decode")
-    @js.native
-    def decode(reader: Uint8Array): Error = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Error = js.native
+    @scala.inline
+    def decode(reader: Reader): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Error]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Error]
+    @scala.inline
+    def decode(reader: Uint8Array): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Error]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Error]
     
     /**
       * Decodes an Error message from the specified reader or buffer, length delimited.
@@ -481,12 +472,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Error = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Error = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Error]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Error]
     
     /**
       * Encodes the specified Error message. Does not implicitly {@link Trace.Error.verify|verify} messages.
@@ -495,12 +484,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.encode")
-    @js.native
-    def encode(message: IError): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.encode")
-    @js.native
-    def encode(message: IError, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IError): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IError, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Error message, length delimited. Does not implicitly {@link Trace.Error.verify|verify} messages.
@@ -509,12 +496,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IError): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IError, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IError): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IError, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Error message from a plain object. Also converts values to their respective internal types.
@@ -522,9 +507,8 @@ object Trace {
       * @returns Error
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Error = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Error]
     
     /**
       * Creates a plain object from an Error message. Also converts values to other types if specified.
@@ -533,12 +517,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.toObject")
-    @js.native
-    def toObject(message: Error): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.toObject")
-    @js.native
-    def toObject(message: Error, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Error): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Error, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Error message.
@@ -546,9 +528,8 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Error.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a HTTP. */
@@ -558,7 +539,9 @@ object Trace {
     * Constructs a new HTTP.
     * @param [properties] Properties to set
     */
-  class HTTP () extends IHTTP {
+  class HTTP ()
+    extends StObject
+       with IHTTP {
     def this(properties: IHTTP) = this()
     
     /** HTTP host. */
@@ -601,6 +584,10 @@ object Trace {
   }
   object HTTP {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @js.native
     sealed trait Method extends StObject
     /** Method enum. */
@@ -609,47 +596,67 @@ object Trace {
     object Method extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Method with Double] = js.native
+      def apply(value: Double): js.UndefOr[Method & Double] = js.native
       
       @js.native
-      sealed trait CONNECT extends Method
-      /* 8 */ val CONNECT: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.CONNECT with Double = js.native
+      sealed trait CONNECT
+        extends StObject
+           with Method
+      /* 8 */ val CONNECT: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.CONNECT & Double = js.native
       
       @js.native
-      sealed trait DELETE extends Method
-      /* 6 */ val DELETE: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.DELETE with Double = js.native
+      sealed trait DELETE
+        extends StObject
+           with Method
+      /* 6 */ val DELETE: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.DELETE & Double = js.native
       
       @js.native
-      sealed trait GET extends Method
-      /* 2 */ val GET: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.GET with Double = js.native
+      sealed trait GET
+        extends StObject
+           with Method
+      /* 2 */ val GET: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.GET & Double = js.native
       
       @js.native
-      sealed trait HEAD extends Method
-      /* 3 */ val HEAD: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.HEAD with Double = js.native
+      sealed trait HEAD
+        extends StObject
+           with Method
+      /* 3 */ val HEAD: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.HEAD & Double = js.native
       
       @js.native
-      sealed trait OPTIONS extends Method
-      /* 1 */ val OPTIONS: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.OPTIONS with Double = js.native
+      sealed trait OPTIONS
+        extends StObject
+           with Method
+      /* 1 */ val OPTIONS: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.OPTIONS & Double = js.native
       
       @js.native
-      sealed trait PATCH extends Method
-      /* 9 */ val PATCH: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.PATCH with Double = js.native
+      sealed trait PATCH
+        extends StObject
+           with Method
+      /* 9 */ val PATCH: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.PATCH & Double = js.native
       
       @js.native
-      sealed trait POST extends Method
-      /* 4 */ val POST: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.POST with Double = js.native
+      sealed trait POST
+        extends StObject
+           with Method
+      /* 4 */ val POST: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.POST & Double = js.native
       
       @js.native
-      sealed trait PUT extends Method
-      /* 5 */ val PUT: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.PUT with Double = js.native
+      sealed trait PUT
+        extends StObject
+           with Method
+      /* 5 */ val PUT: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.PUT & Double = js.native
       
       @js.native
-      sealed trait TRACE extends Method
-      /* 7 */ val TRACE: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.TRACE with Double = js.native
+      sealed trait TRACE
+        extends StObject
+           with Method
+      /* 7 */ val TRACE: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.TRACE & Double = js.native
       
       @js.native
-      sealed trait UNKNOWN extends Method
-      /* 0 */ val UNKNOWN: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.UNKNOWN with Double = js.native
+      sealed trait UNKNOWN
+        extends StObject
+           with Method
+      /* 0 */ val UNKNOWN: typings.apolloReportingProtobuf.protobufMod.Trace.HTTP.Method.UNKNOWN & Double = js.native
     }
     
     /** Represents a Values. */
@@ -659,7 +666,9 @@ object Trace {
       * Constructs a new Values.
       * @param [properties] Properties to set
       */
-    class Values () extends IValues {
+    class Values ()
+      extends StObject
+         with IValues {
       def this(properties: IValues) = this()
       
       /**
@@ -674,18 +683,20 @@ object Trace {
     }
     object Values {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Values instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Values instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.create")
-      @js.native
-      def create(): Values = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.create")
-      @js.native
-      def create(properties: IValues): Values = js.native
+      @scala.inline
+      def create(): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Values]
+      @scala.inline
+      def create(properties: IValues): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Values]
       
       /**
         * Decodes a Values message from the specified reader or buffer.
@@ -696,18 +707,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decode")
-      @js.native
-      def decode(reader: Reader): Values = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Values = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decode")
-      @js.native
-      def decode(reader: Uint8Array): Values = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Values = js.native
+      @scala.inline
+      def decode(reader: Reader): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Values]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Values = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Values]
+      @scala.inline
+      def decode(reader: Uint8Array): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Values]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Values = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Values]
       
       /**
         * Decodes a Values message from the specified reader or buffer, length delimited.
@@ -717,12 +724,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Values = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Values = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Values]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Values]
       
       /**
         * Encodes the specified Values message. Does not implicitly {@link Trace.HTTP.Values.verify|verify} messages.
@@ -731,12 +736,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.encode")
-      @js.native
-      def encode(message: IValues): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.encode")
-      @js.native
-      def encode(message: IValues, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IValues): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IValues, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Values message, length delimited. Does not implicitly {@link Trace.HTTP.Values.verify|verify} messages.
@@ -745,12 +748,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IValues): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IValues, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IValues): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IValues, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Values message from a plain object. Also converts values to their respective internal types.
@@ -758,9 +759,8 @@ object Trace {
         * @returns Values
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Values = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Values = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Values]
       
       /**
         * Creates a plain object from a Values message. Also converts values to other types if specified.
@@ -769,12 +769,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.toObject")
-      @js.native
-      def toObject(message: Values): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.toObject")
-      @js.native
-      def toObject(message: Values, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Values): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Values, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Values message.
@@ -782,9 +780,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.Values.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -793,12 +790,10 @@ object Trace {
       * @returns HTTP instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.create")
-    @js.native
-    def create(): HTTP = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.create")
-    @js.native
-    def create(properties: IHTTP): HTTP = js.native
+    @scala.inline
+    def create(): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HTTP]
+    @scala.inline
+    def create(properties: IHTTP): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[HTTP]
     
     /**
       * Decodes a HTTP message from the specified reader or buffer.
@@ -809,18 +804,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decode")
-    @js.native
-    def decode(reader: Reader): HTTP = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): HTTP = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decode")
-    @js.native
-    def decode(reader: Uint8Array): HTTP = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): HTTP = js.native
+    @scala.inline
+    def decode(reader: Reader): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HTTP]
+    @scala.inline
+    def decode(reader: Reader, length: Double): HTTP = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HTTP]
+    @scala.inline
+    def decode(reader: Uint8Array): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HTTP]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): HTTP = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HTTP]
     
     /**
       * Decodes a HTTP message from the specified reader or buffer, length delimited.
@@ -830,12 +821,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): HTTP = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): HTTP = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HTTP]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HTTP]
     
     /**
       * Encodes the specified HTTP message. Does not implicitly {@link Trace.HTTP.verify|verify} messages.
@@ -844,12 +833,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.encode")
-    @js.native
-    def encode(message: IHTTP): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.encode")
-    @js.native
-    def encode(message: IHTTP, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IHTTP): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IHTTP, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified HTTP message, length delimited. Does not implicitly {@link Trace.HTTP.verify|verify} messages.
@@ -858,12 +845,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHTTP): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHTTP, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IHTTP): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IHTTP, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a HTTP message from a plain object. Also converts values to their respective internal types.
@@ -871,9 +856,8 @@ object Trace {
       * @returns HTTP
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): HTTP = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): HTTP = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[HTTP]
     
     /**
       * Creates a plain object from a HTTP message. Also converts values to other types if specified.
@@ -882,12 +866,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.toObject")
-    @js.native
-    def toObject(message: HTTP): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.toObject")
-    @js.native
-    def toObject(message: HTTP, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: HTTP): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: HTTP, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a HTTP message.
@@ -895,16 +877,14 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.HTTP.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Values. */
-    @js.native
     trait IValues extends StObject {
       
       /** Values value */
-      var value: js.UndefOr[js.Array[String] | Null] = js.native
+      var value: js.UndefOr[js.Array[String] | Null] = js.undefined
     }
     object IValues {
       
@@ -939,7 +919,9 @@ object Trace {
     * Constructs a new Location.
     * @param [properties] Properties to set
     */
-  class Location () extends ILocation {
+  class Location ()
+    extends StObject
+       with ILocation {
     def this(properties: ILocation) = this()
     
     /** Location column. */
@@ -958,18 +940,20 @@ object Trace {
   }
   object Location {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Location instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Location instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.create")
-    @js.native
-    def create(): Location = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.create")
-    @js.native
-    def create(properties: ILocation): Location = js.native
+    @scala.inline
+    def create(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Location]
+    @scala.inline
+    def create(properties: ILocation): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer.
@@ -980,18 +964,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decode")
-    @js.native
-    def decode(reader: Reader): Location = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Location = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decode")
-    @js.native
-    def decode(reader: Uint8Array): Location = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Location = js.native
+    @scala.inline
+    def decode(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer, length delimited.
@@ -1001,12 +981,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Location = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Location = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Encodes the specified Location message. Does not implicitly {@link Trace.Location.verify|verify} messages.
@@ -1015,12 +993,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.encode")
-    @js.native
-    def encode(message: ILocation): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.encode")
-    @js.native
-    def encode(message: ILocation, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Location message, length delimited. Does not implicitly {@link Trace.Location.verify|verify} messages.
@@ -1029,12 +1005,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILocation): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILocation, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Location message from a plain object. Also converts values to their respective internal types.
@@ -1042,9 +1016,8 @@ object Trace {
       * @returns Location
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Location = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Creates a plain object from a Location message. Also converts values to other types if specified.
@@ -1053,12 +1026,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.toObject")
-    @js.native
-    def toObject(message: Location): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.toObject")
-    @js.native
-    def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Location): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Location message.
@@ -1066,9 +1037,8 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Location.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Node. */
@@ -1078,7 +1048,9 @@ object Trace {
     * Constructs a new Node.
     * @param [properties] Properties to set
     */
-  class Node () extends INode {
+  class Node ()
+    extends StObject
+       with INode {
     def this(properties: INode) = this()
     
     /** Node child. */
@@ -1128,18 +1100,20 @@ object Trace {
   }
   object Node {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Node instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Node instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.create")
-    @js.native
-    def create(): Node = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.create")
-    @js.native
-    def create(properties: INode): Node = js.native
+    @scala.inline
+    def create(): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Node]
+    @scala.inline
+    def create(properties: INode): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Node]
     
     /**
       * Decodes a Node message from the specified reader or buffer.
@@ -1150,18 +1124,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decode")
-    @js.native
-    def decode(reader: Reader): Node = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Node = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decode")
-    @js.native
-    def decode(reader: Uint8Array): Node = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Node = js.native
+    @scala.inline
+    def decode(reader: Reader): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Node]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Node]
+    @scala.inline
+    def decode(reader: Uint8Array): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Node]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Node]
     
     /**
       * Decodes a Node message from the specified reader or buffer, length delimited.
@@ -1171,12 +1141,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Node = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Node = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Node]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Node]
     
     /**
       * Encodes the specified Node message. Does not implicitly {@link Trace.Node.verify|verify} messages.
@@ -1185,12 +1153,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.encode")
-    @js.native
-    def encode(message: INode): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.encode")
-    @js.native
-    def encode(message: INode, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: INode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: INode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Node message, length delimited. Does not implicitly {@link Trace.Node.verify|verify} messages.
@@ -1199,12 +1165,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: INode): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: INode, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: INode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: INode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Node message from a plain object. Also converts values to their respective internal types.
@@ -1212,9 +1176,8 @@ object Trace {
       * @returns Node
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Node = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Node]
     
     /**
       * Creates a plain object from a Node message. Also converts values to other types if specified.
@@ -1223,12 +1186,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.toObject")
-    @js.native
-    def toObject(message: Node): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.toObject")
-    @js.native
-    def toObject(message: Node, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Node): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Node, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Node message.
@@ -1236,9 +1197,8 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.Node.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a QueryPlanNode. */
@@ -1248,7 +1208,9 @@ object Trace {
     * Constructs a new QueryPlanNode.
     * @param [properties] Properties to set
     */
-  class QueryPlanNode () extends IQueryPlanNode {
+  class QueryPlanNode ()
+    extends StObject
+       with IQueryPlanNode {
     def this(properties: IQueryPlanNode) = this()
     
     /** QueryPlanNode node. */
@@ -1262,6 +1224,10 @@ object Trace {
   }
   object QueryPlanNode {
     
+    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Represents a FetchNode. */
     @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode")
     @js.native
@@ -1269,7 +1235,9 @@ object Trace {
       * Constructs a new FetchNode.
       * @param [properties] Properties to set
       */
-    class FetchNode () extends IFetchNode {
+    class FetchNode ()
+      extends StObject
+         with IFetchNode {
       def this(properties: IFetchNode) = this()
       
       /** FetchNode sentTimeOffset. */
@@ -1292,18 +1260,20 @@ object Trace {
     }
     object FetchNode {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new FetchNode instance using the specified properties.
         * @param [properties] Properties to set
         * @returns FetchNode instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.create")
-      @js.native
-      def create(): FetchNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.create")
-      @js.native
-      def create(properties: IFetchNode): FetchNode = js.native
+      @scala.inline
+      def create(): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FetchNode]
+      @scala.inline
+      def create(properties: IFetchNode): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
       
       /**
         * Decodes a FetchNode message from the specified reader or buffer.
@@ -1314,18 +1284,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decode")
-      @js.native
-      def decode(reader: Reader): FetchNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): FetchNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decode")
-      @js.native
-      def decode(reader: Uint8Array): FetchNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): FetchNode = js.native
+      @scala.inline
+      def decode(reader: Reader): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
+      @scala.inline
+      def decode(reader: Reader, length: Double): FetchNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FetchNode]
+      @scala.inline
+      def decode(reader: Uint8Array): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): FetchNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FetchNode]
       
       /**
         * Decodes a FetchNode message from the specified reader or buffer, length delimited.
@@ -1335,12 +1301,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): FetchNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): FetchNode = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
       
       /**
         * Encodes the specified FetchNode message. Does not implicitly {@link Trace.QueryPlanNode.FetchNode.verify|verify} messages.
@@ -1349,12 +1313,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.encode")
-      @js.native
-      def encode(message: IFetchNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.encode")
-      @js.native
-      def encode(message: IFetchNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IFetchNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IFetchNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified FetchNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.FetchNode.verify|verify} messages.
@@ -1363,12 +1325,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFetchNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFetchNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IFetchNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IFetchNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a FetchNode message from a plain object. Also converts values to their respective internal types.
@@ -1376,9 +1336,8 @@ object Trace {
         * @returns FetchNode
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): FetchNode = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): FetchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FetchNode]
       
       /**
         * Creates a plain object from a FetchNode message. Also converts values to other types if specified.
@@ -1387,12 +1346,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.toObject")
-      @js.native
-      def toObject(message: FetchNode): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.toObject")
-      @js.native
-      def toObject(message: FetchNode, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: FetchNode): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: FetchNode, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a FetchNode message.
@@ -1400,9 +1357,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FetchNode.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a FlattenNode. */
@@ -1412,7 +1368,9 @@ object Trace {
       * Constructs a new FlattenNode.
       * @param [properties] Properties to set
       */
-    class FlattenNode () extends IFlattenNode {
+    class FlattenNode ()
+      extends StObject
+         with IFlattenNode {
       def this(properties: IFlattenNode) = this()
       
       /** FlattenNode responsePath. */
@@ -1427,18 +1385,20 @@ object Trace {
     }
     object FlattenNode {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new FlattenNode instance using the specified properties.
         * @param [properties] Properties to set
         * @returns FlattenNode instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.create")
-      @js.native
-      def create(): FlattenNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.create")
-      @js.native
-      def create(properties: IFlattenNode): FlattenNode = js.native
+      @scala.inline
+      def create(): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FlattenNode]
+      @scala.inline
+      def create(properties: IFlattenNode): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
       
       /**
         * Decodes a FlattenNode message from the specified reader or buffer.
@@ -1449,18 +1409,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decode")
-      @js.native
-      def decode(reader: Reader): FlattenNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): FlattenNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decode")
-      @js.native
-      def decode(reader: Uint8Array): FlattenNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): FlattenNode = js.native
+      @scala.inline
+      def decode(reader: Reader): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
+      @scala.inline
+      def decode(reader: Reader, length: Double): FlattenNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FlattenNode]
+      @scala.inline
+      def decode(reader: Uint8Array): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): FlattenNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FlattenNode]
       
       /**
         * Decodes a FlattenNode message from the specified reader or buffer, length delimited.
@@ -1470,12 +1426,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): FlattenNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): FlattenNode = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
       
       /**
         * Encodes the specified FlattenNode message. Does not implicitly {@link Trace.QueryPlanNode.FlattenNode.verify|verify} messages.
@@ -1484,12 +1438,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.encode")
-      @js.native
-      def encode(message: IFlattenNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.encode")
-      @js.native
-      def encode(message: IFlattenNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IFlattenNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IFlattenNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified FlattenNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.FlattenNode.verify|verify} messages.
@@ -1498,12 +1450,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFlattenNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFlattenNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IFlattenNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IFlattenNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a FlattenNode message from a plain object. Also converts values to their respective internal types.
@@ -1511,9 +1461,8 @@ object Trace {
         * @returns FlattenNode
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): FlattenNode = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): FlattenNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FlattenNode]
       
       /**
         * Creates a plain object from a FlattenNode message. Also converts values to other types if specified.
@@ -1522,12 +1471,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.toObject")
-      @js.native
-      def toObject(message: FlattenNode): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.toObject")
-      @js.native
-      def toObject(message: FlattenNode, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: FlattenNode): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: FlattenNode, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a FlattenNode message.
@@ -1535,9 +1482,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.FlattenNode.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a ParallelNode. */
@@ -1547,7 +1493,9 @@ object Trace {
       * Constructs a new ParallelNode.
       * @param [properties] Properties to set
       */
-    class ParallelNode () extends IParallelNode {
+    class ParallelNode ()
+      extends StObject
+         with IParallelNode {
       def this(properties: IParallelNode) = this()
       
       /** ParallelNode nodes. */
@@ -1562,18 +1510,20 @@ object Trace {
     }
     object ParallelNode {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new ParallelNode instance using the specified properties.
         * @param [properties] Properties to set
         * @returns ParallelNode instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.create")
-      @js.native
-      def create(): ParallelNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.create")
-      @js.native
-      def create(properties: IParallelNode): ParallelNode = js.native
+      @scala.inline
+      def create(): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ParallelNode]
+      @scala.inline
+      def create(properties: IParallelNode): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
       
       /**
         * Decodes a ParallelNode message from the specified reader or buffer.
@@ -1584,18 +1534,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decode")
-      @js.native
-      def decode(reader: Reader): ParallelNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): ParallelNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decode")
-      @js.native
-      def decode(reader: Uint8Array): ParallelNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): ParallelNode = js.native
+      @scala.inline
+      def decode(reader: Reader): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
+      @scala.inline
+      def decode(reader: Reader, length: Double): ParallelNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ParallelNode]
+      @scala.inline
+      def decode(reader: Uint8Array): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): ParallelNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ParallelNode]
       
       /**
         * Decodes a ParallelNode message from the specified reader or buffer, length delimited.
@@ -1605,12 +1551,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): ParallelNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): ParallelNode = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
       
       /**
         * Encodes the specified ParallelNode message. Does not implicitly {@link Trace.QueryPlanNode.ParallelNode.verify|verify} messages.
@@ -1619,12 +1563,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.encode")
-      @js.native
-      def encode(message: IParallelNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.encode")
-      @js.native
-      def encode(message: IParallelNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IParallelNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IParallelNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ParallelNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ParallelNode.verify|verify} messages.
@@ -1633,12 +1575,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IParallelNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IParallelNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IParallelNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IParallelNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ParallelNode message from a plain object. Also converts values to their respective internal types.
@@ -1646,9 +1586,8 @@ object Trace {
         * @returns ParallelNode
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): ParallelNode = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): ParallelNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParallelNode]
       
       /**
         * Creates a plain object from a ParallelNode message. Also converts values to other types if specified.
@@ -1657,12 +1596,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.toObject")
-      @js.native
-      def toObject(message: ParallelNode): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.toObject")
-      @js.native
-      def toObject(message: ParallelNode, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: ParallelNode): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: ParallelNode, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ParallelNode message.
@@ -1670,9 +1607,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ParallelNode.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a ResponsePathElement. */
@@ -1682,7 +1618,9 @@ object Trace {
       * Constructs a new ResponsePathElement.
       * @param [properties] Properties to set
       */
-    class ResponsePathElement () extends IResponsePathElement {
+    class ResponsePathElement ()
+      extends StObject
+         with IResponsePathElement {
       def this(properties: IResponsePathElement) = this()
       
       /** ResponsePathElement fieldName. */
@@ -1704,18 +1642,20 @@ object Trace {
     }
     object ResponsePathElement {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new ResponsePathElement instance using the specified properties.
         * @param [properties] Properties to set
         * @returns ResponsePathElement instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.create")
-      @js.native
-      def create(): ResponsePathElement = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.create")
-      @js.native
-      def create(properties: IResponsePathElement): ResponsePathElement = js.native
+      @scala.inline
+      def create(): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResponsePathElement]
+      @scala.inline
+      def create(properties: IResponsePathElement): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
       
       /**
         * Decodes a ResponsePathElement message from the specified reader or buffer.
@@ -1726,18 +1666,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decode")
-      @js.native
-      def decode(reader: Reader): ResponsePathElement = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): ResponsePathElement = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decode")
-      @js.native
-      def decode(reader: Uint8Array): ResponsePathElement = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): ResponsePathElement = js.native
+      @scala.inline
+      def decode(reader: Reader): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
+      @scala.inline
+      def decode(reader: Reader, length: Double): ResponsePathElement = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponsePathElement]
+      @scala.inline
+      def decode(reader: Uint8Array): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): ResponsePathElement = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponsePathElement]
       
       /**
         * Decodes a ResponsePathElement message from the specified reader or buffer, length delimited.
@@ -1747,12 +1683,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): ResponsePathElement = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): ResponsePathElement = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
       
       /**
         * Encodes the specified ResponsePathElement message. Does not implicitly {@link Trace.QueryPlanNode.ResponsePathElement.verify|verify} messages.
@@ -1761,12 +1695,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.encode")
-      @js.native
-      def encode(message: IResponsePathElement): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.encode")
-      @js.native
-      def encode(message: IResponsePathElement, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IResponsePathElement): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IResponsePathElement, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ResponsePathElement message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ResponsePathElement.verify|verify} messages.
@@ -1775,12 +1707,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IResponsePathElement): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IResponsePathElement, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IResponsePathElement): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IResponsePathElement, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ResponsePathElement message from a plain object. Also converts values to their respective internal types.
@@ -1788,9 +1718,8 @@ object Trace {
         * @returns ResponsePathElement
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): ResponsePathElement = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): ResponsePathElement = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponsePathElement]
       
       /**
         * Creates a plain object from a ResponsePathElement message. Also converts values to other types if specified.
@@ -1799,12 +1728,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.toObject")
-      @js.native
-      def toObject(message: ResponsePathElement): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.toObject")
-      @js.native
-      def toObject(message: ResponsePathElement, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: ResponsePathElement): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: ResponsePathElement, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ResponsePathElement message.
@@ -1812,9 +1739,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.ResponsePathElement.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SequenceNode. */
@@ -1824,7 +1750,9 @@ object Trace {
       * Constructs a new SequenceNode.
       * @param [properties] Properties to set
       */
-    class SequenceNode () extends ISequenceNode {
+    class SequenceNode ()
+      extends StObject
+         with ISequenceNode {
       def this(properties: ISequenceNode) = this()
       
       /** SequenceNode nodes. */
@@ -1839,18 +1767,20 @@ object Trace {
     }
     object SequenceNode {
       
+      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new SequenceNode instance using the specified properties.
         * @param [properties] Properties to set
         * @returns SequenceNode instance
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.create")
-      @js.native
-      def create(): SequenceNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.create")
-      @js.native
-      def create(properties: ISequenceNode): SequenceNode = js.native
+      @scala.inline
+      def create(): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SequenceNode]
+      @scala.inline
+      def create(properties: ISequenceNode): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
       
       /**
         * Decodes a SequenceNode message from the specified reader or buffer.
@@ -1861,18 +1791,14 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decode")
-      @js.native
-      def decode(reader: Reader): SequenceNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): SequenceNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decode")
-      @js.native
-      def decode(reader: Uint8Array): SequenceNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): SequenceNode = js.native
+      @scala.inline
+      def decode(reader: Reader): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
+      @scala.inline
+      def decode(reader: Reader, length: Double): SequenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SequenceNode]
+      @scala.inline
+      def decode(reader: Uint8Array): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): SequenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SequenceNode]
       
       /**
         * Decodes a SequenceNode message from the specified reader or buffer, length delimited.
@@ -1882,12 +1808,10 @@ object Trace {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): SequenceNode = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): SequenceNode = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
       
       /**
         * Encodes the specified SequenceNode message. Does not implicitly {@link Trace.QueryPlanNode.SequenceNode.verify|verify} messages.
@@ -1896,12 +1820,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.encode")
-      @js.native
-      def encode(message: ISequenceNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.encode")
-      @js.native
-      def encode(message: ISequenceNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISequenceNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISequenceNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SequenceNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.SequenceNode.verify|verify} messages.
@@ -1910,12 +1832,10 @@ object Trace {
         * @returns Writer
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISequenceNode): Writer = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISequenceNode, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISequenceNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISequenceNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SequenceNode message from a plain object. Also converts values to their respective internal types.
@@ -1923,9 +1843,8 @@ object Trace {
         * @returns SequenceNode
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): SequenceNode = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): SequenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SequenceNode]
       
       /**
         * Creates a plain object from a SequenceNode message. Also converts values to other types if specified.
@@ -1934,12 +1853,10 @@ object Trace {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.toObject")
-      @js.native
-      def toObject(message: SequenceNode): StringDictionary[js.Any] = js.native
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.toObject")
-      @js.native
-      def toObject(message: SequenceNode, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: SequenceNode): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: SequenceNode, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SequenceNode message.
@@ -1947,9 +1864,8 @@ object Trace {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.SequenceNode.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -1958,12 +1874,10 @@ object Trace {
       * @returns QueryPlanNode instance
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.create")
-    @js.native
-    def create(): QueryPlanNode = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.create")
-    @js.native
-    def create(properties: IQueryPlanNode): QueryPlanNode = js.native
+    @scala.inline
+    def create(): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[QueryPlanNode]
+    @scala.inline
+    def create(properties: IQueryPlanNode): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
     
     /**
       * Decodes a QueryPlanNode message from the specified reader or buffer.
@@ -1974,18 +1888,14 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decode")
-    @js.native
-    def decode(reader: Reader): QueryPlanNode = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): QueryPlanNode = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decode")
-    @js.native
-    def decode(reader: Uint8Array): QueryPlanNode = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): QueryPlanNode = js.native
+    @scala.inline
+    def decode(reader: Reader): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
+    @scala.inline
+    def decode(reader: Reader, length: Double): QueryPlanNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QueryPlanNode]
+    @scala.inline
+    def decode(reader: Uint8Array): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): QueryPlanNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QueryPlanNode]
     
     /**
       * Decodes a QueryPlanNode message from the specified reader or buffer, length delimited.
@@ -1995,12 +1905,10 @@ object Trace {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): QueryPlanNode = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): QueryPlanNode = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
     
     /**
       * Encodes the specified QueryPlanNode message. Does not implicitly {@link Trace.QueryPlanNode.verify|verify} messages.
@@ -2009,12 +1917,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.encode")
-    @js.native
-    def encode(message: IQueryPlanNode): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.encode")
-    @js.native
-    def encode(message: IQueryPlanNode, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IQueryPlanNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IQueryPlanNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified QueryPlanNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.verify|verify} messages.
@@ -2023,12 +1929,10 @@ object Trace {
       * @returns Writer
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IQueryPlanNode): Writer = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IQueryPlanNode, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IQueryPlanNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IQueryPlanNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a QueryPlanNode message from a plain object. Also converts values to their respective internal types.
@@ -2036,9 +1940,8 @@ object Trace {
       * @returns QueryPlanNode
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): QueryPlanNode = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): QueryPlanNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QueryPlanNode]
     
     /**
       * Creates a plain object from a QueryPlanNode message. Also converts values to other types if specified.
@@ -2047,12 +1950,10 @@ object Trace {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.toObject")
-    @js.native
-    def toObject(message: QueryPlanNode): StringDictionary[js.Any] = js.native
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.toObject")
-    @js.native
-    def toObject(message: QueryPlanNode, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: QueryPlanNode): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: QueryPlanNode, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a QueryPlanNode message.
@@ -2060,31 +1961,29 @@ object Trace {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.QueryPlanNode.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a FetchNode. */
-    @js.native
     trait IFetchNode extends StObject {
       
       /** FetchNode receivedTime */
-      var receivedTime: js.UndefOr[ITimestamp | Null] = js.native
+      var receivedTime: js.UndefOr[ITimestamp | Null] = js.undefined
       
       /** FetchNode sentTime */
-      var sentTime: js.UndefOr[ITimestamp | Null] = js.native
+      var sentTime: js.UndefOr[ITimestamp | Null] = js.undefined
       
       /** FetchNode sentTimeOffset */
-      var sentTimeOffset: js.UndefOr[Double | Null] = js.native
+      var sentTimeOffset: js.UndefOr[Double | Null] = js.undefined
       
       /** FetchNode serviceName */
-      var serviceName: js.UndefOr[String | Null] = js.native
+      var serviceName: js.UndefOr[String | Null] = js.undefined
       
       /** FetchNode trace */
-      var trace: js.UndefOr[ITrace | Null] = js.native
+      var trace: js.UndefOr[ITrace | Null] = js.undefined
       
       /** FetchNode traceParsingFailed */
-      var traceParsingFailed: js.UndefOr[Boolean | Null] = js.native
+      var traceParsingFailed: js.UndefOr[Boolean | Null] = js.undefined
     }
     object IFetchNode {
       
@@ -2154,14 +2053,13 @@ object Trace {
     }
     
     /** Properties of a FlattenNode. */
-    @js.native
     trait IFlattenNode extends StObject {
       
       /** FlattenNode node */
-      var node: js.UndefOr[IQueryPlanNode | Null] = js.native
+      var node: js.UndefOr[IQueryPlanNode | Null] = js.undefined
       
       /** FlattenNode responsePath */
-      var responsePath: js.UndefOr[js.Array[IResponsePathElement] | Null] = js.native
+      var responsePath: js.UndefOr[js.Array[IResponsePathElement] | Null] = js.undefined
     }
     object IFlattenNode {
       
@@ -2198,11 +2096,10 @@ object Trace {
     }
     
     /** Properties of a ParallelNode. */
-    @js.native
     trait IParallelNode extends StObject {
       
       /** ParallelNode nodes */
-      var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.native
+      var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.undefined
     }
     object IParallelNode {
       
@@ -2230,14 +2127,13 @@ object Trace {
     }
     
     /** Properties of a ResponsePathElement. */
-    @js.native
     trait IResponsePathElement extends StObject {
       
       /** ResponsePathElement fieldName */
-      var fieldName: js.UndefOr[String | Null] = js.native
+      var fieldName: js.UndefOr[String | Null] = js.undefined
       
       /** ResponsePathElement index */
-      var index: js.UndefOr[Double | Null] = js.native
+      var index: js.UndefOr[Double | Null] = js.undefined
     }
     object IResponsePathElement {
       
@@ -2271,11 +2167,10 @@ object Trace {
     }
     
     /** Properties of a SequenceNode. */
-    @js.native
     trait ISequenceNode extends StObject {
       
       /** SequenceNode nodes */
-      var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.native
+      var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.undefined
     }
     object ISequenceNode {
       
@@ -2308,12 +2203,10 @@ object Trace {
     * @param [properties] Properties to set
     * @returns Trace instance
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.create")
-  @js.native
-  def create(): Trace = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.create")
-  @js.native
-  def create(properties: ITrace): Trace = js.native
+  @scala.inline
+  def create(): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Trace]
+  @scala.inline
+  def create(properties: ITrace): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Trace]
   
   /**
     * Decodes a Trace message from the specified reader or buffer.
@@ -2323,18 +2216,14 @@ object Trace {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decode")
-  @js.native
-  def decode(reader: Reader): Trace = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Trace = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decode")
-  @js.native
-  def decode(reader: Uint8Array): Trace = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Trace = js.native
+  @scala.inline
+  def decode(reader: Reader): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Trace]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Trace = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Trace]
+  @scala.inline
+  def decode(reader: Uint8Array): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Trace]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Trace = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Trace]
   
   /**
     * Decodes a Trace message from the specified reader or buffer, length delimited.
@@ -2343,12 +2232,10 @@ object Trace {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Trace = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Trace = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Trace]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Trace]
   
   /**
     * Encodes the specified Trace message. Does not implicitly {@link Trace.verify|verify} messages.
@@ -2356,12 +2243,10 @@ object Trace {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.encode")
-  @js.native
-  def encode(message: ITrace): Writer = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.encode")
-  @js.native
-  def encode(message: ITrace, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ITrace): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ITrace, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Trace message, length delimited. Does not implicitly {@link Trace.verify|verify} messages.
@@ -2369,21 +2254,18 @@ object Trace {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITrace): Writer = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITrace, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ITrace): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ITrace, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Trace message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Trace
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Trace = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Trace = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Trace]
   
   /**
     * Creates a plain object from a Trace message. Also converts values to other types if specified.
@@ -2391,31 +2273,27 @@ object Trace {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.toObject")
-  @js.native
-  def toObject(message: Trace): StringDictionary[js.Any] = js.native
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.toObject")
-  @js.native
-  def toObject(message: Trace, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Trace): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Trace, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Trace message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Trace.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a CachePolicy. */
-  @js.native
   trait ICachePolicy extends StObject {
     
     /** CachePolicy maxAgeNs */
-    var maxAgeNs: js.UndefOr[Double | Null] = js.native
+    var maxAgeNs: js.UndefOr[Double | Null] = js.undefined
     
     /** CachePolicy scope */
-    var scope: js.UndefOr[Scope | Null] = js.native
+    var scope: js.UndefOr[Scope | Null] = js.undefined
   }
   object ICachePolicy {
     
@@ -2449,17 +2327,16 @@ object Trace {
   }
   
   /** Properties of a Details. */
-  @js.native
   trait IDetails extends StObject {
     
     /** Details deprecatedVariables */
-    var deprecatedVariables: js.UndefOr[StringDictionary[Uint8Array] | Null] = js.native
+    var deprecatedVariables: js.UndefOr[StringDictionary[Uint8Array] | Null] = js.undefined
     
     /** Details operationName */
-    var operationName: js.UndefOr[String | Null] = js.native
+    var operationName: js.UndefOr[String | Null] = js.undefined
     
     /** Details variablesJson */
-    var variablesJson: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var variablesJson: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   }
   object IDetails {
     
@@ -2502,20 +2379,19 @@ object Trace {
   }
   
   /** Properties of an Error. */
-  @js.native
   trait IError extends StObject {
     
     /** Error json */
-    var json: js.UndefOr[String | Null] = js.native
+    var json: js.UndefOr[String | Null] = js.undefined
     
     /** Error location */
-    var location: js.UndefOr[js.Array[ILocation] | Null] = js.native
+    var location: js.UndefOr[js.Array[ILocation] | Null] = js.undefined
     
     /** Error message */
-    var message: js.UndefOr[String | Null] = js.native
+    var message: js.UndefOr[String | Null] = js.undefined
     
     /** Error timeNs */
-    var timeNs: js.UndefOr[Double | Null] = js.native
+    var timeNs: js.UndefOr[Double | Null] = js.undefined
   }
   object IError {
     
@@ -2570,32 +2446,31 @@ object Trace {
   }
   
   /** Properties of a HTTP. */
-  @js.native
   trait IHTTP extends StObject {
     
     /** HTTP host */
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
     /** HTTP method */
-    var method: js.UndefOr[Method | Null] = js.native
+    var method: js.UndefOr[Method | Null] = js.undefined
     
     /** HTTP path */
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
     /** HTTP protocol */
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
     /** HTTP requestHeaders */
-    var requestHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.native
+    var requestHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
     
     /** HTTP responseHeaders */
-    var responseHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.native
+    var responseHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
     
     /** HTTP secure */
-    var secure: js.UndefOr[Boolean | Null] = js.native
+    var secure: js.UndefOr[Boolean | Null] = js.undefined
     
     /** HTTP statusCode */
-    var statusCode: js.UndefOr[Double | Null] = js.native
+    var statusCode: js.UndefOr[Double | Null] = js.undefined
   }
   object IHTTP {
     
@@ -2683,14 +2558,13 @@ object Trace {
   }
   
   /** Properties of a Location. */
-  @js.native
   trait ILocation extends StObject {
     
     /** Location column */
-    var column: js.UndefOr[Double | Null] = js.native
+    var column: js.UndefOr[Double | Null] = js.undefined
     
     /** Location line */
-    var line: js.UndefOr[Double | Null] = js.native
+    var line: js.UndefOr[Double | Null] = js.undefined
   }
   object ILocation {
     
@@ -2724,38 +2598,37 @@ object Trace {
   }
   
   /** Properties of a Node. */
-  @js.native
   trait INode extends StObject {
     
     /** Node cachePolicy */
-    var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.native
+    var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.undefined
     
     /** Node child */
-    var child: js.UndefOr[js.Array[INode] | Null] = js.native
+    var child: js.UndefOr[js.Array[INode] | Null] = js.undefined
     
     /** Node endTime */
-    var endTime: js.UndefOr[Double | Null] = js.native
+    var endTime: js.UndefOr[Double | Null] = js.undefined
     
     /** Node error */
-    var error: js.UndefOr[js.Array[IError] | Null] = js.native
+    var error: js.UndefOr[js.Array[IError] | Null] = js.undefined
     
     /** Node index */
-    var index: js.UndefOr[Double | Null] = js.native
+    var index: js.UndefOr[Double | Null] = js.undefined
     
     /** Node originalFieldName */
-    var originalFieldName: js.UndefOr[String | Null] = js.native
+    var originalFieldName: js.UndefOr[String | Null] = js.undefined
     
     /** Node parentType */
-    var parentType: js.UndefOr[String | Null] = js.native
+    var parentType: js.UndefOr[String | Null] = js.undefined
     
     /** Node responseName */
-    var responseName: js.UndefOr[String | Null] = js.native
+    var responseName: js.UndefOr[String | Null] = js.undefined
     
     /** Node startTime */
-    var startTime: js.UndefOr[Double | Null] = js.native
+    var startTime: js.UndefOr[Double | Null] = js.undefined
     
     /** Node type */
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
   }
   object INode {
     
@@ -2867,20 +2740,19 @@ object Trace {
   }
   
   /** Properties of a QueryPlanNode. */
-  @js.native
   trait IQueryPlanNode extends StObject {
     
     /** QueryPlanNode fetch */
-    var fetch: js.UndefOr[IFetchNode | Null] = js.native
+    var fetch: js.UndefOr[IFetchNode | Null] = js.undefined
     
     /** QueryPlanNode flatten */
-    var flatten: js.UndefOr[IFlattenNode | Null] = js.native
+    var flatten: js.UndefOr[IFlattenNode | Null] = js.undefined
     
     /** QueryPlanNode parallel */
-    var parallel: js.UndefOr[IParallelNode | Null] = js.native
+    var parallel: js.UndefOr[IParallelNode | Null] = js.undefined
     
     /** QueryPlanNode sequence */
-    var sequence: js.UndefOr[ISequenceNode | Null] = js.native
+    var sequence: js.UndefOr[ISequenceNode | Null] = js.undefined
   }
   object IQueryPlanNode {
     

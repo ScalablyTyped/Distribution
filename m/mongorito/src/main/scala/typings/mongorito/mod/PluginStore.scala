@@ -2,19 +2,17 @@ package typings.mongorito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginStore extends StObject {
   
-  def dispatch(arg: js.Any): js.Any = js.native
+  def dispatch(arg: js.Any): js.Any
   
-  def getState(): State = js.native
+  def getState(): State
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
   
-  var modelClass: ModelClass = js.native
+  var modelClass: ModelClass
 }
 object PluginStore {
   

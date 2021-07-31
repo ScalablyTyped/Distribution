@@ -3,13 +3,14 @@ package typings.datatablesNet.DataTables
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "row-methods"
 //#region "table-methods"
 @js.native
-trait TableMethods extends CoreMethods {
+trait TableMethods
+  extends StObject
+     with CoreMethods {
   
   /**
     * Get the tbody node for the table in the API's context

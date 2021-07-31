@@ -9,7 +9,6 @@ import typings.typeorm.typeormStrings.INNER
 import typings.typeorm.typeormStrings.LEFT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joinAttributeMod {

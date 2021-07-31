@@ -4,29 +4,27 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SCREENSAVEROFF extends StObject {
   
   /**
     * Screensaver off
     * @since 2.3
     */
-  var SCREEN_SAVER_OFF: `0` = js.native
+  var SCREEN_SAVER_OFF: `0`
   
   /**
     * Screensaver on
     * @since 2.3
     */
-  var SCREEN_SAVER_ON: `1` = js.native
+  var SCREEN_SAVER_ON: `1`
 }
 object SCREENSAVEROFF {
   
   @scala.inline
-  def apply(SCREEN_SAVER_OFF: `0`, SCREEN_SAVER_ON: `1`): SCREENSAVEROFF = {
-    val __obj = js.Dynamic.literal(SCREEN_SAVER_OFF = SCREEN_SAVER_OFF.asInstanceOf[js.Any], SCREEN_SAVER_ON = SCREEN_SAVER_ON.asInstanceOf[js.Any])
+  def apply(): SCREENSAVEROFF = {
+    val __obj = js.Dynamic.literal(SCREEN_SAVER_OFF = 0, SCREEN_SAVER_ON = 1)
     __obj.asInstanceOf[SCREENSAVEROFF]
   }
   

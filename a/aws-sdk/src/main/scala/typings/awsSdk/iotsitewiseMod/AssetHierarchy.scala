@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetHierarchy extends StObject {
   
   /**
     * The ID of the hierarchy. This ID is a hierarchyId.
     */
-  var id: js.UndefOr[ID] = js.native
+  var id: js.UndefOr[ID] = js.undefined
   
   /**
     * The hierarchy name provided in the CreateAssetModel or UpdateAssetModel API operation.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object AssetHierarchy {
   

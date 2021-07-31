@@ -10,9 +10,9 @@ A fast implementation of a fisher-yates shuffle that does not mutate the source 
 | ------------------ | :-------------: |
 | Full name          | fast-shuffle |
 | Keywords           | knuth, fisher-yates, shuffle, deterministic, pure, seed, random, curried, ramda |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 3866 |
+| # downloads        | 5427 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.videoJs.videoCoreMod.default
 import typings.videoJs.mod.videojs.TextTrackOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextTrack {
@@ -12,7 +11,8 @@ object TextTrack {
   @JSImport("video.js/dist/alt/video.core", "default.TextTrack")
   @js.native
   class ^ protected ()
-    extends typings.videoJs.mod.videojs.TextTrack {
+    extends StObject
+       with typings.videoJs.mod.videojs.TextTrack {
     /**
       * Create an instance of this class.
       *

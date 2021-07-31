@@ -2,26 +2,26 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldSchemaInViewUserField extends FieldSchemaInView {
+trait FieldSchemaInViewUserField
+  extends StObject
+     with FieldSchemaInView {
   
   /** Either "TRUE" or "FALSE" */
-  var AllowMultipleValues: String = js.native
+  var AllowMultipleValues: String
   
   /** Either "1" or "0" */
-  var DefaultRender: String = js.native
+  var DefaultRender: String
   
   /** Either "TRUE" or "FALSE" */
-  var HasPrefix: String = js.native
+  var HasPrefix: String
   
   /** Either "1" or "0" */
-  var HasUserLink: String = js.native
+  var HasUserLink: String
   
   /** Either "TRUE" or "FALSE" */
-  var ImnHeader: String = js.native
+  var ImnHeader: String
 }
 object FieldSchemaInViewUserField {
   

@@ -3,65 +3,63 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarouselOptions extends StObject {
   
   /**
     * Perspective zoom. If 0, all items are the same size
     * @default -100
     */
-  var dist: Double = js.native
+  var dist: Double
   
   /**
     * Transition duration in milliseconds
     * @default 200
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Make the carousel a full width slider like the second example
     * @default false
     */
-  var fullWidth: Boolean = js.native
+  var fullWidth: Boolean
   
   /**
     * Set to true to show indicators
     * @default false
     */
-  var indicators: Boolean = js.native
+  var indicators: Boolean
   
   /**
     * Don't wrap around and cycle through items
     * @default false
     */
-  var noWrap: Boolean = js.native
+  var noWrap: Boolean
   
   /**
     * Set the number of visible items
     * @default 5
     */
-  var numVisible: Double = js.native
+  var numVisible: Double
   
   /**
     * Callback for when a new slide is cycled to
     * @default null
     */
-  def onCycleTo(current: Element, dragged: Boolean): Unit = js.native
+  def onCycleTo(current: Element, dragged: Boolean): Unit
   
   /**
     * Set the padding between non center items
     * @default 0
     */
-  var padding: Double = js.native
+  var padding: Double
   
   /**
     * Set the spacing of the center item
     * @default 0
     */
-  var shift: Double = js.native
+  var shift: Double
 }
 object CarouselOptions {
   

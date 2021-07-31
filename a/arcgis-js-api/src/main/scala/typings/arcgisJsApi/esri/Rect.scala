@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Rect extends Object {
+trait Rect
+  extends StObject
+     with Object {
   
   /**
     * Height of the rectangle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Width of the rectangle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * The `x`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The `y`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Rect {
   

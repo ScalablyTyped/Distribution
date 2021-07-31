@@ -3,13 +3,13 @@ package typings.atom.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PreventableExceptionThrownEvent extends ExceptionThrownEvent {
+trait PreventableExceptionThrownEvent
+  extends StObject
+     with ExceptionThrownEvent {
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
 }
 object PreventableExceptionThrownEvent {
   

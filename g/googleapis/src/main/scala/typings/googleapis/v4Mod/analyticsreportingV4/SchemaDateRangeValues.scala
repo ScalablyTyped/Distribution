@@ -2,25 +2,23 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to return a list of metrics for a single DateRange / dimension
   * combination
   */
-@js.native
 trait SchemaDateRangeValues extends StObject {
   
   /**
     * The values of each pivot region.
     */
-  var pivotValueRegions: js.UndefOr[js.Array[SchemaPivotValueRegion]] = js.native
+  var pivotValueRegions: js.UndefOr[js.Array[SchemaPivotValueRegion]] = js.undefined
   
   /**
     * Each value corresponds to each Metric in the request.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDateRangeValues {
   

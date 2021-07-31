@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -75,7 +74,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * child to the Application root entity.
   */
 @js.native
-trait Scene extends EventHandler {
+trait Scene
+  extends StObject
+     with EventHandler {
   
   /**
     * The color of the scene's ambient light. Defaults

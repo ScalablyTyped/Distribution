@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Tree")
@@ -27,14 +26,15 @@ class Tree protected () extends StObject {
 /* static members */
 object Tree {
   
-  @JSImport("git", "Tree.content_from_string")
+  @JSImport("git", "Tree")
   @js.native
-  def content_from_string(repo: js.Any, text: js.Any, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("git", "Tree.create")
-  @js.native
-  def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = js.native
-  @JSImport("git", "Tree.create")
-  @js.native
-  def create(repo: js.Any, callback: js.Function): Unit = js.native
+  @scala.inline
+  def content_from_string(repo: js.Any, text: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("content_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

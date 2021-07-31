@@ -2,31 +2,31 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxDateNavigator control.
   */
-@js.native
-trait ASPxClientDateNavigator extends ASPxClientControl {
+trait ASPxClientDateNavigator
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Allows you to provide custom highlighting styles for day cells.
     */
   var DayCellCustomHighlight: ASPxClientEvent[
     ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[ASPxClientDateNavigator]
-  ] = js.native
+  ]
   
   /**
     * Occurs when the end user selects another date.
     */
-  var SelectionChanged: ASPxClientEvent[ASPxClientDateNavigatorSelectionChangedEventHandler[ASPxClientDateNavigator]] = js.native
+  var SelectionChanged: ASPxClientEvent[ASPxClientDateNavigatorSelectionChangedEventHandler[ASPxClientDateNavigator]]
   
   /**
     * Occurs when the end user changes the visible month.
     */
-  var VisibleMonthChanged: ASPxClientEvent[ASPxClientDateNavigatorVisibleMonthChangedEventHandler[ASPxClientDateNavigator]] = js.native
+  var VisibleMonthChanged: ASPxClientEvent[ASPxClientDateNavigatorVisibleMonthChangedEventHandler[ASPxClientDateNavigator]]
 }
 object ASPxClientDateNavigator {
   

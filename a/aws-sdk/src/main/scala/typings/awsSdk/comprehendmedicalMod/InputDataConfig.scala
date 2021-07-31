@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDataConfig extends StObject {
   
   /**
     * The URI of the S3 bucket that contains the input data. The bucket must be in the same region as the API endpoint that you are calling. Each file in the document collection must be less than 40 KB. You can store a maximum of 30 GB in the bucket.
     */
-  var S3Bucket: typings.awsSdk.comprehendmedicalMod.S3Bucket = js.native
+  var S3Bucket: typings.awsSdk.comprehendmedicalMod.S3Bucket
   
   /**
     * The path to the input data files in the S3 bucket.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.comprehendmedicalMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.comprehendmedicalMod.S3Key] = js.undefined
 }
 object InputDataConfig {
   

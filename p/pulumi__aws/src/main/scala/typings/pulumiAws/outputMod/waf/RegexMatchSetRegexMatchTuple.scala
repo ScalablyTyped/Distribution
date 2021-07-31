@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexMatchSetRegexMatchTuple extends StObject {
   
   /**
     * The part of a web request that you want to search, such as a specified header or a query string.
     */
-  var fieldToMatch: RegexMatchSetRegexMatchTupleFieldToMatch = js.native
+  var fieldToMatch: RegexMatchSetRegexMatchTupleFieldToMatch
   
   /**
     * The ID of a `WAF Regex Pattern Set`.
     */
-  var regexPatternSetId: String = js.native
+  var regexPatternSetId: String
   
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
@@ -24,7 +22,7 @@ trait RegexMatchSetRegexMatchTuple extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_ByteMatchTuple.html#WAF-Type-ByteMatchTuple-TextTransformation)
     * for all supported values.
     */
-  var textTransformation: String = js.native
+  var textTransformation: String
 }
 object RegexMatchSetRegexMatchTuple {
   

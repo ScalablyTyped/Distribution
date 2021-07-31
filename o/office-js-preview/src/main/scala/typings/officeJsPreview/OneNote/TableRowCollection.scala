@@ -7,7 +7,6 @@ import typings.officeJsPreview.OneNote.Interfaces.TableRowCollectionData
 import typings.officeJsPreview.OneNote.Interfaces.TableRowCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait TableRowCollection extends ClientObject {
+trait TableRowCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -71,7 +72,7 @@ trait TableRowCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableRowCollection = js.native
-  def load(option: TableRowCollectionLoadOptions with CollectionLoadOptions): TableRowCollection = js.native
+  def load(option: TableRowCollectionLoadOptions & CollectionLoadOptions): TableRowCollection = js.native
   def load(option: String): TableRowCollection = js.native
   def load(option: js.Array[String]): TableRowCollection = js.native
   def load(option: LoadOption): TableRowCollection = js.native

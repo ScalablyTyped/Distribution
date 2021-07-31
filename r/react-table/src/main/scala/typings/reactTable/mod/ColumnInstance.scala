@@ -5,7 +5,6 @@ import typings.reactTable.reactTableStrings.Footer
 import typings.reactTable.reactTableStrings.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<react-table.react-table.ColumnInterface<D>, 'id'> */
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColumnInstance[D /* <: js.Object */] extends StObject {
   
-  var Cell: js.UndefOr[Renderer[CellProps[D, _]]] = js.native
+  var Cell: js.UndefOr[Renderer[CellProps[D, js.Any]]] = js.native
   
   var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.native
   

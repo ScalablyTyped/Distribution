@@ -5,48 +5,63 @@ import typings.postcssSelectorParser.mod.Node
 import typings.postcssSelectorParser.mod._QuoteMark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postcssSelectorParserStrings {
   
   @js.native
-  sealed trait $Equalssign extends AttributeOperator
+  sealed trait $Equalssign
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def $Equalssign: $Equalssign = "$=".asInstanceOf[$Equalssign]
   
   @js.native
-  sealed trait Apostrophe extends _QuoteMark
+  sealed trait Apostrophe
+    extends StObject
+       with _QuoteMark
   @scala.inline
   def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
-  sealed trait AsteriskEqualssign extends AttributeOperator
+  sealed trait AsteriskEqualssign
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
   
   @js.native
-  sealed trait Equalssign extends AttributeOperator
+  sealed trait Equalssign
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Quotationmark extends _QuoteMark
+  sealed trait Quotationmark
+    extends StObject
+       with _QuoteMark
   @scala.inline
   def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
-  sealed trait TildeEqualssign extends AttributeOperator
+  sealed trait TildeEqualssign
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def TildeEqualssign: TildeEqualssign = "~=".asInstanceOf[TildeEqualssign]
   
   @js.native
-  sealed trait VerticallineEqualssign extends AttributeOperator
+  sealed trait VerticallineEqualssign
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
   
   @js.native
-  sealed trait `^Equalssign` extends AttributeOperator
+  sealed trait `^Equalssign`
+    extends StObject
+       with AttributeOperator
   @scala.inline
   def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   
@@ -56,7 +71,9 @@ object postcssSelectorParserStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait attribute extends Node
+  sealed trait attribute
+    extends StObject
+       with Node
   @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
   
@@ -81,12 +98,16 @@ object postcssSelectorParserStrings {
   def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait error extends Node
+  sealed trait error
+    extends StObject
+       with Node
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait getQuotedValue extends Node
+  sealed trait getQuotedValue
+    extends StObject
+       with Node
   @scala.inline
   def getQuotedValue: getQuotedValue = "getQuotedValue".asInstanceOf[getQuotedValue]
   
@@ -101,12 +122,16 @@ object postcssSelectorParserStrings {
   def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait insensitive extends Node
+  sealed trait insensitive
+    extends StObject
+       with Node
   @scala.inline
   def insensitive: insensitive = "insensitive".asInstanceOf[insensitive]
   
   @js.native
-  sealed trait insensitiveFlag extends Node
+  sealed trait insensitiveFlag
+    extends StObject
+       with Node
   @scala.inline
   def insensitiveFlag: insensitiveFlag = "insensitiveFlag".asInstanceOf[insensitiveFlag]
   
@@ -121,7 +146,9 @@ object postcssSelectorParserStrings {
   def nesting: nesting = "nesting".asInstanceOf[nesting]
   
   @js.native
-  sealed trait nodeAt extends Node
+  sealed trait nodeAt
+    extends StObject
+       with Node
   @scala.inline
   def nodeAt: nodeAt = "nodeAt".asInstanceOf[nodeAt]
   
@@ -131,17 +158,23 @@ object postcssSelectorParserStrings {
   def ns: ns = "ns".asInstanceOf[ns]
   
   @js.native
-  sealed trait offsetOf extends Node
+  sealed trait offsetOf
+    extends StObject
+       with Node
   @scala.inline
   def offsetOf: offsetOf = "offsetOf".asInstanceOf[offsetOf]
   
   @js.native
-  sealed trait operator extends Node
+  sealed trait operator
+    extends StObject
+       with Node
   @scala.inline
   def operator: operator = "operator".asInstanceOf[operator]
   
   @js.native
-  sealed trait preferredQuoteMark extends Node
+  sealed trait preferredQuoteMark
+    extends StObject
+       with Node
   @scala.inline
   def preferredQuoteMark: preferredQuoteMark = "preferredQuoteMark".asInstanceOf[preferredQuoteMark]
   
@@ -151,22 +184,30 @@ object postcssSelectorParserStrings {
   def pseudo: pseudo = "pseudo".asInstanceOf[pseudo]
   
   @js.native
-  sealed trait qualifiedAttribute extends Node
+  sealed trait qualifiedAttribute
+    extends StObject
+       with Node
   @scala.inline
   def qualifiedAttribute: qualifiedAttribute = "qualifiedAttribute".asInstanceOf[qualifiedAttribute]
   
   @js.native
-  sealed trait quoteMark extends Node
+  sealed trait quoteMark
+    extends StObject
+       with Node
   @scala.inline
   def quoteMark: quoteMark = "quoteMark".asInstanceOf[quoteMark]
   
   @js.native
-  sealed trait quoted extends Node
+  sealed trait quoted
+    extends StObject
+       with Node
   @scala.inline
   def quoted: quoted = "quoted".asInstanceOf[quoted]
   
   @js.native
-  sealed trait raws extends Node
+  sealed trait raws
+    extends StObject
+       with Node
   @scala.inline
   def raws: raws = "raws".asInstanceOf[raws]
   
@@ -181,17 +222,23 @@ object postcssSelectorParserStrings {
   def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
-  sealed trait setValue extends Node
+  sealed trait setValue
+    extends StObject
+       with Node
   @scala.inline
   def setValue: setValue = "setValue".asInstanceOf[setValue]
   
   @js.native
-  sealed trait smartQuoteMark extends Node
+  sealed trait smartQuoteMark
+    extends StObject
+       with Node
   @scala.inline
   def smartQuoteMark: smartQuoteMark = "smartQuoteMark".asInstanceOf[smartQuoteMark]
   
   @js.native
-  sealed trait spaces extends Node
+  sealed trait spaces
+    extends StObject
+       with Node
   @scala.inline
   def spaces: spaces = "spaces".asInstanceOf[spaces]
   
@@ -206,7 +253,9 @@ object postcssSelectorParserStrings {
   def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
-  sealed trait `type` extends Node
+  sealed trait `type`
+    extends StObject
+       with Node
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   

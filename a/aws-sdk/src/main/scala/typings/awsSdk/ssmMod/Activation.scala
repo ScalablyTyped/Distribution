@@ -2,61 +2,59 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activation extends StObject {
   
   /**
     * The ID created by Systems Manager when you submitted the activation.
     */
-  var ActivationId: js.UndefOr[typings.awsSdk.ssmMod.ActivationId] = js.native
+  var ActivationId: js.UndefOr[typings.awsSdk.ssmMod.ActivationId] = js.undefined
   
   /**
     * The date the activation was created.
     */
-  var CreatedDate: js.UndefOr[typings.awsSdk.ssmMod.CreatedDate] = js.native
+  var CreatedDate: js.UndefOr[typings.awsSdk.ssmMod.CreatedDate] = js.undefined
   
   /**
     * A name for the managed instance when it is created.
     */
-  var DefaultInstanceName: js.UndefOr[typings.awsSdk.ssmMod.DefaultInstanceName] = js.native
+  var DefaultInstanceName: js.UndefOr[typings.awsSdk.ssmMod.DefaultInstanceName] = js.undefined
   
   /**
     * A user defined description of the activation.
     */
-  var Description: js.UndefOr[ActivationDescription] = js.native
+  var Description: js.UndefOr[ActivationDescription] = js.undefined
   
   /**
     * The date when this activation can no longer be used to register managed instances.
     */
-  var ExpirationDate: js.UndefOr[typings.awsSdk.ssmMod.ExpirationDate] = js.native
+  var ExpirationDate: js.UndefOr[typings.awsSdk.ssmMod.ExpirationDate] = js.undefined
   
   /**
     * Whether or not the activation is expired.
     */
-  var Expired: js.UndefOr[Boolean] = js.native
+  var Expired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Identity and Access Management (IAM) role to assign to the managed instance.
     */
-  var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.native
+  var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.undefined
   
   /**
     * The maximum number of managed instances that can be registered using this activation.
     */
-  var RegistrationLimit: js.UndefOr[typings.awsSdk.ssmMod.RegistrationLimit] = js.native
+  var RegistrationLimit: js.UndefOr[typings.awsSdk.ssmMod.RegistrationLimit] = js.undefined
   
   /**
     * The number of managed instances already registered with this activation.
     */
-  var RegistrationsCount: js.UndefOr[typings.awsSdk.ssmMod.RegistrationsCount] = js.native
+  var RegistrationsCount: js.UndefOr[typings.awsSdk.ssmMod.RegistrationsCount] = js.undefined
   
   /**
     * Tags assigned to the activation.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Activation {
   

@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseLogicCommand extends StObject {
   
-  def and(expressions: DatabaseLogicCommand*): DatabaseLogicCommand = js.native
+  def and(expressions: DatabaseLogicCommand*): DatabaseLogicCommand
   
-  def nor(expressions: DatabaseLogicCommand*): DatabaseLogicCommand = js.native
+  def nor(expressions: DatabaseLogicCommand*): DatabaseLogicCommand
   
-  def not(expression: DatabaseLogicCommand): DatabaseLogicCommand = js.native
+  def not(expression: DatabaseLogicCommand): DatabaseLogicCommand
   
-  def or(expressions: DatabaseLogicCommand*): DatabaseLogicCommand = js.native
+  def or(expressions: DatabaseLogicCommand*): DatabaseLogicCommand
 }
 object DatabaseLogicCommand {
   

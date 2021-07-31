@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientListEdit.SelectedIndexChanged event.
   */
-@js.native
-trait ASPxClientListEditItemSelectedChangedEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientListEditItemSelectedChangedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the index of the item related to the event.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets whether the item has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
 }
 object ASPxClientListEditItemSelectedChangedEventArgs {
   

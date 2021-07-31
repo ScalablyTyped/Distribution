@@ -4,15 +4,13 @@ import typings.socketclusterClient.authMod.AuthToken
 import typings.socketclusterClient.authMod.SignedAuthToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticateData extends StObject {
   
-  var authToken: AuthToken = js.native
+  var authToken: AuthToken
   
-  var signedAuthToken: SignedAuthToken = js.native
+  var signedAuthToken: SignedAuthToken
 }
 object AuthenticateData {
   

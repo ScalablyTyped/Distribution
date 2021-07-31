@@ -2,36 +2,34 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/common-types.MetaSysProps & {  appDefinition :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps}} */
-@js.native
 trait MetaSysPropsappDefinition extends StObject {
   
-  var appDefinition: Sys = js.native
+  var appDefinition: Sys
   
-  var archivedVersion: js.UndefOr[Double] = js.native
+  var archivedVersion: js.UndefOr[Double] = js.undefined
   
-  var createdAt: String = js.native
+  var createdAt: String
   
-  var createdBy: js.UndefOr[Sys] = js.native
+  var createdBy: js.UndefOr[Sys] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var publishedVersion: js.UndefOr[Double] = js.native
+  var publishedVersion: js.UndefOr[Double] = js.undefined
   
-  var space: js.UndefOr[Sys] = js.native
+  var space: js.UndefOr[Sys] = js.undefined
   
-  var status: js.UndefOr[Sys] = js.native
+  var status: js.UndefOr[Sys] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updatedAt: String = js.native
+  var updatedAt: String
   
-  var updatedBy: js.UndefOr[Sys] = js.native
+  var updatedBy: js.UndefOr[Sys] = js.undefined
   
-  var version: Double = js.native
+  var version: Double
 }
 object MetaSysPropsappDefinition {
   

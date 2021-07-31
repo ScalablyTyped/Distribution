@@ -2,39 +2,37 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for notifications list response.
   */
-@js.native
 trait SchemaNotifications extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * List of notifications in this page.
     */
-  var items: js.UndefOr[js.Array[SchemaNotification]] = js.native
+  var items: js.UndefOr[js.Array[SchemaNotification]] = js.undefined
   
   /**
     * The type of the resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token for fetching the next page of notifications.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Number of unread notification for the domain.
     */
-  var unreadNotificationsCount: js.UndefOr[Double] = js.native
+  var unreadNotificationsCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaNotifications {
   

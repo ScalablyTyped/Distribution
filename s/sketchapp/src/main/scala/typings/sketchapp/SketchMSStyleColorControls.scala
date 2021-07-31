@@ -3,36 +3,27 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.styleColorControls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyleColorControls extends StObject {
   
-  var _class: styleColorControls = js.native
+  var _class: styleColorControls
   
-  var brightness: Double = js.native
+  var brightness: Double
   
-  var contrast: Double = js.native
+  var contrast: Double
   
-  var hue: Double = js.native
+  var hue: Double
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var saturation: Double = js.native
+  var saturation: Double
 }
 object SketchMSStyleColorControls {
   
   @scala.inline
-  def apply(
-    _class: styleColorControls,
-    brightness: Double,
-    contrast: Double,
-    hue: Double,
-    isEnabled: Double,
-    saturation: Double
-  ): SketchMSStyleColorControls = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], brightness = brightness.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
+  def apply(brightness: Double, contrast: Double, hue: Double, isEnabled: Double, saturation: Double): SketchMSStyleColorControls = {
+    val __obj = js.Dynamic.literal(_class = "styleColorControls", brightness = brightness.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleColorControls]
   }
   

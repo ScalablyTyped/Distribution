@@ -2,26 +2,25 @@ package typings.aspnetIdentityPw
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("aspnet-identity-pw", "hashPassword")
+  @JSImport("aspnet-identity-pw", JSImport.Namespace)
   @js.native
-  def hashPassword(password: String): String = js.native
-  @JSImport("aspnet-identity-pw", "hashPassword")
-  @js.native
-  def hashPassword(password: String, callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("aspnet-identity-pw", "validatePassword")
-  @js.native
-  def validatePassword(password: String, hashedPass: String): Boolean = js.native
-  @JSImport("aspnet-identity-pw", "validatePassword")
-  @js.native
+  @scala.inline
+  def hashPassword(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hashPassword(password: String, callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def validatePassword(password: String, hashedPass: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePassword")(password.asInstanceOf[js.Any], hashedPass.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def validatePassword(
     password: String,
     hashedPass: String,
     callback: js.Function2[/* err */ js.Any, /* result */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePassword")(password.asInstanceOf[js.Any], hashedPass.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

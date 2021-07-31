@@ -3,7 +3,6 @@ package typings.rbx
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navbarContextMod {
@@ -16,12 +15,11 @@ object navbarContextMod {
   @js.native
   val initialValue: NavbarContextValue = js.native
   
-  @js.native
   trait NavbarContextValue extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    def setActive(value: Boolean): Unit = js.native
+    def setActive(value: Boolean): Unit
   }
   object NavbarContextValue {
     

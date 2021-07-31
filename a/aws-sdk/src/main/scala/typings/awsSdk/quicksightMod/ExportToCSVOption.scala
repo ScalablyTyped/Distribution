@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportToCSVOption extends StObject {
   
   /**
     * Availability status.
     */
-  var AvailabilityStatus: js.UndefOr[DashboardBehavior] = js.native
+  var AvailabilityStatus: js.UndefOr[DashboardBehavior] = js.undefined
 }
 object ExportToCSVOption {
   

@@ -4,17 +4,15 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContact extends StObject {
   
-  var fields: IVector[IContactField] = js.native
+  var fields: IVector[IContactField]
   
-  var name: String = js.native
+  var name: String
   
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
 }
 object IContact {
   

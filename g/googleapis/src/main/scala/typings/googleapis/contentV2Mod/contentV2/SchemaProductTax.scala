@@ -2,23 +2,21 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductTax extends StObject {
   
   /**
     * The country within which the item is taxed, specified as a CLDR territory
     * code.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The numeric ID of a location that the tax rate applies to as defined in
     * the AdWords API.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code range that the tax rate applies to, represented by a ZIP
@@ -26,22 +24,22 @@ trait SchemaProductTax extends StObject {
     * or two ZIP code prefixes of equal length. Examples: 94114, 94*,
     * 94002-95460, 94*-95*.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of tax rate that applies to the item price.
     */
-  var rate: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
   /**
     * The geographic region to which the tax rate applies.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true if tax is charged on shipping.
     */
-  var taxShip: js.UndefOr[Boolean] = js.native
+  var taxShip: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaProductTax {
   

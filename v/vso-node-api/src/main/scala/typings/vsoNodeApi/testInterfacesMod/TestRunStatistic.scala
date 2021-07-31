@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRunStatistic extends StObject {
   
-  var run: ShallowReference = js.native
+  var run: ShallowReference
   
-  var runStatistics: js.Array[RunStatistic] = js.native
+  var runStatistics: js.Array[RunStatistic]
 }
 object TestRunStatistic {
   

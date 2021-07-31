@@ -7,23 +7,21 @@ import typings.pulumiPulumi.resourceMod.ID
 import typings.pulumiPulumi.resourceMod.URN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerProviderMod {
   
-  @js.native
   trait CheckFailure extends StObject {
     
     /**
       * The property that failed validation.
       */
-    val property: String = js.native
+    val property: String
     
     /**
       * The reason that the property failed validation.
       */
-    val reason: String = js.native
+    val reason: String
   }
   object CheckFailure {
     
@@ -44,18 +42,17 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait CheckResult extends StObject {
     
     /**
       * Any validation failures that occurred.
       */
-    val failures: js.UndefOr[js.Array[CheckFailure]] = js.native
+    val failures: js.UndefOr[js.Array[CheckFailure]] = js.undefined
     
     /**
       * The inputs to use, if any.
       */
-    val inputs: js.UndefOr[js.Any] = js.native
+    val inputs: js.UndefOr[js.Any] = js.undefined
   }
   object CheckResult {
     
@@ -85,18 +82,17 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait ConstructResult extends StObject {
     
     /**
       * Any state that was computed during construction.
       */
-    val state: Inputs = js.native
+    val state: Inputs
     
     /**
       * The URN of the constructed resource.
       */
-    val urn: Input[URN] = js.native
+    val urn: Input[URN]
   }
   object ConstructResult {
     
@@ -117,18 +113,17 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait CreateResult extends StObject {
     
     /**
       * The ID of the created resource.
       */
-    val id: ID = js.native
+    val id: ID
     
     /**
       * Any properties that were computed during creation.
       */
-    val outs: js.UndefOr[js.Any] = js.native
+    val outs: js.UndefOr[js.Any] = js.undefined
   }
   object CreateResult {
     
@@ -152,29 +147,28 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait DiffResult extends StObject {
     
     /**
       * If true, this diff detected changes and suggests an update.
       */
-    val changes: js.UndefOr[Boolean] = js.native
+    val changes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, and a replacement occurs, the resource will first be deleted before being recreated.  This is to
       * avoid potential side-by-side issues with the default create before delete behavior.
       */
-    val deleteBeforeReplace: js.UndefOr[Boolean] = js.native
+    val deleteBeforeReplace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this update requires a replacement, the set of properties triggering it.
       */
-    val replaces: js.UndefOr[js.Array[String]] = js.native
+    val replaces: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional list of properties that will not ever change.
       */
-    val stables: js.UndefOr[js.Array[String]] = js.native
+    val stables: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DiffResult {
     
@@ -219,18 +213,17 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait InvokeResult extends StObject {
     
     /**
       * Any validation failures that occurred.
       */
-    val failures: js.UndefOr[js.Array[CheckFailure]] = js.native
+    val failures: js.UndefOr[js.Array[CheckFailure]] = js.undefined
     
     /**
       * The outputs returned by the invoked function, if any.
       */
-    val outputs: js.UndefOr[js.Any] = js.native
+    val outputs: js.UndefOr[js.Any] = js.undefined
   }
   object InvokeResult {
     
@@ -260,7 +253,6 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
     /**
@@ -271,7 +263,7 @@ object providerProviderMod {
       */
     var check: js.UndefOr[
         js.Function3[/* urn */ URN, /* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Construct creates a new component resource.
@@ -289,7 +281,7 @@ object providerProviderMod {
           /* options */ ComponentResourceOptions, 
           js.Promise[ConstructResult]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Create allocates a new instance of the provided resource and returns its unique ID afterwards.
@@ -297,7 +289,7 @@ object providerProviderMod {
       *
       * @param inputs The properties to set during creation.
       */
-    var create: js.UndefOr[js.Function2[/* urn */ URN, /* inputs */ js.Any, js.Promise[CreateResult]]] = js.native
+    var create: js.UndefOr[js.Function2[/* urn */ URN, /* inputs */ js.Any, js.Promise[CreateResult]]] = js.undefined
     
     /**
       * Delete tears down an existing resource with the given ID.  If it fails, the resource is assumed to still exist.
@@ -305,7 +297,7 @@ object providerProviderMod {
       * @param id The ID of the resource to delete.
       * @param props The current properties on the resource.
       */
-    var delete: js.UndefOr[js.Function3[/* id */ ID, /* urn */ URN, /* props */ js.Any, js.Promise[Unit]]] = js.native
+    var delete: js.UndefOr[js.Function3[/* id */ ID, /* urn */ URN, /* props */ js.Any, js.Promise[Unit]]] = js.undefined
     
     /**
       * Diff checks what impacts a hypothetical update will have on the resource's properties.
@@ -316,7 +308,7 @@ object providerProviderMod {
       */
     var diff: js.UndefOr[
         js.Function4[/* id */ ID, /* urn */ URN, /* olds */ js.Any, /* news */ js.Any, js.Promise[DiffResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Invoke calls the indicated function.
@@ -324,7 +316,7 @@ object providerProviderMod {
       * @param token The token of the function to call.
       * @param inputs The inputs to the function.
       */
-    var invoke: js.UndefOr[js.Function2[/* token */ String, /* inputs */ js.Any, js.Promise[InvokeResult]]] = js.native
+    var invoke: js.UndefOr[js.Function2[/* token */ String, /* inputs */ js.Any, js.Promise[InvokeResult]]] = js.undefined
     
     /**
       * Reads the current live state associated with a resource.  Enough state must be included in the inputs to uniquely
@@ -332,7 +324,7 @@ object providerProviderMod {
       */
     var read: js.UndefOr[
         js.Function3[/* id */ ID, /* urn */ URN, /* props */ js.UndefOr[js.Any], js.Promise[ReadResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Update updates an existing resource with new values.
@@ -349,12 +341,12 @@ object providerProviderMod {
           /* news */ js.Any, 
           js.Promise[UpdateResult]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The version of the provider. Must be valid semver.
       */
-    var version: String = js.native
+    var version: String
   }
   object Provider {
     
@@ -426,18 +418,17 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait ReadResult extends StObject {
     
     /**
       * The ID of the resource ready back (or blank if missing).
       */
-    val id: js.UndefOr[ID] = js.native
+    val id: js.UndefOr[ID] = js.undefined
     
     /**
       * The current property state read from the live environment.
       */
-    val props: js.UndefOr[js.Any] = js.native
+    val props: js.UndefOr[js.Any] = js.undefined
   }
   object ReadResult {
     
@@ -464,13 +455,12 @@ object providerProviderMod {
     }
   }
   
-  @js.native
   trait UpdateResult extends StObject {
     
     /**
       * Any properties that were computed during updating.
       */
-    val outs: js.UndefOr[js.Any] = js.native
+    val outs: js.UndefOr[js.Any] = js.undefined
   }
   object UpdateResult {
     

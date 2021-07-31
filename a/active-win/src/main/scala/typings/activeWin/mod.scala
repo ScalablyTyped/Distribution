@@ -6,7 +6,6 @@ import typings.activeWin.activeWinStrings.windows
 import typings.activeWin.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,9 +32,12 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[js.UndefOr[Result]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[Result]]]
+  
   @JSImport("active-win", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[js.UndefOr[Result]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously get metadata about the [active window](https://en.wikipedia.org/wiki/Active_window) (title, id, bounds, owner, etc).
@@ -56,27 +58,25 @@ object mod {
   	}
   	```
   	*/
-  @JSImport("active-win", "sync")
-  @js.native
-  def sync(): js.UndefOr[Result] = js.native
+  @scala.inline
+  def sync(): js.UndefOr[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[Result]]
   
-  @js.native
   trait BaseOwner extends StObject {
     
     /**
     		Name of the app.
     		*/
-    var name: String = js.native
+    var name: String
     
     /**
     		Path to the app.
     		*/
-    var path: String = js.native
+    var path: String
     
     /**
     		Process identifier
     		*/
-    var processId: Double = js.native
+    var processId: Double
   }
   object BaseOwner {
     
@@ -100,34 +100,33 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseResult extends StObject {
     
     /**
     		Window position and size.
     		*/
-    var bounds: Height = js.native
+    var bounds: Height
     
     /**
     		Window identifier.
     		On Windows, there isn't a clear notion of a "Window ID". Instead it returns the memory address of the window "handle" in the `id` property. That "handle" is unique per window, so it can be used to identify them. [Read more…](https://msdn.microsoft.com/en-us/library/windows/desktop/ms632597(v=vs.85).aspx#window_handle).
     		*/
-    var id: Double = js.native
+    var id: Double
     
     /**
     		Memory usage by the window.
     		*/
-    var memoryUsage: Double = js.native
+    var memoryUsage: Double
     
     /**
     		App that owns the window.
     		*/
-    var owner: BaseOwner = js.native
+    var owner: BaseOwner
     
     /**
     		Window title.
     		*/
-    var title: String = js.native
+    var title: String
   }
   object BaseResult {
     
@@ -157,18 +156,18 @@ object mod {
     }
   }
   
-  @js.native
   trait LinuxResult
-    extends BaseResult
+    extends StObject
+       with BaseResult
        with Result {
     
-    var platform: linux = js.native
+    var platform: linux
   }
   object LinuxResult {
     
     @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, platform: linux, title: String): LinuxResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): LinuxResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "linux", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinuxResult]
     }
     
@@ -180,13 +179,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait MacOSOwner extends BaseOwner {
+  trait MacOSOwner
+    extends StObject
+       with BaseOwner {
     
     /**
     		Bundle identifier.
     		*/
-    var bundleId: Double = js.native
+    var bundleId: Double
   }
   object MacOSOwner {
     
@@ -204,26 +204,26 @@ object mod {
     }
   }
   
-  @js.native
   trait MacOSResult
-    extends BaseResult
+    extends StObject
+       with BaseResult
        with Result {
     
     @JSName("owner")
-    var owner_MacOSResult: MacOSOwner = js.native
+    var owner_MacOSResult: MacOSOwner
     
-    var platform: macos = js.native
+    var platform: macos
     
     /**
     		URL of the active browser tab if the active window is Safari, Chrome, Edge, or Brave.
     		*/
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object MacOSResult {
     
     @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, platform: macos, title: String): MacOSResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): MacOSResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "macos", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacOSResult]
     }
     
@@ -253,50 +253,36 @@ object mod {
   object Result {
     
     @scala.inline
-    def LinuxResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, platform: linux, title: String): typings.activeWin.mod.LinuxResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def LinuxResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.LinuxResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "linux", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.LinuxResult]
     }
     
     @scala.inline
-    def MacOSResult(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, platform: macos, title: String): typings.activeWin.mod.MacOSResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def MacOSResult(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): typings.activeWin.mod.MacOSResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "macos", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.MacOSResult]
     }
     
     @scala.inline
-    def WindowsResult(
-      bounds: Height,
-      id: Double,
-      memoryUsage: Double,
-      owner: BaseOwner,
-      platform: windows,
-      title: String
-    ): typings.activeWin.mod.WindowsResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def WindowsResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.WindowsResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "windows", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.WindowsResult]
     }
   }
   
-  @js.native
   trait WindowsResult
-    extends BaseResult
+    extends StObject
+       with BaseResult
        with Result {
     
-    var platform: windows = js.native
+    var platform: windows
   }
   object WindowsResult {
     
     @scala.inline
-    def apply(
-      bounds: Height,
-      id: Double,
-      memoryUsage: Double,
-      owner: BaseOwner,
-      platform: windows,
-      title: String
-    ): WindowsResult = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): WindowsResult = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "windows", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowsResult]
     }
     

@@ -10,12 +10,11 @@ import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "CollectionView")
 @js.native
-class CollectionView[TModel /* <: Model[_, ModelSetOptions, js.Object] */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
+class CollectionView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
   def this(options: CollectionViewOptions[TModel, TCollection]) = this()
   
   /**
@@ -108,12 +107,12 @@ class CollectionView[TModel /* <: Model[_, ModelSetOptions, js.Object] */, TView
     */
   def filter(): Boolean = js.native
   def filter(child: TModel): Boolean = js.native
-  def filter(child: TModel, index: js.UndefOr[scala.Nothing], collection: TCollection): Boolean = js.native
   def filter(child: TModel, index: Double): Boolean = js.native
   def filter(child: TModel, index: Double, collection: TCollection): Boolean = js.native
-  def filter(child: js.UndefOr[scala.Nothing], index: js.UndefOr[scala.Nothing], collection: TCollection): Boolean = js.native
-  def filter(child: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
-  def filter(child: js.UndefOr[scala.Nothing], index: Double, collection: TCollection): Boolean = js.native
+  def filter(child: TModel, index: Unit, collection: TCollection): Boolean = js.native
+  def filter(child: Unit, index: Double): Boolean = js.native
+  def filter(child: Unit, index: Double, collection: TCollection): Boolean = js.native
+  def filter(child: Unit, index: Unit, collection: TCollection): Boolean = js.native
   
   // Mirrors Backbone.Collection.comparator
   /**

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-webrtc", "RTCPeerConnection")
@@ -24,7 +23,7 @@ class RTCPeerConnection protected () extends StObject {
   
   var _remoteStreams: js.Array[MediaStream] = js.native
   
-  var _subscriptions: js.Array[_] = js.native
+  var _subscriptions: js.Array[js.Any] = js.native
   
   /* private */ def _unregisterEvents(): Unit = js.native
   
@@ -49,8 +48,8 @@ class RTCPeerConnection protected () extends StObject {
   
   def getRemoteStreams(): js.Array[MediaStream] = js.native
   
-  def getStats(): js.Promise[_] = js.native
-  def getStats(selector: MediaStreamTrack): js.Promise[_] = js.native
+  def getStats(): js.Promise[js.Any] = js.native
+  def getStats(selector: MediaStreamTrack): js.Promise[js.Any] = js.native
   
   var localDescription: RTCSessionDescriptionType = js.native
   

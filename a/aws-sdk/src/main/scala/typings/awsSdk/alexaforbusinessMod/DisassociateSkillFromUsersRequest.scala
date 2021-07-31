@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateSkillFromUsersRequest extends StObject {
   
   /**
     *  The private skill ID you want to make unavailable for enrolled users.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object DisassociateSkillFromUsersRequest {
   

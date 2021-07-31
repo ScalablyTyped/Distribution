@@ -14,7 +14,6 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navControllerMod {
@@ -74,8 +73,8 @@ object navControllerMod {
       */
     def navigateBack(url: String): js.Promise[Boolean] = js.native
     def navigateBack(url: String, options: NavigationOptions): js.Promise[Boolean] = js.native
-    def navigateBack(url: js.Array[_]): js.Promise[Boolean] = js.native
-    def navigateBack(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
+    def navigateBack(url: js.Array[js.Any]): js.Promise[Boolean] = js.native
+    def navigateBack(url: js.Array[js.Any], options: NavigationOptions): js.Promise[Boolean] = js.native
     def navigateBack(url: UrlTree): js.Promise[Boolean] = js.native
     def navigateBack(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
     
@@ -94,8 +93,8 @@ object navControllerMod {
       */
     def navigateForward(url: String): js.Promise[Boolean] = js.native
     def navigateForward(url: String, options: NavigationOptions): js.Promise[Boolean] = js.native
-    def navigateForward(url: js.Array[_]): js.Promise[Boolean] = js.native
-    def navigateForward(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
+    def navigateForward(url: js.Array[js.Any]): js.Promise[Boolean] = js.native
+    def navigateForward(url: js.Array[js.Any], options: NavigationOptions): js.Promise[Boolean] = js.native
     def navigateForward(url: UrlTree): js.Promise[Boolean] = js.native
     def navigateForward(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
     
@@ -119,8 +118,8 @@ object navControllerMod {
       */
     def navigateRoot(url: String): js.Promise[Boolean] = js.native
     def navigateRoot(url: String, options: NavigationOptions): js.Promise[Boolean] = js.native
-    def navigateRoot(url: js.Array[_]): js.Promise[Boolean] = js.native
-    def navigateRoot(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
+    def navigateRoot(url: js.Array[js.Any]): js.Promise[Boolean] = js.native
+    def navigateRoot(url: js.Array[js.Any], options: NavigationOptions): js.Promise[Boolean] = js.native
     def navigateRoot(url: UrlTree): js.Promise[Boolean] = js.native
     def navigateRoot(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
     
@@ -144,26 +143,17 @@ object navControllerMod {
       * It's recommended to use `navigateForward()`, `navigateBack()` and `navigateRoot()` instead of `setDirection()`.
       */
     def setDirection(direction: RouterDirection): Unit = js.native
-    def setDirection(
-      direction: RouterDirection,
-      animated: js.UndefOr[scala.Nothing],
-      animationDirection: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder
-    ): Unit = js.native
     def setDirection(direction: RouterDirection, animated: Boolean): Unit = js.native
     def setDirection(
       direction: RouterDirection,
       animated: Boolean,
-      animationDirection: js.UndefOr[scala.Nothing],
+      animationDirection: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
-    @JSName("setDirection")
-    def setDirection_back(direction: RouterDirection, animated: js.UndefOr[scala.Nothing], animationDirection: back): Unit = js.native
-    @JSName("setDirection")
-    def setDirection_back(
+    def setDirection(
       direction: RouterDirection,
-      animated: js.UndefOr[scala.Nothing],
-      animationDirection: back,
+      animated: Unit,
+      animationDirection: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     @JSName("setDirection")
@@ -176,12 +166,12 @@ object navControllerMod {
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     @JSName("setDirection")
-    def setDirection_forward(direction: RouterDirection, animated: js.UndefOr[scala.Nothing], animationDirection: forward): Unit = js.native
+    def setDirection_back(direction: RouterDirection, animated: Unit, animationDirection: back): Unit = js.native
     @JSName("setDirection")
-    def setDirection_forward(
+    def setDirection_back(
       direction: RouterDirection,
-      animated: js.UndefOr[scala.Nothing],
-      animationDirection: forward,
+      animated: Unit,
+      animationDirection: back,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     @JSName("setDirection")
@@ -190,6 +180,15 @@ object navControllerMod {
     def setDirection_forward(
       direction: RouterDirection,
       animated: Boolean,
+      animationDirection: forward,
+      animationBuilder: AnimationBuilder
+    ): Unit = js.native
+    @JSName("setDirection")
+    def setDirection_forward(direction: RouterDirection, animated: Unit, animationDirection: forward): Unit = js.native
+    @JSName("setDirection")
+    def setDirection_forward(
+      direction: RouterDirection,
+      animated: Unit,
       animationDirection: forward,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
@@ -202,14 +201,13 @@ object navControllerMod {
     var topOutlet: js.Any = js.native
   }
   
-  @js.native
   trait AnimationOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[AnimationBuilder] = js.native
+    var animation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var animationDirection: js.UndefOr[forward | back] = js.native
+    var animationDirection: js.UndefOr[forward | back] = js.undefined
   }
   object AnimationOptions {
     
@@ -244,9 +242,9 @@ object navControllerMod {
     }
   }
   
-  @js.native
   trait NavigationOptions
-    extends NavigationExtras
+    extends StObject
+       with NavigationExtras
        with AnimationOptions
   object NavigationOptions {
     

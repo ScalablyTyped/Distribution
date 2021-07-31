@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Write a Data Access (Gin) log
   */
-@js.native
 trait SchemaLogConfigDataAccessOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaLogConfigDataAccessOptions extends StObject {
     * setting LOG_FAIL_CLOSED mode will have no effect, but still exists
     * because there is active work being done to support it (b/115874152).
     */
-  var logMode: js.UndefOr[String] = js.native
+  var logMode: js.UndefOr[String] = js.undefined
 }
 object SchemaLogConfigDataAccessOptions {
   

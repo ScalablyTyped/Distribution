@@ -4,47 +4,41 @@ import typings.esfxTypeModel.distMod.AbstractConstructor
 import typings.esfxTypeModel.distMod.Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@esfx/internal-guards", "isBoolean")
+  @JSImport("@esfx/internal-guards", JSImport.Namespace)
   @js.native
-  def isBoolean(value: js.Any): /* is boolean */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@esfx/internal-guards", "isDefined")
-  @js.native
-  def isDefined[T](value: T): /* is std.NonNullable<T> */ Boolean = js.native
+  @scala.inline
+  def isBoolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
   
-  @JSImport("@esfx/internal-guards", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isDefined[T](value: T): /* is std.NonNullable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.NonNullable<T> */ Boolean]
   
-  @JSImport("@esfx/internal-guards", "isInstance")
-  @js.native
-  def isInstance[C /* <: Constructor[js.Object, js.Array[_]] */](value: js.Any, ctor: C): /* is std.InstanceType<C> */ Boolean = js.native
-  @JSImport("@esfx/internal-guards", "isInstance")
-  @js.native
-  def isInstance_C_AbstractConstructorObject[C /* <: AbstractConstructor[js.Object] */](value: js.Any, ctor: C): Boolean = js.native
+  @scala.inline
+  def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("@esfx/internal-guards", "isIterable")
-  @js.native
-  def isIterable(value: js.Any): /* is std.Iterable<any> */ Boolean = js.native
+  @scala.inline
+  def isInstance[C /* <: Constructor[js.Object, js.Array[js.Any]] */](value: js.Any, ctor: C): /* is std.InstanceType<C> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[/* is std.InstanceType<C> */ Boolean]
   
-  @JSImport("@esfx/internal-guards", "isMissing")
-  @js.native
-  def isMissing(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isInstance_C_AbstractConstructorObject[C /* <: AbstractConstructor[js.Object] */](value: js.Any, ctor: C): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@esfx/internal-guards", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): /* is number */ Boolean = js.native
+  @scala.inline
+  def isIterable(value: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
   
-  @JSImport("@esfx/internal-guards", "isObject")
-  @js.native
-  def isObject(value: js.Any): /* is object */ Boolean = js.native
+  @scala.inline
+  def isMissing(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMissing")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@esfx/internal-guards", "isPropertyKey")
-  @js.native
-  def isPropertyKey(value: js.Any): /* is std.PropertyKey */ Boolean = js.native
+  @scala.inline
+  def isNumber(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  
+  @scala.inline
+  def isObject(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  
+  @scala.inline
+  def isPropertyKey(value: js.Any): /* is std.PropertyKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyKey")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PropertyKey */ Boolean]
 }

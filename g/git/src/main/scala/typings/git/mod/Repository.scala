@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Repository")
@@ -51,14 +50,17 @@ class Repository protected () extends StObject {
   
   def put_raw_object(content: js.Any, `type`: js.Any, callback: js.Function): js.Any = js.native
   
-  def quick_diff(tree1: js.Any, tree2: js.Any, path: js.Any, recurse: js.Any): js.Array[_] = js.native
+  def quick_diff(tree1: js.Any, tree2: js.Any, path: js.Any, recurse: js.Any): js.Array[js.Any] = js.native
   
   def rev_list(sha: js.Any, options: js.Any, callback: js.Function): Unit = js.native
 }
 /* static members */
 object Repository {
   
-  @JSImport("git", "Repository.init")
+  @JSImport("git", "Repository")
   @js.native
-  def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dir.asInstanceOf[js.Any], bare.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

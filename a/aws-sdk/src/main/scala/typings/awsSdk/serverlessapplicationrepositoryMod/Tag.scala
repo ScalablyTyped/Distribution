@@ -2,17 +2,15 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation Tag
     Data Type.
     */
-  var Key: string = js.native
+  var Key: string
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation 
@@ -20,7 +18,7 @@ trait Tag extends StObject {
     
     Data Type.
     */
-  var Value: string = js.native
+  var Value: string
 }
 object Tag {
   

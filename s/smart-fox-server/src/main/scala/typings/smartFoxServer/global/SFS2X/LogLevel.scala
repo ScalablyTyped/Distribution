@@ -2,13 +2,13 @@ package typings.smartFoxServer.global.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.LogLevel")
 @js.native
 class LogLevel ()
-  extends typings.smartFoxServer.SFS2X.LogLevel
+  extends StObject
+     with typings.smartFoxServer.SFS2X.LogLevel
 /* static members */
 object LogLevel {
   

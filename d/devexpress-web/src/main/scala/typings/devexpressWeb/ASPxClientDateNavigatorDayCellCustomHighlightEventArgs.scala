@@ -3,29 +3,29 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDateNavigator.DayCellCustomHighlight event.
   */
-@js.native
-trait ASPxClientDateNavigatorDayCellCustomHighlightEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDateNavigatorDayCellCustomHighlightEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to the processed appointments.
     */
-  var appointments: js.Array[ASPxClientAppointment] = js.native
+  var appointments: js.Array[ASPxClientAppointment]
   
   /**
     * Provides access to the date object of the processed cell.
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
 }
 object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
   

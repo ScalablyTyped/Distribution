@@ -5,7 +5,6 @@ import typings.typeorm.betterSqlite3ConnectionOptionsMod.BetterSqlite3Connection
 import typings.typeorm.connectionMod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object betterSqlite3DriverMod {

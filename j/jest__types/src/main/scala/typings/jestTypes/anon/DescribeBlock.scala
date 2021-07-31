@@ -5,25 +5,25 @@ import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.hook_success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DescribeBlock extends AsyncEvent {
+trait DescribeBlock
+  extends StObject
+     with AsyncEvent {
   
-  var describeBlock: js.UndefOr[typings.jestTypes.circusMod.DescribeBlock] = js.native
+  var describeBlock: js.UndefOr[typings.jestTypes.circusMod.DescribeBlock] = js.undefined
   
-  var hook: typings.jestTypes.circusMod.Hook = js.native
+  var hook: typings.jestTypes.circusMod.Hook
   
-  var name: hook_success = js.native
+  var name: hook_success
   
-  var test: js.UndefOr[TestEntry] = js.native
+  var test: js.UndefOr[TestEntry] = js.undefined
 }
 object DescribeBlock {
   
   @scala.inline
-  def apply(hook: typings.jestTypes.circusMod.Hook, name: hook_success): DescribeBlock = {
-    val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(hook: typings.jestTypes.circusMod.Hook): DescribeBlock = {
+    val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = "hook_success")
     __obj.asInstanceOf[DescribeBlock]
   }
   

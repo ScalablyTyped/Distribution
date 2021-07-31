@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to resize the shape to fit the text in the text box.
   */
-@js.native
-trait ChangeTextBoxResizeShapeToFitTextCommand extends CommandBase {
+trait ChangeTextBoxResizeShapeToFitTextCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeTextBoxResizeShapeToFitTextCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param resizeShapeToFitText true, to resize the shape to fit the text; otherwise, false.
     */
-  def execute(resizeShapeToFitText: Boolean): Boolean = js.native
+  def execute(resizeShapeToFitText: Boolean): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[Boolean] = js.native
+  def getState(): CommandState[Boolean]
 }
 object ChangeTextBoxResizeShapeToFitTextCommand {
   

@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the parameters needed for de-identification of DICOM stores.
   */
-@js.native
 trait SchemaDicomConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaDicomConfig extends StObject {
     * &quot;0010,0010&quot;. Any tag that is whitelisted will copied as is. All
     * other tags will be omitted.
     */
-  var whitelistTags: js.UndefOr[js.Array[String]] = js.native
+  var whitelistTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDicomConfig {
   

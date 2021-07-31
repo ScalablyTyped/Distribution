@@ -3,39 +3,37 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleInfo extends StObject {
   
-  var ast: AcornNode | Null = js.native
+  var ast: AcornNode | Null
   
-  var code: String | Null = js.native
+  var code: String | Null
   
-  var dynamicImporters: js.Array[String] = js.native
+  var dynamicImporters: js.Array[String]
   
-  var dynamicallyImportedIds: js.Array[String] = js.native
+  var dynamicallyImportedIds: js.Array[String]
   
-  var hasModuleSideEffects: Boolean | `no-treeshake` = js.native
+  var hasModuleSideEffects: Boolean | `no-treeshake`
   
-  var id: String = js.native
+  var id: String
   
-  var implicitlyLoadedAfterOneOf: js.Array[String] = js.native
+  var implicitlyLoadedAfterOneOf: js.Array[String]
   
-  var implicitlyLoadedBefore: js.Array[String] = js.native
+  var implicitlyLoadedBefore: js.Array[String]
   
-  var importedIds: js.Array[String] = js.native
+  var importedIds: js.Array[String]
   
-  var importers: js.Array[String] = js.native
+  var importers: js.Array[String]
   
-  var isEntry: Boolean = js.native
+  var isEntry: Boolean
   
-  var isExternal: Boolean = js.native
+  var isExternal: Boolean
   
-  var meta: CustomPluginOptions = js.native
+  var meta: CustomPluginOptions
   
-  var syntheticNamedExports: Boolean | String = js.native
+  var syntheticNamedExports: Boolean | String
 }
 object ModuleInfo {
   
@@ -54,7 +52,7 @@ object ModuleInfo {
     meta: CustomPluginOptions,
     syntheticNamedExports: Boolean | String
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal(dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], ast = null, code = null)
     __obj.asInstanceOf[ModuleInfo]
   }
   

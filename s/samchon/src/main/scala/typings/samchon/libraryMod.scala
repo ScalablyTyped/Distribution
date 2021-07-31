@@ -2,7 +2,6 @@ package typings.samchon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libraryMod {
@@ -116,18 +115,14 @@ object libraryMod {
       *
       * @return substring by specified terms.
       */
-    @JSImport("samchon/library", "StringUtil.between")
-    @js.native
-    def between(str: String): String = js.native
-    @JSImport("samchon/library", "StringUtil.between")
-    @js.native
-    def between(str: String, start: js.UndefOr[scala.Nothing], end: String): String = js.native
-    @JSImport("samchon/library", "StringUtil.between")
-    @js.native
-    def between(str: String, start: String): String = js.native
-    @JSImport("samchon/library", "StringUtil.between")
-    @js.native
-    def between(str: String, start: String, end: String): String = js.native
+    @scala.inline
+    def between(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def between(str: String, start: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def between(str: String, start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def between(str: String, start: Unit, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Fetch substrings.
@@ -148,18 +143,14 @@ object libraryMod {
       *			  If omitted, it's same with split(start) not having first item.
       * @return An array of substrings.
       */
-    @JSImport("samchon/library", "StringUtil.betweens")
-    @js.native
-    def betweens(str: String): js.Array[String] = js.native
-    @JSImport("samchon/library", "StringUtil.betweens")
-    @js.native
-    def betweens(str: String, start: js.UndefOr[scala.Nothing], end: String): js.Array[String] = js.native
-    @JSImport("samchon/library", "StringUtil.betweens")
-    @js.native
-    def betweens(str: String, start: String): js.Array[String] = js.native
-    @JSImport("samchon/library", "StringUtil.betweens")
-    @js.native
-    def betweens(str: String, start: String, end: String): js.Array[String] = js.native
+    @scala.inline
+    def betweens(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def betweens(str: String, start: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def betweens(str: String, start: String, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def betweens(str: String, start: Unit, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Remove all designated characters from the beginning of the specified string.
@@ -169,9 +160,8 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    @JSImport("samchon/library", "StringUtil.ltrim")
-    @js.native
-    def ltrim(str: String, args: String*): String = js.native
+    @scala.inline
+    def ltrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Number to formatted string with &quot;,&quot; sign.
@@ -183,28 +173,23 @@ object libraryMod {
       *
       * @return A string who represents the number with roundoff and &quot;,&quot; symbols.
       */
-    @JSImport("samchon/library", "StringUtil.numberFormat")
-    @js.native
-    def numberFormat(`val`: Double): String = js.native
-    @JSImport("samchon/library", "StringUtil.numberFormat")
-    @js.native
-    def numberFormat(`val`: Double, precision: Double): String = js.native
+    @scala.inline
+    def numberFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def numberFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("samchon/library", "StringUtil.percentFormat")
-    @js.native
-    def percentFormat(`val`: Double): String = js.native
-    @JSImport("samchon/library", "StringUtil.percentFormat")
-    @js.native
-    def percentFormat(`val`: Double, precision: Double): String = js.native
+    @scala.inline
+    def percentFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def percentFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Replace all HTML spaces to a literal space.
       *
       * @param str Target string to replace.
       */
-    @JSImport("samchon/library", "StringUtil.removeHTMLSpaces")
-    @js.native
-    def removeHTMLSpaces(str: String): String = js.native
+    @scala.inline
+    def removeHTMLSpaces(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHTMLSpaces")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Repeat a string.
@@ -216,9 +201,8 @@ object libraryMod {
       *
       * @return The repeated string.
       */
-    @JSImport("samchon/library", "StringUtil.repeat")
-    @js.native
-    def repeat(str: String, n: Double): String = js.native
+    @scala.inline
+    def repeat(str: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(str.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns a string specified word is replaced.
@@ -229,9 +213,8 @@ object libraryMod {
       *
       * @return A string specified word is replaced
       */
-    @JSImport("samchon/library", "StringUtil.replaceAll")
-    @js.native
-    def replaceAll(str: String, before: String, after: String): String = js.native
+    @scala.inline
+    def replaceAll(str: String, before: String, after: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Returns a string specified words are replaced.
       *
@@ -240,12 +223,11 @@ object libraryMod {
       *
       * @return A string specified words are replaced
       */
-    @JSImport("samchon/library", "StringUtil.replaceAll")
-    @js.native
+    @scala.inline
     def replaceAll(
       str: String,
       pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ js.Any)*
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], pairs.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the end of the specified string.
@@ -255,9 +237,8 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    @JSImport("samchon/library", "StringUtil.rtrim")
-    @js.native
-    def rtrim(str: String, args: String*): String = js.native
+    @scala.inline
+    def rtrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified string.
@@ -271,9 +252,8 @@ object libraryMod {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    @JSImport("samchon/library", "StringUtil.substitute")
-    @js.native
-    def substitute(format: String, args: js.Any*): String = js.native
+    @scala.inline
+    def substitute(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
@@ -287,9 +267,8 @@ object libraryMod {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    @JSImport("samchon/library", "StringUtil.substituteSQL")
-    @js.native
-    def substituteSQL(format: String, args: js.Any*): String = js.native
+    @scala.inline
+    def substituteSQL(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the beginning and end of the specified string.
@@ -299,9 +278,8 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    @JSImport("samchon/library", "StringUtil.trim")
-    @js.native
-    def trim(str: String, args: String*): String = js.native
+    @scala.inline
+    def trim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("samchon/library", "URLVariables")
@@ -322,16 +300,17 @@ object libraryMod {
   }
   object URLVariables {
     
-    @JSImport("samchon/library", "URLVariables.parse")
+    @JSImport("samchon/library", "URLVariables")
     @js.native
-    def parse[T](str: String): T = js.native
-    @JSImport("samchon/library", "URLVariables.parse")
-    @js.native
-    def parse[T](str: String, autoCase: Boolean): T = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("samchon/library", "URLVariables.stringify")
-    @js.native
-    def stringify[T](obj: T): String = js.native
+    @scala.inline
+    def parse[T](str: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def parse[T](str: String, autoCase: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], autoCase.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    @scala.inline
+    def stringify[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("samchon/library", "XML")
@@ -366,28 +345,22 @@ object libraryMod {
     @scala.inline
     def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
-    @JSImport("samchon/library", "XML.decode_property")
-    @js.native
-    def decodeProperty(str: String): String = js.native
+    @scala.inline
+    def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("samchon/library", "XML.decode_value")
-    @js.native
-    def decodeValue(str: String): String = js.native
+    @scala.inline
+    def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("samchon/library", "XML.encode_property")
-    @js.native
-    def encodeProperty(str: String): String = js.native
+    @scala.inline
+    def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("samchon/library", "XML.encode_value")
-    @js.native
-    def encodeValue(str: String): String = js.native
+    @scala.inline
+    def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("samchon/library", "XML.head")
-    @js.native
-    def head(): String = js.native
-    @JSImport("samchon/library", "XML.head")
-    @js.native
-    def head(encoding: String): String = js.native
+    @scala.inline
+    def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+    @scala.inline
+    def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("samchon/library", "XMLList")

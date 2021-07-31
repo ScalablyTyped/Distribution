@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNotificationConfigurationsType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupNames: js.UndefOr[typings.awsSdk.autoscalingMod.AutoScalingGroupNames] = js.native
+  var AutoScalingGroupNames: js.UndefOr[typings.awsSdk.autoscalingMod.AutoScalingGroupNames] = js.undefined
   
   /**
     * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
 }
 object DescribeNotificationConfigurationsType {
   

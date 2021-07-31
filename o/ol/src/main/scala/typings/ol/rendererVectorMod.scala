@@ -5,34 +5,32 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.projMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererVectorMod {
   
-  @JSImport("ol/renderer/vector", "defaultOrder")
+  @JSImport("ol/renderer/vector", JSImport.Namespace)
   @js.native
-  def defaultOrder(feature1: FeatureLike, feature2: FeatureLike): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/renderer/vector", "getSquaredTolerance")
-  @js.native
-  def getSquaredTolerance(resolution: Double, pixelRatio: Double): Double = js.native
+  @scala.inline
+  def defaultOrder(feature1: FeatureLike, feature2: FeatureLike): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrder")(feature1.asInstanceOf[js.Any], feature2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/renderer/vector", "getTolerance")
-  @js.native
-  def getTolerance(resolution: Double, pixelRatio: Double): Double = js.native
+  @scala.inline
+  def getSquaredTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSquaredTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/renderer/vector", "renderFeature")
-  @js.native
+  @scala.inline
+  def getTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def renderFeature[T](
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
     listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]
-  ): Boolean = js.native
-  @JSImport("ol/renderer/vector", "renderFeature")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def renderFeature[T](
     replayGroup: default,
     feature: FeatureLike,
@@ -40,5 +38,5 @@ object rendererVectorMod {
     squaredTolerance: Double,
     listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit],
     opt_transform: TransformFunction
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

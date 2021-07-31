@@ -3,19 +3,17 @@ package typings.scrollIntoViewIfNeeded
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CustomScrollAction extends StObject {
     
-    var el: Element = js.native
+    var el: Element
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object CustomScrollAction {
     
@@ -45,18 +43,17 @@ object typesMod {
   
   type CustomScrollBoundaryCallback = js.Function1[/* parent */ Element, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var block: js.UndefOr[ScrollLogicalPosition] = js.native
+    var block: js.UndefOr[ScrollLogicalPosition] = js.undefined
     
-    var boundary: js.UndefOr[CustomScrollBoundary] = js.native
+    var boundary: js.UndefOr[CustomScrollBoundary] = js.undefined
     
-    var `inline`: js.UndefOr[ScrollLogicalPosition] = js.native
+    var `inline`: js.UndefOr[ScrollLogicalPosition] = js.undefined
     
-    var scrollMode: js.UndefOr[ScrollMode] = js.native
+    var scrollMode: js.UndefOr[ScrollMode] = js.undefined
     
-    var skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.native
+    var skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.undefined
   }
   object Options {
     

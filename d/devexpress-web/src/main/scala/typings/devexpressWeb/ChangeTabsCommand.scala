@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change paragraph tab stops.
   */
-@js.native
 trait ChangeTabsCommand extends StObject {
   
   /**
     * Executes the ChangeTabsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TabsSettings object maintaining the information about tab stops.
     */
-  def execute(settings: TabsSettings): Boolean = js.native
+  def execute(settings: TabsSettings): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TabsSettings] = js.native
+  def getState(): CommandState[TabsSettings]
 }
 object ChangeTabsCommand {
   

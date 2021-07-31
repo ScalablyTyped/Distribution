@@ -2,15 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Projection extends StObject {
   
-  def fromCoordToPoint(coord: Coord): Point = js.native
+  def fromCoordToPoint(coord: Coord): Point
   
-  def fromPointToCoord(point: Point): Coord = js.native
+  def fromPointToCoord(point: Point): Coord
 }
 object Projection {
   

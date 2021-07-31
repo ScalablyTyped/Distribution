@@ -2,41 +2,39 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A task which initializes part of a streaming Dataflow job.
   */
-@js.native
 trait SchemaStreamingSetupTask extends StObject {
   
   /**
     * The user has requested drain.
     */
-  var drain: js.UndefOr[Boolean] = js.native
+  var drain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The TCP port on which the worker should listen for messages from other
     * streaming computation workers.
     */
-  var receiveWorkPort: js.UndefOr[Double] = js.native
+  var receiveWorkPort: js.UndefOr[Double] = js.undefined
   
   /**
     * Configures streaming appliance snapshot.
     */
-  var snapshotConfig: js.UndefOr[SchemaStreamingApplianceSnapshotConfig] = js.native
+  var snapshotConfig: js.UndefOr[SchemaStreamingApplianceSnapshotConfig] = js.undefined
   
   /**
     * The global topology of the streaming Dataflow job.
     */
-  var streamingComputationTopology: js.UndefOr[SchemaTopologyConfig] = js.native
+  var streamingComputationTopology: js.UndefOr[SchemaTopologyConfig] = js.undefined
   
   /**
     * The TCP port used by the worker to communicate with the Dataflow worker
     * harness.
     */
-  var workerHarnessPort: js.UndefOr[Double] = js.native
+  var workerHarnessPort: js.UndefOr[Double] = js.undefined
 }
 object SchemaStreamingSetupTask {
   

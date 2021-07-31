@@ -12,200 +12,155 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("airbnb-prop-types", "and")
+  @JSImport("airbnb-prop-types", JSImport.Namespace)
   @js.native
-  def and[T](propTypes: js.Array[Validator[_]]): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and[T](propTypes: js.Array[Validator[_]], name: String): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]]): Requireable[A with B] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]], name: String): Requireable[A with B] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]]): Requireable[A with B with C] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]], name: String): Requireable[A with B with C] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and_A[A](propTypes: js.Array[Validator[A]]): Requireable[A] = js.native
-  @JSImport("airbnb-prop-types", "and")
-  @js.native
-  def and_A[A](propTypes: js.Array[Validator[A]], name: String): Requireable[A] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("airbnb-prop-types", "between")
-  @js.native
-  def between(options: Gt): Requireable[Double] = js.native
+  @scala.inline
+  def and[T](propTypes: js.Array[Validator[js.Any]]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def and[T](propTypes: js.Array[Validator[js.Any]], name: String): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def and[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]]): Requireable[A & B] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A & B]]
+  @scala.inline
+  def and[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]], name: String): Requireable[A & B] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A & B]]
+  @scala.inline
+  def and[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]]): Requireable[A & B & C] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A & B & C]]
+  @scala.inline
+  def and[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]], name: String): Requireable[A & B & C] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A & B & C]]
   
-  @JSImport("airbnb-prop-types", "booleanSome")
-  @js.native
-  def booleanSome(props: String*): Requireable[Boolean] = js.native
+  @scala.inline
+  def and_A[A](propTypes: js.Array[Validator[A]]): Requireable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A]]
+  @scala.inline
+  def and_A[A](propTypes: js.Array[Validator[A]], name: String): Requireable[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A]]
   
-  @JSImport("airbnb-prop-types", "childrenHavePropXorChildren")
-  @js.native
-  def childrenHavePropXorChildren[T](prop: String): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "childrenHavePropXorChildren")
-  @js.native
-  def childrenHavePropXorChildren[T](prop: js.Symbol): Requireable[T] = js.native
+  @scala.inline
+  def between(options: Gt): Requireable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(options.asInstanceOf[js.Any]).asInstanceOf[Requireable[Double]]
   
-  @JSImport("airbnb-prop-types", "childrenOf")
-  @js.native
-  def childrenOf[T, P](propType: Validator[P]): Requireable[T] = js.native
+  @scala.inline
+  def booleanSome(props: String*): Requireable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("booleanSome")(props.asInstanceOf[js.Any]).asInstanceOf[Requireable[Boolean]]
   
-  @JSImport("airbnb-prop-types", "childrenOfType")
-  @js.native
-  def childrenOfType[T](types: ReactTypeLike*): Requireable[T] = js.native
+  @scala.inline
+  def childrenHavePropXorChildren[T](prop: String): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("childrenHavePropXorChildren")(prop.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def childrenHavePropXorChildren[T](prop: js.Symbol): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("childrenHavePropXorChildren")(prop.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "childrenSequenceOf")
-  @js.native
-  def childrenSequenceOf[T](specifiers: Specifier[_]*): Requireable[T] = js.native
+  @scala.inline
+  def childrenOf[T, P](propType: Validator[P]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("childrenOf")(propType.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "componentWithName")
-  @js.native
-  def componentWithName[T](name: String): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "componentWithName")
-  @js.native
-  def componentWithName[T](name: String, options: StripHOCs): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "componentWithName")
-  @js.native
-  def componentWithName[T](name: RegExp): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "componentWithName")
-  @js.native
-  def componentWithName[T](name: RegExp, options: StripHOCs): Requireable[T] = js.native
+  @scala.inline
+  def childrenOfType[T](types: ReactTypeLike*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("childrenOfType")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "disallowedIf")
-  @js.native
-  def disallowedIf[T](propType: Requireable[T], otherPropName: String, otherPropType: Validator[_]): Requireable[T] = js.native
+  @scala.inline
+  def childrenSequenceOf[T](specifiers: Specifier[js.Any]*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("childrenSequenceOf")(specifiers.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "elementType")
-  @js.native
-  def elementType[T](`type`: ReactTypeLike): Requireable[T] = js.native
+  @scala.inline
+  def componentWithName[T](name: String): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentWithName")(name.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def componentWithName[T](name: String, options: StripHOCs): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("componentWithName")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def componentWithName[T](name: RegExp): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentWithName")(name.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def componentWithName[T](name: RegExp, options: StripHOCs): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("componentWithName")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "explicitNull")
-  @js.native
-  def explicitNull(): Requireable[js.UndefOr[Null]] = js.native
+  @scala.inline
+  def disallowedIf[T](propType: Requireable[T], otherPropName: String, otherPropType: Validator[js.Any]): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("disallowedIf")(propType.asInstanceOf[js.Any], otherPropName.asInstanceOf[js.Any], otherPropType.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "forbidExtraProps")
-  @js.native
-  def forbidExtraProps[T /* <: js.Object */](propTypes: ValidationMap[T]): ValidationMap[T] = js.native
+  @scala.inline
+  def elementType[T](`type`: ReactTypeLike): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "integer")
-  @js.native
-  def integer(): Requireable[Double] = js.native
+  @scala.inline
+  def explicitNull(): Requireable[js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("explicitNull")().asInstanceOf[Requireable[js.UndefOr[Null]]]
   
-  @JSImport("airbnb-prop-types", "keysOf")
-  @js.native
-  def keysOf[T, P](propType: Validator[P]): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "keysOf")
-  @js.native
-  def keysOf[T, P](propType: Validator[P], name: String): Requireable[T] = js.native
+  @scala.inline
+  def forbidExtraProps[T /* <: js.Object */](propTypes: ValidationMap[T]): ValidationMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidExtraProps")(propTypes.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[T]]
   
-  @JSImport("airbnb-prop-types", "mutuallyExclusiveProps")
-  @js.native
-  def mutuallyExclusiveProps[T](propType: Requireable[T], propNames: String*): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "mutuallyExclusiveProps")
-  @js.native
+  @scala.inline
+  def integer(): Requireable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")().asInstanceOf[Requireable[Double]]
+  
+  @scala.inline
+  def keysOf[T, P](propType: Validator[P]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("keysOf")(propType.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def keysOf[T, P](propType: Validator[P], name: String): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("keysOf")(propType.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  
+  @scala.inline
+  def mutuallyExclusiveProps[T](propType: Requireable[T], propNames: String*): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(propType.asInstanceOf[js.Any], propNames.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  @scala.inline
   def mutuallyExclusiveProps[T](// tslint:disable-next-line:unified-signatures
-  propType: Validator[T], propNames: String*): Requireable[T] = js.native
+  propType: Validator[T], propNames: String*): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(propType.asInstanceOf[js.Any], propNames.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "mutuallyExclusiveTrueProps")
-  @js.native
-  def mutuallyExclusiveTrueProps(propNames: String*): Requireable[Boolean] = js.native
+  @scala.inline
+  def mutuallyExclusiveTrueProps(propNames: String*): Requireable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveTrueProps")(propNames.asInstanceOf[js.Any]).asInstanceOf[Requireable[Boolean]]
   
-  @JSImport("airbnb-prop-types", "nChildren")
-  @js.native
-  def nChildren[T, P](n: Double): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "nChildren")
-  @js.native
-  def nChildren[T, P](n: Double, propType: Validator[P]): Requireable[T] = js.native
+  @scala.inline
+  def nChildren[T, P](n: Double): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nChildren")(n.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def nChildren[T, P](n: Double, propType: Validator[P]): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nChildren")(n.asInstanceOf[js.Any], propType.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
   @JSImport("airbnb-prop-types", "nonNegativeInteger")
   @js.native
   val nonNegativeInteger: Requireable[Double] = js.native
   
-  @JSImport("airbnb-prop-types", "nonNegativeNumber")
-  @js.native
-  def nonNegativeNumber(): Requireable[Double] = js.native
+  @scala.inline
+  def nonNegativeNumber(): Requireable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonNegativeNumber")().asInstanceOf[Requireable[Double]]
   
-  @JSImport("airbnb-prop-types", "numericString")
-  @js.native
-  def numericString(): Requireable[String] = js.native
+  @scala.inline
+  def numericString(): Requireable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("numericString")().asInstanceOf[Requireable[String]]
   
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[T](propTypes: js.Array[Validator[_ | T]]): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[T](propTypes: js.Array[Validator[_ | T]], name: String): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]]): Requireable[A | B] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]], name: String): Requireable[A | B] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]]): Requireable[A | B | C] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]], name: String): Requireable[A | B | C] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or_A[A](propTypes: js.Array[Validator[A]]): Requireable[A] = js.native
-  @JSImport("airbnb-prop-types", "or")
-  @js.native
-  def or_A[A](propTypes: js.Array[Validator[A]], name: String): Requireable[A] = js.native
+  @scala.inline
+  def `object`[T /* <: js.Object */](): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("object")().asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range(): Requireable[Double] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range(min: js.UndefOr[scala.Nothing], max: Double): Requireable[Double] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range(min: Double): Requireable[Double] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range(min: Double, max: Double): Requireable[Double] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range_T_Double[T /* <: Double */](): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range_T_Double[T /* <: Double */](min: js.UndefOr[scala.Nothing], max: Double): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range_T_Double[T /* <: Double */](min: Double): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "range")
-  @js.native
-  def range_T_Double[T /* <: Double */](min: Double, max: Double): Requireable[T] = js.native
+  @scala.inline
+  def or[T](propTypes: js.Array[Validator[js.Any | T]]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def or[T](propTypes: js.Array[Validator[js.Any | T]], name: String): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def or[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]]): Requireable[A | B] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A | B]]
+  @scala.inline
+  def or[A, B](propTypes: js.Tuple2[Validator[A], Validator[B]], name: String): Requireable[A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A | B]]
+  @scala.inline
+  def or[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]]): Requireable[A | B | C] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A | B | C]]
+  @scala.inline
+  def or[A, B, C](propTypes: js.Tuple3[Validator[A], Validator[B], Validator[C]], name: String): Requireable[A | B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A | B | C]]
   
-  @JSImport("airbnb-prop-types", "ref")
-  @js.native
-  def ref[T](): Requireable[ReactLegacyRefLike[T]] = js.native
+  @scala.inline
+  def or_A[A](propTypes: js.Array[Validator[A]]): Requireable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[A]]
+  @scala.inline
+  def or_A[A](propTypes: js.Array[Validator[A]], name: String): Requireable[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(propTypes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[A]]
   
-  @JSImport("airbnb-prop-types", "requiredBy")
-  @js.native
-  def requiredBy[P](requiredByPropName: String, propType: Validator[P]): Requireable[P] = js.native
-  @JSImport("airbnb-prop-types", "requiredBy")
-  @js.native
-  def requiredBy[P](requiredByPropName: String, propType: Validator[P], defaultValue: js.Any): Requireable[P] = js.native
+  @scala.inline
+  def range(): Requireable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Requireable[Double]]
+  @scala.inline
+  def range(min: Double): Requireable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[Requireable[Double]]
+  @scala.inline
+  def range(min: Double, max: Double): Requireable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[Double]]
+  @scala.inline
+  def range(min: Unit, max: Double): Requireable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[Double]]
   
-  @JSImport("airbnb-prop-types", "restrictedProp")
-  @js.native
-  def restrictedProp[T](): Requireable[T] = js.native
-  @JSImport("airbnb-prop-types", "restrictedProp")
-  @js.native
+  @scala.inline
+  def range_T_Double[T /* <: Double */](): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Requireable[T]]
+  @scala.inline
+  def range_T_Double[T /* <: Double */](min: Double): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def range_T_Double[T /* <: Double */](min: Double, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  @scala.inline
+  def range_T_Double[T /* <: Double */](min: Unit, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  
+  @scala.inline
+  def ref[T](): Requireable[ReactLegacyRefLike[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")().asInstanceOf[Requireable[ReactLegacyRefLike[T]]]
+  
+  @scala.inline
+  def requiredBy[P](requiredByPropName: String, propType: Validator[P]): Requireable[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("requiredBy")(requiredByPropName.asInstanceOf[js.Any], propType.asInstanceOf[js.Any])).asInstanceOf[Requireable[P]]
+  @scala.inline
+  def requiredBy[P](requiredByPropName: String, propType: Validator[P], defaultValue: js.Any): Requireable[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("requiredBy")(requiredByPropName.asInstanceOf[js.Any], propType.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Requireable[P]]
+  
+  @scala.inline
+  def restrictedProp[T](): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictedProp")().asInstanceOf[Requireable[T]]
+  @scala.inline
   def restrictedProp[T](
     messageFunction: js.Function5[
       /* props */ js.Object, 
@@ -215,65 +170,56 @@ object mod {
       /* propFullName */ String, 
       js.UndefOr[String | Error]
     ]
-  ): Requireable[T] = js.native
+  ): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictedProp")(messageFunction.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "sequenceOf")
-  @js.native
-  def sequenceOf[T](specifiers: Specifier[_]*): Requireable[T] = js.native
+  @scala.inline
+  def sequenceOf[T](specifiers: Specifier[js.Any]*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceOf")(specifiers.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "shape")
-  @js.native
-  def shape[T /* <: js.Object */](propTypes: ValidationMap[T]): Requireable[T] = js.native
+  @scala.inline
+  def shape[T /* <: js.Object */](propTypes: ValidationMap[T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shape")(propTypes.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("airbnb-prop-types", "stringStartsWith")
-  @js.native
-  def stringStartsWith(string: String): Requireable[String] = js.native
+  @scala.inline
+  def stringStartsWith(string: String): Requireable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringStartsWith")(string.asInstanceOf[js.Any]).asInstanceOf[Requireable[String]]
   
-  @JSImport("airbnb-prop-types", "uniqueArray")
-  @js.native
-  def uniqueArray[T](): Requireable[js.Array[T]] = js.native
+  @scala.inline
+  def uniqueArray[T](): Requireable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueArray")().asInstanceOf[Requireable[js.Array[T]]]
   
-  @JSImport("airbnb-prop-types", "uniqueArrayOf")
-  @js.native
-  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: String): Requireable[js.Array[T]] = js.native
-  @JSImport("airbnb-prop-types", "uniqueArrayOf")
-  @js.native
-  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: String, name: String): Requireable[js.Array[T]] = js.native
-  @JSImport("airbnb-prop-types", "uniqueArrayOf")
-  @js.native
-  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: js.Function1[/* value */ js.Any, _]): Requireable[js.Array[T]] = js.native
-  @JSImport("airbnb-prop-types", "uniqueArrayOf")
-  @js.native
-  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: js.Function1[/* value */ js.Any, _], name: String): Requireable[js.Array[T]] = js.native
+  @scala.inline
+  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: String): Requireable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueArrayOf")(propType.asInstanceOf[js.Any], mapperOrName.asInstanceOf[js.Any])).asInstanceOf[Requireable[js.Array[T]]]
+  @scala.inline
+  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: String, name: String): Requireable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueArrayOf")(propType.asInstanceOf[js.Any], mapperOrName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[js.Array[T]]]
+  @scala.inline
+  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: js.Function1[/* value */ js.Any, js.Any]): Requireable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueArrayOf")(propType.asInstanceOf[js.Any], mapperOrName.asInstanceOf[js.Any])).asInstanceOf[Requireable[js.Array[T]]]
+  @scala.inline
+  def uniqueArrayOf[T, P](propType: Validator[P], mapperOrName: js.Function1[/* value */ js.Any, js.Any], name: String): Requireable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueArrayOf")(propType.asInstanceOf[js.Any], mapperOrName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[js.Array[T]]]
   
-  @JSImport("airbnb-prop-types", "valuesOf")
-  @js.native
-  def valuesOf[T](propType: Validator[T]): Requireable[StringDictionary[T]] = js.native
+  @scala.inline
+  def valuesOf[T](propType: Validator[T]): Requireable[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesOf")(propType.asInstanceOf[js.Any]).asInstanceOf[Requireable[StringDictionary[T]]]
   
-  @JSImport("airbnb-prop-types", "withShape")
-  @js.native
-  def withShape[T /* <: js.Object */, P, S](propType: Validator[P], propTypes: ValidationMap[S]): Requireable[T] = js.native
+  @scala.inline
+  def withShape[T /* <: js.Object */, P, S](propType: Validator[P], propTypes: ValidationMap[S]): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withShape")(propType.asInstanceOf[js.Any], propTypes.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
   @js.native
   trait ReactClassComponentLike
-    extends Instantiable1[/* args (repeated) */ js.Any, ReactComponentLike]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, ReactComponentLike]
+       with _ReactTypeLike
   
-  @js.native
   trait ReactComponentLike extends StObject {
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    def forceUpdate(args: js.Any*): js.Any = js.native
+    def forceUpdate(args: js.Any*): js.Any
     
-    var props: js.Any = js.native
+    var props: js.Any
     
-    var refs: js.Any = js.native
+    var refs: js.Any
     
-    def render(): ReactNodeLike = js.native
+    def render(): ReactNodeLike
     
-    def setState(args: js.Any*): js.Any = js.native
+    def setState(args: js.Any*): js.Any
     
-    var state: js.Any = js.native
+    var state: js.Any
   }
   object ReactComponentLike {
     
@@ -317,25 +263,30 @@ object mod {
     }
   }
   
-  type ReactFunctionComponentLike = js.Function1[/* repeated */ js.Any, ReactNodeLike]
+  @js.native
+  trait ReactFunctionComponentLike
+    extends StObject
+       with _ReactTypeLike {
+    
+    def apply(args: js.Any*): ReactNodeLike = js.native
+  }
   
   type ReactLegacyRefLike[T] = (js.Function1[/* instance */ T | Null, Unit]) | ReactRefLike[T]
   
-  @js.native
   trait ReactRefLike[T] extends StObject {
     
-    val current: T | Null = js.native
+    val current: T | Null
   }
   object ReactRefLike {
     
     @scala.inline
     def apply[T](): ReactRefLike[T] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[ReactRefLike[T]]
     }
     
     @scala.inline
-    implicit class ReactRefLikeMutableBuilder[Self <: ReactRefLike[_], T] (val x: Self with ReactRefLike[T]) extends AnyVal {
+    implicit class ReactRefLikeMutableBuilder[Self <: ReactRefLike[?], T] (val x: Self & ReactRefLike[T]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
@@ -345,14 +296,18 @@ object mod {
     }
   }
   
-  type ReactTypeLike = String | ReactClassComponentLike | ReactFunctionComponentLike
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - typings.airbnbPropTypes.mod.ReactClassComponentLike
+    - typings.airbnbPropTypes.mod.ReactFunctionComponentLike
+  */
+  type ReactTypeLike = _ReactTypeLike | String
   
-  @js.native
   trait Specifier[T] extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     def validator(
       props: StringDictionary[js.Any],
@@ -360,12 +315,37 @@ object mod {
       componentName: String,
       location: String,
       propFullName: String
-    ): Error | Null = js.native
+    ): Error | Null
     @JSName("validator")
-    var validator_Original: Validator[T] = js.native
+    var validator_Original: Validator[T]
+  }
+  object Specifier {
+    
+    @scala.inline
+    def apply[T](validator: Validator[T]): Specifier[T] = {
+      val __obj = js.Dynamic.literal(validator = validator.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Specifier[T]]
+    }
+    
+    @scala.inline
+    implicit class SpecifierMutableBuilder[Self <: Specifier[?], T] (val x: Self & Specifier[T]) extends AnyVal {
+      
+      @scala.inline
+      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      
+      @scala.inline
+      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      
+      @scala.inline
+      def setValidator(value: Validator[T]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    }
   }
   
-  @JSImport("airbnb-prop-types", "object")
-  @js.native
-  def `object`[T /* <: js.Object */](): Requireable[T] = js.native
+  trait _ReactTypeLike extends StObject
 }

@@ -2,65 +2,63 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyDescriptor extends StObject {
   
   /**
     * True if the type of this property descriptor may be changed and if the property may be
     * deleted from the corresponding object.
     */
-  var configurable: Boolean = js.native
+  var configurable: Boolean
   
   /**
     * True if this property shows up during enumeration of the properties on the corresponding
     * object.
     */
-  var enumerable: Boolean = js.native
+  var enumerable: Boolean
   
   /**
     * A function which serves as a getter for the property, or `undefined` if there is no getter
     * (accessor descriptors only).
     */
-  var get: js.UndefOr[RemoteObject] = js.native
+  var get: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * True if the property is owned for the object.
     */
-  var isOwn: js.UndefOr[Boolean] = js.native
+  var isOwn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Property name or symbol description.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A function which serves as a setter for the property, or `undefined` if there is no setter
     * (accessor descriptors only).
     */
-  var set: js.UndefOr[RemoteObject] = js.native
+  var set: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * Property symbol object, if the property is of the `symbol` type.
     */
-  var symbol: js.UndefOr[RemoteObject] = js.native
+  var symbol: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * The value associated with the property.
     */
-  var value: js.UndefOr[RemoteObject] = js.native
+  var value: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * True if the result was thrown during the evaluation.
     */
-  var wasThrown: js.UndefOr[Boolean] = js.native
+  var wasThrown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the value associated with the property may be changed (data descriptors only).
     */
-  var writable: js.UndefOr[Boolean] = js.native
+  var writable: js.UndefOr[Boolean] = js.undefined
 }
 object PropertyDescriptor {
   

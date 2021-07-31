@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
   */
-@js.native
-trait ASPxClientTreeListNodeEventArgs extends ASPxClientEventArgs {
+trait ASPxClientTreeListNodeEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /**
     * Provides access to the parameters associated with the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
 }
 object ASPxClientTreeListNodeEventArgs {
   

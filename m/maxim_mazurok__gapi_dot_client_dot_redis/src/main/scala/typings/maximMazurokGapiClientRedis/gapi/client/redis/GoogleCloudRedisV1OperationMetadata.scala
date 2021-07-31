@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRedisV1OperationMetadata extends StObject {
   
   /** API version. */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** Specifies if cancellation was requested for the operation. */
-  var cancelRequested: js.UndefOr[Boolean] = js.native
+  var cancelRequested: js.UndefOr[Boolean] = js.undefined
   
   /** Creation timestamp. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** End timestamp. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Operation status details. */
-  var statusDetail: js.UndefOr[String] = js.native
+  var statusDetail: js.UndefOr[String] = js.undefined
   
   /** Operation target. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** Operation verb. */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRedisV1OperationMetadata {
   

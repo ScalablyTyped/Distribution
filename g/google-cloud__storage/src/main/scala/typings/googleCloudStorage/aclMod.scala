@@ -6,7 +6,6 @@ import typings.googleCloudCommon.utilMod.DecorateRequestOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aclMod {
@@ -147,14 +146,13 @@ object aclMod {
     def roles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AccessControlObject extends StObject {
     
-    var entity: String = js.native
+    var entity: String
     
-    var projectTeam: String = js.native
+    var projectTeam: String
     
-    var role: String = js.native
+    var role: String
   }
   object AccessControlObject {
     
@@ -178,12 +176,11 @@ object aclMod {
     }
   }
   
-  @js.native
   trait AclOptions extends StObject {
     
-    var pathPrefix: String = js.native
+    var pathPrefix: String
     
-    def request(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit = js.native
+    def request(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit
   }
   object AclOptions {
     
@@ -211,16 +208,15 @@ object aclMod {
     Unit
   ]
   
-  @js.native
   trait AddAclOptions extends StObject {
     
-    var entity: String = js.native
+    var entity: String
     
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
-    var role: String = js.native
+    var role: String
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object AddAclOptions {
     
@@ -262,14 +258,13 @@ object aclMod {
     Unit
   ]
   
-  @js.native
   trait GetAclOptions extends StObject {
     
-    var entity: String = js.native
+    var entity: String
     
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetAclOptions {
     
@@ -303,14 +298,13 @@ object aclMod {
   
   type RemoveAclCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
   
-  @js.native
   trait RemoveAclOptions extends StObject {
     
-    var entity: String = js.native
+    var entity: String
     
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object RemoveAclOptions {
     
@@ -349,16 +343,15 @@ object aclMod {
     Unit
   ]
   
-  @js.native
   trait UpdateAclOptions extends StObject {
     
-    var entity: String = js.native
+    var entity: String
     
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
-    var role: String = js.native
+    var role: String
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object UpdateAclOptions {
     

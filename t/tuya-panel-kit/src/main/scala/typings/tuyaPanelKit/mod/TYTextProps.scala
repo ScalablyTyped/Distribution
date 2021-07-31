@@ -12,23 +12,23 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.small
 import typings.tuyaPanelKit.tuyaPanelKitStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TYTextProps extends TextProps {
+trait TYTextProps
+  extends StObject
+     with TextProps {
   
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[large | normal | small | Double] = js.native
+  var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[heading | title | paragraph] = js.native
+  var `type`: js.UndefOr[heading | title | paragraph] = js.undefined
   
-  var weight: js.UndefOr[Double | String] = js.native
+  var weight: js.UndefOr[Double | String] = js.undefined
 }
 object TYTextProps {
   

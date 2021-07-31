@@ -2,22 +2,20 @@ package typings.trayballoon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrayballoonOptions extends StObject {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   @JSName("wait")
-  var wait_FTrayballoonOptions: js.UndefOr[Boolean] = js.native
+  var wait_FTrayballoonOptions: js.UndefOr[Boolean] = js.undefined
 }
 object TrayballoonOptions {
   

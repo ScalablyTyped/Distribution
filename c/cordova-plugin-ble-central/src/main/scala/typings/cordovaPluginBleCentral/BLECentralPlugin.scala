@@ -3,7 +3,6 @@ package typings.cordovaPluginBleCentral
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BLECentralPlugin {
@@ -13,16 +12,20 @@ object BLECentralPlugin {
     
     def connect(
       device_id: String,
-      connectCallback: js.Function1[/* data */ PeripheralDataExtended, _],
-      disconnectCallback: js.Function1[/* error */ String | BLEError, _]
+      connectCallback: js.Function1[/* data */ PeripheralDataExtended, js.Any],
+      disconnectCallback: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
-    def scan(services: js.Array[String], seconds: Double, success: js.Function1[/* data */ PeripheralData, _]): Unit = js.native
     def scan(
       services: js.Array[String],
       seconds: Double,
-      success: js.Function1[/* data */ PeripheralData, _],
-      failure: js.Function1[/* error */ String, _]
+      success: js.Function1[/* data */ PeripheralData, js.Any]
+    ): Unit = js.native
+    def scan(
+      services: js.Array[String],
+      seconds: Double,
+      success: js.Function1[/* data */ PeripheralData, js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
     ): Unit = js.native
     
     /* Register to be notified when the value of a characteristic changes. */
@@ -30,41 +33,46 @@ object BLECentralPlugin {
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.Function1[/* rawData */ ArrayBuffer, _]
+      success: js.Function1[/* rawData */ ArrayBuffer, js.Any]
     ): Unit = js.native
     def startNotification(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.Function1[/* rawData */ ArrayBuffer, _],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function1[/* rawData */ ArrayBuffer, js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
-    def startScan(services: js.Array[String], success: js.Function1[/* data */ PeripheralData, _]): Unit = js.native
+    def startScan(services: js.Array[String], success: js.Function1[/* data */ PeripheralData, js.Any]): Unit = js.native
     def startScan(
       services: js.Array[String],
-      success: js.Function1[/* data */ PeripheralData, _],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function1[/* data */ PeripheralData, js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
     def startScanWithOptions(
       services: js.Array[String],
       options: StartScanOptions,
-      success: js.Function1[/* data */ PeripheralData, _]
+      success: js.Function1[/* data */ PeripheralData, js.Any]
     ): Unit = js.native
     def startScanWithOptions(
       services: js.Array[String],
       options: StartScanOptions,
-      success: js.Function1[/* data */ PeripheralData, _],
-      failure: js.Function1[/* error */ String, _]
+      success: js.Function1[/* data */ PeripheralData, js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
     ): Unit = js.native
     
-    def startStateNotifications(success: js.Function1[/* state */ String, _]): Unit = js.native
-    def startStateNotifications(success: js.Function1[/* state */ String, _], failure: js.Function1[/* error */ String, _]): Unit = js.native
+    def startStateNotifications(success: js.Function1[/* state */ String, js.Any]): Unit = js.native
+    def startStateNotifications(
+      success: js.Function1[/* state */ String, js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
+    ): Unit = js.native
   }
   
   @js.native
-  trait BLECentralPluginPromises extends BLECentralPluginCommon {
+  trait BLECentralPluginPromises
+    extends StObject
+       with BLECentralPluginCommon {
     
     def disconnect(device_id: String): js.Promise[Unit] = js.native
     
@@ -94,61 +102,63 @@ object BLECentralPlugin {
   }
   
   @js.native
-  trait BLECentralPluginStatic extends BLECentralPluginCommon {
+  trait BLECentralPluginStatic
+    extends StObject
+       with BLECentralPluginCommon {
     
     /* Automatically connect to a device when it is in range of the phone
       [iOS] background notifications on ios must be enabled if you want to run in the background
       [Android] this relies on the autoConnect argument of BluetoothDevice.connectGatt(). Not all Android devices implement this feature correctly. */
     def autoConnect(
       device_id: String,
-      connectCallback: js.Function1[/* data */ PeripheralDataExtended, _],
-      disconnectCallback: js.Function1[/* error */ String | BLEError, _]
+      connectCallback: js.Function1[/* data */ PeripheralDataExtended, js.Any],
+      disconnectCallback: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
     /* Find the bonded devices.
       [iOS] bondedDevices is not supported on iOS. */
-    def bondedDevices(success: js.Function1[/* data */ js.Array[PeripheralData], _], failure: js.Function0[_]): Unit = js.native
+    def bondedDevices(success: js.Function1[/* data */ js.Array[PeripheralData], js.Any], failure: js.Function0[js.Any]): Unit = js.native
     
     /* Find connected peripherals offering the listed service UUIDs.
       This function wraps CBCentralManager.retrieveConnectedPeripheralsWithServices.
       [Android] peripheralsWithIdentifiers is not supported on Android. */
     def connectedPeripheralsWithServices(
       services: js.Array[String],
-      success: js.Function1[/* data */ js.Array[PeripheralData], _],
-      failure: js.Function0[_]
+      success: js.Function1[/* data */ js.Array[PeripheralData], js.Any],
+      failure: js.Function0[js.Any]
     ): Unit = js.native
     
     def disconnect(device_id: String): Unit = js.native
+    def disconnect(device_id: String, success: js.Function0[js.Any]): Unit = js.native
     def disconnect(
       device_id: String,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function0[js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
-    def disconnect(device_id: String, success: js.Function0[_]): Unit = js.native
-    def disconnect(
-      device_id: String,
-      success: js.Function0[_],
-      failure: js.Function1[/* error */ String | BLEError, _]
-    ): Unit = js.native
+    def disconnect(device_id: String, success: Unit, failure: js.Function1[/* error */ String | BLEError, js.Any]): Unit = js.native
     
     /* Enable Bluetooth on the device.
       [iOS] enable is not supported on iOS. */
-    def enable(success: js.Function0[_], failure: js.Function1[/* error */ String, _]): Unit = js.native
+    def enable(success: js.Function0[js.Any], failure: js.Function1[/* error */ String, js.Any]): Unit = js.native
     
     /* Calls the success callback when the peripheral is connected and the failure callback when not connected. */
-    def isConnected(device_id: String, success: js.Function0[_]): Unit = js.native
-    def isConnected(device_id: String, success: js.Function0[_], failure: js.Function1[/* error */ String, _]): Unit = js.native
+    def isConnected(device_id: String, success: js.Function0[js.Any]): Unit = js.native
+    def isConnected(
+      device_id: String,
+      success: js.Function0[js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
+    ): Unit = js.native
     
     /* Reports if bluetooth is enabled. */
-    def isEnabled(success: js.Function0[_], failure: js.Function1[/* error */ String, _]): Unit = js.native
+    def isEnabled(success: js.Function0[js.Any], failure: js.Function1[/* error */ String, js.Any]): Unit = js.native
     
     /* Find known (but not necessarily connected) peripherals offering the listed service UUIDs.
       This function wraps CBCentralManager.retrievePeripheralsWithIdentifiers
       [Android] peripheralsWithIdentifiers is not supported on Android. */
     def peripheralsWithIdentifiers(
       services: js.Array[String],
-      success: js.Function1[/* data */ js.Array[PeripheralData], _],
-      failure: js.Function0[_]
+      success: js.Function1[/* data */ js.Array[PeripheralData], js.Any],
+      failure: js.Function0[js.Any]
     ): Unit = js.native
     
     def read(device_id: String, service_uuid: String, characteristic_uuid: String): Unit = js.native
@@ -156,28 +166,28 @@ object BLECentralPlugin {
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function1[/* rawData */ ArrayBuffer, js.Any]
     ): Unit = js.native
     def read(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.Function1[/* rawData */ ArrayBuffer, _]
+      success: js.Function1[/* rawData */ ArrayBuffer, js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     def read(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.Function1[/* rawData */ ArrayBuffer, _],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: Unit,
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
-    def readRSSI(device_id: String, success: js.Function1[/* rssi */ Double, _]): Unit = js.native
+    def readRSSI(device_id: String, success: js.Function1[/* rssi */ Double, js.Any]): Unit = js.native
     def readRSSI(
       device_id: String,
-      success: js.Function1[/* rssi */ Double, _],
-      failure: js.Function1[/* error */ String, _]
+      success: js.Function1[/* rssi */ Double, js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
     ): Unit = js.native
     
     /* Clears cached services and characteristics info for some poorly behaved devices. Uses an undocumented API,
@@ -187,57 +197,62 @@ object BLECentralPlugin {
     def refreshDeviceCache(
       device_id: String,
       timeout_millis: Double,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function1[/* data */ PeripheralDataExtended, js.Any]
     ): Unit = js.native
     def refreshDeviceCache(
       device_id: String,
       timeout_millis: Double,
-      success: js.Function1[/* data */ PeripheralDataExtended, _]
+      success: js.Function1[/* data */ PeripheralDataExtended, js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     def refreshDeviceCache(
       device_id: String,
       timeout_millis: Double,
-      success: js.Function1[/* data */ PeripheralDataExtended, _],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: Unit,
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
     /* May be used to request (on Android) a larger MTU size to be able to send more data at once
       [iOS] requestMtu is not supported on iOS. */
     def requestMtu(device_id: String, mtu: Double): Unit = js.native
-    def requestMtu(device_id: String, mtu: Double, success: js.UndefOr[scala.Nothing], failure: js.Function0[_]): Unit = js.native
-    def requestMtu(device_id: String, mtu: Double, success: js.Function0[_]): Unit = js.native
-    def requestMtu(device_id: String, mtu: Double, success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
+    def requestMtu(device_id: String, mtu: Double, success: js.Function0[js.Any]): Unit = js.native
+    def requestMtu(device_id: String, mtu: Double, success: js.Function0[js.Any], failure: js.Function0[js.Any]): Unit = js.native
+    def requestMtu(device_id: String, mtu: Double, success: Unit, failure: js.Function0[js.Any]): Unit = js.native
     
     /* Opens the Bluetooth settings for the operating systems.
       [iOS] showBluetoothSettings is not supported on iOS. */
-    def showBluetoothSettings(success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
+    def showBluetoothSettings(success: js.Function0[js.Any], failure: js.Function0[js.Any]): Unit = js.native
     
     def stopNotification(device_id: String, service_uuid: String, characteristic_uuid: String): Unit = js.native
     def stopNotification(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function0[js.Any]
     ): Unit = js.native
-    def stopNotification(device_id: String, service_uuid: String, characteristic_uuid: String, success: js.Function0[_]): Unit = js.native
     def stopNotification(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
-      success: js.Function0[_],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function0[js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
+    ): Unit = js.native
+    def stopNotification(
+      device_id: String,
+      service_uuid: String,
+      characteristic_uuid: String,
+      success: Unit,
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
     def stopScan(): Unit = js.native
-    def stopScan(success: js.Function0[_]): Unit = js.native
-    def stopScan(success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
+    def stopScan(success: js.Function0[js.Any]): Unit = js.native
+    def stopScan(success: js.Function0[js.Any], failure: js.Function0[js.Any]): Unit = js.native
     
     def stopStateNotifications(): Unit = js.native
-    def stopStateNotifications(success: js.UndefOr[scala.Nothing], failure: js.Function0[_]): Unit = js.native
-    def stopStateNotifications(success: js.Function0[_]): Unit = js.native
-    def stopStateNotifications(success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
+    def stopStateNotifications(success: js.Function0[js.Any]): Unit = js.native
+    def stopStateNotifications(success: js.Function0[js.Any], failure: js.Function0[js.Any]): Unit = js.native
+    def stopStateNotifications(success: Unit, failure: js.Function0[js.Any]): Unit = js.native
     
     var withPromises: BLECentralPluginPromises = js.native
     
@@ -247,23 +262,23 @@ object BLECentralPlugin {
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: js.Function0[js.Any]
     ): Unit = js.native
     def write(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.Function0[_]
+      success: js.Function0[js.Any],
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     def write(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.Function0[_],
-      failure: js.Function1[/* error */ String | BLEError, _]
+      success: Unit,
+      failure: js.Function1[/* error */ String | BLEError, js.Any]
     ): Unit = js.native
     
     /* Writes data to a characteristic without a response from the peripheral. You are not notified if the write fails in the BLE stack.
@@ -274,34 +289,33 @@ object BLECentralPlugin {
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.UndefOr[scala.Nothing],
-      failure: js.Function1[/* error */ String, _]
+      success: js.Function0[js.Any]
     ): Unit = js.native
     def writeWithoutResponse(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.Function0[_]
+      success: js.Function0[js.Any],
+      failure: js.Function1[/* error */ String, js.Any]
     ): Unit = js.native
     def writeWithoutResponse(
       device_id: String,
       service_uuid: String,
       characteristic_uuid: String,
       data: ArrayBuffer,
-      success: js.Function0[_],
-      failure: js.Function1[/* error */ String, _]
+      success: Unit,
+      failure: js.Function1[/* error */ String, js.Any]
     ): Unit = js.native
   }
   
-  @js.native
   trait BLEError extends StObject {
     
-    var errorMessage: String = js.native
+    var errorMessage: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object BLEError {
     
@@ -325,16 +339,15 @@ object BLECentralPlugin {
     }
   }
   
-  @js.native
   trait PeripheralCharacteristic extends StObject {
     
-    var characteristic: String = js.native
+    var characteristic: String
     
-    var descriptors: js.UndefOr[js.Array[_]] = js.native
+    var descriptors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var properties: js.Array[String] = js.native
+    var properties: js.Array[String]
     
-    var service: String = js.native
+    var service: String
   }
   object PeripheralCharacteristic {
     
@@ -351,7 +364,7 @@ object BLECentralPlugin {
       def setCharacteristic(value: String): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDescriptors(value: js.Array[_]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      def setDescriptors(value: js.Array[js.Any]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
@@ -370,16 +383,15 @@ object BLECentralPlugin {
     }
   }
   
-  @js.native
   trait PeripheralData extends StObject {
     
-    var advertising: ArrayBuffer | js.Any = js.native
+    var advertising: ArrayBuffer | js.Any
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var rssi: Double = js.native
+    var rssi: Double
   }
   object PeripheralData {
     
@@ -406,12 +418,13 @@ object BLECentralPlugin {
     }
   }
   
-  @js.native
-  trait PeripheralDataExtended extends PeripheralData {
+  trait PeripheralDataExtended
+    extends StObject
+       with PeripheralData {
     
-    var characteristics: js.Array[PeripheralCharacteristic] = js.native
+    var characteristics: js.Array[PeripheralCharacteristic]
     
-    var services: js.Array[String] = js.native
+    var services: js.Array[String]
   }
   object PeripheralDataExtended {
     
@@ -445,10 +458,9 @@ object BLECentralPlugin {
     }
   }
   
-  @js.native
   trait StartScanOptions extends StObject {
     
-    var reportDuplicates: js.UndefOr[Boolean] = js.native
+    var reportDuplicates: js.UndefOr[Boolean] = js.undefined
   }
   object StartScanOptions {
     

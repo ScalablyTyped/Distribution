@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservedElasticsearchInstanceOfferingsResponse extends StObject {
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
   
   /**
     * List of reserved Elasticsearch instance offerings
     */
-  var ReservedElasticsearchInstanceOfferings: js.UndefOr[ReservedElasticsearchInstanceOfferingList] = js.native
+  var ReservedElasticsearchInstanceOfferings: js.UndefOr[ReservedElasticsearchInstanceOfferingList] = js.undefined
 }
 object DescribeReservedElasticsearchInstanceOfferingsResponse {
   

@@ -1,8 +1,9 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
+import typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason
+import typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a mechanism for applications to execute when they are not in the foreground. */
@@ -15,14 +16,14 @@ object ExtendedExecution {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason with Double
+        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason & Double
       ] = js.native
     
-    /* 1 */ val locationTracking: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.locationTracking with Double = js.native
+    /* 1 */ val locationTracking: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.locationTracking & Double = js.native
     
-    /* 2 */ val savingData: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.savingData with Double = js.native
+    /* 2 */ val savingData: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.savingData & Double = js.native
     
-    /* 0 */ val unspecified: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.unspecified with Double = js.native
+    /* 0 */ val unspecified: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.unspecified & Double = js.native
   }
   
   /** Specifies the possible background execution request result values. */
@@ -32,19 +33,25 @@ object ExtendedExecution {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult with Double
+        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult & Double
       ] = js.native
     
-    /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult.allowed with Double = js.native
+    /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult.allowed & Double = js.native
     
-    /* 1 */ val denied: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult.denied with Double = js.native
+    /* 1 */ val denied: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult.denied & Double = js.native
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the system revokes background execution. */
   @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs")
   @js.native
   abstract class ExtendedExecutionRevokedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs {
+    
+    /** Gets the reason background execution was revoked. */
+    /* CompleteClass */
+    var reason: ExtendedExecutionRevokedReason = js.native
+  }
   
   /** Describes the reason background execution was revoked. */
   @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason")
@@ -53,12 +60,12 @@ object ExtendedExecution {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason with Double
+        typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason & Double
       ] = js.native
     
-    /* 0 */ val resumed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.resumed with Double = js.native
+    /* 0 */ val resumed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.resumed & Double = js.native
     
-    /* 1 */ val systemPolicy: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.systemPolicy with Double = js.native
+    /* 1 */ val systemPolicy: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.systemPolicy & Double = js.native
   }
   
   /** Supports managing a request for background execution. */
@@ -66,7 +73,8 @@ object ExtendedExecution {
   @js.native
   /** Creates an ExtendedExecutionSession object. */
   class ExtendedExecutionSession ()
-    extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession
   
   /** Provides a mechanism for applications to perform extended execution while they are in the foreground. */
   object Foreground {
@@ -78,16 +86,16 @@ object ExtendedExecution {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason with Double
+            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason & Double
           ] = js.native
       
-      /* 2 */ val backgroundAudio: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.backgroundAudio with Double = js.native
+      /* 2 */ val backgroundAudio: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.backgroundAudio & Double = js.native
       
-      /* 1 */ val savingData: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.savingData with Double = js.native
+      /* 1 */ val savingData: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.savingData & Double = js.native
       
-      /* 3 */ val unconstrained: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.unconstrained with Double = js.native
+      /* 3 */ val unconstrained: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.unconstrained & Double = js.native
       
-      /* 0 */ val unspecified: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.unspecified with Double = js.native
+      /* 0 */ val unspecified: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason.unspecified & Double = js.native
     }
     
     /** Specifies the possible extended execution request result values. */
@@ -97,19 +105,25 @@ object ExtendedExecution {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult with Double
+            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult & Double
           ] = js.native
       
-      /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult.allowed with Double = js.native
+      /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult.allowed & Double = js.native
       
-      /* 1 */ val denied: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult.denied with Double = js.native
+      /* 1 */ val denied: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult.denied & Double = js.native
     }
     
     /** Passed to the event handler that is invoked when the system revokes extended execution. */
     @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs")
     @js.native
     abstract class ExtendedExecutionForegroundRevokedEventArgs ()
-      extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs {
+      
+      /** Gets the reason extended execution was revoked. */
+      /* CompleteClass */
+      var reason: ExtendedExecutionForegroundRevokedReason = js.native
+    }
     
     /** Describes the reason extended execution was revoked. */
     @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason")
@@ -118,12 +132,12 @@ object ExtendedExecution {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason with Double
+            typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason & Double
           ] = js.native
       
-      /* 0 */ val resumed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason.resumed with Double = js.native
+      /* 0 */ val resumed: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason.resumed & Double = js.native
       
-      /* 1 */ val systemPolicy: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason.systemPolicy with Double = js.native
+      /* 1 */ val systemPolicy: typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason.systemPolicy & Double = js.native
     }
     
     /** Supports managing a request for extended foreground execution. */
@@ -131,6 +145,7 @@ object ExtendedExecution {
     @js.native
     /** Creates an ExtendedExecutionForegroundSession object */
     class ExtendedExecutionForegroundSession ()
-      extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession
   }
 }

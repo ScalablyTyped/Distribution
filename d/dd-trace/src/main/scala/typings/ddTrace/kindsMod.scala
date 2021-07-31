@@ -6,7 +6,6 @@ import typings.ddTrace.ddTraceStrings.producer
 import typings.ddTrace.ddTraceStrings.server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kindsMod {

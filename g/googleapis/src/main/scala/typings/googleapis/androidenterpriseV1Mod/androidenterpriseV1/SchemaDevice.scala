@@ -2,27 +2,25 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Devices resource represents a mobile device managed by the EMM and
   * belonging to a specific enterprise user.
   */
-@js.native
 trait SchemaDevice extends StObject {
   
   /**
     * The Google Play Services Android ID for the device encoded as a lowercase
     * hex string. For example, &quot;123456789abcdef0&quot;.
     */
-  var androidId: js.UndefOr[String] = js.native
+  var androidId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#device&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the extent to which the device is controlled by a managed
@@ -37,12 +35,12 @@ trait SchemaDevice extends StObject {
     * enable the privilege) to use managed Google Play, but the profile is
     * itself not owned by a DPC.
     */
-  var managementType: js.UndefOr[String] = js.native
+  var managementType: js.UndefOr[String] = js.undefined
   
   /**
     * The policy enforced on the device.
     */
-  var policy: js.UndefOr[SchemaPolicy] = js.native
+  var policy: js.UndefOr[SchemaPolicy] = js.undefined
 }
 object SchemaDevice {
   

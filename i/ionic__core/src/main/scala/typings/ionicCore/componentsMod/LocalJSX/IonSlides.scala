@@ -5,111 +5,109 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSlides extends StObject {
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the active slide has changed.
     */
-  var onIonSlideDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the user double taps on the slide's container.
     */
-  var onIonSlideDoubleTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideDoubleTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the slider is actively being moved.
     */
-  var onIonSlideDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the next slide has ended.
     */
-  var onIonSlideNextEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideNextEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the next slide has started.
     */
-  var onIonSlideNextStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideNextStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the previous slide has ended.
     */
-  var onIonSlidePrevEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlidePrevEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the previous slide has started.
     */
-  var onIonSlidePrevStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlidePrevStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the slider is at the last slide.
     */
-  var onIonSlideReachEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideReachEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the slider is at its initial position.
     */
-  var onIonSlideReachStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideReachStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the user taps/clicks on the slide's container.
     */
-  var onIonSlideTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the user releases the touch.
     */
-  var onIonSlideTouchEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideTouchEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the user first touches the slider.
     */
-  var onIonSlideTouchStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideTouchStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the slide transition has ended.
     */
-  var onIonSlideTransitionEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideTransitionEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the slide transition has started.
     */
-  var onIonSlideTransitionStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideTransitionStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the active slide has changed.
     */
-  var onIonSlideWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlideWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted after Swiper initialization
     */
-  var onIonSlidesDidLoad: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonSlidesDidLoad: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
     */
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If `true`, show the pagination.
     */
-  var pager: js.UndefOr[Boolean] = js.native
+  var pager: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, show the scrollbar.
     */
-  var scrollbar: js.UndefOr[Boolean] = js.native
+  var scrollbar: js.UndefOr[Boolean] = js.undefined
 }
 object IonSlides {
   

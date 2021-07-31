@@ -10,14 +10,15 @@ import typings.agGrid.iCellRendererMod.ICellRendererFunc
 import typings.agGrid.iFrameworkFactoryMod.IFrameworkFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseFrameworkFactoryMod {
   
   @JSImport("ag-grid/dist/lib/baseFrameworkFactory", "BaseFrameworkFactory")
   @js.native
-  class BaseFrameworkFactory () extends IFrameworkFactory {
+  class BaseFrameworkFactory ()
+    extends StObject
+       with IFrameworkFactory {
     
     def colDefCellEditor(colDef: ColDef): InstantiableICellEditorComp | String = js.native
     

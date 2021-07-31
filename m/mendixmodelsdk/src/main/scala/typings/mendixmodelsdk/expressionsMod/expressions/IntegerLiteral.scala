@@ -38,7 +38,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -75,9 +74,8 @@ object IntegerLiteral {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.create")
-  @js.native
-  def create(model: IModel): IntegerLiteral = js.native
+  @scala.inline
+  def create(model: IModel): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -88,9 +86,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInAppServiceCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -101,9 +98,8 @@ object IntegerLiteral {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInBasicCodeActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): IntegerLiteral = js.native
+  @scala.inline
+  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -114,9 +110,8 @@ object IntegerLiteral {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInBasicJavaActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): IntegerLiteral = js.native
+  @scala.inline
+  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -127,9 +122,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInBinaryExpressionUnderLeft")
-  @js.native
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderLeft(container: BinaryExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -140,9 +134,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInBinaryExpressionUnderRight")
-  @js.native
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderRight(container: BinaryExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -153,9 +146,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInBinaryRequestHandlingUnderExpressionModel")
-  @js.native
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): IntegerLiteral = js.native
+  @scala.inline
+  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -166,9 +158,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInChangeListActionUnderValueModel")
-  @js.native
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInChangeListActionUnderValueModel(container: ChangeListAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -179,9 +170,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInChangeVariableActionUnderValueModel")
-  @js.native
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -192,9 +182,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInConditionalSettingsUnderExpressionModel")
-  @js.native
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): IntegerLiteral = js.native
+  @scala.inline
+  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -205,9 +194,8 @@ object IntegerLiteral {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInConsumedODataServiceUnderTimeoutModel")
-  @js.native
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): IntegerLiteral = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -218,9 +206,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInCreateVariableActionUnderInitialValueModel")
-  @js.native
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -231,9 +218,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInCustomRangeUnderLimitExpressionModel")
-  @js.native
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): IntegerLiteral = js.native
+  @scala.inline
+  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -244,9 +230,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInCustomRangeUnderOffsetExpressionModel")
-  @js.native
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): IntegerLiteral = js.native
+  @scala.inline
+  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -257,9 +242,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInDocumentTemplateParameterMappingUnderArgumentModel")
-  @js.native
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -270,9 +254,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInEndEventUnderReturnValueModel")
-  @js.native
-  def createInEndEventUnderReturnValueModel(container: EndEvent): IntegerLiteral = js.native
+  @scala.inline
+  def createInEndEventUnderReturnValueModel(container: EndEvent): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -283,9 +266,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInExpressionSplitConditionUnderExpressionModel")
-  @js.native
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): IntegerLiteral = js.native
+  @scala.inline
+  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -296,9 +278,8 @@ object IntegerLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInFormDataPartUnderValueModel")
-  @js.native
-  def createInFormDataPartUnderValueModel(container: FormDataPart): IntegerLiteral = js.native
+  @scala.inline
+  def createInFormDataPartUnderValueModel(container: FormDataPart): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -309,9 +290,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInFunctionCallExpressionUnderArguments")
-  @js.native
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -322,9 +302,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInGenerateDocumentActionUnderMarginBottomInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -335,9 +314,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInGenerateDocumentActionUnderMarginLeftInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -348,9 +326,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInGenerateDocumentActionUnderMarginRightInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -361,9 +338,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInGenerateDocumentActionUnderMarginTopInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -374,9 +350,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInHttpConfigurationUnderCustomLocationModel")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -387,9 +362,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInHttpConfigurationUnderPassword")
-  @js.native
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -400,9 +374,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInHttpConfigurationUnderUsername")
-  @js.native
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -413,9 +386,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInHttpHeaderEntryUnderValueModel")
-  @js.native
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): IntegerLiteral = js.native
+  @scala.inline
+  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -426,9 +398,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInIfExpressionUnderCondition")
-  @js.native
-  def createInIfExpressionUnderCondition(container: IfExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderCondition(container: IfExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -439,9 +410,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInIfExpressionUnderIfFalse")
-  @js.native
-  def createInIfExpressionUnderIfFalse(container: IfExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfFalse(container: IfExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -452,9 +422,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInIfExpressionUnderIfTrue")
-  @js.native
-  def createInIfExpressionUnderIfTrue(container: IfExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfTrue(container: IfExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -465,9 +434,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInInspectAttributeUnderExpressionModel")
-  @js.native
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): IntegerLiteral = js.native
+  @scala.inline
+  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -478,9 +446,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInLogMessageActionUnderNodeModel")
-  @js.native
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -491,9 +458,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInMemberChangeUnderValueModel")
-  @js.native
-  def createInMemberChangeUnderValueModel(container: MemberChange): IntegerLiteral = js.native
+  @scala.inline
+  def createInMemberChangeUnderValueModel(container: MemberChange): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -504,9 +470,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInMicroflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -517,9 +482,8 @@ object IntegerLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInNanoflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -530,9 +494,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInParenthesisExpressionUnderExpression")
-  @js.native
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -543,9 +506,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInProxyConfigurationUnderHostExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -556,9 +518,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInProxyConfigurationUnderPasswordExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -569,9 +530,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInProxyConfigurationUnderPortExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -582,9 +542,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInProxyConfigurationUnderUseConfigurationExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -595,9 +554,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInProxyConfigurationUnderUsernameExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): IntegerLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -608,9 +566,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInRestCallActionUnderTimeOutModel")
-  @js.native
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -621,9 +578,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInRuleCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -634,9 +590,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInTemplateArgumentUnderExpressionModel")
-  @js.native
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): IntegerLiteral = js.native
+  @scala.inline
+  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -647,9 +602,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInUnaryExpressionUnderExpression")
-  @js.native
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): IntegerLiteral = js.native
+  @scala.inline
+  def createInUnaryExpressionUnderExpression(container: UnaryExpression): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -660,9 +614,8 @@ object IntegerLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInWebServiceCallActionUnderTimeOutModel")
-  @js.native
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): IntegerLiteral = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -673,9 +626,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInWebServiceOperationParameterMappingUnderArgumentModel")
-  @js.native
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): IntegerLiteral = js.native
+  @scala.inline
+  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /**
     * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
@@ -686,9 +638,8 @@ object IntegerLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.createInWidgetValidationUnderExpressionModel")
-  @js.native
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): IntegerLiteral = js.native
+  @scala.inline
+  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): IntegerLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerLiteral]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IntegerLiteral.structureTypeName")

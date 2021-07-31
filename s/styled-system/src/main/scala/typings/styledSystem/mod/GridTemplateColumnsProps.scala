@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridTemplateColumnsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GridTemplateColumnsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TV
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)
     */
-  var gridTemplateColumns: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var gridTemplateColumns: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object GridTemplateColumnsProps {
   
@@ -24,7 +22,7 @@ object GridTemplateColumnsProps {
   }
   
   @scala.inline
-  implicit class GridTemplateColumnsPropsMutableBuilder[Self <: GridTemplateColumnsProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridTemplateColumnsProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridTemplateColumnsPropsMutableBuilder[Self <: GridTemplateColumnsProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridTemplateColumnsProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setGridTemplateColumns(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])

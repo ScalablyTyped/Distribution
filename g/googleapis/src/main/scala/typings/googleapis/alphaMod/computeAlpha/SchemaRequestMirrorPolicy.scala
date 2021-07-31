@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * wait for responses from the shadow service. Prior to sending traffic to the
   * shadow service, the host / authority header is suffixed with -shadow.
   */
-@js.native
 trait SchemaRequestMirrorPolicy extends StObject {
   
   /**
     * The full or partial URL to the BackendService resource being mirrored to.
     */
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
 }
 object SchemaRequestMirrorPolicy {
   

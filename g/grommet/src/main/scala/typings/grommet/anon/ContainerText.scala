@@ -12,27 +12,23 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerText extends StObject {
   
   var container: js.UndefOr[
     PropsOf[
-      FC[
-        BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-      ]
+      FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var text: js.UndefOr[
     PropsOf[
       FC[
-        TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
+        TextProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
       ]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ContainerText {
   
@@ -48,9 +44,7 @@ object ContainerText {
     @scala.inline
     def setContainer(
       value: PropsOf[
-          FC[
-            BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-          ]
+          FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])]
         ]
     ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
@@ -61,7 +55,7 @@ object ContainerText {
     def setText(
       value: PropsOf[
           FC[
-            TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
+            TextProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
           ]
         ]
     ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])

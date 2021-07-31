@@ -4,20 +4,19 @@ import typings.parameter.parameterStrings.email
 import typings.parameter.parameterStrings.emailQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRuleEmail
-  extends ParameterRuleBase
+  extends StObject
+     with ParameterRuleBase
      with _ParameterRuleItem {
   
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_ParameterRuleEmail: email | emailQuestionmark = js.native
+  var type_ParameterRuleEmail: email | emailQuestionmark
 }
 object ParameterRuleEmail {
   

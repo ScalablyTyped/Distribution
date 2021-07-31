@@ -12,7 +12,7 @@ Activity indicator collection
 | Keywords           | react, react-component, react-native, ios, android, activity, indicator, spinner, pacman, material |
 | # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 552568 |
+| # downloads        | 637152 |
 | # stars            | 0 |
 
 ## Links

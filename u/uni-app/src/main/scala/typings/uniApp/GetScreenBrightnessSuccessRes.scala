@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScreenBrightnessSuccessRes extends StObject {
   
   /**
     * 屏幕亮度值，范围 0~1，0 最暗，1 最亮。
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object GetScreenBrightnessSuccessRes {
   

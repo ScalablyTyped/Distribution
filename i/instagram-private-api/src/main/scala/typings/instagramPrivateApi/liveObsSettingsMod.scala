@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveObsSettingsMod {
   
-  @js.native
   trait LiveRtmpSettings extends StObject {
     
-    var stream_key: String = js.native
+    var stream_key: String
     
-    var stream_url: String = js.native
+    var stream_url: String
   }
   object LiveRtmpSettings {
     

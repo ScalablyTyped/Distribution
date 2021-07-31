@@ -3,15 +3,15 @@ package typings.reactLeaflet.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapLayerProps extends MapComponentProps {
+trait MapLayerProps
+  extends StObject
+     with MapComponentProps {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[Children] = js.native
+  var children: js.UndefOr[Children] = js.undefined
 }
 object MapLayerProps {
   

@@ -2,13 +2,11 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FadeEffectOptions extends StObject {
   
-  var crossFade: js.UndefOr[Boolean] = js.native
+  var crossFade: js.UndefOr[Boolean] = js.undefined
 }
 object FadeEffectOptions {
   

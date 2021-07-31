@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata type for the operation returned by UpdateInstance.
   */
-@js.native
 trait SchemaUpdateInstanceMetadata extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait SchemaUpdateInstanceMetadata extends StObject {
     * in the process of undoing itself (which is guaranteed to succeed) and
     * cannot be cancelled again.
     */
-  var cancelTime: js.UndefOr[String] = js.native
+  var cancelTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this operation failed or was completed successfully.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The desired end state of the update.
     */
-  var instance: js.UndefOr[SchemaInstance] = js.native
+  var instance: js.UndefOr[SchemaInstance] = js.undefined
   
   /**
     * The time at which UpdateInstance request was received.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateInstanceMetadata {
   

@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentSelection extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetSelection(SelectionContents: OlSelectionContents): Selection = js.native
+  def GetSelection(SelectionContents: OlSelectionContents): Selection
   
-  def Item(Index: js.Any): Attachment = js.native
+  def Item(Index: js.Any): Attachment
   
-  val Location: OlSelectionLocation = js.native
+  val Location: OlSelectionLocation
   
   @JSName("Outlook.AttachmentSelection_typekey")
-  var OutlookDotAttachmentSelection_typekey: AttachmentSelection = js.native
+  var OutlookDotAttachmentSelection_typekey: AttachmentSelection
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object AttachmentSelection {
   

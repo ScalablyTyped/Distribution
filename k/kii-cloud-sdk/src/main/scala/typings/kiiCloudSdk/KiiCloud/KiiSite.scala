@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait KiiSite extends StObject
 object KiiSite extends StObject {
   
   @js.native
-  sealed trait CN extends KiiSite
+  sealed trait CN
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait CN3 extends KiiSite
+  sealed trait CN3
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait EU extends KiiSite
+  sealed trait EU
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait JP extends KiiSite
+  sealed trait JP
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait SG extends KiiSite
+  sealed trait SG
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait US extends KiiSite
+  sealed trait US
+    extends StObject
+       with KiiSite
 }

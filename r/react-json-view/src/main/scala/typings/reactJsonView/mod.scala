@@ -11,7 +11,6 @@ import typings.reactJsonView.reactJsonViewStrings.square
 import typings.reactJsonView.reactJsonViewStrings.triangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,34 +19,33 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentType[ReactJsonViewProps] = js.native
   
-  @js.native
   trait CollapsedFieldProps extends StObject {
     
     /**
       * The name of the entry.
       */
-    var name: String | Null = js.native
+    var name: String | Null
     
     /**
       * The scopes above the current entry.
       */
-    var namespace: js.Array[String | Null] = js.native
+    var namespace: js.Array[String | Null]
     
     /**
       * The corresponding JSON subtree.
       */
-    var src: js.Object = js.native
+    var src: js.Object
     
     /**
       * The type of src. Can only be "array" or "object".
       */
-    var `type`: array | `object` = js.native
+    var `type`: array | `object`
   }
   object CollapsedFieldProps {
     
     @scala.inline
     def apply(namespace: js.Array[String | Null], src: js.Object, `type`: array | `object`): CollapsedFieldProps = {
-      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapsedFieldProps]
     }
@@ -75,44 +73,43 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait InteractionProps extends StObject {
     
     /**
       * The existing subtree of the JSON tree.
       */
-    var existing_src: js.Object = js.native
+    var existing_src: js.Object
     
     /**
       * The original value of the entry that is interacted with.
       */
-    var existing_value: js.Object | String | Double | Boolean | Null = js.native
+    var existing_value: js.Object | String | Double | Boolean | Null
     
     /**
       * The key of the entry that is interacted with.
       */
-    var name: String | Null = js.native
+    var name: String | Null
     
     /**
       * List of keys.
       */
-    var namespace: js.Array[String | Null] = js.native
+    var namespace: js.Array[String | Null]
     
     /**
       * The updated value of the entry that is interacted with.
       */
-    var new_value: js.UndefOr[js.Object | String | Double | Boolean | Null] = js.native
+    var new_value: js.UndefOr[js.Object | String | Double | Boolean | Null] = js.undefined
     
     /**
       * The updated subtree of the JSON tree.
       */
-    var updated_src: js.Object = js.native
+    var updated_src: js.Object
   }
   object InteractionProps {
     
     @scala.inline
     def apply(existing_src: js.Object, namespace: js.Array[String | Null], updated_src: js.Object): InteractionProps = {
-      val __obj = js.Dynamic.literal(existing_src = existing_src.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], updated_src = updated_src.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(existing_src = existing_src.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], updated_src = updated_src.asInstanceOf[js.Any], existing_value = null, name = null)
       __obj.asInstanceOf[InteractionProps]
     }
     
@@ -154,29 +151,28 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait OnCopyProps extends StObject {
     
     /**
       * The last key in the namespace array.
       */
-    var name: String | Null = js.native
+    var name: String | Null
     
     /**
       * List of keys.
       */
-    var namespace: js.Array[String | Null] = js.native
+    var namespace: js.Array[String | Null]
     
     /**
       * The JSON tree source object
       */
-    var src: js.Object = js.native
+    var src: js.Object
   }
   object OnCopyProps {
     
     @scala.inline
     def apply(namespace: js.Array[String | Null], src: js.Object): OnCopyProps = {
-      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[OnCopyProps]
     }
     
@@ -200,35 +196,34 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait OnSelectProps extends StObject {
     
     /**
       * The name of the currently selected entry.
       */
-    var name: String | Null = js.native
+    var name: String | Null
     
     /**
       * List of keys representing the scopes above the selected entry.
       */
-    var namespace: js.Array[String | Null] = js.native
+    var namespace: js.Array[String | Null]
     
     /**
       * The type of the value. For "number" type, it will be replaced with the more
       * accurate types: "float", "integer", or "nan".
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The value of the currently selected entry.
       */
-    var value: js.Object | String | Double | Boolean | Null = js.native
+    var value: js.Object | String | Double | Boolean | Null
   }
   object OnSelectProps {
     
     @scala.inline
     def apply(namespace: js.Array[String | Null], `type`: String): OnSelectProps = {
-      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], name = null, value = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnSelectProps]
     }
@@ -259,7 +254,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ReactJsonViewProps extends StObject {
     
     /**
@@ -269,7 +263,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var collapseStringsAfterLength: js.UndefOr[Double | `false`] = js.native
+    var collapseStringsAfterLength: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * When set to true, all nodes will be collapsed by default.
@@ -277,28 +271,28 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var collapsed: js.UndefOr[Boolean | Double] = js.native
+    var collapsed: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Set to a value to be used as defaultValue when adding new key to json
       *
       * Default: null
       */
-    var defaultValue: js.UndefOr[TypeDefaultValue | js.Array[TypeDefaultValue] | Null] = js.native
+    var defaultValue: js.UndefOr[TypeDefaultValue | js.Array[TypeDefaultValue] | Null] = js.undefined
     
     /**
       * When set to true, data type labels prefix values.
       *
       * Default: true
       */
-    var displayDataTypes: js.UndefOr[Boolean] = js.native
+    var displayDataTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set to true, objects and arrays are labeled with size.
       *
       * Default: true
       */
-    var displayObjectSize: js.UndefOr[Boolean] = js.native
+    var displayObjectSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When prop is not false, the user can copy objects and arrays to clipboard by clicking on the clipboard icon.
@@ -306,7 +300,7 @@ object mod extends Shortcut {
       *
       * Default: true
       */
-    var enableClipboard: js.UndefOr[Boolean | (js.Function1[/* copy */ OnCopyProps, Unit])] = js.native
+    var enableClipboard: js.UndefOr[Boolean | (js.Function1[/* copy */ OnCopyProps, Unit])] = js.undefined
     
     /**
       * When an integer value is assigned, arrays will be displayed in groups by count of the value.
@@ -314,28 +308,28 @@ object mod extends Shortcut {
       *
       * Default: 100
       */
-    var groupArraysAfterLength: js.UndefOr[Double] = js.native
+    var groupArraysAfterLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Style of expand/collapse icons. Accepted values are "circle", triangle" or "square".
       *
       * Default: {}
       */
-    var iconStyle: js.UndefOr[circle | triangle | square] = js.native
+    var iconStyle: js.UndefOr[circle | triangle | square] = js.undefined
     
     /**
       * Set the indent-width for nested objects.
       *
       * Default: 4
       */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Contains the name of your root node. Use null or false for no name.
       *
       * Default: "root"
       */
-    var name: js.UndefOr[String | Null | `false`] = js.native
+    var name: js.UndefOr[String | Null | `false`] = js.undefined
     
     /**
       * When a callback function is passed in, add functionality is enabled.
@@ -344,7 +338,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onAdd: js.UndefOr[(js.Function1[/* add */ InteractionProps, `false` | _]) | `false`] = js.native
+    var onAdd: js.UndefOr[(js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
     
     /**
       * When a callback function is passed in, delete functionality is enabled.
@@ -353,7 +347,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onDelete: js.UndefOr[(js.Function1[/* del */ InteractionProps, `false` | _]) | `false`] = js.native
+    var onDelete: js.UndefOr[(js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
     
     /**
       * When a callback function is passed in, edit functionality is enabled.
@@ -362,14 +356,14 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onEdit: js.UndefOr[(js.Function1[/* edit */ InteractionProps, `false` | _]) | `false`] = js.native
+    var onEdit: js.UndefOr[(js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
     
     /**
       * When a function is passed in, clicking a value triggers the onSelect method to be called.
       *
       * Default: false
       */
-    var onSelect: js.UndefOr[(js.Function1[/* select */ OnSelectProps, Unit]) | `false`] = js.native
+    var onSelect: js.UndefOr[(js.Function1[/* select */ OnSelectProps, Unit]) | `false`] = js.undefined
     
     /**
       * Callback function to provide control over what objects and arrays should be collapsed by default.
@@ -377,21 +371,21 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var shouldCollapse: js.UndefOr[`false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])] = js.native
+    var shouldCollapse: js.UndefOr[`false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])] = js.undefined
     
     /**
       * Set to true to sort object keys.
       *
       * Default: false
       */
-    var sortKeys: js.UndefOr[Boolean] = js.native
+    var sortKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This property contains your input JSON.
       *
       * Required.
       */
-    var src: js.Object = js.native
+    var src: js.Object
     
     /**
       * Style attributes for react-json-view container.
@@ -399,7 +393,7 @@ object mod extends Shortcut {
       *
       * Default: "rjv-default"
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * RJV supports base-16 themes. Check out the list of supported themes in the demo.
@@ -407,14 +401,14 @@ object mod extends Shortcut {
       *
       * Default: "rjv-default"
       */
-    var theme: js.UndefOr[ThemeKeys | ThemeObject] = js.native
+    var theme: js.UndefOr[ThemeKeys | ThemeObject] = js.undefined
     
     /**
       * Custom message for validation failures to onEdit, onAdd, or onDelete callbacks.
       *
       * Default: "Validation Error"
       */
-    var validationMessage: js.UndefOr[String] = js.native
+    var validationMessage: js.UndefOr[String] = js.undefined
   }
   object ReactJsonViewProps {
     
@@ -500,28 +494,28 @@ object mod extends Shortcut {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | _]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
+      def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAddFunction1(value: /* add */ InteractionProps => `false` | _): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      def setOnAddFunction1(value: /* add */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
       @scala.inline
-      def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | _]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | _): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+      def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
       @scala.inline
-      def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | _]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
+      def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | _): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
+      def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
@@ -727,40 +721,39 @@ object mod extends Shortcut {
     def twilight: typings.reactJsonView.reactJsonViewStrings.twilight = "twilight".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.twilight]
   }
   
-  @js.native
   trait ThemeObject extends StObject {
     
-    var base00: String = js.native
+    var base00: String
     
-    var base01: String = js.native
+    var base01: String
     
-    var base02: String = js.native
+    var base02: String
     
-    var base03: String = js.native
+    var base03: String
     
-    var base04: String = js.native
+    var base04: String
     
-    var base05: String = js.native
+    var base05: String
     
-    var base06: String = js.native
+    var base06: String
     
-    var base07: String = js.native
+    var base07: String
     
-    var base08: String = js.native
+    var base08: String
     
-    var base09: String = js.native
+    var base09: String
     
-    var base0A: String = js.native
+    var base0A: String
     
-    var base0B: String = js.native
+    var base0B: String
     
-    var base0C: String = js.native
+    var base0C: String
     
-    var base0D: String = js.native
+    var base0D: String
     
-    var base0E: String = js.native
+    var base0E: String
     
-    var base0F: String = js.native
+    var base0F: String
   }
   object ThemeObject {
     

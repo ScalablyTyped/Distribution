@@ -9,35 +9,33 @@ import typings.pdf2image.pdf2imageStrings.jpg
 import typings.pdf2image.pdf2imageStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pdf2image", "compileConverter")
+  @JSImport("pdf2image", JSImport.Namespace)
   @js.native
-  def compileConverter(): Converter = js.native
-  @JSImport("pdf2image", "compileConverter")
-  @js.native
-  def compileConverter(options: PartialOptions): Converter = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pdf2image", "convertPDF")
-  @js.native
-  def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]] = js.native
-  @JSImport("pdf2image", "convertPDF")
-  @js.native
-  def convertPDF(pdfFilePath: String, options: PartialOptions): js.Promise[js.Array[ConvertedFile]] = js.native
+  @scala.inline
+  def compileConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")().asInstanceOf[Converter]
+  @scala.inline
+  def compileConverter(options: PartialOptions): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")(options.asInstanceOf[js.Any]).asInstanceOf[Converter]
   
-  @js.native
+  @scala.inline
+  def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
+  @scala.inline
+  def convertPDF(pdfFilePath: String, options: PartialOptions): js.Promise[js.Array[ConvertedFile]] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
+  
   trait ConvertedFile extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var name: String = js.native
+    var name: String
     
-    var page: Double = js.native
+    var page: Double
     
-    var path: String = js.native
+    var path: String
   }
   object ConvertedFile {
     
@@ -64,12 +62,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Converter extends StObject {
     
-    def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]] = js.native
+    def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]]
     
-    def convertPDFList(pdfList: js.Array[String]): js.Promise[js.Array[ConvertedFile]] = js.native
+    def convertPDFList(pdfList: js.Array[String]): js.Promise[js.Array[ConvertedFile]]
   }
   object Converter {
     
@@ -93,28 +90,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var density: Double = js.native
+    var density: Double
     
-    var height: Double = js.native
+    var height: Double
     
     // #ffffff
-    var outputFormat: OutputFormat = js.native
+    var outputFormat: OutputFormat
     
-    var outputType: jpg | png | Dotjpg | Dotpng = js.native
+    var outputType: jpg | png | Dotjpg | Dotpng
     
-    var pages: Asterisk | String = js.native
+    var pages: Asterisk | String
     
-    var quality: Double = js.native
+    var quality: Double
     
     // * | even | odd | '/1,/3,5-6,-8, 9-'
-    var singleProcess: Boolean = js.native
+    var singleProcess: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateAttendeeResponse extends StObject {
   
   /**
     * The attendee information, including attendees IDs and join tokens.
     */
-  var Attendees: js.UndefOr[AttendeeList] = js.native
+  var Attendees: js.UndefOr[AttendeeList] = js.undefined
   
   /**
     * If the action fails for one or more of the attendees in the request, a list of the attendees is returned, along with error codes and error messages.
     */
-  var Errors: js.UndefOr[BatchCreateAttendeeErrorList] = js.native
+  var Errors: js.UndefOr[BatchCreateAttendeeErrorList] = js.undefined
 }
 object BatchCreateAttendeeResponse {
   

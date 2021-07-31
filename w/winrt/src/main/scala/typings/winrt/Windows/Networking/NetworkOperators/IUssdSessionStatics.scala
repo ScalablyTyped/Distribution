@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUssdSessionStatics extends StObject {
   
-  def createFromNetworkAccountId(networkAccountId: String): UssdSession = js.native
+  def createFromNetworkAccountId(networkAccountId: String): UssdSession
   
-  def createFromNetworkInterfaceId(networkInterfaceId: String): UssdSession = js.native
+  def createFromNetworkInterfaceId(networkInterfaceId: String): UssdSession
 }
 object IUssdSessionStatics {
   

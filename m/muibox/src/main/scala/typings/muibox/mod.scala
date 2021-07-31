@@ -3,31 +3,30 @@ package typings.muibox
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("muibox", "DialogProvider")
+  @JSImport("muibox", JSImport.Namespace)
   @js.native
-  def DialogProvider(_underscore: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("muibox", "useDialog")
-  @js.native
-  def useDialog(): Dialog = js.native
+  @scala.inline
+  def DialogProvider(_underscore: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogProvider")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("muibox", "withDialog")
-  @js.native
-  def withDialog(): js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ _, _]] = js.native
+  @scala.inline
+  def useDialog(): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialog")().asInstanceOf[Dialog]
   
-  @js.native
+  @scala.inline
+  def withDialog(): js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDialog")().asInstanceOf[js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]]]
+  
   trait AlertOptions extends StObject {
     
-    var message: js.UndefOr[String | ReactNode] = js.native
+    var message: js.UndefOr[String | ReactNode] = js.undefined
     
-    var ok: js.UndefOr[DialogButtonOptions] = js.native
+    var ok: js.UndefOr[DialogButtonOptions] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AlertOptions {
     
@@ -60,10 +59,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConfirmOptions extends AlertOptions {
+  trait ConfirmOptions
+    extends StObject
+       with AlertOptions {
     
-    var cancel: js.UndefOr[DialogButtonOptions] = js.native
+    var cancel: js.UndefOr[DialogButtonOptions] = js.undefined
   }
   object ConfirmOptions {
     
@@ -97,18 +97,17 @@ object mod {
     def prompt(options: PromptOptions): js.Promise[String] = js.native
   }
   
-  @js.native
   trait DialogButtonOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var endIcon: js.UndefOr[ReactNode] = js.native
+    var endIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var startIcon: js.UndefOr[ReactNode] = js.native
+    var startIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
   }
   object DialogButtonOptions {
     
@@ -153,14 +152,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait PromptOptions extends ConfirmOptions {
+  trait PromptOptions
+    extends StObject
+       with ConfirmOptions {
     
-    var defaultValue: js.UndefOr[String | Double] = js.native
+    var defaultValue: js.UndefOr[String | Double] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object PromptOptions {
     

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the encoding profile for an audio or video file. The encoding profile includes descriptions of the audio and video encoding formats, and a description of the media container. */
-@js.native
 trait MediaEncodingProfile extends StObject {
   
   /** Gets or sets the encoding properties for the audio stream. */
-  var audio: AudioEncodingProperties = js.native
+  var audio: AudioEncodingProperties
   
   /** Gets or sets the properties of the media container. */
-  var container: ContainerEncodingProperties = js.native
+  var container: ContainerEncodingProperties
   
   /** Gets or sets the encoding properties for the video stream. */
-  var video: VideoEncodingProperties = js.native
+  var video: VideoEncodingProperties
 }
 object MediaEncodingProfile {
   

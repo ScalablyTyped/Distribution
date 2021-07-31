@@ -11,24 +11,24 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choiceGroupOptionTypesMod {
   
-  @js.native
-  trait IChoiceGroupOptionProps extends IChoiceGroupOption {
+  trait IChoiceGroupOptionProps
+    extends StObject
+       with IChoiceGroupOption {
     
     /**
       * Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IChoiceGroupOption]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IChoiceGroupOption]] = js.undefined
     
     /**
       * Indicates if the ChoiceGroupOption should appear focused, visually
       */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback for receiving a notification when the choice has lost focus.
@@ -36,7 +36,7 @@ object choiceGroupOptionTypesMod {
     @JSName("onBlur")
     var onBlur_IChoiceGroupOptionProps: js.UndefOr[
         js.Function2[/* ev */ FocusEvent[HTMLElement], /* props */ js.UndefOr[IChoiceGroupOption], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback for receiving a notification when the choice has been changed.
@@ -48,7 +48,7 @@ object choiceGroupOptionTypesMod {
           /* props */ js.UndefOr[IChoiceGroupOption], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback for receiving a notification when the choice has received focus.
@@ -60,12 +60,12 @@ object choiceGroupOptionTypesMod {
           /* props */ js.UndefOr[IChoiceGroupOption], 
           js.UndefOr[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IChoiceGroupOptionProps {
     
@@ -123,35 +123,34 @@ object choiceGroupOptionTypesMod {
     }
   }
   
-  @js.native
   trait IChoiceGroupOptionStyleProps extends StObject {
     
     /** Whether the option is checked or not. */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the option is disabled or not. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the option is in focus or not. */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the option has an icon. */
-    var hasIcon: js.UndefOr[Boolean] = js.native
+    var hasIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the option icon is an image. */
-    var hasImage: js.UndefOr[Boolean] = js.native
+    var hasImage: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the image width or height are higher than `71`. */
-    var imageIsLarge: js.UndefOr[Boolean] = js.native
+    var imageIsLarge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Image sizes used when `hasImage` or `hasIcon` style props are enabled.
       * @defaultvalue \{height: 32, width: 32\}
       */
-    var imageSize: js.UndefOr[Width] = js.native
+    var imageSize: js.UndefOr[Width] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IChoiceGroupOptionStyleProps {
     
@@ -211,26 +210,25 @@ object choiceGroupOptionTypesMod {
     }
   }
   
-  @js.native
   trait IChoiceGroupOptionStyles extends StObject {
     
-    var choiceFieldWrapper: js.UndefOr[IStyle] = js.native
+    var choiceFieldWrapper: js.UndefOr[IStyle] = js.undefined
     
-    var field: js.UndefOr[IStyle] = js.native
+    var field: js.UndefOr[IStyle] = js.undefined
     
-    var iconWrapper: js.UndefOr[IStyle] = js.native
+    var iconWrapper: js.UndefOr[IStyle] = js.undefined
     
-    var imageWrapper: js.UndefOr[IStyle] = js.native
+    var imageWrapper: js.UndefOr[IStyle] = js.undefined
     
-    var innerField: js.UndefOr[IStyle] = js.native
+    var innerField: js.UndefOr[IStyle] = js.undefined
     
-    var input: js.UndefOr[IStyle] = js.native
+    var input: js.UndefOr[IStyle] = js.undefined
     
-    var labelWrapper: js.UndefOr[IStyle] = js.native
+    var labelWrapper: js.UndefOr[IStyle] = js.undefined
     
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
-    var selectedImageWrapper: js.UndefOr[IStyle] = js.native
+    var selectedImageWrapper: js.UndefOr[IStyle] = js.undefined
   }
   object IChoiceGroupOptionStyles {
     

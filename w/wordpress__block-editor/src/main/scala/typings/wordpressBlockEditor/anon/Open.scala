@@ -2,16 +2,14 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Open extends StObject {
   
   /**
     * A function opening the media modal when called.
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
 object Open {
   

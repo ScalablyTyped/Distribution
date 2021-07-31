@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWindowBoundsRequest extends StObject {
   
   /**
     * Browser window id.
     */
-  var windowId: WindowID = js.native
+  var windowId: WindowID
 }
 object GetWindowBoundsRequest {
   

@@ -3,17 +3,15 @@ package typings.followRedirects
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Http extends StObject {
     
-    var http: js.UndefOr[Agent] = js.native
+    var http: js.UndefOr[Agent] = js.undefined
     
-    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
   }
   object Http {
     
@@ -40,10 +38,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
   }
   object Location {
     

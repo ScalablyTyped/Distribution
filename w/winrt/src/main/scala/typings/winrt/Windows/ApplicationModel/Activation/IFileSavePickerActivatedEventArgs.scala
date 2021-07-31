@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Storage.Pickers.Provider.FileSavePickerUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileSavePickerActivatedEventArgs extends IActivatedEventArgs {
+trait IFileSavePickerActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var fileSavePickerUI: FileSavePickerUI = js.native
+  var fileSavePickerUI: FileSavePickerUI
 }
 object IFileSavePickerActivatedEventArgs {
   

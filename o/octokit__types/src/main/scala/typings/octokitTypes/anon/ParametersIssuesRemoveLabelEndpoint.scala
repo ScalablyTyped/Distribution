@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.IssuesRemoveLabelResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersIssuesRemoveLabelEndpoint extends StObject {
   
-  var parameters: IssuesRemoveLabelEndpoint = js.native
+  var parameters: IssuesRemoveLabelEndpoint
   
-  var request: IssuesRemoveLabelRequestOptions = js.native
+  var request: IssuesRemoveLabelRequestOptions
   
-  var response: OctokitResponse[IssuesRemoveLabelResponseData] = js.native
+  var response: OctokitResponse[IssuesRemoveLabelResponseData]
 }
 object ParametersIssuesRemoveLabelEndpoint {
   

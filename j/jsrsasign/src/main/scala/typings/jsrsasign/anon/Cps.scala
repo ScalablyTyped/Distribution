@@ -2,17 +2,15 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cps extends StObject {
   
-  var cps: String = js.native
+  var cps: String
   
-  var id: String = js.native
+  var id: String
   
-  var unotice: String = js.native
+  var unotice: String
 }
 object Cps {
   

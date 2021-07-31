@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.CalendarType
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Calendar_ extends Control {
+trait Calendar_
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -184,7 +185,7 @@ trait Calendar_ extends Control {
     * <code>ariaLabelledBy</code>.
     * @since 1.28.0
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets content of aggregation <code>disabledDates</code>.Date Ranges for disabled dates
@@ -372,7 +373,7 @@ trait Calendar_ extends Control {
     * @since 1.28.0
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>disabledDates</code>.Additionally, it

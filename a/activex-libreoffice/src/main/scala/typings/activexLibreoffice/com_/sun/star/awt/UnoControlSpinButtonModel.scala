@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,18 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * value to other controls.
   * @see UnoControlScrollBarModel
   */
-@js.native
-trait UnoControlSpinButtonModel extends UnoControlModel {
+trait UnoControlSpinButtonModel
+  extends StObject
+     with UnoControlModel {
   
   /** specifies the RGB color to be used for the control */
-  var BackgroundColor: Color = js.native
+  var BackgroundColor: Color
   
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
-  var Border: Double = js.native
+  var Border: Double
   
   /**
     * specifies the color of the border, if present
@@ -45,16 +45,16 @@ trait UnoControlSpinButtonModel extends UnoControlModel {
     * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
     * @since OOo 2.0
     */
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
   /** determines whether the control is enabled or disabled. */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /** specifies the help text of the control. */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** specifies the help URL of the control. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
@@ -62,16 +62,16 @@ trait UnoControlSpinButtonModel extends UnoControlModel {
     * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
     * you can control under which circumstances this is possible.
     */
-  var MouseWheelBehavior: Double = js.native
+  var MouseWheelBehavior: Double
   
   /** specifies the {@link ScrollBarOrientation} of the control. */
-  var Orientation: Double = js.native
+  var Orientation: Double
   
   /** specifies whether the control will be printed with the document. */
-  var Printable: Boolean = js.native
+  var Printable: Boolean
   
   /** specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed. */
-  var Repeat: Boolean = js.native
+  var Repeat: Boolean
   
   /**
     * specifies the mouse repeat delay, in milliseconds.
@@ -80,22 +80,29 @@ trait UnoControlSpinButtonModel extends UnoControlModel {
     * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
     * specified with this property.
     */
-  var RepeatDelay: Double = js.native
+  var RepeatDelay: Double
   
   /** specifies the increment by which the value is changed when using operating the spin button. */
-  var SpinIncrement: Double = js.native
+  var SpinIncrement: Double
   
   /** specifies the current value of the control. */
-  var SpinValue: Double = js.native
+  var SpinValue: Double
   
   /** specifies the maximum value of the control. */
-  var SpinValueMax: Double = js.native
+  var SpinValueMax: Double
   
   /** specifies the minimum value of the control. */
-  var SpinValueMin: Double = js.native
+  var SpinValueMin: Double
   
   /** specifies the RGB color to be used when painting symbols which are part of the control's appearance, such as the arrow buttons. */
-  var SymbolColor: Color = js.native
+  var SymbolColor: Color
+  
+  /**
+    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+    * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+    */
+  /* InferMemberOverrides */
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object UnoControlSpinButtonModel {
   
@@ -138,7 +145,7 @@ object UnoControlSpinButtonModel {
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getServiceName: () => String,
     queryInterface: `type` => js.Any,
     read: XObjectInputStream => Unit,
@@ -148,7 +155,7 @@ object UnoControlSpinButtonModel {
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     write: XObjectOutputStream => Unit
   ): UnoControlSpinButtonModel = {
     val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], MouseWheelBehavior = MouseWheelBehavior.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Repeat = Repeat.asInstanceOf[js.Any], RepeatDelay = RepeatDelay.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], SpinIncrement = SpinIncrement.asInstanceOf[js.Any], SpinValue = SpinValue.asInstanceOf[js.Any], SpinValueMax = SpinValueMax.asInstanceOf[js.Any], SpinValueMin = SpinValueMin.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], SymbolColor = SymbolColor.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -169,6 +176,9 @@ object UnoControlSpinButtonModel {
     
     @scala.inline
     def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])

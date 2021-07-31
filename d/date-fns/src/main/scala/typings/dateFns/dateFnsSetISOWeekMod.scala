@@ -3,18 +3,19 @@ package typings.dateFns
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFnsSetISOWeekMod {
   
   object default {
     
+    @scala.inline
+    def apply(date: Double, isoWeek: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def apply(date: Date, isoWeek: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+    
     @JSImport("date-fns/setISOWeek", JSImport.Default)
     @js.native
-    def apply(date: Double, isoWeek: Double): Date = js.native
-    @JSImport("date-fns/setISOWeek", JSImport.Default)
-    @js.native
-    def apply(date: Date, isoWeek: Double): Date = js.native
+    val ^ : js.Any = js.native
   }
 }

@@ -5,20 +5,20 @@ import typings.expoLocation.locationTypesMod.LocationGeocodedAddress
 import typings.expoLocation.locationTypesMod.LocationGeocodedLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationGoogleGeocodingMod {
   
-  @JSImport("expo-location/build/LocationGoogleGeocoding", "googleGeocodeAsync")
+  @JSImport("expo-location/build/LocationGoogleGeocoding", JSImport.Namespace)
   @js.native
-  def googleGeocodeAsync(address: String): js.Promise[js.Array[LocationGeocodedLocation]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-location/build/LocationGoogleGeocoding", "googleReverseGeocodeAsync")
-  @js.native
-  def googleReverseGeocodeAsync(options: Latitude): js.Promise[js.Array[LocationGeocodedAddress]] = js.native
+  @scala.inline
+  def googleGeocodeAsync(address: String): js.Promise[js.Array[LocationGeocodedLocation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("googleGeocodeAsync")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocationGeocodedLocation]]]
   
-  @JSImport("expo-location/build/LocationGoogleGeocoding", "setGoogleApiKey")
-  @js.native
-  def setGoogleApiKey(apiKey: String): Unit = js.native
+  @scala.inline
+  def googleReverseGeocodeAsync(options: Latitude): js.Promise[js.Array[LocationGeocodedAddress]] = ^.asInstanceOf[js.Dynamic].applyDynamic("googleReverseGeocodeAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocationGeocodedAddress]]]
+  
+  @scala.inline
+  def setGoogleApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,17 +2,15 @@ package typings.storybookAddons
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var brandTitle: js.UndefOr[String] = js.native
+    var brandTitle: js.UndefOr[String] = js.undefined
   }
   object Base {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Current[T] extends StObject {
     
-    var current: T = js.native
+    var current: T
   }
   object Current {
     
@@ -50,7 +47,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current[_], T] (val x: Self with Current[T]) extends AnyVal {
+    implicit class CurrentMutableBuilder[Self <: Current[?], T] (val x: Self & Current[T]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.twilioChat
 import typings.twilioChat.sessionMod.Session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object consumptionhorizonMod {
@@ -45,10 +44,9 @@ object consumptionhorizonMod {
     def updateLastConsumedMessageIndexForChannel(channelSid: String, messageIdx: Double): js.Promise[Double] = js.native
   }
   
-  @js.native
   trait ConsumptionHorizonServices extends StObject {
     
-    var session: Session = js.native
+    var session: Session
   }
   object ConsumptionHorizonServices {
     

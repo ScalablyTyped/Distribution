@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMediaForFragmentListInput extends StObject {
   
   /**
     * A list of the numbers of fragments for which to retrieve media. You retrieve these values with ListFragments.
     */
-  var Fragments: FragmentNumberList = js.native
+  var Fragments: FragmentNumberList
   
   /**
     * The name of the stream from which to retrieve fragment media.
     */
-  var StreamName: typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName
 }
 object GetMediaForFragmentListInput {
   

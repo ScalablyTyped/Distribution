@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.core
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message_ extends Element {
+trait Message_
+  extends StObject
+     with Element {
   
   /**
     * Compares two given messages with each other.The types of {@link sap.ui.core.MessageType} are ordered

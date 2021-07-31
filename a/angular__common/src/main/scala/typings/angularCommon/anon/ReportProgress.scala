@@ -7,31 +7,29 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportProgress extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: js.UndefOr[body] = js.native
+  var observe: js.UndefOr[body] = js.undefined
   
-  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.native
+  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: blob = js.native
+  var responseType: blob
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ReportProgress {
   
   @scala.inline
-  def apply(responseType: blob): ReportProgress = {
-    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+  def apply(): ReportProgress = {
+    val __obj = js.Dynamic.literal(responseType = "blob")
     __obj.asInstanceOf[ReportProgress]
   }
   

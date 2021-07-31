@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GitUpdateRefResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGitUpdateRefEndpoint extends StObject {
   
-  var parameters: GitUpdateRefEndpoint = js.native
+  var parameters: GitUpdateRefEndpoint
   
-  var request: GitUpdateRefRequestOptions = js.native
+  var request: GitUpdateRefRequestOptions
   
-  var response: OctokitResponse[GitUpdateRefResponseData] = js.native
+  var response: OctokitResponse[GitUpdateRefResponseData]
 }
 object ParametersGitUpdateRefEndpoint {
   

@@ -3,13 +3,16 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Utility methods to create different kinds of alert dialogs. There are three methods available: alert, confirm and prompt
   */
 object notification {
+  
+  @JSImport("onsenui", "notification")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @param {Object} options Parameter object
@@ -26,18 +29,14 @@ object notification {
     *   The content of the message can be either simple text or HTML
     *   Must specify either message or messageHTML
     */
-  @JSImport("onsenui", "notification.alert")
-  @js.native
-  def alert(message: String): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.alert")
-  @js.native
-  def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.alert")
-  @js.native
-  def alert(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.alert")
-  @js.native
-  def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @scala.inline
+  def alert(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def alert(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
   
   /**
     * @param {Object} options Parameter object
@@ -58,18 +57,14 @@ object notification {
     *   The default button labels are "Cancel" and "OK" but they can be customized
     *   Must specify either message or messageHTML
     */
-  @JSImport("onsenui", "notification.confirm")
-  @js.native
-  def confirm(message: String): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.confirm")
-  @js.native
-  def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.confirm")
-  @js.native
-  def confirm(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.confirm")
-  @js.native
-  def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @scala.inline
+  def confirm(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def confirm(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
   
   /**
     * @param {Object} options Parameter object
@@ -89,20 +84,15 @@ object notification {
     *   Display a dialog with a prompt to ask the user a question
     *   Must specify either message or messageHTML
     */
-  @JSImport("onsenui", "notification.prompt")
-  @js.native
-  def prompt(message: String): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.prompt")
-  @js.native
-  def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.prompt")
-  @js.native
-  def prompt(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  @JSImport("onsenui", "notification.prompt")
-  @js.native
-  def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @scala.inline
+  def prompt(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def prompt(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  @scala.inline
+  def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
   
-  @JSImport("onsenui", "notification.toast")
-  @js.native
-  def toast(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def toast(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

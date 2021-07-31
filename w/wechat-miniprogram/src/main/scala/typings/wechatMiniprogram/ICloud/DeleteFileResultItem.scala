@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.ICloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileResultItem extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var fileID: String = js.native
+  var fileID: String
   
-  var status: Double = js.native
+  var status: Double
 }
 object DeleteFileResultItem {
   

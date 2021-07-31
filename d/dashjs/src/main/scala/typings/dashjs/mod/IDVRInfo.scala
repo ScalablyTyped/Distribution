@@ -3,17 +3,15 @@ package typings.dashjs.mod
 import typings.dashjs.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDVRInfo extends StObject {
   
-  var manifestInfo: IManifestInfo = js.native
+  var manifestInfo: IManifestInfo
   
-  var range: End = js.native
+  var range: End
   
-  var time: Double = js.native
+  var time: Double
 }
 object IDVRInfo {
   

@@ -7,15 +7,190 @@ import typings.playable.progressTypesMod.IProgressViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/progress/progress", JSImport.Default)
   @js.native
-  class default protected () extends ProgressControl {
+  class default protected ()
+    extends StObject
+       with ProgressControl {
     def this(hasEngineLiveStateEngineEventEmitterTextMapTooltipServiceThemePreviewThumbnailPreviewFullSize: LiveStateEngine) = this()
+    
+    /* CompleteClass */
+    var _addTimeIndicator: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _changeCurrentTimeOfVideo: js.Any = js.native
+    
+    /* CompleteClass */
+    var _convertPlayedPercentToTime: js.Any = js.native
+    
+    /* CompleteClass */
+    var _desiredSeekPosition: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _hidePreview: js.Any = js.native
+    
+    /* CompleteClass */
+    var _hideTooltip: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initTimeIndicators: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _interceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _isUserDragging: js.Any = js.native
+    
+    /* CompleteClass */
+    var _liveStateEngine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _onChangePlayedPercent: js.Any = js.native
+    
+    /* CompleteClass */
+    var _onSyncWithLiveMouseEnter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _onSyncWithLiveMouseLeave: js.Any = js.native
+    
+    /* CompleteClass */
+    var _pauseVideoOnDragStart: js.Any = js.native
+    
+    /* CompleteClass */
+    var _playVideoOnDragEnd: js.Any = js.native
+    
+    /* CompleteClass */
+    var _previewFullSize: js.Any = js.native
+    
+    /* CompleteClass */
+    var _previewThumbnail: js.Any = js.native
+    
+    /* CompleteClass */
+    var _processLiveStateChange: js.Any = js.native
+    
+    /* CompleteClass */
+    var _processStateChange: js.Any = js.native
+    
+    /* CompleteClass */
+    var _reset: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setBuffered: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setPlayed: js.Any = js.native
+    
+    /* CompleteClass */
+    var _shouldHidePreviewOnUpdate: js.Any = js.native
+    
+    /* CompleteClass */
+    var _shouldPlayAfterDragEnd: js.Any = js.native
+    
+    /* CompleteClass */
+    var _showFullScreenPreview: js.Any = js.native
+    
+    /* CompleteClass */
+    var _showTooltipAndPreview: js.Any = js.native
+    
+    /* CompleteClass */
+    var _startIntervalUpdates: js.Any = js.native
+    
+    /* CompleteClass */
+    var _startProcessingUserDrag: js.Any = js.native
+    
+    /* CompleteClass */
+    var _stopIntervalUpdates: js.Any = js.native
+    
+    /* CompleteClass */
+    var _stopProcessingUserDrag: js.Any = js.native
+    
+    /* CompleteClass */
+    var _syncWithLive: js.Any = js.native
+    
+    /* CompleteClass */
+    var _textMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _timeIndicatorsToAdd: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tooltipService: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateAllIndicators: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateBufferIndicator: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateControlInterval: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updatePlayedIndicator: js.Any = js.native
+    
+    /* CompleteClass */
+    override def addTimeIndicator(time: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def addTimeIndicators(times: js.Array[Double]): Unit = js.native
+    
+    /* CompleteClass */
+    override def clearTimeIndicators(): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def seekOnProgressDrag(): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showPreviewOnProgressDrag(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.progressViewMod.default = js.native
   }
   object default {
     
@@ -57,106 +232,107 @@ object progressMod {
   @js.native
   val UPDATE_PROGRESS_INTERVAL_DELAY: Double = js.native
   
-  @js.native
-  trait ProgressControl extends IProgressControl {
+  trait ProgressControl
+    extends StObject
+       with IProgressControl {
     
-    var _addTimeIndicator: js.Any = js.native
+    var _addTimeIndicator: js.Any
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _changeCurrentTimeOfVideo: js.Any = js.native
+    var _changeCurrentTimeOfVideo: js.Any
     
-    var _convertPlayedPercentToTime: js.Any = js.native
+    var _convertPlayedPercentToTime: js.Any
     
-    var _desiredSeekPosition: js.Any = js.native
+    var _desiredSeekPosition: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _hidePreview: js.Any = js.native
+    var _hidePreview: js.Any
     
-    var _hideTooltip: js.Any = js.native
+    var _hideTooltip: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _initTimeIndicators: js.Any = js.native
+    var _initTimeIndicators: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _interceptor: js.Any = js.native
+    var _interceptor: js.Any
     
-    var _isUserDragging: js.Any = js.native
+    var _isUserDragging: js.Any
     
-    var _liveStateEngine: js.Any = js.native
+    var _liveStateEngine: js.Any
     
-    var _onChangePlayedPercent: js.Any = js.native
+    var _onChangePlayedPercent: js.Any
     
-    var _onSyncWithLiveMouseEnter: js.Any = js.native
+    var _onSyncWithLiveMouseEnter: js.Any
     
-    var _onSyncWithLiveMouseLeave: js.Any = js.native
+    var _onSyncWithLiveMouseLeave: js.Any
     
-    var _pauseVideoOnDragStart: js.Any = js.native
+    var _pauseVideoOnDragStart: js.Any
     
-    var _playVideoOnDragEnd: js.Any = js.native
+    var _playVideoOnDragEnd: js.Any
     
-    var _previewFullSize: js.Any = js.native
+    var _previewFullSize: js.Any
     
-    var _previewThumbnail: js.Any = js.native
+    var _previewThumbnail: js.Any
     
-    var _processLiveStateChange: js.Any = js.native
+    var _processLiveStateChange: js.Any
     
-    var _processStateChange: js.Any = js.native
+    var _processStateChange: js.Any
     
-    var _reset: js.Any = js.native
+    var _reset: js.Any
     
-    var _setBuffered: js.Any = js.native
+    var _setBuffered: js.Any
     
-    var _setPlayed: js.Any = js.native
+    var _setPlayed: js.Any
     
-    var _shouldHidePreviewOnUpdate: js.Any = js.native
+    var _shouldHidePreviewOnUpdate: js.Any
     
-    var _shouldPlayAfterDragEnd: js.Any = js.native
+    var _shouldPlayAfterDragEnd: js.Any
     
-    var _showFullScreenPreview: js.Any = js.native
+    var _showFullScreenPreview: js.Any
     
-    var _showTooltipAndPreview: js.Any = js.native
+    var _showTooltipAndPreview: js.Any
     
-    var _startIntervalUpdates: js.Any = js.native
+    var _startIntervalUpdates: js.Any
     
-    var _startProcessingUserDrag: js.Any = js.native
+    var _startProcessingUserDrag: js.Any
     
-    var _stopIntervalUpdates: js.Any = js.native
+    var _stopIntervalUpdates: js.Any
     
-    var _stopProcessingUserDrag: js.Any = js.native
+    var _stopProcessingUserDrag: js.Any
     
-    var _syncWithLive: js.Any = js.native
+    var _syncWithLive: js.Any
     
-    var _textMap: js.Any = js.native
+    var _textMap: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _timeIndicatorsToAdd: js.Any = js.native
+    var _timeIndicatorsToAdd: js.Any
     
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _updateAllIndicators: js.Any = js.native
+    var _updateAllIndicators: js.Any
     
-    var _updateBufferIndicator: js.Any = js.native
+    var _updateBufferIndicator: js.Any
     
-    var _updateControlInterval: js.Any = js.native
+    var _updateControlInterval: js.Any
     
-    var _updatePlayedIndicator: js.Any = js.native
+    var _updatePlayedIndicator: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.progressViewMod.default = js.native
+    var view: typings.playable.progressViewMod.default
   }
   object ProgressControl {
     

@@ -19,7 +19,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePickerTypesMod {
@@ -31,22 +30,28 @@ object basePickerTypesMod {
   object ValidationState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ValidationState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ValidationState & Double] = js.native
     
     /** User input is invalid. */
     @js.native
-    sealed trait invalid extends ValidationState
-    /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid with Double = js.native
+    sealed trait invalid
+      extends StObject
+         with ValidationState
+    /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid & Double = js.native
     
     /** User input is valid. */
     @js.native
-    sealed trait valid extends ValidationState
-    /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid with Double = js.native
+    sealed trait valid
+      extends StObject
+         with ValidationState
+    /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid & Double = js.native
     
     /** User input could be valid or invalid, its state is not known yet. */
     @js.native
-    sealed trait warning extends ValidationState
-    /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning with Double = js.native
+    sealed trait warning
+      extends StObject
+         with ValidationState
+    /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning & Double = js.native
   }
   
   @js.native
@@ -73,7 +78,8 @@ object basePickerTypesMod {
   
   @js.native
   trait IBasePickerProps[T]
-    extends Props[js.Any] {
+    extends StObject
+       with Props[js.Any] {
     
     /**
       * ClassName for the picker.
@@ -237,7 +243,7 @@ object basePickerTypesMod {
     /**
       * The properties that will get passed to the Suggestions component.
       */
-    var pickerSuggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[_]] = js.native
+    var pickerSuggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[js.Any]] = js.native
     
     /**
       * Aria label for the "X" button in the selected item component.
@@ -275,20 +281,19 @@ object basePickerTypesMod {
   }
   
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/BasePicker.types.IBasePickerProps<any>, 'theme' | 'className' | 'disabled'> & {  isFocused :boolean | undefined,   inputClassName :string | undefined} */
-  @js.native
   trait IBasePickerStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Optional pickerInput className */
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     /** Whether text style area is focused */
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IBasePickerStyleProps {
     
@@ -333,26 +338,25 @@ object basePickerTypesMod {
     }
   }
   
-  @js.native
   trait IBasePickerStyles extends StObject {
     
     /** Refers to the input were to type new selections (picks). */
-    var input: IStyle = js.native
+    var input: IStyle
     
     /** Refers to the items already selected (picked). */
-    var itemsWrapper: IStyle = js.native
+    var itemsWrapper: IStyle
     
     /** Root element of any picker extending from BasePicker (wraps all the elements). */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** Refers to helper element used for accessibility tools (hidden from view on screen). */
-    var screenReaderText: IStyle = js.native
+    var screenReaderText: IStyle
     
     /**
       * Refers to the elements already selected (picked) wrapped by `itemsWrapper` along with the input to type
       * a new selection.
       */
-    var text: IStyle = js.native
+    var text: IStyle
   }
   object IBasePickerStyles {
     
@@ -413,44 +417,43 @@ object basePickerTypesMod {
   }
   
   /* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<T>, 'onRenderNoResultFound' | 'suggestionsHeaderText' | 'mostRecentlyUsedHeaderText' | 'noResultsFoundText' | 'className' | 'suggestionsClassName' | 'suggestionsItemClassName' | 'searchForMoreText' | 'forceResolveText' | 'loadingText' | 'searchingText' | 'resultsFooterFull' | 'resultsFooter' | 'resultsMaximumNumber' | 'showRemoveButtons' | 'suggestionsAvailableAlertText' | 'suggestionsContainerAriaLabel' | 'showForceResolve'> */
-  @js.native
   trait IBasePickerSuggestionsProps[T] extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var forceResolveText: js.UndefOr[String] = js.native
+    var forceResolveText: js.UndefOr[String] = js.undefined
     
-    var loadingText: js.UndefOr[String] = js.native
+    var loadingText: js.UndefOr[String] = js.undefined
     
-    var mostRecentlyUsedHeaderText: js.UndefOr[String] = js.native
+    var mostRecentlyUsedHeaderText: js.UndefOr[String] = js.undefined
     
-    var noResultsFoundText: js.UndefOr[String] = js.native
+    var noResultsFoundText: js.UndefOr[String] = js.undefined
     
-    var onRenderNoResultFound: js.UndefOr[IRenderFunction[Unit]] = js.native
+    var onRenderNoResultFound: js.UndefOr[IRenderFunction[Unit]] = js.undefined
     
-    var resultsFooter: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.native
+    var resultsFooter: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
     
-    var resultsFooterFull: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.native
+    var resultsFooterFull: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
     
-    var resultsMaximumNumber: js.UndefOr[Double] = js.native
+    var resultsMaximumNumber: js.UndefOr[Double] = js.undefined
     
-    var searchForMoreText: js.UndefOr[String] = js.native
+    var searchForMoreText: js.UndefOr[String] = js.undefined
     
-    var searchingText: js.UndefOr[String] = js.native
+    var searchingText: js.UndefOr[String] = js.undefined
     
-    var showForceResolve: js.UndefOr[js.Function0[Boolean]] = js.native
+    var showForceResolve: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var showRemoveButtons: js.UndefOr[Boolean] = js.native
+    var showRemoveButtons: js.UndefOr[Boolean] = js.undefined
     
-    var suggestionsAvailableAlertText: js.UndefOr[String] = js.native
+    var suggestionsAvailableAlertText: js.UndefOr[String] = js.undefined
     
-    var suggestionsClassName: js.UndefOr[String] = js.native
+    var suggestionsClassName: js.UndefOr[String] = js.undefined
     
-    var suggestionsContainerAriaLabel: js.UndefOr[String] = js.native
+    var suggestionsContainerAriaLabel: js.UndefOr[String] = js.undefined
     
-    var suggestionsHeaderText: js.UndefOr[String] = js.native
+    var suggestionsHeaderText: js.UndefOr[String] = js.undefined
     
-    var suggestionsItemClassName: js.UndefOr[String] = js.native
+    var suggestionsItemClassName: js.UndefOr[String] = js.undefined
   }
   object IBasePickerSuggestionsProps {
     
@@ -461,7 +464,7 @@ object basePickerTypesMod {
     }
     
     @scala.inline
-    implicit class IBasePickerSuggestionsPropsMutableBuilder[Self <: IBasePickerSuggestionsProps[_], T] (val x: Self with IBasePickerSuggestionsProps[T]) extends AnyVal {
+    implicit class IBasePickerSuggestionsPropsMutableBuilder[Self <: IBasePickerSuggestionsProps[?], T] (val x: Self & IBasePickerSuggestionsProps[T]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -575,15 +578,16 @@ object basePickerTypesMod {
     }
   }
   
-  @js.native
-  trait IInputProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait IInputProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
     /**
       * The default value to be visible when the autofill first created.
       * This is different than placeholder text because the placeholder text will disappear and re-appear. This
       * text persists until deleted or changed.
       */
-    var defaultVisibleValue: js.UndefOr[String] = js.native
+    var defaultVisibleValue: js.UndefOr[String] = js.undefined
   }
   object IInputProps {
     

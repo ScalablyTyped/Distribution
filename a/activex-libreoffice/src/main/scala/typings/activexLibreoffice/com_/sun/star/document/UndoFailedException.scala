@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XUndoManager.undo
   * @since OOo 3.4
   */
-@js.native
-trait UndoFailedException extends Exception {
+trait UndoFailedException
+  extends StObject
+     with Exception {
   
   /** describes the reason why the operation failed. Usually, this member will carry an exception. */
-  var Reason: js.Any = js.native
+  var Reason: js.Any
 }
 object UndoFailedException {
   

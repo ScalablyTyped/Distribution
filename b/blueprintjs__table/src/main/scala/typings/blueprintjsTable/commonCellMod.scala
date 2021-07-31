@@ -2,17 +2,15 @@ package typings.blueprintjsTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonCellMod {
   
-  @js.native
   trait ICellCoordinates extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var row: Double = js.native
+    var row: Double
   }
   object ICellCoordinates {
     
@@ -33,10 +31,11 @@ object commonCellMod {
     }
   }
   
-  @js.native
-  trait IFocusedCellCoordinates extends ICellCoordinates {
+  trait IFocusedCellCoordinates
+    extends StObject
+       with ICellCoordinates {
     
-    var focusSelectionIndex: Double = js.native
+    var focusSelectionIndex: Double
   }
   object IFocusedCellCoordinates {
     

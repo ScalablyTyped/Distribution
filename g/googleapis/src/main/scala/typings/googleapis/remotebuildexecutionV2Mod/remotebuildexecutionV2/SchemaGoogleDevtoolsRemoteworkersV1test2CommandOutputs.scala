@@ -2,14 +2,12 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DEPRECATED - use CommandResult instead. Describes the actual outputs from
   * the task.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends StObject {
     * a successful (zero) is unlikely to be correct unless the status code is
     * OK.
     */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The output files. The blob referenced by the digest should contain one of
@@ -27,7 +25,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends StObject {
     * DirectoryMetadata of the returned filesystem    * A LUCI-style .isolated
     * file
     */
-  var outputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var outputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs {
   

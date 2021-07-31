@@ -2,19 +2,17 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeURLOptions extends StObject {
   
-  var download: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.undefined
   
-  var downloadHack: js.UndefOr[Boolean] = js.native
+  var downloadHack: js.UndefOr[Boolean] = js.undefined
   
-  var long: js.UndefOr[Boolean] = js.native
+  var long: js.UndefOr[Boolean] = js.undefined
   
-  var longUrl: js.UndefOr[Boolean] = js.native
+  var longUrl: js.UndefOr[Boolean] = js.undefined
 }
 object MakeURLOptions {
   

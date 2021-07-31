@@ -10,9 +10,9 @@ TypeScript typings for Local Services API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.localservices |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 46 |
 | # dependents       | 1 |
-| # downloads        | 127 |
+| # downloads        | 3050 |
 | # stars            | 0 |
 
 ## Links

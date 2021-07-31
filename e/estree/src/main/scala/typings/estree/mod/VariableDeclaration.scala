@@ -5,31 +5,26 @@ import typings.estree.estreeStrings.const
 import typings.estree.estreeStrings.let
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableDeclaration
-  extends Declaration
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with Declaration {
   
-  var declarations: js.Array[VariableDeclarator] = js.native
+  var declarations: js.Array[VariableDeclarator]
   
-  var kind: `var` | let | const = js.native
+  var kind: `var` | let | const
   
   @JSName("type")
-  var type_VariableDeclaration: typings.estree.estreeStrings.VariableDeclaration = js.native
+  var type_VariableDeclaration: typings.estree.estreeStrings.VariableDeclaration
 }
 object VariableDeclaration {
   
   @scala.inline
-  def apply(
-    declarations: js.Array[VariableDeclarator],
-    kind: `var` | let | const,
-    `type`: typings.estree.estreeStrings.VariableDeclaration
-  ): VariableDeclaration = {
+  def apply(declarations: js.Array[VariableDeclarator], kind: `var` | let | const): VariableDeclaration = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration]
   }
   

@@ -2,15 +2,13 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldMessages extends StObject {
   
-  var newMessages: Double = js.native
+  var newMessages: Double
   
-  var oldMessages: Double = js.native
+  var oldMessages: Double
 }
 object OldMessages {
   

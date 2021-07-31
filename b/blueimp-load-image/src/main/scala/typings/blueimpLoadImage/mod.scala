@@ -14,7 +14,6 @@ import typings.std.HTMLImageElement
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,24 +24,23 @@ object mod extends Shortcut {
   
   type AspectRatio = Double
   
-  @js.native
   trait BasicOptions extends StObject {
     
-    var contain: js.UndefOr[Boolean] = js.native
+    var contain: js.UndefOr[Boolean] = js.undefined
     
-    var cover: js.UndefOr[Boolean] = js.native
+    var cover: js.UndefOr[Boolean] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var noRevoke: js.UndefOr[Boolean] = js.native
+    var noRevoke: js.UndefOr[Boolean] = js.undefined
   }
   object BasicOptions {
     
@@ -105,10 +103,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CanvasFalseOptions extends CanvasOptions {
+  trait CanvasFalseOptions
+    extends StObject
+       with CanvasOptions {
     
-    var canvas: js.UndefOr[`false`] = js.native
+    var canvas: js.UndefOr[`false`] = js.undefined
   }
   object CanvasFalseOptions {
     
@@ -143,8 +142,8 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    def CanvasTrueOptions(canvas: `true`): typings.blueimpLoadImage.mod.CanvasTrueOptions = {
-      val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any])
+    def CanvasTrueOptions(): typings.blueimpLoadImage.mod.CanvasTrueOptions = {
+      val __obj = js.Dynamic.literal(canvas = true)
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.CanvasTrueOptions]
     }
   }
@@ -153,36 +152,37 @@ object mod extends Shortcut {
   // In addition, if 'crop' is true or 'orientation' is set,
   // it automatically enables 'canvas' so in those cases,
   // 'canvas' cannot be false
-  @js.native
-  trait CanvasTrueOptions extends CanvasOptions {
+  trait CanvasTrueOptions
+    extends StObject
+       with CanvasOptions {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var canvas: `true` = js.native
+    var canvas: `true`
     
-    var crop: js.UndefOr[Boolean] = js.native
+    var crop: js.UndefOr[Boolean] = js.undefined
     
-    var downsamplingRatio: js.UndefOr[Double] = js.native
+    var downsamplingRatio: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[Orientation] = js.native
+    var orientation: js.UndefOr[Orientation] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var sourceHeight: js.UndefOr[Double] = js.native
+    var sourceHeight: js.UndefOr[Double] = js.undefined
     
-    var sourceWidth: js.UndefOr[Double] = js.native
+    var sourceWidth: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object CanvasTrueOptions {
     
     @scala.inline
-    def apply(canvas: `true`): CanvasTrueOptions = {
-      val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any])
+    def apply(): CanvasTrueOptions = {
+      val __obj = js.Dynamic.literal(canvas = true)
       __obj.asInstanceOf[CanvasTrueOptions]
     }
     
@@ -254,10 +254,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CropFalseOptions extends CropOptions {
+  trait CropFalseOptions
+    extends StObject
+       with CropOptions {
     
-    var crop: js.UndefOr[`false`] = js.native
+    var crop: js.UndefOr[`false`] = js.undefined
   }
   object CropFalseOptions {
     
@@ -300,12 +301,13 @@ object mod extends Shortcut {
   
   // Setting 'aspectRatio' automatically enables 'crop', so setting 'crop' to
   // 'false' in that case is not valid
-  @js.native
-  trait CropTrueOptions extends CropOptions {
+  trait CropTrueOptions
+    extends StObject
+       with CropOptions {
     
-    var aspectRatio: js.UndefOr[AspectRatio] = js.native
+    var aspectRatio: js.UndefOr[AspectRatio] = js.undefined
     
-    var crop: js.UndefOr[`true`] = js.native
+    var crop: js.UndefOr[`true`] = js.undefined
   }
   object CropTrueOptions {
     
@@ -334,10 +336,9 @@ object mod extends Shortcut {
   
   type Exif = NumberDictionary[Double | String | js.Array[String]]
   
-  @js.native
   trait ImageHead extends StObject {
     
-    var imageHead: js.UndefOr[ArrayBuffer | Uint8Array] = js.native
+    var imageHead: js.UndefOr[ArrayBuffer | Uint8Array] = js.undefined
   }
   object ImageHead {
     
@@ -369,21 +370,21 @@ object mod extends Shortcut {
     def apply(file: File, callback: LoadImageCallback, options: LoadImageOptions): HTMLImageElement | FileReader | `false` = js.native
     
     def blobSlice(): Blob = js.native
-    def blobSlice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
     def blobSlice(start: Double): Blob = js.native
     def blobSlice(start: Double, end: Double): Blob = js.native
+    def blobSlice(start: Unit, end: Double): Blob = js.native
     
     def parseMetaData(file: String, callback: ParseMetaDataCallback): Unit = js.native
-    def parseMetaData(file: String, callback: ParseMetaDataCallback, options: js.UndefOr[scala.Nothing], data: ImageHead): Unit = js.native
+    def parseMetaData(file: String, callback: ParseMetaDataCallback, options: Unit, data: ImageHead): Unit = js.native
     def parseMetaData(file: String, callback: ParseMetaDataCallback, options: ParseOptions): Unit = js.native
     def parseMetaData(file: String, callback: ParseMetaDataCallback, options: ParseOptions, data: ImageHead): Unit = js.native
     def parseMetaData(file: Blob, callback: ParseMetaDataCallback): Unit = js.native
-    def parseMetaData(file: Blob, callback: ParseMetaDataCallback, options: js.UndefOr[scala.Nothing], data: ImageHead): Unit = js.native
+    def parseMetaData(file: Blob, callback: ParseMetaDataCallback, options: Unit, data: ImageHead): Unit = js.native
     def parseMetaData(file: Blob, callback: ParseMetaDataCallback, options: ParseOptions): Unit = js.native
     def parseMetaData(file: Blob, callback: ParseMetaDataCallback, options: ParseOptions, data: ImageHead): Unit = js.native
     // Parses image meta data and calls the callback with the image head
     def parseMetaData(file: File, callback: ParseMetaDataCallback): Unit = js.native
-    def parseMetaData(file: File, callback: ParseMetaDataCallback, options: js.UndefOr[scala.Nothing], data: ImageHead): Unit = js.native
+    def parseMetaData(file: File, callback: ParseMetaDataCallback, options: Unit, data: ImageHead): Unit = js.native
     def parseMetaData(file: File, callback: ParseMetaDataCallback, options: ParseOptions): Unit = js.native
     def parseMetaData(file: File, callback: ParseMetaDataCallback, options: ParseOptions, data: ImageHead): Unit = js.native
   }
@@ -394,18 +395,19 @@ object mod extends Shortcut {
     Unit
   ]
   
-  type LoadImageOptions = BasicOptions with CanvasOptions with CropOptions with MetaOptions
+  type LoadImageOptions = BasicOptions & CanvasOptions & CropOptions & MetaOptions
   
-  @js.native
-  trait MetaData extends ImageHead {
+  trait MetaData
+    extends StObject
+       with ImageHead {
     
-    var exif: js.UndefOr[Exif] = js.native
+    var exif: js.UndefOr[Exif] = js.undefined
     
-    var iptc: js.UndefOr[Iptc] = js.native
+    var iptc: js.UndefOr[Iptc] = js.undefined
     
-    var originalHeight: js.UndefOr[Double] = js.native
+    var originalHeight: js.UndefOr[Double] = js.undefined
     
-    var originalWidth: js.UndefOr[Double] = js.native
+    var originalWidth: js.UndefOr[Double] = js.undefined
   }
   object MetaData {
     
@@ -444,10 +446,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MetaFalseOptions extends MetaOptions {
+  trait MetaFalseOptions
+    extends StObject
+       with MetaOptions {
     
-    var meta: js.UndefOr[`false`] = js.native
+    var meta: js.UndefOr[`false`] = js.undefined
   }
   object MetaFalseOptions {
     
@@ -490,12 +493,13 @@ object mod extends Shortcut {
   
   // Setting 'orientation' automatically sets 'meta' to true
   // so setting it to false is not valid in that case
-  @js.native
-  trait MetaTrueOptions extends MetaOptions {
+  trait MetaTrueOptions
+    extends StObject
+       with MetaOptions {
     
-    var meta: js.UndefOr[`true`] = js.native
+    var meta: js.UndefOr[`true`] = js.undefined
     
-    var orientation: Orientation = js.native
+    var orientation: Orientation
   }
   object MetaTrueOptions {
     
@@ -523,14 +527,13 @@ object mod extends Shortcut {
   
   type ParseMetaDataCallback = js.Function1[/* data */ ImageHead, Unit]
   
-  @js.native
   trait ParseOptions extends StObject {
     
     // Disables creating the imageHead property.
-    var disableImageHead: js.UndefOr[Boolean] = js.native
+    var disableImageHead: js.UndefOr[Boolean] = js.undefined
     
     // Defines the maximum number of bytes to parse.
-    var maxMetaDataSize: js.UndefOr[Double] = js.native
+    var maxMetaDataSize: js.UndefOr[Double] = js.undefined
   }
   object ParseOptions {
     

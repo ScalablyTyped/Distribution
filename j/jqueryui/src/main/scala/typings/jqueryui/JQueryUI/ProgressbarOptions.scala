@@ -2,18 +2,18 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Progressbar //////////////////////////////////////////////////
-@js.native
-trait ProgressbarOptions extends ProgressbarEvents {
+trait ProgressbarOptions
+  extends StObject
+     with ProgressbarEvents {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double | Boolean] = js.native
+  var value: js.UndefOr[Double | Boolean] = js.undefined
 }
 object ProgressbarOptions {
   

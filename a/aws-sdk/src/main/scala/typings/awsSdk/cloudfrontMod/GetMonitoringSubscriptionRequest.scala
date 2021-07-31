@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMonitoringSubscriptionRequest extends StObject {
   
   /**
     * The ID of the distribution that you are getting metrics information for.
     */
-  var DistributionId: String = js.native
+  var DistributionId: String
 }
 object GetMonitoringSubscriptionRequest {
   

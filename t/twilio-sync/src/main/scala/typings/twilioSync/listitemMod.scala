@@ -3,7 +3,6 @@ package typings.twilioSync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listitemMod {
@@ -80,22 +79,21 @@ object listitemMod {
     def value: js.Object = js.native
   }
   
-  @js.native
   trait ListItemDescriptor extends StObject {
     
-    var dateExpires: String = js.native
+    var dateExpires: String
     
-    var dateUpdated: Date = js.native
+    var dateUpdated: Date
     
-    var index: Double = js.native
+    var index: Double
     
-    var lastEventId: Double = js.native
+    var lastEventId: Double
     
-    var revision: String = js.native
+    var revision: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var value: js.Object = js.native
+    var value: js.Object
   }
   object ListItemDescriptor {
     

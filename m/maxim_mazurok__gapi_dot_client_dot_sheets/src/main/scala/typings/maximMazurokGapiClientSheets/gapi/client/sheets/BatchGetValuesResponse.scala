@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetValuesResponse extends StObject {
   
   /** The ID of the spreadsheet the data was retrieved from. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /** The requested values. The order of the ValueRanges is the same as the order of the requested ranges. */
-  var valueRanges: js.UndefOr[js.Array[ValueRange]] = js.native
+  var valueRanges: js.UndefOr[js.Array[ValueRange]] = js.undefined
 }
 object BatchGetValuesResponse {
   

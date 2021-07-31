@@ -5,7 +5,6 @@ import typings.reactMdMenu.useContextMenuMod.ProvidedPropNames
 import typings.reactMdMenu.useVisibilityMod.FocusType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdMenuStrings {
@@ -31,7 +30,9 @@ object reactMdMenuStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait anchor extends ProvidedPropNames
+  sealed trait anchor
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def anchor: anchor = "anchor".asInstanceOf[anchor]
   
@@ -56,7 +57,9 @@ object reactMdMenuStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait classNames extends ProvidedPropNames
+  sealed trait classNames
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def classNames: classNames = "classNames".asInstanceOf[classNames]
   
@@ -86,7 +89,9 @@ object reactMdMenuStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disableControlClickOkay extends ProvidedPropNames
+  sealed trait disableControlClickOkay
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def disableControlClickOkay: disableControlClickOkay = "disableControlClickOkay".asInstanceOf[disableControlClickOkay]
   
@@ -101,7 +106,9 @@ object reactMdMenuStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait first extends FocusType
+  sealed trait first
+    extends StObject
+       with FocusType
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   
@@ -116,12 +123,16 @@ object reactMdMenuStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait horizontal extends MenuOrientation
+  sealed trait horizontal
+    extends StObject
+       with MenuOrientation
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait id extends ProvidedPropNames
+  sealed trait id
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
@@ -136,7 +147,9 @@ object reactMdMenuStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait last extends FocusType
+  sealed trait last
+    extends StObject
+       with FocusType
   @scala.inline
   def last: last = "last".asInstanceOf[last]
   
@@ -206,7 +219,9 @@ object reactMdMenuStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onRequestClose extends ProvidedPropNames
+  sealed trait onRequestClose
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def onRequestClose: onRequestClose = "onRequestClose".asInstanceOf[onRequestClose]
   
@@ -231,7 +246,9 @@ object reactMdMenuStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait positionOptions extends ProvidedPropNames
+  sealed trait positionOptions
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def positionOptions: positionOptions = "positionOptions".asInstanceOf[positionOptions]
   
@@ -321,12 +338,16 @@ object reactMdMenuStrings {
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait vertical extends MenuOrientation
+  sealed trait vertical
+    extends StObject
+       with MenuOrientation
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait visible extends ProvidedPropNames
+  sealed trait visible
+    extends StObject
+       with ProvidedPropNames
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   

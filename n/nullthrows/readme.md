@@ -10,9 +10,9 @@ flow typed nullthrows
 | ------------------ | :-------------: |
 | Full name          | nullthrows |
 | Keywords           | assert, flow, invariant, nullthrows |
-| # releases         | 2 |
-| # dependents       | 172 |
-| # downloads        | 35569848 |
+| # releases         | 0 |
+| # dependents       | 214 |
+| # downloads        | 47676133 |
 | # stars            | 0 |
 
 ## Links

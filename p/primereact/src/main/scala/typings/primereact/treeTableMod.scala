@@ -11,7 +11,6 @@ import typings.primereact.treeNodeMod.TreeNode
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeTableMod {
@@ -30,144 +29,143 @@ object treeTableMod {
     def filter[T](value: T, field: String, mode: String): Unit = js.native
   }
   
-  @js.native
   trait TreeTableProps extends StObject {
     
-    var alwaysShowPaginator: js.UndefOr[Boolean] = js.native
+    var alwaysShowPaginator: js.UndefOr[Boolean] = js.undefined
     
-    var autoLayout: js.UndefOr[Boolean] = js.native
+    var autoLayout: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columnResizeMode: js.UndefOr[String] = js.native
+    var columnResizeMode: js.UndefOr[String] = js.undefined
     
-    var contextMenuSelectionKey: js.UndefOr[js.Any] = js.native
+    var contextMenuSelectionKey: js.UndefOr[js.Any] = js.undefined
     
-    var currentPageReportTemplate: js.UndefOr[String] = js.native
+    var currentPageReportTemplate: js.UndefOr[String] = js.undefined
     
-    var defaultSortOrder: js.UndefOr[Double] = js.native
+    var defaultSortOrder: js.UndefOr[Double] = js.undefined
     
-    var emptyMessage: js.UndefOr[String] = js.native
+    var emptyMessage: js.UndefOr[String] = js.undefined
     
-    var expandedKeys: js.UndefOr[js.Any] = js.native
+    var expandedKeys: js.UndefOr[js.Any] = js.undefined
     
-    var filterLocale: js.UndefOr[String] = js.native
+    var filterLocale: js.UndefOr[String] = js.undefined
     
-    var filterMode: js.UndefOr[String] = js.native
+    var filterMode: js.UndefOr[String] = js.undefined
     
-    var filters: js.UndefOr[js.Object] = js.native
+    var filters: js.UndefOr[js.Object] = js.undefined
     
-    var first: js.UndefOr[Double] = js.native
+    var first: js.UndefOr[Double] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var footerColumnGroup: js.UndefOr[js.Any] = js.native
+    var footerColumnGroup: js.UndefOr[js.Any] = js.undefined
     
-    var frozenFooterColumnGroup: js.UndefOr[js.Any] = js.native
+    var frozenFooterColumnGroup: js.UndefOr[js.Any] = js.undefined
     
-    var frozenHeaderColumnGroup: js.UndefOr[js.Any] = js.native
+    var frozenHeaderColumnGroup: js.UndefOr[js.Any] = js.undefined
     
-    var frozenWidth: js.UndefOr[String] = js.native
+    var frozenWidth: js.UndefOr[String] = js.undefined
     
-    var globalFilter: js.UndefOr[js.Any] = js.native
+    var globalFilter: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var headerColumnGroup: js.UndefOr[js.Any] = js.native
+    var headerColumnGroup: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingIcon: js.UndefOr[String] = js.native
+    var loadingIcon: js.UndefOr[String] = js.undefined
     
-    var metaKeySelection: js.UndefOr[Boolean] = js.native
+    var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
-    var multiSortMeta: js.UndefOr[js.Array[_]] = js.native
+    var multiSortMeta: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var onColReorder: js.UndefOr[js.Function1[/* e */ DropIndex, Unit]] = js.native
+    var onColReorder: js.UndefOr[js.Function1[/* e */ DropIndex, Unit]] = js.undefined
     
-    var onCollapse: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onCollapse: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ Delta, Unit]] = js.native
+    var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ Delta, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
     
-    var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onExpand: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onExpand: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filters */ js.Array[_], Unit]] = js.native
+    var onFilter: js.UndefOr[js.Function1[/* filters */ js.Array[js.Any], Unit]] = js.undefined
     
-    var onPage: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.native
+    var onPage: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
     
-    var onRowClick: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onRowClick: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onSort: js.UndefOr[js.Function1[/* e */ MultiSortMeta, Unit]] = js.native
+    var onSort: js.UndefOr[js.Function1[/* e */ MultiSortMeta, Unit]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onUnselect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onUnselect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var pageLinkSize: js.UndefOr[Double] = js.native
+    var pageLinkSize: js.UndefOr[Double] = js.undefined
     
-    var paginator: js.UndefOr[Boolean] = js.native
+    var paginator: js.UndefOr[Boolean] = js.undefined
     
-    var paginatorDropdownAppendTo: js.UndefOr[js.Any] = js.native
+    var paginatorDropdownAppendTo: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorLeft: js.UndefOr[js.Any] = js.native
+    var paginatorLeft: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorPosition: js.UndefOr[String] = js.native
+    var paginatorPosition: js.UndefOr[String] = js.undefined
     
-    var paginatorRight: js.UndefOr[js.Any] = js.native
+    var paginatorRight: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorTemplate: js.UndefOr[String] = js.native
+    var paginatorTemplate: js.UndefOr[String] = js.undefined
     
-    var propagateSelectionDown: js.UndefOr[Boolean] = js.native
+    var propagateSelectionDown: js.UndefOr[Boolean] = js.undefined
     
-    var propagateSelectionUp: js.UndefOr[Boolean] = js.native
+    var propagateSelectionUp: js.UndefOr[Boolean] = js.undefined
     
-    var reorderableColumns: js.UndefOr[Boolean] = js.native
+    var reorderableColumns: js.UndefOr[Boolean] = js.undefined
     
-    var resizableColumns: js.UndefOr[Boolean] = js.native
+    var resizableColumns: js.UndefOr[Boolean] = js.undefined
     
-    var rowClassName: js.UndefOr[js.Function1[/* rowData */ js.Any, js.Object]] = js.native
+    var rowClassName: js.UndefOr[js.Function1[/* rowData */ js.Any, js.Object]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.native
+    var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var scrollHeight: js.UndefOr[String] = js.native
+    var scrollHeight: js.UndefOr[String] = js.undefined
     
-    var scrollable: js.UndefOr[Boolean] = js.native
+    var scrollable: js.UndefOr[Boolean] = js.undefined
     
-    var selectionKeys: js.UndefOr[js.Any] = js.native
+    var selectionKeys: js.UndefOr[js.Any] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.native
+    var selectionMode: js.UndefOr[String] = js.undefined
     
-    var sortField: js.UndefOr[String] = js.native
+    var sortField: js.UndefOr[String] = js.undefined
     
-    var sortMode: js.UndefOr[String] = js.native
+    var sortMode: js.UndefOr[String] = js.undefined
     
-    var sortOrder: js.UndefOr[Double] = js.native
+    var sortOrder: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var tableClassName: js.UndefOr[String] = js.native
+    var tableClassName: js.UndefOr[String] = js.undefined
     
-    var tableStyle: js.UndefOr[js.Object] = js.native
+    var tableStyle: js.UndefOr[js.Object] = js.undefined
     
-    var totalRecords: js.UndefOr[Double] = js.native
+    var totalRecords: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[js.Array[TreeNode]] = js.native
+    var value: js.UndefOr[js.Array[TreeNode]] = js.undefined
   }
   object TreeTableProps {
     
@@ -337,7 +335,7 @@ object treeTableMod {
       def setMetaKeySelectionUndefined: Self = StObject.set(x, "metaKeySelection", js.undefined)
       
       @scala.inline
-      def setMultiSortMeta(value: js.Array[_]): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
+      def setMultiSortMeta(value: js.Array[js.Any]): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMultiSortMetaUndefined: Self = StObject.set(x, "multiSortMeta", js.undefined)
@@ -382,7 +380,7 @@ object treeTableMod {
       def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
       
       @scala.inline
-      def setOnFilter(value: /* filters */ js.Array[_] => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      def setOnFilter(value: /* filters */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)

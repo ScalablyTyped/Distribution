@@ -3,13 +3,11 @@ package typings.baseui.inputMod
 import typings.baseui.baseuiStrings.change_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait STATE_CHANGE_TYPE extends StObject {
   
-  var change: change_ = js.native
+  var change: change_
 }
 object STATE_CHANGE_TYPE {
   

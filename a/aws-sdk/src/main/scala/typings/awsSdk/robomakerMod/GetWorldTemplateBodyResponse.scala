@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorldTemplateBodyResponse extends StObject {
   
   /**
     * The world template body.
     */
-  var templateBody: js.UndefOr[Json] = js.native
+  var templateBody: js.UndefOr[Json] = js.undefined
 }
 object GetWorldTemplateBodyResponse {
   

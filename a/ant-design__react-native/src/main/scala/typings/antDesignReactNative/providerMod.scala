@@ -5,7 +5,6 @@ import typings.antDesignReactNative.anon.PartialTheme
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -18,12 +17,11 @@ object providerMod {
   trait Provider
     extends Component[ProviderProps, js.Object, js.Any]
   
-  @js.native
   trait ProviderProps extends StObject {
     
-    var locale: js.UndefOr[PartialLocale] = js.native
+    var locale: js.UndefOr[PartialLocale] = js.undefined
     
-    var theme: js.UndefOr[PartialTheme] = js.native
+    var theme: js.UndefOr[PartialTheme] = js.undefined
   }
   object ProviderProps {
     

@@ -2,18 +2,16 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  gfm :string | undefined,   project :string | number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
-@js.native
 trait gfmstringundefinedproject extends StObject {
   
-  var gfm: js.UndefOr[String] = js.native
+  var gfm: js.UndefOr[String] = js.undefined
   
-  var project: js.UndefOr[String | Double] = js.native
+  var project: js.UndefOr[String | Double] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object gfmstringundefinedproject {
   

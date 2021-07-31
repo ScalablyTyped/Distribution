@@ -2,91 +2,89 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crop extends StObject {
   
   // Example 'lastPage'
-  var autoFit: js.UndefOr[String] = js.native
+  var autoFit: js.UndefOr[String] = js.undefined
   
   // Example 'rotateAll'
-  var crop: js.UndefOr[String] = js.native
+  var crop: js.UndefOr[String] = js.undefined
   
   // Example 'save'
-  var firstPage: js.UndefOr[String] = js.native
+  var firstPage: js.UndefOr[String] = js.undefined
   
   // Example 'fitWindow'
-  var fitHeight: js.UndefOr[String] = js.native
+  var fitHeight: js.UndefOr[String] = js.undefined
   
   // Example 'fitHeight'
-  var fitWidth: js.UndefOr[String] = js.native
+  var fitWidth: js.UndefOr[String] = js.undefined
   
   // Example 'readDirection'
-  var flip: js.UndefOr[String] = js.native
+  var flip: js.UndefOr[String] = js.undefined
   
   // Example 'fitWidth'
-  var fullPage: js.UndefOr[String] = js.native
+  var fullPage: js.UndefOr[String] = js.undefined
   
   // Example 'fullPage'
-  var fullScreen: js.UndefOr[String] = js.native
+  var fullScreen: js.UndefOr[String] = js.undefined
   
   // Example 'nextPage'
-  var lastPage: js.UndefOr[String] = js.native
+  var lastPage: js.UndefOr[String] = js.undefined
   
-  var loadImage: js.UndefOr[String] = js.native
+  var loadImage: js.UndefOr[String] = js.undefined
   
   // Example 'flip'
-  var mirror: js.UndefOr[String] = js.native
+  var mirror: js.UndefOr[String] = js.undefined
   
   // Example 'pagination'
-  var nextPage: js.UndefOr[String] = js.native
+  var nextPage: js.UndefOr[String] = js.undefined
   
   // Example 'previousPage'
-  var pagination: js.UndefOr[String] = js.native
+  var pagination: js.UndefOr[String] = js.undefined
   
   // Example 'loadImage'
-  var panelChange: js.UndefOr[String] = js.native
+  var panelChange: js.UndefOr[String] = js.undefined
   
   // Example 'firstPage'
-  var previousPage: js.UndefOr[String] = js.native
+  var previousPage: js.UndefOr[String] = js.undefined
   
   // Example 'remove'
-  var print: js.UndefOr[String] = js.native
+  var print: js.UndefOr[String] = js.undefined
   
   // Example 'panelChange'
-  var readDirection: js.UndefOr[String] = js.native
+  var readDirection: js.UndefOr[String] = js.undefined
   
   // Example 'undo'
-  var redo: js.UndefOr[String] = js.native
+  var redo: js.UndefOr[String] = js.undefined
   
   // Example 'reset'
-  var remove: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.undefined
   
   // Example 'zoomOut'
-  var reset: js.UndefOr[String] = js.native
+  var reset: js.UndefOr[String] = js.undefined
   
   // Example 'mirror'
-  var rotate: js.UndefOr[String] = js.native
+  var rotate: js.UndefOr[String] = js.undefined
   
   // Example 'rotate'
-  var rotateAll: js.UndefOr[String] = js.native
+  var rotateAll: js.UndefOr[String] = js.undefined
   
   // Example 'print'
-  var save: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.undefined
   
   // Example 'wipe'
-  var undo: js.UndefOr[String] = js.native
+  var undo: js.UndefOr[String] = js.undefined
   
   // Example 'crop'
-  var wipe: js.UndefOr[String] = js.native
+  var wipe: js.UndefOr[String] = js.undefined
   
   // Example 'redo'
-  var zoomIn: js.UndefOr[String] = js.native
+  var zoomIn: js.UndefOr[String] = js.undefined
   
   // Example 'zoomIn'
-  var zoomOut: js.UndefOr[String] = js.native
+  var zoomOut: js.UndefOr[String] = js.undefined
 }
 object Crop {
   

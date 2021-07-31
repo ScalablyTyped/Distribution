@@ -4,21 +4,21 @@ import typings.reactNavigationStack.reactNavigationStackStrings.spring
 import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Animation extends TransitionSpec {
+trait Animation
+  extends StObject
+     with TransitionSpec {
   
-  var animation: spring = js.native
+  var animation: spring
   
-  var config: OmitSpringAnimationConfig = js.native
+  var config: OmitSpringAnimationConfig
 }
 object Animation {
   
   @scala.inline
-  def apply(animation: spring, config: OmitSpringAnimationConfig): Animation = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
+  def apply(config: OmitSpringAnimationConfig): Animation = {
+    val __obj = js.Dynamic.literal(animation = "spring", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
   

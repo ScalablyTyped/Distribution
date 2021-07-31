@@ -10,9 +10,9 @@ Simple check to see if current app is running in browser
 | ------------------ | :-------------: |
 | Full name          | is-in-browser |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 63 |
-| # downloads        | 59368794 |
+| # releases         | 0 |
+| # dependents       | 67 |
+| # downloads        | 72200536 |
 | # stars            | 1 |
 
 ## Links

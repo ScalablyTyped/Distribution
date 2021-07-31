@@ -2,22 +2,27 @@ package typings.googleapisCommon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapisCommon.apiMod.APIRequestContext
+import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.schemaMod.Schema
 import typings.googleapisCommon.schemaMod.SchemaResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("googleapis-common/build/src/endpoint", "Endpoint")
   @js.native
   class Endpoint protected ()
-    extends Target
+    extends StObject
+       with Target
        with APIRequestContext {
     def this(options: js.Object) = this()
+    
+    /* CompleteClass */
+    var _options: GlobalOptions = js.native
     
     /**
       * Given a schema, add methods to a target.

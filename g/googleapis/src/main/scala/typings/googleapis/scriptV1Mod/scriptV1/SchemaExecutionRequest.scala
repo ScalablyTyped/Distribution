@@ -2,7 +2,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specified `script_id`. Executing a function on a script returns results
   * based on the implementation of the script.
   */
-@js.native
 trait SchemaExecutionRequest extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait SchemaExecutionRequest extends StObject {
     * most recently saved version rather than the version deployed for use with
     * the Apps Script API. Optional; default is `false`.
     */
-  var devMode: js.UndefOr[Boolean] = js.native
+  var devMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the function to execute in the given script. The name does
     * not include parentheses or parameters. It can reference a function in an
     * included library such as `Library.libFunction1`.
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters to be passed to the function being executed. The object
@@ -34,7 +32,7 @@ trait SchemaExecutionRequest extends StObject {
     * `Document` or a `Calendar`); they can only be primitive types such as
     * `string`, `number`, `array`, `object`, or `boolean`. Optional.
     */
-  var parameters: js.UndefOr[js.Array[_]] = js.native
+  var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * &lt;b&gt;Deprecated&lt;/b&gt;. For use with Android add-ons only. An ID
@@ -50,7 +48,7 @@ trait SchemaExecutionRequest extends StObject {
     * `Intent.getStringExtra(&quot;com.google.android.apps.docs.addons.SessionState&quot;)`.
     * Optional.
     */
-  var sessionState: js.UndefOr[String] = js.native
+  var sessionState: js.UndefOr[String] = js.undefined
 }
 object SchemaExecutionRequest {
   
@@ -76,7 +74,7 @@ object SchemaExecutionRequest {
     def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

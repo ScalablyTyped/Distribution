@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterSecurityGroupMessage extends StObject {
   
   /**
     * The name for the security group. Amazon Redshift stores the value as a lowercase string. Constraints:   Must contain no more than 255 alphanumeric characters or hyphens.   Must not be "Default".   Must be unique for all security groups that are created by your AWS account.   Example: examplesecuritygroup 
     */
-  var ClusterSecurityGroupName: String = js.native
+  var ClusterSecurityGroupName: String
   
   /**
     * A description for the security group.
     */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * A list of tag instances.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateClusterSecurityGroupMessage {
   

@@ -92,171 +92,169 @@ import typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Users
 import typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.VerificationCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminDirectory extends StObject {
   
-  var Asps: js.UndefOr[AspsCollection] = js.native
+  var Asps: js.UndefOr[AspsCollection] = js.undefined
   
-  var Channels: js.UndefOr[ChannelsCollection] = js.native
+  var Channels: js.UndefOr[ChannelsCollection] = js.undefined
   
-  var Chromeosdevices: js.UndefOr[ChromeosdevicesCollection] = js.native
+  var Chromeosdevices: js.UndefOr[ChromeosdevicesCollection] = js.undefined
   
-  var Customers: js.UndefOr[CustomersCollection] = js.native
+  var Customers: js.UndefOr[CustomersCollection] = js.undefined
   
-  var DomainAliases: js.UndefOr[DomainAliasesCollection] = js.native
+  var DomainAliases: js.UndefOr[DomainAliasesCollection] = js.undefined
   
-  var Domains: js.UndefOr[DomainsCollection] = js.native
+  var Domains: js.UndefOr[DomainsCollection] = js.undefined
   
-  var Groups: js.UndefOr[GroupsCollection] = js.native
+  var Groups: js.UndefOr[GroupsCollection] = js.undefined
   
-  var Members: js.UndefOr[MembersCollection] = js.native
+  var Members: js.UndefOr[MembersCollection] = js.undefined
   
-  var Mobiledevices: js.UndefOr[MobiledevicesCollection] = js.native
+  var Mobiledevices: js.UndefOr[MobiledevicesCollection] = js.undefined
   
-  var Notifications: js.UndefOr[NotificationsCollection] = js.native
+  var Notifications: js.UndefOr[NotificationsCollection] = js.undefined
   
-  var Orgunits: js.UndefOr[OrgunitsCollection] = js.native
+  var Orgunits: js.UndefOr[OrgunitsCollection] = js.undefined
   
-  var Privileges: js.UndefOr[PrivilegesCollection] = js.native
+  var Privileges: js.UndefOr[PrivilegesCollection] = js.undefined
   
-  var ResolvedAppAccessSettings: js.UndefOr[ResolvedAppAccessSettingsCollection] = js.native
+  var ResolvedAppAccessSettings: js.UndefOr[ResolvedAppAccessSettingsCollection] = js.undefined
   
-  var Resources: js.UndefOr[ResourcesCollection] = js.native
+  var Resources: js.UndefOr[ResourcesCollection] = js.undefined
   
-  var RoleAssignments: js.UndefOr[RoleAssignmentsCollection] = js.native
+  var RoleAssignments: js.UndefOr[RoleAssignmentsCollection] = js.undefined
   
-  var Roles: js.UndefOr[RolesCollection] = js.native
+  var Roles: js.UndefOr[RolesCollection] = js.undefined
   
-  var Schemas: js.UndefOr[SchemasCollection] = js.native
+  var Schemas: js.UndefOr[SchemasCollection] = js.undefined
   
-  var Tokens: js.UndefOr[TokensCollection] = js.native
+  var Tokens: js.UndefOr[TokensCollection] = js.undefined
   
-  var Users: js.UndefOr[UsersCollection] = js.native
+  var Users: js.UndefOr[UsersCollection] = js.undefined
   
-  var VerificationCodes: js.UndefOr[VerificationCodesCollection] = js.native
+  var VerificationCodes: js.UndefOr[VerificationCodesCollection] = js.undefined
   
   // Create a new instance of Alias
-  def newAlias(): Alias = js.native
+  def newAlias(): Alias
   
   // Create a new instance of Building
-  def newBuilding(): Building = js.native
+  def newBuilding(): Building
   
   // Create a new instance of BuildingAddress
-  def newBuildingAddress(): BuildingAddress = js.native
+  def newBuildingAddress(): BuildingAddress
   
   // Create a new instance of BuildingCoordinates
-  def newBuildingCoordinates(): BuildingCoordinates = js.native
+  def newBuildingCoordinates(): BuildingCoordinates
   
   // Create a new instance of CalendarResource
-  def newCalendarResource(): CalendarResource = js.native
+  def newCalendarResource(): CalendarResource
   
   // Create a new instance of Channel
-  def newChannel(): Channel = js.native
+  def newChannel(): Channel
   
   // Create a new instance of ChromeOsDevice
-  def newChromeOsDevice(): ChromeOsDevice = js.native
+  def newChromeOsDevice(): ChromeOsDevice
   
   // Create a new instance of ChromeOsDeviceAction
-  def newChromeOsDeviceAction(): ChromeOsDeviceAction = js.native
+  def newChromeOsDeviceAction(): ChromeOsDeviceAction
   
   // Create a new instance of ChromeOsDeviceActiveTimeRanges
-  def newChromeOsDeviceActiveTimeRanges(): ChromeOsDeviceActiveTimeRanges = js.native
+  def newChromeOsDeviceActiveTimeRanges(): ChromeOsDeviceActiveTimeRanges
   
   // Create a new instance of ChromeOsDeviceCpuStatusReports
-  def newChromeOsDeviceCpuStatusReports(): ChromeOsDeviceCpuStatusReports = js.native
+  def newChromeOsDeviceCpuStatusReports(): ChromeOsDeviceCpuStatusReports
   
   // Create a new instance of ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo
-  def newChromeOsDeviceCpuStatusReportsCpuTemperatureInfo(): ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo = js.native
+  def newChromeOsDeviceCpuStatusReportsCpuTemperatureInfo(): ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo
   
   // Create a new instance of ChromeOsDeviceDeviceFiles
-  def newChromeOsDeviceDeviceFiles(): ChromeOsDeviceDeviceFiles = js.native
+  def newChromeOsDeviceDeviceFiles(): ChromeOsDeviceDeviceFiles
   
   // Create a new instance of ChromeOsDeviceDiskVolumeReports
-  def newChromeOsDeviceDiskVolumeReports(): ChromeOsDeviceDiskVolumeReports = js.native
+  def newChromeOsDeviceDiskVolumeReports(): ChromeOsDeviceDiskVolumeReports
   
   // Create a new instance of ChromeOsDeviceDiskVolumeReportsVolumeInfo
-  def newChromeOsDeviceDiskVolumeReportsVolumeInfo(): ChromeOsDeviceDiskVolumeReportsVolumeInfo = js.native
+  def newChromeOsDeviceDiskVolumeReportsVolumeInfo(): ChromeOsDeviceDiskVolumeReportsVolumeInfo
   
   // Create a new instance of ChromeOsDeviceRecentUsers
-  def newChromeOsDeviceRecentUsers(): ChromeOsDeviceRecentUsers = js.native
+  def newChromeOsDeviceRecentUsers(): ChromeOsDeviceRecentUsers
   
   // Create a new instance of ChromeOsDeviceSystemRamFreeReports
-  def newChromeOsDeviceSystemRamFreeReports(): ChromeOsDeviceSystemRamFreeReports = js.native
+  def newChromeOsDeviceSystemRamFreeReports(): ChromeOsDeviceSystemRamFreeReports
   
   // Create a new instance of ChromeOsDeviceTpmVersionInfo
-  def newChromeOsDeviceTpmVersionInfo(): ChromeOsDeviceTpmVersionInfo = js.native
+  def newChromeOsDeviceTpmVersionInfo(): ChromeOsDeviceTpmVersionInfo
   
   // Create a new instance of ChromeOsMoveDevicesToOu
-  def newChromeOsMoveDevicesToOu(): ChromeOsMoveDevicesToOu = js.native
+  def newChromeOsMoveDevicesToOu(): ChromeOsMoveDevicesToOu
   
   // Create a new instance of Customer
-  def newCustomer(): Customer = js.native
+  def newCustomer(): Customer
   
   // Create a new instance of CustomerPostalAddress
-  def newCustomerPostalAddress(): CustomerPostalAddress = js.native
+  def newCustomerPostalAddress(): CustomerPostalAddress
   
   // Create a new instance of DomainAlias
-  def newDomainAlias(): DomainAlias = js.native
+  def newDomainAlias(): DomainAlias
   
   // Create a new instance of Domains
-  def newDomains(): Domains = js.native
+  def newDomains(): Domains
   
   // Create a new instance of Feature
-  def newFeature(): Feature = js.native
+  def newFeature(): Feature
   
   // Create a new instance of FeatureRename
-  def newFeatureRename(): FeatureRename = js.native
+  def newFeatureRename(): FeatureRename
   
   // Create a new instance of Group
-  def newGroup(): Group = js.native
+  def newGroup(): Group
   
   // Create a new instance of Member
-  def newMember(): Member = js.native
+  def newMember(): Member
   
   // Create a new instance of MobileDeviceAction
-  def newMobileDeviceAction(): MobileDeviceAction = js.native
+  def newMobileDeviceAction(): MobileDeviceAction
   
   // Create a new instance of Notification
-  def newNotification(): Notification = js.native
+  def newNotification(): Notification
   
   // Create a new instance of OrgUnit
-  def newOrgUnit(): OrgUnit = js.native
+  def newOrgUnit(): OrgUnit
   
   // Create a new instance of Role
-  def newRole(): Role = js.native
+  def newRole(): Role
   
   // Create a new instance of RoleAssignment
-  def newRoleAssignment(): RoleAssignment = js.native
+  def newRoleAssignment(): RoleAssignment
   
   // Create a new instance of RoleRolePrivileges
-  def newRoleRolePrivileges(): RoleRolePrivileges = js.native
+  def newRoleRolePrivileges(): RoleRolePrivileges
   
   // Create a new instance of Schema
-  def newSchema(): Schema = js.native
+  def newSchema(): Schema
   
   // Create a new instance of SchemaFieldSpec
-  def newSchemaFieldSpec(): SchemaFieldSpec = js.native
+  def newSchemaFieldSpec(): SchemaFieldSpec
   
   // Create a new instance of SchemaFieldSpecNumericIndexingSpec
-  def newSchemaFieldSpecNumericIndexingSpec(): SchemaFieldSpecNumericIndexingSpec = js.native
+  def newSchemaFieldSpecNumericIndexingSpec(): SchemaFieldSpecNumericIndexingSpec
   
   // Create a new instance of User
-  def newUser(): User = js.native
+  def newUser(): User
   
   // Create a new instance of UserMakeAdmin
-  def newUserMakeAdmin(): UserMakeAdmin = js.native
+  def newUserMakeAdmin(): UserMakeAdmin
   
   // Create a new instance of UserName
-  def newUserName(): UserName = js.native
+  def newUserName(): UserName
   
   // Create a new instance of UserPhoto
-  def newUserPhoto(): UserPhoto = js.native
+  def newUserPhoto(): UserPhoto
   
   // Create a new instance of UserUndelete
-  def newUserUndelete(): UserUndelete = js.native
+  def newUserUndelete(): UserUndelete
 }
 object AdminDirectory {
   
@@ -553,17 +551,16 @@ object AdminDirectory {
   
   object Collection {
     
-    @js.native
     trait AspsCollection extends StObject {
       
       // Get information about an ASP issued by a user.
-      def get(userKey: String, codeId: Double): Asp = js.native
+      def get(userKey: String, codeId: Double): Asp
       
       // List the ASPs issued by a user.
-      def list(userKey: String): Asps = js.native
+      def list(userKey: String): Asps
       
       // Delete an ASP issued by a user.
-      def remove(userKey: String, codeId: Double): Unit = js.native
+      def remove(userKey: String, codeId: Double): Unit
     }
     object AspsCollection {
       
@@ -587,11 +584,10 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChannelsCollection extends StObject {
       
       // Stop watching resources through this channel
-      def stop(resource: Channel): Unit = js.native
+      def stop(resource: Channel): Unit
     }
     object ChannelsCollection {
       
@@ -639,17 +635,16 @@ object AdminDirectory {
       def update(resource: ChromeOsDevice, customerId: String, deviceId: String, optionalArgs: js.Object): ChromeOsDevice = js.native
     }
     
-    @js.native
     trait CustomersCollection extends StObject {
       
       // Retrieves a customer.
-      def get(customerKey: String): Customer = js.native
+      def get(customerKey: String): Customer
       
       // Updates a customer. This method supports patch semantics.
-      def patch(resource: Customer, customerKey: String): Customer = js.native
+      def patch(resource: Customer, customerKey: String): Customer
       
       // Updates a customer.
-      def update(resource: Customer, customerKey: String): Customer = js.native
+      def update(resource: Customer, customerKey: String): Customer
     }
     object CustomersCollection {
       
@@ -695,20 +690,19 @@ object AdminDirectory {
       def remove(customer: String, domainAliasName: String): Unit = js.native
     }
     
-    @js.native
     trait DomainsCollection extends StObject {
       
       // Retrieves a domain of the customer.
-      def get(customer: String, domainName: String): Domains = js.native
+      def get(customer: String, domainName: String): Domains
       
       // Inserts a domain of the customer.
-      def insert(resource: Domains, customer: String): Domains = js.native
+      def insert(resource: Domains, customer: String): Domains
       
       // Lists the domains of the customer.
-      def list(customer: String): Domains2 = js.native
+      def list(customer: String): Domains2
       
       // Deletes a domain of the customer.
-      def remove(customer: String, domainName: String): Unit = js.native
+      def remove(customer: String, domainName: String): Unit
     }
     object DomainsCollection {
       
@@ -742,17 +736,16 @@ object AdminDirectory {
     
     object Groups {
       
-      @js.native
       trait AliasesCollection extends StObject {
         
         // Add a alias for the group
-        def insert(resource: Alias, groupKey: String): Alias = js.native
+        def insert(resource: Alias, groupKey: String): Alias
         
         // List all aliases for a group
-        def list(groupKey: String): Aliases = js.native
+        def list(groupKey: String): Aliases
         
         // Remove a alias for the group
-        def remove(groupKey: String, alias: String): Unit = js.native
+        def remove(groupKey: String, alias: String): Unit
       }
       object AliasesCollection {
         
@@ -895,11 +888,10 @@ object AdminDirectory {
       def update(resource: OrgUnit, customerId: String, orgUnitPath: js.Array[String]): OrgUnit = js.native
     }
     
-    @js.native
     trait PrivilegesCollection extends StObject {
       
       // Retrieves a paginated list of all privileges for a customer.
-      def list(customer: String): Privileges = js.native
+      def list(customer: String): Privileges
     }
     object PrivilegesCollection {
       
@@ -917,14 +909,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ResolvedAppAccessSettingsCollection extends StObject {
       
       // Retrieves resolved app access settings of the logged in user.
-      def GetSettings(): AppAccessCollections = js.native
+      def GetSettings(): AppAccessCollections
       
       // Retrieves the list of apps trusted by the admin of the logged in user.
-      def ListTrustedApps(): TrustedApps = js.native
+      def ListTrustedApps(): TrustedApps
     }
     object ResolvedAppAccessSettingsCollection {
       
@@ -1031,14 +1022,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ResourcesCollection extends StObject {
       
-      var Buildings: js.UndefOr[BuildingsCollection] = js.native
+      var Buildings: js.UndefOr[BuildingsCollection] = js.undefined
       
-      var Calendars: js.UndefOr[CalendarsCollection] = js.native
+      var Calendars: js.UndefOr[CalendarsCollection] = js.undefined
       
-      var Features: js.UndefOr[FeaturesCollection] = js.native
+      var Features: js.UndefOr[FeaturesCollection] = js.undefined
     }
     object ResourcesCollection {
       
@@ -1113,26 +1103,25 @@ object AdminDirectory {
       def update(resource: Role, customer: String, roleId: String): Role = js.native
     }
     
-    @js.native
     trait SchemasCollection extends StObject {
       
       // Retrieve schema
-      def get(customerId: String, schemaKey: String): Schema = js.native
+      def get(customerId: String, schemaKey: String): Schema
       
       // Create schema.
-      def insert(resource: Schema, customerId: String): Schema = js.native
+      def insert(resource: Schema, customerId: String): Schema
       
       // Retrieve all schemas for a customer
-      def list(customerId: String): Schemas = js.native
+      def list(customerId: String): Schemas
       
       // Update schema. This method supports patch semantics.
-      def patch(resource: Schema, customerId: String, schemaKey: String): Schema = js.native
+      def patch(resource: Schema, customerId: String, schemaKey: String): Schema
       
       // Delete schema
-      def remove(customerId: String, schemaKey: String): Unit = js.native
+      def remove(customerId: String, schemaKey: String): Unit
       
       // Update schema
-      def update(resource: Schema, customerId: String, schemaKey: String): Schema = js.native
+      def update(resource: Schema, customerId: String, schemaKey: String): Schema
     }
     object SchemasCollection {
       
@@ -1172,17 +1161,16 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait TokensCollection extends StObject {
       
       // Get information about an access token issued by a user.
-      def get(userKey: String, clientId: String): Token = js.native
+      def get(userKey: String, clientId: String): Token
       
       // Returns the set of tokens specified user has issued to 3rd party applications.
-      def list(userKey: String): Tokens = js.native
+      def list(userKey: String): Tokens
       
       // Delete all access tokens issued by a user for an application.
-      def remove(userKey: String, clientId: String): Unit = js.native
+      def remove(userKey: String, clientId: String): Unit
     }
     object TokensCollection {
       
@@ -1228,20 +1216,19 @@ object AdminDirectory {
         def watch(resource: Channel, userKey: String, optionalArgs: js.Object): Channel = js.native
       }
       
-      @js.native
       trait PhotosCollection extends StObject {
         
         // Retrieve photo of a user
-        def get(userKey: String): UserPhoto = js.native
+        def get(userKey: String): UserPhoto
         
         // Add a photo for the user. This method supports patch semantics.
-        def patch(resource: UserPhoto, userKey: String): UserPhoto = js.native
+        def patch(resource: UserPhoto, userKey: String): UserPhoto
         
         // Remove photos for the user
-        def remove(userKey: String): Unit = js.native
+        def remove(userKey: String): Unit
         
         // Add a photo for the user
-        def update(resource: UserPhoto, userKey: String): UserPhoto = js.native
+        def update(resource: UserPhoto, userKey: String): UserPhoto
       }
       object PhotosCollection {
         
@@ -1317,17 +1304,16 @@ object AdminDirectory {
       def watch(resource: Channel, optionalArgs: js.Object): Channel = js.native
     }
     
-    @js.native
     trait VerificationCodesCollection extends StObject {
       
       // Generate new backup verification codes for the user.
-      def generate(userKey: String): Unit = js.native
+      def generate(userKey: String): Unit
       
       // Invalidate the current backup verification codes for the user.
-      def invalidate(userKey: String): Unit = js.native
+      def invalidate(userKey: String): Unit
       
       // Returns the current set of valid backup verification codes for the specified user.
-      def list(userKey: String): VerificationCodes = js.native
+      def list(userKey: String): VerificationCodes
     }
     object VerificationCodesCollection {
       
@@ -1354,18 +1340,17 @@ object AdminDirectory {
   
   object Schema {
     
-    @js.native
     trait Alias extends StObject {
       
-      var alias: js.UndefOr[String] = js.native
+      var alias: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var primaryEmail: js.UndefOr[String] = js.native
+      var primaryEmail: js.UndefOr[String] = js.undefined
     }
     object Alias {
       
@@ -1410,14 +1395,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Aliases extends StObject {
       
-      var aliases: js.UndefOr[js.Array[_]] = js.native
+      var aliases: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Aliases {
       
@@ -1431,7 +1415,7 @@ object AdminDirectory {
       implicit class AliasesMutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setAliases(value: js.Array[_]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+        def setAliases(value: js.Array[js.Any]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
@@ -1453,24 +1437,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait AppAccessCollections extends StObject {
       
-      var blockedApiAccessBuckets: js.UndefOr[js.Array[String]] = js.native
+      var blockedApiAccessBuckets: js.UndefOr[js.Array[String]] = js.undefined
       
-      var enforceSettingsForAndroidDrive: js.UndefOr[Boolean] = js.native
+      var enforceSettingsForAndroidDrive: js.UndefOr[Boolean] = js.undefined
       
-      var errorMessage: js.UndefOr[String] = js.native
+      var errorMessage: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceName: js.UndefOr[String] = js.native
+      var resourceName: js.UndefOr[String] = js.undefined
       
-      var trustDomainOwnedApps: js.UndefOr[Boolean] = js.native
+      var trustDomainOwnedApps: js.UndefOr[Boolean] = js.undefined
     }
     object AppAccessCollections {
       
@@ -1536,22 +1519,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Asp extends StObject {
       
-      var codeId: js.UndefOr[Double] = js.native
+      var codeId: js.UndefOr[Double] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastTimeUsed: js.UndefOr[String] = js.native
+      var lastTimeUsed: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var userKey: js.UndefOr[String] = js.native
+      var userKey: js.UndefOr[String] = js.undefined
     }
     object Asp {
       
@@ -1608,14 +1590,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Asps extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Asp]] = js.native
+      var items: js.UndefOr[js.Array[Asp]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Asps {
       
@@ -1651,24 +1632,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Building extends StObject {
       
-      var address: js.UndefOr[BuildingAddress] = js.native
+      var address: js.UndefOr[BuildingAddress] = js.undefined
       
-      var buildingId: js.UndefOr[String] = js.native
+      var buildingId: js.UndefOr[String] = js.undefined
       
-      var buildingName: js.UndefOr[String] = js.native
+      var buildingName: js.UndefOr[String] = js.undefined
       
-      var coordinates: js.UndefOr[BuildingCoordinates] = js.native
+      var coordinates: js.UndefOr[BuildingCoordinates] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var etags: js.UndefOr[String] = js.native
+      var etags: js.UndefOr[String] = js.undefined
       
-      var floorNames: js.UndefOr[js.Array[String]] = js.native
+      var floorNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Building {
       
@@ -1734,22 +1714,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait BuildingAddress extends StObject {
       
-      var addressLines: js.UndefOr[js.Array[String]] = js.native
+      var addressLines: js.UndefOr[js.Array[String]] = js.undefined
       
-      var administrativeArea: js.UndefOr[String] = js.native
+      var administrativeArea: js.UndefOr[String] = js.undefined
       
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var regionCode: js.UndefOr[String] = js.native
+      var regionCode: js.UndefOr[String] = js.undefined
       
-      var sublocality: js.UndefOr[String] = js.native
+      var sublocality: js.UndefOr[String] = js.undefined
     }
     object BuildingAddress {
       
@@ -1809,12 +1788,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait BuildingCoordinates extends StObject {
       
-      var latitude: js.UndefOr[Double] = js.native
+      var latitude: js.UndefOr[Double] = js.undefined
       
-      var longitude: js.UndefOr[Double] = js.native
+      var longitude: js.UndefOr[Double] = js.undefined
     }
     object BuildingCoordinates {
       
@@ -1841,16 +1819,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Buildings extends StObject {
       
-      var buildings: js.UndefOr[js.Array[Building]] = js.native
+      var buildings: js.UndefOr[js.Array[Building]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Buildings {
       
@@ -1892,38 +1869,37 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait CalendarResource extends StObject {
       
-      var buildingId: js.UndefOr[String] = js.native
+      var buildingId: js.UndefOr[String] = js.undefined
       
-      var capacity: js.UndefOr[Double] = js.native
+      var capacity: js.UndefOr[Double] = js.undefined
       
-      var etags: js.UndefOr[String] = js.native
+      var etags: js.UndefOr[String] = js.undefined
       
-      var featureInstances: js.UndefOr[js.Object] = js.native
+      var featureInstances: js.UndefOr[js.Object] = js.undefined
       
-      var floorName: js.UndefOr[String] = js.native
+      var floorName: js.UndefOr[String] = js.undefined
       
-      var floorSection: js.UndefOr[String] = js.native
+      var floorSection: js.UndefOr[String] = js.undefined
       
-      var generatedResourceName: js.UndefOr[String] = js.native
+      var generatedResourceName: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resourceCategory: js.UndefOr[String] = js.native
+      var resourceCategory: js.UndefOr[String] = js.undefined
       
-      var resourceDescription: js.UndefOr[String] = js.native
+      var resourceDescription: js.UndefOr[String] = js.undefined
       
-      var resourceEmail: js.UndefOr[String] = js.native
+      var resourceEmail: js.UndefOr[String] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceName: js.UndefOr[String] = js.native
+      var resourceName: js.UndefOr[String] = js.undefined
       
-      var resourceType: js.UndefOr[String] = js.native
+      var resourceType: js.UndefOr[String] = js.undefined
       
-      var userVisibleDescription: js.UndefOr[String] = js.native
+      var userVisibleDescription: js.UndefOr[String] = js.undefined
     }
     object CalendarResource {
       
@@ -2028,16 +2004,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait CalendarResources extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[CalendarResource]] = js.native
+      var items: js.UndefOr[js.Array[CalendarResource]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CalendarResources {
       
@@ -2079,28 +2054,27 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Channel extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
-      var payload: js.UndefOr[Boolean] = js.native
+      var payload: js.UndefOr[Boolean] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceUri: js.UndefOr[String] = js.native
+      var resourceUri: js.UndefOr[String] = js.undefined
       
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Channel {
       
@@ -2175,72 +2149,71 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDevice extends StObject {
       
-      var activeTimeRanges: js.UndefOr[js.Array[ChromeOsDeviceActiveTimeRanges]] = js.native
+      var activeTimeRanges: js.UndefOr[js.Array[ChromeOsDeviceActiveTimeRanges]] = js.undefined
       
-      var annotatedAssetId: js.UndefOr[String] = js.native
+      var annotatedAssetId: js.UndefOr[String] = js.undefined
       
-      var annotatedLocation: js.UndefOr[String] = js.native
+      var annotatedLocation: js.UndefOr[String] = js.undefined
       
-      var annotatedUser: js.UndefOr[String] = js.native
+      var annotatedUser: js.UndefOr[String] = js.undefined
       
-      var autoUpdateExpiration: js.UndefOr[String] = js.native
+      var autoUpdateExpiration: js.UndefOr[String] = js.undefined
       
-      var bootMode: js.UndefOr[String] = js.native
+      var bootMode: js.UndefOr[String] = js.undefined
       
-      var cpuStatusReports: js.UndefOr[js.Array[ChromeOsDeviceCpuStatusReports]] = js.native
+      var cpuStatusReports: js.UndefOr[js.Array[ChromeOsDeviceCpuStatusReports]] = js.undefined
       
-      var deviceFiles: js.UndefOr[js.Array[ChromeOsDeviceDeviceFiles]] = js.native
+      var deviceFiles: js.UndefOr[js.Array[ChromeOsDeviceDeviceFiles]] = js.undefined
       
-      var deviceId: js.UndefOr[String] = js.native
+      var deviceId: js.UndefOr[String] = js.undefined
       
-      var diskVolumeReports: js.UndefOr[js.Array[ChromeOsDeviceDiskVolumeReports]] = js.native
+      var diskVolumeReports: js.UndefOr[js.Array[ChromeOsDeviceDiskVolumeReports]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var ethernetMacAddress: js.UndefOr[String] = js.native
+      var ethernetMacAddress: js.UndefOr[String] = js.undefined
       
-      var firmwareVersion: js.UndefOr[String] = js.native
+      var firmwareVersion: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastEnrollmentTime: js.UndefOr[String] = js.native
+      var lastEnrollmentTime: js.UndefOr[String] = js.undefined
       
-      var lastSync: js.UndefOr[String] = js.native
+      var lastSync: js.UndefOr[String] = js.undefined
       
-      var macAddress: js.UndefOr[String] = js.native
+      var macAddress: js.UndefOr[String] = js.undefined
       
-      var meid: js.UndefOr[String] = js.native
+      var meid: js.UndefOr[String] = js.undefined
       
-      var model: js.UndefOr[String] = js.native
+      var model: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var orderNumber: js.UndefOr[String] = js.native
+      var orderNumber: js.UndefOr[String] = js.undefined
       
-      var orgUnitPath: js.UndefOr[String] = js.native
+      var orgUnitPath: js.UndefOr[String] = js.undefined
       
-      var osVersion: js.UndefOr[String] = js.native
+      var osVersion: js.UndefOr[String] = js.undefined
       
-      var platformVersion: js.UndefOr[String] = js.native
+      var platformVersion: js.UndefOr[String] = js.undefined
       
-      var recentUsers: js.UndefOr[js.Array[ChromeOsDeviceRecentUsers]] = js.native
+      var recentUsers: js.UndefOr[js.Array[ChromeOsDeviceRecentUsers]] = js.undefined
       
-      var serialNumber: js.UndefOr[String] = js.native
+      var serialNumber: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var supportEndDate: js.UndefOr[String] = js.native
+      var supportEndDate: js.UndefOr[String] = js.undefined
       
-      var systemRamFreeReports: js.UndefOr[js.Array[ChromeOsDeviceSystemRamFreeReports]] = js.native
+      var systemRamFreeReports: js.UndefOr[js.Array[ChromeOsDeviceSystemRamFreeReports]] = js.undefined
       
-      var systemRamTotal: js.UndefOr[String] = js.native
+      var systemRamTotal: js.UndefOr[String] = js.undefined
       
-      var tpmVersionInfo: js.UndefOr[ChromeOsDeviceTpmVersionInfo] = js.native
+      var tpmVersionInfo: js.UndefOr[ChromeOsDeviceTpmVersionInfo] = js.undefined
       
-      var willAutoRenew: js.UndefOr[Boolean] = js.native
+      var willAutoRenew: js.UndefOr[Boolean] = js.undefined
     }
     object ChromeOsDevice {
       
@@ -2465,12 +2438,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceAction extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var deprovisionReason: js.UndefOr[String] = js.native
+      var deprovisionReason: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceAction {
       
@@ -2497,12 +2469,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceActiveTimeRanges extends StObject {
       
-      var activeTime: js.UndefOr[Double] = js.native
+      var activeTime: js.UndefOr[Double] = js.undefined
       
-      var date: js.UndefOr[String] = js.native
+      var date: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceActiveTimeRanges {
       
@@ -2529,14 +2500,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceCpuStatusReports extends StObject {
       
-      var cpuTemperatureInfo: js.UndefOr[js.Array[ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo]] = js.native
+      var cpuTemperatureInfo: js.UndefOr[js.Array[ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo]] = js.undefined
       
-      var cpuUtilizationPercentageInfo: js.UndefOr[js.Array[Double]] = js.native
+      var cpuUtilizationPercentageInfo: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var reportTime: js.UndefOr[String] = js.native
+      var reportTime: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceCpuStatusReports {
       
@@ -2575,12 +2545,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo extends StObject {
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var temperature: js.UndefOr[Double] = js.native
+      var temperature: js.UndefOr[Double] = js.undefined
     }
     object ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo {
       
@@ -2607,16 +2576,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceDeviceFiles extends StObject {
       
-      var createTime: js.UndefOr[String] = js.native
+      var createTime: js.UndefOr[String] = js.undefined
       
-      var downloadUrl: js.UndefOr[String] = js.native
+      var downloadUrl: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceDeviceFiles {
       
@@ -2655,10 +2623,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceDiskVolumeReports extends StObject {
       
-      var volumeInfo: js.UndefOr[js.Array[ChromeOsDeviceDiskVolumeReportsVolumeInfo]] = js.native
+      var volumeInfo: js.UndefOr[js.Array[ChromeOsDeviceDiskVolumeReportsVolumeInfo]] = js.undefined
     }
     object ChromeOsDeviceDiskVolumeReports {
       
@@ -2682,14 +2649,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceDiskVolumeReportsVolumeInfo extends StObject {
       
-      var storageFree: js.UndefOr[String] = js.native
+      var storageFree: js.UndefOr[String] = js.undefined
       
-      var storageTotal: js.UndefOr[String] = js.native
+      var storageTotal: js.UndefOr[String] = js.undefined
       
-      var volumeId: js.UndefOr[String] = js.native
+      var volumeId: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceDiskVolumeReportsVolumeInfo {
       
@@ -2722,12 +2688,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceRecentUsers extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceRecentUsers {
       
@@ -2754,12 +2719,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceSystemRamFreeReports extends StObject {
       
-      var reportTime: js.UndefOr[String] = js.native
+      var reportTime: js.UndefOr[String] = js.undefined
       
-      var systemRamFreeInfo: js.UndefOr[js.Array[String]] = js.native
+      var systemRamFreeInfo: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ChromeOsDeviceSystemRamFreeReports {
       
@@ -2789,20 +2753,19 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDeviceTpmVersionInfo extends StObject {
       
-      var family: js.UndefOr[String] = js.native
+      var family: js.UndefOr[String] = js.undefined
       
-      var firmwareVersion: js.UndefOr[String] = js.native
+      var firmwareVersion: js.UndefOr[String] = js.undefined
       
-      var manufacturer: js.UndefOr[String] = js.native
+      var manufacturer: js.UndefOr[String] = js.undefined
       
-      var specLevel: js.UndefOr[String] = js.native
+      var specLevel: js.UndefOr[String] = js.undefined
       
-      var tpmModel: js.UndefOr[String] = js.native
+      var tpmModel: js.UndefOr[String] = js.undefined
       
-      var vendorSpecific: js.UndefOr[String] = js.native
+      var vendorSpecific: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDeviceTpmVersionInfo {
       
@@ -2853,16 +2816,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsDevices extends StObject {
       
-      var chromeosdevices: js.UndefOr[js.Array[ChromeOsDevice]] = js.native
+      var chromeosdevices: js.UndefOr[js.Array[ChromeOsDevice]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ChromeOsDevices {
       
@@ -2904,10 +2866,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait ChromeOsMoveDevicesToOu extends StObject {
       
-      var deviceIds: js.UndefOr[js.Array[String]] = js.native
+      var deviceIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ChromeOsMoveDevicesToOu {
       
@@ -2931,26 +2892,25 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Customer extends StObject {
       
-      var alternateEmail: js.UndefOr[String] = js.native
+      var alternateEmail: js.UndefOr[String] = js.undefined
       
-      var customerCreationTime: js.UndefOr[String] = js.native
+      var customerCreationTime: js.UndefOr[String] = js.undefined
       
-      var customerDomain: js.UndefOr[String] = js.native
+      var customerDomain: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
       
-      var postalAddress: js.UndefOr[CustomerPostalAddress] = js.native
+      var postalAddress: js.UndefOr[CustomerPostalAddress] = js.undefined
     }
     object Customer {
       
@@ -3019,26 +2979,25 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait CustomerPostalAddress extends StObject {
       
-      var addressLine1: js.UndefOr[String] = js.native
+      var addressLine1: js.UndefOr[String] = js.undefined
       
-      var addressLine2: js.UndefOr[String] = js.native
+      var addressLine2: js.UndefOr[String] = js.undefined
       
-      var addressLine3: js.UndefOr[String] = js.native
+      var addressLine3: js.UndefOr[String] = js.undefined
       
-      var contactName: js.UndefOr[String] = js.native
+      var contactName: js.UndefOr[String] = js.undefined
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var organizationName: js.UndefOr[String] = js.native
+      var organizationName: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
     }
     object CustomerPostalAddress {
       
@@ -3107,20 +3066,19 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait DomainAlias extends StObject {
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var domainAliasName: js.UndefOr[String] = js.native
+      var domainAliasName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var parentDomainName: js.UndefOr[String] = js.native
+      var parentDomainName: js.UndefOr[String] = js.undefined
       
-      var verified: js.UndefOr[Boolean] = js.native
+      var verified: js.UndefOr[Boolean] = js.undefined
     }
     object DomainAlias {
       
@@ -3171,14 +3129,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait DomainAliases extends StObject {
       
-      var domainAliases: js.UndefOr[js.Array[DomainAlias]] = js.native
+      var domainAliases: js.UndefOr[js.Array[DomainAlias]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object DomainAliases {
       
@@ -3214,22 +3171,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Domains extends StObject {
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var domainAliases: js.UndefOr[js.Array[DomainAlias]] = js.native
+      var domainAliases: js.UndefOr[js.Array[DomainAlias]] = js.undefined
       
-      var domainName: js.UndefOr[String] = js.native
+      var domainName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var isPrimary: js.UndefOr[Boolean] = js.native
+      var isPrimary: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var verified: js.UndefOr[Boolean] = js.native
+      var verified: js.UndefOr[Boolean] = js.undefined
     }
     object Domains {
       
@@ -3289,14 +3245,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Domains2 extends StObject {
       
-      var domains: js.UndefOr[js.Array[Domains]] = js.native
+      var domains: js.UndefOr[js.Array[Domains]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Domains2 {
       
@@ -3332,14 +3287,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Feature extends StObject {
       
-      var etags: js.UndefOr[String] = js.native
+      var etags: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Feature {
       
@@ -3372,10 +3326,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait FeatureInstance extends StObject {
       
-      var feature: js.UndefOr[Feature] = js.native
+      var feature: js.UndefOr[Feature] = js.undefined
     }
     object FeatureInstance {
       
@@ -3396,10 +3349,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait FeatureRename extends StObject {
       
-      var newName: js.UndefOr[String] = js.native
+      var newName: js.UndefOr[String] = js.undefined
     }
     object FeatureRename {
       
@@ -3420,16 +3372,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Features extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var features: js.UndefOr[js.Array[Feature]] = js.native
+      var features: js.UndefOr[js.Array[Feature]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Features {
       
@@ -3471,28 +3422,27 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Group extends StObject {
       
-      var adminCreated: js.UndefOr[Boolean] = js.native
+      var adminCreated: js.UndefOr[Boolean] = js.undefined
       
-      var aliases: js.UndefOr[js.Array[String]] = js.native
+      var aliases: js.UndefOr[js.Array[String]] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var directMembersCount: js.UndefOr[String] = js.native
+      var directMembersCount: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var nonEditableAliases: js.UndefOr[js.Array[String]] = js.native
+      var nonEditableAliases: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Group {
       
@@ -3573,16 +3523,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Groups extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var groups: js.UndefOr[js.Array[Group]] = js.native
+      var groups: js.UndefOr[js.Array[Group]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Groups {
       
@@ -3624,24 +3573,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Member extends StObject {
       
-      var delivery_settings: js.UndefOr[String] = js.native
+      var delivery_settings: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Member {
       
@@ -3704,16 +3652,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Members extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var members: js.UndefOr[js.Array[Member]] = js.native
+      var members: js.UndefOr[js.Array[Member]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Members {
       
@@ -3755,10 +3702,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait MembersHasMember extends StObject {
       
-      var isMember: js.UndefOr[Boolean] = js.native
+      var isMember: js.UndefOr[Boolean] = js.undefined
     }
     object MembersHasMember {
       
@@ -3779,88 +3725,87 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait MobileDevice extends StObject {
       
-      var adbStatus: js.UndefOr[Boolean] = js.native
+      var adbStatus: js.UndefOr[Boolean] = js.undefined
       
-      var applications: js.UndefOr[js.Array[MobileDeviceApplications]] = js.native
+      var applications: js.UndefOr[js.Array[MobileDeviceApplications]] = js.undefined
       
-      var basebandVersion: js.UndefOr[String] = js.native
+      var basebandVersion: js.UndefOr[String] = js.undefined
       
-      var bootloaderVersion: js.UndefOr[String] = js.native
+      var bootloaderVersion: js.UndefOr[String] = js.undefined
       
-      var brand: js.UndefOr[String] = js.native
+      var brand: js.UndefOr[String] = js.undefined
       
-      var buildNumber: js.UndefOr[String] = js.native
+      var buildNumber: js.UndefOr[String] = js.undefined
       
-      var defaultLanguage: js.UndefOr[String] = js.native
+      var defaultLanguage: js.UndefOr[String] = js.undefined
       
-      var developerOptionsStatus: js.UndefOr[Boolean] = js.native
+      var developerOptionsStatus: js.UndefOr[Boolean] = js.undefined
       
-      var deviceCompromisedStatus: js.UndefOr[String] = js.native
+      var deviceCompromisedStatus: js.UndefOr[String] = js.undefined
       
-      var deviceId: js.UndefOr[String] = js.native
+      var deviceId: js.UndefOr[String] = js.undefined
       
-      var devicePasswordStatus: js.UndefOr[String] = js.native
+      var devicePasswordStatus: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[js.Array[String]] = js.native
+      var email: js.UndefOr[js.Array[String]] = js.undefined
       
-      var encryptionStatus: js.UndefOr[String] = js.native
+      var encryptionStatus: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var firstSync: js.UndefOr[String] = js.native
+      var firstSync: js.UndefOr[String] = js.undefined
       
-      var hardware: js.UndefOr[String] = js.native
+      var hardware: js.UndefOr[String] = js.undefined
       
-      var hardwareId: js.UndefOr[String] = js.native
+      var hardwareId: js.UndefOr[String] = js.undefined
       
-      var imei: js.UndefOr[String] = js.native
+      var imei: js.UndefOr[String] = js.undefined
       
-      var kernelVersion: js.UndefOr[String] = js.native
+      var kernelVersion: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastSync: js.UndefOr[String] = js.native
+      var lastSync: js.UndefOr[String] = js.undefined
       
-      var managedAccountIsOnOwnerProfile: js.UndefOr[Boolean] = js.native
+      var managedAccountIsOnOwnerProfile: js.UndefOr[Boolean] = js.undefined
       
-      var manufacturer: js.UndefOr[String] = js.native
+      var manufacturer: js.UndefOr[String] = js.undefined
       
-      var meid: js.UndefOr[String] = js.native
+      var meid: js.UndefOr[String] = js.undefined
       
-      var model: js.UndefOr[String] = js.native
+      var model: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[js.Array[String]] = js.native
+      var name: js.UndefOr[js.Array[String]] = js.undefined
       
-      var networkOperator: js.UndefOr[String] = js.native
+      var networkOperator: js.UndefOr[String] = js.undefined
       
-      var os: js.UndefOr[String] = js.native
+      var os: js.UndefOr[String] = js.undefined
       
-      var otherAccountsInfo: js.UndefOr[js.Array[String]] = js.native
+      var otherAccountsInfo: js.UndefOr[js.Array[String]] = js.undefined
       
-      var privilege: js.UndefOr[String] = js.native
+      var privilege: js.UndefOr[String] = js.undefined
       
-      var releaseVersion: js.UndefOr[String] = js.native
+      var releaseVersion: js.UndefOr[String] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var securityPatchLevel: js.UndefOr[String] = js.native
+      var securityPatchLevel: js.UndefOr[String] = js.undefined
       
-      var serialNumber: js.UndefOr[String] = js.native
+      var serialNumber: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var supportsWorkProfile: js.UndefOr[Boolean] = js.native
+      var supportsWorkProfile: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var unknownSourcesStatus: js.UndefOr[Boolean] = js.native
+      var unknownSourcesStatus: js.UndefOr[Boolean] = js.undefined
       
-      var userAgent: js.UndefOr[String] = js.native
+      var userAgent: js.UndefOr[String] = js.undefined
       
-      var wifiMacAddress: js.UndefOr[String] = js.native
+      var wifiMacAddress: js.UndefOr[String] = js.undefined
     }
     object MobileDevice {
       
@@ -4127,10 +4072,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait MobileDeviceAction extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
     }
     object MobileDeviceAction {
       
@@ -4151,18 +4095,17 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait MobileDeviceApplications extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var packageName: js.UndefOr[String] = js.native
+      var packageName: js.UndefOr[String] = js.undefined
       
-      var permission: js.UndefOr[js.Array[String]] = js.native
+      var permission: js.UndefOr[js.Array[String]] = js.undefined
       
-      var versionCode: js.UndefOr[Double] = js.native
+      var versionCode: js.UndefOr[Double] = js.undefined
       
-      var versionName: js.UndefOr[String] = js.native
+      var versionName: js.UndefOr[String] = js.undefined
     }
     object MobileDeviceApplications {
       
@@ -4210,16 +4153,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait MobileDevices extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobiledevices: js.UndefOr[js.Array[MobileDevice]] = js.native
+      var mobiledevices: js.UndefOr[js.Array[MobileDevice]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object MobileDevices {
       
@@ -4261,24 +4203,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Notification extends StObject {
       
-      var body: js.UndefOr[String] = js.native
+      var body: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var fromAddress: js.UndefOr[String] = js.native
+      var fromAddress: js.UndefOr[String] = js.undefined
       
-      var isUnread: js.UndefOr[Boolean] = js.native
+      var isUnread: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var notificationId: js.UndefOr[String] = js.native
+      var notificationId: js.UndefOr[String] = js.undefined
       
-      var sendTime: js.UndefOr[String] = js.native
+      var sendTime: js.UndefOr[String] = js.undefined
       
-      var subject: js.UndefOr[String] = js.native
+      var subject: js.UndefOr[String] = js.undefined
     }
     object Notification {
       
@@ -4341,18 +4282,17 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Notifications extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Notification]] = js.native
+      var items: js.UndefOr[js.Array[Notification]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var unreadNotificationsCount: js.UndefOr[Double] = js.native
+      var unreadNotificationsCount: js.UndefOr[Double] = js.undefined
     }
     object Notifications {
       
@@ -4400,26 +4340,25 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait OrgUnit extends StObject {
       
-      var blockInheritance: js.UndefOr[Boolean] = js.native
+      var blockInheritance: js.UndefOr[Boolean] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var orgUnitId: js.UndefOr[String] = js.native
+      var orgUnitId: js.UndefOr[String] = js.undefined
       
-      var orgUnitPath: js.UndefOr[String] = js.native
+      var orgUnitPath: js.UndefOr[String] = js.undefined
       
-      var parentOrgUnitId: js.UndefOr[String] = js.native
+      var parentOrgUnitId: js.UndefOr[String] = js.undefined
       
-      var parentOrgUnitPath: js.UndefOr[String] = js.native
+      var parentOrgUnitPath: js.UndefOr[String] = js.undefined
     }
     object OrgUnit {
       
@@ -4488,14 +4427,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait OrgUnits extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var organizationUnits: js.UndefOr[js.Array[OrgUnit]] = js.native
+      var organizationUnits: js.UndefOr[js.Array[OrgUnit]] = js.undefined
     }
     object OrgUnits {
       
@@ -4531,22 +4469,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Privilege extends StObject {
       
-      var childPrivileges: js.UndefOr[js.Array[Privilege]] = js.native
+      var childPrivileges: js.UndefOr[js.Array[Privilege]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var isOuScopable: js.UndefOr[Boolean] = js.native
+      var isOuScopable: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var privilegeName: js.UndefOr[String] = js.native
+      var privilegeName: js.UndefOr[String] = js.undefined
       
-      var serviceId: js.UndefOr[String] = js.native
+      var serviceId: js.UndefOr[String] = js.undefined
       
-      var serviceName: js.UndefOr[String] = js.native
+      var serviceName: js.UndefOr[String] = js.undefined
     }
     object Privilege {
       
@@ -4606,14 +4543,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Privileges extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Privilege]] = js.native
+      var items: js.UndefOr[js.Array[Privilege]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Privileges {
       
@@ -4649,24 +4585,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Role extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var isSuperAdminRole: js.UndefOr[Boolean] = js.native
+      var isSuperAdminRole: js.UndefOr[Boolean] = js.undefined
       
-      var isSystemRole: js.UndefOr[Boolean] = js.native
+      var isSystemRole: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var roleDescription: js.UndefOr[String] = js.native
+      var roleDescription: js.UndefOr[String] = js.undefined
       
-      var roleId: js.UndefOr[String] = js.native
+      var roleId: js.UndefOr[String] = js.undefined
       
-      var roleName: js.UndefOr[String] = js.native
+      var roleName: js.UndefOr[String] = js.undefined
       
-      var rolePrivileges: js.UndefOr[js.Array[RoleRolePrivileges]] = js.native
+      var rolePrivileges: js.UndefOr[js.Array[RoleRolePrivileges]] = js.undefined
     }
     object Role {
       
@@ -4732,22 +4667,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait RoleAssignment extends StObject {
       
-      var assignedTo: js.UndefOr[String] = js.native
+      var assignedTo: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var orgUnitId: js.UndefOr[String] = js.native
+      var orgUnitId: js.UndefOr[String] = js.undefined
       
-      var roleAssignmentId: js.UndefOr[String] = js.native
+      var roleAssignmentId: js.UndefOr[String] = js.undefined
       
-      var roleId: js.UndefOr[String] = js.native
+      var roleId: js.UndefOr[String] = js.undefined
       
-      var scopeType: js.UndefOr[String] = js.native
+      var scopeType: js.UndefOr[String] = js.undefined
     }
     object RoleAssignment {
       
@@ -4804,16 +4738,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait RoleAssignments extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[RoleAssignment]] = js.native
+      var items: js.UndefOr[js.Array[RoleAssignment]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object RoleAssignments {
       
@@ -4855,12 +4788,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait RoleRolePrivileges extends StObject {
       
-      var privilegeName: js.UndefOr[String] = js.native
+      var privilegeName: js.UndefOr[String] = js.undefined
       
-      var serviceId: js.UndefOr[String] = js.native
+      var serviceId: js.UndefOr[String] = js.undefined
     }
     object RoleRolePrivileges {
       
@@ -4887,16 +4819,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Roles extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Role]] = js.native
+      var items: js.UndefOr[js.Array[Role]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Roles {
       
@@ -4938,20 +4869,19 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Schema extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var fields: js.UndefOr[js.Array[SchemaFieldSpec]] = js.native
+      var fields: js.UndefOr[js.Array[SchemaFieldSpec]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var schemaId: js.UndefOr[String] = js.native
+      var schemaId: js.UndefOr[String] = js.undefined
       
-      var schemaName: js.UndefOr[String] = js.native
+      var schemaName: js.UndefOr[String] = js.undefined
     }
     object Schema {
       
@@ -5005,28 +4935,27 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait SchemaFieldSpec extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var fieldId: js.UndefOr[String] = js.native
+      var fieldId: js.UndefOr[String] = js.undefined
       
-      var fieldName: js.UndefOr[String] = js.native
+      var fieldName: js.UndefOr[String] = js.undefined
       
-      var fieldType: js.UndefOr[String] = js.native
+      var fieldType: js.UndefOr[String] = js.undefined
       
-      var indexed: js.UndefOr[Boolean] = js.native
+      var indexed: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var multiValued: js.UndefOr[Boolean] = js.native
+      var multiValued: js.UndefOr[Boolean] = js.undefined
       
-      var numericIndexingSpec: js.UndefOr[SchemaFieldSpecNumericIndexingSpec] = js.native
+      var numericIndexingSpec: js.UndefOr[SchemaFieldSpecNumericIndexingSpec] = js.undefined
       
-      var readAccessType: js.UndefOr[String] = js.native
+      var readAccessType: js.UndefOr[String] = js.undefined
     }
     object SchemaFieldSpec {
       
@@ -5101,12 +5030,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait SchemaFieldSpecNumericIndexingSpec extends StObject {
       
-      var maxValue: js.UndefOr[Double] = js.native
+      var maxValue: js.UndefOr[Double] = js.undefined
       
-      var minValue: js.UndefOr[Double] = js.native
+      var minValue: js.UndefOr[Double] = js.undefined
     }
     object SchemaFieldSpecNumericIndexingSpec {
       
@@ -5133,14 +5061,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Schemas extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var schemas: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema]] = js.native
+      var schemas: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema]] = js.undefined
     }
     object Schemas {
       
@@ -5176,24 +5103,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Token extends StObject {
       
-      var anonymous: js.UndefOr[Boolean] = js.native
+      var anonymous: js.UndefOr[Boolean] = js.undefined
       
-      var clientId: js.UndefOr[String] = js.native
+      var clientId: js.UndefOr[String] = js.undefined
       
-      var displayText: js.UndefOr[String] = js.native
+      var displayText: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nativeApp: js.UndefOr[Boolean] = js.native
+      var nativeApp: js.UndefOr[Boolean] = js.undefined
       
-      var scopes: js.UndefOr[js.Array[String]] = js.native
+      var scopes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var userKey: js.UndefOr[String] = js.native
+      var userKey: js.UndefOr[String] = js.undefined
     }
     object Token {
       
@@ -5259,14 +5185,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Tokens extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Token]] = js.native
+      var items: js.UndefOr[js.Array[Token]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Tokens {
       
@@ -5302,18 +5227,17 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait TrustedAppId extends StObject {
       
-      var androidPackageName: js.UndefOr[String] = js.native
+      var androidPackageName: js.UndefOr[String] = js.undefined
       
-      var certificateHashSHA1: js.UndefOr[String] = js.native
+      var certificateHashSHA1: js.UndefOr[String] = js.undefined
       
-      var certificateHashSHA256: js.UndefOr[String] = js.native
+      var certificateHashSHA256: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object TrustedAppId {
       
@@ -5358,16 +5282,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait TrustedApps extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var trustedApps: js.UndefOr[js.Array[TrustedAppId]] = js.native
+      var trustedApps: js.UndefOr[js.Array[TrustedAppId]] = js.undefined
     }
     object TrustedApps {
       
@@ -5409,96 +5332,95 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait User extends StObject {
       
-      var addresses: js.UndefOr[js.Object] = js.native
+      var addresses: js.UndefOr[js.Object] = js.undefined
       
-      var agreedToTerms: js.UndefOr[Boolean] = js.native
+      var agreedToTerms: js.UndefOr[Boolean] = js.undefined
       
-      var aliases: js.UndefOr[js.Array[String]] = js.native
+      var aliases: js.UndefOr[js.Array[String]] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var changePasswordAtNextLogin: js.UndefOr[Boolean] = js.native
+      var changePasswordAtNextLogin: js.UndefOr[Boolean] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var customSchemas: js.UndefOr[js.Object] = js.native
+      var customSchemas: js.UndefOr[js.Object] = js.undefined
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var deletionTime: js.UndefOr[String] = js.native
+      var deletionTime: js.UndefOr[String] = js.undefined
       
-      var emails: js.UndefOr[js.Object] = js.native
+      var emails: js.UndefOr[js.Object] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var externalIds: js.UndefOr[js.Object] = js.native
+      var externalIds: js.UndefOr[js.Object] = js.undefined
       
-      var gender: js.UndefOr[js.Object] = js.native
+      var gender: js.UndefOr[js.Object] = js.undefined
       
-      var hashFunction: js.UndefOr[String] = js.native
+      var hashFunction: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var ims: js.UndefOr[js.Object] = js.native
+      var ims: js.UndefOr[js.Object] = js.undefined
       
-      var includeInGlobalAddressList: js.UndefOr[Boolean] = js.native
+      var includeInGlobalAddressList: js.UndefOr[Boolean] = js.undefined
       
-      var ipWhitelisted: js.UndefOr[Boolean] = js.native
+      var ipWhitelisted: js.UndefOr[Boolean] = js.undefined
       
-      var isAdmin: js.UndefOr[Boolean] = js.native
+      var isAdmin: js.UndefOr[Boolean] = js.undefined
       
-      var isDelegatedAdmin: js.UndefOr[Boolean] = js.native
+      var isDelegatedAdmin: js.UndefOr[Boolean] = js.undefined
       
-      var isEnforcedIn2Sv: js.UndefOr[Boolean] = js.native
+      var isEnforcedIn2Sv: js.UndefOr[Boolean] = js.undefined
       
-      var isEnrolledIn2Sv: js.UndefOr[Boolean] = js.native
+      var isEnrolledIn2Sv: js.UndefOr[Boolean] = js.undefined
       
-      var isMailboxSetup: js.UndefOr[Boolean] = js.native
+      var isMailboxSetup: js.UndefOr[Boolean] = js.undefined
       
-      var keywords: js.UndefOr[js.Object] = js.native
+      var keywords: js.UndefOr[js.Object] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languages: js.UndefOr[js.Object] = js.native
+      var languages: js.UndefOr[js.Object] = js.undefined
       
-      var lastLoginTime: js.UndefOr[String] = js.native
+      var lastLoginTime: js.UndefOr[String] = js.undefined
       
-      var locations: js.UndefOr[js.Object] = js.native
+      var locations: js.UndefOr[js.Object] = js.undefined
       
-      var name: js.UndefOr[UserName] = js.native
+      var name: js.UndefOr[UserName] = js.undefined
       
-      var nonEditableAliases: js.UndefOr[js.Array[String]] = js.native
+      var nonEditableAliases: js.UndefOr[js.Array[String]] = js.undefined
       
-      var notes: js.UndefOr[js.Object] = js.native
+      var notes: js.UndefOr[js.Object] = js.undefined
       
-      var orgUnitPath: js.UndefOr[String] = js.native
+      var orgUnitPath: js.UndefOr[String] = js.undefined
       
-      var organizations: js.UndefOr[js.Object] = js.native
+      var organizations: js.UndefOr[js.Object] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var phones: js.UndefOr[js.Object] = js.native
+      var phones: js.UndefOr[js.Object] = js.undefined
       
-      var posixAccounts: js.UndefOr[js.Object] = js.native
+      var posixAccounts: js.UndefOr[js.Object] = js.undefined
       
-      var primaryEmail: js.UndefOr[String] = js.native
+      var primaryEmail: js.UndefOr[String] = js.undefined
       
-      var relations: js.UndefOr[js.Object] = js.native
+      var relations: js.UndefOr[js.Object] = js.undefined
       
-      var sshPublicKeys: js.UndefOr[js.Object] = js.native
+      var sshPublicKeys: js.UndefOr[js.Object] = js.undefined
       
-      var suspended: js.UndefOr[Boolean] = js.native
+      var suspended: js.UndefOr[Boolean] = js.undefined
       
-      var suspensionReason: js.UndefOr[String] = js.native
+      var suspensionReason: js.UndefOr[String] = js.undefined
       
-      var thumbnailPhotoEtag: js.UndefOr[String] = js.native
+      var thumbnailPhotoEtag: js.UndefOr[String] = js.undefined
       
-      var thumbnailPhotoUrl: js.UndefOr[String] = js.native
+      var thumbnailPhotoUrl: js.UndefOr[String] = js.undefined
       
-      var websites: js.UndefOr[js.Object] = js.native
+      var websites: js.UndefOr[js.Object] = js.undefined
     }
     object User {
       
@@ -5783,12 +5705,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserAbout extends StObject {
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserAbout {
       
@@ -5815,34 +5736,33 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserAddress extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var extendedAddress: js.UndefOr[String] = js.native
+      var extendedAddress: js.UndefOr[String] = js.undefined
       
-      var formatted: js.UndefOr[String] = js.native
+      var formatted: js.UndefOr[String] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var poBox: js.UndefOr[String] = js.native
+      var poBox: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var sourceIsStructured: js.UndefOr[Boolean] = js.native
+      var sourceIsStructured: js.UndefOr[Boolean] = js.undefined
       
-      var streetAddress: js.UndefOr[String] = js.native
+      var streetAddress: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserAddress {
       
@@ -5935,16 +5855,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserEmail extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserEmail {
       
@@ -5983,14 +5902,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserExternalId extends StObject {
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserExternalId {
       
@@ -6023,14 +5941,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserGender extends StObject {
       
-      var addressMeAs: js.UndefOr[String] = js.native
+      var addressMeAs: js.UndefOr[String] = js.undefined
       
-      var customGender: js.UndefOr[String] = js.native
+      var customGender: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserGender {
       
@@ -6063,20 +5980,19 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserIm extends StObject {
       
-      var customProtocol: js.UndefOr[String] = js.native
+      var customProtocol: js.UndefOr[String] = js.undefined
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var im: js.UndefOr[String] = js.native
+      var im: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var protocol: js.UndefOr[String] = js.native
+      var protocol: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserIm {
       
@@ -6127,14 +6043,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserKeyword extends StObject {
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserKeyword {
       
@@ -6167,12 +6082,11 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserLanguage extends StObject {
       
-      var customLanguage: js.UndefOr[String] = js.native
+      var customLanguage: js.UndefOr[String] = js.undefined
       
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
     }
     object UserLanguage {
       
@@ -6199,22 +6113,21 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserLocation extends StObject {
       
-      var area: js.UndefOr[String] = js.native
+      var area: js.UndefOr[String] = js.undefined
       
-      var buildingId: js.UndefOr[String] = js.native
+      var buildingId: js.UndefOr[String] = js.undefined
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var deskCode: js.UndefOr[String] = js.native
+      var deskCode: js.UndefOr[String] = js.undefined
       
-      var floorName: js.UndefOr[String] = js.native
+      var floorName: js.UndefOr[String] = js.undefined
       
-      var floorSection: js.UndefOr[String] = js.native
+      var floorSection: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserLocation {
       
@@ -6271,10 +6184,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserMakeAdmin extends StObject {
       
-      var status: js.UndefOr[Boolean] = js.native
+      var status: js.UndefOr[Boolean] = js.undefined
     }
     object UserMakeAdmin {
       
@@ -6295,14 +6207,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserName extends StObject {
       
-      var familyName: js.UndefOr[String] = js.native
+      var familyName: js.UndefOr[String] = js.undefined
       
-      var fullName: js.UndefOr[String] = js.native
+      var fullName: js.UndefOr[String] = js.undefined
       
-      var givenName: js.UndefOr[String] = js.native
+      var givenName: js.UndefOr[String] = js.undefined
     }
     object UserName {
       
@@ -6335,32 +6246,31 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserOrganization extends StObject {
       
-      var costCenter: js.UndefOr[String] = js.native
+      var costCenter: js.UndefOr[String] = js.undefined
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var department: js.UndefOr[String] = js.native
+      var department: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var fullTimeEquivalent: js.UndefOr[Double] = js.native
+      var fullTimeEquivalent: js.UndefOr[Double] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var symbol: js.UndefOr[String] = js.native
+      var symbol: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserOrganization {
       
@@ -6447,16 +6357,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserPhone extends StObject {
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserPhone {
       
@@ -6495,24 +6404,23 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserPhoto extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var photoData: js.UndefOr[String] = js.native
+      var photoData: js.UndefOr[String] = js.undefined
       
-      var primaryEmail: js.UndefOr[String] = js.native
+      var primaryEmail: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object UserPhoto {
       
@@ -6575,28 +6483,27 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserPosixAccount extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var gecos: js.UndefOr[String] = js.native
+      var gecos: js.UndefOr[String] = js.undefined
       
-      var gid: js.UndefOr[String] = js.native
+      var gid: js.UndefOr[String] = js.undefined
       
-      var homeDirectory: js.UndefOr[String] = js.native
+      var homeDirectory: js.UndefOr[String] = js.undefined
       
-      var operatingSystemType: js.UndefOr[String] = js.native
+      var operatingSystemType: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var shell: js.UndefOr[String] = js.native
+      var shell: js.UndefOr[String] = js.undefined
       
-      var systemId: js.UndefOr[String] = js.native
+      var systemId: js.UndefOr[String] = js.undefined
       
-      var uid: js.UndefOr[String] = js.native
+      var uid: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object UserPosixAccount {
       
@@ -6671,14 +6578,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserRelation extends StObject {
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserRelation {
       
@@ -6711,14 +6617,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserSshPublicKey extends StObject {
       
-      var expirationTimeUsec: js.UndefOr[String] = js.native
+      var expirationTimeUsec: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
     }
     object UserSshPublicKey {
       
@@ -6751,10 +6656,9 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserUndelete extends StObject {
       
-      var orgUnitPath: js.UndefOr[String] = js.native
+      var orgUnitPath: js.UndefOr[String] = js.undefined
     }
     object UserUndelete {
       
@@ -6775,16 +6679,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait UserWebsite extends StObject {
       
-      var customType: js.UndefOr[String] = js.native
+      var customType: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserWebsite {
       
@@ -6823,18 +6726,17 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait Users extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var trigger_event: js.UndefOr[String] = js.native
+      var trigger_event: js.UndefOr[String] = js.undefined
       
-      var users: js.UndefOr[js.Array[User]] = js.native
+      var users: js.UndefOr[js.Array[User]] = js.undefined
     }
     object Users {
       
@@ -6882,16 +6784,15 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait VerificationCode extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
       
-      var verificationCode: js.UndefOr[String] = js.native
+      var verificationCode: js.UndefOr[String] = js.undefined
     }
     object VerificationCode {
       
@@ -6930,14 +6831,13 @@ object AdminDirectory {
       }
     }
     
-    @js.native
     trait VerificationCodes extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[VerificationCode]] = js.native
+      var items: js.UndefOr[js.Array[VerificationCode]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object VerificationCodes {
       

@@ -2,14 +2,12 @@ package typings.semanticUiRating.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-rating.SemanticUI.RatingSettings._Impl, 'interactive'> */
-@js.native
 trait PickImplinteractive extends StObject {
   
-  var interactive: Boolean = js.native
+  var interactive: Boolean
 }
 object PickImplinteractive {
   

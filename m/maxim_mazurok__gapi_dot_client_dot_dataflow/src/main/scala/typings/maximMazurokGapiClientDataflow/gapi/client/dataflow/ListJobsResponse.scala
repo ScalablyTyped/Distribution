@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /** Zero or more messages describing the [regional endpoints] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that failed to respond. */
-  var failedLocation: js.UndefOr[js.Array[FailedLocation]] = js.native
+  var failedLocation: js.UndefOr[js.Array[FailedLocation]] = js.undefined
   
   /** A subset of the requested job information. */
-  var jobs: js.UndefOr[js.Array[Job]] = js.native
+  var jobs: js.UndefOr[js.Array[Job]] = js.undefined
   
   /** Set if there may be more results than fit in this response. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobsResponse {
   

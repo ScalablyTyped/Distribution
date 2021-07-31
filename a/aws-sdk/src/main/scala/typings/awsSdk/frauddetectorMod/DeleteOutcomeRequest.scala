@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOutcomeRequest extends StObject {
   
   /**
     * The name of the outcome to delete.
     */
-  var name: identifier = js.native
+  var name: identifier
 }
 object DeleteOutcomeRequest {
   

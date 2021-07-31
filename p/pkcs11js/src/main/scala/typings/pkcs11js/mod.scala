@@ -2,7 +2,6 @@ package typings.pkcs11js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -2127,5 +2126,6 @@ object mod {
   @JSImport("pkcs11js", "PKCS11")
   @js.native
   class PKCS11 ()
-    extends typings.pkcs11js.Pkcs11Js.PKCS11
+    extends StObject
+       with typings.pkcs11js.Pkcs11Js.PKCS11
 }

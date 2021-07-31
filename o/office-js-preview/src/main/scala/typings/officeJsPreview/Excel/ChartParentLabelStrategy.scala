@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,17 @@ sealed trait ChartParentLabelStrategy extends StObject
 object ChartParentLabelStrategy extends StObject {
   
   @js.native
-  sealed trait banner extends ChartParentLabelStrategy
+  sealed trait banner
+    extends StObject
+       with ChartParentLabelStrategy
   
   @js.native
-  sealed trait none extends ChartParentLabelStrategy
+  sealed trait none
+    extends StObject
+       with ChartParentLabelStrategy
   
   @js.native
-  sealed trait overlapping extends ChartParentLabelStrategy
+  sealed trait overlapping
+    extends StObject
+       with ChartParentLabelStrategy
 }

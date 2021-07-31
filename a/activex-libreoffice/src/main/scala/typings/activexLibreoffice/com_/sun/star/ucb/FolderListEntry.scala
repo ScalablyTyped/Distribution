@@ -2,33 +2,31 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about a single folder in a {@link FolderList} . */
-@js.native
 trait FolderListEntry extends StObject {
   
   /**
     * A (unique) identifier for the folder (used by IMAP, where different folders with equal human-readable titles may exist; otherwise, it may be left
     * empty).
     */
-  var ID: String = js.native
+  var ID: String
   
   /** The folder is new. */
-  var New: Boolean = js.native
+  var New: Boolean
   
   /** The folder shall be purged (only used in conjunction with the FolderListCommand::SET). */
-  var Purge: Boolean = js.native
+  var Purge: Boolean
   
   /** The folder has been removed. */
-  var Removed: Boolean = js.native
+  var Removed: Boolean
   
   /** The folder is subscribed. */
-  var Subscribed: Boolean = js.native
+  var Subscribed: Boolean
   
   /** The title of the folder. */
-  var Title: String = js.native
+  var Title: String
 }
 object FolderListEntry {
   

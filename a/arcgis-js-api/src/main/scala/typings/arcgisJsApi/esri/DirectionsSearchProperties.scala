@@ -4,137 +4,137 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsSearchProperties extends Object {
+trait DirectionsSearchProperties
+  extends StObject
+     with Object {
   
   /**
     * Number index indicating the current selected source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var activeSourceIndex: js.UndefOr[Double] = js.native
+  var activeSourceIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * String value used as a hint for input text when searching on multiple sources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var allPlaceholder: js.UndefOr[String] = js.native
+  var allPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to automatically navigate to the selected result once selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var autoNavigate: js.UndefOr[Boolean] = js.native
+  var autoNavigate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to automatically select and zoom to the first geocoded result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var autoSelect: js.UndefOr[Boolean] = js.native
+  var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Define the type of location, either `"street"` or `"rooftop"`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the maximum number of search results to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum number of suggestions to return for the widget's input.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var maxSuggestions: js.UndefOr[Double] = js.native
+  var maxSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the minimum number of characters required before querying for a suggestion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var minSuggestCharacters: js.UndefOr[Double] = js.native
+  var minSuggestCharacters: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to display a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when a selected result is clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to show the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when a result is selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var popupOpenOnSelect: js.UndefOr[Boolean] = js.native
+  var popupOpenOnSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A customized PopupTemplate for the selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var popupTemplate: js.UndefOr[PopupTemplate] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplate] = js.undefined
   
   /**
     * Indicates whether to show a graphic on the map for the selected source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var resultGraphicEnabled: js.UndefOr[Boolean] = js.native
+  var resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the option to search all sources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var searchAllEnabled: js.UndefOr[Boolean] = js.native
+  var searchAllEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the search box input text string.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var searchTerm: js.UndefOr[String] = js.native
+  var searchTerm: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the sources to search in the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#view).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var sources: js.UndefOr[Collection[LayerSearchSource | LocatorSearchSource]] = js.native
+  var sources: js.UndefOr[Collection[LayerSearchSource | LocatorSearchSource]] = js.undefined
   
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var suggestionsEnabled: js.UndefOr[Boolean] = js.native
+  var suggestionsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view of the widget.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[MapView | SceneView] = js.native
+  var view: js.UndefOr[MapView | SceneView] = js.undefined
   
   /**
     * The Search widget's view model.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var viewModel: js.UndefOr[SearchViewModel] = js.native
+  var viewModel: js.UndefOr[SearchViewModel] = js.undefined
 }
 object DirectionsSearchProperties {
   

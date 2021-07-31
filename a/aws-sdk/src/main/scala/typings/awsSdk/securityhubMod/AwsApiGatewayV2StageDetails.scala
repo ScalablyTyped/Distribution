@@ -2,71 +2,69 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayV2StageDetails extends StObject {
   
   /**
     * Information about settings for logging access for the stage.
     */
-  var AccessLogSettings: js.UndefOr[AwsApiGatewayAccessLogSettings] = js.native
+  var AccessLogSettings: js.UndefOr[AwsApiGatewayAccessLogSettings] = js.undefined
   
   /**
     * Indicates whether the stage is managed by API Gateway.
     */
-  var ApiGatewayManaged: js.UndefOr[Boolean] = js.native
+  var ApiGatewayManaged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether updates to an API automatically trigger a new deployment.
     */
-  var AutoDeploy: js.UndefOr[Boolean] = js.native
+  var AutoDeploy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates when the stage was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedDate: js.UndefOr[NonEmptyString] = js.native
+  var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Default route settings for the stage.
     */
-  var DefaultRouteSettings: js.UndefOr[AwsApiGatewayV2RouteSettings] = js.native
+  var DefaultRouteSettings: js.UndefOr[AwsApiGatewayV2RouteSettings] = js.undefined
   
   /**
     * The identifier of the deployment that the stage is associated with. 
     */
-  var DeploymentId: js.UndefOr[NonEmptyString] = js.native
+  var DeploymentId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The description of the stage.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the last deployment of a stage. Supported only if the stage has automatic deployment enabled.
     */
-  var LastDeploymentStatusMessage: js.UndefOr[NonEmptyString] = js.native
+  var LastDeploymentStatusMessage: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the stage was most recently updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastUpdatedDate: js.UndefOr[NonEmptyString] = js.native
+  var LastUpdatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The route settings for the stage.
     */
-  var RouteSettings: js.UndefOr[AwsApiGatewayV2RouteSettings] = js.native
+  var RouteSettings: js.UndefOr[AwsApiGatewayV2RouteSettings] = js.undefined
   
   /**
     * The name of the stage.
     */
-  var StageName: js.UndefOr[NonEmptyString] = js.native
+  var StageName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A map that defines the stage variables for the stage. Variable names can have alphanumeric and underscore characters. Variable values can contain the following characters:   Uppercase and lowercase letters   Numbers   Special characters -._~:/?#&amp;=,  
     */
-  var StageVariables: js.UndefOr[FieldMap] = js.native
+  var StageVariables: js.UndefOr[FieldMap] = js.undefined
 }
 object AwsApiGatewayV2StageDetails {
   

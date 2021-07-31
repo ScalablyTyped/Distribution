@@ -2,23 +2,21 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateMeta extends StObject {
   
   /** Template description */
-  var description: String = js.native
+  var description: String
   
   /** Unique template ID */
-  var id: String = js.native
+  var id: String
   
   /** Template name */
-  var name: String = js.native
+  var name: String
   
   /** Published state of the template (true = published, false = draft) */
-  var published: Boolean = js.native
+  var published: Boolean
 }
 object TemplateMeta {
   

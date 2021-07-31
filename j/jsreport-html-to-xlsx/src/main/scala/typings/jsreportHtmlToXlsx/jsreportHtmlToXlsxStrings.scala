@@ -3,13 +3,14 @@ package typings.jsreportHtmlToXlsx
 import typings.jsreportHtmlToXlsx.mod.jsreportCoreAugmentingMod.htmlEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsreportHtmlToXlsxStrings {
   
   @js.native
-  sealed trait chrome extends htmlEngine
+  sealed trait chrome
+    extends StObject
+       with htmlEngine
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
   
@@ -19,7 +20,9 @@ object jsreportHtmlToXlsxStrings {
   def `html-to-xlsx`: `html-to-xlsx` = "html-to-xlsx".asInstanceOf[`html-to-xlsx`]
   
   @js.native
-  sealed trait phantom extends htmlEngine
+  sealed trait phantom
+    extends StObject
+       with htmlEngine
   @scala.inline
   def phantom: phantom = "phantom".asInstanceOf[phantom]
 }

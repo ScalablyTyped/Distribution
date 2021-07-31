@@ -3,18 +3,16 @@ package typings.pulumiKubernetes.inputMod.apiextensions.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExternalDocumentation allows referencing an external resource for extended documentation.
   */
-@js.native
 trait ExternalDocumentation extends StObject {
   
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
-  var url: js.UndefOr[Input[String]] = js.native
+  var url: js.UndefOr[Input[String]] = js.undefined
 }
 object ExternalDocumentation {
   

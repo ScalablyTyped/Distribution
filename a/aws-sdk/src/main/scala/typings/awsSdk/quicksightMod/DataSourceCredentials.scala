@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceCredentials extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a data source that has the credential pair that you want to use. When CopySourceArn is not null, the credential pair from the data source in the ARN is used as the credentials for the DataSourceCredentials structure.
     */
-  var CopySourceArn: js.UndefOr[typings.awsSdk.quicksightMod.CopySourceArn] = js.native
+  var CopySourceArn: js.UndefOr[typings.awsSdk.quicksightMod.CopySourceArn] = js.undefined
   
   /**
     * Credential pair. For more information, see CredentialPair.
     */
-  var CredentialPair: js.UndefOr[typings.awsSdk.quicksightMod.CredentialPair] = js.native
+  var CredentialPair: js.UndefOr[typings.awsSdk.quicksightMod.CredentialPair] = js.undefined
 }
 object DataSourceCredentials {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionVersion extends StObject {
   
   /**
     * True if the version is the default version of the option, and otherwise false.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.native
+  var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The version of the option.
     */
-  var Version: js.UndefOr[String] = js.native
+  var Version: js.UndefOr[String] = js.undefined
 }
 object OptionVersion {
   

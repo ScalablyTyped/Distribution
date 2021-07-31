@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFederationTokenResponse extends StObject {
   
   /**
     * The credentials to use for federation.
     */
-  var Credentials: js.UndefOr[typings.awsSdk.connectMod.Credentials] = js.native
+  var Credentials: js.UndefOr[typings.awsSdk.connectMod.Credentials] = js.undefined
 }
 object GetFederationTokenResponse {
   

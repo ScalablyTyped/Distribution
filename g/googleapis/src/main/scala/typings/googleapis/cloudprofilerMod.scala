@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudprofilerMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudprofiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object cloudprofilerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudprofiler", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudprofiler", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object cloudprofilerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudprofiler", "cloudprofiler")
-  @js.native
-  def cloudprofiler(options: Options): Cloudprofiler = js.native
-  @JSImport("googleapis/build/src/apis/cloudprofiler", "cloudprofiler")
-  @js.native
-  def cloudprofiler_v2(version: v2): Cloudprofiler = js.native
+  @scala.inline
+  def cloudprofiler(options: Options): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
+  
+  @scala.inline
+  def cloudprofiler_v2(version: v2): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
 }

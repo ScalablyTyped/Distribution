@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Authorizedcertificates")
@@ -31,7 +30,7 @@ class ResourceAppsAuthorizedcertificates protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def create(callback: BodyResponseCallback[SchemaAuthorizedCertificate]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def create(params: ParamsResourceAppsAuthorizedcertificatesCreate): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def create(
     params: ParamsResourceAppsAuthorizedcertificatesCreate,
@@ -64,7 +63,7 @@ class ResourceAppsAuthorizedcertificates protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAppsAuthorizedcertificatesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceAppsAuthorizedcertificatesDelete,
@@ -98,7 +97,7 @@ class ResourceAppsAuthorizedcertificates protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def get(callback: BodyResponseCallback[SchemaAuthorizedCertificate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def get(params: ParamsResourceAppsAuthorizedcertificatesGet): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def get(
     params: ParamsResourceAppsAuthorizedcertificatesGet,
@@ -133,7 +132,7 @@ class ResourceAppsAuthorizedcertificates protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAuthorizedCertificatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAuthorizedCertificatesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAuthorizedCertificatesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAuthorizedCertificatesResponse] = js.native
   def list(params: ParamsResourceAppsAuthorizedcertificatesList): GaxiosPromise[SchemaListAuthorizedCertificatesResponse] = js.native
   def list(
     params: ParamsResourceAppsAuthorizedcertificatesList,
@@ -172,7 +171,7 @@ class ResourceAppsAuthorizedcertificates protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def patch(callback: BodyResponseCallback[SchemaAuthorizedCertificate]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def patch(params: ParamsResourceAppsAuthorizedcertificatesPatch): GaxiosPromise[SchemaAuthorizedCertificate] = js.native
   def patch(
     params: ParamsResourceAppsAuthorizedcertificatesPatch,

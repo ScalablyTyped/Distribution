@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,18 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [callbacks.remove] - The function called when the asset is remove from the registry remove(propertyName, parent, asset).
   * @param [scope] - The scope to call the callbacks in
   */
-@js.native
 trait AssetReference extends StObject {
   
   /**
     * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
     */
-  var url: String = js.native
+  var url: String
 }
 object AssetReference {
   

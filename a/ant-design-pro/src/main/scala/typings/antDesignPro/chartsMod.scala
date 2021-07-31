@@ -3,10 +3,13 @@ package typings.antDesignPro
 import typings.antDesignPro.barMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartsMod {
+  
+  @JSImport("ant-design-pro/lib/Charts", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -86,12 +89,10 @@ object chartsMod {
     @scala.inline
     def WaterWave_=(x: typings.antDesignPro.waterWaveMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WaterWave")(x.asInstanceOf[js.Any])
     
-    @JSImport("ant-design-pro/lib/Charts", "default.yuan")
-    @js.native
-    def yuan(value: String): String = js.native
-    @JSImport("ant-design-pro/lib/Charts", "default.yuan")
-    @js.native
-    def yuan(value: Double): String = js.native
+    @scala.inline
+    def yuan(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yuan")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def yuan(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yuan")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("ant-design-pro/lib/Charts", "Bar")
@@ -153,10 +154,8 @@ object chartsMod {
   class WaterWave ()
     extends typings.antDesignPro.waterWaveMod.default
   
-  @JSImport("ant-design-pro/lib/Charts", "yuan")
-  @js.native
-  def yuan(value: String): String = js.native
-  @JSImport("ant-design-pro/lib/Charts", "yuan")
-  @js.native
-  def yuan(value: Double): String = js.native
+  @scala.inline
+  def yuan(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yuan")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def yuan(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yuan")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,16 +2,14 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionUndeleteParameter extends StObject {
   
   /**
     * Gets or sets comment.
     */
-  var comment: String = js.native
+  var comment: String
 }
 object ReleaseDefinitionUndeleteParameter {
   

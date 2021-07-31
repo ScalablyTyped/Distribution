@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.timedmetadatatrackschanged
 import typings.winrtUwp.winrtUwpStrings.videotrackschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media item that can be played back. This class acts as a wrapper around a MediaSource that exposes the audio tracks, video tracks, and timed metadata tracks included in the media source. */
 @js.native
 trait MediaPlaybackItem extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_audiotrackschanged(
     `type`: audiotrackschanged,
@@ -38,24 +37,24 @@ trait MediaPlaybackItem extends StObject {
   var audioTracks: MediaPlaybackAudioTrackList = js.native
   
   /** Occurs when the list of audio tracks in the MediaSource associated with the MediaPlaybackItem changes. */
-  def onaudiotrackschanged(ev: IVectorChangedEventArgs with WinRTEvent[MediaPlaybackItem]): Unit = js.native
+  def onaudiotrackschanged(ev: IVectorChangedEventArgs & WinRTEvent[MediaPlaybackItem]): Unit = js.native
   /** Occurs when the list of audio tracks in the MediaSource associated with the MediaPlaybackItem changes. */
   @JSName("onaudiotrackschanged")
   var onaudiotrackschanged_Original: TypedEventHandler[MediaPlaybackItem, IVectorChangedEventArgs] = js.native
   
   /** Occurs when the list of timed metadata tracks in the MediaSource associated with the MediaPlaybackItem changes. */
-  def ontimedmetadatatrackschanged(ev: IVectorChangedEventArgs with WinRTEvent[MediaPlaybackItem]): Unit = js.native
+  def ontimedmetadatatrackschanged(ev: IVectorChangedEventArgs & WinRTEvent[MediaPlaybackItem]): Unit = js.native
   /** Occurs when the list of timed metadata tracks in the MediaSource associated with the MediaPlaybackItem changes. */
   @JSName("ontimedmetadatatrackschanged")
   var ontimedmetadatatrackschanged_Original: TypedEventHandler[MediaPlaybackItem, IVectorChangedEventArgs] = js.native
   
   /** Occurs when the list of video tracks in the MediaSource associated with the MediaPlaybackItem changes. */
-  def onvideotrackschanged(ev: IVectorChangedEventArgs with WinRTEvent[MediaPlaybackItem]): Unit = js.native
+  def onvideotrackschanged(ev: IVectorChangedEventArgs & WinRTEvent[MediaPlaybackItem]): Unit = js.native
   /** Occurs when the list of video tracks in the MediaSource associated with the MediaPlaybackItem changes. */
   @JSName("onvideotrackschanged")
   var onvideotrackschanged_Original: TypedEventHandler[MediaPlaybackItem, IVectorChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_audiotrackschanged(
     `type`: audiotrackschanged,

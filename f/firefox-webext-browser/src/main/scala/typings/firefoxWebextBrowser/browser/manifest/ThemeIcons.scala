@@ -2,20 +2,18 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeIcons extends StObject {
   
   /** The dark icon to use for light themes */
-  var dark: ExtensionURL = js.native
+  var dark: ExtensionURL
   
   /** A light icon to use for dark themes */
-  var light: ExtensionURL = js.native
+  var light: ExtensionURL
   
   /** The size of the icons */
-  var size: Double = js.native
+  var size: Double
 }
 object ThemeIcons {
   

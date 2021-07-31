@@ -15,72 +15,78 @@ import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@storybook/addon-info", "setDefaults")
+  @JSImport("@storybook/addon-info", JSImport.Namespace)
   @js.native
-  def setDefaults(newDefaults: Options): Options = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-info", "withInfo")
-  @js.native
+  @scala.inline
+  def setDefaults(newDefaults: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(newDefaults.asInstanceOf[js.Any]).asInstanceOf[Options]
+  
+  @scala.inline
   def withInfo(): js.Function1[
-    /* storyFn */ StoryFn[_], 
+    /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
-  ] = js.native
-  @JSImport("@storybook/addon-info", "withInfo")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")().asInstanceOf[js.Function1[
+    /* storyFn */ StoryFn[js.Any], 
+    js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
+  ]]
+  @scala.inline
   def withInfo(textOrOptions: String): js.Function1[
-    /* storyFn */ StoryFn[_], 
+    /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
-  ] = js.native
-  @JSImport("@storybook/addon-info", "withInfo")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* storyFn */ StoryFn[js.Any], 
+    js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
+  ]]
+  @scala.inline
   def withInfo(textOrOptions: Options): js.Function1[
-    /* storyFn */ StoryFn[_], 
+    /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
-  ] = js.native
-  @JSImport("@storybook/addon-info", "withInfo")
-  @js.native
-  def withInfo[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* storyFn */ StoryFn[js.Any], 
+    js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
+  ]]
+  @scala.inline
+  def withInfo[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(story.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[DecoratorFunction[A]]]
   
-  @js.native
   trait Options extends StObject {
     
-    var TableComponent: js.UndefOr[ComponentType[TableComponentOptionProps]] = js.native
+    var TableComponent: js.UndefOr[ComponentType[TableComponentOptionProps]] = js.undefined
     
-    var components: js.UndefOr[StringDictionary[ComponentType[_]]] = js.native
+    var components: js.UndefOr[StringDictionary[ComponentType[js.Any]]] = js.undefined
     
-    var excludedPropTypes: js.UndefOr[js.Array[String]] = js.native
+    var excludedPropTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated "marksyConf" option has been renamed to "components"
       */
-    var marksyConf: js.UndefOr[js.Object] = js.native
+    var marksyConf: js.UndefOr[js.Object] = js.undefined
     
-    var maxPropArrayLength: js.UndefOr[Double] = js.native
+    var maxPropArrayLength: js.UndefOr[Double] = js.undefined
     
-    var maxPropObjectKeys: js.UndefOr[Double] = js.native
+    var maxPropObjectKeys: js.UndefOr[Double] = js.undefined
     
-    var maxPropStringLength: js.UndefOr[Double] = js.native
+    var maxPropStringLength: js.UndefOr[Double] = js.undefined
     
-    var maxPropsIntoLine: js.UndefOr[Double] = js.native
+    var maxPropsIntoLine: js.UndefOr[Double] = js.undefined
     
-    var propTables: js.UndefOr[js.Array[ComponentType[_]] | `false`] = js.native
+    var propTables: js.UndefOr[js.Array[ComponentType[js.Any]] | `false`] = js.undefined
     
-    var propTablesExclude: js.UndefOr[js.Array[ComponentType[_]]] = js.native
+    var propTablesExclude: js.UndefOr[js.Array[ComponentType[js.Any]]] = js.undefined
     
-    var source: js.UndefOr[Boolean] = js.native
+    var source: js.UndefOr[Boolean] = js.undefined
     
-    var styles: js.UndefOr[js.Object] = js.native
+    var styles: js.UndefOr[js.Object] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -94,7 +100,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponents(value: StringDictionary[ComponentType[_]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
@@ -151,10 +157,10 @@ object mod {
       def setMaxPropsIntoLineUndefined: Self = StObject.set(x, "maxPropsIntoLine", js.undefined)
       
       @scala.inline
-      def setPropTables(value: js.Array[ComponentType[_]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
+      def setPropTables(value: js.Array[ComponentType[js.Any]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPropTablesExclude(value: js.Array[ComponentType[_]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
+      def setPropTablesExclude(value: js.Array[ComponentType[js.Any]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropTablesExcludeUndefined: Self = StObject.set(x, "propTablesExclude", js.undefined)
@@ -194,10 +200,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TableComponentOptionProps extends StObject {
     
-    var propDefinitions: js.Array[DefaultValue] = js.native
+    var propDefinitions: js.Array[DefaultValue]
   }
   object TableComponentOptionProps {
     
@@ -218,14 +223,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WrapStoryProps extends StObject {
     
-    var context: js.UndefOr[js.Object] = js.native
+    var context: js.UndefOr[js.Object] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var storyFn: js.UndefOr[StoryFn[_]] = js.native
+    var storyFn: js.UndefOr[StoryFn[js.Any]] = js.undefined
   }
   object WrapStoryProps {
     
@@ -251,13 +255,13 @@ object mod {
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setStoryFn(value: StoryFn[_]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+      def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => _): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+      def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => _): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+      def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStoryFnUndefined: Self = StObject.set(x, "storyFn", js.undefined)
@@ -267,14 +271,13 @@ object mod {
   /* augmented module */
   object storybookAddonsAugmentingMod {
     
-    @js.native
     trait ClientStoryApi[StoryFnReturnType] extends StObject {
       
-      def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType] = js.native
+      def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType]
       
-      def addParameters(parameter: ParametersinfoOptions): StoryApi[StoryFnReturnType] = js.native
+      def addParameters(parameter: ParametersinfoOptions): StoryApi[StoryFnReturnType]
       
-      def storiesOf(kind: String, module: NodeModule): StoryApi[StoryFnReturnType] = js.native
+      def storiesOf(kind: String, module: NodeModule): StoryApi[StoryFnReturnType]
     }
     object ClientStoryApi {
       
@@ -289,7 +292,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[_], StoryFnReturnType] (val x: Self with ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
         
         @scala.inline
         def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))

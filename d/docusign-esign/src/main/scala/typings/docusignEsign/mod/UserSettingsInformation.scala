@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSettingsInformation extends StObject {
   
   /**
@@ -13,133 +11,133 @@ trait UserSettingsInformation extends StObject {
     */
   var accountManagementGranular: js.UndefOr[
     /* Describes which account management capabilities a user has. */ UserAccountManagementGranularInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var adminOnly: js.UndefOr[String] = js.native
+  var adminOnly: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var adminOnlyMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the API returns suggested tabs for documents for this user.
     */
-  var allowAutoTagging: js.UndefOr[String] = js.native
+  var allowAutoTagging: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, this user can participate in envelope transfers on the account.
     */
-  var allowEnvelopeTransferTo: js.UndefOr[String] = js.native
+  var allowEnvelopeTransferTo: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var allowEnvelopeTransferToMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, this user can create [electronic seal recipients][eseal].
     *
     * [eseal]: /esign/restapi//Envelopes/EnvelopeRecipients#seal-recipient
     */
-  var allowEsealRecipients: js.UndefOr[String] = js.native
+  var allowEsealRecipients: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `allowEsealRecipientsMetadata` property.
     */
   var allowEsealRecipientsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true** and this user is an administrator, they can view all of the envelopes generated from PowerForms. The default value is **false**.
     */
-  var allowPowerFormsAdminToAccessAllPowerFormEnvelope: js.UndefOr[String] = js.native
+  var allowPowerFormsAdminToAccessAllPowerFormEnvelope: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `allowPowerFormsAdminToAccessAllPowerFormEnvelopeMetadata` property.
     */
   var allowPowerFormsAdminToAccessAllPowerFormEnvelopeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, this user can set the language used in the standard email format for a recipient when creating an envelope.
     */
-  var allowRecipientLanguageSelection: js.UndefOr[String] = js.native
+  var allowRecipientLanguageSelection: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata for allowRecipientLanguageSelection.
     */
   var allowRecipientLanguageSelectionMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, this user can send envelopes "on behalf of" other users through the API.
     */
-  var allowSendOnBehalfOf: js.UndefOr[String] = js.native
+  var allowSendOnBehalfOf: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata for allowSendOnBehalfOf.
     */
   var allowSendOnBehalfOfMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can include supplemental documents.
     */
-  var allowSupplementalDocuments: js.UndefOr[String] = js.native
+  var allowSupplementalDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowSupplementalDocuments` property is editable.
     */
   var allowSupplementalDocumentsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     *
     */
-  var anchorTagVersionedPlacementEnabled: js.UndefOr[String] = js.native
+  var anchorTagVersionedPlacementEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, indicates that this user can send envelope-specific API requests on the account.
     */
-  var apiAccountWideAccess: js.UndefOr[String] = js.native
+  var apiAccountWideAccess: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata for apiAccountWideAccess.
     */
   var apiAccountWideAccessMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can export authoritative copy for the account.
     */
-  var apiCanExportAC: js.UndefOr[String] = js.native
+  var apiCanExportAC: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `apiCanExportACMetadata` property.
     */
   var apiCanExportACMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can use the bulk send feature for the account.
     */
-  var bulkSend: js.UndefOr[String] = js.native
+  var bulkSend: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `bulkSend` property is editable.
@@ -147,144 +145,144 @@ trait UserSettingsInformation extends StObject {
     */
   var bulkSendMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var canChargeAccount: js.UndefOr[String] = js.native
+  var canChargeAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var canChargeAccountMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When true, this user can edit the shared address book for the account.
     */
-  var canEditSharedAddressbook: js.UndefOr[String] = js.native
+  var canEditSharedAddressbook: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canEditSharedAddressbookMetadata` property.
     */
   var canEditSharedAddressbookMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, this user can lock envelopes.
     */
-  var canLockEnvelopes: js.UndefOr[String] = js.native
+  var canLockEnvelopes: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canLockEnvelopes` property.
     */
   var canLockEnvelopesMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user is an administrator for the account.
     */
-  var canManageAccount: js.UndefOr[String] = js.native
+  var canManageAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canManageAccountMetadata` property.
     */
   var canManageAccountMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var canManageDistributor: js.UndefOr[String] = js.native
+  var canManageDistributor: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canManageDistributor` property.
     */
   var canManageDistributorMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can manage templates for the account.
     */
-  var canManageTemplates: js.UndefOr[String] = js.native
+  var canManageTemplates: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canManageTemplates` property.
     */
   var canManageTemplatesMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can send API requests on the account.
     */
-  var canSendAPIRequests: js.UndefOr[String] = js.native
+  var canSendAPIRequests: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canSendAPIRequests` property.
     */
   var canSendAPIRequestsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can send envelopes on the account.
     */
-  var canSendEnvelope: js.UndefOr[String] = js.native
+  var canSendEnvelope: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canSendEnvelope` property.
     */
   var canSendEnvelopeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can sign envelopes.
     */
-  var canSignEnvelope: js.UndefOr[String] = js.native
+  var canSignEnvelope: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canSignEnvelope` property.
     */
   var canSignEnvelopeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, this user can use a scratchpad to edit information.
     */
-  var canUseScratchpad: js.UndefOr[String] = js.native
+  var canUseScratchpad: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `canUseScratchpad` property.
     */
   var canUseScratchpadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var canUseSmartContracts: js.UndefOr[String] = js.native
+  var canUseSmartContracts: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var canUseSmartContractsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user is prohibited from uploading documents during sending.
     */
-  var disableDocumentUpload: js.UndefOr[String] = js.native
+  var disableDocumentUpload: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `disableDocumentUpload` property is editable.
@@ -292,12 +290,12 @@ trait UserSettingsInformation extends StObject {
     */
   var disableDocumentUploadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can access the **Other Actions** menu.
     */
-  var disableOtherActions: js.UndefOr[String] = js.native
+  var disableOtherActions: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `disableOtherActions` property is editable.
@@ -305,12 +303,12 @@ trait UserSettingsInformation extends StObject {
     */
   var disableOtherActionsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var enableDSPro: js.UndefOr[String] = js.native
+  var enableDSPro: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableDSPro` property is editable.
@@ -318,7 +316,7 @@ trait UserSettingsInformation extends StObject {
     */
   var enableDSProMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the account can define the routing
@@ -326,7 +324,7 @@ trait UserSettingsInformation extends StObject {
     *
     * **Note**: Only SysAdmin users can change this setting.
     */
-  var enableSequentialSigningAPI: js.UndefOr[String] = js.native
+  var enableSequentialSigningAPI: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableSequentialSigningAPI` property is editable.
@@ -334,7 +332,7 @@ trait UserSettingsInformation extends StObject {
     */
   var enableSequentialSigningAPIMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the account can define the routing order
@@ -343,7 +341,7 @@ trait UserSettingsInformation extends StObject {
     * **Note**: Only SysAdmin users can change this setting.
     *
     */
-  var enableSequentialSigningUI: js.UndefOr[String] = js.native
+  var enableSequentialSigningUI: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableSequentialSigningUI` property is editable.
@@ -351,7 +349,7 @@ trait UserSettingsInformation extends StObject {
     */
   var enableSequentialSigningUIMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, a user can override the default default account setting for the Sign on Paper option, which specifies whether signers can sign
@@ -359,7 +357,7 @@ trait UserSettingsInformation extends StObject {
     *
     * **Note**: Only Admin users can change this setting.
     */
-  var enableSignOnPaperOverride: js.UndefOr[String] = js.native
+  var enableSignOnPaperOverride: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableSignOnPaperOverride` property is editable.
@@ -367,12 +365,12 @@ trait UserSettingsInformation extends StObject {
     */
   var enableSignOnPaperOverrideMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user can use the signing attachments feature.
     */
-  var enableSignerAttachments: js.UndefOr[String] = js.native
+  var enableSignerAttachments: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableSignerAttachments` property is editable.
@@ -380,24 +378,24 @@ trait UserSettingsInformation extends StObject {
     */
   var enableSignerAttachmentsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var enableTransactionPoint: js.UndefOr[String] = js.native
+  var enableTransactionPoint: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var enableTransactionPointMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, Vaulting is enabled for the account.
     */
-  var enableVaulting: js.UndefOr[String] = js.native
+  var enableVaulting: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableVaulting` property is editable.
@@ -405,12 +403,12 @@ trait UserSettingsInformation extends StObject {
     */
   var enableVaultingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **false**, this user can apply tabs to documents during the sending experience.
     */
-  var expressSendOnly: js.UndefOr[String] = js.native
+  var expressSendOnly: js.UndefOr[String] = js.undefined
   
   /**
     * The user's locale code. Valid values are:
@@ -428,79 +426,79 @@ trait UserSettingsInformation extends StObject {
     * - `ru`
     * - `es`
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `locale` property.
     */
   var localeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var localePolicy: js.UndefOr[LocalePolicy] = js.native
+  var localePolicy: js.UndefOr[LocalePolicy] = js.undefined
   
   /**
     * When set to **true**, this user can create and manage [Clickwraps](https://developers.docusign.com/click-api).
     */
-  var manageClickwrapsMode: js.UndefOr[String] = js.native
+  var manageClickwrapsMode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `manageClickwrapsMode` property.
     */
   var manageClickwrapsModeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The user id (GUID) of the user who last modified this user record.
     */
-  var modifiedBy: js.UndefOr[String] = js.native
+  var modifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `modifiedBy` property.
     */
   var modifiedByMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The date on which this user record was last modified.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `modifiedDate` property.
     */
   var modifiedDateMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Note referencing the page that modified this user record.
     */
-  var modifiedPage: js.UndefOr[String] = js.native
+  var modifiedPage: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `modifiedPage` property.
     */
   var modifiedPageMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var newSendUI: js.UndefOr[String] = js.native
+  var newSendUI: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `newSendUI` property.
     */
   var newSendUIMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the Power Form mode setting for the user:
@@ -508,31 +506,31 @@ trait UserSettingsInformation extends StObject {
     * - `admin`
     * - `user`
     */
-  var powerFormMode: js.UndefOr[String] = js.native
+  var powerFormMode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `powerFormMode` property.
     */
   var powerFormModeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user receives notifications when envelopes are viewed.
     */
-  var recipientViewedNotification: js.UndefOr[String] = js.native
+  var recipientViewedNotification: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `recipientViewedNotification` property.
     */
   var recipientViewedNotificationMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the seals associated with this user.
     */
-  var sealIdentifiers: js.UndefOr[js.Array[SealIdentifier]] = js.native
+  var sealIdentifiers: js.UndefOr[js.Array[SealIdentifier]] = js.undefined
   
   /**
     * Sets how self-signed documents are presented to the email recipients.
@@ -545,7 +543,7 @@ trait UserSettingsInformation extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var selfSignedRecipientEmailDocument: js.UndefOr[String] = js.native
+  var selfSignedRecipientEmailDocument: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `selfSignedRecipientEmailDocument` property is editable.
@@ -553,7 +551,7 @@ trait UserSettingsInformation extends StObject {
     */
   var selfSignedRecipientEmailDocumentMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -572,7 +570,7 @@ trait UserSettingsInformation extends StObject {
     */
   var senderEmailNotifications: js.UndefOr[
     /* Contains the settings for the email notifications that senders receive about the envelopes that they send. */ SenderEmailNotifications
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of email notifications that specifies the email the user receives when they are a sender. When the specific email notification is set to true,
@@ -582,17 +580,17 @@ trait UserSettingsInformation extends StObject {
     /* An array of email notifications that specifies the email the user receives when they are a sender.
     When the specific email notification is set to true, the user receives those types of email notifications from DocuSign.
     The user inherits the default account sender email notification settings when the user is created. */ SignerEmailNotifications
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user gets supplemental documents when downloading documents.
     */
-  var supplementalDocumentIncludeInDownload: js.UndefOr[String] = js.native
+  var supplementalDocumentIncludeInDownload: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, this user must accept supplemental documents.
     */
-  var supplementalDocumentsMustAccept: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustAccept: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustAccept` property is editable.
@@ -600,12 +598,12 @@ trait UserSettingsInformation extends StObject {
     */
   var supplementalDocumentsMustAcceptMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user must both view and accept supplemental documents.
     */
-  var supplementalDocumentsMustRead: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustRead: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustRead` property is editable.
@@ -613,12 +611,12 @@ trait UserSettingsInformation extends StObject {
     */
   var supplementalDocumentsMustReadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, this user must view supplemental documents.
     */
-  var supplementalDocumentsMustView: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustView: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustView` property is editable.
@@ -626,92 +624,92 @@ trait UserSettingsInformation extends StObject {
     */
   var supplementalDocumentsMustViewMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, a new template is created each time the user sends an envelope.
     */
-  var templateActiveCreation: js.UndefOr[String] = js.native
+  var templateActiveCreation: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `templateActiveCreation` property.
     */
   var templateActiveCreationMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the system notifies this user before applying a matching template.
     */
-  var templateApplyNotify: js.UndefOr[String] = js.native
+  var templateApplyNotify: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `templateApplyNotify` property.
     */
   var templateApplyNotifyMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the system automatically applies a matching template to a document if only one template matches.
     * If there are multiple matches, it displays a list of matches to select from.
     */
-  var templateAutoMatching: js.UndefOr[String] = js.native
+  var templateAutoMatching: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `templateAutoMatching` property.
     */
   var templateAutoMatchingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Percentage used when matching templates.
     */
-  var templateMatchingSensitivity: js.UndefOr[String] = js.native
+  var templateMatchingSensitivity: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `tempalteMatchingSensitivity` property.
     */
   var templateMatchingSensitivityMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users see template matching functionality.
     */
-  var templatePageLevelMatching: js.UndefOr[String] = js.native
+  var templatePageLevelMatching: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `templatePageLevelMatching` property.
     */
   var templatePageLevelMatchingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When true, daylight savings time is in effect for this user's time zone.
     */
-  var timezoneDST: js.UndefOr[String] = js.native
+  var timezoneDST: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `timezoneDST` property.
     */
   var timezoneDSTMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The custom DateTime format setting for this user.
     */
-  var timezoneMask: js.UndefOr[String] = js.native
+  var timezoneMask: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `timezoneMask` property.
     */
   var timezoneMaskMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The timezone offset for the user. Valid values:
@@ -812,62 +810,62 @@ trait UserSettingsInformation extends StObject {
     * - `tz_95_west_pacific`
     * - `tz_96_yakutsk`
     */
-  var timezoneOffset: js.UndefOr[String] = js.native
+  var timezoneOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `timezoneOffset` property.
     */
   var timezoneOffsetMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var timezoneSendingPref: js.UndefOr[String] = js.native
+  var timezoneSendingPref: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var timezoneSendingPrefMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var timezoneSigningPref: js.UndefOr[String] = js.native
+  var timezoneSigningPref: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var timezoneSigningPrefMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var transactionPointSiteNameURL: js.UndefOr[String] = js.native
+  var transactionPointSiteNameURL: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var transactionPointSiteNameURLMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var transactionPointUserName: js.UndefOr[String] = js.native
+  var transactionPointUserName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var transactionPointUserNameMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the specified Vaulting mode:
@@ -875,14 +873,14 @@ trait UserSettingsInformation extends StObject {
     * - `estored`
     * - `electronic_original`
     */
-  var vaultingMode: js.UndefOr[String] = js.native
+  var vaultingMode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the `vaultingMode` property.
     */
   var vaultingModeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object UserSettingsInformation {
   

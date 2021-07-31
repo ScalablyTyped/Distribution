@@ -2,31 +2,29 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Color information consists of RGB channels, score, and the fraction of the
   * image that the color occupies in the image.
   */
-@js.native
 trait SchemaColorInfo extends StObject {
   
   /**
     * RGB components of the color.
     */
-  var color: js.UndefOr[SchemaColor] = js.native
+  var color: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The fraction of pixels the color occupies in the image. Value in range
     * [0, 1].
     */
-  var pixelFraction: js.UndefOr[Double] = js.native
+  var pixelFraction: js.UndefOr[Double] = js.undefined
   
   /**
     * Image-specific score for this color. Value in range [0, 1].
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object SchemaColorInfo {
   

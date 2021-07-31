@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLoggingOptionUpdate extends StObject {
   
   /**
     * The ID of the CloudWatch logging option to update
     */
-  var CloudWatchLoggingOptionId: Id = js.native
+  var CloudWatchLoggingOptionId: Id
   
   /**
     * The Amazon Resource Name (ARN) of the CloudWatch log to receive application messages.
     */
-  var LogStreamARNUpdate: js.UndefOr[LogStreamARN] = js.native
+  var LogStreamARNUpdate: js.UndefOr[LogStreamARN] = js.undefined
 }
 object CloudWatchLoggingOptionUpdate {
   

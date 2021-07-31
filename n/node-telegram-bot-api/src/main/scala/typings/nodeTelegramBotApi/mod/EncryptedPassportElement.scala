@@ -2,31 +2,29 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedPassportElement extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var files: js.UndefOr[js.Array[PassportFile]] = js.native
+  var files: js.UndefOr[js.Array[PassportFile]] = js.undefined
   
-  var front_side: js.UndefOr[PassportFile] = js.native
+  var front_side: js.UndefOr[PassportFile] = js.undefined
   
-  var hash: String = js.native
+  var hash: String
   
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
-  var reverse_side: js.UndefOr[PassportFile] = js.native
+  var reverse_side: js.UndefOr[PassportFile] = js.undefined
   
-  var selfie: js.UndefOr[PassportFile] = js.native
+  var selfie: js.UndefOr[PassportFile] = js.undefined
   
-  var translation: js.UndefOr[js.Array[PassportFile]] = js.native
+  var translation: js.UndefOr[js.Array[PassportFile]] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object EncryptedPassportElement {
   

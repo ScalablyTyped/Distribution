@@ -4,7 +4,6 @@ import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}a
   */
 @js.native
-trait Page extends FormContext {
+trait Page
+  extends StObject
+     with FormContext {
   
   /**
     * Provides methods to retrieve information specific to an organization, a user, or parameters passed to a page.

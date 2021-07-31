@@ -2,19 +2,19 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistanceConstraintOptions extends ConstraintOptions {
+trait DistanceConstraintOptions
+  extends StObject
+     with ConstraintOptions {
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
 }
 object DistanceConstraintOptions {
   

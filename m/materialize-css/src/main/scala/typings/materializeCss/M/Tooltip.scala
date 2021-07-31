@@ -2,33 +2,31 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TooltipOptions> * / any
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ @js.native
-trait Tooltip extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait Tooltip extends StObject {
   
   /**
     * Hide tooltip.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * If tooltip is hovered.
     */
-  var isHovered: Boolean = js.native
+  var isHovered: Boolean
   
   /**
     * If tooltip is open.
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
   /**
     * Show tooltip.
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
 object Tooltip {
   

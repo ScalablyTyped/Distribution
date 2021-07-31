@@ -20,10 +20,13 @@ import typings.reactNavigationStack.vendorTypesMod.TransitionPreset
 import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vendorMod {
+  
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "Assets")
   @js.native
@@ -35,33 +38,30 @@ object vendorMod {
   
   object CardStyleInterpolators {
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forFadeFromBottomAndroid")
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators")
     @js.native
-    def forFadeFromBottomAndroid(hasCurrentInvertedLayoutsClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forHorizontalIOS")
-    @js.native
-    def forHorizontalIOS(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forFadeFromBottomAndroid(hasCurrentInvertedHasScreenClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(hasCurrentInvertedHasScreenClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forModalPresentationIOS")
-    @js.native
-    def forModalPresentationIOS(hasIndexCurrentNextInvertedLayoutsInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forHorizontalIOS(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forNoAnimation")
-    @js.native
-    def forNoAnimation(): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forModalPresentationIOS(hasIndexCurrentNextInvertedHasScreenInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(hasIndexCurrentNextInvertedHasScreenInsets.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forRevealFromBottomAndroid")
-    @js.native
-    def forRevealFromBottomAndroid(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forNoAnimation(): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forScaleFromCenterAndroid")
-    @js.native
-    def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forRevealFromBottomAndroid(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardStyleInterpolators.forVerticalIOS")
-    @js.native
-    def forVerticalIOS(hasCurrentInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(hasCurrentNextClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    @scala.inline
+    def forVerticalIOS(hasCurrentInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(hasCurrentInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   }
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "GestureHandlerRefContext")
@@ -72,15 +72,13 @@ object vendorMod {
   @js.native
   val Header: NamedExoticComponent[StackHeaderProps] = js.native
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderBackButton")
-  @js.native
+  @scala.inline
   def HeaderBackButton(
-    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressPressColorAndroidScreenLayoutTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
-  ): Element = js.native
+    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderBackground")
-  @js.native
-  def HeaderBackground(hasStyleRest: typings.reactNavigationStack.headerBackgroundMod.Props): Element = js.native
+  @scala.inline
+  def HeaderBackground(hasStyleRest: typings.reactNavigationStack.headerBackgroundMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderHeightContext")
   @js.native
@@ -88,34 +86,31 @@ object vendorMod {
   
   object HeaderStyleInterpolators {
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forFade")
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators")
     @js.native
-    def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forNoAnimation")
-    @js.native
-    def forNoAnimation(): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(hasCurrentNext.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forSlideLeft")
-    @js.native
-    def forSlideLeft(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forNoAnimation(): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forSlideRight")
-    @js.native
-    def forSlideRight(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideLeft(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forSlideUp")
-    @js.native
-    def forSlideUp(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideRight(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderStyleInterpolators.forUIKit")
-    @js.native
-    def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideUp(hasCurrentNextHasHeader: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(hasCurrentNextHasHeader.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    @scala.inline
+    def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "HeaderTitle")
-  @js.native
-  def HeaderTitle(hasTintColorStyleRest: typings.reactNavigationStack.headerTitleMod.Props): Element = js.native
+  @scala.inline
+  def HeaderTitle(hasTintColorStyleRest: typings.reactNavigationStack.headerTitleMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "StackView")
   @js.native
@@ -123,9 +118,12 @@ object vendorMod {
   /* static members */
   object StackView {
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "StackView.getDerivedStateFromProps")
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor", "StackView")
     @js.native
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | Descriptors = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | Descriptors = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | Descriptors]
   }
   
   object TransitionPresets {
@@ -186,15 +184,12 @@ object vendorMod {
     val TransitionIOSSpec: TransitionSpec = js.native
   }
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "useCardAnimation")
-  @js.native
-  def useCardAnimation(): StackCardInterpolationProps = js.native
+  @scala.inline
+  def useCardAnimation(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCardAnimation")().asInstanceOf[StackCardInterpolationProps]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "useGestureHandlerRef")
-  @js.native
-  def useGestureHandlerRef(): Ref[PanGestureHandler] = js.native
+  @scala.inline
+  def useGestureHandlerRef(): Ref[PanGestureHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGestureHandlerRef")().asInstanceOf[Ref[PanGestureHandler]]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor", "useHeaderHeight")
-  @js.native
-  def useHeaderHeight(): Double = js.native
+  @scala.inline
+  def useHeaderHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeaderHeight")().asInstanceOf[Double]
 }

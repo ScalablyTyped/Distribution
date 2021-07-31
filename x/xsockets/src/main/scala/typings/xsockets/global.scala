@@ -2,7 +2,6 @@ package typings.xsockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -107,11 +106,12 @@ object global {
     @JSGlobal("XSockets.WebSocket")
     @js.native
     class WebSocket protected ()
-      extends typings.xsockets.XSockets.WebSocket {
+      extends StObject
+         with typings.xsockets.XSockets.WebSocket {
       def this(url: String) = this()
       def this(url: String, subprotocol: String) = this()
-      def this(url: String, subprotocol: js.UndefOr[scala.Nothing], settings: js.Any) = this()
       def this(url: String, subprotocol: String, settings: js.Any) = this()
+      def this(url: String, subprotocol: Unit, settings: js.Any) = this()
     }
   }
 }

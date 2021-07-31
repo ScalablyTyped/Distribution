@@ -2,15 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link extends StObject {
   
-  var link: js.UndefOr[js.Object] = js.native
+  var link: js.UndefOr[js.Object] = js.undefined
   
-  var nodes: js.Array[js.Object] = js.native
+  var nodes: js.Array[js.Object]
 }
 object Link {
   

@@ -9,75 +9,73 @@ import typings.mfiles.MFiles.MFPropertyDefAccess
 import typings.mfiles.MFiles.MFVaultAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISessionInfo extends StObject {
   
-  val ACLMode: MFACLMode = js.native
+  val ACLMode: MFACLMode
   
-  val AccountName: String = js.native
+  val AccountName: String
   
-  val AuthenticationType: MFAuthType = js.native
+  val AuthenticationType: MFAuthType
   
-  val CanCreateObjects: Boolean = js.native
+  val CanCreateObjects: Boolean
   
-  val CanForceUndoCheckout: Boolean = js.native
+  val CanForceUndoCheckout: Boolean
   
-  val CanManageCommonUISettings: Boolean = js.native
+  val CanManageCommonUISettings: Boolean
   
-  val CanManageCommonViews: Boolean = js.native
+  val CanManageCommonViews: Boolean
   
-  val CanManageTraditionalFolders: Boolean = js.native
+  val CanManageTraditionalFolders: Boolean
   
-  val CanMaterializeViews: Boolean = js.native
+  val CanMaterializeViews: Boolean
   
-  val CanSeeAllObjects: Boolean = js.native
+  val CanSeeAllObjects: Boolean
   
-  val CanSeeDeletedObjects: Boolean = js.native
+  val CanSeeDeletedObjects: Boolean
   
-  def CheckObjectAccess(ObjectAccessControlList: IAccessControlList, DesiredObjectAccess: MFObjectAccess): Boolean = js.native
+  def CheckObjectAccess(ObjectAccessControlList: IAccessControlList, DesiredObjectAccess: MFObjectAccess): Boolean
   
-  def CheckObjectTypeAccess(ObjectTypeAccessControlList: IAccessControlList, DesiredObjectTypeAccess: MFObjectTypeAccess): Boolean = js.native
+  def CheckObjectTypeAccess(ObjectTypeAccessControlList: IAccessControlList, DesiredObjectTypeAccess: MFObjectTypeAccess): Boolean
   
-  def CheckPropertyDefAccess(PropertyDefAccessControlList: IAccessControlList, DesiredPropertyDefAccess: MFPropertyDefAccess): Boolean = js.native
+  def CheckPropertyDefAccess(PropertyDefAccessControlList: IAccessControlList, DesiredPropertyDefAccess: MFPropertyDefAccess): Boolean
   
-  def CheckVaultAccess(DesiredVaultAccess: MFVaultAccess): Boolean = js.native
+  def CheckVaultAccess(DesiredVaultAccess: MFVaultAccess): Boolean
   
-  val ClientCulture: String = js.native
+  val ClientCulture: String
   
-  def CloneFrom(SessionInfo: ISessionInfo): Unit = js.native
+  def CloneFrom(SessionInfo: ISessionInfo): Unit
   
-  val InternalUser: Boolean = js.native
+  val InternalUser: Boolean
   
-  def IsLoggedOnUserSubstituteOfUser(UserID: Double): Boolean = js.native
+  def IsLoggedOnUserSubstituteOfUser(UserID: Double): Boolean
   
-  val IsSharingPublicLinksAllowed: Boolean = js.native
+  val IsSharingPublicLinksAllowed: Boolean
   
-  val IsSharingPublicLinksToLatestVersionAllowed: Boolean = js.native
+  val IsSharingPublicLinksToLatestVersionAllowed: Boolean
   
-  val KeepAliveIntervalInSeconds: Double = js.native
+  val KeepAliveIntervalInSeconds: Double
   
-  val Language: Double = js.native
+  val Language: Double
   
-  val LicenseAllowsModifications: Boolean = js.native
+  val LicenseAllowsModifications: Boolean
   
-  val LocalComputerName: String = js.native
+  val LocalComputerName: String
   
-  val ProductMode: MFProductMode = js.native
+  val ProductMode: MFProductMode
   
-  val ServerVersion: Double = js.native
+  val ServerVersion: Double
   
-  val TimeZoneInfo: ITimeZoneInformation = js.native
+  val TimeZoneInfo: ITimeZoneInformation
   
-  val UserAndGroupMemberships: IUserOrUserGroupIDs = js.native
+  val UserAndGroupMemberships: IUserOrUserGroupIDs
   
-  val UserAndSubstitutedByMe: IUserOrUserGroupIDs = js.native
+  val UserAndSubstitutedByMe: IUserOrUserGroupIDs
   
-  val UserID: Double = js.native
+  val UserID: Double
   
-  val VaultGUID: String = js.native
+  val VaultGUID: String
 }
 object ISessionInfo {
   

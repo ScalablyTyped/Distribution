@@ -7,7 +7,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Sessions */
@@ -22,8 +21,8 @@ class Sessions protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls DetectIntent.
@@ -53,6 +52,10 @@ class Sessions protected () extends Service {
 }
 object Sessions {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Sessions service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -61,18 +64,14 @@ object Sessions {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Sessions = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Sessions = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Sessions = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Sessions = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Sessions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Sessions]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Sessions#detectIntent}.

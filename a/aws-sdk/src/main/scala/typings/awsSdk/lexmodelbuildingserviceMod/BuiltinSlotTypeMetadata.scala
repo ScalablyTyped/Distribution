@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuiltinSlotTypeMetadata extends StObject {
   
   /**
     * A unique identifier for the built-in slot type. To find the signature for a slot type, see Slot Type Reference in the Alexa Skills Kit.
     */
-  var signature: js.UndefOr[BuiltinSlotTypeSignature] = js.native
+  var signature: js.UndefOr[BuiltinSlotTypeSignature] = js.undefined
   
   /**
     * A list of target locales for the slot. 
     */
-  var supportedLocales: js.UndefOr[LocaleList] = js.native
+  var supportedLocales: js.UndefOr[LocaleList] = js.undefined
 }
 object BuiltinSlotTypeMetadata {
   

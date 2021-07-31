@@ -3,22 +3,21 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ImportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDeclaration_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with ModuleDeclaration
      with Statement {
   
-  var source: StringLiteral_ = js.native
+  var source: StringLiteral_
   
-  var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_] = js.native
+  var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   
   @JSName("type")
-  var type_ImportDeclaration_ : ImportDeclaration = js.native
+  var type_ImportDeclaration_ : ImportDeclaration
 }
 object ImportDeclaration_ {
   
@@ -28,11 +27,10 @@ object ImportDeclaration_ {
     loc: SourceLocation,
     source: StringLiteral_,
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_],
-    start: Double,
-    `type`: ImportDeclaration
+    start: Double
   ): ImportDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[ImportDeclaration_]
   }
   

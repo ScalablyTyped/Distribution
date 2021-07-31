@@ -11,8 +11,8 @@ Generates cryptographically strong pseudo-random UIDs with custom size and base-
 | Full name          | uid-generator |
 | Keywords           | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 158630 |
+| # dependents       | 22 |
+| # downloads        | 185825 |
 | # stars            | 3 |
 
 ## Links

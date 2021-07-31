@@ -6,7 +6,6 @@ import typings.twineSugarcube.userdataMod.SugarCubeStoryVariables
 import typings.twineSugarcube.userdataMod.SugarCubeTemporaryVariables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMod {
@@ -91,9 +90,9 @@ object stateMod {
       * State.initPRNG("aVeryLongSeed", true) // Seed the PRNG with "aVeryLongSeed" and pad it with extra entropy
       */
     def initPRNG(): Unit = js.native
-    def initPRNG(seed: js.UndefOr[scala.Nothing], useEntropy: Boolean): Unit = js.native
     def initPRNG(seed: String): Unit = js.native
     def initPRNG(seed: String, useEntropy: Boolean): Unit = js.native
+    def initPRNG(seed: Unit, useEntropy: Boolean): Unit = js.native
     
     /**
       * Returns whether the full in-play history (past + future) is empty.
@@ -177,12 +176,11 @@ object stateMod {
     val variables: SugarCubeStoryVariables = js.native
   }
   
-  @js.native
   trait StoryMoment extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var variables: SugarCubeStoryVariables = js.native
+    var variables: SugarCubeStoryVariables
   }
   object StoryMoment {
     

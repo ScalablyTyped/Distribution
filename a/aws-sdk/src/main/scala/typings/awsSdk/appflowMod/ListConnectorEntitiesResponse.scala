@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConnectorEntitiesResponse extends StObject {
   
   /**
     *  The response of ListConnectorEntities lists entities grouped by category. This map's key represents the group name, and its value contains the list of entities belonging to that group. 
     */
-  var connectorEntityMap: ConnectorEntityMap = js.native
+  var connectorEntityMap: ConnectorEntityMap
 }
 object ListConnectorEntitiesResponse {
   

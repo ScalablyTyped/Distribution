@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientUploadControlUploadingProgressChangedEventArgs")
 @js.native
 class ASPxClientUploadControlUploadingProgressChangedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientUploadControlUploadingProgressChangedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientUploadControlUploadingProgressChangedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientUploadControlUploadingProgressChangedEventArgs class.
     * @param fileCount Gets the number of the files selected for upload.
@@ -33,4 +33,52 @@ class ASPxClientUploadControlUploadingProgressChangedEventArgs protected ()
     uploadedContentLength: Double,
     progress: Double
   ) = this()
+  
+  /**
+    * Gets the content length of the currently uploaded file.
+    */
+  /* CompleteClass */
+  var currentFileContentLength: Double = js.native
+  
+  /**
+    * Gets the name of the file being currently uploaded.
+    */
+  /* CompleteClass */
+  var currentFileName: String = js.native
+  
+  /**
+    * Gets the position of the current file upload progress.
+    */
+  /* CompleteClass */
+  var currentFileProgress: Double = js.native
+  
+  /**
+    * Gets the content length of the current file already uploaded to the server.
+    */
+  /* CompleteClass */
+  var currentFileUploadedContentLength: Double = js.native
+  
+  /**
+    * Gets the number of the files selected for upload.
+    */
+  /* CompleteClass */
+  var fileCount: Double = js.native
+  
+  /**
+    * Gets the current position of total upload progress.
+    */
+  /* CompleteClass */
+  var progress: Double = js.native
+  
+  /**
+    * Gets the content length of the files selected for upload.
+    */
+  /* CompleteClass */
+  var totalContentLength: Double = js.native
+  
+  /**
+    * Gets the content length of the files already uploaded to the server.
+    */
+  /* CompleteClass */
+  var uploadedContentLength: Double = js.native
 }

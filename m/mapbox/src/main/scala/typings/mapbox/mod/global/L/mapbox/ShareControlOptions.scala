@@ -2,13 +2,13 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareControlOptions extends ControlOptions {
+trait ShareControlOptions
+  extends StObject
+     with ControlOptions {
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ShareControlOptions {
   

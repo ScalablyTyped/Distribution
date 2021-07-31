@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateQueueRequest extends StObject {
   
   /**
     * Optional. A description of the queue that you are creating.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the queue that you are creating.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment. When you use the API to create a queue, the default is on-demand.
     */
-  var PricingPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.PricingPlan] = js.native
+  var PricingPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.PricingPlan] = js.undefined
   
   /**
     * Details about the pricing plan for your reserved queue. Required for reserved queues and not applicable to on-demand queues.
     */
-  var ReservationPlanSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ReservationPlanSettings] = js.native
+  var ReservationPlanSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ReservationPlanSettings] = js.undefined
   
   /**
     * Initial state of the queue. If you create a paused queue, then jobs in that queue won't begin.
     */
-  var Status: js.UndefOr[QueueStatus] = js.native
+  var Status: js.UndefOr[QueueStatus] = js.undefined
   
   /**
     * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
 }
 object CreateQueueRequest {
   

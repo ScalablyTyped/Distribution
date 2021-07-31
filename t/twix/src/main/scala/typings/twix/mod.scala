@@ -6,7 +6,6 @@ import typings.moment.mod.MomentInput
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,20 +13,22 @@ object mod {
   /* augmented module */
   object momentAugmentingMod {
     
-    @JSImport("moment", "twix")
+    @JSImport("moment", JSImport.Namespace)
     @js.native
-    def twix(start: Moment, end: Moment): Twix = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def twix(start: Moment, end: Moment): Twix = (^.asInstanceOf[js.Dynamic].applyDynamic("twix")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Twix]
     
     @JSImport("moment", "twixClass")
     @js.native
     val twixClass: TwixStatic = js.native
     
-    @js.native
     trait Duration extends StObject {
       
-      def afterMoment(date: String): String = js.native
+      def afterMoment(date: String): String
       
-      def beforeMoment(date: String): String = js.native
+      def beforeMoment(date: String): String
     }
     object Duration {
       
@@ -142,49 +143,48 @@ object mod {
     def xor(other: Twix): js.Array[Twix] = js.native
   }
   
-  @js.native
   trait TwixFormatOptions extends StObject {
     
-    var allDay: js.UndefOr[js.Any] = js.native
+    var allDay: js.UndefOr[js.Any] = js.undefined
     
-    var dayFormat: js.UndefOr[String] = js.native
+    var dayFormat: js.UndefOr[String] = js.undefined
     
     // boolean | string
-    var explicitAllDay: js.UndefOr[Boolean] = js.native
+    var explicitAllDay: js.UndefOr[Boolean] = js.undefined
     
-    var groupMeridiems: js.UndefOr[Boolean] = js.native
+    var groupMeridiems: js.UndefOr[Boolean] = js.undefined
     
-    var hideDate: js.UndefOr[Boolean] = js.native
+    var hideDate: js.UndefOr[Boolean] = js.undefined
     
-    var hideTime: js.UndefOr[Boolean] = js.native
+    var hideTime: js.UndefOr[Boolean] = js.undefined
     
-    var hideYear: js.UndefOr[Boolean] = js.native
+    var hideYear: js.UndefOr[Boolean] = js.undefined
     
-    var hourFormat: js.UndefOr[String] = js.native
+    var hourFormat: js.UndefOr[String] = js.undefined
     
-    var implicitMinutes: js.UndefOr[Boolean] = js.native
+    var implicitMinutes: js.UndefOr[Boolean] = js.undefined
     
-    var implicitYear: js.UndefOr[Boolean] = js.native
+    var implicitYear: js.UndefOr[Boolean] = js.undefined
     
-    var lastNightEndsAt: js.UndefOr[Double] = js.native
+    var lastNightEndsAt: js.UndefOr[Double] = js.undefined
     
-    var meridiemFormat: js.UndefOr[String] = js.native
+    var meridiemFormat: js.UndefOr[String] = js.undefined
     
-    var minuteFormat: js.UndefOr[String] = js.native
+    var minuteFormat: js.UndefOr[String] = js.undefined
     
-    var monthFormat: js.UndefOr[String] = js.native
+    var monthFormat: js.UndefOr[String] = js.undefined
     
-    var showDate: js.UndefOr[Boolean] = js.native
+    var showDate: js.UndefOr[Boolean] = js.undefined
     
-    var showDayOfWeek: js.UndefOr[Boolean] = js.native
+    var showDayOfWeek: js.UndefOr[Boolean] = js.undefined
     
-    var spaceBeforeMeridiem: js.UndefOr[Boolean] = js.native
+    var spaceBeforeMeridiem: js.UndefOr[Boolean] = js.undefined
     
-    var twentyFourHour: js.UndefOr[Boolean] = js.native
+    var twentyFourHour: js.UndefOr[Boolean] = js.undefined
     
-    var weekdayFormat: js.UndefOr[String] = js.native
+    var weekdayFormat: js.UndefOr[String] = js.undefined
     
-    var yearFormat: js.UndefOr[String] = js.native
+    var yearFormat: js.UndefOr[String] = js.undefined
   }
   object TwixFormatOptions {
     
@@ -319,12 +319,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TwixIter extends StObject {
     
-    def hasNext(): Boolean = js.native
+    def hasNext(): Boolean
     
-    def next(): Twix = js.native
+    def next(): Twix
   }
   object TwixIter {
     
@@ -345,10 +344,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait TwixParseAndFormatOptions extends TwixFormatOptions {
+  trait TwixParseAndFormatOptions
+    extends StObject
+       with TwixFormatOptions {
     
-    var parseStrict: js.UndefOr[Boolean] = js.native
+    var parseStrict: js.UndefOr[Boolean] = js.undefined
   }
   object TwixParseAndFormatOptions {
     
@@ -369,12 +369,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TwixSimpleFormatOptions extends StObject {
     
-    var allDay: js.UndefOr[String] = js.native
+    var allDay: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, _]] = js.native
+    var template: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]] = js.undefined
   }
   object TwixSimpleFormatOptions {
     
@@ -394,17 +393,16 @@ object mod {
       def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
       
       @scala.inline
-      def setTemplate(value: (/* left */ js.Any, /* right */ js.Any) => _): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+      def setTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
-  @js.native
   trait TwixStatic extends StObject {
     
-    var formatTemplate: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, _]] = js.native
+    var formatTemplate: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]] = js.undefined
   }
   object TwixStatic {
     
@@ -418,7 +416,7 @@ object mod {
     implicit class TwixStaticMutableBuilder[Self <: TwixStatic] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFormatTemplate(value: (/* left */ js.Any, /* right */ js.Any) => _): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
+      def setFormatTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFormatTemplateUndefined: Self = StObject.set(x, "formatTemplate", js.undefined)

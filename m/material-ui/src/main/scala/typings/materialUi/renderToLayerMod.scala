@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderToLayerMod {
@@ -18,16 +17,17 @@ object renderToLayerMod {
   trait RenderToLayer
     extends Component[RenderToLayerProps, js.Object, js.Any]
   
-  @js.native
-  trait RenderToLayerProps extends Props[RenderToLayer] {
+  trait RenderToLayerProps
+    extends StObject
+       with Props[RenderToLayer] {
     
-    var componentClickAway: js.UndefOr[js.Function] = js.native
+    var componentClickAway: js.UndefOr[js.Function] = js.undefined
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var render: js.Function = js.native
+    var render: js.Function
     
-    var useLayerForClickAway: js.UndefOr[Boolean] = js.native
+    var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
   }
   object RenderToLayerProps {
     

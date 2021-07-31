@@ -2,19 +2,17 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QMeasureCell extends StObject {
   
-  def getPercent(): Double = js.native
+  def getPercent(): Double
   
-  def getPercentOfMax(): Double = js.native
+  def getPercentOfMax(): Double
   
-  var qNum: js.UndefOr[Double] = js.native
+  var qNum: js.UndefOr[Double] = js.undefined
   
-  var qText: String = js.native
+  var qText: String
 }
 object QMeasureCell {
   

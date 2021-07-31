@@ -12,7 +12,7 @@ Check if a Buffer/Uint8Array is a GZIP file
 | Keywords           | archive, buffer, check, detect, gzip, type, uint8array |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 18002954 |
+| # downloads        | 21386033 |
 | # stars            | 0 |
 
 ## Links

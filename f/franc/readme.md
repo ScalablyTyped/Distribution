@@ -11,8 +11,8 @@ Detect the language of text
 | Full name          | franc |
 | Keywords           | natural, language, writing, system, detect, guess |
 | # releases         | 4 |
-| # dependents       | 43 |
-| # downloads        | 418867 |
+| # dependents       | 44 |
+| # downloads        | 472082 |
 | # stars            | 15 |
 
 ## Links

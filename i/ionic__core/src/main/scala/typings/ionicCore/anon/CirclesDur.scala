@@ -2,17 +2,15 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CirclesDur extends StObject {
   
-  var circles: Double = js.native
+  var circles: Double
   
-  var dur: Double = js.native
+  var dur: Double
   
-  def fn(_underscore: Double, index: Double): RStyle = js.native
+  def fn(_underscore: Double, index: Double): RStyle
 }
 object CirclesDur {
   

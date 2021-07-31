@@ -2,16 +2,14 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamKeyResponse extends StObject {
   
   /**
     * Stream key used to authenticate an RTMPS stream for ingestion.
     */
-  var streamKey: js.UndefOr[StreamKey] = js.native
+  var streamKey: js.UndefOr[StreamKey] = js.undefined
 }
 object CreateStreamKeyResponse {
   

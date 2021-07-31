@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcAttributeRequest extends StObject {
   
   /**
     * The VPC attribute.
     */
-  var Attribute: VpcAttributeName = js.native
+  var Attribute: VpcAttributeName
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
+  var VpcId: typings.awsSdk.ec2Mod.VpcId
 }
 object DescribeVpcAttributeRequest {
   

@@ -19,16 +19,14 @@ import typings.uifabricReactHooks.useTargetMod.Target
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teachingBubbleTypesMod {
   
-  @js.native
   trait ITeachingBubble extends StObject {
     
     /** Sets focus to the TeachingBubble root element */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ITeachingBubble {
     
@@ -46,115 +44,115 @@ object teachingBubbleTypesMod {
     }
   }
   
-  @js.native
   trait ITeachingBubbleProps
-    extends ClassAttributes[TeachingBubbleBase | TeachingBubbleContentBase]
+    extends StObject
+       with ClassAttributes[TeachingBubbleBase | TeachingBubbleContentBase]
        with IAccessiblePopupProps {
     
     /**
       * Defines the element id referencing the element containing the description for the TeachingBubble.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       *  Defines the element id referencing the element containing label text for TeachingBubble.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * Properties to pass through for Callout, reference detail properties in ICalloutProps
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Optional callback to access the ITeachingBubble interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.undefined
     
     /**
       * Properties to pass through for FocusTrapZone, reference detail properties in IFocusTrapZoneProps
       */
-    var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.native
+    var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
     
     /**
       * Text that will be rendered in the footer of the TeachingBubble.
       * May be rendered alongside primary and secondary buttons.
       */
-    var footerContent: js.UndefOr[String | Element] = js.native
+    var footerContent: js.UndefOr[String | Element] = js.undefined
     
     /**
       * Whether the TeachingBubble renders close button in the top right corner.
       */
-    var hasCloseButton: js.UndefOr[Boolean] = js.native
+    var hasCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated Use `hasCloseButton`.
       */
-    var hasCloseIcon: js.UndefOr[Boolean] = js.native
+    var hasCloseIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A variation with smaller bold headline and no margins.
       */
-    var hasCondensedHeadline: js.UndefOr[Boolean] = js.native
+    var hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A variation with smaller bold headline and margins to the body.
       * (`hasCondensedHeadline` takes precedence if it is also set to true.)
       */
-    var hasSmallHeadline: js.UndefOr[Boolean] = js.native
+    var hasSmallHeadline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A headline for the Teaching Bubble.
       */
-    var headline: js.UndefOr[String] = js.native
+    var headline: js.UndefOr[String] = js.undefined
     
     /**
       * An Image for the TeachingBubble.
       */
-    var illustrationImage: js.UndefOr[IImageProps] = js.native
+    var illustrationImage: js.UndefOr[IImageProps] = js.undefined
     
     /**
       * Whether or not the TeachingBubble is wide, with image on the left side.
       */
-    var isWide: js.UndefOr[Boolean] = js.native
+    var isWide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback when the TeachingBubble tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * The Primary interaction button
       */
-    var primaryButtonProps: js.UndefOr[IButtonProps] = js.native
+    var primaryButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * The Secondary interaction button
       */
-    var secondaryButtonProps: js.UndefOr[IButtonProps] = js.native
+    var secondaryButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles]] = js.undefined
     
     /**
       * Element, MouseEvent, Point, or querySelector string that the TeachingBubble
       * should anchor to.
       */
-    var target: js.UndefOr[Target] = js.native
+    var target: js.UndefOr[Target] = js.undefined
     
     /**
       * @deprecated use target instead
       * Element to anchor the TeachingBubble to.
       */
-    var targetElement: js.UndefOr[HTMLElement] = js.native
+    var targetElement: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ITeachingBubbleProps {
     
@@ -299,31 +297,30 @@ object teachingBubbleTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.types.ITeachingBubbleProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.types.ITeachingBubbleProps, 'hasCondensedHeadline' | 'hasSmallHeadline' | 'isWide'> & {  calloutProps :office-ui-fabric-react.office-ui-fabric-react/lib/Callout.ICalloutContentStyleProps | undefined,   primaryButtonClassName :string | undefined,   secondaryButtonClassName :string | undefined,   hasCloseButton :boolean | undefined,   hasHeadline :boolean | undefined} */
-  @js.native
   trait ITeachingBubbleStyleProps extends StObject {
     
     /** Style props for callout. */
-    var calloutProps: js.UndefOr[ICalloutContentStyleProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutContentStyleProps] = js.undefined
     
     /** If the close button is visible. */
-    var hasCloseButton: js.UndefOr[Boolean] = js.native
+    var hasCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var hasCondensedHeadline: js.UndefOr[Boolean] = js.native
+    var hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined
     
     /** If a headline has been specified. */
-    var hasHeadline: js.UndefOr[Boolean] = js.native
+    var hasHeadline: js.UndefOr[Boolean] = js.undefined
     
-    var hasSmallHeadline: js.UndefOr[Boolean] = js.native
+    var hasSmallHeadline: js.UndefOr[Boolean] = js.undefined
     
-    var isWide: js.UndefOr[Boolean] = js.native
+    var isWide: js.UndefOr[Boolean] = js.undefined
     
     /** Class name for primary button. */
-    var primaryButtonClassName: js.UndefOr[String] = js.native
+    var primaryButtonClassName: js.UndefOr[String] = js.undefined
     
     /** Class name for secondary button. */
-    var secondaryButtonClassName: js.UndefOr[String] = js.native
+    var secondaryButtonClassName: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ITeachingBubbleStyleProps {
     
@@ -389,34 +386,33 @@ object teachingBubbleTypesMod {
     }
   }
   
-  @js.native
   trait ITeachingBubbleStyles extends StObject {
     
-    var body: IStyle = js.native
+    var body: IStyle
     
-    var bodyContent: IStyle = js.native
+    var bodyContent: IStyle
     
-    var closeButton: IStyle = js.native
+    var closeButton: IStyle
     
-    var content: IStyle = js.native
+    var content: IStyle
     
-    var footer: IStyle = js.native
+    var footer: IStyle
     
-    var header: IStyle = js.native
+    var header: IStyle
     
-    var headline: IStyle = js.native
+    var headline: IStyle
     
-    var imageContent: IStyle = js.native
+    var imageContent: IStyle
     
-    var primaryButton: IStyle = js.native
+    var primaryButton: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var secondaryButton: IStyle = js.native
+    var secondaryButton: IStyle
     
-    var subComponentStyles: js.UndefOr[ITeachingBubbleSubComponentStyles] = js.native
+    var subComponentStyles: js.UndefOr[ITeachingBubbleSubComponentStyles] = js.undefined
     
-    var subText: IStyle = js.native
+    var subText: IStyle
   }
   object ITeachingBubbleStyles {
     
@@ -545,16 +541,15 @@ object teachingBubbleTypesMod {
     }
   }
   
-  @js.native
   trait ITeachingBubbleSubComponentStyles extends StObject {
     
     /** Refers to the callout that hosts the TeachingBubble. */
-    var callout: IStyleFunctionOrObject[_, _] = js.native
+    var callout: IStyleFunctionOrObject[js.Any, js.Any]
   }
   object ITeachingBubbleSubComponentStyles {
     
     @scala.inline
-    def apply(callout: IStyleFunctionOrObject[_, _]): ITeachingBubbleSubComponentStyles = {
+    def apply(callout: IStyleFunctionOrObject[js.Any, js.Any]): ITeachingBubbleSubComponentStyles = {
       val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITeachingBubbleSubComponentStyles]
     }
@@ -563,10 +558,10 @@ object teachingBubbleTypesMod {
     implicit class ITeachingBubbleSubComponentStylesMutableBuilder[Self <: ITeachingBubbleSubComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallout(value: IStyleFunctionOrObject[_, _]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      def setCallout(value: IStyleFunctionOrObject[js.Any, js.Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCalloutFunction1(value: _ => DeepPartial[_]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
+      def setCalloutFunction1(value: js.Any => DeepPartial[js.Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
     }
   }
 }

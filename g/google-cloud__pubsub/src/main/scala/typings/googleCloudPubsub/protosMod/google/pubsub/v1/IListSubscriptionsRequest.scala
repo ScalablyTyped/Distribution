@@ -2,21 +2,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListSubscriptionsRequest. */
-@js.native
 trait IListSubscriptionsRequest extends StObject {
   
   /** ListSubscriptionsRequest pageSize */
-  var pageSize: js.UndefOr[Double | Null] = js.native
+  var pageSize: js.UndefOr[Double | Null] = js.undefined
   
   /** ListSubscriptionsRequest pageToken */
-  var pageToken: js.UndefOr[String | Null] = js.native
+  var pageToken: js.UndefOr[String | Null] = js.undefined
   
   /** ListSubscriptionsRequest project */
-  var project: js.UndefOr[String | Null] = js.native
+  var project: js.UndefOr[String | Null] = js.undefined
 }
 object IListSubscriptionsRequest {
   

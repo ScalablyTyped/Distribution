@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunQueryRequest extends StObject {
   
   /** The GQL query to run. */
-  var gqlQuery: js.UndefOr[GqlQuery] = js.native
+  var gqlQuery: js.UndefOr[GqlQuery] = js.undefined
   
   /**
     * Entities are partitioned into subsets, identified by a partition ID. Queries are scoped to a single partition. This partition ID is normalized with the standard default context
     * partition ID.
     */
-  var partitionId: js.UndefOr[PartitionId] = js.native
+  var partitionId: js.UndefOr[PartitionId] = js.undefined
   
   /** The query to run. */
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
   /** The options for this query. */
-  var readOptions: js.UndefOr[ReadOptions] = js.native
+  var readOptions: js.UndefOr[ReadOptions] = js.undefined
 }
 object RunQueryRequest {
   

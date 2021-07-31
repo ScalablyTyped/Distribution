@@ -3,21 +3,19 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpinnerEvents extends StObject {
   
-  var change: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+  var change: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
   
-  var create: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+  var create: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
   
-  var spin: js.UndefOr[SpinnerEvent[SpinnerUIParam]] = js.native
+  var spin: js.UndefOr[SpinnerEvent[SpinnerUIParam]] = js.undefined
   
-  var start: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+  var start: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
   
-  var stop: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+  var stop: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
 }
 object SpinnerEvents {
   

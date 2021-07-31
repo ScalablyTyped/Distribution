@@ -2,32 +2,26 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BoundingRectangle")
 @js.native
 class BoundingRectangle () extends StObject {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, width: Double) = this()
-  def this(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-  def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+  def this(x: Double, y: Unit, width: Double) = this()
+  def this(x: Unit, y: Double, width: Double) = this()
+  def this(x: Unit, y: Unit, width: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
+  def this(x: Double, y: Double, width: Unit, height: Double) = this()
+  def this(x: Double, y: Unit, width: Double, height: Double) = this()
+  def this(x: Double, y: Unit, width: Unit, height: Double) = this()
+  def this(x: Unit, y: Double, width: Double, height: Double) = this()
+  def this(x: Unit, y: Double, width: Unit, height: Double) = this()
+  def this(x: Unit, y: Unit, width: Double, height: Double) = this()
+  def this(x: Unit, y: Unit, width: Unit, height: Double) = this()
   
   def clone(result: BoundingRectangle): BoundingRectangle = js.native
   
@@ -46,68 +40,55 @@ class BoundingRectangle () extends StObject {
 }
 object BoundingRectangle {
   
-  /* static member */
-  @JSImport("cesium", "BoundingRectangle.clone")
+  @JSImport("cesium", "BoundingRectangle")
   @js.native
-  def clone_(rectangle: BoundingRectangle): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.clone")
-  @js.native
-  def clone_(rectangle: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.equals")
-  @js.native
-  def equals_(): Boolean = js.native
-  @JSImport("cesium", "BoundingRectangle.equals")
-  @js.native
-  def equals_(left: js.UndefOr[scala.Nothing], right: BoundingRectangle): Boolean = js.native
-  @JSImport("cesium", "BoundingRectangle.equals")
-  @js.native
-  def equals_(left: BoundingRectangle): Boolean = js.native
-  @JSImport("cesium", "BoundingRectangle.equals")
-  @js.native
-  def equals_(left: BoundingRectangle, right: BoundingRectangle): Boolean = js.native
+  @scala.inline
+  def clone_(rectangle: BoundingRectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def clone_(rectangle: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.expand")
-  @js.native
-  def expand(rectangle: BoundingRectangle, point: Cartesian2): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.expand")
-  @js.native
-  def expand(rectangle: BoundingRectangle, point: Cartesian2, result: BoundingRectangle): BoundingRectangle = js.native
+  @scala.inline
+  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Unit, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: BoundingRectangle): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: BoundingRectangle, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian2]): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian2], result: BoundingRectangle): BoundingRectangle = js.native
+  @scala.inline
+  def expand(rectangle: BoundingRectangle, point: Cartesian2): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def expand(rectangle: BoundingRectangle, point: Cartesian2, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.fromRectangle")
-  @js.native
-  def fromRectangle(rectangle: Rectangle): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.fromRectangle")
-  @js.native
-  def fromRectangle(rectangle: Rectangle, projection: js.UndefOr[scala.Nothing], result: BoundingRectangle): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.fromRectangle")
-  @js.native
-  def fromRectangle(rectangle: Rectangle, projection: js.Any): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.fromRectangle")
-  @js.native
-  def fromRectangle(rectangle: Rectangle, projection: js.Any, result: BoundingRectangle): BoundingRectangle = js.native
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian2]): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian2], result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.intersect")
-  @js.native
-  def intersect(left: BoundingRectangle, right: BoundingRectangle): Intersect = js.native
+  @scala.inline
+  def fromRectangle(rectangle: Rectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def fromRectangle(rectangle: Rectangle, projection: js.Any): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def fromRectangle(rectangle: Rectangle, projection: js.Any, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def fromRectangle(rectangle: Rectangle, projection: Unit, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @JSImport("cesium", "BoundingRectangle.union")
-  @js.native
-  def union(left: BoundingRectangle, right: BoundingRectangle): BoundingRectangle = js.native
-  @JSImport("cesium", "BoundingRectangle.union")
-  @js.native
-  def union(left: BoundingRectangle, right: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = js.native
+  @scala.inline
+  def intersect(left: BoundingRectangle, right: BoundingRectangle): Intersect = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Intersect]
+  
+  /* static member */
+  @scala.inline
+  def union(left: BoundingRectangle, right: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  @scala.inline
+  def union(left: BoundingRectangle, right: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
 }

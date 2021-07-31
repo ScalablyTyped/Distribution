@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiPushMessageBuilder")
 @js.native
 class KiiPushMessageBuilder protected ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiPushMessageBuilder {
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiPushMessageBuilder {
   /**
     * instantiate builder with push message data.
     * By default all push channels (gcm, apns, jpush, mqtt) is enabled.

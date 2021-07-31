@@ -2,30 +2,28 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFrame extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var MarginBottom: Double = js.native
+  var MarginBottom: Double
   
-  var MarginLeft: Double = js.native
+  var MarginLeft: Double
   
-  var MarginRight: Double = js.native
+  var MarginRight: Double
   
-  var MarginTop: Double = js.native
+  var MarginTop: Double
   
   @JSName("Office.TextFrame_typekey")
-  var OfficeDotTextFrame_typekey: TextFrame = js.native
+  var OfficeDotTextFrame_typekey: TextFrame
   
-  var Orientation: MsoTextOrientation = js.native
+  var Orientation: MsoTextOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object TextFrame {
   

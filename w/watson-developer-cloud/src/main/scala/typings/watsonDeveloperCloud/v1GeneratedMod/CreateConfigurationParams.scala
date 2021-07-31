@@ -2,37 +2,35 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createConfiguration` operation. */
-@js.native
 trait CreateConfigurationParams extends StObject {
   
   /** Document conversion settings. */
-  var conversions: js.UndefOr[Conversions] = js.native
+  var conversions: js.UndefOr[Conversions] = js.undefined
   
   /** The description of the configuration, if available. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of document enrichment settings for the configuration. */
-  var enrichments: js.UndefOr[js.Array[Enrichment]] = js.native
+  var enrichments: js.UndefOr[js.Array[Enrichment]] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The name of the configuration. */
-  var name: String = js.native
+  var name: String
   
   /** Defines operations that can be used to transform the final output JSON into a normalized form. Operations are executed in the order that they appear in the array. */
-  var normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.native
+  var normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Object containing source parameters for the configuration. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object CreateConfigurationParams {
   

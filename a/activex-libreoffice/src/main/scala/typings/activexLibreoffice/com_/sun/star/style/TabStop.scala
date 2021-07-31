@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This structure is used to specify a single tabulator stop. */
-@js.native
 trait TabStop extends StObject {
   
   /** This field specifies the alignment of the text range before the tabulator. */
-  var Alignment: TabAlign = js.native
+  var Alignment: TabAlign
   
   /** This field specifies which delimiter is used for the decimal. */
-  var DecimalChar: String = js.native
+  var DecimalChar: String
   
   /** This field specifies the character that is used to fill up the space between the text in the text range and the tabulators. */
-  var FillChar: String = js.native
+  var FillChar: String
   
   /** This field specifies the position of the tabulator in relation to the left border. */
-  var Position: Double = js.native
+  var Position: Double
 }
 object TabStop {
   

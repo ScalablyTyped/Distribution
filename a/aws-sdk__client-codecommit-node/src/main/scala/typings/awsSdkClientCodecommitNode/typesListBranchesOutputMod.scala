@@ -4,29 +4,29 @@ import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListBranchesOutputMod {
   
-  @js.native
-  trait ListBranchesOutput extends OutputTypesUnion {
+  trait ListBranchesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The list of branch names.</p>
       */
-    var branches: js.UndefOr[js.Array[String]] = js.native
+    var branches: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>An enumeration token that returns the batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   object ListBranchesOutput {
     

@@ -2,41 +2,39 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNavigationbarColorOptions extends StObject {
   
   /**
     * 动画效果
     */
-  var animation: js.UndefOr[NavigationBarAnimation] = js.native
+  var animation: js.UndefOr[NavigationBarAnimation] = js.undefined
   
   /**
     * 背景颜色值，有效值为十六进制颜色
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 前景颜色值，包括按钮、标题、状态栏的颜色
     */
-  var frontColor: js.UndefOr[String] = js.native
+  var frontColor: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object SetNavigationbarColorOptions {
   

@@ -63,11 +63,12 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends EventEmitter {
+trait App
+  extends StObject
+     with EventEmitter {
   
   /**
     * A `Boolean` property that's `true` if Chrome's accessibility support is enabled,
@@ -179,7 +180,10 @@ trait App extends EventEmitter {
   @JSName("addListener")
   def addListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_ready(event: ready, listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, _], Unit]): this.type = js.native
+  def addListener_ready(
+    event: ready,
+    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetbuiltin(
     event: `remote-get-builtin`,
@@ -458,9 +462,9 @@ trait App extends EventEmitter {
     * `driverId` is needed.
     */
   @JSName("getGPUInfo")
-  def getGPUInfo_basic(infoType: basic): js.Promise[_] = js.native
+  def getGPUInfo_basic(infoType: basic): js.Promise[js.Any] = js.native
   @JSName("getGPUInfo")
-  def getGPUInfo_complete(infoType: complete): js.Promise[_] = js.native
+  def getGPUInfo_complete(infoType: complete): js.Promise[js.Any] = js.native
   
   /**
     * * `minItems` Integer - The minimum number of items that will be shown in the
@@ -650,9 +654,9 @@ trait App extends EventEmitter {
     * internally.
     */
   def isDefaultProtocolClient(protocol: String): Boolean = js.native
-  def isDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
+  def isDefaultProtocolClient(protocol: String, path: Unit, args: js.Array[String]): Boolean = js.native
   
   /**
     * whether or not the current OS version allows for native emoji pickers.
@@ -985,7 +989,10 @@ trait App extends EventEmitter {
     * to get a Promise that is fulfilled when Electron is initialized.
     */
   @JSName("on")
-  def on_ready(event: ready, listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, _], Unit]): this.type = js.native
+  def on_ready(
+    event: ready,
+    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
+  ): this.type = js.native
   /**
     * Emitted when `remote.getBuiltin()` is called in the renderer process of
     * `webContents`. Calling `event.preventDefault()` will prevent the module from
@@ -1265,7 +1272,10 @@ trait App extends EventEmitter {
   @JSName("once")
   def once_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("once")
-  def once_ready(event: ready, listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, _], Unit]): this.type = js.native
+  def once_ready(
+    event: ready,
+    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_remotegetbuiltin(
     event: `remote-get-builtin`,
@@ -1393,9 +1403,9 @@ trait App extends EventEmitter {
     * @platform darwin,win32
     */
   def removeAsDefaultProtocolClient(protocol: String): Boolean = js.native
-  def removeAsDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def removeAsDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def removeAsDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
+  def removeAsDefaultProtocolClient(protocol: String, path: Unit, args: js.Array[String]): Boolean = js.native
   
   @JSName("removeListener")
   def removeListener_accessibilitysupportchanged(
@@ -1489,7 +1499,10 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def removeListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_ready(event: ready, listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, _], Unit]): this.type = js.native
+  def removeListener_ready(
+    event: ready,
+    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetbuiltin(
     event: `remote-get-builtin`,
@@ -1703,9 +1716,9 @@ trait App extends EventEmitter {
     * internally.
     */
   def setAsDefaultProtocolClient(protocol: String): Boolean = js.native
-  def setAsDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def setAsDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def setAsDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
+  def setAsDefaultProtocolClient(protocol: String, path: Unit, args: js.Array[String]): Boolean = js.native
   
   /**
     * Whether the call succeeded.

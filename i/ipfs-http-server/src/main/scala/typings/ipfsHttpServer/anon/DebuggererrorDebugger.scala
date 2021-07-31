@@ -3,7 +3,6 @@ package typings.ipfsHttpServer.anon
 import typings.debug.mod.Debugger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined debug.debug.Debugger & {  error :debug.debug.Debugger} */

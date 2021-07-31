@@ -2,17 +2,15 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRInputSourceChangeEvent extends StObject {
   
-  var added: js.Array[XRInputSource] = js.native
+  var added: js.Array[XRInputSource]
   
-  var removed: js.Array[XRInputSource] = js.native
+  var removed: js.Array[XRInputSource]
   
-  var session: XRSession = js.native
+  var session: XRSession
 }
 object XRInputSourceChangeEvent {
   

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the CustomCommand event.
   */
-@js.native
-trait ASPxClientGanttCustomCommandEventArgs extends ASPxClientEventArgs {
+trait ASPxClientGanttCustomCommandEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the command name for a custom toolbar item.
     */
-  var commandName: String = js.native
+  var commandName: String
   
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any = js.native
+  var parameter: js.Any
 }
 object ASPxClientGanttCustomCommandEventArgs {
   

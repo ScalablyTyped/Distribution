@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJsonClassifierRequest extends StObject {
   
   /**
     * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
     */
-  var JsonPath: typings.awsSdk.glueMod.JsonPath = js.native
+  var JsonPath: typings.awsSdk.glueMod.JsonPath
   
   /**
     * The name of the classifier.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object CreateJsonClassifierRequest {
   

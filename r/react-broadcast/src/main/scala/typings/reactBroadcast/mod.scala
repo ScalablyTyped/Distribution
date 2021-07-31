@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactBroadcast.mod.Broadcast.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,9 @@ object mod {
   }
   object Broadcast {
     
-    @js.native
     trait DefaultProps[T] extends StObject {
       
-      def compareValues(prevValue: T, nextValue: T): Boolean = js.native
+      def compareValues(prevValue: T, nextValue: T): Boolean
     }
     object DefaultProps {
       
@@ -37,7 +35,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class DefaultPropsMutableBuilder[Self <: DefaultProps[_], T] (val x: Self with DefaultProps[T]) extends AnyVal {
+      implicit class DefaultPropsMutableBuilder[Self <: DefaultProps[?], T] (val x: Self & DefaultProps[T]) extends AnyVal {
         
         @scala.inline
         def setCompareValues(value: (T, T) => Boolean): Self = StObject.set(x, "compareValues", js.Any.fromFunction2(value))
@@ -45,16 +43,15 @@ object mod {
     }
     
     /* Inlined parent std.Partial<react-broadcast.react-broadcast.Broadcast.DefaultProps<T>> */
-    @js.native
     trait Props[T] extends StObject {
       
-      var channel: String = js.native
+      var channel: String
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var compareValues: js.UndefOr[js.Function2[/* prevValue */ T, /* nextValue */ T, Boolean]] = js.native
+      var compareValues: js.UndefOr[js.Function2[/* prevValue */ T, /* nextValue */ T, Boolean]] = js.undefined
       
-      var value: T = js.native
+      var value: T
     }
     object Props {
       
@@ -65,7 +62,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], T] (val x: Self with Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
         
         @scala.inline
         def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
@@ -101,10 +98,9 @@ object mod {
   }
   object Subscriber {
     
-    @js.native
     trait DefaultProps extends StObject {
       
-      var quiet: Boolean = js.native
+      var quiet: Boolean
     }
     object DefaultProps {
       
@@ -123,14 +119,13 @@ object mod {
     }
     
     /* Inlined parent std.Partial<react-broadcast.react-broadcast.Subscriber.DefaultProps> */
-    @js.native
     trait Props[T] extends StObject {
       
-      var channel: String = js.native
+      var channel: String
       
-      var children: js.UndefOr[js.Function1[/* state */ T, ReactNode]] = js.native
+      var children: js.UndefOr[js.Function1[/* state */ T, ReactNode]] = js.undefined
       
-      var quiet: js.UndefOr[Boolean] = js.native
+      var quiet: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       
@@ -141,7 +136,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: typings.reactBroadcast.mod.Subscriber.Props[_], T] (val x: Self with typings.reactBroadcast.mod.Subscriber.Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: typings.reactBroadcast.mod.Subscriber.Props[?], T] (val x: Self & typings.reactBroadcast.mod.Subscriber.Props[T]) extends AnyVal {
         
         @scala.inline
         def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])

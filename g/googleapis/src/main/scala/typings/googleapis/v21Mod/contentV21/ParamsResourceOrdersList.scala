@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrdersList extends StandardParameters {
+trait ParamsResourceOrdersList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Obtains orders that match the acknowledgement status. When set to true,
@@ -19,12 +19,12 @@ trait ParamsResourceOrdersList extends StandardParameters {
     * false, in conjunction with the acknowledge call, such that only
     * un-acknowledged orders are returned.
     */
-  var acknowledged: js.UndefOr[Boolean] = js.native
+  var acknowledged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of orders to return in the response, used for paging.
@@ -32,13 +32,13 @@ trait ParamsResourceOrdersList extends StandardParameters {
     * 250 orders per page. Known issue: All List calls will return all Orders
     * without limit regardless of the value of this field.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The ordering of the returned list. The only supported value are
@@ -48,22 +48,22 @@ trait ParamsResourceOrdersList extends StandardParameters {
     * listing orders by placement date, from most recent to oldest. In future
     * releases we'll support other sorting criteria.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Obtains orders placed before this date (exclusively), in ISO 8601 format.
     */
-  var placedDateEnd: js.UndefOr[String] = js.native
+  var placedDateEnd: js.UndefOr[String] = js.undefined
   
   /**
     * Obtains orders placed after this date (inclusively), in ISO 8601 format.
     */
-  var placedDateStart: js.UndefOr[String] = js.native
+  var placedDateStart: js.UndefOr[String] = js.undefined
   
   /**
     * Obtains orders that match any of the specified statuses. Multiple values
@@ -72,7 +72,7 @@ trait ParamsResourceOrdersList extends StandardParameters {
     * completed is a shortcut for shipped , partiallyDelivered, delivered,
     * partiallyReturned, returned, and canceled.
     */
-  var statuses: js.UndefOr[js.Array[String]] = js.native
+  var statuses: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceOrdersList {
   

@@ -2,14 +2,12 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class describes all the methods that apply at dimension level.
   * The handle member in the JSON request for all methods listed in this section is the handle of the dimension.
   */
-@js.native
 trait IGenericDimension extends StObject {
   
   /**
@@ -19,32 +17,32 @@ trait IGenericDimension extends StObject {
     * @param qPatches - Array of patches.
     * @returns - A promise of a Qlik engine reply.
     */
-  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit] = js.native
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit]
   
   /**
     * Returns the definition of a dimension.
     *
     * @returns - A promise GenericDimension.
     */
-  def getDimension(): js.Promise[IGenericDimensionProperties] = js.native
+  def getDimension(): js.Promise[IGenericDimensionProperties]
   
   /**
     * Returns the type and identifier of the object.
     */
-  def getInfo(): js.Promise[INxInfo] = js.native
+  def getInfo(): js.Promise[INxInfo]
   
   /**
     * Evaluates a dimension and displays its properties, including the dynamic properties.
     *
     * @returns - A promise GenericDimensionLayout.
     */
-  def getLayout(): js.Promise[IGenericDimensionLayout] = js.native
+  def getLayout(): js.Promise[IGenericDimensionLayout]
   
   /**
     * Return a lists the linked objects to a generic object, a dimension or a measure.
     * @returns - A promise Array of NxLinkedObjectInfo
     */
-  def getLinkedObjects(): js.Promise[js.Array[INxLinkedObjectInfo]] = js.native
+  def getLinkedObjects(): js.Promise[js.Array[INxLinkedObjectInfo]]
   
   /**
     * Shows the properties of an object.
@@ -52,22 +50,22 @@ trait IGenericDimension extends StObject {
     *
     * Note: If the member delta is set to true in the request object, only the delta is retrieved.
     */
-  def getProperties(): js.Promise[IGenericDimensionProperties] = js.native
+  def getProperties(): js.Promise[IGenericDimensionProperties]
   
   /**
     * Publishes a dimension.
     */
-  def publish(): js.Promise[Unit] = js.native
+  def publish(): js.Promise[Unit]
   
   /**
     * Sets some properties for a dimension.
     */
-  def setProperties(): js.Promise[IGenericDimensionProperties] = js.native
+  def setProperties(): js.Promise[IGenericDimensionProperties]
   
   /**
     * Unpublishes a dimension.
     */
-  def unPublish(): js.Promise[Unit] = js.native
+  def unPublish(): js.Promise[Unit]
 }
 object IGenericDimension {
   

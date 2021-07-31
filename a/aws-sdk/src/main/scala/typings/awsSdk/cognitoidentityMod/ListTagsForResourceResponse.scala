@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * The tags that are assigned to the identity pool.
     */
-  var Tags: js.UndefOr[IdentityPoolTagsType] = js.native
+  var Tags: js.UndefOr[IdentityPoolTagsType] = js.undefined
 }
 object ListTagsForResourceResponse {
   

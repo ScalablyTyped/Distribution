@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeResponseBodyForInterceptionAsStreamRequest extends StObject {
   
-  var interceptionId: InterceptionId = js.native
+  var interceptionId: InterceptionId
 }
 object TakeResponseBodyForInterceptionAsStreamRequest {
   

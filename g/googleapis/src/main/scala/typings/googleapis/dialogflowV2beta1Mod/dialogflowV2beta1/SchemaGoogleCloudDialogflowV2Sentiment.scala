@@ -2,14 +2,12 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The sentiment, such as positive/negative feeling or association, for a unit
   * of analysis, such as the query text.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2Sentiment extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaGoogleCloudDialogflowV2Sentiment extends StObject {
     * absolute magnitude of sentiment, regardless of score (positive or
     * negative).
     */
-  var magnitude: js.UndefOr[Double] = js.native
+  var magnitude: js.UndefOr[Double] = js.undefined
   
   /**
     * Sentiment score between -1.0 (negative sentiment) and 1.0 (positive
     * sentiment).
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2Sentiment {
   

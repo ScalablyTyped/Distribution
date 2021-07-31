@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeTargetingOptionDetails extends StObject {
   
   /** Output only. The type of exchange. */
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
 }
 object ExchangeTargetingOptionDetails {
   

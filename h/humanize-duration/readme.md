@@ -10,9 +10,9 @@ Convert millisecond durations to English and many other languages.
 | ------------------ | :-------------: |
 | Full name          | humanize-duration |
 | Keywords           | humanize, duration, time, hours, minutes, seconds, days, years, months |
-| # releases         | 13 |
-| # dependents       | 142 |
-| # downloads        | 9371229 |
+| # releases         | 12 |
+| # dependents       | 163 |
+| # downloads        | 9885100 |
 | # stars            | 16 |
 
 ## Links

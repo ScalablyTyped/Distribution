@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextColumn extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var SpaceAfter: Double = js.native
+  var SpaceAfter: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
   @JSName("Word.TextColumn_typekey")
-  var WordDotTextColumn_typekey: TextColumn = js.native
+  var WordDotTextColumn_typekey: TextColumn
 }
 object TextColumn {
   

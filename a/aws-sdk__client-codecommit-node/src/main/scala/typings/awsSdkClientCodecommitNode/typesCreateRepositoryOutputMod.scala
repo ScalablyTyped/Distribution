@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesRepositoryMetadataMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateRepositoryOutputMod {
   
-  @js.native
-  trait CreateRepositoryOutput extends OutputTypesUnion {
+  trait CreateRepositoryOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the newly created repository.</p>
       */
-    var repositoryMetadata: js.UndefOr[UnmarshalledRepositoryMetadata] = js.native
+    var repositoryMetadata: js.UndefOr[UnmarshalledRepositoryMetadata] = js.undefined
   }
   object CreateRepositoryOutput {
     

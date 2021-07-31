@@ -2,15 +2,13 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraPickerProps extends StObject {
   
-  var cancelText: String = js.native
+  var cancelText: String
   
-  var title: String = js.native
+  var title: String
 }
 object CameraPickerProps {
   

@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleReference
-  extends Expression
+  extends StObject
+     with Expression
      with Instantiable1[/* value */ String, Expression] {
   
   var _value: String = js.native

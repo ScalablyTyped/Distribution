@@ -6,56 +6,56 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceJobsGetqueryresults extends StandardParameters {
+trait ParamsResourceJobsGetqueryresults
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * [Required] Job ID of the query job
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic location where the job should run. Required except for US
     * and EU. See details at
     * https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to read
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Page token, returned by a previous call, to request the next page of
     * results
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] Project ID of the query job
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Zero-based index of the starting row
     */
-  var startIndex: js.UndefOr[String] = js.native
+  var startIndex: js.UndefOr[String] = js.undefined
   
   /**
     * How long to wait for the query to complete, in milliseconds, before
     * returning. Default is 10 seconds. If the timeout passes before the job
     * completes, the 'jobComplete' field in the response will be false
     */
-  var timeoutMs: js.UndefOr[Double] = js.native
+  var timeoutMs: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceJobsGetqueryresults {
   

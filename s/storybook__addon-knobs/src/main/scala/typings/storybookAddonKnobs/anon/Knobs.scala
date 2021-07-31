@@ -4,15 +4,13 @@ import typings.std.Record
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Knobs extends StObject {
   
-  var knobs: Record[String, KnobStoreKnob] = js.native
+  var knobs: Record[String, KnobStoreKnob]
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
 }
 object Knobs {
   

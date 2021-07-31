@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFMetadataStructureItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExportStructureItem extends StObject {
   
-  def Clone(): IExportStructureItem = js.native
+  def Clone(): IExportStructureItem
   
-  var StructureItemGUID: String = js.native
+  var StructureItemGUID: String
   
-  var StructureItemID: Double = js.native
+  var StructureItemID: Double
   
-  var StructureItemType: MFMetadataStructureItem = js.native
+  var StructureItemType: MFMetadataStructureItem
 }
 object IExportStructureItem {
   

@@ -2,22 +2,20 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
   */
-@js.native
 trait PlayerState extends StObject {
   
-  val muted: Boolean = js.native
+  val muted: Boolean
   
-  val repeat: Double = js.native
+  val repeat: Double
   
-  val shuffle: Boolean = js.native
+  val shuffle: Boolean
   
-  val volume: Double = js.native
+  val volume: Double
 }
 object PlayerState {
   

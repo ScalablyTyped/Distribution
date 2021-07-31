@@ -3,84 +3,68 @@ package typings.tsutils
 import typings.typescript.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `32TypeMod` {
   
-  @JSImport("tsutils/typeguard/3.2/type", "isConditionalType")
+  @JSImport("tsutils/typeguard/3.2/type", JSImport.Namespace)
   @js.native
-  def isConditionalType(`type`: Type): /* is typescript.typescript.ConditionalType */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tsutils/typeguard/3.2/type", "isEnumType")
-  @js.native
-  def isEnumType(`type`: Type): /* is typescript.typescript.EnumType */ Boolean = js.native
+  @scala.inline
+  def isConditionalType(`type`: Type): /* is typescript.typescript.ConditionalType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConditionalType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isGenericType")
-  @js.native
-  def isGenericType(`type`: Type): /* is typescript.typescript.GenericType */ Boolean = js.native
+  @scala.inline
+  def isEnumType(`type`: Type): /* is typescript.typescript.EnumType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnumType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EnumType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isIndexedAccessType")
-  @js.native
-  def isIndexedAccessType(`type`: Type): /* is typescript.typescript.IndexedAccessType */ Boolean = js.native
+  @scala.inline
+  def isGenericType(`type`: Type): /* is typescript.typescript.GenericType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGenericType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.GenericType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isIndexedAccessype")
-  @js.native
-  def isIndexedAccessype(`type`: Type): /* is typescript.typescript.IndexType */ Boolean = js.native
+  @scala.inline
+  def isIndexedAccessType(`type`: Type): /* is typescript.typescript.IndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexedAccessType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isInstantiableType")
-  @js.native
-  def isInstantiableType(`type`: Type): /* is typescript.typescript.InstantiableType */ Boolean = js.native
+  @scala.inline
+  def isIndexedAccessype(`type`: Type): /* is typescript.typescript.IndexType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessype")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isInterfaceType")
-  @js.native
-  def isInterfaceType(`type`: Type): /* is typescript.typescript.InterfaceType */ Boolean = js.native
+  @scala.inline
+  def isInstantiableType(`type`: Type): /* is typescript.typescript.InstantiableType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstantiableType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InstantiableType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isIntersectionType")
-  @js.native
-  def isIntersectionType(`type`: Type): /* is typescript.typescript.IntersectionType */ Boolean = js.native
+  @scala.inline
+  def isInterfaceType(`type`: Type): /* is typescript.typescript.InterfaceType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterfaceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InterfaceType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isLiteralType")
-  @js.native
-  def isLiteralType(`type`: Type): /* is typescript.typescript.LiteralType */ Boolean = js.native
+  @scala.inline
+  def isIntersectionType(`type`: Type): /* is typescript.typescript.IntersectionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntersectionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IntersectionType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isObjectType")
-  @js.native
-  def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
+  @scala.inline
+  def isLiteralType(`type`: Type): /* is typescript.typescript.LiteralType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isSubstitutionType")
-  @js.native
-  def isSubstitutionType(`type`: Type): /* is typescript.typescript.SubstitutionType */ Boolean = js.native
+  @scala.inline
+  def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isTupleType")
-  @js.native
-  def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = js.native
+  @scala.inline
+  def isSubstitutionType(`type`: Type): /* is typescript.typescript.SubstitutionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubstitutionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SubstitutionType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isTupleTypeReference")
-  @js.native
-  def isTupleTypeReference(`type`: Type): /* is tsutils.anon.TypeReferencetargetTupleT */ Boolean = js.native
+  @scala.inline
+  def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTupleType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TupleType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isTypeParameter")
-  @js.native
-  def isTypeParameter(`type`: Type): /* is typescript.typescript.TypeParameter */ Boolean = js.native
+  @scala.inline
+  def isTupleTypeReference(`type`: Type): /* is tsutils.anon.TypeReferencetargetTupleT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTupleTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is tsutils.anon.TypeReferencetargetTupleT */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isTypeReference")
-  @js.native
-  def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = js.native
+  @scala.inline
+  def isTypeParameter(`type`: Type): /* is typescript.typescript.TypeParameter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameter")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeParameter */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isTypeVariable")
-  @js.native
-  def isTypeVariable(`type`: Type): Boolean = js.native
+  @scala.inline
+  def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeReference */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isUnionOrIntersectionType")
-  @js.native
-  def isUnionOrIntersectionType(`type`: Type): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = js.native
+  @scala.inline
+  def isTypeVariable(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeVariable")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isUnionType")
-  @js.native
-  def isUnionType(`type`: Type): /* is typescript.typescript.UnionType */ Boolean = js.native
+  @scala.inline
+  def isUnionOrIntersectionType(`type`: Type): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionOrIntersectionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionOrIntersectionType */ Boolean]
   
-  @JSImport("tsutils/typeguard/3.2/type", "isUniqueESSymbolType")
-  @js.native
-  def isUniqueESSymbolType(`type`: Type): /* is typescript.typescript.UniqueESSymbolType */ Boolean = js.native
+  @scala.inline
+  def isUnionType(`type`: Type): /* is typescript.typescript.UnionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionType */ Boolean]
+  
+  @scala.inline
+  def isUniqueESSymbolType(`type`: Type): /* is typescript.typescript.UniqueESSymbolType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUniqueESSymbolType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UniqueESSymbolType */ Boolean]
 }

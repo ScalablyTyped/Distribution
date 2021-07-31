@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prettier.mod.ResolveConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,52 +14,54 @@ object mod {
     * * Git
     * * Mercurial
     */
-  @JSImport("pretty-quick", JSImport.Namespace)
-  @js.native
-  def apply(currentDirectory: String): Results = js.native
-  @JSImport("pretty-quick", JSImport.Namespace)
-  @js.native
-  def apply(currentDirectory: String, options: Options): Results = js.native
+  @scala.inline
+  def apply(currentDirectory: String): Results = ^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any]).asInstanceOf[Results]
+  @scala.inline
+  def apply(currentDirectory: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
   
+  @JSImport("pretty-quick", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options
-    extends // ...args support
+    extends StObject
+       with // ...args support
   /* key */ StringDictionary[js.Any] {
     
-    var bail: js.UndefOr[Boolean] = js.native
+    var bail: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 'master' | 'default'
       */
-    var branch: js.UndefOr[String] = js.native
+    var branch: js.UndefOr[String] = js.undefined
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    var config: js.UndefOr[ResolveConfigOptions] = js.native
+    var config: js.UndefOr[ResolveConfigOptions] = js.undefined
     
-    var onCheckFile: js.UndefOr[js.Function2[/* file */ String, /* isFormatted */ Boolean, Unit]] = js.native
+    var onCheckFile: js.UndefOr[js.Function2[/* file */ String, /* isFormatted */ Boolean, Unit]] = js.undefined
     
-    var onExamineFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.native
+    var onExamineFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.undefined
     
-    var onFoundChangedFiles: js.UndefOr[js.Function1[/* changedFiles */ js.Array[String], Unit]] = js.native
+    var onFoundChangedFiles: js.UndefOr[js.Function1[/* changedFiles */ js.Array[String], Unit]] = js.undefined
     
-    var onFoundSinceRevision: js.UndefOr[js.Function2[/* name */ String, /* revision */ String, Unit]] = js.native
+    var onFoundSinceRevision: js.UndefOr[js.Function2[/* name */ String, /* revision */ String, Unit]] = js.undefined
     
-    var onPartiallyStagedFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.native
+    var onPartiallyStagedFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.undefined
     
-    var onWriteFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.native
+    var onWriteFile: js.UndefOr[js.Function1[/* file */ String, Unit]] = js.undefined
     
-    var pattern: js.UndefOr[String | js.Array[String]] = js.native
+    var pattern: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** @default true */
-    var restage: js.UndefOr[Boolean] = js.native
+    var restage: js.UndefOr[Boolean] = js.undefined
     
-    var since: js.UndefOr[String] = js.native
+    var since: js.UndefOr[String] = js.undefined
     
     /** @default false */
-    var staged: js.UndefOr[Boolean] = js.native
+    var staged: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -168,12 +169,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    val errors: js.Array[String] = js.native
+    val errors: js.Array[String]
     
-    val success: Boolean = js.native
+    val success: Boolean
   }
   object Results {
     

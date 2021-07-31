@@ -5,19 +5,17 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxSpeedDialAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionElement extends StObject {
   
-  var actionElement: js.UndefOr[dxElement] = js.native
+  var actionElement: js.UndefOr[dxElement] = js.undefined
   
-  var component: js.UndefOr[dxSpeedDialAction] = js.native
+  var component: js.UndefOr[dxSpeedDialAction] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
 }
 object ActionElement {
   

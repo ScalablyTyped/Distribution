@@ -4,16 +4,14 @@ import typings.std.Error
 import typings.vscodeJsonrpc.messagesMod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorHandler extends StObject {
   
   /**
     * The connection to the server got closed.
     */
-  def closed(): CloseAction = js.native
+  def closed(): CloseAction
   
   /**
     * An error has occurred while writing or reading from the connection.
@@ -23,7 +21,7 @@ trait ErrorHandler extends StObject {
     * @param count - a count indicating how often an error is received. Will
     *  be reset if a message got successfully send or received.
     */
-  def error(error: Error, message: Message, count: Double): ErrorAction = js.native
+  def error(error: Error, message: Message, count: Double): ErrorAction
 }
 object ErrorHandler {
   

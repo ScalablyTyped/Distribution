@@ -3,7 +3,6 @@ package typings.amapJsApiPlaceSearch
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
       * @param options 选项
       */
     class PlaceSearch ()
-      extends typings.amapJsApiPlaceSearch.AMap.PlaceSearch {
+      extends StObject
+         with typings.amapJsApiPlaceSearch.AMap.PlaceSearch {
       def this(options: Options) = this()
     }
   }

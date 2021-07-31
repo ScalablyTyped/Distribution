@@ -3,7 +3,6 @@ package typings.highcharts.mod
 import typings.highcharts.exportingMod.highchartsAugmentingMod.Chart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,32 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Note**: Fullscreen is not supported on iPhone due to iOS limitations.
   */
-@js.native
 trait Fullscreen extends StObject {
   
   /**
     * Chart managed by the fullscreen controller.
     */
-  var chart: Chart = js.native
+  var chart: Chart
   
   /**
     * Stops displaying the chart in fullscreen mode. Exporting module
     * required.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * The flag is set to `true` when the chart is displayed in the
     * fullscreen mode.
     */
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Displays the chart in fullscreen mode. When fired customly by user
     * before exporting context button is created, button's text will not be
     * replaced - it's on the user side. Exporting module required.
     */
-  def open(): Unit = js.native
+  def open(): Unit
   
   /**
     * Toggles displaying the chart in fullscreen mode. By default, when the
@@ -44,7 +42,7 @@ trait Fullscreen extends StObject {
     * in the upper right corner accesses this function. Exporting module
     * required.
     */
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object Fullscreen {
   

@@ -12,27 +12,27 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of an author text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait DropDown extends TextField_ {
+trait DropDown
+  extends StObject
+     with TextField_ {
   
   /** The items of the dropdown field. */
-  var Items: SafeArray[String] = js.native
+  var Items: SafeArray[String]
   
   /** The name of the drop down field. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The selected item. If no item is selected this property contains an empty string. If this property is set to a value not present in the items of the
     * dropdown field it is invalidated, i.e. it is set to an empty string.
     */
-  var SelectedItem: String = js.native
+  var SelectedItem: String
 }
 object DropDown {
   

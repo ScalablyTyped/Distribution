@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -74,13 +73,13 @@ trait Scanner extends StObject {
   def setScriptTarget(scriptTarget: ScriptTarget): Unit = js.native
   
   def setText(): Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: Double, length: Double): Unit = js.native
   def setText(text: java.lang.String): Unit = js.native
-  def setText(text: java.lang.String, start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def setText(text: java.lang.String, start: Double): Unit = js.native
   def setText(text: java.lang.String, start: Double, length: Double): Unit = js.native
+  def setText(text: java.lang.String, start: Unit, length: Double): Unit = js.native
+  def setText(text: Unit, start: Double): Unit = js.native
+  def setText(text: Unit, start: Double, length: Double): Unit = js.native
+  def setText(text: Unit, start: Unit, length: Double): Unit = js.native
   
   def setTextPos(textPos: Double): Unit = js.native
   

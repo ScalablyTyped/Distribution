@@ -11,8 +11,8 @@ Node.js package for HTTP basic and digest access authentication.
 | Full name          | http-auth |
 | Keywords           | http, basic, digest, access, authentication |
 | # releases         | 8 |
-| # dependents       | 110 |
-| # downloads        | 8330759 |
+| # dependents       | 115 |
+| # downloads        | 10241550 |
 | # stars            | 12 |
 
 ## Links

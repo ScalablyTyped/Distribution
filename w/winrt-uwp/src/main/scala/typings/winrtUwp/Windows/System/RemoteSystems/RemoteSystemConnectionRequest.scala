@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an intent to communicate with a specific remote system (device). */
-@js.native
 trait RemoteSystemConnectionRequest extends StObject {
   
   /** Represents the remote system (device) that the app intends to communicate with. */
-  var remoteSystem: RemoteSystem = js.native
+  var remoteSystem: RemoteSystem
   
   /** Represents the remote application that the app intends to communicate with. */
-  var remoteSystemApp: RemoteSystemApp = js.native
+  var remoteSystemApp: RemoteSystemApp
 }
 object RemoteSystemConnectionRequest {
   

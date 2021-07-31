@@ -16,28 +16,26 @@ import typings.leafletRoutingMachine.leafletRoutingMachineStrings.TurnAround
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.WaypointReached
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
-@js.native
 trait IInstruction extends StObject {
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var exit: js.UndefOr[Double] = js.native
+  var exit: js.UndefOr[Double] = js.undefined
   
-  var road: js.UndefOr[String] = js.native
+  var road: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var time: Double = js.native
+  var time: Double
   
   var `type`: js.UndefOr[
     Straight | SlightRight | Right | SharpRight | TurnAround | SharpLeft | Left | SlightLeft | WaypointReached | Roundabout | StartAt | DestinationReached | EnterAgainstAllowedDirection | LeaveAgainstAllowedDirection
-  ] = js.native
+  ] = js.undefined
 }
 object IInstruction {
   

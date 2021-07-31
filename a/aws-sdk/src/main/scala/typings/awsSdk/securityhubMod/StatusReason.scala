@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusReason extends StObject {
   
   /**
     * The corresponding description for the status reason code.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A code that represents a reason for the control status. For the list of status reason codes and their meanings, see Standards-related information in the ASFF in the AWS Security Hub User Guide. 
     */
-  var ReasonCode: NonEmptyString = js.native
+  var ReasonCode: NonEmptyString
 }
 object StatusReason {
   

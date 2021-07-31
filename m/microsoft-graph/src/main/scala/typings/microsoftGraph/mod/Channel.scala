@@ -2,46 +2,46 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Channel extends Entity {
+trait Channel
+  extends StObject
+     with Entity {
   
   // Optional textual description for the channel.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Channel name as it will appear to the user in Microsoft Teams.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // The email address for sending messages to the channel. Read-only.
-  var email: js.UndefOr[NullableOption[String]] = js.native
+  var email: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Metadata for the location where the channel's files are stored.
-  var filesFolder: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var filesFolder: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
   /**
     * Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set
     * programmatically with Create team. Default: false.
     */
-  var isFavoriteByDefault: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isFavoriteByDefault: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var members: js.UndefOr[NullableOption[js.Array[ConversationMember]]] = js.native
+  var members: js.UndefOr[NullableOption[js.Array[ConversationMember]]] = js.undefined
   
-  var membershipType: js.UndefOr[NullableOption[ChannelMembershipType]] = js.native
+  var membershipType: js.UndefOr[NullableOption[ChannelMembershipType]] = js.undefined
   
   // A collection of all the messages in the channel. A navigation property. Nullable.
-  var messages: js.UndefOr[NullableOption[js.Array[ChatMessage]]] = js.native
+  var messages: js.UndefOr[NullableOption[js.Array[ChatMessage]]] = js.undefined
   
   // A collection of all the tabs in the channel. A navigation property.
-  var tabs: js.UndefOr[NullableOption[js.Array[TeamsTab]]] = js.native
+  var tabs: js.UndefOr[NullableOption[js.Array[TeamsTab]]] = js.undefined
   
   /**
     * A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel
     * in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed.
     * Read-only.
     */
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Channel {
   

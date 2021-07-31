@@ -2,125 +2,125 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction during which services are provided to the patient
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Encounter extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Encounter
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The set of accounts that may be used for billing for this Encounter
     */
-  var account: js.UndefOr[js.Array[Reference]] = js.native
+  var account: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The appointment that scheduled this encounter
     */
-  var appointment: js.UndefOr[Reference] = js.native
+  var appointment: js.UndefOr[Reference] = js.undefined
   
   /**
     * inpatient | outpatient | ambulatory | emergency +
     */
-  var `class`: js.UndefOr[Coding] = js.native
+  var `class`: js.UndefOr[Coding] = js.undefined
   
   /**
     * List of past encounter classes
     */
-  var classHistory: js.UndefOr[js.Array[EncounterClassHistory]] = js.native
+  var classHistory: js.UndefOr[js.Array[EncounterClassHistory]] = js.undefined
   
   /**
     * The list of diagnosis relevant to this encounter
     */
-  var diagnosis: js.UndefOr[js.Array[EncounterDiagnosis]] = js.native
+  var diagnosis: js.UndefOr[js.Array[EncounterDiagnosis]] = js.undefined
   
   /**
     * Episode(s) of care that this encounter should be recorded against
     */
-  var episodeOfCare: js.UndefOr[js.Array[Reference]] = js.native
+  var episodeOfCare: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Details about the admission to a healthcare service
     */
-  var hospitalization: js.UndefOr[EncounterHospitalization] = js.native
+  var hospitalization: js.UndefOr[EncounterHospitalization] = js.undefined
   
   /**
     * Identifier(s) by which this encounter is known
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * The ReferralRequest that initiated this encounter
     */
-  var incomingReferral: js.UndefOr[js.Array[Reference]] = js.native
+  var incomingReferral: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Quantity of time the encounter lasted (less time absent)
     */
-  var length: js.UndefOr[Duration] = js.native
+  var length: js.UndefOr[Duration] = js.undefined
   
   /**
     * List of locations where the patient has been
     */
-  var location: js.UndefOr[js.Array[EncounterLocation]] = js.native
+  var location: js.UndefOr[js.Array[EncounterLocation]] = js.undefined
   
   /**
     * Another Encounter this encounter is part of
     */
-  var partOf: js.UndefOr[Reference] = js.native
+  var partOf: js.UndefOr[Reference] = js.undefined
   
   /**
     * List of participants involved in the encounter
     */
-  var participant: js.UndefOr[js.Array[EncounterParticipant]] = js.native
+  var participant: js.UndefOr[js.Array[EncounterParticipant]] = js.undefined
   
   /**
     * The start and end time of the encounter
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Indicates the urgency of the encounter
     */
-  var priority: js.UndefOr[CodeableConcept] = js.native
+  var priority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Reason the encounter takes place (code)
     */
-  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The custodian organization of this Encounter record
     */
-  var serviceProvider: js.UndefOr[Reference] = js.native
+  var serviceProvider: js.UndefOr[Reference] = js.undefined
   
   /**
     * planned | arrived | triaged | in-progress | onleave | finished | cancelled +
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * List of past encounter statuses
     */
-  var statusHistory: js.UndefOr[js.Array[EncounterStatusHistory]] = js.native
+  var statusHistory: js.UndefOr[js.Array[EncounterStatusHistory]] = js.undefined
   
   /**
     * The patient ro group present at the encounter
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * Specific type of encounter
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object Encounter {
   

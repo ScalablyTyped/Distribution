@@ -2,57 +2,55 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Addnewitem extends StObject {
   
-  var add_new_item: String = js.native
+  var add_new_item: String
   
-  var add_or_remove_items: String | Null = js.native
+  var add_or_remove_items: String | Null
   
-  var all_items: String = js.native
+  var all_items: String
   
-  var back_to_items: String = js.native
+  var back_to_items: String
   
-  var choose_from_most_used: String | Null = js.native
+  var choose_from_most_used: String | Null
   
-  var edit_item: String = js.native
+  var edit_item: String
   
-  var items_list: String = js.native
+  var items_list: String
   
-  var items_list_navigation: String = js.native
+  var items_list_navigation: String
   
-  var menu_name: String = js.native
+  var menu_name: String
   
-  var most_used: String = js.native
+  var most_used: String
   
-  var name: String = js.native
+  var name: String
   
-  var name_admin_bar: String = js.native
+  var name_admin_bar: String
   
-  var new_item_name: String = js.native
+  var new_item_name: String
   
-  var no_terms: String = js.native
+  var no_terms: String
   
-  var not_found: String = js.native
+  var not_found: String
   
-  var parent_item: String | Null = js.native
+  var parent_item: String | Null
   
-  var parent_item_colon: String | Null = js.native
+  var parent_item_colon: String | Null
   
-  var popular_items: String | Null = js.native
+  var popular_items: String | Null
   
-  var search_items: String = js.native
+  var search_items: String
   
-  var separate_items_with_commas: String | Null = js.native
+  var separate_items_with_commas: String | Null
   
-  var singular_name: String = js.native
+  var singular_name: String
   
-  var update_item: String = js.native
+  var update_item: String
   
-  var view_item: String = js.native
+  var view_item: String
 }
 object Addnewitem {
   
@@ -76,7 +74,7 @@ object Addnewitem {
     update_item: String,
     view_item: String
   ): Addnewitem = {
-    val __obj = js.Dynamic.literal(add_new_item = add_new_item.asInstanceOf[js.Any], all_items = all_items.asInstanceOf[js.Any], back_to_items = back_to_items.asInstanceOf[js.Any], edit_item = edit_item.asInstanceOf[js.Any], items_list = items_list.asInstanceOf[js.Any], items_list_navigation = items_list_navigation.asInstanceOf[js.Any], menu_name = menu_name.asInstanceOf[js.Any], most_used = most_used.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_admin_bar = name_admin_bar.asInstanceOf[js.Any], new_item_name = new_item_name.asInstanceOf[js.Any], no_terms = no_terms.asInstanceOf[js.Any], not_found = not_found.asInstanceOf[js.Any], search_items = search_items.asInstanceOf[js.Any], singular_name = singular_name.asInstanceOf[js.Any], update_item = update_item.asInstanceOf[js.Any], view_item = view_item.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(add_new_item = add_new_item.asInstanceOf[js.Any], all_items = all_items.asInstanceOf[js.Any], back_to_items = back_to_items.asInstanceOf[js.Any], edit_item = edit_item.asInstanceOf[js.Any], items_list = items_list.asInstanceOf[js.Any], items_list_navigation = items_list_navigation.asInstanceOf[js.Any], menu_name = menu_name.asInstanceOf[js.Any], most_used = most_used.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_admin_bar = name_admin_bar.asInstanceOf[js.Any], new_item_name = new_item_name.asInstanceOf[js.Any], no_terms = no_terms.asInstanceOf[js.Any], not_found = not_found.asInstanceOf[js.Any], search_items = search_items.asInstanceOf[js.Any], singular_name = singular_name.asInstanceOf[js.Any], update_item = update_item.asInstanceOf[js.Any], view_item = view_item.asInstanceOf[js.Any], add_or_remove_items = null, choose_from_most_used = null, parent_item = null, parent_item_colon = null, popular_items = null, separate_items_with_commas = null)
     __obj.asInstanceOf[Addnewitem]
   }
   

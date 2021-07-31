@@ -10,14 +10,15 @@ import typings.std.NodeList
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mark.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Mark {
+  class ^ protected ()
+    extends StObject
+       with Mark {
     def this(context: String) = this()
     def this(context: js.Array[HTMLElement]) = this()
     def this(context: HTMLElement) = this()
@@ -84,12 +85,11 @@ object mod {
     def partially: typings.markJs.markJsStrings.partially = "partially".asInstanceOf[typings.markJs.markJsStrings.partially]
   }
   
-  @js.native
   trait MarkAccuracyObject extends StObject {
     
-    var limiters: js.UndefOr[js.Array[String]] = js.native
+    var limiters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var value: MarkAccuracy = js.native
+    var value: MarkAccuracy
   }
   object MarkAccuracyObject {
     
@@ -116,28 +116,27 @@ object mod {
     }
   }
   
-  @js.native
   trait MarkOptions extends StObject {
     
-    var accuracy: js.UndefOr[MarkAccuracy | MarkAccuracyObject] = js.native
+    var accuracy: js.UndefOr[MarkAccuracy | MarkAccuracyObject] = js.undefined
     
-    var acrossElements: js.UndefOr[Boolean] = js.native
+    var acrossElements: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var diacritics: js.UndefOr[Boolean] = js.native
+    var diacritics: js.UndefOr[Boolean] = js.undefined
     
-    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.native
+    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.undefined
     
-    var each: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var each: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     var filter: js.UndefOr[
         js.Function4[
@@ -147,25 +146,25 @@ object mod {
           /* marksTotal */ Double, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var iframes: js.UndefOr[Boolean] = js.native
+    var iframes: js.UndefOr[Boolean] = js.undefined
     
-    var iframesTimeout: js.UndefOr[Double] = js.native
+    var iframesTimeout: js.UndefOr[Double] = js.undefined
     
-    var ignoreJoiners: js.UndefOr[Boolean] = js.native
+    var ignoreJoiners: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePunctuation: js.UndefOr[js.Array[String]] = js.native
+    var ignorePunctuation: js.UndefOr[js.Array[String]] = js.undefined
     
-    var log: js.UndefOr[js.Object] = js.native
+    var log: js.UndefOr[js.Object] = js.undefined
     
-    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.native
+    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.undefined
     
-    var separateWordSearch: js.UndefOr[Boolean] = js.native
+    var separateWordSearch: js.UndefOr[Boolean] = js.undefined
     
-    var synonyms: js.UndefOr[StringDictionary[String]] = js.native
+    var synonyms: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var wildcards: js.UndefOr[disabled | enabled | withSpaces] = js.native
+    var wildcards: js.UndefOr[disabled | enabled | withSpaces] = js.undefined
   }
   object MarkOptions {
     
@@ -308,20 +307,19 @@ object mod {
     }
   }
   
-  @js.native
   trait MarkRangesOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.native
+    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.undefined
     
-    var each: js.UndefOr[js.Function2[/* element */ Element, /* range */ Range, Unit]] = js.native
+    var each: js.UndefOr[js.Function2[/* element */ Element, /* range */ Range, Unit]] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     var filter: js.UndefOr[
         js.Function4[
@@ -331,15 +329,15 @@ object mod {
           /* marksTotal */ Double, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var iframes: js.UndefOr[Boolean] = js.native
+    var iframes: js.UndefOr[Boolean] = js.undefined
     
-    var iframesTimeout: js.UndefOr[Double] = js.native
+    var iframesTimeout: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Object] = js.native
+    var log: js.UndefOr[js.Object] = js.undefined
     
-    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.native
+    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.undefined
   }
   object MarkRangesOptions {
     
@@ -425,22 +423,21 @@ object mod {
     }
   }
   
-  @js.native
   trait MarkRegExpOptions extends StObject {
     
-    var acrossElements: js.UndefOr[Boolean] = js.native
+    var acrossElements: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.native
+    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.undefined
     
-    var each: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var each: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     var filter: js.UndefOr[
         js.Function4[
@@ -450,17 +447,17 @@ object mod {
           /* marksTotal */ Double, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var iframes: js.UndefOr[Boolean] = js.native
+    var iframes: js.UndefOr[Boolean] = js.undefined
     
-    var iframesTimeout: js.UndefOr[Double] = js.native
+    var iframesTimeout: js.UndefOr[Double] = js.undefined
     
-    var ignoreGroups: js.UndefOr[Double] = js.native
+    var ignoreGroups: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Object] = js.native
+    var log: js.UndefOr[js.Object] = js.undefined
     
-    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.native
+    var noMatch: js.UndefOr[js.Function1[/* term */ String, Unit]] = js.undefined
   }
   object MarkRegExpOptions {
     
@@ -558,12 +555,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Range {
     
@@ -584,24 +580,23 @@ object mod {
     }
   }
   
-  @js.native
   trait UnmarkOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.native
+    var done: js.UndefOr[js.Function1[/* marksTotal */ Double, Unit]] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var iframes: js.UndefOr[Boolean] = js.native
+    var iframes: js.UndefOr[Boolean] = js.undefined
     
-    var iframesTimeout: js.UndefOr[Double] = js.native
+    var iframesTimeout: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Object] = js.native
+    var log: js.UndefOr[js.Object] = js.undefined
   }
   object UnmarkOptions {
     

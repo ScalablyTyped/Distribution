@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationResult extends StObject {
   
   /**
     * The F1 score for the evaluation of all labels. The F1 score metric evaluates the overall precision and recall performance of the model as a single value. A higher value indicates better precision and recall performance. A lower score indicates that precision, recall, or both are performing poorly. 
     */
-  var F1Score: js.UndefOr[Float] = js.native
+  var F1Score: js.UndefOr[Float] = js.undefined
   
   /**
     * The S3 bucket that contains the training summary.
     */
-  var Summary: js.UndefOr[typings.awsSdk.rekognitionMod.Summary] = js.native
+  var Summary: js.UndefOr[typings.awsSdk.rekognitionMod.Summary] = js.undefined
 }
 object EvaluationResult {
   

@@ -2,13 +2,13 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptimisticUpdateFunction extends OptimisticUpdate {
+trait OptimisticUpdateFunction
+  extends StObject
+     with OptimisticUpdate {
   
-  def storeUpdater(store: RecordSourceProxy): Unit = js.native
+  def storeUpdater(store: RecordSourceProxy): Unit
 }
 object OptimisticUpdateFunction {
   

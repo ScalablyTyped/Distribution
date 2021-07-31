@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SimpleSelect extends StObject {
   
   /**
     * List of items users should select from.
     */
-  var items: js.UndefOr[js.Array[GoogleActionsV2SimpleSelectItem]] = js.native
+  var items: js.UndefOr[js.Array[GoogleActionsV2SimpleSelectItem]] = js.undefined
 }
 object GoogleActionsV2SimpleSelect {
   

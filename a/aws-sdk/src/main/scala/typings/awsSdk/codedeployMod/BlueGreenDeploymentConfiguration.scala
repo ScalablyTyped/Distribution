@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlueGreenDeploymentConfiguration extends StObject {
   
   /**
     * Information about the action to take when newly provisioned instances are ready to receive traffic in a blue/green deployment.
     */
-  var deploymentReadyOption: js.UndefOr[DeploymentReadyOption] = js.native
+  var deploymentReadyOption: js.UndefOr[DeploymentReadyOption] = js.undefined
   
   /**
     * Information about how instances are provisioned for a replacement environment in a blue/green deployment.
     */
-  var greenFleetProvisioningOption: js.UndefOr[GreenFleetProvisioningOption] = js.native
+  var greenFleetProvisioningOption: js.UndefOr[GreenFleetProvisioningOption] = js.undefined
   
   /**
     * Information about whether to terminate instances in the original fleet during a blue/green deployment.
     */
-  var terminateBlueInstancesOnDeploymentSuccess: js.UndefOr[BlueInstanceTerminationOption] = js.native
+  var terminateBlueInstancesOnDeploymentSuccess: js.UndefOr[BlueInstanceTerminationOption] = js.undefined
 }
 object BlueGreenDeploymentConfiguration {
   

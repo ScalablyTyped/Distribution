@@ -2,15 +2,14 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnVisibilityToggleData
-  extends FullTree
+  extends StObject
+     with FullTree
      with TreeNode {
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
 }
 object OnVisibilityToggleData {
   

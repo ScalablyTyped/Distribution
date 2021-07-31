@@ -8,27 +8,25 @@ import typings.gestalt.gestaltStrings.sm
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalProps extends StObject {
   
-  var accessibilityModalLabel: String = js.native
+  var accessibilityModalLabel: String
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var closeOnOutsideClick: js.UndefOr[Boolean] = js.native
+  var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
   
-  var footer: js.UndefOr[ReactNode] = js.native
+  var footer: js.UndefOr[ReactNode] = js.undefined
   
-  var heading: js.UndefOr[String | ReactNode] = js.native
+  var heading: js.UndefOr[String | ReactNode] = js.undefined
   
-  def onDismiss(): Unit = js.native
+  def onDismiss(): Unit
   
-  var role: js.UndefOr[alertdialog | dialog] = js.native
+  var role: js.UndefOr[alertdialog | dialog] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg | Double] = js.native
+  var size: js.UndefOr[sm | md | lg | Double] = js.undefined
 }
 object ModalProps {
   

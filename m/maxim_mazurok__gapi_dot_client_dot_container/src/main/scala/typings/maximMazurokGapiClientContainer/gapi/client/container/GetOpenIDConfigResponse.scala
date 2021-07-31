@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpenIDConfigResponse extends StObject {
   
   /** OnePlatform automatically extracts this field and uses it to set the HTTP Cache-Control header. */
-  var cacheHeader: js.UndefOr[HttpCacheControlResponseHeader] = js.native
+  var cacheHeader: js.UndefOr[HttpCacheControlResponseHeader] = js.undefined
   
   /** Supported claims. */
-  var claims_supported: js.UndefOr[js.Array[String]] = js.native
+  var claims_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Supported grant types. */
-  var grant_types: js.UndefOr[js.Array[String]] = js.native
+  var grant_types: js.UndefOr[js.Array[String]] = js.undefined
   
   /** supported ID Token signing Algorithms. */
-  var id_token_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var id_token_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /** OIDC Issuer. */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /** JSON Web Key uri. */
-  var jwks_uri: js.UndefOr[String] = js.native
+  var jwks_uri: js.UndefOr[String] = js.undefined
   
   /** Supported response types. */
-  var response_types_supported: js.UndefOr[js.Array[String]] = js.native
+  var response_types_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Supported subject types. */
-  var subject_types_supported: js.UndefOr[js.Array[String]] = js.native
+  var subject_types_supported: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GetOpenIDConfigResponse {
   

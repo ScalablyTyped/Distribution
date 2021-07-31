@@ -2,15 +2,13 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendars extends StObject {
   
-  var calendars: js.Array[String] = js.native
+  var calendars: js.Array[String]
   
-  var errors: js.UndefOr[js.Array[Domain]] = js.native
+  var errors: js.UndefOr[js.Array[Domain]] = js.undefined
 }
 object Calendars {
   

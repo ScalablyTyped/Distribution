@@ -2,18 +2,16 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationSetTrackingOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set for which you want to update the custom tracking domain.
     */
-  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName
   
-  var TrackingOptions: typings.awsSdk.sesMod.TrackingOptions = js.native
+  var TrackingOptions: typings.awsSdk.sesMod.TrackingOptions
 }
 object UpdateConfigurationSetTrackingOptionsRequest {
   

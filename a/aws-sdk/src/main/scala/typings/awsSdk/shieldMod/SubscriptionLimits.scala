@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionLimits extends StObject {
   
   /**
     * Limits settings on protection groups for your subscription. 
     */
-  var ProtectionGroupLimits: typings.awsSdk.shieldMod.ProtectionGroupLimits = js.native
+  var ProtectionGroupLimits: typings.awsSdk.shieldMod.ProtectionGroupLimits
   
   /**
     * Limits settings on protections for your subscription. 
     */
-  var ProtectionLimits: typings.awsSdk.shieldMod.ProtectionLimits = js.native
+  var ProtectionLimits: typings.awsSdk.shieldMod.ProtectionLimits
 }
 object SubscriptionLimits {
   

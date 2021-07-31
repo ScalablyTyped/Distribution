@@ -2,39 +2,37 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enum type definition.
   */
-@js.native
 trait SchemaEnum extends StObject {
   
   /**
     * Enum value definitions.
     */
-  var enumvalue: js.UndefOr[js.Array[SchemaEnumValue]] = js.native
+  var enumvalue: js.UndefOr[js.Array[SchemaEnumValue]] = js.undefined
   
   /**
     * Enum type name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Protocol buffer options.
     */
-  var options: js.UndefOr[js.Array[SchemaOption]] = js.native
+  var options: js.UndefOr[js.Array[SchemaOption]] = js.undefined
   
   /**
     * The source context.
     */
-  var sourceContext: js.UndefOr[SchemaSourceContext] = js.native
+  var sourceContext: js.UndefOr[SchemaSourceContext] = js.undefined
   
   /**
     * The source syntax.
     */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
 }
 object SchemaEnum {
   

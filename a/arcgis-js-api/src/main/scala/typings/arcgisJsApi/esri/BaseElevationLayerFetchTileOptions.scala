@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseElevationLayerFetchTileOptions extends Object {
+trait BaseElevationLayerFetchTileOptions
+  extends StObject
+     with Object {
   
   /**
     * The value representing pixels in the tile that don't contain an elevation value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#fetchTile)
     */
-  var noDataValue: js.UndefOr[Double] = js.native
+  var noDataValue: js.UndefOr[Double] = js.undefined
   
   /**
     * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#fetchTile)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object BaseElevationLayerFetchTileOptions {
   

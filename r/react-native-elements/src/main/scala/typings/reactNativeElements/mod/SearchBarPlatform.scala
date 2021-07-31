@@ -2,16 +2,16 @@ package typings.reactNativeElements.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBarPlatform extends SearchBarBase {
+trait SearchBarPlatform
+  extends StObject
+     with SearchBarBase {
   
   /**
     * Callback fired when the cancel button is pressed
     */
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object SearchBarPlatform {
   

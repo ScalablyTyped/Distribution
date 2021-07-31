@@ -2,22 +2,22 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModuleJSON extends TransformModuleJSON {
+trait ModuleJSON
+  extends StObject
+     with TransformModuleJSON {
   
-  var alwaysRemovedCode: js.Array[js.Tuple2[Double, Double]] = js.native
+  var alwaysRemovedCode: js.Array[js.Tuple2[Double, Double]]
   
   @JSName("ast")
-  var ast_ModuleJSON: AcornNode = js.native
+  var ast_ModuleJSON: AcornNode
   
-  var dependencies: js.Array[String] = js.native
+  var dependencies: js.Array[String]
   
-  var id: String = js.native
+  var id: String
   
-  var transformFiles: js.UndefOr[js.Array[EmittedFile]] = js.native
+  var transformFiles: js.UndefOr[js.Array[EmittedFile]] = js.undefined
 }
 object ModuleJSON {
   
@@ -33,7 +33,7 @@ object ModuleJSON {
     sourcemapChain: js.Array[DecodedSourceMapOrMissing],
     transformDependencies: js.Array[String]
   ): ModuleJSON = {
-    val __obj = js.Dynamic.literal(alwaysRemovedCode = alwaysRemovedCode.asInstanceOf[js.Any], ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alwaysRemovedCode = alwaysRemovedCode.asInstanceOf[js.Any], ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any], originalSourcemap = null)
     __obj.asInstanceOf[ModuleJSON]
   }
   

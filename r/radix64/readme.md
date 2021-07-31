@@ -12,7 +12,7 @@ radix64, library to convert Unsigned Interger into a base64 like String
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 893 |
+| # downloads        | 942 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaGlobalSiteTag extends StObject {
   
   /** Immutable. JavaScript code snippet to be pasted as the first item into the head tag of every webpage to measure. */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaGlobalSiteTag {
   

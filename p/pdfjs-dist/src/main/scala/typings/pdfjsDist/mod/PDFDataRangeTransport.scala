@@ -2,33 +2,31 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFDataRangeTransport extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  def addProgressListener(listener: PDFDataRangeTransportListener): Unit = js.native
+  def addProgressListener(listener: PDFDataRangeTransportListener): Unit
   
-  def addProgressiveDoneListener(listener: PDFDataRangeTransportListener): Unit = js.native
+  def addProgressiveDoneListener(listener: PDFDataRangeTransportListener): Unit
   
-  def addProgressiveReadListener(listener: PDFDataRangeTransportListener): Unit = js.native
+  def addProgressiveReadListener(listener: PDFDataRangeTransportListener): Unit
   
-  def addRangeListener(listener: PDFDataRangeTransportListener): Unit = js.native
+  def addRangeListener(listener: PDFDataRangeTransportListener): Unit
   
-  def onDataProgress(loaded: Double, total: Double): Unit = js.native
+  def onDataProgress(loaded: Double, total: Double): Unit
   
-  def onDataProgressiveDone(): Unit = js.native
+  def onDataProgressiveDone(): Unit
   
-  def onDataProgressiveRead(chunk: js.Any): Unit = js.native
+  def onDataProgressiveRead(chunk: js.Any): Unit
   
-  def onDataRange(begin: Double, chunk: js.Any): Unit = js.native
+  def onDataRange(begin: Double, chunk: js.Any): Unit
   
-  def requestDataRange(begin: Double, end: Double): Unit = js.native
+  def requestDataRange(begin: Double, end: Double): Unit
   
-  def transportReady(): Unit = js.native
+  def transportReady(): Unit
 }
 object PDFDataRangeTransport {
   

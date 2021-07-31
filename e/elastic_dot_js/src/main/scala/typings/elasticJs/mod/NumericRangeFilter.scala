@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "NumericRangeFilter")
 @js.native
-class NumericRangeFilter protected () extends Filter {
+class NumericRangeFilter protected ()
+  extends StObject
+     with Filter {
   /*
     A Filter that only accepts numeric values within a specified range.
     */

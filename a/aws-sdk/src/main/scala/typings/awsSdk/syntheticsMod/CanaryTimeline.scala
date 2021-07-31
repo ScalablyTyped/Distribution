@@ -2,31 +2,29 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryTimeline extends StObject {
   
   /**
     * The date and time the canary was created.
     */
-  var Created: js.UndefOr[Timestamp] = js.native
+  var Created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time the canary was most recently modified.
     */
-  var LastModified: js.UndefOr[Timestamp] = js.native
+  var LastModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time that the canary's most recent run started.
     */
-  var LastStarted: js.UndefOr[Timestamp] = js.native
+  var LastStarted: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time that the canary's most recent run ended.
     */
-  var LastStopped: js.UndefOr[Timestamp] = js.native
+  var LastStopped: js.UndefOr[Timestamp] = js.undefined
 }
 object CanaryTimeline {
   

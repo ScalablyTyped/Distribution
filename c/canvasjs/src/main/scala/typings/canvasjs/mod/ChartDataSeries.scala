@@ -2,11 +2,12 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartDataSeries extends ChartDataSeriesOptions {
+trait ChartDataSeries
+  extends StObject
+     with ChartDataSeriesOptions {
   
   /**
     * Adds a new element of given type to the specified array. For example, it can be used to add new dataPoint to datPoints array.
@@ -16,14 +17,9 @@ trait ChartDataSeries extends ChartDataSeriesOptions {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartDataPoint): Unit = js.native
-  def addTo(
-    propertyName: String,
-    options: ChartDataPoint,
-    index: js.UndefOr[scala.Nothing],
-    updateChart: Boolean
-  ): Unit = js.native
   def addTo(propertyName: String, options: ChartDataPoint, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartDataPoint, index: Double, updateChart: Boolean): Unit = js.native
+  def addTo(propertyName: String, options: ChartDataPoint, index: Unit, updateChart: Boolean): Unit = js.native
   
   /**
     * Returns the specified property of dataSeries

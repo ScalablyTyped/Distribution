@@ -2,26 +2,24 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestExpiryOptions extends StObject {
   
   /**
     * Header name of the absolute time for request expiration
     */
-  var absoluteHeader: js.UndefOr[String] = js.native
+  var absoluteHeader: js.UndefOr[String] = js.undefined
   
   /**
     * Header name for the start time of the request
     */
-  var startHeader: js.UndefOr[String] = js.native
+  var startHeader: js.UndefOr[String] = js.undefined
   
   /**
     * The header name for the time in milliseconds that should ellapse before the request is considered expired.
     */
-  var timeoutHeader: js.UndefOr[String] = js.native
+  var timeoutHeader: js.UndefOr[String] = js.undefined
 }
 object RequestExpiryOptions {
   

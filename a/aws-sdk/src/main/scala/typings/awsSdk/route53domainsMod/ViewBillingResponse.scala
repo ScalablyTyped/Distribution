@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewBillingResponse extends StObject {
   
   /**
     * A summary of billing records.
     */
-  var BillingRecords: js.UndefOr[typings.awsSdk.route53domainsMod.BillingRecords] = js.native
+  var BillingRecords: js.UndefOr[typings.awsSdk.route53domainsMod.BillingRecords] = js.undefined
   
   /**
     * If there are more billing records than you specified for MaxItems in the request, submit another request and include the value of NextPageMarker in the value of Marker.
     */
-  var NextPageMarker: js.UndefOr[PageMarker] = js.native
+  var NextPageMarker: js.UndefOr[PageMarker] = js.undefined
 }
 object ViewBillingResponse {
   

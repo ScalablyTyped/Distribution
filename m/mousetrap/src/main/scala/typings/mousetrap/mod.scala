@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,32 +15,36 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("mousetrap", JSImport.Namespace)
   @js.native
-  class ^ () extends MousetrapInstance {
+  class ^ ()
+    extends StObject
+       with MousetrapInstance {
     def this(el: Element) = this()
   }
   @JSImport("mousetrap", JSImport.Namespace)
   @js.native
-  val ^ : MousetrapStatic = js.native
+  val ^ : js.Object & MousetrapStatic = js.native
   
   @js.native
-  trait ExtendedKeyboardEvent extends KeyboardEvent
+  trait ExtendedKeyboardEvent
+    extends StObject
+       with KeyboardEvent
   
   @js.native
   trait MousetrapInstance extends StObject {
     
-    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]): this.type = js.native
+    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]): this.type = js.native
     def bind(
       keys: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): this.type = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]
     ): this.type = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): this.type = js.native
     
@@ -62,43 +65,47 @@ object mod extends Shortcut {
   
   @js.native
   trait MousetrapStatic
-    extends Instantiable0[MousetrapInstance]
+    extends StObject
+       with Instantiable0[MousetrapInstance]
        with Instantiable1[/* el */ Element, MousetrapInstance] {
     
     def apply(el: Element): MousetrapInstance = js.native
     
     def addKeycodes(keycodes: NumberDictionary[String]): Unit = js.native
     
-    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]): MousetrapInstance = js.native
+    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]): MousetrapInstance = js.native
     def bind(
       keys: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): MousetrapInstance = js.native
     
     /** https://craig.is/killing/mice#extensions.global */
-    def bindGlobal(keyArray: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]): Unit = js.native
     def bindGlobal(
       keyArray: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]
+    ): Unit = js.native
+    def bindGlobal(
+      keyArray: String,
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): Unit = js.native
     def bindGlobal(
       keyArray: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any]
     ): Unit = js.native
     def bindGlobal(
       keyArray: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, _],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, js.Any],
       action: String
     ): Unit = js.native
     
@@ -115,8 +122,8 @@ object mod extends Shortcut {
     def unbind(keys: js.Array[String], action: String): MousetrapInstance = js.native
   }
   
-  type _To = MousetrapStatic
+  type _To = js.Object & MousetrapStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: MousetrapStatic = ^
+  override def _to: js.Object & MousetrapStatic = ^
 }

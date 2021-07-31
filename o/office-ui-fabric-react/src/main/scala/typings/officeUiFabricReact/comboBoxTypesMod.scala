@@ -19,7 +19,6 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboBoxTypesMod {
@@ -39,9 +38,9 @@ object comboBoxTypesMod {
       * @returns True if focus could be set, false if no operation was taken.
       */
     def focus(): Boolean = js.native
-    def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: Boolean): Boolean = js.native
     def focus(shouldOpenOnFocus: Boolean): Boolean = js.native
     def focus(shouldOpenOnFocus: Boolean, useFocusAsync: Boolean): Boolean = js.native
+    def focus(shouldOpenOnFocus: Unit, useFocusAsync: Boolean): Boolean = js.native
     
     /**
       * All selected options
@@ -49,30 +48,29 @@ object comboBoxTypesMod {
     val selectedOptions: js.Array[IComboBoxOption] = js.native
   }
   
-  @js.native
   trait IComboBoxClassNames extends StObject {
     
-    var callout: String = js.native
+    var callout: String
     
-    var container: String = js.native
+    var container: String
     
-    var divider: String = js.native
+    var divider: String
     
-    var errorMessage: String = js.native
+    var errorMessage: String
     
-    var header: String = js.native
+    var header: String
     
-    var input: String = js.native
+    var input: String
     
-    var label: String = js.native
+    var label: String
     
-    var optionsContainer: String = js.native
+    var optionsContainer: String
     
-    var optionsContainerWrapper: String = js.native
+    var optionsContainerWrapper: String
     
-    var root: String = js.native
+    var root: String
     
-    var screenReaderText: String = js.native
+    var screenReaderText: String
   }
   object IComboBoxClassNames {
     
@@ -132,22 +130,23 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
-  trait IComboBoxOption extends ISelectableOption {
+  trait IComboBoxOption
+    extends StObject
+       with ISelectableOption {
     
     /**
       * Specific styles for each comboBox option. If you intend to give
       * common styles to all comboBox option please use
       * the prop comboBoxOptionStyles
       */
-    var styles: js.UndefOr[PartialIComboBoxOptionSty] = js.native
+    var styles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
     
     /**
       * In scenarios where embedded data is used at the text prop, we will use the ariaLabel prop
       * to set the aria-label and preview text. Default to false
       * @defaultvalue false;
       */
-    var useAriaLabelAsText: js.UndefOr[Boolean] = js.native
+    var useAriaLabelAsText: js.UndefOr[Boolean] = js.undefined
   }
   object IComboBoxOption {
     
@@ -174,14 +173,13 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
   trait IComboBoxOptionClassNames extends StObject {
     
-    var optionText: String = js.native
+    var optionText: String
     
-    var optionTextWrapper: String = js.native
+    var optionTextWrapper: String
     
-    var root: String = js.native
+    var root: String
   }
   object IComboBoxOptionClassNames {
     
@@ -205,8 +203,9 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
-  trait IComboBoxOptionStyles extends IButtonStyles {
+  trait IComboBoxOptionStyles
+    extends StObject
+       with IButtonStyles {
     
     /**
       * Styles for the text inside the comboBox option.
@@ -214,12 +213,12 @@ object comboBoxTypesMod {
       * inside IButtonStyles because we custom render the text
       * in the comboBox options.
       */
-    var optionText: IStyle = js.native
+    var optionText: IStyle
     
     /**
       * Styles for the comboBox option text's wrapper.
       */
-    var optionTextWrapper: IStyle = js.native
+    var optionTextWrapper: IStyle
   }
   object IComboBoxOptionStyles {
     
@@ -252,18 +251,19 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
-  trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox] {
+  trait IComboBoxProps
+    extends StObject
+       with ISelectableDroppableTextProps[IComboBox, IComboBox] {
     
     /**
       * Whether the ComboBox is free form, meaning that the user input is not bound to provided options. Defaults to false.
       */
-    var allowFreeform: js.UndefOr[Boolean] = js.native
+    var allowFreeform: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional prop to add a string id that can be referenced inside the aria-describedby attribute
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from
@@ -272,38 +272,38 @@ object comboBoxTypesMod {
       *
       * @defaultvalue "on"
       */
-    var autoComplete: js.UndefOr[on | off] = js.native
+    var autoComplete: js.UndefOr[on | off] = js.undefined
     
     /**
       * The AutofillProps to be passed into the Autofill component inside combobox
       */
-    var autofill: js.UndefOr[IAutofillProps] = js.native
+    var autofill: js.UndefOr[IAutofillProps] = js.undefined
     
     /**
       * The IconProps to use for the button aspect of the combobox
       */
-    var buttonIconProps: js.UndefOr[IIconProps] = js.native
+    var buttonIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Styles for the caret down button.
       */
-    var caretDownButtonStyles: js.UndefOr[PartialIButtonStyles] = js.native
+    var caretDownButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
     
     /**
       * Default styles that should be applied to ComboBox options,
       * in case an option does not come with user-defined custom styles
       */
-    var comboBoxOptionStyles: js.UndefOr[PartialIComboBoxOptionSty] = js.native
+    var comboBoxOptionStyles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
     
     /**
       * Custom max width for dropdown
       */
-    var dropdownMaxWidth: js.UndefOr[Double] = js.native
+    var dropdownMaxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom width for dropdown (unless useComboBoxAsMenuWidth is undefined or false)
       */
-    var dropdownWidth: js.UndefOr[Double] = js.native
+    var dropdownWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom function for providing the classNames for the ComboBox. Can be used to provide
@@ -321,12 +321,12 @@ object comboBoxTypesMod {
           /* className */ js.UndefOr[String], 
           IComboBoxClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional iconButton props on combo box
       */
-    var iconButtonProps: js.UndefOr[IButtonProps] = js.native
+    var iconButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle
@@ -334,19 +334,19 @@ object comboBoxTypesMod {
       * the arrow button is only meant to be decorative.
       * @defaultvalue true
       */
-    var isButtonAriaHidden: js.UndefOr[Boolean] = js.native
+    var isButtonAriaHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional keytip for this combo box
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * When multiple items are selected, this will be used to separate values in the combobox input.
       *
       * @defaultvalue ", "
       */
-    var multiSelectDelimiter: js.UndefOr[String] = js.native
+    var multiSelectDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Callback issued when either:
@@ -363,7 +363,7 @@ object comboBoxTypesMod {
           /* value */ js.UndefOr[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback issued when a ComboBox item is clicked.
@@ -375,22 +375,22 @@ object comboBoxTypesMod {
           /* index */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function that gets invoked before the menu gets dismissed
       */
-    var onMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function that gets invoked when the ComboBox menu is dismissed
       */
-    var onMenuDismissed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMenuDismissed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function that gets invoked when the ComboBox menu is launched
       */
-    var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback issued when the user changes the pending value in ComboBox.
@@ -405,22 +405,22 @@ object comboBoxTypesMod {
           /* value */ js.UndefOr[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom render function for the label text.
       */
-    var onRenderLabel: js.UndefOr[IRenderFunction[IOnRenderComboBoxLabelProps]] = js.native
+    var onRenderLabel: js.UndefOr[IRenderFunction[IOnRenderComboBoxLabelProps]] = js.undefined
     
     /**
       * Add additional content below the callout list.
       */
-    var onRenderLowerContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.native
+    var onRenderLowerContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
     
     /**
       * Add additional content above the callout list.
       */
-    var onRenderUpperContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.native
+    var onRenderUpperContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
     
     /**
       * Callback issued when the options should be resolved, if they have been updated or
@@ -431,18 +431,18 @@ object comboBoxTypesMod {
           /* options */ js.Array[IComboBoxOption], 
           js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback issued when the ComboBox requests the list to scroll to a specific element
       */
-    var onScrollToItem: js.UndefOr[js.Function1[/* itemIndex */ Double, Unit]] = js.native
+    var onScrollToItem: js.UndefOr[js.Function1[/* itemIndex */ Double, Unit]] = js.undefined
     
     /**
       * Collection of options for this ComboBox
       */
     @JSName("options")
-    var options_IComboBoxProps: js.Array[IComboBoxOption] = js.native
+    var options_IComboBoxProps: js.Array[IComboBoxOption]
     
     /**
       * Menu will not be created or destroyed when opened or closed, instead it
@@ -451,14 +451,14 @@ object comboBoxTypesMod {
       * when perf is important.
       * Note: This may increase the amount of time it takes for the comboBox itself to mount.
       */
-    var persistMenu: js.UndefOr[Boolean] = js.native
+    var persistMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When options are scrollable the selected option is positioned at the top of the callout when it is opened
       * (unless it has reached the end of the scrollbar).
       * @defaultvalue false;
       */
-    var scrollSelectedToTop: js.UndefOr[Boolean] = js.native
+    var scrollSelectedToTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When specified, determines whether the callout (the menu which drops down) should
@@ -466,27 +466,27 @@ object comboBoxTypesMod {
       * to set focus to whichever element had focus before the menu was opened.
       * @defaultvalue true;
       */
-    var shouldRestoreFocus: js.UndefOr[Boolean] = js.native
+    var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styles for this component
       */
-    var styles: js.UndefOr[PartialIComboBoxStyles] = js.native
+    var styles: js.UndefOr[PartialIComboBoxStyles] = js.undefined
     
     /**
       * Value to show in the input, does not have to map to a combobox option
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether to use the ComboBoxes width as the menu's width
       */
-    var useComboBoxAsMenuWidth: js.UndefOr[Boolean] = js.native
+    var useComboBoxAsMenuWidth: js.UndefOr[Boolean] = js.undefined
   }
   object IComboBoxProps {
     
@@ -717,109 +717,108 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
   trait IComboBoxStyles extends StObject {
     
     /**
       * Styles for the callout.
       */
-    var callout: IStyle = js.native
+    var callout: IStyle
     
     /**
       * Style for the container which has the ComboBox and the label
       */
-    var container: IStyle = js.native
+    var container: IStyle
     
     /**
       * Styles for a divider in the options.
       */
-    var divider: IStyle = js.native
+    var divider: IStyle
     
     /**
       * Styles for the error Message text of the comboBox.
       */
-    var errorMessage: IStyle = js.native
+    var errorMessage: IStyle
     
     /**
       * Styles for a header in the options.
       */
-    var header: IStyle = js.native
+    var header: IStyle
     
     /**
       * Base styles for the input element - which contains the currently selected
       * option.
       */
-    var input: IStyle = js.native
+    var input: IStyle
     
     /**
       * Style override for the input element when comboBox is disabled.
       */
-    var inputDisabled: IStyle = js.native
+    var inputDisabled: IStyle
     
     /**
       * Style for the label element of the ComboBox.
       */
-    var label: IStyle = js.native
+    var label: IStyle
     
     /**
       * Style for the label element of the ComboBox in the disabled state.
       */
-    var labelDisabled: IStyle = js.native
+    var labelDisabled: IStyle
     
     /**
       * Styles for the container of all the Combobox options
       * Includes the headers and dividers.
       */
-    var optionsContainer: IStyle = js.native
+    var optionsContainer: IStyle
     
     /**
       * Styles for the optionsContainerWrapper.
       */
-    var optionsContainerWrapper: IStyle = js.native
+    var optionsContainerWrapper: IStyle
     
     /**
       * Base styles for the root element of all ComboBoxes.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Styles for when the comboBox is disabled. These styles override all the other styles.
       * NOTE : Hover (or) Focused (or) active styles are not applied for disabled comboBoxes.
       */
-    var rootDisabled: IStyle = js.native
+    var rootDisabled: IStyle
     
     /**
       * Styles for variant of ComboBox where allowFreeForm is false in the props.
       */
-    var rootDisallowFreeForm: IStyle = js.native
+    var rootDisallowFreeForm: IStyle
     
     /**
       * Styles for the root element for variant of ComboBox with an errorMessage in the props.
       */
-    var rootError: IStyle = js.native
+    var rootError: IStyle
     
     /**
       * Styles for when the ComboBox is focused. These styles are applied for all comboBoxes except when
       * the comboBox is disabled.
       */
-    var rootFocused: IStyle = js.native
+    var rootFocused: IStyle
     
     /**
       * Styles for when the ComboBox is hovered. These styles are applied for all comboBoxes except when
       * the comboBox is disabled.
       */
-    var rootHovered: IStyle = js.native
+    var rootHovered: IStyle
     
     /**
       * Styles for when the ComboBox is active. These styles are applied for all comboBoxes except when
       * the comboBox is disabled.
       */
-    var rootPressed: IStyle = js.native
+    var rootPressed: IStyle
     
     /**
       * Styles for hidden screen reader text.
       */
-    var screenReaderText: IStyle = js.native
+    var screenReaderText: IStyle
   }
   object IComboBoxStyles {
     
@@ -1005,18 +1004,17 @@ object comboBoxTypesMod {
     }
   }
   
-  @js.native
   trait IOnRenderComboBoxLabelProps extends StObject {
     
     /**
       * Accessible text for label when combobox is multiselected.
       */
-    var multiselectAccessibleText: js.UndefOr[String] = js.native
+    var multiselectAccessibleText: js.UndefOr[String] = js.undefined
     
     /**
       * Props to render the combobox.
       */
-    var props: IComboBoxProps = js.native
+    var props: IComboBoxProps
   }
   object IOnRenderComboBoxLabelProps {
     

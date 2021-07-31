@@ -4,17 +4,17 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureTableSelectionChangeEventRemoved extends Object {
+trait FeatureTableSelectionChangeEventRemoved
+  extends StObject
+     with Object {
   
-  var attachments: js.Array[AttachmentInfo] = js.native
+  var attachments: js.Array[AttachmentInfo]
   
-  var feature: Graphic = js.native
+  var feature: Graphic
   
-  var relatedRecords: js.Array[Graphic] = js.native
+  var relatedRecords: js.Array[Graphic]
 }
 object FeatureTableSelectionChangeEventRemoved {
   

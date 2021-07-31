@@ -2,17 +2,15 @@ package typings.dateFns.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeSeconds extends StObject {
   
-  var addSuffix: js.UndefOr[Boolean] = js.native
+  var addSuffix: js.UndefOr[Boolean] = js.undefined
   
-  var includeSeconds: js.UndefOr[Boolean] = js.native
+  var includeSeconds: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[typings.dateFns.Locale] = js.native
+  var locale: js.UndefOr[typings.dateFns.Locale] = js.undefined
 }
 object IncludeSeconds {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocationObjectStorageResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }
 object CreateLocationObjectStorageResponse {
   

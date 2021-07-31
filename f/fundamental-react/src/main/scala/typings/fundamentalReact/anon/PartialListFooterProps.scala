@@ -2,14 +2,12 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/List/List.ListFooterProps> */
-@js.native
 trait PartialListFooterProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
 }
 object PartialListFooterProps {
   

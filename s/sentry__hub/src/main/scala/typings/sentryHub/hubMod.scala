@@ -8,10 +8,13 @@ import typings.sentryTypes.clientMod.Client
 import typings.sentryTypes.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hubMod {
+  
+  @JSImport("@sentry/hub/dist/hub", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@sentry/hub/dist/hub", "API_VERSION")
   @js.native
@@ -28,13 +31,14 @@ object hubMod {
     * @param version number, higher number means higher priority.
     */
   class Hub ()
-    extends typings.sentryTypes.hubMod.Hub {
+    extends StObject
+       with typings.sentryTypes.hubMod.Hub {
     def this(client: Client[Options]) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: Scope) = this()
+    def this(client: Unit, scope: Scope) = this()
     def this(client: Client[Options], scope: Scope) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], _version: Double) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: Scope, _version: Double) = this()
-    def this(client: Client[Options], scope: js.UndefOr[scala.Nothing], _version: Double) = this()
+    def this(client: Unit, scope: Unit, _version: Double) = this()
+    def this(client: Unit, scope: Scope, _version: Double) = this()
+    def this(client: Client[Options], scope: Unit, _version: Double) = this()
     def this(client: Client[Options], scope: Scope, _version: Double) = this()
     
     /**
@@ -68,27 +72,21 @@ object hubMod {
     def getStackTop(): Layer = js.native
   }
   
-  @JSImport("@sentry/hub/dist/hub", "getActiveDomain")
-  @js.native
-  def getActiveDomain(): js.UndefOr[DomainAsCarrier] = js.native
+  @scala.inline
+  def getActiveDomain(): js.UndefOr[DomainAsCarrier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveDomain")().asInstanceOf[js.UndefOr[DomainAsCarrier]]
   
-  @JSImport("@sentry/hub/dist/hub", "getCurrentHub")
-  @js.native
-  def getCurrentHub(): Hub = js.native
+  @scala.inline
+  def getCurrentHub(): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[Hub]
   
-  @JSImport("@sentry/hub/dist/hub", "getHubFromCarrier")
-  @js.native
-  def getHubFromCarrier(carrier: Carrier): Hub = js.native
+  @scala.inline
+  def getHubFromCarrier(carrier: Carrier): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[Hub]
   
-  @JSImport("@sentry/hub/dist/hub", "getMainCarrier")
-  @js.native
-  def getMainCarrier(): Carrier = js.native
+  @scala.inline
+  def getMainCarrier(): Carrier = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainCarrier")().asInstanceOf[Carrier]
   
-  @JSImport("@sentry/hub/dist/hub", "makeMain")
-  @js.native
-  def makeMain(hub: Hub): Hub = js.native
+  @scala.inline
+  def makeMain(hub: Hub): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[Hub]
   
-  @JSImport("@sentry/hub/dist/hub", "setHubOnCarrier")
-  @js.native
-  def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = js.native
+  @scala.inline
+  def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setHubOnCarrier")(carrier.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

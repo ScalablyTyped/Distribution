@@ -2,13 +2,13 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InfoCalendarOptions extends InfoUnitOptions {
+trait InfoCalendarOptions
+  extends StObject
+     with InfoUnitOptions {
   
-  var outputCalendar: js.UndefOr[CalendarSystem] = js.native
+  var outputCalendar: js.UndefOr[CalendarSystem] = js.undefined
 }
 object InfoCalendarOptions {
   

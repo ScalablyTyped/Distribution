@@ -12,7 +12,7 @@ HTTP REST client, simplified for Node.js.
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 2770896 |
+| # downloads        | 2967551 |
 | # stars            | 3 |
 
 ## Links

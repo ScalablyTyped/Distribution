@@ -4,31 +4,29 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UI {
   
-  @js.native
   trait Button extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var flyout: Element = js.native
+    var flyout: Element
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var hoverContent: String = js.native
+    var hoverContent: String
     
-    var label: String = js.native
+    var label: String
     
-    var tooltip: String = js.native
+    var tooltip: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Button {
     
@@ -81,70 +79,69 @@ object UI {
     }
   }
   
-  @js.native
   trait ControlPanel extends StObject {
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var flyoutContainerElement: HTMLElement = js.native
+    var flyoutContainerElement: HTMLElement
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var isAudioHidden: Boolean = js.native
+    var isAudioHidden: Boolean
     
-    var isCaptionsHidden: Boolean = js.native
+    var isCaptionsHidden: Boolean
     
-    var isElapsedTimeHidden: Boolean = js.native
+    var isElapsedTimeHidden: Boolean
     
-    var isFastForwardHidden: Boolean = js.native
+    var isFastForwardHidden: Boolean
     
-    var isFullScreenHidden: Boolean = js.native
+    var isFullScreenHidden: Boolean
     
-    var isGoLiveHidden: Boolean = js.native
+    var isGoLiveHidden: Boolean
     
-    var isInfoHidden: Boolean = js.native
+    var isInfoHidden: Boolean
     
-    var isMediaQualityHidden: Boolean = js.native
+    var isMediaQualityHidden: Boolean
     
-    var isMoreHidden: Boolean = js.native
+    var isMoreHidden: Boolean
     
-    var isMuteHidden: Boolean = js.native
+    var isMuteHidden: Boolean
     
-    var isPauseHidden: Boolean = js.native
+    var isPauseHidden: Boolean
     
-    var isPlayPauseHidden: Boolean = js.native
+    var isPlayPauseHidden: Boolean
     
-    var isPlayResumeHidden: Boolean = js.native
+    var isPlayResumeHidden: Boolean
     
-    var isRemainingTimeHidden: Boolean = js.native
+    var isRemainingTimeHidden: Boolean
     
-    var isReplayHidden: Boolean = js.native
+    var isReplayHidden: Boolean
     
-    var isRewindHidden: Boolean = js.native
+    var isRewindHidden: Boolean
     
-    var isSignalStrengthHidden: Boolean = js.native
+    var isSignalStrengthHidden: Boolean
     
-    var isSkipAheadHidden: Boolean = js.native
+    var isSkipAheadHidden: Boolean
     
-    var isSkipBackHidden: Boolean = js.native
+    var isSkipBackHidden: Boolean
     
-    var isSkipNextHidden: Boolean = js.native
+    var isSkipNextHidden: Boolean
     
-    var isSkipPreviousHidden: Boolean = js.native
+    var isSkipPreviousHidden: Boolean
     
-    var isSlowMotionHidden: Boolean = js.native
+    var isSlowMotionHidden: Boolean
     
-    var isStopHidden: Boolean = js.native
+    var isStopHidden: Boolean
     
-    var isTimelineHidden: Boolean = js.native
+    var isTimelineHidden: Boolean
     
-    var isTotalTimeHidden: Boolean = js.native
+    var isTotalTimeHidden: Boolean
     
-    var isVolumeHidden: Boolean = js.native
+    var isVolumeHidden: Boolean
     
-    var isVolumeMuteHidden: Boolean = js.native
+    var isVolumeMuteHidden: Boolean
     
-    var isZoomHidden: Boolean = js.native
+    var isZoomHidden: Boolean
   }
   object ControlPanel {
     
@@ -284,20 +281,19 @@ object UI {
     }
   }
   
-  @js.native
   trait Indicator extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var label: String = js.native
+    var label: String
     
-    var tooltip: String = js.native
+    var tooltip: String
     
-    var value: String = js.native
+    var value: String
   }
   object Indicator {
     
@@ -337,20 +333,19 @@ object UI {
     }
   }
   
-  @js.native
   trait Meter extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var label: String = js.native
+    var label: String
     
-    var tooltip: String = js.native
+    var tooltip: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Meter {
     
@@ -390,42 +385,41 @@ object UI {
     }
   }
   
-  @js.native
   trait Slider extends StObject {
     
-    var altStep1: Double = js.native
+    var altStep1: Double
     
-    var altStep2: Double = js.native
+    var altStep2: Double
     
-    var altStep3: Double = js.native
+    var altStep3: Double
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var isThumbnailVisible: Boolean = js.native
+    var isThumbnailVisible: Boolean
     
-    var label: String = js.native
+    var label: String
     
-    var markers: js.Array[_] = js.native
+    var markers: js.Array[js.Any]
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var step: Double = js.native
+    var step: Double
     
-    var thumbnailImageSrc: String = js.native
+    var thumbnailImageSrc: String
     
-    var tooltip: String = js.native
+    var tooltip: String
     
-    var value: Double = js.native
+    var value: Double
     
-    var vertical: Boolean = js.native
+    var vertical: Boolean
   }
   object Slider {
     
@@ -439,7 +433,7 @@ object UI {
       hidden: Boolean,
       isThumbnailVisible: Boolean,
       label: String,
-      markers: js.Array[_],
+      markers: js.Array[js.Any],
       max: Double,
       min: Double,
       progress: Double,
@@ -481,7 +475,7 @@ object UI {
       def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMarkers(value: js.Array[_]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))

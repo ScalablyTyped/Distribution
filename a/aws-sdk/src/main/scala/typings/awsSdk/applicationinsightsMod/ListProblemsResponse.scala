@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProblemsResponse extends StObject {
   
   /**
     * The token used to retrieve the next page of results. This value is null when there are no more results to return. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The list of problems. 
     */
-  var ProblemList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ProblemList] = js.native
+  var ProblemList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ProblemList] = js.undefined
 }
 object ListProblemsResponse {
   

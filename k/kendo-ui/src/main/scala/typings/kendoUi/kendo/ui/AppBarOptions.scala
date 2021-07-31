@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppBarOptions extends StObject {
   
-  var items: js.UndefOr[js.Array[AppBarItem]] = js.native
+  var items: js.UndefOr[js.Array[AppBarItem]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var positionMode: js.UndefOr[String] = js.native
+  var positionMode: js.UndefOr[String] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ AppBarResizeEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ AppBarResizeEvent, Unit]] = js.undefined
   
-  var themeColor: js.UndefOr[String] = js.native
+  var themeColor: js.UndefOr[String] = js.undefined
 }
 object AppBarOptions {
   

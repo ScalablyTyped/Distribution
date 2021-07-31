@@ -2,34 +2,32 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTaskPane extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val ContentControl: js.Any = js.native
+  val ContentControl: js.Any
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var DockPosition: MsoCTPDockPosition = js.native
+  var DockPosition: MsoCTPDockPosition
   
-  var DockPositionRestrict: MsoCTPDockPositionRestrict = js.native
+  var DockPositionRestrict: MsoCTPDockPositionRestrict
   
-  var Height: Double = js.native
+  var Height: Double
   
   @JSName("Office.CustomTaskPane_typekey")
-  var OfficeDotCustomTaskPane_typekey: CustomTaskPane = js.native
+  var OfficeDotCustomTaskPane_typekey: CustomTaskPane
   
-  val Title: String = js.native
+  val Title: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
-  var Width: Double = js.native
+  var Width: Double
   
-  val Window: js.Any = js.native
+  val Window: js.Any
 }
 object CustomTaskPane {
   

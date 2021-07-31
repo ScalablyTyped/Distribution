@@ -10,7 +10,6 @@ import typings.std.Date
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,8 +32,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   def this(className: String) = this()
   
-  def addArray(key: AttrType[T, js.Array[_]]): this.type = js.native
-  def addArray(key: AttrType[T, js.Array[_]], options: FieldOptions[js.Array[_]]): this.type = js.native
+  def addArray(key: AttrType[T, js.Array[js.Any]]): this.type = js.native
+  def addArray(key: AttrType[T, js.Array[js.Any]], options: FieldOptions[js.Array[js.Any]]): this.type = js.native
   
   def addBoolean(key: AttrType[T, Boolean]): this.type = js.native
   def addBoolean(key: AttrType[T, Boolean], options: FieldOptions[Boolean]): this.type = js.native
@@ -44,8 +43,8 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   
   def addField[T /* <: TYPE */](name: String): this.type = js.native
   def addField[T /* <: TYPE */](name: String, `type`: T): this.type = js.native
-  def addField[T /* <: TYPE */](name: String, `type`: T, options: FieldOptions[_]): this.type = js.native
-  def addField[T /* <: TYPE */](name: String, `type`: js.UndefOr[scala.Nothing], options: FieldOptions[_]): this.type = js.native
+  def addField[T /* <: TYPE */](name: String, `type`: T, options: FieldOptions[js.Any]): this.type = js.native
+  def addField[T /* <: TYPE */](name: String, `type`: Unit, options: FieldOptions[js.Any]): this.type = js.native
   
   def addFile(key: AttrType[T, File]): this.type = js.native
   def addFile(key: AttrType[T, File], options: FieldOptions[File]): this.type = js.native
@@ -108,7 +107,7 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
     * @returns A promise that is resolved with the result when the query completes.
     */
   // @TODO Fix Promise<any>
-  def delete(): js.Promise[_] = js.native
+  def delete(): js.Promise[js.Any] = js.native
   
   /**
     * Deleting a Field to Update on a Schema
@@ -127,18 +126,18 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   /**
     * Get the Schema from Parse
     */
-  def get(): js.Promise[Schema[_]] = js.native
+  def get(): js.Promise[Schema[js.Any]] = js.native
   
   /**
     * Removes all objects from a Schema (class) in  EXERCISE CAUTION, running this will delete all objects for this schema and cannot be reversed
     */
   // TODO Fix Promise<any>
-  def purge(): js.Promise[_] = js.native
+  def purge(): js.Promise[js.Any] = js.native
   
   /**
     * Create a new Schema on Parse
     */
-  def save(): js.Promise[Schema[_]] = js.native
+  def save(): js.Promise[Schema[js.Any]] = js.native
   
   /**
     * Sets Class Level Permissions when creating / updating a Schema.
@@ -149,9 +148,13 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   /**
     * Update a Schema on Parse
     */
-  def update(): js.Promise[Schema[_]] = js.native
+  def update(): js.Promise[Schema[js.Any]] = js.native
 }
 object Schema {
+  
+  @JSGlobal("Parse.Schema")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Static method to get all schemas
@@ -160,37 +163,35 @@ object Schema {
     * the query completes.
     */
   /* static member */
-  @JSGlobal("Parse.Schema.all")
-  @js.native
-  def all(): js.Promise[js.Array[Schema[_]]] = js.native
+  @scala.inline
+  def all(): js.Promise[js.Array[Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[Schema[js.Any]]]]
   
   type AttrType[T /* <: Object[Attributes] */, V] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T['attributes'] ]: T['attributes'][K] extends V? K : never}[keyof T['attributes']] */ js.Any, 
     String
   ]
   
-  @js.native
   trait CLP extends StObject {
     
-    var addField: js.UndefOr[CLPField] = js.native
+    var addField: js.UndefOr[CLPField] = js.undefined
     
-    var count: js.UndefOr[CLPField] = js.native
+    var count: js.UndefOr[CLPField] = js.undefined
     
-    var create: js.UndefOr[CLPField] = js.native
+    var create: js.UndefOr[CLPField] = js.undefined
     
-    var delete: js.UndefOr[CLPField] = js.native
+    var delete: js.UndefOr[CLPField] = js.undefined
     
-    var find: js.UndefOr[CLPField] = js.native
+    var find: js.UndefOr[CLPField] = js.undefined
     
-    var get: js.UndefOr[CLPField] = js.native
-    
-    /** Array of fields that point to a `_User` object's ID or a `Role` object's name */
-    var readUserFields: js.UndefOr[js.Array[String]] = js.native
-    
-    var update: js.UndefOr[CLPField] = js.native
+    var get: js.UndefOr[CLPField] = js.undefined
     
     /** Array of fields that point to a `_User` object's ID or a `Role` object's name */
-    var writeUserFields: js.UndefOr[js.Array[String]] = js.native
+    var readUserFields: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var update: js.UndefOr[CLPField] = js.undefined
+    
+    /** Array of fields that point to a `_User` object's ID or a `Role` object's name */
+    var writeUserFields: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CLP {
     
@@ -273,15 +274,15 @@ object Schema {
     * 'role:Admin': true,
     *  'idOfASpecificUser': true
     */
-  @js.native
   trait CLPField
-    extends /** `role:Admin` */
+    extends StObject
+       with /** `role:Admin` */
   /* userIdOrRoleName */ StringDictionary[js.UndefOr[Boolean]] {
     
     @JSName("*")
-    var Asterisk: js.UndefOr[Boolean] = js.native
+    var Asterisk: js.UndefOr[Boolean] = js.undefined
     
-    var requiresAuthentication: js.UndefOr[Boolean] = js.native
+    var requiresAuthentication: js.UndefOr[Boolean] = js.undefined
   }
   object CLPField {
     
@@ -308,23 +309,22 @@ object Schema {
     }
   }
   
-  @js.native
-  trait FieldOptions[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[_] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] extends StObject {
+  trait FieldOptions[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] extends StObject {
     
-    var defaultValue: js.UndefOr[T] = js.native
+    var defaultValue: js.UndefOr[T] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object FieldOptions {
     
     @scala.inline
-    def apply[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[_] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
+    def apply[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldOptions[T]]
     }
     
     @scala.inline
-    implicit class FieldOptionsMutableBuilder[Self <: FieldOptions[_], T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[_] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] (val x: Self with FieldOptions[T]) extends AnyVal {
+    implicit class FieldOptionsMutableBuilder[Self <: FieldOptions[?], T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] (val x: Self & FieldOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])

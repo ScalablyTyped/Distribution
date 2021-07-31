@@ -2,31 +2,29 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogPattern extends StObject {
   
   /**
     * A regular expression that defines the log pattern. A log pattern can contains at many as 50 characters, and it cannot be empty.
     */
-  var Pattern: js.UndefOr[LogPatternRegex] = js.native
+  var Pattern: js.UndefOr[LogPatternRegex] = js.undefined
   
   /**
     * The name of the log pattern. A log pattern name can contains at many as 50 characters, and it cannot be empty. The characters can be Unicode letters, digits or one of the following symbols: period, dash, underscore.
     */
-  var PatternName: js.UndefOr[LogPatternName] = js.native
+  var PatternName: js.UndefOr[LogPatternName] = js.undefined
   
   /**
     * The name of the log pattern. A log pattern name can contains at many as 30 characters, and it cannot be empty. The characters can be Unicode letters, digits or one of the following symbols: period, dash, underscore.
     */
-  var PatternSetName: js.UndefOr[LogPatternSetName] = js.native
+  var PatternSetName: js.UndefOr[LogPatternSetName] = js.undefined
   
   /**
     * Rank of the log pattern.
     */
-  var Rank: js.UndefOr[LogPatternRank] = js.native
+  var Rank: js.UndefOr[LogPatternRank] = js.undefined
 }
 object LogPattern {
   

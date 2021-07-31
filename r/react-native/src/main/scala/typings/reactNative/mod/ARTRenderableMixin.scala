@@ -7,23 +7,23 @@ import typings.reactNative.reactNativeStrings.round
 import typings.reactNative.reactNativeStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ARTRenderableMixin extends ARTNodeMixin {
+trait ARTRenderableMixin
+  extends StObject
+     with ARTNodeMixin {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeCap: js.UndefOr[butt | square | round] = js.native
+  var strokeCap: js.UndefOr[butt | square | round] = js.undefined
   
-  var strokeDash: js.UndefOr[js.Array[Double]] = js.native
+  var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var strokeJoin: js.UndefOr[bevel | miter | round] = js.native
+  var strokeJoin: js.UndefOr[bevel | miter | round] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object ARTRenderableMixin {
   

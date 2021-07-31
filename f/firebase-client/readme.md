@@ -12,7 +12,7 @@ A simple Node.js client for Firebase
 | Keywords           | firebase, rest, api, client |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14174 |
+| # downloads        | 4416 |
 | # stars            | 1 |
 
 ## Links

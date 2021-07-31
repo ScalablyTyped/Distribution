@@ -4,18 +4,17 @@ import typings.braintree.anon.CustomerId
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodNotification
-  extends BaseWebhookNotification
+  extends StObject
+     with BaseWebhookNotification
      with WebhookNotification {
   
   @JSName("kind")
-  var kind_PaymentMethodNotification: PaymentMethodNotificationKind = js.native
+  var kind_PaymentMethodNotification: PaymentMethodNotificationKind
   
-  var revokedPaymentMethodMetadata: CustomerId = js.native
+  var revokedPaymentMethodMetadata: CustomerId
 }
 object PaymentMethodNotification {
   

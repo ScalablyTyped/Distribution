@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagListMessage extends StObject {
   
   /**
     * A list of cost allocation tags as key-value pairs.
     */
-  var TagList: js.UndefOr[typings.awsSdk.elasticacheMod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.elasticacheMod.TagList] = js.undefined
 }
 object TagListMessage {
   

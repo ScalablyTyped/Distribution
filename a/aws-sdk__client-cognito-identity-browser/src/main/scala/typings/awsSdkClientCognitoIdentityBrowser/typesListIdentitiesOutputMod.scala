@@ -5,34 +5,34 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesIdentityDescriptionMod.Un
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListIdentitiesOutputMod {
   
-  @js.native
-  trait ListIdentitiesOutput extends OutputTypesUnion {
+  trait ListIdentitiesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An object containing a set of identities and associated mappings.</p>
       */
-    var Identities: js.UndefOr[js.Array[UnmarshalledIdentityDescription]] = js.native
+    var Identities: js.UndefOr[js.Array[UnmarshalledIdentityDescription]] = js.undefined
     
     /**
       * <p>An identity pool ID in the format REGION:GUID.</p>
       */
-    var IdentityPoolId: js.UndefOr[String] = js.native
+    var IdentityPoolId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A pagination token.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object ListIdentitiesOutput {
     

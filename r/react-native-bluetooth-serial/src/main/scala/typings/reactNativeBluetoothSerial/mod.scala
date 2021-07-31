@@ -3,47 +3,41 @@ package typings.reactNativeBluetoothSerial
 import typings.reactNativeBluetoothSerial.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object BluetoothSerial {
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.connect")
+    @JSImport("react-native-bluetooth-serial", "BluetoothSerial")
     @js.native
-    def connect(id: String): js.Promise[Unit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.disconnect")
-    @js.native
-    def disconnect(): js.Promise[Unit] = js.native
+    @scala.inline
+    def connect(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.isConnected")
-    @js.native
-    def isConnected(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def disconnect(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.isEnabled")
-    @js.native
-    def isEnabled(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isConnected(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isConnected")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.list")
-    @js.native
-    def list(): js.Promise[js.Array[Id]] = js.native
+    @scala.inline
+    def isEnabled(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.on")
-    @js.native
-    def on(eventName: String, handler: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def list(): js.Promise[js.Array[Id]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[Id]]]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.removeListener")
-    @js.native
-    def removeListener(eventName: String, handler: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def on(eventName: String, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.write")
-    @js.native
-    def write(data: String): js.Promise[Boolean] = js.native
-    @JSImport("react-native-bluetooth-serial", "BluetoothSerial.write")
-    @js.native
-    def write(data: Buffer): js.Promise[Boolean] = js.native
+    @scala.inline
+    def removeListener(eventName: String, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def write(data: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def write(data: Buffer): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   }
   
   type Buffer = js.Function1[/* data */ js.Array[Double], Unit]

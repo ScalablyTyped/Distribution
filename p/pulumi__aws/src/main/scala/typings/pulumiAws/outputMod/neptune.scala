@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object neptune {
   
-  @js.native
   trait ClusterParameterGroupParameter extends StObject {
     
     /**
       * Valid values are `immediate` and `pending-reboot`. Defaults to `pending-reboot`.
       */
-    var applyMethod: js.UndefOr[String] = js.native
+    var applyMethod: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the neptune parameter.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value of the neptune parameter.
       */
-    var value: String = js.native
+    var value: String
   }
   object ClusterParameterGroupParameter {
     
@@ -50,23 +48,22 @@ object neptune {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
       * The apply method of the Neptune parameter. Valid values are `immediate` and `pending-reboot`. Defaults to `pending-reboot`.
       */
-    var applyMethod: js.UndefOr[String] = js.native
+    var applyMethod: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the Neptune parameter.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value of the Neptune parameter.
       */
-    var value: String = js.native
+    var value: String
   }
   object ParameterGroupParameter {
     

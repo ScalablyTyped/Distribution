@@ -2,13 +2,11 @@ package typings.sinonAsPromised
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait SinonStub extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object mod {
       * @returns A thenable which will return a rejected promise with the provided error.
       * @remarks If error is a string, it will be set as the message on an Error object.
       */
-    def rejects(error: js.Any): SinonStub = js.native
+    def rejects(error: js.Any): SinonStub
     
     /**
       * Causes the stub to resolve with the provided value.
@@ -26,7 +24,7 @@ object mod {
       * @param value   Resolve value.
       * @remarks Any Promises/A+ compliant library will handle this object properly.
       */
-    def resolves[T](value: T): SinonStub = js.native
+    def resolves[T](value: T): SinonStub
   }
   object SinonStub {
     

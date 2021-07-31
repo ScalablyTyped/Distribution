@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationNotCrawlableEvidence extends StObject {
   
   /** Approximate time of the crawl. */
-  var crawlTime: js.UndefOr[String] = js.native
+  var crawlTime: js.UndefOr[String] = js.undefined
   
   /** Destination URL that was attempted to be crawled. */
-  var crawledUrl: js.UndefOr[String] = js.native
+  var crawledUrl: js.UndefOr[String] = js.undefined
   
   /** Reason of destination not crawlable. */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object DestinationNotCrawlableEvidence {
   

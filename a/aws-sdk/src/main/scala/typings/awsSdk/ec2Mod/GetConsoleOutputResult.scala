@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConsoleOutputResult extends StObject {
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The console output, base64-encoded. If you are using a command line tool, the tool decodes the output for you.
     */
-  var Output: js.UndefOr[String] = js.native
+  var Output: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the output was last updated.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.native
+  var Timestamp: js.UndefOr[DateTime] = js.undefined
 }
 object GetConsoleOutputResult {
   

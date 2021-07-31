@@ -2,31 +2,29 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionSignaledEventAttributes extends StObject {
   
   /**
     * The ID of the SignalExternalWorkflowExecutionInitiated event corresponding to the SignalExternalWorkflow decision to signal this workflow execution.The source event with this ID can be found in the history of the source workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event. This field is set only if the signal was initiated by another workflow execution.
     */
-  var externalInitiatedEventId: js.UndefOr[EventId] = js.native
+  var externalInitiatedEventId: js.UndefOr[EventId] = js.undefined
   
   /**
     * The workflow execution that sent the signal. This is set only of the signal was sent by another workflow execution.
     */
-  var externalWorkflowExecution: js.UndefOr[WorkflowExecution] = js.native
+  var externalWorkflowExecution: js.UndefOr[WorkflowExecution] = js.undefined
   
   /**
     * The inputs provided with the signal. The decider can use the signal name and inputs to determine how to process the signal.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The name of the signal received. The decider can use the signal name and inputs to determine how to the process the signal.
     */
-  var signalName: SignalName = js.native
+  var signalName: SignalName
 }
 object WorkflowExecutionSignaledEventAttributes {
   

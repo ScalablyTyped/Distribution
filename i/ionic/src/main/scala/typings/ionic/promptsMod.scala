@@ -6,21 +6,22 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestion
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promptsMod {
   
-  @JSImport("ionic/lib/prompts", "createOnFallback")
+  @JSImport("ionic/lib/prompts", JSImport.Namespace)
   @js.native
-  def createOnFallback(hasFlagsLog: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createOnFallback(hasHasConfirmLog: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnFallback")(hasHasConfirmLog.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox]]
+  
   trait CreateOnFallbackOptions extends StObject {
     
-    val flags: IonicEnvironmentFlags = js.native
+    val flags: IonicEnvironmentFlags
     
-    val log: ILogger = js.native
+    val log: ILogger
   }
   object CreateOnFallbackOptions {
     

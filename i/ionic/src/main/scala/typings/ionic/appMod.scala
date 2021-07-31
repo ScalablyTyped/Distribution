@@ -15,10 +15,13 @@ import typings.ionic.definitionsMod.Response
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMod {
+  
+  @JSImport("ionic/lib/app", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/app", "AppClient")
   @js.native
@@ -29,6 +32,9 @@ object appMod {
        with ResourceClientPaginate[App] {
     def this(token: String, e: AppClientDeps) = this()
     
+    /* CompleteClass */
+    override def create(details: AppCreateDetails): js.Promise[App] = js.native
+    
     def createAssociation(id: String, association: Branches): js.Promise[AppAssociation] = js.native
     
     def deleteAssociation(id: String): js.Promise[Unit] = js.native
@@ -37,21 +43,19 @@ object appMod {
     
     def load(id: String): js.Promise[App] = js.native
     
-    def paginate(args: js.UndefOr[scala.Nothing], orgId: String): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
+    def paginate(args: Unit, orgId: String): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
     def paginate(args: PartialPaginateArgsRespon): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
     def paginate(args: PartialPaginateArgsRespon, orgId: String): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
     
     val token: String = js.native
   }
   
-  @JSImport("ionic/lib/app", "formatName")
-  @js.native
-  def formatName(app: PickAppnameorg): String = js.native
+  @scala.inline
+  def formatName(app: PickAppnameorg): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatName")(app.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait AppClientDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
   }
   object AppClientDeps {
     
@@ -69,12 +73,11 @@ object appMod {
     }
   }
   
-  @js.native
   trait AppCreateDetails extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val org_id: js.UndefOr[String] = js.native
+    val org_id: js.UndefOr[String] = js.undefined
   }
   object AppCreateDetails {
     

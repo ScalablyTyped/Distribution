@@ -2,71 +2,69 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClientVpnEndpointRequest extends StObject {
   
   /**
     * The options for managing connection authorization for new client connections.
     */
-  var ClientConnectOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientConnectOptions] = js.native
+  var ClientConnectOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientConnectOptions] = js.undefined
   
   /**
     * The ID of the Client VPN endpoint to modify.
     */
-  var ClientVpnEndpointId: typings.awsSdk.ec2Mod.ClientVpnEndpointId = js.native
+  var ClientVpnEndpointId: typings.awsSdk.ec2Mod.ClientVpnEndpointId
   
   /**
     * Information about the client connection logging options. If you enable client connection logging, data about client connections is sent to a Cloudwatch Logs log stream. The following information is logged:   Client connection requests   Client connection results (successful and unsuccessful)   Reasons for unsuccessful client connection requests   Client connection termination time  
     */
-  var ConnectionLogOptions: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionLogOptions] = js.native
+  var ConnectionLogOptions: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionLogOptions] = js.undefined
   
   /**
     * A brief description of the Client VPN endpoint.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the DNS servers to be used by Client VPN connections. A Client VPN endpoint can have up to two DNS servers.
     */
-  var DnsServers: js.UndefOr[DnsServersOptionsModifyStructure] = js.native
+  var DnsServers: js.UndefOr[DnsServersOptionsModifyStructure] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IDs of one or more security groups to apply to the target network.
     */
-  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.native
+  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.undefined
   
   /**
     * Specify whether to enable the self-service portal for the Client VPN endpoint.
     */
-  var SelfServicePortal: js.UndefOr[typings.awsSdk.ec2Mod.SelfServicePortal] = js.native
+  var SelfServicePortal: js.UndefOr[typings.awsSdk.ec2Mod.SelfServicePortal] = js.undefined
   
   /**
     * The ARN of the server certificate to be used. The server certificate must be provisioned in AWS Certificate Manager (ACM).
     */
-  var ServerCertificateArn: js.UndefOr[String] = js.native
+  var ServerCertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the VPN is split-tunnel. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
     */
-  var SplitTunnel: js.UndefOr[Boolean] = js.native
+  var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the VPC to associate with the Client VPN endpoint.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.undefined
   
   /**
     * The port number to assign to the Client VPN endpoint for TCP and UDP traffic. Valid Values: 443 | 1194  Default Value: 443 
     */
-  var VpnPort: js.UndefOr[Integer] = js.native
+  var VpnPort: js.UndefOr[Integer] = js.undefined
 }
 object ModifyClientVpnEndpointRequest {
   

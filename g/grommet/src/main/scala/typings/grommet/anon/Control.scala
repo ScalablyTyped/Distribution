@@ -13,36 +13,34 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Control extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var container: js.UndefOr[`14`] = js.native
+  var container: js.UndefOr[`14`] = js.undefined
   
-  var control: js.UndefOr[Open] = js.native
+  var control: js.UndefOr[Open] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var icons: js.UndefOr[Up] = js.native
+  var icons: js.UndefOr[Up] = js.undefined
   
-  var options: js.UndefOr[ContainerText] = js.native
+  var options: js.UndefOr[ContainerText] = js.undefined
   
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
   var searchInput: js.UndefOr[
     ReactComponentElement[
-      _, 
+      js.Any, 
       Pick[
-        ComponentProps[_], 
+        ComponentProps[js.Any], 
         Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object Control {
   
@@ -74,10 +72,10 @@ object Control {
     def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
@@ -97,9 +95,9 @@ object Control {
     @scala.inline
     def setSearchInput(
       value: ReactComponentElement[
-          _, 
+          js.Any, 
           Pick[
-            ComponentProps[_], 
+            ComponentProps[js.Any], 
             Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
           ]
         ]

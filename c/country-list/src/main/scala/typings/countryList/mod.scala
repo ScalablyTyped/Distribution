@@ -4,40 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.countryList.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("country-list", "getCode")
+  @JSImport("country-list", JSImport.Namespace)
   @js.native
-  def getCode(name: String): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("country-list", "getCodeList")
-  @js.native
-  def getCodeList(): StringDictionary[String] = js.native
+  @scala.inline
+  def getCode(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCode")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("country-list", "getCodes")
-  @js.native
-  def getCodes(): js.Array[String] = js.native
+  @scala.inline
+  def getCodeList(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCodeList")().asInstanceOf[StringDictionary[String]]
   
-  @JSImport("country-list", "getData")
-  @js.native
-  def getData(): js.Array[Code] = js.native
+  @scala.inline
+  def getCodes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCodes")().asInstanceOf[js.Array[String]]
   
-  @JSImport("country-list", "getName")
-  @js.native
-  def getName(code: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getData(): js.Array[Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")().asInstanceOf[js.Array[Code]]
   
-  @JSImport("country-list", "getNameList")
-  @js.native
-  def getNameList(): StringDictionary[String] = js.native
+  @scala.inline
+  def getName(code: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(code.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("country-list", "getNames")
-  @js.native
-  def getNames(): js.Array[String] = js.native
+  @scala.inline
+  def getNameList(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameList")().asInstanceOf[StringDictionary[String]]
   
-  @JSImport("country-list", "overwrite")
-  @js.native
-  def overwrite(countries: js.Array[Code]): Unit = js.native
+  @scala.inline
+  def getNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNames")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def overwrite(countries: js.Array[Code]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(countries.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssetsRequest extends StObject {
   
   /**
     * Upper bound on number of records to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.mediapackagevodMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.mediapackagevodMod.MaxResults] = js.undefined
   
   /**
     * A token used to resume pagination from the end of a previous request.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * Returns Assets associated with the specified PackagingGroup.
     */
-  var PackagingGroupId: js.UndefOr[string] = js.native
+  var PackagingGroupId: js.UndefOr[string] = js.undefined
 }
 object ListAssetsRequest {
   

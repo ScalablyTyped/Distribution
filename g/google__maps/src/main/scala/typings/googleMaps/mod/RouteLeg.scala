@@ -2,34 +2,32 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteLeg extends StObject {
   
   /** contains the estimated time of arrival for this leg. This property is only returned for transit directions. */
-  var arrival_time: Time = js.native
+  var arrival_time: Time
   
   /**
     * contains the estimated time of departure for this leg, specified as a `Time` object.
     * The `departure_time` is only available for transit directions.
     */
-  var departure_time: Time = js.native
+  var departure_time: Time
   
   /**
     * indicates the total distance covered by this leg, as a field with the following elements.
     *
     * This field may be absent if the distance is unknown.
     */
-  var distance: Distance = js.native
+  var distance: Distance
   
   /**
     * indicates the total duration of this leg.
     *
     * This field may be absent if the duration is unknown.
     */
-  var duration: Duration = js.native
+  var duration: Duration
   
   /**
     * indicates the total duration of this leg.
@@ -44,10 +42,10 @@ trait RouteLeg extends StObject {
     *  - The request includes a `departure_time` parameter.
     *  - Traffic conditions are available for the requested route.
     */
-  var duration_in_traffic: Duration = js.native
+  var duration_in_traffic: Duration
   
   /** contains the human-readable address (typically a street address) from reverse geocoding the `end_location` of this leg. */
-  var end_address: String = js.native
+  var end_address: String
   
   /**
     * contains the latitude/longitude coordinates of the given destination of this leg.
@@ -55,10 +53,10 @@ trait RouteLeg extends StObject {
     * at the start and end points, `end_location` may be different than the provided destination of this leg if, for example,
     * a road is not near the destination.
     */
-  var end_location: LatLngLiteral = js.native
+  var end_location: LatLngLiteral
   
   /** contains the human-readable address (typically a street address) resulting from reverse geocoding the `start_location` of this leg. */
-  var start_address: String = js.native
+  var start_address: String
   
   /**
     * contains the latitude/longitude coordinates of the origin of this leg.
@@ -66,10 +64,10 @@ trait RouteLeg extends StObject {
     * at the start and end points, `start_location` may be different than the provided origin of this leg if, for example,
     * a road is not near the origin.
     */
-  var start_location: LatLngLiteral = js.native
+  var start_location: LatLngLiteral
   
   /** contains an array of steps denoting information about each separate step of the leg of the journey. */
-  var steps: js.Array[DirectionsStep] = js.native
+  var steps: js.Array[DirectionsStep]
 }
 object RouteLeg {
   

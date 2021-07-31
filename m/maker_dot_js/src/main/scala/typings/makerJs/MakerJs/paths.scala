@@ -2,7 +2,6 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paths {
@@ -10,8 +9,9 @@ object paths {
   /**
     * Class for arc path.
     */
-  @js.native
-  trait Arc extends IPathArc
+  trait Arc
+    extends StObject
+       with IPathArc
   object Arc {
     
     @scala.inline
@@ -27,8 +27,9 @@ object paths {
     *
     * @param arc Arc to use as the basic for the chord.
     */
-  @js.native
-  trait Chord extends IPathLine
+  trait Chord
+    extends StObject
+       with IPathLine
   object Chord {
     
     @scala.inline
@@ -42,8 +43,9 @@ object paths {
   /**
     * Class for circle path.
     */
-  @js.native
-  trait Circle extends IPathCircle
+  trait Circle
+    extends StObject
+       with IPathCircle
   object Circle {
     
     @scala.inline
@@ -57,8 +59,9 @@ object paths {
   /**
     * Class for line path.
     */
-  @js.native
-  trait Line extends IPathLine
+  trait Line
+    extends StObject
+       with IPathLine
   object Line {
     
     @scala.inline
@@ -76,8 +79,9 @@ object paths {
     * @param distance Distance between parallel and original line.
     * @param nearPoint Any point to determine which side of the line to place the parallel.
     */
-  @js.native
-  trait Parallel extends IPathLine
+  trait Parallel
+    extends StObject
+       with IPathLine
   object Parallel {
     
     @scala.inline

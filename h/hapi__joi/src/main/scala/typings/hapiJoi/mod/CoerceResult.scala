@@ -2,15 +2,13 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoerceResult extends StObject {
   
-  var errors: js.UndefOr[js.Array[ErrorReport]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorReport]] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CoerceResult {
   

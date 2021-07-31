@@ -1,39 +1,39 @@
 package typings.inlineCss
 
-import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(html: String, options: Options): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  
   @JSImport("inline-css", JSImport.Namespace)
   @js.native
-  def apply(html: String, options: Options): ^[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var applyLinkTags: js.UndefOr[Boolean] = js.native
+    var applyLinkTags: js.UndefOr[Boolean] = js.undefined
     
-    var applyStyleTags: js.UndefOr[Boolean] = js.native
+    var applyStyleTags: js.UndefOr[Boolean] = js.undefined
     
-    var applyTableAttributes: js.UndefOr[Boolean] = js.native
+    var applyTableAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var applyWidthAttributes: js.UndefOr[Boolean] = js.native
+    var applyWidthAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var extraCss: js.UndefOr[String] = js.native
+    var extraCss: js.UndefOr[String] = js.undefined
     
-    var preserveMediaQueries: js.UndefOr[Boolean] = js.native
+    var preserveMediaQueries: js.UndefOr[Boolean] = js.undefined
     
-    var removeHtmlSelectors: js.UndefOr[Boolean] = js.native
+    var removeHtmlSelectors: js.UndefOr[Boolean] = js.undefined
     
-    var removeLinkTags: js.UndefOr[Boolean] = js.native
+    var removeLinkTags: js.UndefOr[Boolean] = js.undefined
     
-    var removeStyleTags: js.UndefOr[Boolean] = js.native
+    var removeStyleTags: js.UndefOr[Boolean] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

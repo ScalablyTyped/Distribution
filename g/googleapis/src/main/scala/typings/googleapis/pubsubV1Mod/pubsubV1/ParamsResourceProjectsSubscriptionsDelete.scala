@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsSubscriptionsDelete extends StandardParameters {
+trait ParamsResourceProjectsSubscriptionsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The subscription to delete. Format is
     * `projects/{project}/subscriptions/{sub}`.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsSubscriptionsDelete {
   

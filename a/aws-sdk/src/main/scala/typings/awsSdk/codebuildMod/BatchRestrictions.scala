@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchRestrictions extends StObject {
   
   /**
     * An array of strings that specify the compute types that are allowed for the batch build. See Build environment compute types in the AWS CodeBuild User Guide for these values. 
     */
-  var computeTypesAllowed: js.UndefOr[ComputeTypesAllowed] = js.native
+  var computeTypesAllowed: js.UndefOr[ComputeTypesAllowed] = js.undefined
   
   /**
     * Specifies the maximum number of builds allowed.
     */
-  var maximumBuildsAllowed: js.UndefOr[WrapperInt] = js.native
+  var maximumBuildsAllowed: js.UndefOr[WrapperInt] = js.undefined
 }
 object BatchRestrictions {
   

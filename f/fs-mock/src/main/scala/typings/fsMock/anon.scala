@@ -2,23 +2,21 @@ package typings.fsMock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BufferSize extends StObject {
     
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[String] = js.native
+    var fd: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object BufferSize {
     
@@ -63,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
@@ -92,14 +89,13 @@ object anon {
     }
   }
   
-  @js.native
   trait EncodingFlag extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object EncodingFlag {
     
@@ -132,18 +128,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Fd extends StObject {
     
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[String] = js.native
+    var fd: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object Fd {
     
@@ -188,10 +183,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Flag extends StObject {
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Flag {
     
@@ -212,14 +206,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Flags extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var string: js.UndefOr[String] = js.native
+    var string: js.UndefOr[String] = js.undefined
   }
   object Flags {
     
@@ -252,12 +245,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object Interval {
     
@@ -284,14 +276,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object Mode {
     
@@ -324,10 +315,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Persistent extends StObject {
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object Persistent {
     

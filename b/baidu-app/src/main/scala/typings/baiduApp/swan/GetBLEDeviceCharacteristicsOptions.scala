@@ -3,28 +3,27 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.characteristicsArrayuuids
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceCharacteristicsOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 蓝牙服务 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /**
     * 成功则返回本机蓝牙适配器状态
     */
   @JSName("success")
-  def success_MGetBLEDeviceCharacteristicsOptions(res: characteristicsArrayuuids): Unit = js.native
+  def success_MGetBLEDeviceCharacteristicsOptions(res: characteristicsArrayuuids): Unit
 }
 object GetBLEDeviceCharacteristicsOptions {
   

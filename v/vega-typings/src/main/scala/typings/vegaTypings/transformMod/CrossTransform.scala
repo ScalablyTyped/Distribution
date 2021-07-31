@@ -5,24 +5,24 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.cross
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CrossTransform extends _Transforms {
+trait CrossTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var filter: js.UndefOr[ExprString] = js.native
+  var filter: js.UndefOr[ExprString] = js.undefined
   
-  var `type`: cross = js.native
+  var `type`: cross
 }
 object CrossTransform {
   
   @scala.inline
-  def apply(`type`: cross): CrossTransform = {
+  def apply(): CrossTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cross")
     __obj.asInstanceOf[CrossTransform]
   }
   

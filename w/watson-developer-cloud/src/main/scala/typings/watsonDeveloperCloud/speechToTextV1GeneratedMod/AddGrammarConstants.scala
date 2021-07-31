@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `addGrammar` operation. */
@@ -16,14 +15,18 @@ object AddGrammarConstants {
   object ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContentType with String] = js.native
+    def apply(value: String): js.UndefOr[ContentType & String] = js.native
     
     @js.native
-    sealed trait APPLICATION_SRGS extends ContentType
-    /* "application/srgs" */ val APPLICATION_SRGS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS with String = js.native
+    sealed trait APPLICATION_SRGS
+      extends StObject
+         with ContentType
+    /* "application/srgs" */ val APPLICATION_SRGS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS & String = js.native
     
     @js.native
-    sealed trait APPLICATION_SRGS_XML extends ContentType
-    /* "application/srgs+xml" */ val APPLICATION_SRGS_XML: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS_XML with String = js.native
+    sealed trait APPLICATION_SRGS_XML
+      extends StObject
+         with ContentType
+    /* "application/srgs+xml" */ val APPLICATION_SRGS_XML: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS_XML & String = js.native
   }
 }

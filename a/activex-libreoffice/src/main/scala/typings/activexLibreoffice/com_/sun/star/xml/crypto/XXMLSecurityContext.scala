@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,35 +11,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface specifies a certain signature context. By signature context, the signer or verifier retrieves key specification.
   */
-@js.native
-trait XXMLSecurityContext extends XInterface {
+trait XXMLSecurityContext
+  extends StObject
+     with XInterface {
   
   /** Get the ID of the internal security environment */
-  var DefaultSecurityEnvironmentIndex: Double = js.native
+  var DefaultSecurityEnvironmentIndex: Double
   
   /** An handy method to get the first personal security environment. In XMLSec/NSS, the first personal security environment should be the "internal slot" */
-  val SecurityEnvironment: XSecurityEnvironment = js.native
+  val SecurityEnvironment: XSecurityEnvironment
   
   /** Get the number of security environments */
-  val SecurityEnvironmentNumber: Double = js.native
+  val SecurityEnvironmentNumber: Double
   
   /** Add personal security environment , and return the index of the added environment. */
-  def addSecurityEnvironment(aSecurityEnvironment: XSecurityEnvironment): Double = js.native
+  def addSecurityEnvironment(aSecurityEnvironment: XSecurityEnvironment): Double
   
   /** Get the ID of the internal security environment */
-  def getDefaultSecurityEnvironmentIndex(): Double = js.native
+  def getDefaultSecurityEnvironmentIndex(): Double
   
   /** An handy method to get the first personal security environment. In XMLSec/NSS, the first personal security environment should be the "internal slot" */
-  def getSecurityEnvironment(): XSecurityEnvironment = js.native
+  def getSecurityEnvironment(): XSecurityEnvironment
   
   /** Get personal security environment */
-  def getSecurityEnvironmentByIndex(index: Double): XSecurityEnvironment = js.native
+  def getSecurityEnvironmentByIndex(index: Double): XSecurityEnvironment
   
   /** Get the number of security environments */
-  def getSecurityEnvironmentNumber(): Double = js.native
+  def getSecurityEnvironmentNumber(): Double
   
   /** set the ID of the internal security environment */
-  def setDefaultSecurityEnvironmentIndex(index: Double): Unit = js.native
+  def setDefaultSecurityEnvironmentIndex(index: Double): Unit
 }
 object XXMLSecurityContext {
   

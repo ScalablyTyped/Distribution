@@ -2,13 +2,11 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change borders and shading of the selected table elements.
   */
-@js.native
 trait ChangeTableBordersAndShadingCommand extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait ChangeTableBordersAndShadingCommand extends StObject {
     * @param settings A TableBorderSettings object with settings specifying table borders.
     * @param applyToWholeTable true to apply the border settings to the whole table, false to apply the border settings to the selected cells.
     */
-  def execute(settings: TableBordersSettings, applyToWholeTable: Boolean): Boolean = js.native
+  def execute(settings: TableBordersSettings, applyToWholeTable: Boolean): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TableBordersSettings] = js.native
+  def getState(): CommandState[TableBordersSettings]
 }
 object ChangeTableBordersAndShadingCommand {
   

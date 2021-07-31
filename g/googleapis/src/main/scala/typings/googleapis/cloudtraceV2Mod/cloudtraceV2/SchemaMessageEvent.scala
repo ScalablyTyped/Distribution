@@ -2,37 +2,35 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event describing a message sent/received between Spans.
   */
-@js.native
 trait SchemaMessageEvent extends StObject {
   
   /**
     * The number of compressed bytes sent or received. If missing assumed to be
     * the same size as uncompressed.
     */
-  var compressedSizeBytes: js.UndefOr[String] = js.native
+  var compressedSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the MessageEvent&#39;s message that can be used to
     * match SENT and RECEIVED MessageEvents. It is recommended to be unique
     * within a Span.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of MessageEvent. Indicates whether the message was sent or received.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The number of uncompressed bytes sent or received.
     */
-  var uncompressedSizeBytes: js.UndefOr[String] = js.native
+  var uncompressedSizeBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaMessageEvent {
   

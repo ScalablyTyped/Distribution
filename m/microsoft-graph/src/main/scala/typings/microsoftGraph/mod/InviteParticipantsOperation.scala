@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InviteParticipantsOperation extends CommsOperation {
+trait InviteParticipantsOperation
+  extends StObject
+     with CommsOperation {
   
   // The participants to invite.
-  var participants: js.UndefOr[js.Array[InvitationParticipantInfo]] = js.native
+  var participants: js.UndefOr[js.Array[InvitationParticipantInfo]] = js.undefined
 }
 object InviteParticipantsOperation {
   

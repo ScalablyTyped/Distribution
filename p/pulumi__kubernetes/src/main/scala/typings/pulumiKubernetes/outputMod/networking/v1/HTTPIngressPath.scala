@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.networking.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTTPIngressPath associates a path with a backend. Incoming urls matching the path are forwarded to the backend.
   */
-@js.native
 trait HTTPIngressPath extends StObject {
   
   /**
     * Backend defines the referenced service endpoint to which the traffic will be forwarded to.
     */
-  var backend: IngressBackend = js.native
+  var backend: IngressBackend
   
   /**
     * Path is matched against the path of an incoming request. Currently it can contain characters disallowed from the conventional "path" part of a URL as defined by RFC 3986. Paths must begin with a '/'. When unspecified, all paths from incoming requests are matched.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * PathType determines the interpretation of the Path matching. PathType can be one of the following values: * Exact: Matches the URL path exactly. * Prefix: Matches based on a URL path prefix split by '/'. Matching is
@@ -34,7 +32,7 @@ trait HTTPIngressPath extends StObject {
     *   or treat it identically to Prefix or Exact path types.
     * Implementations are required to support all path types.
     */
-  var pathType: String = js.native
+  var pathType: String
 }
 object HTTPIngressPath {
   

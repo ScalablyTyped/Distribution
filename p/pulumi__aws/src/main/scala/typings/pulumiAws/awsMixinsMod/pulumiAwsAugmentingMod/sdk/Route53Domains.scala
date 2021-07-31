@@ -3,7 +3,6 @@ package typings.pulumiAws.awsMixinsMod.pulumiAwsAugmentingMod.sdk
 import typings.awsSdk.route53domainsMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "sdk.Route53Domains")

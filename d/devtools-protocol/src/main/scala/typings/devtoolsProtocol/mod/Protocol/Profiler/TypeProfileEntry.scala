@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeProfileEntry extends StObject {
   
   /**
     * Source offset of the parameter or end of function for return values.
     */
-  var offset: integer = js.native
+  var offset: integer
   
   /**
     * The types for this parameter or return value.
     */
-  var types: js.Array[TypeObject] = js.native
+  var types: js.Array[TypeObject]
 }
 object TypeProfileEntry {
   

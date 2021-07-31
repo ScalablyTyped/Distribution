@@ -7,27 +7,25 @@ import typings.sharp.sharpStrings.inside
 import typings.sharp.sharpStrings.outside
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FitEnum extends StObject {
   
-  var contain: typings.sharp.sharpStrings.contain = js.native
+  var contain: typings.sharp.sharpStrings.contain
   
-  var cover: typings.sharp.sharpStrings.cover = js.native
+  var cover: typings.sharp.sharpStrings.cover
   
-  var fill: typings.sharp.sharpStrings.fill = js.native
+  var fill: typings.sharp.sharpStrings.fill
   
-  var inside: typings.sharp.sharpStrings.inside = js.native
+  var inside: typings.sharp.sharpStrings.inside
   
-  var outside: typings.sharp.sharpStrings.outside = js.native
+  var outside: typings.sharp.sharpStrings.outside
 }
 object FitEnum {
   
   @scala.inline
-  def apply(contain: contain, cover: cover, fill: fill, inside: inside, outside: outside): FitEnum = {
-    val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], inside = inside.asInstanceOf[js.Any], outside = outside.asInstanceOf[js.Any])
+  def apply(): FitEnum = {
+    val __obj = js.Dynamic.literal(contain = "contain", cover = "cover", fill = "fill", inside = "inside", outside = "outside")
     __obj.asInstanceOf[FitEnum]
   }
   

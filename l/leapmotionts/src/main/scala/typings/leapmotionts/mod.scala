@@ -3,7 +3,6 @@ package typings.leapmotionts
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -68,20 +67,38 @@ object mod {
   /* static members */
   object Controller {
     
-    @JSImport("leapmotionts", "Controller.getHandByID")
+    @JSImport("leapmotionts", "Controller")
     @js.native
-    def getHandByID(frame: js.Any, id: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("leapmotionts", "Controller.getPointableByID")
-    @js.native
-    def getPointableByID(frame: js.Any, id: js.Any): js.Any = js.native
+    @scala.inline
+    def getHandByID(frame: js.Any, id: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getPointableByID(frame: js.Any, id: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointableByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("leapmotionts", "DefaultListener")
   @js.native
   class DefaultListener ()
     extends EventDispatcher
-       with Listener
+       with Listener {
+    
+    /* CompleteClass */
+    override def onConnect(controller: Controller): Unit = js.native
+    
+    /* CompleteClass */
+    override def onDisconnect(controller: Controller): Unit = js.native
+    
+    /* CompleteClass */
+    override def onExit(controller: Controller): Unit = js.native
+    
+    /* CompleteClass */
+    override def onFrame(controller: Controller, frame: Frame): Unit = js.native
+    
+    /* CompleteClass */
+    override def onInit(controller: Controller): Unit = js.native
+  }
   
   @JSImport("leapmotionts", "EventDispatcher")
   @js.native
@@ -104,9 +121,12 @@ object mod {
   /* static members */
   object Finger {
     
-    @JSImport("leapmotionts", "Finger.invalid")
+    @JSImport("leapmotionts", "Finger")
     @js.native
-    def invalid(): Finger = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def invalid(): Finger = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Finger]
   }
   
   @JSImport("leapmotionts", "Frame")
@@ -166,9 +186,12 @@ object mod {
   /* static members */
   object Frame {
     
-    @JSImport("leapmotionts", "Frame.invalid")
+    @JSImport("leapmotionts", "Frame")
     @js.native
-    def invalid(): Frame = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def invalid(): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Frame]
   }
   
   @JSImport("leapmotionts", "Gesture")
@@ -256,9 +279,8 @@ object mod {
     @scala.inline
     def TYPE_SWIPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_SWIPE")(x.asInstanceOf[js.Any])
     
-    @JSImport("leapmotionts", "Gesture.invalid")
-    @js.native
-    def invalid(): Gesture = js.native
+    @scala.inline
+    def invalid(): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Gesture]
   }
   
   @JSImport("leapmotionts", "Hand")
@@ -317,9 +339,12 @@ object mod {
   /* static members */
   object Hand {
     
-    @JSImport("leapmotionts", "Hand.invalid")
+    @JSImport("leapmotionts", "Hand")
     @js.native
-    def invalid(): Hand = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def invalid(): Hand = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Hand]
   }
   
   @JSImport("leapmotionts", "KeyTapGesture")
@@ -448,85 +473,65 @@ object mod {
     @scala.inline
     def TWO_PI_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO_PI")(x.asInstanceOf[js.Any])
     
-    @JSImport("leapmotionts", "LeapUtil.cartesianToSpherical")
-    @js.native
-    def cartesianToSpherical(vCartesian: Vector3): Vector3 = js.native
+    @scala.inline
+    def cartesianToSpherical(vCartesian: Vector3): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("cartesianToSpherical")(vCartesian.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.clamp")
-    @js.native
-    def clamp(inVal: Double, minVal: Double, maxVal: Double): Double = js.native
+    @scala.inline
+    def clamp(inVal: Double, minVal: Double, maxVal: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(inVal.asInstanceOf[js.Any], minVal.asInstanceOf[js.Any], maxVal.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.componentWiseMax")
-    @js.native
-    def componentWiseMax(vLHS: Vector3, vRHS: Vector3): Vector3 = js.native
+    @scala.inline
+    def componentWiseMax(vLHS: Vector3, vRHS: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("componentWiseMax")(vLHS.asInstanceOf[js.Any], vRHS.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.componentWiseMin")
-    @js.native
-    def componentWiseMin(vLHS: Vector3, vRHS: Vector3): Vector3 = js.native
+    @scala.inline
+    def componentWiseMin(vLHS: Vector3, vRHS: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("componentWiseMin")(vLHS.asInstanceOf[js.Any], vRHS.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.componentWiseReciprocal")
-    @js.native
-    def componentWiseReciprocal(inVector: Vector3): Vector3 = js.native
+    @scala.inline
+    def componentWiseReciprocal(inVector: Vector3): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("componentWiseReciprocal")(inVector.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.componentWiseScale")
-    @js.native
-    def componentWiseScale(vLHS: Vector3, vRHS: Vector3): Vector3 = js.native
+    @scala.inline
+    def componentWiseScale(vLHS: Vector3, vRHS: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("componentWiseScale")(vLHS.asInstanceOf[js.Any], vRHS.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.elevation")
-    @js.native
-    def elevation(inVector: Vector3): Double = js.native
+    @scala.inline
+    def elevation(inVector: Vector3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elevation")(inVector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.extractRotation")
-    @js.native
-    def extractRotation(mtxTransform: Matrix): Matrix = js.native
+    @scala.inline
+    def extractRotation(mtxTransform: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRotation")(mtxTransform.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @JSImport("leapmotionts", "LeapUtil.heading")
-    @js.native
-    def heading(inVector: Vector3): Double = js.native
+    @scala.inline
+    def heading(inVector: Vector3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("heading")(inVector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.isNearZero")
-    @js.native
-    def isNearZero(value: Double): Boolean = js.native
+    @scala.inline
+    def isNearZero(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNearZero")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("leapmotionts", "LeapUtil.lerp")
-    @js.native
-    def lerp(a: Double, b: Double, coefficient: Double): Double = js.native
+    @scala.inline
+    def lerp(a: Double, b: Double, coefficient: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.lerpVector")
-    @js.native
-    def lerpVector(vec1: Vector3, vec2: Vector3, coefficient: Double): Vector3 = js.native
+    @scala.inline
+    def lerpVector(vec1: Vector3, vec2: Vector3, coefficient: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("lerpVector")(vec1.asInstanceOf[js.Any], vec2.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.maxComponent")
-    @js.native
-    def maxComponent(inVector: Vector3): Double = js.native
+    @scala.inline
+    def maxComponent(inVector: Vector3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxComponent")(inVector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.minComponent")
-    @js.native
-    def minComponent(inVector: Vector3): Double = js.native
+    @scala.inline
+    def minComponent(inVector: Vector3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minComponent")(inVector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.normalizeSpherical")
-    @js.native
-    def normalizeSpherical(vSpherical: Vector3): Vector3 = js.native
+    @scala.inline
+    def normalizeSpherical(vSpherical: Vector3): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSpherical")(vSpherical.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.rigidInverse")
-    @js.native
-    def rigidInverse(mtxTransform: Matrix): Matrix = js.native
+    @scala.inline
+    def rigidInverse(mtxTransform: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rigidInverse")(mtxTransform.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @JSImport("leapmotionts", "LeapUtil.rotationInverse")
-    @js.native
-    def rotationInverse(mtxRot: Matrix): Matrix = js.native
+    @scala.inline
+    def rotationInverse(mtxRot: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationInverse")(mtxRot.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @JSImport("leapmotionts", "LeapUtil.sphericalToCartesian")
-    @js.native
-    def sphericalToCartesian(vSpherical: Vector3): Vector3 = js.native
+    @scala.inline
+    def sphericalToCartesian(vSpherical: Vector3): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("sphericalToCartesian")(vSpherical.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "LeapUtil.toDegrees")
-    @js.native
-    def toDegrees(radians: Double): Double = js.native
+    @scala.inline
+    def toDegrees(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegrees")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("leapmotionts", "LeapUtil.vectorIsNearZero")
-    @js.native
-    def vectorIsNearZero(inVector: Vector3): Boolean = js.native
+    @scala.inline
+    def vectorIsNearZero(inVector: Vector3): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("vectorIsNearZero")(inVector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("leapmotionts", "Matrix")
@@ -560,9 +565,12 @@ object mod {
   /* static members */
   object Matrix {
     
-    @JSImport("leapmotionts", "Matrix.identity")
+    @JSImport("leapmotionts", "Matrix")
     @js.native
-    def identity(): Matrix = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def identity(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")().asInstanceOf[Matrix]
   }
   
   @JSImport("leapmotionts", "Pointable")
@@ -596,9 +604,12 @@ object mod {
   /* static members */
   object Pointable {
     
-    @JSImport("leapmotionts", "Pointable.invalid")
+    @JSImport("leapmotionts", "Pointable")
     @js.native
-    def invalid(): Pointable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def invalid(): Pointable = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Pointable]
   }
   
   @JSImport("leapmotionts", "ScreenTapGesture")
@@ -661,9 +672,12 @@ object mod {
   /* static members */
   object Tool {
     
-    @JSImport("leapmotionts", "Tool.invalid")
+    @JSImport("leapmotionts", "Tool")
     @js.native
-    def invalid(): Tool = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def invalid(): Tool = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Tool]
   }
   
   @JSImport("leapmotionts", "Vector3")
@@ -722,63 +736,55 @@ object mod {
   /* static members */
   object Vector3 {
     
-    @JSImport("leapmotionts", "Vector3.backward")
+    @JSImport("leapmotionts", "Vector3")
     @js.native
-    def backward(): Vector3 = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("leapmotionts", "Vector3.down")
-    @js.native
-    def down(): Vector3 = js.native
+    @scala.inline
+    def backward(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("backward")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.forward")
-    @js.native
-    def forward(): Vector3 = js.native
+    @scala.inline
+    def down(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.invalid")
-    @js.native
-    def invalid(): Vector3 = js.native
+    @scala.inline
+    def forward(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.left")
-    @js.native
-    def left(): Vector3 = js.native
+    @scala.inline
+    def invalid(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.right")
-    @js.native
-    def right(): Vector3 = js.native
+    @scala.inline
+    def left(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("left")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.up")
-    @js.native
-    def up(): Vector3 = js.native
+    @scala.inline
+    def right(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("right")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.xAxis")
-    @js.native
-    def xAxis(): Vector3 = js.native
+    @scala.inline
+    def up(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.yAxis")
-    @js.native
-    def yAxis(): Vector3 = js.native
+    @scala.inline
+    def xAxis(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("xAxis")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.zAxis")
-    @js.native
-    def zAxis(): Vector3 = js.native
+    @scala.inline
+    def yAxis(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("yAxis")().asInstanceOf[Vector3]
     
-    @JSImport("leapmotionts", "Vector3.zero")
-    @js.native
-    def zero(): Vector3 = js.native
+    @scala.inline
+    def zAxis(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("zAxis")().asInstanceOf[Vector3]
+    
+    @scala.inline
+    def zero(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Vector3]
   }
   
-  @js.native
   trait Listener extends StObject {
     
-    def onConnect(controller: Controller): Unit = js.native
+    def onConnect(controller: Controller): Unit
     
-    def onDisconnect(controller: Controller): Unit = js.native
+    def onDisconnect(controller: Controller): Unit
     
-    def onExit(controller: Controller): Unit = js.native
+    def onExit(controller: Controller): Unit
     
-    def onFrame(controller: Controller, frame: Frame): Unit = js.native
+    def onFrame(controller: Controller, frame: Frame): Unit
     
-    def onInit(controller: Controller): Unit = js.native
+    def onInit(controller: Controller): Unit
   }
   object Listener {
     

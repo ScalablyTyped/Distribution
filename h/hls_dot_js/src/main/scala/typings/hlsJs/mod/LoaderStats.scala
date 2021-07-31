@@ -2,41 +2,39 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoaderStats extends StObject {
   
   /**
     * download bandwitdh in bit/s
     */
-  var bw: Double = js.native
+  var bw: Double
   
   /**
     * number of loaded bytes
     */
-  var loaded: Double = js.native
+  var loaded: Double
   
   /**
     * performance.now() of first received byte
     */
-  var tfirst: Double = js.native
+  var tfirst: Double
   
   /**
     * performance.now() on load complete
     */
-  var tload: Double = js.native
+  var tload: Double
   
   /**
     * total nb of bytes
     */
-  var total: Double = js.native
+  var total: Double
   
   /**
     * performance.now() just after load() has been called
     */
-  var trequest: Double = js.native
+  var trequest: Double
 }
 object LoaderStats {
   

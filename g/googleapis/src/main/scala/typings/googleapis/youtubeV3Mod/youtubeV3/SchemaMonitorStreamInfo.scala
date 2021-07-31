@@ -2,25 +2,23 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Settings and Info of the monitor stream
   */
-@js.native
 trait SchemaMonitorStreamInfo extends StObject {
   
   /**
     * If you have set the enableMonitorStream property to true, then this
     * property determines the length of the live broadcast delay.
     */
-  var broadcastStreamDelayMs: js.UndefOr[Double] = js.native
+  var broadcastStreamDelayMs: js.UndefOr[Double] = js.undefined
   
   /**
     * HTML code that embeds a player that plays the monitor stream.
     */
-  var embedHtml: js.UndefOr[String] = js.native
+  var embedHtml: js.UndefOr[String] = js.undefined
   
   /**
     * This value determines whether the monitor stream is enabled for the
@@ -32,7 +30,7 @@ trait SchemaMonitorStreamInfo extends StObject {
     * broadcast delay for your event.  Note: This property cannot be updated
     * once the broadcast is in the testing or live state.
     */
-  var enableMonitorStream: js.UndefOr[Boolean] = js.native
+  var enableMonitorStream: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMonitorStreamInfo {
   

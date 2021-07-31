@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnectionVpcInfo extends StObject {
   
   /**
     * The IPv4 CIDR block for the VPC.
     */
-  var CidrBlock: js.UndefOr[String] = js.native
+  var CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the IPv4 CIDR blocks for the VPC.
     */
-  var CidrBlockSet: js.UndefOr[typings.awsSdk.ec2Mod.CidrBlockSet] = js.native
+  var CidrBlockSet: js.UndefOr[typings.awsSdk.ec2Mod.CidrBlockSet] = js.undefined
   
   /**
     * The IPv6 CIDR block for the VPC.
     */
-  var Ipv6CidrBlockSet: js.UndefOr[typings.awsSdk.ec2Mod.Ipv6CidrBlockSet] = js.native
+  var Ipv6CidrBlockSet: js.UndefOr[typings.awsSdk.ec2Mod.Ipv6CidrBlockSet] = js.undefined
   
   /**
     * The AWS account ID of the VPC owner.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the VPC peering connection options for the accepter or requester VPC.
     */
-  var PeeringOptions: js.UndefOr[VpcPeeringConnectionOptionsDescription] = js.native
+  var PeeringOptions: js.UndefOr[VpcPeeringConnectionOptionsDescription] = js.undefined
   
   /**
     * The Region in which the VPC is located.
     */
-  var Region: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object VpcPeeringConnectionVpcInfo {
   

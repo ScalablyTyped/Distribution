@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicy extends StObject {
   
   /**
     * Timestamp showing when this policy was last updated, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var lastUpdatedTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The details of the policy.
     */
-  var policyDocument: js.UndefOr[PolicyDocument] = js.native
+  var policyDocument: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
     * The name of the resource policy.
     */
-  var policyName: js.UndefOr[PolicyName] = js.native
+  var policyName: js.UndefOr[PolicyName] = js.undefined
 }
 object ResourcePolicy {
   

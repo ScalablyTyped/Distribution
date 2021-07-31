@@ -8,11 +8,12 @@ import typings.phaser.spine.TextureAtlasRegion
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneRenderer extends Disposable {
+trait SceneRenderer
+  extends StObject
+     with Disposable {
   
   var QUAD: js.Any = js.native
   
@@ -33,14 +34,7 @@ trait SceneRenderer extends Disposable {
   var canvas: HTMLCanvasElement = js.native
   
   def circle(filled: Boolean, x: Double, y: Double, radius: Double): Unit = js.native
-  def circle(
-    filled: Boolean,
-    x: Double,
-    y: Double,
-    radius: Double,
-    color: js.UndefOr[scala.Nothing],
-    segments: Double
-  ): Unit = js.native
+  def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Unit, segments: Double): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color, segments: Double): Unit = js.native
   
@@ -77,7 +71,7 @@ trait SceneRenderer extends Disposable {
     y: Double,
     width: Double,
     height: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     premultipliedAlpha: Boolean
   ): Unit = js.native
   def drawRegion(region: TextureAtlasRegion, x: Double, y: Double, width: Double, height: Double, color: Color): Unit = js.native
@@ -92,33 +86,18 @@ trait SceneRenderer extends Disposable {
   ): Unit = js.native
   
   def drawSkeleton(skeleton: Skeleton): Unit = js.native
-  def drawSkeleton(
-    skeleton: Skeleton,
-    premultipliedAlpha: js.UndefOr[scala.Nothing],
-    slotRangeStart: js.UndefOr[scala.Nothing],
-    slotRangeEnd: Double
-  ): Unit = js.native
-  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: js.UndefOr[scala.Nothing], slotRangeStart: Double): Unit = js.native
-  def drawSkeleton(
-    skeleton: Skeleton,
-    premultipliedAlpha: js.UndefOr[scala.Nothing],
-    slotRangeStart: Double,
-    slotRangeEnd: Double
-  ): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean): Unit = js.native
-  def drawSkeleton(
-    skeleton: Skeleton,
-    premultipliedAlpha: Boolean,
-    slotRangeStart: js.UndefOr[scala.Nothing],
-    slotRangeEnd: Double
-  ): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean, slotRangeStart: Double): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
+  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean, slotRangeStart: Unit, slotRangeEnd: Double): Unit = js.native
+  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Unit, slotRangeStart: Double): Unit = js.native
+  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Unit, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
+  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Unit, slotRangeStart: Unit, slotRangeEnd: Double): Unit = js.native
   
   def drawSkeletonDebug(skeleton: Skeleton): Unit = js.native
-  def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: js.UndefOr[scala.Nothing], ignoredBones: js.Array[String]): Unit = js.native
   def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: Boolean): Unit = js.native
   def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: Boolean, ignoredBones: js.Array[String]): Unit = js.native
+  def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: Unit, ignoredBones: js.Array[String]): Unit = js.native
   
   def drawTexture(texture: GLTexture, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def drawTexture(texture: GLTexture, x: Double, y: Double, width: Double, height: Double, color: Color): Unit = js.native
@@ -142,7 +121,7 @@ trait SceneRenderer extends Disposable {
     pivotX: Double,
     pivotY: Double,
     angle: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     premultipliedAlpha: Boolean
   ): Unit = js.native
   def drawTextureRotated(
@@ -198,7 +177,7 @@ trait SceneRenderer extends Disposable {
   def end(): Unit = js.native
   
   def line(x: Double, y: Double, x2: Double, y2: Double): Unit = js.native
-  def line(x: Double, y: Double, x2: Double, y2: Double, color: js.UndefOr[scala.Nothing], color2: Color): Unit = js.native
+  def line(x: Double, y: Double, x2: Double, y2: Double, color: Unit, color2: Color): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color, color2: Color): Unit = js.native
   
@@ -226,9 +205,9 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
-    color3: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -241,8 +220,8 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def quad(
@@ -255,8 +234,8 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color,
     color4: Color
   ): Unit = js.native
@@ -270,7 +249,7 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color
   ): Unit = js.native
   def quad(
@@ -283,9 +262,9 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
-    color3: js.UndefOr[scala.Nothing],
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -298,7 +277,7 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color
   ): Unit = js.native
@@ -312,7 +291,7 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color,
     color4: Color
@@ -340,8 +319,8 @@ trait SceneRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
-    color3: js.UndefOr[scala.Nothing],
+    color2: Unit,
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -355,7 +334,7 @@ trait SceneRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def quad(
@@ -369,7 +348,7 @@ trait SceneRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color,
     color4: Color
   ): Unit = js.native
@@ -398,7 +377,7 @@ trait SceneRenderer extends Disposable {
     y4: Double,
     color: Color,
     color2: Color,
-    color3: js.UndefOr[scala.Nothing],
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -456,8 +435,8 @@ trait SceneRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def triangle(
@@ -468,7 +447,7 @@ trait SceneRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color
   ): Unit = js.native
   def triangle(
@@ -479,7 +458,7 @@ trait SceneRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color
   ): Unit = js.native
@@ -502,7 +481,7 @@ trait SceneRenderer extends Disposable {
     x3: Double,
     y3: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def triangle(

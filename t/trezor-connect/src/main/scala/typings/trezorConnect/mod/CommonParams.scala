@@ -3,19 +3,17 @@ package typings.trezorConnect.mod
 import typings.trezorConnect.anon.Instance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonParams extends StObject {
   
-  var allowSeedlessDevice: js.UndefOr[Boolean] = js.native
+  var allowSeedlessDevice: js.UndefOr[Boolean] = js.undefined
   
-  var device: js.UndefOr[Instance] = js.native
+  var device: js.UndefOr[Instance] = js.undefined
   
-  var keepSession: js.UndefOr[Boolean] = js.native
+  var keepSession: js.UndefOr[Boolean] = js.undefined
   
-  var useEmptyPassphrase: js.UndefOr[Boolean] = js.native
+  var useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
 }
 object CommonParams {
   

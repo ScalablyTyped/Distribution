@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetArchiveRuleRequest extends StObject {
   
   /**
     * The name of the analyzer to retrieve rules from.
     */
-  var analyzerName: Name = js.native
+  var analyzerName: Name
   
   /**
     * The name of the rule to retrieve.
     */
-  var ruleName: Name = js.native
+  var ruleName: Name
 }
 object GetArchiveRuleRequest {
   

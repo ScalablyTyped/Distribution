@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TracingConfiguration extends StObject {
   
   /**
     * When set to true, AWS X-Ray tracing is enabled.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
 }
 object TracingConfiguration {
   

@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transfers the call in Telephony Gateway.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall exten
     * format](https://en.wikipedia.org/wiki/E.164).  We currently only allow
     * transferring to US numbers (+1xxxyyyzzzz).
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall {
   

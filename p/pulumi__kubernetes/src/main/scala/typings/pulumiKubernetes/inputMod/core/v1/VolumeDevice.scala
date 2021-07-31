@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * volumeDevice describes a mapping of a raw block device within a container.
   */
-@js.native
 trait VolumeDevice extends StObject {
   
   /**
     * devicePath is the path inside of the container that the device will be mapped to.
     */
-  var devicePath: Input[String] = js.native
+  var devicePath: Input[String]
   
   /**
     * name must match the name of a persistentVolumeClaim in the pod
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object VolumeDevice {
   

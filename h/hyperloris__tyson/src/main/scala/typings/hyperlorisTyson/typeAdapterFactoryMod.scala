@@ -5,15 +5,13 @@ import typings.hyperlorisTyson.typeAdapterMod.TypeAdapter
 import typings.hyperlorisTyson.typeTokenMod.TypeToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeAdapterFactoryMod {
   
-  @js.native
   trait TypeAdapterFactory extends StObject {
     
-    def create[T](tyson: Tyson, typeToken: TypeToken[T]): js.UndefOr[TypeAdapter[T]] = js.native
+    def create[T](tyson: Tyson, typeToken: TypeToken[T]): js.UndefOr[TypeAdapter[T]]
   }
   object TypeAdapterFactory {
     

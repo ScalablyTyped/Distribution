@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * permissions when sending a request to perform a crypto transformation using
   * a kms-wrapped crypto key: dlp.kms.encrypt
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey extends StObject {
   
   /**
     * The resource name of the KMS CryptoKey to use for unwrapping. [required]
     */
-  var cryptoKeyName: js.UndefOr[String] = js.native
+  var cryptoKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The wrapped data crypto key. [required]
     */
-  var wrappedKey: js.UndefOr[String] = js.native
+  var wrappedKey: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey {
   

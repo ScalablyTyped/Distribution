@@ -4,37 +4,40 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(input: String, callback: js.Function1[/* solution */ VsSolutionFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: ReadStream, callback: js.Function1[/* solution */ VsSolutionFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("vssln-parser", JSImport.Namespace)
   @js.native
-  def apply(input: String, callback: js.Function1[/* solution */ VsSolutionFile, Unit]): Unit = js.native
-  @JSImport("vssln-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: ReadStream, callback: js.Function1[/* solution */ VsSolutionFile, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.vsslnParser.mod.VsSolutionSectionCollection because Already inherited */ @js.native
-  trait VsSolutionFile extends VsSolutionSection {
+  - org.scalablytyped.runtime.StObject because Already inherited
+  - typings.vsslnParser.mod.VsSolutionSectionCollection because Already inherited */ trait VsSolutionFile
+    extends StObject
+       with VsSolutionSection {
     
-    var minimumVisualStudioVersion: js.UndefOr[String] = js.native
+    var minimumVisualStudioVersion: js.UndefOr[String] = js.undefined
     
-    var nestedProjects: js.UndefOr[VsSolutionSection] = js.native
+    var nestedProjects: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var projectConfigurationPlatforms: js.UndefOr[VsSolutionSection] = js.native
+    var projectConfigurationPlatforms: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var projects: js.Array[VsSolutionProject] = js.native
+    var projects: js.Array[VsSolutionProject]
     
-    var solutionConfigurationPlatforms: js.UndefOr[VsSolutionSection] = js.native
+    var solutionConfigurationPlatforms: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var solutionProperties: js.UndefOr[VsSolutionSection] = js.native
+    var solutionProperties: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var teamFoundationVersionControl: js.UndefOr[VsSolutionSection] = js.native
+    var teamFoundationVersionControl: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var visualStudioVersion: js.UndefOr[String] = js.native
+    var visualStudioVersion: js.UndefOr[String] = js.undefined
   }
   object VsSolutionFile {
     
@@ -98,20 +101,22 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.vsslnParser.mod.VsSolutionSectionCollection because Already inherited */ @js.native
-  trait VsSolutionProject extends VsSolutionSection {
+  - org.scalablytyped.runtime.StObject because Already inherited
+  - typings.vsslnParser.mod.VsSolutionSectionCollection because Already inherited */ trait VsSolutionProject
+    extends StObject
+       with VsSolutionSection {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var projectDependencies: js.UndefOr[VsSolutionSection] = js.native
+    var projectDependencies: js.UndefOr[VsSolutionSection] = js.undefined
     
-    var projectGuid: String = js.native
+    var projectGuid: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var typeGuid: String = js.native
+    var typeGuid: String
   }
   object VsSolutionProject {
     

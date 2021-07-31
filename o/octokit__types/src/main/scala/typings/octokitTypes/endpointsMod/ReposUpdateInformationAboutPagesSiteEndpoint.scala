@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateInformationAboutPagesSiteEndpoint extends StObject {
   
   /**
     * Specify a custom domain for the repository. Sending a `null` value will remove the custom domain. For more about custom domains, see "[Using a custom domain with GitHub Pages](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/)."
     */
-  var cname: js.UndefOr[String] = js.native
+  var cname: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Update the source for the repository. Must include the branch name and path.
     */
-  var source: ReposUpdateInformationAboutPagesSiteParamsSource = js.native
+  var source: ReposUpdateInformationAboutPagesSiteParamsSource
 }
 object ReposUpdateInformationAboutPagesSiteEndpoint {
   

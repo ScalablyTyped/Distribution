@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Css extends StObject {
   
   /** Output only. Immutable. The CSS domain ID. */
-  var cssDomainId: js.UndefOr[String] = js.native
+  var cssDomainId: js.UndefOr[String] = js.undefined
   
   /** Output only. Immutable. The ID of the CSS group this CSS domain is affiliated with. Only populated for CSS group users. */
-  var cssGroupId: js.UndefOr[String] = js.native
+  var cssGroupId: js.UndefOr[String] = js.undefined
   
   /** Output only. Immutable. The CSS domain's display name, used when space is constrained. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. Immutable. The CSS domain's full name. */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /** Output only. Immutable. The CSS domain's homepage. */
-  var homepageUri: js.UndefOr[String] = js.native
+  var homepageUri: js.UndefOr[String] = js.undefined
   
   /** A list of label IDs that are assigned to this CSS domain by its CSS group. Only populated for CSS group users. */
-  var labelIds: js.UndefOr[js.Array[String]] = js.native
+  var labelIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Css {
   

@@ -4,7 +4,6 @@ import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,7 +26,7 @@ object mod {
   @js.native
   class MDCTabIndicator protected ()
     extends typings.materialTabIndicator.componentMod.MDCTabIndicator {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation,
@@ -37,9 +36,12 @@ object mod {
   /* static members */
   object MDCTabIndicator {
     
-    @JSImport("@material/tab-indicator", "MDCTabIndicator.attachTo")
+    @JSImport("@material/tab-indicator", "MDCTabIndicator")
     @js.native
-    def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabIndicator.componentMod.MDCTabIndicator]
   }
   
   @JSImport("@material/tab-indicator", "MDCTabIndicatorFoundation")

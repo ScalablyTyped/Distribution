@@ -11,7 +11,6 @@ import typings.std.RegExp
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -90,9 +89,9 @@ object mod {
           * @param event event object
           * @returns this instance, for method chaining
           */
-        def onMessage(callback: js.Function1[/* event */ MessageEvent[_], Unit]): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
+        def onMessage(callback: js.Function1[/* event */ MessageEvent[js.Any], Unit]): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
         def onMessage(
-          callback: js.Function1[/* event */ MessageEvent[_], Unit],
+          callback: js.Function1[/* event */ MessageEvent[js.Any], Unit],
           options: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions
         ): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
         
@@ -128,8 +127,8 @@ object mod {
           *
           * @param data data to send, if this is an object, it will be stringified before sending
           */
-        def send(data: String): IPromise[_] = js.native
-        def send(data: js.Object): IPromise[_] = js.native
+        def send(data: String): IPromise[js.Any] = js.native
+        def send(data: js.Object): IPromise[js.Any] = js.native
         
         /**
           * Queue of send calls to be made on socket when socket is able to receive data.
@@ -145,22 +144,21 @@ object mod {
       /**
         * Options available to be specified for IWebSocketProvider.
         */
-      @js.native
       trait IWebSocketConfigOptions extends StObject {
         
-        var binaryType: js.UndefOr[blob | arraybuffer] = js.native
+        var binaryType: js.UndefOr[blob | arraybuffer] = js.undefined
         
-        var initialTimeout: js.UndefOr[Double] = js.native
+        var initialTimeout: js.UndefOr[Double] = js.undefined
         
-        var maxTimeout: js.UndefOr[Double] = js.native
+        var maxTimeout: js.UndefOr[Double] = js.undefined
         
-        var reconnectIfNotNormalClose: js.UndefOr[Boolean] = js.native
+        var reconnectIfNotNormalClose: js.UndefOr[Boolean] = js.undefined
         
-        var rootScopeFailOver: js.UndefOr[Boolean] = js.native
+        var rootScopeFailOver: js.UndefOr[Boolean] = js.undefined
         
-        var scope: js.UndefOr[IScope] = js.native
+        var scope: js.UndefOr[IScope] = js.undefined
         
-        var useApplyAsync: js.UndefOr[Boolean] = js.native
+        var useApplyAsync: js.UndefOr[Boolean] = js.undefined
       }
       object IWebSocketConfigOptions {
         
@@ -218,19 +216,18 @@ object mod {
       }
       
       /** Type corresponding to onMessage callbacks stored in $Websocket#onMessageCallbacks instance. */
-      @js.native
       trait IWebSocketMessageHandler extends StObject {
         
-        var autoApply: Boolean = js.native
+        var autoApply: Boolean
         
-        def fn(evt: MessageEvent[_]): Unit = js.native
+        def fn(evt: MessageEvent[js.Any]): Unit
         
-        var pattern: js.UndefOr[String | RegExp] = js.native
+        var pattern: js.UndefOr[String | RegExp] = js.undefined
       }
       object IWebSocketMessageHandler {
         
         @scala.inline
-        def apply(autoApply: Boolean, fn: MessageEvent[_] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
+        def apply(autoApply: Boolean, fn: MessageEvent[js.Any] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
           val __obj = js.Dynamic.literal(autoApply = autoApply.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn))
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler]
         }
@@ -242,7 +239,7 @@ object mod {
           def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setFn(value: MessageEvent[_] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+          def setFn(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
           
           @scala.inline
           def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
@@ -253,17 +250,16 @@ object mod {
       }
       
       /** Options available to be specified for IWebSocket.onMessage */
-      @js.native
       trait IWebSocketMessageOptions extends StObject {
         
         /** If true, each message handled will safely call `$rootScope.$digest()`. */
-        var autoApply: js.UndefOr[Boolean] = js.native
+        var autoApply: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If specified, only messages that match the filter will cause the message event
           * to be fired.
           */
-        var filter: js.UndefOr[String | RegExp] = js.native
+        var filter: js.UndefOr[String | RegExp] = js.undefined
       }
       object IWebSocketMessageOptions {
         
@@ -308,12 +304,11 @@ object mod {
           ]
       
       /** Type corresponding to items stored in $WebSocket#sendQueue instance. */
-      @js.native
       trait IWebSocketQueueItem extends StObject {
         
-        var defered: IPromise[Unit] = js.native
+        var defered: IPromise[Unit]
         
-        var message: js.Any = js.native
+        var message: js.Any
       }
       object IWebSocketQueueItem {
         

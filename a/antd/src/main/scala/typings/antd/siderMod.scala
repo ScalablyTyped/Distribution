@@ -15,7 +15,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siderMod extends Shortcut {
@@ -42,12 +41,11 @@ object siderMod extends Shortcut {
     def responsive: typings.antd.antdStrings.responsive = "responsive".asInstanceOf[typings.antd.antdStrings.responsive]
   }
   
-  @js.native
   trait SiderContextProps extends StObject {
     
-    var collapsedWidth: js.UndefOr[Double | String] = js.native
+    var collapsedWidth: js.UndefOr[Double | String] = js.undefined
     
-    var siderCollapsed: js.UndefOr[Boolean] = js.native
+    var siderCollapsed: js.UndefOr[Boolean] = js.undefined
   }
   object SiderContextProps {
     
@@ -74,34 +72,35 @@ object siderMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SiderProps extends HTMLAttributes[HTMLDivElement] {
+  trait SiderProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl] = js.native
+    var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsedWidth: js.UndefOr[Double | String] = js.native
+    var collapsedWidth: js.UndefOr[Double | String] = js.undefined
     
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
-    var defaultCollapsed: js.UndefOr[Boolean] = js.native
+    var defaultCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var onBreakpoint: js.UndefOr[js.Function1[/* broken */ Boolean, Unit]] = js.native
+    var onBreakpoint: js.UndefOr[js.Function1[/* broken */ Boolean, Unit]] = js.undefined
     
-    var onCollapse: js.UndefOr[js.Function2[/* collapsed */ Boolean, /* type */ CollapseType, Unit]] = js.native
+    var onCollapse: js.UndefOr[js.Function2[/* collapsed */ Boolean, /* type */ CollapseType, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var reverseArrow: js.UndefOr[Boolean] = js.native
+    var reverseArrow: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[SiderTheme] = js.native
+    var theme: js.UndefOr[SiderTheme] = js.undefined
     
-    var trigger: js.UndefOr[ReactNode] = js.native
+    var trigger: js.UndefOr[ReactNode] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var zeroWidthTriggerStyle: js.UndefOr[CSSProperties] = js.native
+    var zeroWidthTriggerStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object SiderProps {
     
@@ -194,12 +193,11 @@ object siderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SiderState extends StObject {
     
-    var below: Boolean = js.native
+    var below: Boolean
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
   }
   object SiderState {
     

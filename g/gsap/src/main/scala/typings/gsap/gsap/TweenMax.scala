@@ -2,12 +2,13 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.gsap.gsap.Tween because Already inherited */ @js.native
-trait TweenMax extends TweenLite {
+trait TweenMax
+  extends StObject
+     with TweenLite {
   
   /**
     * Gets or sets the tween's progress which is a value between 0 and 1 indicating the position of the virtual playhead (excluding repeats) where 0 is at the beginning, 0.5 is halfway

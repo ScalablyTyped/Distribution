@@ -2,21 +2,21 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerRegisterPluginObject[T] extends ServerRegisterOptions {
+trait ServerRegisterPluginObject[T]
+  extends StObject
+     with ServerRegisterOptions {
   
   /**
     * options passed to the plugin during registration.
     */
-  var options: js.UndefOr[T] = js.native
+  var options: js.UndefOr[T] = js.undefined
   
   /**
     * a plugin object.
     */
-  var plugin: Plugin[T] = js.native
+  var plugin: Plugin[T]
 }
 object ServerRegisterPluginObject {
   
@@ -27,7 +27,7 @@ object ServerRegisterPluginObject {
   }
   
   @scala.inline
-  implicit class ServerRegisterPluginObjectMutableBuilder[Self <: ServerRegisterPluginObject[_], T] (val x: Self with ServerRegisterPluginObject[T]) extends AnyVal {
+  implicit class ServerRegisterPluginObjectMutableBuilder[Self <: ServerRegisterPluginObject[?], T] (val x: Self & ServerRegisterPluginObject[T]) extends AnyVal {
     
     @scala.inline
     def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

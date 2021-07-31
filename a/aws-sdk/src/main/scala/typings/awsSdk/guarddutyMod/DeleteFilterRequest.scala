@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFilterRequest extends StObject {
   
   /**
     * The unique ID of the detector that the filter is associated with.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The name of the filter that you want to delete.
     */
-  var FilterName: String = js.native
+  var FilterName: String
 }
 object DeleteFilterRequest {
   

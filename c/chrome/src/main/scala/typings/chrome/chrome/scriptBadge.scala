@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -12,10 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ////////////////////
 object scriptBadge {
   
-  @js.native
   trait AttentionDetails extends StObject {
     
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object AttentionDetails {
     
@@ -33,10 +31,9 @@ object scriptBadge {
     }
   }
   
-  @js.native
   trait GetPopupDetails extends StObject {
     
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object GetPopupDetails {
     
@@ -56,12 +53,11 @@ object scriptBadge {
   
   type ScriptBadgeClickedEvent = Event[js.Function1[/* tab */ Tab, Unit]]
   
-  @js.native
   trait SetPopupDetails extends StObject {
     
-    var popup: String = js.native
+    var popup: String
     
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object SetPopupDetails {
     

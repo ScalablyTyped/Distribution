@@ -4,58 +4,53 @@ import typings.reactBootstrap.anon.BsClass
 import typings.reactBootstrap.bootstrapUtilsMod.BSProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
+  @JSImport("react-bootstrap", "utils")
+  @js.native
+  val ^ : js.Any = js.native
+  
   object bootstrapUtils {
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.addStyle")
+    @JSImport("react-bootstrap", "utils.bootstrapUtils")
     @js.native
-    def addStyle(Component: js.Any, styleVariant: js.Any*): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.bsClass")
-    @js.native
-    def bsClass(defaultClass: js.Any, Component: js.Any): js.Any = js.native
+    @scala.inline
+    def addStyle(Component: js.Any, styleVariant: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addStyle")(Component.asInstanceOf[js.Any], styleVariant.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.bsSizes")
-    @js.native
-    def bsSizes(sizes: js.Any, defaultSize: js.Any, Component: js.Any): js.Any = js.native
+    @scala.inline
+    def bsClass(defaultClass: js.Any, Component: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bsClass")(defaultClass.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.bsStyles")
-    @js.native
-    def bsStyles(styles: js.Any, defaultStyle: js.Any, Component: js.Any): js.Any = js.native
+    @scala.inline
+    def bsSizes(sizes: js.Any, defaultSize: js.Any, Component: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bsSizes")(sizes.asInstanceOf[js.Any], defaultSize.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.getBsProps")
-    @js.native
-    def getBsProps(props: js.Any): BSProps = js.native
+    @scala.inline
+    def bsStyles(styles: js.Any, defaultStyle: js.Any, Component: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bsStyles")(styles.asInstanceOf[js.Any], defaultStyle.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.getClassSet")
-    @js.native
-    def getClassSet(props: js.Any): js.Any = js.native
+    @scala.inline
+    def getBsProps(props: js.Any): BSProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getBsProps")(props.asInstanceOf[js.Any]).asInstanceOf[BSProps]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.isBsProp")
-    @js.native
-    def isBsProp(propName: String): Boolean = js.native
+    @scala.inline
+    def getClassSet(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassSet")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.prefix")
-    @js.native
-    def prefix(props: BsClass): String = js.native
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.prefix")
-    @js.native
-    def prefix(props: BsClass, variant: String): String = js.native
+    @scala.inline
+    def isBsProp(propName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBsProp")(propName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.splitBsProps")
-    @js.native
-    def splitBsProps(props: js.Any): js.Tuple2[BSProps, _] = js.native
+    @scala.inline
+    def prefix(props: BsClass): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def prefix(props: BsClass, variant: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(props.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-bootstrap", "utils.bootstrapUtils.splitBsPropsAndOmit")
-    @js.native
-    def splitBsPropsAndOmit(props: js.Any, omittedPropNames: js.Any): js.Tuple2[BSProps, _] = js.native
+    @scala.inline
+    def splitBsProps(props: js.Any): js.Tuple2[BSProps, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBsProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[BSProps, js.Any]]
+    
+    @scala.inline
+    def splitBsPropsAndOmit(props: js.Any, omittedPropNames: js.Any): js.Tuple2[BSProps, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitBsPropsAndOmit")(props.asInstanceOf[js.Any], omittedPropNames.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[BSProps, js.Any]]
   }
   
-  @JSImport("react-bootstrap", "utils.createChainedFunction")
-  @js.native
-  def createChainedFunction(funcs: js.Function*): js.Function = js.native
+  @scala.inline
+  def createChainedFunction(funcs: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("createChainedFunction")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

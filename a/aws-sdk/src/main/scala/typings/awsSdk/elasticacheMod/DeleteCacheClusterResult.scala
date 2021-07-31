@@ -2,13 +2,11 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCacheClusterResult extends StObject {
   
-  var CacheCluster: js.UndefOr[typings.awsSdk.elasticacheMod.CacheCluster] = js.native
+  var CacheCluster: js.UndefOr[typings.awsSdk.elasticacheMod.CacheCluster] = js.undefined
 }
 object DeleteCacheClusterResult {
   

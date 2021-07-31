@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveToRequest extends StObject {
   
   /**
     * Drop node before this one (if absent, the moved node becomes the last child of
     * `targetNodeId`).
     */
-  var insertBeforeNodeId: js.UndefOr[NodeId] = js.native
+  var insertBeforeNodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * Id of the node to move.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Id of the element to drop the moved node into.
     */
-  var targetNodeId: NodeId = js.native
+  var targetNodeId: NodeId
 }
 object MoveToRequest {
   

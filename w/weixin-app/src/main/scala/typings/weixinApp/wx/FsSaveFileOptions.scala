@@ -2,13 +2,13 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FsSaveFileOptions extends SaveFileOptions {
+trait FsSaveFileOptions
+  extends StObject
+     with SaveFileOptions {
   
-  var filePath: String = js.native
+  var filePath: String
 }
 object FsSaveFileOptions {
   

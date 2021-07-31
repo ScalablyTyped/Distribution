@@ -2,13 +2,11 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLivegraphBacktraceRecordInfoExpInfo extends StObject {
   
-  var deletedIns: js.UndefOr[js.Array[String]] = js.native
+  var deletedIns: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaLivegraphBacktraceRecordInfoExpInfo {
   

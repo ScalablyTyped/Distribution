@@ -2,31 +2,29 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionProvider extends StObject {
   
   /**
     * Get a Configuration Option
     **/
-  def getOption(name: String): js.Any = js.native
+  def getOption(name: String): js.Any
   
   /**
     * Get Configuration Options
     **/
-  def getOptions(): js.Any = js.native
+  def getOptions(): js.Any
   
   /**
     * Sets a Configuration Option
     **/
-  def setOption(optionName: String, optionValue: js.Any): Unit = js.native
+  def setOption(optionName: String, optionValue: js.Any): Unit
   
   /**
     * Sets Configuration Options
     **/
-  def setOptions(keyValueTuples: js.Any): Unit = js.native
+  def setOptions(keyValueTuples: js.Any): Unit
 }
 object OptionProvider {
   

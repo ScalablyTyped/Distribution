@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaGoogleAdsLink extends StObject {
   
   /**
     * Enable personalized advertising features with this integration. Automatically publish my Google Analytics audience lists and Google Analytics remarketing events/parameters to the
     * linked Google Ads account. If this field is not set on create/update it will be defaulted to true.
     */
-  var adsPersonalizationEnabled: js.UndefOr[Boolean] = js.native
+  var adsPersonalizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. If true, this link is for a Google Ads manager account. */
-  var canManageClients: js.UndefOr[Boolean] = js.native
+  var canManageClients: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Time when this link was originally created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Immutable. Google Ads customer ID. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /** Output only. Email address of the user that created the link. An empty string will be returned if the email address can't be retrieved. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** Output only. Format: properties/{propertyId}/googleAdsLinks/{googleAdsLinkId} Note: googleAdsLinkId is not the Google Ads customer ID. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Immutable. Format: properties/{propertyId} */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Output only. Time when this link was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaGoogleAdsLink {
   

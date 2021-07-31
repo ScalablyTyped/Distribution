@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateWebACLRequest extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) of the resource to be protected, either an application load balancer or Amazon API Gateway stage.  The ARN should be in one of the following formats:   For an Application Load Balancer: arn:aws:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id     For an Amazon API Gateway stage: arn:aws:apigateway:region::/restapis/api-id/stages/stage-name    
     */
-  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn
   
   /**
     * A unique identifier (ID) for the web ACL. 
     */
-  var WebACLId: ResourceId = js.native
+  var WebACLId: ResourceId
 }
 object AssociateWebACLRequest {
   

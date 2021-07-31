@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsConfiguration extends StObject {
   
   /**
     * A Boolean that specifies whether cloud metrics are collected.
     */
-  var cloudMetricEnabled: js.UndefOr[Enabled] = js.native
+  var cloudMetricEnabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The ARN of the role that is used to collect cloud metrics.
     */
-  var metricRuleRoleArn: js.UndefOr[RoleArn] = js.native
+  var metricRuleRoleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object MetricsConfiguration {
   

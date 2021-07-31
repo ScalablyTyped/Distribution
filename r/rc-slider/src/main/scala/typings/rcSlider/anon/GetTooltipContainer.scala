@@ -2,17 +2,15 @@ package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTooltipContainer extends StObject {
   
-  def getTooltipContainer(node: js.Any): js.Any = js.native
+  def getTooltipContainer(node: js.Any): js.Any
   
-  var handleStyle: js.Array[js.Object] = js.native
+  var handleStyle: js.Array[js.Object]
   
-  def tipFormatter(value: Double): Double = js.native
+  def tipFormatter(value: Double): Double
 }
 object GetTooltipContainer {
   

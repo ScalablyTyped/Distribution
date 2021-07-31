@@ -2,16 +2,17 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countMod {
   
-  @JSImport("rxjs-compat/operators/count", "count")
+  @JSImport("rxjs-compat/operators/count", JSImport.Namespace)
   @js.native
-  def count[T](): js.Any = js.native
-  @JSImport("rxjs-compat/operators/count", "count")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def count[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Any]
+  @scala.inline
   def count[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -19,5 +20,5 @@ object countMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
       Boolean
     ]
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

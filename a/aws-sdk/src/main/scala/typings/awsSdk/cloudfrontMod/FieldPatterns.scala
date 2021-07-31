@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldPatterns extends StObject {
   
   /**
     * An array of the field-level encryption field patterns.
     */
-  var Items: js.UndefOr[FieldPatternList] = js.native
+  var Items: js.UndefOr[FieldPatternList] = js.undefined
   
   /**
     * The number of field-level encryption field patterns.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object FieldPatterns {
   

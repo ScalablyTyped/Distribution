@@ -10,9 +10,9 @@ Cordova Camera Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-camera |
 | Keywords           | cordova, camera, ecosystem:cordova, cordova-android, cordova-ios, cordova-browser, cordova-windows, cordova-osx |
-| # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 1490066 |
+| # releases         | 3 |
+| # dependents       | 34 |
+| # downloads        | 1578770 |
 | # stars            | 25 |
 
 ## Links

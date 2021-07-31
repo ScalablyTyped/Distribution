@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * script of the worker VM so that the backend knows that the VM is being shut
   * down.
   */
-@js.native
 trait SchemaWorkerShutdownNotice extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaWorkerShutdownNotice extends StObject {
     * shutdown reason is preemption. Other possible reasons may be added in the
     * future.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerShutdownNotice {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpannerIODetails extends StObject {
   
   /** DatabaseId accessed in the connection. */
-  var databaseId: js.UndefOr[String] = js.native
+  var databaseId: js.UndefOr[String] = js.undefined
   
   /** InstanceId accessed in the connection. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** ProjectId accessed in the connection. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SpannerIODetails {
   

@@ -2,23 +2,21 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconClass extends StObject {
   
   // Example: 'viewChange'
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var onButtonClick: js.UndefOr[String] = js.native
+  var onButtonClick: js.UndefOr[String] = js.undefined
   
   // Example: 'icon-fullDevice'
-  var sequence: js.UndefOr[Double] = js.native
+  var sequence: js.UndefOr[Double] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object IconClass {
   

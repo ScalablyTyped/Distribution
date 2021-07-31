@@ -2,45 +2,43 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateReleaseEndpoint extends StObject {
   
   /**
     * Text describing the contents of the tag.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * `true` to create a draft (unpublished) release, `false` to create a published one.
     */
-  var draft: js.UndefOr[Boolean] = js.native
+  var draft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the release.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * `true` to identify the release as a prerelease. `false` to identify the release as a full release.
     */
-  var prerelease: js.UndefOr[Boolean] = js.native
+  var prerelease: js.UndefOr[Boolean] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The name of the tag.
     */
-  var tag_name: String = js.native
+  var tag_name: String
   
   /**
     * Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually `master`).
     */
-  var target_commitish: js.UndefOr[String] = js.native
+  var target_commitish: js.UndefOr[String] = js.undefined
 }
 object ReposCreateReleaseEndpoint {
   

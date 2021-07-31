@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealServingMetadata extends StObject {
   
   /** True if alcohol ads are allowed for this deal (read-only). This field is only populated when querying for finalized orders using the method GetFinalizedOrderDeals */
-  var alcoholAdsAllowed: js.UndefOr[Boolean] = js.native
+  var alcoholAdsAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** Tracks which parties (if any) have paused a deal. (readonly, except via PauseResumeOrderDeals action) */
-  var dealPauseStatus: js.UndefOr[DealServingMetadataDealPauseStatus] = js.native
+  var dealPauseStatus: js.UndefOr[DealServingMetadataDealPauseStatus] = js.undefined
 }
 object DealServingMetadata {
   

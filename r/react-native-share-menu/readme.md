@@ -10,9 +10,9 @@ Add your app as a target for sharing from other apps and write iOS Share Extensi
 | ------------------ | :-------------: |
 | Full name          | react-native-share-menu |
 | Keywords           | react-component, react-native, android, ios, share, share-extension, custom-view |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0 |
-| # downloads        | 7529 |
+| # downloads        | 19116 |
 | # stars            | 1 |
 
 ## Links

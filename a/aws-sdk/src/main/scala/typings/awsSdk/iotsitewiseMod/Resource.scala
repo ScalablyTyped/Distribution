@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * A portal resource.
     */
-  var portal: js.UndefOr[PortalResource] = js.native
+  var portal: js.UndefOr[PortalResource] = js.undefined
   
   /**
     * A project resource.
     */
-  var project: js.UndefOr[ProjectResource] = js.native
+  var project: js.UndefOr[ProjectResource] = js.undefined
 }
 object Resource {
   

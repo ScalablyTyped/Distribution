@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Loop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GroundPolylineGeometry")
@@ -21,17 +20,17 @@ class GroundPolylineGeometry protected () extends Packable {
 }
 object GroundPolylineGeometry {
   
+  @JSImport("cesium", "GroundPolylineGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("cesium", "GroundPolylineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): GroundPolylineGeometry = js.native
-  @JSImport("cesium", "GroundPolylineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
-  @JSImport("cesium", "GroundPolylineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): GroundPolylineGeometry = js.native
-  @JSImport("cesium", "GroundPolylineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): GroundPolylineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[GroundPolylineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): GroundPolylineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[GroundPolylineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: GroundPolylineGeometry): GroundPolylineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[GroundPolylineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: GroundPolylineGeometry): GroundPolylineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[GroundPolylineGeometry]
 }

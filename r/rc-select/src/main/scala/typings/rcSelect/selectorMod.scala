@@ -29,57 +29,55 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorMod extends Shortcut {
   
   @JSImport("rc-select/lib/Selector", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[SelectorProps with RefAttributes[RefSelectorProps]] = js.native
+  val default: ForwardRefExoticComponent[SelectorProps & RefAttributes[RefSelectorProps]] = js.native
   
-  @js.native
   trait InnerSelectorProps extends StObject {
     
-    var accessibilityIndex: Double = js.native
+    var accessibilityIndex: Double
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var inputRef: Ref[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var inputRef: Ref[HTMLInputElement | HTMLTextAreaElement]
     
-    var mode: Mode = js.native
+    var mode: Mode
     
-    var onInputChange: ChangeEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputChange: ChangeEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var onInputCompositionEnd: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputCompositionEnd: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var onInputCompositionStart: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputCompositionStart: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var onInputKeyDown: KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputKeyDown: KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var onInputMouseDown: MouseEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputMouseDown: MouseEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var onInputPaste: ClipboardEventHandler[HTMLInputElement | HTMLTextAreaElement] = js.native
+    var onInputPaste: ClipboardEventHandler[HTMLInputElement | HTMLTextAreaElement]
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var searchValue: String = js.native
+    var searchValue: String
     
-    var showSearch: js.UndefOr[Boolean] = js.native
+    var showSearch: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var values: js.Array[LabelValueType] = js.native
+    var values: js.Array[LabelValueType]
   }
   object InnerSelectorProps {
     
@@ -99,7 +97,7 @@ object selectorMod extends Shortcut {
       searchValue: String,
       values: js.Array[LabelValueType]
     ): InnerSelectorProps = {
-      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
       __obj.asInstanceOf[InnerSelectorProps]
     }
     
@@ -195,12 +193,11 @@ object selectorMod extends Shortcut {
     }
   }
   
-  @js.native
   trait RefSelectorProps extends StObject {
     
-    def blur(): Unit = js.native
+    def blur(): Unit
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object RefSelectorProps {
     
@@ -291,8 +288,8 @@ object selectorMod extends Shortcut {
     var values: js.Array[LabelValueType] = js.native
   }
   
-  type _To = ForwardRefExoticComponent[SelectorProps with RefAttributes[RefSelectorProps]]
+  type _To = ForwardRefExoticComponent[SelectorProps & RefAttributes[RefSelectorProps]]
   
   /* This means you don't have to write `default`, but can instead just say `selectorMod.foo` */
-  override def _to: ForwardRefExoticComponent[SelectorProps with RefAttributes[RefSelectorProps]] = default
+  override def _to: ForwardRefExoticComponent[SelectorProps & RefAttributes[RefSelectorProps]] = default
 }

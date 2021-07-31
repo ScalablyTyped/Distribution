@@ -2,19 +2,17 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutValidationRule extends StObject {
   
-  var condition: js.UndefOr[js.Function0[Boolean]] = js.native
+  var condition: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var message: js.UndefOr[String | KnockoutValidationMessageFunction] = js.native
+  var message: js.UndefOr[String | KnockoutValidationMessageFunction] = js.undefined
   
-  var params: js.Any = js.native
+  var params: js.Any
   
-  var rule: String = js.native
+  var rule: String
 }
 object KnockoutValidationRule {
   

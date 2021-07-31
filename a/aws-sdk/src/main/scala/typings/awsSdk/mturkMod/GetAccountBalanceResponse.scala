@@ -2,15 +2,13 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountBalanceResponse extends StObject {
   
-  var AvailableBalance: js.UndefOr[CurrencyAmount] = js.native
+  var AvailableBalance: js.UndefOr[CurrencyAmount] = js.undefined
   
-  var OnHoldBalance: js.UndefOr[CurrencyAmount] = js.native
+  var OnHoldBalance: js.UndefOr[CurrencyAmount] = js.undefined
 }
 object GetAccountBalanceResponse {
   

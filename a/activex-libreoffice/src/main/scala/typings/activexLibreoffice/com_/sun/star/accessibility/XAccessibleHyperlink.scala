@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with respect to the text exposed by that interface.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleHyperlink extends XAccessibleAction {
+trait XAccessibleHyperlink
+  extends StObject
+     with XAccessibleAction {
   
   /**
     * Returns the index at which the textual representation of the hyperlink (group) ends.
@@ -28,7 +28,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleText} interface.
     */
-  val EndIndex: Double = js.native
+  val EndIndex: Double
   
   /**
     * Returns the index at which the textual representation of the hyperlink (group) starts.
@@ -36,7 +36,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleHypertext} interface.
     */
-  val StartIndex: Double = js.native
+  val StartIndex: Double
   
   /**
     * Returns an object that represents the link anchor, as appropriate for that link.
@@ -45,7 +45,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * @param nIndex This index identifies the anchor when, as in the case of an image map, there is more than one link represented by this object. The valid m
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionAnchor(nIndex: Double): js.Any = js.native
+  def getAccessibleActionAnchor(nIndex: Double): js.Any
   
   /**
     * Returns an object that represents the link anchor, as appropriate for that link.
@@ -54,7 +54,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * @param nIndex This index identifies the action object when, as in the case of an image map, there is more than one link represented by this object. The
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionObject(nIndex: Double): js.Any = js.native
+  def getAccessibleActionObject(nIndex: Double): js.Any
   
   /**
     * Returns the index at which the textual representation of the hyperlink (group) ends.
@@ -62,7 +62,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleText} interface.
     */
-  def getEndIndex(): Double = js.native
+  def getEndIndex(): Double
   
   /**
     * Returns the index at which the textual representation of the hyperlink (group) starts.
@@ -70,7 +70,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleHypertext} interface.
     */
-  def getStartIndex(): Double = js.native
+  def getStartIndex(): Double
   
   /**
     * Returns whether the document referenced by this links is still valid.
@@ -78,7 +78,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * This is a volatile state that may change without further warning like e.g. sending an appropriate event.
     * @returns Returns `TRUE` if the referenced document is still valid and `FALSE` otherwise.
     */
-  def isValid(): Boolean = js.native
+  def isValid(): Boolean
 }
 object XAccessibleHyperlink {
   

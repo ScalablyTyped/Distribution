@@ -3,23 +3,28 @@ package typings.mqttPacket
 import typings.mqttPacket.mod.QoS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mqttPacketNumbers {
   
   @js.native
-  sealed trait `0` extends QoS
+  sealed trait `0`
+    extends StObject
+       with QoS
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1` extends QoS
+  sealed trait `1`
+    extends StObject
+       with QoS
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `2` extends QoS
+  sealed trait `2`
+    extends StObject
+       with QoS
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   

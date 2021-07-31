@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterfaceAttachmentChanges extends StObject {
   
   /**
     * The ID of the network interface attachment.
     */
-  var AttachmentId: js.UndefOr[NetworkInterfaceAttachmentId] = js.native
+  var AttachmentId: js.UndefOr[NetworkInterfaceAttachmentId] = js.undefined
   
   /**
     * Indicates whether the network interface is deleted when the instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
 }
 object NetworkInterfaceAttachmentChanges {
   

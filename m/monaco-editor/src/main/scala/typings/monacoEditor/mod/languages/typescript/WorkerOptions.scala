@@ -2,14 +2,12 @@ package typings.monacoEditor.mod.languages.typescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerOptions extends StObject {
   
   /** A full HTTP path to a JavaScript file which adds a function `customTSWorkerFactory` to the self inside a web-worker */
-  var customWorkerPath: js.UndefOr[String] = js.native
+  var customWorkerPath: js.UndefOr[String] = js.undefined
 }
 object WorkerOptions {
   

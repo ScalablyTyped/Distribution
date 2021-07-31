@@ -6,16 +6,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.highcontrastchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the high contrast accessibility settings. */
 @js.native
 trait AccessibilitySettings extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, _]): Unit = js.native
+  def addEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, js.Any]): Unit = js.native
   
   /** Gets a value that indicates whether the system high contrast feature is on or off. */
   var highContrast: Boolean = js.native
@@ -24,12 +23,12 @@ trait AccessibilitySettings extends StObject {
   var highContrastScheme: String = js.native
   
   /** Occurs when the system high contrast feature turns on or off. */
-  def onhighcontrastchanged(ev: js.Any with WinRTEvent[AccessibilitySettings]): Unit = js.native
+  def onhighcontrastchanged(ev: js.Any & WinRTEvent[AccessibilitySettings]): Unit = js.native
   /** Occurs when the system high contrast feature turns on or off. */
   @JSName("onhighcontrastchanged")
-  var onhighcontrastchanged_Original: TypedEventHandler[AccessibilitySettings, _] = js.native
+  var onhighcontrastchanged_Original: TypedEventHandler[AccessibilitySettings, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, _]): Unit = js.native
+  def removeEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, js.Any]): Unit = js.native
 }

@@ -2,27 +2,25 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateFunction extends StObject {
   
   var aggregateFunction: js.UndefOr[
     js.Function3[/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var data: js.Array[js.Object] = js.native
+  var data: js.Array[js.Object]
   
-  var mapUnitsPerPixel: Double = js.native
+  var mapUnitsPerPixel: Double
   
-  var marginPixels: js.UndefOr[Double] = js.native
+  var marginPixels: js.UndefOr[Double] = js.undefined
   
-  var pointKey: String = js.native
+  var pointKey: String
   
-  def radiusFunction(row: js.Any): Double = js.native
+  def radiusFunction(row: js.Any): Double
   
-  var valueFunction: js.UndefOr[js.Function1[/* row */ js.Any, Double]] = js.native
+  var valueFunction: js.UndefOr[js.Function1[/* row */ js.Any, Double]] = js.undefined
 }
 object AggregateFunction {
   

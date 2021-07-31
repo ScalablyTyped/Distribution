@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elastictranscoder {
@@ -31,6 +30,10 @@ object elastictranscoder {
   /* static members */
   object Pipeline {
     
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -40,26 +43,21 @@ object elastictranscoder {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elastictranscoderPipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elastictranscoderPipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elastictranscoderPipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elastictranscoderPipelineMod.Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "elastictranscoder.Preset")
@@ -79,6 +77,10 @@ object elastictranscoder {
   /* static members */
   object Preset {
     
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Preset resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,25 +90,20 @@ object elastictranscoder {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.presetMod.Preset = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PresetState): typings.pulumiAws.presetMod.Preset = js.native
-    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.presetMod.Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.presetMod.Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.presetMod.Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PresetState): typings.pulumiAws.presetMod.Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.presetMod.Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.presetMod.Preset]
     
     /**
       * Returns true if the given object is an instance of Preset.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "elastictranscoder.Preset.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean]
   }
 }

@@ -4,22 +4,20 @@ import typings.intercomClient.intercomClientStrings.segmentDotlist
 import typings.intercomClient.userMod.Segment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Segments extends StObject {
   
-  var segments: js.Array[Segment] = js.native
+  var segments: js.Array[Segment]
   
-  var `type`: segmentDotlist = js.native
+  var `type`: segmentDotlist
 }
 object Segments {
   
   @scala.inline
-  def apply(segments: js.Array[Segment], `type`: segmentDotlist): Segments = {
+  def apply(segments: js.Array[Segment]): Segments = {
     val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("segment.list")
     __obj.asInstanceOf[Segments]
   }
   

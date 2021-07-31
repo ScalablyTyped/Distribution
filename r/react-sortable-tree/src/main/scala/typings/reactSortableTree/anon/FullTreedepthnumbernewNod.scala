@@ -6,33 +6,31 @@ import typings.reactSortableTree.mod.TreeNode
 import typings.reactSortableTree.treeDataUtilsMod.GetNodeKeyFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  depth :number,   newNode :react-sortable-tree.react-sortable-tree.TreeItem,   minimumTreeIndex :number,   ignoreCollapsed :boolean | undefined,   expandParent :boolean | undefined,   getNodeKey :react-sortable-tree.react-sortable-tree/utils/tree-data-utils.GetNodeKeyFunction} */
-@js.native
 trait FullTreedepthnumbernewNod extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var expandParent: js.UndefOr[Boolean] = js.native
+  var expandParent: js.UndefOr[Boolean] = js.undefined
   
-  var getNodeKey: GetNodeKeyFunction = js.native
+  var getNodeKey: GetNodeKeyFunction
   
-  var ignoreCollapsed: js.UndefOr[Boolean] = js.native
+  var ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   
-  var minimumTreeIndex: Double = js.native
+  var minimumTreeIndex: Double
   
-  var newNode: TreeItem = js.native
+  var newNode: TreeItem
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object FullTreedepthnumbernewNod {
   
   @scala.inline
   def apply(
     depth: Double,
-    getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
+    getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     minimumTreeIndex: Double,
     newNode: TreeItem,
     treeData: js.Array[TreeItem]
@@ -54,7 +52,7 @@ object FullTreedepthnumbernewNod {
     def setExpandParentUndefined: Self = StObject.set(x, "expandParent", js.undefined)
     
     @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex with TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])

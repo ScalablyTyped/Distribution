@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySourceGroup extends StObject {
   
   /** Required. The display name of the inventory source group. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the inventory source group. Assigned by the system. */
-  var inventorySourceGroupId: js.UndefOr[String] = js.native
+  var inventorySourceGroupId: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the inventory source group. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object InventorySourceGroup {
   

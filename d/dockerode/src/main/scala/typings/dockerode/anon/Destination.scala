@@ -2,27 +2,25 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
-  var Destination: String = js.native
+  var Destination: String
   
-  var Driver: js.UndefOr[String] = js.native
+  var Driver: js.UndefOr[String] = js.undefined
   
-  var Mode: String = js.native
+  var Mode: String
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var Propagation: String = js.native
+  var Propagation: String
   
-  var RW: Boolean = js.native
+  var RW: Boolean
   
-  var Source: String = js.native
+  var Source: String
   
-  var Type: String = js.native
+  var Type: String
 }
 object Destination {
   

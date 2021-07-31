@@ -12,7 +12,7 @@ Caches calls to Backbone.[Model | Collection].fetch
 | Keywords           | backbone, fetch, cache |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 20489 |
+| # downloads        | 28007 |
 | # stars            | 0 |
 
 ## Links

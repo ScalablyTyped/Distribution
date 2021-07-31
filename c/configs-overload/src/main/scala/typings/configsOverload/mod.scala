@@ -3,30 +3,28 @@ package typings.configsOverload
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("configs-overload", JSImport.Default)
+  @JSImport("configs-overload", JSImport.Namespace)
   @js.native
-  def default(): ExtendableConfig = js.native
-  @JSImport("configs-overload", JSImport.Default)
-  @js.native
-  def default(configsDirectory: js.UndefOr[scala.Nothing], options: ConfigsOverloadOptions): ExtendableConfig = js.native
-  @JSImport("configs-overload", JSImport.Default)
-  @js.native
-  def default(configsDirectory: String): ExtendableConfig = js.native
-  @JSImport("configs-overload", JSImport.Default)
-  @js.native
-  def default(configsDirectory: String, options: ConfigsOverloadOptions): ExtendableConfig = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ExtendableConfig]
+  @scala.inline
+  def default(configsDirectory: String): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any]).asInstanceOf[ExtendableConfig]
+  @scala.inline
+  def default(configsDirectory: String, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
+  @scala.inline
+  def default(configsDirectory: Unit, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
+  
   trait ConfigsOverloadOptions extends StObject {
     
-    var defaultEnv: js.UndefOr[String] = js.native
+    var defaultEnv: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
   }
   object ConfigsOverloadOptions {
     

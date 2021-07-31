@@ -3,12 +3,10 @@ package typings.samchon
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ientityMod {
   
-  @js.native
   trait IEntity extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object ientityMod {
       *
       * <code> <TAG {...properties} /> </code>
       */
-    def TAG(): String = js.native
+    def TAG(): String
     
     /**
       * Construct data of the Entity from a XML object.
@@ -28,7 +26,7 @@ object ientityMod {
       *
       * @param xml An xml used to contruct data of entity.
       */
-    def construct(xml: XML): Unit = js.native
+    def construct(xml: XML): Unit
     
     /**
       * Get a key that can identify the Entity uniquely.
@@ -49,7 +47,7 @@ object ientityMod {
       * }
       * </code>
       */
-    def key(): js.Any = js.native
+    def key(): js.Any
     
     /**
       * Get a XML object represents the Entity.
@@ -87,7 +85,7 @@ object ientityMod {
       *
       * @return An XML object representing the Entity.
       */
-    def toXML(): XML = js.native
+    def toXML(): XML
   }
   object IEntity {
     
@@ -97,13 +95,15 @@ object ientityMod {
       __obj.asInstanceOf[IEntity]
     }
     
-    @JSImport("samchon/protocol/entity/IEntity", "IEntity.construct")
+    @JSImport("samchon/protocol/entity/IEntity", "IEntity")
     @js.native
-    def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("samchon/protocol/entity/IEntity", "IEntity.toXML")
-    @js.native
-    def toXML(entity: IEntity, prohibited_names: String*): XML = js.native
+    @scala.inline
+    def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def toXML(entity: IEntity, prohibited_names: String*): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(entity.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
     
     @scala.inline
     implicit class IEntityMutableBuilder[Self <: IEntity] (val x: Self) extends AnyVal {

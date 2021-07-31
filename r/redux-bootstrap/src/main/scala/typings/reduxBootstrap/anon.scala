@@ -2,15 +2,13 @@ package typings.reduxBootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accept extends StObject {
     
-    def accept(path: String, cb: js.Function0[Unit]): Unit = js.native
+    def accept(path: String, cb: js.Function0[Unit]): Unit
   }
   object Accept {
     

@@ -12,14 +12,15 @@ import typings.sipJs.transactionsMod.ServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/user-agent-server", "UserAgentServer")
   @js.native
-  class UserAgentServer protected () extends IncomingRequest {
+  class UserAgentServer protected ()
+    extends StObject
+       with IncomingRequest {
     def this(
       transactionConstructor: ServerTransactionConstructor,
       core: UserAgentCore,

@@ -3,7 +3,6 @@ package typings.mozillaReadability
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,9 @@ object mod {
     */
   @JSImport("mozilla-readability", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Readability {
+  class ^ protected ()
+    extends StObject
+       with Readability {
     /**
       * ## Usage on the web
       *
@@ -53,9 +54,35 @@ object mod {
       */
     def this(doc: Document) = this()
     def this(doc: Document, options: Options) = this()
+    
+    /**
+      * Runs readability.
+      *
+      * ## Workflow:
+      *
+      *  1. Prep the document by removing script tags, css, etc.
+      *  2. Build readability's DOM tree.
+      *  3. Grab the article content from the current dom tree.
+      *  4. Replace the current DOM tree with the new one.
+      *  5. Read peacefully.
+      *
+      * ## Additional notes:
+      *
+      * Readability's parse() works by modifying the DOM. This removes some
+      * elements in the web page. You could avoid this by passing the clone
+      * of the document object while creating a Readability object.
+      *
+      * ```js
+      * var documentClone = document.cloneNode(true);
+      * var article = new Readability(documentClone).parse();
+      * ```
+      *
+      * The response will be null if the processing failed (https://github.com/mozilla/readability/blob/52ab9b5c8916c306a47b2119270dcdabebf9d203/Readability.js#L2038)
+      */
+    /* CompleteClass */
+    override def parse(): ParseResult | Null = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -67,19 +94,19 @@ object mod {
       *
       * Changed from wordThreshold in https://github.com/mozilla/readability/commit/3ff9a166fb27928f222c4c0722e730eda412658a
       */
-    var charThreshold: js.UndefOr[Double] = js.native
+    var charThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * parse() removes the class="" attribute from every element in the given
       * subtree, except those that match CLASSES_TO_PRESERVE and
       * the classesToPreserve array from the options object.
       */
-    var classesToPreserve: js.UndefOr[js.Array[String]] = js.native
+    var classesToPreserve: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Control whether log messages are sent to the console
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default Readability will strip all classes from the HTML elements in the
@@ -89,7 +116,7 @@ object mod {
       *
       * Added in https://github.com/mozilla/readability/commit/2982216913af2c66b0690e88606b03116553ad92
       */
-    var keepClasses: js.UndefOr[Boolean] = js.native
+    var keepClasses: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set a maximum size on the documents that will be processed. This size is
@@ -98,9 +125,9 @@ object mod {
       *
       * See implementation details at https://github.com/mozilla/readability/blob/52ab9b5c8916c306a47b2119270dcdabebf9d203/Readability.js#L2019
       */
-    var maxElemsToParse: js.UndefOr[Double] = js.native
+    var maxElemsToParse: js.UndefOr[Double] = js.undefined
     
-    var nbTopCandidates: js.UndefOr[Double] = js.native
+    var nbTopCandidates: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -154,32 +181,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResult extends StObject {
     
     /** Author metadata */
-    var byline: String = js.native
+    var byline: String
     
     /** HTML string of processed article content */
-    var content: String = js.native
+    var content: String
     
     /** Content direction */
-    var dir: String = js.native
+    var dir: String
     
     /** Article description, or short excerpt from the content */
-    var excerpt: String = js.native
+    var excerpt: String
     
     /** Length of an article, in characters */
-    var length: Double = js.native
+    var length: Double
     
     /** Article site name */
-    var siteName: String = js.native
+    var siteName: String
     
     /** non-HTML version of `content`  */
-    var textContent: String = js.native
+    var textContent: String
     
     /** Article title */
-    var title: String = js.native
+    var title: String
   }
   object ParseResult {
     
@@ -233,7 +259,6 @@ object mod {
     * Note that isProbablyReaderable() was moved into a separate file in https://github.com/mozilla/readability/commit/2620542dd1e8380220d82afa97a2c283ae636e40
     * and therefore is no longer part of the Readability class.
     */
-  @js.native
   trait Readability extends StObject {
     
     /**
@@ -260,7 +285,7 @@ object mod {
       *
       * The response will be null if the processing failed (https://github.com/mozilla/readability/blob/52ab9b5c8916c306a47b2119270dcdabebf9d203/Readability.js#L2038)
       */
-    def parse(): ParseResult | Null = js.native
+    def parse(): ParseResult | Null
   }
   object Readability {
     

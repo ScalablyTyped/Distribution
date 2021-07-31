@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterSecurityGroupMessage extends StObject {
   
   /**
     * A list of ClusterSecurityGroup instances. 
     */
-  var ClusterSecurityGroups: js.UndefOr[typings.awsSdk.redshiftMod.ClusterSecurityGroups] = js.native
+  var ClusterSecurityGroups: js.UndefOr[typings.awsSdk.redshiftMod.ClusterSecurityGroups] = js.undefined
   
   /**
     * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned marker value in the Marker parameter and retrying the command. If the Marker field is empty, all response records have been retrieved for the request. 
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object ClusterSecurityGroupMessage {
   

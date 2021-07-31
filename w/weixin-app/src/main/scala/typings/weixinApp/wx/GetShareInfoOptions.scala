@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.EncryptedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetShareInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** shareTicket */
-  var shareTicket: String = js.native
+  var shareTicket: String
   
   @JSName("success")
-  def success_MGetShareInfoOptions(res: EncryptedData): Unit = js.native
+  def success_MGetShareInfoOptions(res: EncryptedData): Unit
 }
 object GetShareInfoOptions {
   

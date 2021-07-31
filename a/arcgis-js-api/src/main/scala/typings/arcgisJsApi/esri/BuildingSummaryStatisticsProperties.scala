@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildingSummaryStatisticsProperties extends LoadableProperties {
+trait BuildingSummaryStatisticsProperties
+  extends StObject
+     with LoadableProperties {
   
   /**
     * An array of statistics on all fields in all sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html#fields)
     */
-  var fields: js.UndefOr[js.Array[BuildingFieldStatistics]] = js.native
+  var fields: js.UndefOr[js.Array[BuildingFieldStatistics]] = js.undefined
 }
 object BuildingSummaryStatisticsProperties {
   

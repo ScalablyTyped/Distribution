@@ -6,22 +6,20 @@ import typings.std.HTMLPictureElement
 import typings.std.HTMLSourceElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.native
+  var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.undefined
   
   var onMounted: js.UndefOr[
     js.Function1[
       /* ref */ js.UndefOr[RefObject[HTMLPictureElement | HTMLImageElement | HTMLSourceElement]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object CommonProps {
   

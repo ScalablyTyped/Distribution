@@ -2,23 +2,21 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitOffcanvasOptions extends StObject {
   
-  var `bg-close`: js.UndefOr[Boolean] = js.native
+  var `bg-close`: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | Boolean] = js.native
+  var container: js.UndefOr[String | Boolean] = js.undefined
   
-  var `esc-close`: js.UndefOr[Boolean] = js.native
+  var `esc-close`: js.UndefOr[Boolean] = js.undefined
   
-  var flip: js.UndefOr[Boolean] = js.native
+  var flip: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.undefined
 }
 object UIkitOffcanvasOptions {
   

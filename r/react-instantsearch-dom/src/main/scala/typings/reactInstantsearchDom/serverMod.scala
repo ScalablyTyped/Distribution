@@ -3,12 +3,14 @@ package typings.reactInstantsearchDom
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
   
-  @JSImport("react-instantsearch-dom/server", "findResultsState")
+  @JSImport("react-instantsearch-dom/server", JSImport.Namespace)
   @js.native
-  def findResultsState(App: ComponentType[_], props: js.Any): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def findResultsState(App: ComponentType[js.Any], props: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("findResultsState")(App.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

@@ -10,7 +10,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object superagentMod extends Shortcut {
@@ -22,7 +21,7 @@ object superagentMod extends Shortcut {
   type CallbackHandler = (js.Function2[/* err */ js.Any, /* res */ Response, Unit]) | (js.Function1[/* res */ Response, Unit])
   
   @js.native
-  trait Request[Req /* <: Request[_] */] extends StObject {
+  trait Request[Req /* <: Request[js.Any] */] extends StObject {
     
     def abort(): Unit = js.native
     
@@ -76,7 +75,9 @@ object superagentMod extends Shortcut {
   }
   
   @js.native
-  trait Response extends ReadableStream {
+  trait Response
+    extends StObject
+       with ReadableStream {
     
     var accepted: Boolean = js.native
     
@@ -124,7 +125,7 @@ object superagentMod extends Shortcut {
   }
   
   @js.native
-  trait SuperAgent[Req /* <: Request[_] */] extends Stream {
+  trait SuperAgent[Req /* <: Request[js.Any] */] extends Stream {
     
     def attachCookies(req: Req): Unit = js.native
     

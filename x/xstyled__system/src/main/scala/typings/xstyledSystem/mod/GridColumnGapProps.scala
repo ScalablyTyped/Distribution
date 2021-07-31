@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnGapProps[TLength] extends StObject {
   
   val gridColumnGap: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridColumnGapProps {
   
@@ -23,12 +21,12 @@ object GridColumnGapProps {
   }
   
   @scala.inline
-  implicit class GridColumnGapPropsMutableBuilder[Self <: GridColumnGapProps[_], TLength] (val x: Self with GridColumnGapProps[TLength]) extends AnyVal {
+  implicit class GridColumnGapPropsMutableBuilder[Self <: GridColumnGapProps[?], TLength] (val x: Self & GridColumnGapProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setGridColumnGap(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object GridColumnGapProps {
     def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
     @scala.inline
-    def setGridColumnGapVarargs(value: js.Any*): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
+    def setGridColumnGapVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
   }
 }

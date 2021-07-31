@@ -2,22 +2,20 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClaimDevicesByClaimCodeResponse extends StObject {
   
   /**
     * The claim code provided by the device manufacturer.
     */
-  var ClaimCode: js.UndefOr[stringMin12Max40] = js.native
+  var ClaimCode: js.UndefOr[stringMin12Max40] = js.undefined
   
   /**
     * The total number of devices associated with the claim code that has been processed in
     the claim request.
     */
-  var Total: js.UndefOr[integer] = js.native
+  var Total: js.UndefOr[integer] = js.undefined
 }
 object ClaimDevicesByClaimCodeResponse {
   

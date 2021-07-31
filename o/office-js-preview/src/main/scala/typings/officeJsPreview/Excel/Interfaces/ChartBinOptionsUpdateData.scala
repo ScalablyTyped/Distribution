@@ -7,11 +7,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.BinWidth
 import typings.officeJsPreview.officeJsPreviewStrings.Category
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
-@js.native
 trait ChartBinOptionsUpdateData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var allowOverflow: js.UndefOr[Boolean] = js.native
+  var allowOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var allowUnderflow: js.UndefOr[Boolean] = js.native
+  var allowUnderflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var overflowValue: js.UndefOr[Double] = js.native
+  var overflowValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[ChartBinType | Category | Auto | BinWidth | BinCount] = js.native
+  var `type`: js.UndefOr[ChartBinType | Category | Auto | BinWidth | BinCount] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var underflowValue: js.UndefOr[Double] = js.native
+  var underflowValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait ChartBinOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartBinOptionsUpdateData {
   

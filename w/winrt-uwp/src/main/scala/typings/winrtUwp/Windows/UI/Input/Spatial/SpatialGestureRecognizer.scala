@@ -2,70 +2,68 @@ package typings.winrtUwp.Windows.UI.Input.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialGestureRecognizer extends StObject {
   
-  var addEventListener: js.Any = js.native
+  var addEventListener: js.Any
   
   /* unmapped type */
-  var cancelPendingGestures: js.Any = js.native
+  var cancelPendingGestures: js.Any
   
   /* unmapped type */
-  var captureInteraction: js.Any = js.native
+  var captureInteraction: js.Any
   
   /* unmapped type */
-  var gestureSettings: js.Any = js.native
+  var gestureSettings: js.Any
   
   /* unmapped type */
-  var onholdcanceled: js.Any = js.native
+  var onholdcanceled: js.Any
   
   /* unmapped type */
-  var onholdcompleted: js.Any = js.native
+  var onholdcompleted: js.Any
   
   /* unmapped type */
-  var onholdstarted: js.Any = js.native
+  var onholdstarted: js.Any
   
   /* unmapped type */
-  var onmanipulationcanceled: js.Any = js.native
+  var onmanipulationcanceled: js.Any
   
   /* unmapped type */
-  var onmanipulationcompleted: js.Any = js.native
+  var onmanipulationcompleted: js.Any
   
   /* unmapped type */
-  var onmanipulationstarted: js.Any = js.native
+  var onmanipulationstarted: js.Any
   
   /* unmapped type */
-  var onmanipulationupdated: js.Any = js.native
+  var onmanipulationupdated: js.Any
   
   /* unmapped type */
-  var onnavigationcanceled: js.Any = js.native
+  var onnavigationcanceled: js.Any
   
   /* unmapped type */
-  var onnavigationcompleted: js.Any = js.native
+  var onnavigationcompleted: js.Any
   
   /* unmapped type */
-  var onnavigationstarted: js.Any = js.native
+  var onnavigationstarted: js.Any
   
   /* unmapped type */
-  var onnavigationupdated: js.Any = js.native
+  var onnavigationupdated: js.Any
   
   /* unmapped type */
-  var onrecognitionended: js.Any = js.native
+  var onrecognitionended: js.Any
   
   /* unmapped type */
-  var onrecognitionstarted: js.Any = js.native
+  var onrecognitionstarted: js.Any
   
   /* unmapped type */
-  var ontapped: js.Any = js.native
+  var ontapped: js.Any
   
   /* unmapped type */
-  var removeEventListener: js.Any = js.native
+  var removeEventListener: js.Any
   
   /* unmapped type */
-  var trySetGestureSettings: js.Any = js.native
+  var trySetGestureSettings: js.Any
 }
 object SpatialGestureRecognizer {
   

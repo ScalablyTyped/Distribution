@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowEditDialogBeforeCloseEventUIParam extends StObject {
   
   /**
     * Gets a reference to row edit dialog DOM element.
     */
-  var dialogElement: js.UndefOr[js.Any] = js.native
+  var dialogElement: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object RowEditDialogBeforeCloseEventUIParam {
   

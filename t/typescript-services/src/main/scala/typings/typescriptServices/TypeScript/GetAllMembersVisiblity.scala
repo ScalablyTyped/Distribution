@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait GetAllMembersVisiblity extends StObject
 object GetAllMembersVisiblity extends StObject {
   
   @js.native
-  sealed trait all extends GetAllMembersVisiblity
+  sealed trait all
+    extends StObject
+       with GetAllMembersVisiblity
   
   @js.native
-  sealed trait externallyVisible extends GetAllMembersVisiblity
+  sealed trait externallyVisible
+    extends StObject
+       with GetAllMembersVisiblity
   
   @js.native
-  sealed trait internallyVisible extends GetAllMembersVisiblity
+  sealed trait internallyVisible
+    extends StObject
+       with GetAllMembersVisiblity
 }

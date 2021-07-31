@@ -2,13 +2,11 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnmountBatchSize extends StObject {
   
-  var unmountBatchSize: js.UndefOr[Double] = js.native
+  var unmountBatchSize: js.UndefOr[Double] = js.undefined
 }
 object UnmountBatchSize {
   

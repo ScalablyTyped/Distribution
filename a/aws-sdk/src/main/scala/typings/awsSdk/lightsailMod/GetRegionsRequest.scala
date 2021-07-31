@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRegionsRequest extends StObject {
   
   /**
     * A Boolean value indicating whether to also include Availability Zones in your get regions request. Availability Zones are indicated with a letter: e.g., us-east-2a.
     */
-  var includeAvailabilityZones: js.UndefOr[Boolean] = js.native
+  var includeAvailabilityZones: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value indicating whether to also include Availability Zones for databases in your get regions request. Availability Zones are indicated with a letter (e.g., us-east-2a).
     */
-  var includeRelationalDatabaseAvailabilityZones: js.UndefOr[Boolean] = js.native
+  var includeRelationalDatabaseAvailabilityZones: js.UndefOr[Boolean] = js.undefined
 }
 object GetRegionsRequest {
   

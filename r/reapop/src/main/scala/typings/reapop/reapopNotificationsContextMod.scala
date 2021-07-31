@@ -5,7 +5,6 @@ import typings.reapop.typesMod.NewNotification
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reapopNotificationsContextMod {
@@ -14,16 +13,15 @@ object reapopNotificationsContextMod {
   @js.native
   val ReapopNotificationsContext: Context[NotificationsContext] = js.native
   
-  @js.native
   trait NotificationsContext extends StObject {
     
-    def dismissNotification(id: String): Unit = js.native
+    def dismissNotification(id: String): Unit
     
-    def dismissNotifications(): Unit = js.native
+    def dismissNotifications(): Unit
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
     
-    def notify(notification: NewNotification): Unit = js.native
+    def notify(notification: NewNotification): Unit
   }
   object NotificationsContext {
     

@@ -3,23 +3,21 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworkEndpointGroupsScopedList extends StObject {
   
   /**
     * [Output Only] The list of network endpoint groups that are contained in
     * this scope.
     */
-  var networkEndpointGroups: js.UndefOr[js.Array[SchemaNetworkEndpointGroup]] = js.native
+  var networkEndpointGroups: js.UndefOr[js.Array[SchemaNetworkEndpointGroup]] = js.undefined
   
   /**
     * [Output Only] An informational warning that replaces the list of network
     * endpoint groups when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaNetworkEndpointGroupsScopedList {
   

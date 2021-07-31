@@ -2,15 +2,13 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactiveVar[T] extends StObject {
   
-  def get(): T = js.native
+  def get(): T
   
-  def set(newValue: T): Unit = js.native
+  def set(newValue: T): Unit
 }
 object ReactiveVar {
   
@@ -21,7 +19,7 @@ object ReactiveVar {
   }
   
   @scala.inline
-  implicit class ReactiveVarMutableBuilder[Self <: ReactiveVar[_], T] (val x: Self with ReactiveVar[T]) extends AnyVal {
+  implicit class ReactiveVarMutableBuilder[Self <: ReactiveVar[?], T] (val x: Self & ReactiveVar[T]) extends AnyVal {
     
     @scala.inline
     def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))

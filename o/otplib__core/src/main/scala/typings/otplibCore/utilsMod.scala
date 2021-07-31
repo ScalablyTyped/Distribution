@@ -5,10 +5,13 @@ import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("@otplib/core/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@otplib/core/utils", "HASH_ALGORITHMS")
   @js.native
@@ -21,19 +24,25 @@ object utilsMod {
   object HashAlgorithms extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[HashAlgorithms with String] = js.native
+    def apply(value: String): js.UndefOr[HashAlgorithms & String] = js.native
     
     @js.native
-    sealed trait SHA1 extends HashAlgorithms
-    /* "sha1" */ val SHA1: typings.otplibCore.utilsMod.HashAlgorithms.SHA1 with String = js.native
+    sealed trait SHA1
+      extends StObject
+         with HashAlgorithms
+    /* "sha1" */ val SHA1: typings.otplibCore.utilsMod.HashAlgorithms.SHA1 & String = js.native
     
     @js.native
-    sealed trait SHA256 extends HashAlgorithms
-    /* "sha256" */ val SHA256: typings.otplibCore.utilsMod.HashAlgorithms.SHA256 with String = js.native
+    sealed trait SHA256
+      extends StObject
+         with HashAlgorithms
+    /* "sha256" */ val SHA256: typings.otplibCore.utilsMod.HashAlgorithms.SHA256 & String = js.native
     
     @js.native
-    sealed trait SHA512 extends HashAlgorithms
-    /* "sha512" */ val SHA512: typings.otplibCore.utilsMod.HashAlgorithms.SHA512 with String = js.native
+    sealed trait SHA512
+      extends StObject
+         with HashAlgorithms
+    /* "sha512" */ val SHA512: typings.otplibCore.utilsMod.HashAlgorithms.SHA512 & String = js.native
   }
   
   @JSImport("@otplib/core/utils", "KEY_ENCODINGS")
@@ -47,27 +56,37 @@ object utilsMod {
   object KeyEncodings extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[KeyEncodings with String] = js.native
+    def apply(value: String): js.UndefOr[KeyEncodings & String] = js.native
     
     @js.native
-    sealed trait ASCII extends KeyEncodings
-    /* "ascii" */ val ASCII: typings.otplibCore.utilsMod.KeyEncodings.ASCII with String = js.native
+    sealed trait ASCII
+      extends StObject
+         with KeyEncodings
+    /* "ascii" */ val ASCII: typings.otplibCore.utilsMod.KeyEncodings.ASCII & String = js.native
     
     @js.native
-    sealed trait BASE64 extends KeyEncodings
-    /* "base64" */ val BASE64: typings.otplibCore.utilsMod.KeyEncodings.BASE64 with String = js.native
+    sealed trait BASE64
+      extends StObject
+         with KeyEncodings
+    /* "base64" */ val BASE64: typings.otplibCore.utilsMod.KeyEncodings.BASE64 & String = js.native
     
     @js.native
-    sealed trait HEX extends KeyEncodings
-    /* "hex" */ val HEX: typings.otplibCore.utilsMod.KeyEncodings.HEX with String = js.native
+    sealed trait HEX
+      extends StObject
+         with KeyEncodings
+    /* "hex" */ val HEX: typings.otplibCore.utilsMod.KeyEncodings.HEX & String = js.native
     
     @js.native
-    sealed trait LATIN1 extends KeyEncodings
-    /* "latin1" */ val LATIN1: typings.otplibCore.utilsMod.KeyEncodings.LATIN1 with String = js.native
+    sealed trait LATIN1
+      extends StObject
+         with KeyEncodings
+    /* "latin1" */ val LATIN1: typings.otplibCore.utilsMod.KeyEncodings.LATIN1 & String = js.native
     
     @js.native
-    sealed trait UTF8 extends KeyEncodings
-    /* "utf8" */ val UTF8: typings.otplibCore.utilsMod.KeyEncodings.UTF8 with String = js.native
+    sealed trait UTF8
+      extends StObject
+         with KeyEncodings
+    /* "utf8" */ val UTF8: typings.otplibCore.utilsMod.KeyEncodings.UTF8 & String = js.native
   }
   
   @JSImport("@otplib/core/utils", "OTP")
@@ -145,36 +164,36 @@ object utilsMod {
   object Strategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Strategy with String] = js.native
+    def apply(value: String): js.UndefOr[Strategy & String] = js.native
     
     @js.native
-    sealed trait HOTP extends Strategy
-    /* "hotp" */ val HOTP: typings.otplibCore.utilsMod.Strategy.HOTP with String = js.native
+    sealed trait HOTP
+      extends StObject
+         with Strategy
+    /* "hotp" */ val HOTP: typings.otplibCore.utilsMod.Strategy.HOTP & String = js.native
     
     @js.native
-    sealed trait TOTP extends Strategy
-    /* "totp" */ val TOTP: typings.otplibCore.utilsMod.Strategy.TOTP with String = js.native
+    sealed trait TOTP
+      extends StObject
+         with Strategy
+    /* "totp" */ val TOTP: typings.otplibCore.utilsMod.Strategy.TOTP & String = js.native
   }
   
   @JSImport("@otplib/core/utils", "createDigestPlaceholder")
   @js.native
   val createDigestPlaceholder: CreateDigest[HexString] = js.native
   
-  @JSImport("@otplib/core/utils", "isTokenValid")
-  @js.native
-  def isTokenValid(value: String): Boolean = js.native
+  @scala.inline
+  def isTokenValid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenValid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@otplib/core/utils", "keyuri")
-  @js.native
-  def keyuri(options: KeyURIOptions): String = js.native
+  @scala.inline
+  def keyuri(options: KeyURIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyuri")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@otplib/core/utils", "objectValues")
-  @js.native
-  def objectValues[T](value: T): js.Array[String] = js.native
+  @scala.inline
+  def objectValues[T](value: T): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@otplib/core/utils", "padStart")
-  @js.native
-  def padStart(value: String, maxLength: Double, fillString: String): String = js.native
+  @scala.inline
+  def padStart(value: String, maxLength: Double, fillString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], fillString.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type CreateDigest[T] = js.Function3[/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString, T]
   
@@ -182,26 +201,25 @@ object utilsMod {
   
   type HexString = String
   
-  @js.native
   trait KeyURIOptions extends StObject {
     
-    var accountName: String = js.native
+    var accountName: String
     
-    var algorithm: js.UndefOr[HashAlgorithms] = js.native
+    var algorithm: js.UndefOr[HashAlgorithms] = js.undefined
     
-    var counter: js.UndefOr[Double] = js.native
+    var counter: js.UndefOr[Double] = js.undefined
     
-    var digits: js.UndefOr[Double] = js.native
+    var digits: js.UndefOr[Double] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var secret: SecretKey = js.native
+    var secret: SecretKey
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var `type`: Strategy = js.native
+    var `type`: Strategy
   }
   object KeyURIOptions {
     

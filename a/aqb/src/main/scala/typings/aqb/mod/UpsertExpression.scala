@@ -3,12 +3,12 @@ package typings.aqb.mod
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UpsertExpression
-  extends PartialStatement
+  extends StObject
+     with PartialStatement
      with Instantiable7[
       /* prev */ PartialStatement, 
       /* upsertExpr */ js.Any, 

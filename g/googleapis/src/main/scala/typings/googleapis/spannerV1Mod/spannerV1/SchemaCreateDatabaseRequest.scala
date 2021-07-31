@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for CreateDatabase.
   */
-@js.native
 trait SchemaCreateDatabaseRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaCreateDatabaseRequest extends StObject {
     * database ID is a reserved word or if it contains a hyphen, the database
     * ID must be enclosed in backticks (`` ` ``).
     */
-  var createStatement: js.UndefOr[String] = js.native
+  var createStatement: js.UndefOr[String] = js.undefined
   
   /**
     * An optional list of DDL statements to run inside the newly created
@@ -26,7 +24,7 @@ trait SchemaCreateDatabaseRequest extends StObject {
     * execute atomically with the creation of the database: if there is an
     * error in any statement, the database is not created.
     */
-  var extraStatements: js.UndefOr[js.Array[String]] = js.native
+  var extraStatements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCreateDatabaseRequest {
   

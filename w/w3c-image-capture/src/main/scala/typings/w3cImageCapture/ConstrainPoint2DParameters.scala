@@ -2,15 +2,13 @@ package typings.w3cImageCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstrainPoint2DParameters extends StObject {
   
-  var exact: js.Array[Point2D] = js.native
+  var exact: js.Array[Point2D]
   
-  var ideal: js.Array[Point2D] = js.native
+  var ideal: js.Array[Point2D]
 }
 object ConstrainPoint2DParameters {
   

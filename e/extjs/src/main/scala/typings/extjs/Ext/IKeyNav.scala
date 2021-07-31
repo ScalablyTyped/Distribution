@@ -2,54 +2,54 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IKeyNav extends IBase {
+trait IKeyNav
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var defaultEventAction: js.UndefOr[java.lang.String] = js.native
+  var defaultEventAction: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Destroy this KeyNav
     * @param removeEl Boolean Pass true to remove the element associated with this KeyNav.
     */
-  var destroy: js.UndefOr[js.Function1[/* removeEl */ js.UndefOr[Boolean], Unit]] = js.native
+  var destroy: js.UndefOr[js.Function1[/* removeEl */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Disables this KeyNav  */
-  var disable: js.UndefOr[js.Function0[Unit]] = js.native
+  var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Enables this KeyNav  */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.native
+  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var eventName: js.UndefOr[java.lang.String] = js.native
+  var eventName: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var forceKeyDown: js.UndefOr[Boolean] = js.native
+  var forceKeyDown: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var ignoreInputFields: js.UndefOr[Boolean] = js.native
+  var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.util.KeyMap) */
-  var keyMap: js.UndefOr[typings.extjs.Ext.util.IKeyMap] = js.native
+  var keyMap: js.UndefOr[typings.extjs.Ext.util.IKeyMap] = js.undefined
   
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.native
+  var processEvent: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.native
+  var processEventScope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object IKeyNav {
   

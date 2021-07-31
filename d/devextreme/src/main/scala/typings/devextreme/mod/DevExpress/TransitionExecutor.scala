@@ -5,7 +5,6 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,7 +30,7 @@ trait TransitionExecutor extends StObject {
   /**
     * [descr:TransitionExecutor.start()]
     */
-  def start(): Promise[Unit] with JQueryPromise[Unit] = js.native
+  def start(): Promise[Unit] & JQueryPromise[Unit] = js.native
   
   /**
     * [descr:TransitionExecutor.stop()]

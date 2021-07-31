@@ -2,17 +2,17 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecretSpec extends Annotations {
+trait SecretSpec
+  extends StObject
+     with Annotations {
   
-  var Data: js.UndefOr[String] = js.native
+  var Data: js.UndefOr[String] = js.undefined
   
-  var Driver: js.UndefOr[typings.dockerode.mod.Driver] = js.native
+  var Driver: js.UndefOr[typings.dockerode.mod.Driver] = js.undefined
   
-  var Templating: js.UndefOr[Driver] = js.native
+  var Templating: js.UndefOr[Driver] = js.undefined
 }
 object SecretSpec {
   

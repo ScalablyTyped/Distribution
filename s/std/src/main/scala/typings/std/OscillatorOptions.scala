@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OscillatorOptions extends AudioNodeOptions {
+trait OscillatorOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var detune: js.UndefOr[Double] = js.native
+  var detune: js.UndefOr[Double] = js.undefined
   
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
-  var periodicWave: js.UndefOr[PeriodicWave] = js.native
+  var periodicWave: js.UndefOr[PeriodicWave] = js.undefined
   
-  var `type`: js.UndefOr[OscillatorType] = js.native
+  var `type`: js.UndefOr[OscillatorType] = js.undefined
 }
 object OscillatorOptions {
   

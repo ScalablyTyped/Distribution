@@ -5,7 +5,6 @@ import typings.leafletMarkercluster.mod.MarkerClusterGroupOptions
 import typings.leafletMarkerclusterLayersupport.mod.MarkerClusterGroup_.LayerSupport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -13,24 +12,27 @@ object mod {
   
   object markerClusterGroup {
     
+    @JSImport("leaflet", "markerClusterGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a layer support marker cluster group, optionally given marker cluster group options.
       */
-    @JSImport("leaflet", "markerClusterGroup.layerSupport")
-    @js.native
-    def layerSupport(): LayerSupport = js.native
-    @JSImport("leaflet", "markerClusterGroup.layerSupport")
-    @js.native
-    def layerSupport(options: MarkerClusterGroupLayerSupportOptions): LayerSupport = js.native
+    @scala.inline
+    def layerSupport(): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")().asInstanceOf[LayerSupport]
+    @scala.inline
+    def layerSupport(options: MarkerClusterGroupLayerSupportOptions): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")(options.asInstanceOf[js.Any]).asInstanceOf[LayerSupport]
   }
   
-  @js.native
-  trait MarkerClusterGroupLayerSupportOptions extends MarkerClusterGroupOptions {
+  trait MarkerClusterGroupLayerSupportOptions
+    extends StObject
+       with MarkerClusterGroupOptions {
     
     /**
       * Buffer single addLayer and removeLayer requests for efficiency.
       */
-    var singleAddRemoveBufferDuration: Double = js.native
+    var singleAddRemoveBufferDuration: Double
   }
   object MarkerClusterGroupLayerSupportOptions {
     

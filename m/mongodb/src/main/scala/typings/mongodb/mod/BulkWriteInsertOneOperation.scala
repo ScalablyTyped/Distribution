@@ -3,13 +3,13 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkWriteInsertOneOperation[TSchema] extends BulkWriteOperation[TSchema] {
+trait BulkWriteInsertOneOperation[TSchema]
+  extends StObject
+     with BulkWriteOperation[TSchema] {
   
-  var insertOne: Document[TSchema] = js.native
+  var insertOne: Document[TSchema]
 }
 object BulkWriteInsertOneOperation {
   
@@ -20,7 +20,7 @@ object BulkWriteInsertOneOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteInsertOneOperationMutableBuilder[Self <: BulkWriteInsertOneOperation[_], TSchema] (val x: Self with BulkWriteInsertOneOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteInsertOneOperationMutableBuilder[Self <: BulkWriteInsertOneOperation[?], TSchema] (val x: Self & BulkWriteInsertOneOperation[TSchema]) extends AnyVal {
     
     @scala.inline
     def setInsertOne(value: Document[TSchema]): Self = StObject.set(x, "insertOne", value.asInstanceOf[js.Any])

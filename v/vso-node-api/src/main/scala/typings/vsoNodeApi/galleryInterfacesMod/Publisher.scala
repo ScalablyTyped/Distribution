@@ -3,31 +3,29 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Publisher extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var emailAddress: js.Array[String] = js.native
+  var emailAddress: js.Array[String]
   
-  var extensions: js.Array[PublishedExtension] = js.native
+  var extensions: js.Array[PublishedExtension]
   
-  var flags: PublisherFlags = js.native
+  var flags: PublisherFlags
   
-  var lastUpdated: Date = js.native
+  var lastUpdated: Date
   
-  var links: PublisherLinks = js.native
+  var links: PublisherLinks
   
-  var longDescription: String = js.native
+  var longDescription: String
   
-  var publisherId: String = js.native
+  var publisherId: String
   
-  var publisherName: String = js.native
+  var publisherName: String
   
-  var shortDescription: String = js.native
+  var shortDescription: String
 }
 object Publisher {
   

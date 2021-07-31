@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodMod {
@@ -83,6 +82,10 @@ object methodMod {
   /* static members */
   object Method {
     
+    @JSImport("@pulumi/aws/apigateway/method", "Method")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Method resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,83 +95,77 @@ object methodMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/method", "Method.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Method = js.native
-    @JSImport("@pulumi/aws/apigateway/method", "Method.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Method = js.native
-    @JSImport("@pulumi/aws/apigateway/method", "Method.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodState): Method = js.native
-    @JSImport("@pulumi/aws/apigateway/method", "Method.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodState, opts: CustomResourceOptions): Method = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Method]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodState): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Method]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodState, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
     
     /**
       * Returns true if the given object is an instance of Method.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/method", "Method.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean]
   }
   
-  @js.native
   trait MethodArgs extends StObject {
     
     /**
       * Specify if the method requires an API key
       */
-    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.native
+    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of authorization used for the method (`NONE`, `CUSTOM`, `AWS_IAM`, `COGNITO_USER_POOLS`)
       */
-    val authorization: Input[String] = js.native
+    val authorization: Input[String]
     
     /**
       * The authorization scopes used when the authorization is `COGNITO_USER_POOLS`
       */
-    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The authorizer id to be used when the authorization is `CUSTOM` or `COGNITO_USER_POOLS`
       */
-    val authorizerId: js.UndefOr[Input[String]] = js.native
+    val authorizerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: Input[String] = js.native
+    val httpMethod: Input[String]
     
     /**
       * A map of the API models used for the request's content type
       * where key is the content type (e.g. `application/json`)
       * and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`'s `name`.
       */
-    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (`true`) or optional (`false`).
       * For example: `requestParameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request.
       */
-    val requestParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.native
+    val requestParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
     
     /**
       * The ID of a `aws.apigateway.RequestValidator`
       */
-    val requestValidatorId: js.UndefOr[Input[String]] = js.native
+    val requestValidatorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API resource ID
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
   }
   object MethodArgs {
     
@@ -239,61 +236,60 @@ object methodMod {
     }
   }
   
-  @js.native
   trait MethodState extends StObject {
     
     /**
       * Specify if the method requires an API key
       */
-    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.native
+    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of authorization used for the method (`NONE`, `CUSTOM`, `AWS_IAM`, `COGNITO_USER_POOLS`)
       */
-    val authorization: js.UndefOr[Input[String]] = js.native
+    val authorization: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The authorization scopes used when the authorization is `COGNITO_USER_POOLS`
       */
-    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The authorizer id to be used when the authorization is `CUSTOM` or `COGNITO_USER_POOLS`
       */
-    val authorizerId: js.UndefOr[Input[String]] = js.native
+    val authorizerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: js.UndefOr[Input[String]] = js.native
+    val httpMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of the API models used for the request's content type
       * where key is the content type (e.g. `application/json`)
       * and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`'s `name`.
       */
-    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (`true`) or optional (`false`).
       * For example: `requestParameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request.
       */
-    val requestParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.native
+    val requestParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
     
     /**
       * The ID of a `aws.apigateway.RequestValidator`
       */
-    val requestValidatorId: js.UndefOr[Input[String]] = js.native
+    val requestValidatorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API resource ID
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
   }
   object MethodState {
     

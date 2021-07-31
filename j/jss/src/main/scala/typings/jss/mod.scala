@@ -1,6 +1,5 @@
 package typings.jss
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.TopLevel
 import typings.csstype.mod.Properties
 import typings.indefiniteObservable.typesMod.Observable
@@ -19,10 +18,13 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("jss", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jss", JSImport.Default)
   @js.native
@@ -87,24 +89,20 @@ object mod extends Shortcut {
     def toString(options: ToCssOptions): String = js.native
   }
   
-  @JSImport("jss", "create")
-  @js.native
-  def create(): Jss = js.native
-  @JSImport("jss", "create")
-  @js.native
-  def create(options: PartialJssOptions): Jss = js.native
+  @scala.inline
+  def create(): Jss = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Jss]
+  @scala.inline
+  def create(options: PartialJssOptions): Jss = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Jss]
   
   @JSImport("jss", "createGenerateId")
   @js.native
   val createGenerateId: CreateGenerateId_ = js.native
   
-  @JSImport("jss", "createRule")
-  @js.native
-  def createRule[D](name: String, decl: JssStyle, options: RuleOptions): Rule = js.native
+  @scala.inline
+  def createRule[D](name: String, decl: JssStyle, options: RuleOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("createRule")(name.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rule]
   
-  @JSImport("jss", "getDynamicStyles")
-  @js.native
-  def getDynamicStyles(styles: Styles[String]): Styles[String] | Null = js.native
+  @scala.inline
+  def getDynamicStyles(styles: Styles[String]): Styles[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Styles[String] | Null]
   
   /**
     * Creates a new instance of JSS.
@@ -113,12 +111,13 @@ object mod extends Shortcut {
   @js.native
   val sheets: SheetsRegistry = js.native
   
-  @JSImport("jss", "toCssValue")
-  @js.native
-  def toCssValue(value: JssValue, ignoreImportant: Boolean): String = js.native
+  @scala.inline
+  def toCssValue(value: JssValue, ignoreImportant: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toCssValue")(value.asInstanceOf[js.Any], ignoreImportant.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
-  trait BaseRule extends Rule {
+  trait BaseRule
+    extends StObject
+       with Rule {
     
     var isProcessed: Boolean = js.native
     
@@ -136,15 +135,16 @@ object mod extends Shortcut {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.jss.mod.Rule because Already inherited */ @js.native
-  trait ContainerRule extends BaseRule {
+  trait ContainerRule
+    extends StObject
+       with BaseRule {
     
     var rules: RuleList = js.native
   }
   
-  @js.native
   trait CreateGenerateIdOptions extends StObject {
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
   }
   object CreateGenerateIdOptions {
     
@@ -193,26 +193,66 @@ object mod extends Shortcut {
     def use(plugins: Plugin*): this.type = js.native
   }
   
-  @js.native
   trait JssOptions extends StObject {
     
-    var Renderer: js.UndefOr[Instantiable | Null] = js.native
+    var Renderer: js.UndefOr[Instantiable | Null] = js.undefined
     
-    def createGenerateId(): GenerateId = js.native
-    def createGenerateId(options: CreateGenerateIdOptions): GenerateId = js.native
+    def createGenerateId(): GenerateId
+    def createGenerateId(options: CreateGenerateIdOptions): GenerateId
     @JSName("createGenerateId")
-    var createGenerateId_Original: CreateGenerateId_ = js.native
+    var createGenerateId_Original: CreateGenerateId_
     
-    var id: CreateGenerateIdOptions = js.native
+    var id: CreateGenerateIdOptions
     
-    var insertionPoint: InsertionPoint = js.native
+    var insertionPoint: InsertionPoint
     
-    var plugins: js.Array[Plugin] = js.native
+    var plugins: js.Array[Plugin]
+  }
+  object JssOptions {
+    
+    @scala.inline
+    def apply(
+      createGenerateId: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId,
+      id: CreateGenerateIdOptions,
+      insertionPoint: InsertionPoint,
+      plugins: js.Array[Plugin]
+    ): JssOptions = {
+      val __obj = js.Dynamic.literal(createGenerateId = js.Any.fromFunction1(createGenerateId), id = id.asInstanceOf[js.Any], insertionPoint = insertionPoint.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JssOptions]
+    }
+    
+    @scala.inline
+    implicit class JssOptionsMutableBuilder[Self <: JssOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCreateGenerateId(value: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId): Self = StObject.set(x, "createGenerateId", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setId(value: CreateGenerateIdOptions): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInsertionPoint(value: InsertionPoint): Self = StObject.set(x, "insertionPoint", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      
+      @scala.inline
+      def setRenderer(value: Instantiable): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRendererNull: Self = StObject.set(x, "Renderer", null)
+      
+      @scala.inline
+      def setRendererUndefined: Self = StObject.set(x, "Renderer", js.undefined)
+    }
   }
   
   type JssStyle = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof jss.jss.NormalCssProperties | string ]: jss.jss.NormalCssValues<K> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jss.jss.JssStyle * / object | jss.jss.Func<jss.jss.NormalCssValues<K> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jss.jss.JssStyle * / object | undefined> | indefinite-observable.indefinite-observable/dist/types.Observable<jss.jss.NormalCssValues<K> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jss.jss.JssStyle * / object | undefined>}
-    */ typings.jss.jssStrings.JssStyle with TopLevel[js.Any]
+    */ typings.jss.jssStrings.JssStyle & TopLevel[js.Any]
   
   type JssValue = String | Double | (js.Array[String | Double | (js.Array[String | Double]) | Exclamationmarkimportant]) | Null | `false`
   
@@ -222,16 +262,15 @@ object mod extends Shortcut {
   
   type NormalCssValues[K] = JssValue | (/* import warning: importer.ImportType#apply Failed type conversion: jss.jss.NormalCssProperties[K] */ js.Any)
   
-  @js.native
   trait Plugin extends StObject {
     
     var onChangeValue: js.UndefOr[
         js.Function3[/* value */ String, /* prop */ String, /* rule */ Rule, String | Null | `false`]
-      ] = js.native
+      ] = js.undefined
     
     var onCreateRule: js.UndefOr[
         js.Function3[/* name */ String, /* decl */ JssStyle, /* options */ RuleOptions, Rule]
-      ] = js.native
+      ] = js.undefined
     
     var onProcessRule: js.UndefOr[
         js.Function2[
@@ -239,11 +278,11 @@ object mod extends Shortcut {
           /* sheet */ js.UndefOr[StyleSheet[String | Double | js.Symbol]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onProcessSheet: js.UndefOr[
         js.Function1[/* sheet */ js.UndefOr[StyleSheet[String | Double | js.Symbol]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onProcessStyle: js.UndefOr[
         js.Function3[
@@ -252,7 +291,7 @@ object mod extends Shortcut {
           /* sheet */ js.UndefOr[StyleSheet[String | Double | js.Symbol]], 
           JssStyle
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onUpdate: js.UndefOr[
         js.Function3[
@@ -261,7 +300,7 @@ object mod extends Shortcut {
           /* sheet */ js.UndefOr[StyleSheet[String | Double | js.Symbol]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Plugin {
     
@@ -353,22 +392,21 @@ object mod extends Shortcut {
   */
   trait Rule extends StObject
   
-  @js.native
   trait RuleFactoryOptions extends StObject {
     
-    var Renderer: js.UndefOr[typings.jss.mod.Renderer] = js.native
+    var Renderer: js.UndefOr[typings.jss.mod.Renderer] = js.undefined
     
-    var classes: js.UndefOr[js.Object] = js.native
+    var classes: js.UndefOr[js.Object] = js.undefined
     
-    var generateId: js.UndefOr[GenerateId] = js.native
+    var generateId: js.UndefOr[GenerateId] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var jss: js.UndefOr[Jss] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.native
+    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.undefined
   }
   object RuleFactoryOptions {
     
@@ -425,46 +463,134 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RuleListOptions extends StObject {
     
-    var Renderer: typings.jss.mod.Renderer = js.native
+    var Renderer: typings.jss.mod.Renderer
     
-    var classes: Classes[String] = js.native
+    var classes: Classes[String]
     
-    def generateClassName(rule: Rule): String = js.native
-    def generateClassName(rule: Rule, sheet: StyleSheet[String]): String = js.native
+    def generateClassName(rule: Rule): String
+    def generateClassName(rule: Rule, sheet: StyleSheet[String]): String
     @JSName("generateClassName")
-    var generateClassName_Original: GenerateId = js.native
+    var generateClassName_Original: GenerateId
     
-    var jss: Jss = js.native
+    var jss: Jss
     
-    var parent: ContainerRule | (StyleSheet[String | Double | js.Symbol]) = js.native
+    var parent: ContainerRule | (StyleSheet[String | Double | js.Symbol])
     
-    var sheet: StyleSheet[String | Double | js.Symbol] = js.native
+    var sheet: StyleSheet[String | Double | js.Symbol]
+  }
+  object RuleListOptions {
+    
+    @scala.inline
+    def apply(
+      Renderer: Renderer,
+      classes: Classes[String],
+      generateClassName: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String,
+      jss: Jss,
+      parent: ContainerRule | (StyleSheet[String | Double | js.Symbol]),
+      sheet: StyleSheet[String | Double | js.Symbol]
+    ): RuleListOptions = {
+      val __obj = js.Dynamic.literal(Renderer = Renderer.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], generateClassName = js.Any.fromFunction2(generateClassName), jss = jss.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RuleListOptions]
+    }
+    
+    @scala.inline
+    implicit class RuleListOptionsMutableBuilder[Self <: RuleListOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClasses(value: Classes[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGenerateClassName(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateClassName", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParent(value: ContainerRule | (StyleSheet[String | Double | js.Symbol])): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRenderer(value: Renderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSheet(value: StyleSheet[String | Double | js.Symbol]): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait RuleOptions extends StObject {
     
-    var Renderer: typings.jss.mod.Renderer = js.native
+    var Renderer: typings.jss.mod.Renderer
     
-    var classes: Classes[String] = js.native
+    var classes: Classes[String]
     
-    def generateId(rule: Rule): String = js.native
-    def generateId(rule: Rule, sheet: StyleSheet[String]): String = js.native
+    def generateId(rule: Rule): String
+    def generateId(rule: Rule, sheet: StyleSheet[String]): String
     @JSName("generateId")
-    var generateId_Original: GenerateId = js.native
+    var generateId_Original: GenerateId
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var jss: Jss = js.native
+    var jss: Jss
     
-    var parent: js.UndefOr[ContainerRule | (StyleSheet[String | Double | js.Symbol])] = js.native
+    var parent: js.UndefOr[ContainerRule | (StyleSheet[String | Double | js.Symbol])] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.native
+    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.undefined
+  }
+  object RuleOptions {
+    
+    @scala.inline
+    def apply(
+      Renderer: Renderer,
+      classes: Classes[String],
+      generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String,
+      jss: Jss
+    ): RuleOptions = {
+      val __obj = js.Dynamic.literal(Renderer = Renderer.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], generateId = js.Any.fromFunction2(generateId), jss = jss.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RuleOptions]
+    }
+    
+    @scala.inline
+    implicit class RuleOptionsMutableBuilder[Self <: RuleOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClasses(value: Classes[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGenerateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateId", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      @scala.inline
+      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParent(value: ContainerRule | (StyleSheet[String | Double | js.Symbol])): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      
+      @scala.inline
+      def setRenderer(value: Renderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      
+      @scala.inline
+      def setSheet(value: StyleSheet[String | Double | js.Symbol]): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    }
   }
   
   @js.native
@@ -539,22 +665,21 @@ object mod extends Shortcut {
     def update(name: String, data: js.Object, options: UpdateOptions): this.type = js.native
   }
   
-  @js.native
   trait StyleSheetFactoryOptions extends StObject {
     
-    var classNamePrefix: js.UndefOr[String] = js.native
+    var classNamePrefix: js.UndefOr[String] = js.undefined
     
-    var element: js.UndefOr[HTMLStyleElement] = js.native
+    var element: js.UndefOr[HTMLStyleElement] = js.undefined
     
-    var generateId: js.UndefOr[GenerateId] = js.native
+    var generateId: js.UndefOr[GenerateId] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var meta: js.UndefOr[String] = js.native
+    var meta: js.UndefOr[String] = js.undefined
   }
   object StyleSheetFactoryOptions {
     
@@ -611,24 +736,60 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StyleSheetOptions extends StyleSheetFactoryOptions {
+  trait StyleSheetOptions
+    extends StObject
+       with StyleSheetFactoryOptions {
     
-    var Renderer: typings.jss.mod.Renderer = js.native
+    var Renderer: typings.jss.mod.Renderer
     
     @JSName("generateId")
-    def generateId_MStyleSheetOptions(rule: Rule): String = js.native
+    def generateId_MStyleSheetOptions(rule: Rule): String
     @JSName("generateId")
-    def generateId_MStyleSheetOptions(rule: Rule, sheet: StyleSheet[String]): String = js.native
+    def generateId_MStyleSheetOptions(rule: Rule, sheet: StyleSheet[String]): String
     @JSName("generateId")
-    var generateId_Original: GenerateId = js.native
+    var generateId_Original: GenerateId
     
     @JSName("index")
-    var index_StyleSheetOptions: Double = js.native
+    var index_StyleSheetOptions: Double
     
-    var insertionPoint: js.UndefOr[InsertionPoint] = js.native
+    var insertionPoint: js.UndefOr[InsertionPoint] = js.undefined
     
-    var jss: Jss = js.native
+    var jss: Jss
+  }
+  object StyleSheetOptions {
+    
+    @scala.inline
+    def apply(
+      Renderer: Renderer,
+      generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String,
+      index: Double,
+      jss: Jss
+    ): StyleSheetOptions = {
+      val __obj = js.Dynamic.literal(Renderer = Renderer.asInstanceOf[js.Any], generateId = js.Any.fromFunction2(generateId), index = index.asInstanceOf[js.Any], jss = jss.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StyleSheetOptions]
+    }
+    
+    @scala.inline
+    implicit class StyleSheetOptionsMutableBuilder[Self <: StyleSheetOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGenerateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateId", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInsertionPoint(value: InsertionPoint): Self = StObject.set(x, "insertionPoint", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInsertionPointUndefined: Self = StObject.set(x, "insertionPoint", js.undefined)
+      
+      @scala.inline
+      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRenderer(value: Renderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+    }
   }
   
   type Styles[Name /* <: String | Double | js.Symbol */] = Record[
@@ -636,12 +797,11 @@ object mod extends Shortcut {
     JssStyle | String | (Func[js.UndefOr[JssStyle | String | Null]]) | (Observable[js.UndefOr[JssStyle | String | Null]])
   ]
   
-  @js.native
   trait ToCssOptions extends StObject {
     
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
   }
   object ToCssOptions {
     
@@ -668,12 +828,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait UpdateOptions extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var process: js.UndefOr[Boolean] = js.native
+    var process: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateOptions {
     
@@ -699,9 +858,4 @@ object mod extends Shortcut {
       def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     }
   }
-  
-  type _To = Jss
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Jss = default
 }

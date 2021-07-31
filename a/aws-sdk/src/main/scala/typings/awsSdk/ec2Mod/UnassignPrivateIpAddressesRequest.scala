@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnassignPrivateIpAddressesRequest extends StObject {
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
   
   /**
     * The secondary private IP addresses to unassign from the network interface. You can specify this option multiple times to unassign more than one IP address.
     */
-  var PrivateIpAddresses: PrivateIpAddressStringList = js.native
+  var PrivateIpAddresses: PrivateIpAddressStringList
 }
 object UnassignPrivateIpAddressesRequest {
   

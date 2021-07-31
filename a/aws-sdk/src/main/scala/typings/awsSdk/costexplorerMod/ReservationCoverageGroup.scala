@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationCoverageGroup extends StObject {
   
   /**
     * The attributes for this group of reservations.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.undefined
   
   /**
     * How much instance usage this group of reservations covered.
     */
-  var Coverage: js.UndefOr[typings.awsSdk.costexplorerMod.Coverage] = js.native
+  var Coverage: js.UndefOr[typings.awsSdk.costexplorerMod.Coverage] = js.undefined
 }
 object ReservationCoverageGroup {
   

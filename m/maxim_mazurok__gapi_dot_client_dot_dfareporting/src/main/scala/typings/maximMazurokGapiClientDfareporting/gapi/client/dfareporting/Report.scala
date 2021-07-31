@@ -7,74 +7,72 @@ import typings.maximMazurokGapiClientDfareporting.anon.ConversionDimensions
 import typings.maximMazurokGapiClientDfareporting.anon.EmailOwner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Report extends StObject {
   
   /** The account ID to which this report belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The report criteria for a report of type "STANDARD". */
-  var criteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.Activities] = js.native
+  var criteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.Activities] = js.undefined
   
   /** The report criteria for a report of type "CROSS_DIMENSION_REACH". */
-  var crossDimensionReachCriteria: js.UndefOr[Breakdown] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[Breakdown] = js.undefined
   
   /** The report's email delivery settings. */
-  var delivery: js.UndefOr[EmailOwner] = js.native
+  var delivery: js.UndefOr[EmailOwner] = js.undefined
   
   /** The eTag of this response for caching purposes. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The filename used when generating report files for this report. */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** The report criteria for a report of type "FLOODLIGHT". */
-  var floodlightCriteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.CustomRichMediaEvents] = js.native
+  var floodlightCriteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.CustomRichMediaEvents] = js.undefined
   
   /**
     * The output format of the report. If not specified, default format is "CSV". Note that the actual format in the completed report file might differ if for instance the report's size
     * exceeds the format's capabilities. "CSV" will then be the fallback format.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** The unique ID identifying this report resource. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#report. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The timestamp (in milliseconds since epoch) of when this report was last modified. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /** The name of the report. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The user profile id of the owner of this report. */
-  var ownerProfileId: js.UndefOr[String] = js.native
+  var ownerProfileId: js.UndefOr[String] = js.undefined
   
   /** The report criteria for a report of type "PATH_ATTRIBUTION". */
-  var pathAttributionCriteria: js.UndefOr[ActivityFilters] = js.native
+  var pathAttributionCriteria: js.UndefOr[ActivityFilters] = js.undefined
   
   /** The report criteria for a report of type "PATH". */
-  var pathCriteria: js.UndefOr[ActivityFilters] = js.native
+  var pathCriteria: js.UndefOr[ActivityFilters] = js.undefined
   
   /** The report criteria for a report of type "PATH_TO_CONVERSION". */
-  var pathToConversionCriteria: js.UndefOr[ConversionDimensions] = js.native
+  var pathToConversionCriteria: js.UndefOr[ConversionDimensions] = js.undefined
   
   /** The report criteria for a report of type "REACH". */
-  var reachCriteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.DateRange] = js.native
+  var reachCriteria: js.UndefOr[typings.maximMazurokGapiClientDfareporting.anon.DateRange] = js.undefined
   
   /** The report's schedule. Can only be set if the report's 'dateRange' is a relative date range and the relative date range is not "TODAY". */
-  var schedule: js.UndefOr[Active] = js.native
+  var schedule: js.UndefOr[Active] = js.undefined
   
   /** The subaccount ID to which this report belongs if applicable. */
-  var subAccountId: js.UndefOr[String] = js.native
+  var subAccountId: js.UndefOr[String] = js.undefined
   
   /** The type of the report. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Report {
   

@@ -3,7 +3,6 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * along with an optional histogram of the values as specified by the bucket
   * options.
   */
-@js.native
 trait SchemaLogMetric extends StObject {
   
   /**
@@ -22,26 +20,26 @@ trait SchemaLogMetric extends StObject {
     * using a DISTRIBUTION value type and it describes the bucket boundaries
     * used to create a histogram of the extracted values.
     */
-  var bucketOptions: js.UndefOr[SchemaBucketOptions] = js.native
+  var bucketOptions: js.UndefOr[SchemaBucketOptions] = js.undefined
   
   /**
     * Output only. The creation timestamp of the metric.This field may not be
     * present for older metrics.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A description of this metric, which is used in documentation.
     * The maximum length of the description is 8000 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. An advanced logs filter which is used to match log entries.
     * Example: &quot;resource.type=gae_app AND severity&gt;=ERROR&quot; The
     * maximum length of the filter is 20000 characters.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A map from a label key string to an extractor expression which
@@ -56,7 +54,7 @@ trait SchemaLogMetric extends StObject {
     * there are upper bounds on the maximum number of labels and the number of
     * active time series that are allowed in a project.
     */
-  var labelExtractors: js.UndefOr[StringDictionary[String]] = js.native
+  var labelExtractors: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The metric descriptor associated with the logs-based metric. If
@@ -75,7 +73,7 @@ trait SchemaLogMetric extends StObject {
     * can be added in the metric_descriptor, but existing labels cannot be
     * modified except for their description.
     */
-  var metricDescriptor: js.UndefOr[SchemaMetricDescriptor] = js.native
+  var metricDescriptor: js.UndefOr[SchemaMetricDescriptor] = js.undefined
   
   /**
     * Required. The client-assigned metric identifier. Examples:
@@ -90,13 +88,13 @@ trait SchemaLogMetric extends StObject {
     * parameter, then the metric identifier must be URL-encoded. Example:
     * &quot;projects/my-project/metrics/nginx%2Frequests&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The last update timestamp of the metric.This field may not
     * be present for older metrics.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A value_extractor is required when using a distribution
@@ -115,13 +113,13 @@ trait SchemaLogMetric extends StObject {
     * distribution.Example: REGEXP_EXTRACT(jsonPayload.request,
     * &quot;.*quantity=(\d+).*&quot;)
     */
-  var valueExtractor: js.UndefOr[String] = js.native
+  var valueExtractor: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The API version that created or updated this metric. The v2
     * format is used by default and cannot be changed.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaLogMetric {
   

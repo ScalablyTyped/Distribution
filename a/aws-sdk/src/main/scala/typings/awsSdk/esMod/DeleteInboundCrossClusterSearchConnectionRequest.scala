@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInboundCrossClusterSearchConnectionRequest extends StObject {
   
   /**
     * The id of the inbound connection that you want to permanently delete.
     */
-  var CrossClusterSearchConnectionId: typings.awsSdk.esMod.CrossClusterSearchConnectionId = js.native
+  var CrossClusterSearchConnectionId: typings.awsSdk.esMod.CrossClusterSearchConnectionId
 }
 object DeleteInboundCrossClusterSearchConnectionRequest {
   

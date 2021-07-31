@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DolbyVision extends StObject {
   
   /**
     * Use these settings when you set DolbyVisionLevel6Mode to SPECIFY to override the MaxCLL and MaxFALL values in your input with new values.
     */
-  var L6Metadata: js.UndefOr[DolbyVisionLevel6Metadata] = js.native
+  var L6Metadata: js.UndefOr[DolbyVisionLevel6Metadata] = js.undefined
   
   /**
     * Use Dolby Vision Mode to choose how the service will handle Dolby Vision MaxCLL and MaxFALL properies.
     */
-  var L6Mode: js.UndefOr[DolbyVisionLevel6Mode] = js.native
+  var L6Mode: js.UndefOr[DolbyVisionLevel6Mode] = js.undefined
   
   /**
     * In the current MediaConvert implementation, the Dolby Vision profile is always 5 (PROFILE_5). Therefore, all of your inputs must contain Dolby Vision frame interleaved data.
     */
-  var Profile: js.UndefOr[DolbyVisionProfile] = js.native
+  var Profile: js.UndefOr[DolbyVisionProfile] = js.undefined
 }
 object DolbyVision {
   

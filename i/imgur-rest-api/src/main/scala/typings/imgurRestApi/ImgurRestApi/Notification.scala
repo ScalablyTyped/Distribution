@@ -2,19 +2,17 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification[T] extends StObject {
   
-  var account_id: Double = js.native
+  var account_id: Double
   
-  var content: T = js.native
+  var content: T
   
-  var id: Double = js.native
+  var id: Double
   
-  var viewed: Boolean = js.native
+  var viewed: Boolean
 }
 object Notification {
   
@@ -25,7 +23,7 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification[_], T] (val x: Self with Notification[T]) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification[?], T] (val x: Self & Notification[T]) extends AnyVal {
     
     @scala.inline
     def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import typings.std.ArrayLike
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,18 +29,20 @@ object mod {
   *\/
   ```
   */
+  @scala.inline
+  def apply(data: ArrayLike[Double]): ResultType = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[ResultType]
+  
   @JSImport("decode-gif", JSImport.Namespace)
   @js.native
-  def apply(data: ArrayLike[Double]): ResultType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait FrameType extends StObject {
     
     /** The frame data. */
-    var data: Uint8ClampedArray = js.native
+    var data: Uint8ClampedArray
     
     /** The time code in milliseconds that the frame appears at. */
-    var timeCode: Double = js.native
+    var timeCode: Double
   }
   object FrameType {
     
@@ -62,17 +63,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultType extends StObject {
     
     /** Each frame of the gif. */
-    var frames: js.Array[FrameType] = js.native
+    var frames: js.Array[FrameType]
     
     /** The height of the gif. */
-    var height: Double = js.native
+    var height: Double
     
     /** The width of the gif. */
-    var width: Double = js.native
+    var width: Double
   }
   object ResultType {
     

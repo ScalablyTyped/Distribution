@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEnvironmentRequest extends StObject {
   
   /**
     * The ID of the application that includes the environment you want to get.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The ID of the environment you wnat to get.
     */
-  var EnvironmentId: Id = js.native
+  var EnvironmentId: Id
 }
 object GetEnvironmentRequest {
   

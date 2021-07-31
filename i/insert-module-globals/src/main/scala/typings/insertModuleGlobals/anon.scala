@@ -2,26 +2,24 @@ package typings.insertModuleGlobals
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buffer extends StObject {
     
-    def Buffer(): String = js.native
+    def Buffer(): String
     
     @JSName("Buffer.isBuffer")
-    def BufferDotisBuffer(file: String): String = js.native
+    def BufferDotisBuffer(file: String): String
     
-    def __dirname(file: String, basedir: String): String = js.native
+    def __dirname(file: String, basedir: String): String
     
-    def __filename(file: String, basedir: String): String = js.native
+    def __filename(file: String, basedir: String): String
     
-    def global(): String = js.native
+    def global(): String
     
-    def process(file: String): String = js.native
+    def process(file: String): String
   }
   object Buffer {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepConfig extends StObject {
   
   /**
     * The action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE. TERMINATE_JOB_FLOW is provided for backward compatibility. We recommend using TERMINATE_CLUSTER instead.
     */
-  var ActionOnFailure: js.UndefOr[typings.awsSdk.emrMod.ActionOnFailure] = js.native
+  var ActionOnFailure: js.UndefOr[typings.awsSdk.emrMod.ActionOnFailure] = js.undefined
   
   /**
     * The JAR file used for the step.
     */
-  var HadoopJarStep: HadoopJarStepConfig = js.native
+  var HadoopJarStep: HadoopJarStepConfig
   
   /**
     * The name of the step.
     */
-  var Name: XmlStringMaxLen256 = js.native
+  var Name: XmlStringMaxLen256
 }
 object StepConfig {
   

@@ -2,44 +2,40 @@ package typings.mathExpressionEvaluator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("math-expression-evaluator", JSImport.Namespace)
   @js.native
-  class ^ () extends Mexp
+  class ^ ()
+    extends StObject
+       with Mexp
+  @JSImport("math-expression-evaluator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("math-expression-evaluator", "addToken")
-  @js.native
-  def addToken(tokens: js.Array[Token]): Unit = js.native
+  @scala.inline
+  def addToken(tokens: js.Array[Token]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToken")(tokens.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("math-expression-evaluator", "eval")
-  @js.native
-  def eval(exp: String): String = js.native
-  @JSImport("math-expression-evaluator", "eval")
-  @js.native
-  def eval(exp: String, mexp: js.Object): String = js.native
-  @JSImport("math-expression-evaluator", "eval")
-  @js.native
-  def eval(exp: String, tokens: js.UndefOr[scala.Nothing], pair: js.Object): String = js.native
-  @JSImport("math-expression-evaluator", "eval")
-  @js.native
-  def eval(exp: String, tokens: js.Array[Token]): String = js.native
-  @JSImport("math-expression-evaluator", "eval")
-  @js.native
-  def eval(exp: String, tokens: js.Array[Token], pair: js.Object): String = js.native
+  @scala.inline
+  def eval(exp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(exp.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def eval(exp: String, mexp: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(exp.asInstanceOf[js.Any], mexp.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def eval(exp: String, tokens: js.Array[Token]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(exp.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def eval(exp: String, tokens: js.Array[Token], pair: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(exp.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any], pair.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def eval(exp: String, tokens: Unit, pair: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(exp.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any], pair.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("math-expression-evaluator", "lex")
-  @js.native
-  def lex(inp: String): Mexp = js.native
-  @JSImport("math-expression-evaluator", "lex")
-  @js.native
-  def lex(inp: String, tokens: js.Array[Token]): Mexp = js.native
+  @scala.inline
+  def lex(inp: String): Mexp = ^.asInstanceOf[js.Dynamic].applyDynamic("lex")(inp.asInstanceOf[js.Any]).asInstanceOf[Mexp]
+  @scala.inline
+  def lex(inp: String, tokens: js.Array[Token]): Mexp = (^.asInstanceOf[js.Dynamic].applyDynamic("lex")(inp.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Mexp]
   
   @js.native
   trait Mexp extends StObject {
@@ -52,18 +48,17 @@ object mod {
     def toPostfix(): Mexp = js.native
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var preced: js.UndefOr[Double] = js.native
+    var preced: js.UndefOr[Double] = js.undefined
     
-    var show: String = js.native
+    var show: String
     
-    var token: String = js.native
+    var token: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var value: js.UndefOr[String | (js.Function2[/* a */ Double, /* b */ js.UndefOr[Double], Double])] = js.native
+    var value: js.UndefOr[String | (js.Function2[/* a */ Double, /* b */ js.UndefOr[Double], Double])] = js.undefined
   }
   object Token {
     

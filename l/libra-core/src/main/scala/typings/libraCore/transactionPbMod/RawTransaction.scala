@@ -10,7 +10,6 @@ import typings.libraCore.transactionPbMod.RawTransaction.PayloadCase
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction")
@@ -76,28 +75,32 @@ object RawTransaction {
   object PayloadCase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PayloadCase with Double] = js.native
+    def apply(value: Double): js.UndefOr[PayloadCase & Double] = js.native
     
     @js.native
-    sealed trait PAYLOAD_NOT_SET extends PayloadCase
-    /* 0 */ val PAYLOAD_NOT_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.PAYLOAD_NOT_SET with Double = js.native
+    sealed trait PAYLOAD_NOT_SET
+      extends StObject
+         with PayloadCase
+    /* 0 */ val PAYLOAD_NOT_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.PAYLOAD_NOT_SET & Double = js.native
     
     @js.native
-    sealed trait PROGRAM extends PayloadCase
-    /* 3 */ val PROGRAM: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.PROGRAM with Double = js.native
+    sealed trait PROGRAM
+      extends StObject
+         with PayloadCase
+    /* 3 */ val PROGRAM: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.PROGRAM & Double = js.native
     
     @js.native
-    sealed trait WRITE_SET extends PayloadCase
-    /* 4 */ val WRITE_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.WRITE_SET with Double = js.native
+    sealed trait WRITE_SET
+      extends StObject
+         with PayloadCase
+    /* 4 */ val WRITE_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.WRITE_SET & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): RawTransaction = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): RawTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RawTransaction]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: RawTransaction, reader: BinaryReader): RawTransaction = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: RawTransaction, reader: BinaryReader): RawTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[RawTransaction]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.extensions")
   @js.native
@@ -112,30 +115,27 @@ object RawTransaction {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: RawTransaction, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: RawTransaction, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: RawTransaction): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: RawTransaction): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var expirationTime: String = js.native
+    var expirationTime: String
     
-    var gasUnitPrice: String = js.native
+    var gasUnitPrice: String
     
-    var maxGasAmount: String = js.native
+    var maxGasAmount: String
     
-    var program: js.UndefOr[typings.libraCore.transactionPbMod.Program.AsObject] = js.native
+    var program: js.UndefOr[typings.libraCore.transactionPbMod.Program.AsObject] = js.undefined
     
-    var senderAccount: Uint8Array | String = js.native
+    var senderAccount: Uint8Array | String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
     
-    var writeSet: js.UndefOr[typings.libraCore.transactionPbMod.WriteSet.AsObject] = js.native
+    var writeSet: js.UndefOr[typings.libraCore.transactionPbMod.WriteSet.AsObject] = js.undefined
   }
   object AsObject {
     

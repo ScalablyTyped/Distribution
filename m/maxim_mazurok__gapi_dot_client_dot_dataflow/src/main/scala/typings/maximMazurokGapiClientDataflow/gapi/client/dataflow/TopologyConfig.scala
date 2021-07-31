@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopologyConfig extends StObject {
   
   /** The computations associated with a streaming Dataflow job. */
-  var computations: js.UndefOr[js.Array[ComputationTopology]] = js.native
+  var computations: js.UndefOr[js.Array[ComputationTopology]] = js.undefined
   
   /** The disks assigned to a streaming Dataflow job. */
-  var dataDiskAssignments: js.UndefOr[js.Array[DataDiskAssignment]] = js.native
+  var dataDiskAssignments: js.UndefOr[js.Array[DataDiskAssignment]] = js.undefined
   
   /** The size (in bits) of keys that will be assigned to source messages. */
-  var forwardingKeyBits: js.UndefOr[Double] = js.native
+  var forwardingKeyBits: js.UndefOr[Double] = js.undefined
   
   /** Version number for persistent state. */
-  var persistentStateVersion: js.UndefOr[Double] = js.native
+  var persistentStateVersion: js.UndefOr[Double] = js.undefined
   
   /** Maps user stage names to stable computation names. */
   var userStageToComputationNameMap: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object TopologyConfig {
   
@@ -73,7 +71,7 @@ object TopologyConfig {
     def setUserStageToComputationNameMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline

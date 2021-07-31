@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterNatLogConfig extends StObject {
   
   /** Indicates whether or not to export logs. This is false by default. */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify the desired filtering of logs on this NAT. If unspecified, logs are exported for all connections handled by this NAT. This option can take one of the following values:
@@ -17,7 +15,7 @@ trait RouterNatLogConfig extends StObject {
     * - TRANSLATIONS_ONLY: Export logs only for successful connections.
     * - ALL: Export logs for all connections, successful and unsuccessful.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
 }
 object RouterNatLogConfig {
   

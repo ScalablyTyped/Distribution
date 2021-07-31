@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetsChartReferenceSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to chart_id. */
-  var chartIdSuggested: js.UndefOr[Boolean] = js.native
+  var chartIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to spreadsheet_id. */
-  var spreadsheetIdSuggested: js.UndefOr[Boolean] = js.native
+  var spreadsheetIdSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SheetsChartReferenceSuggestionState {
   

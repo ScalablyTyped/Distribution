@@ -4,16 +4,14 @@ import typings.hapi.anon.Payload
 import typings.hapi.mod.Lifecycle.ReturnValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerAuthSchemeObject extends StObject {
   
   /**
     * optional object which is exposed via the [server.auth.api](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.api) object.
     */
-  var api: js.UndefOr[ServerAuthSchemeObjectApi] = js.native
+  var api: js.UndefOr[ServerAuthSchemeObjectApi] = js.undefined
   
   /**
     * A lifecycle method function called for each incoming request configured with the authentication scheme. The
@@ -24,13 +22,13 @@ trait ServerAuthSchemeObject extends StObject {
     * @param h the ResponseToolkit
     * @return the Lifecycle.ReturnValue
     */
-  def authenticate(request: Request, h: ResponseToolkit): ReturnValue = js.native
+  def authenticate(request: Request, h: ResponseToolkit): ReturnValue
   
   /**
     * An object with the following keys:
     * * payload
     */
-  var options: js.UndefOr[Payload] = js.native
+  var options: js.UndefOr[Payload] = js.undefined
   
   /**
     * A lifecycle method to authenticate the request payload.
@@ -41,7 +39,7 @@ trait ServerAuthSchemeObject extends StObject {
     * @param h the ResponseToolkit
     * @return the Lifecycle.ReturnValue
     */
-  var payload: js.UndefOr[js.Function2[/* request */ Request, /* h */ ResponseToolkit, ReturnValue]] = js.native
+  var payload: js.UndefOr[js.Function2[/* request */ Request, /* h */ ResponseToolkit, ReturnValue]] = js.undefined
   
   /**
     * A lifecycle method to decorate the response with authentication headers before the response headers or payload is written.
@@ -49,7 +47,7 @@ trait ServerAuthSchemeObject extends StObject {
     * @param h the ResponseToolkit
     * @return the Lifecycle.ReturnValue
     */
-  var response: js.UndefOr[js.Function2[/* request */ Request, /* h */ ResponseToolkit, ReturnValue]] = js.native
+  var response: js.UndefOr[js.Function2[/* request */ Request, /* h */ ResponseToolkit, ReturnValue]] = js.undefined
   
   /**
     * a method used to verify the authentication credentials provided
@@ -58,7 +56,7 @@ trait ServerAuthSchemeObject extends StObject {
     * revoked). Note that the method does not have access to the original request, only to the
     * credentials and artifacts produced by the `authenticate()` method.
     */
-  var verify: js.UndefOr[js.Function1[/* auth */ RequestAuth, js.Promise[Unit]]] = js.native
+  var verify: js.UndefOr[js.Function1[/* auth */ RequestAuth, js.Promise[Unit]]] = js.undefined
 }
 object ServerAuthSchemeObject {
   

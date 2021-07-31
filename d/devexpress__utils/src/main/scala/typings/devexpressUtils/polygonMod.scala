@@ -6,7 +6,6 @@ import typings.devexpressUtils.polygonalChainMod.PolygonalChain
 import typings.devexpressUtils.segmentMod.Segment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polygonMod {
@@ -18,19 +17,25 @@ object polygonMod {
   object CollisionResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CollisionResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[CollisionResult & Double] = js.native
     
     @js.native
-    sealed trait Contact extends CollisionResult
-    /* 2 */ val Contact: typings.devexpressUtils.polygonMod.CollisionResult.Contact with Double = js.native
+    sealed trait Contact
+      extends StObject
+         with CollisionResult
+    /* 2 */ val Contact: typings.devexpressUtils.polygonMod.CollisionResult.Contact & Double = js.native
     
     @js.native
-    sealed trait Intersect extends CollisionResult
-    /* 1 */ val Intersect: typings.devexpressUtils.polygonMod.CollisionResult.Intersect with Double = js.native
+    sealed trait Intersect
+      extends StObject
+         with CollisionResult
+    /* 1 */ val Intersect: typings.devexpressUtils.polygonMod.CollisionResult.Intersect & Double = js.native
     
     @js.native
-    sealed trait None extends CollisionResult
-    /* 0 */ val None: typings.devexpressUtils.polygonMod.CollisionResult.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with CollisionResult
+    /* 0 */ val None: typings.devexpressUtils.polygonMod.CollisionResult.None & Double = js.native
   }
   
   @JSImport("@devexpress/utils/lib/geometry/polygon", "Polygon")
@@ -45,12 +50,14 @@ object polygonMod {
   /* static members */
   object Polygon {
     
-    @JSImport("@devexpress/utils/lib/geometry/polygon", "Polygon.collision")
+    @JSImport("@devexpress/utils/lib/geometry/polygon", "Polygon")
     @js.native
-    def collision[T1 /* <: Point */, T2 /* <: Point */](a: Polygon[T1], b: Polygon[T2]): CollisionResult = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/geometry/polygon", "Polygon.fromRectangle")
-    @js.native
-    def fromRectangle(rect: IRectangle): Polygon[Point] = js.native
+    @scala.inline
+    def collision[T1 /* <: Point */, T2 /* <: Point */](a: Polygon[T1], b: Polygon[T2]): CollisionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("collision")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[CollisionResult]
+    
+    @scala.inline
+    def fromRectangle(rect: IRectangle): Polygon[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rect.asInstanceOf[js.Any]).asInstanceOf[Polygon[Point]]
   }
 }

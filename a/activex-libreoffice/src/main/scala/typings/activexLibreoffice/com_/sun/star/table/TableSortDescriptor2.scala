@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
-trait TableSortDescriptor2 extends StObject {
+- Dropped any */ trait TableSortDescriptor2 extends StObject {
   
   /**
     * specifies if the columns or rows are to be sorted.
@@ -21,17 +19,17 @@ trait TableSortDescriptor2 extends StObject {
     *
     * **FALSE**: The rows are to be sorted.
     */
-  var IsSortColumns: Boolean = js.native
+  var IsSortColumns: Boolean
   
   /** contains the maximum number of sort fields the descriptor can hold. */
-  var MaxSortFieldsCount: Double = js.native
+  var MaxSortFieldsCount: Double
   
   /**
     * specifies a list of individual sort fields.
     *
     * Each entry specifies properties that state the row/column to be sorted and how that should be done.
     */
-  var SortFields: SafeArray[TableSortField] = js.native
+  var SortFields: SafeArray[TableSortField]
 }
 object TableSortDescriptor2 {
   

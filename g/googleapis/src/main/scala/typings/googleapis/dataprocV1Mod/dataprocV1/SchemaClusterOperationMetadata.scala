@@ -3,54 +3,52 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata describing the operation.
   */
-@js.native
 trait SchemaClusterOperationMetadata extends StObject {
   
   /**
     * Output only. Name of the cluster for the operation.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Cluster UUID for the operation.
     */
-  var clusterUuid: js.UndefOr[String] = js.native
+  var clusterUuid: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Short description of operation.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Labels associated with the operation
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The operation type.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Current operation status.
     */
-  var status: js.UndefOr[SchemaClusterOperationStatus] = js.native
+  var status: js.UndefOr[SchemaClusterOperationStatus] = js.undefined
   
   /**
     * Output only. The previous operation status.
     */
-  var statusHistory: js.UndefOr[js.Array[SchemaClusterOperationStatus]] = js.native
+  var statusHistory: js.UndefOr[js.Array[SchemaClusterOperationStatus]] = js.undefined
   
   /**
     * Output only. Errors encountered during operation execution.
     */
-  var warnings: js.UndefOr[js.Array[String]] = js.native
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaClusterOperationMetadata {
   

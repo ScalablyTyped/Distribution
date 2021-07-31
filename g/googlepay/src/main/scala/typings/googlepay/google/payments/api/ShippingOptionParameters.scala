@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Developer can set a shipping option labeled "PENDING" if there's
   * nothing to show at initial request time.
   */
-@js.native
 trait ShippingOptionParameters extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ShippingOptionParameters extends StObject {
     *
     * This field is optional.
     */
-  var defaultSelectedOptionId: js.UndefOr[String] = js.native
+  var defaultSelectedOptionId: js.UndefOr[String] = js.undefined
   
   /**
     * All the shipping options available for the current request. Will be
@@ -29,7 +27,7 @@ trait ShippingOptionParameters extends StObject {
     *
     * This field is required.
     */
-  var shippingOptions: js.Array[SelectionOption] = js.native
+  var shippingOptions: js.Array[SelectionOption]
 }
 object ShippingOptionParameters {
   

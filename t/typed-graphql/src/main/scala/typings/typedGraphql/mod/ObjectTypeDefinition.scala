@@ -2,23 +2,22 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectTypeDefinition
-  extends TypeDefinition
-     with Node {
+  extends StObject
+     with Node
+     with TypeDefinition {
   
-  var fields: js.Array[FieldDefinition] = js.native
+  var fields: js.Array[FieldDefinition]
   
-  var interfaces: js.UndefOr[js.Array[NamedType]] = js.native
+  var interfaces: js.UndefOr[js.Array[NamedType]] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var name: Name = js.native
+  var name: Name
 }
 object ObjectTypeDefinition {
   

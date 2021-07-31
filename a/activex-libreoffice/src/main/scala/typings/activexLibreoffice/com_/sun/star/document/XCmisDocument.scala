@@ -6,39 +6,39 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The document can provide access to CMIS properties and versions through this interface. */
-@js.native
-trait XCmisDocument extends XInterface {
+trait XCmisDocument
+  extends StObject
+     with XInterface {
   
-  val AllVersions: SafeArray[CmisVersion] = js.native
+  val AllVersions: SafeArray[CmisVersion]
   
   /** Contains the properties values named after their CMIS ID. */
-  var CmisProperties: SafeArray[CmisProperty] = js.native
+  var CmisProperties: SafeArray[CmisProperty]
   
-  def canCancelCheckOut(): Boolean = js.native
+  def canCancelCheckOut(): Boolean
   
-  def canCheckIn(): Boolean = js.native
+  def canCheckIn(): Boolean
   
-  def canCheckOut(): Boolean = js.native
+  def canCheckOut(): Boolean
   
   /** Cancel checked out document, this will discard all changes since check-out. */
-  def cancelCheckOut(): Unit = js.native
+  def cancelCheckOut(): Unit
   
   /** Creates a new version of the document from the private working copy. */
-  def checkIn(isMajor: Boolean, comment: String): Unit = js.native
+  def checkIn(isMajor: Boolean, comment: String): Unit
   
   /** Check out the document into a private working copy on the server, and update the loaded document to reflect this change. */
-  def checkOut(): Unit = js.native
+  def checkOut(): Unit
   
-  def getAllVersions(): SafeArray[CmisVersion] = js.native
+  def getAllVersions(): SafeArray[CmisVersion]
   
   /** Tells whether a document can support versioning or not. */
-  def isVersionable(): Boolean = js.native
+  def isVersionable(): Boolean
   
-  def updateCmisProperties(cmisProperties: SeqEquiv[CmisProperty]): Unit = js.native
+  def updateCmisProperties(cmisProperties: SeqEquiv[CmisProperty]): Unit
 }
 object XCmisDocument {
   

@@ -3,17 +3,17 @@ package typings.amapJsApiMap3d.AMap
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Object3DGroup[C /* <: Object3D */] extends Object3D {
+trait Object3DGroup[C /* <: Object3D */]
+  extends StObject
+     with Object3D {
   
-  def add(object3d: C): Unit = js.native
+  def add(object3d: C): Unit
   
-  var children: js.Array[C] = js.native
+  var children: js.Array[C]
   
-  def remove(object3d: C): Unit = js.native
+  def remove(object3d: C): Unit
 }
 object Object3DGroup {
   
@@ -35,7 +35,7 @@ object Object3DGroup {
   }
   
   @scala.inline
-  implicit class Object3DGroupMutableBuilder[Self <: Object3DGroup[_], C /* <: Object3D */] (val x: Self with Object3DGroup[C]) extends AnyVal {
+  implicit class Object3DGroupMutableBuilder[Self <: Object3DGroup[?], C /* <: Object3D */] (val x: Self & Object3DGroup[C]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: C => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

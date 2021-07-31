@@ -6,7 +6,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenParenToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "ArgumentList")
@@ -17,12 +16,12 @@ class ArgumentList protected ()
   def this(openParenToken: Token[OpenParenToken | OpenBracketToken], elements: js.Array[Argument]) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
-    elements: js.UndefOr[scala.Nothing],
+    elements: js.Array[Argument],
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
-    elements: js.Array[Argument],
+    elements: Unit,
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()
   

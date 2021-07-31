@@ -3,21 +3,19 @@ package typings.activexWord.anon
 import typings.activexWord.Word.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockType extends StObject {
   
-  val BlockType: String = js.native
+  val BlockType: String
   
-  val Category: String = js.native
+  val Category: String
   
-  val Name: String = js.native
+  val Name: String
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  val Template: String = js.native
+  val Template: String
 }
 object BlockType {
   

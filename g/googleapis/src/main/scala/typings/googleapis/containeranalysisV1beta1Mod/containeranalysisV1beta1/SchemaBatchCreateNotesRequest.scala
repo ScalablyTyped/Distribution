@@ -3,19 +3,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to create notes in batch.
   */
-@js.native
 trait SchemaBatchCreateNotesRequest extends StObject {
   
   /**
     * The notes to create. Max allowed length is 1000.
     */
-  var notes: js.UndefOr[StringDictionary[SchemaNote]] = js.native
+  var notes: js.UndefOr[StringDictionary[SchemaNote]] = js.undefined
 }
 object SchemaBatchCreateNotesRequest {
   

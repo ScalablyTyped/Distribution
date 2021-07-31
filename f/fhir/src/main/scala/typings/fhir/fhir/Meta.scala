@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about a resource
   */
-@js.native
-trait Meta extends Element {
+trait Meta
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'lastUpdated'.
     */
-  var _lastUpdated: js.UndefOr[Element] = js.native
+  var _lastUpdated: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'profile'.
     */
-  var _profile: js.UndefOr[js.Array[Element]] = js.native
+  var _profile: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'versionId'.
     */
-  var _versionId: js.UndefOr[Element] = js.native
+  var _versionId: js.UndefOr[Element] = js.undefined
   
   /**
     * When the resource version last changed
     */
-  var lastUpdated: js.UndefOr[instant] = js.native
+  var lastUpdated: js.UndefOr[instant] = js.undefined
   
   /**
     * Profiles this resource claims to conform to
     */
-  var profile: js.UndefOr[js.Array[uri]] = js.native
+  var profile: js.UndefOr[js.Array[uri]] = js.undefined
   
   /**
     * Security Labels applied to this resource
     */
-  var security: js.UndefOr[js.Array[Coding]] = js.native
+  var security: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Tags applied to this resource
     */
-  var tag: js.UndefOr[js.Array[Coding]] = js.native
+  var tag: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Version specific identifier
     */
-  var versionId: js.UndefOr[id] = js.native
+  var versionId: js.UndefOr[id] = js.undefined
 }
 object Meta {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.CellEndEdit event.
   */
-@js.native
-trait ASPxClientSpreadsheetCellEndEditEventArgs extends ASPxClientSpreadsheetCellBeginEditEventArgs {
+trait ASPxClientSpreadsheetCellEndEditEventArgs
+  extends StObject
+     with ASPxClientSpreadsheetCellBeginEditEventArgs {
   
   /**
     * Gets or sets the text stored within the active cell's editor.
     */
-  var editorText: String = js.native
+  var editorText: String
 }
 object ASPxClientSpreadsheetCellEndEditEventArgs {
   

@@ -4,13 +4,11 @@ import typings.googleAppsScript.GoogleAppsScript.Appsactivity.Collection.Activit
 import typings.googleAppsScript.GoogleAppsScript.Appsactivity.Schema.ListActivitiesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appsactivity extends StObject {
   
-  var Activities: js.UndefOr[ActivitiesCollection] = js.native
+  var Activities: js.UndefOr[ActivitiesCollection] = js.undefined
 }
 object Appsactivity {
   
@@ -44,12 +42,11 @@ object Appsactivity {
   
   object Schema {
     
-    @js.native
     trait Activity extends StObject {
       
-      var combinedEvent: js.UndefOr[Event] = js.native
+      var combinedEvent: js.UndefOr[Event] = js.undefined
       
-      var singleEvents: js.UndefOr[js.Array[Event]] = js.native
+      var singleEvents: js.UndefOr[js.Array[Event]] = js.undefined
     }
     object Activity {
       
@@ -79,26 +76,25 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Event extends StObject {
       
-      var additionalEventTypes: js.UndefOr[js.Array[String]] = js.native
+      var additionalEventTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var eventTimeMillis: js.UndefOr[String] = js.native
+      var eventTimeMillis: js.UndefOr[String] = js.undefined
       
-      var fromUserDeletion: js.UndefOr[Boolean] = js.native
+      var fromUserDeletion: js.UndefOr[Boolean] = js.undefined
       
-      var move: js.UndefOr[Move] = js.native
+      var move: js.UndefOr[Move] = js.undefined
       
-      var permissionChanges: js.UndefOr[js.Array[PermissionChange]] = js.native
+      var permissionChanges: js.UndefOr[js.Array[PermissionChange]] = js.undefined
       
-      var primaryEventType: js.UndefOr[String] = js.native
+      var primaryEventType: js.UndefOr[String] = js.undefined
       
-      var rename: js.UndefOr[Rename] = js.native
+      var rename: js.UndefOr[Rename] = js.undefined
       
-      var target: js.UndefOr[Target] = js.native
+      var target: js.UndefOr[Target] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
     }
     object Event {
       
@@ -173,12 +169,11 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait ListActivitiesResponse extends StObject {
       
-      var activities: js.UndefOr[js.Array[Activity]] = js.native
+      var activities: js.UndefOr[js.Array[Activity]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListActivitiesResponse {
       
@@ -208,12 +203,11 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Move extends StObject {
       
-      var addedParents: js.UndefOr[js.Array[Parent]] = js.native
+      var addedParents: js.UndefOr[js.Array[Parent]] = js.undefined
       
-      var removedParents: js.UndefOr[js.Array[Parent]] = js.native
+      var removedParents: js.UndefOr[js.Array[Parent]] = js.undefined
     }
     object Move {
       
@@ -246,14 +240,13 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Parent extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isRoot: js.UndefOr[Boolean] = js.native
+      var isRoot: js.UndefOr[Boolean] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Parent {
       
@@ -286,20 +279,19 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Permission extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionId: js.UndefOr[String] = js.native
+      var permissionId: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
       
-      var withLink: js.UndefOr[Boolean] = js.native
+      var withLink: js.UndefOr[Boolean] = js.undefined
     }
     object Permission {
       
@@ -350,12 +342,11 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait PermissionChange extends StObject {
       
-      var addedPermissions: js.UndefOr[js.Array[Permission]] = js.native
+      var addedPermissions: js.UndefOr[js.Array[Permission]] = js.undefined
       
-      var removedPermissions: js.UndefOr[js.Array[Permission]] = js.native
+      var removedPermissions: js.UndefOr[js.Array[Permission]] = js.undefined
     }
     object PermissionChange {
       
@@ -388,10 +379,9 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Photo extends StObject {
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object Photo {
       
@@ -412,12 +402,11 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Rename extends StObject {
       
-      var newTitle: js.UndefOr[String] = js.native
+      var newTitle: js.UndefOr[String] = js.undefined
       
-      var oldTitle: js.UndefOr[String] = js.native
+      var oldTitle: js.UndefOr[String] = js.undefined
     }
     object Rename {
       
@@ -444,14 +433,13 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait Target extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Target {
       
@@ -484,18 +472,17 @@ object Appsactivity {
       }
     }
     
-    @js.native
     trait User extends StObject {
       
-      var isDeleted: js.UndefOr[Boolean] = js.native
+      var isDeleted: js.UndefOr[Boolean] = js.undefined
       
-      var isMe: js.UndefOr[Boolean] = js.native
+      var isMe: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionId: js.UndefOr[String] = js.native
+      var permissionId: js.UndefOr[String] = js.undefined
       
-      var photo: js.UndefOr[Photo] = js.native
+      var photo: js.UndefOr[Photo] = js.undefined
     }
     object User {
       

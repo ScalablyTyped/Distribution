@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overview extends Widget_ {
+trait Overview
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -17,23 +18,22 @@ trait Overview extends Widget_ {
 }
 object Overview {
   
-  @js.native
   trait Model extends StObject {
     
     /** Defines the height of the overview
       * @Default {400}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** The sourceId property of overview should be set with the corresponding Diagram ID for you need the overall view.
       * @Default {null}
       */
-    var sourceID: js.UndefOr[String] = js.native
+    var sourceID: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the overview
       * @Default {250}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     

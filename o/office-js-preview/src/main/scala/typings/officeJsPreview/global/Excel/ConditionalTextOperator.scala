@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,15 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConditionalTextOperator extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalTextOperator with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalTextOperator & String] = js.native
   
-  /* "BeginsWith" */ val beginsWith: typings.officeJsPreview.Excel.ConditionalTextOperator.beginsWith with String = js.native
+  /* "BeginsWith" */ val beginsWith: typings.officeJsPreview.Excel.ConditionalTextOperator.beginsWith & String = js.native
   
-  /* "Contains" */ val contains: typings.officeJsPreview.Excel.ConditionalTextOperator.contains with String = js.native
+  /* "Contains" */ val contains: typings.officeJsPreview.Excel.ConditionalTextOperator.contains & String = js.native
   
-  /* "EndsWith" */ val endsWith: typings.officeJsPreview.Excel.ConditionalTextOperator.endsWith with String = js.native
+  /* "EndsWith" */ val endsWith: typings.officeJsPreview.Excel.ConditionalTextOperator.endsWith & String = js.native
   
-  /* "Invalid" */ val invalid: typings.officeJsPreview.Excel.ConditionalTextOperator.invalid with String = js.native
+  /* "Invalid" */ val invalid: typings.officeJsPreview.Excel.ConditionalTextOperator.invalid & String = js.native
   
-  /* "NotContains" */ val notContains: typings.officeJsPreview.Excel.ConditionalTextOperator.notContains with String = js.native
+  /* "NotContains" */ val notContains: typings.officeJsPreview.Excel.ConditionalTextOperator.notContains & String = js.native
 }

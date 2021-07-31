@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait PasswordQuestionOptions[T /* <: Answers */] extends InputQuestionOptions[T] {
+trait PasswordQuestionOptions[T /* <: Answers */]
+  extends StObject
+     with InputQuestionOptions[T] {
   
   /**
     * The character to replace the user-input.
     */
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
 }
 object PasswordQuestionOptions {
   
@@ -28,7 +28,7 @@ object PasswordQuestionOptions {
   }
   
   @scala.inline
-  implicit class PasswordQuestionOptionsMutableBuilder[Self <: PasswordQuestionOptions[_], T /* <: Answers */] (val x: Self with PasswordQuestionOptions[T]) extends AnyVal {
+  implicit class PasswordQuestionOptionsMutableBuilder[Self <: PasswordQuestionOptions[?], T /* <: Answers */] (val x: Self & PasswordQuestionOptions[T]) extends AnyVal {
     
     @scala.inline
     def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])

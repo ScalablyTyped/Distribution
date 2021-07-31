@@ -3,19 +3,19 @@ package typings.bezierJs.BezierJs
 import typings.bezierJs.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Arc extends Point {
+trait Arc
+  extends StObject
+     with Point {
   
-  var e: Double = js.native
+  var e: Double
   
-  var interval: End = js.native
+  var interval: End
   
-  var r: Double = js.native
+  var r: Double
   
-  var s: Double = js.native
+  var s: Double
 }
 object Arc {
   

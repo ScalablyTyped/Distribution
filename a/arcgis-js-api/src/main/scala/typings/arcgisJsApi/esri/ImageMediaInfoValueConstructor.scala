@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageMediaInfoValueConstructor
-  extends Instantiable0[ImageMediaInfoValue]
+  extends StObject
+     with Instantiable0[ImageMediaInfoValue]
      with Instantiable1[/* properties */ ImageMediaInfoValueProperties, ImageMediaInfoValue] {
   
   def fromJSON(json: js.Any): ImageMediaInfoValue = js.native

@@ -6,26 +6,26 @@ import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.start',   transactionID :number,   params :relay-runtime.relay-runtime/lib/util/RelayConcreteNode.RequestParameters,   variables :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.Variables}> */
-@js.native
-trait Readonlynameexecutestartt extends LogEvent {
+trait Readonlynameexecutestartt
+  extends StObject
+     with LogEvent {
   
-  val name: executeDotstart = js.native
+  val name: executeDotstart
   
-  val params: RequestParameters = js.native
+  val params: RequestParameters
   
-  val transactionID: Double = js.native
+  val transactionID: Double
   
-  val variables: Variables = js.native
+  val variables: Variables
 }
 object Readonlynameexecutestartt {
   
   @scala.inline
-  def apply(name: executeDotstart, params: RequestParameters, transactionID: Double, variables: Variables): Readonlynameexecutestartt = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+  def apply(params: RequestParameters, transactionID: Double, variables: Variables): Readonlynameexecutestartt = {
+    val __obj = js.Dynamic.literal(name = "execute.start", params = params.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutestartt]
   }
   

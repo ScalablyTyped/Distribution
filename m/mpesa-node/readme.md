@@ -12,7 +12,7 @@ Node M-Pesa Library
 | Keywords           | mpesa, mpesa-node, mpesa-api |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5761 |
+| # downloads        | 7699 |
 | # stars            | 0 |
 
 ## Links

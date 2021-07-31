@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Builds a new dom tree */
-@js.native
-trait XSAXDocumentBuilder extends XInterface {
+trait XSAXDocumentBuilder
+  extends StObject
+     with XInterface {
   
-  val Document: XDocument = js.native
+  val Document: XDocument
   
-  val DocumentFragment: XDocumentFragment = js.native
+  val DocumentFragment: XDocumentFragment
   
-  val State: SAXDocumentBuilderState = js.native
+  val State: SAXDocumentBuilderState
   
-  def endDocumentFragment(): Unit = js.native
+  def endDocumentFragment(): Unit
   
-  def getDocument(): XDocument = js.native
+  def getDocument(): XDocument
   
-  def getDocumentFragment(): XDocumentFragment = js.native
+  def getDocumentFragment(): XDocumentFragment
   
-  def getState(): SAXDocumentBuilderState = js.native
+  def getState(): SAXDocumentBuilderState
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def startDocumentFragment(ownerDoc: XDocument): Unit = js.native
+  def startDocumentFragment(ownerDoc: XDocument): Unit
 }
 object XSAXDocumentBuilder {
   

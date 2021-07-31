@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyLocationHeaders extends StObject {
   
-  var body: Location = js.native
+  var body: Location
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Location = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Location
 }
 object BodyLocationHeaders {
   
   @scala.inline
-  def apply(body: Location, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Location): BodyLocationHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Location, id: String): BodyLocationHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Location")
     __obj.asInstanceOf[BodyLocationHeaders]
   }
   

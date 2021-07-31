@@ -4,14 +4,15 @@ import typings.hermesProfileTransformer.phasesMod.EventsPhase.MEMORY_DUMP_EVENTS
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.MEMORY_DUMP_EVENTS_PROCESS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.hermesProfileTransformer.eventInterfacesMod.MemoryDumpGlobal
   - typings.hermesProfileTransformer.eventInterfacesMod.MemoryDumpProcess
 */
-trait MemoryDumpEvent extends Event
+trait MemoryDumpEvent
+  extends StObject
+     with Event
 object MemoryDumpEvent {
   
   @scala.inline

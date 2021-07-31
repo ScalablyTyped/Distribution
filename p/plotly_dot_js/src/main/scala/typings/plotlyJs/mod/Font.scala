@@ -2,13 +2,11 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
   /**
     * HTML font family - the typeface that will be applied by the web browser.
@@ -22,13 +20,13 @@ trait Font extends StObject {
     * *PT Sans Narrow*, *Raleway*, *Times New Roman*.
     * @default "Arial, sans-serif"
     */
-  var family: String = js.native
+  var family: String
   
   /**
     * number greater than or equal to 1
     * @default 13
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Font {
   

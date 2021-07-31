@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogButtonOptions
-  extends /* attr */ StringDictionary[js.Any] {
+  extends StObject
+     with /* attr */ StringDictionary[js.Any] {
   
-  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, _]] = js.native
+  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, js.Any]] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var showText: js.UndefOr[String | Boolean] = js.native
+  var showText: js.UndefOr[String | Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object DialogButtonOptions {
   
@@ -31,7 +30,7 @@ object DialogButtonOptions {
   implicit class DialogButtonOptionsMutableBuilder[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setClick(value: /* eventObject */ JQueryEventObject => _): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    def setClick(value: /* eventObject */ JQueryEventObject => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClickUndefined: Self = StObject.set(x, "click", js.undefined)

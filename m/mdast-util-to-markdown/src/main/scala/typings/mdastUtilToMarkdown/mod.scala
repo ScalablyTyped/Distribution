@@ -16,46 +16,93 @@ import typings.unist.mod.Node
 import typings.unist.mod.Parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mdast-util-to-markdown", JSImport.Namespace)
-  @js.native
-  def apply(node: Node): String = js.native
-  @JSImport("mdast-util-to-markdown", JSImport.Namespace)
-  @js.native
-  def apply(node: Node, options: Options): String = js.native
+  @scala.inline
+  def apply(node: Node): String = ^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(node: Node, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("mdast-util-to-markdown", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Context extends StObject {
     
-    def enter(`type`: String): js.Function0[Unit] = js.native
+    def enter(`type`: String): js.Function0[Unit]
     
-    def handle(node: Node, parent: js.UndefOr[scala.Nothing], context: Context, safeOptions: SafeOptions): String = js.native
-    def handle(node: Node, parent: Null, context: Context, safeOptions: SafeOptions): String = js.native
-    def handle(node: Node, parent: Parent, context: Context, safeOptions: SafeOptions): String = js.native
+    def handle(node: Node, parent: Null, context: Context, safeOptions: SafeOptions): String
+    def handle(node: Node, parent: Unit, context: Context, safeOptions: SafeOptions): String
+    def handle(node: Node, parent: Parent, context: Context, safeOptions: SafeOptions): String
     @JSName("handle")
-    var handle_Original: Handle = js.native
+    var handle_Original: Handle
     
-    var join: js.Array[Join] = js.native
+    var join: js.Array[Join]
     
-    var options: Options = js.native
+    var options: Options
     
-    var stack: js.Array[String] = js.native
+    var stack: js.Array[String]
     
-    var unsafePatterns: js.Array[Unsafe] = js.native
+    var unsafePatterns: js.Array[Unsafe]
+  }
+  object Context {
+    
+    @scala.inline
+    def apply(
+      enter: String => js.Function0[Unit],
+      handle: (/* node */ Node, /* parent */ js.UndefOr[Parent | Null], /* context */ Context, /* safeOptions */ SafeOptions) => String,
+      join: js.Array[Join],
+      options: Options,
+      stack: js.Array[String],
+      unsafePatterns: js.Array[Unsafe]
+    ): Context = {
+      val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), handle = js.Any.fromFunction4(handle), join = join.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], unsafePatterns = unsafePatterns.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Context]
+    }
+    
+    @scala.inline
+    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEnter(value: String => js.Function0[Unit]): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHandle(
+        value: (/* node */ Node, /* parent */ js.UndefOr[Parent | Null], /* context */ Context, /* safeOptions */ SafeOptions) => String
+      ): Self = StObject.set(x, "handle", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setJoin(value: js.Array[Join]): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJoinVarargs(value: Join*): Self = StObject.set(x, "join", js.Array(value :_*))
+      
+      @scala.inline
+      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      
+      @scala.inline
+      def setUnsafePatterns(value: js.Array[Unsafe]): Self = StObject.set(x, "unsafePatterns", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnsafePatternsVarargs(value: Unsafe*): Self = StObject.set(x, "unsafePatterns", js.Array(value :_*))
+    }
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var handlers: js.UndefOr[Handlers] = js.native
+    var handlers: js.UndefOr[Handlers] = js.undefined
     
-    var join: js.UndefOr[js.Array[Join]] = js.native
+    var join: js.UndefOr[js.Array[Join]] = js.undefined
     
-    var unsafe: js.UndefOr[js.Array[Unsafe]] = js.native
+    var unsafe: js.UndefOr[js.Array[Unsafe]] = js.undefined
   }
   object Extension {
     
@@ -105,8 +152,8 @@ object mod {
   @js.native
   trait Handler extends StObject {
     
-    def apply(node: Node, parent: js.UndefOr[scala.Nothing], context: Context, safeOptions: SafeOptions): String = js.native
     def apply(node: Node, parent: Null, context: Context, safeOptions: SafeOptions): String = js.native
+    def apply(node: Node, parent: Unit, context: Context, safeOptions: SafeOptions): String = js.native
     def apply(node: Node, parent: Parent, context: Context, safeOptions: SafeOptions): String = js.native
     
     var peek: js.UndefOr[Handle] = js.native
@@ -122,44 +169,43 @@ object mod {
     Boolean | Null | Unit
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var bullet: js.UndefOr[`-_` | Asterisk | Plussign] = js.native
+    var bullet: js.UndefOr[`-_` | Asterisk | Plussign] = js.undefined
     
-    var closeAtx: js.UndefOr[Boolean] = js.native
+    var closeAtx: js.UndefOr[Boolean] = js.undefined
     
-    var emphasis: js.UndefOr[_underscore | Asterisk] = js.native
+    var emphasis: js.UndefOr[_underscore | Asterisk] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[Extension]] = js.native
+    var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
     
-    var fence: js.UndefOr[Tilde | Graveaccent] = js.native
+    var fence: js.UndefOr[Tilde | Graveaccent] = js.undefined
     
-    var fences: js.UndefOr[Boolean] = js.native
+    var fences: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: js.UndefOr[Handlers] = js.native
+    var handlers: js.UndefOr[Handlers] = js.undefined
     
-    var incrementListMarker: js.UndefOr[Boolean] = js.native
+    var incrementListMarker: js.UndefOr[Boolean] = js.undefined
     
-    var join: js.UndefOr[js.Array[Join]] = js.native
+    var join: js.UndefOr[js.Array[Join]] = js.undefined
     
-    var listItemIndent: js.UndefOr[tab | one | mixed] = js.native
+    var listItemIndent: js.UndefOr[tab | one | mixed] = js.undefined
     
-    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.native
+    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.undefined
     
-    var rule: js.UndefOr[`-_` | _underscore | Asterisk] = js.native
+    var rule: js.UndefOr[`-_` | _underscore | Asterisk] = js.undefined
     
-    var ruleRepeat: js.UndefOr[Double] = js.native
+    var ruleRepeat: js.UndefOr[Double] = js.undefined
     
-    var ruleSpaces: js.UndefOr[Boolean] = js.native
+    var ruleSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var setext: js.UndefOr[Boolean] = js.native
+    var setext: js.UndefOr[Boolean] = js.undefined
     
-    var strong: js.UndefOr[_underscore | Asterisk] = js.native
+    var strong: js.UndefOr[_underscore | Asterisk] = js.undefined
     
-    var tightDefinitions: js.UndefOr[Boolean] = js.native
+    var tightDefinitions: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe: js.UndefOr[js.Array[Unsafe]] = js.native
+    var unsafe: js.UndefOr[js.Array[Unsafe]] = js.undefined
   }
   object Options {
     
@@ -291,12 +337,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SafeOptions extends StObject {
     
-    var after: String = js.native
+    var after: String
     
-    var before: String = js.native
+    var before: String
   }
   object SafeOptions {
     
@@ -317,20 +362,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Unsafe extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var atBreak: js.UndefOr[Boolean] = js.native
+    var atBreak: js.UndefOr[Boolean] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
     
-    var character: String = js.native
+    var character: String
     
-    var inConstruct: js.UndefOr[String | js.Array[String]] = js.native
+    var inConstruct: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var notInConstruct: js.UndefOr[String | js.Array[String]] = js.native
+    var notInConstruct: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Unsafe {
     

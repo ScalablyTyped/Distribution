@@ -2,28 +2,26 @@ package typings.semanticUiDimmer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ClassNameSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplActive extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var dimmable: js.UndefOr[String] = js.native
+  var dimmable: js.UndefOr[String] = js.undefined
   
-  var dimmed: js.UndefOr[String] = js.native
+  var dimmed: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var hide: js.UndefOr[String] = js.native
+  var hide: js.UndefOr[String] = js.undefined
   
-  var pageDimmer: js.UndefOr[String] = js.native
+  var pageDimmer: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[String] = js.native
+  var show: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplActive {
   

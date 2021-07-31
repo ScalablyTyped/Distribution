@@ -2,25 +2,23 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of leaderboard reset resources.
   */
-@js.native
 trait SchemaPlayerScoreResetAllResponse extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesManagement#playerScoreResetResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The leaderboard reset results.
     */
-  var results: js.UndefOr[js.Array[SchemaPlayerScoreResetResponse]] = js.native
+  var results: js.UndefOr[js.Array[SchemaPlayerScoreResetResponse]] = js.undefined
 }
 object SchemaPlayerScoreResetAllResponse {
   

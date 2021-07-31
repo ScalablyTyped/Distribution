@@ -2,17 +2,15 @@ package typings.ngI18next
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
   
   object i18next {
     
-    @js.native
     trait I18nextProvider extends StObject {
       
-      var options: js.Any = js.native
+      var options: js.Any
     }
     object I18nextProvider {
       

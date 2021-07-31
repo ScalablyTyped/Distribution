@@ -2,13 +2,11 @@ package typings.googleapis.cloudassetV1Mod.cloudassetV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Storage location.
   */
-@js.native
 trait SchemaGcsDestination extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGcsDestination extends StObject {
     * Metadata](https://cloud.google.com/storage/docs/viewing-editing-metadata)
     * for more information.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGcsDestination {
   

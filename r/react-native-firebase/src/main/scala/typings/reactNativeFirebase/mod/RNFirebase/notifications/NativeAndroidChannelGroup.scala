@@ -2,21 +2,19 @@ package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeAndroidChannelGroup extends StObject {
   
   // Android API >= 28
-  var channels: Unit | js.Array[NativeAndroidChannel] = js.native
+  var channels: Unit | js.Array[NativeAndroidChannel]
   
   // Android API >= 28
-  var description: String | Unit = js.native
+  var description: String | Unit
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var name: String = js.native
+  var name: String
 }
 object NativeAndroidChannelGroup {
   

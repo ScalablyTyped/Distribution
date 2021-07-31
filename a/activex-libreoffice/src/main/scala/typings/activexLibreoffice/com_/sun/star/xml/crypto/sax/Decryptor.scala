@@ -5,13 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link Decryptor} */
-@js.native
 trait Decryptor
-  extends XReferenceResolvedListener
+  extends StObject
+     with XReferenceResolvedListener
      with XBlockerMonitor
      with XDecryptionResultBroadcaster
      with XKeyCollector
@@ -24,7 +23,7 @@ object Decryptor {
     acquire: () => Unit,
     addDecryptionResultListener: XDecryptionResultListener => Unit,
     endMission: () => Boolean,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     referenceResolved: Double => Unit,
     release: () => Unit,

@@ -2,15 +2,13 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreferredQuoteMarkOptions extends StObject {
   
-  var preferCurrentQuoteMark: js.UndefOr[Boolean] = js.native
+  var preferCurrentQuoteMark: js.UndefOr[Boolean] = js.undefined
   
-  var quoteMark: js.UndefOr[QuoteMark] = js.native
+  var quoteMark: js.UndefOr[QuoteMark] = js.undefined
 }
 object PreferredQuoteMarkOptions {
   

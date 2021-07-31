@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPUUsage extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/cpu-usage
@@ -13,12 +11,12 @@ trait CPUUsage extends StObject {
     * The number of average idle CPU wakeups per second since the last call to
     * getCPUUsage. First call returns 0. Will always return 0 on Windows.
     */
-  var idleWakeupsPerSecond: Double = js.native
+  var idleWakeupsPerSecond: Double
   
   /**
     * Percentage of CPU used since the last call to getCPUUsage. First call returns 0.
     */
-  var percentCPUUsage: Double = js.native
+  var percentCPUUsage: Double
 }
 object CPUUsage {
   

@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangOptions extends StObject {
   
   /**
@@ -19,116 +17,116 @@ trait LangOptions extends StObject {
     * accessibility.seriesDescriptionFormatter, and
     * accessibility.screenReaderSectionFormatter.
     */
-  var accessibility: js.UndefOr[LangAccessibilityOptions] = js.native
+  var accessibility: js.UndefOr[LangAccessibilityOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module menu. The
     * tooltip title for the context menu holding print and export menu items.
     */
-  var contextButtonTitle: js.UndefOr[String] = js.native
+  var contextButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default decimal point used
     * in the `Highcharts.numberFormat` method unless otherwise specified in the
     * function arguments.
     */
-  var decimalPoint: js.UndefOr[String] = js.native
+  var decimalPoint: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
-  var downloadCSV: js.UndefOr[String] = js.native
+  var downloadCSV: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the JPEG download menu item.
     */
-  var downloadJPEG: js.UndefOr[String] = js.native
+  var downloadJPEG: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the PDF download menu item.
     */
-  var downloadPDF: js.UndefOr[String] = js.native
+  var downloadPDF: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the PNG download menu item.
     */
-  var downloadPNG: js.UndefOr[String] = js.native
+  var downloadPNG: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the SVG download menu item.
     */
-  var downloadSVG: js.UndefOr[String] = js.native
+  var downloadSVG: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
-  var downloadXLS: js.UndefOr[String] = js.native
+  var downloadXLS: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The text for the button that appears when drilling
     * down, linking back to the parent series. The parent series' name is
     * inserted for `{series.name}`.
     */
-  var drillUpText: js.UndefOr[String] = js.native
+  var drillUpText: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the menu item to exit the chart from full screen.
     */
-  var exitFullscreen: js.UndefOr[String] = js.native
+  var exitFullscreen: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for exported table.
     */
-  var exportData: js.UndefOr[LangExportDataOptions] = js.native
+  var exportData: js.UndefOr[LangExportDataOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
-  var hideData: js.UndefOr[String] = js.native
+  var hideData: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) What to show in a date field for invalid dates.
     * Defaults to an empty string.
     */
-  var invalidDate: js.UndefOr[String] = js.native
+  var invalidDate: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The loading text that appears
     * when the chart is set into the loading state following a call to
     * `chart.showLoading`.
     */
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the months
     * names. Corresponds to the `%B` format in `Highcharts.dateFormat()`.
     */
-  var months: js.UndefOr[js.Array[String]] = js.native
+  var months: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock) Configure the Popup strings in the chart.
     * Requires the `annotations.js` or `annotations-advanced.src.js` module to
     * be loaded.
     */
-  var navigation: js.UndefOr[LangNavigationOptions] = js.native
+  var navigation: js.UndefOr[LangNavigationOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The text to display when the chart contains no
     * data.
     */
-  var noData: js.UndefOr[String] = js.native
+  var noData: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The magnitude of numericSymbols
     * replacements. Use 10000 for Japanese, Korean and various Chinese locales,
     * which use symbols for 10^4, 10^8 and 10^12.
     */
-  var numericSymbolMagnitude: js.UndefOr[Double] = js.native
+  var numericSymbolMagnitude: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Metric prefixes used to shorten
@@ -136,62 +134,62 @@ trait LangOptions extends StObject {
     * causes the full number to be written. Setting `numericSymbols` to `null`
     * disables shortening altogether.
     */
-  var numericSymbols: js.UndefOr[js.Array[String]] = js.native
+  var numericSymbols: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the menu item to print the chart.
     */
-  var printChart: js.UndefOr[String] = js.native
+  var printChart: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The text for the label for the "from" input box in the
     * range selector.
     */
-  var rangeSelectorFrom: js.UndefOr[String] = js.native
+  var rangeSelectorFrom: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The text for the label for the "to" input box in the
     * range selector.
     */
-  var rangeSelectorTo: js.UndefOr[String] = js.native
+  var rangeSelectorTo: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The text for the label for the range selector buttons.
     */
-  var rangeSelectorZoom: js.UndefOr[String] = js.native
+  var rangeSelectorZoom: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the label appearing
     * when a chart is zoomed.
     */
-  var resetZoom: js.UndefOr[String] = js.native
+  var resetZoom: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The tooltip title for the label
     * appearing when a chart is zoomed.
     */
-  var resetZoomTitle: js.UndefOr[String] = js.native
+  var resetZoomTitle: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the months
     * names in abbreviated form. Corresponds to the `%b` format in
     * `Highcharts.dateFormat()`.
     */
-  var shortMonths: js.UndefOr[js.Array[String]] = js.native
+  var shortMonths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Short week days, starting
     * Sunday. If not specified, Highcharts uses the first three letters of the
     * `lang.weekdays` option.
     */
-  var shortWeekdays: js.UndefOr[js.Array[String]] = js.native
+  var shortWeekdays: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highstock) Configure the stockTools GUI titles(hints) in the chart.
     * Requires the `stock-tools.js` module to be loaded.
     */
-  var stockTools: js.UndefOr[LangStockToolsOptions] = js.native
+  var stockTools: js.UndefOr[LangStockToolsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default thousands separator
@@ -200,36 +198,36 @@ trait LangOptions extends StObject {
     * recommended in ISO 31-0 and works across Anglo-American and continental
     * European languages.
     */
-  var thousandsSep: js.UndefOr[String] = js.native
+  var thousandsSep: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
-  var viewData: js.UndefOr[String] = js.native
+  var viewData: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the menu item to view the chart in full screen.
     */
-  var viewFullscreen: js.UndefOr[String] = js.native
+  var viewFullscreen: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the weekday
     * names.
     */
-  var weekdays: js.UndefOr[js.Array[String]] = js.native
+  var weekdays: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highmaps) The title appearing on hovering the zoom in button. The text
     * itself defaults to "+" and can be changed in the button options.
     */
-  var zoomIn: js.UndefOr[String] = js.native
+  var zoomIn: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) The title appearing on hovering the zoom out button. The text
     * itself defaults to "-" and can be changed in the button options.
     */
-  var zoomOut: js.UndefOr[String] = js.native
+  var zoomOut: js.UndefOr[String] = js.undefined
 }
 object LangOptions {
   

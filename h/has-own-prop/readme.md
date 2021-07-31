@@ -11,8 +11,8 @@ A safer `.hasOwnProperty()`
 | Full name          | has-own-prop |
 | Keywords           | object, has, own, property |
 | # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 1363750 |
+| # dependents       | 29 |
+| # downloads        | 3499792 |
 | # stars            | 1 |
 
 ## Links

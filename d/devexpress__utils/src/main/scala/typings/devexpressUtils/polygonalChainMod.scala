@@ -8,7 +8,6 @@ import typings.devexpressUtils.segmentMod.Segment
 import typings.devexpressUtils.vectorMod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polygonalChainMod {
@@ -29,8 +28,8 @@ object polygonalChainMod {
     def projection(axis: Vector): ExtendedMinMax[T] = js.native
     
     def rotateAround(point: IPoint, angle: Double): this.type = js.native
-    def rotateAround(point: IPoint, angle: Double, rightSC: js.UndefOr[scala.Nothing], byClockwise: Boolean): this.type = js.native
     def rotateAround(point: IPoint, angle: Double, rightSC: Boolean): this.type = js.native
     def rotateAround(point: IPoint, angle: Double, rightSC: Boolean, byClockwise: Boolean): this.type = js.native
+    def rotateAround(point: IPoint, angle: Double, rightSC: Unit, byClockwise: Boolean): this.type = js.native
   }
 }

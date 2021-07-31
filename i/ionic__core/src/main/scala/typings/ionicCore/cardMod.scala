@@ -4,11 +4,13 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
+import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.reset
+import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
@@ -16,7 +18,8 @@ object cardMod {
   @JSImport("@ionic/core/dist/types/components/card/card", "Card")
   @js.native
   class Card ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with AnchorInterface
        with ButtonInterface {
     
@@ -31,6 +34,9 @@ object cardMod {
       * For more information on colors, see [theming](/docs/theming/basics).
       */
     var color: js.UndefOr[Color] = js.native
+    
+    /* CompleteClass */
+    var disabled: Boolean = js.native
     
     var isClickable: js.Any = js.native
     
@@ -50,5 +56,8 @@ object cardMod {
       * another page using `href`.
       */
     var routerDirection: RouterDirection = js.native
+    
+    /* CompleteClass */
+    var `type`: submit | reset | button = js.native
   }
 }

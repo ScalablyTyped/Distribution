@@ -5,23 +5,21 @@ import typings.powerAssert.mod.Options
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actual extends StObject {
     
-    var actual: js.UndefOr[js.Any] = js.native
+    var actual: js.UndefOr[js.Any] = js.undefined
     
-    var expected: js.UndefOr[js.Any] = js.native
+    var expected: js.UndefOr[js.Any] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var stackStartFunction: js.UndefOr[js.Function] = js.native
+    var stackStartFunction: js.UndefOr[js.Function] = js.undefined
   }
   object Actual {
     
@@ -110,41 +108,21 @@ object anon {
     def equal(actual: js.Any, expected: js.Any, message: String): Unit = js.native
     
     def fail(): scala.Nothing = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      message: js.UndefOr[scala.Nothing],
-      operator: String
-    ): scala.Nothing = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], message: String): scala.Nothing = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      message: String,
-      operator: String
-    ): scala.Nothing = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any): scala.Nothing = js.native
-    def fail(
-      actual: js.UndefOr[scala.Nothing],
-      expected: js.Any,
-      message: js.UndefOr[scala.Nothing],
-      operator: String
-    ): scala.Nothing = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String): scala.Nothing = js.native
-    def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String, operator: String): scala.Nothing = js.native
     def fail(actual: js.Any): scala.Nothing = js.native
-    def fail(
-      actual: js.Any,
-      expected: js.UndefOr[scala.Nothing],
-      message: js.UndefOr[scala.Nothing],
-      operator: String
-    ): scala.Nothing = js.native
-    def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String): scala.Nothing = js.native
-    def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String, operator: String): scala.Nothing = js.native
     def fail(actual: js.Any, expected: js.Any): scala.Nothing = js.native
-    def fail(actual: js.Any, expected: js.Any, message: js.UndefOr[scala.Nothing], operator: String): scala.Nothing = js.native
     def fail(actual: js.Any, expected: js.Any, message: String): scala.Nothing = js.native
     def fail(actual: js.Any, expected: js.Any, message: String, operator: String): scala.Nothing = js.native
+    def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): scala.Nothing = js.native
+    def fail(actual: js.Any, expected: Unit, message: String): scala.Nothing = js.native
+    def fail(actual: js.Any, expected: Unit, message: String, operator: String): scala.Nothing = js.native
+    def fail(actual: js.Any, expected: Unit, message: Unit, operator: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: js.Any): scala.Nothing = js.native
+    def fail(actual: Unit, expected: js.Any, message: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: js.Any, message: String, operator: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: js.Any, message: Unit, operator: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: Unit, message: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: Unit, message: String, operator: String): scala.Nothing = js.native
+    def fail(actual: Unit, expected: Unit, message: Unit, operator: String): scala.Nothing = js.native
     
     def ifError(value: js.Any): Unit = js.native
     

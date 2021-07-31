@@ -3,33 +3,31 @@ package typings.awsSdkClientXrayNode
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServiceIdMod {
   
-  @js.native
   trait ServiceId extends StObject {
     
     /**
       * <p/>
       */
-    var AccountId: js.UndefOr[String] = js.native
+    var AccountId: js.UndefOr[String] = js.undefined
     
     /**
       * <p/>
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * <p/>
       */
-    var Names: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Names: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p/>
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object ServiceId {
     
@@ -71,14 +69,15 @@ object typesServiceIdMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledServiceId extends ServiceId {
+  trait UnmarshalledServiceId
+    extends StObject
+       with ServiceId {
     
     /**
       * <p/>
       */
     @JSName("Names")
-    var Names_UnmarshalledServiceId: js.UndefOr[js.Array[String]] = js.native
+    var Names_UnmarshalledServiceId: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledServiceId {
     

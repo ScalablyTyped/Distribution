@@ -4,16 +4,15 @@ import typings.webidl2.webidl2Booleans.`true`
 import typings.webidl2.webidl2Strings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnionTypeDescription
-  extends AbstractTypeDescription
+  extends StObject
+     with AbstractTypeDescription
      with IDLTypeDescription {
   
   /** String indicating the generic type (e.g. "Promise", "sequence"). The empty string otherwise. */
-  var generic: _empty = js.native
+  var generic: _empty
   
   /**
     * In most cases, this will just be a string with the type name.
@@ -21,23 +20,22 @@ trait UnionTypeDescription
     * If it is a generic type, it contains the IDL type description for the type in the sequence,
     * the eventual value of the promise, etc.
     */
-  var idlType: js.Array[IDLTypeDescription] = js.native
+  var idlType: js.Array[IDLTypeDescription]
   
   /** Boolean indicating whether this is a union type or not. */
-  var union: `true` = js.native
+  var union: `true`
 }
 object UnionTypeDescription {
   
   @scala.inline
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
-    generic: _empty,
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `true`
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
   ): UnionTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = "", idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = true)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[UnionTypeDescription]
   }
   

@@ -3,15 +3,13 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.OutlookBarGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToGroup extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val ToGroup: OutlookBarGroup = js.native
+  val ToGroup: OutlookBarGroup
 }
 object ToGroup {
   

@@ -2,7 +2,6 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the type of threat posed, the type of platform targeted by the threat, and
   * the type of entries in the list.
   */
-@js.native
 trait SchemaThreatListDescriptor extends StObject {
   
   /**
     * The platform type targeted by the list&#39;s entries.
     */
-  var platformType: js.UndefOr[String] = js.native
+  var platformType: js.UndefOr[String] = js.undefined
   
   /**
     * The entry types contained in the list.
     */
-  var threatEntryType: js.UndefOr[String] = js.native
+  var threatEntryType: js.UndefOr[String] = js.undefined
   
   /**
     * The threat type posed by the list&#39;s entries.
     */
-  var threatType: js.UndefOr[String] = js.native
+  var threatType: js.UndefOr[String] = js.undefined
 }
 object SchemaThreatListDescriptor {
   

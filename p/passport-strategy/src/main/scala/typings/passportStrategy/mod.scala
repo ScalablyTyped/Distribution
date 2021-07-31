@@ -3,7 +3,6 @@ package typings.passportStrategy
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,7 +10,8 @@ object mod {
   @JSImport("passport-strategy", "Strategy")
   @js.native
   class Strategy ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     
     /**
       * Internal error while performing authentication.

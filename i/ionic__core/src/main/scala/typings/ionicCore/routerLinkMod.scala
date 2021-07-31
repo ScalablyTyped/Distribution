@@ -6,14 +6,15 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerLinkMod {
   
   @JSImport("@ionic/core/dist/types/components/router-link/router-link", "RouterLink")
   @js.native
-  class RouterLink () extends ComponentInterface {
+  class RouterLink ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

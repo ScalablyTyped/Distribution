@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.wms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WMSLayer
-  extends Layer
+  extends StObject
+     with Layer
      with BlendLayer
      with PortalLayer
      with ScaleRangeLayer
@@ -68,8 +68,8 @@ trait WMSLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[_] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): js.Promise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[js.Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): js.Promise[js.Any] = js.native
   
   /**
     * Returns a [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html) based on the given sublayer id.

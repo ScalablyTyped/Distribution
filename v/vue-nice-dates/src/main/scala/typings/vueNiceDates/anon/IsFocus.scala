@@ -2,15 +2,13 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFocus extends StObject {
   
-  def date(newValue: typings.std.Date): Unit = js.native
+  def date(newValue: typings.std.Date): Unit
   
-  def isFocus(newValue: Boolean): Unit = js.native
+  def isFocus(newValue: Boolean): Unit
 }
 object IsFocus {
   

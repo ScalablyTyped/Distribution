@@ -2,15 +2,13 @@ package typings.retryAsPromised
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
   }
   object Current {
     

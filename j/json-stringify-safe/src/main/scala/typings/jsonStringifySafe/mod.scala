@@ -2,94 +2,63 @@ package typings.jsonStringifySafe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(
-    obj: js.Any,
-    serializer: js.UndefOr[scala.Nothing],
-    indent: js.UndefOr[scala.Nothing],
-    decycler: EntryProcessor
-  ): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: String): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: String, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Double): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Double, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Null, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: js.UndefOr[scala.Nothing], decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: String): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: String, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: Double): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: Double, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: Null, indent: Null, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(
-    obj: js.Any,
-    serializer: EntryProcessor,
-    indent: js.UndefOr[scala.Nothing],
-    decycler: EntryProcessor
-  ): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor, indent: String): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor, indent: String, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor, indent: Double): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor, indent: Double, decycler: EntryProcessor): String = js.native
-  @JSImport("json-stringify-safe", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, serializer: EntryProcessor, indent: Null, decycler: EntryProcessor): String = js.native
+  @scala.inline
+  def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: String): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: String, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: Double): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: Double, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: Null, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Null, indent: Unit, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: String): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: String, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: Double): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: Double, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: Null, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: Unit, indent: Unit, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: String): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: String, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: Double): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: Double, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: Null, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: Unit, decycler: EntryProcessor): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("json-stringify-safe", "getSerialize")
+  @JSImport("json-stringify-safe", JSImport.Namespace)
   @js.native
-  def getSerialize(): EntryProcessor = js.native
-  @JSImport("json-stringify-safe", "getSerialize")
-  @js.native
-  def getSerialize(serializer: Null, decycler: EntryProcessor): EntryProcessor = js.native
-  @JSImport("json-stringify-safe", "getSerialize")
-  @js.native
-  def getSerialize(serializer: EntryProcessor): EntryProcessor = js.native
-  @JSImport("json-stringify-safe", "getSerialize")
-  @js.native
-  def getSerialize(serializer: EntryProcessor, decycler: EntryProcessor): EntryProcessor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSerialize(): EntryProcessor = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerialize")().asInstanceOf[EntryProcessor]
+  @scala.inline
+  def getSerialize(serializer: Null, decycler: EntryProcessor): EntryProcessor = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerialize")(serializer.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[EntryProcessor]
+  @scala.inline
+  def getSerialize(serializer: EntryProcessor): EntryProcessor = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerialize")(serializer.asInstanceOf[js.Any]).asInstanceOf[EntryProcessor]
+  @scala.inline
+  def getSerialize(serializer: EntryProcessor, decycler: EntryProcessor): EntryProcessor = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerialize")(serializer.asInstanceOf[js.Any], decycler.asInstanceOf[js.Any])).asInstanceOf[EntryProcessor]
   
   type EntryProcessor = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
 }

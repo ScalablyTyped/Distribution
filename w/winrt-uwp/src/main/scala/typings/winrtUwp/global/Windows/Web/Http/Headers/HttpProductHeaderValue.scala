@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.Web.Http.Headers
 import typings.winrtUwp.anon.ProductHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents product information used by the HttpProductHeaderValue and HttpProductInfoHeaderValueCollection classes in the User-Agent HTTP header. */
 @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
 @js.native
 class HttpProductHeaderValue protected ()
-  extends typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue {
+  extends StObject
+     with typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue {
   /**
     * Initializes a new instance of the HttpProductHeaderValue class with a product name.
     * @param productName The name of the product token used in the User-Agent HTTP header.
@@ -22,8 +22,20 @@ class HttpProductHeaderValue protected ()
     * @param productVersion The version of the product token used in the User-Agent HTTP header.
     */
   def this(productName: String, productVersion: String) = this()
+  
+  /** Gets a token that represents the name of the product to be used in the User-Agent HTTP header. */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /** Gets a token that represents the version of the product to be used in the User-Agent HTTP header. */
+  /* CompleteClass */
+  var version: String = js.native
 }
 object HttpProductHeaderValue {
+  
+  @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts a string to an HttpProductHeaderValue instance.
@@ -31,16 +43,14 @@ object HttpProductHeaderValue {
     * @return An HttpProductHeaderValue instance.
     */
   /* static member */
-  @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue.parse")
-  @js.native
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue = js.native
+  @scala.inline
+  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue]
   
   /**
     * Determines whether a string is valid HttpProductHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue.tryParse")
-  @js.native
-  def tryParse(input: String): ProductHeaderValue = js.native
+  @scala.inline
+  def tryParse(input: String): ProductHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ProductHeaderValue]
 }

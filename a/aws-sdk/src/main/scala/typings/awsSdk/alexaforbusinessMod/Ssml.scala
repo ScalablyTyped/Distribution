@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ssml extends StObject {
   
   /**
     * The locale of the SSML message. Currently, en-US is supported.
     */
-  var Locale: typings.awsSdk.alexaforbusinessMod.Locale = js.native
+  var Locale: typings.awsSdk.alexaforbusinessMod.Locale
   
   /**
     * The value of the SSML message in the correct SSML format. The audio tag is not supported.
     */
-  var Value: SsmlValue = js.native
+  var Value: SsmlValue
 }
 object Ssml {
   

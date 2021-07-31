@@ -37,14 +37,15 @@ import typings.std.MediaStream
 import typings.std.MediaStreamTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("recordrtc", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RecordRTC {
+  class ^ protected ()
+    extends StObject
+       with RecordRTC {
     def this(stream: HTMLCanvasElement) = this()
     def this(stream: HTMLElement) = this()
     def this(stream: HTMLVideoElement) = this()
@@ -97,18 +98,15 @@ object mod {
   
   /** Given a number of bytes, this returns a human-readable string, e.g. 1.23 MB */
   /* static member */
-  @JSImport("recordrtc", "bytesToSize")
-  @js.native
-  def bytesToSize(size: Double): String = js.native
+  @scala.inline
+  def bytesToSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** invokes the browser's Save-As dialog */
   /* static member */
-  @JSImport("recordrtc", "invokeSaveAsDialog")
-  @js.native
-  def invokeSaveAsDialog(file: Blob, fileName: String): Unit = js.native
-  @JSImport("recordrtc", "invokeSaveAsDialog")
-  @js.native
-  def invokeSaveAsDialog(file: File, fileName: String): Unit = js.native
+  @scala.inline
+  def invokeSaveAsDialog(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def invokeSaveAsDialog(file: File, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //
   // static helpers
@@ -121,14 +119,13 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Disk extends StObject {
     
-    var audio: js.UndefOr[Blob] = js.native
+    var audio: js.UndefOr[Blob] = js.undefined
     
-    var gif: js.UndefOr[Blob] = js.native
+    var gif: js.UndefOr[Blob] = js.undefined
     
-    var video: js.UndefOr[Blob] = js.native
+    var video: js.UndefOr[Blob] = js.undefined
   }
   object Disk {
     
@@ -179,74 +176,73 @@ object mod {
     def videoinput: typings.recordrtc.recordrtcStrings.videoinput = "videoinput".asInstanceOf[typings.recordrtc.recordrtcStrings.videoinput]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** only for audio track */
-    var audioBitsPerSecond: js.UndefOr[Double] = js.native
+    var audioBitsPerSecond: js.UndefOr[Double] = js.undefined
     
     /** used by WebAssemblyRecorder */
-    var bitrate: js.UndefOr[Double] = js.native
+    var bitrate: js.UndefOr[Double] = js.undefined
     
     /** both for audio and video tracks */
-    var bitsPerSecond: js.UndefOr[Double] = js.native
+    var bitsPerSecond: js.UndefOr[Double] = js.undefined
     
     /** used by StereoAudioRecorder */
-    var bufferSize: js.UndefOr[`256` | `512` | `1024` | `2048` | `4096` | `8192` | `16384`] = js.native
+    var bufferSize: js.UndefOr[`256` | `512` | `1024` | `2048` | `4096` | `8192` | `16384`] = js.undefined
     
     /** used by CanvasRecorder and WhammyRecorder */
-    var canvas: js.UndefOr[Height] = js.native
+    var canvas: js.UndefOr[Height] = js.undefined
     
     /** auto stop recording if camera stops */
-    var checkForInactiveTracks: js.UndefOr[Boolean] = js.native
+    var checkForInactiveTracks: js.UndefOr[Boolean] = js.undefined
     
     /** used by StereoAudioRecorder. the range is 22050 to 96000 (kHz). */
-    var desiredSampRate: js.UndefOr[Double] = js.native
+    var desiredSampRate: js.UndefOr[Double] = js.undefined
     
-    var disableLogs: js.UndefOr[Boolean] = js.native
+    var disableLogs: js.UndefOr[Boolean] = js.undefined
     
     /** used by MultiStreamRecorder - to access HTMLCanvasElement */
-    var elementClass: js.UndefOr[String] = js.native
+    var elementClass: js.UndefOr[String] = js.undefined
     
     /** used by CanvasRecorder and WhammyRecorder, it is kind of a "frameRate" */
-    var frameInterval: js.UndefOr[Double] = js.native
+    var frameInterval: js.UndefOr[Double] = js.undefined
     
     /** used by WebAssemblyRecorder */
-    var frameRate: js.UndefOr[Double] = js.native
+    var frameRate: js.UndefOr[Double] = js.undefined
     
     var mimeType: js.UndefOr[
         audioSlashwebm | audioSlashwebmSemicoloncodecsEqualssignpcm | videoSlashmp4 | videoSlashwebm | videoSlashwebmSemicoloncodecsEqualssignvp9 | videoSlashwebmSemicoloncodecsEqualssignvp8 | videoSlashwebmSemicoloncodecsEqualssignh264 | `videoSlashx-matroskaSemicoloncodecsEqualssignavc1` | videoSlashmpeg | audioSlashwav | audioSlashogg
-      ] = js.native
+      ] = js.undefined
     
     /** used by StereoAudioRecorder */
-    var numberOfAudioChannels: js.UndefOr[`1` | `2`] = js.native
+    var numberOfAudioChannels: js.UndefOr[`1` | `2`] = js.undefined
     
     /** requires timeSlice above */
-    var onTimeStamp: js.UndefOr[js.Function2[/* timestamp */ Double, /* timestamps */ js.Array[Double], Unit]] = js.native
+    var onTimeStamp: js.UndefOr[js.Function2[/* timestamp */ Double, /* timestamps */ js.Array[Double], Unit]] = js.undefined
     
     /** requires `timeSlice` to be set */
-    var ondataavailable: js.UndefOr[js.Function1[/* blob */ Blob, Unit]] = js.native
+    var ondataavailable: js.UndefOr[js.Function1[/* blob */ Blob, Unit]] = js.undefined
     
     /** if you are recording multiple streams into single file, this helps you see what is being recorded */
-    var previewStream: js.UndefOr[js.Function1[/* stream */ MediaStream, Unit]] = js.native
+    var previewStream: js.UndefOr[js.Function1[/* stream */ MediaStream, Unit]] = js.undefined
     
     var recorderType: js.UndefOr[
         MediaStreamRecorder | StereoAudioRecorder | WebAssemblyRecorder | CanvasRecorder | GifRecorder | WhammyRecorder
-      ] = js.native
+      ] = js.undefined
     
     /** used by StereoAudioRecorder, the range is 22050 to 96000 (kHz). */
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
     /** get intervals based blobs value in milliseconds */
-    var timeSlice: js.UndefOr[Double] = js.native
+    var timeSlice: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[video | audio | canvas | gif] = js.native
+    var `type`: js.UndefOr[video | audio | canvas | gif] = js.undefined
     
     /** used by CanvasRecorder and WhammyRecorder */
-    var video: js.UndefOr[HTMLVideoElement] = js.native
+    var video: js.UndefOr[HTMLVideoElement] = js.undefined
     
     /** only for video track */
-    var videoBitsPerSecond: js.UndefOr[Double] = js.native
+    var videoBitsPerSecond: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

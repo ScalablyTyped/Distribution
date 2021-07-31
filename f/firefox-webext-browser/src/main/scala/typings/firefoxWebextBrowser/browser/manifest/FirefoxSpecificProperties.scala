@@ -2,19 +2,17 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirefoxSpecificProperties extends StObject {
   
-  var id: js.UndefOr[ExtensionID] = js.native
+  var id: js.UndefOr[ExtensionID] = js.undefined
   
-  var strict_max_version: js.UndefOr[String] = js.native
+  var strict_max_version: js.UndefOr[String] = js.undefined
   
-  var strict_min_version: js.UndefOr[String] = js.native
+  var strict_min_version: js.UndefOr[String] = js.undefined
   
-  var update_url: js.UndefOr[String] = js.native
+  var update_url: js.UndefOr[String] = js.undefined
 }
 object FirefoxSpecificProperties {
   

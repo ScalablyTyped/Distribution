@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2Command extends StObject {
   
   /**
     * The arguments to the command. The first argument must be the path to the executable, which must be either a relative path, in which case it is evaluated with respect to the input
     * root, or an absolute path.
     */
-  var arguments: js.UndefOr[js.Array[String]] = js.native
+  var arguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The environment variables to set when running the program. The worker may provide its own default environment variables; these defaults can be overridden using this field.
     * Additional variables can also be specified. In order to ensure that equivalent Commands always hash to the same value, the environment variables MUST be lexicographically sorted by
     * name. Sorting of strings is done by code point, equivalently, by the UTF-8 bytes.
     */
-  var environmentVariables: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]] = js.native
+  var environmentVariables: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]] = js.undefined
   
   /**
     * A list of the output directories that the client expects to retrieve from the action. Only the listed directories will be returned (an entire directory structure will be returned as
@@ -31,7 +29,7 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
     * output directory is allowed to be a parent of another output directory. Directories leading up to the output directories (but not the output directories themselves) are created by
     * the worker prior to execution, even if they are not explicitly part of the input root. DEPRECATED since 2.1: Use `output_paths` instead.
     */
-  var outputDirectories: js.UndefOr[js.Array[String]] = js.native
+  var outputDirectories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of the output files that the client expects to retrieve from the action. Only the listed files, as well as directories listed in `output_directories`, will be returned to the
@@ -42,7 +40,7 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
     * leading up to the output files are created by the worker prior to execution, even if they are not explicitly part of the input root. DEPRECATED since v2.1: Use `output_paths`
     * instead.
     */
-  var outputFiles: js.UndefOr[js.Array[String]] = js.native
+  var outputFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of the output paths that the client expects to retrieve from the action. Only the listed paths will be returned to the client as output. The type of the output (file or
@@ -54,19 +52,19 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
     * the output paths are created by the worker prior to execution, even if they are not explicitly part of the input root. New in v2.1: this field supersedes the DEPRECATED
     * `output_files` and `output_directories` fields. If `output_paths` is used, `output_files` and `output_directories` will be ignored!
     */
-  var outputPaths: js.UndefOr[js.Array[String]] = js.native
+  var outputPaths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The platform requirements for the execution environment. The server MAY choose to execute the action on any worker satisfying the requirements, so the client SHOULD ensure that
     * running the action on any such worker will have the same result. A detailed lexicon for this can be found in the accompanying platform.md.
     */
-  var platform: js.UndefOr[BuildBazelRemoteExecutionV2Platform] = js.native
+  var platform: js.UndefOr[BuildBazelRemoteExecutionV2Platform] = js.undefined
   
   /**
     * The working directory, relative to the input root, for the command to run in. It must be a directory which exists in the input tree. If it is left empty, then the action is run in
     * the input root.
     */
-  var workingDirectory: js.UndefOr[String] = js.native
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2Command {
   

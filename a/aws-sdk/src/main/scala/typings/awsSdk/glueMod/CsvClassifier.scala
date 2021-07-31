@@ -2,61 +2,59 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsvClassifier extends StObject {
   
   /**
     * Enables the processing of files that contain only one column.
     */
-  var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.native
+  var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Indicates whether the CSV file contains a header.
     */
-  var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.native
+  var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
   
   /**
     * The time that this classifier was registered.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A custom symbol to denote what separates each column entry in the row.
     */
-  var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.native
+  var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
   
   /**
     * Specifies not to trim values before identifying the type of column values. The default value is true.
     */
-  var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.native
+  var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * A list of strings representing column names.
     */
-  var Header: js.UndefOr[CsvHeader] = js.native
+  var Header: js.UndefOr[CsvHeader] = js.undefined
   
   /**
     * The time that this classifier was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.native
+  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the classifier.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     */
-  var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.native
+  var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
   
   /**
     * The version of this classifier.
     */
-  var Version: js.UndefOr[VersionId] = js.native
+  var Version: js.UndefOr[VersionId] = js.undefined
 }
 object CsvClassifier {
   

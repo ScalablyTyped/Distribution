@@ -2,31 +2,29 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildProcessTemplate extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var fileExists: Boolean = js.native
+  var fileExists: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var parameters: String = js.native
+  var parameters: String
   
-  var serverPath: String = js.native
+  var serverPath: String
   
-  var supportedReasons: BuildReason = js.native
+  var supportedReasons: BuildReason
   
-  var teamProject: String = js.native
+  var teamProject: String
   
-  var templateType: ProcessTemplateType = js.native
+  var templateType: ProcessTemplateType
   
-  var url: String = js.native
+  var url: String
   
-  var version: String = js.native
+  var version: String
 }
 object BuildProcessTemplate {
   

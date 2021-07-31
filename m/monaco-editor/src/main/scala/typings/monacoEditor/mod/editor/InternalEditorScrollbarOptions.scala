@@ -2,35 +2,33 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalEditorScrollbarOptions extends StObject {
   
-  val alwaysConsumeMouseWheel: Boolean = js.native
+  val alwaysConsumeMouseWheel: Boolean
   
-  val arrowSize: Double = js.native
+  val arrowSize: Double
   
-  val handleMouseWheel: Boolean = js.native
+  val handleMouseWheel: Boolean
   
-  val horizontal: ScrollbarVisibility = js.native
+  val horizontal: ScrollbarVisibility
   
-  val horizontalHasArrows: Boolean = js.native
+  val horizontalHasArrows: Boolean
   
-  val horizontalScrollbarSize: Double = js.native
+  val horizontalScrollbarSize: Double
   
-  val horizontalSliderSize: Double = js.native
+  val horizontalSliderSize: Double
   
-  val useShadows: Boolean = js.native
+  val useShadows: Boolean
   
-  val vertical: ScrollbarVisibility = js.native
+  val vertical: ScrollbarVisibility
   
-  val verticalHasArrows: Boolean = js.native
+  val verticalHasArrows: Boolean
   
-  val verticalScrollbarSize: Double = js.native
+  val verticalScrollbarSize: Double
   
-  val verticalSliderSize: Double = js.native
+  val verticalSliderSize: Double
 }
 object InternalEditorScrollbarOptions {
   

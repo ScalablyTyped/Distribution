@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,14 +27,14 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
-  def checkFixingAllowed(columns: js.Array[_]): Boolean = js.native
+  def checkFixingAllowed(columns: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks whether unfixing is allowed for the specified columns. It should not be allowed if there is only one visible column in the fixed area.
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
-  def checkUnfixingAllowed(columns: js.Array[_]): Boolean = js.native
+  def checkUnfixingAllowed(columns: js.Array[js.Any]): Boolean = js.native
   
   def destroy(): Unit = js.native
   
@@ -47,9 +46,9 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param after Specifies where the fixed column should be moved after or before the target column. This parameter is disregarded if there is no target column specified.
     */
   def fixColumn(colIdentifier: js.Object): js.Object = js.native
-  def fixColumn(colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
   def fixColumn(colIdentifier: js.Object, target: String): js.Object = js.native
   def fixColumn(colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  def fixColumn(colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   
   /**
     * This function is deprecated - use function fixNonDataColumns.
@@ -69,17 +68,13 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
     */
   def getWidthOfFixedColumns(): Double = js.native
-  def getWidthOfFixedColumns(
-    fCols: js.UndefOr[scala.Nothing],
-    excludeNonDataColumns: js.UndefOr[scala.Nothing],
-    includeHidden: Boolean
-  ): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.UndefOr[scala.Nothing], excludeNonDataColumns: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.UndefOr[scala.Nothing], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[_]): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: js.UndefOr[scala.Nothing], includeHidden: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[js.Any]): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Unit, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Unit, includeHidden: Boolean): Double = js.native
   
   /**
     * Returns whether the column with the specified key is a column group header, when the [multi-column headers](http://www.igniteui.com/help/iggrid-multicolumnheaders-landingpage) feature is used.
@@ -95,9 +90,9 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param clearRowsHeights Clears row heigths for all visible rows.
     */
   def syncHeights(): Unit = js.native
-  def syncHeights(check: js.UndefOr[scala.Nothing], clearRowsHeights: Boolean): Unit = js.native
   def syncHeights(check: Boolean): Unit = js.native
   def syncHeights(check: Boolean, clearRowsHeights: Boolean): Unit = js.native
+  def syncHeights(check: Unit, clearRowsHeights: Boolean): Unit = js.native
   
   /**
     * Syncs rows heights between two collections of rows.
@@ -105,7 +100,7 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param $trs An array of rows of the first(fixed/unfixed) container.
     * @param $anotherRows An array of rows of the second(fixed/unfixed) container.
     */
-  def syncRowsHeights($trs: js.Array[_], $anotherRows: js.Array[_]): Unit = js.native
+  def syncRowsHeights($trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
   
   /**
     * Unfixes all fixed columns.
@@ -120,9 +115,9 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param after Specifies where the unfixed column should be rendered after or before the target column. This parameter is disregarded if there is no target column specified.
     */
   def unfixColumn(colIdentifier: js.Object): js.Object = js.native
-  def unfixColumn(colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
   def unfixColumn(colIdentifier: js.Object, target: String): js.Object = js.native
   def unfixColumn(colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  def unfixColumn(colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   
   /**
     * This function is deprecated - use function unfixNonDataColumns.

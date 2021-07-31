@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInvitationsInput extends StObject {
   
   /**
     * The maximum number of invitations to return.
     */
-  var MaxResults: js.UndefOr[ProposalListMaxResults] = js.native
+  var MaxResults: js.UndefOr[ProposalListMaxResults] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListInvitationsInput {
   

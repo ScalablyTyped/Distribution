@@ -4,12 +4,13 @@ import typings.winrt.Windows.UI.Color
 import typings.winrt.Windows.UI.IColors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.UI.Colors")
 @js.native
-class Colors () extends IColors
+class Colors ()
+  extends StObject
+     with IColors
 /* static members */
 object Colors {
   

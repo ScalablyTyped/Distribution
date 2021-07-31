@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * To reflect the changes with the underlying database, a refresh mechanism needs to be supported.
   */
-@js.native
 trait DefinitionContainer
-  extends XNameContainer
+  extends StObject
+     with XNameContainer
      with XIndexAccess
      with XEnumerationAccess
      with XRefreshable
@@ -43,7 +42,7 @@ object DefinitionContainer {
     addRefreshListener: XRefreshListener => Unit,
     createEnumeration: () => XEnumeration,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[_] => XInterface,
+    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
     getByIndex: Double => js.Any,
     getByName: String => js.Any,
     getCount: () => Double,

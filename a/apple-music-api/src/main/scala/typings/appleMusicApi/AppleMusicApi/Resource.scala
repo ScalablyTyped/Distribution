@@ -2,18 +2,16 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/resource
-@js.native
 trait Resource extends StObject {
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Resource {
   

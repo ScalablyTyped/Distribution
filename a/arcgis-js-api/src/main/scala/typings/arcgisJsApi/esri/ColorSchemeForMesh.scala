@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorSchemeForMesh
-  extends Object
+  extends StObject
+     with Object
      with ColorScheme {
   
   /**
@@ -17,56 +16,56 @@ trait ColorSchemeForMesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * Predefined classed color schemes to use for the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var colorsForClassBreaks: js.Array[ColorSchemeForMeshColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[ColorSchemeForMeshColorsForClassBreaks]
   
   /**
     * The unique id of the color scheme to usee in the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * Indicates which values will be emphasized in the continuous ramp and the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
-  var theme: String = js.native
+  var theme: String
 }
 object ColorSchemeForMesh {
   

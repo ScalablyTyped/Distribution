@@ -16,17 +16,15 @@ import typings.jqgrid.jqgridStrings.select
 import typings.jqgrid.jqgridStrings.showlink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://www.trirand.com/jqgridwiki/doku.php?id=wiki:colmodel_options
-@js.native
 trait JQueryJqGridColumn extends StObject {
   
   /**
     * Defines the alignment of the cell in the Body layer, not in header cell. Possible values: left, center, right
     */
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * This function add attributes to the cell during the creation of the data - i.e dynamically.
@@ -47,7 +45,7 @@ trait JQueryJqGridColumn extends StObject {
       /* rdata */ js.Any, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This option allow to add classes to the column. If more than one class will be used a space should be set.
@@ -55,7 +53,7 @@ trait JQueryJqGridColumn extends StObject {
     * In the grid css there is a predefined class ui-ellipsis which allow to attach ellipsis to a particular row.
     * Also this will work in FireFox too.
     */
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
   /**
     * Governs format of sorttype:date (when datetype is set to local) and editrules {date:true} fields.
@@ -65,12 +63,12 @@ trait JQueryJqGridColumn extends StObject {
     *  m,mm for months
     *  d,dd for days.
     */
-  var datefmt: js.UndefOr[String] = js.native
+  var datefmt: js.UndefOr[String] = js.undefined
   
   /**
     * Defines if the field is editable. This option is used in cell, inline and form modules.
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The predefined types (string) or custom function name that controls the format of this field
@@ -80,53 +78,53 @@ trait JQueryJqGridColumn extends StObject {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, _])
-  ] = js.native
+    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, js.Any])
+  ] = js.undefined
   
   /**
     * Defines if this column is hidden at initialization.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the index name when sorting. Passed as sidx parameter.
     */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * Overwrite the id (defined in readers) from server. Can be set as id for the unique row id. Only one column can have this property.
     * This option have higher priority as those from the readers.
     * If there are more than one key set the grid finds the first one and the second is ignored.
     */
-  var key: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When colNames array is empty, defines the heading for this column.
     * If both the colNames array and this setting are empty, the heading for this column comes from the name property.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Set the unique name in the grid for the column.
     * This property is required.
     * As well as other words used as property/event names, the reserved words (which cannot be used for names) include subgrid, cb and rn.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * When used in search modules, disables or enables searching on that column
     */
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines is this can be sorted
     */
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the initial width of the column, in pixels. This value currently can not be set as percentage
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object JQueryJqGridColumn {
   
@@ -173,11 +171,11 @@ object JQueryJqGridColumn {
     
     @scala.inline
     def setFormatter(
-      value: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, _])
+      value: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, js.Any])
     ): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatterFunction3(value: (/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any) => _): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    def setFormatterFunction3(value: (/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     @scala.inline
     def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

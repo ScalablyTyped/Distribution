@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Groups parameters used to configure payload-based filtering of received Bluetooth LE advertisements. */
-@js.native
 trait BluetoothLEAdvertisementFilter extends StObject {
   
   /** A BluetoothLEAdvertisement object that can be applied as filters to received Bluetooth LE advertisements. */
-  var advertisement: BluetoothLEAdvertisement = js.native
+  var advertisement: BluetoothLEAdvertisement
   
   /** Gets a vector of byte patterns with offsets to match advertisement sections in a received Bluetooth LE advertisement. */
-  var bytePatterns: IVector[BluetoothLEAdvertisementBytePattern] = js.native
+  var bytePatterns: IVector[BluetoothLEAdvertisementBytePattern]
 }
 object BluetoothLEAdvertisementFilter {
   

@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintObjects extends StObject {
   
-  var `document-number`: js.UndefOr[Double] = js.native
+  var `document-number`: js.UndefOr[Double] = js.undefined
   
-  var `object-offset`: js.UndefOr[ObjectOffset] = js.native
+  var `object-offset`: js.UndefOr[ObjectOffset] = js.undefined
   
-  var `object-size`: js.UndefOr[ObjectSize] = js.native
+  var `object-size`: js.UndefOr[ObjectSize] = js.undefined
   
-  var `object-uuid`: js.UndefOr[String] = js.native
+  var `object-uuid`: js.UndefOr[String] = js.undefined
 }
 object PrintObjects {
   

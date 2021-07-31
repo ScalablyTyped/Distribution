@@ -2,24 +2,22 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Datastore.RunQuery.
   */
-@js.native
 trait SchemaRunQueryResponse extends StObject {
   
   /**
     * A batch of query results (always present).
     */
-  var batch: js.UndefOr[SchemaQueryResultBatch] = js.native
+  var batch: js.UndefOr[SchemaQueryResultBatch] = js.undefined
   
   /**
     * The parsed form of the `GqlQuery` from the request, if it was set.
     */
-  var query: js.UndefOr[SchemaQuery] = js.native
+  var query: js.UndefOr[SchemaQuery] = js.undefined
 }
 object SchemaRunQueryResponse {
   

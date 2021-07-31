@@ -4,23 +4,21 @@ import typings.sharepoint.SP.JsGrid.IStyleType.Splitter
 import typings.sharepoint.SP.JsGrid.IStyleType.SplitterHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dra extends StObject {
   
-  var dra: Splitter = js.native
+  var dra: Splitter
   
-  var dragHandle: SplitterHandle = js.native
+  var dragHandle: SplitterHandle
   
-  var hover: Splitter = js.native
+  var hover: Splitter
   
-  var hoverHandle: SplitterHandle = js.native
+  var hoverHandle: SplitterHandle
   
-  var normal: Splitter = js.native
+  var normal: Splitter
   
-  var normalHandle: SplitterHandle = js.native
+  var normalHandle: SplitterHandle
 }
 object Dra {
   

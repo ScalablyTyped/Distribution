@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetCodeFrequencyStatsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetCodeFrequencyStatsEndpoint extends StObject {
   
-  var parameters: ReposGetCodeFrequencyStatsEndpoint = js.native
+  var parameters: ReposGetCodeFrequencyStatsEndpoint
   
-  var request: ReposGetCodeFrequencyStatsRequestOptions = js.native
+  var request: ReposGetCodeFrequencyStatsRequestOptions
   
-  var response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData] = js.native
+  var response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]
 }
 object ParametersReposGetCodeFrequencyStatsEndpoint {
   

@@ -2,23 +2,21 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var code: ErrorCode = js.native
+  var code: ErrorCode
   
-  var description: String | Null = js.native
+  var description: String | Null
   
-  var details: js.Object = js.native
+  var details: js.Object
 }
 object Error {
   
   @scala.inline
   def apply(code: ErrorCode, details: js.Object): Error = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], description = null)
     __obj.asInstanceOf[Error]
   }
   

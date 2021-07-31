@@ -2,13 +2,11 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lineshift extends StObject {
   
-  var line_shift: Double = js.native
+  var line_shift: Double
 }
 object Lineshift {
   

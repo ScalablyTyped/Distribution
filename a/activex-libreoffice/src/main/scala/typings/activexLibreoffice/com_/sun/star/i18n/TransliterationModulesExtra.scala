@@ -8,7 +8,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`202`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TransliterationModulesExtra {

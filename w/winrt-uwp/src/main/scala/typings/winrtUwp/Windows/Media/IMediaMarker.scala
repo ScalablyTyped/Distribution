@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a marker at specific location in a media stream time-line. */
-@js.native
 trait IMediaMarker extends StObject {
   
   /** Gets the type of the media marker. */
-  var mediaMarkerType: String = js.native
+  var mediaMarkerType: String
   
   /** Gets the text associated with the marker. */
-  var text: String = js.native
+  var text: String
   
   /** Gets the offset in the media time-line that the marker occurs. */
-  var time: Double = js.native
+  var time: Double
 }
 object IMediaMarker {
   

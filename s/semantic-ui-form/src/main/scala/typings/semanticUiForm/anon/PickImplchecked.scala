@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, 'checked'> */
-@js.native
 trait PickImplchecked extends StObject {
   
-  var checked: String = js.native
+  var checked: String
 }
 object PickImplchecked {
   

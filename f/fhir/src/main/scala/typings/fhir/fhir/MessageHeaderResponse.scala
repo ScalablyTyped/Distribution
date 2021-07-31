@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If this is a reply to prior message
   */
-@js.native
-trait MessageHeaderResponse extends BackboneElement {
+trait MessageHeaderResponse
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'identifier'.
     */
-  var _identifier: js.UndefOr[Element] = js.native
+  var _identifier: js.UndefOr[Element] = js.undefined
   
   /**
     * ok | transient-error | fatal-error
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Specific list of hints/warnings/errors
     */
-  var details: js.UndefOr[Reference] = js.native
+  var details: js.UndefOr[Reference] = js.undefined
   
   /**
     * Id of original message
     */
-  var identifier: id = js.native
+  var identifier: id
 }
 object MessageHeaderResponse {
   

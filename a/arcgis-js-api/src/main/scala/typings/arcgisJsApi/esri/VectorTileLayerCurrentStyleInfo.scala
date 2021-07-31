@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VectorTileLayerCurrentStyleInfo extends Object {
+trait VectorTileLayerCurrentStyleInfo
+  extends StObject
+     with Object {
   
   /**
     * Absolute template URL for font sets included in a style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var glyphsUrl: String = js.native
+  var glyphsUrl: String
   
   /**
     * Vector tile service information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var layerDefinition: js.Any = js.native
+  var layerDefinition: js.Any
   
   /**
     * Absolute URL for a vector tile service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var serviceUrl: String = js.native
+  var serviceUrl: String
   
   /**
     * Absolute URL for sprites included in a style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var spriteUrl: String = js.native
+  var spriteUrl: String
   
   /**
     * Style JSON object for vector tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var style: js.Any = js.native
+  var style: js.Any
   
   /**
     * Absolute URL for vector tile service style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var styleUrl: String = js.native
+  var styleUrl: String
 }
 object VectorTileLayerCurrentStyleInfo {
   

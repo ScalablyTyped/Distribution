@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectEnclosingPolygon
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
@@ -15,17 +14,17 @@ trait CIMGeometricEffectEnclosingPolygon
     */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectEnclosingPolygonMethod * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectEnclosingPolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectEnclosingPolygon = js.native
+  var type_CIMGeometricEffectEnclosingPolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectEnclosingPolygon
 }
 object CIMGeometricEffectEnclosingPolygon {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectEnclosingPolygon): CIMGeometricEffectEnclosingPolygon = {
+  def apply(): CIMGeometricEffectEnclosingPolygon = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectEnclosingPolygon")
     __obj.asInstanceOf[CIMGeometricEffectEnclosingPolygon]
   }
   

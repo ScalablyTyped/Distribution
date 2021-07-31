@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends StObject {
   
   /** Categorical stats result */
-  var categoricalStatsResult: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsResult] = js.native
+  var categoricalStatsResult: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsResult] = js.undefined
   
   /** Delta-presence result */
-  var deltaPresenceEstimationResult: js.UndefOr[GooglePrivacyDlpV2DeltaPresenceEstimationResult] = js.native
+  var deltaPresenceEstimationResult: js.UndefOr[GooglePrivacyDlpV2DeltaPresenceEstimationResult] = js.undefined
   
   /** K-anonymity result */
-  var kAnonymityResult: js.UndefOr[GooglePrivacyDlpV2KAnonymityResult] = js.native
+  var kAnonymityResult: js.UndefOr[GooglePrivacyDlpV2KAnonymityResult] = js.undefined
   
   /** K-map result */
-  var kMapEstimationResult: js.UndefOr[GooglePrivacyDlpV2KMapEstimationResult] = js.native
+  var kMapEstimationResult: js.UndefOr[GooglePrivacyDlpV2KMapEstimationResult] = js.undefined
   
   /** L-divesity result */
-  var lDiversityResult: js.UndefOr[GooglePrivacyDlpV2LDiversityResult] = js.native
+  var lDiversityResult: js.UndefOr[GooglePrivacyDlpV2LDiversityResult] = js.undefined
   
   /** Numerical stats result */
-  var numericalStatsResult: js.UndefOr[GooglePrivacyDlpV2NumericalStatsResult] = js.native
+  var numericalStatsResult: js.UndefOr[GooglePrivacyDlpV2NumericalStatsResult] = js.undefined
   
   /** The configuration used for this job. */
-  var requestedOptions: js.UndefOr[GooglePrivacyDlpV2RequestedRiskAnalysisOptions] = js.native
+  var requestedOptions: js.UndefOr[GooglePrivacyDlpV2RequestedRiskAnalysisOptions] = js.undefined
   
   /** Privacy metric to compute. */
-  var requestedPrivacyMetric: js.UndefOr[GooglePrivacyDlpV2PrivacyMetric] = js.native
+  var requestedPrivacyMetric: js.UndefOr[GooglePrivacyDlpV2PrivacyMetric] = js.undefined
   
   /** Input dataset to compute metrics over. */
-  var requestedSourceTable: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.native
+  var requestedSourceTable: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails {
   

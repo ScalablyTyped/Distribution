@@ -2,38 +2,36 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedAdvisorCheckSummary extends StObject {
   
   /**
     * Summary information that relates to the category of the check. Cost Optimizing is the only category that is currently supported.
     */
-  var categorySpecificSummary: TrustedAdvisorCategorySpecificSummary = js.native
+  var categorySpecificSummary: TrustedAdvisorCategorySpecificSummary
   
   /**
     * The unique identifier for the Trusted Advisor check.
     */
-  var checkId: String = js.native
+  var checkId: String
   
   /**
     * Specifies whether the Trusted Advisor check has flagged resources.
     */
-  var hasFlaggedResources: js.UndefOr[Boolean] = js.native
+  var hasFlaggedResources: js.UndefOr[Boolean] = js.undefined
   
-  var resourcesSummary: TrustedAdvisorResourcesSummary = js.native
+  var resourcesSummary: TrustedAdvisorResourcesSummary
   
   /**
     * The alert status of the check: "ok" (green), "warning" (yellow), "error" (red), or "not_available".
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * The time of the last refresh of the check.
     */
-  var timestamp: String = js.native
+  var timestamp: String
 }
 object TrustedAdvisorCheckSummary {
   

@@ -2,23 +2,21 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeOption extends StObject {
   
-  var click: js.UndefOr[js.Function1[/* node */ TreeNode, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* node */ TreeNode, Unit]] = js.undefined
   
-  var elem: js.UndefOr[String] = js.native
+  var elem: js.UndefOr[String] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var nodes: js.UndefOr[TreeNode | js.Array[TreeNode]] = js.native
+  var nodes: js.UndefOr[TreeNode | js.Array[TreeNode]] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object TreeOption {
   

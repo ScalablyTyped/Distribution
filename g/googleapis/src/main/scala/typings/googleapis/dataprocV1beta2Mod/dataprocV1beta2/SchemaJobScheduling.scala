@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Job scheduling options.
   */
-@js.native
 trait SchemaJobScheduling extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaJobScheduling extends StObject {
     * failed.A job may be reported as thrashing if driver exits with non-zero
     * code 4 times within 10 minute window.Maximum value is 10.
     */
-  var maxFailuresPerHour: js.UndefOr[Double] = js.native
+  var maxFailuresPerHour: js.UndefOr[Double] = js.undefined
 }
 object SchemaJobScheduling {
   

@@ -2,13 +2,11 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  The Request body of the `SearchJobs` call.
   */
-@js.native
 trait SchemaSearchJobsRequest extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait SchemaSearchJobsRequest extends StObject {
     * matched custom field/attribute string values is needed. Enabling keyword
     * match improves recall of subsequent search requests.  Defaults to false.
     */
-  var disableKeywordMatch: js.UndefOr[Boolean] = js.native
+  var disableKeywordMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  Controls whether highly similar jobs are returned next to each
@@ -39,31 +37,31 @@ trait SchemaSearchJobsRequest extends StObject {
     * being displayed lower down in the results.  Defaults to
     * DiversificationLevel.SIMPLE if no value is specified.
     */
-  var diversificationLevel: js.UndefOr[String] = js.native
+  var diversificationLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Controls whether to broaden the search when it produces sparse
     * results. Broadened queries append results to the end of the matching
     * results list.  Defaults to false.
     */
-  var enableBroadening: js.UndefOr[Boolean] = js.native
+  var enableBroadening: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  Histogram requests for jobs matching JobQuery.
     */
-  var histogramFacets: js.UndefOr[SchemaHistogramFacets] = js.native
+  var histogramFacets: js.UndefOr[SchemaHistogramFacets] = js.undefined
   
   /**
     * Optional.  Query used to search against jobs, such as keyword, location
     * filters, etc.
     */
-  var jobQuery: js.UndefOr[SchemaJobQuery] = js.native
+  var jobQuery: js.UndefOr[SchemaJobQuery] = js.undefined
   
   /**
     * Optional.  The desired job attributes returned for jobs in the search
     * response. Defaults to JobView.SMALL if no value is specified.
     */
-  var jobView: js.UndefOr[String] = js.native
+  var jobView: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  An integer that specifies the current offset (that is,
@@ -74,7 +72,7 @@ trait SchemaSearchJobsRequest extends StObject {
     * pagination, (for example, pageSize = 10 and offset = 10 means to return
     * from the second page).
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  The criteria determining how search results are sorted.
@@ -99,28 +97,28 @@ trait SchemaSearchJobsRequest extends StObject {
     * descending. Jobs whose annualized base compensation is unspecified are
     * put at the end of search results.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A limit on the number of jobs returned in the search results.
     * Increasing this value above the default value of 10 can increase search
     * response time. The value can be between 1 and 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  The token specifying the current offset within search results.
     * See SearchJobsResponse.next_page_token for an explanation of how to
     * obtain the next set of query results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The meta information collected about the job searcher, used to
     * improve the search quality of the service.. The identifiers, (such as
     * `user_id`) are provided by users, and must be unique and consistent.
     */
-  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.native
+  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.undefined
   
   /**
     * Optional.  Controls if the search job request requires the return of a
@@ -130,12 +128,12 @@ trait SchemaSearchJobsRequest extends StObject {
     * non-sequential search results page.  Enabling this flag may adversely
     * impact performance.  Defaults to false.
     */
-  var requirePreciseResultSize: js.UndefOr[Boolean] = js.native
+  var requirePreciseResultSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  Mode of a search.  Defaults to SearchMode.JOB_SEARCH.
     */
-  var searchMode: js.UndefOr[String] = js.native
+  var searchMode: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchJobsRequest {
   

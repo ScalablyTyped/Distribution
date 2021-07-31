@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKmlScreenOverlayOptions extends StObject {
   
   /** A boolean indicating if the screen overlay can be displayed above or beow the navigaiton bar. Default: false */
-  var belowNavigationBar: js.UndefOr[Boolean] = js.native
+  var belowNavigationBar: js.UndefOr[Boolean] = js.undefined
   
   /** The visibility of the screen overlay. Default: true */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IKmlScreenOverlayOptions {
   

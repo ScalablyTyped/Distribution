@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Query")
@@ -33,7 +32,7 @@ class ResourceQuery protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(params: ParamsResourceQuerySearch): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(params: ParamsResourceQuerySearch, callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
   def search(
@@ -64,7 +63,7 @@ class ResourceQuery protected () extends StObject {
     */
   def suggest(): GaxiosPromise[SchemaSuggestResponse] = js.native
   def suggest(callback: BodyResponseCallback[SchemaSuggestResponse]): Unit = js.native
-  def suggest(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSuggestResponse] = js.native
+  def suggest(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSuggestResponse] = js.native
   def suggest(params: ParamsResourceQuerySuggest): GaxiosPromise[SchemaSuggestResponse] = js.native
   def suggest(params: ParamsResourceQuerySuggest, callback: BodyResponseCallback[SchemaSuggestResponse]): Unit = js.native
   def suggest(

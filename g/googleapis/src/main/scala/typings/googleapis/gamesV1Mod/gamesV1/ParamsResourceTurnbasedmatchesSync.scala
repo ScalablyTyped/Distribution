@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTurnbasedmatchesSync extends StandardParameters {
+trait ParamsResourceTurnbasedmatchesSync
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * True if match data should be returned in the response. Note that not all
@@ -24,31 +24,31 @@ trait ParamsResourceTurnbasedmatchesSync extends StandardParameters {
     * download size for the client. The remainder of the data for these matches
     * will be retrievable on request.
     */
-  var includeMatchData: js.UndefOr[Boolean] = js.native
+  var includeMatchData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The preferred language to use for strings returned by this method.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of completed or canceled matches to return in the
     * response. If not set, all matches returned could be completed or
     * canceled.
     */
-  var maxCompletedMatches: js.UndefOr[Double] = js.native
+  var maxCompletedMatches: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of matches to return in the response, used for paging.
     * For any response, the actual number of matches to return may be less than
     * the specified maxResults.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTurnbasedmatchesSync {
   

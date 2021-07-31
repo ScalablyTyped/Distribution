@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ object ExpressionReturnType extends StObject {
     * The return type of the expression is determined by the consumer using the expression.
     */
   @js.native
-  sealed trait Default extends ExpressionReturnType
+  sealed trait Default
+    extends StObject
+       with ExpressionReturnType
   
   /**
     * The return type of the expression is treated as a numeric value by all consumers.
     */
   @js.native
-  sealed trait Numeric extends ExpressionReturnType
+  sealed trait Numeric
+    extends StObject
+       with ExpressionReturnType
   
   /**
     * The return type of the expression is treated as a string by all consumers.
     */
   @js.native
-  sealed trait String extends ExpressionReturnType
+  sealed trait String
+    extends StObject
+       with ExpressionReturnType
 }

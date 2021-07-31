@@ -2,19 +2,17 @@ package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserBuildConditionals extends StObject {
   
-  var isBrowser: Boolean = js.native
+  var isBrowser: Boolean
   
-  var isDev: Boolean = js.native
+  var isDev: Boolean
   
-  var isServer: Boolean = js.native
+  var isServer: Boolean
   
-  var isTesting: Boolean = js.native
+  var isTesting: Boolean
 }
 object UserBuildConditionals {
   

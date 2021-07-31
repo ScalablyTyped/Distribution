@@ -2,37 +2,35 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
-  var author: scala.Double = js.native
+  var author: scala.Double
   
-  var averageRating: scala.Double = js.native
+  var averageRating: scala.Double
   
-  var installCount: scala.Double = js.native
+  var installCount: scala.Double
   
-  var lastUpdatedDate: scala.Double = js.native
+  var lastUpdatedDate: scala.Double
   
-  var publishedDate: scala.Double = js.native
+  var publishedDate: scala.Double
   
-  var publisher: scala.Double = js.native
+  var publisher: scala.Double
   
-  var releaseDate: scala.Double = js.native
+  var releaseDate: scala.Double
   
-  var relevance: scala.Double = js.native
+  var relevance: scala.Double
   
-  var title: scala.Double = js.native
+  var title: scala.Double
   
-  var trendingDaily: scala.Double = js.native
+  var trendingDaily: scala.Double
   
-  var trendingMonthly: scala.Double = js.native
+  var trendingMonthly: scala.Double
   
-  var trendingWeekly: scala.Double = js.native
+  var trendingWeekly: scala.Double
   
-  var weightedRating: scala.Double = js.native
+  var weightedRating: scala.Double
 }
 object Author {
   

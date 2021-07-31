@@ -10,9 +10,9 @@ TypeScript typings for Cloud Search API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudsearch |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 835 |
+| # downloads        | 973 |
 | # stars            | 0 |
 
 ## Links

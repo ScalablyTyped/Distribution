@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface should be supported, if it is possible to access the data at the new position quickly. You should not support this interface, if you
   * have a continuous stream, for example, a video stream.
   */
-@js.native
-trait XSeekable extends XInterface {
+trait XSeekable
+  extends StObject
+     with XInterface {
   
   /**
     * returns the length of the stream.
     * @returns the length of the storage medium on which the stream works.
     */
-  val Length: Double = js.native
+  val Length: Double
   
   /**
     * returns the current offset of the stream.
     * @returns the current offset in this stream.
     */
-  val Position: Double = js.native
+  val Position: Double
   
   /**
     * returns the length of the stream.
     * @returns the length of the storage medium on which the stream works.
     */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /**
     * returns the current offset of the stream.
     * @returns the current offset in this stream.
     */
-  def getPosition(): Double = js.native
+  def getPosition(): Double
   
   /**
     * changes the seek pointer to a new location relative to the beginning of the stream.
@@ -47,7 +47,7 @@ trait XSeekable extends XInterface {
     * seek before the beginning of the stream or after the end of the stream.
     * @throws com::sun::star::lang::IllegalArgumentException in case location is negative or greater than {@link XSeekable.getLength()} .
     */
-  def seek(location: Double): Unit = js.native
+  def seek(location: Double): Unit
 }
 object XSeekable {
   

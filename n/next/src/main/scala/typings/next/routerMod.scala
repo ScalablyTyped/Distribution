@@ -8,7 +8,6 @@ import typings.next.anon.PickCompletePrivateRouteI
 import typings.next.libUtilsMod.NextPageContext
 import typings.next.mittMod.MittEmitter
 import typings.next.nextBooleans.`false`
-import typings.next.nextBooleans.`true`
 import typings.next.pageLoaderMod.GoodPageCache
 import typings.next.pageLoaderMod.StyleSheetTuple
 import typings.node.querystringMod.ParsedUrlQuery
@@ -19,20 +18,40 @@ import typings.std.PopStateEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
   
+  @JSImport("next/dist/next-server/lib/router/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("next/dist/next-server/lib/router/router", JSImport.Default)
   @js.native
-  class default protected () extends Router {
+  class default protected ()
+    extends StObject
+       with Router {
     def this(
       pathname: String,
       query: ParsedUrlQuery,
       as: String,
       hasInitialPropsPageLoaderAppWrapAppComponentErrSubscriptionIsFallbackLocaleLocalesDefaultLocale: App
     ) = this()
+    
+    /* CompleteClass */
+    var asPath: String = js.native
+    
+    /* CompleteClass */
+    var basePath: String = js.native
+    
+    /* CompleteClass */
+    var pathname: String = js.native
+    
+    /* CompleteClass */
+    var query: ParsedUrlQuery = js.native
+    
+    /* CompleteClass */
+    var route: String = js.native
   }
   /* static members */
   object default {
@@ -48,81 +67,66 @@ object routerMod {
     def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("next/dist/next-server/lib/router/router", "addBasePath")
-  @js.native
-  def addBasePath(path: String): String = js.native
+  @scala.inline
+  def addBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale(path: String): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale(path: String, locale: js.UndefOr[scala.Nothing], defaultLocale: String): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale(path: String, locale: String): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale(path: String, locale: String, defaultLocale: String): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale_false(path: String, locale: `false`): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "addLocale")
-  @js.native
-  def addLocale_false(path: String, locale: `false`, defaultLocale: String): String = js.native
+  @scala.inline
+  def addLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def addLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addLocale(path: String, locale: String, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addLocale(path: String, locale: Unit, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("next/dist/next-server/lib/router/router", "delBasePath")
-  @js.native
-  def delBasePath(path: String): String = js.native
+  @scala.inline
+  def addLocale_false(path: String, locale: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addLocale_false(path: String, locale: `false`, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("next/dist/next-server/lib/router/router", "delLocale")
-  @js.native
-  def delLocale(path: String): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "delLocale")
-  @js.native
-  def delLocale(path: String, locale: String): String = js.native
+  @scala.inline
+  def delBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("next/dist/next-server/lib/router/router", "hasBasePath")
-  @js.native
-  def hasBasePath(path: String): Boolean = js.native
+  @scala.inline
+  def delLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def delLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("next/dist/next-server/lib/router/router", "interpolateAs")
-  @js.native
-  def interpolateAs(route: String, asPathname: String, query: ParsedUrlQuery): Params = js.native
+  @scala.inline
+  def hasBasePath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("next/dist/next-server/lib/router/router", "isLocalURL")
-  @js.native
-  def isLocalURL(url: String): Boolean = js.native
+  @scala.inline
+  def interpolateAs(route: String, asPathname: String, query: ParsedUrlQuery): Params = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateAs")(route.asInstanceOf[js.Any], asPathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Params]
   
-  @JSImport("next/dist/next-server/lib/router/router", "resolveHref")
-  @js.native
-  def resolveHref(currentPath: String, href: Url): String = js.native
-  @JSImport("next/dist/next-server/lib/router/router", "resolveHref")
-  @js.native
-  def resolveHref(currentPath: String, href: Url, resolveAs: Boolean): String = js.native
+  @scala.inline
+  def isLocalURL(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def resolveHref(currentPath: String, href: Url): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def resolveHref(currentPath: String, href: Url, resolveAs: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any], resolveAs.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type AppComponent = ComponentType[AppProps]
   
-  type AppProps = PickCompletePrivateRouteI with typings.next.anon.Router with (Record[String, _])
+  type AppProps = PickCompletePrivateRouteI & typings.next.anon.Router & (Record[String, js.Any])
   
-  @js.native
   trait BaseRouter extends StObject {
     
-    var asPath: String = js.native
+    var asPath: String
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var route: String = js.native
+    var route: String
   }
   object BaseRouter {
     
@@ -175,22 +179,23 @@ object routerMod {
   
   type BeforePopStateCallback = js.Function1[/* state */ NextHistoryState, Boolean]
   
-  @js.native
-  trait CompletePrivateRouteInfo extends PrivateRouteInfo {
+  trait CompletePrivateRouteInfo
+    extends StObject
+       with PrivateRouteInfo {
     
-    var Component: ComponentType[js.Object] = js.native
+    var Component: ComponentType[js.Object]
     
-    var __N_SSG: js.UndefOr[Boolean] = js.native
+    var __N_SSG: js.UndefOr[Boolean] = js.undefined
     
-    var __N_SSP: js.UndefOr[Boolean] = js.native
+    var __N_SSP: js.UndefOr[Boolean] = js.undefined
     
-    var err: js.UndefOr[Error] = js.native
+    var err: js.UndefOr[Error] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var props: js.UndefOr[Record[String, _]] = js.native
+    var props: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var styleSheets: js.Array[StyleSheetTuple] = js.native
+    var styleSheets: js.Array[StyleSheetTuple]
   }
   object CompletePrivateRouteInfo {
     
@@ -219,7 +224,7 @@ object routerMod {
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setProps(value: Record[String, _]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
@@ -260,14 +265,13 @@ object routerMod {
     def replaceState: typings.next.nextStrings.replaceState = "replaceState".asInstanceOf[typings.next.nextStrings.replaceState]
   }
   
-  @js.native
   trait NextHistoryState extends StObject {
     
-    var as: String = js.native
+    var as: String
     
-    var options: TransitionOptions = js.native
+    var options: TransitionOptions
     
-    var url: String = js.native
+    var url: String
   }
   object NextHistoryState {
     
@@ -292,55 +296,54 @@ object routerMod {
   }
   
   /* Inlined next.next/dist/next-server/lib/router/router.BaseRouter & std.Pick<next.next/dist/next-server/lib/router/router.Router, 'push' | 'replace' | 'reload' | 'back' | 'prefetch' | 'beforePopState' | 'events' | 'isFallback'> */
-  @js.native
   trait NextRouter extends StObject {
     
-    var asPath: String = js.native
+    var asPath: String
     
-    var back: js.Function0[Unit] = js.native
+    var back: js.Function0[Unit]
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var beforePopState: js.Function1[/* cb */ BeforePopStateCallback, Unit] = js.native
+    var beforePopState: js.Function1[/* cb */ BeforePopStateCallback, Unit]
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var events: MittEmitter = js.native
+    var events: MittEmitter
     
-    var isFallback: Boolean = js.native
+    var isFallback: Boolean
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
     var prefetch: js.Function3[
         /* url */ String, 
         /* asPath */ js.UndefOr[String], 
         /* options */ js.UndefOr[PrefetchOptions], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var push: js.Function3[
         /* url */ Url, 
         /* as */ js.UndefOr[Url], 
         /* options */ js.UndefOr[TransitionOptions], 
         js.Promise[Boolean]
-      ] = js.native
+      ]
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var reload: js.Function0[Unit] = js.native
+    var reload: js.Function0[Unit]
     
     var replace: js.Function3[
         /* url */ Url, 
         /* as */ js.UndefOr[Url], 
         /* options */ js.UndefOr[TransitionOptions], 
         js.Promise[Boolean]
-      ] = js.native
+      ]
     
-    var route: String = js.native
+    var route: String
   }
   object NextRouter {
     
@@ -435,12 +438,11 @@ object routerMod {
     }
   }
   
-  @js.native
   trait PrefetchOptions extends StObject {
     
-    var locale: js.UndefOr[String | `false`] = js.native
+    var locale: js.UndefOr[String | `false`] = js.undefined
     
-    var priority: js.UndefOr[Boolean] = js.native
+    var priority: js.UndefOr[Boolean] = js.undefined
   }
   object PrefetchOptions {
     
@@ -481,14 +483,16 @@ object routerMod {
     }
     
     @scala.inline
-    def OmitCompletePrivateRouteI(Component: ComponentType[js.Object], initial: `true`): typings.next.anon.OmitCompletePrivateRouteI = {
-      val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any])
+    def OmitCompletePrivateRouteI(Component: ComponentType[js.Object]): typings.next.anon.OmitCompletePrivateRouteI = {
+      val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = true)
       __obj.asInstanceOf[typings.next.anon.OmitCompletePrivateRouteI]
     }
   }
   
   @js.native
-  trait Router extends BaseRouter {
+  trait Router
+    extends StObject
+       with BaseRouter {
     
     var _bps: js.UndefOr[BeforePopStateCallback] = js.native
     
@@ -536,7 +540,7 @@ object routerMod {
     
     def fetchComponent(route: String): js.Promise[GoodPageCache] = js.native
     
-    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[_] = js.native
+    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[js.Any] = js.native
     
     def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[PrivateRouteInfo] = js.native
     def getRouteInfo(route: String, pathname: String, query: js.Any, as: String, shallow: Boolean): js.Promise[PrivateRouteInfo] = js.native
@@ -569,9 +573,9 @@ object routerMod {
       * @param asPath the as path of the prefetched page
       */
     def prefetch(url: String): js.Promise[Unit] = js.native
-    def prefetch(url: String, asPath: js.UndefOr[scala.Nothing], options: PrefetchOptions): js.Promise[Unit] = js.native
     def prefetch(url: String, asPath: String): js.Promise[Unit] = js.native
     def prefetch(url: String, asPath: String, options: PrefetchOptions): js.Promise[Unit] = js.native
+    def prefetch(url: String, asPath: Unit, options: PrefetchOptions): js.Promise[Unit] = js.native
     
     /**
       * Performs a `pushState` with arguments
@@ -580,8 +584,9 @@ object routerMod {
       * @param options object you can define `shallow` and other options
       */
     def push(url: Url): js.Promise[Boolean] = js.native
-    def push(url: Url, as: js.UndefOr[Url], options: TransitionOptions): js.Promise[Boolean] = js.native
+    def push(url: Url, as: Unit, options: TransitionOptions): js.Promise[Boolean] = js.native
     def push(url: Url, as: Url): js.Promise[Boolean] = js.native
+    def push(url: Url, as: Url, options: TransitionOptions): js.Promise[Boolean] = js.native
     
     def reload(): Unit = js.native
     
@@ -592,8 +597,9 @@ object routerMod {
       * @param options object you can define `shallow` and other options
       */
     def replace(url: Url): js.Promise[Boolean] = js.native
-    def replace(url: Url, as: js.UndefOr[Url], options: TransitionOptions): js.Promise[Boolean] = js.native
+    def replace(url: Url, as: Unit, options: TransitionOptions): js.Promise[Boolean] = js.native
     def replace(url: Url, as: Url): js.Promise[Boolean] = js.native
+    def replace(url: Url, as: Url, options: TransitionOptions): js.Promise[Boolean] = js.native
     
     def scrollToHash(as: String): Unit = js.native
     
@@ -608,12 +614,11 @@ object routerMod {
   
   type Subscription = js.Function2[/* data */ PrivateRouteInfo, /* App */ AppComponent, js.Promise[Unit]]
   
-  @js.native
   trait TransitionOptions extends StObject {
     
-    var locale: js.UndefOr[String | `false`] = js.native
+    var locale: js.UndefOr[String | `false`] = js.undefined
     
-    var shallow: js.UndefOr[Boolean] = js.native
+    var shallow: js.UndefOr[Boolean] = js.undefined
   }
   object TransitionOptions {
     

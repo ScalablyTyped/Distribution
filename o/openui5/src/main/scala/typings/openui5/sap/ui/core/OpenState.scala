@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,14 +16,22 @@ sealed trait OpenState extends StObject
 object OpenState extends StObject {
   
   @js.native
-  sealed trait CLOSED extends OpenState
+  sealed trait CLOSED
+    extends StObject
+       with OpenState
   
   @js.native
-  sealed trait CLOSING extends OpenState
+  sealed trait CLOSING
+    extends StObject
+       with OpenState
   
   @js.native
-  sealed trait OPEN extends OpenState
+  sealed trait OPEN
+    extends StObject
+       with OpenState
   
   @js.native
-  sealed trait OPENING extends OpenState
+  sealed trait OPENING
+    extends StObject
+       with OpenState
 }

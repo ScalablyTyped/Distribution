@@ -7,7 +7,6 @@ import typings.reactNativePermissions.reactNativePermissionsStrings.limited
 import typings.reactNativePermissions.reactNativePermissionsStrings.unavailable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultsMod {
@@ -37,24 +36,23 @@ object resultsMod {
   }
   
   /* Inlined std.Readonly<{ readonly UNAVAILABLE :'unavailable',  readonly BLOCKED :'blocked',  readonly DENIED :'denied',  readonly GRANTED :'granted',  readonly LIMITED :'limited'}> */
-  @js.native
   trait ResultMap extends StObject {
     
-    val BLOCKED: blocked = js.native
+    val BLOCKED: blocked
     
-    val DENIED: denied = js.native
+    val DENIED: denied
     
-    val GRANTED: granted = js.native
+    val GRANTED: granted
     
-    val LIMITED: limited = js.native
+    val LIMITED: limited
     
-    val UNAVAILABLE: unavailable = js.native
+    val UNAVAILABLE: unavailable
   }
   object ResultMap {
     
     @scala.inline
-    def apply(BLOCKED: blocked, DENIED: denied, GRANTED: granted, LIMITED: limited, UNAVAILABLE: unavailable): ResultMap = {
-      val __obj = js.Dynamic.literal(BLOCKED = BLOCKED.asInstanceOf[js.Any], DENIED = DENIED.asInstanceOf[js.Any], GRANTED = GRANTED.asInstanceOf[js.Any], LIMITED = LIMITED.asInstanceOf[js.Any], UNAVAILABLE = UNAVAILABLE.asInstanceOf[js.Any])
+    def apply(): ResultMap = {
+      val __obj = js.Dynamic.literal(BLOCKED = "blocked", DENIED = "denied", GRANTED = "granted", LIMITED = "limited", UNAVAILABLE = "unavailable")
       __obj.asInstanceOf[ResultMap]
     }
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -34,24 +33,24 @@ object mod extends Shortcut {
       * passing string to your function
       * result data, osmosis finished
       */
-    def data(callback: js.Function1[/* param */ js.Any, _]): Osmosis = js.native
+    def data(callback: js.Function1[/* param */ js.Any, js.Any]): Osmosis = js.native
     
     /**
       * passing string to your function
       * debug data
       */
-    def debug(callback: js.Function1[/* param */ String, _]): Osmosis = js.native
+    def debug(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
     
     /**
       * Call a callback when the Osmosis instance has completely finished.
       */
-    def done(callback: js.Function0[_]): Osmosis = js.native
+    def done(callback: js.Function0[js.Any]): Osmosis = js.native
     
     /**
       * passing string to your function
       * error data
       */
-    def error(callback: js.Function1[/* param */ String, _]): Osmosis = js.native
+    def error(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
     
     /**
       * find DOM by selector
@@ -83,7 +82,7 @@ object mod extends Shortcut {
       * passing string to your function
       * log data
       */
-    def log(callback: js.Function1[/* param */ String, _]): Osmosis = js.native
+    def log(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
     
     /**
       * paginate followed url

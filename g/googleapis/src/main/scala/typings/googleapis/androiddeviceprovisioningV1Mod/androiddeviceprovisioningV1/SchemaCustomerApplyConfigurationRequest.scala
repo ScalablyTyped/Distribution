@@ -2,25 +2,23 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for customer to assign a configuration to device.
   */
-@js.native
 trait SchemaCustomerApplyConfigurationRequest extends StObject {
   
   /**
     * Required. The configuration applied to the device in the format
     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
     */
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The device the configuration is applied to.
     */
-  var device: js.UndefOr[SchemaDeviceReference] = js.native
+  var device: js.UndefOr[SchemaDeviceReference] = js.undefined
 }
 object SchemaCustomerApplyConfigurationRequest {
   

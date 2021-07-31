@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGeopositionError extends StObject {
   
   @JSName("MSHTML.WebGeopositionError_typekey")
-  var MSHTMLDotWebGeopositionError_typekey: WebGeopositionError = js.native
+  var MSHTMLDotWebGeopositionError_typekey: WebGeopositionError
   
-  val code: Double = js.native
+  val code: Double
   
-  val message: String = js.native
+  val message: String
 }
 object WebGeopositionError {
   

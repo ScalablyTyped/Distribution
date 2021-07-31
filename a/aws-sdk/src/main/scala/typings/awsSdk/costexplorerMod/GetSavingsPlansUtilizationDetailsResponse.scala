@@ -2,28 +2,26 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavingsPlansUtilizationDetailsResponse extends StObject {
   
   /**
     * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextToken: js.UndefOr[NextPageToken] = js.native
+  var NextToken: js.UndefOr[NextPageToken] = js.undefined
   
   /**
     * Retrieves a single daily or monthly Savings Plans utilization rate and details for your account.
     */
-  var SavingsPlansUtilizationDetails: typings.awsSdk.costexplorerMod.SavingsPlansUtilizationDetails = js.native
+  var SavingsPlansUtilizationDetails: typings.awsSdk.costexplorerMod.SavingsPlansUtilizationDetails
   
-  var TimePeriod: DateInterval = js.native
+  var TimePeriod: DateInterval
   
   /**
     * The total Savings Plans utilization, regardless of time period.
     */
-  var Total: js.UndefOr[SavingsPlansUtilizationAggregates] = js.native
+  var Total: js.UndefOr[SavingsPlansUtilizationAggregates] = js.undefined
 }
 object GetSavingsPlansUtilizationDetailsResponse {
   

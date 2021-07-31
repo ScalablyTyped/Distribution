@@ -7,29 +7,27 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeAPIAuth extends StObject {
   
   /**
     * Returns an Express middleware function that ensures the user making a request has the necessary permission.
     */
   def needsPermission(permission: String): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ]
 }
 object NodeAPIAuth {
   
   @scala.inline
   def apply(
     needsPermission: String => js.Function3[
-      /* req */ Request_[ParamsDictionary, _, _, Query], 
-      /* res */ Response_[_], 
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* res */ Response_[js.Any], 
       /* next */ NextFunction, 
       Unit
     ]
@@ -44,8 +42,8 @@ object NodeAPIAuth {
     @scala.inline
     def setNeedsPermission(
       value: String => js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
           Unit
         ]

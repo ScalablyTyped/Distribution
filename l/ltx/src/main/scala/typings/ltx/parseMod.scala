@@ -5,18 +5,18 @@ import typings.ltx.parserMod.Parser
 import typings.ltx.parserMod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("ltx/lib/parse", "parse")
+  @JSImport("ltx/lib/parse", JSImport.Namespace)
   @js.native
-  def parse(data: String): Element = js.native
-  @JSImport("ltx/lib/parse", "parse")
-  @js.native
-  def parse(data: String, options: Parser): Element = js.native
-  @JSImport("ltx/lib/parse", "parse")
-  @js.native
-  def parse(data: String, options: ParserOptions): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(data: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def parse(data: String, options: Parser): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def parse(data: String, options: ParserOptions): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

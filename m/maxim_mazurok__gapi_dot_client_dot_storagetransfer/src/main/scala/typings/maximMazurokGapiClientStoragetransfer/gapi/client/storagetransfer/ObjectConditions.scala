@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectConditions extends StObject {
   
   /** `exclude_prefixes` must follow the requirements described for include_prefixes. The max size of `exclude_prefixes` is 1000. */
-  var excludePrefixes: js.UndefOr[js.Array[String]] = js.native
+  var excludePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If `include_prefixes` is specified, objects that satisfy the object conditions must have names that start with one of the `include_prefixes` and that do not start with any of the
@@ -21,29 +19,29 @@ trait ObjectConditions extends StObject {
     * prefix of another include-prefix. * Each exclude-prefix must exclude a distinct portion of the object namespace. No exclude-prefix may be a prefix of another exclude-prefix. * If
     * `include_prefixes` is specified, then each exclude-prefix must start with the value of a path explicitly included by `include_prefixes`. The max size of `include_prefixes` is 1000.
     */
-  var includePrefixes: js.UndefOr[js.Array[String]] = js.native
+  var includePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" will be transferred. */
-  var lastModifiedBefore: js.UndefOr[String] = js.native
+  var lastModifiedBefore: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, only objects with a "last modification time" on or after this timestamp and objects that don't have a "last modification time" are transferred. The
     * `last_modified_since` and `last_modified_before` fields can be used together for chunked data processing. For example, consider a script that processes each day's worth of data at a
     * time. For that you'd set each of the fields as follows: * `last_modified_since` to the start of the day * `last_modified_before` to the end of the day
     */
-  var lastModifiedSince: js.UndefOr[String] = js.native
+  var lastModifiedSince: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, only objects with a "last modification time" on or after `NOW` - `max_time_elapsed_since_last_modification` and objects that don't have a "last modification time" are
     * transferred. For each TransferOperation started by this TransferJob, `NOW` refers to the start_time of the `TransferOperation`.
     */
-  var maxTimeElapsedSinceLastModification: js.UndefOr[String] = js.native
+  var maxTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, only objects with a "last modification time" before `NOW` - `min_time_elapsed_since_last_modification` and objects that don't have a "last modification time" are
     * transferred. For each TransferOperation started by this TransferJob, `NOW` refers to the start_time of the `TransferOperation`.
     */
-  var minTimeElapsedSinceLastModification: js.UndefOr[String] = js.native
+  var minTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
 }
 object ObjectConditions {
   

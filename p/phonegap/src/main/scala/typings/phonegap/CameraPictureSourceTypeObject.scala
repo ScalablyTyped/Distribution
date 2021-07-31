@@ -2,17 +2,15 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraPictureSourceTypeObject extends StObject {
   
-  var CAMERA: Double = js.native
+  var CAMERA: Double
   
-  var PHOTOLIBRARY: Double = js.native
+  var PHOTOLIBRARY: Double
   
-  var SAVEDPHOTOALBUM: Double = js.native
+  var SAVEDPHOTOALBUM: Double
 }
 object CameraPictureSourceTypeObject {
   

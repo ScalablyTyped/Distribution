@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWebhookResult extends StObject {
   
   /**
     *  Describes the structure of a webhook. 
     */
-  var webhook: Webhook = js.native
+  var webhook: Webhook
 }
 object GetWebhookResult {
   

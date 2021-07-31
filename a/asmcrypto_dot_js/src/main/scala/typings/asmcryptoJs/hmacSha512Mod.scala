@@ -6,7 +6,6 @@ import typings.asmcryptoJs.sha512AsmMod.sha512result
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hmacSha512Mod {

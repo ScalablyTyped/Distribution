@@ -4,36 +4,34 @@ import typings.antvG2.mod.Styles.background
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@antv/g2.@antv/g2.ChartProps> */
-@js.native
 trait PartialChartProps extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
+  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.undefined
   
-  var container: js.UndefOr[String | HTMLDivElement] = js.native
+  var container: js.UndefOr[String | HTMLDivElement] = js.undefined
   
-  var data: js.UndefOr[js.Object | js.Any] = js.native
+  var data: js.UndefOr[js.Object | js.Any] = js.undefined
   
-  var forceFit: js.UndefOr[Boolean] = js.native
+  var forceFit: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   var padding: js.UndefOr[
     Bottom | Double | String | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String])
-  ] = js.native
+  ] = js.undefined
   
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
-  var plotBackground: js.UndefOr[background] = js.native
+  var plotBackground: js.UndefOr[background] = js.undefined
   
-  var theme: js.UndefOr[js.Object | String] = js.native
+  var theme: js.UndefOr[js.Object | String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialChartProps {
   

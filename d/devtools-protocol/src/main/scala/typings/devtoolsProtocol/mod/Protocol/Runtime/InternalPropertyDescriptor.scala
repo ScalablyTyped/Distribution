@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalPropertyDescriptor extends StObject {
   
   /**
     * Conventional property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value associated with the property.
     */
-  var value: js.UndefOr[RemoteObject] = js.native
+  var value: js.UndefOr[RemoteObject] = js.undefined
 }
 object InternalPropertyDescriptor {
   

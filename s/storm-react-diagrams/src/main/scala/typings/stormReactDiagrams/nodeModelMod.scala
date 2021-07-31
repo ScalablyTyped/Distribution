@@ -8,7 +8,6 @@ import typings.stormReactDiagrams.diagramModelMod.DiagramModel
 import typings.stormReactDiagrams.portModelMod.PortModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeModelMod {
@@ -17,8 +16,8 @@ object nodeModelMod {
   @js.native
   class NodeModel () extends BaseModel[DiagramModel, BaseModelListener] {
     def this(nodeType: String) = this()
-    def this(nodeType: js.UndefOr[scala.Nothing], id: String) = this()
     def this(nodeType: String, id: String) = this()
+    def this(nodeType: Unit, id: String) = this()
     
     def addPort[T /* <: PortModel */](port: T): T = js.native
     

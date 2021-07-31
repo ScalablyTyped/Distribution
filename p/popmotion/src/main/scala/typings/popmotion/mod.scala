@@ -19,42 +19,38 @@ import typings.popmotion.typesMod.SpringOptions
 import typings.styleValueTypes.typesMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("popmotion", "angle")
+  @JSImport("popmotion", JSImport.Namespace)
   @js.native
-  def angle(a: Point): Double = js.native
-  @JSImport("popmotion", "angle")
-  @js.native
-  def angle(a: Point, b: Point): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion", "animate")
-  @js.native
+  @scala.inline
+  def angle(a: Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def angle(a: Point, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def animate[V](
-    hasFromAutoplayDriverElapsedRepeatRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions: AnimationOptions[V]
-  ): Stop = js.native
+    hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions: AnimationOptions[V]
+  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions.asInstanceOf[js.Any]).asInstanceOf[Stop]
   
   @JSImport("popmotion", "anticipate")
   @js.native
   val anticipate: Easing = js.native
   
-  @JSImport("popmotion", "applyOffset")
-  @js.native
-  def applyOffset(from: Double): js.Function1[/* v */ Double, Double] = js.native
-  @JSImport("popmotion", "applyOffset")
-  @js.native
-  def applyOffset(from: Double, to: Double): js.Function1[/* v */ Double, Double] = js.native
+  @scala.inline
+  def applyOffset(from: Double): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyOffset")(from.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
+  @scala.inline
+  def applyOffset(from: Double, to: Double): js.Function1[/* v */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOffset")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, Double]]
   
-  @JSImport("popmotion", "attract")
-  @js.native
-  def attract(constant: Double, origin: Double, v: Double): Double = js.native
+  @scala.inline
+  def attract(constant: Double, origin: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("attract")(constant.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "attractExpo")
-  @js.native
-  def attractExpo(constant: Double, origin: Double, v: Double): Double = js.native
+  @scala.inline
+  def attractExpo(constant: Double, origin: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("attractExpo")(constant.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("popmotion", "backIn")
   @js.native
@@ -72,13 +68,11 @@ object mod {
   @js.native
   val bounceIn: Easing = js.native
   
-  @JSImport("popmotion", "bounceInOut")
-  @js.native
-  def bounceInOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceInOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceInOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("popmotion", "bounceOut")
-  @js.native
-  def bounceOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("popmotion", "circIn")
   @js.native
@@ -92,50 +86,38 @@ object mod {
   @js.native
   val circOut: Easing = js.native
   
-  @JSImport("popmotion", "clamp")
-  @js.native
-  def clamp(min: Double, max: Double, v: Double): Double = js.native
+  @scala.inline
+  def clamp(min: Double, max: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "createAnticipate")
-  @js.native
-  def createAnticipate(power: Double): Easing = js.native
+  @scala.inline
+  def createAnticipate(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnticipate")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("popmotion", "createAttractor")
-  @js.native
-  def createAttractor(): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = js.native
-  @JSImport("popmotion", "createAttractor")
-  @js.native
-  def createAttractor(alterDisplacement: js.Function): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = js.native
+  @scala.inline
+  def createAttractor(): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttractor")().asInstanceOf[js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double]]
+  @scala.inline
+  def createAttractor(alterDisplacement: js.Function): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttractor")(alterDisplacement.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double]]
   
-  @JSImport("popmotion", "createBackIn")
-  @js.native
-  def createBackIn(power: Double): Easing = js.native
+  @scala.inline
+  def createBackIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createBackIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("popmotion", "createExpoIn")
-  @js.native
-  def createExpoIn(power: Double): Easing = js.native
+  @scala.inline
+  def createExpoIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpoIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("popmotion", "cubicBezier")
-  @js.native
-  def cubicBezier(mX1: Double, mY1: Double, mX2: Double, mY2: Double): Easing = js.native
+  @scala.inline
+  def cubicBezier(mX1: Double, mY1: Double, mX2: Double, mY2: Double): Easing = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicBezier")(mX1.asInstanceOf[js.Any], mY1.asInstanceOf[js.Any], mX2.asInstanceOf[js.Any], mY2.asInstanceOf[js.Any])).asInstanceOf[Easing]
   
-  @JSImport("popmotion", "decay")
-  @js.native
-  def decay(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget: DecayOptions): Animation[Double] = js.native
+  @scala.inline
+  def decay(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget: DecayOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decay")(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
   
-  @JSImport("popmotion", "degreesToRadians")
-  @js.native
-  def degreesToRadians(degrees: Double): Double = js.native
+  @scala.inline
+  def degreesToRadians(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("popmotion", "distance")
-  @js.native
-  def distance(a: Double, b: Double): Double = js.native
-  @JSImport("popmotion", "distance")
-  @js.native
-  def distance(a: Point3D, b: Point3D): Double = js.native
-  @JSImport("popmotion", "distance")
-  @js.native
-  def distance[P /* <: X */](a: P, b: P): Double = js.native
+  @scala.inline
+  def distance(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def distance(a: Point3D, b: Point3D): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def distance[P /* <: X */](a: P, b: P): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("popmotion", "easeIn")
   @js.native
@@ -149,30 +131,24 @@ object mod {
   @js.native
   val easeOut: Easing = js.native
   
-  @JSImport("popmotion", "inertia")
-  @js.native
+  @scala.inline
   def inertia(
     hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnComplete: InertiaOptions
-  ): Stop = js.native
+  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnComplete.asInstanceOf[js.Any]).asInstanceOf[Stop]
   
-  @JSImport("popmotion", "interpolate")
-  @js.native
-  def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = js.native
-  @JSImport("popmotion", "interpolate")
-  @js.native
-  def interpolate[T](input: js.Array[Double], output: js.Array[T], hasClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = js.native
+  @scala.inline
+  def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
+  @scala.inline
+  def interpolate[T](input: js.Array[Double], output: js.Array[T], hasIsClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasIsClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
   
-  @JSImport("popmotion", "isPoint")
-  @js.native
-  def isPoint(point: js.Object): /* is popmotion.popmotion/lib/types.Point */ Boolean = js.native
+  @scala.inline
+  def isPoint(point: js.Object): /* is popmotion.popmotion/lib/types.Point */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point */ Boolean]
   
-  @JSImport("popmotion", "isPoint3D")
-  @js.native
-  def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = js.native
+  @scala.inline
+  def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint3D")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point3D */ Boolean]
   
-  @JSImport("popmotion", "keyframes")
-  @js.native
-  def keyframes[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = js.native
+  @scala.inline
+  def keyframes[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(hasFromToEaseOffsetDuration.asInstanceOf[js.Any]).asInstanceOf[Animation[Double | String]]
   
   @JSImport("popmotion", "linear")
   @js.native
@@ -182,73 +158,57 @@ object mod {
   @js.native
   val mirrorEasing: EasingModifier = js.native
   
-  @JSImport("popmotion", "mix")
-  @js.native
-  def mix(from: Double, to: Double, progress: Double): Double = js.native
+  @scala.inline
+  def mix(from: Double, to: Double, progress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "mixColor")
-  @js.native
-  def mixColor(from: String, to: String): js.Function1[/* v */ Double, _] = js.native
-  @JSImport("popmotion", "mixColor")
-  @js.native
-  def mixColor(from: String, to: Color): js.Function1[/* v */ Double, _] = js.native
-  @JSImport("popmotion", "mixColor")
-  @js.native
-  def mixColor(from: Color, to: String): js.Function1[/* v */ Double, _] = js.native
-  @JSImport("popmotion", "mixColor")
-  @js.native
-  def mixColor(from: Color, to: Color): js.Function1[/* v */ Double, _] = js.native
+  @scala.inline
+  def mixColor(from: String, to: String): js.Function1[/* v */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixColor")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Any]]
+  @scala.inline
+  def mixColor(from: String, to: Color): js.Function1[/* v */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixColor")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Any]]
+  @scala.inline
+  def mixColor(from: Color, to: String): js.Function1[/* v */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixColor")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Any]]
+  @scala.inline
+  def mixColor(from: Color, to: Color): js.Function1[/* v */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixColor")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Any]]
   
-  @JSImport("popmotion", "mixComplex")
-  @js.native
-  def mixComplex(origin: String, target: String): MixComplex_ = js.native
+  @scala.inline
+  def mixComplex(origin: String, target: String): MixComplex_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mixComplex")(origin.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[MixComplex_]
   
-  @JSImport("popmotion", "pipe")
-  @js.native
-  def pipe(transformers: js.Function*): js.Function = js.native
+  @scala.inline
+  def pipe(transformers: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(transformers.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("popmotion", "pointFromVector")
-  @js.native
-  def pointFromVector(origin: Point2D, angle: Double, distance: Double): X = js.native
+  @scala.inline
+  def pointFromVector(origin: Point2D, angle: Double, distance: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("pointFromVector")(origin.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[X]
   
-  @JSImport("popmotion", "progress")
-  @js.native
-  def progress(from: Double, to: Double, value: Double): Double = js.native
+  @scala.inline
+  def progress(from: Double, to: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("progress")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "radiansToDegrees")
-  @js.native
-  def radiansToDegrees(radians: Double): Double = js.native
+  @scala.inline
+  def radiansToDegrees(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radiansToDegrees")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("popmotion", "reverseEasing")
   @js.native
   val reverseEasing: EasingModifier = js.native
   
-  @JSImport("popmotion", "smooth")
-  @js.native
-  def smooth(): js.Function1[/* v */ Double, Double] = js.native
-  @JSImport("popmotion", "smooth")
-  @js.native
-  def smooth(strength: Double): js.Function1[/* v */ Double, Double] = js.native
+  @scala.inline
+  def smooth(): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("smooth")().asInstanceOf[js.Function1[/* v */ Double, Double]]
+  @scala.inline
+  def smooth(strength: Double): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(strength.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
   
-  @JSImport("popmotion", "smoothFrame")
-  @js.native
-  def smoothFrame(prevValue: Double, nextValue: Double, duration: Double): Double = js.native
-  @JSImport("popmotion", "smoothFrame")
-  @js.native
-  def smoothFrame(prevValue: Double, nextValue: Double, duration: Double, smoothing: Double): Double = js.native
+  @scala.inline
+  def smoothFrame(prevValue: Double, nextValue: Double, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smoothFrame")(prevValue.asInstanceOf[js.Any], nextValue.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def smoothFrame(prevValue: Double, nextValue: Double, duration: Double, smoothing: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smoothFrame")(prevValue.asInstanceOf[js.Any], nextValue.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], smoothing.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "snap")
-  @js.native
-  def snap(points: js.Array[Double]): js.Function1[/* v */ Double, Double] = js.native
-  @JSImport("popmotion", "snap")
-  @js.native
-  def snap(points: Double): js.Function1[/* v */ Double, Double] = js.native
+  @scala.inline
+  def snap(points: js.Array[Double]): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
+  @scala.inline
+  def snap(points: Double): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
   
   object spring {
     
-    @JSImport("popmotion", "spring")
-    @js.native
-    def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = js.native
+    @scala.inline
+    def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].apply(hasFromToRestSpeedRestDeltaOptions.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
+    
     @JSImport("popmotion", "spring")
     @js.native
     val ^ : js.Any = js.native
@@ -260,29 +220,22 @@ object mod {
     def needsInterpolation_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("needsInterpolation")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("popmotion", "steps")
-  @js.native
-  def steps(steps: Double): Easing = js.native
-  @JSImport("popmotion", "steps")
-  @js.native
-  def steps(steps: Double, direction: Direction): Easing = js.native
+  @scala.inline
+  def steps(steps: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any]).asInstanceOf[Easing]
+  @scala.inline
+  def steps(steps: Double, direction: Direction): Easing = (^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Easing]
   
-  @JSImport("popmotion", "toDecimal")
-  @js.native
-  def toDecimal(num: Double): Double = js.native
-  @JSImport("popmotion", "toDecimal")
-  @js.native
-  def toDecimal(num: Double, precision: Double): Double = js.native
+  @scala.inline
+  def toDecimal(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def toDecimal(num: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(num.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "velocityPerFrame")
-  @js.native
-  def velocityPerFrame(xps: Double, frameDuration: Double): Double = js.native
+  @scala.inline
+  def velocityPerFrame(xps: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerFrame")(xps.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "velocityPerSecond")
-  @js.native
-  def velocityPerSecond(velocity: Double, frameDuration: Double): Double = js.native
+  @scala.inline
+  def velocityPerSecond(velocity: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerSecond")(velocity.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion", "wrap")
-  @js.native
-  def wrap(min: Double, max: Double, v: Double): Double = js.native
+  @scala.inline
+  def wrap(min: Double, max: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstancePatchStatesRequest extends StObject {
   
   /**
     * The ID of the instance whose patch state information should be retrieved.
     */
-  var InstanceIds: InstanceIdList = js.native
+  var InstanceIds: InstanceIdList
   
   /**
     * The maximum number of instances to return (per page).
     */
-  var MaxResults: js.UndefOr[PatchComplianceMaxResults] = js.native
+  var MaxResults: js.UndefOr[PatchComplianceMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeInstancePatchStatesRequest {
   

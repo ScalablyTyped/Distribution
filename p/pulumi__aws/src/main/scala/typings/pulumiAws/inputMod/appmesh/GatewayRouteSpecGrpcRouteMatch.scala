@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteSpecGrpcRouteMatch extends StObject {
   
   /**
     * The fully qualified domain name for the service to match from the request.
     */
-  var serviceName: Input[String] = js.native
+  var serviceName: Input[String]
 }
 object GatewayRouteSpecGrpcRouteMatch {
   

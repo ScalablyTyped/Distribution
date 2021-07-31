@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("mime-db", JSImport.Namespace)
   @js.native
-  val ^ : MimeDatabase = js.native
+  val ^ : js.Object & MimeDatabase = js.native
   
   /**
     * @see {@link https://github.com/jshttp/mime-db#data-structure}
@@ -21,23 +20,22 @@ object mod extends Shortcut {
   /**
     * @see {@link https://github.com/jshttp/mime-db#data-structure}
     */
-  @js.native
   trait MimeEntry extends StObject {
     
     /** The default charset associated with this type, if any. */
-    val charset: js.UndefOr[String] = js.native
+    val charset: js.UndefOr[String] = js.undefined
     
     /** Whether a file of this type can be gzipped. */
-    val compressible: js.UndefOr[Boolean] = js.native
+    val compressible: js.UndefOr[Boolean] = js.undefined
     
     /** Known extensions associated with this mime type. */
-    val extensions: js.UndefOr[js.Array[String]] = js.native
+    val extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Where the mime type is defined.
       * If not set, it's probably a custom media type.
       */
-    val source: js.UndefOr[MimeSource] = js.native
+    val source: js.UndefOr[MimeSource] = js.undefined
   }
   object MimeEntry {
     
@@ -103,8 +101,8 @@ object mod extends Shortcut {
     def nginx: typings.mimeDb.mimeDbStrings.nginx = "nginx".asInstanceOf[typings.mimeDb.mimeDbStrings.nginx]
   }
   
-  type _To = MimeDatabase
+  type _To = js.Object & MimeDatabase
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: MimeDatabase = ^
+  override def _to: js.Object & MimeDatabase = ^
 }

@@ -4,7 +4,6 @@ import typings.chrome.chrome.idle.IdleState
 import typings.chrome.chrome.idle.IdleStateChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -21,9 +20,8 @@ object idle {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.idle.getAutoLockDelay")
-  @js.native
-  def getAutoLockDelay(callback: js.Function1[/* delay */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def getAutoLockDelay(callback: js.Function1[/* delay */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoLockDelay")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.idle.onStateChanged")
   @js.native
@@ -31,11 +29,9 @@ object idle {
   @scala.inline
   def onStateChanged_=(x: IdleStateChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStateChanged")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.idle.queryState")
-  @js.native
-  def queryState(detectionIntervalInSeconds: Double, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = js.native
+  @scala.inline
+  def queryState(detectionIntervalInSeconds: Double, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queryState")(detectionIntervalInSeconds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.idle.setDetectionInterval")
-  @js.native
-  def setDetectionInterval(intervalInSeconds: Double): Unit = js.native
+  @scala.inline
+  def setDetectionInterval(intervalInSeconds: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDetectionInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

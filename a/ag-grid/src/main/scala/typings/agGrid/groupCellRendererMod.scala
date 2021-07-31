@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupCellRendererMod {
@@ -95,6 +94,10 @@ object groupCellRendererMod {
     var params: js.Any = js.native
     
     def refresh(): Boolean = js.native
+    /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
+      * then the grid will refresh the cell for you. */
+    /* CompleteClass */
+    override def refresh(params: js.Any): Boolean = js.native
     
     /* private */ def setIndent(): js.Any = js.native
     
@@ -124,28 +127,29 @@ object groupCellRendererMod {
     def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait GroupCellRendererParams extends ICellRendererParams {
+  trait GroupCellRendererParams
+    extends StObject
+       with ICellRendererParams {
     
-    var actualValue: String = js.native
+    var actualValue: String
     
-    var checkbox: js.Any = js.native
+    var checkbox: js.Any
     
-    var footerValueGetter: js.Any = js.native
+    var footerValueGetter: js.Any
     
-    var fullWidth: Boolean = js.native
+    var fullWidth: Boolean
     
-    var padding: Double = js.native
+    var padding: Double
     
-    var pinned: String = js.native
+    var pinned: String
     
-    var scope: js.Any = js.native
+    var scope: js.Any
     
-    var suppressCount: Boolean = js.native
+    var suppressCount: Boolean
     
-    var suppressDoubleClickExpand: Boolean = js.native
+    var suppressDoubleClickExpand: Boolean
     
-    var suppressPadding: Boolean = js.native
+    var suppressPadding: Boolean
   }
   object GroupCellRendererParams {
     

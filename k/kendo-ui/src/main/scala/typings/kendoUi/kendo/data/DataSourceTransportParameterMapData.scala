@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceTransportParameterMapData extends StObject {
   
-  var aggregate: js.UndefOr[js.Array[DataSourceParameterMapDataAggregate]] = js.native
+  var aggregate: js.UndefOr[js.Array[DataSourceParameterMapDataAggregate]] = js.undefined
   
-  var filter: js.UndefOr[DataSourceParameterMapDataFilter] = js.native
+  var filter: js.UndefOr[DataSourceParameterMapDataFilter] = js.undefined
   
-  var group: js.UndefOr[js.Array[DataSourceParameterMapDataGroup]] = js.native
+  var group: js.UndefOr[js.Array[DataSourceParameterMapDataGroup]] = js.undefined
   
-  var models: js.UndefOr[js.Array[Model]] = js.native
+  var models: js.UndefOr[js.Array[Model]] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[js.Array[DataSourceParameterMapDataSort]] = js.native
+  var sort: js.UndefOr[js.Array[DataSourceParameterMapDataSort]] = js.undefined
   
-  var take: js.UndefOr[Double] = js.native
+  var take: js.UndefOr[Double] = js.undefined
 }
 object DataSourceTransportParameterMapData {
   

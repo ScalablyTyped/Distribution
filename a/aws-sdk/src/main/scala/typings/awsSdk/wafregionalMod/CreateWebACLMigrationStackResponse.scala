@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWebACLMigrationStackResponse extends StObject {
   
   /**
     * The URL of the template created in Amazon S3. 
     */
-  var S3ObjectUrl: typings.awsSdk.wafregionalMod.S3ObjectUrl = js.native
+  var S3ObjectUrl: typings.awsSdk.wafregionalMod.S3ObjectUrl
 }
 object CreateWebACLMigrationStackResponse {
   

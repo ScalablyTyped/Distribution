@@ -2,32 +2,50 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kineticMod {
   
   @JSImport("ol/Kinetic", JSImport.Default)
   @js.native
-  class default protected () extends Kinetic {
+  class default protected ()
+    extends StObject
+       with Kinetic {
     def this(decay: Double, minVelocity: Double, delay: Double) = this()
+    
+    /**
+      * FIXME empty description for jsdoc
+      */
+    /* CompleteClass */
+    override def begin(): Unit = js.native
+    
+    /* CompleteClass */
+    override def end(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def getAngle(): Double = js.native
+    
+    /* CompleteClass */
+    override def getDistance(): Double = js.native
+    
+    /* CompleteClass */
+    override def update(x: Double, y: Double): Unit = js.native
   }
   
-  @js.native
   trait Kinetic extends StObject {
     
     /**
       * FIXME empty description for jsdoc
       */
-    def begin(): Unit = js.native
+    def begin(): Unit
     
-    def end(): Boolean = js.native
+    def end(): Boolean
     
-    def getAngle(): Double = js.native
+    def getAngle(): Double
     
-    def getDistance(): Double = js.native
+    def getDistance(): Double
     
-    def update(x: Double, y: Double): Unit = js.native
+    def update(x: Double, y: Double): Unit
   }
   object Kinetic {
     

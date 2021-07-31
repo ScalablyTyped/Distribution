@@ -3,27 +3,25 @@ package typings.googleGax.iamServiceMod.google.protobuf
 import typings.googleGax.iamServiceMod.google.protobuf.EnumDescriptorProto.IEnumReservedRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EnumDescriptorProto. */
-@js.native
 trait IEnumDescriptorProto extends StObject {
   
   /** EnumDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** EnumDescriptorProto options */
-  var options: js.UndefOr[IEnumOptions | Null] = js.native
+  var options: js.UndefOr[IEnumOptions | Null] = js.undefined
   
   /** EnumDescriptorProto reservedName */
-  var reservedName: js.UndefOr[js.Array[String] | Null] = js.native
+  var reservedName: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** EnumDescriptorProto reservedRange */
-  var reservedRange: js.UndefOr[js.Array[IEnumReservedRange] | Null] = js.native
+  var reservedRange: js.UndefOr[js.Array[IEnumReservedRange] | Null] = js.undefined
   
   /** EnumDescriptorProto value */
-  var value: js.UndefOr[js.Array[IEnumValueDescriptorProto] | Null] = js.native
+  var value: js.UndefOr[js.Array[IEnumValueDescriptorProto] | Null] = js.undefined
 }
 object IEnumDescriptorProto {
   

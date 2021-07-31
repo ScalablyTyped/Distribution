@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCapacityProviderResponse extends StObject {
   
   /**
     * The full description of the new capacity provider.
     */
-  var capacityProvider: js.UndefOr[CapacityProvider] = js.native
+  var capacityProvider: js.UndefOr[CapacityProvider] = js.undefined
 }
 object CreateCapacityProviderResponse {
   

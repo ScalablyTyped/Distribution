@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipeVersionErrorDetail extends StObject {
   
   /**
     * The HTTP status code for the error.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.databrewMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.databrewMod.ErrorCode] = js.undefined
   
   /**
     * The text of the error message.
     */
-  var ErrorMessage: js.UndefOr[RecipeErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[RecipeErrorMessage] = js.undefined
   
   /**
     * The identifier for the recipe version associated with this error.
     */
-  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.native
+  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.undefined
 }
 object RecipeVersionErrorDetail {
   

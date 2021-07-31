@@ -3,7 +3,6 @@ package typings.cliColor
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moveMod extends Shortcut {
@@ -22,9 +21,9 @@ object moveMod extends Shortcut {
       * Move cursor x columns and y rows away. Values can be positive or negative
       */
     def apply(): String = js.native
-    def apply(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
     def apply(x: Double): String = js.native
     def apply(x: Double, y: Double): String = js.native
+    def apply(x: Unit, y: Double): String = js.native
     
     /**
       * Move cursor to bottom of a screen
@@ -69,9 +68,9 @@ object moveMod extends Shortcut {
       * Absolute move. Sets cursor position at x column and y row
       */
     def to(): String = js.native
-    def to(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
     def to(x: Double): String = js.native
     def to(x: Double, y: Double): String = js.native
+    def to(x: Unit, y: Double): String = js.native
     
     /**
       * Move cursor to top of a screen

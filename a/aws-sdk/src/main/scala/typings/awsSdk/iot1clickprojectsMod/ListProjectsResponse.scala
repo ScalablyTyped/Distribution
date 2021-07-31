@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProjectsResponse extends StObject {
   
   /**
     * The token used to retrieve the next set of results - will be effectively empty if there are no further results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An object containing the list of projects.
     */
-  var projects: ProjectSummaryList = js.native
+  var projects: ProjectSummaryList
 }
 object ListProjectsResponse {
   

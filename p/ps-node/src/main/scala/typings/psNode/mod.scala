@@ -4,74 +4,53 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ps-node", "kill")
+  @JSImport("ps-node", JSImport.Namespace)
   @js.native
-  def kill(pID: String): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(
-    pID: String,
-    signal: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: String, signal: String): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: String, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: String, signal: Signal): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: String, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(
-    pID: Double,
-    signal: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double, signal: String): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double, signal: Signal): Unit = js.native
-  @JSImport("ps-node", "kill")
-  @js.native
-  def kill(pID: Double, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ps-node", "lookup")
-  @js.native
-  def lookup(query: Query, cb: js.Function2[/* err */ Error, /* list */ js.Array[Program], Unit]): Unit = js.native
+  @scala.inline
+  def kill(pID: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, signal: Signal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: String, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, signal: Signal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pID: Double, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def lookup(query: Query, cb: js.Function2[/* err */ Error, /* list */ js.Array[Program], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(query.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Program extends StObject {
     
-    var arguments: js.Array[String] = js.native
+    var arguments: js.Array[String]
     
-    var command: String = js.native
+    var command: String
     
-    var pid: Double = js.native
+    var pid: Double
   }
   object Program {
     
@@ -98,18 +77,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var arguments: js.UndefOr[String | RegExp] = js.native
+    var arguments: js.UndefOr[String | RegExp] = js.undefined
     
-    var command: js.UndefOr[String | RegExp] = js.native
+    var command: js.UndefOr[String | RegExp] = js.undefined
     
-    var pid: js.UndefOr[String | js.Array[String] | Double] = js.native
+    var pid: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
-    var ppid: js.UndefOr[Double] = js.native
+    var ppid: js.UndefOr[Double] = js.undefined
     
-    var psargs: js.UndefOr[String | js.Array[String]] = js.native
+    var psargs: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Query {
     
@@ -160,12 +138,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Signal extends StObject {
     
-    var signal: String = js.native
+    var signal: String
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Signal {
     

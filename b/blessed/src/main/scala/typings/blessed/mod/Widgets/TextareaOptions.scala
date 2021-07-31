@@ -2,19 +2,19 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A box which allows multiline text input.
   */
-@js.native
-trait TextareaOptions extends BoxOptions {
+trait TextareaOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Call readInput() when the element is focused. Automatically unfocus.
     */
-  var inputOnFocus: js.UndefOr[Boolean] = js.native
+  var inputOnFocus: js.UndefOr[Boolean] = js.undefined
 }
 object TextareaOptions {
   

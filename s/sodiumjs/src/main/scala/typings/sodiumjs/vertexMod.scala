@@ -3,10 +3,13 @@ package typings.sodiumjs
 import typings.typescriptCollections.mod.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vertexMod {
+  
+  @JSImport("sodiumjs/dist/typings/sodium/Vertex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Color extends StObject
@@ -15,23 +18,31 @@ object vertexMod {
   object Color extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Color with Double] = js.native
+    def apply(value: Double): js.UndefOr[Color & Double] = js.native
     
     @js.native
-    sealed trait black extends Color
-    /* 0 */ val black: typings.sodiumjs.vertexMod.Color.black with Double = js.native
+    sealed trait black
+      extends StObject
+         with Color
+    /* 0 */ val black: typings.sodiumjs.vertexMod.Color.black & Double = js.native
     
     @js.native
-    sealed trait gray extends Color
-    /* 1 */ val gray: typings.sodiumjs.vertexMod.Color.gray with Double = js.native
+    sealed trait gray
+      extends StObject
+         with Color
+    /* 1 */ val gray: typings.sodiumjs.vertexMod.Color.gray & Double = js.native
     
     @js.native
-    sealed trait purple extends Color
-    /* 3 */ val purple: typings.sodiumjs.vertexMod.Color.purple with Double = js.native
+    sealed trait purple
+      extends StObject
+         with Color
+    /* 3 */ val purple: typings.sodiumjs.vertexMod.Color.purple & Double = js.native
     
     @js.native
-    sealed trait white extends Color
-    /* 2 */ val white: typings.sodiumjs.vertexMod.Color.white with Double = js.native
+    sealed trait white
+      extends StObject
+         with Color
+    /* 2 */ val white: typings.sodiumjs.vertexMod.Color.white & Double = js.native
   }
   
   @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Source")
@@ -126,13 +137,11 @@ object vertexMod {
     @scala.inline
     def NULL_=(x: Vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
     
-    @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.collectCycles")
-    @js.native
-    def collectCycles(): Unit = js.native
+    @scala.inline
+    def collectCycles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectCycles")().asInstanceOf[Unit]
     
-    @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.collectRoots")
-    @js.native
-    def collectRoots(): Unit = js.native
+    @scala.inline
+    def collectRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectRoots")().asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.collectingCycles")
     @js.native
@@ -140,13 +149,11 @@ object vertexMod {
     @scala.inline
     def collectingCycles_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectingCycles")(x.asInstanceOf[js.Any])
     
-    @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.markRoots")
-    @js.native
-    def markRoots(): Unit = js.native
+    @scala.inline
+    def markRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markRoots")().asInstanceOf[Unit]
     
-    @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.scanRoots")
-    @js.native
-    def scanRoots(): Unit = js.native
+    @scala.inline
+    def scanRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanRoots")().asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.toBeFreedList")
     @js.native
@@ -155,15 +162,12 @@ object vertexMod {
     def toBeFreedList_=(x: js.Array[Vertex]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toBeFreedList")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("sodiumjs/dist/typings/sodium/Vertex", "describeAll")
-  @js.native
-  def describeAll(v: Vertex, visited: Set[Double]): Unit = js.native
+  @scala.inline
+  def describeAll(v: Vertex, visited: Set[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAll")(v.asInstanceOf[js.Any], visited.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("sodiumjs/dist/typings/sodium/Vertex", "getTotalRegistrations")
-  @js.native
-  def getTotalRegistrations(): Double = js.native
+  @scala.inline
+  def getTotalRegistrations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalRegistrations")().asInstanceOf[Double]
   
-  @JSImport("sodiumjs/dist/typings/sodium/Vertex", "setVerbose")
-  @js.native
-  def setVerbose(v: Boolean): Unit = js.native
+  @scala.inline
+  def setVerbose(v: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbose")(v.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

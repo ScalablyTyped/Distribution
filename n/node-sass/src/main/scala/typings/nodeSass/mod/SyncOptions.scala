@@ -2,17 +2,17 @@ package typings.nodeSass.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyncOptions extends Options {
+trait SyncOptions
+  extends StObject
+     with Options {
   
   @JSName("functions")
-  var functions_SyncOptions: js.UndefOr[FunctionDeclarations[SyncSassFunction]] = js.native
+  var functions_SyncOptions: js.UndefOr[FunctionDeclarations[SyncSassFunction]] = js.undefined
   
   @JSName("importer")
-  var importer_SyncOptions: js.UndefOr[SyncImporter | js.Array[SyncImporter]] = js.native
+  var importer_SyncOptions: js.UndefOr[SyncImporter | js.Array[SyncImporter]] = js.undefined
 }
 object SyncOptions {
   

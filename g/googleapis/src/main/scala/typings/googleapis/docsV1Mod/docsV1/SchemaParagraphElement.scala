@@ -2,66 +2,64 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ParagraphElement describes content within a Paragraph.
   */
-@js.native
 trait SchemaParagraphElement extends StObject {
   
   /**
     * An auto text paragraph element.
     */
-  var autoText: js.UndefOr[SchemaAutoText] = js.native
+  var autoText: js.UndefOr[SchemaAutoText] = js.undefined
   
   /**
     * A column break paragraph element.
     */
-  var columnBreak: js.UndefOr[SchemaColumnBreak] = js.native
+  var columnBreak: js.UndefOr[SchemaColumnBreak] = js.undefined
   
   /**
     * The zero-base end index of this paragraph element, exclusive, in UTF-16
     * code units.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * An equation paragraph element.
     */
-  var equation: js.UndefOr[SchemaEquation] = js.native
+  var equation: js.UndefOr[SchemaEquation] = js.undefined
   
   /**
     * A footnote reference paragraph element.
     */
-  var footnoteReference: js.UndefOr[SchemaFootnoteReference] = js.native
+  var footnoteReference: js.UndefOr[SchemaFootnoteReference] = js.undefined
   
   /**
     * A horizontal rule paragraph element.
     */
-  var horizontalRule: js.UndefOr[SchemaHorizontalRule] = js.native
+  var horizontalRule: js.UndefOr[SchemaHorizontalRule] = js.undefined
   
   /**
     * An inline object paragraph element.
     */
-  var inlineObjectElement: js.UndefOr[SchemaInlineObjectElement] = js.native
+  var inlineObjectElement: js.UndefOr[SchemaInlineObjectElement] = js.undefined
   
   /**
     * A page break paragraph element.
     */
-  var pageBreak: js.UndefOr[SchemaPageBreak] = js.native
+  var pageBreak: js.UndefOr[SchemaPageBreak] = js.undefined
   
   /**
     * The zero-based start index of this paragraph element, in UTF-16 code
     * units.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A text run paragraph element.
     */
-  var textRun: js.UndefOr[SchemaTextRun] = js.native
+  var textRun: js.UndefOr[SchemaTextRun] = js.undefined
 }
 object SchemaParagraphElement {
   

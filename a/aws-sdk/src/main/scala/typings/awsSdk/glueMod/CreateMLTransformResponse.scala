@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMLTransformResponse extends StObject {
   
   /**
     * A unique identifier that is generated for the transform.
     */
-  var TransformId: js.UndefOr[HashString] = js.native
+  var TransformId: js.UndefOr[HashString] = js.undefined
 }
 object CreateMLTransformResponse {
   

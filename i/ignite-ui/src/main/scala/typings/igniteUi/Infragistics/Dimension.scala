@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Dimension extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns a user-friendly description of the dimension.
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the type of the dimension which is a value from the $.ig.DimensionType enumeration.
@@ -45,21 +43,21 @@ trait Dimension extends StObject {
     *
     * @param value
     */
-  def dimensionType(value: js.Object): Double = js.native
+  def dimensionType(value: js.Object): Double
   
   /**
     * Returns the name of the dimension.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
   
   /**
     * Returns the unique name of the dimension.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object Dimension {
   

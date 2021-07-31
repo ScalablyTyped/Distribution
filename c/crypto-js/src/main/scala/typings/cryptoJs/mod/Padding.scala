@@ -2,13 +2,11 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Padding strategy.
   */
-@js.native
 trait Padding extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait Padding extends StObject {
     *
     *     CryptoJS.pad.Pkcs7.pad(wordArray, 4);
     */
-  def pad(data: WordArray, blockSize: Double): Unit = js.native
+  def pad(data: WordArray, blockSize: Double): Unit
   
   /**
     * Unpads data that had been padded using the algorithm defined in PKCS #5/7.
@@ -32,7 +30,7 @@ trait Padding extends StObject {
     *
     *     CryptoJS.pad.Pkcs7.unpad(wordArray);
     */
-  def unpad(data: WordArray): Unit = js.native
+  def unpad(data: WordArray): Unit
 }
 object Padding {
   

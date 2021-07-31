@@ -8,21 +8,19 @@ import typings.activexOffice.Office.MsoTextOrientation
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasShapes extends StObject {
   
-  def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
-  def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
+  def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape
   
-  def AddCurve(SafeArrayOfPoints: js.Any): Shape = js.native
+  def AddCurve(SafeArrayOfPoints: js.Any): Shape
   
-  def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
-  def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
+  def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape
   
   def AddPicture(
     FileName: String,
@@ -32,11 +30,11 @@ trait CanvasShapes extends StObject {
     Top: js.UndefOr[js.Any],
     Width: js.UndefOr[js.Any],
     Height: js.UndefOr[js.Any]
-  ): Shape = js.native
+  ): Shape
   
-  def AddPolyline(SafeArrayOfPoints: js.Any): Shape = js.native
+  def AddPolyline(SafeArrayOfPoints: js.Any): Shape
   
-  def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,
@@ -47,28 +45,28 @@ trait CanvasShapes extends StObject {
     FontItalic: MsoTriState,
     Left: Double,
     Top: Double
-  ): Shape = js.native
+  ): Shape
   
-  def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def BuildFreeform(EditingType: MsoEditingType, X1: Double, Y1: Double): FreeformBuilder = js.native
+  def BuildFreeform(EditingType: MsoEditingType, X1: Double, Y1: Double): FreeformBuilder
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: js.Any): Shape
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: js.Any): ShapeRange
   
-  def SelectAll(): Unit = js.native
+  def SelectAll(): Unit
   
   @JSName("Word.CanvasShapes_typekey")
-  var WordDotCanvasShapes_typekey: CanvasShapes = js.native
+  var WordDotCanvasShapes_typekey: CanvasShapes
 }
 object CanvasShapes {
   

@@ -2,15 +2,13 @@ package typings.createjsLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    def handleEvent(eventObj: js.Object): Unit = js.native
+    def handleEvent(eventObj: js.Object): Unit
   }
   object `0` {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HandleEvent extends StObject {
     
-    def handleEvent(eventObj: js.Object): Boolean = js.native
+    def handleEvent(eventObj: js.Object): Boolean
   }
   object HandleEvent {
     

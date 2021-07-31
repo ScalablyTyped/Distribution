@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemsMoved event.
   */
-@js.native
-trait ASPxClientFileManagerItemsMovedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerItemsMovedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an array of the currently processed items.
     */
-  var items: js.Array[ASPxClientFileManagerItem] = js.native
+  var items: js.Array[ASPxClientFileManagerItem]
   
   /**
     * Gets the full name of the folder from which items are moved.
     */
-  var oldFolderFullName: String = js.native
+  var oldFolderFullName: String
 }
 object ASPxClientFileManagerItemsMovedEventArgs {
   

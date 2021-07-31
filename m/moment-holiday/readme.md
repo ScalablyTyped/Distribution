@@ -10,9 +10,9 @@ A Moment.js plugin for handling holidays.
 | ------------------ | :-------------: |
 | Full name          | moment-holiday |
 | Keywords           | moment, momentjs, holiday, holidays, calculation, united states, us, canada, croatia, denmark, hrvatska, india, easter, finland, germany |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 152726 |
+| # downloads        | 178305 |
 | # stars            | 1 |
 
 ## Links

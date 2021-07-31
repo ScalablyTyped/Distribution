@@ -3,17 +3,15 @@ package typings.akuminaCore
 import typings.akuminaCore.ipagewidgetMod.IPageWidget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isavepagewidgetrequestMod {
   
-  @js.native
   trait ISavePageWidgetRequest extends StObject {
     
-    var pageId: String = js.native
+    var pageId: String
     
-    var pageWidgets: js.Array[IPageWidget] = js.native
+    var pageWidgets: js.Array[IPageWidget]
   }
   object ISavePageWidgetRequest {
     

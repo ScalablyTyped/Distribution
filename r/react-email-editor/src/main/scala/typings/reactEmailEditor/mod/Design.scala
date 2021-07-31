@@ -3,15 +3,13 @@ package typings.reactEmailEditor.mod
 import typings.reactEmailEditor.anon.Rows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Design extends StObject {
   
-  val body: Rows = js.native
+  val body: Rows
   
-  val counters: js.UndefOr[js.Object] = js.native
+  val counters: js.UndefOr[js.Object] = js.undefined
 }
 object Design {
   

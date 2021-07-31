@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryPermissionsPolicyMod {
@@ -58,6 +57,10 @@ object repositoryPermissionsPolicyMod {
   /* static members */
   object RepositoryPermissionsPolicy {
     
+    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RepositoryPermissionsPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,55 +70,49 @@ object repositoryPermissionsPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState): RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState, opts: CustomResourceOptions): RepositoryPermissionsPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState): RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState, opts: CustomResourceOptions): RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RepositoryPermissionsPolicy]
     
     /**
       * Returns true if the given object is an instance of RepositoryPermissionsPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact/repositoryPermissionsPolicy", "RepositoryPermissionsPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean]
   }
   
-  @js.native
   trait RepositoryPermissionsPolicyArgs extends StObject {
     
     /**
       * The name of the domain on which to set the resource policy.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON policy string to be set as the access control resource policy on the provided domain.
       */
-    val policyDocument: Input[String] = js.native
+    val policyDocument: Input[String]
     
     /**
       * The current revision of the resource policy to be set. This revision is used for optimistic locking, which prevents others from overwriting your changes to the domain's resource policy.
       */
-    val policyRevision: js.UndefOr[Input[String]] = js.native
+    val policyRevision: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the repository to set the resource policy on.
       */
-    val repository: Input[String] = js.native
+    val repository: Input[String]
   }
   object RepositoryPermissionsPolicyArgs {
     
@@ -151,38 +148,37 @@ object repositoryPermissionsPolicyMod {
     }
   }
   
-  @js.native
   trait RepositoryPermissionsPolicyState extends StObject {
     
     /**
       * The name of the domain on which to set the resource policy.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON policy string to be set as the access control resource policy on the provided domain.
       */
-    val policyDocument: js.UndefOr[Input[String]] = js.native
+    val policyDocument: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current revision of the resource policy to be set. This revision is used for optimistic locking, which prevents others from overwriting your changes to the domain's resource policy.
       */
-    val policyRevision: js.UndefOr[Input[String]] = js.native
+    val policyRevision: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the repository to set the resource policy on.
       */
-    val repository: js.UndefOr[Input[String]] = js.native
+    val repository: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource associated with the resource policy.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
   }
   object RepositoryPermissionsPolicyState {
     

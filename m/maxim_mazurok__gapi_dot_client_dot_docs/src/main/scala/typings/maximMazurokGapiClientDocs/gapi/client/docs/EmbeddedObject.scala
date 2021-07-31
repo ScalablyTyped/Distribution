@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedObject extends StObject {
   
   /** The description of the embedded object. The `title` and `description` are both combined to display alt text. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The properties of an embedded drawing. */
-  var embeddedDrawingProperties: js.UndefOr[js.Any] = js.native
+  var embeddedDrawingProperties: js.UndefOr[js.Any] = js.undefined
   
   /** The border of the embedded object. */
-  var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.native
+  var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.undefined
   
   /** The properties of an image. */
-  var imageProperties: js.UndefOr[ImageProperties] = js.native
+  var imageProperties: js.UndefOr[ImageProperties] = js.undefined
   
   /**
     * A reference to the external linked source content. For example, it contains a reference to the source Sheets chart when the embedded object is a linked chart. If unset, then the
     * embedded object is not linked.
     */
-  var linkedContentReference: js.UndefOr[LinkedContentReference] = js.native
+  var linkedContentReference: js.UndefOr[LinkedContentReference] = js.undefined
   
   /** The bottom margin of the embedded object. */
-  var marginBottom: js.UndefOr[Dimension] = js.native
+  var marginBottom: js.UndefOr[Dimension] = js.undefined
   
   /** The left margin of the embedded object. */
-  var marginLeft: js.UndefOr[Dimension] = js.native
+  var marginLeft: js.UndefOr[Dimension] = js.undefined
   
   /** The right margin of the embedded object. */
-  var marginRight: js.UndefOr[Dimension] = js.native
+  var marginRight: js.UndefOr[Dimension] = js.undefined
   
   /** The top margin of the embedded object. */
-  var marginTop: js.UndefOr[Dimension] = js.native
+  var marginTop: js.UndefOr[Dimension] = js.undefined
   
   /** The visible size of the image after cropping. */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /** The title of the embedded object. The `title` and `description` are both combined to display alt text. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object EmbeddedObject {
   

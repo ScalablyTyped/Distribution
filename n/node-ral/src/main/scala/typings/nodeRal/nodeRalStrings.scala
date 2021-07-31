@@ -3,7 +3,6 @@ package typings.nodeRal
 import typings.nodeRal.mod.buildInConverter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeRalStrings {
@@ -24,12 +23,16 @@ object nodeRalStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait form extends buildInConverter
+  sealed trait form
+    extends StObject
+       with buildInConverter
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait formData extends buildInConverter
+  sealed trait formData
+    extends StObject
+       with buildInConverter
   @scala.inline
   def formData: formData = "formData".asInstanceOf[formData]
   
@@ -49,17 +52,23 @@ object nodeRalStrings {
   def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait json extends buildInConverter
+  sealed trait json
+    extends StObject
+       with buildInConverter
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait protobuf extends buildInConverter
+  sealed trait protobuf
+    extends StObject
+       with buildInConverter
   @scala.inline
   def protobuf: protobuf = "protobuf".asInstanceOf[protobuf]
   
   @js.native
-  sealed trait querystring extends buildInConverter
+  sealed trait querystring
+    extends StObject
+       with buildInConverter
   @scala.inline
   def querystring: querystring = "querystring".asInstanceOf[querystring]
   
@@ -69,12 +78,16 @@ object nodeRalStrings {
   def random: random = "random".asInstanceOf[random]
   
   @js.native
-  sealed trait raw extends buildInConverter
+  sealed trait raw
+    extends StObject
+       with buildInConverter
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait redis extends buildInConverter
+  sealed trait redis
+    extends StObject
+       with buildInConverter
   @scala.inline
   def redis: redis = "redis".asInstanceOf[redis]
   
@@ -89,12 +102,16 @@ object nodeRalStrings {
   def soap: soap = "soap".asInstanceOf[soap]
   
   @js.native
-  sealed trait stream extends buildInConverter
+  sealed trait stream
+    extends StObject
+       with buildInConverter
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
-  sealed trait string extends buildInConverter
+  sealed trait string
+    extends StObject
+       with buildInConverter
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   

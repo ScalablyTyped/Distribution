@@ -2,20 +2,18 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request passed to UpdateTransferJob.
   */
-@js.native
 trait SchemaUpdateTransferJobRequest extends StObject {
   
   /**
     * The ID of the Google Cloud Platform Console project that owns the job.
     * Required.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The job to update. `transferJob` is expected to specify only three
@@ -23,7 +21,7 @@ trait SchemaUpdateTransferJobRequest extends StObject {
     * UpdateTransferJobRequest that specifies other fields will be rejected
     * with an error `INVALID_ARGUMENT`. Required.
     */
-  var transferJob: js.UndefOr[SchemaTransferJob] = js.native
+  var transferJob: js.UndefOr[SchemaTransferJob] = js.undefined
   
   /**
     * The field mask of the fields in `transferJob` that are to be updated in
@@ -33,7 +31,7 @@ trait SchemaUpdateTransferJobRequest extends StObject {
     * provided. An incomplete specification which misses any required fields
     * will be rejected with the error `INVALID_ARGUMENT`.
     */
-  var updateTransferJobFieldMask: js.UndefOr[String] = js.native
+  var updateTransferJobFieldMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateTransferJobRequest {
   

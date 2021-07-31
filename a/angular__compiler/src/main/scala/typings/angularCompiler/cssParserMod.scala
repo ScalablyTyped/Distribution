@@ -7,7 +7,6 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceFile
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssParserMod {
@@ -17,31 +16,31 @@ object cssParserMod {
   object BlockType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompiler.cssAstMod.BlockType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompiler.cssAstMod.BlockType & Double] = js.native
     
-    /* 1 */ val Charset: typings.angularCompiler.cssAstMod.BlockType.Charset with Double = js.native
+    /* 1 */ val Charset: typings.angularCompiler.cssAstMod.BlockType.Charset & Double = js.native
     
-    /* 9 */ val Document: typings.angularCompiler.cssAstMod.BlockType.Document with Double = js.native
+    /* 9 */ val Document: typings.angularCompiler.cssAstMod.BlockType.Document & Double = js.native
     
-    /* 7 */ val FontFace: typings.angularCompiler.cssAstMod.BlockType.FontFace with Double = js.native
+    /* 7 */ val FontFace: typings.angularCompiler.cssAstMod.BlockType.FontFace & Double = js.native
     
-    /* 0 */ val Import: typings.angularCompiler.cssAstMod.BlockType.Import with Double = js.native
+    /* 0 */ val Import: typings.angularCompiler.cssAstMod.BlockType.Import & Double = js.native
     
-    /* 4 */ val Keyframes: typings.angularCompiler.cssAstMod.BlockType.Keyframes with Double = js.native
+    /* 4 */ val Keyframes: typings.angularCompiler.cssAstMod.BlockType.Keyframes & Double = js.native
     
-    /* 5 */ val MediaQuery: typings.angularCompiler.cssAstMod.BlockType.MediaQuery with Double = js.native
+    /* 5 */ val MediaQuery: typings.angularCompiler.cssAstMod.BlockType.MediaQuery & Double = js.native
     
-    /* 2 */ val Namespace: typings.angularCompiler.cssAstMod.BlockType.Namespace with Double = js.native
+    /* 2 */ val Namespace: typings.angularCompiler.cssAstMod.BlockType.Namespace & Double = js.native
     
-    /* 8 */ val Page: typings.angularCompiler.cssAstMod.BlockType.Page with Double = js.native
+    /* 8 */ val Page: typings.angularCompiler.cssAstMod.BlockType.Page & Double = js.native
     
-    /* 6 */ val Selector: typings.angularCompiler.cssAstMod.BlockType.Selector with Double = js.native
+    /* 6 */ val Selector: typings.angularCompiler.cssAstMod.BlockType.Selector & Double = js.native
     
-    /* 3 */ val Supports: typings.angularCompiler.cssAstMod.BlockType.Supports with Double = js.native
+    /* 3 */ val Supports: typings.angularCompiler.cssAstMod.BlockType.Supports & Double = js.native
     
-    /* 11 */ val Unsupported: typings.angularCompiler.cssAstMod.BlockType.Unsupported with Double = js.native
+    /* 11 */ val Unsupported: typings.angularCompiler.cssAstMod.BlockType.Unsupported & Double = js.native
     
-    /* 10 */ val Viewport: typings.angularCompiler.cssAstMod.BlockType.Viewport with Double = js.native
+    /* 10 */ val Viewport: typings.angularCompiler.cssAstMod.BlockType.Viewport & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParseError")
@@ -52,9 +51,12 @@ object cssParserMod {
   /* static members */
   object CssParseError {
     
-    @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParseError.create")
+    @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParseError")
     @js.native
-    def create(file: ParseSourceFile, offset: Double, line: Double, col: Double, length: Double, errMsg: String): CssParseError = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(file: ParseSourceFile, offset: Double, line: Double, col: Double, length: Double, errMsg: String): CssParseError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], line.asInstanceOf[js.Any], col.asInstanceOf[js.Any], length.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[CssParseError]
   }
   
   @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParser")

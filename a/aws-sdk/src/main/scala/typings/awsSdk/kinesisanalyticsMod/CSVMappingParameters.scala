@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSVMappingParameters extends StObject {
   
   /**
     * Column delimiter. For example, in a CSV format, a comma (",") is the typical column delimiter.
     */
-  var RecordColumnDelimiter: typings.awsSdk.kinesisanalyticsMod.RecordColumnDelimiter = js.native
+  var RecordColumnDelimiter: typings.awsSdk.kinesisanalyticsMod.RecordColumnDelimiter
   
   /**
     * Row delimiter. For example, in a CSV format, '\n' is the typical row delimiter.
     */
-  var RecordRowDelimiter: typings.awsSdk.kinesisanalyticsMod.RecordRowDelimiter = js.native
+  var RecordRowDelimiter: typings.awsSdk.kinesisanalyticsMod.RecordRowDelimiter
 }
 object CSVMappingParameters {
   

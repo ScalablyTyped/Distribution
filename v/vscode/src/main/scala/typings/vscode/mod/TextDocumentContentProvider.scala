@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentContentProvider extends StObject {
   
   /**
     * An event to signal a resource has changed.
     */
-  var onDidChange: js.UndefOr[Event[Uri]] = js.native
+  var onDidChange: js.UndefOr[Event[Uri]] = js.undefined
   
   /**
     * Provide textual content for a given uri.
@@ -27,7 +25,7 @@ trait TextDocumentContentProvider extends StObject {
     * @param token A cancellation token.
     * @return A string or a thenable that resolves to such.
     */
-  def provideTextDocumentContent(uri: Uri, token: CancellationToken): ProviderResult[String] = js.native
+  def provideTextDocumentContent(uri: Uri, token: CancellationToken): ProviderResult[String]
 }
 object TextDocumentContentProvider {
   

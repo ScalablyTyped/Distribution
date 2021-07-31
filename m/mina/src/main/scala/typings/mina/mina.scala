@@ -2,7 +2,6 @@ package typings.mina
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mina {
@@ -48,20 +47,19 @@ object mina {
     def update(): Unit = js.native
   }
   
-  @js.native
   trait MinaAnimation extends StObject {
     
-    def duration(): Double = js.native
+    def duration(): Double
     
-    def easing(): Double = js.native
+    def easing(): Double
     
-    var id: String = js.native
+    var id: String
     
-    def speed(): Double = js.native
+    def speed(): Double
     
-    def status(): Double = js.native
+    def status(): Double
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object MinaAnimation {
     

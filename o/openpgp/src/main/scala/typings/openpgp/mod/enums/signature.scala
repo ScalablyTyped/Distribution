@@ -2,7 +2,6 @@ package typings.openpgp.mod.enums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,16 @@ sealed trait signature extends StObject
 object signature extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[signature with Double] = js.native
+  def apply(value: Double): js.UndefOr[signature & Double] = js.native
   
   /**
     * 0x00: Signature of a binary document.
     */
   @js.native
-  sealed trait binary extends signature
-  /* 0 */ val binary: typings.openpgp.mod.enums.signature.binary with Double = js.native
+  sealed trait binary
+    extends StObject
+       with signature
+  /* 0 */ val binary: typings.openpgp.mod.enums.signature.binary & Double = js.native
   
   /**
     * 0x12: Casual certification of a User ID and Public-Key packet.
@@ -30,8 +31,10 @@ object signature extends StObject {
     * verification of the claim of identity.
     */
   @js.native
-  sealed trait cert_casual extends signature
-  /* 18 */ val cert_casual: typings.openpgp.mod.enums.signature.cert_casual with Double = js.native
+  sealed trait cert_casual
+    extends StObject
+       with signature
+  /* 18 */ val cert_casual: typings.openpgp.mod.enums.signature.cert_casual & Double = js.native
   
   /**
     * 0x10: Generic certification of a User ID and Public-Key packet.
@@ -40,8 +43,10 @@ object signature extends StObject {
     * of the key is in fact the person described by the User ID.
     */
   @js.native
-  sealed trait cert_generic extends signature
-  /* 16 */ val cert_generic: typings.openpgp.mod.enums.signature.cert_generic with Double = js.native
+  sealed trait cert_generic
+    extends StObject
+       with signature
+  /* 16 */ val cert_generic: typings.openpgp.mod.enums.signature.cert_generic & Double = js.native
   
   /**
     * 0x11: Persona certification of a User ID and Public-Key packet.
@@ -49,8 +54,10 @@ object signature extends StObject {
     * the claim that the owner of this key is the User ID specified.
     */
   @js.native
-  sealed trait cert_persona extends signature
-  /* 17 */ val cert_persona: typings.openpgp.mod.enums.signature.cert_persona with Double = js.native
+  sealed trait cert_persona
+    extends StObject
+       with signature
+  /* 17 */ val cert_persona: typings.openpgp.mod.enums.signature.cert_persona & Double = js.native
   
   /**
     * 0x13: Positive certification of a User ID and Public-Key packet.
@@ -61,8 +68,10 @@ object signature extends StObject {
     * certifications, but few differentiate between the types.
     */
   @js.native
-  sealed trait cert_positive extends signature
-  /* 19 */ val cert_positive: typings.openpgp.mod.enums.signature.cert_positive with Double = js.native
+  sealed trait cert_positive
+    extends StObject
+       with signature
+  /* 19 */ val cert_positive: typings.openpgp.mod.enums.signature.cert_positive & Double = js.native
   
   /**
     * 0x30: Certification revocation signature
@@ -75,8 +84,10 @@ object signature extends StObject {
     * certificate.
     */
   @js.native
-  sealed trait cert_revocation extends signature
-  /* 48 */ val cert_revocation: typings.openpgp.mod.enums.signature.cert_revocation with Double = js.native
+  sealed trait cert_revocation
+    extends StObject
+       with signature
+  /* 48 */ val cert_revocation: typings.openpgp.mod.enums.signature.cert_revocation & Double = js.native
   
   /**
     * 0x1F: Signature directly on a key
@@ -89,8 +100,10 @@ object signature extends StObject {
     * name.
     */
   @js.native
-  sealed trait key extends signature
-  /* 31 */ val key: typings.openpgp.mod.enums.signature.key with Double = js.native
+  sealed trait key
+    extends StObject
+       with signature
+  /* 31 */ val key: typings.openpgp.mod.enums.signature.key & Double = js.native
   
   /**
     * 0x19: Primary Key Binding Signature
@@ -107,8 +120,10 @@ object signature extends StObject {
     * the first octet).
     */
   @js.native
-  sealed trait key_binding extends signature
-  /* 25 */ val key_binding: typings.openpgp.mod.enums.signature.key_binding with Double = js.native
+  sealed trait key_binding
+    extends StObject
+       with signature
+  /* 25 */ val key_binding: typings.openpgp.mod.enums.signature.key_binding & Double = js.native
   
   /**
     * 0x20: Key revocation signature
@@ -118,8 +133,10 @@ object signature extends StObject {
     * considered valid revocation signatures.a
     */
   @js.native
-  sealed trait key_revocation extends signature
-  /* 32 */ val key_revocation: typings.openpgp.mod.enums.signature.key_revocation with Double = js.native
+  sealed trait key_revocation
+    extends StObject
+       with signature
+  /* 32 */ val key_revocation: typings.openpgp.mod.enums.signature.key_revocation & Double = js.native
   
   /**
     * 0x02: Standalone signature.
@@ -129,8 +146,10 @@ object signature extends StObject {
     * standalone signature.
     */
   @js.native
-  sealed trait standalone extends signature
-  /* 2 */ val standalone: typings.openpgp.mod.enums.signature.standalone with Double = js.native
+  sealed trait standalone
+    extends StObject
+       with signature
+  /* 2 */ val standalone: typings.openpgp.mod.enums.signature.standalone & Double = js.native
   
   /**
     * 0x18: Subkey Binding Signature
@@ -143,8 +162,10 @@ object signature extends StObject {
     * primary key and subkey.
     */
   @js.native
-  sealed trait subkey_binding extends signature
-  /* 24 */ val subkey_binding: typings.openpgp.mod.enums.signature.subkey_binding with Double = js.native
+  sealed trait subkey_binding
+    extends StObject
+       with signature
+  /* 24 */ val subkey_binding: typings.openpgp.mod.enums.signature.subkey_binding & Double = js.native
   
   /**
     * 0x28: Subkey revocation signature
@@ -157,16 +178,20 @@ object signature extends StObject {
     * hash only the key being revoked.
     */
   @js.native
-  sealed trait subkey_revocation extends signature
-  /* 40 */ val subkey_revocation: typings.openpgp.mod.enums.signature.subkey_revocation with Double = js.native
+  sealed trait subkey_revocation
+    extends StObject
+       with signature
+  /* 40 */ val subkey_revocation: typings.openpgp.mod.enums.signature.subkey_revocation & Double = js.native
   
   /**
     * 0x01: Signature of a canonical text document.
     * Canonicalyzing the document by converting line endings.
     */
   @js.native
-  sealed trait text extends signature
-  /* 1 */ val text: typings.openpgp.mod.enums.signature.text with Double = js.native
+  sealed trait text
+    extends StObject
+       with signature
+  /* 1 */ val text: typings.openpgp.mod.enums.signature.text & Double = js.native
   
   /**
     * 0x50: Third-Party Confirmation signature.
@@ -179,8 +204,10 @@ object signature extends StObject {
     * document) that cannot include a target subpacket.
     */
   @js.native
-  sealed trait third_party extends signature
-  /* 80 */ val third_party: typings.openpgp.mod.enums.signature.third_party with Double = js.native
+  sealed trait third_party
+    extends StObject
+       with signature
+  /* 80 */ val third_party: typings.openpgp.mod.enums.signature.third_party & Double = js.native
   
   /**
     * 0x40: Timestamp signature.
@@ -188,6 +215,8 @@ object signature extends StObject {
     * it.
     */
   @js.native
-  sealed trait timestamp extends signature
-  /* 64 */ val timestamp: typings.openpgp.mod.enums.signature.timestamp with Double = js.native
+  sealed trait timestamp
+    extends StObject
+       with signature
+  /* 64 */ val timestamp: typings.openpgp.mod.enums.signature.timestamp & Double = js.native
 }

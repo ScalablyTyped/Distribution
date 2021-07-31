@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the variable photo sequence capabilities of the capture device. */
-@js.native
 trait FrameControlCapabilities extends StObject {
   
   /** Gets the exposure capabilities of the capture device for variable photo sequences. */
-  var exposure: FrameExposureCapabilities = js.native
+  var exposure: FrameExposureCapabilities
   
   /** Gets the exposure compensation capabilities of the capture device for variable photo sequences. */
-  var exposureCompensation: FrameExposureCompensationCapabilities = js.native
+  var exposureCompensation: FrameExposureCompensationCapabilities
   
   /** Gets the flash capabilities of the capture device for variable photo sequences. */
-  var flash: FrameFlashCapabilities = js.native
+  var flash: FrameFlashCapabilities
   
   /** Gets the focus capabilities of the capture device for variable photo sequences. */
-  var focus: FrameFocusCapabilities = js.native
+  var focus: FrameFocusCapabilities
   
   /** Gets the ISO speed capabilities of the capture device for variable photo sequences. */
-  var isoSpeed: FrameIsoSpeedCapabilities = js.native
+  var isoSpeed: FrameIsoSpeedCapabilities
   
   /** Gets whether the capture device supports photo confirmation for variable photo sequences. */
-  var photoConfirmationSupported: Boolean = js.native
+  var photoConfirmationSupported: Boolean
 }
 object FrameControlCapabilities {
   

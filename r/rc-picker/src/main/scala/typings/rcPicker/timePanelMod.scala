@@ -5,39 +5,42 @@ import typings.rcPicker.interfaceMod.PanelSharedProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timePanelMod {
   
-  @JSImport("rc-picker/es/panels/TimePanel", JSImport.Default)
+  @JSImport("rc-picker/es/panels/TimePanel", JSImport.Namespace)
   @js.native
-  def default[DateType](props: TimePanelProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait SharedTimeProps[DateType] extends DisabledTimes {
+  @scala.inline
+  def default[DateType](props: TimePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  trait SharedTimeProps[DateType]
+    extends StObject
+       with DisabledTimes {
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
   }
   object SharedTimeProps {
     
@@ -48,7 +51,7 @@ object timePanelMod {
     }
     
     @scala.inline
-    implicit class SharedTimePropsMutableBuilder[Self <: SharedTimeProps[_], DateType] (val x: Self with SharedTimeProps[DateType]) extends AnyVal {
+    implicit class SharedTimePropsMutableBuilder[Self <: SharedTimeProps[?], DateType] (val x: Self & SharedTimeProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -120,8 +123,9 @@ object timePanelMod {
   
   @js.native
   trait TimePanelProps[DateType]
-    extends SharedTimeProps[DateType]
-       with PanelSharedProps[DateType] {
+    extends StObject
+       with PanelSharedProps[DateType]
+       with SharedTimeProps[DateType] {
     
     var active: js.UndefOr[Boolean] = js.native
   }

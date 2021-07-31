@@ -2,46 +2,44 @@ package typings.coinbaseCommerceNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base charge properties.
   */
-@js.native
 trait BaseCharge extends StObject {
   
   /**
     * Redirect the user to this URL on cancel.
     */
-  var cancel_url: js.UndefOr[String] = js.native
+  var cancel_url: js.UndefOr[String] = js.undefined
   
   /**
     * More detailed description of the charge.
     * 200 characters or less.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Optional key value pairs for your own use.
     */
-  var metadata: js.UndefOr[KeyVal] = js.native
+  var metadata: js.UndefOr[KeyVal] = js.undefined
   
   /**
     * Charge name.
     * 100 characters or less.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Charge pricing type.
     */
-  var pricing_type: PricingType = js.native
+  var pricing_type: PricingType
   
   /**
     * Redirect the user to this URL on completion.
     */
-  var redirect_url: js.UndefOr[String] = js.native
+  var redirect_url: js.UndefOr[String] = js.undefined
 }
 object BaseCharge {
   

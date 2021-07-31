@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSipMediaApplicationCallRequest extends StObject {
   
   /**
     * The phone number that a user calls from.
     */
-  var FromPhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
+  var FromPhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
   
   /**
     * The ID of the SIP media application.
     */
-  var SipMediaApplicationId: NonEmptyString = js.native
+  var SipMediaApplicationId: NonEmptyString
   
   /**
     * The phone number that the user dials in order to connect to a meeting
     */
-  var ToPhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
+  var ToPhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
 }
 object CreateSipMediaApplicationCallRequest {
   

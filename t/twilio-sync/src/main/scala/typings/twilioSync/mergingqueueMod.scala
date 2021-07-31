@@ -2,7 +2,6 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergingqueueMod {
@@ -48,18 +47,46 @@ object mergingqueueMod {
   
   type InputReducer[InputType] = js.Function2[/* acc */ InputType, /* input */ InputType, InputType]
   
-  @js.native
   trait QueuedRequest[InputType, ReturnType] extends StObject {
     
-    var input: InputType = js.native
+    var input: InputType
     
-    def reject(error: js.Any): js.Any = js.native
+    def reject(error: js.Any): js.Any
     
-    def requestFunction(input: InputType): js.Promise[ReturnType] = js.native
+    def requestFunction(input: InputType): js.Promise[ReturnType]
     @JSName("requestFunction")
-    var requestFunction_Original: RequestFunction[InputType, ReturnType] = js.native
+    var requestFunction_Original: RequestFunction[InputType, ReturnType]
     
-    def resolve(result: ReturnType): js.Any = js.native
+    def resolve(result: ReturnType): js.Any
+  }
+  object QueuedRequest {
+    
+    @scala.inline
+    def apply[InputType, ReturnType](
+      input: InputType,
+      reject: js.Any => js.Any,
+      requestFunction: InputType => js.Promise[ReturnType],
+      resolve: ReturnType => js.Any
+    ): QueuedRequest[InputType, ReturnType] = {
+      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject), requestFunction = js.Any.fromFunction1(requestFunction), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[QueuedRequest[InputType, ReturnType]]
+    }
+    
+    @scala.inline
+    implicit class QueuedRequestMutableBuilder[Self <: QueuedRequest[?, ?], InputType, ReturnType] (val x: Self & (QueuedRequest[InputType, ReturnType])) extends AnyVal {
+      
+      @scala.inline
+      def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRequestFunction(value: InputType => js.Promise[ReturnType]): Self = StObject.set(x, "requestFunction", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setResolve(value: ReturnType => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    }
   }
   
   type RequestFunction[InputType, ReturnType] = js.Function1[/* input */ InputType, js.Promise[ReturnType]]

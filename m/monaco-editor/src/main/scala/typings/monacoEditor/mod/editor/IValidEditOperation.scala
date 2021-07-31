@@ -3,21 +3,19 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidEditOperation extends StObject {
   
   /**
     * The range to replace. This can be empty to emulate a simple insert.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The text to replace with. This can be empty to emulate a simple delete.
     */
-  var text: String = js.native
+  var text: String
 }
 object IValidEditOperation {
   

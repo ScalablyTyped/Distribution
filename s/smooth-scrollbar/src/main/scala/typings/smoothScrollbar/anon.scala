@@ -7,21 +7,19 @@ import typings.smoothScrollbar.smoothScrollbarMod.ScrollbarPlugin
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -48,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
-    def get(): js.Any = js.native
+    def get(): js.Any
   }
   object Get {
     
@@ -70,18 +67,17 @@ object anon {
   }
   
   /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollIntoViewOptions> */
-  @js.native
   trait PartialScrollIntoViewOpti extends StObject {
     
-    var alignToTop: js.UndefOr[Boolean] = js.native
+    var alignToTop: js.UndefOr[Boolean] = js.undefined
     
-    var offsetBottom: js.UndefOr[Double] = js.native
+    var offsetBottom: js.UndefOr[Double] = js.undefined
     
-    var offsetLeft: js.UndefOr[Double] = js.native
+    var offsetLeft: js.UndefOr[Double] = js.undefined
     
-    var offsetTop: js.UndefOr[Double] = js.native
+    var offsetTop: js.UndefOr[Double] = js.undefined
     
-    var onlyScrollIfNeeded: js.UndefOr[Boolean] = js.native
+    var onlyScrollIfNeeded: js.UndefOr[Boolean] = js.undefined
   }
   object PartialScrollIntoViewOpti {
     
@@ -127,12 +123,11 @@ object anon {
   }
   
   /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollToOptions> */
-  @js.native
   trait PartialScrollToOptions extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* percent */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* percent */ Double, Double]] = js.undefined
   }
   object PartialScrollToOptions {
     
@@ -160,12 +155,11 @@ object anon {
   }
   
   /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollToOptions> */
-  @js.native
   trait PartialScrollToOptionsCallback extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ Scrollbar, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ Scrollbar, Unit]] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* percent */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* percent */ Double, Double]] = js.undefined
   }
   object PartialScrollToOptionsCallback {
     
@@ -193,24 +187,23 @@ object anon {
   }
   
   /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollbarOptions> */
-  @js.native
   trait PartialScrollbarOptions extends StObject {
     
-    var alwaysShowTracks: js.UndefOr[Boolean] = js.native
+    var alwaysShowTracks: js.UndefOr[Boolean] = js.undefined
     
-    var continuousScrolling: js.UndefOr[Boolean] = js.native
+    var continuousScrolling: js.UndefOr[Boolean] = js.undefined
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var delegateTo: js.UndefOr[EventTarget | Null] = js.native
+    var delegateTo: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
     
-    var renderByPixels: js.UndefOr[Boolean] = js.native
+    var renderByPixels: js.UndefOr[Boolean] = js.undefined
     
-    var thumbMinSize: js.UndefOr[Double] = js.native
+    var thumbMinSize: js.UndefOr[Double] = js.undefined
     
-    var wheelEventTarget: js.UndefOr[EventTarget | Null] = js.native
+    var wheelEventTarget: js.UndefOr[EventTarget | Null] = js.undefined
   }
   object PartialScrollbarOptions {
     
@@ -280,10 +273,9 @@ object anon {
   }
   
   /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.SetPositionOptions> */
-  @js.native
   trait PartialSetPositionOptions extends StObject {
     
-    var withoutCallbacks: js.UndefOr[Boolean] = js.native
+    var withoutCallbacks: js.UndefOr[Boolean] = js.undefined
   }
   object PartialSetPositionOptions {
     
@@ -306,7 +298,8 @@ object anon {
   
   @js.native
   trait TypeofScrollbarPlugin
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* scrollbar */ typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar, 
           ScrollbarPlugin
         ]
@@ -321,12 +314,11 @@ object anon {
     var pluginName: String = js.native
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object X {
     
@@ -353,12 +345,11 @@ object anon {
     }
   }
   
-  @js.native
   trait XY extends StObject {
     
-    var x: js.Any = js.native
+    var x: js.Any
     
-    var y: js.Any = js.native
+    var y: js.Any
   }
   object XY {
     
@@ -379,12 +370,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Y {
     

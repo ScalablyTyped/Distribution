@@ -2,7 +2,6 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryValueMod {
@@ -14,33 +13,36 @@ object entryValueMod {
   object EntryTtl extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EntryTtl with Double] = js.native
+    def apply(value: Double): js.UndefOr[EntryTtl & Double] = js.native
     
     /**
       * NO_PROPAGATION is considered to have local context and is used within the
       * process it created.
       */
     @js.native
-    sealed trait NO_PROPAGATION extends EntryTtl
-    /* 0 */ val NO_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.NO_PROPAGATION with Double = js.native
+    sealed trait NO_PROPAGATION
+      extends StObject
+         with EntryTtl
+    /* 0 */ val NO_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.NO_PROPAGATION & Double = js.native
     
     /** UNLIMITED_PROPAGATION can propagate unlimited hops. */
     @js.native
-    sealed trait UNLIMITED_PROPAGATION extends EntryTtl
-    /* -1 */ val UNLIMITED_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.UNLIMITED_PROPAGATION with Double = js.native
+    sealed trait UNLIMITED_PROPAGATION
+      extends StObject
+         with EntryTtl
+    /* -1 */ val UNLIMITED_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.UNLIMITED_PROPAGATION & Double = js.native
   }
   
-  @js.native
   trait EntryValue extends StObject {
     
     /**
       * ttl is an integer that represents number of hops an entry can
       * propagate.
       */
-    var ttl: js.UndefOr[EntryTtl] = js.native
+    var ttl: js.UndefOr[EntryTtl] = js.undefined
     
     /** `String` value of the `EntryValue`. */
-    var value: String = js.native
+    var value: String
   }
   object EntryValue {
     

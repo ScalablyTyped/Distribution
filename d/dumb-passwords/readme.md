@@ -11,8 +11,8 @@ Guard your users from security problems that start by having dumb passwords
 | Full name          | dumb-passwords |
 | Keywords           | stupid, dumb, password, stupid passwords, dumb passwords, common, common passwords, security, user, user password, risks, top 10000 worst passwords |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 617314 |
+| # dependents       | 25 |
+| # downloads        | 677312 |
 | # stars            | 0 |
 
 ## Links

@@ -9,12 +9,10 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainIOMod {
   
-  @js.native
   trait Base64Result extends StObject {
     
     /**
@@ -22,17 +20,17 @@ object webTwainIOMod {
       * @param offset The starting position.
       * @param length The length of the expected string.
       */
-    def getData(offset: Double, length: Double): String = js.native
+    def getData(offset: Double, length: Double): String
     
     /**
       * Return the length of the result string.
       */
-    def getLength(): Double = js.native
+    def getLength(): Double
     
     /**
       * Return the MD5 value of the result.
       */
-    def getMD5(): String = js.native
+    def getMD5(): String
   }
   object Base64Result {
     
@@ -56,22 +54,21 @@ object webTwainIOMod {
     }
   }
   
-  @js.native
   trait LicenseDetailItem extends StObject {
     
-    val Browser: String = js.native
+    val Browser: String
     
-    val EnumLicenseType: String = js.native
+    val EnumLicenseType: String
     
-    val ExpireDate: String = js.native
+    val ExpireDate: String
     
-    val LicenseType: String = js.native
+    val LicenseType: String
     
-    val OS: String = js.native
+    val OS: String
     
-    val Trial: String = js.native
+    val Trial: String
     
-    val Version: String = js.native
+    val Version: String
   }
   object LicenseDetailItem {
     
@@ -116,7 +113,9 @@ object webTwainIOMod {
   }
   
   @js.native
-  trait WebTwainIO extends WebTwainUtil {
+  trait WebTwainIO
+    extends StObject
+       with WebTwainUtil {
     
     /**
       * Clear all the custom fields from the HTTP Post Form.
@@ -778,13 +777,13 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def LoadDibFromClipboard(): Unit | Boolean = js.native
-    def LoadDibFromClipboard(
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def LoadDibFromClipboard(successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def LoadDibFromClipboard(
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def LoadDibFromClipboard(
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -797,30 +796,30 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def LoadImage(fileName: String): Unit | Boolean = js.native
-    def LoadImage(
-      fileName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def LoadImage(fileName: String, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def LoadImage(
       fileName: String,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
-    
-    def LoadImageEx(fileName: String, `type`: Double): Unit | Boolean = js.native
-    def LoadImageEx(
+    def LoadImage(
       fileName: String,
-      `type`: Double,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
+    def LoadImageEx(fileName: String, `type`: Double): Unit | Boolean = js.native
     def LoadImageEx(fileName: String, `type`: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def LoadImageEx(
       fileName: String,
       `type`: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def LoadImageEx(
+      fileName: String,
+      `type`: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     /**
@@ -833,17 +832,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def LoadImageEx(fileName: String, `type`: EnumDWTImageType): Unit | Boolean = js.native
-    def LoadImageEx(
-      fileName: String,
-      `type`: EnumDWTImageType,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def LoadImageEx(fileName: String, `type`: EnumDWTImageType, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def LoadImageEx(
       fileName: String,
       `type`: EnumDWTImageType,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def LoadImageEx(
+      fileName: String,
+      `type`: EnumDWTImageType,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -856,17 +855,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def LoadImageFromBase64Binary(imageData: String, imageType: EnumDWTImageType): Unit | Boolean = js.native
-    def LoadImageFromBase64Binary(
-      imageData: String,
-      imageType: EnumDWTImageType,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def LoadImageFromBase64Binary(imageData: String, imageType: EnumDWTImageType, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def LoadImageFromBase64Binary(
       imageData: String,
       imageType: EnumDWTImageType,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def LoadImageFromBase64Binary(
+      imageData: String,
+      imageType: EnumDWTImageType,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -965,15 +964,15 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAllAsMultiPageTIFF(fileName: String): Unit | Boolean = js.native
-    def SaveAllAsMultiPageTIFF(
-      fileName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAllAsMultiPageTIFF(fileName: String, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAllAsMultiPageTIFF(
       fileName: String,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAllAsMultiPageTIFF(
+      fileName: String,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -986,15 +985,15 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAllAsPDF(fileName: String): Unit | Boolean = js.native
-    def SaveAllAsPDF(
-      fileName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAllAsPDF(fileName: String, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAllAsPDF(
       fileName: String,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAllAsPDF(
+      fileName: String,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1008,17 +1007,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAsBMP(fileName: String, index: Double): Unit | Boolean = js.native
-    def SaveAsBMP(
-      fileName: String,
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAsBMP(fileName: String, index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAsBMP(
       fileName: String,
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAsBMP(
+      fileName: String,
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1032,17 +1031,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAsJPEG(fileName: String, index: Double): Unit | Boolean = js.native
-    def SaveAsJPEG(
-      fileName: String,
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAsJPEG(fileName: String, index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAsJPEG(
       fileName: String,
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAsJPEG(
+      fileName: String,
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1056,17 +1055,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAsPDF(fileName: String, index: Double): Unit | Boolean = js.native
-    def SaveAsPDF(
-      fileName: String,
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAsPDF(fileName: String, index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAsPDF(
       fileName: String,
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAsPDF(
+      fileName: String,
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1080,17 +1079,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAsPNG(fileName: String, index: Double): Unit | Boolean = js.native
-    def SaveAsPNG(
-      fileName: String,
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAsPNG(fileName: String, index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAsPNG(
       fileName: String,
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAsPNG(
+      fileName: String,
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1104,17 +1103,17 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveAsTIFF(fileName: String, index: Double): Unit | Boolean = js.native
-    def SaveAsTIFF(
-      fileName: String,
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveAsTIFF(fileName: String, index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveAsTIFF(
       fileName: String,
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveAsTIFF(
+      fileName: String,
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1127,15 +1126,15 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveSelectedImagesAsMultiPagePDF(fileName: String): Unit | Boolean = js.native
-    def SaveSelectedImagesAsMultiPagePDF(
-      fileName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveSelectedImagesAsMultiPagePDF(fileName: String, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveSelectedImagesAsMultiPagePDF(
       fileName: String,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveSelectedImagesAsMultiPagePDF(
+      fileName: String,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1148,15 +1147,15 @@ object webTwainIOMod {
       * @argument errorString The error string.
       */
     def SaveSelectedImagesAsMultiPageTIFF(fileName: String): Unit | Boolean = js.native
-    def SaveSelectedImagesAsMultiPageTIFF(
-      fileName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SaveSelectedImagesAsMultiPageTIFF(fileName: String, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SaveSelectedImagesAsMultiPageTIFF(
       fileName: String,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SaveSelectedImagesAsMultiPageTIFF(
+      fileName: String,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -1176,13 +1175,13 @@ object webTwainIOMod {
       * @param indexOfIndices Specify the index of the specified image.
       */
     def SaveSelectedImagesToBase64Binary(indexOfIndices: Double): Double = js.native
-    def SaveSelectedImagesToBase64Binary(
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): String | Boolean = js.native
     def SaveSelectedImagesToBase64Binary(successCallback: js.Function1[/* result */ js.Array[String], Unit]): String | Boolean = js.native
     def SaveSelectedImagesToBase64Binary(
       successCallback: js.Function1[/* result */ js.Array[String], Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): String | Boolean = js.native
+    def SaveSelectedImagesToBase64Binary(
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): String | Boolean = js.native
     

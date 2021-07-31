@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Color")
 @js.native
 class Color protected ()
-  extends typings.scriptableIos.Color {
+  extends StObject
+     with typings.scriptableIos.Color {
   /**
     * _Stores color data including opacity._
     *
@@ -26,62 +26,95 @@ class Color protected ()
     * @see https://docs.scriptable.app/color/#-new-color
     */
   def this(hex: String, alpha: Double) = this()
+  
+  /**
+    * _Alpha of the color._
+    * @see https://docs.scriptable.app/color/#alpha
+    */
+  /* CompleteClass */
+  var alpha: Double = js.native
+  
+  /**
+    * _Amount of blue in the color._
+    * @see https://docs.scriptable.app/color/#blue
+    */
+  /* CompleteClass */
+  var blue: Double = js.native
+  
+  /**
+    * _Amount of green in the color._
+    * @see https://docs.scriptable.app/color/#green
+    */
+  /* CompleteClass */
+  var green: Double = js.native
+  
+  /**
+    * _HEX representation._
+    * @see https://docs.scriptable.app/color/#hex
+    */
+  /* CompleteClass */
+  var hex: String = js.native
+  
+  /**
+    * _Amount of red in the color._
+    * @see https://docs.scriptable.app/color/#red
+    */
+  /* CompleteClass */
+  var red: Double = js.native
 }
 object Color {
+  
+  @JSGlobal("Color")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Constructs a black color._
     * @see https://docs.scriptable.app/color/#black
     */
   /* static member */
-  @JSGlobal("Color.black")
-  @js.native
-  def black(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def black(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("black")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a blue color._
     * @see https://docs.scriptable.app/color/#blue
     */
   /* static member */
-  @JSGlobal("Color.blue")
-  @js.native
-  def blue(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def blue(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a brown color._
     * @see https://docs.scriptable.app/color/#brown
     */
   /* static member */
-  @JSGlobal("Color.brown")
-  @js.native
-  def brown(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def brown(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("brown")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a transparent color._
     * @see https://docs.scriptable.app/color/#clear
     */
   /* static member */
-  @JSGlobal("Color.clear")
-  @js.native
-  def clear(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def clear(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a cyan color._
     * @see https://docs.scriptable.app/color/#cyan
     */
   /* static member */
-  @JSGlobal("Color.cyan")
-  @js.native
-  def cyan(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def cyan(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a dark gray color._
     * @see https://docs.scriptable.app/color/#darkgray
     */
   /* static member */
-  @JSGlobal("Color.darkGray")
-  @js.native
-  def darkGray(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def darkGray(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("darkGray")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Creates a dynamic color._
@@ -94,88 +127,78 @@ object Color {
     * @see https://docs.scriptable.app/color/#dynamic
     */
   /* static member */
-  @JSGlobal("Color.dynamic")
-  @js.native
-  def dynamic(lightColor: typings.scriptableIos.Color, darkColor: typings.scriptableIos.Color): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def dynamic(lightColor: typings.scriptableIos.Color, darkColor: typings.scriptableIos.Color): typings.scriptableIos.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(lightColor.asInstanceOf[js.Any], darkColor.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a gray color._
     * @see https://docs.scriptable.app/color/#gray
     */
   /* static member */
-  @JSGlobal("Color.gray")
-  @js.native
-  def gray(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def gray(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a green color._
     * @see https://docs.scriptable.app/color/#green
     */
   /* static member */
-  @JSGlobal("Color.green")
-  @js.native
-  def green(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def green(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("green")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a light gray color._
     * @see https://docs.scriptable.app/color/#lightgray
     */
   /* static member */
-  @JSGlobal("Color.lightGray")
-  @js.native
-  def lightGray(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def lightGray(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("lightGray")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a magenta color._
     * @see https://docs.scriptable.app/color/#magenta
     */
   /* static member */
-  @JSGlobal("Color.magenta")
-  @js.native
-  def magenta(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def magenta(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a orange color._
     * @see https://docs.scriptable.app/color/#orange
     */
   /* static member */
-  @JSGlobal("Color.orange")
-  @js.native
-  def orange(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def orange(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("orange")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a purple color._
     * @see https://docs.scriptable.app/color/#purple
     */
   /* static member */
-  @JSGlobal("Color.purple")
-  @js.native
-  def purple(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def purple(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("purple")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a red color._
     * @see https://docs.scriptable.app/color/#red
     */
   /* static member */
-  @JSGlobal("Color.red")
-  @js.native
-  def red(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def red(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("red")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a white color._
     * @see https://docs.scriptable.app/color/#white
     */
   /* static member */
-  @JSGlobal("Color.white")
-  @js.native
-  def white(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def white(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("white")().asInstanceOf[typings.scriptableIos.Color]
   
   /**
     * _Constructs a yellow color._
     * @see https://docs.scriptable.app/color/#yellow
     */
   /* static member */
-  @JSGlobal("Color.yellow")
-  @js.native
-  def yellow(): typings.scriptableIos.Color = js.native
+  @scala.inline
+  def yellow(): typings.scriptableIos.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")().asInstanceOf[typings.scriptableIos.Color]
 }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterEvent extends StObject {
   
   /** Required. The name of the counter event. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The name used to identify this counter event in reports. */
-  var reportingName: js.UndefOr[String] = js.native
+  var reportingName: js.UndefOr[String] = js.undefined
 }
 object CounterEvent {
   

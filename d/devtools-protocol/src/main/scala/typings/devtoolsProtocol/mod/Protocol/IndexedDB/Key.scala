@@ -6,36 +6,34 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.number
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
   /**
     * Array value.
     */
-  var array: js.UndefOr[js.Array[Key]] = js.native
+  var array: js.UndefOr[js.Array[Key]] = js.undefined
   
   /**
     * Date value.
     */
-  var date: js.UndefOr[Double] = js.native
+  var date: js.UndefOr[Double] = js.undefined
   
   /**
     * Number value.
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /**
     * String value.
     */
-  var string: js.UndefOr[String] = js.native
+  var string: js.UndefOr[String] = js.undefined
   
   /**
     * Key type. (KeyType enum)
     */
-  var `type`: number | string | date | array = js.native
+  var `type`: number | string | date | array
 }
 object Key {
   

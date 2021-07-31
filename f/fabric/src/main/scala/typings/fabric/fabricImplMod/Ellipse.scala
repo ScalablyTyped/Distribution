@@ -3,7 +3,6 @@ package typings.fabric.fabricImplMod
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -61,18 +60,15 @@ object Ellipse {
     * @param element Element to parse
     * @param [options] Options object
     */
-  @JSImport("fabric/fabric-impl", "Ellipse.fromElement")
-  @js.native
-  def fromElement(element: SVGElement): Ellipse = js.native
-  @JSImport("fabric/fabric-impl", "Ellipse.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, options: IEllipseOptions): Ellipse = js.native
+  @scala.inline
+  def fromElement(element: SVGElement): Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Ellipse]
+  @scala.inline
+  def fromElement(element: SVGElement, options: IEllipseOptions): Ellipse = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ellipse]
   
   /**
     * Returns Ellipse instance from an object representation
     * @param object Object to create an instance from
     */
-  @JSImport("fabric/fabric-impl", "Ellipse.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): Ellipse = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Ellipse]
 }

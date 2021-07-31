@@ -5,10 +5,13 @@ import typings.reactFns.deviceOrientationDeviceOrientationMod.DeviceOrientationP
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceOrientationMod {
+  
+  @JSImport("react-fns/dist/DeviceOrientation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns/dist/DeviceOrientation", "DeviceOrientation")
   @js.native
@@ -22,7 +25,6 @@ object deviceOrientationMod {
     def this(props: SharedRenderProps[DeviceOrientationProps], context: js.Any) = this()
   }
   
-  @JSImport("react-fns/dist/DeviceOrientation", "withDeviceOrientation")
-  @js.native
-  def withDeviceOrientation[Props](Component: ComponentType[Props with DeviceOrientationProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withDeviceOrientation[Props](Component: ComponentType[Props & DeviceOrientationProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceOrientation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

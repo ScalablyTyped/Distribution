@@ -3,20 +3,19 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The output of the dialog node. For more information about how to specify dialog node output, see the [documentation](https://cloud.ibm.com/docs/services/assistant/dialog-overview.html#dialog-overview-responses). */
-@js.native
 trait DialogNodeOutput
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** An array of objects describing the output defined for the dialog node. */
-  var generic: js.UndefOr[js.Array[DialogNodeOutputGeneric]] = js.native
+  var generic: js.UndefOr[js.Array[DialogNodeOutputGeneric]] = js.undefined
   
   /** Options that modify how specified output is handled. */
-  var modifiers: js.UndefOr[DialogNodeOutputModifiers] = js.native
+  var modifiers: js.UndefOr[DialogNodeOutputModifiers] = js.undefined
 }
 object DialogNodeOutput {
   

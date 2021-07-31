@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commit extends StObject {
   
-  var commit: scala.Double = js.native
+  var commit: scala.Double
   
-  var lastMergeCommit: scala.Double = js.native
+  var lastMergeCommit: scala.Double
   
-  var notSet: scala.Double = js.native
+  var notSet: scala.Double
 }
 object Commit {
   

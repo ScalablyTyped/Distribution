@@ -2,41 +2,39 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicySummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the policy. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
     */
-  var Arn: js.UndefOr[PolicyArn] = js.native
+  var Arn: js.UndefOr[PolicyArn] = js.undefined
   
   /**
     * A boolean value that indicates whether the specified policy is an AWS managed policy. If true, then you can attach the policy to roots, OUs, or accounts, but you cannot edit it.
     */
-  var AwsManaged: js.UndefOr[AwsManagedPolicy] = js.native
+  var AwsManaged: js.UndefOr[AwsManagedPolicy] = js.undefined
   
   /**
     * The description of the policy.
     */
-  var Description: js.UndefOr[PolicyDescription] = js.native
+  var Description: js.UndefOr[PolicyDescription] = js.undefined
   
   /**
     * The unique identifier (ID) of the policy. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lowercase or uppercase letters, digits, or the underscore character (_).
     */
-  var Id: js.UndefOr[PolicyId] = js.native
+  var Id: js.UndefOr[PolicyId] = js.undefined
   
   /**
     * The friendly name of the policy. The regex pattern that is used to validate this parameter is a string of any of the characters in the ASCII character range.
     */
-  var Name: js.UndefOr[PolicyName] = js.native
+  var Name: js.UndefOr[PolicyName] = js.undefined
   
   /**
     * The type of policy.
     */
-  var Type: js.UndefOr[PolicyType] = js.native
+  var Type: js.UndefOr[PolicyType] = js.undefined
 }
 object PolicySummary {
   

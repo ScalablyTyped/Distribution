@@ -10,31 +10,32 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneViewMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/SceneView", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/SceneView", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](hasScreenRouteNavigationRouteStateGetStateSetStateOptions: Props[State, ScreenOptions, EventMap]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](hasScreenRouteNavigationRouteStateGetStateSetStateOptions: Props[State, ScreenOptions, EventMap]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScreenRouteNavigationRouteStateGetStateSetStateOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] extends StObject {
     
-    def getState(): State = js.native
+    def getState(): State
     
-    var navigation: NavigationProp[ParamListBase, String, State, ScreenOptions, js.Object] = js.native
+    var navigation: NavigationProp[ParamListBase, String, State, ScreenOptions, js.Object]
     
-    var options: js.Object = js.native
+    var options: js.Object
     
-    var route: Route[String, js.UndefOr[js.Object]] = js.native
+    var route: Route[String, js.UndefOr[js.Object]]
     
-    var routeState: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.native
+    var routeState: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.undefined
     
-    var screen: RouteConfig[ParamListBase, String, State, ScreenOptions, EventMap] = js.native
+    var screen: RouteConfig[ParamListBase, String, State, ScreenOptions, EventMap]
     
-    def setState(state: State): Unit = js.native
+    def setState(state: State): Unit
   }
   object Props {
     
@@ -52,7 +53,7 @@ object sceneViewMod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_, _, _], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self with (Props[State, ScreenOptions, EventMap])) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?, ?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (Props[State, ScreenOptions, EventMap])) extends AnyVal {
       
       @scala.inline
       def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))

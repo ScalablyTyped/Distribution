@@ -2,36 +2,34 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRegexPatternSetRequest extends StObject {
   
   /**
     * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the set. You cannot change the name after you create the set.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * Array of regular expression strings. 
     */
-  var RegularExpressionList: typings.awsSdk.wafv2Mod.RegularExpressionList = js.native
+  var RegularExpressionList: typings.awsSdk.wafv2Mod.RegularExpressionList
   
   /**
     * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an API Gateway REST API, or an AppSync GraphQL API.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
-  var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
+  var Scope: typings.awsSdk.wafv2Mod.Scope
   
   /**
     * An array of key:value pairs to associate with the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateRegexPatternSetRequest {
   

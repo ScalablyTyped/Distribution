@@ -2,13 +2,11 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInputReply extends StObject {
   
-  var value: String = js.native
+  var value: String
 }
 object IInputReply {
   

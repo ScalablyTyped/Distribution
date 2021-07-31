@@ -33,15 +33,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionKeyUnavailableExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyUnavailableExceptionDetails> * / any */ @js.native
-  trait EncryptionKeyUnavailableException
-    extends BatchGetRepositoriesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyUnavailableExceptionDetails> * / any */ trait EncryptionKeyUnavailableException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion
        with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
@@ -73,15 +72,13 @@ object typesEncryptionKeyUnavailableExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdateRepositoryDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyUnavailableException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyUnavailableException
   }
   object EncryptionKeyUnavailableException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyUnavailableException
-    ): EncryptionKeyUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EncryptionKeyUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyUnavailableException")
       __obj.asInstanceOf[EncryptionKeyUnavailableException]
     }
     
@@ -95,6 +92,5 @@ object typesEncryptionKeyUnavailableExceptionMod {
     }
   }
   
-  @js.native
   trait EncryptionKeyUnavailableExceptionDetails extends StObject
 }

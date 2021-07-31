@@ -5,19 +5,22 @@ import typings.documentdbSession.anon.FnCall
 import typings.expressSession.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(expressSession: FnCall): DocumentDBStoreConstructor = ^.asInstanceOf[js.Dynamic].apply(expressSession.asInstanceOf[js.Any]).asInstanceOf[DocumentDBStoreConstructor]
+  
   @JSImport("documentdb-session", JSImport.Namespace)
   @js.native
-  def apply(expressSession: FnCall): DocumentDBStoreConstructor = js.native
+  val ^ : js.Any = js.native
   
   @js.native
-  trait DocumentDBStoreConstructor extends Instantiable1[/* options */ Options, Store]
+  trait DocumentDBStoreConstructor
+    extends StObject
+       with Instantiable1[/* options */ Options, Store]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -27,7 +30,7 @@ object mod {
       *
       * @default `"sessions"`
       */
-    var collection: js.UndefOr[String] = js.native
+    var collection: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the database where the session data should be stored.
@@ -35,7 +38,7 @@ object mod {
       *
       * @default `"sessionstore"`
       */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
     /**
       * By default, `documentdb-session` sets a `"type"` attribute on each session document with a value of `"session"`,
@@ -45,20 +48,20 @@ object mod {
       *
       * @default `{ type: "session" }`
       */
-    var discriminator: js.UndefOr[js.Object] = js.native
+    var discriminator: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The URL / hostname of your DocumentDB database account, usually of the form `https://mydbaccount.documents.azure.com:443/`.
       * You can also provide this in an environment variable, (`DOCUMENTDB_URL`) instead.
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * The primary key for your DocumentDB account.
       * A primary key is required because `documentdb-session` may create a new database for your account, if none exists.
       * You can also provide this in an environment variable (`DOCUMENTDB_KEY`) instead.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The TTL (time-to-live or expiration time) for your sessions, in seconds.
@@ -67,7 +70,7 @@ object mod {
       * See more on [**Configuring TTL**](https://github.com/dwhieb/documentdb-session#configuring-ttl-time-to-live-or-expiration-time).
       * *Enabling TTL is strongly recommended.*
       */
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

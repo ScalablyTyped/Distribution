@@ -19,10 +19,13 @@ import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversion {
+  
+  @JSImport("@ckeditor/ckeditor5-engine", "conversion")
+  @js.native
+  val ^ : js.Any = js.native
   
   // engine/conversion/conversion
   @JSImport("@ckeditor/ckeditor5-engine", "conversion.Conversion")
@@ -116,58 +119,47 @@ object conversion {
   class ViewConsumable () extends StObject
   
   // engine/conversion/downcast-selection-converters
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.clearAttributes")
-  @js.native
-  def clearAttributes(): js.Function = js.native
+  @scala.inline
+  def clearAttributes(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAttributes")().asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.convertCollapsedSelection")
-  @js.native
-  def convertCollapsedSelection(): js.Function = js.native
+  @scala.inline
+  def convertCollapsedSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapsedSelection")().asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.convertRangeSelection")
-  @js.native
-  def convertRangeSelection(): js.Function = js.native
+  @scala.inline
+  def convertRangeSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRangeSelection")().asInstanceOf[js.Function]
   
   // engine/conversion/upcast-selection-converters
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.convertSelectionChange")
-  @js.native
-  def convertSelectionChange(model: typings.ckeditorCkeditor5Engine.mod.model.Model, mapper: Mapper): js.Function = js.native
+  @scala.inline
+  def convertSelectionChange(model: typings.ckeditorCkeditor5Engine.mod.model.Model, mapper: Mapper): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("convertSelectionChange")(model.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   // engine/conversion/upcast-converters
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.convertText")
-  @js.native
-  def convertText(): js.Function = js.native
+  @scala.inline
+  def convertText(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertText")().asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.convertToModelFragment")
-  @js.native
-  def convertToModelFragment(): js.Function = js.native
+  @scala.inline
+  def convertToModelFragment(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToModelFragment")().asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.upcastAttributeToAttribute")
-  @js.native
-  def upcastAttributeToAttribute(config: ConverterPriority): js.Function = js.native
+  @scala.inline
+  def upcastAttributeToAttribute(config: ConverterPriority): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastAttributeToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.upcastElementToAttribute")
-  @js.native
-  def upcastElementToAttribute(config: View): js.Function = js.native
+  @scala.inline
+  def upcastElementToAttribute(config: View): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.upcastElementToElement")
-  @js.native
-  def upcastElementToElement(config: ConverterPriorityModel): js.Function = js.native
+  @scala.inline
+  def upcastElementToElement(config: ConverterPriorityModel): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToElement")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "conversion.upcastElementToMarker")
-  @js.native
-  def upcastElementToMarker(config: ModelView): js.Function = js.native
+  @scala.inline
+  def upcastElementToMarker(config: ModelView): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToMarker")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @js.native
   trait ConverterDefinition extends StObject {
     
-    var converterPriority: PriorityString = js.native
+    var converterPriority: PriorityString
     
-    var model: js.Any = js.native
+    var model: js.Any
     
-    var upcastAlso: MatcherPattern | js.Array[MatcherPattern] = js.native
+    var upcastAlso: MatcherPattern | js.Array[MatcherPattern]
     
-    var view: ElementDefinition | js.Object = js.native
+    var view: ElementDefinition | js.Object
   }
   object ConverterDefinition {
     
@@ -206,16 +198,15 @@ object conversion {
   }
   
   // engine/conversion/downcast-converters
-  @js.native
   trait HighlightDescriptor extends StObject {
     
-    var attributes: js.Object = js.native
+    var attributes: js.Object
     
-    var classes: String | js.Array[String] = js.native
+    var classes: String | js.Array[String]
     
-    var id: String = js.native
+    var id: String
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object HighlightDescriptor {
     
@@ -245,6 +236,5 @@ object conversion {
     }
   }
   
-  @js.native
   trait ViewConversionApi extends StObject
 }

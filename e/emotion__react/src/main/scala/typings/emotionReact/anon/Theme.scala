@@ -2,13 +2,11 @@ package typings.emotionReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var theme: js.UndefOr[typings.emotionReact.emotionReactMod.Theme] = js.native
+  var theme: js.UndefOr[typings.emotionReact.emotionReactMod.Theme] = js.undefined
 }
 object Theme {
   

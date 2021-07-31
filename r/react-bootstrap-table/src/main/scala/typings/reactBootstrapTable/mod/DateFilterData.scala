@@ -2,22 +2,22 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateFilterData extends FilterValue {
+trait DateFilterData
+  extends StObject
+     with FilterValue {
   
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter
   
-  var value: DateFilterValue = js.native
+  var value: DateFilterValue
 }
 object DateFilterData {
   
   @scala.inline
-  def apply(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter, value: DateFilterValue): DateFilterData = {
+  def apply(value: DateFilterValue): DateFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DateFilter")
     __obj.asInstanceOf[DateFilterData]
   }
   

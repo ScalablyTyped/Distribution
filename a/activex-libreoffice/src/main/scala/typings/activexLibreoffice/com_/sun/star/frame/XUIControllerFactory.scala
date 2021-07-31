@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ToolbarControllerFactory
   * @since LibreOffice 4.1
   */
-@js.native
 trait XUIControllerFactory
-  extends XMultiComponentFactory
+  extends StObject
+     with XMultiComponentFactory
      with XUIControllerRegistration
 object XUIControllerFactory {
   
@@ -31,7 +30,7 @@ object XUIControllerFactory {
   def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (String, SeqEquiv[_], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,
     createInstanceWithContext: (String, XComponentContext) => XInterface,
     deregisterController: (String, String) => Unit,
     getAvailableServiceNames: () => SafeArray[String],

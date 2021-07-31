@@ -6,7 +6,6 @@ import typings.wouter.anon.Replace
 import typings.wouter.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wouterUseLocationMod extends Shortcut {
@@ -15,10 +14,11 @@ object wouterUseLocationMod extends Shortcut {
   @js.native
   val default: LocationHook = js.native
   
-  type BaseLocationHook = js.Function1[
-    /* repeated */ js.Any, 
-    js.Tuple2[Path, js.Function2[/* path */ Path, /* repeated */ js.Any, js.Any]]
-  ]
+  @js.native
+  trait BaseLocationHook extends StObject {
+    
+    def apply(args: js.Any*): js.Tuple2[Path, js.Function2[/* path */ Path, /* repeated */ js.Any, js.Any]] = js.native
+  }
   
   type HookNavigationOptions[H /* <: BaseLocationHook */] = js.Object
   

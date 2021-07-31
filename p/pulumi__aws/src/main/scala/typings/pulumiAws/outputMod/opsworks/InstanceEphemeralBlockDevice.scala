@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod.opsworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceEphemeralBlockDevice extends StObject {
   
-  var deviceName: String = js.native
+  var deviceName: String
   
-  var virtualName: String = js.native
+  var virtualName: String
 }
 object InstanceEphemeralBlockDevice {
   

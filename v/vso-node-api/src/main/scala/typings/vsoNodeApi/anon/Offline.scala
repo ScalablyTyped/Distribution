@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offline extends StObject {
   
-  var offline: scala.Double = js.native
+  var offline: scala.Double
   
-  var online: scala.Double = js.native
+  var online: scala.Double
 }
 object Offline {
   

@@ -7,11 +7,11 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilePickerFileTypesOrderedMap extends IMap[String, IVector[String]]
+trait FilePickerFileTypesOrderedMap
+  extends StObject
+     with IMap[String, IVector[String]]
 object FilePickerFileTypesOrderedMap {
   
   @scala.inline

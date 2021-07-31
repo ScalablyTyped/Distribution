@@ -6,22 +6,22 @@ import typings.dateFnsUpgrade.dateFnsUpgradeNumbers.`2`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legacyParseMod {
   
-  @JSImport("@date-fns/upgrade/v2/legacyParse", JSImport.Default)
+  @JSImport("@date-fns/upgrade/v2/legacyParse", JSImport.Namespace)
   @js.native
-  def default(argument: js.Any): Date = js.native
-  @JSImport("@date-fns/upgrade/v2/legacyParse", JSImport.Default)
-  @js.native
-  def default(argument: js.Any, options: LegacyParseOptions): Date = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(argument: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def default(argument: js.Any, options: LegacyParseOptions): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
   trait LegacyParseOptions extends StObject {
     
-    var additionalDigits: js.UndefOr[`0` | `1` | `2`] = js.native
+    var additionalDigits: js.UndefOr[`0` | `1` | `2`] = js.undefined
   }
   object LegacyParseOptions {
     

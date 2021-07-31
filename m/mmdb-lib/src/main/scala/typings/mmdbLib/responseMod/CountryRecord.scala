@@ -2,13 +2,13 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CountryRecord extends RegisteredCountryRecord {
+trait CountryRecord
+  extends StObject
+     with RegisteredCountryRecord {
   
-  val confidence: js.UndefOr[Double] = js.native
+  val confidence: js.UndefOr[Double] = js.undefined
 }
 object CountryRecord {
   

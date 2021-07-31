@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HsmClientCertificate extends StObject {
   
   /**
     * The identifier of the HSM client certificate.
     */
-  var HsmClientCertificateIdentifier: js.UndefOr[String] = js.native
+  var HsmClientCertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The public key that the Amazon Redshift cluster will use to connect to the HSM. You must register the public key in the HSM.
     */
-  var HsmClientCertificatePublicKey: js.UndefOr[String] = js.native
+  var HsmClientCertificatePublicKey: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags for the HSM client certificate.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object HsmClientCertificate {
   

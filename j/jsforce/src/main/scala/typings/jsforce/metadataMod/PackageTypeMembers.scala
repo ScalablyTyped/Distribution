@@ -2,15 +2,13 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageTypeMembers extends StObject {
   
-  var members: js.Array[String] = js.native
+  var members: js.Array[String]
   
-  var name: String = js.native
+  var name: String
 }
 object PackageTypeMembers {
   

@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseUser extends StObject {
   
-  var friendship_status: js.UndefOr[TagFeedResponseFriendshipStatus] = js.native
+  var friendship_status: js.UndefOr[TagFeedResponseFriendshipStatus] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
   
-  var is_favorite: js.UndefOr[Boolean] = js.native
+  var is_favorite: js.UndefOr[Boolean] = js.undefined
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: js.UndefOr[Boolean] = js.native
+  var is_unpublished: js.UndefOr[Boolean] = js.undefined
   
-  var is_verified: js.UndefOr[Boolean] = js.native
+  var is_verified: js.UndefOr[Boolean] = js.undefined
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: js.UndefOr[String] = js.native
+  var profile_pic_id: js.UndefOr[String] = js.undefined
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var username: String = js.native
+  var username: String
 }
 object TagFeedResponseUser {
   

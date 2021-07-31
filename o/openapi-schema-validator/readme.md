@@ -10,9 +10,9 @@ A validator for OpenAPI documents.
 | ------------------ | :-------------: |
 | Full name          | openapi-schema-validator |
 | Keywords           | openapi, schema, validator |
-| # releases         | 7 |
-| # dependents       | 16 |
-| # downloads        | 1136151 |
+| # releases         | 6 |
+| # dependents       | 20 |
+| # downloads        | 2277373 |
 | # stars            | 0 |
 
 ## Links

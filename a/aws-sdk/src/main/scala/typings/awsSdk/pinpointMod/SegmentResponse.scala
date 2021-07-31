@@ -2,71 +2,69 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentResponse extends StObject {
   
   /**
     * The unique identifier for the application that the segment is associated with.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The Amazon Resource Name (ARN) of the segment.
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * The date and time when the segment was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * The dimension settings for the segment.
     */
-  var Dimensions: js.UndefOr[SegmentDimensions] = js.native
+  var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
   
   /**
     * The unique identifier for the segment.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The settings for the import job that's associated with the segment.
     */
-  var ImportDefinition: js.UndefOr[SegmentImportResource] = js.native
+  var ImportDefinition: js.UndefOr[SegmentImportResource] = js.undefined
   
   /**
     * The date and time when the segment was last modified.
     */
-  var LastModifiedDate: js.UndefOr[string] = js.native
+  var LastModifiedDate: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the segment.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * A list of one or more segment groups that apply to the segment. Each segment group consists of zero or more base segments and the dimensions that are applied to those base segments.
     */
-  var SegmentGroups: js.UndefOr[SegmentGroupList] = js.native
+  var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
   
   /**
     * The segment type. Valid values are: DIMENSIONAL - A dynamic segment, which is a segment that uses selection criteria that you specify and is based on endpoint data that's reported by your app. Dynamic segments can change over time. IMPORT - A static segment, which is a segment that uses selection criteria that you specify and is based on endpoint definitions that you import from a file. Imported segments are static; they don't change over time.
     */
-  var SegmentType: typings.awsSdk.pinpointMod.SegmentType = js.native
+  var SegmentType: typings.awsSdk.pinpointMod.SegmentType
   
   /**
     * The version number of the segment.
     */
-  var Version: js.UndefOr[integer] = js.native
+  var Version: js.UndefOr[integer] = js.undefined
   
   /**
     * A string-to-string map of key-value pairs that identifies the tags that are associated with the segment. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object SegmentResponse {
   

@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Derivatives extends StObject {
   
-  var derivatives: js.UndefOr[js.Array[Source]] = js.native
+  var derivatives: js.UndefOr[js.Array[Source]] = js.undefined
   
-  var examples: js.UndefOr[js.Array[Source]] = js.native
+  var examples: js.UndefOr[js.Array[Source]] = js.undefined
   
-  var senses: js.UndefOr[js.Array[Conjugations]] = js.native
+  var senses: js.UndefOr[js.Array[Conjugations]] = js.undefined
   
-  var source: js.UndefOr[Attribution] = js.native
+  var source: js.UndefOr[Attribution] = js.undefined
 }
 object Derivatives {
   

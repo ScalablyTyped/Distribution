@@ -2,21 +2,19 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegistriesResponse extends StObject {
   
   /**
     * The token that specifies the next page of results to return. To request the first page, leave NextToken empty. The token will expire in 24 hours, and cannot be shared with other accounts.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * An array of registry summaries.
     */
-  var Registries: js.UndefOr[listOfRegistrySummary] = js.native
+  var Registries: js.UndefOr[listOfRegistrySummary] = js.undefined
 }
 object ListRegistriesResponse {
   

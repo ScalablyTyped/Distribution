@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variable extends StObject {
   
   /**
     * The name of the variable.
     */
-  var name: VariableName = js.native
+  var name: VariableName
   
   /**
     * The current value of the variable.
     */
-  var value: VariableValue = js.native
+  var value: VariableValue
 }
 object Variable {
   

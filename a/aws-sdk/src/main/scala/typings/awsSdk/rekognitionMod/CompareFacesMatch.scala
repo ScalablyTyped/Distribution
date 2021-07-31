@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompareFacesMatch extends StObject {
   
   /**
     * Provides face metadata (bounding box and confidence that the bounding box actually contains a face).
     */
-  var Face: js.UndefOr[ComparedFace] = js.native
+  var Face: js.UndefOr[ComparedFace] = js.undefined
   
   /**
     * Level of confidence that the faces match.
     */
-  var Similarity: js.UndefOr[Percent] = js.native
+  var Similarity: js.UndefOr[Percent] = js.undefined
 }
 object CompareFacesMatch {
   

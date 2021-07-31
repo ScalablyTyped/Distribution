@@ -9,95 +9,78 @@ import typings.sentryUtils.anon.Id
 import typings.sentryUtils.anon.Integrations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miscMod {
   
-  @JSImport("@sentry/utils/dist/misc", "addContextToFrame")
+  @JSImport("@sentry/utils/dist/misc", JSImport.Namespace)
   @js.native
-  def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = js.native
-  @JSImport("@sentry/utils/dist/misc", "addContextToFrame")
-  @js.native
-  def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/utils/dist/misc", "addExceptionMechanism")
-  @js.native
-  def addExceptionMechanism(event: Event): Unit = js.native
-  @JSImport("@sentry/utils/dist/misc", "addExceptionMechanism")
-  @js.native
-  def addExceptionMechanism(event: Event, mechanism: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], linesOfContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils/dist/misc", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event): Unit = js.native
-  @JSImport("@sentry/utils/dist/misc", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: js.UndefOr[scala.Nothing], `type`: String): Unit = js.native
-  @JSImport("@sentry/utils/dist/misc", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: String): Unit = js.native
-  @JSImport("@sentry/utils/dist/misc", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: String, `type`: String): Unit = js.native
+  @scala.inline
+  def addExceptionMechanism(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionMechanism")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionMechanism(event: Event, mechanism: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionMechanism")(event.asInstanceOf[js.Any], mechanism.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils/dist/misc", "consoleSandbox")
-  @js.native
-  def consoleSandbox(callback: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def addExceptionTypeValue(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: Unit, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils/dist/misc", "getEventDescription")
-  @js.native
-  def getEventDescription(event: Event): String = js.native
+  @scala.inline
+  def consoleSandbox(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleSandbox")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@sentry/utils/dist/misc", "getGlobalObject")
-  @js.native
-  def getGlobalObject[T](): T with SentryGlobal = js.native
+  @scala.inline
+  def getEventDescription(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventDescription")(event.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/misc", "getLocationHref")
-  @js.native
-  def getLocationHref(): String = js.native
+  @scala.inline
+  def getGlobalObject[T](): T & SentryGlobal = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalObject")().asInstanceOf[T & SentryGlobal]
   
-  @JSImport("@sentry/utils/dist/misc", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double): Double = js.native
-  @JSImport("@sentry/utils/dist/misc", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double, header: String): Double = js.native
-  @JSImport("@sentry/utils/dist/misc", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double, header: Double): Double = js.native
+  @scala.inline
+  def getLocationHref(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationHref")().asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/misc", "parseSemver")
-  @js.native
-  def parseSemver(input: String): SemVer = js.native
+  @scala.inline
+  def parseRetryAfterHeader(now: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def parseRetryAfterHeader(now: Double, header: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def parseRetryAfterHeader(now: Double, header: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@sentry/utils/dist/misc", "parseUrl")
-  @js.native
-  def parseUrl(url: String): Host = js.native
+  @scala.inline
+  def parseSemver(input: String): SemVer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSemver")(input.asInstanceOf[js.Any]).asInstanceOf[SemVer]
   
-  @JSImport("@sentry/utils/dist/misc", "stripUrlQueryAndFragment")
-  @js.native
-  def stripUrlQueryAndFragment(urlPath: String): String = js.native
+  @scala.inline
+  def parseUrl(url: String): Host = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Host]
   
-  @JSImport("@sentry/utils/dist/misc", "uuid4")
-  @js.native
-  def uuid4(): String = js.native
+  @scala.inline
+  def stripUrlQueryAndFragment(urlPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUrlQueryAndFragment")(urlPath.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   
   /**
     * Represents Semantic Versioning object
     */
-  @js.native
   trait SemVer extends StObject {
     
-    var buildmetadata: js.UndefOr[String] = js.native
+    var buildmetadata: js.UndefOr[String] = js.undefined
     
-    var major: js.UndefOr[Double] = js.native
+    var major: js.UndefOr[Double] = js.undefined
     
-    var minor: js.UndefOr[Double] = js.native
+    var minor: js.UndefOr[Double] = js.undefined
     
-    var patch: js.UndefOr[Double] = js.native
+    var patch: js.UndefOr[Double] = js.undefined
     
-    var prerelease: js.UndefOr[String] = js.native
+    var prerelease: js.UndefOr[String] = js.undefined
   }
   object SemVer {
     
@@ -143,18 +126,17 @@ object miscMod {
   }
   
   /** Internal */
-  @js.native
   trait SentryGlobal extends StObject {
     
-    var SENTRY_DSN: js.UndefOr[String] = js.native
+    var SENTRY_DSN: js.UndefOr[String] = js.undefined
     
-    var SENTRY_ENVIRONMENT: js.UndefOr[String] = js.native
+    var SENTRY_ENVIRONMENT: js.UndefOr[String] = js.undefined
     
-    var SENTRY_RELEASE: js.UndefOr[Id] = js.native
+    var SENTRY_RELEASE: js.UndefOr[Id] = js.undefined
     
-    var Sentry: js.UndefOr[Integrations] = js.native
+    var Sentry: js.UndefOr[Integrations] = js.undefined
     
-    var __SENTRY__ : GlobalEventProcessors = js.native
+    var __SENTRY__ : GlobalEventProcessors
   }
   object SentryGlobal {
     

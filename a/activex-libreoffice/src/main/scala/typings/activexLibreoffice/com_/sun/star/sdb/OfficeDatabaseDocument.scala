@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.script.provider.XScriptProviderS
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait OfficeDatabaseDocument
-  extends OfficeDocument
+  extends StObject
+     with OfficeDocument
      with XOfficeDatabaseDocument
      with XScriptProviderSupplier
      with XLoadable

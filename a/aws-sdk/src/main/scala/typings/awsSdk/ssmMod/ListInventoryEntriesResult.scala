@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInventoryEntriesResult extends StObject {
   
   /**
     * The time that inventory information was collected for the instance(s).
     */
-  var CaptureTime: js.UndefOr[InventoryItemCaptureTime] = js.native
+  var CaptureTime: js.UndefOr[InventoryItemCaptureTime] = js.undefined
   
   /**
     * A list of inventory items on the instance(s).
     */
-  var Entries: js.UndefOr[InventoryItemEntryList] = js.native
+  var Entries: js.UndefOr[InventoryItemEntryList] = js.undefined
   
   /**
     * The instance ID targeted by the request to query inventory information.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The inventory schema version used by the instance(s).
     */
-  var SchemaVersion: js.UndefOr[InventoryItemSchemaVersion] = js.native
+  var SchemaVersion: js.UndefOr[InventoryItemSchemaVersion] = js.undefined
   
   /**
     * The type of inventory item returned by the request.
     */
-  var TypeName: js.UndefOr[InventoryItemTypeName] = js.native
+  var TypeName: js.UndefOr[InventoryItemTypeName] = js.undefined
 }
 object ListInventoryEntriesResult {
   

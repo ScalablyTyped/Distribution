@@ -6,7 +6,6 @@ import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.WebcamConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webcamIteratorMod {
@@ -44,17 +43,17 @@ object webcamIteratorMod {
   /* static members */
   object WebcamIterator {
     
-    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator")
     @js.native
-    def create(): js.Promise[WebcamIterator] = js.native
-    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
-    @js.native
-    def create(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
-    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
-    @js.native
-    def create(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
-    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
-    @js.native
-    def create(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[WebcamIterator]]
+    @scala.inline
+    def create(webcamVideoElement: Unit, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
+    @scala.inline
+    def create(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(webcamVideoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebcamIterator]]
+    @scala.inline
+    def create(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
   }
 }

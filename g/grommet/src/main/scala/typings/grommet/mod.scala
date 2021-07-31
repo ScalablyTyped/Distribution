@@ -161,15 +161,18 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("grommet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("grommet", "Accordion")
   @js.native
   val Accordion: FC[
-    BoxProps with AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & AccordionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -177,27 +180,27 @@ object mod {
   @js.native
   class AccordionPanel protected ()
     extends Component[
-          AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "AccordionPanel")
   @js.native
   val AccordionPanel: ComponentClass[
-    AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
   @JSImport("grommet", "Anchor")
   @js.native
   val Anchor: FC[
-    AnchorProps with (Omit[
+    AnchorProps & (Omit[
       DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
       color
     ])
@@ -210,19 +213,17 @@ object mod {
   @JSImport("grommet", "Avatar")
   @js.native
   val Avatar: FC[
-    BoxProps with AvatarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & AvatarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
   @JSImport("grommet", "Box")
   @js.native
-  val Box: FC[
-    BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Box: FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
   @JSImport("grommet", "Button")
   @js.native
   val Button: FC[
-    ButtonProps with (Omit[
+    ButtonProps & (Omit[
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ])
@@ -233,20 +234,20 @@ object mod {
   @js.native
   class Calendar protected ()
     extends Component[
-          CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Calendar")
   @js.native
   val Calendar: ComponentClass[
-    CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -271,20 +272,20 @@ object mod {
   @js.native
   class Carousel protected ()
     extends Component[
-          CarouselProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CarouselProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CarouselProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CarouselProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CarouselProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CarouselProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Carousel")
   @js.native
   val Carousel: ComponentClass[
-    CarouselProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CarouselProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -303,7 +304,7 @@ object mod {
   @JSImport("grommet", "CheckBox")
   @js.native
   val CheckBox: FC[
-    CheckBoxProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
+    CheckBoxProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
   ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -311,20 +312,20 @@ object mod {
   @js.native
   class CheckBoxGroup protected ()
     extends Component[
-          CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "CheckBoxGroup")
   @js.native
   val CheckBoxGroup: ComponentClass[
-    CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -333,20 +334,20 @@ object mod {
   @js.native
   class Clock protected ()
     extends Component[
-          ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
+          ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])) = this()
+    def this(props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])) = this()
     def this(
-      props: ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]),
+      props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Clock")
   @js.native
   val Clock: ComponentClass[
-    ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
+    ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
     ComponentState
   ] = js.native
   
@@ -355,20 +356,20 @@ object mod {
   @js.native
   class Collapsible protected ()
     extends Component[
-          CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Collapsible")
   @js.native
   val Collapsible: ComponentClass[
-    CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -384,13 +385,13 @@ object mod {
   @js.native
   class DataTable[TRowType] protected ()
     extends typings.grommet.dataTableMod.DataTable[TRowType] {
-    def this(props: DataTableProps[TRowType] with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])) = this()
+    def this(props: DataTableProps[TRowType] & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(
-      props: DataTableProps[TRowType] with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]),
+      props: DataTableProps[TRowType] & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]),
       context: js.Any
     ) = this()
   }
@@ -401,27 +402,27 @@ object mod {
   
   @JSImport("grommet", "Diagram")
   @js.native
-  val Diagram: FC[DiagramProps with SVGProps[SVGSVGElement]] = js.native
+  val Diagram: FC[DiagramProps & SVGProps[SVGSVGElement]] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet", "Distribution")
   @js.native
   class Distribution protected ()
     extends Component[
-          DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Distribution")
   @js.native
   val Distribution: ComponentClass[
-    DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -430,20 +431,20 @@ object mod {
   @js.native
   class Drop protected ()
     extends Component[
-          DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Drop")
   @js.native
   val Drop: ComponentClass[
-    DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -452,19 +453,19 @@ object mod {
   @js.native
   class DropButton protected ()
     extends Component[
-          DropButtonProps with ButtonProps with (Omit[
+          DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DropButtonProps with ButtonProps with (Omit[
+    def this(props: DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ])) = this()
     def this(
-      props: DropButtonProps with ButtonProps with (Omit[
+      props: DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ]),
@@ -474,7 +475,7 @@ object mod {
   @JSImport("grommet", "DropButton")
   @js.native
   val DropButton: ComponentClass[
-    DropButtonProps with ButtonProps with (Omit[
+    DropButtonProps & ButtonProps & (Omit[
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ]), 
@@ -490,19 +491,19 @@ object mod {
   @js.native
   class Form protected ()
     extends Component[
-          FormProps[_] with (typings.std.Omit[
+          FormProps[js.Any] & (typings.std.Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: FormProps[_] with (typings.std.Omit[
+    def this(props: FormProps[js.Any] & (typings.std.Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ])) = this()
     def this(
-      props: FormProps[_] with (typings.std.Omit[
+      props: FormProps[js.Any] & (typings.std.Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ]),
@@ -518,19 +519,19 @@ object mod {
   @js.native
   class FormField protected ()
     extends Component[
-          FormFieldProps with (Omit[
+          FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: FormFieldProps with (Omit[
+    def this(props: FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ])) = this()
     def this(
-      props: FormFieldProps with (Omit[
+      props: FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ]),
@@ -540,7 +541,7 @@ object mod {
   @JSImport("grommet", "FormField")
   @js.native
   val FormField: ComponentClass[
-    FormFieldProps with (Omit[
+    FormFieldProps & (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       placeholder
     ]), 
@@ -549,22 +550,20 @@ object mod {
   
   @JSImport("grommet", "Grid")
   @js.native
-  val Grid: FC[
-    GridProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Grid: FC[GridProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet", "Grommet")
   @js.native
   class Grommet_ protected ()
     extends Component[
-          GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
@@ -572,7 +571,7 @@ object mod {
   @JSImport("grommet", "Grommet")
   @js.native
   val Grommet_ : ComponentClass[
-    GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -583,13 +582,13 @@ object mod {
   @JSImport("grommet", "Heading")
   @js.native
   val Heading: FC[
-    HeadingProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
+    HeadingProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
   ] = js.native
   
   @JSImport("grommet", "Image")
   @js.native
   val Image: FC[
-    ImageProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
+    ImageProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
   ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -613,20 +612,20 @@ object mod {
   @js.native
   class Layer protected ()
     extends Component[
-          LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Layer")
   @js.native
   val Layer: ComponentClass[
-    LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -635,20 +634,20 @@ object mod {
   @js.native
   class List protected ()
     extends Component[
-          ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
+          ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])) = this()
+    def this(props: ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])) = this()
     def this(
-      props: ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]),
+      props: ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "List")
   @js.native
   val List: ComponentClass[
-    ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
+    ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
     ComponentState
   ] = js.native
   
@@ -661,20 +660,20 @@ object mod {
   @js.native
   class Markdown protected ()
     extends Component[
-          MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          MarkdownProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: MarkdownProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: MarkdownProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "Markdown")
   @js.native
   val Markdown: ComponentClass[
-    MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    MarkdownProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -683,19 +682,19 @@ object mod {
   @js.native
   class MaskedInput protected ()
     extends Component[
-          MaskedInputProps with (typings.std.Omit[
+          MaskedInputProps & (typings.std.Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: MaskedInputProps with (typings.std.Omit[
+    def this(props: MaskedInputProps & (typings.std.Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ])) = this()
     def this(
-      props: MaskedInputProps with (typings.std.Omit[
+      props: MaskedInputProps & (typings.std.Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ]),
@@ -705,7 +704,7 @@ object mod {
   @JSImport("grommet", "MaskedInput")
   @js.native
   val MaskedInput: ComponentClass[
-    MaskedInputProps with (typings.std.Omit[
+    MaskedInputProps & (typings.std.Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       icon | id | mask | name | onBlur | plain | reverse | size | value
     ]), 
@@ -714,7 +713,7 @@ object mod {
   
   @JSImport("grommet", "Menu")
   @js.native
-  val Menu: FC[MenuProps with (Omit[ButtonType, icon])] = js.native
+  val Menu: FC[MenuProps & (Omit[ButtonType, icon])] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet", "Meter")
@@ -735,7 +734,7 @@ object mod {
   @JSImport("grommet", "Paragraph")
   @js.native
   val Paragraph: FC[
-    ParagraphProps with (Omit[
+    ParagraphProps & (Omit[
       DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
       color
     ])
@@ -746,20 +745,20 @@ object mod {
   @js.native
   class RadioButton protected ()
     extends Component[
-          RadioButtonProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+          RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: RadioButtonProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])) = this()
+    def this(props: RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])) = this()
     def this(
-      props: RadioButtonProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]),
+      props: RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "RadioButton")
   @js.native
   val RadioButton: ComponentClass[
-    RadioButtonProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+    RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
     ComponentState
   ] = js.native
   
@@ -768,27 +767,27 @@ object mod {
   @js.native
   class RadioButtonGroup protected ()
     extends Component[
-          RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "RadioButtonGroup")
   @js.native
   val RadioButtonGroup: ComponentClass[
-    RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
   @JSImport("grommet", "RangeInput")
   @js.native
   val RangeInput: FC[
-    RangeInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
+    RangeInputProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
   ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -796,20 +795,20 @@ object mod {
   @js.native
   class RangeSelector protected ()
     extends Component[
-          RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
+          RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])) = this()
+    def this(props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])) = this()
     def this(
-      props: RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]),
+      props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet", "RangeSelector")
   @js.native
   val RangeSelector: ComponentClass[
-    RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
+    RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
     ComponentState
   ] = js.native
   
@@ -833,13 +832,13 @@ object mod {
   @JSImport("grommet", "RoutedButton")
   @js.native
   class RoutedButton protected ()
-    extends Component[RoutedButtonProps with ButtonProps, ComponentState, js.Any] {
-    def this(props: RoutedButtonProps with ButtonProps) = this()
-    def this(props: RoutedButtonProps with ButtonProps, context: js.Any) = this()
+    extends Component[RoutedButtonProps & ButtonProps, ComponentState, js.Any] {
+    def this(props: RoutedButtonProps & ButtonProps) = this()
+    def this(props: RoutedButtonProps & ButtonProps, context: js.Any) = this()
   }
   @JSImport("grommet", "RoutedButton")
   @js.native
-  val RoutedButton: ComponentClass[RoutedButtonProps with ButtonProps, ComponentState] = js.native
+  val RoutedButton: ComponentClass[RoutedButtonProps & ButtonProps, ComponentState] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet", "Select")
@@ -856,7 +855,7 @@ object mod {
   @JSImport("grommet", "Sidebar")
   @js.native
   val Sidebar: FC[
-    BoxProps with SidebarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & SidebarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
   @JSImport("grommet", "SkipLink")
@@ -873,28 +872,26 @@ object mod {
   
   @JSImport("grommet", "Stack")
   @js.native
-  val Stack: FC[
-    StackProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Stack: FC[StackProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet", "Tab")
   @js.native
   class Tab protected ()
     extends Component[
-          TabProps with (Omit[
+          TabProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             title
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: TabProps with (Omit[
+    def this(props: TabProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             title
           ])) = this()
     def this(
-      props: TabProps with (Omit[
+      props: TabProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             title
           ]),
@@ -904,7 +901,7 @@ object mod {
   @JSImport("grommet", "Tab")
   @js.native
   val Tab: ComponentClass[
-    TabProps with (Omit[
+    TabProps & (Omit[
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       title
     ]), 
@@ -914,55 +911,53 @@ object mod {
   @JSImport("grommet", "Table")
   @js.native
   val Table: FC[
-    TableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
+    TableProps & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
   ] = js.native
   
   @JSImport("grommet", "TableBody")
   @js.native
   val TableBody: FC[
-    TableBodyProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
+    TableBodyProps & (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
   ] = js.native
   
   @JSImport("grommet", "TableCell")
   @js.native
   val TableCell: FC[
-    TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
+    TableCellProps & BoxTypes & (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
   ] = js.native
   
   @JSImport("grommet", "TableFooter")
   @js.native
   val TableFooter: FC[
-    TableFooterProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
+    TableFooterProps & (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
   ] = js.native
   
   @JSImport("grommet", "TableHeader")
   @js.native
   val TableHeader: FC[
-    TableHeaderProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
+    TableHeaderProps & (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
   ] = js.native
   
   @JSImport("grommet", "TableRow")
   @js.native
   val TableRow: FC[
-    TableRowProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement])
+    TableRowProps & (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement])
   ] = js.native
   
   @JSImport("grommet", "Tabs")
   @js.native
-  val Tabs: FC[
-    TabsProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Tabs: FC[TabsProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
   @JSImport("grommet", "Text")
   @js.native
   val Text: FC[
-    TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
+    TextProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
   ] = js.native
   
   @JSImport("grommet", "TextArea")
   @js.native
   val TextArea: FC[
-    TextAreaProps with (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
+    TextAreaProps & (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
   ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -970,19 +965,19 @@ object mod {
   @js.native
   class TextInput protected ()
     extends Component[
-          TextInputProps with (Omit[
+          TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: TextInputProps with (Omit[
+    def this(props: TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ])) = this()
     def this(
-      props: TextInputProps with (Omit[
+      props: TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ]),
@@ -992,7 +987,7 @@ object mod {
   @JSImport("grommet", "TextInput")
   @js.native
   val TextInput: ComponentClass[
-    TextInputProps with (Omit[
+    TextInputProps & (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       onSelect | size | placeholder
     ]), 
@@ -1008,19 +1003,19 @@ object mod {
   @js.native
   class Video protected ()
     extends Component[
-          VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+          VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+    def this(props: VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ])) = this()
     def this(
-      props: VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+      props: VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ]),
@@ -1030,7 +1025,7 @@ object mod {
   @JSImport("grommet", "Video")
   @js.native
   val Video: ComponentClass[
-    VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+    VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
       DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
       controls
     ]), 
@@ -1042,19 +1037,16 @@ object mod {
   @js.native
   class WorldMap protected ()
     extends Component[
-          WorldMapProps with (typings.std.Omit[SVGProps[SVGSVGElement], color]), 
+          WorldMapProps & (typings.std.Omit[SVGProps[SVGSVGElement], color]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: WorldMapProps with (typings.std.Omit[SVGProps[SVGSVGElement], color])) = this()
-    def this(props: WorldMapProps with (typings.std.Omit[SVGProps[SVGSVGElement], color]), context: js.Any) = this()
+    def this(props: WorldMapProps & (typings.std.Omit[SVGProps[SVGSVGElement], color])) = this()
+    def this(props: WorldMapProps & (typings.std.Omit[SVGProps[SVGSVGElement], color]), context: js.Any) = this()
   }
   @JSImport("grommet", "WorldMap")
   @js.native
-  val WorldMap: ComponentClass[
-    WorldMapProps with (typings.std.Omit[SVGProps[SVGSVGElement], color]), 
-    ComponentState
-  ] = js.native
+  val WorldMap: ComponentClass[WorldMapProps & (typings.std.Omit[SVGProps[SVGSVGElement], color]), ComponentState] = js.native
   
   /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
   object base {
@@ -1232,22 +1224,17 @@ object mod {
   @js.native
   val dark: ThemeType = js.native
   
-  @JSImport("grommet", "extendDefaultTheme")
-  @js.native
-  def extendDefaultTheme(theme: ThemeType): Unit = js.native
+  @scala.inline
+  def extendDefaultTheme(theme: ThemeType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendDefaultTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("grommet", "generate")
-  @js.native
-  def generate(): DeepReadonlyThemeType = js.native
-  @JSImport("grommet", "generate")
-  @js.native
-  def generate(baseSpacing: js.UndefOr[scala.Nothing], scale: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet", "generate")
-  @js.native
-  def generate(baseSpacing: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet", "generate")
-  @js.native
-  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = js.native
+  @scala.inline
+  def generate(): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any]).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Unit, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
   
   @JSImport("grommet", "grommet")
   @js.native

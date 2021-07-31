@@ -2,25 +2,23 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single message which encapsulates structured name and metadata for a
   * given counter.
   */
-@js.native
 trait SchemaCounterStructuredNameAndMetadata extends StObject {
   
   /**
     * Metadata associated with a counter
     */
-  var metadata: js.UndefOr[SchemaCounterMetadata] = js.native
+  var metadata: js.UndefOr[SchemaCounterMetadata] = js.undefined
   
   /**
     * Structured name of the counter.
     */
-  var name: js.UndefOr[SchemaCounterStructuredName] = js.native
+  var name: js.UndefOr[SchemaCounterStructuredName] = js.undefined
 }
 object SchemaCounterStructuredNameAndMetadata {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAttachmentRequest extends StObject {
   
   /**
     * The ID of the attachment to return. Attachment IDs are returned by the DescribeCommunications operation.
     */
-  var attachmentId: AttachmentId = js.native
+  var attachmentId: AttachmentId
 }
 object DescribeAttachmentRequest {
   

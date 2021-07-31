@@ -7,7 +7,6 @@ import typings.ol.olStrings.precompose
 import typings.ol.olStrings.rendercomplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graticuleMod {
@@ -65,12 +64,11 @@ object graticuleMod {
     def un_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
   }
   
-  @js.native
   trait GraticuleLabelDataType extends StObject {
     
-    var geom: typings.ol.pointMod.default = js.native
+    var geom: typings.ol.pointMod.default
     
-    var text: String = js.native
+    var text: String
   }
   object GraticuleLabelDataType {
     
@@ -91,50 +89,49 @@ object graticuleMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var intervals: js.UndefOr[js.Array[Double]] = js.native
+    var intervals: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var latLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.native
+    var latLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.undefined
     
-    var latLabelPosition: js.UndefOr[Double] = js.native
+    var latLabelPosition: js.UndefOr[Double] = js.undefined
     
-    var latLabelStyle: js.UndefOr[typings.ol.textMod.default] = js.native
+    var latLabelStyle: js.UndefOr[typings.ol.textMod.default] = js.undefined
     
-    var lonLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.native
+    var lonLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.undefined
     
-    var lonLabelPosition: js.UndefOr[Double] = js.native
+    var lonLabelPosition: js.UndefOr[Double] = js.undefined
     
-    var lonLabelStyle: js.UndefOr[typings.ol.textMod.default] = js.native
+    var lonLabelStyle: js.UndefOr[typings.ol.textMod.default] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
-    var strokeStyle: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var strokeStyle: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
     
-    var targetSize: js.UndefOr[Double] = js.native
+    var targetSize: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

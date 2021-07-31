@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportProductSetsRequest extends StObject {
   
   /** Required. The input content for the list of requests. */
-  var inputConfig: js.UndefOr[ImportProductSetsInputConfig] = js.native
+  var inputConfig: js.UndefOr[ImportProductSetsInputConfig] = js.undefined
 }
 object ImportProductSetsRequest {
   

@@ -4,49 +4,47 @@ import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
   */
-@js.native
 trait PersistentVolumeClaimSpec extends StObject {
   
   /**
     * AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
     */
-  var accessModes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var accessModes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * This field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot - Beta) * An existing PVC (PersistentVolumeClaim) * An existing custom resource/object that implements data population (Alpha) In order to use VolumeSnapshot object types, the appropriate feature gate must be enabled (VolumeSnapshotDataSource or AnyVolumeDataSource) If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source. If the specified data source is not supported, the volume will not be created and the failure will be reported as an event. In the future, we plan to support more data source types and the behavior of the provisioner may change.
     */
-  var dataSource: js.UndefOr[Input[TypedLocalObjectReference]] = js.native
+  var dataSource: js.UndefOr[Input[TypedLocalObjectReference]] = js.undefined
   
   /**
     * Resources represents the minimum resources the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
     */
-  var resources: js.UndefOr[Input[ResourceRequirements]] = js.native
+  var resources: js.UndefOr[Input[ResourceRequirements]] = js.undefined
   
   /**
     * A label query over volumes to consider for binding.
     */
-  var selector: js.UndefOr[Input[LabelSelector]] = js.native
+  var selector: js.UndefOr[Input[LabelSelector]] = js.undefined
   
   /**
     * Name of the StorageClass required by the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1
     */
-  var storageClassName: js.UndefOr[Input[String]] = js.native
+  var storageClassName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec.
     */
-  var volumeMode: js.UndefOr[Input[String]] = js.native
+  var volumeMode: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * VolumeName is the binding reference to the PersistentVolume backing this claim.
     */
-  var volumeName: js.UndefOr[Input[String]] = js.native
+  var volumeName: js.UndefOr[Input[String]] = js.undefined
 }
 object PersistentVolumeClaimSpec {
   

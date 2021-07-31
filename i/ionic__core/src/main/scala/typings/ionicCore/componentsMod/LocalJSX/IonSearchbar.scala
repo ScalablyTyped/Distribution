@@ -30,131 +30,129 @@ import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSearchbar extends StObject {
   
   /**
     * If `true`, enable searchbar animation.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: js.UndefOr[AutocompleteTypes] = js.native
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
   
   /**
     * Set the input's autocorrect property.
     */
-  var autocorrect: js.UndefOr[on | off] = js.native
+  var autocorrect: js.UndefOr[on | off] = js.undefined
   
   /**
     * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
-  var cancelButtonIcon: js.UndefOr[String] = js.native
+  var cancelButtonIcon: js.UndefOr[String] = js.undefined
   
   /**
     * Set the the cancel button text. Only applies to `ios` mode.
     */
-  var cancelButtonText: js.UndefOr[String] = js.native
+  var cancelButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
     */
-  var clearIcon: js.UndefOr[String] = js.native
+  var clearIcon: js.UndefOr[String] = js.undefined
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.
     */
-  var debounce: js.UndefOr[Double] = js.native
+  var debounce: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the input.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
     */
-  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
   /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted when the input loses focus.
     */
-  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the cancel button is clicked.
     */
-  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.native
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.undefined
   
   /**
     * Emitted when the clear input button is clicked.
     */
-  var onIonClear: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonClear: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the input has focus.
     */
-  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when a keyboard input occurred.
     */
-  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.native
+  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
   
   /**
     * Set the input's placeholder. `placeholder` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
     */
-  var searchIcon: js.UndefOr[String] = js.native
+  var searchIcon: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: js.UndefOr[never | focus | always] = js.native
+  var showCancelButton: js.UndefOr[never | focus | always] = js.undefined
   
   /**
     * If `true`, enable spellcheck on the input.
     */
-  var spellcheck: js.UndefOr[Boolean] = js.native
+  var spellcheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the type of the input.
     */
-  var `type`: js.UndefOr[text | password | email | number | search | tel | url] = js.native
+  var `type`: js.UndefOr[text | password | email | number | search | tel | url] = js.undefined
   
   /**
     * the value of the searchbar.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object IonSearchbar {
   

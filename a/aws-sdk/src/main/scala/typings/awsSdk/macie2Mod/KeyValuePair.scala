@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValuePair extends StObject {
   
   /**
     * One part of a key-value pair that comprises a tag. A tag key is a general label that acts as a category for more specific tag values.
     */
-  var key: js.UndefOr[string] = js.native
+  var key: js.UndefOr[string] = js.undefined
   
   /**
     * One part of a key-value pair that comprises a tag. A tag value acts as a descriptor for a tag key. A tag value can be an empty string.
     */
-  var value: js.UndefOr[string] = js.native
+  var value: js.UndefOr[string] = js.undefined
 }
 object KeyValuePair {
   

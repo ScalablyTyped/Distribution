@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualNodeMod {
@@ -75,6 +74,10 @@ object virtualNodeMod {
   /* static members */
   object VirtualNode {
     
+    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VirtualNode resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -84,55 +87,49 @@ object virtualNodeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualNodeState): VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): VirtualNode = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualNodeState): VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VirtualNode]
     
     /**
       * Returns true if the given object is an instance of VirtualNode.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean]
   }
   
-  @js.native
   trait VirtualNodeArgs extends StObject {
     
     /**
       * The name of the service mesh in which to create the virtual node. Must be between 1 and 255 characters in length.
       */
-    val meshName: Input[String] = js.native
+    val meshName: Input[String]
     
     /**
       * The AWS account ID of the service mesh's owner. Defaults to the account ID the [AWS provider](https://www.terraform.io/docs/providers/aws/index.html) is currently connected to.
       */
-    val meshOwner: js.UndefOr[Input[String]] = js.native
+    val meshOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to use for the virtual node. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The virtual node specification to apply.
       */
-    val spec: Input[typings.pulumiAws.inputMod.appmesh.VirtualNodeSpec] = js.native
+    val spec: Input[typings.pulumiAws.inputMod.appmesh.VirtualNodeSpec]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VirtualNodeArgs {
     
@@ -171,53 +168,52 @@ object virtualNodeMod {
     }
   }
   
-  @js.native
   trait VirtualNodeState extends StObject {
     
     /**
       * The ARN of the virtual node.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation date of the virtual node.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last update date of the virtual node.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the service mesh in which to create the virtual node. Must be between 1 and 255 characters in length.
       */
-    val meshName: js.UndefOr[Input[String]] = js.native
+    val meshName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID of the service mesh's owner. Defaults to the account ID the [AWS provider](https://www.terraform.io/docs/providers/aws/index.html) is currently connected to.
       */
-    val meshOwner: js.UndefOr[Input[String]] = js.native
+    val meshOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to use for the virtual node. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource owner's AWS account ID.
       */
-    val resourceOwner: js.UndefOr[Input[String]] = js.native
+    val resourceOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The virtual node specification to apply.
       */
-    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.VirtualNodeSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.VirtualNodeSpec]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VirtualNodeState {
     

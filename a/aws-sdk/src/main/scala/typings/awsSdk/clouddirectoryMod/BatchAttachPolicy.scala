@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAttachPolicy extends StObject {
   
   /**
     * The reference that identifies the object to which the policy will be attached.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * The reference that is associated with the policy object.
     */
-  var PolicyReference: ObjectReference = js.native
+  var PolicyReference: ObjectReference
 }
 object BatchAttachPolicy {
   

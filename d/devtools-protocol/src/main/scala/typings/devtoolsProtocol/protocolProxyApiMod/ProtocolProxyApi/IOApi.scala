@@ -7,26 +7,24 @@ import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobRequest
 import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOApi extends StObject {
   
   /**
     * Close the stream, discard any temporary backing storage.
     */
-  def close(params: CloseRequest): js.Promise[Unit] = js.native
+  def close(params: CloseRequest): js.Promise[Unit]
   
   /**
     * Read a chunk of the stream
     */
-  def read(params: ReadRequest): js.Promise[ReadResponse] = js.native
+  def read(params: ReadRequest): js.Promise[ReadResponse]
   
   /**
     * Return UUID of Blob object specified by a remote object id.
     */
-  def resolveBlob(params: ResolveBlobRequest): js.Promise[ResolveBlobResponse] = js.native
+  def resolveBlob(params: ResolveBlobRequest): js.Promise[ResolveBlobResponse]
 }
 object IOApi {
   

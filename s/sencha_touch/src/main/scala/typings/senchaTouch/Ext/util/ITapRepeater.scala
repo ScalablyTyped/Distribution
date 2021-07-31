@@ -2,52 +2,51 @@ package typings.senchaTouch.Ext.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITapRepeater
-  extends typings.senchaTouch.Ext.mixin.IObservable {
+  extends StObject
+     with typings.senchaTouch.Ext.mixin.IObservable {
   
   /** [Method] Returns the value of accelerate
     * @returns Boolean
     */
-  var getAccelerate: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAccelerate: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of delay
     * @returns Number
     */
-  var getDelay: js.UndefOr[js.Function0[Double]] = js.native
+  var getDelay: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of el
     * @returns Object
     */
-  var getEl: js.UndefOr[js.Function0[_]] = js.native
+  var getEl: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of interval
     * @returns Number
     */
-  var getInterval: js.UndefOr[js.Function0[Double]] = js.native
+  var getInterval: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of pressCls
     * @returns Object
     */
-  var getPressCls: js.UndefOr[js.Function0[_]] = js.native
+  var getPressCls: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of preventDefault
     * @returns Boolean
     */
-  var getPreventDefault: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getPreventDefault: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of stopDefault
     * @returns Boolean
     */
-  var getStopDefault: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getStopDefault: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of timer
     * @returns Number
     */
-  var getTimer: js.UndefOr[js.Function0[Double]] = js.native
+  var getTimer: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -61,47 +60,47 @@ trait ITapRepeater
       /* events */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of accelerate
     * @param accelerate Boolean The new value.
     */
-  var setAccelerate: js.UndefOr[js.Function1[/* accelerate */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAccelerate: js.UndefOr[js.Function1[/* accelerate */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of delay
     * @param delay Number The new value.
     */
-  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.native
+  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of el
     * @param el Object The new value.
     */
-  var setEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.native
+  var setEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of interval
     * @param interval Number The new value.
     */
-  var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
+  var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of pressCls
     * @param pressCls Object The new value.
     */
-  var setPressCls: js.UndefOr[js.Function1[/* pressCls */ js.UndefOr[js.Any], Unit]] = js.native
+  var setPressCls: js.UndefOr[js.Function1[/* pressCls */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of preventDefault
     * @param preventDefault Boolean The new value.
     */
-  var setPreventDefault: js.UndefOr[js.Function1[/* preventDefault */ js.UndefOr[Boolean], Unit]] = js.native
+  var setPreventDefault: js.UndefOr[js.Function1[/* preventDefault */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of stopDefault
     * @param stopDefault Boolean The new value.
     */
-  var setStopDefault: js.UndefOr[js.Function1[/* stopDefault */ js.UndefOr[Boolean], Unit]] = js.native
+  var setStopDefault: js.UndefOr[js.Function1[/* stopDefault */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of timer
     * @param timer Number The new value.
     */
-  var setTimer: js.UndefOr[js.Function1[/* timer */ js.UndefOr[Double], Unit]] = js.native
+  var setTimer: js.UndefOr[js.Function1[/* timer */ js.UndefOr[Double], Unit]] = js.undefined
 }
 object ITapRepeater {
   
@@ -127,7 +126,7 @@ object ITapRepeater {
     def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
     
     @scala.inline
-    def setGetEl(value: () => _): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
+    def setGetEl(value: () => js.Any): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
@@ -139,7 +138,7 @@ object ITapRepeater {
     def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
     
     @scala.inline
-    def setGetPressCls(value: () => _): Self = StObject.set(x, "getPressCls", js.Any.fromFunction0(value))
+    def setGetPressCls(value: () => js.Any): Self = StObject.set(x, "getPressCls", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPressClsUndefined: Self = StObject.set(x, "getPressCls", js.undefined)

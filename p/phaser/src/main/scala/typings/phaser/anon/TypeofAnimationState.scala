@@ -3,29 +3,27 @@ package typings.phaser.anon
 import typings.phaser.spine.Animation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAnimationState extends StObject {
   
   /* static member */
-  var FIRST: Double = js.native
+  var FIRST: Double
   
   /* static member */
-  var HOLD: Double = js.native
+  var HOLD: Double
   
   /* static member */
-  var HOLD_MIX: Double = js.native
+  var HOLD_MIX: Double
   
   /* static member */
-  var NOT_LAST: Double = js.native
+  var NOT_LAST: Double
   
   /* static member */
-  var SUBSEQUENT: Double = js.native
+  var SUBSEQUENT: Double
   
   /* static member */
-  var emptyAnimation: Animation = js.native
+  var emptyAnimation: Animation
 }
 object TypeofAnimationState {
   

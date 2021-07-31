@@ -4,14 +4,14 @@ import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */] extends TransitionConfig[TContext, TEvent] {
+trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with TransitionConfig[TContext, TEvent] {
   
   @JSName("target")
-  var target_TargetTransitionConfig: TransitionTarget[TContext, TEvent] = js.native
+  var target_TargetTransitionConfig: TransitionTarget[TContext, TEvent]
 }
 object TargetTransitionConfig {
   
@@ -22,7 +22,7 @@ object TargetTransitionConfig {
   }
   
   @scala.inline
-  implicit class TargetTransitionConfigMutableBuilder[Self <: TargetTransitionConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (TargetTransitionConfig[TContext, TEvent])) extends AnyVal {
+  implicit class TargetTransitionConfigMutableBuilder[Self <: TargetTransitionConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TargetTransitionConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setTarget(value: TransitionTarget[TContext, TEvent]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

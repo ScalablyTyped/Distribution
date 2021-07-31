@@ -3,29 +3,29 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rbushMod {
   
   @JSImport("ol/structs/RBush", JSImport.Default)
   @js.native
-  class default[T] () extends RBush[T] {
+  class default[T] ()
+    extends StObject
+       with RBush[T] {
     def this(opt_maxEntries: Double) = this()
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Entry {
     
@@ -73,12 +73,12 @@ object rbushMod {
       * If the callback returns a truthy value, this value is returned without
       * checking the rest of the tree.
       */
-    def forEach(callback: js.Function1[/* p0 */ T, _]): js.Any = js.native
+    def forEach(callback: js.Function1[/* p0 */ T, js.Any]): js.Any = js.native
     
     /**
       * Calls a callback function with each value in the provided extent.
       */
-    def forEachInExtent(extent: Extent, callback: js.Function1[/* p0 */ T, _]): js.Any = js.native
+    def forEachInExtent(extent: Extent, callback: js.Function1[/* p0 */ T, js.Any]): js.Any = js.native
     
     /**
       * Return all values in the RBush.

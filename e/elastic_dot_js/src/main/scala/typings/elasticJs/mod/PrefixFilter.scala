@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "PrefixFilter")
 @js.native
-class PrefixFilter protected () extends Filter {
+class PrefixFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filters documents that have fields containing terms with a specified prefix.
     */

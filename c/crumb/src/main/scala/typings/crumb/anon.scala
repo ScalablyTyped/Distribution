@@ -4,30 +4,28 @@ import typings.crumb.crumbStrings.payload
 import typings.crumb.crumbStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key extends StObject {
     
     /**
       * The name of the cookie to store the CSRF crumb into.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Override for the server's 'restful' setting
       */
-    var restful: js.UndefOr[Boolean] = js.native
+    var restful: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies how the crumb will be sent in requests.
       *
       * @default 'payload'
       */
-    var source: js.UndefOr[payload | query] = js.native
+    var source: js.UndefOr[payload | query] = js.undefined
   }
   object Key {
     

@@ -3,14 +3,12 @@ package typings.semanticUiProgress.anon
 import typings.semanticUiProgress.semanticUiProgressBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.TextSettings._Impl, 'percent'> */
-@js.native
 trait PickImplpercent extends StObject {
   
-  var percent: `false` | String = js.native
+  var percent: `false` | String
 }
 object PickImplpercent {
   

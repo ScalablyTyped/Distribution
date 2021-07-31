@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetInlineStylesForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetInlineStylesForNodeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetInlineStylesForNodeResponse extends StObject {
   
-  var paramsType: js.Array[GetInlineStylesForNodeRequest] = js.native
+  var paramsType: js.Array[GetInlineStylesForNodeRequest]
   
-  var returnType: GetInlineStylesForNodeResponse = js.native
+  var returnType: GetInlineStylesForNodeResponse
 }
 object ReturnTypeGetInlineStylesForNodeResponse {
   

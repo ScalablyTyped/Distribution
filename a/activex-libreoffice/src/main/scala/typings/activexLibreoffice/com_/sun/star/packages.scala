@@ -56,7 +56,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packages {
@@ -78,9 +77,9 @@ object packages {
     * created without arguments, it must be initialized with the {@link com.sun.star.lang.XInitialization} service methods before it is a valid instance of
     * the service.
     */
-  @js.native
   trait Package
-    extends XInitialization
+    extends StObject
+       with XInitialization
        with XHierarchicalNameAccess
        with XSingleServiceFactory
        with XChangesBatch
@@ -92,12 +91,12 @@ object packages {
       acquire: () => Unit,
       commitChanges: () => Unit,
       createInstance: () => XInterface,
-      createInstanceWithArguments: SeqEquiv[_] => XInterface,
+      createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
       getByHierarchicalName: String => js.Any,
       getPendingChanges: () => ChangesSet,
       hasByHierarchicalName: String => Boolean,
       hasPendingChanges: () => Boolean,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): Package = {
@@ -110,11 +109,11 @@ object packages {
     * The {@link PackageFolder} service represents a single folder or directory within a {@link Package} . Instances of this service can only be constructed
     * by an implementation of the {@link Package} service and not via the service manager.
     */
-  @js.native
   trait PackageFolder
-    extends XNameContainer
+    extends StObject
        with XNamed
        with XChild
+       with XNameContainer
        with XEnumerationAccess
        with XPropertySet
   object PackageFolder {
@@ -166,9 +165,9 @@ object packages {
     * This service represents a stream contained within a {@link Package} . Instances of this class can only be constructed by the implementation of the
     * {@link Package} service.
     */
-  @js.native
   trait PackageStream
-    extends XNamed
+    extends StObject
+       with XNamed
        with XChild
        with XActiveDataSink
        with XPropertySet
@@ -206,8 +205,9 @@ object packages {
   type WrongPasswordException = Exception
   
   /** Allows to get access to the stream of a {@link PackageStream} . */
-  @js.native
-  trait XDataSinkEncrSupport extends XInterface {
+  trait XDataSinkEncrSupport
+    extends StObject
+       with XInterface {
     
     /**
       * Allows to get access to the data of the {@link PackageStream} .
@@ -217,7 +217,7 @@ object packages {
       * @throws com::sun::star::packages::WrongPasswordException no key or a wrong one is set
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    var DataStream: XInputStream = js.native
+    var DataStream: XInputStream
     
     /**
       * Allows to get access to the raw data of the stream as it is stored in the package.
@@ -225,7 +225,7 @@ object packages {
       * @throws com::sun::star::packages::NoEncryptionException the {@link PackageStream} object is not encrypted
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    val PlainRawStream: XInputStream = js.native
+    val PlainRawStream: XInputStream
     
     /**
       * Allows to get access to the data of the {@link PackageStream} as to raw stream. In case stream is not encrypted an exception will be thrown.
@@ -236,7 +236,7 @@ object packages {
       * @throws com::sun::star::packages::NoEncryptionException the {@link PackageStream} object is not encrypted
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    var RawStream: XInputStream = js.native
+    var RawStream: XInputStream
     
     /**
       * Allows to get access to the data of the {@link PackageStream} .
@@ -246,7 +246,7 @@ object packages {
       * @throws com::sun::star::packages::WrongPasswordException no key or a wrong one is set
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    def getDataStream(): XInputStream = js.native
+    def getDataStream(): XInputStream
     
     /**
       * Allows to get access to the raw data of the stream as it is stored in the package.
@@ -254,7 +254,7 @@ object packages {
       * @throws com::sun::star::packages::NoEncryptionException the {@link PackageStream} object is not encrypted
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    def getPlainRawStream(): XInputStream = js.native
+    def getPlainRawStream(): XInputStream
     
     /**
       * Allows to get access to the data of the {@link PackageStream} as to raw stream. In case stream is not encrypted an exception will be thrown.
@@ -265,7 +265,7 @@ object packages {
       * @throws com::sun::star::packages::NoEncryptionException the {@link PackageStream} object is not encrypted
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    def getRawStream(): XInputStream = js.native
+    def getRawStream(): XInputStream
     
     /**
       * Allows to set a data stream for the {@link PackageStream} .
@@ -274,7 +274,7 @@ object packages {
       * @param aStream new data stream
       * @throws com::sun::star::io::IOException in case of io problems
       */
-    def setDataStream(aStream: XInputStream): Unit = js.native
+    def setDataStream(aStream: XInputStream): Unit
     
     /**
       * Allows to set raw stream for the {@link PackageStream} . The {@link PackageStream} object can not be marked as encrypted one, an exception will be
@@ -284,7 +284,7 @@ object packages {
       * @throws com::sun::star::packages::NoRawFormatException the stream is not a correct raw representation of encrypted package stream
       * @throws com::sun::star::io::IOException in case of io problems during retrieving
       */
-    def setRawStream(aStream: XInputStream): Unit = js.native
+    def setRawStream(aStream: XInputStream): Unit
   }
   object XDataSinkEncrSupport {
     
@@ -345,11 +345,12 @@ object packages {
       * This interface reads the manifest data from a file. The user must supply an XInputStream when calling {@link readManifestSequence()} to receive a
       * sequence of manifest entries. Each manifest entry is represented by a sequence of PropertyValues.
       */
-    @js.native
-    trait XManifestReader extends XInterface {
+    trait XManifestReader
+      extends StObject
+         with XInterface {
       
       /** Supplies the {@link XManifestReader} with an XInputStream to read from, reads the data and returns it to the caller. */
-      def readManifestSequence(rStream: XInputStream): SafeArray[SafeArray[PropertyValue]] = js.native
+      def readManifestSequence(rStream: XInputStream): SafeArray[SafeArray[PropertyValue]]
     }
     object XManifestReader {
       
@@ -376,11 +377,12 @@ object packages {
       * This interface writes the manifest data to a file. The user calls {@link writeManifestSequence()} with the XOutputStream to write the data to and the
       * sequence of manifest entries to be written passed as parameters. Each manifest entry is represented by a sequence of PropertyValues.
       */
-    @js.native
-    trait XManifestWriter extends XInterface {
+    trait XManifestWriter
+      extends StObject
+         with XInterface {
       
       /** Writes the supplied sequence of manifest entries to the supplied XOutputStream */
-      def writeManifestSequence(rStream: XOutputStream, rSequence: SeqEquiv[SeqEquiv[PropertyValue]]): Unit = js.native
+      def writeManifestSequence(rStream: XOutputStream, rSequence: SeqEquiv[SeqEquiv[PropertyValue]]): Unit
     }
     object XManifestWriter {
       
@@ -407,8 +409,9 @@ object packages {
   object zip {
     
     /** allows to get reading access to non-encrypted entries inside zip file. */
-    @js.native
-    trait XZipFileAccess extends XInterface {
+    trait XZipFileAccess
+      extends StObject
+         with XInterface {
       
       /**
         * allows to get stream by specifying a pattern.
@@ -416,7 +419,7 @@ object packages {
         * The first stream with a name that fits to the pattern will be returned. The pattern allows to use "*" wildcard symbol. If the name contains "*" or "\"
         * symbols itself they must guarded with backslash "\". The slashes have no special meaning here so they can be replaced by wildcards also.
         */
-      def getStreamByPattern(aPattern: String): XInputStream = js.native
+      def getStreamByPattern(aPattern: String): XInputStream
     }
     object XZipFileAccess {
       
@@ -443,10 +446,10 @@ object packages {
       * Merged interface for {@link ZipFileAccess} service.
       * @since LibreOffice 4.1
       */
-    @js.native
     trait XZipFileAccess2
-      extends XNameAccess
+      extends StObject
          with XZipFileAccess
+         with XNameAccess
     object XZipFileAccess2 {
       
       @scala.inline
@@ -667,44 +670,43 @@ object packages {
       *
       * This interface is an IDL version of the Java interface **java.util.zip.ZipFile** with some minor adaptations.
       */
-    @js.native
     trait ZipEntry extends StObject {
       
       /** optional extra field data for entry */
-      var extra: SafeArray[Double] = js.native
+      var extra: SafeArray[Double]
       
       /** uncompressed size of entry data */
-      var nCompressedSize: Double = js.native
+      var nCompressedSize: Double
       
       /** CRC-32 of entry data */
-      var nCrc: Double = js.native
+      var nCrc: Double
       
       /** The number of the disk this entry is saved on */
-      var nDiskNumber: Double = js.native
+      var nDiskNumber: Double
       
       /** bit flags */
-      var nFlag: Double = js.native
+      var nFlag: Double
       
       /** compression method */
-      var nMethod: Double = js.native
+      var nMethod: Double
       
       /** offset of LOC header */
-      var nOffset: Double = js.native
+      var nOffset: Double
       
       /** uncompressed size of entry data */
-      var nSize: Double = js.native
+      var nSize: Double
       
       /** modification time */
-      var nTime: Double = js.native
+      var nTime: Double
       
       /** version needed to extract */
-      var nVersion: Double = js.native
+      var nVersion: Double
       
       /** optional comment */
-      var sComment: String = js.native
+      var sComment: String
       
       /** the entry name */
-      var sName: String = js.native
+      var sName: String
     }
     object ZipEntry {
       
@@ -776,10 +778,11 @@ object packages {
     type ZipException = Exception
     
     /** allows to get reading access to non-encrypted entries inside zip file. */
-    @js.native
-    trait ZipFileAccess extends XZipFileAccess2 {
+    trait ZipFileAccess
+      extends StObject
+         with XZipFileAccess2 {
       
-      def createWithURL(URL: String): Unit = js.native
+      def createWithURL(URL: String): Unit
     }
     object ZipFileAccess {
       

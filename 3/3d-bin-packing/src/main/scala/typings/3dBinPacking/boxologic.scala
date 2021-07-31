@@ -2,7 +2,6 @@ package typings.`3dBinPacking`
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,36 +22,37 @@ object boxologic {
     * @author Bill Knechtel, <br>
     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
     */
-  @js.native
-  trait Box extends Instance {
+  trait Box
+    extends StObject
+       with Instance {
     
     /**
       * Coordinate-X of the box placement in a {@link Pallet}.
       */
-    var cox: Double = js.native
+    var cox: Double
     
     /**
       * Coordinate-Y of the box placement in a {@link Pallet}.
       */
-    var coy: Double = js.native
+    var coy: Double
     
     /**
       * Coordinate-Z of the box placement in a {@link Pallet}.
       */
-    var coz: Double = js.native
+    var coz: Double
     
-    def hit_test(obj: Box): Boolean = js.native
+    def hit_test(obj: Box): Boolean
     
-    /* private */ def hit_test_point(x: js.Any, y: js.Any, z: js.Any): js.Any = js.native
+    /* private */ def hit_test_point(x: js.Any, y: js.Any, z: js.Any): js.Any
     
-    /* private */ def hit_test_single(obj: js.Any): js.Any = js.native
+    /* private */ def hit_test_single(obj: js.Any): js.Any
     
     /**
       * Whether the {@link Box} is packed into a {@link Pallet}.
       */
-    var is_packed: Boolean = js.native
+    var is_packed: Boolean
     
-    var overlapped_boxes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashSet<Box> */ js.Any = js.native
+    var overlapped_boxes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashSet<Box> */ js.Any
   }
   object Box {
     
@@ -121,7 +121,6 @@ object boxologic {
     * @author Bill Knechtel, <br>
     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
     */
-  @js.native
   trait Boxologic extends StObject {
     
     /**
@@ -151,94 +150,94 @@ object boxologic {
       dim1: js.Any,
       dim2: js.Any,
       dim3: js.Any
-    ): js.Any = js.native
+    ): js.Any
     
-    var bbfx: js.Any = js.native
+    var bbfx: js.Any
     
-    var bbfy: js.Any = js.native
+    var bbfy: js.Any
     
-    var bbfz: js.Any = js.native
+    var bbfz: js.Any
     
-    var bboxi: js.Any = js.native
+    var bboxi: js.Any
     
-    var bboxx: js.Any = js.native
+    var bboxx: js.Any
     
-    var bboxy: js.Any = js.native
+    var bboxy: js.Any
     
-    var bboxz: js.Any = js.native
+    var bboxz: js.Any
     
     /**
       * The best layer, which can deduct the {@link best_solution_volume}.
       */
-    var best_layer: js.Any = js.native
+    var best_layer: js.Any
     
     /**
       * The best orientation of the pallet, which can deduct the {@link best_solution_volume}.
       */
-    var best_orientation: js.Any = js.native
+    var best_orientation: js.Any
     
     /**
       * The best volume, fit the best utilization degree of the pallet space.
       */
-    var best_solution_volume: js.Any = js.native
+    var best_solution_volume: js.Any
     
-    var bfx: js.Any = js.native
+    var bfx: js.Any
     
-    var bfy: js.Any = js.native
+    var bfy: js.Any
     
-    var bfz: js.Any = js.native
+    var bfz: js.Any
     
     /**
       * Boxes, trying to pack into the {@link pallet}.
       */
-    var box_array: js.Any = js.native
+    var box_array: js.Any
     
-    var boxi: js.Any = js.native
+    var boxi: js.Any
     
-    var boxx: js.Any = js.native
+    var boxx: js.Any
     
-    var boxy: js.Any = js.native
+    var boxy: js.Any
     
-    var boxz: js.Any = js.native
+    var boxz: js.Any
     
     /**
       * Candidate {@link Box.layout_height layout_height} of the {@link cboxi current box}.
       */
-    var cbox_layout_height: js.Any = js.native
+    var cbox_layout_height: js.Any
     
     /**
       * Candidate {@link Box.layout_length layout_length} of the {@link cboxi current box}.
       */
-    var cbox_layout_length: js.Any = js.native
+    var cbox_layout_length: js.Any
     
     /**
       * Candidate {@link Box.layout_width layout_width} of the {@link cboxi current box}.
       */
-    var cbox_layout_width: js.Any = js.native
+    var cbox_layout_width: js.Any
     
     /**
       * Index of the current {@link box}.
       */
-    var cboxi: js.Any = js.native
+    var cboxi: js.Any
     
     /**
       * After finding each box, the candidate boxes and the condition of the layer are examined.
       */
-    /* private */ def check_found(): js.Any = js.native
+    /* private */ def check_found(): js.Any
     
     /**
       * <p> Construct layers. </p>
       *
       * <p> Creates all possible layer heights by giving a weight value to each of them. </p>
       */
-    /* private */ def construct_layers(): js.Any = js.native
+    /* private */ def construct_layers(): js.Any
     
     /**
       * <p> Decode data </p>
       *
       * <p> Decodes the Boxologic's optimization result data to be suitable for the Packer's own. </p>
       */
-    /* private */ def decode(): js.Any = js.native
+    /* private */ def decode(): js.Any
     
     /**
       * <p> Encode data </p>
@@ -246,12 +245,12 @@ object boxologic {
       * <p> Encodes {@link bws.packer Packer}'s data to be suitable for the
       * {@link boxologic Boxologic}'s parametric data. </p>
       */
-    /* private */ def encode(): js.Any = js.native
+    /* private */ def encode(): js.Any
     
     /**
       * Whether the current packing layer is evened.
       */
-    var evened: js.Any = js.native
+    var evened: js.Any
     
     /**
       * <p> Determine the gap with the samllest z value in the current layer. </p>
@@ -265,56 +264,56 @@ object boxologic {
       * @param hz Z-dimension of the current gap to be filled.
       * @param hmz Maximum available z-dimension to the current gap to be filled.
       */
-    /* private */ def find_box(hmx: js.Any, hy: js.Any, hmy: js.Any, hz: js.Any, hmz: js.Any): js.Any = js.native
+    /* private */ def find_box(hmx: js.Any, hy: js.Any, hmy: js.Any, hz: js.Any, hmz: js.Any): js.Any
     
     /**
       * Find the most proper layer height by looking at the unpacked boxes and
       * the remaining empty space available.
       */
-    /* private */ def find_layer(thickness: js.Any): js.Any = js.native
+    /* private */ def find_layer(thickness: js.Any): js.Any
     
     /**
       * <p> Find the first to be packed gap in the layer edge. </p>
       *
       * <p> Determine the gap with the {@link scrap_min_z smallest z} value in the current layer. </p>
       */
-    /* private */ def find_smallest_z(): js.Any = js.native
+    /* private */ def find_smallest_z(): js.Any
     
     /**
       * Whether the utilization degree of pallet space is 100%.
       */
-    var hundred_percent: js.Any = js.native
+    var hundred_percent: js.Any
     
-    /* private */ def inspect_validity(): js.Any = js.native
+    /* private */ def inspect_validity(): js.Any
     
     /**
       * Instances trying to put into the wrapper.
       */
-    var instanceArray: js.Any = js.native
+    var instanceArray: js.Any
     
     /**
       * Iterate a layer.
       *
       * @param thickness Thickness of the iterating layer.
       */
-    /* private */ def iterate_layer(thickness: js.Any): js.Any = js.native
+    /* private */ def iterate_layer(thickness: js.Any): js.Any
     
     /**
       * <p> Execute iterations by calling proper functions. </p>
       *
       * <p> Iterations are done and parameters of the best solution are found. </p>
       */
-    /* private */ def iterate_orientations(): js.Any = js.native
+    /* private */ def iterate_orientations(): js.Any
     
     /**
       * Whether packing a layer is done.
       */
-    var layer_done: js.Any = js.native
+    var layer_done: js.Any
     
     /**
       * Key of the unevened layer in the current packing layer.
       */
-    var layer_in_layer: js.Any = js.native
+    var layer_in_layer: js.Any
     
     /**
       * <p> All different lengths of {@link box_array all box} dimensions along with evaluation values. </p>
@@ -345,22 +344,22 @@ object boxologic {
       *	<li> value: Evaluation weight value for the corresponding key. </li>
       * </ul>
       */
-    var layer_map: js.Any = js.native
+    var layer_map: js.Any
     
     /**
       * Current layer's key on iteration.
       */
-    var layer_thickness: js.Any = js.native
+    var layer_thickness: js.Any
     
     /**
       * Instances failed to pack by overloading.
       */
-    var leftInstances: js.Any = js.native
+    var leftInstances: js.Any
     
     /**
       * Little Z, gotten from {@link Scrapped.cumz cumz} in {@link min_scrap_z}
       */
-    var lilz: js.Any = js.native
+    var lilz: js.Any
     
     /**
       * <p> Pack instances to the {@link wrapper}. </p>
@@ -378,24 +377,24 @@ object boxologic {
       * @return A pair of {@link wrapper} with packed instances and
       *		   {@link leftInstances instances failed to pack} by overloading.
       */
-    def pack(): js.Any = js.native
+    def pack(): js.Any
     
     /**
       * <p> Packs the boxes found and arranges all variables and records properly. </p>
       *
       * <p> Update the linked list and the Boxlist[] array as a box is packed. </p>
       */
-    /* private */ def pack_layer(): js.Any = js.native
+    /* private */ def pack_layer(): js.Any
     
     /**
       * Packed (filled) {@link Pallet.layout_height layout_height} of the {@link pallet}.
       */
-    var packed_layout_height: js.Any = js.native
+    var packed_layout_height: js.Any
     
     /**
       * Packed {@link Pallet.vo1lume volume} of the {@lnk pallet}.
       */
-    var packed_volume: js.Any = js.native
+    var packed_volume: js.Any
     
     /**
       * <p> Whether the packing is on progress. </p>
@@ -403,41 +402,41 @@ object boxologic {
       * <p> The {@link packing} is a flag variable for terminating iterations in
       * {@link iterate_orientations iterate_orientations()}, who deducts the best packing solution. </p>
       */
-    var packing: js.Any = js.native
+    var packing: js.Any
     
     /**
       * Whether the best solution is deducted.
       */
-    var packing_best: js.Any = js.native
+    var packing_best: js.Any
     
     /**
       * A pallet containing {@link Box boxes}.
       *
       * @see Wrapper
       */
-    var pallet: js.Any = js.native
+    var pallet: js.Any
     
     /**
       * Previous layer's key had iterated.
       */
-    var pre_layer: js.Any = js.native
+    var pre_layer: js.Any
     
     /**
       * Remained (unfilled) {@link Pallet.layout_height layout_height} of the {@link pallet}.
       */
-    var remain_layout_height: js.Any = js.native
+    var remain_layout_height: js.Any
     
     /**
       * Remained (unfilled) {@link Pallet.layout_length layout_length} of the {@link pallet}.
       */
-    var remain_layout_length: js.Any = js.native
+    var remain_layout_length: js.Any
     
     /**
       * <p> Determine {@link box_arrray boxes}. </p>
       *
       * <p> Using the parameters found, packs the best solution found and reports. </p>
       */
-    /* private */ def report_results(): js.Any = js.native
+    /* private */ def report_results(): js.Any
     
     /**
       * {@link List} of {@link Scrapped} instances, edges of layers under construction.
@@ -445,7 +444,7 @@ object boxologic {
       * @see Scrapped
       * @see scrap_min_z
       */
-    var scrap_list: js.Any = js.native
+    var scrap_list: js.Any
     
     /**
       * The topology {@link Scrapped}, the edge of the current layer under construction.
@@ -453,22 +452,22 @@ object boxologic {
       * @see Scrapped
       * @see scrap_list
       */
-    var scrap_min_z: js.Any = js.native
+    var scrap_min_z: js.Any
     
     /**
       * Sum of all boxes' volume.
       */
-    var total_box_volume: js.Any = js.native
+    var total_box_volume: js.Any
     
     /**
       * After packing of each box, 100% packing condition is checked.
       */
-    /* private */ def volume_check(): js.Any = js.native
+    /* private */ def volume_check(): js.Any
     
     /**
       * A Wrapper to pack instances.
       */
-    var wrapper: js.Any = js.native
+    var wrapper: js.Any
     
     /**
       * <p> Determine a {@link Box}. </p>
@@ -476,7 +475,7 @@ object boxologic {
       * <p> Transforms the found co-ordinate system to the one entered by the user and write them to the
       * report. </p>
       */
-    /* private */ def write_box_file(): js.Any = js.native
+    /* private */ def write_box_file(): js.Any
   }
   object Boxologic {
     
@@ -735,43 +734,42 @@ object boxologic {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
-  @js.native
   trait Instance extends StObject {
     
     /**
       * Height of the tangible instance, length on the Y-axis in 3D.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Height considering layout placement.
       */
-    var layout_height: Double = js.native
+    var layout_height: Double
     
     /**
       * Length considering layout placement.
       */
-    var layout_length: Double = js.native
+    var layout_length: Double
     
     /**
       * Width considering layout placement.
       */
-    var layout_width: Double = js.native
+    var layout_width: Double
     
     /**
       * Length of the tangible instance, length on the Z-axis in 3D.
       */
-    var length: Double = js.native
+    var length: Double
     
     /**
       * Volume, Width x Height x Length.
       */
-    var volume: Double = js.native
+    var volume: Double
     
     /**
       * Width of the tangible instance, length on the X-axis in 3D.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object Instance {
     
@@ -821,13 +819,14 @@ object boxologic {
     * @author Bill Knechtel, <br>
     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
     */
-  @js.native
-  trait Pallet extends Instance {
+  trait Pallet
+    extends StObject
+       with Instance {
     
     /**
       * Set placement orientation.
       */
-    def set_orientation(orientation: Double): Unit = js.native
+    def set_orientation(orientation: Double): Unit
   }
   object Pallet {
     
@@ -862,18 +861,17 @@ object boxologic {
     * @author Bill Knechtel, <br>
     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
     */
-  @js.native
   trait Scrap extends StObject {
     
     /**
       * Cumulated length on the X-axis in 3D.
       */
-    var cumx: Double = js.native
+    var cumx: Double
     
     /**
       * Cumulated length on the Z-axis in 3D.
       */
-    var cumz: Double = js.native
+    var cumz: Double
   }
   object Scrap {
     

@@ -4,28 +4,26 @@ import typings.log4js.anon.Worker
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingEvent extends StObject {
   
-  var categoryName: String = js.native
+  var categoryName: String
   
-  var cluster: js.UndefOr[Worker] = js.native
+  var cluster: js.UndefOr[Worker] = js.undefined
   
-  var context: js.Any = js.native
+  var context: js.Any
   
   // level of message
-  var data: js.Array[_] = js.native
+  var data: js.Array[js.Any]
   
   // name of category
-  var level: Level = js.native
+  var level: Level
   
-  var pid: Double = js.native
+  var pid: Double
   
   // objects to log
-  var startTime: Date = js.native
+  var startTime: Date
 }
 object LoggingEvent {
   
@@ -33,7 +31,7 @@ object LoggingEvent {
   def apply(
     categoryName: String,
     context: js.Any,
-    data: js.Array[_],
+    data: js.Array[js.Any],
     level: Level,
     pid: Double,
     startTime: Date
@@ -58,7 +56,7 @@ object LoggingEvent {
     def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

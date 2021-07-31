@@ -4,17 +4,15 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofBlob extends StObject {
   
   /* static member */
-  def fromBase64String(base64: String): Blob = js.native
+  def fromBase64String(base64: String): Blob
   
   /* static member */
-  def fromUint8Array(array: Uint8Array): Blob = js.native
+  def fromUint8Array(array: Uint8Array): Blob
 }
 object TypeofBlob {
   

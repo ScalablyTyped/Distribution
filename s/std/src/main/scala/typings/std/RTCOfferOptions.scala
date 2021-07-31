@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCOfferOptions extends RTCOfferAnswerOptions {
+trait RTCOfferOptions
+  extends StObject
+     with RTCOfferAnswerOptions {
   
-  var iceRestart: js.UndefOr[scala.Boolean] = js.native
+  var iceRestart: js.UndefOr[scala.Boolean] = js.undefined
   
-  var offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.native
+  var offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.undefined
   
-  var offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.native
+  var offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.undefined
 }
 object RTCOfferOptions {
   

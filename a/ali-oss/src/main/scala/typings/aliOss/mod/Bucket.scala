@@ -2,19 +2,17 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
-  var StorageClass: StorageType = js.native
+  var StorageClass: StorageType
   
-  var creationDate: String = js.native
+  var creationDate: String
   
-  var name: String = js.native
+  var name: String
   
-  var region: String = js.native
+  var region: String
 }
 object Bucket {
   

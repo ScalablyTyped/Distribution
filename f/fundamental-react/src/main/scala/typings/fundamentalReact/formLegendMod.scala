@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formLegendMod extends Shortcut {
@@ -14,13 +13,13 @@ object formLegendMod extends Shortcut {
   @js.native
   val default: FunctionComponent[FormLegendProps] = js.native
   
-  @js.native
   trait FormLegendProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
   }
   object FormLegendProps {
     

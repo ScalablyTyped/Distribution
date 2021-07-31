@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Apps")
@@ -30,7 +29,7 @@ class ResourceApps protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaApp] = js.native
   def get(callback: BodyResponseCallback[SchemaApp]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApp] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApp] = js.native
   def get(params: ParamsResourceAppsGet): GaxiosPromise[SchemaApp] = js.native
   def get(params: ParamsResourceAppsGet, callback: BodyResponseCallback[SchemaApp]): Unit = js.native
   def get(
@@ -57,7 +56,7 @@ class ResourceApps protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAppList] = js.native
   def list(callback: BodyResponseCallback[SchemaAppList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppList] = js.native
   def list(params: ParamsResourceAppsList): GaxiosPromise[SchemaAppList] = js.native
   def list(params: ParamsResourceAppsList, callback: BodyResponseCallback[SchemaAppList]): Unit = js.native
   def list(

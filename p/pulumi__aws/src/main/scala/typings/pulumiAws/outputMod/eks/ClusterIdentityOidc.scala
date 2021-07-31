@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterIdentityOidc extends StObject {
   
   /**
     * Issuer URL for the OpenID Connect identity provider.
     */
-  var issuer: String = js.native
+  var issuer: String
 }
 object ClusterIdentityOidc {
   

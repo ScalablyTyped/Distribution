@@ -2,15 +2,13 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemContent extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var contentType: ItemContentType = js.native
+  var contentType: ItemContentType
 }
 object ItemContent {
   

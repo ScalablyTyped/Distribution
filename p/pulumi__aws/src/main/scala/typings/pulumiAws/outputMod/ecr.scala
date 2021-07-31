@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecr {
   
-  @js.native
   trait GetRepositoryEncryptionConfiguration extends StObject {
     
     /**
       * The encryption type to use for the repository, either `AES256` or `KMS`.
       */
-    var encryptionType: String = js.native
+    var encryptionType: String
     
     /**
       * If `encryptionType` is `KMS`, the ARN of the KMS key used.
       */
-    var kmsKey: String = js.native
+    var kmsKey: String
   }
   object GetRepositoryEncryptionConfiguration {
     
@@ -39,13 +37,12 @@ object ecr {
     }
   }
   
-  @js.native
   trait GetRepositoryImageScanningConfiguration extends StObject {
     
     /**
       * Indicates whether images are scanned after being pushed to the repository.
       */
-    var scanOnPush: Boolean = js.native
+    var scanOnPush: Boolean
   }
   object GetRepositoryImageScanningConfiguration {
     
@@ -63,18 +60,17 @@ object ecr {
     }
   }
   
-  @js.native
   trait RepositoryEncryptionConfiguration extends StObject {
     
     /**
       * The encryption type to use for the repository. Valid values are `AES256` or `KMS`. Defaults to `AES256`.
       */
-    var encryptionType: js.UndefOr[String] = js.native
+    var encryptionType: js.UndefOr[String] = js.undefined
     
     /**
       * The ARN of the KMS key to use when `encryptionType` is `KMS`. If not specified, uses the default AWS managed key for ECR.
       */
-    var kmsKey: String = js.native
+    var kmsKey: String
   }
   object RepositoryEncryptionConfiguration {
     
@@ -98,13 +94,12 @@ object ecr {
     }
   }
   
-  @js.native
   trait RepositoryImageScanningConfiguration extends StObject {
     
     /**
       * Indicates whether images are scanned after being pushed to the repository (true) or not scanned (false).
       */
-    var scanOnPush: Boolean = js.native
+    var scanOnPush: Boolean
   }
   object RepositoryImageScanningConfiguration {
     

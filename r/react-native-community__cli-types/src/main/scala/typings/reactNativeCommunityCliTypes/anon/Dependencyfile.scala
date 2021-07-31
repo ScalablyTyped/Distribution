@@ -5,29 +5,27 @@ import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesStrings.
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesStrings.before_compile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dependencyfile extends StObject {
   
-  var dependency_file: js.UndefOr[String] = js.native
+  var dependency_file: js.UndefOr[String] = js.undefined
   
-  var execution_position: js.UndefOr[before_compile | after_compile | any] = js.native
+  var execution_position: js.UndefOr[before_compile | after_compile | any] = js.undefined
   
-  var input_file_lists: js.UndefOr[js.Array[String]] = js.native
+  var input_file_lists: js.UndefOr[js.Array[String]] = js.undefined
   
-  var input_files: js.UndefOr[js.Array[String]] = js.native
+  var input_files: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var output_file_lists: js.UndefOr[js.Array[String]] = js.native
+  var output_file_lists: js.UndefOr[js.Array[String]] = js.undefined
   
-  var output_files: js.UndefOr[js.Array[String]] = js.native
+  var output_files: js.UndefOr[js.Array[String]] = js.undefined
   
-  var shell_path: js.UndefOr[String] = js.native
+  var shell_path: js.UndefOr[String] = js.undefined
   
-  var show_env_vars_in_log: js.UndefOr[Boolean] = js.native
+  var show_env_vars_in_log: js.UndefOr[Boolean] = js.undefined
 }
 object Dependencyfile {
   

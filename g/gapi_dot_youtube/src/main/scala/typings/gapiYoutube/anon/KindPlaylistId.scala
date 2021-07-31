@@ -2,31 +2,29 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KindPlaylistId extends StObject {
   
   /**
     * If the id.type propertys value is youtube#channel, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a channel that matches the search query.
     */
-  var channelId: String = js.native
+  var channelId: String
   
   /**
     * The type of the API resource.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * If the id.type propertys value is youtube#playlist, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a playlist that matches the search query.
     */
-  var playlistId: String = js.native
+  var playlistId: String
   
   /**
     * If the id.type propertys value is youtube#video, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a video that matches the search query.
     */
-  var videoId: String = js.native
+  var videoId: String
 }
 object KindPlaylistId {
   

@@ -4,33 +4,33 @@ import typings.pulumiAws.inputMod.GetAmiIdsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAmiIdsMod {
   
-  @JSImport("@pulumi/aws/getAmiIds", "getAmiIds")
+  @JSImport("@pulumi/aws/getAmiIds", JSImport.Namespace)
   @js.native
-  def getAmiIds(args: GetAmiIdsArgs): js.Promise[GetAmiIdsResult] = js.native
-  @JSImport("@pulumi/aws/getAmiIds", "getAmiIds")
-  @js.native
-  def getAmiIds(args: GetAmiIdsArgs, opts: InvokeOptions): js.Promise[GetAmiIdsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAmiIds(args: GetAmiIdsArgs): js.Promise[GetAmiIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAmiIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAmiIdsResult]]
+  @scala.inline
+  def getAmiIds(args: GetAmiIdsArgs, opts: InvokeOptions): js.Promise[GetAmiIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAmiIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAmiIdsResult]]
+  
   trait GetAmiIdsArgs extends StObject {
     
     /**
       * Limit search to users with *explicit* launch
       * permission on  the image. Valid items are the numeric account ID or `self`.
       */
-    val executableUsers: js.UndefOr[js.Array[String]] = js.native
+    val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * One or more name/value pairs to filter off of. There
       * are several valid keys, for a full reference, check out
       * [describe-images in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetAmiIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetAmiIdsFilter]] = js.undefined
     
     /**
       * A regex string to apply to the AMI list returned
@@ -39,17 +39,17 @@ object getAmiIdsMod {
       * impact if the result is large. It is recommended to combine this with other
       * options to narrow down the list AWS returns.
       */
-    val nameRegex: js.UndefOr[String] = js.native
+    val nameRegex: js.UndefOr[String] = js.undefined
     
     /**
       * List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
       */
-    val owners: js.Array[String] = js.native
+    val owners: js.Array[String]
     
     /**
       * Used to sort AMIs by creation time.
       */
-    val sortAscending: js.UndefOr[Boolean] = js.native
+    val sortAscending: js.UndefOr[Boolean] = js.undefined
   }
   object GetAmiIdsArgs {
     
@@ -100,25 +100,24 @@ object getAmiIdsMod {
     }
   }
   
-  @js.native
   trait GetAmiIdsResult extends StObject {
     
-    val executableUsers: js.UndefOr[js.Array[String]] = js.native
+    val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAmiIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAmiIdsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val nameRegex: js.UndefOr[String] = js.native
+    val nameRegex: js.UndefOr[String] = js.undefined
     
-    val owners: js.Array[String] = js.native
+    val owners: js.Array[String]
     
-    val sortAscending: js.UndefOr[Boolean] = js.native
+    val sortAscending: js.UndefOr[Boolean] = js.undefined
   }
   object GetAmiIdsResult {
     

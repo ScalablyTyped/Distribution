@@ -2,46 +2,44 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceConfigHistoryRequest extends StObject {
   
   /**
     * The chronological order for configuration items listed. By default, the results are listed in reverse chronological order.
     */
-  var chronologicalOrder: js.UndefOr[ChronologicalOrder] = js.native
+  var chronologicalOrder: js.UndefOr[ChronologicalOrder] = js.undefined
   
   /**
     * The time stamp that indicates an earlier time. If not specified, the action returns paginated results that contain configuration items that start when the first configuration item was recorded.
     */
-  var earlierTime: js.UndefOr[EarlierTime] = js.native
+  var earlierTime: js.UndefOr[EarlierTime] = js.undefined
   
   /**
     * The time stamp that indicates a later time. If not specified, current time is taken.
     */
-  var laterTime: js.UndefOr[LaterTime] = js.native
+  var laterTime: js.UndefOr[LaterTime] = js.undefined
   
   /**
     * The maximum number of configuration items returned on each page. The default is 10. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
     */
-  var limit: js.UndefOr[Limit] = js.native
+  var limit: js.UndefOr[Limit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The ID of the resource (for example., sg-xxxxxx).
     */
-  var resourceId: ResourceId = js.native
+  var resourceId: ResourceId
   
   /**
     * The resource type.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
 }
 object GetResourceConfigHistoryRequest {
   

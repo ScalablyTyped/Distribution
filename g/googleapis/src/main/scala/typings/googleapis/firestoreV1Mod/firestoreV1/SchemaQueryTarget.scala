@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A target specified by a query.
   */
-@js.native
 trait SchemaQueryTarget extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaQueryTarget extends StObject {
     * For example: `projects/my-project/databases/my-database/documents` or
     * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * A structured query.
     */
-  var structuredQuery: js.UndefOr[SchemaStructuredQuery] = js.native
+  var structuredQuery: js.UndefOr[SchemaStructuredQuery] = js.undefined
 }
 object SchemaQueryTarget {
   

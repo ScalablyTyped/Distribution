@@ -2,13 +2,11 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveKey extends StObject {
   
-  var activeKey: typings.react.mod.Key = js.native
+  var activeKey: typings.react.mod.Key
 }
 object ActiveKey {
   

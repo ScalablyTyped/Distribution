@@ -10,9 +10,9 @@ Parse and stringify BCP 47 language tags
 | ------------------ | :-------------: |
 | Full name          | bcp-47 |
 | Keywords           | bcp, 47, bcp47, bcp-47, language, tag, parse |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 11 |
-| # downloads        | 2069336 |
+| # downloads        | 3880412 |
 | # stars            | 1 |
 
 ## Links

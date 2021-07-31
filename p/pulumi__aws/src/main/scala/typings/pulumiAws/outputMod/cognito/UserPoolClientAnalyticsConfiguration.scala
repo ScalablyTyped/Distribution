@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolClientAnalyticsConfiguration extends StObject {
   
   /**
     * The application ID for an Amazon Pinpoint application.
     */
-  var applicationId: String = js.native
+  var applicationId: String
   
   /**
     * An ID for the Analytics Configuration.
     */
-  var externalId: String = js.native
+  var externalId: String
   
   /**
     * The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
     */
-  var userDataShared: js.UndefOr[Boolean] = js.native
+  var userDataShared: js.UndefOr[Boolean] = js.undefined
 }
 object UserPoolClientAnalyticsConfiguration {
   

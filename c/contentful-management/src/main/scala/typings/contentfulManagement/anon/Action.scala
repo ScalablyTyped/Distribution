@@ -2,15 +2,13 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var effect: String = js.native
+  var effect: String
 }
 object Action {
   

@@ -2,10 +2,8 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConstraintDefinition extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IConstraintDefinition extends StObject {
     * @type body
     * @default null
     */
-  var bodyA: js.UndefOr[Body] = js.native
+  var bodyA: js.UndefOr[Body] = js.undefined
   
   /**
     * The second possible `Body` that this constraint is attached to.
@@ -24,7 +22,7 @@ trait IConstraintDefinition extends StObject {
     * @type body
     * @default null
     */
-  var bodyB: js.UndefOr[Body] = js.native
+  var bodyB: js.UndefOr[Body] = js.undefined
   
   /**
     * A `Number` that specifies the damping of the constraint,
@@ -37,7 +35,7 @@ trait IConstraintDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
@@ -45,7 +43,7 @@ trait IConstraintDefinition extends StObject {
     * @property id
     * @type number
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
@@ -54,7 +52,7 @@ trait IConstraintDefinition extends StObject {
     * @type string
     * @default "Constraint"
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * A `Number` that specifies the target resting length of the constraint.
@@ -63,7 +61,7 @@ trait IConstraintDefinition extends StObject {
     * @property length
     * @type number
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
@@ -72,7 +70,7 @@ trait IConstraintDefinition extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var pointA: js.UndefOr[Vector] = js.native
+  var pointA: js.UndefOr[Vector] = js.undefined
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
@@ -81,7 +79,7 @@ trait IConstraintDefinition extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var pointB: js.UndefOr[Vector] = js.native
+  var pointB: js.UndefOr[Vector] = js.undefined
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
@@ -89,7 +87,7 @@ trait IConstraintDefinition extends StObject {
     * @property render
     * @type object
     */
-  var render: js.UndefOr[IConstraintRenderDefinition] = js.native
+  var render: js.UndefOr[IConstraintRenderDefinition] = js.undefined
   
   /**
     * A `Number` that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`.
@@ -100,7 +98,7 @@ trait IConstraintDefinition extends StObject {
     * @type number
     * @default 1
     */
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
   /**
     * A `String` denoting the type of object.
@@ -109,7 +107,7 @@ trait IConstraintDefinition extends StObject {
     * @type string
     * @default "constraint"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IConstraintDefinition {
   

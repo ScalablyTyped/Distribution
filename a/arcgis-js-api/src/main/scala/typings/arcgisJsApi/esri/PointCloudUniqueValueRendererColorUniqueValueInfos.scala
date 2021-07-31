@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudUniqueValueRendererColorUniqueValueInfos extends Object {
+trait PointCloudUniqueValueRendererColorUniqueValueInfos
+  extends StObject
+     with Object {
   
   /**
     * The color used to represent points whose value matches `values`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * Label used to describe points matched to the unique value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * A unique combination of values that will be represented with the given `color`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object PointCloudUniqueValueRendererColorUniqueValueInfos {
   

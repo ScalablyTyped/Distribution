@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * This parameter is not currently supported.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * This parameter is not currently supported.
     */
-  var Values: FilterValueList = js.native
+  var Values: FilterValueList
 }
 object Filter {
   

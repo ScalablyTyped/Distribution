@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleStatementAndStatementStatementOrStatement extends StObject {
   
   /**
     * The statements to combine with `OR` logic. You can use any statements that can be nested. See Statement above for details.
     */
-  var statements: js.Array[RuleGroupRuleStatementAndStatementStatementOrStatementStatement] = js.native
+  var statements: js.Array[RuleGroupRuleStatementAndStatementStatementOrStatementStatement]
 }
 object RuleGroupRuleStatementAndStatementStatementOrStatement {
   

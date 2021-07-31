@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface makes it possible to create sub sets of container items which serve specified search criterion.
   */
-@js.native
-trait XContainerQuery extends XInterface {
+trait XContainerQuery
+  extends StObject
+     with XInterface {
   
   /**
     * creates a sub set of container items which supports searched properties as minimum
@@ -25,7 +25,7 @@ trait XContainerQuery extends XInterface {
     * @param Properties items of sub set must support given properties as minimum ;  example: ;  (supported) ;  search for items which match the name pattern
     * @returns an sub set of container items as an enumeration.
     */
-  def createSubSetEnumerationByProperties(Properties: SeqEquiv[NamedValue]): XEnumeration = js.native
+  def createSubSetEnumerationByProperties(Properties: SeqEquiv[NamedValue]): XEnumeration
   
   /**
     * creates a sub set of container items which match given query command
@@ -35,7 +35,7 @@ trait XContainerQuery extends XInterface {
     * @param Query items of sub set must match to this query ;  example: ;  (1) ;  query as parameter sequence to return all elements which match the name pat
     * @returns an sub set of container items as an enumeration.
     */
-  def createSubSetEnumerationByQuery(Query: String): XEnumeration = js.native
+  def createSubSetEnumerationByQuery(Query: String): XEnumeration
 }
 object XContainerQuery {
   

@@ -5,13 +5,14 @@ import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/range
 @JSImport("@ckeditor/ckeditor5-engine", "model.Range")
 @js.native
-class Range protected () extends Iterable[Node] {
+class Range protected ()
+  extends StObject
+     with Iterable[Node] {
   def this(start: Position) = this()
   def this(start: Position, end: Position) = this()
   

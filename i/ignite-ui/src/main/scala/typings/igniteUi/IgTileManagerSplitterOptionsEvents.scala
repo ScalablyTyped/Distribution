@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTileManagerSplitterOptionsEvents
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,7 +19,7 @@ trait IgTileManagerSplitterOptionsEvents
     *                     Use ui.owner to get a reference to the splitter instance.
     *                     Use ui.index to get an index of collased panel.
     */
-  var collapsed: js.UndefOr[js.Any] = js.native
+  var collapsed: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event fired after expanding is performed. Not cancellable.
@@ -29,7 +28,7 @@ trait IgTileManagerSplitterOptionsEvents
     *                     Use ui.owner to get a reference to the splitter instance.
     *                     Use ui.index to get an index of expanded panel.
     */
-  var expanded: js.UndefOr[js.Any] = js.native
+  var expanded: js.UndefOr[js.Any] = js.undefined
 }
 object IgTileManagerSplitterOptionsEvents {
   

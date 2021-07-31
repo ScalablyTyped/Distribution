@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreconnectOptions extends StObject {
   
   /**
     * number of sockets to preconnect. Must be between 1 and 6. Defaults to 1.
     */
-  var numSockets: js.UndefOr[Double] = js.native
+  var numSockets: js.UndefOr[Double] = js.undefined
   
   /**
     * URL for preconnect. Only the origin is relevant for opening the socket.
     */
-  var url: String = js.native
+  var url: String
 }
 object PreconnectOptions {
   

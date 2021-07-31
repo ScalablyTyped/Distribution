@@ -2,21 +2,22 @@ package typings.fastChunkString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(str: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @JSImport("fast-chunk-string", JSImport.Namespace)
   @js.native
-  def apply(str: String, options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var size: Double = js.native
+    var size: Double
     
-    var unicodeAware: js.UndefOr[Boolean] = js.native
+    var unicodeAware: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

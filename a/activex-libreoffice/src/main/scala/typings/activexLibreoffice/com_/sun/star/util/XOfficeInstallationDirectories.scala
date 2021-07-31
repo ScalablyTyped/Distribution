@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,34 +14,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In many cases, storing the reference directly would destroy the relocatability of an office installation.
   * @since OOo 2.0
   */
-@js.native
-trait XOfficeInstallationDirectories extends XInterface {
+trait XOfficeInstallationDirectories
+  extends StObject
+     with XInterface {
   
   /**
     * returns the absolute {@link URL} containing the directory of the current office installation (for example "file:///opt/LibreOffice")
     * @returns the absolute {@link URL} containing the directory of the current office installation.
     */
-  val OfficeInstallationDirectoryURL: String = js.native
+  val OfficeInstallationDirectoryURL: String
   
   /**
     * returns the absolute {@link URL} containing the directory where the current office installation expects its user data (for example
     * "file:///home/kso/.config/libreoffice/4")
     * @returns the absolute {@link URL} containing the directory of the current office user data.
     */
-  val OfficeUserDataDirectoryURL: String = js.native
+  val OfficeUserDataDirectoryURL: String
   
   /**
     * returns the absolute {@link URL} containing the directory of the current office installation (for example "file:///opt/LibreOffice")
     * @returns the absolute {@link URL} containing the directory of the current office installation.
     */
-  def getOfficeInstallationDirectoryURL(): String = js.native
+  def getOfficeInstallationDirectoryURL(): String
   
   /**
     * returns the absolute {@link URL} containing the directory where the current office installation expects its user data (for example
     * "file:///home/kso/.config/libreoffice/4")
     * @returns the absolute {@link URL} containing the directory of the current office user data.
     */
-  def getOfficeUserDataDirectoryURL(): String = js.native
+  def getOfficeUserDataDirectoryURL(): String
   
   /**
     * the counterpart of `makeRelocatableURL` .
@@ -53,7 +53,7 @@ trait XOfficeInstallationDirectories extends XInterface {
     * @param URL The {@link URL} for that an absolute {@link URL} is requested. In case the {@link URL} does not contain the opaque relocation placeholder use
     * @returns The absolute {@link URL} .
     */
-  def makeAbsoluteURL(URL: String): String = js.native
+  def makeAbsoluteURL(URL: String): String
   
   /**
     * calculates a relocatable {@link URL} from the given {@link URL} .
@@ -64,7 +64,7 @@ trait XOfficeInstallationDirectories extends XInterface {
     * @param URL The {@link URL} for that a relocatable {@link URL} is requested. In case the {@link URL} does not contain a reference to the current office i
     * @returns The relocatable {@link URL} .
     */
-  def makeRelocatableURL(URL: String): String = js.native
+  def makeRelocatableURL(URL: String): String
 }
 object XOfficeInstallationDirectories {
   

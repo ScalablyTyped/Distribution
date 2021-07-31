@@ -4,7 +4,6 @@ import typings.awsSdk.configBaseMod.HTTPOptions
 import typings.awsSdk.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object processCredentialsMod {
@@ -18,14 +17,13 @@ object processCredentialsMod {
     def this(options: ProcessCredentialsOptions) = this()
   }
   
-  @js.native
   trait ProcessCredentialsOptions extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var httpOptions: js.UndefOr[HTTPOptions] = js.native
+    var httpOptions: js.UndefOr[HTTPOptions] = js.undefined
     
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
   }
   object ProcessCredentialsOptions {
     

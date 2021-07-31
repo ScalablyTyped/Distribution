@@ -6,7 +6,6 @@ import typings.d3Color.anon.C
 import typings.d3Color.anon.H
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -112,14 +111,13 @@ object mod {
   */
   trait ColorSpaceObject extends StObject
   
-  @js.native
   trait Color_ extends StObject {
     
     /**
       * Returns true if and only if the color is displayable on standard hardware.
       * For example, this returns false for an RGB color if any channel value is less than zero or greater than 255, or if the opacity is not in the range [0, 1].
       */
-    def displayable(): Boolean = js.native
+    def displayable(): Boolean
     
     // Note: While this method is used in prototyping for colors of specific colorspaces, it should not be called directly, as 'this.rgb' would not be implemented on Color
     /**
@@ -127,24 +125,24 @@ object mod {
       * If this color is not displayable, a suitable displayable color is returned instead.
       * For example, RGB channel values greater than 255 are clamped to 255.
       */
-    def formatHex(): String = js.native
+    def formatHex(): String
     
     /**
       * Returns a string representing this color according to the CSS Color Module Level 3 specification, such as hsl(257, 50%, 80%) or hsla(257, 50%, 80%, 0.2).
       * If this color is not displayable, a suitable displayable color is returned instead by clamping S and L channel values to the interval [0, 100].
       */
-    def formatHsl(): String = js.native
+    def formatHsl(): String
     
     /**
       * Returns a string representing this color according to the CSS Object Model specification, such as rgb(247, 234, 186) or rgba(247, 234, 186, 0.2).
       * If this color is not displayable, a suitable displayable color is returned instead by clamping RGB channel values to the interval [0, 255].
       */
-    def formatRgb(): String = js.native
+    def formatRgb(): String
     
     /**
       * @deprecated Use color.formatHex.
       */
-    def hex(): String = js.native
+    def hex(): String
   }
   object Color_ {
     
@@ -182,7 +180,8 @@ object mod {
   
   @js.native
   trait CubehelixColor
-    extends Color_
+    extends StObject
+       with Color_
        with ColorSpaceObject {
     
     /**
@@ -279,7 +278,8 @@ object mod {
   
   @js.native
   trait HCLColor
-    extends Color_
+    extends StObject
+       with Color_
        with ColorSpaceObject {
     
     /**
@@ -369,7 +369,8 @@ object mod {
   
   @js.native
   trait HSLColor
-    extends Color_
+    extends StObject
+       with Color_
        with ColorSpaceObject {
     
     /**
@@ -490,7 +491,8 @@ object mod {
   
   @js.native
   trait LabColor
-    extends Color_
+    extends StObject
+       with Color_
        with ColorSpaceObject {
     
     /**
@@ -580,7 +582,8 @@ object mod {
   
   @js.native
   trait RGBColor
-    extends Color_
+    extends StObject
+       with Color_
        with ColorSpaceObject {
     
     /**

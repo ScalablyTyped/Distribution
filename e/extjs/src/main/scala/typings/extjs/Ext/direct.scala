@@ -3,23 +3,23 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object direct {
   
-  @js.native
-  trait IEvent extends IBase {
+  trait IEvent
+    extends StObject
+       with IBase {
     
     /** [Method] Return the raw data for this event
       * @returns Mixed The data from the event
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Return the name for this event
       * @returns String The name of event
       */
-    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   }
   object IEvent {
     
@@ -33,7 +33,7 @@ object direct {
     implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
@@ -48,20 +48,21 @@ object direct {
   
   type IExceptionEvent = IRemotingEvent
   
-  @js.native
-  trait IJsonProvider extends IProvider {
+  trait IJsonProvider
+    extends StObject
+       with IProvider {
     
     /** [Method] Create an event from a response object
       * @param response Object Response object
       * @returns Ext.direct.Event The event
       */
-    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.native
+    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.undefined
     
     /** [Method] Creates a set of events based on the XHR response
       * @param response Object The XHR response
       * @returns Ext.direct.Event[] An array of Ext.direct.Event
       */
-    var createEvents: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Array]] = js.native
+    var createEvents: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Array]] = js.undefined
   }
   object IJsonProvider {
     
@@ -88,8 +89,9 @@ object direct {
     }
   }
   
-  @js.native
-  trait IManager extends IObservable
+  trait IManager
+    extends StObject
+       with IObservable
   object IManager {
     
     @scala.inline
@@ -99,17 +101,18 @@ object direct {
     }
   }
   
-  @js.native
-  trait IPollingProvider extends IJsonProvider {
+  trait IPollingProvider
+    extends StObject
+       with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.native
+    var baseParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var url: js.UndefOr[js.Any] = js.native
+    var url: js.UndefOr[js.Any] = js.undefined
   }
   object IPollingProvider {
     
@@ -142,23 +145,24 @@ object direct {
     }
   }
   
-  @js.native
-  trait IProvider extends IObservable {
+  trait IProvider
+    extends StObject
+       with IObservable {
     
     /** [Method] Abstract method for subclasses to implement  */
-    var connect: js.UndefOr[js.Function0[Unit]] = js.native
+    var connect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Abstract method for subclasses to implement  */
-    var disconnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[java.lang.String] = js.native
+    var id: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns whether or not the server side is currently connected  */
-    var isConnected: js.UndefOr[js.Function0[Unit]] = js.native
+    var isConnected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String[]) */
-    var relayedEvents: js.UndefOr[Array] = js.native
+    var relayedEvents: js.UndefOr[Array] = js.undefined
   }
   object IProvider {
     
@@ -203,13 +207,14 @@ object direct {
     }
   }
   
-  @js.native
-  trait IRemotingEvent extends IEvent {
+  trait IRemotingEvent
+    extends StObject
+       with IEvent {
     
     /** [Method] Get the transaction associated with this event
       * @returns Ext.direct.Transaction The transaction
       */
-    var getTransaction: js.UndefOr[js.Function0[ITransaction]] = js.native
+    var getTransaction: js.UndefOr[js.Function0[ITransaction]] = js.undefined
   }
   object IRemotingEvent {
     
@@ -230,14 +235,15 @@ object direct {
     }
   }
   
-  @js.native
-  trait IRemotingMethod extends IBase {
+  trait IRemotingMethod
+    extends StObject
+       with IBase {
     
     /** [Method] Takes the arguments for the Direct function and splits the arguments from the scope and the callback
       * @param args Array The arguments passed to the direct call
       * @returns Object An object with 3 properties: args, callback &amp; scope.
       */
-    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], _]] = js.native
+    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], js.Any]] = js.undefined
   }
   object IRemotingMethod {
     
@@ -251,39 +257,40 @@ object direct {
     implicit class IRemotingMethodMutableBuilder[Self <: IRemotingMethod] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetCallData(value: /* args */ js.UndefOr[Array] => _): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
+      def setGetCallData(value: /* args */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetCallDataUndefined: Self = StObject.set(x, "getCallData", js.undefined)
     }
   }
   
-  @js.native
-  trait IRemotingProvider extends IJsonProvider {
+  trait IRemotingProvider
+    extends StObject
+       with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var actions: js.UndefOr[js.Any] = js.native
+    var actions: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var disableNestedActions: js.UndefOr[Boolean] = js.native
+    var disableNestedActions: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var enableBuffer: js.UndefOr[js.Any] = js.native
+    var enableBuffer: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var enableUrlEncode: js.UndefOr[java.lang.String] = js.native
+    var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var namespace: js.UndefOr[js.Any] = js.native
+    var namespace: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[java.lang.String] = js.native
+    var url: js.UndefOr[java.lang.String] = js.undefined
   }
   object IRemotingProvider {
     
@@ -346,11 +353,12 @@ object direct {
     }
   }
   
-  @js.native
-  trait ITransaction extends IBase {
+  trait ITransaction
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Ext.direct.Provider) */
-    var provider: js.UndefOr[IProvider] = js.native
+    var provider: js.UndefOr[IProvider] = js.undefined
   }
   object ITransaction {
     
@@ -371,6 +379,5 @@ object direct {
     }
   }
   
-  @js.native
   trait Manager extends StObject
 }

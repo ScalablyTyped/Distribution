@@ -2,26 +2,24 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Artifact describes a build product.
   */
-@js.native
 trait SchemaArtifact extends StObject {
   
   /**
     * Hash or checksum value of a binary, or Docker Registry 2.0 digest of a
     * container.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * Artifact ID, if any; for container images, this will be a URL by digest
     * like gcr.io/projectID/imagename@sha256:123456
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the artifact. This may be the path to a binary or jar file, or in
@@ -32,7 +30,7 @@ trait SchemaArtifact extends StObject {
     * google.devtools.containeranalysis.v1alpha1.BuildDetails.provenance_bytes
     * to deserialize back into proto.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Related artifact names. This may be the path to a binary or jar file, or
@@ -41,7 +39,7 @@ trait SchemaArtifact extends StObject {
     * that a single Artifact ID can have multiple names, for example if two
     * tags are applied to one image.
     */
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaArtifact {
   

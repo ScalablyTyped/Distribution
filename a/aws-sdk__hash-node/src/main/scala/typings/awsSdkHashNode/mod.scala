@@ -6,7 +6,6 @@ import typings.awsSdkHashNode.awsSdkHashNodeStrings.utf8
 import typings.awsSdkTypes.cryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,8 @@ object mod {
   @JSImport("@aws-sdk/hash-node", "Hash")
   @js.native
   class Hash protected ()
-    extends typings.awsSdkTypes.cryptoMod.Hash {
+    extends StObject
+       with typings.awsSdkTypes.cryptoMod.Hash {
     def this(algorithmIdentifier: String) = this()
     def this(algorithmIdentifier: String, secret: SourceData) = this()
     

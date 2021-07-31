@@ -5,7 +5,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,8 +47,8 @@ trait RecordProxy[T] extends StObject {
       ]
     ]
   ] = js.native
-  def getLinkedRecords[H](name: String): (js.Array[RecordProxy[_ | js.Object]]) | Null = js.native
-  def getLinkedRecords[H](name: String, args: Variables): (js.Array[RecordProxy[_ | js.Object]]) | Null = js.native
+  def getLinkedRecords[H](name: String): (js.Array[RecordProxy[js.Any | js.Object]]) | Null = js.native
+  def getLinkedRecords[H](name: String, args: Variables): (js.Array[RecordProxy[js.Any | js.Object]]) | Null = js.native
   
   def getOrCreateLinkedRecord(name: String, typeName: String): RecordProxy[T] = js.native
   def getOrCreateLinkedRecord(name: String, typeName: String, args: Variables): RecordProxy[T] = js.native
@@ -83,14 +82,12 @@ trait RecordProxy[T] extends StObject {
     args: Variables
   ): RecordProxy[T] = js.native
   
-  def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: String): RecordProxy[T] = js.native
-  def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: String, args: Variables): RecordProxy[T] = js.native
   def setLinkedRecords(records: js.Array[RecordProxy[js.Object] | Null], name: String): RecordProxy[T] = js.native
   def setLinkedRecords(records: js.Array[RecordProxy[js.Object] | Null], name: String, args: Variables): RecordProxy[T] = js.native
   def setLinkedRecords(records: Null, name: String): RecordProxy[T] = js.native
   def setLinkedRecords(records: Null, name: String, args: Variables): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: js.UndefOr[scala.Nothing], name: K): RecordProxy[T] = js.native
-  def setLinkedRecords[K /* <: /* keyof T */ String */](records: js.UndefOr[scala.Nothing], name: K, args: Variables): RecordProxy[T] = js.native
+  def setLinkedRecords(records: Unit, name: String): RecordProxy[T] = js.native
+  def setLinkedRecords(records: Unit, name: String, args: Variables): RecordProxy[T] = js.native
   def setLinkedRecords[K /* <: /* keyof T */ String */](
     records: js.Array[
       (RecordProxy[
@@ -114,6 +111,8 @@ trait RecordProxy[T] extends StObject {
   ): RecordProxy[T] = js.native
   def setLinkedRecords[K /* <: /* keyof T */ String */](records: Null, name: K): RecordProxy[T] = js.native
   def setLinkedRecords[K /* <: /* keyof T */ String */](records: Null, name: K, args: Variables): RecordProxy[T] = js.native
+  def setLinkedRecords[K /* <: /* keyof T */ String */](records: Unit, name: K): RecordProxy[T] = js.native
+  def setLinkedRecords[K /* <: /* keyof T */ String */](records: Unit, name: K, args: Variables): RecordProxy[T] = js.native
   
   def setValue(value: js.Array[Primitive], name: String): RecordProxy[js.Object] = js.native
   def setValue(value: js.Array[Primitive], name: String, args: Variables): RecordProxy[js.Object] = js.native

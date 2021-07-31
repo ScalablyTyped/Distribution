@@ -3,23 +3,23 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.linebreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinebreakToken extends Token {
+trait LinebreakToken
+  extends StObject
+     with Token {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: linebreak = js.native
+  var name: linebreak
 }
 object LinebreakToken {
   
   @scala.inline
-  def apply(contents: String, location: LocationRange, name: linebreak): LinebreakToken = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: String, location: LocationRange): LinebreakToken = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "linebreak")
     __obj.asInstanceOf[LinebreakToken]
   }
   

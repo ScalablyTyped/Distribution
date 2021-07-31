@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vertex3DList extends StObject {
   
   /** List of x-offsets in local tile coordinates. */
-  var xOffsets: js.UndefOr[js.Array[Double]] = js.native
+  var xOffsets: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** List of y-offsets in local tile coordinates. */
-  var yOffsets: js.UndefOr[js.Array[Double]] = js.native
+  var yOffsets: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** List of z-offsets in local tile coordinates. */
-  var zOffsets: js.UndefOr[js.Array[Double]] = js.native
+  var zOffsets: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Vertex3DList {
   

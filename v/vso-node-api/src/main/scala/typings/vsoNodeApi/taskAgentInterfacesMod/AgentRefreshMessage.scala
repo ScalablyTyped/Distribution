@@ -2,17 +2,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentRefreshMessage extends StObject {
   
-  var agentId: Double = js.native
+  var agentId: Double
   
-  var targetVersion: String = js.native
+  var targetVersion: String
   
-  var timeout: js.Any = js.native
+  var timeout: js.Any
 }
 object AgentRefreshMessage {
   

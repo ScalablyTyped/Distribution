@@ -5,19 +5,19 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XSecondAxisTitleSupplier extends XInterface {
+trait XSecondAxisTitleSupplier
+  extends StObject
+     with XInterface {
   
-  val SecondXAxisTitle: XShape = js.native
+  val SecondXAxisTitle: XShape
   
-  val SecondYAxisTitle: XShape = js.native
+  val SecondYAxisTitle: XShape
   
-  def getSecondXAxisTitle(): XShape = js.native
+  def getSecondXAxisTitle(): XShape
   
-  def getSecondYAxisTitle(): XShape = js.native
+  def getSecondYAxisTitle(): XShape
 }
 object XSecondAxisTitleSupplier {
   

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveSplitter extends Control {
+trait ResponsiveSplitter
+  extends StObject
+     with Control {
   
   /**
     * Destroys the rootPaneContainer in the aggregation <code>rootPaneContainer</code>.

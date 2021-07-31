@@ -4,30 +4,27 @@ import typings.std.Error
 import typings.urbanDictionary.anon.Entries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("urban-dictionary", "defid")
+  @JSImport("urban-dictionary", JSImport.Namespace)
   @js.native
-  def defid(id: Double): js.Promise[WordDefinition] = js.native
-  @JSImport("urban-dictionary", "defid")
-  @js.native
-  def defid(id: Double, callback: js.Function2[/* error */ Error, /* object */ WordDefinition, _]): js.Promise[WordDefinition] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("urban-dictionary", "random")
-  @js.native
-  def random(): js.Promise[WordDefinition] = js.native
-  @JSImport("urban-dictionary", "random")
-  @js.native
-  def random(callback: js.Function2[/* error */ Error, /* object */ WordDefinition, _]): js.Promise[WordDefinition] = js.native
+  @scala.inline
+  def defid(id: Double): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
+  @scala.inline
+  def defid(id: Double, callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WordDefinition]]
   
-  @JSImport("urban-dictionary", "term")
-  @js.native
-  def term(word: String): js.Promise[Entries] = js.native
-  @JSImport("urban-dictionary", "term")
-  @js.native
+  @scala.inline
+  def random(): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Promise[WordDefinition]]
+  @scala.inline
+  def random(callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
+  
+  @scala.inline
+  def term(word: String): js.Promise[Entries] = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries]]
+  @scala.inline
   def term(
     word: String,
     callback: js.Function4[
@@ -35,34 +32,33 @@ object mod {
       /* entries */ js.Array[WordDefinition], 
       /* tags */ js.Array[String], 
       /* sounds */ js.Array[String], 
-      _
+      js.Any
     ]
-  ): js.Promise[Entries] = js.native
+  ): js.Promise[Entries] = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries]]
   
-  @js.native
   trait WordDefinition extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var current_vote: String = js.native
+    var current_vote: String
     
-    var defid: Double = js.native
+    var defid: Double
     
-    var definition: String = js.native
+    var definition: String
     
-    var example: String = js.native
+    var example: String
     
-    var permalink: String = js.native
+    var permalink: String
     
-    var sound_urls: js.Array[String] = js.native
+    var sound_urls: js.Array[String]
     
-    var thumbs_down: Double = js.native
+    var thumbs_down: Double
     
-    var thumbs_up: Double = js.native
+    var thumbs_up: Double
     
-    var word: String = js.native
+    var word: String
     
-    var written_on: String = js.native
+    var written_on: String
   }
   object WordDefinition {
     

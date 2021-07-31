@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a menu event. */
-@js.native
-trait MenuEvent extends EventObject {
+trait MenuEvent
+  extends StObject
+     with EventObject {
   
   /** contains the item ID. */
-  var MenuId: Double = js.native
+  var MenuId: Double
 }
 object MenuEvent {
   

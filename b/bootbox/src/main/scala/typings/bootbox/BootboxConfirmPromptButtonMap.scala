@@ -2,16 +2,16 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ButtonMap options for confirm and prompt modals */
-@js.native
-trait BootboxConfirmPromptButtonMap extends BootboxButtonMap {
+trait BootboxConfirmPromptButtonMap
+  extends StObject
+     with BootboxButtonMap {
   
-  var cancel: BootboxButton | js.Function = js.native
+  var cancel: BootboxButton | js.Function
   
-  var confirm: BootboxButton | js.Function = js.native
+  var confirm: BootboxButton | js.Function
 }
 object BootboxConfirmPromptButtonMap {
   

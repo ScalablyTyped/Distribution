@@ -3,13 +3,11 @@ package typings.reactNativeMaterialUi.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeProviderProps extends StObject {
   
-  var children: ReactElement = js.native
+  var children: ReactElement
 }
 object ThemeProviderProps {
   

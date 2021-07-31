@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDeploymentGroupsOutput extends StObject {
   
   /**
     * Information about the deployment groups.
     */
-  var deploymentGroupsInfo: js.UndefOr[DeploymentGroupInfoList] = js.native
+  var deploymentGroupsInfo: js.UndefOr[DeploymentGroupInfoList] = js.undefined
   
   /**
     * Information about errors that might have occurred during the API call.
     */
-  var errorMessage: js.UndefOr[ErrorMessage] = js.native
+  var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
 }
 object BatchGetDeploymentGroupsOutput {
   

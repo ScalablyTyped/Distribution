@@ -5,16 +5,18 @@ import typings.ionicCore.componentsMod.global.HTMLIonItemElement
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
+import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.full
 import typings.ionicCore.ionicCoreStrings.inset
 import typings.ionicCore.ionicCoreStrings.none
+import typings.ionicCore.ionicCoreStrings.reset
+import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemMod {
@@ -22,7 +24,8 @@ object itemMod {
   @JSImport("@ionic/core/dist/types/components/item/item", "Item")
   @js.native
   class Item ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with AnchorInterface
        with ButtonInterface {
     
@@ -60,6 +63,9 @@ object itemMod {
       * The icon to use when `detail` is set to `true`.
       */
     var detailIcon: String = js.native
+    
+    /* CompleteClass */
+    var disabled: Boolean = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MItem(): Unit = js.native
@@ -103,5 +109,8 @@ object itemMod {
     var routerDirection: RouterDirection = js.native
     
     var setMultipleInputs: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: submit | reset | button = js.native
   }
 }

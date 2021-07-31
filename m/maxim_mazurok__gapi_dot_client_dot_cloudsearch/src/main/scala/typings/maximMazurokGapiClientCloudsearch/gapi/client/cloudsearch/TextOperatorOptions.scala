@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextOperatorOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TextOperatorOptions extends StObject {
     * query restrictions "genre:science" and "genre:fiction" doesn't match the item; "genre:science-fiction" does. Value matching is case-sensitive and does not remove special characters.
     * If false, the text is tokenized. For example, if the value is "science-fiction" the queries "genre:science" and "genre:fiction" matches the item.
     */
-  var exactMatchWithOperator: js.UndefOr[Boolean] = js.native
+  var exactMatchWithOperator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the text property. For example, if operatorName is *subject* and the property's name is *subjectLine*, then
@@ -21,7 +19,7 @@ trait TextOperatorOptions extends StObject {
     * operator returns all items where *<value>* matches the value of any text properties or text within the content field for the item. The operator name can only contain lowercase
     * letters (a-z). The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object TextOperatorOptions {
   

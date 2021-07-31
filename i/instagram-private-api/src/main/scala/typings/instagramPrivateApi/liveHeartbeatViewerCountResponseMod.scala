@@ -2,34 +2,32 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveHeartbeatViewerCountResponseMod {
   
-  @js.native
   trait LiveHeartbeatViewerCountResponseRootObject extends StObject {
     
-    var broadcast_status: String = js.native
+    var broadcast_status: String
     
-    var cobroadcaster_ids: js.Array[_] = js.native
+    var cobroadcaster_ids: js.Array[js.Any]
     
-    var is_top_live_eligible: Double = js.native
+    var is_top_live_eligible: Double
     
-    var offset_to_video_start: Double = js.native
+    var offset_to_video_start: Double
     
-    var status: String = js.native
+    var status: String
     
-    var total_unique_viewer_count: Double = js.native
+    var total_unique_viewer_count: Double
     
-    var viewer_count: Double = js.native
+    var viewer_count: Double
   }
   object LiveHeartbeatViewerCountResponseRootObject {
     
     @scala.inline
     def apply(
       broadcast_status: String,
-      cobroadcaster_ids: js.Array[_],
+      cobroadcaster_ids: js.Array[js.Any],
       is_top_live_eligible: Double,
       offset_to_video_start: Double,
       status: String,
@@ -47,7 +45,7 @@ object liveHeartbeatViewerCountResponseMod {
       def setBroadcast_status(value: String): Self = StObject.set(x, "broadcast_status", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCobroadcaster_ids(value: js.Array[_]): Self = StObject.set(x, "cobroadcaster_ids", value.asInstanceOf[js.Any])
+      def setCobroadcaster_ids(value: js.Array[js.Any]): Self = StObject.set(x, "cobroadcaster_ids", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCobroadcaster_idsVarargs(value: js.Any*): Self = StObject.set(x, "cobroadcaster_ids", js.Array(value :_*))

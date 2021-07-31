@@ -8,30 +8,28 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRProPDFVersion
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRProRecognitionModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonOCRProMod {
   
-  @js.native
   trait Error extends StObject {
     
     /**
       * Return the index of the image or path of the file.
       */
-    def GetInput(): Double | String = js.native
+    def GetInput(): Double | String
     
     /**
       * Return the error message.
       */
-    def GetMessage(): String = js.native
+    def GetMessage(): String
     
     /**
       * Return the number of the page on which the error was thrown.
       * If the input is a file, this returns the index of the page in that file.
       * If the input is an image in the buffer, this always returns 0.
       */
-    def GetPage(): Double = js.native
+    def GetPage(): Double
   }
   object Error {
     
@@ -55,18 +53,17 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait Letter extends StObject {
     
     /**
       * Return the coordinates for the rectangle that contains the specified letter. The coordinates are in the sequence of "left,top,right,bottom" like "121,125,123,143".
       */
-    def GetLetterRect(): String = js.native
+    def GetLetterRect(): String
     
     /**
       * Return the text of the letter.
       */
-    def GetText(): Double = js.native
+    def GetText(): Double
   }
   object Letter {
     
@@ -87,7 +84,6 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait OCRPro extends StObject {
     
     /**
@@ -102,12 +98,12 @@ object addonOCRProMod {
       path: String,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Return whether the OCR Professional engine has been installed.
       */
-    def IsModuleInstalled(): Boolean = js.native
+    def IsModuleInstalled(): Boolean
     
     /**
       * Perform OCR on the specified image in the buffer.
@@ -123,7 +119,7 @@ object addonOCRProMod {
       index: Double,
       successCallback: js.Function2[/* imageId */ Double, /* result */ OCRProResult, Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Perform OCR on the specified local file.
@@ -139,7 +135,7 @@ object addonOCRProMod {
       path: String,
       successCallback: js.Function2[/* path */ String, /* result */ OCRProResult, Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Perform OCR on the specified rectangular area(s) on the image.
@@ -157,7 +153,7 @@ object addonOCRProMod {
       aryRects: js.Array[Rect],
       successCallback: js.Function3[/* imageId */ Double, /* aryRects */ js.Array[Rect], /* result */ OCRProResult, Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Perform OCR on the selected images in the buffer.
@@ -171,12 +167,12 @@ object addonOCRProMod {
     def RecognizeSelectedImages(
       successCallback: js.Function1[/* result */ OCRProResult, Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Return or set the current settings of the OCR engine.
       */
-    var Settings: typings.dwt.addonOCRProMod.Settings | Boolean | Null = js.native
+    var Settings: typings.dwt.addonOCRProMod.Settings | Boolean | Null
   }
   object OCRPro {
     
@@ -189,7 +185,7 @@ object addonOCRProMod {
       RecognizeRect: (Double, js.Array[Rect], js.Function3[/* imageId */ Double, /* aryRects */ js.Array[Rect], /* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit,
       RecognizeSelectedImages: (js.Function1[/* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
     ): OCRPro = {
-      val __obj = js.Dynamic.literal(Download = js.Any.fromFunction3(Download), IsModuleInstalled = js.Any.fromFunction0(IsModuleInstalled), Recognize = js.Any.fromFunction3(Recognize), RecognizeFile = js.Any.fromFunction3(RecognizeFile), RecognizeRect = js.Any.fromFunction4(RecognizeRect), RecognizeSelectedImages = js.Any.fromFunction2(RecognizeSelectedImages))
+      val __obj = js.Dynamic.literal(Download = js.Any.fromFunction3(Download), IsModuleInstalled = js.Any.fromFunction0(IsModuleInstalled), Recognize = js.Any.fromFunction3(Recognize), RecognizeFile = js.Any.fromFunction3(RecognizeFile), RecognizeRect = js.Any.fromFunction4(RecognizeRect), RecognizeSelectedImages = js.Any.fromFunction2(RecognizeSelectedImages), Settings = null)
       __obj.asInstanceOf[OCRPro]
     }
     
@@ -232,60 +228,59 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait OCRProResult extends StObject {
     
     /**
       * Return a base64 string that contains the result of the OCR.
       */
-    def Get(): String = js.native
+    def Get(): String
     
     /**
       * Return the number of pages already OCR'd on the machine.
       */
-    def GetAlreadyOCRCount(): String = js.native
+    def GetAlreadyOCRCount(): String
     
     /**
       * Return the error code.
       */
-    def GetErrorCode(): Double = js.native
+    def GetErrorCode(): Double
     
     /**
       * Return an array which contains detailed error information for each page that was OCR'd
       */
-    def GetErrorDetailList(): js.Array[Error] = js.native
+    def GetErrorDetailList(): js.Array[Error]
     
     /**
       * Return the error string.
       */
-    def GetErrorString(): String = js.native
+    def GetErrorString(): String
     
     /**
       * Return the source information. It could be the index of the OCR'd image or the path of the OCR'd file.
       */
-    def GetInput(): Double | String = js.native
+    def GetInput(): Double | String
     
     /**
       * Return the number of pages allowed by the current license.
       */
-    def GetOCRTotalCount(): String = js.native
+    def GetOCRTotalCount(): String
     
     /**
       * Return the content of a page.
       * @param index Specify the page
       */
-    def GetPageContent(index: Double): Page = js.native
+    def GetPageContent(index: Double): Page
     
     /**
       * Return the number of pages in the OCR result.
       */
-    def GetPageCount(): String = js.native
+    def GetPageCount(): String
     
     /**
       * Save the OCR result as a file.
       * @param path The path to save the file.
       */
-    def Save(path: String): Boolean = js.native
+    def Save(path: String): Boolean
   }
   object OCRProResult {
     
@@ -341,30 +336,29 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait Page extends StObject {
     
     /**
       * Return the content of the specified letter.
       * @index Specify the letter.
       */
-    def GetLetterContent(index: Double): Letter = js.native
+    def GetLetterContent(index: Double): Letter
     
     /**
       * Return the number of letters in the page.
       */
-    def GetLetterCount(): Double = js.native
+    def GetLetterCount(): Double
     
     /**
       * Return the base64-encoded content of the specified rectangle.
       * @index Specify the line.
       */
-    def GetZoneContent(index: Double): String = js.native
+    def GetZoneContent(index: Double): String
     
     /**
       * Return the number of recognized rectangles in the page.
       */
-    def GetZoneCount(): Double = js.native
+    def GetZoneCount(): Double
   }
   object Page {
     
@@ -396,16 +390,15 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Rect {
     
@@ -432,23 +425,22 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait Redaction extends StObject {
     
     /**
       * Specify the text to redact.
       */
-    var FindText: String = js.native
+    var FindText: String
     
     /**
       * Specify how redaction is done.
       */
-    var FindTextAction: EnumDWTOCRFindTextAction | Double = js.native
+    var FindTextAction: EnumDWTOCRFindTextAction | Double
     
     /**
       * Specify how the text is found.
       */
-    var FindTextFlags: EnumDWTOCRFindTextFlags | Double = js.native
+    var FindTextFlags: EnumDWTOCRFindTextFlags | Double
   }
   object Redaction {
     
@@ -476,43 +468,42 @@ object addonOCRProMod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * Specify the target language.
       */
-    var Languages: String = js.native
+    var Languages: String
     
     /**
       * Specify the URL for the license checker.
       */
-    var LicenseChecker: String = js.native
+    var LicenseChecker: String
     
     /**
       * Specify the output format.
       */
-    var OutputFormat: EnumDWTOCRProOutputFormat | String = js.native
+    var OutputFormat: EnumDWTOCRProOutputFormat | String
     
     /**
       * Specify the PDF/A version.
       */
-    var PDFAVersion: EnumDWTOCRProPDFAVersion | String = js.native
+    var PDFAVersion: EnumDWTOCRProPDFAVersion | String
     
     /**
       * Specify the PDF version.
       */
-    var PDFVersion: EnumDWTOCRProPDFVersion | String = js.native
+    var PDFVersion: EnumDWTOCRProPDFVersion | String
     
     /**
       * Specify the recognition module.
       */
-    var RecognitionModule: EnumDWTOCRProRecognitionModule | String = js.native
+    var RecognitionModule: EnumDWTOCRProRecognitionModule | String
     
     /**
       * Configure the redaction.
       */
-    var Redaction: typings.dwt.addonOCRProMod.Redaction = js.native
+    var Redaction: typings.dwt.addonOCRProMod.Redaction
   }
   object Settings {
     

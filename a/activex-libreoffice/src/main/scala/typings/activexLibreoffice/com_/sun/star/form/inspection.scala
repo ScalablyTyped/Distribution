@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inspection {
@@ -50,14 +49,15 @@ object inspection {
     * XMLFormsPropertyHandler}{@link XSDValidationPropertyHandler}
     * @see com.sun.star.inspection.XObjectInspectorModel.HandlerFactories
     */
-  @js.native
-  trait DefaultFormComponentInspectorModel extends XObjectInspectorModel {
+  trait DefaultFormComponentInspectorModel
+    extends StObject
+       with XObjectInspectorModel {
     
     /**
       * creates a default {@link DefaultFormComponentInspectorModel} , providing factories for all handlers listed above.
       * @since OOo 2.2
       */
-    def createDefault(): Unit = js.native
+    def createDefault(): Unit
     
     /**
       * creates a default {@link DefaultFormComponentInspectorModel} , providing factories for all handlers listed above, and describing an ObjectInspector
@@ -70,13 +70,13 @@ object inspection {
       * @since OOo 2.2
       * @throws com::sun::star::lang::IllegalArgumentException if minHelpTextLines or maxHelpTextLines are negative, or if minHelpTextLines is greater than maxHe
       */
-    def createWithHelpSection(minHelpTextLines: Double, maxHelpTextLines: Double): Unit = js.native
+    def createWithHelpSection(minHelpTextLines: Double, maxHelpTextLines: Double): Unit
   }
   object DefaultFormComponentInspectorModel {
     
     @scala.inline
     def apply(
-      HandlerFactories: SafeArray[_],
+      HandlerFactories: SafeArray[js.Any],
       HasHelpSection: Boolean,
       IsReadOnly: Boolean,
       MaxHelpTextLines: Double,

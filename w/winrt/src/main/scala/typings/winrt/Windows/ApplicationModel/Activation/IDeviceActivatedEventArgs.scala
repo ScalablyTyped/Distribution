@@ -2,15 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDeviceActivatedEventArgs extends IActivatedEventArgs {
+trait IDeviceActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var deviceInformationId: String = js.native
+  var deviceInformationId: String
   
-  var verb: String = js.native
+  var verb: String
 }
 object IDeviceActivatedEventArgs {
   

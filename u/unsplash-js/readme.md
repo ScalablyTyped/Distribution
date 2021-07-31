@@ -4,15 +4,15 @@
 Typings are for version 6.3
 
 ## Library description:
-A JavaScript wrapper for the Unsplash API
+Official JavaScript wrapper for the Unsplash API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unsplash-js |
 | Keywords           | unsplash, photos, api, images, splash, free |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 1142124 |
+| # releases         | 10 |
+| # dependents       | 20 |
+| # downloads        | 1347586 |
 | # stars            | 6 |
 
 ## Links

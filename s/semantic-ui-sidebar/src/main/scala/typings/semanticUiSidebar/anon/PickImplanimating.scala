@@ -2,14 +2,12 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ClassNameSettings._Impl, 'animating'> */
-@js.native
 trait PickImplanimating extends StObject {
   
-  var animating: String = js.native
+  var animating: String
 }
 object PickImplanimating {
   

@@ -2,19 +2,17 @@ package typings.node.dnsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupOptions extends StObject {
   
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
-  var family: js.UndefOr[Double] = js.native
+  var family: js.UndefOr[Double] = js.undefined
   
-  var hints: js.UndefOr[Double] = js.native
+  var hints: js.UndefOr[Double] = js.undefined
   
-  var verbatim: js.UndefOr[Boolean] = js.native
+  var verbatim: js.UndefOr[Boolean] = js.undefined
 }
 object LookupOptions {
   

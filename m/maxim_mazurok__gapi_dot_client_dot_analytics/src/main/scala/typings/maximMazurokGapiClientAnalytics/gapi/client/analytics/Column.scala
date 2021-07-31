@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /** Map of attribute name and value for this column. */
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Column id. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics column. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Column {
   
@@ -37,7 +35,7 @@ object Column {
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline

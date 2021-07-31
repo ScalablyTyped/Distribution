@@ -2,15 +2,13 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDnsKeyDigest extends StObject {
   
-  var digest: js.UndefOr[String] = js.native
+  var digest: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDnsKeyDigest {
   

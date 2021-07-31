@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoverPollEndpointResponse extends StObject {
   
   /**
     * The endpoint for the Amazon ECS agent to poll.
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The telemetry endpoint for the Amazon ECS agent.
     */
-  var telemetryEndpoint: js.UndefOr[String] = js.native
+  var telemetryEndpoint: js.UndefOr[String] = js.undefined
 }
 object DiscoverPollEndpointResponse {
   

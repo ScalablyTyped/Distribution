@@ -2,15 +2,13 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  def error(msg: String): Unit = js.native
+  def error(msg: String): Unit
   
-  def info(msg: String): Unit = js.native
+  def info(msg: String): Unit
 }
 object Logger {
   

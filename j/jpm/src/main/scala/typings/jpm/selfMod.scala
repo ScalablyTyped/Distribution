@@ -7,7 +7,6 @@ import typings.jpm.jpmStrings.startup
 import typings.jpm.jpmStrings.upgrade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,13 +16,15 @@ object selfMod {
   
   object data {
     
-    @JSImport("sdk/self", "data.load")
+    @JSImport("sdk/self", "data")
     @js.native
-    def load(name: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sdk/self", "data.url")
-    @js.native
-    def url(name: String): String = js.native
+    @scala.inline
+    def load(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def url(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("sdk/self", "id")

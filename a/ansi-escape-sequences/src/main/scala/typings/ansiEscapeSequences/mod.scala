@@ -6,48 +6,49 @@ import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`2`
 import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("ansi-escape-sequences", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object cursor {
+    
+    @JSImport("ansi-escape-sequences", "cursor")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Moves the cursor `lines` cells back. If the cursor is already at the edge
       * of the screen, this has no effect.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.back")
-    @js.native
-    def back(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.back")
-    @js.native
-    def back(lines: Double): String = js.native
+    @scala.inline
+    def back(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[String]
+    @scala.inline
+    def back(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("back")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Moves the cursor `lines` cells down. If the cursor is already at the edge
       * of the screen, this has no effect.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.down")
-    @js.native
-    def down(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.down")
-    @js.native
-    def down(lines: Double): String = js.native
+    @scala.inline
+    def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    @scala.inline
+    def down(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Moves the cursor `lines` cells forward. If the cursor is already at the
       * edge of the screen, this has no effect.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.forward")
-    @js.native
-    def forward(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.forward")
-    @js.native
-    def forward(lines: Double): String = js.native
+    @scala.inline
+    def forward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[String]
+    @scala.inline
+    def forward(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Hides the cursor
@@ -60,20 +61,17 @@ object mod {
       * Moves the cursor to column n.
       * @param n column number
       */
-    @JSImport("ansi-escape-sequences", "cursor.horizontalAbsolute")
-    @js.native
-    def horizontalAbsolute(n: Double): String = js.native
+    @scala.inline
+    def horizontalAbsolute(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalAbsolute")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Moves cursor to beginning of the line n lines down.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.nextLine")
-    @js.native
-    def nextLine(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.nextLine")
-    @js.native
-    def nextLine(lines: Double): String = js.native
+    @scala.inline
+    def nextLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")().asInstanceOf[String]
+    @scala.inline
+    def nextLine(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Moves the cursor to row n, column m. The values are 1-based, and default
@@ -82,29 +80,23 @@ object mod {
       * @param n row number, default=1
       * @param m column number, default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.position")
-    @js.native
-    def position(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.position")
-    @js.native
-    def position(n: js.UndefOr[scala.Nothing], m: Double): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.position")
-    @js.native
-    def position(n: Double): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.position")
-    @js.native
-    def position(n: Double, m: Double): String = js.native
+    @scala.inline
+    def position(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("position")().asInstanceOf[String]
+    @scala.inline
+    def position(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def position(n: Double, m: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def position(n: Unit, m: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Moves cursor to beginning of the line n lines up.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.previousLine")
-    @js.native
-    def previousLine(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.previousLine")
-    @js.native
-    def previousLine(lines: Double): String = js.native
+    @scala.inline
+    def previousLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("previousLine")().asInstanceOf[String]
+    @scala.inline
+    def previousLine(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("previousLine")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Shows the cursor
@@ -118,15 +110,17 @@ object mod {
       * of the screen, this has no effect.
       * @param lines default=1
       */
-    @JSImport("ansi-escape-sequences", "cursor.up")
-    @js.native
-    def up(): String = js.native
-    @JSImport("ansi-escape-sequences", "cursor.up")
-    @js.native
-    def up(lines: Double): String = js.native
+    @scala.inline
+    def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    @scala.inline
+    def up(lines: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object erase {
+    
+    @JSImport("ansi-escape-sequences", "erase")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Clears part of the screen. If n is 0 (or missing), clear from cursor to
@@ -134,50 +128,45 @@ object mod {
       * If n is 2, clear entire screen. If n is 3, clear entire screen and delete
       * all lines saved in the scrollback buffer (some terminals only).
       */
-    @JSImport("ansi-escape-sequences", "erase.display")
-    @js.native
-    def display(): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.display")
-    @js.native
-    def display_0(n: `0`): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.display")
-    @js.native
-    def display_1(n: `1`): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.display")
-    @js.native
-    def display_2(n: `2`): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.display")
-    @js.native
-    def display_3(n: `3`): String = js.native
+    @scala.inline
+    def display(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")().asInstanceOf[String]
+    
+    @scala.inline
+    def display_0(n: `0`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def display_1(n: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def display_2(n: `2`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def display_3(n: `3`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Erases part of the line. If n is zero (or missing), clear from cursor to
       * the end of the line. If n is one, clear from cursor to beginning of the
       * line. If n is two, clear entire line. Cursor position does not change.
       */
-    @JSImport("ansi-escape-sequences", "erase.inLine")
-    @js.native
-    def inLine(): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.inLine")
-    @js.native
-    def inLine_0(n: `0`): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.inLine")
-    @js.native
-    def inLine_1(n: `1`): String = js.native
-    @JSImport("ansi-escape-sequences", "erase.inLine")
-    @js.native
-    def inLine_2(n: `2`): String = js.native
+    @scala.inline
+    def inLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")().asInstanceOf[String]
+    
+    @scala.inline
+    def inLine_0(n: `0`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def inLine_1(n: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def inLine_2(n: `2`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("ansi-escape-sequences", "format")
-  @js.native
-  def format(str: String): String = js.native
-  @JSImport("ansi-escape-sequences", "format")
-  @js.native
-  def format(str: String, styles: js.Array[Style_]): String = js.native
-  @JSImport("ansi-escape-sequences", "format")
-  @js.native
-  def format(str: String, styles: Style_): String = js.native
+  @scala.inline
+  def format(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(str: String, styles: js.Array[Style_]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(str: String, styles: Style_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Inlined {[ K in ansi-escape-sequences.ansi-escape-sequences.Style ]: string} */
   object style {
@@ -389,12 +378,10 @@ object mod {
     def yellow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ansi-escape-sequences", "styles")
-  @js.native
-  def styles(styles: js.Array[Style_]): String = js.native
-  @JSImport("ansi-escape-sequences", "styles")
-  @js.native
-  def styles(styles: Style_): String = js.native
+  @scala.inline
+  def styles(styles: js.Array[Style_]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(styles.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def styles(styles: Style_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(styles.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiEscapeSequences.ansiEscapeSequencesStrings.reset

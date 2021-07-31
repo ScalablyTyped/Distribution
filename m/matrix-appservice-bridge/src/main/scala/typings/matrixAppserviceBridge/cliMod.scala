@@ -5,14 +5,13 @@ import typings.matrixAppserviceBridge.anon.AffectsRegistration
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cliMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli")
   @js.native
-  class Cli[ConfigType /* <: Record[String, _] */] protected () extends StObject {
+  class Cli[ConfigType /* <: Record[String, js.Any] */] protected () extends StObject {
     /**
       * @constructor
       * @param opts CLI options
@@ -107,22 +106,21 @@ object cliMod {
     def DEFAULT_WATCH_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WATCH_INTERVAL")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CliArgs extends StObject {
     
-    var config: String = js.native
+    var config: String
     
-    var file: String = js.native
+    var file: String
     
-    var `generate-registration`: Boolean = js.native
+    var `generate-registration`: Boolean
     
-    var help: Boolean = js.native
+    var help: Boolean
     
-    var localpart: String = js.native
+    var localpart: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object CliArgs {
     
@@ -170,7 +168,7 @@ object cliMod {
   }
   
   @js.native
-  trait CliOpts[ConfigType /* <: Record[String, _] */] extends StObject {
+  trait CliOpts[ConfigType /* <: Record[String, js.Any] */] extends StObject {
     
     var bridgeConfig: js.UndefOr[AffectsRegistration] = js.native
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMigrationJobsResponse extends StObject {
   
   /** The list of migration jobs objects. */
-  var migrationJobs: js.UndefOr[js.Array[MigrationJob]] = js.native
+  var migrationJobs: js.UndefOr[js.Array[MigrationJob]] = js.undefined
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListMigrationJobsResponse {
   

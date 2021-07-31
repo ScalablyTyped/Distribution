@@ -3,7 +3,6 @@ package typings.auth0.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "ManagementClient")
@@ -21,10 +20,10 @@ class ManagementClient[A, U] protected () extends StObject {
   def assignRolestoUser(params: ObjectWithId, data: RolesData): js.Promise[Unit] = js.native
   def assignRolestoUser(params: ObjectWithId, data: RolesData, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   
-  def blacklistToken(token: Token): js.Promise[_] = js.native
+  def blacklistToken(token: Token): js.Promise[js.Any] = js.native
   def blacklistToken(token: Token, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   
-  def configureEmailProvider(data: Data): js.Promise[_] = js.native
+  def configureEmailProvider(data: Data): js.Promise[js.Any] = js.native
   def configureEmailProvider(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   
   def createClient(data: Data): js.Promise[Client] = js.native
@@ -47,12 +46,12 @@ class ManagementClient[A, U] protected () extends StObject {
   def createEmailTemplate(data: Data, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   // Templates
   @JSName("createEmailTemplate")
-  def createEmailTemplate_Promise(data: Data): js.Promise[_] = js.native
+  def createEmailTemplate_Promise(data: Data): js.Promise[js.Any] = js.native
   
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions): Unit = js.native
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("createEmailVerificationTicket")
-  def createEmailVerificationTicket_Promise(data: EmailVerificationTicketOptions): js.Promise[_] = js.native
+  def createEmailVerificationTicket_Promise(data: EmailVerificationTicketOptions): js.Promise[js.Any] = js.native
   
   def createPasswordChangeTicket(params: PasswordChangeTicketParams): Unit = js.native
   def createPasswordChangeTicket(
@@ -100,7 +99,7 @@ class ManagementClient[A, U] protected () extends StObject {
   def deleteEmailProvider(): Unit = js.native
   def deleteEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("deleteEmailProvider")
-  def deleteEmailProvider_Promise(): js.Promise[_] = js.native
+  def deleteEmailProvider_Promise(): js.Promise[js.Any] = js.native
   
   def deleteResourceServer(params: ObjectWithId): Unit = js.native
   def deleteResourceServer(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
@@ -134,13 +133,13 @@ class ManagementClient[A, U] protected () extends StObject {
   def getActiveUsersCount(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Statistics
   @JSName("getActiveUsersCount")
-  def getActiveUsersCount_Promise(): js.Promise[_] = js.native
+  def getActiveUsersCount_Promise(): js.Promise[js.Any] = js.native
   
   def getBlacklistedTokens(): Unit = js.native
   def getBlacklistedTokens(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Tokens
   @JSName("getBlacklistedTokens")
-  def getBlacklistedTokens_Promise(): js.Promise[_] = js.native
+  def getBlacklistedTokens_Promise(): js.Promise[js.Any] = js.native
   
   def getClient(params: ClientParams): js.Promise[Client] = js.native
   def getClient(params: ClientParams, cb: js.Function2[/* err */ Error, /* client */ Client, Unit]): Unit = js.native
@@ -180,7 +179,7 @@ class ManagementClient[A, U] protected () extends StObject {
   def getCustomDomains(): js.Promise[js.Array[Domain]] = js.native
   def getCustomDomains(cb: js.Function2[/* err */ Error, /* data */ js.Array[Domain], Unit]): Unit = js.native
   
-  def getDailyStats(data: StatsParams): js.Promise[_] = js.native
+  def getDailyStats(data: StatsParams): js.Promise[js.Any] = js.native
   def getDailyStats(data: StatsParams, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   
   // Device Keys
@@ -191,12 +190,12 @@ class ManagementClient[A, U] protected () extends StObject {
   def getEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Providers
   @JSName("getEmailProvider")
-  def getEmailProvider_Promise(): js.Promise[_] = js.native
+  def getEmailProvider_Promise(): js.Promise[js.Any] = js.native
   
   def getEmailTemplate(data: Data): Unit = js.native
   def getEmailTemplate(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getEmailTemplate")
-  def getEmailTemplate_Promise(data: Data): js.Promise[_] = js.native
+  def getEmailTemplate_Promise(data: Data): js.Promise[js.Any] = js.native
   
   def getJob(params: ObjectWithId): Unit = js.native
   def getJob(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ Job, Unit]): Unit = js.native
@@ -208,12 +207,12 @@ class ManagementClient[A, U] protected () extends StObject {
   def getLog(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Logs
   @JSName("getLog")
-  def getLog_Promise(params: ObjectWithId): js.Promise[_] = js.native
+  def getLog_Promise(params: ObjectWithId): js.Promise[js.Any] = js.native
   
   def getLogs(): Unit = js.native
   def getLogs(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getLogs")
-  def getLogs_Promise(): js.Promise[_] = js.native
+  def getLogs_Promise(): js.Promise[js.Any] = js.native
   
   def getPermissionsInRole(params: GetRolePermissionsData): js.Promise[js.Array[Permission]] = js.native
   def getPermissionsInRole(params: GetRolePermissionsDataPaged): js.Promise[PermissionPage] = js.native
@@ -267,7 +266,7 @@ class ManagementClient[A, U] protected () extends StObject {
   def getTenantSettings(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Tenant
   @JSName("getTenantSettings")
-  def getTenantSettings_Promise(): js.Promise[_] = js.native
+  def getTenantSettings_Promise(): js.Promise[js.Any] = js.native
   
   def getUser(params: ObjectWithId): Unit = js.native
   def getUser(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* user */ User[A, U], Unit]): Unit = js.native
@@ -309,10 +308,7 @@ class ManagementClient[A, U] protected () extends StObject {
   
   def getUsers(): Unit = js.native
   def getUsers(cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
-  def getUsers(
-    params: js.UndefOr[scala.Nothing],
-    cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]
-  ): Unit = js.native
+  def getUsers(params: Unit, cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
   def getUsers(params: GetUsersData): Unit = js.native
   // Users
   def getUsers(params: GetUsersDataPaged): js.Promise[UserPage[A, U]] = js.native
@@ -347,7 +343,7 @@ class ManagementClient[A, U] protected () extends StObject {
   @JSName("importUsers")
   def importUsers_Promise(data: ImportUsersOptions): js.Promise[ImportUsersJob] = js.native
   
-  def linkUsers(userId: String, params: LinkAccountsParams): js.Promise[_] = js.native
+  def linkUsers(userId: String, params: LinkAccountsParams): js.Promise[js.Any] = js.native
   def linkUsers(
     userId: String,
     params: LinkAccountsParams,
@@ -368,11 +364,11 @@ class ManagementClient[A, U] protected () extends StObject {
   @JSName("sendEmailVerification")
   def sendEmailVerification_Promise(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
   
-  def setRulesConfig(params: RulesConfig, data: RulesConfigData): js.Promise[RulesConfig with RulesConfigData] = js.native
+  def setRulesConfig(params: RulesConfig, data: RulesConfigData): js.Promise[RulesConfig & RulesConfigData] = js.native
   def setRulesConfig(
     params: RulesConfig,
     data: RulesConfigData,
-    cb: js.Function2[/* err */ Error, /* rulesConfig */ RulesConfig with RulesConfigData, Unit]
+    cb: js.Function2[/* err */ Error, /* rulesConfig */ RulesConfig & RulesConfigData, Unit]
   ): Unit = js.native
   
   def unblockUser(params: ObjectWithId): js.Promise[String] = js.native
@@ -410,12 +406,12 @@ class ManagementClient[A, U] protected () extends StObject {
   def updateEmailProvider(params: js.Object, data: Data): Unit = js.native
   def updateEmailProvider(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateEmailProvider")
-  def updateEmailProvider_Promise(params: js.Object, data: Data): js.Promise[_] = js.native
+  def updateEmailProvider_Promise(params: js.Object, data: Data): js.Promise[js.Any] = js.native
   
   def updateEmailTemplate(params: js.Object, data: Data): Unit = js.native
   def updateEmailTemplate(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateEmailTemplate")
-  def updateEmailTemplate_Promise(params: js.Object, data: Data): js.Promise[_] = js.native
+  def updateEmailTemplate_Promise(params: js.Object, data: Data): js.Promise[js.Any] = js.native
   
   def updateResourceServer(params: ObjectWithId, data: ResourceServer): Unit = js.native
   def updateResourceServer(
@@ -439,7 +435,7 @@ class ManagementClient[A, U] protected () extends StObject {
   def updateTenantSettings(data: Data): Unit = js.native
   def updateTenantSettings(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateTenantSettings")
-  def updateTenantSettings_Promise(data: Data): js.Promise[_] = js.native
+  def updateTenantSettings_Promise(data: Data): js.Promise[js.Any] = js.native
   
   def updateUser(params: ObjectWithId, data: UpdateUserData): js.Promise[User[A, U]] = js.native
   def updateUser(

@@ -2,17 +2,15 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationOptions extends StObject {
   
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object GeolocationOptions {
   

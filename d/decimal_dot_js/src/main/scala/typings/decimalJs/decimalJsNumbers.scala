@@ -6,14 +6,14 @@ import typings.decimalJs.mod.Decimal.Modulo
 import typings.decimalJs.mod.Decimal.Rounding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decimalJsNumbers {
   
   @js.native
   sealed trait `0`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -22,7 +22,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `1`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -31,7 +32,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `2`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -40,7 +42,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `3`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -49,7 +52,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `4`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -58,7 +62,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `5`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -67,7 +72,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `6`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -76,7 +82,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `7`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -85,7 +92,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `8`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with DecimalRounding
        with Modulo
        with Rounding
@@ -94,7 +102,8 @@ object decimalJsNumbers {
   
   @js.native
   sealed trait `9`
-    extends DecimalModulo
+    extends StObject
+       with DecimalModulo
        with Modulo
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]

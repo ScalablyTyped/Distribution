@@ -2,15 +2,13 @@ package typings.maskedinput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskedInputDefaults extends StObject {
   
-  var aliases: js.Any = js.native
+  var aliases: js.Any
   
-  var definitions: js.Any = js.native
+  var definitions: js.Any
 }
 object MaskedInputDefaults {
   

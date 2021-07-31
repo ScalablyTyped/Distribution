@@ -2,13 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PressableStateCallbackType extends StObject {
   
-  val pressed: Boolean = js.native
+  val pressed: Boolean
 }
 object PressableStateCallbackType {
   

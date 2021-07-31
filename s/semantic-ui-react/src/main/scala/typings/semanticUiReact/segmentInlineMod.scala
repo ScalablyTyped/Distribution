@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentInlineMod extends Shortcut {
@@ -18,9 +17,9 @@ object segmentInlineMod extends Shortcut {
   
   type SegmentInlineComponent = StatelessComponent[SegmentInlineProps]
   
-  @js.native
   trait SegmentInlineProps
-    extends StrictSegmentInlineProps
+    extends StObject
+       with StrictSegmentInlineProps
        with /* key */ StringDictionary[js.Any]
   object SegmentInlineProps {
     
@@ -31,20 +30,19 @@ object segmentInlineMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSegmentInlineProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
   }
   object StrictSegmentInlineProps {
     

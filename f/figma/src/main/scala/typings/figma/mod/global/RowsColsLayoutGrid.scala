@@ -8,30 +8,30 @@ import typings.figma.figmaStrings.ROWS
 import typings.figma.figmaStrings.STRETCH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RowsColsLayoutGrid extends LayoutGrid {
+trait RowsColsLayoutGrid
+  extends StObject
+     with LayoutGrid {
   
-  val alignment: MIN | MAX | STRETCH | CENTER = js.native
+  val alignment: MIN | MAX | STRETCH | CENTER
   
-  val color: js.UndefOr[RGBA] = js.native
+  val color: js.UndefOr[RGBA] = js.undefined
   
-  val count: Double = js.native
+  val count: Double
   
-  val gutterSize: Double = js.native
+  val gutterSize: Double
   
   // Not set for alignment: "STRETCH"
-  val offset: js.UndefOr[Double] = js.native
+  val offset: js.UndefOr[Double] = js.undefined
   
-  val pattern: ROWS | COLUMNS = js.native
+  val pattern: ROWS | COLUMNS
   
   // Infinity when "Auto" is set in the UI
-  val sectionSize: js.UndefOr[Double] = js.native
+  val sectionSize: js.UndefOr[Double] = js.undefined
   
   // Not set for alignment: "CENTER"
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object RowsColsLayoutGrid {
   

@@ -2,36 +2,34 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The important people, places, geopolitical entities and other types of entities in your content. */
-@js.native
 trait EntitiesResult extends StObject {
   
   /** How many times the entity was mentioned in the text. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** Disambiguation information for the entity. */
-  var disambiguation: js.UndefOr[DisambiguationResult] = js.native
+  var disambiguation: js.UndefOr[DisambiguationResult] = js.undefined
   
   /** Emotion analysis results for the entity, enabled with the `emotion` option. */
-  var emotion: js.UndefOr[EmotionScores] = js.native
+  var emotion: js.UndefOr[EmotionScores] = js.undefined
   
   /** Entity mentions and locations. */
-  var mentions: js.UndefOr[js.Array[EntityMention]] = js.native
+  var mentions: js.UndefOr[js.Array[EntityMention]] = js.undefined
   
   /** Relevance score from 0 to 1. Higher values indicate greater relevance. */
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
   /** Sentiment analysis results for the entity, enabled with the `sentiment` option. */
-  var sentiment: js.UndefOr[FeatureSentimentResults] = js.native
+  var sentiment: js.UndefOr[FeatureSentimentResults] = js.undefined
   
   /** The name of the entity. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** Entity type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object EntitiesResult {
   

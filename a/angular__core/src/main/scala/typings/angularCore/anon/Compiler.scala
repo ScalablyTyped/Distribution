@@ -4,19 +4,17 @@ import typings.angularCompiler.mod.AotCompiler
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compiler extends StObject {
   
-  var compiler: AotCompiler = js.native
+  var compiler: AotCompiler
   
-  var host: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ js.Any = js.native
+  var host: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ js.Any
   
-  var ngcProgram: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_compiler-cli.Program */ js.Any = js.native
+  var ngcProgram: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_compiler-cli.Program */ js.Any
   
-  var program: Program = js.native
+  var program: Program
 }
 object Compiler {
   

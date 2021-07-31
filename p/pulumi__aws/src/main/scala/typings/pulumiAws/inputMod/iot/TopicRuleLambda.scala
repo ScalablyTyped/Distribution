@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleLambda extends StObject {
   
   /**
     * The ARN of the Lambda function.
     */
-  var functionArn: Input[String] = js.native
+  var functionArn: Input[String]
 }
 object TopicRuleLambda {
   

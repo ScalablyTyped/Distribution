@@ -5,25 +5,23 @@ import typings.plugapi.mod.Media
 import typings.plugapi.mod.User.DJ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Advance extends StObject {
   
-  var currentDJ: DJ = js.native
+  var currentDJ: DJ
   
-  var djs: js.Array[DJ] = js.native
+  var djs: js.Array[DJ]
   
-  var historyID: String = js.native
+  var historyID: String
   
-  var lastPlay: LastPlay = js.native
+  var lastPlay: LastPlay
   
-  var media: Media = js.native
+  var media: Media
   
-  var playlistID: Double = js.native
+  var playlistID: Double
   
-  var startTime: String = js.native
+  var startTime: String
 }
 object Advance {
   

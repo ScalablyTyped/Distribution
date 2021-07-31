@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudhsmv2 {
   
-  @js.native
   trait ClusterClusterCertificate extends StObject {
     
-    var awsHardwareCertificate: js.UndefOr[Input[String]] = js.native
+    var awsHardwareCertificate: js.UndefOr[Input[String]] = js.undefined
     
-    var clusterCertificate: js.UndefOr[Input[String]] = js.native
+    var clusterCertificate: js.UndefOr[Input[String]] = js.undefined
     
-    var clusterCsr: js.UndefOr[Input[String]] = js.native
+    var clusterCsr: js.UndefOr[Input[String]] = js.undefined
     
-    var hsmCertificate: js.UndefOr[Input[String]] = js.native
+    var hsmCertificate: js.UndefOr[Input[String]] = js.undefined
     
-    var manufacturerHardwareCertificate: js.UndefOr[Input[String]] = js.native
+    var manufacturerHardwareCertificate: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterClusterCertificate {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAssetPropertyValueEntry extends StObject {
   
   /**
     * The ID of the AWS IoT SiteWise asset. You must specify either a propertyAlias or both an aliasId and a propertyId. Accepts substitution templates.
     */
-  var assetId: js.UndefOr[AssetId] = js.native
+  var assetId: js.UndefOr[AssetId] = js.undefined
   
   /**
     * Optional. A unique identifier for this entry that you can define to better track which message caused an error in case of failure. Accepts substitution templates. Defaults to a new UUID.
     */
-  var entryId: js.UndefOr[AssetPropertyEntryId] = js.native
+  var entryId: js.UndefOr[AssetPropertyEntryId] = js.undefined
   
   /**
     * The name of the property alias associated with your asset property. You must specify either a propertyAlias or both an aliasId and a propertyId. Accepts substitution templates.
     */
-  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.native
+  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
   /**
     * The ID of the asset's property. You must specify either a propertyAlias or both an aliasId and a propertyId. Accepts substitution templates.
     */
-  var propertyId: js.UndefOr[AssetPropertyId] = js.native
+  var propertyId: js.UndefOr[AssetPropertyId] = js.undefined
   
   /**
     * A list of property values to insert that each contain timestamp, quality, and value (TQV) information.
     */
-  var propertyValues: AssetPropertyValueList = js.native
+  var propertyValues: AssetPropertyValueList
 }
 object PutAssetPropertyValueEntry {
   

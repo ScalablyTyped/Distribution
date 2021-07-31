@@ -2,96 +2,77 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispatcher {
   
-  @JSGlobal("KSR.dispatcher.ds_is_from_list")
+  @JSGlobal("KSR.dispatcher")
   @js.native
-  def dsIsFromList(group: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.dispatcher.ds_is_from_list_mode")
-  @js.native
-  def dsIsFromListMode(vset: Double, vmode: Double): Double = js.native
+  @scala.inline
+  def dsIsFromList(group: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_is_from_list")(group.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_is_from_list_uri")
-  @js.native
-  def dsIsFromListUri(vset: Double, vmode: Double, vuri: String): Double = js.native
+  @scala.inline
+  def dsIsFromListMode(vset: Double, vmode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_is_from_list_mode")(vset.asInstanceOf[js.Any], vmode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_is_from_lists")
-  @js.native
-  def dsIsFromLists(): Double = js.native
+  @scala.inline
+  def dsIsFromListUri(vset: Double, vmode: Double, vuri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_is_from_list_uri")(vset.asInstanceOf[js.Any], vmode.asInstanceOf[js.Any], vuri.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_list_exists")
-  @js.native
-  def dsListExists(set: Double): Double = js.native
+  @scala.inline
+  def dsIsFromLists(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_is_from_lists")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_load_unset")
-  @js.native
-  def dsLoadUnset(): Double = js.native
+  @scala.inline
+  def dsListExists(set: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_list_exists")(set.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_load_update")
-  @js.native
-  def dsLoadUpdate(): Double = js.native
+  @scala.inline
+  def dsLoadUnset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_load_unset")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_mark_dst")
-  @js.native
-  def dsMarkDst(): Double = js.native
+  @scala.inline
+  def dsLoadUpdate(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_load_update")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_mark_dst_state")
-  @js.native
-  def dsMarkDstState(sval: String): Double = js.native
+  @scala.inline
+  def dsMarkDst(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_mark_dst")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_next_domain")
-  @js.native
-  def dsNextDomain(): Double = js.native
+  @scala.inline
+  def dsMarkDstState(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_mark_dst_state")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_next_dst")
-  @js.native
-  def dsNextDst(): Double = js.native
+  @scala.inline
+  def dsNextDomain(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_next_domain")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_reload")
-  @js.native
-  def dsReload(): Double = js.native
+  @scala.inline
+  def dsNextDst(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_next_dst")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select")
-  @js.native
-  def dsSelect(set: Double, alg: Double): Double = js.native
+  @scala.inline
+  def dsReload(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_reload")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_domain")
-  @js.native
-  def dsSelectDomain(set: Double, alg: Double): Double = js.native
+  @scala.inline
+  def dsSelect(set: Double, alg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_domain_limit")
-  @js.native
-  def dsSelectDomainLimit(set: Double, alg: Double, limit: Double): Double = js.native
+  @scala.inline
+  def dsSelectDomain(set: Double, alg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_domain")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_dst")
-  @js.native
-  def dsSelectDst(set: Double, alg: Double): Double = js.native
+  @scala.inline
+  def dsSelectDomainLimit(set: Double, alg: Double, limit: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_domain_limit")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_dst_limit")
-  @js.native
-  def dsSelectDstLimit(set: Double, alg: Double, limit: Double): Double = js.native
+  @scala.inline
+  def dsSelectDst(set: Double, alg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_dst")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_limit")
-  @js.native
-  def dsSelectLimit(set: Double, alg: Double, limit: Double): Double = js.native
+  @scala.inline
+  def dsSelectDstLimit(set: Double, alg: Double, limit: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_dst_limit")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_routes")
-  @js.native
-  def dsSelectRoutes(srules: String, smode: String): Double = js.native
+  @scala.inline
+  def dsSelectLimit(set: Double, alg: Double, limit: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_limit")(set.asInstanceOf[js.Any], alg.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_select_routes_limit")
-  @js.native
-  def dsSelectRoutesLimit(srules: String, smode: String, rlimit: Double): Double = js.native
+  @scala.inline
+  def dsSelectRoutes(srules: String, smode: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_routes")(srules.asInstanceOf[js.Any], smode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_set_domain")
-  @js.native
-  def dsSetDomain(): Double = js.native
+  @scala.inline
+  def dsSelectRoutesLimit(srules: String, smode: String, rlimit: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ds_select_routes_limit")(srules.asInstanceOf[js.Any], smode.asInstanceOf[js.Any], rlimit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dispatcher.ds_set_dst")
-  @js.native
-  def dsSetDst(): Double = js.native
+  @scala.inline
+  def dsSetDomain(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_set_domain")().asInstanceOf[Double]
+  
+  @scala.inline
+  def dsSetDst(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds_set_dst")().asInstanceOf[Double]
 }

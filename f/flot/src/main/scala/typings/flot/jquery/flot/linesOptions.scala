@@ -2,13 +2,13 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait linesOptions extends seriesTypeBase {
+trait linesOptions
+  extends StObject
+     with seriesTypeBase {
   
-  var steps: js.UndefOr[Boolean] = js.native
+  var steps: js.UndefOr[Boolean] = js.undefined
 }
 object linesOptions {
   

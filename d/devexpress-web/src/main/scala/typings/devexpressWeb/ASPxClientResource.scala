@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Resource class.
   */
-@js.native
 trait ASPxClientResource extends StObject {
   
   /**
     * Returns the resource's caption.
     */
-  def GetCaption(): String = js.native
+  def GetCaption(): String
   
   /**
     * Gets the resource's color.
     */
-  def GetColor(): String = js.native
+  def GetColor(): String
   
   /**
     * Gets the ID of the client appointment.
     */
-  def GetId(): String = js.native
+  def GetId(): String
   
   /**
     * Returns the resource's caption.
     */
-  var caption: String = js.native
+  var caption: String
   
   /**
     * Gets the resource's color.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Gets the resource ID.
     */
-  var resourceId: String = js.native
+  var resourceId: String
 }
 object ASPxClientResource {
   

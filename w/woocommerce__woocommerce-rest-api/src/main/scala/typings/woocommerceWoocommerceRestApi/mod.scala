@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`Options Error`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@woocommerce/woocommerce-rest-api", JSImport.Default)
   @js.native
-  class default protected () extends WooCommerceRestApi {
+  class default protected ()
+    extends StObject
+       with WooCommerceRestApi {
     def this(opt: WooCommerceRestApi) = this()
     /**
       * Class constructor.
@@ -58,7 +59,7 @@ object mod {
     /**
       * Do requests
       */
-    def _request(method: WooCommerceRestApiMethod, endpoint: String, data: js.Any, params: js.Any): js.Promise[_] = js.native
+    def _request(method: WooCommerceRestApiMethod, endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Set default options
@@ -76,36 +77,36 @@ object mod {
     /**
       * DELETE requests
       */
-    def delete(endpoint: String): js.Promise[_] = js.native
-    def delete(endpoint: String, params: js.Any): js.Promise[_] = js.native
+    def delete(endpoint: String): js.Promise[js.Any] = js.native
+    def delete(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
     
     var encoding: WooCommerceRestApiEncoding = js.native
     
     /**
       * GET requests
       */
-    def get(endpoint: String): js.Promise[_] = js.native
-    def get(endpoint: String, params: js.Any): js.Promise[_] = js.native
+    def get(endpoint: String): js.Promise[js.Any] = js.native
+    def get(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * OPTIONS requests
       */
-    def options(endpoint: String): js.Promise[_] = js.native
-    def options(endpoint: String, params: js.Any): js.Promise[_] = js.native
+    def options(endpoint: String): js.Promise[js.Any] = js.native
+    def options(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
     
     var port: Double = js.native
     
     /**
       * POST requests
       */
-    def post(endpoint: String, data: js.Any): js.Promise[_] = js.native
-    def post(endpoint: String, data: js.Any, params: js.Any): js.Promise[_] = js.native
+    def post(endpoint: String, data: js.Any): js.Promise[js.Any] = js.native
+    def post(endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * PUT requests
       */
-    def put(endpoint: String, data: js.Any): js.Promise[_] = js.native
-    def put(endpoint: String, data: js.Any, params: js.Any): js.Promise[_] = js.native
+    def put(endpoint: String, data: js.Any): js.Promise[js.Any] = js.native
+    def put(endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
     
     var queryStringAuth: Boolean = js.native
     
@@ -158,38 +159,37 @@ object mod {
     def put: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put = "put".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put]
   }
   
-  @js.native
   trait WooCommerceRestApiOptions extends StObject {
     
     /* Define the custom Axios config, also override this library options */
-    var axiosConfig: js.UndefOr[js.Any] = js.native
+    var axiosConfig: js.UndefOr[js.Any] = js.undefined
     
     /* Your API consumer key */
-    var consumerKey: String = js.native
+    var consumerKey: String
     
     /* Your API consumer secret */
-    var consumerSecret: String = js.native
+    var consumerSecret: String
     
     /* Encoding, default is 'utf-8' */
-    var encoding: js.UndefOr[WooCommerceRestApiEncoding] = js.native
+    var encoding: js.UndefOr[WooCommerceRestApiEncoding] = js.undefined
     
     /* Provide support for URLs with ports, eg: `8080` */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /* When `true` and using under HTTPS force Basic Authentication as query string, default is `false` */
-    var queryStringAuth: js.UndefOr[Boolean] = js.native
+    var queryStringAuth: js.UndefOr[Boolean] = js.undefined
     
     /* Define the request timeout */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /* Your Store URL, example: http://woo.dev/ */
-    var url: String = js.native
+    var url: String
     
     /* API version, default is `v3` */
-    var version: js.UndefOr[WooCommerceRestApiVersion] = js.native
+    var version: js.UndefOr[WooCommerceRestApiVersion] = js.undefined
     
     /* Custom WP REST API URL prefix, used to support custom prefixes created with the `rest_url_prefix filter` */
-    var wpAPIPrefix: js.UndefOr[String] = js.native
+    var wpAPIPrefix: js.UndefOr[String] = js.undefined
   }
   object WooCommerceRestApiOptions {
     

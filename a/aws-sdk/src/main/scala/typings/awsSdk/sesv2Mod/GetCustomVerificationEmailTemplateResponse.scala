@@ -2,41 +2,39 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCustomVerificationEmailTemplateResponse extends StObject {
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
     */
-  var FailureRedirectionURL: js.UndefOr[typings.awsSdk.sesv2Mod.FailureRedirectionURL] = js.native
+  var FailureRedirectionURL: js.UndefOr[typings.awsSdk.sesv2Mod.FailureRedirectionURL] = js.undefined
   
   /**
     * The email address that the custom verification email is sent from.
     */
-  var FromEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is successfully verified.
     */
-  var SuccessRedirectionURL: js.UndefOr[typings.awsSdk.sesv2Mod.SuccessRedirectionURL] = js.native
+  var SuccessRedirectionURL: js.UndefOr[typings.awsSdk.sesv2Mod.SuccessRedirectionURL] = js.undefined
   
   /**
     * The content of the custom verification email.
     */
-  var TemplateContent: js.UndefOr[typings.awsSdk.sesv2Mod.TemplateContent] = js.native
+  var TemplateContent: js.UndefOr[typings.awsSdk.sesv2Mod.TemplateContent] = js.undefined
   
   /**
     * The name of the custom verification email template.
     */
-  var TemplateName: js.UndefOr[EmailTemplateName] = js.native
+  var TemplateName: js.UndefOr[EmailTemplateName] = js.undefined
   
   /**
     * The subject line of the custom verification email.
     */
-  var TemplateSubject: js.UndefOr[EmailTemplateSubject] = js.native
+  var TemplateSubject: js.UndefOr[EmailTemplateSubject] = js.undefined
 }
 object GetCustomVerificationEmailTemplateResponse {
   

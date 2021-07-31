@@ -4,13 +4,15 @@ import typings.ol.extentMod.Extent
 import typings.ol.featureMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureloaderMod {
   
-  @JSImport("ol/featureloader", "loadFeaturesXhr")
+  @JSImport("ol/featureloader", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def loadFeaturesXhr(
     url: String,
     format: default,
@@ -19,9 +21,8 @@ object featureloaderMod {
       /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default], 
       Unit
     ]
-  ): FeatureLoader = js.native
-  @JSImport("ol/featureloader", "loadFeaturesXhr")
-  @js.native
+  ): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
+  @scala.inline
   def loadFeaturesXhr(
     url: FeatureUrlFunction,
     format: default,
@@ -30,18 +31,15 @@ object featureloaderMod {
       /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default], 
       Unit
     ]
-  ): FeatureLoader = js.native
+  ): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
   
-  @JSImport("ol/featureloader", "setWithCredentials")
-  @js.native
-  def setWithCredentials(xhrWithCredentials: Boolean): Unit = js.native
+  @scala.inline
+  def setWithCredentials(xhrWithCredentials: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/featureloader", "xhr")
-  @js.native
-  def xhr(url: String, format: default): FeatureLoader = js.native
-  @JSImport("ol/featureloader", "xhr")
-  @js.native
-  def xhr(url: FeatureUrlFunction, format: default): FeatureLoader = js.native
+  @scala.inline
+  def xhr(url: String, format: default): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
+  @scala.inline
+  def xhr(url: FeatureUrlFunction, format: default): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
   
   type FeatureLoader = js.ThisFunction3[
     /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.olVectorTileMod.default, 

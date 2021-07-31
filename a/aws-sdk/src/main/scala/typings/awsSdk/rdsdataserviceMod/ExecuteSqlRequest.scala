@@ -2,36 +2,34 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteSqlRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the secret that enables access to the DB cluster.
     */
-  var awsSecretStoreArn: Arn = js.native
+  var awsSecretStoreArn: Arn
   
   /**
     * The name of the database.
     */
-  var database: js.UndefOr[DbName] = js.native
+  var database: js.UndefOr[DbName] = js.undefined
   
   /**
     * The ARN of the Aurora Serverless DB cluster.
     */
-  var dbClusterOrInstanceArn: Arn = js.native
+  var dbClusterOrInstanceArn: Arn
   
   /**
     * The name of the database schema.
     */
-  var schema: js.UndefOr[DbName] = js.native
+  var schema: js.UndefOr[DbName] = js.undefined
   
   /**
     * One or more SQL statements to run on the DB cluster. You can separate SQL statements from each other with a semicolon (;). Any valid SQL statement is permitted, including data definition, data manipulation, and commit statements. 
     */
-  var sqlStatements: SqlStatement = js.native
+  var sqlStatements: SqlStatement
 }
 object ExecuteSqlRequest {
   

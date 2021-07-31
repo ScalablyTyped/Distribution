@@ -7,21 +7,24 @@ import typings.terminalKit.anon.Shrink
 import typings.terminalKit.anon.`0`
 import typings.terminalKit.rectMod.AbsoluteOptions
 import typings.terminalKit.rectMod.Region
-import typings.terminalKit.rectMod.^
 import typings.terminalKit.screenBufferMod.Attributes
 import typings.terminalKit.screenBufferMod.Options
 import typings.terminalKit.terminalMod.CreateOptions
 import typings.terminalKit.terminalMod.Terminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("terminal-kit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("terminal-kit", "Rect")
   @js.native
-  class Rect protected () extends ^ {
+  class Rect protected ()
+    extends typings.terminalKit.rectMod.^ {
     def this(options: AbsoluteOptions) = this()
     def this(options: typings.terminalKit.rectMod.Rect) = this()
     def this(options: Region) = this()
@@ -32,10 +35,13 @@ object mod {
   }
   object Rect {
     
-    /* static member */
-    @JSImport("terminal-kit", "Rect.wrappingRect")
+    @JSImport("terminal-kit", "Rect")
     @js.native
-    def wrappingRect(params: DstRect): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def wrappingRect(params: DstRect): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappingRect")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("terminal-kit", "ScreenBuffer")
@@ -46,24 +52,24 @@ object mod {
   }
   object ScreenBuffer {
     
-    /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.attr2object")
+    @JSImport("terminal-kit", "ScreenBuffer")
     @js.native
-    def attr2object(attrFlags: Double): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.create")
-    @js.native
-    def create(options: Options): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
+    @scala.inline
+    def attr2object(attrFlags: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attr2object")(attrFlags.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.createFromString")
-    @js.native
-    def createFromString(options: Attr, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
+    @scala.inline
+    def create(options: Options): typings.terminalKit.screenBufferMod.ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
     
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.loadImage")
-    @js.native
+    @scala.inline
+    def createFromString(options: Attr, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
+    
+    /* static member */
+    @scala.inline
     def loadImage(
       url: String,
       calback: js.Function2[
@@ -71,25 +77,22 @@ object mod {
           /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.^], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.loadImage")
-    @js.native
+    @scala.inline
     def loadImage(
       url: String,
       options: Shrink,
       calback: js.Function2[/* error */ js.Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.loadSync")
-    @js.native
-    def loadSync(filepath: String): typings.terminalKit.screenBufferMod.ScreenBuffer = js.native
+    @scala.inline
+    def loadSync(filepath: String): typings.terminalKit.screenBufferMod.ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
     
     /* static member */
-    @JSImport("terminal-kit", "ScreenBuffer.object2attr")
-    @js.native
-    def object2attr(attrObject: Attributes): Unit = js.native
+    @scala.inline
+    def object2attr(attrObject: Attributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("object2attr")(attrObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("terminal-kit", "ScreenBufferHD")
@@ -101,9 +104,12 @@ object mod {
   }
   object ScreenBufferHD {
     
-    /* static member */
-    @JSImport("terminal-kit", "ScreenBufferHD.loadImage")
+    @JSImport("terminal-kit", "ScreenBufferHD")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def loadImage(
       url: String,
       calback: js.Function2[
@@ -111,10 +117,9 @@ object mod {
           /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.ScreenBufferHD], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /* static member */
-    @JSImport("terminal-kit", "ScreenBufferHD.loadImage")
-    @js.native
+    @scala.inline
     def loadImage(
       url: String,
       options: `0`,
@@ -123,7 +128,7 @@ object mod {
           /* image */ typings.terminalKit.screenBufferHDMod.ScreenBufferHD, 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object Terminal_ {
@@ -141,73 +146,56 @@ object mod {
     def this(options: typings.terminalKit.textBufferMod.Options) = this()
   }
   
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(array: js.Array[String], startString: String): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(
-    array: js.Array[String],
-    startString: String,
-    returnAlternatives: js.UndefOr[scala.Nothing],
-    prefix: js.UndefOr[scala.Nothing],
-    postfix: String
-  ): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(
-    array: js.Array[String],
-    startString: String,
-    returnAlternatives: js.UndefOr[scala.Nothing],
-    prefix: String
-  ): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(
-    array: js.Array[String],
-    startString: String,
-    returnAlternatives: js.UndefOr[scala.Nothing],
-    prefix: String,
-    postfix: String
-  ): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(array: js.Array[String], startString: String, returnAlternatives: Boolean): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(
-    array: js.Array[String],
-    startString: String,
-    returnAlternatives: Boolean,
-    prefix: js.UndefOr[scala.Nothing],
-    postfix: String
-  ): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
-  def autoComplete(array: js.Array[String], startString: String, returnAlternatives: Boolean, prefix: String): String = js.native
-  @JSImport("terminal-kit", "autoComplete")
-  @js.native
+  @scala.inline
+  def autoComplete(array: js.Array[String], startString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(array: js.Array[String], startString: String, returnAlternatives: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(array: js.Array[String], startString: String, returnAlternatives: Boolean, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def autoComplete(
     array: js.Array[String],
     startString: String,
     returnAlternatives: Boolean,
     prefix: String,
     postfix: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], postfix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(
+    array: js.Array[String],
+    startString: String,
+    returnAlternatives: Boolean,
+    prefix: Unit,
+    postfix: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], postfix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(array: js.Array[String], startString: String, returnAlternatives: Unit, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(
+    array: js.Array[String],
+    startString: String,
+    returnAlternatives: Unit,
+    prefix: String,
+    postfix: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], postfix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoComplete(
+    array: js.Array[String],
+    startString: String,
+    returnAlternatives: Unit,
+    prefix: Unit,
+    postfix: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComplete")(array.asInstanceOf[js.Any], startString.asInstanceOf[js.Any], returnAlternatives.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], postfix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("terminal-kit", "createTerminal")
-  @js.native
-  def createTerminal(): Terminal = js.native
-  @JSImport("terminal-kit", "createTerminal")
-  @js.native
-  def createTerminal(createOptions: CreateOptions): Terminal = js.native
+  @scala.inline
+  def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(createOptions: CreateOptions): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(createOptions.asInstanceOf[js.Any]).asInstanceOf[Terminal]
   
-  @JSImport("terminal-kit", "getDetectedTerminal")
-  @js.native
-  def getDetectedTerminal(calback: js.Function2[/* error */ js.Any, /* term */ Terminal, Unit]): Unit = js.native
+  @scala.inline
+  def getDetectedTerminal(calback: js.Function2[/* error */ js.Any, /* term */ Terminal, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetectedTerminal")(calback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("terminal-kit", "getParentTerminalInfo")
-  @js.native
+  @scala.inline
   def getParentTerminalInfo(
     callback: js.Function4[
       /* error */ js.Any, 
@@ -216,25 +204,22 @@ object mod {
       /* pid */ js.UndefOr[Double], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentTerminalInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("terminal-kit", "realTerminal")
   @js.native
   val realTerminal: Terminal = js.native
   
-  @JSImport("terminal-kit", "stringWidth")
-  @js.native
-  def stringWidth(str: String): Double = js.native
+  @scala.inline
+  def stringWidth(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringWidth")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("terminal-kit", "stripEscapeSequences")
-  @js.native
-  def stripEscapeSequences(str: String): String = js.native
+  @scala.inline
+  def stripEscapeSequences(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripEscapeSequences")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("terminal-kit", "terminal")
   @js.native
   val terminal: Terminal = js.native
   
-  @JSImport("terminal-kit", "truncateString")
-  @js.native
-  def truncateString(str: String, maxWidth: Double): String = js.native
+  @scala.inline
+  def truncateString(str: String, maxWidth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateString")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * location. Consider using `CustomInfoType.Dictionary` for smaller
   * dictionaries that satisfy the size requirements.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
   
   /**
     * Field in a BigQuery table where each cell represents a dictionary phrase.
     */
-  var bigQueryField: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryField] = js.native
+  var bigQueryField: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryField] = js.undefined
   
   /**
     * Set of files containing newline-delimited lists of dictionary phrases.
     */
-  var cloudStorageFileSet: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStorageFileSet] = js.native
+  var cloudStorageFileSet: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStorageFileSet] = js.undefined
   
   /**
     * Location to store dictionary artifacts in Google Cloud Storage. These
@@ -32,7 +30,7 @@ trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
     * of these artifacts are modified, the dictionary is considered invalid and
     * can no longer be used.
     */
-  var outputPath: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStoragePath] = js.native
+  var outputPath: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStoragePath] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig {
   

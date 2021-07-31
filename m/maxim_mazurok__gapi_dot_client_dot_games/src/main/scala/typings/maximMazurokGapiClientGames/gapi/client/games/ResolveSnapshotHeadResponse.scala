@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveSnapshotHeadResponse extends StObject {
   
   /** The state of the snapshot. */
-  var snapshot: js.UndefOr[SnapshotExtended] = js.native
+  var snapshot: js.UndefOr[SnapshotExtended] = js.undefined
 }
 object ResolveSnapshotHeadResponse {
   

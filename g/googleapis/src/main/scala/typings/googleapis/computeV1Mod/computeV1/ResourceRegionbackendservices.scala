@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Regionbackendservices")
@@ -93,7 +92,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionbackendservicesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionbackendservicesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -184,7 +183,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBackendService] = js.native
   def get(callback: BodyResponseCallback[SchemaBackendService]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendService] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendService] = js.native
   def get(params: ParamsResourceRegionbackendservicesGet): GaxiosPromise[SchemaBackendService] = js.native
   def get(
     params: ParamsResourceRegionbackendservicesGet,
@@ -281,7 +280,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def getHealth(): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(callback: BodyResponseCallback[SchemaBackendServiceGroupHealth]): Unit = js.native
-  def getHealth(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
+  def getHealth(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(params: ParamsResourceRegionbackendservicesGethealth): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(
     params: ParamsResourceRegionbackendservicesGethealth,
@@ -379,7 +378,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionbackendservicesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionbackendservicesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -483,7 +482,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(callback: BodyResponseCallback[SchemaBackendServiceList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendServiceList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(params: ParamsResourceRegionbackendservicesList): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(
     params: ParamsResourceRegionbackendservicesList,
@@ -590,7 +589,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionbackendservicesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionbackendservicesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -692,7 +691,7 @@ class ResourceRegionbackendservices protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionbackendservicesUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionbackendservicesUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

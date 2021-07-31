@@ -2,13 +2,11 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkDoneProgress extends StObject {
   
-  var workDoneProgress: Boolean = js.native
+  var workDoneProgress: Boolean
 }
 object WorkDoneProgress {
   

@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,20 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;google.example.library.v1.LibraryService.CreateBook&quot;
   * allow_unregistered_calls: true
   */
-@js.native
 trait SchemaUsageRule extends StObject {
   
   /**
     * If true, the selected method allows unregistered calls, e.g. calls that
     * don&#39;t identify any user or application.
     */
-  var allowUnregisteredCalls: js.UndefOr[Boolean] = js.native
+  var allowUnregisteredCalls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Selects the methods to which this rule applies. Use &#39;*&#39; to
     * indicate all methods in all APIs.  Refer to selector for syntax details.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the selected method should skip service control and the control
@@ -40,7 +38,7 @@ trait SchemaUsageRule extends StObject {
     * flag is used by Google Cloud Endpoints to bypass checks for internal
     * methods, such as service health check methods.
     */
-  var skipServiceControl: js.UndefOr[Boolean] = js.native
+  var skipServiceControl: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaUsageRule {
   

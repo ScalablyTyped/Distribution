@@ -7,52 +7,50 @@ import typings.semanticUiTransition.semanticUiTransitionBooleans.`false`
 import typings.semanticUiTransition.semanticUiTransitionStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, keyof semantic-ui-transition.SemanticUI.TransitionSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var allowRepeats: js.UndefOr[Boolean] = js.native
+  var allowRepeats: js.UndefOr[Boolean] = js.undefined
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var displayType: js.UndefOr[`false` | String] = js.native
+  var displayType: js.UndefOr[`false` | String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onComplete: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onComplete: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onStart: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onStart: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
-  var reverse: js.UndefOr[auto | Boolean] = js.native
+  var reverse: js.UndefOr[auto | Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var useFailSafe: js.UndefOr[Boolean] = js.native
+  var useFailSafe: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

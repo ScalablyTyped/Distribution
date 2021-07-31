@@ -2,48 +2,46 @@ package typings.jqueryTinyscrollbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryTinyScrollbar {
   
-  @js.native
   trait JQueryTinyScrollbarOptions extends StObject {
     
     /**
       * Vertical or horizontal scroller? 'x' or 'y'. (default: 'x')
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /**
       * Enable mobile invert style scrolling. (default: false)
       */
-    var invertscroll: js.UndefOr[Boolean] = js.native
+    var invertscroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return scrollwheel event to browser if there is no more content. (default: true)
       */
-    var lockscroll: js.UndefOr[Boolean] = js.native
+    var lockscroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable the mousewheel. (default: true)
       */
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the size of the scrollbar to auto or a fixed number. (default: 'auto')
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set the size of the thumb to auto or a fixed number. (default: 'auto')
       */
-    var sizethumb: js.UndefOr[js.Any] = js.native
+    var sizethumb: js.UndefOr[js.Any] = js.undefined
     
     /**
       * How many pixels must the mouswheel scrolls at a time. (default: 40)
       */
-    var wheel: js.UndefOr[Double] = js.native
+    var wheel: js.UndefOr[Double] = js.undefined
   }
   object JQueryTinyScrollbarOptions {
     

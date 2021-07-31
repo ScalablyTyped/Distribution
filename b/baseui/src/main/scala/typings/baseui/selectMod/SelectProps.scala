@@ -20,41 +20,39 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectProps extends StObject {
   
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var backspaceClearsInputValue: js.UndefOr[Boolean] = js.native
+  var backspaceClearsInputValue: js.UndefOr[Boolean] = js.undefined
   
-  var backspaceRemoves: js.UndefOr[Boolean] = js.native
+  var backspaceRemoves: js.UndefOr[Boolean] = js.undefined
   
-  var clearable: js.UndefOr[Boolean] = js.native
+  var clearable: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnSelect: js.UndefOr[Boolean] = js.native
+  var closeOnSelect: js.UndefOr[Boolean] = js.undefined
   
-  var controlRef: js.UndefOr[Ref[HTMLInputElement | HTMLDivElement]] = js.native
+  var controlRef: js.UndefOr[Ref[HTMLInputElement | HTMLDivElement]] = js.undefined
   
-  var creatable: js.UndefOr[Boolean] = js.native
+  var creatable: js.UndefOr[Boolean] = js.undefined
   
-  var deleteRemoves: js.UndefOr[Boolean] = js.native
+  var deleteRemoves: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var escapeClearsValue: js.UndefOr[Boolean] = js.native
+  var escapeClearsValue: js.UndefOr[Boolean] = js.undefined
   
   var filterOptions: js.UndefOr[
     js.Function4[
@@ -64,69 +62,69 @@ trait SelectProps extends StObject {
       /* newProps */ js.UndefOr[LabelKey], 
       Value
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var filterOutSelected: js.UndefOr[Boolean] = js.native
+  var filterOutSelected: js.UndefOr[Boolean] = js.undefined
   
-  var getOptionLabel: js.UndefOr[js.Function1[/* args */ typings.baseui.anon.Option, ReactNode]] = js.native
+  var getOptionLabel: js.UndefOr[js.Function1[/* args */ typings.baseui.anon.Option, ReactNode]] = js.undefined
   
-  var getValueLabel: js.UndefOr[js.Function1[/* args */ OptionOption, ReactNode]] = js.native
+  var getValueLabel: js.UndefOr[js.Function1[/* args */ OptionOption, ReactNode]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isLoading: js.UndefOr[Boolean] = js.native
+  var isLoading: js.UndefOr[Boolean] = js.undefined
   
-  var labelKey: js.UndefOr[String] = js.native
+  var labelKey: js.UndefOr[String] = js.undefined
   
-  var maxDropdownHeight: js.UndefOr[String] = js.native
+  var maxDropdownHeight: js.UndefOr[String] = js.undefined
   
-  var mountNode: js.UndefOr[HTMLElement] = js.native
+  var mountNode: js.UndefOr[HTMLElement] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var noResultsMsg: js.UndefOr[ReactNode] = js.native
+  var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
   
-  var onBlurResetsInput: js.UndefOr[Boolean] = js.native
+  var onBlurResetsInput: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, js.Any]] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[_]] = js.native
+  var onClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onCloseResetsInput: js.UndefOr[Boolean] = js.native
+  var onCloseResetsInput: js.UndefOr[Boolean] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
   
-  var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function0[_]] = js.native
+  var onOpen: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onSelectResetsInput: js.UndefOr[Boolean] = js.native
+  var onSelectResetsInput: js.UndefOr[Boolean] = js.undefined
   
-  var openOnClick: js.UndefOr[Boolean] = js.native
+  var openOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[OptionsT] = js.native
+  var options: js.UndefOr[OptionsT] = js.undefined
   
-  var overrides: js.UndefOr[SelectOverrides] = js.native
+  var overrides: js.UndefOr[SelectOverrides] = js.undefined
   
-  var placeholder: js.UndefOr[ReactNode] = js.native
+  var placeholder: js.UndefOr[ReactNode] = js.undefined
   
-  var positive: js.UndefOr[Boolean] = js.native
+  var positive: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   
-  var startOpen: js.UndefOr[Boolean] = js.native
+  var startOpen: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[select | search] = js.native
+  var `type`: js.UndefOr[select | search] = js.undefined
   
-  var value: js.UndefOr[Value] = js.native
+  var value: js.UndefOr[Value] = js.undefined
   
-  var valueKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.undefined
 }
 object SelectProps {
   
@@ -304,7 +302,7 @@ object SelectProps {
     def setNoResultsMsgUndefined: Self = StObject.set(x, "noResultsMsg", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* e */ Event => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* e */ Event => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurResetsInput(value: Boolean): Self = StObject.set(x, "onBlurResetsInput", value.asInstanceOf[js.Any])
@@ -316,13 +314,13 @@ object SelectProps {
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* params */ OnChangeParams => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* params */ OnChangeParams => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnCloseResetsInput(value: Boolean): Self = StObject.set(x, "onCloseResetsInput", value.asInstanceOf[js.Any])
@@ -346,7 +344,7 @@ object SelectProps {
     def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
     
     @scala.inline
-    def setOnOpen(value: () => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    def setOnOpen(value: () => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)

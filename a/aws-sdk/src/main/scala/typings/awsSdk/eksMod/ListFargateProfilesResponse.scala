@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFargateProfilesResponse extends StObject {
   
   /**
     * A list of all of the Fargate profiles associated with the specified cluster.
     */
-  var fargateProfileNames: js.UndefOr[StringList] = js.native
+  var fargateProfileNames: js.UndefOr[StringList] = js.undefined
   
   /**
     * The nextToken value to include in a future ListFargateProfiles request. When the results of a ListFargateProfiles request exceed maxResults, you can use this value to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object ListFargateProfilesResponse {
   

@@ -8,7 +8,6 @@ import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.semanticUiReactStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formGroupMod extends Shortcut {
@@ -17,9 +16,9 @@ object formGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FormGroupProps] = js.native
   
-  @js.native
   trait FormGroupProps
-    extends StrictFormGroupProps
+    extends StObject
+       with StrictFormGroupProps
        with /* key */ StringDictionary[js.Any]
   object FormGroupProps {
     
@@ -30,29 +29,28 @@ object formGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFormGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Fields can show related choices. */
-    var grouped: js.UndefOr[Boolean] = js.native
+    var grouped: js.UndefOr[Boolean] = js.undefined
     
     /** Multiple fields may be inline in a row. */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /** A form group can prevent itself from stacking on mobile. */
-    var unstackable: js.UndefOr[Boolean] = js.native
+    var unstackable: js.UndefOr[Boolean] = js.undefined
     
     /** Fields Groups can specify their width in grid columns or automatically divide fields to be equal width. */
-    var widths: js.UndefOr[SemanticWIDTHS | equal] = js.native
+    var widths: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
   }
   object StrictFormGroupProps {
     

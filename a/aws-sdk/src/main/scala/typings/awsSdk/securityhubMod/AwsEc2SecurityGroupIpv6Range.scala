@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2SecurityGroupIpv6Range extends StObject {
   
   /**
     * The IPv6 CIDR range. You can specify either a CIDR range or a source security group, but not both. To specify a single IPv6 address, use the /128 prefix length.
     */
-  var CidrIpv6: js.UndefOr[NonEmptyString] = js.native
+  var CidrIpv6: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2SecurityGroupIpv6Range {
   

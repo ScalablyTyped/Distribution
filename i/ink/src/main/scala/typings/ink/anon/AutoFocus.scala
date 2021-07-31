@@ -2,13 +2,11 @@ package typings.ink.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFocus extends StObject {
   
-  var autoFocus: Boolean = js.native
+  var autoFocus: Boolean
 }
 object AutoFocus {
   

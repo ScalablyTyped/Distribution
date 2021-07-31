@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordOutput extends StObject {
   
   /**
     * Indicates whether server-side encryption (SSE) was enabled during this operation.
     */
-  var Encrypted: js.UndefOr[BooleanObject] = js.native
+  var Encrypted: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The ID of the record.
     */
-  var RecordId: PutResponseRecordId = js.native
+  var RecordId: PutResponseRecordId
 }
 object PutRecordOutput {
   

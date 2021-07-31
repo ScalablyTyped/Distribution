@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -13,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.PathItem")
 @js.native
 class PathItem ()
-  extends typings.paper.paper.PathItem
+  extends StObject
+     with typings.paper.paper.PathItem
 object PathItem {
+  
+  @JSGlobal("paper.PathItem")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** 
     * Creates a path item from the given object, determining if the
@@ -27,9 +31,8 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @JSGlobal("paper.PathItem.create")
-  @js.native
-  def create(`object`: js.Object): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
+  @scala.inline
+  def create(`object`: js.Object): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
   /** 
     * Creates a path item from the given SVG path-data, determining if the
     * data describes a plain path or a compound-path with multiple
@@ -40,9 +43,8 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @JSGlobal("paper.PathItem.create")
-  @js.native
-  def create(pathData: String): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
+  @scala.inline
+  def create(pathData: String): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathData.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
   /** 
     * Creates a path item from the given segments array, determining if the
     * array describes a plain path or a compound-path with multiple
@@ -53,7 +55,6 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @JSGlobal("paper.PathItem.create")
-  @js.native
-  def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
+  @scala.inline
+  def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(segments.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
 }

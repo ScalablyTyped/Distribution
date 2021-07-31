@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto")
@@ -20,17 +19,17 @@ class FileDescriptorProto () extends Message {
   def addDependency(value: String, index: Double): String = js.native
   
   def addEnumType(): EnumDescriptorProto = js.native
-  def addEnumType(value: js.UndefOr[scala.Nothing], index: Double): EnumDescriptorProto = js.native
+  def addEnumType(value: Unit, index: Double): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto, index: Double): EnumDescriptorProto = js.native
   
   def addExtension(): FieldDescriptorProto = js.native
-  def addExtension(value: js.UndefOr[scala.Nothing], index: Double): FieldDescriptorProto = js.native
+  def addExtension(value: Unit, index: Double): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto, index: Double): FieldDescriptorProto = js.native
   
   def addMessageType(): DescriptorProto = js.native
-  def addMessageType(value: js.UndefOr[scala.Nothing], index: Double): DescriptorProto = js.native
+  def addMessageType(value: Unit, index: Double): DescriptorProto = js.native
   def addMessageType(value: DescriptorProto): DescriptorProto = js.native
   def addMessageType(value: DescriptorProto, index: Double): DescriptorProto = js.native
   
@@ -38,7 +37,7 @@ class FileDescriptorProto () extends Message {
   def addPublicDependency(value: Double, index: Double): Double = js.native
   
   def addService(): ServiceDescriptorProto = js.native
-  def addService(value: js.UndefOr[scala.Nothing], index: Double): ServiceDescriptorProto = js.native
+  def addService(value: Unit, index: Double): ServiceDescriptorProto = js.native
   def addService(value: ServiceDescriptorProto): ServiceDescriptorProto = js.native
   def addService(value: ServiceDescriptorProto, index: Double): ServiceDescriptorProto = js.native
   
@@ -136,13 +135,11 @@ object FileDescriptorProto {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): FileDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): FileDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorProto]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: FileDescriptorProto, reader: BinaryReader): FileDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: FileDescriptorProto, reader: BinaryReader): FileDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.extensions")
   @js.native
@@ -157,40 +154,37 @@ object FileDescriptorProto {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: FileDescriptorProto, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: FileDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: FileDescriptorProto): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: FileDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var dependencyList: js.Array[String] = js.native
+    var dependencyList: js.Array[String]
     
-    var enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject] = js.native
+    var enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]
     
-    var extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject] = js.native
+    var extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]
     
-    var messageTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject] = js.native
+    var messageTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.FileOptions.AsObject] = js.native
+    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.FileOptions.AsObject] = js.undefined
     
-    var pb_package: js.UndefOr[String] = js.native
+    var pb_package: js.UndefOr[String] = js.undefined
     
-    var publicDependencyList: js.Array[Double] = js.native
+    var publicDependencyList: js.Array[Double]
     
-    var serviceList: js.Array[typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject] = js.native
+    var serviceList: js.Array[typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject]
     
-    var sourceCodeInfo: js.UndefOr[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.AsObject] = js.native
+    var sourceCodeInfo: js.UndefOr[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.AsObject] = js.undefined
     
-    var syntax: js.UndefOr[String] = js.native
+    var syntax: js.UndefOr[String] = js.undefined
     
-    var weakDependencyList: js.Array[Double] = js.native
+    var weakDependencyList: js.Array[Double]
   }
   object AsObject {
     

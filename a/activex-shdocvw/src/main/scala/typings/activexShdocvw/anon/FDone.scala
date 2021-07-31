@@ -2,17 +2,15 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FDone extends StObject {
   
-  val fDone: js.Any = js.native
+  val fDone: js.Any
   
-  val nPage: js.Any = js.native
+  val nPage: js.Any
   
-  val pDisp: js.Any = js.native
+  val pDisp: js.Any
 }
 object FDone {
   

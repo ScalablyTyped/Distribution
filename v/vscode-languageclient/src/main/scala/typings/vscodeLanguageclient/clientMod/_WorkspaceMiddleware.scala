@@ -3,10 +3,8 @@ package typings.vscodeLanguageclient.clientMod
 import typings.vscodeLanguageserverProtocol.protocolMod.FileEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _WorkspaceMiddleware extends StObject {
   
   var didChangeConfiguration: js.UndefOr[
@@ -16,11 +14,11 @@ trait _WorkspaceMiddleware extends StObject {
       /* next */ DidChangeConfigurationSignature, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var didChangeWatchedFile: js.UndefOr[
     js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object _WorkspaceMiddleware {
   

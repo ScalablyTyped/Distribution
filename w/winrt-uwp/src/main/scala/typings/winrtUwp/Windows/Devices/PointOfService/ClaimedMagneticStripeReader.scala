@@ -15,14 +15,13 @@ import typings.winrtUwp.winrtUwpStrings.releasedevicerequested
 import typings.winrtUwp.winrtUwpStrings.vendorspecificdatareceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the claimed magnetic stripe reader. */
 @js.native
 trait ClaimedMagneticStripeReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_aamvacarddatareceived(
     `type`: aamvacarddatareceived,
@@ -39,7 +38,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     listener: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[_]): Unit = js.native
+  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_vendorspecificdatareceived(
     `type`: vendorspecificdatareceived,
@@ -100,34 +99,32 @@ trait ClaimedMagneticStripeReader extends StObject {
   var isTransmitSentinelsEnabled: Boolean = js.native
   
   /** Occurs when a motor vehicle card is swiped. */
-  def onaamvacarddatareceived(
-    ev: MagneticStripeReaderAamvaCardDataReceivedEventArgs with WinRTEvent[ClaimedMagneticStripeReader]
-  ): Unit = js.native
+  def onaamvacarddatareceived(ev: MagneticStripeReaderAamvaCardDataReceivedEventArgs & WinRTEvent[ClaimedMagneticStripeReader]): Unit = js.native
   /** Occurs when a motor vehicle card is swiped. */
   @JSName("onaamvacarddatareceived")
   var onaamvacarddatareceived_Original: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderAamvaCardDataReceivedEventArgs] = js.native
   
   /** Occurs when a bank card is swiped. */
-  def onbankcarddatareceived(ev: MagneticStripeReaderBankCardDataReceivedEventArgs with WinRTEvent[ClaimedMagneticStripeReader]): Unit = js.native
+  def onbankcarddatareceived(ev: MagneticStripeReaderBankCardDataReceivedEventArgs & WinRTEvent[ClaimedMagneticStripeReader]): Unit = js.native
   /** Occurs when a bank card is swiped. */
   @JSName("onbankcarddatareceived")
   var onbankcarddatareceived_Original: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderBankCardDataReceivedEventArgs] = js.native
   
   /** Occurs when the magnetic stripe reader detects an error when reading a card. */
-  def onerroroccurred(ev: MagneticStripeReaderErrorOccurredEventArgs with WinRTEvent[ClaimedMagneticStripeReader]): Unit = js.native
+  def onerroroccurred(ev: MagneticStripeReaderErrorOccurredEventArgs & WinRTEvent[ClaimedMagneticStripeReader]): Unit = js.native
   /** Occurs when the magnetic stripe reader detects an error when reading a card. */
   @JSName("onerroroccurred")
   var onerroroccurred_Original: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs] = js.native
   
   /** Occurs when the device gets a request to release its exclusive claim. */
-  def onreleasedevicerequested(ev: js.Any with WinRTEvent[_]): Unit = js.native
+  def onreleasedevicerequested(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
   /** Occurs when the device gets a request to release its exclusive claim. */
   @JSName("onreleasedevicerequested")
-  var onreleasedevicerequested_Original: EventHandler[_] = js.native
+  var onreleasedevicerequested_Original: EventHandler[js.Any] = js.native
   
   /** Occurs when a vendor-specific card is swiped. */
   def onvendorspecificdatareceived(
-    ev: MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs with WinRTEvent[ClaimedMagneticStripeReader]
+    ev: MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs & WinRTEvent[ClaimedMagneticStripeReader]
   ): Unit = js.native
   /** Occurs when a vendor-specific card is swiped. */
   @JSName("onvendorspecificdatareceived")
@@ -136,7 +133,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_aamvacarddatareceived(
     `type`: aamvacarddatareceived,
@@ -153,7 +150,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     listener: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_vendorspecificdatareceived(
     `type`: vendorspecificdatareceived,
@@ -201,5 +198,5 @@ trait ClaimedMagneticStripeReader extends StObject {
     * @param statistics The list of key-value pairs of statistics to update.
     * @return No object or value is returned by this method when it completes.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[_, _]]): IPromiseWithIAsyncAction = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
 }

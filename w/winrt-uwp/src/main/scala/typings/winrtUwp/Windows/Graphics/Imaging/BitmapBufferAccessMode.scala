@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object BitmapBufferAccessMode extends StObject {
   
   /** The buffer is read-only. */
   @js.native
-  sealed trait read extends BitmapBufferAccessMode
+  sealed trait read
+    extends StObject
+       with BitmapBufferAccessMode
   
   /** The buffer can be read from and written to. */
   @js.native
-  sealed trait readWrite extends BitmapBufferAccessMode
+  sealed trait readWrite
+    extends StObject
+       with BitmapBufferAccessMode
   
   /** The buffer is write-only. */
   @js.native
-  sealed trait write extends BitmapBufferAccessMode
+  sealed trait write
+    extends StObject
+       with BitmapBufferAccessMode
 }

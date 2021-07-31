@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.putRepositoryTriggersExceptionsUnionMo
 import typings.awsSdkClientCodecommitNode.testRepositoryTriggersExceptionsUnionMod.TestRepositoryTriggersExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryTriggerNameRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerNameRequiredExceptionDetails> * / any */ @js.native
-  trait RepositoryTriggerNameRequiredException
-    extends PutRepositoryTriggersExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerNameRequiredExceptionDetails> * / any */ trait RepositoryTriggerNameRequiredException
+    extends StObject
+       with PutRepositoryTriggersExceptionsUnion
        with TestRepositoryTriggersExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerNameRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerNameRequiredException
   }
   object RepositoryTriggerNameRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerNameRequiredException
-    ): RepositoryTriggerNameRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryTriggerNameRequiredException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryTriggerNameRequiredException")
       __obj.asInstanceOf[RepositoryTriggerNameRequiredException]
     }
     
@@ -37,6 +34,5 @@ object typesRepositoryTriggerNameRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryTriggerNameRequiredExceptionDetails extends StObject
 }

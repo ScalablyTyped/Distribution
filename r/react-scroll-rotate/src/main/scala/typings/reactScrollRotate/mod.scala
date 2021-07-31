@@ -6,7 +6,6 @@ import typings.reactScrollRotate.reactScrollRotateStrings.prec
 import typings.reactScrollRotate.reactScrollRotateStrings.px
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,24 +22,23 @@ object mod {
     def this(props: ScrollRotateProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ScrollRotateProps extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var loops: js.UndefOr[Double] = js.native
+    var loops: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[px | prec] = js.native
+    var method: js.UndefOr[px | prec] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object ScrollRotateProps {
     

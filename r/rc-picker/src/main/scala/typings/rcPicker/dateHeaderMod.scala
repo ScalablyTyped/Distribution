@@ -5,39 +5,40 @@ import typings.rcPicker.interfaceMod.Locale
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateHeaderMod {
   
-  @JSImport("rc-picker/es/panels/DatePanel/DateHeader", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DatePanel/DateHeader", JSImport.Namespace)
   @js.native
-  def default[DateType](props: DateHeaderProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: DateHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait DateHeaderProps[DateType] extends StObject {
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    def onMonthClick(): Unit = js.native
+    def onMonthClick(): Unit
     
-    def onNextMonth(): Unit = js.native
+    def onNextMonth(): Unit
     
-    def onNextYear(): Unit = js.native
+    def onNextYear(): Unit
     
-    def onPrevMonth(): Unit = js.native
+    def onPrevMonth(): Unit
     
-    def onPrevYear(): Unit = js.native
+    def onPrevYear(): Unit
     
-    def onYearClick(): Unit = js.native
+    def onYearClick(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object DateHeaderProps {
     
@@ -59,7 +60,7 @@ object dateHeaderMod {
     }
     
     @scala.inline
-    implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[_], DateType] (val x: Self with DateHeaderProps[DateType]) extends AnyVal {
+    implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[?], DateType] (val x: Self & DateHeaderProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])

@@ -25,7 +25,6 @@ import typings.std.HTMLInputElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maskedInputMod {
@@ -35,19 +34,19 @@ object maskedInputMod {
   @js.native
   class MaskedInput protected ()
     extends Component[
-          MaskedInputProps with (Omit[
+          MaskedInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: MaskedInputProps with (Omit[
+    def this(props: MaskedInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ])) = this()
     def this(
-      props: MaskedInputProps with (Omit[
+      props: MaskedInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             icon | id | mask | name | onBlur | plain | reverse | size | value
           ]),
@@ -57,33 +56,32 @@ object maskedInputMod {
   @JSImport("grommet/components/MaskedInput", "MaskedInput")
   @js.native
   val MaskedInput: ComponentClass[
-    MaskedInputProps with (Omit[
+    MaskedInputProps & (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       icon | id | mask | name | onBlur | plain | reverse | size | value
     ]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait MaskedInputProps extends StObject {
     
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[js.Array[Fixed]] = js.native
+    var mask: js.UndefOr[js.Array[Fixed]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[typings.std.Element], _]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[typings.std.Element], js.Any]] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object MaskedInputProps {
     
@@ -124,7 +122,7 @@ object maskedInputMod {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: /* event */ FocusEvent[typings.std.Element] => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      def setOnBlur(value: /* event */ FocusEvent[typings.std.Element] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
@@ -155,7 +153,7 @@ object maskedInputMod {
     }
   }
   
-  type MaskedInputType = MaskedInputProps with (Omit[
+  type MaskedInputType = MaskedInputProps & (Omit[
     DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
     icon | id | mask | name | onBlur | plain | reverse | size | value
   ])

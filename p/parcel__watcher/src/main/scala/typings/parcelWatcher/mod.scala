@@ -3,10 +3,13 @@ package typings.parcelWatcher
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@parcel/watcher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@parcel/watcher", "ParcelWatcherSubscription")
   @js.native
@@ -15,33 +18,25 @@ object mod {
     def unsubscribe(): js.Promise[Unit] = js.native
   }
   
-  @JSImport("@parcel/watcher", "getEventsSince")
-  @js.native
-  def getEventsSince(dirPath: String, snapshotPath: String): js.Promise[js.Array[ParcelWatcherEvent]] = js.native
-  @JSImport("@parcel/watcher", "getEventsSince")
-  @js.native
-  def getEventsSince(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[js.Array[ParcelWatcherEvent]] = js.native
+  @scala.inline
+  def getEventsSince(dirPath: String, snapshotPath: String): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
+  @scala.inline
+  def getEventsSince(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
   
-  @JSImport("@parcel/watcher", "subscribe")
-  @js.native
-  def subscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[ParcelWatcherSubscription] = js.native
-  @JSImport("@parcel/watcher", "subscribe")
-  @js.native
-  def subscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[ParcelWatcherSubscription] = js.native
+  @scala.inline
+  def subscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
+  @scala.inline
+  def subscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
   
-  @JSImport("@parcel/watcher", "unsubscribe")
-  @js.native
-  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[Unit] = js.native
-  @JSImport("@parcel/watcher", "unsubscribe")
-  @js.native
-  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@parcel/watcher", "writeSnapshot")
-  @js.native
-  def writeSnapshot(dirPath: String, snapshotPath: String): js.Promise[Unit] = js.native
-  @JSImport("@parcel/watcher", "writeSnapshot")
-  @js.native
-  def writeSnapshot(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def writeSnapshot(dirPath: String, snapshotPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeSnapshot(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.parcelWatcher.parcelWatcherStrings.`fs-events`
@@ -75,12 +70,11 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait ParcelWatcherEvent extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: ParcelWatcherEventType = js.native
+    var `type`: ParcelWatcherEventType
   }
   object ParcelWatcherEvent {
     
@@ -120,12 +114,11 @@ object mod {
     def update: typings.parcelWatcher.parcelWatcherStrings.update = "update".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.update]
   }
   
-  @js.native
   trait ParcelWatcherOptions extends StObject {
     
-    var backend: js.UndefOr[ParcelWatcherBackend] = js.native
+    var backend: js.UndefOr[ParcelWatcherBackend] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ParcelWatcherOptions {
     

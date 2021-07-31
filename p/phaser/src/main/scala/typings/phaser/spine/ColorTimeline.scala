@@ -2,17 +2,17 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorTimeline extends CurveTimeline {
+trait ColorTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def setFrame(frameIndex: Double, time: Double, r: Double, g: Double, b: Double, a: Double): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, r: Double, g: Double, b: Double, a: Double): Unit
   
-  var slotIndex: Double = js.native
+  var slotIndex: Double
 }
 object ColorTimeline {
   

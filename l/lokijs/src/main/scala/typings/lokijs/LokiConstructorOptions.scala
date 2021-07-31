@@ -7,15 +7,13 @@ import typings.lokijs.lokijsStrings.NATIVESCRIPT
 import typings.lokijs.lokijsStrings.NODEJS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LokiConstructorOptions extends StObject {
   
-  var env: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA = js.native
+  var env: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA
   
-  var verbose: Boolean = js.native
+  var verbose: Boolean
 }
 object LokiConstructorOptions {
   

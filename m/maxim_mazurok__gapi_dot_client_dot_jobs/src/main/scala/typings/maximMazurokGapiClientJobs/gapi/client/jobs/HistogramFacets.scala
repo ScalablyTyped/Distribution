@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramFacets extends StObject {
   
   /** Optional. Specifies compensation field-based histogram requests. Duplicate values of CompensationHistogramRequest.type are not allowed. */
-  var compensationHistogramFacets: js.UndefOr[js.Array[CompensationHistogramRequest]] = js.native
+  var compensationHistogramFacets: js.UndefOr[js.Array[CompensationHistogramRequest]] = js.undefined
   
   /** Optional. Specifies the custom attributes histogram requests. Duplicate values of CustomAttributeHistogramRequest.key are not allowed. */
-  var customAttributeHistogramFacets: js.UndefOr[js.Array[CustomAttributeHistogramRequest]] = js.native
+  var customAttributeHistogramFacets: js.UndefOr[js.Array[CustomAttributeHistogramRequest]] = js.undefined
   
   /** Optional. Specifies the simple type of histogram facets, for example, `COMPANY_SIZE`, `EMPLOYMENT_TYPE` etc. */
-  var simpleHistogramFacets: js.UndefOr[js.Array[String]] = js.native
+  var simpleHistogramFacets: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HistogramFacets {
   

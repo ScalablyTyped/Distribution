@@ -4,13 +4,13 @@ import typings.senchaTouch.Ext.draw.modifier.IModifier
 import typings.senchaTouch.Ext.draw.sprite.IText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object label {
   
-  @js.native
-  trait ICallout extends IModifier
+  trait ICallout
+    extends StObject
+       with IModifier
   object ICallout {
     
     @scala.inline
@@ -20,21 +20,22 @@ object label {
     }
   }
   
-  @js.native
-  trait ILabel extends IText {
+  trait ILabel
+    extends StObject
+       with IText {
     
     /** [Config Option] (Object) */
-    var fx: js.UndefOr[js.Any] = js.native
+    var fx: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of field
       * @returns Object
       */
-    var getField: js.UndefOr[js.Function0[_]] = js.native
+    var getField: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of fx
       * @returns Object
       */
-    var getFx: js.UndefOr[js.Function0[_]] = js.native
+    var getFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Render method
       * @param surface Object
@@ -48,19 +49,19 @@ object label {
           /* surface */ js.UndefOr[js.Any], 
           /* ctx */ js.UndefOr[js.Any], 
           /* clipRegion */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of field
       * @param field Object The new value.
       */
-    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.native
+    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of fx
       * @param fx Object The new value.
       */
-    var setFx: js.UndefOr[js.Function1[/* fx */ js.UndefOr[js.Any], Unit]] = js.native
+    var setFx: js.UndefOr[js.Function1[/* fx */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ILabel {
     
@@ -80,20 +81,20 @@ object label {
       def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
       
       @scala.inline
-      def setGetField(value: () => _): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+      def setGetField(value: () => js.Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
       
       @scala.inline
-      def setGetFx(value: () => _): Self = StObject.set(x, "getFx", js.Any.fromFunction0(value))
+      def setGetFx(value: () => js.Any): Self = StObject.set(x, "getFx", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFxUndefined: Self = StObject.set(x, "getFx", js.undefined)
       
       @scala.inline
       def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
+        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       @scala.inline

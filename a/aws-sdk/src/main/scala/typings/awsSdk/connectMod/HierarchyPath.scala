@@ -2,36 +2,34 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchyPath extends StObject {
   
   /**
     * Information about level five.
     */
-  var LevelFive: js.UndefOr[HierarchyGroupSummary] = js.native
+  var LevelFive: js.UndefOr[HierarchyGroupSummary] = js.undefined
   
   /**
     * Information about level four.
     */
-  var LevelFour: js.UndefOr[HierarchyGroupSummary] = js.native
+  var LevelFour: js.UndefOr[HierarchyGroupSummary] = js.undefined
   
   /**
     * Information about level one.
     */
-  var LevelOne: js.UndefOr[HierarchyGroupSummary] = js.native
+  var LevelOne: js.UndefOr[HierarchyGroupSummary] = js.undefined
   
   /**
     * Information about level three.
     */
-  var LevelThree: js.UndefOr[HierarchyGroupSummary] = js.native
+  var LevelThree: js.UndefOr[HierarchyGroupSummary] = js.undefined
   
   /**
     * Information about level two.
     */
-  var LevelTwo: js.UndefOr[HierarchyGroupSummary] = js.native
+  var LevelTwo: js.UndefOr[HierarchyGroupSummary] = js.undefined
 }
 object HierarchyPath {
   

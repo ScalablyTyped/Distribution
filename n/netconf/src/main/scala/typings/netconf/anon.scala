@@ -9,19 +9,17 @@ import typings.netconf.netconfStrings.update
 import typings.netconf.netconfStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Action extends StObject {
     
-    var action: js.UndefOr[merge | replace | `override` | update | set] = js.native
+    var action: js.UndefOr[merge | replace | `override` | update | set] = js.undefined
     
-    var config: js.Any = js.native
+    var config: js.Any
     
-    var format: js.UndefOr[text | xml] = js.native
+    var format: js.UndefOr[text | xml] = js.undefined
   }
   object Action {
     
@@ -51,18 +49,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var pkey: js.UndefOr[String] = js.native
+    var pkey: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object Host {
     
@@ -101,18 +98,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var module: String = js.native
+    var module: String
     
-    var serial: String = js.native
+    var serial: String
     
-    var uptime: String = js.native
+    var uptime: String
     
-    var version: String = js.native
+    var version: String
   }
   object Hostname {
     

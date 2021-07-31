@@ -6,34 +6,41 @@ import typings.makeError.anon.Instantiable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("make-error", JSImport.Namespace)
-  @js.native
-  def apply(name: String): Constructor[BaseError] = js.native
+  @scala.inline
+  def apply(name: String): Constructor[BaseError] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Constructor[BaseError]]
   /**
     * Set the constructor prototype to `BaseError`.
     */
-  @JSImport("make-error", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Error */](super_ : Instantiable[T]): Constructor[T with BaseError] = js.native
+  @scala.inline
+  def apply[T /* <: Error */](super_ : Instantiable[T]): Constructor[T & BaseError] = ^.asInstanceOf[js.Dynamic].apply(super_.asInstanceOf[js.Any]).asInstanceOf[Constructor[T & BaseError]]
   /**
     * Create a specialized error instance.
     */
+  @scala.inline
+  def apply[T /* <: Error */, K](name: String, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
+  @scala.inline
+  def apply[T /* <: Error */, K](name: js.Function, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
+  
   @JSImport("make-error", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Error */, K](name: String, super_ : K): K with SpecializedConstructor[T] = js.native
-  @JSImport("make-error", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Error */, K](name: js.Function, super_ : K): K with SpecializedConstructor[T] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("make-error", "BaseError")
   @js.native
-  class BaseError () extends Error {
+  class BaseError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     @JSName("stack")
     var stack_BaseError: String = js.native
@@ -41,16 +48,16 @@ object mod {
   
   @js.native
   trait Constructor[T]
-    extends Instantiable0[T]
+    extends StObject
+       with Instantiable0[T]
        with Instantiable1[/* message */ String, T] {
     
     var super_ : js.Any = js.native
   }
   
-  @js.native
   trait SpecializedConstructor[T] extends StObject {
     
-    var super_ : js.Any = js.native
+    var super_ : js.Any
   }
   object SpecializedConstructor {
     
@@ -61,7 +68,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SpecializedConstructorMutableBuilder[Self <: SpecializedConstructor[_], T] (val x: Self with SpecializedConstructor[T]) extends AnyVal {
+    implicit class SpecializedConstructorMutableBuilder[Self <: SpecializedConstructor[?], T] (val x: Self & SpecializedConstructor[T]) extends AnyVal {
       
       @scala.inline
       def setSuper_(value: js.Any): Self = StObject.set(x, "super_", value.asInstanceOf[js.Any])

@@ -2,23 +2,23 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesCreate[T] extends Generic {
+trait IndicesCreate[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var include_type_name: js.UndefOr[Boolean] = js.native
+  var include_type_name: js.UndefOr[Boolean] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object IndicesCreate {
   
@@ -29,7 +29,7 @@ object IndicesCreate {
   }
   
   @scala.inline
-  implicit class IndicesCreateMutableBuilder[Self <: IndicesCreate[_], T] (val x: Self with IndicesCreate[T]) extends AnyVal {
+  implicit class IndicesCreateMutableBuilder[Self <: IndicesCreate[?], T] (val x: Self & IndicesCreate[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

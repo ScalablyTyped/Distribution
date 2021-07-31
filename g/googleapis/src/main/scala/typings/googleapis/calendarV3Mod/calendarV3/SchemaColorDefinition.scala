@@ -2,22 +2,20 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaColorDefinition extends StObject {
   
   /**
     * The background color associated with this color definition.
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * The foreground color that can be used to write on top of a background
     * with &#39;background&#39; color.
     */
-  var foreground: js.UndefOr[String] = js.native
+  var foreground: js.UndefOr[String] = js.undefined
 }
 object SchemaColorDefinition {
   

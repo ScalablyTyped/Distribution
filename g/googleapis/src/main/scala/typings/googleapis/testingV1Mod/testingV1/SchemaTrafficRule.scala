@@ -2,39 +2,37 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Network emulation parameters.
   */
-@js.native
 trait SchemaTrafficRule extends StObject {
   
   /**
     * Bandwidth in kbits/second.
     */
-  var bandwidth: js.UndefOr[Double] = js.native
+  var bandwidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Burst size in kbits.
     */
-  var burst: js.UndefOr[Double] = js.native
+  var burst: js.UndefOr[Double] = js.undefined
   
   /**
     * Packet delay, must be &gt;= 0.
     */
-  var delay: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[String] = js.undefined
   
   /**
     * Packet duplication ratio (0.0 - 1.0).
     */
-  var packetDuplicationRatio: js.UndefOr[Double] = js.native
+  var packetDuplicationRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Packet loss ratio (0.0 - 1.0).
     */
-  var packetLossRatio: js.UndefOr[Double] = js.native
+  var packetLossRatio: js.UndefOr[Double] = js.undefined
 }
 object SchemaTrafficRule {
   

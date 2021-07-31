@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing a table.
   */
-@js.native
 trait SchemaTable extends StObject {
   
   /**
     * Number of columns in the table.
     */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /**
     * Properties of horizontal cell borders.  A table&#39;s horizontal cell
@@ -23,23 +21,23 @@ trait SchemaTable extends StObject {
     * For example, if the table is 3 x 3, its horizontal borders will be
     * represented as a grid with 4 rows and 3 columns.
     */
-  var horizontalBorderRows: js.UndefOr[js.Array[SchemaTableBorderRow]] = js.native
+  var horizontalBorderRows: js.UndefOr[js.Array[SchemaTableBorderRow]] = js.undefined
   
   /**
     * Number of rows in the table.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * Properties of each column.
     */
-  var tableColumns: js.UndefOr[js.Array[SchemaTableColumnProperties]] = js.native
+  var tableColumns: js.UndefOr[js.Array[SchemaTableColumnProperties]] = js.undefined
   
   /**
     * Properties and contents of each row.  Cells that span multiple rows are
     * contained in only one of these rows and have a row_span greater than 1.
     */
-  var tableRows: js.UndefOr[js.Array[SchemaTableRow]] = js.native
+  var tableRows: js.UndefOr[js.Array[SchemaTableRow]] = js.undefined
   
   /**
     * Properties of vertical cell borders.  A table&#39;s vertical cell borders
@@ -48,7 +46,7 @@ trait SchemaTable extends StObject {
     * example, if the table is 3 x 3, its vertical borders will be represented
     * as a grid with 3 rows and 4 columns.
     */
-  var verticalBorderRows: js.UndefOr[js.Array[SchemaTableBorderRow]] = js.native
+  var verticalBorderRows: js.UndefOr[js.Array[SchemaTableBorderRow]] = js.undefined
 }
 object SchemaTable {
   

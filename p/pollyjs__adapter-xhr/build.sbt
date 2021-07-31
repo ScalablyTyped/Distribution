@@ -1,16 +1,14 @@
 organization := "org.scalablytyped"
 name := "pollyjs__adapter-xhr"
-version := "2.6-dt-20200925Z-9d6b37"
-scalaVersion := "2.13.3"
+version := "2.6-dt-20200925Z-3a606e"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "pollyjs__adapter" % "4.3-dt-20200925Z-73b04f",
-  "org.scalablytyped" %%% "pollyjs__core" % "4.3-dt-20200925Z-875491",
-  "org.scalablytyped" %%% "pollyjs__persister" % "4.3-dt-20200925Z-1da645",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "pollyjs__adapter" % "4.3-dt-20200925Z-a2abdb",
+  "org.scalablytyped" %%% "pollyjs__core" % "4.3-dt-20200925Z-e98bec",
+  "org.scalablytyped" %%% "pollyjs__persister" % "4.3-dt-20200925Z-689490",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

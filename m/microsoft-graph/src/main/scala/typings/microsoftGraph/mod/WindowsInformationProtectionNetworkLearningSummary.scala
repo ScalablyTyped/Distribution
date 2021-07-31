@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsInformationProtectionNetworkLearningSummary extends Entity {
+trait WindowsInformationProtectionNetworkLearningSummary
+  extends StObject
+     with Entity {
   
   // Device Count
-  var deviceCount: js.UndefOr[Double] = js.native
+  var deviceCount: js.UndefOr[Double] = js.undefined
   
   // Website url
-  var url: js.UndefOr[NullableOption[String]] = js.native
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsInformationProtectionNetworkLearningSummary {
   

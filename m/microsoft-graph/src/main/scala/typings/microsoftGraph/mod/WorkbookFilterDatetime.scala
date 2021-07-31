@@ -2,15 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookFilterDatetime extends StObject {
   
-  var date: js.UndefOr[NullableOption[String]] = js.native
+  var date: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var specificity: js.UndefOr[String] = js.native
+  var specificity: js.UndefOr[String] = js.undefined
 }
 object WorkbookFilterDatetime {
   

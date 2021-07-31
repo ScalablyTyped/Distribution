@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -91,9 +90,8 @@ object ODataRemoteEntitySource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource.create")
-  @js.native
-  def create(model: IModel): ODataRemoteEntitySource = js.native
+  @scala.inline
+  def create(model: IModel): ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteEntitySource]
   
   /**
     * Creates and returns a new ODataRemoteEntitySource instance in the SDK and on the server.
@@ -104,9 +102,8 @@ object ODataRemoteEntitySource {
     *  8.10.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource.createIn")
-  @js.native
-  def createIn(container: Entity): ODataRemoteEntitySource = js.native
+  @scala.inline
+  def createIn(container: Entity): ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteEntitySource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource.structureTypeName")

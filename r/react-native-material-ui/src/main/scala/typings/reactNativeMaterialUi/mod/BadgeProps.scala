@@ -4,25 +4,23 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.StrokeContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeProps extends StObject {
   
-  var accent: js.UndefOr[Boolean] = js.native
+  var accent: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[Element] = js.native
+  var children: js.UndefOr[Element] = js.undefined
   
-  var icon: js.UndefOr[String | typings.reactNativeMaterialUi.anon.Color] = js.native
+  var icon: js.UndefOr[String | typings.reactNativeMaterialUi.anon.Color] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[Double] = js.native
+  var stroke: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StrokeContainer] = js.native
+  var style: js.UndefOr[StrokeContainer] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object BadgeProps {
   

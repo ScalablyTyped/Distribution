@@ -2,14 +2,12 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryOptions extends StObject {
   
   /** If a transient server error occurs, how long to wait before retrying the request, in milliseconds. (Default: 500 ms). */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
 }
 object RetryOptions {
   

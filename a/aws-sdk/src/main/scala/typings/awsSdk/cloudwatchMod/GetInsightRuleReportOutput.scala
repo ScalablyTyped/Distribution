@@ -2,41 +2,39 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightRuleReportOutput extends StObject {
   
   /**
     * The sum of the values from all individual contributors that match the rule.
     */
-  var AggregateValue: js.UndefOr[InsightRuleUnboundDouble] = js.native
+  var AggregateValue: js.UndefOr[InsightRuleUnboundDouble] = js.undefined
   
   /**
     * Specifies whether this rule aggregates contributor data by COUNT or SUM.
     */
-  var AggregationStatistic: js.UndefOr[InsightRuleAggregationStatistic] = js.native
+  var AggregationStatistic: js.UndefOr[InsightRuleAggregationStatistic] = js.undefined
   
   /**
     * An approximate count of the unique contributors found by this rule in this time period.
     */
-  var ApproximateUniqueCount: js.UndefOr[InsightRuleUnboundLong] = js.native
+  var ApproximateUniqueCount: js.UndefOr[InsightRuleUnboundLong] = js.undefined
   
   /**
     * An array of the unique contributors found by this rule in this time period. If the rule contains multiple keys, each combination of values for the keys counts as a unique contributor.
     */
-  var Contributors: js.UndefOr[InsightRuleContributors] = js.native
+  var Contributors: js.UndefOr[InsightRuleContributors] = js.undefined
   
   /**
     * An array of the strings used as the keys for this rule. The keys are the dimensions used to classify contributors. If the rule contains more than one key, then each unique combination of values for the keys is counted as a unique contributor.
     */
-  var KeyLabels: js.UndefOr[InsightRuleContributorKeyLabels] = js.native
+  var KeyLabels: js.UndefOr[InsightRuleContributorKeyLabels] = js.undefined
   
   /**
     * A time series of metric data points that matches the time period in the rule request.
     */
-  var MetricDatapoints: js.UndefOr[InsightRuleMetricDatapoints] = js.native
+  var MetricDatapoints: js.UndefOr[InsightRuleMetricDatapoints] = js.undefined
 }
 object GetInsightRuleReportOutput {
   

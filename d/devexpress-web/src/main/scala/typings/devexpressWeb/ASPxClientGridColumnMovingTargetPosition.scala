@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists values that specify the position relative to the target column in which a moved column should be placed.
   */
-@js.native
 trait ASPxClientGridColumnMovingTargetPosition extends StObject {
   
   /**
     * A moved column should be placed at the bottom of the target column.
     */
-  var Bottom: Double = js.native
+  var Bottom: Double
   
   /**
     * A moved column should be placed to the left of the target column.
     */
-  var Left: Double = js.native
+  var Left: Double
   
   /**
     * A moved column should be placed to the right of the target column.
     */
-  var Right: Double = js.native
+  var Right: Double
   
   /**
     * A moved column should be placed at the top of the target column.
     */
-  var Top: Double = js.native
+  var Top: Double
 }
 object ASPxClientGridColumnMovingTargetPosition {
   

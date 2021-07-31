@@ -7,46 +7,47 @@ import typings.rcTable.rcTableStrings.ltr
 import typings.rcTable.rcTableStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fixUtilMod {
   
-  @JSImport("rc-table/lib/utils/fixUtil", "getCellFixedInfo")
+  @JSImport("rc-table/lib/utils/fixUtil", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getCellFixedInfo_ltr(
     colStart: Double,
     colEnd: Double,
     columns: js.Array[Fixed],
     stickyOffsets: StickyOffsets,
     direction: ltr
-  ): FixedInfo = js.native
-  @JSImport("rc-table/lib/utils/fixUtil", "getCellFixedInfo")
-  @js.native
+  ): FixedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellFixedInfo")(colStart.asInstanceOf[js.Any], colEnd.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], stickyOffsets.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[FixedInfo]
+  
+  @scala.inline
   def getCellFixedInfo_rtl(
     colStart: Double,
     colEnd: Double,
     columns: js.Array[Fixed],
     stickyOffsets: StickyOffsets,
     direction: rtl
-  ): FixedInfo = js.native
+  ): FixedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellFixedInfo")(colStart.asInstanceOf[js.Any], colEnd.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], stickyOffsets.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[FixedInfo]
   
-  @js.native
   trait FixedInfo extends StObject {
     
-    var firstFixLeft: Boolean = js.native
+    var firstFixLeft: Boolean
     
-    var firstFixRight: Boolean = js.native
+    var firstFixRight: Boolean
     
-    var fixLeft: Double | `false` = js.native
+    var fixLeft: Double | `false`
     
-    var fixRight: Double | `false` = js.native
+    var fixRight: Double | `false`
     
-    var isSticky: Boolean = js.native
+    var isSticky: Boolean
     
-    var lastFixLeft: Boolean = js.native
+    var lastFixLeft: Boolean
     
-    var lastFixRight: Boolean = js.native
+    var lastFixRight: Boolean
   }
   object FixedInfo {
     

@@ -2,19 +2,17 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistrictSearchOptions extends StObject {
   
-  var extensions: js.UndefOr[String] = js.native
+  var extensions: js.UndefOr[String] = js.undefined
   
-  var level: String = js.native
+  var level: String
   
-  var showbiz: js.UndefOr[Boolean] = js.native
+  var showbiz: js.UndefOr[Boolean] = js.undefined
   
-  var subdistrict: js.UndefOr[Double] = js.native
+  var subdistrict: js.UndefOr[Double] = js.undefined
 }
 object DistrictSearchOptions {
   

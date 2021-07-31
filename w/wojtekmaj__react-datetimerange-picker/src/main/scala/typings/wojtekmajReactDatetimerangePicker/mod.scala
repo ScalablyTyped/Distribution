@@ -18,137 +18,138 @@ import typings.wojtekmajReactDatetimerangePicker.wojtekmajReactDatetimerangePick
 import typings.wojtekmajReactDatetimerangePicker.wojtekmajReactDatetimerangePickerStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wojtekmaj/react-datetimerange-picker", JSImport.Default)
+  @JSImport("@wojtekmaj/react-datetimerange-picker", JSImport.Namespace)
   @js.native
-  def default(props: DateTimeRangePickerProps[DateTimeRangePickerValue]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: DateTimeRangePickerProps[DateTimeRangePickerValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* Inlined std.Omit<react-calendar.react-calendar.CalendarProps, 'maxDetail' | 'onChange' | 'value'> */
-  @js.native
   trait DateTimeRangePickerCalendarProps extends StObject {
     
-    var activeStartDate: js.UndefOr[Date] = js.native
+    var activeStartDate: js.UndefOr[Date] = js.undefined
     
-    var allowPartialRange: js.UndefOr[Boolean] = js.native
+    var allowPartialRange: js.UndefOr[Boolean] = js.undefined
     
-    var calendarType: js.UndefOr[CalendarType] = js.native
+    var calendarType: js.UndefOr[CalendarType] = js.undefined
     
-    var className: js.UndefOr[String | js.Array[String]] = js.native
+    var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var defaultActiveStartDate: js.UndefOr[Date] = js.native
+    var defaultActiveStartDate: js.UndefOr[Date] = js.undefined
     
-    var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.native
+    var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var defaultView: js.UndefOr[Detail] = js.native
+    var defaultView: js.UndefOr[Detail] = js.undefined
     
-    var formatLongDate: js.UndefOr[FormatterCallback] = js.native
+    var formatLongDate: js.UndefOr[FormatterCallback] = js.undefined
     
-    var formatMonth: js.UndefOr[FormatterCallback] = js.native
+    var formatMonth: js.UndefOr[FormatterCallback] = js.undefined
     
-    var formatMonthYear: js.UndefOr[FormatterCallback] = js.native
+    var formatMonthYear: js.UndefOr[FormatterCallback] = js.undefined
     
-    var formatShortWeekday: js.UndefOr[FormatterCallback] = js.native
+    var formatShortWeekday: js.UndefOr[FormatterCallback] = js.undefined
     
-    var formatYear: js.UndefOr[FormatterCallback] = js.native
+    var formatYear: js.UndefOr[FormatterCallback] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var minDetail: js.UndefOr[Detail] = js.native
+    var minDetail: js.UndefOr[Detail] = js.undefined
     
-    var navigationAriaLabel: js.UndefOr[String] = js.native
+    var navigationAriaLabel: js.UndefOr[String] = js.undefined
     
     var navigationLabel: js.UndefOr[
         js.Function1[
           /* props */ typings.reactCalendar.anon.Date, 
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var next2AriaLabel: js.UndefOr[String] = js.native
+    var next2AriaLabel: js.UndefOr[String] = js.undefined
     
     var next2Label: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var nextAriaLabel: js.UndefOr[String] = js.native
+    var nextAriaLabel: js.UndefOr[String] = js.undefined
     
     var nextLabel: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
-    var onActiveStartDateChange: js.UndefOr[ViewCallback] = js.native
+    var onActiveStartDateChange: js.UndefOr[ViewCallback] = js.undefined
     
-    var onClickDay: js.UndefOr[DateCallback] = js.native
+    var onClickDay: js.UndefOr[DateCallback] = js.undefined
     
-    var onClickDecade: js.UndefOr[DateCallback] = js.native
+    var onClickDecade: js.UndefOr[DateCallback] = js.undefined
     
-    var onClickMonth: js.UndefOr[DateCallback] = js.native
+    var onClickMonth: js.UndefOr[DateCallback] = js.undefined
     
-    var onClickWeekNumber: js.UndefOr[ClickWeekNumberCallback] = js.native
+    var onClickWeekNumber: js.UndefOr[ClickWeekNumberCallback] = js.undefined
     
-    var onClickYear: js.UndefOr[DateCallback] = js.native
+    var onClickYear: js.UndefOr[DateCallback] = js.undefined
     
-    var onDrillDown: js.UndefOr[ViewCallback] = js.native
+    var onDrillDown: js.UndefOr[ViewCallback] = js.undefined
     
-    var onDrillUp: js.UndefOr[ViewCallback] = js.native
+    var onDrillUp: js.UndefOr[ViewCallback] = js.undefined
     
-    var onViewChange: js.UndefOr[ViewCallback] = js.native
+    var onViewChange: js.UndefOr[ViewCallback] = js.undefined
     
-    var prev2AriaLabel: js.UndefOr[String] = js.native
+    var prev2AriaLabel: js.UndefOr[String] = js.undefined
     
     var prev2Label: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var prevAriaLabel: js.UndefOr[String] = js.native
+    var prevAriaLabel: js.UndefOr[String] = js.undefined
     
     var prevLabel: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
     var renderChildren: js.UndefOr[
         js.Function1[
           /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var returnValue: js.UndefOr[start | end | range] = js.native
+    var returnValue: js.UndefOr[start | end | range] = js.undefined
     
-    var selectRange: js.UndefOr[Boolean] = js.native
+    var selectRange: js.UndefOr[Boolean] = js.undefined
     
-    var showDoubleView: js.UndefOr[Boolean] = js.native
+    var showDoubleView: js.UndefOr[Boolean] = js.undefined
     
-    var showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.native
+    var showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.undefined
     
-    var showNavigation: js.UndefOr[Boolean] = js.native
+    var showNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var showNeighboringMonth: js.UndefOr[Boolean] = js.native
+    var showNeighboringMonth: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     var tileClassName: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* props */ CalendarTileProperties, String | js.Array[String] | Null])
-      ] = js.native
+      ] = js.undefined
     
     var tileContent: js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
           /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.native
+    var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.undefined
     
-    var view: js.UndefOr[Detail] = js.native
+    var view: js.UndefOr[Detail] = js.undefined
   }
   object DateTimeRangePickerCalendarProps {
     
@@ -271,7 +272,7 @@ object mod {
       
       @scala.inline
       def setNavigationLabel(
-        value: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+        value: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
       ): Self = StObject.set(x, "navigationLabel", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -395,7 +396,7 @@ object mod {
       
       @scala.inline
       def setRenderChildren(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
       ): Self = StObject.set(x, "renderChildren", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -461,13 +462,13 @@ object mod {
       def setTileContent(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
               /* props */ CalendarTileProperties, 
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
             ])
       ): Self = StObject.set(x, "tileContent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTileContentFunction1(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
       ): Self = StObject.set(x, "tileContent", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -487,94 +488,95 @@ object mod {
     }
   }
   
-  @js.native
-  trait DateTimeRangePickerProps[T] extends DateTimeRangePickerCalendarProps {
+  trait DateTimeRangePickerProps[T]
+    extends StObject
+       with DateTimeRangePickerCalendarProps {
     
-    var amPmAriaLabel: js.UndefOr[String] = js.native
+    var amPmAriaLabel: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var calendarAriaLabel: js.UndefOr[String] = js.native
+    var calendarAriaLabel: js.UndefOr[String] = js.undefined
     
-    var calendarClassName: js.UndefOr[String | js.Array[String]] = js.native
+    var calendarClassName: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var calendarIcon: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
-    var clearAriaLabel: js.UndefOr[String] = js.native
+    var clearAriaLabel: js.UndefOr[String] = js.undefined
     
     var clearIcon: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
-    var clockClassName: js.UndefOr[String | js.Array[String]] = js.native
+    var clockClassName: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var closeWidgets: js.UndefOr[Boolean] = js.native
+    var closeWidgets: js.UndefOr[Boolean] = js.undefined
     
-    var dayAriaLabel: js.UndefOr[String] = js.native
+    var dayAriaLabel: js.UndefOr[String] = js.undefined
     
-    var dayPlaceholder: js.UndefOr[String] = js.native
+    var dayPlaceholder: js.UndefOr[String] = js.undefined
     
-    var disableCalendar: js.UndefOr[Boolean] = js.native
+    var disableCalendar: js.UndefOr[Boolean] = js.undefined
     
-    var disableClock: js.UndefOr[Boolean] = js.native
+    var disableClock: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hourAriaLabel: js.UndefOr[String] = js.native
+    var hourAriaLabel: js.UndefOr[String] = js.undefined
     
-    var hourPlaceholder: js.UndefOr[String] = js.native
+    var hourPlaceholder: js.UndefOr[String] = js.undefined
     
-    var isCalendarOpen: js.UndefOr[Boolean] = js.native
+    var isCalendarOpen: js.UndefOr[Boolean] = js.undefined
     
-    var isClockOpen: js.UndefOr[Boolean] = js.native
+    var isClockOpen: js.UndefOr[Boolean] = js.undefined
     
-    var maxDetail: js.UndefOr[hour | minute | second] = js.native
+    var maxDetail: js.UndefOr[hour | minute | second] = js.undefined
     
-    var minuteAriaLabel: js.UndefOr[String] = js.native
+    var minuteAriaLabel: js.UndefOr[String] = js.undefined
     
-    var minutePlaceholder: js.UndefOr[String] = js.native
+    var minutePlaceholder: js.UndefOr[String] = js.undefined
     
-    var monthAriaLabel: js.UndefOr[String] = js.native
+    var monthAriaLabel: js.UndefOr[String] = js.undefined
     
-    var monthPlaceholder: js.UndefOr[String] = js.native
+    var monthPlaceholder: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nativeInputAriaLabel: js.UndefOr[String] = js.native
+    var nativeInputAriaLabel: js.UndefOr[String] = js.undefined
     
-    var onCalendarClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCalendarClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onCalendarOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCalendarOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* val */ T, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* val */ T, Unit]] = js.undefined
     
-    var onClockClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClockClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClockOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClockOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var rangeDivider: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var secondAriaLabel: js.UndefOr[String] = js.native
+    var secondAriaLabel: js.UndefOr[String] = js.undefined
     
-    var secondPlaceholder: js.UndefOr[String] = js.native
+    var secondPlaceholder: js.UndefOr[String] = js.undefined
     
-    var showLeadingZeros: js.UndefOr[Boolean] = js.native
+    var showLeadingZeros: js.UndefOr[Boolean] = js.undefined
     
-    var value: T = js.native
+    var value: T
     
-    var yearAriaLabel: js.UndefOr[String] = js.native
+    var yearAriaLabel: js.UndefOr[String] = js.undefined
     
-    var yearPlaceholder: js.UndefOr[String] = js.native
+    var yearPlaceholder: js.UndefOr[String] = js.undefined
   }
   object DateTimeRangePickerProps {
     
@@ -585,7 +587,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DateTimeRangePickerPropsMutableBuilder[Self <: DateTimeRangePickerProps[_], T] (val x: Self with DateTimeRangePickerProps[T]) extends AnyVal {
+    implicit class DateTimeRangePickerPropsMutableBuilder[Self <: DateTimeRangePickerProps[?], T] (val x: Self & DateTimeRangePickerProps[T]) extends AnyVal {
       
       @scala.inline
       def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])

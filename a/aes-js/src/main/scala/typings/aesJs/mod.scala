@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -178,21 +177,23 @@ object mod {
     
     object pkcs7 {
       
+      @JSImport("aes-js", "padding.pkcs7")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Add standard PKCS7 padding to an array.
         * @param data The input data.
         */
-      @JSImport("aes-js", "padding.pkcs7.pad")
-      @js.native
-      def pad(data: ByteSource): Uint8Array = js.native
+      @scala.inline
+      def pad(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
       
       /**
         * Remove standard PKCS7 padding from an array.
         * @param data The input data.
         */
-      @JSImport("aes-js", "padding.pkcs7.strip")
-      @js.native
-      def strip(data: ByteSource): Uint8Array = js.native
+      @scala.inline
+      def strip(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
   }
   
@@ -200,40 +201,44 @@ object mod {
     
     object hex {
       
+      @JSImport("aes-js", "utils.hex")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Convert an array-like object to a hexadecimal string.
         * @param data The input data.
         */
-      @JSImport("aes-js", "utils.hex.fromBytes")
-      @js.native
-      def fromBytes(data: ByteSource): String = js.native
+      @scala.inline
+      def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Convert a hexadecimal string to a Uint8Array.
         * @param data The input string.
         */
-      @JSImport("aes-js", "utils.hex.toBytes")
-      @js.native
-      def toBytes(data: String): Uint8Array = js.native
+      @scala.inline
+      def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
     
     object utf8 {
+      
+      @JSImport("aes-js", "utils.utf8")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Convert an array-like object containing UTF8 data to a string.
         * @param data The input data.
         */
-      @JSImport("aes-js", "utils.utf8.fromBytes")
-      @js.native
-      def fromBytes(data: ByteSource): String = js.native
+      @scala.inline
+      def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Convert a UTF8 encoded string to a Uint8Array.
         * @param data The input string.
         */
-      @JSImport("aes-js", "utils.utf8.toBytes")
-      @js.native
-      def toBytes(data: String): Uint8Array = js.native
+      @scala.inline
+      def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
   }
   

@@ -7,42 +7,42 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPersonaProps extends IPersonaSharedProps {
+trait IPersonaProps
+  extends StObject
+     with IPersonaSharedProps {
   
   /**
     * Optional callback to access the IPersona interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
     */
-  var componentRef: js.UndefOr[IRefObject[IPersona]] = js.native
+  var componentRef: js.UndefOr[IRefObject[IPersona]] = js.undefined
   
   /**
     * Optional custom renderer for the optional text.
     */
-  var onRenderOptionalText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+  var onRenderOptionalText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
   
   /**
     * Optional custom renderer for the primary text.
     */
-  var onRenderPrimaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+  var onRenderPrimaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
   
   /**
     * Optional custom renderer for the secondary text.
     */
-  var onRenderSecondaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+  var onRenderSecondaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
   
   /**
     * Optional custom renderer for the tertiary text.
     */
-  var onRenderTertiaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+  var onRenderTertiaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
   
   /**
     * Call to provide customized styling that will layer on top of variant rules
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]] = js.undefined
 }
 object IPersonaProps {
   

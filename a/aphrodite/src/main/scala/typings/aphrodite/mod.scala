@@ -6,7 +6,6 @@ import typings.aphrodite.aphroditeBooleans.`false`
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,25 +33,20 @@ object mod {
   @scala.inline
   def StyleSheet_=(x: StyleSheetStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleSheet")(x.asInstanceOf[js.Any])
   
-  @JSImport("aphrodite", "css")
-  @js.native
-  def css(styles: CSSInputTypes*): String = js.native
+  @scala.inline
+  def css(styles: CSSInputTypes*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("aphrodite", "flushToStyleTag")
-  @js.native
-  def flushToStyleTag(): Unit = js.native
+  @scala.inline
+  def flushToStyleTag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToStyleTag")().asInstanceOf[Unit]
   
-  @JSImport("aphrodite", "minify")
-  @js.native
-  def minify(shouldMinify: Boolean): Unit = js.native
+  @scala.inline
+  def minify(shouldMinify: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(shouldMinify.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("aphrodite", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("aphrodite", "resetInjectedStyle")
-  @js.native
-  def resetInjectedStyle(key: String): Unit = js.native
+  @scala.inline
+  def resetInjectedStyle(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetInjectedStyle")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type CSSInputTypes = StyleDeclarationValue | `false` | Null | Unit
   
@@ -60,18 +54,17 @@ object mod {
     * Calling StyleSheet.extend() returns an object with each of the exported
     * properties on it.
     */
-  @js.native
   trait Exports extends StObject {
     
-    var StyleSheet: StyleSheetStatic = js.native
+    var StyleSheet: StyleSheetStatic
     
-    var StyleSheetServer: StyleSheetServerStatic = js.native
+    var StyleSheetServer: StyleSheetServerStatic
     
-    var StyleSheetTestUtils: StyleSheetTestUtilsStatic = js.native
+    var StyleSheetTestUtils: StyleSheetTestUtilsStatic
     
-    def css(styles: CSSInputTypes*): String = js.native
+    def css(styles: CSSInputTypes*): String
     
-    def flushToStyleTag(): Unit = js.native
+    def flushToStyleTag(): Unit
   }
   object Exports {
     
@@ -107,10 +100,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var selectorHandler: js.UndefOr[SelectorHandler] = js.native
+    var selectorHandler: js.UndefOr[SelectorHandler] = js.undefined
   }
   object Extension {
     
@@ -140,12 +132,11 @@ object mod {
     String | Null
   ]
   
-  @js.native
   trait StaticRendererResult extends StObject {
     
-    var css: Content = js.native
+    var css: Content
     
-    var html: String = js.native
+    var html: String
   }
   object StaticRendererResult {
     
@@ -168,7 +159,7 @@ object mod {
   
   type StyleDeclaration[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: aphrodite.aphrodite/typings/css-properties.CSSProperties | aphrodite.aphrodite.StyleDeclarationMap}
-    */ typings.aphrodite.aphroditeStrings.StyleDeclaration with TopLevel[js.Any]
+    */ typings.aphrodite.aphroditeStrings.StyleDeclaration & TopLevel[js.Any]
   
   type StyleDeclarationMap = Map[
     /* keyof aphrodite.aphrodite/typings/css-properties.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 340 */ js.Any, 
@@ -180,10 +171,9 @@ object mod {
   /**
     * Utilities for using Aphrodite server-side.
     */
-  @js.native
   trait StyleSheetServerStatic extends StObject {
     
-    def renderStatic(renderFunc: js.Function0[String]): StaticRendererResult = js.native
+    def renderStatic(renderFunc: js.Function0[String]): StaticRendererResult
   }
   object StyleSheetServerStatic {
     
@@ -201,7 +191,6 @@ object mod {
     }
   }
   
-  @js.native
   trait StyleSheetStatic extends StObject {
     
     /**
@@ -209,14 +198,14 @@ object mod {
       */
     def create[T](styles: StyleDeclaration[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic with TopLevel[js.Any] = js.native
+      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any]
     
-    def extend(extensions: js.Array[Extension]): Exports = js.native
+    def extend(extensions: js.Array[Extension]): Exports
     
     /**
       * Rehydrate class names from server renderer
       */
-    def rehydrate(renderedClassNames: js.Array[String]): Unit = js.native
+    def rehydrate(renderedClassNames: js.Array[String]): Unit
   }
   object StyleSheetStatic {
     
@@ -224,7 +213,7 @@ object mod {
     def apply(
       create: StyleDeclaration[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic with TopLevel[js.Any],
+      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any],
       extend: js.Array[Extension] => Exports,
       rehydrate: js.Array[String] => Unit
     ): StyleSheetStatic = {
@@ -239,7 +228,7 @@ object mod {
       def setCreate(
         value: StyleDeclaration[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-        */ typings.aphrodite.aphroditeStrings.StyleSheetStatic with TopLevel[js.Any]
+        */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any]
       ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -250,20 +239,19 @@ object mod {
     }
   }
   
-  @js.native
   trait StyleSheetTestUtilsStatic extends StObject {
     
     /**
       * Opposite method of preventStyleInject.
       */
-    def clearBufferAndResumeStyleInjection(): Unit = js.native
+    def clearBufferAndResumeStyleInjection(): Unit
     
     /**
       * Returns a string of buffered styles which have not been flushed
       *
       * @returns {string}  Buffer of styles which have not yet been flushed.
       */
-    def getBufferedStyles(): js.Array[String] = js.native
+    def getBufferedStyles(): js.Array[String]
     
     /**
       * Prevent styles from being injected into the DOM.
@@ -276,7 +264,7 @@ object mod {
       * Should be paired with a subsequent call to
       * clearBufferAndResumeStyleInjection.
       */
-    def suppressStyleInjection(): Unit = js.native
+    def suppressStyleInjection(): Unit
   }
   object StyleSheetTestUtilsStatic {
     

@@ -2,21 +2,19 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pauser extends StObject {
   
   /**
     * Pauses the underlying sequence.
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * Resumes the underlying sequence.
     */
-  def resume(): Unit = js.native
+  def resume(): Unit
 }
 object Pauser {
   

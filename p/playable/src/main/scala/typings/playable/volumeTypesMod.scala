@@ -6,21 +6,19 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeTypesMod {
   
-  @js.native
   trait IVolumeControl extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IVolumeControl {
     
@@ -47,18 +45,17 @@ object volumeTypesMod {
     }
   }
   
-  @js.native
   trait IVolumeViewCallbacks extends StObject {
     
-    def onDragEnd(): Unit = js.native
+    def onDragEnd(): Unit
     
-    def onDragStart(): Unit = js.native
+    def onDragStart(): Unit
     
-    def onToggleMuteClick(): Unit = js.native
+    def onToggleMuteClick(): Unit
     
-    def onVolumeLevelChangeFromInput(level: Double): Unit = js.native
+    def onVolumeLevelChangeFromInput(level: Double): Unit
     
-    def onVolumeLevelChangeFromWheel(delta: Double): Unit = js.native
+    def onVolumeLevelChangeFromWheel(delta: Double): Unit
   }
   object IVolumeViewCallbacks {
     
@@ -94,16 +91,15 @@ object volumeTypesMod {
     }
   }
   
-  @js.native
   trait IVolumeViewConfig extends StObject {
     
-    var callbacks: IVolumeViewCallbacks = js.native
+    var callbacks: IVolumeViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IVolumeViewConfig {
     
@@ -135,44 +131,43 @@ object volumeTypesMod {
     }
   }
   
-  @js.native
   trait IVolumeViewStyles extends StObject {
     
-    var background: String = js.native
+    var background: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var hitbox: String = js.native
+    var hitbox: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var isDragging: String = js.native
+    var isDragging: String
     
-    var muteIcon: String = js.native
+    var muteIcon: String
     
-    var muteToggle: String = js.native
+    var muteToggle: String
     
-    var muted: String = js.native
+    var muted: String
     
-    var progressBar: String = js.native
+    var progressBar: String
     
-    var volume: String = js.native
+    var volume: String
     
-    var volume0: String = js.native
+    var volume0: String
     
-    var volume0Icon: String = js.native
+    var volume0Icon: String
     
-    var volume100: String = js.native
+    var volume100: String
     
-    var volume100Icon: String = js.native
+    var volume100Icon: String
     
-    var volume50: String = js.native
+    var volume50: String
     
-    var volume50Icon: String = js.native
+    var volume50Icon: String
     
-    var volumeControl: String = js.native
+    var volumeControl: String
     
-    var volumeInputBlock: String = js.native
+    var volumeInputBlock: String
   }
   object IVolumeViewStyles {
     

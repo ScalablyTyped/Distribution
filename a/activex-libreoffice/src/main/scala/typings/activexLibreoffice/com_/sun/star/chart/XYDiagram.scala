@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The special thing about X/Y diagrams is that the first series of data contains **x** -values. The other series contain **y** -values. Together both
   * form two-dimensional coordinates, at which data points are placed.
   */
-@js.native
-trait XYDiagram extends LineDiagram
+trait XYDiagram
+  extends StObject
+     with LineDiagram
 object XYDiagram {
   
   @scala.inline

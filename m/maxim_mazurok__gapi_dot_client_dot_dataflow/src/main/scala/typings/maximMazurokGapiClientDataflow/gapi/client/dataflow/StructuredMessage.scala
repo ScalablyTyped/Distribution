@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructuredMessage extends StObject {
   
   /** Identifier for this message type. Used by external systems to internationalize or personalize message. */
-  var messageKey: js.UndefOr[String] = js.native
+  var messageKey: js.UndefOr[String] = js.undefined
   
   /** Human-readable version of message. */
-  var messageText: js.UndefOr[String] = js.native
+  var messageText: js.UndefOr[String] = js.undefined
   
   /** The structured data associated with this message. */
-  var parameters: js.UndefOr[js.Array[Parameter]] = js.native
+  var parameters: js.UndefOr[js.Array[Parameter]] = js.undefined
 }
 object StructuredMessage {
   

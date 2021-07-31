@@ -3,25 +3,23 @@ package typings.leaflet.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultMapPanes extends StObject {
   
-  var mapPane: HTMLElement = js.native
+  var mapPane: HTMLElement
   
-  var markerPane: HTMLElement = js.native
+  var markerPane: HTMLElement
   
-  var overlayPane: HTMLElement = js.native
+  var overlayPane: HTMLElement
   
-  var popupPane: HTMLElement = js.native
+  var popupPane: HTMLElement
   
-  var shadowPane: HTMLElement = js.native
+  var shadowPane: HTMLElement
   
-  var tilePane: HTMLElement = js.native
+  var tilePane: HTMLElement
   
-  var tooltipPane: HTMLElement = js.native
+  var tooltipPane: HTMLElement
 }
 object DefaultMapPanes {
   

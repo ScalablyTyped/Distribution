@@ -2,23 +2,21 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  var base: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[String] = js.native
+  var complete: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.undefined
   
-  var focus: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[String] = js.undefined
   
-  var invalid: js.UndefOr[String] = js.native
+  var invalid: js.UndefOr[String] = js.undefined
   
-  var webkitAutofill: js.UndefOr[String] = js.native
+  var webkitAutofill: js.UndefOr[String] = js.undefined
 }
 object Base {
   

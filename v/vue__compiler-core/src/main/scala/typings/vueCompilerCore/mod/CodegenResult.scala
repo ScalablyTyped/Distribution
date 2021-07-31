@@ -3,17 +3,15 @@ package typings.vueCompilerCore.mod
 import typings.sourceMap.mod.RawSourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodegenResult extends StObject {
   
-  var ast: RootNode = js.native
+  var ast: RootNode
   
-  var code: String = js.native
+  var code: String
   
-  var map: js.UndefOr[RawSourceMap] = js.native
+  var map: js.UndefOr[RawSourceMap] = js.undefined
 }
 object CodegenResult {
   

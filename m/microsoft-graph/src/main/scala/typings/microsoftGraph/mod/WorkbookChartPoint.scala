@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartPoint extends Entity {
+trait WorkbookChartPoint
+  extends StObject
+     with Entity {
   
   // Encapsulates the format properties chart point. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartPointFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartPointFormat]] = js.undefined
   
   // Returns the value of a chart point. Read-only.
-  var value: js.UndefOr[NullableOption[_]] = js.native
+  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
 }
 object WorkbookChartPoint {
   
@@ -35,7 +35,7 @@ object WorkbookChartPoint {
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setValue(value: NullableOption[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueNull: Self = StObject.set(x, "value", null)

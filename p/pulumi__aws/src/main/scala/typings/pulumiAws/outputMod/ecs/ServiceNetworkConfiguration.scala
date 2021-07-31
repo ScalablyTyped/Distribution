@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceNetworkConfiguration extends StObject {
   
   /**
     * Assign a public IP address to the ENI (Fargate launch type only). Valid values are `true` or `false`. Default `false`.
     */
-  var assignPublicIp: js.UndefOr[Boolean] = js.native
+  var assignPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used.
     */
-  var securityGroups: js.UndefOr[js.Array[String]] = js.native
+  var securityGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The subnets associated with the task or service.
     */
-  var subnets: js.Array[String] = js.native
+  var subnets: js.Array[String]
 }
 object ServiceNetworkConfiguration {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinskyOfferType extends StObject {
   
   /** The finsky offer type (e.g., PURCHASE=0 RENTAL=3) */
-  var finskyOfferType: js.UndefOr[Double] = js.native
+  var finskyOfferType: js.UndefOr[Double] = js.undefined
   
   /** Indicates whether the offer is giftable. */
-  var giftable: js.UndefOr[Boolean] = js.native
+  var giftable: js.UndefOr[Boolean] = js.undefined
   
   /** Offer list (=undiscounted) price in Micros. */
-  var listPrice: js.UndefOr[CurrencyCode] = js.native
+  var listPrice: js.UndefOr[CurrencyCode] = js.undefined
   
   /** The rental duration (for rental offers only). */
-  var rentalDuration: js.UndefOr[Count] = js.native
+  var rentalDuration: js.UndefOr[Count] = js.undefined
   
   /** Offer retail (=discounted) price in Micros */
-  var retailPrice: js.UndefOr[CurrencyCode] = js.native
+  var retailPrice: js.UndefOr[CurrencyCode] = js.undefined
 }
 object FinskyOfferType {
   

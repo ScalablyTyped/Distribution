@@ -8,11 +8,12 @@ import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenu[ExtraData] extends Overlay[ExtraData] {
+trait ContextMenu[ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   /**
     * 右键菜单中添加菜单项
@@ -44,51 +45,45 @@ trait ContextMenu[ExtraData] extends Overlay[ExtraData] {
 }
 object ContextMenu {
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var close: Event_[typings.amapJsApi.amapJsApiStrings.close, Target[I]] = js.native
+    var close: Event_[typings.amapJsApi.amapJsApiStrings.close, Target[I]]
     
-    var items: Event_[typings.amapJsApi.amapJsApiStrings.items, js.UndefOr[scala.Nothing]] = js.native
+    var items: Event_[typings.amapJsApi.amapJsApiStrings.items, Unit]
     
-    var open: Event_[typings.amapJsApi.amapJsApiStrings.open, Target[I]] = js.native
+    var open: Event_[typings.amapJsApi.amapJsApiStrings.open, Target[I]]
   }
   object EventMap {
     
     @scala.inline
-    def apply[I](
-      close: Event_[close, Target[I]],
-      items: Event_[items, js.UndefOr[scala.Nothing]],
-      open: Event_[open, Target[I]]
-    ): EventMap[I] = {
+    def apply[I](close: Event_[close, Target[I]], items: Event_[items, Unit], open: Event_[open, Target[I]]): EventMap[I] = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMap[I]]
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setClose(value: Event_[close, Target[I]]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: Event_[items, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: Event_[items, Unit]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOpen(value: Event_[open, Target[I]]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 右键菜单内容
       */
-    var content: js.UndefOr[String | HTMLElement] = js.native
+    var content: js.UndefOr[String | HTMLElement] = js.undefined
     
     // internal
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

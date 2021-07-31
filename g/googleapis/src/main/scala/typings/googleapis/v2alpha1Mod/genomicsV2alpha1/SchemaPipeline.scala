@@ -3,31 +3,29 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a series of actions to execute, expressed as Docker containers.
   */
-@js.native
 trait SchemaPipeline extends StObject {
   
   /**
     * The list of actions to execute, in the order they are specified.
     */
-  var actions: js.UndefOr[js.Array[SchemaAction]] = js.native
+  var actions: js.UndefOr[js.Array[SchemaAction]] = js.undefined
   
   /**
     * The environment to pass into every action. Each action can also specify
     * additional environment variables but cannot delete an entry from this map
     * (though they can overwrite it with a different value).
     */
-  var environment: js.UndefOr[StringDictionary[String]] = js.native
+  var environment: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The resources required for execution.
     */
-  var resources: js.UndefOr[SchemaResources] = js.native
+  var resources: js.UndefOr[SchemaResources] = js.undefined
   
   /**
     * The maximum amount of time to give the pipeline to complete.  This
@@ -36,7 +34,7 @@ trait SchemaPipeline extends StObject {
     * the error code will be set to DEADLINE_EXCEEDED.  If unspecified, it will
     * default to 7 days.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaPipeline {
   

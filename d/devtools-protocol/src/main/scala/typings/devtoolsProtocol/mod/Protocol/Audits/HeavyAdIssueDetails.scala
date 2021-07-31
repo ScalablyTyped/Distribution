@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeavyAdIssueDetails extends StObject {
   
   /**
     * The frame that was blocked.
     */
-  var frame: AffectedFrame = js.native
+  var frame: AffectedFrame
   
   /**
     * The reason the ad was blocked, total network or cpu or peak cpu.
     */
-  var reason: HeavyAdReason = js.native
+  var reason: HeavyAdReason
   
   /**
     * The resolution status, either blocking the content or warning.
     */
-  var resolution: HeavyAdResolutionStatus = js.native
+  var resolution: HeavyAdResolutionStatus
 }
 object HeavyAdIssueDetails {
   

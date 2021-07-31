@@ -4,21 +4,19 @@ import typings.vegaTypings.streamMod.WindowEventType
 import typings.vegaTypings.vegaTypingsStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var source: window = js.native
+  var source: window
   
-  var `type`: WindowEventType = js.native
+  var `type`: WindowEventType
 }
 object Type {
   
   @scala.inline
-  def apply(source: window, `type`: WindowEventType): Type = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+  def apply(`type`: WindowEventType): Type = {
+    val __obj = js.Dynamic.literal(source = "window")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }

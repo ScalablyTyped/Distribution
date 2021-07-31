@@ -2,13 +2,11 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VM networking options.
   */
-@js.native
 trait SchemaNetwork extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaNetwork extends StObject {
     * which case it is assumed to be a fully specified network resource URL. If
     * unspecified, the global default network is used.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If the specified network is configured for custom subnet creation, the
@@ -27,7 +25,7 @@ trait SchemaNetwork extends StObject {
     * resource URL.  If the `*` character appears in the value, it is replaced
     * with the region that the virtual machine has been allocated in.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, do not attach a public IP address to the VM. Note that
@@ -36,7 +34,7 @@ trait SchemaNetwork extends StObject {
     * https://cloud.google.com/vpc/docs/configure-private-google-access for
     * more information.
     */
-  var usePrivateAddress: js.UndefOr[Boolean] = js.native
+  var usePrivateAddress: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaNetwork {
   

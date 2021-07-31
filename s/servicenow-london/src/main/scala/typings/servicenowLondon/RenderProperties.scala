@@ -2,33 +2,31 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderProperties extends StObject {
   
-  def getEncodedQuery(): String = js.native
+  def getEncodedQuery(): String
   
-  def getListControl(): js.Any = js.native
+  def getListControl(): js.Any
   
-  def getParameterValue(value: String): String = js.native
+  def getParameterValue(value: String): String
   
-  def getParameters(): js.Array[String] = js.native
+  def getParameters(): js.Array[String]
   
-  def getReferringURL(): String = js.native
+  def getReferringURL(): String
   
-  def getViewName(): String = js.native
+  def getViewName(): String
   
-  def getWindowProperties(): js.Any = js.native
+  def getWindowProperties(): js.Any
   
-  def isInDevStudio(): Boolean = js.native
+  def isInDevStudio(): Boolean
   
-  def isInteractive(): Boolean = js.native
+  def isInteractive(): Boolean
   
-  def isManyToMany(): Boolean = js.native
+  def isManyToMany(): Boolean
   
-  def isRelatedList(): Boolean = js.native
+  def isRelatedList(): Boolean
 }
 object RenderProperties {
   

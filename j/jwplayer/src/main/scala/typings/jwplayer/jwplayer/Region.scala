@@ -3,26 +3,24 @@ package typings.jwplayer.jwplayer
 import typings.jwplayer.jwplayerNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: `0` = js.native
+  var x: `0`
   
   // x and y will always be 0 according to https://developer.jwplayer.com/jw-player/docs/javascript-api-reference/#jwplayergetsaferegion
-  var y: `0` = js.native
+  var y: `0`
 }
 object Region {
   
   @scala.inline
-  def apply(height: Double, width: Double, x: `0`, y: `0`): Region = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  def apply(height: Double, width: Double): Region = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = 0, y = 0)
     __obj.asInstanceOf[Region]
   }
   

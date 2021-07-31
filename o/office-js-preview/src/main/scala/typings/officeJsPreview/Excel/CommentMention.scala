@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.11]
   */
-@js.native
 trait CommentMention extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CommentMention extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var email: String = js.native
+  var email: String
   
   /**
     *
@@ -28,7 +26,7 @@ trait CommentMention extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     *
@@ -36,7 +34,7 @@ trait CommentMention extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var name: String = js.native
+  var name: String
 }
 object CommentMention {
   

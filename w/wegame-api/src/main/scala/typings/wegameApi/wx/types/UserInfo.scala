@@ -5,28 +5,26 @@ import typings.wegameApi.wegameApiNumbers.`1`
 import typings.wegameApi.wegameApiNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
-  var avatarUrl: String = js.native
+  var avatarUrl: String
   
-  var city: String = js.native
+  var city: String
   
-  var country: String = js.native
+  var country: String
   
   /**
     * 0：未知、1：男、2：女
     */
-  var gender: `0` | `1` | `2` = js.native
+  var gender: `0` | `1` | `2`
   
-  var language: String = js.native
+  var language: String
   
-  var nickName: String = js.native
+  var nickName: String
   
-  var province: String = js.native
+  var province: String
 }
 object UserInfo {
   

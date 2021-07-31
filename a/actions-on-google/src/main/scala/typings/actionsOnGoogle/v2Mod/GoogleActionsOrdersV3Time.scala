@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3Time extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleActionsOrdersV3Time extends StObject {
     * on. Could be a duration (start & end time), just the date, date time etc.
     * Refer https://en.wikipedia.org/wiki/ISO_8601 for all supported formats.
     */
-  var timeIso8601: js.UndefOr[String] = js.native
+  var timeIso8601: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3Time {
   

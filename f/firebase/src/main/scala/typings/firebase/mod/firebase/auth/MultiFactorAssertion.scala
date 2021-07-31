@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or sign-in of a user who already verified the first factor.
   *
   */
-@js.native
 trait MultiFactorAssertion extends StObject {
   
   /**
     * The identifier of the second factor.
     */
-  var factorId: String = js.native
+  var factorId: String
 }
 object MultiFactorAssertion {
   

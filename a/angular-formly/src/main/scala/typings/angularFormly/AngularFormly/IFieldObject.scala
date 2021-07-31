@@ -13,11 +13,9 @@ import typings.angularFormly.anon.Dictkey
 import typings.angularFormly.anon.ErrorExistsAndShouldBeVisible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // see http://docs.angular-formly.com/docs/field-configuration-object
-@js.native
 trait IFieldObject extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait IFieldObject extends StObject {
     * Demo
     * see http://angular-formly.com/#/example/other/unique-value-async-validation
     */
-  var asyncValidators: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.native
+  var asyncValidators: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.undefined
   
   /**
     * You can specify your own class that will be applied to the formly-field directive (or ng-form of
@@ -34,7 +32,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#classname-string
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * This is a great way to add custom behavior to a specific field. It is injectable with the $scope of the
@@ -42,7 +40,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#controller-controller-name-as-string--controller-f
     */
-  var controller: js.UndefOr[String | js.Function] = js.native
+  var controller: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * This is reserved for the developer. You have our guarantee to be able to use this and not worry about
@@ -50,7 +48,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#data-object
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Use defaultValue to initialize it the model. If this is provided and the value of the
@@ -58,9 +56,9 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#defaultvalue-any
     */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var elementAttributes: js.UndefOr[StringDictionary[String]] = js.native
+  var elementAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * An object where the key is a property to be set on the main field config and the value is an
@@ -69,7 +67,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#expressionproperties-object
     */
-  var expressionProperties: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.native
+  var expressionProperties: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.undefined
   
   //ALL PROPERTIES BELOW ARE ADDED (So you should not be setting them yourself.)
   /**
@@ -77,7 +75,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#formcontrol-ngmodelcontroller
     */
-  var formControl: js.UndefOr[IFormController | js.Array[IFormController]] = js.native
+  var formControl: js.UndefOr[IFormController | js.Array[IFormController]] = js.undefined
   
   /**
     * Uses ng-if. Whether to hide the field. Defaults to false. If you wish this to be conditional, use
@@ -85,7 +83,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#hide-boolean
     */
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is similar to expressionProperties with a slight difference. You should (hopefully) never
@@ -94,7 +92,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#hideexpression-string--function
     */
-  var hideExpression: js.UndefOr[String | IExpressionFunction] = js.native
+  var hideExpression: js.UndefOr[String | IExpressionFunction] = js.undefined
   
   /**
     * This allows you to specify the id of your field (which will be used for its name as well unless
@@ -108,9 +106,9 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#id-string
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var initialValue: js.UndefOr[js.Any] = js.native
+  var initialValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can be set instead of type or template to use a custom html template form field. Works
@@ -118,7 +116,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#key-string
     */
-  var key: js.UndefOr[String | Double] = js.native
+  var key: js.UndefOr[String | Double] = js.undefined
   
   /**
     * This allows you to specify a link function. It is invoked after your template has finished compiling.
@@ -126,7 +124,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#link-link-function
     */
-  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.native
+  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.undefined
   
   /**
     * Allows you to take advantage of ng-model-options directive. Formly's built-in templateManipulator (see
@@ -136,7 +134,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#modeloptions
     */
-  var modelOptions: js.UndefOr[IModelOptions] = js.native
+  var modelOptions: js.UndefOr[IModelOptions] = js.undefined
   
   /**
     * If you wish to, you can specify a specific name for your ng-model. This is useful if you're posting
@@ -148,7 +146,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#name-string
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This is used by ngModelAttrsTemplateManipulator to automatically add attributes to the ng-model element
@@ -157,7 +155,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#ngmodelattrs-object
     */
-  var ngModelAttrs: js.UndefOr[Dictkey] = js.native
+  var ngModelAttrs: js.UndefOr[Dictkey] = js.undefined
   
   /**
     * This allows you to place attributes with string values on the ng-model element.
@@ -165,7 +163,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#ngmodelelattrs-object
     */
-  var ngModelElAttrs: js.UndefOr[StringDictionary[String]] = js.native
+  var ngModelElAttrs: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Used to tell angular-formly to not attempt to add the formControl property to your object. This is useful
@@ -174,7 +172,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#noformcontrol-boolean
     */
-  var noFormControl: js.UndefOr[Boolean] = js.native
+  var noFormControl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows you to specify extra types to get options from. Duplicate options are overridden in later priority
@@ -183,7 +181,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#optionstypes-string--array-of-strings
     */
-  var optionsTypes: js.UndefOr[String | js.Array[String]] = js.native
+  var optionsTypes: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Will reset the field's model and the field control to the last initialValue. This is used by the
@@ -191,7 +189,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#resetmodel-function
     */
-  var resetModel: js.UndefOr[js.Function0[Unit]] = js.native
+  var resetModel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * It is not likely that you'll ever want to invoke this function. It simply runs the expressionProperties expressions.
@@ -200,7 +198,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#runexpressions-function
     */
-  var runExpressions: js.UndefOr[js.Function0[Unit]] = js.native
+  var runExpressions: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Can be set instead of type or templateUrl to use a custom html
@@ -214,7 +212,7 @@ trait IFieldObject extends StObject {
     */
   var template: js.UndefOr[
     String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows you to specify custom template manipulators for this specific field. (use defaultOptions in a
@@ -222,7 +220,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#templatemanipulator-object-of-arrays-of-functions
     */
-  var templateManipulators: js.UndefOr[ITemplateManipulators] = js.native
+  var templateManipulators: js.UndefOr[ITemplateManipulators] = js.undefined
   
   /**
     * This is reserved for the templates. Any template-specific options go in here. Look at your specific
@@ -230,7 +228,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#templateoptions-object
     */
-  var templateOptions: js.UndefOr[ITemplateOptions] = js.native
+  var templateOptions: js.UndefOr[ITemplateOptions] = js.undefined
   
   /**
     * Can be set instead of type or template to use a custom html template form field. Works
@@ -240,7 +238,7 @@ trait IFieldObject extends StObject {
     */
   var templateUrl: js.UndefOr[
     String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of field to be rendered. This is the recommended method
@@ -248,7 +246,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#type-string
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Will reset the field's initialValue to the current state of the model. Useful if you load the model asynchronously.
@@ -256,12 +254,12 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#updateinitialvalue-function
     */
-  var updateInitialValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var updateInitialValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * An object with a few useful properties mostly handy when used in combination with ng-messages
     */
-  var validation: js.UndefOr[ErrorExistsAndShouldBeVisible] = js.native
+  var validation: js.UndefOr[ErrorExistsAndShouldBeVisible] = js.undefined
   
   /**
     * An object where the keys are the name of the validator and the values are Formly Expressions;
@@ -272,7 +270,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#validators-object
     */
-  var validators: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.native
+  var validators: js.UndefOr[StringDictionary[String | IExpressionFunction | IValidator]] = js.undefined
   
   /**
     * This is a getter/setter function for the value that your field is representing. Useful when using getterSetter: true
@@ -282,7 +280,7 @@ trait IFieldObject extends StObject {
     * see http://docs.angular-formly.com/docs/field-configuration-object#value-gettersetter-function
     */
   //Getter
-  var value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]]) = js.native
+  var value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])
   
   //Setter
   /**
@@ -293,7 +291,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#watcher-objectarray-of-watches
     */
-  var watcher: js.UndefOr[IWatcher | js.Array[IWatcher]] = js.native
+  var watcher: js.UndefOr[IWatcher | js.Array[IWatcher]] = js.undefined
   
   /**
     * This makes reference to setWrapper in formlyConfig. It is expected to be the name of the wrapper. If
@@ -303,12 +301,12 @@ trait IFieldObject extends StObject {
     *
     * http://docs.angular-formly.com/docs/field-configuration-object#wrapper-string--array-of-strings
     */
-  var wrapper: js.UndefOr[String | js.Array[String]] = js.native
+  var wrapper: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IFieldObject {
   
   @scala.inline
-  def apply(value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldObject = {
+  def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldObject]
   }
@@ -518,7 +516,7 @@ object IFieldObject {
     def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def setValue(value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])

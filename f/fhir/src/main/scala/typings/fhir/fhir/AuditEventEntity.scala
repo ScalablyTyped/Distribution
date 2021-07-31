@@ -2,79 +2,79 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data or objects used
   */
-@js.native
-trait AuditEventEntity extends BackboneElement {
+trait AuditEventEntity
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'query'.
     */
-  var _query: js.UndefOr[Element] = js.native
+  var _query: js.UndefOr[Element] = js.undefined
   
   /**
     * Descriptive text
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Additional Information about the entity
     */
-  var detail: js.UndefOr[js.Array[AuditEventEntityDetail]] = js.native
+  var detail: js.UndefOr[js.Array[AuditEventEntityDetail]] = js.undefined
   
   /**
     * Specific instance of object
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Life-cycle stage for the entity
     */
-  var lifecycle: js.UndefOr[Coding] = js.native
+  var lifecycle: js.UndefOr[Coding] = js.undefined
   
   /**
     * Descriptor for entity
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Query parameters
     */
-  var query: js.UndefOr[base64Binary] = js.native
+  var query: js.UndefOr[base64Binary] = js.undefined
   
   /**
     * Specific instance of resource
     */
-  var reference: js.UndefOr[Reference] = js.native
+  var reference: js.UndefOr[Reference] = js.undefined
   
   /**
     * What role the entity played
     */
-  var role: js.UndefOr[Coding] = js.native
+  var role: js.UndefOr[Coding] = js.undefined
   
   /**
     * Security labels on the entity
     */
-  var securityLabel: js.UndefOr[js.Array[Coding]] = js.native
+  var securityLabel: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Type of entity involved
     */
-  var `type`: js.UndefOr[Coding] = js.native
+  var `type`: js.UndefOr[Coding] = js.undefined
 }
 object AuditEventEntity {
   

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "BoostFactorScoreFunction")
 @js.native
-class BoostFactorScoreFunction protected () extends ScoreFunction {
+class BoostFactorScoreFunction protected ()
+  extends StObject
+     with ScoreFunction {
   /*
     Multiply the score by the provided boost_factor.
     */

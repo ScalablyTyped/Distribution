@@ -3,17 +3,15 @@ package typings.reactVirtualized.esTableMod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortParams extends StObject {
   
-  var defaultSortDirection: SortDirectionType = js.native
+  var defaultSortDirection: SortDirectionType
   
-  var event: MouseEvent = js.native
+  var event: MouseEvent
   
-  var sortBy: String = js.native
+  var sortBy: String
 }
 object SortParams {
   

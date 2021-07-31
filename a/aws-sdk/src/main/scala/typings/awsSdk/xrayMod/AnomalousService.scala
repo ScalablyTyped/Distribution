@@ -2,13 +2,11 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnomalousService extends StObject {
   
-  var ServiceId: js.UndefOr[typings.awsSdk.xrayMod.ServiceId] = js.native
+  var ServiceId: js.UndefOr[typings.awsSdk.xrayMod.ServiceId] = js.undefined
 }
 object AnomalousService {
   

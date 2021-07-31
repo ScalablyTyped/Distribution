@@ -31,10 +31,8 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait positionConfig extends StObject {
   
   /**
@@ -42,41 +40,41 @@ trait positionConfig extends StObject {
     */
   var at: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:positionConfig.boundary]
     */
-  var boundary: js.UndefOr[String | Element | JQuery | Window] = js.native
+  var boundary: js.UndefOr[String | Element | JQuery | Window] = js.undefined
   
   /**
     * [descr:positionConfig.boundaryOffset]
     */
-  var boundaryOffset: js.UndefOr[String | Y] = js.native
+  var boundaryOffset: js.UndefOr[String | Y] = js.undefined
   
   /**
     * [descr:positionConfig.collision]
     */
   var collision: js.UndefOr[
     fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:positionConfig.my]
     */
   var my: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:positionConfig.of]
     */
-  var of: js.UndefOr[String | Element | JQuery | Window] = js.native
+  var of: js.UndefOr[String | Element | JQuery | Window] = js.undefined
   
   /**
     * [descr:positionConfig.offset]
     */
-  var offset: js.UndefOr[String | Y] = js.native
+  var offset: js.UndefOr[String | Y] = js.undefined
 }
 object positionConfig {
   

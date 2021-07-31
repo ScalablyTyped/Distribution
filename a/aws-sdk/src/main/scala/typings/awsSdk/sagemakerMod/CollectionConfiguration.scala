@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionConfiguration extends StObject {
   
   /**
     * The name of the tensor collection. The name must be unique relative to other rule configuration names.
     */
-  var CollectionName: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionName] = js.native
+  var CollectionName: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionName] = js.undefined
   
   /**
     * Parameter values for the tensor collection. The allowed parameters are "name", "include_regex", "reduction_config", "save_config", "tensor_names", and "save_histogram".
     */
-  var CollectionParameters: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionParameters] = js.native
+  var CollectionParameters: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionParameters] = js.undefined
 }
 object CollectionConfiguration {
   

@@ -3,18 +3,17 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.OBJECT_EVENTS_DESTROYED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectEventDestroyed
-  extends ObjectEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with ObjectEvent {
   
   @JSName("ph")
-  var ph_ObjectEventDestroyed: OBJECT_EVENTS_DESTROYED = js.native
+  var ph_ObjectEventDestroyed: OBJECT_EVENTS_DESTROYED
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object ObjectEventDestroyed {
   

@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a proximity sensor to determine whether or not an object is detected. */
 @js.native
 trait ProximitySensor extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(
     `type`: readingchanged,
@@ -42,12 +41,12 @@ trait ProximitySensor extends StObject {
   var minDistanceInMillimeters: Double = js.native
   
   /** Occurs each time the proximity sensor reports a new value. */
-  def onreadingchanged(ev: ProximitySensorReadingChangedEventArgs with WinRTEvent[ProximitySensor]): Unit = js.native
+  def onreadingchanged(ev: ProximitySensorReadingChangedEventArgs & WinRTEvent[ProximitySensor]): Unit = js.native
   /** Occurs each time the proximity sensor reports a new value. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[ProximitySensor, ProximitySensorReadingChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(
     `type`: readingchanged,

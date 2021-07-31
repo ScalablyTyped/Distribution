@@ -5,21 +5,26 @@ import typings.hapiBoom.hapiBoomStrings._empty
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@hapi/boom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@hapi/boom", "Boom")
   @js.native
   /**
     * Creates a new Boom object using the provided message
     */
-  class Boom[Data] () extends Error {
+  class Boom[Data] ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: Error) = this()
-    def this(message: js.UndefOr[scala.Nothing], options: Options[Data]) = this()
     def this(message: String, options: Options[Data]) = this()
+    def this(message: Unit, options: Options[Data]) = this()
     def this(message: Error, options: Options[Data]) = this()
     
     /**
@@ -36,6 +41,12 @@ object mod {
       * Convenience boolean indicating status code >= 500
       */
     var isServer: Boolean = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * The formatted response
@@ -56,484 +67,342 @@ object mod {
     var typeof: js.Function = js.native
   }
   
-  @JSImport("@hapi/boom", "badData")
-  @js.native
-  def badData[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badData")
-  @js.native
-  def badData[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badData")
-  @js.native
-  def badData[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badData")
-  @js.native
-  def badData[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def badData[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badData[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badData[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badData[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "badGateway")
-  @js.native
-  def badGateway[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badGateway")
-  @js.native
-  def badGateway[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badGateway")
-  @js.native
-  def badGateway[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badGateway")
-  @js.native
-  def badGateway[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def badGateway[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badGateway[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badGateway[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badGateway[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "badImplementation")
-  @js.native
-  def badImplementation[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badImplementation")
-  @js.native
-  def badImplementation[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badImplementation")
-  @js.native
-  def badImplementation[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badImplementation")
-  @js.native
-  def badImplementation[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def badImplementation[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badImplementation[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badImplementation[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badImplementation[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "badRequest")
-  @js.native
-  def badRequest[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badRequest")
-  @js.native
-  def badRequest[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badRequest")
-  @js.native
-  def badRequest[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "badRequest")
-  @js.native
-  def badRequest[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def badRequest[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badRequest[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badRequest[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def badRequest[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "boomify")
-  @js.native
-  def boomify[Data, Decoration](err: Error): Boom[Data] with Decoration = js.native
-  @JSImport("@hapi/boom", "boomify")
-  @js.native
-  def boomify[Data, Decoration](err: Error, options: Options[Data] with Decorate[Decoration]): Boom[Data] with Decoration = js.native
+  @scala.inline
+  def boomify[Data, Decoration](err: Error): Boom[Data] & Decoration = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any]).asInstanceOf[Boom[Data] & Decoration]
+  @scala.inline
+  def boomify[Data, Decoration](err: Error, options: Options[Data] & Decorate[Decoration]): Boom[Data] & Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & Decoration]
   
-  @JSImport("@hapi/boom", "clientTimeout")
-  @js.native
-  def clientTimeout[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "clientTimeout")
-  @js.native
-  def clientTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "clientTimeout")
-  @js.native
-  def clientTimeout[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "clientTimeout")
-  @js.native
-  def clientTimeout[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def clientTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def clientTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def clientTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def clientTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "conflict")
-  @js.native
-  def conflict[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "conflict")
-  @js.native
-  def conflict[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "conflict")
-  @js.native
-  def conflict[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "conflict")
-  @js.native
-  def conflict[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def conflict[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def conflict[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def conflict[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def conflict[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "entityTooLarge")
-  @js.native
-  def entityTooLarge[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "entityTooLarge")
-  @js.native
-  def entityTooLarge[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "entityTooLarge")
-  @js.native
-  def entityTooLarge[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "entityTooLarge")
-  @js.native
-  def entityTooLarge[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def entityTooLarge[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def entityTooLarge[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def entityTooLarge[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def entityTooLarge[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "expectationFailed")
-  @js.native
-  def expectationFailed[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "expectationFailed")
-  @js.native
-  def expectationFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "expectationFailed")
-  @js.native
-  def expectationFailed[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "expectationFailed")
-  @js.native
-  def expectationFailed[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def expectationFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def expectationFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def expectationFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def expectationFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "failedDependency")
-  @js.native
-  def failedDependency[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "failedDependency")
-  @js.native
-  def failedDependency[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "failedDependency")
-  @js.native
-  def failedDependency[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "failedDependency")
-  @js.native
-  def failedDependency[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def failedDependency[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def failedDependency[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def failedDependency[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def failedDependency[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "forbidden")
-  @js.native
-  def forbidden[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "forbidden")
-  @js.native
-  def forbidden[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "forbidden")
-  @js.native
-  def forbidden[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "forbidden")
-  @js.native
-  def forbidden[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def forbidden[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def forbidden[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def forbidden[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def forbidden[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "gatewayTimeout")
-  @js.native
-  def gatewayTimeout[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "gatewayTimeout")
-  @js.native
-  def gatewayTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "gatewayTimeout")
-  @js.native
-  def gatewayTimeout[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "gatewayTimeout")
-  @js.native
-  def gatewayTimeout[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def gatewayTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def gatewayTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def gatewayTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def gatewayTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "illegal")
-  @js.native
-  def illegal[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "illegal")
-  @js.native
-  def illegal[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "illegal")
-  @js.native
-  def illegal[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "illegal")
-  @js.native
-  def illegal[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def illegal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def illegal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def illegal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def illegal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: js.UndefOr[scala.Nothing], data: Data, statusCode: Double): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], statusCode: Double): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: String, data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: String, data: Data, statusCode: Double): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "internal")
-  @js.native
-  def internal[Data](message: String, data: js.UndefOr[scala.Nothing], statusCode: Double): Boom[Data] = js.native
+  @scala.inline
+  def internal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: String, data: Data, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: String, data: Unit, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: Unit, data: Data, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def internal[Data](message: Unit, data: Unit, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "isBoom")
-  @js.native
-  def isBoom(err: Error): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = js.native
-  @JSImport("@hapi/boom", "isBoom")
-  @js.native
-  def isBoom(err: Error, statusCode: Double): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = js.native
+  @scala.inline
+  def isBoom(err: Error): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(err.asInstanceOf[js.Any]).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
+  @scala.inline
+  def isBoom(err: Error, statusCode: Double): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(err.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
   
-  @JSImport("@hapi/boom", "lengthRequired")
-  @js.native
-  def lengthRequired[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "lengthRequired")
-  @js.native
-  def lengthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "lengthRequired")
-  @js.native
-  def lengthRequired[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "lengthRequired")
-  @js.native
-  def lengthRequired[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def lengthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def lengthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def lengthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def lengthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "locked")
-  @js.native
-  def locked[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "locked")
-  @js.native
-  def locked[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "locked")
-  @js.native
-  def locked[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "locked")
-  @js.native
-  def locked[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def locked[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def locked[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def locked[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def locked[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data, allow: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data, allow: js.Array[String]): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], allow: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], allow: js.Array[String]): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String, data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String, data: Data, allow: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "methodNotAllowed")
-  @js.native
-  def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: js.Array[String]): Boom[Data] = js.native
+  @scala.inline
+  def methodNotAllowed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: String, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: Unit, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: Unit, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: Unit, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def methodNotAllowed[Data](message: Unit, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "notAcceptable")
-  @js.native
-  def notAcceptable[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notAcceptable")
-  @js.native
-  def notAcceptable[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notAcceptable")
-  @js.native
-  def notAcceptable[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notAcceptable")
-  @js.native
-  def notAcceptable[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def notAcceptable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notAcceptable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notAcceptable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notAcceptable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "notFound")
-  @js.native
-  def notFound[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notFound")
-  @js.native
-  def notFound[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notFound")
-  @js.native
-  def notFound[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notFound")
-  @js.native
-  def notFound[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def notFound[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notFound[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notFound[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notFound[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "notImplemented")
-  @js.native
-  def notImplemented[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notImplemented")
-  @js.native
-  def notImplemented[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notImplemented")
-  @js.native
-  def notImplemented[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "notImplemented")
-  @js.native
-  def notImplemented[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def notImplemented[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notImplemented[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notImplemented[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def notImplemented[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "paymentRequired")
-  @js.native
-  def paymentRequired[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "paymentRequired")
-  @js.native
-  def paymentRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "paymentRequired")
-  @js.native
-  def paymentRequired[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "paymentRequired")
-  @js.native
-  def paymentRequired[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def paymentRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def paymentRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def paymentRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def paymentRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "preconditionFailed")
-  @js.native
-  def preconditionFailed[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionFailed")
-  @js.native
-  def preconditionFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionFailed")
-  @js.native
-  def preconditionFailed[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionFailed")
-  @js.native
-  def preconditionFailed[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def preconditionFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "preconditionRequired")
-  @js.native
-  def preconditionRequired[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionRequired")
-  @js.native
-  def preconditionRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionRequired")
-  @js.native
-  def preconditionRequired[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "preconditionRequired")
-  @js.native
-  def preconditionRequired[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def preconditionRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def preconditionRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "proxyAuthRequired")
-  @js.native
-  def proxyAuthRequired[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "proxyAuthRequired")
-  @js.native
-  def proxyAuthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "proxyAuthRequired")
-  @js.native
-  def proxyAuthRequired[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "proxyAuthRequired")
-  @js.native
-  def proxyAuthRequired[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def proxyAuthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def proxyAuthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def proxyAuthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def proxyAuthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "rangeNotSatisfiable")
-  @js.native
-  def rangeNotSatisfiable[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "rangeNotSatisfiable")
-  @js.native
-  def rangeNotSatisfiable[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "rangeNotSatisfiable")
-  @js.native
-  def rangeNotSatisfiable[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "rangeNotSatisfiable")
-  @js.native
-  def rangeNotSatisfiable[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def rangeNotSatisfiable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def rangeNotSatisfiable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def rangeNotSatisfiable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def rangeNotSatisfiable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "resourceGone")
-  @js.native
-  def resourceGone[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "resourceGone")
-  @js.native
-  def resourceGone[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "resourceGone")
-  @js.native
-  def resourceGone[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "resourceGone")
-  @js.native
-  def resourceGone[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def resourceGone[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def resourceGone[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def resourceGone[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def resourceGone[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "serverUnavailable")
-  @js.native
-  def serverUnavailable[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "serverUnavailable")
-  @js.native
-  def serverUnavailable[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "serverUnavailable")
-  @js.native
-  def serverUnavailable[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "serverUnavailable")
-  @js.native
-  def serverUnavailable[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def serverUnavailable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def serverUnavailable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def serverUnavailable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def serverUnavailable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "teapot")
-  @js.native
-  def teapot[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "teapot")
-  @js.native
-  def teapot[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "teapot")
-  @js.native
-  def teapot[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "teapot")
-  @js.native
-  def teapot[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def teapot[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def teapot[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def teapot[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def teapot[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "tooEarly")
-  @js.native
-  def tooEarly[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooEarly")
-  @js.native
-  def tooEarly[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooEarly")
-  @js.native
-  def tooEarly[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooEarly")
-  @js.native
-  def tooEarly[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def tooEarly[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooEarly")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooEarly[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooEarly")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooEarly[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooEarly")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooEarly[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooEarly")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "tooManyRequests")
-  @js.native
-  def tooManyRequests[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooManyRequests")
-  @js.native
-  def tooManyRequests[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooManyRequests")
-  @js.native
-  def tooManyRequests[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "tooManyRequests")
-  @js.native
-  def tooManyRequests[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def tooManyRequests[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooManyRequests[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooManyRequests[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def tooManyRequests[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   object unauthorized {
     
+    @scala.inline
+    def apply[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: String, scheme: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: String, scheme: String, attributes: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: String, scheme: String, attributes: Attributes): Boom[Data] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: String, wwwAuthenticate: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], wwwAuthenticate.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: Null, scheme: String): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    @scala.inline
+    def apply[Data](message: Null, scheme: String, attributes: String): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    @scala.inline
+    def apply[Data](message: Null, scheme: String, attributes: Attributes): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    @scala.inline
+    def apply[Data](message: Null, wwwAuthenticate: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], wwwAuthenticate.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+    @scala.inline
+    def apply[Data](message: _empty, scheme: String): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    @scala.inline
+    def apply[Data](message: _empty, scheme: String, attributes: String): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    @scala.inline
+    def apply[Data](message: _empty, scheme: String, attributes: Attributes): Boom[Data] & MissingAuth = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & MissingAuth]
+    
     @JSImport("@hapi/boom", "unauthorized")
     @js.native
-    def apply[Data](): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: String): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: String, scheme: String): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: String, scheme: String, attributes: String): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: String, scheme: String, attributes: Attributes): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: String, wwwAuthenticate: js.Array[String]): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: Null, scheme: String): Boom[Data] with MissingAuth = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: Null, scheme: String, attributes: String): Boom[Data] with MissingAuth = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: Null, scheme: String, attributes: Attributes): Boom[Data] with MissingAuth = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: Null, wwwAuthenticate: js.Array[String]): Boom[Data] = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: _empty, scheme: String): Boom[Data] with MissingAuth = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: _empty, scheme: String, attributes: String): Boom[Data] with MissingAuth = js.native
-    @JSImport("@hapi/boom", "unauthorized")
-    @js.native
-    def apply[Data](message: _empty, scheme: String, attributes: Attributes): Boom[Data] with MissingAuth = js.native
+    val ^ : js.Any = js.native
     
     type Attributes = StringDictionary[js.UndefOr[Double | String | Null]]
     
-    @js.native
     trait MissingAuth extends StObject {
       
       /**
         * Indicate whether the 401 unauthorized error is due to missing credentials (vs. invalid)
         */
-      var isMissing: Boolean = js.native
+      var isMissing: Boolean
     }
     object MissingAuth {
       
@@ -552,39 +421,30 @@ object mod {
     }
   }
   
-  @JSImport("@hapi/boom", "unsupportedMediaType")
-  @js.native
-  def unsupportedMediaType[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "unsupportedMediaType")
-  @js.native
-  def unsupportedMediaType[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "unsupportedMediaType")
-  @js.native
-  def unsupportedMediaType[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "unsupportedMediaType")
-  @js.native
-  def unsupportedMediaType[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def unsupportedMediaType[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def unsupportedMediaType[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def unsupportedMediaType[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def unsupportedMediaType[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @JSImport("@hapi/boom", "uriTooLong")
-  @js.native
-  def uriTooLong[Data](): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "uriTooLong")
-  @js.native
-  def uriTooLong[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "uriTooLong")
-  @js.native
-  def uriTooLong[Data](message: String): Boom[Data] = js.native
-  @JSImport("@hapi/boom", "uriTooLong")
-  @js.native
-  def uriTooLong[Data](message: String, data: Data): Boom[Data] = js.native
+  @scala.inline
+  def uriTooLong[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")().asInstanceOf[Boom[Data]]
+  @scala.inline
+  def uriTooLong[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def uriTooLong[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  @scala.inline
+  def uriTooLong[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  @js.native
   trait Decorate[Decoration] extends StObject {
     
     /**
       * An option with extra properties to set on the error object
       */
-    var decorate: js.UndefOr[Decoration] = js.native
+    var decorate: js.UndefOr[Decoration] = js.undefined
   }
   object Decorate {
     
@@ -595,7 +455,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DecorateMutableBuilder[Self <: Decorate[_], Decoration] (val x: Self with Decorate[Decoration]) extends AnyVal {
+    implicit class DecorateMutableBuilder[Self <: Decorate[?], Decoration] (val x: Self & Decorate[Decoration]) extends AnyVal {
       
       @scala.inline
       def setDecorate(value: Decoration): Self = StObject.set(x, "decorate", value.asInstanceOf[js.Any])
@@ -605,39 +465,38 @@ object mod {
     }
   }
   
-  @js.native
   trait Options[Data] extends StObject {
     
     /**
       * Constructor reference used to crop the exception call stack output
       */
-    var ctor: js.UndefOr[js.Function] = js.native
+    var ctor: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Additional error information
       */
-    var data: js.UndefOr[Data] = js.native
+    var data: js.UndefOr[Data] = js.undefined
     
     /**
       * Error message string
       *
       * @default none
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * If false, the err provided is a Boom object, and a statusCode or message are provided, the values are ignored
       *
       * @default true
       */
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The HTTP status code
       *
       * @default 500
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -648,7 +507,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], Data] (val x: Self with Options[Data]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], Data] (val x: Self & Options[Data]) extends AnyVal {
       
       @scala.inline
       def setCtor(value: js.Function): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
@@ -682,23 +541,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
     /**
       * An object containing any HTTP headers where each key is a header name and value is the header content
       */
-    var headers: js.Object = js.native
+    var headers: js.Object
     
     /**
       * The formatted object used as the response payload (stringified)
       */
-    var payload: Payload = js.native
+    var payload: Payload
     
     /**
       * The HTTP status code
       */
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Output {
     
@@ -722,23 +580,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
     /**
       * The HTTP status message derived from statusCode
       */
-    var error: String = js.native
+    var error: String
     
     /**
       The error message derived from error.message
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The HTTP status code derived from error.output.statusCode
       */
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Payload {
     

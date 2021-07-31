@@ -2,103 +2,101 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingJob extends StObject {
   
-  var AppSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.AppSpecification] = js.native
+  var AppSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.AppSpecification] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AutoML job associated with this processing job.
     */
-  var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.native
+  var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.undefined
   
   /**
     * The time the processing job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Sets the environment variables in the Docker container.
     */
-  var Environment: js.UndefOr[ProcessingEnvironmentMap] = js.native
+  var Environment: js.UndefOr[ProcessingEnvironmentMap] = js.undefined
   
   /**
     * A string, up to one KB in size, that contains metadata from the processing container when the processing job exits.
     */
-  var ExitMessage: js.UndefOr[typings.awsSdk.sagemakerMod.ExitMessage] = js.native
+  var ExitMessage: js.UndefOr[typings.awsSdk.sagemakerMod.ExitMessage] = js.undefined
   
-  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.native
+  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.undefined
   
   /**
     * A string, up to one KB in size, that contains the reason a processing job failed, if it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The time the processing job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of a monitoring schedule for an endpoint associated with this processing job.
     */
-  var MonitoringScheduleArn: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringScheduleArn] = js.native
+  var MonitoringScheduleArn: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringScheduleArn] = js.undefined
   
-  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.native
+  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.undefined
   
   /**
     * The time that the processing job ended.
     */
-  var ProcessingEndTime: js.UndefOr[Timestamp] = js.native
+  var ProcessingEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * For each input, data is downloaded from S3 into the processing container before the processing job begins running if "S3InputMode" is set to File.
     */
-  var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.native
+  var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.undefined
   
   /**
     * The ARN of the processing job.
     */
-  var ProcessingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobArn] = js.native
+  var ProcessingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobArn] = js.undefined
   
   /**
     * The name of the processing job.
     */
-  var ProcessingJobName: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobName] = js.native
+  var ProcessingJobName: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobName] = js.undefined
   
   /**
     * The status of the processing job.
     */
-  var ProcessingJobStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobStatus] = js.native
+  var ProcessingJobStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingJobStatus] = js.undefined
   
-  var ProcessingOutputConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingOutputConfig] = js.native
+  var ProcessingOutputConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingOutputConfig] = js.undefined
   
-  var ProcessingResources: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingResources] = js.native
+  var ProcessingResources: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingResources] = js.undefined
   
   /**
     * The time that the processing job started.
     */
-  var ProcessingStartTime: js.UndefOr[Timestamp] = js.native
+  var ProcessingStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the role used to create the processing job.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.undefined
   
-  var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.native
+  var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.undefined
   
   /**
     * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ARN of the training job associated with this processing job.
     */
-  var TrainingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJobArn] = js.native
+  var TrainingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJobArn] = js.undefined
 }
 object ProcessingJob {
   

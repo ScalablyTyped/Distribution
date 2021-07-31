@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutoscalingDeleteAutoscalingPolicy extends Generic {
+trait AutoscalingDeleteAutoscalingPolicy
+  extends StObject
+     with Generic {
   
-  var name: String = js.native
+  var name: String
 }
 object AutoscalingDeleteAutoscalingPolicy {
   

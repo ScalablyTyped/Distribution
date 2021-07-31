@@ -2,15 +2,15 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JitterEffect extends VertexEffect {
+trait JitterEffect
+  extends StObject
+     with VertexEffect {
   
-  var jitterX: Double = js.native
+  var jitterX: Double
   
-  var jitterY: Double = js.native
+  var jitterY: Double
 }
 object JitterEffect {
   

@@ -2,13 +2,11 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  var readPreference: typings.typeorm.mongodbTypingsMod.ReadPreference | String = js.native
+  var readPreference: typings.typeorm.mongodbTypingsMod.ReadPreference | String
 }
 object `6` {
   

@@ -2,7 +2,6 @@ package typings.cordovaPluginDeviceOrientation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,9 +10,18 @@ object global {
   @JSGlobal("CompassError")
   @js.native
   class CompassError protected ()
-    extends typings.cordovaPluginDeviceOrientation.CompassError {
+    extends StObject
+       with typings.cordovaPluginDeviceOrientation.CompassError {
     /** Constructor for CompassError object */
     def this(code: Double) = this()
+    
+    /**
+      * One of the predefined error codes
+      *     CompassError.COMPASS_INTERNAL_ERR
+      *     CompassError.COMPASS_NOT_SUPPORTED
+      */
+    /* CompleteClass */
+    var code: Double = js.native
   }
   object CompassError {
     

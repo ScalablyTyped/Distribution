@@ -13,7 +13,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -83,12 +82,11 @@ object mod {
     AfterCarouselItems
   ]
   
-  @js.native
   trait CarouselPluginTypes extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var resolve: CarouselPluginFunc = js.native
+    var resolve: CarouselPluginFunc
   }
   object CarouselPluginTypes {
     
@@ -116,28 +114,27 @@ object mod {
     }
   }
   
-  @js.native
   trait CarouselProps extends StObject {
     
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
-    var breakpoints: js.UndefOr[PickCarouselPropsExcludek] = js.native
+    var breakpoints: js.UndefOr[PickCarouselPropsExcludek] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var itemWidth: js.UndefOr[Double] = js.native
+    var itemWidth: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String | CarouselPluginTypes]] = js.native
+    var plugins: js.UndefOr[js.Array[String | CarouselPluginTypes]] = js.undefined
     
-    var slides: js.UndefOr[js.Array[Element]] = js.native
+    var slides: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object CarouselProps {
     
@@ -218,20 +215,19 @@ object mod {
     }
   }
   
-  @js.native
   trait DotsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var thumbnails: js.UndefOr[js.Array[ImgProps]] = js.native
+    var thumbnails: js.UndefOr[js.Array[ImgProps]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object DotsProps {
     

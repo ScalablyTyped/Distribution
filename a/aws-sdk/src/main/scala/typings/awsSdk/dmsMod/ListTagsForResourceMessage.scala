@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the AWS DMS resource.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
 }
 object ListTagsForResourceMessage {
   

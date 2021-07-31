@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVersionComment extends StObject {
   
-  val LastModifiedBy: IPropertyValue = js.native
+  val LastModifiedBy: IPropertyValue
   
-  val ObjVer: IObjVer = js.native
+  val ObjVer: IObjVer
   
-  val StatusChanged: IPropertyValue = js.native
+  val StatusChanged: IPropertyValue
   
-  val VersionComment: IPropertyValue = js.native
+  val VersionComment: IPropertyValue
 }
 object IVersionComment {
   

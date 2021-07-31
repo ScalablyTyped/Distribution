@@ -8,29 +8,29 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.p
 import typings.elasticElasticsearch.elasticElasticsearchStrings.t
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatThreadPool extends Generic {
+trait CatThreadPool
+  extends StObject
+     with Generic {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var size: js.UndefOr[_empty | k | m | g | t | p] = js.native
+  var size: js.UndefOr[_empty | k | m | g | t | p] = js.undefined
   
-  var thread_pool_patterns: js.UndefOr[String | js.Array[String]] = js.native
+  var thread_pool_patterns: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatThreadPool {
   

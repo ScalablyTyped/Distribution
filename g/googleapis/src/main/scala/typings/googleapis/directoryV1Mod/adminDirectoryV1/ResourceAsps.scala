@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Asps")
@@ -31,7 +30,7 @@ class ResourceAsps protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAspsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAspsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceAsps protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAsp] = js.native
   def get(callback: BodyResponseCallback[SchemaAsp]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAsp] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAsp] = js.native
   def get(params: ParamsResourceAspsGet): GaxiosPromise[SchemaAsp] = js.native
   def get(params: ParamsResourceAspsGet, callback: BodyResponseCallback[SchemaAsp]): Unit = js.native
   def get(
@@ -82,7 +81,7 @@ class ResourceAsps protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAsps] = js.native
   def list(callback: BodyResponseCallback[SchemaAsps]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAsps] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAsps] = js.native
   def list(params: ParamsResourceAspsList): GaxiosPromise[SchemaAsps] = js.native
   def list(params: ParamsResourceAspsList, callback: BodyResponseCallback[SchemaAsps]): Unit = js.native
   def list(

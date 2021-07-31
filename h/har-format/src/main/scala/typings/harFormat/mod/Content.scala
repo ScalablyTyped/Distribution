@@ -2,20 +2,18 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Number of bytes saved. Leave out this field if the information is not
     * available.
     */
-  var compression: js.UndefOr[Double] = js.native
+  var compression: js.UndefOr[Double] = js.undefined
   
   /**
     * Encoding used for response text field e.g `base64`.
@@ -24,7 +22,7 @@ trait Content extends StObject {
     * (decompressed & unchunked), than trans-coded from its original character
     * set into UTF-8.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * MIME type of the response text (value of the Content-Type response
@@ -32,7 +30,7 @@ trait Content extends StObject {
     *
     * The charset attribute of the MIME type is included (if available).
     */
-  var mimeType: String = js.native
+  var mimeType: String
   
   /**
     * Length of the returned content in bytes.
@@ -40,7 +38,7 @@ trait Content extends StObject {
     * Should be equal to `response.bodySize` if there is no compression and
     * bigger when the content has been compressed.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Response body sent from the server or loaded from the browser cache.
@@ -52,7 +50,7 @@ trait Content extends StObject {
     *
     * Leave out this field if the information is not available.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Content {
   

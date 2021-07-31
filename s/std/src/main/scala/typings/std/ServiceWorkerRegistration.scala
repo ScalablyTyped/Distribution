@@ -3,27 +3,28 @@ package typings.std
 import typings.std.stdStrings.updatefound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This ServiceWorker API interface represents the service worker registration. You register a service worker to control one or more pages that share the same origin. */
 @js.native
-trait ServiceWorkerRegistration extends EventTarget {
+trait ServiceWorkerRegistration
+  extends StObject
+     with EventTarget {
   
   val active: ServiceWorker | Null = js.native
   
   @JSName("addEventListener")
-  def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -34,22 +35,22 @@ trait ServiceWorkerRegistration extends EventTarget {
   
   val navigationPreload: NavigationPreloadManager = js.native
   
-  var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   val pushManager: PushManager = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

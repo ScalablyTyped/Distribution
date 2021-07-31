@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassBufferedStream extends ClassStream {
+trait ClassBufferedStream
+  extends StObject
+     with ClassStream {
   
   /**
     * class prop 
@@ -51,8 +52,8 @@ trait ClassBufferedStream extends ClassStream {
     * 
     * 
     */
-  def readLines(): js.Array[_] = js.native
-  def readLines(maxlines: Double): js.Array[_] = js.native
+  def readLines(): js.Array[js.Any] = js.native
+  def readLines(maxlines: Double): js.Array[js.Any] = js.native
   
   /**
     * 

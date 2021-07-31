@@ -3,15 +3,13 @@ package typings.arangodb.ArangoDB
 import typings.arangodb.anon.ExecutionTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExtra extends StObject {
   
-  var stats: ExecutionTime = js.native
+  var stats: ExecutionTime
   
-  var warnings: js.Array[String] = js.native
+  var warnings: js.Array[String]
 }
 object QueryExtra {
   

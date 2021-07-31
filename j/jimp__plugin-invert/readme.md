@@ -12,7 +12,7 @@ invert an image.
 | Keywords           | - |
 | # releases         | 101 |
 | # dependents       | 1 |
-| # downloads        | 37927095 |
+| # downloads        | 42338125 |
 | # stars            | 0 |
 
 ## Links

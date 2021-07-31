@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XTimeStamped
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,16 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.UpdatableLayer Service providing write access to a configuration data layer.
   * @since OOo 1.1.2
   */
-@js.native
 trait Layer
-  extends XCompositeLayer
+  extends StObject
+     with XCompositeLayer
      with XTimeStamped {
   
   /**
     * The URL of the layer data.
     * @since OOo 2.0
     */
-  var URL: String = js.native
+  var URL: String
 }
 object Layer {
   

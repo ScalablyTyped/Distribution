@@ -4,26 +4,26 @@ import typings.intlMessageformatParser.intlMessageformatParserNumbers.`0`
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberSkeleton extends Skeleton {
+trait NumberSkeleton
+  extends StObject
+     with Skeleton {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var parsedOptions: NumberFormatOptions = js.native
+  var parsedOptions: NumberFormatOptions
   
-  var tokens: js.Array[NumberSkeletonToken] = js.native
+  var tokens: js.Array[NumberSkeletonToken]
   
-  var `type`: `0` = js.native
+  var `type`: `0`
 }
 object NumberSkeleton {
   
   @scala.inline
-  def apply(parsedOptions: NumberFormatOptions, tokens: js.Array[NumberSkeletonToken], `type`: `0`): NumberSkeleton = {
+  def apply(parsedOptions: NumberFormatOptions, tokens: js.Array[NumberSkeletonToken]): NumberSkeleton = {
     val __obj = js.Dynamic.literal(parsedOptions = parsedOptions.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0)
     __obj.asInstanceOf[NumberSkeleton]
   }
   

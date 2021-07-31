@@ -2,27 +2,25 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportComponentInfo extends StObject {
   
   /**
     * 子元素（canDragIn才有）
     * 只存子元素在 map 中的 key
     */
-  var layoutChilds: js.UndefOr[js.Array[String]] = js.native
+  var layoutChilds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * 父级 mapUniqueKey, 这样不但方便寻找父级,还能根据是否为 null 判断是否为根元素
     */
-  var parentMapUniqueKey: String = js.native
+  var parentMapUniqueKey: String
   
   /**
     * props
     */
-  var props: ComponentProps = js.native
+  var props: ComponentProps
 }
 object ViewportComponentInfo {
   

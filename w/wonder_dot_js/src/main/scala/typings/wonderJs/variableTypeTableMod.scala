@@ -1,21 +1,23 @@
 package typings.wonderJs
 
 import typings.wonderJs.evariabletypeMod.EVariableType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableTypeTable", JSImport.Namespace)
-@js.native
-object variableTypeTableMod extends js.Object {
-  @js.native
-  class VariableTypeTable () extends js.Object
+object variableTypeTableMod {
   
+  @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableTypeTable", "VariableTypeTable")
+  @js.native
+  class VariableTypeTable () extends StObject
   /* static members */
-  @js.native
-  object VariableTypeTable extends js.Object {
-    def getVariableType(`type`: EVariableType): String = js.native
+  object VariableTypeTable {
+    
+    @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableTypeTable", "VariableTypeTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getVariableType(`type`: EVariableType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  
 }
-

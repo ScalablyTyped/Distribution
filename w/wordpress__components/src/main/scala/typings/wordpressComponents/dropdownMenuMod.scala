@@ -9,7 +9,6 @@ import typings.wordpressComponents.dropdownMod.Dropdown.RenderProps
 import typings.wordpressComponents.popoverMod.Popover.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMenuMod {
@@ -28,39 +27,38 @@ object dropdownMenuMod {
   
   object DropdownMenu {
     
-    @js.native
     trait BaseProps extends StObject {
       
       /**
         * A class name to apply to the dropdown wrapper element.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The Dashicon icon slug to be shown in the collapsed menu button.
         * @defaultValue "menu"
         */
-      var icon: js.UndefOr[Icon] = js.native
+      var icon: js.UndefOr[Icon] = js.undefined
       
       /**
         * A human-readable label to present as accessibility text on the
         * focused collapsed menu button.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * A human-readable label to present as accessibility text on the
         * expanded menu container.
         * @defaultValue value of `label`
         */
-      var menuLabel: js.UndefOr[String] = js.native
+      var menuLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The direction in which the menu should open. Specify y- and x-axis
         * as a space-separated string.
         * @defaultValue "top center"
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
     }
     object BaseProps {
       
@@ -102,28 +100,27 @@ object dropdownMenuMod {
       }
     }
     
-    @js.native
     trait Control extends StObject {
       
       /**
         * Dashicon icon slug.
         */
-      var icon: Icon = js.native
+      var icon: Icon
       
       /**
         * Describes whether or not the control is disabled.
         */
-      var isDisabled: js.UndefOr[Boolean] = js.native
+      var isDisabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Function to invoke when the option is selected.
         */
-      def onClick(): Unit = js.native
+      def onClick(): Unit
       
       /**
         * Human-readable title for the control.
         */
-      var title: String = js.native
+      var title: String
     }
     object Control {
       
@@ -173,9 +170,9 @@ object dropdownMenuMod {
       }
     }
     
-    @js.native
     trait PropsWithChildren
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
       /**
@@ -183,9 +180,9 @@ object dropdownMenuMod {
         * valid for use in a `DropdownMenu`: `MenuItem`, `MenuItemsChoice`, or
         * `MenuGroup`.
         */
-      def children(props: RenderProps): Element = js.native
+      def children(props: RenderProps): Element
       
-      var controls: js.UndefOr[scala.Nothing] = js.native
+      var controls: js.UndefOr[scala.Nothing] = js.undefined
     }
     object PropsWithChildren {
       
@@ -203,18 +200,18 @@ object dropdownMenuMod {
       }
     }
     
-    @js.native
     trait PropsWithControls
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
       /**
         * An array of objects describing the options to be shown in the
         * expanded menu.
         */
-      var controls: js.Array[Control] = js.native
+      var controls: js.Array[Control]
     }
     object PropsWithControls {
       

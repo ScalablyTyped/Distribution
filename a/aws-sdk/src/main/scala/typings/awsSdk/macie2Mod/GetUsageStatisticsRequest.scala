@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageStatisticsRequest extends StObject {
   
   /**
     * An array of objects, one for each condition to use to filter the query results. If the array contains more than one object, Amazon Macie uses an AND operator to join the conditions specified by the objects.
     */
-  var filterBy: js.UndefOr[listOfUsageStatisticsFilter] = js.native
+  var filterBy: js.UndefOr[listOfUsageStatisticsFilter] = js.undefined
   
   /**
     * The maximum number of items to include in each page of the response.
     */
-  var maxResults: js.UndefOr[integer] = js.native
+  var maxResults: js.UndefOr[integer] = js.undefined
   
   /**
     * The nextToken string that specifies which page of results to return in a paginated response.
     */
-  var nextToken: js.UndefOr[string] = js.native
+  var nextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The criteria to use to sort the query results.
     */
-  var sortBy: js.UndefOr[UsageStatisticsSortBy] = js.native
+  var sortBy: js.UndefOr[UsageStatisticsSortBy] = js.undefined
 }
 object GetUsageStatisticsRequest {
   

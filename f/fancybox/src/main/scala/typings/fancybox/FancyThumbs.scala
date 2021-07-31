@@ -2,42 +2,40 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyThumbs extends StObject {
   
   @JSName("$button")
-  var $button: js.UndefOr[JQuery] = js.native
+  var $button: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$grid")
-  var $grid: js.UndefOr[JQuery] = js.native
+  var $grid: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$list")
-  var $list: js.UndefOr[JQuery] = js.native
+  var $list: js.UndefOr[JQuery] = js.undefined
   
-  def create(): Unit = js.native
+  def create(): Unit
   
-  def focus(duration: Double): Unit = js.native
+  def focus(duration: Double): Unit
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def init(instance: FancyBoxInstance): Unit = js.native
+  def init(instance: FancyBoxInstance): Unit
   
-  var instance: FancyBoxInstance = js.native
+  var instance: FancyBoxInstance
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var opts: FancyThumbsOptions = js.native
+  var opts: FancyThumbsOptions
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object FancyThumbs {
   

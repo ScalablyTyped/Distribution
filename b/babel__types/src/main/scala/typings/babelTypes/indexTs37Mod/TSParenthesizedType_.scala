@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSParenthesizedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSParenthesizedType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSParenthesizedType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSParenthesizedType_ : TSParenthesizedType = js.native
+  var type_TSParenthesizedType_ : TSParenthesizedType
 }
 object TSParenthesizedType_ {
   
   @scala.inline
-  def apply(`type`: TSParenthesizedType, typeAnnotation: TSType): TSParenthesizedType_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: TSType): TSParenthesizedType_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSParenthesizedType")
     __obj.asInstanceOf[TSParenthesizedType_]
   }
   

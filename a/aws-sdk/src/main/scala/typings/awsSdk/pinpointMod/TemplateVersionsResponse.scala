@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateVersionsResponse extends StObject {
   
   /**
     * An array of responses, one for each version of the message template.
     */
-  var Item: ListOfTemplateVersionResponse = js.native
+  var Item: ListOfTemplateVersionResponse
   
   /**
     * The message that's returned from the API for the request to retrieve information about all the versions of the message template.
     */
-  var Message: js.UndefOr[string] = js.native
+  var Message: js.UndefOr[string] = js.undefined
   
   /**
     * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null if there are no additional pages.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the request to retrieve information about all the versions of the message template.
     */
-  var RequestID: js.UndefOr[string] = js.native
+  var RequestID: js.UndefOr[string] = js.undefined
 }
 object TemplateVersionsResponse {
   

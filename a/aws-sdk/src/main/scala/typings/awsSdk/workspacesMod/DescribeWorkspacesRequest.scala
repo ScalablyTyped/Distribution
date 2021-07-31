@@ -2,41 +2,39 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspacesRequest extends StObject {
   
   /**
     * The identifier of the bundle. All WorkSpaces that are created from this bundle are retrieved. You cannot combine this parameter with any other filter.
     */
-  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.native
+  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.undefined
   
   /**
     * The identifier of the directory. In addition, you can optionally specify a specific directory user (see UserName). You cannot combine this parameter with any other filter.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.undefined
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.undefined
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The name of the directory user. You must specify this parameter with DirectoryId.
     */
-  var UserName: js.UndefOr[typings.awsSdk.workspacesMod.UserName] = js.native
+  var UserName: js.UndefOr[typings.awsSdk.workspacesMod.UserName] = js.undefined
   
   /**
     * The identifiers of the WorkSpaces. You cannot combine this parameter with any other filter. Because the CreateWorkspaces operation is asynchronous, the identifier it returns is not immediately available. If you immediately call DescribeWorkspaces with this identifier, no information is returned.
     */
-  var WorkspaceIds: js.UndefOr[WorkspaceIdList] = js.native
+  var WorkspaceIds: js.UndefOr[WorkspaceIdList] = js.undefined
 }
 object DescribeWorkspacesRequest {
   

@@ -14,7 +14,6 @@ import typings.vegas.vegasStrings.vegasplay
 import typings.vegas.vegasStrings.vegaswalk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,7 +39,9 @@ object mod {
     - typings.vegas.vegasStrings.kenburnsDownLeft
     - typings.vegas.vegasStrings.kenburnsDownRight
   */
-  trait Animation extends _AnimationType
+  trait Animation
+    extends StObject
+       with _AnimationType
   object Animation {
     
     @scala.inline
@@ -91,7 +92,6 @@ object mod {
     def isVideoCompatible(): Boolean = js.native
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
@@ -99,38 +99,38 @@ object mod {
       * Could be `center` `top` `right` `bottom` `left` or a percentage.
       * @default 'center'
       */
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
     /**
       * Set the animation of the slides.
       * Could be an animation name, `random` or an array of transition picked randomly.
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       */
-    var animation: js.UndefOr[AnimationType] = js.native
+    var animation: js.UndefOr[AnimationType] = js.undefined
     
     /**
       * Set the animation duration in milliseconds.
       * Could be `auto` so the animation duration will be equal to the slide delay .
       * @default 'auto'
       */
-    var animationDuration: js.UndefOr[Duration] = js.native
+    var animationDuration: js.UndefOr[Duration] = js.undefined
     
     /**
       * Add custom animations to the animations list available in random mode.
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       */
-    var animationRegister: js.UndefOr[js.Array[String]] = js.native
+    var animationRegister: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Start the Slideshow automatically.
       * @default true
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Slide background color
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * `true` the slide image is scaled to fit the container.
@@ -138,42 +138,42 @@ object mod {
       * `repeat` the slide image is repeated.
       * @default true
       */
-    var cover: js.UndefOr[Boolean | repeat] = js.native
+    var cover: js.UndefOr[Boolean | repeat] = js.undefined
     
     /**
       * Delay beetween slides in milliseconds
       * @default 5_000
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Function called when the Slideshow is completed (loop: false).
       */
-    var end: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    var end: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
     /**
       * Set the transition for the first played slide.
       * Could be a transition name, `random` or an array of transition picked randomly.
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       */
-    var firstTransition: js.UndefOr[TransitionType] = js.native
+    var firstTransition: js.UndefOr[TransitionType] = js.undefined
     
     /**
       * Set the transition duration in milliseconds for the first played slide.
       * Could be `auto` so the transition duration will be equal to the slide delay .
       */
-    var firstTransitionDuration: js.UndefOr[Duration] = js.native
+    var firstTransitionDuration: js.UndefOr[Duration] = js.undefined
     
     /**
       * Function called when Vegas is applied to an element.
       */
-    var init: js.UndefOr[js.Function1[/* settings */ this.type, Unit]] = js.native
+    var init: js.UndefOr[js.Function1[/* settings */ this.type, Unit]] = js.undefined
     
     /**
       * Loop the Slideshow.
       * @default true
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Display/hide the overlay.
@@ -181,60 +181,60 @@ object mod {
       * These image can be found in the overlays folder. Read the Overlay section for more information.
       * @default false
       */
-    var overlay: js.UndefOr[Boolean | String] = js.native
+    var overlay: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Function called when Vegas pauses the slideshow.
       */
-    var pause: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    var pause: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
     /**
       * Function called when Vegas starts to play the slideshow.
       */
-    var play: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    var play: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
     /**
       * Preload both images and videos at start.
       * @default false
       */
-    var preload: js.UndefOr[Boolean] = js.native
+    var preload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Preload images at start. preload must be false .
       * @default false
       */
-    var preloadImage: js.UndefOr[Boolean] = js.native
+    var preloadImage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The array of slides is shuffled before.
       * @default false
       */
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index number of initial slide.
       * @default 0
       */
-    var slide: js.UndefOr[Double] = js.native
+    var slide: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of slides
       * {@link http://vegas.jaysalvat.com/documentation/settings/#slide}
       */
-    var slides: js.UndefOr[js.Array[Slide]] = js.native
+    var slides: js.UndefOr[js.Array[Slide]] = js.undefined
     
     /**
       * Number of slides to keep in the background before removing it.
       * @default 1
       */
-    var slidesToKeep: js.UndefOr[Double] = js.native
+    var slidesToKeep: js.UndefOr[Double] = js.undefined
     
     /**
       * Display/hide timer bar.
       * The timer class is .vegas-timer-progress .
       * @default true
       */
-    var timer: js.UndefOr[Boolean] = js.native
+    var timer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the transition between slides.
@@ -242,32 +242,32 @@ object mod {
       * {@link http://vegas.jaysalvat.com/documentation/transitions}
       * @default 'fade'
       */
-    var transition: js.UndefOr[TransitionType] = js.native
+    var transition: js.UndefOr[TransitionType] = js.undefined
     
     /**
       * Set the transition duration in milliseconds.
       * Could be `auto` so the transition duration will be equal to the slide delay.
       * @default 1_000
       */
-    var transitionDuration: js.UndefOr[Duration] = js.native
+    var transitionDuration: js.UndefOr[Duration] = js.undefined
     
     /**
       * Add custom transitions to the transitions list available in random mode.
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       */
-    var transitionRegister: js.UndefOr[js.Array[String]] = js.native
+    var transitionRegister: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Vertical alignment of the image in the slide.
       * Could be `center` `top` `right` `bottom` `left` or a percentage.
       * @default 'center'
       */
-    var valign: js.UndefOr[AlignType] = js.native
+    var valign: js.UndefOr[AlignType] = js.undefined
     
     /**
       * Function called when Vegas changes the slide.
       */
-    var walk: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    var walk: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
   }
   object Settings {
     
@@ -468,50 +468,49 @@ object mod {
     }
   }
   
-  @js.native
   trait Slide extends StObject {
     
     /**
       * Horizontal alignment of the image in the slide.
       * @default 'center'
       */
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
     /**
       * Set the animation of this slide.
       * Could be an animation name, `random` or an array of transition picked randomly.
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       */
-    var animation: js.UndefOr[AnimationType] = js.native
+    var animation: js.UndefOr[AnimationType] = js.undefined
     
     /**
       * Set the animation duration in milliseconds.
       * Could be `auto` so the animation duration will be equal to the slide delay .
       */
-    var animationDuration: js.UndefOr[Duration] = js.native
+    var animationDuration: js.UndefOr[Duration] = js.undefined
     
     /**
       * Slide background color.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * `true` the background image is scaled to fit the container.
       * `false` the background image is displayed entirely.
       * @default true
       */
-    var cover: js.UndefOr[Boolean] = js.native
+    var cover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Delay beetween slides in milliseconds.
       * @default 5_000
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Path of the image.
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
     /**
       * Set the transition of this slide.
@@ -519,25 +518,25 @@ object mod {
       * {@link http://vegas.jaysalvat.com/documentation/transitions/}
       * @default 'fade'
       */
-    var transition: js.UndefOr[TransitionType] = js.native
+    var transition: js.UndefOr[TransitionType] = js.undefined
     
     /**
       * Set the transition duration in milliseconds.
       * Could be `auto` so the transition duration will be equal to the slide delay .
       * @default 1_000
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Vertical alignment of the image in the slide.
       * @default 'center'
       */
-    var valing: js.UndefOr[AlignType] = js.native
+    var valing: js.UndefOr[AlignType] = js.undefined
     
     /**
       * {@link http://vegas.jaysalvat.com/documentation/settings/#videos}
       */
-    var video: js.UndefOr[Video] = js.native
+    var video: js.UndefOr[Video] = js.undefined
   }
   object Slide {
     
@@ -624,14 +623,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Support extends StObject {
     
-    val objectFit: Boolean = js.native
+    val objectFit: Boolean
     
-    val transition: Boolean = js.native
+    val transition: Boolean
     
-    val video: Boolean = js.native
+    val video: Boolean
   }
   object Support {
     
@@ -683,7 +681,9 @@ object mod {
     - typings.vegas.vegasStrings.swirlRight
     - typings.vegas.vegasStrings.swirlRight2
   */
-  trait Transition extends _TransitionType
+  trait Transition
+    extends StObject
+       with _TransitionType
   object Transition {
     
     @scala.inline
@@ -776,7 +776,7 @@ object mod {
   
   type VegasInitEvent = vegasinit
   
-  type VegasInitHnalder[TElement] = TriggeredEvent[TElement, js.UndefOr[scala.Nothing], HTMLElement, HTMLElement]
+  type VegasInitHnalder[TElement] = TriggeredEvent[TElement, Unit, HTMLElement, HTMLElement]
   
   type VegasPause = vegaspause
   
@@ -784,24 +784,23 @@ object mod {
   
   type VegasWalk = vegaswalk
   
-  @js.native
   trait Video extends StObject {
     
     /**
       * @default false
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path of the video.
       * Could be a string or an array of sources.
       */
-    var src: String | js.Array[String] = js.native
+    var src: String | js.Array[String]
   }
   object Video {
     
@@ -869,13 +868,27 @@ object mod {
       var vegas_Original: JQueryExtension = js.native
     }
     
-    @js.native
     trait JQueryStatic extends StObject {
       
-      def vegas(): JQuery[HTMLElement] = js.native
-      def vegas(config: Settings): JQuery[HTMLElement] = js.native
+      def vegas(): JQuery[HTMLElement]
+      def vegas(config: Settings): JQuery[HTMLElement]
       @JSName("vegas")
-      var vegas_Original: JQueryExtension = js.native
+      var vegas_Original: JQueryExtension
+    }
+    object JQueryStatic {
+      
+      @scala.inline
+      def apply(vegas: JQueryExtension): JQueryStatic = {
+        val __obj = js.Dynamic.literal(vegas = vegas.asInstanceOf[js.Any])
+        __obj.asInstanceOf[JQueryStatic]
+      }
+      
+      @scala.inline
+      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setVegas(value: JQueryExtension): Self = StObject.set(x, "vegas", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

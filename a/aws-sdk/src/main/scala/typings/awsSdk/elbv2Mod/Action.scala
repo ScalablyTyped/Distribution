@@ -2,51 +2,49 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     * [HTTPS listeners] Information for using Amazon Cognito to authenticate users. Specify only when Type is authenticate-cognito.
     */
-  var AuthenticateCognitoConfig: js.UndefOr[AuthenticateCognitoActionConfig] = js.native
+  var AuthenticateCognitoConfig: js.UndefOr[AuthenticateCognitoActionConfig] = js.undefined
   
   /**
     * [HTTPS listeners] Information about an identity provider that is compliant with OpenID Connect (OIDC). Specify only when Type is authenticate-oidc.
     */
-  var AuthenticateOidcConfig: js.UndefOr[AuthenticateOidcActionConfig] = js.native
+  var AuthenticateOidcConfig: js.UndefOr[AuthenticateOidcActionConfig] = js.undefined
   
   /**
     * [Application Load Balancer] Information for creating an action that returns a custom HTTP response. Specify only when Type is fixed-response.
     */
-  var FixedResponseConfig: js.UndefOr[FixedResponseActionConfig] = js.native
+  var FixedResponseConfig: js.UndefOr[FixedResponseActionConfig] = js.undefined
   
   /**
     * Information for creating an action that distributes requests among one or more target groups. For Network Load Balancers, you can specify a single target group. Specify only when Type is forward. If you specify both ForwardConfig and TargetGroupArn, you can specify only one target group using ForwardConfig and it must be the same target group specified in TargetGroupArn.
     */
-  var ForwardConfig: js.UndefOr[ForwardActionConfig] = js.native
+  var ForwardConfig: js.UndefOr[ForwardActionConfig] = js.undefined
   
   /**
     * The order for the action. This value is required for rules with multiple actions. The action with the lowest value for order is performed first.
     */
-  var Order: js.UndefOr[ActionOrder] = js.native
+  var Order: js.UndefOr[ActionOrder] = js.undefined
   
   /**
     * [Application Load Balancer] Information for creating a redirect action. Specify only when Type is redirect.
     */
-  var RedirectConfig: js.UndefOr[RedirectActionConfig] = js.native
+  var RedirectConfig: js.UndefOr[RedirectActionConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the target group. Specify only when Type is forward and you want to route to a single target group. To route to one or more target groups, use ForwardConfig instead.
     */
-  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.native
+  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.undefined
   
   /**
     * The type of action.
     */
-  var Type: ActionTypeEnum = js.native
+  var Type: ActionTypeEnum
 }
 object Action {
   

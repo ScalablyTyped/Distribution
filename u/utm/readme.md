@@ -12,7 +12,7 @@ Bidirectional UTM-WGS84 converter
 | Keywords           | utm, latlon |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 157683 |
+| # downloads        | 229601 |
 | # stars            | 0 |
 
 ## Links

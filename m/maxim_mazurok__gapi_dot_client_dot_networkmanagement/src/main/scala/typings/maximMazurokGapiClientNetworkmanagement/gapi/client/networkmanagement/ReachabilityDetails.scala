@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReachabilityDetails extends StObject {
   
   /** The details of a failure or a cancellation of reachability analysis. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /** The overall reachability result of the test. */
-  var result: js.UndefOr[String] = js.native
+  var result: js.UndefOr[String] = js.undefined
   
   /** Result may contain a list of traces if a test has multiple possible paths in the network, such as when destination endpoint is a load balancer with multiple backends. */
-  var traces: js.UndefOr[js.Array[Trace]] = js.native
+  var traces: js.UndefOr[js.Array[Trace]] = js.undefined
   
   /** The time the reachability state was verified. */
-  var verifyTime: js.UndefOr[String] = js.native
+  var verifyTime: js.UndefOr[String] = js.undefined
 }
 object ReachabilityDetails {
   

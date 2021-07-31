@@ -3,19 +3,20 @@ package typings.moment.momentMod
 import typings.moment.momentMod.unitOfTime.Base
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Duration_
-  extends _DurationInputArg1
+  extends StObject
+     with _DurationInputArg1
      with _LocaleSpecifier {
   
   def abs(): Duration_ = js.native
   
   def add(): Duration_ = js.native
-  def add(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
+  def add(inp: Unit, unit: DurationInputArg2): Duration_ = js.native
   def add(inp: DurationInputArg1): Duration_ = js.native
+  def add(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = js.native
   
   def as(units: Base): Double = js.native
   
@@ -43,9 +44,9 @@ trait Duration_
   
   def humanize(): String = js.native
   def humanize(argThresholds: argThresholdOpts): String = js.native
-  def humanize(argWithSuffix: js.UndefOr[scala.Nothing], argThresholds: argThresholdOpts): String = js.native
   def humanize(argWithSuffix: Boolean): String = js.native
   def humanize(argWithSuffix: Boolean, argThresholds: argThresholdOpts): String = js.native
+  def humanize(argWithSuffix: Unit, argThresholds: argThresholdOpts): String = js.native
   
   def isValid(): Boolean = js.native
   
@@ -72,8 +73,9 @@ trait Duration_
   def seconds(): Double = js.native
   
   def subtract(): Duration_ = js.native
-  def subtract(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
+  def subtract(inp: Unit, unit: DurationInputArg2): Duration_ = js.native
   def subtract(inp: DurationInputArg1): Duration_ = js.native
+  def subtract(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = js.native
   
   def toISOString(): String = js.native
   

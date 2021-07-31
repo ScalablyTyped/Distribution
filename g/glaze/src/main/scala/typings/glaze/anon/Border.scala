@@ -2,29 +2,27 @@ package typings.glaze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
-  val borderWidth: `2` = js.native
+  val borderWidth: `2`
   
-  val duration: `1000ms` = js.native
+  val duration: `1000ms`
   
-  val fontSize: `05` = js.native
+  val fontSize: `05`
   
-  val letterSpacing: Normal = js.native
+  val letterSpacing: Normal
   
-  val lineHeight: Base = js.native
+  val lineHeight: Base
   
-  val radius: Full = js.native
+  val radius: Full
   
-  val shadow: Inner = js.native
+  val shadow: Inner
   
-  val size: `1` = js.native
+  val size: `1`
   
-  val spacing: `0` = js.native
+  val spacing: `0`
 }
 object Border {
   

@@ -2,35 +2,33 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Executive extends StObject {
   
   /**
     * A filter on the list of people returned based on whether these people are
     * directors of the account’s company.
     */
-  var director: js.UndefOr[Boolean] = js.native
+  var director: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A filter on the list of people returned based on whether these people are
     * executives of the account’s company.
     */
-  var executive: js.UndefOr[Boolean] = js.native
+  var executive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A filter on the list of people returned based on whether these people are
     * owners of the account’s company.
     */
-  var owner: js.UndefOr[Boolean] = js.native
+  var owner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A filter on the list of people returned based on whether these people are
     * the representative of the account’s company.
     */
-  var representative: js.UndefOr[Boolean] = js.native
+  var representative: js.UndefOr[Boolean] = js.undefined
 }
 object Executive {
   

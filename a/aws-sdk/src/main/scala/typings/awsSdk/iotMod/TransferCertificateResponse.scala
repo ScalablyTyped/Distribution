@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferCertificateResponse extends StObject {
   
   /**
     * The ARN of the certificate.
     */
-  var transferredCertificateArn: js.UndefOr[CertificateArn] = js.native
+  var transferredCertificateArn: js.UndefOr[CertificateArn] = js.undefined
 }
 object TransferCertificateResponse {
   

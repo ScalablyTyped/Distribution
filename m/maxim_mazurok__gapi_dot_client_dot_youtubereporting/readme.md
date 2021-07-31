@@ -10,9 +10,9 @@ TypeScript typings for YouTube Reporting API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.youtubereporting |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 46 |
 | # dependents       | 1 |
-| # downloads        | 154 |
+| # downloads        | 3130 |
 | # stars            | 0 |
 
 ## Links

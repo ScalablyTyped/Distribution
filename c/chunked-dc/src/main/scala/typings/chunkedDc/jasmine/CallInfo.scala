@@ -2,25 +2,23 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallInfo extends StObject {
   
   /** All arguments passed to the call */
-  var args: js.Array[_] = js.native
+  var args: js.Array[js.Any]
   
   /** The context (the this) for the call */
-  var `object`: js.Any = js.native
+  var `object`: js.Any
   
   /** The return value of the call */
-  var returnValue: js.Any = js.native
+  var returnValue: js.Any
 }
 object CallInfo {
   
   @scala.inline
-  def apply(args: js.Array[_], `object`: js.Any, returnValue: js.Any): CallInfo = {
+  def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInfo]
@@ -30,7 +28,7 @@ object CallInfo {
   implicit class CallInfoMutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

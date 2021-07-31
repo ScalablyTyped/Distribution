@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationTimeValue extends StObject {
   
   /**
     *  Contains an integer specifying time in minutes.   Valid values: 15 minutes. 
     */
-  var Minutes: js.UndefOr[typings.awsSdk.s3Mod.Minutes] = js.native
+  var Minutes: js.UndefOr[typings.awsSdk.s3Mod.Minutes] = js.undefined
 }
 object ReplicationTimeValue {
   

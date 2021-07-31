@@ -2,30 +2,30 @@ package typings.webpackBlocksPostcss
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("@webpack-blocks/postcss", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/postcss", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
+  val ^ : js.Any = js.native
   
   type FunctionType = js.Function0[String]
   
-  @js.native
   trait Options extends StObject {
     
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var stringifier: js.UndefOr[String] = js.native
+    var stringifier: js.UndefOr[String] = js.undefined
     
-    var syntax: js.UndefOr[String] = js.native
+    var syntax: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -45,7 +45,7 @@ object mod {
       def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -67,14 +67,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    var parser: js.UndefOr[String | FunctionType] = js.native
+    var parser: js.UndefOr[String | FunctionType] = js.undefined
     
-    var stringifier: js.UndefOr[String | FunctionType] = js.native
+    var stringifier: js.UndefOr[String | FunctionType] = js.undefined
     
-    var syntax: js.UndefOr[String | FunctionType] = js.native
+    var syntax: js.UndefOr[String | FunctionType] = js.undefined
   }
   object Plugin {
     

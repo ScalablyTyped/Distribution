@@ -2,21 +2,19 @@ package typings.eurekaJsClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    def debug(args: js.Any*): Unit = js.native
+    def debug(args: js.Any*): Unit
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: js.Any*): Unit
     
-    def info(args: js.Any*): Unit = js.native
+    def info(args: js.Any*): Unit
     
-    def warn(args: js.Any*): Unit = js.native
+    def warn(args: js.Any*): Unit
   }
   object Debug {
     

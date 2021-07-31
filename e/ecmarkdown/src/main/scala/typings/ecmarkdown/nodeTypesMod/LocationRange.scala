@@ -2,15 +2,13 @@ package typings.ecmarkdown.nodeTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRange extends StObject {
   
-  var end: Position = js.native
+  var end: Position
   
-  var start: Position = js.native
+  var start: Position
 }
 object LocationRange {
   

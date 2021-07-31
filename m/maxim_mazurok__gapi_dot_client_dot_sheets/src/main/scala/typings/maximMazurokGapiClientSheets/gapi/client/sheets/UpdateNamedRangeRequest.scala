@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNamedRangeRequest extends StObject {
   
   /**
     * The fields that should be updated. At least one field must be specified. The root `namedRange` is implied and should not be specified. A single `"*"` can be used as short-hand for
     * listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The named range to update with the new properties. */
-  var namedRange: js.UndefOr[NamedRange] = js.native
+  var namedRange: js.UndefOr[NamedRange] = js.undefined
 }
 object UpdateNamedRangeRequest {
   

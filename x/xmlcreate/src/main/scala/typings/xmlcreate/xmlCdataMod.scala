@@ -2,31 +2,31 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlCdataMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlCdata", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlCdata[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlCdata[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCdataOptions) = this()
   }
   
-  @js.native
   trait IXmlCdataOptions extends StObject {
     
     /**
       * The character data of the CDATA section.
       */
-    var charData: String = js.native
+    var charData: String
     
     /**
       * Whether to replace any invalid characters in the character data of the
       * CDATA section with the Unicode replacement character. By default, this
       * is disabled.
       */
-    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.native
+    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlCdataOptions {
     

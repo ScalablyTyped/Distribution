@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSecurityState extends StObject {
   
   // Complex type containing file hashes (cryptographic and location-sensitive).
-  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.native
+  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.undefined
   
   // File name (without path).
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Full file path of the file/imageFile.
-  var path: js.UndefOr[NullableOption[String]] = js.native
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a
     * percentage.
     */
-  var riskScore: js.UndefOr[NullableOption[String]] = js.native
+  var riskScore: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileSecurityState {
   

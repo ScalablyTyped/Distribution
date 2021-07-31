@@ -6,15 +6,15 @@ import typings.sigmajs.SigmaJs.SVGEdgeLabels
 import typings.sigmajs.SigmaJs.SVGObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait DictrenderType extends /* renderType */ StringDictionary[SVGObject[Edge] | SVGEdgeLabels] {
+  trait DictrenderType
+    extends StObject
+       with /* renderType */ StringDictionary[SVGObject[Edge] | SVGEdgeLabels] {
     
-    var labels: SVGEdgeLabels = js.native
+    var labels: SVGEdgeLabels
   }
   object DictrenderType {
     
@@ -32,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

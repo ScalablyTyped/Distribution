@@ -3,18 +3,16 @@ package typings.umbraco.umbraco.services
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Show dialog args
   */
-@js.native
 trait IShowDialogArgs extends StObject {
   
-  var action: IShowDialogAction = js.native
+  var action: IShowDialogAction
   
-  var scope: IScope = js.native
+  var scope: IScope
 }
 object IShowDialogArgs {
   

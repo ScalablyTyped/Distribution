@@ -2,21 +2,21 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Html5AdBuilder[Html5Ad] extends AdBuilder[Html5AdBuilder[Html5Ad]] {
+trait Html5AdBuilder[Html5Ad]
+  extends StObject
+     with AdBuilder[Html5AdBuilder[Html5Ad]] {
   
-  def withDimensions(dimensions: String): Html5AdBuilder[Html5Ad] = js.native
+  def withDimensions(dimensions: String): Html5AdBuilder[Html5Ad]
   
-  def withDisplayUrl(displayUrl: String): Html5AdBuilder[Html5Ad] = js.native
+  def withDisplayUrl(displayUrl: String): Html5AdBuilder[Html5Ad]
   
-  def withEntryPoint(entryPoint: String): Html5AdBuilder[Html5Ad] = js.native
+  def withEntryPoint(entryPoint: String): Html5AdBuilder[Html5Ad]
   
-  def withMediaBundle(mediaBundle: Media): Html5AdBuilder[Html5Ad] = js.native
+  def withMediaBundle(mediaBundle: Media): Html5AdBuilder[Html5Ad]
   
-  def withName(name: String): Html5AdBuilder[Html5Ad] = js.native
+  def withName(name: String): Html5AdBuilder[Html5Ad]
 }
 object Html5AdBuilder {
   
@@ -38,7 +38,7 @@ object Html5AdBuilder {
   }
   
   @scala.inline
-  implicit class Html5AdBuilderMutableBuilder[Self <: Html5AdBuilder[_], Html5Ad] (val x: Self with Html5AdBuilder[Html5Ad]) extends AnyVal {
+  implicit class Html5AdBuilderMutableBuilder[Self <: Html5AdBuilder[?], Html5Ad] (val x: Self & Html5AdBuilder[Html5Ad]) extends AnyVal {
     
     @scala.inline
     def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDimensions", js.Any.fromFunction1(value))

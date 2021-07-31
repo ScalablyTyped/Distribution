@@ -2,10 +2,8 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleMap extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ModuleMap extends StObject {
     *
     * @param address Address that might belong to a module in the map.
     */
-  def find(address: NativePointerValue): Module | Null = js.native
+  def find(address: NativePointerValue): Module | Null
   
   /**
     * Just like `find()`, but only returns the `name` field, which means less overhead when you don’t need the
@@ -21,7 +19,7 @@ trait ModuleMap extends StObject {
     *
     * @param address Address that might belong to a module in the map.
     */
-  def findName(address: NativePointerValue): String | Null = js.native
+  def findName(address: NativePointerValue): String | Null
   
   /**
     * Just like `find()`, but only returns the `path` field, which means less overhead when you don’t need the
@@ -29,14 +27,14 @@ trait ModuleMap extends StObject {
     *
     * @param address Address that might belong to a module in the map.
     */
-  def findPath(address: NativePointerValue): String | Null = js.native
+  def findPath(address: NativePointerValue): String | Null
   
   /**
     * Looks up a module by address. Throws an exception if not found.
     *
     * @param address Address that might belong to a module in the map.
     */
-  def get(address: NativePointerValue): Module = js.native
+  def get(address: NativePointerValue): Module
   
   /**
     * Just like `get()`, but only returns the `name` field, which means less overhead when you don’t need the
@@ -44,7 +42,7 @@ trait ModuleMap extends StObject {
     *
     * @param address Address that might belong to a module in the map.
     */
-  def getName(address: NativePointerValue): String = js.native
+  def getName(address: NativePointerValue): String
   
   /**
     * Just like `get()`, but only returns the `path` field, which means less overhead when you don’t need the
@@ -52,27 +50,27 @@ trait ModuleMap extends StObject {
     *
     * @param address Address that might belong to a module in the map.
     */
-  def getPath(address: NativePointerValue): String = js.native
+  def getPath(address: NativePointerValue): String
   
   /**
     * Determines if `address` belongs to any of the contained modules.
     *
     * @param address Address that might belong to a module in the map.
     */
-  def has(address: NativePointerValue): Boolean = js.native
+  def has(address: NativePointerValue): Boolean
   
   /**
     * Updates the map.
     *
     * You should call this after a module has been loaded or unloaded to avoid operating on stale data.
     */
-  def update(): Unit = js.native
+  def update(): Unit
   
   /**
     * Gets the modules currently in the map. The returned array is a deep copy and will not mutate after a
     * call to `update()`.
     */
-  def values(): js.Array[Module] = js.native
+  def values(): js.Array[Module]
 }
 object ModuleMap {
   

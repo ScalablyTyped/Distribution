@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamsTab extends Entity {
+trait TeamsTab
+  extends StObject
+     with Entity {
   
   // Container for custom settings applied to a tab. The tab is considered configured only once this property is set.
-  var configuration: js.UndefOr[NullableOption[TeamsTabConfiguration]] = js.native
+  var configuration: js.UndefOr[NullableOption[TeamsTabConfiguration]] = js.undefined
   
   // Name of the tab.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The application that is linked to the tab. This cannot be changed after tab creation.
-  var teamsApp: js.UndefOr[NullableOption[TeamsApp]] = js.native
+  var teamsApp: js.UndefOr[NullableOption[TeamsApp]] = js.undefined
   
   // Deep link URL of the tab instance. Read only.
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TeamsTab {
   

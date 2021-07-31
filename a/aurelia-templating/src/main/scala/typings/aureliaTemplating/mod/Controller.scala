@@ -3,7 +3,6 @@ package typings.aureliaTemplating.mod
 import typings.aureliaDependencyInjection.mod.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "Controller")
@@ -35,9 +34,9 @@ class Controller protected () extends StObject {
     * @param owningView The view inside which this controller resides.
     */
   def automate(): Unit = js.native
-  def automate(overrideContext: js.UndefOr[scala.Nothing], owningView: View_): Unit = js.native
   def automate(overrideContext: js.Object): Unit = js.native
   def automate(overrideContext: js.Object, owningView: View_): Unit = js.native
+  def automate(overrideContext: Unit, owningView: View_): Unit = js.native
   
   /**
     * The HtmlBehaviorResource that provides the base behavior for this controller.

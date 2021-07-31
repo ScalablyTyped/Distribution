@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyAckDeadlineRequest extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait ModifyAckDeadlineRequest extends StObject {
     * increase in the rate of message redeliveries (that is, duplicates). The minimum deadline you can specify is 0 seconds. The maximum deadline you can specify is 600 seconds (10
     * minutes).
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /** Required. List of acknowledgment IDs. */
-  var ackIds: js.UndefOr[js.Array[String]] = js.native
+  var ackIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyAckDeadlineRequest {
   

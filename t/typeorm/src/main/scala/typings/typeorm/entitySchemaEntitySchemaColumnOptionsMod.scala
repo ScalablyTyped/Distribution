@@ -13,126 +13,126 @@ import typings.typeorm.typeormStrings.uuid
 import typings.typeorm.typesColumnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitySchemaEntitySchemaColumnOptionsMod {
   
-  @js.native
-  trait EntitySchemaColumnOptions extends SpatialColumnOptions {
+  trait EntitySchemaColumnOptions
+    extends StObject
+       with SpatialColumnOptions {
     
     /**
       * Default database value.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Indicates if this column is an array.
       * Can be simply set to true or array length can be specified.
       * Supported only by postgres.
       */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generated column expression. Supports only in MySQL.
       */
-    var asExpression: js.UndefOr[String] = js.native
+    var asExpression: js.UndefOr[String] = js.undefined
     
     /**
       * Defines a column character set.
       * Not supported by all database types.
       */
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
     /**
       * Defines a column collation.
       */
-    var collation: js.UndefOr[String] = js.native
+    var collation: js.UndefOr[String] = js.undefined
     
     /**
       * Extra column definition. Should be used only in emergency situations. Note that if you'll use this property
       * auto schema generation will not work properly anymore. Avoid using it.
       */
-    var columnDefinition: js.UndefOr[String] = js.native
+    var columnDefinition: js.UndefOr[String] = js.undefined
     
     /**
       * Column comment.
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if this column is a created date column.
       */
-    var createDate: js.UndefOr[Boolean] = js.native
+    var createDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this column is a delete date column.
       */
-    var deleteDate: js.UndefOr[Boolean] = js.native
+    var deleteDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of possible enumerated values.
       */
-    var enum: js.UndefOr[js.Array[_] | js.Object] = js.native
+    var `enum`: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
     
     /**
       * Specifies if this column will use AUTO_INCREMENT or not (e.g. generated number).
       */
-    var generated: js.UndefOr[`true` | increment | uuid | rowid] = js.native
+    var generated: js.UndefOr[`true` | increment | uuid | rowid] = js.undefined
     
     /**
       * Generated column type. Supports only in MySQL.
       */
-    var generatedType: js.UndefOr[VIRTUAL | STORED] = js.native
+    var generatedType: js.UndefOr[VIRTUAL | STORED] = js.undefined
     
     /**
       * Return type of HSTORE column.
       * Returns value as string or as object.
       */
-    var hstoreType: js.UndefOr[`object` | string] = js.native
+    var hstoreType: js.UndefOr[`object` | string] = js.undefined
     
     /**
       * Indicates if column is inserted by default.
       * Default value is "true".
       */
-    var insert: js.UndefOr[Boolean] = js.native
+    var insert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type's length. For example type = "string" and length = 100 means that ORM will create a column with
       * type varchar(100).
       */
-    var length: js.UndefOr[String | Double] = js.native
+    var length: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Column name in the database.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if column's value can be set to NULL.
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this column is of type ObjectID
       */
-    var objectId: js.UndefOr[Boolean] = js.native
+    var objectId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ON UPDATE trigger. Works only for MySQL.
       */
-    var onUpdate: js.UndefOr[String] = js.native
+    var onUpdate: js.UndefOr[String] = js.undefined
     
     /**
       * The precision for a decimal (exact numeric) column (applies only for decimal column), which is the maximum
       * number of digits that are stored for the values.
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates if this column is a primary column.
       */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column value is not updated by "save" operation.
@@ -143,79 +143,79 @@ object entitySchemaEntitySchemaColumnOptionsMod {
       * the opposite value to readonly.
       *
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The scale for a decimal (exact numeric) column (applies only for decimal column), which represents the number
       * of digits to the right of the decimal point and must not be greater than precision.
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates if column is always selected by QueryBuilder and find operations.
       * Default value is "true".
       */
-    var select: js.UndefOr[Boolean] = js.native
+    var select: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a value transformer that is to be used to (un)marshal
       * this column when reading or writing to the database.
       */
-    var transformer: js.UndefOr[ValueTransformer | js.Array[ValueTransformer]] = js.native
+    var transformer: js.UndefOr[ValueTransformer | js.Array[ValueTransformer]] = js.undefined
     
     /**
       * Indicates if this column is a treeChildrenCount column.
       */
-    var treeChildrenCount: js.UndefOr[Boolean] = js.native
+    var treeChildrenCount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this column is a treeLevel column.
       */
-    var treeLevel: js.UndefOr[Boolean] = js.native
+    var treeLevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type. Must be one of the value from the ColumnTypes class.
       */
-    var `type`: ColumnType = js.native
+    var `type`: ColumnType
     
     /**
       * Specifies if column's value must be unique or not.
       */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Puts UNSIGNED attribute on to numeric column. Works only for MySQL.
       */
-    var unsigned: js.UndefOr[Boolean] = js.native
+    var unsigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column value is updated by "save" operation.
       * If false you'll be able to write this value only when you first time insert the object.
       * Default value is "true".
       */
-    var update: js.UndefOr[Boolean] = js.native
+    var update: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this column is an update date column.
       */
-    var updateDate: js.UndefOr[Boolean] = js.native
+    var updateDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this column is a version column.
       */
-    var version: js.UndefOr[Boolean] = js.native
+    var version: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type's display width. Used only on some column types in MySQL.
       * For example, INT(4) specifies an INT with a display width of four digits.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Puts ZEROFILL attribute on to numeric column. Works only for MySQL.
       * If you specify ZEROFILL for a numeric column, MySQL automatically adds the UNSIGNED attribute to the column
       */
-    var zerofill: js.UndefOr[Boolean] = js.native
+    var zerofill: js.UndefOr[Boolean] = js.undefined
   }
   object EntitySchemaColumnOptions {
     
@@ -284,7 +284,7 @@ object entitySchemaEntitySchemaColumnOptionsMod {
       def setDeleteDateUndefined: Self = StObject.set(x, "deleteDate", js.undefined)
       
       @scala.inline
-      def setEnum(value: js.Array[_] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      def setEnum(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)

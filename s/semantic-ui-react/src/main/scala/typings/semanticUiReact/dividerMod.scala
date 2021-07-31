@@ -5,7 +5,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.dividerDividerMod.DividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dividerMod extends Shortcut {

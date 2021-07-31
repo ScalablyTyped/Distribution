@@ -3,66 +3,64 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFunction extends StObject {
   
   /** The amount of memory in MB available for a function. Defaults to 256MB. */
-  var availableMemoryMb: js.UndefOr[Double] = js.native
+  var availableMemoryMb: js.UndefOr[Double] = js.undefined
   
   /** Build environment variables that shall be available during build time. */
   var buildEnvironmentVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The Cloud Build ID of the latest successful deployment of the function. */
-  var buildId: js.UndefOr[String] = js.native
+  var buildId: js.UndefOr[String] = js.undefined
   
   /** User-provided description of a function. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. For backward compatibility, if function with
     * given name is not found, then the system will try to use function named "function". For Node.js this is name of a function exported by the module specified in `source_location`.
     */
-  var entryPoint: js.UndefOr[String] = js.native
+  var entryPoint: js.UndefOr[String] = js.undefined
   
   /** Environment variables that shall be available during function execution. */
   var environmentVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A source that fires events in response to a condition in another service. */
-  var eventTrigger: js.UndefOr[EventTrigger] = js.native
+  var eventTrigger: js.UndefOr[EventTrigger] = js.undefined
   
   /** An HTTPS endpoint type of source that can be triggered via URL. */
-  var httpsTrigger: js.UndefOr[HttpsTrigger] = js.native
+  var httpsTrigger: js.UndefOr[HttpsTrigger] = js.undefined
   
   /** The ingress settings for the function, controlling what traffic can reach it. */
-  var ingressSettings: js.UndefOr[String] = js.native
+  var ingressSettings: js.UndefOr[String] = js.undefined
   
   /** Labels associated with this Cloud Function. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The limit on the maximum number of function instances that may coexist at a given time. In some cases, such as rapid traffic surges, Cloud Functions may, for a short period of time,
     * create more instances than the specified max instances limit. If your function cannot tolerate this temporary behavior, you may want to factor in a safety margin and set a lower max
     * instances value than your function can tolerate. See the [Max Instances](https://cloud.google.com/functions/docs/max-instances) Guide for more details.
     */
-  var maxInstances: js.UndefOr[Double] = js.native
+  var maxInstances: js.UndefOr[Double] = js.undefined
   
   /** A user-defined name of the function. Function names must be unique globally and match pattern `projects/∗/locations/∗/functions/ *` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The VPC Network that this cloud function can connect to. It can be either the fully-qualified URI, or the short name of the network resource. If the short network name is used, the
@@ -71,47 +69,47 @@ trait CloudFunction extends StObject {
     * field is mutually exclusive with `vpc_connector` and will be replaced by it. See [the VPC documentation](https://cloud.google.com/compute/docs/vpc) for more information on
     * connecting Cloud projects.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The runtime in which to run the function. Required when deploying a new function, optional when updating an existing function. For a complete list of possible choices, see the
     * [`gcloud` command reference](/sdk/gcloud/reference/functions/deploy#--runtime).
     */
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
   /** The email of the function's service account. If empty, defaults to `{project_id}@appspot.gserviceaccount.com`. */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /** The Google Cloud Storage URL, starting with gs://, pointing to the zip archive which contains the function. */
-  var sourceArchiveUrl: js.UndefOr[String] = js.native
+  var sourceArchiveUrl: js.UndefOr[String] = js.undefined
   
   /** **Beta Feature** The source repository where a function is hosted. */
-  var sourceRepository: js.UndefOr[SourceRepository] = js.native
+  var sourceRepository: js.UndefOr[SourceRepository] = js.undefined
   
   /** The Google Cloud Storage signed URL used for source uploading, generated by google.cloud.functions.v1.GenerateUploadUrl */
-  var sourceUploadUrl: js.UndefOr[String] = js.native
+  var sourceUploadUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. Status of the function deployment. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The function execution timeout. Execution is considered failed and can be terminated if the function is not completed at the end of the timeout period. Defaults to 60 seconds. */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
   /** Output only. The last update timestamp of a Cloud Function. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The version identifier of the Cloud Function. Each deployment attempt results in a new version of a function being created. */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
   
   /**
     * The VPC Network Connector that this cloud function can connect to. It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this
     * field is `projects/∗/locations/∗/connectors/ *` This field is mutually exclusive with `network` field and will eventually replace it. See [the VPC
     * documentation](https://cloud.google.com/compute/docs/vpc) for more information on connecting Cloud projects.
     */
-  var vpcConnector: js.UndefOr[String] = js.native
+  var vpcConnector: js.UndefOr[String] = js.undefined
   
   /** The egress settings for the connector, controlling what traffic is diverted through it. */
-  var vpcConnectorEgressSettings: js.UndefOr[String] = js.native
+  var vpcConnectorEgressSettings: js.UndefOr[String] = js.undefined
 }
 object CloudFunction {
   
@@ -134,7 +132,7 @@ object CloudFunction {
     def setBuildEnvironmentVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
     ): Self = StObject.set(x, "buildEnvironmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -162,7 +160,7 @@ object CloudFunction {
     def setEnvironmentVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
     ): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -190,7 +188,7 @@ object CloudFunction {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

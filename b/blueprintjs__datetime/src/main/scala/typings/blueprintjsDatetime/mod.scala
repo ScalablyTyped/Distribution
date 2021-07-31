@@ -16,7 +16,6 @@ import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -289,7 +288,7 @@ object mod {
   class DateTimePicker ()
     extends typings.blueprintjsDatetime.dateTimePickerMod.DateTimePicker {
     def this(props: IDateTimePickerProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: IDateTimePickerProps, context: js.Any) = this()
   }
   /* static members */
@@ -314,123 +313,97 @@ object mod {
   
   object DateUtils {
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.areEqual")
+    @JSImport("@blueprintjs/datetime", "DateUtils")
     @js.native
-    def areEqual(date1: Date, date2: Date): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.areRangesEqual")
-    @js.native
-    def areRangesEqual(dateRange1: DateRange, dateRange2: DateRange): Boolean = js.native
+    @scala.inline
+    def areEqual(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqual")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.areSameDay")
-    @js.native
-    def areSameDay(date1: Date, date2: Date): Boolean = js.native
+    @scala.inline
+    def areRangesEqual(dateRange1: DateRange, dateRange2: DateRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areRangesEqual")(dateRange1.asInstanceOf[js.Any], dateRange2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.areSameMonth")
-    @js.native
-    def areSameMonth(date1: Date, date2: Date): Boolean = js.native
+    @scala.inline
+    def areSameDay(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSameDay")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.areSameTime")
-    @js.native
-    def areSameTime(date1: Date, date2: Date): Boolean = js.native
+    @scala.inline
+    def areSameMonth(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSameMonth")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.clone")
-    @js.native
-    def clone_(d: Date): Date = js.native
+    @scala.inline
+    def areSameTime(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSameTime")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.convert24HourMeridiem")
-    @js.native
-    def convert24HourMeridiem(hour: Double, toPm: Boolean): Double = js.native
+    @scala.inline
+    def clone_(d: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(d.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.get12HourFrom24Hour")
-    @js.native
-    def get12HourFrom24Hour(hour: Double): Double = js.native
+    @scala.inline
+    def convert24HourMeridiem(hour: Double, toPm: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convert24HourMeridiem")(hour.asInstanceOf[js.Any], toPm.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.get24HourFrom12Hour")
-    @js.native
-    def get24HourFrom12Hour(hour: Double, isPm: Boolean): Double = js.native
+    @scala.inline
+    def get12HourFrom24Hour(hour: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get12HourFrom24Hour")(hour.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateBetween")
-    @js.native
-    def getDateBetween(dateRange: DateRange): Date = js.native
+    @scala.inline
+    def get24HourFrom12Hour(hour: Double, isPm: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get24HourFrom12Hour")(hour.asInstanceOf[js.Any], isPm.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateNextMonth")
-    @js.native
-    def getDateNextMonth(date: Date): Date = js.native
+    @scala.inline
+    def getDateBetween(dateRange: DateRange): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateBetween")(dateRange.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateOnlyWithTime")
-    @js.native
-    def getDateOnlyWithTime(date: Date): Date = js.native
+    @scala.inline
+    def getDateNextMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateNextMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDatePreviousMonth")
-    @js.native
-    def getDatePreviousMonth(date: Date): Date = js.native
+    @scala.inline
+    def getDateOnlyWithTime(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateOnlyWithTime")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateTime")
-    @js.native
-    def getDateTime(): Date = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateTime")
-    @js.native
-    def getDateTime(date: Null, time: Date): Date = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateTime")
-    @js.native
-    def getDateTime(date: Date): Date = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.getDateTime")
-    @js.native
-    def getDateTime(date: Date, time: Date): Date = js.native
+    @scala.inline
+    def getDatePreviousMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatePreviousMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getIsPmFrom24Hour")
-    @js.native
-    def getIsPmFrom24Hour(hour: Double): Boolean = js.native
+    @scala.inline
+    def getDateTime(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTime")().asInstanceOf[Date]
+    @scala.inline
+    def getDateTime(date: Null, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateTime")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def getDateTime(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTime")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+    @scala.inline
+    def getDateTime(date: Date, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateTime")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.getTimeInRange")
-    @js.native
-    def getTimeInRange(time: Date, minTime: Date, maxTime: Date): Date = js.native
+    @scala.inline
+    def getIsPmFrom24Hour(hour: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsPmFrom24Hour")(hour.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDateValid")
-    @js.native
-    def isDateValid(): /* is std.Date */ Boolean = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDateValid")
-    @js.native
-    def isDateValid(date: Date): /* is std.Date */ Boolean = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDateValid")
-    @js.native
-    def isDateValid_false(date: `false`): /* is std.Date */ Boolean = js.native
+    @scala.inline
+    def getTimeInRange(time: Date, minTime: Date, maxTime: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeInRange")(time.asInstanceOf[js.Any], minTime.asInstanceOf[js.Any], maxTime.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDayInRange")
-    @js.native
-    def isDayInRange(date: Date, dateRange: DateRange): Boolean = js.native
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDayInRange")
-    @js.native
-    def isDayInRange(date: Date, dateRange: DateRange, exclusive: Boolean): Boolean = js.native
+    @scala.inline
+    def isDateValid(): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateValid")().asInstanceOf[/* is std.Date */ Boolean]
+    @scala.inline
+    def isDateValid(date: Date): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateValid")(date.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isDayRangeInRange")
-    @js.native
-    def isDayRangeInRange(innerRange: DateRange, outerRange: DateRange): Boolean = js.native
+    @scala.inline
+    def isDateValid_false(date: `false`): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateValid")(date.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isMonthInRange")
-    @js.native
-    def isMonthInRange(date: Date, dateRange: DateRange): Boolean = js.native
+    @scala.inline
+    def isDayInRange(date: Date, dateRange: DateRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayInRange")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isDayInRange(date: Date, dateRange: DateRange, exclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayInRange")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isTimeEqualOrGreaterThan")
-    @js.native
-    def isTimeEqualOrGreaterThan(time: Date, timeToCompare: Date): Boolean = js.native
+    @scala.inline
+    def isDayRangeInRange(innerRange: DateRange, outerRange: DateRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayRangeInRange")(innerRange.asInstanceOf[js.Any], outerRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isTimeEqualOrSmallerThan")
-    @js.native
-    def isTimeEqualOrSmallerThan(time: Date, timeToCompare: Date): Boolean = js.native
+    @scala.inline
+    def isMonthInRange(date: Date, dateRange: DateRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMonthInRange")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isTimeInRange")
-    @js.native
-    def isTimeInRange(date: Date, minDate: Date, maxDate: Date): Boolean = js.native
+    @scala.inline
+    def isTimeEqualOrGreaterThan(time: Date, timeToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeEqualOrGreaterThan")(time.asInstanceOf[js.Any], timeToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isTimeSameOrAfter")
-    @js.native
-    def isTimeSameOrAfter(date: Date, dateToCompare: Date): Boolean = js.native
+    @scala.inline
+    def isTimeEqualOrSmallerThan(time: Date, timeToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeEqualOrSmallerThan")(time.asInstanceOf[js.Any], timeToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/datetime", "DateUtils.isToday")
-    @js.native
-    def isToday(date: Date): Boolean = js.native
+    @scala.inline
+    def isTimeInRange(date: Date, minDate: Date, maxDate: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInRange")(date.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isTimeSameOrAfter(date: Date, dateToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeSameOrAfter")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isToday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("@blueprintjs/datetime", "Months")
@@ -438,31 +411,31 @@ object mod {
   object Months extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.blueprintjsDatetime.monthsMod.Months with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.blueprintjsDatetime.monthsMod.Months & Double] = js.native
     
-    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL with Double = js.native
+    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL & Double = js.native
     
-    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST with Double = js.native
+    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST & Double = js.native
     
-    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER with Double = js.native
+    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER & Double = js.native
     
-    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY with Double = js.native
+    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY & Double = js.native
     
-    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY with Double = js.native
+    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY & Double = js.native
     
-    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY with Double = js.native
+    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY & Double = js.native
     
-    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE with Double = js.native
+    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE & Double = js.native
     
-    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH with Double = js.native
+    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH & Double = js.native
     
-    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY with Double = js.native
+    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY & Double = js.native
     
-    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER with Double = js.native
+    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER & Double = js.native
     
-    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER with Double = js.native
+    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER & Double = js.native
     
-    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER with Double = js.native
+    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER & Double = js.native
   }
   
   @JSImport("@blueprintjs/datetime", "TimePicker")
@@ -470,7 +443,7 @@ object mod {
   class TimePicker ()
     extends typings.blueprintjsDatetime.timePickerMod.TimePicker {
     def this(props: ITimePickerProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: ITimePickerProps, context: js.Any) = this()
   }
   /* static members */
@@ -523,28 +496,28 @@ object mod {
   object TimeUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.blueprintjsDatetime.timeUnitMod.TimeUnit with String] = js.native
+    def apply(value: String): js.UndefOr[typings.blueprintjsDatetime.timeUnitMod.TimeUnit & String] = js.native
     
-    /* "hour12" */ val HOUR_12: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_12 with String = js.native
+    /* "hour12" */ val HOUR_12: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_12 & String = js.native
     
-    /* "hour24" */ val HOUR_24: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_24 with String = js.native
+    /* "hour24" */ val HOUR_24: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_24 & String = js.native
     
-    /* "minute" */ val MINUTE: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MINUTE with String = js.native
+    /* "minute" */ val MINUTE: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MINUTE & String = js.native
     
-    /* "ms" */ val MS: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MS with String = js.native
+    /* "ms" */ val MS: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MS & String = js.native
     
-    /* "second" */ val SECOND: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.SECOND with String = js.native
+    /* "second" */ val SECOND: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.SECOND & String = js.native
   }
   
   @js.native
   trait IDatePickerLocaleUtils extends StObject {
     
     def formatDate(date: Date): String = js.native
-    def formatDate(date: Date, format: js.UndefOr[scala.Nothing], locale: String): String = js.native
     def formatDate(date: Date, format: String): String = js.native
     def formatDate(date: Date, format: String, locale: String): String = js.native
     def formatDate(date: Date, format: js.Array[String]): String = js.native
     def formatDate(date: Date, format: js.Array[String], locale: String): String = js.native
+    def formatDate(date: Date, format: Unit, locale: String): String = js.native
     
     def formatDay(day: Date): String = js.native
     def formatDay(day: Date, locale: String): String = js.native
@@ -565,8 +538,8 @@ object mod {
     def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     
     def parseDate(str: String): Date = js.native
-    def parseDate(str: String, format: js.UndefOr[scala.Nothing], locale: String): Date = js.native
     def parseDate(str: String, format: String): Date = js.native
     def parseDate(str: String, format: String, locale: String): Date = js.native
+    def parseDate(str: String, format: Unit, locale: String): Date = js.native
   }
 }

@@ -6,7 +6,6 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeForm.anon.CallbackProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,13 @@ object mod {
   
   type Form = Component[FormProps, js.Object, js.Any]
   
-  @js.native
-  trait FormProps extends ViewProps {
+  trait FormProps
+    extends StObject
+       with ViewProps {
     
-    var customFields: js.UndefOr[StringDictionary[CallbackProp]] = js.native
+    var customFields: js.UndefOr[StringDictionary[CallbackProp]] = js.undefined
     
-    var ref: String = js.native
+    var ref: String
   }
   object FormProps {
     

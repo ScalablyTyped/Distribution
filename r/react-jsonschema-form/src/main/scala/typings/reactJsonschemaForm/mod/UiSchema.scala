@@ -4,33 +4,34 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiSchema
-  extends /* name */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[js.Any] {
   
   @JSName("ui:ArrayFieldTemplate")
-  var uiColonArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[_]]] = js.native
+  var uiColonArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[js.Any]]] = js.undefined
   
   @JSName("ui:FieldTemplate")
-  var uiColonFieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.native
+  var uiColonFieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.undefined
   
   @JSName("ui:ObjectFieldTemplate")
-  var uiColonObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[_]]] = js.native
+  var uiColonObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[js.Any]]] = js.undefined
   
   @JSName("ui:field")
-  var uiColonfield: js.UndefOr[Field | String] = js.native
+  var uiColonfield: js.UndefOr[Field | String] = js.undefined
   
   @JSName("ui:options")
-  var uiColonoptions: js.UndefOr[StringDictionary[Boolean | Double | String | js.Object | js.Array[_] | Null]] = js.native
+  var uiColonoptions: js.UndefOr[
+    StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]
+  ] = js.undefined
   
   @JSName("ui:order")
-  var uiColonorder: js.UndefOr[js.Array[String]] = js.native
+  var uiColonorder: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("ui:widget")
-  var uiColonwidget: js.UndefOr[Widget | String] = js.native
+  var uiColonwidget: js.UndefOr[Widget | String] = js.undefined
 }
 object UiSchema {
   
@@ -44,7 +45,7 @@ object UiSchema {
   implicit class UiSchemaMutableBuilder[Self <: UiSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUiColonArrayFieldTemplateUndefined: Self = StObject.set(x, "ui:ArrayFieldTemplate", js.undefined)
@@ -56,7 +57,7 @@ object UiSchema {
     def setUiColonFieldTemplateUndefined: Self = StObject.set(x, "ui:FieldTemplate", js.undefined)
     
     @scala.inline
-    def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = StObject.set(x, "ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUiColonObjectFieldTemplateUndefined: Self = StObject.set(x, "ui:ObjectFieldTemplate", js.undefined)
@@ -68,7 +69,7 @@ object UiSchema {
     def setUiColonfieldUndefined: Self = StObject.set(x, "ui:field", js.undefined)
     
     @scala.inline
-    def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[_] | Null]): Self = StObject.set(x, "ui:options", value.asInstanceOf[js.Any])
+    def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]): Self = StObject.set(x, "ui:options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUiColonoptionsUndefined: Self = StObject.set(x, "ui:options", js.undefined)

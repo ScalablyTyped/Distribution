@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The {@link XCustomShapeHandle} */
-@js.native
-trait XCustomShapeHandle extends XInterface {
+trait XCustomShapeHandle
+  extends StObject
+     with XInterface {
   
   /**
     * is getting the actual handle position
     * @returns a the actual handle position
     */
-  val Position: Point = js.native
+  val Position: Point
   
   /**
     * is getting the actual handle position
     * @returns a the actual handle position
     */
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
   /** is setting a new position for the handle */
-  def setControllerPosition(aPoint: Point): Unit = js.native
+  def setControllerPosition(aPoint: Point): Unit
 }
 object XCustomShapeHandle {
   

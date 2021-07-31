@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollection extends StObject {
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Events: IEvents = js.native
+  val Events: IEvents
   
-  def Find(item: js.Any): Double = js.native
+  def Find(item: js.Any): Double
   
-  def GetAt(pos: Double): js.Any = js.native
+  def GetAt(pos: Double): js.Any
   
-  def MoveTo(pos: Double, newPos: Double): Unit = js.native
+  def MoveTo(pos: Double, newPos: Double): Unit
   
-  def NewTo(pos: Double, replace: Boolean): js.Any = js.native
+  def NewTo(pos: Double, replace: Boolean): js.Any
   
-  def PutTo(pos: Double, replace: Boolean, item: js.Any): Unit = js.native
+  def PutTo(pos: Double, replace: Boolean, item: js.Any): Unit
   
-  def RemoveAt(pos: Double): Unit = js.native
+  def RemoveAt(pos: Double): Unit
 }
 object ICollection {
   

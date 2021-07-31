@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmSubscriptionResponse extends StObject {
   
   /**
     * The ARN of the created subscription.
     */
-  var SubscriptionArn: js.UndefOr[subscriptionARN] = js.native
+  var SubscriptionArn: js.UndefOr[subscriptionARN] = js.undefined
 }
 object ConfirmSubscriptionResponse {
   

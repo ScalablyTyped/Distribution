@@ -5,37 +5,34 @@ import typings.layuiSrc.layuiSrcBooleans.`true`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 以下TableOn 开头interface，在调用地方使用
-@js.native
 trait TableOnCheckbox extends StObject {
   
-  var checked: `true` = js.native
+  var checked: `true`
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  def del(): Unit = js.native
+  def del(): Unit
   
-  var tr: JQuery[HTMLElement] = js.native
+  var tr: JQuery[HTMLElement]
   
-  var `type`: String = js.native
+  var `type`: String
   
-  def update(fields: js.Object): Unit = js.native
+  def update(fields: js.Object): Unit
 }
 object TableOnCheckbox {
   
   @scala.inline
   def apply(
-    checked: `true`,
     data: js.Object,
     del: () => Unit,
     tr: JQuery[HTMLElement],
     `type`: String,
     update: js.Object => Unit
   ): TableOnCheckbox = {
-    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], del = js.Any.fromFunction0(del), tr = tr.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(checked = true, data = data.asInstanceOf[js.Any], del = js.Any.fromFunction0(del), tr = tr.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOnCheckbox]
   }

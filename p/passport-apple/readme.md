@@ -11,8 +11,8 @@ Passport strategy for Sign in with Apple
 | Full name          | passport-apple |
 | Keywords           | apple, auth, sign, in, with, passportjs, passport, node, nodejs, strategy, authentication, identity |
 | # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 33512 |
+| # dependents       | 2 |
+| # downloads        | 118558 |
 | # stars            | 0 |
 
 ## Links

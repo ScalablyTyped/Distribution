@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `textRange.toJSON()`. */
-@js.native
 trait TextRangeData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TextRangeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var font: js.UndefOr[ShapeFontData] = js.native
+  var font: js.UndefOr[ShapeFontData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TextRangeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TextRangeData {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBonusPaymentsResponse extends StObject {
   
   /**
     * A successful request to the ListBonusPayments operation returns a list of BonusPayment objects. 
     */
-  var BonusPayments: js.UndefOr[BonusPaymentList] = js.native
+  var BonusPayments: js.UndefOr[BonusPaymentList] = js.undefined
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The number of bonus payments on this page in the filtered results list, equivalent to the number of bonus payments being returned by this call. 
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
 }
 object ListBonusPaymentsResponse {
   

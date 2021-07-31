@@ -8,7 +8,6 @@ import typings.blueprintjsTable.resizeHandleMod.ILockableLayout
 import typings.blueprintjsTable.resizeHandleMod.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizableMod {
@@ -50,16 +49,16 @@ object resizableMod {
     @scala.inline
     def defaultProps_=(x: IsResizable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/interactions/resizable", "Resizable.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size = js.native
+    @scala.inline
+    def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size]
   }
   
   type IIndexedResizeCallback = js.Function2[/* index */ Double, /* size */ Double, Unit]
   
   @js.native
   trait IResizableProps
-    extends IProps
+    extends StObject
+       with IProps
        with ILockableLayout {
     
     /**
@@ -110,18 +109,17 @@ object resizableMod {
     var size: Double = js.native
   }
   
-  @js.native
   trait IResizeableState extends StObject {
     
     /**
       * The dimensional size, respecting minimum and maximum constraints.
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * The dimensional size, ignoring minimum and maximum constraints.
       */
-    var unclampedSize: js.UndefOr[Double] = js.native
+    var unclampedSize: js.UndefOr[Double] = js.undefined
   }
   object IResizeableState {
     

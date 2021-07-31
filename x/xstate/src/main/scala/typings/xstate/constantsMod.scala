@@ -4,7 +4,6 @@ import typings.xstate.typesMod.ActivityMap
 import typings.xstate.typesMod.DefaultGuardType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {

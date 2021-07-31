@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderChangeNotifier extends XInterface {
+trait XRemoteContentProviderChangeNotifier
+  extends StObject
+     with XInterface {
   
   /**
     * Add a listener.
     * @param Listener Some listener.
     */
-  def addRemoteContentProviderChangeListener(Listener: XRemoteContentProviderChangeListener): Unit = js.native
+  def addRemoteContentProviderChangeListener(Listener: XRemoteContentProviderChangeListener): Unit
   
   /**
     * Remove a listener.
     * @param Listener Some listener previously added via {@link XRemoteContentProviderChangeNotifier.addRemoteContentProviderChangeListener()} .
     */
-  def removeRemoteContentProviderChangeListener(Listener: XRemoteContentProviderChangeListener): Unit = js.native
+  def removeRemoteContentProviderChangeListener(Listener: XRemoteContentProviderChangeListener): Unit
 }
 object XRemoteContentProviderChangeNotifier {
   

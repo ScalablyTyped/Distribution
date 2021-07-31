@@ -25,7 +25,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -50,35 +49,34 @@ object buttonMod {
   
   type Button = Component[ButtonProps, js.Object, js.Any]
   
-  @js.native
   trait ButtonProps extends StObject {
     
     @JSName("$as")
-    var $as: js.UndefOr[Element | String] = js.native
+    var $as: js.UndefOr[Element | String] = js.undefined
     
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.native
+    var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.undefined
     
-    var stroked: js.UndefOr[Boolean] = js.native
+    var stroked: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[Breakpoints] = js.native
+    var theme: js.UndefOr[Breakpoints] = js.undefined
     
-    var `type`: js.UndefOr[button | reset | submit] = js.native
+    var `type`: js.UndefOr[button | reset | submit] = js.undefined
   }
   object ButtonProps {
     

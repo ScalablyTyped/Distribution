@@ -13,14 +13,15 @@ import typings.oauth2Server.mod.Token
 import typings.oauth2Server.mod.TokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("express-oauth-server", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ExpressOAuthServer {
+  class ^ protected ()
+    extends StObject
+       with ExpressOAuthServer {
     def this(options: ServerOptions) = this()
   }
   
@@ -28,27 +29,27 @@ object mod {
   trait ExpressOAuthServer extends StObject {
     
     def authenticate(): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[Token]
       ] = js.native
     def authenticate(options: AuthenticateOptions): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[Token]
       ] = js.native
     
     def authorize(): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[AuthorizationCode]
       ] = js.native
     def authorize(options: AuthorizeOptions): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[AuthorizationCode]
       ] = js.native
@@ -56,14 +57,14 @@ object mod {
     var server: typings.oauth2Server.mod.^ = js.native
     
     def token(): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[Token]
       ] = js.native
     def token(options: TokenOptions): js.Function3[
-        /* request */ Request_[ParamsDictionary, _, _, Query], 
-        /* response */ Response_[_], 
+        /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* response */ Response_[js.Any], 
         /* next */ NextFunction, 
         js.Promise[Token]
       ] = js.native

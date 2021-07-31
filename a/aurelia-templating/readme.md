@@ -10,9 +10,9 @@ An extensible HTML templating engine supporting databinding, custom elements, at
 | ------------------ | :-------------: |
 | Full name          | aurelia-templating |
 | Keywords           | aurelia, templating, html, custom element, databinding |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 112 |
-| # downloads        | 530605 |
+| # downloads        | 552579 |
 | # stars            | 1 |
 
 ## Links

@@ -6,68 +6,68 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardRegistration {
   
-  @js.native
-  trait CardRegistrationData extends EntityBaseData {
+  trait CardRegistrationData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A special key to use when registering a card
       */
-    var AccessKey: String = js.native
+    var AccessKey: String
     
     /**
       * The ID of a card
       */
-    var CardId: String = js.native
+    var CardId: String
     
     /**
       * The URL to submit the card details form to
       */
-    var CardRegistrationURL: String = js.native
+    var CardRegistrationURL: String
     
     /**
       * The type of card
       */
-    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType = js.native
+    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType
     
     /**
       * The currency - should be ISO_4217 format
       */
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
     /**
       * A specific value to pass to the CardRegistrationURL
       */
-    var PreregistrationData: String = js.native
+    var PreregistrationData: String
     
     /**
       * Having registered a card, this confirmation hash needs to be updated to the card item
       */
-    var RegistrationData: String = js.native
+    var RegistrationData: String
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * Status of the card registration
       */
-    var Status: CardStatus = js.native
+    var Status: CardStatus
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object CardRegistrationData {
     
@@ -131,16 +131,15 @@ object cardRegistration {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.cardRegistration.CardRegistrationData, 'CardType' | 'Tag', 'UserId' | 'Currency'> */
-  @js.native
   trait CreateCardRegistration extends StObject {
     
-    var CardType: js.UndefOr[typings.mangopay2NodejsSdk.mod.card.CardType] = js.native
+    var CardType: js.UndefOr[typings.mangopay2NodejsSdk.mod.card.CardType] = js.undefined
     
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var UserId: String = js.native
+    var UserId: String
   }
   object CreateCardRegistration {
     
@@ -174,12 +173,11 @@ object cardRegistration {
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.cardRegistration.CardRegistrationData, 'Tag' | 'RegistrationData'> */
-  @js.native
   trait UpdateCardRegistration extends StObject {
     
-    var RegistrationData: js.UndefOr[String] = js.native
+    var RegistrationData: js.UndefOr[String] = js.undefined
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object UpdateCardRegistration {
     

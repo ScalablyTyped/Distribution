@@ -2,14 +2,12 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
   /** The corresponding uid of the stream being republished or re-subscribed to. */
-  var uid: Double | String = js.native
+  var uid: Double | String
 }
 object `0` {
   

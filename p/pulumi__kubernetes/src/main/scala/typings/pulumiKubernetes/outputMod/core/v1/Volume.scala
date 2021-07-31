@@ -2,59 +2,57 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Volume represents a named volume in a pod that may be accessed by any container in the pod.
   */
-@js.native
 trait Volume extends StObject {
   
   /**
     * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
     */
-  var awsElasticBlockStore: AWSElasticBlockStoreVolumeSource = js.native
+  var awsElasticBlockStore: AWSElasticBlockStoreVolumeSource
   
   /**
     * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
     */
-  var azureDisk: AzureDiskVolumeSource = js.native
+  var azureDisk: AzureDiskVolumeSource
   
   /**
     * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
     */
-  var azureFile: AzureFileVolumeSource = js.native
+  var azureFile: AzureFileVolumeSource
   
   /**
     * CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
     */
-  var cephfs: CephFSVolumeSource = js.native
+  var cephfs: CephFSVolumeSource
   
   /**
     * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
     */
-  var cinder: CinderVolumeSource = js.native
+  var cinder: CinderVolumeSource
   
   /**
     * ConfigMap represents a configMap that should populate this volume
     */
-  var configMap: ConfigMapVolumeSource = js.native
+  var configMap: ConfigMapVolumeSource
   
   /**
     * CSI (Container Storage Interface) represents ephemeral storage that is handled by certain external CSI drivers (Beta feature).
     */
-  var csi: CSIVolumeSource = js.native
+  var csi: CSIVolumeSource
   
   /**
     * DownwardAPI represents downward API about the pod that should populate this volume
     */
-  var downwardAPI: DownwardAPIVolumeSource = js.native
+  var downwardAPI: DownwardAPIVolumeSource
   
   /**
     * EmptyDir represents a temporary directory that shares a pod's lifetime. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
     */
-  var emptyDir: EmptyDirVolumeSource = js.native
+  var emptyDir: EmptyDirVolumeSource
   
   /**
     * Ephemeral represents a volume that is handled by a cluster storage driver (Alpha feature). The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts, and deleted when the pod is removed.
@@ -72,107 +70,107 @@ trait Volume extends StObject {
     *
     * A pod can use both types of ephemeral volumes and persistent volumes at the same time.
     */
-  var ephemeral: EphemeralVolumeSource = js.native
+  var ephemeral: EphemeralVolumeSource
   
   /**
     * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and then exposed to the pod.
     */
-  var fc: FCVolumeSource = js.native
+  var fc: FCVolumeSource
   
   /**
     * FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
     */
-  var flexVolume: FlexVolumeSource = js.native
+  var flexVolume: FlexVolumeSource
   
   /**
     * Flocker represents a Flocker volume attached to a kubelet's host machine. This depends on the Flocker control service being running
     */
-  var flocker: FlockerVolumeSource = js.native
+  var flocker: FlockerVolumeSource
   
   /**
     * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
     */
-  var gcePersistentDisk: GCEPersistentDiskVolumeSource = js.native
+  var gcePersistentDisk: GCEPersistentDiskVolumeSource
   
   /**
     * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.
     */
-  var gitRepo: GitRepoVolumeSource = js.native
+  var gitRepo: GitRepoVolumeSource
   
   /**
     * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md
     */
-  var glusterfs: GlusterfsVolumeSource = js.native
+  var glusterfs: GlusterfsVolumeSource
   
   /**
     * HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
     */
-  var hostPath: HostPathVolumeSource = js.native
+  var hostPath: HostPathVolumeSource
   
   /**
     * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
     */
-  var iscsi: ISCSIVolumeSource = js.native
+  var iscsi: ISCSIVolumeSource
   
   /**
     * Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * NFS represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  var nfs: NFSVolumeSource = js.native
+  var nfs: NFSVolumeSource
   
   /**
     * PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
     */
-  var persistentVolumeClaim: PersistentVolumeClaimVolumeSource = js.native
+  var persistentVolumeClaim: PersistentVolumeClaimVolumeSource
   
   /**
     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
     */
-  var photonPersistentDisk: PhotonPersistentDiskVolumeSource = js.native
+  var photonPersistentDisk: PhotonPersistentDiskVolumeSource
   
   /**
     * PortworxVolume represents a portworx volume attached and mounted on kubelets host machine
     */
-  var portworxVolume: PortworxVolumeSource = js.native
+  var portworxVolume: PortworxVolumeSource
   
   /**
     * Items for all in one resources secrets, configmaps, and downward API
     */
-  var projected: ProjectedVolumeSource = js.native
+  var projected: ProjectedVolumeSource
   
   /**
     * Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
     */
-  var quobyte: QuobyteVolumeSource = js.native
+  var quobyte: QuobyteVolumeSource
   
   /**
     * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md
     */
-  var rbd: RBDVolumeSource = js.native
+  var rbd: RBDVolumeSource
   
   /**
     * ScaleIO represents a ScaleIO persistent volume attached and mounted on Kubernetes nodes.
     */
-  var scaleIO: ScaleIOVolumeSource = js.native
+  var scaleIO: ScaleIOVolumeSource
   
   /**
     * Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
     */
-  var secret: SecretVolumeSource = js.native
+  var secret: SecretVolumeSource
   
   /**
     * StorageOS represents a StorageOS volume attached and mounted on Kubernetes nodes.
     */
-  var storageos: StorageOSVolumeSource = js.native
+  var storageos: StorageOSVolumeSource
   
   /**
     * VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
     */
-  var vsphereVolume: VsphereVirtualDiskVolumeSource = js.native
+  var vsphereVolume: VsphereVirtualDiskVolumeSource
 }
 object Volume {
   

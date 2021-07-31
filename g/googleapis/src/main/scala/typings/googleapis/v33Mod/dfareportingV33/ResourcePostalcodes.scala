@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Postalcodes")
@@ -31,7 +30,7 @@ class ResourcePostalcodes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPostalCode] = js.native
   def get(callback: BodyResponseCallback[SchemaPostalCode]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostalCode] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPostalCode] = js.native
   def get(params: ParamsResourcePostalcodesGet): GaxiosPromise[SchemaPostalCode] = js.native
   def get(params: ParamsResourcePostalcodesGet, callback: BodyResponseCallback[SchemaPostalCode]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourcePostalcodes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPostalCodesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(params: ParamsResourcePostalcodesList): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(
     params: ParamsResourcePostalcodesList,

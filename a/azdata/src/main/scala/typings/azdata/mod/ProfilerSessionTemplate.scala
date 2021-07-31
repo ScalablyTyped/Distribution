@@ -2,26 +2,24 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfilerSessionTemplate extends StObject {
   
   /**
     * TSQL for creating a session
     */
-  var createStatement: String = js.native
+  var createStatement: String
   
   /**
     * Default view for template
     */
-  var defaultView: String = js.native
+  var defaultView: String
   
   /**
     * Template name
     */
-  var name: String = js.native
+  var name: String
 }
 object ProfilerSessionTemplate {
   

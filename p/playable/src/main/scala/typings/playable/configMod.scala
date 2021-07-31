@@ -8,63 +8,64 @@ import typings.playable.textMapTypesMod.ITextMapConfig
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @JSImport("playable/dist/src/core/config", JSImport.Default)
+  @JSImport("playable/dist/src/core/config", JSImport.Namespace)
   @js.native
-  def default(params: IPlayerConfig): IPlayerConfig = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(params: IPlayerConfig): IPlayerConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerConfig]
+  
   trait IPlayerConfig extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var crossOrigin: js.UndefOr[CrossOriginValue] = js.native
+    var crossOrigin: js.UndefOr[CrossOriginValue] = js.undefined
     
-    var disableControlWithClickOnPlayer: js.UndefOr[Boolean] = js.native
+    var disableControlWithClickOnPlayer: js.UndefOr[Boolean] = js.undefined
     
-    var disableControlWithKeyboard: js.UndefOr[Boolean] = js.native
+    var disableControlWithKeyboard: js.UndefOr[Boolean] = js.undefined
     
-    var disableFullScreen: js.UndefOr[Boolean] = js.native
+    var disableFullScreen: js.UndefOr[Boolean] = js.undefined
     
-    var fillAllSpace: js.UndefOr[Boolean] = js.native
+    var fillAllSpace: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hideMainUI: js.UndefOr[Boolean] = js.native
+    var hideMainUI: js.UndefOr[Boolean] = js.undefined
     
-    var hideOverlay: js.UndefOr[Boolean] = js.native
+    var hideOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var muted: js.UndefOr[Boolean] = js.native
+    var muted: js.UndefOr[Boolean] = js.undefined
     
-    var nativeBrowserControls: js.UndefOr[Boolean] = js.native
+    var nativeBrowserControls: js.UndefOr[Boolean] = js.undefined
     
-    var playsinline: js.UndefOr[Boolean] = js.native
+    var playsinline: js.UndefOr[Boolean] = js.undefined
     
-    var poster: js.UndefOr[String] = js.native
+    var poster: js.UndefOr[String] = js.undefined
     
-    var preload: js.UndefOr[PreloadType] = js.native
+    var preload: js.UndefOr[PreloadType] = js.undefined
     
-    var preventContextMenu: js.UndefOr[Boolean] = js.native
+    var preventContextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[PlayableMediaSource] = js.native
+    var src: js.UndefOr[PlayableMediaSource] = js.undefined
     
-    var texts: js.UndefOr[ITextMapConfig] = js.native
+    var texts: js.UndefOr[ITextMapConfig] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var videoElement: js.UndefOr[HTMLVideoElement] = js.native
+    var videoElement: js.UndefOr[HTMLVideoElement] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IPlayerConfig {
     

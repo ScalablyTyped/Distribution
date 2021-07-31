@@ -2,23 +2,21 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var enableAutoResize: js.UndefOr[Boolean] = js.native
+  var enableAutoResize: js.UndefOr[Boolean] = js.undefined
   
-  var enableHighResolution: js.UndefOr[Boolean] = js.native
+  var enableHighResolution: js.UndefOr[Boolean] = js.undefined
   
-  var enableMapClick: js.UndefOr[Boolean] = js.native
+  var enableMapClick: js.UndefOr[Boolean] = js.undefined
   
-  var mapType: js.UndefOr[MapType] = js.native
+  var mapType: js.UndefOr[MapType] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
 }
 object MapOptions {
   

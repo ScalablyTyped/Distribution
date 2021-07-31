@@ -2,41 +2,39 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Record extends StObject {
   
   /**
     * Contains the list of dimensions for time series data points.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.timestreamwriteMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.timestreamwriteMod.Dimensions] = js.undefined
   
   /**
     * Measure represents the data attribute of the time series. For example, the CPU utilization of an EC2 instance or the RPM of a wind turbine are measures. 
     */
-  var MeasureName: js.UndefOr[StringValue256] = js.native
+  var MeasureName: js.UndefOr[StringValue256] = js.undefined
   
   /**
     *  Contains the measure value for the time series data point. 
     */
-  var MeasureValue: js.UndefOr[StringValue2048] = js.native
+  var MeasureValue: js.UndefOr[StringValue2048] = js.undefined
   
   /**
     *  Contains the data type of the measure value for the time series data point. 
     */
-  var MeasureValueType: js.UndefOr[typings.awsSdk.timestreamwriteMod.MeasureValueType] = js.native
+  var MeasureValueType: js.UndefOr[typings.awsSdk.timestreamwriteMod.MeasureValueType] = js.undefined
   
   /**
     *  Contains the time at which the measure value for the data point was collected. 
     */
-  var Time: js.UndefOr[StringValue256] = js.native
+  var Time: js.UndefOr[StringValue256] = js.undefined
   
   /**
     *  The granularity of the timestamp unit. It indicates if the time value is in seconds, milliseconds, nanoseconds or other supported values. 
     */
-  var TimeUnit: js.UndefOr[typings.awsSdk.timestreamwriteMod.TimeUnit] = js.native
+  var TimeUnit: js.UndefOr[typings.awsSdk.timestreamwriteMod.TimeUnit] = js.undefined
 }
 object Record {
   

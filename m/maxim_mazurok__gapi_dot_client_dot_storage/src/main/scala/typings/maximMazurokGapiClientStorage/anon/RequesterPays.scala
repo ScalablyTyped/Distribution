@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequesterPays extends StObject {
   
   /** When set to true, Requester Pays is enabled for this bucket. */
-  var requesterPays: js.UndefOr[Boolean] = js.native
+  var requesterPays: js.UndefOr[Boolean] = js.undefined
 }
 object RequesterPays {
   

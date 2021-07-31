@@ -2,46 +2,44 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccessPoliciesRequest extends StObject {
   
   /**
     * The ARN of the IAM user. For more information, see IAM ARNs in the IAM User Guide. This parameter is required if you specify IAM for identityType.
     */
-  var iamArn: js.UndefOr[ARN] = js.native
+  var iamArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The ID of the identity. This parameter is required if you specify USER or GROUP for identityType.
     */
-  var identityId: js.UndefOr[IdentityId] = js.native
+  var identityId: js.UndefOr[IdentityId] = js.undefined
   
   /**
     * The type of identity (AWS SSO user, AWS SSO group, or IAM user). This parameter is required if you specify identityId.
     */
-  var identityType: js.UndefOr[IdentityType] = js.native
+  var identityType: js.UndefOr[IdentityType] = js.undefined
   
   /**
     * The maximum number of results to be returned per paginated request. Default: 50
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to be used for the next set of paginated results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The ID of the resource. This parameter is required if you specify resourceType.
     */
-  var resourceId: js.UndefOr[ID] = js.native
+  var resourceId: js.UndefOr[ID] = js.undefined
   
   /**
     * The type of resource (portal or project). This parameter is required if you specify resourceId.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object ListAccessPoliciesRequest {
   

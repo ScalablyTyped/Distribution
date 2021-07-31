@@ -13,18 +13,21 @@ import typings.std.Iterable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("apollo-env", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("apollo-env", "Body")
   @js.native
   class Body ()
     extends typings.apolloEnv.fetchMod.Body {
     def this(body: js.Any) = this()
-    def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
     def this(body: js.Any, opts: Size) = this()
+    def this(body: Unit, opts: Size) = this()
   }
   
   @JSImport("apollo-env", "Headers")
@@ -47,18 +50,21 @@ object mod {
   class Response ()
     extends typings.apolloEnv.fetchMod.Response {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
   }
   /* static members */
   object Response {
     
-    @JSImport("apollo-env", "Response.error")
+    @JSImport("apollo-env", "Response")
     @js.native
-    def error(): typings.nodeFetch.mod.Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apollo-env", "Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
+    @scala.inline
+    def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
+    
+    @scala.inline
+    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
   }
   
   @JSImport("apollo-env", "URL")
@@ -81,36 +87,33 @@ object mod {
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }
   
-  @JSImport("apollo-env", "createHash")
-  @js.native
-  def createHash(kind: String): Hash = js.native
+  @scala.inline
+  def createHash(kind: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(kind.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
   object fetch {
     
-    @JSImport("apollo-env", "fetch")
-    @js.native
-    def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = js.native
-    @JSImport("apollo-env", "fetch")
-    @js.native
-    def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = js.native
+    @scala.inline
+    def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    @scala.inline
+    def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
     
-    @JSImport("apollo-env", "fetch.isRedirect")
+    @JSImport("apollo-env", "fetch")
     @js.native
-    def isRedirect(code: Double): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("apollo-env", "isNodeLike")
   @js.native
   val isNodeLike: Boolean = js.native
   
-  @JSImport("apollo-env", "isNotNullOrUndefined")
-  @js.native
-  def isNotNullOrUndefined[T](): /* is T */ Boolean = js.native
-  @JSImport("apollo-env", "isNotNullOrUndefined")
-  @js.native
-  def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = js.native
+  @scala.inline
+  def isNotNullOrUndefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")().asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
-  @JSImport("apollo-env", "mapValues")
-  @js.native
-  def mapValues[T, U](`object`: Record[String, T], callback: js.Function1[/* value */ T, U]): Record[String, U] = js.native
+  @scala.inline
+  def mapValues[T, U](`object`: Record[String, T], callback: js.Function1[/* value */ T, U]): Record[String, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Record[String, U]]
 }

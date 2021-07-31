@@ -2,25 +2,23 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxSimpleDimValue..
   */
-@js.native
 trait INxSimpleDimValue extends StObject {
   
   /**
     * Element number.
     */
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
   /**
     * Text related to the attribute expression value.
     * This property is optional. No text is returned if the attribute expression value is a numeric.
     */
-  var qText: js.UndefOr[String] = js.native
+  var qText: js.UndefOr[String] = js.undefined
 }
 object INxSimpleDimValue {
   

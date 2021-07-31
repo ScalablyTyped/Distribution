@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RobotApplicationConfig extends StObject {
   
   /**
     * The application information for the robot application.
     */
-  var application: Arn = js.native
+  var application: Arn
   
   /**
     * The version of the robot application.
     */
-  var applicationVersion: js.UndefOr[Version] = js.native
+  var applicationVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The launch configuration for the robot application.
     */
-  var launchConfig: LaunchConfig = js.native
+  var launchConfig: LaunchConfig
 }
 object RobotApplicationConfig {
   

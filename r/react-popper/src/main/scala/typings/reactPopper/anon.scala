@@ -20,23 +20,21 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: StringDictionary[js.UndefOr[StringDictionary[String]]] = js.native
+    var attributes: StringDictionary[js.UndefOr[StringDictionary[String]]]
     
-    var forceUpdate: js.Function0[Unit] | Null = js.native
+    var forceUpdate: js.Function0[Unit] | Null
     
-    var state: State | Null = js.native
+    var state: State | Null
     
-    var styles: StringDictionary[CSSProperties] = js.native
+    var styles: StringDictionary[CSSProperties]
     
-    var update: js.Function0[js.Promise[typings.popperjsCore.anon.PartialState]] | Null = js.native
+    var update: js.Function0[js.Promise[typings.popperjsCore.anon.PartialState]] | Null
   }
   object Attributes {
     
@@ -45,7 +43,7 @@ object anon {
       attributes: StringDictionary[js.UndefOr[StringDictionary[String]]],
       styles: StringDictionary[CSSProperties]
     ): Attributes = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], forceUpdate = null, state = null, update = null)
       __obj.asInstanceOf[Attributes]
     }
     
@@ -78,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CreatePopper[Modifiers] extends StObject {
     
-    var createPopper: js.UndefOr[FnCall] = js.native
+    var createPopper: js.UndefOr[FnCall] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[Modifier[Modifiers, js.Object]]] = js.native
+    var modifiers: js.UndefOr[js.Array[Modifier[Modifiers, js.Object]]] = js.undefined
   }
   object CreatePopper {
     
@@ -94,7 +91,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CreatePopperMutableBuilder[Self <: CreatePopper[_], Modifiers] (val x: Self with CreatePopper[Modifiers]) extends AnyVal {
+    implicit class CreatePopperMutableBuilder[Self <: CreatePopper[?], Modifiers] (val x: Self & CreatePopper[Modifiers]) extends AnyVal {
       
       @scala.inline
       def setCreatePopper(value: FnCall): Self = StObject.set(x, "createPopper", value.asInstanceOf[js.Any])
@@ -123,14 +120,13 @@ object anon {
   }
   
   /* Inlined std.Omit<std.Partial<@popperjs/core.@popperjs/core.Options>, 'modifiers'> */
-  @js.native
   trait OmitPartialOptionsmodifie extends StObject {
     
-    var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ typings.popperjsCore.anon.PartialState, Unit]] = js.native
+    var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ typings.popperjsCore.anon.PartialState, Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var strategy: js.UndefOr[PositioningStrategy] = js.native
+    var strategy: js.UndefOr[PositioningStrategy] = js.undefined
   }
   object OmitPartialOptionsmodifie {
     
@@ -164,30 +160,29 @@ object anon {
   }
   
   /* Inlined std.Partial<@popperjs/core.@popperjs/core.State> */
-  @js.native
   trait PartialState extends StObject {
     
-    var attributes: js.UndefOr[StringDictionary[StringDictionary[String | Boolean]]] = js.native
+    var attributes: js.UndefOr[StringDictionary[StringDictionary[String | Boolean]]] = js.undefined
     
-    var elements: js.UndefOr[Arrow] = js.native
+    var elements: js.UndefOr[Arrow] = js.undefined
     
-    var modifiersData: js.UndefOr[Dictkey] = js.native
+    var modifiersData: js.UndefOr[Dictkey] = js.undefined
     
-    var options: js.UndefOr[OptionsGeneric[_]] = js.native
+    var options: js.UndefOr[OptionsGeneric[js.Any]] = js.undefined
     
-    var orderedModifiers: js.UndefOr[js.Array[typings.popperjsCore.typesMod.Modifier[_, _]]] = js.native
+    var orderedModifiers: js.UndefOr[js.Array[typings.popperjsCore.typesMod.Modifier[js.Any, js.Any]]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var rects: js.UndefOr[StateRects] = js.native
+    var rects: js.UndefOr[StateRects] = js.undefined
     
-    var reset: js.UndefOr[Boolean] = js.native
+    var reset: js.UndefOr[Boolean] = js.undefined
     
-    var scrollParents: js.UndefOr[Popper] = js.native
+    var scrollParents: js.UndefOr[Popper] = js.undefined
     
-    var strategy: js.UndefOr[PositioningStrategy] = js.native
+    var strategy: js.UndefOr[PositioningStrategy] = js.undefined
     
-    var styles: js.UndefOr[StringDictionary[PartialCSSStyleDeclaratio]] = js.native
+    var styles: js.UndefOr[StringDictionary[PartialCSSStyleDeclaratio]] = js.undefined
   }
   object PartialState {
     
@@ -219,13 +214,13 @@ object anon {
       def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
       
       @scala.inline
-      def setOptions(value: OptionsGeneric[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setOrderedModifiers(value: js.Array[typings.popperjsCore.typesMod.Modifier[_, _]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+      def setOrderedModifiers(value: js.Array[typings.popperjsCore.typesMod.Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)

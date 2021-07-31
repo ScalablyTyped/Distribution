@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ParagraphAlignment extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ParagraphAlignment with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ParagraphAlignment & Double] = js.native
   
-  /* 2 */ val Center: typings.devexpressWeb.ParagraphAlignment.Center with Double = js.native
+  /* 2 */ val Center: typings.devexpressWeb.ParagraphAlignment.Center & Double = js.native
   
-  /* 3 */ val Justify: typings.devexpressWeb.ParagraphAlignment.Justify with Double = js.native
+  /* 3 */ val Justify: typings.devexpressWeb.ParagraphAlignment.Justify & Double = js.native
   
-  /* 0 */ val Left: typings.devexpressWeb.ParagraphAlignment.Left with Double = js.native
+  /* 0 */ val Left: typings.devexpressWeb.ParagraphAlignment.Left & Double = js.native
   
-  /* 1 */ val Right: typings.devexpressWeb.ParagraphAlignment.Right with Double = js.native
+  /* 1 */ val Right: typings.devexpressWeb.ParagraphAlignment.Right & Double = js.native
 }

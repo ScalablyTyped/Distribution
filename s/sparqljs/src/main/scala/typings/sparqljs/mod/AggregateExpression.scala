@@ -3,29 +3,28 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.aggregate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateExpression
-  extends BaseExpression
+  extends StObject
+     with BaseExpression
      with _Expression {
   
-  var aggregation: String = js.native
+  var aggregation: String
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_AggregateExpression: aggregate = js.native
+  var type_AggregateExpression: aggregate
 }
 object AggregateExpression {
   
   @scala.inline
-  def apply(aggregation: String, expression: Expression, `type`: aggregate): AggregateExpression = {
+  def apply(aggregation: String, expression: Expression): AggregateExpression = {
     val __obj = js.Dynamic.literal(aggregation = aggregation.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("aggregate")
     __obj.asInstanceOf[AggregateExpression]
   }
   

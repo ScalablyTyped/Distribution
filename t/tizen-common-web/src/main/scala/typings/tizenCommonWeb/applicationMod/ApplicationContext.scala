@@ -2,21 +2,19 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationContext extends StObject {
   
   /**
     * An attribute to store the ID of an installed application.
     */
-  val appId: ApplicationId = js.native
+  val appId: ApplicationId
   
   /**
     * An attribute to store the ID of a running application.
     */
-  val id: ApplicationContextId = js.native
+  val id: ApplicationContextId
 }
 object ApplicationContext {
   

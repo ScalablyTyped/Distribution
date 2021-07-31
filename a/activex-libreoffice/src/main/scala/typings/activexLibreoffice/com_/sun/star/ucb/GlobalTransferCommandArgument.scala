@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This struct contains information needed to transfer objects from one location to another. */
-@js.native
 trait GlobalTransferCommandArgument extends StObject {
   
   /**
@@ -15,23 +13,23 @@ trait GlobalTransferCommandArgument extends StObject {
     * A title clash for instance occurs, if a file named "foo.txt" is to be transferred to a folder already containing another file named "foo.txt". Refer
     * to {@link NameClash} for possible values for this field.
     */
-  var NameClash: Double = js.native
+  var NameClash: Double
   
   /**
     * contains the title of the transferred object, if it is different from the original one.
     *
     * If this field is filled, for example, a file will be renamed while it is being transferred.
     */
-  var NewTitle: String = js.native
+  var NewTitle: String
   
   /** contains the action to perform ( COPY, MOVE, LINK ). */
-  var Operation: TransferCommandOperation = js.native
+  var Operation: TransferCommandOperation
   
   /** contains the URL of the source object. */
-  var SourceURL: String = js.native
+  var SourceURL: String
   
   /** contains the URL of the target folder. */
-  var TargetURL: String = js.native
+  var TargetURL: String
 }
 object GlobalTransferCommandArgument {
   

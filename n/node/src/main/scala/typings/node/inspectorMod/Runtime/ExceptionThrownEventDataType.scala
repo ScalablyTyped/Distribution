@@ -2,18 +2,16 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionThrownEventDataType extends StObject {
   
-  var exceptionDetails: ExceptionDetails = js.native
+  var exceptionDetails: ExceptionDetails
   
   /**
     * Timestamp of the exception.
     */
-  var timestamp: Timestamp = js.native
+  var timestamp: Timestamp
 }
 object ExceptionThrownEventDataType {
   

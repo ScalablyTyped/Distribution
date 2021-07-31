@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNodesForSubtreeByStyleRequest extends StObject {
   
   /**
     * The style to filter nodes by (includes nodes if any of properties matches).
     */
-  var computedStyles: js.Array[CSSComputedStyleProperty] = js.native
+  var computedStyles: js.Array[CSSComputedStyleProperty]
   
   /**
     * Node ID pointing to the root of a subtree.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Whether or not iframes and shadow roots in the same target should be traversed when returning the
     * results (default is false).
     */
-  var pierce: js.UndefOr[Boolean] = js.native
+  var pierce: js.UndefOr[Boolean] = js.undefined
 }
 object GetNodesForSubtreeByStyleRequest {
   

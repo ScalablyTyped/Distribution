@@ -7,37 +7,35 @@ import typings.overlayscrollbars.anon.XNumber
 import typings.overlayscrollbars.anon.Xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var autoUpdate: Boolean = js.native
+  var autoUpdate: Boolean
   
-  var contentScrollSize: Height = js.native
+  var contentScrollSize: Height
   
-  var destroyed: Boolean = js.native
+  var destroyed: Boolean
   
-  var documentMixed: Boolean = js.native
+  var documentMixed: Boolean
   
-  var hasOverflow: XBoolean = js.native
+  var hasOverflow: XBoolean
   
-  var heightAuto: Boolean = js.native
+  var heightAuto: Boolean
   
-  var hideOverflow: Xs = js.native
+  var hideOverflow: Xs
   
-  var hostSize: Height = js.native
+  var hostSize: Height
   
-  var overflowAmount: XNumber = js.native
+  var overflowAmount: XNumber
   
-  var padding: B = js.native
+  var padding: B
   
-  var sleeping: Boolean = js.native
+  var sleeping: Boolean
   
-  var viewportSize: Height = js.native
+  var viewportSize: Height
   
-  var widthAuto: Boolean = js.native
+  var widthAuto: Boolean
 }
 object State {
   

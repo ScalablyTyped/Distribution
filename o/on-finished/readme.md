@@ -11,8 +11,8 @@ Execute a callback when a request closes, finishes, or errors
 | Full name          | on-finished |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 673 |
-| # downloads        | 567200898 |
+| # dependents       | 749 |
+| # downloads        | 666324535 |
 | # stars            | 23 |
 
 ## Links

@@ -2,72 +2,70 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about a resource which is being promoted.
   */
-@js.native
 trait SchemaActivityContentDetailsPromotedItem extends StObject {
   
   /**
     * The URL the client should fetch to request a promoted item.
     */
-  var adTag: js.UndefOr[String] = js.native
+  var adTag: js.UndefOr[String] = js.undefined
   
   /**
     * The URL the client should ping to indicate that the user clicked through
     * on this promoted item.
     */
-  var clickTrackingUrl: js.UndefOr[String] = js.native
+  var clickTrackingUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The URL the client should ping to indicate that the user was shown this
     * promoted item.
     */
-  var creativeViewUrl: js.UndefOr[String] = js.native
+  var creativeViewUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The type of call-to-action, a message to the user indicating action that
     * can be taken.
     */
-  var ctaType: js.UndefOr[String] = js.native
+  var ctaType: js.UndefOr[String] = js.undefined
   
   /**
     * The custom call-to-action button text. If specified, it will override the
     * default button text for the cta_type.
     */
-  var customCtaButtonText: js.UndefOr[String] = js.native
+  var customCtaButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * The text description to accompany the promoted item.
     */
-  var descriptionText: js.UndefOr[String] = js.native
+  var descriptionText: js.UndefOr[String] = js.undefined
   
   /**
     * The URL the client should direct the user to, if the user chooses to
     * visit the advertiser&#39;s website.
     */
-  var destinationUrl: js.UndefOr[String] = js.native
+  var destinationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The list of forecasting URLs. The client should ping all of these URLs
     * when a promoted item is not available, to indicate that a promoted item
     * could have been shown.
     */
-  var forecastingUrl: js.UndefOr[js.Array[String]] = js.native
+  var forecastingUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of impression URLs. The client should ping all of these URLs to
     * indicate that the user was shown this promoted item.
     */
-  var impressionUrl: js.UndefOr[js.Array[String]] = js.native
+  var impressionUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the promoted video.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object SchemaActivityContentDetailsPromotedItem {
   

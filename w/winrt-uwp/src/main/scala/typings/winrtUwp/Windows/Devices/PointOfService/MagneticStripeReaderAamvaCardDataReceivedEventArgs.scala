@@ -2,69 +2,67 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the American Association of Motor Vehicle Administrators (AAMVA) card data from the AamvaCardDataReceived event. */
-@js.native
 trait MagneticStripeReaderAamvaCardDataReceivedEventArgs extends StObject {
   
   /** Gets the address from the swiped AAMVA card. */
-  var address: String = js.native
+  var address: String
   
   /** Gets the birth date from the swiped AAMVA card. */
-  var birthDate: String = js.native
+  var birthDate: String
   
   /** Gets the city from the swiped AAMVA card. */
-  var city: String = js.native
+  var city: String
   
   /** Gets the class from the swiped AAMVA card. */
-  var `class`: String = js.native
+  var `class`: String
   
   /** Gets the endorsements from the swiped AAMVA card. */
-  var endorsements: String = js.native
+  var endorsements: String
   
   /** Gets the expiration date from the swiped AAMVA card. */
-  var expirationDate: String = js.native
+  var expirationDate: String
   
   /** Gets the eye color from the swiped AAMVA card. */
-  var eyeColor: String = js.native
+  var eyeColor: String
   
   /** Gets the first name from the swiped AAMVA card. */
-  var firstName: String = js.native
+  var firstName: String
   
   /** Gets the gender from the swiped AAMVA card. */
-  var gender: String = js.native
+  var gender: String
   
   /** Gets the hair color from the swiped AAMVA card. */
-  var hairColor: String = js.native
+  var hairColor: String
   
   /** Gets the height from the swiped AAMVA card. */
-  var height: String = js.native
+  var height: String
   
   /** Gets the license number from the swiped AAMVA card. */
-  var licenseNumber: String = js.native
+  var licenseNumber: String
   
   /** Gets the postal code from the swiped AAMVA card. */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /** Gets the additional data from the swiped AAMVA card. */
-  var report: MagneticStripeReaderReport = js.native
+  var report: MagneticStripeReaderReport
   
   /** Gets the restrictions from the swiped AAMVA card. */
-  var restrictions: String = js.native
+  var restrictions: String
   
   /** Gets the state from the swiped AAMVA card. */
-  var state: String = js.native
+  var state: String
   
   /** Gets the suffix from the swiped AAMVA card. */
-  var suffix: String = js.native
+  var suffix: String
   
   /** Gets the surname from the swiped card. */
-  var surname: String = js.native
+  var surname: String
   
   /** Gets the weight from the swiped AAMVA card. */
-  var weight: String = js.native
+  var weight: String
 }
 object MagneticStripeReaderAamvaCardDataReceivedEventArgs {
   

@@ -2,53 +2,50 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "StringUtilities")
 @js.native
 class StringUtilities ()
-  extends typings.typescriptServices.TypeScript.StringUtilities
+  extends StObject
+     with typings.typescriptServices.TypeScript.StringUtilities
 object StringUtilities {
   
-  /* static member */
-  @JSImport("typescript-services", "StringUtilities.copyTo")
+  @JSImport("typescript-services", "StringUtilities")
   @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
   def copyTo(
     source: String,
     sourceIndex: Double,
     destination: js.Array[Double],
     destinationIndex: Double,
     count: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTo")(source.asInstanceOf[js.Any], sourceIndex.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], destinationIndex.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.endsWith")
-  @js.native
-  def endsWith(string: String, value: String): Boolean = js.native
+  @scala.inline
+  def endsWith(string: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsWith")(string.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.fromCharCodeArray")
-  @js.native
-  def fromCharCodeArray(array: js.Array[Double]): String = js.native
+  @scala.inline
+  def fromCharCodeArray(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCharCodeArray")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.isString")
-  @js.native
-  def isString(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.repeat")
-  @js.native
-  def repeat(value: String, count: Double): String = js.native
+  @scala.inline
+  def repeat(value: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.startsWith")
-  @js.native
-  def startsWith(string: String, value: String): Boolean = js.native
+  @scala.inline
+  def startsWith(string: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(string.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "StringUtilities.stringEquals")
-  @js.native
-  def stringEquals(val1: String, val2: String): Boolean = js.native
+  @scala.inline
+  def stringEquals(val1: String, val2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stringEquals")(val1.asInstanceOf[js.Any], val2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

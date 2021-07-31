@@ -7,27 +7,28 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalFooterMod {
   
-  @JSImport("@ant-design/pro-layout/lib/GlobalFooter", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/lib/GlobalFooter", JSImport.Namespace)
   @js.native
-  def default(hasClassNamePrefixClsLinksCopyrightStyle: GlobalFooterProps): Element | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasClassNamePrefixClsLinksCopyrightStyle: GlobalFooterProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNamePrefixClsLinksCopyrightStyle.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
   trait GlobalFooterProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[ReactNode] = js.native
+    var copyright: js.UndefOr[ReactNode] = js.undefined
     
-    var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.native
+    var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GlobalFooterProps {
     

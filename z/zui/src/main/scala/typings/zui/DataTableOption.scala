@@ -2,59 +2,57 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTableOption extends StObject {
   
-  var afterLoad: js.UndefOr[js.Function1[/* event */ AfterLoadEvent, Unit]] = js.native
+  var afterLoad: js.UndefOr[js.Function1[/* event */ AfterLoadEvent, Unit]] = js.undefined
   
-  var checkByClickRow: js.UndefOr[Boolean] = js.native
+  var checkByClickRow: js.UndefOr[Boolean] = js.undefined
   
-  var checkable: js.UndefOr[Boolean] = js.native
+  var checkable: js.UndefOr[Boolean] = js.undefined
   
-  var checkedClass: js.UndefOr[String] = js.native
+  var checkedClass: js.UndefOr[String] = js.undefined
   
-  var checksChanged: js.UndefOr[js.Function1[/* event */ ChecksChangeEvent, Unit]] = js.native
+  var checksChanged: js.UndefOr[js.Function1[/* event */ ChecksChangeEvent, Unit]] = js.undefined
   
-  var colHover: js.UndefOr[Boolean] = js.native
+  var colHover: js.UndefOr[Boolean] = js.undefined
   
-  var fixCellHeight: js.UndefOr[Boolean] = js.native
+  var fixCellHeight: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeaderOffset: js.UndefOr[Double] = js.native
+  var fixedHeaderOffset: js.UndefOr[Double] = js.undefined
   
-  var fixedLeftWidth: js.UndefOr[String] = js.native
+  var fixedLeftWidth: js.UndefOr[String] = js.undefined
   
-  var fixedRightWidth: js.UndefOr[String] = js.native
+  var fixedRightWidth: js.UndefOr[String] = js.undefined
   
-  var flexHeadDrag: js.UndefOr[Boolean] = js.native
+  var flexHeadDrag: js.UndefOr[Boolean] = js.undefined
   
-  var minColWidth: js.UndefOr[Double] = js.native
+  var minColWidth: js.UndefOr[Double] = js.undefined
   
-  var minFixedLeftWidth: js.UndefOr[Double] = js.native
+  var minFixedLeftWidth: js.UndefOr[Double] = js.undefined
   
-  var minFixedRightWidth: js.UndefOr[Double] = js.native
+  var minFixedRightWidth: js.UndefOr[Double] = js.undefined
   
-  var minFlexAreaWidth: js.UndefOr[Double] = js.native
+  var minFlexAreaWidth: js.UndefOr[Double] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var rowHover: js.UndefOr[Boolean] = js.native
+  var rowHover: js.UndefOr[Boolean] = js.undefined
   
-  var scrollPos: js.UndefOr[String] = js.native
+  var scrollPos: js.UndefOr[String] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | js.Object] = js.native
+  var selectable: js.UndefOr[Boolean | js.Object] = js.undefined
   
-  var sizeChanged: js.UndefOr[js.Function1[/* event */ SizeChangeEvent, Unit]] = js.native
+  var sizeChanged: js.UndefOr[js.Function1[/* event */ SizeChangeEvent, Unit]] = js.undefined
   
-  var sort: js.UndefOr[js.Function1[/* event */ SortEvent, Unit]] = js.native
+  var sort: js.UndefOr[js.Function1[/* event */ SortEvent, Unit]] = js.undefined
   
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
-  var storage: js.UndefOr[Boolean] = js.native
+  var storage: js.UndefOr[Boolean] = js.undefined
 }
 object DataTableOption {
   

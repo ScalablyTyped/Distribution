@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserPoolDomainResponse extends StObject {
   
   /**
     * A domain description object containing information about the domain.
     */
-  var DomainDescription: js.UndefOr[DomainDescriptionType] = js.native
+  var DomainDescription: js.UndefOr[DomainDescriptionType] = js.undefined
 }
 object DescribeUserPoolDomainResponse {
   

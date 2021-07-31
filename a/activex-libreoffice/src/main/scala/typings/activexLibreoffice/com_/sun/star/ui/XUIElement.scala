@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.frame.XFrame
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com::sun::star::awt::XSystemDependentMenuBarPeer which supports to retrieve the system dependent menu handle. A floating window or a toolbar user
   * interface element return a {@link com.sun.star.awt.XWindow} interface.
   */
-@js.native
-trait XUIElement extends XInterface {
+trait XUIElement
+  extends StObject
+     with XInterface {
   
   /**
     * determines the document frame to which this element is bound to.
@@ -24,28 +24,28 @@ trait XUIElement extends XInterface {
     * The life time of a user interface element does not explicitly depend on the frame itself but on the visible component attached to the frame. It is
     * possible to exchange the visible component of a frame and that will lead to the end of life of all user interface elements.
     */
-  var Frame: XFrame = js.native
+  var Frame: XFrame
   
   /**
     * returns an interface to get access to user interface type specific functions.
     * @returns a special purpose interface which depends on the type of the user interface element.
     */
-  val RealInterface: XInterface = js.native
+  val RealInterface: XInterface
   
   /** a resource URL which is a unique identifier of a user interface element. */
-  var ResourceURL: String = js.native
+  var ResourceURL: String
   
   /**
     * determines the type of the user interface element.
     * @see UIElementType
     */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * returns an interface to get access to user interface type specific functions.
     * @returns a special purpose interface which depends on the type of the user interface element.
     */
-  def getRealInterface(): XInterface = js.native
+  def getRealInterface(): XInterface
 }
 object XUIElement {
   

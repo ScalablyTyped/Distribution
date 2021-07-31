@@ -3,65 +3,63 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtension extends StObject {
   
   /**
     * Confirmation code for this reservation.
     */
-  var confirmationCode: js.UndefOr[String] = js.native
+  var confirmationCode: js.UndefOr[String] = js.undefined
   
   /**
     * Any extra fields exchanged between merchant and google.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Location of the service/event.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.native
+  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * The number of people.
     */
-  var partySize: js.UndefOr[Double] = js.native
+  var partySize: js.UndefOr[Double] = js.undefined
   
   /**
     * Time when the service/event is scheduled to occur.
     * Can be a time range, a date, or an exact date time.
     */
-  var reservationTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var reservationTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * Staff facilitators who will be servicing the reservation.
     * Ex. The hairstylist.
     */
-  var staffFacilitators: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]] = js.native
+  var staffFacilitators: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]] = js.undefined
   
   /**
     * Required: Reservation status.
     */
-  var status: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus] = js.native
+  var status: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus] = js.undefined
   
   /**
     * Type of reservation.
     * May be unset if none of the type options is applicable.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType] = js.undefined
   
   /**
     * Time range that is acceptable to the user.
     */
-  var userAcceptableTimeRange: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var userAcceptableTimeRange: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * Required: User visible label/string for the status.
     * Max allowed length is 50 chars.
     */
-  var userVisibleStatusLabel: js.UndefOr[String] = js.native
+  var userVisibleStatusLabel: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
   
@@ -81,7 +79,7 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     def setConfirmationCodeUndefined: Self = StObject.set(x, "confirmationCode", js.undefined)
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)

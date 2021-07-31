@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSTypeAliasDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `90` extends StObject {
   
-  var `type`: TSTypeAliasDeclaration = js.native
+  var `type`: TSTypeAliasDeclaration
 }
 object `90` {
   
   @scala.inline
-  def apply(`type`: TSTypeAliasDeclaration): `90` = {
+  def apply(): `90` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSTypeAliasDeclaration")
     __obj.asInstanceOf[`90`]
   }
   

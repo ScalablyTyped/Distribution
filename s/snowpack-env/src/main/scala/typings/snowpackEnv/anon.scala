@@ -3,24 +3,22 @@ package typings.snowpackEnv
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Deps extends StObject {
     
     /** The newer version of dependencies. Order is same as the first argument. */
-    var deps: js.Array[_] = js.native
+    var deps: js.Array[js.Any]
     
     /** The newer version of the current module */
-    var module: js.Any = js.native
+    var module: js.Any
   }
   object Deps {
     
     @scala.inline
-    def apply(deps: js.Array[_], module: js.Any): Deps = {
+    def apply(deps: js.Array[js.Any], module: js.Any): Deps = {
       val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deps]
     }
@@ -29,7 +27,7 @@ object anon {
     implicit class DepsMutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
@@ -39,17 +37,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    val MODE: String = js.native
+    val MODE: String
     
-    val NODE_ENV: String = js.native
+    val NODE_ENV: String
     
-    val SNOWPACK_PUBLIC_API_URL: String = js.native
+    val SNOWPACK_PUBLIC_API_URL: String
     
-    val SSR: js.UndefOr[Boolean] = js.native
+    val SSR: js.UndefOr[Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -79,11 +77,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Module extends StObject {
     
     /** The newer version of the current module */
-    var module: js.Any = js.native
+    var module: js.Any
   }
   object Module {
     

@@ -2,34 +2,32 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotTreemapLevelsOptions extends StObject {
   
   /**
     * (Highcharts) Can set a `borderColor` on all points which lies on the same
     * level.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts) Set the dash style of the border of all the point which lies
     * on the level. See plotOptions.scatter.dashStyle for possible options.
     */
-  var borderDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts) Can set the borderWidth on all points which lies on the same
     * level.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set a color on all points which lies on the same level.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) A configuration object to define how the color of a child
@@ -41,7 +39,7 @@ trait PlotTreemapLevelsOptions extends StObject {
     * other while highlighting the grouping on treemaps and sectors on sunburst
     * charts.
     */
-  var colorVariation: js.UndefOr[PlotTreemapLevelsColorVariationOptions] = js.native
+  var colorVariation: js.UndefOr[PlotTreemapLevelsColorVariationOptions] = js.undefined
   
   /**
     * (Highcharts) Can set the options of dataLabels on each point which lies
@@ -49,24 +47,24 @@ trait PlotTreemapLevelsOptions extends StObject {
     */
   var dataLabels: js.UndefOr[
     PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
-  var layoutAlgorithm: js.UndefOr[OptionsLayoutAlgorithmValue] = js.native
+  var layoutAlgorithm: js.UndefOr[OptionsLayoutAlgorithmValue] = js.undefined
   
   /**
     * (Highcharts) Can set the layoutStartingDirection option on a specific
     * level.
     */
-  var layoutStartingDirection: js.UndefOr[OptionsLayoutStartingDirectionValue] = js.native
+  var layoutStartingDirection: js.UndefOr[OptionsLayoutStartingDirectionValue] = js.undefined
   
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
     * levels object.
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
 }
 object PlotTreemapLevelsOptions {
   

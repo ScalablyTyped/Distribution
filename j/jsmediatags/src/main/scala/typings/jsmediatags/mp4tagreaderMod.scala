@@ -5,7 +5,6 @@ import typings.jsmediatags.typesMod.LoadCallbackType
 import typings.jsmediatags.typesMod.TagFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mp4tagreaderMod {
@@ -16,13 +15,15 @@ object mp4tagreaderMod {
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/MP4TagReader", "default.canReadTagFormat")
+    @JSImport("jsmediatags/build2/MP4TagReader", JSImport.Default)
     @js.native
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsmediatags/build2/MP4TagReader", "default.getTagIdentifierByteRange")
-    @js.native
-    def getTagIdentifierByteRange(): ByteRange = js.native
+    @scala.inline
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadTagFormat")(tagIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getTagIdentifierByteRange(): ByteRange = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagIdentifierByteRange")().asInstanceOf[ByteRange]
   }
   
   @js.native
@@ -46,32 +47,6 @@ object mp4tagreaderMod {
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
-      tagsToRead: js.UndefOr[scala.Nothing],
-      parentAtomFullName: js.UndefOr[scala.Nothing],
-      indent: String
-    ): Unit = js.native
-    def _readAtom(
-      tags: js.Any,
-      data: typings.jsmediatags.mediaFileReaderMod.default,
-      offset: Double,
-      length: Double,
-      tagsToRead: js.UndefOr[scala.Nothing],
-      parentAtomFullName: String
-    ): Unit = js.native
-    def _readAtom(
-      tags: js.Any,
-      data: typings.jsmediatags.mediaFileReaderMod.default,
-      offset: Double,
-      length: Double,
-      tagsToRead: js.UndefOr[scala.Nothing],
-      parentAtomFullName: String,
-      indent: String
-    ): Unit = js.native
-    def _readAtom(
-      tags: js.Any,
-      data: typings.jsmediatags.mediaFileReaderMod.default,
-      offset: Double,
-      length: Double,
       tagsToRead: js.Array[String]
     ): Unit = js.native
     def _readAtom(
@@ -80,15 +55,6 @@ object mp4tagreaderMod {
       offset: Double,
       length: Double,
       tagsToRead: js.Array[String],
-      parentAtomFullName: js.UndefOr[scala.Nothing],
-      indent: String
-    ): Unit = js.native
-    def _readAtom(
-      tags: js.Any,
-      data: typings.jsmediatags.mediaFileReaderMod.default,
-      offset: Double,
-      length: Double,
-      tagsToRead: js.Array[String],
       parentAtomFullName: String
     ): Unit = js.native
     def _readAtom(
@@ -98,6 +64,41 @@ object mp4tagreaderMod {
       length: Double,
       tagsToRead: js.Array[String],
       parentAtomFullName: String,
+      indent: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: js.Array[String],
+      parentAtomFullName: Unit,
+      indent: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: Unit,
+      parentAtomFullName: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: Unit,
+      parentAtomFullName: String,
+      indent: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: Unit,
+      parentAtomFullName: Unit,
       indent: String
     ): Unit = js.native
     

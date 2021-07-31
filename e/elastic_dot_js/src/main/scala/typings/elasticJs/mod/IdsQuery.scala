@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "IdsQuery")
 @js.native
-class IdsQuery protected () extends Query {
+class IdsQuery protected ()
+  extends StObject
+     with Query {
   /*
     Matches documents with the specified id(s).
     */

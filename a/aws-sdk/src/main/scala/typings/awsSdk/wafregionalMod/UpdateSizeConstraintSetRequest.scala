@@ -2,26 +2,24 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSizeConstraintSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken
   
   /**
     * The SizeConstraintSetId of the SizeConstraintSet that you want to update. SizeConstraintSetId is returned by CreateSizeConstraintSet and by ListSizeConstraintSets.
     */
-  var SizeConstraintSetId: ResourceId = js.native
+  var SizeConstraintSetId: ResourceId
   
   /**
     * An array of SizeConstraintSetUpdate objects that you want to insert into or delete from a SizeConstraintSet. For more information, see the applicable data types:    SizeConstraintSetUpdate: Contains Action and SizeConstraint     SizeConstraint: Contains FieldToMatch, TextTransformation, ComparisonOperator, and Size     FieldToMatch: Contains Data and Type   
     */
-  var Updates: SizeConstraintSetUpdates = js.native
+  var Updates: SizeConstraintSetUpdates
 }
 object UpdateSizeConstraintSetRequest {
   

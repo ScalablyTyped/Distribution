@@ -3,31 +3,31 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tab extends RibbonComponent {
+trait Tab
+  extends StObject
+     with RibbonComponent {
   
-  def get_command(): String = js.native
+  def get_command(): String
   
-  def get_contextual(): Boolean = js.native
+  def get_contextual(): Boolean
   
-  def get_contextualGroupId(): String = js.native
+  def get_contextualGroupId(): String
   
-  def get_currentScalingIndex(): Double = js.native
+  def get_currentScalingIndex(): Double
   
-  def get_scaling(): String = js.native
+  def get_scaling(): String
   
-  def get_selected(): Boolean = js.native
+  def get_selected(): Boolean
   
-  def scaleDown(): scala.Unit = js.native
+  def scaleDown(): scala.Unit
   
-  def scaleMax(): scala.Unit = js.native
+  def scaleMax(): scala.Unit
   
-  def scaleUp(): scala.Unit = js.native
+  def scaleUp(): scala.Unit
   
-  def set_selected(isSelected: Boolean): scala.Unit = js.native
+  def set_selected(isSelected: Boolean): scala.Unit
 }
 object Tab {
   

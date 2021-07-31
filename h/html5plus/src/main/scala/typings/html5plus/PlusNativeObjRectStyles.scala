@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjRectStyles extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusNativeObjRectStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
   /**
     * 矩形边框宽度
@@ -32,7 +30,7 @@ trait PlusNativeObjRectStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderWidth: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[String] = js.undefined
   
   /**
     * 绘制颜色
@@ -43,7 +41,7 @@ trait PlusNativeObjRectStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 矩形区域的圆角半径
@@ -52,7 +50,7 @@ trait PlusNativeObjRectStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var radius: js.UndefOr[String] = js.native
+  var radius: js.UndefOr[String] = js.undefined
 }
 object PlusNativeObjRectStyles {
   

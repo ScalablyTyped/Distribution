@@ -2,19 +2,17 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a choice-item.
   */
-@js.native
 trait ChoiceBase extends StObject {
   
   /**
     * The type of the choice.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ChoiceBase {
   

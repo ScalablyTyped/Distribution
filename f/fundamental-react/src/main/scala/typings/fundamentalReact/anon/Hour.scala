@@ -4,19 +4,17 @@ import typings.fundamentalReact.fundamentalReactNumbers.`0`
 import typings.fundamentalReact.fundamentalReactNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hour extends StObject {
   
-  var hour: String = js.native
+  var hour: String
   
-  var meridiem: `0` | `1` = js.native
+  var meridiem: `0` | `1`
   
-  var minute: String = js.native
+  var minute: String
   
-  var second: String = js.native
+  var second: String
 }
 object Hour {
   

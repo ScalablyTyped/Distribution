@@ -21,29 +21,32 @@ import typings.jpushReactNative.anon.codenumberSequence
 import typings.jpushReactNative.anon.mobileNumberstringSequenc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("jpush-react-native", JSImport.Default)
   @js.native
-  class default () extends JPush
+  class default ()
+    extends StObject
+       with JPush
   /* static members */
   object default {
     
+    @JSImport("jpush-react-native", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     //***************************************接口回调***************************************
     //连接状态
-    @JSImport("jpush-react-native", "default.addConnectEventListener")
-    @js.native
-    def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = js.native
+    @scala.inline
+    def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConnectEventListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 自定义消息事件
       */
-    @JSImport("jpush-react-native", "default.addCustomMessagegListener")
-    @js.native
-    def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = js.native
+    @scala.inline
+    def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessagegListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************本地通知***************************************
     /**
@@ -58,103 +61,90 @@ object mod {
       * extras:对应“附加内容”字段
       *
       */
-    @JSImport("jpush-react-native", "default.addLocalNotification")
-    @js.native
-    def addLocalNotification(params: Content): Unit = js.native
+    @scala.inline
+    def addLocalNotification(params: Content): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 本地通知事件
       *
       * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
       */
-    @JSImport("jpush-react-native", "default.addLocalNotificationListener")
-    @js.native
-    def addLocalNotificationListener(callback: Callback[Extras]): Unit = js.native
+    @scala.inline
+    def addLocalNotificationListener(callback: Callback[Extras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 手机号码事件
       */
-    @JSImport("jpush-react-native", "default.addMobileNumberListener")
-    @js.native
-    def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = js.native
+    @scala.inline
+    def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMobileNumberListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 通知事件
       *
       * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
       */
-    @JSImport("jpush-react-native", "default.addNotificationListener")
-    @js.native
-    def addNotificationListener(callback: Callback[Badge]): Unit = js.native
+    @scala.inline
+    def addNotificationListener(callback: Callback[Badge]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * tag alias事件
       */
-    @JSImport("jpush-react-native", "default.addTagAliasListener")
-    @js.native
-    def addTagAliasListener(callback: Callback[Code with Sequence with (Tags | Alias | TagtagEnableboolean)]): Unit = js.native
+    @scala.inline
+    def addTagAliasListener(callback: Callback[Code & Sequence & (Tags | Alias | TagtagEnableboolean)]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTagAliasListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 新增标签
       *
       * 这个接口是增加逻辑,而不是覆盖逻辑
       */
-    @JSImport("jpush-react-native", "default.addTags")
-    @js.native
-    def addTags(params: Sequence with Tags): Unit = js.native
+    @scala.inline
+    def addTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 清除所有 JPush 展现的通知（不包括非 JPush SDK 展现的）
       *
       */
-    @JSImport("jpush-react-native", "default.clearAllNotifications")
-    @js.native
-    def clearAllNotifications(): Unit = js.native
+    @scala.inline
+    def clearAllNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllNotifications")().asInstanceOf[Unit]
     
     /**
       * 移除所有的本地通知
       *
       */
-    @JSImport("jpush-react-native", "default.clearLocalNotifications")
-    @js.native
-    def clearLocalNotifications(): Unit = js.native
+    @scala.inline
+    def clearLocalNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearLocalNotifications")().asInstanceOf[Unit]
     
     /**
       * 删除指定的通知
       * */
-    @JSImport("jpush-react-native", "default.clearNotificationById")
-    @js.native
-    def clearNotificationById(params: NotificationId): Unit = js.native
+    @scala.inline
+    def clearNotificationById(params: NotificationId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNotificationById")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除别名
       */
-    @JSImport("jpush-react-native", "default.deleteAlias")
-    @js.native
-    def deleteAlias(params: Sequence): Unit = js.native
+    @scala.inline
+    def deleteAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除指定id的地理围栏
       *
       */
-    @JSImport("jpush-react-native", "default.deleteGeofence")
-    @js.native
-    def deleteGeofence(params: GeoFenceID): Unit = js.native
+    @scala.inline
+    def deleteGeofence(params: GeoFenceID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteGeofence")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除指定标签
       *
       */
-    @JSImport("jpush-react-native", "default.deleteTag")
-    @js.native
-    def deleteTag(params: Sequence with Tags): Unit = js.native
+    @scala.inline
+    def deleteTag(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 清除所有标签
       */
-    @JSImport("jpush-react-native", "default.deleteTags")
-    @js.native
-    def deleteTags(params: Sequence): Unit = js.native
+    @scala.inline
+    def deleteTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取 RegistrationID
@@ -163,9 +153,8 @@ object mod {
       * 只有当应用程序成功注册到 JPush 的服务器时才返回对应的值,否则返回空字符串
       *
       */
-    @JSImport("jpush-react-native", "default.getRegistrationID")
-    @js.native
-    def getRegistrationID(callback: Callback[RegisterID]): Unit = js.native
+    @scala.inline
+    def getRegistrationID(callback: Callback[RegisterID]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegistrationID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 初始化推送服务
@@ -173,68 +162,59 @@ object mod {
       * 请在componentDidMount()调用init,否则会影响通知点击事件的回调
       *
       */
-    @JSImport("jpush-react-native", "default.init")
-    @js.native
-    def init(): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * 开启 CrashLog 上报
       *
       */
-    @JSImport("jpush-react-native", "default.initCrashHandler")
-    @js.native
-    def initCrashHandler(): Unit = js.native
+    @scala.inline
+    def initCrashHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initCrashHandler")().asInstanceOf[Unit]
     
     /**
       * 检查当前应用的通知开关是否开启
       * */
-    @JSImport("jpush-react-native", "default.isNotificationEnabled")
-    @js.native
-    def isNotificationEnabled(callback: Callback[Boolean]): Unit = js.native
+    @scala.inline
+    def isNotificationEnabled(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotificationEnabled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 用来检查 Push Service 是否已经被停止
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.isPushStopped")
-    @js.native
-    def isPushStopped(callback: Callback[Boolean]): Unit = js.native
+    @scala.inline
+    def isPushStopped(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isPushStopped")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询别名
       */
-    @JSImport("jpush-react-native", "default.queryAlias")
-    @js.native
-    def queryAlias(params: Sequence): Unit = js.native
+    @scala.inline
+    def queryAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询指定 tag 与当前用户绑定的状态
       */
-    @JSImport("jpush-react-native", "default.queryTag")
-    @js.native
-    def queryTag(params: Sequence with Tag): Unit = js.native
+    @scala.inline
+    def queryTag(params: Sequence & Tag): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询所有标签
       */
-    @JSImport("jpush-react-native", "default.queryTags")
-    @js.native
-    def queryTags(params: Sequence): Unit = js.native
+    @scala.inline
+    def queryTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //移除事件
-    @JSImport("jpush-react-native", "default.removeListener")
-    @js.native
-    def removeListener(callback: js.Function): Unit = js.native
+    @scala.inline
+    def removeListener(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 移除指定的本地通知
       *
       * messageID:唯一标识通知消息的ID,可用于移除消息
       */
-    @JSImport("jpush-react-native", "default.removeLocalNotification")
-    @js.native
-    def removeLocalNotification(params: MessageID): Unit = js.native
+    @scala.inline
+    def removeLocalNotification(params: MessageID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************Android Only***************************************
     /**
@@ -247,26 +227,23 @@ object mod {
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.requestPermission")
-    @js.native
-    def requestPermission(): Unit = js.native
+    @scala.inline
+    def requestPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[Unit]
     
     /**
       * 恢复推送服务
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.resumePush")
-    @js.native
-    def resumePush(): Unit = js.native
+    @scala.inline
+    def resumePush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumePush")().asInstanceOf[Unit]
     
     /**
       * 设置别名
       * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
       */
-    @JSImport("jpush-react-native", "default.setAlias")
-    @js.native
-    def setAlias(params: Sequence with Alias): Unit = js.native
+    @scala.inline
+    def setAlias(params: Sequence & Alias): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************iOS Only***************************************
     /**
@@ -274,18 +251,16 @@ object mod {
       *
       * @platform iOS
       */
-    @JSImport("jpush-react-native", "default.setBadge")
-    @js.native
-    def setBadge(params: AppBadge): Unit = js.native
+    @scala.inline
+    def setBadge(params: AppBadge): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadge")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态配置 channel,优先级比 AndroidManifest 里配置的高
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.setChannel")
-    @js.native
-    def setChannel(params: Channel): Unit = js.native
+    @scala.inline
+    def setChannel(params: Channel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setChannel")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置保留最近通知条数
@@ -298,9 +273,8 @@ object mod {
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.setLatestNotificationNumber")
-    @js.native
-    def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = js.native
+    @scala.inline
+    def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLatestNotificationNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置调试模式,默认关闭状态
@@ -309,9 +283,8 @@ object mod {
       * @param {boolean} enable
       *
       */
-    @JSImport("jpush-react-native", "default.setLoggerEnable")
-    @js.native
-    def setLoggerEnable(enable: Boolean): Unit = js.native
+    @scala.inline
+    def setLoggerEnable(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerEnable")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************地理围栏***************************************
     /**
@@ -319,24 +292,21 @@ object mod {
       * 默认数量为10个,允许设置最小1个,最大100个。
       *
       */
-    @JSImport("jpush-react-native", "default.setMaxGeofenceNumber")
-    @js.native
-    def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = js.native
+    @scala.inline
+    def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxGeofenceNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************统计***************************************
     /**
       * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
       */
-    @JSImport("jpush-react-native", "default.setMobileNumber")
-    @js.native
-    def setMobileNumber(params: mobileNumberstringSequenc): Unit = js.native
+    @scala.inline
+    def setMobileNumber(params: mobileNumberstringSequenc): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMobileNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * JPush SDK 开启和关闭省电模式，默认为关闭。
       */
-    @JSImport("jpush-react-native", "default.setPowerSaveMode")
-    @js.native
-    def setPowerSaveMode(enable: Boolean): Unit = js.native
+    @scala.inline
+    def setPowerSaveMode(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPowerSaveMode")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置允许推送时间
@@ -350,9 +320,8 @@ object mod {
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.setPushTime")
-    @js.native
-    def setPushTime(params: PushTimeDays): Unit = js.native
+    @scala.inline
+    def setPushTime(params: PushTimeDays): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置通知静默时间
@@ -363,37 +332,33 @@ object mod {
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.setSilenceTime")
-    @js.native
-    def setSilenceTime(params: SilenceTimeEndHour): Unit = js.native
+    @scala.inline
+    def setSilenceTime(params: SilenceTimeEndHour): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSilenceTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止推送服务
       *
       * @platform Android
       */
-    @JSImport("jpush-react-native", "default.stopPush")
-    @js.native
-    def stopPush(): Unit = js.native
+    @scala.inline
+    def stopPush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPush")().asInstanceOf[Unit]
     
     /**
       * 覆盖标签
       *
       * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
       */
-    @JSImport("jpush-react-native", "default.updateTags")
-    @js.native
-    def updateTags(params: Sequence with Tags): Unit = js.native
+    @scala.inline
+    def updateTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait Alias extends StObject {
     
     /**
       * 有效的别名组成：字母（区分大小写）、数字、下划线、汉字、特殊字符@!#$&*+=.|
       * 限制：alias 命名长度限制为 40 字节。（判断长度需采用 UTF-8 编码）
       */
-    var alias: String = js.native
+    var alias: String
   }
   object Alias {
     
@@ -415,16 +380,14 @@ object mod {
   
   type Extra = StringDictionary[String]
   
-  @js.native
   trait JPush extends StObject
   
-  @js.native
   trait NotificationId extends StObject {
     
     /**
       * 通知 ID
       * */
-    var notificationId: String = js.native
+    var notificationId: String
   }
   object NotificationId {
     
@@ -442,13 +405,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Sequence extends StObject {
     
     /**
       * 请求时传入的序列号,会在回调时原样返回
       */
-    var sequence: Double = js.native
+    var sequence: Double
   }
   object Sequence {
     
@@ -466,7 +428,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
     /**
@@ -474,7 +435,7 @@ object mod {
       * 限制：每个 tag 命名长度限制为 40 字节,最多支持设置 1000 个 tag,且单次操作总长度不得超过 5000 字节
       *（判断长度需采用 UTF-8 编码）单个设备最多支持设置 1000 个 tag。App 全局 tag 数量无限制
       */
-    var tag: String = js.native
+    var tag: String
   }
   object Tag {
     
@@ -492,7 +453,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Tags extends StObject {
     
     /**
@@ -500,7 +460,7 @@ object mod {
       * 限制：每个 tag 命名长度限制为 40 字节,最多支持设置 1000 个 tag,且单次操作总长度不得超过 5000 字节
       *（判断长度需采用 UTF-8 编码）单个设备最多支持设置 1000 个 tag。App 全局 tag 数量无限制
       */
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object Tags {
     

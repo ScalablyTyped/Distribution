@@ -12,17 +12,17 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preTokenGenerationMod {
   
-  @js.native
-  trait BasePreTokenGenerationTriggerEvent[T /* <: String */] extends BaseTriggerEvent[T] {
+  trait BasePreTokenGenerationTriggerEvent[T /* <: String */]
+    extends StObject
+       with BaseTriggerEvent[T] {
     
-    var request: GroupConfiguration = js.native
+    var request: GroupConfiguration
     
-    var response: ClaimsOverrideDetails = js.native
+    var response: ClaimsOverrideDetails
   }
   object BasePreTokenGenerationTriggerEvent {
     
@@ -42,7 +42,7 @@ object preTokenGenerationMod {
     }
     
     @scala.inline
-    implicit class BasePreTokenGenerationTriggerEventMutableBuilder[Self <: BasePreTokenGenerationTriggerEvent[_], T /* <: String */] (val x: Self with BasePreTokenGenerationTriggerEvent[T]) extends AnyVal {
+    implicit class BasePreTokenGenerationTriggerEventMutableBuilder[Self <: BasePreTokenGenerationTriggerEvent[?], T /* <: String */] (val x: Self & BasePreTokenGenerationTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setRequest(value: GroupConfiguration): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -52,14 +52,13 @@ object preTokenGenerationMod {
     }
   }
   
-  @js.native
   trait GroupOverrideDetails extends StObject {
     
-    var groupsToOverride: js.UndefOr[js.Array[String]] = js.native
+    var groupsToOverride: js.UndefOr[js.Array[String]] = js.undefined
     
-    var iamRolesToOverride: js.UndefOr[js.Array[String]] = js.native
+    var iamRolesToOverride: js.UndefOr[js.Array[String]] = js.undefined
     
-    var preferredRole: js.UndefOr[String] = js.native
+    var preferredRole: js.UndefOr[String] = js.undefined
   }
   object GroupOverrideDetails {
     

@@ -2,36 +2,34 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGElementInstance extends StObject {
   
   @JSName("MSHTML.SVGElementInstance_typekey")
-  var MSHTMLDotSVGElementInstance_typekey: SVGElementInstance = js.native
+  var MSHTMLDotSVGElementInstance_typekey: SVGElementInstance
   
-  def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
   
-  val childNodes: ISVGElementInstanceList = js.native
+  val childNodes: ISVGElementInstanceList
   
-  val correspondingElement: ISVGElement = js.native
+  val correspondingElement: ISVGElement
   
-  val correspondingUseElement: ISVGUseElement = js.native
+  val correspondingUseElement: ISVGUseElement
   
-  def dispatchEvent(evt: IDOMEvent): Boolean = js.native
+  def dispatchEvent(evt: IDOMEvent): Boolean
   
-  val firstChild: ISVGElementInstance = js.native
+  val firstChild: ISVGElementInstance
   
-  val lastChild: ISVGElementInstance = js.native
+  val lastChild: ISVGElementInstance
   
-  val nextSibling: ISVGElementInstance = js.native
+  val nextSibling: ISVGElementInstance
   
-  val parentNode: ISVGElementInstance = js.native
+  val parentNode: ISVGElementInstance
   
-  val previousSibling: ISVGElementInstance = js.native
+  val previousSibling: ISVGElementInstance
   
-  def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
 }
 object SVGElementInstance {
   

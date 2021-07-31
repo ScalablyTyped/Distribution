@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AntennaDownlinkConfig extends StObject {
   
   /**
     * Object that describes a spectral Config.
     */
-  var spectrumConfig: SpectrumConfig = js.native
+  var spectrumConfig: SpectrumConfig
 }
 object AntennaDownlinkConfig {
   

@@ -2,16 +2,16 @@ package typings.devextreme.mod.DevExpress.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArrayStoreOptions[T] extends StoreOptions[T] {
+trait ArrayStoreOptions[T]
+  extends StObject
+     with StoreOptions[T] {
   
   /**
     * [descr:ArrayStore.Options.data]
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ArrayStoreOptions {
   
@@ -22,10 +22,10 @@ object ArrayStoreOptions {
   }
   
   @scala.inline
-  implicit class ArrayStoreOptionsMutableBuilder[Self <: ArrayStoreOptions[_], T] (val x: Self with ArrayStoreOptions[T]) extends AnyVal {
+  implicit class ArrayStoreOptionsMutableBuilder[Self <: ArrayStoreOptions[?], T] (val x: Self & ArrayStoreOptions[T]) extends AnyVal {
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseTunnelRequest extends StObject {
   
   /**
     * When set to true, AWS IoT Secure Tunneling deletes the tunnel data immediately.
     */
-  var delete: js.UndefOr[DeleteFlag] = js.native
+  var delete: js.UndefOr[DeleteFlag] = js.undefined
   
   /**
     * The ID of the tunnel to close.
     */
-  var tunnelId: TunnelId = js.native
+  var tunnelId: TunnelId
 }
 object CloseTunnelRequest {
   

@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,27 +17,26 @@ object mod extends Shortcut {
   
   type MatchOption = String | RegExp | Error
   
-  @js.native
   trait Options extends StObject {
     
     @JSName("$current")
-    var $current: js.UndefOr[Double] = js.native
+    var $current: js.UndefOr[Double] = js.undefined
     
-    var backoffBase: js.UndefOr[Double] = js.native
+    var backoffBase: js.UndefOr[Double] = js.undefined
     
-    var backoffExponent: js.UndefOr[Double] = js.native
+    var backoffExponent: js.UndefOr[Double] = js.undefined
     
-    var `match`: js.UndefOr[js.Array[MatchOption] | MatchOption] = js.native
+    var `match`: js.UndefOr[js.Array[MatchOption] | MatchOption] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     var report: js.UndefOr[
         js.Function3[/* message */ String, /* obj */ this.type, /* err */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle between the bulleted paragraph and normal text.
   */
-@js.native
-trait ToggleBulletedListCommand extends CommandBase {
+trait ToggleBulletedListCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ToggleBulletedListCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[Boolean] = js.native
+  def getState(): CommandState[Boolean]
 }
 object ToggleBulletedListCommand {
   

@@ -11,8 +11,8 @@ provides access to the windows registry through the REG tool
 | Full name          | winreg |
 | Keywords           | windows, registry |
 | # releases         | 0 |
-| # dependents       | 103 |
-| # downloads        | 4072861 |
+| # dependents       | 108 |
+| # downloads        | 4927883 |
 | # stars            | 10 |
 
 ## Links

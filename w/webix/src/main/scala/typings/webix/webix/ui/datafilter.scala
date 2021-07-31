@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datafilter {
@@ -35,10 +34,11 @@ object datafilter {
   
   type summColumn = textFilter
   
-  @js.native
-  trait textFilter extends WebixFilter {
+  trait textFilter
+    extends StObject
+       with WebixFilter {
     
-    def getInputNode(node: HTMLElement): HTMLElement = js.native
+    def getInputNode(node: HTMLElement): HTMLElement
   }
   object textFilter {
     

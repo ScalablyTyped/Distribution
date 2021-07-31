@@ -20,7 +20,6 @@ import typings.mendixmodelsdk.transportInterfacesMod.LockType
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imodelserverclientMod {
@@ -262,12 +261,7 @@ object imodelserverclientMod {
       */
     def startAppUpdate(workingCopyId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
     
-    def unlockWorkingCopy(
-      workingCopyId: String,
-      lockType: js.UndefOr[scala.Nothing],
-      callback: IVoidCallback,
-      errorCallback: IErrorCallback
-    ): Unit = js.native
+    def unlockWorkingCopy(workingCopyId: String, lockType: Unit, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     /**
       * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
       *
@@ -281,12 +275,11 @@ object imodelserverclientMod {
     def updateWorkingCopyByProject(projectId: String, workingCopyId: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
   }
   
-  @js.native
   trait ISendDeltasResult extends StObject {
     
-    var eventId: Double = js.native
+    var eventId: Double
     
-    var firstError: js.Any = js.native
+    var firstError: js.Any
   }
   object ISendDeltasResult {
     

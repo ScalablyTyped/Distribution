@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loginItemMod {
@@ -19,40 +18,39 @@ object loginItemMod {
   
   type LoginItem = Component[LoginItemProps, js.Any, js.Any]
   
-  @js.native
   trait LoginItemProps extends StObject {
     
-    var buttonText: js.UndefOr[ReactNode] = js.native
+    var buttonText: js.UndefOr[ReactNode] = js.undefined
     
-    var countDown: js.UndefOr[Double] = js.native
+    var countDown: js.UndefOr[Double] = js.undefined
     
-    var customprops: js.UndefOr[js.Any] = js.native
+    var customprops: js.UndefOr[js.Any] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any = js.native
+    var form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any
     
-    var getCaptchaButtonText: js.UndefOr[String] = js.native
+    var getCaptchaButtonText: js.UndefOr[String] = js.undefined
     
-    var getCaptchaSecondText: js.UndefOr[String] = js.native
+    var getCaptchaSecondText: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.native
+    var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[_]] = js.native
+    var rules: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    def updateActive(activeItem: js.Any): Unit = js.native
+    def updateActive(activeItem: js.Any): Unit
   }
   object LoginItemProps {
     
@@ -142,7 +140,7 @@ object loginItemMod {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setRules(value: js.Array[_]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
@@ -166,37 +164,36 @@ object loginItemMod {
   
   type LoginItemType = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemMap * / any ]: react.react.FC<ant-design-pro.ant-design-pro/lib/Login/LoginItem.WrappedLoginItemProps>}
-    */ typings.antDesignPro.antDesignProStrings.LoginItemType with TopLevel[js.Any]
+    */ typings.antDesignPro.antDesignProStrings.LoginItemType & TopLevel[js.Any]
   
   /* Inlined antd.antd/lib/_util/type.Omit<ant-design-pro.ant-design-pro/lib/Login/LoginItem.LoginItemProps, 'form' | 'type' | 'updateActive'> */
-  @js.native
   trait WrappedLoginItemProps extends StObject {
     
-    var buttonText: js.UndefOr[ReactNode] = js.native
+    var buttonText: js.UndefOr[ReactNode] = js.undefined
     
-    var countDown: js.UndefOr[Double] = js.native
+    var countDown: js.UndefOr[Double] = js.undefined
     
-    var customprops: js.UndefOr[js.Any] = js.native
+    var customprops: js.UndefOr[js.Any] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var getCaptchaButtonText: js.UndefOr[String] = js.native
+    var getCaptchaButtonText: js.UndefOr[String] = js.undefined
     
-    var getCaptchaSecondText: js.UndefOr[String] = js.native
+    var getCaptchaSecondText: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.native
+    var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[_]] = js.native
+    var rules: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object WrappedLoginItemProps {
     
@@ -276,7 +273,7 @@ object loginItemMod {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setRules(value: js.Array[_]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)

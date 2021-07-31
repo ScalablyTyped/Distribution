@@ -2,24 +2,22 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about the binding that raised the DataChanged event.
   */
-@js.native
 trait BindingDataChangedEventArgs extends StObject {
   
   /**
     * Gets an {@link Office.Binding} object that represents the binding that raised the DataChanged event.
     */
-  var binding: Binding = js.native
+  var binding: Binding
   
   /**
     * Gets an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
     */
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object BindingDataChangedEventArgs {
   

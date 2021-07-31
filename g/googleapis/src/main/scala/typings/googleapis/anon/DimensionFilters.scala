@@ -7,23 +7,21 @@ import typings.googleapis.v32Mod.dfareportingV32.SchemaDimensionValue
 import typings.googleapis.v32Mod.dfareportingV32.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionFilters extends StObject {
   
-  var activities: js.UndefOr[SchemaActivities] = js.native
+  var activities: js.UndefOr[SchemaActivities] = js.undefined
   
-  var customRichMediaEvents: js.UndefOr[SchemaCustomRichMediaEvents] = js.native
+  var customRichMediaEvents: js.UndefOr[SchemaCustomRichMediaEvents] = js.undefined
   
-  var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  var dateRange: js.UndefOr[SchemaDateRange] = js.undefined
   
-  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
-  var dimensions: js.UndefOr[js.Array[SchemaSortedDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaSortedDimension]] = js.undefined
   
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DimensionFilters {
   

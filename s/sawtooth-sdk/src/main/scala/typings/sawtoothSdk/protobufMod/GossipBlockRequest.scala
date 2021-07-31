@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GossipBlockRequest.
   * @param [properties] Properties to set
   */
-class GossipBlockRequest () extends IGossipBlockRequest {
+class GossipBlockRequest ()
+  extends StObject
+     with IGossipBlockRequest {
   def this(properties: IGossipBlockRequest) = this()
   
   /** GossipBlockRequest blockId. */
@@ -40,17 +41,19 @@ class GossipBlockRequest () extends IGossipBlockRequest {
 /* static members */
 object GossipBlockRequest {
   
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GossipBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GossipBlockRequest instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.create")
-  @js.native
-  def create(): GossipBlockRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.create")
-  @js.native
-  def create(properties: IGossipBlockRequest): GossipBlockRequest = js.native
+  @scala.inline
+  def create(): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GossipBlockRequest]
+  @scala.inline
+  def create(properties: IGossipBlockRequest): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
   
   /**
     * Decodes a GossipBlockRequest message from the specified reader or buffer.
@@ -60,18 +63,14 @@ object GossipBlockRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decode")
-  @js.native
-  def decode(reader: Reader): GossipBlockRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GossipBlockRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GossipBlockRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GossipBlockRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GossipBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipBlockRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GossipBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipBlockRequest]
   
   /**
     * Decodes a GossipBlockRequest message from the specified reader or buffer, length delimited.
@@ -80,12 +79,10 @@ object GossipBlockRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GossipBlockRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GossipBlockRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
   
   /**
     * Encodes the specified GossipBlockRequest message. Does not implicitly {@link GossipBlockRequest.verify|verify} messages.
@@ -93,12 +90,10 @@ object GossipBlockRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.encode")
-  @js.native
-  def encode(message: IGossipBlockRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.encode")
-  @js.native
-  def encode(message: IGossipBlockRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGossipBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGossipBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GossipBlockRequest message, length delimited. Does not implicitly {@link GossipBlockRequest.verify|verify} messages.
@@ -106,21 +101,18 @@ object GossipBlockRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGossipBlockRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGossipBlockRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGossipBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGossipBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GossipBlockRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns GossipBlockRequest
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GossipBlockRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GossipBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GossipBlockRequest]
   
   /**
     * Creates a plain object from a GossipBlockRequest message. Also converts values to other types if specified.
@@ -128,19 +120,16 @@ object GossipBlockRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.toObject")
-  @js.native
-  def toObject(message: GossipBlockRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.toObject")
-  @js.native
-  def toObject(message: GossipBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GossipBlockRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GossipBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GossipBlockRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

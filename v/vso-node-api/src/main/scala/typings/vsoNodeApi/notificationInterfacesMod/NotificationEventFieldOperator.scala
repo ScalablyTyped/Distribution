@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventFieldOperator extends StObject {
   
   /**
     * Gets or sets the display name of an operator
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Gets or sets the id of an operator
     */
-  var id: String = js.native
+  var id: String
 }
 object NotificationEventFieldOperator {
   

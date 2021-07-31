@@ -2,59 +2,57 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var account_id: js.UndefOr[Double] = js.native
+  var account_id: js.UndefOr[Double] = js.undefined
   
-  var account_url: js.UndefOr[String] = js.native
+  var account_url: js.UndefOr[String] = js.undefined
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var bandwidth: Double = js.native
+  var bandwidth: Double
   
-  var datetime: Double = js.native
+  var datetime: Double
   
-  var deletehash: js.UndefOr[String] = js.native
+  var deletehash: js.UndefOr[String] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var favorite: Boolean = js.native
+  var favorite: Boolean
   
-  var gifv: js.UndefOr[String] = js.native
+  var gifv: js.UndefOr[String] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var id: String = js.native
+  var id: String
   
-  var link: String = js.native
+  var link: String
   
-  var looping: js.UndefOr[Boolean] = js.native
+  var looping: js.UndefOr[Boolean] = js.undefined
   
-  var mp4: js.UndefOr[String] = js.native
+  var mp4: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nsfw: js.UndefOr[Boolean] = js.native
+  var nsfw: js.UndefOr[Boolean] = js.undefined
   
-  var section: String = js.native
+  var section: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var views: Double = js.native
+  var views: Double
   
-  var vote: js.UndefOr[String] = js.native
+  var vote: js.UndefOr[String] = js.undefined
   
-  var webm: js.UndefOr[String] = js.native
+  var webm: js.UndefOr[String] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object Image {
   

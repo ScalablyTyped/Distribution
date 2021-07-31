@@ -2,41 +2,39 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigExportDeliveryInfo extends StObject {
   
   /**
     * The time of the last attempted delivery.
     */
-  var lastAttemptTime: js.UndefOr[Date] = js.native
+  var lastAttemptTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The error code from the last attempted delivery.
     */
-  var lastErrorCode: js.UndefOr[String] = js.native
+  var lastErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error message from the last attempted delivery.
     */
-  var lastErrorMessage: js.UndefOr[String] = js.native
+  var lastErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the last attempted delivery.
     */
-  var lastStatus: js.UndefOr[DeliveryStatus] = js.native
+  var lastStatus: js.UndefOr[DeliveryStatus] = js.undefined
   
   /**
     * The time of the last successful delivery.
     */
-  var lastSuccessfulTime: js.UndefOr[Date] = js.native
+  var lastSuccessfulTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time that the next delivery occurs.
     */
-  var nextDeliveryTime: js.UndefOr[Date] = js.native
+  var nextDeliveryTime: js.UndefOr[Date] = js.undefined
 }
 object ConfigExportDeliveryInfo {
   

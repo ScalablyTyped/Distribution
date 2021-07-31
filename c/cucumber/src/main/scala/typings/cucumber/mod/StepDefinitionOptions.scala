@@ -3,15 +3,13 @@ package typings.cucumber.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepDefinitionOptions extends StObject {
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var wrapperOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var wrapperOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object StepDefinitionOptions {
   

@@ -2,30 +2,28 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Obsolete in favor of ApproximateReportedProgress and
   * ApproximateSplitRequest.
   */
-@js.native
 trait SchemaApproximateProgress extends StObject {
   
   /**
     * Obsolete.
     */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /**
     * Obsolete.
     */
-  var position: js.UndefOr[SchemaPosition] = js.native
+  var position: js.UndefOr[SchemaPosition] = js.undefined
   
   /**
     * Obsolete.
     */
-  var remainingTime: js.UndefOr[String] = js.native
+  var remainingTime: js.UndefOr[String] = js.undefined
 }
 object SchemaApproximateProgress {
   

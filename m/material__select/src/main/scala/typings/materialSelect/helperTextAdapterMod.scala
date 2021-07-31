@@ -2,48 +2,46 @@ package typings.materialSelect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperTextAdapterMod {
   
-  @js.native
   trait MDCSelectHelperTextAdapter extends StObject {
     
     /**
       * Adds a class to the helper text element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Gets an attribute from the helper text element.
       */
-    def getAttr(attr: String): String | Null = js.native
+    def getAttr(attr: String): String | Null
     
     /**
       * Returns whether or not the helper text element contains the given class.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * Removes an attribute from the helper text element.
       */
-    def removeAttr(attr: String): Unit = js.native
+    def removeAttr(attr: String): Unit
     
     /**
       * Removes a class from the helper text element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets an attribute with a given value on the helper text element.
       */
-    def setAttr(attr: String, value: String): Unit = js.native
+    def setAttr(attr: String, value: String): Unit
     
     /**
       * Sets the text content for the helper text element.
       */
-    def setContent(content: String): Unit = js.native
+    def setContent(content: String): Unit
   }
   object MDCSelectHelperTextAdapter {
     

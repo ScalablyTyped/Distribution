@@ -18,7 +18,6 @@ import typings.stripe.mod.refunds.IRefund
 import typings.stripe.mod.refunds.IRefundCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Charges")
@@ -32,21 +31,13 @@ class Charges protected () extends StripeResource {
     * created. If they are not captured by that point in time, they will be marked as refunded and will no longer be capturable.
     */
   def capture(id: String): js.Promise[ICharge] = js.native
-  def capture(
-    id: String,
-    data: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[HeaderOptions],
-    response: IResponseFn[ICharge]
-  ): js.Promise[ICharge] = js.native
-  def capture(id: String, data: js.UndefOr[scala.Nothing], options: HeaderOptions): js.Promise[ICharge] = js.native
+  def capture(id: String, data: Unit, options: Unit, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  def capture(id: String, data: Unit, options: HeaderOptions): js.Promise[ICharge] = js.native
+  def capture(id: String, data: Unit, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def capture(id: String, data: IChargeCaptureOptions): js.Promise[ICharge] = js.native
-  def capture(
-    id: String,
-    data: IChargeCaptureOptions,
-    options: js.UndefOr[HeaderOptions],
-    response: IResponseFn[ICharge]
-  ): js.Promise[ICharge] = js.native
+  def capture(id: String, data: IChargeCaptureOptions, options: Unit, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def capture(id: String, data: IChargeCaptureOptions, options: HeaderOptions): js.Promise[ICharge] = js.native
+  def capture(id: String, data: IChargeCaptureOptions, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   
   def create(data: IChargeCreationOptions): js.Promise[ICharge] = js.native
   /**

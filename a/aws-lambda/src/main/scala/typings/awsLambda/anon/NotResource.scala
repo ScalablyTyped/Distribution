@@ -2,13 +2,11 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotResource extends StObject {
   
-  var NotResource: String | js.Array[String] = js.native
+  var NotResource: String | js.Array[String]
 }
 object NotResource {
   

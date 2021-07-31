@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,107 +14,177 @@ sealed trait DynamicFilterCriteria extends StObject
 object DynamicFilterCriteria extends StObject {
   
   @js.native
-  sealed trait aboveAverage extends DynamicFilterCriteria
+  sealed trait aboveAverage
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodApril extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodApril
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodAugust extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodAugust
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodDecember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodDecember
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodFebruray extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodFebruray
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodJanuary extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJanuary
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodJuly extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJuly
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodJune extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJune
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodMarch extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodMarch
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodMay extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodMay
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodNovember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodNovember
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodOctober extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodOctober
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodQuarter1 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter1
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodQuarter2 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter2
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodQuarter3 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter3
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodQuarter4 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter4
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait allDatesInPeriodSeptember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodSeptember
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait belowAverage extends DynamicFilterCriteria
+  sealed trait belowAverage
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait lastMonth extends DynamicFilterCriteria
+  sealed trait lastMonth
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait lastQuarter extends DynamicFilterCriteria
+  sealed trait lastQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait lastWeek extends DynamicFilterCriteria
+  sealed trait lastWeek
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait lastYear extends DynamicFilterCriteria
+  sealed trait lastYear
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait nextMonth extends DynamicFilterCriteria
+  sealed trait nextMonth
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait nextQuarter extends DynamicFilterCriteria
+  sealed trait nextQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait nextWeek extends DynamicFilterCriteria
+  sealed trait nextWeek
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait nextYear extends DynamicFilterCriteria
+  sealed trait nextYear
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait thisMonth extends DynamicFilterCriteria
+  sealed trait thisMonth
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait thisQuarter extends DynamicFilterCriteria
+  sealed trait thisQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait thisWeek extends DynamicFilterCriteria
+  sealed trait thisWeek
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait thisYear extends DynamicFilterCriteria
+  sealed trait thisYear
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait today extends DynamicFilterCriteria
+  sealed trait today
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait tomorrow extends DynamicFilterCriteria
+  sealed trait tomorrow
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait unknown extends DynamicFilterCriteria
+  sealed trait unknown
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait yearToDate extends DynamicFilterCriteria
+  sealed trait yearToDate
+    extends StObject
+       with DynamicFilterCriteria
   
   @js.native
-  sealed trait yesterday extends DynamicFilterCriteria
+  sealed trait yesterday
+    extends StObject
+       with DynamicFilterCriteria
 }

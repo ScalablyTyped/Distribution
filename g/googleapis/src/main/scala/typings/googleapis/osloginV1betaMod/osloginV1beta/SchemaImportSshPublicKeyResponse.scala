@@ -2,19 +2,17 @@ package typings.googleapis.osloginV1betaMod.osloginV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response message for importing an SSH public key.
   */
-@js.native
 trait SchemaImportSshPublicKeyResponse extends StObject {
   
   /**
     * The login profile information for the user.
     */
-  var loginProfile: js.UndefOr[SchemaLoginProfile] = js.native
+  var loginProfile: js.UndefOr[SchemaLoginProfile] = js.undefined
 }
 object SchemaImportSshPublicKeyResponse {
   

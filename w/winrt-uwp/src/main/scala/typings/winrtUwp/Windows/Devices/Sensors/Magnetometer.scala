@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a magnetic sensor. */
 @js.native
 trait Magnetometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(
     `type`: readingchanged,
@@ -34,7 +33,7 @@ trait Magnetometer extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the compass reports a new sensor reading. */
-  def onreadingchanged(ev: MagnetometerReadingChangedEventArgs with WinRTEvent[Magnetometer]): Unit = js.native
+  def onreadingchanged(ev: MagnetometerReadingChangedEventArgs & WinRTEvent[Magnetometer]): Unit = js.native
   /** Occurs each time the compass reports a new sensor reading. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Magnetometer, MagnetometerReadingChangedEventArgs] = js.native
@@ -42,7 +41,7 @@ trait Magnetometer extends StObject {
   /** Gets or sets the transformation that needs to be applied to sensor data. Transformations to be applied are tied to the display orientation with which to align the sensor data. */
   var readingTransform: DisplayOrientations = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(
     `type`: readingchanged,

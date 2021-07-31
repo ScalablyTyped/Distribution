@@ -5,17 +5,15 @@ import typings.minappEnv.minappEnvStrings.normal
 import typings.minappEnv.minappEnvStrings.ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAccelerometerOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[StartAccelerometerCompleteCallback] = js.native
+  var complete: js.UndefOr[StartAccelerometerCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[StartAccelerometerFailCallback] = js.native
+  var fail: js.UndefOr[StartAccelerometerFailCallback] = js.undefined
   
   /** 监听加速度数据回调函数的执行频率
     *
@@ -25,10 +23,10 @@ trait StartAccelerometerOption extends StObject {
     * - 'normal': 普通的回调频率，在 200ms/次 左右;
     *
     * 最低基础库： `2.1.0` */
-  var interval: js.UndefOr[game | ui | normal] = js.native
+  var interval: js.UndefOr[game | ui | normal] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[StartAccelerometerSuccessCallback] = js.native
+  var success: js.UndefOr[StartAccelerometerSuccessCallback] = js.undefined
 }
 object StartAccelerometerOption {
   

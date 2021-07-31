@@ -1,67 +1,64 @@
 package typings.smCrypto
 
-import typings.bigi.mod.^
 import typings.smCrypto.anon.Der
 import typings.smCrypto.anon.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("sm-crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object sm2 {
     
-    @JSImport("sm-crypto", "sm2.doDecrypt")
+    @JSImport("sm-crypto", "sm2")
     @js.native
-    def doDecrypt(encryptData: String, privateKey: String): String = js.native
-    @JSImport("sm-crypto", "sm2.doDecrypt")
-    @js.native
-    def doDecrypt(encryptData: String, privateKey: String, cipherMode: CipherMode): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sm-crypto", "sm2.doEncrypt")
-    @js.native
-    def doEncrypt(msg: String, publicKey: String): String = js.native
-    @JSImport("sm-crypto", "sm2.doEncrypt")
-    @js.native
-    def doEncrypt(msg: String, publicKey: String, cipherMode: CipherMode): String = js.native
+    @scala.inline
+    def doDecrypt(encryptData: String, privateKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doDecrypt")(encryptData.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def doDecrypt(encryptData: String, privateKey: String, cipherMode: CipherMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doDecrypt")(encryptData.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], cipherMode.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("sm-crypto", "sm2.doSignature")
-    @js.native
-    def doSignature(msg: String, privateKey: String): String = js.native
-    @JSImport("sm-crypto", "sm2.doSignature")
-    @js.native
-    def doSignature(msg: String, privateKey: String, options: Der): String = js.native
+    @scala.inline
+    def doEncrypt(msg: String, publicKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doEncrypt")(msg.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def doEncrypt(msg: String, publicKey: String, cipherMode: CipherMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doEncrypt")(msg.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], cipherMode.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("sm-crypto", "sm2.doVerifySignature")
-    @js.native
-    def doVerifySignature(msg: String, signHex: String, publicKey: String): Boolean = js.native
-    @JSImport("sm-crypto", "sm2.doVerifySignature")
-    @js.native
-    def doVerifySignature(msg: String, signHex: String, publicKey: String, options: Hash): Boolean = js.native
+    @scala.inline
+    def doSignature(msg: String, privateKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doSignature")(msg.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def doSignature(msg: String, privateKey: String, options: Der): String = (^.asInstanceOf[js.Dynamic].applyDynamic("doSignature")(msg.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("sm-crypto", "sm2.generateKeyPairHex")
-    @js.native
-    def generateKeyPairHex(): KeyPairHex = js.native
+    @scala.inline
+    def doVerifySignature(msg: String, signHex: String, publicKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doVerifySignature")(msg.asInstanceOf[js.Any], signHex.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def doVerifySignature(msg: String, signHex: String, publicKey: String, options: Hash): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doVerifySignature")(msg.asInstanceOf[js.Any], signHex.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("sm-crypto", "sm2.getPoint")
-    @js.native
-    def getPoint(): KeyPairPoint = js.native
+    @scala.inline
+    def generateKeyPairHex(): KeyPairHex = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairHex")().asInstanceOf[KeyPairHex]
+    
+    @scala.inline
+    def getPoint(): KeyPairPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")().asInstanceOf[KeyPairPoint]
   }
   
-  @JSImport("sm-crypto", "sm3")
-  @js.native
-  def sm3(str: String): String = js.native
+  @scala.inline
+  def sm3(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sm3")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object sm4 {
     
-    @JSImport("sm-crypto", "sm4.decrypt")
+    @JSImport("sm-crypto", "sm4")
     @js.native
-    def decrypt(inArray: js.Array[Double], key: js.Array[Double]): js.Array[Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sm-crypto", "sm4.encrypt")
-    @js.native
-    def encrypt(inArray: js.Array[Double], key: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def decrypt(inArray: js.Array[Double], key: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(inArray.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    
+    @scala.inline
+    def encrypt(inArray: js.Array[Double], key: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(inArray.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -78,12 +75,11 @@ object mod {
     def `1`: typings.smCrypto.smCryptoNumbers.`1` = 1.asInstanceOf[typings.smCrypto.smCryptoNumbers.`1`]
   }
   
-  @js.native
   trait KeyPairHex extends StObject {
     
-    var privateKey: String = js.native
+    var privateKey: String
     
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object KeyPairHex {
     
@@ -104,17 +100,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait KeyPairPoint extends KeyPairHex {
+  trait KeyPairPoint
+    extends StObject
+       with KeyPairHex {
     
-    var k: ^ = js.native
+    var k: typings.bigi.mod.^
     
-    var x1: ^ = js.native
+    var x1: typings.bigi.mod.^
   }
   object KeyPairPoint {
     
     @scala.inline
-    def apply(k: ^, privateKey: String, publicKey: String, x1: ^): KeyPairPoint = {
+    def apply(k: typings.bigi.mod.^, privateKey: String, publicKey: String, x1: typings.bigi.mod.^): KeyPairPoint = {
       val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyPairPoint]
     }
@@ -123,10 +120,10 @@ object mod {
     implicit class KeyPairPointMutableBuilder[Self <: KeyPairPoint] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setK(value: ^): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      def setK(value: typings.bigi.mod.^): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setX1(value: ^): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      def setX1(value: typings.bigi.mod.^): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     }
   }
 }

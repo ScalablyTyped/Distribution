@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgComboGrouping
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -21,13 +20,13 @@ trait IgComboGrouping
     * "asc"
     * "desc"
     */
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets name of column by which the records will be grouped. Setting this option enables the grouping.
     *
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object IgComboGrouping {
   

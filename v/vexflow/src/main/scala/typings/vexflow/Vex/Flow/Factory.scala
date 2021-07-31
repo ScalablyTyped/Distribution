@@ -2,7 +2,6 @@ package typings.vexflow.Vex.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -96,13 +95,13 @@ trait Factory extends StObject {
   
   def getStave(): Stave = js.native
   
-  def getVoices(): js.Array[_] = js.native
+  def getVoices(): js.Array[js.Any] = js.native
   
   def initRenderer(): Unit = js.native
   
   var options: typings.vexflow.anon.Renderer = js.native
   
-  var renderQ: js.Array[_] = js.native
+  var renderQ: js.Array[js.Any] = js.native
   
   def reset(): Unit = js.native
   
@@ -114,9 +113,9 @@ trait Factory extends StObject {
   
   var stave: Stave = js.native
   
-  var staves: js.Array[_] = js.native
+  var staves: js.Array[js.Any] = js.native
   
-  var systems: js.Array[_] = js.native
+  var systems: js.Array[js.Any] = js.native
   
-  var voices: js.Array[_] = js.native
+  var voices: js.Array[js.Any] = js.native
 }

@@ -2,36 +2,34 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateModelRequest extends StObject {
   
   /**
     * The model description. 
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The name of the event type.
     */
-  var eventTypeName: String = js.native
+  var eventTypeName: String
   
   /**
     * The model ID.
     */
-  var modelId: modelIdentifier = js.native
+  var modelId: modelIdentifier
   
   /**
     * The model type. 
     */
-  var modelType: ModelTypeEnum = js.native
+  var modelType: ModelTypeEnum
   
   /**
     * A collection of key and value pairs.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
 }
 object CreateModelRequest {
   

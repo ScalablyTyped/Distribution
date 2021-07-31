@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignItemsJustifyContent extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var justifyContent: String = js.native
+  var justifyContent: String
 }
 object AlignItemsJustifyContent {
   

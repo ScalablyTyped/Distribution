@@ -5,113 +5,111 @@ import typings.googleapis.anon.ClientSpecificActorInfo
 import typings.googleapis.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaActivity extends StObject {
   
   /**
     * Identifies who has access to see this activity.
     */
-  var access: js.UndefOr[SchemaAcl] = js.native
+  var access: js.UndefOr[SchemaAcl] = js.undefined
   
   /**
     * The person who performed this activity.
     */
-  var actor: js.UndefOr[ClientSpecificActorInfo] = js.native
+  var actor: js.UndefOr[ClientSpecificActorInfo] = js.undefined
   
   /**
     * Street address where this activity occurred.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Additional content added by the person who shared this activity,
     * applicable only when resharing an activity.
     */
-  var annotation: js.UndefOr[String] = js.native
+  var annotation: js.UndefOr[String] = js.undefined
   
   /**
     * If this activity is a crosspost from another system, this property
     * specifies the ID of the original activity.
     */
-  var crosspostSource: js.UndefOr[String] = js.native
+  var crosspostSource: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Latitude and longitude where this activity occurred. Format is latitude
     * followed by longitude, space separated.
     */
-  var geocode: js.UndefOr[String] = js.native
+  var geocode: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this activity.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies this resource as an activity. Value:
     * &quot;plus#activity&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The location where this activity occurred.
     */
-  var location: js.UndefOr[SchemaPlace] = js.native
+  var location: js.UndefOr[SchemaPlace] = js.undefined
   
   /**
     * The object of this activity.
     */
-  var `object`: js.UndefOr[Attachments] = js.native
+  var `object`: js.UndefOr[Attachments] = js.undefined
   
   /**
     * ID of the place where this activity occurred.
     */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the place where this activity occurred.
     */
-  var placeName: js.UndefOr[String] = js.native
+  var placeName: js.UndefOr[String] = js.undefined
   
   /**
     * The service provider that initially published this activity.
     */
-  var provider: js.UndefOr[Title] = js.native
+  var provider: js.UndefOr[Title] = js.undefined
   
   /**
     * The time at which this activity was initially published. Formatted as an
     * RFC 3339 timestamp.
     */
-  var published: js.UndefOr[String] = js.native
+  var published: js.UndefOr[String] = js.undefined
   
   /**
     * Radius, in meters, of the region where this activity occurred, centered
     * at the latitude and longitude identified in geocode.
     */
-  var radius: js.UndefOr[String] = js.native
+  var radius: js.UndefOr[String] = js.undefined
   
   /**
     * Title of this activity.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this activity was last updated. Formatted as an RFC
     * 3339 timestamp.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * The link to this activity.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * This activity&#39;s verb, which indicates the action that was performed.
@@ -119,7 +117,7 @@ trait SchemaActivity extends StObject {
     * &quot;post&quot; - Publish content to the stream.  - &quot;share&quot; -
     * Reshare an activity.
     */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object SchemaActivity {
   

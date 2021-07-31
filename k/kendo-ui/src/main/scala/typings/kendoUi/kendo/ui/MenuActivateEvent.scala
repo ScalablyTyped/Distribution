@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuActivateEvent extends MenuEvent {
+trait MenuActivateEvent
+  extends StObject
+     with MenuEvent {
   
-  var item: js.UndefOr[HTMLElement] = js.native
+  var item: js.UndefOr[HTMLElement] = js.undefined
 }
 object MenuActivateEvent {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,24 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *                .setParameterFromCell('LIMIT', 'namedRangeCell')
   *                .build();
   */
-@js.native
 trait DataSourceSpecBuilder extends StObject {
   
-  def asBigQuery(): BigQueryDataSourceSpecBuilder = js.native
+  def asBigQuery(): BigQueryDataSourceSpecBuilder
   
-  def build(): DataSourceSpec = js.native
+  def build(): DataSourceSpec
   
-  def copy(): DataSourceSpecBuilder = js.native
+  def copy(): DataSourceSpecBuilder
   
-  def getParameters(): js.Array[DataSourceParameter] = js.native
+  def getParameters(): js.Array[DataSourceParameter]
   
-  def getType(): DataSourceType = js.native
+  def getType(): DataSourceType
   
-  def removeAllParameters(): DataSourceSpecBuilder = js.native
+  def removeAllParameters(): DataSourceSpecBuilder
   
-  def removeParameter(parameterName: String): DataSourceSpecBuilder = js.native
+  def removeParameter(parameterName: String): DataSourceSpecBuilder
   
-  def setParameterFromCell(parameterName: String, sourceCell: String): DataSourceSpecBuilder = js.native
+  def setParameterFromCell(parameterName: String, sourceCell: String): DataSourceSpecBuilder
 }
 object DataSourceSpecBuilder {
   

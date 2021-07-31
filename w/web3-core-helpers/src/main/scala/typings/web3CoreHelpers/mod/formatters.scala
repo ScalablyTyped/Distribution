@@ -2,7 +2,6 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core-helpers", "formatters")
@@ -11,77 +10,63 @@ class formatters () extends StObject
 /* static members */
 object formatters {
   
-  @JSImport("web3-core-helpers", "formatters.inputAddressFormatter")
+  @JSImport("web3-core-helpers", "formatters")
   @js.native
-  def inputAddressFormatter(address: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("web3-core-helpers", "formatters.inputBlockNumberFormatter")
-  @js.native
-  def inputBlockNumberFormatter(blockNumber: String): String | Double = js.native
-  @JSImport("web3-core-helpers", "formatters.inputBlockNumberFormatter")
-  @js.native
-  def inputBlockNumberFormatter(blockNumber: Double): String | Double = js.native
+  @scala.inline
+  def inputAddressFormatter(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputAddressFormatter")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("web3-core-helpers", "formatters.inputCallFormatter")
-  @js.native
-  def inputCallFormatter(txObject: js.Any): js.Any = js.native
+  @scala.inline
+  def inputBlockNumberFormatter(blockNumber: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  @scala.inline
+  def inputBlockNumberFormatter(blockNumber: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
-  @JSImport("web3-core-helpers", "formatters.inputDefaultBlockNumberFormatter")
-  @js.native
-  def inputDefaultBlockNumberFormatter(blockNumber: String): String = js.native
+  @scala.inline
+  def inputCallFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCallFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.inputLogFormatter")
-  @js.native
-  def inputLogFormatter(log: js.Any): js.Any = js.native
+  @scala.inline
+  def inputDefaultBlockNumberFormatter(blockNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefaultBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("web3-core-helpers", "formatters.inputPostFormatter")
-  @js.native
-  def inputPostFormatter(post: js.Any): js.Any = js.native
+  @scala.inline
+  def inputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.inputSignFormatter")
-  @js.native
-  def inputSignFormatter(data: String): String = js.native
+  @scala.inline
+  def inputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.inputTransactionFormatter")
-  @js.native
-  def inputTransactionFormatter(txObject: js.Any): js.Any = js.native
+  @scala.inline
+  def inputSignFormatter(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputSignFormatter")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("web3-core-helpers", "formatters.isPredefinedBlockNumber")
-  @js.native
-  def isPredefinedBlockNumber(blockNumber: String): Boolean = js.native
+  @scala.inline
+  def inputTransactionFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputTransactionFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.outputBigNumberFormatter")
-  @js.native
-  def outputBigNumberFormatter(number: Double): Double = js.native
+  @scala.inline
+  def isPredefinedBlockNumber(blockNumber: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredefinedBlockNumber")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("web3-core-helpers", "formatters.outputBlockFormatter")
-  @js.native
-  def outputBlockFormatter(block: js.Any): js.Any = js.native
+  @scala.inline
+  def outputBigNumberFormatter(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBigNumberFormatter")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("web3-core-helpers", "formatters.outputLogFormatter")
-  @js.native
-  def outputLogFormatter(log: js.Any): js.Any = js.native
+  @scala.inline
+  def outputBlockFormatter(block: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBlockFormatter")(block.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def outputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Post interface
-  @JSImport("web3-core-helpers", "formatters.outputPostFormatter")
-  @js.native
-  def outputPostFormatter(post: js.Any): js.Any = js.native
+  @scala.inline
+  def outputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Post interface
-  @JSImport("web3-core-helpers", "formatters.outputSyncingFormatter")
-  @js.native
-  def outputSyncingFormatter(result: js.Any): js.Any = js.native
+  @scala.inline
+  def outputSyncingFormatter(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputSyncingFormatter")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.outputTransactionFormatter")
-  @js.native
-  def outputTransactionFormatter(receipt: js.Any): js.Any = js.native
+  @scala.inline
+  def outputTransactionFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("web3-core-helpers", "formatters.outputTransactionReceiptFormatter")
-  @js.native
-  def outputTransactionReceiptFormatter(receipt: js.Any): js.Any = js.native
+  @scala.inline
+  def outputTransactionReceiptFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionReceiptFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Block interface
-  @JSImport("web3-core-helpers", "formatters.txInputFormatter")
-  @js.native
-  def txInputFormatter(txObject: js.Any): js.Any = js.native
+  @scala.inline
+  def txInputFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("txInputFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

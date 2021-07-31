@@ -7,11 +7,10 @@ import typings.vegaLite.srcTypeMod.Type
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined vega-lite.vega-lite/build/src/channeldef.ScaleMixins & vega-lite.vega-lite/build/src/channeldef.DatumDef<F, vega-lite.vega-lite/build/src/channeldef.PrimitiveValue | vega-lite.vega-lite/build/src/datetime.DateTime | vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> */
-@js.native
+/* Inlined parent vega-lite.vega-lite/build/src/channeldef.ScaleMixins */
+/* Inlined parent vega-lite.vega-lite/build/src/channeldef.DatumDef<F, vega-lite.vega-lite/build/src/channeldef.PrimitiveValue | vega-lite.vega-lite/build/src/datetime.DateTime | vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> */
 trait ScaleDatumDef[F /* <: Field */] extends StObject {
   
   /**
@@ -22,12 +21,12 @@ trait ScaleDatumDef[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.native
+  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.undefined
   
   /**
     * An object defining properties of the channel's scale, which is the function that transforms values in the data domain (numbers, dates, strings, etc) to visual values (pixels, colors, sizes) of the encoding channels.
@@ -38,9 +37,9 @@ trait ScaleDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`scale`](https://vega.github.io/vega-lite/docs/scale.html) documentation.
     */
-  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.native
+  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object ScaleDatumDef {
   
@@ -51,7 +50,7 @@ object ScaleDatumDef {
   }
   
   @scala.inline
-  implicit class ScaleDatumDefMutableBuilder[Self <: ScaleDatumDef[_], F /* <: Field */] (val x: Self with ScaleDatumDef[F]) extends AnyVal {
+  implicit class ScaleDatumDefMutableBuilder[Self <: ScaleDatumDef[?], F /* <: Field */] (val x: Self & ScaleDatumDef[F]) extends AnyVal {
     
     @scala.inline
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])

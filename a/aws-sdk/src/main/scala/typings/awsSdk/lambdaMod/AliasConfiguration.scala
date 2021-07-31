@@ -2,41 +2,39 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AliasConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the alias.
     */
-  var AliasArn: js.UndefOr[FunctionArn] = js.native
+  var AliasArn: js.UndefOr[FunctionArn] = js.undefined
   
   /**
     * A description of the alias.
     */
-  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.undefined
   
   /**
     * The function version that the alias invokes.
     */
-  var FunctionVersion: js.UndefOr[Version] = js.native
+  var FunctionVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The name of the alias.
     */
-  var Name: js.UndefOr[Alias] = js.native
+  var Name: js.UndefOr[Alias] = js.undefined
   
   /**
     * A unique identifier that changes when you update the alias.
     */
-  var RevisionId: js.UndefOr[String] = js.native
+  var RevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The routing configuration of the alias.
     */
-  var RoutingConfig: js.UndefOr[AliasRoutingConfiguration] = js.native
+  var RoutingConfig: js.UndefOr[AliasRoutingConfiguration] = js.undefined
 }
 object AliasConfiguration {
   

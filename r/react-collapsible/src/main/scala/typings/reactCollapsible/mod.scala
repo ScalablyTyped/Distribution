@@ -13,7 +13,6 @@ import typings.reactCollapsible.reactCollapsibleStrings.unset
 import typings.reactCollapsible.reactCollapsibleStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,66 +26,67 @@ object mod {
   trait Collapsible
     extends Component[CollapsibleProps, js.Object, js.Any]
   
-  @js.native
-  trait CollapsibleProps extends HTMLProps[Collapsible] {
+  trait CollapsibleProps
+    extends StObject
+       with HTMLProps[Collapsible] {
     
-    var accordionPosition: js.UndefOr[String | Double] = js.native
+    var accordionPosition: js.UndefOr[String | Double] = js.undefined
     
-    var classParentString: js.UndefOr[String] = js.native
+    var classParentString: js.UndefOr[String] = js.undefined
     
-    var containerElementProps: js.UndefOr[js.Object] = js.native
+    var containerElementProps: js.UndefOr[js.Object] = js.undefined
     
-    var contentContainerTagName: js.UndefOr[String] = js.native
+    var contentContainerTagName: js.UndefOr[String] = js.undefined
     
-    var contentHiddenWhenClosed: js.UndefOr[Boolean] = js.native
+    var contentHiddenWhenClosed: js.UndefOr[Boolean] = js.undefined
     
-    var contentInnerClassName: js.UndefOr[String] = js.native
+    var contentInnerClassName: js.UndefOr[String] = js.undefined
     
-    var contentOuterClassName: js.UndefOr[String] = js.native
+    var contentOuterClassName: js.UndefOr[String] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var handleTriggerClick: js.UndefOr[js.Function1[/* accordionPosition */ js.UndefOr[String | Double], Unit]] = js.native
+    var handleTriggerClick: js.UndefOr[js.Function1[/* accordionPosition */ js.UndefOr[String | Double], Unit]] = js.undefined
     
-    var lazyRender: js.UndefOr[Boolean] = js.native
+    var lazyRender: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClosing: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpening: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onTriggerClosing: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTriggerClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onTriggerOpening: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTriggerOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var openedClassName: js.UndefOr[String] = js.native
+    var openedClassName: js.UndefOr[String] = js.undefined
     
-    var overflowWhenOpen: js.UndefOr[hidden | visible | auto | scroll | inherit | initial | unset] = js.native
+    var overflowWhenOpen: js.UndefOr[hidden | visible | auto | scroll | inherit | initial | unset] = js.undefined
     
-    var transitionCloseTime: js.UndefOr[Double | Null] = js.native
+    var transitionCloseTime: js.UndefOr[Double | Null] = js.undefined
     
-    var transitionTime: js.UndefOr[Double] = js.native
+    var transitionTime: js.UndefOr[Double] = js.undefined
     
-    var trigger: String | ReactElement = js.native
+    var trigger: String | ReactElement
     
-    var triggerClassName: js.UndefOr[String] = js.native
+    var triggerClassName: js.UndefOr[String] = js.undefined
     
-    var triggerDisabled: js.UndefOr[Boolean] = js.native
+    var triggerDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var triggerElementProps: js.UndefOr[js.Object] = js.native
+    var triggerElementProps: js.UndefOr[js.Object] = js.undefined
     
-    var triggerOpenedClassName: js.UndefOr[String] = js.native
+    var triggerOpenedClassName: js.UndefOr[String] = js.undefined
     
-    var triggerSibling: js.UndefOr[ReactElement] = js.native
+    var triggerSibling: js.UndefOr[ReactElement] = js.undefined
     
-    var triggerStyle: js.UndefOr[Null | CSSProperties] = js.native
+    var triggerStyle: js.UndefOr[Null | CSSProperties] = js.undefined
     
-    var triggerTagName: js.UndefOr[String] = js.native
+    var triggerTagName: js.UndefOr[String] = js.undefined
     
-    var triggerWhenOpen: js.UndefOr[String | ReactElement] = js.native
+    var triggerWhenOpen: js.UndefOr[String | ReactElement] = js.undefined
   }
   object CollapsibleProps {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Groups")
@@ -79,7 +78,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGroup] = js.native
   def create(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def create(params: ParamsResourceProjectsGroupsCreate): GaxiosPromise[SchemaGroup] = js.native
   def create(params: ParamsResourceProjectsGroupsCreate, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def create(
@@ -156,7 +155,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsGroupsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsGroupsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -232,7 +231,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet): GaxiosPromise[SchemaGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def get(
@@ -319,7 +318,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListGroupsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGroupsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListGroupsResponse] = js.native
   def list(params: ParamsResourceProjectsGroupsList): GaxiosPromise[SchemaListGroupsResponse] = js.native
   def list(params: ParamsResourceProjectsGroupsList, callback: BodyResponseCallback[SchemaListGroupsResponse]): Unit = js.native
   def list(
@@ -406,7 +405,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate): GaxiosPromise[SchemaGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def update(

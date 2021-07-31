@@ -11,10 +11,13 @@ import typings.std.ReadonlySet
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
+  
+  @JSImport("@ionic/cli-framework/lib/logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/lib/logger", "DEFAULT_LOGGER_HANDLERS")
   @js.native
@@ -52,12 +55,12 @@ object loggerMod {
     def clone(opts: PartialLoggerOptions): Logger = js.native
     
     def createRecord(msg: String): LogRecord = js.native
-    def createRecord(msg: String, level: js.UndefOr[scala.Nothing], format: Boolean): LogRecord = js.native
+    def createRecord(msg: String, level: Unit, format: Boolean): LogRecord = js.native
     def createRecord(msg: String, level: LoggerLevelWeight): LogRecord = js.native
     def createRecord(msg: String, level: LoggerLevelWeight, format: Boolean): LogRecord = js.native
     
     def createWriteStream(): WritableStream = js.native
-    def createWriteStream(level: js.UndefOr[scala.Nothing], format: Boolean): WritableStream = js.native
+    def createWriteStream(level: Unit, format: Boolean): WritableStream = js.native
     def createWriteStream(level: LoggerLevelWeight): WritableStream = js.native
     def createWriteStream(level: LoggerLevelWeight, format: Boolean): WritableStream = js.native
     
@@ -105,9 +108,9 @@ object loggerMod {
       * @param level The logger level. If omitted, the default output is used.
       */
     def nl(): Unit = js.native
-    def nl(num: js.UndefOr[scala.Nothing], level: LoggerLevelWeight): Unit = js.native
     def nl(num: Double): Unit = js.native
     def nl(num: Double, level: LoggerLevelWeight): Unit = js.native
+    def nl(num: Unit, level: LoggerLevelWeight): Unit = js.native
     
     /**
       * Log a message using the `warn` logger level.
@@ -119,61 +122,60 @@ object loggerMod {
   /* static members */
   object Logger {
     
-    @JSImport("@ionic/cli-framework/lib/logger", "Logger.cloneHandlers")
+    @JSImport("@ionic/cli-framework/lib/logger", "Logger")
     @js.native
-    def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[Set[LoggerHandler]]
   }
   
   @JSImport("@ionic/cli-framework/lib/logger", "StreamHandler")
   @js.native
-  class StreamHandler protected () extends LoggerHandler {
+  class StreamHandler protected ()
+    extends StObject
+       with LoggerHandler {
     def this(hasStreamFilterFormatter: StreamHandlerOptions) = this()
     
     def clone(opts: PartialStreamHandlerOptio): StreamHandler = js.native
     
     val filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.native
     
+    /* CompleteClass */
+    override def handle(record: LogRecord): Unit = js.native
+    
     val stream: WritableStream = js.native
   }
   
-  @JSImport("@ionic/cli-framework/lib/logger", "createPrefixedFormatter")
-  @js.native
-  def createPrefixedFormatter(prefix: String): LoggerFormatter = js.native
-  @JSImport("@ionic/cli-framework/lib/logger", "createPrefixedFormatter")
-  @js.native
-  def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = js.native
+  @scala.inline
+  def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  @scala.inline
+  def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @JSImport("@ionic/cli-framework/lib/logger", "createTaggedFormatter")
-  @js.native
-  def createTaggedFormatter(): LoggerFormatter = js.native
-  @JSImport("@ionic/cli-framework/lib/logger", "createTaggedFormatter")
-  @js.native
-  def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = js.native
+  @scala.inline
+  def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
+  @scala.inline
+  def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @JSImport("@ionic/cli-framework/lib/logger", "getLoggerLevelColor")
-  @js.native
-  def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = js.native
-  @JSImport("@ionic/cli-framework/lib/logger", "getLoggerLevelColor")
-  @js.native
-  def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = js.native
+  @scala.inline
+  def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
+  @scala.inline
+  def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]
   
-  @JSImport("@ionic/cli-framework/lib/logger", "getLoggerLevelName")
-  @js.native
-  def getLoggerLevelName(): js.UndefOr[LoggerLevel] = js.native
-  @JSImport("@ionic/cli-framework/lib/logger", "getLoggerLevelName")
-  @js.native
-  def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = js.native
+  @scala.inline
+  def getLoggerLevelName(): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")().asInstanceOf[js.UndefOr[LoggerLevel]]
+  @scala.inline
+  def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")(level.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LoggerLevel]]
   
-  @js.native
   trait CreateTaggedFormatterOptions extends StObject {
     
-    var colors: js.UndefOr[Colors] = js.native
+    var colors: js.UndefOr[Colors] = js.undefined
     
-    var prefix: js.UndefOr[String | js.Function0[String]] = js.native
+    var prefix: js.UndefOr[String | js.Function0[String]] = js.undefined
     
-    var titleize: js.UndefOr[Boolean] = js.native
+    var titleize: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean | WordWrapOptions] = js.native
+    var wrap: js.UndefOr[Boolean | WordWrapOptions] = js.undefined
   }
   object CreateTaggedFormatterOptions {
     
@@ -215,16 +217,15 @@ object loggerMod {
     }
   }
   
-  @js.native
   trait LogRecord extends StObject {
     
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[LoggerLevelWeight] = js.native
+    var level: js.UndefOr[LoggerLevelWeight] = js.undefined
     
-    var logger: Logger = js.native
+    var logger: Logger
     
-    var msg: String = js.native
+    var msg: String
   }
   object LogRecord {
     
@@ -259,12 +260,11 @@ object loggerMod {
   
   type LoggerFormatter = js.Function1[/* record */ LogRecord, String]
   
-  @js.native
   trait LoggerHandler extends StObject {
     
-    var formatter: js.UndefOr[LoggerFormatter] = js.native
+    var formatter: js.UndefOr[LoggerFormatter] = js.undefined
     
-    def handle(record: LogRecord): Unit = js.native
+    def handle(record: LogRecord): Unit
   }
   object LoggerHandler {
     
@@ -312,12 +312,11 @@ object loggerMod {
   
   type LoggerLevelWeight = Double
   
-  @js.native
   trait LoggerOptions extends StObject {
     
-    val handlers: js.UndefOr[Set[LoggerHandler]] = js.native
+    val handlers: js.UndefOr[Set[LoggerHandler]] = js.undefined
     
-    val level: js.UndefOr[LoggerLevelWeight] = js.native
+    val level: js.UndefOr[LoggerLevelWeight] = js.undefined
   }
   object LoggerOptions {
     
@@ -344,14 +343,13 @@ object loggerMod {
     }
   }
   
-  @js.native
   trait StreamHandlerOptions extends StObject {
     
-    val filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.native
+    val filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.undefined
     
-    val formatter: js.UndefOr[LoggerFormatter] = js.native
+    val formatter: js.UndefOr[LoggerFormatter] = js.undefined
     
-    val stream: WritableStream = js.native
+    val stream: WritableStream
   }
   object StreamHandlerOptions {
     

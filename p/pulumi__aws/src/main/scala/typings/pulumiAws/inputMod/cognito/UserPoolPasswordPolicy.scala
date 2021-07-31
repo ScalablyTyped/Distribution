@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolPasswordPolicy extends StObject {
   
   /**
     * The minimum length of the password policy that you have set.
     */
-  var minimumLength: js.UndefOr[Input[Double]] = js.native
+  var minimumLength: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Whether you have required users to use at least one lowercase letter in their password.
     */
-  var requireLowercase: js.UndefOr[Input[Boolean]] = js.native
+  var requireLowercase: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Whether you have required users to use at least one number in their password.
     */
-  var requireNumbers: js.UndefOr[Input[Boolean]] = js.native
+  var requireNumbers: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Whether you have required users to use at least one symbol in their password.
     */
-  var requireSymbols: js.UndefOr[Input[Boolean]] = js.native
+  var requireSymbols: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Whether you have required users to use at least one uppercase letter in their password.
     */
-  var requireUppercase: js.UndefOr[Input[Boolean]] = js.native
+  var requireUppercase: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * In the password policy you have set, refers to the number of days a temporary password is valid. If the user does not sign-in during this time, their password will need to be reset by an administrator.
     */
-  var temporaryPasswordValidityDays: js.UndefOr[Input[Double]] = js.native
+  var temporaryPasswordValidityDays: js.UndefOr[Input[Double]] = js.undefined
 }
 object UserPoolPasswordPolicy {
   

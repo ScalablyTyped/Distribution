@@ -2,31 +2,31 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICursorTool extends ITool {
+trait ICursorTool
+  extends StObject
+     with ITool {
   
-  var direction: String = js.native
+  var direction: String
   
-  var dragging: Double = js.native
+  var dragging: Double
   
-  var followMouse: Boolean = js.native
+  var followMouse: Boolean
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var horizAxis: IAxis = js.native
+  var horizAxis: IAxis
   
-  def over(point: IPoint): Boolean = js.native
+  def over(point: IPoint): Boolean
   
-  var render: String = js.native
+  var render: String
   
-  def setRender(render: String): Unit = js.native
+  def setRender(render: String): Unit
   
-  var size: IPoint = js.native
+  var size: IPoint
   
-  var vertAxis: IAxis = js.native
+  var vertAxis: IAxis
 }
 object ICursorTool {
   

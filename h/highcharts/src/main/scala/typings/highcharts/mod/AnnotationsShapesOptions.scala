@@ -2,41 +2,39 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsShapesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Name of the dash style to use
     * for the shape's stroke.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the shape's fill.
     */
-  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The height of the shape.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Id of the marker which will be
     * drawn at the final vertex of the path. Custom markers can be defined in
     * defs property.
     */
-  var markerEnd: js.UndefOr[String] = js.native
+  var markerEnd: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Id of the marker which will be
     * drawn at the first vertex of the path. Custom markers can be defined in
     * defs property.
     */
-  var markerStart: js.UndefOr[String] = js.native
+  var markerStart: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This option defines the point to
@@ -44,53 +42,53 @@ trait AnnotationsShapesOptions extends StObject {
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.native
+  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of points for the
     * shape. This option is available for shapes which can use multiple points
     * such as path. A point can be either a point object or a point's id.
     */
-  var points: js.UndefOr[js.Array[String | AnnotationMockPointOptionsObject]] = js.native
+  var points: js.UndefOr[js.Array[String | AnnotationMockPointOptionsObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the shape.
     */
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Defines additional snapping area
     * around an annotation making this annotation to focus. Defined in pixels.
     */
-  var snap: js.UndefOr[Double] = js.native
+  var snap: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for an image to use as
     * the annotation shape. Note, type has to be set to `'image'`.
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the shape's stroke.
     */
-  var stroke: js.UndefOr[ColorString] = js.native
+  var stroke: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel stroke width of the
     * shape.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The type of the shape, e.g.
     * circle or rectangle.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the shape.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsShapesOptions {
   

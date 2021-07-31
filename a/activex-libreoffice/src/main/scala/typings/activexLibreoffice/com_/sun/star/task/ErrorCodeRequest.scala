@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a general error exception. It can be used to transport the error code information. E.g. that can be useful for interactions.
   * @since OOo 1.1.2
   */
-@js.native
-trait ErrorCodeRequest extends Exception {
+trait ErrorCodeRequest
+  extends StObject
+     with Exception {
   
   /** specifies the error code. */
-  var ErrCode: Double = js.native
+  var ErrCode: Double
 }
 object ErrorCodeRequest {
   

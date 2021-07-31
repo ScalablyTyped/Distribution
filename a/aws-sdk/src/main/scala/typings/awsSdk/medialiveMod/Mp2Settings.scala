@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mp2Settings extends StObject {
   
   /**
     * Average bitrate in bits/second.
     */
-  var Bitrate: js.UndefOr[double] = js.native
+  var Bitrate: js.UndefOr[double] = js.undefined
   
   /**
     * The MPEG2 Audio coding mode.  Valid values are codingMode10 (for mono) or codingMode20 (for stereo).
     */
-  var CodingMode: js.UndefOr[Mp2CodingMode] = js.native
+  var CodingMode: js.UndefOr[Mp2CodingMode] = js.undefined
   
   /**
     * Sample rate in Hz.
     */
-  var SampleRate: js.UndefOr[double] = js.native
+  var SampleRate: js.UndefOr[double] = js.undefined
 }
 object Mp2Settings {
   

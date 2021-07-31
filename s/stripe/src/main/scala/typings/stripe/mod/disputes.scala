@@ -27,7 +27,6 @@ import typings.stripe.stripeStrings.warning_under_review
 import typings.stripe.stripeStrings.won
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object disputes {
@@ -38,61 +37,62 @@ object disputes {
     * evidence that shows the charge is legitimate. You can find more information about the dispute process
     * in our disputes FAQ: https://stripe.com/help/disputes
     */
-  @js.native
-  trait IDispute extends IResourceObject {
+  trait IDispute
+    extends StObject
+       with IResourceObject {
     
     /**
       * Disputed amount. Usually the amount of the charge, but can differ (usually because of currency
       * fluctuation or because only part of the order is disputed).
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * List of zero, one, or two balance transactions that show funds withdrawn and reinstated to your
       * Stripe account as a result of this dispute.
       */
-    var balance_transactions: js.Array[IBalanceTransaction] = js.native
+    var balance_transactions: js.Array[IBalanceTransaction]
     
     /**
       * ID of the charge that was disputed. [Expandable]
       */
-    var charge: String | ICharge = js.native
+    var charge: String | ICharge
     
     /**
       * Date dispute was opened
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code representing the currency of the amount that was disputed.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * Evidence provided to respond to a dispute. Updating any field in the hash will submit all fields in the hash for review.
       */
-    var evidence: IDisputeEvidence = js.native
+    var evidence: IDisputeEvidence
     
     /**
       * Information about the evidence submission.
       */
-    var evidence_details: js.UndefOr[Dueby] = js.native
+    var evidence_details: js.UndefOr[Dueby] = js.undefined
     
     /**
       * If true, it is still possible to refund the disputed payment. Once the payment has been fully
       * refunded, no further funds will be withdrawn from your Stripe account as a result of this dispute.
       */
-    var is_charge_refundable: Boolean = js.native
+    var is_charge_refundable: Boolean
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is 'dispute'
       */
     @JSName("object")
-    var object_IDispute: dispute = js.native
+    var object_IDispute: dispute
     
     /**
       * Reason given by cardholder for dispute.
@@ -101,13 +101,13 @@ object disputes {
       * insufficient_funds, bank_cannot_process, debit_not_authorized, general.
       * Read more about dispute reasons: https://stripe.com/help/disputes#reasons
       */
-    var reason: duplicate | fraudulent | subscription_canceled | product_unacceptable | product_not_received | unrecognized | credit_not_processed | incorrect_account_details | insufficient_funds | bank_cannot_process | debit_not_authorized | general = js.native
+    var reason: duplicate | fraudulent | subscription_canceled | product_unacceptable | product_not_received | unrecognized | credit_not_processed | incorrect_account_details | insufficient_funds | bank_cannot_process | debit_not_authorized | general
     
     /**
       * Current status of dispute. Possible values are warning_needs_response, warning_under_review, warning_closed,
       * needs_response, response_disabled, under_review, charge_refunded, won, lost.
       */
-    var status: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost = js.native
+    var status: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost
   }
   object IDispute {
     
@@ -123,12 +123,11 @@ object disputes {
       is_charge_refundable: Boolean,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: dispute,
       reason: duplicate | fraudulent | subscription_canceled | product_unacceptable | product_not_received | unrecognized | credit_not_processed | incorrect_account_details | insufficient_funds | bank_cannot_process | debit_not_authorized | general,
       status: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost
     ): IDispute = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transactions = balance_transactions.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], evidence = evidence.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_charge_refundable = is_charge_refundable.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("dispute")
       __obj.asInstanceOf[IDispute]
     }
     
@@ -186,7 +185,6 @@ object disputes {
     }
   }
   
-  @js.native
   trait IDisputeEvidence extends StObject {
     
     /**
@@ -194,146 +192,146 @@ object disputes {
       * digital product. This information should include IP addresses, corresponding timestamps, and any
       * detailed recorded activity.
       */
-    var access_activity_log: js.UndefOr[String] = js.native
+    var access_activity_log: js.UndefOr[String] = js.undefined
     
     /**
       * The billing address provided by the customer.
       */
-    var billing_address: js.UndefOr[String] = js.native
+    var billing_address: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Your subscription cancellation policy, as shown to the customer. [Expandable]
       */
-    var cancellation_policy: js.UndefOr[String] = js.native
+    var cancellation_policy: js.UndefOr[String] = js.undefined
     
     /**
       * An explanation of how and when the customer was shown your refund policy prior to purchase.
       */
-    var cancellation_policy_disclosure: js.UndefOr[String] = js.native
+    var cancellation_policy_disclosure: js.UndefOr[String] = js.undefined
     
     /**
       * A justification for why the customer's subscription was not canceled.
       */
-    var cancellation_rebuttal: js.UndefOr[String] = js.native
+    var cancellation_rebuttal: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Any communication with the customer that you feel is relevant to your case (for
       * example emails proving that they received the product or service, or demonstrating their use of or
       * satisfaction with the product or service).
       */
-    var customer_communication: js.UndefOr[String] = js.native
+    var customer_communication: js.UndefOr[String] = js.undefined
     
     /**
       * The email address of the customer.
       */
-    var customer_email_address: js.UndefOr[String] = js.native
+    var customer_email_address: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the customer.
       */
-    var customer_name: js.UndefOr[String] = js.native
+    var customer_name: js.UndefOr[String] = js.undefined
     
     /**
       * The IP address that the customer used when making the purchase.
       */
-    var customer_purchase_ip: js.UndefOr[String] = js.native
+    var customer_purchase_ip: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) A relevant document or contract showing the customer's signature. [Expandable]
       */
-    var customer_signature: js.UndefOr[String] = js.native
+    var customer_signature: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Documentation for the prior charge that can uniquely identify the charge,
       * such as a receipt, shipping label, work order, etc. This document should be paired with a similar
       * document from the disputed payment that proves the two payments are separate. [Expandable]
       */
-    var duplicate_charge_documentation: js.UndefOr[String] = js.native
+    var duplicate_charge_documentation: js.UndefOr[String] = js.undefined
     
     /**
       * An explanation of the difference between the disputed charge and the prior charge that appears to be a duplicate.
       */
-    var duplicate_charge_explanation: js.UndefOr[String] = js.native
+    var duplicate_charge_explanation: js.UndefOr[String] = js.undefined
     
     /**
       * The Stripe ID for the prior charge which appears to be a duplicate of the disputed charge.
       */
-    var duplicate_charge_id: js.UndefOr[String] = js.native
+    var duplicate_charge_id: js.UndefOr[String] = js.undefined
     
     /**
       * A description of the product or service which was sold.
       */
-    var product_description: js.UndefOr[String] = js.native
+    var product_description: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Any receipt or message sent to the customer notifying them of the charge. [Expandable]
       */
-    var receipt: js.UndefOr[String] = js.native
+    var receipt: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Your refund policy, as shown to the customer. [Expandable]
       */
-    var refund_policy: js.UndefOr[String] = js.native
+    var refund_policy: js.UndefOr[String] = js.undefined
     
     /**
       * Documentation demonstrating that the customer was shown your refund policy prior to purchase.
       */
-    var refund_policy_disclosure: js.UndefOr[String] = js.native
+    var refund_policy_disclosure: js.UndefOr[String] = js.undefined
     
     /**
       * A justification for why the customer is not entitled to a refund.
       */
-    var refund_refusal_explanation: js.UndefOr[String] = js.native
+    var refund_refusal_explanation: js.UndefOr[String] = js.undefined
     
     /**
       * The date on which the customer received or began receiving the purchased service, in a clear human-readable format.
       */
-    var service_date: js.UndefOr[String] = js.native
+    var service_date: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Documentation showing proof that a service was provided to the customer. This could
       * include a copy of a signed contract, work order, or other form of written agreement.
       */
-    var service_documentation: js.UndefOr[String] = js.native
+    var service_documentation: js.UndefOr[String] = js.undefined
     
     /**
       * The address to which a physical product was shipped. You should try to include as much complete address information as possible.
       */
-    var shipping_address: js.UndefOr[String] = js.native
+    var shipping_address: js.UndefOr[String] = js.undefined
     
     /**
       * The delivery service that shipped a physical product, such as Fedex, UPS, USPS, etc. If multiple carriers were used
       * for this purchase, please separate them with commas.
       */
-    var shipping_carrier: js.UndefOr[String] = js.native
+    var shipping_carrier: js.UndefOr[String] = js.undefined
     
     /**
       * The date on which a physical product began its route to the shipping address, in a clear human-readable format.
       */
-    var shipping_date: js.UndefOr[String] = js.native
+    var shipping_date: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Documentation showing proof that a product was shipped to the customer at the same address
       * the customer provided to you. This could include a copy of the shipment receipt, shipping label, etc, and should
       * show the full shipping address of the customer, if possible. [Expandable]
       */
-    var shipping_documentation: js.UndefOr[String] = js.native
+    var shipping_documentation: js.UndefOr[String] = js.undefined
     
     /**
       * The tracking number for a physical product, obtained from the delivery service. If multiple tracking numbers
       * were generated for this purchase, please separate them with commas.
       */
-    var shipping_tracking_number: js.UndefOr[String] = js.native
+    var shipping_tracking_number: js.UndefOr[String] = js.undefined
     
     /**
       * (ID of a file) Any additional evidence or statements. [Expandable]
       */
-    var uncategorized_file: js.UndefOr[String] = js.native
+    var uncategorized_file: js.UndefOr[String] = js.undefined
     
     /**
       * Any additional evidence or statements.
       */
-    var uncategorized_text: js.UndefOr[String] = js.native
+    var uncategorized_text: js.UndefOr[String] = js.undefined
   }
   object IDisputeEvidence {
     
@@ -510,13 +508,14 @@ object disputes {
     }
   }
   
-  @js.native
-  trait IDisputeUpdateOptions extends IDataOptionsWithMetadata {
+  trait IDisputeUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Evidence to upload to respond to a dispute. Updating any field in the hash will submit all fields in the hash for review.
       */
-    var evidence: js.UndefOr[IDisputeEvidence] = js.native
+    var evidence: js.UndefOr[IDisputeEvidence] = js.undefined
   }
   object IDisputeUpdateOptions {
     

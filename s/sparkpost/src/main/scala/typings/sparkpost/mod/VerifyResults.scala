@@ -8,13 +8,13 @@ import typings.sparkpost.sparkpostStrings.unverified
 import typings.sparkpost.sparkpostStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VerifyResults extends Status {
+trait VerifyResults
+  extends StObject
+     with Status {
   
-  var dns: js.UndefOr[Dkimrecord] = js.native
+  var dns: js.UndefOr[Dkimrecord] = js.undefined
 }
 object VerifyResults {
   

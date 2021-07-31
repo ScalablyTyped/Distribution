@@ -3,33 +3,32 @@ package typings.mdv
 import typings.mdv.anon.Optionswarningstrue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mdv", "validate")
+  @JSImport("mdv", JSImport.Namespace)
   @js.native
-  def validate(s: String): ValidateResults = js.native
-  @JSImport("mdv", "validate")
-  @js.native
-  def validate(s: String, options: Optionswarningstrue): ValidateResults with Warnings = js.native
-  @JSImport("mdv", "validate")
-  @js.native
-  def validate(s: String, options: Options): ValidateResults = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def validate(s: String): ValidateResults = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any]).asInstanceOf[ValidateResults]
+  @scala.inline
+  def validate(s: String, options: Optionswarningstrue): ValidateResults & Warnings = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults & Warnings]
+  @scala.inline
+  def validate(s: String, options: Options): ValidateResults = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults]
+  
   trait Anchor extends StObject {
     
-    var defined: Double = js.native
+    var defined: Double
     
-    var emptyText: Double = js.native
+    var emptyText: Double
     
-    var localRefNoHash: Boolean = js.native
+    var localRefNoHash: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var seen: Double = js.native
+    var seen: Double
   }
   object Anchor {
     
@@ -59,22 +58,22 @@ object mod {
     }
   }
   
-  @js.native
   trait NonParsedEntry extends StObject {
     
-    var extension: String = js.native
+    var `extension`: String
     
-    var lineEnd: Double = js.native
+    var lineEnd: Double
     
-    var lineStart: Double = js.native
+    var lineStart: Double
     
-    var message: String = js.native
+    var message: String
   }
   object NonParsedEntry {
     
     @scala.inline
-    def apply(extension: String, lineEnd: Double, lineStart: Double, message: String): NonParsedEntry = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], lineEnd = lineEnd.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    def apply(`extension`: String, lineEnd: Double, lineStart: Double, message: String): NonParsedEntry = {
+      val __obj = js.Dynamic.literal(lineEnd = lineEnd.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonParsedEntry]
     }
     
@@ -95,25 +94,24 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * save intermediary html
       * @default false
       */
-    var save: js.UndefOr[Boolean] = js.native
+    var save: js.UndefOr[Boolean] = js.undefined
     
     /**
       * markdown document path
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * enable warnings
       * @default false
       */
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -146,24 +144,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidateResults extends StObject {
     
-    var anchorsWithEmptyText: js.Array[Anchor] = js.native
+    var anchorsWithEmptyText: js.Array[Anchor]
     
-    var anchorsWithHash: js.Array[Anchor] = js.native
+    var anchorsWithHash: js.Array[Anchor]
     
-    var duplicatedAnchors: js.Array[Anchor] = js.native
+    var duplicatedAnchors: js.Array[Anchor]
     
-    var imagesWithMissingAlt: Double = js.native
+    var imagesWithMissingAlt: Double
     
-    var localRefNoHash: js.Array[Anchor] = js.native
+    var localRefNoHash: js.Array[Anchor]
     
-    var missingAnchors: js.Array[Anchor] = js.native
+    var missingAnchors: js.Array[Anchor]
     
-    var nonParsingExamples: js.Array[NonParsedEntry] = js.native
+    var nonParsingExamples: js.Array[NonParsedEntry]
     
-    var source: String = js.native
+    var source: String
   }
   object ValidateResults {
     
@@ -229,12 +226,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Warnings extends StObject {
     
-    var anchorsWithNoLinks: js.Array[Anchor] = js.native
+    var anchorsWithNoLinks: js.Array[Anchor]
     
-    var codeBlocksWithNoLanguage: Double = js.native
+    var codeBlocksWithNoLanguage: Double
   }
   object Warnings {
     

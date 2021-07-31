@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The item that is delivered or supplied
   */
-@js.native
-trait SupplyDeliverySuppliedItem extends BackboneElement {
+trait SupplyDeliverySuppliedItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Medication, Substance, or Device supplied
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Medication, Substance, or Device supplied
     */
-  var itemReference: js.UndefOr[Reference] = js.native
+  var itemReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Amount dispensed
     */
-  var quantity: js.UndefOr[Quantity] = js.native
+  var quantity: js.UndefOr[Quantity] = js.undefined
 }
 object SupplyDeliverySuppliedItem {
   

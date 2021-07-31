@@ -3,14 +3,16 @@ package typings.graphqlPlaygroundHtml
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderPlaygroundPageMod {
   
-  @JSImport("graphql-playground-html/dist/render-playground-page", "renderPlaygroundPage")
+  @JSImport("graphql-playground-html/dist/render-playground-page", JSImport.Namespace)
   @js.native
-  def renderPlaygroundPage(options: RenderPageOptions): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def renderPlaygroundPage(options: RenderPageOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPlaygroundPage")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line
@@ -30,50 +32,49 @@ object renderPlaygroundPageMod {
     def underline: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline = "underline".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline]
   }
   
-  @js.native
   trait EditorColours extends StObject {
     
-    var atom: String = js.native
+    var atom: String
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var builtin: String = js.native
+    var builtin: String
     
-    var comment: String = js.native
+    var comment: String
     
-    var cursorColor: String = js.native
+    var cursorColor: String
     
-    var `def`: String = js.native
+    var `def`: String
     
-    var editorBackground: String = js.native
+    var editorBackground: String
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var leftDrawerBackground: String = js.native
+    var leftDrawerBackground: String
     
-    var meta: String = js.native
+    var meta: String
     
-    var number: String = js.native
+    var number: String
     
-    var property: String = js.native
+    var property: String
     
-    var punctuation: String = js.native
+    var punctuation: String
     
-    var qualifier: String = js.native
+    var qualifier: String
     
-    var resultBackground: String = js.native
+    var resultBackground: String
     
-    var rightDrawerBackground: String = js.native
+    var rightDrawerBackground: String
     
-    var selection: String = js.native
+    var selection: String
     
-    var string: String = js.native
+    var string: String
     
-    var string2: String = js.native
+    var string2: String
     
-    var variable: String = js.native
+    var variable: String
     
-    var ws: String = js.native
+    var ws: String
   }
   object EditorColours {
     
@@ -174,47 +175,46 @@ object renderPlaygroundPageMod {
     }
   }
   
-  @js.native
   trait ISettings extends StObject {
     
     @JSName("editor.cursorShape")
-    var editorDotcursorShape: CursorShape = js.native
+    var editorDotcursorShape: CursorShape
     
     @JSName("editor.fontFamily")
-    var editorDotfontFamily: String = js.native
+    var editorDotfontFamily: String
     
     @JSName("editor.fontSize")
-    var editorDotfontSize: Double = js.native
+    var editorDotfontSize: Double
     
     @JSName("editor.reuseHeaders")
-    var editorDotreuseHeaders: Boolean = js.native
+    var editorDotreuseHeaders: Boolean
     
     @JSName("editor.theme")
-    var editorDottheme: Theme = js.native
+    var editorDottheme: Theme
     
     @JSName("general.betaUpdates")
-    var generalDotbetaUpdates: Boolean = js.native
+    var generalDotbetaUpdates: Boolean
     
     @JSName("request.credentials")
-    var requestDotcredentials: String = js.native
+    var requestDotcredentials: String
     
     @JSName("request.globalHeaders")
-    var requestDotglobalHeaders: StringDictionary[String] = js.native
+    var requestDotglobalHeaders: StringDictionary[String]
     
     @JSName("schema.polling.enable")
-    var schemaDotpollingDotenable: Boolean = js.native
+    var schemaDotpollingDotenable: Boolean
     
     @JSName("schema.polling.endpointFilter")
-    var schemaDotpollingDotendpointFilter: String = js.native
+    var schemaDotpollingDotendpointFilter: String
     
     @JSName("schema.polling.interval")
-    var schemaDotpollingDotinterval: Double = js.native
+    var schemaDotpollingDotinterval: Double
     
     @JSName("tracing.hideTracingResponse")
-    var tracingDothideTracingResponse: Boolean = js.native
+    var tracingDothideTracingResponse: Boolean
     
     @JSName("tracing.tracingSupported")
-    var tracingDottracingSupported: Boolean = js.native
+    var tracingDottracingSupported: Boolean
   }
   object ISettings {
     
@@ -295,10 +295,9 @@ object renderPlaygroundPageMod {
     }
   }
   
-  @js.native
   trait IntrospectionResult extends StObject {
     
-    var __schema: js.Any = js.native
+    var __schema: js.Any
   }
   object IntrospectionResult {
     
@@ -316,26 +315,25 @@ object renderPlaygroundPageMod {
     }
   }
   
-  @js.native
   trait MiddlewareOptions extends StObject {
     
-    var codeTheme: js.UndefOr[EditorColours] = js.native
+    var codeTheme: js.UndefOr[EditorColours] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var schema: js.UndefOr[IntrospectionResult] = js.native
+    var schema: js.UndefOr[IntrospectionResult] = js.undefined
     
-    var settings: js.UndefOr[ISettings] = js.native
+    var settings: js.UndefOr[ISettings] = js.undefined
     
-    var subscriptionEndpoint: js.UndefOr[String] = js.native
+    var subscriptionEndpoint: js.UndefOr[String] = js.undefined
     
-    var tabs: js.UndefOr[js.Array[Tab]] = js.native
+    var tabs: js.UndefOr[js.Array[Tab]] = js.undefined
     
-    var workspaceName: js.UndefOr[String] = js.native
+    var workspaceName: js.UndefOr[String] = js.undefined
   }
   object MiddlewareOptions {
     
@@ -407,16 +405,17 @@ object renderPlaygroundPageMod {
     }
   }
   
-  @js.native
-  trait RenderPageOptions extends MiddlewareOptions {
+  trait RenderPageOptions
+    extends StObject
+       with MiddlewareOptions {
     
-    var cdnUrl: js.UndefOr[String] = js.native
+    var cdnUrl: js.UndefOr[String] = js.undefined
     
-    var faviconUrl: js.UndefOr[String | Null] = js.native
+    var faviconUrl: js.UndefOr[String | Null] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object RenderPageOptions {
     
@@ -458,20 +457,19 @@ object renderPlaygroundPageMod {
     }
   }
   
-  @js.native
   trait Tab extends StObject {
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var query: String = js.native
+    var query: String
     
-    var responses: js.UndefOr[js.Array[String]] = js.native
+    var responses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var variables: js.UndefOr[String] = js.native
+    var variables: js.UndefOr[String] = js.undefined
   }
   object Tab {
     

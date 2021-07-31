@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
   /**
     * An AWS account ID of the account that was not processed.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.undefined
   
   /**
     * The reason that the account was not processed.
     */
-  var ProcessingResult: js.UndefOr[NonEmptyString] = js.native
+  var ProcessingResult: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Result {
   

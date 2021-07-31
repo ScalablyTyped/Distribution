@@ -1,0 +1,15 @@
+package typings.wixUiCore
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object filterDataPropsMod {
+  
+  @JSImport("wix-ui-core/dist/src/utils/filter-data-props", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterDataProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("filterDataProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+}

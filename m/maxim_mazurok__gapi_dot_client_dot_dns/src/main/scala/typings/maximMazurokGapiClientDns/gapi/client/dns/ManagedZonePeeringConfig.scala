@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZonePeeringConfig extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The network with which to peer. */
-  var targetNetwork: js.UndefOr[ManagedZonePeeringConfigTargetNetwork] = js.native
+  var targetNetwork: js.UndefOr[ManagedZonePeeringConfigTargetNetwork] = js.undefined
 }
 object ManagedZonePeeringConfig {
   

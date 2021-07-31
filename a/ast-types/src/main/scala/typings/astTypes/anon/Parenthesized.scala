@@ -2,13 +2,11 @@ package typings.astTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parenthesized extends StObject {
   
-  var parenthesized: Boolean = js.native
+  var parenthesized: Boolean
 }
 object Parenthesized {
   

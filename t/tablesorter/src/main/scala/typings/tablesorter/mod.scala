@@ -39,7 +39,6 @@ import typings.tablesorter.tablesorterStrings.updateRows
 import typings.tablesorter.triggerCallbackHandlerMod.TriggerCallbackHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,18 +50,17 @@ object mod {
   
   object global {
     
-    @js.native
     trait HTMLElement extends StObject {
       
       /**
         * The configuration of the tablesorter.
         */
-      var config: TablesorterConfigurationStore[this.type] = js.native
+      var config: TablesorterConfigurationStore[this.type]
       
       /**
         * A value indicating whether the tablesorter has initialized.
         */
-      var hasInitialized: Boolean = js.native
+      var hasInitialized: Boolean
     }
     object HTMLElement {
       
@@ -187,13 +185,12 @@ object mod {
       ): this.type = js.native
     }
     
-    @js.native
     trait JQueryStatic[TElement] extends StObject {
       
       /**
         * The tablesorter.
         */
-      var tablesorter: Tablesorter[TElement] = js.native
+      var tablesorter: Tablesorter[TElement]
     }
     object JQueryStatic {
       
@@ -204,7 +201,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic[_], TElement] (val x: Self with JQueryStatic[TElement]) extends AnyVal {
+      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic[?], TElement] (val x: Self & JQueryStatic[TElement]) extends AnyVal {
         
         @scala.inline
         def setTablesorter(value: Tablesorter[TElement]): Self = StObject.set(x, "tablesorter", value.asInstanceOf[js.Any])

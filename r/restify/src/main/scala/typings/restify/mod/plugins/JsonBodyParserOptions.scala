@@ -2,19 +2,17 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonBodyParserOptions extends StObject {
   
-  var bodyReader: js.UndefOr[Boolean] = js.native
+  var bodyReader: js.UndefOr[Boolean] = js.undefined
   
-  var mapParams: js.UndefOr[Boolean] = js.native
+  var mapParams: js.UndefOr[Boolean] = js.undefined
   
-  var overrideParams: js.UndefOr[Boolean] = js.native
+  var overrideParams: js.UndefOr[Boolean] = js.undefined
   
-  var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, _]] = js.native
+  var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]] = js.undefined
 }
 object JsonBodyParserOptions {
   
@@ -46,7 +44,7 @@ object JsonBodyParserOptions {
     def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
     @scala.inline
-    def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => _): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+    def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
     
     @scala.inline
     def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)

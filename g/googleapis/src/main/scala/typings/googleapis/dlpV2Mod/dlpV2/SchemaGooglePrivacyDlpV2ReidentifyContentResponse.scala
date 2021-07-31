@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results of re-identifying a item.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ReidentifyContentResponse extends StObject {
   
   /**
     * The re-identified item.
     */
-  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.undefined
   
   /**
     * An overview of the changes that were made to the `item`.
     */
-  var overview: js.UndefOr[SchemaGooglePrivacyDlpV2TransformationOverview] = js.native
+  var overview: js.UndefOr[SchemaGooglePrivacyDlpV2TransformationOverview] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ReidentifyContentResponse {
   

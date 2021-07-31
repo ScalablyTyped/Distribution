@@ -3,27 +3,25 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.createSubflow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Links extends StObject {
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var nodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflow: js.Object = js.native
+  var subflow: js.Object
   
-  var t: createSubflow = js.native
+  var t: createSubflow
 }
 object Links {
   
   @scala.inline
-  def apply(subflow: js.Object, t: createSubflow): Links = {
-    val __obj = js.Dynamic.literal(subflow = subflow.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+  def apply(subflow: js.Object): Links = {
+    val __obj = js.Dynamic.literal(subflow = subflow.asInstanceOf[js.Any], t = "createSubflow")
     __obj.asInstanceOf[Links]
   }
   

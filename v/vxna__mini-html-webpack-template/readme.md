@@ -12,7 +12,7 @@ Minimum viable template for mini-html-webpack-plugin
 | Keywords           | webpack, mini-html-webpack-plugin |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 5155985 |
+| # downloads        | 5418274 |
 | # stars            | 0 |
 
 ## Links

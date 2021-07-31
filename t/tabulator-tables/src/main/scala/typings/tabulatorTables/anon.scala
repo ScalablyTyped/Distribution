@@ -50,124 +50,122 @@ import typings.tabulatorTables.tabulatorTablesStrings.string
 import typings.tabulatorTables.tabulatorTablesStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<tabulator-tables.Tabulator.ColumnDefinition> */
-  @js.native
   trait PartialColumnDefinition extends StObject {
     
-    var accessor: js.UndefOr[CustomAccessor] = js.native
+    var accessor: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorClipboard: js.UndefOr[CustomAccessor] = js.native
+    var accessorClipboard: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorClipboardParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorClipboardParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var accessorDownload: js.UndefOr[CustomAccessor] = js.native
+    var accessorDownload: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorDownloadParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorDownloadParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var accessorHtmlOutput: js.UndefOr[CustomAccessor] = js.native
+    var accessorHtmlOutput: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorHtmlOutputParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorHtmlOutputParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var accessorParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var accessorPrint: js.UndefOr[CustomAccessor] = js.native
+    var accessorPrint: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorPrintParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorPrintParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var bottomCalc: js.UndefOr[ColumnCalc] = js.native
+    var bottomCalc: js.UndefOr[ColumnCalc] = js.undefined
     
-    var bottomCalcFormatter: js.UndefOr[Formatter] = js.native
+    var bottomCalcFormatter: js.UndefOr[Formatter] = js.undefined
     
-    var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.native
+    var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
     
-    var cellClick: js.UndefOr[CellEventCallback] = js.native
+    var cellClick: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellContext: js.UndefOr[CellEventCallback] = js.native
+    var cellContext: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellDblClick: js.UndefOr[CellEventCallback] = js.native
+    var cellDblClick: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellDblTap: js.UndefOr[CellEventCallback] = js.native
+    var cellDblTap: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellEdited: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEdited: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellEditing: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseMove: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseMove: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseOut: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOut: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseOver: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellTap: js.UndefOr[CellEventCallback] = js.native
+    var cellTap: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellTapHold: js.UndefOr[CellEventCallback] = js.native
+    var cellTapHold: js.UndefOr[CellEventCallback] = js.undefined
     
-    var clickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.native
+    var clickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
-    var clipboard: js.UndefOr[Boolean] = js.native
+    var clipboard: js.UndefOr[Boolean] = js.undefined
     
-    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
     
-    var contextMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.native
+    var contextMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
-    var download: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.native
+    var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.undefined
     
-    var editableTitle: js.UndefOr[Boolean] = js.native
+    var editableTitle: js.UndefOr[Boolean] = js.undefined
     
-    var editor: js.UndefOr[Editor] = js.native
+    var editor: js.UndefOr[Editor] = js.undefined
     
-    var editorParams: js.UndefOr[EditorParams] = js.native
+    var editorParams: js.UndefOr[EditorParams] = js.undefined
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[Formatter] = js.native
+    var formatter: js.UndefOr[Formatter] = js.undefined
     
-    var formatterClipboard: js.UndefOr[Formatter | `false`] = js.native
+    var formatterClipboard: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterClipboardParams: js.UndefOr[FormatterParams] = js.native
+    var formatterClipboardParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var formatterHtmlOutput: js.UndefOr[Formatter | `false`] = js.native
+    var formatterHtmlOutput: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterHtmlOutputParams: js.UndefOr[FormatterParams] = js.native
+    var formatterHtmlOutputParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var formatterParams: js.UndefOr[FormatterParams] = js.native
+    var formatterParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var formatterPrint: js.UndefOr[Formatter | `false`] = js.native
+    var formatterPrint: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterPrintParams: js.UndefOr[FormatterParams] = js.native
+    var formatterPrintParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var frozen: js.UndefOr[Boolean] = js.native
+    var frozen: js.UndefOr[Boolean] = js.undefined
     
-    var headerClick: js.UndefOr[ColumnEventCallback] = js.native
+    var headerClick: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerContext: js.UndefOr[ColumnEventCallback] = js.native
+    var headerContext: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerContextMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.native
+    var headerContextMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
     
-    var headerDblClick: js.UndefOr[ColumnEventCallback] = js.native
+    var headerDblClick: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerDblTap: js.UndefOr[ColumnEventCallback] = js.native
+    var headerDblTap: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerFilter: js.UndefOr[Editor] = js.native
+    var headerFilter: js.UndefOr[Editor] = js.undefined
     
-    var headerFilterEmptyCheck: js.UndefOr[ValueBooleanCallback] = js.native
+    var headerFilterEmptyCheck: js.UndefOr[ValueBooleanCallback] = js.undefined
     
     var headerFilterFunc: js.UndefOr[
         FilterType | (js.Function4[
@@ -177,63 +175,63 @@ object anon {
           /* filterparams */ js.Any, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var headerFilterFuncParams: js.UndefOr[js.Any] = js.native
+    var headerFilterFuncParams: js.UndefOr[js.Any] = js.undefined
     
-    var headerFilterLiveFilter: js.UndefOr[Boolean] = js.native
+    var headerFilterLiveFilter: js.UndefOr[Boolean] = js.undefined
     
-    var headerFilterParams: js.UndefOr[EditorParams] = js.native
+    var headerFilterParams: js.UndefOr[EditorParams] = js.undefined
     
-    var headerFilterPlaceholder: js.UndefOr[String] = js.native
+    var headerFilterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
-    var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.native
+    var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
     
-    var headerSort: js.UndefOr[Boolean] = js.native
+    var headerSort: js.UndefOr[Boolean] = js.undefined
     
-    var headerSortStartingDir: js.UndefOr[SortDirection] = js.native
+    var headerSortStartingDir: js.UndefOr[SortDirection] = js.undefined
     
-    var headerSortTristate: js.UndefOr[Boolean] = js.native
+    var headerSortTristate: js.UndefOr[Boolean] = js.undefined
     
-    var headerTap: js.UndefOr[ColumnEventCallback] = js.native
+    var headerTap: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerTapHold: js.UndefOr[ColumnEventCallback] = js.native
+    var headerTapHold: js.UndefOr[ColumnEventCallback] = js.undefined
     
-    var headerTooltip: js.UndefOr[Boolean | String | (js.Function1[/* column */ ColumnComponent, String])] = js.native
+    var headerTooltip: js.UndefOr[Boolean | String | (js.Function1[/* column */ ColumnComponent, String])] = js.undefined
     
-    var headerVertical: js.UndefOr[Boolean | flip] = js.native
+    var headerVertical: js.UndefOr[Boolean | flip] = js.undefined
     
-    var hideInHtml: js.UndefOr[Boolean] = js.native
+    var hideInHtml: js.UndefOr[Boolean] = js.undefined
     
-    var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
-    var htmlOutput: js.UndefOr[Boolean] = js.native
+    var htmlOutput: js.UndefOr[Boolean] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var mutator: js.UndefOr[CustomMutator] = js.native
+    var mutator: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorClipboard: js.UndefOr[CustomMutator] = js.native
+    var mutatorClipboard: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorClipboardParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorClipboardParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
-    var mutatorData: js.UndefOr[CustomMutator] = js.native
+    var mutatorData: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorDataParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorDataParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
-    var mutatorEdit: js.UndefOr[CustomMutator] = js.native
+    var mutatorEdit: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorEditParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorEditParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
-    var mutatorParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[Double] = js.native
+    var responsive: js.UndefOr[Double] = js.undefined
     
-    var rowHandle: js.UndefOr[Boolean] = js.native
+    var rowHandle: js.UndefOr[Boolean] = js.undefined
     
     var sorter: js.UndefOr[
         string | number | alphanum | boolean | exists | date | time | datetime | array | (js.Function7[
@@ -246,49 +244,49 @@ object anon {
           /* sorterParams */ js.Object, 
           Double
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var sorterParams: js.UndefOr[ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction] = js.native
+    var sorterParams: js.UndefOr[ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleClipboard: js.UndefOr[String] = js.native
+    var titleClipboard: js.UndefOr[String] = js.undefined
     
-    var titleDownload: js.UndefOr[String] = js.native
+    var titleDownload: js.UndefOr[String] = js.undefined
     
-    var titleFormatter: js.UndefOr[Formatter] = js.native
+    var titleFormatter: js.UndefOr[Formatter] = js.undefined
     
-    var titleFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var titleFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var titleHtmlOutput: js.UndefOr[String] = js.native
+    var titleHtmlOutput: js.UndefOr[String] = js.undefined
     
-    var titlePrint: js.UndefOr[String] = js.native
+    var titlePrint: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[String | GlobalTooltipOption] = js.native
+    var tooltip: js.UndefOr[String | GlobalTooltipOption] = js.undefined
     
-    var topCalc: js.UndefOr[ColumnCalc] = js.native
+    var topCalc: js.UndefOr[ColumnCalc] = js.undefined
     
-    var topCalcFormatter: js.UndefOr[Formatter] = js.native
+    var topCalcFormatter: js.UndefOr[Formatter] = js.undefined
     
-    var topCalcFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var topCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var topCalcParams: js.UndefOr[ColumnCalcParams] = js.native
+    var topCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
     
     var validator: js.UndefOr[
         StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator | String
-      ] = js.native
+      ] = js.undefined
     
-    var variableHeight: js.UndefOr[Boolean] = js.native
+    var variableHeight: js.UndefOr[Boolean] = js.undefined
     
-    var vertAlign: js.UndefOr[VerticalAlign] = js.native
+    var vertAlign: js.UndefOr[VerticalAlign] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var widthGrow: js.UndefOr[Double] = js.native
+    var widthGrow: js.UndefOr[Double] = js.undefined
     
-    var widthShrink: js.UndefOr[Double] = js.native
+    var widthShrink: js.UndefOr[Double] = js.undefined
   }
   object PartialColumnDefinition {
     
@@ -1138,12 +1136,11 @@ object anon {
   }
   
   /* Inlined std.Pick<tabulator-tables.Tabulator.Filter, 'field' | 'value'> */
-  @js.native
   trait PickFilterfieldvalue extends StObject {
     
-    var field: String = js.native
+    var field: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PickFilterfieldvalue {
     

@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object CreateObjectAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateObjectAction.create")
-  @js.native
-  def create(model: IModel): CreateObjectAction = js.native
+  @scala.inline
+  def create(model: IModel): CreateObjectAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CreateObjectAction]
   
   /**
     * Creates and returns a new CreateObjectAction instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object CreateObjectAction {
     * of the parent ActionActivity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateObjectAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): CreateObjectAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): CreateObjectAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateObjectAction.structureTypeName")

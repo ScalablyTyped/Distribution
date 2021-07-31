@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Sendas$Smimeinfo")
@@ -33,7 +32,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasSmimeinfoDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasSmimeinfoDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaSmimeInfo]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(params: ParamsResourceUsersSettingsSendasSmimeinfoGet): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(
     params: ParamsResourceUsersSettingsSendasSmimeinfoGet,
@@ -99,7 +98,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(callback: BodyResponseCallback[SchemaSmimeInfo]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(params: ParamsResourceUsersSettingsSendasSmimeinfoInsert): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(
     params: ParamsResourceUsersSettingsSendasSmimeinfoInsert,
@@ -132,7 +131,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSmimeInfoResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(params: ParamsResourceUsersSettingsSendasSmimeinfoList): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsSendasSmimeinfoList,
@@ -166,7 +165,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends StObject {
     */
   def setDefault(): GaxiosPromise[Unit] = js.native
   def setDefault(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def setDefault(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def setDefault(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def setDefault(params: ParamsResourceUsersSettingsSendasSmimeinfoSetdefault): GaxiosPromise[Unit] = js.native
   def setDefault(params: ParamsResourceUsersSettingsSendasSmimeinfoSetdefault, callback: BodyResponseCallback[Unit]): Unit = js.native
   def setDefault(

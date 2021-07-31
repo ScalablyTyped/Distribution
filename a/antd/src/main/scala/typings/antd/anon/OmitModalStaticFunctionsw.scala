@@ -4,22 +4,20 @@ import typings.antd.confirmMod.ModalFunc
 import typings.antd.modalModalMod.ModalFuncProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<antd.antd/lib/modal/confirm.ModalStaticFunctions, 'warn'> */
-@js.native
 trait OmitModalStaticFunctionsw extends StObject {
   
-  var confirm: ModalFunc = js.native
+  var confirm: ModalFunc
   
-  var error: ModalFunc = js.native
+  var error: ModalFunc
   
-  var info: ModalFunc = js.native
+  var info: ModalFunc
   
-  var success: ModalFunc = js.native
+  var success: ModalFunc
   
-  var warning: ModalFunc = js.native
+  var warning: ModalFunc
 }
 object OmitModalStaticFunctionsw {
   

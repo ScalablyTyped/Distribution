@@ -3,7 +3,6 @@ package typings.gettextJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,16 +42,15 @@ object mod {
     def textdomain(domain: String): Gettext | String = js.native
   }
   
-  @js.native
   trait GettextOptions extends StObject {
     
-    var ctxt_delimiter: js.UndefOr[String] = js.native
+    var ctxt_delimiter: js.UndefOr[String] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var plural_func: js.UndefOr[PluralForm] = js.native
+    var plural_func: js.UndefOr[PluralForm] = js.undefined
   }
   object GettextOptions {
     
@@ -93,11 +91,12 @@ object mod {
   
   type GettextStatic = js.Function1[/* options */ js.UndefOr[GettextOptions], Gettext]
   
-  @js.native
-  trait JsonData extends JsonDataMessages {
+  trait JsonData
+    extends StObject
+       with JsonDataMessages {
     
     @JSName("")
-    var _empty: JsonDataHeader = js.native
+    var _empty: JsonDataHeader
   }
   object JsonData {
     
@@ -116,12 +115,11 @@ object mod {
     }
   }
   
-  @js.native
   trait JsonDataHeader extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var `plural-forms`: String = js.native
+    var `plural-forms`: String
   }
   object JsonDataHeader {
     

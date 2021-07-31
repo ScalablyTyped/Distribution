@@ -2,73 +2,71 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckToken extends StObject {
   
-  var addRepoToInstallation: `620` = js.native
+  var addRepoToInstallation: `620`
   
-  var checkToken: `621` = js.native
+  var checkToken: `621`
   
-  var createContentAttachment: `622` = js.native
+  var createContentAttachment: `622`
   
-  var createFromManifest: `623` = js.native
+  var createFromManifest: `623`
   
-  var createInstallationAccessToken: `624` = js.native
+  var createInstallationAccessToken: `624`
   
-  var deleteAuthorization: `625` = js.native
+  var deleteAuthorization: `625`
   
-  var deleteInstallation: `626` = js.native
+  var deleteInstallation: `626`
   
-  var deleteToken: `627` = js.native
+  var deleteToken: `627`
   
-  var getAuthenticated: `628` = js.native
+  var getAuthenticated: `628`
   
-  var getBySlug: `629` = js.native
+  var getBySlug: `629`
   
-  var getInstallation: `630` = js.native
+  var getInstallation: `630`
   
-  var getOrgInstallation: `631` = js.native
+  var getOrgInstallation: `631`
   
-  var getRepoInstallation: `632` = js.native
+  var getRepoInstallation: `632`
   
-  var getSubscriptionPlanForAccount: `633` = js.native
+  var getSubscriptionPlanForAccount: `633`
   
-  var getSubscriptionPlanForAccountStubbed: `634` = js.native
+  var getSubscriptionPlanForAccountStubbed: `634`
   
-  var getUserInstallation: `635` = js.native
+  var getUserInstallation: `635`
   
-  var listAccountsForPlan: `636` = js.native
+  var listAccountsForPlan: `636`
   
-  var listAccountsForPlanStubbed: `637` = js.native
+  var listAccountsForPlanStubbed: `637`
   
-  var listInstallationReposForAuthenticatedUser: `638` = js.native
+  var listInstallationReposForAuthenticatedUser: `638`
   
-  var listInstallations: `639` = js.native
+  var listInstallations: `639`
   
-  var listInstallationsForAuthenticatedUser: `640` = js.native
+  var listInstallationsForAuthenticatedUser: `640`
   
-  var listPlans: `641` = js.native
+  var listPlans: `641`
   
-  var listPlansStubbed: `642` = js.native
+  var listPlansStubbed: `642`
   
-  var listReposAccessibleToInstallation: `643` = js.native
+  var listReposAccessibleToInstallation: `643`
   
-  var listSubscriptionsForAuthenticatedUser: `644` = js.native
+  var listSubscriptionsForAuthenticatedUser: `644`
   
-  var listSubscriptionsForAuthenticatedUserStubbed: `645` = js.native
+  var listSubscriptionsForAuthenticatedUserStubbed: `645`
   
-  var removeRepoFromInstallation: `646` = js.native
+  var removeRepoFromInstallation: `646`
   
-  var resetToken: `647` = js.native
+  var resetToken: `647`
   
-  var revokeInstallationAccessToken: `648` = js.native
+  var revokeInstallationAccessToken: `648`
   
-  var suspendInstallation: `649` = js.native
+  var suspendInstallation: `649`
   
-  var unsuspendInstallation: `650` = js.native
+  var unsuspendInstallation: `650`
 }
 object CheckToken {
   

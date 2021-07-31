@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientArea120tables.maximMazurokGapiClientArea120
 import typings.maximMazurokGapiClientArea120tables.maximMazurokGapiClientArea120tablesStrings.v1alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -14,6 +13,10 @@ object global {
   object gapi {
     
     object client {
+      
+      @JSGlobal("gapi.client")
+      @js.native
+      val ^ : js.Any = js.native
       
       object area120tables {
         
@@ -27,12 +30,10 @@ object global {
       }
       
       /** Load Area120 Tables API v1alpha1 */
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: area120tables, version: v1alpha1): js.Thenable[Unit] = js.native
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: area120tables, version: v1alpha1, callback: js.Function0[_]): Unit = js.native
+      @scala.inline
+      def load(name: area120tables, version: v1alpha1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      @scala.inline
+      def load(name: area120tables, version: v1alpha1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

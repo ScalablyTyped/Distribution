@@ -3,79 +3,77 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointStatesHoverOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) Animation when hovering over the marker.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock) Enable or disable the point marker.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The fill color of the marker in hover state. When
     * `undefined`, the series' or point's fillColor for normal state is used.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the marker's fixed height on hover state.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The number of pixels to increase the height of
     * the hovered point.
     */
-  var heightPlus: js.UndefOr[Double] = js.native
+  var heightPlus: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's lineColor for normal state is used.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The width of the point marker's outline. When
     * `undefined`, the series' or point's lineWidth for normal state is used.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The additional line width for a hovered point.
     */
-  var lineWidthPlus: js.UndefOr[Double] = js.native
+  var lineWidthPlus: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The radius of the point marker. In hover state,
     * it defaults to the normal state's radius + 2 as per the radiusPlus
     * option.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The number of pixels to increase the radius of
     * the hovered point.
     */
-  var radiusPlus: js.UndefOr[Double] = js.native
+  var radiusPlus: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the marker's fixed width on hover state.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The number of pixels to increase the width of the
     * hovered point.
     */
-  var widthPlus: js.UndefOr[Double] = js.native
+  var widthPlus: js.UndefOr[Double] = js.undefined
 }
 object PointStatesHoverOptionsObject {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextSnippet extends StObject {
   
   /** A text snippet containing the search query. */
-  var textSnippet: js.UndefOr[String] = js.native
+  var textSnippet: js.UndefOr[String] = js.undefined
 }
 object TextSnippet {
   

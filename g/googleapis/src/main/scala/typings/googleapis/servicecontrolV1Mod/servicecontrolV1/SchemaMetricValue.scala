@@ -3,52 +3,50 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single metric value.
   */
-@js.native
 trait SchemaMetricValue extends StObject {
   
   /**
     * A boolean value.
     */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A distribution value.
     */
-  var distributionValue: js.UndefOr[SchemaDistribution] = js.native
+  var distributionValue: js.UndefOr[SchemaDistribution] = js.undefined
   
   /**
     * A double precision floating point value.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The end of the time period over which this metric value&#39;s measurement
     * applies.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * A signed 64-bit integer value.
     */
-  var int64Value: js.UndefOr[String] = js.native
+  var int64Value: js.UndefOr[String] = js.undefined
   
   /**
     * The labels describing the metric value. See comments on
     * google.api.servicecontrol.v1.Operation.labels for the overriding
     * relationship.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A money value.
     */
-  var moneyValue: js.UndefOr[SchemaMoney] = js.native
+  var moneyValue: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * The start of the time period over which this metric value&#39;s
@@ -56,12 +54,12 @@ trait SchemaMetricValue extends StObject {
     * different metric types (cumulative, delta, and gauge). See the metric
     * definition documentation in the service configuration for details.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * A text string value.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricValue {
   

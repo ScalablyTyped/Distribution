@@ -2,18 +2,17 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewImageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 当当前显示图片索引，默认 0 */
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
   /** 要预览的图片链接列表 */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object PreviewImageOptions {
   

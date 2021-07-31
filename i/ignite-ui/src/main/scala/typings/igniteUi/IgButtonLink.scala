@@ -3,21 +3,20 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgButtonLink
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var href: js.UndefOr[js.Any] = js.native
+  var href: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[js.Any] = js.undefined
 }
 object IgButtonLink {
   

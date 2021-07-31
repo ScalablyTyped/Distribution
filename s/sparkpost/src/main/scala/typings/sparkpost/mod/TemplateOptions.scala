@@ -2,20 +2,18 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateOptions extends StObject {
   
   /** Enable or disable click tracking */
-  var click_tracking: Boolean = js.native
+  var click_tracking: Boolean
   
   /** Enable or disable open tracking */
-  var open_tracking: Boolean = js.native
+  var open_tracking: Boolean
   
   /** Distinguish between transactional and non-transactional messages for unsubscribe and suppression purposes */
-  var transactional: Boolean = js.native
+  var transactional: Boolean
 }
 object TemplateOptions {
   

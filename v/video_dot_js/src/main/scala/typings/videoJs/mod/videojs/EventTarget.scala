@@ -6,7 +6,6 @@ import typings.std.Event
 import typings.videoJs.mod.videojs.EventTarget.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -130,7 +129,8 @@ object EventTarget {
     */
   @js.native
   trait Event
-    extends CustomEvent[js.Any]
+    extends StObject
+       with CustomEvent[js.Any]
        with /* key */ StringDictionary[js.Any]
   
   /**

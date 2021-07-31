@@ -3,77 +3,68 @@ package typings.qixianCsPathToRegexp
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@qixian.cs/path-to-regexp", "compile")
+  @JSImport("@qixian.cs/path-to-regexp", JSImport.Namespace)
   @js.native
-  def compile[P /* <: js.Object */](str: String): PathFunction[P] = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "compile")
-  @js.native
-  def compile[P /* <: js.Object */](str: String, options: ParseOptions with TokensToFunctionOptions): PathFunction[P] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@qixian.cs/path-to-regexp", "parse")
-  @js.native
-  def parse(str: String): js.Array[Token] = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "parse")
-  @js.native
-  def parse(str: String, options: ParseOptions): js.Array[Token] = js.native
+  @scala.inline
+  def compile[P /* <: js.Object */](str: String): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
+  @scala.inline
+  def compile[P /* <: js.Object */](str: String, options: ParseOptions & TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
   
-  @JSImport("@qixian.cs/path-to-regexp", "pathToRegexp")
-  @js.native
-  def pathToRegexp(path: Path): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "pathToRegexp")
-  @js.native
-  def pathToRegexp(path: Path, keys: js.UndefOr[scala.Nothing], options: TokensToRegexpOptions with ParseOptions): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "pathToRegexp")
-  @js.native
-  def pathToRegexp(path: Path, keys: js.Array[Key]): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "pathToRegexp")
-  @js.native
-  def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions with ParseOptions): RegExp = js.native
+  @scala.inline
+  def `match`[P /* <: js.Object */](str: Path): MatchFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any]).asInstanceOf[MatchFunction[P]]
+  @scala.inline
+  def `match`[P /* <: js.Object */](str: Path, options: ParseOptions & TokensToRegexpOptions & RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
   
-  @JSImport("@qixian.cs/path-to-regexp", "regexpToFunction")
-  @js.native
-  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key]): MatchFunction[P] = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "regexpToFunction")
-  @js.native
-  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = js.native
+  @scala.inline
+  def parse(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def parse(str: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToFunction")
-  @js.native
-  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token]): PathFunction[P] = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToFunction")
-  @js.native
-  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token], options: TokensToFunctionOptions): PathFunction[P] = js.native
+  @scala.inline
+  def pathToRegexp(path: Path): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  @scala.inline
+  def pathToRegexp(path: Path, keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  @scala.inline
+  def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  @scala.inline
+  def pathToRegexp(path: Path, keys: Unit, options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToRegexp")
-  @js.native
-  def tokensToRegexp(tokens: js.Array[Token]): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToRegexp")
-  @js.native
-  def tokensToRegexp(tokens: js.Array[Token], keys: js.UndefOr[scala.Nothing], options: TokensToRegexpOptions): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToRegexp")
-  @js.native
-  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): RegExp = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "tokensToRegexp")
-  @js.native
-  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): RegExp = js.native
+  @scala.inline
+  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key]): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  @scala.inline
+  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
   
-  @js.native
+  @scala.inline
+  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token]): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
+  @scala.inline
+  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token], options: TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
+  
+  @scala.inline
+  def tokensToRegexp(tokens: js.Array[Token]): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  @scala.inline
+  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  @scala.inline
+  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  @scala.inline
+  def tokensToRegexp(tokens: js.Array[Token], keys: Unit, options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  
   trait Key extends StObject {
     
-    var modifier: String = js.native
+    var modifier: String
     
-    var name: String | Double = js.native
+    var name: String | Double
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object Key {
     
@@ -105,14 +96,15 @@ object mod {
   
   type MatchFunction[P /* <: js.Object */] = js.Function1[/* path */ String, Match_[P]]
   
-  @js.native
-  trait MatchResult[P /* <: js.Object */] extends Match_[P] {
+  trait MatchResult[P /* <: js.Object */]
+    extends StObject
+       with Match_[P] {
     
-    var index: Double = js.native
+    var index: Double
     
-    var params: P = js.native
+    var params: P
     
-    var path: String = js.native
+    var path: String
   }
   object MatchResult {
     
@@ -123,7 +115,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MatchResultMutableBuilder[Self <: MatchResult[_], P /* <: js.Object */] (val x: Self with MatchResult[P]) extends AnyVal {
+    implicit class MatchResultMutableBuilder[Self <: MatchResult[?], P /* <: js.Object */] (val x: Self & MatchResult[P]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -142,18 +134,17 @@ object mod {
   */
   trait Match_[P /* <: js.Object */] extends StObject
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * Set the default delimiter for repeat parameters. (default: `'/'`)
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * List of characters to automatically consider prefixes when parsing.
       */
-    var prefixes: js.UndefOr[String] = js.native
+    var prefixes: js.UndefOr[String] = js.undefined
   }
   object ParseOptions {
     
@@ -184,13 +175,12 @@ object mod {
   
   type PathFunction[P /* <: js.Object */] = js.Function1[/* data */ js.UndefOr[P], String]
   
-  @js.native
   trait RegexpToFunctionOptions extends StObject {
     
     /**
       * Function for decoding strings for params.
       */
-    var decode: js.UndefOr[js.Function2[/* value */ String, /* token */ Key, String]] = js.native
+    var decode: js.UndefOr[js.Function2[/* value */ String, /* token */ Key, String]] = js.undefined
   }
   object RegexpToFunctionOptions {
     
@@ -213,23 +203,22 @@ object mod {
   
   type Token = String | Key
   
-  @js.native
   trait TokensToFunctionOptions extends StObject {
     
     /**
       * Function for encoding input strings for output.
       */
-    var encode: js.UndefOr[js.Function2[/* value */ String, /* token */ Key, String]] = js.native
+    var encode: js.UndefOr[js.Function2[/* value */ String, /* token */ Key, String]] = js.undefined
     
     /**
       * When `true` the regexp will be case sensitive. (default: `false`)
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `false` the function can produce an invalid (unmatched) path. (default: `true`)
       */
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object TokensToFunctionOptions {
     
@@ -262,43 +251,42 @@ object mod {
     }
   }
   
-  @js.native
   trait TokensToRegexpOptions extends StObject {
     
     /**
       * Sets the final character for non-ending optimistic matches. (default: `/`)
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Encode path tokens for use in the `RegExp`.
       */
-    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
     /**
       * When `true` the regexp will match to the end of the string. (default: `true`)
       */
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of characters that can also be "end" characters.
       */
-    var endsWith: js.UndefOr[String] = js.native
+    var endsWith: js.UndefOr[String] = js.undefined
     
     /**
       * When `true` the regexp will be case sensitive. (default: `false`)
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` the regexp will match from the beginning of the string. (default: `true`)
       */
-    var start: js.UndefOr[Boolean] = js.native
+    var start: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` the regexp allows an optional trailing delimiter to match. (default: `false`)
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object TokensToRegexpOptions {
     
@@ -354,11 +342,4 @@ object mod {
       def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
-  
-  @JSImport("@qixian.cs/path-to-regexp", "match")
-  @js.native
-  def `match`[P /* <: js.Object */](str: Path): MatchFunction[P] = js.native
-  @JSImport("@qixian.cs/path-to-regexp", "match")
-  @js.native
-  def `match`[P /* <: js.Object */](str: Path, options: ParseOptions with TokensToRegexpOptions with RegexpToFunctionOptions): MatchFunction[P] = js.native
 }

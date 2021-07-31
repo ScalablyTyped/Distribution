@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckBox extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Default: Boolean = js.native
+  var Default: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Size: Double = js.native
+  var Size: Double
   
-  val Valid: Boolean = js.native
+  val Valid: Boolean
   
-  var Value: Boolean = js.native
+  var Value: Boolean
   
   @JSName("Word.CheckBox_typekey")
-  var WordDotCheckBox_typekey: CheckBox = js.native
+  var WordDotCheckBox_typekey: CheckBox
 }
 object CheckBox {
   

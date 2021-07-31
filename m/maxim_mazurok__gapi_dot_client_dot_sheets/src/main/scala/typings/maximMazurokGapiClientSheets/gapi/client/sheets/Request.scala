@@ -2,203 +2,201 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /** Adds a new banded range */
-  var addBanding: js.UndefOr[AddBandingRequest] = js.native
+  var addBanding: js.UndefOr[AddBandingRequest] = js.undefined
   
   /** Adds a chart. */
-  var addChart: js.UndefOr[AddChartRequest] = js.native
+  var addChart: js.UndefOr[AddChartRequest] = js.undefined
   
   /** Adds a new conditional format rule. */
-  var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.native
+  var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.undefined
   
   /** Adds a data source. */
-  var addDataSource: js.UndefOr[AddDataSourceRequest] = js.native
+  var addDataSource: js.UndefOr[AddDataSourceRequest] = js.undefined
   
   /** Creates a group over the specified range. */
-  var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.native
+  var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.undefined
   
   /** Adds a filter view. */
-  var addFilterView: js.UndefOr[AddFilterViewRequest] = js.native
+  var addFilterView: js.UndefOr[AddFilterViewRequest] = js.undefined
   
   /** Adds a named range. */
-  var addNamedRange: js.UndefOr[AddNamedRangeRequest] = js.native
+  var addNamedRange: js.UndefOr[AddNamedRangeRequest] = js.undefined
   
   /** Adds a protected range. */
-  var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.native
+  var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.undefined
   
   /** Adds a sheet. */
-  var addSheet: js.UndefOr[AddSheetRequest] = js.native
+  var addSheet: js.UndefOr[AddSheetRequest] = js.undefined
   
   /** Adds a slicer. */
-  var addSlicer: js.UndefOr[AddSlicerRequest] = js.native
+  var addSlicer: js.UndefOr[AddSlicerRequest] = js.undefined
   
   /** Appends cells after the last row with data in a sheet. */
-  var appendCells: js.UndefOr[AppendCellsRequest] = js.native
+  var appendCells: js.UndefOr[AppendCellsRequest] = js.undefined
   
   /** Appends dimensions to the end of a sheet. */
-  var appendDimension: js.UndefOr[AppendDimensionRequest] = js.native
+  var appendDimension: js.UndefOr[AppendDimensionRequest] = js.undefined
   
   /** Automatically fills in more data based on existing data. */
-  var autoFill: js.UndefOr[AutoFillRequest] = js.native
+  var autoFill: js.UndefOr[AutoFillRequest] = js.undefined
   
   /** Automatically resizes one or more dimensions based on the contents of the cells in that dimension. */
-  var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.native
+  var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.undefined
   
   /** Clears the basic filter on a sheet. */
-  var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.native
+  var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.undefined
   
   /** Copies data from one area and pastes it to another. */
-  var copyPaste: js.UndefOr[CopyPasteRequest] = js.native
+  var copyPaste: js.UndefOr[CopyPasteRequest] = js.undefined
   
   /** Creates new developer metadata */
-  var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataRequest] = js.native
+  var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataRequest] = js.undefined
   
   /** Cuts data from one area and pastes it to another. */
-  var cutPaste: js.UndefOr[CutPasteRequest] = js.native
+  var cutPaste: js.UndefOr[CutPasteRequest] = js.undefined
   
   /** Removes a banded range */
-  var deleteBanding: js.UndefOr[DeleteBandingRequest] = js.native
+  var deleteBanding: js.UndefOr[DeleteBandingRequest] = js.undefined
   
   /** Deletes an existing conditional format rule. */
-  var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleRequest] = js.native
+  var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleRequest] = js.undefined
   
   /** Deletes a data source. */
-  var deleteDataSource: js.UndefOr[DeleteDataSourceRequest] = js.native
+  var deleteDataSource: js.UndefOr[DeleteDataSourceRequest] = js.undefined
   
   /** Deletes developer metadata */
-  var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.native
+  var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.undefined
   
   /** Deletes rows or columns in a sheet. */
-  var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.native
+  var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.undefined
   
   /** Deletes a group over the specified range. */
-  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.native
+  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.undefined
   
   /** Removes rows containing duplicate values in specified columns of a cell range. */
-  var deleteDuplicates: js.UndefOr[DeleteDuplicatesRequest] = js.native
+  var deleteDuplicates: js.UndefOr[DeleteDuplicatesRequest] = js.undefined
   
   /** Deletes an embedded object (e.g, chart, image) in a sheet. */
-  var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.native
+  var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.undefined
   
   /** Deletes a filter view from a sheet. */
-  var deleteFilterView: js.UndefOr[DeleteFilterViewRequest] = js.native
+  var deleteFilterView: js.UndefOr[DeleteFilterViewRequest] = js.undefined
   
   /** Deletes a named range. */
-  var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.native
+  var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.undefined
   
   /** Deletes a protected range. */
-  var deleteProtectedRange: js.UndefOr[DeleteProtectedRangeRequest] = js.native
+  var deleteProtectedRange: js.UndefOr[DeleteProtectedRangeRequest] = js.undefined
   
   /** Deletes a range of cells from a sheet, shifting the remaining cells. */
-  var deleteRange: js.UndefOr[DeleteRangeRequest] = js.native
+  var deleteRange: js.UndefOr[DeleteRangeRequest] = js.undefined
   
   /** Deletes a sheet. */
-  var deleteSheet: js.UndefOr[DeleteSheetRequest] = js.native
+  var deleteSheet: js.UndefOr[DeleteSheetRequest] = js.undefined
   
   /** Duplicates a filter view. */
-  var duplicateFilterView: js.UndefOr[DuplicateFilterViewRequest] = js.native
+  var duplicateFilterView: js.UndefOr[DuplicateFilterViewRequest] = js.undefined
   
   /** Duplicates a sheet. */
-  var duplicateSheet: js.UndefOr[DuplicateSheetRequest] = js.native
+  var duplicateSheet: js.UndefOr[DuplicateSheetRequest] = js.undefined
   
   /** Finds and replaces occurrences of some text with other text. */
-  var findReplace: js.UndefOr[FindReplaceRequest] = js.native
+  var findReplace: js.UndefOr[FindReplaceRequest] = js.undefined
   
   /** Inserts new rows or columns in a sheet. */
-  var insertDimension: js.UndefOr[InsertDimensionRequest] = js.native
+  var insertDimension: js.UndefOr[InsertDimensionRequest] = js.undefined
   
   /** Inserts new cells in a sheet, shifting the existing cells. */
-  var insertRange: js.UndefOr[InsertRangeRequest] = js.native
+  var insertRange: js.UndefOr[InsertRangeRequest] = js.undefined
   
   /** Merges cells together. */
-  var mergeCells: js.UndefOr[MergeCellsRequest] = js.native
+  var mergeCells: js.UndefOr[MergeCellsRequest] = js.undefined
   
   /** Moves rows or columns to another location in a sheet. */
-  var moveDimension: js.UndefOr[MoveDimensionRequest] = js.native
+  var moveDimension: js.UndefOr[MoveDimensionRequest] = js.undefined
   
   /** Pastes data (HTML or delimited) into a sheet. */
-  var pasteData: js.UndefOr[PasteDataRequest] = js.native
+  var pasteData: js.UndefOr[PasteDataRequest] = js.undefined
   
   /** Randomizes the order of the rows in a range. */
-  var randomizeRange: js.UndefOr[RandomizeRangeRequest] = js.native
+  var randomizeRange: js.UndefOr[RandomizeRangeRequest] = js.undefined
   
   /** Refreshs one or multiple data sources and associated dbobjects. */
-  var refreshDataSource: js.UndefOr[RefreshDataSourceRequest] = js.native
+  var refreshDataSource: js.UndefOr[RefreshDataSourceRequest] = js.undefined
   
   /** Repeats a single cell across a range. */
-  var repeatCell: js.UndefOr[RepeatCellRequest] = js.native
+  var repeatCell: js.UndefOr[RepeatCellRequest] = js.undefined
   
   /** Sets the basic filter on a sheet. */
-  var setBasicFilter: js.UndefOr[SetBasicFilterRequest] = js.native
+  var setBasicFilter: js.UndefOr[SetBasicFilterRequest] = js.undefined
   
   /** Sets data validation for one or more cells. */
-  var setDataValidation: js.UndefOr[SetDataValidationRequest] = js.native
+  var setDataValidation: js.UndefOr[SetDataValidationRequest] = js.undefined
   
   /** Sorts data in a range. */
-  var sortRange: js.UndefOr[SortRangeRequest] = js.native
+  var sortRange: js.UndefOr[SortRangeRequest] = js.undefined
   
   /** Converts a column of text into many columns of text. */
-  var textToColumns: js.UndefOr[TextToColumnsRequest] = js.native
+  var textToColumns: js.UndefOr[TextToColumnsRequest] = js.undefined
   
   /** Trims cells of whitespace (such as spaces, tabs, or new lines). */
-  var trimWhitespace: js.UndefOr[TrimWhitespaceRequest] = js.native
+  var trimWhitespace: js.UndefOr[TrimWhitespaceRequest] = js.undefined
   
   /** Unmerges merged cells. */
-  var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.native
+  var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.undefined
   
   /** Updates a banded range */
-  var updateBanding: js.UndefOr[UpdateBandingRequest] = js.native
+  var updateBanding: js.UndefOr[UpdateBandingRequest] = js.undefined
   
   /** Updates the borders in a range of cells. */
-  var updateBorders: js.UndefOr[UpdateBordersRequest] = js.native
+  var updateBorders: js.UndefOr[UpdateBordersRequest] = js.undefined
   
   /** Updates many cells at once. */
-  var updateCells: js.UndefOr[UpdateCellsRequest] = js.native
+  var updateCells: js.UndefOr[UpdateCellsRequest] = js.undefined
   
   /** Updates a chart's specifications. */
-  var updateChartSpec: js.UndefOr[UpdateChartSpecRequest] = js.native
+  var updateChartSpec: js.UndefOr[UpdateChartSpecRequest] = js.undefined
   
   /** Updates an existing conditional format rule. */
-  var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.native
+  var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.undefined
   
   /** Updates a data source. */
-  var updateDataSource: js.UndefOr[UpdateDataSourceRequest] = js.native
+  var updateDataSource: js.UndefOr[UpdateDataSourceRequest] = js.undefined
   
   /** Updates an existing developer metadata entry */
-  var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.native
+  var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.undefined
   
   /** Updates the state of the specified group. */
-  var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.native
+  var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.undefined
   
   /** Updates dimensions' properties. */
-  var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.native
+  var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.undefined
   
   /** Updates an embedded object's (e.g. chart, image) position. */
-  var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.native
+  var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.undefined
   
   /** Updates the properties of a filter view. */
-  var updateFilterView: js.UndefOr[UpdateFilterViewRequest] = js.native
+  var updateFilterView: js.UndefOr[UpdateFilterViewRequest] = js.undefined
   
   /** Updates a named range. */
-  var updateNamedRange: js.UndefOr[UpdateNamedRangeRequest] = js.native
+  var updateNamedRange: js.UndefOr[UpdateNamedRangeRequest] = js.undefined
   
   /** Updates a protected range. */
-  var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.native
+  var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.undefined
   
   /** Updates a sheet's properties. */
-  var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.native
+  var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.undefined
   
   /** Updates a slicer's specifications. */
-  var updateSlicerSpec: js.UndefOr[UpdateSlicerSpecRequest] = js.native
+  var updateSlicerSpec: js.UndefOr[UpdateSlicerSpecRequest] = js.undefined
   
   /** Updates the spreadsheet's properties. */
-  var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.native
+  var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.undefined
 }
 object Request {
   

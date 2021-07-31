@@ -14,35 +14,33 @@ import typings.openlayers.mod.source.WMTSRequestEncoding
 import typings.openlayers.mod.tilegrid.WMTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WMTSOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var dimensions: js.UndefOr[GlobalObject] = js.native
+  var dimensions: js.UndefOr[GlobalObject] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var layer: String = js.native
+  var layer: String
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var matrixSet: String = js.native
+  var matrixSet: String
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   
-  var requestEncoding: js.UndefOr[WMTSRequestEncoding | String] = js.native
+  var requestEncoding: js.UndefOr[WMTSRequestEncoding | String] = js.undefined
   
-  var style: String = js.native
+  var style: String
   
   var tileClass: js.UndefOr[
     js.Function6[
@@ -52,23 +50,23 @@ trait WMTSOptions extends StObject {
       /* s1 */ String, 
       /* s2 */ String, 
       /* type */ TileLoadFunctionType, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tileGrid: WMTS = js.native
+  var tileGrid: WMTS
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var tilePixelRatio: js.UndefOr[Double] = js.native
+  var tilePixelRatio: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object WMTSOptions {
   
@@ -149,7 +147,7 @@ object WMTSOptions {
     
     @scala.inline
     def setTileClass(
-      value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => _
+      value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => js.Any
     ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
     
     @scala.inline

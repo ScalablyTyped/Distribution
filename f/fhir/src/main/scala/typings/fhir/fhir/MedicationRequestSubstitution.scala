@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Any restrictions on medication substitution
   */
-@js.native
-trait MedicationRequestSubstitution extends BackboneElement {
+trait MedicationRequestSubstitution
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'allowed'.
     */
-  var _allowed: js.UndefOr[Element] = js.native
+  var _allowed: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether substitution is allowed or not
     */
-  var allowed: Boolean = js.native
+  var allowed: Boolean
   
   /**
     * Why should (not) substitution be made
     */
-  var reason: js.UndefOr[CodeableConcept] = js.native
+  var reason: js.UndefOr[CodeableConcept] = js.undefined
 }
 object MedicationRequestSubstitution {
   

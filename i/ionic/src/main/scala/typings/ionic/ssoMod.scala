@@ -5,7 +5,6 @@ import typings.ionic.definitionsMod.IClient
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssoMod {
@@ -64,24 +63,23 @@ object ssoMod {
   }
   
   /* Inlined parent std.Partial<ionic.ionic/lib/sso.OAuth2FlowOptions> */
-  @js.native
   trait Auth0OAuth2FlowOptions extends StObject {
     
-    val audience: js.UndefOr[String] = js.native
+    val audience: js.UndefOr[String] = js.undefined
     
-    var authorizationUrl: js.UndefOr[String] = js.native
+    var authorizationUrl: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    val connection: String = js.native
+    val connection: String
     
-    val email: String = js.native
+    val email: String
     
-    var redirectHost: js.UndefOr[String] = js.native
+    var redirectHost: js.UndefOr[String] = js.undefined
     
-    var redirectPort: js.UndefOr[Double] = js.native
+    var redirectPort: js.UndefOr[Double] = js.undefined
     
-    var tokenUrl: js.UndefOr[String] = js.native
+    var tokenUrl: js.UndefOr[String] = js.undefined
   }
   object Auth0OAuth2FlowOptions {
     
@@ -140,10 +138,9 @@ object ssoMod {
   
   type AuthorizationParameters = StringDictionary[String]
   
-  @js.native
   trait OAuth2FlowDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
   }
   object OAuth2FlowDeps {
     
@@ -161,18 +158,17 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait OAuth2FlowOptions extends StObject {
     
-    val authorizationUrl: String = js.native
+    val authorizationUrl: String
     
-    val clientId: String = js.native
+    val clientId: String
     
-    val redirectHost: js.UndefOr[String] = js.native
+    val redirectHost: js.UndefOr[String] = js.undefined
     
-    val redirectPort: js.UndefOr[Double] = js.native
+    val redirectPort: js.UndefOr[Double] = js.undefined
     
-    val tokenUrl: String = js.native
+    val tokenUrl: String
   }
   object OAuth2FlowOptions {
     

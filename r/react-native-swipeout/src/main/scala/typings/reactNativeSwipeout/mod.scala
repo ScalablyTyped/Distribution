@@ -8,7 +8,6 @@ import typings.reactNativeSwipeout.reactNativeSwipeoutStrings.primary
 import typings.reactNativeSwipeout.reactNativeSwipeoutStrings.secondary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,26 +19,25 @@ object mod {
   
   type Swipeout = Component[SwipeoutProperties, js.Any, js.Any]
   
-  @js.native
   trait SwipeoutButtonProperties extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[Element] = js.native
+    var component: js.UndefOr[Element] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: js.UndefOr[ReactNode] = js.native
+    var text: js.UndefOr[ReactNode] = js.undefined
     
     var `type`: js.UndefOr[
         typings.reactNativeSwipeout.reactNativeSwipeoutStrings.default | delete | primary | secondary
-      ] = js.native
+      ] = js.undefined
     
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object SwipeoutButtonProperties {
     
@@ -104,44 +102,43 @@ object mod {
     }
   }
   
-  @js.native
   trait SwipeoutProperties extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var buttonWidth: js.UndefOr[Double] = js.native
+    var buttonWidth: js.UndefOr[Double] = js.undefined
     
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.native
+    var left: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.undefined
     
     var onClose: js.UndefOr[
         js.Function3[/* sectionId */ Double, /* rowId */ Double, /* direction */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onOpen: js.UndefOr[
         js.Function3[/* sectionId */ Double, /* rowId */ Double, /* direction */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var openLeft: js.UndefOr[Boolean] = js.native
+    var openLeft: js.UndefOr[Boolean] = js.undefined
     
-    var openRight: js.UndefOr[Boolean] = js.native
+    var openRight: js.UndefOr[Boolean] = js.undefined
     
-    var right: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.native
+    var right: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.undefined
     
-    var rowId: js.UndefOr[Double] = js.native
+    var rowId: js.UndefOr[Double] = js.undefined
     
-    var scroll: js.UndefOr[js.Function1[/* scrollEnabled */ Boolean, Unit]] = js.native
+    var scroll: js.UndefOr[js.Function1[/* scrollEnabled */ Boolean, Unit]] = js.undefined
     
-    var sectionId: js.UndefOr[Double] = js.native
+    var sectionId: js.UndefOr[Double] = js.undefined
     
-    var sensitivity: js.UndefOr[Double] = js.native
+    var sensitivity: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SwipeoutProperties {
     

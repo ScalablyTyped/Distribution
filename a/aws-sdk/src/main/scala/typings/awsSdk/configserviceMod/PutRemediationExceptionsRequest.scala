@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRemediationExceptionsRequest extends StObject {
   
   /**
     * The name of the AWS Config rule for which you want to create remediation exception.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The exception is automatically deleted after the expiration date.
     */
-  var ExpirationTime: js.UndefOr[Date] = js.native
+  var ExpirationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The message contains an explanation of the exception.
     */
-  var Message: js.UndefOr[StringWithCharLimit1024] = js.native
+  var Message: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
     * An exception list of resource exception keys to be processed with the current request. AWS Config adds exception for each resource key. For example, AWS Config adds 3 exceptions for 3 resource keys. 
     */
-  var ResourceKeys: RemediationExceptionResourceKeys = js.native
+  var ResourceKeys: RemediationExceptionResourceKeys
 }
 object PutRemediationExceptionsRequest {
   

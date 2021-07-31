@@ -6,7 +6,6 @@ import typings.openfin.shapesIdentityMod.ProviderIdentity
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -22,8 +21,8 @@ object clientMod {
     
     var disconnectListener: js.Any = js.native
     
-    def dispatch(action: String): js.Promise[_] = js.native
-    def dispatch(action: String, payload: js.Any): js.Promise[_] = js.native
+    def dispatch(action: String): js.Promise[js.Any] = js.native
+    def dispatch(action: String, payload: js.Any): js.Promise[js.Any] = js.native
     
     var endpointId: js.Any = js.native
     
@@ -34,10 +33,11 @@ object clientMod {
   
   type DisconnectionListener = js.Function1[/* providerIdentity */ ProviderIdentity, js.Any]
   
-  @js.native
-  trait RoutingInfo extends ProviderIdentity {
+  trait RoutingInfo
+    extends StObject
+       with ProviderIdentity {
     
-    var endpointId: String = js.native
+    var endpointId: String
   }
   object RoutingInfo {
     

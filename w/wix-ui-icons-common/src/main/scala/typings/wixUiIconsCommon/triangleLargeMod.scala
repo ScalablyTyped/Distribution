@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triangleLargeMod extends Shortcut {
@@ -15,10 +14,11 @@ object triangleLargeMod extends Shortcut {
   @js.native
   val default: SFC[TriangleLargeProps] = js.native
   
-  @js.native
-  trait TriangleLargeProps extends SVGAttributes[SVGElement] {
+  trait TriangleLargeProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TriangleLargeProps {
     

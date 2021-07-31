@@ -2,11 +2,11 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoLocale extends SystemInfoProperty {
+trait SystemInfoLocale
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Indicates the current country setting in the (LANGUAGE)_(REGION) syntax.
@@ -14,7 +14,7 @@ trait SystemInfoLocale extends SystemInfoProperty {
     * The language setting is in the ISO 639-2 format and the region setting is in the ISO 3166-1 alpha-2 format.
     * The country setting is case-sensitive.
     */
-  val country: String = js.native
+  val country: String
   
   /**
     * Indicates the current language setting in the (LANGUAGE)_(REGION) syntax.
@@ -22,7 +22,7 @@ trait SystemInfoLocale extends SystemInfoProperty {
     * The language setting is in the ISO 639-2 format and the region setting is in the ISO 3166-1 alpha-2 format.
     * The language setting is case-sensitive.
     */
-  val language: String = js.native
+  val language: String
 }
 object SystemInfoLocale {
   

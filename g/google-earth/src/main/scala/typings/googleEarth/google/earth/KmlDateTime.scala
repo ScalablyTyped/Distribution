@@ -2,16 +2,14 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlDateTime extends StObject {
   
   /**
     * Returns the date and time in XML Schema time format.
     */
-  def get(): String = js.native
+  def get(): String
   
   /**
     * Set the date.  Accepts only XML Schema time (see XML Schema Part 2: Datatypes Second Edition).
@@ -19,7 +17,7 @@ trait KmlDateTime extends StObject {
     * and the time zone is either Z(for UTC) or zzzzzz, which represents +/-hh:mm in relation to UTC.
     * Additionally, the value can be expressed as a date only.
     */
-  def set(date: String): Unit = js.native
+  def set(date: String): Unit
 }
 object KmlDateTime {
   

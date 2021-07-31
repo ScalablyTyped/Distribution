@@ -2,27 +2,27 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnonymousIPResponse extends Response {
+trait AnonymousIPResponse
+  extends StObject
+     with Response {
   
-  var ip_address: js.UndefOr[String] = js.native
+  var ip_address: js.UndefOr[String] = js.undefined
   
-  val is_anonymous: js.UndefOr[Boolean] = js.native
+  val is_anonymous: js.UndefOr[Boolean] = js.undefined
   
-  val is_anonymous_proxy: js.UndefOr[Boolean] = js.native
+  val is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_anonymous_vpn: js.UndefOr[Boolean] = js.native
+  val is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined
   
-  val is_hosting_provider: js.UndefOr[Boolean] = js.native
+  val is_hosting_provider: js.UndefOr[Boolean] = js.undefined
   
-  val is_public_proxy: js.UndefOr[Boolean] = js.native
+  val is_public_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_residential_proxy: js.UndefOr[Boolean] = js.native
+  val is_residential_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_tor_exit_node: js.UndefOr[Boolean] = js.native
+  val is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
 }
 object AnonymousIPResponse {
   

@@ -13,39 +13,37 @@ import typings.electron.electronStrings.separated
 import typings.electron.electronStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarSegmentedControlConstructorOptions extends StObject {
   
   /**
     * Called when the user selects a new segment.
     */
-  var change: js.UndefOr[js.Function2[/* selectedIndex */ Double, /* isSelected */ Boolean, Unit]] = js.native
+  var change: js.UndefOr[js.Function2[/* selectedIndex */ Double, /* isSelected */ Boolean, Unit]] = js.undefined
   
   /**
     * The selection mode of the control:
     */
-  var mode: js.UndefOr[single | multiple | buttons] = js.native
+  var mode: js.UndefOr[single | multiple | buttons] = js.undefined
   
   /**
     * Style of the segments:
     */
   var segmentStyle: js.UndefOr[
     automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of segments to place in this control.
     */
-  var segments: js.Array[SegmentedControlSegment] = js.native
+  var segments: js.Array[SegmentedControlSegment]
   
   /**
     * The index of the currently selected segment, will update automatically with user
     * interaction. When the mode is `multiple` it will be the last selected item.
     */
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
 }
 object TouchBarSegmentedControlConstructorOptions {
   

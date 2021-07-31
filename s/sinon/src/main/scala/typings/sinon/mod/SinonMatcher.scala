@@ -2,10 +2,8 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonMatcher extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SinonMatcher extends StObject {
     * @example var stringOrNumber = sinon.match.string.or(sinon.match.number);
     * var bookWithPages = sinon.match.instanceOf(Book).and(sinon.match.has("pages"));
     */
-  def and(expr: SinonMatcher): SinonMatcher = js.native
+  def and(expr: SinonMatcher): SinonMatcher
   
   /**
     * All matchers implement and and or. This allows to logically combine mutliple matchers.
@@ -22,9 +20,9 @@ trait SinonMatcher extends StObject {
     * @example var stringOrNumber = sinon.match.string.or(sinon.match.number);
     * var bookWithPages = sinon.match.instanceOf(Book).and(sinon.match.has("pages"));
     */
-  def or(expr: SinonMatcher): SinonMatcher = js.native
+  def or(expr: SinonMatcher): SinonMatcher
   
-  def test(`val`: js.Any): Boolean = js.native
+  def test(`val`: js.Any): Boolean
 }
 object SinonMatcher {
   

@@ -2,21 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MallocObj extends StObject {
   
   /**
     * The "pointer" into the WASM memory. Should be fixed over the lifetime of the object.
     */
-  val byteOffset: Double = js.native
+  val byteOffset: Double
   
   /**
     * The number of objects this pointer refers to.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Return a read/write view into a subset of the memory. Do not cache the TypedArray this
@@ -24,14 +22,14 @@ trait MallocObj extends StObject {
     * .toTypedArray().subarray() except the returned TypedArray can also be passed into an API
     * and not cause an additional copy.
     */
-  def subarray(start: Double, end: Double): TypedArray = js.native
+  def subarray(start: Double, end: Double): TypedArray
   
   /**
     * Return a read/write view of the memory. Do not cache the TypedArray this returns, it may be
     * invalidated if the WASM heap is resized. If this TypedArray is passed into a CanvasKit API,
     * it will not be copied again, only the pointer will be re-used.
     */
-  def toTypedArray(): TypedArray = js.native
+  def toTypedArray(): TypedArray
 }
 object MallocObj {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchExpression extends StObject {
   
   /**
     * A list of filter objects.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * A list of nested filter objects.
     */
-  var NestedFilters: js.UndefOr[NestedFiltersList] = js.native
+  var NestedFilters: js.UndefOr[NestedFiltersList] = js.undefined
   
   /**
     * A Boolean operator used to evaluate the search expression. If you want every conditional statement in all lists to be satisfied for the entire search expression to be true, specify And. If only a single conditional statement needs to be true for the entire search expression to be true, specify Or. The default value is And.
     */
-  var Operator: js.UndefOr[BooleanOperator] = js.native
+  var Operator: js.UndefOr[BooleanOperator] = js.undefined
   
   /**
     * A list of search expression objects.
     */
-  var SubExpressions: js.UndefOr[SearchExpressionList] = js.native
+  var SubExpressions: js.UndefOr[SearchExpressionList] = js.undefined
 }
 object SearchExpression {
   

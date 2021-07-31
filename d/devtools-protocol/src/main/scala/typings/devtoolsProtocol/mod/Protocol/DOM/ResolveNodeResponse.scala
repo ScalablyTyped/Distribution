@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveNodeResponse extends StObject {
   
   /**
     * JavaScript object wrapper for given node.
     */
-  var `object`: RemoteObject = js.native
+  var `object`: RemoteObject
 }
 object ResolveNodeResponse {
   

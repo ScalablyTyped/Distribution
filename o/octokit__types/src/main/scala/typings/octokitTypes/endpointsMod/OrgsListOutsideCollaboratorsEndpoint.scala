@@ -4,10 +4,8 @@ import typings.octokitTypes.octokitTypesStrings.`2fa_disabled`
 import typings.octokitTypes.octokitTypesStrings.all
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsListOutsideCollaboratorsEndpoint extends StObject {
   
   /**
@@ -15,20 +13,20 @@ trait OrgsListOutsideCollaboratorsEndpoint extends StObject {
     * \* `2fa_disabled`: Outside collaborators without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled.
     * \* `all`: All outside collaborators.
     */
-  var filter: js.UndefOr[`2fa_disabled` | all] = js.native
+  var filter: js.UndefOr[`2fa_disabled` | all] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object OrgsListOutsideCollaboratorsEndpoint {
   

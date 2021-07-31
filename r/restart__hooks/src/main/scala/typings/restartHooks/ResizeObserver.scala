@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ResizeObserver
-  extends Instantiable1[/* callback */ ResizeObserverCallback, js.Any] {
+  extends StObject
+     with Instantiable1[/* callback */ ResizeObserverCallback, js.Any] {
   
   /**
     * Clears both the observationTargets and activeTargets lists.

@@ -8,47 +8,45 @@ import typings.electronNotarize.electronNotarizeStrings.success
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("electron-notarize/lib/helpers", "isSecret")
+  @JSImport("electron-notarize/lib/helpers", JSImport.Namespace)
   @js.native
-  def isSecret(s: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-notarize/lib/helpers", "makeSecret")
-  @js.native
-  def makeSecret(s: String): String = js.native
+  @scala.inline
+  def isSecret(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSecret")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("electron-notarize/lib/helpers", "parseNotarizationInfo")
-  @js.native
-  def parseNotarizationInfo(info: String): NotarizationInfo = js.native
+  @scala.inline
+  def makeSecret(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSecret")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("electron-notarize/lib/helpers", "withTempDir")
-  @js.native
-  def withTempDir[T](fn: js.Function1[/* dir */ String, js.Promise[T]]): js.Promise[T] = js.native
+  @scala.inline
+  def parseNotarizationInfo(info: String): NotarizationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNotarizationInfo")(info.asInstanceOf[js.Any]).asInstanceOf[NotarizationInfo]
   
-  @js.native
+  @scala.inline
+  def withTempDir[T](fn: js.Function1[/* dir */ String, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTempDir")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
   trait NotarizationInfo extends StObject {
     
-    var date: Date = js.native
+    var date: Date
     
-    var logFileUrl: String | Null = js.native
+    var logFileUrl: String | Null
     
-    var status: invalid | (`in progress`) | success = js.native
+    var status: invalid | (`in progress`) | success
     
-    var statusCode: js.UndefOr[`0` | `2`] = js.native
+    var statusCode: js.UndefOr[`0` | `2`] = js.undefined
     
-    var statusMessage: js.UndefOr[String] = js.native
+    var statusMessage: js.UndefOr[String] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object NotarizationInfo {
     
     @scala.inline
     def apply(date: Date, status: invalid | (`in progress`) | success, uuid: String): NotarizationInfo = {
-      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], logFileUrl = null)
       __obj.asInstanceOf[NotarizationInfo]
     }
     

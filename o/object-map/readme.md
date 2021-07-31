@@ -11,8 +11,8 @@ Map a function over some Object's values to produce a new Object.
 | Full name          | object-map |
 | Keywords           | object, map, functional |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 10656 |
+| # dependents       | 7 |
+| # downloads        | 9656 |
 | # stars            | 0 |
 
 ## Links

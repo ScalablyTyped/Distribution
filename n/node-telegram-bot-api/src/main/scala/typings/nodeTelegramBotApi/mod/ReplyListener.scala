@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplyListener extends StObject {
   
-  def callback(msg: Message): Unit = js.native
+  def callback(msg: Message): Unit
   
-  var chatId: Double | String = js.native
+  var chatId: Double | String
   
-  var id: Double = js.native
+  var id: Double
   
-  var messageId: Double | String = js.native
+  var messageId: Double | String
 }
 object ReplyListener {
   

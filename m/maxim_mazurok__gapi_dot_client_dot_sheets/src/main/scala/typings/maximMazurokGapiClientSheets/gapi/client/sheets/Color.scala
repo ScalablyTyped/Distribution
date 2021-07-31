@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait Color extends StObject {
     * rather than a simple float scalar so that it is possible to distinguish between a default value and the value being unset. If omitted, this color object is to be rendered as a solid
     * color (as if the alpha value had been explicitly given with a value of 1.0).
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /** The amount of blue in the color as a value in the interval [0, 1]. */
-  var blue: js.UndefOr[Double] = js.native
+  var blue: js.UndefOr[Double] = js.undefined
   
   /** The amount of green in the color as a value in the interval [0, 1]. */
-  var green: js.UndefOr[Double] = js.native
+  var green: js.UndefOr[Double] = js.undefined
   
   /** The amount of red in the color as a value in the interval [0, 1]. */
-  var red: js.UndefOr[Double] = js.native
+  var red: js.UndefOr[Double] = js.undefined
 }
 object Color {
   

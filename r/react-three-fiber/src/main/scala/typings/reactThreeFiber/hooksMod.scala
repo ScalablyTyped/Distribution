@@ -12,46 +12,43 @@ import typings.three.mod.Material
 import typings.three.mod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
   
-  @JSImport("react-three-fiber/hooks", "useFrame")
+  @JSImport("react-three-fiber/hooks", JSImport.Namespace)
   @js.native
-  def useFrame(callback: RenderCallback): Null = js.native
-  @JSImport("react-three-fiber/hooks", "useFrame")
-  @js.native
-  def useFrame(callback: RenderCallback, renderPriority: Double): Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-three-fiber/hooks", "useGraph")
-  @js.native
-  def useGraph(`object`: Object3D): ObjectMap = js.native
+  @scala.inline
+  def useFrame(callback: RenderCallback): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Null]
+  @scala.inline
+  def useFrame(callback: RenderCallback, renderPriority: Double): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any], renderPriority.asInstanceOf[js.Any])).asInstanceOf[Null]
+  
+  @scala.inline
+  def useGraph(`object`: Object3D): ObjectMap = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraph")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectMap]
   
   object useLoader {
     
-    @JSImport("react-three-fiber/hooks", "useLoader")
-    @js.native
-    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String]): T = js.native
-    @JSImport("react-three-fiber/hooks", "useLoader")
-    @js.native
+    @scala.inline
+    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String]): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
-      extensions: js.UndefOr[scala.Nothing],
+      extensions: Unit,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): T = js.native
-    @JSImport("react-three-fiber/hooks", "useLoader")
-    @js.native
-    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String], extensions: Extensions): T = js.native
-    @JSImport("react-three-fiber/hooks", "useLoader")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String], extensions: Extensions): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
       extensions: Extensions,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[T]
+    
     @JSImport("react-three-fiber/hooks", "useLoader")
     @js.native
     val ^ : js.Any = js.native
@@ -62,7 +59,7 @@ object hooksMod {
         /* Proto */ Instantiable0[LoaderResult[js.Any]], 
         /* url */ String | js.Array[String], 
         /* extensions */ js.UndefOr[Extensions], 
-        js.UndefOr[scala.Nothing]
+        Unit
       ] = js.native
     @scala.inline
     def preload_=(
@@ -70,32 +67,27 @@ object hooksMod {
           /* Proto */ Instantiable0[LoaderResult[js.Any]], 
           /* url */ String | js.Array[String], 
           /* extensions */ js.UndefOr[Extensions], 
-          js.UndefOr[scala.Nothing]
+          Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preload")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-three-fiber/hooks", "useResource")
-  @js.native
-  def useResource[T](): MutableRefObject[T] = js.native
-  @JSImport("react-three-fiber/hooks", "useResource")
-  @js.native
-  def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = js.native
+  @scala.inline
+  def useResource[T](): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")().asInstanceOf[MutableRefObject[T]]
+  @scala.inline
+  def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")(optionalRef.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
   
-  @JSImport("react-three-fiber/hooks", "useThree")
-  @js.native
-  def useThree(): SharedCanvasContext = js.native
+  @scala.inline
+  def useThree(): SharedCanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useThree")().asInstanceOf[SharedCanvasContext]
   
-  @JSImport("react-three-fiber/hooks", "useUpdate")
-  @js.native
-  def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[_]): MutableRefObject[js.UndefOr[T]] = js.native
-  @JSImport("react-three-fiber/hooks", "useUpdate")
-  @js.native
+  @scala.inline
+  def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[js.Any]): MutableRefObject[T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUpdate")(callback.asInstanceOf[js.Any], dependents.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Unit]]
+  @scala.inline
   def useUpdate[T](
     callback: js.Function1[/* props */ T, Unit],
-    dependents: js.Array[_],
+    dependents: js.Array[js.Any],
     optionalRef: MutableRefObject[T]
-  ): MutableRefObject[js.UndefOr[T]] = js.native
+  ): MutableRefObject[T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUpdate")(callback.asInstanceOf[js.Any], dependents.asInstanceOf[js.Any], optionalRef.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Unit]]
   
   type Extensions = js.Function1[/* loader */ typings.three.mod.Loader, Unit]
   
@@ -104,33 +96,10 @@ object hooksMod {
     extends typings.three.mod.Loader {
     
     def load(url: String): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
     def load(url: String, onLoad: js.Function1[/* result */ T, Unit]): js.Any = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* result */ T, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.Function1[/* result */ T, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): js.Any = js.native
     def load(
@@ -139,18 +108,31 @@ object hooksMod {
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* result */ T, Unit],
+      onProgress: Unit,
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(url: String, onLoad: Unit, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): js.Any = js.native
   }
   
   type LoaderResult[T] = Loader[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any) | T
   ]
   
-  @js.native
   trait ObjectMap extends StObject {
     
-    var materials: StringDictionary[Material] = js.native
+    var materials: StringDictionary[Material]
     
-    var nodes: StringDictionary[Object3D] = js.native
+    var nodes: StringDictionary[Object3D]
   }
   object ObjectMap {
     

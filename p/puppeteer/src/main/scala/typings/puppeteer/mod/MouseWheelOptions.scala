@@ -2,15 +2,13 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseWheelOptions extends StObject {
   
-  var deltaX: js.UndefOr[Double] = js.native
+  var deltaX: js.UndefOr[Double] = js.undefined
   
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
 }
 object MouseWheelOptions {
   

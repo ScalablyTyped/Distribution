@@ -12,7 +12,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputNumberMod {
@@ -54,19 +53,19 @@ object inputNumberMod {
     @JSName("action")
     def action_down(`type`: down, e: js.Any): Unit = js.native
     @JSName("action")
-    def action_down(`type`: down, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
-    @JSName("action")
     def action_down(`type`: down, e: js.Any, ratio: js.Any): Unit = js.native
     @JSName("action")
     def action_down(`type`: down, e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
     @JSName("action")
-    def action_up(`type`: up, e: js.Any): Unit = js.native
+    def action_down(`type`: down, e: js.Any, ratio: Unit, recursive: js.Any): Unit = js.native
     @JSName("action")
-    def action_up(`type`: up, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
+    def action_up(`type`: up, e: js.Any): Unit = js.native
     @JSName("action")
     def action_up(`type`: up, e: js.Any, ratio: js.Any): Unit = js.native
     @JSName("action")
     def action_up(`type`: up, e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
+    @JSName("action")
+    def action_up(`type`: up, e: js.Any, ratio: Unit, recursive: js.Any): Unit = js.native
     
     var autoStepTimer: js.Any = js.native
     
@@ -74,9 +73,9 @@ object inputNumberMod {
     def componentWillUnmount_MInputNumber(): Unit = js.native
     
     def down(e: js.Any): Unit = js.native
-    def down(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
     def down(e: js.Any, ratio: js.Any): Unit = js.native
     def down(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
+    def down(e: js.Any, ratio: Unit, recursive: js.Any): Unit = js.native
     
     def getCurrentValidValue(value: js.Any): js.Any = js.native
     
@@ -138,51 +137,50 @@ object inputNumberMod {
     def toPrecisionAsStep(num: js.Any): js.Any = js.native
     
     def up(e: js.Any): Unit = js.native
-    def up(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
     def up(e: js.Any, ratio: js.Any): Unit = js.native
     def up(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
+    def up(e: js.Any, ratio: Unit, recursive: js.Any): Unit = js.native
   }
   
-  @js.native
   trait InputNumberProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var downStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var downStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var inputStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var inputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var keyboardType: js.UndefOr[js.Any] = js.native
+    var keyboardType: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var parser: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.native
+    var parser: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[String | Double] = js.native
+    var step: js.UndefOr[String | Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: ReturnType[js.Function1[/* theme */ Theme, StepperStyle]] = js.native
+    var styles: ReturnType[js.Function1[/* theme */ Theme, StepperStyle]]
     
-    var upStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var upStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object InputNumberProps {
     
@@ -320,14 +318,13 @@ object inputNumberMod {
     }
   }
   
-  @js.native
   trait InputNumberState extends StObject {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var inputValue: js.UndefOr[Double] = js.native
+    var inputValue: js.UndefOr[Double] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object InputNumberState {
     

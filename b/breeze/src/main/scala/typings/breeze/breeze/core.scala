@@ -3,13 +3,14 @@ package typings.breeze.breeze
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
   
   @js.native
-  trait Enum extends IEnum {
+  trait Enum
+    extends StObject
+       with IEnum {
     
     def addSymbol(): EnumSymbol = js.native
     def addSymbol(propertiesObj: js.Any): EnumSymbol = js.native
@@ -17,12 +18,11 @@ object core {
     def resolveSymbols(): Unit = js.native
   }
   
-  @js.native
   trait EnumSymbol extends StObject {
     
-    def getName(): String = js.native
+    def getName(): String
     
-    var parentEnum: IEnum = js.native
+    var parentEnum: IEnum
   }
   object EnumSymbol {
     
@@ -51,9 +51,9 @@ object core {
     def clear(): Unit = js.native
     
     def publish(data: js.Any): Unit = js.native
-    def publish(data: js.Any, publishAsync: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
     def publish(data: js.Any, publishAsync: Boolean): Unit = js.native
     def publish(data: js.Any, publishAsync: Boolean, errorCallback: ErrorCallback): Unit = js.native
+    def publish(data: js.Any, publishAsync: Unit, errorCallback: ErrorCallback): Unit = js.native
     
     def publishAsync(data: js.Any): Unit = js.native
     def publishAsync(data: js.Any, errorCallback: ErrorCallback): Unit = js.native
@@ -64,16 +64,15 @@ object core {
     def unsubscribe(unsubKey: Double): Boolean = js.native
   }
   
-  @js.native
   trait IEnum extends StObject {
     
-    def contains(`object`: js.Any): Boolean = js.native
+    def contains(`object`: js.Any): Boolean
     
-    def fromName(name: String): EnumSymbol = js.native
+    def fromName(name: String): EnumSymbol
     
-    def getNames(): js.Array[String] = js.native
+    def getNames(): js.Array[String]
     
-    def getSymbols(): js.Array[EnumSymbol] = js.native
+    def getSymbols(): js.Array[EnumSymbol]
   }
   object IEnum {
     

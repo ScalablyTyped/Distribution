@@ -2,25 +2,23 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Radio extends StObject {
   
-  var checkbox: Boolean = js.native
+  var checkbox: Boolean
   
-  var radio: Boolean = js.native
+  var radio: Boolean
   
-  var select: Boolean = js.native
+  var select: Boolean
   
-  var selectPos: js.Any = js.native
+  var selectPos: js.Any
   
-  var switch: Boolean = js.native
+  var switch: Boolean
   
-  var vcode: Boolean = js.native
+  var vcode: Boolean
   
-  var warn: Boolean = js.native
+  var warn: Boolean
 }
 object Radio {
   

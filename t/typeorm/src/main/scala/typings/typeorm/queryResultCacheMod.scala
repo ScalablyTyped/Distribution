@@ -4,7 +4,6 @@ import typings.typeorm.queryResultCacheOptionsMod.QueryResultCacheOptions
 import typings.typeorm.queryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryResultCacheMod {
@@ -49,7 +48,7 @@ object queryResultCacheMod {
       * Stores given query result in the cache.
       */
     def storeInCache(options: QueryResultCacheOptions): js.Promise[Unit] = js.native
-    def storeInCache(options: QueryResultCacheOptions, savedCache: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Promise[Unit] = js.native
+    def storeInCache(options: QueryResultCacheOptions, savedCache: Unit, queryRunner: QueryRunner): js.Promise[Unit] = js.native
     def storeInCache(options: QueryResultCacheOptions, savedCache: QueryResultCacheOptions): js.Promise[Unit] = js.native
     def storeInCache(options: QueryResultCacheOptions, savedCache: QueryResultCacheOptions, queryRunner: QueryRunner): js.Promise[Unit] = js.native
     

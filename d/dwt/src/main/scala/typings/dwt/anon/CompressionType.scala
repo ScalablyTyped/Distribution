@@ -4,32 +4,30 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTFileFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompressionType extends StObject {
   
   /**
     * Specify the compression type of the file.
     */
-  var compressionType: js.UndefOr[EnumDWTCompressionType | Double] = js.native
+  var compressionType: js.UndefOr[EnumDWTCompressionType | Double] = js.undefined
   
   /**
     * Specify the file format.
     */
-  var fileFormat: js.UndefOr[EnumDWTFileFormat | Double] = js.native
+  var fileFormat: js.UndefOr[EnumDWTFileFormat | Double] = js.undefined
   
   /**
     * Specify the file name (or pattern) for file transfer.
     * Example: "C:\\WebTWAIN<%06d>.bmp"
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the quality of JPEG files.
     */
-  var jpegQuality: js.UndefOr[Double] = js.native
+  var jpegQuality: js.UndefOr[Double] = js.undefined
 }
 object CompressionType {
   

@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteringCount extends StObject {
   
-  var filteringCount: js.UndefOr[String] = js.native
+  var filteringCount: js.UndefOr[String] = js.undefined
   
-  var filteringStatus: js.UndefOr[Double] = js.native
+  var filteringStatus: js.UndefOr[Double] = js.undefined
 }
 object FilteringCount {
   

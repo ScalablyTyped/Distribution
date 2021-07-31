@@ -2,19 +2,17 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterBandPixelsWriteOptions extends StObject {
   
-  var buffer_height: js.UndefOr[Double] = js.native
+  var buffer_height: js.UndefOr[Double] = js.undefined
   
-  var buffer_width: js.UndefOr[Double] = js.native
+  var buffer_width: js.UndefOr[Double] = js.undefined
   
-  var line_space: js.UndefOr[Double] = js.native
+  var line_space: js.UndefOr[Double] = js.undefined
   
-  var pixel_space: js.UndefOr[Double] = js.native
+  var pixel_space: js.UndefOr[Double] = js.undefined
 }
 object RasterBandPixelsWriteOptions {
   

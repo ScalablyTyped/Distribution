@@ -3,23 +3,21 @@ package typings.awsSdkClientS3Browser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCopyPartResultMod {
   
-  @js.native
   trait CopyPartResult extends StObject {
     
     /**
       * <p>Entity tag of the object.</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Date and time at which the object was uploaded.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.native
+    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
   }
   object CopyPartResult {
     
@@ -46,14 +44,15 @@ object typesCopyPartResultMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCopyPartResult extends CopyPartResult {
+  trait UnmarshalledCopyPartResult
+    extends StObject
+       with CopyPartResult {
     
     /**
       * <p>Date and time at which the object was uploaded.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledCopyPartResult: js.UndefOr[Date] = js.native
+    var LastModified_UnmarshalledCopyPartResult: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledCopyPartResult {
     

@@ -10,9 +10,9 @@ Promise-based request library for node using the native http module.
 | ------------------ | :-------------: |
 | Full name          | @algolia/requester-node-http |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 3 |
-| # downloads        | 4066080 |
+| # releases         | 37 |
+| # dependents       | 4 |
+| # downloads        | 6725705 |
 | # stars            | 0 |
 
 ## Links

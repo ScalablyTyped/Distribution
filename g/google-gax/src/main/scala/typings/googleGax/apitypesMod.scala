@@ -6,10 +6,11 @@ import typings.googleGax.callMod.CancellablePromise
 import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.googleErrorMod.GoogleError
 import typings.googleGax.longrunningMod.Operation_
+import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apitypesMod {
@@ -22,15 +23,24 @@ object apitypesMod {
     Unit
   ]
   
-  type BiDiStreamingCall = js.Function2[/* metadata */ js.Object, /* options */ js.Object, Duplex with GRPCCallResult]
+  type BiDiStreamingCall = js.Function2[/* metadata */ js.Object, /* options */ js.Object, Duplex & GRPCCallResult]
   
-  type CancellableStream = Duplex with GRPCCallResult
+  @js.native
+  trait CancellableStream
+    extends Duplex
+       with GRPCCallResult {
+    
+    /* InferMemberOverrides */
+    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
+    /* InferMemberOverrides */
+    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  }
   
   type ClientStreamingCall = js.Function3[
     /* metadata */ js.Object, 
     /* options */ js.Object, 
     /* callback */ js.UndefOr[APICallback], 
-    Duplex with GRPCCallResult
+    Duplex & GRPCCallResult
   ]
   
   type GRPCCall = UnaryCall | ServerStreamingCall | ClientStreamingCall | BiDiStreamingCall
@@ -41,17 +51,16 @@ object apitypesMod {
     var headers: js.UndefOr[js.Object] = js.native
     
     def metadataBuilder(): js.Object = js.native
-    def metadataBuilder(abTests: js.UndefOr[scala.Nothing], headers: js.Object): js.Object = js.native
     def metadataBuilder(abTests: js.Object): js.Object = js.native
     def metadataBuilder(abTests: js.Object, headers: js.Object): js.Object = js.native
+    def metadataBuilder(abTests: Unit, headers: js.Object): js.Object = js.native
     
     var options: js.UndefOr[Deadline] = js.native
   }
   
-  @js.native
   trait GRPCCallResult extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object GRPCCallResult {
     
@@ -110,7 +119,7 @@ object apitypesMod {
     /* argument */ js.Object, 
     /* metadata */ js.Object, 
     /* options */ js.Object, 
-    Duplex with GRPCCallResult
+    Duplex & GRPCCallResult
   ]
   
   type SimpleCallbackFunction = js.Function2[/* request */ RequestType, /* callback */ APICallback, GRPCCallResult]

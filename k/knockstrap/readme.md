@@ -9,9 +9,9 @@ Knockout bindings to Twitter Bootstrap 3
 | ------------------ | :-------------: |
 | Full name          | knockstrap |
 | Keywords           | knockout, bootstrap, knockstrap, custom, bindings, library, templates |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 29634 |
+| # downloads        | 38428 |
 | # stars            | 0 |
 
 ## Links

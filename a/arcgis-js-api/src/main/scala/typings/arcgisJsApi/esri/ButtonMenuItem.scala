@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonMenuItem extends Accessor {
+trait ButtonMenuItem
+  extends StObject
+     with Accessor {
   
   /**
     * Indicates whether to automatically close the menu's item.

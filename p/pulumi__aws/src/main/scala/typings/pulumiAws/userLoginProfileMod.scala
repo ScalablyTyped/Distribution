@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userLoginProfileMod {
@@ -58,6 +57,10 @@ object userLoginProfileMod {
   /* static members */
   object UserLoginProfile {
     
+    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserLoginProfile resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object userLoginProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserLoginProfile = js.native
-    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserLoginProfile = js.native
-    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserLoginProfileState): UserLoginProfile = js.native
-    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): UserLoginProfile = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserLoginProfileState): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
     
     /**
       * Returns true if the given object is an instance of UserLoginProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean]
   }
   
-  @js.native
   trait UserLoginProfileArgs extends StObject {
     
     /**
       * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val passwordLength: js.UndefOr[Input[Double]] = js.native
+    val passwordLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.native
+    val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val pgpKey: Input[String] = js.native
+    val pgpKey: Input[String]
     
     /**
       * The IAM user's name.
       */
-    val user: Input[String] = js.native
+    val user: Input[String]
   }
   object UserLoginProfileArgs {
     
@@ -143,38 +140,37 @@ object userLoginProfileMod {
     }
   }
   
-  @js.native
   trait UserLoginProfileState extends StObject {
     
     /**
       * The encrypted password, base64 encoded. Only available if password was handled on this provider resource creation, not import.
       */
-    val encryptedPassword: js.UndefOr[Input[String]] = js.native
+    val encryptedPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on this provider resource creation, not import.
       */
-    val keyFingerprint: js.UndefOr[Input[String]] = js.native
+    val keyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val passwordLength: js.UndefOr[Input[Double]] = js.native
+    val passwordLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.native
+    val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
       */
-    val pgpKey: js.UndefOr[Input[String]] = js.native
+    val pgpKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM user's name.
       */
-    val user: js.UndefOr[Input[String]] = js.native
+    val user: js.UndefOr[Input[String]] = js.undefined
   }
   object UserLoginProfileState {
     

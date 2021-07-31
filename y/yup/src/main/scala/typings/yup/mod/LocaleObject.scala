@@ -2,25 +2,23 @@ package typings.yup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleObject extends StObject {
   
-  var array: js.UndefOr[ArrayLocale] = js.native
+  var array: js.UndefOr[ArrayLocale] = js.undefined
   
-  var boolean: js.UndefOr[js.Object] = js.native
+  var boolean: js.UndefOr[js.Object] = js.undefined
   
-  var date: js.UndefOr[DateLocale] = js.native
+  var date: js.UndefOr[DateLocale] = js.undefined
   
-  var mixed: js.UndefOr[MixedLocale] = js.native
+  var mixed: js.UndefOr[MixedLocale] = js.undefined
   
-  var number: js.UndefOr[NumberLocale] = js.native
+  var number: js.UndefOr[NumberLocale] = js.undefined
   
-  var `object`: js.UndefOr[ObjectLocale] = js.native
+  var `object`: js.UndefOr[ObjectLocale] = js.undefined
   
-  var string: js.UndefOr[StringLocale] = js.native
+  var string: js.UndefOr[StringLocale] = js.undefined
 }
 object LocaleObject {
   

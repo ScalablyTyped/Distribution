@@ -2,50 +2,48 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastOptions extends StObject {
   
   /**
     * The percentage of the toast's width it takes for a drag to dismiss a Toast.
     * @default 0.8
     */
-  var activationPercent: Double = js.native
+  var activationPercent: Double
   
   /**
     * Classes to be added to the toast element.
     */
-  var classes: String = js.native
+  var classes: String
   
   /**
     * Callback function called when toast is dismissed.
     */
-  def completeCallback(): Unit = js.native
+  def completeCallback(): Unit
   
   /**
     * Length in ms the Toast stays before dismissal.
     * @default 4000
     */
-  var displayLength: Double = js.native
+  var displayLength: Double
   
   /**
     * The HTML content of the Toast.
     */
-  var html: String = js.native
+  var html: String
   
   /**
     * Transition in duration in milliseconds.
     * @default 300
     */
-  var inDuration: Double = js.native
+  var inDuration: Double
   
   /**
     * Transition out duration in milliseconds.
     * @default 375
     */
-  var outDuration: Double = js.native
+  var outDuration: Double
 }
 object ToastOptions {
   

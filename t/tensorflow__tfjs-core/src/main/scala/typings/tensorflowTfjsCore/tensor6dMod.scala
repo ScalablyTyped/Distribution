@@ -5,25 +5,24 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensor6dMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor6d", "tensor6d")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor6d", JSImport.Namespace)
   @js.native
-  def tensor6d(values: TensorLike6D): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor6d", "tensor6d")
-  @js.native
-  def tensor6d(values: TensorLike6D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor6d", "tensor6d")
-  @js.native
-  def tensor6d(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor6d", "tensor6d")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def tensor6d(values: TensorLike6D): Tensor6D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor6D]
+  @scala.inline
+  def tensor6d(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+  @scala.inline
   def tensor6d(
     values: TensorLike6D,
     shape: js.Tuple6[Double, Double, Double, Double, Double, Double],
     dtype: DataType
-  ): Tensor6D = js.native
+  ): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+  @scala.inline
+  def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
 }

@@ -5,51 +5,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JSGit {
   
-  @js.native
   trait DB extends StObject {
     
     /**
       * This is for when the user wants to delete or otherwise reclaim your database's resources.
       */
-    def clear(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def clear(callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Remove an object or ref from the database.
       */
-    def del(key: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def del(key: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Load a ref or object from the database.
       * The database should assume that keys that are 40-character long hex strings are sha1 hashes. The value for these will always be binary (Buffer in node, Uint8Array in browser) All other keys are paths like refs/heads/master or HEAD and the value is a string.
       */
-    def get(key: String, callback: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): Unit = js.native
+    def get(key: String, callback: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): Unit
     
     /**
       * Check if a key is in the database
       */
-    def has(key: String, callback: js.Function2[/* err */ js.Any, /* hasKey */ Boolean, Unit]): Unit = js.native
+    def has(key: String, callback: js.Function2[/* err */ js.Any, /* hasKey */ Boolean, Unit]): Unit
     
     /**
       * Initialize a database. This is where you db implementation can setup stuff.
       */
-    def init(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def init(callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Given a path prefix, give all the keys. This is like a readdir if you treat the keys as paths.
       * For example, given the keys refs/heads/master, refs/heads/experimental, refs/tags/0.1.3 and the prefix refs/heads/, the output would be master and experimental.
       * A null prefix returns all non hash keys.
       */
-    def keys(prefix: String, callback: js.Function2[/* err */ js.Any, /* keys */ js.Array[String], Unit]): Unit = js.native
+    def keys(prefix: String, callback: js.Function2[/* err */ js.Any, /* keys */ js.Array[String], Unit]): Unit
     
     /**
       * Save a value to the database. Same rules apply about hash keys being binary values and other keys being string values.
       */
-    def set(key: String, value: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def set(key: String, value: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): Unit
   }
   object DB {
     
@@ -93,14 +91,13 @@ object JSGit {
     }
   }
   
-  @js.native
   trait GitAuthor extends StObject {
     
-    var date: Date = js.native
+    var date: Date
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object GitAuthor {
     
@@ -124,14 +121,13 @@ object JSGit {
     }
   }
   
-  @js.native
   trait GitCommit extends StObject {
     
-    var author: GitAuthor = js.native
+    var author: GitAuthor
     
-    var message: String = js.native
+    var message: String
     
-    var tree: String = js.native
+    var tree: String
   }
   object GitCommit {
     
@@ -155,12 +151,11 @@ object JSGit {
     }
   }
   
-  @js.native
   trait GitObject extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GitObject {
     
@@ -184,14 +179,13 @@ object JSGit {
   
   type GitTree = NumberDictionary[GitTreeElem]
   
-  @js.native
   trait GitTreeElem extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var name: String = js.native
+    var name: String
   }
   object GitTreeElem {
     
@@ -230,18 +224,17 @@ object JSGit {
     var pathname: String = js.native
   }
   
-  @js.native
   trait Repo extends StObject {
     
     /**
       * Convenience wrapper that fetches from a remote instance and calls repo.unpack with the resulting packfile stream for you.
       */
-    def fetch(remote: Remote, opts: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def fetch(remote: Remote, opts: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Read the current active branch.
       */
-    def getHead(callback: js.Function2[/* err */ js.Any, /* ref_name */ String, Unit]): Unit = js.native
+    def getHead(callback: js.Function2[/* err */ js.Any, /* ref_name */ String, Unit]): Unit
     
     /**
       * Load a git object from the database. You can pass in either a hash or a symbolic name like HEAD or refs/tags/v3.1.4.
@@ -252,7 +245,7 @@ object JSGit {
       *   body: { ... } // Or an array for tree and a binary value for blob.
       * }
       */
-    def load(hashish: String, callback: js.Function2[/* err */ js.Any, /* git_object */ GitObject, Unit]): Unit = js.native
+    def load(hashish: String, callback: js.Function2[/* err */ js.Any, /* git_object */ GitObject, Unit]): Unit
     
     /**
       * This convenience wrapper will call repo.load for you and then check if the type is what you expected. If it is, it will return the body directly. If it's not, it will error.
@@ -262,28 +255,28 @@ object JSGit {
       *
       * I'm using yield syntax because it's simpler, you can use callbacks instead if you prefer.
       */
-    def loadAs(`type`: String, hash: String, callback: js.Function2[/* err */ js.Any, /* body */ js.Any, Unit]): Unit = js.native
+    def loadAs(`type`: String, hash: String, callback: js.Function2[/* err */ js.Any, /* body */ js.Any, Unit]): Unit
     
     /**
       * This convenience wrapper creates a readable stream of the history sorted by author date.
       * If you want full history, pass in HEAD for the hash.
       */
-    def logWalk(hashish: String, callback: js.Function2[/* err */ js.Any, /* log_stream */ js.Any, Unit]): Unit = js.native
+    def logWalk(hashish: String, callback: js.Function2[/* err */ js.Any, /* log_stream */ js.Any, Unit]): Unit
     
     /**
       * Remove an object.
       */
-    def remove(hash: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def remove(hash: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Resolve a ref, branch, or tag to a real hash.
       */
-    def resolveHashish(hashish: String, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit = js.native
+    def resolveHashish(hashish: String, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit
     
     /**
       * Save an object to the database. This will give you back the hash of the cotent by which you can retrieve the value back.
       */
-    def save(git_object: GitObject, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit = js.native
+    def save(git_object: GitObject, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit
     
     /**
       * Another convenience wrapper, this time to save objects as a specefic type. The body must be in the right format.
@@ -298,17 +291,17 @@ object JSGit {
       *   message: "Save the blob"
       * });
       */
-    def saveAs(`type`: String, body: js.Any, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit = js.native
+    def saveAs(`type`: String, body: js.Any, callback: js.Function2[/* err */ js.Any, /* hash */ String, Unit]): Unit
     
     /**
       * Set the current active branch.
       */
-    def setHead(ref: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def setHead(ref: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * This helper will return a stream of files suitable for traversing a file tree as a linear stream. The hash can be a ref to a commit, a commit hash or a tree hash directly.
       */
-    def treeWalk(hashish: String, callback: js.Function2[/* err */ js.Any, /* file_stream */ js.Any, Unit]): Unit = js.native
+    def treeWalk(hashish: String, callback: js.Function2[/* err */ js.Any, /* file_stream */ js.Any, Unit]): Unit
     
     /**
       * Import a packfile stream (simple-stream format) into the current database. This is used mostly for clone and fetch operations where the stream comes from a remote repo.
@@ -319,18 +312,18 @@ object JSGit {
       * opts.onError(error) - same thing, but for the error channel.
       * opts.deline - If this is truthy, the progress and error messages will be rechunked to be whole lines. They usually come jumbled in the internal sidechannel.
       */
-    def unpack(packFileStream: js.Any, opts: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def unpack(packFileStream: js.Any, opts: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * Update whatever branch HEAD is pointing to so that it points to hash.
       * You'll usually want to do this after creating a new commint in the HEAD branch.
       */
-    def updateHead(hash: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def updateHead(hash: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit
     
     /**
       * This is the generic helper that logWalk and treeWalk use. See js-git.js source for usage.
       */
-    def walk(seed: js.Any, scan: js.Any, loadKey: js.Any, compare: js.Any): js.Any = js.native
+    def walk(seed: js.Any, scan: js.Any, loadKey: js.Any, compare: js.Any): js.Any
   }
   object Repo {
     

@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object FetchError extends StObject {
     * The specified item could not be located.
     **/
   @js.native
-  sealed trait doesNotExist extends FetchError
+  sealed trait doesNotExist
+    extends StObject
+       with FetchError
   
   /**
     * The fetch operation timed out.
     **/
   @js.native
-  sealed trait noResponse extends FetchError
+  sealed trait noResponse
+    extends StObject
+       with FetchError
 }

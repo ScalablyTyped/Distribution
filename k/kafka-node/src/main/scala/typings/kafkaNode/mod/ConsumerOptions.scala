@@ -4,29 +4,27 @@ import typings.kafkaNode.kafkaNodeStrings.buffer
 import typings.kafkaNode.kafkaNodeStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumerOptions extends StObject {
   
-  var autoCommit: js.UndefOr[Boolean] = js.native
+  var autoCommit: js.UndefOr[Boolean] = js.undefined
   
-  var autoCommitIntervalMs: js.UndefOr[Double] = js.native
+  var autoCommitIntervalMs: js.UndefOr[Double] = js.undefined
   
-  var encoding: js.UndefOr[buffer | utf8] = js.native
+  var encoding: js.UndefOr[buffer | utf8] = js.undefined
   
-  var fetchMaxBytes: js.UndefOr[Double] = js.native
+  var fetchMaxBytes: js.UndefOr[Double] = js.undefined
   
-  var fetchMaxWaitMs: js.UndefOr[Double] = js.native
+  var fetchMaxWaitMs: js.UndefOr[Double] = js.undefined
   
-  var fetchMinBytes: js.UndefOr[Double] = js.native
+  var fetchMinBytes: js.UndefOr[Double] = js.undefined
   
-  var fromOffset: js.UndefOr[Boolean] = js.native
+  var fromOffset: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var keyEncoding: js.UndefOr[buffer | utf8] = js.native
+  var keyEncoding: js.UndefOr[buffer | utf8] = js.undefined
 }
 object ConsumerOptions {
   

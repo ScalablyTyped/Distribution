@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotRevision extends StObject {
   
   /** Reference to the game provided blob for this revision. */
-  var blob: js.UndefOr[SnapshotDataResource] = js.native
+  var blob: js.UndefOr[SnapshotDataResource] = js.undefined
   
   /** Reference to the cover image for this revision. */
-  var coverImage: js.UndefOr[SnapshotCoverImageResource] = js.native
+  var coverImage: js.UndefOr[SnapshotCoverImageResource] = js.undefined
   
   /** Output only. A server generated identifier of the snapshot revision. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Metadata for this snapshot revision. */
-  var metadata: js.UndefOr[SnapshotMetadata] = js.native
+  var metadata: js.UndefOr[SnapshotMetadata] = js.undefined
 }
 object SnapshotRevision {
   

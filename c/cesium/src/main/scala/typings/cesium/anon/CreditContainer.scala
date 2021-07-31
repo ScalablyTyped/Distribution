@@ -12,55 +12,53 @@ import typings.cesium.mod.TerrainProvider
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditContainer extends StObject {
   
-  var clock: js.UndefOr[typings.cesium.mod.Clock] = js.native
+  var clock: js.UndefOr[typings.cesium.mod.Clock] = js.undefined
   
-  var contextOptions: js.UndefOr[js.Any] = js.native
+  var contextOptions: js.UndefOr[js.Any] = js.undefined
   
-  var creditContainer: js.UndefOr[Element | String] = js.native
+  var creditContainer: js.UndefOr[Element | String] = js.undefined
   
-  var creditViewport: js.UndefOr[Element | String] = js.native
+  var creditViewport: js.UndefOr[Element | String] = js.undefined
   
-  var globe: js.UndefOr[typings.cesium.mod.Globe | `false`] = js.native
+  var globe: js.UndefOr[typings.cesium.mod.Globe | `false`] = js.undefined
   
-  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.native
+  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.undefined
   
-  var mapMode2D: js.UndefOr[MapMode2D] = js.native
+  var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   
-  var mapProjection: js.UndefOr[MapProjection] = js.native
+  var mapProjection: js.UndefOr[MapProjection] = js.undefined
   
-  var maximumRenderTimeChange: js.UndefOr[Double] = js.native
+  var maximumRenderTimeChange: js.UndefOr[Double] = js.undefined
   
-  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.native
+  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.undefined
   
-  var requestRenderMode: js.UndefOr[Boolean] = js.native
+  var requestRenderMode: js.UndefOr[Boolean] = js.undefined
   
-  var scene3DOnly: js.UndefOr[Boolean] = js.native
+  var scene3DOnly: js.UndefOr[Boolean] = js.undefined
   
-  var sceneMode: js.UndefOr[SceneMode] = js.native
+  var sceneMode: js.UndefOr[SceneMode] = js.undefined
   
-  var shadows: js.UndefOr[Boolean] = js.native
+  var shadows: js.UndefOr[Boolean] = js.undefined
   
-  var showRenderLoopErrors: js.UndefOr[Boolean] = js.native
+  var showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined
   
-  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.native
+  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.undefined
   
-  var skyBox: js.UndefOr[SkyBox | `false`] = js.native
+  var skyBox: js.UndefOr[SkyBox | `false`] = js.undefined
   
-  var targetFrameRate: js.UndefOr[Double] = js.native
+  var targetFrameRate: js.UndefOr[Double] = js.undefined
   
-  var terrainExaggeration: js.UndefOr[Double] = js.native
+  var terrainExaggeration: js.UndefOr[Double] = js.undefined
   
-  var terrainProvider: js.UndefOr[TerrainProvider] = js.native
+  var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
   
-  var terrainShadows: js.UndefOr[ShadowMode] = js.native
+  var terrainShadows: js.UndefOr[ShadowMode] = js.undefined
   
-  var useDefaultRenderLoop: js.UndefOr[Boolean] = js.native
+  var useDefaultRenderLoop: js.UndefOr[Boolean] = js.undefined
 }
 object CreditContainer {
   

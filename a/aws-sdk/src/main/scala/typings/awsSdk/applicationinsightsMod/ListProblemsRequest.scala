@@ -2,36 +2,34 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProblemsRequest extends StObject {
   
   /**
     * The time when the problem ended, in epoch seconds. If not specified, problems within the past seven days are returned.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.native
+  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[MaxEntities] = js.native
+  var MaxResults: js.UndefOr[MaxEntities] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.native
+  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
   
   /**
     * The time when the problem was detected, in epoch seconds. If you don't specify a time frame for the request, problems within the past seven days are returned.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.native
+  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
 }
 object ListProblemsRequest {
   

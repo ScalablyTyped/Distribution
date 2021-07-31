@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "VertexBuffer")
 @js.native
 class VertexBuffer protected ()
-  extends typings.playcanvas.pc.VertexBuffer {
+  extends StObject
+     with typings.playcanvas.pc.VertexBuffer {
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: typings.playcanvas.pc.VertexFormat,
@@ -33,14 +33,14 @@ class VertexBuffer protected ()
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: typings.playcanvas.pc.VertexFormat,
     numVertices: Double,
-    usage: js.UndefOr[scala.Nothing],
+    usage: Double,
     initialData: ArrayBuffer
   ) = this()
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: typings.playcanvas.pc.VertexFormat,
     numVertices: Double,
-    usage: Double,
+    usage: Unit,
     initialData: ArrayBuffer
   ) = this()
 }

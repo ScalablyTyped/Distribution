@@ -2,13 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IClusterPlacemarkProperties extends IDataManager {
+trait IClusterPlacemarkProperties
+  extends StObject
+     with IDataManager {
   
-  var geoObjects: js.Array[IGeoObject[IGeometry]] = js.native
+  var geoObjects: js.Array[IGeoObject[IGeometry]]
 }
 object IClusterPlacemarkProperties {
   

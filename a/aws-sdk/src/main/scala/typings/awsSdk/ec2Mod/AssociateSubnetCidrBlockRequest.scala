@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateSubnetCidrBlockRequest extends StObject {
   
   /**
     * The IPv6 CIDR block for your subnet. The subnet must have a /64 prefix length.
     */
-  var Ipv6CidrBlock: String = js.native
+  var Ipv6CidrBlock: String
   
   /**
     * The ID of your subnet.
     */
-  var SubnetId: typings.awsSdk.ec2Mod.SubnetId = js.native
+  var SubnetId: typings.awsSdk.ec2Mod.SubnetId
 }
 object AssociateSubnetCidrBlockRequest {
   

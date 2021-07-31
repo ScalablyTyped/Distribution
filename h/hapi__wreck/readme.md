@@ -11,8 +11,8 @@ HTTP Client Utilities
 | Full name          | @hapi/wreck |
 | Keywords           | utilities, http, client |
 | # releases         | 9 |
-| # dependents       | 43 |
-| # downloads        | 11733738 |
+| # dependents       | 50 |
+| # downloads        | 15415775 |
 | # stars            | 0 |
 
 ## Links

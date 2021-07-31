@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDashboardPublishedVersionRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the dashboard that you're updating.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId = js.native
+  var DashboardId: RestrictiveResourceId
   
   /**
     * The version number of the dashboard.
     */
-  var VersionNumber: typings.awsSdk.quicksightMod.VersionNumber = js.native
+  var VersionNumber: typings.awsSdk.quicksightMod.VersionNumber
 }
 object UpdateDashboardPublishedVersionRequest {
   

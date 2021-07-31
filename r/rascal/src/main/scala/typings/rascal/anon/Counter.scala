@@ -2,17 +2,15 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Counter extends StObject {
   
-  var counter: String = js.native
+  var counter: String
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object Counter {
   

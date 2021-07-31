@@ -3,12 +3,12 @@ package typings.aqb.mod
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TernaryOperation
-  extends Operation
+  extends StObject
+     with Operation
      with Instantiable5[
       /* operator1 */ String, 
       /* operator2 */ String, 

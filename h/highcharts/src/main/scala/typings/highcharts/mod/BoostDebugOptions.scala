@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoostDebugOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait BoostDebugOptions extends StObject {
     * outputted. Points are skipped if they are closer than 1 pixel from each
     * other.
     */
-  var showSkipSummary: js.UndefOr[Boolean] = js.native
+  var showSkipSummary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the WebGL to SVG buffer
@@ -28,7 +26,7 @@ trait BoostDebugOptions extends StObject {
     * If this property is set to true, the time it takes for the buffer copy to
     * complete is outputted.
     */
-  var timeBufferCopy: js.UndefOr[Boolean] = js.native
+  var timeBufferCopy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the building of the k-d
@@ -39,7 +37,7 @@ trait BoostDebugOptions extends StObject {
     * Note that the k-d tree is built async, and runs post-rendering.
     * Following, it does not affect the performance of the rendering itself.
     */
-  var timeKDTree: js.UndefOr[Boolean] = js.native
+  var timeKDTree: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the series rendering.
@@ -47,7 +45,7 @@ trait BoostDebugOptions extends StObject {
     * This outputs the time spent on actual rendering in the console when set
     * to true.
     */
-  var timeRendering: js.UndefOr[Boolean] = js.native
+  var timeRendering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the series processing.
@@ -55,7 +53,7 @@ trait BoostDebugOptions extends StObject {
     * This outputs the time spent on transforming the series data to vertex
     * buffers when set to true.
     */
-  var timeSeriesProcessing: js.UndefOr[Boolean] = js.native
+  var timeSeriesProcessing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the the WebGL setup.
@@ -63,7 +61,7 @@ trait BoostDebugOptions extends StObject {
     * This outputs the time spent on setting up the WebGL context, creating
     * shaders, and textures.
     */
-  var timeSetup: js.UndefOr[Boolean] = js.native
+  var timeSetup: js.UndefOr[Boolean] = js.undefined
 }
 object BoostDebugOptions {
   

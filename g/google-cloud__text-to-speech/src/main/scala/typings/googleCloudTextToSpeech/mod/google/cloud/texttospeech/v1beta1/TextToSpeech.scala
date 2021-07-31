@@ -7,7 +7,6 @@ import typings.protobufjs.mod.RPCImpl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a TextToSpeech */
@@ -22,8 +21,8 @@ class TextToSpeech protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls ListVoices.
@@ -53,6 +52,10 @@ class TextToSpeech protected () extends Service {
 }
 object TextToSpeech {
   
+  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new TextToSpeech service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -61,18 +64,14 @@ object TextToSpeech {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): TextToSpeech = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): TextToSpeech = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): TextToSpeech = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): TextToSpeech = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): TextToSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[TextToSpeech]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[TextToSpeech]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[TextToSpeech]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[TextToSpeech]
   
   /**
     * Callback as used by {@link google.cloud.texttospeech.v1beta1.TextToSpeech#listVoices}.

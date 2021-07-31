@@ -2,17 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacilitatedDetails extends StObject {
   
-  var merchantId: String = js.native
+  var merchantId: String
   
-  var merchantName: String = js.native
+  var merchantName: String
   
-  var paymentMethodNonce: String = js.native
+  var paymentMethodNonce: String
 }
 object FacilitatedDetails {
   

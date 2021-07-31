@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Folder extends StObject {
   
   // Number of children contained immediately within this container.
-  var childCount: js.UndefOr[NullableOption[Double]] = js.native
+  var childCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // A collection of properties defining the recommended view for the folder.
-  var view: js.UndefOr[NullableOption[FolderView]] = js.native
+  var view: js.UndefOr[NullableOption[FolderView]] = js.undefined
 }
 object Folder {
   

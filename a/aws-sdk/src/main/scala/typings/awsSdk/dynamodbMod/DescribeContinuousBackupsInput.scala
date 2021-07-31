@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContinuousBackupsInput extends StObject {
   
   /**
     * Name of the table for which the customer wants to check the continuous backups and point in time recovery settings.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object DescribeContinuousBackupsInput {
   

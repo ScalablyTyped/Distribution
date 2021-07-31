@@ -8,15 +8,13 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.RECOVER_EMAIL
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.VERIFY_EMAIL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionCodeInfo extends StObject {
   
-  var data: Email = js.native
+  var data: Email
   
-  var operation: PASSWORD_RESET | VERIFY_EMAIL | RECOVER_EMAIL | EMAIL_SIGNIN | ERROR = js.native
+  var operation: PASSWORD_RESET | VERIFY_EMAIL | RECOVER_EMAIL | EMAIL_SIGNIN | ERROR
 }
 object ActionCodeInfo {
   

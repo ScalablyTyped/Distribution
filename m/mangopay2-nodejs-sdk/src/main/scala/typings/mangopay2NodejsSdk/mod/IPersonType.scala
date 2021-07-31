@@ -5,23 +5,21 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonType extends StObject {
   
-  var Legal: LEGAL = js.native
+  var Legal: LEGAL
   
-  var Natural: NATURAL = js.native
+  var Natural: NATURAL
   
-  var NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified = js.native
+  var NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
 }
 object IPersonType {
   
   @scala.inline
-  def apply(Legal: LEGAL, Natural: NATURAL, NotSpecified: NotSpecified): IPersonType = {
-    val __obj = js.Dynamic.literal(Legal = Legal.asInstanceOf[js.Any], Natural = Natural.asInstanceOf[js.Any], NotSpecified = NotSpecified.asInstanceOf[js.Any])
+  def apply(): IPersonType = {
+    val __obj = js.Dynamic.literal(Legal = "LEGAL", Natural = "NATURAL", NotSpecified = "NotSpecified")
     __obj.asInstanceOf[IPersonType]
   }
   

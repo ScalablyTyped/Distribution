@@ -4,29 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderOptionsPluginMod {
   
-  @js.native
   trait LoaderOptionsPluginOptions
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
     /**
     	 * Whether loaders should be in debug mode or not. debug will be removed as of webpack 3
     	 */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Where loaders can be switched to minimize mode
     	 */
-    var minimize: js.UndefOr[Boolean] = js.native
+    var minimize: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * A configuration object that can be used to configure older loaders
     	 */
-    var options: js.UndefOr[Dictk] = js.native
+    var options: js.UndefOr[Dictk] = js.undefined
   }
   object LoaderOptionsPluginOptions {
     

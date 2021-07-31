@@ -2,15 +2,13 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 小程序帐号信息 */
-@js.native
 trait MiniProgram extends StObject {
   
   /** 小程序 appId */
-  var appId: String = js.native
+  var appId: String
 }
 object MiniProgram {
   

@@ -76,7 +76,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceMod {
@@ -286,7 +285,7 @@ object instanceMod {
     
     def addSchema(schema: js.Any): FastifyInstance[RawServer, RawRequest, RawReply, Logger] = js.native
     
-    def after(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
+    def after(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
     def after(afterListener: js.Function1[/* err */ Error, Unit]): FastifyInstance[RawServer, RawRequest, RawReply, Logger] = js.native
     
     def all[RouteGeneric /* <: RouteGenericInterface */, ContextConfig](
@@ -305,7 +304,7 @@ object instanceMod {
     @JSName("all")
     var all_Original: RouteShorthandMethod[RawServer, RawRequest, RawReply] = js.native
     
-    def close(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
+    def close(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
     def close(closeListener: js.Function0[Unit]): FastifyInstance[RawServer, RawRequest, RawReply, Logger] = js.native
     
     // should be able to define something useful with the decorator getter/setter pattern using Generics to enfore the users function returns what they expect it to
@@ -356,7 +355,7 @@ object instanceMod {
     
     def getSchema(schemaId: String): js.Any = js.native
     
-    def getSchemas(): Record[String, _] = js.native
+    def getSchemas(): Record[String, js.Any] = js.native
     
     @JSName("get")
     var get_Original: RouteShorthandMethod[RawServer, RawRequest, RawReply] = js.native
@@ -399,7 +398,6 @@ object instanceMod {
     def listen(opts: Backlog): js.Promise[String] = js.native
     def listen(opts: Backlog, callback: js.Function2[/* err */ Error, /* address */ String, Unit]): Unit = js.native
     def listen(port: String): js.Promise[String] = js.native
-    def listen(port: String, address: js.UndefOr[scala.Nothing], backlog: Double): js.Promise[String] = js.native
     def listen(port: String, address: String): js.Promise[String] = js.native
     def listen(port: String, address: String, backlog: Double): js.Promise[String] = js.native
     def listen(
@@ -409,9 +407,9 @@ object instanceMod {
       callback: js.Function2[/* err */ Error, /* address */ String, Unit]
     ): Unit = js.native
     def listen(port: String, address: String, callback: js.Function2[/* err */ Error, /* address */ String, Unit]): Unit = js.native
+    def listen(port: String, address: Unit, backlog: Double): js.Promise[String] = js.native
     def listen(port: String, callback: js.Function2[/* err */ Error, /* address */ String, Unit]): Unit = js.native
     def listen(port: Double): js.Promise[String] = js.native
-    def listen(port: Double, address: js.UndefOr[scala.Nothing], backlog: Double): js.Promise[String] = js.native
     def listen(port: Double, address: String): js.Promise[String] = js.native
     def listen(port: Double, address: String, backlog: Double): js.Promise[String] = js.native
     def listen(
@@ -421,6 +419,7 @@ object instanceMod {
       callback: js.Function2[/* err */ Error, /* address */ String, Unit]
     ): Unit = js.native
     def listen(port: Double, address: String, callback: js.Function2[/* err */ Error, /* address */ String, Unit]): Unit = js.native
+    def listen(port: Double, address: Unit, backlog: Double): js.Promise[String] = js.native
     def listen(port: Double, callback: js.Function2[/* err */ Error, /* address */ String, Unit]): Unit = js.native
     
     var log: Logger = js.native
@@ -496,22 +495,20 @@ object instanceMod {
     @JSName("put")
     var put_Original: RouteShorthandMethod[RawServer, RawRequest, RawReply] = js.native
     
-    def ready(): (FastifyInstance[RawServer, RawRequest, RawReply, FastifyLoggerInstance]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
+    def ready(): (FastifyInstance[RawServer, RawRequest, RawReply, FastifyLoggerInstance]) & js.Thenable[Unit] = js.native
     def ready(readyListener: js.Function1[/* err */ Error, Unit]): FastifyInstance[RawServer, RawRequest, RawReply, Logger] = js.native
     
-    def register[Options /* <: FastifyPluginOptions */](plugin: js.Promise[Default[Options] | DefaultFastifyPluginAsync[Options]]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
+    def register[Options /* <: FastifyPluginOptions */](plugin: js.Promise[Default[Options] | DefaultFastifyPluginAsync[Options]]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
     def register[Options /* <: FastifyPluginOptions */](
       plugin: js.Promise[Default[Options] | DefaultFastifyPluginAsync[Options]],
       opts: FastifyRegisterOptions[Options]
-    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
-    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginAsync[Options, RawServerDefault]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
-    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginAsync[Options, RawServerDefault], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
-    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginCallback[Options, RawServerDefault]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
-    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginCallback[Options, RawServerDefault], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]] = js.native
+    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginAsync[Options, RawServerDefault]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginAsync[Options, RawServerDefault], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginCallback[Options, RawServerDefault]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */](plugin: FastifyPluginCallback[Options, RawServerDefault], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit] = js.native
     @JSName("register")
-    var register_Original: FastifyRegister[
-        (FastifyInstance[RawServer, RawRequest, RawReply, Logger]) with js.Thenable[js.UndefOr[scala.Nothing]]
-      ] = js.native
+    var register_Original: FastifyRegister[(FastifyInstance[RawServer, RawRequest, RawReply, Logger]) & js.Thenable[Unit]] = js.native
     
     def route[RouteGeneric /* <: RouteGenericInterface */, ContextConfig](opts: RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): FastifyInstance[RawServer, RawRequest, RawReply, Logger] = js.native
     

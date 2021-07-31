@@ -6,93 +6,91 @@ import typings.octokitTypes.octokitTypesStrings.public
 import typings.octokitTypes.octokitTypesStrings.visibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateEndpoint extends StObject {
   
   /**
     * Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
     */
-  var allow_merge_commit: js.UndefOr[Boolean] = js.native
+  var allow_merge_commit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
     */
-  var allow_rebase_merge: js.UndefOr[Boolean] = js.native
+  var allow_rebase_merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
     */
-  var allow_squash_merge: js.UndefOr[Boolean] = js.native
+  var allow_squash_merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Updates the default branch for this repository.
     */
-  var default_branch: js.UndefOr[String] = js.native
+  var default_branch: js.UndefOr[String] = js.undefined
   
   /**
     * Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion.
     */
-  var delete_branch_on_merge: js.UndefOr[Boolean] = js.native
+  var delete_branch_on_merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A short description of the repository.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Either `true` to enable issues for this repository or `false` to disable them.
     */
-  var has_issues: js.UndefOr[Boolean] = js.native
+  var has_issues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either `true` to enable projects for this repository or `false` to disable them. **Note:** If you're creating a repository in an organization that has disabled repository projects, the default is `false`, and if you pass `true`, the API returns an error.
     */
-  var has_projects: js.UndefOr[Boolean] = js.native
+  var has_projects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either `true` to enable the wiki for this repository or `false` to disable it.
     */
-  var has_wiki: js.UndefOr[Boolean] = js.native
+  var has_wiki: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A URL with more information about the repository.
     */
-  var homepage: js.UndefOr[String] = js.native
+  var homepage: js.UndefOr[String] = js.undefined
   
   /**
     * Either `true` to make this repo available as a template repository or `false` to prevent it.
     */
-  var is_template: js.UndefOr[Boolean] = js.native
+  var is_template: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the repository.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Either `true` to make the repository private or `false` to make it public. Default: `false`.
     * **Note**: You will get a `422` error if the organization restricts [changing repository visibility](https://docs.github.com/articles/repository-permission-levels-for-an-organization#changing-the-visibility-of-repositories) to organization owners and a non-owner tries to change the value of private. **Note**: You will get a `422` error if the organization restricts [changing repository visibility](https://docs.github.com/articles/repository-permission-levels-for-an-organization#changing-the-visibility-of-repositories) to organization owners and a non-owner tries to change the value of private.
     */
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`. The `visibility` parameter overrides the `private` parameter when you use both along with the `nebula-preview` preview header.
     */
   var visibility: js.UndefOr[
     public | `private` | typings.octokitTypes.octokitTypesStrings.visibility | internal
-  ] = js.native
+  ] = js.undefined
 }
 object ReposUpdateEndpoint {
   

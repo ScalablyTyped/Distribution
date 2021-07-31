@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBotAliasRequest extends StObject {
   
   /**
     * The name of the bot that the alias points to.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     * The name of the alias to delete. The name is case sensitive. 
     */
-  var name: AliasName = js.native
+  var name: AliasName
 }
 object DeleteBotAliasRequest {
   

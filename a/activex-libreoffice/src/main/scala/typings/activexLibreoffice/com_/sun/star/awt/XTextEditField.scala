@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for password fields. */
-@js.native
-trait XTextEditField extends XInterface {
+trait XTextEditField
+  extends StObject
+     with XInterface {
   
   /** sets the character to display as a substitute on user input. */
-  def setEchoChar(cEcho: String): Unit = js.native
+  def setEchoChar(cEcho: String): Unit
 }
 object XTextEditField {
   

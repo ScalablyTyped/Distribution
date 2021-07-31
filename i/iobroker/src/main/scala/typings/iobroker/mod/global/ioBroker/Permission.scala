@@ -2,17 +2,15 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /** Which kind of operation is required */
-  var operation: String = js.native
+  var operation: String
   
   /** The type of the permission */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Permission {
   

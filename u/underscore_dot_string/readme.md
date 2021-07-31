@@ -9,9 +9,9 @@ String manipulation extensions for Underscore.js javascript library.
 | ------------------ | :-------------: |
 | Full name          | underscore.string |
 | Keywords           | underscore, string |
-| # releases         | 2 |
-| # dependents       | 2514 |
-| # downloads        | 97515283 |
+| # releases         | 0 |
+| # dependents       | 2511 |
+| # downloads        | 98488038 |
 | # stars            | 56 |
 
 ## Links

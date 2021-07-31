@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,32 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XStatusbarController
   * @since LibreOffice 4.1
   */
-@js.native
 trait XStatusbarItem extends StObject {
   
   /** the accessible name of the status bar item */
-  var AccessibleName: String = js.native
+  var AccessibleName: String
   
   /** the command of the status bar item */
-  var Command: String = js.native
+  var Command: String
   
   /** the help text of the status bar item when extended help tips are on */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** the unique ID of the control within the status bar */
-  var ItemId: Double = js.native
+  var ItemId: Double
   
   /**
     * the rectangle on the status bar device onto which the item is drawn
     * @see com.sun.star.frame.XStatusbarController.paint()
     */
-  var ItemRect: Rectangle = js.native
+  var ItemRect: Rectangle
   
   /** the offset between this status bar item and the following */
-  var Offset: Double = js.native
+  var Offset: Double
   
   /** the help text of the status bar item when help tips are on */
-  var QuickHelpText: String = js.native
+  var QuickHelpText: String
   
   /**
     * the style of the status bar item
@@ -48,22 +46,22 @@ trait XStatusbarItem extends StObject {
     * com.sun.star.ui.ItemStyle.DRAW_FLAT}{@link com.sun.star.ui.ItemStyle.AUTO_SIZE}{@link com.sun.star.ui.ItemStyle.OWNER_DRAW}
     * @see com.sun.star.ui.ItemStyle
     */
-  var Style: Double = js.native
+  var Style: Double
   
   /** the text of status bar item */
-  var Text: String = js.native
+  var Text: String
   
   /** whether the item is visible or not */
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
   /** the width of the status bar item */
-  var Width: Double = js.native
+  var Width: Double
   
   /**
     * forces repainting the item onto the status bar device
     * @see com.sun.star.frame.XStatusbarController.paint()
     */
-  def repaint(): Unit = js.native
+  def repaint(): Unit
 }
 object XStatusbarItem {
   

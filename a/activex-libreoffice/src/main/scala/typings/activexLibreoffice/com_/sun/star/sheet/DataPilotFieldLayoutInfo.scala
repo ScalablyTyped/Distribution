@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the layout information of a {@link DataPilotField} . */
-@js.native
 trait DataPilotFieldLayoutInfo extends StObject {
   
   /** If `TRUE` , an empty row is inserted in the {@link DataPilotTable} result table after the data (including the subtotals) for each item of the field. */
-  var AddEmptyLines: Boolean = js.native
+  var AddEmptyLines: Boolean
   
   /**
     * specifies the layout mode.
     * @see com.sun.star.sheet.DataPilotFieldLayoutMode
     */
-  var LayoutMode: Double = js.native
+  var LayoutMode: Double
 }
 object DataPilotFieldLayoutInfo {
   

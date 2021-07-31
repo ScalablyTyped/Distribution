@@ -5,20 +5,18 @@ import typings.openseadragon.mod.TiledImage
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cutoff extends StObject {
   
-  var cutoff: js.UndefOr[Double] = js.native
+  var cutoff: js.UndefOr[Double] = js.undefined
   
-  var image: HTMLImageElement = js.native
+  var image: HTMLImageElement
   
-  var tile: Tile = js.native
+  var tile: Tile
   
   // TODO: check type
-  var tiledImage: TiledImage = js.native
+  var tiledImage: TiledImage
 }
 object Cutoff {
   

@@ -2,13 +2,11 @@ package typings.nodeSnap7.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiVarsWriteResult extends StObject {
   
-  var Result: Double = js.native
+  var Result: Double
 }
 object MultiVarsWriteResult {
   

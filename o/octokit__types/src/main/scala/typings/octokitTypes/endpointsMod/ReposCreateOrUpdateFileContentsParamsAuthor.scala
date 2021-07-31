@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateOrUpdateFileContentsParamsAuthor extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var name: String = js.native
+  var name: String
 }
 object ReposCreateOrUpdateFileContentsParamsAuthor {
   

@@ -2,38 +2,36 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertImageOption extends StObject {
   
   /** 图像无法显示时的替代文本 */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[InsertImageCompleteCallback] = js.native
+  var complete: js.UndefOr[InsertImageCompleteCallback] = js.undefined
   
   /** data 被序列化为 name=value;name1=value2 的格式挂在属性 data-custom 上 */
-  var data: js.UndefOr[IAnyObject] = js.native
+  var data: js.UndefOr[IAnyObject] = js.undefined
   
   /** 添加到图片 img 标签上的类名 */
-  var extClass: js.UndefOr[String] = js.native
+  var extClass: js.UndefOr[String] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[InsertImageFailCallback] = js.native
+  var fail: js.UndefOr[InsertImageFailCallback] = js.undefined
   
   /** 图片高度 (pixels/百分比) */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /** 图片地址，仅支持 http(s)、base64、云图片(2.8.0)、临时文件(2.8.3)。 */
-  var src: String = js.native
+  var src: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[InsertImageSuccessCallback] = js.native
+  var success: js.UndefOr[InsertImageSuccessCallback] = js.undefined
   
   /** 图片宽度（pixels/百分比) */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object InsertImageOption {
   

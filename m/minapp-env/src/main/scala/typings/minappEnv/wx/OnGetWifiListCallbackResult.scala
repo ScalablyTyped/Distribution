@@ -3,14 +3,12 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnGetWifiListCallbackResult extends StObject {
   
   /** Wi-Fi 列表数据 */
-  var wifiList: Array[WifiInfo] = js.native
+  var wifiList: Array[WifiInfo]
 }
 object OnGetWifiListCallbackResult {
   

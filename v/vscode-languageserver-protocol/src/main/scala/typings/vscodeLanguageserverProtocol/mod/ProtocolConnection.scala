@@ -13,7 +13,6 @@ import typings.vscodeJsonrpc.mod.TraceOptions
 import typings.vscodeJsonrpc.mod.Tracer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,16 +31,16 @@ trait ProtocolConnection extends StObject {
   /**
     * An event emitter firing when the connection got closed.
     */
-  def onClose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onClose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onClose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**
@@ -53,16 +52,16 @@ trait ProtocolConnection extends StObject {
   /**
     * An event emitter firing when the connection got disposed.
     */
-  def onDispose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onDispose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onDispose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**
@@ -74,19 +73,19 @@ trait ProtocolConnection extends StObject {
   /**
     * An event emitter firing when an error occurs on the connection.
     */
-  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
-  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
     thisArgs: js.Any
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
     thisArgs: js.Any,
+    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
+  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onError(
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**
@@ -152,16 +151,16 @@ trait ProtocolConnection extends StObject {
     * An event emiiter firing when the connection receives a notification that is not
     * handled.
     */
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onUnhandledNotification(
-    listener: js.Function1[/* e */ NotificationMessage, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ NotificationMessage, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onUnhandledNotification(
-    listener: js.Function1[/* e */ NotificationMessage, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ NotificationMessage, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**

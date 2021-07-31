@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupQuery extends StObject {
   
   /**
     * The name of the resource group that is associated with the specified resource query.
     */
-  var GroupName: typings.awsSdk.resourcegroupsMod.GroupName = js.native
+  var GroupName: typings.awsSdk.resourcegroupsMod.GroupName
   
   /**
     * The resource query that determines which AWS resources are members of the associated resource group.
     */
-  var ResourceQuery: typings.awsSdk.resourcegroupsMod.ResourceQuery = js.native
+  var ResourceQuery: typings.awsSdk.resourcegroupsMod.ResourceQuery
 }
 object GroupQuery {
   

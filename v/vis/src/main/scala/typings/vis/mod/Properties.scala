@@ -4,21 +4,19 @@ import typings.vis.anon.Canvas
 import typings.vis.anon.Nodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Properties extends StObject {
   
-  var edges: js.Array[String] = js.native
+  var edges: js.Array[String]
   
-  var event: js.Array[String] = js.native
+  var event: js.Array[String]
   
-  var nodes: js.Array[String] = js.native
+  var nodes: js.Array[String]
   
-  var pointer: Canvas = js.native
+  var pointer: Canvas
   
-  var previousSelection: js.UndefOr[Nodes] = js.native
+  var previousSelection: js.UndefOr[Nodes] = js.undefined
 }
 object Properties {
   

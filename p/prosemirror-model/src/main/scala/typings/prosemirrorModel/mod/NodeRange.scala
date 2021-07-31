@@ -2,12 +2,11 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "NodeRange")
 @js.native
-class NodeRange[S /* <: Schema[_, _] */] protected () extends StObject {
+class NodeRange[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
   /**
     * Construct a node range. `$from` and `$to` should point into the
     * same node until at least the given `depth`, since a node range

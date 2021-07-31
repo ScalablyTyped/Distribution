@@ -11,11 +11,12 @@ import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.ui.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Diagram extends Widget {
+trait Diagram
+  extends StObject
+     with Widget {
   
   def addConnection(connection: js.Any, undoable: Boolean): Unit = js.native
   
@@ -55,12 +56,12 @@ trait Diagram extends Widget {
   
   def edit(item: js.Any): Unit = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[_] = js.native
+  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
   
-  def exportPDF(): JQueryPromise[_] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[_] = js.native
+  def exportPDF(): JQueryPromise[js.Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[_] = js.native
+  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
   
   def focus(): Unit = js.native
   
@@ -101,7 +102,7 @@ trait Diagram extends Widget {
   
   def save(): Unit = js.native
   
-  def saveAsPdf(): JQueryPromise[_] = js.native
+  def saveAsPdf(): JQueryPromise[js.Any] = js.native
   
   def saveEdit(): Unit = js.native
   

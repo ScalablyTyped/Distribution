@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfig extends StObject {
   
   /**
     * The percentage of robots receiving the deployment at the same time.
     */
-  var concurrentDeploymentPercentage: js.UndefOr[Percentage] = js.native
+  var concurrentDeploymentPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The download condition file.
     */
-  var downloadConditionFile: js.UndefOr[S3Object] = js.native
+  var downloadConditionFile: js.UndefOr[S3Object] = js.undefined
   
   /**
     * The percentage of deployments that need to fail before stopping deployment.
     */
-  var failureThresholdPercentage: js.UndefOr[Percentage] = js.native
+  var failureThresholdPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The amount of time, in seconds, to wait for deployment to a single robot to complete. Choose a time between 1 minute and 7 days. The default is 5 hours.
     */
-  var robotDeploymentTimeoutInSeconds: js.UndefOr[DeploymentTimeout] = js.native
+  var robotDeploymentTimeoutInSeconds: js.UndefOr[DeploymentTimeout] = js.undefined
 }
 object DeploymentConfig {
   

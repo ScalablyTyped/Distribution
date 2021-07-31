@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backup {
   
-  @js.native
   trait PlanAdvancedBackupSetting extends StObject {
     
     /**
       * Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to `{ WindowsVSS = "enabled" }` to enable Windows VSS backup option and create a VSS Windows backup.
       */
-    var backupOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var backupOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: `EC2`.
       */
-    var resourceType: js.UndefOr[Input[String]] = js.native
+    var resourceType: js.UndefOr[Input[String]] = js.undefined
   }
   object PlanAdvancedBackupSetting {
     
@@ -47,48 +45,47 @@ object backup {
     }
   }
   
-  @js.native
   trait PlanRule extends StObject {
     
     /**
       * The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
       */
-    var completionWindow: js.UndefOr[Input[Double]] = js.native
+    var completionWindow: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block(s) with copy operation settings. Detailed below.
       */
-    var copyActions: js.UndefOr[Input[js.Array[Input[PlanRuleCopyAction]]]] = js.native
+    var copyActions: js.UndefOr[Input[js.Array[Input[PlanRuleCopyAction]]]] = js.undefined
     
     /**
       * The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
       */
-    var lifecycle: js.UndefOr[Input[PlanRuleLifecycle]] = js.native
+    var lifecycle: js.UndefOr[Input[PlanRuleLifecycle]] = js.undefined
     
     /**
       * Metadata that you can assign to help organize the resources that you create.
       */
-    var recoveryPointTags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var recoveryPointTags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * An display name for a backup rule.
       */
-    var ruleName: Input[String] = js.native
+    var ruleName: Input[String]
     
     /**
       * A CRON expression specifying when AWS Backup initiates a backup job.
       */
-    var schedule: js.UndefOr[Input[String]] = js.native
+    var schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time in minutes before beginning a backup.
       */
-    var startWindow: js.UndefOr[Input[Double]] = js.native
+    var startWindow: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of a logical container where backups are stored.
       */
-    var targetVaultName: Input[String] = js.native
+    var targetVaultName: Input[String]
   }
   object PlanRule {
     
@@ -148,18 +145,17 @@ object backup {
     }
   }
   
-  @js.native
   trait PlanRuleCopyAction extends StObject {
     
     /**
       * An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
       */
-    var destinationVaultArn: Input[String] = js.native
+    var destinationVaultArn: Input[String]
     
     /**
       * The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
       */
-    var lifecycle: js.UndefOr[Input[PlanRuleCopyActionLifecycle]] = js.native
+    var lifecycle: js.UndefOr[Input[PlanRuleCopyActionLifecycle]] = js.undefined
   }
   object PlanRuleCopyAction {
     
@@ -183,18 +179,17 @@ object backup {
     }
   }
   
-  @js.native
   trait PlanRuleCopyActionLifecycle extends StObject {
     
     /**
       * Specifies the number of days after creation that a recovery point is moved to cold storage.
       */
-    var coldStorageAfter: js.UndefOr[Input[Double]] = js.native
+    var coldStorageAfter: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `coldStorageAfter`.
       */
-    var deleteAfter: js.UndefOr[Input[Double]] = js.native
+    var deleteAfter: js.UndefOr[Input[Double]] = js.undefined
   }
   object PlanRuleCopyActionLifecycle {
     
@@ -221,18 +216,17 @@ object backup {
     }
   }
   
-  @js.native
   trait PlanRuleLifecycle extends StObject {
     
     /**
       * Specifies the number of days after creation that a recovery point is moved to cold storage.
       */
-    var coldStorageAfter: js.UndefOr[Input[Double]] = js.native
+    var coldStorageAfter: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `coldStorageAfter`.
       */
-    var deleteAfter: js.UndefOr[Input[Double]] = js.native
+    var deleteAfter: js.UndefOr[Input[Double]] = js.undefined
   }
   object PlanRuleLifecycle {
     
@@ -259,23 +253,22 @@ object backup {
     }
   }
   
-  @js.native
   trait SelectionSelectionTag extends StObject {
     
     /**
       * The key in a key-value pair.
       */
-    var key: Input[String] = js.native
+    var key: Input[String]
     
     /**
       * An operation, such as `StringEquals`, that is applied to a key-value pair used to filter resources in a selection.
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
     
     /**
       * The value in a key-value pair.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object SelectionSelectionTag {
     

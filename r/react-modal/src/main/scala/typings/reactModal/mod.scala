@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,24 +35,21 @@ object mod {
     * and other assistive technologies while the modal is open.
     */
   /* static member */
-  @JSImport("react-modal", "setAppElement")
-  @js.native
-  def setAppElement(appElement: String): Unit = js.native
-  @JSImport("react-modal", "setAppElement")
-  @js.native
-  def setAppElement(appElement: HTMLElement): Unit = js.native
+  @scala.inline
+  def setAppElement(appElement: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppElement")(appElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setAppElement(appElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppElement")(appElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Aria extends StObject {
     
     /** Identifies the element (or elements) that describes the object. */
-    var describedby: js.UndefOr[String] = js.native
+    var describedby: js.UndefOr[String] = js.undefined
     
     /** Defines a string value that labels the current element. */
-    var labelledby: js.UndefOr[String] = js.native
+    var labelledby: js.UndefOr[String] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
   }
   object Aria {
     
@@ -86,14 +82,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Classes extends StObject {
     
-    var afterOpen: String = js.native
+    var afterOpen: String
     
-    var base: String = js.native
+    var base: String
     
-    var beforeClose: String = js.native
+    var beforeClose: String
   }
   object Classes {
     
@@ -121,14 +116,13 @@ object mod {
   type OnAfterOpenCallback = js.Function1[/* obj */ js.UndefOr[OnAfterOpenCallbackOptions], Unit]
   
   /** Describes overlay and content element references passed to onAfterOpen function */
-  @js.native
   trait OnAfterOpenCallbackOptions extends StObject {
     
     /** content element reference */
-    var contentEl: HTMLDivElement = js.native
+    var contentEl: HTMLDivElement
     
     /** overlay element reference */
-    var overlayEl: Element = js.native
+    var overlayEl: Element
   }
   object OnAfterOpenCallbackOptions {
     
@@ -149,88 +143,87 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
     /* Set this to properly hide your application from assistive screenreaders and other assistive technologies while the modal is open. */
-    var appElement: js.UndefOr[HTMLElement | js.Object] = js.native
+    var appElement: js.UndefOr[HTMLElement | js.Object] = js.undefined
     
     /* Additional aria attributes. */
-    var aria: js.UndefOr[Aria] = js.native
+    var aria: js.UndefOr[Aria] = js.undefined
     
     /* Boolean indicating if the appElement should be hidden. Defaults to true. */
-    var ariaHideApp: js.UndefOr[Boolean] = js.native
+    var ariaHideApp: js.UndefOr[Boolean] = js.undefined
     
     /* String className to be applied to the document.body (must be a constant string). When set to null it doesn't add any class to document.body. */
-    var bodyOpenClassName: js.UndefOr[String | Null] = js.native
+    var bodyOpenClassName: js.UndefOr[String | Null] = js.undefined
     
     /* String or object className to be applied to the modal content. */
-    var className: js.UndefOr[String | Classes] = js.native
+    var className: js.UndefOr[String | Classes] = js.undefined
     
     /* Number indicating the milliseconds to wait before closing the modal. Defaults to zero (no timeout). */
-    var closeTimeoutMS: js.UndefOr[Double] = js.native
+    var closeTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /* String indicating how the content container should be announced to screenreaders. */
-    var contentLabel: js.UndefOr[String] = js.native
+    var contentLabel: js.UndefOr[String] = js.undefined
     
     /* Function accepting the ref for the content */
-    var contentRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.native
+    var contentRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.undefined
     
     /* Additional data attributes to be applied to to the modal content in the form of "data-*" */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /* String className to be applied to the document.html (must be a constant string). Defaults to null. */
-    var htmlOpenClassName: js.UndefOr[String | Null] = js.native
+    var htmlOpenClassName: js.UndefOr[String | Null] = js.undefined
     
     /* String value of an id attribute to be applied to the modal content */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /* Boolean describing if the modal should be shown or not. Defaults to false. */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /* Function that will be run after the modal has closed. */
-    var onAfterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /* Function that will be run after the modal has opened. */
-    var onAfterOpen: js.UndefOr[OnAfterOpenCallback] = js.native
+    var onAfterOpen: js.UndefOr[OnAfterOpenCallback] = js.undefined
     
     /* Function that will be run when the modal is requested to be closed, prior to actually closing. */
     var onRequestClose: js.UndefOr[
         js.Function1[/* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /* String or object className to be applied to the overlay. */
-    var overlayClassName: js.UndefOr[String | Classes] = js.native
+    var overlayClassName: js.UndefOr[String | Classes] = js.undefined
     
     /* Function accepting the ref for the overlay */
-    var overlayRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.native
+    var overlayRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.undefined
     
     /* Function that will be called to get the parent element that the modal will be attached to. */
-    var parentSelector: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var parentSelector: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
     /* String className to be applied to the portal. Defaults to "ReactModalPortal". */
-    var portalClassName: js.UndefOr[String] = js.native
+    var portalClassName: js.UndefOr[String] = js.undefined
     
     /* String indicating the role of the modal, allowing the 'dialog' role to be applied if desired. Defaults to "dialog". */
-    var role: js.UndefOr[String | Null] = js.native
+    var role: js.UndefOr[String | Null] = js.undefined
     
     /* Boolean indicating if pressing the esc key should close the modal */
-    var shouldCloseOnEsc: js.UndefOr[Boolean] = js.native
+    var shouldCloseOnEsc: js.UndefOr[Boolean] = js.undefined
     
     /* Boolean indicating if the overlay should close the modal. Defaults to true. */
-    var shouldCloseOnOverlayClick: js.UndefOr[Boolean] = js.native
+    var shouldCloseOnOverlayClick: js.UndefOr[Boolean] = js.undefined
     
     /* Boolean indicating if the modal should be focused after render */
-    var shouldFocusAfterRender: js.UndefOr[Boolean] = js.native
+    var shouldFocusAfterRender: js.UndefOr[Boolean] = js.undefined
     
     /* Boolean indicating if the modal should restore focus to the element that had focus prior to its display. */
-    var shouldReturnFocusAfterClose: js.UndefOr[Boolean] = js.native
+    var shouldReturnFocusAfterClose: js.UndefOr[Boolean] = js.undefined
     
     /* Object indicating styles to be used for the modal, divided into overlay and content styles. */
-    var style: js.UndefOr[Styles] = js.native
+    var style: js.UndefOr[Styles] = js.undefined
     
     /* String value of data-test-id attibute to be applied to to the modal content. */
-    var testId: js.UndefOr[String] = js.native
+    var testId: js.UndefOr[String] = js.undefined
   }
   object Props {
     
@@ -414,12 +407,11 @@ object mod {
     var portal: Null | Content = js.native
   }
   
-  @js.native
   trait Styles extends StObject {
     
-    var content: js.UndefOr[CSSProperties] = js.native
+    var content: js.UndefOr[CSSProperties] = js.undefined
     
-    var overlay: js.UndefOr[CSSProperties] = js.native
+    var overlay: js.UndefOr[CSSProperties] = js.undefined
   }
   object Styles {
     

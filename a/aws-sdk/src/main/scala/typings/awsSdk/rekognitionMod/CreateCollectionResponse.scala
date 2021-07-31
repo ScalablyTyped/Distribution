@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCollectionResponse extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the collection. You can use this to manage permissions on your resources. 
     */
-  var CollectionArn: js.UndefOr[String] = js.native
+  var CollectionArn: js.UndefOr[String] = js.undefined
   
   /**
     * Version number of the face detection model associated with the collection you are creating.
     */
-  var FaceModelVersion: js.UndefOr[String] = js.native
+  var FaceModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP status code indicating the result of the operation.
     */
-  var StatusCode: js.UndefOr[UInteger] = js.native
+  var StatusCode: js.UndefOr[UInteger] = js.undefined
 }
 object CreateCollectionResponse {
   

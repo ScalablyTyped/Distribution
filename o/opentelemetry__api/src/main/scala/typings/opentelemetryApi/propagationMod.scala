@@ -6,7 +6,6 @@ import typings.opentelemetryApi.textMapPropagatorMod.TextMapPropagator
 import typings.opentelemetryContextBase.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propagationMod {
@@ -29,7 +28,7 @@ object propagationMod {
       * @param context Context which the newly created context will inherit from. Defaults to the currently active context.
       */
     def extract[Carrier](carrier: Carrier): Context = js.native
-    def extract[Carrier](carrier: Carrier, getter: js.UndefOr[scala.Nothing], context: Context): Context = js.native
+    def extract[Carrier](carrier: Carrier, getter: Unit, context: Context): Context = js.native
     def extract[Carrier](carrier: Carrier, getter: GetterFunction[Carrier]): Context = js.native
     def extract[Carrier](carrier: Carrier, getter: GetterFunction[Carrier], context: Context): Context = js.native
     
@@ -41,7 +40,7 @@ object propagationMod {
       * @param context Context carrying tracing data to inject. Defaults to the currently active context.
       */
     def inject[Carrier](carrier: Carrier): Unit = js.native
-    def inject[Carrier](carrier: Carrier, setter: js.UndefOr[scala.Nothing], context: Context): Unit = js.native
+    def inject[Carrier](carrier: Carrier, setter: Unit, context: Context): Unit = js.native
     def inject[Carrier](carrier: Carrier, setter: SetterFunction[Carrier]): Unit = js.native
     def inject[Carrier](carrier: Carrier, setter: SetterFunction[Carrier], context: Context): Unit = js.native
     
@@ -64,8 +63,7 @@ object propagationMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Propagator API */
-    @JSImport("@opentelemetry/api/build/src/api/propagation", "PropagationAPI.getInstance")
-    @js.native
-    def getInstance(): PropagationAPI = js.native
+    @scala.inline
+    def getInstance(): PropagationAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[PropagationAPI]
   }
 }

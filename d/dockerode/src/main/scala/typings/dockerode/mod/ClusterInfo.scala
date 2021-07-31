@@ -2,25 +2,25 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterInfo extends Meta {
+trait ClusterInfo
+  extends StObject
+     with Meta {
   
-  var DataPathPort: Double = js.native
+  var DataPathPort: Double
   
-  var DefaultAddrPool: js.Array[String] = js.native
+  var DefaultAddrPool: js.Array[String]
   
-  var ID: String = js.native
+  var ID: String
   
-  var RootRotationInProgress: Boolean = js.native
+  var RootRotationInProgress: Boolean
   
-  var Spec: typings.dockerode.mod.Spec = js.native
+  var Spec: typings.dockerode.mod.Spec
   
-  var SubnetSize: Double = js.native
+  var SubnetSize: Double
   
-  var TLSInfo: typings.dockerode.mod.TLSInfo = js.native
+  var TLSInfo: typings.dockerode.mod.TLSInfo
 }
 object ClusterInfo {
   

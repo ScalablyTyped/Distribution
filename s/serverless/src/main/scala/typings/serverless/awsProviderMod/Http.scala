@@ -4,27 +4,25 @@ import typings.serverless.serverlessStrings.lambda
 import typings.serverless.serverlessStrings.mock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Http extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var authorizer: js.UndefOr[HttpAuthorizer] = js.native
+  var authorizer: js.UndefOr[HttpAuthorizer] = js.undefined
   
-  var cors: js.UndefOr[Boolean | HttpCors] = js.native
+  var cors: js.UndefOr[Boolean | HttpCors] = js.undefined
   
-  var integration: js.UndefOr[lambda | mock] = js.native
+  var integration: js.UndefOr[lambda | mock] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var request: js.UndefOr[HttpRequestValidation] = js.native
+  var request: js.UndefOr[HttpRequestValidation] = js.undefined
 }
 object Http {
   

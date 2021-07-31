@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,12 +18,10 @@ object mod {
   @scala.inline
   def decode_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
   
-  @JSImport("hi-base32", "encode")
-  @js.native
-  def encode(input: Input): String = js.native
-  @JSImport("hi-base32", "encode")
-  @js.native
-  def encode(input: Input, asciiOnly: Boolean): String = js.native
+  @scala.inline
+  def encode(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(input: Input, asciiOnly: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], asciiOnly.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait Decode_ extends StObject {

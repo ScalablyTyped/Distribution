@@ -4,24 +4,28 @@ import typings.wonderJs.engineMaterialMod.EngineMaterial
 import typings.wonderJs.engineShaderLibMod.EngineShaderLib
 import typings.wonderJs.programMod.Program
 import typings.wonderJs.quadCommandMod.QuadCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/CommonShaderLib", JSImport.Namespace)
-@js.native
-object commonShaderLibMod extends js.Object {
+object commonShaderLibMod {
+  
+  @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/CommonShaderLib", "CommonShaderLib")
   @js.native
   class CommonShaderLib () extends EngineShaderLib {
+    
     def sendShaderVariables(program: Program, cmd: QuadCommand, material: EngineMaterial): Unit = js.native
+    
     def setShaderDefinition(cmd: QuadCommand, material: EngineMaterial): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object CommonShaderLib extends js.Object {
-    def create(): CommonShaderLib = js.native
+  object CommonShaderLib {
+    
+    @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/CommonShaderLib", "CommonShaderLib")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): CommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonShaderLib]
   }
-  
 }
-

@@ -6,29 +6,27 @@ import typings.typescript.typescriptStrings.prefix
 import typings.typescript.typescriptStrings.substring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateToItem extends StObject {
   
-  var containerKind: ScriptElementKind = js.native
+  var containerKind: ScriptElementKind
   
-  var containerName: java.lang.String = js.native
+  var containerName: java.lang.String
   
-  var fileName: java.lang.String = js.native
+  var fileName: java.lang.String
   
-  var isCaseSensitive: Boolean = js.native
+  var isCaseSensitive: Boolean
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var matchKind: exact | prefix | substring | camelCase = js.native
+  var matchKind: exact | prefix | substring | camelCase
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object NavigateToItem {
   

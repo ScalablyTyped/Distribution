@@ -3,10 +3,8 @@ package typings.joi.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UriOptions extends StObject {
   
   /**
@@ -15,32 +13,32 @@ trait UriOptions extends StObject {
     *
     * @default false
     */
-  var allowQuerySquareBrackets: js.UndefOr[Boolean] = js.native
+  var allowQuerySquareBrackets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow relative URIs.
     *
     * @default false
     */
-  var allowRelative: js.UndefOr[Boolean] = js.native
+  var allowRelative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Validate the domain component using the options specified in `string.domain()`.
     */
-  var domain: js.UndefOr[DomainOptions] = js.native
+  var domain: js.UndefOr[DomainOptions] = js.undefined
   
   /**
     * Restrict only relative URIs.
     *
     * @default false
     */
-  var relativeOnly: js.UndefOr[Boolean] = js.native
+  var relativeOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies one or more acceptable Schemes, should only include the scheme name.
     * Can be an Array or String (strings are automatically escaped for use in a Regular Expression).
     */
-  var scheme: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var scheme: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
 }
 object UriOptions {
   

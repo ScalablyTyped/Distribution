@@ -10,9 +10,9 @@ Utility collections for making Japanese text old-fashioned.
 | ------------------ | :-------------: |
 | Full name          | kyujitai |
 | Keywords           | kyujitai, japanese, text, kanji, Unicode, IVS, conversion |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 650 |
+| # downloads        | 482 |
 | # stars            | 1 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageAction extends StObject {
   
-  var actionTimetoken: String = js.native
+  var actionTimetoken: String
   
-  var messageTimetoken: String = js.native
+  var messageTimetoken: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var value: String = js.native
+  var value: String
 }
 object MessageAction {
   

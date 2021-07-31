@@ -2,20 +2,18 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.10
-@js.native
 trait WebCLEvent extends StObject {
   
-  def getInfo(name: EventInfo): js.Any = js.native
+  def getInfo(name: EventInfo): js.Any
   
-  def getProfilingInfo(name: ProfilingInfo): Double = js.native
+  def getProfilingInfo(name: ProfilingInfo): Double
   
-  def release(): Unit = js.native
+  def release(): Unit
   
-  def setCallback(commandExecCallbackType: CommandExecutionStatus, notify: WebCLCallback): Unit = js.native
+  def setCallback(commandExecCallbackType: CommandExecutionStatus, notify: WebCLCallback): Unit
 }
 object WebCLEvent {
   

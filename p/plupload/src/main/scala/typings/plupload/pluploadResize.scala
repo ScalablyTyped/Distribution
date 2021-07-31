@@ -2,21 +2,19 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluploadResize extends StObject {
   
-  var crop: js.UndefOr[Boolean] = js.native
+  var crop: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var preserve_headers: js.UndefOr[Boolean] = js.native
+  var preserve_headers: js.UndefOr[Boolean] = js.undefined
   
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object pluploadResize {
   

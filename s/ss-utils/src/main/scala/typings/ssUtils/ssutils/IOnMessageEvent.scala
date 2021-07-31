@@ -2,13 +2,11 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOnMessageEvent extends StObject {
   
-  var data: String = js.native
+  var data: String
 }
 object IOnMessageEvent {
   

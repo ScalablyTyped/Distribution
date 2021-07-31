@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemAwareElement extends BaseElement {
+trait ItemAwareElement
+  extends StObject
+     with BaseElement {
   
-  var dataState: DataState = js.native
+  var dataState: DataState
   
-  var itemSubjectRef: ItemDefinition = js.native
+  var itemSubjectRef: ItemDefinition
 }
 object ItemAwareElement {
   

@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'allowAdditions'> */
-@js.native
 trait PickImplallowAdditions extends StObject {
   
-  var allowAdditions: Boolean = js.native
+  var allowAdditions: Boolean
 }
 object PickImplallowAdditions {
   

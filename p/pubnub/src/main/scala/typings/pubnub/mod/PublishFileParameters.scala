@@ -2,25 +2,23 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishFileParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var message: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[js.Any] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var storeInHistory: js.UndefOr[Boolean] = js.native
+  var storeInHistory: js.UndefOr[Boolean] = js.undefined
   
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object PublishFileParameters {
   

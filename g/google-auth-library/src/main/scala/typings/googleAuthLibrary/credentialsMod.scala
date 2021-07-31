@@ -2,17 +2,15 @@ package typings.googleAuthLibrary
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialsMod {
   
-  @js.native
   trait CredentialBody extends StObject {
     
-    var client_email: js.UndefOr[String] = js.native
+    var client_email: js.UndefOr[String] = js.undefined
     
-    var private_key: js.UndefOr[String] = js.native
+    var private_key: js.UndefOr[String] = js.undefined
   }
   object CredentialBody {
     
@@ -39,38 +37,37 @@ object credentialsMod {
     }
   }
   
-  @js.native
   trait CredentialRequest extends StObject {
     
     /**
       * A token that can be sent to a Google API.
       */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /**
       * The remaining lifetime of the access token in seconds.
       */
-    var expires_in: js.UndefOr[Double] = js.native
+    var expires_in: js.UndefOr[Double] = js.undefined
     
     /**
       * A JWT that contains identity information about the user that is digitally signed by Google.
       */
-    var id_token: js.UndefOr[String] = js.native
+    var id_token: js.UndefOr[String] = js.undefined
     
     /**
       * This field is only present if the access_type parameter was set to offline in the authentication request. For details, see Refresh tokens.
       */
-    var refresh_token: js.UndefOr[String] = js.native
+    var refresh_token: js.UndefOr[String] = js.undefined
     
     /**
       * The scopes of access granted by the access_token expressed as a list of space-delimited, case-sensitive strings.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /**
       * Identifies the type of token returned. At this time, this field always has the value Bearer.
       */
-    var token_type: js.UndefOr[String] = js.native
+    var token_type: js.UndefOr[String] = js.undefined
   }
   object CredentialRequest {
     
@@ -121,38 +118,37 @@ object credentialsMod {
     }
   }
   
-  @js.native
   trait Credentials extends StObject {
     
     /**
       * A token that can be sent to a Google API.
       */
-    var access_token: js.UndefOr[String | Null] = js.native
+    var access_token: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The time in ms at which this token is thought to expire.
       */
-    var expiry_date: js.UndefOr[Double | Null] = js.native
+    var expiry_date: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * A JWT that contains identity information about the user that is digitally signed by Google.
       */
-    var id_token: js.UndefOr[String | Null] = js.native
+    var id_token: js.UndefOr[String | Null] = js.undefined
     
     /**
       * This field is only present if the access_type parameter was set to offline in the authentication request. For details, see Refresh tokens.
       */
-    var refresh_token: js.UndefOr[String | Null] = js.native
+    var refresh_token: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The scopes of access granted by the access_token expressed as a list of space-delimited, case-sensitive strings.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /**
       * Identifies the type of token returned. At this time, this field always has the value Bearer.
       */
-    var token_type: js.UndefOr[String | Null] = js.native
+    var token_type: js.UndefOr[String | Null] = js.undefined
   }
   object Credentials {
     
@@ -218,26 +214,25 @@ object credentialsMod {
     }
   }
   
-  @js.native
   trait JWTInput extends StObject {
     
-    var client_email: js.UndefOr[String] = js.native
+    var client_email: js.UndefOr[String] = js.undefined
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
     
-    var private_key: js.UndefOr[String] = js.native
+    var private_key: js.UndefOr[String] = js.undefined
     
-    var private_key_id: js.UndefOr[String] = js.native
+    var private_key_id: js.UndefOr[String] = js.undefined
     
-    var project_id: js.UndefOr[String] = js.native
+    var project_id: js.UndefOr[String] = js.undefined
     
-    var quota_project_id: js.UndefOr[String] = js.native
+    var quota_project_id: js.UndefOr[String] = js.undefined
     
-    var refresh_token: js.UndefOr[String] = js.native
+    var refresh_token: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object JWTInput {
     

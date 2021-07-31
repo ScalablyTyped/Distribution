@@ -8,11 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentsViewModel extends Accessor {
+trait AttachmentsViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) being edited.

@@ -3,17 +3,15 @@ package typings.ngCordova.ngCordova
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceOrientationService extends StObject {
   
-  def clearWatch(watchID: Double): Unit = js.native
+  def clearWatch(watchID: Double): Unit
   
-  def getCurrentHeading(): IPromise[IDeviceOrientationHeading] = js.native
+  def getCurrentHeading(): IPromise[IDeviceOrientationHeading]
   
-  def watchHeading(options: IDeviceOrientationWatchOptions): IDeviceOrientationWatchPromise = js.native
+  def watchHeading(options: IDeviceOrientationWatchOptions): IDeviceOrientationWatchPromise
 }
 object IDeviceOrientationService {
   

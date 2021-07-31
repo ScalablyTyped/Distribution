@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RootCause extends StObject {
   
   /**
     *  The linked account value associated with the cost anomaly. 
     */
-  var LinkedAccount: js.UndefOr[GenericString] = js.native
+  var LinkedAccount: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The AWS Region associated with the cost anomaly. 
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The AWS service name associated with the cost anomaly. 
     */
-  var Service: js.UndefOr[GenericString] = js.native
+  var Service: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The UsageType value associated with the cost anomaly. 
     */
-  var UsageType: js.UndefOr[GenericString] = js.native
+  var UsageType: js.UndefOr[GenericString] = js.undefined
 }
 object RootCause {
   

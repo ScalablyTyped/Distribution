@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectAllRequestsTo extends StObject {
   
   /**
     * Name of the host where requests are redirected.
     */
-  var HostName: typings.awsSdk.s3Mod.HostName = js.native
+  var HostName: typings.awsSdk.s3Mod.HostName
   
   /**
     * Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
     */
-  var Protocol: js.UndefOr[typings.awsSdk.s3Mod.Protocol] = js.native
+  var Protocol: js.UndefOr[typings.awsSdk.s3Mod.Protocol] = js.undefined
 }
 object RedirectAllRequestsTo {
   

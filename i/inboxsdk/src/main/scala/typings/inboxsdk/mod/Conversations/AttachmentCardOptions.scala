@@ -2,32 +2,30 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ConversationsDescriptors
-@js.native
 trait AttachmentCardOptions extends StObject {
   
-  var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor] = js.native
+  var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]
   
-  var description: String = js.native
+  var description: String
   
-  var failoverPreviewIconUrl: String = js.native
+  var failoverPreviewIconUrl: String
   
-  var fileIconImageUrl: String = js.native
+  var fileIconImageUrl: String
   
-  var foldColor: js.UndefOr[String] = js.native
+  var foldColor: js.UndefOr[String] = js.undefined
   
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
-  def previewOnClick(event: PreviewClickEvent): Unit = js.native
+  def previewOnClick(event: PreviewClickEvent): Unit
   
-  var previewThumbnailUrl: String = js.native
+  var previewThumbnailUrl: String
   
-  var previewUrl: String = js.native
+  var previewUrl: String
   
-  var title: String = js.native
+  var title: String
 }
 object AttachmentCardOptions {
   

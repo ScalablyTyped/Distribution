@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAppsListResponse extends StObject {
   
   /**
     * The details of the AWS Firewall Manager applications list.
     */
-  var AppsList: js.UndefOr[AppsListData] = js.native
+  var AppsList: js.UndefOr[AppsListData] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the applications list.
     */
-  var AppsListArn: js.UndefOr[ResourceArn] = js.native
+  var AppsListArn: js.UndefOr[ResourceArn] = js.undefined
 }
 object PutAppsListResponse {
   

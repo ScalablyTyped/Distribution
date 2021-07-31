@@ -12,7 +12,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,7 +21,8 @@ object mod {
     @JSImport("clmtrackr", "default.tracker")
     @js.native
     class tracker ()
-      extends typings.clmtrackr.mod._default.tracker {
+      extends StObject
+         with typings.clmtrackr.mod._default.tracker {
       def this(params: TrackerParams) = this()
     }
     
@@ -35,26 +35,25 @@ object mod {
   
   type Model = js.Any
   
-  @js.native
   trait TrackerParams extends StObject {
     
     /** whether to use constant velocity model when fitting (default is true) */
-    var constantVelocity: js.UndefOr[Boolean] = js.native
+    var constantVelocity: js.UndefOr[Boolean] = js.undefined
     
     /** object with parameters for facedetection : */
-    var faceDetection: js.UndefOr[UseWebWorkers] = js.native
+    var faceDetection: js.UndefOr[UseWebWorkers] = js.undefined
     
     /** threshold for when to assume we've lost tracking (default is 0.50) */
-    var scoreThreshold: js.UndefOr[Double] = js.native
+    var scoreThreshold: js.UndefOr[Double] = js.undefined
     
     /** the size of the searchwindow around each point (default is 11) */
-    var searchWindow: js.UndefOr[Double] = js.native
+    var searchWindow: js.UndefOr[Double] = js.undefined
     
     /** whether to stop tracking when the fitting has converged (default is false) */
-    var stopOnConvergence: js.UndefOr[Boolean] = js.native
+    var stopOnConvergence: js.UndefOr[Boolean] = js.undefined
     
     /** whether to use webGL if it is available (default is true) */
-    var useWebGL: js.UndefOr[Boolean] = js.native
+    var useWebGL: js.UndefOr[Boolean] = js.undefined
   }
   object TrackerParams {
     

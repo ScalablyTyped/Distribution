@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightingProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait LightingProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Lighting.html#date)
     */
-  var date: js.UndefOr[DateProperties] = js.native
+  var date: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * Indicates whether to show shadows cast by the sun.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Lighting.html#directShadowsEnabled)
     */
-  var directShadowsEnabled: js.UndefOr[Boolean] = js.native
+  var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The UTC time zone offset in hours that should be displayed in the UI to represent the date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Lighting.html#displayUTCOffset)
     */
-  var displayUTCOffset: js.UndefOr[Double] = js.native
+  var displayUTCOffset: js.UndefOr[Double] = js.undefined
 }
 object LightingProperties {
   

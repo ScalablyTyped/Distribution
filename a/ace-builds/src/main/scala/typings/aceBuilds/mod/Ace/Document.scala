@@ -2,11 +2,12 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends EventEmitter {
+trait Document
+  extends StObject
+     with EventEmitter {
   
   def applyDelta(delta: Delta): Unit = js.native
   def applyDelta(delta: Delta, doNotValidate: Boolean): Unit = js.native

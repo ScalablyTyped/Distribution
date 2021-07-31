@@ -2,26 +2,24 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetLoadBalancerPoliciesOfListenerInput extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The external port of the load balancer.
     */
-  var LoadBalancerPort: AccessPointPort = js.native
+  var LoadBalancerPort: AccessPointPort
   
   /**
     * The names of the policies. This list must include all policies to be enabled. If you omit a policy that is currently enabled, it is disabled. If the list is empty, all current policies are disabled.
     */
-  var PolicyNames: typings.awsSdk.elbMod.PolicyNames = js.native
+  var PolicyNames: typings.awsSdk.elbMod.PolicyNames
 }
 object SetLoadBalancerPoliciesOfListenerInput {
   

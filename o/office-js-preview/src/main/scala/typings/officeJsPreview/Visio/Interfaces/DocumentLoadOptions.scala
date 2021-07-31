@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait DocumentLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var application: js.UndefOr[ApplicationLoadOptions] = js.native
+  var application: js.UndefOr[ApplicationLoadOptions] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[DocumentViewLoadOptions] = js.native
+  var view: js.UndefOr[DocumentViewLoadOptions] = js.undefined
 }
 object DocumentLoadOptions {
   

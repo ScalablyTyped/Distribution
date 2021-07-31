@@ -2,56 +2,61 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amBalloonMod {
   
   @JSImport("amcharts/AmBalloon", JSImport.Default)
   @js.native
-  class default () extends AmBalloon
-  
-  @js.native
-  trait AmBalloon extends StObject {
+  class default ()
+    extends StObject
+       with AmBalloon {
     
     /**
       * If this is set to true, border color instead of background color will be changed
       * when user rolls-over the slice, graph, etc.
       */
+    /* CompleteClass */
     var adjustBorderColor: Boolean = js.native
     
     /**
       * Balloon border opacity. Value range is 0 - 1.
       * @default 1
       */
+    /* CompleteClass */
     var borderAlpha: Double = js.native
     
     /**
       * Balloon border color. #FFFFFF
       */
+    /* CompleteClass */
     var borderColor: String = js.native
     
     /**
       * Balloon border thickness.
       * @default 2
       */
+    /* CompleteClass */
     var borderThickness: Double = js.native
     
     /**
       * Color of text in the balloon. #FFFFFF
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Balloon corner radius.
       * @default 6
       */
+    /* CompleteClass */
     var cornerRadius: Double = js.native
     
     /**
       * Balloon background opacity.
       * @default 1
       */
+    /* CompleteClass */
     var fillAlpha: Double = js.native
     
     /**
@@ -59,67 +64,189 @@ object amBalloonMod {
       * Only if "adjustBorderColor" is "true" this color will be used.
       * @default "#CC0000"
       */
+    /* CompleteClass */
     var fillColor: String = js.native
     
     /**
       * Size of text in the balloon. Chart's fontSize is used by default.
       */
+    /* CompleteClass */
     var fontSize: String = js.native
     
     /**
       * Hides balloon.
       */
-    def hide(): Unit = js.native
+    /* CompleteClass */
+    override def hide(): Unit = js.native
     
     /**
       * Horizontal padding of the balloon.
       * @default 8
       */
+    /* CompleteClass */
     var horizontalPadding: Double = js.native
     
     /**
       * The width of the pointer (arrow) "root". Only used if cornerRadius is 0.
       * @default 10
       */
+    /* CompleteClass */
     var pointerWidth: Double = js.native
     
     /**
       * Defines a square within which the balloon should appear.
       * Bounds are set by chart class, you don't need to call this method yourself.
       */
-    def setBounds(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
+    /* CompleteClass */
+    override def setBounds(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
     
     /**
       * Sets coordinates the balloon should point to.
       */
-    def setPosition(x: Double, y: Double): Unit = js.native
+    /* CompleteClass */
+    override def setPosition(x: Double, y: Double): Unit = js.native
     
     /**
       * Specifies the text which should be displayed.
       */
-    def show(value: String): Unit = js.native
+    /* CompleteClass */
+    override def show(value: String): Unit = js.native
     
     /**
       * If cornerRadius of a balloon is >0, showBullet is set to true for value balloons when ChartCursor is used.
       * If you don't want the bullet near the balloon, set it to false: chart.balloon.showBullet = false
       */
+    /* CompleteClass */
     var showBullet: Boolean = js.native
     
     /**
       * Text alignment, possible values "left", "middle" and "right" middle
       */
+    /* CompleteClass */
     var textAlign: String = js.native
     
     /**
       * Color of the text shadow. #000000
       */
+    /* CompleteClass */
     var textShadowColor: String = js.native
     
     /**
       * Vertical padding of the balloon.
       * @default 5
       */
+    /* CompleteClass */
     var verticalPadding: Double = js.native
+  }
+  
+  trait AmBalloon extends StObject {
+    
+    /**
+      * If this is set to true, border color instead of background color will be changed
+      * when user rolls-over the slice, graph, etc.
+      */
+    var adjustBorderColor: Boolean
+    
+    /**
+      * Balloon border opacity. Value range is 0 - 1.
+      * @default 1
+      */
+    var borderAlpha: Double
+    
+    /**
+      * Balloon border color. #FFFFFF
+      */
+    var borderColor: String
+    
+    /**
+      * Balloon border thickness.
+      * @default 2
+      */
+    var borderThickness: Double
+    
+    /**
+      * Color of text in the balloon. #FFFFFF
+      */
+    var color: String
+    
+    /**
+      * Balloon corner radius.
+      * @default 6
+      */
+    var cornerRadius: Double
+    
+    /**
+      * Balloon background opacity.
+      * @default 1
+      */
+    var fillAlpha: Double
+    
+    /**
+      * Balloon background color. Usually balloon background color is set by the chart.
+      * Only if "adjustBorderColor" is "true" this color will be used.
+      * @default "#CC0000"
+      */
+    var fillColor: String
+    
+    /**
+      * Size of text in the balloon. Chart's fontSize is used by default.
+      */
+    var fontSize: String
+    
+    /**
+      * Hides balloon.
+      */
+    def hide(): Unit
+    
+    /**
+      * Horizontal padding of the balloon.
+      * @default 8
+      */
+    var horizontalPadding: Double
+    
+    /**
+      * The width of the pointer (arrow) "root". Only used if cornerRadius is 0.
+      * @default 10
+      */
+    var pointerWidth: Double
+    
+    /**
+      * Defines a square within which the balloon should appear.
+      * Bounds are set by chart class, you don't need to call this method yourself.
+      */
+    def setBounds(left: Double, top: Double, right: Double, bottom: Double): Unit
+    
+    /**
+      * Sets coordinates the balloon should point to.
+      */
+    def setPosition(x: Double, y: Double): Unit
+    
+    /**
+      * Specifies the text which should be displayed.
+      */
+    def show(value: String): Unit
+    
+    /**
+      * If cornerRadius of a balloon is >0, showBullet is set to true for value balloons when ChartCursor is used.
+      * If you don't want the bullet near the balloon, set it to false: chart.balloon.showBullet = false
+      */
+    var showBullet: Boolean
+    
+    /**
+      * Text alignment, possible values "left", "middle" and "right" middle
+      */
+    var textAlign: String
+    
+    /**
+      * Color of the text shadow. #000000
+      */
+    var textShadowColor: String
+    
+    /**
+      * Vertical padding of the balloon.
+      * @default 5
+      */
+    var verticalPadding: Double
   }
   object AmBalloon {
     

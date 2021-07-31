@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilePathLengthRequestedEventOptions extends FilePathRequestedEventOptions {
+trait FilePathLengthRequestedEventOptions
+  extends StObject
+     with FilePathRequestedEventOptions {
   
   /** Number of bytes to be retained after the operation completes. */
-  var length: Double = js.native
+  var length: Double
 }
 object FilePathLengthRequestedEventOptions {
   

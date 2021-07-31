@@ -40,208 +40,206 @@ import typings.devextreme.mod.DevExpress.ui.format
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridDataSourceField extends StObject {
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowCrossGroupCalculation]
     */
-  var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.native
+  var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowExpandAll]
     */
-  var allowExpandAll: js.UndefOr[Boolean] = js.native
+  var allowExpandAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowFiltering]
     */
-  var allowFiltering: js.UndefOr[Boolean] = js.native
+  var allowFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowSorting]
     */
-  var allowSorting: js.UndefOr[Boolean] = js.native
+  var allowSorting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowSortingBySummary]
     */
-  var allowSortingBySummary: js.UndefOr[Boolean] = js.native
+  var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.area]
     */
-  var area: js.UndefOr[column | typings.devextreme.devextremeStrings.data | filter | row] = js.native
+  var area: js.UndefOr[column | typings.devextreme.devextremeStrings.data | filter | row] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.areaIndex]
     */
-  var areaIndex: js.UndefOr[Double] = js.native
+  var areaIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.calculateCustomSummary]
     */
-  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, _]] = js.native
+  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, js.Any]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.calculateSummaryValue]
     */
-  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.native
+  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.caption]
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.customizeText]
     */
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.dataField]
     */
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.dataType]
     */
-  var dataType: js.UndefOr[date | number | string_] = js.native
+  var dataType: js.UndefOr[date | number | string_] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.displayFolder]
     */
-  var displayFolder: js.UndefOr[String] = js.native
+  var displayFolder: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.expanded]
     */
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.filterType]
     */
-  var filterType: js.UndefOr[exclude | include] = js.native
+  var filterType: js.UndefOr[exclude | include] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.filterValues]
     */
-  var filterValues: js.UndefOr[js.Array[_]] = js.native
+  var filterValues: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.format]
     */
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.groupIndex]
     */
-  var groupIndex: js.UndefOr[Double] = js.native
+  var groupIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.groupInterval]
     */
-  var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.native
+  var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.groupName]
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.headerFilter]
     */
-  var headerFilter: js.UndefOr[AllowSearch] = js.native
+  var headerFilter: js.UndefOr[AllowSearch] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.isMeasure]
     */
-  var isMeasure: js.UndefOr[Boolean] = js.native
+  var isMeasure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.name]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.runningTotal]
     */
-  var runningTotal: js.UndefOr[column | row] = js.native
+  var runningTotal: js.UndefOr[column | row] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.selector]
     */
-  var selector: js.UndefOr[js.Function] = js.native
+  var selector: js.UndefOr[js.Function] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.showGrandTotals]
     */
-  var showGrandTotals: js.UndefOr[Boolean] = js.native
+  var showGrandTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.showTotals]
     */
-  var showTotals: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.showValues]
     */
-  var showValues: js.UndefOr[Boolean] = js.native
+  var showValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.sortBy]
     */
-  var sortBy: js.UndefOr[displayText | value | none] = js.native
+  var sortBy: js.UndefOr[displayText | value | none] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.sortBySummaryField]
     */
-  var sortBySummaryField: js.UndefOr[String] = js.native
+  var sortBySummaryField: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.sortBySummaryPath]
     */
-  var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.native
+  var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.sortOrder]
     */
-  var sortOrder: js.UndefOr[asc | desc] = js.native
+  var sortOrder: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.sortingMethod]
     */
-  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.native
+  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.summaryDisplayMode]
     */
   var summaryDisplayMode: js.UndefOr[
     absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.summaryType]
     */
-  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.native
+  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.visible]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.width]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.fields.wordWrapEnabled]
     */
-  var wordWrapEnabled: js.UndefOr[Boolean] = js.native
+  var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object PivotGridDataSourceField {
   
@@ -297,7 +295,7 @@ object PivotGridDataSourceField {
     def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def setCalculateCustomSummary(value: /* options */ SummaryProcess => _): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
+    def setCalculateCustomSummary(value: /* options */ SummaryProcess => js.Any): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCalculateCustomSummaryUndefined: Self = StObject.set(x, "calculateCustomSummary", js.undefined)
@@ -351,7 +349,7 @@ object PivotGridDataSourceField {
     def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def setFilterValues(value: js.Array[_]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
+    def setFilterValues(value: js.Array[js.Any]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)

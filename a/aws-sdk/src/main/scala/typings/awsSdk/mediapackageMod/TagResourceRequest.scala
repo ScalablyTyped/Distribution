@@ -2,15 +2,13 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
-  var Tags: mapOfString = js.native
+  var Tags: mapOfString
 }
 object TagResourceRequest {
   

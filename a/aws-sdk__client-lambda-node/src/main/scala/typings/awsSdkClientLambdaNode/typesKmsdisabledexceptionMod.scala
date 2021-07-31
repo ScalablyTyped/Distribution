@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsdisabledexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSDisabledExceptionDetails> * / any */ @js.native
-  trait KMSDisabledException extends InvokeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSDisabledExceptionDetails> * / any */ trait KMSDisabledException
+    extends StObject
+       with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSDisabledException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSDisabledException
   }
   object KMSDisabledException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSDisabledException): KMSDisabledException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSDisabledException = {
+      val __obj = js.Dynamic.literal(name = "KMSDisabledException")
       __obj.asInstanceOf[KMSDisabledException]
     }
     
@@ -30,18 +30,17 @@ object typesKmsdisabledexceptionMod {
     }
   }
   
-  @js.native
   trait KMSDisabledExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object KMSDisabledExceptionDetails {
     

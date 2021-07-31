@@ -2,69 +2,67 @@ package typings.materialChips
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCChipSetAdapter extends StObject {
     
     /**
       * Announces the message via an aria-live region.
       */
-    def announceMessage(message: String): Unit = js.native
+    def announceMessage(message: String): Unit
     
     /**
       * Calls Chip#focusPrimaryAction() on the chip at the given index.
       * @param index the index of the chip
       */
-    def focusChipPrimaryActionAtIndex(index: Double): Unit = js.native
+    def focusChipPrimaryActionAtIndex(index: Double): Unit
     
     /**
       * Calls Chip#focusTrailingAction() on the chip at the given index.
       * @param index the index of the chip
       */
-    def focusChipTrailingActionAtIndex(index: Double): Unit = js.native
+    def focusChipTrailingActionAtIndex(index: Double): Unit
     
     /**
       * @return the number of chips in the chip set.
       */
-    def getChipListCount(): Double = js.native
+    def getChipListCount(): Double
     
     /**
       * Returns the index of the chip at the given ID.
       * @param chipId the unique ID of the chip
       * @return the numerical index of the chip with the matching id or -1.
       */
-    def getIndexOfChipById(chipId: String): Double = js.native
+    def getIndexOfChipById(chipId: String): Double
     
     /**
       * @return true if the root element contains the given class name.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * @return true if the text direction is RTL.
       */
-    def isRTL(): Boolean = js.native
+    def isRTL(): Boolean
     
     /**
       * Removes the chip with the given index from the chip set.
       * Make sure to remove it from the chip list, too.
       */
-    def removeChipAtIndex(index: Double): Unit = js.native
+    def removeChipAtIndex(index: Double): Unit
     
     /**
       * Removes focus from the chip at the given index.
       * @param index the index of the chip
       */
-    def removeFocusFromChipAtIndex(index: Double): Unit = js.native
+    def removeFocusFromChipAtIndex(index: Double): Unit
     
     /**
       * Sets the selected state of the chip at the given index.
       */
-    def selectChipAtIndex(index: Double, isSelected: Boolean, shouldNotifyClients: Boolean): Unit = js.native
+    def selectChipAtIndex(index: Double, isSelected: Boolean, shouldNotifyClients: Boolean): Unit
   }
   object MDCChipSetAdapter {
     

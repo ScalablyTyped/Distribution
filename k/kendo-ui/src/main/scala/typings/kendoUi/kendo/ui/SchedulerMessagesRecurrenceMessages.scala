@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesRecurrenceMessages extends StObject {
   
-  var deleteRecurring: js.UndefOr[String] = js.native
+  var deleteRecurring: js.UndefOr[String] = js.undefined
   
-  var deleteWindowOccurrence: js.UndefOr[String] = js.native
+  var deleteWindowOccurrence: js.UndefOr[String] = js.undefined
   
-  var deleteWindowSeries: js.UndefOr[String] = js.native
+  var deleteWindowSeries: js.UndefOr[String] = js.undefined
   
-  var deleteWindowTitle: js.UndefOr[String] = js.native
+  var deleteWindowTitle: js.UndefOr[String] = js.undefined
   
-  var editRecurring: js.UndefOr[String] = js.native
+  var editRecurring: js.UndefOr[String] = js.undefined
   
-  var editWindowOccurrence: js.UndefOr[String] = js.native
+  var editWindowOccurrence: js.UndefOr[String] = js.undefined
   
-  var editWindowSeries: js.UndefOr[String] = js.native
+  var editWindowSeries: js.UndefOr[String] = js.undefined
   
-  var editWindowTitle: js.UndefOr[String] = js.native
+  var editWindowTitle: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesRecurrenceMessages {
   

@@ -11,58 +11,56 @@ import typings.reactVis.reactVisStrings.right
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SankeyProps extends StObject {
   
-  var align: js.UndefOr[justify | left | right | center] = js.native
+  var align: js.UndefOr[justify | left | right | center] = js.undefined
   
   // default: 'justify'
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var hasVoronoi: js.UndefOr[Boolean] = js.native
+  var hasVoronoi: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var height: Double = js.native
+  var height: Double
   
-  var hideLabels: js.UndefOr[Boolean] = js.native
+  var hideLabels: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var layout: js.UndefOr[Double] = js.native
+  var layout: js.UndefOr[Double] = js.undefined
   
   // default: 50
-  var links: js.Array[Source] = js.native
+  var links: js.Array[Source]
   
-  var margin: js.UndefOr[Margin | Double] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.undefined
   
   // default: {'top':20,'left':20,'right':20,'bottom':20}
-  var nodePadding: js.UndefOr[Double] = js.native
+  var nodePadding: js.UndefOr[Double] = js.undefined
   
-  var nodeWidth: js.UndefOr[Double] = js.native
-  
-  // default: 10
-  var nodes: js.Array[SankeyPoint] = js.native
-  
-  var onLinkClick: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
-  
-  var onLinkMouseOut: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
-  
-  var onLinkMouseOver: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
-  
-  var onValueClick: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
-  
-  var onValueMouseOut: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
+  var nodeWidth: js.UndefOr[Double] = js.undefined
   
   // default: 10
-  var onValueMouseOver: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
+  var nodes: js.Array[SankeyPoint]
   
-  var style: js.UndefOr[Links] = js.native
+  var onLinkClick: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  var onLinkMouseOut: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  var onLinkMouseOver: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  var onValueClick: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  var onValueMouseOut: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  // default: 10
+  var onValueMouseOver: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.undefined
+  
+  var style: js.UndefOr[Links] = js.undefined
   
   // default: {'links':{},'rects':{},'labels':{}}
-  var width: Double = js.native
+  var width: Double
 }
 object SankeyProps {
   

@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.max
 import typings.polished.polishedStrings.maxBackslashb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FuncRegSymbol extends StObject {
   
-  var func: NotationPrecedenceRightToLeft = js.native
+  var func: NotationPrecedenceRightToLeft
   
-  var regSymbol: maxBackslashb = js.native
+  var regSymbol: maxBackslashb
   
-  var symbol: max = js.native
+  var symbol: max
 }
 object FuncRegSymbol {
   
   @scala.inline
-  def apply(func: NotationPrecedenceRightToLeft, regSymbol: maxBackslashb, symbol: max): FuncRegSymbol = {
-    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(func: NotationPrecedenceRightToLeft): FuncRegSymbol = {
+    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "max\\b", symbol = "max")
     __obj.asInstanceOf[FuncRegSymbol]
   }
   

@@ -2,37 +2,35 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Archive extends StObject {
   
-  var createdAt: Double = js.native
+  var createdAt: Double
   
-  var duration: String = js.native
+  var duration: String
   
-  var hasAudio: Boolean = js.native
+  var hasAudio: Boolean
   
-  var hasVideo: Boolean = js.native
+  var hasVideo: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var outputMode: OutputMode = js.native
+  var outputMode: OutputMode
   
-  var partnerId: String = js.native
+  var partnerId: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var status: ArchiveStatus = js.native
+  var status: ArchiveStatus
   
-  var url: String = js.native
+  var url: String
 }
 object Archive {
   

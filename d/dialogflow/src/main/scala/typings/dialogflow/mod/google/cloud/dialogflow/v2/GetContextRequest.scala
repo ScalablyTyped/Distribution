@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GetContextRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetContextRequest.
   * @param [properties] Properties to set
   */
-class GetContextRequest () extends IGetContextRequest {
+class GetContextRequest ()
+  extends StObject
+     with IGetContextRequest {
   def this(properties: IGetContextRequest) = this()
   
   /** GetContextRequest name. */
@@ -32,18 +33,20 @@ class GetContextRequest () extends IGetContextRequest {
 }
 object GetContextRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GetContextRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GetContextRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.create")
-  @js.native
-  def create(): GetContextRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.create")
-  @js.native
-  def create(properties: IGetContextRequest): GetContextRequest = js.native
+  @scala.inline
+  def create(): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetContextRequest]
+  @scala.inline
+  def create(properties: IGetContextRequest): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
   
   /**
     * Decodes a GetContextRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GetContextRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decode")
-  @js.native
-  def decode(reader: Reader): GetContextRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GetContextRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GetContextRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GetContextRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GetContextRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetContextRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GetContextRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetContextRequest]
   
   /**
     * Decodes a GetContextRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GetContextRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GetContextRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GetContextRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
   
   /**
     * Encodes the specified GetContextRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.GetContextRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object GetContextRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.encode")
-  @js.native
-  def encode(message: IGetContextRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.encode")
-  @js.native
-  def encode(message: IGetContextRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGetContextRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGetContextRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetContextRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.GetContextRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object GetContextRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetContextRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetContextRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGetContextRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGetContextRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetContextRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GetContextRequest {
     * @returns GetContextRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GetContextRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GetContextRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetContextRequest]
   
   /**
     * Creates a plain object from a GetContextRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GetContextRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.toObject")
-  @js.native
-  def toObject(message: GetContextRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.toObject")
-  @js.native
-  def toObject(message: GetContextRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GetContextRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GetContextRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetContextRequest message.
@@ -140,7 +130,6 @@ object GetContextRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetContextRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,17 +2,15 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItemNode extends StObject {
   
-  var path: js.Array[String] = js.native
+  var path: js.Array[String]
   
-  var paths: js.Array[js.Array[String]] = js.native
+  var paths: js.Array[js.Array[String]]
   
-  var `type`: MenuItemNodeType = js.native
+  var `type`: MenuItemNodeType
 }
 object MenuItemNode {
   

@@ -2,15 +2,15 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines access rights for a single state object */
-@js.native
-trait StateACL extends ObjectACL {
+trait StateACL
+  extends StObject
+     with ObjectACL {
   
   /** Linux-type permissions defining access to this state */
-  var state: Double = js.native
+  var state: Double
 }
 object StateACL {
   

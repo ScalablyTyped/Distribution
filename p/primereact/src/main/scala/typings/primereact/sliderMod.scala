@@ -4,7 +4,6 @@ import typings.primereact.anon.OriginalEventEventValue
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
@@ -21,36 +20,35 @@ object sliderMod {
     def this(props: SliderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait SliderProps extends StObject {
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventEventValue, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventEventValue, Unit]] = js.undefined
     
-    var onSlideEnd: js.UndefOr[js.Function1[/* e */ OriginalEventEventValue, Unit]] = js.native
+    var onSlideEnd: js.UndefOr[js.Function1[/* e */ OriginalEventEventValue, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var value: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
   }
   object SliderProps {
     

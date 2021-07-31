@@ -2,23 +2,21 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteUpdateModel extends StObject {
   
-  var defaultConfigurations: js.Array[ShallowReference] = js.native
+  var defaultConfigurations: js.Array[ShallowReference]
   
-  var defaultTesters: js.Array[ShallowReference] = js.native
+  var defaultTesters: js.Array[ShallowReference]
   
-  var inheritDefaultConfigurations: Boolean = js.native
+  var inheritDefaultConfigurations: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var parent: ShallowReference = js.native
+  var parent: ShallowReference
   
-  var queryString: String = js.native
+  var queryString: String
 }
 object SuiteUpdateModel {
   

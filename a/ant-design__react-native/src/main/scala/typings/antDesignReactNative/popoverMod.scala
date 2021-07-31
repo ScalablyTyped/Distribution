@@ -13,7 +13,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeModalPopover.popoverGeometryMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -75,15 +74,15 @@ object popoverMod {
     def renderOverlay(closePopover: js.Any): js.UndefOr[js.Object | Null] = js.native
   }
   
-  @js.native
   trait PopoverItemProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PopoverItemProps {
     
@@ -116,30 +115,31 @@ object popoverMod {
     }
   }
   
-  @js.native
-  trait PopoverProps extends WithThemeStyles[PopoverStyle] {
+  trait PopoverProps
+    extends StObject
+       with WithThemeStyles[PopoverStyle] {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.native
+    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* node */ js.Any, /* index */ js.UndefOr[Double], Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* node */ js.Any, /* index */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var overlay: ReactNode = js.native
+    var overlay: ReactNode
     
-    var placement: js.UndefOr[Placement | auto] = js.native
+    var placement: js.UndefOr[Placement | auto] = js.undefined
     
     var renderOverlayComponent: js.UndefOr[
         js.Function2[/* node */ ReactNode, /* closePopover */ js.Function0[Unit], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var triggerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var triggerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object PopoverProps {
     

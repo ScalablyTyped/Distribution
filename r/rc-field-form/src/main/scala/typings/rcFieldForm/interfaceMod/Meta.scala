@@ -2,19 +2,17 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
-  var errors: js.Array[String] = js.native
+  var errors: js.Array[String]
   
-  var name: InternalNamePath = js.native
+  var name: InternalNamePath
   
-  var touched: Boolean = js.native
+  var touched: Boolean
   
-  var validating: Boolean = js.native
+  var validating: Boolean
 }
 object Meta {
   

@@ -7,26 +7,26 @@ import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import typings.facebookJsSdk.facebookJsSdkStrings.publish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LiveDialogParams extends DialogParams {
+trait LiveDialogParams
+  extends StObject
+     with DialogParams {
   
-  var broadcast_data: js.UndefOr[LiveDialogResponse] = js.native
+  var broadcast_data: js.UndefOr[LiveDialogResponse] = js.undefined
   
   @JSName("display")
-  var display_LiveDialogParams: popup | iframe = js.native
+  var display_LiveDialogParams: popup | iframe
   
-  var method: live_broadcast = js.native
+  var method: live_broadcast
   
-  var phase: create | publish = js.native
+  var phase: create | publish
 }
 object LiveDialogParams {
   
   @scala.inline
-  def apply(display: popup | iframe, method: live_broadcast, phase: create | publish): LiveDialogParams = {
-    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
+  def apply(display: popup | iframe, phase: create | publish): LiveDialogParams = {
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], method = "live_broadcast", phase = phase.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveDialogParams]
   }
   

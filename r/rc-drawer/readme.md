@@ -10,15 +10,15 @@ drawer component for react
 | ------------------ | :-------------: |
 | Full name          | rc-drawer |
 | Keywords           | react, react-component, react-drawer, drawer, drawer-menu, rc-drawer-menu, react-drawer-menu, animation, drawer-motion, drawer-animation |
-| # releases         | 43 |
-| # dependents       | 195 |
-| # downloads        | 16408988 |
+| # releases         | 45 |
+| # dependents       | 205 |
+| # downloads        | 20866657 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ant-motion/drawer)
-- [Bugs](https://github.com/ant-motion/drawer/issues)
-- [Repository](https://github.com/ant-motion/drawer)
+- [Homepage](https://github.com/react-component/drawer)
+- [Bugs](https://github.com/react-component/drawer/issues)
+- [Repository](https://github.com/react-component/drawer)
 - [Npm](https://www.npmjs.com/package/rc-drawer)
     
 

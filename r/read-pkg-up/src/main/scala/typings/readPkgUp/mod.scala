@@ -3,7 +3,6 @@ package typings.readPkgUp
 import typings.readPkgUp.readPkgUpBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,15 +25,16 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
+  @scala.inline
+  def apply(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
+  @scala.inline
+  def apply(options: Options): js.Promise[js.UndefOr[ReadResult]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ReadResult]]]
+  
   @JSImport("read-pkg-up", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
-  @JSImport("read-pkg-up", JSImport.Namespace)
-  @js.native
-  def apply(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
-  @JSImport("read-pkg-up", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[js.UndefOr[ReadResult]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously read the closest `package.json` file.
@@ -52,27 +52,23 @@ object mod {
   	// }
   	```
   	*/
-  @JSImport("read-pkg-up", "sync")
-  @js.native
-  def sync(): js.UndefOr[NormalizedReadResult] = js.native
-  @JSImport("read-pkg-up", "sync")
-  @js.native
-  def sync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = js.native
-  @JSImport("read-pkg-up", "sync")
-  @js.native
-  def sync(options: Options): js.UndefOr[ReadResult] = js.native
+  @scala.inline
+  def sync(): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[NormalizedReadResult]]
+  @scala.inline
+  def sync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedReadResult]]
+  @scala.inline
+  def sync(options: Options): js.UndefOr[ReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReadResult]]
   
   /* Inlined {  cwd :string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.NormalizeOptions, 'cwd'> */
-  @js.native
   trait NormalizeOptions extends StObject {
     
     /**
     		Directory to start looking for a package.json file.
     		@default process.cwd()
     		*/
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var normalize: js.UndefOr[`true`] = js.native
+    var normalize: js.UndefOr[`true`] = js.undefined
   }
   object NormalizeOptions {
     
@@ -101,12 +97,11 @@ object mod {
   
   type NormalizedPackageJson = typings.readPkg.mod.NormalizedPackageJson
   
-  @js.native
   trait NormalizedReadResult extends StObject {
     
-    var packageJson: NormalizedPackageJson = js.native
+    var packageJson: NormalizedPackageJson
     
-    var path: String = js.native
+    var path: String
   }
   object NormalizedReadResult {
     
@@ -128,16 +123,15 @@ object mod {
   }
   
   /* Inlined {  cwd :string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.Options, 'cwd'> */
-  @js.native
   trait Options extends StObject {
     
     /**
     		Directory to start looking for a package.json file.
     		@default process.cwd()
     		*/
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -166,12 +160,11 @@ object mod {
   
   type PackageJson = typings.readPkg.mod.PackageJson
   
-  @js.native
   trait ReadResult extends StObject {
     
-    var packageJson: PackageJson = js.native
+    var packageJson: PackageJson
     
-    var path: String = js.native
+    var path: String
   }
   object ReadResult {
     

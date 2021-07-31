@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociatePhoneNumbersFromVoiceConnectorRequest extends StObject {
   
   /**
     * List of phone numbers, in E.164 format.
     */
-  var E164PhoneNumbers: E164PhoneNumberList = js.native
+  var E164PhoneNumbers: E164PhoneNumberList
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString = js.native
+  var VoiceConnectorId: NonEmptyString
 }
 object DisassociatePhoneNumbersFromVoiceConnectorRequest {
   

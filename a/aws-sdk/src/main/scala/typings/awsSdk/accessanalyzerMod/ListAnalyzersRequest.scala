@@ -2,26 +2,24 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAnalyzersRequest extends StObject {
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * A token used for pagination of results returned.
     */
-  var nextToken: js.UndefOr[Token] = js.native
+  var nextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The type of analyzer.
     */
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object ListAnalyzersRequest {
   

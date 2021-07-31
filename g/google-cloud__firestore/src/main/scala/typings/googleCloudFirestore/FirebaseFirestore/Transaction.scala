@@ -3,7 +3,6 @@ package typings.googleCloudFirestore.FirebaseFirestore
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,8 +26,8 @@ trait Transaction extends StObject {
     * @param precondition A Precondition to enforce for this delete.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference[_]): Transaction = js.native
-  def delete(documentRef: DocumentReference[_], precondition: Precondition): Transaction = js.native
+  def delete(documentRef: DocumentReference[js.Any]): Transaction = js.native
+  def delete(documentRef: DocumentReference[js.Any], precondition: Precondition): Transaction = js.native
   
   /**
     * Reads the document referenced by the provided `DocumentReference.`
@@ -90,8 +89,8 @@ trait Transaction extends StObject {
     * @param precondition A Precondition to enforce on this update.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference[_], data: UpdateData): Transaction = js.native
-  def update(documentRef: DocumentReference[_], data: UpdateData, precondition: Precondition): Transaction = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData): Transaction = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData, precondition: Precondition): Transaction = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -111,6 +110,16 @@ trait Transaction extends StObject {
     * update.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference[_], field: String, value: js.Any, fieldsOrPrecondition: js.Any*): Transaction = js.native
-  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, fieldsOrPrecondition: js.Any*): Transaction = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: String,
+    value: js.Any,
+    fieldsOrPrecondition: js.Any*
+  ): Transaction = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: FieldPath,
+    value: js.Any,
+    fieldsOrPrecondition: js.Any*
+  ): Transaction = js.native
 }

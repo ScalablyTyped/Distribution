@@ -1,28 +1,21 @@
 package typings.azdata.mod.nb
 
-import typings.azdata.azdataStrings.shell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICompleteReplyMsg extends IShellMessage {
+trait ICompleteReplyMsg
+  extends StObject
+     with IShellMessage {
   
   @JSName("content")
-  var content_ICompleteReplyMsg: ICompletionContent = js.native
+  var content_ICompleteReplyMsg: ICompletionContent
 }
 object ICompleteReplyMsg {
   
   @scala.inline
-  def apply(
-    channel: shell,
-    content: ICompletionContent,
-    header: IHeader,
-    parent_header: IHeader | js.Object,
-    `type`: Channel
-  ): ICompleteReplyMsg = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+  def apply(content: ICompletionContent, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): ICompleteReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompleteReplyMsg]
   }

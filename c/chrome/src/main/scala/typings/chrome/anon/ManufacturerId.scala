@@ -2,26 +2,24 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManufacturerId extends StObject {
   
   /**
     * 3 character manufacturer code.
     */
-  var manufacturerId: String = js.native
+  var manufacturerId: String
   
   /**
     * 2 byte manufacturer-assigned code.
     */
-  var productId: String = js.native
+  var productId: String
   
   /**
     * Year of manufacturer.
     */
-  var yearOfManufacture: js.UndefOr[String] = js.native
+  var yearOfManufacture: js.UndefOr[String] = js.undefined
 }
 object ManufacturerId {
   

@@ -4,19 +4,17 @@ import typings.typedGithubApi.typedGithubApiStrings.modified
 import typings.typedGithubApi.typedGithubApiStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Additions extends StObject {
     
-    var additions: Double = js.native
+    var additions: Double
     
-    var deletions: Double = js.native
+    var deletions: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Additions {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Admin extends StObject {
     
-    var admin: Boolean = js.native
+    var admin: Boolean
     
-    var pull: Boolean = js.native
+    var pull: Boolean
     
-    var push: Boolean = js.native
+    var push: Boolean
   }
   object Admin {
     
@@ -71,24 +68,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Bloburl extends StObject {
     
-    var additions: Double = js.native
+    var additions: Double
     
-    var blob_url: String = js.native
+    var blob_url: String
     
-    var changes: Double = js.native
+    var changes: Double
     
-    var deletions: Double = js.native
+    var deletions: Double
     
-    var filename: String = js.native
+    var filename: String
     
-    var patch: String = js.native
+    var patch: String
     
-    var raw_url: String = js.native
+    var raw_url: String
     
-    var status: modified = js.native
+    var status: modified
   }
   object Bloburl {
     
@@ -100,10 +96,9 @@ object anon {
       deletions: Double,
       filename: String,
       patch: String,
-      raw_url: String,
-      status: modified
+      raw_url: String
     ): Bloburl = {
-      val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], blob_url = blob_url.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], blob_url = blob_url.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], status = "modified")
       __obj.asInstanceOf[Bloburl]
     }
     
@@ -136,12 +131,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: From = js.native
+    var body: From
     
-    var title: From = js.native
+    var title: From
   }
   object Body {
     
@@ -162,16 +156,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Collaborators extends StObject {
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var name: String = js.native
+    var name: String
     
-    var private_repos: Double = js.native
+    var private_repos: Double
     
-    var space: Double = js.native
+    var space: Double
   }
   object Collaborators {
     
@@ -198,10 +191,9 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
   }
   object From {
     
@@ -219,12 +211,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var html: String = js.native
+    var html: String
     
-    var self: String = js.native
+    var self: String
   }
   object Html {
     
@@ -245,16 +236,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var name: String = js.native
+    var name: String
     
-    var privateRepos: Double = js.native
+    var privateRepos: Double
     
-    var space: Double = js.native
+    var space: Double
   }
   object Name {
     
@@ -281,22 +271,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var payload: String = js.native
+    var payload: String
     
-    var reason: valid = js.native
+    var reason: valid
     
-    var signature: String = js.native
+    var signature: String
     
-    var verified: Boolean = js.native
+    var verified: Boolean
   }
   object Payload {
     
     @scala.inline
-    def apply(payload: String, reason: valid, signature: String, verified: Boolean): Payload = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+    def apply(payload: String, signature: String, verified: Boolean): Payload = {
+      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], reason = "valid", signature = signature.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     

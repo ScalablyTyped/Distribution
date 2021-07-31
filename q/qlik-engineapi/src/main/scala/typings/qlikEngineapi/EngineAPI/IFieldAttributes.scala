@@ -2,21 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sets the formatting of a field.
   * The properties of qFieldAttributes and the formatting mechanism are described below.
   */
-@js.native
 trait IFieldAttributes extends StObject {
   
   /**
     * Defines the decimal separator.
     * Example: .
     */
-  var qDec: String = js.native
+  var qDec: String
   
   /**
     * Defines the format pattern that applies to qText.
@@ -24,19 +22,19 @@ trait IFieldAttributes extends StObject {
     * For more information, see Formatting mechanism.
     * Example: YYYY-MM-DD for a date
     */
-  var qFmt: String = js.native
+  var qFmt: String
   
   /**
     * no / empty docu
     */
-  var qSAFEARRAY: js.Array[_] = js.native
+  var qSAFEARRAY: js.Array[js.Any]
   
   /**
     * Defines the thousand separator (if any).
     * Is used if qUseThou is set to 1.
     * Example: ,
     */
-  var qThou: String = js.native
+  var qThou: String
   
   /**
     * Type of the field.
@@ -54,20 +52,20 @@ trait IFieldAttributes extends StObject {
     *    - IV for INTERVAL; Numeric fields values are shown as intervals.
     *
     */
-  var qType: FieldAttributesType = js.native
+  var qType: FieldAttributesType
   
   /**
     * Defines whether or not a thousands separator must be used.
     * default is 0 (false) or  1 (true).
     */
-  var qUseThou: Boolean = js.native
+  var qUseThou: Boolean
   
   /**
     * Number of decimals.
     * (Integer between 0 and 15.)
     * default is 10.
     */
-  var qnDec: Double = js.native
+  var qnDec: Double
 }
 object IFieldAttributes {
   
@@ -75,7 +73,7 @@ object IFieldAttributes {
   def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[_],
+    qSAFEARRAY: js.Array[js.Any],
     qThou: String,
     qType: FieldAttributesType,
     qUseThou: Boolean,
@@ -95,7 +93,7 @@ object IFieldAttributes {
     def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSAFEARRAY(value: js.Array[_]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))

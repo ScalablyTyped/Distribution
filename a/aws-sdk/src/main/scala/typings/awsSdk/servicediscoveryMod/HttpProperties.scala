@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpProperties extends StObject {
   
   /**
     * The name of an HTTP namespace.
     */
-  var HttpName: js.UndefOr[NamespaceName] = js.native
+  var HttpName: js.UndefOr[NamespaceName] = js.undefined
 }
 object HttpProperties {
   

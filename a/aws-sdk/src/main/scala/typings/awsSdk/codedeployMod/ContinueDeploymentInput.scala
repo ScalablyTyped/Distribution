@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueDeploymentInput extends StObject {
   
   /**
     *  The unique ID of a blue/green deployment for which you want to start rerouting traffic to the replacement environment. 
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     *  The status of the deployment's waiting period. READY_WAIT indicates that the deployment is ready to start shifting traffic. TERMINATION_WAIT indicates that the traffic is shifted, but the original target is not terminated. 
     */
-  var deploymentWaitType: js.UndefOr[DeploymentWaitType] = js.native
+  var deploymentWaitType: js.UndefOr[DeploymentWaitType] = js.undefined
 }
 object ContinueDeploymentInput {
   

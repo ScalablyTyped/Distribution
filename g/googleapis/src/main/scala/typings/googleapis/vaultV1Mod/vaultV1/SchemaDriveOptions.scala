@@ -2,25 +2,23 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Drive search advanced options
   */
-@js.native
 trait SchemaDriveOptions extends StObject {
   
   /**
     * Set to true to include Team Drive.
     */
-  var includeTeamDrives: js.UndefOr[Boolean] = js.native
+  var includeTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Search the versions of the Drive file as of the reference date. These
     * timestamps are in GMT and rounded down to the given date.
     */
-  var versionDate: js.UndefOr[String] = js.native
+  var versionDate: js.UndefOr[String] = js.undefined
 }
 object SchemaDriveOptions {
   

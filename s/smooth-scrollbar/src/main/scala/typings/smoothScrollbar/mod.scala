@@ -6,7 +6,6 @@ import typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,31 +31,27 @@ object mod {
       * You don't need to call this method manually unless
       * you removed the default styles via `Scrollbar.detachStyle()`
       */
-    @JSImport("smooth-scrollbar", "default.attachStyle")
-    @js.native
-    def attachStyle(): Unit = js.native
+    @scala.inline
+    def attachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachStyle")().asInstanceOf[Unit]
     
     /**
       * Removes scrollbar on the given element
       */
-    @JSImport("smooth-scrollbar", "default.destroy")
-    @js.native
-    def destroy(elem: HTMLElement): Unit = js.native
+    @scala.inline
+    def destroy(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes all scrollbar instances from current document
       */
-    @JSImport("smooth-scrollbar", "default.destroyAll")
-    @js.native
-    def destroyAll(): Unit = js.native
+    @scala.inline
+    def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
     
     /**
       * Removes default styles from current document.
       * Use this method when you want to use your own css for scrollbars.
       */
-    @JSImport("smooth-scrollbar", "default.detachStyle")
-    @js.native
-    def detachStyle(): Unit = js.native
+    @scala.inline
+    def detachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachStyle")().asInstanceOf[Unit]
     
     /**
       * Gets scrollbar on the given element.
@@ -64,25 +59,22 @@ object mod {
       *
       * @param elem The DOM element that you want to check.
       */
-    @JSImport("smooth-scrollbar", "default.get")
-    @js.native
-    def get(elem: HTMLElement): js.UndefOr[Scrollbar] = js.native
+    @scala.inline
+    def get(elem: HTMLElement): js.UndefOr[Scrollbar] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Scrollbar]]
     
     /**
       * Returns an array that contains all scrollbar instances
       */
-    @JSImport("smooth-scrollbar", "default.getAll")
-    @js.native
-    def getAll(): js.Array[Scrollbar] = js.native
+    @scala.inline
+    def getAll(): js.Array[Scrollbar] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[Scrollbar]]
     
     /**
       * Check if there is a scrollbar on given element
       *
       * @param elem The DOM element that you want to check
       */
-    @JSImport("smooth-scrollbar", "default.has")
-    @js.native
-    def has(elem: HTMLElement): Boolean = js.native
+    @scala.inline
+    def has(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Initializes a scrollbar on the given element.
@@ -90,33 +82,28 @@ object mod {
       * @param elem The DOM element that you want to initialize scrollbar to
       * @param [options] Initial options
       */
-    @JSImport("smooth-scrollbar", "default.init")
-    @js.native
-    def init(elem: HTMLElement): Scrollbar = js.native
-    @JSImport("smooth-scrollbar", "default.init")
-    @js.native
-    def init(elem: HTMLElement, options: PartialScrollbarOptions): Scrollbar = js.native
+    @scala.inline
+    def init(elem: HTMLElement): Scrollbar = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elem.asInstanceOf[js.Any]).asInstanceOf[Scrollbar]
+    @scala.inline
+    def init(elem: HTMLElement, options: PartialScrollbarOptions): Scrollbar = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scrollbar]
     
     /**
       * Automatically init scrollbar on all elements base on the selector `[data-scrollbar]`
       *
       * @param options Initial options
       */
-    @JSImport("smooth-scrollbar", "default.initAll")
-    @js.native
-    def initAll(): js.Array[Scrollbar] = js.native
-    @JSImport("smooth-scrollbar", "default.initAll")
-    @js.native
-    def initAll(options: PartialScrollbarOptions): js.Array[Scrollbar] = js.native
+    @scala.inline
+    def initAll(): js.Array[Scrollbar] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")().asInstanceOf[js.Array[Scrollbar]]
+    @scala.inline
+    def initAll(options: PartialScrollbarOptions): js.Array[Scrollbar] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Scrollbar]]
     
     /**
       * Attaches plugins to scrollbars
       *
       * @param ...Plugins Scrollbar plugin classes
       */
-    @JSImport("smooth-scrollbar", "default.use")
-    @js.native
-    def use(Plugins: TypeofScrollbarPlugin*): Unit = js.native
+    @scala.inline
+    def use(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(Plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("smooth-scrollbar", "default.version")
     @js.native

@@ -4,21 +4,21 @@ import typings.std.HTMLCollection
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Element extends ParentNode {
+trait Element
+  extends StObject
+     with ParentNode {
   
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
-  def closest(selectors: String): Element | Null = js.native
+  def closest(selectors: String): Element | Null
   
   /**
     * Returns true if matching selectors against element’s root yields element, and false otherwise.
     */
-  def matches(selectors: String): Boolean = js.native
+  def matches(selectors: String): Boolean
 }
 object Element {
   

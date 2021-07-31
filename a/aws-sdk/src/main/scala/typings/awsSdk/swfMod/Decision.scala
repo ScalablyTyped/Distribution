@@ -2,81 +2,79 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decision extends StObject {
   
   /**
     * Provides the details of the CancelTimer decision. It isn't set for other decision types.
     */
-  var cancelTimerDecisionAttributes: js.UndefOr[CancelTimerDecisionAttributes] = js.native
+  var cancelTimerDecisionAttributes: js.UndefOr[CancelTimerDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the CancelWorkflowExecution decision. It isn't set for other decision types.
     */
-  var cancelWorkflowExecutionDecisionAttributes: js.UndefOr[CancelWorkflowExecutionDecisionAttributes] = js.native
+  var cancelWorkflowExecutionDecisionAttributes: js.UndefOr[CancelWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the CompleteWorkflowExecution decision. It isn't set for other decision types.
     */
-  var completeWorkflowExecutionDecisionAttributes: js.UndefOr[CompleteWorkflowExecutionDecisionAttributes] = js.native
+  var completeWorkflowExecutionDecisionAttributes: js.UndefOr[CompleteWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the ContinueAsNewWorkflowExecution decision. It isn't set for other decision types.
     */
-  var continueAsNewWorkflowExecutionDecisionAttributes: js.UndefOr[ContinueAsNewWorkflowExecutionDecisionAttributes] = js.native
+  var continueAsNewWorkflowExecutionDecisionAttributes: js.UndefOr[ContinueAsNewWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Specifies the type of the decision.
     */
-  var decisionType: DecisionType = js.native
+  var decisionType: DecisionType
   
   /**
     * Provides the details of the FailWorkflowExecution decision. It isn't set for other decision types.
     */
-  var failWorkflowExecutionDecisionAttributes: js.UndefOr[FailWorkflowExecutionDecisionAttributes] = js.native
+  var failWorkflowExecutionDecisionAttributes: js.UndefOr[FailWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the RecordMarker decision. It isn't set for other decision types.
     */
-  var recordMarkerDecisionAttributes: js.UndefOr[RecordMarkerDecisionAttributes] = js.native
+  var recordMarkerDecisionAttributes: js.UndefOr[RecordMarkerDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the RequestCancelActivityTask decision. It isn't set for other decision types.
     */
-  var requestCancelActivityTaskDecisionAttributes: js.UndefOr[RequestCancelActivityTaskDecisionAttributes] = js.native
+  var requestCancelActivityTaskDecisionAttributes: js.UndefOr[RequestCancelActivityTaskDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the RequestCancelExternalWorkflowExecution decision. It isn't set for other decision types.
     */
-  var requestCancelExternalWorkflowExecutionDecisionAttributes: js.UndefOr[RequestCancelExternalWorkflowExecutionDecisionAttributes] = js.native
+  var requestCancelExternalWorkflowExecutionDecisionAttributes: js.UndefOr[RequestCancelExternalWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the ScheduleActivityTask decision. It isn't set for other decision types.
     */
-  var scheduleActivityTaskDecisionAttributes: js.UndefOr[ScheduleActivityTaskDecisionAttributes] = js.native
+  var scheduleActivityTaskDecisionAttributes: js.UndefOr[ScheduleActivityTaskDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the ScheduleLambdaFunction decision. It isn't set for other decision types.
     */
-  var scheduleLambdaFunctionDecisionAttributes: js.UndefOr[ScheduleLambdaFunctionDecisionAttributes] = js.native
+  var scheduleLambdaFunctionDecisionAttributes: js.UndefOr[ScheduleLambdaFunctionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the SignalExternalWorkflowExecution decision. It isn't set for other decision types.
     */
-  var signalExternalWorkflowExecutionDecisionAttributes: js.UndefOr[SignalExternalWorkflowExecutionDecisionAttributes] = js.native
+  var signalExternalWorkflowExecutionDecisionAttributes: js.UndefOr[SignalExternalWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the StartChildWorkflowExecution decision. It isn't set for other decision types.
     */
-  var startChildWorkflowExecutionDecisionAttributes: js.UndefOr[StartChildWorkflowExecutionDecisionAttributes] = js.native
+  var startChildWorkflowExecutionDecisionAttributes: js.UndefOr[StartChildWorkflowExecutionDecisionAttributes] = js.undefined
   
   /**
     * Provides the details of the StartTimer decision. It isn't set for other decision types.
     */
-  var startTimerDecisionAttributes: js.UndefOr[StartTimerDecisionAttributes] = js.native
+  var startTimerDecisionAttributes: js.UndefOr[StartTimerDecisionAttributes] = js.undefined
 }
 object Decision {
   

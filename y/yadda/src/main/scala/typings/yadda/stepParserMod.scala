@@ -3,14 +3,15 @@ package typings.yadda
 import typings.yadda.libMod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepParserMod {
   
   @JSImport("yadda/lib/parsers/StepParser", JSImport.Namespace)
   @js.native
-  class ^ () extends StepParser
+  class ^ ()
+    extends StObject
+       with StepParser
   
   @js.native
   trait StepParser extends StObject {

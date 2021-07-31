@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEffectivePolicyRequest extends StObject {
   
   /**
     * The type of policy that you want information about. You can specify one of the following values:    AISERVICES_OPT_OUT_POLICY     BACKUP_POLICY     TAG_POLICY   
     */
-  var PolicyType: EffectivePolicyType = js.native
+  var PolicyType: EffectivePolicyType
   
   /**
     * When you're signed in as the management account, specify the ID of the account that you want details about. Specifying an organization root or organizational unit (OU) as the target is not supported.
     */
-  var TargetId: js.UndefOr[PolicyTargetId] = js.native
+  var TargetId: js.UndefOr[PolicyTargetId] = js.undefined
 }
 object DescribeEffectivePolicyRequest {
   

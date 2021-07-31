@@ -3,60 +3,60 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldElementProperties extends ElementMixinProperties {
+trait FieldElementProperties
+  extends StObject
+     with ElementMixinProperties {
   
   /**
     * The [coded value domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or [range domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#domain)
     */
-  var domain: js.UndefOr[CodedValueDomainProperties | RangeDomainProperties] = js.native
+  var domain: js.UndefOr[CodedValueDomainProperties | RangeDomainProperties] = js.undefined
   
   /**
     * Indicates whether the field can be edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editable)
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The field name as defined by the feature layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#fieldName)
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a hint used to help editors while editing fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#hint)
     */
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
   /**
     * The input user interface to use for the element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#input)
     */
-  var input: js.UndefOr[TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties] = js.native
+  var input: js.UndefOr[TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties] = js.undefined
   
   /**
     * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#requiredExpression)
     */
-  var requiredExpression: js.UndefOr[String] = js.native
+  var requiredExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the type of form [element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-Element.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#type)
     */
-  var `type`: js.UndefOr[field] = js.native
+  var `type`: js.UndefOr[field] = js.undefined
 }
 object FieldElementProperties {
   

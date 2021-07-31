@@ -2,35 +2,33 @@ package typings.nyaapi.mod.si
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Torrent extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var completed: String = js.native
+  var completed: String
   
-  var date: String = js.native
+  var date: String
   
-  var filesize: String = js.native
+  var filesize: String
   
-  var hash: String = js.native
+  var hash: String
   
-  var id: String = js.native
+  var id: String
   
-  var leechers: String = js.native
+  var leechers: String
   
-  var magnet: String = js.native
+  var magnet: String
   
-  var name: String = js.native
+  var name: String
   
-  var seeders: String = js.native
+  var seeders: String
   
-  var sub_category: String = js.native
+  var sub_category: String
   
-  var torrent: String = js.native
+  var torrent: String
 }
 object Torrent {
   

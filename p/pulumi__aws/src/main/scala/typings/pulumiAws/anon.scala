@@ -10,34 +10,32 @@ import typings.pulumiPulumi.codePathsMod.CodePathOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApproximateCreationDateTime extends StObject {
     
-    var ApproximateCreationDateTime: Double = js.native
+    var ApproximateCreationDateTime: Double
     
-    var Keys: Record[String, _] = js.native
+    var Keys: Record[String, js.Any]
     
-    var NewImage: js.UndefOr[Record[String, _]] = js.native
+    var NewImage: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var OldImage: js.UndefOr[Record[String, _]] = js.native
+    var OldImage: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var SequenceNumber: String = js.native
+    var SequenceNumber: String
     
-    var SizeBytes: Double = js.native
+    var SizeBytes: Double
     
-    var StreamViewType: String = js.native
+    var StreamViewType: String
   }
   object ApproximateCreationDateTime {
     
     @scala.inline
     def apply(
       ApproximateCreationDateTime: Double,
-      Keys: Record[String, _],
+      Keys: Record[String, js.Any],
       SequenceNumber: String,
       SizeBytes: Double,
       StreamViewType: String
@@ -53,16 +51,16 @@ object anon {
       def setApproximateCreationDateTime(value: Double): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setKeys(value: Record[String, _]): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+      def setKeys(value: Record[String, js.Any]): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNewImage(value: Record[String, _]): Self = StObject.set(x, "NewImage", value.asInstanceOf[js.Any])
+      def setNewImage(value: Record[String, js.Any]): Self = StObject.set(x, "NewImage", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNewImageUndefined: Self = StObject.set(x, "NewImage", js.undefined)
       
       @scala.inline
-      def setOldImage(value: Record[String, _]): Self = StObject.set(x, "OldImage", value.asInstanceOf[js.Any])
+      def setOldImage(value: Record[String, js.Any]): Self = StObject.set(x, "OldImage", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldImageUndefined: Self = StObject.set(x, "OldImage", js.undefined)
@@ -78,16 +76,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ApproximateFirstReceiveTimestamp extends StObject {
     
-    var ApproximateFirstReceiveTimestamp: String = js.native
+    var ApproximateFirstReceiveTimestamp: String
     
-    var ApproximateReceiveCount: String = js.native
+    var ApproximateReceiveCount: String
     
-    var SenderId: String = js.native
+    var SenderId: String
     
-    var SentTimestamp: String = js.native
+    var SentTimestamp: String
   }
   object ApproximateFirstReceiveTimestamp {
     
@@ -119,14 +116,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Arn extends StObject {
     
-    var arn: String = js.native
+    var arn: String
     
-    var name: String = js.native
+    var name: String
     
-    var ownerIdentity: PrincipalIdString = js.native
+    var ownerIdentity: PrincipalIdString
   }
   object Arn {
     
@@ -150,16 +146,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bucket extends StObject {
     
-    var bucket: Arn = js.native
+    var bucket: Arn
     
-    var configurationId: String = js.native
+    var configurationId: String
     
-    var `object`: ETag = js.native
+    var `object`: ETag
     
-    var s3SchemaVersion: String = js.native
+    var s3SchemaVersion: String
   }
   object Bucket {
     
@@ -187,43 +182,42 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
     /**
       * Not allowed when creating an aws.serverless.Function.  The [code] will be generated from the
       * passed in JavaScript callback.
       */
-    var code: js.UndefOr[scala.Nothing] = js.native
+    var code: js.UndefOr[scala.Nothing] = js.undefined
     
     /**
       * Options to control which paths/packages should be included or excluded in the zip file containing
       * the code for the AWS lambda.
       */
-    var codePathOptions: js.UndefOr[CodePathOptions] = js.native
+    var codePathOptions: js.UndefOr[CodePathOptions] = js.undefined
     
     /**
       * Not allowed when creating an aws.serverless.Function.  The [code] will be generated from the
       * passed in JavaScript callback.
       */
-    var handler: js.UndefOr[scala.Nothing] = js.native
+    var handler: js.UndefOr[scala.Nothing] = js.undefined
     
     /**
       * A list of IAM policy ARNs to attach to the Function.  Will be used if [role] is not provide.
       * If neither [role] nor [policies] is provided, a default policy of [iam.AWSLambdaFullAccess]
       * will be used instead.
       */
-    var policies: js.UndefOr[js.Array[ARN]] = js.native
+    var policies: js.UndefOr[js.Array[ARN]] = js.undefined
     
     /**
       * A pre-created role to use for the Function. If not provided, [policies] will be used.
       */
-    var role: js.UndefOr[Role] = js.native
+    var role: js.UndefOr[Role] = js.undefined
     
     /**
       * The Lambda runtime to use.  If not provided, will default to [NodeJS8d10Runtime]
       */
-    var runtime: js.UndefOr[Runtime] = js.native
+    var runtime: js.UndefOr[Runtime] = js.undefined
   }
   object Code {
     
@@ -265,10 +259,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
   }
   object Data {
     
@@ -286,18 +279,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ETag extends StObject {
     
-    var eTag: String = js.native
+    var eTag: String
     
-    var key: String = js.native
+    var key: String
     
-    var sequencer: String = js.native
+    var sequencer: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var versionId: js.UndefOr[String] = js.native
+    var versionId: js.UndefOr[String] = js.undefined
   }
   object ETag {
     
@@ -330,7 +322,6 @@ object anon {
     }
   }
   
-  @js.native
   trait ExcludePackages extends StObject {
     
     /**
@@ -340,17 +331,17 @@ object anon {
       *
       * @deprecated Use [codePathOptions] instead.
       */
-    var excludePackages: js.UndefOr[js.Array[String]] = js.native
+    var excludePackages: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @deprecated use [callbackFactory] instead.
       */
-    var factoryFunc: js.UndefOr[HandlerFactory] = js.native
+    var factoryFunc: js.UndefOr[HandlerFactory] = js.undefined
     
     /**
       * @deprecated use [callback] instead.
       */
-    var func: js.UndefOr[Handler] = js.native
+    var func: js.UndefOr[Handler] = js.undefined
     
     /**
       * The packages relative to the program folder to include in the Lambda upload.  The version of
@@ -359,14 +350,14 @@ object anon {
       *
       * @deprecated Use [codePathOptions] instead.
       */
-    var includePackages: js.UndefOr[js.Array[String]] = js.native
+    var includePackages: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The paths relative to the program folder to include in the Lambda upload.  Default is `[]`.
       *
       * @deprecated Use [codePathOptions] instead.
       */
-    var includePaths: js.UndefOr[js.Array[String]] = js.native
+    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ExcludePackages {
     
@@ -422,16 +413,15 @@ object anon {
     }
   }
   
-  @js.native
   trait KinesisSchemaVersion extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var kinesisSchemaVersion: String = js.native
+    var kinesisSchemaVersion: String
     
-    var partitionKey: String = js.native
+    var partitionKey: String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
   }
   object KinesisSchemaVersion {
     
@@ -458,12 +448,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PrincipalId extends StObject {
     
-    var PrincipalId: String = js.native
+    var PrincipalId: String
     
-    var Type: String = js.native
+    var Type: String
   }
   object PrincipalId {
     
@@ -484,10 +473,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PrincipalIdString extends StObject {
     
-    var principalId: String = js.native
+    var principalId: String
   }
   object PrincipalIdString {
     
@@ -505,10 +493,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SourceIPAddress extends StObject {
     
-    var sourceIPAddress: String = js.native
+    var sourceIPAddress: String
   }
   object SourceIPAddress {
     
@@ -526,12 +513,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Xamzid2 extends StObject {
     
-    var `x-amz-id-2`: String = js.native
+    var `x-amz-id-2`: String
     
-    var `x-amz-request-id`: String = js.native
+    var `x-amz-request-id`: String
   }
   object Xamzid2 {
     

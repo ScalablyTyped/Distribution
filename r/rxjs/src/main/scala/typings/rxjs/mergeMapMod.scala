@@ -6,18 +6,27 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
+import typings.rxjs.typesMod.TeardownLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeMapMod {
   
+  @JSImport("rxjs/internal/operators/mergeMap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("rxjs/internal/operators/mergeMap", "MergeMapOperator")
   @js.native
-  class MergeMapOperator[T, R] protected () extends Operator[T, R] {
+  class MergeMapOperator[T, R] protected ()
+    extends StObject
+       with Operator[T, R] {
     def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]) = this()
     def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double) = this()
+    
+    /* CompleteClass */
+    override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
     
     var concurrent: js.Any = js.native
     
@@ -54,22 +63,18 @@ object mergeMapMod {
     var project: js.Any = js.native
   }
   
-  @JSImport("rxjs/internal/operators/mergeMap", "flatMap")
-  @js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "flatMap")
-  @js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "flatMap")
-  @js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](
+  @scala.inline
+  def flatMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def flatMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def flatMap[T, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.UndefOr[scala.Nothing],
+    resultSelector: Unit,
     concurrent: Double
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "flatMap")
-  @js.native
-  def flatMap[T, R, O /* <: ObservableInput[_] */](
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def flatMap[T, R, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -78,10 +83,9 @@ object mergeMapMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "flatMap")
-  @js.native
-  def flatMap[T, R, O /* <: ObservableInput[_] */](
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def flatMap[T, R, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -91,24 +95,20 @@ object mergeMapMod {
       R
     ],
     concurrent: Double
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
   
-  @JSImport("rxjs/internal/operators/mergeMap", "mergeMap")
-  @js.native
-  def mergeMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "mergeMap")
-  @js.native
-  def mergeMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "mergeMap")
-  @js.native
-  def mergeMap[T, O /* <: ObservableInput[_] */](
+  @scala.inline
+  def mergeMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def mergeMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def mergeMap[T, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.UndefOr[scala.Nothing],
+    resultSelector: Unit,
     concurrent: Double
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "mergeMap")
-  @js.native
-  def mergeMap[T, R, O /* <: ObservableInput[_] */](
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def mergeMap[T, R, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -117,10 +117,9 @@ object mergeMapMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/mergeMap", "mergeMap")
-  @js.native
-  def mergeMap[T, R, O /* <: ObservableInput[_] */](
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def mergeMap[T, R, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -130,5 +129,5 @@ object mergeMapMod {
       R
     ],
     concurrent: Double
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
 }

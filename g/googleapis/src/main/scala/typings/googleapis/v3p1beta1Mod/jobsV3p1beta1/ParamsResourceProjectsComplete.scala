@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsComplete extends StandardParameters {
+trait ParamsResourceProjectsComplete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional.  If provided, restricts completion to specified company.  The
     * format is "projects/{project_id}/companies/{company_id}", for example,
     * "projects/api-test-project/companies/foo".
     */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Use language_codes instead.  Optional.  The language of the
@@ -36,7 +36,7 @@ trait ParamsResourceProjectsComplete extends StandardParameters {
     * or companies having open jobs with the same language_code are returned.
     * The maximum number of allowed characters is 255.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The list of languages of the query. This is the BCP-47
@@ -49,36 +49,36 @@ trait ParamsResourceProjectsComplete extends StandardParameters {
     * or companies having open jobs with the same language_codes are returned.
     * The maximum number of allowed characters is 255.
     */
-  var languageCodes: js.UndefOr[js.Array[String]] = js.native
+  var languageCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required.  Resource name of project the completion is performed within.
     * The format is "projects/{project_id}", for example,
     * "projects/api-test-project".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  Completion result count.  The maximum allowed page size is 10.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Required.  The query used to generate suggestions.  The maximum number of
     * allowed characters is 255.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The scope of the completion. The defaults is
     * CompletionScope.PUBLIC.
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The completion topic. The default is CompletionType.COMBINED.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsComplete {
   

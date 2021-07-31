@@ -19,7 +19,6 @@ import typings.jqueryNicescroll.jqueryNicescrollStrings.visible
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryNiceScroll {
@@ -36,14 +35,14 @@ object JQueryNiceScroll {
     def hide(): NiceScroll = js.native
     
     def onResize(): NiceScroll = js.native
-    def onResize(e: js.UndefOr[scala.Nothing], page: NiceScrollPage): NiceScroll = js.native
+    def onResize(e: Unit, page: NiceScrollPage): NiceScroll = js.native
     def onResize(e: Event): NiceScroll = js.native
     def onResize(e: Event, page: NiceScrollPage): NiceScroll = js.native
     
     def remove(): Unit = js.native
     
     def resize(): NiceScroll = js.native
-    def resize(e: js.UndefOr[scala.Nothing], page: NiceScrollPage): NiceScroll = js.native
+    def resize(e: Unit, page: NiceScrollPage): NiceScroll = js.native
     def resize(e: Event): NiceScroll = js.native
     def resize(e: Event, page: NiceScrollPage): NiceScroll = js.native
     
@@ -54,116 +53,115 @@ object JQueryNiceScroll {
     def toggle(): NiceScroll = js.native
   }
   
-  @js.native
   trait NiceScrollOptions extends StObject {
     
-    var autohidemode: js.UndefOr[leave | scroll | cursor | hidden | Boolean] = js.native
+    var autohidemode: js.UndefOr[leave | scroll | cursor | hidden | Boolean] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bouncescroll: js.UndefOr[Boolean] = js.native
+    var bouncescroll: js.UndefOr[Boolean] = js.undefined
     
-    var boxzoom: js.UndefOr[Boolean] = js.native
+    var boxzoom: js.UndefOr[Boolean] = js.undefined
     
-    var cursorborder: js.UndefOr[String] = js.native
+    var cursorborder: js.UndefOr[String] = js.undefined
     
-    var cursorborderradius: js.UndefOr[String] = js.native
+    var cursorborderradius: js.UndefOr[String] = js.undefined
     
-    var cursorcolor: js.UndefOr[String] = js.native
+    var cursorcolor: js.UndefOr[String] = js.undefined
     
-    var cursordragontouch: js.UndefOr[Boolean] = js.native
+    var cursordragontouch: js.UndefOr[Boolean] = js.undefined
     
-    var cursordragspeed: js.UndefOr[Double] = js.native
+    var cursordragspeed: js.UndefOr[Double] = js.undefined
     
-    var cursorfixedheight: js.UndefOr[Double] = js.native
+    var cursorfixedheight: js.UndefOr[Double] = js.undefined
     
-    var cursorminheight: js.UndefOr[Double] = js.native
+    var cursorminheight: js.UndefOr[Double] = js.undefined
     
-    var cursoropacitymax: js.UndefOr[Double] = js.native
+    var cursoropacitymax: js.UndefOr[Double] = js.undefined
     
-    var cursoropacitymin: js.UndefOr[Double] = js.native
+    var cursoropacitymin: js.UndefOr[Double] = js.undefined
     
-    var cursorwidth: js.UndefOr[String] = js.native
+    var cursorwidth: js.UndefOr[String] = js.undefined
     
-    var dblclickzoom: js.UndefOr[Boolean] = js.native
+    var dblclickzoom: js.UndefOr[Boolean] = js.undefined
     
-    var directionlockdeadzone: js.UndefOr[Double] = js.native
+    var directionlockdeadzone: js.UndefOr[Double] = js.undefined
     
-    var disablemutationobserver: js.UndefOr[Boolean] = js.native
+    var disablemutationobserver: js.UndefOr[Boolean] = js.undefined
     
-    var disableoutline: js.UndefOr[Boolean] = js.native
+    var disableoutline: js.UndefOr[Boolean] = js.undefined
     
-    var emulatetouch: js.UndefOr[Boolean] = js.native
+    var emulatetouch: js.UndefOr[Boolean] = js.undefined
     
-    var enablekeyboard: js.UndefOr[Boolean] = js.native
+    var enablekeyboard: js.UndefOr[Boolean] = js.undefined
     
-    var enablemouselockapi: js.UndefOr[Boolean] = js.native
+    var enablemouselockapi: js.UndefOr[Boolean] = js.undefined
     
-    var enablemousewheel: js.UndefOr[Boolean] = js.native
+    var enablemousewheel: js.UndefOr[Boolean] = js.undefined
     
-    var enableobserver: js.UndefOr[Boolean] = js.native
+    var enableobserver: js.UndefOr[Boolean] = js.undefined
     
-    var enablescrollonselection: js.UndefOr[Boolean] = js.native
+    var enablescrollonselection: js.UndefOr[Boolean] = js.undefined
     
-    var enabletranslate3d: js.UndefOr[Boolean] = js.native
+    var enabletranslate3d: js.UndefOr[Boolean] = js.undefined
     
-    var gesturezoom: js.UndefOr[Boolean] = js.native
+    var gesturezoom: js.UndefOr[Boolean] = js.undefined
     
-    var grabcursorenabled: js.UndefOr[Boolean] = js.native
+    var grabcursorenabled: js.UndefOr[Boolean] = js.undefined
     
-    var hidecursordelay: js.UndefOr[Double] = js.native
+    var hidecursordelay: js.UndefOr[Double] = js.undefined
     
-    var horizrailenabled: js.UndefOr[Boolean] = js.native
+    var horizrailenabled: js.UndefOr[Boolean] = js.undefined
     
-    var hwacceleration: js.UndefOr[Boolean] = js.native
+    var hwacceleration: js.UndefOr[Boolean] = js.undefined
     
-    var iframeautoresize: js.UndefOr[Boolean] = js.native
+    var iframeautoresize: js.UndefOr[Boolean] = js.undefined
     
-    var mousescrollstep: js.UndefOr[Double] = js.native
+    var mousescrollstep: js.UndefOr[Double] = js.undefined
     
-    var nativeparentscrolling: js.UndefOr[Boolean] = js.native
+    var nativeparentscrolling: js.UndefOr[Boolean] = js.undefined
     
-    var oneaxismousemode: js.UndefOr[auto | Boolean] = js.native
+    var oneaxismousemode: js.UndefOr[auto | Boolean] = js.undefined
     
-    var overflowx: js.UndefOr[auto | hidden | inherit | initial | overlay | scroll | unset | visible] = js.native
+    var overflowx: js.UndefOr[auto | hidden | inherit | initial | overlay | scroll | unset | visible] = js.undefined
     
-    var overflowy: js.UndefOr[auto | hidden | inherit | initial | overlay | scroll | unset | visible] = js.native
+    var overflowy: js.UndefOr[auto | hidden | inherit | initial | overlay | scroll | unset | visible] = js.undefined
     
-    var preservenativescrolling: js.UndefOr[Boolean] = js.native
+    var preservenativescrolling: js.UndefOr[Boolean] = js.undefined
     
-    var preventmultitouchscrolling: js.UndefOr[Boolean] = js.native
+    var preventmultitouchscrolling: js.UndefOr[Boolean] = js.undefined
     
-    var railalign: js.UndefOr[right | left | top | bottom] = js.native
+    var railalign: js.UndefOr[right | left | top | bottom] = js.undefined
     
-    var railhoffset: js.UndefOr[Boolean | Left] = js.native
+    var railhoffset: js.UndefOr[Boolean | Left] = js.undefined
     
-    var railoffset: js.UndefOr[Boolean | Left] = js.native
+    var railoffset: js.UndefOr[Boolean | Left] = js.undefined
     
-    var railpadding: js.UndefOr[Bottom] = js.native
+    var railpadding: js.UndefOr[Bottom] = js.undefined
     
-    var railvalign: js.UndefOr[right | left | top | bottom] = js.native
+    var railvalign: js.UndefOr[right | left | top | bottom] = js.undefined
     
-    var rtlmode: js.UndefOr[auto | Boolean] = js.native
+    var rtlmode: js.UndefOr[auto | Boolean] = js.undefined
     
-    var scriptpath: js.UndefOr[String] = js.native
+    var scriptpath: js.UndefOr[String] = js.undefined
     
-    var scrollCLass: js.UndefOr[String] = js.native
+    var scrollCLass: js.UndefOr[String] = js.undefined
     
-    var scrollbarid: js.UndefOr[String] = js.native
+    var scrollbarid: js.UndefOr[String] = js.undefined
     
-    var scrollspeed: js.UndefOr[Double] = js.native
+    var scrollspeed: js.UndefOr[Double] = js.undefined
     
-    var sensitiverail: js.UndefOr[Boolean] = js.native
+    var sensitiverail: js.UndefOr[Boolean] = js.undefined
     
-    var smoothscroll: js.UndefOr[Boolean] = js.native
+    var smoothscroll: js.UndefOr[Boolean] = js.undefined
     
-    var spacebarenabled: js.UndefOr[Boolean] = js.native
+    var spacebarenabled: js.UndefOr[Boolean] = js.undefined
     
-    var touchbehavior: js.UndefOr[Boolean] = js.native
+    var touchbehavior: js.UndefOr[Boolean] = js.undefined
     
-    var usetransition: js.UndefOr[Boolean] = js.native
+    var usetransition: js.UndefOr[Boolean] = js.undefined
     
-    var zindex: js.UndefOr[auto | Double] = js.native
+    var zindex: js.UndefOr[auto | Double] = js.undefined
   }
   object NiceScrollOptions {
     
@@ -502,20 +500,19 @@ object JQueryNiceScroll {
     }
   }
   
-  @js.native
   trait NiceScrollPage extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var maxh: Double = js.native
+    var maxh: Double
     
-    var maxw: Double = js.native
+    var maxw: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object NiceScrollPage {
     

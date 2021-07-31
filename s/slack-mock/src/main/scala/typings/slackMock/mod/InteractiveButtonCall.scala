@@ -3,21 +3,19 @@ package typings.slackMock.mod
 import typings.nock.mod.ReplyHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractiveButtonCall[T] extends StObject {
   
-  var headers: InteractiveButtonHttpHeaders = js.native
+  var headers: InteractiveButtonHttpHeaders
   
-  var params: T = js.native
+  var params: T
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var `type`: InteractiveButtonCallType = js.native
+  var `type`: InteractiveButtonCallType
   
-  var url: InteractiveButtonUrl = js.native
+  var url: InteractiveButtonUrl
 }
 object InteractiveButtonCall {
   
@@ -35,7 +33,7 @@ object InteractiveButtonCall {
   }
   
   @scala.inline
-  implicit class InteractiveButtonCallMutableBuilder[Self <: InteractiveButtonCall[_], T] (val x: Self with InteractiveButtonCall[T]) extends AnyVal {
+  implicit class InteractiveButtonCallMutableBuilder[Self <: InteractiveButtonCall[?], T] (val x: Self & InteractiveButtonCall[T]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

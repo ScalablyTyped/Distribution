@@ -2,13 +2,11 @@ package typings.tern.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryQuery extends StObject {
   
-  var query: typings.tern.ternMod.Query = js.native
+  var query: typings.tern.ternMod.Query
 }
 object QueryQuery {
   

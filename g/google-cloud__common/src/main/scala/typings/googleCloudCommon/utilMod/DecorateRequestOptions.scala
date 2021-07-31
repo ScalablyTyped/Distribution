@@ -4,25 +4,25 @@ import typings.googleCloudCommon.serviceObjectMod.Interceptor
 import typings.teenyRequest.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorateRequestOptions extends CoreOptions {
+trait DecorateRequestOptions
+  extends StObject
+     with CoreOptions {
   
-  var autoPaginate: js.UndefOr[Boolean] = js.native
+  var autoPaginate: js.UndefOr[Boolean] = js.undefined
   
-  var autoPaginateVal: js.UndefOr[Boolean] = js.native
+  var autoPaginateVal: js.UndefOr[Boolean] = js.undefined
   
-  var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.native
+  var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var objectMode: js.UndefOr[Boolean] = js.native
+  var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var shouldReturnStream: js.UndefOr[Boolean] = js.native
+  var shouldReturnStream: js.UndefOr[Boolean] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
 }
 object DecorateRequestOptions {
   

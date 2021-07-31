@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPartnerEventsResponse extends StObject {
   
   /**
     * The list of events from this operation that were successfully written to the partner event bus.
     */
-  var Entries: js.UndefOr[PutPartnerEventsResultEntryList] = js.native
+  var Entries: js.UndefOr[PutPartnerEventsResultEntryList] = js.undefined
   
   /**
     * The number of events from this operation that could not be written to the partner event bus.
     */
-  var FailedEntryCount: js.UndefOr[Integer] = js.native
+  var FailedEntryCount: js.UndefOr[Integer] = js.undefined
 }
 object PutPartnerEventsResponse {
   

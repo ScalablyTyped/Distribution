@@ -8,7 +8,6 @@ import typings.tuyaPanelKit.anon.Dictkey
 import typings.tuyaPanelKit.anon.Emit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TYSdk {
@@ -35,16 +34,13 @@ object TYSdk {
     * @param version - api version, default 1.0
     */
   // tslint:disable-next-line no-unnecessary-generics
-  @JSImport("tuya-panel-kit", "TYSdk.apiRequest")
-  @js.native
-  def apiRequest[T](a: String, postData: Record[String, _]): js.Promise[T] = js.native
-  @JSImport("tuya-panel-kit", "TYSdk.apiRequest")
-  @js.native
-  def apiRequest[T](a: String, postData: Record[String, _], version: String): js.Promise[T] = js.native
+  @scala.inline
+  def apiRequest[T](a: String, postData: Record[String, js.Any]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def apiRequest[T](a: String, postData: Record[String, js.Any], version: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("tuya-panel-kit", "TYSdk.applyNavigator")
-  @js.native
-  def applyNavigator(navigator: DeprecatedNavigator): Unit = js.native
+  @scala.inline
+  def applyNavigator(navigator: DeprecatedNavigator): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyNavigator")(navigator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("tuya-panel-kit", "TYSdk.devInfo")
   @js.native

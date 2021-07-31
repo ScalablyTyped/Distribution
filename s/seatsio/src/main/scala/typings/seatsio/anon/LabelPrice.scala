@@ -2,17 +2,15 @@ package typings.seatsio.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelPrice extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var price: Double = js.native
+  var price: Double
   
-  var ticketType: String = js.native
+  var ticketType: String
 }
 object LabelPrice {
   

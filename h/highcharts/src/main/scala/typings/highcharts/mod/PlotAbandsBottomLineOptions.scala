@@ -2,13 +2,11 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotAbandsBottomLineOptions extends StObject {
   
-  var styles: js.UndefOr[PlotAbandsBottomLineStylesOptions] = js.native
+  var styles: js.UndefOr[PlotAbandsBottomLineStylesOptions] = js.undefined
 }
 object PlotAbandsBottomLineOptions {
   

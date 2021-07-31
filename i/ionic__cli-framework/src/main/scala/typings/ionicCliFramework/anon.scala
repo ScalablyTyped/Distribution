@@ -17,21 +17,19 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aliases[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    val aliases: js.Array[String] = js.native
+    val aliases: js.Array[String]
     
-    val command: C = js.native
+    val command: C
     
-    val namespace: N = js.native
+    val namespace: N
     
-    val path: js.Array[CommandPathItem[C, N, M, I, O]] = js.native
+    val path: js.Array[CommandPathItem[C, N, M, I, O]]
   }
   object Aliases {
     
@@ -47,7 +45,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AliasesMutableBuilder[Self <: Aliases[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (Aliases[C, N, M, I, O])) extends AnyVal {
+    implicit class AliasesMutableBuilder[Self <: Aliases[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Aliases[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
@@ -69,14 +67,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Argv[N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    var argv: js.Array[String] = js.native
+    var argv: js.Array[String]
     
-    var env: ProcessEnv = js.native
+    var env: ProcessEnv
     
-    var namespace: N = js.native
+    var namespace: N
   }
   object Argv {
     
@@ -87,7 +84,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ArgvMutableBuilder[Self <: Argv[_, _, _, _, _], N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (Argv[N, C, M, I, O])) extends AnyVal {
+    implicit class ArgvMutableBuilder[Self <: Argv[?, ?, ?, ?, ?], N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Argv[N, C, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
@@ -103,10 +100,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CaseSensitive extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
   }
   object CaseSensitive {
     
@@ -127,10 +123,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.native
+    var colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.undefined
   }
   object Colors {
     
@@ -151,10 +146,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Commands[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    var commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]] = js.native
+    var commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]]
   }
   object Commands {
     
@@ -165,7 +159,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CommandsMutableBuilder[Self <: Commands[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (Commands[C, N, M, I, O])) extends AnyVal {
+    implicit class CommandsMutableBuilder[Self <: Commands[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Commands[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setCommands(value: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
@@ -175,10 +169,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IncludeSeparated extends StObject {
     
-    var includeSeparated: js.UndefOr[Boolean] = js.native
+    var includeSeparated: js.UndefOr[Boolean] = js.undefined
   }
   object IncludeSeparated {
     
@@ -200,12 +193,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerOptions> */
-  @js.native
   trait PartialLoggerOptions extends StObject {
     
-    var handlers: js.UndefOr[Set[LoggerHandler]] = js.native
+    var handlers: js.UndefOr[Set[LoggerHandler]] = js.undefined
     
-    var level: js.UndefOr[LoggerLevelWeight] = js.native
+    var level: js.UndefOr[LoggerLevelWeight] = js.undefined
   }
   object PartialLoggerOptions {
     
@@ -233,14 +225,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/logger.StreamHandlerOptions> */
-  @js.native
   trait PartialStreamHandlerOptio extends StObject {
     
-    var filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.undefined
     
-    var formatter: js.UndefOr[LoggerFormatter] = js.native
+    var formatter: js.UndefOr[LoggerFormatter] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
   }
   object PartialStreamHandlerOptio {
     
@@ -274,12 +265,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/tasks.TaskOptions> */
-  @js.native
   trait PartialTaskOptions extends StObject {
     
-    var msg: js.UndefOr[String] = js.native
+    var msg: js.UndefOr[String] = js.undefined
     
-    var tickInterval: js.UndefOr[Double] = js.native
+    var tickInterval: js.UndefOr[Double] = js.undefined
   }
   object PartialTaskOptions {
     
@@ -307,24 +297,23 @@ object anon {
   }
   
   /* Inlined std.Required<@ionic/cli-framework.@ionic/cli-framework/definitions.CommandMetadata<@ionic/cli-framework.@ionic/cli-framework/definitions.CommandMetadataInput, @ionic/cli-framework.@ionic/cli-framework/definitions.CommandMetadataOption>> */
-  @js.native
   trait RequiredCommandMetadataCo extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var exampleCommands: js.Array[String] = js.native
+    var exampleCommands: js.Array[String]
     
-    var footnotes: js.Array[Footnote] = js.native
+    var footnotes: js.Array[Footnote]
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var inputs: js.Array[CommandMetadataInput] = js.native
+    var inputs: js.Array[CommandMetadataInput]
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.Array[CommandMetadataOption] = js.native
+    var options: js.Array[CommandMetadataOption]
     
-    var summary: String = js.native
+    var summary: String
   }
   object RequiredCommandMetadataCo {
     
@@ -387,10 +376,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Value {
     
@@ -411,10 +399,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueString extends StObject {
     
-    val value: String = js.native
+    val value: String
   }
   object ValueString {
     

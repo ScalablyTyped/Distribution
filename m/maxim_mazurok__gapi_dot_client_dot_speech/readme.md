@@ -10,9 +10,9 @@ TypeScript typings for Cloud Speech-to-Text API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.speech |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 54 |
+| # downloads        | 1045 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReverseGeocodingRequest extends StObject {
   
   /**
@@ -19,10 +17,10 @@ trait ReverseGeocodingRequest extends StObject {
     *    Address components are all returned in the same language, which is chosen from the first component.
     *  - If a name is not available in the preferred language, the geocoder uses the closest match.
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /** The latitude and longitude values specifying the location for which you wish to obtain the closest, human-readable address. */
-  var latlng: js.UndefOr[LatLng] = js.native
+  var latlng: js.UndefOr[LatLng] = js.undefined
   
   /**
     * A filter of one or more location types, separated by a pipe (`|`).
@@ -32,7 +30,7 @@ trait ReverseGeocodingRequest extends StObject {
     * then discards those results that do not match the specified location type(s).
     * Note: This parameter is available only for requests that include an API key or a client ID.
     */
-  var location_type: js.UndefOr[ReverseGeocodingLocationType] = js.native
+  var location_type: js.UndefOr[ReverseGeocodingLocationType] = js.undefined
   
   /**
     * The place ID of the place for which you wish to obtain the human-readable address.
@@ -40,7 +38,7 @@ trait ReverseGeocodingRequest extends StObject {
     * For example, you can use the `placeID` returned by the Roads API to get the address for a snapped point.
     * The place ID may only be specified if the request includes an API key or a Google Maps APIs Premium Plan client ID.
     */
-  var place_id: js.UndefOr[String] = js.native
+  var place_id: js.UndefOr[String] = js.undefined
   
   /**
     * A filter of one or more address types, separated by a pipe (`|`).
@@ -50,7 +48,7 @@ trait ReverseGeocodingRequest extends StObject {
     * then discards those results that do not match the specified address type(s).
     * Note: This parameter is available only for requests that include an API key or a client ID.
     */
-  var result_type: js.UndefOr[AddressType] = js.native
+  var result_type: js.UndefOr[AddressType] = js.undefined
 }
 object ReverseGeocodingRequest {
   

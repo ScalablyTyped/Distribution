@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionRange extends StObject {
   
   /**
     * The parent selection range containing this range. Therefore `parent.range` must contain `this.range`.
     */
-  var parent: js.UndefOr[SelectionRange] = js.native
+  var parent: js.UndefOr[SelectionRange] = js.undefined
   
   /**
     * The [range](#Range) of this selection range.
     */
-  var range: Range = js.native
+  var range: Range
 }
 object SelectionRange {
   
@@ -26,21 +24,22 @@ object SelectionRange {
     __obj.asInstanceOf[SelectionRange]
   }
   
+  @JSImport("vscode-languageserver-types", "SelectionRange")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SelectionRange
     * @param range the range.
     * @param parent an optional parent.
     */
-  @JSImport("vscode-languageserver-types", "SelectionRange.create")
-  @js.native
-  def create(range: Range): SelectionRange = js.native
-  @JSImport("vscode-languageserver-types", "SelectionRange.create")
-  @js.native
-  def create(range: Range, parent: SelectionRange): SelectionRange = js.native
+  @scala.inline
+  def create(range: Range): SelectionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[SelectionRange]
+  @scala.inline
+  def create(range: Range, parent: SelectionRange): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
   
-  @JSImport("vscode-languageserver-types", "SelectionRange.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean]
   
   @scala.inline
   implicit class SelectionRangeMutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {

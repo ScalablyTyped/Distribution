@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutBindingProvider extends StObject {
   
   var getBindingAccessors: js.UndefOr[
@@ -16,11 +14,11 @@ trait KnockoutBindingProvider extends StObject {
       /* bindingContext */ KnockoutBindingContext, 
       StringDictionary[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  def getBindings(node: Node, bindingContext: KnockoutBindingContext): js.Object = js.native
+  def getBindings(node: Node, bindingContext: KnockoutBindingContext): js.Object
   
-  def nodeHasBindings(node: Node): Boolean = js.native
+  def nodeHasBindings(node: Node): Boolean
 }
 object KnockoutBindingProvider {
   

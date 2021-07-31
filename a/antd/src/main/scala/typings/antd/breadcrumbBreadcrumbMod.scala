@@ -9,7 +9,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbBreadcrumbMod extends Shortcut {
@@ -19,17 +18,18 @@ object breadcrumbBreadcrumbMod extends Shortcut {
   val default: BreadcrumbInterface = js.native
   
   @js.native
-  trait BreadcrumbInterface extends FunctionComponent[BreadcrumbProps] {
+  trait BreadcrumbInterface
+    extends StObject
+       with FunctionComponent[BreadcrumbProps] {
     
     var Item: BreadcrumbItemInterface = js.native
     
     var Separator: BreadcrumbSeparatorInterface = js.native
   }
   
-  @js.native
   trait BreadcrumbProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     var itemRender: js.UndefOr[
         js.Function4[
@@ -39,17 +39,17 @@ object breadcrumbBreadcrumbMod extends Shortcut {
           /* paths */ js.Array[String], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var routes: js.UndefOr[js.Array[Route]] = js.native
+    var routes: js.UndefOr[js.Array[Route]] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object BreadcrumbProps {
     
@@ -111,14 +111,13 @@ object breadcrumbBreadcrumbMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Route extends StObject {
     
-    var breadcrumbName: String = js.native
+    var breadcrumbName: String
     
-    var children: js.UndefOr[js.Array[OmitRoutechildren]] = js.native
+    var children: js.UndefOr[js.Array[OmitRoutechildren]] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Route {
     

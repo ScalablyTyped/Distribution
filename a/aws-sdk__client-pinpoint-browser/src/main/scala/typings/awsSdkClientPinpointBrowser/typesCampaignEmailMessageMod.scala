@@ -2,33 +2,31 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCampaignEmailMessageMod {
   
-  @js.native
   trait CampaignEmailMessage extends StObject {
     
     /**
       * The email text body.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * The email address used to send the email from. Defaults to use FromAddress specified in the Email Channel.
       */
-    var FromAddress: js.UndefOr[String] = js.native
+    var FromAddress: js.UndefOr[String] = js.undefined
     
     /**
       * The email html body.
       */
-    var HtmlBody: js.UndefOr[String] = js.native
+    var HtmlBody: js.UndefOr[String] = js.undefined
     
     /**
       * The email title (Or subject).
       */
-    var Title: js.UndefOr[String] = js.native
+    var Title: js.UndefOr[String] = js.undefined
   }
   object CampaignEmailMessage {
     

@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Graphics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Holographic {
@@ -10,27 +9,140 @@ object Holographic {
   @JSGlobal("Windows.Graphics.Holographic.HolographicCamera")
   @js.native
   abstract class HolographicCamera ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicCamera
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCamera {
+    
+    /* CompleteClass */
+    var id: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var isStereo: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var renderTargetSize: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setFarPlaneDistance: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setNearPlaneDistance: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var viewportScaleFactor: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicCameraPose")
   @js.native
   abstract class HolographicCameraPose ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraPose
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraPose {
+    
+    /* CompleteClass */
+    var farPlaneDistance: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var holographicCamera: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var nearPlaneDistance: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var projectionTransform: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var tryGetCullingFrustum: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var tryGetViewTransform: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var tryGetVisibleFrustum: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var viewport: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicCameraRenderingParameters")
   @js.native
   abstract class HolographicCameraRenderingParameters ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraRenderingParameters
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraRenderingParameters {
+    
+    /* CompleteClass */
+    var direct3D11BackBuffer: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var direct3D11Device: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setFocusPoint: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicFrame")
   @js.native
   abstract class HolographicFrame ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicFrame
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFrame {
+    
+    /* CompleteClass */
+    var addedCameras: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var currentPrediction: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var duration: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var getRenderingParameters: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var presentUsingCurrentPrediction: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var removedCameras: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var updateCurrentPrediction: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var waitForFrameToFinish: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicFramePrediction")
   @js.native
   abstract class HolographicFramePrediction ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicFramePrediction
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFramePrediction {
+    
+    /* CompleteClass */
+    var cameraPoses: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var timestamp: js.Any = js.native
+  }
   
   object HolographicFramePresentResult {
     
@@ -75,7 +187,37 @@ object Holographic {
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
   @js.native
   abstract class HolographicSpace ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpace
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpace {
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var addEventListener: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var createNextFrame: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var oncameraadded: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var oncameraremoved: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var primaryAdapterId: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var removeEventListener: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setDirect3D11Device: js.Any = js.native
+  }
   object HolographicSpace {
     
     @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
@@ -93,10 +235,24 @@ object Holographic {
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs")
   @js.native
   abstract class HolographicSpaceCameraAddedEventArgs ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs {
+    
+    /* CompleteClass */
+    var camera: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var getDeferral: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs")
   @js.native
   abstract class HolographicSpaceCameraRemovedEventArgs ()
-    extends typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs {
+    
+    /* CompleteClass */
+    var camera: js.Any = js.native
+  }
 }

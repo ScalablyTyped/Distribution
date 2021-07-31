@@ -2,15 +2,13 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Providers extends StObject {
   
-  var providers: js.UndefOr[js.Array[_]] = js.native
+  var providers: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var useJit: js.UndefOr[Boolean] = js.native
+  var useJit: js.UndefOr[Boolean] = js.undefined
 }
 object Providers {
   
@@ -24,7 +22,7 @@ object Providers {
   implicit class ProvidersMutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setProviders(value: js.Array[_]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    def setProviders(value: js.Array[js.Any]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)

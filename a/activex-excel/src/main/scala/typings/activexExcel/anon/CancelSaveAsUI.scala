@@ -2,15 +2,13 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSaveAsUI extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val SaveAsUI: Boolean = js.native
+  val SaveAsUI: Boolean
 }
 object CancelSaveAsUI {
   

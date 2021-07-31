@@ -4,21 +4,19 @@ import typings.std.Request
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object makeRequestCallbackMod {
   
   type MakeRequestCallback = js.Function1[/* options */ MakeRequestCallbackOptions, js.Promise[Response]]
   
-  @js.native
   trait MakeRequestCallbackOptions extends StObject {
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var request: String | Request = js.native
+    var request: String | Request
   }
   object MakeRequestCallbackOptions {
     

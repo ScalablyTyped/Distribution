@@ -3,13 +3,15 @@ package typings.rusha
 import org.scalablytyped.runtime.Shortcut
 import typings.node.Buffer
 import typings.rusha.rushaStrings.hex
+import typings.std.AddEventListenerOptions
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.MessageEvent
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,7 +23,7 @@ object mod extends Shortcut {
   @js.native
   trait Hash extends StObject {
     
-    def digest(encoding: js.UndefOr[scala.Nothing]): ArrayBuffer = js.native
+    def digest(encoding: Unit): ArrayBuffer = js.native
     @JSName("digest")
     def digest_hex(encoding: hex): String = js.native
     
@@ -31,14 +33,13 @@ object mod extends Shortcut {
     def update(value: ArrayBuffer): Hash = js.native
   }
   
-  @js.native
   trait Rusha extends StObject {
     
-    def createHash(): Hash = js.native
+    def createHash(): Hash
     
-    def createWorker(): RushaWorker = js.native
+    def createWorker(): RushaWorker
     
-    def disableWorkerBehaviour(): Unit = js.native
+    def disableWorkerBehaviour(): Unit
   }
   object Rusha {
     
@@ -63,20 +64,35 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait RushaWorker extends Worker {
+  trait RushaWorker
+    extends StObject
+       with Worker {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     @JSName("onmessage")
     var onmessage_RushaWorker: (js.ThisFunction1[/* this */ this.type, /* res */ MessageEvent[RushaWorkerResponse], Unit]) | Null = js.native
     
     def postMessage(req: RushaWorkerRequest): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
-  @js.native
   trait RushaWorkerRequest extends StObject {
     
-    var data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob = js.native
+    var data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob
     
-    var id: String = js.native
+    var id: String
   }
   object RushaWorkerRequest {
     
@@ -100,12 +116,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RushaWorkerResponse extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var id: String = js.native
+    var id: String
   }
   object RushaWorkerResponse {
     

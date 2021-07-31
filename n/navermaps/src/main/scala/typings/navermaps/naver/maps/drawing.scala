@@ -2,7 +2,6 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawing {
@@ -14,22 +13,34 @@ object drawing {
   object DrawingEvent extends StObject {
     
     @js.native
-    sealed trait ADD extends DrawingEvent
+    sealed trait ADD
+      extends StObject
+         with DrawingEvent
     
     @js.native
-    sealed trait Added extends DrawingEvent
+    sealed trait Added
+      extends StObject
+         with DrawingEvent
     
     @js.native
-    sealed trait REMOVE extends DrawingEvent
+    sealed trait REMOVE
+      extends StObject
+         with DrawingEvent
     
     @js.native
-    sealed trait Removed extends DrawingEvent
+    sealed trait Removed
+      extends StObject
+         with DrawingEvent
     
     @js.native
-    sealed trait SELECT extends DrawingEvent
+    sealed trait SELECT
+      extends StObject
+         with DrawingEvent
     
     @js.native
-    sealed trait Selected extends DrawingEvent
+    sealed trait Selected
+      extends StObject
+         with DrawingEvent
   }
   
   @js.native
@@ -39,25 +50,39 @@ object drawing {
   object DrawingMode extends StObject {
     
     @js.native
-    sealed trait ARROWLINE extends DrawingMode
+    sealed trait ARROWLINE
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait ELLIPSE extends DrawingMode
+    sealed trait ELLIPSE
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait HAND extends DrawingMode
+    sealed trait HAND
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait MARKER extends DrawingMode
+    sealed trait MARKER
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait POLYGON extends DrawingMode
+    sealed trait POLYGON
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait POLYLINE extends DrawingMode
+    sealed trait POLYLINE
+      extends StObject
+         with DrawingMode
     
     @js.native
-    sealed trait RECTANGLE extends DrawingMode
+    sealed trait RECTANGLE
+      extends StObject
+         with DrawingMode
   }
   
   @js.native
@@ -67,24 +92,31 @@ object drawing {
   object DrawingStyle extends StObject {
     
     @js.native
-    sealed trait HORIZONTAL extends DrawingStyle
+    sealed trait HORIZONTAL
+      extends StObject
+         with DrawingStyle
     
     @js.native
-    sealed trait HORIZONTAL_2 extends DrawingStyle
+    sealed trait HORIZONTAL_2
+      extends StObject
+         with DrawingStyle
     
     @js.native
-    sealed trait VERTICAL extends DrawingStyle
+    sealed trait VERTICAL
+      extends StObject
+         with DrawingStyle
     
     @js.native
-    sealed trait VERTICAL_2 extends DrawingStyle
+    sealed trait VERTICAL_2
+      extends StObject
+         with DrawingStyle
   }
   
-  @js.native
   trait ControlPointOptions_ extends StObject {
     
-    var anchorPointOptions: CircleOptions = js.native
+    var anchorPointOptions: CircleOptions
     
-    var midPointOptions: CircleOptions = js.native
+    var midPointOptions: CircleOptions
   }
   object ControlPointOptions_ {
     
@@ -105,12 +137,11 @@ object drawing {
     }
   }
   
-  @js.native
   trait DrawingControlOptions_ extends StObject {
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var style: js.UndefOr[DrawingStyle] = js.native
+    var style: js.UndefOr[DrawingStyle] = js.undefined
   }
   object DrawingControlOptions_ {
     
@@ -138,7 +169,9 @@ object drawing {
   }
   
   @js.native
-  trait DrawingManager extends KVO {
+  trait DrawingManager
+    extends StObject
+       with KVO {
     
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode): Unit = js.native
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode, id: String): Unit = js.native
@@ -159,30 +192,29 @@ object drawing {
     def toGeoJson(): js.Any = js.native
   }
   
-  @js.native
   trait DrawingOptions extends StObject {
     
-    var arrowlineOptions: js.UndefOr[PolylineOptions] = js.native
+    var arrowlineOptions: js.UndefOr[PolylineOptions] = js.undefined
     
-    var controlPointOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.controlPointOptions] = js.native
+    var controlPointOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.controlPointOptions] = js.undefined
     
-    var drawingControl: js.UndefOr[js.Array[DrawingMode]] = js.native
+    var drawingControl: js.UndefOr[js.Array[DrawingMode]] = js.undefined
     
-    var drawingControlOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.drawingControlOptions] = js.native
+    var drawingControlOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.drawingControlOptions] = js.undefined
     
-    var drawingMode: js.UndefOr[DrawingMode] = js.native
+    var drawingMode: js.UndefOr[DrawingMode] = js.undefined
     
-    var ellipseOptions: js.UndefOr[EllipseOptions] = js.native
+    var ellipseOptions: js.UndefOr[EllipseOptions] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var markerOptions: js.UndefOr[MarkerOptions] = js.native
+    var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
     
-    var polygonOptions: js.UndefOr[PolygonOptions] = js.native
+    var polygonOptions: js.UndefOr[PolygonOptions] = js.undefined
     
-    var polylineOptions: js.UndefOr[PolylineOptions] = js.native
+    var polylineOptions: js.UndefOr[PolylineOptions] = js.undefined
     
-    var rectangleOptions: js.UndefOr[RectangleOptions] = js.native
+    var rectangleOptions: js.UndefOr[RectangleOptions] = js.undefined
   }
   object DrawingOptions {
     

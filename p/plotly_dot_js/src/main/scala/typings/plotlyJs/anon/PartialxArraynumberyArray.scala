@@ -2,16 +2,14 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  x :std.Array<number>,   y :std.Array<number>}> */
-@js.native
 trait PartialxArraynumberyArray extends StObject {
   
-  var x: js.UndefOr[js.Array[Double]] = js.native
+  var x: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var y: js.UndefOr[js.Array[Double]] = js.native
+  var y: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object PartialxArraynumberyArray {
   

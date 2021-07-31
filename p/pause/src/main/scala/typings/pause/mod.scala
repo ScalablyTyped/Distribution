@@ -3,21 +3,22 @@ package typings.pause
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stream: Stream): Handle = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Handle]
+  
   @JSImport("pause", JSImport.Namespace)
   @js.native
-  def apply(stream: Stream): Handle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Handle extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def resume(): Unit = js.native
+    def resume(): Unit
   }
   object Handle {
     

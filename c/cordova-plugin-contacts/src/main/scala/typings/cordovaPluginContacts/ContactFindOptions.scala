@@ -2,21 +2,19 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Search options to filter navigator.contacts.  */
-@js.native
 trait ContactFindOptions extends StObject {
   
   /* Contact fields to be returned back. If specified, the resulting Contact object only features values for these fields. */
-  var desiredFields: js.UndefOr[js.Array[ContactFieldType]] = js.native
+  var desiredFields: js.UndefOr[js.Array[ContactFieldType]] = js.undefined
   
   /** The search string used to find navigator.contacts. */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /** Determines if the find operation returns multiple navigator.contacts. */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
 }
 object ContactFindOptions {
   

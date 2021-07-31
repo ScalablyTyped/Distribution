@@ -29,7 +29,6 @@ import typings.std.Date
 import typings.std.RTCPeerConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "RTCSession")
@@ -48,7 +47,7 @@ class RTCSession () extends StObject {
   var end_time: Date = js.native
   
   def hold(): Unit = js.native
-  def hold(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
+  def hold(options: Unit, done: js.Function0[Unit]): Unit = js.native
   def hold(options: SessionHoldOptions): Unit = js.native
   def hold(options: SessionHoldOptions, done: js.Function0[Unit]): Unit = js.native
   
@@ -140,7 +139,7 @@ class RTCSession () extends StObject {
   var remote_identity: NameAddrHeader = js.native
   
   def renegotiate(): Unit = js.native
-  def renegotiate(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
+  def renegotiate(options: Unit, done: js.Function0[Unit]): Unit = js.native
   def renegotiate(options: SessionRenegotiateOptions): Unit = js.native
   def renegotiate(options: SessionRenegotiateOptions, done: js.Function0[Unit]): Unit = js.native
   
@@ -152,9 +151,9 @@ class RTCSession () extends StObject {
   def sendDTMF(tone: Double, options: SessionSendDtmfOptions): Unit = js.native
   
   def sendInfo(contentType: String): Unit = js.native
-  def sendInfo(contentType: String, body: js.UndefOr[scala.Nothing], options: SessionSendInfoOptions): Unit = js.native
   def sendInfo(contentType: String, body: String): Unit = js.native
   def sendInfo(contentType: String, body: String, options: SessionSendInfoOptions): Unit = js.native
+  def sendInfo(contentType: String, body: Unit, options: SessionSendInfoOptions): Unit = js.native
   
   var start_time: js.UndefOr[Date] = js.native
   
@@ -162,7 +161,7 @@ class RTCSession () extends StObject {
   def terminate(options: SessionTerminateOptions): Unit = js.native
   
   def unhold(): Unit = js.native
-  def unhold(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
+  def unhold(options: Unit, done: js.Function0[Unit]): Unit = js.native
   def unhold(options: SessionHoldOptions): Unit = js.native
   def unhold(options: SessionHoldOptions, done: js.Function0[Unit]): Unit = js.native
   

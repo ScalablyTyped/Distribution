@@ -12,7 +12,6 @@ import typings.eventTargetShim.mod.EventTarget.PickEvent
 import typings.eventTargetShim.mod.EventTarget.RemoveOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -173,32 +172,31 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Pick<event-target-shim.event-target-shim.Event, event-target-shim.event-target-shim.EventTarget.OmittableEventKeys>> */
-  @js.native
   trait PartialPickEventOmittable[TEvents /* <: EventDefinition */] extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.native
+    var AT_TARGET: js.UndefOr[Double] = js.undefined
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.native
+    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.native
+    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var NONE: js.UndefOr[Double] = js.native
+    var NONE: js.UndefOr[Double] = js.undefined
     
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
-    var cancelBubble: js.UndefOr[Boolean] = js.native
+    var cancelBubble: js.UndefOr[Boolean] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var composed: js.UndefOr[Boolean] = js.native
+    var composed: js.UndefOr[Boolean] = js.undefined
     
-    var composedPath: js.UndefOr[js.Function0[js.Array[EventTargetstandardAddEventListener[TEvents]]]] = js.native
+    var composedPath: js.UndefOr[js.Function0[js.Array[EventTargetstandardAddEventListener[TEvents]]]] = js.undefined
     
-    var currentTarget: js.UndefOr[EventTargetstandardAddEventListener[TEvents] | Null] = js.native
+    var currentTarget: js.UndefOr[EventTargetstandardAddEventListener[TEvents] | Null] = js.undefined
     
-    var defaultPrevented: js.UndefOr[Boolean] = js.native
+    var defaultPrevented: js.UndefOr[Boolean] = js.undefined
     
-    var eventPhase: js.UndefOr[Double] = js.native
+    var eventPhase: js.UndefOr[Double] = js.undefined
     
     var initEvent: js.UndefOr[
         js.Function3[
@@ -207,23 +205,23 @@ object anon {
           /* cancelable */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var isTrusted: js.UndefOr[Boolean] = js.native
+    var isTrusted: js.UndefOr[Boolean] = js.undefined
     
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var returnValue: js.UndefOr[Boolean] = js.native
+    var returnValue: js.UndefOr[Boolean] = js.undefined
     
-    var srcElement: js.UndefOr[js.Any | Null] = js.native
+    var srcElement: js.UndefOr[js.Any | Null] = js.undefined
     
-    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var target: js.UndefOr[EventTargetstandardAddEventListener[TEvents] | Null] = js.native
+    var target: js.UndefOr[EventTargetstandardAddEventListener[TEvents] | Null] = js.undefined
     
-    var timeStamp: js.UndefOr[Double] = js.native
+    var timeStamp: js.UndefOr[Double] = js.undefined
   }
   object PartialPickEventOmittable {
     
@@ -234,7 +232,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PartialPickEventOmittableMutableBuilder[Self <: PartialPickEventOmittable[_], TEvents /* <: EventDefinition */] (val x: Self with PartialPickEventOmittable[TEvents]) extends AnyVal {
+    implicit class PartialPickEventOmittableMutableBuilder[Self <: PartialPickEventOmittable[?], TEvents /* <: EventDefinition */] (val x: Self & PartialPickEventOmittable[TEvents]) extends AnyVal {
       
       @scala.inline
       def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])

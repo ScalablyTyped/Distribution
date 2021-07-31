@@ -12,74 +12,73 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * service that holds all cell properties of a text table cell in a text document.
   * @see com.sun.star.text.Cell
   */
-@js.native
 trait CellProperties
-  extends XPropertySet
-     with UserDefinedAttributesSupplier {
+  extends StObject
+     with UserDefinedAttributesSupplier
+     with XPropertySet {
   
   /** contains the background color. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the name of the graphic filter of the background graphic. */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /** determines the position of the background graphic. */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL to the background graphic. */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /** determines whether the background is transparent. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** contains the bottom border line. */
-  var BottomBorder: BorderLine = js.native
+  var BottomBorder: BorderLine
   
   /** contains the distance of the bottom border. */
-  var BottomBorderDistance: Double = js.native
+  var BottomBorderDistance: Double
   
   /** contains the cell name, see SwXTextTable::getCellByName for more information */
-  var CellName: String = js.native
+  var CellName: String
   
   /** determines whether the cell is write protected or not. */
-  var IsProtected: Boolean = js.native
+  var IsProtected: Boolean
   
   /** contains the left border line. */
-  var LeftBorder: BorderLine = js.native
+  var LeftBorder: BorderLine
   
   /** contains the distance of the left border. */
-  var LeftBorderDistance: Double = js.native
+  var LeftBorderDistance: Double
   
   /** contains the number format. */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /** contains the right border line. */
-  var RightBorder: BorderLine = js.native
+  var RightBorder: BorderLine
   
   /** contains the distance of the right border. */
-  var RightBorderDistance: Double = js.native
+  var RightBorderDistance: Double
   
   /** contains the text section the text table is contained in if there is any. */
-  var TextSection: XTextSection = js.native
+  var TextSection: XTextSection
   
   /** contains the top border line. */
-  var TopBorder: BorderLine = js.native
+  var TopBorder: BorderLine
   
   /** contains the distance of the top border. */
-  var TopBorderDistance: Double = js.native
+  var TopBorderDistance: Double
   
   /**
     * the vertical orientation of the text inside of the table cells in this row.
     * @see VertOrientation
     */
-  var VertOrient: Double = js.native
+  var VertOrient: Double
 }
 object CellProperties {
   

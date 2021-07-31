@@ -4,52 +4,49 @@ import typings.antdMobile.badgeMod.BadgeProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionSheetMod {
   
   object default {
     
-    @JSImport("antd-mobile/lib/action-sheet", "default.close")
+    @JSImport("antd-mobile/lib/action-sheet", JSImport.Default)
     @js.native
-    def close(): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/action-sheet", "default.showActionSheetWithOptions")
-    @js.native
-    def showActionSheetWithOptions(config: ActionSheetWithOptions): Unit = js.native
-    @JSImport("antd-mobile/lib/action-sheet", "default.showActionSheetWithOptions")
-    @js.native
-    def showActionSheetWithOptions(config: ActionSheetWithOptions, callback: ActionCallBack): Unit = js.native
+    @scala.inline
+    def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/action-sheet", "default.showShareActionSheetWithOptions")
-    @js.native
-    def showShareActionSheetWithOptions(config: ShareActionSheetWithOptions): Unit = js.native
-    @JSImport("antd-mobile/lib/action-sheet", "default.showShareActionSheetWithOptions")
-    @js.native
-    def showShareActionSheetWithOptions(config: ShareActionSheetWithOptions, callback: ActionCallBack): Unit = js.native
+    @scala.inline
+    def showActionSheetWithOptions(config: ActionSheetWithOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showActionSheetWithOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def showActionSheetWithOptions(config: ActionSheetWithOptions, callback: ActionCallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showActionSheetWithOptions")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def showShareActionSheetWithOptions(config: ShareActionSheetWithOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def showShareActionSheetWithOptions(config: ShareActionSheetWithOptions, callback: ActionCallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   type ActionCallBack = js.Function2[/* index */ Double, /* rowIndex */ js.UndefOr[Double], js.Thenable[js.Any] | Unit]
   
-  @js.native
   trait ActionSheetOptions extends StObject {
     
-    var cancelButtonIndex: js.UndefOr[Double] = js.native
+    var cancelButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var destructiveButtonIndex: js.UndefOr[Double] = js.native
+    var destructiveButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[ReactNode] = js.native
+    var message: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object ActionSheetOptions {
     
@@ -112,12 +109,13 @@ object actionSheetMod {
     }
   }
   
-  @js.native
-  trait ActionSheetWithOptions extends ActionSheetOptions {
+  trait ActionSheetWithOptions
+    extends StObject
+       with ActionSheetOptions {
     
-    var badges: js.UndefOr[js.Array[BadgesOption]] = js.native
+    var badges: js.UndefOr[js.Array[BadgesOption]] = js.undefined
     
-    var options: js.Array[String] = js.native
+    var options: js.Array[String]
   }
   object ActionSheetWithOptions {
     
@@ -147,10 +145,11 @@ object actionSheetMod {
     }
   }
   
-  @js.native
-  trait BadgesOption extends BadgeProps {
+  trait BadgesOption
+    extends StObject
+       with BadgeProps {
     
-    var index: Double = js.native
+    var index: Double
   }
   object BadgesOption {
     
@@ -168,12 +167,13 @@ object actionSheetMod {
     }
   }
   
-  @js.native
-  trait ShareActionSheetWithOptions extends ActionSheetOptions {
+  trait ShareActionSheetWithOptions
+    extends StObject
+       with ActionSheetOptions {
     
-    var badges: js.UndefOr[js.Array[BadgesOption]] = js.native
+    var badges: js.UndefOr[js.Array[BadgesOption]] = js.undefined
     
-    var options: js.Array[js.Array[ShareOption] | ShareOption] = js.native
+    var options: js.Array[js.Array[ShareOption] | ShareOption]
   }
   object ShareActionSheetWithOptions {
     
@@ -203,12 +203,11 @@ object actionSheetMod {
     }
   }
   
-  @js.native
   trait ShareOption extends StObject {
     
-    var icon: ReactNode = js.native
+    var icon: ReactNode
     
-    var title: String = js.native
+    var title: String
   }
   object ShareOption {
     

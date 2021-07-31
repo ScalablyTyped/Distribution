@@ -5,7 +5,6 @@ import typings.pinyin.pinyinNumbers.`0`
 import typings.pinyin.pinyinNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,14 @@ object mod {
     * @example
     * pinyin("中心") // returns [ [ 'zhōng' ], [ 'xīn' ] ]
     */
+  @scala.inline
+  def apply(words: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  @scala.inline
+  def apply(words: String, options: Options): js.Array[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]]]
+  
   @JSImport("pinyin", JSImport.Namespace)
   @js.native
-  def apply(words: String): js.Array[js.Array[String]] = js.native
-  @JSImport("pinyin", JSImport.Namespace)
-  @js.native
-  def apply(words: String, options: Options): js.Array[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * 首字母风格，只返回拼音的首字母部分。
@@ -78,11 +79,9 @@ object mod {
     * 如果返回  0 表示 a 和 b 顺序相同
     * 如果返回  1 表示 a 在 b 后
     */
-  @JSImport("pinyin", "compare")
-  @js.native
-  def compare(a: String, b: String): `-1` | `0` | `1` = js.native
+  @scala.inline
+  def compare(a: String, b: String): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -90,13 +89,13 @@ object mod {
       * 关闭多音字模式时，返回每个汉字第一个匹配的拼音。
       * 启用多音字模式时，返回多音字的所有拼音列表。
       */
-    var heteronym: js.UndefOr[Boolean] = js.native
+    var heteronym: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否启用分词模式，默认关闭。
       * 中文分词有助于极大的降低多音字问题。但性能会极大的下降，内存也会使用更多。
       */
-    var segment: js.UndefOr[Boolean] = js.native
+    var segment: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置拼音风格，默认风格是 {@link STYLE_TONE}
@@ -107,7 +106,7 @@ object mod {
       * @see {@link STYLE_INITIALS}
       * @see {@link STYLE_FIRST_LETTER}
       */
-    var style: js.UndefOr[Double] = js.native
+    var style: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

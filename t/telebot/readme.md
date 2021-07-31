@@ -12,7 +12,7 @@ The easy way to write Telegram bots.
 | Keywords           | bot, api, wrapper, telebot, telegram, telegram api, telegram bot, telegram bot api |
 | # releases         | 4 |
 | # dependents       | 16 |
-| # downloads        | 26589 |
+| # downloads        | 37203 |
 | # stars            | 14 |
 
 ## Links

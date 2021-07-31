@@ -2,28 +2,26 @@ package typings.chromeLauncher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeFinderMod {
   
-  @JSImport("chrome-launcher/dist/chrome-finder", "darwin")
+  @JSImport("chrome-launcher/dist/chrome-finder", JSImport.Namespace)
   @js.native
-  def darwin(): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chrome-launcher/dist/chrome-finder", "darwinFast")
-  @js.native
-  def darwinFast(): js.UndefOr[String] = js.native
+  @scala.inline
+  def darwin(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("darwin")().asInstanceOf[js.Array[String]]
   
-  @JSImport("chrome-launcher/dist/chrome-finder", "linux")
-  @js.native
-  def linux(): js.Array[String] = js.native
+  @scala.inline
+  def darwinFast(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("darwinFast")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("chrome-launcher/dist/chrome-finder", "win32")
-  @js.native
-  def win32(): js.Array[String] = js.native
+  @scala.inline
+  def linux(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("linux")().asInstanceOf[js.Array[String]]
   
-  @JSImport("chrome-launcher/dist/chrome-finder", "wsl")
-  @js.native
-  def wsl(): js.Array[String] = js.native
+  @scala.inline
+  def win32(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("win32")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def wsl(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wsl")().asInstanceOf[js.Array[String]]
 }

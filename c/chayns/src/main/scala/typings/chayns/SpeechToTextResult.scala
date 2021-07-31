@@ -2,16 +2,14 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setSpeecToText()
-@js.native
 trait SpeechToTextResult extends StObject {
   
-  var languageCode: String = js.native
+  var languageCode: String
   
-  var text: js.Array[String] = js.native
+  var text: js.Array[String]
 }
 object SpeechToTextResult {
   

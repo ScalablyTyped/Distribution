@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is an additional interface the {@link XContent} representing the trash can (URL: "vnd.sun.staroffice.trashcan:///") should support.
   */
-@js.native
-trait XRecycler extends XInterface {
+trait XRecycler
+  extends StObject
+     with XInterface {
   
   /**
     * Notify the trash can that an {@link XContent} is deleting itself into it.
     * @param Properties The trash can uses this interface to access the properties of the content being deleted, to copy them for later display etc. The trash
     * @param Identifier When the deleted content is later restored or ultimately deleted, the trash can will use this identifier to query an {@link XContent}
     */
-  def trashContent(Properties: XCommandProcessor, Identifier: XContentIdentifier): Unit = js.native
+  def trashContent(Properties: XCommandProcessor, Identifier: XContentIdentifier): Unit
 }
 object XRecycler {
   

@@ -2,29 +2,27 @@ package typings.codemirror.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BgClass extends StObject {
   
-  var bgClass: String = js.native
+  var bgClass: String
   
   /** Object mapping gutter IDs to marker elements. */
-  var gutterMarkers: js.Any = js.native
+  var gutterMarkers: js.Any
   
-  var handle: js.Any = js.native
+  var handle: js.Any
   
-  var line: js.Any = js.native
+  var line: js.Any
   
-  var text: String = js.native
+  var text: String
   
-  var textClass: String = js.native
+  var textClass: String
   
   /** Array of line widgets attached to this line. */
-  var widgets: js.Any = js.native
+  var widgets: js.Any
   
-  var wrapClass: String = js.native
+  var wrapClass: String
 }
 object BgClass {
   

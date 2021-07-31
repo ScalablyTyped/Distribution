@@ -2,26 +2,24 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowMessageRequestParams extends StObject {
   
   /**
     * The message action items to present.
     */
-  var actions: js.UndefOr[js.Array[MessageActionItem]] = js.native
+  var actions: js.UndefOr[js.Array[MessageActionItem]] = js.undefined
   
   /**
     * The actual message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The message type. See {@link MessageType}
     */
-  var `type`: MessageType = js.native
+  var `type`: MessageType
 }
 object ShowMessageRequestParams {
   

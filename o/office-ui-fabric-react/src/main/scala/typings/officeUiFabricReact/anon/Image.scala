@@ -2,17 +2,15 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var image: js.Array[String | Overflow] = js.native
+  var image: js.Array[String | Overflow]
   
-  var placeholder: js.Array[String | WidthString] = js.native
+  var placeholder: js.Array[String | WidthString]
   
-  var root: Display = js.native
+  var root: Display
 }
 object Image {
   

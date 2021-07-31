@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebootWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpaces to reboot. You can specify up to 25 WorkSpaces.
     */
-  var RebootWorkspaceRequests: typings.awsSdk.workspacesMod.RebootWorkspaceRequests = js.native
+  var RebootWorkspaceRequests: typings.awsSdk.workspacesMod.RebootWorkspaceRequests
 }
 object RebootWorkspacesRequest {
   

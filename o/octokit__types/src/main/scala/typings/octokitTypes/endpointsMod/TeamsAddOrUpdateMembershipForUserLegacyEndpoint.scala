@@ -4,10 +4,8 @@ import typings.octokitTypes.octokitTypesStrings.maintainer
 import typings.octokitTypes.octokitTypesStrings.member
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsAddOrUpdateMembershipForUserLegacyEndpoint extends StObject {
   
   /**
@@ -15,11 +13,11 @@ trait TeamsAddOrUpdateMembershipForUserLegacyEndpoint extends StObject {
     * \* `member` - a normal member of the team.
     * \* `maintainer` - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description.
     */
-  var role: js.UndefOr[member | maintainer] = js.native
+  var role: js.UndefOr[member | maintainer] = js.undefined
   
-  var team_id: Double = js.native
+  var team_id: Double
   
-  var username: String = js.native
+  var username: String
 }
 object TeamsAddOrUpdateMembershipForUserLegacyEndpoint {
   

@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceReplicasGet extends StandardParameters {
+trait ParamsResourceReplicasGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The replica pool name for this request.
     */
-  var poolName: js.UndefOr[String] = js.native
+  var poolName: js.UndefOr[String] = js.undefined
   
   /**
     * The project ID for this request.
     */
-  var projectName: js.UndefOr[String] = js.native
+  var projectName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the replica for this request.
     */
-  var replicaName: js.UndefOr[String] = js.native
+  var replicaName: js.UndefOr[String] = js.undefined
   
   /**
     * The zone where the replica lives.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceReplicasGet {
   

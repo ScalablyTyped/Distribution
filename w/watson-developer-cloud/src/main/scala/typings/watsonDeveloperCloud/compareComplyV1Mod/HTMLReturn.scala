@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The HTML converted from an input document. */
-@js.native
 trait HTMLReturn extends StObject {
   
   /** The author of the input document, if identified. */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /** The HTML version of the input document. */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
   /** The number of pages in the input document. */
-  var num_pages: js.UndefOr[String] = js.native
+  var num_pages: js.UndefOr[String] = js.undefined
   
   /** The publication date of the input document, if identified. */
-  var publication_date: js.UndefOr[String] = js.native
+  var publication_date: js.UndefOr[String] = js.undefined
   
   /** The title of the input document, if identified. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object HTMLReturn {
   

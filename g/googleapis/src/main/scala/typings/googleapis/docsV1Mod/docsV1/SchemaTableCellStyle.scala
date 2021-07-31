@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,69 +9,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * unset fields in this message. A table cell style can inherit from the
   * table&#39;s style.
   */
-@js.native
 trait SchemaTableCellStyle extends StObject {
   
   /**
     * The background color of the cell.
     */
-  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The bottom border of the cell.
     */
-  var borderBottom: js.UndefOr[SchemaTableCellBorder] = js.native
+  var borderBottom: js.UndefOr[SchemaTableCellBorder] = js.undefined
   
   /**
     * The left border of the cell.
     */
-  var borderLeft: js.UndefOr[SchemaTableCellBorder] = js.native
+  var borderLeft: js.UndefOr[SchemaTableCellBorder] = js.undefined
   
   /**
     * The right border of the cell.
     */
-  var borderRight: js.UndefOr[SchemaTableCellBorder] = js.native
+  var borderRight: js.UndefOr[SchemaTableCellBorder] = js.undefined
   
   /**
     * The top border of the cell.
     */
-  var borderTop: js.UndefOr[SchemaTableCellBorder] = js.native
+  var borderTop: js.UndefOr[SchemaTableCellBorder] = js.undefined
   
   /**
     * The column span of the cell. This property is read-only.
     */
-  var columnSpan: js.UndefOr[Double] = js.native
+  var columnSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * The alignment of the content in the table cell. The default alignment
     * matches the alignment for newly created table cells in the Docs editor.
     */
-  var contentAlignment: js.UndefOr[String] = js.native
+  var contentAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * The bottom padding of the cell.
     */
-  var paddingBottom: js.UndefOr[SchemaDimension] = js.native
+  var paddingBottom: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The left padding of the cell.
     */
-  var paddingLeft: js.UndefOr[SchemaDimension] = js.native
+  var paddingLeft: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The right padding of the cell.
     */
-  var paddingRight: js.UndefOr[SchemaDimension] = js.native
+  var paddingRight: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The top padding of the cell.
     */
-  var paddingTop: js.UndefOr[SchemaDimension] = js.native
+  var paddingTop: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The row span of the cell. This property is read-only.
     */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
 }
 object SchemaTableCellStyle {
   

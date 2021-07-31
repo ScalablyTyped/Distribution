@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("pc.CubemapHandler")
 @js.native
-class CubemapHandler protected () extends ResourceHandler {
+class CubemapHandler protected ()
+  extends StObject
+     with ResourceHandler {
   def this(
     device: typings.playcanvas.pc.GraphicsDevice,
     assets: typings.playcanvas.pc.AssetRegistry,

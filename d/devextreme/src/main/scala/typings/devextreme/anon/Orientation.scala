@@ -8,15 +8,13 @@ import typings.devextreme.devextremeStrings.tree
 import typings.devextreme.devextremeStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Orientation extends StObject {
   
-  var orientation: js.UndefOr[auto | vertical | horizontal] = js.native
+  var orientation: js.UndefOr[auto | vertical | horizontal] = js.undefined
   
-  var `type`: js.UndefOr[auto | off | tree | layered] = js.native
+  var `type`: js.UndefOr[auto | off | tree | layered] = js.undefined
 }
 object Orientation {
   

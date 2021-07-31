@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationVariables extends StObject {
   
   /** The ID of the managed configurations settings. */
-  var mcmId: js.UndefOr[String] = js.native
+  var mcmId: js.UndefOr[String] = js.undefined
   
   /** The variable set that is attributed to the user. */
-  var variableSet: js.UndefOr[js.Array[VariableSet]] = js.native
+  var variableSet: js.UndefOr[js.Array[VariableSet]] = js.undefined
 }
 object ConfigurationVariables {
   

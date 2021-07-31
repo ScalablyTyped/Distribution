@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnMenuMessages extends StObject {
   
-  var columns: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[String] = js.undefined
   
-  var done: js.UndefOr[String] = js.native
+  var done: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var lock: js.UndefOr[String] = js.native
+  var lock: js.UndefOr[String] = js.undefined
   
-  var setColumnPosition: js.UndefOr[String] = js.native
+  var setColumnPosition: js.UndefOr[String] = js.undefined
   
-  var settings: js.UndefOr[String] = js.native
+  var settings: js.UndefOr[String] = js.undefined
   
-  var sortAscending: js.UndefOr[String] = js.native
+  var sortAscending: js.UndefOr[String] = js.undefined
   
-  var sortDescending: js.UndefOr[String] = js.native
+  var sortDescending: js.UndefOr[String] = js.undefined
   
-  var stick: js.UndefOr[String] = js.native
+  var stick: js.UndefOr[String] = js.undefined
   
-  var unlock: js.UndefOr[String] = js.native
+  var unlock: js.UndefOr[String] = js.undefined
   
-  var unstick: js.UndefOr[String] = js.native
+  var unstick: js.UndefOr[String] = js.undefined
 }
 object GridColumnMenuMessages {
   

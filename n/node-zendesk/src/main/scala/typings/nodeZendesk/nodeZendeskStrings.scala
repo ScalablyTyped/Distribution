@@ -12,258 +12,350 @@ import typings.nodeZendesk.mod.Users.Role
 import typings.nodeZendesk.mod.Users.TicketRestriction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeZendeskStrings {
   
   @js.native
-  sealed trait Comment extends RequestType
+  sealed trait Comment
+    extends StObject
+       with RequestType
   @scala.inline
   def Comment: Comment = "Comment".asInstanceOf[Comment]
   
   @js.native
-  sealed trait VoiceComment extends RequestType
+  sealed trait VoiceComment
+    extends StObject
+       with RequestType
   @scala.inline
   def VoiceComment: VoiceComment = "VoiceComment".asInstanceOf[VoiceComment]
   
   @js.native
-  sealed trait admin extends Role
+  sealed trait admin
+    extends StObject
+       with Role
   @scala.inline
   def admin: admin = "admin".asInstanceOf[admin]
   
   @js.native
-  sealed trait agent extends Role
+  sealed trait agent
+    extends StObject
+       with Role
   @scala.inline
   def agent: agent = "agent".asInstanceOf[agent]
   
   @js.native
-  sealed trait agent_forwarding extends IdentityType
+  sealed trait agent_forwarding
+    extends StObject
+       with IdentityType
   @scala.inline
   def agent_forwarding: agent_forwarding = "agent_forwarding".asInstanceOf[agent_forwarding]
   
   @js.native
-  sealed trait api extends ViaChannel
+  sealed trait api
+    extends StObject
+       with ViaChannel
   @scala.inline
   def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait assigned extends TicketRestriction
+  sealed trait assigned
+    extends StObject
+       with TicketRestriction
   @scala.inline
   def assigned: assigned = "assigned".asInstanceOf[assigned]
   
   @js.native
-  sealed trait checkbox extends UserFieldType
+  sealed trait checkbox
+    extends StObject
+       with UserFieldType
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait closed extends Status
+  sealed trait closed
+    extends StObject
+       with Status
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait completed
-    extends typings.nodeZendesk.mod.JobStatuses.Status
+    extends StObject
+       with typings.nodeZendesk.mod.JobStatuses.Status
   @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
-  sealed trait date extends UserFieldType
+  sealed trait date
+    extends StObject
+       with UserFieldType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait decimal extends UserFieldType
+  sealed trait decimal
+    extends StObject
+       with UserFieldType
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait deliverable extends DeliverableState
+  sealed trait deliverable
+    extends StObject
+       with DeliverableState
   @scala.inline
   def deliverable: deliverable = "deliverable".asInstanceOf[deliverable]
   
   @js.native
-  sealed trait email extends IdentityType
+  sealed trait email
+    extends StObject
+       with IdentityType
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `end-user` extends Role
+  sealed trait `end-user`
+    extends StObject
+       with Role
   @scala.inline
   def `end-user`: `end-user` = "end-user".asInstanceOf[`end-user`]
   
   @js.native
-  sealed trait facebook extends IdentityType
+  sealed trait facebook
+    extends StObject
+       with IdentityType
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait failed
-    extends typings.nodeZendesk.mod.JobStatuses.Status
+    extends StObject
+       with typings.nodeZendesk.mod.JobStatuses.Status
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait google extends IdentityType
+  sealed trait google
+    extends StObject
+       with IdentityType
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   
   @js.native
-  sealed trait groups extends TicketRestriction
+  sealed trait groups
+    extends StObject
+       with TicketRestriction
   @scala.inline
   def groups: groups = "groups".asInstanceOf[groups]
   
   @js.native
-  sealed trait high extends Priority
+  sealed trait high
+    extends StObject
+       with Priority
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait hold extends Status
+  sealed trait hold
+    extends StObject
+       with Status
   @scala.inline
   def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
-  sealed trait incident extends TicketType
+  sealed trait incident
+    extends StObject
+       with TicketType
   @scala.inline
   def incident: incident = "incident".asInstanceOf[incident]
   
   @js.native
-  sealed trait integer extends UserFieldType
+  sealed trait integer
+    extends StObject
+       with UserFieldType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait killed
-    extends typings.nodeZendesk.mod.JobStatuses.Status
+    extends StObject
+       with typings.nodeZendesk.mod.JobStatuses.Status
   @scala.inline
   def killed: killed = "killed".asInstanceOf[killed]
   
   @js.native
-  sealed trait low extends Priority
+  sealed trait low
+    extends StObject
+       with Priority
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait mobile extends ViaChannel
+  sealed trait mobile
+    extends StObject
+       with ViaChannel
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
-  sealed trait `new` extends Status
+  sealed trait `new`
+    extends StObject
+       with Status
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait normal extends Priority
+  sealed trait normal
+    extends StObject
+       with Priority
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait open extends Status
+  sealed trait open
+    extends StObject
+       with Status
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait organization extends TicketRestriction
+  sealed trait organization
+    extends StObject
+       with TicketRestriction
   @scala.inline
   def organization: organization = "organization".asInstanceOf[organization]
   
   @js.native
-  sealed trait pending extends Status
+  sealed trait pending
+    extends StObject
+       with Status
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait phone_number extends IdentityType
+  sealed trait phone_number
+    extends StObject
+       with IdentityType
   @scala.inline
   def phone_number: phone_number = "phone_number".asInstanceOf[phone_number]
   
   @js.native
-  sealed trait problem extends TicketType
+  sealed trait problem
+    extends StObject
+       with TicketType
   @scala.inline
   def problem: problem = "problem".asInstanceOf[problem]
   
   @js.native
-  sealed trait question extends TicketType
+  sealed trait question
+    extends StObject
+       with TicketType
   @scala.inline
   def question: question = "question".asInstanceOf[question]
   
   @js.native
   sealed trait queued
-    extends typings.nodeZendesk.mod.JobStatuses.Status
+    extends StObject
+       with typings.nodeZendesk.mod.JobStatuses.Status
   @scala.inline
   def queued: queued = "queued".asInstanceOf[queued]
   
   @js.native
-  sealed trait regexp extends UserFieldType
+  sealed trait regexp
+    extends StObject
+       with UserFieldType
   @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait requested extends TicketRestriction
+  sealed trait requested
+    extends StObject
+       with TicketRestriction
   @scala.inline
   def requested: requested = "requested".asInstanceOf[requested]
   
   @js.native
-  sealed trait rule extends ViaChannel
+  sealed trait rule
+    extends StObject
+       with ViaChannel
   @scala.inline
   def rule: rule = "rule".asInstanceOf[rule]
   
   @js.native
-  sealed trait sdk extends IdentityType
+  sealed trait sdk
+    extends StObject
+       with IdentityType
   @scala.inline
   def sdk: sdk = "sdk".asInstanceOf[sdk]
   
   @js.native
-  sealed trait solved extends Status
+  sealed trait solved
+    extends StObject
+       with Status
   @scala.inline
   def solved: solved = "solved".asInstanceOf[solved]
   
   @js.native
-  sealed trait system extends ViaChannel
+  sealed trait system
+    extends StObject
+       with ViaChannel
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   
   @js.native
-  sealed trait tagger extends UserFieldType
+  sealed trait tagger
+    extends StObject
+       with UserFieldType
   @scala.inline
   def tagger: tagger = "tagger".asInstanceOf[tagger]
   
   @js.native
-  sealed trait task extends TicketType
+  sealed trait task
+    extends StObject
+       with TicketType
   @scala.inline
   def task: task = "task".asInstanceOf[task]
   
   @js.native
-  sealed trait text extends UserFieldType
+  sealed trait text
+    extends StObject
+       with UserFieldType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait textarea extends UserFieldType
+  sealed trait textarea
+    extends StObject
+       with UserFieldType
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait undeliverable extends DeliverableState
+  sealed trait undeliverable
+    extends StObject
+       with DeliverableState
   @scala.inline
   def undeliverable: undeliverable = "undeliverable".asInstanceOf[undeliverable]
   
   @js.native
-  sealed trait urgent extends Priority
+  sealed trait urgent
+    extends StObject
+       with Priority
   @scala.inline
   def urgent: urgent = "urgent".asInstanceOf[urgent]
   
   @js.native
-  sealed trait web extends ViaChannel
+  sealed trait web
+    extends StObject
+       with ViaChannel
   @scala.inline
   def web: web = "web".asInstanceOf[web]
   
   @js.native
   sealed trait working
-    extends typings.nodeZendesk.mod.JobStatuses.Status
+    extends StObject
+       with typings.nodeZendesk.mod.JobStatuses.Status
   @scala.inline
   def working: working = "working".asInstanceOf[working]
 }

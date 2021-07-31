@@ -5,14 +5,14 @@ import typings.chrome.chromeStrings.ask
 import typings.chrome.chromeStrings.block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationsSetDetails extends SetDetails {
+trait NotificationsSetDetails
+  extends StObject
+     with SetDetails {
   
   @JSName("setting")
-  var setting_NotificationsSetDetails: allow | block | ask = js.native
+  var setting_NotificationsSetDetails: allow | block | ask
 }
 object NotificationsSetDetails {
   

@@ -4,10 +4,8 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.rowEdit.saveRowHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveRow[TEntity] extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SaveRow[TEntity] extends StObject {
     * @param {ng.IScope} scope The grid scope
     * @param {saveRowHandler} handler Callback
     */
-  def saveRow(scope: IScope, handler: saveRowHandler[TEntity]): Unit = js.native
+  def saveRow(scope: IScope, handler: saveRowHandler[TEntity]): Unit
 }
 object SaveRow {
   
@@ -32,7 +30,7 @@ object SaveRow {
   }
   
   @scala.inline
-  implicit class SaveRowMutableBuilder[Self <: SaveRow[_], TEntity] (val x: Self with SaveRow[TEntity]) extends AnyVal {
+  implicit class SaveRowMutableBuilder[Self <: SaveRow[?], TEntity] (val x: Self & SaveRow[TEntity]) extends AnyVal {
     
     @scala.inline
     def setSaveRow(value: (IScope, saveRowHandler[TEntity]) => Unit): Self = StObject.set(x, "saveRow", js.Any.fromFunction2(value))

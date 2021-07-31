@@ -2,16 +2,16 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlIconStyle extends KmlColorStyle {
+trait KmlIconStyle
+  extends StObject
+     with KmlColorStyle {
   
   /**
     * The direction that icons are set to point, clockwise, and in degrees.
     */
-  def getHeading(): Double = js.native
+  def getHeading(): Double
   
   /**
     * Specifies the position within the Icon that is anchored to the point specified in the placemark.
@@ -20,32 +20,32 @@ trait KmlIconStyle extends KmlColorStyle {
     * For example, x can be in pixels and y can be a fraction.
     * The origin of the coordinate system is in the lower left corner of the icon.
     */
-  def getHotSpot(): KmlVec2 = js.native
+  def getHotSpot(): KmlVec2
   
   /**
     * A custom Icon. In KmlIconStyle, the only child element of KmlIcon is href and href is an HTTP address or a local file specification used to load an icon.
     */
-  def getIcon(): KmlIcon = js.native
+  def getIcon(): KmlIcon
   
   /**
     * Resizes the icon.
     */
-  def getScale(): Double = js.native
+  def getScale(): Double
   
   /**
     * The direction that icons are set to point, clockwise, and in degrees.
     */
-  def setHeading(heading: Double): Unit = js.native
+  def setHeading(heading: Double): Unit
   
   /**
     * A custom Icon. In KmlIconStyle, the only child element of KmlIcon is href and href is an HTTP address or a local file specification used to load an icon.
     */
-  def setIcon(icon: KmlIcon): Unit = js.native
+  def setIcon(icon: KmlIcon): Unit
   
   /**
     * Resizes the icon.
     */
-  def setScale(scale: Double): Unit = js.native
+  def setScale(scale: Double): Unit
 }
 object KmlIconStyle {
   

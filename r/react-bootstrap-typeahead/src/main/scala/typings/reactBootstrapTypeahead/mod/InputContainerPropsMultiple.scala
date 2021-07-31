@@ -10,54 +10,52 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-bootstrap-typeahead.react-bootstrap-typeahead.Omit<react-bootstrap-typeahead.react-bootstrap-typeahead.InputContainerPropsSingle<T>, 'role'> */
-@js.native
 trait InputContainerPropsMultiple[T /* <: TypeaheadModel */] extends StObject {
   
-  var `aria-activedescendant`: String = js.native
+  var `aria-activedescendant`: String
   
-  var `aria-autocomplete`: list | both = js.native
+  var `aria-autocomplete`: list | both
   
-  var `aria-expanded`: Boolean = js.native
+  var `aria-expanded`: Boolean
   
-  var `aria-haspopup`: listbox = js.native
+  var `aria-haspopup`: listbox
   
-  var `aria-owns`: String = js.native
+  var `aria-owns`: String
   
-  var autoComplete: String = js.native
+  var autoComplete: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var inputClassName: String = js.native
+  var inputClassName: String
   
-  var inputRef: LegacyRef[HTMLInputElement] = js.native
+  var inputRef: LegacyRef[HTMLInputElement]
   
-  var labelKey: TypeaheadLabelKey[T] = js.native
+  var labelKey: TypeaheadLabelKey[T]
   
-  var onBlur: js.Function1[/* e */ Event, Unit] = js.native
+  var onBlur: js.Function1[/* e */ Event, Unit]
   
-  var onChange: js.Function1[/* selected */ js.Array[T], Unit] = js.native
+  var onChange: js.Function1[/* selected */ js.Array[T], Unit]
   
-  var onClick: js.Function1[/* e */ Event, Unit] = js.native
+  var onClick: js.Function1[/* e */ Event, Unit]
   
-  var onFocus: js.Function1[/* e */ Event, Unit] = js.native
+  var onFocus: js.Function1[/* e */ Event, Unit]
   
-  var onKeyDown: js.Function1[/* e */ Event, Unit] = js.native
+  var onKeyDown: js.Function1[/* e */ Event, Unit]
   
-  def onRemove(e: Event): Unit = js.native
+  def onRemove(e: Event): Unit
   
-  var placeholder: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String | Null] = js.undefined
   
-  def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: Double): ReactNode = js.native
+  def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: Double): ReactNode
   
-  var role: _empty = js.native
+  var role: _empty
   
-  var selected: js.Array[T] = js.native
+  var selected: js.Array[T]
   
-  var value: String = js.native
+  var value: String
 }
 object InputContainerPropsMultiple {
   
@@ -66,7 +64,6 @@ object InputContainerPropsMultiple {
     `aria-activedescendant`: String,
     `aria-autocomplete`: list | both,
     `aria-expanded`: Boolean,
-    `aria-haspopup`: listbox,
     `aria-owns`: String,
     autoComplete: String,
     disabled: Boolean,
@@ -79,21 +76,20 @@ object InputContainerPropsMultiple {
     onKeyDown: /* e */ Event => Unit,
     onRemove: Event => Unit,
     renderToken: (T, TypeaheadMenuProps[T], Double) => ReactNode,
-    role: _empty,
     selected: js.Array[T],
     value: String
   ): InputContainerPropsMultiple[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], inputClassName = inputClassName.asInstanceOf[js.Any], labelKey = labelKey.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = role.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], inputClassName = inputClassName.asInstanceOf[js.Any], labelKey = labelKey.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = "", selected = selected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], inputRef = null)
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-haspopup")("listbox")
     __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContainerPropsMultiple[T]]
   }
   
   @scala.inline
-  implicit class InputContainerPropsMultipleMutableBuilder[Self <: InputContainerPropsMultiple[_], T /* <: TypeaheadModel */] (val x: Self with InputContainerPropsMultiple[T]) extends AnyVal {
+  implicit class InputContainerPropsMultipleMutableBuilder[Self <: InputContainerPropsMultiple[?], T /* <: TypeaheadModel */] (val x: Self & InputContainerPropsMultiple[T]) extends AnyVal {
     
     @scala.inline
     def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])

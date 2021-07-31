@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,147 +20,37 @@ trait MailingLabel extends StObject {
   ): Document = js.native
   
   def CreateNewDocument2000(): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.UndefOr[scala.Nothing], Address: js.UndefOr[scala.Nothing], AutoText: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    ExtractAddress: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.UndefOr[scala.Nothing], Address: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.UndefOr[scala.Nothing], Address: js.Any, AutoText: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.Any,
-    AutoText: js.Any,
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.UndefOr[scala.Nothing], Address: js.Any, AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.UndefOr[scala.Nothing],
-    Address: js.Any,
-    AutoText: js.Any,
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
   def CreateNewDocument2000(Name: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.Any, Address: js.UndefOr[scala.Nothing], AutoText: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.Any, Address: js.UndefOr[scala.Nothing], AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
   def CreateNewDocument2000(Name: js.Any, Address: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
-  def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: js.UndefOr[scala.Nothing], ExtractAddress: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    ExtractAddress: js.Any,
-    LaserTray: js.Any
-  ): Document = js.native
   def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: js.Any): Document = js.native
-  def CreateNewDocument2000(
-    Name: js.Any,
-    Address: js.Any,
-    AutoText: js.Any,
-    ExtractAddress: js.UndefOr[scala.Nothing],
-    LaserTray: js.Any
-  ): Document = js.native
   def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
   def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: js.Any, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: js.Any, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: Unit, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: Unit, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: js.Any, AutoText: Unit, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: js.Any, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: js.Any, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: Unit, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: Unit, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: js.Any, Address: Unit, AutoText: Unit, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: js.Any, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: js.Any, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: Unit, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: Unit, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: js.Any, AutoText: Unit, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: js.Any, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: js.Any, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: js.Any, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: Unit, ExtractAddress: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: Unit, ExtractAddress: js.Any, LaserTray: js.Any): Document = js.native
+  def CreateNewDocument2000(Name: Unit, Address: Unit, AutoText: Unit, ExtractAddress: Unit, LaserTray: js.Any): Document = js.native
   
   def CreateNewDocumentByID(
     LabelID: js.UndefOr[js.Any],

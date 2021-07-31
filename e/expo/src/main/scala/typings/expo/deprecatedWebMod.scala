@@ -18,151 +18,122 @@ import typings.expoLinking.linkingTypesMod.URLListener
 import typings.fbemitter.mod.EventSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deprecatedWebMod {
   
   object Linking {
     
-    @JSImport("expo/build/deprecated.web", "Linking.addEventListener")
+    @JSImport("expo/build/deprecated.web", "Linking")
     @js.native
-    def addEventListener(`type`: String, handler: URLListener): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo/build/deprecated.web", "Linking.canOpenURL")
-    @js.native
-    def canOpenURL(url: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def addEventListener(`type`: String, handler: URLListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("expo/build/deprecated.web", "Linking.getInitialURL")
-    @js.native
-    def getInitialURL(): js.Promise[String | Null] = js.native
+    @scala.inline
+    def canOpenURL(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canOpenURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("expo/build/deprecated.web", "Linking.makeUrl")
-    @js.native
-    def makeUrl(): String = js.native
-    @JSImport("expo/build/deprecated.web", "Linking.makeUrl")
-    @js.native
-    def makeUrl(path: js.UndefOr[scala.Nothing], queryParams: QueryParams): String = js.native
-    @JSImport("expo/build/deprecated.web", "Linking.makeUrl")
-    @js.native
-    def makeUrl(path: String): String = js.native
-    @JSImport("expo/build/deprecated.web", "Linking.makeUrl")
-    @js.native
-    def makeUrl(path: String, queryParams: QueryParams): String = js.native
+    @scala.inline
+    def getInitialURL(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialURL")().asInstanceOf[js.Promise[String | Null]]
     
-    @JSImport("expo/build/deprecated.web", "Linking.openSettings")
-    @js.native
-    def openSettings(): js.Promise[Unit] = js.native
+    @scala.inline
+    def makeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")().asInstanceOf[String]
+    @scala.inline
+    def makeUrl(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def makeUrl(path: String, queryParams: QueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def makeUrl(path: Unit, queryParams: QueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("expo/build/deprecated.web", "Linking.openURL")
-    @js.native
-    def openURL(url: String): js.Promise[`true`] = js.native
+    @scala.inline
+    def openSettings(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSettings")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Linking.parse")
-    @js.native
-    def parse(url: String): ParsedURL = js.native
+    @scala.inline
+    def openURL(url: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
     
-    @JSImport("expo/build/deprecated.web", "Linking.parseInitialURLAsync")
-    @js.native
-    def parseInitialURLAsync(): js.Promise[ParsedURL] = js.native
+    @scala.inline
+    def parse(url: String): ParsedURL = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[ParsedURL]
     
-    @JSImport("expo/build/deprecated.web", "Linking.removeEventListener")
-    @js.native
-    def removeEventListener(`type`: String, handler: URLListener): Unit = js.native
+    @scala.inline
+    def parseInitialURLAsync(): js.Promise[ParsedURL] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInitialURLAsync")().asInstanceOf[js.Promise[ParsedURL]]
     
-    @JSImport("expo/build/deprecated.web", "Linking.sendIntent")
-    @js.native
-    def sendIntent(action: String): js.Promise[Unit] = js.native
-    @JSImport("expo/build/deprecated.web", "Linking.sendIntent")
-    @js.native
-    def sendIntent(action: String, extras: js.Array[Key]): js.Promise[Unit] = js.native
+    @scala.inline
+    def removeEventListener(`type`: String, handler: URLListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("expo/build/deprecated.web", "Linking.useUrl")
-    @js.native
-    def useUrl(): String | Null = js.native
+    @scala.inline
+    def sendIntent(action: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendIntent")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def sendIntent(action: String, extras: js.Array[Key]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendIntent")(action.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def useUrl(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useUrl")().asInstanceOf[String | Null]
   }
   
   object Notifications {
     
-    @JSImport("expo/build/deprecated.web", "Notifications.addListener")
+    @JSImport("expo/build/deprecated.web", "Notifications")
     @js.native
-    def addListener(listener: js.Function1[/* notification */ Notification, _]): EventSubscription = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo/build/deprecated.web", "Notifications.cancelAllScheduledNotificationsAsync")
-    @js.native
-    def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def addListener(listener: js.Function1[/* notification */ Notification, js.Any]): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.cancelScheduledNotificationAsync")
-    @js.native
-    def cancelScheduledNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = js.native
+    @scala.inline
+    def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAllScheduledNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.createCategoryAsync")
-    @js.native
-    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType]): js.Promise[Unit] = js.native
-    @JSImport("expo/build/deprecated.web", "Notifications.createCategoryAsync")
-    @js.native
-    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType], previewPlaceholder: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def cancelScheduledNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelScheduledNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.createChannelAndroidAsync")
-    @js.native
-    def createChannelAndroidAsync(id: String, channel: Channel): js.Promise[Unit] = js.native
+    @scala.inline
+    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCategoryAsync")(categoryId.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType], previewPlaceholder: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCategoryAsync")(categoryId.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], previewPlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.deleteCategoryAsync")
-    @js.native
-    def deleteCategoryAsync(categoryId: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def createChannelAndroidAsync(id: String, channel: Channel): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createChannelAndroidAsync")(id.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.deleteChannelAndroidAsync")
-    @js.native
-    def deleteChannelAndroidAsync(id: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def deleteCategoryAsync(categoryId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCategoryAsync")(categoryId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.dismissAllNotificationsAsync")
-    @js.native
-    def dismissAllNotificationsAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def deleteChannelAndroidAsync(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteChannelAndroidAsync")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.dismissNotificationAsync")
-    @js.native
-    def dismissNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = js.native
+    @scala.inline
+    def dismissAllNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAllNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.getBadgeNumberAsync")
-    @js.native
-    def getBadgeNumberAsync(): js.Promise[Double] = js.native
+    @scala.inline
+    def dismissNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.getDevicePushTokenAsync")
-    @js.native
-    def getDevicePushTokenAsync(config: GcmSenderId): js.Promise[Type] = js.native
+    @scala.inline
+    def getBadgeNumberAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeNumberAsync")().asInstanceOf[js.Promise[Double]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.getExpoPushTokenAsync")
-    @js.native
-    def getExpoPushTokenAsync(): js.Promise[String] = js.native
+    @scala.inline
+    def getDevicePushTokenAsync(config: GcmSenderId): js.Promise[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Type]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.presentLocalNotificationAsync")
-    @js.native
-    def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = js.native
+    @scala.inline
+    def getExpoPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpoPushTokenAsync")().asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.scheduleLocalNotificationAsync")
-    @js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = js.native
-    @JSImport("expo/build/deprecated.web", "Notifications.scheduleLocalNotificationAsync")
-    @js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification, options: IntervalMs): js.Promise[LocalNotificationId] = js.native
+    @scala.inline
+    def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentLocalNotificationAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.scheduleNotificationWithCalendarAsync")
-    @js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
-    @JSImport("expo/build/deprecated.web", "Notifications.scheduleNotificationWithCalendarAsync")
-    @js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Day): js.Promise[String] = js.native
+    @scala.inline
+    def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotificationAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
+    @scala.inline
+    def scheduleLocalNotificationAsync(notification: LocalNotification, options: IntervalMs): js.Promise[LocalNotificationId] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotificationAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LocalNotificationId]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.scheduleNotificationWithTimerAsync")
-    @js.native
-    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Interval): js.Promise[String] = js.native
+    @scala.inline
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithCalendarAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Day): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithCalendarAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications.setBadgeNumberAsync")
-    @js.native
-    def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Interval): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithTimerAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/deprecated.web", "Notifications._setInitialNotification")
-    @js.native
-    def setInitialNotification(notification: Notification): Unit = js.native
+    @scala.inline
+    def setBadgeNumberAsync(number: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeNumberAsync")(number.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def setInitialNotification(notification: Notification): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setInitialNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

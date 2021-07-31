@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventDestination extends StObject {
   
   /**
     * An object that defines an Amazon CloudWatch destination for email events. You can use Amazon CloudWatch to monitor and gain insights on your email sending metrics.
     */
-  var CloudWatchDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.CloudWatchDestination] = js.native
+  var CloudWatchDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.CloudWatchDestination] = js.undefined
   
   /**
     * If true, the event destination is enabled. When the event destination is enabled, the specified event types are sent to the destinations in this EventDestinationDefinition. If false, the event destination is disabled. When the event destination is disabled, events aren't sent to the specified destinations.
     */
-  var Enabled: js.UndefOr[typings.awsSdk.pinpointemailMod.Enabled] = js.native
+  var Enabled: js.UndefOr[typings.awsSdk.pinpointemailMod.Enabled] = js.undefined
   
   /**
     * An object that defines an Amazon Kinesis Data Firehose destination for email events. You can use Amazon Kinesis Data Firehose to stream data to other services, such as Amazon S3 and Amazon Redshift.
     */
-  var KinesisFirehoseDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.KinesisFirehoseDestination] = js.native
+  var KinesisFirehoseDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.KinesisFirehoseDestination] = js.undefined
   
   /**
     * The types of events that Amazon Pinpoint sends to the specified event destinations.
     */
-  var MatchingEventTypes: EventTypes = js.native
+  var MatchingEventTypes: EventTypes
   
   /**
     * A name that identifies the event destination.
     */
-  var Name: EventDestinationName = js.native
+  var Name: EventDestinationName
   
   /**
     * An object that defines a Amazon Pinpoint destination for email events. You can use Amazon Pinpoint events to create attributes in Amazon Pinpoint projects. You can use these attributes to create segments for your campaigns.
     */
-  var PinpointDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.PinpointDestination] = js.native
+  var PinpointDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.PinpointDestination] = js.undefined
   
   /**
     * An object that defines an Amazon SNS destination for email events. You can use Amazon SNS to send notification when certain email events occur.
     */
-  var SnsDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.SnsDestination] = js.native
+  var SnsDestination: js.UndefOr[typings.awsSdk.pinpointemailMod.SnsDestination] = js.undefined
 }
 object EventDestination {
   

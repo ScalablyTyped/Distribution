@@ -2,29 +2,27 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitAccordionOptions extends StObject {
   
-  var active: js.UndefOr[Double] = js.native
+  var active: js.UndefOr[Double] = js.undefined
   
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var targets: js.UndefOr[String] = js.native
+  var targets: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
 }
 object UIkitAccordionOptions {
   

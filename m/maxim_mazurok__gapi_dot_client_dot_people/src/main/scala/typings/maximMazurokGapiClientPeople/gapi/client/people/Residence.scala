@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Residence extends StObject {
   
   /** True if the residence is the person's current residence; false if the residence is a past residence. */
-  var current: js.UndefOr[Boolean] = js.native
+  var current: js.UndefOr[Boolean] = js.undefined
   
   /** Metadata about the residence. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The address of the residence. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Residence {
   

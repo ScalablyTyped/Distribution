@@ -2,59 +2,57 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPolylineOptions extends StObject {
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var hasBalloon: js.UndefOr[Boolean] = js.native
+  var hasBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var hasHint: js.UndefOr[Boolean] = js.native
+  var hasHint: js.UndefOr[Boolean] = js.undefined
   
-  var interactiveZIndex: js.UndefOr[Boolean] = js.native
+  var interactiveZIndex: js.UndefOr[Boolean] = js.undefined
   
-  var interactivityModel: js.UndefOr[String] = js.native
+  var interactivityModel: js.UndefOr[String] = js.undefined
   
-  var lineStringOverlay: js.UndefOr[js.Function0[js.Object | String]] = js.native
+  var lineStringOverlay: js.UndefOr[js.Function0[js.Object | String]] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var openBalloonOnClick: js.UndefOr[Boolean] = js.native
+  var openBalloonOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var openEmptyBalloon: js.UndefOr[Boolean] = js.native
+  var openEmptyBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var openEmptyHint: js.UndefOr[Boolean] = js.native
+  var openEmptyHint: js.UndefOr[Boolean] = js.undefined
   
-  var openHintOnHover: js.UndefOr[Boolean] = js.native
+  var openHintOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var strokeColor: js.UndefOr[String | js.Array[String]] = js.native
+  var strokeColor: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double | js.Array[Double]] = js.native
+  var strokeOpacity: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var strokeStyle: js.UndefOr[String | (js.Array[js.Object | String]) | js.Object] = js.native
+  var strokeStyle: js.UndefOr[String | (js.Array[js.Object | String]) | js.Object] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double | js.Array[Double]] = js.native
+  var strokeWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var syncOverlayInit: js.UndefOr[Boolean] = js.native
+  var syncOverlayInit: js.UndefOr[Boolean] = js.undefined
   
-  var useMapMarginInDragging: js.UndefOr[Boolean] = js.native
+  var useMapMarginInDragging: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
-  var zIndexActive: js.UndefOr[Double] = js.native
+  var zIndexActive: js.UndefOr[Double] = js.undefined
   
-  var zIndexDrag: js.UndefOr[Double] = js.native
+  var zIndexDrag: js.UndefOr[Double] = js.undefined
   
-  var zIndexHover: js.UndefOr[Double] = js.native
+  var zIndexHover: js.UndefOr[Double] = js.undefined
 }
 object IPolylineOptions {
   

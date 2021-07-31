@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityNotificationTopicMod {
@@ -48,6 +47,10 @@ object identityNotificationTopicMod {
   /* static members */
   object IdentityNotificationTopic {
     
+    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityNotificationTopic resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object identityNotificationTopicMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IdentityNotificationTopic = js.native
-    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityNotificationTopic = js.native
-    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState): IdentityNotificationTopic = js.native
-    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState, opts: CustomResourceOptions): IdentityNotificationTopic = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
     
     /**
       * Returns true if the given object is an instance of IdentityNotificationTopic.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean]
   }
   
-  @js.native
   trait IdentityNotificationTopicArgs extends StObject {
     
     /**
       * The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).
       */
-    val identity: Input[String] = js.native
+    val identity: Input[String]
     
     /**
       * Whether SES should include original email headers in SNS notifications of this type. *false* by default.
       */
-    val includeOriginalHeaders: js.UndefOr[Input[Boolean]] = js.native
+    val includeOriginalHeaders: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or *Delivery*.
       */
-    val notificationType: Input[String] = js.native
+    val notificationType: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to "" (an empty string) to disable publishing.
       */
-    val topicArn: js.UndefOr[Input[String]] = js.native
+    val topicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object IdentityNotificationTopicArgs {
     
@@ -133,28 +130,27 @@ object identityNotificationTopicMod {
     }
   }
   
-  @js.native
   trait IdentityNotificationTopicState extends StObject {
     
     /**
       * The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).
       */
-    val identity: js.UndefOr[Input[String]] = js.native
+    val identity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether SES should include original email headers in SNS notifications of this type. *false* by default.
       */
-    val includeOriginalHeaders: js.UndefOr[Input[Boolean]] = js.native
+    val includeOriginalHeaders: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or *Delivery*.
       */
-    val notificationType: js.UndefOr[Input[String]] = js.native
+    val notificationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to "" (an empty string) to disable publishing.
       */
-    val topicArn: js.UndefOr[Input[String]] = js.native
+    val topicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object IdentityNotificationTopicState {
     

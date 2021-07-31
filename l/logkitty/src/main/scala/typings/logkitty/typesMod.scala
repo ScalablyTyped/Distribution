@@ -3,27 +3,25 @@ package typings.logkitty
 import typings.dayjs.mod.Dayjs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Entry extends StObject {
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var date: Dayjs = js.native
+    var date: Dayjs
     
-    var messages: js.Array[String] = js.native
+    var messages: js.Array[String]
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var platform: Platform = js.native
+    var platform: Platform
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object Entry {
     
@@ -68,10 +66,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IFilter extends StObject {
     
-    def shouldInclude(entry: Entry): Boolean = js.native
+    def shouldInclude(entry: Entry): Boolean
   }
   object IFilter {
     
@@ -89,12 +86,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IParser extends StObject {
     
-    def parseMessages(messages: js.Array[String]): js.Array[Entry] = js.native
+    def parseMessages(messages: js.Array[String]): js.Array[Entry]
     
-    def splitMessages(data: String): js.Array[String] = js.native
+    def splitMessages(data: String): js.Array[String]
   }
   object IParser {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAssociation extends StObject {
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * Version information for the association on the instance.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * The content of the association document for the instance(s).
     */
-  var Content: js.UndefOr[DocumentContent] = js.native
+  var Content: js.UndefOr[DocumentContent] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
 }
 object InstanceAssociation {
   

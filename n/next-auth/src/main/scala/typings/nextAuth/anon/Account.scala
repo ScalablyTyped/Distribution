@@ -2,19 +2,17 @@ package typings.nextAuth.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
-  var Account: js.UndefOr[Model] = js.native
+  var Account: js.UndefOr[Model] = js.undefined
   
-  var Session: js.UndefOr[Model] = js.native
+  var Session: js.UndefOr[Model] = js.undefined
   
-  var User: js.UndefOr[Model] = js.native
+  var User: js.UndefOr[Model] = js.undefined
   
-  var VerificationRequest: js.UndefOr[Model] = js.native
+  var VerificationRequest: js.UndefOr[Model] = js.undefined
 }
 object Account {
   

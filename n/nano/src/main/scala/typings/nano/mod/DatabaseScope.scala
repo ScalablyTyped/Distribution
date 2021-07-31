@@ -4,7 +4,6 @@ import typings.nano.anon.Disable
 import typings.node.processMod.global.NodeJS.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,7 +29,7 @@ trait DatabaseScope extends StObject {
   
   // http://docs.couchdb.org/en/latest/api/database/common.html#put--db
   def create(name: String): js.Promise[DatabaseCreateResponse] = js.native
-  def create(name: String, params: js.UndefOr[scala.Nothing], callback: Callback[DatabaseCreateResponse]): js.Promise[DatabaseCreateResponse] = js.native
+  def create(name: String, params: Unit, callback: Callback[DatabaseCreateResponse]): js.Promise[DatabaseCreateResponse] = js.native
   def create(name: String, params: DatabaseCreateParams): js.Promise[DatabaseCreateResponse] = js.native
   def create(name: String, params: DatabaseCreateParams, callback: Callback[DatabaseCreateResponse]): js.Promise[DatabaseCreateResponse] = js.native
   

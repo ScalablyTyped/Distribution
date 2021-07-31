@@ -2,31 +2,29 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserUpdate extends StObject {
   
-  var avatarID: String = js.native
+  var avatarID: String
   
-  var curatorPoints: Double = js.native
+  var curatorPoints: Double
   
-  var dateJoined: String = js.native
+  var dateJoined: String
   
-  var djPoints: Double = js.native
+  var djPoints: Double
   
-  var fans: Double = js.native
+  var fans: Double
   
-  var id: String = js.native
+  var id: String
   
-  var language: String = js.native
+  var language: String
   
-  var listenerPoints: Double = js.native
+  var listenerPoints: Double
   
-  var status: Double = js.native
+  var status: Double
   
-  var username: String = js.native
+  var username: String
 }
 object UserUpdate {
   

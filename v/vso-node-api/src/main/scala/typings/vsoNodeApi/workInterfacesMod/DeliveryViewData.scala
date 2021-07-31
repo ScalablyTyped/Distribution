@@ -4,36 +4,36 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeliveryViewData extends PlanViewData {
+trait DeliveryViewData
+  extends StObject
+     with PlanViewData {
   
   /**
     * Work item child id to parenet id map
     */
-  var childIdToParentIdMap: NumberDictionary[Double] = js.native
+  var childIdToParentIdMap: NumberDictionary[Double]
   
   /**
     * Filter criteria status of the timeline
     */
-  var criteriaStatus: TimelineCriteriaStatus = js.native
+  var criteriaStatus: TimelineCriteriaStatus
   
   /**
     * The end date of the delivery view data
     */
-  var endDate: Date = js.native
+  var endDate: Date
   
   /**
     * The start date for the delivery view data
     */
-  var startDate: Date = js.native
+  var startDate: Date
   
   /**
     * All the team data
     */
-  var teams: js.Array[TimelineTeamData] = js.native
+  var teams: js.Array[TimelineTeamData]
 }
 object DeliveryViewData {
   

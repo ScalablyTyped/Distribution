@@ -2,26 +2,24 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Global State
   */
-@js.native
 trait IGlobalState extends StObject {
   
-  var isReady: Boolean = js.native
+  var isReady: Boolean
   
-  var navMode: js.Any = js.native
+  var navMode: js.Any
   
-  var showNavigation: Boolean = js.native
+  var showNavigation: Boolean
   
-  var showTray: Boolean = js.native
+  var showTray: Boolean
   
-  var stickyNavigation: js.Any = js.native
+  var stickyNavigation: js.Any
   
-  var touchDevice: Boolean = js.native
+  var touchDevice: Boolean
 }
 object IGlobalState {
   

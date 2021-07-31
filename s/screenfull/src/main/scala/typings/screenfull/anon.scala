@@ -3,21 +3,19 @@ package typings.screenfull
 import typings.screenfull.screenfullBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsEnabled extends StObject {
     
-    var isEnabled: `false` = js.native
+    var isEnabled: `false`
   }
   object IsEnabled {
     
     @scala.inline
-    def apply(isEnabled: `false`): IsEnabled = {
-      val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any])
+    def apply(): IsEnabled = {
+      val __obj = js.Dynamic.literal(isEnabled = false)
       __obj.asInstanceOf[IsEnabled]
     }
     

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An aggregation analyzing log information for queries and events. */
-@js.native
 trait MetricAggregation extends StObject {
   
   /** The event type associated with this metric result. This field, when present, will always be `click`. */
-  var event_type: js.UndefOr[String] = js.native
+  var event_type: js.UndefOr[String] = js.undefined
   
   /** The measurement interval for this metric. Metric intervals are always 1 day (`1d`). */
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
   
   /** Array of metric aggregation query results. */
-  var results: js.UndefOr[js.Array[MetricAggregationResult]] = js.native
+  var results: js.UndefOr[js.Array[MetricAggregationResult]] = js.undefined
 }
 object MetricAggregation {
   

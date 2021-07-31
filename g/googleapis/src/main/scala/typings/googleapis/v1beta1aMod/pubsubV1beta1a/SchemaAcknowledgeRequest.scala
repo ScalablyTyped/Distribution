@@ -2,25 +2,23 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the Acknowledge method.
   */
-@js.native
 trait SchemaAcknowledgeRequest extends StObject {
   
   /**
     * The acknowledgment ID for the message being acknowledged. This was
     * returned by the Pub/Sub system in the Pull response.
     */
-  var ackId: js.UndefOr[js.Array[String]] = js.native
+  var ackId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The subscription whose message is being acknowledged.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object SchemaAcknowledgeRequest {
   

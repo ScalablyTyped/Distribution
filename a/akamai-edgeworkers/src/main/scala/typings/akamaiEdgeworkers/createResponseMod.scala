@@ -5,7 +5,6 @@ import typings.akamaiEdgeworkers.anon.Body
 import typings.akamaiEdgeworkers.streamsMod.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object createResponseMod {
   
-  @JSImport("create-response", "createResponse")
+  @JSImport("create-response", JSImport.Namespace)
   @js.native
-  def createResponse(): js.Object = js.native
-  @JSImport("create-response", "createResponse")
-  @js.native
-  def createResponse(body: js.UndefOr[CreateResponseBody], opts: Body): js.Object = js.native
-  @JSImport("create-response", "createResponse")
-  @js.native
-  def createResponse(body: CreateResponseBody): js.Object = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createResponse(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")().asInstanceOf[js.Object]
+  @scala.inline
+  def createResponse(body: Unit, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def createResponse(body: CreateResponseBody): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def createResponse(body: CreateResponseBody, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   /**
     * Generates a return value for responseProvider(). It validates the
     * passed values and returns an opaque object. Callers should be
@@ -39,12 +41,10 @@ object createResponseMod {
     *          as a ReadableStream, there is no limit.
     * @param denyReason Deny reason when the status code is 403.
     */
-  @JSImport("create-response", "createResponse")
-  @js.native
-  def createResponse(status: Double, headers: Headers, body: CreateResponseBody): js.Object = js.native
-  @JSImport("create-response", "createResponse")
-  @js.native
-  def createResponse(status: Double, headers: Headers, body: CreateResponseBody, denyReason: String): js.Object = js.native
+  @scala.inline
+  def createResponse(status: Double, headers: Headers, body: CreateResponseBody): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def createResponse(status: Double, headers: Headers, body: CreateResponseBody, denyReason: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], denyReason.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /**
     * A response body, either in the form of a static string or a readable stream.

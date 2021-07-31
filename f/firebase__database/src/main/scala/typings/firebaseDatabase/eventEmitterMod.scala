@@ -2,7 +2,6 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventEmitterMod {
@@ -24,7 +23,7 @@ object eventEmitterMod {
       * @param {!string} eventType
       * @return {Array.<*>} Array of parameters to trigger initial event with.
       */
-    def getInitialEvent(eventType: String): js.Array[_] = js.native
+    def getInitialEvent(eventType: String): js.Array[js.Any] = js.native
     
     var listeners_ : js.Any = js.native
     

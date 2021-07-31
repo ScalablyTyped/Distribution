@@ -2,23 +2,21 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WritableSpecification extends StObject {
   
   /** A Database. */
-  var db: Database = js.native
+  var db: Database
   
   /** The table or view's name. */
-  var name: String = js.native
+  var name: String
   
   /** The table's primary key. */
-  var pk: String = js.native
+  var pk: String
   
   /** The name of the schema owning the table. */
-  var schema: String = js.native
+  var schema: String
 }
 object WritableSpecification {
   

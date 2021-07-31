@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a Received event on a BluetoothLEAdvertisementWatcher . */
-@js.native
 trait BluetoothLEAdvertisementReceivedEventArgs extends StObject {
   
   /** Gets the Bluetooth LE advertisement payload data received. */
-  var advertisement: BluetoothLEAdvertisement = js.native
+  var advertisement: BluetoothLEAdvertisement
   
   /** Gets the type of the received Bluetooth LE advertisement packet. */
-  var advertisementType: BluetoothLEAdvertisementType = js.native
+  var advertisementType: BluetoothLEAdvertisementType
   
   /** Gets the Bluetooth address of the device sending the Bluetooth LE advertisement. */
-  var bluetoothAddress: Double = js.native
+  var bluetoothAddress: Double
   
   /** Gets the received signal strength indicator (RSSI) value, in dBm, for this received Bluetooth LE advertisement event. */
-  var rawSignalStrengthInDBm: Double = js.native
+  var rawSignalStrengthInDBm: Double
   
   /** Gets the timestamp when the Received event occurred. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object BluetoothLEAdvertisementReceivedEventArgs {
   

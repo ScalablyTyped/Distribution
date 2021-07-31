@@ -2,66 +2,64 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansPurchaseRecommendationSummary extends StObject {
   
   /**
     * The currency code AWS used to generate the recommendations and present potential savings.
     */
-  var CurrencyCode: js.UndefOr[GenericString] = js.native
+  var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The current total on demand spend of the applicable usage types over the lookback period.
     */
-  var CurrentOnDemandSpend: js.UndefOr[GenericString] = js.native
+  var CurrentOnDemandSpend: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The recommended Savings Plans cost on a daily (24 hourly) basis.
     */
-  var DailyCommitmentToPurchase: js.UndefOr[GenericString] = js.native
+  var DailyCommitmentToPurchase: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The estimated monthly savings amount, based on the recommended Savings Plans purchase.
     */
-  var EstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.native
+  var EstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The estimated On-Demand costs you would expect with no additional commitment, based on your usage of the selected time period and the Savings Plans you own. 
     */
-  var EstimatedOnDemandCostWithCurrentCommitment: js.UndefOr[GenericString] = js.native
+  var EstimatedOnDemandCostWithCurrentCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The estimated return on investment based on the recommended Savings Plans and estimated savings.
     */
-  var EstimatedROI: js.UndefOr[GenericString] = js.native
+  var EstimatedROI: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The estimated total savings over the lookback period, based on the purchase of the recommended Savings Plans.
     */
-  var EstimatedSavingsAmount: js.UndefOr[GenericString] = js.native
+  var EstimatedSavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The estimated savings relative to the total cost of On-Demand usage, over the lookback period. This is calculated as estimatedSavingsAmount/ CurrentOnDemandSpend*100.
     */
-  var EstimatedSavingsPercentage: js.UndefOr[GenericString] = js.native
+  var EstimatedSavingsPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The estimated total cost of the usage after purchasing the recommended Savings Plans. This is a sum of the cost of Savings Plans during this term, and the remaining On-Demand usage.
     */
-  var EstimatedTotalCost: js.UndefOr[GenericString] = js.native
+  var EstimatedTotalCost: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The recommended hourly commitment based on the recommendation parameters.
     */
-  var HourlyCommitmentToPurchase: js.UndefOr[GenericString] = js.native
+  var HourlyCommitmentToPurchase: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The aggregate number of Savings Plans recommendations that exist for your account.
     */
-  var TotalRecommendationCount: js.UndefOr[GenericString] = js.native
+  var TotalRecommendationCount: js.UndefOr[GenericString] = js.undefined
 }
 object SavingsPlansPurchaseRecommendationSummary {
   

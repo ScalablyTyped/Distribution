@@ -3,18 +3,16 @@ package typings.algoliasearch.anon
 import typings.algoliaClientRecommendation.mod.SetPersonalizationStrategyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-recommendation.@algolia/client-recommendation.SetPersonalizationStrategyResponse>> */
-@js.native
 trait ReadonlyPromiseSetPersona extends StObject {
   
-  def `catch`[TResult](): js.Promise[SetPersonalizationStrategyResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[SetPersonalizationStrategyResponse | TResult]
   
-  def `finally`(): js.Promise[SetPersonalizationStrategyResponse] = js.native
+  def `finally`(): js.Promise[SetPersonalizationStrategyResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseSetPersona {
   

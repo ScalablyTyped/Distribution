@@ -6,23 +6,22 @@ import typings.vegaLite.vegaSchemaMod.VgRange
 import typings.vegaLite.vegaSchemaMod.VgScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleAssembleMod {
   
-  @JSImport("vega-lite/build/src/compile/scale/assemble", "assembleScaleRange")
+  @JSImport("vega-lite/build/src/compile/scale/assemble", JSImport.Namespace)
   @js.native
-  def assembleScaleRange(scaleRange: VgRange, scaleName: String, channel: ScaleChannel): VgRange = js.native
-  @JSImport("vega-lite/build/src/compile/scale/assemble", "assembleScaleRange")
-  @js.native
-  def assembleScaleRange(scaleRange: VgRange, scaleName: String, channel: ScaleChannel, model: Model): VgRange = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/scale/assemble", "assembleScales")
-  @js.native
-  def assembleScales(model: Model): js.Array[VgScale] = js.native
+  @scala.inline
+  def assembleScaleRange(scaleRange: VgRange, scaleName: String, channel: ScaleChannel): VgRange = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleScaleRange")(scaleRange.asInstanceOf[js.Any], scaleName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[VgRange]
+  @scala.inline
+  def assembleScaleRange(scaleRange: VgRange, scaleName: String, channel: ScaleChannel, model: Model): VgRange = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleScaleRange")(scaleRange.asInstanceOf[js.Any], scaleName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[VgRange]
   
-  @JSImport("vega-lite/build/src/compile/scale/assemble", "assembleScalesForModel")
-  @js.native
-  def assembleScalesForModel(model: Model): js.Array[VgScale] = js.native
+  @scala.inline
+  def assembleScales(model: Model): js.Array[VgScale] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleScales")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[VgScale]]
+  
+  @scala.inline
+  def assembleScalesForModel(model: Model): js.Array[VgScale] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleScalesForModel")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[VgScale]]
 }

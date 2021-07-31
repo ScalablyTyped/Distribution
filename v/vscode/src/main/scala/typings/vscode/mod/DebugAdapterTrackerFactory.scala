@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugAdapterTrackerFactory extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DebugAdapterTrackerFactory extends StObject {
     * @param session The [debug session](#DebugSession) for which the debug adapter tracker will be used.
     * @return A [debug adapter tracker](#DebugAdapterTracker) or undefined.
     */
-  def createDebugAdapterTracker(session: DebugSession): ProviderResult[DebugAdapterTracker] = js.native
+  def createDebugAdapterTracker(session: DebugSession): ProviderResult[DebugAdapterTracker]
 }
 object DebugAdapterTrackerFactory {
   

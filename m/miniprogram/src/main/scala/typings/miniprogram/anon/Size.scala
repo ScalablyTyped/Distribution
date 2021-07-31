@@ -2,17 +2,15 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
-  var apFilePath: String = js.native
+  var apFilePath: String
   
-  var createTime: Double = js.native
+  var createTime: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object Size {
   

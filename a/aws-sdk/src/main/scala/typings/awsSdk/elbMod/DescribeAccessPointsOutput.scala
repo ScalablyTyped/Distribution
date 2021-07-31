@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccessPointsOutput extends StObject {
   
   /**
     * Information about the load balancers.
     */
-  var LoadBalancerDescriptions: js.UndefOr[typings.awsSdk.elbMod.LoadBalancerDescriptions] = js.native
+  var LoadBalancerDescriptions: js.UndefOr[typings.awsSdk.elbMod.LoadBalancerDescriptions] = js.undefined
   
   /**
     * The marker to use when requesting the next set of results. If there are no additional results, the string is empty.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeAccessPointsOutput {
   

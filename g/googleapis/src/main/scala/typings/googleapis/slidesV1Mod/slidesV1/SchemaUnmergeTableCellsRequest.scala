@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unmerges cells in a Table.
   */
-@js.native
 trait SchemaUnmergeTableCellsRequest extends StObject {
   
   /**
     * The object ID of the table.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The table range specifying which cells of the table to unmerge.  All
@@ -24,7 +22,7 @@ trait SchemaUnmergeTableCellsRequest extends StObject {
     * text will remain in the upper-left (&quot;head&quot;) cell of the
     * resulting block of unmerged cells.
     */
-  var tableRange: js.UndefOr[SchemaTableRange] = js.native
+  var tableRange: js.UndefOr[SchemaTableRange] = js.undefined
 }
 object SchemaUnmergeTableCellsRequest {
   

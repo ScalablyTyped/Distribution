@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToolBarClickEvent extends ToolBarEvent {
+trait ToolBarClickEvent
+  extends StObject
+     with ToolBarEvent {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[JQuery] = js.native
+  var target: js.UndefOr[JQuery] = js.undefined
 }
 object ToolBarClickEvent {
   

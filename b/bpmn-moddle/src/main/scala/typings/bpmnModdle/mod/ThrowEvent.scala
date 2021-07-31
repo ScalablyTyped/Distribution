@@ -2,21 +2,21 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThrowEvent extends Event {
+trait ThrowEvent
+  extends StObject
+     with Event {
   
-  var dataInputAssociations: js.Array[DataInputAssociation] = js.native
+  var dataInputAssociations: js.Array[DataInputAssociation]
   
-  var dataInputs: js.Array[DataInput] = js.native
+  var dataInputs: js.Array[DataInput]
   
-  var eventDefinitionRef: js.Array[EventDefinition] = js.native
+  var eventDefinitionRef: js.Array[EventDefinition]
   
-  var eventDefinitions: js.Array[EventDefinition] = js.native
+  var eventDefinitions: js.Array[EventDefinition]
   
-  var inputSet: InputSet = js.native
+  var inputSet: InputSet
 }
 object ThrowEvent {
   

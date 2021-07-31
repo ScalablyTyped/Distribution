@@ -11,58 +11,56 @@ import typings.semanticUiNag.semanticUiNagStrings.localstorage
 import typings.semanticUiNag.semanticUiNagStrings.sessionstorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, keyof semantic-ui-nag.SemanticUI.NagSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var animation: js.UndefOr[AnimationSettings] = js.native
+  var animation: js.UndefOr[AnimationSettings] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var context: js.UndefOr[`false` | String | JQuery] = js.native
+  var context: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var detachable: js.UndefOr[Boolean] = js.native
+  var detachable: js.UndefOr[Boolean] = js.undefined
   
-  var displayTime: js.UndefOr[Double] = js.native
+  var displayTime: js.UndefOr[Double] = js.undefined
   
-  var domain: js.UndefOr[`false` | String] = js.native
+  var domain: js.UndefOr[`false` | String] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var storageMethod: js.UndefOr[cookie | localstorage | sessionstorage] = js.native
+  var storageMethod: js.UndefOr[cookie | localstorage | sessionstorage] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

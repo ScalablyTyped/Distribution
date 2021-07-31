@@ -4,14 +4,16 @@ import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object winstonPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/winston.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/winston.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/winston.pub", "winston2")
   @js.native
@@ -21,16 +23,15 @@ object winstonPubMod {
   @js.native
   val winston3: IModulePatcher = js.native
   
-  @js.native
   trait IWinstonData extends StObject {
     
-    var level: String = js.native
+    var level: String
     
-    var levelKind: String = js.native
+    var levelKind: String
     
-    var message: String | Error = js.native
+    var message: String | Error
     
-    var meta: js.Any = js.native
+    var meta: js.Any
   }
   object IWinstonData {
     

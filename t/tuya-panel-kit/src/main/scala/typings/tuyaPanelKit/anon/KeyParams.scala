@@ -3,17 +3,15 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyParams[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var key: String = js.native
+  var key: String
   
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object KeyParams {
   
@@ -24,7 +22,7 @@ object KeyParams {
   }
   
   @scala.inline
-  implicit class KeyParamsMutableBuilder[Self <: KeyParams[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (KeyParams[ParamList, RouteName])) extends AnyVal {
+  implicit class KeyParamsMutableBuilder[Self <: KeyParams[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (KeyParams[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

@@ -2,21 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesUpgradeParams extends GenericParams {
+trait IndicesUpgradeParams
+  extends StObject
+     with GenericParams {
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
   
-  var onlyAncientSegments: js.UndefOr[Boolean] = js.native
+  var onlyAncientSegments: js.UndefOr[Boolean] = js.undefined
   
-  var waitForCompletion: js.UndefOr[Boolean] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
 object IndicesUpgradeParams {
   

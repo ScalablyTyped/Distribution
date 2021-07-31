@@ -6,7 +6,6 @@ import typings.consul.mod.Health.ServiceOptions
 import typings.consul.mod.Health.StateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -84,10 +83,11 @@ trait Health extends StObject {
 }
 object Health {
   
-  @js.native
-  trait ChecksOptions extends CommonOptions {
+  trait ChecksOptions
+    extends StObject
+       with CommonOptions {
     
-    var service: String = js.native
+    var service: String
   }
   object ChecksOptions {
     
@@ -105,10 +105,11 @@ object Health {
     }
   }
   
-  @js.native
-  trait NodeOptions extends CommonOptions {
+  trait NodeOptions
+    extends StObject
+       with CommonOptions {
     
-    var node: String = js.native
+    var node: String
   }
   object NodeOptions {
     
@@ -126,16 +127,17 @@ object Health {
     }
   }
   
-  @js.native
-  trait ServiceOptions extends CommonOptions {
+  trait ServiceOptions
+    extends StObject
+       with CommonOptions {
     
-    var near: js.UndefOr[String] = js.native
+    var near: js.UndefOr[String] = js.undefined
     
-    var passing: js.UndefOr[Boolean] = js.native
+    var passing: js.UndefOr[Boolean] = js.undefined
     
-    var service: String = js.native
+    var service: String
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object ServiceOptions {
     
@@ -171,10 +173,11 @@ object Health {
     }
   }
   
-  @js.native
-  trait StateOptions extends CommonOptions {
+  trait StateOptions
+    extends StObject
+       with CommonOptions {
     
-    var state: String = js.native
+    var state: String
   }
   object StateOptions {
     

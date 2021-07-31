@@ -12,7 +12,7 @@ Reuse typed arrays
 | Keywords           | typed, array, cache, pool, memory, malloc, free, reuse, optimize, construct, overhead |
 | # releases         | 2 |
 | # dependents       | 78 |
-| # downloads        | 3106445 |
+| # downloads        | 3908070 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.zumly.anon.Cover
 import typings.zumly.anon.Render
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,8 @@ object mod {
   @JSImport("zumly", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.zumly.mod.zumly {
+    extends StObject
+       with typings.zumly.mod.zumly {
     /**
       * Creates a Zumly instance
       * @params options
@@ -30,25 +30,36 @@ object mod {
       *
       */
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def init(): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def zoomIn(el: Element): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def zoomLevel(): Double = js.native
+    
+    /* CompleteClass */
+    override def zoomOut(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     // Activate debug notifications
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     // First rendered view name
-    var initialView: String = js.native
+    var initialView: String
     
     // Mount DOM Element
-    var mount: String = js.native
+    var mount: String
     
     // Custom transitions
-    var transitions: js.UndefOr[Cover] = js.native
+    var transitions: js.UndefOr[Cover] = js.undefined
     
     // Store of all view objects
-    var views: Record[String, WithRender | String] = js.native
+    var views: Record[String, WithRender | String]
   }
   object Options {
     
@@ -84,18 +95,17 @@ object mod {
     }
   }
   
-  type WithRender = (Record[String, _]) with Render
+  type WithRender = (Record[String, js.Any]) & Render
   
-  @js.native
   trait zumly extends StObject {
     
-    def init(): js.Promise[Unit] = js.native
+    def init(): js.Promise[Unit]
     
-    def zoomIn(el: Element): js.Promise[Unit] = js.native
+    def zoomIn(el: Element): js.Promise[Unit]
     
-    def zoomLevel(): Double = js.native
+    def zoomLevel(): Double
     
-    def zoomOut(): Unit = js.native
+    def zoomOut(): Unit
   }
   object zumly {
     

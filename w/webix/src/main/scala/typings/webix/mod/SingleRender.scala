@@ -1,9 +1,9 @@
 package typings.webix.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,4 +17,9 @@ trait SingleRender extends StObject {
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var `type`: StringDictionary[js.Any] = js.native
+}
+object SingleRender {
+  
+  @scala.inline
+  def apply: SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[SingleRender]
 }

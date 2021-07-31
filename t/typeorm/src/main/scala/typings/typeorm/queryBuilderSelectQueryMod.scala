@@ -2,19 +2,17 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryBuilderSelectQueryMod {
   
-  @js.native
   trait SelectQuery extends StObject {
     
-    var aliasName: js.UndefOr[String] = js.native
+    var aliasName: js.UndefOr[String] = js.undefined
     
-    var selection: String = js.native
+    var selection: String
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object SelectQuery {
     

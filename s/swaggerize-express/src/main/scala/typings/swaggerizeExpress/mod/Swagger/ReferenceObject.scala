@@ -2,14 +2,14 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReferenceObject extends Response {
+trait ReferenceObject
+  extends StObject
+     with Response {
   
   @JSName("$ref")
-  var $ref: String = js.native
+  var $ref: String
 }
 object ReferenceObject {
   

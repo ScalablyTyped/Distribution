@@ -3,7 +3,6 @@ package typings.heremaps.H.map
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DomMarker {
@@ -19,22 +18,21 @@ object DomMarker {
     * @property icon {H.map.DomIcon=} - The icon to use for the visual representation, if omitted a default icon is used.
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData
     */
-  @js.native
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var icon: js.UndefOr[DomIcon] = js.native
+    var icon: js.UndefOr[DomIcon] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

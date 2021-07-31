@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInfrastructureConfigurationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration that you want to retrieve. 
     */
-  var infrastructureConfigurationArn: InfrastructureConfigurationArn = js.native
+  var infrastructureConfigurationArn: InfrastructureConfigurationArn
 }
 object GetInfrastructureConfigurationRequest {
   

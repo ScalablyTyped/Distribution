@@ -9,7 +9,6 @@ import typings.jpm.jpmStrings.open
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,18 +21,20 @@ object windowsMod {
   val browserWindows: BrowserWindows_ = js.native
   
   @js.native
-  trait BrowserWindows_ extends Array[BrowserWindow] {
+  trait BrowserWindows_
+    extends StObject
+       with Array[BrowserWindow] {
     
     var activeWindow: BrowserWindow = js.native
     
     @JSName("on")
-    def on_activate(event: activate, handler: js.Function1[/* window */ BrowserWindow, _]): Unit = js.native
+    def on_activate(event: activate, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
     @JSName("on")
-    def on_close(event: close, handler: js.Function1[/* window */ BrowserWindow, _]): Unit = js.native
+    def on_close(event: close, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
     @JSName("on")
-    def on_deactivate(event: deactivate, handler: js.Function1[/* window */ BrowserWindow, _]): Unit = js.native
+    def on_deactivate(event: deactivate, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
     @JSName("on")
-    def on_open(event: open, handler: js.Function1[/* window */ BrowserWindow, _]): Unit = js.native
+    def on_open(event: open, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
     
     /**
       * Open a new window

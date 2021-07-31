@@ -2,19 +2,17 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Partition extends StObject {
   
-  var delimited: js.UndefOr[Boolean] = js.native
+  var delimited: js.UndefOr[Boolean] = js.undefined
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var partitioned: js.UndefOr[Boolean] = js.native
+  var partitioned: js.UndefOr[Boolean] = js.undefined
 }
 object Partition {
   

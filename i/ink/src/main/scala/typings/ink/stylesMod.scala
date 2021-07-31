@@ -33,32 +33,32 @@ import typings.typeFest.literalUnionMod.LiteralUnion
 import typings.yogaLayout.mod.YogaNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
   
-  @JSImport("ink/build/styles", JSImport.Default)
+  @JSImport("ink/build/styles", JSImport.Namespace)
   @js.native
-  def default(node: YogaNode): Unit = js.native
-  @JSImport("ink/build/styles", JSImport.Default)
-  @js.native
-  def default(node: YogaNode, style: Styles): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(node: YogaNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(node: YogaNode, style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Styles extends StObject {
     
     /**
       * The align-items property defines the default behavior for how items are laid out along the cross axis (perpendicular to the main axis).
       * See [align-items](https://css-tricks.com/almanac/properties/a/align-items/).
       */
-    val alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.native
+    val alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.undefined
     
     /**
       * It makes possible to override the align-items value for specific flex items.
       * See [align-self](https://css-tricks.com/almanac/properties/a/align-self/).
       */
-    val alignSelf: js.UndefOr[`flex-start` | center | `flex-end` | auto] = js.native
+    val alignSelf: js.UndefOr[`flex-start` | center | `flex-end` | auto] = js.undefined
     
     /**
       * Change border color.
@@ -66,119 +66,119 @@ object stylesMod {
       */
     val borderColor: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Add a border with a specified style.
       * If `borderStyle` is `undefined` (which it is by default), no border will be added.
       */
-    val borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.native
+    val borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.undefined
     
     /**
       * Set this property to `none` to hide the element.
       */
-    val display: js.UndefOr[flex | none] = js.native
+    val display: js.UndefOr[flex | none] = js.undefined
     
     /**
       * It specifies the initial size of the flex item, before any available space is distributed according to the flex factors.
       * See [flex-basis](https://css-tricks.com/almanac/properties/f/flex-basis/).
       */
-    val flexBasis: js.UndefOr[Double | String] = js.native
+    val flexBasis: js.UndefOr[Double | String] = js.undefined
     
     /**
       * It establishes the main-axis, thus defining the direction flex items are placed in the flex container.
       * See [flex-direction](https://css-tricks.com/almanac/properties/f/flex-direction/).
       */
-    val flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.native
+    val flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.undefined
     
     /**
       * This property defines the ability for a flex item to grow if necessary.
       * See [flex-grow](https://css-tricks.com/almanac/properties/f/flex-grow/).
       */
-    val flexGrow: js.UndefOr[Double] = js.native
+    val flexGrow: js.UndefOr[Double] = js.undefined
     
     /**
       * It specifies the “flex shrink factor”, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn’t enough space on the row.
       * See [flex-shrink](https://css-tricks.com/almanac/properties/f/flex-shrink/).
       */
-    val flexShrink: js.UndefOr[Double] = js.native
+    val flexShrink: js.UndefOr[Double] = js.undefined
     
     /**
       * Height of the element in lines (rows).
       * You can also set it in percent, which will calculate the height based on the height of parent element.
       */
-    val height: js.UndefOr[Double | String] = js.native
+    val height: js.UndefOr[Double | String] = js.undefined
     
     /**
       * It defines the alignment along the main axis.
       * See [justify-content](https://css-tricks.com/almanac/properties/j/justify-content/).
       */
-    val justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.native
+    val justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.undefined
     
     /**
       * Bottom margin.
       */
-    val marginBottom: js.UndefOr[Double] = js.native
+    val marginBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * Left margin.
       */
-    val marginLeft: js.UndefOr[Double] = js.native
+    val marginLeft: js.UndefOr[Double] = js.undefined
     
     /**
       * Right margin.
       */
-    val marginRight: js.UndefOr[Double] = js.native
+    val marginRight: js.UndefOr[Double] = js.undefined
     
     /**
       * Top margin.
       */
-    val marginTop: js.UndefOr[Double] = js.native
+    val marginTop: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets a minimum height of the element.
       */
-    val minHeight: js.UndefOr[Double | String] = js.native
+    val minHeight: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Sets a minimum width of the element.
       */
-    val minWidth: js.UndefOr[Double | String] = js.native
+    val minWidth: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Bottom padding.
       */
-    val paddingBottom: js.UndefOr[Double] = js.native
+    val paddingBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * Left padding.
       */
-    val paddingLeft: js.UndefOr[Double] = js.native
+    val paddingLeft: js.UndefOr[Double] = js.undefined
     
     /**
       * Right padding.
       */
-    val paddingRight: js.UndefOr[Double] = js.native
+    val paddingRight: js.UndefOr[Double] = js.undefined
     
     /**
       * Top padding.
       */
-    val paddingTop: js.UndefOr[Double] = js.native
+    val paddingTop: js.UndefOr[Double] = js.undefined
     
-    val position: js.UndefOr[absolute | relative] = js.native
+    val position: js.UndefOr[absolute | relative] = js.undefined
     
     val textWrap: js.UndefOr[
         wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Width of the element in spaces.
       * You can also set it in percent, which will calculate the width based on the width of parent element.
       */
-    val width: js.UndefOr[Double | String] = js.native
+    val width: js.UndefOr[Double | String] = js.undefined
   }
   object Styles {
     
@@ -206,7 +206,7 @@ object stylesMod {
       @scala.inline
       def setBorderColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
               String
             ]
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])

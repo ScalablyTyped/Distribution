@@ -2,46 +2,44 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyOpts extends StObject {
   
   /**
     * Whether or not you would still like to buy if you have to wait for your money to arrive to lock in a price
     */
-  var agree_btc_amount_varies: js.UndefOr[Boolean] = js.native
+  var agree_btc_amount_varies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Buy amount without fees (alternative to total)
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * If set to false, this buy will not be immediately completed. Use the commit call to complete it. Default value: true
     */
-  var commit: js.UndefOr[Boolean] = js.native
+  var commit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Currency for the amount (see Client#getCurrencies() for available strings)
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * The ID of the payment method that should be used for the buy. (todo get payment methods)
     */
-  var payment_method: js.UndefOr[String] = js.native
+  var payment_method: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, response will return an unsave buy for detailed price quote. Default value: false
     */
-  var quote: js.UndefOr[Boolean] = js.native
+  var quote: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Buy amount with fees (alternative to amount)
     */
-  var total: js.UndefOr[String] = js.native
+  var total: js.UndefOr[String] = js.undefined
 }
 object BuyOpts {
   

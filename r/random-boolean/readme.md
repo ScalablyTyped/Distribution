@@ -12,7 +12,7 @@ Get a random boolean
 | Keywords           | random, bool, boolean, true, false |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6518 |
+| # downloads        | 8618 |
 | # stars            | 0 |
 
 ## Links

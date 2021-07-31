@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientRichEditAutoCorrectEventArgs")
 @js.native
 class ASPxClientRichEditAutoCorrectEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientRichEditAutoCorrectEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientRichEditAutoCorrectEventArgs {
   /**
     * Initializes a new instance of the ASPxClientRichEditAutoCorrectEventArgs object. For internal use only.
     * @param text The input string to check whether it should be replaced.
@@ -19,4 +19,22 @@ class ASPxClientRichEditAutoCorrectEventArgs protected ()
     * @param handled true if the event is handled and no default processing is required; otherwise false.
     */
   def this(text: js.Any, interval: js.Any, handled: js.Any) = this()
+  
+  /**
+    * Specifies whether the event is handled.
+    */
+  /* CompleteClass */
+  var handled: Boolean = js.native
+  
+  /**
+    * Gets the input string's interval.
+    */
+  /* CompleteClass */
+  var interval: typings.devexpressWeb.Interval = js.native
+  
+  /**
+    * Gets the input string to check whether it should be replaced.
+    */
+  /* CompleteClass */
+  var text: String = js.native
 }

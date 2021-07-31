@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestWillBeSentExtraInfoEvent extends StObject {
   
   /**
     * A list of cookies potentially associated to the requested URL. This includes both cookies sent with
     * the request and the ones not sent; the latter are distinguished by having blockedReason field set.
     */
-  var associatedCookies: js.Array[BlockedCookieWithReason] = js.native
+  var associatedCookies: js.Array[BlockedCookieWithReason]
   
   /**
     * Raw request headers as they will be sent over the wire.
     */
-  var headers: Headers = js.native
+  var headers: Headers
   
   /**
     * Request identifier. Used to match this information to an existing requestWillBeSent event.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object RequestWillBeSentExtraInfoEvent {
   

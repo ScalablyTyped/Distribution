@@ -2,13 +2,11 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for when doing recursive matching.
   */
-@js.native
 trait MatchRecursiveOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait MatchRecursiveOptions extends StObject {
     *
     * **Must be exactly one character long.**
     */
-  var escapeChar: js.UndefOr[String | Null] = js.native
+  var escapeChar: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The value names to associate with the matches.
@@ -24,7 +22,7 @@ trait MatchRecursiveOptions extends StObject {
     * Specifying a value here will cause the `XRegExp.matchRecursive` method to
     * return and array of `XRegExp.MatchRecursiveValueNameMatch`
     */
-  var valueNames: js.UndefOr[MatchRecursiveValueNames | Null] = js.native
+  var valueNames: js.UndefOr[MatchRecursiveValueNames | Null] = js.undefined
 }
 object MatchRecursiveOptions {
   

@@ -13,7 +13,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncatedNormal_
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initializerConfigMod {
@@ -30,10 +29,9 @@ object initializerConfigMod {
   @js.native
   val initializerClassNames: js.Array[InitializerClassName] = js.native
   
-  @js.native
   trait ConstantConfig extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object ConstantConfig {
     
@@ -125,10 +123,9 @@ object initializerConfigMod {
     def fan_out: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out = "fan_out".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out]
   }
   
-  @js.native
   trait IdentityConfig extends StObject {
     
-    var gain: js.UndefOr[Double] = js.native
+    var gain: js.UndefOr[Double] = js.undefined
   }
   object IdentityConfig {
     
@@ -198,12 +195,11 @@ object initializerConfigMod {
   
   type OnesSerialization = BaseSerialization[Ones, js.Object]
   
-  @js.native
   trait OrthogonalConfig extends StObject {
     
-    var gain: js.UndefOr[Double] = js.native
+    var gain: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
   }
   object OrthogonalConfig {
     
@@ -232,14 +228,13 @@ object initializerConfigMod {
   
   type OrthogonalSerialization = BaseSerialization[Orthogonal, OrthogonalConfig]
   
-  @js.native
   trait RandomNormalConfig extends StObject {
     
-    var mean: js.UndefOr[Double] = js.native
+    var mean: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
     
-    var stddev: js.UndefOr[Double] = js.native
+    var stddev: js.UndefOr[Double] = js.undefined
   }
   object RandomNormalConfig {
     
@@ -274,14 +269,13 @@ object initializerConfigMod {
   
   type RandomNormalSerialization = BaseSerialization[RandomNormal, RandomNormalConfig]
   
-  @js.native
   trait RandomUniformConfig extends StObject {
     
-    var maxval: js.UndefOr[Double] = js.native
+    var maxval: js.UndefOr[Double] = js.undefined
     
-    var minval: js.UndefOr[Double] = js.native
+    var minval: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
   }
   object RandomUniformConfig {
     
@@ -316,14 +310,13 @@ object initializerConfigMod {
   
   type RandomUniformSerialization = BaseSerialization[RandomUniform, RandomUniformConfig]
   
-  @js.native
   trait TruncatedNormalConfig extends StObject {
     
-    var mean: js.UndefOr[Double] = js.native
+    var mean: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
     
-    var stddev: js.UndefOr[Double] = js.native
+    var stddev: js.UndefOr[Double] = js.undefined
   }
   object TruncatedNormalConfig {
     
@@ -358,16 +351,15 @@ object initializerConfigMod {
   
   type TruncatedNormalSerialization = BaseSerialization[TruncatedNormal, TruncatedNormalConfig]
   
-  @js.native
   trait VarianceScalingConfig extends StObject {
     
-    var distribution: js.UndefOr[DistributionSerialization] = js.native
+    var distribution: js.UndefOr[DistributionSerialization] = js.undefined
     
-    var mode: js.UndefOr[FanModeSerialization] = js.native
+    var mode: js.UndefOr[FanModeSerialization] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
   }
   object VarianceScalingConfig {
     

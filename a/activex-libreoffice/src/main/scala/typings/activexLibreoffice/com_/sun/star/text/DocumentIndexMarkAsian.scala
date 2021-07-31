@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * additional string which is used for sorting. If the user does not provide these strings, they are not considered for sorting.
   * @since OOo 1.1.2
   */
-@js.native
 trait DocumentIndexMarkAsian extends StObject {
   
   /** contains the reading of the primary key of the index entry. It is used to build a hierarchical document index. */
-  var PrimaryKeyReading: String = js.native
+  var PrimaryKeyReading: String
   
   /** contains the reading the secondary key of the index entry. It is used to build a hierarchical document index. */
-  var SecondaryKeyReading: String = js.native
+  var SecondaryKeyReading: String
   
   /** contains the reading of the string which has been chosen for the index entry. */
-  var TextReading: String = js.native
+  var TextReading: String
 }
 object DocumentIndexMarkAsian {
   

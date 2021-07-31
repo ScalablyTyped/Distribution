@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeStarNotifications extends Service {
   
   @JSName("config")
-  var config_CodeStarNotifications: ConfigBase with ClientConfiguration = js.native
+  var config_CodeStarNotifications: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as SNS topics) where you want to receive them.

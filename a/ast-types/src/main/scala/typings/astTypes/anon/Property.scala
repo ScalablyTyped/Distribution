@@ -6,23 +6,21 @@ import typings.astTypes.kindsMod.JSXMemberExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Property extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `object`: JSXIdentifierKind | JSXMemberExpressionKind = js.native
+  var `object`: JSXIdentifierKind | JSXMemberExpressionKind
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
-  var property: JSXIdentifierKind = js.native
+  var property: JSXIdentifierKind
 }
 object Property {
   

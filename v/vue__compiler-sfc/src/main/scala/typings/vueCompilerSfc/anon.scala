@@ -8,25 +8,23 @@ import typings.vueCompilerSfc.vueCompilerSfcStrings.global
 import typings.vueCompilerSfc.vueCompilerSfcStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GenerateScopedName extends StObject {
     
     var generateScopedName: js.UndefOr[
         String | (js.Function3[/* name */ String, /* filename */ String, /* css */ String, String])
-      ] = js.native
+      ] = js.undefined
     
-    var globalModulePaths: js.UndefOr[js.Array[String]] = js.native
+    var globalModulePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hashPrefix: js.UndefOr[String] = js.native
+    var hashPrefix: js.UndefOr[String] = js.undefined
     
-    var localsConvention: js.UndefOr[camelCase | camelCaseOnly | dashes | dashesOnly] = js.native
+    var localsConvention: js.UndefOr[camelCase | camelCaseOnly | dashes | dashesOnly] = js.undefined
     
-    var scopeBehaviour: js.UndefOr[global | local] = js.native
+    var scopeBehaviour: js.UndefOr[global | local] = js.undefined
   }
   object GenerateScopedName {
     

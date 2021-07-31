@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaneItemObservedEvent extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var item: js.Object = js.native
+  var item: js.Object
   
-  var pane: Pane = js.native
+  var pane: Pane
 }
 object PaneItemObservedEvent {
   

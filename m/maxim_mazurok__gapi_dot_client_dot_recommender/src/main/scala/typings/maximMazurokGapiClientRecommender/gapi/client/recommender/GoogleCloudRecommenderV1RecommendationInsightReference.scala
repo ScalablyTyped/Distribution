@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1RecommendationInsightReference extends StObject {
   
   /** Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID] */
-  var insight: js.UndefOr[String] = js.native
+  var insight: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommenderV1RecommendationInsightReference {
   

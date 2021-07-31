@@ -2,27 +2,25 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Global extends StObject {
   
-  var global: js.UndefOr[Location] = js.native
+  var global: js.UndefOr[Location] = js.undefined
   
-  var pager: js.UndefOr[Location] = js.native
+  var pager: js.UndefOr[Location] = js.undefined
   
-  var tabName: js.UndefOr[Location] = js.native
+  var tabName: js.UndefOr[Location] = js.undefined
   
-  var topMenuRight: js.UndefOr[Location] = js.native
+  var topMenuRight: js.UndefOr[Location] = js.undefined
   
-  var viewChange: js.UndefOr[Location] = js.native
+  var viewChange: js.UndefOr[Location] = js.undefined
   
-  var viewMenu: js.UndefOr[Location] = js.native
+  var viewMenu: js.UndefOr[Location] = js.undefined
   
-  var viewMenuBlock: js.UndefOr[Location] = js.native
+  var viewMenuBlock: js.UndefOr[Location] = js.undefined
   
-  var viewerCorner: js.UndefOr[Location] = js.native
+  var viewerCorner: js.UndefOr[Location] = js.undefined
 }
 object Global {
   

@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.getMergeConflictsExceptionsUnionMod.GetMergeConflictsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidSourceCommitSpecifierExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidSourceCommitSpecifierExceptionDetails> * / any */ @js.native
-  trait InvalidSourceCommitSpecifierException extends GetMergeConflictsExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidSourceCommitSpecifierExceptionDetails> * / any */ trait InvalidSourceCommitSpecifierException
+    extends StObject
+       with GetMergeConflictsExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSourceCommitSpecifierException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSourceCommitSpecifierException
   }
   object InvalidSourceCommitSpecifierException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSourceCommitSpecifierException
-    ): InvalidSourceCommitSpecifierException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidSourceCommitSpecifierException = {
+      val __obj = js.Dynamic.literal(name = "InvalidSourceCommitSpecifierException")
       __obj.asInstanceOf[InvalidSourceCommitSpecifierException]
     }
     
@@ -34,6 +32,5 @@ object typesInvalidSourceCommitSpecifierExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidSourceCommitSpecifierExceptionDetails extends StObject
 }

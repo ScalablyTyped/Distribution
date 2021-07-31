@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyAttachment extends StObject {
   
   /**
     * The ObjectIdentifier that is associated with PolicyAttachment.
     */
-  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.native
+  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.undefined
   
   /**
     * The ID of PolicyAttachment.
     */
-  var PolicyId: js.UndefOr[ObjectIdentifier] = js.native
+  var PolicyId: js.UndefOr[ObjectIdentifier] = js.undefined
   
   /**
     * The type of policy that can be associated with PolicyAttachment.
     */
-  var PolicyType: js.UndefOr[typings.awsSdk.clouddirectoryMod.PolicyType] = js.native
+  var PolicyType: js.UndefOr[typings.awsSdk.clouddirectoryMod.PolicyType] = js.undefined
 }
 object PolicyAttachment {
   

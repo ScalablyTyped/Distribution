@@ -5,10 +5,13 @@ import typings.node.perfHooksMod.Performance_
 import typings.opentelemetryCore.anon.RequiredENVIRONMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
+  
+  @JSImport("@opentelemetry/core/build/src/platform/node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@opentelemetry/core/build/src/platform/node", "BasePlugin")
   @js.native
@@ -54,27 +57,22 @@ object nodeMod {
     def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@opentelemetry/core/build/src/platform/node", "getEnv")
-  @js.native
-  def getEnv(): RequiredENVIRONMENT = js.native
+  @scala.inline
+  def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
   
-  @JSImport("@opentelemetry/core/build/src/platform/node", "hexToBase64")
-  @js.native
-  def hexToBase64(hexStr: String): String = js.native
+  @scala.inline
+  def hexToBase64(hexStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBase64")(hexStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@opentelemetry/core/build/src/platform/node", "_invokeGlobalShutdown")
-  @js.native
-  def invokeGlobalShutdown(): Unit = js.native
+  @scala.inline
+  def invokeGlobalShutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_invokeGlobalShutdown")().asInstanceOf[Unit]
   
-  @JSImport("@opentelemetry/core/build/src/platform/node", "notifyOnGlobalShutdown")
-  @js.native
-  def notifyOnGlobalShutdown(cb: js.Function0[Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def notifyOnGlobalShutdown(cb: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyOnGlobalShutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@opentelemetry/core/build/src/platform/node", "otperformance")
   @js.native
   val otperformance: Performance_ = js.native
   
-  @JSImport("@opentelemetry/core/build/src/platform/node", "unrefTimer")
-  @js.native
-  def unrefTimer(timer: Timer): Unit = js.native
+  @scala.inline
+  def unrefTimer(timer: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

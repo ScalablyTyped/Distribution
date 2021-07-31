@@ -3,64 +3,62 @@ package typings.gijgo.Types
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePickerSettings extends StObject {
   
-  var calendarWeeks: js.UndefOr[Boolean] = js.native
+  var calendarWeeks: js.UndefOr[Boolean] = js.undefined
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var disableDates: js.UndefOr[js.Array[_] | js.Function] = js.native
+  var disableDates: js.UndefOr[js.Array[js.Any] | js.Function] = js.undefined
   
-  var disableDaysOfWeek: js.UndefOr[js.Array[Double]] = js.native
+  var disableDaysOfWeek: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var footer: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[DatePickerIcons] = js.native
+  var icons: js.UndefOr[DatePickerIcons] = js.undefined
   
-  var iconsLibrary: js.UndefOr[String] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var keyboardNavigation: js.UndefOr[Boolean] = js.native
+  var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String | js.Function] = js.native
+  var maxDate: js.UndefOr[Date | String | js.Function] = js.undefined
   
-  var minDate: js.UndefOr[Date | String | js.Function] = js.native
+  var minDate: js.UndefOr[Date | String | js.Function] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, _]] = js.native
+  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, js.Any]] = js.undefined
   
-  var selectOtherMonths: js.UndefOr[Boolean] = js.native
+  var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
   
-  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var showOtherMonths: js.UndefOr[Boolean] = js.native
+  var showOtherMonths: js.UndefOr[Boolean] = js.undefined
   
-  var showRightIcon: js.UndefOr[Boolean] = js.native
+  var showRightIcon: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var weekStartDay: js.UndefOr[Double] = js.native
+  var weekStartDay: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DatePickerSettings {
   
@@ -80,19 +78,19 @@ object DatePickerSettings {
     def setCalendarWeeksUndefined: Self = StObject.set(x, "calendarWeeks", js.undefined)
     
     @scala.inline
-    def setChange(value: /* e */ js.Any => _): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def setClose(value: /* e */ js.Any => _): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    def setClose(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def setDisableDates(value: js.Array[_] | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    def setDisableDates(value: js.Array[js.Any] | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
@@ -170,13 +168,13 @@ object DatePickerSettings {
     def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def setOpen(value: /* e */ js.Any => _): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    def setOpen(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def setSelect(value: (/* e */ js.Any, /* type */ String) => _): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    def setSelect(value: (/* e */ js.Any, /* type */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSelectOtherMonths(value: Boolean): Self = StObject.set(x, "selectOtherMonths", value.asInstanceOf[js.Any])

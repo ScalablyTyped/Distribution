@@ -3,25 +3,23 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 import typings.angularCompiler.anon.NameString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3NgModuleMetadataFacade extends StObject {
   
-  var bootstrap: js.Array[js.Function] = js.native
+  var bootstrap: js.Array[js.Function]
   
-  var declarations: js.Array[js.Function] = js.native
+  var declarations: js.Array[js.Function]
   
-  var exports: js.Array[js.Function] = js.native
+  var exports: js.Array[js.Function]
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var imports: js.Array[js.Function] = js.native
+  var imports: js.Array[js.Function]
   
-  var schemas: js.Array[NameString] | Null = js.native
+  var schemas: js.Array[NameString] | Null
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object R3NgModuleMetadataFacade {
   
@@ -33,7 +31,7 @@ object R3NgModuleMetadataFacade {
     imports: js.Array[js.Function],
     `type`: js.Any
   ): R3NgModuleMetadataFacade = {
-    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], id = null, schemas = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3NgModuleMetadataFacade]
   }

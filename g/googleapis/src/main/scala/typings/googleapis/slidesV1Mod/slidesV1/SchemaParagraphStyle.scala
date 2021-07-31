@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,63 +15,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the list inside the parent   placeholder.  Inherited paragraph styles are
   * represented as unset fields in this message.
   */
-@js.native
 trait SchemaParagraphStyle extends StObject {
   
   /**
     * The text alignment for this paragraph.
     */
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
   /**
     * The text direction of this paragraph. If unset, the value defaults to
     * LEFT_TO_RIGHT since text direction is not inherited.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * The amount indentation for the paragraph on the side that corresponds to
     * the end of the text, based on the current text direction. If unset, the
     * value is inherited from the parent.
     */
-  var indentEnd: js.UndefOr[SchemaDimension] = js.native
+  var indentEnd: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of indentation for the start of the first line of the
     * paragraph. If unset, the value is inherited from the parent.
     */
-  var indentFirstLine: js.UndefOr[SchemaDimension] = js.native
+  var indentFirstLine: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount indentation for the paragraph on the side that corresponds to
     * the start of the text, based on the current text direction. If unset, the
     * value is inherited from the parent.
     */
-  var indentStart: js.UndefOr[SchemaDimension] = js.native
+  var indentStart: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of space between lines, as a percentage of normal, where
     * normal is represented as 100.0. If unset, the value is inherited from the
     * parent.
     */
-  var lineSpacing: js.UndefOr[Double] = js.native
+  var lineSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of extra space above the paragraph. If unset, the value is
     * inherited from the parent.
     */
-  var spaceAbove: js.UndefOr[SchemaDimension] = js.native
+  var spaceAbove: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of extra space below the paragraph. If unset, the value is
     * inherited from the parent.
     */
-  var spaceBelow: js.UndefOr[SchemaDimension] = js.native
+  var spaceBelow: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The spacing mode for the paragraph.
     */
-  var spacingMode: js.UndefOr[String] = js.native
+  var spacingMode: js.UndefOr[String] = js.undefined
 }
 object SchemaParagraphStyle {
   

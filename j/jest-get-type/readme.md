@@ -10,9 +10,9 @@ A utility function to get the type of a value
 | ------------------ | :-------------: |
 | Full name          | jest-get-type |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 57 |
-| # downloads        | 451172295 |
+| # releases         | 17 |
+| # dependents       | 79 |
+| # downloads        | 641616766 |
 | # stars            | 0 |
 
 ## Links

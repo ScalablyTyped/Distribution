@@ -2,15 +2,13 @@ package typings.firefoxWebextBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectList extends StObject {
   
-  var rectList: js.Array[Bottom] = js.native
+  var rectList: js.Array[Bottom]
   
-  var textList: js.Array[String] = js.native
+  var textList: js.Array[String]
 }
 object RectList {
   

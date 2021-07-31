@@ -4,83 +4,81 @@ import typings.bootstrap3Typeahead.anon.Name
 import typings.bootstrap3Typeahead.bootstrap3TypeaheadStrings.all
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Bootstrap3Typeahead {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Adds an item to the end of the list
       */
-    var addItem: js.UndefOr[js.Object] = js.native
+    var addItem: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Call back function to execute after selected an item
       */
-    var afterSelect: js.UndefOr[js.ThisFunction1[/* this */ Typeahead, /* item */ String | js.Object, Unit]] = js.native
+    var afterSelect: js.UndefOr[js.ThisFunction1[/* this */ Typeahead, /* item */ String | js.Object, Unit]] = js.undefined
     
     /**
       * Use this option to add the menu to another div
       */
-    var appendTo: js.UndefOr[JQuery] = js.native
+    var appendTo: js.UndefOr[JQuery] = js.undefined
     
     /**
       * Allows you to dictate whether or not the first suggestion is selected automatically
       */
-    var autoSelect: js.UndefOr[Boolean] = js.native
+    var autoSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a delay between lookups
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Method used to get textual representation of an item of the sources
       */
-    var displayText: js.UndefOr[js.Function1[/* item */ String | Name, String]] = js.native
+    var displayText: js.UndefOr[js.Function1[/* item */ String | Name, String]] = js.undefined
     
     /**
       * Set to true if you want the menu to be the same size than the input it is attached to
       */
-    var fitToElement: js.UndefOr[Boolean] = js.native
+    var fitToElement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Method used to highlight autocomplete results
       */
-    var highlighter: js.UndefOr[js.Function1[/* item */ String, String]] = js.native
+    var highlighter: js.UndefOr[js.Function1[/* item */ String, String]] = js.undefined
     
     /**
       * The max number of items to display in the dropdown
       */
-    var items: js.UndefOr[Double | all] = js.native
+    var items: js.UndefOr[Double | all] = js.undefined
     
     /**
       * The method used to determine if a query matches an item
       */
-    var matcher: js.UndefOr[js.Function1[/* item */ String, Boolean]] = js.native
+    var matcher: js.UndefOr[js.Function1[/* item */ String, Boolean]] = js.undefined
     
     /**
       * The minimum character length needed before triggering autocomplete suggestions
       */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of pixels the scrollable parent container scrolled down
       */
-    var scrollHeight: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var scrollHeight: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
     /**
       * If hints should be shown as soon as the input gets focus
       */
-    var showHintOnFocus: js.UndefOr[Boolean | all] = js.native
+    var showHintOnFocus: js.UndefOr[Boolean | all] = js.undefined
     
     /**
       * Method used to sort autocomplete results
       */
-    var sorter: js.UndefOr[js.Function1[/* items */ js.Array[String], js.Array[String]]] = js.native
+    var sorter: js.UndefOr[js.Function1[/* items */ js.Array[String], js.Array[String]]] = js.undefined
     
     /**
       * The data source to query against
@@ -91,12 +89,12 @@ object Bootstrap3Typeahead {
           /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]], 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The method used to return selected item
       */
-    var updater: js.UndefOr[js.Function1[/* item */ String, String]] = js.native
+    var updater: js.UndefOr[js.Function1[/* item */ String, String]] = js.undefined
   }
   object Options {
     
@@ -224,13 +222,12 @@ object Bootstrap3Typeahead {
     }
   }
   
-  @js.native
   trait Typeahead extends StObject {
     
     @JSName("$element")
-    var $element: JQuery = js.native
+    var $element: JQuery
     
-    var options: Options = js.native
+    var options: Options
   }
   object Typeahead {
     

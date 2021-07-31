@@ -2,13 +2,11 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListSinks.
   */
-@js.native
 trait SchemaListSinksResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListSinksResponse extends StObject {
     * nextPageToken is included. To get the next set of results, call the same
     * method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of sinks.
     */
-  var sinks: js.UndefOr[js.Array[SchemaLogSink]] = js.native
+  var sinks: js.UndefOr[js.Array[SchemaLogSink]] = js.undefined
 }
 object SchemaListSinksResponse {
   

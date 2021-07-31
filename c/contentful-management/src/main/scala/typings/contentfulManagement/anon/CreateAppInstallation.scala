@@ -23,7 +23,6 @@ import typings.contentfulManagement.uiExtensionMod.UIExtension
 import typings.contentfulManagement.uiExtensionMod.UIExtensionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -768,9 +767,9 @@ trait CreateAppInstallation extends StObject {
   def getTag(id: String): js.Promise[Tag] = js.native
   
   def getTags(): js.Promise[Collection[Tag, TagProps]] = js.native
-  def getTags(skip: js.UndefOr[scala.Nothing], limit: Double): js.Promise[Collection[Tag, TagProps]] = js.native
   def getTags(skip: Double): js.Promise[Collection[Tag, TagProps]] = js.native
   def getTags(skip: Double, limit: Double): js.Promise[Collection[Tag, TagProps]] = js.native
+  def getTags(skip: Unit, limit: Double): js.Promise[Collection[Tag, TagProps]] = js.native
   
   /**
     * Gets an UI Extension

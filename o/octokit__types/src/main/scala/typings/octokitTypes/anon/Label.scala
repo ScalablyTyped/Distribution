@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var ref: String = js.native
+  var ref: String
   
-  var repo: Allowmergecommit = js.native
+  var repo: Allowmergecommit
   
-  var sha: String = js.native
+  var sha: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object Label {
   

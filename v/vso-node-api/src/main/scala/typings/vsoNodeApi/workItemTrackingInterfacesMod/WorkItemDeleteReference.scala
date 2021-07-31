@@ -2,56 +2,54 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemDeleteReference extends StObject {
   
   /**
     * The HTTP status code for work item operation in a batch request.
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     * The user who deleted the work item type.
     */
-  var deletedBy: String = js.native
+  var deletedBy: String
   
   /**
     * The work item deletion date.
     */
-  var deletedDate: String = js.native
+  var deletedDate: String
   
   /**
     * Work item ID.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The exception message for work item operation in a batch request.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Name or title of the work item.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Parent project of the deleted work item.
     */
-  var project: String = js.native
+  var project: String
   
   /**
     * Type of work item.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * REST API URL of the resource
     */
-  var url: String = js.native
+  var url: String
 }
 object WorkItemDeleteReference {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorProxyRequest extends StObject {
   
   /**
     * The default number of minutes allowed for proxy sessions.
     */
-  var DefaultSessionExpiryMinutes: Integer = js.native
+  var DefaultSessionExpiryMinutes: Integer
   
   /**
     * When true, stops proxy sessions from being created on the specified Amazon Chime Voice Connector.
     */
-  var Disabled: js.UndefOr[Boolean] = js.native
+  var Disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The phone number to route calls to after a proxy session expires.
     */
-  var FallBackPhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
+  var FallBackPhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
   
   /**
     * The countries for proxy phone numbers to be selected from.
     */
-  var PhoneNumberPoolCountries: CountryList = js.native
+  var PhoneNumberPoolCountries: CountryList
   
   /**
     * The Amazon Chime voice connector ID.
     */
-  var VoiceConnectorId: NonEmptyString128 = js.native
+  var VoiceConnectorId: NonEmptyString128
 }
 object PutVoiceConnectorProxyRequest {
   

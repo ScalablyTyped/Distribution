@@ -3,39 +3,37 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsRendererOptions extends StObject {
   
-  var directions: js.UndefOr[DirectionsResult] = js.native
+  var directions: js.UndefOr[DirectionsResult] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var hideRouteList: js.UndefOr[Boolean] = js.native
+  var hideRouteList: js.UndefOr[Boolean] = js.undefined
   
-  var infoWindow: js.UndefOr[InfoWindow] = js.native
+  var infoWindow: js.UndefOr[InfoWindow] = js.undefined
   
-  var map: js.UndefOr[Map[Element]] = js.native
+  var map: js.UndefOr[Map[Element]] = js.undefined
   
-  var markerOptions: js.UndefOr[MarkerOptions] = js.native
+  var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
   
-  var panel: js.UndefOr[Element] = js.native
+  var panel: js.UndefOr[Element] = js.undefined
   
-  var polylineOptions: js.UndefOr[PolylineOptions] = js.native
+  var polylineOptions: js.UndefOr[PolylineOptions] = js.undefined
   
-  var preserveViewport: js.UndefOr[Boolean] = js.native
+  var preserveViewport: js.UndefOr[Boolean] = js.undefined
   
-  var routeIndex: js.UndefOr[Double] = js.native
+  var routeIndex: js.UndefOr[Double] = js.undefined
   
-  var suppressBicyclingLayer: js.UndefOr[Boolean] = js.native
+  var suppressBicyclingLayer: js.UndefOr[Boolean] = js.undefined
   
-  var suppressInfoWindows: js.UndefOr[Boolean] = js.native
+  var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
   
-  var suppressMarkers: js.UndefOr[Boolean] = js.native
+  var suppressMarkers: js.UndefOr[Boolean] = js.undefined
   
-  var suppressPolylines: js.UndefOr[Boolean] = js.native
+  var suppressPolylines: js.UndefOr[Boolean] = js.undefined
 }
 object DirectionsRendererOptions {
   

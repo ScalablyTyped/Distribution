@@ -3,14 +3,12 @@ package typings.officeUiFabricReact.anon
 import typings.fluentuiTheme.ithemeMod.ITheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupShowAll.types.IGroupShowAllProps, 'theme'>> */
-@js.native
 trait RequiredPickIGroupShowAll extends StObject {
   
-  var theme: ITheme = js.native
+  var theme: ITheme
 }
 object RequiredPickIGroupShowAll {
   

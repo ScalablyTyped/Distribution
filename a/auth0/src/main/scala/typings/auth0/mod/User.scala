@@ -2,55 +2,53 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User[A, U] extends StObject {
   
-  var app_metadata: js.UndefOr[A] = js.native
+  var app_metadata: js.UndefOr[A] = js.undefined
   
-  var blocked: js.UndefOr[Boolean] = js.native
+  var blocked: js.UndefOr[Boolean] = js.undefined
   
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
-  var family_name: js.UndefOr[String] = js.native
+  var family_name: js.UndefOr[String] = js.undefined
   
-  var given_name: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.undefined
   
-  var identities: js.UndefOr[js.Array[Identity]] = js.native
+  var identities: js.UndefOr[js.Array[Identity]] = js.undefined
   
-  var last_ip: js.UndefOr[String] = js.native
+  var last_ip: js.UndefOr[String] = js.undefined
   
-  var last_login: js.UndefOr[String] = js.native
+  var last_login: js.UndefOr[String] = js.undefined
   
-  var last_password_reset: js.UndefOr[String] = js.native
+  var last_password_reset: js.UndefOr[String] = js.undefined
   
-  var logins_count: js.UndefOr[Double] = js.native
+  var logins_count: js.UndefOr[Double] = js.undefined
   
-  var multifactor: js.UndefOr[js.Array[String]] = js.native
+  var multifactor: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
-  var phone_verified: js.UndefOr[Boolean] = js.native
+  var phone_verified: js.UndefOr[Boolean] = js.undefined
   
-  var picture: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[String] = js.undefined
   
-  var updated_at: js.UndefOr[String] = js.native
+  var updated_at: js.UndefOr[String] = js.undefined
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
   
-  var user_metadata: js.UndefOr[U] = js.native
+  var user_metadata: js.UndefOr[U] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object User {
   
@@ -61,7 +59,7 @@ object User {
   }
   
   @scala.inline
-  implicit class UserMutableBuilder[Self <: User[_, _], A, U] (val x: Self with (User[A, U])) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User[?, ?], A, U] (val x: Self & (User[A, U])) extends AnyVal {
     
     @scala.inline
     def setApp_metadata(value: A): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])

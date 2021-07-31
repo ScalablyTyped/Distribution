@@ -3,19 +3,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEndpointAuthenticationScheme extends StObject {
   
-  var authorizationHeaders: js.Array[AuthorizationHeader] = js.native
+  var authorizationHeaders: js.Array[AuthorizationHeader]
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var inputDescriptors: js.Array[InputDescriptor] = js.native
+  var inputDescriptors: js.Array[InputDescriptor]
   
-  var scheme: String = js.native
+  var scheme: String
 }
 object ServiceEndpointAuthenticationScheme {
   

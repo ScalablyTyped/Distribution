@@ -11,8 +11,8 @@ Checks whether provided parameter looks like a number
 | Full name          | is-number-like |
 | Keywords           | is-number, typeof, number-like |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 26396902 |
+| # dependents       | 10 |
+| # downloads        | 30083237 |
 | # stars            | 1 |
 
 ## Links

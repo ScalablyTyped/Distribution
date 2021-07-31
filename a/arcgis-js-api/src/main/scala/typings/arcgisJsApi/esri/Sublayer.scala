@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sublayer
-  extends Accessor
+  extends StObject
+     with Accessor
      with Loadable {
   
   /**
@@ -168,7 +168,7 @@ trait Sublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native

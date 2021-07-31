@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitmentsScopedList extends StObject {
   
   /** [Output Only] A list of commitments contained in this scope. */
-  var commitments: js.UndefOr[js.Array[Commitment]] = js.native
+  var commitments: js.UndefOr[js.Array[Commitment]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of commitments when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object CommitmentsScopedList {
   

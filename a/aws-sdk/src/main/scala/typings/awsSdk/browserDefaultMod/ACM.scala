@@ -4,7 +4,6 @@ import typings.awsSdk.acmMod.ClientConfiguration
 import typings.awsSdk.acmMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "ACM")

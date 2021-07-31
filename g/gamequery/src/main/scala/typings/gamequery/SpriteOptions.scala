@@ -2,23 +2,21 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpriteOptions extends StObject {
   
-  var animation: js.UndefOr[js.Any] = js.native
+  var animation: js.UndefOr[js.Any] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var posx: js.UndefOr[Double] = js.native
+  var posx: js.UndefOr[Double] = js.undefined
   
-  var posy: js.UndefOr[Double] = js.native
+  var posy: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SpriteOptions {
   
@@ -38,7 +36,7 @@ object SpriteOptions {
     def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

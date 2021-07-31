@@ -8,12 +8,10 @@ import typings.reactLoadable.anon.Default
 import typings.reactLoadable.reactLoadableBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LoadableExport {
   
-  @js.native
   trait CommonOptions extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object LoadableExport {
       *
       * Only show the loading component if the loader() has taken this long to succeed or error.
       */
-    var delay: js.UndefOr[Double | `false` | Null] = js.native
+    var delay: js.UndefOr[Double | `false` | Null] = js.undefined
     
     /**
       * React component displayed after delay until loader() succeeds. Also responsible for displaying errors.
@@ -29,7 +27,7 @@ object LoadableExport {
       * If you don't want to render anything you can pass a function that returns null
       * (this is considered a valid React component).
       */
-    var loading: ComponentType[LoadingComponentProps] = js.native
+    var loading: ComponentType[LoadingComponentProps]
     
     /**
       * Optional array of module paths that `Loadable.Capture`'s `report` function will be applied on during
@@ -41,14 +39,14 @@ object LoadableExport {
       * });
       * ```
       */
-    var modules: js.UndefOr[js.Array[String]] = js.native
+    var modules: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Disabled by default.
       *
       * After the specified time in milliseconds passes, the component's `timedOut` prop will be set to true.
       */
-    var timeout: js.UndefOr[Double | `false` | Null] = js.native
+    var timeout: js.UndefOr[Double | `false` | Null] = js.undefined
     
     /**
       * An optional function which returns an array of Webpack module ids which you can get
@@ -61,7 +59,7 @@ object LoadableExport {
       * });
       * ```
       */
-    var webpack: js.UndefOr[js.Function0[js.Array[String | Double]]] = js.native
+    var webpack: js.UndefOr[js.Function0[js.Array[String | Double]]] = js.undefined
   }
   object CommonOptions {
     
@@ -115,11 +113,11 @@ object LoadableExport {
   @js.native
   trait Loadable extends StObject {
     
-    def apply[Props, Exports /* <: js.Object */](options: Options[Props, Exports]): ComponentType[Props] with LoadableComponent = js.native
+    def apply[Props, Exports /* <: js.Object */](options: Options[Props, Exports]): ComponentType[Props] & LoadableComponent = js.native
     
     var Capture: ComponentType[LoadableCaptureProps] = js.native
     
-    def Map[Props, Exports /* <: StringDictionary[js.Any] */](options: OptionsWithMap[Props, Exports]): ComponentType[Props] with LoadableComponent = js.native
+    def Map[Props, Exports /* <: StringDictionary[js.Any] */](options: OptionsWithMap[Props, Exports]): ComponentType[Props] & LoadableComponent = js.native
     
     /**
       * This will call all of the LoadableComponent.preload methods recursively until they are all
@@ -151,13 +149,12 @@ object LoadableExport {
     def preloadReady(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait LoadableCaptureProps extends StObject {
     
     /**
       * Function called for every moduleName that is rendered via React Loadable.
       */
-    def report(moduleName: String): Unit = js.native
+    def report(moduleName: String): Unit
   }
   object LoadableCaptureProps {
     
@@ -175,7 +172,6 @@ object LoadableExport {
     }
   }
   
-  @js.native
   trait LoadableComponent extends StObject {
     
     /**
@@ -186,7 +182,7 @@ object LoadableExport {
       * Note: preload() intentionally does not return a promise. You should not be depending on the timing of
       * preload(). It's meant as a performance optimization, not for creating UI logic.
       */
-    def preload(): Unit = js.native
+    def preload(): Unit
   }
   object LoadableComponent {
     
@@ -204,18 +200,17 @@ object LoadableExport {
     }
   }
   
-  @js.native
   trait LoadingComponentProps extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
-    var pastDelay: Boolean = js.native
+    var pastDelay: Boolean
     
-    def retry(): Unit = js.native
+    def retry(): Unit
     
-    var timedOut: Boolean = js.native
+    var timedOut: Boolean
   }
   object LoadingComponentProps {
     
@@ -272,15 +267,16 @@ object LoadableExport {
     }
   }
   
-  @js.native
-  trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends CommonOptions {
+  trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */]
+    extends StObject
+       with CommonOptions {
     
     /**
       * An object containing functions which return promises, which resolve to an object to be passed to `render` on success.
       */
     var loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports] = js.native
+      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports]
     
     /**
       * If you want to customize what gets rendered from your loader you can also pass `render`.
@@ -297,7 +293,7 @@ object LoadableExport {
       * });
       * ```
       */
-    def render(loaded: Exports, props: Props): ReactNode = js.native
+    def render(loaded: Exports, props: Props): ReactNode
   }
   object OptionsWithMap {
     
@@ -305,7 +301,7 @@ object LoadableExport {
     def apply[Props, Exports /* <: StringDictionary[js.Any] */](
       loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports],
+      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports],
       loading: ComponentType[LoadingComponentProps],
       render: (Exports, Props) => ReactNode
     ): OptionsWithMap[Props, Exports] = {
@@ -314,13 +310,13 @@ object LoadableExport {
     }
     
     @scala.inline
-    implicit class OptionsWithMapMutableBuilder[Self <: OptionsWithMap[_, _], Props, Exports /* <: StringDictionary[js.Any] */] (val x: Self with (OptionsWithMap[Props, Exports])) extends AnyVal {
+    implicit class OptionsWithMapMutableBuilder[Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[js.Any] */] (val x: Self & (OptionsWithMap[Props, Exports])) extends AnyVal {
       
       @scala.inline
       def setLoader(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-        */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports]
+        */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports]
       ): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -328,15 +324,15 @@ object LoadableExport {
     }
   }
   
-  @js.native
   trait OptionsWithRender[Props, Exports /* <: js.Object */]
-    extends CommonOptions
+    extends StObject
+       with CommonOptions
        with Options[Props, Exports] {
     
     /**
       * Function returning a promise which returns an object to be passed to `render` on success.
       */
-    def loader(): js.Promise[Exports] = js.native
+    def loader(): js.Promise[Exports]
     
     /**
       * If you want to customize what gets rendered from your loader you can also pass `render`.
@@ -353,7 +349,7 @@ object LoadableExport {
       * });
       * ```
       */
-    def render(loaded: Exports, props: Props): ReactNode = js.native
+    def render(loaded: Exports, props: Props): ReactNode
   }
   object OptionsWithRender {
     
@@ -368,7 +364,7 @@ object LoadableExport {
     }
     
     @scala.inline
-    implicit class OptionsWithRenderMutableBuilder[Self <: OptionsWithRender[_, _], Props, Exports /* <: js.Object */] (val x: Self with (OptionsWithRender[Props, Exports])) extends AnyVal {
+    implicit class OptionsWithRenderMutableBuilder[Self <: OptionsWithRender[?, ?], Props, Exports /* <: js.Object */] (val x: Self & (OptionsWithRender[Props, Exports])) extends AnyVal {
       
       @scala.inline
       def setLoader(value: () => js.Promise[Exports]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
@@ -378,9 +374,9 @@ object LoadableExport {
     }
   }
   
-  @js.native
   trait OptionsWithoutRender[Props]
-    extends CommonOptions
+    extends StObject
+       with CommonOptions
        with Options[Props, js.Any] {
     
     /**
@@ -388,7 +384,7 @@ object LoadableExport {
       *
       * Resulting React component receives all the props passed to the generated component.
       */
-    def loader(): js.Promise[ComponentType[Props] | Default[Props]] = js.native
+    def loader(): js.Promise[ComponentType[Props] | Default[Props]]
   }
   object OptionsWithoutRender {
     
@@ -402,7 +398,7 @@ object LoadableExport {
     }
     
     @scala.inline
-    implicit class OptionsWithoutRenderMutableBuilder[Self <: OptionsWithoutRender[_], Props] (val x: Self with OptionsWithoutRender[Props]) extends AnyVal {
+    implicit class OptionsWithoutRenderMutableBuilder[Self <: OptionsWithoutRender[?], Props] (val x: Self & OptionsWithoutRender[Props]) extends AnyVal {
       
       @scala.inline
       def setLoader(value: () => js.Promise[ComponentType[Props] | Default[Props]]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))

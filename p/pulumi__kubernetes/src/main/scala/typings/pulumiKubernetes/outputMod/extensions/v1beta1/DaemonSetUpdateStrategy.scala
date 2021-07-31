@@ -2,21 +2,19 @@ package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DaemonSetUpdateStrategy extends StObject {
   
   /**
     * Rolling update config params. Present only if type = "RollingUpdate".
     */
-  var rollingUpdate: RollingUpdateDaemonSet = js.native
+  var rollingUpdate: RollingUpdateDaemonSet
   
   /**
     * Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is OnDelete.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object DaemonSetUpdateStrategy {
   

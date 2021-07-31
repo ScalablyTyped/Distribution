@@ -32,7 +32,6 @@ import typings.three.webXRManagerMod.WebXRManager
 import typings.three.webXRMod.XRAnimationLoopCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLRendererMod {
@@ -42,7 +41,9 @@ object webGLRendererMod {
   /**
   	 * parameters is an optional object with properties defining the renderer's behaviour. The constructor also accepts no parameters at all. In all cases, it will assume sane defaults when parameters are missing.
   	 */
-  class WebGLRenderer () extends Renderer {
+  class WebGLRenderer ()
+    extends StObject
+       with Renderer {
     def this(parameters: WebGLRendererParameters) = this()
     
     /**
@@ -81,13 +82,13 @@ object webGLRendererMod {
     	 * Arguments default to true
     	 */
     def clear(): Unit = js.native
-    def clear(color: js.UndefOr[scala.Nothing], depth: js.UndefOr[scala.Nothing], stencil: Boolean): Unit = js.native
-    def clear(color: js.UndefOr[scala.Nothing], depth: Boolean): Unit = js.native
-    def clear(color: js.UndefOr[scala.Nothing], depth: Boolean, stencil: Boolean): Unit = js.native
     def clear(color: Boolean): Unit = js.native
-    def clear(color: Boolean, depth: js.UndefOr[scala.Nothing], stencil: Boolean): Unit = js.native
     def clear(color: Boolean, depth: Boolean): Unit = js.native
     def clear(color: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
+    def clear(color: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
+    def clear(color: Unit, depth: Boolean): Unit = js.native
+    def clear(color: Unit, depth: Boolean, stencil: Boolean): Unit = js.native
+    def clear(color: Unit, depth: Unit, stencil: Boolean): Unit = js.native
     
     def clearColor(): Unit = js.native
     
@@ -100,7 +101,7 @@ object webGLRendererMod {
     /**
     	 * @default []
     	 */
-    var clippingPlanes: js.Array[_] = js.native
+    var clippingPlanes: js.Array[js.Any] = js.native
     
     /**
     	 * Compiles all materials in the scene with the camera. This is useful to precompile shaders before the first rendering.
@@ -346,33 +347,33 @@ object webGLRendererMod {
     	 * @param activeMipmapLevel Specifies the active mipmap level.
     	 */
     def setRenderTarget(): Unit = js.native
-    def setRenderTarget(renderTarget: Null, activeCubeFace: js.UndefOr[scala.Nothing], activeMipmapLevel: Double): Unit = js.native
     def setRenderTarget(renderTarget: Null, activeCubeFace: Double): Unit = js.native
     def setRenderTarget(renderTarget: Null, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
+    def setRenderTarget(renderTarget: Null, activeCubeFace: Unit, activeMipmapLevel: Double): Unit = js.native
     def setRenderTarget(renderTarget: RenderTarget): Unit = js.native
-    def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: js.UndefOr[scala.Nothing], activeMipmapLevel: Double): Unit = js.native
     def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double): Unit = js.native
     def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
+    def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Unit, activeMipmapLevel: Double): Unit = js.native
     
     def setScissor(x: Double): Unit = js.native
-    def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-    def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
     def setScissor(x: Double, y: Double): Unit = js.native
-    def setScissor(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def setScissor(x: Double, y: Double, width: Double): Unit = js.native
     def setScissor(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+    def setScissor(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+    def setScissor(x: Double, y: Unit, width: Double): Unit = js.native
+    def setScissor(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+    def setScissor(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
     /**
     	 * Sets the scissor area from (x, y) to (x + width, y + height).
     	 */
     def setScissor(x: Vector4): Unit = js.native
-    def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-    def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
     def setScissor(x: Vector4, y: Double): Unit = js.native
-    def setScissor(x: Vector4, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def setScissor(x: Vector4, y: Double, width: Double): Unit = js.native
     def setScissor(x: Vector4, y: Double, width: Double, height: Double): Unit = js.native
+    def setScissor(x: Vector4, y: Double, width: Unit, height: Double): Unit = js.native
+    def setScissor(x: Vector4, y: Unit, width: Double): Unit = js.native
+    def setScissor(x: Vector4, y: Unit, width: Double, height: Double): Unit = js.native
+    def setScissor(x: Vector4, y: Unit, width: Unit, height: Double): Unit = js.native
     
     /**
     	 * Enable the scissor test. When this is enabled, only the pixels within the defined scissor area will be affected by further renderer actions.
@@ -385,25 +386,25 @@ object webGLRendererMod {
     def setTransparentSort(method: js.Function): Unit = js.native
     
     def setViewport(x: Double): Unit = js.native
-    def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-    def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
     def setViewport(x: Double, y: Double): Unit = js.native
-    def setViewport(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def setViewport(x: Double, y: Double, width: Double): Unit = js.native
     def setViewport(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+    def setViewport(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+    def setViewport(x: Double, y: Unit, width: Double): Unit = js.native
+    def setViewport(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+    def setViewport(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
     /**
     	 * Sets the viewport to render from (x, y) to (x + width, y + height).
     	 * (x, y) is the lower-left corner of the region.
     	 */
     def setViewport(x: Vector4): Unit = js.native
-    def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-    def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
     def setViewport(x: Vector4, y: Double): Unit = js.native
-    def setViewport(x: Vector4, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def setViewport(x: Vector4, y: Double, width: Double): Unit = js.native
     def setViewport(x: Vector4, y: Double, width: Double, height: Double): Unit = js.native
+    def setViewport(x: Vector4, y: Double, width: Unit, height: Double): Unit = js.native
+    def setViewport(x: Vector4, y: Unit, width: Double): Unit = js.native
+    def setViewport(x: Vector4, y: Unit, width: Double, height: Double): Unit = js.native
+    def setViewport(x: Vector4, y: Unit, width: Unit, height: Double): Unit = js.native
     
     var shadowMap: WebGLShadowMap = js.native
     
@@ -504,13 +505,12 @@ object webGLRendererMod {
     def setSize(width: Double, height: Double, updateStyle: Boolean): Unit = js.native
   }
   
-  @js.native
   trait WebGLDebug extends StObject {
     
     /**
     	 * Enables error checking and reporting when shader programs are being compiled.
     	 */
-    var checkShaderErrors: Boolean = js.native
+    var checkShaderErrors: Boolean
   }
   object WebGLDebug {
     
@@ -528,65 +528,64 @@ object webGLRendererMod {
     }
   }
   
-  @js.native
   trait WebGLRendererParameters extends StObject {
     
     /**
     	 * default is false.
     	 */
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * default is false.
     	 */
-    var antialias: js.UndefOr[Boolean] = js.native
+    var antialias: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * A Canvas where the renderer draws its output.
     	 */
-    var canvas: js.UndefOr[HTMLCanvasElement | OffscreenCanvas] = js.native
+    var canvas: js.UndefOr[HTMLCanvasElement | OffscreenCanvas] = js.undefined
     
     /**
     	 * A WebGL Rendering Context.
     	 * (https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext)
     	 *	Default is null
     	 */
-    var context: js.UndefOr[WebGLRenderingContext] = js.native
+    var context: js.UndefOr[WebGLRenderingContext] = js.undefined
     
     /**
     	 * default is true.
     	 */
-    var depth: js.UndefOr[Boolean] = js.native
+    var depth: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * default is false.
     	 */
-    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.native
+    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 *	Can be "high-performance", "low-power" or "default"
     	 */
-    var powerPreference: js.UndefOr[String] = js.native
+    var powerPreference: js.UndefOr[String] = js.undefined
     
     /**
     	 *	shader precision. Can be "highp", "mediump" or "lowp".
     	 */
-    var precision: js.UndefOr[String] = js.native
+    var precision: js.UndefOr[String] = js.undefined
     
     /**
     	 * default is true.
     	 */
-    var premultipliedAlpha: js.UndefOr[Boolean] = js.native
+    var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * default is false.
     	 */
-    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * default is true.
     	 */
-    var stencil: js.UndefOr[Boolean] = js.native
+    var stencil: js.UndefOr[Boolean] = js.undefined
   }
   object WebGLRendererParameters {
     

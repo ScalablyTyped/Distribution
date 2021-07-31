@@ -14,25 +14,25 @@ import typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.UNKNOWN
 import typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.UPDATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sql-query-identifier", "identify")
+  @JSImport("sql-query-identifier", JSImport.Namespace)
   @js.native
-  def identify(query: String): js.Array[Result] = js.native
-  @JSImport("sql-query-identifier", "identify")
-  @js.native
-  def identify(query: String, options: Options): js.Array[Result] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def identify(query: String): js.Array[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Result]]
+  @scala.inline
+  def identify(query: String, options: Options): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
+  
   trait Options extends StObject {
     
     /**
       * Disables strict mode which will ignore unknown types (defaults to true).
       */
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object Options {
     
@@ -50,18 +50,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var executionType: LISTING | MODIFICATION | UNKNOWN = js.native
+    var executionType: LISTING | MODIFICATION | UNKNOWN
     
-    var start: Double = js.native
+    var start: Double
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: SELECT | INSERT | UPDATE | DELETE | CREATE_TABLE | CREATE_DATABASE | DROP_TABLE | DROP_DATABASE | TRUNCATE | UNKNOWN = js.native
+    var `type`: SELECT | INSERT | UPDATE | DELETE | CREATE_TABLE | CREATE_DATABASE | DROP_TABLE | DROP_DATABASE | TRUNCATE | UNKNOWN
   }
   object Result {
     

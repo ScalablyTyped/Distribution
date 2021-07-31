@@ -2,59 +2,59 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MomentInputObject extends _MomentInput {
+trait MomentInputObject
+  extends StObject
+     with _MomentInput {
   
-  var D: js.UndefOr[numberlike] = js.native
+  var D: js.UndefOr[numberlike] = js.undefined
   
-  var M: js.UndefOr[numberlike] = js.native
+  var M: js.UndefOr[numberlike] = js.undefined
   
-  var d: js.UndefOr[numberlike] = js.native
+  var d: js.UndefOr[numberlike] = js.undefined
   
-  var date: js.UndefOr[numberlike] = js.native
+  var date: js.UndefOr[numberlike] = js.undefined
   
-  var dates: js.UndefOr[numberlike] = js.native
+  var dates: js.UndefOr[numberlike] = js.undefined
   
-  var day: js.UndefOr[numberlike] = js.native
+  var day: js.UndefOr[numberlike] = js.undefined
   
-  var days: js.UndefOr[numberlike] = js.native
+  var days: js.UndefOr[numberlike] = js.undefined
   
-  var h: js.UndefOr[numberlike] = js.native
+  var h: js.UndefOr[numberlike] = js.undefined
   
-  var hour: js.UndefOr[numberlike] = js.native
+  var hour: js.UndefOr[numberlike] = js.undefined
   
-  var hours: js.UndefOr[numberlike] = js.native
+  var hours: js.UndefOr[numberlike] = js.undefined
   
-  var m: js.UndefOr[numberlike] = js.native
+  var m: js.UndefOr[numberlike] = js.undefined
   
-  var millisecond: js.UndefOr[numberlike] = js.native
+  var millisecond: js.UndefOr[numberlike] = js.undefined
   
-  var milliseconds: js.UndefOr[numberlike] = js.native
+  var milliseconds: js.UndefOr[numberlike] = js.undefined
   
-  var minute: js.UndefOr[numberlike] = js.native
+  var minute: js.UndefOr[numberlike] = js.undefined
   
-  var minutes: js.UndefOr[numberlike] = js.native
+  var minutes: js.UndefOr[numberlike] = js.undefined
   
-  var month: js.UndefOr[numberlike] = js.native
+  var month: js.UndefOr[numberlike] = js.undefined
   
-  var months: js.UndefOr[numberlike] = js.native
+  var months: js.UndefOr[numberlike] = js.undefined
   
-  var ms: js.UndefOr[numberlike] = js.native
+  var ms: js.UndefOr[numberlike] = js.undefined
   
-  var s: js.UndefOr[numberlike] = js.native
+  var s: js.UndefOr[numberlike] = js.undefined
   
-  var second: js.UndefOr[numberlike] = js.native
+  var second: js.UndefOr[numberlike] = js.undefined
   
-  var seconds: js.UndefOr[numberlike] = js.native
+  var seconds: js.UndefOr[numberlike] = js.undefined
   
-  var y: js.UndefOr[numberlike] = js.native
+  var y: js.UndefOr[numberlike] = js.undefined
   
-  var year: js.UndefOr[numberlike] = js.native
+  var year: js.UndefOr[numberlike] = js.undefined
   
-  var years: js.UndefOr[numberlike] = js.native
+  var years: js.UndefOr[numberlike] = js.undefined
 }
 object MomentInputObject {
   

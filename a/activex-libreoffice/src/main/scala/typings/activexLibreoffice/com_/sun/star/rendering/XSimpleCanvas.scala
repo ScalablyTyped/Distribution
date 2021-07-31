@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealRectangle2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,38 +18,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In contrast to the {@link XCanvas} interface, {@link XSimpleCanvas} does not distinguish between stroke and fill operations; instead, switching
   * between stroke and fill (or taking both) works by setting appropriate pen and fill colors.
   */
-@js.native
-trait XSimpleCanvas extends XInterface {
+trait XSimpleCanvas
+  extends StObject
+     with XInterface {
   
   /**
     * Query the underlying {@link XCanvas} .
     * @returns the canvas interface this object is internally based on.
     */
-  val Canvas: XCanvas = js.native
+  val Canvas: XCanvas
   
   /** Retrieve current clip rect */
-  val CurrentClipRect: RealRectangle2D = js.native
+  val CurrentClipRect: RealRectangle2D
   
   /** Retrieve color currently used for fills */
-  val CurrentFillColor: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  val CurrentFillColor: typings.activexLibreoffice.com_.sun.star.util.Color
   
   /**
     * Retrieve currently selected font.
     * @returns the font instance that's currently used for rendering text.
     */
-  val CurrentFont: XCanvasFont = js.native
+  val CurrentFont: XCanvasFont
   
   /** Retrieve color currently used for lines. */
-  val CurrentPenColor: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  val CurrentPenColor: typings.activexLibreoffice.com_.sun.star.util.Color
   
   /** Retrieve current transformation matrix */
-  val CurrentTransformation: AffineMatrix2D = js.native
+  val CurrentTransformation: AffineMatrix2D
   
   /**
     * Retrieve view state.
     * @returns the view state, that would generate matching output, when rendering to an {@link XCanvas} instead.
     */
-  val CurrentViewState: ViewState = js.native
+  val CurrentViewState: ViewState
   
   /**
     * Request the associated graphic device for this canvas.
@@ -59,32 +59,32 @@ trait XSimpleCanvas extends XInterface {
     * This includes device resolution, color space, or bitmap formats.
     * @returns the associated {@link XGraphicDevice} .
     */
-  val Device: XGraphicDevice = js.native
+  val Device: XGraphicDevice
   
   /**
     * Request the font metrics of the current font.
     * @returns the font metrics of the currently selected font.
     */
-  val FontMetrics: typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics = js.native
+  val FontMetrics: typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics
   
   /**
     * Draws the bitmap on the canvas.
     * @param xBitmap Bitmap to render
     * @param aLeftTop Left, top position of the bitmap on the destination canvas.
     */
-  def drawBitmap(xBitmap: XBitmap, aLeftTop: RealPoint2D): Unit = js.native
+  def drawBitmap(xBitmap: XBitmap, aLeftTop: RealPoint2D): Unit
   
   /** Draws a line on the canvas. */
-  def drawLine(aStartPoint: RealPoint2D, aEndPoint: RealPoint2D): Unit = js.native
+  def drawLine(aStartPoint: RealPoint2D, aEndPoint: RealPoint2D): Unit
   
   /** Sets a single pixel on the canvas. */
-  def drawPixel(aPoint: RealPoint2D): Unit = js.native
+  def drawPixel(aPoint: RealPoint2D): Unit
   
   /** Draws a poly-polygon on the canvas. */
-  def drawPolyPolygon(xPolyPolygon: XPolyPolygon2D): Unit = js.native
+  def drawPolyPolygon(xPolyPolygon: XPolyPolygon2D): Unit
   
   /** Draws a rectangle on the canvas. */
-  def drawRect(aRect: RealRectangle2D): Unit = js.native
+  def drawRect(aRect: RealRectangle2D): Unit
   
   /**
     * Draws text on the canvas.
@@ -92,44 +92,44 @@ trait XSimpleCanvas extends XInterface {
     * @param aOutPos Output position of the text. This is the left or right edge, depending on nTextDirection. Output position is always relative to the font
     * @param nTextDirection A value from the {@link TextDirection} collection, denoting the main writing direction for this string. The main writing direction
     */
-  def drawText(aText: StringContext, aOutPos: RealPoint2D, nTextDirection: Double): Unit = js.native
+  def drawText(aText: StringContext, aOutPos: RealPoint2D, nTextDirection: Double): Unit
   
   /**
     * Query the underlying {@link XCanvas} .
     * @returns the canvas interface this object is internally based on.
     */
-  def getCanvas(): XCanvas = js.native
+  def getCanvas(): XCanvas
   
   /** Retrieve current clip rect */
-  def getCurrentClipRect(): RealRectangle2D = js.native
+  def getCurrentClipRect(): RealRectangle2D
   
   /** Retrieve color currently used for fills */
-  def getCurrentFillColor(): typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  def getCurrentFillColor(): typings.activexLibreoffice.com_.sun.star.util.Color
   
   /**
     * Retrieve currently selected font.
     * @returns the font instance that's currently used for rendering text.
     */
-  def getCurrentFont(): XCanvasFont = js.native
+  def getCurrentFont(): XCanvasFont
   
   /** Retrieve color currently used for lines. */
-  def getCurrentPenColor(): typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  def getCurrentPenColor(): typings.activexLibreoffice.com_.sun.star.util.Color
   
   /**
     * Retrieve render state.
     * @param bUseFillColor When true, the Color member of the {@link RenderState} is initialized with the current fill color; when false, the current pen colo
     * @returns the render state, that would generate matching output, when rendering to an {@link XCanvas} instead.
     */
-  def getCurrentRenderState(bUseFillColor: Boolean): RenderState = js.native
+  def getCurrentRenderState(bUseFillColor: Boolean): RenderState
   
   /** Retrieve current transformation matrix */
-  def getCurrentTransformation(): AffineMatrix2D = js.native
+  def getCurrentTransformation(): AffineMatrix2D
   
   /**
     * Retrieve view state.
     * @returns the view state, that would generate matching output, when rendering to an {@link XCanvas} instead.
     */
-  def getCurrentViewState(): ViewState = js.native
+  def getCurrentViewState(): ViewState
   
   /**
     * Request the associated graphic device for this canvas.
@@ -138,13 +138,13 @@ trait XSimpleCanvas extends XInterface {
     * This includes device resolution, color space, or bitmap formats.
     * @returns the associated {@link XGraphicDevice} .
     */
-  def getDevice(): XGraphicDevice = js.native
+  def getDevice(): XGraphicDevice
   
   /**
     * Request the font metrics of the current font.
     * @returns the font metrics of the currently selected font.
     */
-  def getFontMetrics(): typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics = js.native
+  def getFontMetrics(): typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics
   
   /**
     * Select a font.
@@ -155,7 +155,7 @@ trait XSimpleCanvas extends XInterface {
     * @param bold When true, selected font is bold.
     * @param italic When true, selected font is italic
     */
-  def selectFont(sFontName: String, size: Double, bold: Boolean, italic: Boolean): Unit = js.native
+  def selectFont(sFontName: String, size: Double, bold: Boolean, italic: Boolean): Unit
   
   /**
     * Sets the fill color.
@@ -163,7 +163,7 @@ trait XSimpleCanvas extends XInterface {
     * To disable filling, simply set this color to something with zero alpha (i.e. fully transparent).
     * @param nsRgbaColor RGBA color tuple, interpreted in the sRGB color space.
     */
-  def setFillColor(nsRgbaColor: typings.activexLibreoffice.com_.sun.star.util.Color): Unit = js.native
+  def setFillColor(nsRgbaColor: typings.activexLibreoffice.com_.sun.star.util.Color): Unit
   
   /**
     * Sets the color used by line and text operations.
@@ -171,13 +171,13 @@ trait XSimpleCanvas extends XInterface {
     * To disable stroking, simply set this color to something with zero alpha (i.e. fully transparent).
     * @param nsRgbaColor RGBA color tuple, interpreted in the sRGB color space.
     */
-  def setPenColor(nsRgbaColor: typings.activexLibreoffice.com_.sun.star.util.Color): Unit = js.native
+  def setPenColor(nsRgbaColor: typings.activexLibreoffice.com_.sun.star.util.Color): Unit
   
   /** Sets the clip to the specified rectangle. */
-  def setRectClip(aRect: RealRectangle2D): Unit = js.native
+  def setRectClip(aRect: RealRectangle2D): Unit
   
   /** Set the current transform matrix. */
-  def setTransformation(aTransform: AffineMatrix2D): Unit = js.native
+  def setTransformation(aTransform: AffineMatrix2D): Unit
 }
 object XSimpleCanvas {
   

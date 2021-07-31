@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Linear extends StObject {
   
   /** Must be greater than 0. */
-  var numFiniteBuckets: js.UndefOr[Double] = js.native
+  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
   
   /** Lower bound of the first bucket. */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** Must be greater than 0. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Linear {
   

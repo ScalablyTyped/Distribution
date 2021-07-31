@@ -2,27 +2,25 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains all the information related to a property
   * @see XLayerContentDescriber
   */
-@js.native
 trait PropertyInfo extends StObject {
   
   /** The full name of the Property for eg. org.openoffice.Inet/Settings/ooInetHTTPProxyName */
-  var Name: String = js.native
+  var Name: String
   
   /** Is the property protected, if true the property can not be over written in later layer. */
-  var Protected: Boolean = js.native
+  var Protected: Boolean
   
   /** The type of the Property */
-  var Type: String = js.native
+  var Type: String
   
   /** The value of the property */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object PropertyInfo {
   

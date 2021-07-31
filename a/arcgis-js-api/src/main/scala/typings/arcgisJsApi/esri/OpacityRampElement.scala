@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpacityRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
   
   /**
@@ -17,21 +16,21 @@ trait OpacityRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
     */
-  var infos: js.Array[OpacityRampStop] = js.native
+  var infos: js.Array[OpacityRampStop]
   
   /**
     * The title of the opacity ramp as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
     */
-  var title: js.UndefOr[String | RampTitle] = js.native
+  var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
     * The type of this element is always `opacity-ramp`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object OpacityRampElement {
   

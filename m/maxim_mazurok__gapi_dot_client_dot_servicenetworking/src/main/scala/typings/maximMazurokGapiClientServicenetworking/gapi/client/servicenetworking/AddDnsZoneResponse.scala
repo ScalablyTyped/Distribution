@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddDnsZoneResponse extends StObject {
   
   /** The DNS peering zone created in the consumer project. */
-  var consumerPeeringZone: js.UndefOr[DnsZone] = js.native
+  var consumerPeeringZone: js.UndefOr[DnsZone] = js.undefined
   
   /** The private DNS zone created in the shared producer host project. */
-  var producerPrivateZone: js.UndefOr[DnsZone] = js.native
+  var producerPrivateZone: js.UndefOr[DnsZone] = js.undefined
 }
 object AddDnsZoneResponse {
   

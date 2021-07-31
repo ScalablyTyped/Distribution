@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateInstanceMarketOptions extends StObject {
   
   /**
     * The market type. Can be `spot`.
     */
-  var marketType: js.UndefOr[Input[String]] = js.native
+  var marketType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
     */
-  var spotOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptionsSpotOptions]] = js.native
+  var spotOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptionsSpotOptions]] = js.undefined
 }
 object LaunchTemplateInstanceMarketOptions {
   

@@ -2,25 +2,23 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var descriptions: js.Array[ItemDescription] = js.native
+  var descriptions: js.Array[ItemDescription]
   
-  var effects: js.Array[ItemEffect] = js.native
+  var effects: js.Array[ItemEffect]
   
-  var fling_power: Double = js.native
+  var fling_power: Double
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var pockets: js.Array[ItemPocket] = js.native
+  var pockets: js.Array[ItemPocket]
   
-  var prices: js.Array[ItemPrice] = js.native
+  var prices: js.Array[ItemPrice]
 }
 object Item {
   

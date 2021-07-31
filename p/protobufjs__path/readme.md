@@ -11,8 +11,8 @@ A minimal path module to resolve Unix, Windows and URL paths alike.
 | Full name          | @protobufjs/path |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 106851726 |
+| # dependents       | 34 |
+| # downloads        | 143830026 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.antdMobileRn.sliderPropsTypeMod.SliderPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderIndexNativeMod {
@@ -31,12 +30,13 @@ object sliderIndexNativeMod {
   trait SliderAntm
     extends Component[SliderProps, js.Any, js.Any]
   
-  @js.native
-  trait SliderProps extends SliderPropsType {
+  trait SliderProps
+    extends StObject
+       with SliderPropsType {
     
-    var maximumTrackTintColor: js.UndefOr[String] = js.native
+    var maximumTrackTintColor: js.UndefOr[String] = js.undefined
     
-    var minimumTrackTintColor: js.UndefOr[String] = js.native
+    var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   }
   object SliderProps {
     

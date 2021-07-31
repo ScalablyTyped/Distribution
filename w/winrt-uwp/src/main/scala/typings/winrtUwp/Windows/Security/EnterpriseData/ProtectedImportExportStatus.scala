@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,33 +13,49 @@ object ProtectedImportExportStatus extends StObject {
   
   /** The keys to access the protected file have been dropped while the device is locked. */
   @js.native
-  sealed trait accessSuspended extends ProtectedImportExportStatus
+  sealed trait accessSuspended
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file's RMS license has expired. */
   @js.native
-  sealed trait licenseExpired extends ProtectedImportExportStatus
+  sealed trait licenseExpired
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file cannot be roamed to another device. */
   @js.native
-  sealed trait notRoamable extends ProtectedImportExportStatus
+  sealed trait notRoamable
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file's protection is OK. */
   @js.native
-  sealed trait ok extends ProtectedImportExportStatus
+  sealed trait ok
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file is inaccessible, as it is protected to a different enterprise identity. */
   @js.native
-  sealed trait protectedToOtherIdentity extends ProtectedImportExportStatus
+  sealed trait protectedToOtherIdentity
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file's protection has been revoked, and it is inaccessible. */
   @js.native
-  sealed trait revoked extends ProtectedImportExportStatus
+  sealed trait revoked
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file's protection can not be determined. */
   @js.native
-  sealed trait undetermined extends ProtectedImportExportStatus
+  sealed trait undetermined
+    extends StObject
+       with ProtectedImportExportStatus
   
   /** The file is not protected. */
   @js.native
-  sealed trait unprotected extends ProtectedImportExportStatus
+  sealed trait unprotected
+    extends StObject
+       with ProtectedImportExportStatus
 }

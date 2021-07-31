@@ -3,21 +3,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.ITestStep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCase. */
-@js.native
 trait ITestCase extends StObject {
   
   /** TestCase id */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** TestCase pickleId */
-  var pickleId: js.UndefOr[String | Null] = js.native
+  var pickleId: js.UndefOr[String | Null] = js.undefined
   
   /** TestCase testSteps */
-  var testSteps: js.UndefOr[js.Array[ITestStep] | Null] = js.native
+  var testSteps: js.UndefOr[js.Array[ITestStep] | Null] = js.undefined
 }
 object ITestCase {
   

@@ -5,17 +5,17 @@ import typings.winrt.Windows.System.VirtualKeyModifiers
 import typings.winrt.Windows.UI.Input.PointerPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPointerEventArgs extends ICoreWindowEventArgs {
+trait IPointerEventArgs
+  extends StObject
+     with ICoreWindowEventArgs {
   
-  var currentPoint: PointerPoint = js.native
+  var currentPoint: PointerPoint
   
-  def getIntermediatePoints(): IVector[PointerPoint] = js.native
+  def getIntermediatePoints(): IVector[PointerPoint]
   
-  var keyModifiers: VirtualKeyModifiers = js.native
+  var keyModifiers: VirtualKeyModifiers
 }
 object IPointerEventArgs {
   

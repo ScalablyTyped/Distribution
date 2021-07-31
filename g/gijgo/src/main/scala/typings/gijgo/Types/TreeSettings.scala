@@ -2,88 +2,86 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeSettings extends StObject {
   
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
-  var border: js.UndefOr[Boolean] = js.native
+  var border: js.UndefOr[Boolean] = js.undefined
   
-  var cascadeCheck: js.UndefOr[Boolean] = js.native
+  var cascadeCheck: js.UndefOr[Boolean] = js.undefined
   
-  var cascadeSelection: js.UndefOr[Boolean] = js.native
+  var cascadeSelection: js.UndefOr[Boolean] = js.undefined
   
   var checkboxChange: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String, js.Any]
+  ] = js.undefined
   
-  var checkboxes: js.UndefOr[Boolean] = js.native
+  var checkboxes: js.UndefOr[Boolean] = js.undefined
   
-  var checkedField: js.UndefOr[String] = js.native
+  var checkedField: js.UndefOr[String] = js.undefined
   
-  var childrenField: js.UndefOr[String] = js.native
+  var childrenField: js.UndefOr[String] = js.undefined
   
-  var collapse: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var collapse: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var disable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var disable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var disabledField: js.UndefOr[String] = js.native
+  var disabledField: js.UndefOr[String] = js.undefined
   
-  var dragAndDrop: js.UndefOr[Boolean] = js.native
+  var dragAndDrop: js.UndefOr[Boolean] = js.undefined
   
-  var enable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var enable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var expand: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var expand: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var hasChildrenField: js.UndefOr[String] = js.native
+  var hasChildrenField: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[TreeIcons] = js.native
+  var icons: js.UndefOr[TreeIcons] = js.undefined
   
-  var iconsLibrary: js.UndefOr[String] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var imageCssClassField: js.UndefOr[String] = js.native
+  var imageCssClassField: js.UndefOr[String] = js.undefined
   
-  var imageHtmlField: js.UndefOr[String] = js.native
+  var imageHtmlField: js.UndefOr[String] = js.undefined
   
-  var imageUrlField: js.UndefOr[String] = js.native
+  var imageUrlField: js.UndefOr[String] = js.undefined
   
   //Events
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var lazyLoading: js.UndefOr[Boolean] = js.native
+  var lazyLoading: js.UndefOr[Boolean] = js.undefined
   
-  var nodeDataBound: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var nodeDataBound: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
   var nodeDrop: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double, js.Any]
+  ] = js.undefined
   
-  var paramNames: js.UndefOr[TreeParamNames] = js.native
+  var paramNames: js.UndefOr[TreeParamNames] = js.undefined
   
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var select: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var selectionType: js.UndefOr[String] = js.native
+  var selectionType: js.UndefOr[String] = js.undefined
   
-  var textField: js.UndefOr[String] = js.native
+  var textField: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var unselect: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var unselect: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TreeSettings {
   
@@ -121,7 +119,7 @@ object TreeSettings {
     def setCascadeSelectionUndefined: Self = StObject.set(x, "cascadeSelection", js.undefined)
     
     @scala.inline
-    def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => _): Self = StObject.set(x, "checkboxChange", js.Any.fromFunction4(value))
+    def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => js.Any): Self = StObject.set(x, "checkboxChange", js.Any.fromFunction4(value))
     
     @scala.inline
     def setCheckboxChangeUndefined: Self = StObject.set(x, "checkboxChange", js.undefined)
@@ -145,19 +143,19 @@ object TreeSettings {
     def setChildrenFieldUndefined: Self = StObject.set(x, "childrenField", js.undefined)
     
     @scala.inline
-    def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
+    def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
     
     @scala.inline
     def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def setDataBinding(value: /* e */ js.Any => _): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
+    def setDataBinding(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def setDataBound(value: /* e */ js.Any => _): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
@@ -169,13 +167,13 @@ object TreeSettings {
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def setDestroying(value: /* e */ js.Any => _): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
+    def setDestroying(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDestroyingUndefined: Self = StObject.set(x, "destroying", js.undefined)
     
     @scala.inline
-    def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "disable", js.Any.fromFunction3(value))
+    def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction3(value))
     
     @scala.inline
     def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
@@ -193,13 +191,13 @@ object TreeSettings {
     def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
     @scala.inline
-    def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "enable", js.Any.fromFunction3(value))
+    def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction3(value))
     
     @scala.inline
     def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
+    def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     
     @scala.inline
     def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
@@ -241,7 +239,7 @@ object TreeSettings {
     def setImageUrlFieldUndefined: Self = StObject.set(x, "imageUrlField", js.undefined)
     
     @scala.inline
-    def setInitialized(value: /* e */ js.Any => _): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+    def setInitialized(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
@@ -253,13 +251,15 @@ object TreeSettings {
     def setLazyLoadingUndefined: Self = StObject.set(x, "lazyLoading", js.undefined)
     
     @scala.inline
-    def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "nodeDataBound", js.Any.fromFunction3(value))
+    def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "nodeDataBound", js.Any.fromFunction3(value))
     
     @scala.inline
     def setNodeDataBoundUndefined: Self = StObject.set(x, "nodeDataBound", js.undefined)
     
     @scala.inline
-    def setNodeDrop(value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => _): Self = StObject.set(x, "nodeDrop", js.Any.fromFunction4(value))
+    def setNodeDrop(
+      value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => js.Any
+    ): Self = StObject.set(x, "nodeDrop", js.Any.fromFunction4(value))
     
     @scala.inline
     def setNodeDropUndefined: Self = StObject.set(x, "nodeDrop", js.undefined)
@@ -277,7 +277,7 @@ object TreeSettings {
     def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
+    def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
     
     @scala.inline
     def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
@@ -301,7 +301,7 @@ object TreeSettings {
     def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
     
     @scala.inline
-    def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "unselect", js.Any.fromFunction3(value))
+    def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "unselect", js.Any.fromFunction3(value))
     
     @scala.inline
     def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)

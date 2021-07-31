@@ -5,7 +5,6 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Webhooks.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,7 +59,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Webhooks
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   def create(resource: String, target: String, data: js.Any): typings.bluebird.mod.^[Type] = js.native
   def create(resource: String, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
@@ -105,13 +105,13 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def deleteById(webhook: String): typings.bluebird.mod.^[_] = js.native
-  def deleteById(webhook: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def deleteById(webhook: String): typings.bluebird.mod.^[js.Any] = js.native
+  def deleteById(webhook: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
-  def getAll(workspace: String): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: String, params: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def getAll(workspace: String): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: String, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   /**
     * * Returns the compact representation of all webhooks your app has
     * * registered for the authenticated user in the given workspace.
@@ -125,10 +125,10 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def getAll(workspace: Double): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: Double, params: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def getAll(workspace: Double): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: Double, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * * Returns the full record for the given webhook.
@@ -141,17 +141,19 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def getById(webhook: String): typings.bluebird.mod.^[_] = js.native
-  def getById(webhook: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getById(webhook: String, params: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def getById(webhook: String): typings.bluebird.mod.^[js.Any] = js.native
+  def getById(webhook: String, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getById(webhook: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
 }
 object Webhooks extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Webhooks")
   @js.native
-  class ^ protected () extends Webhooks {
+  class ^ protected ()
+    extends StObject
+       with Webhooks {
     /**
       * @param dispatcher
       */
@@ -162,16 +164,15 @@ object Webhooks extends Shortcut {
   @js.native
   val ^ : WebhooksStatic = js.native
   
-  @js.native
   trait Filter extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
-    var resource_subtype: String = js.native
+    var resource_subtype: String
     
-    var resource_type: String = js.native
+    var resource_type: String
   }
   object Filter {
     
@@ -203,7 +204,8 @@ object Webhooks extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var active: Boolean = js.native
     
@@ -217,7 +219,7 @@ object Webhooks extends Shortcut {
     
     var last_success_at: String = js.native
     
-    var resource: typings.asana.mod.resources.Resource = js.native
+    var resource: Resource = js.native
     
     var target: String = js.native
   }

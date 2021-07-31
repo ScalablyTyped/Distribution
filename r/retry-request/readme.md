@@ -10,9 +10,9 @@ Retry a request.
 | ------------------ | :-------------: |
 | Full name          | retry-request |
 | Keywords           | request, retry, stream |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 91921828 |
+| # releases         | 5 |
+| # dependents       | 16 |
+| # downloads        | 104060642 |
 | # stars            | 1 |
 
 ## Links

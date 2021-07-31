@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoredResourceInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource being monitored.
     */
-  var arn: js.UndefOr[ResourceArn] = js.native
+  var arn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The name of the Lightsail resource being monitored.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Lightsail resource type of the resource being monitored. Instances, load balancers, and relational databases are the only Lightsail resources that can currently be monitored by alarms.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object MonitoredResourceInfo {
   

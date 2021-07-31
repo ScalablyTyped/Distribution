@@ -13,13 +13,11 @@ import typings.socks.socksStrings.error
 import typings.socks.socksStrings.established
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socksclientMod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocksClient * / any */ @JSImport("socks/typings/client/socksclient", "SocksClient")
+  @JSImport("socks/typings/client/socksclient", "SocksClient")
   @js.native
   class SocksClient protected () extends EventEmitter {
     def this(options: SocksClientOptions) = this()
@@ -183,6 +181,10 @@ object socksclientMod {
   }
   object SocksClient {
     
+    @JSImport("socks/typings/client/socksclient", "SocksClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new SOCKS connection.
       *
@@ -192,12 +194,10 @@ object socksclientMod {
       * @returns { Promise }
       */
     /* static member */
-    @JSImport("socks/typings/client/socksclient", "SocksClient.createConnection")
-    @js.native
-    def createConnection(options: SocksClientOptions): js.Promise[SocksClientEstablishedEvent] = js.native
-    @JSImport("socks/typings/client/socksclient", "SocksClient.createConnection")
-    @js.native
-    def createConnection(options: SocksClientOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = js.native
+    @scala.inline
+    def createConnection(options: SocksClientOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    @scala.inline
+    def createConnection(options: SocksClientOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a new SOCKS connection chain to a destination host through 2 or more SOCKS proxies.
@@ -209,30 +209,26 @@ object socksclientMod {
       * @returns { Promise }
       */
     /* static member */
-    @JSImport("socks/typings/client/socksclient", "SocksClient.createConnectionChain")
-    @js.native
-    def createConnectionChain(options: SocksClientChainOptions): js.Promise[SocksClientEstablishedEvent] = js.native
-    @JSImport("socks/typings/client/socksclient", "SocksClient.createConnectionChain")
-    @js.native
-    def createConnectionChain(options: SocksClientChainOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = js.native
+    @scala.inline
+    def createConnectionChain(options: SocksClientChainOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    @scala.inline
+    def createConnectionChain(options: SocksClientChainOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a SOCKS UDP Frame.
       * @param options
       */
     /* static member */
-    @JSImport("socks/typings/client/socksclient", "SocksClient.createUDPFrame")
-    @js.native
-    def createUDPFrame(options: SocksUDPFrameDetails): Buffer = js.native
+    @scala.inline
+    def createUDPFrame(options: SocksUDPFrameDetails): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createUDPFrame")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Parses a SOCKS UDP frame.
       * @param data
       */
     /* static member */
-    @JSImport("socks/typings/client/socksclient", "SocksClient.parseUDPFrame")
-    @js.native
-    def parseUDPFrame(data: Buffer): SocksUDPFrameDetails = js.native
+    @scala.inline
+    def parseUDPFrame(data: Buffer): SocksUDPFrameDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUDPFrame")(data.asInstanceOf[js.Any]).asInstanceOf[SocksUDPFrameDetails]
   }
   
   /**

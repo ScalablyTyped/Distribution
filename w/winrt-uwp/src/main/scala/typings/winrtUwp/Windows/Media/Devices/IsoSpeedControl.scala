@@ -4,56 +4,54 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the ISO film speed settings on a capture device. */
-@js.native
 trait IsoSpeedControl extends StObject {
   
   /** Gets a value indicating whether auto ISO speed is enabled. */
-  var auto: Boolean = js.native
+  var auto: Boolean
   
   /** Gets the maximum ISO speed supported by the capture device. */
-  var max: Double = js.native
+  var max: Double
   
   /** Gets the minimum ISO speed supported by the capture device. */
-  var min: Double = js.native
+  var min: Double
   
   /** Gets the ISO film speed preset. */
-  var preset: IsoSpeedPreset = js.native
+  var preset: IsoSpeedPreset
   
   /**
     * Sets the ISO speed to automatic.
     * @return An asynchronous action.
     */
-  def setAutoAsync(): IPromiseWithIAsyncAction = js.native
+  def setAutoAsync(): IPromiseWithIAsyncAction
   
   /**
     * Asynchronously sets the ISO film speed Preset .
     * @param preset The ISO preset value to set the Preset property to.
     * @return The object that is used to control the asynchronous operation.
     */
-  def setPresetAsync(preset: IsoSpeedPreset): IPromiseWithIAsyncAction = js.native
+  def setPresetAsync(preset: IsoSpeedPreset): IPromiseWithIAsyncAction
   
   /**
     * Sets the ISO speed value.
     * @param isoSpeed The ISO speed value.
     * @return An asynchronous action.
     */
-  def setValueAsync(isoSpeed: Double): IPromiseWithIAsyncAction = js.native
+  def setValueAsync(isoSpeed: Double): IPromiseWithIAsyncAction
   
   /** Gets the smallest ISO speed increment supported by the capture device. */
-  var step: Double = js.native
+  var step: Double
   
   /** Gets a value the specifies if the capture device supports the ISO speed control. */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the ISO presets that the capture device supports. */
-  var supportedPresets: IVectorView[IsoSpeedPreset] = js.native
+  var supportedPresets: IVectorView[IsoSpeedPreset]
   
   /** Gets the current ISO speed value. */
-  var value: Double = js.native
+  var value: Double
 }
 object IsoSpeedControl {
   

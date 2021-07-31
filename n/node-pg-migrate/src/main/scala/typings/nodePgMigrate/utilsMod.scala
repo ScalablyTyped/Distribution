@@ -15,10 +15,13 @@ import typings.nodePgMigrate.tablesTypesMod.ColumnDefinition
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("node-pg-migrate/dist/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-pg-migrate/dist/utils", "StringIdGenerator")
   @js.native
@@ -34,23 +37,18 @@ object utilsMod {
     def next(): String = js.native
   }
   
-  @JSImport("node-pg-migrate/dist/utils", "applyType")
-  @js.native
-  def applyType(`type`: Type): ColumnDefinition with FunctionParamType = js.native
-  @JSImport("node-pg-migrate/dist/utils", "applyType")
-  @js.native
-  def applyType(`type`: Type, extendingTypeShorthands: ColumnDefinitions): ColumnDefinition with FunctionParamType = js.native
+  @scala.inline
+  def applyType(`type`: Type): ColumnDefinition & FunctionParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any]).asInstanceOf[ColumnDefinition & FunctionParamType]
+  @scala.inline
+  def applyType(`type`: Type, extendingTypeShorthands: ColumnDefinitions): ColumnDefinition & FunctionParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any], extendingTypeShorthands.asInstanceOf[js.Any])).asInstanceOf[ColumnDefinition & FunctionParamType]
   
-  @JSImport("node-pg-migrate/dist/utils", "applyTypeAdapters")
-  @js.native
-  def applyTypeAdapters(`type`: String): String = js.native
+  @scala.inline
+  def applyTypeAdapters(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTypeAdapters")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-pg-migrate/dist/utils", "createSchemalize")
-  @js.native
-  def createSchemalize(shouldDecamelize: Boolean, shouldQuote: Boolean): js.Function1[/* v */ Name, String] = js.native
+  @scala.inline
+  def createSchemalize(shouldDecamelize: Boolean, shouldQuote: Boolean): js.Function1[/* v */ Name, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSchemalize")(shouldDecamelize.asInstanceOf[js.Any], shouldQuote.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Name, String]]
   
-  @JSImport("node-pg-migrate/dist/utils", "createTransformer")
-  @js.native
+  @scala.inline
   def createTransformer(literal: Literal): js.Function2[
     /* s */ String, 
     /* d */ js.UndefOr[
@@ -59,50 +57,45 @@ object utilsMod {
       ]
     ], 
     String
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(literal.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* s */ String, 
+    /* d */ js.UndefOr[
+      StringDictionary[
+        String | Double | Boolean | PgLiteral | PublicPartPgLiteral | js.Array[Value] | typings.nodePgMigrate.anon.Name | Null
+      ]
+    ], 
+    String
+  ]]
   
-  @JSImport("node-pg-migrate/dist/utils", "escapeValue")
-  @js.native
-  def escapeValue(`val`: Value): String | Double = js.native
+  @scala.inline
+  def escapeValue(`val`: Value): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
-  @JSImport("node-pg-migrate/dist/utils", "formatLines")
-  @js.native
-  def formatLines(lines: js.Array[String]): String = js.native
-  @JSImport("node-pg-migrate/dist/utils", "formatLines")
-  @js.native
-  def formatLines(lines: js.Array[String], replace: js.UndefOr[scala.Nothing], separator: String): String = js.native
-  @JSImport("node-pg-migrate/dist/utils", "formatLines")
-  @js.native
-  def formatLines(lines: js.Array[String], replace: String): String = js.native
-  @JSImport("node-pg-migrate/dist/utils", "formatLines")
-  @js.native
-  def formatLines(lines: js.Array[String], replace: String, separator: String): String = js.native
+  @scala.inline
+  def formatLines(lines: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatLines(lines: js.Array[String], replace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatLines(lines: js.Array[String], replace: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatLines(lines: js.Array[String], replace: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-pg-migrate/dist/utils", "formatParams")
-  @js.native
-  def formatParams(params: js.UndefOr[scala.Nothing], mOptions: MigrationOptions): String = js.native
-  @JSImport("node-pg-migrate/dist/utils", "formatParams")
-  @js.native
-  def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = js.native
+  @scala.inline
+  def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatParams(params: Unit, mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-pg-migrate/dist/utils", "getMigrationTableSchema")
-  @js.native
-  def getMigrationTableSchema(options: RunnerOption): String = js.native
+  @scala.inline
+  def getMigrationTableSchema(options: RunnerOption): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMigrationTableSchema")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-pg-migrate/dist/utils", "getSchemas")
-  @js.native
-  def getSchemas(): js.Array[String] = js.native
-  @JSImport("node-pg-migrate/dist/utils", "getSchemas")
-  @js.native
-  def getSchemas(schema: String): js.Array[String] = js.native
-  @JSImport("node-pg-migrate/dist/utils", "getSchemas")
-  @js.native
-  def getSchemas(schema: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def getSchemas(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getSchemas(schema: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getSchemas(schema: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("node-pg-migrate/dist/utils", "makeComment")
-  @js.native
-  def makeComment(`object`: String, name: String): String = js.native
-  @JSImport("node-pg-migrate/dist/utils", "makeComment")
-  @js.native
-  def makeComment(`object`: String, name: String, text: String): String = js.native
+  @scala.inline
+  def makeComment(`object`: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def makeComment(`object`: String, name: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
 }

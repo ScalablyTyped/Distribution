@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Dimensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BoxGraphics")
@@ -13,7 +12,7 @@ class BoxGraphics () extends StObject {
   
   def clone(result: BoxGraphics): BoxGraphics = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var dimensions: Property = js.native
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
   */
-@js.native
 trait PlusRuntimeApplicationInf extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusRuntimeApplicationInf extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * 调用程序的参数
@@ -27,7 +25,7 @@ trait PlusRuntimeApplicationInf extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 新任务模式标记
@@ -39,7 +37,7 @@ trait PlusRuntimeApplicationInf extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var newTask: js.UndefOr[Boolean] = js.native
+  var newTask: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 第三方程序包名
@@ -47,7 +45,7 @@ trait PlusRuntimeApplicationInf extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var pname: js.UndefOr[String] = js.native
+  var pname: js.UndefOr[String] = js.undefined
 }
 object PlusRuntimeApplicationInf {
   

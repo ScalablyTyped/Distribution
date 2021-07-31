@@ -3,20 +3,18 @@ package typings.reactNavigationRouters.anon
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.drawer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var `type`: drawer = js.native
+  var `type`: drawer
 }
 object `0` {
   
   @scala.inline
-  def apply(`type`: drawer): `0` = {
+  def apply(): `0` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drawer")
     __obj.asInstanceOf[`0`]
   }
   

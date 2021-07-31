@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TEX2jaxPreprocessor extends StObject {
   
   /*This value determines whether tex2jax requires braces to be balanced within math delimiters (which allows for
@@ -15,7 +13,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * will be properly handled as a single expression. When false, it would be interpreted as two searpate
     * expressions, each with improperly balanced braces.
     */
-  var balanceBraces: js.UndefOr[Boolean] = js.native
+  var balanceBraces: js.UndefOr[Boolean] = js.undefined
   
   /*Array of pairs of strings that are to be used as delimiters for displayed equations. The first in each pair is
     * the initial delimiter and the second is the terminal delimiter. You can have as many pairs as you want.
@@ -24,7 +22,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags, as
     * your math delimiters.
     */
-  var displayMath: js.UndefOr[js.Any] = js.native
+  var displayMath: js.UndefOr[js.Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should not be processed by tex2jax (other than to
     * look for the processClass pattern below). Note that this is a regular expression, and so you need to be sure
@@ -34,7 +32,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * line character (|). For instance, with ignoreClass: "class1|class2" any element assigned a class of either
     * class1 or class2 will be skipped.
     */
-  var ignoreClass: js.UndefOr[String] = js.native
+  var ignoreClass: js.UndefOr[String] = js.undefined
   
   /*Array of pairs of strings that are to be used as in-line math delimiters. The first in each pair is the
     * initial delimiter and the second is the terminal delimiter. You can have as many pairs as you want. For
@@ -49,7 +47,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags, as
     * your math delimiters.
     */
-  var inlineMath: js.UndefOr[js.Any] = js.native
+  var inlineMath: js.UndefOr[js.Any] = js.undefined
   
   /*This controls whether tex2jax inserts MathJax_Preview spans to make a preview available, and what preview to
     * use, when it locates in-line or display mathematics in the page. The default is "TeX", which means use the TeX
@@ -62,7 +60,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.native
+  var preview: js.UndefOr[js.Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should be processed by tex2jax. This is used to
     * restart processing within tags that have been marked as ignored via the ignoreClass or to cause a tag that
@@ -72,26 +70,26 @@ trait TEX2jaxPreprocessor extends StObject {
     * with class="class1 class2 class3" but not class="myclass2". Note that you can assign several classes by
     * separating them by the vertical line character (|). For instance, with processClass: "class1|class2" any
     * element assigned a class of either class1 or class2 will have its contents processed.*/
-  var processClass: js.UndefOr[String] = js.native
+  var processClass: js.UndefOr[String] = js.undefined
   
   /*When true, tex2jax looks not only for the in-line and display math delimiters, but also for LaTeX environments
     * (\begin{something}...\end{something}) and marks them for processing by MathJax. When false, LaTeX environments
     * will not be processed outside of math mode.
     */
-  var processEnvironments: js.UndefOr[Boolean] = js.native
+  var processEnvironments: js.UndefOr[Boolean] = js.undefined
   
   /*When set to true, you may use \$ to represent a literal dollar sign, rather than using it as a math delimiter.
     * When false, \$ will not be altered, and the dollar sign may be considered part of a math delimiter. Typically
     * this is set to true if you enable the $ ... $ in-line delimiters, so you can type \$ and tex2jax will convert
     * it to a regular dollar sign in the rendered document.
     */
-  var processEscapes: js.UndefOr[Boolean] = js.native
+  var processEscapes: js.UndefOr[Boolean] = js.undefined
   
   /*This array lists the names of the tags whose contents should not be processed by tex2jax (other than to look
     * for ignore/process classes as listed below). You can add to (or remove from) this list to prevent MathJax from
     * processing mathematics in specific contexts.
     */
-  var skipTags: js.UndefOr[js.Array[String]] = js.native
+  var skipTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TEX2jaxPreprocessor {
   

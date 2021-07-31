@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,20 +20,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleText
   * @since OOo 1.1.2
   */
-@js.native
 trait TextSegment extends StObject {
   
   /** Index of the character directly behind the last character of the text segment represented by this structure. The index refers to the enclosing text. */
-  var SegmentEnd: Double = js.native
+  var SegmentEnd: Double
   
   /** Index of the first character of the text segment represented by this structure. The index refers to the enclosing text. */
-  var SegmentStart: Double = js.native
+  var SegmentStart: Double
   
   /**
     * A copy of the text segment of the enclosing text delimited by the text indices {@link TextSegment.SegmentStart} and {@link TextSegment.SegmentEnd} .
     * Modifying it does not alter the enclosing text.
     */
-  var SegmentText: String = js.native
+  var SegmentText: String
 }
 object TextSegment {
   

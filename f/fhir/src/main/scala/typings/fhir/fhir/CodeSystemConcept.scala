@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Concepts in the code system
   */
-@js.native
-trait CodeSystemConcept extends BackboneElement {
+trait CodeSystemConcept
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'definition'.
     */
-  var _definition: js.UndefOr[Element] = js.native
+  var _definition: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Code that identifies concept
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Child Concepts (is-a/contains/categorizes)
     */
-  var concept: js.UndefOr[js.Array[CodeSystemConcept]] = js.native
+  var concept: js.UndefOr[js.Array[CodeSystemConcept]] = js.undefined
   
   /**
     * Formal definition
     */
-  var definition: js.UndefOr[String] = js.native
+  var definition: js.UndefOr[String] = js.undefined
   
   /**
     * Additional representations for the concept
     */
-  var designation: js.UndefOr[js.Array[CodeSystemConceptDesignation]] = js.native
+  var designation: js.UndefOr[js.Array[CodeSystemConceptDesignation]] = js.undefined
   
   /**
     * Text to display to the user
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Property value for the concept
     */
-  var property: js.UndefOr[js.Array[CodeSystemConceptProperty]] = js.native
+  var property: js.UndefOr[js.Array[CodeSystemConceptProperty]] = js.undefined
 }
 object CodeSystemConcept {
   

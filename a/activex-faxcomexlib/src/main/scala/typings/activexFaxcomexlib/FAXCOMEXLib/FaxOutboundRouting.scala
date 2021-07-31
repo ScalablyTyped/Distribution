@@ -2,21 +2,19 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutboundRouting Class */
-@js.native
 trait FaxOutboundRouting extends StObject {
   
   @JSName("FAXCOMEXLib.FaxOutboundRouting_typekey")
-  var FAXCOMEXLibDotFaxOutboundRouting_typekey: FaxOutboundRouting = js.native
+  var FAXCOMEXLibDotFaxOutboundRouting_typekey: FaxOutboundRouting
   
   /** Configuration of the outbound routing groups */
-  def GetGroups(): FaxOutboundRoutingGroups = js.native
+  def GetGroups(): FaxOutboundRoutingGroups
   
   /** Configuration of the outbound routing rules */
-  def GetRules(): FaxOutboundRoutingRules = js.native
+  def GetRules(): FaxOutboundRoutingRules
 }
 object FaxOutboundRouting {
   

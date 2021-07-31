@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -27,9 +26,9 @@ class PageModel () extends PanelModelBase {
   def dragDropFinish(isCancel: Boolean): IElement = js.native
   
   def dragDropMoveTo(destination: ISurveyElement): Boolean = js.native
-  def dragDropMoveTo(destination: ISurveyElement, isBottom: js.UndefOr[scala.Nothing], isEdge: Boolean): Boolean = js.native
   def dragDropMoveTo(destination: ISurveyElement, isBottom: Boolean): Boolean = js.native
   def dragDropMoveTo(destination: ISurveyElement, isBottom: Boolean, isEdge: Boolean): Boolean = js.native
+  def dragDropMoveTo(destination: ISurveyElement, isBottom: Unit, isEdge: Boolean): Boolean = js.native
   
   def dragDropStart(src: IElement, target: IElement): Unit = js.native
   def dragDropStart(src: IElement, target: IElement, nestedPanelDepth: Double): Unit = js.native
@@ -38,9 +37,9 @@ class PageModel () extends PanelModelBase {
     * Returns the list of all panels in the page
     */
   def getPanels(): js.Array[IPanel] = js.native
-  def getPanels(visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): js.Array[IPanel] = js.native
   def getPanels(visibleOnly: Boolean): js.Array[IPanel] = js.native
   def getPanels(visibleOnly: Boolean, includingDesignTime: Boolean): js.Array[IPanel] = js.native
+  def getPanels(visibleOnly: Unit, includingDesignTime: Boolean): js.Array[IPanel] = js.native
   
   val hasShown: Boolean = js.native
   

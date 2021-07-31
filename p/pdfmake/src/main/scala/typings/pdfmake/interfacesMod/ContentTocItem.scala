@@ -2,23 +2,22 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentTocItem
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var text: String | ContentTocItem = js.native
+  var text: String | ContentTocItem
   
-  var tocItem: Boolean | String | js.Array[String] = js.native
+  var tocItem: Boolean | String | js.Array[String]
   
-  var tocMargin: js.UndefOr[Margins] = js.native
+  var tocMargin: js.UndefOr[Margins] = js.undefined
   
-  var tocNumberStyle: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var tocNumberStyle: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   
-  var tocStyle: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var tocStyle: js.UndefOr[String | js.Array[String] | Style] = js.undefined
 }
 object ContentTocItem {
   

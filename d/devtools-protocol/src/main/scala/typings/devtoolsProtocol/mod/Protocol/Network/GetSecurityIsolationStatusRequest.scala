@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSecurityIsolationStatusRequest extends StObject {
   
   /**
     * If no frameId is provided, the status of the target is provided.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
 }
 object GetSecurityIsolationStatusRequest {
   

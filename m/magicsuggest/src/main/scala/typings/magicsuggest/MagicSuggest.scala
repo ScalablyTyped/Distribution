@@ -3,46 +3,44 @@ package typings.magicsuggest
 import typings.jquery.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MagicSuggest {
   
-  @js.native
   trait Configuration extends StObject {
     
     /**
       * Additional config object passed to each $.ajax call
       */
-    var ajaxConfig: js.UndefOr[JQueryAjaxSettings] = js.native
+    var ajaxConfig: js.UndefOr[JQueryAjaxSettings] = js.undefined
     
     /**
       * Restricts or allows the user to add the same entry more than once
       * Defaults to false.
       */
-    var allowDuplicates: js.UndefOr[Boolean] = js.native
+    var allowDuplicates: js.UndefOr[Boolean] = js.undefined
     
     /* ********  CONFIGURATION PROPERTIES ************/
     /**
       * Restricts or allows the user to validate typed entries.
       * Defaults to true.
       */
-    var allowFreeEntries: js.UndefOr[Boolean] = js.native
+    var allowFreeEntries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If a single suggestion comes out, it is preselected.
       */
-    var autoSelect: js.UndefOr[Boolean] = js.native
+    var autoSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function triggered just before the ajax request is sent, similar to jQuery
       */
-    var beforeSend: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeSend: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A custom CSS class to apply to the field's underlying element.
       */
-    var cls: js.UndefOr[String] = js.native
+    var cls: js.UndefOr[String] = js.undefined
     
     /**
       * JSON Data source used to populate the combo box. 3 options are available here:
@@ -68,280 +66,280 @@ object MagicSuggest {
       *     See the following example:
       *     function (response) { var myjson = [{name: 'test', id: 1}]; response(myjson); return myjson; }
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Additional parameters to the ajax call
       */
-    var dataUrlParams: js.UndefOr[js.Object] = js.native
+    var dataUrlParams: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Start the component in a disabled state.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of JSON object property that defines the disabled behaviour
       */
-    var disabledField: js.UndefOr[String] = js.native
+    var disabledField: js.UndefOr[String] = js.undefined
     
     /**
       * Name of JSON object property displayed in the combo list
       */
-    var displayField: js.UndefOr[String] = js.native
+    var displayField: js.UndefOr[String] = js.undefined
     
     /**
       * Set to false if you only want mouse interaction. In that case the combo will
       * automatically expand on focus.
       */
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically expands combo on focus.
       */
-    var expandOnFocus: js.UndefOr[Boolean] = js.native
+    var expandOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set starting state for combo.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * JSON property by which the list should be grouped
       */
-    var groupBy: js.UndefOr[String] = js.native
+    var groupBy: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to hide the trigger on the right
       */
-    var hideTrigger: js.UndefOr[Boolean] = js.native
+    var hideTrigger: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to highlight search input within displayed suggestions
       */
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom ID for this component
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * A class that is added to the info message appearing on the top-right part of the component
       */
-    var infoMsgCls: js.UndefOr[String] = js.native
+    var infoMsgCls: js.UndefOr[String] = js.undefined
     
     /**
       * Additional parameters passed out to the INPUT tag. Enables usage of AngularJS's custom tags for ex.
       */
-    var inputCfg: js.UndefOr[js.Any] = js.native
+    var inputCfg: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The class that is applied to show that the field is invalid
       */
-    var invalidCls: js.UndefOr[String] = js.native
+    var invalidCls: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to filter data results according to case. Useless if the data is fetched remotely
       */
-    var matchCase: js.UndefOr[Boolean] = js.native
+    var matchCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Once expanded, the combo's height will take as much room as the # of available results.
       *    In case there are too many results displayed, this will fix the drop down height.
       */
-    var maxDropHeight: js.UndefOr[Double] = js.native
+    var maxDropHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines how long the user free entry can be. Set to null for no limit.
       */
-    var maxEntryLength: js.UndefOr[Double] = js.native
+    var maxEntryLength: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that defines the helper text when the max entry length has been surpassed.
       */
-    var maxEntryRenderer: js.UndefOr[js.Function1[/* v */ js.UndefOr[Double], Unit]] = js.native
+    var maxEntryRenderer: js.UndefOr[js.Function1[/* v */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * The maximum number of items the user can select if multiple selection is allowed.
       *    Set to null to remove the limit.
       */
-    var maxSelection: js.UndefOr[Double] = js.native
+    var maxSelection: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that defines the helper text when the max selection amount has been reached. The function has a single
       *    parameter which is the number of selected elements.
       */
-    var maxSelectionRenderer: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.native
+    var maxSelectionRenderer: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.undefined
     
     /**
       * The maximum number of results displayed in the combo drop down at once.
       */
-    var maxSuggestions: js.UndefOr[Double] = js.native
+    var maxSuggestions: js.UndefOr[Double] = js.undefined
     
     /**
       * The method used by the ajax request.
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum number of characters the user must type before the combo expands and offers suggestions.
       */
-    var minChars: js.UndefOr[Double] = js.native
+    var minChars: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that defines the helper text when not enough letters are set. The function has a single
       *    parameter which is the difference between the required amount of letters and the current one.
       */
-    var minCharsRenderer: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.native
+    var minCharsRenderer: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.undefined
     
     /**
       * Whether or not sorting / filtering should be done remotely or locally.
       * Use either 'local' or 'remote'
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * The name used as a form element.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The text displayed when there are no suggestions.
       */
-    var noSuggestionText: js.UndefOr[String] = js.native
+    var noSuggestionText: js.UndefOr[String] = js.undefined
     
     /**
       * The default placeholder text when nothing has been entered
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Allow customization of query parameter
       */
-    var queryParam: js.UndefOr[String] = js.native
+    var queryParam: js.UndefOr[String] = js.undefined
     
     /**
       * A function used to define how the items will be presented in the combo
       */
-    var renderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.native
+    var renderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.undefined
     
     /**
       * Whether or not this field should be required
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to render selection as a delimited string
       */
-    var resultAsString: js.UndefOr[Boolean] = js.native
+    var resultAsString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text delimiter to use in a delimited string.
       */
-    var resultAsStringDelimiter: js.UndefOr[String] = js.native
+    var resultAsStringDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Name of JSON object property that represents the list of suggested objects
       */
-    var resultsField: js.UndefOr[String] = js.native
+    var resultsField: js.UndefOr[String] = js.undefined
     
     /**
       * Auto select the first matching item with multiple items shown
       */
-    var selectFirst: js.UndefOr[Boolean] = js.native
+    var selectFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom CSS class to add to a selected item
       */
-    var selectionCls: js.UndefOr[String] = js.native
+    var selectionCls: js.UndefOr[String] = js.undefined
     
     /**
       * An optional element replacement in which the selection is rendered
       */
-    var selectionContainer: js.UndefOr[JQuery] = js.native
+    var selectionContainer: js.UndefOr[JQuery] = js.undefined
     
     /**
       * Where the selected items will be displayed. Only 'right', 'bottom' and 'inner' are valid values
       */
-    var selectionPosition: js.UndefOr[String] = js.native
+    var selectionPosition: js.UndefOr[String] = js.undefined
     
     /**
       * A function used to define how the items will be presented in the tag list
       */
-    var selectionRenderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.native
+    var selectionRenderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.undefined
     
     /**
       * Set to true to stack the selectioned items when positioned on the bottom
       *    Requires the selectionPosition to be set to 'bottom'
       */
-    var selectionStacked: js.UndefOr[Boolean] = js.native
+    var selectionStacked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Direction used for sorting. Only 'asc' and 'desc' are valid values
       */
-    var sortDir: js.UndefOr[String] = js.native
+    var sortDir: js.UndefOr[String] = js.undefined
     
     /**
       * name of JSON object property for local result sorting.
       *    Leave null if you do not wish the results to be ordered or if they are already ordered remotely.
       */
-    var sortOrder: js.UndefOr[String] = js.native
+    var sortOrder: js.UndefOr[String] = js.undefined
     
     /**
       * If set to boolean; suggestions will have to start by user input (and not simply contain it as a substring)
       */
-    var strictSuggest: js.UndefOr[Boolean] = js.native
+    var strictSuggest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom style added to the component container.
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /**
       * If set to boolean; the combo will expand / collapse when clicked upon
       */
-    var toggleOnClick: js.UndefOr[Boolean] = js.native
+    var toggleOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Amount (in ms) between keyboard registers.
       */
-    var typeDelay: js.UndefOr[Double] = js.native
+    var typeDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to boolean; using comma will validate the user's choice
       */
-    var useCommaKey: js.UndefOr[Boolean] = js.native
+    var useCommaKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to boolean; tab won't blur the component but will be registered as the ENTER key
       */
-    var useTabKey: js.UndefOr[Boolean] = js.native
+    var useTabKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether or not the results will be displayed with a zebra table style
       */
-    var useZebraStyle: js.UndefOr[Boolean] = js.native
+    var useZebraStyle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * initial value for the field
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
     /**
       * name of JSON object property that represents its underlying value
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
     
     /**
       * regular expression to validate the values against
       */
-    var vregex: js.UndefOr[js.Any] = js.native
+    var vregex: js.UndefOr[js.Any] = js.undefined
     
     /**
       * type to validate against
       */
-    var vtype: js.UndefOr[js.Any] = js.native
+    var vtype: js.UndefOr[js.Any] = js.undefined
   }
   object Configuration {
     
@@ -724,8 +722,8 @@ object MagicSuggest {
       * @param items - json object or array of json objects
       * @param isSilent - (optional) set to true to suppress 'selectionchange' event from being triggered
       */
-    def addToSelection(objs: js.Array[_]): Unit = js.native
-    def addToSelection(objs: js.Array[_], isSilent: Boolean): Unit = js.native
+    def addToSelection(objs: js.Array[js.Any]): Unit = js.native
+    def addToSelection(objs: js.Array[js.Any], isSilent: Boolean): Unit = js.native
     
     /**
       * Clears the current selection
@@ -778,12 +776,12 @@ object MagicSuggest {
       * Retrieve an array of selected json objects
       * @return {Array}
       */
-    def getSelection(): js.Array[_] = js.native
+    def getSelection(): js.Array[js.Any] = js.native
     
     /**
       * Retrieve an array of selected values
       */
-    def getValue(): js.Array[_] = js.native
+    def getValue(): js.Array[js.Any] = js.native
     
     /**
       * Retrieve component enabled status
@@ -827,13 +825,13 @@ object MagicSuggest {
       * @param items
       * @param isSilent - (optional)
       */
-    def setSelection(items: js.Array[_]): Unit = js.native
-    def setSelection(items: js.Array[_], isSilet: Boolean): Unit = js.native
+    def setSelection(items: js.Array[js.Any]): Unit = js.native
+    def setSelection(items: js.Array[js.Any], isSilet: Boolean): Unit = js.native
     
     /**
       * Sets a value for the combo box. Value must be an array of values with data type matching valueField one.
       * @param data
       */
-    def setValue(values: js.Array[_]): Unit = js.native
+    def setValue(values: js.Array[js.Any]): Unit = js.native
   }
 }

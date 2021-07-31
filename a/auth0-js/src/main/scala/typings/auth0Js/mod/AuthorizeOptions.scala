@@ -5,49 +5,47 @@ import typings.auth0Js.auth0JsStrings.signUp
 import typings.auth0Js.auth0JsStrings.signup_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeOptions extends StObject {
   
-  var accessType: js.UndefOr[String] = js.native
+  var accessType: js.UndefOr[String] = js.undefined
   
-  var appState: js.UndefOr[js.Any] = js.native
+  var appState: js.UndefOr[js.Any] = js.undefined
   
-  var approvalPrompt: js.UndefOr[String] = js.native
+  var approvalPrompt: js.UndefOr[String] = js.undefined
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var clientID: js.UndefOr[String] = js.native
+  var clientID: js.UndefOr[String] = js.undefined
   
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
-  var connection_scope: js.UndefOr[String | js.Array[String]] = js.native
+  var connection_scope: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var login_hint: js.UndefOr[String] = js.native
+  var login_hint: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[login | signUp] = js.native
+  var mode: js.UndefOr[login | signUp] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
   
-  var responseMode: js.UndefOr[String] = js.native
+  var responseMode: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var screen_hint: js.UndefOr[signup_] = js.native
+  var screen_hint: js.UndefOr[signup_] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object AuthorizeOptions {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client BeforeExportRequest events.
   */
-@js.native
-trait MVCxClientBeforeExportRequestEventArgs extends ASPxClientEventArgs {
+trait MVCxClientBeforeExportRequestEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
-  var customArgs: js.Any = js.native
+  var customArgs: js.Any
 }
 object MVCxClientBeforeExportRequestEventArgs {
   

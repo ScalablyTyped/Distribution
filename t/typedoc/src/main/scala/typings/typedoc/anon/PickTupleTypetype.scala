@@ -4,14 +4,12 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<typedoc.typedoc/dist/lib/serialization/schema.TupleType, 'type'> */
-@js.native
 trait PickTupleTypetype extends StObject {
   
-  var `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String) = js.native
+  var `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)
 }
 object PickTupleTypetype {
   

@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAlertsFeedbackList extends StandardParameters {
+trait ParamsResourceAlertsFeedbackList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Required. The alert identifier. The "-" wildcard could be used to
     * represent all alerts.
     */
-  var alertId: js.UndefOr[String] = js.native
+  var alertId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional. The unique identifier of the G Suite organization account of
     * the customer the alert feedback are associated with. Inferred from the
     * caller identity if not provided.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A query string for filtering alert feedback results. For more
@@ -36,7 +36,7 @@ trait ParamsResourceAlertsFeedbackList extends StandardParameters {
     * and [Supported query filter
     * fields](/admin-sdk/alertcenter/reference/filter-fields#alerts.feedback.list).
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAlertsFeedbackList {
   

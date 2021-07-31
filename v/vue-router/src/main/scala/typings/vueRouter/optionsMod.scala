@@ -7,21 +7,19 @@ import typings.vueRouter.routerMod.NavigationGuardNext
 import typings.vueRouter.routerMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait ComponentOptions[V /* <: Vue */] extends StObject {
     
-    var beforeRouteEnter: js.UndefOr[NavigationGuard[V]] = js.native
+    var beforeRouteEnter: js.UndefOr[NavigationGuard[V]] = js.undefined
     
-    var beforeRouteLeave: js.UndefOr[NavigationGuard[V]] = js.native
+    var beforeRouteLeave: js.UndefOr[NavigationGuard[V]] = js.undefined
     
-    var beforeRouteUpdate: js.UndefOr[NavigationGuard[V]] = js.native
+    var beforeRouteUpdate: js.UndefOr[NavigationGuard[V]] = js.undefined
     
-    var router: js.UndefOr[default] = js.native
+    var router: js.UndefOr[default] = js.undefined
   }
   object ComponentOptions {
     
@@ -32,7 +30,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[_], V /* <: Vue */] (val x: Self with ComponentOptions[V]) extends AnyVal {
+    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
       
       @scala.inline
       def setBeforeRouteEnter(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteEnter", js.Any.fromFunction3(value))

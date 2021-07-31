@@ -8,11 +8,12 @@ import typings.mithril.anon.Url
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Static extends Hyperscript {
+trait Static
+  extends StObject
+     with Hyperscript {
   
   /** Build path name */
   def buildPathname(template: String): String = js.native
@@ -28,7 +29,7 @@ trait Static extends Hyperscript {
   var jsonp_Original: Fn0 = js.native
   
   def mount(element: Element, component: Null): Unit = js.native
-  def mount(element: Element, component: ComponentTypes[_, _]): Unit = js.native
+  def mount(element: Element, component: ComponentTypes[js.Any, js.Any]): Unit = js.native
   @JSName("mount")
   var mount_Original: FnCallElementComponent = js.native
   
@@ -47,7 +48,7 @@ trait Static extends Hyperscript {
   @JSName("render")
   var render_Original: js.Function2[/* el */ Element, /* vnodes */ Children, Unit] = js.native
   
-  def request[T](options: RequestOptions[T] with Url): js.Promise[T] = js.native
+  def request[T](options: RequestOptions[T] & Url): js.Promise[T] = js.native
   def request[T](url: String): js.Promise[T] = js.native
   def request[T](url: String, options: RequestOptions[T]): js.Promise[T] = js.native
   @JSName("request")

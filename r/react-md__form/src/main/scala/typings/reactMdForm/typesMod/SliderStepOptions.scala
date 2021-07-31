@@ -2,18 +2,18 @@ package typings.reactMdForm.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderStepOptions extends SliderRangeOptions {
+trait SliderStepOptions
+  extends StObject
+     with SliderRangeOptions {
   
   /**
     * A positive number representing the value to "jump" while incrementing or
     * decrementing the slider's value. This should normally stay as the default
     * value of `1`, but can also be decimal values if needed.
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object SliderStepOptions {
   

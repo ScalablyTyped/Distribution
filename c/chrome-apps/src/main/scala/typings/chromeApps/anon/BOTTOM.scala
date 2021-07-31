@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.right_
 import typings.chromeApps.chromeAppsStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BOTTOM extends StObject {
   
-  var BOTTOM: bottom_ = js.native
+  var BOTTOM: bottom_
   
-  var LEFT: left_ = js.native
+  var LEFT: left_
   
-  var RIGHT: right_ = js.native
+  var RIGHT: right_
   
-  var TOP: top_ = js.native
+  var TOP: top_
 }
 object BOTTOM {
   
   @scala.inline
-  def apply(BOTTOM: bottom_, LEFT: left_, RIGHT: right_, TOP: top_): BOTTOM = {
-    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any])
+  def apply(): BOTTOM = {
+    val __obj = js.Dynamic.literal(BOTTOM = "bottom", LEFT = "left", RIGHT = "right", TOP = "top")
     __obj.asInstanceOf[BOTTOM]
   }
   

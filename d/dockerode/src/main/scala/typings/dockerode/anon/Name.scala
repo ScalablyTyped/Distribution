@@ -3,15 +3,13 @@ package typings.dockerode.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var Name: String = js.native
+  var Name: String
   
-  var Options: StringDictionary[String] = js.native
+  var Options: StringDictionary[String]
 }
 object Name {
   

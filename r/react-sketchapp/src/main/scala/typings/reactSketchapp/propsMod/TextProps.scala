@@ -2,15 +2,15 @@ package typings.reactSketchapp.propsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextProps extends TextSpecificProps {
+trait TextProps
+  extends StObject
+     with TextSpecificProps {
   
-  var dx: js.UndefOr[NumberArrayProp] = js.native
+  var dx: js.UndefOr[NumberArrayProp] = js.undefined
   
-  var dy: js.UndefOr[NumberArrayProp] = js.native
+  var dy: js.UndefOr[NumberArrayProp] = js.undefined
 }
 object TextProps {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IotEventsAction extends StObject {
   
   /**
     * The name of the AWS IoT Events input where the data is sent.
     */
-  var inputName: InputName = js.native
+  var inputName: InputName
   
   /**
     * You can configure the action payload when you send a message to an AWS IoT Events input.
     */
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
 }
 object IotEventsAction {
   

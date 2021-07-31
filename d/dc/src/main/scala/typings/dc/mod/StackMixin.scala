@@ -2,7 +2,6 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait StackMixin[T] extends StObject {
   def showStack(name: String): Unit = js.native
   
   def stack(group: js.Any): Unit = js.native
-  def stack(group: js.Any, name: js.UndefOr[scala.Nothing], accessor: Accessor[_, _]): Unit = js.native
   def stack(group: js.Any, name: String): Unit = js.native
-  def stack(group: js.Any, name: String, accessor: Accessor[_, _]): Unit = js.native
+  def stack(group: js.Any, name: String, accessor: Accessor[js.Any, js.Any]): Unit = js.native
+  def stack(group: js.Any, name: Unit, accessor: Accessor[js.Any, js.Any]): Unit = js.native
   
   // title(stackName: string, titleFn: Accessor<any, T>);
   def stackLayout(): js.Any = js.native
@@ -31,7 +30,7 @@ trait StackMixin[T] extends StObject {
   // title(stackName: string, titleFn: Accessor<any, T>);
   @JSName("stackLayout")
   var stackLayout_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ js.Any, 
     T
   ] = js.native
 }

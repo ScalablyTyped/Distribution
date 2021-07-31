@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminUpdateSelfHostedRunnerGr
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint
   
-  var request: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions = js.native
+  var request: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData]
 }
 object ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint {
   

@@ -3,31 +3,29 @@ package typings.canAutoplay
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("can-autoplay", "audio")
+  @JSImport("can-autoplay", JSImport.Namespace)
   @js.native
-  def audio(): js.Promise[CheckResponse] = js.native
-  @JSImport("can-autoplay", "audio")
-  @js.native
-  def audio(options: Options): js.Promise[CheckResponse] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("can-autoplay", "video")
-  @js.native
-  def video(): js.Promise[CheckResponse] = js.native
-  @JSImport("can-autoplay", "video")
-  @js.native
-  def video(options: Options): js.Promise[CheckResponse] = js.native
+  @scala.inline
+  def audio(): js.Promise[CheckResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")().asInstanceOf[js.Promise[CheckResponse]]
+  @scala.inline
+  def audio(options: Options): js.Promise[CheckResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CheckResponse]]
   
-  @js.native
+  @scala.inline
+  def video(): js.Promise[CheckResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("video")().asInstanceOf[js.Promise[CheckResponse]]
+  @scala.inline
+  def video(options: Options): js.Promise[CheckResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("video")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CheckResponse]]
+  
   trait CheckResponse extends StObject {
     
-    var error: Error = js.native
+    var error: Error
     
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object CheckResponse {
     
@@ -48,14 +46,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var muted: js.UndefOr[Boolean] = js.native
+    var muted: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

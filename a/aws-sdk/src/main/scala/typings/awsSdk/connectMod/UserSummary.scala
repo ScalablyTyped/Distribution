@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user account.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the user account.
     */
-  var Id: js.UndefOr[UserId] = js.native
+  var Id: js.UndefOr[UserId] = js.undefined
   
   /**
     * The Amazon Connect user name of the user account.
     */
-  var Username: js.UndefOr[AgentUsername] = js.native
+  var Username: js.UndefOr[AgentUsername] = js.undefined
 }
 object UserSummary {
   

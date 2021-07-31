@@ -7,10 +7,8 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelImport extends StObject {
   
   /**
@@ -18,80 +16,80 @@ trait CancelImport extends StObject {
     */
   def cancelImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   def cancelImport(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/import']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Stop an import for a repository.
     */
   @JSName("cancelImport")
-  var cancelImport_Original: `210` = js.native
+  var cancelImport_Original: `210`
   
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://developer.github.com/v3/migrations/users/#list-user-migrations) and [Get a user migration status](https://developer.github.com/v3/migrations/users/#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
     */
   def deleteArchiveForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   def deleteArchiveForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/archive']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://developer.github.com/v3/migrations/users/#list-user-migrations) and [Get a user migration status](https://developer.github.com/v3/migrations/users/#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
-  var deleteArchiveForAuthenticatedUser_Original: `211` = js.native
+  var deleteArchiveForAuthenticatedUser_Original: `211`
   
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   def deleteArchiveForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   def deleteArchiveForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/archive']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   @JSName("deleteArchiveForOrg")
-  var deleteArchiveForOrg_Original: `212` = js.native
+  var deleteArchiveForOrg_Original: `212`
   
   /**
     * Fetches the URL to a migration archive.
     */
   def downloadArchiveForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   def downloadArchiveForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/archive']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Fetches the URL to a migration archive.
     */
   @JSName("downloadArchiveForOrg")
-  var downloadArchiveForOrg_Original: `213` = js.native
+  var downloadArchiveForOrg_Original: `213`
   
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
@@ -118,15 +116,15 @@ trait CancelImport extends StObject {
     */
   def getArchiveForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   def getArchiveForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/archive']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/archive']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -151,7 +149,7 @@ trait CancelImport extends StObject {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   @JSName("getArchiveForAuthenticatedUser")
-  var getArchiveForAuthenticatedUser_Original: `214` = js.native
+  var getArchiveForAuthenticatedUser_Original: `214`
   
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
@@ -160,22 +158,22 @@ trait CancelImport extends StObject {
     */
   def getCommitAuthors(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/authors']['response'] */ js.Any
-  ] = js.native
+  ]
   def getCommitAuthors(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/authors']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/authors']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
     * This endpoint and the [Map a commit author](https://developer.github.com/v3/migrations/source_imports/#map-a-commit-author) endpoint allow you to provide correct Git author information.
     */
   @JSName("getCommitAuthors")
-  var getCommitAuthors_Original: `215` = js.native
+  var getCommitAuthors_Original: `215`
   
   /**
     * View the progress of an import.
@@ -215,15 +213,15 @@ trait CancelImport extends StObject {
     */
   def getImportStatus(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   def getImportStatus(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * View the progress of an import.
     *
@@ -261,27 +259,27 @@ trait CancelImport extends StObject {
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
   @JSName("getImportStatus")
-  var getImportStatus_Original: `216` = js.native
+  var getImportStatus_Original: `216`
   
   /**
     * List files larger than 100MB found during the import
     */
   def getLargeFiles(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/large_files']['response'] */ js.Any
-  ] = js.native
+  ]
   def getLargeFiles(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/large_files']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/import/large_files']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * List files larger than 100MB found during the import
     */
   @JSName("getLargeFiles")
-  var getLargeFiles_Original: `217` = js.native
+  var getLargeFiles_Original: `217`
   
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
@@ -295,15 +293,15 @@ trait CancelImport extends StObject {
     */
   def getStatusForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def getStatusForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
     *
@@ -315,7 +313,7 @@ trait CancelImport extends StObject {
     * Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
     */
   @JSName("getStatusForAuthenticatedUser")
-  var getStatusForAuthenticatedUser_Original: `218` = js.native
+  var getStatusForAuthenticatedUser_Original: `218`
   
   /**
     * Fetches the status of a migration.
@@ -329,15 +327,15 @@ trait CancelImport extends StObject {
     */
   def getStatusForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def getStatusForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Fetches the status of a migration.
     *
@@ -349,227 +347,227 @@ trait CancelImport extends StObject {
     * *   `failed`, which means the migration failed.
     */
   @JSName("getStatusForOrg")
-  var getStatusForOrg_Original: `219` = js.native
+  var getStatusForOrg_Original: `219`
   
   /**
     * Lists all migrations a user has started.
     */
   def listForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   def listForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Lists all migrations a user has started.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `220` = js.native
+  var listForAuthenticatedUser_Original: `220`
   
   /**
     * Lists the most recent migrations.
     */
   def listForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   def listForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Lists the most recent migrations.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `221` = js.native
+  var listForOrg_Original: `221`
   
   /**
     * List all the repositories for this organization migration.
     */
   def listReposForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   def listReposForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/repositories']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/migrations/:migration_id/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * List all the repositories for this organization migration.
     */
   @JSName("listReposForOrg")
-  var listReposForOrg_Original: `222` = js.native
+  var listReposForOrg_Original: `222`
   
   /**
     * Lists all the repositories for this user migration.
     */
   def listReposForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   def listReposForUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/repositories']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/:migration_id/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Lists all the repositories for this user migration.
     */
   @JSName("listReposForUser")
-  var listReposForUser_Original: `223` = js.native
+  var listReposForUser_Original: `223`
   
   /**
     * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
     */
   def mapCommitAuthor(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/authors/:author_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def mapCommitAuthor(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/authors/:author_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/authors/:author_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
     */
   @JSName("mapCommitAuthor")
-  var mapCommitAuthor_Original: `224` = js.native
+  var mapCommitAuthor_Original: `224`
   
   /**
     * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://docs.github.com/articles/versioning-large-files/).
     */
   def setLfsPreference(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/lfs']['response'] */ js.Any
-  ] = js.native
+  ]
   def setLfsPreference(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/lfs']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import/lfs']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://docs.github.com/articles/versioning-large-files/).
     */
   @JSName("setLfsPreference")
-  var setLfsPreference_Original: `225` = js.native
+  var setLfsPreference_Original: `225`
   
   /**
     * Initiates the generation of a user migration archive.
     */
   def startForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /user/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   def startForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /user/migrations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /user/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Initiates the generation of a user migration archive.
     */
   @JSName("startForAuthenticatedUser")
-  var startForAuthenticatedUser_Original: `226` = js.native
+  var startForAuthenticatedUser_Original: `226`
   
   /**
     * Initiates the generation of a migration archive.
     */
   def startForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   def startForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/migrations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/migrations']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Initiates the generation of a migration archive.
     */
   @JSName("startForOrg")
-  var startForOrg_Original: `227` = js.native
+  var startForOrg_Original: `227`
   
   /**
     * Start a source import to a GitHub repository using GitHub Importer.
     */
   def startImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   def startImport(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/import']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Start a source import to a GitHub repository using GitHub Importer.
     */
   @JSName("startImport")
-  var startImport_Original: `228` = js.native
+  var startImport_Original: `228`
   
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   def unlockRepoForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/repos/:repo_name/lock']['response'] */ js.Any
-  ] = js.native
+  ]
   def unlockRepoForAuthenticatedUser(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/repos/:repo_name/lock']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/:migration_id/repos/:repo_name/lock']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
-  var unlockRepoForAuthenticatedUser_Original: `229` = js.native
+  var unlockRepoForAuthenticatedUser_Original: `229`
   
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   def unlockRepoForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock']['response'] */ js.Any
-  ] = js.native
+  ]
   def unlockRepoForOrg(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   @JSName("unlockRepoForOrg")
-  var unlockRepoForOrg_Original: `230` = js.native
+  var unlockRepoForOrg_Original: `230`
   
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API
@@ -577,19 +575,120 @@ trait CancelImport extends StObject {
     */
   def updateImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   def updateImport(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/import']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API
     * request. If no parameters are provided, the import will be restarted.
     */
   @JSName("updateImport")
-  var updateImport_Original: `231` = js.native
+  var updateImport_Original: `231`
+}
+object CancelImport {
+  
+  @scala.inline
+  def apply(
+    cancelImport: `210`,
+    deleteArchiveForAuthenticatedUser: `211`,
+    deleteArchiveForOrg: `212`,
+    downloadArchiveForOrg: `213`,
+    getArchiveForAuthenticatedUser: `214`,
+    getCommitAuthors: `215`,
+    getImportStatus: `216`,
+    getLargeFiles: `217`,
+    getStatusForAuthenticatedUser: `218`,
+    getStatusForOrg: `219`,
+    listForAuthenticatedUser: `220`,
+    listForOrg: `221`,
+    listReposForOrg: `222`,
+    listReposForUser: `223`,
+    mapCommitAuthor: `224`,
+    setLfsPreference: `225`,
+    startForAuthenticatedUser: `226`,
+    startForOrg: `227`,
+    startImport: `228`,
+    unlockRepoForAuthenticatedUser: `229`,
+    unlockRepoForOrg: `230`,
+    updateImport: `231`
+  ): CancelImport = {
+    val __obj = js.Dynamic.literal(cancelImport = cancelImport.asInstanceOf[js.Any], deleteArchiveForAuthenticatedUser = deleteArchiveForAuthenticatedUser.asInstanceOf[js.Any], deleteArchiveForOrg = deleteArchiveForOrg.asInstanceOf[js.Any], downloadArchiveForOrg = downloadArchiveForOrg.asInstanceOf[js.Any], getArchiveForAuthenticatedUser = getArchiveForAuthenticatedUser.asInstanceOf[js.Any], getCommitAuthors = getCommitAuthors.asInstanceOf[js.Any], getImportStatus = getImportStatus.asInstanceOf[js.Any], getLargeFiles = getLargeFiles.asInstanceOf[js.Any], getStatusForAuthenticatedUser = getStatusForAuthenticatedUser.asInstanceOf[js.Any], getStatusForOrg = getStatusForOrg.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listReposForOrg = listReposForOrg.asInstanceOf[js.Any], listReposForUser = listReposForUser.asInstanceOf[js.Any], mapCommitAuthor = mapCommitAuthor.asInstanceOf[js.Any], setLfsPreference = setLfsPreference.asInstanceOf[js.Any], startForAuthenticatedUser = startForAuthenticatedUser.asInstanceOf[js.Any], startForOrg = startForOrg.asInstanceOf[js.Any], startImport = startImport.asInstanceOf[js.Any], unlockRepoForAuthenticatedUser = unlockRepoForAuthenticatedUser.asInstanceOf[js.Any], unlockRepoForOrg = unlockRepoForOrg.asInstanceOf[js.Any], updateImport = updateImport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CancelImport]
+  }
+  
+  @scala.inline
+  implicit class CancelImportMutableBuilder[Self <: CancelImport] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCancelImport(value: `210`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeleteArchiveForAuthenticatedUser(value: `211`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeleteArchiveForOrg(value: `212`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDownloadArchiveForOrg(value: `213`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetArchiveForAuthenticatedUser(value: `214`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetCommitAuthors(value: `215`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetImportStatus(value: `216`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetLargeFiles(value: `217`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetStatusForAuthenticatedUser(value: `218`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetStatusForOrg(value: `219`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListForAuthenticatedUser(value: `220`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListForOrg(value: `221`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListReposForOrg(value: `222`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListReposForUser(value: `223`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMapCommitAuthor(value: `224`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSetLfsPreference(value: `225`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStartForAuthenticatedUser(value: `226`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStartForOrg(value: `227`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStartImport(value: `228`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUnlockRepoForAuthenticatedUser(value: `229`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUnlockRepoForOrg(value: `230`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateImport(value: `231`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
+  }
 }

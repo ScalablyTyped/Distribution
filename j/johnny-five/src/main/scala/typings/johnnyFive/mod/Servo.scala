@@ -3,7 +3,6 @@ package typings.johnnyFive.mod
 import typings.johnnyFive.johnnyFiveStrings.moveColoncomplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Servo")
@@ -19,7 +18,7 @@ class Servo protected () extends StObject {
   
   def cw(speed: Double): Unit = js.native
   
-  var history: js.Array[_] = js.native
+  var history: js.Array[js.Any] = js.native
   
   def home(): Unit = js.native
   
@@ -56,9 +55,9 @@ class Servo protected () extends StObject {
   def sweep(range: js.Array[Double]): Unit = js.native
   
   def to(degrees: Double): Unit = js.native
-  def to(degrees: Double, ms: js.UndefOr[scala.Nothing], rage: Double): Unit = js.native
   def to(degrees: Double, ms: Double): Unit = js.native
   def to(degrees: Double, ms: Double, rage: Double): Unit = js.native
+  def to(degrees: Double, ms: Unit, rage: Double): Unit = js.native
   
   var value: Double = js.native
 }

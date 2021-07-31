@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Locations$Transferconfigs$Runs$Transferlogs")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsTransferconfigsRunsTransferlogs protected () exte
     */
   def list(): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferLogsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsTransferconfigsRunsTransferlogsList): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsTransferconfigsRunsTransferlogsList,

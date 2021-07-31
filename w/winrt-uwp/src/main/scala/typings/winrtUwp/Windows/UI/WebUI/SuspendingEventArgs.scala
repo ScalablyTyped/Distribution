@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for an app suspension event. */
-@js.native
 trait SuspendingEventArgs extends StObject {
   
   /** Gets the app suspension operation. */
-  var suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation = js.native
+  var suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation
 }
 object SuspendingEventArgs {
   

@@ -9,11 +9,10 @@ import typings.vegaLite.vegaLiteStrings.time
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined vega-lite.vega-lite/build/src/channeldef.DatumDef<F, vega-lite.vega-lite/build/src/channeldef.PrimitiveValue | vega-lite.vega-lite/build/src/datetime.DateTime | vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> & vega-lite.vega-lite/build/src/guide.FormatMixins */
-@js.native
+/* Inlined parent vega-lite.vega-lite/build/src/channeldef.DatumDef<F, vega-lite.vega-lite/build/src/channeldef.PrimitiveValue | vega-lite.vega-lite/build/src/datetime.DateTime | vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> */
+/* Inlined parent vega-lite.vega-lite/build/src/guide.FormatMixins */
 trait StringDatumDef[F /* <: Field */] extends StObject {
   
   /**
@@ -24,12 +23,12 @@ trait StringDatumDef[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.native
+  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.undefined
   
   /**
     * When used with the default `"number"` and `"time"` format type, the text formatting pattern for labels of guides (axes, legends, headers) and text marks.
@@ -43,7 +42,7 @@ trait StringDatumDef[F /* <: Field */] extends StObject {
     *
     * __Default value:__  Derived from [numberFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for number format and from [timeFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for time format.
     */
-  var format: js.UndefOr[String | Dict[_]] = js.native
+  var format: js.UndefOr[String | Dict[js.Any]] = js.undefined
   
   /**
     * The format type for labels. One of `"number"`, `"time"`, or a [registered custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type).
@@ -52,16 +51,16 @@ trait StringDatumDef[F /* <: Field */] extends StObject {
     * - `"time"` for temporal fields and ordinal and nominal fields with `timeUnit`.
     * - `"number"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.
     */
-  var formatType: js.UndefOr[number | time | String] = js.native
+  var formatType: js.UndefOr[number | time | String] = js.undefined
   
   /**
     * [Vega expression](https://vega.github.io/vega/docs/expressions/) for customizing labels text.
     *
     * __Note:__ The label text and value can be assessed via the `label` and `value` properties of the axis's backing `datum` object.
     */
-  var labelExpr: js.UndefOr[String] = js.native
+  var labelExpr: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object StringDatumDef {
   
@@ -72,7 +71,7 @@ object StringDatumDef {
   }
   
   @scala.inline
-  implicit class StringDatumDefMutableBuilder[Self <: StringDatumDef[_], F /* <: Field */] (val x: Self with StringDatumDef[F]) extends AnyVal {
+  implicit class StringDatumDefMutableBuilder[Self <: StringDatumDef[?], F /* <: Field */] (val x: Self & StringDatumDef[F]) extends AnyVal {
     
     @scala.inline
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
@@ -90,7 +89,7 @@ object StringDatumDef {
     def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
     @scala.inline
-    def setFormat(value: String | Dict[_]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatType(value: number | time | String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])

@@ -7,33 +7,31 @@ import typings.jwplayer.jwplayerStrings.pre
 import typings.jwplayer.jwplayerStrings.vast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdImpressionParam extends StObject {
   
-  var adposition: pre | mid | post = js.native
+  var adposition: pre | mid | post
   
-  var adsystem: String = js.native
+  var adsystem: String
   
-  var adtitle: String = js.native
+  var adtitle: String
   
-  var clickThroughUrl: String = js.native
+  var clickThroughUrl: String
   
-  var client: vast | googima = js.native
+  var client: vast | googima
   
-  var creativetype: String = js.native
+  var creativetype: String
   
-  var linear: String = js.native
+  var linear: String
   
-  var mediafile: js.Any = js.native
+  var mediafile: js.Any
   
-  var tag: String = js.native
+  var tag: String
   
-  var vastversion: Double = js.native
+  var vastversion: Double
   
-  var wrapper: js.Array[_] = js.native
+  var wrapper: js.Array[js.Any]
 }
 object AdImpressionParam {
   
@@ -49,7 +47,7 @@ object AdImpressionParam {
     mediafile: js.Any,
     tag: String,
     vastversion: Double,
-    wrapper: js.Array[_]
+    wrapper: js.Array[js.Any]
   ): AdImpressionParam = {
     val __obj = js.Dynamic.literal(adposition = adposition.asInstanceOf[js.Any], adsystem = adsystem.asInstanceOf[js.Any], adtitle = adtitle.asInstanceOf[js.Any], clickThroughUrl = clickThroughUrl.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], creativetype = creativetype.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], mediafile = mediafile.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], vastversion = vastversion.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdImpressionParam]
@@ -89,7 +87,7 @@ object AdImpressionParam {
     def setVastversion(value: Double): Self = StObject.set(x, "vastversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapper(value: js.Array[_]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    def setWrapper(value: js.Array[js.Any]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWrapperVarargs(value: js.Any*): Self = StObject.set(x, "wrapper", js.Array(value :_*))

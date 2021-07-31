@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object originAccessIdentityMod {
@@ -24,7 +23,7 @@ object originAccessIdentityMod {
       */
     def this(name: String) = this()
     def this(name: String, args: OriginAccessIdentityArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: OriginAccessIdentityArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -67,6 +66,10 @@ object originAccessIdentityMod {
   /* static members */
   object OriginAccessIdentity {
     
+    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OriginAccessIdentity resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -76,35 +79,29 @@ object originAccessIdentityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID]): OriginAccessIdentity = js.native
-    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OriginAccessIdentity = js.native
-    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OriginAccessIdentityState): OriginAccessIdentity = js.native
-    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): OriginAccessIdentity = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OriginAccessIdentityState): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
     
     /**
       * Returns true if the given object is an instance of OriginAccessIdentity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean]
   }
   
-  @js.native
   trait OriginAccessIdentityArgs extends StObject {
     
     /**
       * An optional comment for the origin access identity.
       */
-    val comment: js.UndefOr[Input[String]] = js.native
+    val comment: js.UndefOr[Input[String]] = js.undefined
   }
   object OriginAccessIdentityArgs {
     
@@ -125,45 +122,44 @@ object originAccessIdentityMod {
     }
   }
   
-  @js.native
   trait OriginAccessIdentityState extends StObject {
     
     /**
       * Internal value used by CloudFront to allow future
       * updates to the origin access identity.
       */
-    val callerReference: js.UndefOr[Input[String]] = js.native
+    val callerReference: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A shortcut to the full path for the
       * origin access identity to use in CloudFront, see below.
       */
-    val cloudfrontAccessIdentityPath: js.UndefOr[Input[String]] = js.native
+    val cloudfrontAccessIdentityPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An optional comment for the origin access identity.
       */
-    val comment: js.UndefOr[Input[String]] = js.native
+    val comment: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current version of the origin access identity's information.
       * For example: `E2QWRUHAPOMQZL`.
       */
-    val etag: js.UndefOr[Input[String]] = js.native
+    val etag: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A pre-generated ARN for use in S3 bucket policies (see below).
       * Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
       * E2QWRUHAPOMQZL`.
       */
-    val iamArn: js.UndefOr[Input[String]] = js.native
+    val iamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon S3 canonical user ID for the origin
       * access identity, which you use when giving the origin access identity read
       * permission to an object in Amazon S3.
       */
-    val s3CanonicalUserId: js.UndefOr[Input[String]] = js.native
+    val s3CanonicalUserId: js.UndefOr[Input[String]] = js.undefined
   }
   object OriginAccessIdentityState {
     

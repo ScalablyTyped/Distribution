@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaResponse extends StObject {
   
   /**
     * The name of the registry that contains the schema.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the schema.
     */
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
 }
 object UpdateSchemaResponse {
   

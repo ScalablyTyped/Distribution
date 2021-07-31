@@ -2,13 +2,11 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameExpression extends StObject {
   
-  def createBinding(target: js.Any): Binding = js.native
+  def createBinding(target: js.Any): Binding
 }
 object NameExpression {
   

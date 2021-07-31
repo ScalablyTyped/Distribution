@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DobInformationInput extends StObject {
   
   /**
     * Specifies the recipient's date, month, and year of birth.
     */
-  var dateOfBirth: js.UndefOr[String] = js.native
+  var dateOfBirth: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the display level for the recipient. Valid values are:
@@ -19,12 +17,12 @@ trait DobInformationInput extends StObject {
     * * `Editable`
     * * `DoNotDisplay`
     */
-  var displayLevelCode: js.UndefOr[String] = js.native
+  var displayLevelCode: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value that specifies whether the information must be returned in the response.
     */
-  var receiveInResponse: js.UndefOr[String] = js.native
+  var receiveInResponse: js.UndefOr[String] = js.undefined
 }
 object DobInformationInput {
   

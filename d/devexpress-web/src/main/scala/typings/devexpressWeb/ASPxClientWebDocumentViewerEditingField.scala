@@ -2,23 +2,21 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientWebDocumentViewerEditingField extends StObject {
   
-  var editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any = js.native
+  var editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
   
-  def editorName(): String = js.native
+  def editorName(): String
   
-  def groupID(): String = js.native
+  def groupID(): String
   
-  def id(): String = js.native
+  def id(): String
   
-  def pageIndex(): Double = js.native
+  def pageIndex(): Double
   
-  var readOnly: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var readOnly: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
 }
 object ASPxClientWebDocumentViewerEditingField {
   

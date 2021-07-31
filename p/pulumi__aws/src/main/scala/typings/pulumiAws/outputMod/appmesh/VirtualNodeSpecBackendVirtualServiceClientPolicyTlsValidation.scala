@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation extends StObject {
   
   /**
     * The TLS validation context trust.
     */
-  var trust: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust = js.native
+  var trust: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust
 }
 object VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
   

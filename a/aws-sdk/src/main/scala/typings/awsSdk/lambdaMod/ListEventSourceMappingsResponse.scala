@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEventSourceMappingsResponse extends StObject {
   
   /**
     * A list of event source mappings.
     */
-  var EventSourceMappings: js.UndefOr[EventSourceMappingsList] = js.native
+  var EventSourceMappings: js.UndefOr[EventSourceMappingsList] = js.undefined
   
   /**
     * A pagination token that's returned when the response doesn't contain all event source mappings.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListEventSourceMappingsResponse {
   

@@ -3,28 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.EnumNumberBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait EnumNumberBody_
-  extends EnumBody
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait EnumNumberBody_
+  extends StObject
+     with BaseNode
+     with EnumBody {
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var members: js.Array[EnumNumberMember_] = js.native
+  var members: js.Array[EnumNumberMember_]
   
   @JSName("type")
-  var type_EnumNumberBody_ : EnumNumberBody = js.native
+  var type_EnumNumberBody_ : EnumNumberBody
 }
 object EnumNumberBody_ {
   
   @scala.inline
-  def apply(explicit: Boolean, members: js.Array[EnumNumberMember_], `type`: EnumNumberBody): EnumNumberBody_ = {
-    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(explicit: Boolean, members: js.Array[EnumNumberMember_]): EnumNumberBody_ = {
+    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumNumberBody")
     __obj.asInstanceOf[EnumNumberBody_]
   }
   

@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * call with both search and histogram.  Output only.  The response of the
   * GetHistogram method.
   */
-@js.native
 trait SchemaGetHistogramResponse extends StObject {
   
   /**
     * Additional information for the API invocation, such as the request
     * tracking id.
     */
-  var metadata: js.UndefOr[SchemaResponseMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
   
   /**
     * The Histogram results.
     */
-  var results: js.UndefOr[js.Array[SchemaHistogramResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaHistogramResult]] = js.undefined
 }
 object SchemaGetHistogramResponse {
   

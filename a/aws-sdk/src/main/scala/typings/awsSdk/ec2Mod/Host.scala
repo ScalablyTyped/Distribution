@@ -2,96 +2,94 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Host extends StObject {
   
   /**
     * The time that the Dedicated Host was allocated.
     */
-  var AllocationTime: js.UndefOr[DateTime] = js.native
+  var AllocationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates whether the Dedicated Host supports multiple instance types of the same instance family, or a specific instance type only. one indicates that the Dedicated Host supports multiple instance types in the instance family. off indicates that the Dedicated Host supports a single instance type only.
     */
-  var AllowsMultipleInstanceTypes: js.UndefOr[typings.awsSdk.ec2Mod.AllowsMultipleInstanceTypes] = js.native
+  var AllowsMultipleInstanceTypes: js.UndefOr[typings.awsSdk.ec2Mod.AllowsMultipleInstanceTypes] = js.undefined
   
   /**
     * Whether auto-placement is on or off.
     */
-  var AutoPlacement: js.UndefOr[typings.awsSdk.ec2Mod.AutoPlacement] = js.native
+  var AutoPlacement: js.UndefOr[typings.awsSdk.ec2Mod.AutoPlacement] = js.undefined
   
   /**
     * The Availability Zone of the Dedicated Host.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Availability Zone in which the Dedicated Host is allocated.
     */
-  var AvailabilityZoneId: js.UndefOr[String] = js.native
+  var AvailabilityZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the instances running on the Dedicated Host.
     */
-  var AvailableCapacity: js.UndefOr[typings.awsSdk.ec2Mod.AvailableCapacity] = js.native
+  var AvailableCapacity: js.UndefOr[typings.awsSdk.ec2Mod.AvailableCapacity] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Dedicated Host.
     */
-  var HostId: js.UndefOr[String] = js.native
+  var HostId: js.UndefOr[String] = js.undefined
   
   /**
     * The hardware specifications of the Dedicated Host.
     */
-  var HostProperties: js.UndefOr[typings.awsSdk.ec2Mod.HostProperties] = js.native
+  var HostProperties: js.UndefOr[typings.awsSdk.ec2Mod.HostProperties] = js.undefined
   
   /**
     * Indicates whether host recovery is enabled or disabled for the Dedicated Host.
     */
-  var HostRecovery: js.UndefOr[typings.awsSdk.ec2Mod.HostRecovery] = js.native
+  var HostRecovery: js.UndefOr[typings.awsSdk.ec2Mod.HostRecovery] = js.undefined
   
   /**
     * The reservation ID of the Dedicated Host. This returns a null response if the Dedicated Host doesn't have an associated reservation.
     */
-  var HostReservationId: js.UndefOr[String] = js.native
+  var HostReservationId: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs and instance type that are currently running on the Dedicated Host.
     */
-  var Instances: js.UndefOr[HostInstanceList] = js.native
+  var Instances: js.UndefOr[HostInstanceList] = js.undefined
   
   /**
     * Indicates whether the Dedicated Host is in a host resource group. If memberOfServiceLinkedResourceGroup is true, the host is in a host resource group; otherwise, it is not.
     */
-  var MemberOfServiceLinkedResourceGroup: js.UndefOr[Boolean] = js.native
+  var MemberOfServiceLinkedResourceGroup: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AWS account that owns the Dedicated Host.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the Dedicated Host was released.
     */
-  var ReleaseTime: js.UndefOr[DateTime] = js.native
+  var ReleaseTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Dedicated Host's state.
     */
-  var State: js.UndefOr[AllocationState] = js.native
+  var State: js.UndefOr[AllocationState] = js.undefined
   
   /**
     * Any tags assigned to the Dedicated Host.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Host {
   

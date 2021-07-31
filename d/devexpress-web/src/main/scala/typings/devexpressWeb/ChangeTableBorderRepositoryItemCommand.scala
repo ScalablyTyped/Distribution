@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the repository item's table border style.
   */
-@js.native
-trait ChangeTableBorderRepositoryItemCommand extends CommandBase {
+trait ChangeTableBorderRepositoryItemCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeTableBorderRepositoryItemCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TableBorderSettings object specifying the repository item's table border style.
     */
-  def execute(settings: TableBorderSettings): Boolean = js.native
+  def execute(settings: TableBorderSettings): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TableBorderSettings] = js.native
+  def getState(): CommandState[TableBorderSettings]
 }
 object ChangeTableBorderRepositoryItemCommand {
   

@@ -2,7 +2,6 @@ package typings.direction
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,12 @@ object mod {
     * direction('?') // => 'neutral'
     * ```
     */
+  @scala.inline
+  def apply(value: String): Direction = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Direction]
+  
   @JSImport("direction", JSImport.Namespace)
   @js.native
-  def apply(value: String): Direction = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.direction.directionStrings.ltr

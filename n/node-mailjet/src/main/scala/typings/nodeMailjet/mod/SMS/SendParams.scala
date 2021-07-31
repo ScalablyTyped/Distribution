@@ -2,17 +2,15 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendParams extends StObject {
   
-  var From: String = js.native
+  var From: String
   
-  var Text: String = js.native
+  var Text: String
   
-  var To: String = js.native
+  var To: String
 }
 object SendParams {
   

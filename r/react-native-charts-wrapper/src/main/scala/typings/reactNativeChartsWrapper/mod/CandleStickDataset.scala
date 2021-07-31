@@ -2,18 +2,18 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CandleStickDataset extends Dataset {
+trait CandleStickDataset
+  extends StObject
+     with Dataset {
   
-  var config: js.UndefOr[CandleStickDatasetConfig] = js.native
+  var config: js.UndefOr[CandleStickDatasetConfig] = js.undefined
   
   @JSName("label")
-  var label_CandleStickDataset: String = js.native
+  var label_CandleStickDataset: String
   
-  var values: js.UndefOr[js.Array[CandleStickValue]] = js.native
+  var values: js.UndefOr[js.Array[CandleStickValue]] = js.undefined
 }
 object CandleStickDataset {
   

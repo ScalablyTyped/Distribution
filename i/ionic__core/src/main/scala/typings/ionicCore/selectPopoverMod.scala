@@ -4,14 +4,15 @@ import typings.ionicCore.selectPopoverInterfaceMod.SelectPopoverOption
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectPopoverMod {
   
   @JSImport("@ionic/core/dist/types/components/select-popover/select-popover", "SelectPopover")
   @js.native
-  class SelectPopover () extends ComponentInterface {
+  class SelectPopover ()
+    extends StObject
+       with ComponentInterface {
     
     /** Header text for the popover */
     var header: js.UndefOr[String] = js.native

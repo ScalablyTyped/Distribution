@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntersectionObserverEntryInit extends StObject {
   
-  var boundingClientRect: DOMRectInit = js.native
+  var boundingClientRect: DOMRectInit
   
-  var intersectionRatio: Double = js.native
+  var intersectionRatio: Double
   
-  var intersectionRect: DOMRectInit = js.native
+  var intersectionRect: DOMRectInit
   
-  var isIntersecting: scala.Boolean = js.native
+  var isIntersecting: scala.Boolean
   
-  var rootBounds: DOMRectInit | Null = js.native
+  var rootBounds: DOMRectInit | Null
   
-  var target: Element = js.native
+  var target: Element
   
-  var time: Double = js.native
+  var time: Double
 }
 object IntersectionObserverEntryInit {
   
@@ -33,7 +31,7 @@ object IntersectionObserverEntryInit {
     target: Element,
     time: Double
   ): IntersectionObserverEntryInit = {
-    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], rootBounds = null)
     __obj.asInstanceOf[IntersectionObserverEntryInit]
   }
   

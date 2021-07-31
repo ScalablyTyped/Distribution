@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceMessage extends StObject {
   
   /**
     * The Amazon DocumentDB resource that the tags are removed from. This value is an Amazon Resource Name (ARN).
     */
-  var ResourceName: String = js.native
+  var ResourceName: String
   
   /**
     * The tag key (name) of the tag to be removed.
     */
-  var TagKeys: KeyList = js.native
+  var TagKeys: KeyList
 }
 object RemoveTagsFromResourceMessage {
   

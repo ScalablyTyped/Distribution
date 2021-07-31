@@ -4,15 +4,13 @@ import typings.expressValidator.baseMod.Meta
 import typings.expressValidator.contextMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextItemMod {
   
-  @js.native
   trait ContextItem extends StObject {
     
-    def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit]
   }
   object ContextItem {
     

@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseItemsItem extends StObject {
   
-  var client_context: js.UndefOr[String] = js.native
+  var client_context: js.UndefOr[String] = js.undefined
   
-  var item_id: String = js.native
+  var item_id: String
   
-  var item_type: String = js.native
+  var item_type: String
   
-  var link: js.UndefOr[DirectInboxFeedResponseLink] = js.native
+  var link: js.UndefOr[DirectInboxFeedResponseLink] = js.undefined
   
-  var placeholder: js.UndefOr[DirectInboxFeedResponsePlaceholder] = js.native
+  var placeholder: js.UndefOr[DirectInboxFeedResponsePlaceholder] = js.undefined
   
-  var profile: js.UndefOr[DirectInboxFeedResponseProfile] = js.native
+  var profile: js.UndefOr[DirectInboxFeedResponseProfile] = js.undefined
   
-  var reel_share: js.UndefOr[DirectInboxFeedResponseReelShare] = js.native
+  var reel_share: js.UndefOr[DirectInboxFeedResponseReelShare] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var user_id: Double = js.native
+  var user_id: Double
 }
 object DirectInboxFeedResponseItemsItem {
   

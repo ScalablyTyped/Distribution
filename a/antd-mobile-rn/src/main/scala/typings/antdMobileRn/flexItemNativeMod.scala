@@ -7,7 +7,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexItemNativeMod {
@@ -33,20 +32,21 @@ object flexItemNativeMod {
   trait FlexItem
     extends Component[FlexItemProps, js.Any, js.Any]
   
-  @js.native
-  trait FlexItemProps extends FlexItemPropsType {
+  trait FlexItemProps
+    extends StObject
+       with FlexItemPropsType {
     
-    var flex: js.UndefOr[Double] = js.native
+    var flex: js.UndefOr[Double] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object FlexItemProps {
     

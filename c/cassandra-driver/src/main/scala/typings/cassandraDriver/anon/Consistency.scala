@@ -5,23 +5,21 @@ import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.consistencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Consistency extends StObject {
   
-  var consistency: js.UndefOr[consistencies] = js.native
+  var consistency: js.UndefOr[consistencies] = js.undefined
   
-  var graphOptions: js.UndefOr[Language] = js.native
+  var graphOptions: js.UndefOr[Language] = js.undefined
   
-  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.native
+  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.undefined
   
-  var readTimeout: js.UndefOr[Double] = js.native
+  var readTimeout: js.UndefOr[Double] = js.undefined
   
-  var retry: js.UndefOr[RetryPolicy] = js.native
+  var retry: js.UndefOr[RetryPolicy] = js.undefined
   
-  var serialConsistency: js.UndefOr[consistencies] = js.native
+  var serialConsistency: js.UndefOr[consistencies] = js.undefined
 }
 object Consistency {
   

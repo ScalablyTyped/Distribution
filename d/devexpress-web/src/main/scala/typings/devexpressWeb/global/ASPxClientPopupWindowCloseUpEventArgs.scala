@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientPopupWindowCloseUpEventArgs")
 @js.native
 class ASPxClientPopupWindowCloseUpEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientPopupWindowCloseUpEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientPopupWindowCloseUpEventArgs {
   /**
     * Initializes a new instance of the ASPxClientPopupWindowCloseUpEventArgs class with the specified settings.
     * @param window An ASPxClientPopupWindow object that is a popup window related to the generated event.
@@ -21,4 +21,16 @@ class ASPxClientPopupWindowCloseUpEventArgs protected ()
     window: typings.devexpressWeb.ASPxClientPopupWindow,
     closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason
   ) = this()
+  
+  /**
+    * Gets the value that identifies the reason the popup window closes.
+    */
+  /* CompleteClass */
+  var closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason = js.native
+  
+  /**
+    * Gets the popup window object related to the event.
+    */
+  /* CompleteClass */
+  var window: typings.devexpressWeb.ASPxClientPopupWindow = js.native
 }

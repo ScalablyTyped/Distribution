@@ -3,17 +3,15 @@ package typings.ydnDb.ydn.db
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
   
-  @js.native
   trait Event extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: EventType = js.native
+    var `type`: EventType
   }
   object Event {
     
@@ -35,14 +33,15 @@ object events {
     }
   }
   
-  @js.native
-  trait RecordEvent extends Event {
+  trait RecordEvent
+    extends StObject
+       with Event {
     
-    def getKey(): js.Any = js.native
+    def getKey(): js.Any
     
-    def getStoreName(): String = js.native
+    def getStoreName(): String
     
-    def getValue(): js.Any = js.native
+    def getValue(): js.Any
   }
   object RecordEvent {
     
@@ -73,14 +72,15 @@ object events {
     }
   }
   
-  @js.native
-  trait StorageEvent extends Event {
+  trait StorageEvent
+    extends StObject
+       with Event {
     
-    def getError(): Error = js.native
+    def getError(): Error
     
-    def getOldVersion(): Double = js.native
+    def getOldVersion(): Double
     
-    def getVersion(): Double = js.native
+    def getVersion(): Double
   }
   object StorageEvent {
     
@@ -111,22 +111,23 @@ object events {
     }
   }
   
-  @js.native
-  trait StoreEvent extends Event {
+  trait StoreEvent
+    extends StObject
+       with Event {
     
-    def getKeys(): js.Array[_] = js.native
+    def getKeys(): js.Array[js.Any]
     
-    def getStoreName(): String = js.native
+    def getStoreName(): String
     
-    def getValues(): js.Array[_] = js.native
+    def getValues(): js.Array[js.Any]
   }
   object StoreEvent {
     
     @scala.inline
     def apply(
-      getKeys: () => js.Array[_],
+      getKeys: () => js.Array[js.Any],
       getStoreName: () => String,
-      getValues: () => js.Array[_],
+      getValues: () => js.Array[js.Any],
       name: String,
       `type`: EventType
     ): StoreEvent = {
@@ -139,13 +140,13 @@ object events {
     implicit class StoreEventMutableBuilder[Self <: StoreEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetKeys(value: () => js.Array[_]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      def setGetKeys(value: () => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetValues(value: () => js.Array[_]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
 }

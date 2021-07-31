@@ -9,12 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is an extension to the interface {@link XSimpleFileAccess} . */
-@js.native
-trait XSimpleFileAccess2 extends XSimpleFileAccess {
+trait XSimpleFileAccess2
+  extends StObject
+     with XSimpleFileAccess {
   
   /**
     * Overwrites the file content with the given data.
@@ -23,7 +23,7 @@ trait XSimpleFileAccess2 extends XSimpleFileAccess {
     * @param FileURL File to write
     * @param data A stream containing the data for the file to be (over-)written
     */
-  def writeFile(FileURL: String, data: XInputStream): Unit = js.native
+  def writeFile(FileURL: String, data: XInputStream): Unit
 }
 object XSimpleFileAccess2 {
   

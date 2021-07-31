@@ -10,9 +10,9 @@ Lumino Commands
 | ------------------ | :-------------: |
 | Full name          | @lumino/commands |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 52 |
-| # downloads        | 982213 |
+| # releases         | 19 |
+| # dependents       | 59 |
+| # downloads        | 1210318 |
 | # stars            | 0 |
 
 ## Links

@@ -2,45 +2,43 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about device software.
   */
-@js.native
 trait SchemaSoftwareInfo extends StObject {
   
   /**
     * Android build ID string meant for displaying to the user. For example,
     * shamu-userdebug 6.0.1 MOB30I 2756745 dev-keys.
     */
-  var androidBuildNumber: js.UndefOr[String] = js.native
+  var androidBuildNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Build time.
     */
-  var androidBuildTime: js.UndefOr[String] = js.native
+  var androidBuildTime: js.UndefOr[String] = js.undefined
   
   /**
     * The Android Device Policy app version code.
     */
-  var androidDevicePolicyVersionCode: js.UndefOr[Double] = js.native
+  var androidDevicePolicyVersionCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The Android Device Policy app version as displayed to the user.
     */
-  var androidDevicePolicyVersionName: js.UndefOr[String] = js.native
+  var androidDevicePolicyVersionName: js.UndefOr[String] = js.undefined
   
   /**
     * The user-visible Android version string. For example, 6.0.1.
     */
-  var androidVersion: js.UndefOr[String] = js.native
+  var androidVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The system bootloader version number, e.g. 0.6.7.
     */
-  var bootloaderVersion: js.UndefOr[String] = js.native
+  var bootloaderVersion: js.UndefOr[String] = js.undefined
   
   /**
     * SHA-256 hash of android.content.pm.Signature
@@ -48,22 +46,22 @@ trait SchemaSoftwareInfo extends StObject {
     * associated with the system package, which can be used to verify that the
     * system build hasn&#39;t been modified.
     */
-  var deviceBuildSignature: js.UndefOr[String] = js.native
+  var deviceBuildSignature: js.UndefOr[String] = js.undefined
   
   /**
     * Kernel version, for example, 2.6.32.9-g103d848.
     */
-  var deviceKernelVersion: js.UndefOr[String] = js.native
+  var deviceKernelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * An IETF BCP 47 language code for the primary locale on the device.
     */
-  var primaryLanguageCode: js.UndefOr[String] = js.native
+  var primaryLanguageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Security patch level, e.g. 2016-05-01.
     */
-  var securityPatchLevel: js.UndefOr[String] = js.native
+  var securityPatchLevel: js.UndefOr[String] = js.undefined
 }
 object SchemaSoftwareInfo {
   

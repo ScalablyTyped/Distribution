@@ -8,7 +8,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listViewMod {
@@ -54,7 +53,9 @@ object listViewMod {
   }
   
   @js.native
-  trait ListViewProps extends ListViewPropsType {
+  trait ListViewProps
+    extends StObject
+       with ListViewPropsType {
     
     var delayActivityIndicator: js.UndefOr[js.Any] = js.native
     

@@ -3,19 +3,17 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseObject extends StObject {
   
-  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.native
+  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.native
+  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.undefined
   
-  var links: js.UndefOr[StringDictionary[ReferenceObject | LinkObject]] = js.native
+  var links: js.UndefOr[StringDictionary[ReferenceObject | LinkObject]] = js.undefined
 }
 object ResponseObject {
   

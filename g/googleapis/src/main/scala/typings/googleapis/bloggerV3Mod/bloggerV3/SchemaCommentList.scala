@@ -2,36 +2,34 @@ package typings.googleapis.bloggerV3Mod.bloggerV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCommentList extends StObject {
   
   /**
     * Etag of the response.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The List of Comments for a Post.
     */
-  var items: js.UndefOr[js.Array[SchemaComment]] = js.native
+  var items: js.UndefOr[js.Array[SchemaComment]] = js.undefined
   
   /**
     * The kind of this entry. Always blogger#commentList
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to fetch the next page, if one exists.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to fetch the previous page, if one exists.
     */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCommentList {
   

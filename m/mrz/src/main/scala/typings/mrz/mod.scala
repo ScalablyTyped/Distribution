@@ -10,7 +10,6 @@ import typings.mrz.mrzStrings.male
 import typings.mrz.mrzStrings.nonspecified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,47 +39,39 @@ object mod {
   
   object parse {
     
+    @scala.inline
+    def apply(lines: String): Result = ^.asInstanceOf[js.Dynamic].apply(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def apply(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].apply(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    
     @JSImport("mrz", "parse")
     @js.native
-    def apply(lines: String): Result = js.native
-    @JSImport("mrz", "parse")
-    @js.native
-    def apply(lines: js.Array[String]): Result = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("mrz", "parse.FRENCH_NATIONAL_ID")
-    @js.native
-    def FRENCH_NATIONAL_ID(lines: String): Result = js.native
-    @JSImport("mrz", "parse.FRENCH_NATIONAL_ID")
-    @js.native
-    def FRENCH_NATIONAL_ID(lines: js.Array[String]): Result = js.native
+    @scala.inline
+    def FRENCH_NATIONAL_ID(lines: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("FRENCH_NATIONAL_ID")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def FRENCH_NATIONAL_ID(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("FRENCH_NATIONAL_ID")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
     
-    @JSImport("mrz", "parse.SWISS_DRIVING_LICENSE")
-    @js.native
-    def SWISS_DRIVING_LICENSE(lines: String): Result = js.native
-    @JSImport("mrz", "parse.SWISS_DRIVING_LICENSE")
-    @js.native
-    def SWISS_DRIVING_LICENSE(lines: js.Array[String]): Result = js.native
+    @scala.inline
+    def SWISS_DRIVING_LICENSE(lines: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("SWISS_DRIVING_LICENSE")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def SWISS_DRIVING_LICENSE(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("SWISS_DRIVING_LICENSE")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
     
-    @JSImport("mrz", "parse.TD1")
-    @js.native
-    def TD1(lines: String): Result = js.native
-    @JSImport("mrz", "parse.TD1")
-    @js.native
-    def TD1(lines: js.Array[String]): Result = js.native
+    @scala.inline
+    def TD1(lines: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD1")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def TD1(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD1")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
     
-    @JSImport("mrz", "parse.TD2")
-    @js.native
-    def TD2(lines: String): Result = js.native
-    @JSImport("mrz", "parse.TD2")
-    @js.native
-    def TD2(lines: js.Array[String]): Result = js.native
+    @scala.inline
+    def TD2(lines: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD2")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def TD2(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD2")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
     
-    @JSImport("mrz", "parse.TD3")
-    @js.native
-    def TD3(lines: String): Result = js.native
-    @JSImport("mrz", "parse.TD3")
-    @js.native
-    def TD3(lines: js.Array[String]): Result = js.native
+    @scala.inline
+    def TD3(lines: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD3")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def TD3(lines: js.Array[String]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("TD3")(lines.asInstanceOf[js.Any]).asInstanceOf[Result]
   }
   
   object states {
@@ -1162,16 +1153,15 @@ object mod {
     val ZWE: String = js.native
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var raw: String = js.native
+    var raw: String
     
-    var start: Double = js.native
+    var start: Double
   }
   object Range {
     
@@ -1198,20 +1188,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     /**
       * Array of objects describing all parsed fields.
       */
-    var details: js.Array[ResultDetails] = js.native
+    var details: js.Array[ResultDetails]
     
     /**
       * Object mapping field names to their respective value. The value is set to `null`
       * if it is invalid. The value may be different than the raw value. For example
       * `result.fields.sex` will be "male" when the raw value was "M".
       */
-    var fields: ResultFields = js.native
+    var fields: ResultFields
     
     /**
       * String identifying the format of the parsed MRZ. Supported formats are:
@@ -1222,10 +1211,10 @@ object mod {
       * * SWISS_DRIVING_LICENSE
       * * FRENCH_NATIONAL_ID
       */
-    var format: TD1 | TD2 | TD3 | SWISS_DRIVING_LICENSE | FRENCH_NATIONAL_ID = js.native
+    var format: TD1 | TD2 | TD3 | SWISS_DRIVING_LICENSE | FRENCH_NATIONAL_ID
     
     /** `true` if all fields are valid. `false` otherwise. */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Result {
     
@@ -1260,31 +1249,30 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultDetails extends StObject {
     
     /** Index of the end of the field in `line`. */
-    var end: Double = js.native
+    var end: Double
     
     /** Name of the field in `result.fields`. */
-    var field: /* import warning: importer.ImportType#apply Failed type conversion: 'format' | 'valid' | 'fields' | 'details'['fields'] */ js.Any = js.native
+    var field: /* import warning: importer.ImportType#apply Failed type conversion: 'format' | 'valid' | 'fields' | 'details'['fields'] */ js.Any
     
     /** Full english term for the field. */
-    var label: String = js.native
+    var label: String
     
     /** Index of the line where the field is located. */
-    var line: Double = js.native
+    var line: Double
     
     /** Array of ranges that are necessary to compute this field. */
-    var ranges: js.Array[Range] = js.native
+    var ranges: js.Array[Range]
     
     /** Index of the start of the field in `line`. */
-    var start: Double = js.native
+    var start: Double
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
     /** Value of the field or `null`. */
-    var value: String | Null = js.native
+    var value: String | Null
   }
   object ResultDetails {
     
@@ -1298,7 +1286,7 @@ object mod {
       start: Double,
       valid: Boolean
     ): ResultDetails = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[ResultDetails]
     }
     
@@ -1339,67 +1327,66 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultFields extends StObject {
     
     // french national id only
-    var administrativeCode: js.UndefOr[String] = js.native
+    var administrativeCode: js.UndefOr[String] = js.undefined
     
-    var administrativeCode2: js.UndefOr[String] = js.native
+    var administrativeCode2: js.UndefOr[String] = js.undefined
     
-    var birthDate: String | Null = js.native
+    var birthDate: String | Null
     
-    var birthDateCheckDigit: String | Null = js.native
+    var birthDateCheckDigit: String | Null
     
-    var compositeCheckDigit: String | Null = js.native
+    var compositeCheckDigit: String | Null
     
-    var documentCode: String | Null = js.native
+    var documentCode: String | Null
     
-    var documentNumber: String | Null = js.native
+    var documentNumber: String | Null
     
-    var documentNumberCheckDigit: String | Null = js.native
+    var documentNumberCheckDigit: String | Null
     
-    var expirationDate: String | Null = js.native
+    var expirationDate: String | Null
     
-    var expirationDateCheckDigit: String | Null = js.native
+    var expirationDateCheckDigit: String | Null
     
-    var firstName: String | Null = js.native
+    var firstName: String | Null
     
-    var issueDate: String | Null = js.native
+    var issueDate: String | Null
     
-    var issuingState: String | Null = js.native
+    var issuingState: String | Null
     
     // swiss driving license only
-    var languageCode: js.UndefOr[String] = js.native
+    var languageCode: js.UndefOr[String] = js.undefined
     
-    var lastName: String | Null = js.native
+    var lastName: String | Null
     
-    var nationality: String | Null = js.native
+    var nationality: String | Null
     
     // td2 only
-    var optional: js.UndefOr[String] = js.native
+    var optional: js.UndefOr[String] = js.undefined
     
     // td1 only
-    var optional1: js.UndefOr[String] = js.native
+    var optional1: js.UndefOr[String] = js.undefined
     
-    var optional2: js.UndefOr[String] = js.native
+    var optional2: js.UndefOr[String] = js.undefined
     
     // td3 only
-    var personalNumber: js.UndefOr[String] = js.native
+    var personalNumber: js.UndefOr[String] = js.undefined
     
-    var personalNumberCheckDigit: js.UndefOr[String] = js.native
+    var personalNumberCheckDigit: js.UndefOr[String] = js.undefined
     
-    var pinCode: js.UndefOr[String] = js.native
+    var pinCode: js.UndefOr[String] = js.undefined
     
-    var sex: male | female | nonspecified | Null = js.native
+    var sex: male | female | nonspecified | Null
     
-    var versionNumber: js.UndefOr[String] = js.native
+    var versionNumber: js.UndefOr[String] = js.undefined
   }
   object ResultFields {
     
     @scala.inline
     def apply(): ResultFields = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(birthDate = null, birthDateCheckDigit = null, compositeCheckDigit = null, documentCode = null, documentNumber = null, documentNumberCheckDigit = null, expirationDate = null, expirationDateCheckDigit = null, firstName = null, issueDate = null, issuingState = null, lastName = null, nationality = null, sex = null)
       __obj.asInstanceOf[ResultFields]
     }
     

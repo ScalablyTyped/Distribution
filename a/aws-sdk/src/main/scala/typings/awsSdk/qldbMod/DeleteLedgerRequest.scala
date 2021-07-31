@@ -2,16 +2,14 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLedgerRequest extends StObject {
   
   /**
     * The name of the ledger that you want to delete.
     */
-  var Name: LedgerName = js.native
+  var Name: LedgerName
 }
 object DeleteLedgerRequest {
   

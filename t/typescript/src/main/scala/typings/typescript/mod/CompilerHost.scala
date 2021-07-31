@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompilerHost extends ModuleResolutionHost {
+trait CompilerHost
+  extends StObject
+     with ModuleResolutionHost {
   
   var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
   
@@ -31,18 +32,18 @@ trait CompilerHost extends ModuleResolutionHost {
   def getSourceFile(
     fileName: java.lang.String,
     languageVersion: ScriptTarget,
-    onError: js.UndefOr[scala.Nothing],
-    shouldCreateNewSourceFile: Boolean
-  ): js.UndefOr[SourceFile] = js.native
-  def getSourceFile(
-    fileName: java.lang.String,
-    languageVersion: ScriptTarget,
     onError: js.Function1[/* message */ java.lang.String, Unit]
   ): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
     fileName: java.lang.String,
     languageVersion: ScriptTarget,
     onError: js.Function1[/* message */ java.lang.String, Unit],
+    shouldCreateNewSourceFile: Boolean
+  ): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(
+    fileName: java.lang.String,
+    languageVersion: ScriptTarget,
+    onError: Unit,
     shouldCreateNewSourceFile: Boolean
   ): js.UndefOr[SourceFile] = js.native
   
@@ -99,13 +100,6 @@ trait CompilerHost extends ModuleResolutionHost {
     fileName: java.lang.String,
     data: java.lang.String,
     writeByteOrderMark: Boolean,
-    onError: js.UndefOr[scala.Nothing],
-    sourceFiles: js.Array[SourceFile]
-  ): Unit = js.native
-  def writeFile(
-    fileName: java.lang.String,
-    data: java.lang.String,
-    writeByteOrderMark: Boolean,
     onError: js.Function1[/* message */ java.lang.String, Unit]
   ): Unit = js.native
   def writeFile(
@@ -113,6 +107,13 @@ trait CompilerHost extends ModuleResolutionHost {
     data: java.lang.String,
     writeByteOrderMark: Boolean,
     onError: js.Function1[/* message */ java.lang.String, Unit],
+    sourceFiles: js.Array[SourceFile]
+  ): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    data: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: Unit,
     sourceFiles: js.Array[SourceFile]
   ): Unit = js.native
   @JSName("writeFile")

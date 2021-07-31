@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatternedRecurrence extends StObject {
   
   // The frequency of an event.
-  var pattern: js.UndefOr[NullableOption[RecurrencePattern]] = js.native
+  var pattern: js.UndefOr[NullableOption[RecurrencePattern]] = js.undefined
   
   // The duration of an event.
-  var range: js.UndefOr[NullableOption[RecurrenceRange]] = js.native
+  var range: js.UndefOr[NullableOption[RecurrenceRange]] = js.undefined
 }
 object PatternedRecurrence {
   

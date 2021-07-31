@@ -2,63 +2,62 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMObjectMarker3D
-  extends CIMMarker
+  extends StObject
+     with CIMMarker
      with CIMSymbolLayerType {
   
   /**
     * The array of levels of detail.
     */
-  var LODs: js.UndefOr[js.Array[CIMObjectMarker3DLOD]] = js.native
+  var LODs: js.UndefOr[js.Array[CIMObjectMarker3DLOD]] = js.undefined
   
   /**
     * The marker depth.
     */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether the model can be exported.
     */
-  var isRestricted: js.UndefOr[Boolean] = js.native
+  var isRestricted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URI of the binary reference containing the "web resource".
     */
-  var modelURI: js.UndefOr[String] = js.native
+  var modelURI: js.UndefOr[String] = js.undefined
   
   /**
     * The representative image of the marker.
     */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
   
   /**
     * The color which defines the color that is applied to the marker.
     */
-  var tintColor: js.UndefOr[js.Array[Double]] = js.native
+  var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMObjectMarker3D: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D = js.native
+  var type_CIMObjectMarker3D: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D
   
   /**
     * A value indicating whether or not to ignore the marker anchor point and insert the model directly at the data point.
     */
-  var useAnchorPoint: js.UndefOr[Boolean] = js.native
+  var useAnchorPoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The marker width.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CIMObjectMarker3D {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D): CIMObjectMarker3D = {
+  def apply(): CIMObjectMarker3D = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMObjectMarker3D")
     __obj.asInstanceOf[CIMObjectMarker3D]
   }
   

@@ -2,13 +2,11 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSelect extends StObject {
   
-  def onSelect(id: String): Unit = js.native
+  def onSelect(id: String): Unit
 }
 object OnSelect {
   

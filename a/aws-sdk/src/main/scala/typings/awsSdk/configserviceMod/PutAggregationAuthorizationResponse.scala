@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAggregationAuthorizationResponse extends StObject {
   
   /**
     * Returns an AggregationAuthorization object. 
     */
-  var AggregationAuthorization: js.UndefOr[typings.awsSdk.configserviceMod.AggregationAuthorization] = js.native
+  var AggregationAuthorization: js.UndefOr[typings.awsSdk.configserviceMod.AggregationAuthorization] = js.undefined
 }
 object PutAggregationAuthorizationResponse {
   

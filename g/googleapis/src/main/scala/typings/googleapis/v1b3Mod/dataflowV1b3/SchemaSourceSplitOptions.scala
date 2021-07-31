@@ -2,26 +2,24 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hints for splitting a Source into bundles (parts for parallel processing)
   * using SourceSplitRequest.
   */
-@js.native
 trait SchemaSourceSplitOptions extends StObject {
   
   /**
     * The source should be split into a set of bundles where the estimated size
     * of each is approximately this many bytes.
     */
-  var desiredBundleSizeBytes: js.UndefOr[String] = js.native
+  var desiredBundleSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED in favor of desired_bundle_size_bytes.
     */
-  var desiredShardSizeBytes: js.UndefOr[String] = js.native
+  var desiredShardSizeBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceSplitOptions {
   

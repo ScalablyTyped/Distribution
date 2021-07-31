@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ws {
@@ -53,7 +52,8 @@ object ws {
   @JSGlobal("sap.ui.core.ws.SapPcpWebSocket")
   @js.native
   class SapPcpWebSocket protected ()
-    extends typings.openui5.sap.ui.core.ws.SapPcpWebSocket {
+    extends StObject
+       with typings.openui5.sap.ui.core.ws.SapPcpWebSocket {
     /**
       * Creates a new WebSocket connection and uses the pcp-protocol for communication.
       * @param sUrl relative or absolute URL for WebSocket connection.
@@ -61,7 +61,7 @@ object ws {
       * selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
       */
     def this(sUrl: String) = this()
-    def this(sUrl: String, aProtocols: js.Array[_]) = this()
+    def this(sUrl: String, aProtocols: js.Array[js.Any]) = this()
   }
   object SapPcpWebSocket {
     
@@ -85,13 +85,14 @@ object ws {
   @JSGlobal("sap.ui.core.ws.WebSocket")
   @js.native
   class WebSocket protected ()
-    extends typings.openui5.sap.ui.core.ws.WebSocket {
+    extends StObject
+       with typings.openui5.sap.ui.core.ws.WebSocket {
     /**
       * Creates a new WebSocket connection.
       * @param sUrl relative or absolute URL for WebSocket connection.
       * @param aProtocols array of protocols as strings, a single protocol as a string
       */
     def this(sUrl: String) = this()
-    def this(sUrl: String, aProtocols: js.Array[_]) = this()
+    def this(sUrl: String, aProtocols: js.Array[js.Any]) = this()
   }
 }

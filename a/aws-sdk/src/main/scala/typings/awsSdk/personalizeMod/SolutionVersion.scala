@@ -2,86 +2,84 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SolutionVersion extends StObject {
   
   /**
     * The date and time (in Unix time) that this version of the solution was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group providing the training data.
     */
-  var datasetGroupArn: js.UndefOr[Arn] = js.native
+  var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The event type (for example, 'click' or 'like') that is used for training the model.
     */
-  var eventType: js.UndefOr[EventType] = js.native
+  var eventType: js.UndefOr[EventType] = js.undefined
   
   /**
     * If training a solution version fails, the reason for the failure.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The date and time (in Unix time) that the solution was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * When true, Amazon Personalize searches for the most optimal recipe according to the solution configuration. When false (the default), Amazon Personalize uses recipeArn.
     */
-  var performAutoML: js.UndefOr[PerformAutoML] = js.native
+  var performAutoML: js.UndefOr[PerformAutoML] = js.undefined
   
   /**
     * Whether to perform hyperparameter optimization (HPO) on the chosen recipe. The default is false.
     */
-  var performHPO: js.UndefOr[PerformHPO] = js.native
+  var performHPO: js.UndefOr[PerformHPO] = js.undefined
   
   /**
     * The ARN of the recipe used in the solution.
     */
-  var recipeArn: js.UndefOr[Arn] = js.native
+  var recipeArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the solution.
     */
-  var solutionArn: js.UndefOr[Arn] = js.native
+  var solutionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Describes the configuration properties for the solution.
     */
-  var solutionConfig: js.UndefOr[SolutionConfig] = js.native
+  var solutionConfig: js.UndefOr[SolutionConfig] = js.undefined
   
   /**
     * The ARN of the solution version.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the solution version. A solution version can be in one of the following states:   CREATE PENDING   CREATE IN_PROGRESS   ACTIVE   CREATE FAILED  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     * The time used to train the model. You are billed for the time it takes to train a model. This field is visible only after Amazon Personalize successfully trains a model.
     */
-  var trainingHours: js.UndefOr[TrainingHours] = js.native
+  var trainingHours: js.UndefOr[TrainingHours] = js.undefined
   
   /**
     * The scope of training used to create the solution version. The FULL option trains the solution version based on the entirety of the input solution's training data, while the UPDATE option processes only the training data that has changed since the creation of the last solution version. Choose UPDATE when you want to start recommending items added to the dataset without retraining the model.  The UPDATE option can only be used after you've created a solution version with the FULL option and the training solution uses the native-recipe-hrnn-coldstart. 
     */
-  var trainingMode: js.UndefOr[TrainingMode] = js.native
+  var trainingMode: js.UndefOr[TrainingMode] = js.undefined
   
   /**
     * If hyperparameter optimization was performed, contains the hyperparameter values of the best performing model.
     */
-  var tunedHPOParams: js.UndefOr[TunedHPOParams] = js.native
+  var tunedHPOParams: js.UndefOr[TunedHPOParams] = js.undefined
 }
 object SolutionVersion {
   

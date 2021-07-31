@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to save the document to a file.
   */
-@js.native
-trait FileSaveCommand extends CommandWithSimpleStateBase {
+trait FileSaveCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the FileSaveCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object FileSaveCommand {
   

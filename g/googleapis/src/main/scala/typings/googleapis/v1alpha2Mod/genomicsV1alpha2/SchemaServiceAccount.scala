@@ -2,20 +2,18 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Cloud Service Account.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * Email address of the service account. Defaults to `default`, which uses
     * the compute service account associated with the project.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * List of scopes to be enabled for this service account on the VM. The
@@ -26,7 +24,7 @@ trait SchemaServiceAccount extends StObject {
     * https://www.googleapis.com/auth/logging.write *
     * https://www.googleapis.com/auth/monitoring.write
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServiceAccount {
   

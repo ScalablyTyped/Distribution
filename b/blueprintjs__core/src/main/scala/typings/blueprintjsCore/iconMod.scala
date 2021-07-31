@@ -11,7 +11,6 @@ import typings.react.mod.DOMAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -19,9 +18,9 @@ object iconMod {
   @JSImport("@blueprintjs/core/lib/esm/components/icon/icon", "Icon")
   @js.native
   class Icon protected ()
-    extends AbstractPureComponent2[IIconProps with DOMAttributes[HTMLElement], js.Object, js.Object] {
-    def this(props: IIconProps with DOMAttributes[HTMLElement]) = this()
-    def this(props: IIconProps with DOMAttributes[HTMLElement], context: js.Any) = this()
+    extends AbstractPureComponent2[IIconProps & DOMAttributes[HTMLElement], js.Object, js.Object] {
+    def this(props: IIconProps & DOMAttributes[HTMLElement]) = this()
+    def this(props: IIconProps & DOMAttributes[HTMLElement], context: js.Any) = this()
     
     /** Render `<path>` elements for the given icon name. Returns `null` if name is unknown. */
     var renderSvgPaths: js.Any = js.native
@@ -48,13 +47,13 @@ object iconMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IIconProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /** This component does not support custom children. Use the `icon` prop. */
-    var children: js.UndefOr[scala.Nothing] = js.native
+    var children: js.UndefOr[scala.Nothing] = js.undefined
     
     /**
       * Color of icon. This is used as the `fill` attribute on the `<svg>` image
@@ -62,13 +61,13 @@ object iconMod {
       * `intent`. If this prop is omitted, icon color is inherited from
       * surrounding text.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * String for the `title` attribute on the rendered element, which will appear
       * on hover as a native browser tooltip.
       */
-    var htmlTitle: js.UndefOr[String] = js.native
+    var htmlTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Name of a Blueprint UI icon, or an icon element, to render. This prop is
@@ -85,17 +84,17 @@ object iconMod {
       *   should avoid using `<Icon icon={<Element />}` directly; simply render
       *   `<Element />` instead.
       */
-    var icon: IconName | MaybeElement = js.native
+    var icon: IconName | MaybeElement
     
     /**
       * Size of the icon, in pixels. Blueprint contains 16px and 20px SVG icon
       * images, and chooses the appropriate resolution based on this prop.
       * @default Icon.SIZE_STANDARD = 16
       */
-    var iconSize: js.UndefOr[Double] = js.native
+    var iconSize: js.UndefOr[Double] = js.undefined
     
     /** CSS style properties. */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * HTML tag to use for the rendered element.
@@ -103,7 +102,7 @@ object iconMod {
       */
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Description string. This string does not appear in normal browsers, but
@@ -111,7 +110,7 @@ object iconMod {
       * aural feedback. By default, this is set to the icon's name. Pass an
       * explicit falsy value to disable.
       */
-    var title: js.UndefOr[String | `false` | Null] = js.native
+    var title: js.UndefOr[String | `false` | Null] = js.undefined
   }
   object IIconProps {
     

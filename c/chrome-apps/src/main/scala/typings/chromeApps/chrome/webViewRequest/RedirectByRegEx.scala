@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The regular expressions use the RE2 syntax.
   * @see[RE2 syntax]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
   */
-@js.native
-trait RedirectByRegEx extends OnRequestActions {
+trait RedirectByRegEx
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx
 }
 object RedirectByRegEx {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx): RedirectByRegEx = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RedirectByRegEx = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectByRegEx")
     __obj.asInstanceOf[RedirectByRegEx]
   }
   

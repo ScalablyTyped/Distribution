@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlInjectionMatchSetSqlInjectionMatchTuple extends StObject {
   
   /**
     * Specifies where in a web request to look for snippets of malicious SQL code.
     */
-  var fieldToMatch: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch = js.native
+  var fieldToMatch: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch
   
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
@@ -20,7 +18,7 @@ trait SqlInjectionMatchSetSqlInjectionMatchTuple extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SqlInjectionMatchTuple.html#WAF-Type-SqlInjectionMatchTuple-TextTransformation)
     * for all supported values.
     */
-  var textTransformation: String = js.native
+  var textTransformation: String
 }
 object SqlInjectionMatchSetSqlInjectionMatchTuple {
   

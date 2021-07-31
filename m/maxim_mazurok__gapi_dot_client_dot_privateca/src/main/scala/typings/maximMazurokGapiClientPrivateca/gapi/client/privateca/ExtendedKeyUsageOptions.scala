@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendedKeyUsageOptions extends StObject {
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS. */
-  var clientAuth: js.UndefOr[Boolean] = js.native
+  var clientAuth: js.UndefOr[Boolean] = js.undefined
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication". */
-  var codeSigning: js.UndefOr[Boolean] = js.native
+  var codeSigning: js.UndefOr[Boolean] = js.undefined
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection". */
-  var emailProtection: js.UndefOr[Boolean] = js.native
+  var emailProtection: js.UndefOr[Boolean] = js.undefined
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses". */
-  var ocspSigning: js.UndefOr[Boolean] = js.native
+  var ocspSigning: js.UndefOr[Boolean] = js.undefined
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS. */
-  var serverAuth: js.UndefOr[Boolean] = js.native
+  var serverAuth: js.UndefOr[Boolean] = js.undefined
   
   /** Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time". */
-  var timeStamping: js.UndefOr[Boolean] = js.native
+  var timeStamping: js.UndefOr[Boolean] = js.undefined
 }
 object ExtendedKeyUsageOptions {
   

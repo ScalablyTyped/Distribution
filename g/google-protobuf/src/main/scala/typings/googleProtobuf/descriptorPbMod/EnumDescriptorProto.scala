@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto")
@@ -21,12 +20,12 @@ class EnumDescriptorProto () extends Message {
   def addReservedName(value: String, index: Double): String = js.native
   
   def addReservedRange(): EnumReservedRange = js.native
-  def addReservedRange(value: js.UndefOr[scala.Nothing], index: Double): EnumReservedRange = js.native
+  def addReservedRange(value: Unit, index: Double): EnumReservedRange = js.native
   def addReservedRange(value: EnumReservedRange): EnumReservedRange = js.native
   def addReservedRange(value: EnumReservedRange, index: Double): EnumReservedRange = js.native
   
   def addValue(): EnumValueDescriptorProto = js.native
-  def addValue(value: js.UndefOr[scala.Nothing], index: Double): EnumValueDescriptorProto = js.native
+  def addValue(value: Unit, index: Double): EnumValueDescriptorProto = js.native
   def addValue(value: EnumValueDescriptorProto): EnumValueDescriptorProto = js.native
   def addValue(value: EnumValueDescriptorProto, index: Double): EnumValueDescriptorProto = js.native
   
@@ -99,13 +98,11 @@ object EnumDescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): EnumReservedRange = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: EnumReservedRange, reader: BinaryReader): EnumReservedRange = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: EnumReservedRange, reader: BinaryReader): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.extensions")
     @js.native
@@ -120,20 +117,17 @@ object EnumDescriptorProto {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: EnumReservedRange, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: EnumReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: EnumReservedRange): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: EnumReservedRange): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object AsObject {
       
@@ -161,13 +155,11 @@ object EnumDescriptorProto {
     }
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): EnumDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: EnumDescriptorProto, reader: BinaryReader): EnumDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: EnumDescriptorProto, reader: BinaryReader): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.extensions")
   @js.native
@@ -182,28 +174,25 @@ object EnumDescriptorProto {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: EnumDescriptorProto, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: EnumDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: EnumDescriptorProto): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: EnumDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.EnumOptions.AsObject] = js.native
+    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.EnumOptions.AsObject] = js.undefined
     
-    var reservedNameList: js.Array[String] = js.native
+    var reservedNameList: js.Array[String]
     
     var reservedRangeList: js.Array[
         typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject
-      ] = js.native
+      ]
     
-    var valueList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject] = js.native
+    var valueList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject]
   }
   object AsObject {
     

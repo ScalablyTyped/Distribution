@@ -2,19 +2,17 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体
 //  地图
-@js.native
 trait LocationBaseOptions extends StObject {
   
   //  纬度，浮点数，范围为-90~90，负数表示南纬
-  var latitude: Double = js.native
+  var latitude: Double
   
   //  经度，浮点数，范围为-180~180，负数表示西经
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object LocationBaseOptions {
   

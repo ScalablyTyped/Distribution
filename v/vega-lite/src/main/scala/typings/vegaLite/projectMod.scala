@@ -9,7 +9,6 @@ import typings.vegaLite.timeunitMod.TimeUnitNode
 import typings.vegaLite.transformsMod.TransformCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod extends Shortcut {
@@ -36,18 +35,17 @@ object projectMod extends Shortcut {
   @js.native
   val TUPLE_FIELDS: /* "_tuple_fields" */ String = js.native
   
-  @js.native
   trait SelectionProjection extends StObject {
     
-    var channel: js.UndefOr[SingleDefUnitChannel] = js.native
+    var channel: js.UndefOr[SingleDefUnitChannel] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var hasLegend: js.UndefOr[Boolean] = js.native
+    var hasLegend: js.UndefOr[Boolean] = js.undefined
     
-    var signals: js.UndefOr[Visual] = js.native
+    var signals: js.UndefOr[Visual] = js.undefined
     
-    var `type`: TupleStoreType = js.native
+    var `type`: TupleStoreType
   }
   object SelectionProjection {
     

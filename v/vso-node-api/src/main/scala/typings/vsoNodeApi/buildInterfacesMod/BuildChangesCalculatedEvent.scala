@@ -2,13 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildChangesCalculatedEvent extends BuildUpdatedEvent {
+trait BuildChangesCalculatedEvent
+  extends StObject
+     with BuildUpdatedEvent {
   
-  var changes: js.Array[Change] = js.native
+  var changes: js.Array[Change]
 }
 object BuildChangesCalculatedEvent {
   

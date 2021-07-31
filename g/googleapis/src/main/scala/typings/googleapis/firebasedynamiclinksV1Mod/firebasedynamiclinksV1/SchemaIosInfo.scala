@@ -2,51 +2,49 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * iOS related attributes to the Dynamic Link..
   */
-@js.native
 trait SchemaIosInfo extends StObject {
   
   /**
     * iOS App Store ID.
     */
-  var iosAppStoreId: js.UndefOr[String] = js.native
+  var iosAppStoreId: js.UndefOr[String] = js.undefined
   
   /**
     * iOS bundle ID of the app.
     */
-  var iosBundleId: js.UndefOr[String] = js.native
+  var iosBundleId: js.UndefOr[String] = js.undefined
   
   /**
     * Custom (destination) scheme to use for iOS. By default, we’ll use the
     * bundle ID as the custom scheme. Developer can override this behavior
     * using this param.
     */
-  var iosCustomScheme: js.UndefOr[String] = js.native
+  var iosCustomScheme: js.UndefOr[String] = js.undefined
   
   /**
     * Link to open on iOS if the app is not installed.
     */
-  var iosFallbackLink: js.UndefOr[String] = js.native
+  var iosFallbackLink: js.UndefOr[String] = js.undefined
   
   /**
     * iPad bundle ID of the app.
     */
-  var iosIpadBundleId: js.UndefOr[String] = js.native
+  var iosIpadBundleId: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, this overrides the ios_fallback_link value on iPads.
     */
-  var iosIpadFallbackLink: js.UndefOr[String] = js.native
+  var iosIpadFallbackLink: js.UndefOr[String] = js.undefined
   
   /**
     * iOS minimum version.
     */
-  var iosMinimumVersion: js.UndefOr[String] = js.native
+  var iosMinimumVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaIosInfo {
   

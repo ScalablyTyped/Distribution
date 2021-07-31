@@ -3,7 +3,6 @@ package typings.rmcAlign
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,13 +38,11 @@ object mod {
       @scala.inline
       def monitorWindowResize_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("monitorWindowResize")(x.asInstanceOf[js.Any])
       
-      @JSImport("rmc-align", "default.defaultProps.onAlign")
-      @js.native
-      def onAlign(): Unit = js.native
+      @scala.inline
+      def onAlign(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAlign")().asInstanceOf[Unit]
       
-      @JSImport("rmc-align", "default.defaultProps.target")
-      @js.native
-      def target(): Window = js.native
+      @scala.inline
+      def target(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("target")().asInstanceOf[Window]
     }
   }
 }

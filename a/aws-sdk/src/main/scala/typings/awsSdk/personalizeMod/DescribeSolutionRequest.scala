@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSolutionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the solution to describe.
     */
-  var solutionArn: Arn = js.native
+  var solutionArn: Arn
 }
 object DescribeSolutionRequest {
   

@@ -3,38 +3,37 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.article
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultArticle
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var hide_url: js.UndefOr[Boolean] = js.native
+  var hide_url: js.UndefOr[Boolean] = js.undefined
   
-  var input_message_content: InputMessageContent = js.native
+  var input_message_content: InputMessageContent
   
-  var thumb_height: js.UndefOr[Double] = js.native
+  var thumb_height: js.UndefOr[Double] = js.undefined
   
-  var thumb_url: js.UndefOr[String] = js.native
+  var thumb_url: js.UndefOr[String] = js.undefined
   
-  var thumb_width: js.UndefOr[Double] = js.native
+  var thumb_width: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: article = js.native
+  var `type`: article
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object InlineQueryResultArticle {
   
   @scala.inline
-  def apply(id: String, input_message_content: InputMessageContent, title: String, `type`: article): InlineQueryResultArticle = {
+  def apply(id: String, input_message_content: InputMessageContent, title: String): InlineQueryResultArticle = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], input_message_content = input_message_content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("article")
     __obj.asInstanceOf[InlineQueryResultArticle]
   }
   

@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datum extends StObject {
   
   /**
     * The value of the datum.
     */
-  var VarCharValue: js.UndefOr[datumString] = js.native
+  var VarCharValue: js.UndefOr[datumString] = js.undefined
 }
 object Datum {
   

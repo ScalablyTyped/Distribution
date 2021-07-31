@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationLastMod {
@@ -18,8 +17,9 @@ object paginationLastMod {
   trait PaginationLast
     extends Component[PaginationLastProps, js.Object, js.Any]
   
-  @js.native
-  trait PaginationLastProps extends HTMLProps[PaginationLast]
+  trait PaginationLastProps
+    extends StObject
+       with HTMLProps[PaginationLast]
   object PaginationLastProps {
     
     @scala.inline

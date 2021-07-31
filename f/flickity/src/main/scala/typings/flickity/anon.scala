@@ -2,17 +2,15 @@ package typings.flickity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -33,20 +31,19 @@ object anon {
     }
   }
   
-  @js.native
   trait X0 extends StObject {
     
-    var x0: Double = js.native
+    var x0: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var x3: Double = js.native
+    var x3: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object X0 {
     

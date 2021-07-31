@@ -2,14 +2,12 @@ package typings.semanticUiNag.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.Nag.AnimationSettings._Impl, 'show'> */
-@js.native
 trait PickImplshow extends StObject {
   
-  var show: String = js.native
+  var show: String
 }
 object PickImplshow {
   

@@ -4,10 +4,13 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseButtonClassNamesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object ButtonGlobalClassNames {
     
@@ -71,95 +74,7 @@ object baseButtonClassNamesMod {
     def msButton_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("msButton")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: js.UndefOr[scala.Nothing],
-    menuIconClassName: js.UndefOr[scala.Nothing],
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: js.UndefOr[scala.Nothing],
-    menuIconClassName: js.UndefOr[scala.Nothing],
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean,
-    isSplit: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: js.UndefOr[scala.Nothing],
-    menuIconClassName: String,
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: js.UndefOr[scala.Nothing],
-    menuIconClassName: String,
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean,
-    isSplit: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: String,
-    menuIconClassName: js.UndefOr[scala.Nothing],
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
-  def getBaseButtonClassNames(
-    theme: ITheme,
-    styles: IButtonStyles,
-    className: String,
-    variantClassName: String,
-    iconClassName: String,
-    menuIconClassName: js.UndefOr[scala.Nothing],
-    disabled: Boolean,
-    hasMenu: Boolean,
-    checked: Boolean,
-    expanded: Boolean,
-    isSplit: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
+  @scala.inline
   def getBaseButtonClassNames(
     theme: ITheme,
     styles: IButtonStyles,
@@ -171,9 +86,8 @@ object baseButtonClassNamesMod {
     hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean
-  ): IButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", "getBaseButtonClassNames")
-  @js.native
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
   def getBaseButtonClassNames(
     theme: ITheme,
     styles: IButtonStyles,
@@ -186,26 +100,106 @@ object baseButtonClassNamesMod {
     checked: Boolean,
     expanded: Boolean,
     isSplit: Boolean
-  ): IButtonClassNames = js.native
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], isSplit.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: Unit,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: Unit,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], isSplit.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: Unit,
+    menuIconClassName: String,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: Unit,
+    menuIconClassName: String,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], isSplit.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: Unit,
+    menuIconClassName: Unit,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
+  @scala.inline
+  def getBaseButtonClassNames(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: Unit,
+    menuIconClassName: Unit,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseButtonClassNames")(theme.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], variantClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], menuIconClassName.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], hasMenu.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], isSplit.asInstanceOf[js.Any])).asInstanceOf[IButtonClassNames]
   
-  @js.native
   trait IButtonClassNames extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var flexContainer: js.UndefOr[String] = js.native
+    var flexContainer: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var menuIcon: js.UndefOr[String] = js.native
+    var menuIcon: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var screenReaderText: js.UndefOr[String] = js.native
+    var screenReaderText: js.UndefOr[String] = js.undefined
     
-    var textContainer: js.UndefOr[String] = js.native
+    var textContainer: js.UndefOr[String] = js.undefined
   }
   object IButtonClassNames {
     

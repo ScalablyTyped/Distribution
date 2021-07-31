@@ -3,28 +3,26 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestChildNodesRequest extends StObject {
   
   /**
     * The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the
     * entire subtree or provide an integer larger than 0.
     */
-  var depth: js.UndefOr[integer] = js.native
+  var depth: js.UndefOr[integer] = js.undefined
   
   /**
     * Id of the node to get children for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Whether or not iframes and shadow roots should be traversed when returning the sub-tree
     * (default is false).
     */
-  var pierce: js.UndefOr[Boolean] = js.native
+  var pierce: js.UndefOr[Boolean] = js.undefined
 }
 object RequestChildNodesRequest {
   

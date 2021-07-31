@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationRuleAndOperator extends StObject {
   
   /**
     * An object key name prefix that identifies the subset of objects to which the rule applies.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * An array of tags containing key and value pairs.
     */
-  var Tags: js.UndefOr[TagSet] = js.native
+  var Tags: js.UndefOr[TagSet] = js.undefined
 }
 object ReplicationRuleAndOperator {
   

@@ -3,77 +3,75 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Collaborators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersGetByUsernameResponseData extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var bio: String = js.native
+  var bio: String
   
-  var blog: String = js.native
+  var blog: String
   
-  var company: String = js.native
+  var company: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var email: String = js.native
+  var email: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var followers: Double = js.native
+  var followers: Double
   
-  var followers_url: String = js.native
+  var followers_url: String
   
-  var following: Double = js.native
+  var following: Double
   
-  var following_url: String = js.native
+  var following_url: String
   
-  var gists_url: String = js.native
+  var gists_url: String
   
-  var gravatar_id: String = js.native
+  var gravatar_id: String
   
-  var hireable: Boolean = js.native
+  var hireable: Boolean
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var location: String = js.native
+  var location: String
   
-  var login: String = js.native
+  var login: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var organizations_url: String = js.native
+  var organizations_url: String
   
-  var plan: Collaborators = js.native
+  var plan: Collaborators
   
-  var public_gists: Double = js.native
+  var public_gists: Double
   
-  var public_repos: Double = js.native
+  var public_repos: Double
   
-  var received_events_url: String = js.native
+  var received_events_url: String
   
-  var repos_url: String = js.native
+  var repos_url: String
   
-  var site_admin: Boolean = js.native
+  var site_admin: Boolean
   
-  var starred_url: String = js.native
+  var starred_url: String
   
-  var subscriptions_url: String = js.native
+  var subscriptions_url: String
   
-  var twitter_username: String = js.native
+  var twitter_username: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object UsersGetByUsernameResponseData {
   

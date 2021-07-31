@@ -2,30 +2,30 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlockStatement extends Node {
+trait BlockStatement
+  extends StObject
+     with Node {
   
-  var closeStrip: StripFlags = js.native
+  var closeStrip: StripFlags
   
-  var hash: Hash = js.native
+  var hash: Hash
   
-  var inverse: Program = js.native
+  var inverse: Program
   
-  var inverseStrip: StripFlags = js.native
+  var inverseStrip: StripFlags
   
-  var openStrip: StripFlags = js.native
+  var openStrip: StripFlags
   
-  var params: js.Array[Expression] = js.native
+  var params: js.Array[Expression]
   
-  var path: PathExpression = js.native
+  var path: PathExpression
   
-  var program: Program = js.native
+  var program: Program
   
   @JSName("type")
-  var type_BlockStatement: typings.handlebars.handlebarsStrings.BlockStatement = js.native
+  var type_BlockStatement: typings.handlebars.handlebarsStrings.BlockStatement
 }
 object BlockStatement {
   
@@ -39,11 +39,10 @@ object BlockStatement {
     openStrip: StripFlags,
     params: js.Array[Expression],
     path: PathExpression,
-    program: Program,
-    `type`: typings.handlebars.handlebarsStrings.BlockStatement
+    program: Program
   ): BlockStatement = {
     val __obj = js.Dynamic.literal(closeStrip = closeStrip.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], inverseStrip = inverseStrip.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], openStrip = openStrip.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[BlockStatement]
   }
   

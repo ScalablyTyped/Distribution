@@ -9,19 +9,17 @@ import typings.pngjs.mod.PackerOptions
 import typings.pngjs.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Blue extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object Blue {
     

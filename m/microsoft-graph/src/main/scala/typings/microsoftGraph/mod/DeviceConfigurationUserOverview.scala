@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceConfigurationUserOverview extends Entity {
+trait DeviceConfigurationUserOverview
+  extends StObject
+     with Entity {
   
   // Version of the policy for that overview
-  var configurationVersion: js.UndefOr[Double] = js.native
+  var configurationVersion: js.UndefOr[Double] = js.undefined
   
   // Number of error Users
-  var errorCount: js.UndefOr[Double] = js.native
+  var errorCount: js.UndefOr[Double] = js.undefined
   
   // Number of failed Users
-  var failedCount: js.UndefOr[Double] = js.native
+  var failedCount: js.UndefOr[Double] = js.undefined
   
   // Last update time
-  var lastUpdateDateTime: js.UndefOr[String] = js.native
+  var lastUpdateDateTime: js.UndefOr[String] = js.undefined
   
   // Number of not applicable users
-  var notApplicableCount: js.UndefOr[Double] = js.native
+  var notApplicableCount: js.UndefOr[Double] = js.undefined
   
   // Number of pending Users
-  var pendingCount: js.UndefOr[Double] = js.native
+  var pendingCount: js.UndefOr[Double] = js.undefined
   
   // Number of succeeded Users
-  var successCount: js.UndefOr[Double] = js.native
+  var successCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceConfigurationUserOverview {
   

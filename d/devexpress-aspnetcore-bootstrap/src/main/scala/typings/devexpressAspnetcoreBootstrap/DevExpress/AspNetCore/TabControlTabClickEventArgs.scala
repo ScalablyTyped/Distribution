@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabControlTabClickEventArgs extends TabControlTabCancelEventArgs {
+trait TabControlTabClickEventArgs
+  extends StObject
+     with TabControlTabCancelEventArgs {
   
-  val htmlElement: js.Object = js.native
+  val htmlElement: js.Object
   
-  val htmlEvent: js.Object = js.native
+  val htmlEvent: js.Object
 }
 object TabControlTabClickEventArgs {
   

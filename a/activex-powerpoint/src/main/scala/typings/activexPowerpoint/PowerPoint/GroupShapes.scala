@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupShapes extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: js.Any): Shape
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.GroupShapes_typekey")
-  var PowerPointDotGroupShapes_typekey: GroupShapes = js.native
+  var PowerPointDotGroupShapes_typekey: GroupShapes
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: js.Any): ShapeRange
 }
 object GroupShapes {
   

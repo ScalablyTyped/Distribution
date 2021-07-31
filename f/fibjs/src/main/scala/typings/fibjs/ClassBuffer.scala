@@ -3,7 +3,6 @@ package typings.fibjs
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Buffer 对象为全局基础类，在任何时候都可以直接以 new Buffer(...) 创建：,```JavaScript,var buf = new Buffer();,```
   */
 @js.native
-trait ClassBuffer extends ClassObject {
+trait ClassBuffer
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -69,28 +70,13 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def copy(targetBuffer: ClassBuffer): Double = js.native
-  def copy(
-    targetBuffer: ClassBuffer,
-    targetStart: js.UndefOr[scala.Nothing],
-    sourceStart: js.UndefOr[scala.Nothing],
-    sourceEnd: Double
-  ): Double = js.native
-  def copy(targetBuffer: ClassBuffer, targetStart: js.UndefOr[scala.Nothing], sourceStart: Double): Double = js.native
-  def copy(
-    targetBuffer: ClassBuffer,
-    targetStart: js.UndefOr[scala.Nothing],
-    sourceStart: Double,
-    sourceEnd: Double
-  ): Double = js.native
   def copy(targetBuffer: ClassBuffer, targetStart: Double): Double = js.native
-  def copy(
-    targetBuffer: ClassBuffer,
-    targetStart: Double,
-    sourceStart: js.UndefOr[scala.Nothing],
-    sourceEnd: Double
-  ): Double = js.native
   def copy(targetBuffer: ClassBuffer, targetStart: Double, sourceStart: Double): Double = js.native
   def copy(targetBuffer: ClassBuffer, targetStart: Double, sourceStart: Double, sourceEnd: Double): Double = js.native
+  def copy(targetBuffer: ClassBuffer, targetStart: Double, sourceStart: Unit, sourceEnd: Double): Double = js.native
+  def copy(targetBuffer: ClassBuffer, targetStart: Unit, sourceStart: Double): Double = js.native
+  def copy(targetBuffer: ClassBuffer, targetStart: Unit, sourceStart: Double, sourceEnd: Double): Double = js.native
+  def copy(targetBuffer: ClassBuffer, targetStart: Unit, sourceStart: Unit, sourceEnd: Double): Double = js.native
   
   /**
     * 
@@ -114,7 +100,7 @@ trait ClassBuffer extends ClassObject {
     * 
     * 
     */
-  def entries(): Iterable[_] = js.native
+  def entries(): Iterable[js.Any] = js.native
   
   /**
     * 
@@ -139,9 +125,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def fill(v: String): ClassBuffer = js.native
-  def fill(v: String, offset: js.UndefOr[scala.Nothing], end: Double): ClassBuffer = js.native
   def fill(v: String, offset: Double): ClassBuffer = js.native
   def fill(v: String, offset: Double, end: Double): ClassBuffer = js.native
+  def fill(v: String, offset: Unit, end: Double): ClassBuffer = js.native
   /**
     * 
     * @brief 为 Buffer 对象填充指定内容数据
@@ -154,9 +140,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def fill(v: Double): ClassBuffer = js.native
-  def fill(v: Double, offset: js.UndefOr[scala.Nothing], end: Double): ClassBuffer = js.native
   def fill(v: Double, offset: Double): ClassBuffer = js.native
   def fill(v: Double, offset: Double, end: Double): ClassBuffer = js.native
+  def fill(v: Double, offset: Unit, end: Double): ClassBuffer = js.native
   /**
     * 
     * @brief 为 Buffer 对象填充指定内容数据
@@ -169,9 +155,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def fill(v: ClassBuffer): ClassBuffer = js.native
-  def fill(v: ClassBuffer, offset: js.UndefOr[scala.Nothing], end: Double): ClassBuffer = js.native
   def fill(v: ClassBuffer, offset: Double): ClassBuffer = js.native
   def fill(v: ClassBuffer, offset: Double, end: Double): ClassBuffer = js.native
+  def fill(v: ClassBuffer, offset: Unit, end: Double): ClassBuffer = js.native
   
   /**
     * 
@@ -240,7 +226,7 @@ trait ClassBuffer extends ClassObject {
     * 
     * 
     */
-  def keys(): Iterable[_] = js.native
+  def keys(): Iterable[js.Any] = js.native
   
   /**
     * class prop 
@@ -264,9 +250,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readDoubleBE(): Double = js.native
-  def readDoubleBE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readDoubleBE(offset: Double): Double = js.native
   def readDoubleBE(offset: Double, noAssert: Boolean): Double = js.native
+  def readDoubleBE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -279,9 +265,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readDoubleLE(): Double = js.native
-  def readDoubleLE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readDoubleLE(offset: Double): Double = js.native
   def readDoubleLE(offset: Double, noAssert: Boolean): Double = js.native
+  def readDoubleLE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -294,9 +280,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readFloatBE(): Double = js.native
-  def readFloatBE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readFloatBE(offset: Double): Double = js.native
   def readFloatBE(offset: Double, noAssert: Boolean): Double = js.native
+  def readFloatBE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -309,9 +295,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readFloatLE(): Double = js.native
-  def readFloatLE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readFloatLE(offset: Double): Double = js.native
   def readFloatLE(offset: Double, noAssert: Boolean): Double = js.native
+  def readFloatLE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -324,9 +310,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt16BE(): Double = js.native
-  def readInt16BE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readInt16BE(offset: Double): Double = js.native
   def readInt16BE(offset: Double, noAssert: Boolean): Double = js.native
+  def readInt16BE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -339,9 +325,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt16LE(): Double = js.native
-  def readInt16LE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readInt16LE(offset: Double): Double = js.native
   def readInt16LE(offset: Double, noAssert: Boolean): Double = js.native
+  def readInt16LE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -354,9 +340,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt32BE(): Double = js.native
-  def readInt32BE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readInt32BE(offset: Double): Double = js.native
   def readInt32BE(offset: Double, noAssert: Boolean): Double = js.native
+  def readInt32BE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -369,9 +355,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt32LE(): Double = js.native
-  def readInt32LE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readInt32LE(offset: Double): Double = js.native
   def readInt32LE(offset: Double, noAssert: Boolean): Double = js.native
+  def readInt32LE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -384,9 +370,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt64BE(): ClassInt64 = js.native
-  def readInt64BE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): ClassInt64 = js.native
   def readInt64BE(offset: Double): ClassInt64 = js.native
   def readInt64BE(offset: Double, noAssert: Boolean): ClassInt64 = js.native
+  def readInt64BE(offset: Unit, noAssert: Boolean): ClassInt64 = js.native
   
   /**
     * 
@@ -399,9 +385,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt64LE(): ClassInt64 = js.native
-  def readInt64LE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): ClassInt64 = js.native
   def readInt64LE(offset: Double): ClassInt64 = js.native
   def readInt64LE(offset: Double, noAssert: Boolean): ClassInt64 = js.native
+  def readInt64LE(offset: Unit, noAssert: Boolean): ClassInt64 = js.native
   
   /**
     * 
@@ -414,9 +400,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readInt8(): Double = js.native
-  def readInt8(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readInt8(offset: Double): Double = js.native
   def readInt8(offset: Double, noAssert: Boolean): Double = js.native
+  def readInt8(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -429,9 +415,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readIntBE(): Double = js.native
-  def readIntBE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readIntBE(offset: Double): Double = js.native
   def readIntBE(offset: Double, noAssert: Boolean): Double = js.native
+  def readIntBE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -444,9 +430,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readIntLE(): Double = js.native
-  def readIntLE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readIntLE(offset: Double): Double = js.native
   def readIntLE(offset: Double, noAssert: Boolean): Double = js.native
+  def readIntLE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -459,9 +445,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUInt16BE(): Double = js.native
-  def readUInt16BE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUInt16BE(offset: Double): Double = js.native
   def readUInt16BE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUInt16BE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -474,9 +460,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUInt16LE(): Double = js.native
-  def readUInt16LE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUInt16LE(offset: Double): Double = js.native
   def readUInt16LE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUInt16LE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -489,9 +475,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUInt32BE(): Double = js.native
-  def readUInt32BE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUInt32BE(offset: Double): Double = js.native
   def readUInt32BE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUInt32BE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -504,9 +490,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUInt32LE(): Double = js.native
-  def readUInt32LE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUInt32LE(offset: Double): Double = js.native
   def readUInt32LE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUInt32LE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -519,9 +505,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUInt8(): Double = js.native
-  def readUInt8(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUInt8(offset: Double): Double = js.native
   def readUInt8(offset: Double, noAssert: Boolean): Double = js.native
+  def readUInt8(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -534,9 +520,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUIntBE(): Double = js.native
-  def readUIntBE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUIntBE(offset: Double): Double = js.native
   def readUIntBE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUIntBE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -549,9 +535,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def readUIntLE(): Double = js.native
-  def readUIntLE(offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def readUIntLE(offset: Double): Double = js.native
   def readUIntLE(offset: Double, noAssert: Boolean): Double = js.native
+  def readUIntLE(offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -604,7 +590,7 @@ trait ClassBuffer extends ClassObject {
     * 
     * 
     */
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -618,9 +604,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def toString(codec: String): String = js.native
-  def toString(codec: String, offset: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def toString(codec: String, offset: Double): String = js.native
   def toString(codec: String, offset: Double, end: Double): String = js.native
+  def toString(codec: String, offset: Unit, end: Double): String = js.native
   
   /**
     * 
@@ -630,7 +616,7 @@ trait ClassBuffer extends ClassObject {
     * 
     * 
     */
-  def values(): Iterable[_] = js.native
+  def values(): Iterable[js.Any] = js.native
   
   /**
     * 
@@ -646,15 +632,15 @@ trait ClassBuffer extends ClassObject {
     */
   def write(str: String): Double = js.native
   def write(str: String, codec: String): Double = js.native
-  def write(str: String, offset: js.UndefOr[scala.Nothing], codec: String): Double = js.native
-  def write(str: String, offset: js.UndefOr[scala.Nothing], length: js.UndefOr[scala.Nothing], codec: String): Double = js.native
-  def write(str: String, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  def write(str: String, offset: js.UndefOr[scala.Nothing], length: Double, codec: String): Double = js.native
   def write(str: String, offset: Double): Double = js.native
   def write(str: String, offset: Double, codec: String): Double = js.native
-  def write(str: String, offset: Double, length: js.UndefOr[scala.Nothing], codec: String): Double = js.native
   def write(str: String, offset: Double, length: Double): Double = js.native
   def write(str: String, offset: Double, length: Double, codec: String): Double = js.native
+  def write(str: String, offset: Double, length: Unit, codec: String): Double = js.native
+  def write(str: String, offset: Unit, codec: String): Double = js.native
+  def write(str: String, offset: Unit, length: Double): Double = js.native
+  def write(str: String, offset: Unit, length: Double, codec: String): Double = js.native
+  def write(str: String, offset: Unit, length: Unit, codec: String): Double = js.native
   
   /**
     * 
@@ -724,9 +710,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt16BE(value: Double): Double = js.native
-  def writeInt16BE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt16BE(value: Double, offset: Double): Double = js.native
   def writeInt16BE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt16BE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -740,9 +726,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt16LE(value: Double): Double = js.native
-  def writeInt16LE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt16LE(value: Double, offset: Double): Double = js.native
   def writeInt16LE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt16LE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -756,9 +742,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt32BE(value: Double): Double = js.native
-  def writeInt32BE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt32BE(value: Double, offset: Double): Double = js.native
   def writeInt32BE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt32BE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -772,9 +758,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt32LE(value: Double): Double = js.native
-  def writeInt32LE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt32LE(value: Double, offset: Double): Double = js.native
   def writeInt32LE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt32LE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -788,9 +774,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt64BE(value: ClassInt64): Double = js.native
-  def writeInt64BE(value: ClassInt64, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt64BE(value: ClassInt64, offset: Double): Double = js.native
   def writeInt64BE(value: ClassInt64, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt64BE(value: ClassInt64, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -804,9 +790,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt64LE(value: ClassInt64): Double = js.native
-  def writeInt64LE(value: ClassInt64, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt64LE(value: ClassInt64, offset: Double): Double = js.native
   def writeInt64LE(value: ClassInt64, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt64LE(value: ClassInt64, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -820,9 +806,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeInt8(value: Double): Double = js.native
-  def writeInt8(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeInt8(value: Double, offset: Double): Double = js.native
   def writeInt8(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeInt8(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -836,9 +822,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeIntBE(value: Double): Double = js.native
-  def writeIntBE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeIntBE(value: Double, offset: Double): Double = js.native
   def writeIntBE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeIntBE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -852,9 +838,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeIntLE(value: Double): Double = js.native
-  def writeIntLE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeIntLE(value: Double, offset: Double): Double = js.native
   def writeIntLE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeIntLE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -868,9 +854,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUInt16BE(value: Double): Double = js.native
-  def writeUInt16BE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUInt16BE(value: Double, offset: Double): Double = js.native
   def writeUInt16BE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUInt16BE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -884,9 +870,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUInt16LE(value: Double): Double = js.native
-  def writeUInt16LE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUInt16LE(value: Double, offset: Double): Double = js.native
   def writeUInt16LE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUInt16LE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -900,9 +886,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUInt32BE(value: Double): Double = js.native
-  def writeUInt32BE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUInt32BE(value: Double, offset: Double): Double = js.native
   def writeUInt32BE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUInt32BE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -916,9 +902,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUInt32LE(value: Double): Double = js.native
-  def writeUInt32LE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUInt32LE(value: Double, offset: Double): Double = js.native
   def writeUInt32LE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUInt32LE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -932,9 +918,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUInt8(value: Double): Double = js.native
-  def writeUInt8(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUInt8(value: Double, offset: Double): Double = js.native
   def writeUInt8(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUInt8(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -948,9 +934,9 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUIntBE(value: Double): Double = js.native
-  def writeUIntBE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUIntBE(value: Double, offset: Double): Double = js.native
   def writeUIntBE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUIntBE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
   
   /**
     * 
@@ -964,7 +950,7 @@ trait ClassBuffer extends ClassObject {
     * 
     */
   def writeUIntLE(value: Double): Double = js.native
-  def writeUIntLE(value: Double, offset: js.UndefOr[scala.Nothing], noAssert: Boolean): Double = js.native
   def writeUIntLE(value: Double, offset: Double): Double = js.native
   def writeUIntLE(value: Double, offset: Double, noAssert: Boolean): Double = js.native
+  def writeUIntLE(value: Double, offset: Unit, noAssert: Boolean): Double = js.native
 }

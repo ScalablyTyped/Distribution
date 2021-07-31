@@ -2,101 +2,99 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSimulationJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the simulation job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * Compute information for the simulation job.
     */
-  var compute: js.UndefOr[ComputeResponse] = js.native
+  var compute: js.UndefOr[ComputeResponse] = js.undefined
   
   /**
     * The data sources for the simulation job.
     */
-  var dataSources: js.UndefOr[DataSources] = js.native
+  var dataSources: js.UndefOr[DataSources] = js.undefined
   
   /**
     * the failure behavior for the simulation job.
     */
-  var failureBehavior: js.UndefOr[FailureBehavior] = js.native
+  var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
   
   /**
     * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  
     */
-  var failureCode: js.UndefOr[SimulationJobErrorCode] = js.native
+  var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
   
   /**
     * The IAM role that allows the simulation job to call the AWS APIs that are specified in its associated policies on your behalf.
     */
-  var iamRole: js.UndefOr[IamRole] = js.native
+  var iamRole: js.UndefOr[IamRole] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last started.
     */
-  var lastStartedAt: js.UndefOr[LastStartedAt] = js.native
+  var lastStartedAt: js.UndefOr[LastStartedAt] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The logging configuration.
     */
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   
   /**
     * The maximum simulation job duration in seconds. 
     */
-  var maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.native
+  var maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined
   
   /**
     * Simulation job output files location.
     */
-  var outputLocation: js.UndefOr[OutputLocation] = js.native
+  var outputLocation: js.UndefOr[OutputLocation] = js.undefined
   
   /**
     * The robot application used by the simulation job.
     */
-  var robotApplications: js.UndefOr[RobotApplicationConfigs] = js.native
+  var robotApplications: js.UndefOr[RobotApplicationConfigs] = js.undefined
   
   /**
     * The simulation application used by the simulation job.
     */
-  var simulationApplications: js.UndefOr[SimulationApplicationConfigs] = js.native
+  var simulationApplications: js.UndefOr[SimulationApplicationConfigs] = js.undefined
   
   /**
     * The simulation job execution duration in milliseconds.
     */
-  var simulationTimeMillis: js.UndefOr[SimulationTimeMillis] = js.native
+  var simulationTimeMillis: js.UndefOr[SimulationTimeMillis] = js.undefined
   
   /**
     * The status of the simulation job.
     */
-  var status: js.UndefOr[SimulationJobStatus] = js.native
+  var status: js.UndefOr[SimulationJobStatus] = js.undefined
   
   /**
     * The list of all tags added to the simulation job.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * Information about the vpc configuration.
     */
-  var vpcConfig: js.UndefOr[VPCConfigResponse] = js.native
+  var vpcConfig: js.UndefOr[VPCConfigResponse] = js.undefined
 }
 object CreateSimulationJobResponse {
   

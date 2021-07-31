@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetVisibleSizeRequest extends StObject {
   
   /**
     * Frame height (DIP).
     */
-  var height: integer = js.native
+  var height: integer
   
   /**
     * Frame width (DIP).
     */
-  var width: integer = js.native
+  var width: integer
 }
 object SetVisibleSizeRequest {
   

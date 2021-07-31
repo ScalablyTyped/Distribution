@@ -1,8 +1,9 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
+import typings.octokitTypes.octokitTypesStrings.`squirrel-girl`
 import typings.octokitTypes.octokitTypesStrings.confused
 import typings.octokitTypes.octokitTypesStrings.eyes
 import typings.octokitTypes.octokitTypesStrings.heart
@@ -11,40 +12,42 @@ import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  team_id :number,   discussion_number :number,   comment_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
-@js.native
-trait ReactionsListForTeamDiscussionCommentLegacyEndpoint extends StObject {
+trait ReactionsListForTeamDiscussionCommentLegacyEndpoint
+  extends StObject
+     with RequiredPreview[`squirrel-girl`] {
   
-  var comment_number: Double = js.native
+  var comment_number: Double
   
   /**
     * Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a team discussion comment.
     */
-  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.native
+  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
   
-  var discussion_number: Double = js.native
-  
-  var mediaType: `9` = js.native
+  var discussion_number: Double
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object ReactionsListForTeamDiscussionCommentLegacyEndpoint {
   
   @scala.inline
-  def apply(comment_number: Double, discussion_number: Double, mediaType: `9`, team_id: Double): ReactionsListForTeamDiscussionCommentLegacyEndpoint = {
+  def apply(
+    comment_number: Double,
+    discussion_number: Double,
+    mediaType: `0`[`squirrel-girl`],
+    team_id: Double
+  ): ReactionsListForTeamDiscussionCommentLegacyEndpoint = {
     val __obj = js.Dynamic.literal(comment_number = comment_number.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsListForTeamDiscussionCommentLegacyEndpoint]
   }
@@ -63,9 +66,6 @@ object ReactionsListForTeamDiscussionCommentLegacyEndpoint {
     
     @scala.inline
     def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

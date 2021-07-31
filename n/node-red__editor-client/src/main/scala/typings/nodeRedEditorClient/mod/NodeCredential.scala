@@ -4,13 +4,11 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.password
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCredential extends StObject {
   
-  var `type`: text | password = js.native
+  var `type`: text | password
 }
 object NodeCredential {
   

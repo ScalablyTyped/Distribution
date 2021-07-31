@@ -10,9 +10,9 @@ emotion's cache
 | ------------------ | :-------------: |
 | Full name          | @emotion/cache |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 71 |
-| # downloads        | 135492757 |
+| # releases         | 22 |
+| # dependents       | 82 |
+| # downloads        | 145849830 |
 | # stars            | 0 |
 
 ## Links

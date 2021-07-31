@@ -16,24 +16,22 @@ import typings.storybookUi.storybookUiStrings.ready
 import typings.storybookUi.storybookUiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/api.@storybook/api/dist/modules/refs.ComposedRef & {  state :std.ReturnType<(isLoading : boolean, isAuthRequired : boolean, isError : boolean, isEmpty : boolean): 'auth' | 'error' | 'loading' | 'empty' | 'ready'>} & react.react.RefAttributes<std.HTMLElement> */
-@js.native
 trait ComposedRefstateReturnTyp extends StObject {
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var key: js.UndefOr[typings.react.mod.Key | Null] = js.native
+  var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var loginUrl: js.UndefOr[String] = js.native
+  var loginUrl: js.UndefOr[String] = js.undefined
   
-  var ready: js.UndefOr[Boolean] = js.native
+  var ready: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[Ref[HTMLElement]] = js.native
+  var ref: js.UndefOr[Ref[HTMLElement]] = js.undefined
   
   var state: ReturnType[
     js.Function4[
@@ -43,19 +41,19 @@ trait ComposedRefstateReturnTyp extends StObject {
       /* isEmpty */ Boolean, 
       auth | error | loading | empty | ready
     ]
-  ] = js.native
+  ]
   
-  var stories: StoriesHash = js.native
+  var stories: StoriesHash
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.native
+  var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var versions: js.UndefOr[Versions] = js.native
+  var versions: js.UndefOr[Versions] = js.undefined
 }
 object ComposedRefstateReturnTyp {
   

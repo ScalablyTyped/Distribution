@@ -2,10 +2,8 @@ package typings.microsoftAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String extends StObject {
   
   //#region Extensions
@@ -13,25 +11,25 @@ trait String extends StObject {
     * Formats a number by using the invariant culture.
     * @returns true if the end of the String object matches suffix; otherwise, false.
     */
-  def endsWith(suffix: java.lang.String): Boolean = js.native
+  def endsWith(suffix: java.lang.String): Boolean
   
   /**
     * Removes leading and trailing white-space characters from a String object.
     * @returns A copy of the string with all white-space characters removed from the start and end of the string.
     */
-  def trim(): java.lang.String = js.native
+  def trim(): java.lang.String
   
   /**
     * Removes trailing white-space characters from a String object.
     * @returns A copy of the string with all white-space characters removed from the end of the string.
     */
-  def trimEnd(): java.lang.String = js.native
+  def trimEnd(): java.lang.String
   
   /**
     * Removes leading white-space characters from a String object.
     * @returns A copy of the string with all white-space characters removed from the start of the string.
     */
-  def trimStart(): java.lang.String = js.native
+  def trimStart(): java.lang.String
 }
 object String {
   

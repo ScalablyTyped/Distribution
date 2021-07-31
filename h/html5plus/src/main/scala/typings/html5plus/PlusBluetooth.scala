@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,69 +47,11 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def closeBLEConnection(): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(deviceId: js.UndefOr[scala.Nothing], success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def closeBLEConnection(deviceId: String): Unit = js.native
-  def closeBLEConnection(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def closeBLEConnection(deviceId: String, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def closeBLEConnection(
     deviceId: String,
     success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBLEConnection(
-    deviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def closeBLEConnection(
@@ -119,6 +60,46 @@ trait PlusBluetooth extends StObject {
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def closeBLEConnection(
+    deviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(deviceId: String, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def closeBLEConnection(
+    deviceId: String,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(deviceId: String, success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def closeBLEConnection(deviceId: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def closeBLEConnection(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(deviceId: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def closeBLEConnection(
+    deviceId: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBLEConnection(deviceId: Unit, success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 关闭蓝牙模块
@@ -128,29 +109,25 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def closeBluetoothAdapter(): Unit = js.native
-  def closeBluetoothAdapter(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def closeBluetoothAdapter(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def closeBluetoothAdapter(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def closeBluetoothAdapter(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def closeBluetoothAdapter(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def closeBluetoothAdapter(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def closeBluetoothAdapter(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def closeBluetoothAdapter(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBluetoothAdapter(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def closeBluetoothAdapter(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def closeBluetoothAdapter(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 连接低功耗蓝牙设备
@@ -159,176 +136,13 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def createBLEConnection(): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(deviceId: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: js.UndefOr[scala.Nothing],
-    timeout: Double,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def createBLEConnection(deviceId: String): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def createBLEConnection(deviceId: String, timeout: Double): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: Double,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def createBLEConnection(deviceId: String, timeout: Double, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def createBLEConnection(
     deviceId: String,
     timeout: Double,
     success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def createBLEConnection(
-    deviceId: String,
-    timeout: Double,
-    success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def createBLEConnection(
@@ -336,6 +150,137 @@ trait PlusBluetooth extends StObject {
     timeout: Double,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Double,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: String, timeout: Double, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Double,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Double,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: String, timeout: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: String, timeout: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: String,
+    timeout: Unit,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: Unit, timeout: Double): Unit = js.native
+  def createBLEConnection(deviceId: Unit, timeout: Double, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Double,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Double,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Double,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: Unit, timeout: Double, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Double,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Double,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: Unit, timeout: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(deviceId: Unit, timeout: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def createBLEConnection(
+    deviceId: Unit,
+    timeout: Unit,
+    success: Unit,
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -345,176 +290,13 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def getBLEDeviceCharacteristics(): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(deviceId: js.UndefOr[scala.Nothing], serviceId: String): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: js.UndefOr[scala.Nothing],
-    serviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBLEDeviceCharacteristics(deviceId: String): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBLEDeviceCharacteristics(deviceId: String, serviceId: String): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBLEDeviceCharacteristics(deviceId: String, serviceId: String, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getBLEDeviceCharacteristics(
     deviceId: String,
     serviceId: String,
     success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceCharacteristics(
-    deviceId: String,
-    serviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def getBLEDeviceCharacteristics(
@@ -522,6 +304,137 @@ trait PlusBluetooth extends StObject {
     serviceId: String,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: String, serviceId: String, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: String,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: String,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: String, serviceId: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: String, serviceId: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: String,
+    serviceId: Unit,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: Unit, serviceId: String): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: Unit, serviceId: String, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: Unit, serviceId: String, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: String,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: String,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: Unit, serviceId: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(deviceId: Unit, serviceId: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceCharacteristics(
+    deviceId: Unit,
+    serviceId: Unit,
+    success: Unit,
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -531,69 +444,11 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def getBLEDeviceServices(): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(deviceId: js.UndefOr[scala.Nothing], success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBLEDeviceServices(deviceId: String): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: String,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBLEDeviceServices(deviceId: String, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getBLEDeviceServices(
     deviceId: String,
     success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBLEDeviceServices(
-    deviceId: String,
-    success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def getBLEDeviceServices(
@@ -602,6 +457,46 @@ trait PlusBluetooth extends StObject {
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: String,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(deviceId: String, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: String,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(deviceId: String, success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceServices(deviceId: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(deviceId: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBLEDeviceServices(
+    deviceId: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBLEDeviceServices(deviceId: Unit, success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 获取本机蓝牙适配器状态
@@ -610,29 +505,25 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def getBluetoothAdapterState(): Unit = js.native
-  def getBluetoothAdapterState(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBluetoothAdapterState(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBluetoothAdapterState(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBluetoothAdapterState(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBluetoothAdapterState(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBluetoothAdapterState(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getBluetoothAdapterState(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getBluetoothAdapterState(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBluetoothAdapterState(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBluetoothAdapterState(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBluetoothAdapterState(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 获取已搜索到的蓝牙设备
@@ -642,29 +533,25 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def getBluetoothDevices(): Unit = js.native
-  def getBluetoothDevices(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBluetoothDevices(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBluetoothDevices(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBluetoothDevices(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBluetoothDevices(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBluetoothDevices(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getBluetoothDevices(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getBluetoothDevices(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBluetoothDevices(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBluetoothDevices(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBluetoothDevices(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 根据uuid获取处于已连接的设备
@@ -673,77 +560,64 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def getConnectedBluetoothDevices(): Unit = js.native
+  def getConnectedBluetoothDevices(services: js.Array[js.Any]): Unit = js.native
+  def getConnectedBluetoothDevices(services: js.Array[js.Any], success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getConnectedBluetoothDevices(services: js.UndefOr[scala.Nothing], success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
+    services: js.Array[js.Any],
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.UndefOr[scala.Nothing],
+    services: js.Array[js.Any],
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
-  def getConnectedBluetoothDevices(services: js.Array[_]): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.Array[_],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
+    services: js.Array[js.Any],
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getConnectedBluetoothDevices(services: js.Array[js.Any], success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.Array[_],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getConnectedBluetoothDevices(
-    services: js.Array[_],
-    success: js.UndefOr[scala.Nothing],
+    services: js.Array[js.Any],
+    success: Unit,
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
-  def getConnectedBluetoothDevices(services: js.Array[_], success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.Array[_],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
+    services: js.Array[js.Any],
+    success: Unit,
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getConnectedBluetoothDevices(services: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.Array[_],
+    services: Unit,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def getConnectedBluetoothDevices(
-    services: js.Array[_],
+    services: Unit,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getConnectedBluetoothDevices(
+    services: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getConnectedBluetoothDevices(services: Unit, success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getConnectedBluetoothDevices(
+    services: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getConnectedBluetoothDevices(services: Unit, success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 启用低功耗蓝牙设备特征值变化时的notify功能，订阅特征值
@@ -804,29 +678,25 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def openBluetoothAdapter(): Unit = js.native
-  def openBluetoothAdapter(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def openBluetoothAdapter(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def openBluetoothAdapter(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def openBluetoothAdapter(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def openBluetoothAdapter(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def openBluetoothAdapter(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def openBluetoothAdapter(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def openBluetoothAdapter(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def openBluetoothAdapter(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def openBluetoothAdapter(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def openBluetoothAdapter(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 读取低功耗蓝牙设备指定特征值的二进制数据值
@@ -852,7 +722,7 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def startBluetoothDevicesDiscovery(
-    services: js.UndefOr[js.Array[_]],
+    services: js.UndefOr[js.Array[js.Any]],
     allowDuplicatesKey: js.UndefOr[Boolean],
     interval: js.UndefOr[Double],
     success: js.UndefOr[js.Function1[/* result */ js.Any, Unit]],
@@ -868,29 +738,25 @@ trait PlusBluetooth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   def stopBluetoothDevicesDiscovery(): Unit = js.native
-  def stopBluetoothDevicesDiscovery(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def stopBluetoothDevicesDiscovery(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def stopBluetoothDevicesDiscovery(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def stopBluetoothDevicesDiscovery(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def stopBluetoothDevicesDiscovery(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def stopBluetoothDevicesDiscovery(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def stopBluetoothDevicesDiscovery(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def stopBluetoothDevicesDiscovery(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def stopBluetoothDevicesDiscovery(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def stopBluetoothDevicesDiscovery(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def stopBluetoothDevicesDiscovery(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 向低功耗蓝牙设备指定特征值写入二进制数据

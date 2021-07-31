@@ -2,25 +2,25 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrismaticConstraintOptions extends ConstraintOptions {
+trait PrismaticConstraintOptions
+  extends StObject
+     with ConstraintOptions {
   
-  var disableRotationalLock: js.UndefOr[Boolean] = js.native
+  var disableRotationalLock: js.UndefOr[Boolean] = js.undefined
   
-  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var localAxisA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAxisA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var lowerLimit: js.UndefOr[Double] = js.native
+  var lowerLimit: js.UndefOr[Double] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
   
-  var upperLimit: js.UndefOr[Double] = js.native
+  var upperLimit: js.UndefOr[Double] = js.undefined
 }
 object PrismaticConstraintOptions {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceHealthSummary extends StObject {
   
   /**
     *  Red. The health agent is reporting a high number of request failures or other issues for an instance or environment.
     */
-  var Degraded: js.UndefOr[NullableInteger] = js.native
+  var Degraded: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Green. An operation is in progress on an instance.
     */
-  var Info: js.UndefOr[NullableInteger] = js.native
+  var Info: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Grey. AWS Elastic Beanstalk and the health agent are reporting no data on an instance.
     */
-  var NoData: js.UndefOr[NullableInteger] = js.native
+  var NoData: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Green. An instance is passing health checks and the health agent is not reporting any problems.
     */
-  var Ok: js.UndefOr[NullableInteger] = js.native
+  var Ok: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Grey. An operation is in progress on an instance within the command timeout.
     */
-  var Pending: js.UndefOr[NullableInteger] = js.native
+  var Pending: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Red. The health agent is reporting a very high number of request failures or other issues for an instance or environment.
     */
-  var Severe: js.UndefOr[NullableInteger] = js.native
+  var Severe: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Grey. AWS Elastic Beanstalk and the health agent are reporting an insufficient amount of data on an instance.
     */
-  var Unknown: js.UndefOr[NullableInteger] = js.native
+  var Unknown: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     *  Yellow. The health agent is reporting a moderate number of request failures or other issues for an instance or environment.
     */
-  var Warning: js.UndefOr[NullableInteger] = js.native
+  var Warning: js.UndefOr[NullableInteger] = js.undefined
 }
 object InstanceHealthSummary {
   

@@ -3,23 +3,21 @@ package typings.pubnub.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubnubStatus extends StObject {
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var errorData: js.UndefOr[Error] = js.native
+  var errorData: js.UndefOr[Error] = js.undefined
   
   // see Pubnub.Categories
-  var operation: String = js.native
+  var operation: String
   
   // see Pubnub.Operations
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object PubnubStatus {
   

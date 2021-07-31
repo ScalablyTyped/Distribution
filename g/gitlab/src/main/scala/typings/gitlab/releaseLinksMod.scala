@@ -9,7 +9,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object releaseLinksMod {
@@ -30,9 +29,9 @@ object releaseLinksMod {
     def create(projectId: Double, tagName: String, name: String, url: String, options: Sudo): js.Promise[js.Object] = js.native
     
     def edit(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
-    def edit(projectId: String, tagName: String, linkId: Double, options: Sudo with (Name | Url)): js.Promise[js.Object] = js.native
+    def edit(projectId: String, tagName: String, linkId: Double, options: Sudo & (Name | Url)): js.Promise[js.Object] = js.native
     def edit(projectId: Double, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
-    def edit(projectId: Double, tagName: String, linkId: Double, options: Sudo with (Name | Url)): js.Promise[js.Object] = js.native
+    def edit(projectId: Double, tagName: String, linkId: Double, options: Sudo & (Name | Url)): js.Promise[js.Object] = js.native
     
     def remove(projectId: String, tagName: String, linkId: Double): js.Promise[js.Object] = js.native
     def remove(projectId: String, tagName: String, linkId: Double, options: Sudo): js.Promise[js.Object] = js.native

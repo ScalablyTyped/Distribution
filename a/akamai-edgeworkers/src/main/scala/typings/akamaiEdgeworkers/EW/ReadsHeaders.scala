@@ -2,16 +2,14 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadsHeaders extends StObject {
   
   /**
     * Provides header values by header name
     */
-  def getHeader(name: String): js.Array[String] | Null = js.native
+  def getHeader(name: String): js.Array[String] | Null
 }
 object ReadsHeaders {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStatusEvent extends StObject {
   
   /**
     * The event code.
     */
-  var Code: js.UndefOr[EventCode] = js.native
+  var Code: js.UndefOr[EventCode] = js.undefined
   
   /**
     * A description of the event. After a scheduled event is completed, it can still be described for up to a week. If the event has been completed, this description starts with the following text: [Completed].
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the event.
     */
-  var InstanceEventId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceEventId] = js.native
+  var InstanceEventId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceEventId] = js.undefined
   
   /**
     * The latest scheduled end time for the event.
     */
-  var NotAfter: js.UndefOr[DateTime] = js.native
+  var NotAfter: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The earliest scheduled start time for the event.
     */
-  var NotBefore: js.UndefOr[DateTime] = js.native
+  var NotBefore: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The deadline for starting the event.
     */
-  var NotBeforeDeadline: js.UndefOr[DateTime] = js.native
+  var NotBeforeDeadline: js.UndefOr[DateTime] = js.undefined
 }
 object InstanceStatusEvent {
   

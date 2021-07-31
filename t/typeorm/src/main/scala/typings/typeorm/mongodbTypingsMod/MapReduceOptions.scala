@@ -2,69 +2,67 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapReduceOptions extends StObject {
   
   /**
     * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
     */
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Finalize function.
     */
   @JSName("finalize")
-  var finalize_FMapReduceOptions: js.UndefOr[js.Function | String] = js.native
+  var finalize_FMapReduceOptions: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * It is possible to make the execution stay in JS. Provided in MongoDB > 2.0.X.
     */
-  var jsMode: js.UndefOr[Boolean] = js.native
+  var jsMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Keep temporary data.
     */
-  var keeptemp: js.UndefOr[Boolean] = js.native
+  var keeptemp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of objects to return from collection.
     */
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Sets the output target for the map reduce job.
     * {inline:1} | {replace:'collectionName'} | {merge:'collectionName'} | {reduce:'collectionName'}.
     */
-  var out: js.UndefOr[js.Object] = js.native
+  var out: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Query filter object.
     */
-  var query: js.UndefOr[js.Object] = js.native
+  var query: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Can pass in variables that can be access from map/reduce/finalize.
     */
-  var scope: js.UndefOr[js.Object] = js.native
+  var scope: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Sorts the input objects using this key. Useful for optimization, like sorting by the emit key for fewer reduces.
     */
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Provide statistics on job execution time.
     */
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object MapReduceOptions {
   

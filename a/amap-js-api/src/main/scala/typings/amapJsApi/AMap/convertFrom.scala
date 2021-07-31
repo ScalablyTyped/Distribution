@@ -2,24 +2,22 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertFrom {
   
-  @js.native
   trait Result extends StObject {
     
     /**
       * 成功状态文字描述
       */
-    var info: String = js.native
+    var info: String
     
     // 'ok'
     /**
       * 高德坐标集合
       */
-    var locations: js.Array[LngLat] = js.native
+    var locations: js.Array[LngLat]
   }
   object Result {
     

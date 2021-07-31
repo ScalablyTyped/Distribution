@@ -4,51 +4,49 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcChangesetRef extends StObject {
   
   /**
     * A collection of REST reference links.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Alias or display name of user
     */
-  var author: IdentityRef = js.native
+  var author: IdentityRef
   
   /**
     * Id of the changeset.
     */
-  var changesetId: Double = js.native
+  var changesetId: Double
   
   /**
     * Alias or display name of user
     */
-  var checkedInBy: IdentityRef = js.native
+  var checkedInBy: IdentityRef
   
   /**
     * Comment for the changeset.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Was the Comment result truncated?
     */
-  var commentTruncated: Boolean = js.native
+  var commentTruncated: Boolean
   
   /**
     * Creation date of the changeset.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * URL to retrieve the item.
     */
-  var url: String = js.native
+  var url: String
 }
 object TfvcChangesetRef {
   

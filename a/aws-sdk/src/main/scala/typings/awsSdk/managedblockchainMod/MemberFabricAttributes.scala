@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberFabricAttributes extends StObject {
   
   /**
     * The user name for the initial administrator user for the member.
     */
-  var AdminUsername: js.UndefOr[UsernameString] = js.native
+  var AdminUsername: js.UndefOr[UsernameString] = js.undefined
   
   /**
     * The endpoint used to access the member's certificate authority.
     */
-  var CaEndpoint: js.UndefOr[String] = js.native
+  var CaEndpoint: js.UndefOr[String] = js.undefined
 }
 object MemberFabricAttributes {
   

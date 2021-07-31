@@ -2,21 +2,19 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait buttonDefinition extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconOffset: js.UndefOr[Double] = js.native
+  var iconOffset: js.UndefOr[Double] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var toolbar: String = js.native
+  var toolbar: String
 }
 object buttonDefinition {
   

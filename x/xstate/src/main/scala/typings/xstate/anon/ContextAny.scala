@@ -2,15 +2,13 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextAny extends StObject {
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ContextAny {
   

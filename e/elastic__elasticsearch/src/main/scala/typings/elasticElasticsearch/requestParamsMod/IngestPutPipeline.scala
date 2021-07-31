@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IngestPutPipeline[T] extends Generic {
+trait IngestPutPipeline[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var id: String = js.native
+  var id: String
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object IngestPutPipeline {
   
@@ -25,7 +25,7 @@ object IngestPutPipeline {
   }
   
   @scala.inline
-  implicit class IngestPutPipelineMutableBuilder[Self <: IngestPutPipeline[_], T] (val x: Self with IngestPutPipeline[T]) extends AnyVal {
+  implicit class IngestPutPipelineMutableBuilder[Self <: IngestPutPipeline[?], T] (val x: Self & IngestPutPipeline[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.wafregional
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoMatchSetGeoMatchConstraint extends StObject {
   
   /**
     * The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The country that you want AWS WAF to search for.
     * This is the two-letter country code, e.g. `US`, `CA`, `RU`, `CN`, etc.
     * See [docs](https://docs.aws.amazon.com/waf/latest/APIReference/API_GeoMatchConstraint.html) for all supported values.
     */
-  var value: String = js.native
+  var value: String
 }
 object GeoMatchSetGeoMatchConstraint {
   

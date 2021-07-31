@@ -11,8 +11,8 @@ fast time zone lookup
 | Full name          | tz-lookup |
 | Keywords           | tz, timezone, time zone |
 | # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 901368 |
+| # dependents       | 17 |
+| # downloads        | 1108806 |
 | # stars            | 0 |
 
 ## Links

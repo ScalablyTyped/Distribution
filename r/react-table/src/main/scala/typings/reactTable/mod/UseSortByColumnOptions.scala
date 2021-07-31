@@ -2,22 +2,20 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  defaultCanSort :boolean,   disableSortBy :boolean,   sortDescFirst :boolean,   sortInverted :boolean,   sortType :react-table.react-table.SortByFn<D> | react-table.react-table.DefaultSortTypes | string}> */
-@js.native
 trait UseSortByColumnOptions[D /* <: js.Object */] extends StObject {
   
-  var defaultCanSort: js.UndefOr[Boolean] = js.native
+  var defaultCanSort: js.UndefOr[Boolean] = js.undefined
   
-  var disableSortBy: js.UndefOr[Boolean] = js.native
+  var disableSortBy: js.UndefOr[Boolean] = js.undefined
   
-  var sortDescFirst: js.UndefOr[Boolean] = js.native
+  var sortDescFirst: js.UndefOr[Boolean] = js.undefined
   
-  var sortInverted: js.UndefOr[Boolean] = js.native
+  var sortInverted: js.UndefOr[Boolean] = js.undefined
   
-  var sortType: js.UndefOr[SortByFn[D] | DefaultSortTypes | String] = js.native
+  var sortType: js.UndefOr[SortByFn[D] | DefaultSortTypes | String] = js.undefined
 }
 object UseSortByColumnOptions {
   
@@ -28,7 +26,7 @@ object UseSortByColumnOptions {
   }
   
   @scala.inline
-  implicit class UseSortByColumnOptionsMutableBuilder[Self <: UseSortByColumnOptions[_], D /* <: js.Object */] (val x: Self with UseSortByColumnOptions[D]) extends AnyVal {
+  implicit class UseSortByColumnOptionsMutableBuilder[Self <: UseSortByColumnOptions[?], D /* <: js.Object */] (val x: Self & UseSortByColumnOptions[D]) extends AnyVal {
     
     @scala.inline
     def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])

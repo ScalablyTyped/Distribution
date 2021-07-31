@@ -5,12 +5,15 @@ import typings.relayRuntime.anon.Stop
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayProfilerMod {
   
   object RelayProfiler {
+    
+    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Attaches a handler to all methods instrumented with the supplied name.
@@ -28,31 +31,27 @@ object relayProfilerMod {
       *   RelayProfiler.attachAggregateHandler('render', ...);
       *
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.attachAggregateHandler")
-    @js.native
-    def attachAggregateHandler(name: String, handler: Handler): Unit = js.native
+    @scala.inline
+    def attachAggregateHandler(name: String, handler: Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Attaches a handler to profiles with the supplied name. You can also
       * attach to the special name '*' which is a catch all.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.attachProfileHandler")
-    @js.native
-    def attachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+    @scala.inline
+    def attachProfileHandler(name: String, handler: ProfileHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProfileHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detaches a handler attached via `attachAggregateHandler`.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.detachAggregateHandler")
-    @js.native
-    def detachAggregateHandler(name: String, handler: Handler): Unit = js.native
+    @scala.inline
+    def detachAggregateHandler(name: String, handler: Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detaches a handler attached via `attachProfileHandler`.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.detachProfileHandler")
-    @js.native
-    def detachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+    @scala.inline
+    def detachProfileHandler(name: String, handler: ProfileHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachProfileHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wraps the supplied function with one that provides the `attachHandler` and
@@ -66,9 +65,8 @@ object relayProfilerMod {
       * NOTE: The instrumentation assumes that no handlers are attached or detached
       * in the course of executing another handler.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.instrument")
-    @js.native
-    def instrument[T /* <: js.Function0[Unit] */](name: String, originalFunction: T): T = js.native
+    @scala.inline
+    def instrument[T /* <: js.Function0[Unit] */](name: String, originalFunction: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("instrument")(name.asInstanceOf[js.Any], originalFunction.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Instruments methods on a class or object. This re-assigns the method in
@@ -85,9 +83,8 @@ object relayProfilerMod {
       * As a result, the methods will be replaced by wrappers that provide the
       * `attachHandler` and `detachHandler` methods.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.instrumentMethods")
-    @js.native
-    def instrumentMethods(`object`: js.Function0[Unit | js.Object], names: StringDictionary[String]): Unit = js.native
+    @scala.inline
+    def instrumentMethods(`object`: js.Function0[Unit | js.Object], names: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instrumentMethods")(`object`.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Instruments profiling for arbitrarily asynchronous code by a name.
@@ -102,12 +99,10 @@ object relayProfilerMod {
       * Arbitrary state can also be passed into `profile` as a second argument. The
       * attached profile handlers will receive this as the second argument.
       */
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.profile")
-    @js.native
-    def profile(name: String): Stop = js.native
-    @JSImport("relay-runtime/lib/util/RelayProfiler", "RelayProfiler.profile")
-    @js.native
-    def profile(name: String, state: js.Any): Stop = js.native
+    @scala.inline
+    def profile(name: String): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any]).asInstanceOf[Stop]
+    @scala.inline
+    def profile(name: String, state: js.Any): Stop = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stop]
   }
   
   type Handler = js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]

@@ -3,14 +3,14 @@ package typings.knockoutPreRendered
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KnockoutObservableFunctions[T] extends // Ko specific
+trait KnockoutObservableFunctions[T]
+  extends StObject
+     with // Ko specific
 /* key */ StringDictionary[KnockoutBindingHandler] {
   
-  def equalityComparer(a: js.Any, b: js.Any): Boolean = js.native
+  def equalityComparer(a: js.Any, b: js.Any): Boolean
 }
 object KnockoutObservableFunctions {
   
@@ -21,7 +21,7 @@ object KnockoutObservableFunctions {
   }
   
   @scala.inline
-  implicit class KnockoutObservableFunctionsMutableBuilder[Self <: KnockoutObservableFunctions[_], T] (val x: Self with KnockoutObservableFunctions[T]) extends AnyVal {
+  implicit class KnockoutObservableFunctionsMutableBuilder[Self <: KnockoutObservableFunctions[?], T] (val x: Self & KnockoutObservableFunctions[T]) extends AnyVal {
     
     @scala.inline
     def setEqualityComparer(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equalityComparer", js.Any.fromFunction2(value))

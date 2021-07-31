@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IRemoveWhiteFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIRemoveWhiteFilter
-  extends Instantiable0[IRemoveWhiteFilter]
+  extends StObject
+     with Instantiable0[IRemoveWhiteFilter]
      with Instantiable1[/* options */ Distance, IRemoveWhiteFilter] {
   
   /**

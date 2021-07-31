@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VertexAttributes extends Object {
+trait VertexAttributes
+  extends StObject
+     with Object {
   
   /**
     * The normal buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var normal: js.UndefOr[Float32Array] = js.native
+  var normal: js.UndefOr[Float32Array] = js.undefined
   
   /**
     * The position buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var position: Float64Array = js.native
+  var position: Float64Array
   
   /**
     * The tangent buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var tangent: js.UndefOr[Float32Array] = js.native
+  var tangent: js.UndefOr[Float32Array] = js.undefined
 }
 object VertexAttributes {
   

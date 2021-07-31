@@ -2,30 +2,28 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Floodlight Activity List Response
   */
-@js.native
 trait SchemaFloodlightActivitiesListResponse extends StObject {
   
   /**
     * Floodlight activity collection.
     */
-  var floodlightActivities: js.UndefOr[js.Array[SchemaFloodlightActivity]] = js.native
+  var floodlightActivities: js.UndefOr[js.Array[SchemaFloodlightActivity]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#floodlightActivitiesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaFloodlightActivitiesListResponse {
   

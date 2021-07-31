@@ -3,12 +3,10 @@ package typings.chaiSpies
 import typings.chaiSpies.Chai.Assertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ChaiSpies {
   
-  @js.native
   trait Always extends StObject {
     
     /**
@@ -33,9 +31,25 @@ object ChaiSpies {
       h: js.UndefOr[js.Any],
       i: js.UndefOr[js.Any],
       j: js.UndefOr[js.Any]
-    ): Assertion = js.native
+    ): Assertion
     @JSName("with")
-    var with_Original: AlwaysWith = js.native
+    var with_Original: AlwaysWith
+  }
+  object Always {
+    
+    @scala.inline
+    def apply(`with`: AlwaysWith): Always = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Always]
+    }
+    
+    @scala.inline
+    implicit class AlwaysMutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setWith(value: AlwaysWith): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -89,7 +103,6 @@ object ChaiSpies {
     ): Assertion = js.native
   }
   
-  @js.native
   trait At extends StObject {
     
     /**
@@ -102,7 +115,7 @@ object ChaiSpies {
       * spy.should.not.have.been.called.min(3);
       * ```
       */
-    def least(n: Double): Assertion = js.native
+    def least(n: Double): Assertion
     
     /**
       * ####.max(n) / .at.most(n)
@@ -114,7 +127,7 @@ object ChaiSpies {
       * spy.should.not.have.been.called.max(3);
       * ```
       */
-    def most(n: Double): Assertion = js.native
+    def most(n: Double): Assertion
   }
   object At {
     
@@ -136,7 +149,9 @@ object ChaiSpies {
   }
   
   @js.native
-  trait Been extends Assertion {
+  trait Been
+    extends StObject
+       with Assertion {
     
     def apply(): Assertion = js.native
     
@@ -318,7 +333,6 @@ object ChaiSpies {
     var with_Original: With = js.native
   }
   
-  @js.native
   trait Resetable extends StObject {
     
     /**
@@ -327,7 +341,7 @@ object ChaiSpies {
       * Resets __spy object parameters for instantiation and reuse
       * @returns proxy spy object
       */
-    def reset(): this.type = js.native
+    def reset(): this.type
   }
   object Resetable {
     
@@ -362,13 +376,13 @@ object ChaiSpies {
     def on(
       `object`: js.Object,
       methodNames: String,
-      fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
+      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
     ): js.Any = js.native
     def on(`object`: js.Object, methodNames: js.Array[String]): js.Any = js.native
     def on(
       `object`: js.Object,
       methodNames: js.Array[String],
-      fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
+      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
     ): js.Any = js.native
     
     /**
@@ -383,11 +397,11 @@ object ChaiSpies {
       * @return {Sandbox} Sandbox instance
       */
     def restore(): Unit = js.native
-    def restore(`object`: js.UndefOr[scala.Nothing], methodNames: String): Unit = js.native
-    def restore(`object`: js.UndefOr[scala.Nothing], methodNames: js.Array[String]): Unit = js.native
     def restore(`object`: js.Object): Unit = js.native
     def restore(`object`: js.Object, methodNames: String): Unit = js.native
     def restore(`object`: js.Object, methodNames: js.Array[String]): Unit = js.native
+    def restore(`object`: Unit, methodNames: String): Unit = js.native
+    def restore(`object`: Unit, methodNames: js.Array[String]): Unit = js.native
   }
   
   @js.native
@@ -461,13 +475,13 @@ object ChaiSpies {
     def on(
       `object`: js.Object,
       methodNames: String,
-      fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
+      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
     ): js.Any = js.native
     def on(`object`: js.Object, methodNames: js.Array[String]): js.Any = js.native
     def on(
       `object`: js.Object,
       methodNames: js.Array[String],
-      fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
+      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
     ): js.Any = js.native
     
     /**
@@ -483,11 +497,11 @@ object ChaiSpies {
       * @return {Sandbox} Sandbox instance
       */
     def restore(): Unit = js.native
-    def restore(`object`: js.UndefOr[scala.Nothing], methodNames: String): Unit = js.native
-    def restore(`object`: js.UndefOr[scala.Nothing], methodNames: js.Array[String]): Unit = js.native
     def restore(`object`: js.Object): Unit = js.native
     def restore(`object`: js.Object, methodNames: String): Unit = js.native
     def restore(`object`: js.Object, methodNames: js.Array[String]): Unit = js.native
+    def restore(`object`: Unit, methodNames: String): Unit = js.native
+    def restore(`object`: Unit, methodNames: js.Array[String]): Unit = js.native
     
     /**
       * #### chai.spy.returns (function)
@@ -548,7 +562,18 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5, T5: A6, T6: A7, T7: A8, T8: A9, T9: A10): R = js.native
+    override def apply(
+      arg1: A1,
+      arg2: A2,
+      arg3: A3,
+      arg4: A4,
+      arg5: A5,
+      arg6: A6,
+      arg7: A7,
+      arg8: A8,
+      arg9: A9,
+      arg10: A10
+    ): R = js.native
   }
   
   @js.native
@@ -557,7 +582,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1): R = js.native
+    override def apply(arg1: A1): R = js.native
   }
   
   type SpyFunc2[A1, A2, R] = js.Function2[/* a */ A1, /* b */ A2, R]
@@ -568,7 +593,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2): R = js.native
+    override def apply(arg1: A1, arg2: A2): R = js.native
   }
   
   type SpyFunc3[A1, A2, A3, R] = js.Function3[/* a */ A1, /* b */ A2, /* c */ A3, R]
@@ -579,7 +604,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3): R = js.native
   }
   
   type SpyFunc4[A1, A2, A3, A4, R] = js.Function4[/* a */ A1, /* b */ A2, /* c */ A3, /* d */ A4, R]
@@ -590,7 +615,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4): R = js.native
   }
   
   type SpyFunc5[A1, A2, A3, A4, A5, R] = js.Function5[/* a */ A1, /* b */ A2, /* c */ A3, /* d */ A4, /* e */ A5, R]
@@ -601,7 +626,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): R = js.native
   }
   
   type SpyFunc6[A1, A2, A3, A4, A5, A6, R] = js.Function6[/* a */ A1, /* b */ A2, /* c */ A3, /* d */ A4, /* e */ A5, /* f */ A6, R]
@@ -612,7 +637,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5, T5: A6): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5, arg6: A6): R = js.native
   }
   
   type SpyFunc7[A1, A2, A3, A4, A5, A6, A7, R] = js.Function7[/* a */ A1, /* b */ A2, /* c */ A3, /* d */ A4, /* e */ A5, /* f */ A6, /* g */ A7, R]
@@ -623,7 +648,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5, T5: A6, T6: A7): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5, arg6: A6, arg7: A7): R = js.native
   }
   
   type SpyFunc8[A1, A2, A3, A4, A5, A6, A7, A8, R] = js.Function8[
@@ -644,7 +669,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5, T5: A6, T6: A7, T7: A8): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5, arg6: A6, arg7: A7, arg8: A8): R = js.native
   }
   
   type SpyFunc9[A1, A2, A3, A4, A5, A6, A7, A8, A9, R] = js.Function9[
@@ -666,7 +691,7 @@ object ChaiSpies {
        with Resetable {
     
     /* InferMemberOverrides */
-    override def apply(T0: A1, T1: A2, T2: A3, T3: A4, T4: A5, T5: A6, T6: A7, T7: A8, T8: A9): R = js.native
+    override def apply(arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5, arg6: A6, arg7: A7, arg8: A8, arg9: A9): R = js.native
   }
   
   @js.native

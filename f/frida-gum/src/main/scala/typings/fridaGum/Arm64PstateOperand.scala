@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.pstate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64PstateOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
   
-  var `type`: pstate = js.native
+  var `type`: pstate
   
-  var value: Double = js.native
+  var value: Double
 }
 object Arm64PstateOperand {
   
   @scala.inline
-  def apply(`type`: pstate, value: Double): Arm64PstateOperand = {
+  def apply(value: Double): Arm64PstateOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pstate")
     __obj.asInstanceOf[Arm64PstateOperand]
   }
   

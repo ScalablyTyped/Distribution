@@ -9,73 +9,71 @@ import typings.cesium.mod.Property
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowPicking extends StObject {
   
-  var allowPicking: js.UndefOr[Boolean] = js.native
+  var allowPicking: js.UndefOr[Boolean] = js.undefined
   
-  var asynchronous: js.UndefOr[Boolean] = js.native
+  var asynchronous: js.UndefOr[Boolean] = js.undefined
   
-  var basePath: js.UndefOr[String] = js.native
+  var basePath: js.UndefOr[String] = js.undefined
   
-  var clampAnimations: js.UndefOr[Boolean] = js.native
+  var clampAnimations: js.UndefOr[Boolean] = js.undefined
   
-  var clippingPlanes: js.UndefOr[ClippingPlaneCollection] = js.native
+  var clippingPlanes: js.UndefOr[ClippingPlaneCollection] = js.undefined
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var colorBlendAmount: js.UndefOr[Double] = js.native
+  var colorBlendAmount: js.UndefOr[Double] = js.undefined
   
-  var colorBlendMode: js.UndefOr[Property] = js.native
+  var colorBlendMode: js.UndefOr[Property] = js.undefined
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var debugWireframe: js.UndefOr[Boolean] = js.native
+  var debugWireframe: js.UndefOr[Boolean] = js.undefined
   
-  var dequantizeInShader: js.UndefOr[Boolean] = js.native
+  var dequantizeInShader: js.UndefOr[Boolean] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition] = js.native
+  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition] = js.undefined
   
-  var gltf: js.UndefOr[js.Any] = js.native
+  var gltf: js.UndefOr[js.Any] = js.undefined
   
-  var heightReference: js.UndefOr[HeightReference] = js.native
+  var heightReference: js.UndefOr[HeightReference] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var imageBasedLightingFactor: js.UndefOr[Cartesian2] = js.native
+  var imageBasedLightingFactor: js.UndefOr[Cartesian2] = js.undefined
   
-  var incrementallyLoadTextures: js.UndefOr[Boolean] = js.native
+  var incrementallyLoadTextures: js.UndefOr[Boolean] = js.undefined
   
-  var lightColor: js.UndefOr[Cartesian3] = js.native
+  var lightColor: js.UndefOr[Cartesian3] = js.undefined
   
-  var luminanceAtZenith: js.UndefOr[Double] = js.native
+  var luminanceAtZenith: js.UndefOr[Double] = js.undefined
   
-  var maximumScale: js.UndefOr[Double] = js.native
+  var maximumScale: js.UndefOr[Double] = js.undefined
   
-  var minimumPixelSize: js.UndefOr[Double] = js.native
+  var minimumPixelSize: js.UndefOr[Double] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var scene: js.UndefOr[typings.cesium.mod.Scene] = js.native
+  var scene: js.UndefOr[typings.cesium.mod.Scene] = js.undefined
   
-  var shadows: js.UndefOr[ShadowMode] = js.native
+  var shadows: js.UndefOr[ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var silhouetteColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var silhouetteColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var silhouetteSize: js.UndefOr[Double] = js.native
+  var silhouetteSize: js.UndefOr[Double] = js.undefined
   
-  var specularEnvironmentMaps: js.UndefOr[String] = js.native
+  var specularEnvironmentMaps: js.UndefOr[String] = js.undefined
   
-  var sphericalHarmonicCoefficients: js.UndefOr[js.Array[Cartesian3]] = js.native
+  var sphericalHarmonicCoefficients: js.UndefOr[js.Array[Cartesian3]] = js.undefined
 }
 object AllowPicking {
   

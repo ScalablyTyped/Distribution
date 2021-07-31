@@ -3,50 +3,48 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Effect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Behaviors: AnimationBehaviors = js.native
+  val Behaviors: AnimationBehaviors
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DisplayName: String = js.native
+  val DisplayName: String
   
-  val EffectInformation: typings.activexPowerpoint.PowerPoint.EffectInformation = js.native
+  val EffectInformation: typings.activexPowerpoint.PowerPoint.EffectInformation
   
-  val EffectParameters: typings.activexPowerpoint.PowerPoint.EffectParameters = js.native
+  val EffectParameters: typings.activexPowerpoint.PowerPoint.EffectParameters
   
-  var EffectType: MsoAnimEffect = js.native
+  var EffectType: MsoAnimEffect
   
-  var Exit: MsoTriState = js.native
+  var Exit: MsoTriState
   
-  val Index: Double = js.native
+  val Index: Double
   
-  def MoveAfter(Effect: Effect): Unit = js.native
+  def MoveAfter(Effect: Effect): Unit
   
-  def MoveBefore(Effect: Effect): Unit = js.native
+  def MoveBefore(Effect: Effect): Unit
   
-  def MoveTo(toPos: Double): Unit = js.native
+  def MoveTo(toPos: Double): Unit
   
-  var Paragraph: Double = js.native
+  var Paragraph: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Effect_typekey")
-  var PowerPointDotEffect_typekey: Effect = js.native
+  var PowerPointDotEffect_typekey: Effect
   
-  var Shape: typings.activexPowerpoint.PowerPoint.Shape = js.native
+  var Shape: typings.activexPowerpoint.PowerPoint.Shape
   
-  val TextRangeLength: Double = js.native
+  val TextRangeLength: Double
   
-  val TextRangeStart: Double = js.native
+  val TextRangeStart: Double
   
-  val Timing: typings.activexPowerpoint.PowerPoint.Timing = js.native
+  val Timing: typings.activexPowerpoint.PowerPoint.Timing
 }
 object Effect {
   

@@ -4,24 +4,24 @@ import typings.blessed.blessedStrings.horizontal
 import typings.blessed.blessedStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A simple line which can be line or bg styled.
   */
-@js.native
-trait LineOptions extends BoxOptions {
+trait LineOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Can be vertical or horizontal.
     */
-  var orientation: js.UndefOr[vertical | horizontal] = js.native
+  var orientation: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
     * Treated the same as a border object. (attributes can be contained in style).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object LineOptions {
   

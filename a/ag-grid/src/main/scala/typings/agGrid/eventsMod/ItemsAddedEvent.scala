@@ -5,13 +5,13 @@ import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemsAddedEvent extends AgGridEvent {
+trait ItemsAddedEvent
+  extends StObject
+     with AgGridEvent {
   
-  var items: js.Array[RowNode] = js.native
+  var items: js.Array[RowNode]
 }
 object ItemsAddedEvent {
   

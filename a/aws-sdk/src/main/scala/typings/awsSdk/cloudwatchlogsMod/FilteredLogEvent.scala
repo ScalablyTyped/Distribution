@@ -2,36 +2,34 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteredLogEvent extends StObject {
   
   /**
     * The ID of the event.
     */
-  var eventId: js.UndefOr[EventId] = js.native
+  var eventId: js.UndefOr[EventId] = js.undefined
   
   /**
     * The time the event was ingested, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var ingestionTime: js.UndefOr[Timestamp] = js.native
+  var ingestionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the log stream to which this event belongs.
     */
-  var logStreamName: js.UndefOr[LogStreamName] = js.native
+  var logStreamName: js.UndefOr[LogStreamName] = js.undefined
   
   /**
     * The data contained in the log event.
     */
-  var message: js.UndefOr[EventMessage] = js.native
+  var message: js.UndefOr[EventMessage] = js.undefined
   
   /**
     * The time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.native
+  var timestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object FilteredLogEvent {
   

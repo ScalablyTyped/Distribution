@@ -2,7 +2,6 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,8 +21,8 @@ trait IncomingMessage extends StObject {
   
   var method: String = js.native
   
-  def parseHeader(name: String): js.UndefOr[scala.Nothing] = js.native
-  def parseHeader(name: String, idx: Double): js.UndefOr[scala.Nothing] = js.native
+  def parseHeader(name: String): Unit = js.native
+  def parseHeader(name: String, idx: Double): Unit = js.native
   
   var to: NameAddrHeader = js.native
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSpotInstanceRequestsResult extends StObject {
   
   /**
     * One or more Spot Instance requests.
     */
-  var CancelledSpotInstanceRequests: js.UndefOr[CancelledSpotInstanceRequestList] = js.native
+  var CancelledSpotInstanceRequests: js.UndefOr[CancelledSpotInstanceRequestList] = js.undefined
 }
 object CancelSpotInstanceRequestsResult {
   

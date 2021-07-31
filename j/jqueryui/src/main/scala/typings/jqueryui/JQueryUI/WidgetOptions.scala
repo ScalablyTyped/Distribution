@@ -2,18 +2,16 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Widget //////////////////////////////////////////////////
-@js.native
 trait WidgetOptions extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var hide: js.UndefOr[js.Any] = js.native
+  var hide: js.UndefOr[js.Any] = js.undefined
   
-  var show: js.UndefOr[js.Any] = js.native
+  var show: js.UndefOr[js.Any] = js.undefined
 }
 object WidgetOptions {
   

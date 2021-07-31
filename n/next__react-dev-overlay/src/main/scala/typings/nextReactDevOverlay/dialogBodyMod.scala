@@ -3,7 +3,6 @@ package typings.nextReactDevOverlay
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogBodyMod {
@@ -12,10 +11,9 @@ object dialogBodyMod {
   @js.native
   val DialogBody: FC[DialogBodyProps] = js.native
   
-  @js.native
   trait DialogBodyProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object DialogBodyProps {
     

@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.locationFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFeedResponseInItem extends StObject {
   
-  var duration_in_video_in_sec: Null = js.native
+  var duration_in_video_in_sec: Null
   
-  var position: js.Array[Double | String] = js.native
+  var position: js.Array[Double | String]
   
-  var start_time_in_video_in_sec: Null = js.native
+  var start_time_in_video_in_sec: Null
   
-  var user: LocationFeedResponseUser = js.native
+  var user: LocationFeedResponseUser
 }
 object LocationFeedResponseInItem {
   

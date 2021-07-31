@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductViewDetail extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
   
   /**
     * The ARN of the product.
     */
-  var ProductARN: js.UndefOr[ResourceARN] = js.native
+  var ProductARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * Summary information about the product view.
     */
-  var ProductViewSummary: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewSummary] = js.native
+  var ProductViewSummary: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewSummary] = js.undefined
   
   /**
     * The status of the product.    AVAILABLE - The product is ready for use.    CREATING - Product creation has started; the product is not ready for use.    FAILED - An action failed.  
     */
-  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.undefined
 }
 object ProductViewDetail {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,18 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .build();
   *     }
   */
-@js.native
 trait GetDataResponse extends StObject {
   
-  def addAllRows(rows: js.Array[js.Array[String]]): GetDataResponse = js.native
+  def addAllRows(rows: js.Array[js.Array[String]]): GetDataResponse
   
-  def addRow(row: js.Array[String]): GetDataResponse = js.native
+  def addRow(row: js.Array[String]): GetDataResponse
   
-  def build(): js.Any = js.native
+  def build(): js.Any
   
-  def setFields(fields: Fields): GetDataResponse = js.native
+  def setFields(fields: Fields): GetDataResponse
   
-  def setFiltersApplied(filtersApplied: Boolean): GetDataResponse = js.native
+  def setFiltersApplied(filtersApplied: Boolean): GetDataResponse
 }
 object GetDataResponse {
   

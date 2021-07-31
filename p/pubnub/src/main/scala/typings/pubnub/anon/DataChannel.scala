@@ -5,29 +5,27 @@ import typings.pubnub.pubnubStrings.membership
 import typings.pubnub.pubnubStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataChannel[MembershipCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: Channel[MembershipCustom] = js.native
+  var data: Channel[MembershipCustom]
   
-  var event: set = js.native
+  var event: set
   
-  var `type`: membership = js.native
+  var `type`: membership
 }
 object DataChannel {
   
   @scala.inline
-  def apply[MembershipCustom /* <: ObjectCustom */](data: Channel[MembershipCustom], event: set, `type`: membership): DataChannel[MembershipCustom] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply[MembershipCustom /* <: ObjectCustom */](data: Channel[MembershipCustom]): DataChannel[MembershipCustom] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
+    __obj.updateDynamic("type")("membership")
     __obj.asInstanceOf[DataChannel[MembershipCustom]]
   }
   
   @scala.inline
-  implicit class DataChannelMutableBuilder[Self <: DataChannel[_], MembershipCustom /* <: ObjectCustom */] (val x: Self with DataChannel[MembershipCustom]) extends AnyVal {
+  implicit class DataChannelMutableBuilder[Self <: DataChannel[?], MembershipCustom /* <: ObjectCustom */] (val x: Self & DataChannel[MembershipCustom]) extends AnyVal {
     
     @scala.inline
     def setData(value: Channel[MembershipCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

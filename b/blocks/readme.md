@@ -12,7 +12,7 @@ jsblocks - Better MV-ish Framework
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 15291 |
+| # downloads        | 15642 |
 | # stars            | 0 |
 
 ## Links

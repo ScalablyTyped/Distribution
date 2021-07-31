@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,32 +14,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.ToolbarController
   * @since OOo 2.0
   */
-@js.native
-trait XSubToolbarController extends XInterface {
+trait XSubToolbarController
+  extends StObject
+     with XInterface {
   
   /**
     * provides the resource URL of the sub-toolbar this controller opens.
     * @returns name of the sub-toolbar this controller offers. A empty string will be interpreted as if this controller offers no sub-toolbar.
     */
-  val SubToolbarName: String = js.native
+  val SubToolbarName: String
   
   /**
     * gets called to notify a controller that a sub-toolbar function has been selected.
     * @param aCommand a string which identifies the function that has been selected by a user.
     */
-  def functionSelected(aCommand: String): Unit = js.native
+  def functionSelected(aCommand: String): Unit
   
   /**
     * provides the resource URL of the sub-toolbar this controller opens.
     * @returns name of the sub-toolbar this controller offers. A empty string will be interpreted as if this controller offers no sub-toolbar.
     */
-  def getSubToolbarName(): String = js.native
+  def getSubToolbarName(): String
   
   /**
     * if the controller features a sub-toolbar.
     * @returns `TRUE` if the controller offers a sub toolbar, otherwise `FALSE` .  Enables implementations to dynamically decide to support sub-toolbars or not.
     */
-  def opensSubToolbar(): Boolean = js.native
+  def opensSubToolbar(): Boolean
   
   /**
     * gets called to notify a controller that it should set an image which represents the current selected function.
@@ -48,7 +48,7 @@ trait XSubToolbarController extends XInterface {
     * Only the controller instance is able to set the correct image for the current function. A toolbar implementation will ask sub-toolbar controllers to
     * update their image whenever it has to update the images of all its buttons.
     */
-  def updateImage(): Unit = js.native
+  def updateImage(): Unit
 }
 object XSubToolbarController {
   

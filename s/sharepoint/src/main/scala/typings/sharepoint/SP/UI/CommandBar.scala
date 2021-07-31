@@ -3,33 +3,31 @@ package typings.sharepoint.SP.UI
 import typings.sharepoint.SP.HtmlBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBar extends StObject {
   
-  def addCommand(action: Command): Unit = js.native
+  def addCommand(action: Command): Unit
   
-  def attachEvents(): Unit = js.native
+  def attachEvents(): Unit
   
-  def findCommandByName(name: String): Command = js.native
+  def findCommandByName(name: String): Command
   
-  def get_commands(): js.Array[Command] = js.native
+  def get_commands(): js.Array[Command]
   
-  def get_dropDownThreshold(): Double = js.native
+  def get_dropDownThreshold(): Double
   
-  def get_elementID(): String = js.native
+  def get_elementID(): String
   
-  def get_overrideClass(): String = js.native
+  def get_overrideClass(): String
   
-  def insertCommand(action: Command, position: Double): Unit = js.native
+  def insertCommand(action: Command, position: Double): Unit
   
-  def render(builder: HtmlBuilder): Unit = js.native
+  def render(builder: HtmlBuilder): Unit
   
-  def set_dropDownThreshold(value: Double): Double = js.native
+  def set_dropDownThreshold(value: Double): Double
   
-  def set_overrideClass(value: String): String = js.native
+  def set_overrideClass(value: String): String
 }
 object CommandBar {
   

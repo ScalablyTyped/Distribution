@@ -9,7 +9,6 @@ import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageStaticMod {
@@ -20,24 +19,23 @@ object imageStaticMod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var imageExtent: js.UndefOr[Extent] = js.native
+    var imageExtent: js.UndefOr[Extent] = js.undefined
     
-    var imageLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var imageLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var imageSize: js.UndefOr[Size] = js.native
+    var imageSize: js.UndefOr[Size] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

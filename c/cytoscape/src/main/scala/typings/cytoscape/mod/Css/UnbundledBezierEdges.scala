@@ -5,7 +5,6 @@ import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * http://js.cytoscape.org/#style/unbundled-bezier-edges
   */
-@js.native
 trait UnbundledBezierEdges extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait UnbundledBezierEdges extends StObject {
     * distance perpendicular to a line formed
     * from source to target, e.g. -20 20 - 20.
     */
-  var `control-point-distances`: PropertyValueEdge[String] = js.native
+  var `control-point-distances`: PropertyValueEdge[String]
   
   /**
     * A series of values that weights control points along
@@ -32,7 +30,7 @@ trait UnbundledBezierEdges extends StObject {
     * 1 towards the target node
     * — but larger or smaller values can also be used.
     */
-  var `control-point-weights`: PropertyValueEdge[String] = js.native
+  var `control-point-weights`: PropertyValueEdge[String]
   
   /**
     * With value intersection (default),
@@ -45,7 +43,7 @@ trait UnbundledBezierEdges extends StObject {
     * — but it should be used carefully because you can create
     * invalid points that intersection would have automatically corrected.
     */
-  var `edge-distances`: PropertyValueEdge[intersection | `node-position`] = js.native
+  var `edge-distances`: PropertyValueEdge[intersection | `node-position`]
 }
 object UnbundledBezierEdges {
   

@@ -3,19 +3,17 @@ package typings.select2.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Select2RequireConfig extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var config: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var config: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
-  var deps: js.UndefOr[js.Array[String]] = js.native
+  var deps: js.UndefOr[js.Array[String]] = js.undefined
   
-  var map: js.UndefOr[StringDictionary[StringDictionary[String]]] = js.native
+  var map: js.UndefOr[StringDictionary[StringDictionary[String]]] = js.undefined
 }
 object Select2RequireConfig {
   

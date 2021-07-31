@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverChangeEventUIParam extends StObject {
   
   /**
     * Gets the old value.
     */
-  var oldValue: js.UndefOr[Double] = js.native
+  var oldValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the new hovered value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object HoverChangeEventUIParam {
   

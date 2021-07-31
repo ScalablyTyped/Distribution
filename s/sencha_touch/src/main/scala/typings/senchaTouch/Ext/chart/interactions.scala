@@ -5,55 +5,55 @@ import typings.senchaTouch.Ext.mixin.IObservable
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactions {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Ext.chart.AbstractChart) */
-    var chart: js.UndefOr[IAbstractChart] = js.native
+    var chart: js.UndefOr[IAbstractChart] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var gesture: js.UndefOr[String] = js.native
+    var gesture: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of chart
       * @returns Ext.chart.AbstractChart
       */
-    var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.native
+    var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.undefined
     
     /** [Method] Returns the value of enabled
       * @returns Boolean
       */
-    var getEnabled: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of gesture
       * @returns String
       */
-    var getGesture: js.UndefOr[js.Function0[String]] = js.native
+    var getGesture: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Find and return a single series item corresponding to the given event or null if no matching item is found
       * @param e Event
       * @returns Object the item object or null if none found.
       */
-    var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], _]] = js.native
+    var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], js.Any]] = js.undefined
     
     /** [Method] Find and return all series items corresponding to the given event
       * @param e Event
       * @returns Array array of matching item objects
       */
-    var getItemsForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Array]] = js.native
+    var getItemsForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Array]] = js.undefined
     
     /** [Method] A method to be implemented by subclasses where all event attachment should occur  */
-    var initialize: js.UndefOr[js.Function0[Unit]] = js.native
+    var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Placeholder method  */
-    var onGesture: js.UndefOr[js.Function0[Unit]] = js.native
+    var onGesture: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -63,25 +63,25 @@ object interactions {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of chart
       * @param chart Ext.chart.AbstractChart The new value.
       */
-    var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.native
+    var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.undefined
     
     /** [Method] Sets the value of enabled
       * @param enabled Boolean The new value.
       */
-    var setEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.native
+    var setEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of gesture
       * @param gesture String The new value.
       */
-    var setGesture: js.UndefOr[js.Function1[/* gesture */ js.UndefOr[String], Unit]] = js.native
+    var setGesture: js.UndefOr[js.Function1[/* gesture */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Property] (Number) */
-    var throttleGap: js.UndefOr[Double] = js.native
+    var throttleGap: js.UndefOr[Double] = js.undefined
   }
   object IAbstract {
     
@@ -131,7 +131,7 @@ object interactions {
       def setGetGestureUndefined: Self = StObject.set(x, "getGesture", js.undefined)
       
       @scala.inline
-      def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => _): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
+      def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetItemForEventUndefined: Self = StObject.set(x, "getItemForEvent", js.undefined)
@@ -186,37 +186,38 @@ object interactions {
     }
   }
   
-  @js.native
-  trait ICrossZoom extends IAbstract {
+  trait ICrossZoom
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Object/Array) */
-    var axes: js.UndefOr[js.Any] = js.native
+    var axes: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object/Array
       */
-    var getAxes: js.UndefOr[js.Function0[_]] = js.native
+    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of undoButton
       * @returns Object
       */
-    var getUndoButton: js.UndefOr[js.Function0[_]] = js.native
+    var getUndoButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_ICrossZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onGesture_ICrossZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object/Array The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of undoButton
       * @param undoButton Object The new value.
       */
-    var setUndoButton: js.UndefOr[js.Function1[/* undoButton */ js.UndefOr[js.Any], Unit]] = js.native
+    var setUndoButton: js.UndefOr[js.Function1[/* undoButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICrossZoom {
     
@@ -236,13 +237,13 @@ object interactions {
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
       @scala.inline
-      def setGetAxes(value: () => _): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
       @scala.inline
-      def setGetUndoButton(value: () => _): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
+      def setGetUndoButton(value: () => js.Any): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetUndoButtonUndefined: Self = StObject.set(x, "getUndoButton", js.undefined)
@@ -267,40 +268,41 @@ object interactions {
     }
   }
   
-  @js.native
-  trait ICrosshair extends IAbstract {
+  trait ICrosshair
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Object) */
-    var axes: js.UndefOr[js.Any] = js.native
+    var axes: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object
       */
-    var getAxes: js.UndefOr[js.Function0[_]] = js.native
+    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of lines
       * @returns Object
       */
-    var getLines: js.UndefOr[js.Function0[_]] = js.native
+    var getLines: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Object) */
-    var lines: js.UndefOr[js.Any] = js.native
+    var lines: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_ICrosshair: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onGesture_ICrosshair: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of lines
       * @param lines Object The new value.
       */
-    var setLines: js.UndefOr[js.Function1[/* lines */ js.UndefOr[js.Any], Unit]] = js.native
+    var setLines: js.UndefOr[js.Function1[/* lines */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICrosshair {
     
@@ -320,13 +322,13 @@ object interactions {
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
       @scala.inline
-      def setGetAxes(value: () => _): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
       @scala.inline
-      def setGetLines(value: () => _): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
+      def setGetLines(value: () => js.Any): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLinesUndefined: Self = StObject.set(x, "getLines", js.undefined)
@@ -357,8 +359,9 @@ object interactions {
     }
   }
   
-  @js.native
-  trait IItemHighlight extends IAbstract {
+  trait IItemHighlight
+    extends StObject
+       with IAbstract {
     
     /** [Method] Placeholder method
       * @param series Object
@@ -373,7 +376,7 @@ object interactions {
           /* e */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IItemHighlight {
     
@@ -396,13 +399,14 @@ object interactions {
     }
   }
   
-  @js.native
-  trait IItemInfo extends IAbstract {
+  trait IItemInfo
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of panel
       * @returns Object
       */
-    var getPanel: js.UndefOr[js.Function0[_]] = js.native
+    var getPanel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Placeholder method
       * @param series Object
@@ -411,15 +415,15 @@ object interactions {
     @JSName("onGesture")
     var onGesture_IItemInfo: js.UndefOr[
         js.Function2[/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var panel: js.UndefOr[js.Any] = js.native
+    var panel: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of panel
       * @param panel Object The new value.
       */
-    var setPanel: js.UndefOr[js.Function1[/* panel */ js.UndefOr[js.Any], Unit]] = js.native
+    var setPanel: js.UndefOr[js.Function1[/* panel */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IItemInfo {
     
@@ -433,7 +437,7 @@ object interactions {
     implicit class IItemInfoMutableBuilder[Self <: IItemInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetPanel(value: () => _): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
+      def setGetPanel(value: () => js.Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPanelUndefined: Self = StObject.set(x, "getPanel", js.undefined)
@@ -458,103 +462,104 @@ object interactions {
     }
   }
   
-  @js.native
-  trait IPanZoom extends IAbstract {
+  trait IPanZoom
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Object/Array) */
-    var axes: js.UndefOr[js.Any] = js.native
+    var axes: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object/Array
       */
-    var getAxes: js.UndefOr[js.Function0[_]] = js.native
+    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of hideLabelInGesture
       * @returns Boolean
       */
-    var getHideLabelInGesture: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHideLabelInGesture: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of maxZoom
       * @returns Object
       */
-    var getMaxZoom: js.UndefOr[js.Function0[_]] = js.native
+    var getMaxZoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of minZoom
       * @returns Object
       */
-    var getMinZoom: js.UndefOr[js.Function0[_]] = js.native
+    var getMinZoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of modeToggleButton
       * @returns Object
       */
-    var getModeToggleButton: js.UndefOr[js.Function0[_]] = js.native
+    var getModeToggleButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of panGesture
       * @returns String
       */
-    var getPanGesture: js.UndefOr[js.Function0[String]] = js.native
+    var getPanGesture: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of showOverflowArrows
       * @returns Boolean
       */
-    var getShowOverflowArrows: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getShowOverflowArrows: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of zoomOnPanGesture
       * @returns Boolean
       */
-    var getZoomOnPanGesture: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getZoomOnPanGesture: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_IPanZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onGesture_IPanZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var overflowArrowOptions: js.UndefOr[js.Any] = js.native
+    var overflowArrowOptions: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object/Array The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of hideLabelInGesture
       * @param hideLabelInGesture Boolean The new value.
       */
-    var setHideLabelInGesture: js.UndefOr[js.Function1[/* hideLabelInGesture */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHideLabelInGesture: js.UndefOr[js.Function1[/* hideLabelInGesture */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxZoom
       * @param maxZoom Object The new value.
       */
-    var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of minZoom
       * @param minZoom Object The new value.
       */
-    var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of modeToggleButton
       * @param modeToggleButton Object The new value.
       */
-    var setModeToggleButton: js.UndefOr[js.Function1[/* modeToggleButton */ js.UndefOr[js.Any], Unit]] = js.native
+    var setModeToggleButton: js.UndefOr[js.Function1[/* modeToggleButton */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of panGesture
       * @param panGesture String The new value.
       */
-    var setPanGesture: js.UndefOr[js.Function1[/* panGesture */ js.UndefOr[String], Unit]] = js.native
+    var setPanGesture: js.UndefOr[js.Function1[/* panGesture */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of showOverflowArrows
       * @param showOverflowArrows Boolean The new value.
       */
-    var setShowOverflowArrows: js.UndefOr[js.Function1[/* showOverflowArrows */ js.UndefOr[Boolean], Unit]] = js.native
+    var setShowOverflowArrows: js.UndefOr[js.Function1[/* showOverflowArrows */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of zoomOnPanGesture
       * @param zoomOnPanGesture Boolean The new value.
       */
-    var setZoomOnPanGesture: js.UndefOr[js.Function1[/* zoomOnPanGesture */ js.UndefOr[Boolean], Unit]] = js.native
+    var setZoomOnPanGesture: js.UndefOr[js.Function1[/* zoomOnPanGesture */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showOverflowArrows: js.UndefOr[Boolean] = js.native
+    var showOverflowArrows: js.UndefOr[Boolean] = js.undefined
   }
   object IPanZoom {
     
@@ -574,7 +579,7 @@ object interactions {
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
       @scala.inline
-      def setGetAxes(value: () => _): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
@@ -586,19 +591,19 @@ object interactions {
       def setGetHideLabelInGestureUndefined: Self = StObject.set(x, "getHideLabelInGesture", js.undefined)
       
       @scala.inline
-      def setGetMaxZoom(value: () => _): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+      def setGetMaxZoom(value: () => js.Any): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
       
       @scala.inline
-      def setGetMinZoom(value: () => _): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      def setGetMinZoom(value: () => js.Any): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
       
       @scala.inline
-      def setGetModeToggleButton(value: () => _): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
+      def setGetModeToggleButton(value: () => js.Any): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetModeToggleButtonUndefined: Self = StObject.set(x, "getModeToggleButton", js.undefined)
@@ -689,14 +694,15 @@ object interactions {
     }
   }
   
-  @js.native
-  trait IRotate extends IAbstract {
+  trait IRotate
+    extends StObject
+       with IAbstract {
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_IRotate: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onGesture_IRotate: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IRotate {
     

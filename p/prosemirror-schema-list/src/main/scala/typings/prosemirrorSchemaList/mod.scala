@@ -8,7 +8,6 @@ import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("prosemirror-schema-list", "addListNodes")
-  @js.native
-  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String): typings.orderedmap.mod.^[NodeSpec] = js.native
-  @JSImport("prosemirror-schema-list", "addListNodes")
-  @js.native
-  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String, listGroup: String): typings.orderedmap.mod.^[NodeSpec] = js.native
+  @scala.inline
+  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
+  @scala.inline
+  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String, listGroup: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
   
   @JSImport("prosemirror-schema-list", "bulletList")
   @js.native
@@ -30,13 +27,16 @@ object mod {
   @scala.inline
   def bulletList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bulletList")(x.asInstanceOf[js.Any])
   
-  @JSImport("prosemirror-schema-list", "liftListItem")
-  @js.native
-  def liftListItem[S /* <: Schema[_, _] */](itemType: NodeType[S]): js.Function2[
+  @scala.inline
+  def liftListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
   
   @JSImport("prosemirror-schema-list", "listItem")
   @js.native
@@ -50,34 +50,46 @@ object mod {
   @scala.inline
   def orderedList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderedList")(x.asInstanceOf[js.Any])
   
-  @JSImport("prosemirror-schema-list", "sinkListItem")
-  @js.native
-  def sinkListItem[S /* <: Schema[_, _] */](itemType: NodeType[S]): js.Function2[
+  @scala.inline
+  def sinkListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sinkListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
   
-  @JSImport("prosemirror-schema-list", "splitListItem")
-  @js.native
-  def splitListItem[S /* <: Schema[_, _] */](itemType: NodeType[S]): js.Function2[
+  @scala.inline
+  def splitListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
   
-  @JSImport("prosemirror-schema-list", "wrapInList")
-  @js.native
-  def wrapInList[S /* <: Schema[_, _] */](listType: NodeType[S]): js.Function2[
+  @scala.inline
+  def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
-  @JSImport("prosemirror-schema-list", "wrapInList")
-  @js.native
-  def wrapInList[S /* <: Schema[_, _] */](listType: NodeType[S], attrs: StringDictionary[js.Any]): js.Function2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ]]
+  @scala.inline
+  def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S], attrs: StringDictionary[js.Any]): js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
 }

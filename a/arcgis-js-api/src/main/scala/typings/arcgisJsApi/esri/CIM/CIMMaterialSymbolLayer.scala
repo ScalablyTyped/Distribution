@@ -2,35 +2,34 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMaterialSymbolLayer
-  extends CIMSymbolLayerBase
+  extends StObject
+     with CIMSymbolLayerBase
      with CIMSymbolLayerType {
   
   /**
     * The material color.
     */
-  var color: js.UndefOr[js.Array[Double]] = js.native
+  var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The mode in which the material is applied.
     */
   var materialMode: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MaterialMode * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMMaterialSymbolLayer: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialSymbolLayer = js.native
+  var type_CIMMaterialSymbolLayer: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialSymbolLayer
 }
 object CIMMaterialSymbolLayer {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialSymbolLayer): CIMMaterialSymbolLayer = {
+  def apply(): CIMMaterialSymbolLayer = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMaterialSymbolLayer")
     __obj.asInstanceOf[CIMMaterialSymbolLayer]
   }
   

@@ -4,13 +4,11 @@ import typings.history.mod.History
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterProps extends StObject {
   
-  var history: History[LocationState] = js.native
+  var history: History[LocationState]
 }
 object RouterProps {
   

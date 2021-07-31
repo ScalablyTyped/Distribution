@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows apps to add a collection of enumerable options to the app print experience. */
-@js.native
 trait PrintCustomItemDetails extends StObject {
   
   /** Gets or sets the display name of the custom print task option item. */
-  var itemDisplayName: String = js.native
+  var itemDisplayName: String
   
   /** Gets the ID of the custom print task option item. */
-  var itemId: String = js.native
+  var itemId: String
 }
 object PrintCustomItemDetails {
   

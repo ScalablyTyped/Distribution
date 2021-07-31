@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A message received by a target object. */
 @js.native
-trait MessageEvent[T] extends Event {
+trait MessageEvent[T]
+  extends StObject
+     with Event {
   
   /**
     * Returns the data of the message.

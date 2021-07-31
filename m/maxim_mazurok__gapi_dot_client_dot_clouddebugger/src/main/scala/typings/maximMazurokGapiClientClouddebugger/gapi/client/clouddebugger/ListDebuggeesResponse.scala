@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDebuggeesResponse extends StObject {
   
   /**
     * List of debuggees accessible to the calling user. The fields `debuggee.id` and `description` are guaranteed to be set. The `description` field is a human readable field provided by
     * agents and can be displayed to users.
     */
-  var debuggees: js.UndefOr[js.Array[Debuggee]] = js.native
+  var debuggees: js.UndefOr[js.Array[Debuggee]] = js.undefined
 }
 object ListDebuggeesResponse {
   

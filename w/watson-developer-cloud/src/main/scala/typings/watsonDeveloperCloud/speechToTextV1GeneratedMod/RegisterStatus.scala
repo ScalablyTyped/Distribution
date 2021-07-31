@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** RegisterStatus. */
-@js.native
 trait RegisterStatus extends StObject {
   
   /** The current status of the job: * `created`: The service successfully white-listed the callback URL as a result of the call. * `already created`: The URL was already white-listed. */
-  var status: String = js.native
+  var status: String
   
   /** The callback URL that is successfully registered. */
-  var url: String = js.native
+  var url: String
 }
 object RegisterStatus {
   

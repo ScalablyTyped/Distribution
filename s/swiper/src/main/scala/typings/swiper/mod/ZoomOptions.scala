@@ -2,21 +2,19 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomOptions extends StObject {
   
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
-  var maxRatio: js.UndefOr[Double] = js.native
+  var maxRatio: js.UndefOr[Double] = js.undefined
   
-  var minRatio: js.UndefOr[Double] = js.native
+  var minRatio: js.UndefOr[Double] = js.undefined
   
-  var toggle: js.UndefOr[Boolean] = js.native
+  var toggle: js.UndefOr[Boolean] = js.undefined
   
-  var zoomedSlideClass: js.UndefOr[String] = js.native
+  var zoomedSlideClass: js.UndefOr[String] = js.undefined
 }
 object ZoomOptions {
   

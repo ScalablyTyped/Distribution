@@ -6,7 +6,6 @@ import typings.jqueryColorpicker.jqueryColorpickerStrings.open
 import typings.jqueryColorpicker.jqueryColorpickerStrings.setColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

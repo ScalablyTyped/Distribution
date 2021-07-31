@@ -2,18 +2,16 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectValueProps extends StObject {
   
   /**
     * The object to describe.
     */
-  var `object`: js.UndefOr[js.Any] = js.native
+  var `object`: js.UndefOr[js.Any] = js.undefined
   
-  var styles: js.UndefOr[js.Object] = js.native
+  var styles: js.UndefOr[js.Object] = js.undefined
 }
 object ObjectValueProps {
   

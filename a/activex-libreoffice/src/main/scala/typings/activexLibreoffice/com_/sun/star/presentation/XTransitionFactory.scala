@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface provides the necessary methods to query and create optional transition effects for a {@link SlideShow}
   * @since OOo 2.4
   */
-@js.native
-trait XTransitionFactory extends XInterface {
+trait XTransitionFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Actually create a transition for the given transition id
@@ -33,10 +33,10 @@ trait XTransitionFactory extends XInterface {
     view: XSlideShowView,
     leavingBitmap: XBitmap,
     enteringBitmap: XBitmap
-  ): XTransition = js.native
+  ): XTransition
   
   /** Checks whether this instance provides an implementation for given transition id. */
-  def hasTransition(transitionType: Double, transitionSubType: Double): Boolean = js.native
+  def hasTransition(transitionType: Double, transitionSubType: Double): Boolean
 }
 object XTransitionFactory {
   

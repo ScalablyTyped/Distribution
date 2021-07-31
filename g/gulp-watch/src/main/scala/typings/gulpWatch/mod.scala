@@ -5,56 +5,50 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.vinylFs.mod.SrcOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(glob: String): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: String, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: String, options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: String, options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: String, options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: js.Array[String]): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: js.Array[String], callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: js.Array[String], options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: js.Array[String], options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  @scala.inline
+  def apply(glob: js.Array[String], options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  
   @JSImport("gulp-watch", JSImport.Namespace)
   @js.native
-  def apply(glob: String): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, callback: Cb): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: js.UndefOr[scala.Nothing], callback: Cb): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: IOptions): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: IOptions, callback: Cb): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String]): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String], callback: Cb): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String], options: js.UndefOr[scala.Nothing], callback: Cb): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String], options: IOptions): IWatchStream = js.native
-  @JSImport("gulp-watch", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String], options: IOptions, callback: Cb): IWatchStream = js.native
+  val ^ : js.Any = js.native
   
   type Cb = js.Function1[/* file */ Fileeventaddchangeunlink, Unit]
   
-  @js.native
-  trait IOptions extends SrcOptions {
+  trait IOptions
+    extends StObject
+       with SrcOptions {
     
-    var events: js.UndefOr[js.Array[String]] = js.native
+    var events: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreInitial: js.UndefOr[Boolean] = js.native
+    var ignoreInitial: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var readDelay: js.UndefOr[Double] = js.native
+    var readDelay: js.UndefOr[Double] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     
@@ -103,7 +97,9 @@ object mod {
   }
   
   @js.native
-  trait IWatchStream extends ReadWriteStream {
+  trait IWatchStream
+    extends StObject
+       with ReadWriteStream {
     
     def add(path: String): ReadWriteStream = js.native
     def add(path: js.Array[String]): ReadWriteStream = js.native

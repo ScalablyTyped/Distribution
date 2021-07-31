@@ -2,23 +2,21 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth extends StObject {
   
   /**
     * Authentication method e.g. "oauth"
     */
-  var method: String = js.native
+  var method: String
   
-  var oauth_meta: js.UndefOr[js.Any] = js.native
+  var oauth_meta: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Permissions for this user e.g. "wallet:user:read"
     */
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
 }
 object Auth {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserDataAccessConfig extends StObject {
   
   /** Structured Data Files (SDF) settings for the advertiser. If not specified, the SDF settings of the parent partner are used. */
-  var sdfConfig: js.UndefOr[AdvertiserSdfConfig] = js.native
+  var sdfConfig: js.UndefOr[AdvertiserSdfConfig] = js.undefined
 }
 object AdvertiserDataAccessConfig {
   

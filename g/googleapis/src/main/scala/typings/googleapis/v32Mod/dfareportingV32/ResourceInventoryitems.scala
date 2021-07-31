@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Inventoryitems")
@@ -32,7 +31,7 @@ class ResourceInventoryitems protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(callback: BodyResponseCallback[SchemaInventoryItem]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryItem] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(params: ParamsResourceInventoryitemsGet): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(params: ParamsResourceInventoryitemsGet, callback: BodyResponseCallback[SchemaInventoryItem]): Unit = js.native
   def get(
@@ -72,7 +71,7 @@ class ResourceInventoryitems protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaInventoryItemsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(params: ParamsResourceInventoryitemsList): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(
     params: ParamsResourceInventoryitemsList,

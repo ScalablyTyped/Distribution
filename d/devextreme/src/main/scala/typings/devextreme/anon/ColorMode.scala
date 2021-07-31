@@ -6,21 +6,19 @@ import typings.devextreme.devextremeStrings.source
 import typings.devextreme.devextremeStrings.target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorMode extends StObject {
   
-  var border: js.UndefOr[ColorVisible] = js.native
+  var border: js.UndefOr[ColorVisible] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colorMode: js.UndefOr[none | source | target | gradient] = js.native
+  var colorMode: js.UndefOr[none | source | target | gradient] = js.undefined
   
-  var hoverStyle: js.UndefOr[ColorHatching] = js.native
+  var hoverStyle: js.UndefOr[ColorHatching] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object ColorMode {
   

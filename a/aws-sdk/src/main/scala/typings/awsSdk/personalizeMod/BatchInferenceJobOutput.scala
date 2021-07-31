@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchInferenceJobOutput extends StObject {
   
   /**
     * Information on the Amazon S3 bucket in which the batch inference job's output is stored.
     */
-  var s3DataDestination: S3DataConfig = js.native
+  var s3DataDestination: S3DataConfig
 }
 object BatchInferenceJobOutput {
   

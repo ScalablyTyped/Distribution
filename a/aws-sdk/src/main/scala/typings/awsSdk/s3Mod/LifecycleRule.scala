@@ -2,47 +2,45 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleRule extends StObject {
   
-  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3Mod.AbortIncompleteMultipartUpload] = js.native
+  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3Mod.AbortIncompleteMultipartUpload] = js.undefined
   
   /**
     * Specifies the expiration for the lifecycle of the object in the form of date, days and, whether the object has a delete marker.
     */
-  var Expiration: js.UndefOr[LifecycleExpiration] = js.native
+  var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
   
-  var Filter: js.UndefOr[LifecycleRuleFilter] = js.native
+  var Filter: js.UndefOr[LifecycleRuleFilter] = js.undefined
   
   /**
     * Unique identifier for the rule. The value cannot be longer than 255 characters.
     */
-  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.native
+  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.undefined
   
-  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionExpiration] = js.native
+  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionExpiration] = js.undefined
   
   /**
     *  Specifies the transition rule for the lifecycle rule that describes when noncurrent objects transition to a specific storage class. If your bucket is versioning-enabled (or versioning is suspended), you can set this action to request that Amazon S3 transition noncurrent object versions to a specific storage class at a set period in the object's lifetime. 
     */
-  var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.native
+  var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.undefined
   
   /**
     * Prefix identifying one or more objects to which the rule applies. This is No longer used; use Filter instead.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
     */
-  var Status: ExpirationStatus = js.native
+  var Status: ExpirationStatus
   
   /**
     * Specifies when an Amazon S3 object transitions to a specified storage class.
     */
-  var Transitions: js.UndefOr[TransitionList] = js.native
+  var Transitions: js.UndefOr[TransitionList] = js.undefined
 }
 object LifecycleRule {
   

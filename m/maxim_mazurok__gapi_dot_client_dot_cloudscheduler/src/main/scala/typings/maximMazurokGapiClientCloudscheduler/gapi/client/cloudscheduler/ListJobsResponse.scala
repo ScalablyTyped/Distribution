@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /** The list of jobs. */
-  var jobs: js.UndefOr[js.Array[Job]] = js.native
+  var jobs: js.UndefOr[js.Array[Job]] = js.undefined
   
   /**
     * A token to retrieve next page of results. Pass this value in the page_token field in the subsequent call to ListJobs to retrieve the next page of results. If this is empty it
     * indicates that there are no more results through which to paginate. The page token is valid for only 2 hours.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobsResponse {
   

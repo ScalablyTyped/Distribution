@@ -2,19 +2,17 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndDate extends StObject {
   
-  def endDate(date: String): Unit = js.native
+  def endDate(date: String): Unit
   
-  def isFocus(isFocus: Boolean): Unit = js.native
+  def isFocus(isFocus: Boolean): Unit
   
-  def receivedFocusName(focusName: String): Unit = js.native
+  def receivedFocusName(focusName: String): Unit
   
-  def startDate(date: String): Unit = js.native
+  def startDate(date: String): Unit
 }
 object EndDate {
   

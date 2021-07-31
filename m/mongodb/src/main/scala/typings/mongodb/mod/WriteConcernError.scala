@@ -2,17 +2,15 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteConcernError extends StObject {
   
   //Write concern error code.
-  var code: scala.Double = js.native
+  var code: scala.Double
   
   //Write concern error message.
-  var errmsg: String = js.native
+  var errmsg: String
 }
 object WriteConcernError {
   

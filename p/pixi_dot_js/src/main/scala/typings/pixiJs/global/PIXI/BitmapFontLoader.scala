@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.PIXI.ILoaderPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("PIXI.BitmapFontLoader")
 @js.native
-class BitmapFontLoader () extends ILoaderPlugin
+class BitmapFontLoader ()
+  extends StObject
+     with ILoaderPlugin
 object BitmapFontLoader {
+  
+  @JSGlobal("PIXI.BitmapFontLoader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Called when the plugin is installed.
@@ -24,9 +29,8 @@ object BitmapFontLoader {
     * @see PIXI.Loader.registerPlugin
     */
   /* static member */
-  @JSGlobal("PIXI.BitmapFontLoader.add")
-  @js.native
-  def add(): Unit = js.native
+  @scala.inline
+  def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
   
   /**
     * Called after a resource is loaded.
@@ -35,7 +39,6 @@ object BitmapFontLoader {
     * @param {function} next
     */
   /* static member */
-  @JSGlobal("PIXI.BitmapFontLoader.use")
-  @js.native
-  def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

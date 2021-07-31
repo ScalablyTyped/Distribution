@@ -2,20 +2,18 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queue extends StObject {
   
   /** The name of the queue. */
-  val name: String = js.native
+  val name: String
   
   /** The ARN of the queue. */
-  val queueARN: String = js.native
+  val queueARN: String
   
   /** Alias for `queueARN`. */
-  val queueId: String = js.native
+  val queueId: String
 }
 object Queue {
   

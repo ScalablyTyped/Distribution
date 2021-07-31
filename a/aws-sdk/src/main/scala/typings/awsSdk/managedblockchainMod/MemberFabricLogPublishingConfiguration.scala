@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberFabricLogPublishingConfiguration extends StObject {
   
   /**
     * Configuration properties for logging events associated with a member's Certificate Authority (CA). CA logs help you determine when a member in your account joins the network, or when new peers register with a member CA.
     */
-  var CaLogs: js.UndefOr[LogConfigurations] = js.native
+  var CaLogs: js.UndefOr[LogConfigurations] = js.undefined
 }
 object MemberFabricLogPublishingConfiguration {
   

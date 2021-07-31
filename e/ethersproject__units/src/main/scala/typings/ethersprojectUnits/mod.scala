@@ -4,40 +4,34 @@ import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/units", "commify")
+  @JSImport("@ethersproject/units", JSImport.Namespace)
   @js.native
-  def commify(value: String): String = js.native
-  @JSImport("@ethersproject/units", "commify")
-  @js.native
-  def commify(value: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/units", "formatEther")
-  @js.native
-  def formatEther(wei: BigNumberish): String = js.native
+  @scala.inline
+  def commify(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("commify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def commify(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("commify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/units", "formatUnits")
-  @js.native
-  def formatUnits(value: BigNumberish): String = js.native
-  @JSImport("@ethersproject/units", "formatUnits")
-  @js.native
-  def formatUnits(value: BigNumberish, unitName: String): String = js.native
-  @JSImport("@ethersproject/units", "formatUnits")
-  @js.native
-  def formatUnits(value: BigNumberish, unitName: BigNumberish): String = js.native
+  @scala.inline
+  def formatEther(wei: BigNumberish): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatEther")(wei.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/units", "parseEther")
-  @js.native
-  def parseEther(ether: String): BigNumber = js.native
+  @scala.inline
+  def formatUnits(value: BigNumberish): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUnits")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatUnits(value: BigNumberish, unitName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatUnits")(value.asInstanceOf[js.Any], unitName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatUnits(value: BigNumberish, unitName: BigNumberish): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatUnits")(value.asInstanceOf[js.Any], unitName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/units", "parseUnits")
-  @js.native
-  def parseUnits(value: String): BigNumber = js.native
-  @JSImport("@ethersproject/units", "parseUnits")
-  @js.native
-  def parseUnits(value: String, unitName: BigNumberish): BigNumber = js.native
+  @scala.inline
+  def parseEther(ether: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEther")(ether.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+  
+  @scala.inline
+  def parseUnits(value: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUnits")(value.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+  @scala.inline
+  def parseUnits(value: String, unitName: BigNumberish): BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnits")(value.asInstanceOf[js.Any], unitName.asInstanceOf[js.Any])).asInstanceOf[BigNumber]
 }

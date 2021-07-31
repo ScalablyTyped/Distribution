@@ -2,39 +2,37 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFormat extends StObject {
   
-  def drawText(bounds: IRectangle, text: String): js.Any = js.native
+  def drawText(bounds: IRectangle, text: String): js.Any
   
-  def ellipse(x: Double, y: Double, width: Double, height: Double): js.Any = js.native
+  def ellipse(x: Double, y: Double, width: Double, height: Double): js.Any
   
-  var fill: String = js.native
+  var fill: String
   
-  var font: IFont = js.native
+  var font: IFont
   
-  var gradient: IGradient = js.native
+  var gradient: IGradient
   
-  var image: IImage = js.native
+  var image: IImage
   
-  def poligon(points: js.Array[IPoint]): js.Any = js.native
+  def poligon(points: js.Array[IPoint]): js.Any
   
-  def rectangle(x: Double, y: Double, width: Double, height: Double): js.Any = js.native
+  def rectangle(x: Double, y: Double, width: Double, height: Double): js.Any
   
-  var round: IPoint = js.native
+  var round: IPoint
   
-  var shadow: IShadow = js.native
+  var shadow: IShadow
   
-  var stroke: IStroke = js.native
+  var stroke: IStroke
   
-  def textHeight(text: String): Double = js.native
+  def textHeight(text: String): Double
   
-  def textWidth(text: String): Double = js.native
+  def textWidth(text: String): Double
   
-  var transparency: Double = js.native
+  var transparency: Double
 }
 object IFormat {
   

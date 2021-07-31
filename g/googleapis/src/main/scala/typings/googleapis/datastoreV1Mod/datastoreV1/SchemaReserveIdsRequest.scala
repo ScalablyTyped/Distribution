@@ -2,25 +2,23 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Datastore.ReserveIds.
   */
-@js.native
 trait SchemaReserveIdsRequest extends StObject {
   
   /**
     * If not empty, the ID of the database against which to make the request.
     */
-  var databaseId: js.UndefOr[String] = js.native
+  var databaseId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of keys with complete key paths whose numeric IDs should not be
     * auto-allocated.
     */
-  var keys: js.UndefOr[js.Array[SchemaKey]] = js.native
+  var keys: js.UndefOr[js.Array[SchemaKey]] = js.undefined
 }
 object SchemaReserveIdsRequest {
   

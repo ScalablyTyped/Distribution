@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.three.mod.XRHand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofXRHand extends Instantiable0[XRHand] {
+trait TypeofXRHand
+  extends StObject
+     with Instantiable0[XRHand] {
   
   val INDEX_METACARPAL: /* 5 */ Double = js.native
   

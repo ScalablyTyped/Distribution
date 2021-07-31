@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopRecordSuccessCallbackResult extends StObject {
   
   /** 封面图片文件的临时路径 */
-  var tempThumbPath: String = js.native
+  var tempThumbPath: String
   
   /** 视频的文件的临时路径 */
-  var tempVideoPath: String = js.native
+  var tempVideoPath: String
 }
 object StopRecordSuccessCallbackResult {
   

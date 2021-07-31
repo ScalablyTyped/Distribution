@@ -11,8 +11,8 @@ Gracefully cleanup when termination signals are sent to your process.
 | Full name          | death |
 | Keywords           | sigint, sigterm, sigkill, sigquit, exception, kill, terminate, process, clean |
 | # releases         | 0 |
-| # dependents       | 149 |
-| # downloads        | 2847044 |
+| # dependents       | 162 |
+| # downloads        | 2877214 |
 | # stars            | 15 |
 
 ## Links

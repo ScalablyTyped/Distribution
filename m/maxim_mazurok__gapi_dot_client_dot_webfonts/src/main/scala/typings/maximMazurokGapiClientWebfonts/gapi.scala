@@ -5,7 +5,6 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientWebfonts.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,36 +13,35 @@ object gapi {
     
     object webfonts {
       
-      @js.native
       trait Webfont extends StObject {
         
         /** The category of the font. */
-        var category: js.UndefOr[String] = js.native
+        var category: js.UndefOr[String] = js.undefined
         
         /** The name of the font. */
-        var family: js.UndefOr[String] = js.native
+        var family: js.UndefOr[String] = js.undefined
         
         /** The font files (with all supported scripts) for each one of the available variants, as a key : value map. */
         var files: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[js.Any]
+              ] = js.undefined
         
         /** This kind represents a webfont object in the webfonts service. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The date (format "yyyy-MM-dd") the font was modified for the last time. */
-        var lastModified: js.UndefOr[String] = js.native
+        var lastModified: js.UndefOr[String] = js.undefined
         
         /** The scripts supported by the font. */
-        var subsets: js.UndefOr[js.Array[String]] = js.native
+        var subsets: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The available variants for the font. */
-        var variants: js.UndefOr[js.Array[String]] = js.native
+        var variants: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The font version. */
-        var version: js.UndefOr[String] = js.native
+        var version: js.UndefOr[String] = js.undefined
       }
       object Webfont {
         
@@ -72,7 +70,7 @@ object gapi {
           def setFiles(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[js.Any]
           ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -116,14 +114,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait WebfontList extends StObject {
         
         /** The list of fonts currently served by the Google Fonts API. */
-        var items: js.UndefOr[js.Array[Webfont]] = js.native
+        var items: js.UndefOr[js.Array[Webfont]] = js.undefined
         
         /** This kind represents a list of webfont objects in the webfonts service. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
       }
       object WebfontList {
         

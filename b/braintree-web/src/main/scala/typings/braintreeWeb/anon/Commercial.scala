@@ -3,29 +3,27 @@ package typings.braintreeWeb.anon
 import typings.braintreeWeb.googlePaymentMod.GooglePaymentTokenizeValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commercial extends StObject {
   
-  var commercial: GooglePaymentTokenizeValues = js.native
+  var commercial: GooglePaymentTokenizeValues
   
-  var countryOfIssuance: String = js.native
+  var countryOfIssuance: String
   
-  var debit: GooglePaymentTokenizeValues = js.native
+  var debit: GooglePaymentTokenizeValues
   
-  var durbinRegulated: GooglePaymentTokenizeValues = js.native
+  var durbinRegulated: GooglePaymentTokenizeValues
   
-  var healthcare: GooglePaymentTokenizeValues = js.native
+  var healthcare: GooglePaymentTokenizeValues
   
-  var issuingBank: GooglePaymentTokenizeValues = js.native
+  var issuingBank: GooglePaymentTokenizeValues
   
-  var payroll: GooglePaymentTokenizeValues = js.native
+  var payroll: GooglePaymentTokenizeValues
   
-  var prepaid: GooglePaymentTokenizeValues = js.native
+  var prepaid: GooglePaymentTokenizeValues
   
-  var productId: String = js.native
+  var productId: String
 }
 object Commercial {
   

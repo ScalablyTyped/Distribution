@@ -9,22 +9,23 @@ import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceMemberMod {
   
-  @JSImport("contentful-management/dist/typings/entities/space-member", "wrapSpaceMember")
+  @JSImport("contentful-management/dist/typings/entities/space-member", JSImport.Namespace)
   @js.native
-  def wrapSpaceMember(http: AxiosInstance, data: SpaceMemberProps): SpaceMemberPropstoPlainOb = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/space-member", "wrapSpaceMemberCollection")
-  @js.native
-  def wrapSpaceMemberCollection(http: AxiosInstance, data: CollectionProp[SpaceMemberProps]): Collection[SpaceMemberPropstoPlainOb, SpaceMemberProps] = js.native
+  @scala.inline
+  def wrapSpaceMember(http: AxiosInstance, data: SpaceMemberProps): SpaceMemberPropstoPlainOb = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMember")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[SpaceMemberPropstoPlainOb]
   
-  @js.native
+  @scala.inline
+  def wrapSpaceMemberCollection(http: AxiosInstance, data: CollectionProp[SpaceMemberProps]): Collection[SpaceMemberPropstoPlainOb, SpaceMemberProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMemberCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[SpaceMemberPropstoPlainOb, SpaceMemberProps]]
+  
   trait SpaceMember
-    extends SpaceMemberProps
+    extends StObject
+       with SpaceMemberProps
        with DefaultElements[SpaceMemberProps]
   object SpaceMember {
     
@@ -40,20 +41,19 @@ object spaceMemberMod {
     }
   }
   
-  @js.native
   trait SpaceMemberProps extends StObject {
     
     /**
       * User is an admin
       */
-    var admin: Boolean = js.native
+    var admin: Boolean
     
     /**
       * Array of Role Links
       */
-    var roles: js.Array[MetaLinkProps] = js.native
+    var roles: js.Array[MetaLinkProps]
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object SpaceMemberProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEndpointConfigInput extends StObject {
   
   /**
     * The name of the endpoint configuration that you want to delete.
     */
-  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName = js.native
+  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName
 }
 object DeleteEndpointConfigInput {
   

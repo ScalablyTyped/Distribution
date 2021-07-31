@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An aggregation analyzing log information for queries and events. */
-@js.native
 trait MetricTokenAggregation extends StObject {
   
   /** The event type associated with this metric result. This field, when present, will always be `click`. */
-  var event_type: js.UndefOr[String] = js.native
+  var event_type: js.UndefOr[String] = js.undefined
   
   /** Array of results for the metric token aggregation. */
-  var results: js.UndefOr[js.Array[MetricTokenAggregationResult]] = js.native
+  var results: js.UndefOr[js.Array[MetricTokenAggregationResult]] = js.undefined
 }
 object MetricTokenAggregation {
   

@@ -2,58 +2,56 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GardenSoil extends StObject {
   
   /**
     * The multiplier of garden effects
     */
-  var effMult: Double = js.native
+  var effMult: Double
   
   /**
     * The HTML string describing the effects of the soil
     */
-  var effsStr: String = js.native
+  var effsStr: String
   
   /**
     * The soil icon column in the plant icon sheet
     */
-  var icon: Double = js.native
+  var icon: Double
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The internal name of the soil
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The displayed name of the soil
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The flavour text of the soil
     */
-  var q: String = js.native
+  var q: String
   
   /**
     * The amount of farms required to unlock the soil
     */
-  var req: Double = js.native
+  var req: Double
   
   /**
     * The amount of minutes per tick
     */
-  var tick: Double = js.native
+  var tick: Double
   
   /**
     * The multiplier of weed amount
     */
-  var weedMult: Double = js.native
+  var weedMult: Double
 }
 object GardenSoil {
   

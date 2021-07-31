@@ -2,18 +2,16 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/issue-parser/
-@js.native
 trait IssueParser extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  val issues: js.Array[Issue] = js.native
+  val issues: js.Array[Issue]
   
-  def pushLine(line: String): Unit = js.native
+  def pushLine(line: String): Unit
 }
 object IssueParser {
   

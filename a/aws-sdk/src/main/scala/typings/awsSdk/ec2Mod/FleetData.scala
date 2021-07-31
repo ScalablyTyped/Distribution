@@ -2,111 +2,109 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetData extends StObject {
   
   /**
     * The progress of the EC2 Fleet. If there is an error, the status is error. After all requests are placed, the status is pending_fulfillment. If the size of the EC2 Fleet is equal to or greater than its target capacity, the status is fulfilled. If the size of the EC2 Fleet is decreased, the status is pending_termination while instances are terminating.
     */
-  var ActivityStatus: js.UndefOr[FleetActivityStatus] = js.native
+  var ActivityStatus: js.UndefOr[FleetActivityStatus] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The creation date and time of the EC2 Fleet.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
     */
-  var Errors: js.UndefOr[DescribeFleetsErrorSet] = js.native
+  var Errors: js.UndefOr[DescribeFleetsErrorSet] = js.undefined
   
   /**
     * Indicates whether running instances should be terminated if the target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
     */
-  var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.native
+  var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.undefined
   
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
     * The state of the EC2 Fleet.
     */
-  var FleetState: js.UndefOr[FleetStateCode] = js.native
+  var FleetState: js.UndefOr[FleetStateCode] = js.undefined
   
   /**
     * The number of units fulfilled by this request compared to the set target capacity.
     */
-  var FulfilledCapacity: js.UndefOr[Double] = js.native
+  var FulfilledCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of units fulfilled by this request compared to the set target On-Demand capacity.
     */
-  var FulfilledOnDemandCapacity: js.UndefOr[Double] = js.native
+  var FulfilledOnDemandCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
     */
-  var Instances: js.UndefOr[DescribeFleetsInstancesSet] = js.native
+  var Instances: js.UndefOr[DescribeFleetsInstancesSet] = js.undefined
   
   /**
     * The launch template and overrides.
     */
-  var LaunchTemplateConfigs: js.UndefOr[FleetLaunchTemplateConfigList] = js.native
+  var LaunchTemplateConfigs: js.UndefOr[FleetLaunchTemplateConfigList] = js.undefined
   
   /**
     * The allocation strategy of On-Demand Instances in an EC2 Fleet.
     */
-  var OnDemandOptions: js.UndefOr[typings.awsSdk.ec2Mod.OnDemandOptions] = js.native
+  var OnDemandOptions: js.UndefOr[typings.awsSdk.ec2Mod.OnDemandOptions] = js.undefined
   
   /**
     * Indicates whether EC2 Fleet should replace unhealthy instances.
     */
-  var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.native
+  var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The configuration of Spot Instances in an EC2 Fleet.
     */
-  var SpotOptions: js.UndefOr[typings.awsSdk.ec2Mod.SpotOptions] = js.native
+  var SpotOptions: js.UndefOr[typings.awsSdk.ec2Mod.SpotOptions] = js.undefined
   
   /**
     * The tags for an EC2 Fleet resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The number of units to request. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
     */
-  var TargetCapacitySpecification: js.UndefOr[typings.awsSdk.ec2Mod.TargetCapacitySpecification] = js.native
+  var TargetCapacitySpecification: js.UndefOr[typings.awsSdk.ec2Mod.TargetCapacitySpecification] = js.undefined
   
   /**
     * Indicates whether running instances should be terminated when the EC2 Fleet expires. 
     */
-  var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.native
+  var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. If you request a certain target capacity, EC2 Fleet only places the required requests; it does not attempt to replenish instances if capacity is diminished, and it does not submit requests in alternative capacity pools if capacity is unavailable. To maintain a certain target capacity, EC2 Fleet places the required requests to meet this target capacity. It also automatically replenishes any interrupted Spot Instances. Default: maintain.
     */
-  var Type: js.UndefOr[FleetType] = js.native
+  var Type: js.UndefOr[FleetType] = js.undefined
   
   /**
     * The start date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately. 
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.native
+  var ValidFrom: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new instance requests are placed or able to fulfill the request. The default end date is 7 days from the current date. 
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.native
+  var ValidUntil: js.UndefOr[DateTime] = js.undefined
 }
 object FleetData {
   

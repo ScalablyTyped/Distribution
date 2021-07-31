@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.NumberTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait NumberTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait NumberTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowBaseAnnotation
      with FlowType {
   
   @JSName("type")
-  var type_NumberTypeAnnotation_ : NumberTypeAnnotation = js.native
+  var type_NumberTypeAnnotation_ : NumberTypeAnnotation
 }
 object NumberTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: NumberTypeAnnotation): NumberTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): NumberTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NumberTypeAnnotation")
     __obj.asInstanceOf[NumberTypeAnnotation_]
   }
   

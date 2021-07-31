@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter extends StObject {
   
   /**
     * The parameter name.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * The array of strings.
     */
-  var values: Input[js.Array[Input[String]]] = js.native
+  var values: Input[js.Array[Input[String]]]
 }
 object MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter {
   

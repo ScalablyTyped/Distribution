@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMediaInfoValueProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ImageMediaInfoValueProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ImageMediaInfoValue.html#linkURL)
     */
-  var linkURL: js.UndefOr[String] = js.native
+  var linkURL: js.UndefOr[String] = js.undefined
   
   /**
     * A string containing the URL to the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ImageMediaInfoValue.html#sourceURL)
     */
-  var sourceURL: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.undefined
 }
 object ImageMediaInfoValueProperties {
   

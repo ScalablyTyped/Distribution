@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logging extends StObject {
   
   /**
     * The access log configuration for a virtual node.
     */
-  var accessLog: js.UndefOr[AccessLog] = js.native
+  var accessLog: js.UndefOr[AccessLog] = js.undefined
 }
 object Logging {
   

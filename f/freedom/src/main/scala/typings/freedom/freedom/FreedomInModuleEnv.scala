@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.freedom.freedom.TcpSocket.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FreedomInModuleEnv
-  extends // We use this specification so that you can reference freedom sub-modules by
+  extends StObject
+     with // We use this specification so that you can reference freedom sub-modules by
 // an array-lookup of its name. One day, maybe we'll have a nicer way to do
 // this.
-/* moduleName */ StringDictionary[FreedomModuleFactoryManager[_]] {
+/* moduleName */ StringDictionary[FreedomModuleFactoryManager[js.Any]] {
   
   // Represents the call to freedom(), which returns the parent module's
   // freedom stub interface in an on/emit style. This is a getter.

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureValue extends StObject {
   
   /** The categorical feature value. */
-  var categoricalValue: js.UndefOr[CategoricalValue] = js.native
+  var categoricalValue: js.UndefOr[CategoricalValue] = js.undefined
   
   /** The feature column name. */
-  var featureColumn: js.UndefOr[String] = js.native
+  var featureColumn: js.UndefOr[String] = js.undefined
   
   /** The numerical feature value. This is the centroid value for this feature. */
-  var numericalValue: js.UndefOr[Double] = js.native
+  var numericalValue: js.UndefOr[Double] = js.undefined
 }
 object FeatureValue {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGlobalSettingsResponse extends StObject {
   
   /**
     * The Amazon Chime Business Calling settings.
     */
-  var BusinessCalling: js.UndefOr[BusinessCallingSettings] = js.native
+  var BusinessCalling: js.UndefOr[BusinessCallingSettings] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector settings.
     */
-  var VoiceConnector: js.UndefOr[VoiceConnectorSettings] = js.native
+  var VoiceConnector: js.UndefOr[VoiceConnectorSettings] = js.undefined
 }
 object GetGlobalSettingsResponse {
   

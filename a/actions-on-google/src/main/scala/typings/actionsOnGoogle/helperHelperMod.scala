@@ -6,14 +6,15 @@ import typings.actionsOnGoogle.conversationConversationMod.Intent
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2ExpectedIntent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperHelperMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/helper", "Helper")
   @js.native
-  class Helper[TIntent /* <: Intent */, TValueSpec] protected () extends GoogleActionsV2ExpectedIntent {
+  class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
+    extends StObject
+       with GoogleActionsV2ExpectedIntent {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
     
     @JSName("inputValueData")
@@ -26,14 +27,13 @@ object helperHelperMod {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
   }
   
-  @js.native
   trait HelperOptions[TIntent /* <: Intent */, TValueSpec] extends StObject {
     
-    var data: js.UndefOr[TValueSpec] = js.native
+    var data: js.UndefOr[TValueSpec] = js.undefined
     
-    var intent: TIntent = js.native
+    var intent: TIntent
     
-    var `type`: InputValueSpec = js.native
+    var `type`: InputValueSpec
   }
   object HelperOptions {
     
@@ -45,7 +45,7 @@ object helperHelperMod {
     }
     
     @scala.inline
-    implicit class HelperOptionsMutableBuilder[Self <: HelperOptions[_, _], TIntent /* <: Intent */, TValueSpec] (val x: Self with (HelperOptions[TIntent, TValueSpec])) extends AnyVal {
+    implicit class HelperOptionsMutableBuilder[Self <: HelperOptions[?, ?], TIntent /* <: Intent */, TValueSpec] (val x: Self & (HelperOptions[TIntent, TValueSpec])) extends AnyVal {
       
       @scala.inline
       def setData(value: TValueSpec): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -12,7 +12,6 @@ import typings.reactIntl.typesMod.IntlShape
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluralMod {
@@ -20,12 +19,11 @@ object pluralMod {
   /* Inlined react.react.FC<react-intl.react-intl/lib/src/components/injectIntl.WithIntlProps<react-intl.react-intl/lib/src/components/plural.Props>> & {  WrappedComponent :react.react.ComponentType<react-intl.react-intl/lib/src/components/plural.Props>} */
   object default {
     
-    @JSImport("react-intl/lib/src/components/plural", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[WithIntlProps[Props]]): ReactElement | Null = js.native
-    @JSImport("react-intl/lib/src/components/plural", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[WithIntlProps[Props]], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[WithIntlProps[Props]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[WithIntlProps[Props]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("react-intl/lib/src/components/plural", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -62,26 +60,27 @@ object pluralMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Intl.PluralRulesOptions extends 'localeMatcher' ? never : std.Intl.PluralRulesOptions */ @js.native
-  trait Props extends CustomFormatConfig {
+  - Dropped std.Intl.PluralRulesOptions extends 'localeMatcher' ? never : std.Intl.PluralRulesOptions */ trait Props
+    extends StObject
+       with CustomFormatConfig {
     
-    var children: js.UndefOr[js.Function1[/* value */ ReactNode, ReactElement | Null]] = js.native
+    var children: js.UndefOr[js.Function1[/* value */ ReactNode, ReactElement | Null]] = js.undefined
     
-    var few: js.UndefOr[ReactNode] = js.native
+    var few: js.UndefOr[ReactNode] = js.undefined
     
-    var intl: IntlShape = js.native
+    var intl: IntlShape
     
-    var many: js.UndefOr[ReactNode] = js.native
+    var many: js.UndefOr[ReactNode] = js.undefined
     
-    var one: js.UndefOr[ReactNode] = js.native
+    var one: js.UndefOr[ReactNode] = js.undefined
     
-    var other: ReactNode = js.native
+    var other: ReactNode
     
-    var two: js.UndefOr[ReactNode] = js.native
+    var two: js.UndefOr[ReactNode] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
     
-    var zero: js.UndefOr[ReactNode] = js.native
+    var zero: js.UndefOr[ReactNode] = js.undefined
   }
   object Props {
     

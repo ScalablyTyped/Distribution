@@ -3,21 +3,19 @@ package typings.reduxBatchedActions
 import typings.reduxBatchedActions.reduxBatchedActionsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Batch extends StObject {
     
-    var batch: `true` = js.native
+    var batch: `true`
   }
   object Batch {
     
     @scala.inline
-    def apply(batch: `true`): Batch = {
-      val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any])
+    def apply(): Batch = {
+      val __obj = js.Dynamic.literal(batch = true)
       __obj.asInstanceOf[Batch]
     }
     

@@ -19,25 +19,25 @@ import typings.prismReactRenderer.prismReactRendererStrings.normal
 import typings.prismReactRenderer.prismReactRendererStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrismThemeEntry extends /* styleKey */ StringDictionary[String | Double | Unit] {
+trait PrismThemeEntry
+  extends StObject
+     with /* styleKey */ StringDictionary[String | Double | Unit] {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[normal | italic] = js.native
+  var fontStyle: js.UndefOr[normal | italic] = js.undefined
   
   var fontWeight: js.UndefOr[
     normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ] = js.native
+  ] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.native
+  var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.undefined
 }
 object PrismThemeEntry {
   

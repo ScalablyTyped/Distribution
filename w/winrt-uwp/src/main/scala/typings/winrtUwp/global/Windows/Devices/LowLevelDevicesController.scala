@@ -2,13 +2,13 @@ package typings.winrtUwp.global.Windows.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Devices.LowLevelDevicesController")
 @js.native
 abstract class LowLevelDevicesController ()
-  extends typings.winrtUwp.Windows.Devices.LowLevelDevicesController
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.LowLevelDevicesController
 object LowLevelDevicesController {
   
   @JSGlobal("Windows.Devices.LowLevelDevicesController")

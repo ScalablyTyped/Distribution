@@ -2,34 +2,32 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorBars extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  var EndStyle: XlEndStyleCap = js.native
+  var EndStyle: XlEndStyleCap
   
   @JSName("Excel.ErrorBars_typekey")
-  var ExcelDotErrorBars_typekey: ErrorBars = js.native
+  var ExcelDotErrorBars_typekey: ErrorBars
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object ErrorBars {
   

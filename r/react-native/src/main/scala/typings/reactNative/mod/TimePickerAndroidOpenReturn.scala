@@ -1,10 +1,7 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dismissedAction
-import typings.reactNative.reactNativeStrings.timeSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -15,14 +12,14 @@ trait TimePickerAndroidOpenReturn extends StObject
 object TimePickerAndroidOpenReturn {
   
   @scala.inline
-  def TimePickerAndroidDismissedAction(action: dismissedAction): typings.reactNative.mod.TimePickerAndroidDismissedAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def TimePickerAndroidDismissedAction(): typings.reactNative.mod.TimePickerAndroidDismissedAction = {
+    val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[typings.reactNative.mod.TimePickerAndroidDismissedAction]
   }
   
   @scala.inline
-  def TimePickerAndroidTimeSetAction(action: timeSetAction, hour: Double, minute: Double): typings.reactNative.mod.TimePickerAndroidTimeSetAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
+  def TimePickerAndroidTimeSetAction(hour: Double, minute: Double): typings.reactNative.mod.TimePickerAndroidTimeSetAction = {
+    val __obj = js.Dynamic.literal(action = "timeSetAction", hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNative.mod.TimePickerAndroidTimeSetAction]
   }
 }

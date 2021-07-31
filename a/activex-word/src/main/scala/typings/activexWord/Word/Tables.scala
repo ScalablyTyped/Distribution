@@ -2,26 +2,25 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tables extends StObject {
   
   def Add(Range: Range, NumRows: Double, NumColumns: Double): Table = js.native
-  def Add(
-    Range: Range,
-    NumRows: Double,
-    NumColumns: Double,
-    DefaultTableBehavior: js.UndefOr[scala.Nothing],
-    AutoFitBehavior: js.Any
-  ): Table = js.native
   def Add(Range: Range, NumRows: Double, NumColumns: Double, DefaultTableBehavior: js.Any): Table = js.native
   def Add(
     Range: Range,
     NumRows: Double,
     NumColumns: Double,
     DefaultTableBehavior: js.Any,
+    AutoFitBehavior: js.Any
+  ): Table = js.native
+  def Add(
+    Range: Range,
+    NumRows: Double,
+    NumColumns: Double,
+    DefaultTableBehavior: Unit,
     AutoFitBehavior: js.Any
   ): Table = js.native
   

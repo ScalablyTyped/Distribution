@@ -3,10 +3,8 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FulfillRequestRequest extends StObject {
   
   /**
@@ -15,33 +13,33 @@ trait FulfillRequestRequest extends StObject {
     * need to represent some non-UTF8 values that can't be transmitted
     * over the protocol as text.
     */
-  var binaryResponseHeaders: js.UndefOr[String] = js.native
+  var binaryResponseHeaders: js.UndefOr[String] = js.undefined
   
   /**
     * A response body.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * An id the client received in requestPaused event.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * An HTTP response code.
     */
-  var responseCode: integer = js.native
+  var responseCode: integer
   
   /**
     * Response headers.
     */
-  var responseHeaders: js.UndefOr[js.Array[HeaderEntry]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[HeaderEntry]] = js.undefined
   
   /**
     * A textual representation of responseCode.
     * If absent, a standard phrase matching responseCode is used.
     */
-  var responsePhrase: js.UndefOr[String] = js.native
+  var responsePhrase: js.UndefOr[String] = js.undefined
 }
 object FulfillRequestRequest {
   

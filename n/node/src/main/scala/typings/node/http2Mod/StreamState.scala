@@ -2,23 +2,21 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamState extends StObject {
   
-  var localClose: js.UndefOr[Double] = js.native
+  var localClose: js.UndefOr[Double] = js.undefined
   
-  var localWindowSize: js.UndefOr[Double] = js.native
+  var localWindowSize: js.UndefOr[Double] = js.undefined
   
-  var remoteClose: js.UndefOr[Double] = js.native
+  var remoteClose: js.UndefOr[Double] = js.undefined
   
-  var state: js.UndefOr[Double] = js.native
+  var state: js.UndefOr[Double] = js.undefined
   
-  var sumDependencyWeight: js.UndefOr[Double] = js.native
+  var sumDependencyWeight: js.UndefOr[Double] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object StreamState {
   

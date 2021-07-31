@@ -18,7 +18,6 @@ import typings.storybookUi.anon.ValidString
 import typings.storybookUi.storybookUiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutsMod {
@@ -123,16 +122,15 @@ object shortcutsMod {
   */
   trait Feature extends StObject
   
-  @js.native
   trait ShortcutsScreenProps extends StObject {
     
-    var restoreAllDefaultShortcuts: js.Function = js.native
+    var restoreAllDefaultShortcuts: js.Function
     
-    var restoreDefaultShortcut: js.Function = js.native
+    var restoreDefaultShortcut: js.Function
     
-    var setShortcut: js.Function = js.native
+    var setShortcut: js.Function
     
-    var shortcutKeys: RecordFeatureany = js.native
+    var shortcutKeys: RecordFeatureany
   }
   object ShortcutsScreenProps {
     
@@ -164,14 +162,13 @@ object shortcutsMod {
     }
   }
   
-  @js.native
   trait ShortcutsScreenState extends StObject {
     
-    var activeFeature: Feature = js.native
+    var activeFeature: Feature
     
-    var shortcutKeys: RecordFeatureany = js.native
+    var shortcutKeys: RecordFeatureany
     
-    var successField: Feature = js.native
+    var successField: Feature
   }
   object ShortcutsScreenState {
     

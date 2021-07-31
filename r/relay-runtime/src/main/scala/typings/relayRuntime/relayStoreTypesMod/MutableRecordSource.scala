@@ -5,19 +5,19 @@ import typings.relayRuntime.relayRecordStateMod.RecordState
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MutableRecordSource extends RecordSource {
+trait MutableRecordSource
+  extends StObject
+     with RecordSource {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def delete(dataID: DataID): Unit = js.native
+  def delete(dataID: DataID): Unit
   
-  def remove(dataID: DataID): Unit = js.native
+  def remove(dataID: DataID): Unit
   
-  def set(dataID: DataID, record: Record): Unit = js.native
+  def set(dataID: DataID, record: Record): Unit
 }
 object MutableRecordSource {
   

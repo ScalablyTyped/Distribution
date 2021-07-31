@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /** The user's last name. Read-only. */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /** The user's full name formed by concatenating the first and last name values. Read-only. */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /** The user's first name. Read-only. */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
 }
 object Name {
   

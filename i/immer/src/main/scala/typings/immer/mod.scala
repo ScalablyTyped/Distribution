@@ -1,6 +1,5 @@
 package typings.immer
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.immer.anon.AutoFreeze
@@ -18,10 +17,13 @@ import typings.std.WeakMap
 import typings.std.WeakSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("immer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("immer", JSImport.Default)
   @js.native
@@ -101,8 +103,8 @@ object mod extends Shortcut {
       * @param {Function} patchListener - optional function that will be called with all the patches produced here
       * @returns {any} a new state, or the initial state if nothing was modified
       */
-    def produce[Default, Base, Rest /* <: js.Array[_] */, Return](recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return]): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
-    def produce[Default, Base, Rest /* <: js.Array[_] */, Return](
+    def produce[Default, Base, Rest /* <: js.Array[js.Any] */, Return](recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return]): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
+    def produce[Default, Base, Rest /* <: js.Array[js.Any] */, Return](
       recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return],
       defaultBase: Default
     ): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
@@ -149,33 +151,28 @@ object mod extends Shortcut {
     val useProxies: Boolean = js.native
   }
   
-  @JSImport("immer", "applyPatches")
-  @js.native
-  def applyPatches[S](base: S, patches: js.Array[Patch]): S = js.native
+  @scala.inline
+  def applyPatches[S](base: S, patches: js.Array[Patch]): S = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatches")(base.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
   
-  @JSImport("immer", "isDraft")
-  @js.native
-  def isDraft(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isDraft(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDraft")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("immer", "nothing")
   @js.native
   val nothing: Nothing_ = js.native
   
-  @JSImport("immer", "original")
-  @js.native
-  def original[T](value: T): T | Unit = js.native
+  @scala.inline
+  def original[T](value: T): T | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("original")(value.asInstanceOf[js.Any]).asInstanceOf[T | Unit]
   
   @JSImport("immer", "produce")
   @js.native
   val produce: IProduce = js.native
   
-  @JSImport("immer", "setAutoFreeze")
-  @js.native
-  def setAutoFreeze(autoFreeze: Boolean): Unit = js.native
+  @scala.inline
+  def setAutoFreeze(autoFreeze: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoFreeze")(autoFreeze.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("immer", "setUseProxies")
-  @js.native
-  def setUseProxies(useProxies: Boolean): Unit = js.native
+  @scala.inline
+  def setUseProxies(useProxies: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseProxies")(useProxies.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ArrayMethod = Exclude[/* keyof [] */ String, Double]
   
@@ -183,17 +180,18 @@ object mod extends Shortcut {
   
   type Draft[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias immer.immer.Draft<T[P]> * / object}
-    */ typings.immer.immerStrings.Draft with TopLevel[js.Any]) | DraftTuple[T] | DraftArray[T]
+    */ typings.immer.immerStrings.Draft & TopLevel[js.Any]) | DraftTuple[T] | DraftArray[T]
   
   @js.native
-  trait DraftArray[T /* <: js.Array[_] */]
-    extends Array[
+  trait DraftArray[T /* <: js.Array[js.Any] */]
+    extends StObject
+       with Array[
           /* import warning: importer.ImportType#apply Failed type conversion: {[ P in immer.immer.Indices<T> ]: immer.immer.Draft<T[P]>}[immer.immer.Indices<T>] */ js.Any
         ]
   
-  type DraftTuple[T /* <: js.Array[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type DraftTuple[T /* <: js.Array[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: P extends immer.immer.Indices<T>? immer.immer.Draft<T[P]> : never}
-    */ typings.immer.immerStrings.DraftTuple with TopLevel[T]
+    */ typings.immer.immerStrings.DraftTuple & TopLevel[T]
   
   /** Converts `nothing` into `undefined` */
   type FromNothing[T] = js.UndefOr[T | (Exclude[T, Nothing_])]
@@ -234,23 +232,22 @@ object mod extends Shortcut {
       listener: PatchListener
     ): Produced[Base, Return] = js.native
     /** Curried producer */
-    def apply[Default, Base, Rest /* <: js.Array[_] */, Return](recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return]): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
-    def apply[Default, Base, Rest /* <: js.Array[_] */, Return](
+    def apply[Default, Base, Rest /* <: js.Array[js.Any] */, Return](recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return]): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
+    def apply[Default, Base, Rest /* <: js.Array[js.Any] */, Return](
       recipe: js.ThisFunction2[/* this */ Draft[Base], /* draft */ Draft[Base], /* rest */ Rest, Return],
       defaultBase: Default
     ): js.Function2[/* base */ js.UndefOr[Base], /* rest */ Rest, Produced[Base, Return]] = js.native
   }
   
-  @js.native
   trait ImmerState[T] extends StObject {
     
-    var assigned: StringDictionary[Boolean] = js.native
+    var assigned: StringDictionary[Boolean]
     
-    var base: T = js.native
+    var base: T
     
-    var copy: T = js.native
+    var copy: T
     
-    var parent: js.UndefOr[ImmerState[_]] = js.native
+    var parent: js.UndefOr[ImmerState[js.Any]] = js.undefined
   }
   object ImmerState {
     
@@ -261,7 +258,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ImmerStateMutableBuilder[Self <: ImmerState[_], T] (val x: Self with ImmerState[T]) extends AnyVal {
+    implicit class ImmerStateMutableBuilder[Self <: ImmerState[?], T] (val x: Self & ImmerState[T]) extends AnyVal {
       
       @scala.inline
       def setAssigned(value: StringDictionary[Boolean]): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
@@ -273,7 +270,7 @@ object mod extends Shortcut {
       def setCopy(value: T): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParent(value: ImmerState[_]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      def setParent(value: ImmerState[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
@@ -290,12 +287,11 @@ object mod extends Shortcut {
   trait IsVoidLike[T] extends StObject
   
   /** Use a class type for `nothing` so its type is unique */
-  @js.native
   trait Nothing_ extends StObject {
     
     // This lets us do `Exclude<T, Nothing>`
     @JSName("_")
-    var _underscore: js.Any = js.native
+    var _underscore: js.Any
   }
   object Nothing_ {
     
@@ -314,14 +310,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Patch extends StObject {
     
-    var op: replace | remove | add = js.native
+    var op: replace | remove | add
     
-    var path: js.Array[String | Double] = js.native
+    var path: js.Array[String | Double]
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Patch {
     
@@ -355,9 +350,4 @@ object mod extends Shortcut {
   
   /** The inferred return type of `produce` */
   type Produced[Base, Return] = (FromNothing[(Exclude[Return, Unit]) | Return]) | Base
-  
-  type _To = IProduce
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: IProduce = default
 }

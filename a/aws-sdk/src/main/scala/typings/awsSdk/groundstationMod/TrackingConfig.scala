@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackingConfig extends StObject {
   
   /**
     * Current setting for autotrack.
     */
-  var autotrack: Criticality = js.native
+  var autotrack: Criticality
 }
 object TrackingConfig {
   

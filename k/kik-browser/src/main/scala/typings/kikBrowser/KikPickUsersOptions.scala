@@ -3,21 +3,19 @@ package typings.kikBrowser
 import typings.kikBrowser.anon.Username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KikPickUsersOptions extends StObject {
   
-  var filterSelf: js.UndefOr[Boolean] = js.native
+  var filterSelf: js.UndefOr[Boolean] = js.undefined
   
-  var filtered: js.UndefOr[js.Array[String]] = js.native
+  var filtered: js.UndefOr[js.Array[String]] = js.undefined
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var minResults: js.UndefOr[Double] = js.native
+  var minResults: js.UndefOr[Double] = js.undefined
   
-  var preselected: js.UndefOr[js.Array[Username]] = js.native
+  var preselected: js.UndefOr[js.Array[Username]] = js.undefined
 }
 object KikPickUsersOptions {
   

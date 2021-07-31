@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.chart.XComplexDescriptionAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,51 +15,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Can be obtained from interface {@link XChartDocument} via method {@link getData()} .
   * @since OOo 3.4
   */
-@js.native
-trait XAnyDescriptionAccess extends XComplexDescriptionAccess {
+trait XAnyDescriptionAccess
+  extends StObject
+     with XComplexDescriptionAccess {
   
   /**
     * retrieves the descriptions for all columns.
     * @returns a sequence of sequences of anys representing the descriptions of all columns. The outer index represents different columns. The inner index repre
     */
-  val AnyColumnDescriptions: SafeArray[SafeArray[_]] = js.native
+  val AnyColumnDescriptions: SafeArray[SafeArray[js.Any]]
   
   /**
     * retrieves the descriptions for all rows.
     * @returns a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner index represents
     */
-  val AnyRowDescriptions: SafeArray[SafeArray[_]] = js.native
+  val AnyRowDescriptions: SafeArray[SafeArray[js.Any]]
   
   /**
     * retrieves the descriptions for all columns.
     * @returns a sequence of sequences of anys representing the descriptions of all columns. The outer index represents different columns. The inner index repre
     */
-  def getAnyColumnDescriptions(): SafeArray[SafeArray[_]] = js.native
+  def getAnyColumnDescriptions(): SafeArray[SafeArray[js.Any]]
   
   /**
     * retrieves the descriptions for all rows.
     * @returns a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner index represents
     */
-  def getAnyRowDescriptions(): SafeArray[SafeArray[_]] = js.native
+  def getAnyRowDescriptions(): SafeArray[SafeArray[js.Any]]
   
   /**
     * sets the descriptions for all columns.
     * @param rColumnDescriptions a sequence of sequences of anys which represent the descriptions of all columns. The outer index represents different columns
     */
-  def setAnyColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[_]]): Unit = js.native
+  def setAnyColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[js.Any]]): Unit
   
   /**
     * sets the descriptions for all rows.
     * @param rRowDescriptions a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner
     */
-  def setAnyRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[_]]): Unit = js.native
+  def setAnyRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[js.Any]]): Unit
 }
 object XAnyDescriptionAccess {
   
   @scala.inline
   def apply(
-    AnyColumnDescriptions: SafeArray[SafeArray[_]],
-    AnyRowDescriptions: SafeArray[SafeArray[_]],
+    AnyColumnDescriptions: SafeArray[SafeArray[js.Any]],
+    AnyRowDescriptions: SafeArray[SafeArray[js.Any]],
     ColumnDescriptions: SafeArray[String],
     ComplexColumnDescriptions: SafeArray[SafeArray[String]],
     ComplexRowDescriptions: SafeArray[SafeArray[String]],
@@ -69,8 +69,8 @@ object XAnyDescriptionAccess {
     RowDescriptions: SafeArray[String],
     acquire: () => Unit,
     addChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
-    getAnyColumnDescriptions: () => SafeArray[SafeArray[_]],
-    getAnyRowDescriptions: () => SafeArray[SafeArray[_]],
+    getAnyColumnDescriptions: () => SafeArray[SafeArray[js.Any]],
+    getAnyRowDescriptions: () => SafeArray[SafeArray[js.Any]],
     getColumnDescriptions: () => SafeArray[String],
     getComplexColumnDescriptions: () => SafeArray[SafeArray[String]],
     getComplexRowDescriptions: () => SafeArray[SafeArray[String]],
@@ -81,8 +81,8 @@ object XAnyDescriptionAccess {
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
-    setAnyColumnDescriptions: SeqEquiv[SeqEquiv[_]] => Unit,
-    setAnyRowDescriptions: SeqEquiv[SeqEquiv[_]] => Unit,
+    setAnyColumnDescriptions: SeqEquiv[SeqEquiv[js.Any]] => Unit,
+    setAnyRowDescriptions: SeqEquiv[SeqEquiv[js.Any]] => Unit,
     setColumnDescriptions: SeqEquiv[String] => Unit,
     setComplexColumnDescriptions: SeqEquiv[SeqEquiv[String]] => Unit,
     setComplexRowDescriptions: SeqEquiv[SeqEquiv[String]] => Unit,
@@ -97,21 +97,21 @@ object XAnyDescriptionAccess {
   implicit class XAnyDescriptionAccessMutableBuilder[Self <: XAnyDescriptionAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAnyColumnDescriptions(value: SafeArray[SafeArray[_]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
+    def setAnyColumnDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyRowDescriptions(value: SafeArray[SafeArray[_]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
+    def setAnyRowDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
+    def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
+    def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[_]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
+    def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[_]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
+    def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
   }
 }

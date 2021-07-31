@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services$Rollouts")
@@ -40,7 +39,7 @@ class ResourceServicesRollouts protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceServicesRolloutsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceServicesRolloutsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -70,7 +69,7 @@ class ResourceServicesRollouts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRollout] = js.native
   def get(callback: BodyResponseCallback[SchemaRollout]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRollout] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRollout] = js.native
   def get(params: ParamsResourceServicesRolloutsGet): GaxiosPromise[SchemaRollout] = js.native
   def get(params: ParamsResourceServicesRolloutsGet, callback: BodyResponseCallback[SchemaRollout]): Unit = js.native
   def get(
@@ -103,7 +102,7 @@ class ResourceServicesRollouts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServiceRolloutsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServiceRolloutsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServiceRolloutsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServiceRolloutsResponse] = js.native
   def list(params: ParamsResourceServicesRolloutsList): GaxiosPromise[SchemaListServiceRolloutsResponse] = js.native
   def list(
     params: ParamsResourceServicesRolloutsList,

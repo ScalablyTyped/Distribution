@@ -2,10 +2,13 @@ package typings.firebaseLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
+  
+  @JSImport("@firebase/logger/dist/src/logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait LogLevel extends StObject
@@ -14,31 +17,43 @@ object loggerMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
     
     @js.native
-    sealed trait DEBUG extends LogLevel
-    /* 0 */ val DEBUG: typings.firebaseLogger.loggerMod.LogLevel.DEBUG with Double = js.native
+    sealed trait DEBUG
+      extends StObject
+         with LogLevel
+    /* 0 */ val DEBUG: typings.firebaseLogger.loggerMod.LogLevel.DEBUG & Double = js.native
     
     @js.native
-    sealed trait ERROR extends LogLevel
-    /* 4 */ val ERROR: typings.firebaseLogger.loggerMod.LogLevel.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with LogLevel
+    /* 4 */ val ERROR: typings.firebaseLogger.loggerMod.LogLevel.ERROR & Double = js.native
     
     @js.native
-    sealed trait INFO extends LogLevel
-    /* 2 */ val INFO: typings.firebaseLogger.loggerMod.LogLevel.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with LogLevel
+    /* 2 */ val INFO: typings.firebaseLogger.loggerMod.LogLevel.INFO & Double = js.native
     
     @js.native
-    sealed trait SILENT extends LogLevel
-    /* 5 */ val SILENT: typings.firebaseLogger.loggerMod.LogLevel.SILENT with Double = js.native
+    sealed trait SILENT
+      extends StObject
+         with LogLevel
+    /* 5 */ val SILENT: typings.firebaseLogger.loggerMod.LogLevel.SILENT & Double = js.native
     
     @js.native
-    sealed trait VERBOSE extends LogLevel
-    /* 1 */ val VERBOSE: typings.firebaseLogger.loggerMod.LogLevel.VERBOSE with Double = js.native
+    sealed trait VERBOSE
+      extends StObject
+         with LogLevel
+    /* 1 */ val VERBOSE: typings.firebaseLogger.loggerMod.LogLevel.VERBOSE & Double = js.native
     
     @js.native
-    sealed trait WARN extends LogLevel
-    /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN with Double = js.native
+    sealed trait WARN
+      extends StObject
+         with LogLevel
+    /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN & Double = js.native
   }
   
   @JSImport("@firebase/logger/dist/src/logger", "Logger")
@@ -100,43 +115,36 @@ object loggerMod {
   @js.native
   val instances: js.Array[Logger] = js.native
   
-  @JSImport("@firebase/logger/dist/src/logger", "setLogLevel")
-  @js.native
-  def setLogLevel(level: LogLevel): Unit = js.native
-  @JSImport("@firebase/logger/dist/src/logger", "setLogLevel")
-  @js.native
-  def setLogLevel(level: LogLevelString): Unit = js.native
+  @scala.inline
+  def setLogLevel(level: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@firebase/logger/dist/src/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(): Unit = js.native
-  @JSImport("@firebase/logger/dist/src/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = js.native
-  @JSImport("@firebase/logger/dist/src/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: LogCallback): Unit = js.native
-  @JSImport("@firebase/logger/dist/src/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = js.native
+  @scala.inline
+  def setUserLogHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: LogCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type LogCallback = js.Function1[/* callbackParams */ LogCallbackParams, Unit]
   
-  @js.native
   trait LogCallbackParams extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var level: LogLevelString = js.native
+    var level: LogLevelString
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object LogCallbackParams {
     
     @scala.inline
-    def apply(args: js.Array[_], level: LogLevelString, message: String, `type`: String): LogCallbackParams = {
+    def apply(args: js.Array[js.Any], level: LogLevelString, message: String, `type`: String): LogCallbackParams = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogCallbackParams]
@@ -146,7 +154,7 @@ object loggerMod {
     implicit class LogCallbackParamsMutableBuilder[Self <: LogCallbackParams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -162,7 +170,11 @@ object loggerMod {
     }
   }
   
-  type LogHandler = js.Function3[/* loggerInstance */ Logger, /* logType */ LogLevel, /* repeated */ js.Any, Unit]
+  @js.native
+  trait LogHandler extends StObject {
+    
+    def apply(loggerInstance: Logger, logType: LogLevel, args: js.Any*): Unit = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseLogger.firebaseLoggerStrings.debug
@@ -194,10 +206,9 @@ object loggerMod {
     def warn: typings.firebaseLogger.firebaseLoggerStrings.warn = "warn".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.warn]
   }
   
-  @js.native
   trait LogOptions extends StObject {
     
-    var level: LogLevelString = js.native
+    var level: LogLevelString
   }
   object LogOptions {
     

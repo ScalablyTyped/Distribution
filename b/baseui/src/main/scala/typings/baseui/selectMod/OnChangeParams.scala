@@ -5,17 +5,15 @@ import typings.baseui.baseuiStrings.remove
 import typings.baseui.baseuiStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChangeParams extends StObject {
   
-  var option: js.UndefOr[Option] = js.native
+  var option: js.UndefOr[Option] = js.undefined
   
-  var `type`: js.UndefOr[select | remove | clear] = js.native
+  var `type`: js.UndefOr[select | remove | clear] = js.undefined
   
-  var value: Value = js.native
+  var value: Value
 }
 object OnChangeParams {
   

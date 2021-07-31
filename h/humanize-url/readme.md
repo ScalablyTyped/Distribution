@@ -10,9 +10,9 @@ Humanize a URL: `https://sindresorhus.com` → `sindresorhus.com`
 | ------------------ | :-------------: |
 | Full name          | humanize-url |
 | Keywords           | url, uri, address, string, normalize, normalise, normalization, normalisation, querystring, unicode, humanize, humanization, simple, simplify, human, pretty, prettify |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 124 |
-| # downloads        | 8708919 |
+| # downloads        | 10027723 |
 | # stars            | 4 |
 
 ## Links

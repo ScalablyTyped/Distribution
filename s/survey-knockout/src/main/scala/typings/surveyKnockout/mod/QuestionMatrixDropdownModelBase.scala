@@ -3,7 +3,6 @@ package typings.surveyKnockout.mod
 import typings.surveyKnockout.anon.Calculations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -27,7 +26,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /**
     * The default choices for dropdown, checkbox and radiogroup cell types.
     */
-  var choices: js.Array[_] = js.native
+  var choices: js.Array[js.Any] = js.native
   
   /**
     * The default column count for radiogroup and checkbox  cell types.
@@ -215,9 +214,9 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   
   /* protected */ def resetRenderedTable(): Unit = js.native
   
-  /* protected */ def runCellsCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  /* protected */ def runCellsCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
-  /* protected */ def runTotalsCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  /* protected */ def runTotalsCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
   def setIsDetailPanelShowing(row: MatrixDropdownRowModelBase, `val`: Boolean): Unit = js.native
   
@@ -247,9 +246,8 @@ object QuestionMatrixDropdownModelBase {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase.addDefaultColumns")
-  @js.native
-  def addDefaultColumns(matrix: QuestionMatrixDropdownModelBase): Unit = js.native
+  @scala.inline
+  def addDefaultColumns(matrix: QuestionMatrixDropdownModelBase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDefaultColumns")(matrix.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase.defaultCellType")
   @js.native

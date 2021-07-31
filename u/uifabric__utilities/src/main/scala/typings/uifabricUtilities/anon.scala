@@ -10,17 +10,15 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.customizationsMod.ICustomizations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AsyncPlaceholder extends StObject {
     
     var asyncPlaceholder: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object AsyncPlaceholder {
     
@@ -41,14 +39,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CachedInputs[TStyleProps, TStyleSet] extends StObject {
     
     /** Cache for all style functions. */
-    var __cachedInputs__ : js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]] = js.native
+    var __cachedInputs__ : js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]
     
     /** True if no styles prop or styles from Customizer is passed to wrapped component. */
-    var __noStyleOverride__ : Boolean = js.native
+    var __noStyleOverride__ : Boolean
   }
   object CachedInputs {
     
@@ -62,7 +59,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CachedInputsMutableBuilder[Self <: CachedInputs[_, _], TStyleProps, TStyleSet] (val x: Self with (CachedInputs[TStyleProps, TStyleSet])) extends AnyVal {
+    implicit class CachedInputsMutableBuilder[Self <: CachedInputs[?, ?], TStyleProps, TStyleSet] (val x: Self & (CachedInputs[TStyleProps, TStyleSet])) extends AnyVal {
       
       @scala.inline
       def set__cachedInputs__(value: js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]): Self = StObject.set(x, "__cachedInputs__", value.asInstanceOf[js.Any])
@@ -75,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Configurable[T /* <: js.Function */] extends StObject {
     
-    var configurable: Boolean = js.native
+    var configurable: Boolean
     
-    def get(): T = js.native
+    def get(): T
   }
   object Configurable {
     
@@ -91,7 +87,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ConfigurableMutableBuilder[Self <: Configurable[_], T /* <: js.Function */] (val x: Self with Configurable[T]) extends AnyVal {
+    implicit class ConfigurableMutableBuilder[Self <: Configurable[?], T /* <: js.Function */] (val x: Self & Configurable[T]) extends AnyVal {
       
       @scala.inline
       def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
@@ -101,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultRender[T] extends StObject {
     
-    var defaultRender: js.UndefOr[ComponentType[T]] = js.native
+    var defaultRender: js.UndefOr[ComponentType[T]] = js.undefined
   }
   object DefaultRender {
     
@@ -115,7 +110,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultRenderMutableBuilder[Self <: DefaultRender[_], T] (val x: Self with DefaultRender[T]) extends AnyVal {
+    implicit class DefaultRenderMutableBuilder[Self <: DefaultRender[?], T] (val x: Self & DefaultRender[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultRender(value: ComponentType[T]): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
@@ -125,10 +120,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
   }
   object Delay {
     
@@ -153,10 +147,9 @@ object anon {
     def apply(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = js.native
   }
   
-  @js.native
   trait Focus extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object Focus {
     
@@ -174,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Leading extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object Leading {
     
@@ -206,14 +198,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxWait extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object MaxWait {
     
@@ -247,10 +238,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<@uifabric/utilities.@uifabric/utilities/lib/customizations/CustomizerContext.ICustomizerContext> */
-  @js.native
   trait ReadonlyICustomizerContex extends StObject {
     
-    val customizations: ICustomizations = js.native
+    val customizations: ICustomizations
   }
   object ReadonlyICustomizerContex {
     
@@ -268,10 +258,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RootRef extends StObject {
     
-    var rootRef: js.UndefOr[RefObject[HTMLElement]] = js.native
+    var rootRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
   }
   object RootRef {
     
@@ -292,10 +281,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rtl extends StObject {
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
   }
   object Rtl {
     

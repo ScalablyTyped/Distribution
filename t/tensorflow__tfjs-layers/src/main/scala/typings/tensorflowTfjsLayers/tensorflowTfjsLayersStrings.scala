@@ -28,14 +28,14 @@ import typings.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerClas
 import typings.tensorflowTfjsLayers.wrappersSerializationMod.WrapperLayerClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Activation
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -43,35 +43,40 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Adadelta
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def Adadelta: Adadelta = "Adadelta".asInstanceOf[Adadelta]
   
   @js.native
   sealed trait Adagrad
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def Adagrad: Adagrad = "Adagrad".asInstanceOf[Adagrad]
   
   @js.native
   sealed trait Adam
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def Adam: Adam = "Adam".asInstanceOf[Adam]
   
   @js.native
   sealed trait Adamax
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def Adamax: Adamax = "Adamax".asInstanceOf[Adamax]
   
   @js.native
   sealed trait Add
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -79,7 +84,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Average
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -87,7 +93,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait AveragePooling1D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -95,7 +102,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait AveragePooling2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -103,19 +111,23 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait BatchNormalization
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
   @scala.inline
   def BatchNormalization: BatchNormalization = "BatchNormalization".asInstanceOf[BatchNormalization]
   
   @js.native
-  sealed trait Bidirectional extends WrapperLayerClassName
+  sealed trait Bidirectional
+    extends StObject
+       with WrapperLayerClassName
   @scala.inline
   def Bidirectional: Bidirectional = "Bidirectional".asInstanceOf[Bidirectional]
   
   @js.native
   sealed trait Concatenate
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -123,14 +135,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Constant
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def Constant: Constant = "Constant".asInstanceOf[Constant]
   
   @js.native
   sealed trait Conv1D
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -138,7 +152,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Conv2D
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -146,7 +161,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Conv2DTranspose
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -154,7 +170,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Cropping2D
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -162,7 +179,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Dense
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -170,14 +188,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait DepthwiseConv2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
   @scala.inline
   def DepthwiseConv2D: DepthwiseConv2D = "DepthwiseConv2D".asInstanceOf[DepthwiseConv2D]
   
   @js.native
   sealed trait Dot
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -185,7 +205,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Dropout
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -193,7 +214,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait ELU
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -201,14 +223,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Embedding
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
   @scala.inline
   def Embedding: Embedding = "Embedding".asInstanceOf[Embedding]
   
   @js.native
   sealed trait Flatten
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -216,7 +240,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait GRU
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with RecurrentLayerClassName
   @scala.inline
@@ -229,7 +254,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait GlobalAveragePooling1D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -237,7 +263,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait GlobalAveragePooling2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -245,7 +272,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait GlobalMaxPooling1D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -253,7 +281,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait GlobalMaxPooling2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -261,26 +290,31 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Identity
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def Identity: Identity = "Identity".asInstanceOf[Identity]
   
   @js.native
   sealed trait InputLayer
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
   @scala.inline
   def InputLayer: InputLayer = "InputLayer".asInstanceOf[InputLayer]
   
   @js.native
-  sealed trait L1L2 extends KerasClassName
+  sealed trait L1L2
+    extends StObject
+       with KerasClassName
   @scala.inline
   def L1L2: L1L2 = "L1L2".asInstanceOf[L1L2]
   
   @js.native
   sealed trait LSTM
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with RecurrentLayerClassName
   @scala.inline
@@ -293,7 +327,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait LeakyReLU
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -301,7 +336,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Masking
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -309,14 +345,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait MaxNorm
-    extends ConstraintClassName
+    extends StObject
+       with ConstraintClassName
        with KerasClassName
   @scala.inline
   def MaxNorm: MaxNorm = "MaxNorm".asInstanceOf[MaxNorm]
   
   @js.native
   sealed trait MaxPooling1D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -324,7 +362,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait MaxPooling2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with PoolingLayerClassName
   @scala.inline
@@ -332,7 +371,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Maximum
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -340,14 +380,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait MinMaxNorm
-    extends ConstraintClassName
+    extends StObject
+       with ConstraintClassName
        with KerasClassName
   @scala.inline
   def MinMaxNorm: MinMaxNorm = "MinMaxNorm".asInstanceOf[MinMaxNorm]
   
   @js.native
   sealed trait Minimum
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -360,14 +402,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Momentum
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def Momentum: Momentum = "Momentum".asInstanceOf[Momentum]
   
   @js.native
   sealed trait Multiply
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with MergeLayerClassName
   @scala.inline
@@ -375,28 +419,32 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait NonNeg
-    extends ConstraintClassName
+    extends StObject
+       with ConstraintClassName
        with KerasClassName
   @scala.inline
   def NonNeg: NonNeg = "NonNeg".asInstanceOf[NonNeg]
   
   @js.native
   sealed trait Ones
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def Ones: Ones = "Ones".asInstanceOf[Ones]
   
   @js.native
   sealed trait Orthogonal
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def Orthogonal: Orthogonal = "Orthogonal".asInstanceOf[Orthogonal]
   
   @js.native
   sealed trait PReLU
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -404,7 +452,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Permute
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -417,28 +466,32 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait RMSProp
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def RMSProp: RMSProp = "RMSProp".asInstanceOf[RMSProp]
   
   @js.native
   sealed trait RandomNormal
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def RandomNormal: RandomNormal = "RandomNormal".asInstanceOf[RandomNormal]
   
   @js.native
   sealed trait RandomUniform
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def RandomUniform: RandomUniform = "RandomUniform".asInstanceOf[RandomUniform]
   
   @js.native
   sealed trait ReLU
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -446,7 +499,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait RepeatVector
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -454,7 +508,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Reshape
-    extends CoreLayerClassName
+    extends StObject
+       with CoreLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -462,14 +517,16 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait SGD
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with OptimizerClassName
   @scala.inline
   def SGD: SGD = "SGD".asInstanceOf[SGD]
   
   @js.native
   sealed trait SeparableConv2D
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -482,7 +539,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait SimpleRNN
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
        with RecurrentLayerClassName
   @scala.inline
@@ -495,7 +553,8 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait Softmax
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -508,34 +567,40 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait ThresholdedReLU
-    extends AdvancedActivationLayerClassName
+    extends StObject
+       with AdvancedActivationLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
   def ThresholdedReLU: ThresholdedReLU = "ThresholdedReLU".asInstanceOf[ThresholdedReLU]
   
   @js.native
-  sealed trait TimeDistributed extends WrapperLayerClassName
+  sealed trait TimeDistributed
+    extends StObject
+       with WrapperLayerClassName
   @scala.inline
   def TimeDistributed: TimeDistributed = "TimeDistributed".asInstanceOf[TimeDistributed]
   
   @js.native
   sealed trait TruncatedNormal
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def TruncatedNormal: TruncatedNormal = "TruncatedNormal".asInstanceOf[TruncatedNormal]
   
   @js.native
   sealed trait UnitNorm
-    extends ConstraintClassName
+    extends StObject
+       with ConstraintClassName
        with KerasClassName
   @scala.inline
   def UnitNorm: UnitNorm = "UnitNorm".asInstanceOf[UnitNorm]
   
   @js.native
   sealed trait UpSampling2D
-    extends ConvolutionalLayerClassName
+    extends StObject
+       with ConvolutionalLayerClassName
        with KerasClassName
        with LayerClassName
   @scala.inline
@@ -543,42 +608,53 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait VarianceScaling
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def VarianceScaling: VarianceScaling = "VarianceScaling".asInstanceOf[VarianceScaling]
   
   @js.native
   sealed trait ZeroPadding2D
-    extends KerasClassName
+    extends StObject
+       with KerasClassName
        with LayerClassName
   @scala.inline
   def ZeroPadding2D: ZeroPadding2D = "ZeroPadding2D".asInstanceOf[ZeroPadding2D]
   
   @js.native
   sealed trait Zeros
-    extends InitializerClassName
+    extends StObject
+       with InitializerClassName
        with KerasClassName
   @scala.inline
   def Zeros: Zeros = "Zeros".asInstanceOf[Zeros]
   
   @js.native
-  sealed trait auto extends _YieldEveryOptions
+  sealed trait auto
+    extends StObject
+       with _YieldEveryOptions
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait ave extends BidirectionalMergeMode
+  sealed trait ave
+    extends StObject
+       with BidirectionalMergeMode
   @scala.inline
   def ave: ave = "ave".asInstanceOf[ave]
   
   @js.native
-  sealed trait avg extends PoolMode
+  sealed trait avg
+    extends StObject
+       with PoolMode
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   
   @js.native
-  sealed trait batch extends _YieldEveryOptions
+  sealed trait batch
+    extends StObject
+       with _YieldEveryOptions
   @scala.inline
   def batch: batch = "batch".asInstanceOf[batch]
   
@@ -593,7 +669,9 @@ object tensorflowTfjsLayersStrings {
   def batch_size: batch_size = "batch_size".asInstanceOf[batch_size]
   
   @js.native
-  sealed trait bool extends DataType
+  sealed trait bool
+    extends StObject
+       with DataType
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
@@ -608,42 +686,58 @@ object tensorflowTfjsLayersStrings {
   def categorical_hinge: categorical_hinge = "categorical_hinge".asInstanceOf[categorical_hinge]
   
   @js.native
-  sealed trait causal extends PaddingMode
+  sealed trait causal
+    extends StObject
+       with PaddingMode
   @scala.inline
   def causal: causal = "causal".asInstanceOf[causal]
   
   @js.native
-  sealed trait channelsFirst extends DataFormat
+  sealed trait channelsFirst
+    extends StObject
+       with DataFormat
   @scala.inline
   def channelsFirst: channelsFirst = "channelsFirst".asInstanceOf[channelsFirst]
   
   @js.native
-  sealed trait channelsLast extends DataFormat
+  sealed trait channelsLast
+    extends StObject
+       with DataFormat
   @scala.inline
   def channelsLast: channelsLast = "channelsLast".asInstanceOf[channelsLast]
   
   @js.native
-  sealed trait channels_first extends DataFormatSerialization
+  sealed trait channels_first
+    extends StObject
+       with DataFormatSerialization
   @scala.inline
   def channels_first: channels_first = "channels_first".asInstanceOf[channels_first]
   
   @js.native
-  sealed trait channels_last extends DataFormatSerialization
+  sealed trait channels_last
+    extends StObject
+       with DataFormatSerialization
   @scala.inline
   def channels_last: channels_last = "channels_last".asInstanceOf[channels_last]
   
   @js.native
-  sealed trait complex64 extends DataType
+  sealed trait complex64
+    extends StObject
+       with DataType
   @scala.inline
   def complex64: complex64 = "complex64".asInstanceOf[complex64]
   
   @js.native
-  sealed trait concat extends BidirectionalMergeMode
+  sealed trait concat
+    extends StObject
+       with BidirectionalMergeMode
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   
   @js.native
-  sealed trait constant_ extends _InitializerIdentifier
+  sealed trait constant_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def constant_ : constant_ = "constant".asInstanceOf[constant_]
   
@@ -663,62 +757,86 @@ object tensorflowTfjsLayersStrings {
   def dtype: dtype = "dtype".asInstanceOf[dtype]
   
   @js.native
-  sealed trait elu_ extends ActivationIdentifier
+  sealed trait elu_
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def elu_ : elu_ = "elu".asInstanceOf[elu_]
   
   @js.native
-  sealed trait epoch extends _YieldEveryOptions
+  sealed trait epoch
+    extends StObject
+       with _YieldEveryOptions
   @scala.inline
   def epoch: epoch = "epoch".asInstanceOf[epoch]
   
   @js.native
-  sealed trait fanAvg extends FanMode
+  sealed trait fanAvg
+    extends StObject
+       with FanMode
   @scala.inline
   def fanAvg: fanAvg = "fanAvg".asInstanceOf[fanAvg]
   
   @js.native
-  sealed trait fanIn extends FanMode
+  sealed trait fanIn
+    extends StObject
+       with FanMode
   @scala.inline
   def fanIn: fanIn = "fanIn".asInstanceOf[fanIn]
   
   @js.native
-  sealed trait fanOut extends FanMode
+  sealed trait fanOut
+    extends StObject
+       with FanMode
   @scala.inline
   def fanOut: fanOut = "fanOut".asInstanceOf[fanOut]
   
   @js.native
-  sealed trait fan_avg extends FanModeSerialization
+  sealed trait fan_avg
+    extends StObject
+       with FanModeSerialization
   @scala.inline
   def fan_avg: fan_avg = "fan_avg".asInstanceOf[fan_avg]
   
   @js.native
-  sealed trait fan_in extends FanModeSerialization
+  sealed trait fan_in
+    extends StObject
+       with FanModeSerialization
   @scala.inline
   def fan_in: fan_in = "fan_in".asInstanceOf[fan_in]
   
   @js.native
-  sealed trait fan_out extends FanModeSerialization
+  sealed trait fan_out
+    extends StObject
+       with FanModeSerialization
   @scala.inline
   def fan_out: fan_out = "fan_out".asInstanceOf[fan_out]
   
   @js.native
-  sealed trait float32 extends DataType
+  sealed trait float32
+    extends StObject
+       with DataType
   @scala.inline
   def float32: float32 = "float32".asInstanceOf[float32]
   
   @js.native
-  sealed trait glorotNormal extends _InitializerIdentifier
+  sealed trait glorotNormal
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def glorotNormal: glorotNormal = "glorotNormal".asInstanceOf[glorotNormal]
   
   @js.native
-  sealed trait glorotUniform extends _InitializerIdentifier
+  sealed trait glorotUniform
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def glorotUniform: glorotUniform = "glorotUniform".asInstanceOf[glorotUniform]
   
   @js.native
-  sealed trait hardSigmoid extends ActivationIdentifier
+  sealed trait hardSigmoid
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def hardSigmoid: hardSigmoid = "hardSigmoid".asInstanceOf[hardSigmoid]
   
@@ -728,12 +846,16 @@ object tensorflowTfjsLayersStrings {
   def hard_sigmoid: hard_sigmoid = "hard_sigmoid".asInstanceOf[hard_sigmoid]
   
   @js.native
-  sealed trait heNormal extends _InitializerIdentifier
+  sealed trait heNormal
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def heNormal: heNormal = "heNormal".asInstanceOf[heNormal]
   
   @js.native
-  sealed trait heUniform extends _InitializerIdentifier
+  sealed trait heUniform
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def heUniform: heUniform = "heUniform".asInstanceOf[heUniform]
   
@@ -743,7 +865,9 @@ object tensorflowTfjsLayersStrings {
   def hinge: hinge = "hinge".asInstanceOf[hinge]
   
   @js.native
-  sealed trait identity_ extends _InitializerIdentifier
+  sealed trait identity_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def identity_ : identity_ = "identity".asInstanceOf[identity_]
   
@@ -758,7 +882,9 @@ object tensorflowTfjsLayersStrings {
   def input_shape: input_shape = "input_shape".asInstanceOf[input_shape]
   
   @js.native
-  sealed trait int32 extends DataType
+  sealed trait int32
+    extends StObject
+       with DataType
   @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   
@@ -773,17 +899,23 @@ object tensorflowTfjsLayersStrings {
   def l1l2_ : l1l2_ = "l1l2".asInstanceOf[l1l2_]
   
   @js.native
-  sealed trait leCunNormal extends _InitializerIdentifier
+  sealed trait leCunNormal
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def leCunNormal: leCunNormal = "leCunNormal".asInstanceOf[leCunNormal]
   
   @js.native
-  sealed trait leCunUniform extends _InitializerIdentifier
+  sealed trait leCunUniform
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def leCunUniform: leCunUniform = "leCunUniform".asInstanceOf[leCunUniform]
   
   @js.native
-  sealed trait linear extends ActivationIdentifier
+  sealed trait linear
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -793,12 +925,16 @@ object tensorflowTfjsLayersStrings {
   def logcosh: logcosh = "logcosh".asInstanceOf[logcosh]
   
   @js.native
-  sealed trait max extends PoolMode
+  sealed trait max
+    extends StObject
+       with PoolMode
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait maxNorm_ extends _ConstraintIdentifier
+  sealed trait maxNorm_
+    extends StObject
+       with _ConstraintIdentifier
   @scala.inline
   def maxNorm_ : maxNorm_ = "maxNorm".asInstanceOf[maxNorm_]
   
@@ -828,12 +964,16 @@ object tensorflowTfjsLayersStrings {
   def min: min = "min".asInstanceOf[min]
   
   @js.native
-  sealed trait minMaxNorm_ extends _ConstraintIdentifier
+  sealed trait minMaxNorm_
+    extends StObject
+       with _ConstraintIdentifier
   @scala.inline
   def minMaxNorm_ : minMaxNorm_ = "minMaxNorm".asInstanceOf[minMaxNorm_]
   
   @js.native
-  sealed trait mul extends BidirectionalMergeMode
+  sealed trait mul
+    extends StObject
+       with BidirectionalMergeMode
   @scala.inline
   def mul: mul = "mul".asInstanceOf[mul]
   
@@ -843,29 +983,38 @@ object tensorflowTfjsLayersStrings {
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait never extends _YieldEveryOptions
+  sealed trait never
+    extends StObject
+       with _YieldEveryOptions
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait nonNeg_ extends _ConstraintIdentifier
+  sealed trait nonNeg_
+    extends StObject
+       with _ConstraintIdentifier
   @scala.inline
   def nonNeg_ : nonNeg_ = "nonNeg".asInstanceOf[nonNeg_]
   
   @js.native
   sealed trait normal
-    extends Distribution
+    extends StObject
+       with Distribution
        with DistributionSerialization
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait ones_ extends _InitializerIdentifier
+  sealed trait ones_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def ones_ : ones_ = "ones".asInstanceOf[ones_]
   
   @js.native
-  sealed trait orthogonal_ extends _InitializerIdentifier
+  sealed trait orthogonal_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def orthogonal_ : orthogonal_ = "orthogonal".asInstanceOf[orthogonal_]
   
@@ -875,52 +1024,72 @@ object tensorflowTfjsLayersStrings {
   def poisson: poisson = "poisson".asInstanceOf[poisson]
   
   @js.native
-  sealed trait randomNormal_ extends _InitializerIdentifier
+  sealed trait randomNormal_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def randomNormal_ : randomNormal_ = "randomNormal".asInstanceOf[randomNormal_]
   
   @js.native
-  sealed trait randomUniform_ extends _InitializerIdentifier
+  sealed trait randomUniform_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def randomUniform_ : randomUniform_ = "randomUniform".asInstanceOf[randomUniform_]
   
   @js.native
-  sealed trait relu6 extends ActivationIdentifier
+  sealed trait relu6
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def relu6: relu6 = "relu6".asInstanceOf[relu6]
   
   @js.native
-  sealed trait relu_ extends ActivationIdentifier
+  sealed trait relu_
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def relu_ : relu_ = "relu".asInstanceOf[relu_]
   
   @js.native
-  sealed trait same extends PaddingMode
+  sealed trait same
+    extends StObject
+       with PaddingMode
   @scala.inline
   def same: same = "same".asInstanceOf[same]
   
   @js.native
-  sealed trait selu extends ActivationIdentifier
+  sealed trait selu
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def selu: selu = "selu".asInstanceOf[selu]
   
   @js.native
-  sealed trait sigmoid extends ActivationIdentifier
+  sealed trait sigmoid
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def sigmoid: sigmoid = "sigmoid".asInstanceOf[sigmoid]
   
   @js.native
-  sealed trait softmax_ extends ActivationIdentifier
+  sealed trait softmax_
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def softmax_ : softmax_ = "softmax".asInstanceOf[softmax_]
   
   @js.native
-  sealed trait softplus extends ActivationIdentifier
+  sealed trait softplus
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def softplus: softplus = "softplus".asInstanceOf[softplus]
   
   @js.native
-  sealed trait softsign extends ActivationIdentifier
+  sealed trait softsign
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def softsign: softsign = "softsign".asInstanceOf[softsign]
   
@@ -935,17 +1104,23 @@ object tensorflowTfjsLayersStrings {
   def squared_hinge: squared_hinge = "squared_hinge".asInstanceOf[squared_hinge]
   
   @js.native
-  sealed trait string extends DataType
+  sealed trait string
+    extends StObject
+       with DataType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait sum extends BidirectionalMergeMode
+  sealed trait sum
+    extends StObject
+       with BidirectionalMergeMode
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
-  sealed trait tanh extends ActivationIdentifier
+  sealed trait tanh
+    extends StObject
+       with ActivationIdentifier
   @scala.inline
   def tanh: tanh = "tanh".asInstanceOf[tanh]
   
@@ -961,35 +1136,45 @@ object tensorflowTfjsLayersStrings {
   
   @js.native
   sealed trait truncatedNormal_
-    extends Distribution
+    extends StObject
+       with Distribution
        with _InitializerIdentifier
   @scala.inline
   def truncatedNormal_ : truncatedNormal_ = "truncatedNormal".asInstanceOf[truncatedNormal_]
   
   @js.native
-  sealed trait truncated_normal extends DistributionSerialization
+  sealed trait truncated_normal
+    extends StObject
+       with DistributionSerialization
   @scala.inline
   def truncated_normal: truncated_normal = "truncated_normal".asInstanceOf[truncated_normal]
   
   @js.native
   sealed trait uniform
-    extends Distribution
+    extends StObject
+       with Distribution
        with DistributionSerialization
   @scala.inline
   def uniform: uniform = "uniform".asInstanceOf[uniform]
   
   @js.native
-  sealed trait unitNorm_ extends _ConstraintIdentifier
+  sealed trait unitNorm_
+    extends StObject
+       with _ConstraintIdentifier
   @scala.inline
   def unitNorm_ : unitNorm_ = "unitNorm".asInstanceOf[unitNorm_]
   
   @js.native
-  sealed trait valid extends PaddingMode
+  sealed trait valid
+    extends StObject
+       with PaddingMode
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
-  sealed trait varianceScaling_ extends _InitializerIdentifier
+  sealed trait varianceScaling_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def varianceScaling_ : varianceScaling_ = "varianceScaling".asInstanceOf[varianceScaling_]
   
@@ -999,7 +1184,9 @@ object tensorflowTfjsLayersStrings {
   def webgl: webgl = "webgl".asInstanceOf[webgl]
   
   @js.native
-  sealed trait zeros_ extends _InitializerIdentifier
+  sealed trait zeros_
+    extends StObject
+       with _InitializerIdentifier
   @scala.inline
   def zeros_ : zeros_ = "zeros".asInstanceOf[zeros_]
 }

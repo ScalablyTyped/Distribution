@@ -5,22 +5,22 @@ import typings.extjs.Ext.IBase
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxoverflow {
   
-  @js.native
-  trait IMenu extends IBase {
+  trait IMenu
+    extends StObject
+       with IBase {
     
     /** [Property] (Array) */
-    var menuItems: js.UndefOr[Array] = js.native
+    var menuItems: js.UndefOr[Array] = js.undefined
     
     /** [Property] (String) */
-    var noItemsMenuText: js.UndefOr[String] = js.native
+    var noItemsMenuText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var triggerButtonCls: js.UndefOr[String] = js.native
+    var triggerButtonCls: js.UndefOr[String] = js.undefined
   }
   object IMenu {
     
@@ -55,37 +55,38 @@ object boxoverflow {
   
   type INone = IBase
   
-  @js.native
-  trait IScroller extends IObservable {
+  trait IScroller
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (String) */
-    var afterCtCls: js.UndefOr[String] = js.native
+    var afterCtCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var afterScrollerCls: js.UndefOr[String] = js.native
+    var afterScrollerCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var animateScroll: js.UndefOr[Boolean] = js.native
+    var animateScroll: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var beforeCtCls: js.UndefOr[String] = js.native
+    var beforeCtCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var beforeScrollerCls: js.UndefOr[String] = js.native
+    var beforeScrollerCls: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the current scroll position of the innerCt element
       * @returns Number The current scroll position
       */
-    var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Number) */
-    var scrollDuration: js.UndefOr[Double] = js.native
+    var scrollDuration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var scrollIncrement: js.UndefOr[Double] = js.native
+    var scrollIncrement: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var scrollRepeatInterval: js.UndefOr[Double] = js.native
+    var scrollRepeatInterval: js.UndefOr[Double] = js.undefined
     
     /** [Method] Scrolls to the given component
       * @param item String/Number/Ext.Component The item to scroll to. Can be a numerical index, component id or a reference to the component itself.
@@ -93,13 +94,13 @@ object boxoverflow {
       */
     var scrollToItem: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var scrollerCls: js.UndefOr[String] = js.native
+    var scrollerCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var wheelIncrement: js.UndefOr[Double] = js.native
+    var wheelIncrement: js.UndefOr[Double] = js.undefined
   }
   object IScroller {
     

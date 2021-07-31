@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait FileAccessMode extends StObject
 object FileAccessMode extends StObject {
   
   @js.native
-  sealed trait read extends FileAccessMode
+  sealed trait read
+    extends StObject
+       with FileAccessMode
   
   @js.native
-  sealed trait readWrite extends FileAccessMode
+  sealed trait readWrite
+    extends StObject
+       with FileAccessMode
 }

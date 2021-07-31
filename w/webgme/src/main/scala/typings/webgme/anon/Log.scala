@@ -2,17 +2,15 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
   /**
     * Logger settings when running bin scripts.
     *   config.bin.log = see config
     */
-  var log: js.Any = js.native
+  var log: js.Any
 }
 object Log {
   

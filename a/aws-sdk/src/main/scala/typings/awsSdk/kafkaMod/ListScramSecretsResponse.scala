@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListScramSecretsResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ListScramSecretsResponse extends StObject {
     Paginated results marker.
     
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The list of scram secrets associated with the cluster.
     
     */
-  var SecretArnList: js.UndefOr[listOfString] = js.native
+  var SecretArnList: js.UndefOr[listOfString] = js.undefined
 }
 object ListScramSecretsResponse {
   

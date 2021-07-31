@@ -2,16 +2,16 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IModelDecorationOverviewRulerOptions extends IDecorationOptions {
+trait IModelDecorationOverviewRulerOptions
+  extends StObject
+     with IDecorationOptions {
   
   /**
     * The position in the overview ruler.
     */
-  var position: OverviewRulerLane = js.native
+  var position: OverviewRulerLane
 }
 object IModelDecorationOverviewRulerOptions {
   

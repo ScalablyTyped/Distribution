@@ -5,33 +5,33 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for approving the moving and changing of row set actions. */
-@js.native
-trait XRowSetApproveListener extends XEventListener {
+trait XRowSetApproveListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called before a row set's cursor is moved.
     * @param event the event which happened
     * @returns `TRUE` when moving is allowed, otherwise `FALSE`
     */
-  def approveCursorMove(event: EventObject): Boolean = js.native
+  def approveCursorMove(event: EventObject): Boolean
   
   /**
     * is called before a row is inserted, updated, or deleted.
     * @param event the event which happened
     * @returns `TRUE` when changing is allowed, otherwise `FALSE`
     */
-  def approveRowChange(event: RowChangeEvent): Boolean = js.native
+  def approveRowChange(event: RowChangeEvent): Boolean
   
   /**
     * is called before a row set is changed, or in other words before a row set is reexecuted.
     * @param event the event which happened
     * @returns `TRUE` when changing is allowed, otherwise `FALSE`
     */
-  def approveRowSetChange(event: EventObject): Boolean = js.native
+  def approveRowSetChange(event: EventObject): Boolean
 }
 object XRowSetApproveListener {
   

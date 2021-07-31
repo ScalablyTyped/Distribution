@@ -2,15 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickplayCompetitiveStats extends StObject {
   
-  var competitive: js.Array[Stat] = js.native
+  var competitive: js.Array[Stat]
   
-  var quickplay: js.Array[Stat] = js.native
+  var quickplay: js.Array[Stat]
 }
 object QuickplayCompetitiveStats {
   

@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InferenceClassificationOverride extends Entity {
+trait InferenceClassificationOverride
+  extends StObject
+     with Entity {
   
   /**
     * Specifies how incoming messages from a specific sender should always be classified as. The possible values are:
     * focused, other.
     */
-  var classifyAs: js.UndefOr[NullableOption[InferenceClassificationType]] = js.native
+  var classifyAs: js.UndefOr[NullableOption[InferenceClassificationType]] = js.undefined
   
   // The email address information of the sender for whom the override is created.
-  var senderEmailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.native
+  var senderEmailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
 }
 object InferenceClassificationOverride {
   

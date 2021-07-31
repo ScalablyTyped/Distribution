@@ -2,13 +2,11 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the category hierarchy of a SKU.
   */
-@js.native
 trait SchemaCategory extends StObject {
   
   /**
@@ -16,26 +14,26 @@ trait SchemaCategory extends StObject {
     * &quot;Storage&quot;, &quot;Network&quot;, &quot;ApplicationServices&quot;
     * etc.
     */
-  var resourceFamily: js.UndefOr[String] = js.native
+  var resourceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * A group classification for related SKUs. Example: &quot;RAM&quot;,
     * &quot;GPU&quot;, &quot;Prediction&quot;, &quot;Ops&quot;,
     * &quot;GoogleEgress&quot; etc.
     */
-  var resourceGroup: js.UndefOr[String] = js.native
+  var resourceGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The display name of the service this SKU belongs to.
     */
-  var serviceDisplayName: js.UndefOr[String] = js.native
+  var serviceDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Represents how the SKU is consumed. Example: &quot;OnDemand&quot;,
     * &quot;Preemptible&quot;, &quot;Commit1Mo&quot;, &quot;Commit1Yr&quot;
     * etc.
     */
-  var usageType: js.UndefOr[String] = js.native
+  var usageType: js.UndefOr[String] = js.undefined
 }
 object SchemaCategory {
   

@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageRange extends StObject {
   
   /**
     * Collected execution count of the source range.
     */
-  var count: integer = js.native
+  var count: integer
   
   /**
     * JavaScript script source offset for the range end.
     */
-  var endOffset: integer = js.native
+  var endOffset: integer
   
   /**
     * JavaScript script source offset for the range start.
     */
-  var startOffset: integer = js.native
+  var startOffset: integer
 }
 object CoverageRange {
   

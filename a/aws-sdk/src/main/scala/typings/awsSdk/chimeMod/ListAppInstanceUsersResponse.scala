@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAppInstanceUsersResponse extends StObject {
   
   /**
     * The ARN of the app instance.
     */
-  var AppInstanceArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The information for each of the requested app instance users.
     */
-  var AppInstanceUsers: js.UndefOr[AppInstanceUserList] = js.native
+  var AppInstanceUsers: js.UndefOr[AppInstanceUserList] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested users are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListAppInstanceUsersResponse {
   

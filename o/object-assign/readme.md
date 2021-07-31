@@ -11,8 +11,8 @@ ES2015 `Object.assign()` ponyfill
 | Full name          | object-assign |
 | Keywords           | object, assign, extend, properties, es2015, ecmascript, harmony, ponyfill, prollyfill, polyfill, shim, browser |
 | # releases         | 0 |
-| # dependents       | 6737 |
-| # downloads        | 831355778 |
+| # dependents       | 6889 |
+| # downloads        | 976438470 |
 | # stars            | 71 |
 
 ## Links

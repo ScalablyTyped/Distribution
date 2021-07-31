@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -86,7 +85,7 @@ trait ES extends Service {
   ): Request[CancelElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_ES: ConfigBase with ClientConfiguration = js.native
+  var config_ES: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new Elasticsearch domain. For more information, see Creating Elasticsearch Domains in the Amazon Elasticsearch Service Developer Guide.

@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderObject extends StObject {
   
   /**
     * The specific headers to forward to your distribution's origin.
     */
-  var headersAllowList: js.UndefOr[HeaderForwardList] = js.native
+  var headersAllowList: js.UndefOr[HeaderForwardList] = js.undefined
   
   /**
     * The headers that you want your distribution to forward to your origin and base caching on. You can configure your distribution to do one of the following:     all  - Forward all headers to your origin.     none  - Forward only the default headers.     allow-list  - Forward only the headers you specify using the headersAllowList parameter.  
     */
-  var option: js.UndefOr[ForwardValues] = js.native
+  var option: js.UndefOr[ForwardValues] = js.undefined
 }
 object HeaderObject {
   

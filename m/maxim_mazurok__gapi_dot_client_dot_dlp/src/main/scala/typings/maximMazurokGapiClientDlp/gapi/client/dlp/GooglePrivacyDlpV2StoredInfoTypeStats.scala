@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2StoredInfoTypeStats extends StObject {
   
   /** StoredInfoType where findings are defined by a dictionary of phrases. */
-  var largeCustomDictionary: js.UndefOr[GooglePrivacyDlpV2LargeCustomDictionaryStats] = js.native
+  var largeCustomDictionary: js.UndefOr[GooglePrivacyDlpV2LargeCustomDictionaryStats] = js.undefined
 }
 object GooglePrivacyDlpV2StoredInfoTypeStats {
   

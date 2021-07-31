@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the collection of com::sun::star::drawing::TextShapes. */
-@js.native
-trait XTextShapesSupplier extends XInterface {
+trait XTextShapesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of shapes.
     * @see com.sun.star.drawing.DrawPage
     */
-  val Shapes: XIndexAccess = js.native
+  val Shapes: XIndexAccess
   
   /**
     * returns the collection of shapes.
     * @see com.sun.star.drawing.DrawPage
     */
-  def getShapes(): XIndexAccess = js.native
+  def getShapes(): XIndexAccess
 }
 object XTextShapesSupplier {
   

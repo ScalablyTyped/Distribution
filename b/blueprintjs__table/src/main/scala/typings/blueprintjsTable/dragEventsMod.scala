@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragEventsMod {
@@ -70,8 +69,7 @@ object dragEventsMod {
       * existing selection first.
       * @param event the mouse event for the drag interaction
       */
-    @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents.isAdditive")
-    @js.native
-    def isAdditive(event: MouseEvent): Boolean = js.native
+    @scala.inline
+    def isAdditive(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdditive")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ElementInputEvent")
 @js.native
 class ElementInputEvent protected ()
-  extends typings.playcanvas.pc.ElementInputEvent {
+  extends StObject
+     with typings.playcanvas.pc.ElementInputEvent {
   def this(
     event: typings.playcanvas.pc.MouseEvent,
     element: typings.playcanvas.pc.ElementComponent,
@@ -28,4 +28,28 @@ class ElementInputEvent protected ()
     element: typings.playcanvas.pc.ElementComponent,
     camera: typings.playcanvas.pc.CameraComponent
   ) = this()
+  
+  /**
+    * The CameraComponent that this event was originally raised via.
+    */
+  /* CompleteClass */
+  var camera: typings.playcanvas.pc.CameraComponent = js.native
+  
+  /**
+    * The ElementComponent that this event was originally raised on.
+    */
+  /* CompleteClass */
+  var element: typings.playcanvas.pc.ElementComponent = js.native
+  
+  /**
+    * The MouseEvent or TouchEvent that was originally raised.
+    */
+  /* CompleteClass */
+  var event: typings.playcanvas.pc.MouseEvent | typings.playcanvas.pc.TouchEvent = js.native
+  
+  /**
+    * Stop propagation of the event to parent {@link pc.ElementComponent}s. This also stops propagation of the event to other event listeners of the original DOM Event.
+    */
+  /* CompleteClass */
+  override def stopPropagation(): Unit = js.native
 }

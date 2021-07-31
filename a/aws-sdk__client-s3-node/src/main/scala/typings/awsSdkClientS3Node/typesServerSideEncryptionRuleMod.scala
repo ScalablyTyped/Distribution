@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesServerSideEncryptionByDefaultMod.ServerSi
 import typings.awsSdkClientS3Node.typesServerSideEncryptionByDefaultMod.UnmarshalledServerSideEncryptionByDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServerSideEncryptionRuleMod {
   
-  @js.native
   trait ServerSideEncryptionRule extends StObject {
     
     /**
       * <p>Describes the default server-side encryption to apply to new objects in the bucket. If Put Object request does not specify any server-side encryption, this default encryption will be applied.</p>
       */
-    var ApplyServerSideEncryptionByDefault: js.UndefOr[ServerSideEncryptionByDefault] = js.native
+    var ApplyServerSideEncryptionByDefault: js.UndefOr[ServerSideEncryptionByDefault] = js.undefined
   }
   object ServerSideEncryptionRule {
     
@@ -36,14 +34,15 @@ object typesServerSideEncryptionRuleMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledServerSideEncryptionRule extends ServerSideEncryptionRule {
+  trait UnmarshalledServerSideEncryptionRule
+    extends StObject
+       with ServerSideEncryptionRule {
     
     /**
       * <p>Describes the default server-side encryption to apply to new objects in the bucket. If Put Object request does not specify any server-side encryption, this default encryption will be applied.</p>
       */
     @JSName("ApplyServerSideEncryptionByDefault")
-    var ApplyServerSideEncryptionByDefault_UnmarshalledServerSideEncryptionRule: js.UndefOr[UnmarshalledServerSideEncryptionByDefault] = js.native
+    var ApplyServerSideEncryptionByDefault_UnmarshalledServerSideEncryptionRule: js.UndefOr[UnmarshalledServerSideEncryptionByDefault] = js.undefined
   }
   object UnmarshalledServerSideEncryptionRule {
     

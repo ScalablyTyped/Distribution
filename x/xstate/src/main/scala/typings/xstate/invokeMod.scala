@@ -3,15 +3,13 @@ package typings.xstate
 import typings.xstate.anon.Pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invokeMod {
   
-  @js.native
   trait InvokedPromiseOptions extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object InvokedPromiseOptions {
     
@@ -32,10 +30,9 @@ object invokeMod {
     }
   }
   
-  @js.native
   trait PromiseMachineSchema extends StObject {
     
-    var states: Pending = js.native
+    var states: Pending
   }
   object PromiseMachineSchema {
     

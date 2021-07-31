@@ -3,7 +3,6 @@ package typings.typescriptOptional
 import typings.typescriptOptional.typesMod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,27 +14,25 @@ object mod {
   /* static members */
   object Optional {
     
-    @JSImport("typescript-optional", "Optional.empty")
+    @JSImport("typescript-optional", "Optional")
     @js.native
-    def empty[T](): typings.typescriptOptional.optionalMod.Optional[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typescript-optional", "Optional.from")
-    @js.native
-    def from[T](option: Option[T]): typings.typescriptOptional.optionalMod.Optional[T] = js.native
+    @scala.inline
+    def empty[T](): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
     
-    @JSImport("typescript-optional", "Optional.of")
-    @js.native
-    def of[T](value: T): typings.typescriptOptional.optionalMod.Optional[T] = js.native
+    @scala.inline
+    def from[T](option: Option[T]): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(option.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
     
-    @JSImport("typescript-optional", "Optional.ofNonNull")
-    @js.native
-    def ofNonNull[T](value: T): typings.typescriptOptional.optionalMod.Optional[T] = js.native
+    @scala.inline
+    def of[T](value: T): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
     
-    @JSImport("typescript-optional", "Optional.ofNullable")
-    @js.native
-    def ofNullable[T](): typings.typescriptOptional.optionalMod.Optional[T] = js.native
-    @JSImport("typescript-optional", "Optional.ofNullable")
-    @js.native
-    def ofNullable[T](nullable: T): typings.typescriptOptional.optionalMod.Optional[T] = js.native
+    @scala.inline
+    def ofNonNull[T](value: T): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNonNull")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
+    
+    @scala.inline
+    def ofNullable[T](): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
+    @scala.inline
+    def ofNullable[T](nullable: T): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
   }
 }

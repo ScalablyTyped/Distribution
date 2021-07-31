@@ -4,26 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionStorageDescriptorSkewedInfo extends StObject {
   
   /**
     * A list of names of columns that contain skewed values.
     */
-  var skewedColumnNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var skewedColumnNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * A list of values that appear so frequently as to be considered skewed.
     */
-  var skewedColumnValueLocationMaps: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var skewedColumnValueLocationMaps: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * A map of skewed values to the columns that contain them.
     */
-  var skewedColumnValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var skewedColumnValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object PartitionStorageDescriptorSkewedInfo {
   

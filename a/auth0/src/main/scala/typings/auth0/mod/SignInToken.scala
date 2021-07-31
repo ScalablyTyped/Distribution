@@ -2,19 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignInToken extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var expiry: Double = js.native
+  var expiry: Double
   
-  var id_token: js.UndefOr[String] = js.native
+  var id_token: js.UndefOr[String] = js.undefined
   
-  var token_type: js.UndefOr[String] = js.native
+  var token_type: js.UndefOr[String] = js.undefined
 }
 object SignInToken {
   

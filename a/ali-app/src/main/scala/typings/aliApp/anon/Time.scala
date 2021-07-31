@@ -2,14 +2,12 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
   /** 服务器时间的毫秒数 */
-  var time: Double = js.native
+  var time: Double
 }
 object Time {
   

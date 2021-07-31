@@ -10,9 +10,9 @@ Adds useful debug features to your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-debug |
 | Keywords           | electron, debug, debugging, devtools, app, dev, development |
-| # releases         | 6 |
-| # dependents       | 107 |
-| # downloads        | 1173264 |
+| # releases         | 7 |
+| # dependents       | 111 |
+| # downloads        | 1295552 |
 | # stars            | 8 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractionType extends StObject {
   
   /** Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc. */
-  var interactionType: js.UndefOr[String] = js.native
+  var interactionType: js.UndefOr[String] = js.undefined
   
   /** Node value of an interaction on conversion path. Such as source, medium etc. */
-  var nodeValue: js.UndefOr[String] = js.native
+  var nodeValue: js.UndefOr[String] = js.undefined
 }
 object InteractionType {
   

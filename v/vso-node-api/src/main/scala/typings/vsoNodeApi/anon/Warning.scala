@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Warning extends StObject {
   
-  var error: scala.Double = js.native
+  var error: scala.Double
   
-  var warning: scala.Double = js.native
+  var warning: scala.Double
 }
 object Warning {
   

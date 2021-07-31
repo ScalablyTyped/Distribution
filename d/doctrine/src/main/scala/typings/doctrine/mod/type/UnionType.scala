@@ -3,22 +3,22 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnionType extends Type_ {
+trait UnionType
+  extends StObject
+     with Type_ {
   
-  var elements: js.Array[Type_] = js.native
+  var elements: js.Array[Type_]
   
-  var `type`: typings.doctrine.doctrineStrings.UnionType = js.native
+  var `type`: typings.doctrine.doctrineStrings.UnionType
 }
 object UnionType {
   
   @scala.inline
-  def apply(elements: js.Array[Type_], `type`: typings.doctrine.doctrineStrings.UnionType): UnionType = {
+  def apply(elements: js.Array[Type_]): UnionType = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnionType")
     __obj.asInstanceOf[UnionType]
   }
   

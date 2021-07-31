@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Zoneoperations")
@@ -32,7 +31,7 @@ class ResourceZoneoperations protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceZoneoperationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceZoneoperationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceZoneoperations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceZoneoperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceZoneoperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
@@ -98,7 +97,7 @@ class ResourceZoneoperations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaOperationList] = js.native
   def list(callback: BodyResponseCallback[SchemaOperationList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperationList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperationList] = js.native
   def list(params: ParamsResourceZoneoperationsList): GaxiosPromise[SchemaOperationList] = js.native
   def list(params: ParamsResourceZoneoperationsList, callback: BodyResponseCallback[SchemaOperationList]): Unit = js.native
   def list(
@@ -114,7 +113,7 @@ class ResourceZoneoperations protected () extends StObject {
   ): Unit = js.native
   
   def wait(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def wait(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def wait(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def wait(params: ParamsResourceZoneoperationsWait): GaxiosPromise[SchemaOperation] = js.native
   def wait(params: ParamsResourceZoneoperationsWait, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def wait(

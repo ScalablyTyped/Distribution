@@ -7,7 +7,6 @@ import typings.grunt.grunt.file.IFilesConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object task {
@@ -41,7 +40,7 @@ object task {
     def registerMultiTask(
       taskName: String,
       taskDescription: String,
-      taskFunction: js.ThisFunction1[/* this */ IMultiTask[_], /* repeated */ js.Any, Unit]
+      taskFunction: js.ThisFunction1[/* this */ IMultiTask[js.Any], /* repeated */ js.Any, Unit]
     ): Unit = js.native
     /**
       * Register a "multi task." A multi task is a task that implicitly iterates over all of its
@@ -53,7 +52,7 @@ object task {
       */
     def registerMultiTask(
       taskName: String,
-      taskFunction: js.ThisFunction1[/* this */ IMultiTask[_], /* repeated */ js.Any, Unit]
+      taskFunction: js.ThisFunction1[/* this */ IMultiTask[js.Any], /* repeated */ js.Any, Unit]
     ): Unit = js.native
     
     def registerTask(
@@ -94,7 +93,9 @@ object task {
     * {@link http://gruntjs.com/inside-tasks#inside-multi-tasks}
     */
   @js.native
-  trait IMultiTask[T] extends ITask {
+  trait IMultiTask[T]
+    extends StObject
+       with ITask {
     
     /**
       * In a multi task, this is the actual data stored in the Grunt config object for the given target.
@@ -232,10 +233,10 @@ object task {
   /**
     * @see ITaskOptions
     */
-  @js.native
   trait ITaskCompactOptions
-    extends IFilesConfig
+    extends StObject
        with ITaskOptions
+       with IFilesConfig
   object ITaskCompactOptions {
     
     @scala.inline
@@ -251,14 +252,13 @@ object task {
     * A TaskConfig can be either be a full config or a compacted files config.
     * @see ITaskCompactOptions
     */
-  @js.native
   trait ITaskOptions extends StObject {
     
     // files?: grunt.file.IFilesArray
     // files?: grunt.file.IFilesMap
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
   }
   object ITaskOptions {
     
@@ -289,7 +289,9 @@ object task {
     * {@link http://gruntjs.com/api/grunt.task#queueing-tasks}
     */
   @js.native
-  trait TaskModule extends CommonTaskModule {
+  trait TaskModule
+    extends StObject
+       with CommonTaskModule {
     
     /**
       * Empty the task queue completely. Unless additional tasks are enqueued, no more tasks will be run.
@@ -300,7 +302,7 @@ object task {
       * The currently running task or multitask.
       * @see http://gruntjs.com/api/inside-tasks
       */
-    var current: IMultiTask[_] = js.native
+    var current: IMultiTask[js.Any] = js.native
     
     /**
       * Normalizes a task target configuration object into an array of src-dest file mappings.

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError extends StObject {
   
   /**
     * The description of an error found in the behaviors.
     */
-  var errorMessage: js.UndefOr[ErrorMessage] = js.native
+  var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
 }
 object ValidationError {
   

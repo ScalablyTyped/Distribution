@@ -85,7 +85,6 @@ import typings.semanticUiModal.semanticUiModalStrings.transition
 import typings.semanticUiModal.semanticUiModalStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -139,70 +138,73 @@ object SemanticUI {
       * Refreshes centering of modal on page
       */
     def apply(behavior: refresh): JQuery = js.native
-    def apply(behavior: setting, name: allowMultiple, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: allowMultiple, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: autofocus, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: allowMultiple, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: autofocus, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: autofocus, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: closable, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: detachable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: dimmerSettings, value: js.UndefOr[scala.Nothing]): DimmerSettings = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: detachable, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: dimmerSettings, value: Unit): DimmerSettings = js.native
+    def apply(behavior: setting, name: dimmerSettings, value: DimmerSettings): JQuery = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: keyboardShortcuts, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: keyboardShortcuts, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: onApprove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
     def apply(
       behavior: setting,
       name: onApprove,
       value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onDeny, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+    def apply(behavior: setting, name: onApprove, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
     def apply(
       behavior: setting,
       name: onDeny,
       value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onDeny, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
     def apply(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+    def apply(behavior: setting, name: onHidden, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onHide,
       value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
     def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: queue, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: queue, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: transition, value: Unit): String = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: ModalSettings): JQuery = js.native
     /**
       * Shows the modal
@@ -220,18 +222,17 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'scrolling'
           */
-        var scrolling: String = js.native
+        var scrolling: String
       }
       object Impl {
         
@@ -252,20 +253,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplscrolling) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplscrolling) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     /* Inlined semantic-ui-modal.SemanticUI.Modal.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var method: String with js.UndefOr[String] = js.native
+      var method: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(method: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -274,16 +274,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
       }
       object Impl {
         
@@ -302,15 +301,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-modal.SemanticUI.Modal.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-modal.SemanticUI.Modal.ErrorSettings._Impl, keyof semantic-ui-modal.SemanticUI.Modal.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var method: String with js.UndefOr[String] = js.native
+        var method: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(method: String with js.UndefOr[String]): typings.semanticUiModal.SemanticUI.Modal.ErrorSettings.Param = {
+        def apply(method: String & js.UndefOr[String]): typings.semanticUiModal.SemanticUI.Modal.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiModal.SemanticUI.Modal.ErrorSettings.Param]
         }
@@ -319,30 +317,29 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiModal.SemanticUI.Modal.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.actions .positive, .actions .approve, .actions .ok'
           */
-        var approve: String = js.native
+        var approve: String
         
         /**
           * @default '.close, .actions .button'
           */
-        var close: String = js.native
+        var close: String
         
         /**
           * @default '.actions .negative, .actions .deny, .actions .cancel'
           */
-        var deny: String = js.native
+        var deny: String
       }
       object Impl {
         
@@ -366,14 +363,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplclose | PickImplapprove | PickImpldeny) with PartialPickImplkeyofImplApprove
+      type Param = (PickImplclose | PickImplapprove | PickImpldeny) & PartialPickImplkeyofImplApprove
     }
     type SelectorSettings = typings.semanticUiModal.SemanticUI.Modal.SelectorSettings.Param
   }
   
   object ModalSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
@@ -381,35 +377,35 @@ object SemanticUI {
         *
         * @default false
         */
-      var allowMultiple: Boolean = js.native
+      var allowMultiple: Boolean
       
       /**
         * When true, the first form input inside the modal will receive focus when shown. Set this to false to prevent this behavior.
         *
         * @default true
         */
-      var autofocus: Boolean = js.native
+      var autofocus: Boolean
       
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Setting to false will not allow you to close the modal by clicking on the dimmer
         *
         * @default true
         */
-      var closable: Boolean = js.native
+      var closable: Boolean
       
       /**
         * Selector or jquery object specifying the area to dim
         *
         * @default 'body'
         */
-      var context: String | JQuery = js.native
+      var context: String | JQuery
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // region Modal Settings
       /**
@@ -417,39 +413,39 @@ object SemanticUI {
         *
         * @default true
         */
-      var detachable: Boolean = js.native
+      var detachable: Boolean
       
       /**
         * You can specify custom settings to extend UI dimmer
         *
         * @see {@link http://semantic-ui.com/modules/dimmer.html}
         */
-      var dimmerSettings: DimmerSettings = js.native
+      var dimmerSettings: DimmerSettings
       
       /**
         * Duration of animation
         *
         * @default 400
         */
-      var duration: Double = js.native
+      var duration: Double
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether to automatically bind keyboard shortcuts
         *
         * @default true
         */
-      var keyboardShortcuts: Boolean = js.native
+      var keyboardShortcuts: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -457,74 +453,74 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Whether any change in modal DOM should automatically refresh cached positions
         *
         * @default false
         */
-      var observeChanges: Boolean = js.native
+      var observeChanges: Boolean
       
       /**
         * A vertical offset to allow for content outside of modal, for example a close button, to be centered.
         *
         * @default 0
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * Is called after a positive, approve or ok button is pressed. If the function returns false, the modal will not hide.
         */
-      def onApprove($element: JQuery): `false` | Unit = js.native
+      def onApprove($element: JQuery): `false` | Unit
       
       /**
         * Is called after a negative, deny or cancel button is pressed. If the function returns false the modal will not hide.
         */
-      def onDeny($element: JQuery): `false` | Unit = js.native
+      def onDeny($element: JQuery): `false` | Unit
       
       /**
         * Is called after a modal has finished hiding animation.
         */
-      def onHidden(): Unit = js.native
+      def onHidden(): Unit
       
       /**
         * Is called after a modal starts to hide. If the function returns false, the modal will not hide.
         */
-      def onHide($element: JQuery): `false` | Unit = js.native
+      def onHide($element: JQuery): `false` | Unit
       
       // endregion
       // region Callbacks
       /**
         * Is called when a modal starts to show.
         */
-      def onShow(): Unit = js.native
+      def onShow(): Unit
       
       /**
         * Is called after a modal has finished showing animating.
         */
-      def onVisible(): Unit = js.native
+      def onVisible(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Whether additional animations should queue
         *
         * @default false
         */
-      var queue: Boolean = js.native
+      var queue: Boolean
       
       // endregion
       // region DOM Settings
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Named transition to use when animating menu in and out, full list can be found in ui transitions docs.
@@ -532,12 +528,12 @@ object SemanticUI {
         * @default 'scale'
         * @see {@link http://semantic-ui.com/modules/transition.html}
         */
-      var transition: String = js.native
+      var transition: String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -661,7 +657,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImpldetachable | PickImplautofocus | PickImplobserveChanges | PickImplallowMultiple | PickImplkeyboardShortcuts | PickImploffset | PickImplcontext | PickImplclosable | PickImpldimmerSettings | PickImpltransition | PickImplduration | PickImplqueue | PickImplonShow | PickImplonVisible | PickImplonHide | PickImplonHidden | PickImplonApprove | PickImplonDeny | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImpldetachable | PickImplautofocus | PickImplobserveChanges | PickImplallowMultiple | PickImplkeyboardShortcuts | PickImploffset | PickImplcontext | PickImplclosable | PickImpldimmerSettings | PickImpltransition | PickImplduration | PickImplqueue | PickImplonShow | PickImplonVisible | PickImplonHide | PickImplonHidden | PickImplonApprove | PickImplonDeny | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/modal.html#/settings}

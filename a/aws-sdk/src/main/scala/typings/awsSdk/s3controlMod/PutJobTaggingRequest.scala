@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutJobTaggingRequest extends StObject {
   
   /**
     * The AWS account ID associated with the S3 Batch Operations job.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The ID for the S3 Batch Operations job whose tags you want to replace.
     */
-  var JobId: typings.awsSdk.s3controlMod.JobId = js.native
+  var JobId: typings.awsSdk.s3controlMod.JobId
   
   /**
     * The set of tags to associate with the S3 Batch Operations job.
     */
-  var Tags: S3TagSet = js.native
+  var Tags: S3TagSet
 }
 object PutJobTaggingRequest {
   

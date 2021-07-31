@@ -12,7 +12,6 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownDropdownMod extends Shortcut {
@@ -21,22 +20,21 @@ object dropdownDropdownMod extends Shortcut {
   @js.native
   val default: DropdownInterface = js.native
   
-  @js.native
   trait Align extends StObject {
     
-    var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var overflow: js.UndefOr[AdjustX] = js.native
+    var overflow: js.UndefOr[AdjustX] = js.undefined
     
-    var points: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var targetOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var targetOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var useCssBottom: js.UndefOr[Boolean] = js.native
+    var useCssBottom: js.UndefOr[Boolean] = js.undefined
     
-    var useCssRight: js.UndefOr[Boolean] = js.native
+    var useCssRight: js.UndefOr[Boolean] = js.undefined
     
-    var useCssTransform: js.UndefOr[Boolean] = js.native
+    var useCssTransform: js.UndefOr[Boolean] = js.undefined
   }
   object Align {
     
@@ -93,44 +91,43 @@ object dropdownDropdownMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DropDownProps extends StObject {
     
-    var align: js.UndefOr[Align] = js.native
+    var align: js.UndefOr[Align] = js.undefined
     
-    var arrow: js.UndefOr[Boolean] = js.native
+    var arrow: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
-    var mouseEnterDelay: js.UndefOr[Double] = js.native
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
-    var mouseLeaveDelay: js.UndefOr[Double] = js.native
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var openClassName: js.UndefOr[String] = js.native
+    var openClassName: js.UndefOr[String] = js.undefined
     
-    var overlay: ReactElement | OverlayFunc = js.native
+    var overlay: ReactElement | OverlayFunc
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.native
+    var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DropDownProps {
     
@@ -257,7 +254,9 @@ object dropdownDropdownMod extends Shortcut {
   }
   
   @js.native
-  trait DropdownInterface extends FunctionComponent[DropDownProps] {
+  trait DropdownInterface
+    extends StObject
+       with FunctionComponent[DropDownProps] {
     
     var Button: DropdownButtonInterface = js.native
   }

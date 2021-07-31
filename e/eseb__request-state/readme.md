@@ -12,7 +12,7 @@ Immutable state tracker for async requests.
 | Keywords           | immutable, async, network, request, state, react, redux |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 292 |
+| # downloads        | 524 |
 | # stars            | 0 |
 
 ## Links

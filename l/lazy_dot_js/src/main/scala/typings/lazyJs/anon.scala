@@ -2,17 +2,15 @@ package typings.lazyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[T] extends StObject {
     
-    var `0`: js.Any = js.native
+    var `0`: js.Any
     
-    var `1`: T = js.native
+    var `1`: T
   }
   object `0` {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], T] (val x: Self with `0`[T]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
       
       @scala.inline
       def set0(value: js.Any): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
@@ -35,21 +33,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait `1`[ElementT, OutputT /* <: js.Array[_] */] extends StObject {
+  trait `1`[ElementT, OutputT /* <: js.Array[js.Any] */] extends StObject {
     
-    var `0`: js.Array[ElementT] = js.native
+    var `0`: js.Array[ElementT]
     
-    var `1`: js.Any = js.native
+    var `1`: js.Any
     
-    var `2`: OutputT = js.native
+    var `2`: OutputT
     
-    var `3`: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias lazy.js.LazyJS.Tuple<ElementT, LengthT, lazy.js.LazyJS.PushFront<OutputT, ElementT>> */ js.Object = js.native
+    var `3`: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias lazy.js.LazyJS.Tuple<ElementT, LengthT, lazy.js.LazyJS.PushFront<OutputT, ElementT>> */ js.Object
   }
   object `1` {
     
     @scala.inline
-    def apply[ElementT, OutputT /* <: js.Array[_] */](
+    def apply[ElementT, OutputT /* <: js.Array[js.Any] */](
       `0`: js.Array[ElementT],
       `1`: js.Any,
       `2`: OutputT,
@@ -64,7 +61,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`[_, _], ElementT, OutputT /* <: js.Array[_] */] (val x: Self with (`1`[ElementT, OutputT])) extends AnyVal {
+    implicit class `1MutableBuilder`[Self <: `1`[?, ?], ElementT, OutputT /* <: js.Array[js.Any] */] (val x: Self & (`1`[ElementT, OutputT])) extends AnyVal {
       
       @scala.inline
       def set0(value: js.Array[ElementT]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
@@ -85,12 +82,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Property extends StObject {
     
-    var property: String = js.native
+    var property: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Property {
     

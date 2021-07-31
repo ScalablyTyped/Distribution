@@ -8,35 +8,33 @@ import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewDragEvent extends StObject {
   
-  var action: start | added | update | removed | end = js.native
+  var action: start | added | update | removed | end
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var button: js.Any = js.native
+  var button: js.Any
   
-  var buttons: Double = js.native
+  var buttons: Double
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var origin: MapViewDragEventOrigin = js.native
+  var origin: MapViewDragEventOrigin
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: drag = js.native
+  var `type`: drag
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object MapViewDragEvent {
   
@@ -51,12 +49,11 @@ object MapViewDragEvent {
     radius: Double,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: drag,
     x: Double,
     y: Double
   ): MapViewDragEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drag")
     __obj.asInstanceOf[MapViewDragEvent]
   }
   

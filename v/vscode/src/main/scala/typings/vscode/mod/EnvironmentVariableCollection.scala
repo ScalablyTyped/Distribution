@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,7 +41,7 @@ trait EnvironmentVariableCollection extends StObject {
       /* variable */ String, 
       /* mutator */ EnvironmentVariableMutator, 
       /* collection */ this.type, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def forEach(
@@ -50,7 +49,7 @@ trait EnvironmentVariableCollection extends StObject {
       /* variable */ String, 
       /* mutator */ EnvironmentVariableMutator, 
       /* collection */ this.type, 
-      _
+      js.Any
     ],
     thisArg: js.Any
   ): Unit = js.native

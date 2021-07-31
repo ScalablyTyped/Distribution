@@ -8,7 +8,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobileanalyticsMod {
@@ -22,16 +21,14 @@ object mobileanalyticsMod {
     def this(options: ClientConfiguration) = this()
   }
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.mobileanalyticsMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.mobileanalyticsMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -52,42 +49,44 @@ object mobileanalyticsMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type Double = scala.Double
   
-  @js.native
   trait Event extends StObject {
     
     /**
       * A collection of key-value pairs that give additional context to the event. The key-value pairs are specified by the developer. This collection can be empty or the attribute object can be omitted.
       */
-    var attributes: js.UndefOr[MapOfStringToString] = js.native
+    var attributes: js.UndefOr[MapOfStringToString] = js.undefined
     
     /**
       * A name signifying an event that occurred in your app. This is used for grouping and aggregating like events together for reporting purposes.
       */
-    var eventType: String50Chars = js.native
+    var eventType: String50Chars
     
     /**
       * A collection of key-value pairs that gives additional, measurable context to the event. The key-value pairs are specified by the developer. This collection can be empty or the attribute object can be omitted.
       */
-    var metrics: js.UndefOr[MapOfStringToNumber] = js.native
+    var metrics: js.UndefOr[MapOfStringToNumber] = js.undefined
     
     /**
       * The session the event occured within. 
       */
-    var session: js.UndefOr[Session] = js.native
+    var session: js.UndefOr[Session] = js.undefined
     
     /**
       * The time the event occurred in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
       */
-    var timestamp: ISO8601Timestamp = js.native
+    var timestamp: ISO8601Timestamp
     
     /**
       * The version of the event.
       */
-    var version: js.UndefOr[String10Chars] = js.native
+    var version: js.UndefOr[String10Chars] = js.undefined
   }
   object Event {
     
@@ -146,7 +145,7 @@ object mobileanalyticsMod {
   trait MobileAnalytics extends Service {
     
     @JSName("config")
-    var config_MobileAnalytics: ConfigBase with ClientConfiguration = js.native
+    var config_MobileAnalytics: ConfigBase & ClientConfiguration = js.native
     
     /**
       * The PutEvents operation records one or more events. You can have up to 1,500 unique custom events per app, any combination of up to 40 attributes and metrics per custom event, and any number of attribute or metric values.
@@ -160,23 +159,22 @@ object mobileanalyticsMod {
     def putEvents(params: PutEventsInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   }
   
-  @js.native
   trait PutEventsInput extends StObject {
     
     /**
       * The client context including the client ID, app title, app version and package name.
       */
-    var clientContext: String = js.native
+    var clientContext: String
     
     /**
       * The encoding used for the client context.
       */
-    var clientContextEncoding: js.UndefOr[String] = js.native
+    var clientContextEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * An array of Event JSON objects
       */
-    var events: EventListDefinition = js.native
+    var events: EventListDefinition
   }
   object PutEventsInput {
     
@@ -206,28 +204,27 @@ object mobileanalyticsMod {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
     /**
       * The duration of the session.
       */
-    var duration: js.UndefOr[Long] = js.native
+    var duration: js.UndefOr[Long] = js.undefined
     
     /**
       * A unique identifier for the session
       */
-    var id: js.UndefOr[String50Chars] = js.native
+    var id: js.UndefOr[String50Chars] = js.undefined
     
     /**
       * The time the event started in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
       */
-    var startTimestamp: js.UndefOr[ISO8601Timestamp] = js.native
+    var startTimestamp: js.UndefOr[ISO8601Timestamp] = js.undefined
     
     /**
       * The time the event terminated in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
       */
-    var stopTimestamp: js.UndefOr[ISO8601Timestamp] = js.native
+    var stopTimestamp: js.UndefOr[ISO8601Timestamp] = js.undefined
   }
   object Session {
     

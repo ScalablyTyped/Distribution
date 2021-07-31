@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofValidator extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Validator = js.native
+  def extend(proto: js.Object): Validator
   
   /* static member */
-  var fn: Validator = js.native
+  var fn: Validator
 }
 object TypeofValidator {
   

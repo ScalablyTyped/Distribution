@@ -5,183 +5,181 @@ import typings.std.Record
 import typings.tuyaPanelKit.anon.Bic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevInfo[S] extends StObject {
   
-  var ability: Double = js.native
+  var ability: Double
   
-  var activeTime: Double = js.native
+  var activeTime: Double
   
   /**
     * @deprecated
     */
-  var appId: Double = js.native
+  var appId: Double
   
-  var appKey: String = js.native
+  var appKey: String
   
   /**
     * @desc 网络是否在线
     */
-  var appOnline: Boolean = js.native
+  var appOnline: Boolean
   
-  var attribute: Double = js.native
+  var attribute: Double
   
-  var baseAttribute: Double = js.native
+  var baseAttribute: Double
   
-  var bv: Double = js.native
+  var bv: Double
   
-  var capability: Double = js.native
+  var capability: Double
   
-  var category: String = js.native
+  var category: String
   
-  var categoryCode: String = js.native
+  var categoryCode: String
   
-  var cloudOnline: Boolean = js.native
+  var cloudOnline: Boolean
   
-  var codeIds: Record[String, String] = js.native
+  var codeIds: Record[String, String]
   
-  var communication: Record[String, _] = js.native
+  var communication: Record[String, js.Any]
   
-  var devAttribute: Double = js.native
+  var devAttribute: Double
   
-  var devId: String = js.native
+  var devId: String
   
   /**
     * @desc 设备是否在线
     */
-  var deviceOnline: Boolean = js.native
+  var deviceOnline: Boolean
   
-  var deviceType: Double = js.native
+  var deviceType: Double
   
-  var displayDps: js.Array[_] = js.native
+  var displayDps: js.Array[js.Any]
   
-  var displayMsgs: Record[String, _] = js.native
+  var displayMsgs: Record[String, js.Any]
   
-  var displayOrder: Double = js.native
+  var displayOrder: Double
   
-  var dpMaxTime: Double = js.native
+  var dpMaxTime: Double
   
-  var dpName: Record[String | Double, String] = js.native
+  var dpName: Record[String | Double, String]
   
-  var dps: Record[Double, String] = js.native
+  var dps: Record[Double, String]
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var faultDps: js.Array[_] = js.native
+  var faultDps: js.Array[js.Any]
   
-  var gatewayVerCAD: String = js.native
+  var gatewayVerCAD: String
   
-  var gwType: String = js.native
+  var gwType: String
   
-  var homeDisplayOrder: Double = js.native
+  var homeDisplayOrder: Double
   
-  var homeId: Double = js.native
+  var homeId: Double
   
-  var i18nTime: Double = js.native
+  var i18nTime: Double
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var idCodes: Record[Double, String] = js.native
+  var idCodes: Record[Double, String]
   
-  var ip: String = js.native
+  var ip: String
   
-  var isAdmin: Boolean = js.native
+  var isAdmin: Boolean
   
-  var isCloudOnline: Boolean = js.native
+  var isCloudOnline: Boolean
   
   /**
     * @desc 局域网是否在线
     */
-  var isLocalOnline: Boolean = js.native
+  var isLocalOnline: Boolean
   
-  var isMeshBleOnline: Boolean = js.native
+  var isMeshBleOnline: Boolean
   
-  var isNewFirmware: Boolean = js.native
+  var isNewFirmware: Boolean
   
-  var isShare: Boolean = js.native
+  var isShare: Boolean
   
-  var isUniversalPanel: Boolean = js.native
+  var isUniversalPanel: Boolean
   
-  var isVDevice: Boolean = js.native
+  var isVDevice: Boolean
   
-  var latitude: String = js.native
+  var latitude: String
   
-  var localKey: String = js.native
+  var localKey: String
   
-  var longitude: String = js.native
+  var longitude: String
   
-  var lpv: Double = js.native
+  var lpv: Double
   
-  var meshId: String = js.native
+  var meshId: String
   
-  var name: String = js.native
+  var name: String
   
-  var networkType: NetworkType = js.native
+  var networkType: NetworkType
   
-  var originJson: Record[String, _] = js.native
+  var originJson: Record[String, js.Any]
   
-  var panelConfig: Bic = js.native
+  var panelConfig: Bic
   
-  var pcc: String = js.native
+  var pcc: String
   
-  var productId: String = js.native
+  var productId: String
   
-  var protocolAttribute: Double = js.native
+  var protocolAttribute: Double
   
-  var pv: Double = js.native
+  var pv: Double
   
-  var quickOpDps: js.Array[_] = js.native
+  var quickOpDps: js.Array[js.Any]
   
-  var rnFind: Boolean = js.native
+  var rnFind: Boolean
   
-  var roomId: Double = js.native
+  var roomId: Double
   
-  var runtimeEnv: String = js.native
+  var runtimeEnv: String
   
   var schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo with TopLevel[js.Any] = js.native
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any]
   
-  var schemaExt: String = js.native
+  var schemaExt: String
   
-  var sharedTime: Double = js.native
+  var sharedTime: Double
   
-  var sigmeshId: String = js.native
+  var sigmeshId: String
   
-  var standSchemaModel: Record[String, _] = js.native
+  var standSchemaModel: Record[String, js.Any]
   
-  var standard: Boolean = js.native
+  var standard: Boolean
   
-  var state: S = js.native
+  var state: S
   
-  var supportGroup: Boolean = js.native
+  var supportGroup: Boolean
   
-  var supportSGroup: Boolean = js.native
+  var supportSGroup: Boolean
   
-  var timezoneId: String = js.native
+  var timezoneId: String
   
-  var ui: String = js.native
+  var ui: String
   
-  var uiId: String = js.native
+  var uiId: String
   
-  var uiPhase: String = js.native
+  var uiPhase: String
   
-  var uiType: String = js.native
+  var uiType: String
   
-  var uiVersion: String = js.native
+  var uiVersion: String
   
-  var upgrading: Boolean = js.native
+  var upgrading: Boolean
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var vendorInfo: String = js.native
+  var vendorInfo: String
   
-  var verSw: String = js.native
+  var verSw: String
   
-  var virtual: Boolean = js.native
+  var virtual: Boolean
 }
 object DevInfo {
   
@@ -200,19 +198,19 @@ object DevInfo {
     categoryCode: String,
     cloudOnline: Boolean,
     codeIds: Record[String, String],
-    communication: Record[String, _],
+    communication: Record[String, js.Any],
     devAttribute: Double,
     devId: String,
     deviceOnline: Boolean,
     deviceType: Double,
-    displayDps: js.Array[_],
-    displayMsgs: Record[String, _],
+    displayDps: js.Array[js.Any],
+    displayMsgs: Record[String, js.Any],
     displayOrder: Double,
     dpMaxTime: Double,
     dpName: Record[String | Double, String],
     dps: Record[Double, String],
     errorCode: Double,
-    faultDps: js.Array[_],
+    faultDps: js.Array[js.Any],
     gatewayVerCAD: String,
     gwType: String,
     homeDisplayOrder: Double,
@@ -236,23 +234,23 @@ object DevInfo {
     meshId: String,
     name: String,
     networkType: NetworkType,
-    originJson: Record[String, _],
+    originJson: Record[String, js.Any],
     panelConfig: Bic,
     pcc: String,
     productId: String,
     protocolAttribute: Double,
     pv: Double,
-    quickOpDps: js.Array[_],
+    quickOpDps: js.Array[js.Any],
     rnFind: Boolean,
     roomId: Double,
     runtimeEnv: String,
     schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo with TopLevel[js.Any],
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any],
     schemaExt: String,
     sharedTime: Double,
     sigmeshId: String,
-    standSchemaModel: Record[String, _],
+    standSchemaModel: Record[String, js.Any],
     standard: Boolean,
     state: S,
     supportGroup: Boolean,
@@ -274,7 +272,7 @@ object DevInfo {
   }
   
   @scala.inline
-  implicit class DevInfoMutableBuilder[Self <: DevInfo[_], S] (val x: Self with DevInfo[S]) extends AnyVal {
+  implicit class DevInfoMutableBuilder[Self <: DevInfo[?], S] (val x: Self & DevInfo[S]) extends AnyVal {
     
     @scala.inline
     def setAbility(value: Double): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
@@ -316,7 +314,7 @@ object DevInfo {
     def setCodeIds(value: Record[String, String]): Self = StObject.set(x, "codeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunication(value: Record[String, _]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
+    def setCommunication(value: Record[String, js.Any]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDevAttribute(value: Double): Self = StObject.set(x, "devAttribute", value.asInstanceOf[js.Any])
@@ -331,13 +329,13 @@ object DevInfo {
     def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDps(value: js.Array[_]): Self = StObject.set(x, "displayDps", value.asInstanceOf[js.Any])
+    def setDisplayDps(value: js.Array[js.Any]): Self = StObject.set(x, "displayDps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisplayDpsVarargs(value: js.Any*): Self = StObject.set(x, "displayDps", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayMsgs(value: Record[String, _]): Self = StObject.set(x, "displayMsgs", value.asInstanceOf[js.Any])
+    def setDisplayMsgs(value: Record[String, js.Any]): Self = StObject.set(x, "displayMsgs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisplayOrder(value: Double): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
@@ -355,7 +353,7 @@ object DevInfo {
     def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultDps(value: js.Array[_]): Self = StObject.set(x, "faultDps", value.asInstanceOf[js.Any])
+    def setFaultDps(value: js.Array[js.Any]): Self = StObject.set(x, "faultDps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFaultDpsVarargs(value: js.Any*): Self = StObject.set(x, "faultDps", js.Array(value :_*))
@@ -430,7 +428,7 @@ object DevInfo {
     def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginJson(value: Record[String, _]): Self = StObject.set(x, "originJson", value.asInstanceOf[js.Any])
+    def setOriginJson(value: Record[String, js.Any]): Self = StObject.set(x, "originJson", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPanelConfig(value: Bic): Self = StObject.set(x, "panelConfig", value.asInstanceOf[js.Any])
@@ -448,7 +446,7 @@ object DevInfo {
     def setPv(value: Double): Self = StObject.set(x, "pv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickOpDps(value: js.Array[_]): Self = StObject.set(x, "quickOpDps", value.asInstanceOf[js.Any])
+    def setQuickOpDps(value: js.Array[js.Any]): Self = StObject.set(x, "quickOpDps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQuickOpDpsVarargs(value: js.Any*): Self = StObject.set(x, "quickOpDps", js.Array(value :_*))
@@ -466,7 +464,7 @@ object DevInfo {
     def setSchema(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-      */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo with TopLevel[js.Any]
+      */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -479,7 +477,7 @@ object DevInfo {
     def setSigmeshId(value: String): Self = StObject.set(x, "sigmeshId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandSchemaModel(value: Record[String, _]): Self = StObject.set(x, "standSchemaModel", value.asInstanceOf[js.Any])
+    def setStandSchemaModel(value: Record[String, js.Any]): Self = StObject.set(x, "standSchemaModel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])

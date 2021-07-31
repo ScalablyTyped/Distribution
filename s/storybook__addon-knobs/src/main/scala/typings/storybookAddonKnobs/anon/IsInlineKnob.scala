@@ -4,19 +4,17 @@ import typings.react.mod.Validator
 import typings.storybookAddonKnobs.radioMod.RadiosTypeKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsInlineKnob extends StObject {
   
-  var isInline: Validator[Boolean] = js.native
+  var isInline: Validator[Boolean]
   
-  var knob: Validator[RadiosTypeKnob] = js.native
+  var knob: Validator[RadiosTypeKnob]
   
   var onChange: Validator[
     js.Function1[/* value */ js.UndefOr[String | Double | Null], js.UndefOr[String | Double | Null]]
-  ] = js.native
+  ]
 }
 object IsInlineKnob {
   

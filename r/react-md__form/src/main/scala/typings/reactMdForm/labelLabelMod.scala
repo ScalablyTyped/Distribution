@@ -8,17 +8,17 @@ import typings.reactMdForm.reactMdFormStrings.span
 import typings.std.HTMLLabelElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelLabelMod {
   
   @JSImport("@react-md/form/types/label/Label", "Label")
   @js.native
-  val Label: ForwardRefExoticComponent[LabelProps with RefAttributes[HTMLLabelElement]] = js.native
+  val Label: ForwardRefExoticComponent[LabelProps & RefAttributes[HTMLLabelElement]] = js.native
   
-  @js.native
-  trait LabelProps extends HTMLAttributes[HTMLLabelElement] {
+  trait LabelProps
+    extends StObject
+       with HTMLAttributes[HTMLLabelElement] {
     
     /**
       * Boolean if the label should gain the active state. This should normally be
@@ -26,31 +26,31 @@ object labelLabelMod {
       * for text input than anything else, and probably shouldn't be used for
       * checkbox, radio or switch components.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The component to render the label as. This should be the default value of
       * `"label"` 99% of the time, but can also be rendered as a `"span"` for the
       * `Select` implementation where it needs to be rendered in a button.
       */
-    var component: js.UndefOr[label | span] = js.native
+    var component: js.UndefOr[label | span] = js.undefined
     
     /**
       * Boolean if the label should gain the disabled state.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the label should gain the error state.
       */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An id for the `<input>` or `<textarea>` that this label is for. This is
       * required since all label's **should** point to a valid
       * `<input>`/`<textarea>`.
       */
-    var htmlFor: String = js.native
+    var htmlFor: String
   }
   object LabelProps {
     

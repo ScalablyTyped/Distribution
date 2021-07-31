@@ -12,7 +12,7 @@ React addons for nuclear-js
 | Keywords           | flux, nuclear, immutable, react, addons, functional, stateless |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1312 |
+| # downloads        | 706 |
 | # stars            | 0 |
 
 ## Links

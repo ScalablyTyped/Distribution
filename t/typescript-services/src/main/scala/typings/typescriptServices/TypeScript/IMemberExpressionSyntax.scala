@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMemberExpressionSyntax extends IPostfixExpressionSyntax {
+trait IMemberExpressionSyntax
+  extends StObject
+     with IPostfixExpressionSyntax {
   
-  def isMemberExpression(): Boolean = js.native
+  def isMemberExpression(): Boolean
 }
 object IMemberExpressionSyntax {
   

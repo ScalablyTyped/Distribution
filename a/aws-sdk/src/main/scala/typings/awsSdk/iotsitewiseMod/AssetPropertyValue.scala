@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPropertyValue extends StObject {
   
   /**
     * The quality of the asset property value.
     */
-  var quality: js.UndefOr[Quality] = js.native
+  var quality: js.UndefOr[Quality] = js.undefined
   
   /**
     * The timestamp of the asset property value.
     */
-  var timestamp: TimeInNanos = js.native
+  var timestamp: TimeInNanos
   
   /**
     * The value of the asset property (see Variant).
     */
-  var value: Variant = js.native
+  var value: Variant
 }
 object AssetPropertyValue {
   

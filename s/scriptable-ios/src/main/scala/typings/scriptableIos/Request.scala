@@ -3,7 +3,6 @@ package typings.scriptableIos
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -127,7 +126,7 @@ trait Request extends StObject {
     * Call to send the configured request to the specified URL. The response is expected to be a valid JSON string and is parsed into an object.
     * @see https://docs.scriptable.app/request/#-loadjson
     */
-  def loadJSON(): js.Promise[_] = js.native
+  def loadJSON(): js.Promise[js.Any] = js.native
   
   /**
     * _Sends request and parses response as a string._

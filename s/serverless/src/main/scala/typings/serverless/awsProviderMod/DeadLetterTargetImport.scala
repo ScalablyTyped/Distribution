@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeadLetterTargetImport extends StObject {
   
-  var arn: String = js.native
+  var arn: String
   
-  var url: String = js.native
+  var url: String
 }
 object DeadLetterTargetImport {
   

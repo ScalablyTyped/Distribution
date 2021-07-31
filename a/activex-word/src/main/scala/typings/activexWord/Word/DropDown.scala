@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDown extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Default: Double = js.native
+  var Default: Double
   
-  val ListEntries: typings.activexWord.Word.ListEntries = js.native
+  val ListEntries: typings.activexWord.Word.ListEntries
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Valid: Boolean = js.native
+  val Valid: Boolean
   
-  var Value: Double = js.native
+  var Value: Double
   
   @JSName("Word.DropDown_typekey")
-  var WordDotDropDown_typekey: DropDown = js.native
+  var WordDotDropDown_typekey: DropDown
 }
 object DropDown {
   

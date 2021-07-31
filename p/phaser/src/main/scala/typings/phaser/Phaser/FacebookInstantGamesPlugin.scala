@@ -9,7 +9,6 @@ import typings.phaser.Purchase
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,7 +46,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For more details follow the Quick Start guide here: https://developers.facebook.com/docs/games/instant-games
   */
 @js.native
-trait FacebookInstantGamesPlugin extends EventEmitter {
+trait FacebookInstantGamesPlugin
+  extends StObject
+     with EventEmitter {
   
   /**
     * Contains AdInstance objects, as created by the `preloadAds()` method.
@@ -392,7 +393,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param max The maximum bound of the context size query.
     */
   def isSizeBetween(): js.Object = js.native
-  def isSizeBetween(min: js.UndefOr[scala.Nothing], max: integer): js.Object = js.native
+  def isSizeBetween(min: Unit, max: integer): js.Object = js.native
   def isSizeBetween(min: integer): js.Object = js.native
   def isSizeBetween(min: integer, max: integer): js.Object = js.native
   
@@ -436,9 +437,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param params An optional object that can contain up to 25 key-value pairs to be logged with the event. Keys must be 2 to 40 characters, and can only contain '_', '-', ' ', and alphanumeric characters. Values must be less than 100 characters in length.
     */
   def log(name: String): this.type = js.native
-  def log(name: String, value: js.UndefOr[scala.Nothing], params: js.Object): this.type = js.native
   def log(name: String, value: Double): this.type = js.native
   def log(name: String, value: Double, params: js.Object): this.type = js.native
+  def log(name: String, value: Unit, params: js.Object): this.type = js.native
   
   /**
     * Attempts to match the current player with other users looking for people to play with.
@@ -453,9 +454,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param switchImmediately Optional extra parameter that specifies whether the player should be immediately switched to the new context when a match is found. By default this will be false which will mean the player needs explicitly press play after being matched to switch to the new context. Default false.
     */
   def matchPlayer(): this.type = js.native
-  def matchPlayer(matchTag: js.UndefOr[scala.Nothing], switchImmediately: Boolean): this.type = js.native
   def matchPlayer(matchTag: String): this.type = js.native
   def matchPlayer(matchTag: String, switchImmediately: Boolean): this.type = js.native
+  def matchPlayer(matchTag: Unit, switchImmediately: Boolean): this.type = js.native
   
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
@@ -473,9 +474,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param sessionData A blob of data to attach to the share.
     */
   def openChallenge(text: String, key: String): this.type = js.native
-  def openChallenge(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openChallenge(text: String, key: String, frame: String): this.type = js.native
   def openChallenge(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  def openChallenge(text: String, key: String, frame: Unit, sessionData: js.Object): this.type = js.native
   
   /**
     * This invokes a dialog to let the user invite a friend to play this game, either as a message in Messenger or as a post on the user's timeline.
@@ -493,9 +494,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param sessionData A blob of data to attach to the share.
     */
   def openInvite(text: String, key: String): this.type = js.native
-  def openInvite(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openInvite(text: String, key: String, frame: String): this.type = js.native
   def openInvite(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  def openInvite(text: String, key: String, frame: Unit, sessionData: js.Object): this.type = js.native
   
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
@@ -513,9 +514,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param sessionData A blob of data to attach to the share.
     */
   def openRequest(text: String, key: String): this.type = js.native
-  def openRequest(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openRequest(text: String, key: String, frame: String): this.type = js.native
   def openRequest(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  def openRequest(text: String, key: String, frame: Unit, sessionData: js.Object): this.type = js.native
   
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
@@ -533,9 +534,9 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param sessionData A blob of data to attach to the share.
     */
   def openShare(text: String, key: String): this.type = js.native
-  def openShare(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openShare(text: String, key: String, frame: String): this.type = js.native
   def openShare(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  def openShare(text: String, key: String, frame: Unit, sessionData: js.Object): this.type = js.native
   
   /**
     * Does the current platform and context allow for use of the payments API?

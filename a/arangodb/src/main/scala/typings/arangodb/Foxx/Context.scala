@@ -6,19 +6,18 @@ import typings.arangodb.arangodbBooleans.`false`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Context extends StObject {
   
-  var argv: js.Array[_] = js.native
+  var argv: js.Array[js.Any] = js.native
   
   var basePath: String = js.native
   
   var baseUrl: String = js.native
   
-  def collection(name: String): Collection[_] | Null = js.native
+  def collection(name: String): Collection[js.Any] | Null = js.native
   
   def collectionName(name: String): String = js.native
   

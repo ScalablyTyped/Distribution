@@ -7,7 +7,6 @@ import typings.reactList.reactListStrings.x
 import typings.reactList.reactListStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,36 +34,37 @@ object mod {
     def scrollTo(index: Double): Unit = js.native
   }
   
-  @js.native
-  trait ReactListProps extends Props[ReactList] {
+  trait ReactListProps
+    extends StObject
+       with Props[ReactList] {
     
-    var axis: js.UndefOr[x | y] = js.native
+    var axis: js.UndefOr[x | y] = js.undefined
     
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var itemRenderer: js.UndefOr[ItemRenderer] = js.native
+    var itemRenderer: js.UndefOr[ItemRenderer] = js.undefined
     
-    var itemSizeEstimator: js.UndefOr[ItemSizeEstimator] = js.native
+    var itemSizeEstimator: js.UndefOr[ItemSizeEstimator] = js.undefined
     
-    var itemSizeGetter: js.UndefOr[ItemSizeGetter] = js.native
+    var itemSizeGetter: js.UndefOr[ItemSizeGetter] = js.undefined
     
-    var itemsRenderer: js.UndefOr[ItemsRenderer] = js.native
+    var itemsRenderer: js.UndefOr[ItemsRenderer] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var scrollParentGetter: js.UndefOr[ScrollParentGetter] = js.native
+    var scrollParentGetter: js.UndefOr[ScrollParentGetter] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var useStaticSize: js.UndefOr[Boolean] = js.native
+    var useStaticSize: js.UndefOr[Boolean] = js.undefined
     
-    var useTranslate3d: js.UndefOr[Boolean] = js.native
+    var useTranslate3d: js.UndefOr[Boolean] = js.undefined
   }
   object ReactListProps {
     

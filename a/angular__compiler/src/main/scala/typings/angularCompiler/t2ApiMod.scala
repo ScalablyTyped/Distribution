@@ -13,7 +13,6 @@ import typings.angularCompiler.r3AstMod.Variable
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object t2ApiMod {
@@ -95,7 +94,6 @@ object t2ApiMod {
     val target: Target = js.native
   }
   
-  @js.native
   trait DirectiveMeta extends StObject {
     
     /**
@@ -103,34 +101,34 @@ object t2ApiMod {
       *
       * Null otherwise
       */
-    var exportAs: js.Array[String] | Null = js.native
+    var exportAs: js.Array[String] | Null
     
     /**
       * Set of inputs which this directive claims.
       *
       * Goes from property names to field names.
       */
-    var inputs: InputOutputPropertySet = js.native
+    var inputs: InputOutputPropertySet
     
     /**
       * Whether the directive is a component.
       */
-    var isComponent: Boolean = js.native
+    var isComponent: Boolean
     
     /**
       * Name of the directive class (used for debugging).
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Set of outputs which this directive claims.
       *
       * Goes from property names to field names.
       */
-    var outputs: InputOutputPropertySet = js.native
+    var outputs: InputOutputPropertySet
     
     /** The selector for the directive or `null` if there isn't one. */
-    var selector: String | Null = js.native
+    var selector: String | Null
   }
   object DirectiveMeta {
     
@@ -141,7 +139,7 @@ object t2ApiMod {
       name: String,
       outputs: InputOutputPropertySet
     ): DirectiveMeta = {
-      val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], exportAs = null, selector = null)
       __obj.asInstanceOf[DirectiveMeta]
     }
     
@@ -177,10 +175,9 @@ object t2ApiMod {
     }
   }
   
-  @js.native
   trait InputOutputPropertySet extends StObject {
     
-    def hasBindingPropertyName(propertyName: String): Boolean = js.native
+    def hasBindingPropertyName(propertyName: String): Boolean
   }
   object InputOutputPropertySet {
     
@@ -198,10 +195,9 @@ object t2ApiMod {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var template: js.UndefOr[js.Array[Node]] = js.native
+    var template: js.UndefOr[js.Array[Node]] = js.undefined
   }
   object Target {
     
@@ -225,10 +221,9 @@ object t2ApiMod {
     }
   }
   
-  @js.native
   trait TargetBinder[D /* <: DirectiveMeta */] extends StObject {
     
-    def bind(target: Target): BoundTarget[D] = js.native
+    def bind(target: Target): BoundTarget[D]
   }
   object TargetBinder {
     
@@ -239,7 +234,7 @@ object t2ApiMod {
     }
     
     @scala.inline
-    implicit class TargetBinderMutableBuilder[Self <: TargetBinder[_], D /* <: DirectiveMeta */] (val x: Self with TargetBinder[D]) extends AnyVal {
+    implicit class TargetBinderMutableBuilder[Self <: TargetBinder[?], D /* <: DirectiveMeta */] (val x: Self & TargetBinder[D]) extends AnyVal {
       
       @scala.inline
       def setBind(value: Target => BoundTarget[D]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))

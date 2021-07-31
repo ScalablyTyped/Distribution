@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDocumentDefaultVersionResult extends StObject {
   
   /**
     * The description of a custom document that you want to set as the default version.
     */
-  var Description: js.UndefOr[DocumentDefaultVersionDescription] = js.native
+  var Description: js.UndefOr[DocumentDefaultVersionDescription] = js.undefined
 }
 object UpdateDocumentDefaultVersionResult {
   

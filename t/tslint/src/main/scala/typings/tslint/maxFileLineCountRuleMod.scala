@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maxFileLineCountRuleMod {
@@ -22,9 +21,8 @@ object maxFileLineCountRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/maxFileLineCountRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(lineCount: Double, lineLimit: Double): String = js.native
+    @scala.inline
+    def FAILURE_STRING(lineCount: Double, lineLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(lineCount.asInstanceOf[js.Any], lineLimit.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/maxFileLineCountRule", "Rule.metadata")
     @js.native

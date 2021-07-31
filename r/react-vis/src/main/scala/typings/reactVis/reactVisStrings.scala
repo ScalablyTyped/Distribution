@@ -4,13 +4,14 @@ import typings.reactVis.mod.Scale
 import typings.reactVis.mod.StackDirections
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactVisStrings {
   
   @js.native
-  sealed trait angle extends StackDirections
+  sealed trait angle
+    extends StObject
+       with StackDirections
   @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
   
@@ -50,7 +51,9 @@ object reactVisStrings {
   def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   
   @js.native
-  sealed trait category extends Scale
+  sealed trait category
+    extends StObject
+       with Scale
   @scala.inline
   def category: category = "category".asInstanceOf[category]
   
@@ -65,7 +68,9 @@ object reactVisStrings {
   def circlePack: circlePack = "circlePack".asInstanceOf[circlePack]
   
   @js.native
-  sealed trait color extends StackDirections
+  sealed trait color
+    extends StObject
+       with StackDirections
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
@@ -85,7 +90,9 @@ object reactVisStrings {
   def dice: dice = "dice".asInstanceOf[dice]
   
   @js.native
-  sealed trait fill extends StackDirections
+  sealed trait fill
+    extends StObject
+       with StackDirections
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   
@@ -115,22 +122,30 @@ object reactVisStrings {
   def leftEdge: leftEdge = "leftEdge".asInstanceOf[leftEdge]
   
   @js.native
-  sealed trait linear extends Scale
+  sealed trait linear
+    extends StObject
+       with Scale
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait literal extends Scale
+  sealed trait literal
+    extends StObject
+       with Scale
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait log extends Scale
+  sealed trait log
+    extends StObject
+       with Scale
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait opacity extends StackDirections
+  sealed trait opacity
+    extends StObject
+       with StackDirections
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   
@@ -140,7 +155,9 @@ object reactVisStrings {
   def opacity0: opacity0 = "opacity0".asInstanceOf[opacity0]
   
   @js.native
-  sealed trait ordinal extends Scale
+  sealed trait ordinal
+    extends StObject
+       with Scale
   @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
@@ -155,7 +172,9 @@ object reactVisStrings {
   def `partition-pivot`: `partition-pivot` = "partition-pivot".asInstanceOf[`partition-pivot`]
   
   @js.native
-  sealed trait radius extends StackDirections
+  sealed trait radius
+    extends StObject
+       with StackDirections
   @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
   
@@ -180,7 +199,9 @@ object reactVisStrings {
   def rightEdge: rightEdge = "rightEdge".asInstanceOf[rightEdge]
   
   @js.native
-  sealed trait size extends StackDirections
+  sealed trait size
+    extends StObject
+       with StackDirections
   @scala.inline
   def size: size = "size".asInstanceOf[size]
   
@@ -210,17 +231,23 @@ object reactVisStrings {
   def squarify: squarify = "squarify".asInstanceOf[squarify]
   
   @js.native
-  sealed trait stroke extends StackDirections
+  sealed trait stroke
+    extends StObject
+       with StackDirections
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   
   @js.native
-  sealed trait time extends Scale
+  sealed trait time
+    extends StObject
+       with Scale
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait `time-utc` extends Scale
+  sealed trait `time-utc`
+    extends StObject
+       with Scale
   @scala.inline
   def `time-utc`: `time-utc` = "time-utc".asInstanceOf[`time-utc`]
   
@@ -250,7 +277,9 @@ object reactVisStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait x extends StackDirections
+  sealed trait x
+    extends StObject
+       with StackDirections
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   
@@ -260,7 +289,9 @@ object reactVisStrings {
   def x0: x0 = "x0".asInstanceOf[x0]
   
   @js.native
-  sealed trait y extends StackDirections
+  sealed trait y
+    extends StObject
+       with StackDirections
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   

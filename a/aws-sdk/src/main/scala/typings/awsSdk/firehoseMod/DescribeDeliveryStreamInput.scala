@@ -2,26 +2,24 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeliveryStreamInput extends StObject {
   
   /**
     * The name of the delivery stream.
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
   
   /**
     * The ID of the destination to start returning the destination information. Kinesis Data Firehose supports one destination per delivery stream.
     */
-  var ExclusiveStartDestinationId: js.UndefOr[DestinationId] = js.native
+  var ExclusiveStartDestinationId: js.UndefOr[DestinationId] = js.undefined
   
   /**
     * The limit on the number of destinations to return. You can have one destination per delivery stream.
     */
-  var Limit: js.UndefOr[DescribeDeliveryStreamInputLimit] = js.native
+  var Limit: js.UndefOr[DescribeDeliveryStreamInputLimit] = js.undefined
 }
 object DescribeDeliveryStreamInput {
   

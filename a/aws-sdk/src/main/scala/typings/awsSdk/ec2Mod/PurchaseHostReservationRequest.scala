@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseHostReservationRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The currency in which the totalUpfrontPrice, LimitPrice, and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts with which the reservation will be associated.
     */
-  var HostIdSet: RequestHostIdSet = js.native
+  var HostIdSet: RequestHostIdSet
   
   /**
     * The specified limit is checked against the total upfront cost of the reservation (calculated as the offering's upfront cost multiplied by the host count). If the total upfront cost is greater than the specified price limit, the request fails. This is used to ensure that the purchase does not exceed the expected upfront cost of the purchase. At this time, the only supported currency is USD. For example, to indicate a limit price of USD 100, specify 100.00.
     */
-  var LimitPrice: js.UndefOr[String] = js.native
+  var LimitPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var OfferingId: typings.awsSdk.ec2Mod.OfferingId = js.native
+  var OfferingId: typings.awsSdk.ec2Mod.OfferingId
   
   /**
     * The tags to apply to the Dedicated Host Reservation during purchase.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object PurchaseHostReservationRequest {
   

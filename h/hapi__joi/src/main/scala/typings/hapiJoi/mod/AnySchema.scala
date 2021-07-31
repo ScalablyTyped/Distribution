@@ -9,12 +9,12 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnySchema
-  extends SchemaInternals
+  extends StObject
+     with SchemaInternals
      with _Schema {
   
   /**
@@ -34,7 +34,9 @@ trait AnySchema
     *  reference and any future assignment.
     */
   def default(): this.type = js.native
-  def default(value: js.Function2[/* parent */ js.Any, /* helpers */ CustomHelpers[_], BasicType | Reference]): this.type = js.native
+  def default(
+    value: js.Function2[/* parent */ js.Any, /* helpers */ CustomHelpers[js.Any], BasicType | Reference]
+  ): this.type = js.native
   def default(value: BasicType): this.type = js.native
   def default(value: Reference): this.type = js.native
   
@@ -47,7 +49,7 @@ trait AnySchema
   /**
     * Flags of current schema.
     */
-  var _flags: Record[String, _] = js.native
+  var _flags: Record[String, js.Any] = js.native
   
   /**
     * Whitelists a value
@@ -95,8 +97,8 @@ trait AnySchema
   /**
     * Adds a custom validation function.
     */
-  def custom(fn: CustomValidator[_]): this.type = js.native
-  def custom(fn: CustomValidator[_], description: String): this.type = js.native
+  def custom(fn: CustomValidator[js.Any]): this.type = js.native
+  def custom(fn: CustomValidator[js.Any], description: String): this.type = js.native
   
   /**
     * Returns a plain object representing the schema's rules and properties
@@ -369,8 +371,8 @@ trait AnySchema
   /**
     * Validates a value using the schema and options.
     */
-  def validateAsync(value: js.Any): js.Promise[_] = js.native
-  def validateAsync(value: js.Any, options: AsyncValidationOptions): js.Promise[_] = js.native
+  def validateAsync(value: js.Any): js.Promise[js.Any] = js.native
+  def validateAsync(value: js.Any, options: AsyncValidationOptions): js.Promise[js.Any] = js.native
   
   /**
     * Same as `rule({ warn: true })`.

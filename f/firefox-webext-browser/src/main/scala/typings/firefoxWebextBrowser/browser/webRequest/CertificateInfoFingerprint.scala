@@ -2,15 +2,13 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateInfoFingerprint extends StObject {
   
-  var sha1: String = js.native
+  var sha1: String
   
-  var sha256: String = js.native
+  var sha256: String
 }
 object CertificateInfoFingerprint {
   

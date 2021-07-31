@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyNameParams[RouteName_4 /* <: String */] extends StObject {
   
   // tslint:disable-next-line no-redundant-undefined
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   // tslint:disable-next-line no-unnecessary-generics
-  var name: RouteName_4 = js.native
+  var name: RouteName_4
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
 }
 object KeyNameParams {
   
@@ -25,7 +23,7 @@ object KeyNameParams {
   }
   
   @scala.inline
-  implicit class KeyNameParamsMutableBuilder[Self <: KeyNameParams[_], RouteName_4 /* <: String */] (val x: Self with KeyNameParams[RouteName_4]) extends AnyVal {
+  implicit class KeyNameParamsMutableBuilder[Self <: KeyNameParams[?], RouteName_4 /* <: String */] (val x: Self & KeyNameParams[RouteName_4]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

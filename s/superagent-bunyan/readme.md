@@ -12,7 +12,7 @@ a plugin for superagent that uses bunyan to log the request s and responses
 | Keywords           | superagent, bunyan, log |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 2920 |
+| # downloads        | 3020 |
 | # stars            | 0 |
 
 ## Links

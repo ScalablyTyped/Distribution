@@ -6,7 +6,6 @@ import typings.std.PropertyKey
 import typings.uirouterCore.stateObjectMod.StateObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonCommonMod {
@@ -15,108 +14,75 @@ object commonCommonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/common", "_extend")
-  @js.native
-  def _extend(toObj: Obj, fromObjs: Obj*): js.Any = js.native
+  @scala.inline
+  def _extend(toObj: Obj, fromObjs: Obj*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(toObj.asInstanceOf[js.Any], fromObjs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "_inArray")
-  @js.native
-  def _inArray(array: js.Array[_]): js.Function1[/* obj */ js.Any, Boolean] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "_inArray")
-  @js.native
-  def _inArray(array: js.Array[_], obj: js.Any): Boolean = js.native
+  @scala.inline
+  def _inArray(array: js.Array[js.Any]): js.Function1[/* obj */ js.Any, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, Boolean]]
+  @scala.inline
+  def _inArray(array: js.Array[js.Any], obj: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@uirouter/core/lib/common/common", "_pushTo")
-  @js.native
-  def _pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "_pushTo")
-  @js.native
-  def _pushTo[T](arr: js.Array[T], `val`: T): T = js.native
+  @scala.inline
+  def _pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("_pushTo")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* val */ T, T]]
+  @scala.inline
+  def _pushTo[T](arr: js.Array[T], `val`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("_pushTo")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@uirouter/core/lib/common/common", "_removeFrom")
-  @js.native
-  def _removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "_removeFrom")
-  @js.native
-  def _removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = js.native
+  @scala.inline
+  def _removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("_removeFrom")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ T, js.Array[T]]]
+  @scala.inline
+  def _removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeFrom")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@uirouter/core/lib/common/common", "allTrueR")
-  @js.native
-  def allTrueR(memo: Boolean, elem: js.Any): js.Any = js.native
+  @scala.inline
+  def allTrueR(memo: Boolean, elem: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("allTrueR")(memo.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "ancestors")
-  @js.native
-  def ancestors(first: StateObject, second: StateObject): js.Array[StateObject] = js.native
+  @scala.inline
+  def ancestors(first: StateObject, second: StateObject): js.Array[StateObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestors")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Array[StateObject]]
   
-  @JSImport("@uirouter/core/lib/common/common", "anyTrueR")
-  @js.native
-  def anyTrueR(memo: Boolean, elem: js.Any): js.Any = js.native
+  @scala.inline
+  def anyTrueR(memo: Boolean, elem: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("anyTrueR")(memo.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "applyPairs")
-  @js.native
-  def applyPairs(memo: TypedMap[_], keyValTuple: js.Array[_]): TypedMap[_] = js.native
+  @scala.inline
+  def applyPairs(memo: TypedMap[js.Any], keyValTuple: js.Array[js.Any]): TypedMap[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPairs")(memo.asInstanceOf[js.Any], keyValTuple.asInstanceOf[js.Any])).asInstanceOf[TypedMap[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "arrayTuples")
-  @js.native
-  def arrayTuples(args: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def arrayTuples(args: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayTuples")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "assertFn")
-  @js.native
-  def assertFn(predicateOrMap: js.Function): js.Any = js.native
-  @JSImport("@uirouter/core/lib/common/common", "assertFn")
-  @js.native
-  def assertFn(predicateOrMap: js.Function, errMsg: String): js.Any = js.native
-  @JSImport("@uirouter/core/lib/common/common", "assertFn")
-  @js.native
-  def assertFn(predicateOrMap: js.Function, errMsg: js.Function): js.Any = js.native
+  @scala.inline
+  def assertFn(predicateOrMap: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assertFn")(predicateOrMap.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def assertFn(predicateOrMap: js.Function, errMsg: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assertFn")(predicateOrMap.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def assertFn(predicateOrMap: js.Function, errMsg: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assertFn")(predicateOrMap.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "assertMap")
-  @js.native
-  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: String): js.Function1[/* t */ T, U] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "assertMap")
-  @js.native
-  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: js.Function): js.Function1[/* t */ T, U] = js.native
+  @scala.inline
+  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: String): js.Function1[/* t */ T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMap")(mapFn.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ T, U]]
+  @scala.inline
+  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: js.Function): js.Function1[/* t */ T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMap")(mapFn.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ T, U]]
   
-  @JSImport("@uirouter/core/lib/common/common", "assertPredicate")
-  @js.native
-  def assertPredicate[T](predicate: Predicate[T], errMsg: String): Predicate[T] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "assertPredicate")
-  @js.native
-  def assertPredicate[T](predicate: Predicate[T], errMsg: js.Function): Predicate[T] = js.native
+  @scala.inline
+  def assertPredicate[T](predicate: Predicate[T], errMsg: String): Predicate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("assertPredicate")(predicate.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[Predicate[T]]
+  @scala.inline
+  def assertPredicate[T](predicate: Predicate[T], errMsg: js.Function): Predicate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("assertPredicate")(predicate.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[Predicate[T]]
   
-  @JSImport("@uirouter/core/lib/common/common", "copy")
-  @js.native
-  def copy(src: Obj): js.Any = js.native
-  @JSImport("@uirouter/core/lib/common/common", "copy")
-  @js.native
-  def copy(src: Obj, dest: Obj): js.Any = js.native
+  @scala.inline
+  def copy(src: Obj): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def copy(src: Obj, dest: Obj): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "createProxyFunctions")
-  @js.native
-  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function): Obj = js.native
-  @JSImport("@uirouter/core/lib/common/common", "createProxyFunctions")
-  @js.native
-  def createProxyFunctions(
-    source: js.Function,
-    target: Obj,
-    bind: js.Function,
-    fnNames: js.UndefOr[scala.Nothing],
-    latebind: Boolean
-  ): Obj = js.native
-  @JSImport("@uirouter/core/lib/common/common", "createProxyFunctions")
-  @js.native
-  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: js.Array[String]): Obj = js.native
-  @JSImport("@uirouter/core/lib/common/common", "createProxyFunctions")
-  @js.native
-  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: js.Array[String], latebind: Boolean): Obj = js.native
+  @scala.inline
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("createProxyFunctions")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], bind.asInstanceOf[js.Any])).asInstanceOf[Obj]
+  @scala.inline
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: js.Array[String]): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("createProxyFunctions")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], bind.asInstanceOf[js.Any], fnNames.asInstanceOf[js.Any])).asInstanceOf[Obj]
+  @scala.inline
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: js.Array[String], latebind: Boolean): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("createProxyFunctions")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], bind.asInstanceOf[js.Any], fnNames.asInstanceOf[js.Any], latebind.asInstanceOf[js.Any])).asInstanceOf[Obj]
+  @scala.inline
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: Unit, latebind: Boolean): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("createProxyFunctions")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], bind.asInstanceOf[js.Any], fnNames.asInstanceOf[js.Any], latebind.asInstanceOf[js.Any])).asInstanceOf[Obj]
   
-  @JSImport("@uirouter/core/lib/common/common", "defaults")
-  @js.native
-  def defaults(opts: js.Any, defaultsList: Obj*): js.Any = js.native
+  @scala.inline
+  def defaults(opts: js.Any, defaultsList: Obj*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opts.asInstanceOf[js.Any], defaultsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "deregAll")
-  @js.native
-  def deregAll(functions: js.Array[js.Function]): Unit = js.native
+  @scala.inline
+  def deregAll(functions: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregAll")(functions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@uirouter/core/lib/common/common", "equals")
   @js.native
@@ -126,27 +92,21 @@ object commonCommonMod {
   @js.native
   val extend: js.Function2[/* toObj */ Obj, /* repeated */ Obj, js.Any] = js.native
   
-  @JSImport("@uirouter/core/lib/common/common", "filter")
-  @js.native
-  def filter[T](collection: js.Array[T], callback: js.Function2[/* t */ T, /* key */ js.UndefOr[Double], Boolean]): js.Array[T] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "filter")
-  @js.native
-  def filter[T](collection: TypedMap[T], callback: js.Function2[/* t */ T, /* key */ js.UndefOr[String], Boolean]): TypedMap[T] = js.native
+  @scala.inline
+  def filter[T](collection: js.Array[T], callback: js.Function2[/* t */ T, /* key */ js.UndefOr[Double], Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def filter[T](collection: TypedMap[T], callback: js.Function2[/* t */ T, /* key */ js.UndefOr[String], Boolean]): TypedMap[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedMap[T]]
   
-  @JSImport("@uirouter/core/lib/common/common", "find")
-  @js.native
-  def find[T](collection: js.Array[T], callback: Predicate[T]): T = js.native
-  @JSImport("@uirouter/core/lib/common/common", "find")
-  @js.native
-  def find[T](collection: TypedMap[T], callback: Predicate[T]): T = js.native
+  @scala.inline
+  def find[T](collection: js.Array[T], callback: Predicate[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def find[T](collection: TypedMap[T], callback: Predicate[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@uirouter/core/lib/common/common", "flatten")
-  @js.native
-  def flatten(arr: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def flatten(arr: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "flattenR")
-  @js.native
-  def flattenR(memo: js.Array[_], elem: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def flattenR(memo: js.Array[js.Any], elem: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenR")(memo.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   @JSImport("@uirouter/core/lib/common/common", "forEach")
   @js.native
@@ -156,44 +116,35 @@ object commonCommonMod {
   @js.native
   val fromJson: js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/common", "identity")
-  @js.native
-  def identity(x: js.Any): js.Any = js.native
+  @scala.inline
+  def identity(x: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "inArray")
-  @js.native
-  def inArray(array: js.Array[_]): js.Function1[/* obj */ js.Any, Boolean] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "inArray")
-  @js.native
-  def inArray(array: js.Array[_], obj: js.Any): Boolean = js.native
+  @scala.inline
+  def inArray(array: js.Array[js.Any]): js.Function1[/* obj */ js.Any, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, Boolean]]
+  @scala.inline
+  def inArray(array: js.Array[js.Any], obj: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@uirouter/core/lib/common/common", "inherit")
-  @js.native
-  def inherit(parent: Obj): js.Any = js.native
-  @JSImport("@uirouter/core/lib/common/common", "inherit")
-  @js.native
-  def inherit(parent: Obj, extra: Obj): js.Any = js.native
+  @scala.inline
+  def inherit(parent: Obj): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inherit")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def inherit(parent: Obj, extra: Obj): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inherit")(parent.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "map")
-  @js.native
-  def map[T, U](collection: js.Array[T], callback: Mapper[T, U]): js.Array[U] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "map")
-  @js.native
+  @scala.inline
+  def map[T, U](collection: js.Array[T], callback: Mapper[T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  @scala.inline
   def map[T, U](
     collection: js.Array[T],
     callback: Mapper[T, U],
     target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
-  ): js.Array[U] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "map")
-  @js.native
-  def map[T, U](collection: StringDictionary[T], callback: Mapper[T, U]): StringDictionary[U] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "map")
-  @js.native
+  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  @scala.inline
+  def map[T, U](collection: StringDictionary[T], callback: Mapper[T, U]): StringDictionary[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[U]]
+  @scala.inline
   def map[T, U](
     collection: StringDictionary[T],
     callback: Mapper[T, U],
     target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
-  ): StringDictionary[U] = js.native
+  ): StringDictionary[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[U]]
   
   @JSImport("@uirouter/core/lib/common/common", "mapObj")
   @js.native
@@ -217,94 +168,75 @@ object commonCommonMod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapObj")(x.asInstanceOf[js.Any])
   
-  @JSImport("@uirouter/core/lib/common/common", "mergeR")
-  @js.native
-  def mergeR(memo: Obj, item: Obj): js.Any = js.native
+  @scala.inline
+  def mergeR(memo: Obj, item: Obj): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeR")(memo.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "noop")
-  @js.native
-  def noop(): js.Any = js.native
+  @scala.inline
+  def noop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "omit")
-  @js.native
-  def omit(obj: Obj, propNames: js.Array[String]): Obj = js.native
+  @scala.inline
+  def omit(obj: Obj, propNames: js.Array[String]): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], propNames.asInstanceOf[js.Any])).asInstanceOf[Obj]
   
-  @JSImport("@uirouter/core/lib/common/common", "pairs")
-  @js.native
-  def pairs(obj: Obj): js.Array[js.Array[_]] = js.native
+  @scala.inline
+  def pairs(obj: Obj): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
   
-  @JSImport("@uirouter/core/lib/common/common", "pick")
-  @js.native
-  def pick(obj: Obj, propNames: js.Array[String]): Obj = js.native
+  @scala.inline
+  def pick(obj: Obj, propNames: js.Array[String]): Obj = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(obj.asInstanceOf[js.Any], propNames.asInstanceOf[js.Any])).asInstanceOf[Obj]
   
-  @JSImport("@uirouter/core/lib/common/common", "pluck")
-  @js.native
-  def pluck(collection: StringDictionary[js.Any], propName: String): StringDictionary[js.Any] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "pluck")
-  @js.native
-  def pluck[T](collection: js.Array[Obj], propName: String): js.Array[T] = js.native
+  @scala.inline
+  def pluck(collection: StringDictionary[js.Any], propName: String): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(collection.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def pluck[T](collection: js.Array[Obj], propName: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(collection.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@uirouter/core/lib/common/common", "pushR")
-  @js.native
-  def pushR(arr: js.Array[_], obj: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def pushR(arr: js.Array[js.Any], obj: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pushR")(arr.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "pushTo")
-  @js.native
-  def pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "pushTo")
-  @js.native
-  def pushTo[T](arr: js.Array[T], `val`: T): T = js.native
+  @scala.inline
+  def pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushTo")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* val */ T, T]]
+  @scala.inline
+  def pushTo[T](arr: js.Array[T], `val`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pushTo")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@uirouter/core/lib/common/common", "removeFrom")
-  @js.native
-  def removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = js.native
-  @JSImport("@uirouter/core/lib/common/common", "removeFrom")
-  @js.native
-  def removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = js.native
+  @scala.inline
+  def removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFrom")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ T, js.Array[T]]]
+  @scala.inline
+  def removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFrom")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   @JSImport("@uirouter/core/lib/common/common", "root")
   @js.native
   val root: js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/common", "silenceUncaughtInPromise")
-  @js.native
-  def silenceUncaughtInPromise(promise: js.Promise[_]): js.Promise[_] = js.native
+  @scala.inline
+  def silenceUncaughtInPromise(promise: js.Promise[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("silenceUncaughtInPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "silentRejection")
-  @js.native
-  def silentRejection(error: js.Any): js.Promise[_] = js.native
+  @scala.inline
+  def silentRejection(error: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("silentRejection")(error.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "tail")
-  @js.native
-  def tail[T](arr: js.Array[T]): T = js.native
+  @scala.inline
+  def tail[T](arr: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tail")(arr.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("@uirouter/core/lib/common/common", "toJson")
   @js.native
   val toJson: js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/common", "uniqR")
-  @js.native
-  def uniqR[T](acc: js.Array[T], token: T): js.Array[T] = js.native
+  @scala.inline
+  def uniqR[T](acc: js.Array[T], token: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqR")(acc.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@uirouter/core/lib/common/common", "unnest")
-  @js.native
-  def unnest(arr: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def unnest(arr: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unnest")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@uirouter/core/lib/common/common", "unnestR")
-  @js.native
-  def unnestR(memo: js.Array[_], elem: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def unnestR(memo: js.Array[js.Any], elem: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unnestR")(memo.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/common", "values")
-  @js.native
-  def values[T](obj: TypedMap[T]): js.Array[T] = js.native
+  @scala.inline
+  def values[T](obj: TypedMap[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   type IInjectable = js.Function | js.Array[js.Any]
   
   type Mapper[X, T] = js.Function2[/* x */ X, /* key */ js.UndefOr[String | Double], T]
   
-  @js.native
   trait Obj
-    extends Object
+    extends StObject
+       with Object
        with /* key */ StringDictionary[js.Any]
   object Obj {
     

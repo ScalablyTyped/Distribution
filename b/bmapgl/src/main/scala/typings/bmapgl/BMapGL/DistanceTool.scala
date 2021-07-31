@@ -3,17 +3,15 @@ package typings.bmapgl.BMapGL
 import typings.bmapgl.anon.Distance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceTool extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def ondrawend(event: Distance): Unit = js.native
+  def ondrawend(event: Distance): Unit
   
-  def open(): Boolean = js.native
+  def open(): Boolean
 }
 object DistanceTool {
   

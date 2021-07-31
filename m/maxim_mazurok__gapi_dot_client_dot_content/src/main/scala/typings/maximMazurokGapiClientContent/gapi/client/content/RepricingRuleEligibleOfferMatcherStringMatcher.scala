@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepricingRuleEligibleOfferMatcherStringMatcher extends StObject {
   
   /**
     * String attributes, as long as such attribute of an offer is one of the string attribute values, the offer is considered as passing the matcher. The string matcher checks an offer
     * for inclusivity in the string attributes, not equality. Only literal string matching is supported, no regex.
     */
-  var strAttributes: js.UndefOr[js.Array[String]] = js.native
+  var strAttributes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RepricingRuleEligibleOfferMatcherStringMatcher {
   

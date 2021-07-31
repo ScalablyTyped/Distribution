@@ -3,21 +3,19 @@ package typings.stylefire
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgTypesMod {
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Dimensions {
     
@@ -46,18 +44,19 @@ object svgTypesMod {
   
   type SVGState = StringDictionary[String | Double]
   
-  @js.native
-  trait TransformState extends /* key */ StringDictionary[String] {
+  trait TransformState
+    extends StObject
+       with /* key */ StringDictionary[String] {
     
-    var rotate: String = js.native
+    var rotate: String
     
-    var scale: String = js.native
+    var scale: String
     
-    var skewX: String = js.native
+    var skewX: String
     
-    var skewY: String = js.native
+    var skewY: String
     
-    var translate: String = js.native
+    var translate: String
   }
   object TransformState {
     

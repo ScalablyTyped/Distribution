@@ -2,41 +2,39 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * The identifier of the certificate.
     */
-  var CertificateId: js.UndefOr[typings.awsSdk.directoryserviceMod.CertificateId] = js.native
+  var CertificateId: js.UndefOr[typings.awsSdk.directoryserviceMod.CertificateId] = js.undefined
   
   /**
     * The common name for the certificate.
     */
-  var CommonName: js.UndefOr[CertificateCN] = js.native
+  var CommonName: js.UndefOr[CertificateCN] = js.undefined
   
   /**
     * The date and time when the certificate will expire.
     */
-  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.native
+  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.undefined
   
   /**
     * The date and time that the certificate was registered.
     */
-  var RegisteredDateTime: js.UndefOr[CertificateRegisteredDateTime] = js.native
+  var RegisteredDateTime: js.UndefOr[CertificateRegisteredDateTime] = js.undefined
   
   /**
     * The state of the certificate.
     */
-  var State: js.UndefOr[CertificateState] = js.native
+  var State: js.UndefOr[CertificateState] = js.undefined
   
   /**
     * Describes a state change for the certificate.
     */
-  var StateReason: js.UndefOr[CertificateStateReason] = js.native
+  var StateReason: js.UndefOr[CertificateStateReason] = js.undefined
 }
 object Certificate {
   

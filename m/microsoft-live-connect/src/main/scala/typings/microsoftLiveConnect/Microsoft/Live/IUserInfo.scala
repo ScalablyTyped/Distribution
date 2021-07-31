@@ -2,25 +2,23 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region REST Object Information
 /**
   * Sub object of REST objects that contains information about a user.
   */
-@js.native
 trait IUserInfo extends StObject {
   
   /**
     * The Live ID of the user.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The name of the user.
     */
-  var name: String = js.native
+  var name: String
 }
 object IUserInfo {
   

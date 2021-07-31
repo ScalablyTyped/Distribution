@@ -4,26 +4,26 @@ import typings.tuyaPanelKit.stackRouterMod.StackActionType
 import typings.tuyaPanelKit.tuyaPanelKitStrings.POP_TO_TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceTargetType extends StackActionType {
+trait SourceTargetType
+  extends StObject
+     with StackActionType {
   
   // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: POP_TO_TOP = js.native
+  var `type`: POP_TO_TOP
 }
 object SourceTargetType {
   
   @scala.inline
-  def apply(`type`: POP_TO_TOP): SourceTargetType = {
+  def apply(): SourceTargetType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("POP_TO_TOP")
     __obj.asInstanceOf[SourceTargetType]
   }
   

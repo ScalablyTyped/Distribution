@@ -3,13 +3,11 @@ package typings.stripe.anon
 import typings.stripe.mod.setupIntents.SetupIntentCancelationReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var cancellation_reason: js.UndefOr[SetupIntentCancelationReason] = js.native
+  var cancellation_reason: js.UndefOr[SetupIntentCancelationReason] = js.undefined
 }
 object `1` {
   

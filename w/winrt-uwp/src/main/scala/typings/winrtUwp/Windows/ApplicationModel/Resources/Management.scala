@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Management {
@@ -16,14 +15,20 @@ object Management {
     
     /** Reserved. */
     @js.native
-    sealed trait embeddedData extends IndexedResourceType
+    sealed trait embeddedData
+      extends StObject
+         with IndexedResourceType
     
     /** The IndexedResourceCandidate is a file. */
     @js.native
-    sealed trait path extends IndexedResourceType
+    sealed trait path
+      extends StObject
+         with IndexedResourceType
     
     /** The IndexedResourceCandidate is a string. */
     @js.native
-    sealed trait string extends IndexedResourceType
+    sealed trait string
+      extends StObject
+         with IndexedResourceType
   }
 }

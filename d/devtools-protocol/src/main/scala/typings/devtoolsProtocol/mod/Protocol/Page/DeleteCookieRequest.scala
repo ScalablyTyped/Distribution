@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCookieRequest extends StObject {
   
   /**
     * Name of the cookie to remove.
     */
-  var cookieName: String = js.native
+  var cookieName: String
   
   /**
     * URL to match cooke domain and path.
     */
-  var url: String = js.native
+  var url: String
 }
 object DeleteCookieRequest {
   

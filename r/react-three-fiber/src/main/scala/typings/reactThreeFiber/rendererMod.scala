@@ -9,116 +9,87 @@ import typings.reactThreeFiber.canvasMod.CanvasContext
 import typings.three.mod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererMod {
+  
+  @JSImport("react-three-fiber/renderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-three-fiber/renderer", "Renderer")
   @js.native
   val Renderer: Reconciler[js.Any, js.Any, js.Any, js.Any] = js.native
   
-  @JSImport("react-three-fiber/renderer", "addAfterEffect")
-  @js.native
-  def addAfterEffect(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
+  @scala.inline
+  def addAfterEffect(callback: GlobalRenderCallback): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addAfterEffect")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("react-three-fiber/renderer", "addEffect")
-  @js.native
-  def addEffect(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
+  @scala.inline
+  def addEffect(callback: GlobalRenderCallback): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addEffect")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("react-three-fiber/renderer", "addTail")
-  @js.native
-  def addTail(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
+  @scala.inline
+  def addTail(callback: GlobalRenderCallback): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addTail")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("react-three-fiber/renderer", "applyProps")
-  @js.native
-  def applyProps(instance: js.Any, newProps: js.Any): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "applyProps")
-  @js.native
-  def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.UndefOr[scala.Nothing], accumulative: Boolean): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "applyProps")
-  @js.native
-  def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "applyProps")
-  @js.native
-  def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any, accumulative: Boolean): Unit = js.native
+  @scala.inline
+  def applyProps(instance: js.Any, newProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyProps")(instance.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyProps")(instance.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any, accumulative: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyProps")(instance.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any], accumulative.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyProps(instance: js.Any, newProps: js.Any, oldProps: Unit, accumulative: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyProps")(instance.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any], accumulative.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-three-fiber/renderer", "createPortal")
-  @js.native
-  def createPortal(children: ReactNode, containerInfo: js.Any): Children = js.native
-  @JSImport("react-three-fiber/renderer", "createPortal")
-  @js.native
-  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.UndefOr[scala.Nothing], key: js.Any): Children = js.native
-  @JSImport("react-three-fiber/renderer", "createPortal")
-  @js.native
-  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any): Children = js.native
-  @JSImport("react-three-fiber/renderer", "createPortal")
-  @js.native
-  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any, key: js.Any): Children = js.native
+  @scala.inline
+  def createPortal(children: ReactNode, containerInfo: js.Any): Children = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], containerInfo.asInstanceOf[js.Any])).asInstanceOf[Children]
+  @scala.inline
+  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any): Children = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], containerInfo.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Children]
+  @scala.inline
+  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any, key: js.Any): Children = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], containerInfo.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Children]
+  @scala.inline
+  def createPortal(children: ReactNode, containerInfo: js.Any, implementation: Unit, key: js.Any): Children = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], containerInfo.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Children]
   
-  @JSImport("react-three-fiber/renderer", "extend")
-  @js.native
-  def extend(objects: js.Object): Unit = js.native
+  @scala.inline
+  def extend(objects: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-three-fiber/renderer", "forceResize")
-  @js.native
-  def forceResize(): Unit = js.native
+  @scala.inline
+  def forceResize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceResize")().asInstanceOf[Unit]
   
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(state: js.UndefOr[scala.Nothing], frames: Double): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(state: Boolean): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(state: Boolean, frames: Double): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(state: MutableRefObject[CanvasContext]): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "invalidate")
-  @js.native
-  def invalidate(state: MutableRefObject[CanvasContext], frames: Double): Unit = js.native
+  @scala.inline
+  def invalidate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")().asInstanceOf[Unit]
+  @scala.inline
+  def invalidate(state: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def invalidate(state: Boolean, frames: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(state.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def invalidate(state: Unit, frames: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(state.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def invalidate(state: MutableRefObject[CanvasContext]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def invalidate(state: MutableRefObject[CanvasContext], frames: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(state.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-three-fiber/renderer", "render")
-  @js.native
-  def render(element: ReactNode, container: Object3D): js.Any = js.native
-  @JSImport("react-three-fiber/renderer", "render")
-  @js.native
-  def render(element: ReactNode, container: Object3D, state: MutableRefObject[CanvasContext]): js.Any = js.native
+  @scala.inline
+  def render(element: ReactNode, container: Object3D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def render(element: ReactNode, container: Object3D, state: MutableRefObject[CanvasContext]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-three-fiber/renderer", "renderGl")
-  @js.native
-  def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double): Double = js.native
-  @JSImport("react-three-fiber/renderer", "renderGl")
-  @js.native
-  def renderGl(
-    state: MutableRefObject[CanvasContext],
-    timestamp: Double,
-    repeat: js.UndefOr[scala.Nothing],
-    runGlobalEffects: Boolean
-  ): Double = js.native
-  @JSImport("react-three-fiber/renderer", "renderGl")
-  @js.native
-  def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double, repeat: Double): Double = js.native
-  @JSImport("react-three-fiber/renderer", "renderGl")
-  @js.native
+  @scala.inline
+  def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGl")(state.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double, repeat: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGl")(state.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], repeat.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def renderGl(
     state: MutableRefObject[CanvasContext],
     timestamp: Double,
     repeat: Double,
     runGlobalEffects: Boolean
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGl")(state.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], repeat.asInstanceOf[js.Any], runGlobalEffects.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double, repeat: Unit, runGlobalEffects: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGl")(state.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], repeat.asInstanceOf[js.Any], runGlobalEffects.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-three-fiber/renderer", "unmountComponentAtNode")
-  @js.native
-  def unmountComponentAtNode(container: Object3D): Unit = js.native
-  @JSImport("react-three-fiber/renderer", "unmountComponentAtNode")
-  @js.native
-  def unmountComponentAtNode(container: Object3D, callback: js.Function1[/* c */ Object3D, Unit]): Unit = js.native
+  @scala.inline
+  def unmountComponentAtNode(container: Object3D): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unmountComponentAtNode(container: Object3D, callback: js.Function1[/* c */ Object3D, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type GlobalRenderCallback = js.Function1[/* timeStamp */ Double, Boolean]
   

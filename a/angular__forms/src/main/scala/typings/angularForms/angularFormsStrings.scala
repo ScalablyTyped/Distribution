@@ -3,7 +3,6 @@ package typings.angularForms
 import typings.angularForms.mod.FormHooks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularFormsStrings {
@@ -14,12 +13,16 @@ object angularFormsStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait blur extends FormHooks
+  sealed trait blur
+    extends StObject
+       with FormHooks
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait change extends FormHooks
+  sealed trait change
+    extends StObject
+       with FormHooks
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   
@@ -34,7 +37,9 @@ object angularFormsStrings {
   def once: once = "once".asInstanceOf[once]
   
   @js.native
-  sealed trait submit extends FormHooks
+  sealed trait submit
+    extends StObject
+       with FormHooks
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
 }

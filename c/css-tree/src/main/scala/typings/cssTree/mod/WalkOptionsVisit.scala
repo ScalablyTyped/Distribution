@@ -2,19 +2,17 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WalkOptionsVisit[NodeType /* <: CssNode */] extends StObject {
   
-  var enter: js.UndefOr[EnterOrLeaveFn[NodeType]] = js.native
+  var enter: js.UndefOr[EnterOrLeaveFn[NodeType]] = js.undefined
   
-  var leave: js.UndefOr[EnterOrLeaveFn[NodeType]] = js.native
+  var leave: js.UndefOr[EnterOrLeaveFn[NodeType]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var visit: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any = js.native
+  var visit: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any
 }
 object WalkOptionsVisit {
   
@@ -27,7 +25,7 @@ object WalkOptionsVisit {
   }
   
   @scala.inline
-  implicit class WalkOptionsVisitMutableBuilder[Self <: WalkOptionsVisit[_], NodeType /* <: CssNode */] (val x: Self with WalkOptionsVisit[NodeType]) extends AnyVal {
+  implicit class WalkOptionsVisitMutableBuilder[Self <: WalkOptionsVisit[?], NodeType /* <: CssNode */] (val x: Self & WalkOptionsVisit[NodeType]) extends AnyVal {
     
     @scala.inline
     def setEnter(value: EnterOrLeaveFn[NodeType]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])

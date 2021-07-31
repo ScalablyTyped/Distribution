@@ -2,7 +2,6 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait TableLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var borderVisible: js.UndefOr[Boolean] = js.native
+  var borderVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var columnCount: js.UndefOr[Boolean] = js.native
+  var columnCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.native
+  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowCount: js.UndefOr[Boolean] = js.native
+  var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait TableLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.native
+  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined
 }
 object TableLoadOptions {
   

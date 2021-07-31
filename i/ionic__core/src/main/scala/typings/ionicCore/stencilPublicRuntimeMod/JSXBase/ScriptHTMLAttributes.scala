@@ -5,33 +5,33 @@ import typings.ionicCore.ionicCoreStrings.high
 import typings.ionicCore.ionicCoreStrings.low
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScriptHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ScriptHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var charSet: js.UndefOr[String] = js.native
+  var charSet: js.UndefOr[String] = js.undefined
   
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.undefined
   
-  var defer: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.undefined
   
-  var importance: js.UndefOr[low | auto | high] = js.native
+  var importance: js.UndefOr[low | auto | high] = js.undefined
   
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ScriptHTMLAttributes {
   
@@ -42,7 +42,7 @@ object ScriptHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ScriptHTMLAttributesMutableBuilder[Self <: ScriptHTMLAttributes[_], T] (val x: Self with ScriptHTMLAttributes[T]) extends AnyVal {
+  implicit class ScriptHTMLAttributesMutableBuilder[Self <: ScriptHTMLAttributes[?], T] (val x: Self & ScriptHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemarketingListShare extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#remarketingListShare". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Remarketing list ID. This is a read-only, auto-generated field. */
-  var remarketingListId: js.UndefOr[String] = js.native
+  var remarketingListId: js.UndefOr[String] = js.undefined
   
   /** Accounts that the remarketing list is shared with. */
-  var sharedAccountIds: js.UndefOr[js.Array[String]] = js.native
+  var sharedAccountIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Advertisers that the remarketing list is shared with. */
-  var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemarketingListShare {
   

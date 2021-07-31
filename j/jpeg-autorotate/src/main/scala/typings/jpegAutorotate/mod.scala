@@ -4,10 +4,13 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jpeg-autorotate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait errors extends StObject
@@ -16,38 +19,48 @@ object mod {
   object errors extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[errors with String] = js.native
+    def apply(value: String): js.UndefOr[errors & String] = js.native
     
     @js.native
-    sealed trait correct_orientation extends errors
-    /* "correct_orientation" */ val correct_orientation: typings.jpegAutorotate.mod.errors.correct_orientation with String = js.native
+    sealed trait correct_orientation
+      extends StObject
+         with errors
+    /* "correct_orientation" */ val correct_orientation: typings.jpegAutorotate.mod.errors.correct_orientation & String = js.native
     
     @js.native
-    sealed trait no_orientation extends errors
-    /* "no_orientation" */ val no_orientation: typings.jpegAutorotate.mod.errors.no_orientation with String = js.native
+    sealed trait no_orientation
+      extends StObject
+         with errors
+    /* "no_orientation" */ val no_orientation: typings.jpegAutorotate.mod.errors.no_orientation & String = js.native
     
     @js.native
-    sealed trait read_exif extends errors
-    /* "read_exif" */ val read_exif: typings.jpegAutorotate.mod.errors.read_exif with String = js.native
+    sealed trait read_exif
+      extends StObject
+         with errors
+    /* "read_exif" */ val read_exif: typings.jpegAutorotate.mod.errors.read_exif & String = js.native
     
     @js.native
-    sealed trait read_file extends errors
-    /* "read_file" */ val read_file: typings.jpegAutorotate.mod.errors.read_file with String = js.native
+    sealed trait read_file
+      extends StObject
+         with errors
+    /* "read_file" */ val read_file: typings.jpegAutorotate.mod.errors.read_file & String = js.native
     
     @js.native
-    sealed trait rotate_file extends errors
-    /* "rotate_file" */ val rotate_file: typings.jpegAutorotate.mod.errors.rotate_file with String = js.native
+    sealed trait rotate_file
+      extends StObject
+         with errors
+    /* "rotate_file" */ val rotate_file: typings.jpegAutorotate.mod.errors.rotate_file & String = js.native
     
     @js.native
-    sealed trait unknown_orientation extends errors
-    /* "unknown_orientation" */ val unknown_orientation: typings.jpegAutorotate.mod.errors.unknown_orientation with String = js.native
+    sealed trait unknown_orientation
+      extends StObject
+         with errors
+    /* "unknown_orientation" */ val unknown_orientation: typings.jpegAutorotate.mod.errors.unknown_orientation & String = js.native
   }
   
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
-  def rotate(path_or_buffer: String, options: RotateOptions): Unit = js.native
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
+  @scala.inline
+  def rotate(path_or_buffer: String, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def rotate(
     path_or_buffer: String,
     options: RotateOptions,
@@ -59,12 +72,10 @@ object mod {
       /* quality */ Double | Null, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
-  def rotate(path_or_buffer: Buffer, options: RotateOptions): Unit = js.native
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], module_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def rotate(path_or_buffer: Buffer, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def rotate(
     path_or_buffer: Buffer,
     options: RotateOptions,
@@ -76,18 +87,18 @@ object mod {
       /* quality */ Double | Null, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
-  def rotate_Promise(path_or_buffer: String, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = js.native
-  @JSImport("jpeg-autorotate", "rotate")
-  @js.native
-  def rotate_Promise(path_or_buffer: Buffer, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], module_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait CustomError extends Error {
+  @scala.inline
+  def rotate_Promise(path_or_buffer: String, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
+  @scala.inline
+  def rotate_Promise(path_or_buffer: Buffer, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
+  
+  trait CustomError
+    extends StObject
+       with Error {
     
-    var code: errors = js.native
+    var code: errors
   }
   object CustomError {
     
@@ -105,12 +116,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RotateDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object RotateDimensions {
     
@@ -131,10 +141,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RotateOptions extends StObject {
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object RotateOptions {
     

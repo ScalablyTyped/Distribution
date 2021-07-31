@@ -6,21 +6,19 @@ import typings.reactRange.typesMod.IThumbProps
 import typings.reactRange.typesMod.ITrackProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -47,16 +45,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var isDragged: Boolean = js.native
+    var isDragged: Boolean
     
-    var props: ITrackProps = js.native
+    var props: ITrackProps
   }
   object Children {
     
@@ -86,18 +83,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DraggedThumbIndex extends StObject {
     
-    var draggedThumbIndex: Double = js.native
+    var draggedThumbIndex: Double
     
-    var draggedTrackPos: js.Array[Double] = js.native
+    var draggedTrackPos: js.Array[Double]
     
-    var isChanged: Boolean = js.native
+    var isChanged: Boolean
     
-    var markOffsets: js.Array[scala.Nothing] = js.native
+    var markOffsets: js.Array[scala.Nothing]
     
-    var thumbZIndexes: js.Array[Double] = js.native
+    var thumbZIndexes: js.Array[Double]
   }
   object DraggedThumbIndex {
     
@@ -142,12 +138,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var props: IMarkProps = js.native
+    var props: IMarkProps
   }
   object Index {
     
@@ -168,16 +163,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsDragged extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var isDragged: Boolean = js.native
+    var isDragged: Boolean
     
-    var props: IThumbProps = js.native
+    var props: IThumbProps
     
-    var value: Double = js.native
+    var value: Double
   }
   object IsDragged {
     
@@ -204,12 +198,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

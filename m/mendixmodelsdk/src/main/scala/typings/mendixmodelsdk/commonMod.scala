@@ -3,7 +3,6 @@ package typings.mendixmodelsdk
 import typings.mendixmodelsdk.deltasDeltasMod._PrimitiveValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
@@ -18,14 +17,15 @@ object commonMod {
     /**
       * Representation of an RGB color.
       */
-    @js.native
-    trait IColor extends _PrimitiveValue {
+    trait IColor
+      extends StObject
+         with _PrimitiveValue {
       
-      var blue: Double = js.native
+      var blue: Double
       
-      var green: Double = js.native
+      var green: Double
       
-      var red: Double = js.native
+      var red: Double
     }
     object IColor {
       
@@ -57,12 +57,13 @@ object commonMod {
     /**
       * Representation of a point.
       */
-    @js.native
-    trait IPoint extends _PrimitiveValue {
+    trait IPoint
+      extends StObject
+         with _PrimitiveValue {
       
-      var x: Double = js.native
+      var x: Double
       
-      var y: Double = js.native
+      var y: Double
     }
     object IPoint {
       
@@ -86,12 +87,13 @@ object commonMod {
     /**
       * Representation of a size, e.g. of an entity box.
       */
-    @js.native
-    trait ISize extends _PrimitiveValue {
+    trait ISize
+      extends StObject
+         with _PrimitiveValue {
       
-      var height: Double = js.native
+      var height: Double
       
-      var width: Double = js.native
+      var width: Double
     }
     object ISize {
       

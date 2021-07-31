@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Segment extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait Segment extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A string that indicates the type of segment. For example, EVN or PID. */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
   
   /** Set ID for segments that can be in a set. This can be empty if it's missing or isn't applicable. */
-  var setId: js.UndefOr[String] = js.native
+  var setId: js.UndefOr[String] = js.undefined
 }
 object Segment {
   
@@ -42,7 +40,7 @@ object Segment {
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistryKeyState extends StObject {
   
   /**
@@ -13,41 +11,41 @@ trait RegistryKeyState extends StObject {
     * HKEY_LOCAL_MACHINE/Software HKEY_LOCAL_MACHINE/System HKEY_USERS/.Default. Possible values are: unknown, currentConfig,
     * currentUser, localMachineSam, localMachineSecurity, localMachineSoftware, localMachineSystem, usersDefault.
     */
-  var hive: js.UndefOr[NullableOption[RegistryHive]] = js.native
+  var hive: js.UndefOr[NullableOption[RegistryHive]] = js.undefined
   
   // Current (i.e. changed) registry key (excludes HIVE).
-  var key: js.UndefOr[NullableOption[String]] = js.native
+  var key: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Previous (i.e. before changed) registry key (excludes HIVE).
-  var oldKey: js.UndefOr[NullableOption[String]] = js.native
+  var oldKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Previous (i.e. before changed) registry key value data (contents).
-  var oldValueData: js.UndefOr[NullableOption[String]] = js.native
+  var oldValueData: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Previous (i.e. before changed) registry key value name.
-  var oldValueName: js.UndefOr[NullableOption[String]] = js.native
+  var oldValueName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Operation that changed the registry key name and/or value. Possible values are: unknown, create, modify, delete.
-  var operation: js.UndefOr[NullableOption[RegistryOperation]] = js.native
+  var operation: js.UndefOr[NullableOption[RegistryOperation]] = js.undefined
   
   /**
     * Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes'
     * collection).
     */
-  var processId: js.UndefOr[NullableOption[Double]] = js.native
+  var processId: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Current (i.e. changed) registry key value data (contents).
-  var valueData: js.UndefOr[NullableOption[String]] = js.native
+  var valueData: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Current (i.e. changed) registry key value name
-  var valueName: js.UndefOr[NullableOption[String]] = js.native
+  var valueName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Registry key value type REG_BINARY REG_DWORD REG_DWORD_LITTLE_ENDIAN REG_DWORD_BIG_ENDIANREG_EXPAND_SZ REG_LINK
     * REG_MULTI_SZ REG_NONE REG_QWORD REG_QWORD_LITTLE_ENDIAN REG_SZ Possible values are: unknown, binary, dword,
     * dwordLittleEndian, dwordBigEndian, expandSz, link, multiSz, none, qword, qwordlittleEndian, sz.
     */
-  var valueType: js.UndefOr[NullableOption[RegistryValueType]] = js.native
+  var valueType: js.UndefOr[NullableOption[RegistryValueType]] = js.undefined
 }
 object RegistryKeyState {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Countries")
@@ -31,7 +30,7 @@ class ResourceCountries protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCountry] = js.native
   def get(callback: BodyResponseCallback[SchemaCountry]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCountry] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCountry] = js.native
   def get(params: ParamsResourceCountriesGet): GaxiosPromise[SchemaCountry] = js.native
   def get(params: ParamsResourceCountriesGet, callback: BodyResponseCallback[SchemaCountry]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceCountries protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCountriesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCountriesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(params: ParamsResourceCountriesList): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(params: ParamsResourceCountriesList, callback: BodyResponseCallback[SchemaCountriesListResponse]): Unit = js.native
   def list(

@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters extends StObject {
   
   /**
     * Date-time parameters.
     */
-  var DateTimeParameters: js.UndefOr[DateTimeParameterList] = js.native
+  var DateTimeParameters: js.UndefOr[DateTimeParameterList] = js.undefined
   
   /**
     * Decimal parameters.
     */
-  var DecimalParameters: js.UndefOr[DecimalParameterList] = js.native
+  var DecimalParameters: js.UndefOr[DecimalParameterList] = js.undefined
   
   /**
     * Integer parameters.
     */
-  var IntegerParameters: js.UndefOr[IntegerParameterList] = js.native
+  var IntegerParameters: js.UndefOr[IntegerParameterList] = js.undefined
   
   /**
     * String parameters.
     */
-  var StringParameters: js.UndefOr[StringParameterList] = js.native
+  var StringParameters: js.UndefOr[StringParameterList] = js.undefined
 }
 object Parameters {
   

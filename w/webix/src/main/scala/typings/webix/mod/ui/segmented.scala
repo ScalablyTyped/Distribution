@@ -5,13 +5,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.segmented")
 @js.native
 class segmented ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -69,22 +69,25 @@ class segmented ()
   def $tooltipOut(): Unit = js.native
   
   def addOption(id: String, value: js.Any): Unit = js.native
-  def addOption(id: String, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: String, value: js.Any, show: Unit, index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: Double, value: js.Any, show: Unit, index: Double): Unit = js.native
   
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback, id: String): String | Double = js.native
+  
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_segmented: segmentedConfig = js.native

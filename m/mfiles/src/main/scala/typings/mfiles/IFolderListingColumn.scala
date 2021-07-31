@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFolderListingColumnFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderListingColumn extends StObject {
   
-  def Clone(): IFolderListingColumn = js.native
+  def Clone(): IFolderListingColumn
   
-  var Flags: MFFolderListingColumnFlags = js.native
+  var Flags: MFFolderListingColumnFlags
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  var Position: Double = js.native
+  var Position: Double
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object IFolderListingColumn {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Definition extends StObject {
   
   /**
     *  The AWS Identity and Access Management (IAM) action definition details. 
     */
-  var IamActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.IamActionDefinition] = js.native
+  var IamActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.IamActionDefinition] = js.undefined
   
   /**
     *  The service control policies (SCPs) action definition details. 
     */
-  var ScpActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.ScpActionDefinition] = js.native
+  var ScpActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.ScpActionDefinition] = js.undefined
   
   /**
     *  The AWS Systems Manager (SSM) action definition details. 
     */
-  var SsmActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.SsmActionDefinition] = js.native
+  var SsmActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.SsmActionDefinition] = js.undefined
 }
 object Definition {
   

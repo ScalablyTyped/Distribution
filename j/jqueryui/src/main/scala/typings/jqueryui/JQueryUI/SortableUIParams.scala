@@ -3,25 +3,23 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortableUIParams extends StObject {
   
-  var helper: JQuery = js.native
+  var helper: JQuery
   
-  var item: JQuery = js.native
+  var item: JQuery
   
-  var offset: js.Any = js.native
+  var offset: js.Any
   
-  var originalPosition: js.Any = js.native
+  var originalPosition: js.Any
   
-  var placeholder: JQuery = js.native
+  var placeholder: JQuery
   
-  var position: js.Any = js.native
+  var position: js.Any
   
-  var sender: JQuery = js.native
+  var sender: JQuery
 }
 object SortableUIParams {
   

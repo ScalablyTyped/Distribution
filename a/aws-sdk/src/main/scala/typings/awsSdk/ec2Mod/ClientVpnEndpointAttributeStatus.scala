@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientVpnEndpointAttributeStatus extends StObject {
   
   /**
     * The status code.
     */
-  var Code: js.UndefOr[ClientVpnEndpointAttributeStatusCode] = js.native
+  var Code: js.UndefOr[ClientVpnEndpointAttributeStatusCode] = js.undefined
   
   /**
     * The status message.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object ClientVpnEndpointAttributeStatus {
   

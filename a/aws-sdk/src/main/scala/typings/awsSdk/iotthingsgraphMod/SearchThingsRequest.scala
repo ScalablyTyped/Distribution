@@ -2,31 +2,29 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchThingsRequest extends StObject {
   
   /**
     * The ID of the entity to which the things are associated. The IDs should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:device:DEVICENAME 
     */
-  var entityId: Urn = js.native
+  var entityId: Urn
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The version of the user's namespace. Defaults to the latest version of the user's namespace.
     */
-  var namespaceVersion: js.UndefOr[Version] = js.native
+  var namespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The string that specifies the next page of results. Use this when you're paginating results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object SearchThingsRequest {
   

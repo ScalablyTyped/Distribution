@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableRowPropertiesRequest extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait UpdateTableRowPropertiesRequest extends StObject {
     * short-hand for listing every field. For example to update the minimum row height, set `fields` to `"min_row_height"`. If '"min_row_height"' is included in the field mask but the
     * property is left unset, the minimum row height will default to 0.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The object ID of the table. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The list of zero-based indices specifying which rows to update. If no indices are provided, all rows in the table will be updated. */
-  var rowIndices: js.UndefOr[js.Array[Double]] = js.native
+  var rowIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The table row properties to update. */
-  var tableRowProperties: js.UndefOr[TableRowProperties] = js.native
+  var tableRowProperties: js.UndefOr[TableRowProperties] = js.undefined
 }
 object UpdateTableRowPropertiesRequest {
   

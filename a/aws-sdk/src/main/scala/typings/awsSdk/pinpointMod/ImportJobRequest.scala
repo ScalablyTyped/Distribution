@@ -2,51 +2,49 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportJobRequest extends StObject {
   
   /**
     * Specifies whether to create a segment that contains the endpoints, when the endpoint definitions are imported.
     */
-  var DefineSegment: js.UndefOr[boolean] = js.native
+  var DefineSegment: js.UndefOr[boolean] = js.undefined
   
   /**
     * (Deprecated) Your AWS account ID, which you assigned to an external ID key in an IAM trust policy. Amazon Pinpoint previously used this value to assume an IAM role when importing endpoint definitions, but we removed this requirement. We don't recommend use of external IDs for IAM roles that are assumed by Amazon Pinpoint.
     */
-  var ExternalId: js.UndefOr[string] = js.native
+  var ExternalId: js.UndefOr[string] = js.undefined
   
   /**
     * The format of the files that contain the endpoint definitions to import. Valid values are: CSV, for comma-separated values format; and, JSON, for newline-delimited JSON format. If the Amazon S3 location stores multiple files that use different formats, Amazon Pinpoint imports data only from the files that use the specified format.
     */
-  var Format: typings.awsSdk.pinpointMod.Format = js.native
+  var Format: typings.awsSdk.pinpointMod.Format
   
   /**
     * Specifies whether to register the endpoints with Amazon Pinpoint, when the endpoint definitions are imported.
     */
-  var RegisterEndpoints: js.UndefOr[boolean] = js.native
+  var RegisterEndpoints: js.UndefOr[boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that authorizes Amazon Pinpoint to access the Amazon S3 location to import endpoint definitions from.
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
   
   /**
     * The URL of the Amazon Simple Storage Service (Amazon S3) bucket that contains the endpoint definitions to import. This location can be a folder or a single file. If the location is a folder, Amazon Pinpoint imports endpoint definitions from the files in this location, including any subfolders that the folder contains. The URL should be in the following format: s3://bucket-name/folder-name/file-name. The location can end with the key for an individual object or a prefix that qualifies multiple objects.
     */
-  var S3Url: string = js.native
+  var S3Url: string
   
   /**
     * The identifier for the segment to update or add the imported endpoint definitions to, if the import job is meant to update an existing segment.
     */
-  var SegmentId: js.UndefOr[string] = js.native
+  var SegmentId: js.UndefOr[string] = js.undefined
   
   /**
     * A custom name for the segment that's created by the import job, if the value of the DefineSegment property is true.
     */
-  var SegmentName: js.UndefOr[string] = js.native
+  var SegmentName: js.UndefOr[string] = js.undefined
 }
 object ImportJobRequest {
   

@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelStyle extends StObject {
   
-  var labelStyle: FontWeightNumber = js.native
+  var labelStyle: FontWeightNumber
   
-  var tickLineStyle: LineWidthNumber = js.native
+  var tickLineStyle: LineWidthNumber
 }
 object LabelStyle {
   

@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkpointResponseMod {
   
-  @js.native
   trait CheckpointResponse extends StObject {
     
-    var challenge: CheckpointResponseChallenge = js.native
+    var challenge: CheckpointResponseChallenge
     
-    var error_type: String = js.native
+    var error_type: String
     
-    var message: String = js.native
+    var message: String
     
-    var status: String = js.native
+    var status: String
   }
   object CheckpointResponse {
     
@@ -43,20 +41,19 @@ object checkpointResponseMod {
     }
   }
   
-  @js.native
   trait CheckpointResponseChallenge extends StObject {
     
-    var api_path: String = js.native
+    var api_path: String
     
-    var hide_webview_header: Boolean = js.native
+    var hide_webview_header: Boolean
     
-    var lock: Boolean = js.native
+    var lock: Boolean
     
-    var logout: Boolean = js.native
+    var logout: Boolean
     
-    var native_flow: Boolean = js.native
+    var native_flow: Boolean
     
-    var url: String = js.native
+    var url: String
   }
   object CheckpointResponseChallenge {
     

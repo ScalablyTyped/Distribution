@@ -6,24 +6,22 @@ import typings.reactNavigation.reactNavigationStrings.none
 import typings.reactNavigation.reactNavigationStrings.order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationSwitchRouterConfig extends StObject {
   
-  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.native
+  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.undefined
   
-  var initialRouteName: js.UndefOr[String] = js.native
+  var initialRouteName: js.UndefOr[String] = js.undefined
   
-  var initialRouteParams: js.UndefOr[NavigationParams] = js.native
+  var initialRouteParams: js.UndefOr[NavigationParams] = js.undefined
   
-  var order: js.UndefOr[js.Array[String]] = js.native
+  var order: js.UndefOr[js.Array[String]] = js.undefined
   
-  var paths: js.UndefOr[NavigationPathsConfig] = js.native
+  var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
   
   // defaults to 'none'
-  var resetOnBlur: js.UndefOr[Boolean] = js.native
+  var resetOnBlur: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationSwitchRouterConfig {
   

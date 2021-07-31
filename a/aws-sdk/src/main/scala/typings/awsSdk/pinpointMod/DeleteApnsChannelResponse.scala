@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApnsChannelResponse extends StObject {
   
-  var APNSChannelResponse: typings.awsSdk.pinpointMod.APNSChannelResponse = js.native
+  var APNSChannelResponse: typings.awsSdk.pinpointMod.APNSChannelResponse
 }
 object DeleteApnsChannelResponse {
   

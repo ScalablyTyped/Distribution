@@ -2,15 +2,13 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneNodeMixin extends StObject {
   
-  var locked: Boolean = js.native
+  var locked: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object SceneNodeMixin {
   

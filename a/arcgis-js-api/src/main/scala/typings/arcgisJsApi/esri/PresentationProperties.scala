@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PresentationProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PresentationProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Presentation.html#slides)
     */
-  var slides: js.UndefOr[CollectionProperties[SlideProperties]] = js.native
+  var slides: js.UndefOr[CollectionProperties[SlideProperties]] = js.undefined
 }
 object PresentationProperties {
   

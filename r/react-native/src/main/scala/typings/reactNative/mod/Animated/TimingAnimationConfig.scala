@@ -3,19 +3,19 @@ package typings.reactNative.mod.Animated
 import typings.reactNative.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimingAnimationConfig extends AnimationConfig {
+trait TimingAnimationConfig
+  extends StObject
+     with AnimationConfig {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+  var easing: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   
-  var toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation = js.native
+  var toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation
 }
 object TimingAnimationConfig {
   

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskLogReference extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var location: String = js.native
+  var location: String
 }
 object TaskLogReference {
   

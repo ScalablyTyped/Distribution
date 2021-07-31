@@ -17,29 +17,29 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridRowMod extends Shortcut {
   
   @JSImport("antd/lib/grid/row", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]] = js.native
   
   type Gutter = Double | PartialRecordBreakpointnu
   
-  @js.native
-  trait RowProps extends HTMLAttributes[HTMLDivElement] {
+  trait RowProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var align: js.UndefOr[top | middle | bottom | stretch] = js.native
+    var align: js.UndefOr[top | middle | bottom | stretch] = js.undefined
     
-    var gutter: js.UndefOr[Gutter | (js.Tuple2[Gutter, Gutter])] = js.native
+    var gutter: js.UndefOr[Gutter | (js.Tuple2[Gutter, Gutter])] = js.undefined
     
-    var justify: js.UndefOr[start | end | center | `space-around` | `space-between`] = js.native
+    var justify: js.UndefOr[start | end | center | `space-around` | `space-between`] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object RowProps {
     
@@ -84,8 +84,8 @@ object gridRowMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `gridRowMod.foo` */
-  override def _to: ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]] = default
 }

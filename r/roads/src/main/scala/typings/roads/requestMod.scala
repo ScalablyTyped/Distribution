@@ -3,14 +3,15 @@ package typings.roads
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
   
   @JSImport("roads/types/client/request", JSImport.Default)
   @js.native
-  class default protected () extends Request {
+  class default protected ()
+    extends StObject
+       with Request {
     /**
       * @todo: port should just be part of the host
       *
@@ -40,8 +41,8 @@ object requestMod {
       * @returns {Promise} The promise will resolve with an object with three properties. The response headers, response status and the response body. If the response content-type is "application/json" the body will be an object, otherwise it will resolve to a string
       */
     def request(method: String, path: String): js.Promise[typings.roads.responseMod.default] = js.native
-    def request(method: String, path: String, body: js.UndefOr[scala.Nothing], headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String, headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
+    def request(method: String, path: String, body: Unit, headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
   }
 }

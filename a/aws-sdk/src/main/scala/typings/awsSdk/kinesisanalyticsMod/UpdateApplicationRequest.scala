@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationRequest extends StObject {
   
   /**
     * Name of the Amazon Kinesis Analytics application to update.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * Describes application updates.
     */
-  var ApplicationUpdate: typings.awsSdk.kinesisanalyticsMod.ApplicationUpdate = js.native
+  var ApplicationUpdate: typings.awsSdk.kinesisanalyticsMod.ApplicationUpdate
   
   /**
     * The current application version ID. You can use the DescribeApplication operation to get this value.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
 }
 object UpdateApplicationRequest {
   

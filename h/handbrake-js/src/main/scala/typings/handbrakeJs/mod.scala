@@ -15,10 +15,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("handbrake-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait HandbrakeErrors extends StObject
@@ -27,46 +30,52 @@ object mod {
   object HandbrakeErrors extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[HandbrakeErrors with String] = js.native
+    def apply(value: String): js.UndefOr[HandbrakeErrors & String] = js.native
     
     @js.native
-    sealed trait INVALID_INPUT extends HandbrakeErrors
-    /* "InvalidInput" */ val INVALID_INPUT: typings.handbrakeJs.mod.HandbrakeErrors.INVALID_INPUT with String = js.native
+    sealed trait INVALID_INPUT
+      extends StObject
+         with HandbrakeErrors
+    /* "InvalidInput" */ val INVALID_INPUT: typings.handbrakeJs.mod.HandbrakeErrors.INVALID_INPUT & String = js.native
     
     @js.native
-    sealed trait INVALID_PRESET extends HandbrakeErrors
-    /* "InvalidPreset" */ val INVALID_PRESET: typings.handbrakeJs.mod.HandbrakeErrors.INVALID_PRESET with String = js.native
+    sealed trait INVALID_PRESET
+      extends StObject
+         with HandbrakeErrors
+    /* "InvalidPreset" */ val INVALID_PRESET: typings.handbrakeJs.mod.HandbrakeErrors.INVALID_PRESET & String = js.native
     
     @js.native
-    sealed trait NOT_FOUND extends HandbrakeErrors
-    /* "HandbrakeCLINotFound" */ val NOT_FOUND: typings.handbrakeJs.mod.HandbrakeErrors.NOT_FOUND with String = js.native
+    sealed trait NOT_FOUND
+      extends StObject
+         with HandbrakeErrors
+    /* "HandbrakeCLINotFound" */ val NOT_FOUND: typings.handbrakeJs.mod.HandbrakeErrors.NOT_FOUND & String = js.native
     
     @js.native
-    sealed trait OTHER extends HandbrakeErrors
-    /* "Other" */ val OTHER: typings.handbrakeJs.mod.HandbrakeErrors.OTHER with String = js.native
+    sealed trait OTHER
+      extends StObject
+         with HandbrakeErrors
+    /* "Other" */ val OTHER: typings.handbrakeJs.mod.HandbrakeErrors.OTHER & String = js.native
     
     @js.native
-    sealed trait VALIDATION extends HandbrakeErrors
-    /* "ValidationError" */ val VALIDATION: typings.handbrakeJs.mod.HandbrakeErrors.VALIDATION with String = js.native
+    sealed trait VALIDATION
+      extends StObject
+         with HandbrakeErrors
+    /* "ValidationError" */ val VALIDATION: typings.handbrakeJs.mod.HandbrakeErrors.VALIDATION & String = js.native
   }
   
-  @JSImport("handbrake-js", "exec")
-  @js.native
-  def exec(options: HandbrakeOptions): Unit = js.native
-  @JSImport("handbrake-js", "exec")
-  @js.native
+  @scala.inline
+  def exec(options: HandbrakeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def exec(
     options: HandbrakeOptions,
     cb: js.Function3[/* err */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("handbrake-js", "run")
-  @js.native
-  def run(options: HandbrakeOptions): js.Promise[Stderr] = js.native
+  @scala.inline
+  def run(options: HandbrakeOptions): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
   
-  @JSImport("handbrake-js", "spawn")
-  @js.native
-  def spawn(options: HandbrakeOptions): Handbrake = js.native
+  @scala.inline
+  def spawn(options: HandbrakeOptions): Handbrake = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(options.asInstanceOf[js.Any]).asInstanceOf[Handbrake]
   
   @js.native
   trait Handbrake extends EventEmitter {
@@ -97,360 +106,360 @@ object mod {
     val output: String = js.native
   }
   
-  @js.native
   trait HandbrakeOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var A: js.UndefOr[String] = js.native
+    var A: js.UndefOr[String] = js.undefined
     
-    var B: js.UndefOr[String] = js.native
+    var B: js.UndefOr[String] = js.undefined
     
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
-    var D: js.UndefOr[Double] = js.native
+    var D: js.UndefOr[Double] = js.undefined
     
-    var E: js.UndefOr[String] = js.native
+    var E: js.UndefOr[String] = js.undefined
     
-    var F: js.UndefOr[Double] = js.native
+    var F: js.UndefOr[Double] = js.undefined
     
-    var I: js.UndefOr[Boolean] = js.native
+    var I: js.UndefOr[Boolean] = js.undefined
     
-    var M: js.UndefOr[String] = js.native
+    var M: js.UndefOr[String] = js.undefined
     
-    var N: js.UndefOr[String] = js.native
+    var N: js.UndefOr[String] = js.undefined
     
-    var O: js.UndefOr[Boolean] = js.native
+    var O: js.UndefOr[Boolean] = js.undefined
     
-    var P: js.UndefOr[Boolean] = js.native
+    var P: js.UndefOr[Boolean] = js.undefined
     
-    var Q: js.UndefOr[String] = js.native
+    var Q: js.UndefOr[String] = js.undefined
     
-    var R: js.UndefOr[String] = js.native
+    var R: js.UndefOr[String] = js.undefined
     
-    var T: js.UndefOr[Boolean] = js.native
+    var T: js.UndefOr[Boolean] = js.undefined
     
-    var X: js.UndefOr[Double] = js.native
+    var X: js.UndefOr[Double] = js.undefined
     
-    var Y: js.UndefOr[Double] = js.native
+    var Y: js.UndefOr[Double] = js.undefined
     
-    var Z: js.UndefOr[String] = js.native
+    var Z: js.UndefOr[String] = js.undefined
     
-    var a: js.UndefOr[String] = js.native
+    var a: js.UndefOr[String] = js.undefined
     
-    var ab: js.UndefOr[String] = js.native
+    var ab: js.UndefOr[String] = js.undefined
     
     // Alias for 'aq'
-    var ac: js.UndefOr[String] = js.native
+    var ac: js.UndefOr[String] = js.undefined
     
-    var adither: js.UndefOr[String] = js.native
+    var adither: js.UndefOr[String] = js.undefined
     
     // Alias for 'audio'
-    var aencoder: js.UndefOr[String] = js.native
+    var aencoder: js.UndefOr[String] = js.undefined
     
-    var `all-audio`: js.UndefOr[Boolean] = js.native
+    var `all-audio`: js.UndefOr[Boolean] = js.undefined
     
-    var `all-subtitles`: js.UndefOr[Boolean] = js.native
+    var `all-subtitles`: js.UndefOr[Boolean] = js.undefined
     
-    var aname: js.UndefOr[String] = js.native
+    var aname: js.UndefOr[String] = js.undefined
     
     // Alias for 'chapters'
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     // Alias for 'ab'
-    var aq: js.UndefOr[String] = js.native
+    var aq: js.UndefOr[String] = js.undefined
     
-    var arate: js.UndefOr[String] = js.native
+    var arate: js.UndefOr[String] = js.undefined
     
-    var audio: js.UndefOr[String] = js.native
+    var audio: js.UndefOr[String] = js.undefined
     
     // Alias for 'aencoder'
-    var `audio-copy-mask`: js.UndefOr[String] = js.native
+    var `audio-copy-mask`: js.UndefOr[String] = js.undefined
     
-    var `audio-fallback`: js.UndefOr[String] = js.native
+    var `audio-fallback`: js.UndefOr[String] = js.undefined
     
     // Audio
-    var `audio-lang-list`: js.UndefOr[String] = js.native
+    var `audio-lang-list`: js.UndefOr[String] = js.undefined
     
-    var `auto-anamorphic`: js.UndefOr[Boolean] = js.native
+    var `auto-anamorphic`: js.UndefOr[Boolean] = js.undefined
     
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
-    var cfr: js.UndefOr[Boolean] = js.native
+    var cfr: js.UndefOr[Boolean] = js.undefined
     
-    var chapters: js.UndefOr[String] = js.native
+    var chapters: js.UndefOr[String] = js.undefined
     
-    var `color-matrix`: js.UndefOr[String] = js.native
+    var `color-matrix`: js.UndefOr[String] = js.undefined
     
     // Alias for 'color-matrix'
     // Filters
-    var `comb-detect`: js.UndefOr[String] = js.native
+    var `comb-detect`: js.UndefOr[String] = js.undefined
     
     // Alias for 'height'
-    var crop: js.UndefOr[String] = js.native
+    var crop: js.UndefOr[String] = js.undefined
     
-    var `custom-anamorphic`: js.UndefOr[Boolean] = js.native
+    var `custom-anamorphic`: js.UndefOr[Boolean] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var deblock: js.UndefOr[String] = js.native
+    var deblock: js.UndefOr[String] = js.undefined
     
-    var decomb: js.UndefOr[String] = js.native
+    var decomb: js.UndefOr[String] = js.undefined
     
-    var deinterlace: js.UndefOr[String] = js.native
+    var deinterlace: js.UndefOr[String] = js.undefined
     
-    var denoise: js.UndefOr[String] = js.native
+    var denoise: js.UndefOr[String] = js.undefined
     
-    var detelecine: js.UndefOr[String] = js.native
+    var detelecine: js.UndefOr[String] = js.undefined
     
-    var `display-width`: js.UndefOr[Double] = js.native
+    var `display-width`: js.UndefOr[Double] = js.undefined
     
     // Alias for 'arate'
-    var drc: js.UndefOr[Double] = js.native
+    var drc: js.UndefOr[Double] = js.undefined
     
-    var e: js.UndefOr[String] = js.native
+    var e: js.UndefOr[String] = js.undefined
     
     // Alias for 'use-opencl'
     // Video
-    var encoder: js.UndefOr[String] = js.native
+    var encoder: js.UndefOr[String] = js.undefined
     
-    var `encoder-level`: js.UndefOr[String] = js.native
+    var `encoder-level`: js.UndefOr[String] = js.undefined
     
-    var `encoder-level-list`: js.UndefOr[String] = js.native
+    var `encoder-level-list`: js.UndefOr[String] = js.undefined
     
     // Alias for 'encoder'
-    var `encoder-preset`: js.UndefOr[String] = js.native
+    var `encoder-preset`: js.UndefOr[String] = js.undefined
     
-    var `encoder-preset-list`: js.UndefOr[String] = js.native
+    var `encoder-preset-list`: js.UndefOr[String] = js.undefined
     
     // Alias for 'encopts'
-    var `encoder-profile`: js.UndefOr[String] = js.native
+    var `encoder-profile`: js.UndefOr[String] = js.undefined
     
-    var `encoder-profile-list`: js.UndefOr[String] = js.native
+    var `encoder-profile-list`: js.UndefOr[String] = js.undefined
     
-    var `encoder-tune`: js.UndefOr[String] = js.native
+    var `encoder-tune`: js.UndefOr[String] = js.undefined
     
-    var `encoder-tune-list`: js.UndefOr[String] = js.native
+    var `encoder-tune-list`: js.UndefOr[String] = js.undefined
     
-    var encopts: js.UndefOr[String] = js.native
+    var encopts: js.UndefOr[String] = js.undefined
     
-    var f: js.UndefOr[String] = js.native
+    var f: js.UndefOr[String] = js.undefined
     
-    var `first-audio`: js.UndefOr[Boolean] = js.native
+    var `first-audio`: js.UndefOr[Boolean] = js.undefined
     
-    var `first-subtitles`: js.UndefOr[Boolean] = js.native
+    var `first-subtitles`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'output'
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var g: js.UndefOr[Boolean] = js.native
+    var g: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'drc'
-    var gain: js.UndefOr[Double] = js.native
+    var gain: js.UndefOr[Double] = js.undefined
     
-    var grayscale: js.UndefOr[Boolean] = js.native
+    var grayscale: js.UndefOr[Boolean] = js.undefined
     
-    var h: js.UndefOr[Boolean] = js.native
+    var h: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'width'
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     // General
-    var help: js.UndefOr[Boolean] = js.native
+    var help: js.UndefOr[Boolean] = js.undefined
     
-    var hqdn3d: js.UndefOr[String] = js.native
+    var hqdn3d: js.UndefOr[String] = js.undefined
     
-    var i: js.UndefOr[String] = js.native
+    var i: js.UndefOr[String] = js.undefined
     
     // Source
-    var input: js.UndefOr[String] = js.native
+    var input: js.UndefOr[String] = js.undefined
     
     // Alias for 'optimize'
-    var `ipod-atom`: js.UndefOr[Boolean] = js.native
+    var `ipod-atom`: js.UndefOr[Boolean] = js.undefined
     
-    var `itu-par`: js.UndefOr[Boolean] = js.native
+    var `itu-par`: js.UndefOr[Boolean] = js.undefined
     
-    var `keep-display-aspect`: js.UndefOr[Boolean] = js.native
+    var `keep-display-aspect`: js.UndefOr[Boolean] = js.undefined
     
-    var l: js.UndefOr[Double] = js.native
+    var l: js.UndefOr[Double] = js.undefined
     
-    var `loose-anamorphic`: js.UndefOr[Boolean] = js.native
+    var `loose-anamorphic`: js.UndefOr[Boolean] = js.undefined
     
-    var `loose-crop`: js.UndefOr[Boolean] = js.native
+    var `loose-crop`: js.UndefOr[Boolean] = js.undefined
     
-    var m: js.UndefOr[Boolean] = js.native
+    var m: js.UndefOr[Boolean] = js.undefined
     
-    var `main-feature`: js.UndefOr[Boolean] = js.native
+    var `main-feature`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'format'
-    var markers: js.UndefOr[Boolean] = js.native
+    var markers: js.UndefOr[Boolean] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     // Alias for 'maxHeight'
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     // Alias for 'title'
-    var `min-duration`: js.UndefOr[Double] = js.native
+    var `min-duration`: js.UndefOr[Double] = js.undefined
     
     // Alias for 'ac'
-    var mixdown: js.UndefOr[String] = js.native
+    var mixdown: js.UndefOr[String] = js.undefined
     
-    var modulus: js.UndefOr[Double] = js.native
+    var modulus: js.UndefOr[Double] = js.undefined
     
     // Alias for 'native-language'
-    var `native-dub`: js.UndefOr[Boolean] = js.native
+    var `native-dub`: js.UndefOr[Boolean] = js.undefined
     
-    var `native-language`: js.UndefOr[String] = js.native
+    var `native-language`: js.UndefOr[String] = js.undefined
     
-    var nlmeans: js.UndefOr[String] = js.native
+    var nlmeans: js.UndefOr[String] = js.undefined
     
-    var `nlmeans-tune`: js.UndefOr[String] = js.native
+    var `nlmeans-tune`: js.UndefOr[String] = js.undefined
     
-    var `no-comb-detect`: js.UndefOr[Boolean] = js.native
+    var `no-comb-detect`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-deblock`: js.UndefOr[Boolean] = js.native
+    var `no-deblock`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-decomb`: js.UndefOr[Boolean] = js.native
+    var `no-decomb`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'deinterlace'
-    var `no-deinterlace`: js.UndefOr[Boolean] = js.native
+    var `no-deinterlace`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-detelecine`: js.UndefOr[Boolean] = js.native
+    var `no-detelecine`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-dvdnav`: js.UndefOr[Boolean] = js.native
+    var `no-dvdnav`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'grayscale'
-    var `no-grayscale`: js.UndefOr[Boolean] = js.native
+    var `no-grayscale`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-hqdn3d`: js.UndefOr[Boolean] = js.native
+    var `no-hqdn3d`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'ipod-atom'
-    var `no-ipod-atom`: js.UndefOr[Boolean] = js.native
+    var `no-ipod-atom`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-loose-crop`: js.UndefOr[Boolean] = js.native
+    var `no-loose-crop`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'markers'
-    var `no-markers`: js.UndefOr[Boolean] = js.native
+    var `no-markers`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-nlmeans`: js.UndefOr[Boolean] = js.native
+    var `no-nlmeans`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-opencl`: js.UndefOr[Boolean] = js.native
+    var `no-opencl`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'turbo'
-    var `no-turbo`: js.UndefOr[Boolean] = js.native
+    var `no-turbo`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-two-pass`: js.UndefOr[Boolean] = js.native
+    var `no-two-pass`: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'maxWidth'
-    var `non-anamorphic`: js.UndefOr[Boolean] = js.native
+    var `non-anamorphic`: js.UndefOr[Boolean] = js.undefined
     
-    var `normalize-mix`: js.UndefOr[String] = js.native
+    var `normalize-mix`: js.UndefOr[String] = js.undefined
     
-    var o: js.UndefOr[String] = js.native
+    var o: js.UndefOr[String] = js.undefined
     
-    var optimize: js.UndefOr[Boolean] = js.native
+    var optimize: js.UndefOr[Boolean] = js.undefined
     
     // Destination
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
-    var pad: js.UndefOr[String] = js.native
+    var pad: js.UndefOr[String] = js.undefined
     
-    var pfr: js.UndefOr[Boolean] = js.native
+    var pfr: js.UndefOr[Boolean] = js.undefined
     
-    var `pixel-aspect`: js.UndefOr[String] = js.native
+    var `pixel-aspect`: js.UndefOr[String] = js.undefined
     
     // Alias for 'verbose'
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
     
     // Alias for 'preset-list'
-    var `preset-import-file`: js.UndefOr[String] = js.native
+    var `preset-import-file`: js.UndefOr[String] = js.undefined
     
     // Alias for 'preset'
-    var `preset-list`: js.UndefOr[Boolean] = js.native
+    var `preset-list`: js.UndefOr[Boolean] = js.undefined
     
-    var previews: js.UndefOr[String] = js.native
+    var previews: js.UndefOr[String] = js.undefined
     
-    var q: js.UndefOr[Double] = js.native
+    var q: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
-    var rotate: js.UndefOr[String] = js.native
+    var rotate: js.UndefOr[String] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var scan: js.UndefOr[Boolean] = js.native
+    var scan: js.UndefOr[Boolean] = js.undefined
     
-    var `srt-burn`: js.UndefOr[Double] = js.native
+    var `srt-burn`: js.UndefOr[Double] = js.undefined
     
-    var `srt-codeset`: js.UndefOr[String] = js.native
+    var `srt-codeset`: js.UndefOr[String] = js.undefined
     
-    var `srt-default`: js.UndefOr[Double] = js.native
+    var `srt-default`: js.UndefOr[Double] = js.undefined
     
-    var `srt-file`: js.UndefOr[String] = js.native
+    var `srt-file`: js.UndefOr[String] = js.undefined
     
-    var `srt-lang`: js.UndefOr[String] = js.native
+    var `srt-lang`: js.UndefOr[String] = js.undefined
     
-    var `srt-offset`: js.UndefOr[String] = js.native
+    var `srt-offset`: js.UndefOr[String] = js.undefined
     
-    var `start-at`: js.UndefOr[String] = js.native
+    var `start-at`: js.UndefOr[String] = js.undefined
     
-    var `start-at-preview`: js.UndefOr[String] = js.native
+    var `start-at-preview`: js.UndefOr[String] = js.undefined
     
-    var `stop-at`: js.UndefOr[String] = js.native
+    var `stop-at`: js.UndefOr[String] = js.undefined
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
     // Alias for 'subtitle-forced'
-    var `subtitle-burned`: js.UndefOr[Double] = js.native
+    var `subtitle-burned`: js.UndefOr[Double] = js.undefined
     
-    var `subtitle-default`: js.UndefOr[Double] = js.native
+    var `subtitle-default`: js.UndefOr[Double] = js.undefined
     
     // Alias for 'subtitle'
-    var `subtitle-forced`: js.UndefOr[Double] = js.native
+    var `subtitle-forced`: js.UndefOr[Double] = js.undefined
     
     // Subtitle
-    var `subtitle-lang-list`: js.UndefOr[String] = js.native
+    var `subtitle-lang-list`: js.UndefOr[String] = js.undefined
     
-    var t: js.UndefOr[Double] = js.native
+    var t: js.UndefOr[Double] = js.undefined
     
     // Alias for 'input'
-    var title: js.UndefOr[Double] = js.native
+    var title: js.UndefOr[Double] = js.undefined
     
-    var turbo: js.UndefOr[Boolean] = js.native
+    var turbo: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'vb'
-    var `two-pass`: js.UndefOr[Boolean] = js.native
+    var `two-pass`: js.UndefOr[Boolean] = js.undefined
     
-    var `use-opencl`: js.UndefOr[Boolean] = js.native
+    var `use-opencl`: js.UndefOr[Boolean] = js.undefined
     
-    var v: js.UndefOr[Boolean] = js.native
+    var v: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'quality'
-    var vb: js.UndefOr[Double] = js.native
+    var vb: js.UndefOr[Double] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'help'
-    var version: js.UndefOr[Boolean] = js.native
+    var version: js.UndefOr[Boolean] = js.undefined
     
     // Alias for 'rate'
-    var vfr: js.UndefOr[Boolean] = js.native
+    var vfr: js.UndefOr[Boolean] = js.undefined
     
-    var w: js.UndefOr[Double] = js.native
+    var w: js.UndefOr[Double] = js.undefined
     
     // Alias for 'aname'
     // Picture
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
-    var z: js.UndefOr[Boolean] = js.native
+    var z: js.UndefOr[Boolean] = js.undefined
   }
   object HandbrakeOptions {
     
@@ -1299,22 +1308,21 @@ object mod {
     }
   }
   
-  @js.native
   trait HandbrakeProgress extends StObject {
     
-    val avgFps: Double = js.native
+    val avgFps: Double
     
-    val eta: String = js.native
+    val eta: String
     
-    val fps: Double = js.native
+    val fps: Double
     
-    val percentComplete: Double = js.native
+    val percentComplete: Double
     
-    val task: Encoding | Muxing = js.native
+    val task: Encoding | Muxing
     
-    val taskCount: Double = js.native
+    val taskCount: Double
     
-    val tasknumber: Double = js.native
+    val tasknumber: Double
   }
   object HandbrakeProgress {
     

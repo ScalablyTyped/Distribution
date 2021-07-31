@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestCancelExternalWorkflowExecutionDecisionAttributes extends StObject {
   
   /**
     * The data attached to the event that can be used by the decider in subsequent workflow tasks.
     */
-  var control: js.UndefOr[Data] = js.native
+  var control: js.UndefOr[Data] = js.undefined
   
   /**
     * The runId of the external workflow execution to cancel.
     */
-  var runId: js.UndefOr[WorkflowRunIdOptional] = js.native
+  var runId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
   
   /**
     *  The workflowId of the external workflow execution to cancel.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object RequestCancelExternalWorkflowExecutionDecisionAttributes {
   

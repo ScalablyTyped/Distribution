@@ -10,9 +10,9 @@ This library allows you to easily display text with custom fonts.
 | ------------------ | :-------------: |
 | Full name          | fitfont |
 | Keywords           | fitbitdev |
-| # releases         | 14 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 839 |
+| # downloads        | 994 |
 | # stars            | 0 |
 
 ## Links

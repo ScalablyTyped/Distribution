@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarMod {
@@ -35,20 +34,19 @@ object avatarMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait AvatarOverrides[T] extends StObject {
     
     var Avatar: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Initials: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object AvatarOverrides {
     
@@ -59,7 +57,7 @@ object avatarMod {
     }
     
     @scala.inline
-    implicit class AvatarOverridesMutableBuilder[Self <: AvatarOverrides[_], T] (val x: Self with AvatarOverrides[T]) extends AnyVal {
+    implicit class AvatarOverridesMutableBuilder[Self <: AvatarOverrides[?], T] (val x: Self & AvatarOverrides[T]) extends AnyVal {
       
       @scala.inline
       def setAvatar(
@@ -87,16 +85,15 @@ object avatarMod {
     }
   }
   
-  @js.native
   trait AvatarProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var overrides: js.UndefOr[AvatarOverrides[StyleProps]] = js.native
+    var overrides: js.UndefOr[AvatarOverrides[StyleProps]] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object AvatarProps {
     
@@ -132,10 +129,9 @@ object avatarMod {
     }
   }
   
-  @js.native
   trait AvatarState extends StObject {
     
-    var noImageAvailable: Boolean = js.native
+    var noImageAvailable: Boolean
   }
   object AvatarState {
     
@@ -153,14 +149,13 @@ object avatarMod {
     }
   }
   
-  @js.native
   trait StyleProps extends StObject {
     
     @JSName("$didImageFailToLoad")
-    var $didImageFailToLoad: Boolean = js.native
+    var $didImageFailToLoad: Boolean
     
     @JSName("$size")
-    var $size: js.UndefOr[String] = js.native
+    var $size: js.UndefOr[String] = js.undefined
   }
   object StyleProps {
     

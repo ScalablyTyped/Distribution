@@ -2,45 +2,43 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FastCsvParserOptionsArgs extends StObject {
   
-  var comment: String = js.native
+  var comment: String
   
-  var delimiter: String = js.native
+  var delimiter: String
   
-  var discardUnmappedColumns: Boolean = js.native
+  var discardUnmappedColumns: Boolean
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var escape: String = js.native
+  var escape: String
   
-  var headers: Boolean | HeaderTransformFunction | HeaderArray = js.native
+  var headers: Boolean | HeaderTransformFunction | HeaderArray
   
-  var ignoreEmpty: Boolean = js.native
+  var ignoreEmpty: Boolean
   
-  var ltrim: Boolean = js.native
+  var ltrim: Boolean
   
-  var maxRows: Double = js.native
+  var maxRows: Double
   
-  var objectMode: Boolean = js.native
+  var objectMode: Boolean
   
-  var quote: String | Null = js.native
+  var quote: String | Null
   
-  var renameHeaders: Boolean = js.native
+  var renameHeaders: Boolean
   
-  var rtrim: Boolean = js.native
+  var rtrim: Boolean
   
-  var skipLines: Double = js.native
+  var skipLines: Double
   
-  var skipRows: Double = js.native
+  var skipRows: Double
   
-  var strictColumnHandling: Boolean = js.native
+  var strictColumnHandling: Boolean
   
-  var trim: Boolean = js.native
+  var trim: Boolean
 }
 object FastCsvParserOptionsArgs {
   
@@ -63,7 +61,7 @@ object FastCsvParserOptionsArgs {
     strictColumnHandling: Boolean,
     trim: Boolean
   ): FastCsvParserOptionsArgs = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], discardUnmappedColumns = discardUnmappedColumns.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ignoreEmpty = ignoreEmpty.asInstanceOf[js.Any], ltrim = ltrim.asInstanceOf[js.Any], maxRows = maxRows.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], renameHeaders = renameHeaders.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], skipLines = skipLines.asInstanceOf[js.Any], skipRows = skipRows.asInstanceOf[js.Any], strictColumnHandling = strictColumnHandling.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], discardUnmappedColumns = discardUnmappedColumns.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ignoreEmpty = ignoreEmpty.asInstanceOf[js.Any], ltrim = ltrim.asInstanceOf[js.Any], maxRows = maxRows.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], renameHeaders = renameHeaders.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], skipLines = skipLines.asInstanceOf[js.Any], skipRows = skipRows.asInstanceOf[js.Any], strictColumnHandling = strictColumnHandling.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any], quote = null)
     __obj.asInstanceOf[FastCsvParserOptionsArgs]
   }
   

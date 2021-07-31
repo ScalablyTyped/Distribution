@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPercentilesResponse extends StObject {
   
   /**
     * The percentile values of the aggregated fields.
     */
-  var percentiles: js.UndefOr[Percentiles] = js.native
+  var percentiles: js.UndefOr[Percentiles] = js.undefined
 }
 object GetPercentilesResponse {
   

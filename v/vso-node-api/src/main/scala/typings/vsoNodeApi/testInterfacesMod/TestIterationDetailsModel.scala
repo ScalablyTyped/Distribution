@@ -3,33 +3,31 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestIterationDetailsModel extends StObject {
   
-  var actionResults: js.Array[TestActionResultModel] = js.native
+  var actionResults: js.Array[TestActionResultModel]
   
-  var attachments: js.Array[TestCaseResultAttachmentModel] = js.native
+  var attachments: js.Array[TestCaseResultAttachmentModel]
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: Date = js.native
+  var completedDate: Date
   
-  var durationInMs: Double = js.native
+  var durationInMs: Double
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var parameters: js.Array[TestResultParameterModel] = js.native
+  var parameters: js.Array[TestResultParameterModel]
   
-  var startedDate: Date = js.native
+  var startedDate: Date
   
-  var url: String = js.native
+  var url: String
 }
 object TestIterationDetailsModel {
   

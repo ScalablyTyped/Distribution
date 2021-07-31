@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartPane extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ChartPaneBorder] = js.native
+  var border: js.UndefOr[ChartPaneBorder] = js.undefined
   
-  var clip: js.UndefOr[Boolean] = js.native
+  var clip: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartPaneMargin] = js.native
+  var margin: js.UndefOr[Double | ChartPaneMargin] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[ChartPanePadding] = js.native
+  var padding: js.UndefOr[ChartPanePadding] = js.undefined
   
-  var title: js.UndefOr[String | ChartPaneTitle] = js.native
+  var title: js.UndefOr[String | ChartPaneTitle] = js.undefined
 }
 object ChartPane {
   

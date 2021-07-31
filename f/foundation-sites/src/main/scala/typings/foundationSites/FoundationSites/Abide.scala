@@ -3,38 +3,36 @@ package typings.foundationSites.FoundationSites
 import typings.foundationSites.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/abide.html#javascript-reference
-@js.native
 trait Abide extends StObject {
   
-  def addErrorClasses(element: JQuery): Unit = js.native
+  def addErrorClasses(element: JQuery): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def findFormError(element: JQuery): JQuery = js.native
+  def findFormError(element: JQuery): JQuery
   
-  def findLabel(element: JQuery): Boolean = js.native
+  def findLabel(element: JQuery): Boolean
   
-  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean = js.native
+  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean
   
-  def removeErrorClasses(element: JQuery): Unit = js.native
+  def removeErrorClasses(element: JQuery): Unit
   
-  def removeRadioErrorClasses(groupName: String): Unit = js.native
+  def removeRadioErrorClasses(groupName: String): Unit
   
-  def requiredChecked(element: JQuery): Boolean = js.native
+  def requiredChecked(element: JQuery): Boolean
   
-  def resetForm(): Unit = js.native
+  def resetForm(): Unit
   
-  def validateForm(): Boolean = js.native
+  def validateForm(): Boolean
   
-  def validateInput(element: JQuery): Boolean = js.native
+  def validateInput(element: JQuery): Boolean
   
-  def validateRadio(groupName: String): Boolean = js.native
+  def validateRadio(groupName: String): Boolean
   
-  def validateText(element: JQuery, pattern: String): Boolean = js.native
+  def validateText(element: JQuery, pattern: String): Boolean
 }
 object Abide {
   

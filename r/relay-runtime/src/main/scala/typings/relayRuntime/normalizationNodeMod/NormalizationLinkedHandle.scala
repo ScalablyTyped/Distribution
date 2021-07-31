@@ -2,26 +2,26 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationLinkedHandle extends NormalizationHandle {
+trait NormalizationLinkedHandle
+  extends StObject
+     with NormalizationHandle {
   
   // 'LinkedHandle';
-  val alias: js.UndefOr[String | Null] = js.native
+  val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.native
+  val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.undefined
   
-  val filters: js.UndefOr[js.Array[String] | Null] = js.native
+  val filters: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  val handle: String = js.native
+  val handle: String
   
-  val key: String = js.native
+  val key: String
   
-  val kind: String = js.native
+  val kind: String
   
-  val name: String = js.native
+  val name: String
 }
 object NormalizationLinkedHandle {
   

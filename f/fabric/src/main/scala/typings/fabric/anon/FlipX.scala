@@ -2,29 +2,27 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlipX extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var flipX: Boolean = js.native
+  var flipX: Boolean
   
-  var flipY: Boolean = js.native
+  var flipY: Boolean
   
-  var left: Double = js.native
+  var left: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var skewX: Double = js.native
+  var skewX: Double
   
-  var skewY: Double = js.native
+  var skewY: Double
   
-  var top: Double = js.native
+  var top: Double
 }
 object FlipX {
   

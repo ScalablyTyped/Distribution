@@ -2,27 +2,26 @@ package typings.extsprintf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("extsprintf", "fprintf")
+  @JSImport("extsprintf", JSImport.Namespace)
   @js.native
-  def fprintf(stream: Stream, format: String, args: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("extsprintf", "printf")
-  @js.native
-  def printf(format: String, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def fprintf(stream: Stream, format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fprintf")(stream.asInstanceOf[js.Any], format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("extsprintf", "sprintf")
-  @js.native
-  def sprintf(format: String, args: js.Any*): String = js.native
+  @scala.inline
+  def printf(format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("printf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def sprintf(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Stream extends StObject {
     
-    def write(str: String): Unit = js.native
+    def write(str: String): Unit
   }
   object Stream {
     

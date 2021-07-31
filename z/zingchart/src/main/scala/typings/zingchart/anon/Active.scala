@@ -2,93 +2,91 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: js.UndefOr[`0`] = js.native
+  var active: js.UndefOr[`0`] = js.undefined
   
   /**
     * Forces the plotarea to consider the preview object positioning and prevent overlapping with it. true | false | 1 | 0
     */
-  var `adjust-layout`: js.UndefOr[Boolean] = js.native
+  var `adjust-layout`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency level of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 be
     * ing completely opaque. Note that values require the leading 0 before the decimal point. 0.3 | 0.4 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#666
     * 699", #33ccff"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "purple" | "#33ccff" | "rgb(100,
     *  15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. "none" | "transparent" | "purple" | "#33ccff" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
-  var handle: js.UndefOr[Borderright] = js.native
+  var handle: js.UndefOr[Borderright] = js.undefined
   
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
-  var label: js.UndefOr[Borderradiustopleft] = js.native
+  var label: js.UndefOr[Borderradiustopleft] = js.undefined
   
   /**
     * Sets whether the chart is updated when the preview active area is being moved. Default is false for classic theme and true for lig
     * ht/dark themes. The graph will update only when a the mouse is released. true | false | 1 | 0
     */
-  var live: js.UndefOr[Boolean] = js.native
+  var live: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's margins. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
-  var mask: js.UndefOr[`0`] = js.native
+  var mask: js.UndefOr[`0`] = js.undefined
   
   /**
     * Sets the minimum width of preview's active area. 5 | 10 | ...
     */
-  var `min-distance`: js.UndefOr[Double] = js.native
+  var `min-distance`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the object's position relative to its container. Similar results can be obtained by setting marginand margin-... attributes.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the zoom level is preserved when a chart is altered or reloaded. true | false | 1 | 0
     */
-  var `preserve-zoom`: js.UndefOr[Boolean] = js.native
+  var `preserve-zoom`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the "x" position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the "y" position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
 }
 object Active {
   

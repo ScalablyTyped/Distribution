@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipeAction extends StObject {
   
   /**
     * The name of a valid DataBrew transformation to be performed on the data.
     */
-  var Operation: typings.awsSdk.databrewMod.Operation = js.native
+  var Operation: typings.awsSdk.databrewMod.Operation
   
   /**
     * Contextual parameters for the transformation.
     */
-  var Parameters: js.UndefOr[ParameterMap] = js.native
+  var Parameters: js.UndefOr[ParameterMap] = js.undefined
 }
 object RecipeAction {
   

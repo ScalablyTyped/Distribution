@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeveloperMetadataRequest extends StObject {
   
   /** The developer metadata to create. */
-  var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
+  var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
 }
 object CreateDeveloperMetadataRequest {
   

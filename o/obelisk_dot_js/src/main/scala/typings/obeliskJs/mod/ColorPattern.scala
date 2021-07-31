@@ -2,7 +2,6 @@ package typings.obeliskJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "ColorPattern")
@@ -69,7 +68,6 @@ object ColorPattern {
   @scala.inline
   def YELLOW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YELLOW")(x.asInstanceOf[js.Any])
   
-  @JSImport("obelisk.js", "ColorPattern.getRandomComfortableColor")
-  @js.native
-  def getRandomComfortableColor(): Double = js.native
+  @scala.inline
+  def getRandomComfortableColor(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomComfortableColor")().asInstanceOf[Double]
 }

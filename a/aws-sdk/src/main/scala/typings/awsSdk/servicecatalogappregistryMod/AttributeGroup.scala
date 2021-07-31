@@ -2,46 +2,44 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeGroup extends StObject {
   
   /**
     * The Amazon resource name (ARN) that specifies the attribute group across services.
     */
-  var arn: js.UndefOr[AttributeGroupArn] = js.native
+  var arn: js.UndefOr[AttributeGroupArn] = js.undefined
   
   /**
     * The ISO-8601 formatted timestamp of the moment the attribute group was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the attribute group that the user provides.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The globally unique attribute group identifier of the attribute group.
     */
-  var id: js.UndefOr[AttributeGroupId] = js.native
+  var id: js.UndefOr[AttributeGroupId] = js.undefined
   
   /**
     * The ISO-8601 formatted timestamp of the moment the attribute group was last updated. This time is the same as the creationTime for a newly created attribute group.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the attribute group.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * Key-value pairs you can use to associate with the attribute group.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object AttributeGroup {
   

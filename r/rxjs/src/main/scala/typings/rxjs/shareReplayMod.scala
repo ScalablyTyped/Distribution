@@ -4,53 +4,42 @@ import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shareReplayMod {
   
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
+  @JSImport("rxjs/internal/operators/shareReplay", JSImport.Namespace)
   @js.native
-  def shareReplay[T](): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: Double, windowTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
-  @js.native
-  def shareReplay[T](config: ShareReplayConfig): MonoTypeOperatorFunction[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def shareReplay[T](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")().asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Double, windowTime: Unit, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Unit, windowTime: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Unit, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](bufferSize: Unit, windowTime: Unit, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def shareReplay[T](config: ShareReplayConfig): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(config.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  
   trait ShareReplayConfig extends StObject {
     
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
-    var refCount: Boolean = js.native
+    var refCount: Boolean
     
-    var scheduler: js.UndefOr[SchedulerLike] = js.native
+    var scheduler: js.UndefOr[SchedulerLike] = js.undefined
     
-    var windowTime: js.UndefOr[Double] = js.native
+    var windowTime: js.UndefOr[Double] = js.undefined
   }
   object ShareReplayConfig {
     

@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobSaveDisposition extends StObject {
   
-  var `save-disposition`: js.UndefOr[SaveDisposition] = js.native
+  var `save-disposition`: js.UndefOr[SaveDisposition] = js.undefined
   
-  var `save-info`: js.UndefOr[js.Array[SaveInfo]] = js.native
+  var `save-info`: js.UndefOr[js.Array[SaveInfo]] = js.undefined
 }
 object JobSaveDisposition {
   

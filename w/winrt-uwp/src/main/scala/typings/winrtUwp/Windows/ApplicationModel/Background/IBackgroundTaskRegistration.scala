@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a registered background task. */
-@js.native
 trait IBackgroundTaskRegistration extends StObject {
   
   /** Gets the name of a registered background task. */
-  var name: String = js.native
+  var name: String
   
   /** Gets the identifier of a registered background task. */
-  var taskId: String = js.native
+  var taskId: String
   
   /** Gets the trigger associated with the background task. */
-  var trigger: IBackgroundTrigger = js.native
+  var trigger: IBackgroundTrigger
   
   /**
     * Unregisters a registered background task.
     * @param cancelTask True if currently running instances of this background task should be canceled. If this parameter is false, currently running instances of this background task should be allowed to finish. Canceled instances receive a Canceled event with a BackgroundTaskCancellationReason of Abort.
     */
-  def unregister(cancelTask: Boolean): Unit = js.native
+  def unregister(cancelTask: Boolean): Unit
 }
 object IBackgroundTaskRegistration {
   

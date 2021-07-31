@@ -9,60 +9,59 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCopyObjectOutputMod {
   
-  @js.native
   trait CopyObjectOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _CopyObjectResult shape
       */
-    var CopyObjectResult: js.UndefOr[UnmarshalledCopyObjectResult] = js.native
+    var CopyObjectResult: js.UndefOr[UnmarshalledCopyObjectResult] = js.undefined
     
     /**
       * _CopySourceVersionId shape
       */
-    var CopySourceVersionId: js.UndefOr[String] = js.native
+    var CopySourceVersionId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If the object expiration is configured, the response includes this header.</p>
       */
-    var Expiration: js.UndefOr[String] = js.native
+    var Expiration: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.</p>
       */
-    var SSECustomerAlgorithm: js.UndefOr[String] = js.native
+    var SSECustomerAlgorithm: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round trip message integrity verification of the customer-provided encryption key.</p>
       */
-    var SSECustomerKeyMD5: js.UndefOr[String] = js.native
+    var SSECustomerKeyMD5: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.</p>
       */
-    var SSEKMSKeyId: js.UndefOr[String] = js.native
+    var SSEKMSKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).</p>
       */
-    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.native
+    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.undefined
     
     /**
       * <p>Version ID of the newly created copy.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object CopyObjectOutput {
     

@@ -2,43 +2,41 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the theme.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The date and time that the theme was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The date and time that the theme was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The name that the user gives to the theme.
     */
-  var Name: js.UndefOr[ThemeName] = js.native
+  var Name: js.UndefOr[ThemeName] = js.undefined
   
   /**
     * The identifier that the user gives to the theme.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.native
+  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The type of theme, based on how it was created. Valid values include: QUICKSIGHT and CUSTOM.
     */
-  var Type: js.UndefOr[ThemeType] = js.native
+  var Type: js.UndefOr[ThemeType] = js.undefined
   
-  var Version: js.UndefOr[ThemeVersion] = js.native
+  var Version: js.UndefOr[ThemeVersion] = js.undefined
 }
 object Theme {
   

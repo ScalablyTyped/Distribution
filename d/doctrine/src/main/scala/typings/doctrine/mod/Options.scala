@@ -2,54 +2,52 @@ package typings.doctrine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Set to `true` to add `lineNumber` to each node, specifying the line on
     * which the node is found in the source. Default: `false`.
     */
-  var lineNumbers: js.UndefOr[Boolean] = js.native
+  var lineNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to preserve leading and trailing whitespace when extracting
     * comment text.
     */
-  var preserveWhitespace: js.UndefOr[Boolean] = js.native
+  var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * set to `true` to keep parsing even when syntax errors occur. Default:
     * `false`.
     */
-  var recoverable: js.UndefOr[Boolean] = js.native
+  var recoverable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to allow optional parameters to be specified in brackets
     * (`@param {string} [foo]`). Default: `false`.
     */
-  var sloppy: js.UndefOr[Boolean] = js.native
+  var sloppy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to throw an error when syntax errors occur. If false then
     * errors will be added to `tag.errors` instead.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of tags to return. When specified, Doctrine returns
     * only tags in this array. For example, if `tags` is `["param"]`, then only
     * `@param` tags will be returned. Default: `null`.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set to `true` to delete the leading `/ **`, any `*` that begins a line,
     * and the trailing `* /` from the source text. Default: `false`.
     */
-  var unwrap: js.UndefOr[Boolean] = js.native
+  var unwrap: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

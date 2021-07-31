@@ -2,39 +2,38 @@ package typings.ent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ent", "decode")
+  @JSImport("ent", JSImport.Namespace)
   @js.native
-  def decode(s: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ent", "encode")
-  @js.native
-  def encode(s: String): String = js.native
-  @JSImport("ent", "encode")
-  @js.native
-  def encode(s: String, opts: EntOpts): String = js.native
+  @scala.inline
+  def decode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def encode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(s: String, opts: EntOpts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait EntOpts extends StObject {
     
     /**
       * If opts.numeric is false or opts.named is true, encoding will used named codes like &pi;.
       */
-    var named: js.UndefOr[Boolean] = js.native
+    var named: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If opts.numeric is false or opts.named is true, encoding will used named codes like &pi;.
       */
-    var numeric: js.UndefOr[Boolean] = js.native
+    var numeric: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If opts.special is set to an Object, the key names will be forced to be encoded (defaults to forcing: <>'"&)
       */
-    var special: js.UndefOr[js.Any] = js.native
+    var special: js.UndefOr[js.Any] = js.undefined
   }
   object EntOpts {
     

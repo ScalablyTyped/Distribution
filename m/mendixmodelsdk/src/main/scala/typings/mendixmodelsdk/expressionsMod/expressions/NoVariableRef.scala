@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,9 +42,8 @@ object NoVariableRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoVariableRef.create")
-  @js.native
-  def create(model: IModel): NoVariableRef = js.native
+  @scala.inline
+  def create(model: IModel): NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NoVariableRef]
   
   /**
     * Creates and returns a new NoVariableRef instance in the SDK and on the server.
@@ -56,9 +54,8 @@ object NoVariableRef {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoVariableRef.createIn")
-  @js.native
-  def createIn(container: VariableRefExpression): NoVariableRef = js.native
+  @scala.inline
+  def createIn(container: VariableRefExpression): NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NoVariableRef]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoVariableRef.structureTypeName")

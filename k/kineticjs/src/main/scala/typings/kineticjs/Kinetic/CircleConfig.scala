@@ -2,15 +2,14 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var radius: Double = js.native
+  var radius: Double
 }
 object CircleConfig {
   

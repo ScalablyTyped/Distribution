@@ -2,73 +2,71 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesApnschannelresponseMod {
   
-  @js.native
   trait APNSChannelResponse extends StObject {
     
     /**
       * The ID of the application that the channel applies to.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when this channel was created.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The default authentication method used for APNs.
       */
-    var DefaultAuthenticationMethod: js.UndefOr[String] = js.native
+    var DefaultAuthenticationMethod: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Not used. Retained for backwards compatibility.
       */
-    var HasCredential: js.UndefOr[Boolean] = js.native
+    var HasCredential: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether the channel is configured with a key for APNs token authentication. Provide a token key by setting the TokenKey attribute.
       */
-    var HasTokenKey: js.UndefOr[Boolean] = js.native
+    var HasTokenKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (Deprecated) An identifier for the channel. Retained for backwards compatibility.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether or not the channel is archived.
       */
-    var IsArchived: js.UndefOr[Boolean] = js.native
+    var IsArchived: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The user who last updated this channel.
       */
-    var LastModifiedBy: js.UndefOr[String] = js.native
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when this channel was last modified.
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * The platform type. For this channel, the value is always "ADM."
       */
-    var Platform: js.UndefOr[String] = js.native
+    var Platform: js.UndefOr[String] = js.undefined
     
     /**
       * The channel version.
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object APNSChannelResponse {
     

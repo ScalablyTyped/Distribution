@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Stop
 import typings.officeJsPreview.officeJsPreviewStrings.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DataValidationErrorAlert extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait DataValidationErrorAlert extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var message: String = js.native
+  var message: String
   
   /**
     *
@@ -31,7 +29,7 @@ trait DataValidationErrorAlert extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
   
   /**
     *
@@ -39,7 +37,7 @@ trait DataValidationErrorAlert extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var style: DataValidationAlertStyle | Stop | Warning | Information = js.native
+  var style: DataValidationAlertStyle | Stop | Warning | Information
   
   /**
     *
@@ -47,7 +45,7 @@ trait DataValidationErrorAlert extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var title: String = js.native
+  var title: String
 }
 object DataValidationErrorAlert {
   

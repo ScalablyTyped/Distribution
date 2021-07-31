@@ -3,31 +3,31 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItem extends WorkItemTrackingResource {
+trait WorkItem
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * Map of field and values for the work item.
     */
-  var fields: StringDictionary[js.Any] = js.native
+  var fields: StringDictionary[js.Any]
   
   /**
     * The work item ID.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Relations of the work item.
     */
-  var relations: js.Array[WorkItemRelation] = js.native
+  var relations: js.Array[WorkItemRelation]
   
   /**
     * Revision number of the work item.
     */
-  var rev: Double = js.native
+  var rev: Double
 }
 object WorkItem {
   

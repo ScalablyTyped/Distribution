@@ -2,29 +2,27 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbideDefaults extends StObject {
   
-  var formErrorClass: String = js.native
+  var formErrorClass: String
   
-  var formErrorSelector: String = js.native
+  var formErrorSelector: String
   
-  var inputErrorClass: String = js.native
+  var inputErrorClass: String
   
-  var labelErrorClass: String = js.native
+  var labelErrorClass: String
   
-  var liveValidate: Boolean = js.native
+  var liveValidate: Boolean
   
-  var patterns: IAbidePatterns = js.native
+  var patterns: IAbidePatterns
   
-  var validateOn: String = js.native
+  var validateOn: String
   
-  var validateOnBlur: Boolean = js.native
+  var validateOnBlur: Boolean
   
-  var validators: js.Any = js.native
+  var validators: js.Any
 }
 object AbideDefaults {
   

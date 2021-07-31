@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPreview extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait CustomPreview extends StObject {
     * contain RemoteObjectId for the function that returns result of formatter.body(object, config) call.
     * The result value is json ML array.
     */
-  var bodyGetterId: js.UndefOr[RemoteObjectId] = js.native
+  var bodyGetterId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * The JSON-stringified result of formatter.header(object, config) call.
     * It contains json ML array that represents RemoteObject.
     */
-  var header: String = js.native
+  var header: String
 }
 object CustomPreview {
   

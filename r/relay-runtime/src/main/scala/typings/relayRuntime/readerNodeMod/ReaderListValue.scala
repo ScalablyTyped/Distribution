@@ -2,18 +2,18 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderListValue extends ReaderArgument {
+trait ReaderListValue
+  extends StObject
+     with ReaderArgument {
   
-  val items: js.Array[ReaderArgument | Null] = js.native
+  val items: js.Array[ReaderArgument | Null]
   
-  val kind: String = js.native
+  val kind: String
   
   // 'ListValue';
-  val name: String = js.native
+  val name: String
 }
 object ReaderListValue {
   

@@ -3,31 +3,29 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonGroupProps extends StObject {
   
   /**
     * Delete button.
     */
-  var deleteBtn: ReactElement = js.native
+  var deleteBtn: ReactElement
   
   /**
     * Export to CSV button.
     */
-  var exportCSVBtn: ReactElement = js.native
+  var exportCSVBtn: ReactElement
   
   /**
     * Insert button (to add a row).
     */
-  var insertBtn: ReactElement = js.native
+  var insertBtn: ReactElement
   
   /**
     * Toggle button to switch between showing all rows and showing selected rows only.
     */
-  var showSelectedOnlyBtn: ReactElement = js.native
+  var showSelectedOnlyBtn: ReactElement
 }
 object ButtonGroupProps {
   

@@ -2,19 +2,17 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageBuilderOptions extends StObject {
   
-  var filters: js.UndefOr[js.Array[String]] = js.native
+  var filters: js.UndefOr[js.Array[String]] = js.undefined
   
-  var innerErrorFieldName: js.UndefOr[String] = js.native
+  var innerErrorFieldName: js.UndefOr[String] = js.undefined
   
-  var reportColumnNumbers: js.UndefOr[Boolean] = js.native
+  var reportColumnNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var useHumanStringForObject: js.UndefOr[Boolean] = js.native
+  var useHumanStringForObject: js.UndefOr[Boolean] = js.undefined
 }
 object MessageBuilderOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTaskExecutionsRequest extends StObject {
   
   /**
     * The maximum number of executed tasks to list.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin the next list of the executed tasks.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the task whose tasks you want to list.
     */
-  var TaskArn: js.UndefOr[typings.awsSdk.datasyncMod.TaskArn] = js.native
+  var TaskArn: js.UndefOr[typings.awsSdk.datasyncMod.TaskArn] = js.undefined
 }
 object ListTaskExecutionsRequest {
   

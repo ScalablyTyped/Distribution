@@ -8,32 +8,37 @@ import typings.reactNativeSafeArea.reactNativeSafeAreaStrings.padding
 import typings.reactNativeSafeArea.reactNativeSafeAreaStrings.safeAreaInsetsForRootViewDidChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-native-safe-area", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-native-safe-area", JSImport.Default)
   @js.native
-  class default () extends SafeArea
+  class default ()
+    extends StObject
+       with SafeArea
   /* static members */
   object default {
     
-    @JSImport("react-native-safe-area", "default.addEventListener")
+    @JSImport("react-native-safe-area", JSImport.Default)
     @js.native
-    def addEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-safe-area", "default.getSafeAreaInsetsForRootView")
-    @js.native
-    def getSafeAreaInsetsForRootView(): js.Promise[EventPayload] = js.native
+    @scala.inline
+    def addEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-safe-area", "default.removeEventListener")
-    @js.native
-    def removeEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = js.native
+    @scala.inline
+    def getSafeAreaInsetsForRootView(): js.Promise[EventPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSafeAreaInsetsForRootView")().asInstanceOf[js.Promise[EventPayload]]
+    
+    @scala.inline
+    def removeEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("react-native-safe-area", "withSafeArea")
-  @js.native
+  @scala.inline
   def withSafeArea_absolutePosition[P](
     WrappedComponent: ComponentType[P],
     /**
@@ -44,9 +49,9 @@ object mod {
     * @default 'all'
     */
   direction: Direction
-  ): ComponentType[P] = js.native
-  @JSImport("react-native-safe-area", "withSafeArea")
-  @js.native
+  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
+  
+  @scala.inline
   def withSafeArea_contentInset[P](
     WrappedComponent: ComponentType[P],
     /**
@@ -57,9 +62,9 @@ object mod {
     * @default 'all'
     */
   direction: Direction
-  ): ComponentType[P] = js.native
-  @JSImport("react-native-safe-area", "withSafeArea")
-  @js.native
+  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
+  
+  @scala.inline
   def withSafeArea_margin[P](
     WrappedComponent: ComponentType[P],
     /**
@@ -70,9 +75,9 @@ object mod {
     * @default 'all'
     */
   direction: Direction
-  ): ComponentType[P] = js.native
-  @JSImport("react-native-safe-area", "withSafeArea")
-  @js.native
+  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
+  
+  @scala.inline
   def withSafeArea_padding[P](
     WrappedComponent: ComponentType[P],
     /**
@@ -83,7 +88,7 @@ object mod {
     * @default 'all'
     */
   direction: Direction
-  ): ComponentType[P] = js.native
+  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
   // from `withSafeArea.js`
   /* Rewritten from type alias, can be one of: 
@@ -168,10 +173,9 @@ object mod {
     def verticalAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight = "verticalAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight]
   }
   
-  @js.native
   trait EventPayload extends StObject {
     
-    var safeAreaInsets: SafeAreaInsets = js.native
+    var safeAreaInsets: SafeAreaInsets
   }
   object EventPayload {
     
@@ -191,20 +195,18 @@ object mod {
   
   type EventType = safeAreaInsetsForRootViewDidChange
   
-  @js.native
   trait SafeArea extends StObject
   
   // from `TypeDefinition.js`
-  @js.native
   trait SafeAreaInsets extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object SafeAreaInsets {
     

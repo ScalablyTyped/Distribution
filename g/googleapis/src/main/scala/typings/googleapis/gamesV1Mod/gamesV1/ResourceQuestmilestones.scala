@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Questmilestones")
@@ -32,7 +31,7 @@ class ResourceQuestmilestones protected () extends StObject {
     */
   def claim(): GaxiosPromise[Unit] = js.native
   def claim(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def claim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def claim(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def claim(params: ParamsResourceQuestmilestonesClaim): GaxiosPromise[Unit] = js.native
   def claim(params: ParamsResourceQuestmilestonesClaim, callback: BodyResponseCallback[Unit]): Unit = js.native
   def claim(

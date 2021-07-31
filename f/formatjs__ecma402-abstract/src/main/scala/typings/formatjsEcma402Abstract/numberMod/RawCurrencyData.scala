@@ -3,21 +3,19 @@ package typings.formatjsEcma402Abstract.numberMod
 import typings.formatjsEcma402Abstract.anon.RecordDecimalFormatNumLDM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawCurrencyData extends StObject {
   
-  var accounting: String = js.native
+  var accounting: String
   
-  var currencySpacing: CurrencySpacingData = js.native
+  var currencySpacing: CurrencySpacingData
   
-  var short: js.UndefOr[RecordDecimalFormatNumLDM] = js.native
+  var short: js.UndefOr[RecordDecimalFormatNumLDM] = js.undefined
   
-  var standard: String = js.native
+  var standard: String
   
-  var unitPattern: String = js.native
+  var unitPattern: String
 }
 object RawCurrencyData {
   

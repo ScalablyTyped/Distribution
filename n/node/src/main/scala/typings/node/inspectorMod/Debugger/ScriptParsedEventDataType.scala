@@ -5,88 +5,86 @@ import typings.node.inspectorMod.Runtime.ScriptId
 import typings.node.inspectorMod.Runtime.StackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptParsedEventDataType extends StObject {
   
   /**
     * Length of the last line of the script.
     */
-  var endColumn: Double = js.native
+  var endColumn: Double
   
   /**
     * Last line of the script.
     */
-  var endLine: Double = js.native
+  var endLine: Double
   
   /**
     * Embedder-specific auxiliary data.
     */
-  var executionContextAuxData: js.UndefOr[js.Object] = js.native
+  var executionContextAuxData: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Specifies script creation context.
     */
-  var executionContextId: ExecutionContextId = js.native
+  var executionContextId: ExecutionContextId
   
   /**
     * True, if this script has sourceURL.
     */
-  var hasSourceURL: js.UndefOr[Boolean] = js.native
+  var hasSourceURL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Content hash of the script.
     */
-  var hash: String = js.native
+  var hash: String
   
   /**
     * True, if this script is generated as a result of the live edit operation.
     * @experimental
     */
-  var isLiveEdit: js.UndefOr[Boolean] = js.native
+  var isLiveEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True, if this script is ES6 module.
     */
-  var isModule: js.UndefOr[Boolean] = js.native
+  var isModule: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This script length.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifier of the script parsed.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * URL of source map associated with script (if any).
     */
-  var sourceMapURL: js.UndefOr[String] = js.native
+  var sourceMapURL: js.UndefOr[String] = js.undefined
   
   /**
     * JavaScript top stack frame of where the script parsed event was triggered if available.
     * @experimental
     */
-  var stackTrace: js.UndefOr[StackTrace] = js.native
+  var stackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Column offset of the script within the resource with given URL.
     */
-  var startColumn: Double = js.native
+  var startColumn: Double
   
   /**
     * Line offset of the script within the resource with given URL (for script tags).
     */
-  var startLine: Double = js.native
+  var startLine: Double
   
   /**
     * URL or name of the script parsed (if any).
     */
-  var url: String = js.native
+  var url: String
 }
 object ScriptParsedEventDataType {
   

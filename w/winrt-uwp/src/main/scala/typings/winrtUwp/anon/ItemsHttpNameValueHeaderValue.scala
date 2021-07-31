@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsHttpNameValueHeaderValue extends StObject {
   
-  /** An array of HttpNameValueHeaderValue items that start at startIndex in the HttpCacheDirectiveHeaderValueCollection . */ var items: HttpNameValueHeaderValue = js.native
+  /** An array of HttpNameValueHeaderValue items that start at startIndex in the HttpCacheDirectiveHeaderValueCollection . */ var items: HttpNameValueHeaderValue
   
-  /** The number of HttpNameValueHeaderValue items retrieved. */ var returnValue: Double = js.native
+  /** The number of HttpNameValueHeaderValue items retrieved. */ var returnValue: Double
 }
 object ItemsHttpNameValueHeaderValue {
   

@@ -6,7 +6,6 @@ import typings.angularPdfjsViewer.angularPdfjsViewerStrings.infos
 import typings.angularPdfjsViewer.angularPdfjsViewerStrings.warnings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -15,7 +14,9 @@ object mod {
   object pdfjsViewer {
     
     @js.native
-    trait ConfigProvider extends IServiceProvider {
+    trait ConfigProvider
+      extends StObject
+         with IServiceProvider {
       
       def disableWorker(): Unit = js.native
       

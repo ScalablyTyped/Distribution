@@ -9,10 +9,13 @@ import typings.cassandraDriver.policiesMod.policies.speculativeExecution.Specula
 import typings.cassandraDriver.policiesMod.policies.timestampGeneration.TimestampGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policies {
+  
+  @JSImport("cassandra-driver", "policies")
+  @js.native
+  val ^ : js.Any = js.native
   
   object addressResolution {
     
@@ -22,32 +25,25 @@ object policies {
       extends typings.cassandraDriver.policiesMod.policies.addressResolution.EC2MultiRegionTranslator
   }
   
-  @JSImport("cassandra-driver", "policies.defaultAddressTranslator")
-  @js.native
-  def defaultAddressTranslator(): AddressTranslator = js.native
+  @scala.inline
+  def defaultAddressTranslator(): AddressTranslator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAddressTranslator")().asInstanceOf[AddressTranslator]
   
-  @JSImport("cassandra-driver", "policies.defaultLoadBalancingPolicy")
-  @js.native
-  def defaultLoadBalancingPolicy(): LoadBalancingPolicy = js.native
-  @JSImport("cassandra-driver", "policies.defaultLoadBalancingPolicy")
-  @js.native
-  def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = js.native
+  @scala.inline
+  def defaultLoadBalancingPolicy(): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")().asInstanceOf[LoadBalancingPolicy]
+  @scala.inline
+  def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")(localDc.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingPolicy]
   
-  @JSImport("cassandra-driver", "policies.defaultReconnectionPolicy")
-  @js.native
-  def defaultReconnectionPolicy(): ReconnectionPolicy = js.native
+  @scala.inline
+  def defaultReconnectionPolicy(): ReconnectionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReconnectionPolicy")().asInstanceOf[ReconnectionPolicy]
   
-  @JSImport("cassandra-driver", "policies.defaultRetryPolicy")
-  @js.native
-  def defaultRetryPolicy(): RetryPolicy = js.native
+  @scala.inline
+  def defaultRetryPolicy(): RetryPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryPolicy")().asInstanceOf[RetryPolicy]
   
-  @JSImport("cassandra-driver", "policies.defaultSpeculativeExecutionPolicy")
-  @js.native
-  def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = js.native
+  @scala.inline
+  def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSpeculativeExecutionPolicy")().asInstanceOf[SpeculativeExecutionPolicy]
   
-  @JSImport("cassandra-driver", "policies.defaultTimestampGenerator")
-  @js.native
-  def defaultTimestampGenerator(): TimestampGenerator = js.native
+  @scala.inline
+  def defaultTimestampGenerator(): TimestampGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTimestampGenerator")().asInstanceOf[TimestampGenerator]
   
   object loadBalancing {
     
@@ -153,14 +149,14 @@ object policies {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[
-                typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision with Double
+                typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision & Double
               ] = js.native
         
-        /* 0 */ val ignore: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.ignore with Double = js.native
+        /* 0 */ val ignore: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.ignore & Double = js.native
         
-        /* 1 */ val rethrow: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.rethrow with Double = js.native
+        /* 1 */ val rethrow: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.rethrow & Double = js.native
         
-        /* 2 */ val retry: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.retry with Double = js.native
+        /* 2 */ val retry: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.retry & Double = js.native
       }
     }
     

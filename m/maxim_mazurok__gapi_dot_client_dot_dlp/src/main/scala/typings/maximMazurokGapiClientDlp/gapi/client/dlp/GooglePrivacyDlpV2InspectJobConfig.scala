@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2InspectJobConfig extends StObject {
   
   /** Actions to execute at the completion of the job. */
-  var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.native
+  var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.undefined
   
   /** How and what to scan for. */
-  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /** If provided, will be used as the default for all values in InspectConfig. `inspect_config` will be merged into the values persisted as part of the template. */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /** The data to scan. */
-  var storageConfig: js.UndefOr[GooglePrivacyDlpV2StorageConfig] = js.native
+  var storageConfig: js.UndefOr[GooglePrivacyDlpV2StorageConfig] = js.undefined
 }
 object GooglePrivacyDlpV2InspectJobConfig {
   

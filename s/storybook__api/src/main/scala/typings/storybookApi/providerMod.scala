@@ -6,10 +6,10 @@ import typings.std.Record
 import typings.storybookApi.anon.themeThemeVarsundefinedre
 import typings.storybookApi.mod.API
 import typings.storybookApi.mod.ModuleFn
+import typings.storybookApi.modulesStoriesMod.ViewMode
 import typings.storybookChannels.mod.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -20,7 +20,7 @@ object providerMod {
   
   type IframeRenderer = js.Function6[
     /* storyId */ String, 
-    /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ /* viewMode */ js.Any, 
+    /* viewMode */ ViewMode & js.UndefOr[String], 
     /* id */ String, 
     /* baseUrl */ String, 
     /* scale */ Double, 
@@ -28,17 +28,17 @@ object providerMod {
     ReactNode
   ]
   
-  @js.native
   trait Provider
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var channel: js.UndefOr[Channel] = js.native
+    var channel: js.UndefOr[Channel] = js.undefined
     
-    def getConfig(): themeThemeVarsundefinedre = js.native
+    def getConfig(): themeThemeVarsundefinedre
     
-    def handleAPI(api: API): Unit = js.native
+    def handleAPI(api: API): Unit
     
-    var renderPreview: js.UndefOr[IframeRenderer] = js.native
+    var renderPreview: js.UndefOr[IframeRenderer] = js.undefined
   }
   object Provider {
     
@@ -65,7 +65,7 @@ object providerMod {
       
       @scala.inline
       def setRenderPreview(
-        value: (/* storyId */ String, /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ /* viewMode */ js.Any, /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
+        value: (/* storyId */ String, /* viewMode */ ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "renderPreview", js.Any.fromFunction6(value))
       
       @scala.inline
@@ -73,10 +73,9 @@ object providerMod {
     }
   }
   
-  @js.native
   trait SubAPI extends StObject {
     
-    var renderPreview: js.UndefOr[IframeRenderer] = js.native
+    var renderPreview: js.UndefOr[IframeRenderer] = js.undefined
   }
   object SubAPI {
     
@@ -91,7 +90,7 @@ object providerMod {
       
       @scala.inline
       def setRenderPreview(
-        value: (/* storyId */ String, /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ /* viewMode */ js.Any, /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
+        value: (/* storyId */ String, /* viewMode */ ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "renderPreview", js.Any.fromFunction6(value))
       
       @scala.inline

@@ -2,18 +2,16 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Where Geometry Options
   */
-@js.native
 trait WhereGeometryOptions extends StObject {
   
-  var coordinates: js.Array[js.Array[Double] | Double] = js.native
+  var coordinates: js.Array[js.Array[Double] | Double]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object WhereGeometryOptions {
   

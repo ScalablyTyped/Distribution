@@ -3,7 +3,6 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,40 +11,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * completion of a training job with hyperparameter tuning includes a list of
   * HyperparameterOutput objects, one for each successful trial.
   */
-@js.native
 trait SchemaGoogleCloudMlV1HyperparameterOutput extends StObject {
   
   /**
     * All recorded object metrics for this trial. This field is not currently
     * populated.
     */
-  var allMetrics: js.UndefOr[js.Array[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric]] = js.native
+  var allMetrics: js.UndefOr[js.Array[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric]] = js.undefined
   
   /**
     * Details related to built-in algorithms job. Only set this for built-in
     * algorithms jobs and for trials that succeeded.
     */
-  var builtInAlgorithmOutput: js.UndefOr[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] = js.native
+  var builtInAlgorithmOutput: js.UndefOr[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] = js.undefined
   
   /**
     * The final objective metric seen for this trial.
     */
-  var finalMetric: js.UndefOr[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric] = js.native
+  var finalMetric: js.UndefOr[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric] = js.undefined
   
   /**
     * The hyperparameters given to this trial.
     */
-  var hyperparameters: js.UndefOr[StringDictionary[String]] = js.native
+  var hyperparameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * True if the trial is stopped early.
     */
-  var isTrialStoppedEarly: js.UndefOr[Boolean] = js.native
+  var isTrialStoppedEarly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The trial id for these results.
     */
-  var trialId: js.UndefOr[String] = js.native
+  var trialId: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1HyperparameterOutput {
   

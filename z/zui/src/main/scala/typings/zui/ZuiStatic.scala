@@ -2,26 +2,24 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZuiStatic extends StObject {
   
-  var Color: ColorStatic = js.native
+  var Color: ColorStatic
   
-  var Messager: MessagerStatic = js.native
+  var Messager: MessagerStatic
   
-  var ModalTrigger: ModalTriggerStatic = js.native
+  var ModalTrigger: ModalTriggerStatic
   
-  var colorset: ColorSet = js.native
+  var colorset: ColorSet
   
   // $.zui.messager
-  var messager: Messager = js.native
+  var messager: Messager
   
-  var modalTrigger: ModalTrigger = js.native
+  var modalTrigger: ModalTrigger
   
-  var store: StoreStatic = js.native
+  var store: StoreStatic
 }
 object ZuiStatic {
   

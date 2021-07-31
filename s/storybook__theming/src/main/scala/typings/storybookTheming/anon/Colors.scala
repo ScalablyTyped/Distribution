@@ -3,15 +3,13 @@ package typings.storybookTheming.anon
 import typings.storybookTheming.syntaxMod.ColorsHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var colors: ColorsHash = js.native
+  var colors: ColorsHash
   
-  var mono: String = js.native
+  var mono: String
 }
 object Colors {
   

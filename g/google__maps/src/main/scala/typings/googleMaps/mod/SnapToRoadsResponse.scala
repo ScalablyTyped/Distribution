@@ -2,14 +2,12 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapToRoadsResponse extends StObject {
   
   /** An array of snapped points. */
-  var snappedPoints: js.Array[SnappedPoint] = js.native
+  var snappedPoints: js.Array[SnappedPoint]
 }
 object SnapToRoadsResponse {
   

@@ -11,8 +11,8 @@ A lightweight XML Document class for JavaScript.
 | Full name          | xmldoc |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 252 |
-| # downloads        | 21311610 |
+| # dependents       | 281 |
+| # downloads        | 29111693 |
 | # stars            | 4 |
 
 ## Links

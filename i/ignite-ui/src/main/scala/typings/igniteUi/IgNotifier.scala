@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgNotifier
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,19 +17,19 @@ trait IgNotifier
     * Allows setting the respective state CSS on the target element (used to apply border color by default)
     *
     */
-  var allowCSSOnTarget: js.UndefOr[Boolean] = js.native
+  var allowCSSOnTarget: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the time in milliseconds the notification fades in and out when showing/hiding
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the distance in pixels a notification popover slides outwards as it's shown.
     *
     */
-  var animationSlideDistance: js.UndefOr[Double] = js.native
+  var animationSlideDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls where the popover DOM should be attached to (only applies to popovers).
@@ -40,19 +39,19 @@ trait IgNotifier
     * "string" A valid jQuery selector for the element
     * "object" A reference to the parent jQuery object
     */
-  var appendTo: js.UndefOr[String | js.Object] = js.native
+  var appendTo: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Controls whether the popover will close on blur or not. This option has effect only when the corresponding [showOn](ui.ignotifier#options:showOn) is set (manual by default)
     *
     */
-  var closeOnBlur: js.UndefOr[Boolean] = js.native
+  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the containment for the popover. Accepts a jQuery object
     *
     */
-  var containment: js.UndefOr[js.Any] = js.native
+  var containment: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
@@ -62,7 +61,7 @@ trait IgNotifier
     * "string" String content of the popover container
     * "function" Function which is a callback that should return the content. Use the 'this' value to access the target DOM element and passed argument for state value. Result can also include the same template parametes.
     */
-  var contentTemplate: js.UndefOr[String | js.Function] = js.native
+  var contentTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * controls the direction in which the control shows relative to the target element
@@ -75,54 +74,54 @@ trait IgNotifier
     * "top" shows popover on the top of the target element
     * "bottom" shows popover on the bottom of the target element
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[_]] = js.native
+  var directionPriority: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Sets the content for the popover header
     *
     */
-  var headerTemplate: js.UndefOr[IgNotifierHeaderTemplate] = js.native
+  var headerTemplate: js.UndefOr[IgNotifierHeaderTemplate] = js.undefined
   
   /**
     * defines height for the popover. leave null for auto
     *
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Event fired after popover is hidden.
     */
-  var hidden: js.UndefOr[HiddenEvent] = js.native
+  var hidden: js.UndefOr[HiddenEvent] = js.undefined
   
   /**
     * Event fired before popover is hidden.
     */
-  var hiding: js.UndefOr[HidingEvent] = js.native
+  var hiding: js.UndefOr[HidingEvent] = js.undefined
   
   /**
     * defines height the popover won't exceed even if no specific one is set.
     *
     */
-  var maxHeight: js.UndefOr[Double | String] = js.native
+  var maxHeight: js.UndefOr[Double | String] = js.undefined
   
   /**
     * defines width the popover won't exceed even if no specific one is set.
     *
     */
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * defines width the popover won't go under the value even if no specific one is set.
     *
     */
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto.Note: Inline element uses a block container as is always placed after the target.
@@ -133,7 +132,7 @@ trait IgNotifier
     * "popover" Displays messages in a configurable popover.
     * "inline" Displays messages in a simplified notification text under the target.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the level of notifications shown by automatic and manual messages using the [notify](ui.ignotifier#methods:notify) method. Use [show](ui.ignotifier#methods:show) to ignore the level.
@@ -145,7 +144,7 @@ trait IgNotifier
     * "warning" Show everything from warning level messages up
     * "error" Show only error messages
     */
-  var notifyLevel: js.UndefOr[String] = js.native
+  var notifyLevel: js.UndefOr[String] = js.undefined
   
   /**
     * controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
@@ -157,18 +156,18 @@ trait IgNotifier
     * "start" the popover is positioned at the beginning of the target element
     * "end" the popover is positioned at the end of the target element
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Selectors indicating which items should show popovers.
     */
-  var selectors: js.UndefOr[String] = js.native
+  var selectors: js.UndefOr[String] = js.undefined
   
   /**
     * Allows rendering a span with the respective state CSS to display jQuery UI framework icons
     *
     */
-  var showIcon: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the event on which the notification will be shown. Predefined values are "mouseenter", "click" and "focus"
@@ -180,17 +179,17 @@ trait IgNotifier
     * "focus" The popover is shown on focusing the target element
     * "manual" The popover is shown manually
     */
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired before popover is shown.
     */
-  var showing: js.UndefOr[ShowingEvent] = js.native
+  var showing: js.UndefOr[ShowingEvent] = js.undefined
   
   /**
     * Event fired after popover is shown.
     */
-  var shown: js.UndefOr[ShownEvent] = js.native
+  var shown: js.UndefOr[ShownEvent] = js.undefined
   
   /**
     * Gets/Sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well.
@@ -202,13 +201,13 @@ trait IgNotifier
     * "warning" Messages and target CSS have warning styles applied.
     * "error" Messages and target CSS have error styles applied.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * defines width for the popover. leave null for auto.
     *
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IgNotifier {
   
@@ -267,7 +266,7 @@ object IgNotifier {
     def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionPriority(value: js.Array[_]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
+    def setDirectionPriority(value: js.Array[js.Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDirectionPriorityUndefined: Self = StObject.set(x, "directionPriority", js.undefined)

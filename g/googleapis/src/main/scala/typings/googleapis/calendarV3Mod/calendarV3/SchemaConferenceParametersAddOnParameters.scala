@@ -3,13 +3,11 @@ package typings.googleapis.calendarV3Mod.calendarV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaConferenceParametersAddOnParameters extends StObject {
   
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaConferenceParametersAddOnParameters {
   

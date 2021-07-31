@@ -1,11 +1,18 @@
 package typings.smartFoxServer.global.SFS2X
 
+import typings.smartFoxServer.SFS2X.Entities.Data.Vec3D
+import typings.smartFoxServer.SFS2X.Entities.Variables.MMOItemVariable
+import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
+import typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable
+import typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable
+import typings.smartFoxServer.SFS2X.Managers.RoomManager
+import typings.smartFoxServer.SFS2X.Managers.UserManager
 import typings.smartFoxServer.SFS2X.Requests.Game.CreateSFSGameRequest
+import typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits
 import typings.smartFoxServer.SFS2X.Requests.System.FindRoomsRequest
 import typings.smartFoxServer.SFS2X.Requests.System.FindUsersRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Entities
@@ -19,7 +26,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Data.Vec3D")
     @js.native
     class Vec3D protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Data.Vec3D {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Data.Vec3D {
       /**
         * Creates a new Vec3D instance.
         * @param {number} px The position along the X axis.
@@ -28,6 +36,25 @@ object Entities {
         */
       def this(px: Double, py: Double) = this()
       def this(px: Double, py: Double, pz: Double) = this()
+      
+      /**
+        * Indicates whether the position is expressed using floating point values or not.
+        * @return {boolean} Returns: true if the position is expressed using floating point values.
+        */
+      /* CompleteClass */
+      override def isFloat(): Boolean = js.native
+      
+      /** @type {number} Returns the position along the X axis. */
+      /* CompleteClass */
+      var px: Double = js.native
+      
+      /** @type {number} Returns the position along the Y axis. */
+      /* CompleteClass */
+      var py: Double = js.native
+      
+      /** @type {number} Returns the position along the Z axis. */
+      /* CompleteClass */
+      var pz: Double = js.native
     }
   }
   
@@ -39,7 +66,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Invitation.InvitationReply")
     @js.native
     class InvitationReply ()
-      extends typings.smartFoxServer.SFS2X.Entities.Invitation.InvitationReply
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Invitation.InvitationReply
     /* static members */
     object InvitationReply {
       
@@ -65,7 +93,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Invitation.SFSInvitation")
     @js.native
     class SFSInvitation protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Invitation.SFSInvitation {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Invitation.SFSInvitation {
       /**
         * Creates a new SFSInvitation instance.
         * @param {SFSUser} inviter          A SFSUser object corresponding to the user who sent the invitation.
@@ -79,24 +108,77 @@ object Entities {
         secondsForAnswer: Double,
         params: js.Object
       ) = this()
+      
+      /** @type {number} Indicates the id of the invitation. */
+      /* CompleteClass */
+      var id: Double = js.native
+      
+      /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
+      /* CompleteClass */
+      var invitee: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+      
+      /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
+      /* CompleteClass */
+      var inviter: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+      
+      /** @type {Object} Returns an object containing a custom set of parameters. */
+      /* CompleteClass */
+      var params: js.Object = js.native
+      
+      /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
+      /* CompleteClass */
+      var secondsForAnswer: Double = js.native
     }
   }
   
   @JSGlobal("SFS2X.Entities.MMOItem")
   @js.native
   class MMOItem protected ()
-    extends typings.smartFoxServer.SFS2X.Entities.MMOItem {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.MMOItem {
     /**
       * Creates a new MMOItem instance.
       * @param {number} id The item id.
       */
     def this(id: Double) = this()
+    
+    /** @type {Data.Vec3D} Returns the entry point of this item in the current user's AoI. */
+    /* CompleteClass */
+    var aoiEnteryPoint: Vec3D = js.native
+    
+    /**
+      * Indicates whether this item has the specified MMOItem Variable set or not.
+      * @param  {string}  varName The name of the MMOItem Variable whose existance must be checked.
+      * @return {boolean}         Returns: true if an MMOItem Variable with the passed name is set for this item.
+      */
+    /* CompleteClass */
+    override def containsVariable(varName: String): Boolean = js.native
+    
+    /**
+      * Retrieves an MMOItem Variable from its name.
+      * @param  {string}                    varName The name of the MMOItem Variable to be retrieved.
+      * @return {Variables.MMOItemVariable}         The MMOItemVariable object, or null if no MMOItem Variable with the passed name is associated to this item.
+      */
+    /* CompleteClass */
+    override def getVariable(varName: String): MMOItemVariable = js.native
+    
+    /**
+      * Retrieves all the MMOItem Variables of this item.
+      * @return {Variables.MMOItemVariable[]} The list of MMOItemVariable objects associated to this item.
+      */
+    /* CompleteClass */
+    override def getVariables(): js.Array[MMOItemVariable] = js.native
+    
+    /** @type {number} Indicates the id of this item. */
+    /* CompleteClass */
+    var id: Double = js.native
   }
   
   @JSGlobal("SFS2X.Entities.MMORoom")
   @js.native
   class MMORoom protected ()
-    extends typings.smartFoxServer.SFS2X.Entities.MMORoom {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.MMORoom {
     /**
       * Creates a new MMORoom instance.
       * @param {number} id      The MMORoom id.
@@ -105,6 +187,169 @@ object Entities {
       */
     def this(id: Double, name: String) = this()
     def this(id: Double, name: String, groupId: String) = this()
+    
+    /**
+      * Indicates whether the specified user is currently inside this Room or not.
+      * @param  {SFSUser} user The SFSUser object representing the user whose presence in this Room must be checked.
+      * @return {boolean}      Returns: true if the user is inside this Room; false otherwise.
+      */
+    /* CompleteClass */
+    override def containsUser(user: typings.smartFoxServer.SFS2X.Entities.SFSUser): Boolean = js.native
+    
+    /**
+      * Indicates whether this Room has the specified Room Variable set or not.
+      * @param  {string}  varName The name of the Room Variable whose existance in this Room must be checked.
+      * @return {boolean}         Returns: true if a Room Variable with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def containsVariable(varName: String): Boolean = js.native
+    
+    /** @type {Data.Vec3D} Returns the default Area of Interest (AoI) of this MMORoom. */
+    /* CompleteClass */
+    var defaultAOI: Vec3D = js.native
+    
+    /**
+      * Returns the maximum amount of users, including spectators, that can be contained in this Room.
+      * @return {number} Returns: Maximum number of users that can enter the Room.
+      */
+    /* CompleteClass */
+    override def getCapacity(): Double = js.native
+    
+    /**
+      * Retrieves an MMOItem object from its id property. The item is available to the current user if it falls within their Area of Interest only.
+      * @param  {number}  id The id of the item to be retrieved.
+      * @return {MMOItem}    Returns: An MMOItem object, or null if the item with the passed id is not in proximity of the current user.
+      */
+    /* CompleteClass */
+    override def getMMOItem(id: Double): typings.smartFoxServer.SFS2X.Entities.MMOItem = js.native
+    
+    /**
+      * Retrieves all MMOItem object in the MMORoom that fall within the current user's Area of Interest.
+      * @return {MMOItem[]} Returns: A list of MMOItem objects, or an empty list if no item is in proximity of the current user.
+      */
+    /* CompleteClass */
+    override def getMMOItems(): js.Array[typings.smartFoxServer.SFS2X.Entities.MMOItem] = js.native
+    
+    /**
+      * Retrieves the list of SFSUser objects representing the players currently inside this Room (Game Rooms only).
+      * @return {SFSUser[]} Returns: The list of SFSUser objects representing the users who joined the Room as players.
+      */
+    /* CompleteClass */
+    override def getPlayerList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a reference to the Room Manager which manages this Room.
+      * @return {Managers.RoomManager} Returns: The Room Manager to which this Room is associated.
+      */
+    /* CompleteClass */
+    override def getRoomManager(): RoomManager = js.native
+    
+    /**
+      * Returns the current number of spectators in this Room (Game Rooms only).
+      * @return {number} Returns: Current number of spectators in the Room.
+      */
+    /* CompleteClass */
+    override def getSpectatorCount(): Double = js.native
+    
+    /**
+      * Retrieves the list of SFSUser objects representing the spectators currently inside this Room (Game Rooms only).
+      * @return {SFSUser[]} Returns: The list of SFSUser objects representing the users who joined the Room as spectators.
+      */
+    /* CompleteClass */
+    override def getSpectatorList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a SFSUser object from its id property.
+      * @param  {number}  id The id of the user to be found.
+      * @return {SFSUser}    Returns: An object representing the user, or null if no user with the passed id exists in this Room.
+      */
+    /* CompleteClass */
+    override def getUserById(id: Double): typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+    
+    /**
+      * Retrieves a SFSUser object from its name property.
+      * @param  {string}  name The name of the user to be found.
+      * @return {SFSUser}      Returns: An object representing the user, or null if no user with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def getUserByName(name: String): typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+    
+    /**
+      * Returns the current number of users in this Room. In case of Game Rooms, this is the number of players.
+      * @return {number} Returns: Current number of users in the Room.
+      */
+    /* CompleteClass */
+    override def getUserCount(): Double = js.native
+    
+    /**
+      * Returns the current number of users in this Room. In case of Game Rooms, this is the number of players.
+      * @return {SFSUser[]} Returns: Current number of users in the Room.
+      */
+    /* CompleteClass */
+    override def getUserList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a Room Variable from its name.
+      * @param  {string}                    varName The name of the Room Variable to be retrieved.
+      * @return {Variables.SFSRoomVariable}         Returns: The object representing the Room Variable, or null if no Room Variable with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def getVariable(varName: String): SFSRoomVariable = js.native
+    
+    /**
+      * Retrieves all the Room Variables of this Room.
+      * @return {Variables.SFSRoomVariable[]} Returns: The list of SFSRoomVariable objects associated with this Room.
+      */
+    /* CompleteClass */
+    override def getVariables(): js.Array[SFSRoomVariable] = js.native
+    
+    /** @type {string} Returns the Room Group name. */
+    /* CompleteClass */
+    var groupId: String = js.native
+    
+    /** @type {Requests.MMO.MapLimits} Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+    /* CompleteClass */
+    var higherMapLimit: MapLimits = js.native
+    
+    /** @type {number} Indicates the id of this Room. */
+    /* CompleteClass */
+    var id: Double = js.native
+    
+    /** @type {boolean} Indicates whether this is a Game Room or not. */
+    /* CompleteClass */
+    var isGame: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether this Room is hidden or not. */
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether the client joined this Room or not. */
+    /* CompleteClass */
+    var isJoined: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether this Room requires a password to be joined or not. */
+    /* CompleteClass */
+    var isPasswordProtected: Boolean = js.native
+    
+    /** @type {Requests.MMO.MapLimits} Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+    /* CompleteClass */
+    var lowerMapLimit: MapLimits = js.native
+    
+    /** @type {number} Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
+    /* CompleteClass */
+    var maxSpectators: Double = js.native
+    
+    /** @type {number} Returns the maximum number of users allowed in this Room. */
+    /* CompleteClass */
+    var maxUsers: Double = js.native
+    
+    /** @type {string} Indicates the name of this Room. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {Object} Defines a generic utility object that can be used to store custom Room data. */
+    /* CompleteClass */
+    var properties: js.Object = js.native
   }
   
   //#endregion
@@ -115,7 +360,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.BoolMatch")
     @js.native
     class BoolMatch ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch
     /* static members */
     object BoolMatch {
       
@@ -141,7 +387,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.LogicOperator")
     @js.native
     class LogicOperator ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator
     /* static members */
     object LogicOperator {
       
@@ -167,7 +414,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.MatchExpression")
     @js.native
     class MatchExpression protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression {
       def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch, value: js.Any) = this()
       def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch, value: js.Any) = this()
       /**
@@ -195,7 +443,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.NumberMatch")
     @js.native
     class NumberMatch ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch
     /* static members */
     object NumberMatch {
       
@@ -249,7 +498,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.RoomProperties")
     @js.native
     class RoomProperties ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.RoomProperties
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.RoomProperties
     /* static members */
     object RoomProperties {
       
@@ -331,7 +581,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.StringMatch")
     @js.native
     class StringMatch ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.StringMatch
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.StringMatch
     /* static members */
     object StringMatch {
       
@@ -378,7 +629,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Match.UserProperties")
     @js.native
     class UserProperties ()
-      extends typings.smartFoxServer.SFS2X.Entities.Match.UserProperties
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Match.UserProperties
     /* static members */
     object UserProperties {
       
@@ -433,7 +685,8 @@ object Entities {
   @JSGlobal("SFS2X.Entities.SFSBuddy")
   @js.native
   class SFSBuddy protected ()
-    extends typings.smartFoxServer.SFS2X.Entities.SFSBuddy {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.SFSBuddy {
     /**
       * Creates a new SFSBuddy instance.
       * @param {number}  id        The buddy id.
@@ -443,14 +696,95 @@ object Entities {
       */
     def this(id: Double, name: String) = this()
     def this(id: Double, name: String, isBlocked: Boolean) = this()
-    def this(id: Double, name: String, isBlocked: js.UndefOr[scala.Nothing], isTemp: Boolean) = this()
     def this(id: Double, name: String, isBlocked: Boolean, isTemp: Boolean) = this()
+    def this(id: Double, name: String, isBlocked: Unit, isTemp: Boolean) = this()
+    
+    /**
+      * Indicates whether this user has the specified Buddy Variable set or not.
+      * @param  {string}  varName The name of the Buddy Variable whose existance must be checked.
+      * @return {boolean}         Returns: true if a Buddy Variable with the passed name is set for this buddy.
+      */
+    /* CompleteClass */
+    override def containsVariable(varName: String): Boolean = js.native
+    
+    /**
+      * Returns the nickname of this buddy. If the nickname is not set, null is returned.
+      * @return {string} Returns: The nickname of the buddy.
+      */
+    /* CompleteClass */
+    override def getNickName(): String = js.native
+    
+    /**
+      * Retrieves the list of persistent Buddy Variables for this buddy.
+      * @return {Variables.SFSBuddyVariable[]} Returns: An array of SFSBuddyVariable objects.
+      */
+    /* CompleteClass */
+    override def getOfflineVariables(): js.Array[SFSBuddyVariable] = js.native
+    
+    /**
+      * Retrieves the list of non-persistent Buddy Variables for this buddy.
+      * @return {Variables.SFSBuddyVariable[]} Returns: An array of SFSBuddyVariable objects.
+      */
+    /* CompleteClass */
+    override def getOnlineVariables(): js.Array[SFSBuddyVariable] = js.native
+    
+    /**
+      * Returns the custom state of this buddy. Examples of custom states are "Available", "Busy", "Be right back", etc. If the custom state is not set, null is returned.
+      * @return {string} Returns: The custom state of the buddy.
+      */
+    /* CompleteClass */
+    override def getState(): String = js.native
+    
+    /**
+      * Retrieves a Buddy Variable from its name.
+      * @param  {string}                     varName The name of the Buddy Variable to be retrieved.
+      * @return {Variables.SFSBuddyVariable}         Returns: The object representing the Buddy Variable, or null if no Buddy Variable with the passed name is associated to this buddy.
+      */
+    /* CompleteClass */
+    override def getVariable(varName: String): SFSBuddyVariable = js.native
+    
+    /**
+      * Retrieves all the Buddy Variables of this user.
+      * @return {Variables.SFSBuddyVariable[]} Returns: The list of SFSBuddyVariable objects associated to the buddy.
+      */
+    /* CompleteClass */
+    override def getVariables(): js.Array[SFSBuddyVariable] = js.native
+    
+    /** @type {number} Indicates the id of this buddy. */
+    /* CompleteClass */
+    var id: Double = js.native
+    
+    /**
+      * Indicates whether this buddy is blocked in the current user's buddy list or not. A buddy can be blocked by means of a BlockBuddyRequest request.
+      * @return {boolean} Returns: true if the buddy is blocked.
+      */
+    /* CompleteClass */
+    override def isBlocked(): Boolean = js.native
+    
+    /**
+      * Indicates whether this buddy is online in the Buddy List system or not.
+      * @return {boolean} Returns: true if the buddy is online.
+      */
+    /* CompleteClass */
+    override def isOnline(): Boolean = js.native
+    
+    /**
+      * Indicates whether this buddy is temporary (non-persistent) in the current user's buddy list or not.
+      * @return {boolean} Returns: true if the buddy is temporary.
+      */
+    /* CompleteClass */
+    override def isTemp(): Boolean = js.native
+    
+    /** @type {string} Indicates the name of this buddy. */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSGlobal("SFS2X.Entities.SFSRoom")
   @js.native
   class SFSRoom protected ()
-    extends typings.smartFoxServer.SFS2X.Entities.SFSRoom {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.SFSRoom {
     /**
       * Creates a new SFSRoom instance.
       * @param {number} id      The Room id.
@@ -459,12 +793,149 @@ object Entities {
       */
     def this(id: Double, name: String) = this()
     def this(id: Double, name: String, groupId: String) = this()
+    
+    /**
+      * Indicates whether the specified user is currently inside this Room or not.
+      * @param  {SFSUser} user The SFSUser object representing the user whose presence in this Room must be checked.
+      * @return {boolean}      Returns: true if the user is inside this Room; false otherwise.
+      */
+    /* CompleteClass */
+    override def containsUser(user: typings.smartFoxServer.SFS2X.Entities.SFSUser): Boolean = js.native
+    
+    /**
+      * Indicates whether this Room has the specified Room Variable set or not.
+      * @param  {string}  varName The name of the Room Variable whose existance in this Room must be checked.
+      * @return {boolean}         Returns: true if a Room Variable with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def containsVariable(varName: String): Boolean = js.native
+    
+    /**
+      * Returns the maximum amount of users, including spectators, that can be contained in this Room.
+      * @return {number} Returns: Maximum number of users that can enter the Room.
+      */
+    /* CompleteClass */
+    override def getCapacity(): Double = js.native
+    
+    /**
+      * Retrieves the list of SFSUser objects representing the players currently inside this Room (Game Rooms only).
+      * @return {SFSUser[]} Returns: The list of SFSUser objects representing the users who joined the Room as players.
+      */
+    /* CompleteClass */
+    override def getPlayerList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a reference to the Room Manager which manages this Room.
+      * @return {Managers.RoomManager} Returns: The Room Manager to which this Room is associated.
+      */
+    /* CompleteClass */
+    override def getRoomManager(): RoomManager = js.native
+    
+    /**
+      * Returns the current number of spectators in this Room (Game Rooms only).
+      * @return {number} Returns: Current number of spectators in the Room.
+      */
+    /* CompleteClass */
+    override def getSpectatorCount(): Double = js.native
+    
+    /**
+      * Retrieves the list of SFSUser objects representing the spectators currently inside this Room (Game Rooms only).
+      * @return {SFSUser[]} Returns: The list of SFSUser objects representing the users who joined the Room as spectators.
+      */
+    /* CompleteClass */
+    override def getSpectatorList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a SFSUser object from its id property.
+      * @param  {number}  id The id of the user to be found.
+      * @return {SFSUser}    Returns: An object representing the user, or null if no user with the passed id exists in this Room.
+      */
+    /* CompleteClass */
+    override def getUserById(id: Double): typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+    
+    /**
+      * Retrieves a SFSUser object from its name property.
+      * @param  {string}  name The name of the user to be found.
+      * @return {SFSUser}      Returns: An object representing the user, or null if no user with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def getUserByName(name: String): typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
+    
+    /**
+      * Returns the current number of users in this Room. In case of Game Rooms, this is the number of players.
+      * @return {number} Returns: Current number of users in the Room.
+      */
+    /* CompleteClass */
+    override def getUserCount(): Double = js.native
+    
+    /**
+      * Returns the current number of users in this Room. In case of Game Rooms, this is the number of players.
+      * @return {SFSUser[]} Returns: Current number of users in the Room.
+      */
+    /* CompleteClass */
+    override def getUserList(): js.Array[typings.smartFoxServer.SFS2X.Entities.SFSUser] = js.native
+    
+    /**
+      * Retrieves a Room Variable from its name.
+      * @param  {string}                    varName The name of the Room Variable to be retrieved.
+      * @return {Variables.SFSRoomVariable}         Returns: The object representing the Room Variable, or null if no Room Variable with the passed name exists in this Room.
+      */
+    /* CompleteClass */
+    override def getVariable(varName: String): SFSRoomVariable = js.native
+    
+    /**
+      * Retrieves all the Room Variables of this Room.
+      * @return {Variables.SFSRoomVariable[]} Returns: The list of SFSRoomVariable objects associated with this Room.
+      */
+    /* CompleteClass */
+    override def getVariables(): js.Array[SFSRoomVariable] = js.native
+    
+    /** @type {string} Returns the Room Group name. */
+    /* CompleteClass */
+    var groupId: String = js.native
+    
+    /** @type {number} Indicates the id of this Room. */
+    /* CompleteClass */
+    var id: Double = js.native
+    
+    /** @type {boolean} Indicates whether this is a Game Room or not. */
+    /* CompleteClass */
+    var isGame: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether this Room is hidden or not. */
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether the client joined this Room or not. */
+    /* CompleteClass */
+    var isJoined: Boolean = js.native
+    
+    /** @type {boolean} Indicates whether this Room requires a password to be joined or not. */
+    /* CompleteClass */
+    var isPasswordProtected: Boolean = js.native
+    
+    /** @type {number} Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
+    /* CompleteClass */
+    var maxSpectators: Double = js.native
+    
+    /** @type {number} Returns the maximum number of users allowed in this Room. */
+    /* CompleteClass */
+    var maxUsers: Double = js.native
+    
+    /** @type {string} Indicates the name of this Room. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {Object} Defines a generic utility object that can be used to store custom Room data. */
+    /* CompleteClass */
+    var properties: js.Object = js.native
   }
   
   @JSGlobal("SFS2X.Entities.SFSUser")
   @js.native
   class SFSUser protected ()
-    extends typings.smartFoxServer.SFS2X.Entities.SFSUser {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.SFSUser {
     /**
       * Creates a new SFSUser instance.
       * @param {number}  id     The user id.
@@ -473,12 +944,141 @@ object Entities {
       */
     def this(id: Double, name: String) = this()
     def this(id: Double, name: String, isItMe: Boolean) = this()
+    
+    /** @type {Data.Vec3D} Returns the entry point of this user in the current user's AoI. */
+    /* CompleteClass */
+    var aoiEntryPoint: Vec3D = js.native
+    
+    /**
+      * Indicates whether this user has the specified User Variable set or not.
+      * @param  {string}  varName The name of the User Variable whose existance must be checked.
+      * @return {boolean}         Returns: true if a User Variable with the passed name is set for this user.
+      */
+    /* CompleteClass */
+    override def containsVariable(varName: String): Boolean = js.native
+    
+    /**
+      * Returns the playerId value of this user in the passed Room. See the playerId property description for more informations.
+      * @param  {SFSRoom} room The SFSRoom object representing the Room to retrieve the player id from.
+      * @return {number}       Returns: The playerId of this user in the passed Room.
+      */
+    /* CompleteClass */
+    override def getPlayerId(room: typings.smartFoxServer.SFS2X.Entities.SFSRoom): Double = js.native
+    
+    /**
+      * Returns a reference to the User Manager which manages this user.
+      * @return {Managers.UserManager} Returns: The User Manager to which this user is associated.
+      */
+    /* CompleteClass */
+    override def getUserManager(): UserManager = js.native
+    
+    /**
+      * Retrieves a User Variable from its name.
+      * @param  {string}                    varName The name of the User Variable to be retrieved.
+      * @return {Variables.SFSUserVariable}         Returns: The object representing the User Variable, or null if no User Variable with the passed name is associated with this user.
+      */
+    /* CompleteClass */
+    override def getVariable(varName: String): SFSUserVariable = js.native
+    
+    /**
+      * Retrieves all the User Variables of this user.
+      * @return {Variables.SFSUserVariable[]} Returns: The list of SFSUserVariable objects associated with the user.
+      */
+    /* CompleteClass */
+    override def getVariables(): js.Array[SFSUserVariable] = js.native
+    
+    /** @type {number} Indicates the id of this user. It is unique and it is generated by the server when the user is created. */
+    /* CompleteClass */
+    var id: Double = js.native
+    
+    /**
+      * Indicates whether this user logged in as an administrator or not. Administrator users have the privilegeId property set to UserPrivileges.ADMINISTRATOR.
+      * @return {boolean} Returns: true if this user is an administrator.
+      */
+    /* CompleteClass */
+    override def isAdmin(): Boolean = js.native
+    
+    /**
+      * Indicates whether this user logged in as a guest or not. Guest users have the privilegeId property set to UserPrivileges.GUEST.
+      * @return {boolean} Returns: true if this user is a guest.
+      */
+    /* CompleteClass */
+    override def isGuest(): Boolean = js.native
+    
+    /** @type {boolean} Indicates if this SFSUser object represents the current client. */
+    /* CompleteClass */
+    var isItMe: Boolean = js.native
+    
+    /**
+      * Indicates whether this user joined the passed Room or not.
+      * @param  {SFSRoom} room The SFSRoom object representing the Room where to check the user presence.
+      * @return {boolean}      Returns: true if this user is inside the passed Room.
+      */
+    /* CompleteClass */
+    override def isJoinedInRoom(room: typings.smartFoxServer.SFS2X.Entities.SFSRoom): Boolean = js.native
+    
+    /**
+      * Indicates whether this user logged in as a moderator or not. Moderator users have the privilegeId property set to UserPrivileges.MODERATOR.
+      * @return {boolean} Returns: true if this user is a moderator.
+      */
+    /* CompleteClass */
+    override def isModerator(): Boolean = js.native
+    
+    /**
+      * Indicates whether this user is a player (playerId greater than 0) in the last joined Room or not. Non-Game Rooms always return false.
+      * @return {boolean} Returns: true if this user is a player in the last joined Room.
+      */
+    /* CompleteClass */
+    override def isPlayer(): Boolean = js.native
+    
+    /**
+      * Indicates whether this user is a player (playerId greater than 0) in the passed Room or not. Non-Game Rooms always return false.
+      * @param  {SFSRoom} room The SFSRoom object representing the Room where to check if this user is a player.
+      * @return {boolean}      Returns: true if this user is a player in the passed Room.
+      */
+    /* CompleteClass */
+    override def isPlayerInRoom(room: typings.smartFoxServer.SFS2X.Entities.SFSRoom): Boolean = js.native
+    
+    /**
+      * Indicates whether this user is a spectator (playerId lower than 0) in the last joined Room or not. Non-Game Rooms always return false.
+      * @return {boolean} Returns: true if this user is a spectator in the last joined Room.
+      */
+    /* CompleteClass */
+    override def isSpectator(): Boolean = js.native
+    
+    /**
+      * Indicates whether this user is a spectator (playerId lower than 0) in the passed Room or not. Non-Game Rooms always return false.
+      * @param  {SFSRoom} room The SFSRoom object representing the Room where to check if this user is a spectator.
+      * @return {boolean}      Returns: true if this user is a spectator in the passed Room.
+      */
+    /* CompleteClass */
+    override def isSpectatorInRoom(room: typings.smartFoxServer.SFS2X.Entities.SFSRoom): Boolean = js.native
+    
+    /**
+      * Indicates whether this user logged in as a standard user or not. Standard users have the privilegeId property set to UserPrivileges.STANDARD.
+      * @return {boolean} Returns: true if this user is a standard user.
+      */
+    /* CompleteClass */
+    override def isStandardUser(): Boolean = js.native
+    
+    /** @type {string} Indicates the name of this user. Two users in the same Zone can't have the same name. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {number} Returns the id which identifies the privilege level of this user. */
+    /* CompleteClass */
+    var privilegeId: Double = js.native
+    
+    /** @type {Object} Defines a generic utility object that can be used to store custom user data. The values added to this object are for client-side use only and are never transmitted to the server or to the other clients. */
+    /* CompleteClass */
+    var properties: js.Object = js.native
   }
   
   @JSGlobal("SFS2X.Entities.UserPrivileges")
   @js.native
   class UserPrivileges ()
-    extends typings.smartFoxServer.SFS2X.Entities.UserPrivileges
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Entities.UserPrivileges
   /* static members */
   object UserPrivileges {
     
@@ -523,7 +1123,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Variables.MMOItemVariable")
     @js.native
     class MMOItemVariable protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.MMOItemVariable {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.MMOItemVariable {
       /**
         * Creates a new MMOItemVariable instance.
         * @param {string} name  The name of the MMOItem Variable.
@@ -532,12 +1133,36 @@ object Entities {
         */
       def this(name: String, value: js.Any) = this()
       def this(name: String, value: js.Any, `type`: Double) = this()
+      
+      /**
+        * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
+        * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
+        * @return {string}        Returns: The variable type name.
+        */
+      /* CompleteClass */
+      override def getTypeName(typeId: Double): String = js.native
+      
+      /**
+        * Indicates if the variable is null.
+        * @return {boolean} Returns: true if the variable has a null value.
+        */
+      /* CompleteClass */
+      override def isNull(): Boolean = js.native
+      
+      /** @type {string} Indicates the name of this variable. */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /** @type {number} Returns the value of this variable. */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     
     @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables")
     @js.native
     class ReservedBuddyVariables ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.ReservedBuddyVariables
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.ReservedBuddyVariables
     /* static members */
     object ReservedBuddyVariables {
       
@@ -570,7 +1195,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Variables.ReservedRoomVariables")
     @js.native
     class ReservedRoomVariables ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
     /* static members */
     object ReservedRoomVariables {
       
@@ -589,7 +1215,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Variables.SFSBuddyVariable")
     @js.native
     class SFSBuddyVariable protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable {
       /**
         * Creates a new SFSBuddyVariable instance.
         * @param {string} name  The name of the Buddy Variable.
@@ -598,6 +1225,36 @@ object Entities {
         */
       def this(name: String, value: js.Any) = this()
       def this(name: String, value: js.Any, `type`: Double) = this()
+      
+      /**
+        * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
+        * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
+        * @return {string}        Returns: The variable type name.
+        */
+      /* CompleteClass */
+      override def getTypeName(typeId: Double): String = js.native
+      
+      /**
+        * Indicates if the variable is null.
+        * @return {boolean} Returns: true if the variable has a null value.
+        */
+      /* CompleteClass */
+      override def isNull(): Boolean = js.native
+      
+      /**
+        * Indicates whether the Buddy Variable is persistent or not.
+        * @return {boolean} Returns: true if the Buddy Variable is persistent.
+        */
+      /* CompleteClass */
+      override def isOffline(): Boolean = js.native
+      
+      /** @type {string} Indicates the name of this variable. */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /** @type {number} Returns the value of this variable. */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     /* static members */
     object SFSBuddyVariable {
@@ -617,7 +1274,8 @@ object Entities {
     @JSGlobal("SFS2X.Entities.Variables.SFSRoomVariable")
     @js.native
     class SFSRoomVariable protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable {
       /**
         * Creates a new SFSRoomVariable instance.
         * @param {string} name  The name of the Room Variable.
@@ -626,12 +1284,44 @@ object Entities {
         */
       def this(name: String, value: js.Any) = this()
       def this(name: String, value: js.Any, `type`: Double) = this()
+      
+      /**
+        * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
+        * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
+        * @return {string}        Returns: The variable type name.
+        */
+      /* CompleteClass */
+      override def getTypeName(typeId: Double): String = js.native
+      
+      /**
+        * Indicates if the variable is null.
+        * @return {boolean} Returns: true if the variable has a null value.
+        */
+      /* CompleteClass */
+      override def isNull(): Boolean = js.native
+      
+      /** @type {boolean} Indicates whether this Room Variable is persistent or not. */
+      /* CompleteClass */
+      var isPersistent: Boolean = js.native
+      
+      /** @type {boolean} Indicates whether this Room Variable is private or not. */
+      /* CompleteClass */
+      var isPrivate: Boolean = js.native
+      
+      /** @type {string} Indicates the name of this variable. */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /** @type {number} Returns the value of this variable. */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     
     @JSGlobal("SFS2X.Entities.Variables.SFSUserVariable")
     @js.native
     class SFSUserVariable protected ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable {
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable {
       /**
         * Creates a new SFSUserVariable instance.
         * @param {string} name  The name of the User Variable.
@@ -640,12 +1330,36 @@ object Entities {
         */
       def this(name: String, value: js.Any) = this()
       def this(name: String, value: js.Any, `type`: Double) = this()
+      
+      /**
+        * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
+        * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
+        * @return {string}        Returns: The variable type name.
+        */
+      /* CompleteClass */
+      override def getTypeName(typeId: Double): String = js.native
+      
+      /**
+        * Indicates if the variable is null.
+        * @return {boolean} Returns: true if the variable has a null value.
+        */
+      /* CompleteClass */
+      override def isNull(): Boolean = js.native
+      
+      /** @type {string} Indicates the name of this variable. */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /** @type {number} Returns the value of this variable. */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     
     @JSGlobal("SFS2X.Entities.Variables.VariableType")
     @js.native
     class VariableType ()
-      extends typings.smartFoxServer.SFS2X.Entities.Variables.VariableType
+      extends StObject
+         with typings.smartFoxServer.SFS2X.Entities.Variables.VariableType
     /* static members */
     object VariableType {
       

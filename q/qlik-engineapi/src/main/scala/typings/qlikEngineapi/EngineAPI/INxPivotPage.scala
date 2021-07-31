@@ -2,35 +2,33 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxPivotPage...
   */
-@js.native
 trait INxPivotPage extends StObject {
   
   /**
     * Size and offset of the data in the matrix.
     */
-  var qArea: IRect = js.native
+  var qArea: IRect
   
   /**
     * Array of data.
     */
-  var qData: js.Array[INxPivotValuePoint] = js.native
+  var qData: js.Array[INxPivotValuePoint]
   
   /**
     * Information about the left dimension values of a pivot table.
     */
-  var qLeft: js.Array[INxPivotDimensionCell] = js.native
+  var qLeft: js.Array[INxPivotDimensionCell]
   
   /**
     * Information about the top dimension values of a pivot table.
     * If there is no top dimension in the pivot table, information about the measures are given.
     */
-  var qTop: js.Array[INxPivotDimensionCell] = js.native
+  var qTop: js.Array[INxPivotDimensionCell]
 }
 object INxPivotPage {
   

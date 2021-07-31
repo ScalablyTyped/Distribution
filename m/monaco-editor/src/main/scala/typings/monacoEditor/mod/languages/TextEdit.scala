@@ -4,17 +4,15 @@ import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.editor.EndOfLineSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEdit extends StObject {
   
-  var eol: js.UndefOr[EndOfLineSequence] = js.native
+  var eol: js.UndefOr[EndOfLineSequence] = js.undefined
   
-  var range: IRange = js.native
+  var range: IRange
   
-  var text: String = js.native
+  var text: String
 }
 object TextEdit {
   

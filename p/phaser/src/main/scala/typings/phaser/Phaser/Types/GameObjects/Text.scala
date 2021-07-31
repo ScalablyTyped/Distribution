@@ -4,7 +4,6 @@ import typings.phaser.TextStyleWordWrapCallback
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
@@ -12,23 +11,22 @@ object Text {
   /**
     * Font metrics for a Text Style object.
     */
-  @js.native
   trait TextMetrics extends StObject {
     
     /**
       * The ascent of the font.
       */
-    var ascent: Double = js.native
+    var ascent: Double
     
     /**
       * The descent of the font.
       */
-    var descent: Double = js.native
+    var descent: Double
     
     /**
       * The size of the font.
       */
-    var fontSize: Double = js.native
+    var fontSize: Double
   }
   object TextMetrics {
     
@@ -55,38 +53,37 @@ object Text {
   /**
     * A Text Padding configuration object as used by the Text Style.
     */
-  @js.native
   trait TextPadding extends StObject {
     
     /**
       * The amount of padding added to the bottom of the Text object.
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of padding added to the left of the Text object.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of padding added to the right of the Text object.
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of padding added to the top of the Text object.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /**
       * If set this value is used for both the left and right padding.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * If set this value is used for both the top and bottom padding.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object TextPadding {
     
@@ -140,38 +137,37 @@ object Text {
   /**
     * A Text Shadow configuration object as used by the Text Style.
     */
-  @js.native
   trait TextShadow extends StObject {
     
     /**
       * The amount of blur applied to the shadow. Leave as zero for a hard shadow.
       */
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
     /**
       * The color of the shadow, given as a CSS string value.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Apply the shadow to the fill effect on the Text object?
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The horizontal offset of the shadow.
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical offset of the shadow.
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /**
       * Apply the shadow to the stroke effect on the Text object?
       */
-    var stroke: js.UndefOr[Boolean] = js.native
+    var stroke: js.UndefOr[Boolean] = js.undefined
   }
   object TextShadow {
     
@@ -225,108 +221,107 @@ object Text {
   /**
     * A Text Style configuration object as used by the Text Game Object.
     */
-  @js.native
   trait TextStyle extends StObject {
     
     /**
       * The alignment of the Text. This only impacts multi-line text. Either `left`, `right`, `center` or `justify`.
       */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /**
       * A solid fill color that is rendered behind the Text object. Given as a CSS string color such as `#ff0`.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * The amount of horizontal padding added to the width of the text when calculating the font metrics.
       */
-    var baselineX: js.UndefOr[Double] = js.native
+    var baselineX: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of vertical padding added to the height of the text when calculating the font metrics.
       */
-    var baselineY: js.UndefOr[Double] = js.native
+    var baselineY: js.UndefOr[Double] = js.undefined
     
     /**
       * The color the Text is drawn in. Given as a CSS string color such as `#fff` or `rgb()`.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Force the Text object to have the exact height specified in this property. Leave as zero for it to change accordingly to content.
       */
-    var fixedHeight: js.UndefOr[Double] = js.native
+    var fixedHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Force the Text object to have the exact width specified in this property. Leave as zero for it to change accordingly to content.
       */
-    var fixedWidth: js.UndefOr[Double] = js.native
+    var fixedWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The font the Text object will render with. This is a Canvas style font string.
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * The font size, as a CSS size string.
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /**
       * Any addition font styles, such as 'strong'.
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of lines to display within the Text object.
       */
-    var maxLines: js.UndefOr[integer] = js.native
+    var maxLines: js.UndefOr[integer] = js.undefined
     
     /**
       * A Text Metrics object. Use this to avoid expensive font size calculations in text heavy games.
       */
-    var metrics: js.UndefOr[TextMetrics] = js.native
+    var metrics: js.UndefOr[TextMetrics] = js.undefined
     
     /**
       * A Text Padding object.
       */
-    var padding: js.UndefOr[TextPadding] = js.native
+    var padding: js.UndefOr[TextPadding] = js.undefined
     
     /**
       * Sets the resolution (DPI setting) of the Text object. Leave at zero for it to use the game resolution.
       */
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to `true` if this Text object should render from right-to-left.
       */
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Text shadow configuration object.
       */
-    var shadow: js.UndefOr[TextShadow] = js.native
+    var shadow: js.UndefOr[TextShadow] = js.undefined
     
     /**
       * The color used to stroke the Text if the `strokeThickness` property is greater than zero.
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
     /**
       * The thickness of the stroke around the Text. Set to zero for no stroke.
       */
-    var strokeThickness: js.UndefOr[Double] = js.native
+    var strokeThickness: js.UndefOr[Double] = js.undefined
     
     /**
       * This is the string used to aid Canvas in calculating the height of the font.
       */
-    var testString: js.UndefOr[String] = js.native
+    var testString: js.UndefOr[String] = js.undefined
     
     /**
       * The Text Word wrap configuration object.
       */
-    var wordWrap: js.UndefOr[TextWordWrap] = js.native
+    var wordWrap: js.UndefOr[TextWordWrap] = js.undefined
   }
   object TextStyle {
     
@@ -464,28 +459,27 @@ object Text {
   /**
     * A Text Word Wrap configuration object as used by the Text Style configuration.
     */
-  @js.native
   trait TextWordWrap extends StObject {
     
     /**
       * Provide a custom callback when word wrapping is enabled.
       */
-    var callback: js.UndefOr[TextStyleWordWrapCallback] = js.native
+    var callback: js.UndefOr[TextStyleWordWrapCallback] = js.undefined
     
     /**
       * The context in which the word wrap callback is invoked.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.native
+    var callbackScope: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Use basic or advanced word wrapping?
       */
-    var useAdvancedWrap: js.UndefOr[Boolean] = js.native
+    var useAdvancedWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The width at which text should be considered for word-wrapping.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TextWordWrap {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDirectoryResponse extends StObject {
   
   /**
     * The ARN of the published schema in the Directory. Once a published schema is copied into the directory, it has its own ARN, which is referred to applied schema ARN. For more information, see arns.
     */
-  var AppliedSchemaArn: Arn = js.native
+  var AppliedSchemaArn: Arn
   
   /**
     * The ARN that is associated with the Directory. For more information, see arns.
     */
-  var DirectoryArn: typings.awsSdk.clouddirectoryMod.DirectoryArn = js.native
+  var DirectoryArn: typings.awsSdk.clouddirectoryMod.DirectoryArn
   
   /**
     * The name of the Directory.
     */
-  var Name: DirectoryName = js.native
+  var Name: DirectoryName
   
   /**
     * The root object node of the created directory.
     */
-  var ObjectIdentifier: typings.awsSdk.clouddirectoryMod.ObjectIdentifier = js.native
+  var ObjectIdentifier: typings.awsSdk.clouddirectoryMod.ObjectIdentifier
 }
 object CreateDirectoryResponse {
   

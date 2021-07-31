@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosDeviceCatalog extends StObject {
   
   /** The set of supported iOS device models. */
-  var models: js.UndefOr[js.Array[IosModel]] = js.native
+  var models: js.UndefOr[js.Array[IosModel]] = js.undefined
   
   /** The set of supported runtime configurations. */
-  var runtimeConfiguration: js.UndefOr[IosRuntimeConfiguration] = js.native
+  var runtimeConfiguration: js.UndefOr[IosRuntimeConfiguration] = js.undefined
   
   /** The set of supported iOS software versions. */
-  var versions: js.UndefOr[js.Array[IosVersion]] = js.native
+  var versions: js.UndefOr[js.Array[IosVersion]] = js.undefined
   
   /** The set of supported Xcode versions. */
-  var xcodeVersions: js.UndefOr[js.Array[XcodeVersion]] = js.native
+  var xcodeVersions: js.UndefOr[js.Array[XcodeVersion]] = js.undefined
 }
 object IosDeviceCatalog {
   

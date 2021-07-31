@@ -2,34 +2,32 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An item in the carousel.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem extends StObject {
   
   /**
     * Optional. The body text of the card.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The image to display.
     */
-  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /**
     * Required. Additional info about the option item.
     */
-  var info: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo] = js.native
+  var info: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo] = js.undefined
   
   /**
     * Required. Title of the carousel item.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem {
   

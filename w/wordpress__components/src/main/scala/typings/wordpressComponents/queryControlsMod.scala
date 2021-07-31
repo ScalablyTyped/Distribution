@@ -8,7 +8,6 @@ import typings.wordpressComponents.anon.OnOrderByChange
 import typings.wordpressComponents.queryControlsMod.QueryControls.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryControlsMod {
@@ -61,6 +60,6 @@ object queryControlsMod {
     
     type OrderProps = OnOrderByChange | js.Object
     
-    type Props = CategoryProps with OrderProps with NumberProps
+    type Props = CategoryProps & OrderProps & NumberProps
   }
 }

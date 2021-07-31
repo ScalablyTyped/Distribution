@@ -14,7 +14,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object querySetMod {
@@ -34,6 +33,10 @@ object querySetMod {
     def this(modelClass: ModelClass[M], clauses: js.Array[QueryClause[js.Object]], opts: js.Object) = this()
   }
   object default {
+    
+    @JSImport("redux-orm/QuerySet", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Register custom method on a `QuerySet` class specification.
@@ -59,14 +62,15 @@ object querySetMod {
       * // use shared method
       * const unreleased = customQs.unreleased();
       */
-    @JSImport("redux-orm/QuerySet", "default.addSharedMethod")
-    @js.native
-    def addSharedMethod(methodName: String): Unit = js.native
+    @scala.inline
+    def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("redux-orm/QuerySet", "QuerySet")
   @js.native
-  class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected () extends QueryBuilder[M, InstanceProps] {
+  class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected ()
+    extends StObject
+       with QueryBuilder[M, InstanceProps] {
     /**
       * Creates a `QuerySet`. The constructor is mainly for internal use;
       * Access QuerySet instances from {@link Model}.
@@ -99,9 +103,13 @@ object querySetMod {
       *
       * @return references to the plain JS objects represented by the QuerySet
       */
-    def toRefArray(): js.Array[Ref[M] with InstanceProps] = js.native
+    def toRefArray(): js.Array[Ref[M] & InstanceProps] = js.native
   }
   object QuerySet {
+    
+    @JSImport("redux-orm/QuerySet", "QuerySet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Register custom method on a `QuerySet` class specification.
@@ -127,30 +135,29 @@ object querySetMod {
       * // use shared method
       * const unreleased = customQs.unreleased();
       */
-    @JSImport("redux-orm/QuerySet", "QuerySet.addSharedMethod")
-    @js.native
-    def addSharedMethod(methodName: String): Unit = js.native
+    @scala.inline
+    def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Lookup clause as predicate accepting plain object Model representation stored in the database.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupPredicate[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], _] */] = js.Function1[/* row */ Ref[M], Boolean]
+    type LookupPredicate[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = js.Function1[/* row */ Ref[M], Boolean]
     
     /**
       * Lookup clause as an object specifying props to match with plain object Model representation stored in the database.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], _] */] = Partial[Ref[M]] with (Record[String, Serializable])
+    type LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = Partial[Ref[M]] & (Record[String, Serializable])
     
     /**
       * A union of lookup clauses.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupSpec[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], _] */] = LookupProps[M] | LookupPredicate[M]
+    type LookupSpec[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = LookupProps[M] | LookupPredicate[M]
     
     /**
       * Interface for building queries in fluent style
@@ -264,7 +271,7 @@ object querySetMod {
       *
       * {@see QuerySet.orderBy}
       */
-    type SortIteratee[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], _] */] = (/* keyof redux-orm.redux-orm/Model.Ref<M> */ String) | (js.Function1[/* row */ Ref[M], js.Any])
+    type SortIteratee[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = (/* keyof redux-orm.redux-orm/Model.Ref<M> */ String) | (js.Function1[/* row */ Ref[M], js.Any])
     
     /**
       * Optional ordering direction.

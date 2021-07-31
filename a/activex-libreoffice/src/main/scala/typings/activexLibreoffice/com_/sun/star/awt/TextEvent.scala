@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a text event. */
-@js.native
-trait TextEvent extends EventObject {
+trait TextEvent
+  extends StObject
+     with EventObject {
   
   /** This is a dummy field only. Please ignore. */
-  var dummy1: Double = js.native
+  var dummy1: Double
 }
 object TextEvent {
   

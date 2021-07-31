@@ -2,86 +2,84 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcbRating extends StObject {
   
   /**
     * The videos Australian Classification Board (ACB) rating.
     */
-  var acbRating: String = js.native
+  var acbRating: String
   
   /**
     * The videos British Board of Film Classification (BBFC) rating.
     */
-  var bbfcRating: String = js.native
+  var bbfcRating: String
   
   /**
     * The videos Central Board of Film Certification (CBFC - India) rating.
     */
-  var cbfcRating: String = js.native
+  var cbfcRating: String
   
   /**
     * The videos Canadian Home Video Rating System (CHVRS) rating.
     */
-  var chvrsRating: String = js.native
+  var chvrsRating: String
   
   /**
     * The videos Departamento de Justiça, Classificação, Qualificação e Títulos (DJCQT - Brazil) rating.
     */
-  var djctqRating: String = js.native
+  var djctqRating: String
   
   /**
     * The videos Eirin rating. Eirin is the Japanese rating system.
     */
-  var eirinRating: String = js.native
+  var eirinRating: String
   
   /**
     * The videos Centre national du cinéma et de limage animé (French Ministry of Culture) rating.
     */
-  var fmocRating: String = js.native
+  var fmocRating: String
   
   /**
     * The videos Freiwillige Selbstkontrolle der Filmwirtschaft (FSK - Germany) rating.
     */
-  var fskRating: String = js.native
+  var fskRating: String
   
   /**
     * The videos Instituto de la Cinematografía y de las Artes Audiovisuales (ICAA - Spain) rating.
     */
-  var icaaRating: String = js.native
+  var icaaRating: String
   
   /**
     * The videos Korea Media Rating Board rating. The KMRB rates videos in South Korea.
     */
-  var kmrbRating: String = js.native
+  var kmrbRating: String
   
   /**
     * The videos Motion Picture Association of America (MPAA) rating.
     */
-  var mpaaRating: String = js.native
+  var mpaaRating: String
   
   /**
     * The videos Office of Film and Literature Classification (OFLC - New Zealand) rating.
     */
-  var oflcRating: String = js.native
+  var oflcRating: String
   
   /**
     * The videos General Directorate of Radio, Television and Cinematography (Mexico) rating.
     */
-  var rtcRating: String = js.native
+  var rtcRating: String
   
   /**
     * The videos National Film Registry of the Russian Federation (MKRF - Russia) rating.
     */
-  var russiaRating: String = js.native
+  var russiaRating: String
   
   /**
     * The videos TV Parental Guidelines (TVPG) rating.
     */
-  var tvpgRating: String = js.native
+  var tvpgRating: String
 }
 object AcbRating {
   

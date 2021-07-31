@@ -5,13 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a singe layer of configuration data */
-@js.native
 trait MultiLayerStratum
-  extends XMultiLayerStratum
+  extends StObject
+     with XMultiLayerStratum
      with XBackendEntities
 object MultiLayerStratum {
   

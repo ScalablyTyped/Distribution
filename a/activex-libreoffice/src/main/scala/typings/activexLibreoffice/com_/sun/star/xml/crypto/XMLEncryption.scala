@@ -5,13 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link XMLEncryption} */
-@js.native
 trait XMLEncryption
-  extends XXMLEncryption
+  extends StObject
+     with XXMLEncryption
      with XInitialization
 object XMLEncryption {
   
@@ -20,7 +19,7 @@ object XMLEncryption {
     acquire: () => Unit,
     decrypt: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate,
     encrypt: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XMLEncryption = {

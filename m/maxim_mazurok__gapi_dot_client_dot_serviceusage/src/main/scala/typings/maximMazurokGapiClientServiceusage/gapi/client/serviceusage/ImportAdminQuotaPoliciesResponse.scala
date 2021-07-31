@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAdminQuotaPoliciesResponse extends StObject {
   
   /** The policies that were created from the imported data. */
-  var policies: js.UndefOr[js.Array[AdminQuotaPolicy]] = js.native
+  var policies: js.UndefOr[js.Array[AdminQuotaPolicy]] = js.undefined
 }
 object ImportAdminQuotaPoliciesResponse {
   

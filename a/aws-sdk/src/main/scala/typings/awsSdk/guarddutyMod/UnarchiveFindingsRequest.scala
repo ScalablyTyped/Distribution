@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnarchiveFindingsRequest extends StObject {
   
   /**
     * The ID of the detector associated with the findings to unarchive.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The IDs of the findings to unarchive.
     */
-  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
+  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds
 }
 object UnarchiveFindingsRequest {
   

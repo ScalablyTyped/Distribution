@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.traditional
 */
 trait EastAsianVariantValues
-  extends _FontFaceFontVariantProperty
+  extends StObject
+     with _FontFaceFontVariantProperty
      with _FontVariantEastAsianProperty
      with _FontVariantProperty
 object EastAsianVariantValues {

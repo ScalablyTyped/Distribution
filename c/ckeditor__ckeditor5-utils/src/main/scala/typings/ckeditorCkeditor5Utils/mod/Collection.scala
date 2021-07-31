@@ -4,13 +4,13 @@ import typings.ckeditorCkeditor5Utils.anon.IdProperty
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ckeditor/ckeditor5-utils", "Collection")
 @js.native
 class Collection[T] ()
-  extends Iterable[T]
+  extends StObject
+     with Iterable[T]
      with Emitter {
   def this(options: IdProperty[T]) = this()
   

@@ -2,16 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of of content files (Information about the list of content files)
   */
-@js.native
 trait IStaticContentList extends StObject {
   
-  var qItems: IStaticContentListItem = js.native
+  var qItems: IStaticContentListItem
 }
 object IStaticContentList {
   

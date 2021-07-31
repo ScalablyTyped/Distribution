@@ -3,21 +3,19 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Teams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdatePullRequestReviewProtectionResponseData extends StObject {
   
-  var dismiss_stale_reviews: Boolean = js.native
+  var dismiss_stale_reviews: Boolean
   
-  var dismissal_restrictions: Teams = js.native
+  var dismissal_restrictions: Teams
   
-  var require_code_owner_reviews: Boolean = js.native
+  var require_code_owner_reviews: Boolean
   
-  var required_approving_review_count: Double = js.native
+  var required_approving_review_count: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ReposUpdatePullRequestReviewProtectionResponseData {
   

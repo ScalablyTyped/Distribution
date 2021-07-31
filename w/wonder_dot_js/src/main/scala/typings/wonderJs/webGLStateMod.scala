@@ -1,17 +1,16 @@
 package typings.wonderJs
 
 import typings.wonderJs.materialMod.Material
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/state/WebGLState", JSImport.Namespace)
-@js.native
-object webGLStateMod extends js.Object {
+object webGLStateMod {
+  
+  @JSImport("wonder.js/dist/es2015/renderer/state/WebGLState", "WebGLState")
   @js.native
-  abstract class WebGLState () extends js.Object {
+  abstract class WebGLState () extends StObject {
+    
     def setState(material: Material): Unit = js.native
   }
-  
 }
-

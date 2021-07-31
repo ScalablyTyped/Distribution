@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4BatchUpdateJobsResponse extends StObject {
   
   /** List of job mutation results from a batch update operation. It can change until operation status is FINISHED, FAILED or CANCELLED. */
-  var jobResults: js.UndefOr[js.Array[GoogleCloudTalentV4JobResult]] = js.native
+  var jobResults: js.UndefOr[js.Array[GoogleCloudTalentV4JobResult]] = js.undefined
 }
 object GoogleCloudTalentV4BatchUpdateJobsResponse {
   

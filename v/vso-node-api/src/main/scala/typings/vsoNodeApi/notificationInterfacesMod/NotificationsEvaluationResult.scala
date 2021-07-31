@@ -2,16 +2,14 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationsEvaluationResult extends StObject {
   
   /**
     * Count of generated notifications
     */
-  var count: Double = js.native
+  var count: Double
 }
 object NotificationsEvaluationResult {
   

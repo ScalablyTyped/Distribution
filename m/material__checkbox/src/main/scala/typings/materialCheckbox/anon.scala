@@ -2,47 +2,45 @@ package typings.materialCheckbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ANIMCHECKEDINDETERMINATE extends StObject {
     
-    var ANIM_CHECKED_INDETERMINATE: String = js.native
+    var ANIM_CHECKED_INDETERMINATE: String
     
-    var ANIM_CHECKED_UNCHECKED: String = js.native
+    var ANIM_CHECKED_UNCHECKED: String
     
-    var ANIM_INDETERMINATE_CHECKED: String = js.native
+    var ANIM_INDETERMINATE_CHECKED: String
     
-    var ANIM_INDETERMINATE_UNCHECKED: String = js.native
+    var ANIM_INDETERMINATE_UNCHECKED: String
     
-    var ANIM_UNCHECKED_CHECKED: String = js.native
+    var ANIM_UNCHECKED_CHECKED: String
     
-    var ANIM_UNCHECKED_INDETERMINATE: String = js.native
+    var ANIM_UNCHECKED_INDETERMINATE: String
     
-    var BACKGROUND: String = js.native
+    var BACKGROUND: String
     
-    var CHECKED: String = js.native
+    var CHECKED: String
     
-    var CHECKMARK: String = js.native
+    var CHECKMARK: String
     
-    var CHECKMARK_PATH: String = js.native
+    var CHECKMARK_PATH: String
     
-    var DISABLED: String = js.native
+    var DISABLED: String
     
-    var INDETERMINATE: String = js.native
+    var INDETERMINATE: String
     
-    var MIXEDMARK: String = js.native
+    var MIXEDMARK: String
     
-    var NATIVE_CONTROL: String = js.native
+    var NATIVE_CONTROL: String
     
-    var ROOT: String = js.native
+    var ROOT: String
     
-    var SELECTED: String = js.native
+    var SELECTED: String
     
-    var UPGRADED: String = js.native
+    var UPGRADED: String
   }
   object ANIMCHECKEDINDETERMINATE {
     
@@ -126,10 +124,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ANIMENDLATCHMS extends StObject {
     
-    var ANIM_END_LATCH_MS: Double = js.native
+    var ANIM_END_LATCH_MS: Double
   }
   object ANIMENDLATCHMS {
     
@@ -147,24 +144,23 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIACHECKEDATTR extends StObject {
     
-    var ARIA_CHECKED_ATTR: String = js.native
+    var ARIA_CHECKED_ATTR: String
     
-    var ARIA_CHECKED_INDETERMINATE_VALUE: String = js.native
+    var ARIA_CHECKED_INDETERMINATE_VALUE: String
     
-    var DATA_INDETERMINATE_ATTR: String = js.native
+    var DATA_INDETERMINATE_ATTR: String
     
-    var NATIVE_CONTROL_SELECTOR: String = js.native
+    var NATIVE_CONTROL_SELECTOR: String
     
-    var TRANSITION_STATE_CHECKED: String = js.native
+    var TRANSITION_STATE_CHECKED: String
     
-    var TRANSITION_STATE_INDETERMINATE: String = js.native
+    var TRANSITION_STATE_INDETERMINATE: String
     
-    var TRANSITION_STATE_INIT: String = js.native
+    var TRANSITION_STATE_INIT: String
     
-    var TRANSITION_STATE_UNCHECKED: String = js.native
+    var TRANSITION_STATE_UNCHECKED: String
   }
   object ARIACHECKEDATTR {
     
@@ -213,28 +209,27 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/checkbox.@material/checkbox/adapter.MDCCheckboxAdapter> */
-  @js.native
   trait PartialMDCCheckboxAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var forceLayout: js.UndefOr[js.Function0[Unit]] = js.native
+    var forceLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hasNativeControl: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasNativeControl: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isAttachedToDOM: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isAttachedToDOM: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isChecked: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isChecked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isIndeterminate: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isIndeterminate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeNativeControlAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+    var removeNativeControlAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
     
-    var setNativeControlAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setNativeControlAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.native
+    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.undefined
   }
   object PartialMDCCheckboxAdapter {
     

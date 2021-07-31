@@ -2,86 +2,84 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingPolicy extends StObject {
   
   /**
     * Specifies how the scaling adjustment is interpreted (for example, an absolute number or a percentage). The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
     */
-  var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.native
+  var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The CloudWatch alarms related to the policy.
     */
-  var Alarms: js.UndefOr[typings.awsSdk.autoscalingMod.Alarms] = js.native
+  var Alarms: js.UndefOr[typings.awsSdk.autoscalingMod.Alarms] = js.undefined
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The duration of the policy's cooldown period, in seconds.
     */
-  var Cooldown: js.UndefOr[typings.awsSdk.autoscalingMod.Cooldown] = js.native
+  var Cooldown: js.UndefOr[typings.awsSdk.autoscalingMod.Cooldown] = js.undefined
   
   /**
     * Indicates whether the policy is enabled (true) or disabled (false).
     */
-  var Enabled: js.UndefOr[ScalingPolicyEnabled] = js.native
+  var Enabled: js.UndefOr[ScalingPolicyEnabled] = js.undefined
   
   /**
     * The estimated time, in seconds, until a newly launched instance can contribute to the CloudWatch metrics.
     */
-  var EstimatedInstanceWarmup: js.UndefOr[typings.awsSdk.autoscalingMod.EstimatedInstanceWarmup] = js.native
+  var EstimatedInstanceWarmup: js.UndefOr[typings.awsSdk.autoscalingMod.EstimatedInstanceWarmup] = js.undefined
   
   /**
     * The aggregation type for the CloudWatch metrics. The valid values are Minimum, Maximum, and Average.
     */
-  var MetricAggregationType: js.UndefOr[XmlStringMaxLen32] = js.native
+  var MetricAggregationType: js.UndefOr[XmlStringMaxLen32] = js.undefined
   
   /**
     * The minimum value to scale by when the adjustment type is PercentChangeInCapacity. 
     */
-  var MinAdjustmentMagnitude: js.UndefOr[typings.awsSdk.autoscalingMod.MinAdjustmentMagnitude] = js.native
+  var MinAdjustmentMagnitude: js.UndefOr[typings.awsSdk.autoscalingMod.MinAdjustmentMagnitude] = js.undefined
   
   /**
     * Available for backward compatibility. Use MinAdjustmentMagnitude instead.
     */
-  var MinAdjustmentStep: js.UndefOr[typings.awsSdk.autoscalingMod.MinAdjustmentStep] = js.native
+  var MinAdjustmentStep: js.UndefOr[typings.awsSdk.autoscalingMod.MinAdjustmentStep] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the policy.
     */
-  var PolicyARN: js.UndefOr[ResourceName] = js.native
+  var PolicyARN: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The name of the scaling policy.
     */
-  var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * One of the following policy types:     TargetTrackingScaling     StepScaling     SimpleScaling (default)   For more information, see Target tracking scaling policies and Step and simple scaling policies in the Amazon EC2 Auto Scaling User Guide.
     */
-  var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.native
+  var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.undefined
   
   /**
     * The amount by which to scale, based on the specified adjustment type. A positive value adds to the current capacity while a negative number removes from the current capacity.
     */
-  var ScalingAdjustment: js.UndefOr[PolicyIncrement] = js.native
+  var ScalingAdjustment: js.UndefOr[PolicyIncrement] = js.undefined
   
   /**
     * A set of adjustments that enable you to scale based on the size of the alarm breach.
     */
-  var StepAdjustments: js.UndefOr[typings.awsSdk.autoscalingMod.StepAdjustments] = js.native
+  var StepAdjustments: js.UndefOr[typings.awsSdk.autoscalingMod.StepAdjustments] = js.undefined
   
   /**
     * A target tracking scaling policy.
     */
-  var TargetTrackingConfiguration: js.UndefOr[typings.awsSdk.autoscalingMod.TargetTrackingConfiguration] = js.native
+  var TargetTrackingConfiguration: js.UndefOr[typings.awsSdk.autoscalingMod.TargetTrackingConfiguration] = js.undefined
 }
 object ScalingPolicy {
   

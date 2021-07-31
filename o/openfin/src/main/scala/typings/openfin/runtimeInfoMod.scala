@@ -2,31 +2,29 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeInfoMod {
   
-  @js.native
   trait RuntimeInfo extends StObject {
     
-    var architecture: String = js.native
+    var architecture: String
     
-    var args: js.Object = js.native
+    var args: js.Object
     
-    var chromeVersion: String = js.native
+    var chromeVersion: String
     
-    var fdc3AppUuid: js.UndefOr[String] = js.native
+    var fdc3AppUuid: js.UndefOr[String] = js.undefined
     
-    var fdc3ChannelName: js.UndefOr[String] = js.native
+    var fdc3ChannelName: js.UndefOr[String] = js.undefined
     
-    var manifestUrl: String = js.native
+    var manifestUrl: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var securityRealm: js.UndefOr[String] = js.native
+    var securityRealm: js.UndefOr[String] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object RuntimeInfo {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Versions")
@@ -33,7 +32,7 @@ class ResourceSitesVersions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaVersion] = js.native
   def create(callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
   def create(params: ParamsResourceSitesVersionsCreate): GaxiosPromise[SchemaVersion] = js.native
   def create(params: ParamsResourceSitesVersionsCreate, callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
   def create(
@@ -62,7 +61,7 @@ class ResourceSitesVersions protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSitesVersionsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSitesVersionsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -100,7 +99,7 @@ class ResourceSitesVersions protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaVersion] = js.native
   def patch(callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
   def patch(params: ParamsResourceSitesVersionsPatch): GaxiosPromise[SchemaVersion] = js.native
   def patch(params: ParamsResourceSitesVersionsPatch, callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
   def patch(
@@ -130,7 +129,7 @@ class ResourceSitesVersions protected () extends StObject {
     */
   def populateFiles(): GaxiosPromise[SchemaPopulateVersionFilesResponse] = js.native
   def populateFiles(callback: BodyResponseCallback[SchemaPopulateVersionFilesResponse]): Unit = js.native
-  def populateFiles(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPopulateVersionFilesResponse] = js.native
+  def populateFiles(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPopulateVersionFilesResponse] = js.native
   def populateFiles(params: ParamsResourceSitesVersionsPopulatefiles): GaxiosPromise[SchemaPopulateVersionFilesResponse] = js.native
   def populateFiles(
     params: ParamsResourceSitesVersionsPopulatefiles,

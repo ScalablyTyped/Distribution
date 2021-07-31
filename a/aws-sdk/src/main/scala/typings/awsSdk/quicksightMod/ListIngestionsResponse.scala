@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIngestionsResponse extends StObject {
   
   /**
     * A list of the ingestions.
     */
-  var Ingestions: js.UndefOr[typings.awsSdk.quicksightMod.Ingestions] = js.native
+  var Ingestions: js.UndefOr[typings.awsSdk.quicksightMod.Ingestions] = js.undefined
   
   /**
     * The token for the next set of results, or null if there are no more results.
     */
-  var NextToken: js.UndefOr[java.lang.String] = js.native
+  var NextToken: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[java.lang.String] = js.native
+  var RequestId: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object ListIngestionsResponse {
   

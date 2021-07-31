@@ -2,31 +2,29 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebsiteAuthorizationProviderSummary extends StObject {
   
   /**
     * A unique identifier for the authorization provider.
     */
-  var AuthorizationProviderId: js.UndefOr[Id] = js.native
+  var AuthorizationProviderId: js.UndefOr[Id] = js.undefined
   
   /**
     * The authorization provider type.
     */
-  var AuthorizationProviderType: typings.awsSdk.worklinkMod.AuthorizationProviderType = js.native
+  var AuthorizationProviderType: typings.awsSdk.worklinkMod.AuthorizationProviderType
   
   /**
     * The time of creation.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The domain name of the authorization provider. This applies only to SAML-based authorization providers.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.worklinkMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.worklinkMod.DomainName] = js.undefined
 }
 object WebsiteAuthorizationProviderSummary {
   

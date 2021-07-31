@@ -3,32 +3,31 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedDocument
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var document_file_id: String = js.native
+  var document_file_id: String
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: document = js.native
+  var `type`: document
 }
 object InlineQueryResultCachedDocument {
   
   @scala.inline
-  def apply(document_file_id: String, id: String, title: String, `type`: document): InlineQueryResultCachedDocument = {
+  def apply(document_file_id: String, id: String, title: String): InlineQueryResultCachedDocument = {
     val __obj = js.Dynamic.literal(document_file_id = document_file_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("document")
     __obj.asInstanceOf[InlineQueryResultCachedDocument]
   }
   

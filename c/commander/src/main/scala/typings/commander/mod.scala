@@ -13,7 +13,6 @@ import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Declaring namespace AND global
@@ -27,28 +26,71 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("commander", "Command")
   @js.native
-  class CommandCls () extends Command {
+  class CommandCls ()
+    extends StObject
+       with Command {
     def this(name: String) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("commander", "CommanderError")
   @js.native
-  class CommanderErrorCls protected () extends CommanderError {
+  class CommanderErrorCls protected ()
+    extends StObject
+       with CommanderError {
     def this(exitCode: Double, code: String, message: String) = this()
+    
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /* CompleteClass */
+    var exitCode: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("commander", "Option")
   @js.native
-  class OptionCls protected () extends Option {
+  class OptionCls protected ()
+    extends StObject
+       with Option {
     def this(flags: String) = this()
     def this(flags: String, description: String) = this()
+    
+    // The option must have a value after parsing, which usually means it must be specified on command line.
+    /* CompleteClass */
+    var bool: Boolean = js.native
+    
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /* CompleteClass */
+    var flags: String = js.native
+    
+    /* CompleteClass */
+    var long: String = js.native
+    
+    // A value is optional when the option is specified.
+    /* CompleteClass */
+    var mandatory: Boolean = js.native
+    
+    // A value must be supplied when the option is specified.
+    /* CompleteClass */
+    var optional: Boolean = js.native
+    
+    /* CompleteClass */
+    var required: Boolean = js.native
   }
   
   @js.native
   trait Command
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Register callback `fn` for the command.
@@ -85,11 +127,11 @@ object mod extends Shortcut {
       * @returns `this` command for chaining
       */
     def addHelpCommand(): this.type = js.native
-    def addHelpCommand(enableOrNameAndArgs: js.UndefOr[scala.Nothing], description: String): this.type = js.native
     def addHelpCommand(enableOrNameAndArgs: String): this.type = js.native
     def addHelpCommand(enableOrNameAndArgs: String, description: String): this.type = js.native
     def addHelpCommand(enableOrNameAndArgs: Boolean): this.type = js.native
     def addHelpCommand(enableOrNameAndArgs: Boolean, description: String): this.type = js.native
+    def addHelpCommand(enableOrNameAndArgs: Unit, description: String): this.type = js.native
     
     /**
       * Get alias for the command.
@@ -242,11 +284,11 @@ object mod extends Shortcut {
       * to disable the built-in help option.
       */
     def helpOption(): this.type = js.native
-    def helpOption(flags: js.UndefOr[scala.Nothing], description: String): this.type = js.native
     def helpOption(flags: String): this.type = js.native
     def helpOption(flags: String, description: String): this.type = js.native
     def helpOption(flags: Boolean): this.type = js.native
     def helpOption(flags: Boolean, description: String): this.type = js.native
+    def helpOption(flags: Unit, description: String): this.type = js.native
     
     /**
       * Get the name of the command.
@@ -314,14 +356,14 @@ object mod extends Shortcut {
       * @returns `this` command for chaining
       */
     def option(flags: String): this.type = js.native
-    def option(flags: String, description: js.UndefOr[scala.Nothing], defaultValue: String): this.type = js.native
-    def option(flags: String, description: js.UndefOr[scala.Nothing], defaultValue: Boolean): this.type = js.native
     def option(flags: String, description: String): this.type = js.native
     def option(flags: String, description: String, defaultValue: String): this.type = js.native
     def option(flags: String, description: String, defaultValue: Boolean): this.type = js.native
     def option(flags: String, description: String, regexp: RegExp): this.type = js.native
     def option(flags: String, description: String, regexp: RegExp, defaultValue: String): this.type = js.native
     def option(flags: String, description: String, regexp: RegExp, defaultValue: Boolean): this.type = js.native
+    def option(flags: String, description: Unit, defaultValue: String): this.type = js.native
+    def option(flags: String, description: Unit, defaultValue: Boolean): this.type = js.native
     def option[T](flags: String, description: String, fn: js.Function2[/* value */ String, /* previous */ T, T]): this.type = js.native
     def option[T](
       flags: String,
@@ -359,9 +401,9 @@ object mod extends Shortcut {
       * @returns `this` command for chaining
       */
     def parse(): this.type = js.native
-    def parse(argv: js.UndefOr[scala.Nothing], options: ParseOptions): this.type = js.native
     def parse(argv: js.Array[String]): this.type = js.native
     def parse(argv: js.Array[String], options: ParseOptions): this.type = js.native
+    def parse(argv: Unit, options: ParseOptions): this.type = js.native
     
     /**
       * Parse `argv`, setting options and invoking commands when defined.
@@ -380,9 +422,9 @@ object mod extends Shortcut {
       * @returns Promise
       */
     def parseAsync(): js.Promise[this.type] = js.native
-    def parseAsync(argv: js.UndefOr[scala.Nothing], options: ParseOptions): js.Promise[this.type] = js.native
     def parseAsync(argv: js.Array[String]): js.Promise[this.type] = js.native
     def parseAsync(argv: js.Array[String], options: ParseOptions): js.Promise[this.type] = js.native
+    def parseAsync(argv: Unit, options: ParseOptions): js.Promise[this.type] = js.native
     
     /**
       * Parse options from `argv` removing known options,
@@ -413,14 +455,14 @@ object mod extends Shortcut {
       * The `flags` string should contain both the short and long flags, separated by comma, a pipe or space.
       */
     def requiredOption(flags: String): this.type = js.native
-    def requiredOption(flags: String, description: js.UndefOr[scala.Nothing], defaultValue: String): this.type = js.native
-    def requiredOption(flags: String, description: js.UndefOr[scala.Nothing], defaultValue: Boolean): this.type = js.native
     def requiredOption(flags: String, description: String): this.type = js.native
     def requiredOption(flags: String, description: String, defaultValue: String): this.type = js.native
     def requiredOption(flags: String, description: String, defaultValue: Boolean): this.type = js.native
     def requiredOption(flags: String, description: String, regexp: RegExp): this.type = js.native
     def requiredOption(flags: String, description: String, regexp: RegExp, defaultValue: String): this.type = js.native
     def requiredOption(flags: String, description: String, regexp: RegExp, defaultValue: Boolean): this.type = js.native
+    def requiredOption(flags: String, description: Unit, defaultValue: String): this.type = js.native
+    def requiredOption(flags: String, description: Unit, defaultValue: Boolean): this.type = js.native
     def requiredOption[T](flags: String, description: String, fn: js.Function2[/* value */ String, /* previous */ T, T]): this.type = js.native
     def requiredOption[T](
       flags: String,
@@ -458,22 +500,21 @@ object mod extends Shortcut {
       * You can optionally supply the  flags and description to override the defaults.
       */
     def version(str: String): this.type = js.native
-    def version(str: String, flags: js.UndefOr[scala.Nothing], description: String): this.type = js.native
     def version(str: String, flags: String): this.type = js.native
     def version(str: String, flags: String, description: String): this.type = js.native
+    def version(str: String, flags: Unit, description: String): this.type = js.native
   }
   
   type CommandConstructor = Instantiable1[/* name */ js.UndefOr[String], Command]
   
-  @js.native
   trait CommandOptions extends StObject {
     
     // old name for hidden
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var isDefault: js.UndefOr[Boolean] = js.native
+    var isDefault: js.UndefOr[Boolean] = js.undefined
     
-    var noHelp: js.UndefOr[Boolean] = js.native
+    var noHelp: js.UndefOr[Boolean] = js.undefined
   }
   object CommandOptions {
     
@@ -506,14 +547,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CommanderError extends Error {
+  trait CommanderError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
     
-    var exitCode: Double = js.native
+    var exitCode: Double
     
-    var nestedError: js.UndefOr[String] = js.native
+    var nestedError: js.UndefOr[String] = js.undefined
   }
   object CommanderError {
     
@@ -543,7 +585,9 @@ object mod extends Shortcut {
   type CommanderErrorConstructor = Instantiable3[/* exitCode */ Double, /* code */ String, /* message */ String, CommanderError]
   
   @js.native
-  trait CommanderStatic extends Command {
+  trait CommanderStatic
+    extends StObject
+       with Command {
     
     var Command: CommandConstructor = js.native
     
@@ -554,10 +598,11 @@ object mod extends Shortcut {
     var program: Command = js.native
   }
   
-  @js.native
-  trait ExecutableCommandOptions extends CommandOptions {
+  trait ExecutableCommandOptions
+    extends StObject
+       with CommandOptions {
     
-    var executableFile: js.UndefOr[String] = js.native
+    var executableFile: js.UndefOr[String] = js.undefined
   }
   object ExecutableCommandOptions {
     
@@ -578,27 +623,26 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
     // The option must have a value after parsing, which usually means it must be specified on command line.
-    var bool: Boolean = js.native
+    var bool: Boolean
     
-    var description: String = js.native
+    var description: String
     
-    var flags: String = js.native
+    var flags: String
     
-    var long: String = js.native
+    var long: String
     
     // A value is optional when the option is specified.
-    var mandatory: Boolean = js.native
+    var mandatory: Boolean
     
     // A value must be supplied when the option is specified.
-    var optional: Boolean = js.native
+    var optional: Boolean
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var short: js.UndefOr[String] = js.native
+    var short: js.UndefOr[String] = js.undefined
   }
   object Option {
     
@@ -650,10 +694,9 @@ object mod extends Shortcut {
   
   type OptionConstructor = Instantiable2[/* flags */ String, /* description */ js.UndefOr[String], Option]
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var from: node | electron | user = js.native
+    var from: node | electron | user
   }
   object ParseOptions {
     
@@ -671,12 +714,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ParseOptionsResult extends StObject {
     
-    var operands: js.Array[String] = js.native
+    var operands: js.Array[String]
     
-    var unknown: js.Array[String] = js.native
+    var unknown: js.Array[String]
   }
   object ParseOptionsResult {
     

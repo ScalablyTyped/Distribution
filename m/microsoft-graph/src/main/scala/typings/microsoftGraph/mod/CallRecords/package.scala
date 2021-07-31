@@ -1,12 +1,9 @@
-package typings.microsoftGraph.mod
+package typings.microsoftGraph.mod.CallRecords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object CallRecords {
-  
-  // tslint:disable-next-line: no-empty-interface
-  type ServiceEndpoint = typings.microsoftGraph.mod.CallRecords.Endpoint
-}
+
+// tslint:disable-next-line: no-empty-interface
+type ServiceEndpoint = typings.microsoftGraph.mod.CallRecords.Endpoint

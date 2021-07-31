@@ -3,17 +3,15 @@ package typings.aliOss.mod
 import typings.aliOss.anon.FragCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutChannelConf extends StObject {
   
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
-  var Target: js.UndefOr[FragCount] = js.native
+  var Target: js.UndefOr[FragCount] = js.undefined
 }
 object PutChannelConf {
   

@@ -3,11 +3,12 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryProvider extends DataProvider {
+trait QueryProvider
+  extends StObject
+     with DataProvider {
   
   def cancelQuery(ownerUri: String): Thenable[QueryCancelResult] = js.native
   
@@ -37,21 +38,21 @@ trait QueryProvider extends DataProvider {
   
   def parseSyntax(ownerUri: String, query: String): Thenable[SyntaxParseResult] = js.native
   
-  def registerOnBatchComplete(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, _]): Unit = js.native
+  def registerOnBatchComplete(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, js.Any]): Unit = js.native
   
-  def registerOnBatchStart(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, _]): Unit = js.native
+  def registerOnBatchStart(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, js.Any]): Unit = js.native
   
   // Edit Data Notifications
-  def registerOnEditSessionReady(handler: js.Function3[/* ownerUri */ String, /* success */ Boolean, /* message */ String, _]): Unit = js.native
+  def registerOnEditSessionReady(handler: js.Function3[/* ownerUri */ String, /* success */ Boolean, /* message */ String, js.Any]): Unit = js.native
   
-  def registerOnMessage(handler: js.Function1[/* message */ QueryExecuteMessageParams, _]): Unit = js.native
+  def registerOnMessage(handler: js.Function1[/* message */ QueryExecuteMessageParams, js.Any]): Unit = js.native
   
   // Notifications
-  def registerOnQueryComplete(handler: js.Function1[/* result */ QueryExecuteCompleteNotificationResult, _]): Unit = js.native
+  def registerOnQueryComplete(handler: js.Function1[/* result */ QueryExecuteCompleteNotificationResult, js.Any]): Unit = js.native
   
-  def registerOnResultSetAvailable(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, _]): Unit = js.native
+  def registerOnResultSetAvailable(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, js.Any]): Unit = js.native
   
-  def registerOnResultSetUpdated(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, _]): Unit = js.native
+  def registerOnResultSetUpdated(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, js.Any]): Unit = js.native
   
   def revertCell(ownerUri: String, rowId: Double, columnId: Double): Thenable[EditRevertCellResult] = js.native
   

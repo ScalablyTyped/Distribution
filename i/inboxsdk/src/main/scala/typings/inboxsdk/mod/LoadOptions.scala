@@ -2,7 +2,6 @@ package typings.inboxsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // // Undocummented
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //   error: () => any;
 //   event: () => any;
 // };
-@js.native
 trait LoadOptions extends StObject {
   
-  var appIconUrl: js.UndefOr[String] = js.native
+  var appIconUrl: js.UndefOr[String] = js.undefined
   
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
-  var suppressAddonTitle: js.UndefOr[String] = js.native
+  var suppressAddonTitle: js.UndefOr[String] = js.undefined
 }
 object LoadOptions {
   

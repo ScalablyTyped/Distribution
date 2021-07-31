@@ -18,86 +18,80 @@ import typings.react.mod.SetStateAction
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/FooterToolbar.FooterToolbarProps & @ant-design/pro-layout.@ant-design/pro-layout.RouteContextType & {  leftWidth :string | undefined} */
-@js.native
 trait FooterToolbarPropsRouteCo extends StObject {
   
-  var breadcrumb: js.UndefOr[BreadcrumbListReturn] = js.native
+  var breadcrumb: js.UndefOr[BreadcrumbListReturn] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var colorWeak: js.UndefOr[Boolean] = js.native
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   
-  var contentWidth: js.UndefOr[ContentWidth] = js.native
+  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   
-  var currentMenu: js.UndefOr[PureSettings with MenuDataItem] = js.native
+  var currentMenu: js.UndefOr[PureSettings & MenuDataItem] = js.undefined
   
-  var extra: js.UndefOr[ReactNode] = js.native
+  var extra: js.UndefOr[ReactNode] = js.undefined
   
-  var fixSiderbar: js.UndefOr[Boolean] = js.native
+  var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
-  var hasFooter: js.UndefOr[Boolean] = js.native
+  var hasFooter: js.UndefOr[Boolean] = js.undefined
   
-  var hasFooterToolbar: js.UndefOr[Boolean] = js.native
+  var hasFooterToolbar: js.UndefOr[Boolean] = js.undefined
   
-  var hasHeader: js.UndefOr[Boolean] = js.native
+  var hasHeader: js.UndefOr[Boolean] = js.undefined
   
-  var hasSiderMenu: js.UndefOr[Boolean] = js.native
+  var hasSiderMenu: js.UndefOr[Boolean] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.native
+  var headerHeight: js.UndefOr[Double] = js.undefined
   
-  var headerTheme: js.UndefOr[MenuTheme] = js.native
+  var headerTheme: js.UndefOr[MenuTheme] = js.undefined
   
-  var iconfontUrl: js.UndefOr[String] = js.native
+  var iconfontUrl: js.UndefOr[String] = js.undefined
   
-  var isChildrenLayout: js.UndefOr[Boolean] = js.native
+  var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   
-  var isMobile: js.UndefOr[Boolean] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.undefined
   
-  var layout: js.UndefOr[side | top | mix] = js.native
+  var layout: js.UndefOr[side | top | mix] = js.undefined
   
-  var leftWidth: js.UndefOr[String] = js.native
+  var leftWidth: js.UndefOr[String] = js.undefined
   
-  var matchMenuKeys: js.UndefOr[js.Array[String]] = js.native
+  var matchMenuKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var matchMenus: js.UndefOr[js.Array[MenuDataItem]] = js.native
+  var matchMenus: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
   
-  var menu: js.UndefOr[DefaultOpenAll] = js.native
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   
-  var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.native
+  var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
   
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   
-  var pageTitleInfo: js.UndefOr[Id] = js.native
+  var pageTitleInfo: js.UndefOr[Id] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
   
   var renderContent: js.UndefOr[
-    js.Function2[
-      /* props */ this.type with RouteContextType with LeftWidth, 
-      /* dom */ Element, 
-      ReactNode
-    ]
-  ] = js.native
+    js.Function2[/* props */ this.type & RouteContextType & LeftWidth, /* dom */ Element, ReactNode]
+  ] = js.undefined
   
-  var setHasFooterToolbar: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.native
+  var setHasFooterToolbar: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.undefined
   
-  var siderWidth: js.UndefOr[Double] = js.native
+  var siderWidth: js.UndefOr[Double] = js.undefined
   
-  var splitMenus: js.UndefOr[Boolean] = js.native
+  var splitMenus: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[String | `false`] = js.native
+  var title: js.UndefOr[String | `false`] = js.undefined
 }
 object FooterToolbarPropsRouteCo {
   
@@ -141,7 +135,7 @@ object FooterToolbarPropsRouteCo {
     def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
     @scala.inline
-    def setCurrentMenu(value: PureSettings with MenuDataItem): Self = StObject.set(x, "currentMenu", value.asInstanceOf[js.Any])
+    def setCurrentMenu(value: PureSettings & MenuDataItem): Self = StObject.set(x, "currentMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCurrentMenuUndefined: Self = StObject.set(x, "currentMenu", js.undefined)
@@ -289,7 +283,7 @@ object FooterToolbarPropsRouteCo {
     
     @scala.inline
     def setRenderContent(
-      value: (/* props */ FooterToolbarPropsRouteCo with RouteContextType with LeftWidth, /* dom */ Element) => ReactNode
+      value: (/* props */ FooterToolbarPropsRouteCo & RouteContextType & LeftWidth, /* dom */ Element) => ReactNode
     ): Self = StObject.set(x, "renderContent", js.Any.fromFunction2(value))
     
     @scala.inline

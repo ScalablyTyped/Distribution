@@ -17,10 +17,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import typings.arcgisJsApi.arcgisJsApiStrings.triangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTemplateProperties extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait FeatureTemplateProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the default drawing tool defined for the template to create a feature.
@@ -37,21 +35,21 @@ trait FeatureTemplateProperties extends StObject {
     */
   var drawingTool: js.UndefOr[
     `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Name of the feature template.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An object used to create a thumbnail image that represents a feature type in the feature template.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var thumbnail: js.UndefOr[FeatureTemplateThumbnail] = js.native
+  var thumbnail: js.UndefOr[FeatureTemplateThumbnail] = js.undefined
 }
 object FeatureTemplateProperties {
   

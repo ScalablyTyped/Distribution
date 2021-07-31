@@ -3,16 +3,15 @@ package typings.poi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Opts
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
-  var mode: Mode = js.native
+  var mode: Mode
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Opts {
   

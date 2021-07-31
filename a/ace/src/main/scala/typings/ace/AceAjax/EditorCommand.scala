@@ -2,19 +2,17 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorCommand extends StObject {
   
-  var bindKey: js.Any = js.native
+  var bindKey: js.Any
   
-  var exec: js.Function = js.native
+  var exec: js.Function
   
-  var name: String = js.native
+  var name: String
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
 }
 object EditorCommand {
   

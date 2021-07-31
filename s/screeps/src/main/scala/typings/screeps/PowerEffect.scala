@@ -2,34 +2,34 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Effect applied to room object as result of a `PowerCreep.usePower`.
   */
-@js.native
-trait PowerEffect extends RoomObjectEffect {
+trait PowerEffect
+  extends StObject
+     with RoomObjectEffect {
   
   /**
     * Effect ID of the applied effect. `PWR_*` constant.
     */
-  var effect: PowerConstant = js.native
+  var effect: PowerConstant
   
   /**
     * Power level of the applied effect.
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * @deprecated Power ID of the applied effect. `PWR_*` constant. No longer documented, will be removed.
     */
-  var power: PowerConstant = js.native
+  var power: PowerConstant
   
   /**
     * How many ticks will the effect last.
     */
-  var ticksRemaining: Double = js.native
+  var ticksRemaining: Double
 }
 object PowerEffect {
   

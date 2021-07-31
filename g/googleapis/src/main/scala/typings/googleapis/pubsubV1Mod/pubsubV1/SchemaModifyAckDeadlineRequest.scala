@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the ModifyAckDeadline method.
   */
-@js.native
 trait SchemaModifyAckDeadlineRequest extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaModifyAckDeadlineRequest extends StObject {
     * deadline you can specify is 0 seconds. The maximum deadline you can
     * specify is 600 seconds (10 minutes).
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * List of acknowledgment IDs.
     */
-  var ackIds: js.UndefOr[js.Array[String]] = js.native
+  var ackIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaModifyAckDeadlineRequest {
   

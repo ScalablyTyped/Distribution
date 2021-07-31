@@ -13,26 +13,25 @@ import typings.astTypes.kindsMod.TSTypeKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.TSType, 'type'> */
-@js.native
 trait TSTypeLiteral
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with NodeKind
      with PrintableKind
      with TSTypeKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
   var members: js.Array[
     TSCallSignatureDeclarationKind | TSConstructSignatureDeclarationKind | TSIndexSignatureKind | TSMethodSignatureKind | TSPropertySignatureKind
-  ] = js.native
+  ]
   
-  var `type`: typings.astTypes.astTypesStrings.TSTypeLiteral = js.native
+  var `type`: typings.astTypes.astTypesStrings.TSTypeLiteral
 }
 object TSTypeLiteral {
   

@@ -11,15 +11,13 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object Children {
     
@@ -40,10 +38,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ChildrenChildrenType[ChildrenType] extends StObject {
     
-    var children: ChildrenType = js.native
+    var children: ChildrenType
   }
   object ChildrenChildrenType {
     
@@ -54,7 +51,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ChildrenChildrenTypeMutableBuilder[Self <: ChildrenChildrenType[_], ChildrenType] (val x: Self with ChildrenChildrenType[ChildrenType]) extends AnyVal {
+    implicit class ChildrenChildrenTypeMutableBuilder[Self <: ChildrenChildrenType[?], ChildrenType] (val x: Self & ChildrenChildrenType[ChildrenType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ChildrenType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -62,19 +59,18 @@ object anon {
   }
   
   /* Inlined react-focus-lock.react-focus-lock/interfaces.ReactFocusLockProps<react.react.ReactNode, std.Record<string, any>> & {  sideCar :react.react.SFC<any>} */
-  @js.native
   trait ReactFocusLockPropsReactN extends StObject {
     
     /**
       * @deprecated Use persistentFocus=false instead
       * enables(or disables) text selection. This also allows not to have ANY focus.
       */
-    var allowTextSelection: js.UndefOr[Boolean] = js.native
+    var allowTextSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Component to use, defaults to 'div'
       */
-    var as: js.UndefOr[String | (ElementType[(Record[String, _]) with Children])] = js.native
+    var as: js.UndefOr[String | (ElementType[(Record[String, js.Any]) & Children])] = js.undefined
     
     /**
       * enables or disables autoFocusing feature.
@@ -82,11 +78,11 @@ object anon {
       * If disable - will blur any focus on Lock activation.
       * @default true
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * enables aggressive focus capturing within iframes
@@ -94,68 +90,68 @@ object anon {
       * - once enabled keep focus in the lock, no matter where lock is active (default)
       * @default true
       */
-    var crossFrame: js.UndefOr[Boolean] = js.native
+    var crossFrame: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * named focus group for focus scattering aka combined lock targets
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var lockProps: js.UndefOr[Record[String, _]] = js.native
+    var lockProps: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * disables hidden inputs before and after the lock.
       */
-    var noFocusGuards: js.UndefOr[Boolean | tail] = js.native
+    var noFocusGuards: js.UndefOr[Boolean | tail] = js.undefined
     
     /**
       * life-cycle hook, called on lock activation
       * @param node the observed node
       */
-    var onActivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onActivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     /**
       * life-cycle hook, called on deactivation
       * @param node the observed node
       */
-    var onDeactivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onDeactivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     /**
       * enables of disables "sticky" behavior, when any focusable element shall be focused.
       * This disallow any text selection on the page.
       * @default false
       */
-    var persistentFocus: js.UndefOr[Boolean] = js.native
+    var persistentFocus: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[HTMLElement]] = js.native
+    var ref: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
     /**
       * if true, will return focus to the previous position on trap disable.
       * Optionally, can pass focus options instead of `true` to control the focus
       * more precisely (ie. `{ preventScroll: true }`)
       */
-    var returnFocus: js.UndefOr[Boolean | FocusOptions] = js.native
+    var returnFocus: js.UndefOr[Boolean | FocusOptions] = js.undefined
     
     /**
       * Shards forms a scattered lock, same as `group` does, but in more "low" and controlled way
       */
-    var shards: js.UndefOr[js.Array[RefObject[_] | HTMLElement]] = js.native
+    var shards: js.UndefOr[js.Array[RefObject[js.Any] | HTMLElement]] = js.undefined
     
-    var sideCar: SFC[_] = js.native
+    var sideCar: SFC[js.Any]
     
     /**
       * Controls focus lock working areas. Lock will silently ignore all the events from `not allowed` areas
       * @param activeElement
       * @returns {Boolean} true if focus lock should handle activeElement, false if not
       */
-    var whiteList: js.UndefOr[js.Function1[/* activeElement */ HTMLElement, Boolean]] = js.native
+    var whiteList: js.UndefOr[js.Function1[/* activeElement */ HTMLElement, Boolean]] = js.undefined
   }
   object ReactFocusLockPropsReactN {
     
     @scala.inline
-    def apply(sideCar: SFC[_]): ReactFocusLockPropsReactN = {
+    def apply(sideCar: SFC[js.Any]): ReactFocusLockPropsReactN = {
       val __obj = js.Dynamic.literal(sideCar = sideCar.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactFocusLockPropsReactN]
     }
@@ -170,7 +166,7 @@ object anon {
       def setAllowTextSelectionUndefined: Self = StObject.set(x, "allowTextSelection", js.undefined)
       
       @scala.inline
-      def setAs(value: String | (ElementType[(Record[String, _]) with Children])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: String | (ElementType[(Record[String, js.Any]) & Children])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -212,7 +208,7 @@ object anon {
       def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       @scala.inline
-      def setLockProps(value: Record[String, _]): Self = StObject.set(x, "lockProps", value.asInstanceOf[js.Any])
+      def setLockProps(value: Record[String, js.Any]): Self = StObject.set(x, "lockProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLockPropsUndefined: Self = StObject.set(x, "lockProps", js.undefined)
@@ -260,7 +256,7 @@ object anon {
       def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
       
       @scala.inline
-      def setShards(value: js.Array[RefObject[_] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
+      def setShards(value: js.Array[RefObject[js.Any] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
@@ -269,7 +265,7 @@ object anon {
       def setShardsVarargs(value: (RefObject[js.Any] | HTMLElement)*): Self = StObject.set(x, "shards", js.Array(value :_*))
       
       @scala.inline
-      def setSideCar(value: SFC[_]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
+      def setSideCar(value: SFC[js.Any]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWhiteList(value: /* activeElement */ HTMLElement => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))

@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewSettingsFilterItem extends ViewSettingsItem {
+trait ViewSettingsFilterItem
+  extends StObject
+     with ViewSettingsItem {
   
   /**
     * Adds some item to the aggregation <code>items</code>.

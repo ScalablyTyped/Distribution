@@ -8,21 +8,21 @@ import typings.rsocketTypes.rsocketTypesStrings.ERROR
 import typings.rsocketTypes.rsocketTypesStrings.NOT_CONNECTED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `0` extends ConnectionStatus {
+  trait `0`
+    extends StObject
+       with ConnectionStatus {
     
-    var kind: CONNECTING = js.native
+    var kind: CONNECTING
   }
   object `0` {
     
     @scala.inline
-    def apply(kind: CONNECTING): `0` = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(kind = "CONNECTING")
       __obj.asInstanceOf[`0`]
     }
     
@@ -34,16 +34,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait `1` extends ConnectionStatus {
+  trait `1`
+    extends StObject
+       with ConnectionStatus {
     
-    var kind: CONNECTED = js.native
+    var kind: CONNECTED
   }
   object `1` {
     
     @scala.inline
-    def apply(kind: CONNECTED): `1` = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(kind = "CONNECTED")
       __obj.asInstanceOf[`1`]
     }
     
@@ -55,16 +56,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait `2` extends ConnectionStatus {
+  trait `2`
+    extends StObject
+       with ConnectionStatus {
     
-    var kind: CLOSED = js.native
+    var kind: CLOSED
   }
   object `2` {
     
     @scala.inline
-    def apply(kind: CLOSED): `2` = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): `2` = {
+      val __obj = js.Dynamic.literal(kind = "CLOSED")
       __obj.asInstanceOf[`2`]
     }
     
@@ -76,18 +78,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait Error extends ConnectionStatus {
+  trait Error
+    extends StObject
+       with ConnectionStatus {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var kind: ERROR = js.native
+    var kind: ERROR
   }
   object Error {
     
     @scala.inline
-    def apply(error: typings.std.Error, kind: ERROR): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    def apply(error: typings.std.Error): Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = "ERROR")
       __obj.asInstanceOf[Error]
     }
     
@@ -102,16 +105,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait Kind extends ConnectionStatus {
+  trait Kind
+    extends StObject
+       with ConnectionStatus {
     
-    var kind: NOT_CONNECTED = js.native
+    var kind: NOT_CONNECTED
   }
   object Kind {
     
     @scala.inline
-    def apply(kind: NOT_CONNECTED): Kind = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): Kind = {
+      val __obj = js.Dynamic.literal(kind = "NOT_CONNECTED")
       __obj.asInstanceOf[Kind]
     }
     

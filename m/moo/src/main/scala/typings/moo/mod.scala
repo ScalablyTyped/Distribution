@@ -6,14 +6,16 @@ import typings.std.Iterator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("moo", "compile")
+  @JSImport("moo", JSImport.Namespace)
   @js.native
-  def compile(rules: Rules): Lexer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def compile(rules: Rules): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(rules.asInstanceOf[js.Any]).asInstanceOf[Lexer]
   
   @JSImport("moo", "error")
   @js.native
@@ -23,27 +25,23 @@ object mod {
   @js.native
   val fallback: FallbackRule = js.native
   
-  @JSImport("moo", "keywords")
-  @js.native
-  def keywords(kws: StringDictionary[String | js.Array[String]]): TypeMapper = js.native
+  @scala.inline
+  def keywords(kws: StringDictionary[String | js.Array[String]]): TypeMapper = ^.asInstanceOf[js.Dynamic].applyDynamic("keywords")(kws.asInstanceOf[js.Any]).asInstanceOf[TypeMapper]
   
-  @JSImport("moo", "states")
-  @js.native
-  def states(states: StringDictionary[Rules]): Lexer = js.native
-  @JSImport("moo", "states")
-  @js.native
-  def states(states: StringDictionary[Rules], start: String): Lexer = js.native
+  @scala.inline
+  def states(states: StringDictionary[Rules]): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any]).asInstanceOf[Lexer]
+  @scala.inline
+  def states(states: StringDictionary[Rules], start: String): Lexer = (^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Lexer]
   
-  @js.native
   trait ErrorRule extends StObject {
     
-    var error: `true` = js.native
+    var error: `true`
   }
   object ErrorRule {
     
     @scala.inline
-    def apply(error: `true`): ErrorRule = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+    def apply(): ErrorRule = {
+      val __obj = js.Dynamic.literal(error = true)
       __obj.asInstanceOf[ErrorRule]
     }
     
@@ -55,16 +53,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FallbackRule extends StObject {
     
-    var fallback: `true` = js.native
+    var fallback: `true`
   }
   object FallbackRule {
     
     @scala.inline
-    def apply(fallback: `true`): FallbackRule = {
-      val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
+    def apply(): FallbackRule = {
+      val __obj = js.Dynamic.literal(fallback = true)
       __obj.asInstanceOf[FallbackRule]
     }
     
@@ -91,7 +88,7 @@ object mod {
     def has(tokenType: String): Boolean = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Token, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[Token, js.Any, Unit]] = js.native
     
     /**
       * When you reach the end of Moo's internal buffer, next() will return undefined.
@@ -114,9 +111,9 @@ object mod {
       * Empty the internal buffer of the lexer, and set the line, column, and offset counts back to their initial value.
       */
     def reset(): this.type = js.native
-    def reset(chunk: js.UndefOr[scala.Nothing], state: LexerState): this.type = js.native
     def reset(chunk: String): this.type = js.native
     def reset(chunk: String, state: LexerState): this.type = js.native
+    def reset(chunk: Unit, state: LexerState): this.type = js.native
     
     /**
       * Returns current state, which you can later pass it as the second argument
@@ -130,14 +127,13 @@ object mod {
     def setState(state: String): Unit = js.native
   }
   
-  @js.native
   trait LexerState extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var state: String = js.native
+    var state: String
   }
   object LexerState {
     
@@ -161,49 +157,48 @@ object mod {
     }
   }
   
-  @js.native
   trait Rule extends StObject {
     
     /**
       * You can have a token type that both matches tokens and contains error values.
       */
-    var error: js.UndefOr[`true`] = js.native
+    var error: js.UndefOr[`true`] = js.undefined
     
     /**
       * Moo tracks detailed information about the input for you.
       * It will track line numbers, as long as you apply the `lineBreaks: true`
       * option to any tokens which might contain newlines. Moo will try to warn you if you forget to do this.
       */
-    var lineBreaks: js.UndefOr[Boolean] = js.native
+    var lineBreaks: js.UndefOr[Boolean] = js.undefined
     
-    var `match`: js.UndefOr[RegExp | String | js.Array[String]] = js.native
+    var `match`: js.UndefOr[RegExp | String | js.Array[String]] = js.undefined
     
     /**
       * Moves to a new state, but does not affect the stack.
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * Returns to a previous state, by removing one or more states from the stack.
       */
-    var pop: js.UndefOr[Double] = js.native
+    var pop: js.UndefOr[Double] = js.undefined
     
     /**
       * Moves the lexer to a new state, and pushes the old state onto the stack.
       */
-    var push: js.UndefOr[String] = js.native
+    var push: js.UndefOr[String] = js.undefined
     
     /**
       * Used for mapping one set of types to another.
       * See https://github.com/no-context/moo#keywords for an example
       */
-    var `type`: js.UndefOr[TypeMapper] = js.native
+    var `type`: js.UndefOr[TypeMapper] = js.undefined
     
     /**
       * Moo doesn't allow capturing groups, but you can supply a transform function, value(),
       * which will be called on the value before storing it in the Token object.
       */
-    var value: js.UndefOr[js.Function1[/* x */ String, String]] = js.native
+    var value: js.UndefOr[js.Function1[/* x */ String, String]] = js.undefined
   }
   object Rule {
     
@@ -271,43 +266,42 @@ object mod {
   
   type Rules = StringDictionary[RegExp | String | (js.Array[Rule | String]) | Rule | ErrorRule | FallbackRule]
   
-  @js.native
   trait Token extends StObject {
     
     /**
       * The column where the match begins, starting from 1.
       */
-    var col: Double = js.native
+    var col: Double
     
     /**
       * The line number of the beginning of the match, starting from 1.
       */
-    var line: Double = js.native
+    var line: Double
     
     /**
       * The number of line breaks found in the match. (Always zero if this rule has lineBreaks: false.)
       */
-    var lineBreaks: Double = js.native
+    var lineBreaks: Double
     
     /**
       * The number of bytes from the start of the buffer where the match starts.
       */
-    var offset: Double = js.native
+    var offset: Double
     
     /**
       * The complete match.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * The name of the group, as passed to compile.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * The match contents.
       */
-    var value: String = js.native
+    var value: String
   }
   object Token {
     

@@ -1,20 +1,20 @@
 package typings.geobuf
 
 import typings.geojson.mod.GeoJSON
-import typings.pbf.mod.^
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geobuf", "decode")
+  @JSImport("geobuf", JSImport.Namespace)
   @js.native
-  def decode(pbf: ^): GeoJSON = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("geobuf", "encode")
-  @js.native
-  def encode(obj: GeoJSON, pbf: ^): Uint8Array = js.native
+  @scala.inline
+  def decode(pbf: typings.pbf.mod.^): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(pbf.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
+  
+  @scala.inline
+  def encode(obj: GeoJSON, pbf: typings.pbf.mod.^): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any], pbf.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

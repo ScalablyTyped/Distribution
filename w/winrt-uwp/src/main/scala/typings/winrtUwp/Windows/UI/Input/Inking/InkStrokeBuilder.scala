@@ -6,11 +6,9 @@ import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.UI.Input.PointerPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Builds strokes from raw pointer input. */
-@js.native
 trait InkStrokeBuilder extends StObject {
   
   /**
@@ -18,20 +16,20 @@ trait InkStrokeBuilder extends StObject {
     * @param pointerPoint The end point of the new segment.
     * @return The previous end point. This end point can be used when rendering the stroke.
     */
-  def appendToStroke(pointerPoint: PointerPoint): PointerPoint = js.native
+  def appendToStroke(pointerPoint: PointerPoint): PointerPoint
   
   /**
     * Starts building the ink stroke.
     * @param pointerPoint The first point for the stroke.
     */
-  def beginStroke(pointerPoint: PointerPoint): Unit = js.native
+  def beginStroke(pointerPoint: PointerPoint): Unit
   
   /**
     * Creates a stroke from an array of Point coordinates.
     * @param points An array of Point coordinates.
     * @return The new stroke.
     */
-  def createStroke(points: IIterable[Point]): InkStroke = js.native
+  def createStroke(points: IIterable[Point]): InkStroke
   
   /**
     * Creates a stroke from collection of InkPoint objects.
@@ -39,20 +37,20 @@ trait InkStrokeBuilder extends StObject {
     * @param transform A 2-D transformation matrix.
     * @return The ink stroke, including the Bézier curve parameters used for final rendering of the stroke.
     */
-  def createStrokeFromInkPoints(inkPoints: IIterable[InkPoint], transform: Matrix3x2): InkStroke = js.native
+  def createStrokeFromInkPoints(inkPoints: IIterable[InkPoint], transform: Matrix3x2): InkStroke
   
   /**
     * Stops building the ink stroke.
     * @param pointerPoint The last point for the stroke.
     * @return The stroke built from the points.
     */
-  def endStroke(pointerPoint: PointerPoint): InkStroke = js.native
+  def endStroke(pointerPoint: PointerPoint): InkStroke
   
   /**
     * Sets the default InkDrawingAttributes for all new ink strokes created after the current stroke.
     * @param drawingAttributes The default attributes.
     */
-  def setDefaultDrawingAttributes(drawingAttributes: InkDrawingAttributes): Unit = js.native
+  def setDefaultDrawingAttributes(drawingAttributes: InkDrawingAttributes): Unit
 }
 object InkStrokeBuilder {
   

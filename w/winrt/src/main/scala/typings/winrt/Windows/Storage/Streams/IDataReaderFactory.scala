@@ -2,13 +2,11 @@ package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataReaderFactory extends StObject {
   
-  def createDataReader(inputStream: IInputStream): DataReader = js.native
+  def createDataReader(inputStream: IInputStream): DataReader
 }
 object IDataReaderFactory {
   

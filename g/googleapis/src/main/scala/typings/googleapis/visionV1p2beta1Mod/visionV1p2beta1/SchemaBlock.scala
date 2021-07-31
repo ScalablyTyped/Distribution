@@ -2,19 +2,17 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Logical element on the page.
   */
-@js.native
 trait SchemaBlock extends StObject {
   
   /**
     * Detected block type (text, image etc) for this block.
     */
-  var blockType: js.UndefOr[String] = js.native
+  var blockType: js.UndefOr[String] = js.undefined
   
   /**
     * The bounding box for the block. The vertices are in the order of
@@ -26,22 +24,22 @@ trait SchemaBlock extends StObject {
     * rotated 180 degrees around the top-left corner it becomes: 2----3 |    |
     * 1----0    and the vertex order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results on the block. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * List of paragraphs in this block (if this blocks is of type text).
     */
-  var paragraphs: js.UndefOr[js.Array[SchemaParagraph]] = js.native
+  var paragraphs: js.UndefOr[js.Array[SchemaParagraph]] = js.undefined
   
   /**
     * Additional information detected for the block.
     */
-  var property: js.UndefOr[SchemaTextProperty] = js.native
+  var property: js.UndefOr[SchemaTextProperty] = js.undefined
 }
 object SchemaBlock {
   

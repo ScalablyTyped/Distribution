@@ -4,20 +4,21 @@ import typings.sipJs.bodyMod.Body
 import typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outgoingResponseMod {
   
-  @JSImport("sip.js/lib/core/messages/outgoing-response", "constructOutgoingResponse")
+  @JSImport("sip.js/lib/core/messages/outgoing-response", JSImport.Namespace)
   @js.native
-  def constructOutgoingResponse(message: IncomingRequestMessage, options: ResponseOptions): OutgoingResponse = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def constructOutgoingResponse(message: IncomingRequestMessage, options: ResponseOptions): OutgoingResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("constructOutgoingResponse")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OutgoingResponse]
+  
   trait OutgoingResponse extends StObject {
     
     /** The outgoing message. */
-    val message: String = js.native
+    val message: String
   }
   object OutgoingResponse {
     
@@ -35,29 +36,28 @@ object outgoingResponseMod {
     }
   }
   
-  @js.native
   trait ResponseOptions extends StObject {
     
     /** Body to include in the message. */
-    var body: js.UndefOr[Body] = js.native
+    var body: js.UndefOr[Body] = js.undefined
     
     /** Extra headers to include in the message. */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Reason phrase of the response. */
-    var reasonPhrase: js.UndefOr[String] = js.native
+    var reasonPhrase: js.UndefOr[String] = js.undefined
     
     /** Status code of the response. */
-    var statusCode: Double = js.native
+    var statusCode: Double
     
     /** Support options tags for Supported header. */
-    var supported: js.UndefOr[js.Array[String]] = js.native
+    var supported: js.UndefOr[js.Array[String]] = js.undefined
     
     /** To tag of the response. If not provided, one is generated. */
-    var toTag: js.UndefOr[String] = js.native
+    var toTag: js.UndefOr[String] = js.undefined
     
     /** User agent string for User-Agent header. */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object ResponseOptions {
     

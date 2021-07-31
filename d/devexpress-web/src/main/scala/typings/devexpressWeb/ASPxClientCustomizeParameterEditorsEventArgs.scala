@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.CustomizeParameterEditors and ASPxClientReportDesigner.CustomizeParameterEditors events.
   */
-@js.native
-trait ASPxClientCustomizeParameterEditorsEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeParameterEditorsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to an object that stores information required to serialize a parameter editor.
     */
-  var info: ASPxDesignerElementSerializationInfo = js.native
+  var info: ASPxDesignerElementSerializationInfo
   
   /**
     * Provides access to an object that stores information about a parameter.
     */
-  var parameter: ASPxDesignerElementParameterDescriptor = js.native
+  var parameter: ASPxDesignerElementParameterDescriptor
 }
 object ASPxClientCustomizeParameterEditorsEventArgs {
   

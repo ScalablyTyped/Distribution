@@ -2,21 +2,19 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumber extends StObject {
   
-  var canonicalForm: String = js.native
+  var canonicalForm: String
   
-  var formattedType: String = js.native
+  var formattedType: String
   
-  var metadata: FieldMetadata = js.native
+  var metadata: FieldMetadata
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: String = js.native
+  var value: String
 }
 object PhoneNumber {
   

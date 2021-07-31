@@ -4,15 +4,55 @@ import typings.playable.anon.Config
 import typings.playable.fullScreenManagerTypesMod.IFullScreenManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullScreenManagerMod {
   
   @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", JSImport.Default)
   @js.native
-  class default protected () extends FullScreenManager {
+  class default protected ()
+    extends StObject
+       with FullScreenManager {
     def this(hasEventEmitterEngineRootContainerConfig: Config) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disableEnterFullScreenOnPlay(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disableExitFullScreenOnEnd(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disableExitFullScreenOnPause(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disablePauseVideoOnFullScreenExit(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enableEnterFullScreenOnPlay(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enableExitFullScreenOnEnd(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enableExitFullScreenOnPause(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enablePauseVideoOnFullScreenExit(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enterFullScreen(): Unit = js.native
+    
+    /* CompleteClass */
+    override def exitFullScreen(): Unit = js.native
+    
+    /* CompleteClass */
+    var isEnabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var isInFullScreen: Boolean = js.native
   }
   object default {
     
@@ -36,7 +76,9 @@ object fullScreenManagerMod {
   }
   
   @js.native
-  trait FullScreenManager extends IFullScreenManager {
+  trait FullScreenManager
+    extends StObject
+       with IFullScreenManager {
     
     var _bindEvents: js.Any = js.native
     

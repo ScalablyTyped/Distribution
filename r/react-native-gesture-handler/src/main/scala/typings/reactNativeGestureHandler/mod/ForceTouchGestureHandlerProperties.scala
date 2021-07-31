@@ -2,21 +2,21 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceTouchGestureHandlerProperties extends GestureHandlerProperties {
+trait ForceTouchGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var feedbackOnActivation: js.UndefOr[Boolean] = js.native
+  var feedbackOnActivation: js.UndefOr[Boolean] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
   
-  var minForce: js.UndefOr[Double] = js.native
+  var minForce: js.UndefOr[Double] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ ForceTouchGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ ForceTouchGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ ForceTouchGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ ForceTouchGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 object ForceTouchGestureHandlerProperties {
   

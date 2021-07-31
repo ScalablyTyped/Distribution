@@ -12,7 +12,7 @@ Autocomplete suggestions for kana inputs.
 | Keywords           | Japanese, Kanji, Kana, Hiragana, Katakana |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 136 |
+| # downloads        | 395 |
 | # stars            | 0 |
 
 ## Links

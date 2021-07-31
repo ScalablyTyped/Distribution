@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetEbsDefaultKmsKeyIdResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the default CMK for EBS encryption by default.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
 }
 object ResetEbsDefaultKmsKeyIdResult {
   

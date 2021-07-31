@@ -12,7 +12,7 @@ The lodash method `_.isSymbol` exported as a module.
 | Keywords           | lodash-modularized, issymbol |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 22799 |
+| # downloads        | 25243 |
 | # stars            | 0 |
 
 ## Links

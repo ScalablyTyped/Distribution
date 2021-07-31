@@ -2,14 +2,14 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @hidden
   */
-@js.native
-trait EmailAuthProviderInstance extends AuthProvider
+trait EmailAuthProviderInstance
+  extends StObject
+     with AuthProvider
 object EmailAuthProviderInstance {
   
   @scala.inline

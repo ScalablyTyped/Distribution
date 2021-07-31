@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceMessage extends StObject {
   
   /**
     * This parameter is not currently supported.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The Amazon DocumentDB resource with tags to be listed. This value is an Amazon Resource Name (ARN).
     */
-  var ResourceName: String = js.native
+  var ResourceName: String
 }
 object ListTagsForResourceMessage {
   

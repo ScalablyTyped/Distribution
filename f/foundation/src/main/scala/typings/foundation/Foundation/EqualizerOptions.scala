@@ -2,16 +2,14 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/equalizer.html#optional-javascript-configuration
-@js.native
 trait EqualizerOptions extends StObject {
   
-  var equalize_on_stack: js.UndefOr[Boolean] = js.native
+  var equalize_on_stack: js.UndefOr[Boolean] = js.undefined
   
-  var use_tallest: js.UndefOr[Boolean] = js.native
+  var use_tallest: js.UndefOr[Boolean] = js.undefined
 }
 object EqualizerOptions {
   

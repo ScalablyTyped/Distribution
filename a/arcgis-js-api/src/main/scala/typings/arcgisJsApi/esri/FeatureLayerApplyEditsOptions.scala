@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerApplyEditsOptions extends Object {
+trait FeatureLayerApplyEditsOptions
+  extends StObject
+     with Object {
   
   /**
     * The geodatabase version to apply the edits.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the edits can be applied using globalIds of features or attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  var globalIdUsed: js.UndefOr[Boolean] = js.native
+  var globalIdUsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the edits should be applied only if all submitted edits succeed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  var rollbackOnFailureEnabled: js.UndefOr[Boolean] = js.native
+  var rollbackOnFailureEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureLayerApplyEditsOptions {
   

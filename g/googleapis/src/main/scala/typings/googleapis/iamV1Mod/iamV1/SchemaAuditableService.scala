@@ -2,20 +2,18 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about an auditable service.
   */
-@js.native
 trait SchemaAuditableService extends StObject {
   
   /**
     * Public name of the service. For example, the service name for Cloud IAM
     * is &#39;iam.googleapis.com&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaAuditableService {
   

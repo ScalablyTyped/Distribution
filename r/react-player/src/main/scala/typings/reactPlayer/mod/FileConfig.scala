@@ -2,29 +2,27 @@ package typings.reactPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileConfig extends StObject {
   
-  var attributes: js.UndefOr[js.Object] = js.native
+  var attributes: js.UndefOr[js.Object] = js.undefined
   
-  var dashVersion: js.UndefOr[String] = js.native
+  var dashVersion: js.UndefOr[String] = js.undefined
   
-  var forceAudio: js.UndefOr[Boolean] = js.native
+  var forceAudio: js.UndefOr[Boolean] = js.undefined
   
-  var forceDASH: js.UndefOr[Boolean] = js.native
+  var forceDASH: js.UndefOr[Boolean] = js.undefined
   
-  var forceHLS: js.UndefOr[Boolean] = js.native
+  var forceHLS: js.UndefOr[Boolean] = js.undefined
   
-  var forceVideo: js.UndefOr[Boolean] = js.native
+  var forceVideo: js.UndefOr[Boolean] = js.undefined
   
-  var hlsOptions: js.UndefOr[js.Object] = js.native
+  var hlsOptions: js.UndefOr[js.Object] = js.undefined
   
-  var hlsVersion: js.UndefOr[String] = js.native
+  var hlsVersion: js.UndefOr[String] = js.undefined
   
-  var tracks: js.UndefOr[js.Array[TrackProps]] = js.native
+  var tracks: js.UndefOr[js.Array[TrackProps]] = js.undefined
 }
 object FileConfig {
   

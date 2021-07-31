@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,11 @@ object mod {
   @js.native
   val OnFocus: FC[OnFocusProps] = js.native
   
-  @js.native
   trait ExternallyChangedProps extends StObject {
     
-    def children(externallyChanged: Boolean): ReactNode = js.native
+    def children(externallyChanged: Boolean): ReactNode
     
-    var name: String = js.native
+    var name: String
   }
   object ExternallyChangedProps {
     
@@ -51,12 +49,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnBlurProps extends StObject {
     
-    def children(): Unit = js.native
+    def children(): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object OnBlurProps {
     
@@ -77,12 +74,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnChangeProps extends StObject {
     
-    def children(value: js.Any, previous: js.Any): Unit = js.native
+    def children(value: js.Any, previous: js.Any): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object OnChangeProps {
     
@@ -103,12 +99,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnFocusProps extends StObject {
     
-    def children(): Unit = js.native
+    def children(): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object OnFocusProps {
     

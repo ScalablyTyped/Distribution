@@ -2,19 +2,19 @@ package typings.wordpressAutop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/autop", "autop")
+  @JSImport("@wordpress/autop", JSImport.Namespace)
   @js.native
-  def autop(text: String): String = js.native
-  @JSImport("@wordpress/autop", "autop")
-  @js.native
-  def autop(text: String, br: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/autop", "removep")
-  @js.native
-  def removep(html: String): String = js.native
+  @scala.inline
+  def autop(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autop(text: String, br: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def removep(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removep")(html.asInstanceOf[js.Any]).asInstanceOf[String]
 }

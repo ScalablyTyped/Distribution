@@ -5,37 +5,35 @@ import typings.amapJsSdk.AMap.Pixel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsDestination extends StObject {
   
-  var asDestination: js.UndefOr[Boolean] = js.native
+  var asDestination: js.UndefOr[Boolean] = js.undefined
   
-  var asOrigin: js.UndefOr[Boolean] = js.native
+  var asOrigin: js.UndefOr[Boolean] = js.undefined
   
-  var autoMove: js.UndefOr[Boolean] = js.native
+  var autoMove: js.UndefOr[Boolean] = js.undefined
   
-  var closeWhenClickMap: js.UndefOr[Boolean] = js.native
+  var closeWhenClickMap: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | HTMLElement] = js.native
+  var content: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var driving: js.UndefOr[Boolean] = js.native
+  var driving: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Pixel] = js.native
+  var offset: js.UndefOr[Pixel] = js.undefined
   
-  var panel: js.UndefOr[String | HTMLElement] = js.native
+  var panel: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var placeSearch: js.UndefOr[Boolean] = js.native
+  var placeSearch: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[LngLat] = js.native
+  var position: js.UndefOr[LngLat] = js.undefined
   
-  var searchRadius: js.UndefOr[Double] = js.native
+  var searchRadius: js.UndefOr[Double] = js.undefined
   
-  var transit: js.UndefOr[Boolean] = js.native
+  var transit: js.UndefOr[Boolean] = js.undefined
   
-  var walking: js.UndefOr[Boolean] = js.native
+  var walking: js.UndefOr[Boolean] = js.undefined
 }
 object AsDestination {
   

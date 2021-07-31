@@ -5,7 +5,6 @@ import typings.autolinker.matchMatchMod.Match
 import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phoneMatchMod {
@@ -62,12 +61,13 @@ object phoneMatchMod {
     val plusSign: js.Any = js.native
   }
   
-  @js.native
-  trait PhoneMatchConfig extends MatchConfig {
+  trait PhoneMatchConfig
+    extends StObject
+       with MatchConfig {
     
-    var number: String = js.native
+    var number: String
     
-    var plusSign: Boolean = js.native
+    var plusSign: Boolean
   }
   object PhoneMatchConfig {
     

@@ -3,83 +3,81 @@ package typings.svgo.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Js2SvgOptions extends StObject {
   
   /** @default '"' */
-  var attrEnd: js.UndefOr[String] = js.native
+  var attrEnd: js.UndefOr[String] = js.undefined
   
   /** @default '="' */
-  var attrStart: js.UndefOr[String] = js.native
+  var attrStart: js.UndefOr[String] = js.undefined
   
   /** @default ']]>' */
-  var cdataEnd: js.UndefOr[String] = js.native
+  var cdataEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<![CDATA[' */
-  var cdataStart: js.UndefOr[String] = js.native
+  var cdataStart: js.UndefOr[String] = js.undefined
   
   /** @default '-->' */
-  var commentEnd: js.UndefOr[String] = js.native
+  var commentEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<!--' */
-  var commentStart: js.UndefOr[String] = js.native
+  var commentStart: js.UndefOr[String] = js.undefined
   
   /** @default '>' */
-  var doctypeEnd: js.UndefOr[String] = js.native
+  var doctypeEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<!DOCTYPE' */
-  var doctypeStart: js.UndefOr[String] = js.native
+  var doctypeStart: js.UndefOr[String] = js.undefined
   
   /** @default encodeEntity */
-  var encodeEntity: js.UndefOr[js.Function1[/* char */ js.UndefOr[String], String]] = js.native
+  var encodeEntity: js.UndefOr[js.Function1[/* char */ js.UndefOr[String], String]] = js.undefined
   
   /** @default 4 */
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
   
   /** @default false */
-  var pretty: js.UndefOr[Boolean] = js.native
+  var pretty: js.UndefOr[Boolean] = js.undefined
   
   /** @default '?>' */
-  var procInstEnd: js.UndefOr[String] = js.native
+  var procInstEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<?' */
-  var procInstStart: js.UndefOr[String] = js.native
+  var procInstStart: js.UndefOr[String] = js.undefined
   
   /** @default /[&'"<>]/g */
-  var regEntities: js.UndefOr[RegExp] = js.native
+  var regEntities: js.UndefOr[RegExp] = js.undefined
   
   /** @default /[&"<>]/g */
-  var regValEntities: js.UndefOr[RegExp] = js.native
+  var regValEntities: js.UndefOr[RegExp] = js.undefined
   
   /** @default '>' */
-  var tagCloseEnd: js.UndefOr[String] = js.native
+  var tagCloseEnd: js.UndefOr[String] = js.undefined
   
   /** @default '</' */
-  var tagCloseStart: js.UndefOr[String] = js.native
+  var tagCloseStart: js.UndefOr[String] = js.undefined
   
   /** @default '>' */
-  var tagOpenEnd: js.UndefOr[String] = js.native
+  var tagOpenEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<' */
-  var tagOpenStart: js.UndefOr[String] = js.native
+  var tagOpenStart: js.UndefOr[String] = js.undefined
   
   /** @default '/>' */
-  var tagShortEnd: js.UndefOr[String] = js.native
+  var tagShortEnd: js.UndefOr[String] = js.undefined
   
   /** @default '<' */
-  var tagShortStart: js.UndefOr[String] = js.native
+  var tagShortStart: js.UndefOr[String] = js.undefined
   
   /** @default '' */
-  var textEnd: js.UndefOr[String] = js.native
+  var textEnd: js.UndefOr[String] = js.undefined
   
   /** @default '' */
-  var textStart: js.UndefOr[String] = js.native
+  var textStart: js.UndefOr[String] = js.undefined
   
   /** @default true */
-  var useShortTags: js.UndefOr[Boolean] = js.native
+  var useShortTags: js.UndefOr[Boolean] = js.undefined
 }
 object Js2SvgOptions {
   

@@ -3,19 +3,17 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nulldataMod {
   
   object check {
     
-    @JSImport("bitcoinjs-lib/types/templates/nulldata", "check")
-    @js.native
-    def apply(script: js.Array[Double | Buffer]): Boolean = js.native
-    @JSImport("bitcoinjs-lib/types/templates/nulldata", "check")
-    @js.native
-    def apply(script: Buffer): Boolean = js.native
+    @scala.inline
+    def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     @JSImport("bitcoinjs-lib/types/templates/nulldata", "check")
     @js.native
     val ^ : js.Any = js.native
@@ -36,12 +34,10 @@ object nulldataMod {
     @JSImport("bitcoinjs-lib/types/templates/nulldata", "output.check")
     @js.native
     def check: js.Function1[/* script */ Buffer | (js.Array[Double | Buffer]), Boolean] = js.native
-    @JSImport("bitcoinjs-lib/types/templates/nulldata", "output.check")
-    @js.native
-    def check(script: js.Array[Double | Buffer]): Boolean = js.native
-    @JSImport("bitcoinjs-lib/types/templates/nulldata", "output.check")
-    @js.native
-    def check(script: Buffer): Boolean = js.native
+    @scala.inline
+    def check(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def check(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     @scala.inline
     def check_=(x: js.Function1[/* script */ Buffer | (js.Array[Double | Buffer]), Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
   }

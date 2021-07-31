@@ -3,39 +3,37 @@ package typings.ionicCore.anon
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Android extends StObject {
   
-  def android(win: Window): Boolean = js.native
+  def android(win: Window): Boolean
   
-  def capacitor(win: js.Any): Boolean = js.native
+  def capacitor(win: js.Any): Boolean
   
-  def cordova(win: js.Any): Boolean = js.native
+  def cordova(win: js.Any): Boolean
   
-  def desktop(win: Window): Boolean = js.native
+  def desktop(win: Window): Boolean
   
-  def electron(win: Window): Boolean = js.native
+  def electron(win: Window): Boolean
   
-  def hybrid(win: Window): Boolean = js.native
+  def hybrid(win: Window): Boolean
   
-  def ios(win: Window): Boolean = js.native
+  def ios(win: Window): Boolean
   
-  def ipad(win: Window): Boolean = js.native
+  def ipad(win: Window): Boolean
   
-  def iphone(win: Window): Boolean = js.native
+  def iphone(win: Window): Boolean
   
-  def mobile(win: Window): Boolean = js.native
+  def mobile(win: Window): Boolean
   
-  def mobileweb(win: Window): Boolean = js.native
+  def mobileweb(win: Window): Boolean
   
-  def phablet(win: Window): Boolean = js.native
+  def phablet(win: Window): Boolean
   
-  def pwa(win: Window): Boolean = js.native
+  def pwa(win: Window): Boolean
   
-  def tablet(win: Window): Boolean = js.native
+  def tablet(win: Window): Boolean
 }
 object Android {
   

@@ -2,17 +2,15 @@ package typings.reactSideEffect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Peek[TPeek, TRewind] extends StObject {
     
-    def peek(): TPeek = js.native
+    def peek(): TPeek
     
-    def rewind(): TRewind = js.native
+    def rewind(): TRewind
   }
   object Peek {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PeekMutableBuilder[Self <: Peek[_, _], TPeek, TRewind] (val x: Self with (Peek[TPeek, TRewind])) extends AnyVal {
+    implicit class PeekMutableBuilder[Self <: Peek[?, ?], TPeek, TRewind] (val x: Self & (Peek[TPeek, TRewind])) extends AnyVal {
       
       @scala.inline
       def setPeek(value: () => TPeek): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))

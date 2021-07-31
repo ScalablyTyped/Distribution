@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SourceKeyRecord...
   */
-@js.native
 trait ISourceKeyRecord extends StObject {
   
   /**
     * Name of the key field.
     */
-  var qKeyFields: js.Array[String] = js.native
+  var qKeyFields: js.Array[String]
   
   /**
     * Table the key belongs to.
     */
-  var qTables: js.Array[String] = js.native
+  var qTables: js.Array[String]
 }
 object ISourceKeyRecord {
   

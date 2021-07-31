@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEndpointWeightsAndCapacitiesInput extends StObject {
   
   /**
     * An object that provides new capacity and weight values for a variant.
     */
-  var DesiredWeightsAndCapacities: DesiredWeightAndCapacityList = js.native
+  var DesiredWeightsAndCapacities: DesiredWeightAndCapacityList
   
   /**
     * The name of an existing Amazon SageMaker endpoint.
     */
-  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName = js.native
+  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName
 }
 object UpdateEndpointWeightsAndCapacitiesInput {
   

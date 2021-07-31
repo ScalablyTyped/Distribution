@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAssociationsOnceRequest extends StObject {
   
   /**
     * The association IDs that you want to run immediately and only one time.
     */
-  var AssociationIds: AssociationIdList = js.native
+  var AssociationIds: AssociationIdList
 }
 object StartAssociationsOnceRequest {
   

@@ -3,42 +3,41 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ClassExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ClassExpression_
-  extends Class
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ClassExpression_
+  extends StObject
      with BaseNode
+     with Class
      with Expression
      with Scopable {
   
-  var body: ClassBody_ = js.native
+  var body: ClassBody_
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var id: Identifier_ | Null = js.native
+  var id: Identifier_ | Null
   
-  var implements: (js.Array[TSExpressionWithTypeArguments_ | ClassImplements_]) | Null = js.native
+  var implements: (js.Array[TSExpressionWithTypeArguments_ | ClassImplements_]) | Null
   
-  var mixins: InterfaceExtends_ | Null = js.native
+  var mixins: InterfaceExtends_ | Null
   
-  var superClass: Expression | Null = js.native
+  var superClass: Expression | Null
   
-  var superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null = js.native
+  var superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null
   
-  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassExpression_ : ClassExpression = js.native
+  var type_ClassExpression_ : ClassExpression
 }
 object ClassExpression_ {
   
   @scala.inline
-  def apply(body: ClassBody_, `type`: ClassExpression): ClassExpression_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: ClassBody_): ClassExpression_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], decorators = null, end = null, id = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, superClass = null, superTypeParameters = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[ClassExpression_]
   }
   

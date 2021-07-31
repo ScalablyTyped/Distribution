@@ -2,42 +2,39 @@ package typings.chartmogulNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataSource {
   
-  @JSImport("chartmogul-node", "DataSource.all")
+  @JSImport("chartmogul-node", "DataSource")
   @js.native
-  def all(config: Config): js.Promise[DataSources] = js.native
-  @JSImport("chartmogul-node", "DataSource.all")
-  @js.native
-  def all(config: Config, params: ListDataSourcesParams): js.Promise[DataSources] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "DataSource.create")
-  @js.native
-  def create(config: Config, data: typings.chartmogulNode.mod.DataSource.DataSource): js.Promise[typings.chartmogulNode.mod.DataSource.DataSource] = js.native
+  @scala.inline
+  def all(config: Config): js.Promise[DataSources] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DataSources]]
+  @scala.inline
+  def all(config: Config, params: ListDataSourcesParams): js.Promise[DataSources] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DataSources]]
   
-  @JSImport("chartmogul-node", "DataSource.destroy")
-  @js.native
-  def destroy(config: Config, uuid: String): js.Promise[js.Object] = js.native
+  @scala.inline
+  def create(config: Config, data: typings.chartmogulNode.mod.DataSource.DataSource): js.Promise[typings.chartmogulNode.mod.DataSource.DataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.DataSource.DataSource]]
   
-  @JSImport("chartmogul-node", "DataSource.retrieve")
-  @js.native
-  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.DataSource.DataSource] = js.native
+  @scala.inline
+  def destroy(config: Config, uuid: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @js.native
+  @scala.inline
+  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.DataSource.DataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.DataSource.DataSource]]
+  
   trait DataSource extends StObject {
     
-    var created_at: js.UndefOr[String] = js.native
+    var created_at: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object DataSource {
     
@@ -79,10 +76,9 @@ object DataSource {
     }
   }
   
-  @js.native
   trait DataSources extends StObject {
     
-    var data_sources: js.Array[typings.chartmogulNode.mod.DataSource.DataSource] = js.native
+    var data_sources: js.Array[typings.chartmogulNode.mod.DataSource.DataSource]
   }
   object DataSources {
     
@@ -103,12 +99,11 @@ object DataSource {
     }
   }
   
-  @js.native
   trait ListDataSourcesParams extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
   }
   object ListDataSourcesParams {
     

@@ -11,57 +11,48 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("react-range/lib/utils", "assertUnreachable")
+  @JSImport("react-range/lib/utils", JSImport.Namespace)
   @js.native
-  def assertUnreachable(x: scala.Nothing): scala.Nothing = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-range/lib/utils", "checkBoundaries")
-  @js.native
-  def checkBoundaries(value: Double, min: Double, max: Double): Unit = js.native
+  @scala.inline
+  def assertUnreachable(x: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertUnreachable")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @JSImport("react-range/lib/utils", "checkInitialOverlap")
-  @js.native
-  def checkInitialOverlap(values: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def checkBoundaries(value: Double, min: Double, max: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkBoundaries")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-range/lib/utils", "getClosestThumbIndex")
-  @js.native
-  def getClosestThumbIndex(thumbs: js.Array[Element], clientX: Double, clientY: Double, direction: Direction): Double = js.native
+  @scala.inline
+  def checkInitialOverlap(values: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInitialOverlap")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-range/lib/utils", "getMargin")
-  @js.native
-  def getMargin(element: Element): Bottom = js.native
+  @scala.inline
+  def getClosestThumbIndex(thumbs: js.Array[Element], clientX: Double, clientY: Double, direction: Direction): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getClosestThumbIndex")(thumbs.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-range/lib/utils", "getPaddingAndBorder")
-  @js.native
-  def getPaddingAndBorder(element: Element): Bottom = js.native
+  @scala.inline
+  def getMargin(element: Element): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getMargin")(element.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
-  @JSImport("react-range/lib/utils", "getStepDecimals")
-  @js.native
-  def getStepDecimals(step: Double): Double = js.native
+  @scala.inline
+  def getPaddingAndBorder(element: Element): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getPaddingAndBorder")(element.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
-  @JSImport("react-range/lib/utils", "getTrackBackground")
-  @js.native
-  def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = js.native
+  @scala.inline
+  def getStepDecimals(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStepDecimals")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-range/lib/utils", "isStepDivisible")
-  @js.native
-  def isStepDivisible(min: Double, max: Double, step: Double): Boolean = js.native
+  @scala.inline
+  def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-range/lib/utils", "isTouchEvent")
-  @js.native
-  def isTouchEvent(event: TouchEvent with MouseEvent): Double = js.native
+  @scala.inline
+  def isStepDivisible(min: Double, max: Double, step: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStepDivisible")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-range/lib/utils", "isVertical")
-  @js.native
-  def isVertical(direction: Direction): Boolean = js.native
+  @scala.inline
+  def isTouchEvent(event: TouchEvent & MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-range/lib/utils", "normalizeValue")
-  @js.native
+  @scala.inline
+  def isVertical(direction: Direction): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVertical")(direction.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
   def normalizeValue(
     value: Double,
     index: Double,
@@ -70,78 +61,30 @@ object utilsMod {
     step: Double,
     allowOverlap: Boolean,
     values: js.Array[Double]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeValue")(value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any], allowOverlap.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-range/lib/utils", "relativeValue")
-  @js.native
-  def relativeValue(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def relativeValue(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeValue")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-range/lib/utils", "replaceAt")
-  @js.native
-  def replaceAt(values: js.Array[Double], index: Double, value: Double): js.Array[Double] = js.native
+  @scala.inline
+  def replaceAt(values: js.Array[Double], index: Double, value: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAt")(values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("react-range/lib/utils", "schd")
-  @js.native
-  def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @scala.inline
+  def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("schd")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @JSImport("react-range/lib/utils", "translate")
-  @js.native
-  def translate(element: Element, x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def translate(element: Element, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(element.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-range/lib/utils", "translateThumbs")
-  @js.native
-  def translateThumbs(elements: js.Array[Element], offsets: TThumbOffsets, rtl: Boolean): Unit = js.native
+  @scala.inline
+  def translateThumbs(elements: js.Array[Element], offsets: TThumbOffsets, rtl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translateThumbs")(elements.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: Null,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: js.UndefOr[scala.Nothing],
-    valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: Null,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: String
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: Null,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: String,
-    valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: Null,
-    values: js.Array[Double],
-    index: Double,
-    step: Double,
-    separator: js.UndefOr[scala.Nothing],
-    valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
+  @scala.inline
+  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
   def useThumbOverlap(
     rangeRef: Null,
     values: js.Array[Double],
@@ -149,57 +92,43 @@ object utilsMod {
     step: Double,
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
   def useThumbOverlap(
-    rangeRef: default,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: js.UndefOr[scala.Nothing],
-    valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: default,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: String
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: default,
-    values: js.Array[Double],
-    index: Double,
-    step: js.UndefOr[scala.Nothing],
-    separator: String,
-    valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(
-    rangeRef: default,
+    rangeRef: Null,
     values: js.Array[Double],
     index: Double,
     step: Double,
-    separator: js.UndefOr[scala.Nothing],
+    separator: Unit,
     valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
-  @JSImport("react-range/lib/utils", "useThumbOverlap")
-  @js.native
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: Unit,
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: Unit,
+    separator: Unit,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
   def useThumbOverlap(
     rangeRef: default,
     values: js.Array[Double],
@@ -207,9 +136,37 @@ object utilsMod {
     step: Double,
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
-  ): js.Array[String | CSSProperties] = js.native
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: Double,
+    separator: Unit,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: Unit,
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  @scala.inline
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: Unit,
+    separator: Unit,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
   
-  @JSImport("react-range/lib/utils", "voidFn")
-  @js.native
-  def voidFn(): Unit = js.native
+  @scala.inline
+  def voidFn(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("voidFn")().asInstanceOf[Unit]
 }

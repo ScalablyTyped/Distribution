@@ -2,35 +2,33 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackSupportedConstraints extends StObject {
   
-  var aspectRatio: js.UndefOr[Boolean] = js.native
+  var aspectRatio: js.UndefOr[Boolean] = js.undefined
   
-  var deviceId: js.UndefOr[Boolean] = js.native
+  var deviceId: js.UndefOr[Boolean] = js.undefined
   
-  var echoCancellation: js.UndefOr[Boolean] = js.native
+  var echoCancellation: js.UndefOr[Boolean] = js.undefined
   
-  var facingMode: js.UndefOr[Boolean] = js.native
+  var facingMode: js.UndefOr[Boolean] = js.undefined
   
-  var frameRate: js.UndefOr[Boolean] = js.native
+  var frameRate: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: js.UndefOr[Boolean] = js.native
+  var groupId: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
-  var latency: js.UndefOr[Boolean] = js.native
+  var latency: js.UndefOr[Boolean] = js.undefined
   
-  var sampleRate: js.UndefOr[Boolean] = js.native
+  var sampleRate: js.UndefOr[Boolean] = js.undefined
   
-  var sampleSize: js.UndefOr[Boolean] = js.native
+  var sampleSize: js.UndefOr[Boolean] = js.undefined
   
-  var volume: js.UndefOr[Boolean] = js.native
+  var volume: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object MediaTrackSupportedConstraints {
   

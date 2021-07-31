@@ -3,7 +3,6 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be placed anywhere in the room, any spawns will be able to use them regardless
   * of distance.
   */
-@js.native
 trait StructureExtension
-  extends OwnedStructure[STRUCTURE_EXTENSION]
+  extends StObject
+     with OwnedStructure[STRUCTURE_EXTENSION]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
@@ -22,18 +21,18 @@ trait StructureExtension
     * The amount of energy containing in the extension.
     * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
-  var energy: Double = js.native
+  var energy: Double
   
   /**
     * The total amount of energy the extension can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
-  var energyCapacity: Double = js.native
+  var energyCapacity: Double
   
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: StoreRESOURCEENERGYfalse = js.native
+  var store: StoreRESOURCEENERGYfalse
 }
 object StructureExtension {
   

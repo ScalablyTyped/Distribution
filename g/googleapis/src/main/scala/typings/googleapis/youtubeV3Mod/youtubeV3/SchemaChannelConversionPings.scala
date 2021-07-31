@@ -2,14 +2,12 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The conversionPings object encapsulates information about conversion pings
   * that need to be respected by the channel.
   */
-@js.native
 trait SchemaChannelConversionPings extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaChannelConversionPings extends StObject {
     * ping has a context, in which the app must fire the ping, and a url
     * identifying the ping.
     */
-  var pings: js.UndefOr[js.Array[SchemaChannelConversionPing]] = js.native
+  var pings: js.UndefOr[js.Array[SchemaChannelConversionPing]] = js.undefined
 }
 object SchemaChannelConversionPings {
   

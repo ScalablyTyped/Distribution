@@ -4,60 +4,60 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the text of a component and makes it possible to register event listeners. */
-@js.native
-trait XTextComponent extends XInterface {
+trait XTextComponent
+  extends StObject
+     with XInterface {
   
   /** returns the currently set maximum text length. */
-  var MaxTextLen: Double = js.native
+  var MaxTextLen: Double
   
   /** returns the currently selected text. */
-  val SelectedText: String = js.native
+  val SelectedText: String
   
   /** returns the current user selection. */
-  var Selection: typings.activexLibreoffice.com_.sun.star.awt.Selection = js.native
+  var Selection: typings.activexLibreoffice.com_.sun.star.awt.Selection
   
   /** returns the text of the component. */
-  var Text: String = js.native
+  var Text: String
   
   /** registers a text event listener. */
-  def addTextListener(l: XTextListener): Unit = js.native
+  def addTextListener(l: XTextListener): Unit
   
   /** returns the currently set maximum text length. */
-  def getMaxTextLen(): Double = js.native
+  def getMaxTextLen(): Double
   
   /** returns the currently selected text. */
-  def getSelectedText(): String = js.native
+  def getSelectedText(): String
   
   /** returns the current user selection. */
-  def getSelection(): Selection = js.native
+  def getSelection(): Selection
   
   /** returns the text of the component. */
-  def getText(): String = js.native
+  def getText(): String
   
   /** inserts text at the specified position. */
-  def insertText(Sel: Selection, Text: String): Unit = js.native
+  def insertText(Sel: Selection, Text: String): Unit
   
   /** returns if the text is editable by the user. */
-  def isEditable(): Boolean = js.native
+  def isEditable(): Boolean
   
   /** unregisters a text event listener. */
-  def removeTextListener(l: XTextListener): Unit = js.native
+  def removeTextListener(l: XTextListener): Unit
   
   /** makes the text editable for the user or read-only. */
-  def setEditable(bEditable: Boolean): Unit = js.native
+  def setEditable(bEditable: Boolean): Unit
   
   /** sets the maximum text length. */
-  def setMaxTextLen(nLen: Double): Unit = js.native
+  def setMaxTextLen(nLen: Double): Unit
   
   /** sets the user selection. */
-  def setSelection(aSelection: Selection): Unit = js.native
+  def setSelection(aSelection: Selection): Unit
   
   /** sets the text of the component. */
-  def setText(aText: String): Unit = js.native
+  def setText(aText: String): Unit
 }
 object XTextComponent {
   

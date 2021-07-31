@@ -2,23 +2,21 @@ package typings.persona
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Persona {
   
-  @js.native
   trait GetOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var privacyPolicy: js.UndefOr[String] = js.native
+    var privacyPolicy: js.UndefOr[String] = js.undefined
     
-    var siteLogo: js.UndefOr[String] = js.native
+    var siteLogo: js.UndefOr[String] = js.undefined
     
-    var siteName: js.UndefOr[String] = js.native
+    var siteName: js.UndefOr[String] = js.undefined
     
-    var termsOfService: js.UndefOr[String] = js.native
+    var termsOfService: js.UndefOr[String] = js.undefined
   }
   object GetOptions {
     
@@ -77,22 +75,21 @@ object Persona {
     def watch(options: WatchOptions): Unit = js.native
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var oncancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var oncancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var privacyPolicy: js.UndefOr[String] = js.native
+    var privacyPolicy: js.UndefOr[String] = js.undefined
     
-    var returnTo: js.UndefOr[String] = js.native
+    var returnTo: js.UndefOr[String] = js.undefined
     
-    var siteLogo: js.UndefOr[String] = js.native
+    var siteLogo: js.UndefOr[String] = js.undefined
     
-    var siteName: js.UndefOr[String] = js.native
+    var siteName: js.UndefOr[String] = js.undefined
     
-    var termsOfService: js.UndefOr[String] = js.native
+    var termsOfService: js.UndefOr[String] = js.undefined
   }
   object RequestOptions {
     
@@ -149,16 +146,15 @@ object Persona {
     }
   }
   
-  @js.native
   trait WatchOptions extends StObject {
     
-    var loggedInUser: String = js.native
+    var loggedInUser: String
     
-    def onlogin(s: String): Unit = js.native
+    def onlogin(s: String): Unit
     
-    def onlogout(): Unit = js.native
+    def onlogout(): Unit
     
-    var onready: js.UndefOr[js.Function0[Unit]] = js.native
+    var onready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object WatchOptions {
     

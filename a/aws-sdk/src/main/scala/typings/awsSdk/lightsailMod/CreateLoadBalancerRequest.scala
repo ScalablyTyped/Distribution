@@ -2,46 +2,44 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLoadBalancerRequest extends StObject {
   
   /**
     * The optional alternative domains and subdomains to use with your SSL/TLS certificate (e.g., www.example.com, example.com, m.example.com, blog.example.com).
     */
-  var certificateAlternativeNames: js.UndefOr[DomainNameList] = js.native
+  var certificateAlternativeNames: js.UndefOr[DomainNameList] = js.undefined
   
   /**
     * The domain name with which your certificate is associated (e.g., example.com). If you specify certificateDomainName, then certificateName is required (and vice-versa).
     */
-  var certificateDomainName: js.UndefOr[DomainName] = js.native
+  var certificateDomainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The name of the SSL/TLS certificate. If you specify certificateName, then certificateDomainName is required (and vice-versa).
     */
-  var certificateName: js.UndefOr[ResourceName] = js.native
+  var certificateName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The path you provided to perform the load balancer health check. If you didn't specify a health check path, Lightsail uses the root path of your website (e.g., "/"). You may want to specify a custom health check path other than the root of your application if your home page loads slowly or has a lot of media or scripting on it.
     */
-  var healthCheckPath: js.UndefOr[String] = js.native
+  var healthCheckPath: js.UndefOr[String] = js.undefined
   
   /**
     * The instance port where you're creating your load balancer.
     */
-  var instancePort: Port = js.native
+  var instancePort: Port
   
   /**
     * The name of your load balancer.
     */
-  var loadBalancerName: ResourceName = js.native
+  var loadBalancerName: ResourceName
   
   /**
     * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateLoadBalancerRequest {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxPodsConstraint extends StObject {
   
   /** Constraint enforced on the max num of pods per node. */
-  var maxPodsPerNode: js.UndefOr[String] = js.native
+  var maxPodsPerNode: js.UndefOr[String] = js.undefined
 }
 object MaxPodsConstraint {
   

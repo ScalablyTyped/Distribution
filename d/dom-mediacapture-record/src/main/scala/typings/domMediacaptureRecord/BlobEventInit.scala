@@ -4,15 +4,15 @@ import typings.std.Blob
 import typings.std.EventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlobEventInit extends EventInit {
+trait BlobEventInit
+  extends StObject
+     with EventInit {
   
-  var data: Blob = js.native
+  var data: Blob
   
-  var timecode: js.UndefOr[Double] = js.native
+  var timecode: js.UndefOr[Double] = js.undefined
 }
 object BlobEventInit {
   

@@ -2,7 +2,6 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will inherit.
   * @see {@link https://www.w3.org/TR/credential-management-1/#credential}
   */
-@js.native
 trait Credential extends StObject {
   
   /**
     * The credential’s identifier. This might be a GUID, username, or email
     * address, for instance.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The credential’s type.
     */
-  val `type`: String = js.native
+  val `type`: String
 }
 object Credential {
   

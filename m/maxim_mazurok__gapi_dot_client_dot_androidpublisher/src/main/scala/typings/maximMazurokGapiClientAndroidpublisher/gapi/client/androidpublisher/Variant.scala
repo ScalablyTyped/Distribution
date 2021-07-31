@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variant extends StObject {
   
   /** The device spec used to generate the APK. */
-  var deviceSpec: js.UndefOr[DeviceSpec] = js.native
+  var deviceSpec: js.UndefOr[DeviceSpec] = js.undefined
   
   /** Output only. The ID of a previously created system APK variant. */
-  var variantId: js.UndefOr[Double] = js.native
+  var variantId: js.UndefOr[Double] = js.undefined
 }
 object Variant {
   

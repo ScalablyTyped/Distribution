@@ -2,15 +2,13 @@ package typings.openlayers.mod.olx.interaction
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinchZoomOptions extends StObject {
   
-  var constrainResolution: js.UndefOr[Boolean] = js.native
+  var constrainResolution: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object PinchZoomOptions {
   

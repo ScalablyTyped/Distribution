@@ -2,23 +2,21 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAccountCredentials extends StObject {
   
   /**
     * @description
     * service account email address
     */
-  var client_email: String = js.native
+  var client_email: String
   
   /**
     * @description
     * service account private key
     */
-  var private_key: String = js.native
+  var private_key: String
 }
 object ServiceAccountCredentials {
   

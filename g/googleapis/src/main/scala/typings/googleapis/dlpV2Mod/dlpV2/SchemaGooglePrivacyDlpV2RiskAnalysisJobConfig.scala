@@ -2,31 +2,29 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a risk analysis job. See
   * https://cloud.google.com/dlp/docs/concepts-risk-analysis to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig extends StObject {
   
   /**
     * Actions to execute at the completion of the job. Are executed in the
     * order provided.
     */
-  var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.native
+  var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.undefined
   
   /**
     * Privacy metric to compute.
     */
-  var privacyMetric: js.UndefOr[SchemaGooglePrivacyDlpV2PrivacyMetric] = js.native
+  var privacyMetric: js.UndefOr[SchemaGooglePrivacyDlpV2PrivacyMetric] = js.undefined
   
   /**
     * Input dataset to compute metrics over.
     */
-  var sourceTable: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.native
+  var sourceTable: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig {
   

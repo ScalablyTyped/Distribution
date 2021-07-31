@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is an extension to the {@link XPropertySet} interface. The get and set methods use handles to access the property values instead of
   * character strings.
   */
-@js.native
-trait XFastPropertySet extends XInterface {
+trait XFastPropertySet
+  extends StObject
+     with XInterface {
   
   /**
     * @param nHandle contains the implementation handle of the implementation for the property.
@@ -22,7 +22,7 @@ trait XFastPropertySet extends XInterface {
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getFastPropertyValue(nHandle: Double): js.Any = js.native
+  def getFastPropertyValue(nHandle: Double): js.Any
   
   /**
     * sets the value to the property with the specified name.
@@ -33,7 +33,7 @@ trait XFastPropertySet extends XInterface {
     * @throws IllegalArgumentException if the new value cannot be converted to the type of the underlying property by an identity or widening conversion.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def setFastPropertyValue(nHandle: Double, aValue: js.Any): Unit = js.native
+  def setFastPropertyValue(nHandle: Double, aValue: js.Any): Unit
 }
 object XFastPropertySet {
   

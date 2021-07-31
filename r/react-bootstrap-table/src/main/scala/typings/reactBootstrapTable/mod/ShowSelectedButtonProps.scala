@@ -4,41 +4,39 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowSelectedButtonProps extends StObject {
   
   /**
     * Bootstrap css style class for the button, e.g. 'btn-warning'
     */
-  var btnContextual: js.UndefOr[String] = js.native
+  var btnContextual: js.UndefOr[String] = js.undefined
   
   /**
     * Glyphicon glyph string for the button, e.g. 'glyphicon-edit'
     */
-  var btnGlyphicon: js.UndefOr[String] = js.native
+  var btnGlyphicon: js.UndefOr[String] = js.undefined
   
   /**
     * Custom class for the button
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Function to be called to activate the normal onClick functionality for this button.
     */
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
   
   /**
     * Label for when clicking the button will toggle the table back into "show all rows" mode.
     */
-  var showAllText: js.UndefOr[String] = js.native
+  var showAllText: js.UndefOr[String] = js.undefined
   
   /**
     * Label for when clicking the button will toggle the table into "show only selected rows" mode.
     */
-  var showOnlySelectText: js.UndefOr[String] = js.native
+  var showOnlySelectText: js.UndefOr[String] = js.undefined
 }
 object ShowSelectedButtonProps {
   
@@ -70,7 +68,7 @@ object ShowSelectedButtonProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* e */ MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* e */ MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

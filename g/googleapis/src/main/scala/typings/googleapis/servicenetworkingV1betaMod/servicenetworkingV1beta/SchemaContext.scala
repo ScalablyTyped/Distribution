@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * allowed_response_extensions:          - google.foo.v1.NewExtension  You can
   * also specify extension ID instead of fully qualified extension name here.
   */
-@js.native
 trait SchemaContext extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait SchemaContext extends StObject {
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaContextRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaContextRule]] = js.undefined
 }
 object SchemaContext {
   

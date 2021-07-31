@@ -2,41 +2,39 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpRouteInfo extends StObject {
   
   /**
     * The date and time the address block was added to the directory.
     */
-  var AddedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.AddedDateTime] = js.native
+  var AddedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.AddedDateTime] = js.undefined
   
   /**
     * IP address block in the IpRoute.
     */
-  var CidrIp: js.UndefOr[typings.awsSdk.directoryserviceMod.CidrIp] = js.native
+  var CidrIp: js.UndefOr[typings.awsSdk.directoryserviceMod.CidrIp] = js.undefined
   
   /**
     * Description of the IpRouteInfo.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * Identifier (ID) of the directory associated with the IP addresses.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The status of the IP address block.
     */
-  var IpRouteStatusMsg: js.UndefOr[typings.awsSdk.directoryserviceMod.IpRouteStatusMsg] = js.native
+  var IpRouteStatusMsg: js.UndefOr[typings.awsSdk.directoryserviceMod.IpRouteStatusMsg] = js.undefined
   
   /**
     * The reason for the IpRouteStatusMsg.
     */
-  var IpRouteStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.IpRouteStatusReason] = js.native
+  var IpRouteStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.IpRouteStatusReason] = js.undefined
 }
 object IpRouteInfo {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeveloperInfo extends StObject {
   
   /**
     * The name of the developer.
     */
-  var DeveloperName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeveloperName] = js.native
+  var DeveloperName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeveloperName] = js.undefined
   
   /**
     * The email of the developer.
     */
-  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.undefined
   
   /**
     * The URL of the privacy policy.
     */
-  var PrivacyPolicy: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PrivacyPolicy] = js.native
+  var PrivacyPolicy: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PrivacyPolicy] = js.undefined
   
   /**
     * The website of the developer.
     */
-  var Url: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Url] = js.native
+  var Url: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Url] = js.undefined
 }
 object DeveloperInfo {
   

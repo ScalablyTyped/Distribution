@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIPSetRequest extends StObject {
   
   /**
     * The IPSetId of the IPSet that you want to get. IPSetId is returned by CreateIPSet and by ListIPSets.
     */
-  var IPSetId: ResourceId = js.native
+  var IPSetId: ResourceId
 }
 object GetIPSetRequest {
   

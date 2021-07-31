@@ -3,48 +3,63 @@ package typings.mathjs
 import typings.mathjs.mod.MathJsFunctionName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathjsStrings {
   
   @js.native
-  sealed trait Infinity extends MathJsFunctionName
+  sealed trait Infinity
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
   
   @js.native
-  sealed trait LN10 extends MathJsFunctionName
+  sealed trait LN10
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def LN10: LN10 = "LN10".asInstanceOf[LN10]
   
   @js.native
-  sealed trait LN2 extends MathJsFunctionName
+  sealed trait LN2
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def LN2: LN2 = "LN2".asInstanceOf[LN2]
   
   @js.native
-  sealed trait LOG10E extends MathJsFunctionName
+  sealed trait LOG10E
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def LOG10E: LOG10E = "LOG10E".asInstanceOf[LOG10E]
   
   @js.native
-  sealed trait LOG2E extends MathJsFunctionName
+  sealed trait LOG2E
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def LOG2E: LOG2E = "LOG2E".asInstanceOf[LOG2E]
   
   @js.native
-  sealed trait NaN extends MathJsFunctionName
+  sealed trait NaN
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def NaN: NaN = "NaN".asInstanceOf[NaN]
   
   @js.native
-  sealed trait SQRT1_2 extends MathJsFunctionName
+  sealed trait SQRT1_2
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def SQRT1_2: SQRT1_2 = "SQRT1_2".asInstanceOf[SQRT1_2]
   
   @js.native
-  sealed trait SQRT2 extends MathJsFunctionName
+  sealed trait SQRT2
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def SQRT2: SQRT2 = "SQRT2".asInstanceOf[SQRT2]
   
@@ -84,7 +99,9 @@ object mathjsStrings {
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait e extends MathJsFunctionName
+  sealed trait e
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def e: e = "e".asInstanceOf[e]
   
@@ -99,7 +116,9 @@ object mathjsStrings {
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   
   @js.native
-  sealed trait expression extends MathJsFunctionName
+  sealed trait expression
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def expression: expression = "expression".asInstanceOf[expression]
   
@@ -109,12 +128,16 @@ object mathjsStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait i extends MathJsFunctionName
+  sealed trait i
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait json extends MathJsFunctionName
+  sealed trait json
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
@@ -134,17 +157,23 @@ object mathjsStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait `null` extends MathJsFunctionName
+  sealed trait `null`
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait phi extends MathJsFunctionName
+  sealed trait phi
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def phi: phi = "phi".asInstanceOf[phi]
   
   @js.native
-  sealed trait pi extends MathJsFunctionName
+  sealed trait pi
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def pi: pi = "pi".asInstanceOf[pi]
   
@@ -159,7 +188,9 @@ object mathjsStrings {
   def sparse: sparse = "sparse".asInstanceOf[sparse]
   
   @js.native
-  sealed trait tau extends MathJsFunctionName
+  sealed trait tau
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def tau: tau = "tau".asInstanceOf[tau]
   
@@ -174,12 +205,16 @@ object mathjsStrings {
   def uncorrected: uncorrected = "uncorrected".asInstanceOf[uncorrected]
   
   @js.native
-  sealed trait uninitialized extends MathJsFunctionName
+  sealed trait uninitialized
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def uninitialized: uninitialized = "uninitialized".asInstanceOf[uninitialized]
   
   @js.native
-  sealed trait version extends MathJsFunctionName
+  sealed trait version
+    extends StObject
+       with MathJsFunctionName
   @scala.inline
   def version: version = "version".asInstanceOf[version]
 }

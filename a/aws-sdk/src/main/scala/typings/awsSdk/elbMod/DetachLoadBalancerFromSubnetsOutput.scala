@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachLoadBalancerFromSubnetsOutput extends StObject {
   
   /**
     * The IDs of the remaining subnets for the load balancer.
     */
-  var Subnets: js.UndefOr[typings.awsSdk.elbMod.Subnets] = js.native
+  var Subnets: js.UndefOr[typings.awsSdk.elbMod.Subnets] = js.undefined
 }
 object DetachLoadBalancerFromSubnetsOutput {
   

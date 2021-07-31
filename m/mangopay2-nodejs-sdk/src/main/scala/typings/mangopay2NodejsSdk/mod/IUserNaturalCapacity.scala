@@ -4,27 +4,25 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DECLARATIVE
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserNaturalCapacity extends StObject {
   
   /**
     * User used only for declaration purpose
     */
-  var Declarative: DECLARATIVE = js.native
+  var Declarative: DECLARATIVE
   
   /**
     * Real customer
     */
-  var Normal: NORMAL = js.native
+  var Normal: NORMAL
 }
 object IUserNaturalCapacity {
   
   @scala.inline
-  def apply(Declarative: DECLARATIVE, Normal: NORMAL): IUserNaturalCapacity = {
-    val __obj = js.Dynamic.literal(Declarative = Declarative.asInstanceOf[js.Any], Normal = Normal.asInstanceOf[js.Any])
+  def apply(): IUserNaturalCapacity = {
+    val __obj = js.Dynamic.literal(Declarative = "DECLARATIVE", Normal = "NORMAL")
     __obj.asInstanceOf[IUserNaturalCapacity]
   }
   

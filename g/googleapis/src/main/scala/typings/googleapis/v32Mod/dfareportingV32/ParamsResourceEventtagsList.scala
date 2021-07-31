@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEventtagsList extends StandardParameters {
+trait ParamsResourceEventtagsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only event tags that belong to this ad.
     */
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only event tags that belong to this advertiser.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only event tags that belong to this campaign.
     */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /**
     * Examine only the specified campaign or advertiser's event tags for
@@ -40,7 +40,7 @@ trait ParamsResourceEventtagsList extends StandardParameters {
     * with the enabledByDefault field. This parameter can not be set to true
     * when adId is specified as ads do not define their own even tags.
     */
-  var definitionsOnly: js.UndefOr[Boolean] = js.native
+  var definitionsOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only enabled event tags. What is considered enabled or disabled
@@ -51,7 +51,7 @@ trait ParamsResourceEventtagsList extends StandardParameters {
     * campaign's event tags' enabledByDefault and status fields are examined as
     * well.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only event tags with the specified event tag types. Event tag
@@ -59,17 +59,17 @@ trait ParamsResourceEventtagsList extends StandardParameters {
     * third-party JavaScript URL, or a third-party click-through URL for either
     * impression or click tracking.
     */
-  var eventTagTypes: js.UndefOr[js.Array[String]] = js.native
+  var eventTagTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only event tags with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -80,17 +80,17 @@ trait ParamsResourceEventtagsList extends StandardParameters {
     * match objects with name "my eventtag", "eventtag 2015", or simply
     * "eventtag".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEventtagsList {
   

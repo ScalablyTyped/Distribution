@@ -2,56 +2,54 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replay extends StObject {
   
   /**
     * A time stamp for the time to start replaying events. Any event with a creation time prior to the EventEndTime specified is replayed.
     */
-  var EventEndTime: js.UndefOr[Timestamp] = js.native
+  var EventEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A time stamp for the time that the last event was replayed.
     */
-  var EventLastReplayedTime: js.UndefOr[Timestamp] = js.native
+  var EventLastReplayedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the archive to replay event from.
     */
-  var EventSourceArn: js.UndefOr[Arn] = js.native
+  var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * A time stamp for the time to start replaying events. This is determined by the time in the event as described in Time.
     */
-  var EventStartTime: js.UndefOr[Timestamp] = js.native
+  var EventStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A time stamp for the time that the replay completed.
     */
-  var ReplayEndTime: js.UndefOr[Timestamp] = js.native
+  var ReplayEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the replay.
     */
-  var ReplayName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayName] = js.native
+  var ReplayName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayName] = js.undefined
   
   /**
     * A time stamp for the time that the replay started.
     */
-  var ReplayStartTime: js.UndefOr[Timestamp] = js.native
+  var ReplayStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current state of the replay.
     */
-  var State: js.UndefOr[ReplayState] = js.native
+  var State: js.UndefOr[ReplayState] = js.undefined
   
   /**
     * A description of why the replay is in the current state.
     */
-  var StateReason: js.UndefOr[ReplayStateReason] = js.native
+  var StateReason: js.UndefOr[ReplayStateReason] = js.undefined
 }
 object Replay {
   

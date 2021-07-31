@@ -5,41 +5,39 @@ import typings.layuiSrc.layuiSrcStrings.vertical
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderOption extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* value */ Double | js.Array[Double], String]] = js.native
+  var change: js.UndefOr[js.Function1[/* value */ Double | js.Array[Double], String]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var input: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var mix: js.UndefOr[Double] = js.native
+  var mix: js.UndefOr[Double] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var setTips: js.UndefOr[js.Function1[/* value */ Double | js.Array[Double], String]] = js.native
+  var setTips: js.UndefOr[js.Function1[/* value */ Double | js.Array[Double], String]] = js.undefined
   
-  var showstep: js.UndefOr[Boolean] = js.native
+  var showstep: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var tips: js.UndefOr[Boolean] = js.native
+  var tips: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[default | vertical] = js.native
+  var `type`: js.UndefOr[default | vertical] = js.undefined
   
-  var value: js.UndefOr[Double | js.Array[Double]] = js.native
+  var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object SliderOption {
   

@@ -8,21 +8,19 @@ import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gestures extends StObject {
   
-  var descriptors: StackDescriptorMap = js.native
+  var descriptors: StackDescriptorMap
   
-  var gestures: GestureValues = js.native
+  var gestures: GestureValues
   
-  var headerHeights: Record[String, Double] = js.native
+  var headerHeights: Record[String, Double]
   
-  var routes: js.Array[NavigationRoute[NavigationParams]] = js.native
+  var routes: js.Array[NavigationRoute[NavigationParams]]
   
-  var scenes: js.Array[Scene[NavigationRoute[NavigationParams]]] = js.native
+  var scenes: js.Array[Scene[NavigationRoute[NavigationParams]]]
 }
 object Gestures {
   

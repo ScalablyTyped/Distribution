@@ -4,11 +4,12 @@ import typings.monacoEditor.mod.IDisposable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDiffEditor extends IEditor {
+trait IDiffEditor
+  extends StObject
+     with IEditor {
   
   /**
     * Get information based on computed diff about a line number from the modified model.

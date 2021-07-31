@@ -2,14 +2,14 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EdgeDefinition extends ElementDefinition {
+trait EdgeDefinition
+  extends StObject
+     with ElementDefinition {
   
   @JSName("data")
-  var data_EdgeDefinition: EdgeDataDefinition = js.native
+  var data_EdgeDefinition: EdgeDataDefinition
 }
 object EdgeDefinition {
   

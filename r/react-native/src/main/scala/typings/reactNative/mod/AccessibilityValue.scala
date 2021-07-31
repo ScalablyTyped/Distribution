@@ -2,31 +2,29 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityValue extends StObject {
   
   /**
     * The maximum value of this component's range. (should be an integer)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum value of this component's range. (should be an integer)
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * The current value of this component's range. (should be an integer)
     */
-  var now: js.UndefOr[Double] = js.native
+  var now: js.UndefOr[Double] = js.undefined
   
   /**
     * A textual description of this component's value. (will override minimum, current, and maximum if set)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object AccessibilityValue {
   

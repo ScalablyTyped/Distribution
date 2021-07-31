@@ -2,10 +2,8 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSetting extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait DebugSetting extends StObject {
     * response, you could potentially expose sensitive data that is retrieved through the deployment
     * operations.
     */
-  var detailLevel: js.UndefOr[String] = js.native
+  var detailLevel: js.UndefOr[String] = js.undefined
 }
 object DebugSetting {
   

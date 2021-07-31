@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteGroupRequest extends StObject {
   
   /**
     * The identifier of the group to be deleted.
     */
-  var GroupId: WorkMailIdentifier = js.native
+  var GroupId: WorkMailIdentifier
   
   /**
     * The organization that contains the group.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object DeleteGroupRequest {
   

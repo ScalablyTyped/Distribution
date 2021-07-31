@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientGridViewBatchEditRowValidatingEventArgs")
 @js.native
 class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientGridViewBatchEditRowValidatingEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientGridViewBatchEditRowValidatingEventArgs {
   /**
     * Initializes a new instance of the ASPxClientGridViewBatchEditRowValidatingEventArgs class.
     * @param visibleIndex An integer value that specifies the row's visible index.
@@ -19,4 +19,22 @@ class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
     * @param key An object that is the row's key.
     */
   def this(visibleIndex: Double, validationInfo: js.Any, key: js.Any) = this()
+  
+  /**
+    * Gets the row's key.
+    */
+  /* CompleteClass */
+  var key: js.Any = js.native
+  
+  /**
+    * Provides validation information of a row currently being validated.
+    */
+  /* CompleteClass */
+  var validationInfo: js.Any = js.native
+  
+  /**
+    * Gets the processed row's visible index.
+    */
+  /* CompleteClass */
+  var visibleIndex: Double = js.native
 }

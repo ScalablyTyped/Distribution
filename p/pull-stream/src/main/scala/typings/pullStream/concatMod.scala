@@ -4,7 +4,6 @@ import typings.pullStream.mod.EndOrError
 import typings.pullStream.mod.Sink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatMod {
@@ -12,10 +11,12 @@ object concatMod {
   /**
     * Concat stream of strings into single string, then call `cb`.
     */
+  @scala.inline
+  def apply(): Sink[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[String]]
+  @scala.inline
+  def apply(cb: js.Function2[/* err */ EndOrError, /* result */ String, js.Any]): Sink[String] = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[String]]
+  
   @JSImport("pull-stream/sinks/concat", JSImport.Namespace)
   @js.native
-  def apply(): Sink[String] = js.native
-  @JSImport("pull-stream/sinks/concat", JSImport.Namespace)
-  @js.native
-  def apply(cb: js.Function2[/* err */ EndOrError, /* result */ String, _]): Sink[String] = js.native
+  val ^ : js.Any = js.native
 }

@@ -6,37 +6,35 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUboDeclarationStatus extends StObject {
   
   /**
     * When the UBO declaration was created
     */
-  var Created: CREATED = js.native
+  var Created: CREATED
   
   /**
     * When the UBO declaration was refused
     */
-  var Refused: REFUSED = js.native
+  var Refused: REFUSED
   
   /**
     * When the UBO declaration was validated
     */
-  var Validated: VALIDATED = js.native
+  var Validated: VALIDATED
   
   /**
     * When validation has been requested for the UBO declaration
     */
-  var ValidationAsked: VALIDATION_ASKED = js.native
+  var ValidationAsked: VALIDATION_ASKED
 }
 object IUboDeclarationStatus {
   
   @scala.inline
-  def apply(Created: CREATED, Refused: REFUSED, Validated: VALIDATED, ValidationAsked: VALIDATION_ASKED): IUboDeclarationStatus = {
-    val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], Refused = Refused.asInstanceOf[js.Any], Validated = Validated.asInstanceOf[js.Any], ValidationAsked = ValidationAsked.asInstanceOf[js.Any])
+  def apply(): IUboDeclarationStatus = {
+    val __obj = js.Dynamic.literal(Created = "CREATED", Refused = "REFUSED", Validated = "VALIDATED", ValidationAsked = "VALIDATION_ASKED")
     __obj.asInstanceOf[IUboDeclarationStatus]
   }
   

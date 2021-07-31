@@ -6,10 +6,13 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticSymbolResolverMod {
+  
+  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "ResolvedStaticSymbol")
   @js.native
@@ -142,13 +145,11 @@ object staticSymbolResolverMod {
     var symbolResourcePaths: js.Any = js.native
   }
   
-  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "unescapeIdentifier")
-  @js.native
-  def unescapeIdentifier(identifier: String): String = js.native
+  @scala.inline
+  def unescapeIdentifier(identifier: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeIdentifier")(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "unwrapResolvedMetadata")
-  @js.native
-  def unwrapResolvedMetadata(metadata: js.Any): js.Any = js.native
+  @scala.inline
+  def unwrapResolvedMetadata(metadata: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapResolvedMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait StaticSymbolResolverHost extends StObject {
@@ -162,7 +163,7 @@ object staticSymbolResolverMod {
       * @param modulePath is a string identifier for a module as an absolute path.
       * @returns the metadata for the given module.
       */
-    def getMetadataFor(modulePath: String): js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+    def getMetadataFor(modulePath: String): js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.native
     
     /**
       * Get a file suitable for display to the user that should be relative to the project directory

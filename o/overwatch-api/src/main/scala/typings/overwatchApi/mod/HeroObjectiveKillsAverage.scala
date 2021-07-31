@@ -2,13 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeroObjectiveKillsAverage extends Hero {
+trait HeroObjectiveKillsAverage
+  extends StObject
+     with Hero {
   
-  var objective_kills_average: String = js.native
+  var objective_kills_average: String
 }
 object HeroObjectiveKillsAverage {
   

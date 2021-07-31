@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxSimpleValue
   */
-@js.native
 trait INxSimpleValue extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait INxSimpleValue extends StObject {
     * This property is set to NaN (Not a Number) if the attribute expression value is not a numeric.
     * Numerical values are not returned as text.
     */
-  var qNum: Double = js.native
+  var qNum: Double
   
   /**
     * Text related to the attribute expression value.
     * This property is optional. No text is returned if the attribute expression value is a numeric.
     */
-  var qText: js.UndefOr[String] = js.native
+  var qText: js.UndefOr[String] = js.undefined
 }
 object INxSimpleValue {
   

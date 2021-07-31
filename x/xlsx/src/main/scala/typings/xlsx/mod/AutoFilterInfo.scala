@@ -2,14 +2,14 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutoFilterInfo extends _WSKeys {
+trait AutoFilterInfo
+  extends StObject
+     with _WSKeys {
   
   /** Range of the AutoFilter table */
-  var ref: String = js.native
+  var ref: String
 }
 object AutoFilterInfo {
   

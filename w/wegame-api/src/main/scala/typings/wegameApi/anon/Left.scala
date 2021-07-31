@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
   /**
     * 小游戏推荐banner组件左上角横坐标
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * 小游戏推荐banner组件左上角纵坐标
     */
-  var top: Double = js.native
+  var top: Double
 }
 object Left {
   

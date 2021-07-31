@@ -5,7 +5,6 @@ import typings.nodeLocalstorage.nodeLocalstorageStrings.storage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -86,12 +85,20 @@ object mod {
   
   @JSImport("node-localstorage", "QUOTA_EXCEEDED_ERR")
   @js.native
-  class QUOTA_EXCEEDED_ERR protected () extends Error {
+  class QUOTA_EXCEEDED_ERR protected ()
+    extends StObject
+       with Error {
     /**
       * Creates a specific `Error` object for **Quota Exceeded Errors**.
       * @param message Message explaining the error.
       */
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-localstorage", "StorageEvent")

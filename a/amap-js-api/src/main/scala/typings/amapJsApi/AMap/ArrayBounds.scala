@@ -2,24 +2,22 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayBounds extends StObject {
   
-  var bounds: js.Array[LngLat] = js.native
+  var bounds: js.Array[LngLat]
   
   /**
     * 判断传入的点是否在ArrayBounds内
     * @param point 目标点
     */
-  def contains(point: LocationValue): Boolean = js.native
+  def contains(point: LocationValue): Boolean
   
-  def getCenter(): LngLat = js.native
+  def getCenter(): LngLat
   
   // internal
-  def toBounds(): Bounds = js.native
+  def toBounds(): Bounds
 }
 object ArrayBounds {
   

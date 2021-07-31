@@ -2,37 +2,35 @@ package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveDotStyle extends StObject {
   
-  var activeDotStyle: js.Any = js.native
+  var activeDotStyle: js.Any
   
-  var dotStyle: js.Any = js.native
+  var dotStyle: js.Any
   
-  var dots: js.Any = js.native
+  var dots: js.Any
   
-  var included: js.Any = js.native
+  var included: js.Any
   
-  var lowerBound: js.Any = js.native
+  var lowerBound: js.Any
   
-  var marks: js.Any = js.native
+  var marks: js.Any
   
-  var max: js.Any = js.native
+  var max: js.Any
   
-  var min: js.Any = js.native
+  var min: js.Any
   
-  var prefixCls: js.Any = js.native
+  var prefixCls: js.Any
   
-  var reverse: js.Any = js.native
+  var reverse: js.Any
   
-  var step: js.Any = js.native
+  var step: js.Any
   
-  var upperBound: js.Any = js.native
+  var upperBound: js.Any
   
-  var vertical: js.Any = js.native
+  var vertical: js.Any
 }
 object ActiveDotStyle {
   

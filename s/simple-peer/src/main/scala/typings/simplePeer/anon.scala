@@ -2,19 +2,17 @@ package typings.simplePeer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: String = js.native
+    var family: String
     
-    var port: String = js.native
+    var port: String
   }
   object Address {
     

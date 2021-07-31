@@ -3,24 +3,23 @@ package typings.awsSdkServiceErrorClassification
 import typings.awsSdkSmithyClient.sdkErrorMod.SdkError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/service-error-classification", "isClockSkewError")
+  @JSImport("@aws-sdk/service-error-classification", JSImport.Namespace)
   @js.native
-  def isClockSkewError(error: SdkError): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/service-error-classification", "isRetryableByTrait")
-  @js.native
-  def isRetryableByTrait(error: SdkError): Boolean = js.native
+  @scala.inline
+  def isClockSkewError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClockSkewError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@aws-sdk/service-error-classification", "isThrottlingError")
-  @js.native
-  def isThrottlingError(error: SdkError): Boolean = js.native
+  @scala.inline
+  def isRetryableByTrait(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetryableByTrait")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@aws-sdk/service-error-classification", "isTransientError")
-  @js.native
-  def isTransientError(error: SdkError): Boolean = js.native
+  @scala.inline
+  def isThrottlingError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThrottlingError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isTransientError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransientError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

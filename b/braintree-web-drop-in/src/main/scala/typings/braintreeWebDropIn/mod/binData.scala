@@ -5,29 +5,27 @@ import typings.braintreeWebDropIn.braintreeWebDropInStrings.Unknown
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.Yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait binData extends StObject {
   
-  var commercial: String = js.native
+  var commercial: String
   
-  var countryOfIssuance: String = js.native
+  var countryOfIssuance: String
   
-  var debit: Yes | No | Unknown = js.native
+  var debit: Yes | No | Unknown
   
-  var durbinRegulated: Yes | No | Unknown = js.native
+  var durbinRegulated: Yes | No | Unknown
   
-  var healthcare: Yes | No | Unknown = js.native
+  var healthcare: Yes | No | Unknown
   
-  var issuingBank: String = js.native
+  var issuingBank: String
   
-  var payroll: Yes | No | Unknown = js.native
+  var payroll: Yes | No | Unknown
   
-  var prepaid: Yes | No | Unknown = js.native
+  var prepaid: Yes | No | Unknown
   
-  var productId: String = js.native
+  var productId: String
 }
 object binData {
   

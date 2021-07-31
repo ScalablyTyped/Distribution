@@ -10,37 +10,43 @@ import typings.hostValidation.hostValidationStrings.either
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("host-validation", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(opts: config): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
   
+  @JSImport("host-validation", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait config extends StObject {
     
     var fail: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var hosts: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var hosts: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var mode: js.UndefOr[both | either] = js.native
+    var mode: js.UndefOr[both | either] = js.undefined
     
-    var referers: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var referers: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   }
   object config {
     
@@ -55,7 +61,7 @@ object mod {
       
       @scala.inline
       def setFail(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => Unit
       ): Self = StObject.set(x, "fail", js.Any.fromFunction3(value))
       
       @scala.inline

@@ -3,7 +3,6 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SiteHealth {
@@ -15,35 +14,42 @@ object SiteHealth {
   object SiteHealthStatusType extends StObject {
     
     @js.native
-    sealed trait failedError extends SiteHealthStatusType
+    sealed trait failedError
+      extends StObject
+         with SiteHealthStatusType
     
     @js.native
-    sealed trait failedWarning extends SiteHealthStatusType
+    sealed trait failedWarning
+      extends StObject
+         with SiteHealthStatusType
     
     @js.native
-    sealed trait passed extends SiteHealthStatusType
+    sealed trait passed
+      extends StObject
+         with SiteHealthStatusType
   }
   
-  @js.native
-  trait SiteHealthResult extends ClientValueObject {
+  trait SiteHealthResult
+    extends StObject
+       with ClientValueObject {
     
-    def get_messageAsText(): String = js.native
+    def get_messageAsText(): String
     
-    def get_ruleHelpLink(): String = js.native
+    def get_ruleHelpLink(): String
     
-    def get_ruleId(): Guid = js.native
+    def get_ruleId(): Guid
     
-    def get_ruleIsRepairable(): Boolean = js.native
+    def get_ruleIsRepairable(): Boolean
     
-    def get_ruleName(): String = js.native
+    def get_ruleName(): String
     
-    def get_status(): SiteHealthStatusType = js.native
+    def get_status(): SiteHealthStatusType
     
-    def get_timeStamp(): Date = js.native
+    def get_timeStamp(): Date
     
-    def set_status(value: SiteHealthStatusType): Unit = js.native
+    def set_status(value: SiteHealthStatusType): Unit
     
-    def set_timeStamp(value: Date): Unit = js.native
+    def set_timeStamp(value: Date): Unit
   }
   object SiteHealthResult {
     
@@ -101,7 +107,9 @@ object SiteHealth {
   }
   
   @js.native
-  trait SiteHealthSummary extends ClientObject {
+  trait SiteHealthSummary
+    extends StObject
+       with ClientObject {
     
     def get_failedErrorCount(): Double = js.native
     

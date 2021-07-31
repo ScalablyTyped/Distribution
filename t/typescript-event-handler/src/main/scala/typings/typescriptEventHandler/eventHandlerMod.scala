@@ -6,7 +6,6 @@ import typings.typescriptEventHandler.funcMod.AsyncPredicate
 import typings.typescriptEventHandler.funcMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventHandlerMod {

@@ -4,15 +4,15 @@ import typings.vscode.mod.ConfigurationScope
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanguageId extends ConfigurationScope {
+trait LanguageId
+  extends StObject
+     with ConfigurationScope {
   
-  var languageId: String = js.native
+  var languageId: String
   
-  var uri: js.UndefOr[Uri] = js.native
+  var uri: js.UndefOr[Uri] = js.undefined
 }
 object LanguageId {
   

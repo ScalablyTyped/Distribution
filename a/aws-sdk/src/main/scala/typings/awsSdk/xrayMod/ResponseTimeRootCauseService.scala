@@ -2,41 +2,39 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseTimeRootCauseService extends StObject {
   
   /**
     * The account ID associated to the service.
     */
-  var AccountId: js.UndefOr[String] = js.native
+  var AccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The path of root cause entities found on the service. 
     */
-  var EntityPath: js.UndefOr[ResponseTimeRootCauseEntityPath] = js.native
+  var EntityPath: js.UndefOr[ResponseTimeRootCauseEntityPath] = js.undefined
   
   /**
     * A Boolean value indicating if the service is inferred from the trace.
     */
-  var Inferred: js.UndefOr[NullableBoolean] = js.native
+  var Inferred: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The service name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of associated service names.
     */
-  var Names: js.UndefOr[ServiceNames] = js.native
+  var Names: js.UndefOr[ServiceNames] = js.undefined
   
   /**
     * The type associated to the service.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object ResponseTimeRootCauseService {
   

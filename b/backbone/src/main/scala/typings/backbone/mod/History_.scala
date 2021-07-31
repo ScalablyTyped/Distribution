@@ -5,7 +5,6 @@ import typings.std.RegExp
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "History")
@@ -31,7 +30,7 @@ class History_ () extends StObject {
   
   def getSearch(): String = js.native
   
-  var handlers: js.Array[_] = js.native
+  var handlers: js.Array[js.Any] = js.native
   
   var interval: Double = js.native
   

@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateAuthorityResponse extends StObject {
   
   /**
     * If successful, the Amazon Resource Name (ARN) of the certificate authority (CA). This is of the form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
     */
-  var CertificateAuthorityArn: js.UndefOr[Arn] = js.native
+  var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateCertificateAuthorityResponse {
   

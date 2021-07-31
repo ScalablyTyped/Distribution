@@ -3,27 +3,25 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteEvents extends StObject {
   
-  var change: js.UndefOr[AutocompleteEvent] = js.native
+  var change: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var close: js.UndefOr[AutocompleteEvent] = js.native
+  var close: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var create: js.UndefOr[AutocompleteEvent] = js.native
+  var create: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var focus: js.UndefOr[AutocompleteEvent] = js.native
+  var focus: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var open: js.UndefOr[AutocompleteEvent] = js.native
+  var open: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var response: js.UndefOr[AutocompleteEvent] = js.native
+  var response: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var search: js.UndefOr[AutocompleteEvent] = js.native
+  var search: js.UndefOr[AutocompleteEvent] = js.undefined
   
-  var select: js.UndefOr[AutocompleteEvent] = js.native
+  var select: js.UndefOr[AutocompleteEvent] = js.undefined
 }
 object AutocompleteEvents {
   

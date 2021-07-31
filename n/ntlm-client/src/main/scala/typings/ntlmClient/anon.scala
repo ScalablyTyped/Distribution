@@ -2,17 +2,15 @@ package typings.ntlmClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer = js.native
+    var buffer: typings.node.Buffer
     
-    var parsed: DNS = js.native
+    var parsed: DNS
   }
   object Buffer {
     
@@ -33,18 +31,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DNS extends StObject {
     
-    var DNS: String = js.native
+    var DNS: String
     
-    var DOMAIN: String = js.native
+    var DOMAIN: String
     
-    var FQDN: String = js.native
+    var FQDN: String
     
-    var PARENT_DNS: String = js.native
+    var PARENT_DNS: String
     
-    var SERVER: String = js.native
+    var SERVER: String
   }
   object DNS {
     

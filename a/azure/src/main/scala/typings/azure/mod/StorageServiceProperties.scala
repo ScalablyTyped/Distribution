@@ -4,17 +4,15 @@ import typings.azure.anon.Delete
 import typings.azure.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageServiceProperties extends StObject {
   
-  var DefaultServiceVersion: String = js.native
+  var DefaultServiceVersion: String
   
-  var Logging: Delete = js.native
+  var Logging: Delete
   
-  var Metrics: Enabled = js.native
+  var Metrics: Enabled
 }
 object StorageServiceProperties {
   

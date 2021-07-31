@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Sortable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSortable extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Sortable = js.native
+  def extend(proto: js.Object): Sortable
   
   /* static member */
-  var fn: Sortable = js.native
+  var fn: Sortable
 }
 object TypeofSortable {
   

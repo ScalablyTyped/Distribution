@@ -2,22 +2,20 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/OutlinedInput/NotchedOutline.NotchedOutlineClassKey>> */
-@js.native
 trait PartialClassNameMapNotche extends StObject {
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
-  var legend: js.UndefOr[String] = js.native
+  var legend: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapNotche {
   

@@ -2,13 +2,13 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BarChart
-  extends CoordinateGridMixin[BarChart]
-     with StackMixin[BarChart] {
+  extends StObject
+     with StackMixin[BarChart]
+     with CoordinateGridMixin[BarChart] {
   
   def alwaysUseRounding(): Boolean = js.native
   def alwaysUseRounding(t: Boolean): BarChart = js.native

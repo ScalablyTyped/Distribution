@@ -7,7 +7,6 @@ import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`1`
 import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesheetMod {
@@ -159,21 +158,23 @@ object stylesheetMod {
   /* static members */
   object Stylesheet {
     
+    @JSImport("@uifabric/merge-styles/lib/Stylesheet", "Stylesheet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets the singleton instance.
       */
-    @JSImport("@uifabric/merge-styles/lib/Stylesheet", "Stylesheet.getInstance")
-    @js.native
-    def getInstance(): Stylesheet = js.native
+    @scala.inline
+    def getInstance(): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Stylesheet]
   }
   
-  @js.native
   trait ICSPSettings extends StObject {
     
     /**
       * Nonce to inject into script tag
       */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
   }
   object ICSPSettings {
     
@@ -194,39 +195,38 @@ object stylesheetMod {
     }
   }
   
-  @js.native
   trait IStyleSheetConfig extends StObject {
     
     /**
       * Initial value for classnames cache. Key is serialized css rules associated with a classname.
       */
-    var classNameCache: js.UndefOr[StringDictionary[String]] = js.native
+    var classNameCache: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * CSP settings
       */
-    var cspSettings: js.UndefOr[ICSPSettings] = js.native
+    var cspSettings: js.UndefOr[ICSPSettings] = js.undefined
     
     /**
       * Default 'displayName' to use for a className.
       * @defaultvalue 'css'
       */
-    var defaultPrefix: js.UndefOr[String] = js.native
+    var defaultPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Injection mode for how rules are inserted.
       */
-    var injectionMode: js.UndefOr[InjectionMode] = js.native
+    var injectionMode: js.UndefOr[InjectionMode] = js.undefined
     
     /**
       * Default 'namespace' to attach before the className.
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * Callback executed when a rule is inserted.
       */
-    var onInsertRule: js.UndefOr[js.Function1[/* rule */ String, Unit]] = js.native
+    var onInsertRule: js.UndefOr[js.Function1[/* rule */ String, Unit]] = js.undefined
     
     /**
       * Defines the default direction of rules for auto-rtlifying things.
@@ -234,7 +234,7 @@ object stylesheetMod {
       * the DIR is not enough to control whether padding goes on the left or
       * right. Use this to set the default direction when rules are registered.
       */
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
   }
   object IStyleSheetConfig {
     

@@ -3,14 +3,15 @@ package typings.antvEventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@antv/event-emitter", JSImport.Default)
   @js.native
-  class default () extends EventEmitter
+  class default ()
+    extends StObject
+       with EventEmitter
   
   @js.native
   trait EventEmitter extends StObject {
@@ -32,9 +33,9 @@ object mod {
       * @param callback
       */
     def off(): this.type = js.native
-    def off(evt: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
     def off(evt: String): this.type = js.native
     def off(evt: String, callback: js.Function): this.type = js.native
+    def off(evt: Unit, callback: js.Function): this.type = js.native
     
     /**
       * 监听一个事件
@@ -53,12 +54,11 @@ object mod {
     def once(evt: String, callback: js.Function): this.type = js.native
   }
   
-  @js.native
   trait EventType extends StObject {
     
-    val callback: js.Function = js.native
+    val callback: js.Function
     
-    val once: Boolean = js.native
+    val once: Boolean
   }
   object EventType {
     

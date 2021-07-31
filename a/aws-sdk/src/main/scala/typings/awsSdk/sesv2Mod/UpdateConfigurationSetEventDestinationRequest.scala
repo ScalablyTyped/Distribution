@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * The name of the configuration set that contains the event destination that you want to modify.
     */
-  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
     * An object that defines the event destination.
     */
-  var EventDestination: EventDestinationDefinition = js.native
+  var EventDestination: EventDestinationDefinition
   
   /**
     * The name of the event destination that you want to modify.
     */
-  var EventDestinationName: typings.awsSdk.sesv2Mod.EventDestinationName = js.native
+  var EventDestinationName: typings.awsSdk.sesv2Mod.EventDestinationName
 }
 object UpdateConfigurationSetEventDestinationRequest {
   

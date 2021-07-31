@@ -2,24 +2,22 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message containing the custome metric.
   */
-@js.native
 trait SchemaCustomMetric extends StObject {
   
   /**
     * Custom metric name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Custom metric numeric value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SchemaCustomMetric {
   

@@ -2,31 +2,29 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /**
     * The cluster name
     */
-  val clusterName: String = js.native
+  val clusterName: String
   
   /**
     * Data size taken by all the users assigned to the cluster.
     */
-  val dataSize: Double = js.native
+  val dataSize: Double
   
   /**
     * Number of records in the cluster.
     */
-  val nbRecords: Double = js.native
+  val nbRecords: Double
   
   /**
     * Number of users assign to the cluster.
     */
-  val nbUserIDs: Double = js.native
+  val nbUserIDs: Double
 }
 object Cluster {
   

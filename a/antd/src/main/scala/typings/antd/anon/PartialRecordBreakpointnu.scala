@@ -2,24 +2,22 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, number>> */
-@js.native
 trait PartialRecordBreakpointnu extends StObject {
   
-  var lg: js.UndefOr[Double] = js.native
+  var lg: js.UndefOr[Double] = js.undefined
   
-  var md: js.UndefOr[Double] = js.native
+  var md: js.UndefOr[Double] = js.undefined
   
-  var sm: js.UndefOr[Double] = js.native
+  var sm: js.UndefOr[Double] = js.undefined
   
-  var xl: js.UndefOr[Double] = js.native
+  var xl: js.UndefOr[Double] = js.undefined
   
-  var xs: js.UndefOr[Double] = js.native
+  var xs: js.UndefOr[Double] = js.undefined
   
-  var xxl: js.UndefOr[Double] = js.native
+  var xxl: js.UndefOr[Double] = js.undefined
 }
 object PartialRecordBreakpointnu {
   

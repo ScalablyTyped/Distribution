@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLayoutManager
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,37 +17,37 @@ trait IgLayoutManager
     * Options specific to a border layout
     *
     */
-  var borderLayout: js.UndefOr[IgLayoutManagerBorderLayout] = js.native
+  var borderLayout: js.UndefOr[IgLayoutManagerBorderLayout] = js.undefined
   
   /**
     * Options specific to grid layout mode
     *
     */
-  var gridLayout: js.UndefOr[IgLayoutManagerGridLayout] = js.native
+  var gridLayout: js.UndefOr[IgLayoutManagerGridLayout] = js.undefined
   
   /**
     * Gets/Sets height of the layout container.
     *
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Event fired after items are resized.
     *                     Use ui.owner to get a reference to the layout manager performing resizing.
     */
-  var internalResized: js.UndefOr[InternalResizedEvent] = js.native
+  var internalResized: js.UndefOr[InternalResizedEvent] = js.undefined
   
   /**
     * Event fired before items are resized.
     *                     Use ui.owner to get a reference to the layout manager performing resizing.
     */
-  var internalResizing: js.UndefOr[InternalResizingEvent] = js.native
+  var internalResizing: js.UndefOr[InternalResizingEvent] = js.undefined
   
   /**
     * Number of items to render, this is only applicable to layouts: vertical and flow
     *
     */
-  var itemCount: js.UndefOr[Double] = js.native
+  var itemCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Event fired after an item has been rendered in the container.
@@ -58,7 +57,7 @@ trait IgLayoutManager
     *                     Use ui.index to get a reference of the item's index, if the layout is flow or vertical
     *                     Use ui.item to get a reference to the rendered item
     */
-  var itemRendered: js.UndefOr[ItemRenderedEvent] = js.native
+  var itemRendered: js.UndefOr[ItemRenderedEvent] = js.undefined
   
   /**
     * Event fired before an item is rendered in the container.
@@ -68,7 +67,7 @@ trait IgLayoutManager
     *                     Use ui.index to get a reference of the item's index, if the layout is flow or vertical
     *                     Use ui.item to get a reference to the rendered item
     */
-  var itemRendering: js.UndefOr[ItemRenderingEvent] = js.native
+  var itemRendering: js.UndefOr[ItemRenderingEvent] = js.undefined
   
   /**
     * An array of item descriptions
@@ -80,7 +79,7 @@ trait IgLayoutManager
     *                     for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout
     *
     */
-  var items: js.UndefOr[js.Array[IgLayoutManagerItem]] = js.native
+  var items: js.UndefOr[js.Array[IgLayoutManagerItem]] = js.undefined
   
   /**
     * Defines the layout type
@@ -98,20 +97,20 @@ trait IgLayoutManager
     * "column"
     * "vertical"
     */
-  var layoutMode: js.UndefOr[js.Any] = js.native
+  var layoutMode: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event fired after all items are rendered.
     *                     Function takes arguments evt and ui.
     *                     Use ui.owner to get reference to the igLayoutManager.
     */
-  var rendered: js.UndefOr[RenderedEvent] = js.native
+  var rendered: js.UndefOr[RenderedEvent] = js.undefined
   
   /**
     * Gets/Sets width of the layout container.
     *
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgLayoutManager {
   

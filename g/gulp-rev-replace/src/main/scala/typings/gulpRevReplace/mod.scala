@@ -3,32 +3,32 @@ package typings.gulpRevReplace
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-rev-replace", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-rev-replace", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-rev-replace", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var canonicalUris: js.UndefOr[Boolean] = js.native
+    var canonicalUris: js.UndefOr[Boolean] = js.undefined
     
-    var manifest: js.UndefOr[ReadWriteStream] = js.native
+    var manifest: js.UndefOr[ReadWriteStream] = js.undefined
     
-    var modifyReved: js.UndefOr[js.Function] = js.native
+    var modifyReved: js.UndefOr[js.Function] = js.undefined
     
-    var modifyUnreved: js.UndefOr[js.Function] = js.native
+    var modifyUnreved: js.UndefOr[js.Function] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var replaceInExtensions: js.UndefOr[js.Array[String]] = js.native
+    var replaceInExtensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

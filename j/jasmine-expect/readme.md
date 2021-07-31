@@ -1,7 +1,7 @@
 
 # Scala.js typings for jasmine-expect
 
-Typings are for version 4.0.3
+Typings are for version 5.0.0
 
 ## Library description:
 Write Beautiful Specs with Custom Matchers
@@ -10,9 +10,9 @@ Write Beautiful Specs with Custom Matchers
 | ------------------ | :-------------: |
 | Full name          | jasmine-expect |
 | Keywords           | BDD, TDD, assertions, expectations, expects, jasmine, jest, test-matchers, testing |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 14 |
-| # downloads        | 1898148 |
+| # downloads        | 2327626 |
 | # stars            | 8 |
 
 ## Links

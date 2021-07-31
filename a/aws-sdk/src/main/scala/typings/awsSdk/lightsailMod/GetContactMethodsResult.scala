@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactMethodsResult extends StObject {
   
   /**
     * An array of objects that describe the contact methods.
     */
-  var contactMethods: js.UndefOr[ContactMethodsList] = js.native
+  var contactMethods: js.UndefOr[ContactMethodsList] = js.undefined
 }
 object GetContactMethodsResult {
   

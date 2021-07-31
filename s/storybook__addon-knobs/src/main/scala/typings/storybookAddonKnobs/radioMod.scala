@@ -7,7 +7,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioMod {
@@ -84,10 +83,11 @@ object radioMod {
     var renderRadioButtonList: js.Any = js.native
   }
   
-  @js.native
-  trait RadiosTypeKnob extends KnobControlConfig[RadiosTypeKnobValue] {
+  trait RadiosTypeKnob
+    extends StObject
+       with KnobControlConfig[RadiosTypeKnobValue] {
     
-    var options: RadiosTypeOptionsProp[RadiosTypeKnobValue] = js.native
+    var options: RadiosTypeOptionsProp[RadiosTypeKnobValue]
   }
   object RadiosTypeKnob {
     
@@ -109,13 +109,13 @@ object radioMod {
   
   type RadiosTypeOptionsProp[T /* <: RadiosTypeKnobValue */] = Record[String | Double, T]
   
-  @js.native
   trait RadiosTypeProps
-    extends KnobControlProps[RadiosTypeKnobValue]
+    extends StObject
+       with KnobControlProps[RadiosTypeKnobValue]
        with RadiosWrapperProps {
     
     @JSName("knob")
-    var knob_RadiosTypeProps: RadiosTypeKnob = js.native
+    var knob_RadiosTypeProps: RadiosTypeKnob
   }
   object RadiosTypeProps {
     
@@ -133,10 +133,9 @@ object radioMod {
     }
   }
   
-  @js.native
   trait RadiosWrapperProps extends StObject {
     
-    var isInline: Boolean = js.native
+    var isInline: Boolean
   }
   object RadiosWrapperProps {
     

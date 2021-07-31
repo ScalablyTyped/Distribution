@@ -2,30 +2,30 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.tuyaPanelKit.mod.CheckboxProps because var conflicts: accessibilityLabel, children, disabled, style. Inlined size, disabledColor, checked, checkedIcon, unCheckedIcon, reverse, hideOnUnselect, color, onChange */ @js.native
-trait TYSectionCheckboxProps extends TYListItemProps {
+- typings.tuyaPanelKit.mod.CheckboxProps because var conflicts: accessibilityLabel, children, disabled, style. Inlined size, disabledColor, checked, checkedIcon, unCheckedIcon, reverse, hideOnUnselect, color, onChange */ trait TYSectionCheckboxProps
+  extends StObject
+     with TYListItemProps {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var checkedIcon: js.UndefOr[String] = js.native
+  var checkedIcon: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabledColor: js.UndefOr[String] = js.native
+  var disabledColor: js.UndefOr[String] = js.undefined
   
-  var hideOnUnselect: js.UndefOr[Boolean] = js.native
+  var hideOnUnselect: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var unCheckedIcon: js.UndefOr[String] = js.native
+  var unCheckedIcon: js.UndefOr[String] = js.undefined
 }
 object TYSectionCheckboxProps {
   

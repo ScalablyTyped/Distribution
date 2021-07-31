@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object MicroflowSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInAssociationWidgetUnderOnChangeMicroflowSettings")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInAttributeWidgetUnderOnChangeMicroflowSettings")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -79,9 +75,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInAttributeWidgetUnderOnEnterMicroflowSettings")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -92,9 +87,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInAttributeWidgetUnderOnLeaveMicroflowSettings")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -102,9 +96,8 @@ object MicroflowSettings {
     * of the parent MicroflowClientAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInMicroflowClientActionUnderMicroflowSettings")
-  @js.native
-  def createInMicroflowClientActionUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowClientAction): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInMicroflowClientActionUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowClientAction): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowClientActionUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -112,9 +105,8 @@ object MicroflowSettings {
     * of the parent MicroflowSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInMicroflowSourceUnderMicroflowSettings")
-  @js.native
-  def createInMicroflowSourceUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSource): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInMicroflowSourceUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSource): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSourceUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -125,9 +117,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.17.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInOnClickMicroflowUnderMicroflowSettings")
-  @js.native
-  def createInOnClickMicroflowUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.OnClickMicroflow): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInOnClickMicroflowUnderMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.OnClickMicroflow): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOnClickMicroflowUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -138,9 +129,8 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInReferenceSetSelectorUnderOnChangeMicroflowSettings")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -148,9 +138,8 @@ object MicroflowSettings {
     * of the parent SelectorMicroflowSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.MicroflowSettings.createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings")
-  @js.native
-  def createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.SelectorMicroflowSource): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = js.native
+  @scala.inline
+  def createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings(container: typings.mendixmodelsdk.pagesMod.pages.SelectorMicroflowSource): typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.MicroflowSettings.structureTypeName")

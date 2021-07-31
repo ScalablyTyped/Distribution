@@ -10,16 +10,14 @@ import typings.jqueryTools.jqueryToolsStrings.slow
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** jQuery Tools (http://jquerytools.github.io/documentation/overlay/index.html) */
 object JQueryTools {
   
-  @js.native
   trait ToolsStatic extends StObject {
     
-    var overlay: OverlayStatic = js.native
+    var overlay: OverlayStatic
   }
   object ToolsStatic {
     
@@ -41,17 +39,16 @@ object JQueryTools {
     
     type CssOptions = StringDictionary[js.Any]
     
-    @js.native
     trait MaskOptions extends StObject {
       
       /** CSS color string (i.e. hex value) */
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
       /** load speed in milliseconds */
-      var loadSpeed: js.UndefOr[Double] = js.native
+      var loadSpeed: js.UndefOr[Double] = js.undefined
       
       /** Opacity of mask.  Between 0 and 1. */
-      var opacity: js.UndefOr[Double] = js.native
+      var opacity: js.UndefOr[Double] = js.undefined
     }
     object MaskOptions {
       
@@ -84,29 +81,28 @@ object JQueryTools {
       }
     }
     
-    @js.native
     trait Overlay extends StObject {
       
       /** Closes the overlay. */
-      def close(): Overlay = js.native
+      def close(): Overlay
       
       /** Returns the closing element(s) as a jQuery object. */
-      def getClosers(): JQuery = js.native
+      def getClosers(): JQuery
       
       /** Returns the configuration for the overlay. */
-      def getConf(): OverlayOptions = js.native
+      def getConf(): OverlayOptions
       
       /** Returns the overlayed element as a jQuery object. */
-      def getOverlay(): JQuery = js.native
+      def getOverlay(): JQuery
       
       /** Returns the triggering element as a jQuery object. */
-      def getTrigger(): JQuery = js.native
+      def getTrigger(): JQuery
       
       /** Returns `true` if the overlay is opened. */
-      def isOpened(): Boolean = js.native
+      def isOpened(): Boolean
       
       /** Opens the overlay. */
-      def load(): Overlay = js.native
+      def load(): Overlay
     }
     object Overlay {
       
@@ -150,7 +146,6 @@ object JQueryTools {
       }
     }
     
-    @js.native
     trait OverlayOptions extends StObject {
       
       /**
@@ -159,7 +154,7 @@ object JQueryTools {
         * supplied, a close element is auto-generated. Read more about this in
         * defining close actions.
         */
-      var close: js.UndefOr[JQuery] = js.native
+      var close: js.UndefOr[JQuery] = js.undefined
       
       /**
         * By default, overlays are closed when the mouse is clicked outside the
@@ -167,17 +162,17 @@ object JQueryTools {
         * which is suitable for modal dialogs.
         * @default true
         */
-      var closeOnClick: js.UndefOr[Boolean] = js.native
+      var closeOnClick: js.UndefOr[Boolean] = js.undefined
       
       /**
         * By default, overlays are closed when the ESC keyboard key is pressed.
         * Setting this property to false suppresses this behaviour.
         * @default true
         */
-      var closeOnEsc: js.UndefOr[Boolean] = js.native
+      var closeOnEsc: js.UndefOr[Boolean] = js.undefined
       
       /** The speed to close the overlay, in milliseconds */
-      var closeSpeed: js.UndefOr[Double] = js.native
+      var closeSpeed: js.UndefOr[Double] = js.undefined
       
       /**
         * The effect to be used when an overlay is opened and closed. This can
@@ -185,7 +180,7 @@ object JQueryTools {
         * uses an effect called "default" which is a simple show/hide effect.
         * @default 'default'
         */
-      var effect: js.UndefOr[String] = js.native
+      var effect: js.UndefOr[String] = js.undefined
       
       /**
         * since 1.2.0. whether overlay stays in the same position while the screen
@@ -195,7 +190,7 @@ object JQueryTools {
         * so that when the screen is scrolled then the overlay moves along with the document.
         * @default true
         */
-      var fixed: js.UndefOr[Boolean] = js.native
+      var fixed: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies how far from the left-hand edge of the screen the overlay should be
@@ -203,13 +198,13 @@ object JQueryTools {
         * but you can also supply a numerical value specifying a distance in pixels.
         * @default 'center'
         */
-      var left: js.UndefOr[center | Double] = js.native
+      var left: js.UndefOr[center | Double] = js.undefined
       
       /**
         * If enabled then the overlay loads immediately after it has been initialized.
         * @default false
         */
-      var load: js.UndefOr[Boolean] = js.native
+      var load: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Previously known as expose. Overlay is very often used together with the
@@ -219,29 +214,29 @@ object JQueryTools {
         * object literal specifying more configuration variables. See an example of an
         * overlay together with mask. By default masking is disabled.
         */
-      var mask: js.UndefOr[String | MaskOptions] = js.native
+      var mask: js.UndefOr[String | MaskOptions] = js.undefined
       
       /** before the overlay is closed */
-      var onBeforeClose: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.native
+      var onBeforeClose: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.undefined
       
       /**
         * before the overlay is displayed. The overlay has already been positioned at the
         * location from where it will start animating.
         */
-      var onBeforeLoad: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.native
+      var onBeforeLoad: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.undefined
       
       /** when the overlay is closed  */
-      var onClose: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.native
+      var onClose: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.undefined
       
       /** when the overlay has completely been displayed  */
-      var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.native
+      var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]] = js.undefined
       
       /**
         * By default, there can be only one overlay on the page at once. Setting this
         * property to false allows you to have multiple overlay instances.
         * @default true
         */
-      var oneInstance: js.UndefOr[Boolean] = js.native
+      var oneInstance: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The speed of the fade-in animation on the "default" effect. Valid values are
@@ -249,12 +244,12 @@ object JQueryTools {
         * By setting this property to 0, the overlay will appear immediately without any animation.
         * @default 'normal'
         */
-      var speed: js.UndefOr[slow | normal | fast | Double] = js.native
+      var speed: js.UndefOr[slow | normal | fast | Double] = js.undefined
       
       /**
         * The element to be overlayed (if not specified in the rel attribute of the triggering element).
         */
-      var target: js.UndefOr[Element] = js.native
+      var target: js.UndefOr[Element] = js.undefined
       
       /**
         * Specifies how far from the top edge of the screen the overlay should be placed.
@@ -263,7 +258,7 @@ object JQueryTools {
         * is vertically centered. Percentage values work consistently at different screen resolutions.
         * @default '10%'
         */
-      var top: js.UndefOr[String | Double] = js.native
+      var top: js.UndefOr[String | Double] = js.undefined
     }
     object OverlayOptions {
       
@@ -380,14 +375,13 @@ object JQueryTools {
       }
     }
     
-    @js.native
     trait OverlayStatic extends StObject {
       
       def addEffect(
         effectName: String,
         effectFn: js.ThisFunction2[/* this */ Overlay, /* position */ CssOptions, /* done */ js.Function0[Unit], Unit],
         closeFn: js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[Unit], Unit]
-      ): Unit = js.native
+      ): Unit
     }
     object OverlayStatic {
       

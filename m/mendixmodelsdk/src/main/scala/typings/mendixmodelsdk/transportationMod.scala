@@ -5,17 +5,15 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportationMod {
   
-  @js.native
   trait IRequestFileDownloadOptions extends StObject {
     
-    var method: RequestMethod = js.native
+    var method: RequestMethod
     
-    var url: String = js.native
+    var url: String
   }
   object IRequestFileDownloadOptions {
     
@@ -36,20 +34,19 @@ object transportationMod {
     }
   }
   
-  @js.native
   trait IRequestMultipartBinaryFileUploadOptions extends StObject {
     
-    var body: js.UndefOr[js.Object] = js.native
+    var body: js.UndefOr[js.Object] = js.undefined
     
-    var fileName: String | Blob = js.native
+    var fileName: String | Blob
     
-    var fileParameterName: String = js.native
+    var fileParameterName: String
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: RequestMethod = js.native
+    var method: RequestMethod
     
-    var url: String = js.native
+    var url: String
   }
   object IRequestMultipartBinaryFileUploadOptions {
     
@@ -88,18 +85,17 @@ object transportationMod {
     }
   }
   
-  @js.native
   trait IRequestOptions extends StObject {
     
-    var body: js.UndefOr[js.Object] = js.native
+    var body: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var longTimeout: js.UndefOr[Boolean] = js.native
+    var longTimeout: js.UndefOr[Boolean] = js.undefined
     
-    var method: RequestMethod = js.native
+    var method: RequestMethod
     
-    var url: String = js.native
+    var url: String
   }
   object IRequestOptions {
     
@@ -138,10 +134,9 @@ object transportationMod {
     }
   }
   
-  @js.native
   trait IResponse extends StObject {
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
   }
   object IResponse {
     
@@ -161,26 +156,25 @@ object transportationMod {
   
   type IResponseCallback[T] = js.Function2[/* data */ T, /* response */ IResponse, Unit]
   
-  @js.native
   trait ITransportation extends StObject {
     
     /**
       * Send a HTTP request, with specified method, url, data, success and failure callbacks.
       */
-    def request[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
+    def request[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit
     
-    def requestFileDownload[T](options: IRequestFileDownloadOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
+    def requestFileDownload[T](options: IRequestFileDownloadOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit
     
     def requestMultipartBinaryFileUpload[T](
       options: IRequestMultipartBinaryFileUploadOptions,
       success: IResponseCallback[T],
       failure: IErrorCallback
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
       */
-    def retryableRequest[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
+    def retryableRequest[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit
   }
   object ITransportation {
     

@@ -7,7 +7,6 @@ import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorMod {
@@ -25,9 +24,9 @@ object anchorMod {
     
     @JSImport("antd/lib/anchor", "default.Link")
     @js.native
-    def Link: Instantiable0[typings.antd.anchorLinkMod.default] with TypeofAnchorLink = js.native
+    def Link: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink = js.native
     @scala.inline
-    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] with TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor", "default.contextType")
     @js.native

@@ -4,10 +4,8 @@ import typings.vegaLite.vegaLiteStrings.flush
 import typings.vegaLite.vegaLiteStrings.full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundsMixins extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait BoundsMixins extends StObject {
     *
     * __Default value:__ `"full"`
     */
-  var bounds: js.UndefOr[full | flush] = js.native
+  var bounds: js.UndefOr[full | flush] = js.undefined
 }
 object BoundsMixins {
   

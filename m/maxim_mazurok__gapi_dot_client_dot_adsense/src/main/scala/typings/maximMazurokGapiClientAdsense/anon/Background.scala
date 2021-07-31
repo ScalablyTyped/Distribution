@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdsense.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
   /** The color of the ad background. */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /** The color of the ad border. */
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
   /** The color of the ad text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The color of the ad title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The color of the ad url. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Background {
   

@@ -2,19 +2,17 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeableConfig extends StObject {
   
-  def onSwipeDown(current: Double, initial: Double, callback: js.Function0[Unit]): Unit = js.native
+  def onSwipeDown(current: Double, initial: Double, callback: js.Function0[Unit]): Unit
   
-  def onSwipeLeft(current: Double, initial: Double, callback: js.Function0[Unit]): Unit = js.native
+  def onSwipeLeft(current: Double, initial: Double, callback: js.Function0[Unit]): Unit
   
-  def onSwipeRight(current: Double, initial: Double, callback: js.Function0[Unit]): Unit = js.native
+  def onSwipeRight(current: Double, initial: Double, callback: js.Function0[Unit]): Unit
   
-  def onSwipeUp(current: Double, initial: Double, callback: js.Function0[Unit]): Unit = js.native
+  def onSwipeUp(current: Double, initial: Double, callback: js.Function0[Unit]): Unit
 }
 object SwipeableConfig {
   

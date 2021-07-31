@@ -2,19 +2,17 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceScales extends StObject {
   
-  var degreesPerPixel: js.Tuple3[Double, Double, Double] = js.native
+  var degreesPerPixel: js.Tuple3[Double, Double, Double]
   
-  var metersPerPixel: js.Tuple3[Double, Double, Double] = js.native
+  var metersPerPixel: js.Tuple3[Double, Double, Double]
   
-  var pixelsPerDegree: js.Tuple3[Double, Double, Double] = js.native
+  var pixelsPerDegree: js.Tuple3[Double, Double, Double]
   
-  var pixelsPerMeter: js.Tuple3[Double, Double, Double] = js.native
+  var pixelsPerMeter: js.Tuple3[Double, Double, Double]
 }
 object DistanceScales {
   

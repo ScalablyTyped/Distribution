@@ -52,21 +52,19 @@ import typings.devextreme.devextremeStrings.zoomLevel
 import typings.devextreme.mod.DevExpress.ui.dxDiagramCustomCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
   var commands: js.UndefOr[
     js.Array[
       separator | exportSvg | exportPng | exportJpg | undo | redo | cut | copy | paste | selectAll | delete | fontName | fontSize | bold | italic | underline | fontColor | lineColor | fillColor | textAlignLeft | textAlignCenter | textAlignRight | lock | unlock | sendToBack | bringToFront | insertShapeImage | editShapeImage | deleteShapeImage | connectorLineType | connectorLineStart | connectorLineEnd | layoutTreeTopToBottom | layoutTreeBottomToTop | layoutTreeLeftToRight | layoutTreeRightToLeft | layoutLayeredTopToBottom | layoutLayeredBottomToTop | layoutLayeredLeftToRight | layoutLayeredRightToLeft | fullScreen | zoomLevel | showGrid | snapToGrid | gridSize | units | pageSize | pageOrientation | pageColor | dxDiagramCustomCommand
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var groups: js.UndefOr[js.Array[Title]] = js.native
+  var groups: js.UndefOr[js.Array[Title]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Groups {
   

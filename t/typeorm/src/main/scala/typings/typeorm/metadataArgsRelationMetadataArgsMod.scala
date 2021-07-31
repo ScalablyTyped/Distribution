@@ -6,38 +6,36 @@ import typings.typeorm.typesRelationTypeInFunctionMod.RelationTypeInFunction
 import typings.typeorm.typesRelationTypesMod.RelationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsRelationMetadataArgsMod {
   
-  @js.native
   trait RelationMetadataArgs extends StObject {
     
     /**
       * Inverse side of the relation.
       */
-    val inverseSideProperty: js.UndefOr[PropertyTypeFactory[_]] = js.native
+    val inverseSideProperty: js.UndefOr[PropertyTypeFactory[js.Any]] = js.undefined
     
     /**
       * Indicates if this relation will be lazily loaded.
       */
-    val isLazy: Boolean = js.native
+    val isLazy: Boolean
     
     /**
       * Indicates if this is a children (can be only one-to-many relation) relation in the tree tables.
       */
-    val isTreeChildren: js.UndefOr[Boolean] = js.native
+    val isTreeChildren: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this is a parent (can be only many-to-one relation) relation in the tree tables.
       */
-    val isTreeParent: js.UndefOr[Boolean] = js.native
+    val isTreeParent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional relation options.
       */
-    val options: RelationOptions = js.native
+    val options: RelationOptions
     
     /**
       * In the case if this relation is without a target, targetId must be specified.
@@ -46,7 +44,7 @@ object metadataArgsRelationMetadataArgsMod {
     /**
       * Class's property name to which this relation is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Original (reflected) class's property type.
@@ -56,18 +54,18 @@ object metadataArgsRelationMetadataArgsMod {
     /**
       * Type of relation. Can be one of the value of the RelationTypes class.
       */
-    val relationType: RelationType = js.native
+    val relationType: RelationType
     
     /**
       * Class to which this relation is applied.
       */
-    val target: js.Function | String = js.native
+    val target: js.Function | String
     
     /**
       * Type of the relation. This type is in function because of language specifics and problems with recursive
       * referenced classes.
       */
-    val `type`: RelationTypeInFunction = js.native
+    val `type`: RelationTypeInFunction
   }
   object RelationMetadataArgs {
     
@@ -89,10 +87,10 @@ object metadataArgsRelationMetadataArgsMod {
     implicit class RelationMetadataArgsMutableBuilder[Self <: RelationMetadataArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInverseSideProperty(value: PropertyTypeFactory[_]): Self = StObject.set(x, "inverseSideProperty", value.asInstanceOf[js.Any])
+      def setInverseSideProperty(value: PropertyTypeFactory[js.Any]): Self = StObject.set(x, "inverseSideProperty", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInverseSidePropertyFunction1(value: _ => String | js.Any): Self = StObject.set(x, "inverseSideProperty", js.Any.fromFunction1(value))
+      def setInverseSidePropertyFunction1(value: js.Any => String | js.Any): Self = StObject.set(x, "inverseSideProperty", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInverseSidePropertyUndefined: Self = StObject.set(x, "inverseSideProperty", js.undefined)

@@ -16,38 +16,36 @@ import typings.ajv.ajvStrings.shared
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   @JSName("$data")
-  var $data: js.UndefOr[Boolean] = js.native
+  var $data: js.UndefOr[Boolean] = js.undefined
   
-  var addUsedSchema: js.UndefOr[Boolean] = js.native
+  var addUsedSchema: js.UndefOr[Boolean] = js.undefined
   
-  var allErrors: js.UndefOr[Boolean] = js.native
+  var allErrors: js.UndefOr[Boolean] = js.undefined
   
-  var async: js.UndefOr[Boolean | String] = js.native
+  var async: js.UndefOr[Boolean | String] = js.undefined
   
-  var cache: js.UndefOr[js.Object] = js.native
+  var cache: js.UndefOr[js.Object] = js.undefined
   
-  var coerceTypes: js.UndefOr[Boolean | array] = js.native
+  var coerceTypes: js.UndefOr[Boolean | array] = js.undefined
   
-  var errorDataPath: js.UndefOr[String] = js.native
+  var errorDataPath: js.UndefOr[String] = js.undefined
   
-  var extendRefs: js.UndefOr[`true` | ignore | fail] = js.native
+  var extendRefs: js.UndefOr[`true` | ignore | fail] = js.undefined
   
-  var format: js.UndefOr[`false` | String] = js.native
+  var format: js.UndefOr[`false` | String] = js.undefined
   
-  var formats: js.UndefOr[js.Object] = js.native
+  var formats: js.UndefOr[js.Object] = js.undefined
   
-  var inlineRefs: js.UndefOr[Boolean | Double] = js.native
+  var inlineRefs: js.UndefOr[Boolean | Double] = js.undefined
   
-  var jsonPointers: js.UndefOr[Boolean] = js.native
+  var jsonPointers: js.UndefOr[Boolean] = js.undefined
   
-  var keywords: js.UndefOr[js.Object] = js.native
+  var keywords: js.UndefOr[js.Object] = js.undefined
   
   var loadSchema: js.UndefOr[
     js.Function2[
@@ -55,57 +53,57 @@ trait Options extends StObject {
       /* cb */ js.UndefOr[js.Function2[/* err */ Error, /* schema */ js.Object, Unit]], 
       js.Thenable[js.Object | Boolean]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var logger: js.UndefOr[CustomLogger | `false`] = js.native
+  var logger: js.UndefOr[CustomLogger | `false`] = js.undefined
   
-  var loopRequired: js.UndefOr[Double] = js.native
+  var loopRequired: js.UndefOr[Double] = js.undefined
   
-  var messages: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[Boolean] = js.undefined
   
-  var meta: js.UndefOr[Boolean | js.Object] = js.native
+  var meta: js.UndefOr[Boolean | js.Object] = js.undefined
   
-  var missingRefs: js.UndefOr[`true` | ignore | fail] = js.native
+  var missingRefs: js.UndefOr[`true` | ignore | fail] = js.undefined
   
-  var multipleOfPrecision: js.UndefOr[Boolean | Double] = js.native
+  var multipleOfPrecision: js.UndefOr[Boolean | Double] = js.undefined
   
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
-  var ownProperties: js.UndefOr[Boolean] = js.native
+  var ownProperties: js.UndefOr[Boolean] = js.undefined
   
-  var passContext: js.UndefOr[Boolean] = js.native
+  var passContext: js.UndefOr[Boolean] = js.undefined
   
-  var processCode: js.UndefOr[js.Function2[/* code */ String, /* schema */ js.Object, String]] = js.native
+  var processCode: js.UndefOr[js.Function2[/* code */ String, /* schema */ js.Object, String]] = js.undefined
   
-  var removeAdditional: js.UndefOr[Boolean | all | failing] = js.native
+  var removeAdditional: js.UndefOr[Boolean | all | failing] = js.undefined
   
-  var schemaId: js.UndefOr[$id | id | auto] = js.native
+  var schemaId: js.UndefOr[$id | id | auto] = js.undefined
   
-  var schemas: js.UndefOr[js.Array[js.Object] | js.Object] = js.native
+  var schemas: js.UndefOr[js.Array[js.Object] | js.Object] = js.undefined
   
-  var serialize: js.UndefOr[(js.Function1[/* schema */ js.Object | Boolean, _]) | `false`] = js.native
+  var serialize: js.UndefOr[(js.Function1[/* schema */ js.Object | Boolean, js.Any]) | `false`] = js.undefined
   
-  var sourceCode: js.UndefOr[Boolean] = js.native
+  var sourceCode: js.UndefOr[Boolean] = js.undefined
   
-  var strictDefaults: js.UndefOr[Boolean | log] = js.native
+  var strictDefaults: js.UndefOr[Boolean | log] = js.undefined
   
-  var strictKeywords: js.UndefOr[Boolean | log] = js.native
+  var strictKeywords: js.UndefOr[Boolean | log] = js.undefined
   
-  var strictNumbers: js.UndefOr[Boolean] = js.native
+  var strictNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var transpile: js.UndefOr[String | (js.Function1[/* code */ String, String])] = js.native
+  var transpile: js.UndefOr[String | (js.Function1[/* code */ String, String])] = js.undefined
   
-  var unicode: js.UndefOr[Boolean] = js.native
+  var unicode: js.UndefOr[Boolean] = js.undefined
   
-  var uniqueItems: js.UndefOr[Boolean] = js.native
+  var uniqueItems: js.UndefOr[Boolean] = js.undefined
   
-  var unknownFormats: js.UndefOr[`true` | js.Array[String] | ignore] = js.native
+  var unknownFormats: js.UndefOr[`true` | js.Array[String] | ignore] = js.undefined
   
-  var useDefaults: js.UndefOr[Boolean | empty | shared] = js.native
+  var useDefaults: js.UndefOr[Boolean | empty | shared] = js.undefined
   
-  var validateSchema: js.UndefOr[Boolean | log] = js.native
+  var validateSchema: js.UndefOr[Boolean | log] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   
@@ -286,10 +284,10 @@ object Options {
     def setSchemasVarargs(value: js.Object*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
     @scala.inline
-    def setSerialize(value: (js.Function1[/* schema */ js.Object | Boolean, _]) | `false`): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+    def setSerialize(value: (js.Function1[/* schema */ js.Object | Boolean, js.Any]) | `false`): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializeFunction1(value: /* schema */ js.Object | Boolean => _): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    def setSerializeFunction1(value: /* schema */ js.Object | Boolean => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)

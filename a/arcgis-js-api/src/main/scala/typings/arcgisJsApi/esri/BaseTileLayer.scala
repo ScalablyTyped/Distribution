@@ -6,12 +6,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseTileLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with RefreshableLayer
      with BlendLayer {
@@ -21,7 +21,7 @@ trait BaseTileLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#addResolvingPromise)
     */
-  def addResolvingPromise(promiseToLoad: js.Promise[_]): js.Promise[_] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[js.Any]): js.Promise[js.Any] = js.native
   
   /**
     * This method fetches a tile for the given level, row and column present in the view.

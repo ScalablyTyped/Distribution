@@ -2,16 +2,14 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRequestedServiceQuotaChangeRequest extends StObject {
   
   /**
     * Identifies the quota increase request.
     */
-  var RequestId: typings.awsSdk.servicequotasMod.RequestId = js.native
+  var RequestId: typings.awsSdk.servicequotasMod.RequestId
 }
 object GetRequestedServiceQuotaChangeRequest {
   

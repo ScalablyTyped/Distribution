@@ -2,28 +2,26 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order. */
-@js.native
 trait NodeIterator extends StObject {
   
-  def detach(): Unit = js.native
+  def detach(): Unit
   
-  val filter: NodeFilter | Null = js.native
+  val filter: NodeFilter | Null
   
-  def nextNode(): Node | Null = js.native
+  def nextNode(): Node | Null
   
-  val pointerBeforeReferenceNode: scala.Boolean = js.native
+  val pointerBeforeReferenceNode: scala.Boolean
   
-  def previousNode(): Node | Null = js.native
+  def previousNode(): Node | Null
   
-  val referenceNode: Node = js.native
+  val referenceNode: Node
   
-  val root: Node = js.native
+  val root: Node
   
-  val whatToShow: Double = js.native
+  val whatToShow: Double
 }
 object NodeIterator {
   
@@ -37,7 +35,7 @@ object NodeIterator {
     root: Node,
     whatToShow: Double
   ): NodeIterator = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), nextNode = js.Any.fromFunction0(nextNode), pointerBeforeReferenceNode = pointerBeforeReferenceNode.asInstanceOf[js.Any], previousNode = js.Any.fromFunction0(previousNode), referenceNode = referenceNode.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), nextNode = js.Any.fromFunction0(nextNode), pointerBeforeReferenceNode = pointerBeforeReferenceNode.asInstanceOf[js.Any], previousNode = js.Any.fromFunction0(previousNode), referenceNode = referenceNode.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any], filter = null)
     __obj.asInstanceOf[NodeIterator]
   }
   

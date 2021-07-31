@@ -10,9 +10,9 @@ Custom Jest matcher for aXe for testing accessibility
 | ------------------ | :-------------: |
 | Full name          | jest-axe |
 | Keywords           | jest, matcher, axe, accessibility, a11y |
-| # releases         | 6 |
-| # dependents       | 12 |
-| # downloads        | 2295517 |
+| # releases         | 7 |
+| # dependents       | 17 |
+| # downloads        | 3779737 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Robust, framework-agnostic in-memory data store.
 | Full name          | js-data |
 | Keywords           | orm, odm, model, schema, rest, datastore, store, database, adapter, http, localstorage |
 | # releases         | 9 |
-| # dependents       | 37 |
-| # downloads        | 577590 |
+| # dependents       | 39 |
+| # downloads        | 552036 |
 | # stars            | 3 |
 
 ## Links

@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_keyStatusesChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyStatusesChangedEvent extends Event {
+trait KeyStatusesChangedEvent
+  extends StObject
+     with Event {
   
-  var data: SessionToken = js.native
+  var data: SessionToken
   
   @JSName("type")
-  var type_KeyStatusesChangedEvent: public_keyStatusesChanged = js.native
+  var type_KeyStatusesChangedEvent: public_keyStatusesChanged
 }
 object KeyStatusesChangedEvent {
   
   @scala.inline
-  def apply(data: SessionToken, `type`: public_keyStatusesChanged): KeyStatusesChangedEvent = {
+  def apply(data: SessionToken): KeyStatusesChangedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public_keyStatusesChanged")
     __obj.asInstanceOf[KeyStatusesChangedEvent]
   }
   

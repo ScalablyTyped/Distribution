@@ -2,21 +2,19 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultProcessingOptions extends StObject {
   
-  var build: js.UndefOr[Boolean] = js.native
+  var build: js.UndefOr[Boolean] = js.undefined
   
-  var decompose: js.UndefOr[DecomposeOptions] = js.native
+  var decompose: js.UndefOr[DecomposeOptions] = js.undefined
   
-  var document: js.UndefOr[Boolean] = js.native
+  var document: js.UndefOr[Boolean] = js.undefined
   
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
   
-  var stream: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.undefined
 }
 object ResultProcessingOptions {
   

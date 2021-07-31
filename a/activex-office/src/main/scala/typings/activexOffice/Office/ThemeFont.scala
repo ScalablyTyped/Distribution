@@ -2,22 +2,20 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeFont extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Office.ThemeFont_typekey")
-  var OfficeDotThemeFont_typekey: ThemeFont = js.native
+  var OfficeDotThemeFont_typekey: ThemeFont
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object ThemeFont {
   

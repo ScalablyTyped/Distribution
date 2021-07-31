@@ -3,7 +3,6 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.CircleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A circle on the Earth's surface; also known as a "spherical cap". */
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * center, radius, and style.
   */
 class Circle ()
-  extends typings.googlemaps.google.maps.Circle {
+  extends StObject
+     with typings.googlemaps.google.maps.Circle {
   def this(opts: CircleOptions) = this()
 }

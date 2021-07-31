@@ -4,21 +4,21 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formThemeProviderMod {
   
-  @JSImport("@react-md/form/types/FormThemeProvider", "FormThemeProvider")
+  @JSImport("@react-md/form/types/FormThemeProvider", JSImport.Namespace)
   @js.native
-  def FormThemeProvider(hasThemeUnderlineDirectionChildren: FormThemeProviderProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/form/types/FormThemeProvider", "useFormTheme")
-  @js.native
-  def useFormTheme(): FormThemeContext = js.native
-  @JSImport("@react-md/form/types/FormThemeProvider", "useFormTheme")
-  @js.native
-  def useFormTheme(options: FormThemeOptions): FormThemeContext = js.native
+  @scala.inline
+  def FormThemeProvider(hasThemeUnderlineDirectionChildren: FormThemeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormThemeProvider")(hasThemeUnderlineDirectionChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  @scala.inline
+  def useFormTheme(): FormThemeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormTheme")().asInstanceOf[FormThemeContext]
+  @scala.inline
+  def useFormTheme(options: FormThemeOptions): FormThemeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormTheme")(options.asInstanceOf[js.Any]).asInstanceOf[FormThemeContext]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdForm.reactMdFormStrings.none
@@ -43,12 +43,11 @@ object formThemeProviderMod {
   }
   
   /* Inlined std.Required<@react-md/form.@react-md/form/types/FormThemeProvider.FormThemeOptions> */
-  @js.native
   trait FormThemeContext extends StObject {
     
-    var theme: FormTheme = js.native
+    var theme: FormTheme
     
-    var underlineDirection: FormUnderlineDirection = js.native
+    var underlineDirection: FormUnderlineDirection
   }
   object FormThemeContext {
     
@@ -69,18 +68,17 @@ object formThemeProviderMod {
     }
   }
   
-  @js.native
   trait FormThemeOptions extends StObject {
     
     /**
       * The current theme type.
       */
-    var theme: js.UndefOr[FormTheme] = js.native
+    var theme: js.UndefOr[FormTheme] = js.undefined
     
     /**
       * The current underline direction.
       */
-    var underlineDirection: js.UndefOr[FormUnderlineDirection] = js.native
+    var underlineDirection: js.UndefOr[FormUnderlineDirection] = js.undefined
   }
   object FormThemeOptions {
     
@@ -107,10 +105,11 @@ object formThemeProviderMod {
     }
   }
   
-  @js.native
-  trait FormThemeProviderProps extends FormThemeOptions {
+  trait FormThemeProviderProps
+    extends StObject
+       with FormThemeOptions {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object FormThemeProviderProps {
     

@@ -5,24 +5,24 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shallowUntilTargetMod {
   
-  @JSImport("office-ui-fabric-react/lib/common/shallowUntilTarget", "shallowUntilTarget")
+  @JSImport("office-ui-fabric-react/lib/common/shallowUntilTarget", JSImport.Namespace)
   @js.native
-  def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("office-ui-fabric-react/lib/common/shallowUntilTarget", "shallowUntilTarget")
-  @js.native
-  def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String, options: IShallowUntilTarget): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
+  @scala.inline
+  def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String, options: IShallowUntilTarget): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
+  
   trait IShallowRendererProps extends StObject {
     
-    var disableLifecycleMethods: js.UndefOr[Boolean] = js.native
+    var disableLifecycleMethods: js.UndefOr[Boolean] = js.undefined
     
-    var lifecycleExperimental: js.UndefOr[Boolean] = js.native
+    var lifecycleExperimental: js.UndefOr[Boolean] = js.undefined
   }
   object IShallowRendererProps {
     
@@ -49,12 +49,11 @@ object shallowUntilTargetMod {
     }
   }
   
-  @js.native
   trait IShallowUntilTarget extends StObject {
     
-    var maxTries: Double = js.native
+    var maxTries: Double
     
-    var shallowOptions: IShallowRendererProps = js.native
+    var shallowOptions: IShallowRendererProps
   }
   object IShallowUntilTarget {
     

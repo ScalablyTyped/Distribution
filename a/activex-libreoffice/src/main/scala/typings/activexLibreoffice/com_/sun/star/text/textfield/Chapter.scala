@@ -12,21 +12,21 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a chapter text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Chapter extends TextField_ {
+trait Chapter
+  extends StObject
+     with TextField_ {
   
   /** determines how the chapter should be displayed as described in {@link com.sun.star.text.ChapterFormat} . */
-  var ChapterFormat: Double = js.native
+  var ChapterFormat: Double
   
   /** determines which chapter level should be used. The highest chapter level has the value 0. */
-  var Level: Double = js.native
+  var Level: Double
 }
 object Chapter {
   

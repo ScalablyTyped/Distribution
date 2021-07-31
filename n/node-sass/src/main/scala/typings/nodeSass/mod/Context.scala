@@ -3,16 +3,15 @@ package typings.nodeSass.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var callback: js.UndefOr[SassRenderCallback] = js.native
+  var callback: js.UndefOr[SassRenderCallback] = js.undefined
   
-  var options: Options = js.native
+  var options: Options
 }
 object Context {
   

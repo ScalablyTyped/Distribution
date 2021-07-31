@@ -3,7 +3,6 @@ package typings.auth0Js.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "WebAuth")
@@ -24,7 +23,7 @@ class WebAuth protected () extends StObject {
     *
     * @param options: https://auth0.com/docs/api/authentication#!#post--dbconnections-change_password
     */
-  def changePassword(options: ChangePasswordOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def changePassword(options: ChangePasswordOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Renews an existing session on Auth0's servers using `response_mode=web_message` (i.e. Auth0's hosted login page)
@@ -33,7 +32,7 @@ class WebAuth protected () extends StObject {
     * @param cb
     * @see {@link https://auth0.com/docs/libraries/auth0js/v9#using-checksession-to-acquire-new-tokens}
     */
-  def checkSession(options: CheckSessionOptions, cb: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def checkSession(options: CheckSessionOptions, cb: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   var client: Authentication = js.native
   
@@ -63,7 +62,7 @@ class WebAuth protected () extends StObject {
     * @param cb Callback function called only when an authentication error, like invalid username or password, occurs.
     * For other types of errors, there will be a redirect to the `redirectUri`.
     */
-  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Redirects to the auth0 logout endpoint
@@ -103,21 +102,21 @@ class WebAuth protected () extends StObject {
     * @param options
     * @param callback
     */
-  def passwordlessLogin(options: PasswordlessLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def passwordlessLogin(options: PasswordlessLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Initialices a passwordless authentication transaction
     *
     * @param options: https://auth0.com/docs/api/authentication#passwordless
     */
-  def passwordlessStart(options: PasswordlessStartOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def passwordlessStart(options: PasswordlessStartOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Verifies the passwordless TOTP and redirects to finish the passwordless transaction
     *
     * @param options:
     */
-  def passwordlessVerify(options: PasswordlessVerifyOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def passwordlessVerify(options: PasswordlessVerifyOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   var popup: Popup = js.native
   
@@ -133,9 +132,9 @@ class WebAuth protected () extends StObject {
     * @see {@link https://auth0.github.io/auth0.js/WebAuth.html#renderCaptcha}
     */
   def renderCaptcha(element: HTMLElement): Unit = js.native
-  def renderCaptcha(element: HTMLElement, options: js.UndefOr[scala.Nothing], callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def renderCaptcha(element: HTMLElement, options: Unit, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   def renderCaptcha(element: HTMLElement, options: CatpchaConfiguration): Unit = js.native
-  def renderCaptcha(element: HTMLElement, options: CatpchaConfiguration, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def renderCaptcha(element: HTMLElement, options: CatpchaConfiguration, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Executes a silent authentication transaction under the hood in order to fetch a new tokens for the current session.
@@ -145,14 +144,14 @@ class WebAuth protected () extends StObject {
     *
     * @param options: any valid oauth2 parameter to be sent to the `/authorize` endpoint
     */
-  def renewAuth(options: RenewAuthOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def renewAuth(options: RenewAuthOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Signs up a new user
     *
     * @param options: https://auth0.com/docs/api/authentication#!#post--dbconnections-signup
     */
-  def signup(options: DbSignUpOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def signup(options: DbSignUpOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Signs up a new user, automatically logs the user in after the signup and returns the user token.
@@ -160,12 +159,12 @@ class WebAuth protected () extends StObject {
     *
     * @param options: https://auth0.com/docs/api/authentication#!#post--dbconnections-signup
     */
-  def signupAndAuthorize(options: DbSignUpOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def signupAndAuthorize(options: DbSignUpOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Decodes the id_token and verifies  the nonce.
     *
     * @param callback: function(err, {payload, transaction})
     */
-  def validateToken(token: String, nonce: String, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def validateToken(token: String, nonce: String, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
 }

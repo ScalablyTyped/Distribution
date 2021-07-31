@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionEventInvokeConfigDestinationConfig extends StObject {
   
   /**
     * Configuration block with destination configuration for failed asynchronous invocations. See below for details.
     */
-  var onFailure: js.UndefOr[FunctionEventInvokeConfigDestinationConfigOnFailure] = js.native
+  var onFailure: js.UndefOr[FunctionEventInvokeConfigDestinationConfigOnFailure] = js.undefined
   
   /**
     * Configuration block with destination configuration for successful asynchronous invocations. See below for details.
     */
-  var onSuccess: js.UndefOr[FunctionEventInvokeConfigDestinationConfigOnSuccess] = js.native
+  var onSuccess: js.UndefOr[FunctionEventInvokeConfigDestinationConfigOnSuccess] = js.undefined
 }
 object FunctionEventInvokeConfigDestinationConfig {
   

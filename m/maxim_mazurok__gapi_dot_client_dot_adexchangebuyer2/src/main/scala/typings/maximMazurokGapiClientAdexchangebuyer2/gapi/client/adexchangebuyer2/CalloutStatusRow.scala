@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutStatusRow extends StObject {
   
   /** The ID of the callout status. See [callout-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/callout-status-codes). */
-  var calloutStatusId: js.UndefOr[Double] = js.native
+  var calloutStatusId: js.UndefOr[Double] = js.undefined
   
   /** The number of impressions for which there was a bid request or bid response with the specified callout status. */
-  var impressionCount: js.UndefOr[MetricValue] = js.native
+  var impressionCount: js.UndefOr[MetricValue] = js.undefined
   
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.native
+  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 object CalloutStatusRow {
   

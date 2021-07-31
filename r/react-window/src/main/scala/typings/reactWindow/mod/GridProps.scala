@@ -5,23 +5,23 @@ import typings.react.mod.Key
 import typings.reactWindow.anon.ColumnIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridProps extends CommonProps {
+trait GridProps
+  extends StObject
+     with CommonProps {
   
   /**
     * React component responsible for rendering the individual item specified by an index prop. This component also receives a style prop (used for positioning).
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: ComponentType[GridChildComponentProps] = js.native
+  var children: ComponentType[GridChildComponentProps]
   
   /**
     * Number of columns in the grid. Note that only a few columns will be rendered and displayed at a time.
     */
-  var columnCount: Double = js.native
+  var columnCount: Double
   
   /**
     * Determines the direction of text and horizontal scrolling.
@@ -30,22 +30,22 @@ trait GridProps extends CommonProps {
     *
     * @default "ltr"
     */
-  var direction: js.UndefOr[CSSDirection] = js.native
+  var direction: js.UndefOr[CSSDirection] = js.undefined
   
   /**
     * Height of the grid. This affects the number of rows that will be rendered (and displayed) at any given time.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Horizontal scroll offset for initial render.
     */
-  var initialScrollLeft: js.UndefOr[Double] = js.native
+  var initialScrollLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical scroll offset for initial render.
     */
-  var initialScrollTop: js.UndefOr[Double] = js.native
+  var initialScrollTop: js.UndefOr[Double] = js.undefined
   
   /**
     * By default, grids will use an item's indices as its key. This is okay if:
@@ -55,17 +55,17 @@ trait GridProps extends CommonProps {
     *
     * If your grid does not satisfy the above constraints, use the itemKey property to specify your own keys for items.
     */
-  var itemKey: js.UndefOr[GridItemKeySelector] = js.native
+  var itemKey: js.UndefOr[GridItemKeySelector] = js.undefined
   
   /**
     * Called when the items rendered by the grid change.
     */
-  var onItemsRendered: js.UndefOr[js.Function1[/* props */ GridOnItemsRenderedProps, _]] = js.native
+  var onItemsRendered: js.UndefOr[js.Function1[/* props */ GridOnItemsRenderedProps, js.Any]] = js.undefined
   
   /**
     * Called when the grid scroll positions changes, as a result of user scrolling or scroll-to method calls.
     */
-  var onScroll: js.UndefOr[js.Function1[/* props */ GridOnScrollProps, _]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* props */ GridOnScrollProps, js.Any]] = js.undefined
   
   /**
     * The number of columns to render outside of the visible area. This property can be important for two reasons:
@@ -75,12 +75,12 @@ trait GridProps extends CommonProps {
     *
     * Note that overscanning too much can negatively impact performance. By default, grid overscans by one item.
     */
-  var overscanColumnCount: js.UndefOr[Double] = js.native
+  var overscanColumnCount: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated since version 1.8.2, please use overscanColumnCount
     */
-  var overscanColumnsCount: js.UndefOr[Double] = js.native
+  var overscanColumnsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of items (rows or columns) to render outside of the visible area. This property can be important for two reasons:
@@ -92,7 +92,7 @@ trait GridProps extends CommonProps {
     *
     * @deprecated since version 1.4.0
     */
-  var overscanCount: js.UndefOr[Double] = js.native
+  var overscanCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of rows to render outside of the visible area. This property can be important for two reasons:
@@ -102,22 +102,22 @@ trait GridProps extends CommonProps {
     *
     * Note that overscanning too much can negatively impact performance. By default, grid overscans by one item.
     */
-  var overscanRowCount: js.UndefOr[Double] = js.native
+  var overscanRowCount: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated since version 1.8.2, please use overscanRowCount
     */
-  var overscanRowsCount: js.UndefOr[Double] = js.native
+  var overscanRowsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of rows in the grid. Note that only a few rows will be rendered and displayed at a time.
     */
-  var rowCount: Double = js.native
+  var rowCount: Double
   
   /**
     * Width of the grid. This affects the number of columns that will be rendered (and displayed) at any given time.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object GridProps {
   
@@ -170,13 +170,13 @@ object GridProps {
     def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
     @scala.inline
-    def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => _): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+    def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: /* props */ GridOnScrollProps => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    def setOnScroll(value: /* props */ GridOnScrollProps => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)

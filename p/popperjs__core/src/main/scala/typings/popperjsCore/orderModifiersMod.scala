@@ -3,12 +3,14 @@ package typings.popperjsCore
 import typings.popperjsCore.typesMod.Modifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orderModifiersMod {
   
-  @JSImport("@popperjs/core/lib/utils/orderModifiers", JSImport.Default)
+  @JSImport("@popperjs/core/lib/utils/orderModifiers", JSImport.Namespace)
   @js.native
-  def default(modifiers: js.Array[Modifier[_, _]]): js.Array[Modifier[_, _]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(modifiers: js.Array[Modifier[js.Any, js.Any]]): js.Array[Modifier[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[js.Array[Modifier[js.Any, js.Any]]]
 }

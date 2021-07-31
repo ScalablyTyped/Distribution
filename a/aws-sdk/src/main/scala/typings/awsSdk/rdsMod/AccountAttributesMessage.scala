@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountAttributesMessage extends StObject {
   
   /**
     * A list of AccountQuota objects. Within this list, each quota has a name, a count of usage toward the quota maximum, and a maximum value for the quota.
     */
-  var AccountQuotas: js.UndefOr[AccountQuotaList] = js.native
+  var AccountQuotas: js.UndefOr[AccountQuotaList] = js.undefined
 }
 object AccountAttributesMessage {
   

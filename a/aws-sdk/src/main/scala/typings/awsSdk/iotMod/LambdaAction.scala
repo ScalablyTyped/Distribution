@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaAction extends StObject {
   
   /**
     * The ARN of the Lambda function.
     */
-  var functionArn: FunctionArn = js.native
+  var functionArn: FunctionArn
 }
 object LambdaAction {
   

@@ -11,7 +11,6 @@ import typings.stripe.stripeStrings.pre_payment
 import typings.stripe.stripeStrings.void
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object creditNotes {
@@ -46,93 +45,94 @@ object creditNotes {
     * Credit notes are the only way to adjust the amount of an invoice once it's been finalized
     * (other than voiding and recreating the invoice from scratch).
     */
-  @js.native
-  trait ICreditNote extends IResourceObject {
+  trait ICreditNote
+    extends StObject
+       with IResourceObject {
     
     /**
       * The integer amount in cents representing the total amount of the credit note.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * ID of the customer. [Expandable]
       */
-    var customer: String | ICustomer = js.native
+    var customer: String | ICustomer
     
     /**
       * Customer balance transaction related to this credit note. [Expandable]
       */
-    var customer_balance_transaction: String | IBalanceTransaction = js.native
+    var customer_balance_transaction: String | IBalanceTransaction
     
     /**
       * ID of the invoice. [Expandable]
       */
-    var invoice: String | IInvoice = js.native
+    var invoice: String | IInvoice
     
     /**
       * Has the value `true` if the object exists in live mode or the value `false` if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Customer-facing text that appears on the credit note PDF.
       */
-    var memo: String | Null = js.native
+    var memo: String | Null
     
     /**
       * Set of key-value pairs that you can attach to an object.
       * This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * A unique number that identifies this particular credit note.
       * It appears on the PDF of the credit note and its associated invoice.
       */
-    var number: String = js.native
+    var number: String
     
     /**
       * Value is "credit_note"
       */
     @JSName("object")
-    var object_ICreditNote: credit_note = js.native
+    var object_ICreditNote: credit_note
     
     /**
       * The link to download the PDF of the credit note.
       */
-    var pdf: String = js.native
+    var pdf: String
     
     /**
       * Reason for issuing this credit note, one of duplicate, fraudulent, order_change, or product_unsatisfactory
       */
-    var reason: CreditNoteReason | Null = js.native
+    var reason: CreditNoteReason | Null
     
     /**
       * Refund related to this credit note. [Expandable]
       */
-    var refund: String | Null | IRefund = js.native
+    var refund: String | Null | IRefund
     
     /**
       * Status of this credit note, one of issued or void.
       */
-    var status: issued | void = js.native
+    var status: issued | void
     
     /**
       * Type of this credit note, one of post_payment or pre_payment.
       * A pre_payment credit note means it was issued when the invoice was open.
       * A post_payment credit note means it was issued when the invoice was paid.
       */
-    var `type`: post_payment | pre_payment = js.native
+    var `type`: post_payment | pre_payment
   }
   object ICreditNote {
     
@@ -148,13 +148,12 @@ object creditNotes {
       livemode: Boolean,
       metadata: IMetadata,
       number: String,
-      `object`: credit_note,
       pdf: String,
       status: issued | void,
       `type`: post_payment | pre_payment
     ): ICreditNote = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], customer_balance_transaction = customer_balance_transaction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], customer_balance_transaction = customer_balance_transaction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], memo = null, reason = null, refund = null)
+      __obj.updateDynamic("object")("credit_note")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreditNote]
     }
@@ -221,38 +220,39 @@ object creditNotes {
     }
   }
   
-  @js.native
-  trait ICreditNoteCreationOptions extends IDataOptionsWithMetadata {
+  trait ICreditNoteCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * The amount to credit the customer’s balance.
       * It will be automatically applied to their next invoice.
       */
-    var credit_amount: js.UndefOr[Double] = js.native
+    var credit_amount: js.UndefOr[Double] = js.undefined
     
-    var invoice: String = js.native
+    var invoice: String
     
     /**
       * The credit note’s memo appears on the credit note PDF. This can be unset by updating the value to nil and then saving.
       */
-    var memo: js.UndefOr[String] = js.native
+    var memo: js.UndefOr[String] = js.undefined
     
     /**
       * Reason for issuing this credit note, one of duplicate, fraudulent, order_change, or product_unsatisfactory.
       */
-    var reason: js.UndefOr[CreditNoteReason] = js.native
+    var reason: js.UndefOr[CreditNoteReason] = js.undefined
     
     /**
       * ID of an existing refund to link this credit note to.
       */
-    var refund: js.UndefOr[String] = js.native
+    var refund: js.UndefOr[String] = js.undefined
     
     /**
       * The amount to refund. If set, a refund will be created for the charge associated with the invoice.
       */
-    var refund_amount: js.UndefOr[Double] = js.native
+    var refund_amount: js.UndefOr[Double] = js.undefined
   }
   object ICreditNoteCreationOptions {
     
@@ -303,13 +303,14 @@ object creditNotes {
     }
   }
   
-  @js.native
-  trait ICreditNoteListOptions extends IListOptions {
+  trait ICreditNoteListOptions
+    extends StObject
+       with IListOptions {
     
     /**
       * ID of the invoice.
       */
-    var invoice: js.UndefOr[String] = js.native
+    var invoice: js.UndefOr[String] = js.undefined
   }
   object ICreditNoteListOptions {
     
@@ -330,13 +331,14 @@ object creditNotes {
     }
   }
   
-  @js.native
-  trait ICreditNoteUpdateOptions extends IDataOptionsWithMetadata {
+  trait ICreditNoteUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Credit note memo. This can be unset by updating the value to nil and then saving.
       */
-    var memo: js.UndefOr[String] = js.native
+    var memo: js.UndefOr[String] = js.undefined
   }
   object ICreditNoteUpdateOptions {
     

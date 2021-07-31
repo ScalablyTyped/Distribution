@@ -14,7 +14,6 @@ import typings.semanticUiReact.semanticUiReactStrings.small
 import typings.semanticUiReact.semanticUiReactStrings.tiny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentGroupMod extends Shortcut {
@@ -23,9 +22,9 @@ object commentGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[CommentGroupProps] = js.native
   
-  @js.native
   trait CommentGroupProps
-    extends StrictCommentGroupProps
+    extends StObject
+       with StrictCommentGroupProps
        with /* key */ StringDictionary[js.Any]
   object CommentGroupProps {
     
@@ -36,32 +35,31 @@ object commentGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCommentGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Comments can be collapsed, or hidden from view. */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Comments can hide extra information unless a user shows intent to interact with a comment */
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
     /** Comments can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
     
     /** A comment list can be threaded to showing the relationship between conversations */
-    var threaded: js.UndefOr[Boolean] = js.native
+    var threaded: js.UndefOr[Boolean] = js.undefined
   }
   object StrictCommentGroupProps {
     

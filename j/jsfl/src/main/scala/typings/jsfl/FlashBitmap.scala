@@ -2,21 +2,19 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashBitmap extends StObject {
   
-  var bits: js.Any = js.native
+  var bits: js.Any
   
-  var cTab: js.UndefOr[js.Array[String]] = js.native
+  var cTab: js.UndefOr[js.Array[String]] = js.undefined
   
-  var depth: js.Any = js.native
+  var depth: js.Any
   
-  var height: js.Any = js.native
+  var height: js.Any
   
-  var width: js.Any = js.native
+  var width: js.Any
 }
 object FlashBitmap {
   

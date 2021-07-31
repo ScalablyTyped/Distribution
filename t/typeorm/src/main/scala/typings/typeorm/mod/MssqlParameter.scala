@@ -35,7 +35,6 @@ import typings.typeorm.typeormStrings.variant
 import typings.typeorm.typeormStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm", "MssqlParameter")
@@ -85,8 +84,8 @@ class MssqlParameter protected ()
   def this(value: js.Any, `type`: time, scale: scala.Double) = this()
   def this(value: js.Any, `type`: varbinary, length: scala.Double) = this()
   def this(value: js.Any, `type`: varchar, length: scala.Double) = this()
-  def this(value: js.Any, `type`: decimal, precision: js.UndefOr[scala.Nothing], scale: scala.Double) = this()
   def this(value: js.Any, `type`: decimal, precision: scala.Double, scale: scala.Double) = this()
-  def this(value: js.Any, `type`: numeric, precision: js.UndefOr[scala.Nothing], scale: scala.Double) = this()
+  def this(value: js.Any, `type`: decimal, precision: Unit, scale: scala.Double) = this()
   def this(value: js.Any, `type`: numeric, precision: scala.Double, scale: scala.Double) = this()
+  def this(value: js.Any, `type`: numeric, precision: Unit, scale: scala.Double) = this()
 }

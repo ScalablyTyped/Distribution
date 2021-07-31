@@ -3,15 +3,15 @@ package typings.sass
 import typings.sass.mod._ImporterReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Contents extends _ImporterReturnType {
+  trait Contents
+    extends StObject
+       with _ImporterReturnType {
     
-    var contents: String = js.native
+    var contents: String
   }
   object Contents {
     
@@ -29,33 +29,32 @@ object anon {
     }
   }
   
-  @js.native
   trait Duration extends StObject {
     
     /**
       * `end - start`
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * `Date.now()` after the compilation.
       */
-    var end: Double = js.native
+    var end: Double
     
     /**
       * The path to the scss file, or `data` if the source was not a file.
       */
-    var entry: String = js.native
+    var entry: String
     
     /**
       * Absolute paths to all related files in no particular order.
       */
-    var includedFiles: js.Array[String] = js.native
+    var includedFiles: js.Array[String]
     
     /**
       * `Date.now()` before the compilation.
       */
-    var start: Double = js.native
+    var start: Double
   }
   object Duration {
     
@@ -88,10 +87,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait File extends _ImporterReturnType {
+  trait File
+    extends StObject
+       with _ImporterReturnType {
     
-    var file: String = js.native
+    var file: String
   }
   object File {
     

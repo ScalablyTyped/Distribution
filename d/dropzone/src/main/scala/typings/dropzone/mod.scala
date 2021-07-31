@@ -46,14 +46,15 @@ import typings.std.RegExp
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("dropzone", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Dropzone {
+  class ^ protected ()
+    extends StObject
+       with Dropzone {
     def this(container: String) = this()
     def this(container: HTMLElement) = this()
     def this(container: String, options: DropzoneOptions) = this()
@@ -153,57 +154,44 @@ object mod {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirm")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("dropzone", "createElement")
-  @js.native
-  def createElement(string: String): HTMLElement = js.native
+  @scala.inline
+  def createElement(string: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(string.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @JSImport("dropzone", "dataURItoBlob")
-  @js.native
-  def dataURItoBlob(dataURI: String): Blob = js.native
+  @scala.inline
+  def dataURItoBlob(dataURI: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURItoBlob")(dataURI.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
   /* static member */
-  @JSImport("dropzone", "discover")
-  @js.native
-  def discover(): js.Array[Dropzone] = js.native
+  @scala.inline
+  def discover(): js.Array[Dropzone] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")().asInstanceOf[js.Array[Dropzone]]
   
   /* static member */
-  @JSImport("dropzone", "elementInside")
-  @js.native
-  def elementInside(element: HTMLElement, container: HTMLElement): Boolean = js.native
+  @scala.inline
+  def elementInside(element: HTMLElement, container: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementInside")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("dropzone", "forElement")
-  @js.native
-  def forElement(element: String): Dropzone = js.native
-  @JSImport("dropzone", "forElement")
-  @js.native
-  def forElement(element: HTMLElement): Dropzone = js.native
+  @scala.inline
+  def forElement(element: String): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
+  @scala.inline
+  def forElement(element: HTMLElement): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
   
   /* static member */
-  @JSImport("dropzone", "getElement")
-  @js.native
-  def getElement(element: String): HTMLElement = js.native
-  @JSImport("dropzone", "getElement")
-  @js.native
-  def getElement(element: String, name: String): HTMLElement = js.native
-  @JSImport("dropzone", "getElement")
-  @js.native
-  def getElement(element: HTMLElement): HTMLElement = js.native
-  @JSImport("dropzone", "getElement")
-  @js.native
-  def getElement(element: HTMLElement, name: String): HTMLElement = js.native
+  @scala.inline
+  def getElement(element: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getElement(element: String, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getElement(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getElement(element: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /* static member */
-  @JSImport("dropzone", "getElements")
-  @js.native
-  def getElements(elements: String): js.Array[HTMLElement] = js.native
-  @JSImport("dropzone", "getElements")
-  @js.native
-  def getElements(elements: js.Array[String | HTMLElement]): js.Array[HTMLElement] = js.native
-  @JSImport("dropzone", "getElements")
-  @js.native
-  def getElements(elements: HTMLElement): js.Array[HTMLElement] = js.native
+  @scala.inline
+  def getElements(elements: String): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getElements(elements: js.Array[String | HTMLElement]): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getElements(elements: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   
   /* static member */
   @JSImport("dropzone", "instances")
@@ -213,19 +201,16 @@ object mod {
   def instances_=(x: js.Array[Dropzone]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instances")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("dropzone", "isBrowserSupported")
-  @js.native
-  def isBrowserSupported(): Boolean = js.native
+  @scala.inline
+  def isBrowserSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSupported")().asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("dropzone", "isValidFile")
-  @js.native
-  def isValidFile(file: File, acceptedFiles: String): Boolean = js.native
+  @scala.inline
+  def isValidFile(file: File, acceptedFiles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidFile")(file.asInstanceOf[js.Any], acceptedFiles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("dropzone", "optionsForElement")
-  @js.native
-  def optionsForElement(element: HTMLElement): js.UndefOr[DropzoneOptions] = js.native
+  @scala.inline
+  def optionsForElement(element: HTMLElement): js.UndefOr[DropzoneOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsForElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DropzoneOptions]]
   
   /* static member */
   @JSImport("dropzone", "version")
@@ -245,187 +230,9 @@ object mod {
     
     def createThumbnail(file: DropzoneFile): js.Any = js.native
     def createThumbnail(file: DropzoneFile, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(file: DropzoneFile, width: js.UndefOr[scala.Nothing], height: Double): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(file: DropzoneFile, width: js.UndefOr[scala.Nothing], height: Double, resizeMethod: String): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: String,
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: String,
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: String,
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
     def createThumbnail(file: DropzoneFile, width: Double): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(file: DropzoneFile, width: Double, height: js.UndefOr[scala.Nothing], resizeMethod: String): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
     def createThumbnail(file: DropzoneFile, width: Double, height: Double): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean
-    ): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      fixOrientation: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
     def createThumbnail(file: DropzoneFile, width: Double, height: Double, resizeMethod: String): js.Any = js.native
-    def createThumbnail(
-      file: DropzoneFile,
-      width: Double,
-      height: Double,
-      resizeMethod: String,
-      fixOrientation: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): js.Any = js.native
     def createThumbnail(file: DropzoneFile, width: Double, height: Double, resizeMethod: String, fixOrientation: Boolean): js.Any = js.native
     def createThumbnail(
       file: DropzoneFile,
@@ -433,6 +240,137 @@ object mod {
       height: Double,
       resizeMethod: String,
       fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Double,
+      resizeMethod: String,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Double, height: Double, resizeMethod: Unit, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Double,
+      resizeMethod: Unit,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Double,
+      resizeMethod: Unit,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Double, height: Unit, resizeMethod: String): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Double, height: Unit, resizeMethod: String, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: String,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: String,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Double, height: Unit, resizeMethod: Unit, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: Unit,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: Unit,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Double): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Double, resizeMethod: String): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Double, resizeMethod: String, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: String,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: String,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Double, resizeMethod: Unit, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: Unit,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: Unit,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Unit, resizeMethod: String): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Unit, resizeMethod: String, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: String,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: String,
+      fixOrientation: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(file: DropzoneFile, width: Unit, height: Unit, resizeMethod: Unit, fixOrientation: Boolean): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: Unit,
+      fixOrientation: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): js.Any = js.native
+    def createThumbnail(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: Unit,
+      fixOrientation: Unit,
       callback: js.Function1[/* repeated */ js.Any, Unit]
     ): js.Any = js.native
     
@@ -455,34 +393,19 @@ object mod {
     def disable(): Unit = js.native
     
     def displayExistingFile(mockFile: DropzoneMockFile, imageUrl: String): js.Any = js.native
-    def displayExistingFile(
-      mockFile: DropzoneMockFile,
-      imageUrl: String,
-      callback: js.UndefOr[scala.Nothing],
-      crossOrigin: js.UndefOr[scala.Nothing],
-      resizeThumbnail: Boolean
-    ): js.Any = js.native
     def displayExistingFile(mockFile: DropzoneMockFile, imageUrl: String, callback: js.Function0[Unit]): js.Any = js.native
     def displayExistingFile(
       mockFile: DropzoneMockFile,
       imageUrl: String,
       callback: js.Function0[Unit],
-      crossOrigin: js.UndefOr[scala.Nothing],
+      crossOrigin: Unit,
       resizeThumbnail: Boolean
     ): js.Any = js.native
-    @JSName("displayExistingFile")
-    def displayExistingFile_anonymous(
+    def displayExistingFile(
       mockFile: DropzoneMockFile,
       imageUrl: String,
-      callback: js.UndefOr[scala.Nothing],
-      crossOrigin: anonymous
-    ): js.Any = js.native
-    @JSName("displayExistingFile")
-    def displayExistingFile_anonymous(
-      mockFile: DropzoneMockFile,
-      imageUrl: String,
-      callback: js.UndefOr[scala.Nothing],
-      crossOrigin: anonymous,
+      callback: Unit,
+      crossOrigin: Unit,
       resizeThumbnail: Boolean
     ): js.Any = js.native
     @JSName("displayExistingFile")
@@ -496,18 +419,13 @@ object mod {
       resizeThumbnail: Boolean
     ): js.Any = js.native
     @JSName("displayExistingFile")
-    def displayExistingFile_usecredentials(
-      mockFile: DropzoneMockFile,
-      imageUrl: String,
-      callback: js.UndefOr[scala.Nothing],
-      crossOrigin: `use-credentials`
-    ): js.Any = js.native
+    def displayExistingFile_anonymous(mockFile: DropzoneMockFile, imageUrl: String, callback: Unit, crossOrigin: anonymous): js.Any = js.native
     @JSName("displayExistingFile")
-    def displayExistingFile_usecredentials(
+    def displayExistingFile_anonymous(
       mockFile: DropzoneMockFile,
       imageUrl: String,
-      callback: js.UndefOr[scala.Nothing],
-      crossOrigin: `use-credentials`,
+      callback: Unit,
+      crossOrigin: anonymous,
       resizeThumbnail: Boolean
     ): js.Any = js.native
     @JSName("displayExistingFile")
@@ -522,6 +440,16 @@ object mod {
       mockFile: DropzoneMockFile,
       imageUrl: String,
       callback: js.Function0[Unit],
+      crossOrigin: `use-credentials`,
+      resizeThumbnail: Boolean
+    ): js.Any = js.native
+    @JSName("displayExistingFile")
+    def displayExistingFile_usecredentials(mockFile: DropzoneMockFile, imageUrl: String, callback: Unit, crossOrigin: `use-credentials`): js.Any = js.native
+    @JSName("displayExistingFile")
+    def displayExistingFile_usecredentials(
+      mockFile: DropzoneMockFile,
+      imageUrl: String,
+      callback: Unit,
       crossOrigin: `use-credentials`,
       resizeThumbnail: Boolean
     ): js.Any = js.native
@@ -626,56 +554,59 @@ object mod {
     
     def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Dropzone = js.native
     @JSName("on")
-    def on_addedfile(eventName: addedfile, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_addedfile(eventName: addedfile, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_addedfiles(eventName: addedfiles, callback: js.Function1[/* files */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_addedfiles(eventName: addedfiles, callback: js.Function1[/* files */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_canceled(eventName: canceled, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_canceled(eventName: canceled, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_canceledmultiple(eventName: canceledmultiple, callback: js.Function1[/* file */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_canceledmultiple(eventName: canceledmultiple, callback: js.Function1[/* file */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_complete(eventName: complete, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_complete(eventName: complete, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_completemultiple(eventName: completemultiple, callback: js.Function1[/* file */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_completemultiple(eventName: completemultiple, callback: js.Function1[/* file */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_dragend(eventName: dragend, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_dragend(eventName: dragend, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_dragenter(eventName: dragenter, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_dragenter(eventName: dragenter, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_dragleave(eventName: dragleave, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_dragleave(eventName: dragleave, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_dragover(eventName: dragover, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_dragover(eventName: dragover, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_dragstart(eventName: dragstart, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_dragstart(eventName: dragstart, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_drop(eventName: drop, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_drop(eventName: drop, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_error(eventName: error, callback: js.Function2[/* file */ DropzoneFile, /* message */ String | Error, _]): Dropzone = js.native
+    def on_error(
+      eventName: error,
+      callback: js.Function2[/* file */ DropzoneFile, /* message */ String | Error, js.Any]
+    ): Dropzone = js.native
     @JSName("on")
     def on_errormultiple(
       eventName: errormultiple,
-      callback: js.Function2[/* files */ js.Array[DropzoneFile], /* message */ String | Error, _]
+      callback: js.Function2[/* files */ js.Array[DropzoneFile], /* message */ String | Error, js.Any]
     ): Dropzone = js.native
     @JSName("on")
-    def on_maxfilesexceeded(eventName: maxfilesexceeded, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_maxfilesexceeded(eventName: maxfilesexceeded, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_maxfilesreached(eventName: maxfilesreached, callback: js.Function1[/* files */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_maxfilesreached(eventName: maxfilesreached, callback: js.Function1[/* files */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_paste(eventName: paste, callback: js.Function1[/* e */ DragEvent, _]): Dropzone = js.native
+    def on_paste(eventName: paste, callback: js.Function1[/* e */ DragEvent, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_processing(eventName: processing, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_processing(eventName: processing, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_processingmultiple(eventName: processingmultiple, callback: js.Function1[/* files */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_processingmultiple(eventName: processingmultiple, callback: js.Function1[/* files */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
     def on_queuecomplete(eventName: queuecomplete): Dropzone = js.native
     @JSName("on")
-    def on_removedfile(eventName: removedfile, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+    def on_removedfile(eventName: removedfile, callback: js.Function1[/* file */ DropzoneFile, js.Any]): Dropzone = js.native
     @JSName("on")
     def on_reset(eventName: reset): Dropzone = js.native
     @JSName("on")
     def on_sending(
       eventName: sending,
-      callback: js.Function3[/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData, _]
+      callback: js.Function3[/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData, js.Any]
     ): Dropzone = js.native
     @JSName("on")
     def on_sendingmultiple(
@@ -684,27 +615,35 @@ object mod {
           /* files */ js.Array[DropzoneFile], 
           /* xhr */ XMLHttpRequest, 
           /* formData */ FormData, 
-          _
+          js.Any
         ]
     ): Dropzone = js.native
     @JSName("on")
     def on_success(
       eventName: success,
-      callback: js.Function2[/* file */ DropzoneFile, /* response */ js.Object | String, _]
+      callback: js.Function2[/* file */ DropzoneFile, /* response */ js.Object | String, js.Any]
     ): Dropzone = js.native
     @JSName("on")
-    def on_successmultiple(eventName: successmultiple, callback: js.Function1[/* files */ js.Array[DropzoneFile], _]): Dropzone = js.native
+    def on_successmultiple(eventName: successmultiple, callback: js.Function1[/* files */ js.Array[DropzoneFile], js.Any]): Dropzone = js.native
     @JSName("on")
-    def on_thumbnail(eventName: thumbnail, callback: js.Function2[/* file */ DropzoneFile, /* dataUrl */ String, _]): Dropzone = js.native
+    def on_thumbnail(
+      eventName: thumbnail,
+      callback: js.Function2[/* file */ DropzoneFile, /* dataUrl */ String, js.Any]
+    ): Dropzone = js.native
     @JSName("on")
     def on_totaluploadprogress(
       eventName: totaluploadprogress,
-      callback: js.Function3[/* totalProgress */ Double, /* totalBytes */ Double, /* totalBytesSent */ Double, _]
+      callback: js.Function3[
+          /* totalProgress */ Double, 
+          /* totalBytes */ Double, 
+          /* totalBytesSent */ Double, 
+          js.Any
+        ]
     ): Dropzone = js.native
     @JSName("on")
     def on_uploadprogress(
       eventName: uploadprogress,
-      callback: js.Function3[/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double, _]
+      callback: js.Function3[/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double, js.Any]
     ): Dropzone = js.native
     
     var options: DropzoneOptions = js.native
@@ -723,72 +662,67 @@ object mod {
     def removeFile(file: DropzoneFile): Unit = js.native
     
     def resizeImage(file: DropzoneFile): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String
-    ): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def resizeImage(file: DropzoneFile, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def resizeImage(file: DropzoneFile, width: js.UndefOr[scala.Nothing], height: Double, resizeMethod: String): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      resizeMethod: String,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
     def resizeImage(file: DropzoneFile, width: Double): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def resizeImage(file: DropzoneFile, width: Double, height: js.UndefOr[scala.Nothing], resizeMethod: String): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      resizeMethod: String,
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
     def resizeImage(file: DropzoneFile, width: Double, height: Double): Unit = js.native
-    def resizeImage(
-      file: DropzoneFile,
-      width: Double,
-      height: Double,
-      resizeMethod: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
     def resizeImage(file: DropzoneFile, width: Double, height: Double, resizeMethod: String): Unit = js.native
     def resizeImage(
       file: DropzoneFile,
       width: Double,
       height: Double,
       resizeMethod: String,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Double,
+      height: Double,
+      resizeMethod: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(file: DropzoneFile, width: Double, height: Unit, resizeMethod: String): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: String,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Double,
+      height: Unit,
+      resizeMethod: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(file: DropzoneFile, width: Unit, height: Double): Unit = js.native
+    def resizeImage(file: DropzoneFile, width: Unit, height: Double, resizeMethod: String): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: String,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Unit,
+      height: Double,
+      resizeMethod: Unit,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(file: DropzoneFile, width: Unit, height: Unit, resizeMethod: String): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: String,
+      callback: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def resizeImage(
+      file: DropzoneFile,
+      width: Unit,
+      height: Unit,
+      resizeMethod: Unit,
       callback: js.Function1[/* repeated */ js.Any, Unit]
     ): Unit = js.native
     
@@ -799,18 +733,17 @@ object mod {
     var version: String = js.native
   }
   
-  @js.native
   trait DropzoneDictFileSizeUnits extends StObject {
     
-    var b: js.UndefOr[String] = js.native
+    var b: js.UndefOr[String] = js.undefined
     
-    var gb: js.UndefOr[String] = js.native
+    var gb: js.UndefOr[String] = js.undefined
     
-    var kb: js.UndefOr[String] = js.native
+    var kb: js.UndefOr[String] = js.undefined
     
-    var mb: js.UndefOr[String] = js.native
+    var mb: js.UndefOr[String] = js.undefined
     
-    var tb: js.UndefOr[String] = js.native
+    var tb: js.UndefOr[String] = js.undefined
   }
   object DropzoneDictFileSizeUnits {
     
@@ -856,7 +789,9 @@ object mod {
   }
   
   @js.native
-  trait DropzoneFile extends File {
+  trait DropzoneFile
+    extends StObject
+       with File {
     
     var accepted: Boolean = js.native
     
@@ -875,18 +810,17 @@ object mod {
     var xhr: js.UndefOr[XMLHttpRequest] = js.native
   }
   
-  @js.native
   trait DropzoneFileUpload extends StObject {
     
-    var bytesSent: Double = js.native
+    var bytesSent: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var total: Double = js.native
+    var total: Double
     
-    var totalChunkCount: js.UndefOr[Double] = js.native
+    var totalChunkCount: js.UndefOr[Double] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object DropzoneFileUpload {
     
@@ -919,17 +853,16 @@ object mod {
     }
   }
   
-  @js.native
   trait DropzoneListener extends StObject {
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var events: StringDictionary[js.Function1[/* e */ Event, _]] = js.native
+    var events: StringDictionary[js.Function1[/* e */ Event, js.Any]]
   }
   object DropzoneListener {
     
     @scala.inline
-    def apply(element: HTMLElement, events: StringDictionary[js.Function1[/* e */ Event, _]]): DropzoneListener = {
+    def apply(element: HTMLElement, events: StringDictionary[js.Function1[/* e */ Event, js.Any]]): DropzoneListener = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropzoneListener]
     }
@@ -941,17 +874,17 @@ object mod {
       def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEvents(value: StringDictionary[js.Function1[/* e */ Event, _]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      def setEvents(value: StringDictionary[js.Function1[/* e */ Event, js.Any]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait DropzoneMockFile
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object DropzoneMockFile {
     
@@ -972,7 +905,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DropzoneOptions extends StObject {
     
     var accept: js.UndefOr[
@@ -981,29 +913,29 @@ object mod {
           /* done */ js.Function1[/* error */ js.UndefOr[String | Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var acceptedFiles: js.UndefOr[String] = js.native
+    var acceptedFiles: js.UndefOr[String] = js.undefined
     
-    var addRemoveLinks: js.UndefOr[Boolean] = js.native
+    var addRemoveLinks: js.UndefOr[Boolean] = js.undefined
     
-    var addedfile: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var addedfile: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var addedfiles: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.native
+    var addedfiles: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.undefined
     
-    var autoProcessQueue: js.UndefOr[Boolean] = js.native
+    var autoProcessQueue: js.UndefOr[Boolean] = js.undefined
     
-    var autoQueue: js.UndefOr[Boolean] = js.native
+    var autoQueue: js.UndefOr[Boolean] = js.undefined
     
-    var canceled: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var canceled: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var canceledmultiple: js.UndefOr[js.Function1[/* file */ js.Array[DropzoneFile], Unit]] = js.native
+    var canceledmultiple: js.UndefOr[js.Function1[/* file */ js.Array[DropzoneFile], Unit]] = js.undefined
     
-    var capture: js.UndefOr[String] = js.native
+    var capture: js.UndefOr[String] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var chunking: js.UndefOr[Boolean] = js.native
+    var chunking: js.UndefOr[Boolean] = js.undefined
     
     var chunksUploaded: js.UndefOr[
         js.Function2[
@@ -1011,57 +943,57 @@ object mod {
           /* done */ js.Function1[/* error */ js.UndefOr[String | Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var clickable: js.UndefOr[Boolean | String | HTMLElement | (js.Array[String | HTMLElement])] = js.native
+    var clickable: js.UndefOr[Boolean | String | HTMLElement | (js.Array[String | HTMLElement])] = js.undefined
     
-    var complete: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var complete: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var completemultiple: js.UndefOr[js.Function1[/* file */ js.Array[DropzoneFile], Unit]] = js.native
+    var completemultiple: js.UndefOr[js.Function1[/* file */ js.Array[DropzoneFile], Unit]] = js.undefined
     
-    var createImageThumbnails: js.UndefOr[Boolean] = js.native
+    var createImageThumbnails: js.UndefOr[Boolean] = js.undefined
     
-    var dictCancelUpload: js.UndefOr[String] = js.native
+    var dictCancelUpload: js.UndefOr[String] = js.undefined
     
-    var dictCancelUploadConfirmation: js.UndefOr[String] = js.native
+    var dictCancelUploadConfirmation: js.UndefOr[String] = js.undefined
     
-    var dictDefaultMessage: js.UndefOr[String] = js.native
+    var dictDefaultMessage: js.UndefOr[String] = js.undefined
     
-    var dictFallbackMessage: js.UndefOr[String] = js.native
+    var dictFallbackMessage: js.UndefOr[String] = js.undefined
     
-    var dictFallbackText: js.UndefOr[String] = js.native
+    var dictFallbackText: js.UndefOr[String] = js.undefined
     
-    var dictFileSizeUnits: js.UndefOr[DropzoneDictFileSizeUnits] = js.native
+    var dictFileSizeUnits: js.UndefOr[DropzoneDictFileSizeUnits] = js.undefined
     
-    var dictFileTooBig: js.UndefOr[String] = js.native
+    var dictFileTooBig: js.UndefOr[String] = js.undefined
     
-    var dictInvalidFileType: js.UndefOr[String] = js.native
+    var dictInvalidFileType: js.UndefOr[String] = js.undefined
     
-    var dictMaxFilesExceeded: js.UndefOr[String] = js.native
+    var dictMaxFilesExceeded: js.UndefOr[String] = js.undefined
     
-    var dictRemoveFile: js.UndefOr[String] = js.native
+    var dictRemoveFile: js.UndefOr[String] = js.undefined
     
-    var dictRemoveFileConfirmation: js.UndefOr[String] = js.native
+    var dictRemoveFileConfirmation: js.UndefOr[String] = js.undefined
     
-    var dictResponseError: js.UndefOr[String] = js.native
+    var dictResponseError: js.UndefOr[String] = js.undefined
     
-    var dictUploadCanceled: js.UndefOr[String] = js.native
+    var dictUploadCanceled: js.UndefOr[String] = js.undefined
     
-    var dragend: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var dragend: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var dragenter: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var dragenter: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var dragleave: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var dragleave: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var dragover: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var dragover: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var dragstart: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var dragstart: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var drop: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
     var error: js.UndefOr[
         js.Function3[/* file */ DropzoneFile, /* message */ String | Error, /* xhr */ XMLHttpRequest, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var errormultiple: js.UndefOr[
         js.Function3[
@@ -1070,61 +1002,61 @@ object mod {
           /* xhr */ XMLHttpRequest, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var fallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var fallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var filesizeBase: js.UndefOr[Double] = js.native
+    var filesizeBase: js.UndefOr[Double] = js.undefined
     
-    var forceChunking: js.UndefOr[Boolean] = js.native
+    var forceChunking: js.UndefOr[Boolean] = js.undefined
     
-    var forceFallback: js.UndefOr[Boolean] = js.native
+    var forceFallback: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var hiddenInputContainer: js.UndefOr[HTMLElement] = js.native
+    var hiddenInputContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var ignoreHiddenFiles: js.UndefOr[Boolean] = js.native
+    var ignoreHiddenFiles: js.UndefOr[Boolean] = js.undefined
     
-    var init: js.UndefOr[js.ThisFunction0[/* this */ Dropzone, Unit]] = js.native
+    var init: js.UndefOr[js.ThisFunction0[/* this */ Dropzone, Unit]] = js.undefined
     
-    var maxFiles: js.UndefOr[Double] = js.native
+    var maxFiles: js.UndefOr[Double] = js.undefined
     
-    var maxFilesize: js.UndefOr[Double] = js.native
+    var maxFilesize: js.UndefOr[Double] = js.undefined
     
-    var maxThumbnailFilesize: js.UndefOr[Double] = js.native
+    var maxThumbnailFilesize: js.UndefOr[Double] = js.undefined
     
-    var maxfilesexceeded: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var maxfilesexceeded: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var maxfilesreached: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.native
+    var maxfilesreached: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.undefined
     
-    var method: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.native
+    var method: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.undefined
     
-    var parallelChunkUploads: js.UndefOr[Boolean] = js.native
+    var parallelChunkUploads: js.UndefOr[Boolean] = js.undefined
     
-    var parallelUploads: js.UndefOr[Double] = js.native
+    var parallelUploads: js.UndefOr[Double] = js.undefined
     
-    var paramName: js.UndefOr[String] = js.native
+    var paramName: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var paste: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.native
+    var paste: js.UndefOr[js.Function1[/* e */ DragEvent, Unit]] = js.undefined
     
-    var previewTemplate: js.UndefOr[String] = js.native
+    var previewTemplate: js.UndefOr[String] = js.undefined
     
-    var previewsContainer: js.UndefOr[Boolean | String | HTMLElement] = js.native
+    var previewsContainer: js.UndefOr[Boolean | String | HTMLElement] = js.undefined
     
-    var processing: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var processing: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var processingmultiple: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.native
+    var processingmultiple: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.undefined
     
-    var queuecomplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var queuecomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removedfile: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var removedfile: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
-    var renameFilename: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+    var renameFilename: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
     
-    var reset: js.UndefOr[js.Function0[Unit]] = js.native
+    var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var resize: js.UndefOr[
         js.Function4[
@@ -1134,25 +1066,25 @@ object mod {
           /* resizeMethod */ js.UndefOr[String], 
           DropzoneResizeInfo
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var resizeHeight: js.UndefOr[Double] = js.native
+    var resizeHeight: js.UndefOr[Double] = js.undefined
     
-    var resizeMethod: js.UndefOr[contain | crop] = js.native
+    var resizeMethod: js.UndefOr[contain | crop] = js.undefined
     
-    var resizeMimeType: js.UndefOr[String] = js.native
+    var resizeMimeType: js.UndefOr[String] = js.undefined
     
-    var resizeQuality: js.UndefOr[Double] = js.native
+    var resizeQuality: js.UndefOr[Double] = js.undefined
     
-    var resizeWidth: js.UndefOr[Double] = js.native
+    var resizeWidth: js.UndefOr[Double] = js.undefined
     
-    var retryChunks: js.UndefOr[Boolean] = js.native
+    var retryChunks: js.UndefOr[Boolean] = js.undefined
     
-    var retryChunksLimit: js.UndefOr[Double] = js.native
+    var retryChunksLimit: js.UndefOr[Double] = js.undefined
     
     var sending: js.UndefOr[
         js.Function3[/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var sendingmultiple: js.UndefOr[
         js.Function3[
@@ -1161,27 +1093,27 @@ object mod {
           /* formData */ FormData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.native
+    var success: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
     
     var successmultiple: js.UndefOr[
         js.Function2[/* files */ js.Array[DropzoneFile], /* responseText */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var thumbnail: js.UndefOr[js.Function2[/* file */ DropzoneFile, /* dataUrl */ String, Unit]] = js.native
+    var thumbnail: js.UndefOr[js.Function2[/* file */ DropzoneFile, /* dataUrl */ String, Unit]] = js.undefined
     
-    var thumbnailHeight: js.UndefOr[Double] = js.native
+    var thumbnailHeight: js.UndefOr[Double] = js.undefined
     
-    var thumbnailMethod: js.UndefOr[contain | crop] = js.native
+    var thumbnailMethod: js.UndefOr[contain | crop] = js.undefined
     
-    var thumbnailWidth: js.UndefOr[Double] = js.native
+    var thumbnailWidth: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     var totaluploadprogress: js.UndefOr[
         js.Function3[/* totalProgress */ Double, /* totalBytes */ Double, /* totalBytesSent */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var transformFile: js.UndefOr[
         js.Function2[
@@ -1189,17 +1121,17 @@ object mod {
           /* done */ js.Function1[/* file */ String | Blob, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var uploadMultiple: js.UndefOr[Boolean] = js.native
+    var uploadMultiple: js.UndefOr[Boolean] = js.undefined
     
     var uploadprogress: js.UndefOr[
         js.Function3[/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var url: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.native
+    var url: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object DropzoneOptions {
     
@@ -1761,24 +1693,23 @@ object mod {
     }
   }
   
-  @js.native
   trait DropzoneResizeInfo extends StObject {
     
-    var srcHeight: js.UndefOr[Double] = js.native
+    var srcHeight: js.UndefOr[Double] = js.undefined
     
-    var srcWidth: js.UndefOr[Double] = js.native
+    var srcWidth: js.UndefOr[Double] = js.undefined
     
-    var srcX: js.UndefOr[Double] = js.native
+    var srcX: js.UndefOr[Double] = js.undefined
     
-    var srcY: js.UndefOr[Double] = js.native
+    var srcY: js.UndefOr[Double] = js.undefined
     
-    var trgHeight: js.UndefOr[Double] = js.native
+    var trgHeight: js.UndefOr[Double] = js.undefined
     
-    var trgWidth: js.UndefOr[Double] = js.native
+    var trgWidth: js.UndefOr[Double] = js.undefined
     
-    var trgX: js.UndefOr[Double] = js.native
+    var trgX: js.UndefOr[Double] = js.undefined
     
-    var trgY: js.UndefOr[Double] = js.native
+    var trgY: js.UndefOr[Double] = js.undefined
   }
   object DropzoneResizeInfo {
     
@@ -1843,10 +1774,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait HTMLElement extends StObject {
       
-      var dropzone: Dropzone = js.native
+      var dropzone: Dropzone
     }
     object HTMLElement {
       
@@ -1864,10 +1794,9 @@ object mod {
       }
     }
     
-    @js.native
     trait JQuery extends StObject {
       
-      def dropzone(options: DropzoneOptions): Dropzone = js.native
+      def dropzone(options: DropzoneOptions): Dropzone
     }
     object JQuery {
       

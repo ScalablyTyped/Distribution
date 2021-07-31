@@ -3,14 +3,12 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.dateMod.DateTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.DateTypeKnob, 'value'> */
-@js.native
 trait PickDateTypeKnobvalue extends StObject {
   
-  var value: DateTypeKnobValue = js.native
+  var value: DateTypeKnobValue
 }
 object PickDateTypeKnobvalue {
   

@@ -2,30 +2,30 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlAttributeTextMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlAttributeText", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlAttributeText[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlAttributeText[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlAttributeTextOptions) = this()
   }
   
-  @js.native
   trait IXmlAttributeTextOptions extends StObject {
     
     /**
       * The attribute text.
       */
-    var charData: String = js.native
+    var charData: String
     
     /**
       * Whether to replace any invalid characters in the attribute text with the
       * Unicode replacement character. By default, this is disabled.
       */
-    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.native
+    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlAttributeTextOptions {
     

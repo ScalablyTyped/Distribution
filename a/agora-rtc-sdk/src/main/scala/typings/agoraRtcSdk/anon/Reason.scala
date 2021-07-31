@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,12 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - "ServerTimeOut": The user drops offline.
   * - "BecomeAudience": The client role switches from `"host"` to `"audience"`.
   */
-@js.native
 trait Reason extends StObject {
   
-  var reason: String = js.native
+  var reason: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object Reason {
   

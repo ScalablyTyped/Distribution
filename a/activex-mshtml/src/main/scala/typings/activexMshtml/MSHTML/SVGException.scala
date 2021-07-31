@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGException extends StObject {
   
   @JSName("MSHTML.SVGException_typekey")
-  var MSHTMLDotSVGException_typekey: SVGException = js.native
+  var MSHTMLDotSVGException_typekey: SVGException
   
-  var code: Double = js.native
+  var code: Double
   
-  val message: String = js.native
+  val message: String
 }
 object SVGException {
   

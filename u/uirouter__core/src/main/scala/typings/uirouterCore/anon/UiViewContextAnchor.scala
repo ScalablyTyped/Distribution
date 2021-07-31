@@ -2,15 +2,13 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiViewContextAnchor extends StObject {
   
-  var uiViewContextAnchor: String = js.native
+  var uiViewContextAnchor: String
   
-  var uiViewName: String = js.native
+  var uiViewName: String
 }
 object UiViewContextAnchor {
   

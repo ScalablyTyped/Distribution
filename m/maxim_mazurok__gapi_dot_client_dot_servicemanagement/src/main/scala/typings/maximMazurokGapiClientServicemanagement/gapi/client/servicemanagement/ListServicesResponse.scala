@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServicesResponse extends StObject {
   
   /** Token that can be passed to `ListServices` to resume a paginated query. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The returned services will only have the name field set. */
-  var services: js.UndefOr[js.Array[ManagedService]] = js.native
+  var services: js.UndefOr[js.Array[ManagedService]] = js.undefined
 }
 object ListServicesResponse {
   

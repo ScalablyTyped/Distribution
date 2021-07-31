@@ -2,19 +2,17 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The state of a table&#39;s data in a particular cluster.
   */
-@js.native
 trait SchemaClusterState extends StObject {
   
   /**
     * Output only. The state of replication for the table in this cluster.
     */
-  var replicationState: js.UndefOr[String] = js.native
+  var replicationState: js.UndefOr[String] = js.undefined
 }
 object SchemaClusterState {
   

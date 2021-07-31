@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "StorageServiceSettings")
@@ -32,72 +31,65 @@ class StorageServiceSettings protected () extends StObject {
 /* static members */
 object StorageServiceSettings {
   
+  @JSImport("azure", "StorageServiceSettings")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates StorageServiceSettings object given endpoints uri.
     */
-  @JSImport("azure", "StorageServiceSettings._createStorageServiceSettings")
-  @js.native
+  @scala.inline
   def _createStorageServiceSettings(
     settings: Dictionary[String],
     blobEndpointUri: String,
     queueEndpointUri: String,
     tableEndpointUri: String
-  ): StorageServiceSettings = js.native
+  ): StorageServiceSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("_createStorageServiceSettings")(settings.asInstanceOf[js.Any], blobEndpointUri.asInstanceOf[js.Any], queueEndpointUri.asInstanceOf[js.Any], tableEndpointUri.asInstanceOf[js.Any])).asInstanceOf[StorageServiceSettings]
   
   /**
     * Gets the default service endpoint using the specified protocol and account
     * name.
     */
-  @JSImport("azure", "StorageServiceSettings._getDefaultServiceEndpoint")
-  @js.native
-  def _getDefaultServiceEndpoint(settings: Dictionary[String], dns: String): String = js.native
+  @scala.inline
+  def _getDefaultServiceEndpoint(settings: Dictionary[String], dns: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_getDefaultServiceEndpoint")(settings.asInstanceOf[js.Any], dns.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns a StorageServiceSettings with development storage credentials using
     * the specified proxy Uri.
     */
-  @JSImport("azure", "StorageServiceSettings._getDevelopmentStorageAccount")
-  @js.native
-  def _getDevelopmentStorageAccount(): StorageServiceSettings = js.native
-  @JSImport("azure", "StorageServiceSettings._getDevelopmentStorageAccount")
-  @js.native
-  def _getDevelopmentStorageAccount(proxy: String): StorageServiceSettings = js.native
+  @scala.inline
+  def _getDevelopmentStorageAccount(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")().asInstanceOf[StorageServiceSettings]
+  @scala.inline
+  def _getDevelopmentStorageAccount(proxy: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")(proxy.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
-  @JSImport("azure", "StorageServiceSettings.createExplicitlyOrFromEnvironment")
-  @js.native
-  def createExplicitlyOrFromEnvironment(storageAccount: String, storageAccessKey: String, host: String): StorageServiceSettings = js.native
+  @scala.inline
+  def createExplicitlyOrFromEnvironment(storageAccount: String, storageAccessKey: String, host: String): StorageServiceSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createExplicitlyOrFromEnvironment")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[StorageServiceSettings]
   
-  @JSImport("azure", "StorageServiceSettings.createFromConfig")
-  @js.native
-  def createFromConfig(config: js.Any): StorageServiceSettings = js.native
+  @scala.inline
+  def createFromConfig(config: js.Any): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(config.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
   /**
     * Creates a StorageServiceSettings object from the given connection string.
     */
-  @JSImport("azure", "StorageServiceSettings.createFromConnectionString")
-  @js.native
-  def createFromConnectionString(connectionString: String): StorageServiceSettings = js.native
+  @scala.inline
+  def createFromConnectionString(connectionString: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
   /**
     * Creates a ServiceBusSettings object from a set of settings.
     */
-  @JSImport("azure", "StorageServiceSettings.createFromSettings")
-  @js.native
-  def createFromSettings(settings: Dictionary[String]): StorageServiceSettings = js.native
+  @scala.inline
+  def createFromSettings(settings: Dictionary[String]): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
-  @JSImport("azure", "StorageServiceSettings.customizeConfig")
-  @js.native
-  def customizeConfig(config: js.Any): Unit = js.native
+  @scala.inline
+  def customizeConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Gets a StorageServiceSettings object that references the development storage
     * account.
     */
-  @JSImport("azure", "StorageServiceSettings.getDevelopmentStorageAccountSettings")
-  @js.native
-  def getDevelopmentStorageAccountSettings(): StorageServiceSettings = js.native
+  @scala.inline
+  def getDevelopmentStorageAccountSettings(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevelopmentStorageAccountSettings")().asInstanceOf[StorageServiceSettings]
   
-  @JSImport("azure", "StorageServiceSettings.isDevelopmentStorage")
-  @js.native
-  def isDevelopmentStorage(storageAccount: String, storageAccessKey: String, parsedHost: String): Boolean = js.native
+  @scala.inline
+  def isDevelopmentStorage(storageAccount: String, storageAccessKey: String, parsedHost: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopmentStorage")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], parsedHost.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

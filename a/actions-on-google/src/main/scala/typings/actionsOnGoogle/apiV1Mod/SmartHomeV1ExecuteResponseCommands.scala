@@ -4,23 +4,21 @@ import typings.actionsOnGoogle.anon.TypeChallengeType
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1ExecuteResponseCommands extends StObject {
   
-  var challengeNeeded: js.UndefOr[TypeChallengeType] = js.native
+  var challengeNeeded: js.UndefOr[TypeChallengeType] = js.undefined
   
-  var debugString: js.UndefOr[String] = js.native
+  var debugString: js.UndefOr[String] = js.undefined
   
-  var errorCode: js.UndefOr[SmartHomeV1ExecuteErrors] = js.native
+  var errorCode: js.UndefOr[SmartHomeV1ExecuteErrors] = js.undefined
   
-  var ids: js.Array[String] = js.native
+  var ids: js.Array[String]
   
-  var states: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var states: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var status: SmartHomeV1ExecuteStatus = js.native
+  var status: SmartHomeV1ExecuteStatus
 }
 object SmartHomeV1ExecuteResponseCommands {
   
@@ -58,7 +56,7 @@ object SmartHomeV1ExecuteResponseCommands {
     def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setStates(value: ApiClientObjectMap[_]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)

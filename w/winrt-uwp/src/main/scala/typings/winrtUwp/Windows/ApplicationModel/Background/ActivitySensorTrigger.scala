@@ -5,24 +5,22 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is activated when the ActivitySensor receives input. This is used when your application needs to respond to the activity sensor. */
-@js.native
 trait ActivitySensorTrigger extends StObject {
   
   /** Gets the minimum supported report interval for the sensor trigger. */
-  var minimumReportInterval: Double = js.native
+  var minimumReportInterval: Double
   
   /** Gets the report interval for the trigger. */
-  var reportInterval: Double = js.native
+  var reportInterval: Double
   
   /** Gets or sets the list of activities your trigger is subscribed to. */
-  var subscribedActivities: IVector[ActivityType] = js.native
+  var subscribedActivities: IVector[ActivityType]
   
   /** Gets the list of supported activities you can subscribe to. */
-  var supportedActivities: IVectorView[ActivityType] = js.native
+  var supportedActivities: IVectorView[ActivityType]
 }
 object ActivitySensorTrigger {
   

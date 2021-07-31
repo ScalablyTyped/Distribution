@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSponsorsList extends StandardParameters {
+trait ParamsResourceSponsorsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The filter parameter specifies which channel sponsors to return.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken and
     * prevPageToken properties identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies the sponsor resource parts that the API
     * response will include. Supported values are id and snippet.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSponsorsList {
   

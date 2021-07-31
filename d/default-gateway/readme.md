@@ -10,9 +10,9 @@ Get the default network gateway, cross-platform.
 | ------------------ | :-------------: |
 | Full name          | default-gateway |
 | Keywords           | default gateway, network, default, gateway, routing, route |
-| # releases         | 15 |
-| # dependents       | 81 |
-| # downloads        | 270343961 |
+| # releases         | 17 |
+| # dependents       | 95 |
+| # downloads        | 326728241 |
 | # stars            | 0 |
 
 ## Links

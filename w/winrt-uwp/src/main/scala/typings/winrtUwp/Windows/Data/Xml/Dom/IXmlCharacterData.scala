@@ -2,38 +2,38 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides text manipulation methods that are used by several objects. */
-@js.native
-trait IXmlCharacterData extends IXmlNode {
+trait IXmlCharacterData
+  extends StObject
+     with IXmlNode {
   
   /**
     * Appends the supplied string to the existing string data.
     * @param data The data to be appended to the existing string.
     */
-  def appendData(data: String): Unit = js.native
+  def appendData(data: String): Unit
   
   /** Gets or sets the node data depending on the node type. */
-  var data: String = js.native
+  var data: String
   
   /**
     * Deletes specified data.
     * @param offset The offset, in characters, at which to start deleting the string data.
     * @param count The number of characters to delete.
     */
-  def deleteData(offset: Double, count: Double): Unit = js.native
+  def deleteData(offset: Double, count: Double): Unit
   
   /**
     * Inserts a string at the specified offset.
     * @param offset The offset, in characters, at which to insert the supplied string data.
     * @param data The data to be inserted into the existing string.
     */
-  def insertData(offset: Double, data: String): Unit = js.native
+  def insertData(offset: Double, data: String): Unit
   
   /** Gets the length of the data, in Unicode characters. */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * Replaces the specified number of characters with the supplied string.
@@ -41,7 +41,7 @@ trait IXmlCharacterData extends IXmlNode {
     * @param count The number of characters to replace.
     * @param data The new data that replaces the old string data.
     */
-  def replaceData(offset: Double, count: Double, data: String): Unit = js.native
+  def replaceData(offset: Double, count: Double, data: String): Unit
   
   /**
     * Retrieves a substring of the full string from the specified range.
@@ -49,7 +49,7 @@ trait IXmlCharacterData extends IXmlNode {
     * @param count Specifies the number of characters to retrieve from the specified offset.
     * @return The returned substring.
     */
-  def substringData(offset: Double, count: Double): String = js.native
+  def substringData(offset: Double, count: Double): String
 }
 object IXmlCharacterData {
   

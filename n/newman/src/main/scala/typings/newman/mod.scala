@@ -16,32 +16,31 @@ import typings.postmanCollection.mod.VariableScopeDefinition
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("newman", "run")
+  @JSImport("newman", JSImport.Namespace)
   @js.native
-  def run(callback: js.Function2[/* err */ Error | Null, /* summary */ NewmanRunSummary, Unit]): EventEmitter = js.native
-  @JSImport("newman", "run")
-  @js.native
-  def run(options: NewmanRunOptions): EventEmitter = js.native
-  @JSImport("newman", "run")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def run(callback: js.Function2[/* err */ Error | Null, /* summary */ NewmanRunSummary, Unit]): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  @scala.inline
+  def run(options: NewmanRunOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  @scala.inline
   def run(
     options: NewmanRunOptions,
     callback: js.Function2[/* err */ Error | Null, /* summary */ NewmanRunSummary, Unit]
-  ): EventEmitter = js.native
+  ): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @js.native
   trait NewmanRun extends StObject {
     
-    var executions: js.Array[NewmanRunExecution] = js.native
+    var executions: js.Array[NewmanRunExecution]
     
-    var failures: js.Array[NewmanRunFailure] = js.native
+    var failures: js.Array[NewmanRunFailure]
     
-    var stats: Assertions = js.native
+    var stats: Assertions
   }
   object NewmanRun {
     
@@ -71,12 +70,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunExecution extends StObject {
     
-    var assertions: js.Array[NewmanRunExecutionAssertion] = js.native
+    var assertions: js.Array[NewmanRunExecutionAssertion]
     
-    var item: NewmanRunExecutionItem = js.native
+    var item: NewmanRunExecutionItem
   }
   object NewmanRunExecution {
     
@@ -100,12 +98,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunExecutionAssertion extends StObject {
     
-    var assertion: String = js.native
+    var assertion: String
     
-    var error: NewmanRunExecutionAssertionError = js.native
+    var error: NewmanRunExecutionAssertionError
   }
   object NewmanRunExecutionAssertion {
     
@@ -126,18 +123,17 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunExecutionAssertionError extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var stack: String = js.native
+    var stack: String
     
-    var test: String = js.native
+    var test: String
   }
   object NewmanRunExecutionAssertionError {
     
@@ -167,10 +163,9 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunExecutionItem extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object NewmanRunExecutionItem {
     
@@ -188,19 +183,18 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunFailure extends StObject {
     
     /** The event where the failure occurred */
-    var at: String = js.native
+    var at: String
     
-    var cursor: Ref | js.Object = js.native
+    var cursor: Ref | js.Object
     
-    var error: NewmanRunExecutionAssertionError = js.native
+    var error: NewmanRunExecutionAssertionError
     
-    var parent: js.Any = js.native
+    var parent: js.Any
     
-    var source: js.UndefOr[NewmanRunExecutionItem] = js.native
+    var source: js.UndefOr[NewmanRunExecutionItem] = js.undefined
   }
   object NewmanRunFailure {
     
@@ -233,7 +227,6 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunOptions extends StObject {
     
     /**
@@ -249,17 +242,17 @@ object mod {
       *
       * Default value: false
       */
-    var bail: js.UndefOr[Boolean | (js.Array[folder | failure])] = js.native
+    var bail: js.UndefOr[Boolean | (js.Array[folder | failure])] = js.undefined
     
     /** A JSON / Collection / String representing the collection. */
-    var collection: Collection | CollectionDefinition | String = js.native
+    var collection: Collection | CollectionDefinition | String
     
     /**
       * Enable or Disable colored CLI output.
       *
       * Default value: auto
       */
-    var color: js.UndefOr[on | off | auto] = js.native
+    var color: js.UndefOr[on | off | auto] = js.undefined
     
     /**
       * Specify the time (in milliseconds) to wait for between subsequent
@@ -267,28 +260,28 @@ object mod {
       *
       * Default value: 0
       */
-    var delayRequest: js.UndefOr[Double] = js.native
+    var delayRequest: js.UndefOr[Double] = js.undefined
     
     /** An environment JSON / file path for the current collection run. */
-    var environment: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.native
+    var environment: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.undefined
     
     /** The relative path to export the collection from the current run to */
-    var exportCollection: js.UndefOr[String] = js.native
+    var exportCollection: js.UndefOr[String] = js.undefined
     
     /** The relative path to export the environment file from the current run to */
-    var exportEnvironment: js.UndefOr[String] = js.native
+    var exportEnvironment: js.UndefOr[String] = js.undefined
     
     /** The relative path to export the globals file from the current run to  */
-    var exportGlobals: js.UndefOr[String] = js.native
+    var exportGlobals: js.UndefOr[String] = js.undefined
     
     /**
       * The name or ID of the folder (ItemGroup) in the collection which would
       * be run instead of the entire collection.
       */
-    var folder: js.UndefOr[String | js.Array[String]] = js.native
+    var folder: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A globals JSON / file path for the current collection run. */
-    var globals: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.native
+    var globals: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.undefined
     
     /**
       * This specifies whether newman would automatically follow 3xx responses
@@ -296,60 +289,60 @@ object mod {
       *
       * Default value: false
       */
-    var ignoreRedirects: js.UndefOr[Boolean] = js.native
+    var ignoreRedirects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables SSL verification checks and allows self-signed SSL certificates.
       *
       * Default value: false
       */
-    var insecure: js.UndefOr[Boolean] = js.native
+    var insecure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow reading files outside of working directory.
       */
-    var insecureFileRead: js.UndefOr[Boolean] = js.native
+    var insecureFileRead: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the number of iterations to run on the collection. This is
       * usually accompanied by providing a data file reference as
       * iterationData
       */
-    var iterationCount: js.UndefOr[Double] = js.native
+    var iterationCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Path to the JSON or CSV file or URL to be used as data source when
       * running multiple iterations on a collection.
       */
-    var iterationData: js.UndefOr[js.Any] = js.native
+    var iterationData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Specify options for the reporter(s) declared in options.reporters.
       */
-    var reporter: js.UndefOr[js.Any] = js.native
+    var reporter: js.UndefOr[js.Any] = js.undefined
     
     /** Available reporters: cli, json, html and junit. */
-    var reporters: js.UndefOr[String | js.Array[String]] = js.native
+    var reporters: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Custom HTTP(S) agents which will be used for making the requests. This allows for use of various proxies (e.g. socks)
       */
-    var requestAgents: js.UndefOr[Http] = js.native
+    var requestAgents: js.UndefOr[Http] = js.undefined
     
     /**
       * The path to the public client certificate file.
       */
-    var sslClientCert: js.UndefOr[String] = js.native
+    var sslClientCert: js.UndefOr[String] = js.undefined
     
     /**
       * The path to the private client key file.
       */
-    var sslClientKey: js.UndefOr[String] = js.native
+    var sslClientKey: js.UndefOr[String] = js.undefined
     
     /**
       * The secret client key passphrase.
       */
-    var sslClientPassphrase: js.UndefOr[String] = js.native
+    var sslClientPassphrase: js.UndefOr[String] = js.undefined
     
     /**
       * If present, allows overriding the default exit code from the current
@@ -357,7 +350,7 @@ object mod {
       *
       * Default value: false
       */
-    var suppressExitCode: js.UndefOr[Boolean] = js.native
+    var suppressExitCode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the time (in milliseconds) to wait for the entire collection run
@@ -365,7 +358,7 @@ object mod {
       *
       * Default value: Infinity
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the time (in milliseconds) to wait for requests to return a
@@ -373,7 +366,7 @@ object mod {
       *
       * Default value: Infinity
       */
-    var timeoutRequest: js.UndefOr[Double] = js.native
+    var timeoutRequest: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the time (in milliseconds) to wait for scripts to return a
@@ -381,12 +374,12 @@ object mod {
       *
       * Default value: Infinity
       */
-    var timeoutScript: js.UndefOr[Double] = js.native
+    var timeoutScript: js.UndefOr[Double] = js.undefined
     
     /**
       * The path of the directory to be used as working directory.
       */
-    var workingDir: js.UndefOr[String] = js.native
+    var workingDir: js.UndefOr[String] = js.undefined
   }
   object NewmanRunOptions {
     
@@ -563,14 +556,13 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunStat extends StObject {
     
-    var failed: js.UndefOr[Double] = js.native
+    var failed: js.UndefOr[Double] = js.undefined
     
-    var pending: js.UndefOr[Double] = js.native
+    var pending: js.UndefOr[Double] = js.undefined
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object NewmanRunStat {
     
@@ -603,18 +595,17 @@ object mod {
     }
   }
   
-  @js.native
   trait NewmanRunSummary extends StObject {
     
-    var collection: js.Any = js.native
+    var collection: js.Any
     
-    var environment: js.Any = js.native
+    var environment: js.Any
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var globals: js.Any = js.native
+    var globals: js.Any
     
-    var run: NewmanRun = js.native
+    var run: NewmanRun
   }
   object NewmanRunSummary {
     

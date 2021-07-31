@@ -2,18 +2,16 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionConfigurationMod {
   
-  @js.native
   trait EncryptionConfiguration extends StObject {
     
     /**
       * <p> The ID of the AWS KMS key for the region where the destination bucket resides. Amazon S3 uses this key to encrypt the replica object. </p>
       */
-    var ReplicaKmsKeyID: js.UndefOr[String] = js.native
+    var ReplicaKmsKeyID: js.UndefOr[String] = js.undefined
   }
   object EncryptionConfiguration {
     

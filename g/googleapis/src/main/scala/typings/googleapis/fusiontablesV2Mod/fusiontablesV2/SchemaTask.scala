@@ -2,41 +2,39 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A background task on a table, initiated for time- or resource-consuming
   * operations such as changing column types or deleting all rows.
   */
-@js.native
 trait SchemaTask extends StObject {
   
   /**
     * Type of the resource. This is always &quot;fusiontables#task&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Task percentage completion.
     */
-  var progress: js.UndefOr[String] = js.native
+  var progress: js.UndefOr[String] = js.undefined
   
   /**
     * false while the table is busy with some other task. true if this
     * background task is currently running.
     */
-  var started: js.UndefOr[Boolean] = js.native
+  var started: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifier for the task.
     */
-  var taskId: js.UndefOr[String] = js.native
+  var taskId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of background task.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaTask {
   

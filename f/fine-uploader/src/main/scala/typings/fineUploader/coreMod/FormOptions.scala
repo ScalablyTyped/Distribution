@@ -3,10 +3,8 @@ package typings.fineUploader.coreMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormOptions extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait FormOptions extends StObject {
     *
     * @default `false`
     */
-  var autoUpload: js.UndefOr[Boolean] = js.native
+  var autoUpload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This can be the ID of the <form> or a reference to the <form> element
     *
     * @default `'qq-form'`
     */
-  var element: js.UndefOr[String | HTMLElement] = js.native
+  var element: js.UndefOr[String | HTMLElement] = js.undefined
   
   /**
     * Set this to `false` if you do not want Fine Uploader to intercept attempts to submit your form.
@@ -30,7 +28,7 @@ trait FormOptions extends StObject {
     *
     * @default `true`
     */
-  var interceptSubmit: js.UndefOr[Boolean] = js.native
+  var interceptSubmit: js.UndefOr[Boolean] = js.undefined
 }
 object FormOptions {
   

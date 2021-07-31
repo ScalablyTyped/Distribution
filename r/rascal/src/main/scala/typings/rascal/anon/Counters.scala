@@ -2,13 +2,11 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Counters extends StObject {
   
-  var counters: InMemory = js.native
+  var counters: InMemory
 }
 object Counters {
   

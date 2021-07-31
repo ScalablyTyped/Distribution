@@ -2,23 +2,21 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterizationRequest extends StObject {
   
   /**
     * Get the description of the parameterization on which this requestoperates on
     * @returns Description of a         query parameterization
     */
-  def getParameterization(): Parameterization = js.native
+  def getParameterization(): Parameterization
   
   /**
     * Get the URI to locate the entity set for the query parameterization.
     * @param sServiceRootURI (optional) Identifies the root of the OData           service
     */
-  def getURIToParameterizationEntitySet(sServiceRootURI: String): Unit = js.native
+  def getURIToParameterizationEntitySet(sServiceRootURI: String): Unit
   
   /**
     * Get the URI to locate the parameterization entity for the values assignedto all parameters
@@ -27,7 +25,7 @@ trait ParameterizationRequest extends StObject {
     * an"omitted" value. For example, for services based on BW Easy Queries, thiswould be an empty string.
     * @param sServiceRootURI (optional) Identifies the root of the OData           service
     */
-  def getURIToParameterizationEntry(sServiceRootURI: String): Unit = js.native
+  def getURIToParameterizationEntry(sServiceRootURI: String): Unit
   
   /**
     * Assign a value to a parameter
@@ -37,7 +35,7 @@ trait ParameterizationRequest extends StObject {
     * @param sToValue Omit it or set it to null for single values. If set,           it will be assigned
     * to the upper boundary parameter
     */
-  def setParameterValue(sParameterName: String, sValue: String, sToValue: String): Unit = js.native
+  def setParameterValue(sParameterName: String, sValue: String, sToValue: String): Unit
 }
 object ParameterizationRequest {
   

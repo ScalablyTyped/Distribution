@@ -2,19 +2,17 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response containing existing `WorkerPools`.
   */
-@js.native
 trait SchemaListWorkerPoolsResponse extends StObject {
   
   /**
     * `WorkerPools` for the project.
     */
-  var workerPools: js.UndefOr[js.Array[SchemaWorkerPool]] = js.native
+  var workerPools: js.UndefOr[js.Array[SchemaWorkerPool]] = js.undefined
 }
 object SchemaListWorkerPoolsResponse {
   

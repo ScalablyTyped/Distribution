@@ -4,14 +4,15 @@ import typings.obsoleteWeb.obsoleteWebStrings.afterbeing
 import typings.obsoleteWeb.obsoleteWebStrings.beforened
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("obsolete-web", JSImport.Namespace)
   @js.native
-  class ^ () extends Obsolete {
+  class ^ ()
+    extends StObject
+       with Obsolete {
     def this(options: Options) = this()
   }
   
@@ -46,7 +47,6 @@ object mod {
     def test(browsers: js.Array[String], done: js.Function0[Unit]): Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -54,20 +54,20 @@ object mod {
       * If set 'beforeend', the template will be injected into the end of body
       * @default 'afterbegin'
       */
-    var position: js.UndefOr[afterbeing | beforened] = js.native
+    var position: js.UndefOr[afterbeing | beforened] = js.undefined
     
     /**
       * If the current browser useragent doesn't match one of the target browsers, it's considered as unsupported.
       * Thus, the prompt will be shown.
       * @default false
       */
-    var promptOnNonTargetBrowser: js.UndefOr[Boolean] = js.native
+    var promptOnNonTargetBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the current browser useragent is unknown, the prompt will be shown
       * @default true
       */
-    var promptOnUnknownBrowser: js.UndefOr[Boolean] = js.native
+    var promptOnUnknownBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The prompt html template injected to the bottom of body. The default value is:
@@ -75,7 +75,7 @@ object mod {
       * <div>Your browser is not supported. <button id="obsoleteClose">&times;</button></div>
       * ```
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object Options {
     

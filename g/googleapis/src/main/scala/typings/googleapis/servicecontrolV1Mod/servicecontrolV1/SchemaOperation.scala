@@ -3,13 +3,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information regarding an operation.
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
@@ -21,19 +19,19 @@ trait SchemaOperation extends StObject {
     * PROJECT_NUMBER,     - folders/FOLDER_NUMBER,     -
     * organizations/ORGANIZATION_NUMBER,     - api`_`key:API_KEY.
     */
-  var consumerId: js.UndefOr[String] = js.native
+  var consumerId: js.UndefOr[String] = js.undefined
   
   /**
     * End time of the operation. Required when the operation is used in
     * ServiceController.Report, but optional when the operation is used in
     * ServiceController.Check.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * DO NOT USE. This is an experimental field.
     */
-  var importance: js.UndefOr[String] = js.native
+  var importance: js.UndefOr[String] = js.undefined
   
   /**
     * Labels describing the operation. Only the following labels are allowed:
@@ -50,12 +48,12 @@ trait SchemaOperation extends StObject {
     * the API is served, such as App Engine, Compute Engine, or Kubernetes
     * Engine.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Represents information to be logged.
     */
-  var logEntries: js.UndefOr[js.Array[SchemaLogEntry]] = js.native
+  var logEntries: js.UndefOr[js.Array[SchemaLogEntry]] = js.undefined
   
   /**
     * Represents information about this operation. Each MetricValueSet
@@ -67,7 +65,7 @@ trait SchemaOperation extends StObject {
     * duplicated MetricValue instances, the entire request is rejected with an
     * invalid argument error.
     */
-  var metricValueSets: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.native
+  var metricValueSets: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.undefined
   
   /**
     * Identity of the operation. This must be unique within the scope of the
@@ -78,19 +76,19 @@ trait SchemaOperation extends StObject {
     * desirable for deduplication purpose, UUID version 5 is recommended. See
     * RFC 4122 for details.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * Fully qualified name of the operation. Reserved for future use.
     */
-  var operationName: js.UndefOr[String] = js.native
+  var operationName: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the properties needed for quota check. Applicable only if this
     * operation is for a quota check request. If this is not specified, no
     * quota check will be performed.
     */
-  var quotaProperties: js.UndefOr[SchemaQuotaProperties] = js.native
+  var quotaProperties: js.UndefOr[SchemaQuotaProperties] = js.undefined
   
   /**
     * DO NOT USE. This field is deprecated, use &quot;resources&quot; field
@@ -99,25 +97,25 @@ trait SchemaOperation extends StObject {
     * “projects/&lt;project-id or project-number&gt;”     -
     * “folders/&lt;folder-id&gt;”     - “organizations/&lt;organization-id&gt;”
     */
-  var resourceContainer: js.UndefOr[String] = js.native
+  var resourceContainer: js.UndefOr[String] = js.undefined
   
   /**
     * The resources that are involved in the operation. The maximum supported
     * number of entries in this field is 100.
     */
-  var resources: js.UndefOr[js.Array[SchemaResourceInfo]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaResourceInfo]] = js.undefined
   
   /**
     * Required. Start time of the operation.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * User defined labels for the resource that this operation is associated
     * with. Only a combination of 1000 user labels per consumer project are
     * allowed.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaOperation {
   

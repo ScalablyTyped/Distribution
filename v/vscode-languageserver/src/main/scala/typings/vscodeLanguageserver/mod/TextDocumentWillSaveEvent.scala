@@ -2,21 +2,19 @@ package typings.vscodeLanguageserver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentWillSaveEvent[T] extends StObject {
   
   /**
     * The document that will be saved
     */
-  var document: T = js.native
+  var document: T
   
   /**
     * The reason why save was triggered.
     */
-  var reason: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason = js.native
+  var reason: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason
 }
 object TextDocumentWillSaveEvent {
   
@@ -27,7 +25,7 @@ object TextDocumentWillSaveEvent {
   }
   
   @scala.inline
-  implicit class TextDocumentWillSaveEventMutableBuilder[Self <: TextDocumentWillSaveEvent[_], T] (val x: Self with TextDocumentWillSaveEvent[T]) extends AnyVal {
+  implicit class TextDocumentWillSaveEventMutableBuilder[Self <: TextDocumentWillSaveEvent[?], T] (val x: Self & TextDocumentWillSaveEvent[T]) extends AnyVal {
     
     @scala.inline
     def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])

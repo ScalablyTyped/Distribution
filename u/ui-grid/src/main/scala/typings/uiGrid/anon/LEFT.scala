@@ -2,23 +2,21 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LEFT extends StObject {
   
-  var DOWN: Double = js.native
+  var DOWN: Double
   
-  var LEFT: Double = js.native
+  var LEFT: Double
   
-  var PG_DOWN: Double = js.native
+  var PG_DOWN: Double
   
-  var PG_UP: Double = js.native
+  var PG_UP: Double
   
-  var RIGHT: Double = js.native
+  var RIGHT: Double
   
-  var UP: Double = js.native
+  var UP: Double
 }
 object LEFT {
   

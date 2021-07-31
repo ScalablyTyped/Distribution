@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsCreateRegistrationTokenForOrgRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsCreateRegistrationTokenForOrgEndpoint extends StObject {
   
-  var parameters: ActionsCreateRegistrationTokenForOrgEndpoint = js.native
+  var parameters: ActionsCreateRegistrationTokenForOrgEndpoint
   
-  var request: ActionsCreateRegistrationTokenForOrgRequestOptions = js.native
+  var request: ActionsCreateRegistrationTokenForOrgRequestOptions
   
-  var response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData] = js.native
+  var response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]
 }
 object ParametersActionsCreateRegistrationTokenForOrgEndpoint {
   

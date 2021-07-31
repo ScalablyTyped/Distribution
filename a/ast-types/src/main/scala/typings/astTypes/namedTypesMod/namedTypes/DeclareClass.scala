@@ -14,32 +14,31 @@ import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.InterfaceDeclaration, 'type'> */
-@js.native
 trait DeclareClass
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with InterfaceDeclarationKind
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var body: ObjectTypeAnnotationKind = js.native
+  var body: ObjectTypeAnnotationKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var `extends`: js.Array[InterfaceExtendsKind] = js.native
+  var `extends`: js.Array[InterfaceExtendsKind]
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.DeclareClass = js.native
+  var `type`: typings.astTypes.astTypesStrings.DeclareClass
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | Null] = js.undefined
 }
 object DeclareClass {
   

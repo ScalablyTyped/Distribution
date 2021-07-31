@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDevicePoolCompatibilityResult extends StObject {
   
   /**
     * Information about compatible devices.
     */
-  var compatibleDevices: js.UndefOr[DevicePoolCompatibilityResults] = js.native
+  var compatibleDevices: js.UndefOr[DevicePoolCompatibilityResults] = js.undefined
   
   /**
     * Information about incompatible devices.
     */
-  var incompatibleDevices: js.UndefOr[DevicePoolCompatibilityResults] = js.native
+  var incompatibleDevices: js.UndefOr[DevicePoolCompatibilityResults] = js.undefined
 }
 object GetDevicePoolCompatibilityResult {
   

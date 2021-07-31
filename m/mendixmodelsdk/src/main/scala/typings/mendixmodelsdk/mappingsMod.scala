@@ -30,7 +30,6 @@ import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IXmlSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mappingsMod {
@@ -434,9 +433,8 @@ object mappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowCall.create")
-      @js.native
-      def create(model: IModel): MappingMicroflowCall = js.native
+      @scala.inline
+      def create(model: IModel): MappingMicroflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MappingMicroflowCall]
       
       /**
         * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
@@ -444,9 +442,8 @@ object mappingsMod {
         * of the parent ObjectMappingElement element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowCall.createIn")
-      @js.native
-      def createIn(container: ObjectMappingElement): MappingMicroflowCall = js.native
+      @scala.inline
+      def createIn(container: ObjectMappingElement): MappingMicroflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MappingMicroflowCall]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowCall.structureTypeName")
@@ -523,9 +520,8 @@ object mappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowParameter.create")
-      @js.native
-      def create(model: IModel): MappingMicroflowParameter = js.native
+      @scala.inline
+      def create(model: IModel): MappingMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MappingMicroflowParameter]
       
       /**
         * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
@@ -533,9 +529,8 @@ object mappingsMod {
         * of the parent MappingMicroflowCall element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowParameter.createIn")
-      @js.native
-      def createIn(container: MappingMicroflowCall): MappingMicroflowParameter = js.native
+      @scala.inline
+      def createIn(container: MappingMicroflowCall): MappingMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MappingMicroflowParameter]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/mappings", "mappings.MappingMicroflowParameter.structureTypeName")
@@ -788,6 +783,8 @@ object mappingsMod {
       * See: {@link https://docs.mendix.com/refguide/mapping-documents relevant section in reference guide}
       */
     @js.native
-    trait IMappingDocument extends IDocument
+    trait IMappingDocument
+      extends StObject
+         with IDocument
   }
 }

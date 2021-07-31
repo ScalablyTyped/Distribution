@@ -2,7 +2,6 @@ package typings.web3EthIban
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,37 +28,34 @@ object mod {
   /* static members */
   object Iban {
     
-    @JSImport("web3-eth-iban", "Iban.createIndirect")
+    @JSImport("web3-eth-iban", "Iban")
     @js.native
-    def createIndirect(options: IndirectOptions): Iban = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("web3-eth-iban", "Iban.fromAddress")
-    @js.native
-    def fromAddress(address: String): Iban = js.native
+    @scala.inline
+    def createIndirect(options: IndirectOptions): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndirect")(options.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @JSImport("web3-eth-iban", "Iban.fromBban")
-    @js.native
-    def fromBban(bban: String): Iban = js.native
+    @scala.inline
+    def fromAddress(address: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @JSImport("web3-eth-iban", "Iban.isValid")
-    @js.native
-    def isValid(iban: String): Boolean = js.native
+    @scala.inline
+    def fromBban(bban: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBban")(bban.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @JSImport("web3-eth-iban", "Iban.toAddress")
-    @js.native
-    def toAddress(iban: String): String = js.native
+    @scala.inline
+    def isValid(iban: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(iban.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("web3-eth-iban", "Iban.toIban")
-    @js.native
-    def toIban(address: String): String = js.native
+    @scala.inline
+    def toAddress(iban: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAddress")(iban.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def toIban(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIban")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait IndirectOptions extends StObject {
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var institution: String = js.native
+    var institution: String
   }
   object IndirectOptions {
     

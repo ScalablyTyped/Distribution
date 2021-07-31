@@ -2,21 +2,19 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proportionMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var dimension: String = js.native
+    var dimension: String
     
-    var field: String = js.native
+    var field: String
     
-    var groupBy: js.UndefOr[js.Array[String]] = js.native
+    var groupBy: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

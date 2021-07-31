@@ -3,19 +3,17 @@ package typings.matrixAppservice
 import typings.matrixAppservice.appServiceRegistrationMod.RegexObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aliases extends StObject {
     
-    var aliases: js.UndefOr[js.Array[RegexObj]] = js.native
+    var aliases: js.UndefOr[js.Array[RegexObj]] = js.undefined
     
-    var rooms: js.UndefOr[js.Array[RegexObj]] = js.native
+    var rooms: js.UndefOr[js.Array[RegexObj]] = js.undefined
     
-    var users: js.UndefOr[js.Array[RegexObj]] = js.native
+    var users: js.UndefOr[js.Array[RegexObj]] = js.undefined
   }
   object Aliases {
     
@@ -57,12 +55,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HomeserverToken extends StObject {
     
-    var homeserverToken: String = js.native
+    var homeserverToken: String
     
-    var httpMaxSizeBytes: js.UndefOr[Double] = js.native
+    var httpMaxSizeBytes: js.UndefOr[Double] = js.undefined
   }
   object HomeserverToken {
     

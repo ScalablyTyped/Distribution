@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTrustRequest extends StObject {
   
   /**
     * Delete a conditional forwarder as part of a DeleteTrustRequest.
     */
-  var DeleteAssociatedConditionalForwarder: js.UndefOr[typings.awsSdk.directoryserviceMod.DeleteAssociatedConditionalForwarder] = js.native
+  var DeleteAssociatedConditionalForwarder: js.UndefOr[typings.awsSdk.directoryserviceMod.DeleteAssociatedConditionalForwarder] = js.undefined
   
   /**
     * The Trust ID of the trust relationship to be deleted.
     */
-  var TrustId: typings.awsSdk.directoryserviceMod.TrustId = js.native
+  var TrustId: typings.awsSdk.directoryserviceMod.TrustId
 }
 object DeleteTrustRequest {
   

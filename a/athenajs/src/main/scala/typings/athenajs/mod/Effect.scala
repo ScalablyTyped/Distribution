@@ -2,7 +2,6 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Effect")
@@ -28,7 +27,7 @@ class Effect protected () extends StObject {
     * This method can be overridden but the super should always be calle first
     */
   def process(ctx: RenderingContext): Boolean = js.native
-  def process(ctx: RenderingContext, fxCtx: js.UndefOr[scala.Nothing], obj: js.Any): Boolean = js.native
+  def process(ctx: RenderingContext, fxCtx: Unit, obj: js.Any): Boolean = js.native
   def process(ctx: RenderingContext, fxCtx: RenderingContext): Boolean = js.native
   def process(ctx: RenderingContext, fxCtx: RenderingContext, obj: js.Any): Boolean = js.native
   

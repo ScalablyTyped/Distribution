@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchJobsResponse extends StObject {
   
   /**
@@ -13,34 +11,34 @@ trait SearchJobsResponse extends StObject {
     * broadened query. These results are always at the end of the jobs list. In particular, a value of 0, or if the field isn't set, all the jobs in the jobs list are from the original
     * (without broadening) query. If this field is non-zero, subsequent requests with offset after this result set should contain all broadened results.
     */
-  var broadenedQueryJobsCount: js.UndefOr[Double] = js.native
+  var broadenedQueryJobsCount: js.UndefOr[Double] = js.undefined
   
   /** An estimation of the number of jobs that match the specified query. This number is not guaranteed to be accurate. For accurate results, see SearchJobsResponse.total_size. */
-  var estimatedTotalSize: js.UndefOr[Double] = js.native
+  var estimatedTotalSize: js.UndefOr[Double] = js.undefined
   
   /** The histogram results that match specified SearchJobsRequest.histogram_facets. */
-  var histogramResults: js.UndefOr[HistogramResults] = js.native
+  var histogramResults: js.UndefOr[HistogramResults] = js.undefined
   
   /**
     * The location filters that the service applied to the specified query. If any filters are lat-lng based, the JobLocation.location_type is
     * JobLocation.LocationType#LOCATION_TYPE_UNSPECIFIED.
     */
-  var locationFilters: js.UndefOr[js.Array[Location]] = js.native
+  var locationFilters: js.UndefOr[js.Array[Location]] = js.undefined
   
   /** The Job entities that match the specified SearchJobsRequest. */
-  var matchingJobs: js.UndefOr[js.Array[MatchingJob]] = js.native
+  var matchingJobs: js.UndefOr[js.Array[MatchingJob]] = js.undefined
   
   /** Additional information for the API invocation, such as the request tracking id. */
-  var metadata: js.UndefOr[ResponseMetadata] = js.native
+  var metadata: js.UndefOr[ResponseMetadata] = js.undefined
   
   /** The token that specifies the starting position of the next page of results. This field is empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The spell checking result, and correction. */
-  var spellCorrection: js.UndefOr[SpellingCorrection] = js.native
+  var spellCorrection: js.UndefOr[SpellingCorrection] = js.undefined
   
   /** The precise result count with limit 100,000. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SearchJobsResponse {
   

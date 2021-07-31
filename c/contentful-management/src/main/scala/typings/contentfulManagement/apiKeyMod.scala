@@ -9,22 +9,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiKeyMod {
   
-  @JSImport("contentful-management/dist/typings/entities/api-key", "wrapApiKey")
+  @JSImport("contentful-management/dist/typings/entities/api-key", JSImport.Namespace)
   @js.native
-  def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/api-key", "wrapApiKeyCollection")
-  @js.native
-  def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps] = js.native
+  @scala.inline
+  def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKey")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
   
-  @js.native
+  @scala.inline
+  def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKeyCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ApiKey, ApiKeyProps]]
+  
   trait ApiKey
-    extends ApiKeyProps
+    extends StObject
+       with ApiKeyProps
        with DefaultElements[ApiKeyProps] {
     
     /**
@@ -43,7 +44,7 @@ object apiKeyMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -64,7 +65,7 @@ object apiKeyMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[ApiKey] = js.native
+    def update(): js.Promise[ApiKey]
   }
   object ApiKey {
     
@@ -94,22 +95,21 @@ object apiKeyMod {
     }
   }
   
-  @js.native
   trait ApiKeyProps extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var environments: js.Array[Sys] = js.native
+    var environments: js.Array[Sys]
     
-    var name: String = js.native
+    var name: String
     
-    var policies: js.UndefOr[js.Array[Action]] = js.native
+    var policies: js.UndefOr[js.Array[Action]] = js.undefined
     
-    var preview_api_key: Sys = js.native
+    var preview_api_key: Sys
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object ApiKeyProps {
     
@@ -164,14 +164,13 @@ object apiKeyMod {
   }
   
   /* Inlined std.Pick<contentful-management.contentful-management/dist/typings/entities/api-key.ApiKeyProps, 'name' | 'environments' | 'description'> */
-  @js.native
   trait CreateApiKeyProps extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var environments: js.Array[Sys] = js.native
+    var environments: js.Array[Sys]
     
-    var name: String = js.native
+    var name: String
   }
   object CreateApiKeyProps {
     

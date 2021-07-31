@@ -2,31 +2,29 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRegistryResponse extends StObject {
   
   /**
     * The description of the registry.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the registry.
     */
-  var RegistryArn: js.UndefOr[string] = js.native
+  var RegistryArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[string] = js.native
+  var RegistryName: js.UndefOr[string] = js.undefined
   
   /**
     * Tags associated with the registry.
     */
-  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.undefined
 }
 object UpdateRegistryResponse {
   

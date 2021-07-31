@@ -2,7 +2,6 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object speedMod {
@@ -18,10 +17,9 @@ object speedMod {
     def add(item: T, repeat: Boolean, time: Double): this.type = js.native
   }
   
-  @js.native
   trait SpeedActor extends StObject {
     
-    def getSpeed(): Double = js.native
+    def getSpeed(): Double
   }
   object SpeedActor {
     

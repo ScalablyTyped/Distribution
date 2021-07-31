@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CompositeEntityCollection")
@@ -13,7 +12,7 @@ class CompositeEntityCollection () extends StObject {
   def addCollection(collection: EntityCollection): Unit = js.native
   def addCollection(collection: EntityCollection, index: Double): Unit = js.native
   
-  var collectionChanged: Event[js.Array[_]] = js.native
+  var collectionChanged: Event[js.Array[js.Any]] = js.native
   
   def computeAvailability(): TimeInterval = js.native
   

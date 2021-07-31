@@ -2,27 +2,25 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var cascade: Boolean = js.native
+  var cascade: Boolean
   
-  var cols: Double = js.native
+  var cols: Double
   
-  def format(values: js.Array[String]): String = js.native
+  def format(values: js.Array[String]): String
   
-  var pickerPrefixCls: String = js.native
+  var pickerPrefixCls: String
   
-  var popupPrefixCls: String = js.native
+  var popupPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var title: String = js.native
+  var title: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object Format {
   

@@ -6,25 +6,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.StatementKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Consequent extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var consequent: js.Array[StatementKind] = js.native
+  var consequent: js.Array[StatementKind]
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var test: ExpressionKind | Null = js.native
+  var test: ExpressionKind | Null
 }
 object Consequent {
   
   @scala.inline
   def apply(consequent: js.Array[StatementKind]): Consequent = {
-    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = null)
     __obj.asInstanceOf[Consequent]
   }
   

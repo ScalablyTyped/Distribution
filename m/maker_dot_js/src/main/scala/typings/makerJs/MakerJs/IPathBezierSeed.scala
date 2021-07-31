@@ -2,24 +2,24 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bezier seed defines the endpoints and control points of a bezier curve.
   */
-@js.native
-trait IPathBezierSeed extends IPathLine {
+trait IPathBezierSeed
+  extends StObject
+     with IPathLine {
   
   /**
     * The bezier control points. One point for quadratic, 2 points for cubic.
     */
-  var controls: js.Array[IPoint] = js.native
+  var controls: js.Array[IPoint]
   
   /**
     * T values of the parent if this is a child that represents a split.
     */
-  var parentRange: js.UndefOr[IBezierRange] = js.native
+  var parentRange: js.UndefOr[IBezierRange] = js.undefined
 }
 object IPathBezierSeed {
   

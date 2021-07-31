@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ec2.GetNetworkInterfacesFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getNetworkInterfacesMod {
   
-  @JSImport("@pulumi/aws/ec2/getNetworkInterfaces", "getNetworkInterfaces")
+  @JSImport("@pulumi/aws/ec2/getNetworkInterfaces", JSImport.Namespace)
   @js.native
-  def getNetworkInterfaces(): js.Promise[GetNetworkInterfacesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterfaces", "getNetworkInterfaces")
-  @js.native
-  def getNetworkInterfaces(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetNetworkInterfacesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterfaces", "getNetworkInterfaces")
-  @js.native
-  def getNetworkInterfaces(args: GetNetworkInterfacesArgs): js.Promise[GetNetworkInterfacesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterfaces", "getNetworkInterfaces")
-  @js.native
-  def getNetworkInterfaces(args: GetNetworkInterfacesArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfacesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getNetworkInterfaces(): js.Promise[GetNetworkInterfacesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")().asInstanceOf[js.Promise[GetNetworkInterfacesResult]]
+  @scala.inline
+  def getNetworkInterfaces(args: Unit, opts: InvokeOptions): js.Promise[GetNetworkInterfacesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfacesResult]]
+  @scala.inline
+  def getNetworkInterfaces(args: GetNetworkInterfacesArgs): js.Promise[GetNetworkInterfacesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNetworkInterfacesResult]]
+  @scala.inline
+  def getNetworkInterfaces(args: GetNetworkInterfacesArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfacesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfacesResult]]
+  
   trait GetNetworkInterfacesArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetNetworkInterfacesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetNetworkInterfacesFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired network interfaces.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetNetworkInterfacesArgs {
     
@@ -65,22 +63,21 @@ object getNetworkInterfacesMod {
     }
   }
   
-  @js.native
   trait GetNetworkInterfacesResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfacesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfacesFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A list of all the network interface ids found. This data source will fail if none are found.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetNetworkInterfacesResult {
     

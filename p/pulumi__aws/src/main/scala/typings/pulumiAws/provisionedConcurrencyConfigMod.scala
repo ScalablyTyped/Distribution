@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provisionedConcurrencyConfigMod {
@@ -43,6 +42,10 @@ object provisionedConcurrencyConfigMod {
   /* static members */
   object ProvisionedConcurrencyConfig {
     
+    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ProvisionedConcurrencyConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object provisionedConcurrencyConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ProvisionedConcurrencyConfig = js.native
-    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProvisionedConcurrencyConfig = js.native
-    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState): ProvisionedConcurrencyConfig = js.native
-    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
     
     /**
       * Returns true if the given object is an instance of ProvisionedConcurrencyConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/provisionedConcurrencyConfig", "ProvisionedConcurrencyConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean]
   }
   
-  @js.native
   trait ProvisionedConcurrencyConfigArgs extends StObject {
     
     /**
       * Name or Amazon Resource Name (ARN) of the Lambda Function.
       */
-    val functionName: Input[String] = js.native
+    val functionName: Input[String]
     
     /**
       * Amount of capacity to allocate. Must be greater than or equal to `1`.
       */
-    val provisionedConcurrentExecutions: Input[Double] = js.native
+    val provisionedConcurrentExecutions: Input[Double]
     
     /**
       * Lambda Function version or Lambda Alias name.
       */
-    val qualifier: Input[String] = js.native
+    val qualifier: Input[String]
   }
   object ProvisionedConcurrencyConfigArgs {
     
@@ -118,23 +115,22 @@ object provisionedConcurrencyConfigMod {
     }
   }
   
-  @js.native
   trait ProvisionedConcurrencyConfigState extends StObject {
     
     /**
       * Name or Amazon Resource Name (ARN) of the Lambda Function.
       */
-    val functionName: js.UndefOr[Input[String]] = js.native
+    val functionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amount of capacity to allocate. Must be greater than or equal to `1`.
       */
-    val provisionedConcurrentExecutions: js.UndefOr[Input[Double]] = js.native
+    val provisionedConcurrentExecutions: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Lambda Function version or Lambda Alias name.
       */
-    val qualifier: js.UndefOr[Input[String]] = js.native
+    val qualifier: js.UndefOr[Input[String]] = js.undefined
   }
   object ProvisionedConcurrencyConfigState {
     

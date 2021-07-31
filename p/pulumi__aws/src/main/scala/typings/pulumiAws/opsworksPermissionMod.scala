@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opsworksPermissionMod {
@@ -53,6 +52,10 @@ object opsworksPermissionMod {
   /* static members */
   object Permission {
     
+    @JSImport("@pulumi/aws/opsworks/permission", "Permission")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Permission resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,55 +65,49 @@ object opsworksPermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Permission = js.native
-    @JSImport("@pulumi/aws/opsworks/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Permission = js.native
-    @JSImport("@pulumi/aws/opsworks/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PermissionState): Permission = js.native
-    @JSImport("@pulumi/aws/opsworks/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
     
     /**
       * Returns true if the given object is an instance of Permission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/permission", "Permission.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean]
   }
   
-  @js.native
   trait PermissionArgs extends StObject {
     
     /**
       * Whether the user is allowed to use SSH to communicate with the instance
       */
-    val allowSsh: js.UndefOr[Input[Boolean]] = js.native
+    val allowSsh: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether the user is allowed to use sudo to elevate privileges
       */
-    val allowSudo: js.UndefOr[Input[Boolean]] = js.native
+    val allowSudo: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
       */
-    val level: js.UndefOr[Input[String]] = js.native
+    val level: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The stack to set the permissions for
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user's IAM ARN to set permissions for
       */
-    val userArn: Input[String] = js.native
+    val userArn: Input[String]
   }
   object PermissionArgs {
     
@@ -152,33 +149,32 @@ object opsworksPermissionMod {
     }
   }
   
-  @js.native
   trait PermissionState extends StObject {
     
     /**
       * Whether the user is allowed to use SSH to communicate with the instance
       */
-    val allowSsh: js.UndefOr[Input[Boolean]] = js.native
+    val allowSsh: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether the user is allowed to use sudo to elevate privileges
       */
-    val allowSudo: js.UndefOr[Input[Boolean]] = js.native
+    val allowSudo: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
       */
-    val level: js.UndefOr[Input[String]] = js.native
+    val level: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The stack to set the permissions for
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user's IAM ARN to set permissions for
       */
-    val userArn: js.UndefOr[Input[String]] = js.native
+    val userArn: js.UndefOr[Input[String]] = js.undefined
   }
   object PermissionState {
     

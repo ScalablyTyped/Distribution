@@ -8,23 +8,21 @@ import typings.awsSdkClientPinpointBrowser.typesPublicEndpointMod.UnmarshalledPu
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventsBatchMod {
   
-  @js.native
   trait EventsBatch extends StObject {
     
     /**
       * The PublicEndpoint attached to the EndpointId from the request.
       */
-    var Endpoint: js.UndefOr[PublicEndpoint] = js.native
+    var Endpoint: js.UndefOr[PublicEndpoint] = js.undefined
     
     /**
       * An object that contains a set of events associated with the endpoint.
       */
-    var Events: js.UndefOr[StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])] = js.native
+    var Events: js.UndefOr[StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])] = js.undefined
   }
   object EventsBatch {
     
@@ -51,20 +49,21 @@ object typesEventsBatchMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEventsBatch extends EventsBatch {
+  trait UnmarshalledEventsBatch
+    extends StObject
+       with EventsBatch {
     
     /**
       * The PublicEndpoint attached to the EndpointId from the request.
       */
     @JSName("Endpoint")
-    var Endpoint_UnmarshalledEventsBatch: js.UndefOr[UnmarshalledPublicEndpoint] = js.native
+    var Endpoint_UnmarshalledEventsBatch: js.UndefOr[UnmarshalledPublicEndpoint] = js.undefined
     
     /**
       * An object that contains a set of events associated with the endpoint.
       */
     @JSName("Events")
-    var Events_UnmarshalledEventsBatch: js.UndefOr[StringDictionary[UnmarshalledEvent]] = js.native
+    var Events_UnmarshalledEventsBatch: js.UndefOr[StringDictionary[UnmarshalledEvent]] = js.undefined
   }
   object UnmarshalledEventsBatch {
     

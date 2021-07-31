@@ -2,23 +2,21 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfigurationTableCopy extends StObject {
   
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
-  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
-  var destinationTable: js.UndefOr[TableReference] = js.native
+  var destinationTable: js.UndefOr[TableReference] = js.undefined
   
-  var sourceTable: js.UndefOr[TableReference] = js.native
+  var sourceTable: js.UndefOr[TableReference] = js.undefined
   
-  var sourceTables: js.UndefOr[js.Array[TableReference]] = js.native
+  var sourceTables: js.UndefOr[js.Array[TableReference]] = js.undefined
   
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object JobConfigurationTableCopy {
   

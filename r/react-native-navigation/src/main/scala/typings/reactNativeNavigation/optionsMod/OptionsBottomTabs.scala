@@ -11,21 +11,19 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.showWhenActive
 import typings.reactNativeNavigation.reactNativeNavigationStrings.together
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsBottomTabs extends StObject {
   
   /**
     * Enable animations when toggling visibility
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set a background color for the bottom tabs
     */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Control the Bottom Tabs blur style
@@ -33,76 +31,76 @@ trait OptionsBottomTabs extends StObject {
     * @requires translucent: true
     * @default 'default'
     */
-  var barStyle: js.UndefOr[default | black] = js.native
+  var barStyle: js.UndefOr[default | black] = js.undefined
   
   /**
     * Switch to another screen within the bottom tabs via screen name
     */
-  var currentTabId: js.UndefOr[String] = js.native
+  var currentTabId: js.UndefOr[String] = js.undefined
   
   /**
     * Switch to another screen within the bottom tabs via index (starting from 0)
     */
-  var currentTabIndex: js.UndefOr[Double] = js.native
+  var currentTabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Draw screen component under the tab bar
     */
-  var drawBehind: js.UndefOr[Boolean] = js.native
+  var drawBehind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the elevation of the Bottom Tabs in dp
     * #### (Android specific)
     */
-  var elevation: js.UndefOr[AndroidDensityNumber] = js.native
+  var elevation: js.UndefOr[AndroidDensityNumber] = js.undefined
   
   /**
     * Hides the BottomTabs on scroll to increase the amount of content visible to the user.
     * The options requires that the scrollable view will be the root view of the screen and that it specifies `nestedScrollEnabled: true`.
     * #### (Android specific)
     */
-  var hideOnScroll: js.UndefOr[Boolean] = js.native
+  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Hide the top line of the Tab Bar
     * #### (iOS specific)
     */
-  var hideShadow: js.UndefOr[Boolean] = js.native
+  var hideShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use large icons when possible, even when three tabs without titles are displayed
     * #### (android specific)
     * @default false
     */
-  var preferLargeIcons: js.UndefOr[Boolean] = js.native
+  var preferLargeIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set when tabs are attached to hierarchy consequently when the
     * RootView's constructor is called.
     */
-  var tabsAttachMode: js.UndefOr[together | afterInitialTab | onSwitchToTab] = js.native
+  var tabsAttachMode: js.UndefOr[together | afterInitialTab | onSwitchToTab] = js.undefined
   
   /**
     * Set a testID to reference the bottom tabs
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Control the text display mode below the tab icon
     * #### (Android specific)
     */
-  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce] = js.native
+  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce] = js.undefined
   
   /**
     * Allows the Bottom Tabs to be translucent (blurred)
     * #### (iOS specific)
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show or hide the bottom tabs
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsBottomTabs {
   

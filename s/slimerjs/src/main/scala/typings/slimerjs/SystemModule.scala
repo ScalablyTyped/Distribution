@@ -4,33 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.slimerjs.anon.Architecture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemModule extends StObject {
   
-  var args: js.Array[String] = js.native
+  var args: js.Array[String]
   
-  var env: StringDictionary[String] = js.native
+  var env: StringDictionary[String]
   
-  var os: Architecture = js.native
+  var os: Architecture
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var platform: String = js.native
+  var platform: String
   
-  var standarderr: Std = js.native
+  var standarderr: Std
   
-  var standardin: Std = js.native
+  var standardin: Std
   
-  var standardout: Std = js.native
+  var standardout: Std
   
-  var stderr: Std = js.native
+  var stderr: Std
   
-  var stdin: Std = js.native
+  var stdin: Std
   
-  var stdout: Std = js.native
+  var stdout: Std
 }
 object SystemModule {
   

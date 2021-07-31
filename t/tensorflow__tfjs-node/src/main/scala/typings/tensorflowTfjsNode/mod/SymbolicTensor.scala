@@ -6,7 +6,6 @@ import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "SymbolicTensor")
@@ -47,7 +46,7 @@ class SymbolicTensor protected ()
     sourceLayer: Layer,
     inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
     callArgs: Kwargs,
-    name: js.UndefOr[scala.Nothing],
+    name: String,
     outputTensorIndex: Double
   ) = this()
   def this(
@@ -56,7 +55,7 @@ class SymbolicTensor protected ()
     sourceLayer: Layer,
     inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
     callArgs: Kwargs,
-    name: String,
+    name: Unit,
     outputTensorIndex: Double
   ) = this()
 }

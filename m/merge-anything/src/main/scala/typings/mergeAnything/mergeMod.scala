@@ -2,24 +2,24 @@ package typings.mergeAnything
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeMod {
   
-  @JSImport("merge-anything/types/merge", JSImport.Default)
+  @JSImport("merge-anything/types/merge", JSImport.Namespace)
   @js.native
-  def default(origin: js.Any, newComers: js.Any*): js.Any = js.native
-  @JSImport("merge-anything/types/merge", JSImport.Default)
-  @js.native
-  def default(origin: IConfig, newComers: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(origin: js.Any, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default(origin: IConfig, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Extension = js.Function2[/* param1 */ js.Any, /* param2 */ js.Any, js.Any]
   
-  @js.native
   trait IConfig extends StObject {
     
-    var extensions: js.Array[Extension] = js.native
+    var extensions: js.Array[Extension]
   }
   object IConfig {
     

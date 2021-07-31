@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExclusionsRequest extends StObject {
   
   /**
     * The list of ARNs that specify the exclusions that you want to describe.
     */
-  var exclusionArns: BatchDescribeExclusionsArnList = js.native
+  var exclusionArns: BatchDescribeExclusionsArnList
   
   /**
     * The locale into which you want to translate the exclusion's title, description, and recommendation.
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
 }
 object DescribeExclusionsRequest {
   

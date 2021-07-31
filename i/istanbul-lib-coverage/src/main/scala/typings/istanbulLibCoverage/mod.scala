@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("istanbul-lib-coverage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("istanbul-lib-coverage", "CoverageMap")
   @js.native
@@ -60,16 +63,30 @@ object mod {
   
   @JSImport("istanbul-lib-coverage", "FileCoverage")
   @js.native
-  class FileCoverage protected () extends FileCoverageData {
+  class FileCoverage protected ()
+    extends StObject
+       with FileCoverageData {
     def this(data: String) = this()
     def this(data: FileCoverage) = this()
     def this(data: FileCoverageData) = this()
+    
+    /* CompleteClass */
+    var b: StringDictionary[js.Array[Double]] = js.native
+    
+    /* CompleteClass */
+    var branchMap: StringDictionary[BranchMapping] = js.native
     
     def computeBranchTotals(): Totals = js.native
     
     def computeSimpleTotals(): Totals = js.native
     
     var data: FileCoverageData = js.native
+    
+    /* CompleteClass */
+    var f: StringDictionary[Double] = js.native
+    
+    /* CompleteClass */
+    var fnMap: StringDictionary[FunctionMapping] = js.native
     
     def getBranchCoverageByLine(): NumberDictionary[Coverage] = js.native
     
@@ -79,7 +96,16 @@ object mod {
     
     def merge(other: FileCoverageData): Unit = js.native
     
+    /* CompleteClass */
+    var path: String = js.native
+    
     def resetHits(): Unit = js.native
+    
+    /* CompleteClass */
+    var s: StringDictionary[Double] = js.native
+    
+    /* CompleteClass */
+    var statementMap: StringDictionary[Range] = js.native
     
     def toJSON(): js.Object = js.native
     
@@ -99,46 +125,36 @@ object mod {
     def FileCoverage_=(x: FileCoverage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileCoverage")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("istanbul-lib-coverage", "createCoverageMap")
-  @js.native
-  def createCoverageMap(): CoverageMap = js.native
-  @JSImport("istanbul-lib-coverage", "createCoverageMap")
-  @js.native
-  def createCoverageMap(data: CoverageMap): CoverageMap = js.native
-  @JSImport("istanbul-lib-coverage", "createCoverageMap")
-  @js.native
-  def createCoverageMap(data: CoverageMapData): CoverageMap = js.native
+  @scala.inline
+  def createCoverageMap(): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")().asInstanceOf[CoverageMap]
+  @scala.inline
+  def createCoverageMap(data: CoverageMap): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
+  @scala.inline
+  def createCoverageMap(data: CoverageMapData): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
   
-  @JSImport("istanbul-lib-coverage", "createCoverageSummary")
-  @js.native
-  def createCoverageSummary(): CoverageSummary = js.native
-  @JSImport("istanbul-lib-coverage", "createCoverageSummary")
-  @js.native
-  def createCoverageSummary(obj: CoverageSummary): CoverageSummary = js.native
-  @JSImport("istanbul-lib-coverage", "createCoverageSummary")
-  @js.native
-  def createCoverageSummary(obj: CoverageSummaryData): CoverageSummary = js.native
+  @scala.inline
+  def createCoverageSummary(): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")().asInstanceOf[CoverageSummary]
+  @scala.inline
+  def createCoverageSummary(obj: CoverageSummary): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
+  @scala.inline
+  def createCoverageSummary(obj: CoverageSummaryData): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
   
-  @JSImport("istanbul-lib-coverage", "createFileCoverage")
-  @js.native
-  def createFileCoverage(pathOrObject: String): FileCoverage = js.native
-  @JSImport("istanbul-lib-coverage", "createFileCoverage")
-  @js.native
-  def createFileCoverage(pathOrObject: FileCoverage): FileCoverage = js.native
-  @JSImport("istanbul-lib-coverage", "createFileCoverage")
-  @js.native
-  def createFileCoverage(pathOrObject: FileCoverageData): FileCoverage = js.native
+  @scala.inline
+  def createFileCoverage(pathOrObject: String): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
+  @scala.inline
+  def createFileCoverage(pathOrObject: FileCoverage): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
+  @scala.inline
+  def createFileCoverage(pathOrObject: FileCoverageData): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
   
-  @js.native
   trait BranchMapping extends StObject {
     
-    var line: Double = js.native
+    var line: Double
     
-    var loc: Range = js.native
+    var loc: Range
     
-    var locations: js.Array[Range] = js.native
+    var locations: js.Array[Range]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BranchMapping {
     
@@ -169,14 +185,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Coverage extends StObject {
     
-    var coverage: Double = js.native
+    var coverage: Double
     
-    var covered: Double = js.native
+    var covered: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Coverage {
     
@@ -202,16 +217,15 @@ object mod {
   
   type CoverageMapData = StringDictionary[FileCoverage | FileCoverageData]
   
-  @js.native
   trait CoverageSummaryData extends StObject {
     
-    var branches: Totals = js.native
+    var branches: Totals
     
-    var functions: Totals = js.native
+    var functions: Totals
     
-    var lines: Totals = js.native
+    var lines: Totals
     
-    var statements: Totals = js.native
+    var statements: Totals
   }
   object CoverageSummaryData {
     
@@ -238,22 +252,21 @@ object mod {
     }
   }
   
-  @js.native
   trait FileCoverageData extends StObject {
     
-    var b: StringDictionary[js.Array[Double]] = js.native
+    var b: StringDictionary[js.Array[Double]]
     
-    var branchMap: StringDictionary[BranchMapping] = js.native
+    var branchMap: StringDictionary[BranchMapping]
     
-    var f: StringDictionary[Double] = js.native
+    var f: StringDictionary[Double]
     
-    var fnMap: StringDictionary[FunctionMapping] = js.native
+    var fnMap: StringDictionary[FunctionMapping]
     
-    var path: String = js.native
+    var path: String
     
-    var s: StringDictionary[Double] = js.native
+    var s: StringDictionary[Double]
     
-    var statementMap: StringDictionary[Range] = js.native
+    var statementMap: StringDictionary[Range]
   }
   object FileCoverageData {
     
@@ -297,16 +310,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FunctionMapping extends StObject {
     
-    var decl: Range = js.native
+    var decl: Range
     
-    var line: Double = js.native
+    var line: Double
     
-    var loc: Range = js.native
+    var loc: Range
     
-    var name: String = js.native
+    var name: String
   }
   object FunctionMapping {
     
@@ -333,12 +345,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Location {
     
@@ -359,12 +370,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var end: Location = js.native
+    var end: Location
     
-    var start: Location = js.native
+    var start: Location
   }
   object Range {
     
@@ -385,16 +395,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Totals extends StObject {
     
-    var covered: Double = js.native
+    var covered: Double
     
-    var pct: Double = js.native
+    var pct: Double
     
-    var skipped: Double = js.native
+    var skipped: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Totals {
     

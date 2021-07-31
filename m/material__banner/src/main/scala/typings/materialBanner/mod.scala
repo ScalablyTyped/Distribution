@@ -4,7 +4,6 @@ import typings.materialBanner.anon.PartialMDCBannerAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,28 +13,31 @@ object mod {
   object CloseReason extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialBanner.constantsMod.CloseReason with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialBanner.constantsMod.CloseReason & Double] = js.native
     
-    /* 0 */ val PRIMARY: typings.materialBanner.constantsMod.CloseReason.PRIMARY with Double = js.native
+    /* 0 */ val PRIMARY: typings.materialBanner.constantsMod.CloseReason.PRIMARY & Double = js.native
     
-    /* 1 */ val SECONDARY: typings.materialBanner.constantsMod.CloseReason.SECONDARY with Double = js.native
+    /* 1 */ val SECONDARY: typings.materialBanner.constantsMod.CloseReason.SECONDARY & Double = js.native
     
-    /* 2 */ val UNSPECIFIED: typings.materialBanner.constantsMod.CloseReason.UNSPECIFIED with Double = js.native
+    /* 2 */ val UNSPECIFIED: typings.materialBanner.constantsMod.CloseReason.UNSPECIFIED & Double = js.native
   }
   
   @JSImport("@material/banner", "MDCBanner")
   @js.native
   class MDCBanner protected ()
     extends typings.materialBanner.componentMod.MDCBanner {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialBanner.foundationMod.MDCBannerFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCBanner {
     
-    @JSImport("@material/banner", "MDCBanner.attachTo")
+    @JSImport("@material/banner", "MDCBanner")
     @js.native
-    def attachTo(root: Element): typings.materialBanner.componentMod.MDCBanner = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialBanner.componentMod.MDCBanner = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialBanner.componentMod.MDCBanner]
   }
   
   @JSImport("@material/banner", "MDCBannerFoundation")

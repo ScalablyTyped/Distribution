@@ -9,15 +9,14 @@ import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUni
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidPathExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidPathExceptionDetails> * / any */ @js.native
-  trait InvalidPathException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidPathExceptionDetails> * / any */ trait InvalidPathException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with GetDifferencesExceptionsUnion
        with GetFileExceptionsUnion
        with GetFolderExceptionsUnion
@@ -25,13 +24,13 @@ object typesInvalidPathExceptionMod {
        with PostCommentForPullRequestExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException
   }
   object InvalidPathException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException): InvalidPathException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidPathException = {
+      val __obj = js.Dynamic.literal(name = "InvalidPathException")
       __obj.asInstanceOf[InvalidPathException]
     }
     
@@ -43,6 +42,5 @@ object typesInvalidPathExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidPathExceptionDetails extends StObject
 }

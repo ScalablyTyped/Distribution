@@ -2,16 +2,14 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnalyzerResponse extends StObject {
   
   /**
     * The ARN of the analyzer that was created by the request.
     */
-  var arn: js.UndefOr[AnalyzerArn] = js.native
+  var arn: js.UndefOr[AnalyzerArn] = js.undefined
 }
 object CreateAnalyzerResponse {
   

@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an Automation SAFEARRAY
   */
-@js.native
 trait SafeArray[T] extends StObject {
   
-  var SafeArray_typekey: SafeArray[T] = js.native
+  var SafeArray_typekey: SafeArray[T]
 }
 object SafeArray {
   
@@ -22,7 +20,7 @@ object SafeArray {
   }
   
   @scala.inline
-  implicit class SafeArrayMutableBuilder[Self <: SafeArray[_], T] (val x: Self with SafeArray[T]) extends AnyVal {
+  implicit class SafeArrayMutableBuilder[Self <: SafeArray[?], T] (val x: Self & SafeArray[T]) extends AnyVal {
     
     @scala.inline
     def setSafeArray_typekey(value: SafeArray[T]): Self = StObject.set(x, "SafeArray_typekey", value.asInstanceOf[js.Any])

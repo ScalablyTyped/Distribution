@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType")
@@ -38,9 +37,8 @@ object BooleanAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -51,9 +49,8 @@ object BooleanAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -61,9 +58,8 @@ object BooleanAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.createInAttributeUnderType")
-  @js.native
-  def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = js.native
+  @scala.inline
+  def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -74,9 +70,8 @@ object BooleanAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.createInEntityKeyPartUnderType")
-  @js.native
-  def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = js.native
+  @scala.inline
+  def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -87,9 +82,8 @@ object BooleanAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.createInODataKeyPartUnderType")
-  @js.native
-  def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = js.native
+  @scala.inline
+  def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BooleanAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BooleanAttributeType.structureTypeName")

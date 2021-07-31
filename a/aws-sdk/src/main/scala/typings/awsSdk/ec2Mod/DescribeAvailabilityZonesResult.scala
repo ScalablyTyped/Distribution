@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAvailabilityZonesResult extends StObject {
   
   /**
     * Information about the Availability Zones, Local Zones, and Wavelength Zones.
     */
-  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
 }
 object DescribeAvailabilityZonesResult {
   

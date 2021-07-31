@@ -6,24 +6,25 @@ import typings.arcgisJsApi.esri.ChartMediaInfoValueSeriesConstructor
 import typings.arcgisJsApi.esri.ChartMediaInfoValueSeriesProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartMediaInfoValueSeriesMod extends Shortcut {
   
   @JSImport("esri/popup/content/support/ChartMediaInfoValueSeries", JSImport.Namespace)
   @js.native
-  val ^ : ChartMediaInfoValueSeriesConstructor = js.native
+  val ^ : js.Object & ChartMediaInfoValueSeriesConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/content/support/ChartMediaInfoValueSeries", JSImport.Namespace)
   @js.native
-  class Class () extends ChartMediaInfoValueSeries {
+  class Class ()
+    extends StObject
+       with ChartMediaInfoValueSeries {
     def this(properties: ChartMediaInfoValueSeriesProperties) = this()
   }
   
-  type _To = ChartMediaInfoValueSeriesConstructor
+  type _To = js.Object & ChartMediaInfoValueSeriesConstructor
   
   /* This means you don't have to write `^`, but can instead just say `chartMediaInfoValueSeriesMod.foo` */
-  override def _to: ChartMediaInfoValueSeriesConstructor = ^
+  override def _to: js.Object & ChartMediaInfoValueSeriesConstructor = ^
 }

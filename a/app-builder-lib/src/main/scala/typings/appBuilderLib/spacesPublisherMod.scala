@@ -5,7 +5,6 @@ import typings.builderUtilRuntime.publishOptionsMod.SpacesOptions
 import typings.electronPublish.mod.PublishContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spacesPublisherMod {
@@ -18,12 +17,14 @@ object spacesPublisherMod {
   /* static members */
   object default {
     
-    @JSImport("app-builder-lib/out/publish/s3/spacesPublisher", "default.checkAndResolveOptions")
+    @JSImport("app-builder-lib/out/publish/s3/spacesPublisher", JSImport.Default)
     @js.native
-    def checkAndResolveOptions(options: SpacesOptions, channelFromAppVersion: String, errorIfCannot: Boolean): js.Promise[Unit] = js.native
-    @JSImport("app-builder-lib/out/publish/s3/spacesPublisher", "default.checkAndResolveOptions")
-    @js.native
-    def checkAndResolveOptions(options: SpacesOptions, channelFromAppVersion: Null, errorIfCannot: Boolean): js.Promise[Unit] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def checkAndResolveOptions(options: SpacesOptions, channelFromAppVersion: String, errorIfCannot: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndResolveOptions")(options.asInstanceOf[js.Any], channelFromAppVersion.asInstanceOf[js.Any], errorIfCannot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def checkAndResolveOptions(options: SpacesOptions, channelFromAppVersion: Null, errorIfCannot: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndResolveOptions")(options.asInstanceOf[js.Any], channelFromAppVersion.asInstanceOf[js.Any], errorIfCannot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @js.native

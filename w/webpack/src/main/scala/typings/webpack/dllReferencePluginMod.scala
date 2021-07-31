@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.anon.BuildMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dllReferencePluginMod {
@@ -34,23 +33,22 @@ object dllReferencePluginMod {
   	 */
   StringDictionary[BuildMeta]
   
-  @js.native
   trait DllReferencePluginOptionsManifest extends StObject {
     
     /**
     	 * The mappings from request to module info
     	 */
-    var content: DllReferencePluginOptionsContent = js.native
+    var content: DllReferencePluginOptionsContent
     
     /**
     	 * The name where the dll is exposed (external name)
     	 */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
     	 * The type how the dll is exposed (external type)
     	 */
-    var `type`: js.UndefOr[DllReferencePluginOptionsSourceType] = js.native
+    var `type`: js.UndefOr[DllReferencePluginOptionsSourceType] = js.undefined
   }
   object DllReferencePluginOptionsManifest {
     

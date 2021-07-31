@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResult extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * List of tags returned by the ListTagsForResource operation.
     */
-  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.undefined
 }
 object ListTagsForResourceResult {
   

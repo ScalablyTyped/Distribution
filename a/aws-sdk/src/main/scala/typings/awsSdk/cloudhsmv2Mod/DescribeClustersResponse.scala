@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClustersResponse extends StObject {
   
   /**
     * A list of clusters.
     */
-  var Clusters: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Clusters] = js.native
+  var Clusters: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Clusters] = js.undefined
   
   /**
     * An opaque string that indicates that the response contains only a subset of clusters. Use this value in a subsequent DescribeClusters request to get more clusters.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.undefined
 }
 object DescribeClustersResponse {
   

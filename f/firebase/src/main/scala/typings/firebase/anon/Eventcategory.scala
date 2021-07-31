@@ -3,20 +3,19 @@ package typings.firebase.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eventcategory
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var event_category: js.UndefOr[String] = js.native
+  var event_category: js.UndefOr[String] = js.undefined
   
-  var event_label: js.UndefOr[String] = js.native
+  var event_label: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object Eventcategory {
   

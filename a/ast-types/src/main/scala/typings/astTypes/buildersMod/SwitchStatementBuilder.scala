@@ -6,7 +6,6 @@ import typings.astTypes.kindsMod.SwitchCaseKind
 import typings.astTypes.namedTypesMod.namedTypes.SwitchStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePresentationRequest extends StObject {
   
   /** A list of updates to apply to the presentation. */
-  var requests: js.UndefOr[js.Array[Request]] = js.native
+  var requests: js.UndefOr[js.Array[Request]] = js.undefined
   
   /** Provides control over how write requests are executed. */
-  var writeControl: js.UndefOr[WriteControl] = js.native
+  var writeControl: js.UndefOr[WriteControl] = js.undefined
 }
 object BatchUpdatePresentationRequest {
   

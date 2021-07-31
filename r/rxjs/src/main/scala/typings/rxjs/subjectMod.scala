@@ -6,7 +6,6 @@ import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.SubscriptionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subjectMod {
@@ -15,7 +14,7 @@ object subjectMod {
   @js.native
   class AnonymousSubject[T] () extends Subject[T] {
     def this(destination: Observer[T]) = this()
-    def this(destination: js.UndefOr[scala.Nothing], source: Observable[T]) = this()
+    def this(destination: Unit, source: Observable[T]) = this()
     def this(destination: Observer[T], source: Observable[T]) = this()
     
     var destination: js.UndefOr[Observer[T]] = js.native
@@ -35,6 +34,9 @@ object subjectMod {
       */
     def asObservable(): Observable[T] = js.native
     
+    /* CompleteClass */
+    override val closed: Boolean = js.native
+    
     def complete(): Unit = js.native
     
     def error(err: js.Any): Unit = js.native
@@ -49,6 +51,9 @@ object subjectMod {
     var observers: js.Array[Observer[T]] = js.native
     
     var thrownError: js.Any = js.native
+    
+    /* CompleteClass */
+    override def unsubscribe(): Unit = js.native
   }
   /* static members */
   object Subject {

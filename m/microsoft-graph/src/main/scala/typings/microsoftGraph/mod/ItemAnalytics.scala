@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemAnalytics extends Entity {
+trait ItemAnalytics
+  extends StObject
+     with Entity {
   
-  var allTime: js.UndefOr[NullableOption[ItemActivityStat]] = js.native
+  var allTime: js.UndefOr[NullableOption[ItemActivityStat]] = js.undefined
   
-  var itemActivityStats: js.UndefOr[NullableOption[js.Array[ItemActivityStat]]] = js.native
+  var itemActivityStats: js.UndefOr[NullableOption[js.Array[ItemActivityStat]]] = js.undefined
   
-  var lastSevenDays: js.UndefOr[NullableOption[ItemActivityStat]] = js.native
+  var lastSevenDays: js.UndefOr[NullableOption[ItemActivityStat]] = js.undefined
 }
 object ItemAnalytics {
   

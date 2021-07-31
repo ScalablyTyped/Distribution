@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boundary extends StObject {
   
   /** The boundary of the location as a set of loops containing pairs of latitude, longitude coordinates. */
-  var boundary: js.UndefOr[js.Array[String]] = js.native
+  var boundary: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER */
-  var cachePolicy: js.UndefOr[String] = js.native
+  var cachePolicy: js.UndefOr[String] = js.undefined
   
   /** The country code of the location. */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** The latitude of the location. */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /** The longitude of the location. */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   /** The type of map that should be used for this location. EX: HYBRID, ROADMAP, SATELLITE, TERRAIN */
-  var mapType: js.UndefOr[String] = js.native
+  var mapType: js.UndefOr[String] = js.undefined
   
   /** The viewport for showing this location. This is a latitude, longitude rectangle. */
-  var viewport: js.UndefOr[Hi] = js.native
+  var viewport: js.UndefOr[Hi] = js.undefined
   
   /**
     * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) to 21+ (down to individual buildings). See:
     * https: //developers.google.com/maps/documentation/staticmaps/#Zoomlevels
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object Boundary {
   

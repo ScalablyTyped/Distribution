@@ -2,15 +2,13 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Long extends StObject {
   
-  var long: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var long: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
-  var short: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var short: js.UndefOr[js.Tuple2[String, String]] = js.undefined
 }
 object Long {
   

@@ -10,9 +10,9 @@ A webpack plugin to inject react typescript docgen information.
 | ------------------ | :-------------: |
 | Full name          | react-docgen-typescript-plugin |
 | Keywords           | react, docgen, typescript, webpack, plugin |
-| # releases         | 28 |
+| # releases         | 45 |
 | # dependents       | 5 |
-| # downloads        | 2409902 |
+| # downloads        | 12155193 |
 | # stars            | 0 |
 
 ## Links

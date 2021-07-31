@@ -3,19 +3,17 @@ package typings.mssql.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResult[T] extends StObject {
   
-  var output: StringDictionary[js.Any] = js.native
+  var output: StringDictionary[js.Any]
   
-  var recordset: IRecordSet[T] = js.native
+  var recordset: IRecordSet[T]
   
-  var recordsets: js.Array[IRecordSet[T]] = js.native
+  var recordsets: js.Array[IRecordSet[T]]
   
-  var rowsAffected: js.Array[Double] = js.native
+  var rowsAffected: js.Array[Double]
 }
 object IResult {
   
@@ -31,7 +29,7 @@ object IResult {
   }
   
   @scala.inline
-  implicit class IResultMutableBuilder[Self <: IResult[_], T] (val x: Self with IResult[T]) extends AnyVal {
+  implicit class IResultMutableBuilder[Self <: IResult[?], T] (val x: Self & IResult[T]) extends AnyVal {
     
     @scala.inline
     def setOutput(value: StringDictionary[js.Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])

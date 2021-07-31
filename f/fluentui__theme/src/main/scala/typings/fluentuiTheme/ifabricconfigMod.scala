@@ -3,23 +3,21 @@ package typings.fluentuiTheme
 import typings.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ifabricconfigMod {
   
-  @js.native
   trait IFabricConfig extends StObject {
     
     /**
       * An override for where the fonts should be downloaded from.
       */
-    var fontBaseUrl: js.UndefOr[String] = js.native
+    var fontBaseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The mergeStyles stylesheet config.
       */
-    var mergeStyles: js.UndefOr[IStyleSheetConfig] = js.native
+    var mergeStyles: js.UndefOr[IStyleSheetConfig] = js.undefined
   }
   object IFabricConfig {
     

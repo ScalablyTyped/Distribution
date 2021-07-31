@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.ModalViewOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.ModalView")
 @js.native
 class ModalView protected ()
-  extends typings.kendoUi.kendo.mobile.ui.ModalView {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.ModalView {
   def this(element: Element) = this()
   def this(element: Element, options: ModalViewOptions) = this()
 }
@@ -21,9 +21,8 @@ object ModalView {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.ModalView.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.ModalView = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.ModalView = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.ModalView]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.ModalView.fn")

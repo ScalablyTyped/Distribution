@@ -9,7 +9,6 @@ import typings.algoliasearchHelper.anon.ResultsState
 import typings.events.mod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait DerivedHelper extends EventEmitter {
   
   def getModifiedState(): SearchParameters = js.native
   
-  var lastResults: SearchResults[_] | Null = js.native
+  var lastResults: SearchResults[js.Any] | Null = js.native
   
   @JSName("on")
   def on_error(event: error, cb: js.Function1[/* res */ Error, Unit]): this.type = js.native

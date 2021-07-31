@@ -2,19 +2,17 @@ package typings.aliOss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headers extends StObject {
   
-  var headers: js.Object = js.native
+  var headers: js.Object
   
-  var rt: Double = js.native
+  var rt: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var status: Double = js.native
+  var status: Double
 }
 object Headers {
   

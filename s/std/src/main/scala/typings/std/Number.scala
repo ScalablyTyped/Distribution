@@ -3,7 +3,6 @@ package typings.std
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,11 +22,11 @@ trait Number extends StObject {
   def toFixed(): java.lang.String = js.native
   def toFixed(fractionDigits: Double): java.lang.String = js.native
   
-  def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: java.lang.String): java.lang.String = js.native
   def toLocaleString(locales: java.lang.String, options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String]): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String], options: NumberFormatOptions): java.lang.String = js.native
+  def toLocaleString(locales: Unit, options: NumberFormatOptions): java.lang.String = js.native
   
   /**
     * Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.

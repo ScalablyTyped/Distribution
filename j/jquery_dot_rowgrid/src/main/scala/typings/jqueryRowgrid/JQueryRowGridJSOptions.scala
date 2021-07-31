@@ -2,17 +2,15 @@ package typings.jqueryRowgrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryRowGridJSOptions extends StObject {
   
-  var itemSelector: String = js.native
+  var itemSelector: String
   
-  var maxMargin: js.UndefOr[Double] = js.native
+  var maxMargin: js.UndefOr[Double] = js.undefined
   
-  var minMargin: js.UndefOr[Double] = js.native
+  var minMargin: js.UndefOr[Double] = js.undefined
 }
 object JQueryRowGridJSOptions {
   

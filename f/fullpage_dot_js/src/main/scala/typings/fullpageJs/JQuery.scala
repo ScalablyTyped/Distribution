@@ -2,14 +2,27 @@ package typings.fullpageJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def fullpage(): js.Any = js.native
-  def fullpage(options: FullPageJsOptions): js.Any = js.native
+  def fullpage(): js.Any
+  def fullpage(options: FullPageJsOptions): js.Any
   @JSName("fullpage")
-  var fullpage_Original: FullPageJs = js.native
+  var fullpage_Original: FullPageJs
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(fullpage: FullPageJs): JQuery = {
+    val __obj = js.Dynamic.literal(fullpage = fullpage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFullpage(value: FullPageJs): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
+  }
 }

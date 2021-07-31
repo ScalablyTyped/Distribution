@@ -5,10 +5,8 @@ import typings.reactNative.reactNativeStrings.auto
 import typings.reactNative.reactNativeStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollViewPropsAndroid extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ScrollViewPropsAndroid extends StObject {
     * unnecessary overdraw. This is an advanced optimization that is not
     * needed in the general case.
     */
-  var endFillColor: js.UndefOr[ColorValue] = js.native
+  var endFillColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Fades out the edges of the the scroll content.
@@ -30,12 +28,12 @@ trait ScrollViewPropsAndroid extends StObject {
     * The default value is 0.
     * @platform android
     */
-  var fadingEdgeLength: js.UndefOr[Double] = js.native
+  var fadingEdgeLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables nested scrolling for Android API level 21+. Nested scrolling is supported by default on iOS.
     */
-  var nestedScrollEnabled: js.UndefOr[Boolean] = js.native
+  var nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to override default value of overScroll mode.
@@ -44,12 +42,12 @@ trait ScrollViewPropsAndroid extends StObject {
     *   - 'always' - Always allow a user to over-scroll this view.
     *   - 'never' - Never allow a user to over-scroll this view.
     */
-  var overScrollMode: js.UndefOr[auto | always | never] = js.native
+  var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
   
   /**
     * Causes the scrollbars not to turn transparent when they are not in use. The default value is false.
     */
-  var persistentScrollbar: js.UndefOr[Boolean] = js.native
+  var persistentScrollbar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Tag used to log scroll performance on this scroll view. Will force
@@ -58,7 +56,7 @@ trait ScrollViewPropsAndroid extends StObject {
     * FpsListener for it to be useful.
     * @platform android
     */
-  var scrollPerfTag: js.UndefOr[String] = js.native
+  var scrollPerfTag: js.UndefOr[String] = js.undefined
 }
 object ScrollViewPropsAndroid {
   

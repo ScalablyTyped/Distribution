@@ -2,13 +2,11 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferStoppedChangingEvent extends StObject {
   
-  var changes: js.Array[TextChange] = js.native
+  var changes: js.Array[TextChange]
 }
 object BufferStoppedChangingEvent {
   

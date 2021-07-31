@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zlibMod {
@@ -200,131 +199,96 @@ object zlibMod {
   @scala.inline
   def Z_VERSION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z_VERSION_ERROR")(x.asInstanceOf[js.Any])
   
-  @JSImport("zlib", "createDeflate")
-  @js.native
-  def createDeflate(): Deflate_ = js.native
-  @JSImport("zlib", "createDeflate")
-  @js.native
-  def createDeflate(options: ZlibOptions): Deflate_ = js.native
+  @scala.inline
+  def createDeflate(): Deflate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")().asInstanceOf[Deflate_]
+  @scala.inline
+  def createDeflate(options: ZlibOptions): Deflate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")(options.asInstanceOf[js.Any]).asInstanceOf[Deflate_]
   
-  @JSImport("zlib", "createDeflateRaw")
-  @js.native
-  def createDeflateRaw(): DeflateRaw_ = js.native
-  @JSImport("zlib", "createDeflateRaw")
-  @js.native
-  def createDeflateRaw(options: ZlibOptions): DeflateRaw_ = js.native
+  @scala.inline
+  def createDeflateRaw(): DeflateRaw_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflateRaw")().asInstanceOf[DeflateRaw_]
+  @scala.inline
+  def createDeflateRaw(options: ZlibOptions): DeflateRaw_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflateRaw")(options.asInstanceOf[js.Any]).asInstanceOf[DeflateRaw_]
   
-  @JSImport("zlib", "createGunzip")
-  @js.native
-  def createGunzip(): Gunzip_ = js.native
-  @JSImport("zlib", "createGunzip")
-  @js.native
-  def createGunzip(options: ZlibOptions): Gunzip_ = js.native
+  @scala.inline
+  def createGunzip(): Gunzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createGunzip")().asInstanceOf[Gunzip_]
+  @scala.inline
+  def createGunzip(options: ZlibOptions): Gunzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createGunzip")(options.asInstanceOf[js.Any]).asInstanceOf[Gunzip_]
   
-  @JSImport("zlib", "createGzip")
-  @js.native
-  def createGzip(): Gzip_ = js.native
-  @JSImport("zlib", "createGzip")
-  @js.native
-  def createGzip(options: ZlibOptions): Gzip_ = js.native
+  @scala.inline
+  def createGzip(): Gzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")().asInstanceOf[Gzip_]
+  @scala.inline
+  def createGzip(options: ZlibOptions): Gzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")(options.asInstanceOf[js.Any]).asInstanceOf[Gzip_]
   
-  @JSImport("zlib", "createInflate")
-  @js.native
-  def createInflate(): Inflate_ = js.native
-  @JSImport("zlib", "createInflate")
-  @js.native
-  def createInflate(options: ZlibOptions): Inflate_ = js.native
+  @scala.inline
+  def createInflate(): Inflate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInflate")().asInstanceOf[Inflate_]
+  @scala.inline
+  def createInflate(options: ZlibOptions): Inflate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInflate")(options.asInstanceOf[js.Any]).asInstanceOf[Inflate_]
   
-  @JSImport("zlib", "createInflateRaw")
-  @js.native
-  def createInflateRaw(): InflateRaw_ = js.native
-  @JSImport("zlib", "createInflateRaw")
-  @js.native
-  def createInflateRaw(options: ZlibOptions): InflateRaw_ = js.native
+  @scala.inline
+  def createInflateRaw(): InflateRaw_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInflateRaw")().asInstanceOf[InflateRaw_]
+  @scala.inline
+  def createInflateRaw(options: ZlibOptions): InflateRaw_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInflateRaw")(options.asInstanceOf[js.Any]).asInstanceOf[InflateRaw_]
   
-  @JSImport("zlib", "createUnzip")
-  @js.native
-  def createUnzip(): Unzip_ = js.native
-  @JSImport("zlib", "createUnzip")
-  @js.native
-  def createUnzip(options: ZlibOptions): Unzip_ = js.native
+  @scala.inline
+  def createUnzip(): Unzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnzip")().asInstanceOf[Unzip_]
+  @scala.inline
+  def createUnzip(options: ZlibOptions): Unzip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnzip")(options.asInstanceOf[js.Any]).asInstanceOf[Unzip_]
   
-  @JSImport("zlib", "deflate")
-  @js.native
-  def deflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def deflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "deflateRaw")
-  @js.native
-  def deflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def deflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateRaw")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "deflateRawSync")
-  @js.native
-  def deflateRawSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "deflateRawSync")
-  @js.native
-  def deflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def deflateRawSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateRawSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def deflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateRawSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "deflateSync")
-  @js.native
-  def deflateSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "deflateSync")
-  @js.native
-  def deflateSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def deflateSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def deflateSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "gunzip")
-  @js.native
-  def gunzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def gunzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gunzip")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "gunzipSync")
-  @js.native
-  def gunzipSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "gunzipSync")
-  @js.native
-  def gunzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def gunzipSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def gunzipSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "gzip")
-  @js.native
-  def gzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def gzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "gzipSync")
-  @js.native
-  def gzipSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "gzipSync")
-  @js.native
-  def gzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def gzipSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def gzipSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "inflate")
-  @js.native
-  def inflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def inflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "inflateRaw")
-  @js.native
-  def inflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def inflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inflateRaw")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "inflateRawSync")
-  @js.native
-  def inflateRawSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "inflateRawSync")
-  @js.native
-  def inflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def inflateRawSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inflateRawSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def inflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inflateRawSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "inflateSync")
-  @js.native
-  def inflateSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "inflateSync")
-  @js.native
-  def inflateSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def inflateSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def inflateSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("zlib", "unzip")
-  @js.native
-  def unzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def unzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(buf.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zlib", "unzipSync")
-  @js.native
-  def unzipSync(buf: Buffer): js.Any = js.native
-  @JSImport("zlib", "unzipSync")
-  @js.native
-  def unzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
+  @scala.inline
+  def unzipSync(buf: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unzipSync")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unzipSync(buf: Buffer, options: ZlibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unzipSync")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type DeflateRaw_ = Transform
   
@@ -340,20 +304,19 @@ object zlibMod {
   
   type Unzip_ = Transform
   
-  @js.native
   trait ZlibOptions extends StObject {
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var dictionary: js.UndefOr[js.Any] = js.native
+    var dictionary: js.UndefOr[js.Any] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var memLevel: js.UndefOr[Double] = js.native
+    var memLevel: js.UndefOr[Double] = js.undefined
     
-    var strategy: js.UndefOr[Double] = js.native
+    var strategy: js.UndefOr[Double] = js.undefined
     
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object ZlibOptions {
     

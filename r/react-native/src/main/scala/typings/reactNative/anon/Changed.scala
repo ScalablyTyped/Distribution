@@ -3,15 +3,13 @@ package typings.reactNative.anon
 import typings.reactNative.mod.ViewToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changed extends StObject {
   
-  var changed: js.Array[ViewToken] = js.native
+  var changed: js.Array[ViewToken]
   
-  var viewableItems: js.Array[ViewToken] = js.native
+  var viewableItems: js.Array[ViewToken]
 }
 object Changed {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDiskSnapshotResult extends StObject {
   
   /**
     * An object containing information about the disk snapshot.
     */
-  var diskSnapshot: js.UndefOr[DiskSnapshot] = js.native
+  var diskSnapshot: js.UndefOr[DiskSnapshot] = js.undefined
 }
 object GetDiskSnapshotResult {
   

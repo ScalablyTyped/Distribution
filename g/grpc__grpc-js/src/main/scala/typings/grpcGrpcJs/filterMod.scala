@@ -7,27 +7,43 @@ import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterMod {
   
   @JSImport("@grpc/grpc-js/build/src/filter", "BaseFilter")
   @js.native
-  abstract class BaseFilter () extends Filter
+  abstract class BaseFilter ()
+    extends StObject
+       with Filter {
+    
+    /* CompleteClass */
+    override def receiveMessage(message: js.Promise[Buffer]): js.Promise[Buffer] = js.native
+    
+    /* CompleteClass */
+    override def receiveMetadata(metadata: Metadata): Metadata = js.native
+    
+    /* CompleteClass */
+    override def receiveTrailers(status: StatusObject): StatusObject = js.native
+    
+    /* CompleteClass */
+    override def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject] = js.native
+    
+    /* CompleteClass */
+    override def sendMetadata(metadata: js.Promise[Metadata]): js.Promise[Metadata] = js.native
+  }
   
-  @js.native
   trait Filter extends StObject {
     
-    def receiveMessage(message: js.Promise[Buffer]): js.Promise[Buffer] = js.native
+    def receiveMessage(message: js.Promise[Buffer]): js.Promise[Buffer]
     
-    def receiveMetadata(metadata: Metadata): Metadata = js.native
+    def receiveMetadata(metadata: Metadata): Metadata
     
-    def receiveTrailers(status: StatusObject): StatusObject = js.native
+    def receiveTrailers(status: StatusObject): StatusObject
     
-    def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject] = js.native
+    def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject]
     
-    def sendMetadata(metadata: js.Promise[Metadata]): js.Promise[Metadata] = js.native
+    def sendMetadata(metadata: js.Promise[Metadata]): js.Promise[Metadata]
   }
   object Filter {
     
@@ -63,10 +79,9 @@ object filterMod {
     }
   }
   
-  @js.native
   trait FilterFactory[T /* <: Filter */] extends StObject {
     
-    def createFilter(callStream: Call): T = js.native
+    def createFilter(callStream: Call): T
   }
   object FilterFactory {
     
@@ -77,7 +92,7 @@ object filterMod {
     }
     
     @scala.inline
-    implicit class FilterFactoryMutableBuilder[Self <: FilterFactory[_], T /* <: Filter */] (val x: Self with FilterFactory[T]) extends AnyVal {
+    implicit class FilterFactoryMutableBuilder[Self <: FilterFactory[?], T /* <: Filter */] (val x: Self & FilterFactory[T]) extends AnyVal {
       
       @scala.inline
       def setCreateFilter(value: Call => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction1(value))

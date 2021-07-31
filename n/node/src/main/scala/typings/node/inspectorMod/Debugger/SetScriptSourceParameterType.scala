@@ -3,26 +3,24 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetScriptSourceParameterType extends StObject {
   
   /**
     *  If true the change will not actually be applied. Dry run may be used to get result description without actually modifying the code.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Id of the script to edit.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * New content of the script.
     */
-  var scriptSource: String = js.native
+  var scriptSource: String
 }
 object SetScriptSourceParameterType {
   

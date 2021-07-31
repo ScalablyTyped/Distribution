@@ -3,38 +3,37 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.photo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultPhoto
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var photo_height: js.UndefOr[Double] = js.native
+  var photo_height: js.UndefOr[Double] = js.undefined
   
-  var photo_url: String = js.native
+  var photo_url: String
   
-  var photo_width: js.UndefOr[Double] = js.native
+  var photo_width: js.UndefOr[Double] = js.undefined
   
-  var thumb_url: String = js.native
+  var thumb_url: String
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: photo = js.native
+  var `type`: photo
 }
 object InlineQueryResultPhoto {
   
   @scala.inline
-  def apply(id: String, photo_url: String, thumb_url: String, `type`: photo): InlineQueryResultPhoto = {
+  def apply(id: String, photo_url: String, thumb_url: String): InlineQueryResultPhoto = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], photo_url = photo_url.asInstanceOf[js.Any], thumb_url = thumb_url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("photo")
     __obj.asInstanceOf[InlineQueryResultPhoto]
   }
   

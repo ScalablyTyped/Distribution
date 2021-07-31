@@ -9,7 +9,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdIconMod extends Shortcut {
@@ -18,10 +17,11 @@ object antdIconMod extends Shortcut {
   @js.native
   val default: IconBaseComponent[IconComponentProps] = js.native
   
-  @js.native
-  trait AntdIconProps extends IconBaseProps {
+  trait AntdIconProps
+    extends StObject
+       with IconBaseProps {
     
-    var twoToneColor: js.UndefOr[TwoToneColor] = js.native
+    var twoToneColor: js.UndefOr[TwoToneColor] = js.undefined
   }
   object AntdIconProps {
     
@@ -43,17 +43,20 @@ object antdIconMod extends Shortcut {
   }
   
   @js.native
-  trait IconBaseComponent[Props] extends ForwardRefExoticComponent[Props with RefAttributes[HTMLSpanElement]] {
+  trait IconBaseComponent[Props]
+    extends StObject
+       with ForwardRefExoticComponent[Props & RefAttributes[HTMLSpanElement]] {
     
     var getTwoToneColor: js.Function0[TwoToneColor] = js.native
     
     var setTwoToneColor: js.Function1[/* twoToneColor */ TwoToneColor, Unit] = js.native
   }
   
-  @js.native
-  trait IconComponentProps extends AntdIconProps {
+  trait IconComponentProps
+    extends StObject
+       with AntdIconProps {
     
-    var icon: IconDefinition = js.native
+    var icon: IconDefinition
   }
   object IconComponentProps {
     

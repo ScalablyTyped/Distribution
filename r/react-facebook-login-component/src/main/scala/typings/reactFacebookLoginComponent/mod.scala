@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,16 +21,15 @@ object mod {
     def this(props: FacebookLoginProps, context: js.Any) = this()
   }
   
-  @js.native
   trait FacebookLoginInfo extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object FacebookLoginInfo {
     
@@ -64,20 +62,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait FacebookLoginProps extends ButtonHTMLAttributes[HTMLButtonElement] {
+  trait FacebookLoginProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
-    def responseHandler(response: FacebookLoginInfo): Unit = js.native
+    def responseHandler(response: FacebookLoginInfo): Unit
     
-    var socialId: String = js.native
+    var socialId: String
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var xfbml: js.UndefOr[Boolean] = js.native
+    var xfbml: js.UndefOr[Boolean] = js.undefined
   }
   object FacebookLoginProps {
     

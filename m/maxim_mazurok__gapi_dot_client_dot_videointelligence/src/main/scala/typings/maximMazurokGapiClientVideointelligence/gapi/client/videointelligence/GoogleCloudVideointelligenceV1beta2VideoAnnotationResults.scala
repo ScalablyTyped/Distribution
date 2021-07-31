@@ -2,69 +2,67 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1beta2VideoAnnotationResults extends StObject {
   
   /** If set, indicates an error. Note that for a single `AnnotateVideoRequest` some videos may succeed and some may fail. */
-  var error: js.UndefOr[GoogleRpcStatus] = js.native
+  var error: js.UndefOr[GoogleRpcStatus] = js.undefined
   
   /** Explicit content annotation. */
-  var explicitAnnotation: js.UndefOr[GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation] = js.native
+  var explicitAnnotation: js.UndefOr[GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation] = js.undefined
   
   /** Deprecated. Please use `face_detection_annotations` instead. */
-  var faceAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2FaceAnnotation]] = js.native
+  var faceAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2FaceAnnotation]] = js.undefined
   
   /** Face detection annotations. */
-  var faceDetectionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2FaceDetectionAnnotation]] = js.native
+  var faceDetectionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2FaceDetectionAnnotation]] = js.undefined
   
   /** Label annotations on frame level. There is exactly one element for each unique label. */
-  var frameLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.native
+  var frameLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.undefined
   
   /** Video file location in [Cloud Storage](https://cloud.google.com/storage/). */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
   
   /** Annotations for list of logos detected, tracked and recognized in video. */
-  var logoRecognitionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation]] = js.native
+  var logoRecognitionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation]] = js.undefined
   
   /** Annotations for list of objects detected and tracked in video. */
-  var objectAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2ObjectTrackingAnnotation]] = js.native
+  var objectAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2ObjectTrackingAnnotation]] = js.undefined
   
   /** Person detection annotations. */
-  var personDetectionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation]] = js.native
+  var personDetectionAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation]] = js.undefined
   
   /** Video segment on which the annotation is run. */
-  var segment: js.UndefOr[GoogleCloudVideointelligenceV1beta2VideoSegment] = js.native
+  var segment: js.UndefOr[GoogleCloudVideointelligenceV1beta2VideoSegment] = js.undefined
   
   /** Topical label annotations on video level or user-specified segment level. There is exactly one element for each unique label. */
-  var segmentLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.native
+  var segmentLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.undefined
   
   /**
     * Presence label annotations on video level or user-specified segment level. There is exactly one element for each unique label. Compared to the existing topical
     * `segment_label_annotations`, this field presents more fine-grained, segment-level labels detected in video content and is made available only when the client sets
     * `LabelDetectionConfig.model` to "builtin/latest" in the request.
     */
-  var segmentPresenceLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.native
+  var segmentPresenceLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.undefined
   
   /** Shot annotations. Each shot is represented as a video segment. */
-  var shotAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2VideoSegment]] = js.native
+  var shotAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2VideoSegment]] = js.undefined
   
   /** Topical label annotations on shot level. There is exactly one element for each unique label. */
-  var shotLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.native
+  var shotLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.undefined
   
   /**
     * Presence label annotations on shot level. There is exactly one element for each unique label. Compared to the existing topical `shot_label_annotations`, this field presents more
     * fine-grained, shot-level labels detected in video content and is made available only when the client sets `LabelDetectionConfig.model` to "builtin/latest" in the request.
     */
-  var shotPresenceLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.native
+  var shotPresenceLabelAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2LabelAnnotation]] = js.undefined
   
   /** Speech transcription. */
-  var speechTranscriptions: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2SpeechTranscription]] = js.native
+  var speechTranscriptions: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2SpeechTranscription]] = js.undefined
   
   /** OCR text detection and tracking. Annotations for list of detected text snippets. Each will have list of frame information associated with it. */
-  var textAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2TextAnnotation]] = js.native
+  var textAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2TextAnnotation]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1beta2VideoAnnotationResults {
   

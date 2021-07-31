@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'showOnFocus'> */
-@js.native
 trait PickImplshowOnFocus extends StObject {
   
-  var showOnFocus: Boolean = js.native
+  var showOnFocus: Boolean
 }
 object PickImplshowOnFocus {
   

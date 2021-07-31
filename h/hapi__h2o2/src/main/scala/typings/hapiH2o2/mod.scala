@@ -17,7 +17,6 @@ import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,30 +25,29 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[js.Object] = js.native
   
-  @js.native
   trait ProxyHandlerOptions extends StObject {
     
     /** acceptEncoding - if set to false, does not pass-through the 'Accept-Encoding' HTTP header which is useful for the onResponse post-processing to avoid receiving an encoded response. Can only be used together with passThrough. Defaults to true (passing header). */
-    var acceptEncoding: js.UndefOr[Boolean] = js.native
+    var acceptEncoding: js.UndefOr[Boolean] = js.undefined
     
     /** agent - a node http(s) agent to be used for connections to upstream server. @see {@link https://nodejs.org/api/http.html#http_class_http_agent} */
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
     /** host - upstream service host to proxy requests to. It will have the same path as the client request. */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /** localStatePassThrough - if set tofalse, any locally defined state is removed from incoming requests before being sent to the upstream service. This value can be overridden on a per state basis via the server.state()``passThrough option. Defaults to false */
-    var localStatePassThrough: js.UndefOr[Boolean] = js.native
+    var localStatePassThrough: js.UndefOr[Boolean] = js.undefined
     
     /** mapUri - a function used to map the request URI to the target `uri` and optional `headers` with which to make that request. Cannot be used together with `host`, `port`, `protocol`, or `uri`.
       * @param request - is the incoming request object.
       */
     var mapUri: js.UndefOr[
         js.ThisFunction1[/* this */ this.type, /* request */ Request, js.Promise[ProxyTarget]]
-      ] = js.native
+      ] = js.undefined
     
     /** maxSockets - sets the maximum number of sockets available per outgoing proxy host connection. false means use the wreck module default value (Infinity). Does not affect non-proxy outgoing client connections. Defaults to Infinity. */
-    var maxSockets: js.UndefOr[`false` | Double] = js.native
+    var maxSockets: js.UndefOr[`false` | Double] = js.undefined
     
     /**
       * onResponse - a custom function for processing the response from the upstream service before sending to the client. Useful for custom error handling of responses from the proxied endpoint or other payload manipulation.
@@ -63,7 +61,7 @@ object mod extends Shortcut {
     var onResponse: js.UndefOr[
         js.ThisFunction6[
           /* this */ RouteOptions, 
-          /* err */ Null | Boom[_], 
+          /* err */ Null | Boom[js.Any], 
           /* res */ IncomingMessage, 
           /* req */ Request, 
           /* h */ ResponseToolkit, 
@@ -71,34 +69,34 @@ object mod extends Shortcut {
           /* ttl */ Double, 
           ReturnValue
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** passThrough - if set to true, it forwards the headers from the client to the upstream service, headers sent from the upstream service will also be forwarded to the client. Defaults to false. */
-    var passThrough: js.UndefOr[Boolean] = js.native
+    var passThrough: js.UndefOr[Boolean] = js.undefined
     
     /** port - upstream service port. */
-    var port: js.UndefOr[Double | String] = js.native
+    var port: js.UndefOr[Double | String] = js.undefined
     
     /** protocol - protocol to use when making the request to the proxied host: */
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
     /** redirects - the maximum number of HTTP redirections allowed to be followed automatically by the handler. Set to false or 0 to disable all redirections (the response will contain the redirection received from the upstream service). If redirections are enabled, no redirections (301, 302, 307, 308) will be passed along to the client, and reaching the maximum allowed redirections will return an error response. Defaults to false. */
-    var redirects: js.UndefOr[Double | `false`] = js.native
+    var redirects: js.UndefOr[Double | `false`] = js.undefined
     
     /** rejectUnauthorized - sets the rejectUnauthorized property on the https agent making the request. This value is only used when the proxied server uses TLS/SSL. If set it will override the node.js rejectUnauthorized property. If false then ssl errors will be ignored. When true the server certificate is verified and an 500 response will be sent when verification fails. This shouldn't be used alongside the agent setting as the agent will be used instead. Defaults to the https agent default value of true. */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /** timeout - number of milliseconds before aborting the upstream request. Defaults to 180000 (3 minutes). */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** ttl - if set to 'upstream', applies the upstream response caching policy to the response using the response.ttl() method (or passed as an argument to the onResponse method if provided). */
-    var ttl: js.UndefOr[upstream] = js.native
+    var ttl: js.UndefOr[upstream] = js.undefined
     
     /** uri - absolute URI used instead of host, port, protocol, path, and query. Cannot be used with host, port, protocol, or mapUri. */
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
     /** xforward - if set to true, sets the 'X-Forwarded-For', 'X-Forwarded-Port', 'X-Forwarded-Proto', 'X-Forwarded-Host' headers when making a request to the proxied upstream endpoint. Defaults to false. */
-    var xforward: js.UndefOr[Boolean] = js.native
+    var xforward: js.UndefOr[Boolean] = js.undefined
   }
   object ProxyHandlerOptions {
     
@@ -151,7 +149,7 @@ object mod extends Shortcut {
       def setOnResponse(
         value: js.ThisFunction6[
               /* this */ RouteOptions, 
-              /* err */ Null | Boom[_], 
+              /* err */ Null | Boom[js.Any], 
               /* res */ IncomingMessage, 
               /* req */ Request, 
               /* h */ ResponseToolkit, 
@@ -220,14 +218,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ProxyTarget extends StObject {
     
     /** The headers with which to request `uri` */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** The URI to request */
-    var uri: String = js.native
+    var uri: String
   }
   object ProxyTarget {
     
@@ -259,13 +256,12 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait HandlerDecorations extends StObject {
       
       /**
         * Proxies the request to an upstream endpoint.
         */
-      var proxy: js.UndefOr[ProxyHandlerOptions] = js.native
+      var proxy: js.UndefOr[ProxyHandlerOptions] = js.undefined
     }
     object HandlerDecorations {
       
@@ -286,13 +282,12 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ResponseToolkit extends StObject {
       
       /**
         * Proxies the request to an upstream endpoint. `async`, so you'll need to `await` the `ResponseObject` to work on it before returning it.
         */
-      def proxy(options: ProxyHandlerOptions): js.Promise[ResponseObject] = js.native
+      def proxy(options: ProxyHandlerOptions): js.Promise[ResponseObject]
     }
     object ResponseToolkit {
       

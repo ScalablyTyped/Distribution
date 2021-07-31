@@ -4,39 +4,39 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access the collections of columns and rows of a cell range.
   * @see com.sun.star.table.CellRange
   */
-@js.native
-trait XColumnRowRange extends XInterface {
+trait XColumnRowRange
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of columns in the range.
     * @see com.sun.star.table.TableColumns
     */
-  val Columns: XTableColumns = js.native
+  val Columns: XTableColumns
   
   /**
     * returns the collection of rows in the range.
     * @see com.sun.star.table.TableRows
     */
-  val Rows: XTableRows = js.native
+  val Rows: XTableRows
   
   /**
     * returns the collection of columns in the range.
     * @see com.sun.star.table.TableColumns
     */
-  def getColumns(): XTableColumns = js.native
+  def getColumns(): XTableColumns
   
   /**
     * returns the collection of rows in the range.
     * @see com.sun.star.table.TableRows
     */
-  def getRows(): XTableRows = js.native
+  def getRows(): XTableRows
 }
 object XColumnRowRange {
   

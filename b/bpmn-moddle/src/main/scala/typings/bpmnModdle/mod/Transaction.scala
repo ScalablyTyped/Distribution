@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Transaction extends SubProcess {
+trait Transaction
+  extends StObject
+     with SubProcess {
   
-  var method: String = js.native
+  var method: String
   
-  var protocal: String = js.native
+  var protocal: String
 }
 object Transaction {
   

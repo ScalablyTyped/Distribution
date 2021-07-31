@@ -2,34 +2,34 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptInjectorMod {
   
-  @JSImport("playable/dist/src/utils/script-injector", JSImport.Default)
+  @JSImport("playable/dist/src/utils/script-injector", JSImport.Namespace)
   @js.native
-  def default(src: String): Unit = js.native
-  @JSImport("playable/dist/src/utils/script-injector", JSImport.Default)
-  @js.native
-  def default(src: String, props: IScriptAttributes): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(src: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(src: String, props: IScriptAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait IScriptAttributes extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
     
-    var crossOrigin: String | Null = js.native
+    var crossOrigin: String | Null
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IScriptAttributes {
     
     @scala.inline
     def apply(async: Boolean, text: String, `type`: String): IScriptAttributes = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], crossOrigin = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScriptAttributes]
     }

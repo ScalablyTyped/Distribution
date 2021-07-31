@@ -5,79 +5,49 @@ import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calculateNodeHeightMod {
   
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
+  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Namespace)
   @js.native
-  def default(uiTextNode: HTMLTextAreaElement): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(
-    uiTextNode: HTMLTextAreaElement,
-    useCache: js.UndefOr[scala.Nothing],
-    minRows: js.UndefOr[scala.Nothing],
-    maxRows: Double
-  ): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(uiTextNode: HTMLTextAreaElement, useCache: js.UndefOr[scala.Nothing], minRows: Double): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(
-    uiTextNode: HTMLTextAreaElement,
-    useCache: js.UndefOr[scala.Nothing],
-    minRows: Double,
-    maxRows: Double
-  ): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(
-    uiTextNode: HTMLTextAreaElement,
-    useCache: js.UndefOr[scala.Nothing],
-    minRows: Null,
-    maxRows: Double
-  ): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(
-    uiTextNode: HTMLTextAreaElement,
-    useCache: Boolean,
-    minRows: js.UndefOr[scala.Nothing],
-    maxRows: Double
-  ): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Double): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Double, maxRows: Double): MaxHeight = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
-  @js.native
-  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Null, maxRows: Double): MaxHeight = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-textarea/es/calculateNodeHeight", "calculateNodeStyling")
-  @js.native
-  def calculateNodeStyling(node: HTMLElement): NodeType = js.native
-  @JSImport("rc-textarea/es/calculateNodeHeight", "calculateNodeStyling")
-  @js.native
-  def calculateNodeStyling(node: HTMLElement, useCache: Boolean): NodeType = js.native
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement): MaxHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any]).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Double, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Null, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Unit, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Unit, minRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Unit, minRows: Double, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Unit, minRows: Null, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
+  @scala.inline
+  def default(uiTextNode: HTMLTextAreaElement, useCache: Unit, minRows: Unit, maxRows: Double): MaxHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uiTextNode.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[MaxHeight]
   
-  @js.native
+  @scala.inline
+  def calculateNodeStyling(node: HTMLElement): NodeType = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateNodeStyling")(node.asInstanceOf[js.Any]).asInstanceOf[NodeType]
+  @scala.inline
+  def calculateNodeStyling(node: HTMLElement, useCache: Boolean): NodeType = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateNodeStyling")(node.asInstanceOf[js.Any], useCache.asInstanceOf[js.Any])).asInstanceOf[NodeType]
+  
   trait NodeType extends StObject {
     
-    var borderSize: Double = js.native
+    var borderSize: Double
     
-    var boxSizing: String = js.native
+    var boxSizing: String
     
-    var paddingSize: Double = js.native
+    var paddingSize: Double
     
-    var sizingStyle: String = js.native
+    var sizingStyle: String
   }
   object NodeType {
     

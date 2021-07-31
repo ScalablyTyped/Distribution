@@ -2,24 +2,22 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFTreeNode extends StObject {
   
-  var bold: Boolean = js.native
+  var bold: Boolean
   
-  var color: js.Array[Double] = js.native
+  var color: js.Array[Double]
   
   // [r,g,b]
-  var dest: js.Any = js.native
+  var dest: js.Any
   
-  var italic: Boolean = js.native
+  var italic: Boolean
   
-  var items: js.Array[PDFTreeNode] = js.native
+  var items: js.Array[PDFTreeNode]
   
-  var title: String = js.native
+  var title: String
 }
 object PDFTreeNode {
   

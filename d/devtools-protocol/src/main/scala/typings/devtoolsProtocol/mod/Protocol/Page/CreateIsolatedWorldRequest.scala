@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIsolatedWorldRequest extends StObject {
   
   /**
     * Id of the frame in which the isolated world should be created.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Whether or not universal access should be granted to the isolated world. This is a powerful
     * option, use with caution.
     */
-  var grantUniveralAccess: js.UndefOr[Boolean] = js.native
+  var grantUniveralAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional name which is reported in the Execution Context.
     */
-  var worldName: js.UndefOr[String] = js.native
+  var worldName: js.UndefOr[String] = js.undefined
 }
 object CreateIsolatedWorldRequest {
   

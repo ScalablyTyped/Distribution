@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoTargeting extends StObject {
   
   /** A list of video positions to be excluded. Position types can either be included or excluded (XOR). */
-  var excludedPositionTypes: js.UndefOr[js.Array[String]] = js.native
+  var excludedPositionTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of video positions to be included. When the included list is present, the excluded list must be empty. When the excluded list is present, the included list must be empty. */
-  var targetedPositionTypes: js.UndefOr[js.Array[String]] = js.native
+  var targetedPositionTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object VideoTargeting {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTableOutput extends StObject {
   
   /**
     * The properties of the table.
     */
-  var Table: js.UndefOr[TableDescription] = js.native
+  var Table: js.UndefOr[TableDescription] = js.undefined
 }
 object DescribeTableOutput {
   

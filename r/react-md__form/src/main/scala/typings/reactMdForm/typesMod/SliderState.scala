@@ -2,23 +2,21 @@ package typings.reactMdForm.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderState extends StObject {
   
-  var dragType: SliderDraggingType = js.native
+  var dragType: SliderDraggingType
   
-  var dragging: Boolean = js.native
+  var dragging: Boolean
   
-  var value: Double = js.native
+  var value: Double
 }
 object SliderState {
   
   @scala.inline
   def apply(dragging: Boolean, value: Double): SliderState = {
-    val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], dragType = null)
     __obj.asInstanceOf[SliderState]
   }
   

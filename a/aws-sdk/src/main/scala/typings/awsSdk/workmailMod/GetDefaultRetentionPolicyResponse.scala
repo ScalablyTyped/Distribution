@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDefaultRetentionPolicyResponse extends StObject {
   
   /**
     * The retention policy description.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The retention policy folder configurations.
     */
-  var FolderConfigurations: js.UndefOr[typings.awsSdk.workmailMod.FolderConfigurations] = js.native
+  var FolderConfigurations: js.UndefOr[typings.awsSdk.workmailMod.FolderConfigurations] = js.undefined
   
   /**
     * The retention policy ID.
     */
-  var Id: js.UndefOr[ShortString] = js.native
+  var Id: js.UndefOr[ShortString] = js.undefined
   
   /**
     * The retention policy name.
     */
-  var Name: js.UndefOr[ShortString] = js.native
+  var Name: js.UndefOr[ShortString] = js.undefined
 }
 object GetDefaultRetentionPolicyResponse {
   

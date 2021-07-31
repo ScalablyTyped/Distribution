@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One or more sets of investigations (signs, symptions, etc.)
   */
-@js.native
-trait ClinicalImpressionInvestigation extends BackboneElement {
+trait ClinicalImpressionInvestigation
+  extends StObject
+     with BackboneElement {
   
   /**
     * A name/code for the set
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Record of a specific investigation
     */
-  var item: js.UndefOr[js.Array[Reference]] = js.native
+  var item: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 object ClinicalImpressionInvestigation {
   

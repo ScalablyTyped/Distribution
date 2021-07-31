@@ -2,16 +2,14 @@ package typings.clmtrackr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait UseWebWorkers extends StObject {
     
     /** whether to use web workers for face detection (default is true) */
-    var useWebWorkers: js.UndefOr[Boolean] = js.native
+    var useWebWorkers: js.UndefOr[Boolean] = js.undefined
   }
   object UseWebWorkers {
     

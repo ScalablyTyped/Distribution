@@ -10,14 +10,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.enabledchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an effect that stabilizes a video stream. */
 @js.native
 trait VideoStabilizationEffect extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_enabledchanged(
     `type`: enabledchanged,
@@ -36,12 +35,12 @@ trait VideoStabilizationEffect extends StObject {
   def getRecommendedStreamConfiguration(controller: VideoDeviceController, desiredProperties: VideoEncodingProperties): VideoStreamConfiguration = js.native
   
   /** Occurs when the value of the VideoStabilizationEffect::Enabled property changes. */
-  def onenabledchanged(ev: VideoStabilizationEffectEnabledChangedEventArgs with WinRTEvent[VideoStabilizationEffect]): Unit = js.native
+  def onenabledchanged(ev: VideoStabilizationEffectEnabledChangedEventArgs & WinRTEvent[VideoStabilizationEffect]): Unit = js.native
   /** Occurs when the value of the VideoStabilizationEffect::Enabled property changes. */
   @JSName("onenabledchanged")
   var onenabledchanged_Original: TypedEventHandler[VideoStabilizationEffect, VideoStabilizationEffectEnabledChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_enabledchanged(
     `type`: enabledchanged,

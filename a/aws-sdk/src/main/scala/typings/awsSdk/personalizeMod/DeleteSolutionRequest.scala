@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSolutionRequest extends StObject {
   
   /**
     * The ARN of the solution to delete.
     */
-  var solutionArn: Arn = js.native
+  var solutionArn: Arn
 }
 object DeleteSolutionRequest {
   

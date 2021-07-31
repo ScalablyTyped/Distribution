@@ -2,17 +2,15 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
   /**
     * Set duration of transition (in milliseconds) for chart animation.
     * Note: If `0` or `null` set, transition will be skipped. So, this makes initial rendering faster especially in case you have a lot of data.
     */
-  var duration: js.UndefOr[Double | Null] = js.native
+  var duration: js.UndefOr[Double | Null] = js.undefined
 }
 object Duration {
   

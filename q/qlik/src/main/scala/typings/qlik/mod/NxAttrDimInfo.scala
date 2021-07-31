@@ -2,21 +2,19 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxAttrDimInfo extends StObject {
   
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
-  var qError: NxValidationError = js.native
+  var qError: NxValidationError
   
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
-  var qLocked: Boolean = js.native
+  var qLocked: Boolean
   
-  var qSize: Size = js.native
+  var qSize: Size
 }
 object NxAttrDimInfo {
   

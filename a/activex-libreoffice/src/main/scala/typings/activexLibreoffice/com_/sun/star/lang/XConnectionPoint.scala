@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,23 +38,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * about.
   * @see XConnectionPointContainer
   */
-@js.native
-trait XConnectionPoint extends XInterface {
+trait XConnectionPoint
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the {@link XConnectionPointContainer} interface on the parent connectable object.
     * @see XConnectionPointContainer
     */
-  val ConnectionPointContainer: XConnectionPointContainer = js.native
+  val ConnectionPointContainer: XConnectionPointContainer
   
   /**
     * @returns the type of the outgoing interface managed by this connection point.  Using the XConnectionPointContainer::getConnectionPoints() method, a client
     * @see XConnectionPointContainer.findConnectionPoint
     */
-  val ConnectionType: `type` = js.native
+  val ConnectionType: `type`
   
   /** @returns a sequence of all currently advised connections. */
-  val Connections: SafeArray[XInterface] = js.native
+  val Connections: SafeArray[XInterface]
   
   /**
     * creates a connection between a connection point and a client's sink, where the sink implements the outgoing interface supported by this connection
@@ -69,22 +69,22 @@ trait XConnectionPoint extends XInterface {
     * @throws ListenerExistException if it is a unicast broadcaster and a listener is already set.
     * @throws InvalidListenerException if the listener does not supply the needed interfaces.
     */
-  def advise(xListener: XInterface): Unit = js.native
+  def advise(xListener: XInterface): Unit
   
   /**
     * @returns the {@link XConnectionPointContainer} interface on the parent connectable object.
     * @see XConnectionPointContainer
     */
-  def getConnectionPointContainer(): XConnectionPointContainer = js.native
+  def getConnectionPointContainer(): XConnectionPointContainer
   
   /**
     * @returns the type of the outgoing interface managed by this connection point.  Using the XConnectionPointContainer::getConnectionPoints() method, a client
     * @see XConnectionPointContainer.findConnectionPoint
     */
-  def getConnectionType(): `type` = js.native
+  def getConnectionType(): `type`
   
   /** @returns a sequence of all currently advised connections. */
-  def getConnections(): SafeArray[XInterface] = js.native
+  def getConnections(): SafeArray[XInterface]
   
   /**
     * terminates a notification previously set up with advise.
@@ -95,7 +95,7 @@ trait XConnectionPoint extends XInterface {
     * @param xListener specifies the listener interface on the client's advise sink.
     * @see com.sun.star.beans.XPropertySet.removePropertyChangeListener
     */
-  def unadvise(xListener: XInterface): Unit = js.native
+  def unadvise(xListener: XInterface): Unit
 }
 object XConnectionPoint {
   

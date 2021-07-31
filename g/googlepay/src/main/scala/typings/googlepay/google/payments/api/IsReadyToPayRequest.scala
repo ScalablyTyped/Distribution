@@ -4,7 +4,6 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optionally provides a signal if one or more of the specified payment
   * methods exists for the current user.
   */
-@js.native
 trait IsReadyToPayRequest extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait IsReadyToPayRequest extends StObject {
     * parameters field to see if the properties within are applicable for
     * `IsReadyToPayRequest`.
     */
-  var allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification] = js.native
+  var allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification]
   
   /**
     * Major API version.
@@ -47,7 +45,7 @@ trait IsReadyToPayRequest extends StObject {
     *
     * This field is required.
     */
-  var apiVersion: Double = js.native
+  var apiVersion: Double
   
   /**
     * Minor API version.
@@ -61,7 +59,7 @@ trait IsReadyToPayRequest extends StObject {
     *
     * This field is required.
     */
-  var apiVersionMinor: Double = js.native
+  var apiVersionMinor: Double
   
   /**
     * If set to `true` then the
@@ -73,7 +71,7 @@ trait IsReadyToPayRequest extends StObject {
     *
     * @default false
     */
-  var existingPaymentMethodRequired: js.UndefOr[`false` | `true`] = js.native
+  var existingPaymentMethodRequired: js.UndefOr[`false` | `true`] = js.undefined
 }
 object IsReadyToPayRequest {
   

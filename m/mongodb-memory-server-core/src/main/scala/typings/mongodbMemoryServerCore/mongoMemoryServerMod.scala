@@ -9,7 +9,6 @@ import typings.node.childProcessMod.SpawnOptions
 import typings.tmp.mod.DirResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoMemoryServerMod {
@@ -22,36 +21,41 @@ object mongoMemoryServerMod {
     * Note: because of JavaScript limitations, autoStart cannot be awaited here, use ".create" for async/await ability
     * @param opts Mongo-Memory-Sever Options
     */
-  class default () extends MongoMemoryServer {
+  class default ()
+    extends StObject
+       with MongoMemoryServer {
     def this(opts: MongoMemoryServerOptsT) = this()
   }
   /* static members */
   object default {
     
+    @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", "default.create")
-    @js.native
-    def create(): js.Promise[MongoMemoryServer] = js.native
-    @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", "default.create")
-    @js.native
-    def create(opts: MongoMemoryServerOptsT): js.Promise[MongoMemoryServer] = js.native
+    @scala.inline
+    def create(): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[MongoMemoryServer]]
+    @scala.inline
+    def create(opts: MongoMemoryServerOptsT): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoMemoryServer]]
   }
   
-  @js.native
-  trait MongoInstanceDataT extends StartupInstanceData {
+  trait MongoInstanceDataT
+    extends StObject
+       with StartupInstanceData {
     
-    var childProcess: js.UndefOr[ChildProcess] = js.native
+    var childProcess: js.UndefOr[ChildProcess] = js.undefined
     
     @JSName("dbPath")
-    var dbPath_MongoInstanceDataT: String = js.native
+    var dbPath_MongoInstanceDataT: String
     
-    var instance: typings.mongodbMemoryServerCore.mongoInstanceMod.default = js.native
+    var instance: typings.mongodbMemoryServerCore.mongoInstanceMod.default
     
     @JSName("uri")
-    var uri_MongoInstanceDataT: String = js.native
+    var uri_MongoInstanceDataT: String
   }
   object MongoInstanceDataT {
     
@@ -162,16 +166,15 @@ object mongoMemoryServerMod {
     def stop(): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait MongoMemoryServerOptsT extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var binary: js.UndefOr[MongoBinaryOpts] = js.native
+    var binary: js.UndefOr[MongoBinaryOpts] = js.undefined
     
-    var instance: js.UndefOr[MongoMemoryInstancePropT] = js.native
+    var instance: js.UndefOr[MongoMemoryInstancePropT] = js.undefined
     
-    var spawn: js.UndefOr[SpawnOptions] = js.native
+    var spawn: js.UndefOr[SpawnOptions] = js.undefined
   }
   object MongoMemoryServerOptsT {
     
@@ -210,24 +213,23 @@ object mongoMemoryServerMod {
     }
   }
   
-  @js.native
   trait StartupInstanceData extends StObject {
     
-    var dbName: String = js.native
+    var dbName: String
     
-    var dbPath: js.UndefOr[String] = js.native
+    var dbPath: js.UndefOr[String] = js.undefined
     
-    var ip: String = js.native
+    var ip: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var replSet: js.UndefOr[String] = js.native
+    var replSet: js.UndefOr[String] = js.undefined
     
-    var storageEngine: StorageEngineT = js.native
+    var storageEngine: StorageEngineT
     
-    var tmpDir: js.UndefOr[DirResult] = js.native
+    var tmpDir: js.UndefOr[DirResult] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object StartupInstanceData {
     

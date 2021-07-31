@@ -5,25 +5,25 @@ import typings.pulumiAws.inputMod.kms.GetSecretsSecret
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecretsMod {
   
-  @JSImport("@pulumi/aws/kms/getSecrets", "getSecrets")
+  @JSImport("@pulumi/aws/kms/getSecrets", JSImport.Namespace)
   @js.native
-  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = js.native
-  @JSImport("@pulumi/aws/kms/getSecrets", "getSecrets")
-  @js.native
-  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretsResult]]
+  @scala.inline
+  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretsResult]]
+  
   trait GetSecretsArgs extends StObject {
     
     /**
       * One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
       */
-    val secrets: js.Array[GetSecretsSecret] = js.native
+    val secrets: js.Array[GetSecretsSecret]
   }
   object GetSecretsArgs {
     
@@ -44,20 +44,19 @@ object getSecretsMod {
     }
   }
   
-  @js.native
   trait GetSecretsResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Map containing each `secret` `name` as the key with its decrypted plaintext value
       */
-    val plaintext: StringDictionary[String] = js.native
+    val plaintext: StringDictionary[String]
     
-    val secrets: js.Array[typings.pulumiAws.outputMod.kms.GetSecretsSecret] = js.native
+    val secrets: js.Array[typings.pulumiAws.outputMod.kms.GetSecretsSecret]
   }
   object GetSecretsResult {
     

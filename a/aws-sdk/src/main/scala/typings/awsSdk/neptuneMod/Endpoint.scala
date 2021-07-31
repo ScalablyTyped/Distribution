@@ -2,26 +2,24 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
   /**
     * Specifies the DNS address of the DB instance.
     */
-  var Address: js.UndefOr[String] = js.native
+  var Address: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
     */
-  var HostedZoneId: js.UndefOr[String] = js.native
+  var HostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the port that the database engine is listening on.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
 }
 object Endpoint {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetInstancesResult extends StObject {
   
   /**
     * The running instances. This list is refreshed periodically and might be out of date.
     */
-  var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.native
+  var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.undefined
   
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeFleetInstancesResult {
   

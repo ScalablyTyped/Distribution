@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponsivePanelOptions extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var breakpoint: js.UndefOr[Double] = js.native
+  var breakpoint: js.UndefOr[Double] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ ResponsivePanelEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ ResponsivePanelEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ ResponsivePanelEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ ResponsivePanelEvent, Unit]] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var toggleButton: js.UndefOr[String] = js.native
+  var toggleButton: js.UndefOr[String] = js.undefined
 }
 object ResponsivePanelOptions {
   

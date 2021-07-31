@@ -5,9 +5,9 @@ import typings.lodashDecorators.applicatorsMod.Applicator
 import typings.lodashDecorators.utilsMod.CompositeKeyWeakMap
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
+import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
@@ -17,50 +17,51 @@ object commonMod {
   val InstanceChainMap: CompositeKeyWeakMap[InstanceChainData] = js.native
   
   @js.native
-  trait ApplicatorToken extends Instantiable0[Applicator]
+  trait ApplicatorToken
+    extends StObject
+       with Instantiable0[Applicator]
   
-  type BiTypedDecorator = js.Function0[LodashDecorator] with LodashDecorator
+  type BiTypedDecorator = js.Function0[LodashDecorator] & LodashDecorator
   
-  type BiTypedDecorator1[T] = (js.Function1[/* arg */ js.UndefOr[T], LodashDecorator]) with LodashDecorator
+  type BiTypedDecorator1[T] = (js.Function1[/* arg */ js.UndefOr[T], LodashDecorator]) & LodashDecorator
   
-  type BiTypedDecorator2[T, T2] = (js.Function2[/* arg1 */ js.UndefOr[T], /* arg2 */ js.UndefOr[T2], LodashDecorator]) with LodashDecorator
+  type BiTypedDecorator2[T, T2] = (js.Function2[/* arg1 */ js.UndefOr[T], /* arg2 */ js.UndefOr[T2], LodashDecorator]) & LodashDecorator
   
   type BiTypedDecorator3[T, T2, T3] = (js.Function3[
     /* arg1 */ js.UndefOr[T], 
     /* arg2 */ js.UndefOr[T2], 
     /* arg3 */ js.UndefOr[T3], 
     LodashDecorator
-  ]) with LodashDecorator
+  ]) & LodashDecorator
   
-  type BiTypedDecoratorN = (js.Function1[/* repeated */ js.Any, LodashDecorator]) with LodashDecorator
+  type BiTypedDecoratorN = (js.Function1[/* repeated */ js.Any, LodashDecorator]) & LodashDecorator
   
-  type BiTypedMethodDecorator = js.Function0[LodashMethodDecorator] with LodashMethodDecorator
+  type BiTypedMethodDecorator = js.Function0[LodashMethodDecorator] & LodashMethodDecorator
   
-  type BiTypedMethodDecorator1[T] = (js.Function1[/* arg */ js.UndefOr[T], LodashMethodDecorator]) with LodashMethodDecorator
+  type BiTypedMethodDecorator1[T] = (js.Function1[/* arg */ js.UndefOr[T], LodashMethodDecorator]) & LodashMethodDecorator
   
-  type BiTypedMethodDecorator2[T, T2] = (js.Function2[/* arg1 */ js.UndefOr[T], /* arg2 */ js.UndefOr[T2], LodashMethodDecorator]) with LodashMethodDecorator
+  type BiTypedMethodDecorator2[T, T2] = (js.Function2[/* arg1 */ js.UndefOr[T], /* arg2 */ js.UndefOr[T2], LodashMethodDecorator]) & LodashMethodDecorator
   
   type BiTypedMethodDecorator3[T, T2, T3] = (js.Function3[
     /* arg1 */ js.UndefOr[T], 
     /* arg2 */ js.UndefOr[T2], 
     /* arg3 */ js.UndefOr[T3], 
     LodashMethodDecorator
-  ]) with LodashMethodDecorator
+  ]) & LodashMethodDecorator
   
-  type BiTypedMethodDecoratorN = (js.Function1[/* repeated */ js.Any, LodashMethodDecorator]) with LodashMethodDecorator
+  type BiTypedMethodDecoratorN = (js.Function1[/* repeated */ js.Any, LodashMethodDecorator]) & LodashMethodDecorator
   
-  @js.native
   trait InstanceChainContext extends StObject {
     
-    var getter: js.UndefOr[Boolean] = js.native
+    var getter: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[Boolean] = js.native
+    var method: js.UndefOr[Boolean] = js.undefined
     
-    var property: js.UndefOr[Boolean] = js.native
+    var property: js.UndefOr[Boolean] = js.undefined
     
-    var setter: js.UndefOr[Boolean] = js.native
+    var setter: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object InstanceChainContext {
     
@@ -102,20 +103,19 @@ object commonMod {
     }
   }
   
-  @js.native
   trait InstanceChainData extends StObject {
     
-    var fns: js.Array[js.Function] = js.native
+    var fns: js.Array[js.Function]
     
-    var isGetter: Boolean = js.native
+    var isGetter: Boolean
     
-    var isMethod: Boolean = js.native
+    var isMethod: Boolean
     
-    var isProperty: Boolean = js.native
+    var isProperty: Boolean
     
-    var isSetter: Boolean = js.native
+    var isSetter: Boolean
     
-    var properties: js.Array[String] = js.native
+    var properties: js.Array[String]
   }
   object InstanceChainData {
     
@@ -161,7 +161,20 @@ object commonMod {
     }
   }
   
-  type LodashDecorator = MethodDecorator with PropertyDecorator
+  @js.native
+  trait LodashDecorator
+    extends MethodDecorator
+       with PropertyDecorator {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* target */ js.Object, arg2: /* propertyKey */ String | js.Symbol): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* target */ js.Object,
+      arg2: /* propertyKey */ String | js.Symbol,
+      arg3: /* descriptor */ TypedPropertyDescriptor[js.Any]
+    ): TypedPropertyDescriptor[js.Any] | Unit = js.native
+  }
   
   type LodashMethodDecorator = MethodDecorator
   

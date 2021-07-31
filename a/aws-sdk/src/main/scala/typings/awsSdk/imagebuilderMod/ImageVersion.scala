@@ -2,46 +2,44 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageVersion extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image semantic version.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date at which this image semantic version was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the image semantic version.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     *  The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019. 
     */
-  var osVersion: js.UndefOr[OsVersion] = js.native
+  var osVersion: js.UndefOr[OsVersion] = js.undefined
   
   /**
     * The owner of the image semantic version.
     */
-  var owner: js.UndefOr[NonEmptyString] = js.native
+  var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The platform of the image semantic version.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * The semantic version of the image semantic version.
     */
-  var version: js.UndefOr[VersionNumber] = js.native
+  var version: js.UndefOr[VersionNumber] = js.undefined
 }
 object ImageVersion {
   

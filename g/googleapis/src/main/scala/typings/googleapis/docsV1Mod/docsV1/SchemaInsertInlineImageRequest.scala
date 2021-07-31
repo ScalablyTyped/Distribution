@@ -2,20 +2,18 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts an InlineObject containing an image at the given location.
   */
-@js.native
 trait SchemaInsertInlineImageRequest extends StObject {
   
   /**
     * Inserts the text at the end of a header, footer or the document body.
     * Inline images cannot be inserted inside a footnote.
     */
-  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts the image at a specific index in the document.  The image must be
@@ -24,7 +22,7 @@ trait SchemaInsertInlineImageRequest extends StObject {
     * and its preceding paragraph).  Inline images cannot be inserted inside a
     * footnote or equation.
     */
-  var location: js.UndefOr[SchemaLocation] = js.native
+  var location: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
     * The size that the image should appear as in the document. This property
@@ -36,7 +34,7 @@ trait SchemaInsertInlineImageRequest extends StObject {
     * specified, the image is scaled to fit  within the provided dimensions
     * while maintaining its aspect ratio.
     */
-  var objectSize: js.UndefOr[SchemaSize] = js.native
+  var objectSize: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The image URI.  The image is fetched once at insertion time and a copy is
@@ -46,7 +44,7 @@ trait SchemaInsertInlineImageRequest extends StObject {
     * itself is saved with the image, and exposed via the
     * ImageProperties.content_uri field.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaInsertInlineImageRequest {
   

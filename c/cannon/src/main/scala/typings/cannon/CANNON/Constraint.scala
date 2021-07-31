@@ -2,27 +2,25 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Constraint extends StObject {
   
-  var bodyA: Body = js.native
+  var bodyA: Body
   
-  var bodyB: Body = js.native
+  var bodyB: Body
   
-  var collideConnected: Boolean = js.native
+  var collideConnected: Boolean
   
-  def disable(): Unit = js.native
+  def disable(): Unit
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  var equations: js.Array[_] = js.native
+  var equations: js.Array[js.Any]
   
-  var id: Double = js.native
+  var id: Double
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object Constraint {
   
@@ -33,7 +31,7 @@ object Constraint {
     collideConnected: Boolean,
     disable: () => Unit,
     enable: () => Unit,
-    equations: js.Array[_],
+    equations: js.Array[js.Any],
     id: Double,
     update: () => Unit
   ): Constraint = {
@@ -60,7 +58,7 @@ object Constraint {
     def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquations(value: js.Array[_]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
+    def setEquations(value: js.Array[js.Any]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEquationsVarargs(value: js.Any*): Self = StObject.set(x, "equations", js.Array(value :_*))

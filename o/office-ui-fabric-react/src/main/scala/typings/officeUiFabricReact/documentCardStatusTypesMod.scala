@@ -9,46 +9,45 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardStatusTypesMod {
   
-  @js.native
   trait IDocumentCardStatus extends StObject
   
-  @js.native
-  trait IDocumentCardStatusProps extends Props[DocumentCardStatusBase] {
+  trait IDocumentCardStatusProps
+    extends StObject
+       with Props[DocumentCardStatusBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardStatus]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardStatus]] = js.undefined
     
     /**
       * Describe status information. Required field.
       */
-    var status: String = js.native
+    var status: String
     
     /**
       * Describes DocumentCard status icon.
       */
-    var statusIcon: js.UndefOr[String] = js.native
+    var statusIcon: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardStatusStyleProps, IDocumentCardStatusStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardStatusStyleProps, IDocumentCardStatusStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardStatusProps {
     
@@ -102,18 +101,17 @@ object documentCardStatusTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardStatusStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardStatusStyleProps {
     
@@ -137,10 +135,9 @@ object documentCardStatusTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardStatusStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardStatusStyles {
     

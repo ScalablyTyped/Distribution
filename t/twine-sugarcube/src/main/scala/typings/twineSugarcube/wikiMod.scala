@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.twineSugarcube.extensionsMod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wikiMod {
@@ -16,7 +15,8 @@ object wikiMod {
   
   @js.native
   trait WikifierAPI
-    extends Instantiable2[
+    extends StObject
+       with Instantiable2[
           (/* destination */ Null) | (/* destination */ OutputDestination), 
           /* source */ String, 
           js.Any
@@ -37,12 +37,11 @@ object wikiMod {
     def wikifyEval(text: String): String = js.native
   }
   
-  @js.native
   trait WikifierOptions extends StObject {
     
-    var ignoreTerminatorCase: js.UndefOr[Boolean] = js.native
+    var ignoreTerminatorCase: js.UndefOr[Boolean] = js.undefined
     
-    var profile: String = js.native
+    var profile: String
   }
   object WikifierOptions {
     

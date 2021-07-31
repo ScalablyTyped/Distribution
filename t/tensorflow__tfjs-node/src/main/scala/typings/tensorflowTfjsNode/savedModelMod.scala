@@ -10,14 +10,19 @@ import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object savedModelMod {
   
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-node/dist/saved_model", "TFSavedModel")
   @js.native
-  class TFSavedModel protected () extends InferenceModel {
+  class TFSavedModel protected ()
+    extends StObject
+       with InferenceModel {
     def this(sessionId: Double, jsid: Double, signature: SignatureDefEntry, backend: NodeJSKernelBackend) = this()
     
     var backend: js.Any = js.native
@@ -71,36 +76,27 @@ object savedModelMod {
     var signature: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getEnumKeyFromValue")
-  @js.native
-  def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native
+  @scala.inline
+  def getEnumKeyFromValue(`object`: js.Any, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnumKeyFromValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getMetaGraphsFromSavedModel")
-  @js.native
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
+  @scala.inline
+  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaGraphsFromSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetaGraph]]]
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getNumOfSavedModels")
-  @js.native
-  def getNumOfSavedModels(): Double = js.native
+  @scala.inline
+  def getNumOfSavedModels(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumOfSavedModels")().asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getSignatureDefEntryFromMetaGraphInfo")
-  @js.native
-  def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = js.native
+  @scala.inline
+  def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureDefEntryFromMetaGraphInfo")(savedModelInfo.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[SignatureDefEntry]
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
-  @js.native
-  def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
-  @js.native
-  def loadSavedModel(path: String, tags: js.UndefOr[scala.Nothing], signature: String): js.Promise[TFSavedModel] = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
-  @js.native
-  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
-  @js.native
-  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
+  @scala.inline
+  def loadSavedModel(path: String): js.Promise[TFSavedModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFSavedModel]]
+  @scala.inline
+  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  @scala.inline
+  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  @scala.inline
+  def loadSavedModel(path: String, tags: Unit, signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
   
-  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "readSavedModelProto")
-  @js.native
-  def readSavedModelProto(path: String): js.Promise[_] = js.native
+  @scala.inline
+  def readSavedModelProto(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readSavedModelProto")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

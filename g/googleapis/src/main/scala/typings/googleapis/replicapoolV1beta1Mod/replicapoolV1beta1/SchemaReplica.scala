@@ -2,7 +2,6 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the replica pool, using the template provided by the user. You cannot
   * directly create replicas.
   */
-@js.native
 trait SchemaReplica extends StObject {
   
   /**
     * [Output Only] The name of the Replica object.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The self-link of the Replica.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Last known status of the Replica.
     */
-  var status: js.UndefOr[SchemaReplicaStatus] = js.native
+  var status: js.UndefOr[SchemaReplicaStatus] = js.undefined
 }
 object SchemaReplica {
   

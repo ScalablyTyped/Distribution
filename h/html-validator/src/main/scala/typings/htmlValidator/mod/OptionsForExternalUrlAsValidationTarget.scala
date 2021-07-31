@@ -2,13 +2,13 @@ package typings.htmlValidator.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionsForExternalUrlAsValidationTarget extends BasicOptions {
+trait OptionsForExternalUrlAsValidationTarget
+  extends StObject
+     with BasicOptions {
   
-  var url: String = js.native
+  var url: String
 }
 object OptionsForExternalUrlAsValidationTarget {
   

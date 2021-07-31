@@ -7,36 +7,54 @@ import typings.gherkin.igherkinoptionsMod.IGherkinOptions
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gherkinExeMod {
   
   @JSImport("gherkin/dist/src/external/GherkinExe", JSImport.Default)
   @js.native
-  class default protected () extends GherkinExe {
+  class default protected ()
+    extends StObject
+       with GherkinExe {
     def this(
       gherkinExe: String,
       paths: js.Array[String],
       envelopes: js.Array[IEnvelope],
       options: IGherkinOptions
     ) = this()
+    
+    /* CompleteClass */
+    override def dialects(): StringDictionary[Dialect] = js.native
+    
+    /* CompleteClass */
+    override val envelopes: js.Any = js.native
+    
+    /* CompleteClass */
+    override val gherkinExe: js.Any = js.native
+    
+    /* CompleteClass */
+    override def messageStream(): Readable = js.native
+    
+    /* CompleteClass */
+    override val options: js.Any = js.native
+    
+    /* CompleteClass */
+    override val paths: js.Any = js.native
   }
   
-  @js.native
   trait GherkinExe extends StObject {
     
-    def dialects(): StringDictionary[Dialect] = js.native
+    def dialects(): StringDictionary[Dialect]
     
-    val envelopes: js.Any = js.native
+    val envelopes: js.Any
     
-    val gherkinExe: js.Any = js.native
+    val gherkinExe: js.Any
     
-    def messageStream(): Readable = js.native
+    def messageStream(): Readable
     
-    val options: js.Any = js.native
+    val options: js.Any
     
-    val paths: js.Any = js.native
+    val paths: js.Any
   }
   object GherkinExe {
     

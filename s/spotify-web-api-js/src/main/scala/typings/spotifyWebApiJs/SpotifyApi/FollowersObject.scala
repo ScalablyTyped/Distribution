@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Followers Object
   * [](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait FollowersObject extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var total: Double = js.native
+  var total: Double
 }
 object FollowersObject {
   

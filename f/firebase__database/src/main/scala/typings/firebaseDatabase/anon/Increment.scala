@@ -2,13 +2,11 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Increment extends StObject {
   
-  var increment: Double = js.native
+  var increment: Double
 }
 object Increment {
   

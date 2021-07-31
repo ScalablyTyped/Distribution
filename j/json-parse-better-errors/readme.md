@@ -11,8 +11,8 @@ JSON.parse with context information on error
 | Full name          | json-parse-better-errors |
 | Keywords           | JSON, parser |
 | # releases         | 0 |
-| # dependents       | 101 |
-| # downloads        | 504893826 |
+| # dependents       | 142 |
+| # downloads        | 609806257 |
 | # stars            | 0 |
 
 ## Links

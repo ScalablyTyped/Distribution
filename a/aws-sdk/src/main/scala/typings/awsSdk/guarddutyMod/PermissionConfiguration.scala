@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionConfiguration extends StObject {
   
   /**
     * Contains information about the account level permissions on the S3 bucket.
     */
-  var AccountLevelPermissions: js.UndefOr[typings.awsSdk.guarddutyMod.AccountLevelPermissions] = js.native
+  var AccountLevelPermissions: js.UndefOr[typings.awsSdk.guarddutyMod.AccountLevelPermissions] = js.undefined
   
   /**
     * Contains information about the bucket level permissions for the S3 bucket.
     */
-  var BucketLevelPermissions: js.UndefOr[typings.awsSdk.guarddutyMod.BucketLevelPermissions] = js.native
+  var BucketLevelPermissions: js.UndefOr[typings.awsSdk.guarddutyMod.BucketLevelPermissions] = js.undefined
 }
 object PermissionConfiguration {
   

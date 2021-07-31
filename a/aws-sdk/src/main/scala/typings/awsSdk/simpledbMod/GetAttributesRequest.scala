@@ -2,31 +2,29 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAttributesRequest extends StObject {
   
   /**
     * The names of the attributes.
     */
-  var AttributeNames: js.UndefOr[AttributeNameList] = js.native
+  var AttributeNames: js.UndefOr[AttributeNameList] = js.undefined
   
   /**
     * Determines whether or not strong consistency should be enforced when data is read from SimpleDB. If true, any data previously written to SimpleDB will be returned. Otherwise, results will be consistent eventually, and the client may not see data that was written immediately before your read.
     */
-  var ConsistentRead: js.UndefOr[Boolean] = js.native
+  var ConsistentRead: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the domain in which to perform the operation.
     */
-  var DomainName: String = js.native
+  var DomainName: String
   
   /**
     * The name of the item.
     */
-  var ItemName: String = js.native
+  var ItemName: String
 }
 object GetAttributesRequest {
   

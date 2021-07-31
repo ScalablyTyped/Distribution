@@ -14,17 +14,15 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listPropsTypeMod {
   
-  @js.native
   trait BriefProps extends StObject {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object BriefProps {
     
@@ -51,28 +49,27 @@ object listPropsTypeMod {
     }
   }
   
-  @js.native
   trait ListItemPropsType extends StObject {
     
-    var activeStyle: js.UndefOr[CSSProperties] = js.native
+    var activeStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var align: js.UndefOr[top | middle | bottom] = js.native
+    var align: js.UndefOr[top | middle | bottom] = js.undefined
     
-    var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.native
+    var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var multipleLine: js.UndefOr[Boolean] = js.native
+    var multipleLine: js.UndefOr[Boolean] = js.undefined
     
-    var platform: js.UndefOr[android | ios] = js.native
+    var platform: js.UndefOr[android | ios] = js.undefined
     
-    var thumb: js.UndefOr[ReactNode | Null] = js.native
+    var thumb: js.UndefOr[ReactNode | Null] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object ListItemPropsType {
     
@@ -150,12 +147,11 @@ object listPropsTypeMod {
     }
   }
   
-  @js.native
   trait ListPropsType extends StObject {
     
-    var renderFooter: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.native
+    var renderFooter: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
     
-    var renderHeader: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.native
+    var renderHeader: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
   }
   object ListPropsType {
     

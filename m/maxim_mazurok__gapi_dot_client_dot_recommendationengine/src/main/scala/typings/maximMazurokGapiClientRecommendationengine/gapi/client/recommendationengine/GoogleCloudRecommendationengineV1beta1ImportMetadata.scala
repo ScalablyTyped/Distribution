@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ImportMetadata extends StObject {
   
   /** Operation create time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Count of entries that encountered errors while processing. */
-  var failureCount: js.UndefOr[String] = js.native
+  var failureCount: js.UndefOr[String] = js.undefined
   
   /** Name of the operation. */
-  var operationName: js.UndefOr[String] = js.native
+  var operationName: js.UndefOr[String] = js.undefined
   
   /** Id of the request / operation. This is parroting back the requestId that was passed in the request. */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** Count of entries that were processed successfully. */
-  var successCount: js.UndefOr[String] = js.native
+  var successCount: js.UndefOr[String] = js.undefined
   
   /** Operation last update time. If the operation is done, this is also the finish time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ImportMetadata {
   

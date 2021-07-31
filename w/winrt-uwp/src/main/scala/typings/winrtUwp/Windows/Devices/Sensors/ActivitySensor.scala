@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an activity sensor that provides the activity and status of a sensor. */
 @js.native
 trait ActivitySensor extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(
     `type`: readingchanged,
@@ -36,7 +35,7 @@ trait ActivitySensor extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the sensor reports a new sensor reading. */
-  def onreadingchanged(ev: ActivitySensorReadingChangedEventArgs with WinRTEvent[ActivitySensor]): Unit = js.native
+  def onreadingchanged(ev: ActivitySensorReadingChangedEventArgs & WinRTEvent[ActivitySensor]): Unit = js.native
   /** Occurs each time the sensor reports a new sensor reading. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[ActivitySensor, ActivitySensorReadingChangedEventArgs] = js.native
@@ -44,7 +43,7 @@ trait ActivitySensor extends StObject {
   /** Gets the power in milliwatts that the sensor consumes. */
   var powerInMilliwatts: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(
     `type`: readingchanged,

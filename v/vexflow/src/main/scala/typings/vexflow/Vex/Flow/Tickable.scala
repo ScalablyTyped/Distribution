@@ -3,57 +3,55 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tickable extends StObject {
   
-  def addModifier(mod: Modifier): Tickable = js.native
+  def addModifier(mod: Modifier): Tickable
   
-  def addToModifierContext(mc: ModifierContext): Unit = js.native
+  def addToModifierContext(mc: ModifierContext): Unit
   
-  def applyTickMultiplier(numerator: Double, denominator: Double): Unit = js.native
+  def applyTickMultiplier(numerator: Double, denominator: Double): Unit
   
-  def getBoundingBox(): BoundingBox = js.native
+  def getBoundingBox(): BoundingBox
   
-  def getCenterXShift(): Double = js.native
+  def getCenterXShift(): Double
   
-  def getIntrinsicTicks(): Fraction = js.native
+  def getIntrinsicTicks(): Fraction
   
-  def getTickMultiplier(): Fraction = js.native
+  def getTickMultiplier(): Fraction
   
-  def getTicks(): Fraction = js.native
+  def getTicks(): Fraction
   
-  def getTuplet(): Tuplet = js.native
+  def getTuplet(): Tuplet
   
-  def getVoice(): Voice = js.native
+  def getVoice(): Voice
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
-  def isCenterAligned(): Boolean = js.native
+  def isCenterAligned(): Boolean
   
-  def postFormat(): Tickable = js.native
+  def postFormat(): Tickable
   
-  def preFormat(): Unit = js.native
+  def preFormat(): Unit
   
-  def setCenterAlignment(align_center: Boolean): Tickable = js.native
+  def setCenterAlignment(align_center: Boolean): Tickable
   
-  def setContext(context: IRenderContext): Unit = js.native
+  def setContext(context: IRenderContext): Unit
   
-  def setDuration(duration: Fraction): Unit = js.native
+  def setDuration(duration: Fraction): Unit
   
-  def setIntrinsicTicks(intrinsicTicks: Fraction): Unit = js.native
+  def setIntrinsicTicks(intrinsicTicks: Fraction): Unit
   
-  def setTickContext(tc: TickContext): Unit = js.native
+  def setTickContext(tc: TickContext): Unit
   
-  def setTuplet(tuplet: Tuplet): Tickable = js.native
+  def setTuplet(tuplet: Tuplet): Tickable
   
-  def setVoice(voice: Voice): Unit = js.native
+  def setVoice(voice: Voice): Unit
   
-  def setXShift(x: Double): Tickable = js.native
+  def setXShift(x: Double): Tickable
   
-  def shouldIgnoreTicks(): Boolean = js.native
+  def shouldIgnoreTicks(): Boolean
 }
 object Tickable {
   

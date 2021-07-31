@@ -3,47 +3,45 @@ package typings.antDesignReactNative
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textareaItemPropsTypeMod {
   
   type TextAreaEventHandle = js.Function1[/* val */ js.UndefOr[String], Unit]
   
-  @js.native
   trait TextAreaItemPropsType extends StObject {
     
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
-    var clear: js.UndefOr[Boolean] = js.native
+    var clear: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var labelNumber: js.UndefOr[Double] = js.native
+    var labelNumber: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[TextAreaEventHandle] = js.native
+    var onChange: js.UndefOr[TextAreaEventHandle] = js.undefined
     
-    var onErrorClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onErrorClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TextAreaItemPropsType {
     

@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.contactchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a database that contains contacts. */
 @js.native
 trait ContactStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactStore, ContactChangedEventArgs]): Unit = js.native
   
@@ -43,7 +42,7 @@ trait ContactStore extends StObject {
     * Asynchronously returns the list of ContactList objects.
     * @return The list of ContactList objects.
     */
-  def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Retrieves the list of all contacts in the contact store.
@@ -90,12 +89,12 @@ trait ContactStore extends StObject {
   def getMeContactAsync(): IPromiseWithIAsyncOperation[Contact] = js.native
   
   /** Occurs when a Contact in the ContactStore has been changed. */
-  def oncontactchanged(ev: ContactChangedEventArgs with WinRTEvent[ContactStore]): Unit = js.native
+  def oncontactchanged(ev: ContactChangedEventArgs & WinRTEvent[ContactStore]): Unit = js.native
   /** Occurs when a Contact in the ContactStore has been changed. */
   @JSName("oncontactchanged")
   var oncontactchanged_Original: TypedEventHandler[ContactStore, ContactChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactStore, ContactChangedEventArgs]): Unit = js.native
 }

@@ -4,10 +4,8 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseBin extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait BaseBin extends StObject {
     * __Default value:__ `10`
     *
     */
-  var base: js.UndefOr[Double | SignalRef] = js.native
+  var base: js.UndefOr[Double | SignalRef] = js.undefined
   
   /**
     * Scale factors indicating allowable subdivisions. The default value is [5, 2], which indicates that for base 10 numbers (the default base), the method may consider dividing bin sizes by 5 and/or 2. For example, for an initial step size of 10, the method can check if bin sizes of 2 (= 10/5), 5 (= 10/2), or 1 (= 10/(5*2)) might also satisfy the given constraints.
@@ -25,7 +23,7 @@ trait BaseBin extends StObject {
     *
     * @minItems 1
     */
-  var divide: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var divide: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
   /**
     * Maximum number of bins.
@@ -34,30 +32,30 @@ trait BaseBin extends StObject {
     *
     * @minimum 2
     */
-  var maxbins: js.UndefOr[Double | SignalRef] = js.native
+  var maxbins: js.UndefOr[Double | SignalRef] = js.undefined
   
   /**
     * A minimum allowable step size (particularly useful for integer values).
     */
-  var minstep: js.UndefOr[Double | SignalRef] = js.native
+  var minstep: js.UndefOr[Double | SignalRef] = js.undefined
   
   /**
     * If true (the default), attempts to make the bin boundaries use human-friendly boundaries, such as multiples of ten.
     */
-  var nice: js.UndefOr[Boolean | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | SignalRef] = js.undefined
   
   /**
     * An exact step size to use between bins.
     *
     * __Note:__ If provided, options such as maxbins will be ignored.
     */
-  var step: js.UndefOr[Double | SignalRef] = js.native
+  var step: js.UndefOr[Double | SignalRef] = js.undefined
   
   /**
     * An array of allowable step sizes to choose from.
     * @minItems 1
     */
-  var steps: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var steps: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
 }
 object BaseBin {
   

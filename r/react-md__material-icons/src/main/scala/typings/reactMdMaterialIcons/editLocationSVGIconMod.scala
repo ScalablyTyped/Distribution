@@ -6,12 +6,11 @@ import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editLocationSVGIconMod {
   
   @JSImport("@react-md/material-icons/types/EditLocationSVGIcon", "EditLocationSVGIcon")
   @js.native
-  val EditLocationSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
+  val EditLocationSVGIcon: ForwardRefExoticComponent[SVGIconProps & RefAttributes[SVGSVGElement]] = js.native
 }

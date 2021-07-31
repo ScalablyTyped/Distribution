@@ -2,17 +2,15 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurState extends StObject {
   
   /** The current connection state. */
-  var curState: String = js.native
+  var curState: String
   
   /**  The previous connection state. */
-  var prevState: String = js.native
+  var prevState: String
 }
 object CurState {
   

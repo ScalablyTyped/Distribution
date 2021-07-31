@@ -8,7 +8,6 @@ import typings.chai.Chai.TypeComparison
 import typings.chaiLike.mod.ChaiLike.ChaiLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,12 +26,11 @@ object mod extends Shortcut {
       def extend(plugin: Plugin): Unit = js.native
     }
     
-    @js.native
     trait Plugin extends StObject {
       
-      def assert(`object`: js.Any, expected: js.Any): Boolean = js.native
+      def assert(`object`: js.Any, expected: js.Any): Boolean
       
-      def `match`(`object`: js.Any, expected: js.Any): Boolean = js.native
+      def `match`(`object`: js.Any, expected: js.Any): Boolean
     }
     object Plugin {
       
@@ -66,7 +64,8 @@ object mod extends Shortcut {
       
       @js.native
       trait Assertion
-        extends LanguageChains
+        extends StObject
+           with LanguageChains
            with NumericComparison
            with TypeComparison {
         

@@ -3,18 +3,18 @@ package typings.iobroker.mod.global.ioBroker
 import typings.iobroker.objectsMod.global.ioBroker.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetObjectListItem extends GetObjectViewItem {
+trait GetObjectListItem
+  extends StObject
+     with GetObjectViewItem {
   
   /** The same as @link{value} */
-  var doc: Object = js.native
+  var doc: Object
   
   /** A copy of the object */
   @JSName("value")
-  var value_GetObjectListItem: Object = js.native
+  var value_GetObjectListItem: Object
 }
 object GetObjectListItem {
   

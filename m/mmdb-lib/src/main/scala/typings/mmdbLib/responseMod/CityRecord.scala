@@ -2,17 +2,15 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CityRecord extends StObject {
   
-  val confidence: js.UndefOr[Double] = js.native
+  val confidence: js.UndefOr[Double] = js.undefined
   
-  val geoname_id: Double = js.native
+  val geoname_id: Double
   
-  val names: Names = js.native
+  val names: Names
 }
 object CityRecord {
   

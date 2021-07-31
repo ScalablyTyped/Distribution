@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * An URL to an image with a default lifetime of 30 minutes. This URL is tagged with the account of the requester. Anyone with the URL effectively accesses the image as the original
     * requester. Access to the image may be lost if the presentation's sharing settings change.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /** The properties of the image. */
-  var imageProperties: js.UndefOr[ImageProperties] = js.native
+  var imageProperties: js.UndefOr[ImageProperties] = js.undefined
   
   /** The source URL is the URL used to insert the image. The source URL can be empty. */
-  var sourceUrl: js.UndefOr[String] = js.native
+  var sourceUrl: js.UndefOr[String] = js.undefined
 }
 object Image {
   

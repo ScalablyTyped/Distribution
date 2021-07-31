@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.mask
 import typings.arcgisJsApi.arcgisJsApiStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneModificationProperties extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SceneModificationProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#geometry)
     */
-  var geometry: js.UndefOr[PolygonProperties] = js.native
+  var geometry: js.UndefOr[PolygonProperties] = js.undefined
   
   /**
     * The type of modification to perform.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#type)
     */
-  var `type`: js.UndefOr[clip | mask | replace] = js.native
+  var `type`: js.UndefOr[clip | mask | replace] = js.undefined
 }
 object SceneModificationProperties {
   

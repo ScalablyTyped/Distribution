@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePartitionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the partition to be updated resides. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database in which the table in question resides.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * The new partition object to update the partition to. The Values property can't be changed. If you want to change the partition key values for a partition, delete and recreate the partition.
     */
-  var PartitionInput: typings.awsSdk.glueMod.PartitionInput = js.native
+  var PartitionInput: typings.awsSdk.glueMod.PartitionInput
   
   /**
     * List of partition key values that define the partition to update.
     */
-  var PartitionValueList: BoundedPartitionValueList = js.native
+  var PartitionValueList: BoundedPartitionValueList
   
   /**
     * The name of the table in which the partition to be updated is located.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object UpdatePartitionRequest {
   

@@ -5,7 +5,6 @@ import typings.lodashDecorators.commonMod.BiTypedMethodDecorator1
 import typings.lodashDecorators.sharedMod.MemoizeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoizeAllMod extends Shortcut {

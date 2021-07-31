@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ordered series of geographic points. */
-@js.native
 trait Geopath extends StObject {
   
   /** Gets the altitude reference system used by the Geopath . */
-  var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
+  var altitudeReferenceSystem: AltitudeReferenceSystem
   
   /** Gets the type of geographic shape represented by the Geopath . */
-  var geoshapeType: GeoshapeType = js.native
+  var geoshapeType: GeoshapeType
   
   /** Gets the collection of geographic points that define the Geopath . */
-  var positions: IVectorView[BasicGeoposition] = js.native
+  var positions: IVectorView[BasicGeoposition]
   
   /** Gets the spatial reference ID (SRID) used by the Geopath . */
-  var spatialReferenceId: Double = js.native
+  var spatialReferenceId: Double
 }
 object Geopath {
   

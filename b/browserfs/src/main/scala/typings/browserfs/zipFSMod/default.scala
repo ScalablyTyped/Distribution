@@ -5,7 +5,6 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", JSImport.Default)
@@ -18,13 +17,17 @@ class default protected () extends ZipFS {
   def this(input: Buffer) = this()
   def this(input: ZipTOC, name: String) = this()
   def this(input: Buffer, name: String) = this()
-  def this(input: ZipTOC, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(input: ZipTOC, name: String, deprecateMsg: Boolean) = this()
-  def this(input: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+  def this(input: ZipTOC, name: Unit, deprecateMsg: Boolean) = this()
   def this(input: Buffer, name: String, deprecateMsg: Boolean) = this()
+  def this(input: Buffer, name: Unit, deprecateMsg: Boolean) = this()
 }
 /* static members */
 object default {
+  
+  @JSImport("browserfs/dist/node/backend/ZipFS", JSImport.Default)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("browserfs/dist/node/backend/ZipFS", "default.CompressionMethod")
   @js.native
@@ -33,9 +36,8 @@ object default {
   /**
     * Constructs a ZipFS instance with the given options.
     */
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.Create")
-  @js.native
-  def Create(opts: ZipFSOptions, cb: BFSCallback[ZipFS]): Unit = js.native
+  @scala.inline
+  def Create(opts: ZipFSOptions, cb: BFSCallback[ZipFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("browserfs/dist/node/backend/ZipFS", "default.Name")
   @js.native
@@ -45,8 +47,7 @@ object default {
   @js.native
   val Options: FileSystemOptions = js.native
   
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.RegisterDecompressionMethod")
-  @js.native
+  @scala.inline
   def RegisterDecompressionMethod(
     m: typings.browserfs.zipFSMod.CompressionMethod,
     fcn: js.Function4[
@@ -56,24 +57,20 @@ object default {
       /* flags */ Double, 
       Buffer
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDecompressionMethod")(m.asInstanceOf[js.Any], fcn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.addToIndex")
-  @js.native
-  def addToIndex(cd: js.Any, index: js.Any): js.Any = js.native
+  @scala.inline
+  def addToIndex(cd: js.Any, index: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addToIndex")(cd.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * **Deprecated. Please use ZipFS.Create() method instead.**
     */
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.computeIndex")
-  @js.native
-  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit]): Unit = js.native
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.computeIndex")
-  @js.native
-  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit], deprecateMsg: Boolean): Unit = js.native
+  @scala.inline
+  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit], deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.computeIndexResponsive")
-  @js.native
+  @scala.inline
   def computeIndexResponsive(
     data: js.Any,
     index: js.Any,
@@ -82,17 +79,15 @@ object default {
     cb: js.Any,
     cdEntries: js.Any,
     eocd: js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndexResponsive")(data.asInstanceOf[js.Any], index.asInstanceOf[js.Any], cdPtr.asInstanceOf[js.Any], cdEnd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], cdEntries.asInstanceOf[js.Any], eocd.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Locates the end of central directory record at the end of the file.
     * Throws an exception if it cannot be found.
     */
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.getEOCD")
-  @js.native
-  def getEOCD(data: js.Any): js.Any = js.native
+  @scala.inline
+  def getEOCD(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEOCD")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("browserfs/dist/node/backend/ZipFS", "default.isAvailable")
-  @js.native
-  def isAvailable(): Boolean = js.native
+  @scala.inline
+  def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
 }

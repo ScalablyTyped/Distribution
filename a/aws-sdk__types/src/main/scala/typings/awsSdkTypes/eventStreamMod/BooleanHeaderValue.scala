@@ -3,22 +3,22 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.awsSdkTypes.awsSdkTypesStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BooleanHeaderValue extends MessageHeaderValue {
+trait BooleanHeaderValue
+  extends StObject
+     with MessageHeaderValue {
   
-  var `type`: boolean = js.native
+  var `type`: boolean
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object BooleanHeaderValue {
   
   @scala.inline
-  def apply(`type`: boolean, value: Boolean): BooleanHeaderValue = {
+  def apply(value: Boolean): BooleanHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanHeaderValue]
   }
   

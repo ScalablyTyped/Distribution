@@ -2,29 +2,27 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var duration: String = js.native
+  var duration: String
   
-  var font: js.UndefOr[Family] = js.native
+  var font: js.UndefOr[Family] = js.undefined
   
-  var glyph: js.UndefOr[String] = js.native
+  var glyph: js.UndefOr[String] = js.undefined
   
-  var ignore_ticks: js.UndefOr[Boolean] = js.native
+  var ignore_ticks: js.UndefOr[Boolean] = js.undefined
   
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
-  var smooth: js.UndefOr[Boolean] = js.native
+  var smooth: js.UndefOr[Boolean] = js.undefined
   
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Font {
   

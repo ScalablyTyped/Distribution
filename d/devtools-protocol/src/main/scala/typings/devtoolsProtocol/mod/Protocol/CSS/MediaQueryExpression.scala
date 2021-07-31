@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQueryExpression extends StObject {
   
   /**
     * Computed length of media query expression (if applicable).
     */
-  var computedLength: js.UndefOr[Double] = js.native
+  var computedLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Media query expression feature.
     */
-  var feature: String = js.native
+  var feature: String
   
   /**
     * Media query expression units.
     */
-  var unit: String = js.native
+  var unit: String
   
   /**
     * Media query expression value.
     */
-  var value: Double = js.native
+  var value: Double
   
   /**
     * The associated range of the value text in the enclosing stylesheet (if available).
     */
-  var valueRange: js.UndefOr[SourceRange] = js.native
+  var valueRange: js.UndefOr[SourceRange] = js.undefined
 }
 object MediaQueryExpression {
   

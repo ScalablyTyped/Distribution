@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryResultItem extends StObject {
   
   /**
     * The time inventory item data was captured.
     */
-  var CaptureTime: js.UndefOr[InventoryItemCaptureTime] = js.native
+  var CaptureTime: js.UndefOr[InventoryItemCaptureTime] = js.undefined
   
   /**
     * Contains all the inventory data of the item type. Results include attribute names and values. 
     */
-  var Content: InventoryItemEntryList = js.native
+  var Content: InventoryItemEntryList
   
   /**
     * MD5 hash of the inventory item type contents. The content hash is used to determine whether to update inventory information. The PutInventory API does not update the inventory item type contents if the MD5 hash has not changed since last update. 
     */
-  var ContentHash: js.UndefOr[InventoryItemContentHash] = js.native
+  var ContentHash: js.UndefOr[InventoryItemContentHash] = js.undefined
   
   /**
     * The schema version for the inventory result item/
     */
-  var SchemaVersion: InventoryItemSchemaVersion = js.native
+  var SchemaVersion: InventoryItemSchemaVersion
   
   /**
     * The name of the inventory result item type.
     */
-  var TypeName: InventoryItemTypeName = js.native
+  var TypeName: InventoryItemTypeName
 }
 object InventoryResultItem {
   

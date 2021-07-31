@@ -3,15 +3,13 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalFormattingBaseRule extends StObject {
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var style: js.UndefOr[PartialStyle] = js.native
+  var style: js.UndefOr[PartialStyle] = js.undefined
 }
 object ConditionalFormattingBaseRule {
   

@@ -8,7 +8,6 @@ import typings.dbus.anon.In
 import typings.dbus.anon.Types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,7 +17,12 @@ object mod {
     */
   @JSImport("dbus", JSImport.Namespace)
   @js.native
-  class ^ () extends DBus
+  class ^ ()
+    extends StObject
+       with DBus
+  @JSImport("dbus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Error * / any */ @JSImport("dbus", "Error")
@@ -29,33 +33,27 @@ object mod {
     val dbusName: String = js.native
   }
   
-  @JSImport("dbus", "Signature")
-  @js.native
-  def Signature(`type`: js.Any): String = js.native
+  @scala.inline
+  def Signature(`type`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Signature")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("dbus", "getBus")
-  @js.native
-  def getBus(`type`: busType): DBusConnection = js.native
+  @scala.inline
+  def getBus(`type`: busType): DBusConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("getBus")(`type`.asInstanceOf[js.Any]).asInstanceOf[DBusConnection]
   
-  @JSImport("dbus", "registerService")
-  @js.native
-  def registerService(busName: busType): DBusService = js.native
-  @JSImport("dbus", "registerService")
-  @js.native
-  def registerService(busName: busType, serviceName: String): DBusService = js.native
+  @scala.inline
+  def registerService(busName: busType): DBusService = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any]).asInstanceOf[DBusService]
+  @scala.inline
+  def registerService(busName: busType, serviceName: String): DBusService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[DBusService]
   
   type AnyInterfaceMethod = StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]
   
   /**
     * @deprecated
     */
-  @js.native
   trait DBus extends StObject
   
-  @js.native
   trait DBusConnection extends StObject {
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
     /* tslint:disable-next-line:no-unnecessary-generics */
     def getInterface[T](
@@ -63,11 +61,11 @@ object mod {
       objectPath: String,
       interfaceName: String,
       callback: js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[T], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def getUniqueServiceName(serviceName: String, callback: js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]): Unit = js.native
+    def getUniqueServiceName(serviceName: String, callback: js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]): Unit
     
-    def reconnect(callback: js.Function0[Unit]): Unit = js.native
+    def reconnect(callback: js.Function0[Unit]): Unit
   }
   object DBusConnection {
     
@@ -101,20 +99,19 @@ object mod {
     }
   }
   
-  type DBusInterface[T] = Bus with (PickMatching[T, js.Function1[/* repeated */ _, Unit]])
+  type DBusInterface[T] = Bus & (PickMatching[T, js.Function1[/* repeated */ js.Any, Unit]])
   
-  @js.native
   trait DBusService extends StObject {
     
-    var bus: DBusConnection = js.native
+    var bus: DBusConnection
     
-    def createObject(path: String): DBusServiceObject = js.native
+    def createObject(path: String): DBusServiceObject
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def removeObject(service: DBusServiceObject): Unit = js.native
+    def removeObject(service: DBusServiceObject): Unit
     
-    var serviceName: String = js.native
+    var serviceName: String
   }
   object DBusService {
     
@@ -150,7 +147,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DBusServiceInterface extends StObject {
     
     def addMethod(
@@ -162,19 +158,19 @@ object mod {
           /* callback */ js.Function1[/* res */ js.Any, Unit], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
-    def addProperty(name: String, opts: Getter): Unit = js.native
+    def addProperty(name: String, opts: Getter): Unit
     
-    def addSignal(name: String, opts: Types): Unit = js.native
+    def addSignal(name: String, opts: Types): Unit
     
-    def emitSignal(name: String, values: js.Any*): Unit = js.native
+    def emitSignal(name: String, values: js.Any*): Unit
     
-    var name: String = js.native
+    var name: String
     
-    var `object`: DBusServiceObject = js.native
+    var `object`: DBusServiceObject
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object DBusServiceInterface {
     
@@ -231,14 +227,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DBusServiceObject extends StObject {
     
-    def createInterface(name: String): DBusServiceInterface = js.native
+    def createInterface(name: String): DBusServiceInterface
     
-    var path: String = js.native
+    var path: String
     
-    var service: DBusService = js.native
+    var service: DBusService
   }
   object DBusServiceObject {
     
@@ -264,7 +259,7 @@ object mod {
   
   type PickMatching[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] extends U? T[P] : never}
-    */ typings.dbus.dbusStrings.PickMatching with TopLevel[js.Any]
+    */ typings.dbus.dbusStrings.PickMatching & TopLevel[js.Any]
   
   type PropsCB = js.Function2[/* err */ js.UndefOr[Error], /* value */ js.Any, Unit]
   

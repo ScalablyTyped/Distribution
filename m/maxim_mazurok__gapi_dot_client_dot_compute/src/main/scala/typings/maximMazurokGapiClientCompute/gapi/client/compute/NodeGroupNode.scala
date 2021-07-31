@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupNode extends StObject {
   
   /** CPU overcommit. */
-  var cpuOvercommitType: js.UndefOr[String] = js.native
+  var cpuOvercommitType: js.UndefOr[String] = js.undefined
   
   /** Instances scheduled on this node. */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the node. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The type of this node. */
-  var nodeType: js.UndefOr[String] = js.native
+  var nodeType: js.UndefOr[String] = js.undefined
   
   /** Binding properties for the physical server. */
-  var serverBinding: js.UndefOr[ServerBinding] = js.native
+  var serverBinding: js.UndefOr[ServerBinding] = js.undefined
   
   /** Server ID associated with this node. */
-  var serverId: js.UndefOr[String] = js.native
+  var serverId: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object NodeGroupNode {
   

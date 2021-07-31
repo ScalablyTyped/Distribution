@@ -11,8 +11,8 @@ Detect the image type of a Buffer/Uint8Array
 | Full name          | image-type |
 | Keywords           | image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array, png, jpg, jpeg, gif, webp, tif, bmp, jxr, psd, mime |
 | # releases         | 4 |
-| # dependents       | 116 |
-| # downloads        | 1682390 |
+| # dependents       | 127 |
+| # downloads        | 1990304 |
 | # stars            | 11 |
 
 ## Links

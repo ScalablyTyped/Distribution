@@ -9,11 +9,9 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.nothing
 import typings.semanticUiDropdown.semanticUiDropdownStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'action'> */
-@js.native
 trait PickImplaction extends StObject {
   
   var action: activate | select | combo | nothing | hide | (js.ThisFunction3[
@@ -22,7 +20,7 @@ trait PickImplaction extends StObject {
     /* value */ String | `false`, 
     /* element */ JQuery, 
     Unit
-  ]) = js.native
+  ])
 }
 object PickImplaction {
   

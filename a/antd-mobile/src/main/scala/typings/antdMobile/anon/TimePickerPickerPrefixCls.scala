@@ -2,17 +2,15 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerPickerPrefixCls extends StObject {
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var timePickerPickerPrefixCls: String = js.native
+  var timePickerPickerPrefixCls: String
   
-  var timePickerPrefixCls: String = js.native
+  var timePickerPrefixCls: String
 }
 object TimePickerPickerPrefixCls {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesDemoteMasterRequest extends StObject {
   
   /** Contains details about the demoteMaster operation. */
-  var demoteMasterContext: js.UndefOr[DemoteMasterContext] = js.native
+  var demoteMasterContext: js.UndefOr[DemoteMasterContext] = js.undefined
 }
 object InstancesDemoteMasterRequest {
   

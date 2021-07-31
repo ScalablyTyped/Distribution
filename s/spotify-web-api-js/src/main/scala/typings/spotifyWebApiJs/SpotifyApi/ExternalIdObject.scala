@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note that there might be other types available, it couldn't be found in the docs.
   */
-@js.native
 trait ExternalIdObject extends StObject {
   
-  var ean: js.UndefOr[String] = js.native
+  var ean: js.UndefOr[String] = js.undefined
   
-  var isrc: js.UndefOr[String] = js.native
+  var isrc: js.UndefOr[String] = js.undefined
   
-  var upc: js.UndefOr[String] = js.native
+  var upc: js.UndefOr[String] = js.undefined
 }
 object ExternalIdObject {
   

@@ -4,19 +4,17 @@ import typings.sqltoolsFormatter.typesMod.TokenTypes
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Input extends StObject {
     
-    var input: js.Any = js.native
+    var input: js.Any
     
-    var parseKey: js.Any = js.native
+    var parseKey: js.Any
     
-    var regex: js.Any = js.native
+    var regex: js.Any
   }
   object Input {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: js.Any = js.native
+    var key: js.Any
     
-    var quoteChar: js.Any = js.native
+    var quoteChar: js.Any
   }
   object Key {
     
@@ -66,14 +63,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Regex extends StObject {
     
-    var input: String = js.native
+    var input: String
     
-    var regex: RegExp = js.native
+    var regex: RegExp
     
-    var `type`: TokenTypes = js.native
+    var `type`: TokenTypes
   }
   object Regex {
     
@@ -98,12 +94,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Type {
     

@@ -2,31 +2,31 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemTypeFieldInstance extends WorkItemFieldReference {
+trait WorkItemTypeFieldInstance
+  extends StObject
+     with WorkItemFieldReference {
   
   /**
     * The list of field allowed values.
     */
-  var allowedValues: js.Array[String] = js.native
+  var allowedValues: js.Array[String]
   
   /**
     * Indicates whether field value is always required.
     */
-  var alwaysRequired: Boolean = js.native
+  var alwaysRequired: Boolean
   
   /**
     * The list of dependent fields.
     */
-  var dependentFields: js.Array[WorkItemFieldReference] = js.native
+  var dependentFields: js.Array[WorkItemFieldReference]
   
   /**
     * Gets the help text for the field.
     */
-  var helpText: String = js.native
+  var helpText: String
 }
 object WorkItemTypeFieldInstance {
   

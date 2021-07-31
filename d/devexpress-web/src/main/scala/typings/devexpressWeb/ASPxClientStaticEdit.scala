@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a base for client-side static editors whose values cannot be visually changed by end users.
   */
-@js.native
-trait ASPxClientStaticEdit extends ASPxClientEditBase {
+trait ASPxClientStaticEdit
+  extends StObject
+     with ASPxClientEditBase {
   
   /**
     * Occurs on the client side after an end-user clicks within a static editor.
     */
-  var Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]] = js.native
+  var Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]]
 }
 object ASPxClientStaticEdit {
   

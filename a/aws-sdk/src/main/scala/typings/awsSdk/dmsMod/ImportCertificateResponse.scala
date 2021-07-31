@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportCertificateResponse extends StObject {
   
   /**
     * The certificate to be uploaded.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.dmsMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.dmsMod.Certificate] = js.undefined
 }
 object ImportCertificateResponse {
   

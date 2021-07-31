@@ -2,19 +2,17 @@ package typings.webdriverJsExtender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Altitude extends StObject {
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Altitude {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DefineCommand extends StObject {
     
-    def defineCommand(name: String, method: String, path: String): Unit = js.native
+    def defineCommand(name: String, method: String, path: String): Unit
   }
   object DefineCommand {
     

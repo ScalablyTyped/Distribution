@@ -5,31 +5,29 @@ import typings.next.serverRouterMod.PageChecker
 import typings.next.serverRouterMod.Route_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatchAllRoute extends StObject {
   
-  var basePath: String = js.native
+  var basePath: String
   
-  var catchAllRoute: Route_ = js.native
+  var catchAllRoute: Route_
   
-  var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
+  var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.undefined
   
-  var fsRoutes: js.Array[Route_] = js.native
+  var fsRoutes: js.Array[Route_]
   
-  var headers: js.Array[Route_] = js.native
+  var headers: js.Array[Route_]
   
-  var locales: js.Array[String] = js.native
+  var locales: js.Array[String]
   
-  var pageChecker: PageChecker = js.native
+  var pageChecker: PageChecker
   
-  var redirects: js.Array[Route_] = js.native
+  var redirects: js.Array[Route_]
   
-  var rewrites: js.Array[Route_] = js.native
+  var rewrites: js.Array[Route_]
   
-  var useFileSystemPublicRoutes: Boolean = js.native
+  var useFileSystemPublicRoutes: Boolean
 }
 object CatchAllRoute {
   

@@ -11,7 +11,7 @@ Flexible router which can be used in multiple environments
 | Keywords           | routes, event, observer, routing, router |
 | # releases         | 0 |
 | # dependents       | 42 |
-| # downloads        | 382667 |
+| # downloads        | 417115 |
 | # stars            | 7 |
 
 ## Links

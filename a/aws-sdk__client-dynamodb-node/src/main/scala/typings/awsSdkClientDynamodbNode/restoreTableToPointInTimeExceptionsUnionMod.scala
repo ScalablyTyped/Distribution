@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restoreTableToPointInTimeExceptionsUnionMod {
@@ -20,46 +19,44 @@ object restoreTableToPointInTimeExceptionsUnionMod {
   object RestoreTableToPointInTimeExceptionsUnion {
     
     @scala.inline
-    def InternalServerError(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
+      val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError]
     }
     
     @scala.inline
-    def InvalidRestoreTimeException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InvalidRestoreTimeException): typings.awsSdkClientDynamodbNode.typesInvalidRestoreTimeExceptionMod.InvalidRestoreTimeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidRestoreTimeException(): typings.awsSdkClientDynamodbNode.typesInvalidRestoreTimeExceptionMod.InvalidRestoreTimeException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRestoreTimeException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInvalidRestoreTimeExceptionMod.InvalidRestoreTimeException]
     }
     
     @scala.inline
-    def LimitExceededException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.LimitExceededException): typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def LimitExceededException(): typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
     @scala.inline
-    def PointInTimeRecoveryUnavailableException(
-      name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.PointInTimeRecoveryUnavailableException
-    ): typings.awsSdkClientDynamodbNode.typesPointInTimeRecoveryUnavailableExceptionMod.PointInTimeRecoveryUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def PointInTimeRecoveryUnavailableException(): typings.awsSdkClientDynamodbNode.typesPointInTimeRecoveryUnavailableExceptionMod.PointInTimeRecoveryUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "PointInTimeRecoveryUnavailableException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesPointInTimeRecoveryUnavailableExceptionMod.PointInTimeRecoveryUnavailableException]
     }
     
     @scala.inline
-    def TableAlreadyExistsException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableAlreadyExistsException): typings.awsSdkClientDynamodbNode.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def TableAlreadyExistsException(): typings.awsSdkClientDynamodbNode.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException = {
+      val __obj = js.Dynamic.literal(name = "TableAlreadyExistsException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException]
     }
     
     @scala.inline
-    def TableInUseException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableInUseException): typings.awsSdkClientDynamodbNode.typesTableInUseExceptionMod.TableInUseException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def TableInUseException(): typings.awsSdkClientDynamodbNode.typesTableInUseExceptionMod.TableInUseException = {
+      val __obj = js.Dynamic.literal(name = "TableInUseException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesTableInUseExceptionMod.TableInUseException]
     }
     
     @scala.inline
-    def TableNotFoundException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableNotFoundException): typings.awsSdkClientDynamodbNode.typesTableNotFoundExceptionMod.TableNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def TableNotFoundException(): typings.awsSdkClientDynamodbNode.typesTableNotFoundExceptionMod.TableNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "TableNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesTableNotFoundExceptionMod.TableNotFoundException]
     }
   }

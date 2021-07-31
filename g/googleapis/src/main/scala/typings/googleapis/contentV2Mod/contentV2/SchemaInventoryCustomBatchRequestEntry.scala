@@ -2,40 +2,38 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch inventory request.
   */
-@js.native
 trait SchemaInventoryCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * Price and availability of the product.
     */
-  var inventory: js.UndefOr[SchemaInventory] = js.native
+  var inventory: js.UndefOr[SchemaInventory] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product for which to update price and availability.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The code of the store for which to update price and availability. Use
     * online to update price and availability of an online product.
     */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
 }
 object SchemaInventoryCustomBatchRequestEntry {
   

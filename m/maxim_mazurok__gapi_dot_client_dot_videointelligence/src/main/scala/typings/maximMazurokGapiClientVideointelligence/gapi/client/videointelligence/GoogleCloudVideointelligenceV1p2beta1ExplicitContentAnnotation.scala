@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation extends StObject {
   
   /** All video frames where explicit content was detected. */
-  var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame]] = js.native
+  var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame]] = js.undefined
   
   /** Feature version. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation {
   

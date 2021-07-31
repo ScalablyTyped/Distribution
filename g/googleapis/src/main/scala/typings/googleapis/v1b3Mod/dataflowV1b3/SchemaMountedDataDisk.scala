@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes mounted data disk.
   */
-@js.native
 trait SchemaMountedDataDisk extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaMountedDataDisk extends StObject {
     * Platform project and uniquely identifies the disk within that project,
     * for example &quot;myproject-1014-104817-4c2-harness-0-disk-1&quot;.
     */
-  var dataDisk: js.UndefOr[String] = js.native
+  var dataDisk: js.UndefOr[String] = js.undefined
 }
 object SchemaMountedDataDisk {
   

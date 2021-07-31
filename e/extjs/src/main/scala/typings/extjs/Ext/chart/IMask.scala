@@ -3,14 +3,14 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMask extends IBase {
+trait IMask
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean/String) */
-  var mask: js.UndefOr[js.Any] = js.native
+  var mask: js.UndefOr[js.Any] = js.undefined
 }
 object IMask {
   

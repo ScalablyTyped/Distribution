@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaGlobalSecondaryIndexDescription extends StObject {
   
   /**
     * The name of the global secondary index.
     */
-  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.native
+  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.undefined
   
   /**
     * If not described, uses the source table GSI's read capacity settings.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[typings.awsSdk.dynamodbMod.ProvisionedThroughputOverride] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[typings.awsSdk.dynamodbMod.ProvisionedThroughputOverride] = js.undefined
 }
 object ReplicaGlobalSecondaryIndexDescription {
   

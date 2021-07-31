@@ -8,7 +8,6 @@ import typings.chromeApps.chrome.storage.StorageChange
 import typings.chromeApps.chrome.storage.SyncStorageArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.sockets.*

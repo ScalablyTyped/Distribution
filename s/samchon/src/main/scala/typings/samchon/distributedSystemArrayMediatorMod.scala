@@ -5,7 +5,6 @@ import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.mediatorSystemMod.MediatorSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributedSystemArrayMediatorMod {

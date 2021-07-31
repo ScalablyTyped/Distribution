@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.model
 import typings.openui5.anon.TypeofFilterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBinding extends Binding {
+trait ListBinding
+  extends StObject
+     with Binding {
   
   /**
     * Attach event-handler <code>fnFunction</code> to the 'filter' event of this
@@ -52,7 +53,7 @@ trait ListBinding extends Binding {
     * behaviour applies
     * @returns returns <code>this</code> to facilitate method chaining
     */
-  def filter(aFilters: js.Array[_], sFilterType: TypeofFilterType): ListBinding = js.native
+  def filter(aFilters: js.Array[js.Any], sFilterType: TypeofFilterType): ListBinding = js.native
   
   /**
     * Returns an array of binding contexts for the bound target list.<strong>Note:</strong>The public
@@ -80,8 +81,8 @@ trait ListBinding extends Binding {
     * @param sPath the relative binding path
     * @returns the array of distinct values.
     */
-  def getDistinctValues(): js.Array[_] = js.native
-  def getDistinctValues(sPath: String): js.Array[_] = js.native
+  def getDistinctValues(): js.Array[js.Any] = js.native
+  def getDistinctValues(sPath: String): js.Array[js.Any] = js.native
   
   /**
     * Gets the group for the given context.Must only be called if isGrouped() returns that grouping is

@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DestinationConfiguration extends StObject {
   
   /**
     * The name of the S3 bucket to which dataset contents are delivered.
     */
-  var bucket: BucketName = js.native
+  var bucket: BucketName
   
   /**
     * Configuration information for coordination with AWS Glue, a fully managed extract, transform and load (ETL) service.
     */
-  var glueConfiguration: js.UndefOr[GlueConfiguration] = js.native
+  var glueConfiguration: js.UndefOr[GlueConfiguration] = js.undefined
   
   /**
     * The key of the dataset contents object in an S3 bucket. Each object has a key that is a unique identifier. Each object has exactly one key. You can create a unique key with the following options:   Use !{iotanalytics:scheduleTime} to insert the time of a scheduled SQL query run.   Use !{iotanalytics:versionId} to insert a unique hash that identifies a dataset content.   Use !{iotanalytics:creationTime} to insert the creation time of a dataset content.   The following example creates a unique key for a CSV file: dataset/mydataset/!{iotanalytics:scheduleTime}/!{iotanalytics:versionId}.csv   If you don't use !{iotanalytics:versionId} to specify the key, you might get duplicate keys. For example, you might have two dataset contents with the same scheduleTime but different versionIds. This means that one dataset content overwrites the other.  
     */
-  var key: BucketKeyExpression = js.native
+  var key: BucketKeyExpression
   
   /**
     * The ARN of the role that grants AWS IoT Analytics permission to interact with your Amazon S3 and AWS Glue resources.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object S3DestinationConfiguration {
   

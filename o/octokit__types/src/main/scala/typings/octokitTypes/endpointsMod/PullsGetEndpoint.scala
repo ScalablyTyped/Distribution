@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsGetEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
 }
 object PullsGetEndpoint {
   

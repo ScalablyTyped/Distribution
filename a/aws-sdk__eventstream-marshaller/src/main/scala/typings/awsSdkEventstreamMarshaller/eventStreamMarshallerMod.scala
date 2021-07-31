@@ -8,7 +8,6 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventStreamMarshallerMod {
@@ -30,7 +29,7 @@ object eventStreamMarshallerMod {
       * Convert a structured JavaScript object with tagged headers into a binary
       * event stream message.
       */
-    def marshall(hasHeadersBody: Message): Uint8Array = js.native
+    def marshall(hasRawHeadersBody: Message): Uint8Array = js.native
     
     /**
       * Convert a binary event stream message into a JavaScript object with an

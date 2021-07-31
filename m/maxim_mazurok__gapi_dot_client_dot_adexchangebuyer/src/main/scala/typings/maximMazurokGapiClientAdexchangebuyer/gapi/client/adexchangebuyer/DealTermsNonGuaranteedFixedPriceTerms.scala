@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealTermsNonGuaranteedFixedPriceTerms extends StObject {
   
   /** Fixed price for the specified buyer. */
-  var fixedPrices: js.UndefOr[js.Array[PricePerBuyer]] = js.native
+  var fixedPrices: js.UndefOr[js.Array[PricePerBuyer]] = js.undefined
 }
 object DealTermsNonGuaranteedFixedPriceTerms {
   

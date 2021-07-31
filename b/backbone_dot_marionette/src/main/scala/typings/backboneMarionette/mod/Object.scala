@@ -4,7 +4,6 @@ import typings.backbone.mod.EventsMixin
 import typings.backboneRadio.mod.Channel_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -15,6 +14,8 @@ class Object ()
      with CommonMixin {
   def this(options: ObjectOptions) = this()
   
+  /* CompleteClass */
+  var bindEvents: js.Any = js.native
   /**
     * This method is used to bind a backbone "entity" (collection/model) to
     * methods on a target object.
@@ -51,6 +52,8 @@ class Object ()
   @JSName("getChannel")
   var getChannel_FObject: js.Any = js.native
   
+  /* CompleteClass */
+  var getOption: js.Any = js.native
   /**
     * Retrieve an object's attribute either directly from the object, or from
     * the object's this.options, with this.options taking precedence.
@@ -71,6 +74,8 @@ class Object ()
     */
   def isDestroyed(): Boolean = js.native
   
+  /* CompleteClass */
+  var mergeOptions: js.Any = js.native
   /**
     * A handy function to pluck certain options and attach them directly
     * to an instance.
@@ -78,6 +83,8 @@ class Object ()
   @JSName("mergeOptions")
   def mergeOptions_MObject(options: js.Any, keys: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var normalizeMethods: js.Any = js.native
   /**
     * Receives a hash of event names and functions and/or function names,
     * and returns the same hash with the function names replaced with the
@@ -91,9 +98,9 @@ class Object ()
     * reasons.
     */
   def on(eventName: js.Any): js.Any = js.native
-  def on(eventName: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
+  def on(eventName: js.Any, callback: Unit, context: js.Any): js.Any = js.native
   
   /**
     * Defines an events hash with the events to be listened and its respective handlers
@@ -113,6 +120,8 @@ class Object ()
     */
   def triggerMethod(name: String, args: js.Any*): js.Any = js.native
   
+  /* CompleteClass */
+  var unbindEvents: js.Any = js.native
   /**
     * This method can be used to unbind callbacks from entities'
     * (collection/model) events.

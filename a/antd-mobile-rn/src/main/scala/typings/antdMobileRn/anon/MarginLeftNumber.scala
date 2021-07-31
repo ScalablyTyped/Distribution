@@ -2,13 +2,11 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarginLeftNumber extends StObject {
   
-  var marginLeft: Double = js.native
+  var marginLeft: Double
 }
 object MarginLeftNumber {
   

@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The cluster config.
   */
-@js.native
 trait SchemaClusterConfig extends StObject {
   
   /**
@@ -20,18 +18,18 @@ trait SchemaClusterConfig extends StObject {
     * create and manage this project-level, per-location bucket (see Cloud
     * Dataproc staging bucket).
     */
-  var configBucket: js.UndefOr[String] = js.native
+  var configBucket: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Encryption settings for the cluster.
     */
-  var encryptionConfig: js.UndefOr[SchemaEncryptionConfig] = js.native
+  var encryptionConfig: js.UndefOr[SchemaEncryptionConfig] = js.undefined
   
   /**
     * Optional. The shared Compute Engine config settings for all instances in
     * a cluster.
     */
-  var gceClusterConfig: js.UndefOr[SchemaGceClusterConfig] = js.native
+  var gceClusterConfig: js.UndefOr[SchemaGceClusterConfig] = js.undefined
   
   /**
     * Optional. Commands to execute on each node after config is completed. By
@@ -43,30 +41,30 @@ trait SchemaClusterConfig extends StObject {
     * [[ &quot;${ROLE}&quot; == &#39;Master&#39; ]]; then   ... master specific
     * actions ... else   ... worker specific actions ... fi
     */
-  var initializationActions: js.UndefOr[js.Array[SchemaNodeInitializationAction]] = js.native
+  var initializationActions: js.UndefOr[js.Array[SchemaNodeInitializationAction]] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for the master instance in a
     * cluster.
     */
-  var masterConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var masterConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for additional worker
     * instances in a cluster.
     */
-  var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
   /**
     * Optional. The config settings for software inside the cluster.
     */
-  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.native
+  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for worker instances in a
     * cluster.
     */
-  var workerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var workerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
 }
 object SchemaClusterConfig {
   

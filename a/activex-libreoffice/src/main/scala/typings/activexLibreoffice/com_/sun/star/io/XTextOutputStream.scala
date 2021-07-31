@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interfaces allows to write strings to a stream. The character encoding to be used can be set by {@link setEncoding()} . Default encoding is
   * "utf8".
   */
-@js.native
-trait XTextOutputStream extends XOutputStream {
+trait XTextOutputStream
+  extends StObject
+     with XOutputStream {
   
   /**
     * sets character encoding.
     * @param Encoding sets the character encoding that should be used. The character encoding names refer to the document [http://www.iana.org/assignments/cha
     */
-  def setEncoding(Encoding: String): Unit = js.native
+  def setEncoding(Encoding: String): Unit
   
   /**
     * writes a string to the stream using the encoding defined by {@link setEncoding()} .
@@ -31,7 +31,7 @@ trait XTextOutputStream extends XOutputStream {
     * @see XTextInputStream.readLine
     * @see XTextInputStream.readString
     */
-  def writeString(aString: String): Unit = js.native
+  def writeString(aString: String): Unit
 }
 object XTextOutputStream {
   

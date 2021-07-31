@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonOptions extends StObject {
   
-  var badge: js.UndefOr[String] = js.native
+  var badge: js.UndefOr[String] = js.undefined
   
-  var click: js.UndefOr[js.Function1[/* e */ ButtonClickEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ ButtonClickEvent, Unit]] = js.undefined
   
-  var clickOn: js.UndefOr[String] = js.native
+  var clickOn: js.UndefOr[String] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ButtonOptions {
   

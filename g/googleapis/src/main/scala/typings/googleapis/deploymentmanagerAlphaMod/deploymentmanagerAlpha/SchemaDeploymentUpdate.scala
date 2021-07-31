@@ -2,23 +2,21 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDeploymentUpdate extends StObject {
   
   /**
     * Output only. The user-provided default credential to use when deploying
     * this preview.
     */
-  var credential: js.UndefOr[SchemaCredential] = js.native
+  var credential: js.UndefOr[SchemaCredential] = js.undefined
   
   /**
     * Output only. An optional user-provided description of the deployment
     * after the current update has been applied.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Map of labels; provided by the client when the resource is
@@ -28,13 +26,13 @@ trait SchemaDeploymentUpdate extends StObject {
     * characters long and must conform to the regular expression
     * ([a-z]([-a-z0-9]*[a-z0-9])?)?
     */
-  var labels: js.UndefOr[js.Array[SchemaDeploymentUpdateLabelEntry]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaDeploymentUpdateLabelEntry]] = js.undefined
   
   /**
     * Output only. URL of the manifest representing the update configuration of
     * this deployment.
     */
-  var manifest: js.UndefOr[String] = js.native
+  var manifest: js.UndefOr[String] = js.undefined
 }
 object SchemaDeploymentUpdate {
   

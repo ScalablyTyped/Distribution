@@ -7,35 +7,28 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", "binaryKernelFunc")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", JSImport.Namespace)
   @js.native
-  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl): KernelFunc = js.native
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", "binaryKernelFunc")
-  @js.native
-  def binaryKernelFunc(
-    name: String,
-    simpleImpl: SimpleBinaryKernelImpl,
-    complexImpl: js.UndefOr[scala.Nothing],
-    dtype: DataType
-  ): KernelFunc = js.native
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", "binaryKernelFunc")
-  @js.native
-  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: ComplexBinaryKernelImpl): KernelFunc = js.native
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", "binaryKernelFunc")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  @scala.inline
+  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: Unit, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  @scala.inline
+  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: ComplexBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  @scala.inline
   def binaryKernelFunc(
     name: String,
     simpleImpl: SimpleBinaryKernelImpl,
     complexImpl: ComplexBinaryKernelImpl,
     dtype: DataType
-  ): KernelFunc = js.native
+  ): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/kernel_utils", "createComplexBinaryKernelImpl")
-  @js.native
-  def createComplexBinaryKernelImpl(op: ComplexBinaryOperation): ComplexBinaryKernelImpl = js.native
+  @scala.inline
+  def createComplexBinaryKernelImpl(op: ComplexBinaryOperation): ComplexBinaryKernelImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplexBinaryKernelImpl")(op.asInstanceOf[js.Any]).asInstanceOf[ComplexBinaryKernelImpl]
 }

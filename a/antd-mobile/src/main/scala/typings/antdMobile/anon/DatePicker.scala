@@ -2,19 +2,17 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePicker extends StObject {
   
-  var DatePicker: js.UndefOr[js.Object] = js.native
+  var DatePicker: js.UndefOr[js.Object] = js.undefined
   
-  var DatePickerView: js.UndefOr[js.Object] = js.native
+  var DatePickerView: js.UndefOr[js.Object] = js.undefined
   
-  var InputItem: js.UndefOr[js.Object] = js.native
+  var InputItem: js.UndefOr[js.Object] = js.undefined
   
-  var Pagination: js.UndefOr[js.Object] = js.native
+  var Pagination: js.UndefOr[js.Object] = js.undefined
 }
 object DatePicker {
   

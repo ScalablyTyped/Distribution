@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.transportInterfacesMod.SuccessAppState
 import typings.mendixmodelsdk.transportationMod.RequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mendixmodelsdkStrings {
@@ -21,7 +20,9 @@ object mendixmodelsdkStrings {
   def ADD: ADD = "ADD".asInstanceOf[ADD]
   
   @js.native
-  sealed trait APP_NOT_FOUND extends SuccessAppState
+  sealed trait APP_NOT_FOUND
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def APP_NOT_FOUND: APP_NOT_FOUND = "APP_NOT_FOUND".asInstanceOf[APP_NOT_FOUND]
   
@@ -106,7 +107,9 @@ object mendixmodelsdkStrings {
   def AppServices$MsdVersion: AppServices$MsdVersion = "AppServices$MsdVersion".asInstanceOf[AppServices$MsdVersion]
   
   @js.native
-  sealed trait BUSY_PROVISIONING extends CannotFixAppState
+  sealed trait BUSY_PROVISIONING
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def BUSY_PROVISIONING: BUSY_PROVISIONING = "BUSY_PROVISIONING".asInstanceOf[BUSY_PROVISIONING]
   
@@ -851,27 +854,37 @@ object mendixmodelsdkStrings {
   def Expressions$VariableRefExpression: Expressions$VariableRefExpression = "Expressions$VariableRefExpression".asInstanceOf[Expressions$VariableRefExpression]
   
   @js.native
-  sealed trait FAILED extends SuccessAppState
+  sealed trait FAILED
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
-  sealed trait FAILED_STAGING extends SuccessAppState
+  sealed trait FAILED_STAGING
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def FAILED_STAGING: FAILED_STAGING = "FAILED_STAGING".asInstanceOf[FAILED_STAGING]
   
   @js.native
-  sealed trait Failure extends BuildResultStatus
+  sealed trait Failure
+    extends StObject
+       with BuildResultStatus
   @scala.inline
   def Failure: Failure = "Failure".asInstanceOf[Failure]
   
   @js.native
-  sealed trait INVALID_OPENID extends CannotFixAppState
+  sealed trait INVALID_OPENID
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def INVALID_OPENID: INVALID_OPENID = "INVALID_OPENID".asInstanceOf[INVALID_OPENID]
   
   @js.native
-  sealed trait INVALID_PROJECTID extends CannotFixAppState
+  sealed trait INVALID_PROJECTID
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def INVALID_PROJECTID: INVALID_PROJECTID = "INVALID_PROJECTID".asInstanceOf[INVALID_PROJECTID]
   
@@ -1031,7 +1044,9 @@ object mendixmodelsdkStrings {
   def Licensed: Licensed = "Licensed".asInstanceOf[Licensed]
   
   @js.native
-  sealed trait MXBUILD_STARTED extends SuccessAppState
+  sealed trait MXBUILD_STARTED
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def MXBUILD_STARTED: MXBUILD_STARTED = "MXBUILD_STARTED".asInstanceOf[MXBUILD_STARTED]
   
@@ -1676,7 +1691,9 @@ object mendixmodelsdkStrings {
   def Microflows$WorkflowCallAction: Microflows$WorkflowCallAction = "Microflows$WorkflowCallAction".asInstanceOf[Microflows$WorkflowCallAction]
   
   @js.native
-  sealed trait NO_WEBMODELER_TARGET_SELECTED extends CannotFixAppState
+  sealed trait NO_WEBMODELER_TARGET_SELECTED
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def NO_WEBMODELER_TARGET_SELECTED: NO_WEBMODELER_TARGET_SELECTED = "NO_WEBMODELER_TARGET_SELECTED".asInstanceOf[NO_WEBMODELER_TARGET_SELECTED]
   
@@ -2666,22 +2683,30 @@ object mendixmodelsdkStrings {
   def Rest$RestOperationParameter: Rest$RestOperationParameter = "Rest$RestOperationParameter".asInstanceOf[Rest$RestOperationParameter]
   
   @js.native
-  sealed trait STAGING extends SuccessAppState
+  sealed trait STAGING
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def STAGING: STAGING = "STAGING".asInstanceOf[STAGING]
   
   @js.native
-  sealed trait STARTED extends SuccessAppState
+  sealed trait STARTED
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def STARTED: STARTED = "STARTED".asInstanceOf[STARTED]
   
   @js.native
-  sealed trait STARTING extends SuccessAppState
+  sealed trait STARTING
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def STARTING: STARTING = "STARTING".asInstanceOf[STARTING]
   
   @js.native
-  sealed trait STOPPED extends SuccessAppState
+  sealed trait STOPPED
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
   
@@ -2796,7 +2821,9 @@ object mendixmodelsdkStrings {
   def Settings$WorkflowsProjectSettingsPart: Settings$WorkflowsProjectSettingsPart = "Settings$WorkflowsProjectSettingsPart".asInstanceOf[Settings$WorkflowsProjectSettingsPart]
   
   @js.native
-  sealed trait Success extends BuildResultStatus
+  sealed trait Success
+    extends StObject
+       with BuildResultStatus
   @scala.inline
   def Success: Success = "Success".asInstanceOf[Success]
   
@@ -2816,27 +2843,37 @@ object mendixmodelsdkStrings {
   def Texts$Translation: Texts$Translation = "Texts$Translation".asInstanceOf[Texts$Translation]
   
   @js.native
-  sealed trait UNKNOWN extends CannotFixAppState
+  sealed trait UNKNOWN
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait UNKNOWN_ACCOUNT extends CannotFixAppState
+  sealed trait UNKNOWN_ACCOUNT
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def UNKNOWN_ACCOUNT: UNKNOWN_ACCOUNT = "UNKNOWN_ACCOUNT".asInstanceOf[UNKNOWN_ACCOUNT]
   
   @js.native
-  sealed trait UNKNOWN_DEPLOYER extends CannotFixAppState
+  sealed trait UNKNOWN_DEPLOYER
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def UNKNOWN_DEPLOYER: UNKNOWN_DEPLOYER = "UNKNOWN_DEPLOYER".asInstanceOf[UNKNOWN_DEPLOYER]
   
   @js.native
-  sealed trait UNKNOWN_PROJECT extends CannotFixAppState
+  sealed trait UNKNOWN_PROJECT
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def UNKNOWN_PROJECT: UNKNOWN_PROJECT = "UNKNOWN_PROJECT".asInstanceOf[UNKNOWN_PROJECT]
   
   @js.native
-  sealed trait UNLINKED extends CannotFixAppState
+  sealed trait UNLINKED
+    extends StObject
+       with CannotFixAppState
   @scala.inline
   def UNLINKED: UNLINKED = "UNLINKED".asInstanceOf[UNLINKED]
   
@@ -2846,7 +2883,9 @@ object mendixmodelsdkStrings {
   def UPDATE_PROPERTY_VALUE: UPDATE_PROPERTY_VALUE = "UPDATE_PROPERTY_VALUE".asInstanceOf[UPDATE_PROPERTY_VALUE]
   
   @js.native
-  sealed trait UPDATING extends SuccessAppState
+  sealed trait UPDATING
+    extends StObject
+       with SuccessAppState
   @scala.inline
   def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
   
@@ -2996,12 +3035,16 @@ object mendixmodelsdkStrings {
   def XmlSchemas$XmlSchemaEntry: XmlSchemas$XmlSchemaEntry = "XmlSchemas$XmlSchemaEntry".asInstanceOf[XmlSchemas$XmlSchemaEntry]
   
   @js.native
-  sealed trait attached extends StructureState
+  sealed trait attached
+    extends StObject
+       with StructureState
   @scala.inline
   def attached: attached = "attached".asInstanceOf[attached]
   
   @js.native
-  sealed trait bidi extends LockType
+  sealed trait bidi
+    extends StObject
+       with LockType
   @scala.inline
   def bidi: bidi = "bidi".asInstanceOf[bidi]
   
@@ -3011,32 +3054,44 @@ object mendixmodelsdkStrings {
   def buildResult: buildResult = "buildResult".asInstanceOf[buildResult]
   
   @js.native
-  sealed trait commit extends LockType
+  sealed trait commit
+    extends StObject
+       with LockType
   @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
   
   @js.native
-  sealed trait `commit-wc` extends LockType
+  sealed trait `commit-wc`
+    extends StObject
+       with LockType
   @scala.inline
   def `commit-wc`: `commit-wc` = "commit-wc".asInstanceOf[`commit-wc`]
   
   @js.native
-  sealed trait consistencyerrors extends IUpdateAppJobStatus
+  sealed trait consistencyerrors
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def consistencyerrors: consistencyerrors = "consistencyerrors".asInstanceOf[consistencyerrors]
   
   @js.native
-  sealed trait conversion extends LockType
+  sealed trait conversion
+    extends StObject
+       with LockType
   @scala.inline
   def conversion: conversion = "conversion".asInstanceOf[conversion]
   
   @js.native
-  sealed trait delete extends RequestMethod
+  sealed trait delete
+    extends StObject
+       with RequestMethod
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait deleted extends StructureState
+  sealed trait deleted
+    extends StObject
+       with StructureState
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
   
@@ -3046,17 +3101,23 @@ object mendixmodelsdkStrings {
   def deltas: deltas = "deltas".asInstanceOf[deltas]
   
   @js.native
-  sealed trait detached extends StructureState
+  sealed trait detached
+    extends StObject
+       with StructureState
   @scala.inline
   def detached: detached = "detached".asInstanceOf[detached]
   
   @js.native
-  sealed trait edit extends LockType
+  sealed trait edit
+    extends StObject
+       with LockType
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
-  sealed trait explicit extends TransactionType
+  sealed trait explicit
+    extends StObject
+       with TransactionType
   @scala.inline
   def explicit: explicit = "explicit".asInstanceOf[explicit]
   
@@ -3066,7 +3127,9 @@ object mendixmodelsdkStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait failed_ extends IUpdateAppJobStatus
+  sealed trait failed_
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def failed_ : failed_ = "failed".asInstanceOf[failed_]
   
@@ -3086,7 +3149,9 @@ object mendixmodelsdkStrings {
   def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait get extends RequestMethod
+  sealed trait get
+    extends StObject
+       with RequestMethod
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   
@@ -3096,7 +3161,9 @@ object mendixmodelsdkStrings {
   def git: git = "git".asInstanceOf[git]
   
   @js.native
-  sealed trait `implicit` extends TransactionType
+  sealed trait `implicit`
+    extends StObject
+       with TransactionType
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
@@ -3106,32 +3173,44 @@ object mendixmodelsdkStrings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait `new` extends StructureState
+  sealed trait `new`
+    extends StObject
+       with StructureState
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait post extends RequestMethod
+  sealed trait post
+    extends StObject
+       with RequestMethod
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait provisioning extends IUpdateAppJobStatus
+  sealed trait provisioning
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def provisioning: provisioning = "provisioning".asInstanceOf[provisioning]
   
   @js.native
-  sealed trait put extends RequestMethod
+  sealed trait put
+    extends StObject
+       with RequestMethod
   @scala.inline
   def put: put = "put".asInstanceOf[put]
   
   @js.native
-  sealed trait resuming extends IUpdateAppJobStatus
+  sealed trait resuming
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def resuming: resuming = "resuming".asInstanceOf[resuming]
   
   @js.native
-  sealed trait started_ extends IUpdateAppJobStatus
+  sealed trait started_
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def started_ : started_ = "started".asInstanceOf[started_]
   
@@ -3146,17 +3225,23 @@ object mendixmodelsdkStrings {
   def svn: svn = "svn".asInstanceOf[svn]
   
   @js.native
-  sealed trait switch extends LockType
+  sealed trait switch
+    extends StObject
+       with LockType
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait update extends LockType
+  sealed trait update
+    extends StObject
+       with LockType
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait updating_ extends IUpdateAppJobStatus
+  sealed trait updating_
+    extends StObject
+       with IUpdateAppJobStatus
   @scala.inline
   def updating_ : updating_ = "updating".asInstanceOf[updating_]
   

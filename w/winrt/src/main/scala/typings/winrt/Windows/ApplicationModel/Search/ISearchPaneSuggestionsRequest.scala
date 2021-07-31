@@ -2,17 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchPaneSuggestionsRequest extends StObject {
   
-  def getDeferral(): SearchPaneSuggestionsRequestDeferral = js.native
+  def getDeferral(): SearchPaneSuggestionsRequestDeferral
   
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
   
-  var searchSuggestionCollection: SearchSuggestionCollection = js.native
+  var searchSuggestionCollection: SearchSuggestionCollection
 }
 object ISearchPaneSuggestionsRequest {
   

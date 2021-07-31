@@ -2,19 +2,17 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFront extends StObject {
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var includeBody: Boolean = js.native
+  var includeBody: Boolean
   
-  var origin: Origin = js.native
+  var origin: Origin
   
-  var pathPattern: String = js.native
+  var pathPattern: String
 }
 object CloudFront {
   

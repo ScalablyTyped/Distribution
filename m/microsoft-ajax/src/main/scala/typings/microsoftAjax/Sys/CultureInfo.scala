@@ -2,14 +2,12 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a culture definition that can be applied to objects that accept a culture-related setting.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb384004(v=vs.100).aspx}
   */
-@js.native
 trait CultureInfo extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait CultureInfo extends StObject {
     * Each formatting string can be used to specify how to format Date type extensions.
     * @return An object that contains an array of culture-sensitive formatting strings.
     */
-  var dateTimeFormat: js.Array[String] = js.native
+  var dateTimeFormat: js.Array[String]
   
   /**
     * Gets the culture value (locale) that represents a language and region.
     * @return The culture value (locale) that represents a language and region.
     */
-  var name: String = js.native
+  var name: String
   
   //#endregion
   //#region Properties
@@ -34,7 +32,7 @@ trait CultureInfo extends StObject {
     * Each formatting string can be used to specify how to format Number type extensions.
     * @return An object that contains an array of culture-sensitive formatting strings.
     */
-  var numberFormat: js.Array[String] = js.native
+  var numberFormat: js.Array[String]
 }
 object CultureInfo {
   

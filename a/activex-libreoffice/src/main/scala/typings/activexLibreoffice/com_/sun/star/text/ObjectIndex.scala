@@ -8,33 +8,33 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of object indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait ObjectIndex extends BaseIndex {
+trait ObjectIndex
+  extends StObject
+     with BaseIndex {
   
   /** Determines if external embedded objects are included in the office. */
-  var CreateFromOtherEmbeddedObjects: Boolean = js.native
+  var CreateFromOtherEmbeddedObjects: Boolean
   
   /** Determines if star office calc objects are included in the office. */
-  var CreateFromStarCalc: Boolean = js.native
+  var CreateFromStarCalc: Boolean
   
   /** Determines if star office chart objects are included in the office. */
-  var CreateFromStarChart: Boolean = js.native
+  var CreateFromStarChart: Boolean
   
   /** Determines if star office draw objects are included in the office. */
-  var CreateFromStarDraw: Boolean = js.native
+  var CreateFromStarDraw: Boolean
   
   /** Determines if star office image objects are included in the office. */
-  var CreateFromStarImage: Boolean = js.native
+  var CreateFromStarImage: Boolean
   
   /** Determines if star office math objects are included in the office. */
-  var CreateFromStarMath: Boolean = js.native
+  var CreateFromStarMath: Boolean
 }
 object ObjectIndex {
   

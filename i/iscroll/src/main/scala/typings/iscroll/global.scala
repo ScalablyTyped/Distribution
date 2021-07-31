@@ -3,7 +3,6 @@ package typings.iscroll
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("IScroll")
   @js.native
   class IScroll protected ()
-    extends typings.iscroll.IScroll {
+    extends StObject
+       with typings.iscroll.IScroll {
     def this(element: String) = this()
     def this(element: HTMLElement) = this()
     def this(element: String, options: IScrollOptions) = this()

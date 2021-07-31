@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
   */
-@js.native
 trait PlusBarcodeBarcodeStyles extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * 扫码框颜色
@@ -28,7 +26,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var frameColor: js.UndefOr[String] = js.native
+  var frameColor: js.UndefOr[String] = js.undefined
   
   /**
     * Barcode扫码控件的高度
@@ -39,7 +37,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * Barcode扫码控件左上角的水平偏移量
@@ -51,7 +49,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * Barcode扫码控件在Webview窗口的布局模式
@@ -62,7 +60,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * 扫码条颜色
@@ -70,7 +68,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var scanbarColor: js.UndefOr[String] = js.native
+  var scanbarColor: js.UndefOr[String] = js.undefined
   
   /**
     * Barcode扫码控件左上角的垂直偏移量
@@ -81,7 +79,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * Barcode扫码控件的宽度
@@ -92,7 +90,7 @@ trait PlusBarcodeBarcodeStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusBarcodeBarcodeStyles {
   

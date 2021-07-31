@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfferingTransaction extends StObject {
   
   /**
     * The cost of an offering transaction.
     */
-  var cost: js.UndefOr[MonetaryAmount] = js.native
+  var cost: js.UndefOr[MonetaryAmount] = js.undefined
   
   /**
     * The date on which an offering transaction was created.
     */
-  var createdOn: js.UndefOr[DateTime] = js.native
+  var createdOn: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID that corresponds to a device offering promotion.
     */
-  var offeringPromotionId: js.UndefOr[OfferingPromotionIdentifier] = js.native
+  var offeringPromotionId: js.UndefOr[OfferingPromotionIdentifier] = js.undefined
   
   /**
     * The status of an offering transaction.
     */
-  var offeringStatus: js.UndefOr[OfferingStatus] = js.native
+  var offeringStatus: js.UndefOr[OfferingStatus] = js.undefined
   
   /**
     * The transaction ID of the offering transaction.
     */
-  var transactionId: js.UndefOr[TransactionIdentifier] = js.native
+  var transactionId: js.UndefOr[TransactionIdentifier] = js.undefined
 }
 object OfferingTransaction {
   

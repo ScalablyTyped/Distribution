@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeViewDataBoundEvent extends TreeViewEvent {
+trait TreeViewDataBoundEvent
+  extends StObject
+     with TreeViewEvent {
   
-  var node: js.UndefOr[JQuery] = js.native
+  var node: js.UndefOr[JQuery] = js.undefined
 }
 object TreeViewDataBoundEvent {
   

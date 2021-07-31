@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotDeployed extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var notDeployed: scala.Double = js.native
+  var notDeployed: scala.Double
   
-  var partiallySucceeded: scala.Double = js.native
+  var partiallySucceeded: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
 }
 object NotDeployed {
   

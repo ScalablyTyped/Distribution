@@ -2,19 +2,17 @@ package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IThumbnailProperties extends StObject {
   
-  var originalHeight: Double = js.native
+  var originalHeight: Double
   
-  var originalWidth: Double = js.native
+  var originalWidth: Double
   
-  var returnedSmallerCachedSize: Boolean = js.native
+  var returnedSmallerCachedSize: Boolean
   
-  var `type`: ThumbnailType = js.native
+  var `type`: ThumbnailType
 }
 object IThumbnailProperties {
   

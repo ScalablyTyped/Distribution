@@ -9,14 +9,15 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerRegistryImplMod {
   
   @JSImport("dnd-core/lib/HandlerRegistryImpl", "HandlerRegistryImpl")
   @js.native
-  class HandlerRegistryImpl protected () extends HandlerRegistry {
+  class HandlerRegistryImpl protected ()
+    extends StObject
+       with HandlerRegistry {
     def this(store: Store[State, AnyAction]) = this()
     
     var addHandler: js.Any = js.native

@@ -6,7 +6,10 @@ import typings.openfin.eventsBaseMod.ApplicationEvent
 import typings.openfin.eventsBaseMod.BaseEvent
 import typings.openfin.eventsBaseMod.BaseEventMap
 import typings.openfin.eventsBaseMod.WindowEvent
+import typings.openfin.monitorMod.DipRect
+import typings.openfin.monitorMod.MonitorDetails
 import typings.openfin.monitorMod.MonitorInfo
+import typings.openfin.monitorMod.TaskBar
 import typings.openfin.openfinStrings.`application-closed`
 import typings.openfin.openfinStrings.`application-connected`
 import typings.openfin.openfinStrings.`application-crashed`
@@ -90,6 +93,7 @@ import typings.openfin.openfinStrings.lock
 import typings.openfin.openfinStrings.system
 import typings.openfin.openfinStrings.unknown
 import typings.openfin.openfinStrings.unlock
+import typings.openfin.pointMod.Point
 import typings.openfin.viewMod.InputEvent
 import typings.openfin.viewMod.PropagatedViewIdentity
 import typings.openfin.viewMod.TargetChangedEvent
@@ -111,17 +115,17 @@ import typings.openfin.windowMod.WindowPreloadScriptsStateChangedEvent
 import typings.openfin.windowMod.WindowReloadedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemMod {
   
-  @js.native
-  trait IdleEvent[Topic, Type] extends BaseEvent[Topic, Type] {
+  trait IdleEvent[Topic, Type]
+    extends StObject
+       with BaseEvent[Topic, Type] {
     
-    var elapsedTime: Double = js.native
+    var elapsedTime: Double
     
-    var isIdle: Boolean = js.native
+    var isIdle: Boolean
   }
   object IdleEvent {
     
@@ -133,7 +137,7 @@ object systemMod {
     }
     
     @scala.inline
-    implicit class IdleEventMutableBuilder[Self <: IdleEvent[_, _], Topic, Type] (val x: Self with (IdleEvent[Topic, Type])) extends AnyVal {
+    implicit class IdleEventMutableBuilder[Self <: IdleEvent[?, ?], Topic, Type] (val x: Self & (IdleEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
@@ -143,12 +147,35 @@ object systemMod {
     }
   }
   
-  type MonitorEvent[Topic, Type] = MonitorInfo with (BaseEvent[Topic, Type])
-  
-  @js.native
-  trait SessionChangedEvent[Topic, Type] extends BaseEvent[Topic, Type] {
+  trait MonitorEvent[Topic, Type]
+    extends StObject
+       with MonitorInfo
+       with BaseEvent[Topic, Type]
+  object MonitorEvent {
     
-    var reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown = js.native
+    @scala.inline
+    def apply[Topic, Type](
+      deviceScaleFactor: Double,
+      dpi: Point,
+      nonPrimaryMonitors: js.Array[MonitorDetails],
+      primaryMonitor: MonitorDetails,
+      reason: String,
+      taskBar: TaskBar,
+      topic: Topic,
+      `type`: Type,
+      virtualScreen: DipRect
+    ): MonitorEvent[Topic, Type] = {
+      val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], dpi = dpi.asInstanceOf[js.Any], nonPrimaryMonitors = nonPrimaryMonitors.asInstanceOf[js.Any], primaryMonitor = primaryMonitor.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], taskBar = taskBar.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], virtualScreen = virtualScreen.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MonitorEvent[Topic, Type]]
+    }
+  }
+  
+  trait SessionChangedEvent[Topic, Type]
+    extends StObject
+       with BaseEvent[Topic, Type] {
+    
+    var reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown
   }
   object SessionChangedEvent {
     
@@ -164,33 +191,34 @@ object systemMod {
     }
     
     @scala.inline
-    implicit class SessionChangedEventMutableBuilder[Self <: SessionChangedEvent[_, _], Topic, Type] (val x: Self with (SessionChangedEvent[Topic, Type])) extends AnyVal {
+    implicit class SessionChangedEventMutableBuilder[Self <: SessionChangedEvent[?, ?], Topic, Type] (val x: Self & (SessionChangedEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setReason(value: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait SystemEventMapping[Topic, Type] extends BaseEventMap {
+  trait SystemEventMapping[Topic, Type]
+    extends StObject
+       with BaseEventMap {
     
-    var `application-created`: ApplicationEvent[Topic, Type] = js.native
+    var `application-created`: ApplicationEvent[Topic, Type]
     
-    var `desktop-icon-clicked`: ApplicationEvent[Topic, Type] = js.native
+    var `desktop-icon-clicked`: ApplicationEvent[Topic, Type]
     
-    var `external-window-closed`: BaseEvent[Topic, Type] = js.native
+    var `external-window-closed`: BaseEvent[Topic, Type]
     
-    var `external-window-created`: BaseEvent[Topic, Type] = js.native
+    var `external-window-created`: BaseEvent[Topic, Type]
     
-    var `external-window-hidden`: BaseEvent[Topic, Type] = js.native
+    var `external-window-hidden`: BaseEvent[Topic, Type]
     
-    var `external-window-shown`: BaseEvent[Topic, Type] = js.native
+    var `external-window-shown`: BaseEvent[Topic, Type]
     
-    var `idle-state-changed`: IdleEvent[Topic, Type] = js.native
+    var `idle-state-changed`: IdleEvent[Topic, Type]
     
-    var `monitor-info-changed`: MonitorEvent[Topic, Type] = js.native
+    var `monitor-info-changed`: MonitorEvent[Topic, Type]
     
-    var `session-changed`: SessionChangedEvent[Topic, Type] = js.native
+    var `session-changed`: SessionChangedEvent[Topic, Type]
   }
   object SystemEventMapping {
     
@@ -222,7 +250,7 @@ object systemMod {
     }
     
     @scala.inline
-    implicit class SystemEventMappingMutableBuilder[Self <: SystemEventMapping[_, _], Topic, Type] (val x: Self with (SystemEventMapping[Topic, Type])) extends AnyVal {
+    implicit class SystemEventMappingMutableBuilder[Self <: SystemEventMapping[?, ?], Topic, Type] (val x: Self & (SystemEventMapping[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def `setApplication-created`(value: ApplicationEvent[Topic, Type]): Self = StObject.set(x, "application-created", value.asInstanceOf[js.Any])
@@ -254,166 +282,165 @@ object systemMod {
   }
   
   /* Inlined openfin.openfin/_v2/api/events/window.PropagatedWindowEvents<'system'> & openfin.openfin/_v2/api/events/application.PropagatedApplicationEvents<'system'> & openfin.openfin/_v2/api/events/view.PropagatedViewEvents<'system'> & {[ Type in keyof openfin.openfin/_v2/api/events/system.SystemEventMapping<string, string> ]: openfin.openfin/_v2/api/events/system.SystemEventMapping<'system', Type>[Type]} */
-  @js.native
   trait SystemEvents extends StObject {
     
-    var `application-closed`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-closed`] = js.native
+    var `application-closed`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-closed`]
     
-    var `application-connected`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-connected`] = js.native
+    var `application-connected`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-connected`]
     
-    var `application-crashed`: CrashedEvent with (ApplicationEvent[system, typings.openfin.openfinStrings.`application-crashed`]) = js.native
+    var `application-crashed`: CrashedEvent & (ApplicationEvent[system, typings.openfin.openfinStrings.`application-crashed`])
     
-    var `application-created`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-created`] = js.native
+    var `application-created`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-created`]
     
-    var `application-initialized`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-initialized`] = js.native
+    var `application-initialized`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-initialized`]
     
-    var `application-manifest-changed`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-manifest-changed`] = js.native
+    var `application-manifest-changed`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-manifest-changed`]
     
-    var `application-not-responding`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-not-responding`] = js.native
+    var `application-not-responding`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-not-responding`]
     
-    var `application-responding`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-responding`] = js.native
+    var `application-responding`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-responding`]
     
-    var `application-started`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-started`] = js.native
+    var `application-started`: ApplicationEvent[system, typings.openfin.openfinStrings.`application-started`]
     
-    var `application-tray-icon-clicked`: TrayIconClicked[system, typings.openfin.openfinStrings.`application-tray-icon-clicked`] = js.native
+    var `application-tray-icon-clicked`: TrayIconClicked[system, typings.openfin.openfinStrings.`application-tray-icon-clicked`]
     
-    var `desktop-icon-clicked`: ApplicationEvent[system, typings.openfin.openfinStrings.`desktop-icon-clicked`] = js.native
+    var `desktop-icon-clicked`: ApplicationEvent[system, typings.openfin.openfinStrings.`desktop-icon-clicked`]
     
-    var `external-window-closed`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-closed`] = js.native
+    var `external-window-closed`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-closed`]
     
-    var `external-window-created`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-created`] = js.native
+    var `external-window-created`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-created`]
     
-    var `external-window-hidden`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-hidden`] = js.native
+    var `external-window-hidden`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-hidden`]
     
-    var `external-window-shown`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-shown`] = js.native
+    var `external-window-shown`: BaseEvent[system, typings.openfin.openfinStrings.`external-window-shown`]
     
-    var `idle-state-changed`: IdleEvent[system, typings.openfin.openfinStrings.`idle-state-changed`] = js.native
+    var `idle-state-changed`: IdleEvent[system, typings.openfin.openfinStrings.`idle-state-changed`]
     
-    var listenerRemoved: String = js.native
+    var listenerRemoved: String
     
-    var `monitor-info-changed`: MonitorEvent[system, typings.openfin.openfinStrings.`monitor-info-changed`] = js.native
+    var `monitor-info-changed`: MonitorEvent[system, typings.openfin.openfinStrings.`monitor-info-changed`]
     
-    var newListener: String = js.native
+    var newListener: String
     
-    var `session-changed`: SessionChangedEvent[system, typings.openfin.openfinStrings.`session-changed`] = js.native
+    var `session-changed`: SessionChangedEvent[system, typings.openfin.openfinStrings.`session-changed`]
     
-    var `view-blurred`: (WindowEvent[system, typings.openfin.openfinStrings.`view-blurred`]) with PropagatedViewIdentity = js.native
+    var `view-blurred`: (WindowEvent[system, typings.openfin.openfinStrings.`view-blurred`]) & PropagatedViewIdentity
     
-    var `view-crashed`: CrashedEvent with (WindowEvent[system, typings.openfin.openfinStrings.`view-crashed`]) with PropagatedViewIdentity = js.native
+    var `view-crashed`: CrashedEvent & (WindowEvent[system, typings.openfin.openfinStrings.`view-crashed`]) & PropagatedViewIdentity
     
-    var `view-created`: CrashedEvent with (WindowEvent[system, typings.openfin.openfinStrings.`view-created`]) with PropagatedViewIdentity = js.native
+    var `view-created`: CrashedEvent & (WindowEvent[system, typings.openfin.openfinStrings.`view-created`]) & PropagatedViewIdentity
     
-    var `view-destroyed`: (WindowEvent[system, typings.openfin.openfinStrings.`view-destroyed`]) with PropagatedViewIdentity = js.native
+    var `view-destroyed`: (WindowEvent[system, typings.openfin.openfinStrings.`view-destroyed`]) & PropagatedViewIdentity
     
-    var `view-did-change-theme-color`: (WindowEvent[system, typings.openfin.openfinStrings.`view-did-change-theme-color`]) with PropagatedViewIdentity = js.native
+    var `view-did-change-theme-color`: (WindowEvent[system, typings.openfin.openfinStrings.`view-did-change-theme-color`]) & PropagatedViewIdentity
     
-    var `view-focused`: (WindowEvent[system, typings.openfin.openfinStrings.`view-focused`]) with PropagatedViewIdentity = js.native
+    var `view-focused`: (WindowEvent[system, typings.openfin.openfinStrings.`view-focused`]) & PropagatedViewIdentity
     
-    var `view-hidden`: (WindowEvent[system, typings.openfin.openfinStrings.`view-hidden`]) with PropagatedViewIdentity = js.native
+    var `view-hidden`: (WindowEvent[system, typings.openfin.openfinStrings.`view-hidden`]) & PropagatedViewIdentity
     
-    var `view-hotkey`: InputEvent with (WindowEvent[system, typings.openfin.openfinStrings.`view-hotkey`]) with PropagatedViewIdentity = js.native
+    var `view-hotkey`: InputEvent & (WindowEvent[system, typings.openfin.openfinStrings.`view-hotkey`]) & PropagatedViewIdentity
     
-    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[system, typings.openfin.openfinStrings.`view-navigation-rejected`]) with PropagatedViewIdentity = js.native
+    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[system, typings.openfin.openfinStrings.`view-navigation-rejected`]) & PropagatedViewIdentity
     
-    var `view-page-favicon-updated`: (WindowEvent[system, typings.openfin.openfinStrings.`view-page-favicon-updated`]) with PropagatedViewIdentity = js.native
+    var `view-page-favicon-updated`: (WindowEvent[system, typings.openfin.openfinStrings.`view-page-favicon-updated`]) & PropagatedViewIdentity
     
-    var `view-page-title-updated`: (WindowEvent[system, typings.openfin.openfinStrings.`view-page-title-updated`]) with PropagatedViewIdentity = js.native
+    var `view-page-title-updated`: (WindowEvent[system, typings.openfin.openfinStrings.`view-page-title-updated`]) & PropagatedViewIdentity
     
-    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[system, typings.openfin.openfinStrings.`view-resource-load-failed`]) with PropagatedViewIdentity = js.native
+    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[system, typings.openfin.openfinStrings.`view-resource-load-failed`]) & PropagatedViewIdentity
     
-    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[system, typings.openfin.openfinStrings.`view-resource-response-received`]) with PropagatedViewIdentity = js.native
+    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[system, typings.openfin.openfinStrings.`view-resource-response-received`]) & PropagatedViewIdentity
     
-    var `view-shown`: (WindowEvent[system, typings.openfin.openfinStrings.`view-shown`]) with PropagatedViewIdentity = js.native
+    var `view-shown`: (WindowEvent[system, typings.openfin.openfinStrings.`view-shown`]) & PropagatedViewIdentity
     
-    var `view-target-changed`: (TargetChangedEvent[system, typings.openfin.openfinStrings.`view-target-changed`]) with PropagatedViewIdentity = js.native
+    var `view-target-changed`: (TargetChangedEvent[system, typings.openfin.openfinStrings.`view-target-changed`]) & PropagatedViewIdentity
     
-    var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[system, typings.openfin.openfinStrings.`window-begin-user-bounds-changing`] = js.native
+    var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[system, typings.openfin.openfinStrings.`window-begin-user-bounds-changing`]
     
-    var `window-blurred`: WindowEvent[system, typings.openfin.openfinStrings.`window-blurred`] = js.native
+    var `window-blurred`: WindowEvent[system, typings.openfin.openfinStrings.`window-blurred`]
     
-    var `window-bounds-changed`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-bounds-changed`] = js.native
+    var `window-bounds-changed`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-bounds-changed`]
     
-    var `window-bounds-changing`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-bounds-changing`] = js.native
+    var `window-bounds-changing`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-bounds-changing`]
     
-    var `window-closed`: WindowEvent[system, typings.openfin.openfinStrings.`window-closed`] = js.native
+    var `window-closed`: WindowEvent[system, typings.openfin.openfinStrings.`window-closed`]
     
-    var `window-closing`: WindowEvent[system, typings.openfin.openfinStrings.`window-closing`] = js.native
+    var `window-closing`: WindowEvent[system, typings.openfin.openfinStrings.`window-closing`]
     
-    var `window-crashed`: CrashedEvent with (WindowEvent[system, typings.openfin.openfinStrings.`window-crashed`]) = js.native
+    var `window-crashed`: CrashedEvent & (WindowEvent[system, typings.openfin.openfinStrings.`window-crashed`])
     
-    var `window-created`: WindowEvent[system, typings.openfin.openfinStrings.`window-created`] = js.native
+    var `window-created`: WindowEvent[system, typings.openfin.openfinStrings.`window-created`]
     
-    var `window-did-change-theme-color`: WindowEvent[system, typings.openfin.openfinStrings.`window-did-change-theme-color`] = js.native
+    var `window-did-change-theme-color`: WindowEvent[system, typings.openfin.openfinStrings.`window-did-change-theme-color`]
     
-    var `window-disabled-movement-bounds-changed`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changed`] = js.native
+    var `window-disabled-movement-bounds-changed`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changed`]
     
-    var `window-disabled-movement-bounds-changing`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changing`] = js.native
+    var `window-disabled-movement-bounds-changing`: WindowBoundsChange[system, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changing`]
     
-    var `window-embedded`: WindowEvent[system, typings.openfin.openfinStrings.`window-embedded`] = js.native
+    var `window-embedded`: WindowEvent[system, typings.openfin.openfinStrings.`window-embedded`]
     
-    var `window-end-load`: WindowEndLoadEvent[system, typings.openfin.openfinStrings.`window-end-load`] = js.native
+    var `window-end-load`: WindowEndLoadEvent[system, typings.openfin.openfinStrings.`window-end-load`]
     
-    var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[system, typings.openfin.openfinStrings.`window-end-user-bounds-changing`] = js.native
+    var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[system, typings.openfin.openfinStrings.`window-end-user-bounds-changing`]
     
-    var `window-external-process-exited`: WindowExternalProcessExitedEvent[system, typings.openfin.openfinStrings.`window-external-process-exited`] = js.native
+    var `window-external-process-exited`: WindowExternalProcessExitedEvent[system, typings.openfin.openfinStrings.`window-external-process-exited`]
     
-    var `window-external-process-started`: WindowExternalProcessStartedEvent[system, typings.openfin.openfinStrings.`window-external-process-started`] = js.native
+    var `window-external-process-started`: WindowExternalProcessStartedEvent[system, typings.openfin.openfinStrings.`window-external-process-started`]
     
-    var `window-focused`: WindowEvent[system, typings.openfin.openfinStrings.`window-focused`] = js.native
+    var `window-focused`: WindowEvent[system, typings.openfin.openfinStrings.`window-focused`]
     
-    var `window-group-changed`: WindowGroupChanged[system, typings.openfin.openfinStrings.`window-group-changed`] = js.native
+    var `window-group-changed`: WindowGroupChanged[system, typings.openfin.openfinStrings.`window-group-changed`]
     
-    var `window-hidden`: WindowHiddenEvent[system, typings.openfin.openfinStrings.`window-hidden`] = js.native
+    var `window-hidden`: WindowHiddenEvent[system, typings.openfin.openfinStrings.`window-hidden`]
     
-    var `window-hotkey`: InputEvent with (WindowEvent[system, typings.openfin.openfinStrings.`window-hotkey`]) = js.native
+    var `window-hotkey`: InputEvent & (WindowEvent[system, typings.openfin.openfinStrings.`window-hotkey`])
     
-    var `window-initialized`: WindowEvent[system, typings.openfin.openfinStrings.`window-initialized`] = js.native
+    var `window-initialized`: WindowEvent[system, typings.openfin.openfinStrings.`window-initialized`]
     
-    var `window-layout-initialized`: WindowEvent[system, typings.openfin.openfinStrings.`window-layout-initialized`] = js.native
+    var `window-layout-initialized`: WindowEvent[system, typings.openfin.openfinStrings.`window-layout-initialized`]
     
-    var `window-layout-ready`: WindowEvent[system, typings.openfin.openfinStrings.`window-layout-ready`] = js.native
+    var `window-layout-ready`: WindowEvent[system, typings.openfin.openfinStrings.`window-layout-ready`]
     
-    var `window-maximized`: WindowEvent[system, typings.openfin.openfinStrings.`window-maximized`] = js.native
+    var `window-maximized`: WindowEvent[system, typings.openfin.openfinStrings.`window-maximized`]
     
-    var `window-minimized`: WindowEvent[system, typings.openfin.openfinStrings.`window-minimized`] = js.native
+    var `window-minimized`: WindowEvent[system, typings.openfin.openfinStrings.`window-minimized`]
     
-    var `window-navigation-rejected`: WindowNavigationRejectedEvent[system, typings.openfin.openfinStrings.`window-navigation-rejected`] = js.native
+    var `window-navigation-rejected`: WindowNavigationRejectedEvent[system, typings.openfin.openfinStrings.`window-navigation-rejected`]
     
-    var `window-not-responding`: WindowEvent[system, typings.openfin.openfinStrings.`window-not-responding`] = js.native
+    var `window-not-responding`: WindowEvent[system, typings.openfin.openfinStrings.`window-not-responding`]
     
-    var `window-options-changed`: WindowOptionsChangedEvent[system, typings.openfin.openfinStrings.`window-options-changed`] = js.native
+    var `window-options-changed`: WindowOptionsChangedEvent[system, typings.openfin.openfinStrings.`window-options-changed`]
     
-    var `window-page-favicon-updated`: WindowEvent[system, typings.openfin.openfinStrings.`window-page-favicon-updated`] = js.native
+    var `window-page-favicon-updated`: WindowEvent[system, typings.openfin.openfinStrings.`window-page-favicon-updated`]
     
-    var `window-page-title-updated`: WindowEvent[system, typings.openfin.openfinStrings.`window-page-title-updated`] = js.native
+    var `window-page-title-updated`: WindowEvent[system, typings.openfin.openfinStrings.`window-page-title-updated`]
     
-    var `window-performance-report`: WindowPerformanceReport[system, typings.openfin.openfinStrings.`window-performance-report`] = js.native
+    var `window-performance-report`: WindowPerformanceReport[system, typings.openfin.openfinStrings.`window-performance-report`]
     
-    var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[system, typings.openfin.openfinStrings.`window-preload-scripts-state-changed`] = js.native
+    var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[system, typings.openfin.openfinStrings.`window-preload-scripts-state-changed`]
     
-    var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[system, typings.openfin.openfinStrings.`window-preload-scripts-state-changing`] = js.native
+    var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[system, typings.openfin.openfinStrings.`window-preload-scripts-state-changing`]
     
-    var `window-reloaded`: WindowReloadedEvent[system, typings.openfin.openfinStrings.`window-reloaded`] = js.native
+    var `window-reloaded`: WindowReloadedEvent[system, typings.openfin.openfinStrings.`window-reloaded`]
     
-    var `window-resource-load-failed`: WindowResourceLoadFailedEvent[system, typings.openfin.openfinStrings.`window-resource-load-failed`] = js.native
+    var `window-resource-load-failed`: WindowResourceLoadFailedEvent[system, typings.openfin.openfinStrings.`window-resource-load-failed`]
     
-    var `window-resource-response-received`: WindowResourceResponseReceivedEvent[system, typings.openfin.openfinStrings.`window-resource-response-received`] = js.native
+    var `window-resource-response-received`: WindowResourceResponseReceivedEvent[system, typings.openfin.openfinStrings.`window-resource-response-received`]
     
-    var `window-responding`: WindowEvent[system, typings.openfin.openfinStrings.`window-responding`] = js.native
+    var `window-responding`: WindowEvent[system, typings.openfin.openfinStrings.`window-responding`]
     
-    var `window-restored`: WindowEvent[system, typings.openfin.openfinStrings.`window-restored`] = js.native
+    var `window-restored`: WindowEvent[system, typings.openfin.openfinStrings.`window-restored`]
     
-    var `window-shown`: WindowEvent[system, typings.openfin.openfinStrings.`window-shown`] = js.native
+    var `window-shown`: WindowEvent[system, typings.openfin.openfinStrings.`window-shown`]
     
-    var `window-start-load`: WindowEvent[system, typings.openfin.openfinStrings.`window-start-load`] = js.native
+    var `window-start-load`: WindowEvent[system, typings.openfin.openfinStrings.`window-start-load`]
     
-    var `window-user-movement-disabled`: WindowEvent[system, typings.openfin.openfinStrings.`window-user-movement-disabled`] = js.native
+    var `window-user-movement-disabled`: WindowEvent[system, typings.openfin.openfinStrings.`window-user-movement-disabled`]
     
-    var `window-user-movement-enabled`: WindowEvent[system, typings.openfin.openfinStrings.`window-user-movement-enabled`] = js.native
+    var `window-user-movement-enabled`: WindowEvent[system, typings.openfin.openfinStrings.`window-user-movement-enabled`]
     
-    var `window-will-move`: WillMoveOrResize[system, typings.openfin.openfinStrings.`window-will-move`] = js.native
+    var `window-will-move`: WillMoveOrResize[system, typings.openfin.openfinStrings.`window-will-move`]
     
-    var `window-will-resize`: WillMoveOrResize[system, typings.openfin.openfinStrings.`window-will-resize`] = js.native
+    var `window-will-resize`: WillMoveOrResize[system, typings.openfin.openfinStrings.`window-will-resize`]
   }
   object SystemEvents {
     
@@ -421,7 +448,7 @@ object systemMod {
     def apply(
       `application-closed`: ApplicationEvent[system, `application-closed`],
       `application-connected`: ApplicationEvent[system, `application-connected`],
-      `application-crashed`: CrashedEvent with (ApplicationEvent[system, `application-crashed`]),
+      `application-crashed`: CrashedEvent & (ApplicationEvent[system, `application-crashed`]),
       `application-created`: ApplicationEvent[system, `application-created`],
       `application-initialized`: ApplicationEvent[system, `application-initialized`],
       `application-manifest-changed`: ApplicationEvent[system, `application-manifest-changed`],
@@ -439,28 +466,28 @@ object systemMod {
       `monitor-info-changed`: MonitorEvent[system, `monitor-info-changed`],
       newListener: String,
       `session-changed`: SessionChangedEvent[system, `session-changed`],
-      `view-blurred`: (WindowEvent[system, `view-blurred`]) with PropagatedViewIdentity,
-      `view-crashed`: CrashedEvent with (WindowEvent[system, `view-crashed`]) with PropagatedViewIdentity,
-      `view-created`: CrashedEvent with (WindowEvent[system, `view-created`]) with PropagatedViewIdentity,
-      `view-destroyed`: (WindowEvent[system, `view-destroyed`]) with PropagatedViewIdentity,
-      `view-did-change-theme-color`: (WindowEvent[system, `view-did-change-theme-color`]) with PropagatedViewIdentity,
-      `view-focused`: (WindowEvent[system, `view-focused`]) with PropagatedViewIdentity,
-      `view-hidden`: (WindowEvent[system, `view-hidden`]) with PropagatedViewIdentity,
-      `view-hotkey`: InputEvent with (WindowEvent[system, `view-hotkey`]) with PropagatedViewIdentity,
-      `view-navigation-rejected`: (WindowNavigationRejectedEvent[system, `view-navigation-rejected`]) with PropagatedViewIdentity,
-      `view-page-favicon-updated`: (WindowEvent[system, `view-page-favicon-updated`]) with PropagatedViewIdentity,
-      `view-page-title-updated`: (WindowEvent[system, `view-page-title-updated`]) with PropagatedViewIdentity,
-      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[system, `view-resource-load-failed`]) with PropagatedViewIdentity,
-      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[system, `view-resource-response-received`]) with PropagatedViewIdentity,
-      `view-shown`: (WindowEvent[system, `view-shown`]) with PropagatedViewIdentity,
-      `view-target-changed`: (TargetChangedEvent[system, `view-target-changed`]) with PropagatedViewIdentity,
+      `view-blurred`: (WindowEvent[system, `view-blurred`]) & PropagatedViewIdentity,
+      `view-crashed`: CrashedEvent & (WindowEvent[system, `view-crashed`]) & PropagatedViewIdentity,
+      `view-created`: CrashedEvent & (WindowEvent[system, `view-created`]) & PropagatedViewIdentity,
+      `view-destroyed`: (WindowEvent[system, `view-destroyed`]) & PropagatedViewIdentity,
+      `view-did-change-theme-color`: (WindowEvent[system, `view-did-change-theme-color`]) & PropagatedViewIdentity,
+      `view-focused`: (WindowEvent[system, `view-focused`]) & PropagatedViewIdentity,
+      `view-hidden`: (WindowEvent[system, `view-hidden`]) & PropagatedViewIdentity,
+      `view-hotkey`: InputEvent & (WindowEvent[system, `view-hotkey`]) & PropagatedViewIdentity,
+      `view-navigation-rejected`: (WindowNavigationRejectedEvent[system, `view-navigation-rejected`]) & PropagatedViewIdentity,
+      `view-page-favicon-updated`: (WindowEvent[system, `view-page-favicon-updated`]) & PropagatedViewIdentity,
+      `view-page-title-updated`: (WindowEvent[system, `view-page-title-updated`]) & PropagatedViewIdentity,
+      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[system, `view-resource-load-failed`]) & PropagatedViewIdentity,
+      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[system, `view-resource-response-received`]) & PropagatedViewIdentity,
+      `view-shown`: (WindowEvent[system, `view-shown`]) & PropagatedViewIdentity,
+      `view-target-changed`: (TargetChangedEvent[system, `view-target-changed`]) & PropagatedViewIdentity,
       `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[system, `window-begin-user-bounds-changing`],
       `window-blurred`: WindowEvent[system, `window-blurred`],
       `window-bounds-changed`: WindowBoundsChange[system, `window-bounds-changed`],
       `window-bounds-changing`: WindowBoundsChange[system, `window-bounds-changing`],
       `window-closed`: WindowEvent[system, `window-closed`],
       `window-closing`: WindowEvent[system, `window-closing`],
-      `window-crashed`: CrashedEvent with (WindowEvent[system, `window-crashed`]),
+      `window-crashed`: CrashedEvent & (WindowEvent[system, `window-crashed`]),
       `window-created`: WindowEvent[system, `window-created`],
       `window-did-change-theme-color`: WindowEvent[system, `window-did-change-theme-color`],
       `window-disabled-movement-bounds-changed`: WindowBoundsChange[system, `window-disabled-movement-bounds-changed`],
@@ -473,7 +500,7 @@ object systemMod {
       `window-focused`: WindowEvent[system, `window-focused`],
       `window-group-changed`: WindowGroupChanged[system, `window-group-changed`],
       `window-hidden`: WindowHiddenEvent[system, `window-hidden`],
-      `window-hotkey`: InputEvent with (WindowEvent[system, `window-hotkey`]),
+      `window-hotkey`: InputEvent & (WindowEvent[system, `window-hotkey`]),
       `window-initialized`: WindowEvent[system, `window-initialized`],
       `window-layout-initialized`: WindowEvent[system, `window-layout-initialized`],
       `window-layout-ready`: WindowEvent[system, `window-layout-ready`],
@@ -590,7 +617,7 @@ object systemMod {
       def `setApplication-connected`(value: ApplicationEvent[system, `application-connected`]): Self = StObject.set(x, "application-connected", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setApplication-crashed`(value: CrashedEvent with (ApplicationEvent[system, `application-crashed`])): Self = StObject.set(x, "application-crashed", value.asInstanceOf[js.Any])
+      def `setApplication-crashed`(value: CrashedEvent & (ApplicationEvent[system, `application-crashed`])): Self = StObject.set(x, "application-crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setApplication-created`(value: ApplicationEvent[system, `application-created`]): Self = StObject.set(x, "application-created", value.asInstanceOf[js.Any])
@@ -644,55 +671,55 @@ object systemMod {
       def `setSession-changed`(value: SessionChangedEvent[system, `session-changed`]): Self = StObject.set(x, "session-changed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-blurred`(value: (WindowEvent[system, `view-blurred`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
+      def `setView-blurred`(value: (WindowEvent[system, `view-blurred`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-crashed`(value: CrashedEvent with (WindowEvent[system, `view-crashed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
+      def `setView-crashed`(value: CrashedEvent & (WindowEvent[system, `view-crashed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-created`(value: CrashedEvent with (WindowEvent[system, `view-created`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
+      def `setView-created`(value: CrashedEvent & (WindowEvent[system, `view-created`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-destroyed`(value: (WindowEvent[system, `view-destroyed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
+      def `setView-destroyed`(value: (WindowEvent[system, `view-destroyed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-did-change-theme-color`(value: (WindowEvent[system, `view-did-change-theme-color`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
+      def `setView-did-change-theme-color`(value: (WindowEvent[system, `view-did-change-theme-color`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-focused`(value: (WindowEvent[system, `view-focused`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
+      def `setView-focused`(value: (WindowEvent[system, `view-focused`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hidden`(value: (WindowEvent[system, `view-hidden`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
+      def `setView-hidden`(value: (WindowEvent[system, `view-hidden`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hotkey`(value: InputEvent with (WindowEvent[system, `view-hotkey`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
+      def `setView-hotkey`(value: InputEvent & (WindowEvent[system, `view-hotkey`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setView-navigation-rejected`(
-        value: (WindowNavigationRejectedEvent[system, `view-navigation-rejected`]) with PropagatedViewIdentity
+        value: (WindowNavigationRejectedEvent[system, `view-navigation-rejected`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-favicon-updated`(value: (WindowEvent[system, `view-page-favicon-updated`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
+      def `setView-page-favicon-updated`(value: (WindowEvent[system, `view-page-favicon-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-title-updated`(value: (WindowEvent[system, `view-page-title-updated`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
+      def `setView-page-title-updated`(value: (WindowEvent[system, `view-page-title-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setView-resource-load-failed`(
-        value: (WindowResourceLoadFailedEvent[system, `view-resource-load-failed`]) with PropagatedViewIdentity
+        value: (WindowResourceLoadFailedEvent[system, `view-resource-load-failed`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setView-resource-response-received`(
-        value: (WindowResourceResponseReceivedEvent[system, `view-resource-response-received`]) with PropagatedViewIdentity
+        value: (WindowResourceResponseReceivedEvent[system, `view-resource-response-received`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-shown`(value: (WindowEvent[system, `view-shown`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
+      def `setView-shown`(value: (WindowEvent[system, `view-shown`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-target-changed`(value: (TargetChangedEvent[system, `view-target-changed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
+      def `setView-target-changed`(value: (TargetChangedEvent[system, `view-target-changed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setWindow-begin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[system, `window-begin-user-bounds-changing`]): Self = StObject.set(x, "window-begin-user-bounds-changing", value.asInstanceOf[js.Any])
@@ -713,7 +740,7 @@ object systemMod {
       def `setWindow-closing`(value: WindowEvent[system, `window-closing`]): Self = StObject.set(x, "window-closing", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setWindow-crashed`(value: CrashedEvent with (WindowEvent[system, `window-crashed`])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
+      def `setWindow-crashed`(value: CrashedEvent & (WindowEvent[system, `window-crashed`])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setWindow-created`(value: WindowEvent[system, `window-created`]): Self = StObject.set(x, "window-created", value.asInstanceOf[js.Any])
@@ -752,7 +779,7 @@ object systemMod {
       def `setWindow-hidden`(value: WindowHiddenEvent[system, `window-hidden`]): Self = StObject.set(x, "window-hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setWindow-hotkey`(value: InputEvent with (WindowEvent[system, `window-hotkey`])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
+      def `setWindow-hotkey`(value: InputEvent & (WindowEvent[system, `window-hotkey`])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setWindow-initialized`(value: WindowEvent[system, `window-initialized`]): Self = StObject.set(x, "window-initialized", value.asInstanceOf[js.Any])

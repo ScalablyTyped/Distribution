@@ -4,29 +4,29 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * broadcasts changes when data from backend sources has changed.
   * @see XBackendChangesListener
   */
-@js.native
-trait XBackendChangesNotifier extends XInterface {
+trait XBackendChangesNotifier
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive events when changes occurred.
     * @param aListener specifies the listener object.
     * @param component The name of the component the listener is monitoring changes for.
     */
-  def addChangesListener(aListener: XBackendChangesListener, component: String): Unit = js.native
+  def addChangesListener(aListener: XBackendChangesListener, component: String): Unit
   
   /**
     * removes the specified listener.
     * @param aListener specifies the listener object.
     * @param component The name of the component the listener is monitoring changes for.
     */
-  def removeChangesListener(aListener: XBackendChangesListener, component: String): Unit = js.native
+  def removeChangesListener(aListener: XBackendChangesListener, component: String): Unit
 }
 object XBackendChangesNotifier {
   

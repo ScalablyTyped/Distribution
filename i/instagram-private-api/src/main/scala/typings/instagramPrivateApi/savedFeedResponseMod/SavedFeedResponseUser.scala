@@ -2,41 +2,39 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseUser extends StObject {
   
-  var can_be_reported_as_fraud: js.UndefOr[Boolean] = js.native
+  var can_be_reported_as_fraud: js.UndefOr[Boolean] = js.undefined
   
-  var friendship_status: js.UndefOr[SavedFeedResponseFriendshipStatus] = js.native
+  var friendship_status: js.UndefOr[SavedFeedResponseFriendshipStatus] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
   
-  var is_favorite: js.UndefOr[Boolean] = js.native
+  var is_favorite: js.UndefOr[Boolean] = js.undefined
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: js.UndefOr[Boolean] = js.native
+  var is_unpublished: js.UndefOr[Boolean] = js.undefined
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var latest_reel_media: js.UndefOr[Double] = js.native
+  var latest_reel_media: js.UndefOr[Double] = js.undefined
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: js.UndefOr[String] = js.native
+  var profile_pic_id: js.UndefOr[String] = js.undefined
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var shoppable_posts_count: js.UndefOr[Double] = js.native
+  var shoppable_posts_count: js.UndefOr[Double] = js.undefined
   
-  var show_shoppable_feed: js.UndefOr[Boolean] = js.native
+  var show_shoppable_feed: js.UndefOr[Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object SavedFeedResponseUser {
   

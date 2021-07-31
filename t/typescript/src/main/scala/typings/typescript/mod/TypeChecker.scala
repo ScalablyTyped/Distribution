@@ -3,7 +3,6 @@ package typings.typescript.mod
 import typings.typescript.anon.TypeArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,9 +74,9 @@ trait TypeChecker extends StObject {
     * @param argumentCount Apparent number of arguments, passed in case of a possibly incomplete call. This should come from an ArgumentListInfo. See `signatureHelp.ts`.
     */
   def getResolvedSignature(node: CallLikeExpression): js.UndefOr[Signature] = js.native
-  def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: js.UndefOr[scala.Nothing], argumentCount: Double): js.UndefOr[Signature] = js.native
   def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: js.Array[Signature]): js.UndefOr[Signature] = js.native
   def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: js.Array[Signature], argumentCount: Double): js.UndefOr[Signature] = js.native
+  def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: Unit, argumentCount: Double): js.UndefOr[Signature] = js.native
   
   def getReturnTypeOfSignature(signature: Signature): Type = js.native
   
@@ -115,12 +114,7 @@ trait TypeChecker extends StObject {
   
   /** Note that the resulting nodes cannot be checked. */
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind): js.UndefOr[IndexSignatureDeclaration] = js.native
-  def indexInfoToIndexSignatureDeclaration(
-    indexInfo: IndexInfo,
-    kind: IndexKind,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: NodeBuilderFlags
-  ): js.UndefOr[IndexSignatureDeclaration] = js.native
+  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node): js.UndefOr[IndexSignatureDeclaration] = js.native
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
   
@@ -146,95 +140,50 @@ trait TypeChecker extends StObject {
   def runWithCancellationToken[T](token: CancellationToken, cb: js.Function1[/* checker */ this.type, T]): T = js.native
   
   /** Note that the resulting nodes cannot be checked. */
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
-  def signatureToSignatureDeclaration(
-    signature: Signature,
-    kind: SyntaxKind,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: NodeBuilderFlags
-  ): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind): js.UndefOr[SignatureDeclaration & TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration & TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node): js.UndefOr[SignatureDeclaration & TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration & TypeArguments] = js.native
   
   def signatureToString(signature: Signature): java.lang.String = js.native
-  def signatureToString(
-    signature: Signature,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    kind: SignatureKind
-  ): java.lang.String = js.native
-  def signatureToString(signature: Signature, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: TypeFormatFlags): java.lang.String = js.native
-  def signatureToString(
-    signature: Signature,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: TypeFormatFlags,
-    kind: SignatureKind
-  ): java.lang.String = js.native
+  def signatureToString(signature: Signature, enclosingDeclaration: Unit, flags: Unit, kind: SignatureKind): java.lang.String = js.native
+  def signatureToString(signature: Signature, enclosingDeclaration: Unit, flags: TypeFormatFlags): java.lang.String = js.native
+  def signatureToString(signature: Signature, enclosingDeclaration: Unit, flags: TypeFormatFlags, kind: SignatureKind): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node): java.lang.String = js.native
-  def signatureToString(
-    signature: Signature,
-    enclosingDeclaration: Node,
-    flags: js.UndefOr[scala.Nothing],
-    kind: SignatureKind
-  ): java.lang.String = js.native
+  def signatureToString(signature: Signature, enclosingDeclaration: Node, flags: Unit, kind: SignatureKind): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node, flags: TypeFormatFlags): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node, flags: TypeFormatFlags, kind: SignatureKind): java.lang.String = js.native
   
   /** Note that the resulting nodes cannot be checked. */
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags): js.UndefOr[EntityName] = js.native
-  def symbolToEntityName(
-    symbol: Symbol,
-    meaning: SymbolFlags,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: NodeBuilderFlags
-  ): js.UndefOr[EntityName] = js.native
+  def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[EntityName] = js.native
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node): js.UndefOr[EntityName] = js.native
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[EntityName] = js.native
   
   /** Note that the resulting nodes cannot be checked. */
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags): js.UndefOr[Expression] = js.native
-  def symbolToExpression(
-    symbol: Symbol,
-    meaning: SymbolFlags,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    flags: NodeBuilderFlags
-  ): js.UndefOr[Expression] = js.native
+  def symbolToExpression(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[Expression] = js.native
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node): js.UndefOr[Expression] = js.native
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[Expression] = js.native
   
   /** Note that the resulting nodes cannot be checked. */
   def symbolToParameterDeclaration(symbol: Symbol): js.UndefOr[ParameterDeclaration] = js.native
-  def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: NodeBuilderFlags): js.UndefOr[ParameterDeclaration] = js.native
+  def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[ParameterDeclaration] = js.native
   def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: Node): js.UndefOr[ParameterDeclaration] = js.native
   def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[ParameterDeclaration] = js.native
   
   def symbolToString(symbol: Symbol): java.lang.String = js.native
-  def symbolToString(
-    symbol: Symbol,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    meaning: js.UndefOr[scala.Nothing],
-    flags: SymbolFormatFlags
-  ): java.lang.String = js.native
-  def symbolToString(symbol: Symbol, enclosingDeclaration: js.UndefOr[scala.Nothing], meaning: SymbolFlags): java.lang.String = js.native
-  def symbolToString(
-    symbol: Symbol,
-    enclosingDeclaration: js.UndefOr[scala.Nothing],
-    meaning: SymbolFlags,
-    flags: SymbolFormatFlags
-  ): java.lang.String = js.native
+  def symbolToString(symbol: Symbol, enclosingDeclaration: Unit, meaning: Unit, flags: SymbolFormatFlags): java.lang.String = js.native
+  def symbolToString(symbol: Symbol, enclosingDeclaration: Unit, meaning: SymbolFlags): java.lang.String = js.native
+  def symbolToString(symbol: Symbol, enclosingDeclaration: Unit, meaning: SymbolFlags, flags: SymbolFormatFlags): java.lang.String = js.native
   def symbolToString(symbol: Symbol, enclosingDeclaration: Node): java.lang.String = js.native
-  def symbolToString(
-    symbol: Symbol,
-    enclosingDeclaration: Node,
-    meaning: js.UndefOr[scala.Nothing],
-    flags: SymbolFormatFlags
-  ): java.lang.String = js.native
+  def symbolToString(symbol: Symbol, enclosingDeclaration: Node, meaning: Unit, flags: SymbolFormatFlags): java.lang.String = js.native
   def symbolToString(symbol: Symbol, enclosingDeclaration: Node, meaning: SymbolFlags): java.lang.String = js.native
   def symbolToString(symbol: Symbol, enclosingDeclaration: Node, meaning: SymbolFlags, flags: SymbolFormatFlags): java.lang.String = js.native
   
   /** Note that the resulting nodes cannot be checked. */
   def symbolToTypeParameterDeclarations(symbol: Symbol): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
-  def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: NodeBuilderFlags): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
+  def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
   def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: Node): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
   def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
   
@@ -242,23 +191,23 @@ trait TypeChecker extends StObject {
   
   /** Note that the resulting nodes cannot be checked. */
   def typeParameterToDeclaration(parameter: TypeParameter): js.UndefOr[TypeParameterDeclaration] = js.native
-  def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: NodeBuilderFlags): js.UndefOr[TypeParameterDeclaration] = js.native
+  def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[TypeParameterDeclaration] = js.native
   def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: Node): js.UndefOr[TypeParameterDeclaration] = js.native
   def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[TypeParameterDeclaration] = js.native
   
   def typePredicateToString(predicate: TypePredicate): java.lang.String = js.native
-  def typePredicateToString(predicate: TypePredicate, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: TypeFormatFlags): java.lang.String = js.native
+  def typePredicateToString(predicate: TypePredicate, enclosingDeclaration: Unit, flags: TypeFormatFlags): java.lang.String = js.native
   def typePredicateToString(predicate: TypePredicate, enclosingDeclaration: Node): java.lang.String = js.native
   def typePredicateToString(predicate: TypePredicate, enclosingDeclaration: Node, flags: TypeFormatFlags): java.lang.String = js.native
   
   def typeToString(`type`: Type): java.lang.String = js.native
-  def typeToString(`type`: Type, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: TypeFormatFlags): java.lang.String = js.native
+  def typeToString(`type`: Type, enclosingDeclaration: Unit, flags: TypeFormatFlags): java.lang.String = js.native
   def typeToString(`type`: Type, enclosingDeclaration: Node): java.lang.String = js.native
   def typeToString(`type`: Type, enclosingDeclaration: Node, flags: TypeFormatFlags): java.lang.String = js.native
   
   /** Note that the resulting nodes cannot be checked. */
   def typeToTypeNode(`type`: Type): js.UndefOr[TypeNode] = js.native
-  def typeToTypeNode(`type`: Type, enclosingDeclaration: js.UndefOr[scala.Nothing], flags: NodeBuilderFlags): js.UndefOr[TypeNode] = js.native
+  def typeToTypeNode(`type`: Type, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[TypeNode] = js.native
   def typeToTypeNode(`type`: Type, enclosingDeclaration: Node): js.UndefOr[TypeNode] = js.native
   def typeToTypeNode(`type`: Type, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[TypeNode] = js.native
 }

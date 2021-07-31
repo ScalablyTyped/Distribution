@@ -2,17 +2,15 @@ package typings.awsSdkQueryErrorUnmarshaller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var Code: String = js.native
+    var Code: String
     
-    var Message: String = js.native
+    var Message: String
   }
   object Code {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RequestId extends StObject {
     
-    var requestId: String = js.native
+    var requestId: String
   }
   object RequestId {
     

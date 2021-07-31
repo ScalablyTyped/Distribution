@@ -19,7 +19,6 @@ import typings.hexo.hexoStrings.update
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,15 +29,11 @@ trait Hexo extends EventEmitter {
   /**
     * Any console command can be called explicitly using the call method on the Hexo instance.
     */
-  def call(name: String): js.Promise[_] = js.native
-  def call(
-    name: String,
-    args: js.UndefOr[scala.Nothing],
-    fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]
-  ): js.Promise[_] = js.native
-  def call(name: String, args: js.Any): js.Promise[_] = js.native
-  def call(name: String, args: js.Any, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native
-  def call(name: String, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native
+  def call(name: String): js.Promise[js.Any] = js.native
+  def call(name: String, args: js.Any): js.Promise[js.Any] = js.native
+  def call(name: String, args: js.Any, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def call(name: String, args: Unit, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def call(name: String, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
   
   /**
     * Site settings in `_config.yml`
@@ -66,8 +61,8 @@ trait Hexo extends EventEmitter {
   /**
     * Loading all files in the `source` folder as well as the theme data.
     */
-  def load(): js.Promise[_] = js.native
-  def load(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
+  def load(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
   
   /**
     * Local variables are used for template rendering, which is the `site` variable in templates.
@@ -168,6 +163,6 @@ trait Hexo extends EventEmitter {
   /**
     * The same things `load` does, but will also start watching for file changes continuously.
     */
-  def watch(): js.Promise[_] = js.native
-  def watch(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native
+  def watch(): js.Promise[js.Any] = js.native
+  def watch(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
 }

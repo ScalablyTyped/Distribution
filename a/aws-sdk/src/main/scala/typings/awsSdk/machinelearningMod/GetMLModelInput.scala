@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLModelInput extends StObject {
   
   /**
     * The ID assigned to the MLModel at creation.
     */
-  var MLModelId: EntityId = js.native
+  var MLModelId: EntityId
   
   /**
     * Specifies whether the GetMLModel operation should return Recipe. If true, Recipe is returned. If false, Recipe is not returned.
     */
-  var Verbose: js.UndefOr[typings.awsSdk.machinelearningMod.Verbose] = js.native
+  var Verbose: js.UndefOr[typings.awsSdk.machinelearningMod.Verbose] = js.undefined
 }
 object GetMLModelInput {
   

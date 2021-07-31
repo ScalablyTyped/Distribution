@@ -10,9 +10,9 @@ ECMAScript (ESTree) AST walker
 | ------------------ | :-------------: |
 | Full name          | acorn-walk |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 205 |
-| # downloads        | 433462026 |
+| # releases         | 7 |
+| # dependents       | 255 |
+| # downloads        | 558180132 |
 | # stars            | 0 |
 
 ## Links

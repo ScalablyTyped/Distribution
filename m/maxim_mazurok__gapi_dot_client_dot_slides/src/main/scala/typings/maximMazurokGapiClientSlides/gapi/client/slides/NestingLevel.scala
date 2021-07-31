@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NestingLevel extends StObject {
   
   /** The style of a bullet at this level of nesting. */
-  var bulletStyle: js.UndefOr[TextStyle] = js.native
+  var bulletStyle: js.UndefOr[TextStyle] = js.undefined
 }
 object NestingLevel {
   

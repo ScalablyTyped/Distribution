@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * metadata to devices. To learn more, read [Long‑running batch
   * operations](/zero-touch/guides/how-it-works#operations).
   */
-@js.native
 trait SchemaDevicesLongRunningOperationResponse extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaDevicesLongRunningOperationResponse extends StObject {
     * `PerDeviceStatus` per device. The list order matches the items in the
     * original request.
     */
-  var perDeviceStatus: js.UndefOr[js.Array[SchemaOperationPerDevice]] = js.native
+  var perDeviceStatus: js.UndefOr[js.Array[SchemaOperationPerDevice]] = js.undefined
   
   /**
     * A summary of how many items in the operation the server processed
     * successfully. Updated as the operation progresses.
     */
-  var successCount: js.UndefOr[Double] = js.native
+  var successCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaDevicesLongRunningOperationResponse {
   

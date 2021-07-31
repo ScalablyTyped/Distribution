@@ -2,16 +2,17 @@ package typings.wryEquality
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wry/equality", JSImport.Default)
+  @JSImport("@wry/equality", JSImport.Namespace)
   @js.native
-  def default(a: js.Any, b: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wry/equality", "equal")
-  @js.native
-  def equal(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def default(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def equal(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

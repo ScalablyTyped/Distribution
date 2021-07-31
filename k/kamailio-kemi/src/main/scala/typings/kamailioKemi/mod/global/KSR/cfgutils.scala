@@ -2,60 +2,50 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cfgutils {
   
-  @JSGlobal("KSR.cfgutils.abort")
+  @JSGlobal("KSR.cfgutils")
   @js.native
-  def abort(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.cfgutils.core_hash")
-  @js.native
-  def coreHash(s1: String, s2: String, sz: Double): Double = js.native
+  @scala.inline
+  def abort(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.lock")
-  @js.native
-  def lock(lkey: String): Double = js.native
+  @scala.inline
+  def coreHash(s1: String, s2: String, sz: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("core_hash")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], sz.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.pkg_status")
-  @js.native
-  def pkgStatus(): Double = js.native
+  @scala.inline
+  def lock(lkey: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(lkey.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.pkg_summary")
-  @js.native
-  def pkgSummary(): Double = js.native
+  @scala.inline
+  def pkgStatus(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pkg_status")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.rand_event")
-  @js.native
-  def randEvent(): Double = js.native
+  @scala.inline
+  def pkgSummary(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pkg_summary")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.rand_get_prob")
-  @js.native
-  def randGetProb(): Double = js.native
+  @scala.inline
+  def randEvent(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand_event")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.rand_reset_prob")
-  @js.native
-  def randResetProb(): Double = js.native
+  @scala.inline
+  def randGetProb(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand_get_prob")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.rand_set_prob")
-  @js.native
-  def randSetProb(percent_par: Double): Double = js.native
+  @scala.inline
+  def randResetProb(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand_reset_prob")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.shm_status")
-  @js.native
-  def shmStatus(): Double = js.native
+  @scala.inline
+  def randSetProb(percent_par: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand_set_prob")(percent_par.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.shm_summary")
-  @js.native
-  def shmSummary(): Double = js.native
+  @scala.inline
+  def shmStatus(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("shm_status")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.trylock")
-  @js.native
-  def trylock(lkey: String): Double = js.native
+  @scala.inline
+  def shmSummary(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("shm_summary")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.cfgutils.unlock")
-  @js.native
-  def unlock(lkey: String): Double = js.native
+  @scala.inline
+  def trylock(lkey: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("trylock")(lkey.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def unlock(lkey: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(lkey.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

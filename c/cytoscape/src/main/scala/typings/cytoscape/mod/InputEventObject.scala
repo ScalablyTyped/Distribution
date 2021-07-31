@@ -3,20 +3,20 @@ package typings.cytoscape.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputEventObject extends AbstractEventObject {
+trait InputEventObject
+  extends StObject
+     with AbstractEventObject {
   
   /** originalEvent : the original user input device event object */
-  var originalEvent: MouseEvent = js.native
+  var originalEvent: MouseEvent
   
   /** position : indicates the model position of the event */
-  var position: Position = js.native
+  var position: Position
   
   /** renderedPosition : indicates the rendered position of the event */
-  var renderedPosition: Position = js.native
+  var renderedPosition: Position
 }
 object InputEventObject {
   

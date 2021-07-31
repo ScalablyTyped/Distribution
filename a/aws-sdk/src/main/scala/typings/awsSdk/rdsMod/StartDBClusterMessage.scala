@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDBClusterMessage extends StObject {
   
   /**
     * The DB cluster identifier of the Amazon Aurora DB cluster to be started. This parameter is stored as a lowercase string.
     */
-  var DBClusterIdentifier: String = js.native
+  var DBClusterIdentifier: String
 }
 object StartDBClusterMessage {
   

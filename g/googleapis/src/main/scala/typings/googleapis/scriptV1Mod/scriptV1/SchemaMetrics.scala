@@ -2,30 +2,28 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource containing usage stats for a given script, based on the supplied
   * filter and mask present in the request.
   */
-@js.native
 trait SchemaMetrics extends StObject {
   
   /**
     * Number of active users.
     */
-  var activeUsers: js.UndefOr[js.Array[SchemaMetricsValue]] = js.native
+  var activeUsers: js.UndefOr[js.Array[SchemaMetricsValue]] = js.undefined
   
   /**
     * Number of failed executions.
     */
-  var failedExecutions: js.UndefOr[js.Array[SchemaMetricsValue]] = js.native
+  var failedExecutions: js.UndefOr[js.Array[SchemaMetricsValue]] = js.undefined
   
   /**
     * Number of total executions.
     */
-  var totalExecutions: js.UndefOr[js.Array[SchemaMetricsValue]] = js.native
+  var totalExecutions: js.UndefOr[js.Array[SchemaMetricsValue]] = js.undefined
 }
 object SchemaMetrics {
   

@@ -6,28 +6,26 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.image
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseMessageFileOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ChooseMessageFileCompleteCallback] = js.native
+  var complete: js.UndefOr[ChooseMessageFileCompleteCallback] = js.undefined
   
   /** 最多可以选择的文件个数，可以 0～100 */
-  var count: Double = js.native
+  var count: Double
   
   /** 根据文件拓展名过滤，仅 type==file 时有效。每一项都不能是空字符串。默认不过滤。
     *
     * 最低基础库： `2.6.0` */
-  var extension: js.UndefOr[js.Array[String]] = js.native
+  var `extension`: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ChooseMessageFileFailCallback] = js.native
+  var fail: js.UndefOr[ChooseMessageFileFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ChooseMessageFileSuccessCallback] = js.native
+  var success: js.UndefOr[ChooseMessageFileSuccessCallback] = js.undefined
   
   /** 所选的文件的类型
     *
@@ -36,7 +34,7 @@ trait ChooseMessageFileOption extends StObject {
     * - 'video': 只能选择视频文件;
     * - 'image': 只能选择图片文件;
     * - 'file': 可以选择除了图片和视频之外的其它的文件; */
-  var `type`: js.UndefOr[all | video | image | file] = js.native
+  var `type`: js.UndefOr[all | video | image | file] = js.undefined
 }
 object ChooseMessageFileOption {
   

@@ -2,12 +2,11 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetJSONOpts
-  extends JSON2SheetOpts
+  extends StObject
+     with JSON2SheetOpts
      with OriginOption
 object SheetJSONOpts {
   

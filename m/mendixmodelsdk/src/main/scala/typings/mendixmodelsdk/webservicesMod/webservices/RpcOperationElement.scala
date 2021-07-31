@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement")
@@ -45,9 +44,8 @@ object RpcOperationElement {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement.create")
-  @js.native
-  def create(model: IModel): RpcOperationElement = js.native
+  @scala.inline
+  def create(model: IModel): RpcOperationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RpcOperationElement]
   
   /**
     * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object RpcOperationElement {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement.createInOperationInfoUnderRequestBodyRpcElement")
-  @js.native
-  def createInOperationInfoUnderRequestBodyRpcElement(container: OperationInfo): RpcOperationElement = js.native
+  @scala.inline
+  def createInOperationInfoUnderRequestBodyRpcElement(container: OperationInfo): RpcOperationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestBodyRpcElement")(container.asInstanceOf[js.Any]).asInstanceOf[RpcOperationElement]
   
   /**
     * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
@@ -65,9 +62,8 @@ object RpcOperationElement {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement.createInOperationInfoUnderRequestHeaderRpcElement")
-  @js.native
-  def createInOperationInfoUnderRequestHeaderRpcElement(container: OperationInfo): RpcOperationElement = js.native
+  @scala.inline
+  def createInOperationInfoUnderRequestHeaderRpcElement(container: OperationInfo): RpcOperationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderRpcElement")(container.asInstanceOf[js.Any]).asInstanceOf[RpcOperationElement]
   
   /**
     * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
@@ -75,9 +71,8 @@ object RpcOperationElement {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement.createInOperationInfoUnderResponseBodyRpcElement")
-  @js.native
-  def createInOperationInfoUnderResponseBodyRpcElement(container: OperationInfo): RpcOperationElement = js.native
+  @scala.inline
+  def createInOperationInfoUnderResponseBodyRpcElement(container: OperationInfo): RpcOperationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderResponseBodyRpcElement")(container.asInstanceOf[js.Any]).asInstanceOf[RpcOperationElement]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.RpcOperationElement.structureTypeName")

@@ -2,17 +2,15 @@ package typings.reactDndHtml5Backend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnchorX extends StObject {
     
-    var anchorX: Double = js.native
+    var anchorX: Double
     
-    var anchorY: Double = js.native
+    var anchorY: Double
   }
   object AnchorX {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OffsetX extends StObject {
     
-    var offsetX: Double = js.native
+    var offsetX: Double
     
-    var offsetY: Double = js.native
+    var offsetY: Double
   }
   object OffsetX {
     

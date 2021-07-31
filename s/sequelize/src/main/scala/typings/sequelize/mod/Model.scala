@@ -7,7 +7,6 @@ import typings.sequelize.anon.UpsertOptionsreturningtru
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Model[TInstance, TAttributes, TCreationAttributes]
-  extends Hooks[TInstance]
+  extends StObject
+     with Hooks[TInstance]
      with Associations {
   
   /**
@@ -53,7 +53,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def aggregate(field: String, aggregateFunction: String, options: AggregateOptions): typings.bluebird.mod.^[js.Object] = js.native
   
   def all[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
-  def all[TCustomAttributes](optionz: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  def all[TCustomAttributes](optionz: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
   
   /**
     * Set associations with other models
@@ -77,7 +77,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def build(): TInstance = js.native
   def build(record: TAttributes): TInstance = js.native
   def build(record: TAttributes, options: BuildOptions): TInstance = js.native
-  def build(record: js.UndefOr[scala.Nothing], options: BuildOptions): TInstance = js.native
+  def build(record: Unit, options: BuildOptions): TInstance = js.native
   
   /**
     * Undocumented bulkBuild
@@ -113,7 +113,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def create(): typings.bluebird.mod.^[TInstance] = js.native
   def create(values: TCreationAttributes): typings.bluebird.mod.^[TInstance] = js.native
   def create(values: TCreationAttributes, options: CreateOptions): typings.bluebird.mod.^[TInstance] = js.native
-  def create(values: js.UndefOr[scala.Nothing], options: CreateOptions): typings.bluebird.mod.^[TInstance] = js.native
+  def create(values: Unit, options: CreateOptions): typings.bluebird.mod.^[TInstance] = js.native
   
   /**
     * Run a describe query on the table. The result will be return to the listener as a hash of attributes and
@@ -138,7 +138,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def drop(options: DropOptions): typings.bluebird.mod.^[Unit] = js.native
   
   def find[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
-  def find[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
+  def find[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
   
   /**
     * Search for multiple instances.
@@ -203,7 +203,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * @see    {Sequelize#query}
     */
   def findAll[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
-  def findAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  def findAll[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
   
   /**
     * Find all the rows matching your query, within a specified offset / limit, and get the total number of
@@ -241,10 +241,10 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * profiles will be counted
     */
   def findAndCount[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
-  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
   
   def findAndCountAll[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
-  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
   
   /**
     * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
@@ -256,17 +256,9 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findById[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findById")
   def findById_where[TCustomAttributes](
-    identifier: js.UndefOr[scala.Nothing],
-    options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
-      typings.sequelize.sequelizeStrings.where
-    ]
-  ): typings.bluebird.mod.^[TInstance | Null] = js.native
-  @JSName("findById")
-  def findById_where[TCustomAttributes](
     identifier: String,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -274,7 +266,15 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findById_where[TCustomAttributes](
     identifier: Double,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findById")
+  def findById_where[TCustomAttributes](
+    identifier: Unit,
+    options: Omit[
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -282,7 +282,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findById_where[TCustomAttributes](
     identifier: Buffer,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -293,17 +293,9 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPk[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findByPk")
   def findByPk_where[TCustomAttributes](
-    identifier: js.UndefOr[scala.Nothing],
-    options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
-      typings.sequelize.sequelizeStrings.where
-    ]
-  ): typings.bluebird.mod.^[TInstance | Null] = js.native
-  @JSName("findByPk")
-  def findByPk_where[TCustomAttributes](
     identifier: String,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -311,7 +303,15 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPk_where[TCustomAttributes](
     identifier: Double,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findByPk")
+  def findByPk_where[TCustomAttributes](
+    identifier: Unit,
+    options: Omit[
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -319,7 +319,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPk_where[TCustomAttributes](
     identifier: Buffer,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -330,17 +330,9 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPrimary[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findByPrimary")
   def findByPrimary_where[TCustomAttributes](
-    identifier: js.UndefOr[scala.Nothing],
-    options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
-      typings.sequelize.sequelizeStrings.where
-    ]
-  ): typings.bluebird.mod.^[TInstance | Null] = js.native
-  @JSName("findByPrimary")
-  def findByPrimary_where[TCustomAttributes](
     identifier: String,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -348,7 +340,15 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPrimary_where[TCustomAttributes](
     identifier: Double,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findByPrimary")
+  def findByPrimary_where[TCustomAttributes](
+    identifier: Unit,
+    options: Omit[
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -356,7 +356,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findByPrimary_where[TCustomAttributes](
     identifier: Buffer,
     options: Omit[
-      FindOptions[TAttributes with TCustomAttributes], 
+      FindOptions[TAttributes & TCustomAttributes], 
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
@@ -365,14 +365,14 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * A more performant findOrCreate that will not work under a transaction (at least not in postgres)
     * Will execute a find call, if empty then attempt to create, if unique constraint then attempt to find again
     */
-  def findCreateFind[TCustomAttributes](options: FindCreateFindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  def findCreateFind[TCustomAttributes](options: FindCreateFindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
   
   /**
     * Search for a single instance. This applies LIMIT 1, so the listener will always be called with a single
     * instance.
     */
   def findOne[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
-  def findOne[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
+  def findOne[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
   
   def findOrBuild(options: FindOrInitializeOptions[TAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
   
@@ -415,14 +415,14 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   /**
     * Find the maximum value of field
     */
-  def max(field: String): typings.bluebird.mod.^[_] = js.native
-  def max(field: String, options: AggregateOptions): typings.bluebird.mod.^[_] = js.native
+  def max(field: String): typings.bluebird.mod.^[js.Any] = js.native
+  def max(field: String, options: AggregateOptions): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Find the minimum value of field
     */
-  def min(field: String): typings.bluebird.mod.^[_] = js.native
-  def min(field: String, options: AggregateOptions): typings.bluebird.mod.^[_] = js.native
+  def min(field: String): typings.bluebird.mod.^[js.Any] = js.native
+  def min(field: String, options: AggregateOptions): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * The singular name of the model

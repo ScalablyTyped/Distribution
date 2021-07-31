@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservationRequest extends StObject {
   
   /**
     * Unique reservation ID, e.g. '1234567'
     */
-  var ReservationId: string = js.native
+  var ReservationId: string
 }
 object DescribeReservationRequest {
   

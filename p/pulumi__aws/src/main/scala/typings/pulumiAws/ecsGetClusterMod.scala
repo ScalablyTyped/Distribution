@@ -4,25 +4,25 @@ import typings.pulumiAws.outputMod.ecs.GetClusterSetting
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecsGetClusterMod {
   
-  @JSImport("@pulumi/aws/ecs/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/ecs/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/ecs/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * The name of the ECS Cluster
       */
-    val clusterName: String = js.native
+    val clusterName: String
   }
   object GetClusterArgs {
     
@@ -40,45 +40,44 @@ object ecsGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
     /**
       * The ARN of the ECS Cluster
       */
-    val arn: String = js.native
+    val arn: String
     
-    val clusterName: String = js.native
+    val clusterName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The number of pending tasks for the ECS Cluster
       */
-    val pendingTasksCount: Double = js.native
+    val pendingTasksCount: Double
     
     /**
       * The number of registered container instances for the ECS Cluster
       */
-    val registeredContainerInstancesCount: Double = js.native
+    val registeredContainerInstancesCount: Double
     
     /**
       * The number of running tasks for the ECS Cluster
       */
-    val runningTasksCount: Double = js.native
+    val runningTasksCount: Double
     
     /**
       * The settings associated with the ECS Cluster.
       */
-    val settings: js.Array[GetClusterSetting] = js.native
+    val settings: js.Array[GetClusterSetting]
     
     /**
       * The status of the ECS Cluster
       */
-    val status: String = js.native
+    val status: String
   }
   object GetClusterResult {
     

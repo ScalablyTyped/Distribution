@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FolderItem...
   */
-@js.native
 trait IFolderItem extends StObject {
   
   /**
     * Name of the folder item.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Type of the folder item.
     */
-  var qType: FolderItemType = js.native
+  var qType: FolderItemType
 }
 object IFolderItem {
   

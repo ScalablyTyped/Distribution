@@ -2,21 +2,19 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryContext extends StObject {
   
-  var dataService: DataService = js.native
+  var dataService: DataService
   
-  var entityManager: EntityManager = js.native
+  var entityManager: EntityManager
   
-  var query: EntityQuery | String = js.native
+  var query: EntityQuery | String
   
-  var queryOptions: QueryOptions = js.native
+  var queryOptions: QueryOptions
   
-  var url: String = js.native
+  var url: String
 }
 object QueryContext {
   

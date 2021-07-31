@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryHighlightsTrayResponseCoverMedia extends StObject {
   
-  var crop_rect: js.Array[Double | String] = js.native
+  var crop_rect: js.Array[Double | String]
   
-  var cropped_image_version: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion = js.native
+  var cropped_image_version: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion
   
-  var media_id: String = js.native
+  var media_id: String
 }
 object HighlightsRepositoryHighlightsTrayResponseCoverMedia {
   

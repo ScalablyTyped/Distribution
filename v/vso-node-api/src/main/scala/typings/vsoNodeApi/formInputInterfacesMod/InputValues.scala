@@ -2,46 +2,44 @@ package typings.vsoNodeApi.formInputInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputValues extends StObject {
   
   /**
     * The default value to use for this input
     */
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /**
     * Errors encountered while computing dynamic values.
     */
-  var error: InputValuesError = js.native
+  var error: InputValuesError
   
   /**
     * The id of the input
     */
-  var inputId: String = js.native
+  var inputId: String
   
   /**
     * Should this input be disabled
     */
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
   
   /**
     * Should the value be restricted to one of the values in the PossibleValues (True) or are the values in PossibleValues just a suggestion (False)
     */
-  var isLimitedToPossibleValues: Boolean = js.native
+  var isLimitedToPossibleValues: Boolean
   
   /**
     * Should this input be made read-only
     */
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
   /**
     * Possible values that this input can take
     */
-  var possibleValues: js.Array[InputValue] = js.native
+  var possibleValues: js.Array[InputValue]
 }
 object InputValues {
   

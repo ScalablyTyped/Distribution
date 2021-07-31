@@ -10,9 +10,9 @@ Check if a Buffer/Uint8Array is a GIF image
 | ------------------ | :-------------: |
 | Full name          | is-gif |
 | Keywords           | gif, graphics, image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
-| # releases         | 2 |
-| # dependents       | 31 |
-| # downloads        | 24392070 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 25823186 |
 | # stars            | 3 |
 
 ## Links

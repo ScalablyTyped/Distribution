@@ -2,17 +2,15 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubtitleColor extends StObject {
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var subtitleColor: js.UndefOr[String] = js.native
+  var subtitleColor: js.UndefOr[String] = js.undefined
   
-  var titleColor: js.UndefOr[String] = js.native
+  var titleColor: js.UndefOr[String] = js.undefined
 }
 object SubtitleColor {
   

@@ -3,7 +3,6 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.GetAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.ObjectLiteralElement because var conflicts: _declarationBrand. Inlined _objectLiteralBrand
 - typings.typescript.mod.ClassElement because var conflicts: _declarationBrand. Inlined _classElementBrand */ @js.native
 trait GetAccessorDeclaration
-  extends FunctionLikeDeclarationBase
+  extends StObject
+     with FunctionLikeDeclarationBase
      with AccessorDeclaration
      with FunctionLikeDeclaration {
   

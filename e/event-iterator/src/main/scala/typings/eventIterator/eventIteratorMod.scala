@@ -5,7 +5,6 @@ import typings.std.AsyncIterable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventIteratorMod {
@@ -19,17 +18,18 @@ object eventIteratorMod {
   
   @JSImport("event-iterator/lib/event-iterator", "EventIterator")
   @js.native
-  class EventIterator[T] protected () extends AsyncIterable[T] {
+  class EventIterator[T] protected ()
+    extends StObject
+       with AsyncIterable[T] {
     def this(listen: ListenHandler[T]) = this()
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
   }
   
-  @js.native
   trait EventHandlers extends StObject {
     
-    def highWater(): Unit = js.native
+    def highWater(): Unit
     
-    def lowWater(): Unit = js.native
+    def lowWater(): Unit
   }
   object EventHandlers {
     
@@ -50,12 +50,11 @@ object eventIteratorMod {
     }
   }
   
-  @js.native
   trait EventIteratorOptions extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var lowWaterMark: js.UndefOr[Double] = js.native
+    var lowWaterMark: js.UndefOr[Double] = js.undefined
   }
   object EventIteratorOptions {
     
@@ -84,19 +83,18 @@ object eventIteratorMod {
   
   type ListenHandler[T] = js.Function1[/* queue */ Queue[T], Unit | RemoveHandler]
   
-  @js.native
   trait Queue[T] extends StObject {
     
-    def fail(error: Error): Unit = js.native
+    def fail(error: Error): Unit
     
     def on[E /* <: QueueEvent */](
       event: E,
       fn: /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any
-    ): Unit = js.native
+    ): Unit
     
-    def push(value: T): Unit = js.native
+    def push(value: T): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Queue {
     
@@ -112,7 +110,7 @@ object eventIteratorMod {
     }
     
     @scala.inline
-    implicit class QueueMutableBuilder[Self <: Queue[_], T] (val x: Self with Queue[T]) extends AnyVal {
+    implicit class QueueMutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
       
       @scala.inline
       def setFail(value: Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))

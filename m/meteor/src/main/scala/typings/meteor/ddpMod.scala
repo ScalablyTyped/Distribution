@@ -5,40 +5,40 @@ import typings.meteor.Meteor.Connection
 import typings.meteor.Meteor.SubscriptionHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ddpMod {
   
   object DDP {
     
-    @JSImport("meteor/ddp", "DDP._allSubscriptionsReady")
+    @JSImport("meteor/ddp", "DDP")
     @js.native
-    def allSubscriptionsReady(): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("meteor/ddp", "DDP.connect")
-    @js.native
-    def connect(url: String): DDPStatic = js.native
+    @scala.inline
+    def allSubscriptionsReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_allSubscriptionsReady")().asInstanceOf[Boolean]
     
-    @js.native
+    @scala.inline
+    def connect(url: String): DDPStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[DDPStatic]
+    
     trait DDPStatic extends StObject {
       
       @JSName("apply")
-      def apply(method: String, parameters: js.Any*): js.Any = js.native
+      def apply(method: String, parameters: js.Any*): js.Any
       
-      def call(method: String, parameters: js.Any*): js.Any = js.native
+      def call(method: String, parameters: js.Any*): js.Any
       
-      def disconnect(): Unit = js.native
+      def disconnect(): Unit
       
-      def methods(IMeteorMethodsDictionary: js.Any): js.Any = js.native
+      def methods(IMeteorMethodsDictionary: js.Any): js.Any
       
-      def onReconnect(): Unit = js.native
+      def onReconnect(): Unit
       
-      def reconnect(): Unit = js.native
+      def reconnect(): Unit
       
-      def status(): DDPStatus = js.native
+      def status(): DDPStatus
       
-      def subscribe(name: String, rest: js.Any*): SubscriptionHandle = js.native
+      def subscribe(name: String, rest: js.Any*): SubscriptionHandle
     }
     object DDPStatic {
       
@@ -86,18 +86,17 @@ object ddpMod {
       }
     }
     
-    @js.native
     trait DDPStatus extends StObject {
       
-      var connected: Boolean = js.native
+      var connected: Boolean
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var retryCount: Double = js.native
+      var retryCount: Double
       
-      var retryTime: js.UndefOr[Double] = js.native
+      var retryTime: js.UndefOr[Double] = js.undefined
       
-      var status: Status = js.native
+      var status: Status
     }
     object DDPStatus {
       
@@ -163,7 +162,9 @@ object ddpMod {
   object DDPCommon {
     
     @js.native
-    trait MethodInvocation extends Instantiable1[/* options */ MethodInvocationOptions, MethodInvocation] {
+    trait MethodInvocation
+      extends StObject
+         with Instantiable1[/* options */ MethodInvocationOptions, MethodInvocation] {
       
       var connection: Connection = js.native
       
@@ -176,24 +177,23 @@ object ddpMod {
       var userId: String | Null = js.native
     }
     
-    @js.native
     trait MethodInvocationOptions extends StObject {
       
-      var connection: Connection = js.native
+      var connection: Connection
       
-      var isSimulation: Boolean = js.native
+      var isSimulation: Boolean
       
-      var randomSeed: String = js.native
+      var randomSeed: String
       
-      var setUserId: js.UndefOr[js.Function1[/* newUserId */ String, Unit]] = js.native
+      var setUserId: js.UndefOr[js.Function1[/* newUserId */ String, Unit]] = js.undefined
       
-      var userId: String | Null = js.native
+      var userId: String | Null
     }
     object MethodInvocationOptions {
       
       @scala.inline
       def apply(connection: Connection, isSimulation: Boolean, randomSeed: String): MethodInvocationOptions = {
-        val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any], userId = null)
         __obj.asInstanceOf[MethodInvocationOptions]
       }
       

@@ -2,46 +2,44 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UICustomizationType extends StObject {
   
   /**
     * The CSS values in the UI customization.
     */
-  var CSS: js.UndefOr[CSSType] = js.native
+  var CSS: js.UndefOr[CSSType] = js.undefined
   
   /**
     * The CSS version number.
     */
-  var CSSVersion: js.UndefOr[CSSVersionType] = js.native
+  var CSSVersion: js.UndefOr[CSSVersionType] = js.undefined
   
   /**
     * The client ID for the client app.
     */
-  var ClientId: js.UndefOr[ClientIdType] = js.native
+  var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
     * The creation date for the UI customization.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The logo image for the UI customization.
     */
-  var ImageUrl: js.UndefOr[ImageUrlType] = js.native
+  var ImageUrl: js.UndefOr[ImageUrlType] = js.undefined
   
   /**
     * The last-modified date for the UI customization.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: js.UndefOr[UserPoolIdType] = js.native
+  var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
 }
 object UICustomizationType {
   

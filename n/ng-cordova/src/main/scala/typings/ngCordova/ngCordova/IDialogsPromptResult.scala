@@ -2,15 +2,13 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDialogsPromptResult extends StObject {
   
-  var buttonIndex: Double = js.native
+  var buttonIndex: Double
   
-  var input1: String = js.native
+  var input1: String
 }
 object IDialogsPromptResult {
   

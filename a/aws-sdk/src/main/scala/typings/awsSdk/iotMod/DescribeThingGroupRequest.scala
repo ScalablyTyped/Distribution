@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThingGroupRequest extends StObject {
   
   /**
     * The name of the thing group.
     */
-  var thingGroupName: ThingGroupName = js.native
+  var thingGroupName: ThingGroupName
 }
 object DescribeThingGroupRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectStackResourceDriftOutput extends StObject {
   
   /**
     * Information about whether the resource's actual configuration has drifted from its expected template configuration, including actual and expected property values and any differences detected.
     */
-  var StackResourceDrift: typings.awsSdk.cloudformationMod.StackResourceDrift = js.native
+  var StackResourceDrift: typings.awsSdk.cloudformationMod.StackResourceDrift
 }
 object DetectStackResourceDriftOutput {
   

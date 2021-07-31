@@ -10,9 +10,9 @@ TypeScript typings for Kubernetes Engine API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.container |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 61 |
+| # downloads        | 1210 |
 | # stars            | 0 |
 
 ## Links

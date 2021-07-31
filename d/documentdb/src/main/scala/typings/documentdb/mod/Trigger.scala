@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Trigger extends UserScriptable {
+trait Trigger
+  extends StObject
+     with UserScriptable {
   
   /** The trigger operation. Should be one of 'all', 'create', 'update', 'delete', or 'replace'. */
-  var triggerOperation: TriggerOperation = js.native
+  var triggerOperation: TriggerOperation
   
   /** The type of the trigger. Should be either 'pre' or 'post'. */
-  var triggerType: js.UndefOr[TriggerType] = js.native
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object Trigger {
   

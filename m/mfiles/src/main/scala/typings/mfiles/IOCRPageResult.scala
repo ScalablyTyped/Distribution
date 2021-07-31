@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCRPageResult extends StObject {
   
-  val OCRZoneResults: IOCRZoneResults = js.native
+  val OCRZoneResults: IOCRZoneResults
   
-  val PageNum: Double = js.native
+  val PageNum: Double
 }
 object IOCRPageResult {
   

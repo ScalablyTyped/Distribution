@@ -2,39 +2,37 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[String | FontStyles] = js.native
+  var bold: js.UndefOr[String | FontStyles] = js.undefined
   
-  var boldital: js.UndefOr[String | FontStyles] = js.native
+  var boldital: js.UndefOr[String | FontStyles] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
-  
-  // px
-  var face: js.UndefOr[String] = js.native
-  
-  var ital: js.UndefOr[String | FontStyles] = js.native
-  
-  var mono: js.UndefOr[String | FontStyles] = js.native
-  
-  var multi: js.UndefOr[Boolean | String] = js.native
-  
-  var size: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   // px
-  var strokeColor: js.UndefOr[String] = js.native
+  var face: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var ital: js.UndefOr[String | FontStyles] = js.undefined
   
-  var vadjust: js.UndefOr[Double] = js.native
+  var mono: js.UndefOr[String | FontStyles] = js.undefined
+  
+  var multi: js.UndefOr[Boolean | String] = js.undefined
+  
+  var size: js.UndefOr[Double] = js.undefined
+  
+  // px
+  var strokeColor: js.UndefOr[String] = js.undefined
+  
+  var strokeWidth: js.UndefOr[Double] = js.undefined
+  
+  var vadjust: js.UndefOr[Double] = js.undefined
 }
 object Font {
   

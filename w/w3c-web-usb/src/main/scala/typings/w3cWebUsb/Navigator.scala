@@ -2,13 +2,11 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  val usb: USB = js.native
+  val usb: USB
 }
 object Navigator {
   

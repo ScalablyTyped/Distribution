@@ -11,10 +11,13 @@ import typings.jsondiffpatch.jsondiffpatchStrings.reverse
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jsondiffpatch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jsondiffpatch", "Context")
   @js.native
@@ -164,20 +167,16 @@ object mod {
   @js.native
   val console: Formatter = js.native
   
-  @JSImport("jsondiffpatch", "create")
-  @js.native
-  def create(): DiffPatcher = js.native
-  @JSImport("jsondiffpatch", "create")
-  @js.native
-  def create(options: js.Any): DiffPatcher = js.native
+  @scala.inline
+  def create(): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DiffPatcher]
+  @scala.inline
+  def create(options: js.Any): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[DiffPatcher]
   
-  @JSImport("jsondiffpatch", "dateReviver")
-  @js.native
-  def dateReviver(key: String, value: js.Any): js.Any = js.native
+  @scala.inline
+  def dateReviver(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dateReviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jsondiffpatch", "diff")
-  @js.native
-  def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = js.native
+  @scala.inline
+  def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Delta]]
   
   object formatters {
     
@@ -204,22 +203,18 @@ object mod {
     def html_=(x: HtmlFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("jsondiffpatch", "patch")
-  @js.native
-  def patch(left: js.Any, delta: Delta): js.Any = js.native
+  @scala.inline
+  def patch(left: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(left.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jsondiffpatch", "reverse")
-  @js.native
-  def reverse(delta: Delta): js.UndefOr[Delta] = js.native
+  @scala.inline
+  def reverse(delta: Delta): js.UndefOr[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(delta.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Delta]]
   
-  @JSImport("jsondiffpatch", "unpatch")
-  @js.native
-  def unpatch(right: js.Any, delta: Delta): js.Any = js.native
+  @scala.inline
+  def unpatch(right: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")(right.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait Config extends StObject {
     
-    var arrays: js.UndefOr[DetectMove] = js.native
+    var arrays: js.UndefOr[DetectMove] = js.undefined
     
     /**
       *  default false. if true, values in the obtained delta will be cloned (using jsondiffpatch.clone by default),
@@ -228,10 +223,10 @@ object mod {
       *
       *  instead of true, a function can be specified here to provide a custom clone(value)
       */
-    var cloneDiffValues: js.UndefOr[Boolean | (js.Function1[/* value */ js.Any, _])] = js.native
+    var cloneDiffValues: js.UndefOr[Boolean | (js.Function1[/* value */ js.Any, js.Any])] = js.undefined
     
     // used to match objects when diffing arrays, by default only === operator is used
-    var objectHash: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, String]] = js.native
+    var objectHash: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, String]] = js.undefined
     
     /**
       * this optional function can be specified to ignore object properties (eg. volatile data)
@@ -241,9 +236,9 @@ object mod {
     /**
       *
       */
-    var propertyFilter: js.UndefOr[js.Function2[/* name */ String, /* context */ DiffContext, Boolean]] = js.native
+    var propertyFilter: js.UndefOr[js.Function2[/* name */ String, /* context */ DiffContext, Boolean]] = js.undefined
     
-    var textDiff: js.UndefOr[MinLength] = js.native
+    var textDiff: js.UndefOr[MinLength] = js.undefined
   }
   object Config {
     
@@ -263,10 +258,10 @@ object mod {
       def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
       @scala.inline
-      def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ js.Any, _])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
+      def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ js.Any, js.Any])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCloneDiffValuesFunction1(value: /* value */ js.Any => _): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
+      def setCloneDiffValuesFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCloneDiffValuesUndefined: Self = StObject.set(x, "cloneDiffValues", js.undefined)
@@ -291,7 +286,7 @@ object mod {
     }
   }
   
-  type Delta = StringDictionary[js.Any] with NumberDictionary[js.Any]
+  type Delta = StringDictionary[js.Any] & NumberDictionary[js.Any]
   
   @js.native
   trait Filter[TContext /* <: FilterContext */] extends StObject {
@@ -315,10 +310,9 @@ object mod {
   */
   trait FilterContext extends StObject
   
-  @js.native
   trait Formatter extends StObject {
     
-    def format(delta: Delta, original: js.Any): String = js.native
+    def format(delta: Delta, original: js.Any): String
   }
   object Formatter {
     
@@ -337,7 +331,9 @@ object mod {
   }
   
   @js.native
-  trait HtmlFormatter extends Formatter {
+  trait HtmlFormatter
+    extends StObject
+       with Formatter {
     
     /**
       * An alias for showUnchanged(false, ...)
@@ -345,8 +341,8 @@ object mod {
       * @param delay Transition time in ms. (Default: no transition)
       */
     def hideUnchanged(): Unit = js.native
-    def hideUnchanged(node: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
     def hideUnchanged(node: Null, delay: Double): Unit = js.native
+    def hideUnchanged(node: Unit, delay: Double): Unit = js.native
     def hideUnchanged(node: Element): Unit = js.native
     def hideUnchanged(node: Element, delay: Double): Unit = js.native
     
@@ -357,8 +353,8 @@ object mod {
       * @param delay Transition time in ms. (Default: no transition)
       */
     def showUnchanged(show: Boolean): Unit = js.native
-    def showUnchanged(show: Boolean, node: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
     def showUnchanged(show: Boolean, node: Null, delay: Double): Unit = js.native
+    def showUnchanged(show: Boolean, node: Unit, delay: Double): Unit = js.native
     def showUnchanged(show: Boolean, node: Element): Unit = js.native
     def showUnchanged(show: Boolean, node: Element, delay: Double): Unit = js.native
   }

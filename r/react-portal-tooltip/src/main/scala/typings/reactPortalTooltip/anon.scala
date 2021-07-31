@@ -3,17 +3,15 @@ package typings.reactPortalTooltip
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrowStyle extends StObject {
     
-    var arrowStyle: js.UndefOr[CSSProperties] = js.native
+    var arrowStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ArrowStyle {
     

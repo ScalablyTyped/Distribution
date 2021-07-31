@@ -2,13 +2,13 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathTemplateBasedRequestPrepareOptions extends RequestPrepareOptions {
+trait PathTemplateBasedRequestPrepareOptions
+  extends StObject
+     with RequestPrepareOptions {
   
-  var pathTemplate: String = js.native
+  var pathTemplate: String
 }
 object PathTemplateBasedRequestPrepareOptions {
   

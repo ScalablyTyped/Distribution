@@ -2,25 +2,23 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target Window.
   */
-@js.native
 trait SchemaTargetWindow extends StObject {
   
   /**
     * User-entered value.
     */
-  var customHtml: js.UndefOr[String] = js.native
+  var customHtml: js.UndefOr[String] = js.undefined
   
   /**
     * Type of browser window for which the backup image of the flash creative
     * can be displayed.
     */
-  var targetWindowOption: js.UndefOr[String] = js.native
+  var targetWindowOption: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetWindow {
   

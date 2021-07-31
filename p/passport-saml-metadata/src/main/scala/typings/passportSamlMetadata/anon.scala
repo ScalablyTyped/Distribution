@@ -3,19 +3,17 @@ package typings.passportSamlMetadata
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CamelCase extends StObject {
     
-    var camelCase: String = js.native
+    var camelCase: String
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
   }
   object CamelCase {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
   }
   object Data {
     
@@ -67,10 +64,9 @@ object anon {
     def get(url: String, params: PartialFetchAxiosConfig): js.Promise[Data] = js.native
   }
   
-  @js.native
   trait MultipleCerts extends StObject {
     
-    var multipleCerts: Boolean = js.native
+    var multipleCerts: Boolean
   }
   object MultipleCerts {
     
@@ -89,14 +85,13 @@ object anon {
   }
   
   /* Inlined std.Partial<passport-saml-metadata.passport-saml-metadata/src/fetch.FetchAxiosConfig> */
-  @js.native
   trait PartialFetchAxiosConfig extends StObject {
     
-    var backupStore: js.UndefOr[Map[String, String]] = js.native
+    var backupStore: js.UndefOr[Map[String, String]] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PartialFetchAxiosConfig {
     
@@ -130,12 +125,11 @@ object anon {
   }
   
   /* Inlined std.Partial<passport-saml-metadata.passport-saml-metadata/src/reader.MetadataConstructorOptions> */
-  @js.native
   trait PartialMetadataConstructo extends StObject {
     
-    var authnRequestBinding: js.UndefOr[String] = js.native
+    var authnRequestBinding: js.UndefOr[String] = js.undefined
     
-    var throwExceptions: js.UndefOr[Boolean] = js.native
+    var throwExceptions: js.UndefOr[Boolean] = js.undefined
   }
   object PartialMetadataConstructo {
     

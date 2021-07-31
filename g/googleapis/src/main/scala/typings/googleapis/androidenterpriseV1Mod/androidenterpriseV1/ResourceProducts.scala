@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Products")
@@ -34,7 +33,7 @@ class ResourceProducts protected () extends StObject {
     */
   def approve(): GaxiosPromise[Unit] = js.native
   def approve(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def approve(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def approve(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def approve(params: ParamsResourceProductsApprove): GaxiosPromise[Unit] = js.native
   def approve(params: ParamsResourceProductsApprove, callback: BodyResponseCallback[Unit]): Unit = js.native
   def approve(
@@ -74,7 +73,7 @@ class ResourceProducts protected () extends StObject {
     */
   def generateApprovalUrl(): GaxiosPromise[SchemaProductsGenerateApprovalUrlResponse] = js.native
   def generateApprovalUrl(callback: BodyResponseCallback[SchemaProductsGenerateApprovalUrlResponse]): Unit = js.native
-  def generateApprovalUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductsGenerateApprovalUrlResponse] = js.native
+  def generateApprovalUrl(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductsGenerateApprovalUrlResponse] = js.native
   def generateApprovalUrl(params: ParamsResourceProductsGenerateapprovalurl): GaxiosPromise[SchemaProductsGenerateApprovalUrlResponse] = js.native
   def generateApprovalUrl(
     params: ParamsResourceProductsGenerateapprovalurl,
@@ -108,7 +107,7 @@ class ResourceProducts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet, callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
   def get(
@@ -144,7 +143,7 @@ class ResourceProducts protected () extends StObject {
     */
   def getAppRestrictionsSchema(): GaxiosPromise[SchemaAppRestrictionsSchema] = js.native
   def getAppRestrictionsSchema(callback: BodyResponseCallback[SchemaAppRestrictionsSchema]): Unit = js.native
-  def getAppRestrictionsSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppRestrictionsSchema] = js.native
+  def getAppRestrictionsSchema(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppRestrictionsSchema] = js.native
   def getAppRestrictionsSchema(params: ParamsResourceProductsGetapprestrictionsschema): GaxiosPromise[SchemaAppRestrictionsSchema] = js.native
   def getAppRestrictionsSchema(
     params: ParamsResourceProductsGetapprestrictionsschema,
@@ -177,7 +176,7 @@ class ResourceProducts protected () extends StObject {
     */
   def getPermissions(): GaxiosPromise[SchemaProductPermissions] = js.native
   def getPermissions(callback: BodyResponseCallback[SchemaProductPermissions]): Unit = js.native
-  def getPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductPermissions] = js.native
+  def getPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductPermissions] = js.native
   def getPermissions(params: ParamsResourceProductsGetpermissions): GaxiosPromise[SchemaProductPermissions] = js.native
   def getPermissions(
     params: ParamsResourceProductsGetpermissions,
@@ -215,7 +214,7 @@ class ResourceProducts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaProductsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaProductsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductsListResponse] = js.native
   def list(params: ParamsResourceProductsList): GaxiosPromise[SchemaProductsListResponse] = js.native
   def list(params: ParamsResourceProductsList, callback: BodyResponseCallback[SchemaProductsListResponse]): Unit = js.native
   def list(
@@ -246,7 +245,7 @@ class ResourceProducts protected () extends StObject {
     */
   def unapprove(): GaxiosPromise[Unit] = js.native
   def unapprove(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def unapprove(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def unapprove(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unapprove(params: ParamsResourceProductsUnapprove): GaxiosPromise[Unit] = js.native
   def unapprove(params: ParamsResourceProductsUnapprove, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unapprove(

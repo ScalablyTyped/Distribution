@@ -12,7 +12,7 @@ Dynamic time warping for Javascript
 | Keywords           | dynamic, time, warping |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2619 |
+| # downloads        | 3938 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseObject extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object LicenseObject {
   

@@ -2,15 +2,13 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var progress: Double = js.native
+  var progress: Double
 }
 object Progress {
   

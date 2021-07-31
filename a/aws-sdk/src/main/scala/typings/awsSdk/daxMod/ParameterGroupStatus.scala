@@ -2,26 +2,24 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterGroupStatus extends StObject {
   
   /**
     * The node IDs of one or more nodes to be rebooted.
     */
-  var NodeIdsToReboot: js.UndefOr[NodeIdentifierList] = js.native
+  var NodeIdsToReboot: js.UndefOr[NodeIdentifierList] = js.undefined
   
   /**
     * The status of parameter updates. 
     */
-  var ParameterApplyStatus: js.UndefOr[String] = js.native
+  var ParameterApplyStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter group.
     */
-  var ParameterGroupName: js.UndefOr[String] = js.native
+  var ParameterGroupName: js.UndefOr[String] = js.undefined
 }
 object ParameterGroupStatus {
   

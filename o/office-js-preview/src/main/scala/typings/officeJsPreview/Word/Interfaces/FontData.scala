@@ -23,11 +23,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.WaveHeavy
 import typings.officeJsPreview.officeJsPreviewStrings.Word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `font.toJSON()`. */
-@js.native
 trait FontData extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var doubleStrikeThrough: js.UndefOr[Boolean] = js.native
+  var doubleStrikeThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var highlightColor: js.UndefOr[String] = js.native
+  var highlightColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var strikeThrough: js.UndefOr[Boolean] = js.native
+  var strikeThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -109,7 +107,7 @@ trait FontData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -119,7 +117,7 @@ trait FontData extends StObject {
     */
   var underline: js.UndefOr[
     UnderlineType | Mixed | None | Hidden | DotLine | Single | Word | typings.officeJsPreview.officeJsPreviewStrings.Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble
-  ] = js.native
+  ] = js.undefined
 }
 object FontData {
   

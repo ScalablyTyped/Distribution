@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "tableRow.toJSON()". */
-@js.native
 trait TableRowData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableRowData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cellCount: js.UndefOr[Double] = js.native
+  var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableRowData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cells: js.UndefOr[js.Array[TableCellData]] = js.native
+  var cells: js.UndefOr[js.Array[TableCellData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableRowData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableRowData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object TableRowData {
   

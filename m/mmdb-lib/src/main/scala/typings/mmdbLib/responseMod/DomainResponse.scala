@@ -2,15 +2,15 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainResponse extends Response {
+trait DomainResponse
+  extends StObject
+     with Response {
   
-  val domain: String = js.native
+  val domain: String
   
-  var ip_address: js.UndefOr[String] = js.native
+  var ip_address: js.UndefOr[String] = js.undefined
 }
 object DomainResponse {
   

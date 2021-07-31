@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAppStatus extends Entity {
+trait ManagedAppStatus
+  extends StObject
+     with Entity {
   
   // Friendly name of the status report.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the entity.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAppStatus {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementAssignment extends StObject {
   
   /** Whether this placement assignment is active. When true, the placement will be included in the ad's rotation. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** ID of the placement to be assigned. This is a required field. */
-  var placementId: js.UndefOr[String] = js.native
+  var placementId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the placement. This is a read-only, auto-generated field. */
-  var placementIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var placementIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Whether the placement to be assigned requires SSL. This is a read-only field that is auto-generated when the ad is inserted or updated. */
-  var sslRequired: js.UndefOr[Boolean] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.undefined
 }
 object PlacementAssignment {
   

@@ -13,50 +13,48 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gpgpuMathMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_math", "compileProgram")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_math", JSImport.Namespace)
   @js.native
-  def compileProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): GPGPUBinary = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_math", "makeShaderKey")
-  @js.native
-  def makeShaderKey(program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): String = js.native
+  @scala.inline
+  def compileProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): GPGPUBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("compileProgram")(gpgpu.asInstanceOf[js.Any], program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[GPGPUBinary]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_math", "runProgram")
-  @js.native
-  def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, binary: GPGPUBinary, inputs: js.Array[TensorData], output: TensorData): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_math", "runProgram")
-  @js.native
+  @scala.inline
+  def makeShaderKey(program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeShaderKey")(program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, binary: GPGPUBinary, inputs: js.Array[TensorData], output: TensorData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runProgram")(gpgpu.asInstanceOf[js.Any], binary.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](
     gpgpu: GPGPUContext,
     binary: GPGPUBinary,
     inputs: js.Array[TensorData],
     output: TensorData,
     customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runProgram")(gpgpu.asInstanceOf[js.Any], binary.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any], customSetup.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait GPGPUBinary extends StObject {
     
-    var inShapeInfos: js.Array[ShapeInfo] = js.native
+    var inShapeInfos: js.Array[ShapeInfo]
     
-    var infLoc: WebGLUniformLocation = js.native
+    var infLoc: WebGLUniformLocation
     
-    var nanLoc: WebGLUniformLocation = js.native
+    var nanLoc: WebGLUniformLocation
     
-    var outShapeInfo: ShapeInfo = js.native
+    var outShapeInfo: ShapeInfo
     
-    var program: GPGPUProgram = js.native
+    var program: GPGPUProgram
     
-    var source: String = js.native
+    var source: String
     
-    var uniformLocations: StringDictionary[WebGLUniformLocation] = js.native
+    var uniformLocations: StringDictionary[WebGLUniformLocation]
     
-    var webGLProgram: WebGLProgram = js.native
+    var webGLProgram: WebGLProgram
   }
   object GPGPUBinary {
     
@@ -107,32 +105,31 @@ object gpgpuMathMod {
     }
   }
   
-  @js.native
   trait GPGPUProgram extends StObject {
     
     /**
       * The type of scheme to use when packing texels for the output values.
       * See `PackingScheme` for details. Defaults to `PackingScheme.SHARED_BATCH`.
       */
-    var outPackingScheme: js.UndefOr[PackingScheme] = js.native
+    var outPackingScheme: js.UndefOr[PackingScheme] = js.undefined
     
     /**
       * Affects what type of texture we allocate for the output. Defaults to
       * `TextureUsage.RENDER`.
       */
-    var outTexUsage: js.UndefOr[TextureUsage] = js.native
+    var outTexUsage: js.UndefOr[TextureUsage] = js.undefined
     
-    var outputShape: js.Array[Double] = js.native
+    var outputShape: js.Array[Double]
     
     /** If true, this program expects packed input textures. Defaults to false. */
-    var packedInputs: js.UndefOr[Boolean] = js.native
+    var packedInputs: js.UndefOr[Boolean] = js.undefined
     
     /** If true, this program produces a packed texture. Defaults to false. */
-    var packedOutput: js.UndefOr[Boolean] = js.native
+    var packedOutput: js.UndefOr[Boolean] = js.undefined
     
-    var userCode: String = js.native
+    var userCode: String
     
-    var variableNames: js.Array[String] = js.native
+    var variableNames: js.Array[String]
   }
   object GPGPUProgram {
     
@@ -186,16 +183,15 @@ object gpgpuMathMod {
     }
   }
   
-  @js.native
   trait TensorData extends StObject {
     
-    var isUniform: Boolean = js.native
+    var isUniform: Boolean
     
-    var shape: js.Array[Double] = js.native
+    var shape: js.Array[Double]
     
-    var texData: TextureData = js.native
+    var texData: TextureData
     
-    var uniformValues: js.UndefOr[TypedArray] = js.native
+    var uniformValues: js.UndefOr[TypedArray] = js.undefined
   }
   object TensorData {
     

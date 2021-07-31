@@ -8,21 +8,19 @@ import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.kindsMod.TSTypeParameterInstantiationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Qualifier extends StObject {
   
-  var argument: StringLiteralKind = js.native
+  var argument: StringLiteralKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var qualifier: js.UndefOr[IdentifierKind | TSQualifiedNameKind] = js.native
+  var qualifier: js.UndefOr[IdentifierKind | TSQualifiedNameKind] = js.undefined
   
-  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.undefined
 }
 object Qualifier {
   

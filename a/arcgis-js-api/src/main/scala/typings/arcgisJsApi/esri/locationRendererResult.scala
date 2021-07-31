@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait locationRendererResult extends Object {
+trait locationRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal fill color of the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#RendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#RendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * The location scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#RendererResult)
     */
-  var locationScheme: LocationScheme = js.native
+  var locationScheme: LocationScheme
   
   /**
     * A simple renderer configured with a single color best suited to match the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#RendererResult)
     */
-  var renderer: SimpleRenderer = js.native
+  var renderer: SimpleRenderer
 }
 object locationRendererResult {
   

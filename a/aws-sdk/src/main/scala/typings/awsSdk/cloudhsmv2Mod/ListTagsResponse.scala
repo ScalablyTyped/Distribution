@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /**
     * An opaque string that indicates that the response contains only a subset of tags. Use this value in a subsequent ListTags request to get more tags.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.undefined
   
   /**
     * A list of tags.
     */
-  var TagList: typings.awsSdk.cloudhsmv2Mod.TagList = js.native
+  var TagList: typings.awsSdk.cloudhsmv2Mod.TagList
 }
 object ListTagsResponse {
   

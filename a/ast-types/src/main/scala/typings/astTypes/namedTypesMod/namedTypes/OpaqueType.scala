@@ -13,32 +13,31 @@ import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
-@js.native
 trait OpaqueType
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with NodeKind
      with OpaqueTypeKind
      with PrintableKind
      with StatementKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var impltype: FlowTypeKind = js.native
+  var impltype: FlowTypeKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var supertype: FlowTypeKind | Null = js.native
+  var supertype: FlowTypeKind | Null
   
-  var `type`: typings.astTypes.astTypesStrings.OpaqueType = js.native
+  var `type`: typings.astTypes.astTypesStrings.OpaqueType
   
-  var typeParameters: TypeParameterDeclarationKind | Null = js.native
+  var typeParameters: TypeParameterDeclarationKind | Null
 }
 object OpaqueType {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecoveryOptionType extends StObject {
   
   /**
     * Specifies the recovery method for a user.
     */
-  var Name: RecoveryOptionNameType = js.native
+  var Name: RecoveryOptionNameType
   
   /**
     * A positive integer specifying priority of a method with 1 being the highest priority.
     */
-  var Priority: PriorityType = js.native
+  var Priority: PriorityType
 }
 object RecoveryOptionType {
   

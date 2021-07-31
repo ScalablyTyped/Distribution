@@ -9,10 +9,10 @@ Check if IP address is private.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | private-ip |
-| Keywords           | ip, address, private |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 275014 |
+| Keywords           | ip, address, private, netmask, localhost, lan |
+| # releases         | 4 |
+| # dependents       | 8 |
+| # downloads        | 369363 |
 | # stars            | 1 |
 
 ## Links

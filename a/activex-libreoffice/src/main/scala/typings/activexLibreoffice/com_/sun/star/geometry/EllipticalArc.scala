@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,25 +14,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * end point) which satisfy the given set of constrains. Thus, there are two flags indicating which one of those ellipses should be taken.
   * @since OOo 2.0
   */
-@js.native
 trait EllipticalArc extends StObject {
   
-  var EndPosition: RealPoint2D = js.native
+  var EndPosition: RealPoint2D
   
   /** If `TRUE` , and there's a choice, take the arc that goes clock-wise from start to end point. */
-  var IsClockwiseSweep: Boolean = js.native
+  var IsClockwiseSweep: Boolean
   
   /** If `TRUE` , and there's a choice, take the longer one of two arcs connecting start and end point. */
-  var IsLargeArc: Boolean = js.native
+  var IsLargeArc: Boolean
   
-  var RadiusX: Double = js.native
+  var RadiusX: Double
   
-  var RadiusY: Double = js.native
+  var RadiusY: Double
   
-  var StartPosition: RealPoint2D = js.native
+  var StartPosition: RealPoint2D
   
   /** Rotation angle of the x axis of the ellipse relative to the x axis of the reference coordinate system. */
-  var XAxisRotation: Double = js.native
+  var XAxisRotation: Double
 }
 object EllipticalArc {
   

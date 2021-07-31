@@ -2,14 +2,13 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CompositePositionProperty")
 @js.native
 class CompositePositionProperty () extends StObject {
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   def equals(): Boolean = js.native
   def equals(other: Property): Boolean = js.native

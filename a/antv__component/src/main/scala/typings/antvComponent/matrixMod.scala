@@ -6,38 +6,33 @@ import typings.antvGBase.typesMod.BBox
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrixMod {
   
-  @JSImport("@antv/component/lib/util/matrix", "applyMatrix2BBox")
+  @JSImport("@antv/component/lib/util/matrix", JSImport.Namespace)
   @js.native
-  def applyMatrix2BBox(matrix: js.Array[Double], bbox: BBox): MaxX = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/component/lib/util/matrix", "applyRotate")
-  @js.native
-  def applyRotate(shape: IElement, rotate: Double, x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def applyMatrix2BBox(matrix: js.Array[Double], bbox: BBox): MaxX = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMatrix2BBox")(matrix.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[MaxX]
   
-  @JSImport("@antv/component/lib/util/matrix", "applyTranslate")
-  @js.native
-  def applyTranslate(shape: IElement, x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def applyRotate(shape: IElement, rotate: Double, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRotate")(shape.asInstanceOf[js.Any], rotate.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@antv/component/lib/util/matrix", "getAngleByMatrix")
-  @js.native
-  def getAngleByMatrix(matrix: js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]): Double = js.native
+  @scala.inline
+  def applyTranslate(shape: IElement, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTranslate")(shape.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@antv/component/lib/util/matrix", "getMatrixByAngle")
-  @js.native
-  def getMatrixByAngle(point: Point, angle: Double): js.Array[Double] = js.native
-  @JSImport("@antv/component/lib/util/matrix", "getMatrixByAngle")
-  @js.native
-  def getMatrixByAngle(point: Point, angle: Double, matrix: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def getAngleByMatrix(matrix: js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAngleByMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@antv/component/lib/util/matrix", "getMatrixByTranslate")
-  @js.native
-  def getMatrixByTranslate(point: Point): js.Array[Double] = js.native
-  @JSImport("@antv/component/lib/util/matrix", "getMatrixByTranslate")
-  @js.native
-  def getMatrixByTranslate(point: Point, currentMatrix: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def getMatrixByAngle(point: Point, angle: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixByAngle")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getMatrixByAngle(point: Point, angle: Double, matrix: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixByAngle")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def getMatrixByTranslate(point: Point): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixByTranslate")(point.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getMatrixByTranslate(point: Point, currentMatrix: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixByTranslate")(point.asInstanceOf[js.Any], currentMatrix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

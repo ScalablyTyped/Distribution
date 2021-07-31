@@ -15,7 +15,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formFieldMod {
@@ -25,19 +24,19 @@ object formFieldMod {
   @js.native
   class FormField protected ()
     extends Component[
-          FormFieldProps with (Omit[
+          FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: FormFieldProps with (Omit[
+    def this(props: FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ])) = this()
     def this(
-      props: FormFieldProps with (Omit[
+      props: FormFieldProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             placeholder
           ]),
@@ -47,48 +46,47 @@ object formFieldMod {
   @JSImport("grommet/components/FormField", "FormField")
   @js.native
   val FormField: ComponentClass[
-    FormFieldProps with (Omit[
+    FormFieldProps & (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       placeholder
     ]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait FormFieldProps extends StObject {
     
-    var component: js.UndefOr[js.Any] = js.native
+    var component: js.UndefOr[js.Any] = js.undefined
     
-    var contentProps: js.UndefOr[BoxProps] = js.native
+    var contentProps: js.UndefOr[BoxProps] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[String | ReactNode] = js.native
+    var error: js.UndefOr[String | ReactNode] = js.undefined
     
-    var help: js.UndefOr[String | ReactNode] = js.native
+    var help: js.UndefOr[String | ReactNode] = js.undefined
     
-    var htmlFor: js.UndefOr[String] = js.native
+    var htmlFor: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String | ReactNode] = js.native
+    var info: js.UndefOr[String | ReactNode] = js.undefined
     
-    var label: js.UndefOr[String | ReactNode] = js.native
+    var label: js.UndefOr[String | ReactNode] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Array[String]] = js.native
+    var options: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pad: js.UndefOr[Boolean] = js.native
+    var pad: js.UndefOr[Boolean] = js.undefined
     
     // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
-    var placeholder: js.UndefOr[PlaceHolderType] = js.native
+    var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     var validate: js.UndefOr[
-        Message | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[Message | (js.Function1[/* repeated */ _, _])])
-      ] = js.native
+        Message | (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[Message | (js.Function1[/* repeated */ js.Any, js.Any])])
+      ] = js.undefined
   }
   object FormFieldProps {
     
@@ -190,17 +188,17 @@ object formFieldMod {
       
       @scala.inline
       def setValidate(
-        value: Message | (js.Function1[/* repeated */ js.Any, _]) | (js.Array[Message | (js.Function1[/* repeated */ _, _])])
+        value: Message | (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[Message | (js.Function1[/* repeated */ js.Any, js.Any])])
       ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValidateFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      def setValidateFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
       @scala.inline
-      def setValidateVarargs(value: (Message | (js.Function1[js.Any, js.Any]))*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      def setValidateVarargs(value: (Message | (js.Function1[/* repeated */ js.Any, js.Any]))*): Self = StObject.set(x, "validate", js.Array(value :_*))
     }
   }
 }

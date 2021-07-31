@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgVideoPlayerCommercialsLinkedCommercial
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgVideoPlayerCommercialsLinkedCommercial
     * Gets/Sets the link to open on linked commercial click.
     *
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the sources of the linked commercial video.
     *
     */
-  var sources: js.UndefOr[js.Array[_]] = js.native
+  var sources: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets the second in the video at which the linked commercial should play.
     *
     */
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the tooltip for the linked commercial bookmark.
     *
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IgVideoPlayerCommercialsLinkedCommercial {
   
@@ -55,7 +54,7 @@ object IgVideoPlayerCommercialsLinkedCommercial {
     def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setSources(value: js.Array[_]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)

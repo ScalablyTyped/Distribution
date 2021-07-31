@@ -3,18 +3,16 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Contenttype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkdownRenderRawEndpoint extends StObject {
   
   /**
     * data parameter
     */
-  var data: String = js.native
+  var data: String
   
-  var headers: Contenttype = js.native
+  var headers: Contenttype
 }
 object MarkdownRenderRawEndpoint {
   

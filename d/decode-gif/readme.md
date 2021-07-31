@@ -12,7 +12,7 @@ Decode the frames of a gif.
 | Keywords           | gif, decode, array, items |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 1182 |
+| # downloads        | 21882 |
 | # stars            | 0 |
 
 ## Links

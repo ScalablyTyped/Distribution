@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2RestoreAgentRequest extends StObject {
   
   /** Zip compressed raw byte content for agent. */
-  var agentContent: js.UndefOr[String] = js.native
+  var agentContent: js.UndefOr[String] = js.undefined
   
   /** The URI to a Google Cloud Storage file containing the agent to restore. Note: The URI must start with "gs://". */
-  var agentUri: js.UndefOr[String] = js.native
+  var agentUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2RestoreAgentRequest {
   

@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendingListSummary extends StObject {
   
   /**
     * The GUID of the bulk send list. This property is created after you post a new bulk send list.
     */
-  var bulkSendListId: js.UndefOr[String] = js.native
+  var bulkSendListId: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID of the user who created the bulk send list.
     */
-  var createdByUser: js.UndefOr[String] = js.native
+  var createdByUser: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime that the bulk send list was created.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the bulk send list.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BulkSendingListSummary {
   

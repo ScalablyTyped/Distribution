@@ -3,42 +3,40 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2ManifoldPoint extends StObject {
   
   /**
     * Resets this manifold point.
     **/
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
   /**
     * Sets this manifold point from a manifold point.
     * @param m The manifold point to copy values from.
     **/
-  def Set(m: b2ManifoldPoint): Unit = js.native
+  def Set(m: b2ManifoldPoint): Unit
   
   /**
     * Contact ID.
     **/
-  var m_id: b2ContactID = js.native
+  var m_id: b2ContactID
   
   /**
     * Local contact point.
     **/
-  var m_localpoint: b2Vec2 = js.native
+  var m_localpoint: b2Vec2
   
   /**
     * Normal impluse for this contact point.
     **/
-  var m_normalImpulse: Double = js.native
+  var m_normalImpulse: Double
   
   /**
     * Tangent impulse for contact point.
     **/
-  var m_tangentImpulse: Double = js.native
+  var m_tangentImpulse: Double
 }
 object b2ManifoldPoint {
   

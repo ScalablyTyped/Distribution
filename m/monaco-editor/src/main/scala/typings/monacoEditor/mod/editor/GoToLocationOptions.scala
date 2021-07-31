@@ -2,34 +2,32 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IGotoLocationOptions>> */
-@js.native
 trait GoToLocationOptions extends StObject {
   
-  val alternativeDeclarationCommand: String = js.native
+  val alternativeDeclarationCommand: String
   
-  val alternativeDefinitionCommand: String = js.native
+  val alternativeDefinitionCommand: String
   
-  val alternativeImplementationCommand: String = js.native
+  val alternativeImplementationCommand: String
   
-  val alternativeReferenceCommand: String = js.native
+  val alternativeReferenceCommand: String
   
-  val alternativeTypeDefinitionCommand: String = js.native
+  val alternativeTypeDefinitionCommand: String
   
-  val multiple: GoToLocationValues = js.native
+  val multiple: GoToLocationValues
   
-  val multipleDeclarations: GoToLocationValues = js.native
+  val multipleDeclarations: GoToLocationValues
   
-  val multipleDefinitions: GoToLocationValues = js.native
+  val multipleDefinitions: GoToLocationValues
   
-  val multipleImplementations: GoToLocationValues = js.native
+  val multipleImplementations: GoToLocationValues
   
-  val multipleReferences: GoToLocationValues = js.native
+  val multipleReferences: GoToLocationValues
   
-  val multipleTypeDefinitions: GoToLocationValues = js.native
+  val multipleTypeDefinitions: GoToLocationValues
 }
 object GoToLocationOptions {
   

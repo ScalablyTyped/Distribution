@@ -2,25 +2,23 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Paging details for lists of resources, including total number of items
   * available and number of resources returned in a single page.
   */
-@js.native
 trait SchemaPageInfo extends StObject {
   
   /**
     * The number of results included in the API response.
     */
-  var resultsPerPage: js.UndefOr[Double] = js.native
+  var resultsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of results in the result set.
     */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object SchemaPageInfo {
   

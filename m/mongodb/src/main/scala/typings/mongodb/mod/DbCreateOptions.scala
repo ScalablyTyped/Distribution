@@ -3,82 +3,82 @@ package typings.mongodb.mod
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DbCreateOptions extends CommonOptions {
+trait DbCreateOptions
+  extends StObject
+     with CommonOptions {
   
   /**
     * If the database authentication is dependent on another databaseName.
     */
-  var authSource: js.UndefOr[String] = js.native
+  var authSource: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a cap on how many operations the driver will buffer up before giving up on getting a
     * working connection, default is -1 which is unlimited.
     */
-  var bufferMaxEntries: js.UndefOr[scala.Double] = js.native
+  var bufferMaxEntries: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Default: false; Force server to create _id fields instead of client.
     */
-  var forceServerObjectId: js.UndefOr[Boolean] = js.native
+  var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify if the BSON serializer should ignore undefined fields.
     */
-  var ignoreUndefined: js.UndefOr[Boolean] = js.native
+  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: false; Use c++ bson parser.
     */
-  var native_parser: js.UndefOr[Boolean] = js.native
+  var native_parser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom primary key factory to generate _id values (see Custom primary keys).
     */
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
   /**
     * ES6 compatible promise constructor
     */
-  var promiseLibrary: js.UndefOr[PromiseConstructor] = js.native
+  var promiseLibrary: js.UndefOr[PromiseConstructor] = js.undefined
   
   /**
     * Default: false; Promotes Binary BSON values to native Node Buffers
     */
-  var promoteBuffers: js.UndefOr[Boolean] = js.native
+  var promoteBuffers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true; Promotes Long values to number if they fit inside the 53 bits resolution.
     */
-  var promoteLongs: js.UndefOr[Boolean] = js.native
+  var promoteLongs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true; Promotes BSON values to native types where possible, set to false to only receive wrapper types.
     */
-  var promoteValues: js.UndefOr[Boolean] = js.native
+  var promoteValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
     */
-  var readConcern: js.UndefOr[ReadConcern | String] = js.native
+  var readConcern: js.UndefOr[ReadConcern | String] = js.undefined
   
   /**
     * the prefered read preference. use 'ReadPreference' class.
     */
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
 }
 object DbCreateOptions {
   

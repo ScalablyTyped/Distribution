@@ -8,7 +8,6 @@ import typings.std.RegExp
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,29 +15,31 @@ object mod {
   /**
     * findAndReplaceDOMText searches for regular expression matches in a given DOM node and replaces or wraps each match with a node or piece of text that you can specify.
     */
+  @scala.inline
+  def apply(node: HTMLElement, options: Options): Return = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return]
+  
   @JSImport("findandreplacedomtext", JSImport.Namespace)
   @js.native
-  def apply(node: HTMLElement, options: Options): Return = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * A function to be called on every element encountered by findAndReplaceDOMText.
       * If the function returns false the element will be altogether ignored.
       */
-    var filterElements: js.UndefOr[js.Function1[/* el */ HTMLElement, Boolean]] = js.native
+    var filterElements: js.UndefOr[js.Function1[/* el */ HTMLElement, Boolean]] = js.undefined
     
     /**
       * Something to search for. A string will perform a global search by default (looking for all matches), but a RegExp will only do so if you include the global (/.../g) flag.
       */
-    var find: RegExp | String = js.native
+    var find: RegExp | String
     
     /**
       * A boolean or a boolean-returning function that'll be called on every element to determine if it should be considered as its own matching context.
       * More info: https://github.com/padolsey/findAndReplaceDOMText#contexts
       */
-    var forceContext: js.UndefOr[Boolean | (js.Function1[/* el */ HTMLElement, Boolean])] = js.native
+    var forceContext: js.UndefOr[Boolean | (js.Function1[/* el */ HTMLElement, Boolean])] = js.undefined
     
     /**
       * Indicates whether to re-use existing node boundaries when replacing a match with text (i.e. the default, "retain"),
@@ -46,12 +47,12 @@ object mod {
       *
       * Most of the time you'll want the default.
       */
-    var portionMode: js.UndefOr[retain | first] = js.native
+    var portionMode: js.UndefOr[retain | first] = js.undefined
     
     /**
       * Currently there's only one preset: prose. https://github.com/padolsey/findAndReplaceDOMText#presetprose
       */
-    var preset: js.UndefOr[prose | String] = js.native
+    var preset: js.UndefOr[prose | String] = js.undefined
     
     /**
       * A String of text to replace matches with, or a Function which should return replacement Node or String. If you use a string, it can contain various tokens:
@@ -70,21 +71,21 @@ object mod {
           /* match */ js.UndefOr[js.Any], 
           String | Double | HTMLElement | Text
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string representing the node-name of an element that will be wrapped around matches (e.g. span or em).
       *
       * Or a Node (i.e. a stencil node) that we will clone for each match portion.
       */
-    var wrap: js.UndefOr[String | HTMLElement] = js.native
+    var wrap: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * A string representing the class name to be assigned to the wrapping element (e.g. <span class="myClass">found text</span>).
       *
       * If the wrap option is not specified, then this option is ignored.
       */
-    var wrapClass: js.UndefOr[String] = js.native
+    var wrapClass: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -158,22 +159,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Portion extends StObject {
     
-    var endIndexInNode: Double = js.native
+    var endIndexInNode: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var indexInMatch: Double = js.native
+    var indexInMatch: Double
     
-    var indexInNode: Double = js.native
+    var indexInNode: Double
     
-    var isEnd: Boolean = js.native
+    var isEnd: Boolean
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var text: String = js.native
+    var text: String
   }
   object Portion {
     
@@ -217,13 +217,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Return extends StObject {
     
     /**
       * Reversion occurs backwards so as to avoid nodes subsequently replaced during the matching phase.
       */
-    def revert(): Return = js.native
+    def revert(): Return
   }
   object Return {
     

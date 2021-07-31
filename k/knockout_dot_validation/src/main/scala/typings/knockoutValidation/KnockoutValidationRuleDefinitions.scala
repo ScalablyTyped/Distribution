@@ -3,43 +3,43 @@ package typings.knockoutValidation
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KnockoutValidationRuleDefinitions extends /* ruleName */ StringDictionary[KnockoutValidationRuleDefinition | KnockoutValidationAsyncRuleDefinition] {
+trait KnockoutValidationRuleDefinitions
+  extends StObject
+     with /* ruleName */ StringDictionary[KnockoutValidationRuleDefinition | KnockoutValidationAsyncRuleDefinition] {
   
-  var date: KnockoutValidationRuleDefinition = js.native
+  var date: KnockoutValidationRuleDefinition
   
-  var dateISO: KnockoutValidationRuleDefinition = js.native
+  var dateISO: KnockoutValidationRuleDefinition
   
-  var digit: KnockoutValidationRuleDefinition = js.native
+  var digit: KnockoutValidationRuleDefinition
   
-  var email: KnockoutValidationRuleDefinition = js.native
+  var email: KnockoutValidationRuleDefinition
   
-  var equal: KnockoutValidationRuleDefinition = js.native
+  var equal: KnockoutValidationRuleDefinition
   
-  var max: KnockoutValidationRuleDefinition = js.native
+  var max: KnockoutValidationRuleDefinition
   
-  var maxLength: KnockoutValidationRuleDefinition = js.native
+  var maxLength: KnockoutValidationRuleDefinition
   
-  var min: KnockoutValidationRuleDefinition = js.native
+  var min: KnockoutValidationRuleDefinition
   
-  var minLength: KnockoutValidationRuleDefinition = js.native
+  var minLength: KnockoutValidationRuleDefinition
   
-  var notEqual: KnockoutValidationRuleDefinition = js.native
+  var notEqual: KnockoutValidationRuleDefinition
   
-  var number: KnockoutValidationRuleDefinition = js.native
+  var number: KnockoutValidationRuleDefinition
   
-  var pattern: KnockoutValidationRuleDefinition = js.native
+  var pattern: KnockoutValidationRuleDefinition
   
-  var phoneUS: KnockoutValidationRuleDefinition = js.native
+  var phoneUS: KnockoutValidationRuleDefinition
   
-  var required: KnockoutValidationRuleDefinition = js.native
+  var required: KnockoutValidationRuleDefinition
   
-  var step: KnockoutValidationRuleDefinition = js.native
+  var step: KnockoutValidationRuleDefinition
   
-  var unique: KnockoutValidationRuleDefinition = js.native
+  var unique: KnockoutValidationRuleDefinition
 }
 object KnockoutValidationRuleDefinitions {
   

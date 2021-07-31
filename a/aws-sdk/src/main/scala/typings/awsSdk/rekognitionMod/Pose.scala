@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pose extends StObject {
   
   /**
     * Value representing the face rotation on the pitch axis.
     */
-  var Pitch: js.UndefOr[Degree] = js.native
+  var Pitch: js.UndefOr[Degree] = js.undefined
   
   /**
     * Value representing the face rotation on the roll axis.
     */
-  var Roll: js.UndefOr[Degree] = js.native
+  var Roll: js.UndefOr[Degree] = js.undefined
   
   /**
     * Value representing the face rotation on the yaw axis.
     */
-  var Yaw: js.UndefOr[Degree] = js.native
+  var Yaw: js.UndefOr[Degree] = js.undefined
 }
 object Pose {
   

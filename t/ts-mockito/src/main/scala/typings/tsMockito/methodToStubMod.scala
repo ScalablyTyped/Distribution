@@ -5,7 +5,6 @@ import typings.tsMockito.methodStubCollectionMod.MethodStubCollection
 import typings.tsMockito.mockMod.Mocker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodToStubMod {

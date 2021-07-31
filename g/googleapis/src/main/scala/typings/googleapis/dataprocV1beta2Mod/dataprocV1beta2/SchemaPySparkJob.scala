@@ -3,7 +3,6 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,44 +10,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (https://spark.apache.org/docs/0.9.0/python-programming-guide.html)
   * applications on YARN.
   */
-@js.native
 trait SchemaPySparkJob extends StObject {
   
   /**
     * Optional. HCFS URIs of archives to be extracted in the working directory
     * of .jar, .tar, .tar.gz, .tgz, and .zip.
     */
-  var archiveUris: js.UndefOr[js.Array[String]] = js.native
+  var archiveUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The arguments to pass to the driver. Do not include arguments,
     * such as --conf, that can be set as job properties, since a collision may
     * occur that causes an incorrect job submission.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. HCFS URIs of files to be copied to the working directory of
     * Python drivers and distributed tasks. Useful for naively parallel tasks.
     */
-  var fileUris: js.UndefOr[js.Array[String]] = js.native
+  var fileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Python
     * driver and tasks.
     */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The runtime log config for job execution.
     */
-  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.undefined
   
   /**
     * Required. The HCFS URI of the main Python file to use as the driver. Must
     * be a .py file.
     */
-  var mainPythonFileUri: js.UndefOr[String] = js.native
+  var mainPythonFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A mapping of property names to values, used to configure
@@ -56,13 +54,13 @@ trait SchemaPySparkJob extends StObject {
     * API may be overwritten. Can include properties set in
     * /etc/spark/conf/spark-defaults.conf and classes in user code.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. HCFS file URIs of Python files to pass to the PySpark
     * framework. Supported file types: .py, .egg, and .zip.
     */
-  var pythonFileUris: js.UndefOr[js.Array[String]] = js.native
+  var pythonFileUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPySparkJob {
   

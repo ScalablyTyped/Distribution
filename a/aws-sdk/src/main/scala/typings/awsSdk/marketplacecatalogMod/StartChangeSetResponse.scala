@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartChangeSetResponse extends StObject {
   
   /**
     * The ARN associated to the unique identifier generated for the request.
     */
-  var ChangeSetArn: js.UndefOr[ARN] = js.native
+  var ChangeSetArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Unique identifier generated for the request.
     */
-  var ChangeSetId: js.UndefOr[ResourceId] = js.native
+  var ChangeSetId: js.UndefOr[ResourceId] = js.undefined
 }
 object StartChangeSetResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastError extends StObject {
   
   /**
     * The error code for the VPC endpoint error.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * The error message for the VPC endpoint error.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object LastError {
   

@@ -12,7 +12,6 @@ import typings.builderUtil.archMod.Arch
 import typings.lazyVal.mod.Lazy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object winPackagerMod {
@@ -40,13 +39,6 @@ object winPackagerMod {
     def sign(file: String, logMessagePrefix: String): js.Promise[Unit] = js.native
     
     def signAndEditResources(file: String, arch: Arch, outDir: String): js.Promise[Unit] = js.native
-    def signAndEditResources(
-      file: String,
-      arch: Arch,
-      outDir: String,
-      internalName: js.UndefOr[scala.Nothing],
-      requestedExecutionLevel: RequestedExecutionLevel
-    ): js.Promise[Unit] = js.native
     def signAndEditResources(file: String, arch: Arch, outDir: String, internalName: String): js.Promise[Unit] = js.native
     def signAndEditResources(
       file: String,
@@ -60,6 +52,13 @@ object winPackagerMod {
       arch: Arch,
       outDir: String,
       internalName: Null,
+      requestedExecutionLevel: RequestedExecutionLevel
+    ): js.Promise[Unit] = js.native
+    def signAndEditResources(
+      file: String,
+      arch: Arch,
+      outDir: String,
+      internalName: Unit,
       requestedExecutionLevel: RequestedExecutionLevel
     ): js.Promise[Unit] = js.native
     

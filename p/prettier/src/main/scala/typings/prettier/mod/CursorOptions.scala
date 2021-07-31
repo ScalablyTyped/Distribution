@@ -2,22 +2,22 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CursorOptions extends Options {
+trait CursorOptions
+  extends StObject
+     with Options {
   
   /**
     * Specify where the cursor is.
     */
-  var cursorOffset: Double = js.native
+  var cursorOffset: Double
   
   @JSName("rangeEnd")
-  var rangeEnd_CursorOptions: js.UndefOr[scala.Nothing] = js.native
+  var rangeEnd_CursorOptions: js.UndefOr[scala.Nothing] = js.undefined
   
   @JSName("rangeStart")
-  var rangeStart_CursorOptions: js.UndefOr[scala.Nothing] = js.native
+  var rangeStart_CursorOptions: js.UndefOr[scala.Nothing] = js.undefined
 }
 object CursorOptions {
   

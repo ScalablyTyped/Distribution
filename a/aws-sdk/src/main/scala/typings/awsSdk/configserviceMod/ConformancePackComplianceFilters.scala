@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackComplianceFilters extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
     */
-  var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.native
+  var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.undefined
   
   /**
     * Filters the results by AWS Config rule names.
     */
-  var ConfigRuleNames: js.UndefOr[ConformancePackConfigRuleNames] = js.native
+  var ConfigRuleNames: js.UndefOr[ConformancePackConfigRuleNames] = js.undefined
 }
 object ConformancePackComplianceFilters {
   

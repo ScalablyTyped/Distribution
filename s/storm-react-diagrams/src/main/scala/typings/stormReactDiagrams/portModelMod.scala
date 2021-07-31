@@ -9,7 +9,6 @@ import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portModelMod {
@@ -19,17 +18,12 @@ object portModelMod {
   class PortModel protected () extends BaseModel[NodeModel, BaseModelListener] {
     def this(name: String) = this()
     def this(name: String, `type`: String) = this()
-    def this(name: String, `type`: js.UndefOr[scala.Nothing], id: String) = this()
     def this(name: String, `type`: String, id: String) = this()
-    def this(
-      name: String,
-      `type`: js.UndefOr[scala.Nothing],
-      id: js.UndefOr[scala.Nothing],
-      maximumLinks: Double
-    ) = this()
-    def this(name: String, `type`: js.UndefOr[scala.Nothing], id: String, maximumLinks: Double) = this()
-    def this(name: String, `type`: String, id: js.UndefOr[scala.Nothing], maximumLinks: Double) = this()
+    def this(name: String, `type`: Unit, id: String) = this()
     def this(name: String, `type`: String, id: String, maximumLinks: Double) = this()
+    def this(name: String, `type`: String, id: Unit, maximumLinks: Double) = this()
+    def this(name: String, `type`: Unit, id: String, maximumLinks: Double) = this()
+    def this(name: String, `type`: Unit, id: Unit, maximumLinks: Double) = this()
     
     def addLink(link: LinkModel[LinkModelListener]): Unit = js.native
     

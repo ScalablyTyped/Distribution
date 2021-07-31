@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadErrorEvent extends UploadEvent {
+trait UploadErrorEvent
+  extends StObject
+     with UploadEvent {
   
-  var XMLHttpRequest: js.UndefOr[js.Any] = js.native
+  var XMLHttpRequest: js.UndefOr[js.Any] = js.undefined
   
-  var files: js.UndefOr[js.Array[_]] = js.native
+  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
 }
 object UploadErrorEvent {
   
@@ -26,7 +26,7 @@ object UploadErrorEvent {
   implicit class UploadErrorEventMutableBuilder[Self <: UploadErrorEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

@@ -5,7 +5,6 @@ import typings.googleCloudPubsub.subscriptionMod.SubscriptionMetadata
 import typings.googleCloudPubsub.subscriptionMod.SubscriptionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/pubsub", "Subscription")
@@ -18,14 +17,17 @@ class Subscription protected ()
 /* static members */
 object Subscription {
   
+  @JSImport("@google-cloud/pubsub", "Subscription")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /*!
     * Formats Subscription metadata.
     *
     * @private
     */
-  @JSImport("@google-cloud/pubsub", "Subscription.formatMetadata_")
-  @js.native
-  def formatMetadata_(metadata: SubscriptionMetadata): ISubscription = js.native
+  @scala.inline
+  def formatMetadata_(metadata: SubscriptionMetadata): ISubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMetadata_")(metadata.asInstanceOf[js.Any]).asInstanceOf[ISubscription]
   
   /*!
     * Format the name of a subscription. A subscription's full name is in the
@@ -33,7 +35,6 @@ object Subscription {
     *
     * @private
     */
-  @JSImport("@google-cloud/pubsub", "Subscription.formatName_")
-  @js.native
-  def formatName_(projectId: String, name: String): String = js.native
+  @scala.inline
+  def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

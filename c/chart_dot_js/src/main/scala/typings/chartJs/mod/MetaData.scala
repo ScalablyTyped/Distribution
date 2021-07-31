@@ -2,35 +2,33 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaData extends StObject {
   
-  var _chart: typings.chartJs.mod.Chart = js.native
+  var _chart: Chart
   
-  var _datasetIndex: Double = js.native
+  var _datasetIndex: Double
   
-  var _index: Double = js.native
+  var _index: Double
   
-  var _model: Model = js.native
+  var _model: Model
   
-  var _start: js.UndefOr[js.Any] = js.native
+  var _start: js.UndefOr[js.Any] = js.undefined
   
-  var _view: Model = js.native
+  var _view: Model
   
-  var _xScale: ChartScales = js.native
+  var _xScale: ChartScales
   
-  var _yScale: ChartScales = js.native
+  var _yScale: ChartScales
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
 }
 object MetaData {
   
   @scala.inline
   def apply(
-    _chart: typings.chartJs.mod.Chart,
+    _chart: Chart,
     _datasetIndex: Double,
     _index: Double,
     _model: Model,
@@ -52,7 +50,7 @@ object MetaData {
     def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set_chart(value: typings.chartJs.mod.Chart): Self = StObject.set(x, "_chart", value.asInstanceOf[js.Any])
+    def set_chart(value: Chart): Self = StObject.set(x, "_chart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_datasetIndex(value: Double): Self = StObject.set(x, "_datasetIndex", value.asInstanceOf[js.Any])

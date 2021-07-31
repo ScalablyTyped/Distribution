@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailoverCondition extends StObject {
   
   /**
     * Failover condition type-specific settings.
     */
-  var FailoverConditionSettings: js.UndefOr[typings.awsSdk.medialiveMod.FailoverConditionSettings] = js.native
+  var FailoverConditionSettings: js.UndefOr[typings.awsSdk.medialiveMod.FailoverConditionSettings] = js.undefined
 }
 object FailoverCondition {
   

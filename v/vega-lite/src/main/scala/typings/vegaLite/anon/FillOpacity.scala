@@ -2,54 +2,39 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillOpacity extends StObject {
   
-  val color: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val color: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val fill: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val fill: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val fillOpacity: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val fillOpacity: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val opacity: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val opacity: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val shape: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val shape: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val size: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val size: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val stroke: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val stroke: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val strokeOpacity: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val strokeOpacity: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val strokeWidth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val strokeWidth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val text: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val text: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val x: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val x: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val y: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val y: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object FillOpacity {
   
   @scala.inline
-  def apply(
-    color: typings.vegaLite.vegaLiteNumbers.`1`,
-    fill: typings.vegaLite.vegaLiteNumbers.`1`,
-    fillOpacity: typings.vegaLite.vegaLiteNumbers.`1`,
-    opacity: typings.vegaLite.vegaLiteNumbers.`1`,
-    shape: typings.vegaLite.vegaLiteNumbers.`1`,
-    size: typings.vegaLite.vegaLiteNumbers.`1`,
-    stroke: typings.vegaLite.vegaLiteNumbers.`1`,
-    strokeOpacity: typings.vegaLite.vegaLiteNumbers.`1`,
-    strokeWidth: typings.vegaLite.vegaLiteNumbers.`1`,
-    text: typings.vegaLite.vegaLiteNumbers.`1`,
-    x: typings.vegaLite.vegaLiteNumbers.`1`,
-    y: typings.vegaLite.vegaLiteNumbers.`1`
-  ): FillOpacity = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillOpacity = fillOpacity.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  def apply(): FillOpacity = {
+    val __obj = js.Dynamic.literal(color = 1, fill = 1, fillOpacity = 1, opacity = 1, shape = 1, size = 1, stroke = 1, strokeOpacity = 1, strokeWidth = 1, text = 1, x = 1, y = 1)
     __obj.asInstanceOf[FillOpacity]
   }
   

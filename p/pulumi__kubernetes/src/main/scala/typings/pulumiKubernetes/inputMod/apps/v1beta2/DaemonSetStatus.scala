@@ -3,64 +3,62 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DaemonSetStatus represents the current status of a daemon set.
   */
-@js.native
 trait DaemonSetStatus extends StObject {
   
   /**
     * Count of hash collisions for the DaemonSet. The DaemonSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
     */
-  var collisionCount: js.UndefOr[Input[Double]] = js.native
+  var collisionCount: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Represents the latest available observations of a DaemonSet's current state.
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[DaemonSetCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[DaemonSetCondition]]]] = js.undefined
   
   /**
     * The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var currentNumberScheduled: Input[Double] = js.native
+  var currentNumberScheduled: Input[Double]
   
   /**
     * The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var desiredNumberScheduled: Input[Double] = js.native
+  var desiredNumberScheduled: Input[Double]
   
   /**
     * The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)
     */
-  var numberAvailable: js.UndefOr[Input[Double]] = js.native
+  var numberAvailable: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
     */
-  var numberMisscheduled: Input[Double] = js.native
+  var numberMisscheduled: Input[Double]
   
   /**
     * The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.
     */
-  var numberReady: Input[Double] = js.native
+  var numberReady: Input[Double]
   
   /**
     * The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)
     */
-  var numberUnavailable: js.UndefOr[Input[Double]] = js.native
+  var numberUnavailable: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The most recent generation observed by the daemon set controller.
     */
-  var observedGeneration: js.UndefOr[Input[Double]] = js.native
+  var observedGeneration: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The total number of nodes that are running updated daemon pod
     */
-  var updatedNumberScheduled: js.UndefOr[Input[Double]] = js.native
+  var updatedNumberScheduled: js.UndefOr[Input[Double]] = js.undefined
 }
 object DaemonSetStatus {
   

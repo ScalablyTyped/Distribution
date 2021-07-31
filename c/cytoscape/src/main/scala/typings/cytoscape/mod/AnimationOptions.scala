@@ -3,32 +3,30 @@ package typings.cytoscape.mod
 import typings.cytoscape.mod.Css.TransitionTimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
   /** An object containing centring options from which the graph will be animated. */
-  var center: js.UndefOr[CenterOptions] = js.native
+  var center: js.UndefOr[CenterOptions] = js.undefined
   
   /** duration - The duration of the animation in milliseconds. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** easing - A transition-timing-function easing style string that shapes the animation progress curve. */
-  var easing: js.UndefOr[TransitionTimingFunction] = js.native
+  var easing: js.UndefOr[TransitionTimingFunction] = js.undefined
   
   /** An object containing fitting options from which the graph will be animated. */
-  var fit: js.UndefOr[AnimationFitOptions] = js.native
+  var fit: js.UndefOr[AnimationFitOptions] = js.undefined
   
   /** A panning position to which the graph will be animated. */
-  var pan: js.UndefOr[Position] = js.native
+  var pan: js.UndefOr[Position] = js.undefined
   
   /** A relative panning position to which the graph will be animated. */
-  var panBy: js.UndefOr[Position] = js.native
+  var panBy: js.UndefOr[Position] = js.undefined
   
   /** A zoom level to which the graph will be animated. */
-  var zoom: js.UndefOr[ZoomOptions] = js.native
+  var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 object AnimationOptions {
   

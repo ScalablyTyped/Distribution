@@ -6,23 +6,21 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientIdentity extends StObject {
   
-  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.native
+  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.undefined
   
-  var recipientIdentity: js.UndefOr[Identity] = js.native
+  var recipientIdentity: js.UndefOr[Identity] = js.undefined
   
-  var serviceAssigned: js.UndefOr[Timestamp] = js.native
+  var serviceAssigned: js.UndefOr[Timestamp] = js.undefined
   
-  var serviceCreated: js.UndefOr[Timestamp] = js.native
+  var serviceCreated: js.UndefOr[Timestamp] = js.undefined
   
-  var serviceUpdated: js.UndefOr[Timestamp] = js.native
+  var serviceUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var sharerUserID: js.UndefOr[UserID] = js.native
+  var sharerUserID: js.UndefOr[UserID] = js.undefined
 }
 object RecipientIdentity {
   

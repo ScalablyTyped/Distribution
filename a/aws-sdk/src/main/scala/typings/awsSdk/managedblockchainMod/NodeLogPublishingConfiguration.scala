@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeLogPublishingConfiguration extends StObject {
   
   /**
     * Configuration properties for logging events associated with a node that is owned by a member of a Managed Blockchain network using the Hyperledger Fabric framework.
     */
-  var Fabric: js.UndefOr[NodeFabricLogPublishingConfiguration] = js.native
+  var Fabric: js.UndefOr[NodeFabricLogPublishingConfiguration] = js.undefined
 }
 object NodeLogPublishingConfiguration {
   

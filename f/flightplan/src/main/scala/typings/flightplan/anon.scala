@@ -2,15 +2,13 @@ package typings.flightplan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exec extends StObject {
     
-    var exec: js.Any = js.native
+    var exec: js.Any
   }
   object Exec {
     

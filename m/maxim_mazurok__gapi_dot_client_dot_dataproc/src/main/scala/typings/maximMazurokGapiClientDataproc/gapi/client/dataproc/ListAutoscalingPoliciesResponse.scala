@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAutoscalingPoliciesResponse extends StObject {
   
   /** Output only. This token is included in the response if there are more results to fetch. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Output only. Autoscaling policies list. */
-  var policies: js.UndefOr[js.Array[AutoscalingPolicy]] = js.native
+  var policies: js.UndefOr[js.Array[AutoscalingPolicy]] = js.undefined
 }
 object ListAutoscalingPoliciesResponse {
   

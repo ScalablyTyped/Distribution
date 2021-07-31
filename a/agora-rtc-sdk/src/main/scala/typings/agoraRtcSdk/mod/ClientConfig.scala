@@ -7,7 +7,6 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.vp8_
 import typings.agoraRtcSdk.anon.Forceturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * var client = AgoraRTC.createClient(config);```
   */
-@js.native
 trait ClientConfig extends StObject {
   
   /**
@@ -47,7 +45,7 @@ trait ClientConfig extends StObject {
     * - Safari 12.1 or earlier does not support the VP8 codec.
     * - Codec support on mobile devices is a bit complex, see [Use Agora Web SDK on Mobile Devices](https://docs.agora.io/en/faq/web_on_mobile) for details.
     */
-  var codec: vp8_ | h264_ = js.native
+  var codec: vp8_ | h264_
   
   /**
     * The channel profile.
@@ -71,7 +69,7 @@ trait ClientConfig extends StObject {
     *
     * The `"rtc"` mode supports the Agora Recording SDK 2.3.3 or later.
     */
-  var mode: live | rtc = js.native
+  var mode: live | rtc
   
   /**
     * Your HTTP proxy server domain name.
@@ -85,7 +83,7 @@ trait ClientConfig extends StObject {
     * - Ensure that the proxy server supports wss (WebSocket Secure).
     * - For the required firewall ports, see [Firewall Requirements](https://docs.agora.io/en/Agora%20Platform/firewall?platform=All%20Platforms#web-sdk-1).
     */
-  var proxyServer: js.UndefOr[String] = js.native
+  var proxyServer: js.UndefOr[String] = js.undefined
   
   /**
     * TURN server configurations.
@@ -94,7 +92,7 @@ trait ClientConfig extends StObject {
     *
     * You can also use cloud proxy by {@link startProxyServer}. See [Use Cloud Proxy](https://docs.agora.io/en/Agora%20Platform/cloud_proxy_web?platform=Web) for details.
     */
-  var turnServer: js.UndefOr[js.Array[Forceturn]] = js.native
+  var turnServer: js.UndefOr[js.Array[Forceturn]] = js.undefined
 }
 object ClientConfig {
   

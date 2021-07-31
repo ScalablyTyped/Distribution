@@ -14,10 +14,13 @@ import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configBaseMod {
+  
+  @JSImport("ionic/commands/config/base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/commands/config/base", "BaseConfigCommand")
   @js.native
@@ -27,41 +30,36 @@ object configBaseMod {
     def generateContext(inputs: CommandLineInputs, options: CommandLineOptions): ConfigContext = js.native
     
     def interpretValue(): js.Any = js.native
-    def interpretValue(v: js.UndefOr[scala.Nothing], expectJson: Boolean): js.Any = js.native
     def interpretValue(v: String): js.Any = js.native
     def interpretValue(v: String, expectJson: Boolean): js.Any = js.native
+    def interpretValue(v: Unit, expectJson: Boolean): js.Any = js.native
     
     def jsonStringify(v: js.Any): String = js.native
   }
   
-  @JSImport("ionic/commands/config/base", "getConfig")
-  @js.native
-  def getConfig(ctx: ConfigContext): FlexibleConfigFile = js.native
+  @scala.inline
+  def getConfig(ctx: ConfigContext): FlexibleConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(ctx.asInstanceOf[js.Any]).asInstanceOf[FlexibleConfigFile]
   
-  @JSImport("ionic/commands/config/base", "getConfigValue")
-  @js.native
-  def getConfigValue(ctx: ConfigContext): js.Any = js.native
+  @scala.inline
+  def getConfigValue(ctx: ConfigContext): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ionic/commands/config/base", "setConfigValue")
-  @js.native
-  def setConfigValue(ctx: ConfigContext with OriginalValue): Unit = js.native
+  @scala.inline
+  def setConfigValue(ctx: ConfigContext & OriginalValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ionic/commands/config/base", "unsetConfigValue")
-  @js.native
-  def unsetConfigValue(ctx: ConfigContext with Property): Unit = js.native
+  @scala.inline
+  def unsetConfigValue(ctx: ConfigContext & Property): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsetConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait BaseConfigContext extends StObject {
     
-    var force: Boolean = js.native
+    var force: Boolean
     
-    var json: Boolean = js.native
+    var json: Boolean
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var root: Boolean = js.native
+    var root: Boolean
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object BaseConfigContext {
     
@@ -105,34 +103,34 @@ object configBaseMod {
   object ConfigContext {
     
     @scala.inline
-    def GlobalConfigContext(config: IConfig, force: Boolean, global: `true`, json: Boolean, root: Boolean): typings.ionic.configBaseMod.GlobalConfigContext = {
-      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    def GlobalConfigContext(config: IConfig, force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.GlobalConfigContext = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = true, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.configBaseMod.GlobalConfigContext]
     }
     
     @scala.inline
-    def ProjectConfigContext(config: BaseConfig[IProjectConfig], force: Boolean, global: `false`, json: Boolean, root: Boolean): typings.ionic.configBaseMod.ProjectConfigContext = {
-      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    def ProjectConfigContext(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.ProjectConfigContext = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = false, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.configBaseMod.ProjectConfigContext]
     }
   }
   
   type FlexibleConfigFile = StringDictionary[js.Any]
   
-  @js.native
   trait GlobalConfigContext
-    extends BaseConfigContext
+    extends StObject
+       with BaseConfigContext
        with ConfigContext {
     
-    var config: IConfig = js.native
+    var config: IConfig
     
-    var global: `true` = js.native
+    var global: `true`
   }
   object GlobalConfigContext {
     
     @scala.inline
-    def apply(config: IConfig, force: Boolean, global: `true`, json: Boolean, root: Boolean): GlobalConfigContext = {
-      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    def apply(config: IConfig, force: Boolean, json: Boolean, root: Boolean): GlobalConfigContext = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = true, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalConfigContext]
     }
     
@@ -147,20 +145,20 @@ object configBaseMod {
     }
   }
   
-  @js.native
   trait ProjectConfigContext
-    extends BaseConfigContext
+    extends StObject
+       with BaseConfigContext
        with ConfigContext {
     
-    var config: BaseConfig[IProjectConfig] = js.native
+    var config: BaseConfig[IProjectConfig]
     
-    var global: `false` = js.native
+    var global: `false`
   }
   object ProjectConfigContext {
     
     @scala.inline
-    def apply(config: BaseConfig[IProjectConfig], force: Boolean, global: `false`, json: Boolean, root: Boolean): ProjectConfigContext = {
-      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    def apply(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): ProjectConfigContext = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = false, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectConfigContext]
     }
     

@@ -2,25 +2,23 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsRange extends StObject {
   
-  var isRange: Boolean = js.native
+  var isRange: Boolean
   
-  var number: Double = js.native
+  var number: Double
   
-  var operator: String = js.native
+  var operator: String
   
-  var parts: js.Array[Double] = js.native
+  var parts: js.Array[Double]
   
-  var prerelease: String = js.native
+  var prerelease: String
   
-  var range: String = js.native
+  var range: String
   
-  var version: String = js.native
+  var version: String
 }
 object IsRange {
   

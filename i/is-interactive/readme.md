@@ -11,8 +11,8 @@ Check if stdout or stderr is interactive
 | Full name          | is-interactive |
 | Keywords           | interactive, stdout, stderr, detect, is, terminal, shell, tty |
 | # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 45153716 |
+| # dependents       | 38 |
+| # downloads        | 90389757 |
 | # stars            | 0 |
 
 ## Links

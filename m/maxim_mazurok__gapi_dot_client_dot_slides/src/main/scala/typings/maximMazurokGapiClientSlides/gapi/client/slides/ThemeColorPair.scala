@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeColorPair extends StObject {
   
   /** The concrete color corresponding to the theme color type above. */
-  var color: js.UndefOr[RgbColor] = js.native
+  var color: js.UndefOr[RgbColor] = js.undefined
   
   /** The type of the theme color. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ThemeColorPair {
   

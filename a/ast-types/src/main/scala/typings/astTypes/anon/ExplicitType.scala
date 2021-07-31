@@ -3,15 +3,13 @@ package typings.astTypes.anon
 import typings.astTypes.kindsMod.EnumBooleanMemberKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplicitType extends StObject {
   
-  var explicitType: Boolean = js.native
+  var explicitType: Boolean
   
-  var members: js.Array[EnumBooleanMemberKind] = js.native
+  var members: js.Array[EnumBooleanMemberKind]
 }
 object ExplicitType {
   

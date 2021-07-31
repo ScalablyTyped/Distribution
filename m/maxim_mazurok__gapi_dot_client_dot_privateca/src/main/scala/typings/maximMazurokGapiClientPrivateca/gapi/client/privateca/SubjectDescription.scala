@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubjectDescription extends StObject {
   
   /** The "common name" of the distinguished name. */
-  var commonName: js.UndefOr[String] = js.native
+  var commonName: js.UndefOr[String] = js.undefined
   
   /** The serial number encoded in lowercase hexadecimal. */
-  var hexSerialNumber: js.UndefOr[String] = js.native
+  var hexSerialNumber: js.UndefOr[String] = js.undefined
   
   /** For convenience, the actual lifetime of an issued certificate. Corresponds to 'not_after_time' - 'not_before_time'. */
-  var lifetime: js.UndefOr[String] = js.native
+  var lifetime: js.UndefOr[String] = js.undefined
   
   /** The time at which the certificate expires. */
-  var notAfterTime: js.UndefOr[String] = js.native
+  var notAfterTime: js.UndefOr[String] = js.undefined
   
   /** The time at which the certificate becomes valid. */
-  var notBeforeTime: js.UndefOr[String] = js.native
+  var notBeforeTime: js.UndefOr[String] = js.undefined
   
   /** Contains distinguished name fields such as the location and organization. */
-  var subject: js.UndefOr[Subject] = js.native
+  var subject: js.UndefOr[Subject] = js.undefined
   
   /** The subject alternative name fields. */
-  var subjectAltName: js.UndefOr[SubjectAltNames] = js.native
+  var subjectAltName: js.UndefOr[SubjectAltNames] = js.undefined
 }
 object SubjectDescription {
   

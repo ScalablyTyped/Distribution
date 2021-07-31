@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the association between an IP address and an adapter on the network. */
-@js.native
 trait IPInformation extends StObject {
   
   /** Retrieves the network adapter associated with the IP address. */
-  var networkAdapter: NetworkAdapter = js.native
+  var networkAdapter: NetworkAdapter
   
   /** Retrieves the length of the prefix, or network part of the IP address. */
-  var prefixLength: Double = js.native
+  var prefixLength: Double
 }
 object IPInformation {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRemediationConfigurationRequest extends StObject {
   
   /**
     * The name of the AWS Config rule for which you want to delete remediation configuration.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The type of a resource.
     */
-  var ResourceType: js.UndefOr[String] = js.native
+  var ResourceType: js.UndefOr[String] = js.undefined
 }
 object DeleteRemediationConfigurationRequest {
   

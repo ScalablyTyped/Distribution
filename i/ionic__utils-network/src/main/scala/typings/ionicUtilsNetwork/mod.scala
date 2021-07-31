@@ -5,37 +5,34 @@ import typings.ionicUtilsNetwork.anon.Timeout
 import typings.node.osMod.NetworkInterfaceInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/utils-network", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/utils-network", "DEFAULT_ADDRESSES")
   @js.native
   val DEFAULT_ADDRESSES: js.Array[String] = js.native
   
-  @JSImport("@ionic/utils-network", "findClosestOpenPort")
-  @js.native
-  def findClosestOpenPort(port: Double): js.Promise[Double] = js.native
+  @scala.inline
+  def findClosestOpenPort(port: Double): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findClosestOpenPort")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("@ionic/utils-network", "getExternalIPv4Interfaces")
-  @js.native
-  def getExternalIPv4Interfaces(): js.Array[NetworkInterface] = js.native
+  @scala.inline
+  def getExternalIPv4Interfaces(): js.Array[NetworkInterface] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExternalIPv4Interfaces")().asInstanceOf[js.Array[NetworkInterface]]
   
-  @JSImport("@ionic/utils-network", "isHostConnectable")
-  @js.native
-  def isHostConnectable(host: String, port: Double): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/utils-network", "isHostConnectable")
-  @js.native
-  def isHostConnectable(host: String, port: Double, hasTimeout: Timeout): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isHostConnectable(host: String, port: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHostConnectable")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def isHostConnectable(host: String, port: Double, hasTimeout: Timeout): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHostConnectable")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], hasTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/utils-network", "isPortAvailable")
-  @js.native
-  def isPortAvailable(port: Double): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isPortAvailable(port: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortAvailable")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/utils-network", "isPortAvailableForHost")
-  @js.native
-  def isPortAvailableForHost(host: String, port: Double): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isPortAvailableForHost(host: String, port: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isPortAvailableForHost")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  type NetworkInterface = Device with NetworkInterfaceInfo
+  type NetworkInterface = Device & NetworkInterfaceInfo
 }

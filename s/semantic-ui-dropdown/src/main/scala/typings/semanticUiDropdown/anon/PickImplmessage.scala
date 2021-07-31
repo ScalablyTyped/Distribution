@@ -3,14 +3,12 @@ package typings.semanticUiDropdown.anon
 import typings.semanticUiDropdown.SemanticUI.Dropdown.MessageSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'message'> */
-@js.native
 trait PickImplmessage extends StObject {
   
-  var message: MessageSettings = js.native
+  var message: MessageSettings
 }
 object PickImplmessage {
   

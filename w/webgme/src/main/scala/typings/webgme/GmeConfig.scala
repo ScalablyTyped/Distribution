@@ -25,7 +25,6 @@ import typings.webgme.webgmeStrings.basic2
 import typings.webgme.webgmeStrings.basic3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object GmeConfig {
   
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
@@ -43,14 +41,14 @@ object GmeConfig {
       * This should only be modified if you are using a custom UI.
       *  e.g. './src/client'
       */
-    var appDir: String = js.native
+    var appDir: String
     
     /**
       * Default connection router to use when opening up a new model, 
       * available options (ordered by level of complexity 
       * and sophistication) are: 'basic', 'basic2' and 'basic3'.
       */
-    var defaultConnectionRouter: basic | basic2 | basic3 = js.native
+    var defaultConnectionRouter: basic | basic2 | basic3
     
     /**
       * Enable [raven-js](https://docs.sentry.io/clients/javascript/)
@@ -64,7 +62,7 @@ object GmeConfig {
       * 
       * Options passed to the raven-client, if not specified {release: } will be passed.
       */
-    var errorReporting: DSN = js.native
+    var errorReporting: DSN
     
     /**
       * When debug is activated in the browser 
@@ -73,7 +71,7 @@ object GmeConfig {
       * this level will not be printed.
       * e.g. debug, info, warn, error
       */
-    var log: LevelString = js.native
+    var log: LevelString
   }
   object ClientOptions {
     
@@ -105,37 +103,36 @@ object GmeConfig {
     }
   }
   
-  @js.native
   trait ConfigItem extends StObject {
     
     // a detailed description fo the item
-    var description: String = js.native
+    var description: String
     
     // a human comprehensible name
-    var displayName: String = js.native
+    var displayName: String
     
     // a unique name for the configuration item
-    var name: Name = js.native
+    var name: Name
     
     // can the value be changed?
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     // a regular expression limiting the values allowed.
     // e.g. '^[a-zA-Z]+$'
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
     
     // a description of the regex grammar
     // e.g. 'Name can only contain English characters!'
-    var regexMessage: js.UndefOr[String] = js.native
+    var regexMessage: js.UndefOr[String] = js.undefined
     
     // the value of the item: if valueItem is provided it must be one of those values.
-    var value: String = js.native
+    var value: String
     
     // an enumeration of the allowed values for the value field
-    var valueItems: js.UndefOr[js.Array[String]] = js.native
+    var valueItems: js.UndefOr[js.Array[String]] = js.undefined
     
     // the datatype of the value: 'string', 'integer', ...
-    var valueType: String = js.native
+    var valueType: String
   }
   object ConfigItem {
     
@@ -192,41 +189,40 @@ object GmeConfig {
     }
   }
   
-  @js.native
   trait GmeConfig extends StObject {
     
     /**  Add-on related settings. */
-    var addOns: BasePaths = js.native
+    var addOns: BasePaths
     
     /**  Authentication related settings. */
-    var authentication: AllowGuests = js.native
+    var authentication: AllowGuests
     
     /** Bin script related settings. */
-    var bin: Log = js.native
+    var bin: Log
     
     /** Blob related settings. */
-    var blob: ObjectBlob = js.native
+    var blob: ObjectBlob
     
     /** Client related settings. */
-    var client: ClientOptions = js.native
+    var client: ClientOptions
     
     /** Client related settings. */
-    var core: EnableCustomConstraints = js.native
+    var core: EnableCustomConstraints
     
     /**
       * If true will add extra debug messages and also 
       * enable experimental Visualizers, (URL equivalent (only on client side) ?debug=true).
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
     
     /** Executor related settings. */
-    var executor: ClearOldDataAtStartUp = js.native
+    var executor: ClearOldDataAtStartUp
     
     /** Mongo database related settings. */
-    var mongo: Uri = js.native
+    var mongo: Uri
     
     /** Plugin related settings. */
-    var plugin: AllowBrowserExecution = js.native
+    var plugin: AllowBrowserExecution
     
     /** Additional paths to for requirejs. 
       * Custom paths that will be added to the 
@@ -235,34 +231,34 @@ object GmeConfig {
       * i.e. {myPath: './aPath/aSubPath/'} 
       * will expose files via <host>/myPath/someFile.js.
       */
-    var requirejsPaths: Dictionary[String] = js.native
+    var requirejsPaths: Dictionary[String]
     
     /** REST related settings. */
-    var rest: Components = js.native
+    var rest: Components
     
     /** Seed related settings. */
-    var seedProjects: AllowDuplication = js.native
+    var seedProjects: AllowDuplication
     
     /**
       *  Serialize the configuration.
       * @returns {*} 
       * @memberOf GmeConfig
       */
-    def serialize(): js.Any = js.native
+    def serialize(): js.Any
     
     /** Server related settings. */
-    var server: BehindSecureProxy = js.native
+    var server: BehindSecureProxy
     
     /** Socket IO related settings. */
-    var socketIO: typings.webgme.anon.ClientOptions = js.native
+    var socketIO: typings.webgme.anon.ClientOptions
     
     /** Storage related settings. */
-    var storage: AutoMerge = js.native
+    var storage: AutoMerge
     
     /** Visualization related settings. */
-    var visualization: DecoratorPaths = js.native
+    var visualization: DecoratorPaths
     
-    var webhooks: Manager = js.native
+    var webhooks: Manager
   }
   object GmeConfig {
     
@@ -354,10 +350,9 @@ object GmeConfig {
     }
   }
   
-  @js.native
   trait LogOptions extends StObject {
     
-    var log: LevelString = js.native
+    var log: LevelString
   }
   object LogOptions {
     
@@ -375,9 +370,9 @@ object GmeConfig {
     }
   }
   
-  @js.native
   trait PluginConfig
-    extends typings.webgme.GmeConfig.GmeConfig
+    extends StObject
+       with typings.webgme.GmeConfig.GmeConfig
        with /* propName */ StringDictionary[js.Any]
   object PluginConfig {
     

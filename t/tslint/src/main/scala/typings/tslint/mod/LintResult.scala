@@ -3,23 +3,21 @@ package typings.tslint.mod
 import typings.tslint.formatterMod.FormatterConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LintResult extends StObject {
   
-  var errorCount: Double = js.native
+  var errorCount: Double
   
-  var failures: js.Array[typings.tslint.ruleMod.RuleFailure] = js.native
+  var failures: js.Array[typings.tslint.ruleMod.RuleFailure]
   
-  var fixes: js.UndefOr[js.Array[typings.tslint.ruleMod.RuleFailure]] = js.native
+  var fixes: js.UndefOr[js.Array[typings.tslint.ruleMod.RuleFailure]] = js.undefined
   
-  var format: String | FormatterConstructor = js.native
+  var format: String | FormatterConstructor
   
-  var output: String = js.native
+  var output: String
   
-  var warningCount: Double = js.native
+  var warningCount: Double
 }
 object LintResult {
   

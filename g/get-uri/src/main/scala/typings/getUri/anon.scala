@@ -18,15 +18,13 @@ import typings.node.netMod.Socket
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cache extends StObject {
     
-    var cache: js.UndefOr[FileReadable] = js.native
+    var cache: js.UndefOr[FileReadable] = js.undefined
   }
   object Cache {
     
@@ -56,7 +54,9 @@ object anon {
   }
   
   @js.native
-  trait Typeofhttp extends HttpOrHttpsModule {
+  trait Typeofhttp
+    extends StObject
+       with HttpOrHttpsModule {
     
     var Agent: Instantiable0[typings.node.httpMod.Agent] = js.native
     
@@ -114,7 +114,9 @@ object anon {
   }
   
   @js.native
-  trait Typeofhttps extends HttpOrHttpsModule {
+  trait Typeofhttps
+    extends StObject
+       with HttpOrHttpsModule {
     
     var Agent: Instantiable0[typings.node.httpsMod.Agent] = js.native
     

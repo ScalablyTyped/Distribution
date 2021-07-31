@@ -4,28 +4,26 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.bezel
 import typings.reactNativeNavigation.reactNativeNavigationStrings.entireScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsSideMenu extends StObject {
   
   /**
     * Configure the left side menu
     */
-  var left: js.UndefOr[SideMenuSide] = js.native
+  var left: js.UndefOr[SideMenuSide] = js.undefined
   
   /**
     * Configure how a user is allowed to open a drawer using gestures
     * #### (iOS specific)
     * @default 'entireScreen'
     */
-  var openGestureMode: js.UndefOr[entireScreen | bezel] = js.native
+  var openGestureMode: js.UndefOr[entireScreen | bezel] = js.undefined
   
   /**
     * Configure the right side menu
     */
-  var right: js.UndefOr[SideMenuSide] = js.native
+  var right: js.UndefOr[SideMenuSide] = js.undefined
 }
 object OptionsSideMenu {
   

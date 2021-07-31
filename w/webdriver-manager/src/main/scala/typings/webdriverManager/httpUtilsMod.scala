@@ -3,10 +3,13 @@ package typings.webdriverManager
 import typings.request.mod.OptionsWithUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpUtilsMod {
+  
+  @JSImport("webdriver-manager/built/lib/http_utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils")
   @js.native
@@ -18,28 +21,22 @@ object httpUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.assignOptions")
-    @js.native
-    def assignOptions(options: RequestOptionsValue): Unit = js.native
+    @scala.inline
+    def assignOptions(options: RequestOptionsValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assignOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.initOptions")
-    @js.native
-    def initOptions(url: String): OptionsWithUrl = js.native
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.initOptions")
-    @js.native
-    def initOptions(url: String, timeout: Double): OptionsWithUrl = js.native
+    @scala.inline
+    def initOptions(url: String): OptionsWithUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(url.asInstanceOf[js.Any]).asInstanceOf[OptionsWithUrl]
+    @scala.inline
+    def initOptions(url: String, timeout: Double): OptionsWithUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[OptionsWithUrl]
     
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.optionsHeader")
-    @js.native
-    def optionsHeader(options: OptionsWithUrl, key: String, value: String): OptionsWithUrl = js.native
+    @scala.inline
+    def optionsHeader(options: OptionsWithUrl, key: String, value: String): OptionsWithUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsHeader")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[OptionsWithUrl]
     
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.optionsProxy")
-    @js.native
-    def optionsProxy(options: OptionsWithUrl, requestUrl: String, opt_proxy: String): OptionsWithUrl = js.native
+    @scala.inline
+    def optionsProxy(options: OptionsWithUrl, requestUrl: String, opt_proxy: String): OptionsWithUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsProxy")(options.asInstanceOf[js.Any], requestUrl.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[OptionsWithUrl]
     
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.optionsSSL")
-    @js.native
-    def optionsSSL(options: OptionsWithUrl, opt_ignoreSSL: Boolean): OptionsWithUrl = js.native
+    @scala.inline
+    def optionsSSL(options: OptionsWithUrl, opt_ignoreSSL: Boolean): OptionsWithUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsSSL")(options.asInstanceOf[js.Any], opt_ignoreSSL.asInstanceOf[js.Any])).asInstanceOf[OptionsWithUrl]
     
     @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.requestOpts")
     @js.native
@@ -53,24 +50,20 @@ object httpUtilsMod {
       * @param opt_proxy The proxy to connect to to download files.
       * @return Either undefined or the proxy.
       */
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.resolveProxy")
-    @js.native
-    def resolveProxy(fileUrl: String): String = js.native
-    @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils.resolveProxy")
-    @js.native
-    def resolveProxy(fileUrl: String, opt_proxy: String): String = js.native
+    @scala.inline
+    def resolveProxy(fileUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveProxy")(fileUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def resolveProxy(fileUrl: String, opt_proxy: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProxy")(fileUrl.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("webdriver-manager/built/lib/http_utils", "requestBody")
-  @js.native
-  def requestBody(requestUrl: String): js.Promise[String] = js.native
+  @scala.inline
+  def requestBody(requestUrl: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestBody")(requestUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait RequestOptionsValue extends StObject {
     
-    var ignoreSSL: js.UndefOr[Boolean] = js.native
+    var ignoreSSL: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
   }
   object RequestOptionsValue {
     

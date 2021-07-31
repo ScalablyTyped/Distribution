@@ -7,7 +7,6 @@ import typings.std.Blob
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,16 +17,17 @@ object storage {
   /**
     * An error returned by the Firebase Storage SDK.
     */
-  @js.native
-  trait FirebaseStorageError extends FirebaseError {
+  trait FirebaseStorageError
+    extends StObject
+       with FirebaseError {
     
-    var serverResponse: String | Null = js.native
+    var serverResponse: String | Null
   }
   object FirebaseStorageError {
     
     @scala.inline
     def apply(code: String, message: String, name: String): FirebaseStorageError = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serverResponse = null)
       __obj.asInstanceOf[FirebaseStorageError]
     }
     
@@ -45,58 +45,59 @@ object storage {
   /**
     * The full set of object metadata, including read-only properties.
     */
-  @js.native
-  trait FullMetadata extends UploadMetadata {
+  trait FullMetadata
+    extends StObject
+       with UploadMetadata {
     
     /**
       * The bucket this object is contained in.
       */
-    var bucket: String = js.native
+    var bucket: String
     
     /**
       * @deprecated
       * Use Reference.getDownloadURL instead. This property will be removed in a
       * future release.
       */
-    var downloadURLs: js.Array[String] = js.native
+    var downloadURLs: js.Array[String]
     
     /**
       * The full path of this object.
       */
-    var fullPath: String = js.native
+    var fullPath: String
     
     /**
       * The object's generation.
       * @see {@link https://cloud.google.com/storage/docs/generations-preconditions}
       */
-    var generation: String = js.native
+    var generation: String
     
     /**
       * The object's metageneration.
       * @see {@link https://cloud.google.com/storage/docs/generations-preconditions}
       */
-    var metageneration: String = js.native
+    var metageneration: String
     
     /**
       * The short name of this object, which is the last component of the full path.
       * For example, if fullPath is 'full/path/image.png', name is 'image.png'.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The size of this object, in bytes.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * A date string representing when this object was created.
       */
-    var timeCreated: String = js.native
+    var timeCreated: String
     
     /**
       * A date string representing when this object was last updated.
       */
-    var updated: String = js.native
+    var updated: String
   }
   object FullMetadata {
     
@@ -154,20 +155,19 @@ object storage {
   /**
     * The options `list()` accepts.
     */
-  @js.native
   trait ListOptions extends StObject {
     
     /**
       * If set, limits the total number of `prefixes` and `items` to return.
       * The default and maximum maxResults is 1000.
       */
-    var maxResults: js.UndefOr[Double | Null] = js.native
+    var maxResults: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * The `nextPageToken` from a previous call to `list()`. If provided,
       * listing is resumed from the previous position.
       */
-    var pageToken: js.UndefOr[String | Null] = js.native
+    var pageToken: js.UndefOr[String | Null] = js.undefined
   }
   object ListOptions {
     
@@ -203,19 +203,18 @@ object storage {
   /**
     * Result returned by list().
     */
-  @js.native
   trait ListResult extends StObject {
     
     /**
       * Objects in this directory.
       * You can call getMetadata() and getDownloadUrl() on them.
       */
-    var items: js.Array[Reference] = js.native
+    var items: js.Array[Reference]
     
     /**
       * If set, there might be more results for this list. Use this token to resume the list.
       */
-    var nextPageToken: String | Null = js.native
+    var nextPageToken: String | Null
     
     /**
       * References to prefixes (sub-folders). You can call list() on them to
@@ -225,13 +224,13 @@ object storage {
       * For example, if a bucket has two objects '/a/b/1' and '/a/b/2', list('/a')
       * will return '/a/b' as a prefix.
       */
-    var prefixes: js.Array[Reference] = js.native
+    var prefixes: js.Array[Reference]
   }
   object ListResult {
     
     @scala.inline
     def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
-      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any], nextPageToken = null)
       __obj.asInstanceOf[ListResult]
     }
     
@@ -283,7 +282,7 @@ object storage {
       * @return A Promise that resolves if the deletion
       *     succeeded and rejects if it failed, including if the object didn't exist.
       */
-    def delete(): js.Promise[_] = js.native
+    def delete(): js.Promise[js.Any] = js.native
     
     /**
       * The full path of this object.
@@ -296,7 +295,7 @@ object storage {
       *     URL or rejects if the fetch failed, including if the object did not
       *     exist.
       */
-    def getDownloadURL(): js.Promise[_] = js.native
+    def getDownloadURL(): js.Promise[js.Any] = js.native
     
     /**
       * Fetches metadata for the object at this location, if one exists.
@@ -304,7 +303,7 @@ object storage {
       *     resolves with the metadata, or rejects if the fetch failed, including if
       *     the object did not exist.
       */
-    def getMetadata(): js.Promise[_] = js.native
+    def getMetadata(): js.Promise[js.Any] = js.native
     
     /**
       * List items (files) and prefixes (folders) under this storage reference.
@@ -386,7 +385,7 @@ object storage {
       *     doesn't conform to the specified format.
       */
     def putString(data: String): UploadTask = js.native
-    def putString(data: String, format: js.UndefOr[scala.Nothing], metadata: UploadMetadata): UploadTask = js.native
+    def putString(data: String, format: Unit, metadata: UploadMetadata): UploadTask = js.native
     def putString(data: String, format: StringFormat): UploadTask = js.native
     def putString(data: String, format: StringFormat, metadata: UploadMetadata): UploadTask = js.native
     
@@ -409,41 +408,40 @@ object storage {
       *     resolves with the full updated metadata or rejects if the updated failed,
       *     including if the object did not exist.
       */
-    def updateMetadata(metadata: SettableMetadata): js.Promise[_] = js.native
+    def updateMetadata(metadata: SettableMetadata): js.Promise[js.Any] = js.native
   }
   
   /**
     * Object metadata that can be set at any time.
     */
-  @js.native
   trait SettableMetadata extends StObject {
     
     /**
       * Served as the 'Cache-Control' header on object download.
       */
-    var cacheControl: js.UndefOr[String | Null] = js.native
+    var cacheControl: js.UndefOr[String | Null] = js.undefined
     
-    var contentDisposition: js.UndefOr[String | Null] = js.native
+    var contentDisposition: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Served as the 'Content-Encoding' header on object download.
       */
-    var contentEncoding: js.UndefOr[String | Null] = js.native
+    var contentEncoding: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Served as the 'Content-Language' header on object download.
       */
-    var contentLanguage: js.UndefOr[String | Null] = js.native
+    var contentLanguage: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Served as the 'Content-Type' header on object download.
       */
-    var contentType: js.UndefOr[String | Null] = js.native
+    var contentType: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Additional user-defined custom metadata.
       */
-    var customMetadata: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var customMetadata: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   }
   object SettableMetadata {
     
@@ -582,14 +580,13 @@ object storage {
     def setMaxUploadRetryTime(time: Double): js.Any = js.native
   }
   
-  @js.native
   trait StorageObserver[T] extends StObject {
     
-    var complete: js.UndefOr[CompleteFn | Null] = js.native
+    var complete: js.UndefOr[CompleteFn | Null] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ FirebaseStorageError, Unit | Null]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ FirebaseStorageError, Unit | Null]] = js.undefined
     
-    var next: js.UndefOr[NextFn[T] | Null] = js.native
+    var next: js.UndefOr[NextFn[T] | Null] = js.undefined
   }
   object StorageObserver {
     
@@ -600,7 +597,7 @@ object storage {
     }
     
     @scala.inline
-    implicit class StorageObserverMutableBuilder[Self <: StorageObserver[_], T] (val x: Self with StorageObserver[T]) extends AnyVal {
+    implicit class StorageObserverMutableBuilder[Self <: StorageObserver[?], T] (val x: Self & StorageObserver[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -650,13 +647,14 @@ object storage {
   /**
     * Object metadata that can be set at upload.
     */
-  @js.native
-  trait UploadMetadata extends SettableMetadata {
+  trait UploadMetadata
+    extends StObject
+       with SettableMetadata {
     
     /**
       * A Base64-encoded MD5 hash of the object being uploaded.
       */
-    var md5Hash: js.UndefOr[String | Null] = js.native
+    var md5Hash: js.UndefOr[String | Null] = js.undefined
   }
   object UploadMetadata {
     
@@ -696,7 +694,7 @@ object storage {
     /**
       * Equivalent to calling `then(null, onRejected)`.
       */
-    def `catch`(onRejected: js.Function1[/* error */ FirebaseStorageError, _]): js.Promise[_] = js.native
+    def `catch`(onRejected: js.Function1[/* error */ FirebaseStorageError, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Listens for events on this task.
@@ -808,79 +806,78 @@ object storage {
       *     callbacks.
       */
     def on(event: TaskEvent): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any]): js.Function = js.native
     def on(
       event: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any],
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any]
+    ): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any],
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(
       event: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* error */ FirebaseStorageError, _]
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* error */ FirebaseStorageError, _],
-      complete: Unsubscribe
-    ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: Null, complete: Unsubscribe): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, _]): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, _],
-      error: js.UndefOr[scala.Nothing],
-      complete: Unsubscribe
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, _],
-      error: js.Function1[/* error */ FirebaseStorageError, _]
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, _],
-      error: js.Function1[/* error */ FirebaseStorageError, _],
-      complete: Unsubscribe
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, _],
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any],
       error: Null,
       complete: Unsubscribe
     ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: Null, error: js.UndefOr[scala.Nothing], complete: Unsubscribe): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: Null, error: js.Function1[/* error */ FirebaseStorageError, _]): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any],
+      error: Unit,
+      complete: Unsubscribe
+    ): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: Null,
-      error: js.Function1[/* error */ FirebaseStorageError, _],
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any]
+    ): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: Null,
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(event: TaskEvent, nextOrObserver: Null, error: Null, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Null, error: Unit, complete: Unsubscribe): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: Unit,
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any]
+    ): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: Unit,
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any],
+      complete: Unsubscribe
+    ): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Unit, error: Null, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Unit, error: Unit, complete: Unsubscribe): js.Function = js.native
     def on(event: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot]): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: js.UndefOr[scala.Nothing],
-      complete: Unsubscribe
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any]
     ): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: js.Function1[/* error */ FirebaseStorageError, _]
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: js.Function1[/* error */ FirebaseStorageError, _],
+      error: js.Function1[/* error */ FirebaseStorageError, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
       error: Null,
+      complete: Unsubscribe
+    ): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: StorageObserver[UploadTaskSnapshot],
+      error: Unit,
       complete: Unsubscribe
     ): js.Function = js.native
     
@@ -908,62 +905,58 @@ object storage {
       *     The fulfillment callback. Promise chaining works as normal.
       * @param onRejected The rejection callback.
       */
-    def `then`(): js.Promise[_] = js.native
+    def `then`(): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any]): js.Promise[js.Any] = js.native
     def `then`(
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* error */ FirebaseStorageError, _]
-    ): js.Promise[_] = js.native
-    def `then`(onFulfilled: js.Function1[/* snapshot */ UploadTaskSnapshot, _]): js.Promise[_] = js.native
-    def `then`(
-      onFulfilled: js.Function1[/* snapshot */ UploadTaskSnapshot, _],
-      onRejected: js.Function1[/* error */ FirebaseStorageError, _]
-    ): js.Promise[_] = js.native
-    def `then`(onFulfilled: Null, onRejected: js.Function1[/* error */ FirebaseStorageError, _]): js.Promise[_] = js.native
+      onFulfilled: js.Function1[/* snapshot */ UploadTaskSnapshot, js.Any],
+      onRejected: js.Function1[/* error */ FirebaseStorageError, js.Any]
+    ): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: Null, onRejected: js.Function1[/* error */ FirebaseStorageError, js.Any]): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* error */ FirebaseStorageError, js.Any]): js.Promise[js.Any] = js.native
   }
   
   /**
     * Holds data about the current state of the upload task.
     */
-  @js.native
   trait UploadTaskSnapshot extends StObject {
     
     /**
       * The number of bytes that have been successfully uploaded so far.
       */
-    var bytesTransferred: Double = js.native
+    var bytesTransferred: Double
     
     /**
       * @deprecated
       * Use Reference.getDownloadURL instead. This property will be removed in a
       * future release.
       */
-    var downloadURL: String | Null = js.native
+    var downloadURL: String | Null
     
     /**
       * Before the upload completes, contains the metadata sent to the server.
       * After the upload completes, contains the metadata sent back from the server.
       */
-    var metadata: FullMetadata = js.native
+    var metadata: FullMetadata
     
     /**
       * The reference that spawned this snapshot's upload task.
       */
-    var ref: Reference = js.native
+    var ref: Reference
     
     /**
       * The current state of the task.
       */
-    var state: TaskState = js.native
+    var state: TaskState
     
     /**
       * The task of which this is a snapshot.
       */
-    var task: UploadTask = js.native
+    var task: UploadTask
     
     /**
       * The total number of bytes to be uploaded.
       */
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object UploadTaskSnapshot {
     
@@ -976,7 +969,7 @@ object storage {
       task: UploadTask,
       totalBytes: Double
     ): UploadTaskSnapshot = {
-      val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any], downloadURL = null)
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     

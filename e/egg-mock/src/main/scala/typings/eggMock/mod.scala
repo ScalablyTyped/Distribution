@@ -7,7 +7,6 @@ import typings.eggMock.anon.Data
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -105,38 +104,37 @@ object mod extends Shortcut {
     def mockSession(data: js.Any): MockApplication = js.native
   }
   
-  @js.native
   trait MockOption extends StObject {
     
     /**
       * The directory of the application
       */
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
     /**
       * Cache application based on baseDir
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove $baseDir/logs
       */
-    var clean: js.UndefOr[Boolean] = js.native
+    var clean: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Swtich on process coverage, but it'll be slower
       */
-    var coverage: js.UndefOr[Boolean] = js.native
+    var coverage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The directory of the egg framework
       */
-    var framework: js.UndefOr[String] = js.native
+    var framework: js.UndefOr[String] = js.undefined
     
     /**
       * Custom you plugins
       */
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
   }
   object MockOption {
     

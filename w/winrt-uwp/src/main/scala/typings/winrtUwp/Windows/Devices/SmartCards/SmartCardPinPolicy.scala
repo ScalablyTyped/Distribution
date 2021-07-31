@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
-@js.native
 trait SmartCardPinPolicy extends StObject {
   
   /** Gets or sets whether number characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var digits: SmartCardPinCharacterPolicyOption = js.native
+  var digits: SmartCardPinCharacterPolicyOption
   
   /** Gets or sets whether lowercase letter characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var lowercaseLetters: SmartCardPinCharacterPolicyOption = js.native
+  var lowercaseLetters: SmartCardPinCharacterPolicyOption
   
   /** Gets or sets the maximum character length for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var maxLength: Double = js.native
+  var maxLength: Double
   
   /** Gets or sets the minimum character length for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var minLength: Double = js.native
+  var minLength: Double
   
   /** Gets or sets whether special characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var specialCharacters: SmartCardPinCharacterPolicyOption = js.native
+  var specialCharacters: SmartCardPinCharacterPolicyOption
   
   /** Gets or sets whether uppercase letter characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
-  var uppercaseLetters: SmartCardPinCharacterPolicyOption = js.native
+  var uppercaseLetters: SmartCardPinCharacterPolicyOption
 }
 object SmartCardPinPolicy {
   

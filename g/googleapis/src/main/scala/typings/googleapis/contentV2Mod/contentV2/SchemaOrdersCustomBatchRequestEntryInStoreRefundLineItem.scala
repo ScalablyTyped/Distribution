@@ -2,48 +2,46 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem extends StObject {
   
   /**
     * The amount that is refunded. Required.
     */
-  var amountPretax: js.UndefOr[SchemaPrice] = js.native
+  var amountPretax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Tax amount that correspond to refund amount in amountPretax. Required.
     */
-  var amountTax: js.UndefOr[SchemaPrice] = js.native
+  var amountTax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The ID of the line item to return. Either lineItemId or productId is
     * required.
     */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product to return. This is the REST ID used in the products
     * service. Either lineItemId or productId is required.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity to return and refund.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /**
     * The reason for the return.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem {
   

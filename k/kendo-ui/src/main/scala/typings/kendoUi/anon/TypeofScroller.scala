@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.Scroller
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofScroller extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Scroller = js.native
+  def extend(proto: js.Object): Scroller
   
   /* static member */
-  var fn: Scroller = js.native
+  var fn: Scroller
 }
 object TypeofScroller {
   

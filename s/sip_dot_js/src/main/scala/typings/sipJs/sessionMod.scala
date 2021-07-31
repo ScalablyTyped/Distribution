@@ -40,7 +40,6 @@ import typings.sipJs.sessionStateMod.SessionState
 import typings.sipJs.userAgentMod.UserAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
@@ -66,7 +65,7 @@ object sessionMod {
       * @internal
       */
     def _bye(): js.Promise[OutgoingByeRequest] = js.native
-    def _bye(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
+    def _bye(delegate: Unit, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     
@@ -86,7 +85,7 @@ object sessionMod {
       * @internal
       */
     def _info(): js.Promise[OutgoingInfoRequest] = js.native
-    def _info(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
+    def _info(delegate: Unit, options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
     def _info(delegate: OutgoingRequestDelegate): js.Promise[OutgoingInfoRequest] = js.native
     def _info(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
     
@@ -97,7 +96,7 @@ object sessionMod {
       * @internal
       */
     def _message(): js.Promise[OutgoingMessageRequest] = js.native
-    def _message(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
+    def _message(delegate: Unit, options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
     def _message(delegate: OutgoingRequestDelegate): js.Promise[OutgoingMessageRequest] = js.native
     def _message(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
     
@@ -109,13 +108,10 @@ object sessionMod {
       * @internal
       */
     def _refer(): js.Promise[OutgoingByeRequest] = js.native
-    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
-    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
-    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     def _refer(onNotify: js.Function1[/* notification */ Notification, Unit]): js.Promise[OutgoingByeRequest] = js.native
     def _refer(
       onNotify: js.Function1[/* notification */ Notification, Unit],
-      delegate: js.UndefOr[scala.Nothing],
+      delegate: Unit,
       options: RequestOptions
     ): js.Promise[OutgoingByeRequest] = js.native
     def _refer(onNotify: js.Function1[/* notification */ Notification, Unit], delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
@@ -124,6 +120,9 @@ object sessionMod {
       delegate: OutgoingRequestDelegate,
       options: RequestOptions
     ): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: Unit, delegate: Unit, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: Unit, delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: Unit, delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     
     /** @internal */
     var _referral: js.UndefOr[Inviter] = js.native
@@ -177,13 +176,9 @@ object sessionMod {
       * @internal
       */
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession): Unit = js.native
-    /* protected */ def ackAndBye(
-      response: AckableIncomingResponseWithSession,
-      statusCode: js.UndefOr[scala.Nothing],
-      reasonPhrase: String
-    ): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double, reasonPhrase: String): Unit = js.native
+    /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Unit, reasonPhrase: String): Unit = js.native
     
     /**
       * The asserted identity of the remote user.

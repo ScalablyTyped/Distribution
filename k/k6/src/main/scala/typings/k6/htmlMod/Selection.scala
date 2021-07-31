@@ -3,7 +3,6 @@ package typings.k6.htmlMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/html", "Selection")
@@ -179,7 +178,7 @@ abstract class Selection () extends StObject {
     * @param mapper - Procedure to execute on each element.
     * @returns Mapper return values.
     */
-  def map(mapper: Mapper): js.Array[_] = js.native
+  def map(mapper: Mapper): js.Array[js.Any] = js.native
   
   /**
     * Get the immediately following sibling of each element.

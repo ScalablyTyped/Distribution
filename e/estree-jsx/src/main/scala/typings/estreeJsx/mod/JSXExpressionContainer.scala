@@ -4,28 +4,24 @@ import typings.estree.mod.BaseNode
 import typings.estree.mod.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXExpressionContainer
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var expression: Expression | JSXEmptyExpression = js.native
+  var expression: Expression | JSXEmptyExpression
   
   @JSName("type")
-  var type_JSXExpressionContainer: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer = js.native
+  var type_JSXExpressionContainer: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer
 }
 object JSXExpressionContainer {
   
   @scala.inline
-  def apply(
-    expression: Expression | JSXEmptyExpression,
-    `type`: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer
-  ): JSXExpressionContainer = {
+  def apply(expression: Expression | JSXEmptyExpression): JSXExpressionContainer = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXExpressionContainer")
     __obj.asInstanceOf[JSXExpressionContainer]
   }
   

@@ -11,7 +11,6 @@ import typings.three.triangleMod.Triangle
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object box3Mod {
@@ -20,7 +19,7 @@ object box3Mod {
   @js.native
   class Box3 () extends StObject {
     def this(min: Vector3) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Vector3) = this()
+    def this(min: Unit, max: Vector3) = this()
     def this(min: Vector3, max: Vector3) = this()
     
     def applyMatrix4(matrix: Matrix4): this.type = js.native

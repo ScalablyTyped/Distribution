@@ -18,18 +18,16 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait CalculationCache[Result] extends StObject {
     
     /**
       * Manually invalidates the cached outcome.
       */
-    def invalidate(): Unit = js.native
+    def invalidate(): Unit
     
     /**
       * If the inputs array matches the inputs array from the previous invocation, this method returns the result of the previous invocation.
@@ -39,31 +37,30 @@ object interfacesMod {
       * These objects are assumed to be immutable primitive values.
       * @param calculation - Function that takes zero arguments and returns an object (A [[VNode]] presumably) that can be cached.
       */
-    def result(inputs: js.Array[_], calculation: js.Function0[Result]): Result = js.native
+    def result(inputs: js.Array[js.Any], calculation: js.Function0[Result]): Result
   }
   object CalculationCache {
     
     @scala.inline
-    def apply[Result](invalidate: () => Unit, result: (js.Array[_], js.Function0[Result]) => Result): CalculationCache[Result] = {
+    def apply[Result](invalidate: () => Unit, result: (js.Array[js.Any], js.Function0[Result]) => Result): CalculationCache[Result] = {
       val __obj = js.Dynamic.literal(invalidate = js.Any.fromFunction0(invalidate), result = js.Any.fromFunction2(result))
       __obj.asInstanceOf[CalculationCache[Result]]
     }
     
     @scala.inline
-    implicit class CalculationCacheMutableBuilder[Self <: CalculationCache[_], Result] (val x: Self with CalculationCache[Result]) extends AnyVal {
+    implicit class CalculationCacheMutableBuilder[Self <: CalculationCache[?], Result] (val x: Self & CalculationCache[Result]) extends AnyVal {
       
       @scala.inline
       def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setResult(value: (js.Array[_], js.Function0[Result]) => Result): Self = StObject.set(x, "result", js.Any.fromFunction2(value))
+      def setResult(value: (js.Array[js.Any], js.Function0[Result]) => Result): Self = StObject.set(x, "result", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait Component extends StObject {
     
-    def renderMaquette(): js.UndefOr[VNode | Null] = js.native
+    def renderMaquette(): js.UndefOr[VNode | Null]
   }
   object Component {
     
@@ -155,7 +152,6 @@ object interfacesMod {
     js.UndefOr[js.Function]
   ]
   
-  @js.native
   trait Mapping[Source, Target] extends StObject {
     
     /**
@@ -163,12 +159,12 @@ object interfacesMod {
       *
       * @param newSources   The new array of sources.
       */
-    def map(newSources: js.Array[Source]): Unit = js.native
+    def map(newSources: js.Array[Source]): Unit
     
     /**
       * The array of results. These results will be synchronized with the latest array of sources that were provided using [[map]].
       */
-    var results: js.Array[Target] = js.native
+    var results: js.Array[Target]
   }
   object Mapping {
     
@@ -179,7 +175,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class MappingMutableBuilder[Self <: Mapping[_, _], Source, Target] (val x: Self with (Mapping[Source, Target])) extends AnyVal {
+    implicit class MappingMutableBuilder[Self <: Mapping[?, ?], Source, Target] (val x: Self & (Mapping[Source, Target])) extends AnyVal {
       
       @scala.inline
       def setMap(value: js.Array[Source] => Unit): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
@@ -192,13 +188,12 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait MaquetteComponent extends StObject {
     
     /**
       * A function that returns the DOM representation of the component.
       */
-    def render(): js.UndefOr[VNode | Null] = js.native
+    def render(): js.UndefOr[VNode | Null]
   }
   object MaquetteComponent {
     
@@ -246,21 +241,20 @@ object interfacesMod {
     def rendered: typings.maquette.maquetteStrings.rendered = "rendered".asInstanceOf[typings.maquette.maquetteStrings.rendered]
   }
   
-  @js.native
   trait Projection extends StObject {
     
     /**
       * The DOM node that is used as the root of this [[Projection]].
       */
-    val domNode: Element = js.native
+    val domNode: Element
     
-    def getLastRender(): VNode = js.native
+    def getLastRender(): VNode
     
     /**
       * Updates the real DOM to match the new virtual DOM tree.
       * @param updatedVnode The updated virtual DOM tree. Note: The selector for the root of the [[VNode]] tree may not change.
       */
-    def update(updatedVnode: VNode): Unit = js.native
+    def update(updatedVnode: VNode): Unit
   }
   object Projection {
     
@@ -284,8 +278,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait ProjectionOptions extends ProjectorOptions {
+  trait ProjectionOptions
+    extends StObject
+       with ProjectorOptions {
     
     /**
       * May be used to intercept registration of event-handlers.
@@ -298,12 +293,12 @@ object interfacesMod {
       * @param properties               The whole set of properties that was put on the VNode
       * @returns                        The function that is to be placed on the DOM node as the event handler, instead of `eventHandler`.
       */
-    var eventHandlerInterceptor: js.UndefOr[EventHandlerInterceptor] = js.native
+    var eventHandlerInterceptor: js.UndefOr[EventHandlerInterceptor] = js.undefined
     
     /**
       * Only for internal use. Used for rendering SVG Nodes.
       */
-    val namespace: js.UndefOr[String] = js.native
+    val namespace: js.UndefOr[String] = js.undefined
   }
   object ProjectionOptions {
     
@@ -332,8 +327,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait Projector extends ProjectorService {
+  trait Projector
+    extends StObject
+       with ProjectorService {
     
     /**
       * Appends a new child node to the DOM using the result from the provided `renderFunction`.
@@ -341,7 +337,7 @@ object interfacesMod {
       * @param parentNode - The parent node for the new child node.
       * @param renderFunction - Function with zero arguments that returns a [[VNode]] tree.
       */
-    def append(parentNode: Element, renderFunction: js.Function0[VNode]): Unit = js.native
+    def append(parentNode: Element, renderFunction: js.Function0[VNode]): Unit
     
     /**
       * Stops running the `renderFunction` to update the DOM. The `renderFunction` must have been
@@ -350,7 +346,7 @@ object interfacesMod {
       * @returns The [[Projection]] which was created using this `renderFunction`.
       * The [[Projection]] contains a reference to the DOM Node that was rendered.
       */
-    def detach(renderFunction: js.Function0[VNode]): Projection = js.native
+    def detach(renderFunction: js.Function0[VNode]): Projection
     
     /**
       * Inserts a new DOM node using the result from the provided `renderFunction`.
@@ -358,7 +354,7 @@ object interfacesMod {
       * @param beforeNode - The node that the DOM Node is inserted before.
       * @param renderFunction - Function with zero arguments that returns a [[VNode]] tree.
       */
-    def insertBefore(beforeNode: Element, renderFunction: js.Function0[VNode]): Unit = js.native
+    def insertBefore(beforeNode: Element, renderFunction: js.Function0[VNode]): Unit
     
     /**
       * Merges a new DOM node using the result from the provided `renderFunction` with an existing DOM Node.
@@ -368,7 +364,7 @@ object interfacesMod {
       * @param domNode - The existing element to adopt as the root of the new virtual DOM. Existing attributes and child nodes are preserved.
       * @param renderFunction - Function with zero arguments that returns a [[VNode]] tree.
       */
-    def merge(domNode: Element, renderFunction: js.Function0[VNode]): Unit = js.native
+    def merge(domNode: Element, renderFunction: js.Function0[VNode]): Unit
     
     /**
       * Replaces an existing DOM node with the result from the provided `renderFunction`.
@@ -376,12 +372,12 @@ object interfacesMod {
       * @param domNode - The DOM node to replace.
       * @param renderFunction - Function with zero arguments that returns a [[VNode]] tree.
       */
-    def replace(domNode: Element, renderFunction: js.Function0[VNode]): Unit = js.native
+    def replace(domNode: Element, renderFunction: js.Function0[VNode]): Unit
     
     /**
       * Resumes the projector. Use this method to resume rendering after [[stop]] was called or an error occurred during rendering.
       */
-    def resume(): Unit = js.native
+    def resume(): Unit
     
     /**
       * Stops the projector. This means that the registered `render` functions will not be called anymore.
@@ -389,7 +385,7 @@ object interfacesMod {
       * Note that calling [[stop]] is not mandatory. A projector is a passive object that will get garbage collected
       * as usual if it is no longer in scope.
       */
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Projector {
     
@@ -435,13 +431,12 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ProjectorOptions extends StObject {
     
     /**
       * Can be used to log performance metrics
       */
-    var performanceLogger: js.UndefOr[ProjectorPerformanceLogger] = js.native
+    var performanceLogger: js.UndefOr[ProjectorPerformanceLogger] = js.undefined
     
     /**
       * May be used to add vendor prefixes when applying inline styles when needed.
@@ -454,7 +449,7 @@ object interfacesMod {
       */
     var styleApplyer: js.UndefOr[
         js.Function3[/* domNode */ HTMLElement, /* styleName */ String, /* value */ String, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ProjectorOptions {
     
@@ -483,7 +478,6 @@ object interfacesMod {
   
   type ProjectorPerformanceLogger = js.Function2[/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event], Unit]
   
-  @js.native
   trait ProjectorService extends StObject {
     
     /**
@@ -492,7 +486,7 @@ object interfacesMod {
       * when you want to put the focus into a newly created element in iOS.
       * This is only allowed when triggered by a user-event, not during requestAnimationFrame.
       */
-    def renderNow(): Unit = js.native
+    def renderNow(): Unit
     
     /**
       * Instructs the projector to re-render to the DOM at the next animation-frame using the registered `render` functions.
@@ -500,7 +494,7 @@ object interfacesMod {
       *
       * You need to call this method when timeouts expire, when AJAX responses arrive or other asynchronous actions happen.
       */
-    def scheduleRender(): Unit = js.native
+    def scheduleRender(): Unit
   }
   object ProjectorService {
     
@@ -521,39 +515,40 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait VNode extends _VNodeChild {
+  trait VNode
+    extends StObject
+       with _VNodeChild {
     
     /**
       * Array of [[VNode]]s to be used as children. This array is already flattened.
       */
-    val children: js.UndefOr[js.Array[VNode]] = js.native
+    val children: js.UndefOr[js.Array[VNode]] = js.undefined
     
     /**
       * Used by maquette to store the domNode that was produced from this [[VNode]].
       */
-    var domNode: Node | Null = js.native
+    var domNode: Node | Null
     
     /**
       * Object containing attributes, properties, event handlers and more, see [[h]].
       */
-    val properties: js.UndefOr[VNodeProperties] = js.native
+    val properties: js.UndefOr[VNodeProperties] = js.undefined
     
     /**
       * Used in a special case when a [[VNode]] only has one child node which is a text node. Only used in combination with children === undefined.
       */
-    val text: js.UndefOr[String] = js.native
+    val text: js.UndefOr[String] = js.undefined
     
     /**
       * The CSS selector containing tagname, css classnames and id. An empty string is used to denote a text node.
       */
-    val vnodeSelector: String = js.native
+    val vnodeSelector: String
   }
   object VNode {
     
     @scala.inline
     def apply(vnodeSelector: String): VNode = {
-      val __obj = js.Dynamic.literal(vnodeSelector = vnodeSelector.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(vnodeSelector = vnodeSelector.asInstanceOf[js.Any], domNode = null)
       __obj.asInstanceOf[VNode]
     }
     
@@ -598,25 +593,26 @@ object interfacesMod {
     - typings.maquette.interfacesMod.VNodeChildren
     - typings.maquette.maquetteBooleans.`false`
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type VNodeChild = js.UndefOr[_VNodeChild | String | Null]
   
   @js.native
   trait VNodeChildren
-    extends Array[VNodeChild]
+    extends StObject
+       with Array[VNodeChild]
        with _VNodeChild
   
-  @js.native
   trait VNodeProperties
-    extends /**
+    extends StObject
+       with /**
     * Everything that is not explicitly listed (properties and attributes that are either uncommon or custom).
     */
   /* index */ StringDictionary[js.Any] {
     
-    val accessKey: js.UndefOr[String] = js.native
+    val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.native
+    val action: js.UndefOr[String] = js.undefined
     
     /**
       * Callback that is executed after this node is added to the DOM. Child nodes and properties have
@@ -636,7 +632,7 @@ object interfacesMod {
           /* children */ js.UndefOr[js.Array[VNode]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when a node has been removed from the tree.
@@ -644,7 +640,7 @@ object interfacesMod {
       * {@link https://maquettejs.org/docs/dom-node-removal.html|More info}
       * @param element - The element that has been removed from the DOM.
       */
-    var afterRemoved: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var afterRemoved: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
     /**
       * Callback that is executed every time this node may have been updated. Child nodes and properties
@@ -664,11 +660,11 @@ object interfacesMod {
           /* children */ js.UndefOr[js.Array[VNode]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val alt: js.UndefOr[String] = js.native
+    val alt: js.UndefOr[String] = js.undefined
     
-    val autocomplete: js.UndefOr[String] = js.native
+    val autocomplete: js.UndefOr[String] = js.undefined
     
     /**
       * When specified, the event handlers will be invoked with 'this' pointing to the value.
@@ -676,32 +672,32 @@ object interfacesMod {
       *
       * When no [[key]] is present, this object is also used to uniquely identify a DOM node.
       */
-    val bind: js.UndefOr[js.Object] = js.native
+    val bind: js.UndefOr[js.Object] = js.undefined
     
-    val checked: js.UndefOr[Boolean] = js.native
+    val checked: js.UndefOr[Boolean] = js.undefined
     
-    val `class`: js.UndefOr[String] = js.native
+    val `class`: js.UndefOr[String] = js.undefined
     
     /**
       * Do not use className, use class instead
       */
     val className: js.UndefOr[
         `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An object literal like `{important:true}` which allows css classes, like `important` to be added and removed
       * dynamically.
       */
-    val classes: js.UndefOr[StringDictionary[js.UndefOr[Boolean | Null]]] = js.native
+    val classes: js.UndefOr[StringDictionary[js.UndefOr[Boolean | Null]]] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val draggable: js.UndefOr[Boolean] = js.native
+    val draggable: js.UndefOr[Boolean] = js.undefined
     
-    val encoding: js.UndefOr[String] = js.native
+    val encoding: js.UndefOr[String] = js.undefined
     
-    val enctype: js.UndefOr[String] = js.native
+    val enctype: js.UndefOr[String] = js.undefined
     
     /**
       * The animation to perform when this node is added to an already existing parent.
@@ -711,7 +707,7 @@ object interfacesMod {
       */
     var enterAnimation: js.UndefOr[
         js.Function2[/* element */ Element, /* properties */ js.UndefOr[this.type], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The animation to perform when this node is removed while its parent remains.
@@ -728,116 +724,116 @@ object interfacesMod {
           /* properties */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val href: js.UndefOr[String] = js.native
+    val href: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Puts a non-interactive string of html inside the DOM node.
       *
       * Note: if you use innerHTML, maquette cannot protect you from XSS vulnerabilities and you must make sure that the innerHTML value is safe.
       */
-    val innerHTML: js.UndefOr[String] = js.native
+    val innerHTML: js.UndefOr[String] = js.undefined
     
     /**
       * Used to uniquely identify a DOM node among siblings.
       * A key is required when there are more children with the same selector and these children are added or removed dynamically.
       * NOTE: this does not have to be a string or number, a [[MaquetteComponent]] Object for instance is also common.
       */
-    val key: js.UndefOr[js.Object] = js.native
+    val key: js.UndefOr[js.Object] = js.undefined
     
-    val method: js.UndefOr[String] = js.native
+    val method: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var onblur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.native
+    var onblur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
     
-    var onchange: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+    var onchange: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
     
-    var onclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var ondblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var ondblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var ondrag: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondrag: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondragend: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondragend: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondragenter: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondragenter: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondragleave: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondragleave: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondragover: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondragover: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var ondrop: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+    var ondrop: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
     
-    var onfocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.native
+    var onfocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
     
-    var oninput: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+    var oninput: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
     
-    var onkeydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+    var onkeydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
     
-    var onkeypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+    var onkeypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
     
-    var onkeyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+    var onkeyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
     
-    var onload: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+    var onload: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
     
-    var onmousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmouseleave: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmouseleave: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmousemove: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmousemove: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmouseout: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmouseout: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmouseover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmouseover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+    var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.native
+    var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.undefined
     
-    var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.native
+    var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.undefined
     
-    var onsubmit: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+    var onsubmit: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
     
-    var ontouchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+    var ontouchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
     
-    var ontouchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+    var ontouchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
     
-    var ontouchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+    var ontouchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
     
-    var ontouchstart: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+    var ontouchstart: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
     
-    val placeholder: js.UndefOr[String] = js.native
+    val placeholder: js.UndefOr[String] = js.undefined
     
-    val readOnly: js.UndefOr[Boolean] = js.native
+    val readOnly: js.UndefOr[Boolean] = js.undefined
     
-    val rel: js.UndefOr[String] = js.native
+    val rel: js.UndefOr[String] = js.undefined
     
-    val spellcheck: js.UndefOr[Boolean] = js.native
+    val spellcheck: js.UndefOr[Boolean] = js.undefined
     
-    val src: js.UndefOr[String] = js.native
+    val src: js.UndefOr[String] = js.undefined
     
-    val srcset: js.UndefOr[String] = js.native
+    val srcset: js.UndefOr[String] = js.undefined
     
     /**
       * An object literal like `{height:'100px'}` which allows styles to be changed dynamically. All values must be strings.
       */
-    val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
-    val tabIndex: js.UndefOr[Double] = js.native
+    val tabIndex: js.UndefOr[Double] = js.undefined
     
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
     
     /**
       * The animation to perform when the properties of this node change.
@@ -854,9 +850,9 @@ object interfacesMod {
           /* previousProperties */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val value: js.UndefOr[String] = js.native
+    val value: js.UndefOr[String] = js.undefined
   }
   object VNodeProperties {
     

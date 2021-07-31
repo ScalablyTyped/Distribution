@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEndpointConfigsInput extends StObject {
   
   /**
     * A filter that returns only endpoint configurations with a creation time greater than or equal to the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only endpoint configurations created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of training jobs to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A string in the endpoint configuration name. This filter returns only endpoint configurations whose name contains the specified string. 
     */
-  var NameContains: js.UndefOr[EndpointConfigNameContains] = js.native
+  var NameContains: js.UndefOr[EndpointConfigNameContains] = js.undefined
   
   /**
     * If the result of the previous ListEndpointConfig request was truncated, the response includes a NextToken. To retrieve the next set of endpoint configurations, use the token in the next request. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The field to sort results by. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[EndpointConfigSortKey] = js.native
+  var SortBy: js.UndefOr[EndpointConfigSortKey] = js.undefined
   
   /**
     * The sort order for results. The default is Descending.
     */
-  var SortOrder: js.UndefOr[OrderKey] = js.native
+  var SortOrder: js.UndefOr[OrderKey] = js.undefined
 }
 object ListEndpointConfigsInput {
   

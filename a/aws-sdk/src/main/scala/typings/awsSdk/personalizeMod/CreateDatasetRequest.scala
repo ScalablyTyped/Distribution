@@ -2,31 +2,29 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group to add the dataset to.
     */
-  var datasetGroupArn: Arn = js.native
+  var datasetGroupArn: Arn
   
   /**
     * The type of dataset. One of the following (case insensitive) values:   Interactions   Items   Users  
     */
-  var datasetType: DatasetType = js.native
+  var datasetType: DatasetType
   
   /**
     * The name for the dataset.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The ARN of the schema to associate with the dataset. The schema defines the dataset fields.
     */
-  var schemaArn: Arn = js.native
+  var schemaArn: Arn
 }
 object CreateDatasetRequest {
   

@@ -5,7 +5,6 @@ import typings.stylableWebpackPlugin.anon.ImportedNames
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableDependenciesMod {
@@ -55,17 +54,19 @@ object stylableDependenciesMod {
   /* static members */
   object StylableImportDependency {
     
-    @JSImport("@stylable/webpack-plugin/cjs/stylable-dependencies", "StylableImportDependency.createWeak")
+    @JSImport("@stylable/webpack-plugin/cjs/stylable-dependencies", "StylableImportDependency")
     @js.native
-    def createWeak(request: String, originModule: StylableModule, importDef: ImportDefinition): StylableImportDependency = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createWeak(request: String, originModule: StylableModule, importDef: ImportDefinition): StylableImportDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createWeak")(request.asInstanceOf[js.Any], originModule.asInstanceOf[js.Any], importDef.asInstanceOf[js.Any])).asInstanceOf[StylableImportDependency]
   }
   
-  @js.native
   trait ImportDefinition extends StObject {
     
-    var defaultImport: String = js.native
+    var defaultImport: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
   }
   object ImportDefinition {
     

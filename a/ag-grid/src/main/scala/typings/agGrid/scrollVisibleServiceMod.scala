@@ -2,7 +2,6 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollVisibleServiceMod {
@@ -36,14 +35,13 @@ object scrollVisibleServiceMod {
     def setScrollsVisible(params: SetScrollsVisibleParams): Unit = js.native
   }
   
-  @js.native
   trait SetScrollsVisibleParams extends StObject {
     
-    var bodyHorizontalScrollShowing: Boolean = js.native
+    var bodyHorizontalScrollShowing: Boolean
     
-    var leftVerticalScrollShowing: Boolean = js.native
+    var leftVerticalScrollShowing: Boolean
     
-    var rightVerticalScrollShowing: Boolean = js.native
+    var rightVerticalScrollShowing: Boolean
   }
   object SetScrollsVisibleParams {
     

@@ -2,24 +2,22 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalSuccessResponse extends StObject {
   
   // response headers
-  var headers: js.Object = js.native
+  var headers: js.Object
   
   //  request total use time (ms)
-  var rt: Double = js.native
+  var rt: Double
   
   // todo the object in detail
   // response size
-  var size: Double = js.native
+  var size: Double
   
   // response status
-  var status: Double = js.native
+  var status: Double
 }
 object NormalSuccessResponse {
   

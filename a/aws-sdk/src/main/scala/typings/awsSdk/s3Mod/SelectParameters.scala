@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectParameters extends StObject {
   
   /**
     * The expression that is used to query the object.
     */
-  var Expression: typings.awsSdk.s3Mod.Expression = js.native
+  var Expression: typings.awsSdk.s3Mod.Expression
   
   /**
     * The type of the provided expression (for example, SQL).
     */
-  var ExpressionType: typings.awsSdk.s3Mod.ExpressionType = js.native
+  var ExpressionType: typings.awsSdk.s3Mod.ExpressionType
   
   /**
     * Describes the serialization format of the object.
     */
-  var InputSerialization: typings.awsSdk.s3Mod.InputSerialization = js.native
+  var InputSerialization: typings.awsSdk.s3Mod.InputSerialization
   
   /**
     * Describes how the results of the Select job are serialized.
     */
-  var OutputSerialization: typings.awsSdk.s3Mod.OutputSerialization = js.native
+  var OutputSerialization: typings.awsSdk.s3Mod.OutputSerialization
 }
 object SelectParameters {
   

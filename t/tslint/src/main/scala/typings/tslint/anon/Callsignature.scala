@@ -2,21 +2,19 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callsignature extends StObject {
   
-  var `call-signature`: String = js.native
+  var `call-signature`: String
   
-  var `index-signature`: String = js.native
+  var `index-signature`: String
   
-  var parameter: String = js.native
+  var parameter: String
   
-  var `property-declaration`: String = js.native
+  var `property-declaration`: String
   
-  var `variable-declaration`: String = js.native
+  var `variable-declaration`: String
 }
 object Callsignature {
   

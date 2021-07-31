@@ -5,11 +5,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.anon.keyinPermissionPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
+trait PermissionsAndroidStatic
+  extends StObject
+     with Instantiable0[PermissionsAndroidStatic] {
   
   /**
     * A list of specified "dangerous" permissions that require prompting the user

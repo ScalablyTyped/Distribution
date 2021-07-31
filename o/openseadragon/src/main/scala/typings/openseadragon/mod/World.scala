@@ -6,12 +6,13 @@ import typings.std.Event
 import typings.std.EventSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "World")
 @js.native
-class World protected () extends EventSource {
+class World protected ()
+  extends StObject
+     with EventSource {
   def this(options: js.Object) = this()
   
   def addHandler(eventName: WorldEventName, callback: EventHandler[WorldEvent]): Unit = js.native
@@ -21,14 +22,9 @@ class World protected () extends EventSource {
   def addItem(item: TiledImage, options: Index): Unit = js.native
   
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent]): Unit = js.native
-  def addOnceHandler(
-    eventName: String,
-    handler: EventHandler[WorldEvent],
-    userData: js.UndefOr[scala.Nothing],
-    times: Double
-  ): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent], userData: js.Object, times: Double): Unit = js.native
+  def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent], userData: Unit, times: Double): Unit = js.native
   
   def arrange(options: Columns): Unit = js.native
   

@@ -2,14 +2,12 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.StickySettings._Impl, 'observeChanges'> */
-@js.native
 trait PickImplobserveChanges extends StObject {
   
-  var observeChanges: Boolean = js.native
+  var observeChanges: Boolean
 }
 object PickImplobserveChanges {
   

@@ -2,17 +2,17 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathConstraintMixTimeline extends CurveTimeline {
+trait PathConstraintMixTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  var pathConstraintIndex: Double = js.native
+  var pathConstraintIndex: Double
   
-  def setFrame(frameIndex: Double, time: Double, rotateMix: Double, translateMix: Double): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, rotateMix: Double, translateMix: Double): Unit
 }
 object PathConstraintMixTimeline {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TunnelSummary extends StObject {
   
   /**
     * The time the tunnel was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.native
+  var createdAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * A description of the tunnel.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The time the tunnel was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The status of a tunnel. Valid values are: Open and Closed.
     */
-  var status: js.UndefOr[TunnelStatus] = js.native
+  var status: js.UndefOr[TunnelStatus] = js.undefined
   
   /**
     * The Amazon Resource Name of the tunnel. The tunnel ARN format is arn:aws:tunnel:&lt;region&gt;:&lt;account-id&gt;:tunnel/&lt;tunnel-id&gt; 
     */
-  var tunnelArn: js.UndefOr[TunnelArn] = js.native
+  var tunnelArn: js.UndefOr[TunnelArn] = js.undefined
   
   /**
     * The unique alpha-numeric identifier for the tunnel.
     */
-  var tunnelId: js.UndefOr[TunnelId] = js.native
+  var tunnelId: js.UndefOr[TunnelId] = js.undefined
 }
 object TunnelSummary {
   

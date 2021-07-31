@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.openfin.anon.HttpResponseCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object desktop extends Shortcut {
@@ -16,7 +15,9 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Application")
   @js.native
-  class Application protected () extends OpenFinApplication {
+  class Application protected ()
+    extends StObject
+       with OpenFinApplication {
     /**
       * Creates a new Application.
       * An object representing an application. Allows the developer to create, execute, show/close an application as well as listen to application events.
@@ -25,12 +26,12 @@ object desktop extends Shortcut {
     def this(options: ApplicationOption, callback: js.Function1[/* successObj */ HttpResponseCode, Unit]) = this()
     def this(
       options: ApplicationOption,
-      callback: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* successObj */ HttpResponseCode, Unit],
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
     def this(
       options: ApplicationOption,
-      callback: js.Function1[/* successObj */ HttpResponseCode, Unit],
+      callback: Unit,
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
   }
@@ -38,7 +39,9 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Notification")
   @js.native
-  class Notification protected () extends OpenFinNotification {
+  class Notification protected ()
+    extends StObject
+       with OpenFinNotification {
     /**
       * ctor
       */
@@ -46,12 +49,12 @@ object desktop extends Shortcut {
     def this(options: NotificationOptions, callback: js.Function0[Unit]) = this()
     def this(
       options: NotificationOptions,
-      callback: js.UndefOr[scala.Nothing],
+      callback: js.Function0[Unit],
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
     def this(
       options: NotificationOptions,
-      callback: js.Function0[Unit],
+      callback: Unit,
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
   }
@@ -59,7 +62,9 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Window")
   @js.native
-  class Window protected () extends OpenFinWindow {
+  class Window protected ()
+    extends StObject
+       with OpenFinWindow {
     /**
       * Class: Window
       *
@@ -78,12 +83,12 @@ object desktop extends Shortcut {
     def this(options: WindowOption, callback: js.Function1[/* successObj */ HttpResponseCode, Unit]) = this()
     def this(
       options: WindowOption,
-      callback: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* successObj */ HttpResponseCode, Unit],
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
     def this(
       options: WindowOption,
-      callback: js.Function1[/* successObj */ HttpResponseCode, Unit],
+      callback: Unit,
       errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
     ) = this()
   }

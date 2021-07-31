@@ -4,19 +4,17 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushMessageData extends StObject {
   
-  def arrayBuffer(): ArrayBuffer = js.native
+  def arrayBuffer(): ArrayBuffer
   
-  def blob(): Blob = js.native
+  def blob(): Blob
   
-  def json(): js.Any = js.native
+  def json(): js.Any
   
-  def text(): String = js.native
+  def text(): String
 }
 object PushMessageData {
   

@@ -5,35 +5,35 @@ import typings.antvGBase.typesMod.Point
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageAnnotationCfg extends GroupComponentCfg {
+trait ImageAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 结束点
     * @type {Point}
     */
-  var end: js.UndefOr[Point] = js.native
+  var end: js.UndefOr[Point] = js.undefined
   
   /**
     * 图片地址
     * @type {string}
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * 起始点
     * @type {Point}
     */
-  var start: js.UndefOr[Point] = js.native
+  var start: js.UndefOr[Point] = js.undefined
   
   /**
     * 区域的样式
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object ImageAnnotationCfg {
   

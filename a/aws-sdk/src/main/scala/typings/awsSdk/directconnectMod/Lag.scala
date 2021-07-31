@@ -2,96 +2,94 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lag extends StObject {
   
   /**
     * Indicates whether the LAG can host other connections.
     */
-  var allowsHostedConnections: js.UndefOr[BooleanFlag] = js.native
+  var allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined
   
   /**
     * The AWS Direct Connect endpoint that hosts the LAG.
     */
-  var awsDevice: js.UndefOr[AwsDevice] = js.native
+  var awsDevice: js.UndefOr[AwsDevice] = js.undefined
   
   /**
     * The AWS Direct Connect endpoint that hosts the LAG.
     */
-  var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.native
+  var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
   
   /**
     * The connections bundled by the LAG.
     */
-  var connections: js.UndefOr[ConnectionList] = js.native
+  var connections: js.UndefOr[ConnectionList] = js.undefined
   
   /**
     * The individual bandwidth of the physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps. 
     */
-  var connectionsBandwidth: js.UndefOr[Bandwidth] = js.native
+  var connectionsBandwidth: js.UndefOr[Bandwidth] = js.undefined
   
   /**
     * Indicates whether the LAG supports a secondary BGP peer in the same address family (IPv4/IPv6).
     */
-  var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.native
+  var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.undefined
   
   /**
     * Indicates whether jumbo frames (9001 MTU) are supported.
     */
-  var jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.native
+  var jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined
   
   /**
     * The ID of the LAG.
     */
-  var lagId: js.UndefOr[LagId] = js.native
+  var lagId: js.UndefOr[LagId] = js.undefined
   
   /**
     * The name of the LAG.
     */
-  var lagName: js.UndefOr[LagName] = js.native
+  var lagName: js.UndefOr[LagName] = js.undefined
   
   /**
     * The state of the LAG. The following are the possible values:    requested: The initial state of a LAG. The LAG stays in the requested state until the Letter of Authorization (LOA) is available.    pending: The LAG has been approved and is being initialized.    available: The network link is established and the LAG is ready for use.    down: The network link is down.    deleting: The LAG is being deleted.    deleted: The LAG is deleted.    unknown: The state of the LAG is not available.  
     */
-  var lagState: js.UndefOr[LagState] = js.native
+  var lagState: js.UndefOr[LagState] = js.undefined
   
   /**
     * The location of the LAG.
     */
-  var location: js.UndefOr[LocationCode] = js.native
+  var location: js.UndefOr[LocationCode] = js.undefined
   
   /**
     * The minimum number of physical dedicated connections that must be operational for the LAG itself to be operational.
     */
-  var minimumLinks: js.UndefOr[Count] = js.native
+  var minimumLinks: js.UndefOr[Count] = js.undefined
   
   /**
     * The number of physical dedicated connections bundled by the LAG, up to a maximum of 10.
     */
-  var numberOfConnections: js.UndefOr[Count] = js.native
+  var numberOfConnections: js.UndefOr[Count] = js.undefined
   
   /**
     * The ID of the AWS account that owns the LAG.
     */
-  var ownerAccount: js.UndefOr[OwnerAccount] = js.native
+  var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The name of the service provider associated with the LAG.
     */
-  var providerName: js.UndefOr[ProviderName] = js.native
+  var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
     * The AWS Region where the connection is located.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     * The tags associated with the LAG.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object Lag {
   

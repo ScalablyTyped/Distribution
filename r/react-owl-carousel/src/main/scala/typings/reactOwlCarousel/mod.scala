@@ -95,7 +95,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -107,568 +106,567 @@ object mod {
   }
   
   /* Inlined std.Readonly<react.react.AllHTMLAttributes<std.HTMLDivElement> & {  children :react.react.ReactNode}> */
-  @js.native
   trait ComponentProps extends StObject {
     
-    val default: js.UndefOr[Boolean] = js.native
+    val default: js.UndefOr[Boolean] = js.undefined
     
-    val about: js.UndefOr[String] = js.native
+    val about: js.UndefOr[String] = js.undefined
     
-    val accept: js.UndefOr[String] = js.native
+    val accept: js.UndefOr[String] = js.undefined
     
-    val acceptCharset: js.UndefOr[String] = js.native
+    val acceptCharset: js.UndefOr[String] = js.undefined
     
-    val accessKey: js.UndefOr[String] = js.native
+    val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.native
+    val action: js.UndefOr[String] = js.undefined
     
-    val allowFullScreen: js.UndefOr[Boolean] = js.native
+    val allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
-    val allowTransparency: js.UndefOr[Boolean] = js.native
+    val allowTransparency: js.UndefOr[Boolean] = js.undefined
     
-    val alt: js.UndefOr[String] = js.native
+    val alt: js.UndefOr[String] = js.undefined
     
-    val `aria-activedescendant`: js.UndefOr[String] = js.native
+    val `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    val `aria-atomic`: js.UndefOr[Boolean] = js.native
+    val `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-autocomplete`: js.UndefOr[none | `inline` | typings.reactOwlCarousel.reactOwlCarouselStrings.list | both] = js.native
+    val `aria-autocomplete`: js.UndefOr[none | `inline` | typings.reactOwlCarousel.reactOwlCarouselStrings.list | both] = js.undefined
     
-    val `aria-busy`: js.UndefOr[Boolean] = js.native
+    val `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    val `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    val `aria-colcount`: js.UndefOr[Double] = js.native
+    val `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    val `aria-colindex`: js.UndefOr[Double] = js.native
+    val `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    val `aria-colspan`: js.UndefOr[Double] = js.native
+    val `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    val `aria-controls`: js.UndefOr[String] = js.native
+    val `aria-controls`: js.UndefOr[String] = js.undefined
     
     val `aria-current`: js.UndefOr[
         Boolean | page | typings.reactOwlCarousel.reactOwlCarouselStrings.step | location | date | time
-      ] = js.native
+      ] = js.undefined
     
-    val `aria-describedby`: js.UndefOr[String] = js.native
+    val `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    val `aria-details`: js.UndefOr[String] = js.native
+    val `aria-details`: js.UndefOr[String] = js.undefined
     
-    val `aria-disabled`: js.UndefOr[Boolean] = js.native
+    val `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    val `aria-errormessage`: js.UndefOr[String] = js.native
+    val `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    val `aria-expanded`: js.UndefOr[Boolean] = js.native
+    val `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-flowto`: js.UndefOr[String] = js.native
+    val `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    val `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    val `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    val `aria-hidden`: js.UndefOr[Boolean] = js.native
+    val `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    val `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    val `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    val `aria-label`: js.UndefOr[String] = js.native
+    val `aria-label`: js.UndefOr[String] = js.undefined
     
-    val `aria-labelledby`: js.UndefOr[String] = js.native
+    val `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    val `aria-level`: js.UndefOr[Double] = js.native
+    val `aria-level`: js.UndefOr[Double] = js.undefined
     
-    val `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    val `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    val `aria-modal`: js.UndefOr[Boolean] = js.native
+    val `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-multiline`: js.UndefOr[Boolean] = js.native
+    val `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    val `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    val `aria-owns`: js.UndefOr[String] = js.native
+    val `aria-owns`: js.UndefOr[String] = js.undefined
     
-    val `aria-placeholder`: js.UndefOr[String] = js.native
+    val `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    val `aria-posinset`: js.UndefOr[Double] = js.native
+    val `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    val `aria-readonly`: js.UndefOr[Boolean] = js.native
+    val `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     val `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    val `aria-required`: js.UndefOr[Boolean] = js.native
+    val `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-roledescription`: js.UndefOr[String] = js.native
+    val `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    val `aria-rowcount`: js.UndefOr[Double] = js.native
+    val `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    val `aria-rowindex`: js.UndefOr[Double] = js.native
+    val `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    val `aria-rowspan`: js.UndefOr[Double] = js.native
+    val `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    val `aria-selected`: js.UndefOr[Boolean] = js.native
+    val `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-setsize`: js.UndefOr[Double] = js.native
+    val `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    val `aria-valuemax`: js.UndefOr[Double] = js.native
+    val `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuemin`: js.UndefOr[Double] = js.native
+    val `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuenow`: js.UndefOr[Double] = js.native
+    val `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuetext`: js.UndefOr[String] = js.native
+    val `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    val as: js.UndefOr[String] = js.native
+    val as: js.UndefOr[String] = js.undefined
     
-    val async: js.UndefOr[Boolean] = js.native
+    val async: js.UndefOr[Boolean] = js.undefined
     
-    val autoCapitalize: js.UndefOr[String] = js.native
+    val autoCapitalize: js.UndefOr[String] = js.undefined
     
-    val autoComplete: js.UndefOr[String] = js.native
+    val autoComplete: js.UndefOr[String] = js.undefined
     
-    val autoCorrect: js.UndefOr[String] = js.native
+    val autoCorrect: js.UndefOr[String] = js.undefined
     
-    val autoFocus: js.UndefOr[Boolean] = js.native
+    val autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    val autoPlay: js.UndefOr[Boolean] = js.native
+    val autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    val autoSave: js.UndefOr[String] = js.native
+    val autoSave: js.UndefOr[String] = js.undefined
     
-    val capture: js.UndefOr[Boolean | String] = js.native
+    val capture: js.UndefOr[Boolean | String] = js.undefined
     
-    val cellPadding: js.UndefOr[Double | String] = js.native
+    val cellPadding: js.UndefOr[Double | String] = js.undefined
     
-    val cellSpacing: js.UndefOr[Double | String] = js.native
+    val cellSpacing: js.UndefOr[Double | String] = js.undefined
     
-    val challenge: js.UndefOr[String] = js.native
+    val challenge: js.UndefOr[String] = js.undefined
     
-    val charSet: js.UndefOr[String] = js.native
+    val charSet: js.UndefOr[String] = js.undefined
     
-    val checked: js.UndefOr[Boolean] = js.native
+    val checked: js.UndefOr[Boolean] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val cite: js.UndefOr[String] = js.native
+    val cite: js.UndefOr[String] = js.undefined
     
-    val classID: js.UndefOr[String] = js.native
+    val classID: js.UndefOr[String] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val colSpan: js.UndefOr[Double] = js.native
+    val colSpan: js.UndefOr[Double] = js.undefined
     
-    val color: js.UndefOr[String] = js.native
+    val color: js.UndefOr[String] = js.undefined
     
-    val cols: js.UndefOr[Double] = js.native
+    val cols: js.UndefOr[Double] = js.undefined
     
-    val content: js.UndefOr[String] = js.native
+    val content: js.UndefOr[String] = js.undefined
     
-    val contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    val contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    val contextMenu: js.UndefOr[String] = js.native
+    val contextMenu: js.UndefOr[String] = js.undefined
     
-    val controls: js.UndefOr[Boolean] = js.native
+    val controls: js.UndefOr[Boolean] = js.undefined
     
-    val coords: js.UndefOr[String] = js.native
+    val coords: js.UndefOr[String] = js.undefined
     
-    val crossOrigin: js.UndefOr[String] = js.native
+    val crossOrigin: js.UndefOr[String] = js.undefined
     
-    val dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    val data: js.UndefOr[String] = js.native
+    val data: js.UndefOr[String] = js.undefined
     
-    val datatype: js.UndefOr[String] = js.native
+    val datatype: js.UndefOr[String] = js.undefined
     
-    val dateTime: js.UndefOr[String] = js.native
+    val dateTime: js.UndefOr[String] = js.undefined
     
-    val defaultChecked: js.UndefOr[Boolean] = js.native
+    val defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    val defer: js.UndefOr[Boolean] = js.native
+    val defer: js.UndefOr[Boolean] = js.undefined
     
-    val dir: js.UndefOr[String] = js.native
+    val dir: js.UndefOr[String] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val download: js.UndefOr[js.Any] = js.native
+    val download: js.UndefOr[js.Any] = js.undefined
     
-    val draggable: js.UndefOr[Booleanish] = js.native
+    val draggable: js.UndefOr[Booleanish] = js.undefined
     
-    val encType: js.UndefOr[String] = js.native
+    val encType: js.UndefOr[String] = js.undefined
     
-    val form: js.UndefOr[String] = js.native
+    val form: js.UndefOr[String] = js.undefined
     
-    val formAction: js.UndefOr[String] = js.native
+    val formAction: js.UndefOr[String] = js.undefined
     
-    val formEncType: js.UndefOr[String] = js.native
+    val formEncType: js.UndefOr[String] = js.undefined
     
-    val formMethod: js.UndefOr[String] = js.native
+    val formMethod: js.UndefOr[String] = js.undefined
     
-    val formNoValidate: js.UndefOr[Boolean] = js.native
+    val formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    val formTarget: js.UndefOr[String] = js.native
+    val formTarget: js.UndefOr[String] = js.undefined
     
-    val frameBorder: js.UndefOr[Double | String] = js.native
+    val frameBorder: js.UndefOr[Double | String] = js.undefined
     
-    val headers: js.UndefOr[String] = js.native
+    val headers: js.UndefOr[String] = js.undefined
     
-    val height: js.UndefOr[Double | String] = js.native
+    val height: js.UndefOr[Double | String] = js.undefined
     
-    val hidden: js.UndefOr[Boolean] = js.native
+    val hidden: js.UndefOr[Boolean] = js.undefined
     
-    val high: js.UndefOr[Double] = js.native
+    val high: js.UndefOr[Double] = js.undefined
     
-    val href: js.UndefOr[String] = js.native
+    val href: js.UndefOr[String] = js.undefined
     
-    val hrefLang: js.UndefOr[String] = js.native
+    val hrefLang: js.UndefOr[String] = js.undefined
     
-    val htmlFor: js.UndefOr[String] = js.native
+    val htmlFor: js.UndefOr[String] = js.undefined
     
-    val httpEquiv: js.UndefOr[String] = js.native
+    val httpEquiv: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val inlist: js.UndefOr[js.Any] = js.native
+    val inlist: js.UndefOr[js.Any] = js.undefined
     
-    val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    val integrity: js.UndefOr[String] = js.native
+    val integrity: js.UndefOr[String] = js.undefined
     
-    val is: js.UndefOr[String] = js.native
+    val is: js.UndefOr[String] = js.undefined
     
-    val itemID: js.UndefOr[String] = js.native
+    val itemID: js.UndefOr[String] = js.undefined
     
-    val itemProp: js.UndefOr[String] = js.native
+    val itemProp: js.UndefOr[String] = js.undefined
     
-    val itemRef: js.UndefOr[String] = js.native
+    val itemRef: js.UndefOr[String] = js.undefined
     
-    val itemScope: js.UndefOr[Boolean] = js.native
+    val itemScope: js.UndefOr[Boolean] = js.undefined
     
-    val itemType: js.UndefOr[String] = js.native
+    val itemType: js.UndefOr[String] = js.undefined
     
-    val keyParams: js.UndefOr[String] = js.native
+    val keyParams: js.UndefOr[String] = js.undefined
     
-    val keyType: js.UndefOr[String] = js.native
+    val keyType: js.UndefOr[String] = js.undefined
     
-    val kind: js.UndefOr[String] = js.native
+    val kind: js.UndefOr[String] = js.undefined
     
-    val label: js.UndefOr[String] = js.native
+    val label: js.UndefOr[String] = js.undefined
     
-    val lang: js.UndefOr[String] = js.native
+    val lang: js.UndefOr[String] = js.undefined
     
-    val list: js.UndefOr[String] = js.native
+    val list: js.UndefOr[String] = js.undefined
     
-    val loop: js.UndefOr[Boolean] = js.native
+    val loop: js.UndefOr[Boolean] = js.undefined
     
-    val low: js.UndefOr[Double] = js.native
+    val low: js.UndefOr[Double] = js.undefined
     
-    val manifest: js.UndefOr[String] = js.native
+    val manifest: js.UndefOr[String] = js.undefined
     
-    val marginHeight: js.UndefOr[Double] = js.native
+    val marginHeight: js.UndefOr[Double] = js.undefined
     
-    val marginWidth: js.UndefOr[Double] = js.native
+    val marginWidth: js.UndefOr[Double] = js.undefined
     
-    val max: js.UndefOr[Double | String] = js.native
+    val max: js.UndefOr[Double | String] = js.undefined
     
-    val maxLength: js.UndefOr[Double] = js.native
+    val maxLength: js.UndefOr[Double] = js.undefined
     
-    val media: js.UndefOr[String] = js.native
+    val media: js.UndefOr[String] = js.undefined
     
-    val mediaGroup: js.UndefOr[String] = js.native
+    val mediaGroup: js.UndefOr[String] = js.undefined
     
-    val method: js.UndefOr[String] = js.native
+    val method: js.UndefOr[String] = js.undefined
     
-    val min: js.UndefOr[Double | String] = js.native
+    val min: js.UndefOr[Double | String] = js.undefined
     
-    val minLength: js.UndefOr[Double] = js.native
+    val minLength: js.UndefOr[Double] = js.undefined
     
-    val multiple: js.UndefOr[Boolean] = js.native
+    val multiple: js.UndefOr[Boolean] = js.undefined
     
-    val muted: js.UndefOr[Boolean] = js.native
+    val muted: js.UndefOr[Boolean] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val noValidate: js.UndefOr[Boolean] = js.native
+    val noValidate: js.UndefOr[Boolean] = js.undefined
     
-    val nonce: js.UndefOr[String] = js.native
+    val nonce: js.UndefOr[String] = js.undefined
     
-    val onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    val onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    val onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    val onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.native
+    val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.native
+    val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.native
+    val onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    val open: js.UndefOr[Boolean] = js.native
+    val open: js.UndefOr[Boolean] = js.undefined
     
-    val optimum: js.UndefOr[Double] = js.native
+    val optimum: js.UndefOr[Double] = js.undefined
     
-    val pattern: js.UndefOr[String] = js.native
+    val pattern: js.UndefOr[String] = js.undefined
     
-    val placeholder: js.UndefOr[String] = js.native
+    val placeholder: js.UndefOr[String] = js.undefined
     
-    val playsInline: js.UndefOr[Boolean] = js.native
+    val playsInline: js.UndefOr[Boolean] = js.undefined
     
-    val poster: js.UndefOr[String] = js.native
+    val poster: js.UndefOr[String] = js.undefined
     
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
-    val preload: js.UndefOr[String] = js.native
+    val preload: js.UndefOr[String] = js.undefined
     
-    val property: js.UndefOr[String] = js.native
+    val property: js.UndefOr[String] = js.undefined
     
-    val radioGroup: js.UndefOr[String] = js.native
+    val radioGroup: js.UndefOr[String] = js.undefined
     
-    val readOnly: js.UndefOr[Boolean] = js.native
+    val readOnly: js.UndefOr[Boolean] = js.undefined
     
-    val rel: js.UndefOr[String] = js.native
+    val rel: js.UndefOr[String] = js.undefined
     
-    val required: js.UndefOr[Boolean] = js.native
+    val required: js.UndefOr[Boolean] = js.undefined
     
-    val resource: js.UndefOr[String] = js.native
+    val resource: js.UndefOr[String] = js.undefined
     
-    val results: js.UndefOr[Double] = js.native
+    val results: js.UndefOr[Double] = js.undefined
     
-    val reversed: js.UndefOr[Boolean] = js.native
+    val reversed: js.UndefOr[Boolean] = js.undefined
     
-    val role: js.UndefOr[String] = js.native
+    val role: js.UndefOr[String] = js.undefined
     
-    val rowSpan: js.UndefOr[Double] = js.native
+    val rowSpan: js.UndefOr[Double] = js.undefined
     
-    val rows: js.UndefOr[Double] = js.native
+    val rows: js.UndefOr[Double] = js.undefined
     
-    val sandbox: js.UndefOr[String] = js.native
+    val sandbox: js.UndefOr[String] = js.undefined
     
-    val scope: js.UndefOr[String] = js.native
+    val scope: js.UndefOr[String] = js.undefined
     
-    val scoped: js.UndefOr[Boolean] = js.native
+    val scoped: js.UndefOr[Boolean] = js.undefined
     
-    val scrolling: js.UndefOr[String] = js.native
+    val scrolling: js.UndefOr[String] = js.undefined
     
-    val seamless: js.UndefOr[Boolean] = js.native
+    val seamless: js.UndefOr[Boolean] = js.undefined
     
-    val security: js.UndefOr[String] = js.native
+    val security: js.UndefOr[String] = js.undefined
     
-    val selected: js.UndefOr[Boolean] = js.native
+    val selected: js.UndefOr[Boolean] = js.undefined
     
-    val shape: js.UndefOr[String] = js.native
+    val shape: js.UndefOr[String] = js.undefined
     
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
     
-    val sizes: js.UndefOr[String] = js.native
+    val sizes: js.UndefOr[String] = js.undefined
     
-    val slot: js.UndefOr[String] = js.native
+    val slot: js.UndefOr[String] = js.undefined
     
-    val span: js.UndefOr[Double] = js.native
+    val span: js.UndefOr[Double] = js.undefined
     
-    val spellCheck: js.UndefOr[Booleanish] = js.native
+    val spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    val src: js.UndefOr[String] = js.native
+    val src: js.UndefOr[String] = js.undefined
     
-    val srcDoc: js.UndefOr[String] = js.native
+    val srcDoc: js.UndefOr[String] = js.undefined
     
-    val srcLang: js.UndefOr[String] = js.native
+    val srcLang: js.UndefOr[String] = js.undefined
     
-    val srcSet: js.UndefOr[String] = js.native
+    val srcSet: js.UndefOr[String] = js.undefined
     
-    val start: js.UndefOr[Double] = js.native
+    val start: js.UndefOr[Double] = js.undefined
     
-    val step: js.UndefOr[Double | String] = js.native
+    val step: js.UndefOr[Double | String] = js.undefined
     
-    val style: js.UndefOr[CSSProperties] = js.native
+    val style: js.UndefOr[CSSProperties] = js.undefined
     
-    val summary: js.UndefOr[String] = js.native
+    val summary: js.UndefOr[String] = js.undefined
     
-    val suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    val suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    val suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    val suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    val tabIndex: js.UndefOr[Double] = js.native
+    val tabIndex: js.UndefOr[Double] = js.undefined
     
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
     
-    val translate: js.UndefOr[yes | no] = js.native
+    val translate: js.UndefOr[yes | no] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
     
-    val typeof: js.UndefOr[String] = js.native
+    val typeof: js.UndefOr[String] = js.undefined
     
-    val unselectable: js.UndefOr[on | off] = js.native
+    val unselectable: js.UndefOr[on | off] = js.undefined
     
-    val useMap: js.UndefOr[String] = js.native
+    val useMap: js.UndefOr[String] = js.undefined
     
-    val value: js.UndefOr[String | js.Array[String] | Double] = js.native
+    val value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
-    val vocab: js.UndefOr[String] = js.native
+    val vocab: js.UndefOr[String] = js.undefined
     
-    val width: js.UndefOr[Double | String] = js.native
+    val width: js.UndefOr[Double | String] = js.undefined
     
-    val wmode: js.UndefOr[String] = js.native
+    val wmode: js.UndefOr[String] = js.undefined
     
-    val wrap: js.UndefOr[String] = js.native
+    val wrap: js.UndefOr[String] = js.undefined
   }
   object ComponentProps {
     
@@ -2360,729 +2358,728 @@ object mod {
   }
   
   /* Inlined react-owl-carousel.react-owl-carousel/umd/options.Options & react-owl-carousel.react-owl-carousel.ComponentProps */
-  @js.native
   trait OwlCarouselProps extends StObject {
     
-    val default: js.UndefOr[Boolean] = js.native
+    val default: js.UndefOr[Boolean] = js.undefined
     
-    var URLhashListener: js.UndefOr[Boolean] = js.native
+    var URLhashListener: js.UndefOr[Boolean] = js.undefined
     
-    val about: js.UndefOr[String] = js.native
+    val about: js.UndefOr[String] = js.undefined
     
-    val accept: js.UndefOr[String] = js.native
+    val accept: js.UndefOr[String] = js.undefined
     
-    val acceptCharset: js.UndefOr[String] = js.native
+    val acceptCharset: js.UndefOr[String] = js.undefined
     
-    val accessKey: js.UndefOr[String] = js.native
+    val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.native
+    val action: js.UndefOr[String] = js.undefined
     
-    val allowFullScreen: js.UndefOr[Boolean] = js.native
+    val allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
-    val allowTransparency: js.UndefOr[Boolean] = js.native
+    val allowTransparency: js.UndefOr[Boolean] = js.undefined
     
-    val alt: js.UndefOr[String] = js.native
+    val alt: js.UndefOr[String] = js.undefined
     
-    var animateIn: js.UndefOr[String | Boolean] = js.native
+    var animateIn: js.UndefOr[String | Boolean] = js.undefined
     
-    var animateOut: js.UndefOr[String | Boolean] = js.native
+    var animateOut: js.UndefOr[String | Boolean] = js.undefined
     
-    val `aria-activedescendant`: js.UndefOr[String] = js.native
+    val `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    val `aria-atomic`: js.UndefOr[Boolean] = js.native
+    val `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-autocomplete`: js.UndefOr[none | `inline` | typings.reactOwlCarousel.reactOwlCarouselStrings.list | both] = js.native
+    val `aria-autocomplete`: js.UndefOr[none | `inline` | typings.reactOwlCarousel.reactOwlCarouselStrings.list | both] = js.undefined
     
-    val `aria-busy`: js.UndefOr[Boolean] = js.native
+    val `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    val `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    val `aria-colcount`: js.UndefOr[Double] = js.native
+    val `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    val `aria-colindex`: js.UndefOr[Double] = js.native
+    val `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    val `aria-colspan`: js.UndefOr[Double] = js.native
+    val `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    val `aria-controls`: js.UndefOr[String] = js.native
+    val `aria-controls`: js.UndefOr[String] = js.undefined
     
     val `aria-current`: js.UndefOr[
         Boolean | page | typings.reactOwlCarousel.reactOwlCarouselStrings.step | location | date | time
-      ] = js.native
+      ] = js.undefined
     
-    val `aria-describedby`: js.UndefOr[String] = js.native
+    val `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    val `aria-details`: js.UndefOr[String] = js.native
+    val `aria-details`: js.UndefOr[String] = js.undefined
     
-    val `aria-disabled`: js.UndefOr[Boolean] = js.native
+    val `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    val `aria-errormessage`: js.UndefOr[String] = js.native
+    val `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    val `aria-expanded`: js.UndefOr[Boolean] = js.native
+    val `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-flowto`: js.UndefOr[String] = js.native
+    val `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    val `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    val `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    val `aria-hidden`: js.UndefOr[Boolean] = js.native
+    val `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    val `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    val `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    val `aria-label`: js.UndefOr[String] = js.native
+    val `aria-label`: js.UndefOr[String] = js.undefined
     
-    val `aria-labelledby`: js.UndefOr[String] = js.native
+    val `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    val `aria-level`: js.UndefOr[Double] = js.native
+    val `aria-level`: js.UndefOr[Double] = js.undefined
     
-    val `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    val `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    val `aria-modal`: js.UndefOr[Boolean] = js.native
+    val `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-multiline`: js.UndefOr[Boolean] = js.native
+    val `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    val `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    val `aria-owns`: js.UndefOr[String] = js.native
+    val `aria-owns`: js.UndefOr[String] = js.undefined
     
-    val `aria-placeholder`: js.UndefOr[String] = js.native
+    val `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    val `aria-posinset`: js.UndefOr[Double] = js.native
+    val `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    val `aria-readonly`: js.UndefOr[Boolean] = js.native
+    val `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     val `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    val `aria-required`: js.UndefOr[Boolean] = js.native
+    val `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-roledescription`: js.UndefOr[String] = js.native
+    val `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    val `aria-rowcount`: js.UndefOr[Double] = js.native
+    val `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    val `aria-rowindex`: js.UndefOr[Double] = js.native
+    val `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    val `aria-rowspan`: js.UndefOr[Double] = js.native
+    val `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    val `aria-selected`: js.UndefOr[Boolean] = js.native
+    val `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    val `aria-setsize`: js.UndefOr[Double] = js.native
+    val `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    val `aria-valuemax`: js.UndefOr[Double] = js.native
+    val `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuemin`: js.UndefOr[Double] = js.native
+    val `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuenow`: js.UndefOr[Double] = js.native
+    val `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    val `aria-valuetext`: js.UndefOr[String] = js.native
+    val `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    val as: js.UndefOr[String] = js.native
+    val as: js.UndefOr[String] = js.undefined
     
-    val async: js.UndefOr[Boolean] = js.native
+    val async: js.UndefOr[Boolean] = js.undefined
     
-    val autoCapitalize: js.UndefOr[String] = js.native
+    val autoCapitalize: js.UndefOr[String] = js.undefined
     
-    val autoComplete: js.UndefOr[String] = js.native
+    val autoComplete: js.UndefOr[String] = js.undefined
     
-    val autoCorrect: js.UndefOr[String] = js.native
+    val autoCorrect: js.UndefOr[String] = js.undefined
     
-    val autoFocus: js.UndefOr[Boolean] = js.native
+    val autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoHeightClass: js.UndefOr[String] = js.native
+    var autoHeightClass: js.UndefOr[String] = js.undefined
     
-    val autoPlay: js.UndefOr[Boolean] = js.native
+    val autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    val autoSave: js.UndefOr[String] = js.native
+    val autoSave: js.UndefOr[String] = js.undefined
     
-    var autoWidth: js.UndefOr[Boolean] = js.native
+    var autoWidth: js.UndefOr[Boolean] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var autoplayHoverPause: js.UndefOr[Boolean] = js.native
+    var autoplayHoverPause: js.UndefOr[Boolean] = js.undefined
     
-    var autoplaySpeed: js.UndefOr[Double | Boolean] = js.native
+    var autoplaySpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    var autoplayTimeout: js.UndefOr[Double] = js.native
+    var autoplayTimeout: js.UndefOr[Double] = js.undefined
     
-    var callbacks: js.UndefOr[Boolean] = js.native
+    var callbacks: js.UndefOr[Boolean] = js.undefined
     
-    val capture: js.UndefOr[Boolean | String] = js.native
+    val capture: js.UndefOr[Boolean | String] = js.undefined
     
-    val cellPadding: js.UndefOr[Double | String] = js.native
+    val cellPadding: js.UndefOr[Double | String] = js.undefined
     
-    val cellSpacing: js.UndefOr[Double | String] = js.native
+    val cellSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
-    val challenge: js.UndefOr[String] = js.native
+    val challenge: js.UndefOr[String] = js.undefined
     
-    val charSet: js.UndefOr[String] = js.native
+    val charSet: js.UndefOr[String] = js.undefined
     
-    val checked: js.UndefOr[Boolean] = js.native
+    val checked: js.UndefOr[Boolean] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val cite: js.UndefOr[String] = js.native
+    val cite: js.UndefOr[String] = js.undefined
     
-    val classID: js.UndefOr[String] = js.native
+    val classID: js.UndefOr[String] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val colSpan: js.UndefOr[Double] = js.native
+    val colSpan: js.UndefOr[Double] = js.undefined
     
-    val color: js.UndefOr[String] = js.native
+    val color: js.UndefOr[String] = js.undefined
     
-    val cols: js.UndefOr[Double] = js.native
+    val cols: js.UndefOr[Double] = js.undefined
     
-    val content: js.UndefOr[String] = js.native
+    val content: js.UndefOr[String] = js.undefined
     
-    val contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    val contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    val contextMenu: js.UndefOr[String] = js.native
+    val contextMenu: js.UndefOr[String] = js.undefined
     
-    val controls: js.UndefOr[Boolean] = js.native
+    val controls: js.UndefOr[Boolean] = js.undefined
     
-    var controlsClass: js.UndefOr[String] = js.native
+    var controlsClass: js.UndefOr[String] = js.undefined
     
-    val coords: js.UndefOr[String] = js.native
+    val coords: js.UndefOr[String] = js.undefined
     
-    val crossOrigin: js.UndefOr[String] = js.native
+    val crossOrigin: js.UndefOr[String] = js.undefined
     
-    val dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    val data: js.UndefOr[String] = js.native
+    val data: js.UndefOr[String] = js.undefined
     
-    val datatype: js.UndefOr[String] = js.native
+    val datatype: js.UndefOr[String] = js.undefined
     
-    val dateTime: js.UndefOr[String] = js.native
+    val dateTime: js.UndefOr[String] = js.undefined
     
-    val defaultChecked: js.UndefOr[Boolean] = js.native
+    val defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    val defer: js.UndefOr[Boolean] = js.native
+    val defer: js.UndefOr[Boolean] = js.undefined
     
-    val dir: js.UndefOr[String] = js.native
+    val dir: js.UndefOr[String] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dotClass: js.UndefOr[String] = js.native
+    var dotClass: js.UndefOr[String] = js.undefined
     
-    var dotData: js.UndefOr[Boolean] = js.native
+    var dotData: js.UndefOr[Boolean] = js.undefined
     
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
-    var dotsClass: js.UndefOr[String] = js.native
+    var dotsClass: js.UndefOr[String] = js.undefined
     
-    var dotsContainer: js.UndefOr[String | Boolean] = js.native
+    var dotsContainer: js.UndefOr[String | Boolean] = js.undefined
     
-    var dotsEach: js.UndefOr[Double | Boolean] = js.native
+    var dotsEach: js.UndefOr[Double | Boolean] = js.undefined
     
-    var dotsSpeed: js.UndefOr[Double | Boolean] = js.native
+    var dotsSpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    val download: js.UndefOr[js.Any] = js.native
+    val download: js.UndefOr[js.Any] = js.undefined
     
-    var dragClass: js.UndefOr[String] = js.native
+    var dragClass: js.UndefOr[String] = js.undefined
     
-    var dragEndSpeed: js.UndefOr[Double | Boolean] = js.native
+    var dragEndSpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    val draggable: js.UndefOr[Booleanish] = js.native
+    val draggable: js.UndefOr[Booleanish] = js.undefined
     
-    val encType: js.UndefOr[String] = js.native
+    val encType: js.UndefOr[String] = js.undefined
     
-    var fallbackEasing: js.UndefOr[String] = js.native
+    var fallbackEasing: js.UndefOr[String] = js.undefined
     
-    var fluidSpeed: js.UndefOr[Double | Boolean] = js.native
+    var fluidSpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    val form: js.UndefOr[String] = js.native
+    val form: js.UndefOr[String] = js.undefined
     
-    val formAction: js.UndefOr[String] = js.native
+    val formAction: js.UndefOr[String] = js.undefined
     
-    val formEncType: js.UndefOr[String] = js.native
+    val formEncType: js.UndefOr[String] = js.undefined
     
-    val formMethod: js.UndefOr[String] = js.native
+    val formMethod: js.UndefOr[String] = js.undefined
     
-    val formNoValidate: js.UndefOr[Boolean] = js.native
+    val formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    val formTarget: js.UndefOr[String] = js.native
+    val formTarget: js.UndefOr[String] = js.undefined
     
-    val frameBorder: js.UndefOr[Double | String] = js.native
+    val frameBorder: js.UndefOr[Double | String] = js.undefined
     
-    var freeDrag: js.UndefOr[Boolean] = js.native
+    var freeDrag: js.UndefOr[Boolean] = js.undefined
     
-    var grabClass: js.UndefOr[String] = js.native
+    var grabClass: js.UndefOr[String] = js.undefined
     
-    val headers: js.UndefOr[String] = js.native
+    val headers: js.UndefOr[String] = js.undefined
     
-    val height: js.UndefOr[Double | String] = js.native
+    val height: js.UndefOr[Double | String] = js.undefined
     
-    val hidden: js.UndefOr[Boolean] = js.native
+    val hidden: js.UndefOr[Boolean] = js.undefined
     
-    val high: js.UndefOr[Double] = js.native
+    val high: js.UndefOr[Double] = js.undefined
     
-    val href: js.UndefOr[String] = js.native
+    val href: js.UndefOr[String] = js.undefined
     
-    val hrefLang: js.UndefOr[String] = js.native
+    val hrefLang: js.UndefOr[String] = js.undefined
     
-    val htmlFor: js.UndefOr[String] = js.native
+    val htmlFor: js.UndefOr[String] = js.undefined
     
-    val httpEquiv: js.UndefOr[String] = js.native
+    val httpEquiv: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[HandlerCallback] = js.native
+    var info: js.UndefOr[HandlerCallback] = js.undefined
     
-    val inlist: js.UndefOr[js.Any] = js.native
+    val inlist: js.UndefOr[js.Any] = js.undefined
     
-    val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    val integrity: js.UndefOr[String] = js.native
+    val integrity: js.UndefOr[String] = js.undefined
     
-    val is: js.UndefOr[String] = js.native
+    val is: js.UndefOr[String] = js.undefined
     
-    var itemElement: js.UndefOr[String] = js.native
+    var itemElement: js.UndefOr[String] = js.undefined
     
-    val itemID: js.UndefOr[String] = js.native
+    val itemID: js.UndefOr[String] = js.undefined
     
-    val itemProp: js.UndefOr[String] = js.native
+    val itemProp: js.UndefOr[String] = js.undefined
     
-    val itemRef: js.UndefOr[String] = js.native
+    val itemRef: js.UndefOr[String] = js.undefined
     
-    val itemScope: js.UndefOr[Boolean] = js.native
+    val itemScope: js.UndefOr[Boolean] = js.undefined
     
-    val itemType: js.UndefOr[String] = js.native
+    val itemType: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[Double] = js.native
+    var items: js.UndefOr[Double] = js.undefined
     
-    val keyParams: js.UndefOr[String] = js.native
+    val keyParams: js.UndefOr[String] = js.undefined
     
-    val keyType: js.UndefOr[String] = js.native
+    val keyType: js.UndefOr[String] = js.undefined
     
-    val kind: js.UndefOr[String] = js.native
+    val kind: js.UndefOr[String] = js.undefined
     
-    val label: js.UndefOr[String] = js.native
+    val label: js.UndefOr[String] = js.undefined
     
-    val lang: js.UndefOr[String] = js.native
+    val lang: js.UndefOr[String] = js.undefined
     
-    var lazyContent: js.UndefOr[Boolean] = js.native
+    var lazyContent: js.UndefOr[Boolean] = js.undefined
     
-    var lazyLoad: js.UndefOr[Boolean] = js.native
+    var lazyLoad: js.UndefOr[Boolean] = js.undefined
     
-    val list: js.UndefOr[String] = js.native
+    val list: js.UndefOr[String] = js.undefined
     
-    var loadedClass: js.UndefOr[String] = js.native
+    var loadedClass: js.UndefOr[String] = js.undefined
     
-    var loadingClass: js.UndefOr[String] = js.native
+    var loadingClass: js.UndefOr[String] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    val low: js.UndefOr[Double] = js.native
+    val low: js.UndefOr[Double] = js.undefined
     
-    val manifest: js.UndefOr[String] = js.native
+    val manifest: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    val marginHeight: js.UndefOr[Double] = js.native
+    val marginHeight: js.UndefOr[Double] = js.undefined
     
-    val marginWidth: js.UndefOr[Double] = js.native
+    val marginWidth: js.UndefOr[Double] = js.undefined
     
-    val max: js.UndefOr[Double | String] = js.native
+    val max: js.UndefOr[Double | String] = js.undefined
     
-    val maxLength: js.UndefOr[Double] = js.native
+    val maxLength: js.UndefOr[Double] = js.undefined
     
-    val media: js.UndefOr[String] = js.native
+    val media: js.UndefOr[String] = js.undefined
     
-    val mediaGroup: js.UndefOr[String] = js.native
+    val mediaGroup: js.UndefOr[String] = js.undefined
     
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
     
-    var mergeFit: js.UndefOr[Boolean] = js.native
+    var mergeFit: js.UndefOr[Boolean] = js.undefined
     
-    val method: js.UndefOr[String] = js.native
+    val method: js.UndefOr[String] = js.undefined
     
-    val min: js.UndefOr[Double | String] = js.native
+    val min: js.UndefOr[Double | String] = js.undefined
     
-    val minLength: js.UndefOr[Double] = js.native
+    val minLength: js.UndefOr[Double] = js.undefined
     
-    var mouseDrag: js.UndefOr[Boolean] = js.native
+    var mouseDrag: js.UndefOr[Boolean] = js.undefined
     
-    val multiple: js.UndefOr[Boolean] = js.native
+    val multiple: js.UndefOr[Boolean] = js.undefined
     
-    val muted: js.UndefOr[Boolean] = js.native
+    val muted: js.UndefOr[Boolean] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var nav: js.UndefOr[Boolean] = js.native
+    var nav: js.UndefOr[Boolean] = js.undefined
     
-    var navClass: js.UndefOr[js.Array[String]] = js.native
+    var navClass: js.UndefOr[js.Array[String]] = js.undefined
     
-    var navContainer: js.UndefOr[String | Boolean] = js.native
+    var navContainer: js.UndefOr[String | Boolean] = js.undefined
     
-    var navContainerClass: js.UndefOr[String] = js.native
+    var navContainerClass: js.UndefOr[String] = js.undefined
     
-    var navElement: js.UndefOr[String] = js.native
+    var navElement: js.UndefOr[String] = js.undefined
     
-    var navSpeed: js.UndefOr[Double | Boolean] = js.native
+    var navSpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    var navText: js.UndefOr[js.Array[String]] = js.native
+    var navText: js.UndefOr[js.Array[String]] = js.undefined
     
-    var nestedItemSelector: js.UndefOr[String] = js.native
+    var nestedItemSelector: js.UndefOr[String] = js.undefined
     
-    val noValidate: js.UndefOr[Boolean] = js.native
+    val noValidate: js.UndefOr[Boolean] = js.undefined
     
-    val nonce: js.UndefOr[String] = js.native
+    val nonce: js.UndefOr[String] = js.undefined
     
-    val onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+    val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
-    val onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    val onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[HandlerCallback] with js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    var onChange: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]]
     
-    var onChanged: js.UndefOr[HandlerCallback] = js.native
+    var onChanged: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+    val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
-    val onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDrag: js.UndefOr[HandlerCallback] with js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    var onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]
     
-    val onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDragged: js.UndefOr[HandlerCallback] = js.native
+    var onDragged: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+    val onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
-    val onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    val onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onInitialize: js.UndefOr[HandlerCallback] = js.native
+    var onInitialize: js.UndefOr[HandlerCallback] = js.undefined
     
-    var onInitialized: js.UndefOr[HandlerCallback] = js.native
+    var onInitialized: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLoadLazy: js.UndefOr[HandlerCallback] = js.native
+    var onLoadLazy: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLoadedLazy: js.UndefOr[HandlerCallback] = js.native
+    var onLoadedLazy: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    val onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+    val onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onPlayVideo: js.UndefOr[HandlerCallback] = js.native
+    var onPlayVideo: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+    val onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
     
-    val onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onRefresh: js.UndefOr[HandlerCallback] = js.native
+    var onRefresh: js.UndefOr[HandlerCallback] = js.undefined
     
-    var onRefreshed: js.UndefOr[HandlerCallback] = js.native
+    var onRefreshed: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onResize: js.UndefOr[HandlerCallback] = js.native
+    var onResize: js.UndefOr[HandlerCallback] = js.undefined
     
-    var onResized: js.UndefOr[HandlerCallback] = js.native
+    var onResized: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.native
+    val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onStopVideo: js.UndefOr[HandlerCallback] = js.native
+    var onStopVideo: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+    val onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    val onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    val onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.native
+    val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTranslate: js.UndefOr[HandlerCallback] = js.native
+    var onTranslate: js.UndefOr[HandlerCallback] = js.undefined
     
-    var onTranslated: js.UndefOr[HandlerCallback] = js.native
+    var onTranslated: js.UndefOr[HandlerCallback] = js.undefined
     
-    val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+    val onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    val onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.native
+    val onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    val open: js.UndefOr[Boolean] = js.native
+    val open: js.UndefOr[Boolean] = js.undefined
     
-    val optimum: js.UndefOr[Double] = js.native
+    val optimum: js.UndefOr[Double] = js.undefined
     
-    val pattern: js.UndefOr[String] = js.native
+    val pattern: js.UndefOr[String] = js.undefined
     
-    val placeholder: js.UndefOr[String] = js.native
+    val placeholder: js.UndefOr[String] = js.undefined
     
-    val playsInline: js.UndefOr[Boolean] = js.native
+    val playsInline: js.UndefOr[Boolean] = js.undefined
     
-    val poster: js.UndefOr[String] = js.native
+    val poster: js.UndefOr[String] = js.undefined
     
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
-    val preload: js.UndefOr[String] = js.native
+    val preload: js.UndefOr[String] = js.undefined
     
-    val property: js.UndefOr[String] = js.native
+    val property: js.UndefOr[String] = js.undefined
     
-    var pullDrag: js.UndefOr[Boolean] = js.native
+    var pullDrag: js.UndefOr[Boolean] = js.undefined
     
-    val radioGroup: js.UndefOr[String] = js.native
+    val radioGroup: js.UndefOr[String] = js.undefined
     
-    val readOnly: js.UndefOr[Boolean] = js.native
+    val readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var refreshClass: js.UndefOr[String] = js.native
+    var refreshClass: js.UndefOr[String] = js.undefined
     
-    val rel: js.UndefOr[String] = js.native
+    val rel: js.UndefOr[String] = js.undefined
     
-    val required: js.UndefOr[Boolean] = js.native
+    val required: js.UndefOr[Boolean] = js.undefined
     
-    val resource: js.UndefOr[String] = js.native
+    val resource: js.UndefOr[String] = js.undefined
     
-    var responsive: js.UndefOr[StringDictionary[Options]] = js.native
+    var responsive: js.UndefOr[StringDictionary[Options]] = js.undefined
     
-    var responsiveBaseElement: js.UndefOr[Element] = js.native
+    var responsiveBaseElement: js.UndefOr[Element] = js.undefined
     
-    var responsiveClass: js.UndefOr[String | Boolean] = js.native
+    var responsiveClass: js.UndefOr[String | Boolean] = js.undefined
     
-    var responsiveRefreshRate: js.UndefOr[Double] = js.native
+    var responsiveRefreshRate: js.UndefOr[Double] = js.undefined
     
-    val results: js.UndefOr[Double] = js.native
+    val results: js.UndefOr[Double] = js.undefined
     
-    val reversed: js.UndefOr[Boolean] = js.native
+    val reversed: js.UndefOr[Boolean] = js.undefined
     
-    var rewind: js.UndefOr[Boolean] = js.native
+    var rewind: js.UndefOr[Boolean] = js.undefined
     
-    val role: js.UndefOr[String] = js.native
+    val role: js.UndefOr[String] = js.undefined
     
-    val rowSpan: js.UndefOr[Double] = js.native
+    val rowSpan: js.UndefOr[Double] = js.undefined
     
-    val rows: js.UndefOr[Double] = js.native
+    val rows: js.UndefOr[Double] = js.undefined
     
-    var rtlClass: js.UndefOr[String] = js.native
+    var rtlClass: js.UndefOr[String] = js.undefined
     
-    val sandbox: js.UndefOr[String] = js.native
+    val sandbox: js.UndefOr[String] = js.undefined
     
-    val scope: js.UndefOr[String] = js.native
+    val scope: js.UndefOr[String] = js.undefined
     
-    val scoped: js.UndefOr[Boolean] = js.native
+    val scoped: js.UndefOr[Boolean] = js.undefined
     
-    val scrolling: js.UndefOr[String] = js.native
+    val scrolling: js.UndefOr[String] = js.undefined
     
-    val seamless: js.UndefOr[Boolean] = js.native
+    val seamless: js.UndefOr[Boolean] = js.undefined
     
-    val security: js.UndefOr[String] = js.native
+    val security: js.UndefOr[String] = js.undefined
     
-    val selected: js.UndefOr[Boolean] = js.native
+    val selected: js.UndefOr[Boolean] = js.undefined
     
-    val shape: js.UndefOr[String] = js.native
+    val shape: js.UndefOr[String] = js.undefined
     
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
     
-    val sizes: js.UndefOr[String] = js.native
+    val sizes: js.UndefOr[String] = js.undefined
     
-    var slideBy: js.UndefOr[Double | String] = js.native
+    var slideBy: js.UndefOr[Double | String] = js.undefined
     
-    val slot: js.UndefOr[String] = js.native
+    val slot: js.UndefOr[String] = js.undefined
     
-    var smartSpeed: js.UndefOr[Double | Boolean] = js.native
+    var smartSpeed: js.UndefOr[Double | Boolean] = js.undefined
     
-    val span: js.UndefOr[Double] = js.native
+    val span: js.UndefOr[Double] = js.undefined
     
-    val spellCheck: js.UndefOr[Booleanish] = js.native
+    val spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    val src: js.UndefOr[String] = js.native
+    val src: js.UndefOr[String] = js.undefined
     
-    val srcDoc: js.UndefOr[String] = js.native
+    val srcDoc: js.UndefOr[String] = js.undefined
     
-    val srcLang: js.UndefOr[String] = js.native
+    val srcLang: js.UndefOr[String] = js.undefined
     
-    val srcSet: js.UndefOr[String] = js.native
+    val srcSet: js.UndefOr[String] = js.undefined
     
-    var stageClass: js.UndefOr[String] = js.native
+    var stageClass: js.UndefOr[String] = js.undefined
     
-    var stageElement: js.UndefOr[String] = js.native
+    var stageElement: js.UndefOr[String] = js.undefined
     
-    var stageOuterClass: js.UndefOr[String] = js.native
+    var stageOuterClass: js.UndefOr[String] = js.undefined
     
-    var stagePadding: js.UndefOr[Double] = js.native
+    var stagePadding: js.UndefOr[Double] = js.undefined
     
-    val start: js.UndefOr[Double] = js.native
+    val start: js.UndefOr[Double] = js.undefined
     
-    var startPosition: js.UndefOr[Double | String] = js.native
+    var startPosition: js.UndefOr[Double | String] = js.undefined
     
-    val step: js.UndefOr[Double | String] = js.native
+    val step: js.UndefOr[Double | String] = js.undefined
     
-    val style: js.UndefOr[CSSProperties] = js.native
+    val style: js.UndefOr[CSSProperties] = js.undefined
     
-    val summary: js.UndefOr[String] = js.native
+    val summary: js.UndefOr[String] = js.undefined
     
-    val suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    val suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    val suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    val suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    val tabIndex: js.UndefOr[Double] = js.native
+    val tabIndex: js.UndefOr[Double] = js.undefined
     
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
     
-    var touchDrag: js.UndefOr[Boolean] = js.native
+    var touchDrag: js.UndefOr[Boolean] = js.undefined
     
-    val translate: js.UndefOr[yes | no] = js.native
+    val translate: js.UndefOr[yes | no] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
     
-    val typeof: js.UndefOr[String] = js.native
+    val typeof: js.UndefOr[String] = js.undefined
     
-    val unselectable: js.UndefOr[on | off] = js.native
+    val unselectable: js.UndefOr[on | off] = js.undefined
     
-    val useMap: js.UndefOr[String] = js.native
+    val useMap: js.UndefOr[String] = js.undefined
     
-    val value: js.UndefOr[String | js.Array[String] | Double] = js.native
+    val value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
-    var video: js.UndefOr[Boolean] = js.native
+    var video: js.UndefOr[Boolean] = js.undefined
     
-    var videoHeight: js.UndefOr[Double | Boolean] = js.native
+    var videoHeight: js.UndefOr[Double | Boolean] = js.undefined
     
-    var videoWidth: js.UndefOr[Double | Boolean] = js.native
+    var videoWidth: js.UndefOr[Double | Boolean] = js.undefined
     
-    val vocab: js.UndefOr[String] = js.native
+    val vocab: js.UndefOr[String] = js.undefined
     
-    val width: js.UndefOr[Double | String] = js.native
+    val width: js.UndefOr[Double | String] = js.undefined
     
-    val wmode: js.UndefOr[String] = js.native
+    val wmode: js.UndefOr[String] = js.undefined
     
-    val wrap: js.UndefOr[String] = js.native
+    val wrap: js.UndefOr[String] = js.undefined
   }
   object OwlCarouselProps {
     
     @scala.inline
     def apply(
-      onChange: js.UndefOr[HandlerCallback] with js.UndefOr[FormEventHandler[HTMLDivElement]],
-      onDrag: js.UndefOr[HandlerCallback] with js.UndefOr[DragEventHandler[HTMLDivElement]]
+      onChange: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]],
+      onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]
     ): OwlCarouselProps = {
       val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any], onDrag = onDrag.asInstanceOf[js.Any])
       __obj.asInstanceOf[OwlCarouselProps]
@@ -3907,7 +3904,7 @@ object mod {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      def setInfo(value: HandlerCallback): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
@@ -4273,10 +4270,10 @@ object mod {
       def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
       @scala.inline
-      def setOnChange(value: js.UndefOr[HandlerCallback] with js.UndefOr[FormEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      def setOnChange(value: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnChanged(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+      def setOnChanged(value: HandlerCallback): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
@@ -4330,7 +4327,7 @@ object mod {
       def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
       @scala.inline
-      def setOnDrag(value: js.UndefOr[HandlerCallback] with js.UndefOr[DragEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
+      def setOnDrag(value: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragEnd(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
@@ -4369,7 +4366,7 @@ object mod {
       def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       @scala.inline
-      def setOnDragged(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDragged", js.Any.fromFunction1(value))
+      def setOnDragged(value: HandlerCallback): Self = StObject.set(x, "onDragged", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDraggedUndefined: Self = StObject.set(x, "onDragged", js.undefined)
@@ -4417,13 +4414,13 @@ object mod {
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnInitialize(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onInitialize", js.Any.fromFunction1(value))
+      def setOnInitialize(value: HandlerCallback): Self = StObject.set(x, "onInitialize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnInitializeUndefined: Self = StObject.set(x, "onInitialize", js.undefined)
       
       @scala.inline
-      def setOnInitialized(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
+      def setOnInitialized(value: HandlerCallback): Self = StObject.set(x, "onInitialized", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
@@ -4462,7 +4459,7 @@ object mod {
       def setOnLoad(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnLoadLazy(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onLoadLazy", js.Any.fromFunction1(value))
+      def setOnLoadLazy(value: HandlerCallback): Self = StObject.set(x, "onLoadLazy", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadLazyUndefined: Self = StObject.set(x, "onLoadLazy", js.undefined)
@@ -4483,7 +4480,7 @@ object mod {
       def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
       @scala.inline
-      def setOnLoadedLazy(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onLoadedLazy", js.Any.fromFunction1(value))
+      def setOnLoadedLazy(value: HandlerCallback): Self = StObject.set(x, "onLoadedLazy", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadedLazyUndefined: Self = StObject.set(x, "onLoadedLazy", js.undefined)
@@ -4555,7 +4552,7 @@ object mod {
       def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
       @scala.inline
-      def setOnPlayVideo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onPlayVideo", js.Any.fromFunction1(value))
+      def setOnPlayVideo(value: HandlerCallback): Self = StObject.set(x, "onPlayVideo", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPlayVideoUndefined: Self = StObject.set(x, "onPlayVideo", js.undefined)
@@ -4627,13 +4624,13 @@ object mod {
       def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
       @scala.inline
-      def setOnRefresh(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction1(value))
+      def setOnRefresh(value: HandlerCallback): Self = StObject.set(x, "onRefresh", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
       
       @scala.inline
-      def setOnRefreshed(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onRefreshed", js.Any.fromFunction1(value))
+      def setOnRefreshed(value: HandlerCallback): Self = StObject.set(x, "onRefreshed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnRefreshedUndefined: Self = StObject.set(x, "onRefreshed", js.undefined)
@@ -4645,13 +4642,13 @@ object mod {
       def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       @scala.inline
-      def setOnResize(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      def setOnResize(value: HandlerCallback): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       @scala.inline
-      def setOnResized(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onResized", js.Any.fromFunction1(value))
+      def setOnResized(value: HandlerCallback): Self = StObject.set(x, "onResized", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnResizedUndefined: Self = StObject.set(x, "onResized", js.undefined)
@@ -4687,7 +4684,7 @@ object mod {
       def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
       @scala.inline
-      def setOnStopVideo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onStopVideo", js.Any.fromFunction1(value))
+      def setOnStopVideo(value: HandlerCallback): Self = StObject.set(x, "onStopVideo", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnStopVideoUndefined: Self = StObject.set(x, "onStopVideo", js.undefined)
@@ -4741,13 +4738,13 @@ object mod {
       def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
       @scala.inline
-      def setOnTranslate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTranslate", js.Any.fromFunction1(value))
+      def setOnTranslate(value: HandlerCallback): Self = StObject.set(x, "onTranslate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTranslateUndefined: Self = StObject.set(x, "onTranslate", js.undefined)
       
       @scala.inline
-      def setOnTranslated(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTranslated", js.Any.fromFunction1(value))
+      def setOnTranslated(value: HandlerCallback): Self = StObject.set(x, "onTranslated", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTranslatedUndefined: Self = StObject.set(x, "onTranslated", js.undefined)

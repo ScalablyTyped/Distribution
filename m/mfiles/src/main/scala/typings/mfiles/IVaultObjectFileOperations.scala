@@ -6,17 +6,15 @@ import typings.mfiles.MFiles.MFLatestSpecificBehavior
 import typings.mfiles.MFiles.MFOCRZoneRecognitionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultObjectFileOperations extends StObject {
   
-  def AddEmptyFile(ObjVer: IObjVer, Title: String, Extension: String): IFileVer = js.native
+  def AddEmptyFile(ObjVer: IObjVer, Title: String, Extension: String): IFileVer
   
-  def AddFile(ObjVer: IObjVer, Title: String, Extension: String, SourcePath: String): IFileVer = js.native
+  def AddFile(ObjVer: IObjVer, Title: String, Extension: String, SourcePath: String): IFileVer
   
-  def CloseUploadSession(UploadID: Double): Unit = js.native
+  def CloseUploadSession(UploadID: Double): Unit
   
   def ConvertToPDF(
     ObjVer: IObjVer,
@@ -25,37 +23,37 @@ trait IVaultObjectFileOperations extends StObject {
     OverwriteExistingFile: Boolean,
     PDFA1b: Boolean,
     FailOnUnsupportedSourceFiles: Boolean
-  ): IObjectVersion = js.native
+  ): IObjectVersion
   
-  def DownloadFile(File: Double, FileVersion: Double, FilePath: String): Unit = js.native
+  def DownloadFile(File: Double, FileVersion: Double, FilePath: String): Unit
   
-  def DownloadFileAsDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double): String = js.native
+  def DownloadFileAsDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double): String
   
-  def DownloadFileEx(File: Double, FileVersion: Double, FilePath: String, FileFormat: MFFileFormat): Unit = js.native
+  def DownloadFileEx(File: Double, FileVersion: Double, FilePath: String, FileFormat: MFFileFormat): Unit
   
-  def DownloadFileInBlocks_Begin(File: Double, FileVersion: Double): IFileDownloadSession = js.native
+  def DownloadFileInBlocks_Begin(File: Double, FileVersion: Double): IFileDownloadSession
   
-  def DownloadFileInBlocks_BeginEx(File: Double, FileVersion: Double, FileFormat: MFFileFormat): IFileDownloadSession = js.native
+  def DownloadFileInBlocks_BeginEx(File: Double, FileVersion: Double, FileFormat: MFFileFormat): IFileDownloadSession
   
-  def DownloadFileInBlocks_BeginEx_32bit(File: Double, FileVersion: Double, FileFormat: MFFileFormat): IFileDownloadSession = js.native
+  def DownloadFileInBlocks_BeginEx_32bit(File: Double, FileVersion: Double, FileFormat: MFFileFormat): IFileDownloadSession
   
-  def DownloadFileInBlocks_Begin_32bit(File: Double, FileVersion: Double): IFileDownloadSession = js.native
+  def DownloadFileInBlocks_Begin_32bit(File: Double, FileVersion: Double): IFileDownloadSession
   
-  def DownloadFileInBlocks_ReadBlock(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double] = js.native
+  def DownloadFileInBlocks_ReadBlock(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double]
   
-  def DownloadFileInBlocks_ReadBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double] = js.native
+  def DownloadFileInBlocks_ReadBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double]
   
-  def GetFileSize(FileVer: IFileVer): Double = js.native
+  def GetFileSize(FileVer: IFileVer): Double
   
-  def GetFileSize_32bit(FileVer: IFileVer): Double = js.native
+  def GetFileSize_32bit(FileVer: IFileVer): Double
   
-  def GetFiles(ObjVer: IObjVer): IObjectFiles = js.native
+  def GetFiles(ObjVer: IObjVer): IObjectFiles
   
-  def GetFilesForModificationInEventHandler(ObjVer: IObjVer): IObjectFiles = js.native
+  def GetFilesForModificationInEventHandler(ObjVer: IObjVer): IObjectFiles
   
-  def GetLatestFileVersion(FileID: Double, AllowCheckedOut: Boolean): IFileVer = js.native
+  def GetLatestFileVersion(FileID: Double, AllowCheckedOut: Boolean): IFileVer
   
-  def GetObjIDOfFile(FileID: Double): IObjID = js.native
+  def GetObjIDOfFile(FileID: Double): IObjID
   
   def GetPathInDefaultView(
     ObjID: IObjID,
@@ -64,7 +62,7 @@ trait IVaultObjectFileOperations extends StObject {
     FileVersion: Double,
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     UpdateFromServer: Boolean
-  ): String = js.native
+  ): String
   
   def GetPathInDefaultViewEx(
     ObjID: IObjID,
@@ -74,9 +72,9 @@ trait IVaultObjectFileOperations extends StObject {
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     PreferTraditionalFolderLocation: Boolean,
     UpdateFromServer: Boolean
-  ): String = js.native
+  ): String
   
-  def OpenFileInDefaultApplication(ParentWindow: Double, ObjVer: IObjVer, FileVer: IFileVer, FileOpenMethod: MFFileOpenMethod): Unit = js.native
+  def OpenFileInDefaultApplication(ParentWindow: Double, ObjVer: IObjVer, FileVer: IFileVer, FileOpenMethod: MFFileOpenMethod): Unit
   
   def PerformOCROperation(
     ObjVer: IObjVer,
@@ -85,9 +83,9 @@ trait IVaultObjectFileOperations extends StObject {
     ZoneRecognitionMode: MFOCRZoneRecognitionMode,
     ZoneRecognitionPages: IOCRPages,
     ConvertToSearchablePDF: Boolean
-  ): IOCRPageResults = js.native
+  ): IOCRPageResults
   
-  def RemoveFile(ObjVer: IObjVer, FileVer: IFileVer): IObjectVersion = js.native
+  def RemoveFile(ObjVer: IObjVer, FileVer: IFileVer): IObjectVersion
   
   def RenameFile(
     ObjVer: IObjVer,
@@ -95,39 +93,39 @@ trait IVaultObjectFileOperations extends StObject {
     Title: String,
     Extension: String,
     UpdateSingleFileDocumentTitle: Boolean
-  ): IObjectVersion = js.native
+  ): IObjectVersion
   
-  def UpdateMetadataInFile(ObjVer: IObjVer, File: Double, FailOnUnsupportedFiles: Boolean): IObjectVersion = js.native
+  def UpdateMetadataInFile(ObjVer: IObjVer, File: Double, FailOnUnsupportedFiles: Boolean): IObjectVersion
   
-  def UploadFile(File: Double, FileVersion: Double, FilePath: String): Unit = js.native
+  def UploadFile(File: Double, FileVersion: Double, FilePath: String): Unit
   
-  def UploadFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
+  def UploadFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit
   
-  def UploadFileBlockBegin(): Double = js.native
+  def UploadFileBlockBegin(): Double
   
-  def UploadFileBlockBegin_32bit(): Double = js.native
+  def UploadFileBlockBegin_32bit(): Double
   
-  def UploadFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
+  def UploadFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit
   
-  def UploadFileCommit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit = js.native
+  def UploadFileCommit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit
   
-  def UploadFileCommit_32bit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit = js.native
+  def UploadFileCommit_32bit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit
   
-  def UploadFromDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double, DataURI: String): Unit = js.native
+  def UploadFromDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double, DataURI: String): Unit
   
-  def UploadTemporaryFile(FilePath: String): Double = js.native
+  def UploadTemporaryFile(FilePath: String): Double
   
-  def UploadTemporaryFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
+  def UploadTemporaryFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit
   
-  def UploadTemporaryFileBlockBegin(FileExtension: String): Double = js.native
+  def UploadTemporaryFileBlockBegin(FileExtension: String): Double
   
-  def UploadTemporaryFileBlockBegin_32bit(FileExtension: String): Double = js.native
+  def UploadTemporaryFileBlockBegin_32bit(FileExtension: String): Double
   
-  def UploadTemporaryFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
+  def UploadTemporaryFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit
   
-  def UploadTemporaryFileCommit(UploadID: Double, LogicalSize: Double): Unit = js.native
+  def UploadTemporaryFileCommit(UploadID: Double, LogicalSize: Double): Unit
   
-  def UploadTemporaryFileCommit_32bit(UploadID: Double, LogicalSize: Double): Unit = js.native
+  def UploadTemporaryFileCommit_32bit(UploadID: Double, LogicalSize: Double): Unit
 }
 object IVaultObjectFileOperations {
   

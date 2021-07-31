@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressBlockEditor.blockListMod.BlockList.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockListMod {
@@ -25,17 +24,16 @@ object blockListMod {
   
   object BlockList {
     
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A 'render prop' function that can be used to customize the block's appender.
         */
-      var renderAppender: js.UndefOr[js.Function0[Element]] = js.native
+      var renderAppender: js.UndefOr[js.Function0[Element]] = js.undefined
       
-      var rootClientId: js.UndefOr[String] = js.native
+      var rootClientId: js.UndefOr[String] = js.undefined
     }
     object Props {
       

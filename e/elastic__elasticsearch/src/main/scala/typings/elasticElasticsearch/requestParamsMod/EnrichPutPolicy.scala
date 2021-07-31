@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnrichPutPolicy[T] extends Generic {
+trait EnrichPutPolicy[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var name: String = js.native
+  var name: String
 }
 object EnrichPutPolicy {
   
@@ -21,7 +21,7 @@ object EnrichPutPolicy {
   }
   
   @scala.inline
-  implicit class EnrichPutPolicyMutableBuilder[Self <: EnrichPutPolicy[_], T] (val x: Self with EnrichPutPolicy[T]) extends AnyVal {
+  implicit class EnrichPutPolicyMutableBuilder[Self <: EnrichPutPolicy[?], T] (val x: Self & EnrichPutPolicy[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

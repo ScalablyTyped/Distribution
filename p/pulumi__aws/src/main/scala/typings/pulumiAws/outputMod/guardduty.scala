@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object guardduty {
   
-  @js.native
   trait FilterFindingCriteria extends StObject {
     
-    var criterions: js.Array[FilterFindingCriteriaCriterion] = js.native
+    var criterions: js.Array[FilterFindingCriteriaCriterion]
   }
   object FilterFindingCriteria {
     
@@ -31,44 +29,43 @@ object guardduty {
     }
   }
   
-  @js.native
   trait FilterFindingCriteriaCriterion extends StObject {
     
     /**
       * List of string values to be evaluated.
       */
     @JSName("equals")
-    var equals_FFilterFindingCriteriaCriterion: js.UndefOr[js.Array[String]] = js.native
+    var equals_FFilterFindingCriteriaCriterion: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the field to be evaluated. The full list of field names can be found in [AWS documentation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-findings.html#filter_criteria).
       */
-    var field: String = js.native
+    var field: String
     
     /**
       * A value to be evaluated. Accepts either an integer or a date in [RFC 3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    var greaterThan: js.UndefOr[String] = js.native
+    var greaterThan: js.UndefOr[String] = js.undefined
     
     /**
       * A value to be evaluated. Accepts either an integer or a date in [RFC 3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    var greaterThanOrEqual: js.UndefOr[String] = js.native
+    var greaterThanOrEqual: js.UndefOr[String] = js.undefined
     
     /**
       * A value to be evaluated. Accepts either an integer or a date in [RFC 3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    var lessThan: js.UndefOr[String] = js.native
+    var lessThan: js.UndefOr[String] = js.undefined
     
     /**
       * A value to be evaluated. Accepts either an integer or a date in [RFC 3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    var lessThanOrEqual: js.UndefOr[String] = js.native
+    var lessThanOrEqual: js.UndefOr[String] = js.undefined
     
     /**
       * List of string values to be evaluated.
       */
-    var notEquals: js.UndefOr[js.Array[String]] = js.native
+    var notEquals: js.UndefOr[js.Array[String]] = js.undefined
   }
   object FilterFindingCriteriaCriterion {
     

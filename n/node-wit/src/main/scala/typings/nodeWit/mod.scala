@@ -3,7 +3,6 @@ package typings.nodeWit
 import typings.nodeWit.mod.log.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,14 +46,13 @@ object mod {
     val WARN: String = js.native
   }
   
-  @js.native
   trait MessageResponse extends StObject {
     
-    var _text: String = js.native
+    var _text: String
     
-    var entities: js.Any = js.native
+    var entities: js.Any
     
-    var msg_id: String = js.native
+    var msg_id: String
   }
   object MessageResponse {
     
@@ -78,14 +76,13 @@ object mod {
     }
   }
   
-  @js.native
   trait MessageResponseEntity extends StObject {
     
-    var confidence: js.UndefOr[Double] = js.native
+    var confidence: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object MessageResponseEntity {
     
@@ -118,18 +115,17 @@ object mod {
     }
   }
   
-  @js.native
   trait WitContext extends StObject {
     
-    var entities: js.UndefOr[js.Array[WitEntity]] = js.native
+    var entities: js.UndefOr[js.Array[WitEntity]] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var reference_time: js.UndefOr[String] = js.native
+    var reference_time: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Array[String]] = js.native
+    var state: js.UndefOr[js.Array[String]] = js.undefined
     
-    var timezone: js.UndefOr[String] = js.native
+    var timezone: js.UndefOr[String] = js.undefined
   }
   object WitContext {
     
@@ -180,12 +176,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WitEntity extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Array[WitEntityValue]] = js.native
+    var values: js.UndefOr[js.Array[WitEntityValue]] = js.undefined
   }
   object WitEntity {
     
@@ -215,12 +210,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WitEntityValue extends StObject {
     
-    var expressions: js.UndefOr[js.Array[String]] = js.native
+    var expressions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object WitEntityValue {
     
@@ -250,14 +244,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WitOption extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var actions: js.UndefOr[js.Any] = js.native
+    var actions: js.UndefOr[js.Any] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
   }
   object WitOption {
     
@@ -287,16 +280,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WitRequest extends StObject {
     
-    var context: js.UndefOr[WitContext] = js.native
+    var context: js.UndefOr[WitContext] = js.undefined
     
-    var entities: js.UndefOr[js.Array[WitEntity]] = js.native
+    var entities: js.UndefOr[js.Array[WitEntity]] = js.undefined
     
-    var sessionId: js.UndefOr[String] = js.native
+    var sessionId: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object WitRequest {
     
@@ -338,12 +330,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WitResponse extends StObject {
     
-    var quickReplies: js.UndefOr[js.Any] = js.native
+    var quickReplies: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object WitResponse {
     

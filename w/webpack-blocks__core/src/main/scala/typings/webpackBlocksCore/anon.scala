@@ -3,15 +3,13 @@ package typings.webpackBlocksCore
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Test extends StObject {
     
-    var test: RegExp | js.Array[RegExp] = js.native
+    var test: RegExp | js.Array[RegExp]
   }
   object Test {
     

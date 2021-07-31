@@ -3,10 +3,8 @@ package typings.firefoxWebextBrowser.browser.manifest
 import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pkcs11
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stdio
-import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a native manifest file */
@@ -31,9 +29,9 @@ object NativeManifest {
   }
   
   @scala.inline
-  def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID, `type`: storage): typings.firefoxWebextBrowser.anon.Data = {
+  def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID): typings.firefoxWebextBrowser.anon.Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Data]
   }
 }

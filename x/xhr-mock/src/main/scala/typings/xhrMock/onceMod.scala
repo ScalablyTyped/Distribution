@@ -4,15 +4,16 @@ import typings.xhrMock.typesMod.MockFunction
 import typings.xhrMock.typesMod.MockObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onceMod {
   
-  @JSImport("xhr-mock/lib/utils/once", "once")
+  @JSImport("xhr-mock/lib/utils/once", JSImport.Namespace)
   @js.native
-  def once(mock: MockFunction): MockFunction = js.native
-  @JSImport("xhr-mock/lib/utils/once", "once")
-  @js.native
-  def once(mock: MockObject): MockFunction = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def once(mock: MockFunction): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
+  @scala.inline
+  def once(mock: MockObject): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
 }

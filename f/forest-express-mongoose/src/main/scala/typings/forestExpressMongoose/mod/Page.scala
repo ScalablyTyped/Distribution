@@ -2,15 +2,13 @@ package typings.forestExpressMongoose.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  var number: String = js.native
+  var number: String
   
-  var size: String = js.native
+  var size: String
 }
 object Page {
   

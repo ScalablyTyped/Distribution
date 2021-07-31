@@ -2,32 +2,30 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Frequency cap.
   */
-@js.native
 trait SchemaFrequencyCap extends StObject {
   
   /**
     * The maximum number of impressions that can be served to a user within the
     * specified time period.
     */
-  var maxImpressions: js.UndefOr[Double] = js.native
+  var maxImpressions: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of time, in the units specified by time_unit_type. Defines the
     * amount of time over which impressions per user are counted and capped.
     */
-  var numTimeUnits: js.UndefOr[Double] = js.native
+  var numTimeUnits: js.UndefOr[Double] = js.undefined
   
   /**
     * The time unit. Along with num_time_units defines the amount of time over
     * which impressions per user are counted and capped.
     */
-  var timeUnitType: js.UndefOr[String] = js.native
+  var timeUnitType: js.UndefOr[String] = js.undefined
 }
 object SchemaFrequencyCap {
   

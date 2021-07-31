@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Scheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofScheduler extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Scheduler = js.native
+  def extend(proto: js.Object): Scheduler
   
   /* static member */
-  var fn: Scheduler = js.native
+  var fn: Scheduler
 }
 object TypeofScheduler {
   

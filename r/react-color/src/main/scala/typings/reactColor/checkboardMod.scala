@@ -4,7 +4,6 @@ import typings.react.mod.ClassAttributes
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboardMod {
@@ -18,14 +17,15 @@ object checkboardMod {
   trait Checkboard
     extends Component[CheckboardProps, js.Object, js.Any]
   
-  @js.native
-  trait CheckboardProps extends ClassAttributes[Checkboard] {
+  trait CheckboardProps
+    extends StObject
+       with ClassAttributes[Checkboard] {
     
-    var grey: js.UndefOr[String] = js.native
+    var grey: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var white: js.UndefOr[String] = js.native
+    var white: js.UndefOr[String] = js.undefined
   }
   object CheckboardProps {
     

@@ -4,13 +4,11 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.left
 import typings.wechatMiniprogram.wechatMiniprogramStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: top | left = js.native
+  var direction: top | left
 }
 object Direction {
   

@@ -2,53 +2,51 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStateMachineOutput extends StObject {
   
   /**
     * The date the state machine is created.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
-  var definition: Definition = js.native
+  var definition: Definition
   
-  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
+  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
   /**
     * The name of the state machine. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used when creating this state machine. (The IAM role maintains security by granting Step Functions access to AWS resources.)
     */
-  var roleArn: Arn = js.native
+  var roleArn: Arn
   
   /**
     * The Amazon Resource Name (ARN) that identifies the state machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * The current status of the state machine.
     */
-  var status: js.UndefOr[StateMachineStatus] = js.native
+  var status: js.UndefOr[StateMachineStatus] = js.undefined
   
   /**
     * Selects whether AWS X-Ray tracing is enabled.
     */
-  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.native
+  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   
   /**
     * The type of the state machine (STANDARD or EXPRESS).
     */
-  var `type`: StateMachineType = js.native
+  var `type`: StateMachineType
 }
 object DescribeStateMachineOutput {
   

@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.JSXExpressionContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait JSXExpressionContainer_
-  extends Immutable
+- typings.babelTypes.mod._Node because Already inherited */ trait JSXExpressionContainer_
+  extends StObject
      with BaseNode
+     with Immutable
      with JSX {
   
-  var expression: Expression | JSXEmptyExpression_ = js.native
+  var expression: Expression | JSXEmptyExpression_
   
   @JSName("type")
-  var type_JSXExpressionContainer_ : JSXExpressionContainer = js.native
+  var type_JSXExpressionContainer_ : JSXExpressionContainer
 }
 object JSXExpressionContainer_ {
   
   @scala.inline
-  def apply(expression: Expression | JSXEmptyExpression_, `type`: JSXExpressionContainer): JSXExpressionContainer_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression | JSXEmptyExpression_): JSXExpressionContainer_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXExpressionContainer")
     __obj.asInstanceOf[JSXExpressionContainer_]
   }
   

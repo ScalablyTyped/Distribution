@@ -12,7 +12,6 @@ import typings.requestretry.anon.HTTPOrNetworkError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,42 +25,40 @@ object mod extends Shortcut {
   @js.native
   trait RequestPromise extends Request {
     
-    def `catch`[TResult](): js.Promise[_ | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[_ | TResult] = js.native
+    def `catch`[TResult](): js.Promise[js.Any | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[js.Any | TResult] = js.native
     @JSName("catch")
     var catch_Original: FnCallOnrejected = js.native
     
-    def promise(): js.Promise[_] = js.native
+    def promise(): js.Promise[js.Any] = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall = js.native
   }
   
-  @js.native
-  trait RequestRetryOptions extends CoreOptions {
+  trait RequestRetryOptions
+    extends StObject
+       with CoreOptions {
     
-    var delayStrategy: js.UndefOr[DelayStrategy] = js.native
+    var delayStrategy: js.UndefOr[DelayStrategy] = js.undefined
     
-    var fullResponse: js.UndefOr[Boolean] = js.native
+    var fullResponse: js.UndefOr[Boolean] = js.undefined
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var promiseFactory: js.UndefOr[js.Function1[/* resolver */ js.Any, _]] = js.native
+    var promiseFactory: js.UndefOr[js.Function1[/* resolver */ js.Any, js.Any]] = js.undefined
     
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   }
   object RequestRetryOptions {
     
@@ -93,7 +90,7 @@ object mod extends Shortcut {
       def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
       @scala.inline
-      def setPromiseFactory(value: /* resolver */ js.Any => _): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
+      def setPromiseFactory(value: /* resolver */ js.Any => js.Any): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPromiseFactoryUndefined: Self = StObject.set(x, "promiseFactory", js.undefined)
@@ -113,7 +110,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait RetryRequestAPI extends RequestAPI[RequestPromise, RequestRetryOptions, RequiredUriUrl] {
+  trait RetryRequestAPI
+    extends StObject
+       with RequestAPI[RequestPromise, RequestRetryOptions, RequiredUriUrl] {
     
     var RetryStrategies: HTTPOrNetworkError = js.native
   }

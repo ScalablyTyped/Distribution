@@ -6,19 +6,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** may be implemented to hide the complexity of creating a database catalog. */
-@js.native
-trait XCreateCatalog extends XInterface {
+trait XCreateCatalog
+  extends StObject
+     with XInterface {
   
   /**
     * creates the catalog by using a sequence of property values. The kind of properties depends on the provider.
     * @param info driver specific information
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def createCatalog(info: SeqEquiv[PropertyValue]): Unit = js.native
+  def createCatalog(info: SeqEquiv[PropertyValue]): Unit
 }
 object XCreateCatalog {
   

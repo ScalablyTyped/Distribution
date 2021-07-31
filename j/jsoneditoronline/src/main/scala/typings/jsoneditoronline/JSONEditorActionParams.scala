@@ -2,36 +2,34 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorActionParams extends StObject {
   
   @JSName("clone")
-  var clone_FJSONEditorActionParams: js.UndefOr[JSONEditorNode] = js.native
+  var clone_FJSONEditorActionParams: js.UndefOr[JSONEditorNode] = js.undefined
   
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
-  var endParent: js.UndefOr[JSONEditorNode] = js.native
+  var endParent: js.UndefOr[JSONEditorNode] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var newType: js.UndefOr[JSONEditorNodeType] = js.native
+  var newType: js.UndefOr[JSONEditorNodeType] = js.undefined
   
-  var newValue: js.UndefOr[String] = js.native
+  var newValue: js.UndefOr[String] = js.undefined
   
-  var node: js.UndefOr[JSONEditorNode] = js.native
+  var node: js.UndefOr[JSONEditorNode] = js.undefined
   
-  var oldType: js.UndefOr[JSONEditorNodeType] = js.native
+  var oldType: js.UndefOr[JSONEditorNodeType] = js.undefined
   
-  var oldValue: js.UndefOr[String] = js.native
+  var oldValue: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[JSONEditorNode] = js.native
+  var parent: js.UndefOr[JSONEditorNode] = js.undefined
   
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
-  var startParent: js.UndefOr[JSONEditorNode] = js.native
+  var startParent: js.UndefOr[JSONEditorNode] = js.undefined
 }
 object JSONEditorActionParams {
   

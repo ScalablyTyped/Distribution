@@ -2,29 +2,27 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldStatsResponseField extends StObject {
   
-  var density: Double = js.native
+  var density: Double
   
-  var doc_count: Double = js.native
+  var doc_count: Double
   
-  var is_aggregatable: String = js.native
+  var is_aggregatable: String
   
-  var is_searchable: String = js.native
+  var is_searchable: String
   
-  var max_doc: Double = js.native
+  var max_doc: Double
   
-  var max_value: js.Any = js.native
+  var max_value: js.Any
   
-  var min_value: js.Any = js.native
+  var min_value: js.Any
   
-  var sum_doc_freq: Double = js.native
+  var sum_doc_freq: Double
   
-  var sum_total_term_freq: Double = js.native
+  var sum_total_term_freq: Double
 }
 object FieldStatsResponseField {
   

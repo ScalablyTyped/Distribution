@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,14 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In addition the code will disconnect the VCL window the frame is based on from the container system window.
   */
-@js.native
-trait DocumentCloser extends XComponent {
+trait DocumentCloser
+  extends StObject
+     with XComponent {
   
   /**
     * is used to initialize the object on it's creation.
     * @param xFrame the frame of the document that should be closed.
     */
-  def DocumentCloserCtor1(xFrame: XFrame): Unit = js.native
+  def DocumentCloserCtor1(xFrame: XFrame): Unit
 }
 object DocumentCloser {
   

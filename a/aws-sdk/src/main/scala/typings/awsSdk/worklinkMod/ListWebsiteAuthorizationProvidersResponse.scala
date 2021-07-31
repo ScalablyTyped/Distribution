@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWebsiteAuthorizationProvidersResponse extends StObject {
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.worklinkMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.worklinkMod.NextToken] = js.undefined
   
   /**
     * The website authorization providers.
     */
-  var WebsiteAuthorizationProviders: js.UndefOr[WebsiteAuthorizationProvidersSummaryList] = js.native
+  var WebsiteAuthorizationProviders: js.UndefOr[WebsiteAuthorizationProvidersSummaryList] = js.undefined
 }
 object ListWebsiteAuthorizationProvidersResponse {
   

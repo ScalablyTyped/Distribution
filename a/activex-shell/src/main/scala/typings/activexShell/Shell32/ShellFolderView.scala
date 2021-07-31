@@ -2,7 +2,6 @@ package typings.activexShell.Shell32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Folder View Object */
@@ -35,9 +34,9 @@ trait ShellFolderView extends StObject {
   
   /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem): String = js.native
-  def PopupItemMenu(pfi: ShellFolderItem, vx: js.UndefOr[scala.Nothing], vy: js.Any): String = js.native
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any): String = js.native
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any, vy: js.Any): String = js.native
+  def PopupItemMenu(pfi: ShellFolderItem, vx: Unit, vy: js.Any): String = js.native
   
   /** Select the item */
   def SelectItem(pvfi: ShellFolderItem, dwFlags: ShellFolderViewSelectItem): Unit = js.native

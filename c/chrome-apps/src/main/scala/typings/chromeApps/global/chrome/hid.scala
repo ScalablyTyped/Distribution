@@ -8,7 +8,6 @@ import typings.chromeApps.chrome.integer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -29,15 +28,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object hid {
   
+  @JSGlobal("chrome.hid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Open a connection to an HID device for communication.
     * @param deviceId The HidDeviceInfo.deviceId of the device to open.
     * @param callback The callback function returns an object, containing the connectionId.
     *                 The connectionId is the opaque ID used to identify this connection in all other functions.
     */
-  @JSGlobal("chrome.hid.connect")
-  @js.native
-  def connect(deviceId: integer, callback: js.Function1[/* connection */ ConnectionId, Unit]): Unit = js.native
+  @scala.inline
+  def connect(deviceId: integer, callback: js.Function1[/* connection */ ConnectionId, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(deviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Disconnect from a device.
@@ -45,21 +47,18 @@ object hid {
     * @param connectionId The connectionId returned by connect.
     * @param [callback]
     */
-  @JSGlobal("chrome.hid.disconnect")
-  @js.native
-  def disconnect(connectionId: integer): Unit = js.native
-  @JSGlobal("chrome.hid.disconnect")
-  @js.native
-  def disconnect(connectionId: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def disconnect(connectionId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def disconnect(connectionId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enumerate connected HID devices.
     * @param options The properties to search for on target devices.
     * @param callback
     */
-  @JSGlobal("chrome.hid.getDevices")
-  @js.native
-  def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @requires(dev) **Dev channel only!**
@@ -73,9 +72,8 @@ object hid {
     * filters are provided devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @JSGlobal("chrome.hid.getUserSelectedDevices")
-  @js.native
-  def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = js.native
+  @scala.inline
+  def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * @since Chrome 45.
     * @requires(dev) **Dev channel only!**
@@ -89,12 +87,11 @@ object hid {
     * @param options Configuration of the device picker dialog box.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @JSGlobal("chrome.hid.getUserSelectedDevices")
-  @js.native
+  @scala.inline
   def getUserSelectedDevices(
     options: UserSelectedDevicePickerOptions,
     callback: js.Function1[/* devices */ HidDeviceInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Event generated when a device is added to the system.
@@ -126,12 +123,11 @@ object hid {
     *                      * reportId - The report ID or 0 if none.
     *                      * data - The report data, the report ID prefix (if present) is removed.
     */
-  @JSGlobal("chrome.hid.receive")
-  @js.native
+  @scala.inline
   def receive(
     connectionId: integer,
     callback: js.Function2[/* reportId */ integer, /* data */ ArrayBuffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receive")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Request a feature report from the device.
@@ -139,9 +135,8 @@ object hid {
     * @param reportId The report ID, or 0 if none.
     * @param callback Will provide `data` which contain the report data, including a report ID prefix if one is sent by the device.
     */
-  @JSGlobal("chrome.hid.receiveFeatureReport")
-  @js.native
-  def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = js.native
+  @scala.inline
+  def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send an output report to the device.
@@ -151,9 +146,8 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  @JSGlobal("chrome.hid.send")
-  @js.native
-  def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send a feature report to the device.
@@ -163,7 +157,6 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  @JSGlobal("chrome.hid.sendFeatureReport")
-  @js.native
-  def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

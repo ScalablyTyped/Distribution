@@ -4,27 +4,25 @@ import typings.overlayscrollbars.anon.Handle
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Elements extends StObject {
   
-  var content: HTMLElement = js.native
+  var content: HTMLElement
   
-  var host: HTMLElement = js.native
+  var host: HTMLElement
   
-  var padding: HTMLElement = js.native
+  var padding: HTMLElement
   
-  var scrollbarCorner: HTMLElement = js.native
+  var scrollbarCorner: HTMLElement
   
-  var scrollbarHorizontal: Handle = js.native
+  var scrollbarHorizontal: Handle
   
-  var scrollbarVertical: Handle = js.native
+  var scrollbarVertical: Handle
   
-  var target: HTMLElement = js.native
+  var target: HTMLElement
   
-  var viewport: HTMLElement = js.native
+  var viewport: HTMLElement
 }
 object Elements {
   

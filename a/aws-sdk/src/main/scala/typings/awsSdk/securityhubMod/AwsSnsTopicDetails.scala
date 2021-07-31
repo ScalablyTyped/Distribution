@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSnsTopicDetails extends StObject {
   
   /**
     * The ID of an AWS managed customer master key (CMK) for Amazon SNS or a custom CMK.
     */
-  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The subscription's owner.
     */
-  var Owner: js.UndefOr[NonEmptyString] = js.native
+  var Owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Subscription is an embedded property that describes the subscription endpoints of an Amazon SNS topic.
     */
-  var Subscription: js.UndefOr[AwsSnsTopicSubscriptionList] = js.native
+  var Subscription: js.UndefOr[AwsSnsTopicSubscriptionList] = js.undefined
   
   /**
     * The name of the topic.
     */
-  var TopicName: js.UndefOr[NonEmptyString] = js.native
+  var TopicName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsSnsTopicDetails {
   

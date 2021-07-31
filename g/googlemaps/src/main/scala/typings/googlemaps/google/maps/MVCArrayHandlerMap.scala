@@ -2,10 +2,8 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MVCArrayHandlerMap[C /* <: MVCArray[T] */, T] extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait MVCArrayHandlerMap[C /* <: MVCArray[T] */, T] extends StObject {
     * passed to {@link MVCArray.insertAt insertAt}().
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray.insert_at Maps JavaScript API}
     */
-  def insert_at(index: Double): Unit = js.native
+  def insert_at(index: Double): Unit
   
   /**
     * This event is fired when {@link MVCArray.removeAt removeAt}() is called. The event passes the index that was
     * passed to {@link MVCArray.removeAt removeAt}() and the element that was removed from the array.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray.remove_at Maps JavaScript API}
     */
-  def remove_at(index: Double, removed: T): Unit = js.native
+  def remove_at(index: Double, removed: T): Unit
   
   /**
     * This event is fired when {@link MVCArray.setAt setAt}() is called. The event passes the index that was passed
     * to {@link MVCArray.setAt setAt}() and the element that was previously in the array at that index.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray.set_at Maps JavaScript API}
     */
-  def set_at(index: Double, previous: T): Unit = js.native
+  def set_at(index: Double, previous: T): Unit
 }
 object MVCArrayHandlerMap {
   
@@ -38,7 +36,7 @@ object MVCArrayHandlerMap {
   }
   
   @scala.inline
-  implicit class MVCArrayHandlerMapMutableBuilder[Self <: MVCArrayHandlerMap[_, _], C /* <: MVCArray[T] */, T] (val x: Self with (MVCArrayHandlerMap[C, T])) extends AnyVal {
+  implicit class MVCArrayHandlerMapMutableBuilder[Self <: MVCArrayHandlerMap[?, ?], C /* <: MVCArray[T] */, T] (val x: Self & (MVCArrayHandlerMap[C, T])) extends AnyVal {
     
     @scala.inline
     def setInsert_at(value: Double => Unit): Self = StObject.set(x, "insert_at", js.Any.fromFunction1(value))

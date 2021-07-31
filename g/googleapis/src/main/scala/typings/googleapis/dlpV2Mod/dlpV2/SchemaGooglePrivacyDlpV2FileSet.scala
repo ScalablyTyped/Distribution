@@ -2,20 +2,18 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set of files to scan.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2FileSet extends StObject {
   
   /**
     * The regex-filtered set of files to scan. Exactly one of `url` or
     * `regex_file_set` must be set.
     */
-  var regexFileSet: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet] = js.native
+  var regexFileSet: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet] = js.undefined
   
   /**
     * The Cloud Storage url of the file(s) to scan, in the format
@@ -27,7 +25,7 @@ trait SchemaGooglePrivacyDlpV2FileSet extends StObject {
     * equivalent to `gs://mybucket/directory/x.  Exactly one of `url` or
     * `regex_file_set` must be set.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2FileSet {
   

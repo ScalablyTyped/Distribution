@@ -3,15 +3,14 @@ package typings.log4js.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAppender
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[js.Any]
      with Appender {
   
-  var `type`: String | AppenderModule = js.native
+  var `type`: String | AppenderModule
 }
 object CustomAppender {
   

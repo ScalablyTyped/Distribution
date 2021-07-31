@@ -2,23 +2,21 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPathConstraintPosit extends StObject {
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var PREV_VALUE: Double = js.native
+  var PREV_VALUE: Double
   
   /* static member */
-  var VALUE: Double = js.native
+  var VALUE: Double
 }
 object TypeofPathConstraintPosit {
   

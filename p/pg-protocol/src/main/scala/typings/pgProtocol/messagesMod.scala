@@ -4,15 +4,22 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "AuthenticationMD5Password")
   @js.native
-  class AuthenticationMD5Password protected () extends BackendMessage {
+  class AuthenticationMD5Password protected ()
+    extends StObject
+       with BackendMessage {
     def this(length: Double, salt: Buffer) = this()
+    
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /* CompleteClass */
+    var name: MessageName = js.native
     
     val salt: Buffer = js.native
   }
@@ -72,11 +79,11 @@ object messagesMod {
   @JSImport("pg-protocol/dist/messages", "DataRowMessage")
   @js.native
   class DataRowMessage protected () extends StObject {
-    def this(length: Double, fields: js.Array[_]) = this()
+    def this(length: Double, fields: js.Array[js.Any]) = this()
     
     val fieldCount: Double = js.native
     
-    var fields: js.Array[_] = js.native
+    var fields: js.Array[js.Any] = js.native
     
     var length: Double = js.native
     
@@ -86,7 +93,9 @@ object messagesMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pgProtocol.messagesMod.NoticeOrError because var conflicts: message. Inlined severity, code, detail, hint, position, internalPosition, internalQuery, where, schema, table, column, dataType, constraint, file, line, routine */ @JSImport("pg-protocol/dist/messages", "DatabaseError")
   @js.native
-  class DatabaseError protected () extends Error {
+  class DatabaseError protected ()
+    extends StObject
+       with Error {
     def this(message: String, length: Double, name: MessageName) = this()
     
     var code: js.UndefOr[String] = js.native
@@ -111,6 +120,11 @@ object messagesMod {
     
     var line: js.UndefOr[String] = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     val name_DatabaseError: MessageName = js.native
     
@@ -158,11 +172,17 @@ object messagesMod {
   @JSImport("pg-protocol/dist/messages", "NoticeMessage")
   @js.native
   class NoticeMessage protected ()
-    extends BackendMessage
+    extends StObject
+       with BackendMessage
        with NoticeOrError {
     def this(length: Double) = this()
     def this(length: Double, message: String) = this()
     
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /* CompleteClass */
+    var name: MessageName = js.native
     @JSName("name")
     val name_NoticeMessage: String | Double = js.native
   }
@@ -255,12 +275,11 @@ object messagesMod {
   @js.native
   val replicationStart: BackendMessage = js.native
   
-  @js.native
   trait BackendMessage extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: MessageName = js.native
+    var name: MessageName
   }
   object BackendMessage {
     
@@ -405,42 +424,41 @@ object messagesMod {
     def text: typings.pgProtocol.pgProtocolStrings.text = "text".asInstanceOf[typings.pgProtocol.pgProtocolStrings.text]
   }
   
-  @js.native
   trait NoticeOrError extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var column: js.UndefOr[String] = js.native
+    var column: js.UndefOr[String] = js.undefined
     
-    var constraint: js.UndefOr[String] = js.native
+    var constraint: js.UndefOr[String] = js.undefined
     
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var internalPosition: js.UndefOr[String] = js.native
+    var internalPosition: js.UndefOr[String] = js.undefined
     
-    var internalQuery: js.UndefOr[String] = js.native
+    var internalQuery: js.UndefOr[String] = js.undefined
     
-    var line: js.UndefOr[String] = js.native
+    var line: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var routine: js.UndefOr[String] = js.native
+    var routine: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[String] = js.native
+    var schema: js.UndefOr[String] = js.undefined
     
-    var severity: js.UndefOr[String] = js.native
+    var severity: js.UndefOr[String] = js.undefined
     
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
     
-    var where: js.UndefOr[String] = js.native
+    var where: js.UndefOr[String] = js.undefined
   }
   object NoticeOrError {
     

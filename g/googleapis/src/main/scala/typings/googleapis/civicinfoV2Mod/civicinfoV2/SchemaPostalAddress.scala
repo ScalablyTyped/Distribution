@@ -2,51 +2,49 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPostalAddress extends StObject {
   
-  var addressLines: js.UndefOr[js.Array[String]] = js.native
+  var addressLines: js.UndefOr[js.Array[String]] = js.undefined
   
-  var administrativeAreaName: js.UndefOr[String] = js.native
+  var administrativeAreaName: js.UndefOr[String] = js.undefined
   
-  var countryName: js.UndefOr[String] = js.native
+  var countryName: js.UndefOr[String] = js.undefined
   
-  var countryNameCode: js.UndefOr[String] = js.native
+  var countryNameCode: js.UndefOr[String] = js.undefined
   
-  var dependentLocalityName: js.UndefOr[String] = js.native
+  var dependentLocalityName: js.UndefOr[String] = js.undefined
   
-  var dependentThoroughfareName: js.UndefOr[String] = js.native
+  var dependentThoroughfareName: js.UndefOr[String] = js.undefined
   
-  var firmName: js.UndefOr[String] = js.native
+  var firmName: js.UndefOr[String] = js.undefined
   
-  var isDisputed: js.UndefOr[Boolean] = js.native
+  var isDisputed: js.UndefOr[Boolean] = js.undefined
   
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
-  var localityName: js.UndefOr[String] = js.native
+  var localityName: js.UndefOr[String] = js.undefined
   
-  var postBoxNumber: js.UndefOr[String] = js.native
+  var postBoxNumber: js.UndefOr[String] = js.undefined
   
-  var postalCodeNumber: js.UndefOr[String] = js.native
+  var postalCodeNumber: js.UndefOr[String] = js.undefined
   
-  var postalCodeNumberExtension: js.UndefOr[String] = js.native
+  var postalCodeNumberExtension: js.UndefOr[String] = js.undefined
   
-  var premiseName: js.UndefOr[String] = js.native
+  var premiseName: js.UndefOr[String] = js.undefined
   
-  var recipientName: js.UndefOr[String] = js.native
+  var recipientName: js.UndefOr[String] = js.undefined
   
-  var sortingCode: js.UndefOr[String] = js.native
+  var sortingCode: js.UndefOr[String] = js.undefined
   
-  var subAdministrativeAreaName: js.UndefOr[String] = js.native
+  var subAdministrativeAreaName: js.UndefOr[String] = js.undefined
   
-  var subPremiseName: js.UndefOr[String] = js.native
+  var subPremiseName: js.UndefOr[String] = js.undefined
   
-  var thoroughfareName: js.UndefOr[String] = js.native
+  var thoroughfareName: js.UndefOr[String] = js.undefined
   
-  var thoroughfareNumber: js.UndefOr[String] = js.native
+  var thoroughfareNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaPostalAddress {
   

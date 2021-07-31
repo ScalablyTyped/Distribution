@@ -2,16 +2,14 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBackupRequest extends StObject {
   
   /**
     * The ID of the backup to delete. Run the DescribeBackups command to get a list of backup IDs. Backup IDs are in the format ServerName-yyyyMMddHHmmssSSS. 
     */
-  var BackupId: typings.awsSdk.opsworkscmMod.BackupId = js.native
+  var BackupId: typings.awsSdk.opsworkscmMod.BackupId
 }
 object DeleteBackupRequest {
   

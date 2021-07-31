@@ -2,14 +2,12 @@ package typings.minilog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("minilog", JSImport.Namespace)
-  @js.native
-  def apply(namespace: String): Minilog = js.native
+  @scala.inline
+  def apply(namespace: String): Minilog = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Minilog]
   
   @JSImport("minilog", JSImport.Namespace)
   @js.native
@@ -113,17 +111,14 @@ object mod {
   @scala.inline
   def defaultFormatter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormatter")(x.asInstanceOf[js.Any])
   
-  @JSImport("minilog", "disable")
-  @js.native
-  def disable(): Minilog = js.native
+  @scala.inline
+  def disable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Minilog]
   
-  @JSImport("minilog", "enable")
-  @js.native
-  def enable(): Minilog = js.native
+  @scala.inline
+  def enable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Minilog]
   
-  @JSImport("minilog", "pipe")
-  @js.native
-  def pipe(dest: js.Any): Transform = js.native
+  @scala.inline
+  def pipe(dest: js.Any): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("minilog", "suggest")
   @js.native
@@ -131,18 +126,17 @@ object mod {
   @scala.inline
   def suggest_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suggest")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Minilog extends StObject {
     
-    def debug(msg: js.Any*): Minilog = js.native
+    def debug(msg: js.Any*): Minilog
     
-    def error(msg: js.Any*): Minilog = js.native
+    def error(msg: js.Any*): Minilog
     
-    def info(msg: js.Any*): Minilog = js.native
+    def info(msg: js.Any*): Minilog
     
-    def log(msg: js.Any*): Minilog = js.native
+    def log(msg: js.Any*): Minilog
     
-    def warn(msg: js.Any*): Minilog = js.native
+    def warn(msg: js.Any*): Minilog
   }
   object Minilog {
     
@@ -178,18 +172,17 @@ object mod {
     }
   }
   
-  @js.native
   trait MinilogBackends extends StObject {
     
-    var array: js.Any = js.native
+    var array: js.Any
     
-    var browser: js.Any = js.native
+    var browser: js.Any
     
-    var console: Console = js.native
+    var console: Console
     
-    var jQuery: js.Any = js.native
+    var jQuery: js.Any
     
-    var localstorage: js.Any = js.native
+    var localstorage: js.Any
   }
   object MinilogBackends {
     

@@ -6,7 +6,6 @@ import typings.chaiXml.mod.ChaiXml.XmlAssertion
 import typings.chaiXml.mod.global.Chai.Assertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,38 +16,39 @@ object mod extends Shortcut {
   
   object ChaiXml {
     
-    @js.native
-    trait XmlAssertion extends Assertion {
+    trait XmlAssertion
+      extends StObject
+         with Assertion {
       
-      var and: XmlAssertion = js.native
+      var and: XmlAssertion
       
-      var at: XmlAssertion = js.native
+      var at: XmlAssertion
       
-      var be: XmlAssertion = js.native
+      var be: XmlAssertion
       
-      var been: XmlAssertion = js.native
+      var been: XmlAssertion
       
-      var has: XmlAssertion = js.native
+      var has: XmlAssertion
       
-      var have: XmlAssertion = js.native
+      var have: XmlAssertion
       
-      var is: XmlAssertion = js.native
+      var is: XmlAssertion
       
-      var not: XmlAssertion = js.native
+      var not: XmlAssertion
       
-      var of: XmlAssertion = js.native
+      var of: XmlAssertion
       
-      var same: XmlAssertion = js.native
+      var same: XmlAssertion
       
-      var that: XmlAssertion = js.native
+      var that: XmlAssertion
       
-      var to: XmlAssertion = js.native
+      var to: XmlAssertion
       
-      def valid(): XmlAssertion = js.native
+      def valid(): XmlAssertion
       
-      var which: XmlAssertion = js.native
+      var which: XmlAssertion
       
-      var `with`: XmlAssertion = js.native
+      var `with`: XmlAssertion
     }
     object XmlAssertion {
       
@@ -136,10 +136,9 @@ object mod extends Shortcut {
     
     object Chai {
       
-      @js.native
       trait Assertion extends StObject {
         
-        var xml: XmlAssertion = js.native
+        var xml: XmlAssertion
       }
       object Assertion {
         

@@ -2,29 +2,27 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntitySet extends StObject {
   
   /**
     * Get entity type used for this entity set
     * @returns The DataJS object representing the entity type
     */
-  def getEntityType(): js.Any = js.native
+  def getEntityType(): js.Any
   
   /**
     * Get the fully qualified name for this entity type
     * @returns The fully qualified name
     */
-  def getQName(): String = js.native
+  def getQName(): String
   
   /**
     * Get full description for this entity set
     * @returns The DataJS object representing the entity set
     */
-  def getSetDescription(): js.Any = js.native
+  def getSetDescription(): js.Any
   
   /**
     * Get names of properties in this entity set that can be updated
@@ -33,7 +31,7 @@ trait EntitySet extends StObject {
     * <code>getUpdatablePropertyNameSet()[propertyName]</code>. The         included JS object properties
     * are all set to true.
     */
-  def getUpdatablePropertyNameSet(): js.Any = js.native
+  def getUpdatablePropertyNameSet(): js.Any
 }
 object EntitySet {
   

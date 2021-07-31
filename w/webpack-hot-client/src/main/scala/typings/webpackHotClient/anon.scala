@@ -10,40 +10,38 @@ import typings.webpackHotClient.webpackHotClientStrings.trace
 import typings.webpackHotClient.webpackHotClientStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<webpack-hot-client.webpack-hot-client.Options> */
-  @js.native
   trait ReadonlyOptions extends StObject {
     
-    val allEntries: js.UndefOr[Boolean] = js.native
+    val allEntries: js.UndefOr[Boolean] = js.undefined
     
-    val autoConfigure: js.UndefOr[Boolean] = js.native
+    val autoConfigure: js.UndefOr[Boolean] = js.undefined
     
-    val hmr: js.UndefOr[Boolean] = js.native
+    val hmr: js.UndefOr[Boolean] = js.undefined
     
-    val host: js.UndefOr[WebpackHotHost | String] = js.native
+    val host: js.UndefOr[WebpackHotHost | String] = js.undefined
     
-    val https: js.UndefOr[Boolean] = js.native
+    val https: js.UndefOr[Boolean] = js.undefined
     
-    val logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.native
+    val logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.undefined
     
-    val logTime: js.UndefOr[Boolean] = js.native
+    val logTime: js.UndefOr[Boolean] = js.undefined
     
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
     
-    val reload: js.UndefOr[Boolean] = js.native
+    val reload: js.UndefOr[Boolean] = js.undefined
     
-    val server: js.UndefOr[Server] = js.native
+    val server: js.UndefOr[Server] = js.undefined
     
     val stats: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    val validTargets: js.UndefOr[js.Array[String]] = js.native
+    val validTargets: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ReadonlyOptions {
     

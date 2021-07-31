@@ -6,19 +6,17 @@ import typings.braintreeWeb.braintreeWebStrings.`2-bootstrap3-modal`
 import typings.braintreeWeb.braintreeWebStrings.`2-inline-iframe`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  var authorization: js.UndefOr[String] = js.native
+  var authorization: js.UndefOr[String] = js.undefined
   
-  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.native
+  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.undefined
   
   var version: js.UndefOr[
     `1` | typings.braintreeWeb.braintreeWebStrings.`1` | `2` | typings.braintreeWeb.braintreeWebStrings.`2` | `2-bootstrap3-modal` | `2-inline-iframe`
-  ] = js.native
+  ] = js.undefined
 }
 object Version {
   

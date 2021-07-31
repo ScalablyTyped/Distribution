@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushSubscriptionJSON extends StObject {
   
-  var endpoint: js.UndefOr[java.lang.String] = js.native
+  var endpoint: js.UndefOr[java.lang.String] = js.undefined
   
-  var expirationTime: js.UndefOr[Double | Null] = js.native
+  var expirationTime: js.UndefOr[Double | Null] = js.undefined
   
-  var keys: js.UndefOr[Record[java.lang.String, java.lang.String]] = js.native
+  var keys: js.UndefOr[Record[java.lang.String, java.lang.String]] = js.undefined
 }
 object PushSubscriptionJSON {
   

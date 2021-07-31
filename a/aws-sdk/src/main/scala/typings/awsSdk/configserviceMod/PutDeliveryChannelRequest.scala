@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDeliveryChannelRequest extends StObject {
   
   /**
     * The configuration delivery channel object that delivers the configuration information to an Amazon S3 bucket and to an Amazon SNS topic.
     */
-  var DeliveryChannel: typings.awsSdk.configserviceMod.DeliveryChannel = js.native
+  var DeliveryChannel: typings.awsSdk.configserviceMod.DeliveryChannel
 }
 object PutDeliveryChannelRequest {
   

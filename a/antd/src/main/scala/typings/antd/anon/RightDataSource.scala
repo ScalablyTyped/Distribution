@@ -4,15 +4,13 @@ import typings.antd.transferMod.KeyWise
 import typings.antd.transferMod.TransferItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightDataSource[RecordType /* <: TransferItem */] extends StObject {
   
-  var leftDataSource: js.Array[KeyWise[RecordType]] = js.native
+  var leftDataSource: js.Array[KeyWise[RecordType]]
   
-  var rightDataSource: js.Array[KeyWise[RecordType]] = js.native
+  var rightDataSource: js.Array[KeyWise[RecordType]]
 }
 object RightDataSource {
   
@@ -23,7 +21,7 @@ object RightDataSource {
   }
   
   @scala.inline
-  implicit class RightDataSourceMutableBuilder[Self <: RightDataSource[_], RecordType /* <: TransferItem */] (val x: Self with RightDataSource[RecordType]) extends AnyVal {
+  implicit class RightDataSourceMutableBuilder[Self <: RightDataSource[?], RecordType /* <: TransferItem */] (val x: Self & RightDataSource[RecordType]) extends AnyVal {
     
     @scala.inline
     def setLeftDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])

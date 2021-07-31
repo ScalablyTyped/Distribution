@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Networking.EndpointPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returned when a WiFiDirectServiceSession.RemotePortAdded event is raised. Your event handler should use this information to establish new socket connections to the new port. */
-@js.native
 trait WiFiDirectServiceRemotePortAddedEventArgs extends StObject {
   
   /** Gets the endpoint pairs associated with the new remote port. */
-  var endpointPairs: IVectorView[EndpointPair] = js.native
+  var endpointPairs: IVectorView[EndpointPair]
   
   /** Gets the protocol used to communicate with the new remote port. */
-  var protocol: WiFiDirectServiceIPProtocol = js.native
+  var protocol: WiFiDirectServiceIPProtocol
 }
 object WiFiDirectServiceRemotePortAddedEventArgs {
   

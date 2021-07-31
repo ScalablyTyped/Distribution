@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import typings.maximMazurokGapiClientBigquery.anon.FriendlyName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectList extends StObject {
   
   /** A hash of the page of results */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The type of list. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A token to request the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Projects to which you have at least READ access. */
-  var projects: js.UndefOr[js.Array[FriendlyName]] = js.native
+  var projects: js.UndefOr[js.Array[FriendlyName]] = js.undefined
   
   /** The total number of projects in the list. */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object ProjectList {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface contains methods that can help to create and initialize an embedded object.
   */
-@js.native
-trait XEmbedObjectCreator extends XInterface {
+trait XEmbedObjectCreator
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object that should be based on specified storage entry.
@@ -36,7 +36,7 @@ trait XEmbedObjectCreator extends XInterface {
     sEntryName: String,
     aMediaDescriptor: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
   
   /**
     * creates a new object and initializes it based on {@link com.sun.star.document.MediaDescriptor} .
@@ -55,7 +55,7 @@ trait XEmbedObjectCreator extends XInterface {
     sEntryName: String,
     aMediaDescriptor: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
   
   /**
     * creates a new object and initializes it as a new one.
@@ -76,7 +76,7 @@ trait XEmbedObjectCreator extends XInterface {
     xStorage: XStorage,
     sEntryName: String,
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
 }
 object XEmbedObjectCreator {
   

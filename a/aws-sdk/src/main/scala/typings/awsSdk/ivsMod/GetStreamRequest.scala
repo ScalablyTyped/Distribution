@@ -2,16 +2,14 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStreamRequest extends StObject {
   
   /**
     * Channel ARN for stream to be accessed.
     */
-  var channelArn: ChannelArn = js.native
+  var channelArn: ChannelArn
 }
 object GetStreamRequest {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.mvdanSh.anon.BinaryNextLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,25 +19,32 @@ object mod extends Shortcut {
   object LangVariant extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LangVariant with Double] = js.native
+    def apply(value: Double): js.UndefOr[LangVariant & Double] = js.native
     
     @js.native
-    sealed trait LangBash extends LangVariant
-    /* 0 */ val LangBash: typings.mvdanSh.mod.LangVariant.LangBash with Double = js.native
+    sealed trait LangBash
+      extends StObject
+         with LangVariant
+    /* 0 */ val LangBash: typings.mvdanSh.mod.LangVariant.LangBash & Double = js.native
     
     @js.native
-    sealed trait LangMirBSDKorn extends LangVariant
-    /* 2 */ val LangMirBSDKorn: typings.mvdanSh.mod.LangVariant.LangMirBSDKorn with Double = js.native
+    sealed trait LangMirBSDKorn
+      extends StObject
+         with LangVariant
+    /* 2 */ val LangMirBSDKorn: typings.mvdanSh.mod.LangVariant.LangMirBSDKorn & Double = js.native
     
     @js.native
-    sealed trait LangPOSIX extends LangVariant
-    /* 1 */ val LangPOSIX: typings.mvdanSh.mod.LangVariant.LangPOSIX with Double = js.native
+    sealed trait LangPOSIX
+      extends StObject
+         with LangVariant
+    /* 1 */ val LangPOSIX: typings.mvdanSh.mod.LangVariant.LangPOSIX & Double = js.native
   }
   
-  @js.native
-  trait Command extends Node {
+  trait Command
+    extends StObject
+       with Node {
     
-    var OpPos: Pos = js.native
+    var OpPos: Pos
   }
   object Command {
     
@@ -56,12 +62,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Comment extends Node {
+  trait Comment
+    extends StObject
+       with Node {
     
-    var Hash: Pos = js.native
+    var Hash: Pos
     
-    var Text: String = js.native
+    var Text: String
   }
   object Comment {
     
@@ -82,14 +89,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait File extends Node {
+  trait File
+    extends StObject
+       with Node {
     
-    var Last: js.Array[Stmt] = js.native
+    var Last: js.Array[Stmt]
     
-    var Name: String = js.native
+    var Name: String
     
-    var Stmts: js.UndefOr[js.Array[Stmt]] = js.native
+    var Stmts: js.UndefOr[js.Array[Stmt]] = js.undefined
   }
   object File {
     
@@ -122,14 +130,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Lit extends Node {
+  trait Lit
+    extends StObject
+       with Node {
     
-    var Value: String = js.native
+    var Value: String
     
-    var ValueEnd: Pos = js.native
+    var ValueEnd: Pos
     
-    var ValuePos: Pos = js.native
+    var ValuePos: Pos
   }
   object Lit {
     
@@ -153,12 +162,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    def End(): Pos = js.native
+    def End(): Pos
     
-    def Pos(): typings.mvdanSh.mod.Pos = js.native
+    def Pos(): typings.mvdanSh.mod.Pos
   }
   object Node {
     
@@ -188,20 +196,19 @@ object mod extends Shortcut {
   
   type ParserOption = js.Function1[/* parser */ Parser, Unit]
   
-  @js.native
   trait Pos extends StObject {
     
-    def After(p: Pos): Boolean = js.native
+    def After(p: Pos): Boolean
     
-    def Col(): Double = js.native
+    def Col(): Double
     
-    def IsValid(): Boolean = js.native
+    def IsValid(): Boolean
     
-    def Line(): Double = js.native
+    def Line(): Double
     
-    def Offset(): Double = js.native
+    def Offset(): Double
     
-    def String(): java.lang.String = js.native
+    def String(): java.lang.String
   }
   object Pos {
     
@@ -241,10 +248,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Printer extends StObject {
     
-    def Print(node: Node): String = js.native
+    def Print(node: Node): String
   }
   object Printer {
     
@@ -264,10 +270,9 @@ object mod extends Shortcut {
   
   type PrinterOption = js.Function1[/* printer */ Printer, Unit]
   
-  @js.native
   trait ShellScript extends StObject {
     
-    var syntax: BinaryNextLine = js.native
+    var syntax: BinaryNextLine
   }
   object ShellScript {
     
@@ -285,22 +290,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Stmt extends Node {
+  trait Stmt
+    extends StObject
+       with Node {
     
-    var Background: Boolean = js.native
+    var Background: Boolean
     
-    var Cmd: Command = js.native
+    var Cmd: Command
     
-    var Comments: js.Array[Comment] = js.native
+    var Comments: js.Array[Comment]
     
-    var Coprocess: Boolean = js.native
+    var Coprocess: Boolean
     
-    var Negated: Boolean = js.native
+    var Negated: Boolean
     
-    var Position: Pos = js.native
+    var Position: Pos
     
-    var Semicolon: Pos = js.native
+    var Semicolon: Pos
   }
   object Stmt {
     
@@ -349,12 +355,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Word extends Node {
+  trait Word
+    extends StObject
+       with Node {
     
-    def Lit(): String = js.native
+    def Lit(): String
     
-    var Parts: js.Array[WordPart] = js.native
+    var Parts: js.Array[WordPart]
   }
   object Word {
     

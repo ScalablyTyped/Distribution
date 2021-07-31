@@ -3,15 +3,16 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.interfacesMod.IRGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssColorMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/cssColor", "cssColor")
+  @JSImport("office-ui-fabric-react/lib/utilities/color/cssColor", JSImport.Namespace)
   @js.native
-  def cssColor(): js.UndefOr[IRGB] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/cssColor", "cssColor")
-  @js.native
-  def cssColor(color: String): js.UndefOr[IRGB] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def cssColor(): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[IRGB]]
+  @scala.inline
+  def cssColor(color: String): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRGB]]
 }

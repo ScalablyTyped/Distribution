@@ -2,16 +2,14 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileProperties extends StObject {
   
   /**
     * File's URL
     */
-  var url: String = js.native
+  var url: String
 }
 object FileProperties {
   

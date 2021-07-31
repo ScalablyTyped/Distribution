@@ -5,18 +5,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an additional implementation for linked embedded object support. */
-@js.native
-trait XLinkageSupport extends XCommonEmbedPersist {
+trait XLinkageSupport
+  extends StObject
+     with XCommonEmbedPersist {
   
   /**
     * returns the URL of the link object.
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state or is not a link
     */
-  val LinkURL: String = js.native
+  val LinkURL: String
   
   /**
     * breaks the link and provides the object with a parent storage and a name for object's entry
@@ -37,13 +37,13 @@ trait XLinkageSupport extends XCommonEmbedPersist {
     * @throws com::sun::star::io::IOException in case object has not persistence or other io problems
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def breakLink(xStorage: XStorage, sEntryName: String): Unit = js.native
+  def breakLink(xStorage: XStorage, sEntryName: String): Unit
   
   /**
     * returns the URL of the link object.
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state or is not a link
     */
-  def getLinkURL(): String = js.native
+  def getLinkURL(): String
   
   /**
     * allows to detect whether the object is a linked one.
@@ -53,7 +53,7 @@ trait XLinkageSupport extends XCommonEmbedPersist {
     * @returns `TRUE` - the object is a linked one. `FALSE` - otherwise
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def isLink(): Boolean = js.native
+  def isLink(): Boolean
 }
 object XLinkageSupport {
   

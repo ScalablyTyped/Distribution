@@ -19,44 +19,44 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callbackApiMod {
   
-  @JSImport("amqplib/callback_api", "connect")
+  @JSImport("amqplib/callback_api", JSImport.Namespace)
   @js.native
-  def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
-  @JSImport("amqplib/callback_api", "connect")
-  @js.native
-  def connect(url: String, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
-  @JSImport("amqplib/callback_api", "connect")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def connect(url: String, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def connect(
     url: String,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
-  ): Unit = js.native
-  @JSImport("amqplib/callback_api", "connect")
-  @js.native
-  def connect(url: Connect, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
-  @JSImport("amqplib/callback_api", "connect")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def connect(url: Connect, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def connect(
     url: Connect,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object credentials {
     
-    @JSImport("amqplib/callback_api", "credentials.external")
+    @JSImport("amqplib/callback_api", "credentials")
     @js.native
-    def external(): Mechanism = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("amqplib/callback_api", "credentials.plain")
-    @js.native
-    def plain(username: String, password: String): Password = js.native
+    @scala.inline
+    def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
+    
+    @scala.inline
+    def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
   }
   
   @js.native
@@ -71,7 +71,7 @@ object callbackApiMod {
     def assertExchange(
       exchange: String,
       `type`: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ AssertExchange, Unit]
     ): Unit = js.native
     def assertExchange(exchange: String, `type`: String, options: typings.amqplib.propertiesMod.Options.AssertExchange): Unit = js.native
@@ -83,38 +83,23 @@ object callbackApiMod {
     ): Unit = js.native
     
     def assertQueue(): Unit = js.native
-    def assertQueue(
-      queue: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]
-    ): Unit = js.native
-    def assertQueue(queue: js.UndefOr[scala.Nothing], options: typings.amqplib.propertiesMod.Options.AssertQueue): Unit = js.native
-    def assertQueue(
-      queue: js.UndefOr[scala.Nothing],
-      options: typings.amqplib.propertiesMod.Options.AssertQueue,
-      callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]
-    ): Unit = js.native
     def assertQueue(queue: String): Unit = js.native
-    def assertQueue(
-      queue: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]
-    ): Unit = js.native
+    def assertQueue(queue: String, options: Unit, callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]): Unit = js.native
     def assertQueue(queue: String, options: typings.amqplib.propertiesMod.Options.AssertQueue): Unit = js.native
     def assertQueue(
       queue: String,
       options: typings.amqplib.propertiesMod.Options.AssertQueue,
       callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]
     ): Unit = js.native
+    def assertQueue(queue: Unit, options: Unit, callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]): Unit = js.native
+    def assertQueue(queue: Unit, options: typings.amqplib.propertiesMod.Options.AssertQueue): Unit = js.native
+    def assertQueue(
+      queue: Unit,
+      options: typings.amqplib.propertiesMod.Options.AssertQueue,
+      callback: js.Function2[/* err */ js.Any, /* ok */ AssertQueue, Unit]
+    ): Unit = js.native
     
     def bindExchange(destination: String, source: String, pattern: String): Unit = js.native
-    def bindExchange(
-      destination: String,
-      source: String,
-      pattern: String,
-      args: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
-    ): Unit = js.native
     def bindExchange(destination: String, source: String, pattern: String, args: js.Any): Unit = js.native
     def bindExchange(
       destination: String,
@@ -123,21 +108,28 @@ object callbackApiMod {
       args: js.Any,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
-    
-    def bindQueue(queue: String, source: String, pattern: String): Unit = js.native
-    def bindQueue(
-      queue: String,
+    def bindExchange(
+      destination: String,
       source: String,
       pattern: String,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
+    
+    def bindQueue(queue: String, source: String, pattern: String): Unit = js.native
     def bindQueue(queue: String, source: String, pattern: String, args: js.Any): Unit = js.native
     def bindQueue(
       queue: String,
       source: String,
       pattern: String,
       args: js.Any,
+      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+    ): Unit = js.native
+    def bindQueue(
+      queue: String,
+      source: String,
+      pattern: String,
+      args: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
     
@@ -156,7 +148,7 @@ object callbackApiMod {
     def consume(
       queue: String,
       onMessage: js.Function1[/* msg */ Message | Null, Unit],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Consume, Unit]
     ): Unit = js.native
     def consume(
@@ -172,11 +164,7 @@ object callbackApiMod {
     ): Unit = js.native
     
     def deleteExchange(exchange: String): Unit = js.native
-    def deleteExchange(
-      exchange: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
-    ): Unit = js.native
+    def deleteExchange(exchange: String, options: Unit, callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]): Unit = js.native
     def deleteExchange(exchange: String, options: DeleteExchange): Unit = js.native
     def deleteExchange(
       exchange: String,
@@ -185,11 +173,7 @@ object callbackApiMod {
     ): Unit = js.native
     
     def deleteQueue(queue: String): Unit = js.native
-    def deleteQueue(
-      queue: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ DeleteQueue, Unit]
-    ): Unit = js.native
+    def deleteQueue(queue: String, options: Unit, callback: js.Function2[/* err */ js.Any, /* ok */ DeleteQueue, Unit]): Unit = js.native
     def deleteQueue(queue: String, options: typings.amqplib.propertiesMod.Options.DeleteQueue): Unit = js.native
     def deleteQueue(
       queue: String,
@@ -202,7 +186,7 @@ object callbackApiMod {
     @JSName("get")
     def get_false(
       queue: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Message | `false`, Unit]
     ): Unit = js.native
     @JSName("get")
@@ -213,9 +197,9 @@ object callbackApiMod {
     ): Unit = js.native
     
     def nack(message: Message): Unit = js.native
-    def nack(message: Message, allUpTo: js.UndefOr[scala.Nothing], requeue: Boolean): Unit = js.native
     def nack(message: Message, allUpTo: Boolean): Unit = js.native
     def nack(message: Message, allUpTo: Boolean, requeue: Boolean): Unit = js.native
+    def nack(message: Message, allUpTo: Unit, requeue: Boolean): Unit = js.native
     
     def nackAll(): Unit = js.native
     def nackAll(requeue: Boolean): Unit = js.native
@@ -239,13 +223,6 @@ object callbackApiMod {
     def sendToQueue(queue: String, content: Buffer, options: Publish): Boolean = js.native
     
     def unbindExchange(destination: String, source: String, pattern: String): Unit = js.native
-    def unbindExchange(
-      destination: String,
-      source: String,
-      pattern: String,
-      args: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
-    ): Unit = js.native
     def unbindExchange(destination: String, source: String, pattern: String, args: js.Any): Unit = js.native
     def unbindExchange(
       destination: String,
@@ -254,21 +231,28 @@ object callbackApiMod {
       args: js.Any,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
-    
-    def unbindQueue(queue: String, source: String, pattern: String): Unit = js.native
-    def unbindQueue(
-      queue: String,
+    def unbindExchange(
+      destination: String,
       source: String,
       pattern: String,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
+    
+    def unbindQueue(queue: String, source: String, pattern: String): Unit = js.native
     def unbindQueue(queue: String, source: String, pattern: String, args: js.Any): Unit = js.native
     def unbindQueue(
       queue: String,
       source: String,
       pattern: String,
       args: js.Any,
+      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+    ): Unit = js.native
+    def unbindQueue(
+      queue: String,
+      source: String,
+      pattern: String,
+      args: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Unit = js.native
   }
@@ -280,7 +264,7 @@ object callbackApiMod {
       exchange: String,
       routingKey: String,
       content: Buffer,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     def publish(
@@ -294,7 +278,7 @@ object callbackApiMod {
     def sendToQueue(
       queue: String,
       content: Buffer,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     def sendToQueue(

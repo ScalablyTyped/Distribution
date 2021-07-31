@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessagePolicyViolationPolicyTip extends StObject {
   
   /**
     * The URL a user can visit to read about the data loss prevention policies for the organization. (ie, policies about what
     * users shouldn't say in chats)
     */
-  var complianceUrl: js.UndefOr[NullableOption[String]] = js.native
+  var complianceUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Explanatory text shown to the sender of the message.
-  var generalText: js.UndefOr[NullableOption[String]] = js.native
+  var generalText: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The list of improper data in the message that was detected by the data loss prevention app. Each DLP app defines its
     * own conditions, examples include 'Credit Card Number' and 'Social Security Number'.
     */
-  var matchedConditionDescriptions: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var matchedConditionDescriptions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object ChatMessagePolicyViolationPolicyTip {
   

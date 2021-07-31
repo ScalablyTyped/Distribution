@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enrichment. */
-@js.native
 trait Enrichment extends StObject {
   
   /** Describes what the enrichment step does. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Field where enrichments will be stored. This field must already exist or be at most 1 level deeper than an existing field. For example, if `text` is a top-level field with no sub-fields, `text.foo` is a valid destination but `text.foo.bar` is not. */
-  var destination_field: String = js.native
+  var destination_field: String
   
   /** Name of the enrichment service to call. Current options are `natural_language_understanding` and `elements`. When using `natual_language_understanding`, the **options** object must contain Natural Language Understanding options. When using `elements` the **options** object must contain Element Classification options. Additionally, when using the `elements` enrichment the configuration specified and files ingested must meet all the criteria specified in [the documentation](https://cloud.ibm.com/docs/services/discovery?topic=discovery-element-classification#element-classification). */
-  var enrichment_name: String = js.native
+  var enrichment_name: String
   
   /** If true, then most errors generated during the enrichment process will be treated as warnings and will not cause the document to fail processing. */
-  var ignore_downstream_errors: js.UndefOr[Boolean] = js.native
+  var ignore_downstream_errors: js.UndefOr[Boolean] = js.undefined
   
   /** An object representing the configuration options to use for the `elements` enrichment. */
-  var options: js.UndefOr[EnrichmentOptions] = js.native
+  var options: js.UndefOr[EnrichmentOptions] = js.undefined
   
   /** Indicates that the enrichments will overwrite the destination_field field if it already exists. */
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
   /** Field to be enriched. Arrays can be specified as the **source_field** if the **enrichment** service for this enrichment is set to `natural_language_undstanding`. */
-  var source_field: String = js.native
+  var source_field: String
 }
 object Enrichment {
   

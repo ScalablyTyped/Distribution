@@ -2,41 +2,39 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCheck extends StObject {
   
   /**
     * A unique string that you specified when you created the health check.
     */
-  var CallerReference: HealthCheckNonce = js.native
+  var CallerReference: HealthCheckNonce
   
   /**
     * A complex type that contains information about the CloudWatch alarm that Amazon Route 53 is monitoring for this health check.
     */
-  var CloudWatchAlarmConfiguration: js.UndefOr[typings.awsSdk.route53Mod.CloudWatchAlarmConfiguration] = js.native
+  var CloudWatchAlarmConfiguration: js.UndefOr[typings.awsSdk.route53Mod.CloudWatchAlarmConfiguration] = js.undefined
   
   /**
     * A complex type that contains detailed information about one health check.
     */
-  var HealthCheckConfig: typings.awsSdk.route53Mod.HealthCheckConfig = js.native
+  var HealthCheckConfig: typings.awsSdk.route53Mod.HealthCheckConfig
   
   /**
     * The version of the health check. You can optionally pass this value in a call to UpdateHealthCheck to prevent overwriting another change to the health check.
     */
-  var HealthCheckVersion: typings.awsSdk.route53Mod.HealthCheckVersion = js.native
+  var HealthCheckVersion: typings.awsSdk.route53Mod.HealthCheckVersion
   
   /**
     * The identifier that Amazon Route 53assigned to the health check when you created it. When you add or update a resource record set, you use this value to specify which health check to use. The value can be up to 64 characters long. 
     */
-  var Id: HealthCheckId = js.native
+  var Id: HealthCheckId
   
   /**
     * If the health check was created by another service, the service that created the health check. When a health check is created by another service, you can't edit or delete it using Amazon Route 53. 
     */
-  var LinkedService: js.UndefOr[typings.awsSdk.route53Mod.LinkedService] = js.native
+  var LinkedService: js.UndefOr[typings.awsSdk.route53Mod.LinkedService] = js.undefined
 }
 object HealthCheck {
   

@@ -6,7 +6,6 @@ import typings.materialUi.MaterialUI.propTypes.direction
 import typings.materialUi.MaterialUI.propTypes.tooltipHorizontal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiStrings {
@@ -43,32 +42,38 @@ object materialUiStrings {
   
   @js.native
   sealed trait bottom
-    extends typings.materialUi.MaterialUI.propTypes.vertical
+    extends StObject
+       with typings.materialUi.MaterialUI.propTypes.vertical
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-center` extends cornersAndCenter
+  sealed trait `bottom-center`
+    extends StObject
+       with cornersAndCenter
   @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
   sealed trait `bottom-left`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
   sealed trait `bottom-right`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
   sealed trait center
-    extends tooltipHorizontal
+    extends StObject
+       with tooltipHorizontal
        with typings.materialUi.MaterialUI.propTypes.vertical
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -84,7 +89,9 @@ object materialUiStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait down extends direction
+  sealed trait down
+    extends StObject
+       with direction
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
@@ -115,7 +122,8 @@ object materialUiStrings {
   
   @js.native
   sealed trait left
-    extends direction
+    extends StObject
+       with direction
        with typings.materialUi.MaterialUI.propTypes.horizontal
        with tooltipHorizontal
   @scala.inline
@@ -128,7 +136,8 @@ object materialUiStrings {
   
   @js.native
   sealed trait middle
-    extends typings.materialUi.MaterialUI.propTypes.horizontal
+    extends StObject
+       with typings.materialUi.MaterialUI.propTypes.horizontal
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
@@ -149,7 +158,8 @@ object materialUiStrings {
   
   @js.native
   sealed trait right
-    extends direction
+    extends StObject
+       with direction
        with typings.materialUi.MaterialUI.propTypes.horizontal
        with tooltipHorizontal
   @scala.inline
@@ -157,31 +167,38 @@ object materialUiStrings {
   
   @js.native
   sealed trait top
-    extends typings.materialUi.MaterialUI.propTypes.vertical
+    extends StObject
+       with typings.materialUi.MaterialUI.propTypes.vertical
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-center` extends cornersAndCenter
+  sealed trait `top-center`
+    extends StObject
+       with cornersAndCenter
   @scala.inline
   def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   
   @js.native
   sealed trait `top-left`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
   sealed trait `top-right`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait up extends direction
+  sealed trait up
+    extends StObject
+       with direction
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   

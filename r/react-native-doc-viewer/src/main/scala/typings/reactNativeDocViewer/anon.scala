@@ -2,19 +2,17 @@ package typings.reactNativeDocViewer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base64 extends StObject {
     
-    var base64: String = js.native
+    var base64: String
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
   }
   object Base64 {
     
@@ -44,18 +42,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Cache extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var fileNameOptional: js.UndefOr[String] = js.native
+    var fileNameOptional: js.UndefOr[String] = js.undefined
     
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Cache {
     
@@ -97,14 +94,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FileName extends StObject {
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object FileName {
     

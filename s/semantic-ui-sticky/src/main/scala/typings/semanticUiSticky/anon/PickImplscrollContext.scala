@@ -3,14 +3,12 @@ package typings.semanticUiSticky.anon
 import typings.semanticUiSticky.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.StickySettings._Impl, 'scrollContext'> */
-@js.native
 trait PickImplscrollContext extends StObject {
   
-  var scrollContext: String | JQuery = js.native
+  var scrollContext: String | JQuery
 }
 object PickImplscrollContext {
   

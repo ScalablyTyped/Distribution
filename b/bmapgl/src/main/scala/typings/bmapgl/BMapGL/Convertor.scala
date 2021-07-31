@@ -3,10 +3,8 @@ package typings.bmapgl.BMapGL
 import typings.bmapgl.anon.Points
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Convertor extends StObject {
   
   def translate(
@@ -14,7 +12,7 @@ trait Convertor extends StObject {
     from: Double,
     to: Double,
     callback: js.Function1[/* result */ Points, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Convertor {
   

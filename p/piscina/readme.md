@@ -12,7 +12,7 @@ A fast, efficient Node.js Worker Thread Pool implementation
 | Keywords           | fast, worker threads, thread pool, wade wilson |
 | # releases         | 16 |
 | # dependents       | 9 |
-| # downloads        | 130602 |
+| # downloads        | 163364 |
 | # stars            | 1 |
 
 ## Links

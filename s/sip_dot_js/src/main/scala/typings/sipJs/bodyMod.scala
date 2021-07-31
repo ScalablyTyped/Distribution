@@ -5,36 +5,31 @@ import typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
 import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyMod {
   
-  @JSImport("sip.js/lib/core/messages/body", "fromBodyLegacy")
+  @JSImport("sip.js/lib/core/messages/body", JSImport.Namespace)
   @js.native
-  def fromBodyLegacy(bodyLegacy: String): Body = js.native
-  @JSImport("sip.js/lib/core/messages/body", "fromBodyLegacy")
-  @js.native
-  def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sip.js/lib/core/messages/body", "getBody")
-  @js.native
-  def getBody(message: Body): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages/body", "getBody")
-  @js.native
-  def getBody(message: IncomingRequestMessage): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages/body", "getBody")
-  @js.native
-  def getBody(message: IncomingResponseMessage): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages/body", "getBody")
-  @js.native
-  def getBody(message: OutgoingRequestMessage): js.UndefOr[Body] = js.native
+  @scala.inline
+  def fromBodyLegacy(bodyLegacy: String): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]
+  @scala.inline
+  def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]
   
-  @JSImport("sip.js/lib/core/messages/body", "isBody")
-  @js.native
-  def isBody(body: js.Any): /* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean = js.native
+  @scala.inline
+  def getBody(message: Body): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: IncomingRequestMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: IncomingResponseMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: OutgoingRequestMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
   
-  @js.native
+  @scala.inline
+  def isBody(body: js.Any): /* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBody")(body.asInstanceOf[js.Any]).asInstanceOf[/* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean]
+  
   trait Body extends StObject {
     
     /**
@@ -46,7 +41,7 @@ object bodyMod {
       * responses MAY include a body.
       * https://tools.ietf.org/html/rfc3261#section-7.4
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * If the Content-Disposition header field is missing, bodies of
@@ -59,7 +54,7 @@ object bodyMod {
       * types are "render".
       * https://tools.ietf.org/html/rfc3261#section-20.11
       */
-    var contentDisposition: String = js.native
+    var contentDisposition: String
     
     /**
       * The Content-Type header field indicates the media type of the
@@ -69,7 +64,7 @@ object bodyMod {
       * of the specific type has zero length (for example, an empty audio file).
       * https://tools.ietf.org/html/rfc3261#section-20.15
       */
-    var contentType: String = js.native
+    var contentType: String
   }
   object Body {
     

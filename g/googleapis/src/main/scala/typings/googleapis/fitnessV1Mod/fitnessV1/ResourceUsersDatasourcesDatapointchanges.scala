@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Datasources$Datapointchanges")
@@ -33,7 +32,7 @@ class ResourceUsersDatasourcesDatapointchanges protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDataPointChangesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(params: ParamsResourceUsersDatasourcesDatapointchangesList): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(
     params: ParamsResourceUsersDatasourcesDatapointchangesList,

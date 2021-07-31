@@ -3,25 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DeclareTypeAlias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclareTypeAlias_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var right: FlowTypeAnnotation = js.native
+  var right: FlowTypeAnnotation
   
-  var typeParameters: TypeParameterDeclaration_ = js.native
+  var typeParameters: TypeParameterDeclaration_
   
   @JSName("type")
-  var type_DeclareTypeAlias_ : DeclareTypeAlias = js.native
+  var type_DeclareTypeAlias_ : DeclareTypeAlias
 }
 object DeclareTypeAlias_ {
   
@@ -32,11 +31,10 @@ object DeclareTypeAlias_ {
     loc: SourceLocation,
     right: FlowTypeAnnotation,
     start: Double,
-    `type`: DeclareTypeAlias,
     typeParameters: TypeParameterDeclaration_
   ): DeclareTypeAlias_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DeclareTypeAlias")
     __obj.asInstanceOf[DeclareTypeAlias_]
   }
   

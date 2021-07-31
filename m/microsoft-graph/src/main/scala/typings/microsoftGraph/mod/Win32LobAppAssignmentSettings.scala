@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings {
+trait Win32LobAppAssignmentSettings
+  extends StObject
+     with MobileAppAssignmentSettings {
   
   // The install time settings to apply for this app assignment.
-  var installTimeSettings: js.UndefOr[NullableOption[MobileAppInstallTimeSettings]] = js.native
+  var installTimeSettings: js.UndefOr[NullableOption[MobileAppInstallTimeSettings]] = js.undefined
   
   // The notification status for this app assignment. Possible values are: showAll, showReboot, hideAll.
-  var notifications: js.UndefOr[Win32LobAppNotification] = js.native
+  var notifications: js.UndefOr[Win32LobAppNotification] = js.undefined
   
   // The reboot settings to apply for this app assignment.
-  var restartSettings: js.UndefOr[NullableOption[Win32LobAppRestartSettings]] = js.native
+  var restartSettings: js.UndefOr[NullableOption[Win32LobAppRestartSettings]] = js.undefined
 }
 object Win32LobAppAssignmentSettings {
   

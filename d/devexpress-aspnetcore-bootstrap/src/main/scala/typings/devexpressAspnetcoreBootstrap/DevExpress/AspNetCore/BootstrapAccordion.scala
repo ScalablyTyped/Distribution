@@ -9,11 +9,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapAccordion extends Control {
+trait BootstrapAccordion
+  extends StObject
+     with Control {
   
   def collapseAll(): Unit = js.native
   
@@ -32,7 +33,7 @@ trait BootstrapAccordion extends Control {
   def getSelectedItem(): BootstrapAccordionItem | Null = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[

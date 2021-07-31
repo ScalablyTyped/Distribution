@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securityhubMemberMod {
@@ -53,6 +52,10 @@ object securityhubMemberMod {
   /* static members */
   object Member {
     
+    @JSImport("@pulumi/aws/securityhub/member", "Member")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Member resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,45 +65,39 @@ object securityhubMemberMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/securityhub/member", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Member = js.native
-    @JSImport("@pulumi/aws/securityhub/member", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Member = js.native
-    @JSImport("@pulumi/aws/securityhub/member", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MemberState): Member = js.native
-    @JSImport("@pulumi/aws/securityhub/member", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MemberState): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
     
     /**
       * Returns true if the given object is an instance of Member.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/securityhub/member", "Member.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/member.Member */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/member.Member */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/member.Member */ Boolean]
   }
   
-  @js.native
   trait MemberArgs extends StObject {
     
     /**
       * The ID of the member AWS account.
       */
-    val accountId: Input[String] = js.native
+    val accountId: Input[String]
     
     /**
       * The email of the member AWS account.
       */
-    val email: Input[String] = js.native
+    val email: Input[String]
     
     /**
       * Boolean whether to invite the account to Security Hub as a member. Defaults to `false`.
       */
-    val invite: js.UndefOr[Input[Boolean]] = js.native
+    val invite: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object MemberArgs {
     
@@ -127,33 +124,32 @@ object securityhubMemberMod {
     }
   }
   
-  @js.native
   trait MemberState extends StObject {
     
     /**
       * The ID of the member AWS account.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email of the member AWS account.
       */
-    val email: js.UndefOr[Input[String]] = js.native
+    val email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean whether to invite the account to Security Hub as a member. Defaults to `false`.
       */
-    val invite: js.UndefOr[Input[Boolean]] = js.native
+    val invite: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the master Security Hub AWS account.
       */
-    val masterId: js.UndefOr[Input[String]] = js.native
+    val masterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the member account relationship.
       */
-    val memberStatus: js.UndefOr[Input[String]] = js.native
+    val memberStatus: js.UndefOr[Input[String]] = js.undefined
   }
   object MemberState {
     

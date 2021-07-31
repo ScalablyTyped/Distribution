@@ -2,51 +2,49 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamUserDetails extends StObject {
   
   /**
     * A list of the managed policies that are attached to the user.
     */
-  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.native
+  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.undefined
   
   /**
     * Indicates when the user was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of IAM groups that the user belongs to.
     */
-  var GroupList: js.UndefOr[StringList] = js.native
+  var GroupList: js.UndefOr[StringList] = js.undefined
   
   /**
     * The path to the user.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The permissions boundary for the user.
     */
-  var PermissionsBoundary: js.UndefOr[AwsIamPermissionsBoundary] = js.native
+  var PermissionsBoundary: js.UndefOr[AwsIamPermissionsBoundary] = js.undefined
   
   /**
     * The unique identifier for the user.
     */
-  var UserId: js.UndefOr[NonEmptyString] = js.native
+  var UserId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the user.
     */
-  var UserName: js.UndefOr[NonEmptyString] = js.native
+  var UserName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of inline policies that are embedded in the user.
     */
-  var UserPolicyList: js.UndefOr[AwsIamUserPolicyList] = js.native
+  var UserPolicyList: js.UndefOr[AwsIamUserPolicyList] = js.undefined
 }
 object AwsIamUserDetails {
   

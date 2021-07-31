@@ -2,7 +2,6 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `classroom-notifications@system.gserviceaccount.com` the
   * `projects.topics.publish` permission.
   */
-@js.native
 trait SchemaCloudPubsubTopic extends StObject {
   
   /**
     * The `name` field of a Cloud Pub/Sub
     * [Topic](https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.topics#Topic).
     */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudPubsubTopic {
   

@@ -2,24 +2,22 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeAction> */
-@js.native
 trait PartialTypeAction extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var disabledBackground: js.UndefOr[String] = js.native
+  var disabledBackground: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[String] = js.native
+  var hover: js.UndefOr[String] = js.undefined
   
-  var hoverOpacity: js.UndefOr[Double] = js.native
+  var hoverOpacity: js.UndefOr[Double] = js.undefined
   
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
 }
 object PartialTypeAction {
   

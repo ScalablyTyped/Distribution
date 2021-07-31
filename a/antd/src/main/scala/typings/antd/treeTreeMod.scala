@@ -41,7 +41,6 @@ import typings.std.HTMLSpanElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeTreeMod extends Shortcut {
@@ -52,12 +51,11 @@ object treeTreeMod extends Shortcut {
   
   type AntTreeNode = Component[AntTreeNodeProps, js.Object, js.Any]
   
-  @js.native
   trait AntTreeNodeBaseEvent extends StObject {
     
-    var nativeEvent: MouseEvent = js.native
+    var nativeEvent: MouseEvent
     
-    var node: AntTreeNode = js.native
+    var node: AntTreeNode
   }
   object AntTreeNodeBaseEvent {
     
@@ -78,20 +76,21 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait AntTreeNodeCheckedEvent extends AntTreeNodeBaseEvent {
+  trait AntTreeNodeCheckedEvent
+    extends StObject
+       with AntTreeNodeBaseEvent {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var checkedNodes: js.UndefOr[js.Array[AntTreeNode]] = js.native
+    var checkedNodes: js.UndefOr[js.Array[AntTreeNode]] = js.undefined
     
-    var event: check = js.native
+    var event: check
   }
   object AntTreeNodeCheckedEvent {
     
     @scala.inline
-    def apply(event: check, nativeEvent: MouseEvent, node: AntTreeNode): AntTreeNodeCheckedEvent = {
-      val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    def apply(nativeEvent: MouseEvent, node: AntTreeNode): AntTreeNodeCheckedEvent = {
+      val __obj = js.Dynamic.literal(event = "check", nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[AntTreeNodeCheckedEvent]
     }
     
@@ -118,10 +117,11 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait AntTreeNodeDragEnterEvent extends AntTreeNodeMouseEvent {
+  trait AntTreeNodeDragEnterEvent
+    extends StObject
+       with AntTreeNodeMouseEvent {
     
-    var expandedKeys: js.Array[Key] = js.native
+    var expandedKeys: js.Array[Key]
   }
   object AntTreeNodeDragEnterEvent {
     
@@ -142,20 +142,19 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait AntTreeNodeDropEvent extends StObject {
     
-    var dragNode: AntTreeNode = js.native
+    var dragNode: AntTreeNode
     
-    var dragNodesKeys: js.Array[Key] = js.native
+    var dragNodesKeys: js.Array[Key]
     
-    var dropPosition: Double = js.native
+    var dropPosition: Double
     
-    var dropToGap: js.UndefOr[Boolean] = js.native
+    var dropToGap: js.UndefOr[Boolean] = js.undefined
     
-    var event: typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent] = js.native
+    var event: typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent]
     
-    var node: AntTreeNode = js.native
+    var node: AntTreeNode
   }
   object AntTreeNodeDropEvent {
     
@@ -200,10 +199,11 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait AntTreeNodeExpandedEvent extends AntTreeNodeBaseEvent {
+  trait AntTreeNodeExpandedEvent
+    extends StObject
+       with AntTreeNodeBaseEvent {
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
   }
   object AntTreeNodeExpandedEvent {
     
@@ -224,12 +224,11 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait AntTreeNodeMouseEvent extends StObject {
     
-    var event: DragEvent[HTMLElement] = js.native
+    var event: DragEvent[HTMLElement]
     
-    var node: AntTreeNode = js.native
+    var node: AntTreeNode
   }
   object AntTreeNodeMouseEvent {
     
@@ -250,39 +249,39 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait AntTreeNodeProps
-    extends /* customProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProp */ StringDictionary[js.Any] {
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableCheckbox: js.UndefOr[Boolean] = js.native
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[String] = js.native
+    var eventKey: js.UndefOr[String] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[(js.Function1[/* treeNode */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.native
+    var icon: js.UndefOr[(js.Function1[/* treeNode */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String | ReactNode] = js.native
+    var title: js.UndefOr[String | ReactNode] = js.undefined
   }
   object AntTreeNodeProps {
     
@@ -390,20 +389,21 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait AntTreeNodeSelectedEvent extends AntTreeNodeBaseEvent {
+  trait AntTreeNodeSelectedEvent
+    extends StObject
+       with AntTreeNodeBaseEvent {
     
-    var event: select_ = js.native
+    var event: select_
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var selectedNodes: js.UndefOr[js.Array[DataNode]] = js.native
+    var selectedNodes: js.UndefOr[js.Array[DataNode]] = js.undefined
   }
   object AntTreeNodeSelectedEvent {
     
     @scala.inline
-    def apply(event: select_, nativeEvent: MouseEvent, node: AntTreeNode): AntTreeNodeSelectedEvent = {
-      val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    def apply(nativeEvent: MouseEvent, node: AntTreeNode): AntTreeNodeSelectedEvent = {
+      val __obj = js.Dynamic.literal(event = "select", nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[AntTreeNodeSelectedEvent]
     }
     
@@ -430,42 +430,41 @@ object treeTreeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait AntdTreeNodeAttribute extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: String = js.native
+    var className: String
     
-    var disableCheckbox: Boolean = js.native
+    var disableCheckbox: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var dragOver: Boolean = js.native
+    var dragOver: Boolean
     
-    var dragOverGapBottom: Boolean = js.native
+    var dragOverGapBottom: Boolean
     
-    var dragOverGapTop: Boolean = js.native
+    var dragOverGapTop: Boolean
     
-    var eventKey: String = js.native
+    var eventKey: String
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var halfChecked: Boolean = js.native
+    var halfChecked: Boolean
     
-    var isLeaf: Boolean = js.native
+    var isLeaf: Boolean
     
-    var pos: String = js.native
+    var pos: String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var selectable: Boolean = js.native
+    var selectable: Boolean
     
-    var selected: Boolean = js.native
+    var selected: Boolean
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object AntdTreeNodeAttribute {
     
@@ -555,9 +554,10 @@ object treeTreeMod extends Shortcut {
   
   @js.native
   trait CompoundedComponent
-    extends ForwardRefExoticComponent[TreeProps with RefAttributes[typings.rcTree.mod.default]] {
+    extends StObject
+       with ForwardRefExoticComponent[TreeProps & RefAttributes[typings.rcTree.mod.default]] {
     
-    var DirectoryTree: ForwardRefExoticComponent[DirectoryTreeProps with RefAttributes[typings.rcTree.mod.default]] = js.native
+    var DirectoryTree: ForwardRefExoticComponent[DirectoryTreeProps & RefAttributes[typings.rcTree.mod.default]] = js.native
     
     var TreeNode: FC[TreeNodeProps] = js.native
   }
@@ -565,76 +565,75 @@ object treeTreeMod extends Shortcut {
   type TreeNodeNormal = DataNode
   
   /* Inlined parent std.Omit<rc-tree.rc-tree.TreeProps, 'prefixCls' | 'showLine'> */
-  @js.native
   trait TreeProps extends StObject {
     
     /** 是否自动展开父节点 */
-    var autoExpandParent: js.UndefOr[Boolean] = js.native
+    var autoExpandParent: js.UndefOr[Boolean] = js.undefined
     
-    var blockNode: js.UndefOr[Boolean] = js.native
+    var blockNode: js.UndefOr[Boolean] = js.undefined
     
     /** checkable状态下节点选择完全受控（父子节点选中状态不再关联） */
-    var checkStrictly: js.UndefOr[Boolean] = js.native
+    var checkStrictly: js.UndefOr[Boolean] = js.undefined
     
     /** 是否支持选中 */
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
     /** （受控）选中复选框的树节点 */
-    var checkedKeys: js.UndefOr[js.Array[Key] | Checked] = js.native
+    var checkedKeys: js.UndefOr[js.Array[Key] | Checked] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** 默认选中复选框的树节点 */
-    var defaultCheckedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultCheckedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
     /** 默认展开所有树节点 */
-    var defaultExpandAll: js.UndefOr[Boolean] = js.native
+    var defaultExpandAll: js.UndefOr[Boolean] = js.undefined
     
     /** 默认展开对应树节点 */
-    var defaultExpandParent: js.UndefOr[Boolean] = js.native
+    var defaultExpandParent: js.UndefOr[Boolean] = js.undefined
     
     /** 默认展开指定的树节点 */
-    var defaultExpandedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultExpandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
     /** 默认选中的树节点 */
-    var defaultSelectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultSelectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
     /** 是否禁用树 */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** 设置节点可拖拽（IE>8） */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /** （受控）展开指定的树节点 */
-    var expandedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var expandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
     /** 点击树节点触发 */
-    var filterAntTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, Boolean]] = js.native
+    var filterAntTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, Boolean]] = js.undefined
     
-    var filterTreeNode: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, Boolean]] = js.native
+    var filterTreeNode: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, Boolean]] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var icon: js.UndefOr[(js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.native
+    var icon: js.UndefOr[(js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.undefined
     
-    var itemHeight: js.UndefOr[Double] = js.native
+    var itemHeight: js.UndefOr[Double] = js.undefined
     
-    var loadData: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, js.Promise[Unit]]] = js.native
+    var loadData: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, js.Promise[Unit]]] = js.undefined
     
-    var loadedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var loadedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var motion: js.UndefOr[js.Any] = js.native
+    var motion: js.UndefOr[js.Any] = js.undefined
     
     /** 是否支持多选 */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onActiveChange: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.native
+    var onActiveChange: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
     var onCheck: js.UndefOr[
         js.Function2[
@@ -642,64 +641,64 @@ object treeTreeMod extends Shortcut {
           /* info */ CheckInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.native
+    var onClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.native
+    var onDoubleClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragEnter: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDi, Unit]] = js.native
+    var onDragEnter: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDi, Unit]] = js.undefined
     
-    var onDragLeave: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragLeave: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragOver: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragOver: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDrop: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDiDragNode, Unit]] = js.native
+    var onDrop: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDiDragNode, Unit]] = js.undefined
     
-    var onExpand: js.UndefOr[js.Function2[/* expandedKeys */ js.Array[Key], /* info */ Expanded, Unit]] = js.native
+    var onExpand: js.UndefOr[js.Function2[/* expandedKeys */ js.Array[Key], /* info */ Expanded, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node, Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.undefined
     
-    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode, Unit]] = js.native
+    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* selectedKeys */ js.Array[Key], /* info */ Event, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* selectedKeys */ js.Array[Key], /* info */ Event, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
     /** （受控）设置选中的树节点 */
-    var selectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showLine: js.UndefOr[Boolean | ShowLeafIcon] = js.native
+    var showLine: js.UndefOr[Boolean | ShowLeafIcon] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var switcherIcon: js.UndefOr[ReactElement] = js.native
+    var switcherIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.native
+    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.undefined
     
-    var treeData: js.UndefOr[js.Array[DataNode]] = js.native
+    var treeData: js.UndefOr[js.Array[DataNode]] = js.undefined
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object TreeProps {
     

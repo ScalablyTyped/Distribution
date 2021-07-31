@@ -2,25 +2,23 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyWithin extends StObject {
   
-  var copyWithin: Boolean = js.native
+  var copyWithin: Boolean
   
-  var entries: Boolean = js.native
+  var entries: Boolean
   
-  var fill: Boolean = js.native
+  var fill: Boolean
   
-  var find: Boolean = js.native
+  var find: Boolean
   
-  var findIndex: Boolean = js.native
+  var findIndex: Boolean
   
-  var keys: Boolean = js.native
+  var keys: Boolean
   
-  var values: Boolean = js.native
+  var values: Boolean
 }
 object CopyWithin {
   

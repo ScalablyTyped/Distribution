@@ -7,16 +7,22 @@ import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statesConfigMod {
   
+  @JSImport("@react-md/states/types/StatesConfig", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object StatesConfig {
+    
+    @scala.inline
+    def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/states/types/StatesConfig", "StatesConfig")
     @js.native
-    def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -60,11 +66,9 @@ object statesConfigMod {
   @js.native
   val StatesConfigContext: Context[StatesConfigContextType] = js.native
   
-  @JSImport("@react-md/states/types/StatesConfig", "useStatesConfigContext")
-  @js.native
-  def useStatesConfigContext(): StatesConfigContextType = js.native
+  @scala.inline
+  def useStatesConfigContext(): StatesConfigContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useStatesConfigContext")().asInstanceOf[StatesConfigContextType]
   
-  @js.native
   trait StatesConfigContextType extends StObject {
     
     /**
@@ -72,26 +76,26 @@ object statesConfigMod {
       * "programmatic" ripple effect. This would be if  the `.click()` function is
       * called on an element through javascript or some other means.
       */
-    var disableProgrammaticRipple: Boolean = js.native
+    var disableProgrammaticRipple: Boolean
     
     /**
       * Boolean if the ripple effect should be disabled for all child components
       * that use the Ripple states.
       */
-    var disableRipple: Boolean = js.native
+    var disableRipple: Boolean
     
     /**
       * The class names to apply during the different stages for the ripple
       * animation.  You probably don't want to use this.
       */
-    var rippleClassNames: CSSTransitionClassNames = js.native
+    var rippleClassNames: CSSTransitionClassNames
     
     /**
       * The amount of time before a ripple finishes its animation. You probably
       * don't want to change this value unless you updated the duration in scss or
       * changed the different class names for the ripple animation.
       */
-    var rippleTimeout: TransitionTimeout = js.native
+    var rippleTimeout: TransitionTimeout
   }
   object StatesConfigContextType {
     
@@ -124,18 +128,17 @@ object statesConfigMod {
   }
   
   /* Inlined parent std.Partial<@react-md/states.@react-md/states/types/StatesConfig.StatesConfigContextType> */
-  @js.native
   trait StatesConfigProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.native
+    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
-    var disableRipple: js.UndefOr[Boolean] = js.native
+    var disableRipple: js.UndefOr[Boolean] = js.undefined
     
-    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.native
+    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
-    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.native
+    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object StatesConfigProps {
     

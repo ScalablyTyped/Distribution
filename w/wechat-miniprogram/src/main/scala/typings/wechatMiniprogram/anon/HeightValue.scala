@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightValue extends StObject {
   
   /** 键盘高度, 在基础库 `1.9.90` 起支持 */
-  var height: Double = js.native
+  var height: Double
   
   /** 输入框内容 */
-  var value: String = js.native
+  var value: String
 }
 object HeightValue {
   

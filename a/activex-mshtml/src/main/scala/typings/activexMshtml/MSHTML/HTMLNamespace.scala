@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLNamespace extends StObject {
   
   @JSName("MSHTML.HTMLNamespace_typekey")
-  var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace = js.native
+  var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace
   
-  def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
+  def attachEvent(event: String, pdisp: js.Any): Boolean
   
-  val constructor: js.Any = js.native
+  val constructor: js.Any
   
-  def detachEvent(event: String, pdisp: js.Any): Unit = js.native
+  def detachEvent(event: String, pdisp: js.Any): Unit
   
-  def doImport(bstrImplementationUrl: String): Unit = js.native
+  def doImport(bstrImplementationUrl: String): Unit
   
-  val name: String = js.native
+  val name: String
   
-  var onreadystatechange: js.Any = js.native
+  var onreadystatechange: js.Any
   
-  val readyState: js.Any = js.native
+  val readyState: js.Any
   
-  val tagNames: js.Any = js.native
+  val tagNames: js.Any
   
-  val urn: String = js.native
+  val urn: String
 }
 object HTMLNamespace {
   

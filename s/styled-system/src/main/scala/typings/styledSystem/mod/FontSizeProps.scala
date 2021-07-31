@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait FontSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
     * - And array values are converted into responsive values.
     *
     */
-  var fontSize: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var fontSize: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object FontSizeProps {
   
@@ -28,7 +26,7 @@ object FontSizeProps {
   }
   
   @scala.inline
-  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FontSizeProps[ThemeType, TVal])) extends AnyVal {
+  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontSizeProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setFontSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])

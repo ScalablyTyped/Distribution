@@ -24,7 +24,6 @@ import typings.chessJs.chessJsStrings.w
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,20 +36,25 @@ object mod {
     * the board configuration in Forsyth-Edwards Notation.
     * @param fen specifies the board configuration in Forsyth-Edwards Notation.
     */
-  class Chess () extends ChessInstance {
+  class Chess ()
+    extends StObject
+       with ChessInstance {
     def this(fen: String) = this()
   }
-  /**
-    * The Chess() constructor takes an optional parameter which specifies
-    * the board configuration in Forsyth-Edwards Notation.
-    * @param fen specifies the board configuration in Forsyth-Edwards Notation.
-    */
-  @JSImport("chess.js", "Chess")
-  @js.native
-  def Chess(): ChessInstance = js.native
-  @JSImport("chess.js", "Chess")
-  @js.native
-  def Chess(fen: String): ChessInstance = js.native
+  object Chess {
+    
+    /**
+      * The Chess() constructor takes an optional parameter which specifies
+      * the board configuration in Forsyth-Edwards Notation.
+      * @param fen specifies the board configuration in Forsyth-Edwards Notation.
+      */
+    @JSImport("chess.js", "Chess")
+    @js.native
+    def apply(): ChessInstance = js.native
+    @JSImport("chess.js", "Chess")
+    @js.native
+    def apply(fen: String): ChessInstance = js.native
+  }
   
   @js.native
   trait ChessInstance extends StObject {
@@ -333,31 +337,32 @@ object mod {
     def validate_fen(fen: String): Error = js.native
   }
   
-  @js.native
-  trait Move extends ShortMove {
+  trait Move
+    extends StObject
+       with ShortMove {
     
     /**
       * If an enemy piece was captured this is their type
       */
-    var captured: js.UndefOr[Exclude[PieceType, k]] = js.native
+    var captured: js.UndefOr[Exclude[PieceType, k]] = js.undefined
     
     /**
       * The color of the piece that moved
       * - "b" for Black
       * - "w" for White
       */
-    var color: b | w = js.native
+    var color: b | w
     
     /** Flags indicating what occurred, combined into one string */
-    var flags: String = js.native
+    var flags: String
     
     /**
       * The type of the piece that moved
       */
-    var piece: PieceType = js.native
+    var piece: PieceType
     
     /** The Standard Algebraic Notation (SAN) representation of the move */
-    var san: String = js.native
+    var san: String
   }
   object Move {
     
@@ -390,7 +395,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Piece extends StObject {
     
     /**
@@ -398,12 +402,12 @@ object mod {
       * - "b" for Black
       * - "w" for White
       */
-    var color: b | w = js.native
+    var color: b | w
     
     /**
       * The type of the piece to place
       */
-    var `type`: PieceType = js.native
+    var `type`: PieceType
   }
   object Piece {
     
@@ -455,25 +459,24 @@ object mod {
     def r: typings.chessJs.chessJsStrings.r = "r".asInstanceOf[typings.chessJs.chessJsStrings.r]
   }
   
-  @js.native
   trait ShortMove extends StObject {
     
     /**
       * The location the piece is moving from.
       * Must be in san format, e.g "h8"
       */
-    var from: Square = js.native
+    var from: Square
     
     /**
       * If this move results in a promotion, this will have the unit promotion.
       */
-    var promotion: js.UndefOr[Exclude[PieceType, p]] = js.native
+    var promotion: js.UndefOr[Exclude[PieceType, p]] = js.undefined
     
     /**
       * The location the piece is moving to.
       * Must be in san format, e.g "a1"
       */
-    var to: Square = js.native
+    var to: Square
   }
   object ShortMove {
     

@@ -7,11 +7,12 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Select extends Control {
+trait Select
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -98,7 +99,7 @@ trait Select extends Control {
     * <code>ariaLabelledBy</code>.
     * @since 1.27.0
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>autoAdjustWidth</code>.Indicates whether the width of the input
@@ -315,7 +316,7 @@ trait Select extends Control {
     * @since 1.27.0
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the items in the aggregation named <code>items</code>.Additionally unregisters them from

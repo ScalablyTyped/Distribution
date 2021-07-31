@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfiguration extends StObject {
   
   /**
     * The ARN for the SNS topic to which notifications should be published.
     */
-  var NotificationTopicArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotificationTopicArn] = js.native
+  var NotificationTopicArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotificationTopicArn] = js.undefined
 }
 object NotificationConfiguration {
   

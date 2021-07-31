@@ -3,13 +3,13 @@ package typings.web3CoreHelpers.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransactionError extends Error {
+trait TransactionError
+  extends StObject
+     with Error {
   
-  var receipt: js.Object = js.native
+  var receipt: js.Object
 }
 object TransactionError {
   

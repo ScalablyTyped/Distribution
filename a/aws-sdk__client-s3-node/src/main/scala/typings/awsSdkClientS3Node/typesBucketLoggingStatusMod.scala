@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesLoggingEnabledMod.LoggingEnabled
 import typings.awsSdkClientS3Node.typesLoggingEnabledMod.UnmarshalledLoggingEnabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBucketLoggingStatusMod {
   
-  @js.native
   trait BucketLoggingStatus extends StObject {
     
     /**
       * <p>Container for logging information. Presence of this element indicates that logging is enabled. Parameters TargetBucket and TargetPrefix are required in this case.</p>
       */
-    var LoggingEnabled: js.UndefOr[typings.awsSdkClientS3Node.typesLoggingEnabledMod.LoggingEnabled] = js.native
+    var LoggingEnabled: js.UndefOr[typings.awsSdkClientS3Node.typesLoggingEnabledMod.LoggingEnabled] = js.undefined
   }
   object BucketLoggingStatus {
     
@@ -36,14 +34,15 @@ object typesBucketLoggingStatusMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledBucketLoggingStatus extends BucketLoggingStatus {
+  trait UnmarshalledBucketLoggingStatus
+    extends StObject
+       with BucketLoggingStatus {
     
     /**
       * <p>Container for logging information. Presence of this element indicates that logging is enabled. Parameters TargetBucket and TargetPrefix are required in this case.</p>
       */
     @JSName("LoggingEnabled")
-    var LoggingEnabled_UnmarshalledBucketLoggingStatus: js.UndefOr[UnmarshalledLoggingEnabled] = js.native
+    var LoggingEnabled_UnmarshalledBucketLoggingStatus: js.UndefOr[UnmarshalledLoggingEnabled] = js.undefined
   }
   object UnmarshalledBucketLoggingStatus {
     

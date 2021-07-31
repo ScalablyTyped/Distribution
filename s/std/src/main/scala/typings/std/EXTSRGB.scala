@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EXTSRGB extends StObject {
   
-  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: GLenum
   
-  val SRGB8_ALPHA8_EXT: GLenum = js.native
+  val SRGB8_ALPHA8_EXT: GLenum
   
-  val SRGB_ALPHA_EXT: GLenum = js.native
+  val SRGB_ALPHA_EXT: GLenum
   
-  val SRGB_EXT: GLenum = js.native
+  val SRGB_EXT: GLenum
 }
 object EXTSRGB {
   

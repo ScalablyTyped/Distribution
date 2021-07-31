@@ -19,11 +19,12 @@ import typings.amapJsApi.anon.PartialOptionsany
 import typings.amapJsApi.anon.TargetI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rectangle[ExtraData] extends Polygon[ExtraData] {
+trait Rectangle[ExtraData]
+  extends StObject
+     with Polygon[ExtraData] {
   
   /**
     * 获取矩形范围
@@ -41,11 +42,11 @@ trait Rectangle[ExtraData] extends Polygon[ExtraData] {
 }
 object Rectangle {
   
-  @js.native
   trait EventMap[I]
-    extends typings.amapJsApi.AMap.ShapeOverlay.EventMap[I] {
+    extends StObject
+       with typings.amapJsApi.AMap.ShapeOverlay.EventMap[I] {
     
-    var setBounds: Event_[typings.amapJsApi.amapJsApiStrings.setBounds, js.UndefOr[scala.Nothing]] = js.native
+    var setBounds: Event_[typings.amapJsApi.amapJsApiStrings.setBounds, Unit]
   }
   object EventMap {
     
@@ -59,9 +60,9 @@ object Rectangle {
       mousemove: MapsEvent[mousemove, I],
       mouseover: MapsEvent[mouseover, I],
       mouseup: MapsEvent[mouseup, I],
-      options: Event_[options, js.UndefOr[scala.Nothing]],
+      options: Event_[options, Unit],
       rightclick: MapsEvent[rightclick, I],
-      setBounds: Event_[setBounds, js.UndefOr[scala.Nothing]],
+      setBounds: Event_[setBounds, Unit],
       show: Event_[show, TargetI[I]],
       touchend: MapsEvent[touchend, I],
       touchmove: MapsEvent[touchmove, I],
@@ -72,56 +73,55 @@ object Rectangle {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
-      def setSetBounds(value: Event_[setBounds, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "setBounds", value.asInstanceOf[js.Any])
+      def setSetBounds(value: Event_[setBounds, Unit]): Self = StObject.set(x, "setBounds", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined amap-js-api.AMap.Merge<amap-js-api.AMap.Polygon.GetOptionsResult<ExtraData>, {  path :std.Array<amap-js-api.AMap.LngLat>,   bounds :amap-js-api.AMap.Bounds,   texture :string}> */
-  @js.native
   trait GetOptionsResult[ExtraData] extends StObject {
     
     /**
       * 矩形的范围
       */
-    var bounds: Bounds = js.native
+    var bounds: Bounds
     
     /**
       * 事件是否穿透到地图
       */
-    var bubble: Boolean = js.native
+    var bubble: Boolean
     
     /**
       * 是否支持点击
       */
-    var clickable: Boolean = js.native
+    var clickable: Boolean
     
     /**
       * 自定义属性
       */
-    var extData: ExtraData | js.Object = js.native
+    var extData: ExtraData | js.Object
     
     /**
       * 多边形填充颜色
       */
-    var fillColor: String = js.native
+    var fillColor: String
     
     /**
       * 边形填充透明度
       */
-    var fillOpacity: Double = js.native
+    var fillOpacity: Double
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: StrokeLineJoin = js.native
+    var lineJoin: StrokeLineJoin
     
     /**
       * 所属地图
       */
-    var map: Map = js.native
+    var map: Map
     
     /**
       * 多边形轮廓线的节点坐标数组
@@ -129,39 +129,39 @@ object Rectangle {
     /**
       * 路径节点数组
       */
-    var path: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat] = js.native
+    var path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]
     
     /**
       * 线条颜色
       */
-    var strokeColor: String = js.native
+    var strokeColor: String
     
     /**
       * 虚线的分段
       */
-    var strokeDasharray: js.Array[Double] = js.native
+    var strokeDasharray: js.Array[Double]
     
     /**
       * 线条透明度
       */
-    var strokeOpacity: Double = js.native
+    var strokeOpacity: Double
     
     /**
       * 线条样式，虚线或者实线
       */
-    var strokeStyle: StrokeStyle = js.native
+    var strokeStyle: StrokeStyle
     
     /**
       * 线条宽度
       */
-    var strokeWeight: Double = js.native
+    var strokeWeight: Double
     
-    var texture: String = js.native
+    var texture: String
     
     /**
       * 层级
       */
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object GetOptionsResult {
     
@@ -175,7 +175,7 @@ object Rectangle {
       fillOpacity: Double,
       lineJoin: StrokeLineJoin,
       map: Map,
-      path: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat],
+      path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat],
       strokeColor: String,
       strokeDasharray: js.Array[Double],
       strokeOpacity: Double,
@@ -189,7 +189,7 @@ object Rectangle {
     }
     
     @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[_], ExtraData] (val x: Self with GetOptionsResult[ExtraData]) extends AnyVal {
+    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
@@ -216,7 +216,7 @@ object Rectangle {
       def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
@@ -244,14 +244,14 @@ object Rectangle {
     }
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.Polygon.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.Polygon.Options[ExtraData] {
     
     /**
       * 矩形的范围
       */
-    var bounds: js.UndefOr[Bounds] = js.native
+    var bounds: js.UndefOr[Bounds] = js.undefined
   }
   object Options {
     
@@ -262,7 +262,7 @@ object Rectangle {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])

@@ -3,21 +3,19 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusInfo extends StObject {
   
   /**
     * Time when Asterisk was last reloaded.
     */
-  var last_reload_time: Date = js.native
+  var last_reload_time: Date
   
   /**
     * Time when Asterisk was started.
     */
-  var startup_time: Date = js.native
+  var startup_time: Date
 }
 object StatusInfo {
   

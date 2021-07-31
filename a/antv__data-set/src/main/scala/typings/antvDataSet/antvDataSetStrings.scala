@@ -3,7 +3,6 @@ package typings.antvDataSet
 import typings.antvDataSet.transformTagCloudMod._FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antvDataSetStrings {
@@ -99,12 +98,16 @@ object antvDataSetStrings {
   def binDotrectangle: binDotrectangle = "bin.rectangle".asInstanceOf[binDotrectangle]
   
   @js.native
-  sealed trait bold extends _FontWeight
+  sealed trait bold
+    extends StObject
+       with _FontWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait bolder extends _FontWeight
+  sealed trait bolder
+    extends StObject
+       with _FontWeight
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   
@@ -299,7 +302,9 @@ object antvDataSetStrings {
   def kernelDotregression: kernelDotregression = "kernel.regression".asInstanceOf[kernelDotregression]
   
   @js.native
-  sealed trait lighter extends _FontWeight
+  sealed trait lighter
+    extends StObject
+       with _FontWeight
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   
@@ -344,7 +349,9 @@ object antvDataSetStrings {
   def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait normal extends _FontWeight
+  sealed trait normal
+    extends StObject
+       with _FontWeight
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   

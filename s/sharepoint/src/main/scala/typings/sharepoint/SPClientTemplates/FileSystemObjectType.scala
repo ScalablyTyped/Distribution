@@ -2,7 +2,6 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait FileSystemObjectType extends StObject
 object FileSystemObjectType extends StObject {
   
   @js.native
-  sealed trait File extends FileSystemObjectType
+  sealed trait File
+    extends StObject
+       with FileSystemObjectType
   
   @js.native
-  sealed trait Folder extends FileSystemObjectType
+  sealed trait Folder
+    extends StObject
+       with FileSystemObjectType
   
   @js.native
-  sealed trait Invalid extends FileSystemObjectType
+  sealed trait Invalid
+    extends StObject
+       with FileSystemObjectType
   
   @js.native
-  sealed trait Web extends FileSystemObjectType
+  sealed trait Web
+    extends StObject
+       with FileSystemObjectType
 }

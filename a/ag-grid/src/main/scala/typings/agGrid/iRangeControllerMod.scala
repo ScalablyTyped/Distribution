@@ -6,25 +6,23 @@ import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iRangeControllerMod {
   
-  @js.native
   trait AddRangeSelectionParams extends StObject {
     
-    var columnEnd: String | Column = js.native
+    var columnEnd: String | Column
     
-    var columnStart: String | Column = js.native
+    var columnStart: String | Column
     
-    var floatingEnd: String = js.native
+    var floatingEnd: String
     
-    var floatingStart: String = js.native
+    var floatingStart: String
     
-    var rowEnd: Double = js.native
+    var rowEnd: Double
     
-    var rowStart: Double = js.native
+    var rowStart: Double
   }
   object AddRangeSelectionParams {
     
@@ -95,14 +93,13 @@ object iRangeControllerMod {
     def setRangeToCell(cell: GridCell, appendRange: Boolean): Unit = js.native
   }
   
-  @js.native
   trait RangeSelection extends StObject {
     
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
-    var end: GridCell = js.native
+    var end: GridCell
     
-    var start: GridCell = js.native
+    var start: GridCell
   }
   object RangeSelection {
     

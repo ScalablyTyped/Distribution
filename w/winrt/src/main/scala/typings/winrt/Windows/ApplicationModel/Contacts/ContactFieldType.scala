@@ -2,7 +2,6 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait ContactFieldType extends StObject
 object ContactFieldType extends StObject {
   
   @js.native
-  sealed trait custom extends ContactFieldType
+  sealed trait custom
+    extends StObject
+       with ContactFieldType
   
   @js.native
-  sealed trait email extends ContactFieldType
+  sealed trait email
+    extends StObject
+       with ContactFieldType
   
   @js.native
-  sealed trait instantMessage extends ContactFieldType
+  sealed trait instantMessage
+    extends StObject
+       with ContactFieldType
   
   @js.native
-  sealed trait location extends ContactFieldType
+  sealed trait location
+    extends StObject
+       with ContactFieldType
   
   @js.native
-  sealed trait phoneNumber extends ContactFieldType
+  sealed trait phoneNumber
+    extends StObject
+       with ContactFieldType
 }

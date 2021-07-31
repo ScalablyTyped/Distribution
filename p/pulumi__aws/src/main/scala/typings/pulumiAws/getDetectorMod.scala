@@ -3,31 +3,29 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDetectorMod {
   
-  @JSImport("@pulumi/aws/guardduty/getDetector", "getDetector")
+  @JSImport("@pulumi/aws/guardduty/getDetector", JSImport.Namespace)
   @js.native
-  def getDetector(): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty/getDetector", "getDetector")
-  @js.native
-  def getDetector(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty/getDetector", "getDetector")
-  @js.native
-  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty/getDetector", "getDetector")
-  @js.native
-  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDetector(): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")().asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: Unit, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
+  
   trait GetDetectorArgs extends StObject {
     
     /**
       * The ID of the detector.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
   }
   object GetDetectorArgs {
     
@@ -48,25 +46,24 @@ object getDetectorMod {
     }
   }
   
-  @js.native
   trait GetDetectorResult extends StObject {
     
     /**
       * The frequency of notifications sent about subsequent finding occurrences.
       */
-    val findingPublishingFrequency: String = js.native
+    val findingPublishingFrequency: String
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The service-linked role that grants GuardDuty access to the resources in the AWS account.
       */
-    val serviceRoleArn: String = js.native
+    val serviceRoleArn: String
     
     /**
       * The current status of the detector.
       */
-    val status: String = js.native
+    val status: String
   }
   object GetDetectorResult {
     

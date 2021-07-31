@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetImportMessage extends StObject {
   
   /** The code associated with this message. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** An optional file path. Only present for those error codes that specify it. */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /** An optional image error. Only present for INVALID_IMAGE_FILE. */
-  var imageError: js.UndefOr[ImageError] = js.native
+  var imageError: js.UndefOr[ImageError] = js.undefined
   
   /** An optional OBJ parse error. Only present for OBJ_PARSE_ERROR. */
-  var objParseError: js.UndefOr[ObjParseError] = js.native
+  var objParseError: js.UndefOr[ObjParseError] = js.undefined
 }
 object AssetImportMessage {
   

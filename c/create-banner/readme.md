@@ -9,14 +9,14 @@ Create a banner from a package.json file.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | create-banner |
-| Keywords           | create, banner, comment, generate, generator, package, package.json |
-| # releases         | 0 |
+| Keywords           | create, banner, banner-generator, package, package.json |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 9964 |
+| # downloads        | 11876 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/fengyuanchen/create-banner)
+- [Homepage](https://github.com/fengyuanchen/create-banner/#readme)
 - [Bugs](https://github.com/fengyuanchen/create-banner/issues)
 - [Repository](https://github.com/fengyuanchen/create-banner)
 - [Npm](https://www.npmjs.com/package/create-banner)

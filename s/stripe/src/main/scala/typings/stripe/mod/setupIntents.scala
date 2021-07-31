@@ -18,23 +18,23 @@ import typings.stripe.stripeStrings.succeeded
 import typings.stripe.stripeStrings.use_stripe_sdk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setupIntents {
   
-  @js.native
-  trait ISetupIntent extends IResourceObject {
+  trait ISetupIntent
+    extends StObject
+       with IResourceObject {
     
     /**
       * ID of the Connect application that created the SetupIntent. [Expandable]
       */
-    var application: js.UndefOr[String | IApplication | Null] = js.native
+    var application: js.UndefOr[String | IApplication | Null] = js.undefined
     
     /**
       * Reason for cancellation of this SetupIntent, one of `abandoned`, `requested_by_customer`, or `duplicate`.
       */
-    var cancelation_reason: SetupIntentCancelationReason | Null = js.native
+    var cancelation_reason: SetupIntentCancelationReason | Null
     
     /**
       * The client secret of this SetupIntent. Used for client-side retrieval using a publishable key.
@@ -43,17 +43,17 @@ object setupIntents {
       * be stored, logged, embedded in URLs, or exposed to anyone other than the customer. Make
       * sure that you have TLS enabled on any page that includes the client secret.
       */
-    var client_secret: String = js.native
+    var client_secret: String
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * ID of the Customer this SetupIntent is for if one exists. [Expandable]
       */
-    var customer: String | ICustomer | Null = js.native
+    var customer: String | ICustomer | Null
     
     /**
       * An arbitrary string attached to the object.
@@ -62,52 +62,52 @@ object setupIntents {
       * this Customer, and payment methods attached to other Customers cannot be used with
       * this SetupIntent.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The error encountered in the previous SetupIntent confirmation.
       */
-    var last_setup_error: IStripeError | Null = js.native
+    var last_setup_error: IStripeError | Null
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * If present, this property tells you what actions you need to take in order for your customer to continue payment setup.
       */
-    var next_action: ISetupIntentNextActionUseStripeSdk | ISetupIntentNextActionRedirectToUrl = js.native
+    var next_action: ISetupIntentNextActionUseStripeSdk | ISetupIntentNextActionRedirectToUrl
     
     /**
       * Value is "setup_intent".
       */
     @JSName("object")
-    var object_ISetupIntent: setup_intent = js.native
+    var object_ISetupIntent: setup_intent
     
     /**
       * The account (if any) for which the setup is intended. [Expandable]
       */
-    var on_behalf_of: js.UndefOr[String | Null] = js.native
+    var on_behalf_of: js.UndefOr[String | Null] = js.undefined
     
     /**
       * ID of the payment method used in this SetupIntent. [Expandable]
       */
-    var payment_method: js.UndefOr[String | Null] = js.native
+    var payment_method: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Payment-method-specific configuration for this SetupIntent.
       */
-    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.native
+    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.undefined
     
     /**
       * The list of payment method types (e.g. card) that this SetupIntent is allowed to use.
       */
-    var payment_method_types: js.Array[SetupIntentPaymentMethodType] = js.native
+    var payment_method_types: js.Array[SetupIntentPaymentMethodType]
     
     /**
       * The several states the SetupIntent goes through until it it either canceled or succeeds.
       */
-    var status: requires_payment_method | requires_confirmation | requires_action | processing | canceled | succeeded = js.native
+    var status: requires_payment_method | requires_confirmation | requires_action | processing | canceled | succeeded
     
     /**
       * Indicates how the payment method is intended to be used in the future.
@@ -116,7 +116,7 @@ object setupIntents {
       * your checkout flow. Use `off_session` if your customer may or may not be in your checkout
       * flow. If not provided, this value defaults to `off_session`.
       */
-    var usage: SetupIntentUsageType = js.native
+    var usage: SetupIntentUsageType
   }
   object ISetupIntent {
     
@@ -128,13 +128,12 @@ object setupIntents {
       livemode: Boolean,
       metadata: IMetadata,
       next_action: ISetupIntentNextActionUseStripeSdk | ISetupIntentNextActionRedirectToUrl,
-      `object`: setup_intent,
       payment_method_types: js.Array[SetupIntentPaymentMethodType],
       status: requires_payment_method | requires_confirmation | requires_action | processing | canceled | succeeded,
       usage: SetupIntentUsageType
     ): ISetupIntent = {
-      val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], cancelation_reason = null, customer = null, last_setup_error = null)
+      __obj.updateDynamic("object")("setup_intent")
       __obj.asInstanceOf[ISetupIntent]
     }
     
@@ -232,24 +231,23 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentConfirmOptions extends StObject {
     
     /**
       * The client secret of this SetupIntent. Used for client-side confirmation using a publishable key. Please refer to dynamic authentication guide on how client_secret should be handled.
       */
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
     
     /**
       * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object)
       * to attach to this SetupIntent.
       */
-    var payment_method: js.UndefOr[String] = js.native
+    var payment_method: js.UndefOr[String] = js.undefined
     
     /**
       * Payment-method-specific configuration for this SetupIntent.
       */
-    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.native
+    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.undefined
     
     /**
       * The URL to redirect your customer back to after they authenticate on the payment method’s
@@ -257,7 +255,7 @@ object setupIntents {
       * supply an application URI scheme. This parameter is only used for cards and other
       * redirect-based payment methods.
       */
-    var return_url: js.UndefOr[String] = js.native
+    var return_url: js.UndefOr[String] = js.undefined
   }
   object ISetupIntentConfirmOptions {
     
@@ -296,7 +294,6 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentCreationOptions extends StObject {
     
     /**
@@ -304,7 +301,7 @@ object setupIntents {
       * to `false`. If the payment method attached is a card, a return_url may be provided in case
       * additional authentication is required.
       */
-    var confirm: js.UndefOr[Boolean] = js.native
+    var confirm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ID of the Customer this SetupIntent belongs to, if one exists.
@@ -313,40 +310,40 @@ object setupIntents {
       * Customer, and payment methods attached to other Customers cannot be used with this
       * SetupIntent.
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       * This can be unset by updating the value to `null` and then saving.
       */
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing
       * additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
     
     /**
       * The Stripe account ID for which this SetupIntent is created.
       */
-    var on_behalf_of: js.UndefOr[String] = js.native
+    var on_behalf_of: js.UndefOr[String] = js.undefined
     
     /**
       * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object)
       * to attach to this SetupIntent.
       */
-    var payment_method: js.UndefOr[String] = js.native
+    var payment_method: js.UndefOr[String] = js.undefined
     
     /**
       * Payment-method-specific configuration for this SetupIntent.
       */
-    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.native
+    var payment_method_options: js.UndefOr[ISetupIntentPaymentMethodOptions] = js.undefined
     
     /**
       * The list of payment method types (e.g. card) that this SetupIntent is allowed to use.
       */
-    var payment_method_types: js.UndefOr[js.Array[SetupIntentPaymentMethodType]] = js.native
+    var payment_method_types: js.UndefOr[js.Array[SetupIntentPaymentMethodType]] = js.undefined
     
     /**
       * The URL to redirect your customer back to after they authenticate or cancel their payment on
@@ -354,14 +351,14 @@ object setupIntents {
       * can alternatively supply an application URI scheme. This parameter can only be used with
       * `confirm=true`.
       */
-    var return_url: js.UndefOr[String] = js.native
+    var return_url: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates how the payment method is intended to be used in the future.
       *
       * Use `on_session` if you intend to only reuse the payment method when the customer is in your checkout flow. Use `off_session` if your customer may or may not be in your checkout flow. If not provided, this value defaults to `off_session`.
       */
-    var usage: js.UndefOr[SetupIntentUsageType] = js.native
+    var usage: js.UndefOr[SetupIntentUsageType] = js.undefined
   }
   object ISetupIntentCreationOptions {
     
@@ -442,18 +439,19 @@ object setupIntents {
     }
   }
   
-  @js.native
-  trait ISetupIntentListOptions extends IListOptionsCreated {
+  trait ISetupIntentListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * Only return SetupIntents for the customer specified by this customer ID.
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * Only return SetupIntents associated with the specified payment method.
       */
-    var payment_method: js.UndefOr[String] = js.native
+    var payment_method: js.UndefOr[String] = js.undefined
   }
   object ISetupIntentListOptions {
     
@@ -480,22 +478,21 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentNextActionRedirectToUrl extends StObject {
     
     /**
       * Contains instructions for authenticating a payment by redirecting your customer to another page or application.
       */
-    var redirect_to_url: Returnurl = js.native
+    var redirect_to_url: Returnurl
     
-    var `type`: redirect_to_url = js.native
+    var `type`: redirect_to_url
   }
   object ISetupIntentNextActionRedirectToUrl {
     
     @scala.inline
-    def apply(redirect_to_url: Returnurl, `type`: redirect_to_url): ISetupIntentNextActionRedirectToUrl = {
+    def apply(redirect_to_url: Returnurl): ISetupIntentNextActionRedirectToUrl = {
       val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("redirect_to_url")
       __obj.asInstanceOf[ISetupIntentNextActionRedirectToUrl]
     }
     
@@ -510,22 +507,21 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentNextActionUseStripeSdk extends StObject {
     
-    var `type`: use_stripe_sdk = js.native
+    var `type`: use_stripe_sdk
     
     /**
       * When confirming a SetupIntent with js, js depends on the contents of this object to invoke authentication flows. The shape of the contents is subject to change and is only intended to be used by js.
       */
-    var use_stripe_sdk: js.Any = js.native
+    var use_stripe_sdk: js.Any
   }
   object ISetupIntentNextActionUseStripeSdk {
     
     @scala.inline
-    def apply(`type`: use_stripe_sdk, use_stripe_sdk: js.Any): ISetupIntentNextActionUseStripeSdk = {
+    def apply(use_stripe_sdk: js.Any): ISetupIntentNextActionUseStripeSdk = {
       val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("use_stripe_sdk")
       __obj.asInstanceOf[ISetupIntentNextActionUseStripeSdk]
     }
     
@@ -540,13 +536,12 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentPaymentMethodOptions extends StObject {
     
     /**
       * Configuration for any card payments attempted on this SetupIntent.
       */
-    var card: js.UndefOr[Requestthreedsecure] = js.native
+    var card: js.UndefOr[Requestthreedsecure] = js.undefined
   }
   object ISetupIntentPaymentMethodOptions {
     
@@ -567,14 +562,13 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentRetrieveOptions extends StObject {
     
     /**
       * The client secret of the SetupIntent. Required if a publishable key is used to retrieve
       * the SetupIntent. REQUIRED IF USING PUBLISHABLE KEY
       */
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
   }
   object ISetupIntentRetrieveOptions {
     
@@ -595,23 +589,22 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentSessionSubset extends StObject {
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
     
     /**
       * The Stripe account for which the setup is intended.
       */
-    var on_behalf_of: js.UndefOr[String] = js.native
+    var on_behalf_of: js.UndefOr[String] = js.undefined
   }
   object ISetupIntentSessionSubset {
     
@@ -644,13 +637,12 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentTransferData extends StObject {
     
     /**
       * The account (if any) the payment will be attributed to for tax reporting, and where funds from the payment will be transferred to upon payment success. [Expandable]
       */
-    var destination: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccountCreationOptions = js.native
+    var destination: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccountCreationOptions
   }
   object ISetupIntentTransferData {
     
@@ -670,36 +662,35 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait ISetupIntentUpdateOptions extends StObject {
     
     /**
       * ID of the customer this SetupIntent is for if one exists.
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       * This can be unset by updating the value to `null` and then saving.
       */
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing
       * additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
     
     /**
       * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object)
       * to attach to this SetupIntent.
       */
-    var payment_method: js.UndefOr[String] = js.native
+    var payment_method: js.UndefOr[String] = js.undefined
     
     /**
       * The list of payment method types (e.g. card) that this SetupIntent is allowed to use.
       */
-    var payment_method_types: js.UndefOr[js.Array[SetupIntentPaymentMethodType]] = js.native
+    var payment_method_types: js.UndefOr[js.Array[SetupIntentPaymentMethodType]] = js.undefined
   }
   object ISetupIntentUpdateOptions {
     

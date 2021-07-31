@@ -6,74 +6,74 @@ import typings.rrule.mod.RRule
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ical", "fromURL")
+  @JSImport("ical", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def fromURL(
     url: String,
     options: CoreOptions,
     callback: js.Function2[/* error */ js.Any, /* data */ FullCalendar, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ical", "parseFile")
-  @js.native
-  def parseFile(filename: String): FullCalendar = js.native
+  @scala.inline
+  def parseFile(filename: String): FullCalendar = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any]).asInstanceOf[FullCalendar]
   
-  @JSImport("ical", "parseICS")
-  @js.native
-  def parseICS(icsData: String): FullCalendar = js.native
+  @scala.inline
+  def parseICS(icsData: String): FullCalendar = ^.asInstanceOf[js.Dynamic].applyDynamic("parseICS")(icsData.asInstanceOf[js.Any]).asInstanceOf[FullCalendar]
   
-  @js.native
   trait CalendarComponent
-    extends /* prop */ StringDictionary[js.UndefOr[String | ParamList]] {
+    extends StObject
+       with /* prop */ StringDictionary[js.UndefOr[String | ParamList]] {
     
-    var categories: js.UndefOr[js.Array[String]] = js.native
+    var categories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var completed: js.UndefOr[Date] = js.native
+    var completed: js.UndefOr[Date] = js.undefined
     
-    var completion: js.UndefOr[String] = js.native
+    var completion: js.UndefOr[String] = js.undefined
     
-    var created: js.UndefOr[Date] = js.native
+    var created: js.UndefOr[Date] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var dtstamp: js.UndefOr[Date] = js.native
+    var dtstamp: js.UndefOr[Date] = js.undefined
     
-    var end: js.UndefOr[Date] = js.native
+    var end: js.UndefOr[Date] = js.undefined
     
-    var exdate: js.UndefOr[StringDictionary[Date]] = js.native
+    var exdate: js.UndefOr[StringDictionary[Date]] = js.undefined
     
-    var freebusy: js.UndefOr[FreeBusy] = js.native
+    var freebusy: js.UndefOr[FreeBusy] = js.undefined
     
-    var geo: js.UndefOr[Geo] = js.native
+    var geo: js.UndefOr[Geo] = js.undefined
     
-    var lastmodified: js.UndefOr[Date] = js.native
+    var lastmodified: js.UndefOr[Date] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var recurrenceid: js.UndefOr[Date] = js.native
+    var recurrenceid: js.UndefOr[Date] = js.undefined
     
-    var recurrences: js.UndefOr[js.Array[CalendarComponent]] = js.native
+    var recurrences: js.UndefOr[js.Array[CalendarComponent]] = js.undefined
     
-    var rrule: js.UndefOr[RRule] = js.native
+    var rrule: js.UndefOr[RRule] = js.undefined
     
-    var start: js.UndefOr[Date] = js.native
+    var start: js.UndefOr[Date] = js.undefined
     
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
     
-    var transparency: js.UndefOr[String] = js.native
+    var transparency: js.UndefOr[String] = js.undefined
     
-    var `type`: CalendarComponentType = js.native
+    var `type`: CalendarComponentType
     
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object CalendarComponent {
     
@@ -254,14 +254,13 @@ object mod {
     def VTODO: typings.ical.icalStrings.VTODO = "VTODO".asInstanceOf[typings.ical.icalStrings.VTODO]
   }
   
-  @js.native
   trait FreeBusy extends StObject {
     
-    var end: Date = js.native
+    var end: Date
     
-    var start: Date = js.native
+    var start: Date
     
-    var `type`: FreeBusyType = js.native
+    var `type`: FreeBusyType
   }
   object FreeBusy {
     
@@ -302,12 +301,11 @@ object mod {
   
   type FullCalendar = StringDictionary[CalendarComponent]
   
-  @js.native
   trait Geo extends StObject {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object Geo {
     
@@ -328,12 +326,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ParamList extends StObject {
     
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object ParamList {
     

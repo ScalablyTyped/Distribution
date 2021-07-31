@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.InsertId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTableDataInsertAllRequest extends StObject {
   
   /**
@@ -14,24 +12,24 @@ trait SchemaTableDataInsertAllRequest extends StObject {
     * The unknown values are ignored. Default is false, which treats unknown
     * values as errors.
     */
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource type of the response.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The rows to insert.
     */
-  var rows: js.UndefOr[js.Array[InsertId]] = js.native
+  var rows: js.UndefOr[js.Array[InsertId]] = js.undefined
   
   /**
     * [Optional] Insert all valid rows of a request, even if invalid rows
     * exist. The default value is false, which causes the entire request to
     * fail if any invalid rows exist.
     */
-  var skipInvalidRows: js.UndefOr[Boolean] = js.native
+  var skipInvalidRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If specified, treats the destination table as a base template, and
@@ -41,7 +39,7 @@ trait SchemaTableDataInsertAllRequest extends StObject {
     * https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables
     * for considerations when working with templates tables.
     */
-  var templateSuffix: js.UndefOr[String] = js.native
+  var templateSuffix: js.UndefOr[String] = js.undefined
 }
 object SchemaTableDataInsertAllRequest {
   

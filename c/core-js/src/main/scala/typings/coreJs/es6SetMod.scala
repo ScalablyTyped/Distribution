@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.SetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object es6SetMod extends Shortcut {
@@ -13,15 +12,16 @@ object es6SetMod extends Shortcut {
   @JSImport("core-js/library/es6/set", JSImport.Namespace)
   @js.native
   class ^[T] ()
-    extends typings.std.Set[T] {
+    extends StObject
+       with typings.std.Set[T] {
     def this(values: js.Array[T]) = this()
   }
   @JSImport("core-js/library/es6/set", JSImport.Namespace)
   @js.native
-  val ^ : SetConstructor = js.native
+  val ^ : js.Object & SetConstructor = js.native
   
-  type _To = SetConstructor
+  type _To = js.Object & SetConstructor
   
   /* This means you don't have to write `^`, but can instead just say `es6SetMod.foo` */
-  override def _to: SetConstructor = ^
+  override def _to: js.Object & SetConstructor = ^
 }

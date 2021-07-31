@@ -10,7 +10,6 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,42 +19,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait ViewableBuffer extends StObject {
   
   /**
     * Destroys all buffer references. Do not use after calling
     * this.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * View on the raw binary data as a `Float32Array`.
     *
     * @member {Float32Array} PIXI.ViewableBuffer#float32View
     */
-  var float32View: Float32Array = js.native
+  var float32View: Float32Array
   
   /**
     * View on the raw binary data as a `Int16Array`.
     *
     * @member {Int16Array}
     */
-  var int16View: Int16Array = js.native
+  var int16View: Int16Array
   
   /**
     * View on the raw binary data as a `Int32Array`.
     *
     * @member {Int32Array}
     */
-  var int32View: Int32Array = js.native
+  var int32View: Int32Array
   
   /**
     * View on the raw binary data as a `Int8Array`.
     *
     * @member {Int8Array}
     */
-  var int8View: Int8Array = js.native
+  var int8View: Int8Array
   
   /**
     * Underlying `ArrayBuffer` that holds all the data
@@ -63,28 +61,28 @@ trait ViewableBuffer extends StObject {
     *
     * @member {ArrayBuffer} PIXI.ViewableBuffer#rawBinaryData
     */
-  var rawBinaryData: ArrayBuffer = js.native
+  var rawBinaryData: ArrayBuffer
   
   /**
     * View on the raw binary data as a `Uint16Array`.
     *
     * @member {Uint16Array}
     */
-  var uint16View: Uint16Array = js.native
+  var uint16View: Uint16Array
   
   /**
     * View on the raw binary data as a `Uint32Array`.
     *
     * @member {Uint32Array} PIXI.ViewableBuffer#uint32View
     */
-  var uint32View: Uint32Array = js.native
+  var uint32View: Uint32Array
   
   /**
     * View on the raw binary data as a `Uint8Array`.
     *
     * @member {Uint8Array}
     */
-  var uint8View: Uint8Array = js.native
+  var uint8View: Uint8Array
   
   /**
     * Returns the view of the given type.
@@ -93,7 +91,7 @@ trait ViewableBuffer extends StObject {
     *    `uint16`, `int32`, `uint32`, and `float32`.
     * @return {object} typed array of given type
     */
-  def view(`type`: String): js.Any = js.native
+  def view(`type`: String): js.Any
 }
 object ViewableBuffer {
   

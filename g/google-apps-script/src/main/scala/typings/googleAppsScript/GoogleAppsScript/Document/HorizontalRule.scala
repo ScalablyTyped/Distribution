@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,8 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ListItem or Paragraph, but cannot itself contain any other element. For more
   * information on document structure, see the guide to extending Google Docs.
   */
-@js.native
-trait HorizontalRule extends Element
+trait HorizontalRule
+  extends StObject
+     with Element
 object HorizontalRule {
   
   @scala.inline

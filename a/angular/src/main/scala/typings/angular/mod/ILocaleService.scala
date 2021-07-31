@@ -2,25 +2,23 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // LocaleService
 // see http://docs.angularjs.org/api/ng/service/$locale
 ///////////////////////////////////////////////////////////////////////////
-@js.native
 trait ILocaleService extends StObject {
   
-  var DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor = js.native
+  var DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor
   
   // These are not documented
   // Check angular's i18n files for exemples
-  var NUMBER_FORMATS: ILocaleNumberFormatDescriptor = js.native
+  var NUMBER_FORMATS: ILocaleNumberFormatDescriptor
   
-  var id: String = js.native
+  var id: String
   
-  def pluralCat(num: js.Any): String = js.native
+  def pluralCat(num: js.Any): String
 }
 object ILocaleService {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalRuleTemplate extends StObject {
   
   /**
     * The content of the approval rule template.
     */
-  var approvalRuleTemplateContent: js.UndefOr[ApprovalRuleTemplateContent] = js.native
+  var approvalRuleTemplateContent: js.UndefOr[ApprovalRuleTemplateContent] = js.undefined
   
   /**
     * The description of the approval rule template.
     */
-  var approvalRuleTemplateDescription: js.UndefOr[ApprovalRuleTemplateDescription] = js.native
+  var approvalRuleTemplateDescription: js.UndefOr[ApprovalRuleTemplateDescription] = js.undefined
   
   /**
     * The system-generated ID of the approval rule template.
     */
-  var approvalRuleTemplateId: js.UndefOr[ApprovalRuleTemplateId] = js.native
+  var approvalRuleTemplateId: js.UndefOr[ApprovalRuleTemplateId] = js.undefined
   
   /**
     * The name of the approval rule template.
     */
-  var approvalRuleTemplateName: js.UndefOr[ApprovalRuleTemplateName] = js.native
+  var approvalRuleTemplateName: js.UndefOr[ApprovalRuleTemplateName] = js.undefined
   
   /**
     * The date the approval rule template was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The date the approval rule template was most recently changed, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user who made the most recent changes to the approval rule template.
     */
-  var lastModifiedUser: js.UndefOr[Arn] = js.native
+  var lastModifiedUser: js.UndefOr[Arn] = js.undefined
   
   /**
     * The SHA-256 hash signature for the content of the approval rule template.
     */
-  var ruleContentSha256: js.UndefOr[RuleContentSha256] = js.native
+  var ruleContentSha256: js.UndefOr[RuleContentSha256] = js.undefined
 }
 object ApprovalRuleTemplate {
   

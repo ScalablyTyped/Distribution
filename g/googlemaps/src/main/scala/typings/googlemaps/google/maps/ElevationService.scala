@@ -2,21 +2,19 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElevationService extends StObject {
   
   def getElevationAlongPath(
     request: PathElevationRequest,
     callback: js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def getElevationForLocations(
     request: LocationElevationRequest,
     callback: js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object ElevationService {
   

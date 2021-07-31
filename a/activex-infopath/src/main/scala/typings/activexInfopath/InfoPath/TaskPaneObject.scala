@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskPaneObject extends StObject {
   
   @JSName("InfoPath.TaskPaneObject_typekey")
-  var InfoPathDotTaskPaneObject_typekey: TaskPaneObject = js.native
+  var InfoPathDotTaskPaneObject_typekey: TaskPaneObject
   
-  val Type: XdTaskPaneType = js.native
+  val Type: XdTaskPaneType
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object TaskPaneObject {
   

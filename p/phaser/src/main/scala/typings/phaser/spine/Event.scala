@@ -2,25 +2,23 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var balance: Double = js.native
+  var balance: Double
   
-  var data: EventData = js.native
+  var data: EventData
   
-  var floatValue: Double = js.native
+  var floatValue: Double
   
-  var intValue: Double = js.native
+  var intValue: Double
   
-  var stringValue: String = js.native
+  var stringValue: String
   
-  var time: Double = js.native
+  var time: Double
   
-  var volume: Double = js.native
+  var volume: Double
 }
 object Event {
   

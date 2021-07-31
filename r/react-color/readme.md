@@ -10,9 +10,9 @@ A Collection of Color Pickers from Sketch, Photoshop, Chrome & more
 | ------------------ | :-------------: |
 | Full name          | react-color |
 | Keywords           | react, color picker, react-component, colorpicker, picker, sketch, chrome, photoshop, material design, popup |
-| # releases         | 7 |
-| # dependents       | 731 |
-| # downloads        | 61060654 |
+| # releases         | 8 |
+| # dependents       | 846 |
+| # downloads        | 81942930 |
 | # stars            | 8 |
 
 ## Links

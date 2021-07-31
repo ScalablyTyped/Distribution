@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceTypeTargetingOptionDetails extends StObject {
   
   /** Output only. The device type that is used to be targeted. */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
 }
 object DeviceTypeTargetingOptionDetails {
   

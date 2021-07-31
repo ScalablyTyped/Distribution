@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a StoreChanged event. */
-@js.native
 trait AppointmentStoreChangedEventArgs extends StObject {
   
   /**
     * Gets the deferral object for the StoreChanged event.
     * @return The deferral object for the StoreChanged event.
     */
-  def getDeferral(): AppointmentStoreChangedDeferral = js.native
+  def getDeferral(): AppointmentStoreChangedDeferral
 }
 object AppointmentStoreChangedEventArgs {
   

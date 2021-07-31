@@ -5,23 +5,23 @@ import typings.electron.electronStrings.keyDown
 import typings.electron.electronStrings.keyUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyboardInputEvent extends InputEvent {
+trait KeyboardInputEvent
+  extends StObject
+     with InputEvent {
   
   // Docs: https://electronjs.org/docs/api/structures/keyboard-input-event
   /**
     * The character that will be sent as the keyboard event. Should only use the valid
     * key codes in Accelerator.
     */
-  var keyCode: String = js.native
+  var keyCode: String
   
   /**
     * The type of the event, can be `keyDown`, `keyUp` or `char`.
     */
-  var `type`: keyDown | keyUp | char = js.native
+  var `type`: keyDown | keyUp | char
 }
 object KeyboardInputEvent {
   

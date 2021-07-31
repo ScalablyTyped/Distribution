@@ -4,34 +4,32 @@ import typings.antDesignPro.antDesignProStrings.downward
 import typings.antDesignPro.antDesignProStrings.upward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.Guide.DataRegionProps> */
-@js.native
 trait ReadonlyDataRegionProps extends StObject {
   
-  val content: js.UndefOr[String] = js.native
+  val content: js.UndefOr[String] = js.undefined
   
-  val direction: js.UndefOr[upward | downward] = js.native
+  val direction: js.UndefOr[upward | downward] = js.undefined
   
-  val display: js.UndefOr[js.Object] = js.native
+  val display: js.UndefOr[js.Object] = js.undefined
   
   val end: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val lineLength: js.UndefOr[Double] = js.native
+  val lineLength: js.UndefOr[Double] = js.undefined
   
-  val regionStyle: js.UndefOr[js.Object] = js.native
+  val regionStyle: js.UndefOr[js.Object] = js.undefined
   
   val start: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val style: js.UndefOr[js.Object] = js.native
+  val style: js.UndefOr[js.Object] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyDataRegionProps {
   
@@ -64,11 +62,11 @@ object ReadonlyDataRegionProps {
     
     @scala.inline
     def setEnd(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+    def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
     
     @scala.inline
     def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -90,11 +88,11 @@ object ReadonlyDataRegionProps {
     
     @scala.inline
     def setStart(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
     def setStartUndefined: Self = StObject.set(x, "start", js.undefined)

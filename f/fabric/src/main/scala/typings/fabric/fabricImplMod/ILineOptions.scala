@@ -2,31 +2,31 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILineOptions extends IObjectOptions {
+trait ILineOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * x value or first line edge
     */
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
   /**
     * x value or second line edge
     */
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * y value or first line edge
     */
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
   /**
     * y value or second line edge
     */
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object ILineOptions {
   

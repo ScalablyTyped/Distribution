@@ -6,7 +6,6 @@ import typings.react.mod.ReactChild
 import typings.wordpressComponents.responsiveWrapperMod.ResponsiveWrapper.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responsiveWrapperMod {
@@ -25,14 +24,13 @@ object responsiveWrapperMod {
   
   object ResponsiveWrapper {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactChild = js.native
+      var children: ReactChild
       
-      var naturalHeight: Double = js.native
+      var naturalHeight: Double
       
-      var naturalWidth: Double = js.native
+      var naturalWidth: Double
     }
     object Props {
       

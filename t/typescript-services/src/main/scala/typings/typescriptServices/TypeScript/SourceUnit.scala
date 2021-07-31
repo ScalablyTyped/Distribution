@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceUnit extends AST {
+trait SourceUnit
+  extends StObject
+     with AST {
   
-  var _fileName: js.Any = js.native
+  var _fileName: js.Any
   
-  var endOfFileTokenLeadingComments: js.Array[Comment] = js.native
+  var endOfFileTokenLeadingComments: js.Array[Comment]
   
-  var moduleElements: ISyntaxList2 = js.native
+  var moduleElements: ISyntaxList2
   
-  def structuralEquals(ast: SourceUnit, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: SourceUnit, includingPosition: Boolean): Boolean
 }
 object SourceUnit {
   

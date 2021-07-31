@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Same source and target systems
   */
-@js.native
-trait ConceptMapGroup extends BackboneElement {
+trait ConceptMapGroup
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'source'.
     */
-  var _source: js.UndefOr[Element] = js.native
+  var _source: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sourceVersion'.
     */
-  var _sourceVersion: js.UndefOr[Element] = js.native
+  var _sourceVersion: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'target'.
     */
-  var _target: js.UndefOr[Element] = js.native
+  var _target: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'targetVersion'.
     */
-  var _targetVersion: js.UndefOr[Element] = js.native
+  var _targetVersion: js.UndefOr[Element] = js.undefined
   
   /**
     * Mappings for a concept from the source set
     */
-  var element: js.Array[ConceptMapGroupElement] = js.native
+  var element: js.Array[ConceptMapGroupElement]
   
   /**
     * Code System (if value set crosses code systems)
     */
-  var source: js.UndefOr[uri] = js.native
+  var source: js.UndefOr[uri] = js.undefined
   
   /**
     * Specific version of the  code system
     */
-  var sourceVersion: js.UndefOr[String] = js.native
+  var sourceVersion: js.UndefOr[String] = js.undefined
   
   /**
     * System of the target (if necessary)
     */
-  var target: js.UndefOr[uri] = js.native
+  var target: js.UndefOr[uri] = js.undefined
   
   /**
     * Specific version of the  code system
     */
-  var targetVersion: js.UndefOr[String] = js.native
+  var targetVersion: js.UndefOr[String] = js.undefined
   
   /**
     * When no match in the mappings
     */
-  var unmapped: js.UndefOr[ConceptMapGroupUnmapped] = js.native
+  var unmapped: js.UndefOr[ConceptMapGroupUnmapped] = js.undefined
 }
 object ConceptMapGroup {
   

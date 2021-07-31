@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.defaultBlockAppenderMod.DefaultBlockAppender.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultBlockAppenderMod {
@@ -24,12 +23,11 @@ object defaultBlockAppenderMod {
   
   object DefaultBlockAppender {
     
-    @js.native
     trait Props extends StObject {
       
-      var lastBlockClientId: String = js.native
+      var lastBlockClientId: String
       
-      var rootClientId: String = js.native
+      var rootClientId: String
     }
     object Props {
       

@@ -7,7 +7,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,14 +37,12 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("socket.io.users", "Namespaces.attach")
-    @js.native
-    def attach(namespace: String, socketUsersObj: Users): Unit = js.native
+    @scala.inline
+    def attach(namespace: String, socketUsersObj: Users): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(namespace.asInstanceOf[js.Any], socketUsersObj.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("socket.io.users", "Namespaces.get")
-    @js.native
-    def get(namespace: String): Users = js.native
+    @scala.inline
+    def get(namespace: String): Users = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(namespace.asInstanceOf[js.Any]).asInstanceOf[Users]
     
     /* static member */
     @JSImport("socket.io.users", "Namespaces.socketUsersList")
@@ -151,13 +148,15 @@ object mod {
   }
   object Users {
     
+    @JSImport("socket.io.users", "Users")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("socket.io.users", "Users.of")
-    @js.native
-    def of(): Users = js.native
-    @JSImport("socket.io.users", "Users.of")
-    @js.native
-    def of(namespace: String): Users = js.native
+    @scala.inline
+    def of(): Users = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[Users]
+    @scala.inline
+    def of(namespace: String): Users = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(namespace.asInstanceOf[js.Any]).asInstanceOf[Users]
   }
   
   type SocketUserList = StringDictionary[Users]

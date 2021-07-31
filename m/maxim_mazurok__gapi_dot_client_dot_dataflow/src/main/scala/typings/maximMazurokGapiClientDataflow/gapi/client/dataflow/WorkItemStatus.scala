@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemStatus extends StObject {
   
   /** True if the WorkItem was completed (successfully or unsuccessfully). */
-  var completed: js.UndefOr[Boolean] = js.native
+  var completed: js.UndefOr[Boolean] = js.undefined
   
   /** Worker output counters for this WorkItem. */
-  var counterUpdates: js.UndefOr[js.Array[CounterUpdate]] = js.native
+  var counterUpdates: js.UndefOr[js.Array[CounterUpdate]] = js.undefined
   
   /** See documentation of stop_position. */
-  var dynamicSourceSplit: js.UndefOr[DynamicSourceSplit] = js.native
+  var dynamicSourceSplit: js.UndefOr[DynamicSourceSplit] = js.undefined
   
   /** Specifies errors which occurred during processing. If errors are provided, and completed = true, then the WorkItem is considered to have failed. */
-  var errors: js.UndefOr[js.Array[Status]] = js.native
+  var errors: js.UndefOr[js.Array[Status]] = js.undefined
   
   /** DEPRECATED in favor of counter_updates. */
-  var metricUpdates: js.UndefOr[js.Array[MetricUpdate]] = js.native
+  var metricUpdates: js.UndefOr[js.Array[MetricUpdate]] = js.undefined
   
   /** DEPRECATED in favor of reported_progress. */
-  var progress: js.UndefOr[ApproximateProgress] = js.native
+  var progress: js.UndefOr[ApproximateProgress] = js.undefined
   
   /**
     * The report index. When a WorkItem is leased, the lease will contain an initial report index. When a WorkItem's status is reported to the system, the report should be sent with that
@@ -32,19 +30,19 @@ trait WorkItemStatus extends StObject {
     * order to preserve idempotency, the worker should not alter the contents of a report, even if the worker must submit the same report multiple times before getting back a response.
     * The worker should not submit a subsequent report until the response for the previous report had been received from the service.
     */
-  var reportIndex: js.UndefOr[String] = js.native
+  var reportIndex: js.UndefOr[String] = js.undefined
   
   /** The worker's progress through this WorkItem. */
-  var reportedProgress: js.UndefOr[ApproximateReportedProgress] = js.native
+  var reportedProgress: js.UndefOr[ApproximateReportedProgress] = js.undefined
   
   /** Amount of time the worker requests for its lease. */
-  var requestedLeaseDuration: js.UndefOr[String] = js.native
+  var requestedLeaseDuration: js.UndefOr[String] = js.undefined
   
   /** DEPRECATED in favor of dynamic_source_split. */
-  var sourceFork: js.UndefOr[SourceFork] = js.native
+  var sourceFork: js.UndefOr[SourceFork] = js.undefined
   
   /** If the work item represented a SourceOperationRequest, and the work is completed, contains the result of the operation. */
-  var sourceOperationResponse: js.UndefOr[SourceOperationResponse] = js.native
+  var sourceOperationResponse: js.UndefOr[SourceOperationResponse] = js.undefined
   
   /**
     * A worker may split an active map task in two parts, "primary" and "residual", continuing to process the primary part and returning the residual part into the pool of available work.
@@ -58,13 +56,13 @@ trait WorkItemStatus extends StObject {
     * together equivalent to S), then subsequent progress and proposed_stop_position should be interpreted relative to P, and in a potential subsequent dynamic_source_split into {P', R'},
     * P' and R' must be together equivalent to P, etc.
     */
-  var stopPosition: js.UndefOr[Position] = js.native
+  var stopPosition: js.UndefOr[Position] = js.undefined
   
   /** Total time the worker spent being throttled by external systems. */
-  var totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.native
+  var totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.undefined
   
   /** Identifies the WorkItem. */
-  var workItemId: js.UndefOr[String] = js.native
+  var workItemId: js.UndefOr[String] = js.undefined
 }
 object WorkItemStatus {
   

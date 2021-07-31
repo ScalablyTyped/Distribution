@@ -4,24 +4,24 @@ import typings.antDesignColors.antDesignColorsStrings.dark
 import typings.antDesignColors.antDesignColorsStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateMod {
   
-  @JSImport("@ant-design/colors/dist/src/generate", JSImport.Default)
+  @JSImport("@ant-design/colors/dist/src/generate", JSImport.Namespace)
   @js.native
-  def default(color: String): js.Array[String] = js.native
-  @JSImport("@ant-design/colors/dist/src/generate", JSImport.Default)
-  @js.native
-  def default(color: String, opts: Opts): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(color: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def default(color: String, opts: Opts): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait Opts extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[dark | default] = js.native
+    var theme: js.UndefOr[dark | default] = js.undefined
   }
   object Opts {
     

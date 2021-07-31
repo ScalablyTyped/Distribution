@@ -3,19 +3,22 @@ package typings.caseSensitivePathsWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("case-sensitive-paths-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends CaseSensitivePathsWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with CaseSensitivePathsWebpackPlugin {
     def this(options: Options) = this()
   }
   
   @js.native
-  trait CaseSensitivePathsWebpackPlugin extends Plugin {
+  trait CaseSensitivePathsWebpackPlugin
+    extends StObject
+       with Plugin {
     
     @JSName("apply")
     def apply(
@@ -23,18 +26,17 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Show more information
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Run before emit instead of after resolve for individual files
       */
-    var useBeforeEmitHook: js.UndefOr[Boolean] = js.native
+    var useBeforeEmitHook: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

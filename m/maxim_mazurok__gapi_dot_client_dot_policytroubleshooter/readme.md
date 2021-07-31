@@ -10,9 +10,9 @@ TypeScript typings for Policy Troubleshooter API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.policytroubleshooter |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 1162 |
 | # stars            | 0 |
 
 ## Links

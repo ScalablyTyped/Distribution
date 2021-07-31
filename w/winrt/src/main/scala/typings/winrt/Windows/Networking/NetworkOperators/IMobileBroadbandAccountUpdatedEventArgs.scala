@@ -2,17 +2,15 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMobileBroadbandAccountUpdatedEventArgs extends StObject {
   
-  var hasDeviceInformationChanged: Boolean = js.native
+  var hasDeviceInformationChanged: Boolean
   
-  var hasNetworkChanged: Boolean = js.native
+  var hasNetworkChanged: Boolean
   
-  var networkAccountId: String = js.native
+  var networkAccountId: String
 }
 object IMobileBroadbandAccountUpdatedEventArgs {
   

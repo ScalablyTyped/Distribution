@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyViewMod {
@@ -13,14 +12,13 @@ object storyViewMod {
   @js.native
   class default () extends StoryView
   
-  @js.native
   trait Props extends StObject {
     
-    var onDevice: js.UndefOr[Boolean] = js.native
+    var onDevice: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.Any = js.native
+    var stories: js.Any
     
-    var url: String = js.native
+    var url: String
   }
   object Props {
     

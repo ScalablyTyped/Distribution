@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportHeader extends StObject {
   
   /** The date range for which the report is generated. This is identical to the range specified in the report request. */
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
   /** Localization settings of the report. This is identical to the settings in the report request. */
-  var localizationSettings: js.UndefOr[LocalizationSettings] = js.native
+  var localizationSettings: js.UndefOr[LocalizationSettings] = js.undefined
   
   /** The report time zone. The value is a time-zone ID as specified by the CLDR project, for example, "America/Los_Angeles". */
-  var reportingTimeZone: js.UndefOr[String] = js.native
+  var reportingTimeZone: js.UndefOr[String] = js.undefined
 }
 object ReportHeader {
   

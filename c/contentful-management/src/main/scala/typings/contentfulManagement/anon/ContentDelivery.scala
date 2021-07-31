@@ -2,21 +2,19 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentDelivery extends StObject {
   
-  var ContentDelivery: js.Array[String] | String = js.native
+  var ContentDelivery: js.Array[String] | String
   
-  var ContentModel: js.Array[String] = js.native
+  var ContentModel: js.Array[String]
   
-  var EnvironmentAliases: js.Array[String] | String = js.native
+  var EnvironmentAliases: js.Array[String] | String
   
-  var Environments: js.Array[String] | String = js.native
+  var Environments: js.Array[String] | String
   
-  var Settings: js.Array[String] | String = js.native
+  var Settings: js.Array[String] | String
 }
 object ContentDelivery {
   

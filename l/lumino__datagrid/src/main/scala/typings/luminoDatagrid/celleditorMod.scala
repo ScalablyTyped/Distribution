@@ -14,7 +14,6 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object celleditorMod {
@@ -54,7 +53,8 @@ object celleditorMod {
     * Construct a new cell editor.
     */
   abstract class CellEditor ()
-    extends ICellEditor
+    extends StObject
+       with ICellEditor
        with IDisposable {
     
     /**
@@ -100,6 +100,20 @@ object celleditorMod {
     /* protected */ def createValidatorBasedOnType(): js.UndefOr[ICellInputValidator] = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * The div element used to contain and position editor widget.
       */
     var editorContainer: HTMLDivElement = js.native
@@ -119,6 +133,15 @@ object celleditorMod {
       * A signal emitted when input changes.
       */
     var inputChanged: Signal[this.type, Unit] = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * Callback method to call on cell edit cancel.
@@ -184,23 +207,22 @@ object celleditorMod {
     /**
       * An object which holds the configuration data for a cell.
       */
-    @js.native
     trait CellConfig extends StObject {
       
       /**
         * The column index of the cell.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The grid containing the cell.
         */
-      val grid: DataGrid = js.native
+      val grid: DataGrid
       
       /**
         * The row index of the cell.
         */
-      val row: Double = js.native
+      val row: Double
     }
     object CellConfig {
       
@@ -325,7 +347,9 @@ object celleditorMod {
   
   @JSImport("@lumino/datagrid/lib/celleditor", "IntegerInputValidator")
   @js.native
-  class IntegerInputValidator () extends ICellInputValidator {
+  class IntegerInputValidator ()
+    extends StObject
+       with ICellInputValidator {
     
     /**
       * Maximum value
@@ -350,6 +374,17 @@ object celleditorMod {
       *
       * @returns An object with validation result.
       */
+    /* CompleteClass */
+    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    /**
+      * Validate cell input.
+      *
+      * @param cell - The object holding cell configuration data.
+      *
+      * @param value - The cell value input.
+      *
+      * @returns An object with validation result.
+      */
     def validate(cell: CellConfig, value: Double): ICellInputValidatorResponse = js.native
   }
   
@@ -362,7 +397,9 @@ object celleditorMod {
   
   @JSImport("@lumino/datagrid/lib/celleditor", "NumberInputValidator")
   @js.native
-  class NumberInputValidator () extends ICellInputValidator {
+  class NumberInputValidator ()
+    extends StObject
+       with ICellInputValidator {
     
     /**
       * Maximum value
@@ -378,6 +415,17 @@ object celleditorMod {
       */
     var min: Double = js.native
     
+    /**
+      * Validate cell input.
+      *
+      * @param cell - The object holding cell configuration data.
+      *
+      * @param value - The cell value input.
+      *
+      * @returns An object with validation result.
+      */
+    /* CompleteClass */
+    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
     /**
       * Validate cell input.
       *
@@ -414,7 +462,22 @@ object celleditorMod {
   
   @JSImport("@lumino/datagrid/lib/celleditor", "PassInputValidator")
   @js.native
-  class PassInputValidator () extends ICellInputValidator
+  class PassInputValidator ()
+    extends StObject
+       with ICellInputValidator {
+    
+    /**
+      * Validate cell input.
+      *
+      * @param cell - The object holding cell configuration data.
+      *
+      * @param value - The cell value input.
+      *
+      * @returns An object with validation result.
+      */
+    /* CompleteClass */
+    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+  }
   
   @JSImport("@lumino/datagrid/lib/celleditor", "TextCellEditor")
   @js.native
@@ -425,7 +488,9 @@ object celleditorMod {
   
   @JSImport("@lumino/datagrid/lib/celleditor", "TextInputValidator")
   @js.native
-  class TextInputValidator () extends ICellInputValidator {
+  class TextInputValidator ()
+    extends StObject
+       with ICellInputValidator {
     
     /**
       * Maximum text length
@@ -458,6 +523,17 @@ object celleditorMod {
       * @returns An object with validation result.
       */
     def validate(cell: CellConfig, value: String): ICellInputValidatorResponse = js.native
+    /**
+      * Validate cell input.
+      *
+      * @param cell - The object holding cell configuration data.
+      *
+      * @param value - The cell value input.
+      *
+      * @returns An object with validation result.
+      */
+    /* CompleteClass */
+    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -475,7 +551,9 @@ object celleditorMod {
     - typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option`
     - typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option`
   */
-  trait CellDataType extends _EditorOverrideIdentifier
+  trait CellDataType
+    extends StObject
+       with _EditorOverrideIdentifier
   object CellDataType {
     
     @scala.inline
@@ -518,7 +596,6 @@ object celleditorMod {
     def stringColonoption: typings.luminoDatagrid.luminoDatagridStrings.stringColonoption = "string:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.stringColonoption]
   }
   
-  @js.native
   trait ICellEditOptions extends StObject {
     
     /**
@@ -529,22 +606,22 @@ object celleditorMod {
       * If not set, controller picks the most suitable editor
       * for the particular cell configuration.
       */
-    var editor: js.UndefOr[ICellEditor] = js.native
+    var editor: js.UndefOr[ICellEditor] = js.undefined
     
     /**
       * Callback method to call on cell edit cancel.
       */
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback method to call on cell edit commit.
       */
-    var onCommit: js.UndefOr[js.Function1[/* response */ ICellEditResponse, Unit]] = js.native
+    var onCommit: js.UndefOr[js.Function1[/* response */ ICellEditResponse, Unit]] = js.undefined
     
     /**
       * Cell input validator to use for value validation.
       */
-    var validator: js.UndefOr[ICellInputValidator] = js.native
+    var validator: js.UndefOr[ICellInputValidator] = js.undefined
   }
   object ICellEditOptions {
     
@@ -583,23 +660,22 @@ object celleditorMod {
     }
   }
   
-  @js.native
   trait ICellEditResponse extends StObject {
     
     /**
       * An object which holds the configuration data for a cell.
       */
-    var cell: CellConfig = js.native
+    var cell: CellConfig
     
     /**
       * Cursor move direction based on keys pressed to end the edit.
       */
-    var cursorMovement: CursorMoveDirection = js.native
+    var cursorMovement: CursorMoveDirection
     
     /**
       * Value input.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ICellEditResponse {
     
@@ -642,7 +718,6 @@ object celleditorMod {
     def edit(cell: CellConfig, options: ICellEditOptions): Unit = js.native
   }
   
-  @js.native
   trait ICellInputValidator extends StObject {
     
     /**
@@ -654,7 +729,7 @@ object celleditorMod {
       *
       * @returns An object with validation result.
       */
-    def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse
   }
   object ICellInputValidator {
     
@@ -672,18 +747,17 @@ object celleditorMod {
     }
   }
   
-  @js.native
   trait ICellInputValidatorResponse extends StObject {
     
     /**
       * Validation error message. Set only when input is invalid
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * Flag indicating cell input is valid or not
       */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object ICellInputValidatorResponse {
     
@@ -715,24 +789,23 @@ object celleditorMod {
     /**
       * A type alias for cell properties.
       */
-    @js.native
     trait ICellInfo extends StObject {
       
-      var column: Double = js.native
+      var column: Double
       
-      var data: js.Any = js.native
+      var data: js.Any
       
-      var grid: DataGrid = js.native
+      var grid: DataGrid
       
-      var height: Double = js.native
+      var height: Double
       
-      var row: Double = js.native
+      var row: Double
       
-      var width: Double = js.native
+      var width: Double
       
-      var x: Double = js.native
+      var x: Double
       
-      var y: Double = js.native
+      var y: Double
     }
     object ICellInfo {
       

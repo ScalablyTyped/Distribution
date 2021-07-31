@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.sceneanalyzed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an effect that analyzes video frames to determine if any of the supported variable photo sequence capture techniques may produce a higher-quality captured image. */
 @js.native
 trait SceneAnalysisEffect extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sceneanalyzed(`type`: sceneanalyzed, listener: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs]): Unit = js.native
   
@@ -25,12 +24,12 @@ trait SceneAnalysisEffect extends StObject {
   var highDynamicRangeAnalyzer: HighDynamicRangeControl = js.native
   
   /** Raised when the scene analysis is complete. */
-  def onsceneanalyzed(ev: SceneAnalyzedEventArgs with WinRTEvent[SceneAnalysisEffect]): Unit = js.native
+  def onsceneanalyzed(ev: SceneAnalyzedEventArgs & WinRTEvent[SceneAnalysisEffect]): Unit = js.native
   /** Raised when the scene analysis is complete. */
   @JSName("onsceneanalyzed")
   var onsceneanalyzed_Original: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sceneanalyzed(`type`: sceneanalyzed, listener: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs]): Unit = js.native
   

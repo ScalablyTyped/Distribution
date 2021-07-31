@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSGesture extends StObject {
   
-  def addPointer(pointerId: Double): Unit = js.native
+  def addPointer(pointerId: Double): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
   
-  var target: Element = js.native
+  var target: Element
 }
 object MSGesture {
   

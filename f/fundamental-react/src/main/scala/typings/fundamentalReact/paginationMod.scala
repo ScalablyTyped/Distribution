@@ -5,7 +5,6 @@ import typings.fundamentalReact.anon.Next
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -17,37 +16,37 @@ object paginationMod {
   
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var displayTotal: js.UndefOr[Boolean] = js.native
+    var displayTotal: js.UndefOr[Boolean] = js.undefined
     
-    var displayTotalProps: js.UndefOr[js.Any] = js.native
+    var displayTotalProps: js.UndefOr[js.Any] = js.undefined
     
-    var initialPage: js.UndefOr[Double] = js.native
+    var initialPage: js.UndefOr[Double] = js.undefined
     
-    var itemsPerPage: js.UndefOr[Double] = js.native
+    var itemsPerPage: js.UndefOr[Double] = js.undefined
     
-    var itemsTotal: Double = js.native
+    var itemsTotal: Double
     
-    var linkProps: js.UndefOr[js.Any] = js.native
+    var linkProps: js.UndefOr[js.Any] = js.undefined
     
-    var localizedText: js.UndefOr[Next] = js.native
+    var localizedText: js.UndefOr[Next] = js.undefined
     
-    var nextProps: js.UndefOr[js.Any] = js.native
+    var nextProps: js.UndefOr[js.Any] = js.undefined
     
-    def onClick(args: js.Any*): js.Any = js.native
+    def onClick(args: js.Any*): js.Any
     
-    var prevProps: js.UndefOr[js.Any] = js.native
+    var prevProps: js.UndefOr[js.Any] = js.undefined
     
-    var totalText: js.UndefOr[String] = js.native
+    var totalText: js.UndefOr[String] = js.undefined
     
-    var visiblePageTotal: js.UndefOr[Double] = js.native
+    var visiblePageTotal: js.UndefOr[Double] = js.undefined
   }
   object PaginationProps {
     

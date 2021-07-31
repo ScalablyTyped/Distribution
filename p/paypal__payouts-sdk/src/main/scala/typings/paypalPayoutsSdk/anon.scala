@@ -2,27 +2,25 @@ package typings.paypalPayoutsSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alternatefullname extends StObject {
     
-    var alternate_full_name: js.UndefOr[String] = js.native
+    var alternate_full_name: js.UndefOr[String] = js.undefined
     
-    var full_name: js.UndefOr[String] = js.native
+    var full_name: js.UndefOr[String] = js.undefined
     
-    var given_name: js.UndefOr[String] = js.native
+    var given_name: js.UndefOr[String] = js.undefined
     
-    var middle_name: js.UndefOr[String] = js.native
+    var middle_name: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var surname: js.UndefOr[String] = js.native
+    var surname: js.UndefOr[String] = js.undefined
   }
   object Alternatefullname {
     
@@ -79,14 +77,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Countrycode extends StObject {
     
-    var country_code: String = js.native
+    var country_code: String
     
-    var extension_number: js.UndefOr[String] = js.native
+    var extension_number: js.UndefOr[String] = js.undefined
     
-    var national_number: String = js.native
+    var national_number: String
   }
   object Countrycode {
     
@@ -113,12 +110,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Currency extends StObject {
     
-    var currency: String = js.native
+    var currency: String
     
-    var value: String = js.native
+    var value: String
   }
   object Currency {
     
@@ -139,10 +135,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Phone extends StObject {
     
-    var phone: js.UndefOr[Countrycode] = js.native
+    var phone: js.UndefOr[Countrycode] = js.undefined
   }
   object Phone {
     

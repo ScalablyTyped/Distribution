@@ -2,48 +2,46 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOfAuthorities extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Bookmark: String = js.native
+  var Bookmark: String
   
-  var Category: Double = js.native
+  var Category: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var EntrySeparator: String = js.native
+  var EntrySeparator: String
   
-  var IncludeCategoryHeader: Boolean = js.native
+  var IncludeCategoryHeader: Boolean
   
-  var IncludeSequenceName: String = js.native
+  var IncludeSequenceName: String
   
-  var KeepEntryFormatting: Boolean = js.native
+  var KeepEntryFormatting: Boolean
   
-  var PageNumberSeparator: String = js.native
+  var PageNumberSeparator: String
   
-  var PageRangeSeparator: String = js.native
+  var PageRangeSeparator: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Passim: Boolean = js.native
+  var Passim: Boolean
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  var Separator: String = js.native
+  var Separator: String
   
-  var TabLeader: WdTabLeader = js.native
+  var TabLeader: WdTabLeader
   
-  def Update(): Unit = js.native
+  def Update(): Unit
   
   @JSName("Word.TableOfAuthorities_typekey")
-  var WordDotTableOfAuthorities_typekey: TableOfAuthorities = js.native
+  var WordDotTableOfAuthorities_typekey: TableOfAuthorities
 }
 object TableOfAuthorities {
   

@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundsFactory extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait BoundsFactory extends StObject {
     * @param {vector} point
     * @return {boolean} True if the bounds contain the point, otherwise false
     */
-  def contains(bounds: IBound, point: Vector): Boolean = js.native
+  def contains(bounds: IBound, point: Vector): Boolean
   
   /**
     * Creates a new axis-aligned bounding box (AABB) for the given vertices.
@@ -23,7 +21,7 @@ trait BoundsFactory extends StObject {
     * @param {vertices} vertices
     * @return {IBound} A new bounds object
     */
-  def create(vertices: Vertices): IBound = js.native
+  def create(vertices: Vertices): IBound
   
   /**
     * Returns true if the two bounds intersect.
@@ -32,7 +30,7 @@ trait BoundsFactory extends StObject {
     * @param {IBound} boundsB
     * @return {boolean} True if the bounds overlap, otherwise false
     */
-  def overlaps(boundsA: IBound, boundsB: IBound): Boolean = js.native
+  def overlaps(boundsA: IBound, boundsB: IBound): Boolean
   
   /**
     * Shifts the bounds to the given position.
@@ -40,7 +38,7 @@ trait BoundsFactory extends StObject {
     * @param {IBound} bounds
     * @param {vector} position
     */
-  def shift(bounds: IBound, position: Vector): Unit = js.native
+  def shift(bounds: IBound, position: Vector): Unit
   
   /**
     * Translates the bounds by the given vector.
@@ -48,7 +46,7 @@ trait BoundsFactory extends StObject {
     * @param {IBound} bounds
     * @param {vector} vector
     */
-  def translate(bounds: IBound, vector: Vector): Unit = js.native
+  def translate(bounds: IBound, vector: Vector): Unit
   
   /**
     * Updates bounds using the given vertices and extends the bounds given a velocity.
@@ -57,7 +55,7 @@ trait BoundsFactory extends StObject {
     * @param {vertices} vertices
     * @param {vector} velocity
     */
-  def update(bounds: IBound, vertices: Vertices, velocity: Vector): Unit = js.native
+  def update(bounds: IBound, vertices: Vertices, velocity: Vector): Unit
 }
 object BoundsFactory {
   

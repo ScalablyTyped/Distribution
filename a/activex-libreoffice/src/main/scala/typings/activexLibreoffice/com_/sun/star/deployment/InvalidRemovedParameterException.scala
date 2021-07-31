@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,21 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XPackage} object created by that call still exist.
   * @since OOo 3.3
   */
-@js.native
-trait InvalidRemovedParameterException extends Exception {
+trait InvalidRemovedParameterException
+  extends StObject
+     with Exception {
   
   /**
     * the {@link XPackage} that was already bound to the provided `url` parameter during {@link XPackageRegistry.bindPackage()} .
     *
     * Must not be `NULL` .
     */
-  var Extension: XPackage = js.native
+  var Extension: XPackage
   
   /**
     * the value of the `removed` parameter which was used in {@link XPackageRegistry.bindPackage()} to create the currently existing {@link XPackage}
     * object.
     */
-  var PreviousValue: Boolean = js.native
+  var PreviousValue: Boolean
 }
 object InvalidRemovedParameterException {
   

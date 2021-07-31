@@ -3,31 +3,31 @@ package typings.eggCookies
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("egg-cookies", JSImport.Namespace)
   @js.native
-  class ^ () extends EggCookies {
+  class ^ ()
+    extends StObject
+       with EggCookies {
     def this(ctx: js.Any) = this()
-    def this(ctx: js.UndefOr[scala.Nothing], keys: js.Any) = this()
     def this(ctx: js.Any, keys: js.Any) = this()
+    def this(ctx: Unit, keys: js.Any) = this()
   }
   
-  @js.native
   trait CookieGetOptions extends StObject {
     
     /**
       * Encrypt the cookie's value or not (The default value is false).
       */
-    var encrypt: js.UndefOr[Boolean] = js.native
+    var encrypt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to sign or not (The default value is true).
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object CookieGetOptions {
     
@@ -54,58 +54,57 @@ object mod {
     }
   }
   
-  @js.native
   trait CookieSetOptions extends StObject {
     
     /**
       * The domain for the cookie
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Encrypt the cookie's value or not
       */
-    var encrypt: js.UndefOr[Boolean] = js.native
+    var encrypt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Expire time
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * Is for http only
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Max age for browsers
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * Is overridable
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path for the cookie to be set in
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Is the same site
       */
-    var sameSite: js.UndefOr[Boolean | String] = js.native
+    var sameSite: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Encrypt the cookie's value or not
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is it signed or not.
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object CookieSetOptions {
     
@@ -200,9 +199,9 @@ object mod {
       * @returns The current 'EggCookie' instance.
       */
     def set(name: String): this.type = js.native
-    def set(name: String, value: js.UndefOr[scala.Nothing], opts: CookieSetOptions): this.type = js.native
     def set(name: String, value: String): this.type = js.native
     def set(name: String, value: String, opts: CookieSetOptions): this.type = js.native
     def set(name: String, value: Null, opts: CookieSetOptions): this.type = js.native
+    def set(name: String, value: Unit, opts: CookieSetOptions): this.type = js.native
   }
 }

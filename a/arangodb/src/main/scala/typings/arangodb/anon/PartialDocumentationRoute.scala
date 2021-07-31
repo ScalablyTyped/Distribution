@@ -5,20 +5,18 @@ import typings.arangodb.Foxx.Response
 import typings.arangodb.arangodbBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<arangodb.Foxx.DocumentationRouterOptions> */
-@js.native
 trait PartialDocumentationRoute extends StObject {
   
-  var before: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Unit | `false`]] = js.native
+  var before: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Unit | `false`]] = js.undefined
   
-  var indexFile: js.UndefOr[String] = js.native
+  var indexFile: js.UndefOr[String] = js.undefined
   
-  var mount: js.UndefOr[String] = js.native
+  var mount: js.UndefOr[String] = js.undefined
   
-  var swaggerRoot: js.UndefOr[String] = js.native
+  var swaggerRoot: js.UndefOr[String] = js.undefined
 }
 object PartialDocumentationRoute {
   

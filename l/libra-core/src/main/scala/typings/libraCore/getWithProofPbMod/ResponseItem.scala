@@ -10,7 +10,6 @@ import typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem")
@@ -69,36 +68,44 @@ object ResponseItem {
   object ResponseItemsCase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ResponseItemsCase with Double] = js.native
+    def apply(value: Double): js.UndefOr[ResponseItemsCase & Double] = js.native
     
     @js.native
-    sealed trait GET_ACCOUNT_STATE_RESPONSE extends ResponseItemsCase
-    /* 3 */ val GET_ACCOUNT_STATE_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_STATE_RESPONSE with Double = js.native
+    sealed trait GET_ACCOUNT_STATE_RESPONSE
+      extends StObject
+         with ResponseItemsCase
+    /* 3 */ val GET_ACCOUNT_STATE_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_STATE_RESPONSE & Double = js.native
     
     @js.native
-    sealed trait GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE extends ResponseItemsCase
-    /* 4 */ val GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE with Double = js.native
+    sealed trait GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE
+      extends StObject
+         with ResponseItemsCase
+    /* 4 */ val GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE & Double = js.native
     
     @js.native
-    sealed trait GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE extends ResponseItemsCase
-    /* 5 */ val GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE with Double = js.native
+    sealed trait GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE
+      extends StObject
+         with ResponseItemsCase
+    /* 5 */ val GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE & Double = js.native
     
     @js.native
-    sealed trait GET_TRANSACTIONS_RESPONSE extends ResponseItemsCase
-    /* 6 */ val GET_TRANSACTIONS_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_TRANSACTIONS_RESPONSE with Double = js.native
+    sealed trait GET_TRANSACTIONS_RESPONSE
+      extends StObject
+         with ResponseItemsCase
+    /* 6 */ val GET_TRANSACTIONS_RESPONSE: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.GET_TRANSACTIONS_RESPONSE & Double = js.native
     
     @js.native
-    sealed trait RESPONSEITEMS_NOT_SET extends ResponseItemsCase
-    /* 0 */ val RESPONSEITEMS_NOT_SET: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.RESPONSEITEMS_NOT_SET with Double = js.native
+    sealed trait RESPONSEITEMS_NOT_SET
+      extends StObject
+         with ResponseItemsCase
+    /* 0 */ val RESPONSEITEMS_NOT_SET: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.RESPONSEITEMS_NOT_SET & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): ResponseItem = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): ResponseItem = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ResponseItem]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: ResponseItem, reader: BinaryReader): ResponseItem = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: ResponseItem, reader: BinaryReader): ResponseItem = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ResponseItem]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.extensions")
   @js.native
@@ -113,26 +120,23 @@ object ResponseItem {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: ResponseItem, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: ResponseItem, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: ResponseItem): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: ResponseItem): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var getAccountStateResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetAccountStateResponse.AsObject] = js.native
+    var getAccountStateResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetAccountStateResponse.AsObject] = js.undefined
     
     var getAccountTransactionBySequenceNumberResponse: js.UndefOr[
         typings.libraCore.getWithProofPbMod.GetAccountTransactionBySequenceNumberResponse.AsObject
-      ] = js.native
+      ] = js.undefined
     
-    var getEventsByEventAccessPathResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetEventsByEventAccessPathResponse.AsObject] = js.native
+    var getEventsByEventAccessPathResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetEventsByEventAccessPathResponse.AsObject] = js.undefined
     
-    var getTransactionsResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetTransactionsResponse.AsObject] = js.native
+    var getTransactionsResponse: js.UndefOr[typings.libraCore.getWithProofPbMod.GetTransactionsResponse.AsObject] = js.undefined
   }
   object AsObject {
     

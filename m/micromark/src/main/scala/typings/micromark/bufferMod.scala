@@ -5,39 +5,32 @@ import typings.micromark.sharedTypesMod.BufferEncoding
 import typings.micromark.sharedTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
   
-  @JSImport("micromark/buffer", JSImport.Default)
+  @JSImport("micromark/buffer", JSImport.Namespace)
   @js.native
-  def default(value: String): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: String, encoding: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: String, encoding: BufferEncoding): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: String, encoding: BufferEncoding, options: Options): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: String, options: Options): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: Buffer): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: Buffer, encoding: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: Buffer, encoding: BufferEncoding): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: Buffer, encoding: BufferEncoding, options: Options): String = js.native
-  @JSImport("micromark/buffer", JSImport.Default)
-  @js.native
-  def default(value: Buffer, options: Options): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(value: String, encoding: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: String, encoding: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: String, encoding: BufferEncoding, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(value: Buffer, encoding: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Buffer, encoding: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Buffer, encoding: BufferEncoding, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

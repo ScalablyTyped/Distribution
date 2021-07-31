@@ -2,21 +2,19 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Manages image data._
   * @see https://docs.scriptable.app/image
   */
-@js.native
 trait Image extends StObject {
   
   /**
     * _Size of the image in pixels._
     * @see https://docs.scriptable.app/image/#size
     */
-  var size: Size = js.native
+  var size: Size
 }
 object Image {
   

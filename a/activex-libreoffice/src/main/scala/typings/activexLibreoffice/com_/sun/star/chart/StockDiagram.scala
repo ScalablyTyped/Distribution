@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,11 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **StockDiagram::Volume is TRUEStockDiagram::UpDown is TRUE**{{table here, see documentation}}
   */
-@js.native
 trait StockDiagram
-  extends Diagram
+  extends StObject
      with XStatisticDisplay
      with ChartStatistics
+     with Diagram
      with ChartAxisXSupplier
      with ChartTwoAxisYSupplier {
   
@@ -48,7 +47,7 @@ trait StockDiagram
     * If this property is set to `TRUE` , one additional series is needed with the opening value of the stocks. It is assumed as the series before the
     * series with the day's lowest value.
     */
-  var UpDown: Boolean = js.native
+  var UpDown: Boolean
   
   /**
     * indicates if a stock chart contains data representing the volume of stocks.
@@ -57,7 +56,7 @@ trait StockDiagram
     *
     * If this property is set to `TRUE` , the values of the first series of the chart data are interpreted as volume.
     */
-  var Volume: Boolean = js.native
+  var Volume: Boolean
 }
 object StockDiagram {
   

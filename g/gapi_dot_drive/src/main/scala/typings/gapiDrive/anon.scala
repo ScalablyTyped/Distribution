@@ -4,23 +4,21 @@ import typings.gapiDrive.gapiDriveStrings.driveNumbersignuser
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdditionalRoles extends StObject {
     
-    var additionalRoles: js.Array[String] = js.native
+    var additionalRoles: js.Array[String]
     
-    var inherited: Boolean = js.native
+    var inherited: Boolean
     
-    var inheritedFrom: String = js.native
+    var inheritedFrom: String
     
-    var role: String = js.native
+    var role: String
     
-    var teamDrivePermissionType: String = js.native
+    var teamDrivePermissionType: String
   }
   object AdditionalRoles {
     
@@ -59,14 +57,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Altitude extends StObject {
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Altitude {
     
@@ -90,50 +87,49 @@ object anon {
     }
   }
   
-  @js.native
   trait Aperture extends StObject {
     
-    var aperture: Double = js.native
+    var aperture: Double
     
-    var cameraMake: String = js.native
+    var cameraMake: String
     
-    var cameraModel: String = js.native
+    var cameraModel: String
     
-    var colorSpace: String = js.native
+    var colorSpace: String
     
-    var date: String = js.native
+    var date: String
     
-    var exposureBias: Double = js.native
+    var exposureBias: Double
     
-    var exposureMode: String = js.native
+    var exposureMode: String
     
-    var exposureTime: Double = js.native
+    var exposureTime: Double
     
-    var flashUsed: Boolean = js.native
+    var flashUsed: Boolean
     
-    var focalLength: Double = js.native
+    var focalLength: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var isoSpeed: Double = js.native
+    var isoSpeed: Double
     
-    var lens: String = js.native
+    var lens: String
     
-    var location: Altitude = js.native
+    var location: Altitude
     
-    var maxApertureValue: Double = js.native
+    var maxApertureValue: Double
     
-    var meteringMode: String = js.native
+    var meteringMode: String
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var sensor: String = js.native
+    var sensor: String
     
-    var subjectDistance: Double = js.native
+    var subjectDistance: Double
     
-    var whiteBalance: String = js.native
+    var whiteBalance: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Aperture {
     
@@ -233,42 +229,41 @@ object anon {
     }
   }
   
-  @js.native
   trait CanAddChildren extends StObject {
     
-    var canAddChildren: Boolean = js.native
+    var canAddChildren: Boolean
     
-    var canChangeRestrictedDownload: Boolean = js.native
+    var canChangeRestrictedDownload: Boolean
     
-    var canComment: Boolean = js.native
+    var canComment: Boolean
     
-    var canCopy: Boolean = js.native
+    var canCopy: Boolean
     
-    var canDelete: Boolean = js.native
+    var canDelete: Boolean
     
-    var canDownload: Boolean = js.native
+    var canDownload: Boolean
     
-    var canEdit: Boolean = js.native
+    var canEdit: Boolean
     
-    var canListChildren: Boolean = js.native
+    var canListChildren: Boolean
     
-    var canMoveItemIntoTeamDrive: Boolean = js.native
+    var canMoveItemIntoTeamDrive: Boolean
     
-    var canMoveTeamDriveItem: Boolean = js.native
+    var canMoveTeamDriveItem: Boolean
     
-    var canReadRevisions: Boolean = js.native
+    var canReadRevisions: Boolean
     
-    var canReadTeamDrive: Boolean = js.native
+    var canReadTeamDrive: Boolean
     
-    var canRemoveChildren: Boolean = js.native
+    var canRemoveChildren: Boolean
     
-    var canRename: Boolean = js.native
+    var canRename: Boolean
     
-    var canShare: Boolean = js.native
+    var canShare: Boolean
     
-    var canTrash: Boolean = js.native
+    var canTrash: Boolean
     
-    var canUntrash: Boolean = js.native
+    var canUntrash: Boolean
   }
   object CanAddChildren {
     
@@ -352,20 +347,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DisplayName extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var emailAddress: String = js.native
+    var emailAddress: String
     
-    var isAuthenticatedUser: Boolean = js.native
+    var isAuthenticatedUser: Boolean
     
-    var kind: driveNumbersignuser = js.native
+    var kind: driveNumbersignuser
     
-    var permissionId: String = js.native
+    var permissionId: String
     
-    var picture: Url = js.native
+    var picture: Url
   }
   object DisplayName {
     
@@ -374,11 +368,10 @@ object anon {
       displayName: String,
       emailAddress: String,
       isAuthenticatedUser: Boolean,
-      kind: driveNumbersignuser,
       permissionId: String,
       picture: Url
     ): DisplayName = {
-      val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], isAuthenticatedUser = isAuthenticatedUser.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], permissionId = permissionId.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], isAuthenticatedUser = isAuthenticatedUser.asInstanceOf[js.Any], kind = "drive#user", permissionId = permissionId.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayName]
     }
     
@@ -405,14 +398,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DurationMillis extends StObject {
     
-    var durationMillis: Double = js.native
+    var durationMillis: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object DurationMillis {
     
@@ -436,20 +428,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Hidden extends StObject {
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var modified: Boolean = js.native
+    var modified: Boolean
     
-    var restricted: Boolean = js.native
+    var restricted: Boolean
     
-    var starred: Boolean = js.native
+    var starred: Boolean
     
-    var trashed: Boolean = js.native
+    var trashed: Boolean
     
-    var viewed: Boolean = js.native
+    var viewed: Boolean
   }
   object Hidden {
     
@@ -489,12 +480,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var image: Uint8Array = js.native
+    var image: Uint8Array
     
-    var mimType: String = js.native
+    var mimType: String
   }
   object Image {
     
@@ -515,10 +505,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     
@@ -536,10 +525,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

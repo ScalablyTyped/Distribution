@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1AsyncBatchAnnotateFilesResponse extends StObject {
   
   /** The list of file annotation responses, one for each request in AsyncBatchAnnotateFilesRequest. */
-  var responses: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse]] = js.native
+  var responses: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse]] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1AsyncBatchAnnotateFilesResponse {
   

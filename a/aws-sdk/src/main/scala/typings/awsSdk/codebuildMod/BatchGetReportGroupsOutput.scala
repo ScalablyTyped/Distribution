@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetReportGroupsOutput extends StObject {
   
   /**
     *  The array of report groups returned by BatchGetReportGroups. 
     */
-  var reportGroups: js.UndefOr[ReportGroups] = js.native
+  var reportGroups: js.UndefOr[ReportGroups] = js.undefined
   
   /**
     *  An array of ARNs passed to BatchGetReportGroups that are not associated with a ReportGroup. 
     */
-  var reportGroupsNotFound: js.UndefOr[ReportGroupArns] = js.native
+  var reportGroupsNotFound: js.UndefOr[ReportGroupArns] = js.undefined
 }
 object BatchGetReportGroupsOutput {
   

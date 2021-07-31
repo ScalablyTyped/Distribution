@@ -7,7 +7,6 @@ import typings.tensorflowTfjsLayers.optimizerConfigMod.OptimizerSerialization
 import typings.tensorflowTfjsLayers.regularizerConfigMod.RegularizerSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kerasClassNamesMod {

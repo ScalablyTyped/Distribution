@@ -5,17 +5,15 @@ import typings.reactSketchapp.mod.TextStyle
 import typings.reactSketchapp.typesMod.SketchContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClearExistingStyles extends StObject {
     
-    var clearExistingStyles: js.UndefOr[Boolean] = js.native
+    var clearExistingStyles: js.UndefOr[Boolean] = js.undefined
     
-    var context: SketchContext = js.native
+    var context: SketchContext
   }
   object ClearExistingStyles {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -71,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsInAParentText extends StObject {
     
-    var isInAParentText: Boolean = js.native
+    var isInAParentText: Boolean
   }
   object IsInAParentText {
     
@@ -92,10 +88,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Overrides extends StObject {
     
-    var overrides: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var overrides: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object Overrides {
     
@@ -116,10 +111,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Src extends StObject {
     
-    var src: String = js.native
+    var src: String
   }
   object Src {
     
@@ -137,10 +131,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: typings.reactSketchapp.mod.Style | TextStyle = js.native
+    var style: typings.reactSketchapp.mod.Style | TextStyle
   }
   object Style {
     
@@ -158,12 +151,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     

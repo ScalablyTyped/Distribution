@@ -3,39 +3,37 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFExportContentFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExportContentJob extends StObject {
   
-  def Clone(): IExportContentJob = js.native
+  def Clone(): IExportContentJob
   
-  var ExportContent: Boolean = js.native
+  var ExportContent: Boolean
   
-  var ExportStructureItems: Boolean = js.native
+  var ExportStructureItems: Boolean
   
-  var Flags: MFExportContentFlag = js.native
+  var Flags: MFExportContentFlag
   
-  var IgnoreChangesBefore: ITimestamp = js.native
+  var IgnoreChangesBefore: ITimestamp
   
-  var Impersonation: IImpersonation = js.native
+  var Impersonation: IImpersonation
   
-  var IncludePrivateUISettingsWithStructure: Boolean = js.native
+  var IncludePrivateUISettingsWithStructure: Boolean
   
-  var IncludeValueListItemsWithStructure: Boolean = js.native
+  var IncludeValueListItemsWithStructure: Boolean
   
-  var SearchConditions: ISearchConditions = js.native
+  var SearchConditions: ISearchConditions
   
-  def SetExportAllStructureItems(IncludeValueListItems: Boolean): Unit = js.native
+  def SetExportAllStructureItems(IncludeValueListItems: Boolean): Unit
   
-  var StructureItems: IExportStructureItems = js.native
+  var StructureItems: IExportStructureItems
   
-  var TargetLocation: String = js.native
+  var TargetLocation: String
   
-  var UseIgnoreChangesBefore: Boolean = js.native
+  var UseIgnoreChangesBefore: Boolean
   
-  var UseSearchConditions: Boolean = js.native
+  var UseSearchConditions: Boolean
 }
 object IExportContentJob {
   

@@ -6,14 +6,13 @@ import typings.wordpressBlockEditor.anon.Children
 import typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InnerBlocks {
   
-  @JSImport("@wordpress/block-editor/components", "InnerBlocks")
-  @js.native
-  def apply(props: Props): Element = js.native
+  @scala.inline
+  def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("@wordpress/block-editor/components", "InnerBlocks")
   @js.native
   val ^ : js.Any = js.native

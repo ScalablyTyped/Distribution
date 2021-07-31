@@ -8,49 +8,47 @@ import typings.tuyaPanelKit.anon.ActiveSize
 import typings.tuyaPanelKit.anon.Margin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchButtonProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var offText: js.UndefOr[String] = js.native
+  var offText: js.UndefOr[String] = js.undefined
   
-  var offTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var offTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var onText: js.UndefOr[String] = js.native
+  var onText: js.UndefOr[String] = js.undefined
   
-  var onTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var onTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var onThumbTintColor: js.UndefOr[String] = js.native
+  var onThumbTintColor: js.UndefOr[String] = js.undefined
   
-  var onTintColor: js.UndefOr[String | StringDictionary[String]] = js.native
+  var onTintColor: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
-  def onValueChange(value: Boolean): Unit = js.native
+  def onValueChange(value: Boolean): Unit
   
-  var size: js.UndefOr[ActiveSize] = js.native
+  var size: js.UndefOr[ActiveSize] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var theme: js.UndefOr[Margin] = js.native
+  var theme: js.UndefOr[Margin] = js.undefined
   
-  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[String | StringDictionary[String]] = js.native
+  var tintColor: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
-  var useNativeDriver: js.UndefOr[Boolean] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
 object SwitchButtonProps {
   

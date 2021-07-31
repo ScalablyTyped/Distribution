@@ -4,17 +4,15 @@ import typings.amqplib.amqplibStrings.timestamp
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mechanism extends StObject {
     
-    var mechanism: String = js.native
+    var mechanism: String
     
-    def response(): Buffer = js.native
+    def response(): Buffer
   }
   object Mechanism {
     
@@ -35,16 +33,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var mechanism: String = js.native
+    var mechanism: String
     
-    var password: String = js.native
+    var password: String
     
-    def response(): Buffer = js.native
+    def response(): Buffer
     
-    var username: String = js.native
+    var username: String
   }
   object Password {
     
@@ -71,20 +68,19 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("!")
-    var Exclamationmark: timestamp = js.native
+    var Exclamationmark: timestamp
     
-    var value: Double = js.native
+    var value: Double
   }
   object _empty {
     
     @scala.inline
-    def apply(Exclamationmark: timestamp, value: Double): _empty = {
+    def apply(value: Double): _empty = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("!")(Exclamationmark.asInstanceOf[js.Any])
+      __obj.updateDynamic("!")("timestamp")
       __obj.asInstanceOf[_empty]
     }
     

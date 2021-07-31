@@ -2,13 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomizable extends IEventEmitter {
+trait ICustomizable
+  extends StObject
+     with IEventEmitter {
   
-  var options: IOptionManager = js.native
+  var options: IOptionManager
 }
 object ICustomizable {
   

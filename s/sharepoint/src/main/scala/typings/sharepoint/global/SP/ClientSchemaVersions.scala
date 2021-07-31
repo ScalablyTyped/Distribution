@@ -2,13 +2,13 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.ClientSchemaVersions")
 @js.native
 class ClientSchemaVersions ()
-  extends typings.sharepoint.SP.ClientSchemaVersions
+  extends StObject
+     with typings.sharepoint.SP.ClientSchemaVersions
 object ClientSchemaVersions {
   
   @JSGlobal("SP.ClientSchemaVersions")

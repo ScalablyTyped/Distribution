@@ -27,25 +27,23 @@ import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlCo
 import typings.cadesplugin.cadespluginStrings.urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CADES_Plugin {
   
-  @js.native
   trait EncodingType extends StObject {
     
-    val CADESCOM_ENCODE_ANY: `-1` = js.native
+    val CADESCOM_ENCODE_ANY: `-1`
     
-    val CADESCOM_ENCODE_BASE64: `0` = js.native
+    val CADESCOM_ENCODE_BASE64: `0`
     
-    val CADESCOM_ENCODE_BINARY: `1` = js.native
+    val CADESCOM_ENCODE_BINARY: `1`
   }
   object EncodingType {
     
     @scala.inline
-    def apply(CADESCOM_ENCODE_ANY: `-1`, CADESCOM_ENCODE_BASE64: `0`, CADESCOM_ENCODE_BINARY: `1`): EncodingType = {
-      val __obj = js.Dynamic.literal(CADESCOM_ENCODE_ANY = CADESCOM_ENCODE_ANY.asInstanceOf[js.Any], CADESCOM_ENCODE_BASE64 = CADESCOM_ENCODE_BASE64.asInstanceOf[js.Any], CADESCOM_ENCODE_BINARY = CADESCOM_ENCODE_BINARY.asInstanceOf[js.Any])
+    def apply(): EncodingType = {
+      val __obj = js.Dynamic.literal(CADESCOM_ENCODE_ANY = -1, CADESCOM_ENCODE_BASE64 = 0, CADESCOM_ENCODE_BINARY = 1)
       __obj.asInstanceOf[EncodingType]
     }
     
@@ -63,20 +61,19 @@ object CADES_Plugin {
     }
   }
   
-  @js.native
   trait LogLevel extends StObject {
     
-    val LOG_LEVEL_DEBUG: `4` = js.native
+    val LOG_LEVEL_DEBUG: `4`
     
-    val LOG_LEVEL_ERROR: `1` = js.native
+    val LOG_LEVEL_ERROR: `1`
     
-    val LOG_LEVEL_INFO: `2` = js.native
+    val LOG_LEVEL_INFO: `2`
   }
   object LogLevel {
     
     @scala.inline
-    def apply(LOG_LEVEL_DEBUG: `4`, LOG_LEVEL_ERROR: `1`, LOG_LEVEL_INFO: `2`): LogLevel = {
-      val __obj = js.Dynamic.literal(LOG_LEVEL_DEBUG = LOG_LEVEL_DEBUG.asInstanceOf[js.Any], LOG_LEVEL_ERROR = LOG_LEVEL_ERROR.asInstanceOf[js.Any], LOG_LEVEL_INFO = LOG_LEVEL_INFO.asInstanceOf[js.Any])
+    def apply(): LogLevel = {
+      val __obj = js.Dynamic.literal(LOG_LEVEL_DEBUG = 4, LOG_LEVEL_ERROR = 1, LOG_LEVEL_INFO = 2)
       __obj.asInstanceOf[LogLevel]
     }
     
@@ -94,32 +91,31 @@ object CADES_Plugin {
     }
   }
   
-  @js.native
   trait ObjectNames extends StObject {
     
     @JSName("CAPICOM.Store")
-    var CAPICOMDotStore: Store = js.native
+    var CAPICOMDotStore: Store
     
     @JSName("CAdESCOM.About")
-    var CAdESCOMDotAbout: About = js.native
+    var CAdESCOMDotAbout: About
     
     @JSName("CAdESCOM.CPAttribute")
-    var CAdESCOMDotCPAttribute: CPAttribute = js.native
+    var CAdESCOMDotCPAttribute: CPAttribute
     
     @JSName("CAdESCOM.CPSigner")
-    var CAdESCOMDotCPSigner: CPSigner = js.native
+    var CAdESCOMDotCPSigner: CPSigner
     
     @JSName("CAdESCOM.CadesSignedData")
-    var CAdESCOMDotCadesSignedData: CadesSignedData = js.native
+    var CAdESCOMDotCadesSignedData: CadesSignedData
     
     @JSName("CAdESCOM.HashedData")
-    var CAdESCOMDotHashedData: CPHashedData = js.native
+    var CAdESCOMDotHashedData: CPHashedData
     
     @JSName("CAdESCOM.RawSignature")
-    var CAdESCOMDotRawSignature: RawSignature = js.native
+    var CAdESCOMDotRawSignature: RawSignature
     
     @JSName("CAdESCOM.SignedXML")
-    var CAdESCOMDotSignedXML: SignedXML = js.native
+    var CAdESCOMDotSignedXML: SignedXML
   }
   object ObjectNames {
     
@@ -175,32 +171,31 @@ object CADES_Plugin {
     }
   }
   
-  @js.native
   trait ObjectNamesAsync extends StObject {
     
     @JSName("CAdESCOM.About")
-    var CAdESCOMDotAbout: AboutAsync = js.native
+    var CAdESCOMDotAbout: AboutAsync
     
     @JSName("CAdESCOM.CPAttribute")
-    var CAdESCOMDotCPAttribute: CPAttributeAsync = js.native
+    var CAdESCOMDotCPAttribute: CPAttributeAsync
     
     @JSName("CAdESCOM.CPSigner")
-    var CAdESCOMDotCPSigner: CPSignerAsync = js.native
+    var CAdESCOMDotCPSigner: CPSignerAsync
     
     @JSName("CAdESCOM.CadesSignedData")
-    var CAdESCOMDotCadesSignedData: CadesSignedDataAsync = js.native
+    var CAdESCOMDotCadesSignedData: CadesSignedDataAsync
     
     @JSName("CAdESCOM.HashedData")
-    var CAdESCOMDotHashedData: CPHashedDataAsync = js.native
+    var CAdESCOMDotHashedData: CPHashedDataAsync
     
     @JSName("CAdESCOM.RawSignature")
-    var CAdESCOMDotRawSignature: RawSignatureAsync = js.native
+    var CAdESCOMDotRawSignature: RawSignatureAsync
     
     @JSName("CAdESCOM.SignedXML")
-    var CAdESCOMDotSignedXML: SignedXMLAsync = js.native
+    var CAdESCOMDotSignedXML: SignedXMLAsync
     
     @JSName("CAdESCOM.Store")
-    var CAdESCOMDotStore: StoreAsync = js.native
+    var CAdESCOMDotStore: StoreAsync
   }
   object ObjectNamesAsync {
     
@@ -256,27 +251,21 @@ object CADES_Plugin {
     }
   }
   
-  @js.native
   trait SignedXmlUrls extends StObject {
     
-    val XmlDsigGost3410Url: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411` = js.native
+    val XmlDsigGost3410Url: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`
     
-    val XmlDsigGost3410UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411` = js.native
+    val XmlDsigGost3410UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`
     
-    val XmlDsigGost3411Url: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411 = js.native
+    val XmlDsigGost3411Url: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411
     
-    val XmlDsigGost3411UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411` = js.native
+    val XmlDsigGost3411UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`
   }
   object SignedXmlUrls {
     
     @scala.inline
-    def apply(
-      XmlDsigGost3410Url: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`,
-      XmlDsigGost3410UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`,
-      XmlDsigGost3411Url: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411,
-      XmlDsigGost3411UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`
-    ): SignedXmlUrls = {
-      val __obj = js.Dynamic.literal(XmlDsigGost3410Url = XmlDsigGost3410Url.asInstanceOf[js.Any], XmlDsigGost3410UrlObsolete = XmlDsigGost3410UrlObsolete.asInstanceOf[js.Any], XmlDsigGost3411Url = XmlDsigGost3411Url.asInstanceOf[js.Any], XmlDsigGost3411UrlObsolete = XmlDsigGost3411UrlObsolete.asInstanceOf[js.Any])
+    def apply(): SignedXmlUrls = {
+      val __obj = js.Dynamic.literal(XmlDsigGost3410Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411", XmlDsigGost3410UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411", XmlDsigGost3411Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr3411", XmlDsigGost3411UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr3411")
       __obj.asInstanceOf[SignedXmlUrls]
     }
     

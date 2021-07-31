@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigateway {
   
-  @js.native
   trait AccountThrottleSettings extends StObject {
     
     /**
       * The absolute maximum number of times API Gateway allows the API to be called per second (RPS).
       */
-    var burstLimit: Double = js.native
+    var burstLimit: Double
     
     /**
       * The number of times API Gateway allows the API to be called per second on average (RPS).
       */
-    var rateLimit: Double = js.native
+    var rateLimit: Double
   }
   object AccountThrottleSettings {
     
@@ -39,33 +37,32 @@ object apigateway {
     }
   }
   
-  @js.native
   trait DocumentationPartLocation extends StObject {
     
     /**
       * The HTTP verb of a method. The default value is `*` for any method.
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the targeted API entity.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The URL path of the target. The default value is `/` for the root resource.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The HTTP status code of a response. The default value is `*` for any status code.
       */
-    var statusCode: js.UndefOr[String] = js.native
+    var statusCode: js.UndefOr[String] = js.undefined
     
     /**
       * The type of API entity to which the documentation content applies. e.g. `API`, `METHOD` or `REQUEST_BODY`
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object DocumentationPartLocation {
     
@@ -108,13 +105,12 @@ object apigateway {
     }
   }
   
-  @js.native
   trait DomainNameEndpointConfiguration extends StObject {
     
     /**
       * A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
       */
-    var types: String = js.native
+    var types: String
   }
   object DomainNameEndpointConfiguration {
     
@@ -132,12 +128,11 @@ object apigateway {
     }
   }
   
-  @js.native
   trait GetRestApiEndpointConfiguration extends StObject {
     
-    var types: js.Array[String] = js.native
+    var types: js.Array[String]
     
-    var vpcEndpointIds: js.Array[String] = js.native
+    var vpcEndpointIds: js.Array[String]
   }
   object GetRestApiEndpointConfiguration {
     
@@ -164,58 +159,57 @@ object apigateway {
     }
   }
   
-  @js.native
   trait MethodSettingsSettings extends StObject {
     
     /**
       * Specifies whether the cached responses are encrypted.
       */
-    var cacheDataEncrypted: Boolean = js.native
+    var cacheDataEncrypted: Boolean
     
     /**
       * Specifies the time to live (TTL), in seconds, for cached responses. The higher the TTL, the longer the response will be cached.
       */
-    var cacheTtlInSeconds: Double = js.native
+    var cacheTtlInSeconds: Double
     
     /**
       * Specifies whether responses should be cached and returned for requests. A cache cluster must be enabled on the stage for responses to be cached.
       */
-    var cachingEnabled: Boolean = js.native
+    var cachingEnabled: Boolean
     
     /**
       * Specifies whether data trace logging is enabled for this method, which effects the log entries pushed to Amazon CloudWatch Logs.
       */
-    var dataTraceEnabled: Boolean = js.native
+    var dataTraceEnabled: Boolean
     
     /**
       * Specifies the logging level for this method, which effects the log entries pushed to Amazon CloudWatch Logs. The available levels are `OFF`, `ERROR`, and `INFO`.
       */
-    var loggingLevel: String = js.native
+    var loggingLevel: String
     
     /**
       * Specifies whether Amazon CloudWatch metrics are enabled for this method.
       */
-    var metricsEnabled: Boolean = js.native
+    var metricsEnabled: Boolean
     
     /**
       * Specifies whether authorization is required for a cache invalidation request.
       */
-    var requireAuthorizationForCacheControl: Boolean = js.native
+    var requireAuthorizationForCacheControl: Boolean
     
     /**
       * Specifies the throttling burst limit. Default: `-1` (throttling disabled).
       */
-    var throttlingBurstLimit: js.UndefOr[Double] = js.native
+    var throttlingBurstLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the throttling rate limit. Default: `-1` (throttling disabled).
       */
-    var throttlingRateLimit: js.UndefOr[Double] = js.native
+    var throttlingRateLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies how to handle unauthorized requests for cache invalidation. The available values are `FAIL_WITH_403`, `SUCCEED_WITH_RESPONSE_HEADER`, `SUCCEED_WITHOUT_RESPONSE_HEADER`.
       */
-    var unauthorizedCacheControlHeaderStrategy: String = js.native
+    var unauthorizedCacheControlHeaderStrategy: String
   }
   object MethodSettingsSettings {
     
@@ -275,18 +269,17 @@ object apigateway {
     }
   }
   
-  @js.native
   trait RestApiEndpointConfiguration extends StObject {
     
     /**
       * A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
       */
-    var types: String = js.native
+    var types: String
     
     /**
       * A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
       */
-    var vpcEndpointIds: js.UndefOr[js.Array[String]] = js.native
+    var vpcEndpointIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RestApiEndpointConfiguration {
     
@@ -313,19 +306,18 @@ object apigateway {
     }
   }
   
-  @js.native
   trait StageAccessLogSettings extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
       */
-    var destinationArn: String = js.native
+    var destinationArn: String
     
     /**
       * The formatting and values recorded in the logs.
       * For more information on configuring the log format rules visit the AWS [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html)
       */
-    var format: String = js.native
+    var format: String
   }
   object StageAccessLogSettings {
     
@@ -346,18 +338,17 @@ object apigateway {
     }
   }
   
-  @js.native
   trait UsagePlanApiStage extends StObject {
     
     /**
       * API Id of the associated API stage in a usage plan.
       */
-    var apiId: String = js.native
+    var apiId: String
     
     /**
       * API stage name of the associated API stage in a usage plan.
       */
-    var stage: String = js.native
+    var stage: String
   }
   object UsagePlanApiStage {
     
@@ -378,23 +369,22 @@ object apigateway {
     }
   }
   
-  @js.native
   trait UsagePlanQuotaSettings extends StObject {
     
     /**
       * The maximum number of requests that can be made in a given time period.
       */
-    var limit: Double = js.native
+    var limit: Double
     
     /**
       * The number of requests subtracted from the given limit in the initial time period.
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * The time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
       */
-    var period: String = js.native
+    var period: String
   }
   object UsagePlanQuotaSettings {
     
@@ -421,18 +411,17 @@ object apigateway {
     }
   }
   
-  @js.native
   trait UsagePlanThrottleSettings extends StObject {
     
     /**
       * The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
       */
-    var burstLimit: js.UndefOr[Double] = js.native
+    var burstLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * The API request steady-state rate limit.
       */
-    var rateLimit: js.UndefOr[Double] = js.native
+    var rateLimit: js.UndefOr[Double] = js.undefined
   }
   object UsagePlanThrottleSettings {
     

@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentHighlight extends StObject {
   
   /**
     * The highlight kind, default is [text](#DocumentHighlightKind.Text).
     */
-  var kind: js.UndefOr[DocumentHighlightKind] = js.native
+  var kind: js.UndefOr[DocumentHighlightKind] = js.undefined
   
   /**
     * The range this highlight applies to.
     */
-  var range: Range = js.native
+  var range: Range
 }
 object DocumentHighlight {
   
@@ -26,16 +24,18 @@ object DocumentHighlight {
     __obj.asInstanceOf[DocumentHighlight]
   }
   
+  @JSImport("vscode-languageserver-types", "DocumentHighlight")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
     */
-  @JSImport("vscode-languageserver-types", "DocumentHighlight.create")
-  @js.native
-  def create(range: Range): DocumentHighlight = js.native
-  @JSImport("vscode-languageserver-types", "DocumentHighlight.create")
-  @js.native
-  def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = js.native
+  @scala.inline
+  def create(range: Range): DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentHighlight]
+  @scala.inline
+  def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DocumentHighlight]
   
   @scala.inline
   implicit class DocumentHighlightMutableBuilder[Self <: DocumentHighlight] (val x: Self) extends AnyVal {

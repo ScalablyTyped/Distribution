@@ -9,38 +9,36 @@ import typings.jqueryEditableSelect.jqueryEditableSelectStrings.slide
 import typings.jqueryEditableSelect.jqueryEditableSelectStrings.slow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryEditableSelect {
   
-  @js.native
   trait EditableSelectOptions extends StObject {
     
     /**
       * Where to append the dropdown list in the DOM.
       */
-    var appendTo: js.UndefOr[String | JQuery] = js.native
+    var appendTo: js.UndefOr[String | JQuery] = js.undefined
     
     /**
       * Duration of the easings (in milliseconds).
       */
-    var duration: js.UndefOr[Double | fast | slow] = js.native
+    var duration: js.UndefOr[Double | fast | slow] = js.undefined
     
     /**
       * Easing used for showing and hiding the dropdown list.
       */
-    var effects: js.UndefOr[default | slide | fade] = js.native
+    var effects: js.UndefOr[default | slide | fade] = js.undefined
     
     /**
       * Filter (or not) items in list while typing.
       */
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How dropdown list is triggered.
       */
-    var trigger: js.UndefOr[focus | manual] = js.native
+    var trigger: js.UndefOr[focus | manual] = js.undefined
   }
   object EditableSelectOptions {
     

@@ -2,19 +2,17 @@ package typings.dhtmlxgantt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttLocaleDate extends StObject {
   
-  var day_full: js.Array[String] = js.native
+  var day_full: js.Array[String]
   
-  var day_short: js.Array[String] = js.native
+  var day_short: js.Array[String]
   
-  var month_full: js.Array[String] = js.native
+  var month_full: js.Array[String]
   
-  var month_short: js.Array[String] = js.native
+  var month_short: js.Array[String]
 }
 object GanttLocaleDate {
   

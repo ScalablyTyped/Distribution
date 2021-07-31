@@ -3,19 +3,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 import typings.googleapis.anon.Columns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance import context.
   */
-@js.native
 trait SchemaImportContext extends StObject {
   
   /**
     * Options for importing data as CSV.
     */
-  var csvImportOptions: js.UndefOr[Columns] = js.native
+  var csvImportOptions: js.UndefOr[Columns] = js.undefined
   
   /**
     * The target database for the import. If fileType is SQL, this field is
@@ -23,23 +21,23 @@ trait SchemaImportContext extends StObject {
     * overridden by any database specification in the import file. If fileType
     * is CSV, one database must be specified.
     */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /**
     * The file type for the specified uri. SQL: The file contains SQL
     * statements. CSV: The file contains CSV data.
     */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
   /**
     * The PostgreSQL user for this import operation. PostgreSQL instances only.
     */
-  var importUser: js.UndefOr[String] = js.native
+  var importUser: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#importContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Path to the import file in Cloud Storage, in the form
@@ -47,7 +45,7 @@ trait SchemaImportContext extends StObject {
     * fileType is SQL. The instance must have write permissions to the bucket
     * and read access to the file.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaImportContext {
   

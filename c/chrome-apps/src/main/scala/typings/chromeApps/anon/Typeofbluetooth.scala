@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.bluetooth.Device
 import typings.chromeApps.chrome.bluetooth.DeviceFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

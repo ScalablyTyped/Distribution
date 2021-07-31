@@ -3,31 +3,29 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.click
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewClickEvent extends StObject {
   
-  var button: Double = js.native
+  var button: Double
   
-  var buttons: js.Any = js.native
+  var buttons: js.Any
   
-  var mapPoint: Point = js.native
+  var mapPoint: Point
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var screenPoint: js.Any = js.native
+  var screenPoint: js.Any
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: click = js.native
+  var `type`: click
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object MapViewClickEvent {
   
@@ -40,12 +38,11 @@ object MapViewClickEvent {
     screenPoint: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: click,
     x: Double,
     y: Double
   ): MapViewClickEvent = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("click")
     __obj.asInstanceOf[MapViewClickEvent]
   }
   

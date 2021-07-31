@@ -35,15 +35,14 @@ import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArc
 import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServiceUnavailableExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ServiceUnavailableExceptionDetails> * / any */ @js.native
-  trait ServiceUnavailableException
-    extends AbortMultipartUploadExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ServiceUnavailableExceptionDetails> * / any */ trait ServiceUnavailableException
+    extends StObject
+       with AbortMultipartUploadExceptionsUnion
        with AbortVaultLockExceptionsUnion
        with AddTagsToVaultExceptionsUnion
        with CompleteMultipartUploadExceptionsUnion
@@ -77,13 +76,13 @@ object typesServiceUnavailableExceptionMod {
        with UploadArchiveExceptionsUnion
        with UploadMultipartPartExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ServiceUnavailableException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ServiceUnavailableException
   }
   object ServiceUnavailableException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ServiceUnavailableException): ServiceUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ServiceUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "ServiceUnavailableException")
       __obj.asInstanceOf[ServiceUnavailableException]
     }
     
@@ -95,23 +94,22 @@ object typesServiceUnavailableExceptionMod {
     }
   }
   
-  @js.native
   trait ServiceUnavailableExceptionDetails extends StObject {
     
     /**
       * <p>500 Internal Server Error</p>
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Returned if the service cannot complete the request.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Server</p>
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ServiceUnavailableExceptionDetails {
     

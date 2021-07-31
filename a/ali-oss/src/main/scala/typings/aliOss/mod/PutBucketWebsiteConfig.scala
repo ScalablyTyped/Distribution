@@ -2,16 +2,14 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketWebsiteConfig extends StObject {
   
   // default page, e.g.: index.html
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var index: String = js.native
+  var index: String
 }
 object PutBucketWebsiteConfig {
   

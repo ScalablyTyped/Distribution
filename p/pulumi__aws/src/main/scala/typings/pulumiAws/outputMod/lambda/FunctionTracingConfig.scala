@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionTracingConfig extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FunctionTracingConfig extends StObject {
     * from an upstream service. If no tracing header is received, Lambda will call
     * X-Ray for a tracing decision.
     */
-  var mode: String = js.native
+  var mode: String
 }
 object FunctionTracingConfig {
   

@@ -3,7 +3,6 @@ package typings.ts3NodejsLibrary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileTransferMod {
@@ -19,8 +18,8 @@ object fileTransferMod {
       */
     def this(host: String) = this()
     def this(host: String, port: Double) = this()
-    def this(host: String, port: js.UndefOr[scala.Nothing], timeout: Double) = this()
     def this(host: String, port: Double, timeout: Double) = this()
+    def this(host: String, port: Unit, timeout: Double) = this()
     
     var buffer: js.Any = js.native
     

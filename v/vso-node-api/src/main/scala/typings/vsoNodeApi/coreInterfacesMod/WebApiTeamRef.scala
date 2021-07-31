@@ -2,26 +2,24 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebApiTeamRef extends StObject {
   
   /**
     * Team (Identity) Guid. A Team Foundation ID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Team name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Team REST API Url
     */
-  var url: String = js.native
+  var url: String
 }
 object WebApiTeamRef {
   

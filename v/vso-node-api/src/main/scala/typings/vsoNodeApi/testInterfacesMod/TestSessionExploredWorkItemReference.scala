@@ -3,26 +3,26 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TestSessionExploredWorkItemReference extends TestSessionWorkItemReference {
+trait TestSessionExploredWorkItemReference
+  extends StObject
+     with TestSessionWorkItemReference {
   
   /**
     * Workitem references of workitems filed as a part of the current workitem exploration.
     */
-  var associatedWorkItems: js.Array[TestSessionWorkItemReference] = js.native
+  var associatedWorkItems: js.Array[TestSessionWorkItemReference]
   
   /**
     * Time when exploration of workitem ended.
     */
-  var endTime: Date = js.native
+  var endTime: Date
   
   /**
     * Time when explore of workitem was started.
     */
-  var startTime: Date = js.native
+  var startTime: Date
 }
 object TestSessionExploredWorkItemReference {
   

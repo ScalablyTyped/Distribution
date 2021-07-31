@@ -12,7 +12,7 @@ jQuery feature tour plugin. npm and commonJS compatible. Forked from zurb/joyrid
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2090 |
+| # downloads        | 2094 |
 | # stars            | 0 |
 
 ## Links

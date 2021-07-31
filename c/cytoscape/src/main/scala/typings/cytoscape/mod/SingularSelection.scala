@@ -2,26 +2,24 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/selection
   */
-@js.native
 trait SingularSelection extends StObject {
   
   /**
     * Get whether the element's selection state is mutable.
     * http://js.cytoscape.org/#ele.selectable
     */
-  def selectable(): Boolean = js.native
+  def selectable(): Boolean
   
   /**
     * Get whether the element is selected.
     * http://js.cytoscape.org/#ele.selected
     */
-  def selected(): Boolean = js.native
+  def selected(): Boolean
 }
 object SingularSelection {
   

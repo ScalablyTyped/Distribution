@@ -4,19 +4,19 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.NamedTensorInfoMap
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FusedMatMulInputs extends NamedTensorInfoMap {
+trait FusedMatMulInputs
+  extends StObject
+     with NamedTensorInfoMap {
   
-  var a: TensorInfo = js.native
+  var a: TensorInfo
   
-  var b: TensorInfo = js.native
+  var b: TensorInfo
   
-  var bias: js.UndefOr[TensorInfo] = js.native
+  var bias: js.UndefOr[TensorInfo] = js.undefined
   
-  var preluActivationWeights: js.UndefOr[TensorInfo] = js.native
+  var preluActivationWeights: js.UndefOr[TensorInfo] = js.undefined
 }
 object FusedMatMulInputs {
   

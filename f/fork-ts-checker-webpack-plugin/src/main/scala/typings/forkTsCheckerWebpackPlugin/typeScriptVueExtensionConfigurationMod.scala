@@ -3,24 +3,24 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.typeScriptVueExtensionOptionsMod.TypeScriptVueExtensionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptVueExtensionConfigurationMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/vue/TypeScriptVueExtensionConfiguration", "createTypeScriptVueExtensionConfiguration")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/vue/TypeScriptVueExtensionConfiguration", JSImport.Namespace)
   @js.native
-  def createTypeScriptVueExtensionConfiguration(): TypeScriptVueExtensionConfiguration = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/vue/TypeScriptVueExtensionConfiguration", "createTypeScriptVueExtensionConfiguration")
-  @js.native
-  def createTypeScriptVueExtensionConfiguration(options: TypeScriptVueExtensionOptions): TypeScriptVueExtensionConfiguration = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createTypeScriptVueExtensionConfiguration(): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")().asInstanceOf[TypeScriptVueExtensionConfiguration]
+  @scala.inline
+  def createTypeScriptVueExtensionConfiguration(options: TypeScriptVueExtensionOptions): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[TypeScriptVueExtensionConfiguration]
+  
   trait TypeScriptVueExtensionConfiguration extends StObject {
     
-    var compiler: String = js.native
+    var compiler: String
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object TypeScriptVueExtensionConfiguration {
     

@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoNearCommandOptions extends StObject {
   
-  var geometry: GeoPoint = js.native
+  var geometry: GeoPoint
   
-  var maxDistance: js.UndefOr[Double] = js.native
+  var maxDistance: js.UndefOr[Double] = js.undefined
   
-  var minDistance: js.UndefOr[Double] = js.native
+  var minDistance: js.UndefOr[Double] = js.undefined
 }
 object IGeoNearCommandOptions {
   

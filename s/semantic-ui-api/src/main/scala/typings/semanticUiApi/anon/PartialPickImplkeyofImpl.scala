@@ -29,50 +29,48 @@ import typings.semanticUiApi.semanticUiApiStrings.text
 import typings.semanticUiApi.semanticUiApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, keyof semantic-ui-api.SemanticUI.ApiSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var action: js.UndefOr[String | `false`] = js.native
+  var action: js.UndefOr[String | `false`] = js.undefined
   
-  var api: js.UndefOr[StringDictionary[String]] = js.native
+  var api: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var beforeSend: js.UndefOr[js.Function1[/* settings */ ApiSettings, _]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* settings */ ApiSettings, js.Any]] = js.undefined
   
-  var beforeXHR: js.UndefOr[js.Function1[/* xhrObject */ jqXHR[_], _]] = js.native
+  var beforeXHR: js.UndefOr[js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any]] = js.undefined
   
-  var cache: js.UndefOr[local | Boolean] = js.native
+  var cache: js.UndefOr[local | Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: js.UndefOr[xml | json | jsonp | script | html | text] = js.native
+  var dataType: js.UndefOr[xml | json | jsonp | script | html | text] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var defaultData: js.UndefOr[Boolean] = js.native
+  var defaultData: js.UndefOr[Boolean] = js.undefined
   
-  var encodeParameters: js.UndefOr[Boolean] = js.native
+  var encodeParameters: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var errorDuration: js.UndefOr[`true` | Double] = js.native
+  var errorDuration: js.UndefOr[`true` | Double] = js.undefined
   
-  var hideError: js.UndefOr[auto | Boolean] = js.native
+  var hideError: js.UndefOr[auto | Boolean] = js.undefined
   
-  var interruptRequests: js.UndefOr[Boolean] = js.native
+  var interruptRequests: js.UndefOr[Boolean] = js.undefined
   
-  var loadingDuration: js.UndefOr[Double] = js.native
+  var loadingDuration: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var method: js.UndefOr[post | get | put | delete | head | options | patch] = js.native
+  var method: js.UndefOr[post | get | put | delete | head | options | patch] = js.undefined
   
-  var mockResponse: js.UndefOr[js.Any | `false`] = js.native
+  var mockResponse: js.UndefOr[js.Any | `false`] = js.undefined
   
   var mockResponseAsync: js.UndefOr[
     (js.Function2[
@@ -80,41 +78,43 @@ trait PartialPickImplkeyofImpl extends StObject {
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
       Unit
     ]) | `false`
-  ] = js.native
+  ] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[String] = js.native
+  var on: js.UndefOr[String] = js.undefined
   
   var onAbort: js.UndefOr[
-    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ] = js.native
+    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ] = js.undefined
   
   var onComplete: js.UndefOr[
-    js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ] = js.native
+    js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ] = js.undefined
   
   var onError: js.UndefOr[
-    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ] = js.native
+    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ] = js.undefined
   
-  var onFailure: js.UndefOr[js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]] = js.native
+  var onFailure: js.UndefOr[js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]] = js.undefined
   
-  var onRequest: js.UndefOr[js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit]] = js.native
+  var onRequest: js.UndefOr[
+    js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit]
+  ] = js.undefined
   
-  var onResponse: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.native
+  var onResponse: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.undefined
   
   var onSuccess: js.UndefOr[
-    js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ] = js.native
+    js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var regExp: js.UndefOr[RegExpSettings] = js.native
+  var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var response: js.UndefOr[js.Any | `false`] = js.native
+  var response: js.UndefOr[js.Any | `false`] = js.undefined
   
   var responseAsync: js.UndefOr[
     (js.Function2[
@@ -122,27 +122,27 @@ trait PartialPickImplkeyofImpl extends StObject {
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
       Unit
     ]) | `false`
-  ] = js.native
+  ] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var serializeForm: js.UndefOr[Boolean] = js.native
+  var serializeForm: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var stateContext: js.UndefOr[String | JQuery] = js.native
+  var stateContext: js.UndefOr[String | JQuery] = js.undefined
   
-  var successTest: js.UndefOr[js.Function1[/* response */ js.Any, Boolean]] = js.native
+  var successTest: js.UndefOr[js.Function1[/* response */ js.Any, Boolean]] = js.undefined
   
-  var throttle: js.UndefOr[Double] = js.native
+  var throttle: js.UndefOr[Double] = js.undefined
   
-  var throttleFirstRequest: js.UndefOr[Boolean] = js.native
+  var throttleFirstRequest: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String | `false`] = js.native
+  var url: js.UndefOr[String | `false`] = js.undefined
   
-  var urlData: js.UndefOr[js.Any | `false`] = js.native
+  var urlData: js.UndefOr[js.Any | `false`] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   
@@ -168,13 +168,13 @@ object PartialPickImplkeyofImpl {
     def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def setBeforeSend(value: /* settings */ ApiSettings => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    def setBeforeSend(value: /* settings */ ApiSettings => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def setBeforeXHR(value: /* xhrObject */ jqXHR[_] => _): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
+    def setBeforeXHR(value: /* xhrObject */ jqXHR[js.Any] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeXHRUndefined: Self = StObject.set(x, "beforeXHR", js.undefined)
@@ -302,19 +302,19 @@ object PartialPickImplkeyofImpl {
     def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+    def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
     @scala.inline
-    def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+    def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
@@ -326,7 +326,7 @@ object PartialPickImplkeyofImpl {
     def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def setOnRequest(value: (/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
+    def setOnRequest(value: (/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
@@ -338,7 +338,7 @@ object PartialPickImplkeyofImpl {
     def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
     
     @scala.inline
-    def setOnSuccess(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+    def setOnSuccess(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)

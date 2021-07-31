@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateKeyPairResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about the new key pair you just created.
     */
-  var keyPair: js.UndefOr[KeyPair] = js.native
+  var keyPair: js.UndefOr[KeyPair] = js.undefined
   
   /**
     * An array of objects that describe the result of the action, such as the status of the request, the timestamp of the request, and the resources affected by the request.
     */
-  var operation: js.UndefOr[Operation] = js.native
+  var operation: js.UndefOr[Operation] = js.undefined
   
   /**
     * A base64-encoded RSA private key.
     */
-  var privateKeyBase64: js.UndefOr[Base64] = js.native
+  var privateKeyBase64: js.UndefOr[Base64] = js.undefined
   
   /**
     * A base64-encoded public key of the ssh-rsa type.
     */
-  var publicKeyBase64: js.UndefOr[Base64] = js.native
+  var publicKeyBase64: js.UndefOr[Base64] = js.undefined
 }
 object CreateKeyPairResult {
   

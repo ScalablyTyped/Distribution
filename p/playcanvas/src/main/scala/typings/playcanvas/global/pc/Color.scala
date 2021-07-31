@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,35 +18,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Color")
 @js.native
 class Color ()
-  extends typings.playcanvas.pc.Color {
+  extends StObject
+     with typings.playcanvas.pc.Color {
   def this(r: js.Array[Double]) = this()
   def this(r: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double) = this()
   def this(r: js.Array[Double], g: Double) = this()
   def this(r: Double, g: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double) = this()
-  def this(r: js.Array[Double], g: js.UndefOr[scala.Nothing], b: Double) = this()
+  def this(r: Unit, g: Double) = this()
   def this(r: js.Array[Double], g: Double, b: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double) = this()
+  def this(r: js.Array[Double], g: Unit, b: Double) = this()
   def this(r: Double, g: Double, b: Double) = this()
-  def this(
-    r: js.UndefOr[scala.Nothing],
-    g: js.UndefOr[scala.Nothing],
-    b: js.UndefOr[scala.Nothing],
-    a: Double
-  ) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double, a: Double) = this()
-  def this(r: js.Array[Double], g: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], a: Double) = this()
-  def this(r: js.Array[Double], g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
-  def this(r: js.Array[Double], g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
+  def this(r: Double, g: Unit, b: Double) = this()
+  def this(r: Unit, g: Double, b: Double) = this()
+  def this(r: Unit, g: Unit, b: Double) = this()
   def this(r: js.Array[Double], g: Double, b: Double, a: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], a: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
-  def this(r: Double, g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
+  def this(r: js.Array[Double], g: Double, b: Unit, a: Double) = this()
+  def this(r: js.Array[Double], g: Unit, b: Double, a: Double) = this()
+  def this(r: js.Array[Double], g: Unit, b: Unit, a: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
+  def this(r: Double, g: Double, b: Unit, a: Double) = this()
+  def this(r: Double, g: Unit, b: Double, a: Double) = this()
+  def this(r: Double, g: Unit, b: Unit, a: Double) = this()
+  def this(r: Unit, g: Double, b: Double, a: Double) = this()
+  def this(r: Unit, g: Double, b: Unit, a: Double) = this()
+  def this(r: Unit, g: Unit, b: Double, a: Double) = this()
+  def this(r: Unit, g: Unit, b: Unit, a: Double) = this()
 }
 object Color {
   

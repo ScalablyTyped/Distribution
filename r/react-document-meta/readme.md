@@ -11,8 +11,8 @@ Declarative, nested and stateful HTML document meta tags for React
 | Full name          | react-document-meta |
 | Keywords           | react, meta, html, document, tags, react-component |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 322942 |
+| # dependents       | 23 |
+| # downloads        | 336503 |
 | # stars            | 7 |
 
 ## Links

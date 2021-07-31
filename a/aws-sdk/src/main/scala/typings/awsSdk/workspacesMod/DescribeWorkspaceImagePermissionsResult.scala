@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspaceImagePermissionsResult extends StObject {
   
   /**
     * The identifier of the image.
     */
-  var ImageId: js.UndefOr[WorkspaceImageId] = js.native
+  var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
   
   /**
     * The identifiers of the AWS accounts that the image has been shared with.
     */
-  var ImagePermissions: js.UndefOr[typings.awsSdk.workspacesMod.ImagePermissions] = js.native
+  var ImagePermissions: js.UndefOr[typings.awsSdk.workspacesMod.ImagePermissions] = js.undefined
   
   /**
     * The token to use to retrieve the next set of results, or null if no more results are available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeWorkspaceImagePermissionsResult {
   

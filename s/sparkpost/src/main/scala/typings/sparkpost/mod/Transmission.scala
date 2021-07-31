@@ -8,48 +8,46 @@ import typings.sparkpost.sparkpostStrings.Success
 import typings.sparkpost.sparkpostStrings.submitted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transmission extends StObject {
   
   /** Name of the campaign */
-  var campaign_id: String = js.native
+  var campaign_id: String
   
   /** Content that will be used to construct a message */
-  var content: InlineContent | Templateid | Emailrfc822 = js.native
+  var content: InlineContent | Templateid | Emailrfc822
   
   /** Description of the transmission */
-  var description: String = js.native
+  var description: String
   
   /** ID of the transmission */
-  var id: String = js.native
+  var id: String
   
   /** Transmission level metadata containing key/value pairs */
-  var metadata: js.Any = js.native
+  var metadata: js.Any
   
   /** Computed total number of failed messages */
-  var num_failed_generation: Double = js.native
+  var num_failed_generation: Double
   
   /** Computed total number of messages generated */
-  var num_generated: Double = js.native
+  var num_generated: Double
   
   /** Number of recipients that failed input validation */
-  var num_invalid_recipients: Double = js.native
+  var num_invalid_recipients: Double
   
   /** JSON object in which transmission options are defined */
-  var options: TransmissionOptions = js.native
+  var options: TransmissionOptions
   
-  var rcpt_list_chunk_size: Double = js.native
+  var rcpt_list_chunk_size: Double
   
-  var rcpt_list_total_chunks: Double = js.native
+  var rcpt_list_total_chunks: Double
   
   /** State of the transmission */
-  var state: submitted | Generating | Success | Canceled = js.native
+  var state: submitted | Generating | Success | Canceled
   
   /** Key/value pairs that are provided to the substitution engine */
-  var substitution_data: js.Any = js.native
+  var substitution_data: js.Any
 }
 object Transmission {
   

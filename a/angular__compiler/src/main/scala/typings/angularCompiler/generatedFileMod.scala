@@ -3,10 +3,13 @@ package typings.angularCompiler
 import typings.angularCompiler.outputAstMod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatedFileMod {
+  
+  @JSImport("@angular/compiler/src/aot/generated_file", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/aot/generated_file", "GeneratedFile")
   @js.native
@@ -25,10 +28,8 @@ object generatedFileMod {
     var stmts: js.Array[Statement] | Null = js.native
   }
   
-  @JSImport("@angular/compiler/src/aot/generated_file", "toTypeScript")
-  @js.native
-  def toTypeScript(file: GeneratedFile): String = js.native
-  @JSImport("@angular/compiler/src/aot/generated_file", "toTypeScript")
-  @js.native
-  def toTypeScript(file: GeneratedFile, preamble: String): String = js.native
+  @scala.inline
+  def toTypeScript(file: GeneratedFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toTypeScript(file: GeneratedFile, preamble: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any], preamble.asInstanceOf[js.Any])).asInstanceOf[String]
 }

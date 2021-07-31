@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosTestSetup extends StObject {
   
   /** iOS apps to install in addition to those being directly tested. */
-  var additionalIpas: js.UndefOr[js.Array[FileReference]] = js.native
+  var additionalIpas: js.UndefOr[js.Array[FileReference]] = js.undefined
   
   /**
     * The network traffic profile used for running the test. Available network profiles can be queried by using the NETWORK_CONFIGURATION environment type when calling
     * TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
     */
-  var networkProfile: js.UndefOr[String] = js.native
+  var networkProfile: js.UndefOr[String] = js.undefined
   
   /**
     * List of directories on the device to upload to Cloud Storage at the end of the test. Directories should either be in a shared directory (e.g. /private/var/mobile/Media) or within an
     * accessible directory inside the app's filesystem (e.g. /Documents) by specifying the bundle id.
     */
-  var pullDirectories: js.UndefOr[js.Array[IosDeviceFile]] = js.native
+  var pullDirectories: js.UndefOr[js.Array[IosDeviceFile]] = js.undefined
   
   /** List of files to push to the device before starting the test. */
-  var pushFiles: js.UndefOr[js.Array[IosDeviceFile]] = js.native
+  var pushFiles: js.UndefOr[js.Array[IosDeviceFile]] = js.undefined
 }
 object IosTestSetup {
   

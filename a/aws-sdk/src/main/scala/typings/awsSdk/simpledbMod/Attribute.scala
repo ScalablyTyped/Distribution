@@ -2,31 +2,29 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * 
     */
-  var AlternateNameEncoding: js.UndefOr[String] = js.native
+  var AlternateNameEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * 
     */
-  var AlternateValueEncoding: js.UndefOr[String] = js.native
+  var AlternateValueEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the attribute.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The value of the attribute.
     */
-  var Value: String = js.native
+  var Value: String
 }
 object Attribute {
   

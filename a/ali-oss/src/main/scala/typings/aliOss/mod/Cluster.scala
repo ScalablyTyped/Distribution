@@ -3,7 +3,6 @@ package typings.aliOss.mod
 import typings.aliOss.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ali-oss", "Cluster")
@@ -21,14 +20,14 @@ class Cluster protected () extends StObject {
   def deleteMulti(names: js.Array[String], options: DeleteMultiOptions): js.Promise[DeleteMultiResult] = js.native
   
   def get(name: String): js.Promise[GetObjectResult] = js.native
-  def get(name: String, file: js.UndefOr[scala.Nothing], options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: Unit, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   
   def getStream(): js.Promise[GetStreamResult] = js.native
-  def getStream(name: js.UndefOr[scala.Nothing], options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   def getStream(name: String): js.Promise[GetStreamResult] = js.native
   def getStream(name: String, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
+  def getStream(name: Unit, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   
   def head(name: String): js.Promise[HeadObjectResult] = js.native
   def head(name: String, options: HeadObjectOptions): js.Promise[HeadObjectResult] = js.native

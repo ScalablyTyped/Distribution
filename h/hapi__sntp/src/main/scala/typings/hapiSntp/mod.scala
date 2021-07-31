@@ -2,47 +2,42 @@ package typings.hapiSntp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/sntp", "now")
+  @JSImport("@hapi/sntp", JSImport.Namespace)
   @js.native
-  def now(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@hapi/sntp", "offset")
-  @js.native
-  def offset(): js.Promise[Double] = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @JSImport("@hapi/sntp", "start")
-  @js.native
-  def start(): js.Promise[Unit] = js.native
-  @JSImport("@hapi/sntp", "start")
-  @js.native
-  def start(options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def offset(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[js.Promise[Double]]
   
-  @JSImport("@hapi/sntp", "stop")
-  @js.native
-  def stop(): Unit = js.native
+  @scala.inline
+  def start(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@hapi/sntp", "time")
-  @js.native
-  def time(): js.Promise[TimeOptions] = js.native
-  @JSImport("@hapi/sntp", "time")
-  @js.native
-  def time(options: Options): js.Promise[TimeOptions] = js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def time(): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[js.Promise[TimeOptions]]
+  @scala.inline
+  def time(options: Options): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TimeOptions]]
+  
   trait Options extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var resolveReference: js.UndefOr[Boolean] = js.native
+    var resolveReference: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -81,42 +76,41 @@ object mod {
     }
   }
   
-  @js.native
   trait TimeOptions extends StObject {
     
-    var d: Double = js.native
+    var d: Double
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var leapIndicator: String = js.native
+    var leapIndicator: String
     
-    var mode: String = js.native
+    var mode: String
     
-    var originateTimestamp: Double = js.native
+    var originateTimestamp: Double
     
-    var pollInterval: Double = js.native
+    var pollInterval: Double
     
-    var precision: Double = js.native
+    var precision: Double
     
-    var receiveTimestamp: Double = js.native
+    var receiveTimestamp: Double
     
-    var receivedLocally: Double = js.native
+    var receivedLocally: Double
     
-    var referenceId: String = js.native
+    var referenceId: String
     
-    var referenceTimestamp: Double = js.native
+    var referenceTimestamp: Double
     
-    var rootDelay: Double = js.native
+    var rootDelay: Double
     
-    var rootDispersion: Double = js.native
+    var rootDispersion: Double
     
-    var stratum: String = js.native
+    var stratum: String
     
-    var t: Double = js.native
+    var t: Double
     
-    var transmitTimestamp: Double = js.native
+    var transmitTimestamp: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object TimeOptions {
     

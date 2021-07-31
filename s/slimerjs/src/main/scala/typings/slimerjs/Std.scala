@@ -2,15 +2,13 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Std extends StObject {
   
-  def read(): js.Any = js.native
+  def read(): js.Any
   
-  def write(arg: js.Any): Unit = js.native
+  def write(arg: js.Any): Unit
 }
 object Std {
   

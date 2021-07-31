@@ -10,25 +10,25 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navBarPropsTypeMod {
   
-  @js.native
-  trait NavBarProps extends HTMLProps[HTMLDivElement] {
+  trait NavBarProps
+    extends StObject
+       with HTMLProps[HTMLDivElement] {
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var leftContent: js.UndefOr[ReactNode] = js.native
+    var leftContent: js.UndefOr[ReactNode] = js.undefined
     
-    var mode: js.UndefOr[dark | light] = js.native
+    var mode: js.UndefOr[dark | light] = js.undefined
     
-    var onLeftClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onLeftClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rightContent: js.UndefOr[ReactNode] = js.native
+    var rightContent: js.UndefOr[ReactNode] = js.undefined
   }
   object NavBarProps {
     

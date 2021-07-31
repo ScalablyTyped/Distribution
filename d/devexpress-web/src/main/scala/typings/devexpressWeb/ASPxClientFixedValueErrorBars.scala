@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the FixedValueErrorBars class.
   */
-@js.native
-trait ASPxClientFixedValueErrorBars extends ASPxClientIndicator {
+trait ASPxClientFixedValueErrorBars
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Returns the fixed negative error value.
     */
-  var negativeError: Double = js.native
+  var negativeError: Double
   
   /**
     * Gets or sets the fixed positive error value.
     */
-  var positiveError: Double = js.native
+  var positiveError: Double
 }
 object ASPxClientFixedValueErrorBars {
   

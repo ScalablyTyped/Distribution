@@ -9,7 +9,6 @@ import typings.escpos.mod.TXT_ALIGN
 import typings.escpos.mod.TXT_STYLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object escposStrings {
@@ -50,22 +49,30 @@ object escposStrings {
   def Acknowledge: Acknowledge = "\u0006".asInstanceOf[Acknowledge]
   
   @js.native
-  sealed trait B extends TXT_STYLE
+  sealed trait B
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def B: B = "B".asInstanceOf[B]
   
   @js.native
-  sealed trait BI extends TXT_STYLE
+  sealed trait BI
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def BI: BI = "BI".asInstanceOf[BI]
   
   @js.native
-  sealed trait BIU extends TXT_STYLE
+  sealed trait BIU
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def BIU: BIU = "BIU".asInstanceOf[BIU]
   
   @js.native
-  sealed trait BIU2 extends TXT_STYLE
+  sealed trait BIU2
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def BIU2: BIU2 = "BIU2".asInstanceOf[BIU2]
   
@@ -80,12 +87,16 @@ object escposStrings {
   def BTH: BTH = "BTH".asInstanceOf[BTH]
   
   @js.native
-  sealed trait BU extends TXT_STYLE
+  sealed trait BU
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def BU: BU = "BU".asInstanceOf[BU]
   
   @js.native
-  sealed trait BU2 extends TXT_STYLE
+  sealed trait BU2
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def BU2: BU2 = "BU2".asInstanceOf[BU2]
   
@@ -105,27 +116,37 @@ object escposStrings {
   def CENTER: CENTER = "CENTER".asInstanceOf[CENTER]
   
   @js.native
-  sealed trait CODE128 extends BARCODE_TYPE
+  sealed trait CODE128
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def CODE128: CODE128 = "CODE128".asInstanceOf[CODE128]
   
   @js.native
-  sealed trait CODE39 extends BARCODE_TYPE
+  sealed trait CODE39
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def CODE39: CODE39 = "CODE39".asInstanceOf[CODE39]
   
   @js.native
-  sealed trait CODE93 extends BARCODE_TYPE
+  sealed trait CODE93
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def CODE93: CODE93 = "CODE93".asInstanceOf[CODE93]
   
   @js.native
-  sealed trait CR extends FEED_CONTROL_TYPE
+  sealed trait CR
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def CR: CR = "CR".asInstanceOf[CR]
   
   @js.native
-  sealed trait CT extends TXT_ALIGN
+  sealed trait CT
+    extends StObject
+       with TXT_ALIGN
   @scala.inline
   def CT: CT = "CT".asInstanceOf[CT]
   
@@ -145,12 +166,16 @@ object escposStrings {
   def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
   
   @js.native
-  sealed trait D24 extends BITMAP_FORMAT_TYPE
+  sealed trait D24
+    extends StObject
+       with BITMAP_FORMAT_TYPE
   @scala.inline
   def D24: D24 = "D24".asInstanceOf[D24]
   
   @js.native
-  sealed trait D8 extends BITMAP_FORMAT_TYPE
+  sealed trait D8
+    extends StObject
+       with BITMAP_FORMAT_TYPE
   @scala.inline
   def D8: D8 = "D8".asInstanceOf[D8]
   
@@ -160,12 +185,16 @@ object escposStrings {
   def Datalinkescape: Datalinkescape = "\u0010".asInstanceOf[Datalinkescape]
   
   @js.native
-  sealed trait EAN13 extends BARCODE_TYPE
+  sealed trait EAN13
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def EAN13: EAN13 = "EAN13".asInstanceOf[EAN13]
   
   @js.native
-  sealed trait EAN8 extends BARCODE_TYPE
+  sealed trait EAN8
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def EAN8: EAN8 = "EAN8".asInstanceOf[EAN8]
   
@@ -375,7 +404,9 @@ object escposStrings {
   def EscaperStartofheading: EscaperStartofheading = "\u001Br\u0001".asInstanceOf[EscaperStartofheading]
   
   @js.native
-  sealed trait FF extends FEED_CONTROL_TYPE
+  sealed trait FF
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def FF: FF = "FF".asInstanceOf[FF]
   
@@ -385,7 +416,9 @@ object escposStrings {
   def Formfeed: Formfeed = "\f".asInstanceOf[Formfeed]
   
   @js.native
-  sealed trait GLF extends FEED_CONTROL_TYPE
+  sealed trait GLF
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def GLF: GLF = "GLF".asInstanceOf[GLF]
   
@@ -395,32 +428,44 @@ object escposStrings {
   def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
   @js.native
-  sealed trait H extends QRCODE_LEVEL
+  sealed trait H
+    extends StObject
+       with QRCODE_LEVEL
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait HT extends FEED_CONTROL_TYPE
+  sealed trait HT
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def HT: HT = "HT".asInstanceOf[HT]
   
   @js.native
-  sealed trait I extends TXT_STYLE
+  sealed trait I
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait ITF extends BARCODE_TYPE
+  sealed trait ITF
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def ITF: ITF = "ITF".asInstanceOf[ITF]
   
   @js.native
-  sealed trait IU extends TXT_STYLE
+  sealed trait IU
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def IU: IU = "IU".asInstanceOf[IU]
   
   @js.native
-  sealed trait IU2 extends TXT_STYLE
+  sealed trait IU2
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def IU2: IU2 = "IU2".asInstanceOf[IU2]
   
@@ -690,7 +735,9 @@ object escposStrings {
   def JNull: JNull = "J\u0000".asInstanceOf[JNull]
   
   @js.native
-  sealed trait L extends QRCODE_LEVEL
+  sealed trait L
+    extends StObject
+       with QRCODE_LEVEL
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
@@ -700,12 +747,16 @@ object escposStrings {
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
-  sealed trait LF extends FEED_CONTROL_TYPE
+  sealed trait LF
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def LF: LF = "LF".asInstanceOf[LF]
   
   @js.native
-  sealed trait LT extends TXT_ALIGN
+  sealed trait LT
+    extends StObject
+       with TXT_ALIGN
   @scala.inline
   def LT: LT = "LT".asInstanceOf[LT]
   
@@ -720,17 +771,23 @@ object escposStrings {
   def Linetabulation: Linetabulation = "\u000B".asInstanceOf[Linetabulation]
   
   @js.native
-  sealed trait M extends QRCODE_LEVEL
+  sealed trait M
+    extends StObject
+       with QRCODE_LEVEL
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait NORMAL extends TXT_STYLE
+  sealed trait NORMAL
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
   
   @js.native
-  sealed trait NW7 extends BARCODE_TYPE
+  sealed trait NW7
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def NW7: NW7 = "NW7".asInstanceOf[NW7]
   
@@ -750,7 +807,9 @@ object escposStrings {
   def P: P = "P".asInstanceOf[P]
   
   @js.native
-  sealed trait Q extends QRCODE_LEVEL
+  sealed trait Q
+    extends StObject
+       with QRCODE_LEVEL
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   
@@ -760,17 +819,23 @@ object escposStrings {
   def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
-  sealed trait RT extends TXT_ALIGN
+  sealed trait RT
+    extends StObject
+       with TXT_ALIGN
   @scala.inline
   def RT: RT = "RT".asInstanceOf[RT]
   
   @js.native
-  sealed trait S24 extends BITMAP_FORMAT_TYPE
+  sealed trait S24
+    extends StObject
+       with BITMAP_FORMAT_TYPE
   @scala.inline
   def S24: S24 = "S24".asInstanceOf[S24]
   
   @js.native
-  sealed trait S8 extends BITMAP_FORMAT_TYPE
+  sealed trait S8
+    extends StObject
+       with BITMAP_FORMAT_TYPE
   @scala.inline
   def S8: S8 = "S8".asInstanceOf[S8]
   
@@ -790,52 +855,72 @@ object escposStrings {
   def Startoftext: Startoftext = "\u0002".asInstanceOf[Startoftext]
   
   @js.native
-  sealed trait U extends TXT_STYLE
+  sealed trait U
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def U: U = "U".asInstanceOf[U]
   
   @js.native
-  sealed trait U2 extends TXT_STYLE
+  sealed trait U2
+    extends StObject
+       with TXT_STYLE
   @scala.inline
   def U2: U2 = "U2".asInstanceOf[U2]
   
   @js.native
-  sealed trait UPC_A extends BARCODE_TYPE
+  sealed trait UPC_A
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def UPC_A: UPC_A = "UPC_A".asInstanceOf[UPC_A]
   
   @js.native
-  sealed trait UPC_E extends BARCODE_TYPE
+  sealed trait UPC_E
+    extends StObject
+       with BARCODE_TYPE
   @scala.inline
   def UPC_E: UPC_E = "UPC_E".asInstanceOf[UPC_E]
   
   @js.native
-  sealed trait VT extends FEED_CONTROL_TYPE
+  sealed trait VT
+    extends StObject
+       with FEED_CONTROL_TYPE
   @scala.inline
   def VT: VT = "VT".asInstanceOf[VT]
   
   @js.native
-  sealed trait imageSlashbmp extends MIME_TYPE
+  sealed trait imageSlashbmp
+    extends StObject
+       with MIME_TYPE
   @scala.inline
   def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   
   @js.native
-  sealed trait imageSlashgif extends MIME_TYPE
+  sealed trait imageSlashgif
+    extends StObject
+       with MIME_TYPE
   @scala.inline
   def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
   
   @js.native
-  sealed trait imageSlashjpeg extends MIME_TYPE
+  sealed trait imageSlashjpeg
+    extends StObject
+       with MIME_TYPE
   @scala.inline
   def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   
   @js.native
-  sealed trait imageSlashjpg extends MIME_TYPE
+  sealed trait imageSlashjpg
+    extends StObject
+       with MIME_TYPE
   @scala.inline
   def imageSlashjpg: imageSlashjpg = "image/jpg".asInstanceOf[imageSlashjpg]
   
   @js.native
-  sealed trait imageSlashpng extends MIME_TYPE
+  sealed trait imageSlashpng
+    extends StObject
+       with MIME_TYPE
   @scala.inline
   def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   

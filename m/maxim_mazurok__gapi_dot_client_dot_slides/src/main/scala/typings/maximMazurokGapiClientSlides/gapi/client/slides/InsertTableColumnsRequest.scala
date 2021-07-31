@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertTableColumnsRequest extends StObject {
   
   /**
     * The reference table cell location from which columns will be inserted. A new column will be inserted to the left (or right) of the column where the reference cell is. If the
     * reference cell is a merged cell, a new column will be inserted to the left (or right) of the merged cell.
     */
-  var cellLocation: js.UndefOr[TableCellLocation] = js.native
+  var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
   
   /** Whether to insert new columns to the right of the reference cell location. - `True`: insert to the right. - `False`: insert to the left. */
-  var insertRight: js.UndefOr[Boolean] = js.native
+  var insertRight: js.UndefOr[Boolean] = js.undefined
   
   /** The number of columns to be inserted. Maximum 20 per request. */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /** The table to insert columns into. */
-  var tableObjectId: js.UndefOr[String] = js.native
+  var tableObjectId: js.UndefOr[String] = js.undefined
 }
 object InsertTableColumnsRequest {
   

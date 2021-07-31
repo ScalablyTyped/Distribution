@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a section column in the document.
   */
-@js.native
 trait SectionColumn extends StObject {
   
   /**
     * Specifies the space between adjacent section columns.
     */
-  var spacing: Double = js.native
+  var spacing: Double
   
   /**
     * Specifies the width of the section column.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object SectionColumn {
   

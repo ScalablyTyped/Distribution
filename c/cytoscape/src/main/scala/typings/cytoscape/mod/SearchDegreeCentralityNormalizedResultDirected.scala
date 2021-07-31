@@ -2,17 +2,15 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDegreeCentralityNormalizedResultDirected extends StObject {
   
   /** the normalised indegree centrality of the specified node */
-  def indegree(node: NodeSingular): js.Any = js.native
+  def indegree(node: NodeSingular): js.Any
   
   /** the normalised outdegree centrality of the specified node */
-  def outdegree(node: NodeSingular): js.Any = js.native
+  def outdegree(node: NodeSingular): js.Any
 }
 object SearchDegreeCentralityNormalizedResultDirected {
   

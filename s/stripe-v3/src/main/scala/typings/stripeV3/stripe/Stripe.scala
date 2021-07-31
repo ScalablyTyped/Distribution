@@ -11,7 +11,6 @@ import typings.stripeV3.stripeV3Strings.bank_account
 import typings.stripeV3.stripeV3Strings.pii
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,12 +22,12 @@ trait Stripe extends StObject {
     * carry out 3DS or other next actions if they are required.
     */
   def confirmCardPayment(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
-  def confirmCardPayment(clientSecret: String, data: js.UndefOr[scala.Nothing], options: ConfirmCardPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
+  def confirmCardPayment(clientSecret: String, data: Unit, options: ConfirmCardPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
   def confirmCardPayment(clientSecret: String, data: ConfirmCardPaymentData): js.Promise[PaymentIntentResponse] = js.native
   def confirmCardPayment(clientSecret: String, data: ConfirmCardPaymentData, options: ConfirmCardPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
   
   def confirmCardSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
-  def confirmCardSetup(clientSecret: String, data: js.UndefOr[scala.Nothing], options: ConfirmCardSetupOptions): js.Promise[SetupIntentResponse] = js.native
+  def confirmCardSetup(clientSecret: String, data: Unit, options: ConfirmCardSetupOptions): js.Promise[SetupIntentResponse] = js.native
   def confirmCardSetup(clientSecret: String, data: ConfirmCardSetupData): js.Promise[SetupIntentResponse] = js.native
   def confirmCardSetup(clientSecret: String, data: ConfirmCardSetupData, options: ConfirmCardSetupOptions): js.Promise[SetupIntentResponse] = js.native
   

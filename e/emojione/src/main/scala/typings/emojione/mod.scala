@@ -4,7 +4,6 @@ import typings.emojione.emojioneStrings.png
 import typings.emojione.emojioneStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,13 +49,11 @@ object mod {
   @scala.inline
   def imageType_=(x: png | svg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imageType")(x.asInstanceOf[js.Any])
   
-  @JSImport("emojione", "shortnameToImage")
-  @js.native
-  def shortnameToImage(str: String): String = js.native
+  @scala.inline
+  def shortnameToImage(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortnameToImage")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("emojione", "shortnameToUnicode")
-  @js.native
-  def shortnameToUnicode(str: String): String = js.native
+  @scala.inline
+  def shortnameToUnicode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortnameToUnicode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("emojione", "sprites")
   @js.native
@@ -64,13 +61,11 @@ object mod {
   @scala.inline
   def sprites_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sprites")(x.asInstanceOf[js.Any])
   
-  @JSImport("emojione", "toImage")
-  @js.native
-  def toImage(str: String): String = js.native
+  @scala.inline
+  def toImage(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toImage")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("emojione", "toShort")
-  @js.native
-  def toShort(str: String): String = js.native
+  @scala.inline
+  def toShort(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toShort")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("emojione", "unicodeAlt")
   @js.native
@@ -84,7 +79,6 @@ object mod {
   @scala.inline
   def unicodeRegexp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unicodeRegexp")(x.asInstanceOf[js.Any])
   
-  @JSImport("emojione", "unicodeToImage")
-  @js.native
-  def unicodeToImage(str: String): String = js.native
+  @scala.inline
+  def unicodeToImage(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unicodeToImage")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

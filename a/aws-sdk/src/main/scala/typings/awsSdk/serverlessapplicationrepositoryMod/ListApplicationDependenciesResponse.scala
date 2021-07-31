@@ -2,21 +2,19 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationDependenciesResponse extends StObject {
   
   /**
     * An array of application summaries nested in the application.
     */
-  var Dependencies: js.UndefOr[listOfApplicationDependencySummary] = js.native
+  var Dependencies: js.UndefOr[listOfApplicationDependencySummary] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListApplicationDependenciesResponse {
   

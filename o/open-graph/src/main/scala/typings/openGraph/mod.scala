@@ -6,68 +6,65 @@ import typings.openGraph.anon.Alternate
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String, callback: DataCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(url: String, callback: DataCallback, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("open-graph", JSImport.Namespace)
   @js.native
-  def apply(url: String, callback: DataCallback): Unit = js.native
-  @JSImport("open-graph", JSImport.Namespace)
-  @js.native
-  def apply(url: String, callback: DataCallback, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("open-graph", "getHTML")
-  @js.native
-  def getHTML(url: String, callback: RequestCallback): Unit = js.native
-  @JSImport("open-graph", "getHTML")
-  @js.native
-  def getHTML(url: Cheerio, callback: RequestCallback): Unit = js.native
+  @scala.inline
+  def getHTML(url: String, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def getHTML(url: Cheerio, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("open-graph", "parse")
-  @js.native
-  def parse(websiteContent: String): Data = js.native
-  @JSImport("open-graph", "parse")
-  @js.native
-  def parse(websiteContent: String, options: Options): Data = js.native
+  @scala.inline
+  def parse(websiteContent: String): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any]).asInstanceOf[Data]
+  @scala.inline
+  def parse(websiteContent: String, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
   
-  @js.native
   trait Data
-    extends /* key */ StringDictionary[js.UndefOr[String | js.Array[String] | ImageVideoMetadata | Metadata]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String | js.Array[String] | ImageVideoMetadata | Metadata]] {
     
     /** A URL to an audio file to accompany this object. */
-    var audio: js.UndefOr[String | js.Array[String] | Metadata] = js.native
+    var audio: js.UndefOr[String | js.Array[String] | Metadata] = js.undefined
     
     /** A one to two sentence description of your object. */
-    var description: js.UndefOr[String | js.Array[String]] = js.native
+    var description: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The word that appears before this object's title in a sentence. An enum of (a, an, the, "", auto).
       * If auto is chosen, the consumer of your data should chose between "a" or "an". Default is "" (blank).
       */
-    var determiner: js.UndefOr[String | js.Array[String]] = js.native
+    var determiner: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** An image URL which should represent your object within the graph. */
-    var image: js.UndefOr[String | js.Array[String] | ImageVideoMetadata] = js.native
+    var image: js.UndefOr[String | js.Array[String] | ImageVideoMetadata] = js.undefined
     
     /** The locale these tags are marked up in. Of the format `language_TERRITORY`. Default is `en_US`. */
-    var locale: js.UndefOr[String | js.Array[String] | Alternate] = js.native
+    var locale: js.UndefOr[String | js.Array[String] | Alternate] = js.undefined
     
     /** If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb". */
-    var site_name: js.UndefOr[String | js.Array[String]] = js.native
+    var site_name: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** The title of your object as it should appear within the graph, e.g., "The Rock". */
-    var title: String | js.Array[String] = js.native
+    var title: String | js.Array[String]
     
     /** The type of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required. */
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/". */
-    var url: js.UndefOr[String | js.Array[String]] = js.native
+    var url: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A URL to a video file that complements this object. */
-    var video: js.UndefOr[String | js.Array[String] | ImageVideoMetadata] = js.native
+    var video: js.UndefOr[String | js.Array[String] | ImageVideoMetadata] = js.undefined
   }
   object Data {
     
@@ -171,20 +168,21 @@ object mod {
   
   type DataCallback = js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Data], Unit]
   
-  @js.native
-  trait ImageVideoMetadata extends Metadata {
+  trait ImageVideoMetadata
+    extends StObject
+       with Metadata {
     
     /** A description of what is in the image (not a caption). If the page specifies an `og:image` it should specify `og:image:alt`. */
-    var alt: js.UndefOr[String | js.Array[String]] = js.native
+    var alt: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** The number of pixels high. */
-    var height: js.UndefOr[String | js.Array[String]] = js.native
+    var height: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** The  */
-    var url: js.UndefOr[String | js.Array[String]] = js.native
+    var url: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** The number of pixels wide. */
-    var width: js.UndefOr[String | js.Array[String]] = js.native
+    var width: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ImageVideoMetadata {
     
@@ -235,15 +233,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Metadata
-    extends /* key */ StringDictionary[js.UndefOr[String | js.Array[String]]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String | js.Array[String]]] {
     
     /** An alternate url to use if the webpage requires HTTPS. */
-    var secure_url: js.UndefOr[String | js.Array[String]] = js.native
+    var secure_url: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A MIME type for this image. */
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Metadata {
     
@@ -276,10 +274,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

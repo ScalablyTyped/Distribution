@@ -3,13 +3,11 @@ package typings.c3.anon
 import typings.c3.mod.DataSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Targets extends StObject {
   
-  var targets: js.Array[DataSeries] = js.native
+  var targets: js.Array[DataSeries]
 }
 object Targets {
   

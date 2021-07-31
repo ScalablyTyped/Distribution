@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedactChannelMessageResponse extends StObject {
   
   /**
     * The ARN of the channel containing the messages that you want to redact.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The ID of the message being redacted.
     */
-  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.native
+  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
 }
 object RedactChannelMessageResponse {
   

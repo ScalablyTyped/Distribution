@@ -2,26 +2,24 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrokeOpts extends StObject {
   
-  var cap: js.UndefOr[StrokeCap] = js.native
+  var cap: js.UndefOr[StrokeCap] = js.undefined
   
-  var join: js.UndefOr[StrokeJoin] = js.native
+  var join: js.UndefOr[StrokeJoin] = js.undefined
   
-  var miter_limit: js.UndefOr[Double] = js.native
+  var miter_limit: js.UndefOr[Double] = js.undefined
   
   /**
     * if > 1, increase precision, else if (0 < resScale < 1) reduce precision to
     * favor speed and size
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /** The width of the stroked lines. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object StrokeOpts {
   

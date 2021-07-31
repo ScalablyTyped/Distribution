@@ -3,7 +3,6 @@ package typings.uniApp
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,11 +16,11 @@ trait Uni extends StObject {
   @JSName("$emit")
   def $emit(): Unit = js.native
   @JSName("$emit")
-  def $emit(eventName: js.UndefOr[scala.Nothing], param: js.Any): Unit = js.native
-  @JSName("$emit")
   def $emit(eventName: String): Unit = js.native
   @JSName("$emit")
   def $emit(eventName: String, param: js.Any): Unit = js.native
+  @JSName("$emit")
+  def $emit(eventName: Unit, param: js.Any): Unit = js.native
   
   /**
     * 移除自定义事件监听器。如果没有指定事件名，则移除所有事件监听器。如果提供事件名，则移除该事件的所有监听器。如果提供了事件名和回调，则只移除这个回调的监听器。
@@ -31,15 +30,15 @@ trait Uni extends StObject {
   @JSName("$off")
   def $off(): Unit = js.native
   @JSName("$off")
-  def $off(eventName: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSName("$off")
   def $off(eventName: String): Unit = js.native
   @JSName("$off")
   def $off(eventName: String, callback: js.Function0[Unit]): Unit = js.native
   @JSName("$off")
-  def $off(eventName: js.Array[_]): Unit = js.native
+  def $off(eventName: js.Array[js.Any]): Unit = js.native
   @JSName("$off")
-  def $off(eventName: js.Array[_], callback: js.Function0[Unit]): Unit = js.native
+  def $off(eventName: js.Array[js.Any], callback: js.Function0[Unit]): Unit = js.native
+  @JSName("$off")
+  def $off(eventName: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * 监听自定义事件。事件可以由 uni.$emit 触发。回调函数会接收 uni.$emit 传递的参数。
@@ -49,11 +48,11 @@ trait Uni extends StObject {
   @JSName("$on")
   def $on(): Unit = js.native
   @JSName("$on")
-  def $on(eventName: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSName("$on")
   def $on(eventName: String): Unit = js.native
   @JSName("$on")
   def $on(eventName: String, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("$on")
+  def $on(eventName: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * 监听一个自定义事件。事件只触发一次，在第一次触发之后移除事件监听器。
@@ -63,11 +62,11 @@ trait Uni extends StObject {
   @JSName("$once")
   def $once(): Unit = js.native
   @JSName("$once")
-  def $once(eventName: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSName("$once")
   def $once(eventName: String): Unit = js.native
   @JSName("$once")
   def $once(eventName: String, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("$once")
+  def $once(eventName: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * 手机通讯录联系人和联系方式的增加
@@ -264,9 +263,9 @@ trait Uni extends StObject {
     * 参考: [http://uniapp.dcloud.io/api/ui/canvas?id=createcanvascontext](http://uniapp.dcloud.io/api/ui/canvas?id=createcanvascontext)
     */
   def createCanvasContext(): CanvasContext = js.native
-  def createCanvasContext(canvasId: js.UndefOr[scala.Nothing], componentInstance: js.Any): CanvasContext = js.native
   def createCanvasContext(canvasId: String): CanvasContext = js.native
   def createCanvasContext(canvasId: String, componentInstance: js.Any): CanvasContext = js.native
+  def createCanvasContext(canvasId: Unit, componentInstance: js.Any): CanvasContext = js.native
   
   /**
     * 创建并返回 audio 上下文 audioContext 对象
@@ -289,9 +288,9 @@ trait Uni extends StObject {
     * 参考: [http://uniapp.dcloud.io/api/location/map?id=createmapcontext](http://uniapp.dcloud.io/api/location/map?id=createmapcontext)
     */
   def createMapContext(): MapContext = js.native
-  def createMapContext(mapId: js.UndefOr[scala.Nothing], currentComponent: js.Any): MapContext = js.native
   def createMapContext(mapId: String): MapContext = js.native
   def createMapContext(mapId: String, currentComponent: js.Any): MapContext = js.native
+  def createMapContext(mapId: Unit, currentComponent: js.Any): MapContext = js.native
   
   /**
     * 返回一个SelectorQuery对象实例
@@ -306,9 +305,9 @@ trait Uni extends StObject {
     * 参考: [http://uniapp.dcloud.io/api/media/video-context?id=createvideocontext](http://uniapp.dcloud.io/api/media/video-context?id=createvideocontext)
     */
   def createVideoContext(): VideoContext = js.native
-  def createVideoContext(videoId: js.UndefOr[scala.Nothing], currentComponent: js.Any): VideoContext = js.native
   def createVideoContext(videoId: String): VideoContext = js.native
   def createVideoContext(videoId: String, currentComponent: js.Any): VideoContext = js.native
+  def createVideoContext(videoId: Unit, currentComponent: js.Any): VideoContext = js.native
   
   /**
     * 下载文件
@@ -1062,9 +1061,9 @@ trait Uni extends StObject {
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync)
     */
   def setStorageSync(): Unit = js.native
-  def setStorageSync(key: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def setStorageSync(key: String): Unit = js.native
   def setStorageSync(key: String, value: js.Any): Unit = js.native
+  def setStorageSync(key: Unit, value: js.Any): Unit = js.native
   
   /**
     * 为 tabBar 某一项的右上角添加文本

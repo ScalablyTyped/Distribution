@@ -2,15 +2,13 @@ package typings.testingLibraryJestDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exact extends StObject {
     
-    var exact: Boolean = js.native
+    var exact: Boolean
   }
   object Exact {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NormalizeWhitespace extends StObject {
     
-    var normalizeWhitespace: Boolean = js.native
+    var normalizeWhitespace: Boolean
   }
   object NormalizeWhitespace {
     

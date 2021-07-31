@@ -4,25 +4,24 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.pow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowScale
-  extends NumericScale
+  extends StObject
+     with NumericScale
      with Scale {
   
-  var exponent: Double | SignalRef = js.native
+  var exponent: Double | SignalRef
   
   @JSName("type")
-  var type_PowScale: pow = js.native
+  var type_PowScale: pow
 }
 object PowScale {
   
   @scala.inline
-  def apply(exponent: Double | SignalRef, name: String, `type`: pow): PowScale = {
+  def apply(exponent: Double | SignalRef, name: String): PowScale = {
     val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pow")
     __obj.asInstanceOf[PowScale]
   }
   

@@ -4,38 +4,37 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreemapProps
-  extends EventAttributes
+  extends StObject
+     with EventAttributes
      with Animatable {
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactElement | ContentRenderer[_]] = js.native
+  var content: js.UndefOr[ReactElement | ContentRenderer[js.Any]] = js.undefined
   
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var dataKey: js.UndefOr[DataKey] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var nameKey: js.UndefOr[String | Double | RechartsFunction] = js.native
+  var nameKey: js.UndefOr[String | Double | RechartsFunction] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TreemapProps {
   
@@ -70,16 +69,16 @@ object TreemapProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setContent(value: ReactElement | ContentRenderer[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentFunction1(value: _ => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    def setContentFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
     def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
@@ -110,9 +109,6 @@ object TreemapProps {
     
     @scala.inline
     def setNameKey(value: String | Double | RechartsFunction): Self = StObject.set(x, "nameKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameKeyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "nameKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setNameKeyUndefined: Self = StObject.set(x, "nameKey", js.undefined)

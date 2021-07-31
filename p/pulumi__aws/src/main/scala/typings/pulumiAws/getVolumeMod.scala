@@ -5,25 +5,23 @@ import typings.pulumiAws.inputMod.ebs.GetVolumeFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVolumeMod {
   
-  @JSImport("@pulumi/aws/ebs/getVolume", "getVolume")
+  @JSImport("@pulumi/aws/ebs/getVolume", JSImport.Namespace)
   @js.native
-  def getVolume(): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getVolume", "getVolume")
-  @js.native
-  def getVolume(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getVolume", "getVolume")
-  @js.native
-  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getVolume", "getVolume")
-  @js.native
-  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVolume(): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: Unit, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
+  
   trait GetVolumeArgs extends StObject {
     
     /**
@@ -31,18 +29,18 @@ object getVolumeMod {
       * several valid keys, for a full reference, check out
       * [describe-volumes in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetVolumeFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVolumeFilter]] = js.undefined
     
     /**
       * If more than one result is returned, use the most
       * recent Volume.
       */
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A map of tags for the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVolumeArgs {
     
@@ -78,77 +76,76 @@ object getVolumeMod {
     }
   }
   
-  @js.native
   trait GetVolumeResult extends StObject {
     
     /**
       * The volume ARN (e.g. arn:aws:ec2:us-east-1:0123456789012:volume/vol-59fcb34e).
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The AZ where the EBS volume exists.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * Whether the disk is encrypted.
       */
-    val encrypted: Boolean = js.native
+    val encrypted: Boolean
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetVolumeFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetVolumeFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The amount of IOPS for the disk.
       */
-    val iops: Double = js.native
+    val iops: Double
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (Optional) Specifies whether Amazon EBS Multi-Attach is enabled.
       */
-    val multiAttachEnabled: Boolean = js.native
+    val multiAttachEnabled: Boolean
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: String = js.native
+    val outpostArn: String
     
     /**
       * The size of the drive in GiBs.
       */
-    val size: Double = js.native
+    val size: Double
     
     /**
       * The snapshotId the EBS volume is based off.
       */
-    val snapshotId: String = js.native
+    val snapshotId: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The volume ID (e.g. vol-59fcb34e).
       */
-    val volumeId: String = js.native
+    val volumeId: String
     
     /**
       * The type of EBS volume.
       */
-    val volumeType: String = js.native
+    val volumeType: String
   }
   object GetVolumeResult {
     

@@ -2,15 +2,13 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofquery extends StObject {
   
-  def handler(request: js.Any, h: js.Any): js.Any = js.native
+  def handler(request: js.Any, h: js.Any): js.Any
   
-  val options_10: Typeofoptions10 = js.native
+  val options_10: Typeofoptions10
 }
 object Typeofquery {
   

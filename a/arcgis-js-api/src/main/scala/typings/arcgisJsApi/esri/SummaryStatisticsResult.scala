@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SummaryStatisticsResult extends Object {
+trait SummaryStatisticsResult
+  extends StObject
+     with Object {
   
   /**
     * The average of all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var avg: Double = js.native
+  var avg: Double
   
   /**
     * The number of features evaluated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * The maximum of all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum of all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The standard deviation calculated from values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var stddev: Double = js.native
+  var stddev: Double
   
   /**
     * The sum of all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var sum: Double = js.native
+  var sum: Double
   
   /**
     * The calculated variance from all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
-  var variance: Double = js.native
+  var variance: Double
 }
 object SummaryStatisticsResult {
   

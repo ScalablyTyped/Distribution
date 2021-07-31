@@ -12,7 +12,6 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -154,7 +153,7 @@ object mod {
       * If the plugin provides a service which has already been provided
       * by another plugin, the new service will override the old service.
       */
-    def registerPlugin(plugin: IPlugin[this.type, _]): Unit = js.native
+    def registerPlugin(plugin: IPlugin[this.type, js.Any]): Unit = js.native
     
     /**
       * Register multiple plugins with the application.
@@ -164,7 +163,7 @@ object mod {
       * #### Notes
       * This calls `registerPlugin()` for each of the given plugins.
       */
-    def registerPlugins(plugins: js.Array[IPlugin[this.type, _]]): Unit = js.native
+    def registerPlugins(plugins: js.Array[IPlugin[this.type, js.Any]]): Unit = js.native
     
     /**
       * Resolve an optional service of a given type.
@@ -256,13 +255,12 @@ object mod {
     /**
       * An options object for creating an application.
       */
-    @js.native
     trait IOptions[T /* <: Widget */] extends StObject {
       
       /**
         * A custom renderer for the context menu.
         */
-      var contextMenuRenderer: js.UndefOr[IRenderer] = js.native
+      var contextMenuRenderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The shell widget to use for the application.
@@ -271,7 +269,7 @@ object mod {
         *
         * The application will attach the widget to the DOM.
         */
-      var shell: T = js.native
+      var shell: T
     }
     object IOptions {
       
@@ -282,7 +280,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: Widget */] (val x: Self with IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: Widget */] (val x: Self & IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setContextMenuRenderer(value: IRenderer): Self = StObject.set(x, "contextMenuRenderer", value.asInstanceOf[js.Any])
@@ -298,7 +296,6 @@ object mod {
     /**
       * An options object for application startup.
       */
-    @js.native
     trait IStartOptions extends StObject {
       
       /**
@@ -307,7 +304,7 @@ object mod {
         * #### Notes
         * If this is not provided, the document body will be the host.
         */
-      var hostID: js.UndefOr[String] = js.native
+      var hostID: js.UndefOr[String] = js.undefined
       
       /**
         * The plugins to **not** activate on startup.
@@ -315,7 +312,7 @@ object mod {
         * #### Notes
         * This will override `startPlugins` and any `autoStart` plugins.
         */
-      var ignorePlugins: js.UndefOr[js.Array[String]] = js.native
+      var ignorePlugins: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The plugins to activate on startup.
@@ -323,7 +320,7 @@ object mod {
         * #### Notes
         * These will be *in addition* to any `autoStart` plugins.
         */
-      var startPlugins: js.UndefOr[js.Array[String]] = js.native
+      var startPlugins: js.UndefOr[js.Array[String]] = js.undefined
     }
     object IStartOptions {
       
@@ -363,7 +360,6 @@ object mod {
     }
   }
   
-  @js.native
   trait IPlugin[T, U] extends StObject {
     
     /**
@@ -383,7 +379,7 @@ object mod {
       * This function will not be called unless all of its required
       * services can be fulfilled.
       */
-    def activate(app: T, args: js.Any*): U | js.Promise[U] = js.native
+    def activate(app: T, args: js.Any*): U | js.Promise[U]
     
     /**
       * Whether the plugin should be activated on application start.
@@ -391,7 +387,7 @@ object mod {
       * #### Notes
       * The default is `false`.
       */
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The human readable id of the plugin.
@@ -399,7 +395,7 @@ object mod {
       * #### Notes
       * This must be unique within an application.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The types of optional services for the plugin, if any.
@@ -412,7 +408,7 @@ object mod {
       * following all required services. If an optional service cannot be
       * resolved, `null` will be passed in its place.
       */
-    var optional: js.UndefOr[js.Array[Token[_]]] = js.native
+    var optional: js.UndefOr[js.Array[Token[js.Any]]] = js.undefined
     
     /**
       * The type of service provided by the plugin, if any.
@@ -423,7 +419,7 @@ object mod {
       * When the plugin is activated, the return value of `activate()`
       * is used as the concrete instance of the type.
       */
-    var provides: js.UndefOr[Token[U]] = js.native
+    var provides: js.UndefOr[Token[U]] = js.undefined
     
     /**
       * The types of required services for the plugin, if any.
@@ -436,7 +432,7 @@ object mod {
       * will be passed to the `activate()` function, in the order they
       * are specified in the `requires` array.
       */
-    var requires: js.UndefOr[js.Array[Token[_]]] = js.native
+    var requires: js.UndefOr[js.Array[Token[js.Any]]] = js.undefined
   }
   object IPlugin {
     
@@ -447,7 +443,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IPluginMutableBuilder[Self <: IPlugin[_, _], T, U] (val x: Self with (IPlugin[T, U])) extends AnyVal {
+    implicit class IPluginMutableBuilder[Self <: IPlugin[?, ?], T, U] (val x: Self & (IPlugin[T, U])) extends AnyVal {
       
       @scala.inline
       def setActivate(value: (T, /* repeated */ js.Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
@@ -462,7 +458,7 @@ object mod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOptional(value: js.Array[Token[_]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      def setOptional(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
@@ -477,7 +473,7 @@ object mod {
       def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
       
       @scala.inline
-      def setRequires(value: js.Array[Token[_]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      def setRequires(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)

@@ -3,13 +3,11 @@ package typings.winrt.Windows.ApplicationModel.Resources
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResourceLoaderStatics extends StObject {
   
-  def getStringForReference(uri: Uri): String = js.native
+  def getStringForReference(uri: Uri): String
 }
 object IResourceLoaderStatics {
   

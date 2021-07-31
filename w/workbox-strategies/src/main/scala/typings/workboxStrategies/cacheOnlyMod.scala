@@ -3,34 +3,42 @@ package typings.workboxStrategies
 import typings.std.CacheQueryOptions
 import typings.std.Response
 import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import typings.workboxRouting.routeHandlerMod.RouteHandlerCallback
+import typings.workboxRouting.routeHandlerMod.RouteHandlerCallbackContext
 import typings.workboxRouting.routeHandlerMod.RouteHandlerObject
 import typings.workboxStrategies.makeRequestCallbackMod.MakeRequestCallback
 import typings.workboxStrategies.makeRequestCallbackMod.MakeRequestCallbackOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheOnlyMod {
   
   @JSImport("workbox-strategies/CacheOnly", "CacheOnly")
   @js.native
-  class CacheOnly () extends RouteHandlerObject {
+  class CacheOnly ()
+    extends StObject
+       with RouteHandlerObject {
     def this(options: CacheOnlyOptions) = this()
+    
+    /* CompleteClass */
+    override def handle(context: RouteHandlerCallbackContext): js.Promise[Response] = js.native
+    /* CompleteClass */
+    @JSName("handle")
+    var handle_Original: RouteHandlerCallback = js.native
     
     def makeRequest(options: MakeRequestCallbackOptions): js.Promise[Response] = js.native
     @JSName("makeRequest")
     var makeRequest_Original: MakeRequestCallback = js.native
   }
   
-  @js.native
   trait CacheOnlyOptions extends StObject {
     
-    var cacheName: js.UndefOr[String] = js.native
+    var cacheName: js.UndefOr[String] = js.undefined
     
-    var matchOptions: js.UndefOr[CacheQueryOptions] = js.native
+    var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.native
+    var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
   }
   object CacheOnlyOptions {
     

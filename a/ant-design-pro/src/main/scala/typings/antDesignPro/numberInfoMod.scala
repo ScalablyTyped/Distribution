@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberInfoMod {
@@ -19,26 +18,25 @@ object numberInfoMod {
   
   type NumberInfo = Component[NumberInfoProps, js.Any, js.Any]
   
-  @js.native
   trait NumberInfoProps extends StObject {
     
-    var gap: js.UndefOr[Double] = js.native
+    var gap: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[up | down] = js.native
+    var status: js.UndefOr[up | down] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode | String] = js.native
+    var subTitle: js.UndefOr[ReactNode | String] = js.undefined
     
-    var subTotal: js.UndefOr[Double] = js.native
+    var subTotal: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[ReactNode | String] = js.native
+    var title: js.UndefOr[ReactNode | String] = js.undefined
     
-    var total: js.UndefOr[ReactNode | String] = js.native
+    var total: js.UndefOr[ReactNode | String] = js.undefined
   }
   object NumberInfoProps {
     

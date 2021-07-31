@@ -3,13 +3,11 @@ package typings.reactNative.mod
 import typings.reactNative.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInputScrollEventData extends StObject {
   
-  var contentOffset: X = js.native
+  var contentOffset: X
 }
 object TextInputScrollEventData {
   

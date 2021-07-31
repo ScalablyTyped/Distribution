@@ -10,9 +10,9 @@ TypeScript typings for DoubleClick Bid Manager API v1.1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.doubleclickbidmanager |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 920 |
+| # downloads        | 1016 |
 | # stars            | 0 |
 
 ## Links

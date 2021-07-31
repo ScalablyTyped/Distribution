@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaymentDetailsInit extends PaymentDetailsBase {
+trait PaymentDetailsInit
+  extends StObject
+     with PaymentDetailsBase {
   
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: js.UndefOr[java.lang.String] = js.undefined
   
-  var total: PaymentItem = js.native
+  var total: PaymentItem
 }
 object PaymentDetailsInit {
   

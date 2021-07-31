@@ -2,23 +2,21 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationStateListener extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.undefined
   
-  var dispose: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
+  var dispose: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.undefined
   
-  var end: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
+  var end: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.undefined
   
-  var event: js.UndefOr[js.Function2[/* entry */ TrackEntry, /* event */ Event, Unit]] = js.native
+  var event: js.UndefOr[js.Function2[/* entry */ TrackEntry, /* event */ Event, Unit]] = js.undefined
   
-  var interrupt: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
+  var interrupt: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.undefined
 }
 object AnimationStateListener {
   

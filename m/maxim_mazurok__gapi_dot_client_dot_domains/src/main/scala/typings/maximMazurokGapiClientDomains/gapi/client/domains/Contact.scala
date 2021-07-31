@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contact extends StObject {
   
   /** Required. Email address of the contact. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Fax number of the contact in international format. For example, `"+1-800-555-0123"`. */
-  var faxNumber: js.UndefOr[String] = js.native
+  var faxNumber: js.UndefOr[String] = js.undefined
   
   /** Required. Phone number of the contact in international format. For example, `"+1-800-555-0123"`. */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /** Required. Postal address of the contact. */
-  var postalAddress: js.UndefOr[PostalAddress] = js.native
+  var postalAddress: js.UndefOr[PostalAddress] = js.undefined
 }
 object Contact {
   

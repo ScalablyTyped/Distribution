@@ -2,11 +2,13 @@ package typings.ionicCore
 
 import typings.ionicCore.componentsMod.global.HTMLIonSegmentElement
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
+import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.reset
+import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuButtonMod {
@@ -14,7 +16,8 @@ object menuButtonMod {
   @JSImport("@ionic/core/dist/types/components/menu-button/menu-button", "MenuButton")
   @js.native
   class MenuButton ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with ButtonInterface {
     
     /**
@@ -32,6 +35,9 @@ object menuButtonMod {
     @JSName("componentDidLoad")
     def componentDidLoad_MMenuButton(): Unit = js.native
     
+    /* CompleteClass */
+    var disabled: Boolean = js.native
+    
     var el: HTMLIonSegmentElement = js.native
     
     /**
@@ -43,6 +49,9 @@ object menuButtonMod {
     
     @JSName("render")
     def render_MMenuButton(): js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: submit | reset | button = js.native
     
     def visibilityChanged(): js.Promise[Unit] = js.native
     

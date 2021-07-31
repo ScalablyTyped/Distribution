@@ -2,22 +2,20 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getCredentials` operation. */
-@js.native
 trait GetCredentialsParams extends StObject {
   
   /** The unique identifier for a set of source credentials. */
-  var credential_id: String = js.native
+  var credential_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object GetCredentialsParams {
   

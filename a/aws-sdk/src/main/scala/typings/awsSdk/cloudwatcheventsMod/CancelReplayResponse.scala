@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelReplayResponse extends StObject {
   
   /**
     * The ARN of the replay to cancel.
     */
-  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.native
+  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.undefined
   
   /**
     * The current state of the replay.
     */
-  var State: js.UndefOr[ReplayState] = js.native
+  var State: js.UndefOr[ReplayState] = js.undefined
   
   /**
     * The reason that the replay is in the current state.
     */
-  var StateReason: js.UndefOr[ReplayStateReason] = js.native
+  var StateReason: js.UndefOr[ReplayStateReason] = js.undefined
 }
 object CancelReplayResponse {
   

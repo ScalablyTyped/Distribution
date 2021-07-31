@@ -19,75 +19,70 @@ import typings.node.tlsMod.TlsOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(config: Config): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: String): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: String, config: Config): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: js.Array[String]): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: js.Array[String], config: Config): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: Filter): Proxy = js.native
-  @JSImport("http-proxy-middleware", JSImport.Namespace)
-  @js.native
-  def apply(contextOrUri: Filter, config: Config): Proxy = js.native
+  @scala.inline
+  def apply(config: Config): Proxy = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: String): Proxy = ^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any]).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: String, config: Config): Proxy = (^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: js.Array[String]): Proxy = ^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any]).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: js.Array[String], config: Config): Proxy = (^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: Filter): Proxy = ^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any]).asInstanceOf[Proxy]
+  @scala.inline
+  def apply(contextOrUri: Filter, config: Config): Proxy = (^.asInstanceOf[js.Dynamic].apply(contextOrUri.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Proxy]
   
+  @JSImport("http-proxy-middleware", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Config extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var autoRewrite: js.UndefOr[Boolean] = js.native
+    var autoRewrite: js.UndefOr[Boolean] = js.undefined
     
-    var buffer: js.UndefOr[Readable] = js.native
+    var buffer: js.UndefOr[Readable] = js.undefined
     
-    var changeOrigin: js.UndefOr[Boolean] = js.native
+    var changeOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var cookieDomainRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
+    var cookieDomainRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.undefined
     
-    var cookiePathRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
+    var cookiePathRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var forward: js.UndefOr[String] = js.native
+    var forward: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var hostRewrite: js.UndefOr[String] = js.native
+    var hostRewrite: js.UndefOr[String] = js.undefined
     
-    var ignorePath: js.UndefOr[Boolean] = js.native
+    var ignorePath: js.UndefOr[Boolean] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[debug | info | warn | error | silent] = js.native
+    var logLevel: js.UndefOr[debug | info | warn | error | silent] = js.undefined
     
-    var logProvider: js.UndefOr[js.Function1[/* provider */ LogProvider, LogProvider]] = js.native
+    var logProvider: js.UndefOr[js.Function1[/* provider */ LogProvider, LogProvider]] = js.undefined
     
     var onClose: js.UndefOr[
         js.Function3[/* res */ IncomingMessage, /* socket */ Socket, /* head */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onError: js.UndefOr[
         js.Function3[/* err */ Error, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* proxySocket */ Socket, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* proxySocket */ Socket, Unit]] = js.undefined
     
     var onProxyReq: js.UndefOr[
         js.Function3[
@@ -96,7 +91,7 @@ object mod {
           /* res */ ServerResponse, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onProxyReqWs: js.UndefOr[
         js.Function5[
@@ -107,7 +102,7 @@ object mod {
           /* head */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onProxyRes: js.UndefOr[
         js.Function3[
@@ -116,47 +111,47 @@ object mod {
           /* res */ ServerResponse, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var pathRewrite: js.UndefOr[
         StringDictionary[String] | (js.Function2[/* path */ String, /* req */ IncomingMessage, String])
-      ] = js.native
+      ] = js.undefined
     
-    var prependPath: js.UndefOr[Boolean] = js.native
+    var prependPath: js.UndefOr[Boolean] = js.undefined
     
-    var preserveHeaderKeyCase: js.UndefOr[Boolean] = js.native
+    var preserveHeaderKeyCase: js.UndefOr[Boolean] = js.undefined
     
-    var protocolRewrite: js.UndefOr[String] = js.native
-    
-    /**
-      * @deprecated
-      */
-    var proxyHost: js.UndefOr[js.Any] = js.native
+    var protocolRewrite: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated
       */
-    var proxyTable: js.UndefOr[js.Any] = js.native
+    var proxyHost: js.UndefOr[js.Any] = js.undefined
     
-    var proxyTimeout: js.UndefOr[Double] = js.native
+    /**
+      * @deprecated
+      */
+    var proxyTable: js.UndefOr[js.Any] = js.undefined
     
-    var router: js.UndefOr[StringDictionary[String] | (js.Function1[/* req */ IncomingMessage, String])] = js.native
+    var proxyTimeout: js.UndefOr[Double] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var router: js.UndefOr[StringDictionary[String] | (js.Function1[/* req */ IncomingMessage, String])] = js.undefined
     
-    var selfHandleResponse: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var ssl: js.UndefOr[TlsOptions] = js.native
+    var selfHandleResponse: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var ssl: js.UndefOr[TlsOptions] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var toProxy: js.UndefOr[Boolean] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var ws: js.UndefOr[Boolean] = js.native
+    var toProxy: js.UndefOr[Boolean] = js.undefined
     
-    var xfwd: js.UndefOr[Boolean] = js.native
+    var ws: js.UndefOr[Boolean] = js.undefined
+    
+    var xfwd: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -407,23 +402,65 @@ object mod {
   
   type Filter = js.Function2[/* pathname */ String, /* req */ IncomingMessage, Boolean]
   
-  @js.native
   trait LogProvider extends StObject {
     
-    var debug: js.UndefOr[Logger] = js.native
+    var debug: js.UndefOr[Logger] = js.undefined
     
-    var error: js.UndefOr[Logger] = js.native
+    var error: js.UndefOr[Logger] = js.undefined
     
-    var info: js.UndefOr[Logger] = js.native
+    var info: js.UndefOr[Logger] = js.undefined
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: js.Any*): Unit
     @JSName("log")
-    var log_Original: Logger = js.native
+    var log_Original: Logger
     
-    var warn: js.UndefOr[Logger] = js.native
+    var warn: js.UndefOr[Logger] = js.undefined
+  }
+  object LogProvider {
+    
+    @scala.inline
+    def apply(log: Logger): LogProvider = {
+      val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LogProvider]
+    }
+    
+    @scala.inline
+    implicit class LogProviderMutableBuilder[Self <: LogProvider] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDebug(value: Logger): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      @scala.inline
+      def setError(value: Logger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      @scala.inline
+      def setInfo(value: Logger): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      
+      @scala.inline
+      def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarn(value: Logger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+    }
   }
   
-  type Logger = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Logger extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   type Proxy = NextHandleFunction
 }

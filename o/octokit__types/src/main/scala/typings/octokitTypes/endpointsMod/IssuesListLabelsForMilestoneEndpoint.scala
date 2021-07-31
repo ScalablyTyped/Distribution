@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesListLabelsForMilestoneEndpoint extends StObject {
   
-  var milestone_number: Double = js.native
+  var milestone_number: Double
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object IssuesListLabelsForMilestoneEndpoint {
   

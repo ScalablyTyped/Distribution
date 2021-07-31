@@ -2,59 +2,57 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferCounters extends StObject {
   
   /** Bytes that are copied to the data sink. */
-  var bytesCopiedToSink: js.UndefOr[String] = js.native
+  var bytesCopiedToSink: js.UndefOr[String] = js.undefined
   
   /** Bytes that are deleted from the data sink. */
-  var bytesDeletedFromSink: js.UndefOr[String] = js.native
+  var bytesDeletedFromSink: js.UndefOr[String] = js.undefined
   
   /** Bytes that are deleted from the data source. */
-  var bytesDeletedFromSource: js.UndefOr[String] = js.native
+  var bytesDeletedFromSource: js.UndefOr[String] = js.undefined
   
   /** Bytes that failed to be deleted from the data sink. */
-  var bytesFailedToDeleteFromSink: js.UndefOr[String] = js.native
+  var bytesFailedToDeleteFromSink: js.UndefOr[String] = js.undefined
   
   /** Bytes found in the data source that are scheduled to be transferred, excluding any that are filtered based on object conditions or skipped due to sync. */
-  var bytesFoundFromSource: js.UndefOr[String] = js.native
+  var bytesFoundFromSource: js.UndefOr[String] = js.undefined
   
   /** Bytes found only in the data sink that are scheduled to be deleted. */
-  var bytesFoundOnlyFromSink: js.UndefOr[String] = js.native
+  var bytesFoundOnlyFromSink: js.UndefOr[String] = js.undefined
   
   /** Bytes in the data source that failed to be transferred or that failed to be deleted after being transferred. */
-  var bytesFromSourceFailed: js.UndefOr[String] = js.native
+  var bytesFromSourceFailed: js.UndefOr[String] = js.undefined
   
   /** Bytes in the data source that are not transferred because they already exist in the data sink. */
-  var bytesFromSourceSkippedBySync: js.UndefOr[String] = js.native
+  var bytesFromSourceSkippedBySync: js.UndefOr[String] = js.undefined
   
   /** Objects that are copied to the data sink. */
-  var objectsCopiedToSink: js.UndefOr[String] = js.native
+  var objectsCopiedToSink: js.UndefOr[String] = js.undefined
   
   /** Objects that are deleted from the data sink. */
-  var objectsDeletedFromSink: js.UndefOr[String] = js.native
+  var objectsDeletedFromSink: js.UndefOr[String] = js.undefined
   
   /** Objects that are deleted from the data source. */
-  var objectsDeletedFromSource: js.UndefOr[String] = js.native
+  var objectsDeletedFromSource: js.UndefOr[String] = js.undefined
   
   /** Objects that failed to be deleted from the data sink. */
-  var objectsFailedToDeleteFromSink: js.UndefOr[String] = js.native
+  var objectsFailedToDeleteFromSink: js.UndefOr[String] = js.undefined
   
   /** Objects found in the data source that are scheduled to be transferred, excluding any that are filtered based on object conditions or skipped due to sync. */
-  var objectsFoundFromSource: js.UndefOr[String] = js.native
+  var objectsFoundFromSource: js.UndefOr[String] = js.undefined
   
   /** Objects found only in the data sink that are scheduled to be deleted. */
-  var objectsFoundOnlyFromSink: js.UndefOr[String] = js.native
+  var objectsFoundOnlyFromSink: js.UndefOr[String] = js.undefined
   
   /** Objects in the data source that failed to be transferred or that failed to be deleted after being transferred. */
-  var objectsFromSourceFailed: js.UndefOr[String] = js.native
+  var objectsFromSourceFailed: js.UndefOr[String] = js.undefined
   
   /** Objects in the data source that are not transferred because they already exist in the data sink. */
-  var objectsFromSourceSkippedBySync: js.UndefOr[String] = js.native
+  var objectsFromSourceSkippedBySync: js.UndefOr[String] = js.undefined
 }
 object TransferCounters {
   

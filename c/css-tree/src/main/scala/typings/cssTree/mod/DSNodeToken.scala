@@ -3,22 +3,22 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DSNodeToken extends DSNode {
+trait DSNodeToken
+  extends StObject
+     with DSNode {
   
-  var `type`: Token = js.native
+  var `type`: Token
   
-  var value: String = js.native
+  var value: String
 }
 object DSNodeToken {
   
   @scala.inline
-  def apply(`type`: Token, value: String): DSNodeToken = {
+  def apply(value: String): DSNodeToken = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Token")
     __obj.asInstanceOf[DSNodeToken]
   }
   

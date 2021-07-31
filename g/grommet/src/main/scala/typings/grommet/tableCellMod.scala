@@ -24,7 +24,6 @@ import typings.react.mod.TdHTMLAttributes
 import typings.std.HTMLTableDataCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCellMod {
@@ -32,21 +31,20 @@ object tableCellMod {
   @JSImport("grommet/components/TableCell", "TableCell")
   @js.native
   val TableCell: FC[
-    TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
+    TableCellProps & BoxTypes & (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
   ] = js.native
   
-  @js.native
   trait TableCellProps extends StObject {
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[col | row] = js.native
+    var scope: js.UndefOr[col | row] = js.undefined
     
     var size: js.UndefOr[
         xxsmall | xsmall | small | medium | large | xlarge | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | String
-      ] = js.native
+      ] = js.undefined
     
-    var verticalAlign: js.UndefOr[top | middle | bottom] = js.native
+    var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
   }
   object TableCellProps {
     

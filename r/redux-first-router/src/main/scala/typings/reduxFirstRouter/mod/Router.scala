@@ -2,19 +2,17 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Router[TState] extends StObject {
   
-  def getActionForPathAndParams(path: String): Nullable[js.Object] = js.native
+  def getActionForPathAndParams(path: String): Nullable[js.Object]
   
-  def getPathAndParamsForState(state: TState): typings.reduxFirstRouter.anon.Params = js.native
+  def getPathAndParamsForState(state: TState): typings.reduxFirstRouter.anon.Params
   
-  def getStateForAction(action: js.Object, state: Nullable[TState]): Nullable[TState] = js.native
+  def getStateForAction(action: js.Object, state: Nullable[TState]): Nullable[TState]
   
-  def getStateForActionOriginal(action: js.Object, state: Nullable[TState]): Nullable[TState] = js.native
+  def getStateForActionOriginal(action: js.Object, state: Nullable[TState]): Nullable[TState]
 }
 object Router {
   
@@ -30,7 +28,7 @@ object Router {
   }
   
   @scala.inline
-  implicit class RouterMutableBuilder[Self <: Router[_], TState] (val x: Self with Router[TState]) extends AnyVal {
+  implicit class RouterMutableBuilder[Self <: Router[?], TState] (val x: Self & Router[TState]) extends AnyVal {
     
     @scala.inline
     def setGetActionForPathAndParams(value: String => Nullable[js.Object]): Self = StObject.set(x, "getActionForPathAndParams", js.Any.fromFunction1(value))

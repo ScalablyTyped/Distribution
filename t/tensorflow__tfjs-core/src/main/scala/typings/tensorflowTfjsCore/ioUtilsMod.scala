@@ -13,57 +13,47 @@ import typings.tensorflowTfjsCore.typesMod.WeightGroup
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "arrayBufferToBase64String")
+  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", JSImport.Namespace)
   @js.native
-  def arrayBufferToBase64String(buffer: ArrayBuffer): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "base64StringToArrayBuffer")
-  @js.native
-  def base64StringToArrayBuffer(str: String): ArrayBuffer = js.native
+  @scala.inline
+  def arrayBufferToBase64String(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "basename")
-  @js.native
-  def basename(path: String): String = js.native
+  @scala.inline
+  def base64StringToArrayBuffer(str: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64StringToArrayBuffer")(str.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "concatenateArrayBuffers")
-  @js.native
-  def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = js.native
+  @scala.inline
+  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "concatenateTypedArrays")
-  @js.native
-  def concatenateTypedArrays(xs: js.Array[TypedArray]): ArrayBuffer = js.native
+  @scala.inline
+  def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "decodeWeights")
-  @js.native
-  def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = js.native
+  @scala.inline
+  def concatenateTypedArrays(xs: js.Array[TypedArray]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateTypedArrays")(xs.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "encodeWeights")
-  @js.native
-  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "encodeWeights")
-  @js.native
-  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "encodeWeights")
-  @js.native
-  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "encodeWeights")
-  @js.native
-  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
+  @scala.inline
+  def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "getFloat16Decoder")
-  @js.native
-  def getFloat16Decoder(): js.Function1[/* buffer */ Uint16Array, Float32Array] = js.native
+  @scala.inline
+  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "getModelArtifactsInfoForJSON")
-  @js.native
-  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = js.native
+  @scala.inline
+  def getFloat16Decoder(): js.Function1[/* buffer */ Uint16Array, Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloat16Decoder")().asInstanceOf[js.Function1[/* buffer */ Uint16Array, Float32Array]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/io_utils", "stringByteLength")
-  @js.native
-  def stringByteLength(str: String): Double = js.native
+  @scala.inline
+  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
+  
+  @scala.inline
+  def stringByteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringByteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -12,7 +12,7 @@ Small description for client goes here
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 43993 |
+| # downloads        | 39452 |
 | # stars            | 1 |
 
 ## Links

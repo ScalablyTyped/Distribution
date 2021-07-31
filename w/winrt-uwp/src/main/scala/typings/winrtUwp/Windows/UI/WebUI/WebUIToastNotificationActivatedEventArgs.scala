@@ -6,30 +6,28 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an event that occurs when the app is activated because a user tapped on the body of a toast notification or performed an action inside a toast notification. */
-@js.native
 trait WebUIToastNotificationActivatedEventArgs extends StObject {
   
   /** Gets the app activation operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the arguments that the app can retrieve after it is activated through an interactive toast notification. */
-  var argument: String = js.native
+  var argument: String
   
   /** Gets the kind of activation. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the previous execution state of the app. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets a set of values that you can use to obtain the user input from an interactive toast notification. */
-  var userInput: ValueSet = js.native
+  var userInput: ValueSet
 }
 object WebUIToastNotificationActivatedEventArgs {
   

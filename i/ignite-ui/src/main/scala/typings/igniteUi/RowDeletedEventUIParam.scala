@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowDeletedEventUIParam extends StObject {
   
   /**
     * Gets a jQuery object containing the TR element of the deleted row.
     */
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the row's PK value.
     */
-  var rowID: js.UndefOr[js.Any] = js.native
+  var rowID: js.UndefOr[js.Any] = js.undefined
 }
 object RowDeletedEventUIParam {
   

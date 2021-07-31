@@ -4,7 +4,6 @@ import typings.three.anon.Width
 import typings.three.geometryMod.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeGeometryMod {
@@ -19,40 +18,20 @@ object planeGeometryMod {
   	 */
   class PlaneGeometry () extends Geometry {
     def this(width: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], widthSegments: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double, widthSegments: Double) = this()
-    def this(width: Double, height: js.UndefOr[scala.Nothing], widthSegments: Double) = this()
+    def this(width: Unit, height: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      widthSegments: js.UndefOr[scala.Nothing],
-      heightSegments: Double
-    ) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      widthSegments: Double,
-      heightSegments: Double
-    ) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      widthSegments: js.UndefOr[scala.Nothing],
-      heightSegments: Double
-    ) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double, widthSegments: Double, heightSegments: Double) = this()
-    def this(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      widthSegments: js.UndefOr[scala.Nothing],
-      heightSegments: Double
-    ) = this()
-    def this(width: Double, height: js.UndefOr[scala.Nothing], widthSegments: Double, heightSegments: Double) = this()
-    def this(width: Double, height: Double, widthSegments: js.UndefOr[scala.Nothing], heightSegments: Double) = this()
+    def this(width: Double, height: Unit, widthSegments: Double) = this()
+    def this(width: Unit, height: Double, widthSegments: Double) = this()
+    def this(width: Unit, height: Unit, widthSegments: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double, heightSegments: Double) = this()
+    def this(width: Double, height: Double, widthSegments: Unit, heightSegments: Double) = this()
+    def this(width: Double, height: Unit, widthSegments: Double, heightSegments: Double) = this()
+    def this(width: Double, height: Unit, widthSegments: Unit, heightSegments: Double) = this()
+    def this(width: Unit, height: Double, widthSegments: Double, heightSegments: Double) = this()
+    def this(width: Unit, height: Double, widthSegments: Unit, heightSegments: Double) = this()
+    def this(width: Unit, height: Unit, widthSegments: Double, heightSegments: Double) = this()
+    def this(width: Unit, height: Unit, widthSegments: Unit, heightSegments: Double) = this()
     
     var parameters: Width = js.native
   }

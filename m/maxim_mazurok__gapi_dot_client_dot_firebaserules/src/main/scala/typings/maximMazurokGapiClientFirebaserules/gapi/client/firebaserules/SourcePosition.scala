@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourcePosition extends StObject {
   
   /** First column on the source line associated with the source fragment. */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /** Start position relative to the beginning of the file. */
-  var currentOffset: js.UndefOr[Double] = js.native
+  var currentOffset: js.UndefOr[Double] = js.undefined
   
   /** End position relative to the beginning of the file. */
-  var endOffset: js.UndefOr[Double] = js.native
+  var endOffset: js.UndefOr[Double] = js.undefined
   
   /** Name of the `File`. */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** Line number of the source fragment. 1-based. */
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
 }
 object SourcePosition {
   

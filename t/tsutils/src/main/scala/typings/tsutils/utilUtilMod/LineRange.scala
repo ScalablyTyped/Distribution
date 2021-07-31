@@ -3,13 +3,13 @@ package typings.tsutils.utilUtilMod
 import typings.typescript.mod.TextRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineRange extends TextRange {
+trait LineRange
+  extends StObject
+     with TextRange {
   
-  var contentLength: Double = js.native
+  var contentLength: Double
 }
 object LineRange {
   

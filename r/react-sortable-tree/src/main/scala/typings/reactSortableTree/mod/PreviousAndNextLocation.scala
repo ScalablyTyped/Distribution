@@ -2,19 +2,17 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviousAndNextLocation extends StObject {
   
-  var nextPath: NumberOrStringArray = js.native
+  var nextPath: NumberOrStringArray
   
-  var nextTreeIndex: Double = js.native
+  var nextTreeIndex: Double
   
-  var prevPath: NumberOrStringArray = js.native
+  var prevPath: NumberOrStringArray
   
-  var prevTreeIndex: Double = js.native
+  var prevTreeIndex: Double
 }
 object PreviousAndNextLocation {
   

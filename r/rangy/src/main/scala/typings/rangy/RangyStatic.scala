@@ -7,7 +7,6 @@ import typings.std.Selection
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,8 +15,8 @@ trait RangyStatic extends StObject {
   def addInitListener(listener: js.Function1[/* rangy */ this.type, Unit]): js.Any = js.native
   
   def createClassApplier(theClass: String): RangyClassApplier = js.native
-  def createClassApplier(theClass: String, options: js.UndefOr[scala.Nothing], tagNames: String): RangyClassApplier = js.native
-  def createClassApplier(theClass: String, options: js.UndefOr[scala.Nothing], tagNames: js.Array[String]): RangyClassApplier = js.native
+  def createClassApplier(theClass: String, options: Unit, tagNames: String): RangyClassApplier = js.native
+  def createClassApplier(theClass: String, options: Unit, tagNames: js.Array[String]): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: String): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: js.Array[String]): RangyClassApplier = js.native

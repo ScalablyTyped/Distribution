@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.PartialICollapsibleListPr
 import typings.blueprintjsCore.collapsibleListMod.ICollapsibleListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "CollapsibleList")

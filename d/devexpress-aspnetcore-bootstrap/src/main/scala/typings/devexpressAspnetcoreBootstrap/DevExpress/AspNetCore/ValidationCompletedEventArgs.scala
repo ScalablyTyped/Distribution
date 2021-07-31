@@ -2,23 +2,23 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValidationCompletedEventArgs extends EventArgs {
+trait ValidationCompletedEventArgs
+  extends StObject
+     with EventArgs {
   
-  val container: js.Any = js.native
+  val container: js.Any
   
-  val firstInvalidControl: Control = js.native
+  val firstInvalidControl: Control
   
-  val firstVisibleInvalidControl: Control = js.native
+  val firstVisibleInvalidControl: Control
   
-  val invisibleControlsValidated: Boolean = js.native
+  val invisibleControlsValidated: Boolean
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  val validationGroup: String = js.native
+  val validationGroup: String
 }
 object ValidationCompletedEventArgs {
   

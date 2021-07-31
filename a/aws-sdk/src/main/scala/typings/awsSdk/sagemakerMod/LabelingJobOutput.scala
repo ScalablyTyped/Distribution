@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the most recent Amazon SageMaker model trained as part of automated data labeling. 
     */
-  var FinalActiveLearningModelArn: js.UndefOr[ModelArn] = js.native
+  var FinalActiveLearningModelArn: js.UndefOr[ModelArn] = js.undefined
   
   /**
     * The Amazon S3 bucket location of the manifest file for labeled data. 
     */
-  var OutputDatasetS3Uri: S3Uri = js.native
+  var OutputDatasetS3Uri: S3Uri
 }
 object LabelingJobOutput {
   

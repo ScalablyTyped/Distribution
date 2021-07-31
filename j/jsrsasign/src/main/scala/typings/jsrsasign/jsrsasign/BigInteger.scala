@@ -2,25 +2,23 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigInteger extends StObject {
   
-  def abs(): BigInteger = js.native
+  def abs(): BigInteger
   
-  def bitLength(): Double = js.native
+  def bitLength(): Double
   
-  def compareTo(a: BigInteger): Double = js.native
+  def compareTo(a: BigInteger): Double
   
-  def mod(a: BigInteger): BigInteger = js.native
+  def mod(a: BigInteger): BigInteger
   
-  def modPowInt(e: Double, m: BigInteger): BigInteger = js.native
+  def modPowInt(e: Double, m: BigInteger): BigInteger
   
-  def negate(): BigInteger = js.native
+  def negate(): BigInteger
   
-  def toString(b: Double): String = js.native
+  def toString(b: Double): String
 }
 object BigInteger {
   

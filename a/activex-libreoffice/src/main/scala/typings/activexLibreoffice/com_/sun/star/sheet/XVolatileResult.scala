@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.VolatileResult
   * @see com.sun.star.sheet.ResultEvent
   */
-@js.native
-trait XVolatileResult extends XInterface {
+trait XVolatileResult
+  extends StObject
+     with XInterface {
   
   /** adds a listener to be notified when a new value is available. */
-  def addResultListener(aListener: XResultListener): Unit = js.native
+  def addResultListener(aListener: XResultListener): Unit
   
   /** removes the specified listener. */
-  def removeResultListener(aListener: XResultListener): Unit = js.native
+  def removeResultListener(aListener: XResultListener): Unit
 }
 object XVolatileResult {
   

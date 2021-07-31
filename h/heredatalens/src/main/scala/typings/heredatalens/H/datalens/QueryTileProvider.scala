@@ -4,7 +4,6 @@ import typings.heredatalens.H.datalens.QueryTileProvider.TileParamNames
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This optimizes memory and network usage and enables progressive rendering.
   */
 @js.native
-trait QueryTileProvider extends RemoteTileProvider {
+trait QueryTileProvider
+  extends StObject
+     with RemoteTileProvider {
   
   /**
     * Updates the query ID to be used in the next call of the Data Lens REST API.
@@ -43,17 +44,16 @@ object QueryTileProvider {
     * Specifies the query credentials and dynamic parameters required for fetching tiled query data with the Data Lens REST API.
     * Other options from Provider.Options are available.
     */
-  @js.native
   trait Options extends StObject {
     
     /** The ID for the Data Lens REST API query */
-    var queryId: String = js.native
+    var queryId: String
     
     /** The query's dynamic parameters. The dynamic parameters can be used to filter data provided by the query. */
-    var queryParams: js.UndefOr[String] = js.native
+    var queryParams: js.UndefOr[String] = js.undefined
     
     /** Names of the URI parameters that control the x/y/z of a tiled query */
-    var tileParamNames: TileParamNames = js.native
+    var tileParamNames: TileParamNames
   }
   object Options {
     
@@ -85,17 +85,16 @@ object QueryTileProvider {
     * When defining the Data Lens query, dynamic parameters that control tiling can be arbitrarily named.
     * Names of these parameters must be specified to fetch tiles.
     */
-  @js.native
   trait TileParamNames extends StObject {
     
     /** Name of the dynamic parameter that defines tile column */
-    var x: String = js.native
+    var x: String
     
     /** Name of the dynamic parameter that defines tile row */
-    var y: String = js.native
+    var y: String
     
     /** Name of the dynamic parameter that defines zoom level */
-    var z: String = js.native
+    var z: String
   }
   object TileParamNames {
     

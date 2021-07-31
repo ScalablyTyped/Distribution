@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePublicKeyResult extends StObject {
   
   /**
     * The identifier of the current version of the public key.
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * The public key.
     */
-  var PublicKey: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKey] = js.native
+  var PublicKey: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKey] = js.undefined
 }
 object UpdatePublicKeyResult {
   

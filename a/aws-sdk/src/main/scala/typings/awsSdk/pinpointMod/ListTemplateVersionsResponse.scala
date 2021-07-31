@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTemplateVersionsResponse extends StObject {
   
-  var TemplateVersionsResponse: typings.awsSdk.pinpointMod.TemplateVersionsResponse = js.native
+  var TemplateVersionsResponse: typings.awsSdk.pinpointMod.TemplateVersionsResponse
 }
 object ListTemplateVersionsResponse {
   

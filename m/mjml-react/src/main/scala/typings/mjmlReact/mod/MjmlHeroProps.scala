@@ -7,29 +7,27 @@ import typings.mjmlReact.mjmlReactStrings.`fixed-height`
 import typings.mjmlReact.mjmlReactStrings.`fluid-height`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlHeroProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var backgroundHeight: js.UndefOr[String] = js.native
+  var backgroundHeight: js.UndefOr[String] = js.undefined
   
-  var backgroundPosition: js.UndefOr[BackgroundPositionProperty[String | Double]] = js.native
+  var backgroundPosition: js.UndefOr[BackgroundPositionProperty[String | Double]] = js.undefined
   
-  var backgroundUrl: js.UndefOr[String] = js.native
+  var backgroundUrl: js.UndefOr[String] = js.undefined
   
-  var backgroundWidth: js.UndefOr[String] = js.native
+  var backgroundWidth: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var mode: js.UndefOr[`fluid-height` | `fixed-height`] = js.native
+  var mode: js.UndefOr[`fluid-height` | `fixed-height`] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlHeroProps {
   

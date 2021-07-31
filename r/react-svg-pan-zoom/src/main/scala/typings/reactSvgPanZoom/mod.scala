@@ -13,10 +13,13 @@ import typings.reactSvgPanZoom.reactSvgPanZoomNumbers.`2`
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-svg-pan-zoom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-svg-pan-zoom", "ALIGN_BOTTOM")
   @js.native
@@ -168,120 +171,111 @@ object mod {
     def zoomOnViewerCenter(scaleFactor: Double): Unit = js.native
   }
   
-  @JSImport("react-svg-pan-zoom", "fitSelection")
-  @js.native
+  @scala.inline
   def fitSelection(
     value: Value,
     selectionSVGPointX: Double,
     selectionSVGPointY: Double,
     selectionWidth: Double,
     selectionHeight: Double
-  ): Value = js.native
+  ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("fitSelection")(value.asInstanceOf[js.Any], selectionSVGPointX.asInstanceOf[js.Any], selectionSVGPointY.asInstanceOf[js.Any], selectionWidth.asInstanceOf[js.Any], selectionHeight.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "fitToViewer")
-  @js.native
-  def fitToViewer(value: Value): Value = js.native
+  @scala.inline
+  def fitToViewer(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("fitToViewer")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "pan")
-  @js.native
-  def pan(value: Value, SVGDeltaX: Double, SVGDeltaY: Double): Value = js.native
-  @JSImport("react-svg-pan-zoom", "pan")
-  @js.native
-  def pan(value: Value, SVGDeltaX: Double, SVGDeltaY: Double, panLimit: Double): Value = js.native
+  @scala.inline
+  def pan(value: Value, SVGDeltaX: Double, SVGDeltaY: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(value.asInstanceOf[js.Any], SVGDeltaX.asInstanceOf[js.Any], SVGDeltaY.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def pan(value: Value, SVGDeltaX: Double, SVGDeltaY: Double, panLimit: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(value.asInstanceOf[js.Any], SVGDeltaX.asInstanceOf[js.Any], SVGDeltaY.asInstanceOf[js.Any], panLimit.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "reset")
-  @js.native
-  def reset(value: Value): Value = js.native
+  @scala.inline
+  def reset(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "setPointOnViewerCenter")
-  @js.native
-  def setPointOnViewerCenter(value: Value, SVGPointX: Double, SVGPointY: Double, zoomLevel: Double): Value = js.native
+  @scala.inline
+  def setPointOnViewerCenter(value: Value, SVGPointX: Double, SVGPointY: Double, zoomLevel: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointOnViewerCenter")(value.asInstanceOf[js.Any], SVGPointX.asInstanceOf[js.Any], SVGPointY.asInstanceOf[js.Any], zoomLevel.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "zoom")
-  @js.native
-  def zoom(value: Value, SVGPointX: Double, SVGPointY: Double, scaleFactor: Double): Value = js.native
+  @scala.inline
+  def zoom(value: Value, SVGPointX: Double, SVGPointY: Double, scaleFactor: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("zoom")(value.asInstanceOf[js.Any], SVGPointX.asInstanceOf[js.Any], SVGPointY.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("react-svg-pan-zoom", "zoomOnViewerCenter")
-  @js.native
-  def zoomOnViewerCenter(value: Value, scaleFactor: Double): Value = js.native
+  @scala.inline
+  def zoomOnViewerCenter(value: Value, scaleFactor: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomOnViewerCenter")(value.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[Value]
   
   type Mode = /* "idle" */ String
   
-  @js.native
   trait OptionalProps extends StObject {
     
     // background of the svg
-    var SVGBackground: String = js.native
+    var SVGBackground: String
     
     // background of the viewer
-    var background: String = js.native
+    var background: String
     
     // className of the Viewer
-    var className: String = js.native
+    var className: String
     
-    var customMiniature: ReactElement | ComponentType[js.Object] = js.native
+    var customMiniature: ReactElement | ComponentType[js.Object]
     
     // override default toolbar component
     // TODO: specify function type more clearly
-    var customToolbar: (Component[_, js.Object, _]) | StatelessComponent[_] = js.native
+    var customToolbar: (Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]
     
     // perform PAN if the mouse is on viewer border
-    var detectAutoPan: Boolean = js.native
+    var detectAutoPan: Boolean
     
-    var detectPinchGesture: Boolean = js.native
+    var detectPinchGesture: Boolean
     
     // detect zoom operation performed trough pinch gesture or mouse scroll
-    var detectWheel: Boolean = js.native
+    var detectWheel: Boolean
     
     // Turn off zoom on double click
-    var disableDoubleClickZoomWithToolAuto: Boolean = js.native
+    var disableDoubleClickZoomWithToolAuto: Boolean
     
-    var miniatureProps: Background = js.native
+    var miniatureProps: Background
     
     // modifier keys //https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState
-    var modifierKeys: js.Array[String] = js.native
+    var modifierKeys: js.Array[String]
     
     // Note: The `T` type parameter is the type of the `target` of the event:
     // handler click
-    def onClick[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onClick[T](event: ViewerMouseEvent[T]): Unit
     
     // handler double click
-    def onDoubleClick[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onDoubleClick[T](event: ViewerMouseEvent[T]): Unit
     
     // handler mousedown
-    def onMouseDown[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onMouseDown[T](event: ViewerMouseEvent[T]): Unit
     
     // handler mousemove
-    def onMouseMove[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onMouseMove[T](event: ViewerMouseEvent[T]): Unit
     
     // handler mouseup
-    def onMouseUp[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onMouseUp[T](event: ViewerMouseEvent[T]): Unit
     
     // handler pan action performed
-    def onPan[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onPan[T](event: ViewerMouseEvent[T]): Unit
     
     // handler zoom level changed
-    def onZoom[T](event: ViewerMouseEvent[T]): Unit = js.native
+    def onZoom[T](event: ViewerMouseEvent[T]): Unit
     
     // if disabled the user can move the image outside the viewer
-    var preventPanOutside: Boolean = js.native
+    var preventPanOutside: Boolean
     
     // how much scale in or out
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
     
     // maximum amount of scale a user can zoom in to
-    var scaleFactorMax: Double = js.native
+    var scaleFactorMax: Double
     
     // minimum amount of a scale a user can zoom out of
-    var scaleFactorMin: Double = js.native
+    var scaleFactorMin: Double
     
     // how much scale in or out on mouse wheel (requires detectWheel enabled)
-    var scaleFactorOnWheel: Double = js.native
+    var scaleFactorOnWheel: Double
     
     // CSS style of the Viewer
-    var style: js.Object = js.native
+    var style: js.Object
     
-    var toolbarProps: Position = js.native
+    var toolbarProps: Position
   }
   object OptionalProps {
     
@@ -291,7 +285,7 @@ object mod {
       background: String,
       className: String,
       customMiniature: ReactElement | ComponentType[js.Object],
-      customToolbar: (Component[_, js.Object, _]) | StatelessComponent[_],
+      customToolbar: (Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any],
       detectAutoPan: Boolean,
       detectPinchGesture: Boolean,
       detectWheel: Boolean,
@@ -330,7 +324,7 @@ object mod {
       def setCustomMiniature(value: ReactElement | ComponentType[js.Object]): Self = StObject.set(x, "customMiniature", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCustomToolbar(value: (Component[_, js.Object, _]) | StatelessComponent[_]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
+      def setCustomToolbar(value: (Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDetectAutoPan(value: Boolean): Self = StObject.set(x, "detectAutoPan", value.asInstanceOf[js.Any])
@@ -400,12 +394,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -427,76 +420,75 @@ object mod {
   }
   
   /* Inlined react-svg-pan-zoom.react-svg-pan-zoom.RequiredProps & std.Partial<react-svg-pan-zoom.react-svg-pan-zoom.OptionalProps> */
-  @js.native
   trait Props extends StObject {
     
-    var SVGBackground: js.UndefOr[String] = js.native
+    var SVGBackground: js.UndefOr[String] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.native
+    var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.undefined
     
-    var customToolbar: js.UndefOr[(Component[_, js.Object, _]) | StatelessComponent[_]] = js.native
+    var customToolbar: js.UndefOr[(Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]] = js.undefined
     
-    var detectAutoPan: js.UndefOr[Boolean] = js.native
+    var detectAutoPan: js.UndefOr[Boolean] = js.undefined
     
-    var detectPinchGesture: js.UndefOr[Boolean] = js.native
+    var detectPinchGesture: js.UndefOr[Boolean] = js.undefined
     
-    var detectWheel: js.UndefOr[Boolean] = js.native
+    var detectWheel: js.UndefOr[Boolean] = js.undefined
     
-    var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.native
+    var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined
     
     // height of the viewer displayed on screen
-    var height: Double = js.native
+    var height: Double
     
-    var miniatureProps: js.UndefOr[Background] = js.native
+    var miniatureProps: js.UndefOr[Background] = js.undefined
     
-    var modifierKeys: js.UndefOr[js.Array[String]] = js.native
+    var modifierKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     // handler tool changed
-    def onChangeTool(tool: Tool): Unit = js.native
+    def onChangeTool(tool: Tool): Unit
     
     // handler something changed
-    def onChangeValue(value: Value): Unit = js.native
+    def onChangeValue(value: Value): Unit
     
-    var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var preventPanOutside: js.UndefOr[Boolean] = js.native
+    var preventPanOutside: js.UndefOr[Boolean] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.native
+    var scaleFactor: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorMax: js.UndefOr[Double] = js.native
+    var scaleFactorMax: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorMin: js.UndefOr[Double] = js.native
+    var scaleFactorMin: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorOnWheel: js.UndefOr[Double] = js.native
+    var scaleFactorOnWheel: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
     // current active tool (TOOL_NONE, TOOL_PAN, TOOL_ZOOM_IN, TOOL_ZOOM_OUT)
-    var tool: Tool = js.native
+    var tool: Tool
     
-    var toolbarProps: js.UndefOr[Position] = js.native
+    var toolbarProps: js.UndefOr[Position] = js.undefined
     
     // value of the viewer (current point of view)
-    var value: Value | Null = js.native
+    var value: Value | Null
     
     // width of the viewer displayed on screen
-    var width: Double = js.native
+    var width: Double
   }
   object Props {
     
@@ -508,7 +500,7 @@ object mod {
       tool: Tool,
       width: Double
     ): Props = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[Props]
     }
     
@@ -534,7 +526,7 @@ object mod {
       def setCustomMiniatureUndefined: Self = StObject.set(x, "customMiniature", js.undefined)
       
       @scala.inline
-      def setCustomToolbar(value: (Component[_, js.Object, _]) | StatelessComponent[_]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
+      def setCustomToolbar(value: (Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomToolbarUndefined: Self = StObject.set(x, "customToolbar", js.undefined)
@@ -588,43 +580,43 @@ object mod {
       def setOnChangeValue(value: Value => Unit): Self = StObject.set(x, "onChangeValue", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnDoubleClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      def setOnDoubleClick(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
       @scala.inline
-      def setOnMouseDown(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      def setOnMouseDown(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
       @scala.inline
-      def setOnMouseMove(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      def setOnMouseMove(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
       @scala.inline
-      def setOnMouseUp(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      def setOnMouseUp(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
       @scala.inline
-      def setOnPan(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
+      def setOnPan(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
       
       @scala.inline
-      def setOnZoom(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
+      def setOnZoom(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
@@ -691,26 +683,25 @@ object mod {
     }
   }
   
-  @js.native
   trait RequiredProps extends StObject {
     
     // height of the viewer displayed on screen
-    var height: Double = js.native
+    var height: Double
     
     // handler tool changed
-    def onChangeTool(tool: Tool): Unit = js.native
+    def onChangeTool(tool: Tool): Unit
     
     // handler something changed
-    def onChangeValue(value: Value): Unit = js.native
+    def onChangeValue(value: Value): Unit
     
     // current active tool (TOOL_NONE, TOOL_PAN, TOOL_ZOOM_IN, TOOL_ZOOM_OUT)
-    var tool: Tool = js.native
+    var tool: Tool
     
     // value of the viewer (current point of view)
-    var value: Value | Null = js.native
+    var value: Value | Null
     
     // width of the viewer displayed on screen
-    var width: Double = js.native
+    var width: Double
   }
   object RequiredProps {
     
@@ -722,7 +713,7 @@ object mod {
       tool: Tool,
       width: Double
     ): RequiredProps = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[RequiredProps]
     }
     
@@ -756,26 +747,25 @@ object mod {
   
   type ToolbarPosition = /* "none" */ String
   
-  @js.native
   trait UncontrolledExtraOptionalProps extends StObject {
     
     // handler tool changed
-    def onChangeTool(tool: Tool): Unit = js.native
+    def onChangeTool(tool: Tool): Unit
     
     // handler something changed
-    def onChangeValue(value: Value): Unit = js.native
+    def onChangeValue(value: Value): Unit
     
     // current active tool (TOOL_NONE, TOOL_PAN, TOOL_ZOOM_IN, TOOL_ZOOM_OUT)
-    var tool: Tool = js.native
+    var tool: Tool
     
     // value of the viewer (current point of view)
-    var value: Value | Null = js.native
+    var value: Value | Null
   }
   object UncontrolledExtraOptionalProps {
     
     @scala.inline
     def apply(onChangeTool: Tool => Unit, onChangeValue: Value => Unit, tool: Tool): UncontrolledExtraOptionalProps = {
-      val __obj = js.Dynamic.literal(onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[UncontrolledExtraOptionalProps]
     }
     
@@ -800,72 +790,71 @@ object mod {
   }
   
   /* Inlined react-svg-pan-zoom.react-svg-pan-zoom.UncontrolledRequiredProps & std.Partial<react-svg-pan-zoom.react-svg-pan-zoom.OptionalProps> & std.Partial<react-svg-pan-zoom.react-svg-pan-zoom.UncontrolledExtraOptionalProps> */
-  @js.native
   trait UncontrolledProps extends StObject {
     
-    var SVGBackground: js.UndefOr[String] = js.native
+    var SVGBackground: js.UndefOr[String] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.native
+    var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.undefined
     
-    var customToolbar: js.UndefOr[(Component[_, js.Object, _]) | StatelessComponent[_]] = js.native
+    var customToolbar: js.UndefOr[(Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]] = js.undefined
     
-    var detectAutoPan: js.UndefOr[Boolean] = js.native
+    var detectAutoPan: js.UndefOr[Boolean] = js.undefined
     
-    var detectPinchGesture: js.UndefOr[Boolean] = js.native
+    var detectPinchGesture: js.UndefOr[Boolean] = js.undefined
     
-    var detectWheel: js.UndefOr[Boolean] = js.native
+    var detectWheel: js.UndefOr[Boolean] = js.undefined
     
-    var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.native
+    var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined
     
     // height of the viewer displayed on screen
-    var height: Double = js.native
+    var height: Double
     
-    var miniatureProps: js.UndefOr[Background] = js.native
+    var miniatureProps: js.UndefOr[Background] = js.undefined
     
-    var modifierKeys: js.UndefOr[js.Array[String]] = js.native
+    var modifierKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onChangeTool: js.UndefOr[js.Function1[/* tool */ Tool, Unit]] = js.native
+    var onChangeTool: js.UndefOr[js.Function1[/* tool */ Tool, Unit]] = js.undefined
     
-    var onChangeValue: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.native
+    var onChangeValue: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+    var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[js.Any], Unit]] = js.undefined
     
-    var preventPanOutside: js.UndefOr[Boolean] = js.native
+    var preventPanOutside: js.UndefOr[Boolean] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.native
+    var scaleFactor: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorMax: js.UndefOr[Double] = js.native
+    var scaleFactorMax: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorMin: js.UndefOr[Double] = js.native
+    var scaleFactorMin: js.UndefOr[Double] = js.undefined
     
-    var scaleFactorOnWheel: js.UndefOr[Double] = js.native
+    var scaleFactorOnWheel: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tool: js.UndefOr[Tool] = js.native
+    var tool: js.UndefOr[Tool] = js.undefined
     
-    var toolbarProps: js.UndefOr[Position] = js.native
+    var toolbarProps: js.UndefOr[Position] = js.undefined
     
-    var value: js.UndefOr[Value | Null] = js.native
+    var value: js.UndefOr[Value | Null] = js.undefined
     
     // width of the viewer displayed on screen
-    var width: Double = js.native
+    var width: Double
   }
   object UncontrolledProps {
     
@@ -897,7 +886,7 @@ object mod {
       def setCustomMiniatureUndefined: Self = StObject.set(x, "customMiniature", js.undefined)
       
       @scala.inline
-      def setCustomToolbar(value: (Component[_, js.Object, _]) | StatelessComponent[_]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
+      def setCustomToolbar(value: (Component[js.Any, js.Object, js.Any]) | StatelessComponent[js.Any]): Self = StObject.set(x, "customToolbar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomToolbarUndefined: Self = StObject.set(x, "customToolbar", js.undefined)
@@ -957,43 +946,43 @@ object mod {
       def setOnChangeValueUndefined: Self = StObject.set(x, "onChangeValue", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnDoubleClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      def setOnDoubleClick(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
       @scala.inline
-      def setOnMouseDown(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      def setOnMouseDown(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
       @scala.inline
-      def setOnMouseMove(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      def setOnMouseMove(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
       @scala.inline
-      def setOnMouseUp(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      def setOnMouseUp(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
       @scala.inline
-      def setOnPan(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
+      def setOnPan(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
       
       @scala.inline
-      def setOnZoom(value: /* event */ ViewerMouseEvent[_] => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
+      def setOnZoom(value: /* event */ ViewerMouseEvent[js.Any] => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
@@ -1066,14 +1055,13 @@ object mod {
     }
   }
   
-  @js.native
   trait UncontrolledRequiredProps extends StObject {
     
     // height of the viewer displayed on screen
-    var height: Double = js.native
+    var height: Double
     
     // width of the viewer displayed on screen
-    var width: Double = js.native
+    var width: Double
   }
   object UncontrolledRequiredProps {
     
@@ -1094,44 +1082,43 @@ object mod {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var SVGHeight: Double = js.native
+    var SVGHeight: Double
     
-    var SVGWidth: Double = js.native
+    var SVGWidth: Double
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var d: Double = js.native
+    var d: Double
     
-    var e: Double = js.native
+    var e: Double
     
-    var endX: js.UndefOr[Double | Null] = js.native
+    var endX: js.UndefOr[Double | Null] = js.undefined
     
-    var endY: js.UndefOr[Double | Null] = js.native
+    var endY: js.UndefOr[Double | Null] = js.undefined
     
-    var f: Double = js.native
+    var f: Double
     
-    var focus: Boolean = js.native
+    var focus: Boolean
     
-    var miniatureOpen: Boolean = js.native
+    var miniatureOpen: Boolean
     
-    var mode: Mode = js.native
+    var mode: Mode
     
-    var startX: js.UndefOr[Double | Null] = js.native
+    var startX: js.UndefOr[Double | Null] = js.undefined
     
-    var startY: js.UndefOr[Double | Null] = js.native
+    var startY: js.UndefOr[Double | Null] = js.undefined
     
-    var version: `2` = js.native
+    var version: `2`
     
-    var viewerHeight: Double = js.native
+    var viewerHeight: Double
     
-    var viewerWidth: Double = js.native
+    var viewerWidth: Double
   }
   object Value {
     
@@ -1148,11 +1135,10 @@ object mod {
       focus: Boolean,
       miniatureOpen: Boolean,
       mode: Mode,
-      version: `2`,
       viewerHeight: Double,
       viewerWidth: Double
     ): Value = {
-      val __obj = js.Dynamic.literal(SVGHeight = SVGHeight.asInstanceOf[js.Any], SVGWidth = SVGWidth.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], miniatureOpen = miniatureOpen.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], viewerHeight = viewerHeight.asInstanceOf[js.Any], viewerWidth = viewerWidth.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(SVGHeight = SVGHeight.asInstanceOf[js.Any], SVGWidth = SVGWidth.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], miniatureOpen = miniatureOpen.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], version = 2, viewerHeight = viewerHeight.asInstanceOf[js.Any], viewerWidth = viewerWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
@@ -1239,28 +1225,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ViewerMouseEvent[T] extends StObject {
     
-    var SVGViewer: SVGSVGElement = js.native
+    var SVGViewer: SVGSVGElement
     
-    var originalEvent: MouseEvent[T, NativeMouseEvent] = js.native
+    var originalEvent: MouseEvent[T, NativeMouseEvent]
     
-    var point: Point = js.native
+    var point: Point
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var translationX: Double = js.native
+    var translationX: Double
     
-    var translationY: Double = js.native
+    var translationY: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ViewerMouseEvent {
     
@@ -1282,7 +1267,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ViewerMouseEventMutableBuilder[Self <: ViewerMouseEvent[_], T] (val x: Self with ViewerMouseEvent[T]) extends AnyVal {
+    implicit class ViewerMouseEventMutableBuilder[Self <: ViewerMouseEvent[?], T] (val x: Self & ViewerMouseEvent[T]) extends AnyVal {
       
       @scala.inline
       def setOriginalEvent(value: MouseEvent[T, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
@@ -1316,26 +1301,25 @@ object mod {
     }
   }
   
-  @js.native
   trait ViewerTouchEvent[T] extends StObject {
     
-    var SVGViewer: SVGSVGElement = js.native
+    var SVGViewer: SVGSVGElement
     
-    var changedPoints: js.Array[Point] = js.native
+    var changedPoints: js.Array[Point]
     
-    var originalEvent: TouchEvent[T] = js.native
+    var originalEvent: TouchEvent[T]
     
-    var points: js.Array[Point] = js.native
+    var points: js.Array[Point]
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var translationX: Double = js.native
+    var translationX: Double
     
-    var translationY: Double = js.native
+    var translationY: Double
   }
   object ViewerTouchEvent {
     
@@ -1356,7 +1340,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ViewerTouchEventMutableBuilder[Self <: ViewerTouchEvent[_], T] (val x: Self with ViewerTouchEvent[T]) extends AnyVal {
+    implicit class ViewerTouchEventMutableBuilder[Self <: ViewerTouchEvent[?], T] (val x: Self & ViewerTouchEvent[T]) extends AnyVal {
       
       @scala.inline
       def setChangedPoints(value: js.Array[Point]): Self = StObject.set(x, "changedPoints", value.asInstanceOf[js.Any])

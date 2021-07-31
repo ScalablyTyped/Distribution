@@ -2,24 +2,22 @@ package typings.googleapis.composerV1Mod.composerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ImageVersions in a project and location.
   */
-@js.native
 trait SchemaListImageVersionsResponse extends StObject {
   
   /**
     * The list of supported ImageVersions in a location.
     */
-  var imageVersions: js.UndefOr[js.Array[SchemaImageVersion]] = js.native
+  var imageVersions: js.UndefOr[js.Array[SchemaImageVersion]] = js.undefined
   
   /**
     * The page token used to query for the next page if one exists.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListImageVersionsResponse {
   

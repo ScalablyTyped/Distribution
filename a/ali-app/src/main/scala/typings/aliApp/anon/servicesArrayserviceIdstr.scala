@@ -3,17 +3,15 @@ package typings.aliApp.anon
 import typings.aliApp.aliAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  services :std.Array<{  serviceId :string,   isPrimary :boolean}>} & ali-app.my.ErrMsgResponse */
-@js.native
 trait servicesArrayserviceIdstr extends StObject {
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
   
-  var services: js.Array[IsPrimary] = js.native
+  var services: js.Array[IsPrimary]
 }
 object servicesArrayserviceIdstr {
   

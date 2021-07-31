@@ -10,9 +10,9 @@ HTTP Router
 | ------------------ | :-------------: |
 | Full name          | @hapi/call |
 | Keywords           | HTTP, router |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 9 |
-| # downloads        | 11165740 |
+| # downloads        | 14486908 |
 | # stars            | 0 |
 
 ## Links

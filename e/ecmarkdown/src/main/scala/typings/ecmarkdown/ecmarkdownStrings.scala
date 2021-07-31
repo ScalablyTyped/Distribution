@@ -3,7 +3,6 @@ package typings.ecmarkdown
 import typings.ecmarkdown.nodeTypesMod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecmarkdownStrings {
@@ -64,12 +63,16 @@ object ecmarkdownStrings {
   def parabreak: parabreak = "parabreak".asInstanceOf[parabreak]
   
   @js.native
-  sealed trait pipe extends Format
+  sealed trait pipe
+    extends StObject
+       with Format
   @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait star extends Format
+  sealed trait star
+    extends StObject
+       with Format
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   
@@ -84,12 +87,16 @@ object ecmarkdownStrings {
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait tick extends Format
+  sealed trait tick
+    extends StObject
+       with Format
   @scala.inline
   def tick: tick = "tick".asInstanceOf[tick]
   
   @js.native
-  sealed trait tilde extends Format
+  sealed trait tilde
+    extends StObject
+       with Format
   @scala.inline
   def tilde: tilde = "tilde".asInstanceOf[tilde]
   
@@ -99,7 +106,9 @@ object ecmarkdownStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait underscore extends Format
+  sealed trait underscore
+    extends StObject
+       with Format
   @scala.inline
   def underscore: underscore = "underscore".asInstanceOf[underscore]
   

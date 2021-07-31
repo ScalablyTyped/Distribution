@@ -2,13 +2,11 @@ package typings.rcTree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: typings.rcTree.interfaceMod.Key = js.native
+  var key: typings.rcTree.interfaceMod.Key
 }
 object Key {
   

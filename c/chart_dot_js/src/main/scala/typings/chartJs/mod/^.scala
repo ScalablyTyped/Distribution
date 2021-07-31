@@ -7,13 +7,13 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chart.js", JSImport.Namespace)
 @js.native
 class ^ protected ()
-  extends typings.chartJs.mod.Chart {
+  extends StObject
+     with Chart {
   def this(context: String, options: ChartConfiguration) = this()
   def this(context: ArrayLike[CanvasRenderingContext2D | HTMLCanvasElement], options: ChartConfiguration) = this()
   def this(context: CanvasRenderingContext2D, options: ChartConfiguration) = this()
@@ -22,10 +22,11 @@ class ^ protected ()
 @JSImport("chart.js", JSImport.Namespace)
 @js.native
 object ^
-  extends TopLevel[
-      Instantiable2[
+  extends StObject
+     with TopLevel[
+      js.Object & (Instantiable2[
         /* context */ String | CanvasRenderingContext2D | HTMLCanvasElement | (ArrayLike[CanvasRenderingContext2D | HTMLCanvasElement]), 
         /* options */ ChartConfiguration, 
-        typings.chartJs.mod.Chart
-      ]
+        Chart
+      ])
     ]

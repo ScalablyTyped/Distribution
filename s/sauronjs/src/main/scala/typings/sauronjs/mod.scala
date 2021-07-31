@@ -1,20 +1,23 @@
 package typings.sauronjs
 
 import typings.sauronjs.componentMod.ComponentParameters
-import typings.sauronjs.componentMod.^
 import typings.sauronjs.sauronMod.SauronComponentMap
 import typings.sauronjs.sauronMod.SauronInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("sauronjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("sauronjs", "Component")
   @js.native
-  class Component protected () extends ^ {
+  class Component protected ()
+    extends typings.sauronjs.componentMod.^ {
     def this(params: ComponentParameters) = this()
   }
   object Component {
@@ -43,34 +46,40 @@ object mod {
     
     object dom {
       
-      @JSImport("sauronjs", "events.dom.update")
+      @JSImport("sauronjs", "events.dom")
       @js.native
-      def update(): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Unit]
     }
   }
   
   object instance {
     
+    @scala.inline
+    def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
+    @scala.inline
+    def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
+    
     @JSImport("sauronjs", "instance")
     @js.native
-    def apply(componentMap: SauronComponentMap): SauronInstance = js.native
-    @JSImport("sauronjs", "instance")
-    @js.native
-    def apply(componentMap: SauronComponentMap, id: String): SauronInstance = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("sauronjs", "next")
-  @js.native
-  def next(channels: js.Array[String], event: String, data: js.Any, id: String): Unit = js.native
+  @scala.inline
+  def next(channels: js.Array[String], event: String, data: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(channels.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object util {
     
-    @JSImport("sauronjs", "util.insert")
+    @JSImport("sauronjs", "util")
     @js.native
-    def insert(params: HTMLElement): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sauronjs", "util.ready")
-    @js.native
-    def ready(fn: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def insert(params: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def ready(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

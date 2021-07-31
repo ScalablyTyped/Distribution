@@ -12,7 +12,7 @@ A minimal, blazing fast user interface library.
 | Keywords           | moon, mvvm, user interface, UI |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6733 |
+| # downloads        | 6364 |
 | # stars            | 2 |
 
 ## Links

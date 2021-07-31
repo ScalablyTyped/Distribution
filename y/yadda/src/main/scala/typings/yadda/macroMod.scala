@@ -4,15 +4,13 @@ import typings.yadda.yaddaStrings.promise
 import typings.yadda.yaddaStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macroMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var mode: js.UndefOr[promise | sync] = js.native
+    var mode: js.UndefOr[promise | sync] = js.undefined
   }
   object Options {
     

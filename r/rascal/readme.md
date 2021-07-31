@@ -10,9 +10,9 @@ A config driven wrapper for amqplib supporting multi-host connections, automatic
 | ------------------ | :-------------: |
 | Full name          | rascal |
 | Keywords           | amqplib, amqp, rabbitmq, callback, promise, await, async |
-| # releases         | 46 |
-| # dependents       | 8 |
-| # downloads        | 242075 |
+| # releases         | 42 |
+| # dependents       | 9 |
+| # downloads        | 524816 |
 | # stars            | 1 |
 
 ## Links

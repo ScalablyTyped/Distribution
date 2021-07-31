@@ -9,10 +9,13 @@ import typings.tensorflowTfjsConverter.operationsTypesMod.Graph
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationMapperMod {
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "OperationMapper")
   @js.native
@@ -51,78 +54,58 @@ object operationMapperMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "decodeBase64")
-  @js.native
-  def decodeBase64(text: String): String = js.native
+  @scala.inline
+  def decodeBase64(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBase64")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getBoolArrayParam")
-  @js.native
-  def getBoolArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Boolean]): js.Array[Boolean] = js.native
+  @scala.inline
+  def getBoolArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Boolean]): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoolArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getBoolParam")
-  @js.native
-  def getBoolParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Boolean): Boolean = js.native
+  @scala.inline
+  def getBoolParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoolParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getDtypeArrayParam")
-  @js.native
-  def getDtypeArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[DataType]): js.Array[DataType] = js.native
+  @scala.inline
+  def getDtypeArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[DataType]): js.Array[DataType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDtypeArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataType]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getDtypeParam")
-  @js.native
-  def getDtypeParam(attrs: StringDictionary[IAttrValue], name: String, `def`: DataType): DataType = js.native
+  @scala.inline
+  def getDtypeParam(attrs: StringDictionary[IAttrValue], name: String, `def`: DataType): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("getDtypeParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getFuncParam")
-  @js.native
-  def getFuncParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String): String = js.native
+  @scala.inline
+  def getFuncParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFuncParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getNumberParam")
-  @js.native
-  def getNumberParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Double): Double = js.native
+  @scala.inline
+  def getNumberParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getNumericArrayParam")
-  @js.native
-  def getNumericArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def getNumericArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumericArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getStringArrayParam")
-  @js.native
-  def getStringArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getStringArrayParam")
-  @js.native
-  def getStringArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[String], keepCase: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def getStringArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getStringArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[String], keepCase: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getStringParam")
-  @js.native
-  def getStringParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String): String = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getStringParam")
-  @js.native
-  def getStringParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String, keepCase: Boolean): String = js.native
+  @scala.inline
+  def getStringParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getStringParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String, keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getTensorShapeArrayParam")
-  @js.native
-  def getTensorShapeArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def getTensorShapeArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTensorShapeArrayParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getTensorShapeParam")
-  @js.native
-  def getTensorShapeParam(attrs: StringDictionary[IAttrValue], name: String): js.UndefOr[js.Array[Double]] = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "getTensorShapeParam")
-  @js.native
-  def getTensorShapeParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Double]): js.UndefOr[js.Array[Double]] = js.native
+  @scala.inline
+  def getTensorShapeParam(attrs: StringDictionary[IAttrValue], name: String): js.UndefOr[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTensorShapeParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Double]]]
+  @scala.inline
+  def getTensorShapeParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Double]): js.UndefOr[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTensorShapeParam")(attrs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Double]]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "parseDtypeParam")
-  @js.native
-  def parseDtypeParam(value: String): DataType = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "parseDtypeParam")
-  @js.native
-  def parseDtypeParam(value: typings.tensorflowTfjsConverter.compiledApiMod.DataType): DataType = js.native
+  @scala.inline
+  def parseDtypeParam(value: String): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDtypeParam")(value.asInstanceOf[js.Any]).asInstanceOf[DataType]
+  @scala.inline
+  def parseDtypeParam(value: typings.tensorflowTfjsConverter.compiledApiMod.DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDtypeParam")(value.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "parseStringParam")
-  @js.native
-  def parseStringParam(s: String, keepCase: Boolean): String = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "parseStringParam")
-  @js.native
-  def parseStringParam(s: js.Array[js.Any], keepCase: Boolean): String = js.native
+  @scala.inline
+  def parseStringParam(s: String, keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringParam")(s.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parseStringParam(s: js.Array[js.Any], keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringParam")(s.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "parseTensorShapeParam")
-  @js.native
-  def parseTensorShapeParam(shape: ITensorShape): js.UndefOr[js.Array[Double]] = js.native
+  @scala.inline
+  def parseTensorShapeParam(shape: ITensorShape): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTensorShapeParam")(shape.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
 }

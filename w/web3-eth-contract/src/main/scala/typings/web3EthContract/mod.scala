@@ -14,7 +14,6 @@ import typings.web3EthContract.anon.Data
 import typings.web3Utils.mod.AbiItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,8 +23,8 @@ object mod {
   class Contract protected () extends StObject {
     def this(jsonInterface: js.Array[AbiItem]) = this()
     def this(jsonInterface: js.Array[AbiItem], address: String) = this()
-    def this(jsonInterface: js.Array[AbiItem], address: js.UndefOr[scala.Nothing], options: ContractOptions) = this()
     def this(jsonInterface: js.Array[AbiItem], address: String, options: ContractOptions) = this()
+    def this(jsonInterface: js.Array[AbiItem], address: Unit, options: ContractOptions) = this()
     
     var _address: String = js.native
     
@@ -74,14 +73,13 @@ object mod {
     var transactionPollingTimeout: Double = js.native
   }
   
-  @js.native
   trait CallOptions extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var gas: js.UndefOr[Double] = js.native
+    var gas: js.UndefOr[Double] = js.undefined
     
-    var gasPrice: js.UndefOr[String] = js.native
+    var gasPrice: js.UndefOr[String] = js.undefined
   }
   object CallOptions {
     
@@ -114,20 +112,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ContractOptions extends StObject {
     
     // Contract code
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     // Sender to use for contract calls
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     // Gas to use for contract calls
-    var gas: js.UndefOr[Double] = js.native
+    var gas: js.UndefOr[Double] = js.undefined
     
     // Gas price to use for contract calls
-    var gasPrice: js.UndefOr[String] = js.native
+    var gasPrice: js.UndefOr[String] = js.undefined
   }
   object ContractOptions {
     
@@ -169,13 +166,10 @@ object mod {
   @js.native
   trait ContractSendMethod extends StObject {
     
-    def call(): js.Promise[_] = js.native
-    def call(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-    ): js.Promise[_] = js.native
-    def call(options: CallOptions): js.Promise[_] = js.native
-    def call(options: CallOptions, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Promise[_] = js.native
+    def call(): js.Promise[js.Any] = js.native
+    def call(options: Unit, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def call(options: CallOptions): js.Promise[js.Any] = js.native
+    def call(options: CallOptions, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
     
     def encodeABI(): String = js.native
     
@@ -188,12 +182,11 @@ object mod {
     def send(options: SendOptions, callback: js.Function2[/* err */ Error, /* transactionHash */ String, Unit]): PromiEvent[Contract] = js.native
   }
   
-  @js.native
   trait DeployOptions extends StObject {
     
-    var arguments: js.UndefOr[js.Array[_]] = js.native
+    var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var data: String = js.native
+    var data: String
   }
   object DeployOptions {
     
@@ -207,7 +200,7 @@ object mod {
     implicit class DeployOptionsMutableBuilder[Self <: DeployOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArguments(value: js.Array[_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
@@ -220,14 +213,13 @@ object mod {
     }
   }
   
-  @js.native
   trait EstimateGasOptions extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var gas: js.UndefOr[Double] = js.native
+    var gas: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double | String | ^] = js.native
+    var value: js.UndefOr[Double | String | ^] = js.undefined
   }
   object EstimateGasOptions {
     
@@ -260,28 +252,27 @@ object mod {
     }
   }
   
-  @js.native
   trait EventData extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var blockHash: String = js.native
+    var blockHash: String
     
-    var blockNumber: Double = js.native
+    var blockNumber: Double
     
-    var event: String = js.native
+    var event: String
     
-    var logIndex: Double = js.native
+    var logIndex: Double
     
-    var raw: Data = js.native
+    var raw: Data
     
-    var returnValues: StringDictionary[js.Any] = js.native
+    var returnValues: StringDictionary[js.Any]
     
-    var signature: String = js.native
+    var signature: String
     
-    var transactionHash: String = js.native
+    var transactionHash: String
     
-    var transactionIndex: Double = js.native
+    var transactionIndex: Double
   }
   object EventData {
     
@@ -337,10 +328,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait EventOptions extends LogsOptions {
+  trait EventOptions
+    extends StObject
+       with LogsOptions {
     
-    var filter: js.UndefOr[Filter] = js.native
+    var filter: js.UndefOr[Filter] = js.undefined
   }
   object EventOptions {
     
@@ -363,12 +355,13 @@ object mod {
   
   type Filter = StringDictionary[Double | String | (js.Array[Double | String])]
   
-  @js.native
-  trait Options extends ContractOptions {
+  trait Options
+    extends StObject
+       with ContractOptions {
     
-    var address: String = js.native
+    var address: String
     
-    var jsonInterface: js.Array[AbiItem] = js.native
+    var jsonInterface: js.Array[AbiItem]
   }
   object Options {
     
@@ -392,10 +385,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PastEventOptions extends PastLogsOptions {
+  trait PastEventOptions
+    extends StObject
+       with PastLogsOptions {
     
-    var filter: js.UndefOr[Filter] = js.native
+    var filter: js.UndefOr[Filter] = js.undefined
   }
   object PastEventOptions {
     
@@ -416,16 +410,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SendOptions extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var gas: js.UndefOr[Double] = js.native
+    var gas: js.UndefOr[Double] = js.undefined
     
-    var gasPrice: js.UndefOr[String] = js.native
+    var gasPrice: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double | String | ^] = js.native
+    var value: js.UndefOr[Double | String | ^] = js.undefined
   }
   object SendOptions {
     

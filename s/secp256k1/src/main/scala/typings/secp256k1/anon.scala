@@ -3,17 +3,15 @@ package typings.secp256k1
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Recid extends StObject {
     
-    var recid: Double = js.native
+    var recid: Double
     
-    var signature: Uint8Array = js.native
+    var signature: Uint8Array
   }
   object Recid {
     

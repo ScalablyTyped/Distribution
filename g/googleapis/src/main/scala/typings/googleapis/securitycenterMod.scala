@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securitycenterMod {
+  
+  @JSImport("googleapis/build/src/apis/securitycenter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object securitycenterMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/securitycenter", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/securitycenter", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object securitycenterMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/securitycenter", "securitycenter")
-  @js.native
-  def securitycenter(options: Options): Securitycenter = js.native
-  @JSImport("googleapis/build/src/apis/securitycenter", "securitycenter")
-  @js.native
-  def securitycenter(options: typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Options): typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter = js.native
-  @JSImport("googleapis/build/src/apis/securitycenter", "securitycenter")
-  @js.native
-  def securitycenter_v1(version: v1): Securitycenter = js.native
-  @JSImport("googleapis/build/src/apis/securitycenter", "securitycenter")
-  @js.native
-  def securitycenter_v1beta1(version: v1beta1): typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter = js.native
+  @scala.inline
+  def securitycenter(options: Options): Securitycenter = ^.asInstanceOf[js.Dynamic].applyDynamic("securitycenter")(options.asInstanceOf[js.Any]).asInstanceOf[Securitycenter]
+  @scala.inline
+  def securitycenter(options: typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Options): typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter = ^.asInstanceOf[js.Dynamic].applyDynamic("securitycenter")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter]
+  
+  @scala.inline
+  def securitycenter_v1(version: v1): Securitycenter = ^.asInstanceOf[js.Dynamic].applyDynamic("securitycenter")(version.asInstanceOf[js.Any]).asInstanceOf[Securitycenter]
+  
+  @scala.inline
+  def securitycenter_v1beta1(version: v1beta1): typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter = ^.asInstanceOf[js.Dynamic].applyDynamic("securitycenter")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter]
 }

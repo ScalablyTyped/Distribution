@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the styling of text in a Shape or Table.
   */
-@js.native
 trait SchemaUpdateTextStyleRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaUpdateTextStyleRequest extends StObject {
     * `object_id` refers to a table, `cell_location` must have a value.
     * Otherwise, it must not.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The fields that should be updated.  At least one field must be specified.
@@ -26,12 +24,12 @@ trait SchemaUpdateTextStyleRequest extends StObject {
     * `&quot;bold&quot;`.  To reset a property to its default value, include
     * its field name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the shape or table with the text to be styled.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The style(s) to set on the text.  If the value for a particular style
@@ -40,7 +38,7 @@ trait SchemaUpdateTextStyleRequest extends StObject {
     * of the Slides editor. See the documentation of TextStyle for more
     * information.
     */
-  var style: js.UndefOr[SchemaTextStyle] = js.native
+  var style: js.UndefOr[SchemaTextStyle] = js.undefined
   
   /**
     * The range of text to style.  The range may be extended to include
@@ -48,7 +46,7 @@ trait SchemaUpdateTextStyleRequest extends StObject {
     * a list, the paragraph&#39;s bullet is also updated with the matching text
     * style.
     */
-  var textRange: js.UndefOr[SchemaRange] = js.native
+  var textRange: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaUpdateTextStyleRequest {
   

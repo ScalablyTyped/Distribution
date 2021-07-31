@@ -9,35 +9,33 @@ import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofplatformKeysGetKeyPair extends StObject {
   
   def getKeyPair(
     certificate: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def getKeyPairBySpki(
     publicKeySpkiDer: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def selectClientCertificates(
     details: ClientCertificateSelectDetails,
     callback: js.Function1[/* matches */ js.Array[Match], Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def subtleCrypto(): SubtleCrypto = js.native
+  def subtleCrypto(): SubtleCrypto
   
   def verifyTLSServerCertificate(
     details: ServerCertificateVerificationDetails,
     callback: js.Function1[/* result */ ServerCertificateVerificationResult, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object TypeofplatformKeysGetKeyPair {
   

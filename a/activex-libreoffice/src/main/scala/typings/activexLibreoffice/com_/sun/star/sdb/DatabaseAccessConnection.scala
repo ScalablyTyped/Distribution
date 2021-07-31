@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.DatabaseDefinition
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * connection to the database.
   * @deprecated Deprecated
   */
-@js.native
 trait DatabaseAccessConnection
-  extends typings.activexLibreoffice.com_.sun.star.sdbc.Connection
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbc.Connection
      with DatabaseDefinition
      with XChild
      with XSQLQueryComposerFactory

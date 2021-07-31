@@ -4,27 +4,25 @@ import typings.debug.mod.Debugger
 import typings.joi.mod.ObjectSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CopyWithin extends StObject {
     
-    var copyWithin: Boolean = js.native
+    var copyWithin: Boolean
     
-    var entries: Boolean = js.native
+    var entries: Boolean
     
-    var fill: Boolean = js.native
+    var fill: Boolean
     
-    var find: Boolean = js.native
+    var find: Boolean
     
-    var findIndex: Boolean = js.native
+    var findIndex: Boolean
     
-    var keys: Boolean = js.native
+    var keys: Boolean
     
-    var values: Boolean = js.native
+    var values: Boolean
   }
   object CopyWithin {
     
@@ -92,21 +90,25 @@ object anon {
     var namespace: String = js.native
   }
   
-  @js.native
   trait Ext extends StObject {
     
-    var ext: OnPostHandler = js.native
+    var ext: OnPostHandler
     
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any]
     
-    var response: Ranges = js.native
+    var response: Ranges
     
-    var validate: Params = js.native
+    var validate: Params
   }
   object Ext {
     
     @scala.inline
-    def apply(ext: OnPostHandler, handler: (js.Any, js.Any) => js.Promise[_], response: Ranges, validate: Params): Ext = {
+    def apply(
+      ext: OnPostHandler,
+      handler: (js.Any, js.Any) => js.Promise[js.Any],
+      response: Ranges,
+      validate: Params
+    ): Ext = {
       val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], handler = js.Any.fromFunction2(handler), response = response.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ext]
     }
@@ -118,7 +120,7 @@ object anon {
       def setExt(value: OnPostHandler): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHandler(value: (js.Any, js.Any) => js.Promise[_]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setResponse(value: Ranges): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
@@ -128,10 +130,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    def method(request: js.Any, h: js.Any): js.Any = js.native
+    def method(request: js.Any, h: js.Any): js.Any
   }
   object Method {
     
@@ -149,10 +150,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OnPostHandler extends StObject {
     
-    var onPostHandler: Method = js.native
+    var onPostHandler: Method
   }
   object OnPostHandler {
     
@@ -170,14 +170,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var options: Ext = js.native
+    var options: Ext
     
-    var path: String = js.native
+    var path: String
   }
   object Options {
     
@@ -201,15 +200,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: ObjectSchema[_] = js.native
+    var params: ObjectSchema[js.Any]
   }
   object Params {
     
     @scala.inline
-    def apply(params: ObjectSchema[_]): Params = {
+    def apply(params: ObjectSchema[js.Any]): Params = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
@@ -218,14 +216,13 @@ object anon {
     implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setParams(value: ObjectSchema[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: ObjectSchema[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Ranges extends StObject {
     
-    var ranges: Boolean = js.native
+    var ranges: Boolean
   }
   object Ranges {
     

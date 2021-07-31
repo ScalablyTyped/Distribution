@@ -2,25 +2,23 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerLogsOptions extends StObject {
   
-  var details: js.UndefOr[Boolean] = js.native
+  var details: js.UndefOr[Boolean] = js.undefined
   
-  var follow: js.UndefOr[Boolean] = js.native
+  var follow: js.UndefOr[Boolean] = js.undefined
   
-  var since: js.UndefOr[Double] = js.native
+  var since: js.UndefOr[Double] = js.undefined
   
-  var stderr: js.UndefOr[Boolean] = js.native
+  var stderr: js.UndefOr[Boolean] = js.undefined
   
-  var stdout: js.UndefOr[Boolean] = js.native
+  var stdout: js.UndefOr[Boolean] = js.undefined
   
-  var tail: js.UndefOr[Double] = js.native
+  var tail: js.UndefOr[Double] = js.undefined
   
-  var timestamps: js.UndefOr[Boolean] = js.native
+  var timestamps: js.UndefOr[Boolean] = js.undefined
 }
 object ContainerLogsOptions {
   

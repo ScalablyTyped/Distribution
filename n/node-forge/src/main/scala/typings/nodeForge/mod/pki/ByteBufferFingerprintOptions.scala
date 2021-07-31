@@ -5,26 +5,24 @@ import typings.nodeForge.nodeForgeStrings.RSAPublicKey
 import typings.nodeForge.nodeForgeStrings.SubjectPublicKeyInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteBufferFingerprintOptions extends StObject {
   
   /**
     * @description the delimiter to use between bytes for `hex` encoded output
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * @description if not specified defaults to `md.md5`
     */
-  var md: js.UndefOr[MessageDigest] = js.native
+  var md: js.UndefOr[MessageDigest] = js.undefined
   
   /**
     * @description The type of fingerprint. If not specified, defaults to 'RSAPublicKey'
     */
-  var `type`: js.UndefOr[SubjectPublicKeyInfo | RSAPublicKey] = js.native
+  var `type`: js.UndefOr[SubjectPublicKeyInfo | RSAPublicKey] = js.undefined
 }
 object ByteBufferFingerprintOptions {
   

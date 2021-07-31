@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mountTargetMod {
@@ -85,6 +84,10 @@ object mountTargetMod {
   /* static members */
   object MountTarget {
     
+    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MountTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,52 +97,46 @@ object mountTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MountTarget = js.native
-    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MountTarget = js.native
-    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MountTargetState): MountTarget = js.native
-    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): MountTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MountTargetState): MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MountTarget]
     
     /**
       * Returns true if the given object is an instance of MountTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean]
   }
   
-  @js.native
   trait MountTargetArgs extends StObject {
     
     /**
       * The ID of the file system for which the mount target is intended.
       */
-    val fileSystemId: Input[String] = js.native
+    val fileSystemId: Input[String]
     
     /**
       * The address (within the address range of the specified subnet) at
       * which the file system may be mounted via the mount target.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of up to 5 VPC security group IDs (that must
       * be for the same VPC as subnet specified) in effect for the mount target.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the subnet to add the mount target in.
       */
-    val subnetId: Input[String] = js.native
+    val subnetId: Input[String]
   }
   object MountTargetArgs {
     
@@ -175,65 +172,64 @@ object mountTargetMod {
     }
   }
   
-  @js.native
   trait MountTargetState extends StObject {
     
     /**
       * The unique and consistent identifier of the Availability Zone (AZ) that the mount target resides in.
       */
-    val availabilityZoneId: js.UndefOr[Input[String]] = js.native
+    val availabilityZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Availability Zone (AZ) that the mount target resides in.
       */
-    val availabilityZoneName: js.UndefOr[Input[String]] = js.native
+    val availabilityZoneName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS name for the EFS file system.
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name of the file system.
       */
-    val fileSystemArn: js.UndefOr[Input[String]] = js.native
+    val fileSystemArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the file system for which the mount target is intended.
       */
-    val fileSystemId: js.UndefOr[Input[String]] = js.native
+    val fileSystemId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The address (within the address range of the specified subnet) at
       * which the file system may be mounted via the mount target.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
       */
-    val mountTargetDnsName: js.UndefOr[Input[String]] = js.native
+    val mountTargetDnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network interface that Amazon EFS created when it created the mount target.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * AWS account ID that owns the resource.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of up to 5 VPC security group IDs (that must
       * be for the same VPC as subnet specified) in effect for the mount target.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the subnet to add the mount target in.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
   }
   object MountTargetState {
     

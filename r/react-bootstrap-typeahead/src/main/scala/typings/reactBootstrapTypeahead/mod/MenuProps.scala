@@ -5,25 +5,23 @@ import typings.react.mod.LegacyRef
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var emptyLabel: js.UndefOr[String] = js.native
+  var emptyLabel: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var innerRef: js.UndefOr[LegacyRef[HTMLUListElement]] = js.native
+  var innerRef: js.UndefOr[LegacyRef[HTMLUListElement]] = js.undefined
   
-  var maxHeight: js.UndefOr[String] = js.native
+  var maxHeight: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object MenuProps {
   

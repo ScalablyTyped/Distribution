@@ -9,34 +9,32 @@ import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
   
-  @JSImport("contentful-management/dist/typings/entities/tag", JSImport.Default)
+  @JSImport("contentful-management/dist/typings/entities/tag", JSImport.Namespace)
   @js.native
-  def default(http: AxiosInstance): TagApi = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/tag", "createDeleteTag")
-  @js.native
-  def createDeleteTag(http: AxiosInstance): js.Function0[js.Promise[Unit]] = js.native
+  @scala.inline
+  def default(http: AxiosInstance): TagApi = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(http.asInstanceOf[js.Any]).asInstanceOf[TagApi]
   
-  @JSImport("contentful-management/dist/typings/entities/tag", "createUpdateTag")
-  @js.native
-  def createUpdateTag(http: AxiosInstance): js.Function0[js.Promise[Tag]] = js.native
+  @scala.inline
+  def createDeleteTag(http: AxiosInstance): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeleteTag")(http.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
   
-  @JSImport("contentful-management/dist/typings/entities/tag", "wrapTag")
-  @js.native
-  def wrapTag(http: AxiosInstance, data: TagProps): Tag = js.native
+  @scala.inline
+  def createUpdateTag(http: AxiosInstance): js.Function0[js.Promise[Tag]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdateTag")(http.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Tag]]]
   
-  @JSImport("contentful-management/dist/typings/entities/tag", "wrapTagCollection")
-  @js.native
-  def wrapTagCollection(http: AxiosInstance, data: CollectionProp[TagProps]): Collection[Tag, TagProps] = js.native
+  @scala.inline
+  def wrapTag(http: AxiosInstance, data: TagProps): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTag")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Tag]
   
-  @js.native
+  @scala.inline
+  def wrapTagCollection(http: AxiosInstance, data: CollectionProp[TagProps]): Collection[Tag, TagProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTagCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Tag, TagProps]]
+  
   trait Tag
-    extends TagProps
+    extends StObject
+       with TagProps
        with DefaultElements[TagProps]
        with TagApi
   object Tag {
@@ -54,12 +52,11 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagApi extends StObject {
     
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
-    def update(): js.Promise[Tag] = js.native
+    def update(): js.Promise[Tag]
   }
   object TagApi {
     
@@ -80,12 +77,11 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagCollection extends StObject {
     
-    var items: js.Array[Tag] = js.native
+    var items: js.Array[Tag]
     
-    var total: Double = js.native
+    var total: Double
   }
   object TagCollection {
     
@@ -109,14 +105,13 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagCollectionProps extends StObject {
     
-    var items: js.Array[TagProps] = js.native
+    var items: js.Array[TagProps]
     
-    var sys: Type = js.native
+    var sys: Type
     
-    var total: Double = js.native
+    var total: Double
   }
   object TagCollectionProps {
     
@@ -143,12 +138,11 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var sys: TagSysProps = js.native
+    var sys: TagSysProps
   }
   object TagProps {
     
@@ -170,40 +164,32 @@ object tagMod {
   }
   
   /* Inlined std.Pick<contentful-management.contentful-management/dist/typings/common-types.MetaSysProps, 'id' | 'space' | 'version' | 'createdAt' | 'createdBy' | 'updatedAt' | 'updatedBy'> & {  type :'Tag',   environment :{  sys :{  id :string,   type :'Link',   linkType :'Environment'}}} */
-  @js.native
   trait TagSysProps extends StObject {
     
-    var createdAt: String = js.native
+    var createdAt: String
     
-    var createdBy: js.UndefOr[Sys] = js.native
+    var createdBy: js.UndefOr[Sys] = js.undefined
     
-    var environment: SysId = js.native
+    var environment: SysId
     
-    var id: String = js.native
+    var id: String
     
-    var space: js.UndefOr[Sys] = js.native
+    var space: js.UndefOr[Sys] = js.undefined
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Tag = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Tag
     
-    var updatedAt: String = js.native
+    var updatedAt: String
     
-    var updatedBy: js.UndefOr[Sys] = js.native
+    var updatedBy: js.UndefOr[Sys] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object TagSysProps {
     
     @scala.inline
-    def apply(
-      createdAt: String,
-      environment: SysId,
-      id: String,
-      `type`: typings.contentfulManagement.contentfulManagementStrings.Tag,
-      updatedAt: String,
-      version: Double
-    ): TagSysProps = {
+    def apply(createdAt: String, environment: SysId, id: String, updatedAt: String, version: Double): TagSysProps = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Tag")
       __obj.asInstanceOf[TagSysProps]
     }
     

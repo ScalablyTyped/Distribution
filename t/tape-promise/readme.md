@@ -10,9 +10,9 @@ Promise/async support for tape.
 | ------------------ | :-------------: |
 | Full name          | tape-promise |
 | Keywords           | tape, promise, async, test, testing, tdd, unit |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 191183 |
+| # downloads        | 245332 |
 | # stars            | 1 |
 
 ## Links

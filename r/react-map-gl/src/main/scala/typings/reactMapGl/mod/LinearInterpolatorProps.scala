@@ -2,15 +2,13 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearInterpolatorProps extends StObject {
   
-  var around: js.UndefOr[js.Array[Double]] = js.native
+  var around: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var transitionProps: js.UndefOr[js.Array[String]] = js.native
+  var transitionProps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LinearInterpolatorProps {
   

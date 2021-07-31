@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserRequest extends StObject {
   
   /**
     * The identifier for the organization under which the user exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier for the user to be described.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object DescribeUserRequest {
   

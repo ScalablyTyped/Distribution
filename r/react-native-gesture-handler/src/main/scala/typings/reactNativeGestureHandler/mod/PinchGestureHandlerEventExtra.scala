@@ -2,19 +2,17 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinchGestureHandlerEventExtra extends StObject {
   
-  var focalX: Double = js.native
+  var focalX: Double
   
-  var focalY: Double = js.native
+  var focalY: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var velocity: Double = js.native
+  var velocity: Double
 }
 object PinchGestureHandlerEventExtra {
   

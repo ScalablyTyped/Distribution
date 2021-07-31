@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrixMod {
@@ -27,7 +26,7 @@ object matrixMod {
       */
     def deserialize(data: MatrixRoomData): Unit = js.native
     
-    def extras: Record[String, _] = js.native
+    def extras: Record[String, js.Any] = js.native
     
     /**
       * Get the data value for the given key.
@@ -64,19 +63,18 @@ object matrixMod {
     var topic: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait MatrixRoomData extends StObject {
     
-    var extras: Record[String, _] = js.native
+    var extras: Record[String, js.Any]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var topic: js.UndefOr[String] = js.native
+    var topic: js.UndefOr[String] = js.undefined
   }
   object MatrixRoomData {
     
     @scala.inline
-    def apply(extras: Record[String, _]): MatrixRoomData = {
+    def apply(extras: Record[String, js.Any]): MatrixRoomData = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixRoomData]
     }
@@ -85,7 +83,7 @@ object matrixMod {
     implicit class MatrixRoomDataMutableBuilder[Self <: MatrixRoomData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtras(value: Record[String, _]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

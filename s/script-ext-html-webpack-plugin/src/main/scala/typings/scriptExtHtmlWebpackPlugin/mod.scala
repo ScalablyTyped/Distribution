@@ -7,25 +7,25 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("script-ext-html-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends ScriptExtHtmlWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with ScriptExtHtmlWebpackPlugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Custom extends StObject {
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var test: ScriptMatchingPattern = js.native
+    var test: ScriptMatchingPattern
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Custom {
     
@@ -55,53 +55,52 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * script names that should have an async attribute (default: `[]`)
       */
-    var async: js.UndefOr[ScriptMatchingPattern] = js.native
+    var async: js.UndefOr[ScriptMatchingPattern] = js.undefined
     
     /**
       * scripts that should have a custom attribute(s) added, the attribute(s), and the value(s)
       */
-    var custom: js.UndefOr[Custom | js.Array[Custom]] = js.native
+    var custom: js.UndefOr[Custom | js.Array[Custom]] = js.undefined
     
     /**
       * the default attribute to set - 'sync' actually results in no attribute (default: 'sync')
       */
-    var defaultAttribute: js.UndefOr[sync | async | defer] = js.native
+    var defaultAttribute: js.UndefOr[sync | async | defer] = js.undefined
     
     /**
       * script names that should have a defer attribute (default: `[]`)
       */
-    var defer: js.UndefOr[ScriptMatchingPattern] = js.native
+    var defer: js.UndefOr[ScriptMatchingPattern] = js.undefined
     
     /**
       * scripts that should be inlined in the html (default: `[]`)
       */
-    var `inline`: js.UndefOr[ScriptMatchingPattern] = js.native
+    var `inline`: js.UndefOr[ScriptMatchingPattern] = js.undefined
     
     /**
       * script names that should have a type="module" attribute (default: `[]`)
       */
-    var module: js.UndefOr[ScriptMatchingPattern] = js.native
+    var module: js.UndefOr[ScriptMatchingPattern] = js.undefined
     
     /**
       * scripts that should have accompanying prefetch resource hints (default: `[]`)
       */
-    var prefetch: js.UndefOr[ScriptMatchingPatternPre] = js.native
+    var prefetch: js.UndefOr[ScriptMatchingPatternPre] = js.undefined
     
     /**
       * scripts that should have accompanying preload resource hints (default: `[]`)
       */
-    var preload: js.UndefOr[ScriptMatchingPatternPre] = js.native
+    var preload: js.UndefOr[ScriptMatchingPatternPre] = js.undefined
     
     /**
       * script names that should have no attribute (default: `[]`)
       */
-    var sync: js.UndefOr[ScriptMatchingPattern] = js.native
+    var sync: js.UndefOr[ScriptMatchingPattern] = js.undefined
   }
   object Options {
     
@@ -195,7 +194,9 @@ object mod {
   }
   
   @js.native
-  trait ScriptExtHtmlWebpackPlugin extends Plugin {
+  trait ScriptExtHtmlWebpackPlugin
+    extends StObject
+       with Plugin {
     
     @JSName("apply")
     def apply(
@@ -207,10 +208,9 @@ object mod {
   
   type ScriptMatchingPatternBase = String | RegExp | (js.Array[String | RegExp])
   
-  @js.native
   trait ScriptMatchingPatternHash extends StObject {
     
-    var test: ScriptMatchingPatternBase = js.native
+    var test: ScriptMatchingPatternBase
   }
   object ScriptMatchingPatternHash {
     

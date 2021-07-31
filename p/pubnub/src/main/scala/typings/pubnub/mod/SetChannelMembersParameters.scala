@@ -2,15 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetChannelMembersParameters[Custom /* <: ObjectCustom */] extends UUIDMembersParameters {
+trait SetChannelMembersParameters[Custom /* <: ObjectCustom */]
+  extends StObject
+     with UUIDMembersParameters {
   
-  var channel: String = js.native
+  var channel: String
   
-  var uuids: js.Array[String | SetCustom[Custom]] = js.native
+  var uuids: js.Array[String | SetCustom[Custom]]
 }
 object SetChannelMembersParameters {
   
@@ -21,7 +21,7 @@ object SetChannelMembersParameters {
   }
   
   @scala.inline
-  implicit class SetChannelMembersParametersMutableBuilder[Self <: SetChannelMembersParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetChannelMembersParameters[Custom]) extends AnyVal {
+  implicit class SetChannelMembersParametersMutableBuilder[Self <: SetChannelMembersParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetChannelMembersParameters[Custom]) extends AnyVal {
     
     @scala.inline
     def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])

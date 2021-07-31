@@ -2,24 +2,22 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLTextArea extends StObject {
   
-  var Columns: Double = js.native
+  var Columns: Double
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
   @JSName("MSForms.HTMLTextArea_typekey")
-  var MSFormsDotHTMLTextArea_typekey: HTMLTextArea = js.native
+  var MSFormsDotHTMLTextArea_typekey: HTMLTextArea
   
-  var Rows: Double = js.native
+  var Rows: Double
   
-  var Value: String = js.native
+  var Value: String
   
-  var WordWrap: String = js.native
+  var WordWrap: String
 }
 object HTMLTextArea {
   

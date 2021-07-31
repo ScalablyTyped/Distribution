@@ -3,15 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDashboardEvents extends IEvents {
+trait IDashboardEvents
+  extends StObject
+     with IEvents {
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IDashboardEvents {
   

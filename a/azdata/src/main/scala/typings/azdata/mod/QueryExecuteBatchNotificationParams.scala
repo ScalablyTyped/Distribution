@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExecuteBatchNotificationParams extends StObject {
   
-  var batchSummary: BatchSummary = js.native
+  var batchSummary: BatchSummary
   
-  var ownerUri: String = js.native
+  var ownerUri: String
 }
 object QueryExecuteBatchNotificationParams {
   

@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneInput. */
-@js.native
 trait ToneInput extends StObject {
   
   /** The input content that the service is to analyze. */
-  var text: String = js.native
+  var text: String
 }
 object ToneInput {
   

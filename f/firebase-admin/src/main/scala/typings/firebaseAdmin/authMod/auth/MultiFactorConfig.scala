@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This can be used to define whether multi-factor authentication is enabled
   * or disabled and the list of second factor challenges that are supported.
   */
-@js.native
 trait MultiFactorConfig extends StObject {
   
   /**
     * The list of identifiers for enabled second factors.
     * Currently only ‘phone’ is supported.
     */
-  var factorIds: js.UndefOr[js.Array[AuthFactorType]] = js.native
+  var factorIds: js.UndefOr[js.Array[AuthFactorType]] = js.undefined
   
   /**
     * The multi-factor config state.
     */
-  var state: MultiFactorConfigState = js.native
+  var state: MultiFactorConfigState
 }
 object MultiFactorConfig {
   

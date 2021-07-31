@@ -3,28 +3,35 @@ package typings.reactNativeSqliteStorage
 import typings.reactNativeSqliteStorage.mod.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeSqliteStorageStrings {
   
   @js.native
-  sealed trait default extends Location
+  sealed trait default
+    extends StObject
+       with Location
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait Documents extends Location
+  sealed trait Documents
+    extends StObject
+       with Location
   @scala.inline
   def Documents: Documents = "Documents".asInstanceOf[Documents]
   
   @js.native
-  sealed trait Library extends Location
+  sealed trait Library
+    extends StObject
+       with Location
   @scala.inline
   def Library: Library = "Library".asInstanceOf[Library]
   
   @js.native
-  sealed trait Shared extends Location
+  sealed trait Shared
+    extends StObject
+       with Location
   @scala.inline
   def Shared: Shared = "Shared".asInstanceOf[Shared]
 }

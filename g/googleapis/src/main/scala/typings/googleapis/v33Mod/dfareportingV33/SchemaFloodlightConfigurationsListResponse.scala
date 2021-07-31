@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Floodlight Configuration List Response
   */
-@js.native
 trait SchemaFloodlightConfigurationsListResponse extends StObject {
   
   /**
     * Floodlight configuration collection.
     */
-  var floodlightConfigurations: js.UndefOr[js.Array[SchemaFloodlightConfiguration]] = js.native
+  var floodlightConfigurations: js.UndefOr[js.Array[SchemaFloodlightConfiguration]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#floodlightConfigurationsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaFloodlightConfigurationsListResponse {
   

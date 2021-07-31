@@ -3,43 +3,43 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HSLA extends Node {
+trait HSLA
+  extends StObject
+     with Node {
   
-  var a: Double = js.native
+  var a: Double
   
   /**
     * Add h,s,l to the current component values
     */
-  def add(h: Double, s: Double, l: Double): HSLA = js.native
+  def add(h: Double, s: Double, l: Double): HSLA
   
   /**
     * djust hue by `deg`.
     */
-  def adjustHue(deg: Double): HSLA = js.native
+  def adjustHue(deg: Double): HSLA
   
   /**
     * Adjust lightness by `percent`.
     */
-  def adjustLightness(percent: Double): HSLA = js.native
+  def adjustLightness(percent: Double): HSLA
   
-  var h: Double = js.native
+  var h: Double
   
-  var hsla: HSLA = js.native
+  var hsla: HSLA
   
-  var l: Double = js.native
+  var l: Double
   
-  var rgba: RGBA = js.native
+  var rgba: RGBA
   
-  var s: Double = js.native
+  var s: Double
   
   /**
     * Subtract h,s,l from the current component values
     */
-  def substract(h: Double, s: Double, l: Double): HSLA = js.native
+  def substract(h: Double, s: Double, l: Double): HSLA
 }
 object HSLA {
   

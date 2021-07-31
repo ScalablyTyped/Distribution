@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.winrtUwp.Windows.Storage.Pickers.Provider.FileSavePickerUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires when the user saves a file through the file picker and selects the app as the location. */
-@js.native
 trait FileSavePickerActivatedEventArgs extends StObject {
   
   /** The package family name of the app that launched this app. */
-  var callerPackageFamilyName: String = js.native
+  var callerPackageFamilyName: String
   
   /** Gets the ID of the enterprise that owns the file. */
-  var enterpriseId: String = js.native
+  var enterpriseId: String
   
   /** Gets the letterbox UI of the file picker that is displayed when the user saves a file and selects the app as the save location. */
-  var fileSavePickerUI: FileSavePickerUI = js.native
+  var fileSavePickerUI: FileSavePickerUI
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets a SplashScreen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object FileSavePickerActivatedEventArgs {
   

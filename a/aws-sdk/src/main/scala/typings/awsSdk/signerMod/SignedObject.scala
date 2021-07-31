@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedObject extends StObject {
   
   /**
     * The S3SignedObject.
     */
-  var s3: js.UndefOr[S3SignedObject] = js.native
+  var s3: js.UndefOr[S3SignedObject] = js.undefined
 }
 object SignedObject {
   

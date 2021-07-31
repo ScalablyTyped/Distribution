@@ -10,8 +10,8 @@ Caja's HTML Sanitizer as a Node.js module
 | Full name          | sanitizer |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 99 |
-| # downloads        | 2248974 |
+| # dependents       | 103 |
+| # downloads        | 2681437 |
 | # stars            | 6 |
 
 ## Links

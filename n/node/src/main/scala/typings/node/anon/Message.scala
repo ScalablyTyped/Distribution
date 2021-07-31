@@ -2,13 +2,11 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var message: js.Any = js.native
+  var message: js.Any
 }
 object Message {
   

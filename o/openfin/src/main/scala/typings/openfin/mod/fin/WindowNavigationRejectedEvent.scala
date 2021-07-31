@@ -2,15 +2,15 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowNavigationRejectedEvent extends WindowEvent {
+trait WindowNavigationRejectedEvent
+  extends StObject
+     with WindowEvent {
   
-  var sourceName: String = js.native
+  var sourceName: String
   
-  var url: String = js.native
+  var url: String
 }
 object WindowNavigationRejectedEvent {
   

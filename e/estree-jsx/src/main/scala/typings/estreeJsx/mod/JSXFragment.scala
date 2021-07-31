@@ -3,22 +3,21 @@ package typings.estreeJsx.mod
 import typings.estree.mod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXFragment
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment] = js.native
+  var children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]
   
-  var closingFragment: JSXClosingFragment = js.native
+  var closingFragment: JSXClosingFragment
   
-  var openingFragment: JSXOpeningFragment = js.native
+  var openingFragment: JSXOpeningFragment
   
   @JSName("type")
-  var type_JSXFragment: typings.estreeJsx.estreeJsxStrings.JSXFragment = js.native
+  var type_JSXFragment: typings.estreeJsx.estreeJsxStrings.JSXFragment
 }
 object JSXFragment {
   
@@ -26,11 +25,10 @@ object JSXFragment {
   def apply(
     children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
     closingFragment: JSXClosingFragment,
-    openingFragment: JSXOpeningFragment,
-    `type`: typings.estreeJsx.estreeJsxStrings.JSXFragment
+    openingFragment: JSXOpeningFragment
   ): JSXFragment = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXFragment")
     __obj.asInstanceOf[JSXFragment]
   }
   

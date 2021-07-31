@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerType extends StObject {
   
-  var containerType: js.UndefOr[String] = js.native
+  var containerType: js.UndefOr[String] = js.undefined
   
-  var sha1Checksum: js.UndefOr[String] = js.native
+  var sha1Checksum: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object ContainerType {
   

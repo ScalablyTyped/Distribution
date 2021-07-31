@@ -2,13 +2,13 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SenderBatchHeader extends PayoutSenderBatchHeader {
+trait SenderBatchHeader
+  extends StObject
+     with PayoutSenderBatchHeader {
   
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
 }
 object SenderBatchHeader {
   

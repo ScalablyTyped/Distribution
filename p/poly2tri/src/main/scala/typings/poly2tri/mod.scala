@@ -7,7 +7,6 @@ import typings.poly2tri.poly2triNumbers.`2`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,10 +20,12 @@ object mod {
     * @param x    coordinate (0 if undefined)
     * @param y    coordinate (0 if undefined)
     */
-  class Point () extends IPointLike {
+  class Point ()
+    extends StObject
+       with IPointLike {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
     
     /**
       * Add another Point object to this instance. (component-wise)
@@ -93,9 +94,21 @@ object mod {
       *      // → '{"x":1,"y":2}'
       */
     def toJSON(): js.Any = js.native
+    
+    /** x coordinate */
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /** y coordinate */
+    /* CompleteClass */
+    var y: Double = js.native
   }
   /* static members */
   object Point {
+    
+    @JSImport("poly2tri", "Point")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Add two points component-wise and return the result as a new Point object.
@@ -103,9 +116,8 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @JSImport("poly2tri", "Point.add")
-    @js.native
-    def add(a: XY, b: XY): Point = js.native
+    @scala.inline
+    def add(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Compare two points component-wise. Ordered by y axis first, then x axis.
@@ -113,19 +125,15 @@ object mod {
       * @param b - point object with {x,y}
       * @return `< 0` if `a < b` ; `> 0` if `a > b` ; `0` otherwise.
       */
-    @JSImport("poly2tri", "Point.compare")
-    @js.native
-    def compare(a: XY, b: XY): Double = js.native
+    @scala.inline
+    def compare(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("poly2tri", "Point.cross")
-    @js.native
-    def cross(a: Double, b: Double): Double = js.native
-    @JSImport("poly2tri", "Point.cross")
-    @js.native
-    def cross(a: Double, b: XY): Point = js.native
-    @JSImport("poly2tri", "Point.cross")
-    @js.native
-    def cross(a: XY, b: Double): Point = js.native
+    @scala.inline
+    def cross(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def cross(a: Double, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    @scala.inline
+    def cross(a: XY, b: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     /**
       * Perform the cross product on either two points (result is a scalar)
       * or a point and a scalar (result is a point).
@@ -135,9 +143,8 @@ object mod {
       * @param  b - Point object or scalar.
       * @return a Point object or a number, depending on the parameters.
       */
-    @JSImport("poly2tri", "Point.cross")
-    @js.native
-    def cross(a: XY, b: XY): Double = js.native
+    @scala.inline
+    def cross(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Peform the dot product on two vectors.
@@ -145,9 +152,8 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the dot product
       */
-    @JSImport("poly2tri", "Point.dot")
-    @js.native
-    def dot(a: XY, b: XY): Double = js.native
+    @scala.inline
+    def dot(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Test two Point objects for equality.
@@ -155,9 +161,8 @@ object mod {
       * @param b - point object with {x,y}
       * @return `true` if `a == b`, `false` otherwise.
       */
-    @JSImport("poly2tri", "Point.equals")
-    @js.native
-    def equals(a: XY, b: XY): Boolean = js.native
+    @scala.inline
+    def equals(a: XY, b: XY): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Multiply a point by a scalar and return the result as a new Point object.
@@ -165,18 +170,16 @@ object mod {
       * @param p - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @JSImport("poly2tri", "Point.mul")
-    @js.native
-    def mul(s: Double, p: XY): Point = js.native
+    @scala.inline
+    def mul(s: Double, p: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(s.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Negate a point component-wise and return the result as a new Point object.
       * @param p - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @JSImport("poly2tri", "Point.negate")
-    @js.native
-    def negate(p: XY): Point = js.native
+    @scala.inline
+    def negate(p: XY): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(p.asInstanceOf[js.Any]).asInstanceOf[Point]
     
     /**
       * Subtract two points component-wise and return the result as a new Point object.
@@ -184,9 +187,8 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @JSImport("poly2tri", "Point.sub")
-    @js.native
-    def sub(a: XY, b: XY): Point = js.native
+    @scala.inline
+    def sub(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Point pretty printing. Delegates to the point's custom "toString()" method if exists,
@@ -200,20 +202,27 @@ object mod {
       * @param p - point object with {x,y}
       * @returns `"(x;y)"`
       */
-    @JSImport("poly2tri", "Point.toString")
-    @js.native
-    def toString(p: XY): String = js.native
+    @scala.inline
+    def toString(p: XY): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("poly2tri", "PointError")
   @js.native
-  class PointError protected () extends Error {
+  class PointError protected ()
+    extends StObject
+       with Error {
     /**
       * Custom exception class to indicate invalid Point values
       * @param message - error message
       * @param points - invalid points
       */
     def this(message: String, points: js.Array[XY]) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * Invalid points
@@ -404,14 +413,13 @@ object mod {
   @js.native
   val VERSION: String = js.native
   
-  @js.native
   trait IPointLike extends StObject {
     
     /** x coordinate */
-    var x: Double = js.native
+    var x: Double
     
     /** y coordinate */
-    var y: Double = js.native
+    var y: Double
   }
   object IPointLike {
     
@@ -432,7 +440,6 @@ object mod {
     }
   }
   
-  @js.native
   trait SweepContextOptions extends StObject {
     
     /**
@@ -440,7 +447,7 @@ object mod {
       * Points inside arrays are never copied.
       * Default is `false` : keep a reference to the array arguments, who will be modified in place.
       */
-    var cloneArrays: js.UndefOr[Boolean] = js.native
+    var cloneArrays: js.UndefOr[Boolean] = js.undefined
   }
   object SweepContextOptions {
     

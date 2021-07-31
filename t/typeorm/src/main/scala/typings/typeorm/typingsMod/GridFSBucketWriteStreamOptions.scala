@@ -2,36 +2,34 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFSBucketWriteStreamOptions extends StObject {
   
   /**
     * The chunk size to use, in bytes.
     */
-  var chunkSizeBytes: js.UndefOr[scala.Double] = js.native
+  var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Custom file id for the GridFS file.
     */
-  var id: js.UndefOr[String | scala.Double | js.Object] = js.native
+  var id: js.UndefOr[String | scala.Double | js.Object] = js.undefined
   
   /**
     * The journal write concern.
     */
-  var j: js.UndefOr[scala.Double] = js.native
+  var j: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double] = js.native
+  var w: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object GridFSBucketWriteStreamOptions {
   

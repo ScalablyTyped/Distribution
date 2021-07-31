@@ -2,21 +2,19 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group clause made up of list population terms representing constraints
   * joined by ORs.
   */
-@js.native
 trait SchemaListPopulationClause extends StObject {
   
   /**
     * Terms of this list population clause. Each clause is made up of list
     * population terms representing constraints and are joined by ORs.
     */
-  var terms: js.UndefOr[js.Array[SchemaListPopulationTerm]] = js.native
+  var terms: js.UndefOr[js.Array[SchemaListPopulationTerm]] = js.undefined
 }
 object SchemaListPopulationClause {
   

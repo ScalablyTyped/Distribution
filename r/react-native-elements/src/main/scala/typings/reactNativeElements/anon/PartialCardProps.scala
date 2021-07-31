@@ -9,38 +9,36 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.CardProps> */
-@js.native
 trait PartialCardProps extends StObject {
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dividerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dividerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var featuredSubtitle: js.UndefOr[String] = js.native
+  var featuredSubtitle: js.UndefOr[String] = js.undefined
   
-  var featuredSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var featuredSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var featuredTitle: js.UndefOr[String] = js.native
+  var featuredTitle: js.UndefOr[String] = js.undefined
   
-  var featuredTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var featuredTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var image: js.UndefOr[ImageSourcePropType] = js.native
+  var image: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var imageProps: js.UndefOr[PartialImageProps] = js.native
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   
-  var imageStyle: js.UndefOr[ImageStyle] = js.native
+  var imageStyle: js.UndefOr[ImageStyle] = js.undefined
   
-  var imageWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var imageWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object PartialCardProps {
   

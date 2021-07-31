@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to metadata about a domain to which the current system is a member. */
-@js.native
 trait IPlayReadyDomain extends StObject {
   
   /** Gets the current domain account identifier property. */
-  var accountId: String = js.native
+  var accountId: String
   
   /** Gets the URL used to join the domain. */
-  var domainJoinUrl: Uri = js.native
+  var domainJoinUrl: Uri
   
   /** Gets the current domain friendly name. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /** Gets the current domain revision number. */
-  var revision: Double = js.native
+  var revision: Double
   
   /** Gets the current domain service identifier property. */
-  var serviceId: String = js.native
+  var serviceId: String
 }
 object IPlayReadyDomain {
   

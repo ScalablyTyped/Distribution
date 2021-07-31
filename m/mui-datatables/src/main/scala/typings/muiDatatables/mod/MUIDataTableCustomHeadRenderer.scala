@@ -3,11 +3,9 @@ package typings.muiDatatables.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<mui-datatables.mui-datatables.MUIDataTableColumn, 'name' | 'label'> & std.Pick<mui-datatables.mui-datatables.MUIDataTableColumnOptions, 'customHeadRender' | 'display' | 'filter' | 'sort' | 'download' | 'empty' | 'print' | 'searchable' | 'viewColumns'> & {  index :number} */
-@js.native
 trait MUIDataTableCustomHeadRenderer extends StObject {
   
   var customHeadRender: js.UndefOr[
@@ -17,29 +15,29 @@ trait MUIDataTableCustomHeadRenderer extends StObject {
       /* sortOrder */ MUISortOptions, 
       String | ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var display: js.UndefOr[Display] = js.native
+  var display: js.UndefOr[Display] = js.undefined
   
-  var download: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var print: js.UndefOr[Boolean] = js.native
+  var print: js.UndefOr[Boolean] = js.undefined
   
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
-  var viewColumns: js.UndefOr[Boolean] = js.native
+  var viewColumns: js.UndefOr[Boolean] = js.undefined
 }
 object MUIDataTableCustomHeadRenderer {
   

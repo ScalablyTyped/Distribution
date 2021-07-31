@@ -2,29 +2,27 @@ package typings.datatablesNetAutofill
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait AutoFillSettings extends StObject {
     
     /*
       * Always ask the end user if an action should be taken or not
       */
-    var alwaysAsk: js.UndefOr[Boolean] = js.native
+    var alwaysAsk: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Select the columns that can be auto filled
       */
-    var columns: String | js.Array[Double] = js.native
+    var columns: String | js.Array[Double]
     
     /*
       *
       * Initial enablement state of AutoFill
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
   }
   object AutoFillSettings {
     
@@ -57,13 +55,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * autoFill extension options
       */
-    var autoFill: js.UndefOr[Boolean | AutoFillSettings] = js.native
+    var autoFill: js.UndefOr[Boolean | AutoFillSettings] = js.undefined
   }
   object Settings {
     

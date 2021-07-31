@@ -3,28 +3,27 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssertDetails
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var baseline: js.UndefOr[Double] = js.native
+  var baseline: js.UndefOr[Double] = js.undefined
   
-  var datetime: js.UndefOr[String] = js.native
+  var datetime: js.UndefOr[String] = js.undefined
   
-  var job_id: js.UndefOr[String] = js.native
+  var job_id: js.UndefOr[String] = js.undefined
   
-  var lower_boundary: js.UndefOr[Double] = js.native
+  var lower_boundary: js.UndefOr[Double] = js.undefined
   
-  var order_index: js.UndefOr[Double] = js.native
+  var order_index: js.UndefOr[Double] = js.undefined
   
-  var outlier: js.UndefOr[OutlierDetails] = js.native
+  var outlier: js.UndefOr[OutlierDetails] = js.undefined
   
-  var real_value: js.UndefOr[Double] = js.native
+  var real_value: js.UndefOr[Double] = js.undefined
   
-  var upper_boundary: js.UndefOr[Double] = js.native
+  var upper_boundary: js.UndefOr[Double] = js.undefined
 }
 object AssertDetails {
   

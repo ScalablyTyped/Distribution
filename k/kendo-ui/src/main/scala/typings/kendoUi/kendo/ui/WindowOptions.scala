@@ -2,77 +2,75 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowOptions extends StObject {
   
-  var actions: js.UndefOr[js.Any] = js.native
+  var actions: js.UndefOr[js.Any] = js.undefined
   
-  var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var animation: js.UndefOr[Boolean | WindowAnimation] = js.native
+  var animation: js.UndefOr[Boolean | WindowAnimation] = js.undefined
   
-  var appendTo: js.UndefOr[js.Any | String] = js.native
+  var appendTo: js.UndefOr[js.Any | String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ WindowCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ WindowCloseEvent, Unit]] = js.undefined
   
-  var content: js.UndefOr[String | WindowContent] = js.native
+  var content: js.UndefOr[String | WindowContent] = js.undefined
   
-  var deactivate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var deactivate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var draggable: js.UndefOr[Boolean | WindowDraggable] = js.native
+  var draggable: js.UndefOr[Boolean | WindowDraggable] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ WindowErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ WindowErrorEvent, Unit]] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var iframe: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var maximize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var maximize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var minimize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var minimize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var modal: js.UndefOr[Boolean | WindowModal] = js.native
+  var modal: js.UndefOr[Boolean | WindowModal] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[WindowPosition] = js.native
+  var position: js.UndefOr[WindowPosition] = js.undefined
   
-  var refresh: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var refresh: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean] = js.native
+  var scrollable: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | Boolean] = js.native
+  var title: js.UndefOr[String | Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object WindowOptions {
   

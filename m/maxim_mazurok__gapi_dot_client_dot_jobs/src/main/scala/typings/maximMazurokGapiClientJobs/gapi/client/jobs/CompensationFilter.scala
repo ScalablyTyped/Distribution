@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompensationFilter extends StObject {
   
   /** Optional. If set to true, jobs with unspecified compensation range fields are included. */
-  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.native
+  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. Compensation range. */
-  var range: js.UndefOr[CompensationRange] = js.native
+  var range: js.UndefOr[CompensationRange] = js.undefined
   
   /** Required. Type of filter. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Required. Specify desired `base compensation entry's` CompensationInfo.CompensationUnit. */
-  var units: js.UndefOr[js.Array[String]] = js.native
+  var units: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CompensationFilter {
   

@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTTPHeader describes a custom header to be used in HTTP probes
   */
-@js.native
 trait HTTPHeader extends StObject {
   
   /**
     * The header field name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The header field value
     */
-  var value: String = js.native
+  var value: String
 }
 object HTTPHeader {
   

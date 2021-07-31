@@ -4,26 +4,29 @@ import typings.cssFontLoadingModule.mod.FontFaceLoadStatus
 import typings.cssFontLoadingModule.mod.FontFaceSetLoadStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssFontLoadingModuleStrings {
   
   @js.native
-  sealed trait error extends FontFaceLoadStatus
+  sealed trait error
+    extends StObject
+       with FontFaceLoadStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait loaded
-    extends FontFaceLoadStatus
+    extends StObject
+       with FontFaceLoadStatus
        with FontFaceSetLoadStatus
   @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
   sealed trait loading
-    extends FontFaceLoadStatus
+    extends StObject
+       with FontFaceLoadStatus
        with FontFaceSetLoadStatus
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
@@ -39,7 +42,9 @@ object cssFontLoadingModuleStrings {
   def loadingerror: loadingerror = "loadingerror".asInstanceOf[loadingerror]
   
   @js.native
-  sealed trait unloaded extends FontFaceLoadStatus
+  sealed trait unloaded
+    extends StObject
+       with FontFaceLoadStatus
   @scala.inline
   def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
 }

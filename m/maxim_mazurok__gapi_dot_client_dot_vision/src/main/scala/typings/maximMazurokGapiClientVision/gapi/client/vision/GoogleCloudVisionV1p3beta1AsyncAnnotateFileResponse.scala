@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse extends StObject {
   
   /** The output location and metadata from AsyncAnnotateFileRequest. */
-  var outputConfig: js.UndefOr[GoogleCloudVisionV1p3beta1OutputConfig] = js.native
+  var outputConfig: js.UndefOr[GoogleCloudVisionV1p3beta1OutputConfig] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse {
   

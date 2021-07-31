@@ -10,9 +10,9 @@ Create a badge that is fixed to another element. This is generally used for noti
 | ------------------ | :-------------: |
 | Full name          | @react-md/badge |
 | Keywords           | accessibility, a11y, react-md, material design, react, badge, component, components |
-| # releases         | 27 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 5060 |
+| # downloads        | 15225 |
 | # stars            | 0 |
 
 ## Links

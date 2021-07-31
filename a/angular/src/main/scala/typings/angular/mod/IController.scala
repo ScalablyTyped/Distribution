@@ -3,7 +3,6 @@ package typings.angular.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   * https://docs.angularjs.org/guide/component
   */
-@js.native
 trait IController
-  extends /**
+  extends StObject
+     with /**
   * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
   */
 /* name */ StringDictionary[js.Any] {
@@ -28,7 +27,7 @@ trait IController
     * you must store the previous value(s) for comparison to the current values.
     */
   @JSName("$doCheck")
-  var $doCheck: js.UndefOr[js.Function0[Unit]] = js.native
+  var $doCheck: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called whenever one-way bindings are updated. The onChangesObj is a hash whose keys are the names of the bound
@@ -37,14 +36,14 @@ trait IController
     * cloning the bound value to prevent accidental mutation of the outer value.
     */
   @JSName("$onChanges")
-  var $onChanges: js.UndefOr[js.Function1[/* onChangesObj */ IOnChangesObject, Unit]] = js.native
+  var $onChanges: js.UndefOr[js.Function1[/* onChangesObj */ IOnChangesObject, Unit]] = js.undefined
   
   /**
     * Called on a controller when its containing scope is destroyed. Use this hook for releasing external resources,
     * watches and event handlers.
     */
   @JSName("$onDestroy")
-  var $onDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+  var $onDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called on each controller after all the controllers on an element have been constructed and had their bindings
@@ -52,7 +51,7 @@ trait IController
     * place to put initialization code for your controller.
     */
   @JSName("$onInit")
-  var $onInit: js.UndefOr[js.Function0[Unit]] = js.native
+  var $onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called after this controller's element and its children have been linked. Similar to the post-link function this
@@ -63,7 +62,7 @@ trait IController
     * different in Angular 1 there is no direct mapping and care should be taken when upgrading.
     */
   @JSName("$postLink")
-  var $postLink: js.UndefOr[js.Function0[Unit]] = js.native
+  var $postLink: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IController {
   

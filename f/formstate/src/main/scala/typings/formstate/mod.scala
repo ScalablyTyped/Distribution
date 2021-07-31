@@ -5,10 +5,13 @@ import typings.formstate.formStateMod.ValidatableMapOrArray
 import typings.formstate.typesMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("formstate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("formstate", "FieldState")
   @js.native
@@ -35,7 +38,6 @@ object mod {
     getFields: js.Function0[TValue]) = this()
   }
   
-  @JSImport("formstate", "applyValidators")
-  @js.native
-  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = js.native
+  @scala.inline
+  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyValidators")(value.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String | Null]]]
 }

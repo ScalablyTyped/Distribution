@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List container versions response.
   */
-@js.native
 trait SchemaListContainerVersionsResponse extends StObject {
   
   /**
     * All container version headers of a GTM Container.
     */
-  var containerVersionHeader: js.UndefOr[js.Array[SchemaContainerVersionHeader]] = js.native
+  var containerVersionHeader: js.UndefOr[js.Array[SchemaContainerVersionHeader]] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListContainerVersionsResponse {
   

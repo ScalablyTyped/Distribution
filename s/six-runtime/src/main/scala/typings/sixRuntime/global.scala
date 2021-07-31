@@ -2,7 +2,6 @@ package typings.sixRuntime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,7 +15,15 @@ object global {
         @JSGlobal("Six.plugins.dataProvider.DataProvider")
         @js.native
         abstract class DataProvider ()
-          extends typings.sixRuntime.Six.plugins.dataProvider.DataProvider
+          extends StObject
+             with typings.sixRuntime.Six.plugins.dataProvider.DataProvider {
+          
+          /* CompleteClass */
+          override def execute(ctx: js.Object, args: js.Any): js.Any = js.native
+          
+          /* CompleteClass */
+          override def prepare(ctx: js.Object, depsRes: js.Object): js.Any = js.native
+        }
         object DataProvider {
           
           @JSGlobal("Six.plugins.dataProvider.DataProvider")

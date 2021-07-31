@@ -3,24 +3,24 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.PDF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportSettingsPDF extends ExportSettings {
+trait ExportSettingsPDF
+  extends StObject
+     with ExportSettings {
   
-  val contentsOnly: js.UndefOr[Boolean] = js.native
+  val contentsOnly: js.UndefOr[Boolean] = js.undefined
   
-  val format: PDF = js.native
+  val format: PDF
   
   // defaults to true
-  val suffix: js.UndefOr[String] = js.native
+  val suffix: js.UndefOr[String] = js.undefined
 }
 object ExportSettingsPDF {
   
   @scala.inline
-  def apply(format: PDF): ExportSettingsPDF = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  def apply(): ExportSettingsPDF = {
+    val __obj = js.Dynamic.literal(format = "PDF")
     __obj.asInstanceOf[ExportSettingsPDF]
   }
   

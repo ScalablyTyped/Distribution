@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3InitiateRestoreObjectOperation extends StObject {
   
   /**
     * 
     */
-  var ExpirationInDays: js.UndefOr[S3ExpirationInDays] = js.native
+  var ExpirationInDays: js.UndefOr[S3ExpirationInDays] = js.undefined
   
   /**
     * 
     */
-  var GlacierJobTier: js.UndefOr[S3GlacierJobTier] = js.native
+  var GlacierJobTier: js.UndefOr[S3GlacierJobTier] = js.undefined
 }
 object S3InitiateRestoreObjectOperation {
   

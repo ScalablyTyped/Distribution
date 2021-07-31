@@ -2,22 +2,21 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElseClause
-  extends Base[typings.luaparse.luaparseStrings.ElseClause]
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.ElseClause]
      with _Node {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
 }
 object ElseClause {
   
   @scala.inline
-  def apply(body: js.Array[Statement], `type`: typings.luaparse.luaparseStrings.ElseClause): ElseClause = {
+  def apply(body: js.Array[Statement]): ElseClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElseClause")
     __obj.asInstanceOf[ElseClause]
   }
   

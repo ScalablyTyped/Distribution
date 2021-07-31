@@ -2,36 +2,34 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTrackerSummary extends StObject {
   
   /**
     * The date and time (in Unix time) that the event tracker was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the event tracker.
     */
-  var eventTrackerArn: js.UndefOr[Arn] = js.native
+  var eventTrackerArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The date and time (in Unix time) that the event tracker was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the event tracker.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the event tracker. An event tracker can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object EventTrackerSummary {
   

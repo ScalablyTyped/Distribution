@@ -7,37 +7,35 @@ import typings.hlsParser.hlsParserStrings.`CLOSED-CAPTIONS`
 import typings.hlsParser.mod.types.Rendition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AverageBandwidth extends StObject {
   
-  var audio: js.UndefOr[js.Array[Rendition[AUDIO]]] = js.native
+  var audio: js.UndefOr[js.Array[Rendition[AUDIO]]] = js.undefined
   
-  var averageBandwidth: js.UndefOr[Double] = js.native
+  var averageBandwidth: js.UndefOr[Double] = js.undefined
   
-  var bandwidth: Double = js.native
+  var bandwidth: Double
   
-  var closedCaptions: js.UndefOr[js.Array[Rendition[`CLOSED-CAPTIONS`]]] = js.native
+  var closedCaptions: js.UndefOr[js.Array[Rendition[`CLOSED-CAPTIONS`]]] = js.undefined
   
-  var codecs: js.UndefOr[String] = js.native
+  var codecs: js.UndefOr[String] = js.undefined
   
-  var currentRenditions: js.UndefOr[Audio] = js.native
+  var currentRenditions: js.UndefOr[Audio] = js.undefined
   
-  var frameRate: js.UndefOr[Double] = js.native
+  var frameRate: js.UndefOr[Double] = js.undefined
   
-  var hdcpLevel: js.UndefOr[String] = js.native
+  var hdcpLevel: js.UndefOr[String] = js.undefined
   
-  var isIFrameOnly: js.UndefOr[Boolean] = js.native
+  var isIFrameOnly: js.UndefOr[Boolean] = js.undefined
   
-  var resolution: js.UndefOr[Height] = js.native
+  var resolution: js.UndefOr[Height] = js.undefined
   
-  var subtitles: js.UndefOr[js.Array[Rendition[SUBTITLES]]] = js.native
+  var subtitles: js.UndefOr[js.Array[Rendition[SUBTITLES]]] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
   
-  var video: js.UndefOr[js.Array[Rendition[VIDEO]]] = js.native
+  var video: js.UndefOr[js.Array[Rendition[VIDEO]]] = js.undefined
 }
 object AverageBandwidth {
   

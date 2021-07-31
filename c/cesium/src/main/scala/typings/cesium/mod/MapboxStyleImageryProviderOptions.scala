@@ -2,44 +2,44 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapboxStyleImageryProviderOptions extends MapboxProviderCommonOptions {
+trait MapboxStyleImageryProviderOptions
+  extends StObject
+     with MapboxProviderCommonOptions {
   
   /**
     * The public access token for the imagery.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * Determines if tiles are rendered at a @2x scale factor
     */
-  var scaleFactor: js.UndefOr[Boolean] = js.native
+  var scaleFactor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Mapbox Style ID.
     */
-  var styleId: String = js.native
+  var styleId: String
   
   /**
     * The size of the image tiles
     * @default 512
     */
-  var tilesize: js.UndefOr[Double] = js.native
+  var tilesize: js.UndefOr[Double] = js.undefined
   
   /**
     * The Mapbox server url
     * @default 'https://api.mapbox.com/styles/v1/'
     */
-  var url: js.UndefOr[Resource | String] = js.native
+  var url: js.UndefOr[Resource | String] = js.undefined
   
   /**
     * The username of the map account.
     * @default 'mapbox'
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object MapboxStyleImageryProviderOptions {
   

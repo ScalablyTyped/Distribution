@@ -2,21 +2,19 @@ package typings.bmpJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Blue extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var quad: Double = js.native
+    var quad: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object Blue {
     

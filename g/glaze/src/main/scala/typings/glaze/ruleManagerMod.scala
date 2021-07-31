@@ -5,24 +5,37 @@ import typings.std.Map
 import typings.treat.typesMod.ClassRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleManagerMod {
   
   @JSImport("glaze/dist-types/RuleManager", "NullRuleManager")
   @js.native
-  class NullRuleManager () extends RuleManager {
+  class NullRuleManager ()
+    extends StObject
+       with RuleManager {
     
     def decreaseUsage(): Unit = js.native
+    /* CompleteClass */
+    override def decreaseUsage(className: ClassRef, byAmount: Double): Unit = js.native
     
     def increaseUsage(): Unit = js.native
+    /* CompleteClass */
+    override def increaseUsage(className: ClassRef, cssText: js.Function0[String]): Unit = js.native
   }
   
   @JSImport("glaze/dist-types/RuleManager", "OptimizedRuleManager")
   @js.native
-  class OptimizedRuleManager protected () extends RuleManager {
+  class OptimizedRuleManager protected ()
+    extends StObject
+       with RuleManager {
     def this(injector: StyleInjector, initialRuleIndexesByClassName: Map[ClassRef, Double]) = this()
+    
+    /* CompleteClass */
+    override def decreaseUsage(className: ClassRef, byAmount: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def increaseUsage(className: ClassRef, cssText: js.Function0[String]): Unit = js.native
     
     var injector: js.Any = js.native
     
@@ -31,12 +44,11 @@ object ruleManagerMod {
     var usageCountsByClassName: js.Any = js.native
   }
   
-  @js.native
   trait RuleManager extends StObject {
     
-    def decreaseUsage(className: ClassRef, byAmount: Double): Unit = js.native
+    def decreaseUsage(className: ClassRef, byAmount: Double): Unit
     
-    def increaseUsage(className: ClassRef, cssText: js.Function0[String]): Unit = js.native
+    def increaseUsage(className: ClassRef, cssText: js.Function0[String]): Unit
   }
   object RuleManager {
     

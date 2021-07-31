@@ -11,8 +11,8 @@ a reader for nodejs buffer
 | Full name          | buffer-reader |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 16258 |
+| # dependents       | 32 |
+| # downloads        | 19270 |
 | # stars            | 2 |
 
 ## Links

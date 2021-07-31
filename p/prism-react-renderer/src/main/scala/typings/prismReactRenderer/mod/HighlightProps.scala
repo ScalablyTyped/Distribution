@@ -3,21 +3,19 @@ package typings.prismReactRenderer.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightProps extends StObject {
   
-  var Prism: PrismLib = js.native
+  var Prism: PrismLib
   
-  def children(props: RenderProps): ReactNode = js.native
+  def children(props: RenderProps): ReactNode
   
-  var code: String = js.native
+  var code: String
   
-  var language: Language = js.native
+  var language: Language
   
-  var theme: js.UndefOr[PrismTheme] = js.native
+  var theme: js.UndefOr[PrismTheme] = js.undefined
 }
 object HighlightProps {
   

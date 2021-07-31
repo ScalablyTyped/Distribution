@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-@js.native
 trait PlusPaymentOrderStatementIAP extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait PlusPaymentOrderStatementIAP extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var productid: js.UndefOr[String] = js.native
+  var productid: js.UndefOr[String] = js.undefined
   
   /**
     * 商品数量
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /**
     * 购买用户名称
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object PlusPaymentOrderStatementIAP {
   

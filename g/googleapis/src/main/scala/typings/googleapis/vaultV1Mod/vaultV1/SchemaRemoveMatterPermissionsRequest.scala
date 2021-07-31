@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remove an account as a matter collaborator.
   */
-@js.native
 trait SchemaRemoveMatterPermissionsRequest extends StObject {
   
   /**
     * The account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
 }
 object SchemaRemoveMatterPermissionsRequest {
   

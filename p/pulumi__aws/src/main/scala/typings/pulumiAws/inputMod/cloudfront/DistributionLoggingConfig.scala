@@ -3,29 +3,27 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionLoggingConfig extends StObject {
   
   /**
     * The Amazon S3 bucket to store the access logs in, for
     * example, `myawslogbucket.s3.amazonaws.com`.
     */
-  var bucket: Input[String] = js.native
+  var bucket: Input[String]
   
   /**
     * Specifies whether you want CloudFront to
     * include cookies in access logs (default: `false`).
     */
-  var includeCookies: js.UndefOr[Input[Boolean]] = js.native
+  var includeCookies: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * An optional string that you want CloudFront to prefix
     * to the access log filenames for this distribution, for example, `myprefix/`.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
 }
 object DistributionLoggingConfig {
   

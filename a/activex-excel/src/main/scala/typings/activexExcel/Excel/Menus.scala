@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,9 +10,9 @@ trait Menus extends StObject {
   def apply(Index: js.Any): Menu = js.native
   
   def Add(Caption: String): Menu = js.native
-  def Add(Caption: String, Before: js.UndefOr[scala.Nothing], Restore: js.Any): Menu = js.native
   def Add(Caption: String, Before: js.Any): Menu = js.native
   def Add(Caption: String, Before: js.Any, Restore: js.Any): Menu = js.native
+  def Add(Caption: String, Before: Unit, Restore: js.Any): Menu = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

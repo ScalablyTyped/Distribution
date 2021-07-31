@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpProductInfoHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the User-Agent HTTP header on an HTTP request. */
 @js.native
-trait HttpProductInfoHeaderValueCollection extends Array[HttpProductInfoHeaderValue] {
+trait HttpProductInfoHeaderValueCollection
+  extends StObject
+     with Array[HttpProductInfoHeaderValue] {
   
   /**
     * Adds a new HttpProductInfoHeaderValue item to the end of the collection.

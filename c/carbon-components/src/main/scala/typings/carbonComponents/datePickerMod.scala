@@ -3,15 +3,46 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
   
   @JSImport("carbon-components/components/date-picker/date-picker", JSImport.Default)
   @js.native
-  class default protected () extends DatePicker {
+  class default protected ()
+    extends StObject
+       with DatePicker {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _addInputLogic(input: js.Any, index: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _formatDate(date: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _handleBlur(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleFocus(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _initDatePicker(`type`: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _leftArrowHTML(): String = js.native
+    
+    /* CompleteClass */
+    override def _rightArrowHTML(): String = js.native
+    
+    /* CompleteClass */
+    override def _updateClassNames(hasCalendarContainerSelectedDates: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _updateInputFields(selectedDates: js.Any, `type`: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def release(): js.Any = js.native
   }
   object default {
     
@@ -28,28 +59,27 @@ object datePickerMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait DatePicker extends StObject {
+  - Dropped any */ trait DatePicker extends StObject {
     
-    def _addInputLogic(input: js.Any, index: js.Any): Unit = js.native
+    def _addInputLogic(input: js.Any, index: js.Any): Unit
     
-    def _formatDate(date: js.Any): js.Any = js.native
+    def _formatDate(date: js.Any): js.Any
     
-    def _handleBlur(event: js.Any): Unit = js.native
+    def _handleBlur(event: js.Any): Unit
     
-    def _handleFocus(): Unit = js.native
+    def _handleFocus(): Unit
     
-    def _initDatePicker(`type`: js.Any): js.Any = js.native
+    def _initDatePicker(`type`: js.Any): js.Any
     
-    def _leftArrowHTML(): String = js.native
+    def _leftArrowHTML(): String
     
-    def _rightArrowHTML(): String = js.native
+    def _rightArrowHTML(): String
     
-    def _updateClassNames(hasCalendarContainerSelectedDates: js.Any): Unit = js.native
+    def _updateClassNames(hasCalendarContainerSelectedDates: js.Any): Unit
     
-    def _updateInputFields(selectedDates: js.Any, `type`: js.Any): Unit = js.native
+    def _updateInputFields(selectedDates: js.Any, `type`: js.Any): Unit
     
-    def release(): js.Any = js.native
+    def release(): js.Any
   }
   object DatePicker {
     

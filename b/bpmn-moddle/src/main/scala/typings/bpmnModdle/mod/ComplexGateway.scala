@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComplexGateway extends Gateway {
+trait ComplexGateway
+  extends StObject
+     with Gateway {
   
-  var default: SequenceFlow = js.native
+  var default: SequenceFlow
   
-  var activationCondition: Expression = js.native
+  var activationCondition: Expression
 }
 object ComplexGateway {
   

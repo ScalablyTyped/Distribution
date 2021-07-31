@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrieveTapeRecoveryPointInput extends StObject {
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * The Amazon Resource Name (ARN) of the virtual tape for which you want to retrieve the recovery point.
     */
-  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN = js.native
+  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN
 }
 object RetrieveTapeRecoveryPointInput {
   

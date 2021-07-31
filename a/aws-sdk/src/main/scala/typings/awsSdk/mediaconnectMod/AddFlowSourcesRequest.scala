@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFlowSourcesRequest extends StObject {
   
   /**
     * The flow that you want to mutate.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * A list of sources that you want to add.
     */
-  var Sources: listOfSetSourceRequest = js.native
+  var Sources: listOfSetSourceRequest
 }
 object AddFlowSourcesRequest {
   

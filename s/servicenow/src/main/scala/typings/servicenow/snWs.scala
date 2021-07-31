@@ -8,7 +8,6 @@ import typings.servicenow.servicenowStrings.basic
 import typings.servicenow.servicenowStrings.elevated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snWs {
@@ -73,46 +72,45 @@ object snWs {
     def setStringParameterNoEscape(name: String, value: String): Unit = js.native
   }
   
-  @js.native
   trait SOAPMessageV2 extends StObject {
     
-    def execute(): SOAPResponseV2 = js.native
+    def execute(): SOAPResponseV2
     
-    def executeAsync(): SOAPResponseV2 = js.native
+    def executeAsync(): SOAPResponseV2
     
-    def getEndpoint(): String = js.native
+    def getEndpoint(): String
     
-    def getRequestBody(): String = js.native
+    def getRequestBody(): String
     
-    def getRequestHeader(headerName: String): String = js.native
+    def getRequestHeader(headerName: String): String
     
-    def getRequestHeaders(): js.Object = js.native
+    def getRequestHeaders(): js.Object
     
-    def setBasicAuth(userName: String, userPass: String): Unit = js.native
+    def setBasicAuth(userName: String, userPass: String): Unit
     
-    def setEccCorrelator(correlator: String): Unit = js.native
+    def setEccCorrelator(correlator: String): Unit
     
-    def setEccParameter(name: String, value: String): Unit = js.native
+    def setEccParameter(name: String, value: String): Unit
     
-    def setEndpoint(endpoint: String): Unit = js.native
+    def setEndpoint(endpoint: String): Unit
     
-    def setHttpMethod(method: String): Unit = js.native
+    def setHttpMethod(method: String): Unit
     
-    def setHttpTimeout(timeoutMs: Double): Unit = js.native
+    def setHttpTimeout(timeoutMs: Double): Unit
     
-    def setMIDServer(midServer: String): Unit = js.native
+    def setMIDServer(midServer: String): Unit
     
-    def setMutualAuth(profileName: String): Unit = js.native
+    def setMutualAuth(profileName: String): Unit
     
-    def setRequestBody(body: String): Unit = js.native
+    def setRequestBody(body: String): Unit
     
-    def setRequestHeader(name: String, value: String): Unit = js.native
+    def setRequestHeader(name: String, value: String): Unit
     
-    def setStringParameter(name: String, value: String): Unit = js.native
+    def setStringParameter(name: String, value: String): Unit
     
-    def setStringParameterNoEscape(name: String, value: String): Unit = js.native
+    def setStringParameterNoEscape(name: String, value: String): Unit
     
-    def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit = js.native
+    def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit
   }
   object SOAPMessageV2 {
     

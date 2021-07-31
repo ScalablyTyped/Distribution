@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsCheckTokenResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsCheckTokenEndpoint extends StObject {
   
-  var parameters: AppsCheckTokenEndpoint = js.native
+  var parameters: AppsCheckTokenEndpoint
   
-  var request: AppsCheckTokenRequestOptions = js.native
+  var request: AppsCheckTokenRequestOptions
   
-  var response: OctokitResponse[AppsCheckTokenResponseData] = js.native
+  var response: OctokitResponse[AppsCheckTokenResponseData]
 }
 object ParametersAppsCheckTokenEndpoint {
   

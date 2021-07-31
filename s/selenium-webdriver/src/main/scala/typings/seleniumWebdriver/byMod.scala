@@ -5,26 +5,35 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod._Locator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object byMod {
   
+  @JSImport("selenium-webdriver/lib/by", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("selenium-webdriver/lib/by", "By")
   @js.native
-  class By protected () extends _Locator {
+  class By protected ()
+    extends StObject
+       with _Locator {
     /**
       * @param {string} using the name of the location strategy to use.
       * @param {string} value the value to search for.
       */
-    def this(using: String, value: String) = this()
+    def this(`using`: String, value: String) = this()
     
-    var using: String = js.native
+    var `using`: String = js.native
     
     var value: String = js.native
   }
   /* static members */
   object By {
+    
+    @JSImport("selenium-webdriver/lib/by", "By")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Locates elements that have a specific class name.
@@ -34,9 +43,8 @@ object byMod {
       * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
       * @see http://www.w3.org/TR/CSS2/selector.html#class-html
       */
-    @JSImport("selenium-webdriver/lib/by", "By.className")
-    @js.native
-    def className(name: String): By = js.native
+    @scala.inline
+    def className(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements using a CSS selector.
@@ -45,9 +53,8 @@ object byMod {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/CSS2/selector.html
       */
-    @JSImport("selenium-webdriver/lib/by", "By.css")
-    @js.native
-    def css(selector: String): By = js.native
+    @scala.inline
+    def css(selector: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates eleemnts by the ID attribute. This locator uses the CSS selector
@@ -56,9 +63,8 @@ object byMod {
       * @param {string} id The ID to search for.
       * @return {!By} The new locator.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.id")
-    @js.native
-    def id(id: String): By = js.native
+    @scala.inline
+    def id(id: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates an elements by evaluating a
@@ -70,12 +76,10 @@ object byMod {
       * @return {function(!./WebDriver): !./Promise}
       *     A new JavaScript-based locator function.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.js")
-    @js.native
-    def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
-    @JSImport("selenium-webdriver/lib/by", "By.js")
-    @js.native
-    def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+    @scala.inline
+    def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+    @scala.inline
+    def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
     
     /**
       * Locates link elements whose
@@ -85,9 +89,8 @@ object byMod {
       * @param {string} text The link text to search for.
       * @return {!By} The new locator.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.linkText")
-    @js.native
-    def linkText(text: String): By = js.native
+    @scala.inline
+    def linkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements whose `name` attribute has the given value.
@@ -95,9 +98,8 @@ object byMod {
       * @param {string} name The name attribute to search for.
       * @return {!By} The new locator.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.name")
-    @js.native
-    def name(name: String): By = js.native
+    @scala.inline
+    def name(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates link elements whose
@@ -107,9 +109,8 @@ object byMod {
       * @param {string} text The substring to check for in a link's visible text.
       * @return {!By} The new locator.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.partialLinkText")
-    @js.native
-    def partialLinkText(text: String): By = js.native
+    @scala.inline
+    def partialLinkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements with a given tag name.
@@ -118,9 +119,8 @@ object byMod {
       * @return {!By} The new locator.
       * @deprecated Use {@link By.css() By.css(tagName)} instead.
       */
-    @JSImport("selenium-webdriver/lib/by", "By.tagName")
-    @js.native
-    def tagName(name: String): By = js.native
+    @scala.inline
+    def tagName(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements matching a XPath selector. Care should be taken when
@@ -133,14 +133,12 @@ object byMod {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/xpath/
       */
-    @JSImport("selenium-webdriver/lib/by", "By.xpath")
-    @js.native
-    def xpath(xpath: String): By = js.native
+    @scala.inline
+    def xpath(xpath: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[By]
   }
   
-  @JSImport("selenium-webdriver/lib/by", "checkedLocator")
-  @js.native
-  def checkedLocator(locator: Locator): By = js.native
+  @scala.inline
+  def checkedLocator(locator: Locator): By = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedLocator")(locator.asInstanceOf[js.Any]).asInstanceOf[By]
   
   /* Rewritten from type alias, can be one of: 
     - typings.seleniumWebdriver.anon.ClassName
@@ -153,7 +151,9 @@ object byMod {
     - typings.seleniumWebdriver.anon.TagName
     - typings.seleniumWebdriver.anon.Xpath
   */
-  trait ByHash extends _Locator
+  trait ByHash
+    extends StObject
+       with _Locator
   object ByHash {
     
     @scala.inline

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeDragAndDropSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgTreeDragAndDropSettings
     * Gets whether the widget will accept drag and drop from other controls.
     *
     */
-  var allowDrop: js.UndefOr[Boolean] = js.native
+  var allowDrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the containment for the drag helper. The area inside of which thehelper is contained would be scrollable while dragging.
@@ -30,31 +29,31 @@ trait IgTreeDragAndDropSettings
     * "string" Possible values: "parent", "document", "window".
     * "array" An array defining a bounding box in the form [ x1, y1, x2, y2 ].
     */
-  var containment: js.UndefOr[Boolean | String | js.Object | js.Array[_]] = js.native
+  var containment: js.UndefOr[Boolean | String | js.Object | js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the HTML markup for the "copy after" helper.
     *
     */
-  var copyAfterMarkup: js.UndefOr[String] = js.native
+  var copyAfterMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "copy before" helper.
     *
     */
-  var copyBeforeMarkup: js.UndefOr[String] = js.native
+  var copyBeforeMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "copy between" helper.
     *
     */
-  var copyBetweenMarkup: js.UndefOr[String] = js.native
+  var copyBetweenMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "copy to" helper.
     *
     */
-  var copyToMarkup: js.UndefOr[String] = js.native
+  var copyToMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the method for custom drop point validation. Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context (this) of the function is the drag element.
@@ -64,7 +63,7 @@ trait IgTreeDragAndDropSettings
     * "function" A function that will be used for validating drop points.
     * "null" Only built-in validation is applied.
     */
-  var customDropValidation: js.UndefOr[js.Function] = js.native
+  var customDropValidation: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Gets the drag and drop mode.
@@ -75,32 +74,32 @@ trait IgTreeDragAndDropSettings
     * "copy" Makes a copy of the dragged node at the drop location.
     * "move" Moves the dragged node at the drop location.
     */
-  var dragAndDropMode: js.UndefOr[String] = js.native
+  var dragAndDropMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque.
     *
     */
-  var dragOpacity: js.UndefOr[Double] = js.native
+  var dragOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the delay between mousedown and the start of the actual drag. Smaller values make the nodes
     * more sensitive to drag and may interfere with selection.
     *
     */
-  var dragStartDelay: js.UndefOr[Double] = js.native
+  var dragStartDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the delay after hovering a parent node before expanding that node during drag when [expandOnDragOver](ui.igtree#options:dragAndDropSettings.expandOnDragOver) is set to true.
     *
     */
-  var expandDelay: js.UndefOr[Double] = js.native
+  var expandDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets whether when dragging over a collapsed node with children will trigger the node to expand.
     *
     */
-  var expandOnDragOver: js.UndefOr[Boolean] = js.native
+  var expandOnDragOver: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the type of helper to be rendered for the drag operation.
@@ -110,55 +109,55 @@ trait IgTreeDragAndDropSettings
     * "function" A function that will return a DOMElement to use while dragging.
     * "default" would render the default igTree helper.
     */
-  var helper: js.UndefOr[js.Function | String] = js.native
+  var helper: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * Gets the HTML markup for the invalid helper.
     *
     */
-  var invalidMoveToMarkup: js.UndefOr[String] = js.native
+  var invalidMoveToMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "move after" helper.
     *
     */
-  var moveAfterMarkup: js.UndefOr[String] = js.native
+  var moveAfterMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "move before" helper.
     *
     */
-  var moveBeforeMarkup: js.UndefOr[String] = js.native
+  var moveBeforeMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "move between" helper.
     *
     */
-  var moveBetweenMarkup: js.UndefOr[String] = js.native
+  var moveBetweenMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the HTML markup for the "move to" helper.
     *
     */
-  var moveToMarkup: js.UndefOr[String] = js.native
+  var moveToMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * Gets whether the helper would revert to its original position upon an invalid drop.
     *
     */
-  var revert: js.UndefOr[Boolean] = js.native
+  var revert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the duration of the revert animation.
     *
     */
-  var revertDuration: js.UndefOr[Double] = js.native
+  var revertDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the z-index that would be set for the drag helper.
     *
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IgTreeDragAndDropSettings {
   
@@ -178,7 +177,7 @@ object IgTreeDragAndDropSettings {
     def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
     
     @scala.inline
-    def setContainment(value: Boolean | String | js.Object | js.Array[_]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    def setContainment(value: Boolean | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)

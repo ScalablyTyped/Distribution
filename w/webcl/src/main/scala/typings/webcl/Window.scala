@@ -3,13 +3,11 @@ package typings.webcl
 import typings.webcl.WEBCL.WebCL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var webcl: WebCL = js.native
+  var webcl: WebCL
 }
 object Window {
   

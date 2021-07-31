@@ -4,10 +4,13 @@ import typings.webcola.layoutMod.EventType
 import typings.webcola.layoutMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adaptorMod {
+  
+  @JSImport("webcola/dist/src/adaptor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webcola/dist/src/adaptor", "LayoutAdaptor")
   @js.native
@@ -28,7 +31,6 @@ object adaptorMod {
     def on(eventType: EventType, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @JSImport("webcola/dist/src/adaptor", "adaptor")
-  @js.native
-  def adaptor(options: js.Any): LayoutAdaptor = js.native
+  @scala.inline
+  def adaptor(options: js.Any): LayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptor")(options.asInstanceOf[js.Any]).asInstanceOf[LayoutAdaptor]
 }

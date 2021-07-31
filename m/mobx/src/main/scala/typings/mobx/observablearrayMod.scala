@@ -8,75 +8,58 @@ import typings.mobx.utilsMod.Lambda
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observablearrayMod {
   
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
+  @JSImport("mobx/lib/types/observablearray", JSImport.Namespace)
   @js.native
-  def createObservableArray[T](initialValues: js.UndefOr[scala.Nothing], enhancer: IEnhancer[T]): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](
-    initialValues: js.UndefOr[scala.Nothing],
-    enhancer: IEnhancer[T],
-    name: js.UndefOr[scala.Nothing],
-    owned: Boolean
-  ): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](initialValues: js.UndefOr[scala.Nothing], enhancer: IEnhancer[T], name: String): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](initialValues: js.UndefOr[scala.Nothing], enhancer: IEnhancer[T], name: String, owned: Boolean): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](initialValues: js.Array[_], enhancer: IEnhancer[T]): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](
-    initialValues: js.Array[_],
-    enhancer: IEnhancer[T],
-    name: js.UndefOr[scala.Nothing],
-    owned: Boolean
-  ): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](initialValues: js.Array[_], enhancer: IEnhancer[T], name: String): IObservableArray[T] = js.native
-  @JSImport("mobx/lib/types/observablearray", "createObservableArray")
-  @js.native
-  def createObservableArray[T](initialValues: js.Array[_], enhancer: IEnhancer[T], name: String, owned: Boolean): IObservableArray[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/types/observablearray", "isObservableArray")
-  @js.native
-  def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ Boolean = js.native
+  @scala.inline
+  def createObservableArray[T](initialValues: js.Array[js.Any], enhancer: IEnhancer[T]): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: js.Array[js.Any], enhancer: IEnhancer[T], name: String): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: js.Array[js.Any], enhancer: IEnhancer[T], name: String, owned: Boolean): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any], owned.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: js.Array[js.Any], enhancer: IEnhancer[T], name: Unit, owned: Boolean): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any], owned.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: Unit, enhancer: IEnhancer[T]): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: Unit, enhancer: IEnhancer[T], name: String): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: Unit, enhancer: IEnhancer[T], name: String, owned: Boolean): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any], owned.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+  @scala.inline
+  def createObservableArray[T](initialValues: Unit, enhancer: IEnhancer[T], name: Unit, owned: Boolean): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], enhancer.asInstanceOf[js.Any], name.asInstanceOf[js.Any], owned.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
   
-  @js.native
+  @scala.inline
+  def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableArray")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ Boolean]
+  
   trait IArrayChange[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var newValue: T = js.native
+    var newValue: T
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var oldValue: T = js.native
+    var oldValue: T
     
-    var `type`: update = js.native
+    var `type`: update
   }
   object IArrayChange {
     
     @scala.inline
-    def apply[T](index: Double, newValue: T, `object`: IObservableArray[T], oldValue: T, `type`: update): IArrayChange[T] = {
+    def apply[T](index: Double, newValue: T, `object`: IObservableArray[T], oldValue: T): IArrayChange[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IArrayChange[T]]
     }
     
     @scala.inline
-    implicit class IArrayChangeMutableBuilder[Self <: IArrayChange[_], T] (val x: Self with IArrayChange[T]) extends AnyVal {
+    implicit class IArrayChangeMutableBuilder[Self <: IArrayChange[?], T] (val x: Self & IArrayChange[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -95,22 +78,21 @@ object observablearrayMod {
     }
   }
   
-  @js.native
   trait IArraySplice[T] extends StObject {
     
-    var added: js.Array[T] = js.native
+    var added: js.Array[T]
     
-    var addedCount: Double = js.native
+    var addedCount: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var removed: js.Array[T] = js.native
+    var removed: js.Array[T]
     
-    var removedCount: Double = js.native
+    var removedCount: Double
     
-    var `type`: splice = js.native
+    var `type`: splice
   }
   object IArraySplice {
     
@@ -121,17 +103,16 @@ object observablearrayMod {
       index: Double,
       `object`: IObservableArray[T],
       removed: js.Array[T],
-      removedCount: Double,
-      `type`: splice
+      removedCount: Double
     ): IArraySplice[T] = {
       val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], removedCount = removedCount.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("splice")
       __obj.asInstanceOf[IArraySplice[T]]
     }
     
     @scala.inline
-    implicit class IArraySpliceMutableBuilder[Self <: IArraySplice[_], T] (val x: Self with IArraySplice[T]) extends AnyVal {
+    implicit class IArraySpliceMutableBuilder[Self <: IArraySplice[?], T] (val x: Self & IArraySplice[T]) extends AnyVal {
       
       @scala.inline
       def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
@@ -162,29 +143,28 @@ object observablearrayMod {
     }
   }
   
-  @js.native
   trait IArrayWillChange[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var newValue: T = js.native
+    var newValue: T
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var `type`: update = js.native
+    var `type`: update
   }
   object IArrayWillChange {
     
     @scala.inline
-    def apply[T](index: Double, newValue: T, `object`: IObservableArray[T], `type`: update): IArrayWillChange[T] = {
+    def apply[T](index: Double, newValue: T, `object`: IObservableArray[T]): IArrayWillChange[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IArrayWillChange[T]]
     }
     
     @scala.inline
-    implicit class IArrayWillChangeMutableBuilder[Self <: IArrayWillChange[_], T] (val x: Self with IArrayWillChange[T]) extends AnyVal {
+    implicit class IArrayWillChangeMutableBuilder[Self <: IArrayWillChange[?], T] (val x: Self & IArrayWillChange[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -200,37 +180,30 @@ object observablearrayMod {
     }
   }
   
-  @js.native
   trait IArrayWillSplice[T] extends StObject {
     
-    var added: js.Array[T] = js.native
+    var added: js.Array[T]
     
-    var index: Double = js.native
+    var index: Double
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var removedCount: Double = js.native
+    var removedCount: Double
     
-    var `type`: splice = js.native
+    var `type`: splice
   }
   object IArrayWillSplice {
     
     @scala.inline
-    def apply[T](
-      added: js.Array[T],
-      index: Double,
-      `object`: IObservableArray[T],
-      removedCount: Double,
-      `type`: splice
-    ): IArrayWillSplice[T] = {
+    def apply[T](added: js.Array[T], index: Double, `object`: IObservableArray[T], removedCount: Double): IArrayWillSplice[T] = {
       val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removedCount = removedCount.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("splice")
       __obj.asInstanceOf[IArrayWillSplice[T]]
     }
     
     @scala.inline
-    implicit class IArrayWillSpliceMutableBuilder[Self <: IArrayWillSplice[_], T] (val x: Self with IArrayWillSplice[T]) extends AnyVal {
+    implicit class IArrayWillSpliceMutableBuilder[Self <: IArrayWillSplice[?], T] (val x: Self & IArrayWillSplice[T]) extends AnyVal {
       
       @scala.inline
       def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
@@ -253,7 +226,9 @@ object observablearrayMod {
   }
   
   @js.native
-  trait IObservableArray[T] extends Array[T] {
+  trait IObservableArray[T]
+    extends StObject
+       with Array[T] {
     
     def clear(): js.Array[T] = js.native
     
@@ -270,9 +245,9 @@ object observablearrayMod {
     def replace(newItems: js.Array[T]): js.Array[T] = js.native
     
     def spliceWithArray(index: Double): js.Array[T] = js.native
-    def spliceWithArray(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: js.Array[T]): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double, newItems: js.Array[T]): js.Array[T] = js.native
+    def spliceWithArray(index: Double, deleteCount: Unit, newItems: js.Array[T]): js.Array[T] = js.native
     
     def toJS(): js.Array[T] = js.native
     

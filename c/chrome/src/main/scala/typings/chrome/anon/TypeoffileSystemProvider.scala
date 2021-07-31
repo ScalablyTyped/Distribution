@@ -20,7 +20,6 @@ import typings.chrome.chrome.fileSystemProvider.SourceTargetPathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.UnmountOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

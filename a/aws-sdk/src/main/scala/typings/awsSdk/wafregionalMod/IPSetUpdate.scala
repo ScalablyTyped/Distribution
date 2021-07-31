@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete an IP address with UpdateIPSet.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * The IP address type (IPV4 or IPV6) and the IP address range (in CIDR notation) that web requests originate from.
     */
-  var IPSetDescriptor: typings.awsSdk.wafregionalMod.IPSetDescriptor = js.native
+  var IPSetDescriptor: typings.awsSdk.wafregionalMod.IPSetDescriptor
 }
 object IPSetUpdate {
   

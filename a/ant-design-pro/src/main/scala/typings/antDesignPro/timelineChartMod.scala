@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineChartMod {
@@ -16,18 +15,17 @@ object timelineChartMod {
   class default ()
     extends Component[ITimelineChartProps, js.Any, js.Any]
   
-  @js.native
   trait ITimelineChartProps extends StObject {
     
-    var data: js.Array[Y1] = js.native
+    var data: js.Array[Y1]
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var titleMap: Y2 = js.native
+    var titleMap: Y2
   }
   object ITimelineChartProps {
     

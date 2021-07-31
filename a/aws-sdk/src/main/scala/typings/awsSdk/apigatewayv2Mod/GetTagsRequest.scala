@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTagsRequest extends StObject {
   
   /**
     * The resource ARN for the tag.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
 }
 object GetTagsRequest {
   

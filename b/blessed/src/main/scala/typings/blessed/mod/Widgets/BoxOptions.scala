@@ -2,13 +2,13 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoxOptions extends ScrollableTextOptions {
+trait BoxOptions
+  extends StObject
+     with ScrollableTextOptions {
   
-  var bindings: js.UndefOr[js.Any] = js.native
+  var bindings: js.UndefOr[js.Any] = js.undefined
 }
 object BoxOptions {
   

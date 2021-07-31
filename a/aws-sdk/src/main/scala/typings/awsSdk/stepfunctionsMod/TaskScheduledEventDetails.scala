@@ -2,41 +2,39 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskScheduledEventDetails extends StObject {
   
   /**
     * The maximum allowed duration between two heartbeats for the task.
     */
-  var heartbeatInSeconds: js.UndefOr[TimeoutInSeconds] = js.native
+  var heartbeatInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
   
   /**
     * The JSON data passed to the resource referenced in a task state. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var parameters: ConnectorParameters = js.native
+  var parameters: ConnectorParameters
   
   /**
     * The region of the scheduled task
     */
-  var region: Name = js.native
+  var region: Name
   
   /**
     * The service name of the resource in a task state.
     */
-  var resource: Name = js.native
+  var resource: Name
   
   /**
     * The action of the resource called by a task state.
     */
-  var resourceType: Name = js.native
+  var resourceType: Name
   
   /**
     * The maximum allowed duration of the task.
     */
-  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.native
+  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
 }
 object TaskScheduledEventDetails {
   

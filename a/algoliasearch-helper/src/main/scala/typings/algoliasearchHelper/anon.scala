@@ -6,21 +6,19 @@ import typings.algoliasearchHelper.mod.SearchParameters
 import typings.algoliasearchHelper.mod.SearchResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Avg extends StObject {
     
-    var avg: Double = js.native
+    var avg: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var sum: Double = js.native
+    var sum: Double
   }
   object Avg {
     
@@ -47,17 +45,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: SearchResults[_] = js.native
+    var content: SearchResults[js.Any]
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object Content {
     
     @scala.inline
-    def apply(content: SearchResults[_], state: SearchParameters): Content = {
+    def apply(content: SearchResults[js.Any], state: SearchParameters): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
@@ -66,17 +63,16 @@ object anon {
     implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setContent(value: SearchResults[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      def setContent(value: SearchResults[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setState(value: SearchParameters): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
   }
   object Error {
     
@@ -94,14 +90,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Facet extends StObject {
     
-    var facet: String = js.native
+    var facet: String
     
-    var query: String = js.native
+    var query: String
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object Facet {
     
@@ -125,19 +120,18 @@ object anon {
     }
   }
   
-  @js.native
   trait IsPageReset extends StObject {
     
-    var isPageReset: Boolean = js.native
+    var isPageReset: Boolean
     
-    var results: SearchResults[_] = js.native
+    var results: SearchResults[js.Any]
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object IsPageReset {
     
     @scala.inline
-    def apply(isPageReset: Boolean, results: SearchResults[_], state: SearchParameters): IsPageReset = {
+    def apply(isPageReset: Boolean, results: SearchResults[js.Any], state: SearchParameters): IsPageReset = {
       val __obj = js.Dynamic.literal(isPageReset = isPageReset.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsPageReset]
     }
@@ -149,17 +143,16 @@ object anon {
       def setIsPageReset(value: Boolean): Self = StObject.set(x, "isPageReset", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResults(value: SearchResults[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      def setResults(value: SearchResults[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setState(value: SearchParameters): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ObjectID extends StObject {
     
-    val objectID: String = js.native
+    val objectID: String
   }
   object ObjectID {
     
@@ -177,17 +170,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var results: SearchResults[_] = js.native
+    var results: SearchResults[js.Any]
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object Results {
     
     @scala.inline
-    def apply(results: SearchResults[_], state: SearchParameters): Results = {
+    def apply(results: SearchResults[js.Any], state: SearchParameters): Results = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
@@ -196,24 +188,23 @@ object anon {
     implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setResults(value: SearchResults[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      def setResults(value: SearchResults[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setState(value: SearchParameters): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ResultsState extends StObject {
     
-    var results: SearchResults[_] = js.native
+    var results: SearchResults[js.Any]
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object ResultsState {
     
     @scala.inline
-    def apply(results: SearchResults[_], state: SearchParameters): ResultsState = {
+    def apply(results: SearchResults[js.Any], state: SearchParameters): ResultsState = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultsState]
     }
@@ -222,17 +213,16 @@ object anon {
     implicit class ResultsStateMutableBuilder[Self <: ResultsState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setResults(value: SearchResults[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      def setResults(value: SearchResults[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setState(value: SearchParameters): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var state: SearchParameters = js.native
+    var state: SearchParameters
   }
   object State {
     

@@ -2,20 +2,18 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListLocationsResponse returns the list of all GKE locations and their
   * recommendation state.
   */
-@js.native
 trait SchemaListLocationsResponse extends StObject {
   
   /**
     * A full list of GKE locations.
     */
-  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
   
   /**
     * Only return ListLocationsResponse that occur after the page_token. This
@@ -23,7 +21,7 @@ trait SchemaListLocationsResponse extends StObject {
     * if that response token was set (which happens when listing more Locations
     * than fit in a single ListLocationsResponse).
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLocationsResponse {
   

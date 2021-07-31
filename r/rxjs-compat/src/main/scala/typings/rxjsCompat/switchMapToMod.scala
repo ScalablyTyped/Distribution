@@ -2,18 +2,19 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMapToMod {
   
-  @JSImport("rxjs-compat/operators/switchMapTo", "switchMapTo")
+  @JSImport("rxjs-compat/operators/switchMapTo", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def switchMapTo[T, R](
     observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs-compat/operators/switchMapTo", "switchMapTo")
-  @js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def switchMapTo[T, I, R](
     observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ js.Any,
     resultSelector: js.Function4[
@@ -23,5 +24,5 @@ object switchMapToMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

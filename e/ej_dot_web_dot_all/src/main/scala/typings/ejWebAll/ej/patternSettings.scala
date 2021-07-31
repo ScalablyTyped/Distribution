@@ -2,29 +2,27 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait patternSettings extends StObject {
   
-  var D: String = js.native
+  var D: String
   
-  var F: String = js.native
+  var F: String
   
-  var M: String = js.native
+  var M: String
   
-  var S: String = js.native
+  var S: String
   
-  var T: String = js.native
+  var T: String
   
-  var Y: String = js.native
+  var Y: String
   
-  var d: String = js.native
+  var d: String
   
-  var f: String = js.native
+  var f: String
   
-  var t: String = js.native
+  var t: String
 }
 object patternSettings {
   

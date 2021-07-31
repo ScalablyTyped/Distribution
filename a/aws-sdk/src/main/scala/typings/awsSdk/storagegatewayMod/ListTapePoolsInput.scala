@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTapePoolsInput extends StObject {
   
   /**
     * An optional number limit for the tape pools in the list returned by this call.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * A string that indicates the position at which to begin the returned list of tape pools.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of each of the custom tape pools you want to list. If you don't specify a custom tape pool ARN, the response lists all custom tape pools. 
     */
-  var PoolARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARNs] = js.native
+  var PoolARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARNs] = js.undefined
 }
 object ListTapePoolsInput {
   

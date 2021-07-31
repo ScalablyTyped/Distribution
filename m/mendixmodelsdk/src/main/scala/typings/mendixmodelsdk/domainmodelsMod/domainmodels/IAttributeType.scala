@@ -5,11 +5,12 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.restMod.rest.IODataKeyPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAttributeType extends IElement {
+trait IAttributeType
+  extends StObject
+     with IElement {
   
   val containerAsAttribute: IAttribute = js.native
   

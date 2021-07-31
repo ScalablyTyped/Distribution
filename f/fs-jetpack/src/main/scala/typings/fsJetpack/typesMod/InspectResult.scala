@@ -6,35 +6,33 @@ import typings.fsJetpack.fsJetpackStrings.symlink
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectResult extends StObject {
   
-  var absolutePath: js.UndefOr[String] = js.native
+  var absolutePath: js.UndefOr[String] = js.undefined
   
-  var accessTime: js.UndefOr[Date] = js.native
+  var accessTime: js.UndefOr[Date] = js.undefined
   
-  var changeTime: js.UndefOr[Date] = js.native
+  var changeTime: js.UndefOr[Date] = js.undefined
   
-  var md5: js.UndefOr[String] = js.native
+  var md5: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
   
-  var modifyTime: js.UndefOr[Date] = js.native
+  var modifyTime: js.UndefOr[Date] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var sha1: js.UndefOr[String] = js.native
+  var sha1: js.UndefOr[String] = js.undefined
   
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
   
-  var sha512: js.UndefOr[String] = js.native
+  var sha512: js.UndefOr[String] = js.undefined
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: file | dir | symlink = js.native
+  var `type`: file | dir | symlink
 }
 object InspectResult {
   

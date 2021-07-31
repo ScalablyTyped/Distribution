@@ -6,45 +6,43 @@ import typings.dockerode.anon.BaseLayer
 import typings.dockerode.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInspectInfo extends StObject {
   
-  var Architecture: String = js.native
+  var Architecture: String
   
-  var Author: String = js.native
+  var Author: String
   
-  var Comment: String = js.native
+  var Comment: String
   
-  var Config: AttachStdin = js.native
+  var Config: AttachStdin
   
-  var Container: String = js.native
+  var Container: String
   
-  var ContainerConfig: ArgsEscaped = js.native
+  var ContainerConfig: ArgsEscaped
   
-  var Created: String = js.native
+  var Created: String
   
-  var DockerVersion: String = js.native
+  var DockerVersion: String
   
-  var GraphDriver: Data = js.native
+  var GraphDriver: Data
   
-  var Id: String = js.native
+  var Id: String
   
-  var Os: String = js.native
+  var Os: String
   
-  var Parent: String = js.native
+  var Parent: String
   
-  var RepoDigests: js.Array[String] = js.native
+  var RepoDigests: js.Array[String]
   
-  var RepoTags: js.Array[String] = js.native
+  var RepoTags: js.Array[String]
   
-  var RootFS: BaseLayer = js.native
+  var RootFS: BaseLayer
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var VirtualSize: Double = js.native
+  var VirtualSize: Double
 }
 object ImageInspectInfo {
   

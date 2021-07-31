@@ -2,36 +2,34 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Redirect extends StObject {
   
   /**
     * The host name to use in the redirect request.
     */
-  var HostName: js.UndefOr[typings.awsSdk.s3Mod.HostName] = js.native
+  var HostName: js.UndefOr[typings.awsSdk.s3Mod.HostName] = js.undefined
   
   /**
     * The HTTP redirect code to use on the response. Not required if one of the siblings is present.
     */
-  var HttpRedirectCode: js.UndefOr[typings.awsSdk.s3Mod.HttpRedirectCode] = js.native
+  var HttpRedirectCode: js.UndefOr[typings.awsSdk.s3Mod.HttpRedirectCode] = js.undefined
   
   /**
     * Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
     */
-  var Protocol: js.UndefOr[typings.awsSdk.s3Mod.Protocol] = js.native
+  var Protocol: js.UndefOr[typings.awsSdk.s3Mod.Protocol] = js.undefined
   
   /**
     * The object key prefix to use in the redirect request. For example, to redirect requests for all pages with prefix docs/ (objects in the docs/ folder) to documents/, you can set a condition block with KeyPrefixEquals set to docs/ and in the Redirect set ReplaceKeyPrefixWith to /documents. Not required if one of the siblings is present. Can be present only if ReplaceKeyWith is not provided.
     */
-  var ReplaceKeyPrefixWith: js.UndefOr[typings.awsSdk.s3Mod.ReplaceKeyPrefixWith] = js.native
+  var ReplaceKeyPrefixWith: js.UndefOr[typings.awsSdk.s3Mod.ReplaceKeyPrefixWith] = js.undefined
   
   /**
     * The specific object key to use in the redirect request. For example, redirect request to error.html. Not required if one of the siblings is present. Can be present only if ReplaceKeyPrefixWith is not provided.
     */
-  var ReplaceKeyWith: js.UndefOr[typings.awsSdk.s3Mod.ReplaceKeyWith] = js.native
+  var ReplaceKeyWith: js.UndefOr[typings.awsSdk.s3Mod.ReplaceKeyWith] = js.undefined
 }
 object Redirect {
   

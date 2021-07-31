@@ -3,7 +3,6 @@ package typings.antdMobileRn
 import typings.antdMobileRn.anon.Calendar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeEsESMod {

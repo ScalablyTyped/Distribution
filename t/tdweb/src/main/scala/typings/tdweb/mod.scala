@@ -12,7 +12,6 @@ import typings.tdweb.tdwebStrings.warning
 import typings.tdweb.tdwebStrings.wasm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,11 +38,24 @@ object mod {
     */
   @JSImport("tdweb", JSImport.Default)
   @js.native
-  class default protected () extends TdClient {
+  class default protected ()
+    extends StObject
+       with TdClient {
     /**
       * Create TdClient.
       */
     def this(options: TdOptions) = this()
+    
+    /**
+      * Send a query to TDLib.
+      * If the query contains the field '@extra', the same field will be added into the result.
+      * @link https://github.com/tdlib/td/blob/master/td/generate/scheme/td_api.tl - td_api.tl scheme
+      * @link https://core.telegram.org/tdlib/docs/td__api_8h.html - HTML documentation
+      * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_function.html - a list of all available TDLib methods
+      * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_object.html - a list of all available TDLib classes
+      */
+    /* CompleteClass */
+    override def send(query: TdObject): js.Promise[TdError | TdObject] = js.native
   }
   
   /**
@@ -66,7 +78,6 @@ object mod {
     * 6. The methods `getStorageStatistics`, `getStorageStatisticsFast`, `optimizeStorage`, `addProxy` and
     * `getFileDownloadedPrefixSize` are not supported.
     */
-  @js.native
   trait TdClient extends StObject {
     
     /**
@@ -77,7 +88,7 @@ object mod {
       * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_function.html - a list of all available TDLib methods
       * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_object.html - a list of all available TDLib classes
       */
-    def send(query: TdObject): js.Promise[TdError | TdObject] = js.native
+    def send(query: TdObject): js.Promise[TdError | TdObject]
   }
   object TdClient {
     
@@ -95,28 +106,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TdError extends StObject {
     
-    var `@extra`: js.UndefOr[string] = js.native
+    var `@extra`: js.UndefOr[string] = js.undefined
     
-    var `@type`: error = js.native
+    var `@type`: error
     
     /**
       * Error code; subject to future changes. If the error code is 406, the error message
       * must not be processed in any way and must not be displayed to the user
       */
-    var code: Double = js.native
+    var code: Double
     
     /** Error message; subject to future changes */
-    var message: String = js.native
+    var message: String
   }
   object TdError {
     
     @scala.inline
-    def apply(`@type`: error, code: Double, message: String): TdError = {
+    def apply(code: Double, message: String): TdError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-      __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("@type")("error")
       __obj.asInstanceOf[TdError]
     }
     
@@ -140,17 +150,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TdObject
-    extends /* key */ StringDictionary[
+    extends StObject
+       with /* key */ StringDictionary[
           js.UndefOr[
             TdObject | (js.Array[Boolean | Double | String | TdObject]) | Double | String | Boolean
           ]
         ] {
     
-    var `@extra`: js.UndefOr[String] = js.native
+    var `@extra`: js.UndefOr[String] = js.undefined
     
-    var `@type`: String = js.native
+    var `@type`: String
   }
   object TdObject {
     
@@ -175,7 +185,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TdOptions extends StObject {
     
     /**
@@ -183,45 +192,45 @@ object mod {
       * All but one instances with the same name will be automatically closed. Usually, the newest non-background instance is kept alive.
       * Files will be stored in an IndexedDb table with the same name.
       */
-    var instanceName: js.UndefOr[String] = js.native
+    var instanceName: js.UndefOr[String] = js.undefined
     
     /**
       * Pass true, if the instance is opened from the background.
       */
-    var isBackground: js.UndefOr[Boolean] = js.native
+    var isBackground: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial verbosity level of the JavaScript part of the code (one of 'error', 'warning', 'info', 'log', 'debug').
       */
-    var jsLogVerbosityLevel: js.UndefOr[error | warning | info | log | debug] = js.native
+    var jsLogVerbosityLevel: js.UndefOr[error | warning | info | log | debug] = js.undefined
     
     /**
       * The initial verbosity level for the TDLib internal logging (0-1023).
       */
-    var logVerbosityLevel: js.UndefOr[Double] = js.native
+    var logVerbosityLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * For debug only. The type of the TDLib build to use. 'asmjs' for asm.js and 'wasm' for WebAssembly.
       * If mode == 'auto' WebAbassembly will be used if supported by browser, asm.js otherwise.
       */
-    var mode: js.UndefOr[auto | asmjs | wasm] = js.native
+    var mode: js.UndefOr[auto | asmjs | wasm] = js.undefined
     
     /**
       * Callback for all incoming updates.
       */
-    var onUpdate: js.UndefOr[js.Function1[/* update */ TdObject, _]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* update */ TdObject, js.Any]] = js.undefined
     
     /**
       * For debug only. PaPass false to use TDLib without database and secret chats.
       * It will significantly improve loading time, but some functionality will be unavailable.ss true
       * to open TDLib database in read-only mode
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass false to use TDLib without database and secret chats. It will significantly improve loading time, but some functionality will be unavailable.
       */
-    var useDatabase: js.UndefOr[Boolean] = js.native
+    var useDatabase: js.UndefOr[Boolean] = js.undefined
   }
   object TdOptions {
     
@@ -265,7 +274,7 @@ object mod {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setOnUpdate(value: /* update */ TdObject => _): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      def setOnUpdate(value: /* update */ TdObject => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)

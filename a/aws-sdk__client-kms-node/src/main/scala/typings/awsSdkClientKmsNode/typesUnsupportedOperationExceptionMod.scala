@@ -10,15 +10,14 @@ import typings.awsSdkClientKmsNode.importKeyMaterialExceptionsUnionMod.ImportKey
 import typings.awsSdkClientKmsNode.putKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUnsupportedOperationExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_UnsupportedOperationExceptionDetails> * / any */ @js.native
-  trait UnsupportedOperationException
-    extends CreateKeyExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_UnsupportedOperationExceptionDetails> * / any */ trait UnsupportedOperationException
+    extends StObject
+       with CreateKeyExceptionsUnion
        with DeleteImportedKeyMaterialExceptionsUnion
        with DisableKeyRotationExceptionsUnion
        with EnableKeyRotationExceptionsUnion
@@ -27,13 +26,13 @@ object typesUnsupportedOperationExceptionMod {
        with ImportKeyMaterialExceptionsUnion
        with PutKeyPolicyExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.UnsupportedOperationException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.UnsupportedOperationException
   }
   object UnsupportedOperationException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.UnsupportedOperationException): UnsupportedOperationException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): UnsupportedOperationException = {
+      val __obj = js.Dynamic.literal(name = "UnsupportedOperationException")
       __obj.asInstanceOf[UnsupportedOperationException]
     }
     
@@ -45,13 +44,12 @@ object typesUnsupportedOperationExceptionMod {
     }
   }
   
-  @js.native
   trait UnsupportedOperationExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object UnsupportedOperationExceptionDetails {
     

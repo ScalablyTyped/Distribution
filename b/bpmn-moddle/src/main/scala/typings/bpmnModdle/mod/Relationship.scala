@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Relationship extends BaseElement {
+trait Relationship
+  extends StObject
+     with BaseElement {
   
-  var direction: RelationshipDirection = js.native
+  var direction: RelationshipDirection
   
-  var source: js.Array[BaseElement] = js.native
+  var source: js.Array[BaseElement]
   
-  var target: js.Array[BaseElement] = js.native
+  var target: js.Array[BaseElement]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Relationship {
   

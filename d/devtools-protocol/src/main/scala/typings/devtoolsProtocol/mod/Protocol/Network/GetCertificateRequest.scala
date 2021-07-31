@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificateRequest extends StObject {
   
   /**
     * Origin to get certificate for.
     */
-  var origin: String = js.native
+  var origin: String
 }
 object GetCertificateRequest {
   

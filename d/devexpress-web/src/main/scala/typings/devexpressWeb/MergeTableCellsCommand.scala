@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to merge the selected table cells.
   */
-@js.native
-trait MergeTableCellsCommand extends CommandWithSimpleStateBase {
+trait MergeTableCellsCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the MergeTableCellsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object MergeTableCellsCommand {
   

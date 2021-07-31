@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericBookmarkLayout with extend GenericBaseLayout
   */
-@js.native
-trait IGenericBookmarkLayout extends IGenericBaseLayout {
+trait IGenericBookmarkLayout
+  extends StObject
+     with IGenericBaseLayout {
   
-  var qBookmark: INxBookmark = js.native
+  var qBookmark: INxBookmark
   
   @JSName("qMeta")
-  var qMeta_IGenericBookmarkLayout: INxMetaTitleDescription = js.native
+  var qMeta_IGenericBookmarkLayout: INxMetaTitleDescription
 }
 object IGenericBookmarkLayout {
   

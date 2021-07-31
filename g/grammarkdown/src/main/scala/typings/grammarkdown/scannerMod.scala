@@ -8,10 +8,13 @@ import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scannerMod {
+  
+  @JSImport("grammarkdown/dist/scanner", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("grammarkdown/dist/scanner", "Scanner")
   @js.native
@@ -143,32 +146,21 @@ object scannerMod {
     var tokenValue: js.Any = js.native
   }
   
-  @JSImport("grammarkdown/dist/scanner", "scanHtmlTrivia")
-  @js.native
-  def scanHtmlTrivia(text: String, pos: Double, end: Double): js.UndefOr[js.Array[HtmlTrivia]] = js.native
+  @scala.inline
+  def scanHtmlTrivia(text: String, pos: Double, end: Double): js.UndefOr[js.Array[HtmlTrivia]] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanHtmlTrivia")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[HtmlTrivia]]]
   
-  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
-  @js.native
-  def skipTrivia(text: String, pos: Double, end: Double): Double = js.native
-  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
-  @js.native
-  def skipTrivia(
-    text: String,
-    pos: Double,
-    end: Double,
-    htmlTrivia: js.UndefOr[scala.Nothing],
-    commentTrivia: js.Array[CommentTrivia]
-  ): Double = js.native
-  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
-  @js.native
-  def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = js.native
-  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
-  @js.native
+  @scala.inline
+  def skipTrivia(text: String, pos: Double, end: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("skipTrivia")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("skipTrivia")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any], htmlTrivia.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def skipTrivia(
     text: String,
     pos: Double,
     end: Double,
     htmlTrivia: js.Array[HtmlTrivia],
     commentTrivia: js.Array[CommentTrivia]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("skipTrivia")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any], htmlTrivia.asInstanceOf[js.Any], commentTrivia.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: Unit, commentTrivia: js.Array[CommentTrivia]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("skipTrivia")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any], htmlTrivia.asInstanceOf[js.Any], commentTrivia.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

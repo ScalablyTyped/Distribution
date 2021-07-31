@@ -10,9 +10,9 @@ TypeScript typings for Cloud Healthcare API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.healthcare |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 951 |
 | # stars            | 0 |
 
 ## Links

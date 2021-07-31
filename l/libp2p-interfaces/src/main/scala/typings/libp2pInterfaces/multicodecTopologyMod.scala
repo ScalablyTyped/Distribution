@@ -5,7 +5,6 @@ import typings.libp2pInterfaces.anon.Multiaddrs
 import typings.libp2pInterfaces.anon.PeerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multicodecTopologyMod extends Shortcut {

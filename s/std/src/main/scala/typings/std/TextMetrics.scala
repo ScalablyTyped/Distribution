@@ -2,72 +2,70 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The dimensions of a piece of text in the canvas, as created by the CanvasRenderingContext2D.measureText() method. */
-@js.native
 trait TextMetrics extends StObject {
   
   /**
     * Returns the measurement described below.
     */
-  val actualBoundingBoxAscent: Double = js.native
+  val actualBoundingBoxAscent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val actualBoundingBoxDescent: Double = js.native
+  val actualBoundingBoxDescent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val actualBoundingBoxLeft: Double = js.native
+  val actualBoundingBoxLeft: Double
   
   /**
     * Returns the measurement described below.
     */
-  val actualBoundingBoxRight: Double = js.native
+  val actualBoundingBoxRight: Double
   
   /**
     * Returns the measurement described below.
     */
-  val alphabeticBaseline: Double = js.native
+  val alphabeticBaseline: Double
   
   /**
     * Returns the measurement described below.
     */
-  val emHeightAscent: Double = js.native
+  val emHeightAscent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val emHeightDescent: Double = js.native
+  val emHeightDescent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val fontBoundingBoxAscent: Double = js.native
+  val fontBoundingBoxAscent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val fontBoundingBoxDescent: Double = js.native
+  val fontBoundingBoxDescent: Double
   
   /**
     * Returns the measurement described below.
     */
-  val hangingBaseline: Double = js.native
+  val hangingBaseline: Double
   
   /**
     * Returns the measurement described below.
     */
-  val ideographicBaseline: Double = js.native
+  val ideographicBaseline: Double
   
   /**
     * Returns the measurement described below.
     */
-  val width: Double = js.native
+  val width: Double
 }
 object TextMetrics {
   

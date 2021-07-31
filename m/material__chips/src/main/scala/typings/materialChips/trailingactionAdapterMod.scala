@@ -3,23 +3,21 @@ package typings.materialChips
 import typings.materialChips.trailingactionConstantsMod.InteractionTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trailingactionAdapterMod {
   
-  @js.native
   trait MDCChipTrailingActionAdapter extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
     
-    def getAttribute(attr: String): String | Null = js.native
+    def getAttribute(attr: String): String | Null
     
-    def notifyInteraction(trigger: InteractionTrigger): Unit = js.native
+    def notifyInteraction(trigger: InteractionTrigger): Unit
     
-    def notifyNavigation(key: String): Unit = js.native
+    def notifyNavigation(key: String): Unit
     
-    def setAttribute(attr: String, value: String): Unit = js.native
+    def setAttribute(attr: String, value: String): Unit
   }
   object MDCChipTrailingActionAdapter {
     

@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.ConditionalTopBottomRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({ ... })`. */
-@js.native
 trait TopBottomConditionalFormatUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait TopBottomConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.native
+  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait TopBottomConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rule: js.UndefOr[ConditionalTopBottomRule] = js.native
+  var rule: js.UndefOr[ConditionalTopBottomRule] = js.undefined
 }
 object TopBottomConditionalFormatUpdateData {
   

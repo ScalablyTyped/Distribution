@@ -2,45 +2,43 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * (default: internal ABR controller)
   * Customized Adaptive Bitrate Streaming Controller.
   */
-@js.native
 trait AbrController extends StObject {
   
   /**
     * get: capping/max level value that could be used by ABR Controller
     * set: capping/max level value that could be used by ABR Controller
     */
-  var autoLevelCapping: Double = js.native
+  var autoLevelCapping: Double
   
   /**
     *  accumulated handled events
     */
-  var handledEvents: js.Array[String] = js.native
+  var handledEvents: js.Array[String]
   
   /**
     * current hls instance
     */
-  var hls: Hls = js.native
+  var hls: Hls
   
   /**
     * last fragments corresponding level
     */
-  var lastLoadedFragLevel: Double = js.native
+  var lastLoadedFragLevel: Double
   
   /**
     * get: next auto-quality levele/force next auto-quality level that should be returned
     * set: next auto-quality levele/force next auto-quality level that should be returned
     *  - currently used for emergency switch down
     */
-  var nextAutoLevel: Double = js.native
+  var nextAutoLevel: Double
   
-  var useGenericHandler: Boolean = js.native
+  var useGenericHandler: Boolean
 }
 object AbrController {
   

@@ -2,11 +2,11 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValidationOptions extends BaseValidationOptions {
+trait ValidationOptions
+  extends StObject
+     with BaseValidationOptions {
   
   /**
     * overrides individual error messages. Defaults to no override (`{}`).
@@ -15,7 +15,7 @@ trait ValidationOptions extends BaseValidationOptions {
     *
     * @default {}
     */
-  var messages: js.UndefOr[LanguageMessages] = js.native
+  var messages: js.UndefOr[LanguageMessages] = js.undefined
 }
 object ValidationOptions {
   

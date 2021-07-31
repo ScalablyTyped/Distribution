@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
@@ -25,7 +24,7 @@ object userMod {
       */
     def this(name: String) = this()
     def this(name: String, args: UserArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: UserArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -68,6 +67,10 @@ object userMod {
   /* static members */
   object User {
     
+    @JSImport("@pulumi/aws/iam/user", "User")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing User resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,29 +80,23 @@ object userMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID]): User = js.native
-    @JSImport("@pulumi/aws/iam/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): User = js.native
-    @JSImport("@pulumi/aws/iam/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState): User = js.native
-    @JSImport("@pulumi/aws/iam/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/user", "User.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/user.User */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/user.User */ Boolean]
   }
   
-  @js.native
   trait UserArgs extends StObject {
     
     /**
@@ -107,27 +104,27 @@ object userMod {
       * has non-provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
       * a user with non-provider-managed access keys and login profile will fail to be destroyed.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The user's name. The name must consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: `=,.@-_.`. User names are not distinguished by case. For example, you cannot create users named both "TESTUSER" and "testuser".
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the user.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the policy that is used to set the permissions boundary for the user.
       */
-    val permissionsBoundary: js.UndefOr[Input[String]] = js.native
+    val permissionsBoundary: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of tags for the IAM user
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object UserArgs {
     
@@ -172,45 +169,44 @@ object userMod {
     }
   }
   
-  @js.native
   trait UserState extends StObject {
     
     /**
       * The ARN assigned by AWS for this user.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When destroying this user, destroy even if it
       * has non-provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
       * a user with non-provider-managed access keys and login profile will fail to be destroyed.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The user's name. The name must consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: `=,.@-_.`. User names are not distinguished by case. For example, you cannot create users named both "TESTUSER" and "testuser".
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the user.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the policy that is used to set the permissions boundary for the user.
       */
-    val permissionsBoundary: js.UndefOr[Input[String]] = js.native
+    val permissionsBoundary: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of tags for the IAM user
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The [unique ID][1] assigned by AWS.
       */
-    val uniqueId: js.UndefOr[Input[String]] = js.native
+    val uniqueId: js.UndefOr[Input[String]] = js.undefined
   }
   object UserState {
     

@@ -1,0 +1,44 @@
+package typings.winrtUwp.Windows.UI.ApplicationSettings
+
+import typings.winrtUwp.Windows.UI.Popups.IUICommand
+import typings.winrtUwp.Windows.UI.Popups.UICommandInvokedHandler
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/** Creates a settings command object that represents a settings entry. This settings command can be appended to the ApplicationCommands vector. */
+trait SettingsCommand extends StObject {
+  
+  /** Gets or sets the command ID. */
+  var id: js.Any
+  
+  /** Gets or sets the handler for the event that is raised when the user selects the command. */
+  def invoked(command: IUICommand): Unit
+  /** Gets or sets the handler for the event that is raised when the user selects the command. */
+  @JSName("invoked")
+  var invoked_Original: UICommandInvokedHandler
+  
+  /** Gets or sets the label for the command. */
+  var label: String
+}
+object SettingsCommand {
+  
+  @scala.inline
+  def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingsCommand]
+  }
+  
+  @scala.inline
+  implicit class SettingsCommandMutableBuilder[Self <: SettingsCommand] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+  }
+}

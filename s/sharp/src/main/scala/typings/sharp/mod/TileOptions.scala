@@ -2,35 +2,33 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileOptions extends StObject {
   
   /** Tile angle of rotation, must be a multiple of 90. (optional, default 0) */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /** background colour, parsed by the color module, defaults to white without transparency. (optional, default {r:255,g:255,b:255,alpha:1}) */
-  var background: js.UndefOr[String | RGBA] = js.native
+  var background: js.UndefOr[String | RGBA] = js.undefined
   
   /** Tile container, with value fs (filesystem) or zip (compressed file). (optional, default 'fs') */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /** How deep to make the pyramid, possible values are "onepixel", "onetile" or "one" (default based on layout) */
-  var depth: js.UndefOr[String] = js.native
+  var depth: js.UndefOr[String] = js.undefined
   
   /** Filesystem layout, possible values are dz, iiif, zoomify or google. (optional, default 'dz') */
-  var layout: js.UndefOr[TileLayout] = js.native
+  var layout: js.UndefOr[TileLayout] = js.undefined
   
   /** Tile overlap in pixels, a value between 0 and 8192. (optional, default 0) */
-  var overlap: js.UndefOr[Double] = js.native
+  var overlap: js.UndefOr[Double] = js.undefined
   
   /** Tile size in pixels, a value between 1 and 8192. (optional, default 256) */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /** Threshold to skip tile generation, a value 0 - 255 for 8-bit images or 0 - 65535 for 16-bit images */
-  var skipBlanks: js.UndefOr[Double] = js.native
+  var skipBlanks: js.UndefOr[Double] = js.undefined
 }
 object TileOptions {
   

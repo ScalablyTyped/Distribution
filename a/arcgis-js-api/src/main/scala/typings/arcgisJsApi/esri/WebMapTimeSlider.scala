@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebMapTimeSlider extends Object {
+trait WebMapTimeSlider
+  extends StObject
+     with Object {
   
   /**
     * The current time extent of the time slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var currentTimeExtent: js.UndefOr[TimeExtent] = js.native
+  var currentTimeExtent: js.UndefOr[TimeExtent] = js.undefined
   
   /**
     * The temporal extent for the entire slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var fullTimeExtent: js.UndefOr[TimeExtent] = js.native
+  var fullTimeExtent: js.UndefOr[TimeExtent] = js.undefined
   
   /**
     * The number of stops.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var numStops: js.UndefOr[Double] = js.native
+  var numStops: js.UndefOr[Double] = js.undefined
   
   /**
     * The thumb count.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var numThumbs: js.UndefOr[Double] = js.native
+  var numThumbs: js.UndefOr[Double] = js.undefined
   
   /**
     * The time rate in milliseconds between animation steps.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var stopDelay: js.UndefOr[Double] = js.native
+  var stopDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines regularly spaced stops on the time slider from a [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html) object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var stopInterval: js.UndefOr[TimeInterval] = js.native
+  var stopInterval: js.UndefOr[TimeInterval] = js.undefined
 }
 object WebMapTimeSlider {
   

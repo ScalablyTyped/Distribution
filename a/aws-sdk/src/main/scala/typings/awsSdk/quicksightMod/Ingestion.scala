@@ -2,60 +2,58 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ingestion extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: typings.awsSdk.quicksightMod.Arn = js.native
+  var Arn: typings.awsSdk.quicksightMod.Arn
   
   /**
     * The time that this ingestion started.
     */
-  var CreatedTime: timestamp = js.native
+  var CreatedTime: timestamp
   
   /**
     * Error information for this ingestion.
     */
-  var ErrorInfo: js.UndefOr[typings.awsSdk.quicksightMod.ErrorInfo] = js.native
+  var ErrorInfo: js.UndefOr[typings.awsSdk.quicksightMod.ErrorInfo] = js.undefined
   
   /**
     * Ingestion ID.
     */
-  var IngestionId: js.UndefOr[typings.awsSdk.quicksightMod.IngestionId] = js.native
+  var IngestionId: js.UndefOr[typings.awsSdk.quicksightMod.IngestionId] = js.undefined
   
   /**
     * The size of the data ingested, in bytes.
     */
-  var IngestionSizeInBytes: js.UndefOr[long] = js.native
+  var IngestionSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * Ingestion status.
     */
-  var IngestionStatus: typings.awsSdk.quicksightMod.IngestionStatus = js.native
+  var IngestionStatus: typings.awsSdk.quicksightMod.IngestionStatus
   
   /**
     * The time that this ingestion took, measured in seconds.
     */
-  var IngestionTimeInSeconds: js.UndefOr[long] = js.native
+  var IngestionTimeInSeconds: js.UndefOr[long] = js.undefined
   
-  var QueueInfo: js.UndefOr[typings.awsSdk.quicksightMod.QueueInfo] = js.native
+  var QueueInfo: js.UndefOr[typings.awsSdk.quicksightMod.QueueInfo] = js.undefined
   
   /**
     * Event source for this ingestion.
     */
-  var RequestSource: js.UndefOr[IngestionRequestSource] = js.native
+  var RequestSource: js.UndefOr[IngestionRequestSource] = js.undefined
   
   /**
     * Type of this ingestion.
     */
-  var RequestType: js.UndefOr[IngestionRequestType] = js.native
+  var RequestType: js.UndefOr[IngestionRequestType] = js.undefined
   
-  var RowInfo: js.UndefOr[typings.awsSdk.quicksightMod.RowInfo] = js.native
+  var RowInfo: js.UndefOr[typings.awsSdk.quicksightMod.RowInfo] = js.undefined
 }
 object Ingestion {
   

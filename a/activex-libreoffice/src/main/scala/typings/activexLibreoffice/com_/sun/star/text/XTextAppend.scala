@@ -4,13 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a meta-interface for manipulating and inserting text. */
-@js.native
 trait XTextAppend
-  extends XText
+  extends StObject
+     with XText
      with XParagraphAppend
      with XTextPortionAppend
 object XTextAppend {

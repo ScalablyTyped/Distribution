@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageClassAnalysisDataExport extends StObject {
   
   /**
     * The place to store the data for an analysis.
     */
-  var Destination: AnalyticsExportDestination = js.native
+  var Destination: AnalyticsExportDestination
   
   /**
     * The version of the output schema to use when exporting data. Must be V_1.
     */
-  var OutputSchemaVersion: StorageClassAnalysisSchemaVersion = js.native
+  var OutputSchemaVersion: StorageClassAnalysisSchemaVersion
 }
 object StorageClassAnalysisDataExport {
   

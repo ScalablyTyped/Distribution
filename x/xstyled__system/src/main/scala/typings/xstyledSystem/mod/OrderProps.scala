@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderProps extends StObject {
   
   val order: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object OrderProps {
   
@@ -28,7 +26,7 @@ object OrderProps {
     @scala.inline
     def setOrder(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
         ]
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object OrderProps {
     def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
+    def setOrderVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any)*
+    ): Self = StObject.set(x, "order", js.Array(value :_*))
   }
 }

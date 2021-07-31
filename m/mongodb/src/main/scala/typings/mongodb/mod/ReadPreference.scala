@@ -7,12 +7,13 @@ import typings.mongodb.mongodbStrings.secondary
 import typings.mongodb.mongodbStrings.secondaryPreferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "ReadPreference")
 @js.native
-class ReadPreference protected () extends ReadPreferenceOrMode {
+class ReadPreference protected ()
+  extends StObject
+     with ReadPreferenceOrMode {
   def this(mode: ReadPreferenceMode, tags: js.Object) = this()
   def this(mode: ReadPreferenceMode, tags: js.Object, options: ReadPreferenceOptions) = this()
   
@@ -59,7 +60,6 @@ object ReadPreference {
   @scala.inline
   def SECONDARY_PREFERRED_=(x: secondaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_PREFERRED")(x.asInstanceOf[js.Any])
   
-  @JSImport("mongodb", "ReadPreference.isValid")
-  @js.native
-  def isValid(mode: String): Boolean = js.native
+  @scala.inline
+  def isValid(mode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

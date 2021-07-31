@@ -2,15 +2,13 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterfaceName extends StObject {
   
-  var interfaceName: String = js.native
+  var interfaceName: String
   
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
 }
 object InterfaceName {
   

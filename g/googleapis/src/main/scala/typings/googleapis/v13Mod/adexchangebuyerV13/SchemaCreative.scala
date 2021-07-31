@@ -5,69 +5,67 @@ import typings.googleapis.anon.Date
 import typings.googleapis.anon.Details
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A creative and its classification data.
   */
-@js.native
 trait SchemaCreative extends StObject {
   
   /**
     * The HTML snippet that displays the ad when inserted in the web page. If
     * set, videoURL should not be set.
     */
-  var HTMLSnippet: js.UndefOr[String] = js.native
+  var HTMLSnippet: js.UndefOr[String] = js.undefined
   
   /**
     * Account id.
     */
-  var accountId: js.UndefOr[Double] = js.native
+  var accountId: js.UndefOr[Double] = js.undefined
   
   /**
     * Detected advertiser id, if any. Read-only. This field should not be set
     * in requests.
     */
-  var advertiserId: js.UndefOr[js.Array[String]] = js.native
+  var advertiserId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the company being advertised in the creative.
     */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /**
     * The agency id for this creative.
     */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * The last upload timestamp of this creative if it was uploaded via API.
     * Read-only. The value of this field is generated, and will be ignored for
     * uploads. (formatted RFC 3339 timestamp).
     */
-  var apiUploadTimestamp: js.UndefOr[String] = js.native
+  var apiUploadTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * All attributes for the ads that may be shown from this snippet.
     */
-  var attribute: js.UndefOr[js.Array[Double]] = js.native
+  var attribute: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * A buyer-specific id identifying the creative in this ad.
     */
-  var buyerCreativeId: js.UndefOr[String] = js.native
+  var buyerCreativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The set of destination urls for the snippet.
     */
-  var clickThroughUrl: js.UndefOr[js.Array[String]] = js.native
+  var clickThroughUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Shows any corrections that were applied to this creative. Read-only. This
     * field should not be set in requests.
     */
-  var corrections: js.UndefOr[js.Array[Details]] = js.native
+  var corrections: js.UndefOr[js.Array[Details]] = js.undefined
   
   /**
     * The reasons for disapproval, if any. Note that not all disapproval
@@ -76,79 +74,79 @@ trait SchemaCreative extends StObject {
     * case, please reach out to your TAM to help debug the issue. Read-only.
     * This field should not be set in requests.
     */
-  var disapprovalReasons: js.UndefOr[js.Array[Details]] = js.native
+  var disapprovalReasons: js.UndefOr[js.Array[Details]] = js.undefined
   
   /**
     * The filtering reasons for the creative. Read-only. This field should not
     * be set in requests.
     */
-  var filteringReasons: js.UndefOr[Date] = js.native
+  var filteringReasons: js.UndefOr[Date] = js.undefined
   
   /**
     * Ad height.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The set of urls to be called to record an impression.
     */
-  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If nativeAd is set, HTMLSnippet and videoURL should not be set.
     */
-  var nativeAd: js.UndefOr[Advertiser] = js.native
+  var nativeAd: js.UndefOr[Advertiser] = js.undefined
   
   /**
     * Detected product categories, if any. Read-only. This field should not be
     * set in requests.
     */
-  var productCategories: js.UndefOr[js.Array[Double]] = js.native
+  var productCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * All restricted categories for the ads that may be shown from this
     * snippet.
     */
-  var restrictedCategories: js.UndefOr[js.Array[Double]] = js.native
+  var restrictedCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Detected sensitive categories, if any. Read-only. This field should not
     * be set in requests.
     */
-  var sensitiveCategories: js.UndefOr[js.Array[Double]] = js.native
+  var sensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Creative serving status. Read-only. This field should not be set in
     * requests.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * All vendor types for the ads that may be shown from this snippet.
     */
-  var vendorType: js.UndefOr[js.Array[Double]] = js.native
+  var vendorType: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The version for this creative. Read-only. This field should not be set in
     * requests.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL to fetch a video ad. If set, HTMLSnippet and the nativeAd should
     * not be set.
     */
-  var videoURL: js.UndefOr[String] = js.native
+  var videoURL: js.UndefOr[String] = js.undefined
   
   /**
     * Ad width.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaCreative {
   

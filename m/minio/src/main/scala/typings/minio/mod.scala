@@ -21,10 +21,13 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("minio", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("minio", "Client")
   @js.native
@@ -81,28 +84,23 @@ object mod {
     def listBuckets(callback: ResultCallback[js.Array[BucketItemFromList]]): Unit = js.native
     
     def listIncompleteUploads(bucketName: String): BucketStream[IncompleteUploadedBucketItem] = js.native
-    def listIncompleteUploads(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[IncompleteUploadedBucketItem] = js.native
     def listIncompleteUploads(bucketName: String, prefix: String): BucketStream[IncompleteUploadedBucketItem] = js.native
     def listIncompleteUploads(bucketName: String, prefix: String, recursive: Boolean): BucketStream[IncompleteUploadedBucketItem] = js.native
+    def listIncompleteUploads(bucketName: String, prefix: Unit, recursive: Boolean): BucketStream[IncompleteUploadedBucketItem] = js.native
     
     def listObjects(bucketName: String): BucketStream[BucketItem] = js.native
-    def listObjects(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[BucketItem] = js.native
     def listObjects(bucketName: String, prefix: String): BucketStream[BucketItem] = js.native
     def listObjects(bucketName: String, prefix: String, recursive: Boolean): BucketStream[BucketItem] = js.native
+    def listObjects(bucketName: String, prefix: Unit, recursive: Boolean): BucketStream[BucketItem] = js.native
     
     def listObjectsV2(bucketName: String): BucketStream[BucketItem] = js.native
-    def listObjectsV2(
-      bucketName: String,
-      prefix: js.UndefOr[scala.Nothing],
-      recursive: js.UndefOr[scala.Nothing],
-      startAfter: String
-    ): BucketStream[BucketItem] = js.native
-    def listObjectsV2(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[BucketItem] = js.native
-    def listObjectsV2(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
     def listObjectsV2(bucketName: String, prefix: String): BucketStream[BucketItem] = js.native
-    def listObjectsV2(bucketName: String, prefix: String, recursive: js.UndefOr[scala.Nothing], startAfter: String): BucketStream[BucketItem] = js.native
     def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean): BucketStream[BucketItem] = js.native
     def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
+    def listObjectsV2(bucketName: String, prefix: String, recursive: Unit, startAfter: String): BucketStream[BucketItem] = js.native
+    def listObjectsV2(bucketName: String, prefix: Unit, recursive: Boolean): BucketStream[BucketItem] = js.native
+    def listObjectsV2(bucketName: String, prefix: Unit, recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
+    def listObjectsV2(bucketName: String, prefix: Unit, recursive: Unit, startAfter: String): BucketStream[BucketItem] = js.native
     
     // todo #low Specify events
     def listenBucketNotification(bucketName: String, prefix: String, suffix: String, events: js.Array[String]): EventEmitter = js.native
@@ -116,35 +114,8 @@ object mod {
     
     def presignedGetObject(bucketName: String, objectName: String): js.Promise[String] = js.native
     def presignedGetObject(bucketName: String, objectName: String, callback: ResultCallback[String]): Unit = js.native
-    def presignedGetObject(
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      respHeaders: js.UndefOr[scala.Nothing],
-      requestDate: Date
-    ): js.Promise[String] = js.native
-    def presignedGetObject(
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      respHeaders: StringDictionary[js.Any]
-    ): js.Promise[String] = js.native
-    def presignedGetObject(
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      respHeaders: StringDictionary[js.Any],
-      requestDate: Date
-    ): js.Promise[String] = js.native
     def presignedGetObject(bucketName: String, objectName: String, expiry: Double): js.Promise[String] = js.native
     def presignedGetObject(bucketName: String, objectName: String, expiry: Double, callback: ResultCallback[String]): Unit = js.native
-    def presignedGetObject(
-      bucketName: String,
-      objectName: String,
-      expiry: Double,
-      respHeaders: js.UndefOr[scala.Nothing],
-      requestDate: Date
-    ): js.Promise[String] = js.native
     def presignedGetObject(bucketName: String, objectName: String, expiry: Double, respHeaders: StringDictionary[js.Any]): js.Promise[String] = js.native
     def presignedGetObject(
       bucketName: String,
@@ -168,6 +139,16 @@ object mod {
       requestDate: Date,
       callback: ResultCallback[String]
     ): Unit = js.native
+    def presignedGetObject(bucketName: String, objectName: String, expiry: Double, respHeaders: Unit, requestDate: Date): js.Promise[String] = js.native
+    def presignedGetObject(bucketName: String, objectName: String, expiry: Unit, respHeaders: StringDictionary[js.Any]): js.Promise[String] = js.native
+    def presignedGetObject(
+      bucketName: String,
+      objectName: String,
+      expiry: Unit,
+      respHeaders: StringDictionary[js.Any],
+      requestDate: Date
+    ): js.Promise[String] = js.native
+    def presignedGetObject(bucketName: String, objectName: String, expiry: Unit, respHeaders: Unit, requestDate: Date): js.Promise[String] = js.native
     
     def presignedPostPolicy(policy: PostPolicy): js.Promise[PostPolicyResult] = js.native
     def presignedPostPolicy(policy: PostPolicy, callback: ResultCallback[PostPolicyResult]): Unit = js.native
@@ -180,29 +161,6 @@ object mod {
     def presignedUrl(httpMethod: String, bucketName: String, objectName: String): js.Promise[String] = js.native
     // Presigned operations
     def presignedUrl(httpMethod: String, bucketName: String, objectName: String, callback: ResultCallback[String]): Unit = js.native
-    def presignedUrl(
-      httpMethod: String,
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      reqParams: js.UndefOr[scala.Nothing],
-      requestDate: Date
-    ): js.Promise[String] = js.native
-    def presignedUrl(
-      httpMethod: String,
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      reqParams: StringDictionary[js.Any]
-    ): js.Promise[String] = js.native
-    def presignedUrl(
-      httpMethod: String,
-      bucketName: String,
-      objectName: String,
-      expiry: js.UndefOr[scala.Nothing],
-      reqParams: StringDictionary[js.Any],
-      requestDate: Date
-    ): js.Promise[String] = js.native
     def presignedUrl(httpMethod: String, bucketName: String, objectName: String, expiry: Double): js.Promise[String] = js.native
     def presignedUrl(
       httpMethod: String,
@@ -211,14 +169,6 @@ object mod {
       expiry: Double,
       callback: ResultCallback[String]
     ): Unit = js.native
-    def presignedUrl(
-      httpMethod: String,
-      bucketName: String,
-      objectName: String,
-      expiry: Double,
-      reqParams: js.UndefOr[scala.Nothing],
-      requestDate: Date
-    ): js.Promise[String] = js.native
     def presignedUrl(
       httpMethod: String,
       bucketName: String,
@@ -251,17 +201,41 @@ object mod {
       requestDate: Date,
       callback: ResultCallback[String]
     ): Unit = js.native
+    def presignedUrl(
+      httpMethod: String,
+      bucketName: String,
+      objectName: String,
+      expiry: Double,
+      reqParams: Unit,
+      requestDate: Date
+    ): js.Promise[String] = js.native
+    def presignedUrl(
+      httpMethod: String,
+      bucketName: String,
+      objectName: String,
+      expiry: Unit,
+      reqParams: StringDictionary[js.Any]
+    ): js.Promise[String] = js.native
+    def presignedUrl(
+      httpMethod: String,
+      bucketName: String,
+      objectName: String,
+      expiry: Unit,
+      reqParams: StringDictionary[js.Any],
+      requestDate: Date
+    ): js.Promise[String] = js.native
+    def presignedUrl(
+      httpMethod: String,
+      bucketName: String,
+      objectName: String,
+      expiry: Unit,
+      reqParams: Unit,
+      requestDate: Date
+    ): js.Promise[String] = js.native
     
     def putObject(bucketName: String, objectName: String, stream: String): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: String, callback: ResultCallback[String]): Unit = js.native
     def putObject(bucketName: String, objectName: String, stream: String, metaData: ItemBucketMetadata): js.Promise[String] = js.native
-    def putObject(
-      bucketName: String,
-      objectName: String,
-      stream: String,
-      size: js.UndefOr[scala.Nothing],
-      metaData: ItemBucketMetadata
-    ): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: String, size: Double): js.Promise[String] = js.native
     def putObject(
       bucketName: String,
@@ -279,16 +253,10 @@ object mod {
       metaData: ItemBucketMetadata,
       callback: ResultCallback[String]
     ): Unit = js.native
+    def putObject(bucketName: String, objectName: String, stream: String, size: Unit, metaData: ItemBucketMetadata): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Buffer): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Buffer, callback: ResultCallback[String]): Unit = js.native
     def putObject(bucketName: String, objectName: String, stream: Buffer, metaData: ItemBucketMetadata): js.Promise[String] = js.native
-    def putObject(
-      bucketName: String,
-      objectName: String,
-      stream: Buffer,
-      size: js.UndefOr[scala.Nothing],
-      metaData: ItemBucketMetadata
-    ): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Buffer, size: Double): js.Promise[String] = js.native
     def putObject(
       bucketName: String,
@@ -306,16 +274,10 @@ object mod {
       metaData: ItemBucketMetadata,
       callback: ResultCallback[String]
     ): Unit = js.native
+    def putObject(bucketName: String, objectName: String, stream: Buffer, size: Unit, metaData: ItemBucketMetadata): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Readable): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Readable, callback: ResultCallback[String]): Unit = js.native
     def putObject(bucketName: String, objectName: String, stream: Readable, metaData: ItemBucketMetadata): js.Promise[String] = js.native
-    def putObject(
-      bucketName: String,
-      objectName: String,
-      stream: Readable,
-      size: js.UndefOr[scala.Nothing],
-      metaData: ItemBucketMetadata
-    ): js.Promise[String] = js.native
     def putObject(bucketName: String, objectName: String, stream: Readable, size: Double): js.Promise[String] = js.native
     def putObject(
       bucketName: String,
@@ -339,6 +301,7 @@ object mod {
       metaData: ItemBucketMetadata,
       callback: ResultCallback[String]
     ): Unit = js.native
+    def putObject(bucketName: String, objectName: String, stream: Readable, size: Unit, metaData: ItemBucketMetadata): js.Promise[String] = js.native
     
     def removeAllBucketNotification(bucketName: String): js.Promise[Unit] = js.native
     def removeAllBucketNotification(bucketName: String, callback: NoResultCallback): Unit = js.native
@@ -505,22 +468,20 @@ object mod {
     def this(arn: String) = this()
   }
   
-  @JSImport("minio", "buildARN")
-  @js.native
-  def buildARN(partition: String, service: String, region: String, accountId: String, resource: String): String = js.native
+  @scala.inline
+  def buildARN(partition: String, service: String, region: String, accountId: String, resource: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildARN")(partition.asInstanceOf[js.Any], service.asInstanceOf[js.Any], region.asInstanceOf[js.Any], accountId.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait BucketItem extends StObject {
     
-    var etag: String = js.native
+    var etag: String
     
-    var lastModified: Date = js.native
+    var lastModified: Date
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object BucketItem {
     
@@ -550,12 +511,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BucketItemCopy extends StObject {
     
-    var etag: String = js.native
+    var etag: String
     
-    var lastModified: Date = js.native
+    var lastModified: Date
   }
   object BucketItemCopy {
     
@@ -576,12 +536,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BucketItemFromList extends StObject {
     
-    var creationDate: Date = js.native
+    var creationDate: Date
     
-    var name: String = js.native
+    var name: String
   }
   object BucketItemFromList {
     
@@ -602,16 +561,15 @@ object mod {
     }
   }
   
-  @js.native
   trait BucketItemStat extends StObject {
     
-    var etag: String = js.native
+    var etag: String
     
-    var lastModified: Date = js.native
+    var lastModified: Date
     
-    var metaData: ItemBucketMetadata = js.native
+    var metaData: ItemBucketMetadata
     
-    var size: Double = js.native
+    var size: Double
   }
   object BucketItemStat {
     
@@ -657,26 +615,25 @@ object mod {
     def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var endPoint: String = js.native
+    var endPoint: String
     
-    var partSize: js.UndefOr[Double] = js.native
+    var partSize: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var region: js.UndefOr[Region] = js.native
+    var region: js.UndefOr[Region] = js.undefined
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[js.Any] = js.native
+    var transport: js.UndefOr[js.Any] = js.undefined
     
-    var useSSL: js.UndefOr[Boolean] = js.native
+    var useSSL: js.UndefOr[Boolean] = js.undefined
   }
   object ClientOptions {
     
@@ -736,14 +693,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IncompleteUploadedBucketItem extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var uploadId: String = js.native
+    var uploadId: String
   }
   object IncompleteUploadedBucketItem {
     
@@ -771,12 +727,11 @@ object mod {
   
   type NoResultCallback = js.Function1[/* error */ Error | Null, Unit]
   
-  @js.native
   trait PostPolicyResult extends StObject {
     
-    var formData: StringDictionary[js.Any] = js.native
+    var formData: StringDictionary[js.Any]
     
-    var postURL: String = js.native
+    var postURL: String
   }
   object PostPolicyResult {
     

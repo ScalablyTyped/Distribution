@@ -2,101 +2,99 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstances extends StObject {
   
   /**
     * The Availability Zone in which the Reserved Instance can be used.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The currency of the Reserved Instance. It's specified using ISO 4217 standard currency codes. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The duration of the Reserved Instance, in seconds.
     */
-  var Duration: js.UndefOr[Long] = js.native
+  var Duration: js.UndefOr[Long] = js.undefined
   
   /**
     * The time when the Reserved Instance expires.
     */
-  var End: js.UndefOr[DateTime] = js.native
+  var End: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The purchase price of the Reserved Instance.
     */
-  var FixedPrice: js.UndefOr[Float] = js.native
+  var FixedPrice: js.UndefOr[Float] = js.undefined
   
   /**
     * The number of reservations purchased.
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The tenancy of the instance.
     */
-  var InstanceTenancy: js.UndefOr[Tenancy] = js.native
+  var InstanceTenancy: js.UndefOr[Tenancy] = js.undefined
   
   /**
     * The instance type on which the Reserved Instance can be used.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The offering class of the Reserved Instance.
     */
-  var OfferingClass: js.UndefOr[OfferingClassType] = js.native
+  var OfferingClass: js.UndefOr[OfferingClassType] = js.undefined
   
   /**
     * The Reserved Instance offering type.
     */
-  var OfferingType: js.UndefOr[OfferingTypeValues] = js.native
+  var OfferingType: js.UndefOr[OfferingTypeValues] = js.undefined
   
   /**
     * The Reserved Instance product platform description.
     */
-  var ProductDescription: js.UndefOr[RIProductDescription] = js.native
+  var ProductDescription: js.UndefOr[RIProductDescription] = js.undefined
   
   /**
     * The recurring charge tag assigned to the resource.
     */
-  var RecurringCharges: js.UndefOr[RecurringChargesList] = js.native
+  var RecurringCharges: js.UndefOr[RecurringChargesList] = js.undefined
   
   /**
     * The ID of the Reserved Instance.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[String] = js.undefined
   
   /**
     * The scope of the Reserved Instance.
     */
-  var Scope: js.UndefOr[scope] = js.native
+  var Scope: js.UndefOr[scope] = js.undefined
   
   /**
     * The date and time the Reserved Instance started.
     */
-  var Start: js.UndefOr[DateTime] = js.native
+  var Start: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The state of the Reserved Instance purchase.
     */
-  var State: js.UndefOr[ReservedInstanceState] = js.native
+  var State: js.UndefOr[ReservedInstanceState] = js.undefined
   
   /**
     * Any tags assigned to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The usage price of the Reserved Instance, per hour.
     */
-  var UsagePrice: js.UndefOr[Float] = js.native
+  var UsagePrice: js.UndefOr[Float] = js.undefined
 }
 object ReservedInstances {
   

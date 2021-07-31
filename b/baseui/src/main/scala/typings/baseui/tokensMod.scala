@@ -2,7 +2,6 @@ package typings.baseui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -11,178 +10,177 @@ object tokensMod {
   @js.native
   val colors: TokenColors = js.native
   
-  @js.native
   trait TokenColors extends StObject {
     
-    var black: String = js.native
+    var black: String
     
-    var blue100: String = js.native
+    var blue100: String
     
-    var blue200: String = js.native
+    var blue200: String
     
-    var blue300: String = js.native
+    var blue300: String
     
-    var blue400: String = js.native
+    var blue400: String
     
-    var blue50: String = js.native
+    var blue50: String
     
-    var blue500: String = js.native
+    var blue500: String
     
-    var blue600: String = js.native
+    var blue600: String
     
-    var blue700: String = js.native
+    var blue700: String
     
-    var brown100: String = js.native
+    var brown100: String
     
-    var brown200: String = js.native
+    var brown200: String
     
-    var brown300: String = js.native
+    var brown300: String
     
-    var brown400: String = js.native
+    var brown400: String
     
-    var brown50: String = js.native
+    var brown50: String
     
-    var brown500: String = js.native
+    var brown500: String
     
-    var brown600: String = js.native
+    var brown600: String
     
-    var brown700: String = js.native
+    var brown700: String
     
-    var cobalt100: String = js.native
+    var cobalt100: String
     
-    var cobalt200: String = js.native
+    var cobalt200: String
     
-    var cobalt300: String = js.native
+    var cobalt300: String
     
-    var cobalt400: String = js.native
+    var cobalt400: String
     
-    var cobalt50: String = js.native
+    var cobalt50: String
     
-    var cobalt500: String = js.native
+    var cobalt500: String
     
-    var cobalt600: String = js.native
+    var cobalt600: String
     
-    var cobalt700: String = js.native
+    var cobalt700: String
     
-    var gray100: String = js.native
+    var gray100: String
     
-    var gray200: String = js.native
+    var gray200: String
     
-    var gray300: String = js.native
+    var gray300: String
     
-    var gray400: String = js.native
+    var gray400: String
     
-    var gray50: String = js.native
+    var gray50: String
     
-    var gray500: String = js.native
+    var gray500: String
     
-    var gray600: String = js.native
+    var gray600: String
     
-    var gray700: String = js.native
+    var gray700: String
     
-    var gray800: String = js.native
+    var gray800: String
     
-    var gray900: String = js.native
+    var gray900: String
     
-    var green100: String = js.native
+    var green100: String
     
-    var green200: String = js.native
+    var green200: String
     
-    var green300: String = js.native
+    var green300: String
     
-    var green400: String = js.native
+    var green400: String
     
-    var green50: String = js.native
+    var green50: String
     
-    var green500: String = js.native
+    var green500: String
     
-    var green600: String = js.native
+    var green600: String
     
-    var green700: String = js.native
+    var green700: String
     
-    var orange100: String = js.native
+    var orange100: String
     
-    var orange200: String = js.native
+    var orange200: String
     
-    var orange300: String = js.native
+    var orange300: String
     
-    var orange400: String = js.native
+    var orange400: String
     
-    var orange50: String = js.native
+    var orange50: String
     
-    var orange500: String = js.native
+    var orange500: String
     
-    var orange600: String = js.native
+    var orange600: String
     
-    var orange700: String = js.native
+    var orange700: String
     
-    var platinum100: String = js.native
+    var platinum100: String
     
-    var platinum200: String = js.native
+    var platinum200: String
     
-    var platinum300: String = js.native
+    var platinum300: String
     
-    var platinum400: String = js.native
+    var platinum400: String
     
-    var platinum50: String = js.native
+    var platinum50: String
     
-    var platinum500: String = js.native
+    var platinum500: String
     
-    var platinum600: String = js.native
+    var platinum600: String
     
-    var platinum700: String = js.native
+    var platinum700: String
     
-    var platinum800: String = js.native
+    var platinum800: String
     
-    var purple100: String = js.native
+    var purple100: String
     
-    var purple200: String = js.native
+    var purple200: String
     
-    var purple300: String = js.native
+    var purple300: String
     
-    var purple400: String = js.native
+    var purple400: String
     
-    var purple50: String = js.native
+    var purple50: String
     
-    var purple500: String = js.native
+    var purple500: String
     
-    var purple600: String = js.native
+    var purple600: String
     
-    var purple700: String = js.native
+    var purple700: String
     
-    var red100: String = js.native
+    var red100: String
     
-    var red200: String = js.native
+    var red200: String
     
-    var red300: String = js.native
+    var red300: String
     
-    var red400: String = js.native
+    var red400: String
     
-    var red50: String = js.native
+    var red50: String
     
-    var red500: String = js.native
+    var red500: String
     
-    var red600: String = js.native
+    var red600: String
     
-    var red700: String = js.native
+    var red700: String
     
-    var white: String = js.native
+    var white: String
     
-    var yellow100: String = js.native
+    var yellow100: String
     
-    var yellow200: String = js.native
+    var yellow200: String
     
-    var yellow300: String = js.native
+    var yellow300: String
     
-    var yellow400: String = js.native
+    var yellow400: String
     
-    var yellow50: String = js.native
+    var yellow50: String
     
-    var yellow500: String = js.native
+    var yellow500: String
     
-    var yellow600: String = js.native
+    var yellow600: String
     
-    var yellow700: String = js.native
+    var yellow700: String
   }
   object TokenColors {
     

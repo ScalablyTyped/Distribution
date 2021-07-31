@@ -4,19 +4,17 @@ import typings.yandexMaps.mod.IGeometryJson
 import typings.yandexMaps.mod.IShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var ooffset: js.Array[Double] = js.native
+  var ooffset: js.Array[Double]
   
-  var shape: js.UndefOr[IShape | IGeometryJson] = js.native
+  var shape: js.UndefOr[IShape | IGeometryJson] = js.undefined
   
-  var size: js.Array[Double] = js.native
+  var size: js.Array[Double]
 }
 object Href {
   

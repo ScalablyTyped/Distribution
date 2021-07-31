@@ -2,37 +2,35 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locked extends StObject {
   
-  var builtIn: scala.Double = js.native
+  var builtIn: scala.Double
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var locked: scala.Double = js.native
+  var locked: scala.Double
   
-  var multiVersion: scala.Double = js.native
+  var multiVersion: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var paid: scala.Double = js.native
+  var paid: scala.Double
   
-  var preview: scala.Double = js.native
+  var preview: scala.Double
   
-  var public: scala.Double = js.native
+  var public: scala.Double
   
-  var system: scala.Double = js.native
+  var system: scala.Double
   
-  var trial: scala.Double = js.native
+  var trial: scala.Double
   
-  var trusted: scala.Double = js.native
+  var trusted: scala.Double
   
-  var unpublished: scala.Double = js.native
+  var unpublished: scala.Double
   
-  var validated: scala.Double = js.native
+  var validated: scala.Double
 }
 object Locked {
   

@@ -2,25 +2,23 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISpringOptions extends StObject {
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var localAnchorA: js.UndefOr[Vec3] = js.native
+  var localAnchorA: js.UndefOr[Vec3] = js.undefined
   
-  var localAnchorB: js.UndefOr[Vec3] = js.native
+  var localAnchorB: js.UndefOr[Vec3] = js.undefined
   
-  var restLength: js.UndefOr[Double] = js.native
+  var restLength: js.UndefOr[Double] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var worldAnchorA: js.UndefOr[Vec3] = js.native
+  var worldAnchorA: js.UndefOr[Vec3] = js.undefined
   
-  var worldAnchorB: js.UndefOr[Vec3] = js.native
+  var worldAnchorB: js.UndefOr[Vec3] = js.undefined
 }
 object ISpringOptions {
   

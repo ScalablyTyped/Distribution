@@ -2,19 +2,17 @@ package typings.podium
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Channel extends StObject {
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var tags: js.UndefOr[String | js.Array[String]] = js.native
+    var tags: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Channel {
     

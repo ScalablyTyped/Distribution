@@ -4,7 +4,6 @@ import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
@@ -13,10 +12,9 @@ object errorMod {
   @js.native
   val Error: FunctionComponent[IErrorProps] = js.native
   
-  @js.native
   trait IErrorProps extends StObject {
     
-    var details: IStructuredError = js.native
+    var details: IStructuredError
   }
   object IErrorProps {
     

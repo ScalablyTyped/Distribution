@@ -3,26 +3,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UDPSocketSendOption extends StObject {
   
   /** 要发消息的地址。在基础库 2.9.3 及之前版本可以是一个和本机同网段的 IP 地址，也可以是在安全域名列表内的域名地址；在基础库 2.9.4 及之后版本，可以是任意 IP 和域名 */
-  var address: String = js.native
+  var address: String
   
   /** 发送数据的长度，仅当 message 为 ArrayBuffer 类型时有效 */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /** 要发送的数据 */
-  var message: String | ArrayBuffer = js.native
+  var message: String | ArrayBuffer
   
   /** 发送数据的偏移量，仅当 message 为 ArrayBuffer 类型时有效 */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** 要发送消息的端口号 */
-  var port: Double = js.native
+  var port: Double
 }
 object UDPSocketSendOption {
   

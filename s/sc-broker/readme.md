@@ -10,9 +10,9 @@ sc-broker key-value and message broker
 | ------------------ | :-------------: |
 | Full name          | sc-broker |
 | Keywords           | store, broker, message broker, key value server, session, socketcluster |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1051559 |
+| # downloads        | 889711 |
 | # stars            | 0 |
 
 ## Links

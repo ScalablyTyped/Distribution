@@ -5,19 +5,17 @@ import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.spinner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerAndroidOpenOptions extends StObject {
   
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
-  var is24Hour: js.UndefOr[Boolean] = js.native
+  var is24Hour: js.UndefOr[Boolean] = js.undefined
   
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[clock | spinner | default] = js.native
+  var mode: js.UndefOr[clock | spinner | default] = js.undefined
 }
 object TimePickerAndroidOpenOptions {
   

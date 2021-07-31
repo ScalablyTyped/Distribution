@@ -2,19 +2,17 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrammarRule extends StObject {
   
-  var contentScopeName: String = js.native
+  var contentScopeName: String
   
   // https://github.com/atom/first-mate/blob/v7.0.7/src/rule.coffee
   // This is private. Don't go down the rabbit hole.
-  var rule: js.Object = js.native
+  var rule: js.Object
   
-  var scopeName: String = js.native
+  var scopeName: String
 }
 object GrammarRule {
   

@@ -2,12 +2,13 @@ package typings.angularCompiler.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "VariableBinding")
 @js.native
-class VariableBinding protected () extends TemplateBinding {
+class VariableBinding protected ()
+  extends StObject
+     with TemplateBinding {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key name of the LHS along with its span.

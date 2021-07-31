@@ -1,39 +1,39 @@
 package typings.wixUiIconsCommon
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import typings.wixUiIconsCommon.storiesTypesMod.Category
 import typings.wixUiIconsCommon.storiesTypesMod.CategoryTableRow
 import typings.wixUiIconsCommon.typesMod.IconMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object categoryListCategoryListMod extends Shortcut {
+object categoryListCategoryListMod {
+  
+  @JSImport("wix-ui-icons-common/dist/stories/components/category-list/CategoryList", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("wix-ui-icons-common/dist/stories/components/category-list/CategoryList", JSImport.Default)
   @js.native
   val default: FC[CategoryListProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/stories/components/category-list/CategoryList", "mapIconsToCategories")
-  @js.native
-  def mapIconsToCategories(iconsMetadata: js.Array[IconMetadata]): js.Array[Category] = js.native
+  @scala.inline
+  def mapIconsToCategories(iconsMetadata: js.Array[IconMetadata]): js.Array[Category] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapIconsToCategories")(iconsMetadata.asInstanceOf[js.Any]).asInstanceOf[js.Array[Category]]
   
-  @js.native
   trait CategoryListProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataHook: js.UndefOr[String] = js.native
+    var dataHook: js.UndefOr[String] = js.undefined
     
-    var iconsMetadata: js.Array[IconMetadata] = js.native
+    var iconsMetadata: js.Array[IconMetadata]
     
-    def mapIconToRow(iconMetadata: IconMetadata): CategoryTableRow = js.native
+    def mapIconToRow(iconMetadata: IconMetadata): CategoryTableRow
     
-    var searchKeys: js.Array[String] = js.native
+    var searchKeys: js.Array[String]
     
-    var tableHeaderTitles: js.Array[String] = js.native
+    var tableHeaderTitles: js.Array[String]
   }
   object CategoryListProps {
     
@@ -85,9 +85,4 @@ object categoryListCategoryListMod extends Shortcut {
       def setTableHeaderTitlesVarargs(value: String*): Self = StObject.set(x, "tableHeaderTitles", js.Array(value :_*))
     }
   }
-  
-  type _To = FC[CategoryListProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `categoryListCategoryListMod.foo` */
-  override def _to: FC[CategoryListProps] = default
 }

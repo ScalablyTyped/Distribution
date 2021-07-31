@@ -20,7 +20,6 @@ import typings.workboxWindow.workboxWindowStrings.redundant
 import typings.workboxWindow.workboxWindowStrings.waiting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workboxMod {
@@ -80,7 +79,7 @@ object workboxMod {
     
     def getSW(): js.Promise[ServiceWorker] = js.native
     
-    def messageSW(data: js.Any): js.Promise[_] = js.native
+    def messageSW(data: js.Any): js.Promise[js.Any] = js.native
     
     def register(): js.Promise[ServiceWorkerRegistration] = js.native
     def register(options: RegisterOptions): js.Promise[ServiceWorkerRegistration] = js.native
@@ -130,10 +129,9 @@ object workboxMod {
   }
   object Workbox {
     
-    @js.native
     trait RegisterOptions extends StObject {
       
-      var immediate: js.UndefOr[Boolean] = js.native
+      var immediate: js.UndefOr[Boolean] = js.undefined
     }
     object RegisterOptions {
       

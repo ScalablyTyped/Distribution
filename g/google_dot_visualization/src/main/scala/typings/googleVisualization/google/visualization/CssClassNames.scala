@@ -2,27 +2,25 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssClassNames extends StObject {
   
-  var headerCell: js.UndefOr[String] = js.native
+  var headerCell: js.UndefOr[String] = js.undefined
   
-  var headerRow: js.UndefOr[String] = js.native
+  var headerRow: js.UndefOr[String] = js.undefined
   
-  var hoverTableRow: js.UndefOr[String] = js.native
+  var hoverTableRow: js.UndefOr[String] = js.undefined
   
-  var oddTableRow: js.UndefOr[String] = js.native
+  var oddTableRow: js.UndefOr[String] = js.undefined
   
-  var rowNumberCell: js.UndefOr[String] = js.native
+  var rowNumberCell: js.UndefOr[String] = js.undefined
   
-  var selectedTableRow: js.UndefOr[String] = js.native
+  var selectedTableRow: js.UndefOr[String] = js.undefined
   
-  var tableCell: js.UndefOr[String] = js.native
+  var tableCell: js.UndefOr[String] = js.undefined
   
-  var tableRow: js.UndefOr[String] = js.native
+  var tableRow: js.UndefOr[String] = js.undefined
 }
 object CssClassNames {
   

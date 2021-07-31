@@ -3,22 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTargetRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TargetRequiredExceptionDetails> * / any */ @js.native
-  trait TargetRequiredException extends CreatePullRequestExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TargetRequiredExceptionDetails> * / any */ trait TargetRequiredException
+    extends StObject
+       with CreatePullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TargetRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TargetRequiredException
   }
   object TargetRequiredException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TargetRequiredException): TargetRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TargetRequiredException = {
+      val __obj = js.Dynamic.literal(name = "TargetRequiredException")
       __obj.asInstanceOf[TargetRequiredException]
     }
     
@@ -32,6 +32,5 @@ object typesTargetRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait TargetRequiredExceptionDetails extends StObject
 }

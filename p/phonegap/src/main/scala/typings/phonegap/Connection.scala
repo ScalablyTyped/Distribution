@@ -2,27 +2,25 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
-  var CELL_2G: Double = js.native
+  var CELL_2G: Double
   
-  var CELL_3G: Double = js.native
+  var CELL_3G: Double
   
-  var CELL_4G: Double = js.native
+  var CELL_4G: Double
   
-  var ETHERNET: Double = js.native
+  var ETHERNET: Double
   
-  var NONE: Double = js.native
+  var NONE: Double
   
-  var UNKNOWN: Double = js.native
+  var UNKNOWN: Double
   
-  var WIFI: Double = js.native
+  var WIFI: Double
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object Connection {
   

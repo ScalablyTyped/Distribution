@@ -2,23 +2,21 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapProgressDefaults extends StObject {
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var css: String = js.native
+  var css: String
   
-  var striped: Boolean = js.native
+  var striped: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var textHidden: Boolean = js.native
+  var textHidden: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object KnockstrapProgressDefaults {
   

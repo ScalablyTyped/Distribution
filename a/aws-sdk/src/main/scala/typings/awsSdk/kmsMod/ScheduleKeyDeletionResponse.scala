@@ -2,21 +2,19 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleKeyDeletionResponse extends StObject {
   
   /**
     * The date and time after which AWS KMS deletes the customer master key (CMK).
     */
-  var DeletionDate: js.UndefOr[DateType] = js.native
+  var DeletionDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK whose deletion is scheduled.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object ScheduleKeyDeletionResponse {
   

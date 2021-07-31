@@ -14,10 +14,13 @@ import typings.blueprintjsTable.renderModeMod.RenderMode.NONE
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableBodyCellsMod {
+  
+  @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells")
   @js.native
@@ -74,42 +77,41 @@ object tableBodyCellsMod {
     def defaultProps_=(x: RenderMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "cellClassNames")
-  @js.native
-  def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = js.native
+  @scala.inline
+  def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait ITableBodyCellsProps
-    extends IRowIndices
+    extends StObject
+       with IRowIndices
        with IColumnIndices
        with IProps {
     
     /**
       * A cell renderer for the cells in the body.
       */
-    var cellRenderer: ICellRenderer = js.native
+    var cellRenderer: ICellRenderer
     
     /**
       * The coordinates of the currently focused cell, for setting the "isFocused" prop on cells.
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
+    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
     
     /**
       * The grid computes sizes of cells, rows, or columns from the
       * configurable `columnWidths` and `rowHeights`.
       */
-    var grid: Grid = js.native
+    var grid: Grid
     
     /**
       * If true, all `Cell`s render their loading state except for those who have
       * their `loading` prop explicitly set to false.
       */
-    var loading: Boolean = js.native
+    var loading: Boolean
     
     /**
       * An optional callback invoked when all cells in view have completely rendered.
       */
-    var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Dictates how cells should be rendered. This component doesn't support
@@ -118,14 +120,14 @@ object tableBodyCellsMod {
       * "mounted"; thus, we let higher components tell us when to switch modes.
       * @default RenderMode.BATCH
       */
-    var renderMode: js.UndefOr[BATCH | NONE] = js.native
+    var renderMode: js.UndefOr[BATCH | NONE] = js.undefined
     
     /**
       * The `Rect` bounds of the visible viewport with respect to its parent
       * scrollable pane. While not directly used by the component, this prop is
       * necessary for shouldComponentUpdate logic to run properly.
       */
-    var viewportRect: Rect = js.native
+    var viewportRect: Rect
   }
   object ITableBodyCellsProps {
     

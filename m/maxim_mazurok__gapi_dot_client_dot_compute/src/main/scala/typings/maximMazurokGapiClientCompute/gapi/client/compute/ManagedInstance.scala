@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedInstance extends StObject {
   
   /**
@@ -23,31 +21,31 @@ trait ManagedInstance extends StObject {
     * without stopping that instance.
     * - VERIFYING The managed instance group has created the instance and it is in the process of being verified.
     */
-  var currentAction: js.UndefOr[String] = js.native
+  var currentAction: js.UndefOr[String] = js.undefined
   
   /** [Output only] The unique identifier for this resource. This field is empty when instance does not exist. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The URL of the instance. The URL can exist even if the instance has not yet been created. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Health state of the instance per health-check. */
-  var instanceHealth: js.UndefOr[js.Array[ManagedInstanceInstanceHealth]] = js.native
+  var instanceHealth: js.UndefOr[js.Array[ManagedInstanceInstanceHealth]] = js.undefined
   
   /** [Output Only] The status of the instance. This field is empty when the instance does not exist. */
-  var instanceStatus: js.UndefOr[String] = js.native
+  var instanceStatus: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Information about the last attempt to create or delete the instance. */
-  var lastAttempt: js.UndefOr[ManagedInstanceLastAttempt] = js.native
+  var lastAttempt: js.UndefOr[ManagedInstanceLastAttempt] = js.undefined
   
   /** [Output Only] Preserved state applied from per-instance config for this instance. */
-  var preservedStateFromConfig: js.UndefOr[PreservedState] = js.native
+  var preservedStateFromConfig: js.UndefOr[PreservedState] = js.undefined
   
   /** [Output Only] Preserved state generated based on stateful policy for this instance. */
-  var preservedStateFromPolicy: js.UndefOr[PreservedState] = js.native
+  var preservedStateFromPolicy: js.UndefOr[PreservedState] = js.undefined
   
   /** [Output Only] Intended version of this instance. */
-  var version: js.UndefOr[ManagedInstanceVersion] = js.native
+  var version: js.UndefOr[ManagedInstanceVersion] = js.undefined
 }
 object ManagedInstance {
   

@@ -4,17 +4,15 @@ import typings.node.NodeJS.WritableStream
 import typings.pino.mod.DestinationStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Level extends StObject {
     
-    var level: js.UndefOr[typings.pinoMultiStream.mod.Level] = js.native
+    var level: js.UndefOr[typings.pinoMultiStream.mod.Level] = js.undefined
     
-    var stream: DestinationStream | WritableStream = js.native
+    var stream: DestinationStream | WritableStream
   }
   object Level {
     

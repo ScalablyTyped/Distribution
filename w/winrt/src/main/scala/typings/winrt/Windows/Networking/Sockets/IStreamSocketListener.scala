@@ -5,21 +5,21 @@ import typings.winrt.Windows.Foundation.IClosable
 import typings.winrt.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStreamSocketListener extends IClosable {
+trait IStreamSocketListener
+  extends StObject
+     with IClosable {
   
-  def bindEndpointAsync(localHostName: HostName, localServiceName: String): IAsyncAction = js.native
+  def bindEndpointAsync(localHostName: HostName, localServiceName: String): IAsyncAction
   
-  def bindServiceNameAsync(localServiceName: String): IAsyncAction = js.native
+  def bindServiceNameAsync(localServiceName: String): IAsyncAction
   
-  var control: StreamSocketListenerControl = js.native
+  var control: StreamSocketListenerControl
   
-  var information: StreamSocketListenerInformation = js.native
+  var information: StreamSocketListenerInformation
   
-  var onconnectionreceived: js.Any = js.native
+  var onconnectionreceived: js.Any
 }
 object IStreamSocketListener {
   

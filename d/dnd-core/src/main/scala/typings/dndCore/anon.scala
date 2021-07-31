@@ -4,15 +4,13 @@ import typings.dndCore.interfacesMod.Identifier
 import typings.dndCore.interfacesMod.XYCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var handlerIds: js.UndefOr[js.Array[Identifier]] = js.native
+    var handlerIds: js.UndefOr[js.Array[Identifier]] = js.undefined
   }
   object `0` {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var shallow: js.UndefOr[Boolean] = js.native
+    var shallow: js.UndefOr[Boolean] = js.undefined
   }
   object `1` {
     
@@ -60,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClientOffset extends StObject {
     
-    var clientOffset: XYCoord = js.native
+    var clientOffset: XYCoord
     
-    var sourceClientOffset: XYCoord = js.native
+    var sourceClientOffset: XYCoord
   }
   object ClientOffset {
     
@@ -86,22 +82,21 @@ object anon {
     }
   }
   
-  @js.native
   trait DropResult extends StObject {
     
-    var dropResult: js.Any = js.native
+    var dropResult: js.Any
     
-    var isSourcePublic: Boolean = js.native
+    var isSourcePublic: Boolean
     
-    var item: js.Any = js.native
+    var item: js.Any
     
-    var itemType: Identifier | js.Array[Identifier] = js.native
+    var itemType: Identifier | js.Array[Identifier]
     
-    var sourceId: String = js.native
+    var sourceId: String
     
-    var targetId: String = js.native
+    var targetId: String
     
-    var targetIds: js.Array[String] = js.native
+    var targetIds: js.Array[String]
   }
   object DropResult {
     
@@ -151,10 +146,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HandlerIds extends StObject {
     
-    var handlerIds: js.UndefOr[js.Array[String]] = js.native
+    var handlerIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object HandlerIds {
     
@@ -178,10 +172,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Shallow extends StObject {
     
-    var shallow: Boolean = js.native
+    var shallow: Boolean
   }
   object Shallow {
     

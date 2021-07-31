@@ -2,13 +2,13 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProcedureMeta extends AbstractMeta {
+trait ProcedureMeta
+  extends StObject
+     with AbstractMeta {
   
-  var body: String = js.native
+  var body: String
 }
 object ProcedureMeta {
   

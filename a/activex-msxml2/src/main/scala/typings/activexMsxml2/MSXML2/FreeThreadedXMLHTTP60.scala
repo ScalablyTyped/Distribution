@@ -2,27 +2,25 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Free Threaded XML HTTP Request class 6.0 */
-@js.native
 trait FreeThreadedXMLHTTP60 extends StObject {
   
-  def GetCookie(pwszUrl: String, pwszName: String, dwFlags: Double, pcCookies: Double, ppCookies: tagXHRCOOKIE): Unit = js.native
+  def GetCookie(pwszUrl: String, pwszName: String, dwFlags: Double, pcCookies: Double, ppCookies: tagXHRCOOKIE): Unit
   
   @JSName("MSXML2.FreeThreadedXMLHTTP60_typekey")
-  var MSXML2DotFreeThreadedXMLHTTP60_typekey: FreeThreadedXMLHTTP60 = js.native
+  var MSXML2DotFreeThreadedXMLHTTP60_typekey: FreeThreadedXMLHTTP60
   
-  def SetCookie(pCookie: tagXHRCOOKIE, pdwCookieState: Double): Unit = js.native
+  def SetCookie(pCookie: tagXHRCOOKIE, pdwCookieState: Double): Unit
   
-  def SetCustomResponseStream(pSequentialStream: ISequentialStream): Unit = js.native
+  def SetCustomResponseStream(pSequentialStream: ISequentialStream): Unit
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  def getAllResponseHeaders(ppwszHeaders: String): Unit = js.native
+  def getAllResponseHeaders(ppwszHeaders: String): Unit
   
-  def getResponseHeader(pwszHeader: String, ppwszValue: String): Unit = js.native
+  def getResponseHeader(pwszHeader: String, ppwszValue: String): Unit
   
   def open(
     pwszMethod: String,
@@ -32,13 +30,13 @@ trait FreeThreadedXMLHTTP60 extends StObject {
     pwszPassword: String,
     pwszProxyUserName: String,
     pwszProxyPassword: String
-  ): Unit = js.native
+  ): Unit
   
-  def send(pBody: ISequentialStream, cbBody: Double): Unit = js.native
+  def send(pBody: ISequentialStream, cbBody: Double): Unit
   
-  def setProperty(eProperty: XHR_PROPERTY, ullValue: Double): Unit = js.native
+  def setProperty(eProperty: XHR_PROPERTY, ullValue: Double): Unit
   
-  def setRequestHeader(pwszHeader: String, pwszValue: String): Unit = js.native
+  def setRequestHeader(pwszHeader: String, pwszValue: String): Unit
 }
 object FreeThreadedXMLHTTP60 {
   

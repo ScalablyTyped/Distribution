@@ -2,19 +2,17 @@ package typings.kikBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KikGetFromCameraCallbacks extends StObject {
   
-  def onCancel(): Unit = js.native
+  def onCancel(): Unit
   
-  def onComplete(photos: js.Array[String]): Unit = js.native
+  def onComplete(photos: js.Array[String]): Unit
   
-  def onPhoto(photo: String, index: Double): Unit = js.native
+  def onPhoto(photo: String, index: Double): Unit
   
-  def onSelect(numPhotos: Double): Unit = js.native
+  def onSelect(numPhotos: Double): Unit
 }
 object KikGetFromCameraCallbacks {
   

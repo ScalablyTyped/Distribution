@@ -2,100 +2,100 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information summarized from a list of other resources
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait List extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait List
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * What the purpose of this list is
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When the list was prepared
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Why list is empty
     */
-  var emptyReason: js.UndefOr[CodeableConcept] = js.native
+  var emptyReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Context in which list created
     */
-  var encounter: js.UndefOr[Reference] = js.native
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Entries in the list
     */
-  var entry: js.UndefOr[js.Array[ListEntry]] = js.native
+  var entry: js.UndefOr[js.Array[ListEntry]] = js.undefined
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * working | snapshot | changes
     */
-  var mode: code = js.native
+  var mode: code
   
   /**
     * Comments about the list
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * What order the list has
     */
-  var orderedBy: js.UndefOr[CodeableConcept] = js.native
+  var orderedBy: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Who and/or what defined the list contents (aka Author)
     */
-  var source: js.UndefOr[Reference] = js.native
+  var source: js.UndefOr[Reference] = js.undefined
   
   /**
     * current | retired | entered-in-error
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * If all resources have the same subject
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * Descriptive name for the list
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object List {
   

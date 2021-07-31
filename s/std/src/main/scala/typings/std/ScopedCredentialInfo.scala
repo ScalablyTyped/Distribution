@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopedCredentialInfo extends StObject {
   
-  val credential: ScopedCredential = js.native
+  val credential: ScopedCredential
   
-  val publicKey: CryptoKey = js.native
+  val publicKey: CryptoKey
 }
 object ScopedCredentialInfo {
   

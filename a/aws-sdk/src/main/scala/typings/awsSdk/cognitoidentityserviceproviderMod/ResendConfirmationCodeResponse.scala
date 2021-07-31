@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResendConfirmationCodeResponse extends StObject {
   
   /**
     * The code delivery details returned by the server in response to the request to resend the confirmation code.
     */
-  var CodeDeliveryDetails: js.UndefOr[CodeDeliveryDetailsType] = js.native
+  var CodeDeliveryDetails: js.UndefOr[CodeDeliveryDetailsType] = js.undefined
 }
 object ResendConfirmationCodeResponse {
   

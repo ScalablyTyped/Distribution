@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveServiceResponse extends StObject {
   
-  var service: js.UndefOr[Service] = js.native
+  var service: js.UndefOr[Service] = js.undefined
 }
 object ResolveServiceResponse {
   

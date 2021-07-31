@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.LayerTree.ProfileSnapshotRequest
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.ProfileSnapshotResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeProfileSnapshotResponse extends StObject {
   
-  var paramsType: js.Array[ProfileSnapshotRequest] = js.native
+  var paramsType: js.Array[ProfileSnapshotRequest]
   
-  var returnType: ProfileSnapshotResponse = js.native
+  var returnType: ProfileSnapshotResponse
 }
 object ReturnTypeProfileSnapshotResponse {
   

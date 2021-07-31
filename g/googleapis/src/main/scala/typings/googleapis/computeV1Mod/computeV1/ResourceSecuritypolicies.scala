@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Securitypolicies")
@@ -30,7 +29,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def addRule(): GaxiosPromise[SchemaOperation] = js.native
   def addRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addRule(params: ParamsResourceSecuritypoliciesAddrule): GaxiosPromise[SchemaOperation] = js.native
   def addRule(params: ParamsResourceSecuritypoliciesAddrule, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addRule(
@@ -63,7 +62,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSecuritypoliciesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSecuritypoliciesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -93,7 +92,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaSecurityPolicy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(params: ParamsResourceSecuritypoliciesGet): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(params: ParamsResourceSecuritypoliciesGet, callback: BodyResponseCallback[SchemaSecurityPolicy]): Unit = js.native
   def get(
@@ -124,7 +123,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def getRule(): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(callback: BodyResponseCallback[SchemaSecurityPolicyRule]): Unit = js.native
-  def getRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
+  def getRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(params: ParamsResourceSecuritypoliciesGetrule): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(
     params: ParamsResourceSecuritypoliciesGetrule,
@@ -159,7 +158,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSecuritypoliciesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSecuritypoliciesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -193,7 +192,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(callback: BodyResponseCallback[SchemaSecurityPolicyList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(params: ParamsResourceSecuritypoliciesList): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(
     params: ParamsResourceSecuritypoliciesList,
@@ -228,7 +227,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSecuritypoliciesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSecuritypoliciesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -260,7 +259,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def patchRule(): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patchRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patchRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(params: ParamsResourceSecuritypoliciesPatchrule): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(params: ParamsResourceSecuritypoliciesPatchrule, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patchRule(
@@ -291,7 +290,7 @@ class ResourceSecuritypolicies protected () extends StObject {
     */
   def removeRule(): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def removeRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(params: ParamsResourceSecuritypoliciesRemoverule): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(params: ParamsResourceSecuritypoliciesRemoverule, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def removeRule(

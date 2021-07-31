@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath.SignEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PEventSignEventObject extends StObject {
   
-  val pEvent: SignEventObject = js.native
+  val pEvent: SignEventObject
 }
 object PEventSignEventObject {
   

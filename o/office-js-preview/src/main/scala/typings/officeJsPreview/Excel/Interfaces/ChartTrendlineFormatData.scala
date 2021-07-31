@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartTrendlineFormat.toJSON()`. */
-@js.native
 trait ChartTrendlineFormatData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartTrendlineFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var line: js.UndefOr[ChartLineFormatData] = js.native
+  var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
 object ChartTrendlineFormatData {
   

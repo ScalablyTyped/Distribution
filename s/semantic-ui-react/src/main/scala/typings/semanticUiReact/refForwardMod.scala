@@ -6,7 +6,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refForwardMod {
@@ -18,9 +17,9 @@ object refForwardMod {
   
   type RefForward = Component[RefForwardProps, js.Object, js.Any]
   
-  @js.native
   trait RefForwardProps
-    extends StrictRefForwardProps
+    extends StObject
+       with StrictRefForwardProps
        with /* key */ StringDictionary[js.Any]
   object RefForwardProps {
     
@@ -31,18 +30,17 @@ object refForwardMod {
     }
   }
   
-  @js.native
   trait StrictRefForwardProps extends StObject {
     
     /** Primary content. */
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
     /**
       * Called when a child component will be mounted or updated.
       *
       * @param {HTMLElement} node - Referred node.
       */
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   }
   object StrictRefForwardProps {
     
@@ -62,10 +60,10 @@ object refForwardMod {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

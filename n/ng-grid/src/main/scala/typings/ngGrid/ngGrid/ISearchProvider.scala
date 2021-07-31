@@ -2,17 +2,15 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchProvider extends StObject {
   
-  def evalFilter(): Unit = js.native
+  def evalFilter(): Unit
   
-  var extFilter: Boolean = js.native
+  var extFilter: Boolean
   
-  var fieldMap: js.Any = js.native
+  var fieldMap: js.Any
 }
 object ISearchProvider {
   

@@ -4,75 +4,73 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorNode extends StObject {
   
-  def appendChild(node: JSONEditorNode): Unit = js.native
+  def appendChild(node: JSONEditorNode): Unit
   
-  def blur(): Unit = js.native
+  def blur(): Unit
   
-  def changeType(newType: String): Unit = js.native
+  def changeType(newType: String): Unit
   
-  def clearDom(): Unit = js.native
+  def clearDom(): Unit
   
-  def collapse(recurse: Boolean): Unit = js.native
+  def collapse(recurse: Boolean): Unit
   
-  def containsNode(node: JSONEditorNode): Boolean = js.native
+  def containsNode(node: JSONEditorNode): Boolean
   
-  def expand(recurse: Boolean): Unit = js.native
+  def expand(recurse: Boolean): Unit
   
-  def focus(): Unit = js.native
+  def focus(): Unit
   
-  def getAppend(): HTMLElement = js.native
+  def getAppend(): HTMLElement
   
-  def getDom(): HTMLElement = js.native
+  def getDom(): HTMLElement
   
-  def getField(): String = js.native
+  def getField(): String
   
-  def getLevel(): Double = js.native
+  def getLevel(): Double
   
-  def getParent(): JSONEditorNode = js.native
+  def getParent(): JSONEditorNode
   
-  def getValue(): js.Any = js.native
+  def getValue(): js.Any
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def hideChilds(): Unit = js.native
+  def hideChilds(): Unit
   
-  def insertBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit = js.native
+  def insertBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit
   
-  def moveBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit = js.native
+  def moveBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit
   
-  def moveTo(node: JSONEditorNode, index: Double): Unit = js.native
+  def moveTo(node: JSONEditorNode, index: Double): Unit
   
-  def onEvent(event: Event): Unit = js.native
+  def onEvent(event: Event): Unit
   
-  def removeChild(node: JSONEditorNode): JSONEditorNode = js.native
+  def removeChild(node: JSONEditorNode): JSONEditorNode
   
-  def scrollTo(): Unit = js.native
+  def scrollTo(): Unit
   
-  def search(text: String): js.Array[JSONEditorNode] = js.native
+  def search(text: String): js.Array[JSONEditorNode]
   
-  def setField(field: String, fieldEditable: Boolean): Unit = js.native
+  def setField(field: String, fieldEditable: Boolean): Unit
   
-  def setHighlight(highlight: Boolean): Unit = js.native
+  def setHighlight(highlight: Boolean): Unit
   
-  def setParent(parent: JSONEditorNode): Unit = js.native
+  def setParent(parent: JSONEditorNode): Unit
   
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: js.Any): Unit
   
-  def showChilds(): Unit = js.native
+  def showChilds(): Unit
   
-  var types: js.Array[JSONEditorNodeType] = js.native
+  var types: js.Array[JSONEditorNodeType]
   
-  def updateDom(): Unit = js.native
+  def updateDom(): Unit
   
-  def updateField(field: String): Unit = js.native
+  def updateField(field: String): Unit
   
-  def updateValue(value: js.Any): Unit = js.native
+  def updateValue(value: js.Any): Unit
 }
 object JSONEditorNode {
   

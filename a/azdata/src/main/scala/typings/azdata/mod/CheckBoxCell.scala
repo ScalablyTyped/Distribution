@@ -2,15 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckBoxCell extends TableCell {
+trait CheckBoxCell
+  extends StObject
+     with TableCell {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var columnName: String = js.native
+  var columnName: String
 }
 object CheckBoxCell {
   

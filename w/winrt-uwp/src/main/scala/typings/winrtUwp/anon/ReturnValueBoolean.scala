@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Media.Capture.PowerlineFrequency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnValueBoolean extends StObject {
   
-  /** Returns true if the method succeeded, or false otherwise. */ var returnValue: Boolean = js.native
+  /** Returns true if the method succeeded, or false otherwise. */ var returnValue: Boolean
   
-  /** The power line frequency. */ var value: PowerlineFrequency = js.native
+  /** The power line frequency. */ var value: PowerlineFrequency
 }
 object ReturnValueBoolean {
   

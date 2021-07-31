@@ -10,14 +10,16 @@ import typings.accedoAccedoOne.mod.AccedoLog.Logobject
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(config: AccedoConfig): AccedoClient = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AccedoClient]
+  
   @JSImport("@accedo/accedo-one", JSImport.Namespace)
   @js.native
-  def apply(config: AccedoConfig): AccedoClient = js.native
+  val ^ : js.Any = js.native
   
   object AccedoLog {
     
@@ -28,38 +30,45 @@ object mod {
     object Level extends StObject {
       
       @js.native
-      sealed trait DEBUG extends Level
+      sealed trait DEBUG
+        extends StObject
+           with Level
       
       @js.native
-      sealed trait ERROR extends Level
+      sealed trait ERROR
+        extends StObject
+           with Level
       
       @js.native
-      sealed trait INFO extends Level
+      sealed trait INFO
+        extends StObject
+           with Level
       
       @js.native
-      sealed trait WARN extends Level
+      sealed trait WARN
+        extends StObject
+           with Level
     }
     
-    @js.native
     trait Details extends StObject {
       
       /** The dimension 1 information */
-      var dim1: js.UndefOr[String] = js.native
+      var dim1: js.UndefOr[String] = js.undefined
       
       /** The dimension 2 information */
-      var dim2: js.UndefOr[String] = js.native
+      var dim2: js.UndefOr[String] = js.undefined
       
       /** The dimension 3 information */
-      var dim3: js.UndefOr[String] = js.native
+      var dim3: js.UndefOr[String] = js.undefined
       
       /** The dimension 4 information */
-      var dim4: js.UndefOr[String] = js.native
+      var dim4: js.UndefOr[String] = js.undefined
       
       /** The error code (max 5 digits) */
-      var errorCode: js.UndefOr[Double] = js.native
+      var errorCode: js.UndefOr[Double] = js.undefined
       
       /** The log message */
-      var message: String = js.native
+      var message: String
     }
     object Details {
       
@@ -107,23 +116,24 @@ object mod {
       }
     }
     
-    @js.native
-    trait Logobject extends Details {
+    trait Logobject
+      extends StObject
+         with Details {
       
       /**
         * the log type
         */
-      var logType: Level = js.native
+      var logType: Level
       
       /** Extra metadata (will go through JSON.stringify) */
-      var metadata: js.UndefOr[js.Any] = js.native
+      var metadata: js.UndefOr[js.Any] = js.undefined
       
       /**
         * The timestamp for the log, as a UTC ISO 8601 string
         * (ie. '2016-07-04T06:17:21Z'), or a POSIX millisecond
         * number
         */
-      var timestamp: String | Double = js.native
+      var timestamp: String | Double
     }
     object Logobject {
       
@@ -171,7 +181,7 @@ object mod {
       * @param userName an Accedo One user
       * @returns A promise of the requested data
       */
-    def getAllApplicationGroupScopeDataByUser(userName: String): js.Promise[_] = js.native
+    def getAllApplicationGroupScopeDataByUser(userName: String): js.Promise[js.Any] = js.native
     
     /**
       * Get all the application-scope data for a given user
@@ -179,7 +189,7 @@ object mod {
       * @param userName an Accedo One user
       * @returns A promise of the requested data
       */
-    def getAllApplicationScopeDataByUser(userName: String): js.Promise[_] = js.native
+    def getAllApplicationScopeDataByUser(userName: String): js.Promise[js.Any] = js.native
     
     /**
       * Lists all the assets.
@@ -193,14 +203,14 @@ object mod {
       *
       * @returns A promise of the requested data
       */
-    def getAllEnabledPlugins(): js.Promise[_] = js.native
+    def getAllEnabledPlugins(): js.Promise[js.Any] = js.native
     
     /**
       * Get all the metadata
       *
       * @returns A promise of the requested data
       */
-    def getAllMetadata(): js.Promise[_] = js.native
+    def getAllMetadata(): js.Promise[js.Any] = js.native
     
     /**
       * Get all the application-group-scope data for a given user
@@ -209,7 +219,7 @@ object mod {
       * @param key a key to specify what data to obtain
       * @returns A promise of the requested data
       */
-    def getApplicationGroupScopeDataByUserAndKey(userName: String, key: String): js.Promise[_] = js.native
+    def getApplicationGroupScopeDataByUserAndKey(userName: String, key: String): js.Promise[js.Any] = js.native
     
     /**
       * Get all the application-scope data for a given user and data key
@@ -217,7 +227,7 @@ object mod {
       * @param userName an Accedo One user
       * @param key a key to specify what data to obtain
       */
-    def getApplicationScopeDataByUserAndKey(userName: String, key: String): js.Promise[_] = js.native
+    def getApplicationScopeDataByUserAndKey(userName: String, key: String): js.Promise[js.Any] = js.native
     
     /**
       * Get the current application status
@@ -240,8 +250,8 @@ object mod {
       *
       * @param params
       */
-    def getEntries(): js.Promise[_] = js.native
-    def getEntries(params: AccedoEntryParams): js.Promise[_] = js.native
+    def getEntries(): js.Promise[js.Any] = js.native
+    def getEntries(params: AccedoEntryParams): js.Promise[js.Any] = js.native
     
     /**
       * Get one content entry, based on the given parameters.
@@ -258,8 +268,8 @@ object mod {
       * @param id
       * @param params
       */
-    def getEntryById(id: String): js.Promise[_] = js.native
-    def getEntryById(id: String, params: PickAccedoEntryParamsprev): js.Promise[_] = js.native
+    def getEntryById(id: String): js.Promise[js.Any] = js.native
+    def getEntryById(id: String, params: PickAccedoEntryParamsprev): js.Promise[js.Any] = js.native
     
     /**
       * Get the current log level
@@ -274,7 +284,7 @@ object mod {
       * @param key a key to get specific metadata
       * @returns a promise of the requested data
       */
-    def getMetadataByKey(key: String): js.Promise[_] = js.native
+    def getMetadataByKey(key: String): js.Promise[js.Any] = js.native
     
     /**
       * Get the metadata by specific keys
@@ -282,7 +292,7 @@ object mod {
       * @param keys an array of keys (strings)
       * @returns a promise of the requested data
       */
-    def getMetadataByKeys(keys: js.Array[String]): js.Promise[_] = js.native
+    def getMetadataByKeys(keys: js.Array[String]): js.Promise[js.Any] = js.native
     
     /**
       * Get the profile information
@@ -382,39 +392,38 @@ object mod {
     def setApplicationScopeUserDataByKey[D /* <: js.Object */](userName: String, key: String, data: D): js.Promise[D] = js.native
   }
   
-  @js.native
   trait AccedoConfig extends StObject {
     
     /** The application Key */
-    var appKey: String = js.native
+    var appKey: String
     
     /**
       * A function that should return an object with deviceId and
       * sessionKey properties, saved from previous sessions (see
       * onDeviceIdGenerated, onSessionKeyChanged)
       */
-    var browserInfoProvider: js.UndefOr[js.Function0[DeviceId]] = js.native
+    var browserInfoProvider: js.UndefOr[js.Function0[DeviceId]] = js.undefined
     
     /** The device identifier (if not provided, a uuid will be generated instead) */
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
     /** the user's IP, given to Accedo One for every request this client will trigger (for geolocation). */
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
     /** A function to use to see this SDK's logs */
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     /** Callback to obtain the new deviceId, if one gets generated */
-    var onDeviceIdGenerated: js.UndefOr[js.Function1[/* deviceId */ String, Unit]] = js.native
+    var onDeviceIdGenerated: js.UndefOr[js.Function1[/* deviceId */ String, Unit]] = js.undefined
     
     /** Callback to obtain the sessionKey, anytime a new one gets generated */
-    var onSessionKeyChanged: js.UndefOr[js.Function1[/* sessionKey */ String, Unit]] = js.native
+    var onSessionKeyChanged: js.UndefOr[js.Function1[/* sessionKey */ String, Unit]] = js.undefined
     
     /** The sessionKey (note a new one may be created when not given or expired) */
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
     /** All APIs calls will use this as the base API URL (defaults to the Accedo One API URL) */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object AccedoConfig {
     
@@ -480,41 +489,40 @@ object mod {
     }
   }
   
-  @js.native
   trait AccedoEntryParams extends StObject {
     
     /** an array of entry aliases (strings) */
-    var alias: js.UndefOr[js.Array[String]] = js.native
+    var alias: js.UndefOr[js.Array[String]] = js.undefined
     
     /** when given, get the version at the given time */
-    var at: js.UndefOr[String | Date] = js.native
+    var at: js.UndefOr[String | Date] = js.undefined
     
     /** an array of entry ids (strings) */
-    var id: js.UndefOr[js.Array[String]] = js.native
+    var id: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * if available, get the version for the given locale
       * (defaults to the default locale)
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Offset the result by that many pages */
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
     /** when true, get the preview version */
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limit to that many results per page (limits as per Accedo
       * One API, currently 1 to 50, default 20)
       */
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
     /** only return entries whose entry type has this alias */
-    var typeAlias: js.UndefOr[String] = js.native
+    var typeAlias: js.UndefOr[String] = js.undefined
     
     /** only return entries of the given type ids (strings) */
-    var typeId: js.UndefOr[js.Array[String]] = js.native
+    var typeId: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AccedoEntryParams {
     
@@ -592,14 +600,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AccedoLocale extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var countryInfo: Alpha2Code = js.native
+    var countryInfo: Alpha2Code
     
-    var displayName: String = js.native
+    var displayName: String
   }
   object AccedoLocale {
     
@@ -623,16 +630,15 @@ object mod {
     }
   }
   
-  @js.native
   trait AccedoProfile extends StObject {
     
-    var profileDescription: String = js.native
+    var profileDescription: String
     
-    var profileId: String = js.native
+    var profileId: String
     
-    var profileLastModified: String = js.native
+    var profileLastModified: String
     
-    var profileName: String = js.native
+    var profileName: String
   }
   object AccedoProfile {
     

@@ -3,24 +3,22 @@ package typings.highcharts.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityScreenReaderSectionOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for the screen reader
     * information region after the chart. Analogous to beforeChartFormat.
     */
-  var afterChartFormat: js.UndefOr[String] = js.native
+  var afterChartFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A formatter function to create
     * the HTML contents of the hidden screen reader information region after
     * the chart. Analogous to beforeChartFormatter.
     */
-  var afterChartFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Chart_]] = js.native
+  var afterChartFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Chart_]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Date format to use to describe
@@ -28,7 +26,7 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
     *
     * For an overview of the replacement codes, see dateFormat.
     */
-  var axisRangeDateFormat: js.UndefOr[String] = js.native
+  var axisRangeDateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for the screen reader
@@ -39,7 +37,7 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
     * Numbers, lower- and uppercase letters, "-" and "#" are valid characters
     * in IDs.
     */
-  var beforeChartFormat: js.UndefOr[String] = js.native
+  var beforeChartFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A formatter function to create
@@ -49,7 +47,7 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
     * this returns an automatic description of the chart based on
     * beforeChartFormat.
     */
-  var beforeChartFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Chart_]] = js.native
+  var beforeChartFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Chart_]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Function to run upon clicking
@@ -57,7 +55,7 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
     *
     * By default Highcharts will call the `chart.sonify` function.
     */
-  var onPlayAsSoundClick: js.UndefOr[ScreenReaderClickCallbackFunction] = js.native
+  var onPlayAsSoundClick: js.UndefOr[ScreenReaderClickCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Function to run upon clicking
@@ -66,7 +64,7 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
     * By default Highcharts will insert and set focus to a data table
     * representation of the chart.
     */
-  var onViewDataTableClick: js.UndefOr[ScreenReaderClickCallbackFunction] = js.native
+  var onViewDataTableClick: js.UndefOr[ScreenReaderClickCallbackFunction] = js.undefined
 }
 object AccessibilityScreenReaderSectionOptions {
   

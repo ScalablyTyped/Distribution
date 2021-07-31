@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfig extends StObject {
   
   /**
     * A list of one or more security groups IDs in your Amazon VPC.
     */
-  var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.native
+  var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
     * A list of one or more subnet IDs in your Amazon VPC.
     */
-  var subnets: js.UndefOr[Subnets] = js.native
+  var subnets: js.UndefOr[Subnets] = js.undefined
   
   /**
     * The ID of the Amazon VPC.
     */
-  var vpcId: js.UndefOr[NonEmptyString] = js.native
+  var vpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object VpcConfig {
   

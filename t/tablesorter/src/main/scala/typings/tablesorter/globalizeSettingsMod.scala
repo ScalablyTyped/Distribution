@@ -4,23 +4,23 @@ import typings.globalize.globalizeMod.DateFormatterOptions
 import typings.globalize.globalizeMod.Globalize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalizeSettingsMod {
   
-  @js.native
-  trait GlobalizeSettings extends DateFormatterOptions {
+  trait GlobalizeSettings
+    extends StObject
+       with DateFormatterOptions {
     
     /**
       * The `Globalize`-object to use for localization.
       */
-    var Globalize: typings.globalize.globalizeMod.Globalize = js.native
+    var Globalize: typings.globalize.globalizeMod.Globalize
     
     /**
       * The language to localize the dates to.
       */
-    var lang: String = js.native
+    var lang: String
   }
   object GlobalizeSettings {
     

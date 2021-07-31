@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopDataAttributes extends StObject {
   
   /**
     * Sets whether the input image is free of personally identifiable information.
     */
-  var ContentClassifiers: js.UndefOr[typings.awsSdk.rekognitionMod.ContentClassifiers] = js.native
+  var ContentClassifiers: js.UndefOr[typings.awsSdk.rekognitionMod.ContentClassifiers] = js.undefined
 }
 object HumanLoopDataAttributes {
   

@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineNumbering extends StObject {
   
-  var Active: Double = js.native
+  var Active: Double
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var CountBy: Double = js.native
+  var CountBy: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DistanceFromText: Double = js.native
+  var DistanceFromText: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RestartMode: WdNumberingRule = js.native
+  var RestartMode: WdNumberingRule
   
-  var StartingNumber: Double = js.native
+  var StartingNumber: Double
   
   @JSName("Word.LineNumbering_typekey")
-  var WordDotLineNumbering_typekey: LineNumbering = js.native
+  var WordDotLineNumbering_typekey: LineNumbering
 }
 object LineNumbering {
   

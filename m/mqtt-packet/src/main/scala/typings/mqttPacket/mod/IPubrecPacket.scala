@@ -4,24 +4,23 @@ import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.pubrec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPubrecPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IPubrecPacket: pubrec = js.native
+  var cmd_IPubrecPacket: pubrec
   
-  var properties: js.UndefOr[ReasonString] = js.native
+  var properties: js.UndefOr[ReasonString] = js.undefined
 }
 object IPubrecPacket {
   
   @scala.inline
-  def apply(cmd: pubrec): IPubrecPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
+  def apply(): IPubrecPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pubrec")
     __obj.asInstanceOf[IPubrecPacket]
   }
   

@@ -4,11 +4,11 @@ import typings.winrt.Windows.Devices.Input.PointerDeviceType
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManipulationUpdatedEventArgs extends IManipulationUpdatedEventArgs
+trait ManipulationUpdatedEventArgs
+  extends StObject
+     with IManipulationUpdatedEventArgs
 object ManipulationUpdatedEventArgs {
   
   @scala.inline

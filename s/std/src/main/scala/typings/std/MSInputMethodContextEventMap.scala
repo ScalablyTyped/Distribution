@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSInputMethodContextEventMap extends StObject {
   
-  var MSCandidateWindowHide: Event = js.native
+  var MSCandidateWindowHide: Event
   
-  var MSCandidateWindowShow: Event = js.native
+  var MSCandidateWindowShow: Event
   
-  var MSCandidateWindowUpdate: Event = js.native
+  var MSCandidateWindowUpdate: Event
 }
 object MSInputMethodContextEventMap {
   

@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -104,7 +103,7 @@ trait IgGridSelectionMethods extends StObject {
     *
     * If multiple selection is disabled the function will return null.
     */
-  def selectedCells(): js.Array[_] = js.native
+  def selectedCells(): js.Array[js.Any] = js.native
   
   /**
     * Returns the currently selected row that has the format { element: , index: }, if any.
@@ -118,5 +117,5 @@ trait IgGridSelectionMethods extends StObject {
     *
     * If multiple selection is disabled the function will return null.
     */
-  def selectedRows(): js.Array[_] = js.native
+  def selectedRows(): js.Array[js.Any] = js.native
 }

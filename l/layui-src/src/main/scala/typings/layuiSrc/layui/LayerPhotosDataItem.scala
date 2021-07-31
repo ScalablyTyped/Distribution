@@ -2,19 +2,17 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerPhotosDataItem extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var pid: js.UndefOr[Double] = js.native
+  var pid: js.UndefOr[Double] = js.undefined
   
-  var src: String = js.native
+  var src: String
   
-  var thumb: String = js.native
+  var thumb: String
 }
 object LayerPhotosDataItem {
   

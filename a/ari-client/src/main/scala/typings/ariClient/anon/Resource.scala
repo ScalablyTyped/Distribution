@@ -2,15 +2,13 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
-  var resource: String = js.native
+  var resource: String
   
-  var tech: String = js.native
+  var tech: String
 }
 object Resource {
   

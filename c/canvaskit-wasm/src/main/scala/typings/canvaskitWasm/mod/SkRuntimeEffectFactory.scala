@@ -2,17 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkRuntimeEffectFactory extends StObject {
   
   /**
     * Compiles a SkRuntimeEffect from the given shader code.
     * @param sksl - Source code for a shader written in SkSL
     */
-  def Make(sksl: String): SkRuntimeEffect | Null = js.native
+  def Make(sksl: String): SkRuntimeEffect | Null
 }
 object SkRuntimeEffectFactory {
   

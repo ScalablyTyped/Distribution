@@ -4,24 +4,22 @@ import typings.chance.chanceStrings.lower
 import typings.chance.chanceStrings.upper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.StringOptions> */
-@js.native
 trait PartialStringOptions extends StObject {
   
-  var alpha: js.UndefOr[Boolean] = js.native
+  var alpha: js.UndefOr[Boolean] = js.undefined
   
-  var casing: js.UndefOr[upper | lower] = js.native
+  var casing: js.UndefOr[upper | lower] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var numeric: js.UndefOr[Boolean] = js.native
+  var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var pool: js.UndefOr[String] = js.native
+  var pool: js.UndefOr[String] = js.undefined
   
-  var symbols: js.UndefOr[Boolean] = js.native
+  var symbols: js.UndefOr[Boolean] = js.undefined
 }
 object PartialStringOptions {
   

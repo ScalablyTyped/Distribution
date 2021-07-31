@@ -12,26 +12,24 @@ import typings.rdfJs.mod.Term
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInit[D]): AnyPointer[AnyContext, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[AnyContext, D]]
+  @scala.inline
+  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValue[D]): AnyPointer[Literal, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[Literal, D]]
+  @scala.inline
+  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValues[D]): AnyPointer[js.Array[Literal], D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[js.Array[Literal], D]]
+  @scala.inline
+  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term | js.Array[Term] */](options: ClownfaceInitWithTerms[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
+  @scala.inline
+  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: AnyContext */](other: AnyPointer[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(other.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
+  
   @JSImport("clownface", JSImport.Namespace)
   @js.native
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInit[D]): AnyPointer[AnyContext, D] = js.native
-  @JSImport("clownface", JSImport.Namespace)
-  @js.native
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValue[D]): AnyPointer[Literal, D] = js.native
-  @JSImport("clownface", JSImport.Namespace)
-  @js.native
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValues[D]): AnyPointer[js.Array[Literal], D] = js.native
-  @JSImport("clownface", JSImport.Namespace)
-  @js.native
-  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term | js.Array[Term] */](options: ClownfaceInitWithTerms[T, D]): AnyPointer[T, D] = js.native
-  @JSImport("clownface", JSImport.Namespace)
-  @js.native
-  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: AnyContext */](other: AnyPointer[T, D]): AnyPointer[T, D] = js.native
+  val ^ : js.Any = js.native
   
   type AddCallback[D /* <: DatasetCore[Quad, Quad] */, X /* <: Term */] = js.Function1[/* added */ AnyPointer[X, D], Unit]
   
@@ -60,12 +58,13 @@ object mod {
     ): AnyPointer[T, D] = js.native
     
     def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
+    def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: Unit, callback: AddCallback[D, X]): AnyPointer[T, D] = js.native
+    def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
     def addList[X /* <: Term */](
       predicates: SingleOrArrayOfTerms[Term],
-      objects: js.UndefOr[SingleOrArrayOfTermsOrLiterals[X]],
+      objects: SingleOrArrayOfTermsOrLiterals[X],
       callback: AddCallback[D, X]
     ): AnyPointer[T, D] = js.native
-    def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
     
     def addOut(predicates: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     def addOut(predicates: SingleOrArrayOfTerms[Term], bnode: SingleOrOneElementArray[js.UndefOr[Null]]): AnyPointer[T, D] = js.native
@@ -87,8 +86,9 @@ object mod {
     def any(): AnyPointer[AnyContext, D] = js.native
     
     def blankNode(): AnyPointer[BlankNode, D] = js.native
-    def blankNode(value: (AnyPointer[BlankNode, D]) | (MultiPointer[BlankNode, D]) | SingleOrOneElementArray[String]): AnyPointer[BlankNode, D] = js.native
+    def blankNode(value: (AnyPointer[BlankNode, D]) | (MultiPointer[BlankNode, D])): AnyPointer[BlankNode, D] = js.native
     def blankNode(values: js.Array[String]): AnyPointer[js.Array[BlankNode], D] = js.native
+    def blankNode(value: SingleOrOneElementArray[String]): AnyPointer[BlankNode, D] = js.native
     
     val dataset: D = js.native
     
@@ -114,27 +114,30 @@ object mod {
     
     def list(): (Iterable[Iteratee[T, D]]) | Null = js.native
     
+    def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D])): AnyPointer[Literal, D] = js.native
+    def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]), languageOrDatatype: String): AnyPointer[Literal, D] = js.native
     def literal(
-      value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]) | (SingleOrOneElementArray[Boolean | String | Double | Term | Null])
-    ): AnyPointer[Literal, D] = js.native
-    def literal(
-      value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]) | (SingleOrOneElementArray[Boolean | String | Double | Term | Null]),
-      languageOrDatatype: String
-    ): AnyPointer[Literal, D] = js.native
-    def literal(
-      value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]) | (SingleOrOneElementArray[Boolean | String | Double | Term | Null]),
+      value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]),
       languageOrDatatype: NamedNode[String]
     ): AnyPointer[Literal, D] = js.native
     def literal(values: js.Array[Boolean | String | Double | Term | Null]): AnyPointer[js.Array[Literal], D] = js.native
     def literal(values: js.Array[Boolean | String | Double | Term | Null], languageOrDatatype: String): AnyPointer[js.Array[Literal], D] = js.native
     def literal(values: js.Array[Boolean | String | Double | Term | Null], languageOrDatatype: NamedNode[String]): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(value: SingleOrOneElementArray[Boolean | String | Double | Term | Null]): AnyPointer[Literal, D] = js.native
+    def literal(
+      value: SingleOrOneElementArray[Boolean | String | Double | Term | Null],
+      languageOrDatatype: String
+    ): AnyPointer[Literal, D] = js.native
+    def literal(
+      value: SingleOrOneElementArray[Boolean | String | Double | Term | Null],
+      languageOrDatatype: NamedNode[String]
+    ): AnyPointer[Literal, D] = js.native
     
     def map[X](cb: js.Function2[/* quad */ Iteratee[T, D], /* index */ Double, X]): js.Array[X] = js.native
     
-    def namedNode(
-      value: (AnyPointer[NamedNode[String], D]) | (MultiPointer[NamedNode[String], D]) | (SingleOrOneElementArray[String | NamedNode[String]])
-    ): AnyPointer[NamedNode[String], D] = js.native
+    def namedNode(value: (AnyPointer[NamedNode[String], D]) | (MultiPointer[NamedNode[String], D])): AnyPointer[NamedNode[String], D] = js.native
     def namedNode(values: js.Array[String | NamedNode[String]]): AnyPointer[js.Array[NamedNode[String]], D] = js.native
+    def namedNode(value: SingleOrOneElementArray[String | NamedNode[String]]): AnyPointer[NamedNode[String], D] = js.native
     
     def node(): AnyPointer[BlankNode, D] = js.native
     def node(value: Null, options: NodeOptions): AnyPointer[BlankNode, D] = js.native
@@ -142,19 +145,21 @@ object mod {
     def node(values: js.Array[Boolean | Double | Null | String | Term], options: NodeOptions): AnyPointer[js.Array[Literal], D] = js.native
     def node(value: SingleOrOneElementArray[Boolean | String | Double]): AnyPointer[Literal, D] = js.native
     def node(value: SingleOrOneElementArray[Boolean | String | Double], options: NodeOptions): AnyPointer[Literal, D] = js.native
-    def node[X /* <: js.Array[Term] */](values: X): AnyPointer[X, D] = js.native
-    def node[X /* <: js.Array[Term] */](values: X, options: NodeOptions): AnyPointer[X, D] = js.native
+    def node[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D])): AnyPointer[X, D] = js.native
+    def node[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D]), options: NodeOptions): AnyPointer[X, D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D]) | SingleOrOneElementArray[X]): AnyPointer[X, D] = js.native
+    def node_X_ArrayTerm[X /* <: js.Array[Term] */](values: X): AnyPointer[X, D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](
-      value: (AnyPointer[X, D]) | (MultiPointer[X, D]) | SingleOrOneElementArray[X],
-      options: NodeOptions
-    ): AnyPointer[X, D] = js.native
+    def node_X_ArrayTerm[X /* <: js.Array[Term] */](values: X, options: NodeOptions): AnyPointer[X, D] = js.native
+    @JSName("node")
+    def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X]): AnyPointer[X, D] = js.native
+    @JSName("node")
+    def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X], options: NodeOptions): AnyPointer[X, D] = js.native
     
     def out(): MultiPointer[Term, D] = js.native
-    def out(predicates: js.UndefOr[SingleOrArrayOfTerms[Term]], options: OutOptions): MultiPointer[Literal, D] = js.native
+    def out(predicates: Unit, options: OutOptions): MultiPointer[Literal, D] = js.native
     def out(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[Term, D] = js.native
+    def out(predicates: SingleOrArrayOfTerms[Term], options: OutOptions): MultiPointer[Literal, D] = js.native
     
     val term: js.UndefOr[
         T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
@@ -177,14 +182,13 @@ object mod {
   }
   
   /* Inlined std.Partial<std.Pick<clownface.clownface.AnyPointer<clownface.clownface.AnyContext, D>, 'dataset' | '_context'> & {  graph :rdf-js.rdf-js.Quad_Graph}> */
-  @js.native
   trait ClownfaceInit[D /* <: DatasetCore[Quad, Quad] */] extends StObject {
     
-    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.native
+    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.undefined
     
-    var dataset: js.UndefOr[D] = js.native
+    var dataset: js.UndefOr[D] = js.undefined
     
-    var graph: js.UndefOr[QuadGraph] = js.native
+    var graph: js.UndefOr[QuadGraph] = js.undefined
   }
   object ClownfaceInit {
     
@@ -195,7 +199,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClownfaceInitMutableBuilder[Self <: ClownfaceInit[_], D /* <: DatasetCore[Quad, Quad] */] (val x: Self with ClownfaceInit[D]) extends AnyVal {
+    implicit class ClownfaceInitMutableBuilder[Self <: ClownfaceInit[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInit[D]) extends AnyVal {
       
       @scala.inline
       def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
@@ -221,16 +225,15 @@ object mod {
   }
   
   /* Inlined clownface.clownface.ClownfaceInit<D> & {  term :T} */
-  @js.native
   trait ClownfaceInitWithTerms[T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */] extends StObject {
     
-    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.native
+    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.undefined
     
-    var dataset: js.UndefOr[D] = js.native
+    var dataset: js.UndefOr[D] = js.undefined
     
-    var graph: js.UndefOr[QuadGraph] = js.native
+    var graph: js.UndefOr[QuadGraph] = js.undefined
     
-    var term: T = js.native
+    var term: T
   }
   object ClownfaceInitWithTerms {
     
@@ -241,7 +244,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClownfaceInitWithTermsMutableBuilder[Self <: ClownfaceInitWithTerms[_, _], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */] (val x: Self with (ClownfaceInitWithTerms[T, D])) extends AnyVal {
+    implicit class ClownfaceInitWithTermsMutableBuilder[Self <: ClownfaceInitWithTerms[?, ?], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */] (val x: Self & (ClownfaceInitWithTerms[T, D])) extends AnyVal {
       
       @scala.inline
       def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
@@ -270,16 +273,15 @@ object mod {
   }
   
   /* Inlined clownface.clownface.ClownfaceInit<D> & {  value :string} */
-  @js.native
   trait ClownfaceInitWithValue[D /* <: DatasetCore[Quad, Quad] */] extends StObject {
     
-    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.native
+    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.undefined
     
-    var dataset: js.UndefOr[D] = js.native
+    var dataset: js.UndefOr[D] = js.undefined
     
-    var graph: js.UndefOr[QuadGraph] = js.native
+    var graph: js.UndefOr[QuadGraph] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ClownfaceInitWithValue {
     
@@ -290,7 +292,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClownfaceInitWithValueMutableBuilder[Self <: ClownfaceInitWithValue[_], D /* <: DatasetCore[Quad, Quad] */] (val x: Self with ClownfaceInitWithValue[D]) extends AnyVal {
+    implicit class ClownfaceInitWithValueMutableBuilder[Self <: ClownfaceInitWithValue[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValue[D]) extends AnyVal {
       
       @scala.inline
       def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
@@ -319,16 +321,15 @@ object mod {
   }
   
   /* Inlined clownface.clownface.ClownfaceInit<D> & {  value :std.Array<string>} */
-  @js.native
   trait ClownfaceInitWithValues[D /* <: DatasetCore[Quad, Quad] */] extends StObject {
     
-    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.native
+    var _context: js.UndefOr[js.Array[Context[D, Term]]] = js.undefined
     
-    var dataset: js.UndefOr[D] = js.native
+    var dataset: js.UndefOr[D] = js.undefined
     
-    var graph: js.UndefOr[QuadGraph] = js.native
+    var graph: js.UndefOr[QuadGraph] = js.undefined
     
-    var value: js.Array[String] = js.native
+    var value: js.Array[String]
   }
   object ClownfaceInitWithValues {
     
@@ -339,7 +340,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClownfaceInitWithValuesMutableBuilder[Self <: ClownfaceInitWithValues[_], D /* <: DatasetCore[Quad, Quad] */] (val x: Self with ClownfaceInitWithValues[D]) extends AnyVal {
+    implicit class ClownfaceInitWithValuesMutableBuilder[Self <: ClownfaceInitWithValues[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValues[D]) extends AnyVal {
       
       @scala.inline
       def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
@@ -379,16 +380,15 @@ object mod {
   
   type MultiPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[T | js.Array[T], D]
   
-  @js.native
   trait NodeOptions extends StObject {
     
-    var datatype: js.UndefOr[Term | ToString] = js.native
+    var datatype: js.UndefOr[Term | ToString] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     var `type`: js.UndefOr[
         typings.clownface.clownfaceStrings.BlankNode | typings.clownface.clownfaceStrings.Literal | typings.clownface.clownfaceStrings.NamedNode
-      ] = js.native
+      ] = js.undefined
   }
   object NodeOptions {
     
@@ -423,10 +423,9 @@ object mod {
     }
   }
   
-  @js.native
   trait OutOptions extends StObject {
     
-    var language: js.UndefOr[String | js.Array[String]] = js.native
+    var language: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object OutOptions {
     

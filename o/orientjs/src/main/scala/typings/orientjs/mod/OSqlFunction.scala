@@ -2,19 +2,19 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OSqlFunction extends _OSqlExpression {
+trait OSqlFunction
+  extends StObject
+     with _OSqlExpression {
   
-  var abs: AbsSqlFunction = js.native
+  var abs: AbsSqlFunction
   
-  var avg: AbsSqlFunction = js.native
+  var avg: AbsSqlFunction
   
-  var db: ODB = js.native
+  var db: ODB
   
-  var sequence: SequenceSqlFunction = js.native
+  var sequence: SequenceSqlFunction
 }
 object OSqlFunction {
   

@@ -6,14 +6,15 @@ import typings.stylelint.mod.LinterResult
 import typings.stylelintWebpackPlugin.anon.Partialtimestampnumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lintDirtyModulesPluginMod {
   
   @JSImport("stylelint-webpack-plugin/declarations/LintDirtyModulesPlugin", JSImport.Default)
   @js.native
-  class default protected () extends LintDirtyModulesPlugin {
+  class default protected ()
+    extends StObject
+       with LintDirtyModulesPlugin {
     /**
       * @param {Lint} lint
       * @param {Compiler} compiler
@@ -60,7 +61,7 @@ object lintDirtyModulesPluginMod {
     
     var options: typings.stylelintWebpackPlugin.getOptionsMod.Options = js.native
     
-    var prevTimestamps: Map[_, _] = js.native
+    var prevTimestamps: Map[js.Any, js.Any] = js.native
     
     var startTime: Double = js.native
   }
@@ -70,28 +71,27 @@ object lintDirtyModulesPluginMod {
     Unit
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var emitWarning: js.UndefOr[Boolean] = js.native
+    var emitWarning: js.UndefOr[Boolean] = js.undefined
     
-    var failOnError: js.UndefOr[Boolean] = js.native
+    var failOnError: js.UndefOr[Boolean] = js.undefined
     
-    var failOnWarning: js.UndefOr[Boolean] = js.native
+    var failOnWarning: js.UndefOr[Boolean] = js.undefined
     
-    var files: String | js.Array[String] = js.native
+    var files: String | js.Array[String]
     
-    var formatter: TimerHandler = js.native
+    var formatter: TimerHandler
     
-    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.native
+    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var stylelintPath: String = js.native
+    var stylelintPath: String
   }
   object Options {
     

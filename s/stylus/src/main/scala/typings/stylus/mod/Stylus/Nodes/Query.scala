@@ -3,31 +3,31 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Query extends Node {
+trait Query
+  extends StObject
+     with Node {
   
   /**
     * Merges this query with the `other`.
     */
-  def merge(other: Query): Query = js.native
+  def merge(other: Query): Query
   
-  var nodes: js.Array[QueryExpr] = js.native
+  var nodes: js.Array[QueryExpr]
   
-  var predicate: java.lang.String = js.native
+  var predicate: java.lang.String
   
   /**
     * Push the given `expr`.
     */
-  def push(expr: QueryExpr): scala.Unit = js.native
+  def push(expr: QueryExpr): scala.Unit
   
-  var resolvedPredicate: java.lang.String = js.native
+  var resolvedPredicate: java.lang.String
   
-  var resolvedType: java.lang.String = js.native
+  var resolvedType: java.lang.String
   
-  var `type`: java.lang.String = js.native
+  var `type`: java.lang.String
 }
 object Query {
   

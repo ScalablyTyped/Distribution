@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -77,19 +76,19 @@ trait Hub extends StObject {
     * Raised when the Hub is about to play entrance, content transition, insert, or remove animations.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.type, detail.index, detail.section.
     **/
-  def oncontentanimating(eventInfo: CustomEvent[_]): Unit = js.native
+  def oncontentanimating(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised when the user clicks on an interactive header.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.section.
     **/
-  def onheaderinvoked(eventInfo: CustomEvent[_]): Unit = js.native
+  def onheaderinvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised when the Hub control's loadingState changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: loadingState.
     **/
-  def onloadingstatechanged(eventInfo: CustomEvent[_]): Unit = js.native
+  def onloadingstatechanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Gets or sets the orientation of sections within the Hub.
@@ -123,5 +122,5 @@ trait Hub extends StObject {
   /**
     * This API supports the SemanticZoom infrastructure and is not intended to be used directly from your code.
     **/
-  var zoomableView: IZoomableView[_] = js.native
+  var zoomableView: IZoomableView[js.Any] = js.native
 }

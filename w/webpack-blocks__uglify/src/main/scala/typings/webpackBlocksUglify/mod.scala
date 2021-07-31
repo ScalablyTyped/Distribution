@@ -5,28 +5,28 @@ import typings.uglifyJs.mod.MinifyOptions
 import typings.webpackBlocksUglify.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("@webpack-blocks/uglify", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/uglify", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
+  val ^ : js.Any = js.native
   
   type ExtractCommentsFunction = js.Function2[/* node */ js.Any, /* comment */ js.Any, Boolean | ExtractCommentsObject]
   
-  @js.native
   trait ExtractCommentsObject extends StObject {
     
-    var banner: js.UndefOr[Boolean | String | FileNameFunction] = js.native
+    var banner: js.UndefOr[Boolean | String | FileNameFunction] = js.undefined
     
-    var condition: js.UndefOr[Boolean | String | RegExp | ExtractCommentsFunction] = js.native
+    var condition: js.UndefOr[Boolean | String | RegExp | ExtractCommentsFunction] = js.undefined
     
-    var filename: js.UndefOr[RegExp | FileNameFunction] = js.native
+    var filename: js.UndefOr[RegExp | FileNameFunction] = js.undefined
   }
   object ExtractCommentsObject {
     
@@ -70,32 +70,31 @@ object mod {
   
   type FileNameFunction = js.Function1[/* file */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
-    var cache: js.UndefOr[String | Boolean] = js.native
+    var cache: js.UndefOr[String | Boolean] = js.undefined
     
-    var cacheKeys: js.UndefOr[js.Function2[/* defaultCacheKeys */ js.Any, /* file */ js.Any, js.Object]] = js.native
+    var cacheKeys: js.UndefOr[js.Function2[/* defaultCacheKeys */ js.Any, /* file */ js.Any, js.Object]] = js.undefined
     
-    var chunkFilter: js.UndefOr[js.Function1[/* chunk */ js.Any, Boolean]] = js.native
+    var chunkFilter: js.UndefOr[js.Function1[/* chunk */ js.Any, Boolean]] = js.undefined
     
-    var exclude: js.UndefOr[TestType | js.Array[TestType]] = js.native
+    var exclude: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
     
-    var extractComments: js.UndefOr[Boolean | String | RegExp | ExtractCommentsFunction] = js.native
+    var extractComments: js.UndefOr[Boolean | String | RegExp | ExtractCommentsFunction] = js.undefined
     
-    var include: js.UndefOr[TestType | js.Array[TestType]] = js.native
+    var include: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
     
-    var minify: js.UndefOr[js.Function2[/* file */ js.Any, /* sourceMap */ js.Any, Code]] = js.native
+    var minify: js.UndefOr[js.Function2[/* file */ js.Any, /* sourceMap */ js.Any, Code]] = js.undefined
     
-    var parallel: js.UndefOr[Boolean | Double] = js.native
+    var parallel: js.UndefOr[Boolean | Double] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[TestType | js.Array[TestType]] = js.native
+    var test: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
     
-    var uglifyOptions: js.UndefOr[MinifyOptions] = js.native
+    var uglifyOptions: js.UndefOr[MinifyOptions] = js.undefined
     
-    var warningsFilter: js.UndefOr[js.Function2[/* warning */ js.Any, /* source */ js.Any, Boolean]] = js.native
+    var warningsFilter: js.UndefOr[js.Function2[/* warning */ js.Any, /* source */ js.Any, Boolean]] = js.undefined
   }
   object Options {
     

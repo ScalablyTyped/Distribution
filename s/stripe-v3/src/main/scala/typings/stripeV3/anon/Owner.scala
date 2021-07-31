@@ -3,13 +3,11 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.OwnerInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Owner extends StObject {
   
-  var owner: js.UndefOr[OwnerInfo] = js.native
+  var owner: js.UndefOr[OwnerInfo] = js.undefined
 }
 object Owner {
   

@@ -10,64 +10,64 @@ import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DenseLayerArgs extends LayerArgs {
+trait DenseLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * Activation function to use.
     *
     * If unspecified, no activation is applied.
     */
-  var activation: js.UndefOr[ActivationIdentifier] = js.native
+  var activation: js.UndefOr[ActivationIdentifier] = js.undefined
   
   /**
     * Regularizer function applied to the activation.
     */
-  var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /**
     * Constraint for the bias vector.
     */
-  var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+  var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
   
   /**
     * Initializer for the bias vector.
     */
-  var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+  var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
   
   /**
     * Regularizer function applied to the bias vector.
     */
-  var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /**
     * If specified, defines inputShape as `[inputDim]`.
     */
-  var inputDim: js.UndefOr[Double] = js.native
+  var inputDim: js.UndefOr[Double] = js.undefined
   
   /**
     * Constraint for the kernel weights.
     */
-  var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+  var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
   
   /**
     * Initializer for the dense kernel weights matrix.
     */
-  var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+  var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
   
   /**
     * Regularizer function applied to the dense kernel weights matrix.
     */
-  var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /** Positive integer, dimensionality of the output space. */
-  var units: Double = js.native
+  var units: Double
   
   /** Whether to apply a bias. */
-  var useBias: js.UndefOr[Boolean] = js.native
+  var useBias: js.UndefOr[Boolean] = js.undefined
 }
 object DenseLayerArgs {
   

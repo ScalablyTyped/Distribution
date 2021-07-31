@@ -10,8 +10,8 @@ ace
 | Full name          | ace |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 95021 |
+| # dependents       | 58 |
+| # downloads        | 133253 |
 | # stars            | 2 |
 
 ## Links

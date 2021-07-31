@@ -3,62 +3,60 @@ package typings.nodeZendesk.mod.Tickets
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket|Zendesk Tickets Update}
   */
-@js.native
 trait UpdateModel extends StObject {
   
-  var additional_collaborators: js.UndefOr[js.Array[_] | Null] = js.native
+  var additional_collaborators: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
   
-  var assignee_email: js.UndefOr[String | Null] = js.native
+  var assignee_email: js.UndefOr[String | Null] = js.undefined
   
-  var assignee_id: js.UndefOr[ZendeskID | Null] = js.native
+  var assignee_id: js.UndefOr[ZendeskID | Null] = js.undefined
   
-  var attribute_value_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var attribute_value_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var comment: js.UndefOr[typings.nodeZendesk.mod.Requests.Comments.CreateModel] = js.native
+  var comment: js.UndefOr[typings.nodeZendesk.mod.Requests.Comments.CreateModel] = js.undefined
   
-  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.native
+  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
   
-  var due_at: js.UndefOr[String | Null] = js.native
+  var due_at: js.UndefOr[String | Null] = js.undefined
   
-  var email_ccs: js.UndefOr[js.Array[EmailCC] | Null] = js.native
+  var email_ccs: js.UndefOr[js.Array[EmailCC] | Null] = js.undefined
   
-  var external_id: js.UndefOr[String | Null] = js.native
+  var external_id: js.UndefOr[String | Null] = js.undefined
   
-  var followers: js.UndefOr[js.Array[Follower] | Null] = js.native
+  var followers: js.UndefOr[js.Array[Follower] | Null] = js.undefined
   
-  var group_id: js.UndefOr[Double | Null] = js.native
+  var group_id: js.UndefOr[Double | Null] = js.undefined
   
-  var macro_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var macro_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var organization_id: js.UndefOr[Double | Null] = js.native
+  var organization_id: js.UndefOr[Double | Null] = js.undefined
   
-  var priority: js.UndefOr[Priority | Null] = js.native
+  var priority: js.UndefOr[Priority | Null] = js.undefined
   
-  var problem_id: js.UndefOr[Double | Null] = js.native
+  var problem_id: js.UndefOr[Double | Null] = js.undefined
   
-  var requester_id: js.UndefOr[ZendeskID] = js.native
+  var requester_id: js.UndefOr[ZendeskID] = js.undefined
   
-  var safe_update: js.UndefOr[Boolean] = js.native
+  var safe_update: js.UndefOr[Boolean] = js.undefined
   
-  var sharing_agreement_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var sharing_agreement_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
-  var subject: js.UndefOr[String | Null] = js.native
+  var subject: js.UndefOr[String | Null] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String] | Null] = js.native
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  var `type`: js.UndefOr[TicketType | Null] = js.native
+  var `type`: js.UndefOr[TicketType | Null] = js.undefined
   
-  var updated_stamp: js.UndefOr[String | Null] = js.native
+  var updated_stamp: js.UndefOr[String | Null] = js.undefined
 }
 object UpdateModel {
   
@@ -72,7 +70,7 @@ object UpdateModel {
   implicit class UpdateModelMutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAdditional_collaborators(value: js.Array[_]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
+    def setAdditional_collaborators(value: js.Array[js.Any]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAdditional_collaboratorsNull: Self = StObject.set(x, "additional_collaborators", null)

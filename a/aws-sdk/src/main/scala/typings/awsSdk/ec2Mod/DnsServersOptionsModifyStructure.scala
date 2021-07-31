@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsServersOptionsModifyStructure extends StObject {
   
   /**
     * The IPv4 address range, in CIDR notation, of the DNS servers to be used. You can specify up to two DNS servers. Ensure that the DNS servers can be reached by the clients. The specified values overwrite the existing values.
     */
-  var CustomDnsServers: js.UndefOr[ValueStringList] = js.native
+  var CustomDnsServers: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Indicates whether DNS servers should be used. Specify False to delete the existing DNS servers.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
 }
 object DnsServersOptionsModifyStructure {
   

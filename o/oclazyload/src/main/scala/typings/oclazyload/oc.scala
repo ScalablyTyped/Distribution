@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IRequestShortcutConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oc {
@@ -27,8 +26,8 @@ object oc {
       * Injects a module with the associated name into Angular. Useful for manual injection when loading through RequireJS, SystemJS, etc. Useful in
       * conjunction with the toggleWatch() method.
       */
-    def inject(moduleName: String): IPromise[_] = js.native
-    def inject(moduleName: js.Array[String]): IPromise[_] = js.native
+    def inject(moduleName: String): IPromise[js.Any] = js.native
+    def inject(moduleName: js.Array[String]): IPromise[js.Any] = js.native
     
     /**
       * Checks if a module name, or list of modules names, has been previously loaded into Angular.
@@ -42,14 +41,14 @@ object oc {
       * @param module The name of a predefined module config object, or a module config object, or an array of either
       * @param config Options to be used when loading the modules
       */
-    def load(module: String): IPromise[_] = js.native
-    def load(module: String, config: IOptionsConfig): IPromise[_] = js.native
-    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig]): IPromise[_] = js.native
-    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): IPromise[_] = js.native
-    def load(module: IModuleConfig): IPromise[_] = js.native
-    def load(module: IModuleConfig, config: IOptionsConfig): IPromise[_] = js.native
-    def load(module: ITypedModuleConfig): IPromise[_] = js.native
-    def load(module: ITypedModuleConfig, config: IOptionsConfig): IPromise[_] = js.native
+    def load(module: String): IPromise[js.Any] = js.native
+    def load(module: String, config: IOptionsConfig): IPromise[js.Any] = js.native
+    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig]): IPromise[js.Any] = js.native
+    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): IPromise[js.Any] = js.native
+    def load(module: IModuleConfig): IPromise[js.Any] = js.native
+    def load(module: IModuleConfig, config: IOptionsConfig): IPromise[js.Any] = js.native
+    def load(module: ITypedModuleConfig): IPromise[js.Any] = js.native
+    def load(module: ITypedModuleConfig, config: IOptionsConfig): IPromise[js.Any] = js.native
     
     /**
       * Defines a module config object.
@@ -65,14 +64,13 @@ object oc {
     def toggleWatch(watch: Boolean): Unit = js.native
   }
   
-  @js.native
   trait ILazyLoadProvider extends StObject {
     
     /**
       * Configures the main service provider.
       * @param config The configuration settings to use
       */
-    def config(config: IProviderConfig): Unit = js.native
+    def config(config: IProviderConfig): Unit
   }
   object ILazyLoadProvider {
     
@@ -90,18 +88,19 @@ object oc {
     }
   }
   
-  @js.native
-  trait IModuleConfig extends IOptionsConfig {
+  trait IModuleConfig
+    extends StObject
+       with IOptionsConfig {
     
     /**
       * The list of files to be loaded for this module.
       */
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the module for easy retrieval later.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object IModuleConfig {
     
@@ -131,37 +130,38 @@ object oc {
     }
   }
   
-  @js.native
-  trait IOptionsConfig extends IRequestShortcutConfig {
+  trait IOptionsConfig
+    extends StObject
+       with IRequestShortcutConfig {
     
     /**
       * If true, bypasses browser cache by appending a timestamp to URLs. Defaults to true.
       */
     @JSName("cache")
-    var cache_IOptionsConfig: js.UndefOr[Boolean] = js.native
+    var cache_IOptionsConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, will insert files immediately before the provided CSS selector, instead of the default behavior of inserting files immediately before the
       * last child of the <head> element. Defaults to undefined.
       */
-    var insertBefore: js.UndefOr[String] = js.native
+    var insertBefore: js.UndefOr[String] = js.undefined
     
     /**
       * If true, a module config will be invoked each time the module is reloaded. Use with caution, as re-invoking configs can lead to unexpected results.
       * Defaults to false.
       */
-    var reconfig: js.UndefOr[Boolean] = js.native
+    var reconfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, a module run block will be invoked each time the module is reloaded. Use with caution, as re-invoking run blocks can lead to unexpected results.
       * Defaults to false.
       */
-    var rerun: js.UndefOr[Boolean] = js.native
+    var rerun: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, will load files in a series, instead of in parallel. Defaults to false.
       */
-    var serie: js.UndefOr[Boolean] = js.native
+    var serie: js.UndefOr[Boolean] = js.undefined
   }
   object IOptionsConfig {
     
@@ -206,24 +206,23 @@ object oc {
     }
   }
   
-  @js.native
   trait IProviderConfig extends StObject {
     
     /**
       * If true, all errors will be logged to the console, in addition to rejecting a promise. Defaults to false.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, an event will be broadcast whenever a module, component or file is loaded. Events that can be broadcast are: ocLazyLoad.moduleLoaded,
       * ocLazyLoad.moduleReloaded, ocLazyLoad.componentLoaded, ocLazyLoad.fileLoaded. Defaults to false.
       */
-    var events: js.UndefOr[Boolean] = js.native
+    var events: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Predefines a set of module configurations for later use. A name must be provided for each module so that it can be retrieved later.
       */
-    var modules: js.UndefOr[js.Array[IModuleConfig]] = js.native
+    var modules: js.UndefOr[js.Array[IModuleConfig]] = js.undefined
   }
   object IProviderConfig {
     
@@ -259,18 +258,19 @@ object oc {
     }
   }
   
-  @js.native
-  trait ITypedModuleConfig extends IOptionsConfig {
+  trait ITypedModuleConfig
+    extends StObject
+       with IOptionsConfig {
     
     /**
       * The file path, including file name.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The file extension, without the period. For example, 'html'.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ITypedModuleConfig {
     

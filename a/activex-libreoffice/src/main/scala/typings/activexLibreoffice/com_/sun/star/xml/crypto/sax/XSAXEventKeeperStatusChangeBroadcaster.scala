@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate {@link SAXEventKeeper} status change listener.
   */
-@js.native
-trait XSAXEventKeeperStatusChangeBroadcaster extends XInterface {
+trait XSAXEventKeeperStatusChangeBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds a new status change listener.
@@ -21,7 +21,7 @@ trait XSAXEventKeeperStatusChangeBroadcaster extends XInterface {
     * When the {@link SAXEventKeeper} 's status changes, the listener will receive a notification.
     * @param listener the listener to be added
     */
-  def addSAXEventKeeperStatusChangeListener(listener: XSAXEventKeeperStatusChangeListener): Unit = js.native
+  def addSAXEventKeeperStatusChangeListener(listener: XSAXEventKeeperStatusChangeListener): Unit
   
   /**
     * Removes a status change listener.
@@ -29,7 +29,7 @@ trait XSAXEventKeeperStatusChangeBroadcaster extends XInterface {
     * After a listener is removed, no status change notification will be sent to it.
     * @param listener the listener to be removed
     */
-  def removeSAXEventKeeperStatusChangeListener(listener: XSAXEventKeeperStatusChangeListener): Unit = js.native
+  def removeSAXEventKeeperStatusChangeListener(listener: XSAXEventKeeperStatusChangeListener): Unit
 }
 object XSAXEventKeeperStatusChangeBroadcaster {
   

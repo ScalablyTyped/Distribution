@@ -13,7 +13,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object style {
@@ -141,13 +140,14 @@ object style {
       */
     def getColor(): Color_ | ColorLike_ = js.native
     
+    def setColor(color: ColorLike_): Unit = js.native
     /**
       * Set the color.
       *
       * @param color Color.
       * @api
       */
-    def setColor(color: ColorLike_ | Color_): Unit = js.native
+    def setColor(color: Color_): Unit = js.native
   }
   
   /**

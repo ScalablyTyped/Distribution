@@ -6,7 +6,6 @@ import typings.jsonSchema.mod.JSONSchema7Definition
 import typings.jsonSchemaCompare.anon._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,14 @@ object mod {
     * - For minLength, minItems and minProperties `undefined` and `0` are equal
     * - For uniqueItems, `undefined` and `false` are equal
     */
+  @scala.inline
+  def apply(a: JSONSchemaComparee, b: JSONSchemaComparee): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(a: JSONSchemaComparee, b: JSONSchemaComparee, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("json-schema-compare", JSImport.Namespace)
   @js.native
-  def apply(a: JSONSchemaComparee, b: JSONSchemaComparee): Boolean = js.native
-  @JSImport("json-schema-compare", JSImport.Namespace)
-  @js.native
-  def apply(a: JSONSchemaComparee, b: JSONSchemaComparee, options: Options): Boolean = js.native
+  val ^ : js.Any = js.native
   
   type JSONSchemaComparee = js.UndefOr[JSONSchema4 | JSONSchema6Definition | JSONSchema7Definition]
   
@@ -62,7 +63,7 @@ object mod {
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.additionalProperties
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.dependencies
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.propertyNames
-    - typings.jsonSchemaCompare.jsonSchemaCompareStrings.enum
+    - typings.jsonSchemaCompare.jsonSchemaCompareStrings.`enum`
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.const
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.`type`
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.allOf
@@ -83,13 +84,12 @@ object mod {
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.contentEncoding
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.readOnly
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.writeOnly
-    - java.lang.String with typings.jsonSchemaCompare.anon._empty
+    - java.lang.String & typings.jsonSchemaCompare.anon._empty
   */
-  type JSONSchemaKeys = _JSONSchemaKeys | KnownKeys[JSONSchema4] | (String with _empty)
+  type JSONSchemaKeys = _JSONSchemaKeys | KnownKeys[JSONSchema4] | (String & _empty)
   
   type KnownKeys[T] = js.Any
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -99,7 +99,7 @@ object mod {
       *
       * @default []
       */
-    var ignore: js.UndefOr[js.Array[JSONSchemaKeys]] = js.native
+    var ignore: js.UndefOr[js.Array[JSONSchemaKeys]] = js.undefined
   }
   object Options {
     

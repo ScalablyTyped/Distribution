@@ -2,38 +2,36 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SideMenuSide extends StObject {
   
   /**
     * Enable or disable the side menu
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the height of the side menu
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Stretch sideMenu contents when opened past the width
     * #### (iOS specific)
     * @default true
     */
-  var shouldStretchDrawer: js.UndefOr[Boolean] = js.native
+  var shouldStretchDrawer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show or hide the side menu
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the width of the side menu
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SideMenuSide {
   

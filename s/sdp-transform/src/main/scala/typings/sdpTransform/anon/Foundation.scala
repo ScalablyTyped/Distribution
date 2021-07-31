@@ -2,37 +2,35 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Foundation extends StObject {
   
-  var component: Double = js.native
+  var component: Double
   
-  var foundation: String = js.native
+  var foundation: String
   
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
-  var ip: String = js.native
+  var ip: String
   
-  var `network-cost`: js.UndefOr[Double] = js.native
+  var `network-cost`: js.UndefOr[Double] = js.undefined
   
-  var `network-id`: js.UndefOr[Double] = js.native
+  var `network-id`: js.UndefOr[Double] = js.undefined
   
-  var port: Double = js.native
+  var port: Double
   
-  var priority: Double | String = js.native
+  var priority: Double | String
   
-  var raddr: js.UndefOr[String] = js.native
+  var raddr: js.UndefOr[String] = js.undefined
   
-  var rport: js.UndefOr[Double] = js.native
+  var rport: js.UndefOr[Double] = js.undefined
   
-  var tcptype: js.UndefOr[String] = js.native
+  var tcptype: js.UndefOr[String] = js.undefined
   
-  var transport: String = js.native
+  var transport: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Foundation {
   

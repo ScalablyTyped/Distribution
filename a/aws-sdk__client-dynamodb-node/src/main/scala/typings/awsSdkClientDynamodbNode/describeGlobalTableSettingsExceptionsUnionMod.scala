@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object describeGlobalTableSettingsExceptionsUnionMod {
@@ -15,16 +14,14 @@ object describeGlobalTableSettingsExceptionsUnionMod {
   object DescribeGlobalTableSettingsExceptionsUnion {
     
     @scala.inline
-    def GlobalTableNotFoundException(
-      name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.GlobalTableNotFoundException
-    ): typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def GlobalTableNotFoundException(): typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "GlobalTableNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException]
     }
     
     @scala.inline
-    def InternalServerError(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
+      val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError]
     }
   }

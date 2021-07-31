@@ -2,15 +2,13 @@ package typings.activexStdole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PropertyName extends StObject {
     
-    val PropertyName: String = js.native
+    val PropertyName: String
   }
   object PropertyName {
     

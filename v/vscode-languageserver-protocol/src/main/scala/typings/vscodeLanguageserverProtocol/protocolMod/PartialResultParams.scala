@@ -3,17 +3,15 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeJsonrpc.mod.ProgressToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialResultParams extends StObject {
   
   /**
     * An optional token that a server can use to report partial results (e.g. streaming) to
     * the client.
     */
-  var partialResultToken: js.UndefOr[ProgressToken] = js.native
+  var partialResultToken: js.UndefOr[ProgressToken] = js.undefined
 }
 object PartialResultParams {
   

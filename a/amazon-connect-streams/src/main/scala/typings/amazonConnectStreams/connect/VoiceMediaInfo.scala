@@ -2,21 +2,19 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceMediaInfo extends StObject {
   
-  val autoAccept: Boolean = js.native
+  val autoAccept: Boolean
   
-  val callConfigJson: String = js.native
+  val callConfigJson: String
   
-  val callContextToken: String = js.native
+  val callContextToken: String
   
-  val callType: SoftphoneCallType = js.native
+  val callType: SoftphoneCallType
   
-  val mediaLegContextToken: String = js.native
+  val mediaLegContextToken: String
 }
 object VoiceMediaInfo {
   

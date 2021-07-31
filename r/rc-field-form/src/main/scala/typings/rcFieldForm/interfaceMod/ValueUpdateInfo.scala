@@ -5,22 +5,22 @@ import typings.rcFieldForm.rcFieldFormStrings.internal
 import typings.rcFieldForm.rcFieldFormStrings.valueUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValueUpdateInfo extends NotifyInfo {
+trait ValueUpdateInfo
+  extends StObject
+     with NotifyInfo {
   
-  var source: internal | external = js.native
+  var source: internal | external
   
-  var `type`: valueUpdate = js.native
+  var `type`: valueUpdate
 }
 object ValueUpdateInfo {
   
   @scala.inline
-  def apply(source: internal | external, `type`: valueUpdate): ValueUpdateInfo = {
+  def apply(source: internal | external): ValueUpdateInfo = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("valueUpdate")
     __obj.asInstanceOf[ValueUpdateInfo]
   }
   

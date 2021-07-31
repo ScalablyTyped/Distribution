@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** base interface for all event listeners interfaces. */
-@js.native
-trait XEventListener extends XInterface {
+trait XEventListener
+  extends StObject
+     with XInterface {
   
   /**
     * gets called when the broadcaster is about to be disposed.
@@ -19,7 +19,7 @@ trait XEventListener extends XInterface {
     *
     * This method is called for every listener registration of derived listener interfaced, not only for registrations at {@link XComponent} .
     */
-  def disposing(Source: EventObject): Unit = js.native
+  def disposing(Source: EventObject): Unit
 }
 object XEventListener {
   

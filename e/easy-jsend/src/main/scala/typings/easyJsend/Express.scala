@@ -3,21 +3,19 @@ package typings.easyJsend
 import typings.easyJsend.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Express {
   
-  @js.native
   trait MakePartialInput extends StObject {
     
-    var model: js.Any = js.native
+    var model: js.Any
     
-    var opts: Limit = js.native
+    var opts: Limit
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var search: js.Object = js.native
+    var search: js.Object
   }
   object MakePartialInput {
     
@@ -44,16 +42,15 @@ object Express {
     }
   }
   
-  @js.native
   trait PartialInput extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object PartialInput {
     
@@ -97,8 +94,8 @@ object Express {
     var partial: js.UndefOr[js.Function2[/* data */ PartialInput, /* status */ js.UndefOr[Double], Unit]] = js.native
     
     def success(): Unit = js.native
-    def success(data: js.UndefOr[scala.Nothing], status: Double): Unit = js.native
     def success(data: js.Any): Unit = js.native
     def success(data: js.Any, status: Double): Unit = js.native
+    def success(data: Unit, status: Double): Unit = js.native
   }
 }

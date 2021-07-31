@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.SelectorSettings._Impl, 'message'> */
-@js.native
 trait PickImplmessage extends StObject {
   
-  var message: String = js.native
+  var message: String
 }
 object PickImplmessage {
   

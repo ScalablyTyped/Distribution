@@ -1,23 +1,21 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotOutletNode
-  extends ElementNode
-     with BaseElementNode {
+  extends StObject
+     with BaseElementNode
+     with ElementNode {
   
-  var codegenNode: js.UndefOr[RenderSlotCall | CacheExpression] = js.native
+  var codegenNode: js.UndefOr[RenderSlotCall | CacheExpression] = js.undefined
   
-  var ssrCodegenNode: js.UndefOr[CallExpression] = js.native
+  var ssrCodegenNode: js.UndefOr[CallExpression] = js.undefined
   
   @JSName("tagType")
-  var tagType_SlotOutletNode: `2` = js.native
+  var tagType_SlotOutletNode: `2`
 }
 object SlotOutletNode {
   
@@ -28,12 +26,10 @@ object SlotOutletNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `2`,
-    `type`: `1`
+    tag: String
   ): SlotOutletNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 2)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[SlotOutletNode]
   }
   

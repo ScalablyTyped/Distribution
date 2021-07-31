@@ -2,23 +2,21 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CursorPositionChangedEvent extends StObject {
   
-  var cursor: Cursor = js.native
+  var cursor: Cursor
   
-  var newBufferPosition: Point = js.native
+  var newBufferPosition: Point
   
-  var newScreenPosition: Point = js.native
+  var newScreenPosition: Point
   
-  var oldBufferPosition: Point = js.native
+  var oldBufferPosition: Point
   
-  var oldScreenPosition: Point = js.native
+  var oldScreenPosition: Point
   
-  var textChanged: Boolean = js.native
+  var textChanged: Boolean
 }
 object CursorPositionChangedEvent {
   

@@ -7,7 +7,6 @@ import typings.typedoc.projectMod.ProjectReflection
 import typings.typedoc.themeMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererMod {
@@ -45,12 +44,14 @@ object rendererMod {
   /* static members */
   object Renderer {
     
-    @JSImport("typedoc/dist/lib/output/renderer", "Renderer.getDefaultTheme")
+    @JSImport("typedoc/dist/lib/output/renderer", "Renderer")
     @js.native
-    def getDefaultTheme(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typedoc/dist/lib/output/renderer", "Renderer.getThemeDirectory")
-    @js.native
-    def getThemeDirectory(): String = js.native
+    @scala.inline
+    def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
+    
+    @scala.inline
+    def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
   }
 }

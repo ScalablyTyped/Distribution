@@ -2,21 +2,19 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestLog extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var data: String | js.Object = js.native
+  var data: String | js.Object
   
-  var request: String = js.native
+  var request: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object RequestLog {
   

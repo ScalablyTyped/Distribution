@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDatagramSocketControl extends StObject {
   
-  var outboundUnicastHopLimit: Double = js.native
+  var outboundUnicastHopLimit: Double
   
-  var qualityOfService: SocketQualityOfService = js.native
+  var qualityOfService: SocketQualityOfService
 }
 object IDatagramSocketControl {
   

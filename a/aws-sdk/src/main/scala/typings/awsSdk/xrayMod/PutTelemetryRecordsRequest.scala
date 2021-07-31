@@ -2,31 +2,29 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutTelemetryRecordsRequest extends StObject {
   
   /**
     * 
     */
-  var EC2InstanceId: js.UndefOr[typings.awsSdk.xrayMod.EC2InstanceId] = js.native
+  var EC2InstanceId: js.UndefOr[typings.awsSdk.xrayMod.EC2InstanceId] = js.undefined
   
   /**
     * 
     */
-  var Hostname: js.UndefOr[typings.awsSdk.xrayMod.Hostname] = js.native
+  var Hostname: js.UndefOr[typings.awsSdk.xrayMod.Hostname] = js.undefined
   
   /**
     * 
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.xrayMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.xrayMod.ResourceARN] = js.undefined
   
   /**
     * 
     */
-  var TelemetryRecords: TelemetryRecordList = js.native
+  var TelemetryRecords: TelemetryRecordList
 }
 object PutTelemetryRecordsRequest {
   

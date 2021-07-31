@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,11 +28,7 @@ trait CustomXmlParts extends StObject {
     */
   def addAsync(xml: String): Unit = js.native
   def addAsync(xml: String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
-  def addAsync(
-    xml: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]
-  ): Unit = js.native
+  def addAsync(xml: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
   def addAsync(xml: String, options: AsyncContextOptions): Unit = js.native
   def addAsync(
     xml: String,
@@ -56,11 +51,7 @@ trait CustomXmlParts extends StObject {
     */
   def getByIdAsync(id: String): Unit = js.native
   def getByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
-  def getByIdAsync(
-    id: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]
-  ): Unit = js.native
+  def getByIdAsync(id: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
   def getByIdAsync(id: String, options: AsyncContextOptions): Unit = js.native
   def getByIdAsync(
     id: String,
@@ -84,7 +75,7 @@ trait CustomXmlParts extends StObject {
   def getByNamespaceAsync(ns: String, callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlPart]], Unit]): Unit = js.native
   def getByNamespaceAsync(
     ns: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlPart]], Unit]
   ): Unit = js.native
   def getByNamespaceAsync(ns: String, options: AsyncContextOptions): Unit = js.native

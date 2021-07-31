@@ -3,19 +3,17 @@ package typings.nodeRedEditorClient.anon
 import typings.jquery.JQuery.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Class extends StObject {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  def click(event: Event): Unit = js.native
+  def click(event: Event): Unit
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object Class {
   

@@ -2,7 +2,6 @@ package typings.cordovaPluginEmailComposer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,28 +13,20 @@ trait CordovaPluginEmailComposer extends StObject {
   
   /** Open a pre-filled email draft */
   def open(): Unit = js.native
-  def open(options: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  def open(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  def open(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def open(options: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def open(options: Unit, callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def open(options: Unit, callback: Unit, scope: js.Any): Unit = js.native
   def open(options: ICordovaPluginEmailComposerOpenOptions): Unit = js.native
-  def open(
-    options: ICordovaPluginEmailComposerOpenOptions,
-    callback: js.UndefOr[scala.Nothing],
-    scope: js.Any
-  ): Unit = js.native
   def open(options: ICordovaPluginEmailComposerOpenOptions, callback: js.Function0[Unit]): Unit = js.native
   def open(options: ICordovaPluginEmailComposerOpenOptions, callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def open(options: ICordovaPluginEmailComposerOpenOptions, callback: Unit, scope: js.Any): Unit = js.native
   
   def openDraft(): Unit = js.native
-  def openDraft(options: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  def openDraft(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  def openDraft(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def openDraft(options: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def openDraft(options: Unit, callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def openDraft(options: Unit, callback: Unit, scope: js.Any): Unit = js.native
   def openDraft(options: ICordovaPluginEmailComposerOpenOptions): Unit = js.native
-  def openDraft(
-    options: ICordovaPluginEmailComposerOpenOptions,
-    callback: js.UndefOr[scala.Nothing],
-    scope: js.Any
-  ): Unit = js.native
   def openDraft(options: ICordovaPluginEmailComposerOpenOptions, callback: js.Function0[Unit]): Unit = js.native
   def openDraft(options: ICordovaPluginEmailComposerOpenOptions, callback: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def openDraft(options: ICordovaPluginEmailComposerOpenOptions, callback: Unit, scope: js.Any): Unit = js.native
 }

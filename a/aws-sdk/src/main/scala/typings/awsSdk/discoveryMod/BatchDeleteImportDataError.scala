@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteImportDataError extends StObject {
   
   /**
     * The type of error that occurred for a specific import task.
     */
-  var errorCode: js.UndefOr[BatchDeleteImportDataErrorCode] = js.native
+  var errorCode: js.UndefOr[BatchDeleteImportDataErrorCode] = js.undefined
   
   /**
     * The description of the error that occurred for a specific import task.
     */
-  var errorDescription: js.UndefOr[BatchDeleteImportDataErrorDescription] = js.native
+  var errorDescription: js.UndefOr[BatchDeleteImportDataErrorDescription] = js.undefined
   
   /**
     * The unique import ID associated with the error that occurred.
     */
-  var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.native
+  var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.undefined
 }
 object BatchDeleteImportDataError {
   

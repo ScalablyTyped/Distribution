@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactionsDeleteForIssueCommentRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: DELETE = js.native
+  var method: DELETE
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id
 }
 object ReactionsDeleteForIssueCommentRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: DELETE,
-    request: RequestRequestOptions,
-    url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id
-  ): ReactionsDeleteForIssueCommentRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReactionsDeleteForIssueCommentRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/issues/comments/:comment_id/reactions/:reaction_id")
     __obj.asInstanceOf[ReactionsDeleteForIssueCommentRequestOptions]
   }
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see MasterPage
   * @see DrawingDocumentDrawView
   */
-@js.native
-trait XShapes extends XIndexAccess {
+trait XShapes
+  extends StObject
+     with XIndexAccess {
   
   /**
     * inserts a {@link Shape} into this collection.
     * @param xShape a {@link Shape} that will be inserted.
     */
-  def add(xShape: XShape): Unit = js.native
+  def add(xShape: XShape): Unit
   
   /**
     * removes a {@link Shape} from this collection.
     * @param xShape the {@link Shape} will be removed from the collection and disposed.
     */
-  def remove(xShape: XShape): Unit = js.native
+  def remove(xShape: XShape): Unit
 }
 object XShapes {
   

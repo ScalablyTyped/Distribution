@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfig extends StObject {
   
   /** The description for this deployment. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The manifest file name for this deployment. */
-  var manifestFileName: js.UndefOr[String] = js.native
+  var manifestFileName: js.UndefOr[String] = js.undefined
   
   /** The script project's Drive ID. */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
   
   /** The version number on which this deployment is based. */
-  var versionNumber: js.UndefOr[Double] = js.native
+  var versionNumber: js.UndefOr[Double] = js.undefined
 }
 object DeploymentConfig {
   

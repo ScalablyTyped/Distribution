@@ -2,38 +2,36 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceControlResourceGroup extends StObject {
   
   /**
     * Dispose this source control resource group.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Whether this source control resource group is hidden when it contains
     * no [source control resource states](#SourceControlResourceState).
     */
-  var hideWhenEmpty: js.UndefOr[Boolean] = js.native
+  var hideWhenEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id of this source control resource group.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The label of this source control resource group.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * This group's collection of
     * [source control resource states](#SourceControlResourceState).
     */
-  var resourceStates: js.Array[SourceControlResourceState] = js.native
+  var resourceStates: js.Array[SourceControlResourceState]
 }
 object SourceControlResourceGroup {
   

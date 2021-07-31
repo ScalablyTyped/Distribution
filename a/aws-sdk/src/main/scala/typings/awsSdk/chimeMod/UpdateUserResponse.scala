@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserResponse extends StObject {
   
   /**
     * The updated user details.
     */
-  var User: js.UndefOr[typings.awsSdk.chimeMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.chimeMod.User] = js.undefined
 }
 object UpdateUserResponse {
   

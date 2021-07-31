@@ -4,7 +4,6 @@ import typings.materialNotchedOutline.anon.PartialMDCNotchedOutlineA
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,7 @@ object mod {
   @js.native
   class MDCNotchedOutline protected ()
     extends typings.materialNotchedOutline.componentMod.MDCNotchedOutline {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialNotchedOutline.foundationMod.MDCNotchedOutlineFoundation,
@@ -23,9 +22,12 @@ object mod {
   /* static members */
   object MDCNotchedOutline {
     
-    @JSImport("@material/notched-outline", "MDCNotchedOutline.attachTo")
+    @JSImport("@material/notched-outline", "MDCNotchedOutline")
     @js.native
-    def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialNotchedOutline.componentMod.MDCNotchedOutline]
   }
   
   @JSImport("@material/notched-outline", "MDCNotchedOutlineFoundation")

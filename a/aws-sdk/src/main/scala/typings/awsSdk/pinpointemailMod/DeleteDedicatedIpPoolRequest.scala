@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDedicatedIpPoolRequest extends StObject {
   
   /**
     * The name of the dedicated IP pool that you want to delete.
     */
-  var PoolName: typings.awsSdk.pinpointemailMod.PoolName = js.native
+  var PoolName: typings.awsSdk.pinpointemailMod.PoolName
 }
 object DeleteDedicatedIpPoolRequest {
   

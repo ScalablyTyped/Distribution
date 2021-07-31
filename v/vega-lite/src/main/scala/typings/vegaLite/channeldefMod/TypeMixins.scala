@@ -3,10 +3,8 @@ package typings.vegaLite.channeldefMod
 import typings.vegaLite.srcTypeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeMixins[T /* <: Type */] extends StObject {
   
   /**
@@ -39,7 +37,7 @@ trait TypeMixins[T /* <: Type */] extends StObject {
     *
     * __See also:__ [`type`](https://vega.github.io/vega-lite/docs/type.html) documentation.
     */
-  var `type`: js.UndefOr[T] = js.native
+  var `type`: js.UndefOr[T] = js.undefined
 }
 object TypeMixins {
   
@@ -50,7 +48,7 @@ object TypeMixins {
   }
   
   @scala.inline
-  implicit class TypeMixinsMutableBuilder[Self <: TypeMixins[_], T /* <: Type */] (val x: Self with TypeMixins[T]) extends AnyVal {
+  implicit class TypeMixinsMutableBuilder[Self <: TypeMixins[?], T /* <: Type */] (val x: Self & TypeMixins[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

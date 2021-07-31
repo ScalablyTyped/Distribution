@@ -2,22 +2,20 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailAuthor extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Style: typings.activexWord.Word.Style = js.native
+  val Style: typings.activexWord.Word.Style
   
   @JSName("Word.EmailAuthor_typekey")
-  var WordDotEmailAuthor_typekey: EmailAuthor = js.native
+  var WordDotEmailAuthor_typekey: EmailAuthor
 }
 object EmailAuthor {
   

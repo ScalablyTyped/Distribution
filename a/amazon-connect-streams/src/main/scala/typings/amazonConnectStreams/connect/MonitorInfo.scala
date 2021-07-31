@@ -3,17 +3,15 @@ package typings.amazonConnectStreams.connect
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitorInfo extends StObject {
   
-  val agentName: String = js.native
+  val agentName: String
   
-  val customerName: String = js.native
+  val customerName: String
   
-  val joinTime: Date = js.native
+  val joinTime: Date
 }
 object MonitorInfo {
   

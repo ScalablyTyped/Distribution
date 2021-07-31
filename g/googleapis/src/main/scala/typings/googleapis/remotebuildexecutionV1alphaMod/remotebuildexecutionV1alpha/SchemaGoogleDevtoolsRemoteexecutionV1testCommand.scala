@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * where) is defined by and specific to the implementation of the remote
   * execution API.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testCommand extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testCommand extends StObject {
     * evaluated with respect to the input root, or an absolute path.  The
     * working directory will always be the input root.
     */
-  var arguments: js.UndefOr[js.Array[String]] = js.native
+  var arguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The environment variables to set when running the program. The worker may
@@ -32,7 +30,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testCommand extends StObject {
     * name. Sorting of strings is done by code point, equivalently, by the
     * UTF-8 bytes.
     */
-  var environmentVariables: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable]] = js.native
+  var environmentVariables: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable]] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testCommand {
   

@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BitmapOptions extends StObject {
   
   /**
     * Defaults to 1.0.
     */
-  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.undefined
 }
 object BitmapOptions {
   

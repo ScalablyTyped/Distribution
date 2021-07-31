@@ -17,7 +17,6 @@ import typings.tinySliderReact.tinySliderReactStrings.page
 import typings.tinySliderReact.tinySliderReactStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,128 +26,127 @@ object mod {
   class default ()
     extends Component[TinySliderProps, js.Object, js.Any]
   
-  @js.native
   trait CommonOptions extends StObject {
     
     /**
       * Allows using arrow keys to switch slides.
       * @defaultValue false
       */
-    var arrowKeys: js.UndefOr[Boolean] = js.native
+    var arrowKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height of slider container changes according to each slide"s height.
       * @defaultValue false
       */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Toggles the automatic change of slides
       * @defaultValue false
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stops sliding on mouseover.
       * @defaultValue false
       */
-    var autoplayHoverPause: js.UndefOr[Boolean] = js.native
+    var autoplayHoverPause: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pauses the sliding when the page is invisiable and resumes it when the page become visiable again
       * @defaultValue true
       */
-    var autoplayResetOnVisibility: js.UndefOr[Boolean] = js.native
+    var autoplayResetOnVisibility: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text or markup in the autoplay start/stop button.
       * @defaultValue ["start", "stop"]
       */
-    var autoplayText: js.UndefOr[js.Array[String]] = js.native
+    var autoplayText: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Time between 2 autoplay slides change (in "ms").
       * @defaultValue 5000
       */
-    var autoplayTimeout: js.UndefOr[Double] = js.native
+    var autoplayTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities.
       * @defaultValue true
       */
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text or markup in the prev/next buttons
       * @defaultValue ["prev", "next"]
       */
-    var controlsText: js.UndefOr[js.Array[String]] = js.native
+    var controlsText: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Disable slider.
       * @defaultValue false
       */
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Space on the outside (in "px").
       * @defaultValue 0
       */
-    var edgePadding: js.UndefOr[Double] = js.native
+    var edgePadding: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls width attribute of the slides.
       * @defaultValue false
       */
-    var fixedWidth: js.UndefOr[Double | `false`] = js.native
+    var fixedWidth: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * Space between slides (in "px").
       * @defaultValue 0
       */
-    var gutter: js.UndefOr[Double] = js.native
+    var gutter: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of slides being displayed in the viewport.
       * @defaultValue 1
       */
-    var items: js.UndefOr[Double] = js.native
+    var items: js.UndefOr[Double] = js.undefined
     
     /**
       * Changing slides by dragging them.
       * @defaultValue false
       */
-    var mouseDrag: js.UndefOr[Boolean] = js.native
+    var mouseDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.
       * @defaultValue true
       */
-    var nav: js.UndefOr[Boolean] = js.native
+    var nav: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of slides going on one "click".
       * @defaultValue 1
       */
-    var slideBy: js.UndefOr[Double | page] = js.native
+    var slideBy: js.UndefOr[Double | page] = js.undefined
     
     /**
       * Speed of the slide animation (in "ms").
       * @defaultValue 300
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     /**
       * The initial index of the slider.
       * @defaultValue 0
       */
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Activates input detection for touch devices.
       * @defaultValue true
       */
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
   }
   object CommonOptions {
     
@@ -293,46 +291,45 @@ object mod {
   
   type TinySlider = Component[TinySliderProps, js.Object, js.Any]
   
-  @js.native
   trait TinySliderInfo extends StObject {
     
-    var cloneCount: Double = js.native
+    var cloneCount: Double
     
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
-    var controlsContainer: js.UndefOr[Boolean] = js.native
+    var controlsContainer: js.UndefOr[Boolean] = js.undefined
     
-    var hasControls: Boolean = js.native
+    var hasControls: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var indexCached: Double = js.native
+    var indexCached: Double
     
-    var items: Double = js.native
+    var items: Double
     
-    var navContainer: js.UndefOr[HTMLElement] = js.native
+    var navContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var navCurrentIndex: js.UndefOr[Double] = js.native
+    var navCurrentIndex: js.UndefOr[Double] = js.undefined
     
-    var navCurrentIndexCached: js.UndefOr[Double] = js.native
+    var navCurrentIndexCached: js.UndefOr[Double] = js.undefined
     
-    var navItems: js.UndefOr[HTMLCollection] = js.native
+    var navItems: js.UndefOr[HTMLCollection] = js.undefined
     
-    var nextButton: js.UndefOr[HTMLElement] = js.native
+    var nextButton: js.UndefOr[HTMLElement] = js.undefined
     
-    var prevButton: js.UndefOr[HTMLElement] = js.native
+    var prevButton: js.UndefOr[HTMLElement] = js.undefined
     
-    var slideBy: Double = js.native
+    var slideBy: Double
     
-    var slideCount: Double = js.native
+    var slideCount: Double
     
-    var slideCountNew: Double = js.native
+    var slideCountNew: Double
     
-    var slideItems: HTMLCollection = js.native
+    var slideItems: HTMLCollection
     
-    var visibleNavIndexes: js.UndefOr[Double] = js.native
+    var visibleNavIndexes: js.UndefOr[Double] = js.undefined
     
-    var visibleNavIndexesCached: js.UndefOr[Double] = js.native
+    var visibleNavIndexesCached: js.UndefOr[Double] = js.undefined
   }
   object TinySliderInfo {
     
@@ -442,28 +439,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TinySliderProps extends StObject {
     
     var onClick: js.UndefOr[
         js.Function3[/* slideClicked */ Double, /* info */ String, /* event */ Event, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onIndexChanged: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onIndexChanged: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onTransitionEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var onTransitionStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+    var onTransitionStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
     
-    var settings: js.UndefOr[TinySliderSettings] = js.native
+    var settings: js.UndefOr[TinySliderSettings] = js.undefined
     
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
   }
   object TinySliderProps {
     
@@ -532,133 +528,134 @@ object mod {
     }
   }
   
-  @js.native
-  trait TinySliderSettings extends CommonOptions {
+  trait TinySliderSettings
+    extends StObject
+       with CommonOptions {
     
     /**
       * Time between each gallery animation (in "ms").
       * @defaultValue false
       */
-    var animateDelay: js.UndefOr[Double | `false`] = js.native
+    var animateDelay: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * Name of intro animation class.
       * @defaultValue "tns-fadeIn"
       */
-    var animateIn: js.UndefOr[String] = js.native
+    var animateIn: js.UndefOr[String] = js.undefined
     
     /**
       * Name of default animation class.
       * @defaultValue "tns-normal"
       */
-    var animateNormal: js.UndefOr[String] = js.native
+    var animateNormal: js.UndefOr[String] = js.undefined
     
     /**
       * Name of outro animation class.
       * @defaultValue "tns-fadeOut"
       */
-    var animateOut: js.UndefOr[String] = js.native
+    var animateOut: js.UndefOr[String] = js.undefined
     
     /**
       * The customized autoplay start/stop button or selector.
       * @defaultValue false
       */
-    var autoplayButton: js.UndefOr[HTMLElement | String | `false`] = js.native
+    var autoplayButton: js.UndefOr[HTMLElement | String | `false`] = js.undefined
     
     /**
       * Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.
       * @defaultValue true
       */
-    var autoplayButtonOutput: js.UndefOr[Boolean] = js.native
+    var autoplayButtonOutput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Direction of slide movement (ascending/descending the slide index).
       * @defaultValue "forward"
       */
-    var autoplayDirection: js.UndefOr[forward | backward] = js.native
+    var autoplayDirection: js.UndefOr[forward | backward] = js.undefined
     
     /**
       * The axis of the slider.
       * @defaultValue "horizontal"
       */
-    var axis: js.UndefOr[horizontal | vertical] = js.native
+    var axis: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * The container element/selector around the prev/next buttons.
       * controlsContainer must have at least 2 child elements.
       * @defaultValue false
       */
-    var controlsContainer: js.UndefOr[HTMLElement | String | `false`] = js.native
+    var controlsContainer: js.UndefOr[HTMLElement | String | `false`] = js.undefined
     
     /**
       * Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.
       * @defaultValue true
       */
-    var freezable: js.UndefOr[Boolean] = js.native
+    var freezable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables lazyloading images that are currently not viewed, thus saving bandwidth
       * @defaultValue false
       */
-    var lazyload: js.UndefOr[Boolean] = js.native
+    var lazyload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Moves throughout all the slides seamlessly.
       * @defaultValue true
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls animation behaviour.
       * With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.
       * @defaultValue "carousel"
       */
-    var mode: js.UndefOr[carousel | gallery] = js.native
+    var mode: js.UndefOr[carousel | gallery] = js.undefined
     
     /**
       * Indecate if the dots are thurbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.
       * @defaultValue false
       */
-    var navAsThumbnails: js.UndefOr[Boolean] = js.native
+    var navAsThumbnails: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The container element/selector around the dots.
       * navContainer must have at least same number of children as the slides.
       * @defaultValue false
       */
-    var navContainer: js.UndefOr[HTMLElement | String | `false`] = js.native
+    var navContainer: js.UndefOr[HTMLElement | String | `false`] = js.undefined
     
     /**
       * Difine the relationship between nested sliders.
       * Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.
       * @defaultValue false
       */
-    var nested: js.UndefOr[inner | outer | `false`] = js.native
+    var nested: js.UndefOr[inner | outer | `false`] = js.undefined
     
     /**
       * Callback to be run on initialization.
       * @defaultValue false
       */
-    var onInit: js.UndefOr[js.Function0[Unit | `false`]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit | `false`]] = js.undefined
     
     /**
       * Breakpoint: Integer.
       * Defines options for different viewport widths
       * @defaultValue false
       */
-    var responsive: js.UndefOr[ResponsiveOptions | `false`] = js.native
+    var responsive: js.UndefOr[ResponsiveOptions | `false`] = js.undefined
     
     /**
       * Moves to the opposite edge when reaching the first or last slide.
       * @defaultValue false
       */
-    var rewind: js.UndefOr[Boolean] = js.native
+    var rewind: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Swipe or drag will not be triggered if the angle is not inside the range when set.
       * @defaultValue 15
       */
-    var swipeAngle: js.UndefOr[Double | Boolean] = js.native
+    var swipeAngle: js.UndefOr[Double | Boolean] = js.undefined
   }
   object TinySliderSettings {
     

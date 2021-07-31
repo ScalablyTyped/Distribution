@@ -2,7 +2,6 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,41 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * according to a specific [priority
   * order](/docs/hosting/full-config#hosting_priority_order).
   */
-@js.native
 trait SchemaServingConfig extends StObject {
   
   /**
     * How to handle well known App Association files.
     */
-  var appAssociation: js.UndefOr[String] = js.native
+  var appAssociation: js.UndefOr[String] = js.undefined
   
   /**
     * Defines whether to drop the file extension from uploaded files.
     */
-  var cleanUrls: js.UndefOr[Boolean] = js.native
+  var cleanUrls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of custom response headers that are added to the content if the
     * request URL path matches the glob.
     */
-  var headers: js.UndefOr[js.Array[SchemaHeader]] = js.native
+  var headers: js.UndefOr[js.Array[SchemaHeader]] = js.undefined
   
   /**
     * A list of globs that will cause the response to redirect to another
     * location.
     */
-  var redirects: js.UndefOr[js.Array[SchemaRedirect]] = js.native
+  var redirects: js.UndefOr[js.Array[SchemaRedirect]] = js.undefined
   
   /**
     * A list of rewrites that will act as if the service were given the
     * destination URL.
     */
-  var rewrites: js.UndefOr[js.Array[SchemaRewrite]] = js.native
+  var rewrites: js.UndefOr[js.Array[SchemaRewrite]] = js.undefined
   
   /**
     * Defines how to handle a trailing slash in the URL path.
     */
-  var trailingSlashBehavior: js.UndefOr[String] = js.native
+  var trailingSlashBehavior: js.UndefOr[String] = js.undefined
 }
 object SchemaServingConfig {
   

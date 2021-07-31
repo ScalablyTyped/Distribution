@@ -2,26 +2,24 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFileSystemsResponse extends StObject {
   
   /**
     * An array of file system descriptions.
     */
-  var FileSystems: js.UndefOr[FileSystemDescriptions] = js.native
+  var FileSystems: js.UndefOr[FileSystemDescriptions] = js.undefined
   
   /**
     * Present if provided by caller in the request (String).
     */
-  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.undefined
   
   /**
     * Present if there are more file systems than returned in the response (String). You can use the NextMarker in the subsequent request to fetch the descriptions.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeFileSystemsResponse {
   

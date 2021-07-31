@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects of this type are collections of text contents of the same type.
   * @see Text
   */
-@js.native
 trait TextContentCollection
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XContainer
 object TextContentCollection {
   

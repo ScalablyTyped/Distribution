@@ -3,17 +3,16 @@ package typings.openapiTypes.mod.OpenAPIV3
 import typings.openapiTypes.mod.OpenAPI.Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterObject
-  extends ParameterBaseObject
+  extends StObject
+     with ParameterBaseObject
      with Parameter {
   
-  var in: String = js.native
+  var in: String
   
-  var name: String = js.native
+  var name: String
 }
 object ParameterObject {
   

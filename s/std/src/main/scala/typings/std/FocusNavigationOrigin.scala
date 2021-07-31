@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FocusNavigationOrigin extends StObject {
   
-  var originHeight: js.UndefOr[Double] = js.native
+  var originHeight: js.UndefOr[Double] = js.undefined
   
-  var originLeft: js.UndefOr[Double] = js.native
+  var originLeft: js.UndefOr[Double] = js.undefined
   
-  var originTop: js.UndefOr[Double] = js.native
+  var originTop: js.UndefOr[Double] = js.undefined
   
-  var originWidth: js.UndefOr[Double] = js.native
+  var originWidth: js.UndefOr[Double] = js.undefined
 }
 object FocusNavigationOrigin {
   

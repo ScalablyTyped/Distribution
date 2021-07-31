@@ -4,25 +4,25 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GEHtmlDivBalloon extends GEHtmlBalloon {
+trait GEHtmlDivBalloon
+  extends StObject
+     with GEHtmlBalloon {
   
   /**
     * An HTMLDivElement to be used as the contents of the balloon.
     * When the balloon is shown, the HTMLDivElement is attached to the balloon element in the web page.
     * You can manipulate this balloon using ordinary HTML DOM techniques.
     */
-  def getContentDiv(): HTMLDivElement = js.native
+  def getContentDiv(): HTMLDivElement
   
   /**
     * An HTMLDivElement to be used as the contents of the balloon.
     * When the balloon is shown, the HTMLDivElement is attached to the balloon element in the web page.
     * You can manipulate this balloon using ordinary HTML DOM techniques.
     */
-  def setContentDiv(contentDiv: HTMLElement): Unit = js.native
+  def setContentDiv(contentDiv: HTMLElement): Unit
 }
 object GEHtmlDivBalloon {
   

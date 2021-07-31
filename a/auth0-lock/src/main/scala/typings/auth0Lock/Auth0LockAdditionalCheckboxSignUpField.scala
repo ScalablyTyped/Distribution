@@ -6,23 +6,23 @@ import typings.auth0Lock.auth0LockStrings.`true`
 import typings.auth0Lock.auth0LockStrings.checkbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Auth0LockAdditionalCheckboxSignUpField extends Auth0LockAdditionalSignUpField {
+trait Auth0LockAdditionalCheckboxSignUpField
+  extends StObject
+     with Auth0LockAdditionalSignUpField {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var prefill: `true` | `false` = js.native
+  var prefill: `true` | `false`
   
-  var `type`: js.UndefOr[checkbox] = js.native
+  var `type`: js.UndefOr[checkbox] = js.undefined
   
-  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.native
+  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.undefined
 }
 object Auth0LockAdditionalCheckboxSignUpField {
   

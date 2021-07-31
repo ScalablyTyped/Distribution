@@ -2,15 +2,16 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sumNthPowerDeviationsMod {
   
-  @JSImport("simple-statistics/src/sum_nth_power_deviations", JSImport.Default)
+  @JSImport("simple-statistics/src/sum_nth_power_deviations", JSImport.Namespace)
   @js.native
-  def default(x: js.Array[Double]): Double = js.native
-  @JSImport("simple-statistics/src/sum_nth_power_deviations", JSImport.Default)
-  @js.native
-  def default(x: js.Array[Double], n: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def default(x: js.Array[Double], n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

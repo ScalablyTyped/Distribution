@@ -10,9 +10,9 @@ lets you define html tags to inject with html-webpack-plugin
 | ------------------ | :-------------: |
 | Full name          | html-webpack-tags-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, html, tags, inject, include, assets |
-| # releases         | 19 |
-| # dependents       | 49 |
-| # downloads        | 1181680 |
+| # releases         | 18 |
+| # dependents       | 65 |
+| # downloads        | 1803492 |
 | # stars            | 0 |
 
 ## Links

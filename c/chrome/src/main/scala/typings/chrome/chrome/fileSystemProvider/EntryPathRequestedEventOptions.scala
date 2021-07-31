@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EntryPathRequestedEventOptions extends RequestedEventOptions {
+trait EntryPathRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The path of the entry to which this operation is related to. */
-  var entryPath: String = js.native
+  var entryPath: String
 }
 object EntryPathRequestedEventOptions {
   

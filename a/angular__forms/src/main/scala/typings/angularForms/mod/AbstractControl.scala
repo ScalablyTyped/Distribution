@@ -6,7 +6,6 @@ import typings.angularForms.anon.`0`
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractControl")
@@ -372,9 +371,9 @@ abstract class AbstractControl () extends StObject {
     * Resets the control. Abstract method (implemented in sub-classes).
     */
   def reset(): Unit = js.native
-  def reset(value: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
   def reset(value: js.Any): Unit = js.native
   def reset(value: js.Any, options: js.Object): Unit = js.native
+  def reset(value: Unit, options: js.Object): Unit = js.native
   
   /**
     * Retrieves the top-level ancestor of this control.
@@ -466,7 +465,7 @@ abstract class AbstractControl () extends StObject {
     * @see {@link AbstractControl.status}
     *
     */
-  val statusChanges: Observable_[_] = js.native
+  val statusChanges: Observable_[js.Any] = js.native
   
   /**
     * True if the control is marked as `touched`.
@@ -543,5 +542,5 @@ abstract class AbstractControl () extends StObject {
     * the UI or programmatically. It also emits an event each time you call enable() or disable()
     * without passing along {emitEvent: false} as a function argument.
     */
-  val valueChanges: Observable_[_] = js.native
+  val valueChanges: Observable_[js.Any] = js.native
 }

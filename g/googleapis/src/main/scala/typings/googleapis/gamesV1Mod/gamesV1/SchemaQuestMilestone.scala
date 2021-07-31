@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a Quest Milestone resource.
   */
-@js.native
 trait SchemaQuestMilestone extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait SchemaQuestMilestone extends StObject {
     * Base64-encoded string. This is a developer-specified binary blob with
     * size between 0 and 2 KB before encoding.
     */
-  var completionRewardData: js.UndefOr[String] = js.native
+  var completionRewardData: js.UndefOr[String] = js.undefined
   
   /**
     * The criteria of the milestone.
     */
-  var criteria: js.UndefOr[js.Array[SchemaQuestCriterion]] = js.native
+  var criteria: js.UndefOr[js.Array[SchemaQuestCriterion]] = js.undefined
   
   /**
     * The milestone ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#questMilestone.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the milestone. Possible values are:   -
@@ -42,7 +40,7 @@ trait SchemaQuestMilestone extends StObject {
     * not yet been completed.  - &quot;NOT_STARTED&quot; - The milestone is for
     * a quest that has not yet been accepted.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaQuestMilestone {
   

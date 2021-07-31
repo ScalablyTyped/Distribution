@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoadBalancersOutput extends StObject {
   
   /**
     * Information about the load balancers.
     */
-  var LoadBalancers: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancers] = js.native
+  var LoadBalancers: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancers] = js.undefined
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeLoadBalancersOutput {
   

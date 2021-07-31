@@ -2,10 +2,8 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxSimpleValue extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait INxSimpleValue extends StObject {
     * Numerical values are not returned as text.
     * Double precision floating point
     */
-  var qNum: Double = js.native
+  var qNum: Double
   
   /**
     * Text related to the attribute expression value.
     * This property is optional. No text is returned if the attribute expression value is a numeric.
     * String
     */
-  var qText: String = js.native
+  var qText: String
 }
 object INxSimpleValue {
   

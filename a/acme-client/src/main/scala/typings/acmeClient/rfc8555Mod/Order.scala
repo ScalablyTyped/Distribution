@@ -7,30 +7,28 @@ import typings.acmeClient.acmeClientStrings.ready
 import typings.acmeClient.acmeClientStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var authorizations: js.Array[String] = js.native
+  var authorizations: js.Array[String]
   
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Object] = js.native
+  var error: js.UndefOr[js.Object] = js.undefined
   
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
   @JSName("finalize")
-  var finalize_FOrder: String = js.native
+  var finalize_FOrder: String
   
-  var identifiers: js.Array[Identifier] = js.native
+  var identifiers: js.Array[Identifier]
   
-  var notAfter: js.UndefOr[String] = js.native
+  var notAfter: js.UndefOr[String] = js.undefined
   
-  var notBefore: js.UndefOr[String] = js.native
+  var notBefore: js.UndefOr[String] = js.undefined
   
-  var status: pending | ready | processing | valid | invalid = js.native
+  var status: pending | ready | processing | valid | invalid
 }
 object Order {
   

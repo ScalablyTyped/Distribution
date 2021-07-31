@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomEventsBatchInsertResponse extends StObject {
   
   /** Indicates that some or all custom events failed to insert. */
-  var hasFailures: js.UndefOr[Boolean] = js.native
+  var hasFailures: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#customEventsBatchInsertResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The insert status of each custom event. Statuses are returned in the same order that conversions are inserted. */
-  var status: js.UndefOr[js.Array[CustomEventStatus]] = js.native
+  var status: js.UndefOr[js.Array[CustomEventStatus]] = js.undefined
 }
 object CustomEventsBatchInsertResponse {
   

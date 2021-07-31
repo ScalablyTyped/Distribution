@@ -24,7 +24,6 @@ import typings.chrome.chromeStrings.two
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -37,6 +36,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Important: This API works only on Chrome OS.
   */
 object serial {
+  
+  @JSGlobal("chrome.serial")
+  @js.native
+  val ^ : js.Any = js.native
   
   object DataBits {
     
@@ -101,50 +104,49 @@ object serial {
     def TWO_=(x: two): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("chrome.serial.clearBreak")
-  @js.native
-  def clearBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def clearBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearBreak")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.connect")
-  @js.native
+  @scala.inline
   def connect(
     path: String,
     options: ConnectionOptions,
     callback: js.Function1[/* connectionInfo */ ConnectionInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.disconnect")
-  @js.native
-  def disconnect(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def disconnect(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.flush")
-  @js.native
-  def flush(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def flush(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.getConnections")
-  @js.native
-  def getConnections(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getConnections(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.getControlSignals")
-  @js.native
-  def getControlSignals(connectionId: Double, callback: js.Function1[/* signals */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def getControlSignals(connectionId: Double, callback: js.Function1[/* signals */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getControlSignals")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.getDevices")
-  @js.native
-  def getDevices(callback: js.Function1[/* ports */ js.Array[DeviceInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(callback: js.Function1[/* ports */ js.Array[DeviceInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.getInfo")
-  @js.native
-  def getInfo(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getInfo(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object onReceive {
     
-    @JSGlobal("chrome.serial.onReceive.addListener")
+    @JSGlobal("chrome.serial.onReceive")
     @js.native
-    def addListener(callback: js.Function1[/* info */ OnReceiveInfo, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addListener(callback: js.Function1[/* info */ OnReceiveInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object onReceiveError {
+    
+    @JSGlobal("chrome.serial.onReceiveError")
+    @js.native
+    val ^ : js.Any = js.native
     
     object OnReceiveErrorEnum {
       
@@ -221,32 +223,26 @@ object serial {
       def timeout_=(x: timeout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("chrome.serial.onReceiveError.addListener")
-    @js.native
-    def addListener(callback: js.Function1[/* info */ OnReceiveErrorInfo, Unit]): Unit = js.native
+    @scala.inline
+    def addListener(callback: js.Function1[/* info */ OnReceiveErrorInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSGlobal("chrome.serial.send")
-  @js.native
-  def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.setBreak")
-  @js.native
-  def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBreak")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.setControlSignals")
-  @js.native
-  def setControlSignals(connectionId: Double, signals: js.Object, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def setControlSignals(connectionId: Double, signals: js.Object, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setControlSignals")(connectionId.asInstanceOf[js.Any], signals.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.setPaused")
-  @js.native
-  def setPaused(connectionId: Double, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setPaused(connectionId: Double, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(connectionId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.serial.update")
-  @js.native
+  @scala.inline
   def update(
     connectionId: Double,
     options: ConnectionOptions,
     callback: js.Function1[/* result */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(connectionId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

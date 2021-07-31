@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryLoggingConfigRequest extends StObject {
   
   /**
     * The ID of the configuration for DNS query logging that you want to get information about.
     */
-  var Id: QueryLoggingConfigId = js.native
+  var Id: QueryLoggingConfigId
 }
 object GetQueryLoggingConfigRequest {
   

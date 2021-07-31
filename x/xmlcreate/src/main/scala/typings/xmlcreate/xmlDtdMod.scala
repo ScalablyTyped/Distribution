@@ -10,41 +10,44 @@ import typings.xmlcreate.xmlDtdParamEntityRefMod.IXmlDtdParamEntityRefOptions
 import typings.xmlcreate.xmlProcInstMod.IXmlProcInstOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlDtdMod {
   
+  @JSImport("xmlcreate/lib/nodes/XmlDtd", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("xmlcreate/lib/nodes/XmlDtd", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlDtd[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlDtd[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdOptions) = this()
   }
   
-  @JSImport("xmlcreate/lib/nodes/XmlDtd", "validatePubId")
-  @js.native
-  def validatePubId(str: String): Boolean = js.native
+  @scala.inline
+  def validatePubId(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePubId")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait IXmlDtdOptions extends StObject {
     
     /**
       * The name of the DTD.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The public identifier of the DTD, excluding quotation marks. If a public
       * identifier is provided, a system identifier must be provided as well.
       * By default, no public identifier is included.
       */
-    var pubId: js.UndefOr[String] = js.native
+    var pubId: js.UndefOr[String] = js.undefined
     
     /**
       * The system identifier of the DTD, excluding quotation marks. By default,
       * no system identifier is included.
       */
-    var sysId: js.UndefOr[String] = js.native
+    var sysId: js.UndefOr[String] = js.undefined
   }
   object IXmlDtdOptions {
     

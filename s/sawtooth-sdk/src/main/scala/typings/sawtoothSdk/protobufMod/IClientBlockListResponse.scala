@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientBlockListResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientBlockListResponse extends StObject {
   
   /** ClientBlockListResponse blocks */
-  var blocks: js.UndefOr[js.Array[IBlock] | Null] = js.native
+  var blocks: js.UndefOr[js.Array[IBlock] | Null] = js.undefined
   
   /** ClientBlockListResponse headId */
-  var headId: js.UndefOr[String | Null] = js.native
+  var headId: js.UndefOr[String | Null] = js.undefined
   
   /** ClientBlockListResponse paging */
-  var paging: js.UndefOr[IClientPagingResponse | Null] = js.native
+  var paging: js.UndefOr[IClientPagingResponse | Null] = js.undefined
   
   /** ClientBlockListResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientBlockListResponse {
   

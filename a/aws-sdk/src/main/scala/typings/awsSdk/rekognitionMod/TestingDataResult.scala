@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestingDataResult extends StObject {
   
   /**
     * The testing dataset that was supplied for training.
     */
-  var Input: js.UndefOr[TestingData] = js.native
+  var Input: js.UndefOr[TestingData] = js.undefined
   
   /**
     * The subset of the dataset that was actually tested. Some images (assets) might not be tested due to file formatting and other issues. 
     */
-  var Output: js.UndefOr[TestingData] = js.native
+  var Output: js.UndefOr[TestingData] = js.undefined
   
   /**
     * The location of the data validation manifest. The data validation manifest is created for the test dataset during model training.
     */
-  var Validation: js.UndefOr[ValidationData] = js.native
+  var Validation: js.UndefOr[ValidationData] = js.undefined
 }
 object TestingDataResult {
   

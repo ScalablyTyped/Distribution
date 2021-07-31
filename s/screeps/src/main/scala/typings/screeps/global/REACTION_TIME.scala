@@ -13,7 +13,6 @@ import typings.screeps.screepsNumbers.`65`
 import typings.screeps.screepsNumbers.`80`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object REACTION_TIME {

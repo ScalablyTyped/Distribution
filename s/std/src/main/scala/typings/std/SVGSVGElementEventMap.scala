@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGSVGElementEventMap extends SVGElementEventMap {
+trait SVGSVGElementEventMap
+  extends StObject
+     with SVGElementEventMap {
   
-  var SVGUnload: Event = js.native
+  var SVGUnload: Event
   
-  var SVGZoom: SVGZoomEvent = js.native
+  var SVGZoom: SVGZoomEvent
 }
 object SVGSVGElementEventMap {
   

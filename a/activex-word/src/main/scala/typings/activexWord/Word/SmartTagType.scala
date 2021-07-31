@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagType extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val FriendlyName: String = js.native
+  val FriendlyName: String
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SmartTagActions: typings.activexWord.Word.SmartTagActions = js.native
+  val SmartTagActions: typings.activexWord.Word.SmartTagActions
   
-  val SmartTagRecognizers: typings.activexWord.Word.SmartTagRecognizers = js.native
+  val SmartTagRecognizers: typings.activexWord.Word.SmartTagRecognizers
   
   @JSName("Word.SmartTagType_typekey")
-  var WordDotSmartTagType_typekey: SmartTagType = js.native
+  var WordDotSmartTagType_typekey: SmartTagType
 }
 object SmartTagType {
   

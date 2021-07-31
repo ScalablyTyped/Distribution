@@ -4,18 +4,20 @@ import typings.asymmetrikLeafletD3.mod.internal.ObjectFn
 import typings.leaflet.mod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
+  @JSImport("leaflet", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait HexbinHoverHandler extends StObject {
     
-    def mouseout(hexLayer: HexbinLayer_, data: js.Any): Unit = js.native
+    def mouseout(hexLayer: HexbinLayer_, data: js.Any): Unit
     
-    def mouseover(hexLayer: HexbinLayer_, data: js.Any): Unit = js.native
+    def mouseover(hexLayer: HexbinLayer_, data: js.Any): Unit
   }
   object HexbinHoverHandler {
     
@@ -25,32 +27,30 @@ object mod {
       __obj.asInstanceOf[HexbinHoverHandler]
     }
     
-    @JSImport("leaflet", "HexbinHoverHandler.compound")
+    @JSImport("leaflet", "HexbinHoverHandler")
     @js.native
-    def compound(v: CompoundOptions): CompoundHoverHandler = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("leaflet", "HexbinHoverHandler.none")
-    @js.native
-    def none(): NoneHoverHandler = js.native
+    @scala.inline
+    def compound(v: CompoundOptions): CompoundHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("compound")(v.asInstanceOf[js.Any]).asInstanceOf[CompoundHoverHandler]
     
-    @JSImport("leaflet", "HexbinHoverHandler.resizeFill")
-    @js.native
-    def resizeFill(): ResizeFillHoverHandler = js.native
+    @scala.inline
+    def none(): NoneHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[NoneHoverHandler]
     
-    @JSImport("leaflet", "HexbinHoverHandler.resizeScale")
-    @js.native
-    def resizeScale(v: ResizeScaleOptions): ResizeScaleHoverHandler = js.native
+    @scala.inline
+    def resizeFill(): ResizeFillHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeFill")().asInstanceOf[ResizeFillHoverHandler]
     
-    @JSImport("leaflet", "HexbinHoverHandler.tooltip")
-    @js.native
-    def tooltip(v: TooltipOptions): TooltipHoverHandler = js.native
+    @scala.inline
+    def resizeScale(v: ResizeScaleOptions): ResizeScaleHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeScale")(v.asInstanceOf[js.Any]).asInstanceOf[ResizeScaleHoverHandler]
+    
+    @scala.inline
+    def tooltip(v: TooltipOptions): TooltipHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(v.asInstanceOf[js.Any]).asInstanceOf[TooltipHoverHandler]
     
     type CompoundHoverHandler = HexbinHoverHandler
     
-    @js.native
     trait CompoundOptions extends StObject {
       
-      var handlers: js.Array[HexbinHoverHandler] = js.native
+      var handlers: js.Array[HexbinHoverHandler]
     }
     object CompoundOptions {
       
@@ -87,10 +87,9 @@ object mod {
     
     type ResizeScaleHoverHandler = HexbinHoverHandler
     
-    @js.native
     trait ResizeScaleOptions extends StObject {
       
-      var radiusScale: Double = js.native
+      var radiusScale: Double
     }
     object ResizeScaleOptions {
       
@@ -110,10 +109,9 @@ object mod {
     
     type TooltipHoverHandler = HexbinHoverHandler
     
-    @js.native
     trait TooltipOptions extends StObject {
       
-      def tooltipContent(d: js.Any): String = js.native
+      def tooltipContent(d: js.Any): String
     }
     object TooltipOptions {
       
@@ -132,32 +130,29 @@ object mod {
     }
   }
   
-  @JSImport("leaflet", "hexbinLayer")
-  @js.native
-  def hexbinLayer(config: js.UndefOr[HexbinLayerConfig]): HexbinLayer_ = js.native
+  @scala.inline
+  def hexbinLayer(config: js.UndefOr[HexbinLayerConfig]): HexbinLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbinLayer")(config.asInstanceOf[js.Any]).asInstanceOf[HexbinLayer_]
   
-  @JSImport("leaflet", "pingLayer")
-  @js.native
-  def pingLayer(config: js.UndefOr[PingLayerConfig]): PingLayer_ = js.native
+  @scala.inline
+  def pingLayer(config: js.UndefOr[PingLayerConfig]): PingLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pingLayer")(config.asInstanceOf[js.Any]).asInstanceOf[PingLayer_]
   
-  @js.native
   trait HexbinLayerConfig extends StObject {
     
-    var colorRange: js.UndefOr[js.Array[String]] = js.native
+    var colorRange: js.UndefOr[js.Array[String]] = js.undefined
     
-    var colorScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var colorScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pointerEvents: js.UndefOr[String] = js.native
+    var pointerEvents: js.UndefOr[String] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var radiusRange: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var radiusRange: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var radiusScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var radiusScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object HexbinLayerConfig {
     
@@ -241,8 +236,8 @@ object mod {
     def colorValue(): ObjectFn[Double] = js.native
     def colorValue(v: ObjectFn[Double]): this.type = js.native
     
-    def data(): js.Array[_] = js.native
-    def data(v: js.Array[_]): this.type = js.native
+    def data(): js.Array[js.Any] = js.native
+    def data(v: js.Array[js.Any]): this.type = js.native
     
     def dispatch(): js.Any = js.native
     
@@ -252,7 +247,7 @@ object mod {
     def fill(): ObjectFn[String] = js.native
     def fill(v: ObjectFn[String]): this.type = js.native
     
-    def getLatLngs(): js.Array[_] = js.native
+    def getLatLngs(): js.Array[js.Any] = js.native
     
     def hoverHandler(): HexbinHoverHandler = js.native
     def hoverHandler(v: HexbinHoverHandler): this.type = js.native
@@ -283,19 +278,18 @@ object mod {
     
     def redraw(): Unit = js.native
     
-    def toGeoJSON(): js.Array[_] = js.native
+    def toGeoJSON(): js.Array[js.Any] = js.native
   }
   
-  @js.native
   trait PingLayerConfig extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var fps: js.UndefOr[Double] = js.native
+    var fps: js.UndefOr[Double] = js.undefined
     
-    var opacityRange: js.UndefOr[js.Array[Double]] = js.native
+    var opacityRange: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var radiusRange: js.UndefOr[js.Array[Double]] = js.native
+    var radiusRange: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PingLayerConfig {
     
@@ -346,7 +340,7 @@ object mod {
   @js.native
   trait PingLayer_ extends Layer {
     
-    def data(): js.Array[_] = js.native
+    def data(): js.Array[js.Any] = js.native
     
     def duration(): Double = js.native
     def duration(v: Double): this.type = js.native

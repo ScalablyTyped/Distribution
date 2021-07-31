@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,16 +16,17 @@ object mod {
   
   type Marquee = Component[MarqueeProps, js.Object, js.Any]
   
-  @js.native
-  trait MarqueeProps extends HTMLProps[HTMLTextAreaElement] {
+  trait MarqueeProps
+    extends StObject
+       with HTMLProps[HTMLTextAreaElement] {
     
-    var hoverToStop: js.UndefOr[Boolean] = js.native
+    var hoverToStop: js.UndefOr[Boolean] = js.undefined
     
-    var leading: js.UndefOr[Double] = js.native
+    var leading: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var trailing: js.UndefOr[Double] = js.native
+    var trailing: js.UndefOr[Double] = js.undefined
   }
   object MarqueeProps {
     

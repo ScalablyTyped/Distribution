@@ -3,16 +3,14 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobConfiguration extends StObject {
   
   /**
     * [Pick one] Copies a table.
     */
-  var copy: js.UndefOr[SchemaJobConfigurationTableCopy] = js.native
+  var copy: js.UndefOr[SchemaJobConfigurationTableCopy] = js.undefined
   
   /**
     * [Optional] If set, don&#39;t actually run this job. A valid query will
@@ -20,24 +18,24 @@ trait SchemaJobConfiguration extends StObject {
     * invalid query will return the same error it would if it wasn&#39;t a dry
     * run. Behavior of non-query jobs is undefined.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Pick one] Configures an extract job.
     */
-  var extract: js.UndefOr[SchemaJobConfigurationExtract] = js.native
+  var extract: js.UndefOr[SchemaJobConfigurationExtract] = js.undefined
   
   /**
     * [Optional] Job timeout in milliseconds. If this time limit is exceeded,
     * BigQuery may attempt to terminate the job.
     */
-  var jobTimeoutMs: js.UndefOr[String] = js.native
+  var jobTimeoutMs: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The type of the job. Can be QUERY, LOAD, EXTRACT, COPY or
     * UNKNOWN.
     */
-  var jobType: js.UndefOr[String] = js.native
+  var jobType: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this job. You can use these to organize and
@@ -47,17 +45,17 @@ trait SchemaJobConfiguration extends StObject {
     * values are optional. Label keys must start with a letter and each label
     * in the list must have a different key.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Pick one] Configures a load job.
     */
-  var load: js.UndefOr[SchemaJobConfigurationLoad] = js.native
+  var load: js.UndefOr[SchemaJobConfigurationLoad] = js.undefined
   
   /**
     * [Pick one] Configures a query job.
     */
-  var query: js.UndefOr[SchemaJobConfigurationQuery] = js.native
+  var query: js.UndefOr[SchemaJobConfigurationQuery] = js.undefined
 }
 object SchemaJobConfiguration {
   

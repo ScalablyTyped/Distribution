@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Recommendations Object
   * [](https://developer.spotify.com/web-api/object-model/#recommendations-object)
   */
-@js.native
 trait RecommendationsObject extends StObject {
   
-  var seeds: js.Array[RecommendationsSeedObject] = js.native
+  var seeds: js.Array[RecommendationsSeedObject]
   
-  var tracks: js.Array[TrackObjectSimplified] = js.native
+  var tracks: js.Array[TrackObjectSimplified]
 }
 object RecommendationsObject {
   

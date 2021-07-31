@@ -2,61 +2,59 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayV2ApiDetails extends StObject {
   
   /**
     * The URI of the API.  Uses the format  &lt;api-id&gt;.execute-api.&lt;region&gt;.amazonaws.com  The stage name is typically appended to the URI to form a complete path to a deployed API stage.
     */
-  var ApiEndpoint: js.UndefOr[NonEmptyString] = js.native
+  var ApiEndpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the API.
     */
-  var ApiId: js.UndefOr[NonEmptyString] = js.native
+  var ApiId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * An API key selection expression. Supported only for WebSocket APIs. 
     */
-  var ApiKeySelectionExpression: js.UndefOr[NonEmptyString] = js.native
+  var ApiKeySelectionExpression: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A cross-origin resource sharing (CORS) configuration. Supported only for HTTP APIs.
     */
-  var CorsConfiguration: js.UndefOr[AwsCorsConfiguration] = js.native
+  var CorsConfiguration: js.UndefOr[AwsCorsConfiguration] = js.undefined
   
   /**
     * Indicates when the API was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedDate: js.UndefOr[NonEmptyString] = js.native
+  var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A description of the API.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the API.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The API protocol for the API. Valid values: WEBSOCKET | HTTP 
     */
-  var ProtocolType: js.UndefOr[NonEmptyString] = js.native
+  var ProtocolType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The route selection expression for the API. For HTTP APIs, must be ${request.method} ${request.path}. This is the default value for HTTP APIs. For WebSocket APIs, there is no default value.
     */
-  var RouteSelectionExpression: js.UndefOr[NonEmptyString] = js.native
+  var RouteSelectionExpression: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version identifier for the API.
     */
-  var Version: js.UndefOr[NonEmptyString] = js.native
+  var Version: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsApiGatewayV2ApiDetails {
   

@@ -2,7 +2,6 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "UsageWriter")
@@ -19,9 +18,9 @@ class UsageWriter protected () extends StObject {
   var remainder: js.Any = js.native
   
   def writeOption(): Unit = js.native
-  def writeOption(left: js.UndefOr[scala.Nothing], right: String): Unit = js.native
   def writeOption(left: String): Unit = js.native
   def writeOption(left: String, right: String): Unit = js.native
+  def writeOption(left: Unit, right: String): Unit = js.native
   
   def writeln(): Unit = js.native
   def writeln(text: String): Unit = js.native

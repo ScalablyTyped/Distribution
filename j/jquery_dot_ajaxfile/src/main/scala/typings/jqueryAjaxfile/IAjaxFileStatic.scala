@@ -2,15 +2,13 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAjaxFileStatic extends StObject {
   
-  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any = js.native
+  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any
   
-  def send[T](option: IOption): IAjaxFilePromise[T] = js.native
+  def send[T](option: IOption): IAjaxFilePromise[T]
 }
 object IAjaxFileStatic {
   

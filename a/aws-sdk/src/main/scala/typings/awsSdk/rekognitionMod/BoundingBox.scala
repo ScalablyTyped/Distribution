@@ -2,31 +2,29 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingBox extends StObject {
   
   /**
     * Height of the bounding box as a ratio of the overall image height.
     */
-  var Height: js.UndefOr[Float] = js.native
+  var Height: js.UndefOr[Float] = js.undefined
   
   /**
     * Left coordinate of the bounding box as a ratio of overall image width.
     */
-  var Left: js.UndefOr[Float] = js.native
+  var Left: js.UndefOr[Float] = js.undefined
   
   /**
     * Top coordinate of the bounding box as a ratio of overall image height.
     */
-  var Top: js.UndefOr[Float] = js.native
+  var Top: js.UndefOr[Float] = js.undefined
   
   /**
     * Width of the bounding box as a ratio of the overall image width.
     */
-  var Width: js.UndefOr[Float] = js.native
+  var Width: js.UndefOr[Float] = js.undefined
 }
 object BoundingBox {
   

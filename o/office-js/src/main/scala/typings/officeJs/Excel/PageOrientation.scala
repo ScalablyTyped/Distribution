@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait PageOrientation extends StObject
 object PageOrientation extends StObject {
   
   @js.native
-  sealed trait landscape extends PageOrientation
+  sealed trait landscape
+    extends StObject
+       with PageOrientation
   
   @js.native
-  sealed trait portrait extends PageOrientation
+  sealed trait portrait
+    extends StObject
+       with PageOrientation
 }

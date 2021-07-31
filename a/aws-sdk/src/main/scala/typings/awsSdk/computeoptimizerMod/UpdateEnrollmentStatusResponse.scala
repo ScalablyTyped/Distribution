@@ -2,21 +2,19 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEnrollmentStatusResponse extends StObject {
   
   /**
     * The enrollment status of the account.
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     * The reason for the enrollment status of the account. For example, an account might show a status of Pending because member accounts of an organization require more time to be enrolled in the service.
     */
-  var statusReason: js.UndefOr[StatusReason] = js.native
+  var statusReason: js.UndefOr[StatusReason] = js.undefined
 }
 object UpdateEnrollmentStatusResponse {
   

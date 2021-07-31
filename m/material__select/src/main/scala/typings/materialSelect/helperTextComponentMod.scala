@@ -5,7 +5,6 @@ import typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundat
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperTextComponentMod {
@@ -13,7 +12,7 @@ object helperTextComponentMod {
   @JSImport("@material/select/helper-text/component", "MDCSelectHelperText")
   @js.native
   class MDCSelectHelperText protected () extends MDCComponent[MDCSelectHelperTextFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCSelectHelperTextFoundation, args: js.Any*) = this()
     
     def foundationForSelect: MDCSelectHelperTextFoundation = js.native
@@ -21,9 +20,12 @@ object helperTextComponentMod {
   /* static members */
   object MDCSelectHelperText {
     
-    @JSImport("@material/select/helper-text/component", "MDCSelectHelperText.attachTo")
+    @JSImport("@material/select/helper-text/component", "MDCSelectHelperText")
     @js.native
-    def attachTo(root: Element): MDCSelectHelperText = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelectHelperText]
   }
   
   type MDCSelectHelperTextFactory = js.Function2[

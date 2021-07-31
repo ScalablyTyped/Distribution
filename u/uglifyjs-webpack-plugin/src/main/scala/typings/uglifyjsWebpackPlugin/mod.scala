@@ -4,25 +4,25 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("uglifyjs-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: UglifyJsPluginOptions) = this()
   }
   
-  @js.native
   trait ExtractCommentsOptions extends StObject {
     
-    var banner: js.UndefOr[Boolean | String | (js.Function1[/* fileName */ String, String])] = js.native
+    var banner: js.UndefOr[Boolean | String | (js.Function1[/* fileName */ String, String])] = js.undefined
     
-    var condition: js.UndefOr[RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])] = js.native
+    var condition: js.UndefOr[RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])] = js.undefined
     
-    var filename: js.UndefOr[String | (js.Function1[/* originalFileName */ String, String])] = js.native
+    var filename: js.UndefOr[String | (js.Function1[/* originalFileName */ String, String])] = js.undefined
   }
   object ExtractCommentsOptions {
     
@@ -64,32 +64,31 @@ object mod {
     }
   }
   
-  @js.native
   trait UglifyJsOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean | js.Object] = js.native
+    var compress: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var ecma: js.UndefOr[Double] = js.native
+    var ecma: js.UndefOr[Double] = js.undefined
     
-    var ie8: js.UndefOr[Boolean] = js.native
+    var ie8: js.UndefOr[Boolean] = js.undefined
     
-    var keep_classnames: js.UndefOr[Boolean] = js.native
+    var keep_classnames: js.UndefOr[Boolean] = js.undefined
     
-    var keep_fnames: js.UndefOr[Boolean] = js.native
+    var keep_fnames: js.UndefOr[Boolean] = js.undefined
     
-    var mangle: js.UndefOr[Boolean | js.Object] = js.native
+    var mangle: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var nameCache: js.UndefOr[js.Object] = js.native
+    var nameCache: js.UndefOr[js.Object] = js.undefined
     
-    var output: js.UndefOr[js.Object] = js.native
+    var output: js.UndefOr[js.Object] = js.undefined
     
-    var parse: js.UndefOr[js.Object] = js.native
+    var parse: js.UndefOr[js.Object] = js.undefined
     
-    var safari10: js.UndefOr[Boolean] = js.native
+    var safari10: js.UndefOr[Boolean] = js.undefined
     
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
     
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object UglifyJsOptions {
     
@@ -178,28 +177,27 @@ object mod {
   
   type UglifyJsPlugin = Plugin
   
-  @js.native
   trait UglifyJsPluginOptions extends StObject {
     
-    var cache: js.UndefOr[Boolean | String] = js.native
+    var cache: js.UndefOr[Boolean | String] = js.undefined
     
-    var exclude: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var exclude: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
     var extractComments: js.UndefOr[
         Boolean | RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
-      ] = js.native
+      ] = js.undefined
     
-    var include: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var include: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
-    var parallel: js.UndefOr[Boolean | Double] = js.native
+    var parallel: js.UndefOr[Boolean | Double] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var test: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
-    var uglifyOptions: js.UndefOr[UglifyJsOptions] = js.native
+    var uglifyOptions: js.UndefOr[UglifyJsOptions] = js.undefined
     
-    var warningsFilter: js.UndefOr[js.Function1[/* source */ String, Boolean]] = js.native
+    var warningsFilter: js.UndefOr[js.Function1[/* source */ String, Boolean]] = js.undefined
   }
   object UglifyJsPluginOptions {
     

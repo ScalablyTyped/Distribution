@@ -5,11 +5,12 @@ import typings.bmapgl.anon.Type
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoWindow extends Overlay {
+trait InfoWindow
+  extends StObject
+     with Overlay {
   
   def disableAutoPan(): Unit = js.native
   

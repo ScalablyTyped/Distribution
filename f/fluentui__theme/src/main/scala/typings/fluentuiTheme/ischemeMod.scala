@@ -7,12 +7,10 @@ import typings.fluentuiTheme.isemanticcolorsMod.ISemanticColors
 import typings.fluentuiTheme.ispacingMod.ISpacing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ischemeMod {
   
-  @js.native
   trait IScheme extends StObject {
     
     /**
@@ -23,19 +21,19 @@ object ischemeMod {
       * When you set this setting to `true` on your theme the components in the subtree of your
       * Customizer will not get the global styles applied to them.
       */
-    var disableGlobalClassNames: Boolean = js.native
+    var disableGlobalClassNames: Boolean
     
-    var effects: IEffects = js.native
+    var effects: IEffects
     
-    var fonts: IFontStyles = js.native
+    var fonts: IFontStyles
     
-    var isInverted: Boolean = js.native
+    var isInverted: Boolean
     
-    var palette: IPalette = js.native
+    var palette: IPalette
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var semanticColors: ISemanticColors = js.native
+    var semanticColors: ISemanticColors
     
     /**
       * @internal
@@ -43,7 +41,7 @@ object ischemeMod {
       * be used for padding and margin sizes in a future release, but it is still undergoing review.
       * Avoid using it until it is finalized.
       */
-    var spacing: ISpacing = js.native
+    var spacing: ISpacing
   }
   object IScheme {
     

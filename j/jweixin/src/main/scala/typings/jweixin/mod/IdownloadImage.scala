@@ -2,21 +2,21 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdownloadImage extends BaseParams {
+trait IdownloadImage
+  extends StObject
+     with BaseParams {
   
   // 需要下载的图片的服务器端ID，由uploadImage接口获得
-  var isShowProgressTips: Double = js.native
+  var isShowProgressTips: Double
   
-  var serverId: String = js.native
+  var serverId: String
   
   // 默认为1，显示进度提示
   // 返回图片下载后的本地ID
   @JSName("success")
-  def success_MIdownloadImage(res: Resouce): Unit = js.native
+  def success_MIdownloadImage(res: Resouce): Unit
 }
 object IdownloadImage {
   

@@ -3,34 +3,33 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Platform
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var api_name: js.UndefOr[String] = js.native
+  var api_name: js.UndefOr[String] = js.undefined
   
-  var automation_backend: js.UndefOr[String] = js.native
+  var automation_backend: js.UndefOr[String] = js.undefined
   
-  var deprecated_backend_versions: js.UndefOr[js.Array[String]] = js.native
+  var deprecated_backend_versions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var device: js.UndefOr[String] = js.native
+  var device: js.UndefOr[String] = js.undefined
   
-  var latest_stable_version: js.UndefOr[String] = js.native
+  var latest_stable_version: js.UndefOr[String] = js.undefined
   
-  var long_name: js.UndefOr[String] = js.native
+  var long_name: js.UndefOr[String] = js.undefined
   
-  var long_version: js.UndefOr[String] = js.native
+  var long_version: js.UndefOr[String] = js.undefined
   
-  var os: js.UndefOr[String] = js.native
+  var os: js.UndefOr[String] = js.undefined
   
-  var recommended_backend_version: js.UndefOr[String] = js.native
+  var recommended_backend_version: js.UndefOr[String] = js.undefined
   
-  var short_version: js.UndefOr[String] = js.native
+  var short_version: js.UndefOr[String] = js.undefined
   
-  var supported_backend_versions: js.UndefOr[js.Array[String]] = js.native
+  var supported_backend_versions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Platform {
   

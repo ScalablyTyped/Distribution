@@ -5,38 +5,34 @@ import typings.postcss.mod.Root_
 import typings.stylableCore.typesMod.ParsedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableAssetsMod {
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "assureRelativeUrlPrefix")
+  @JSImport("@stylable/core/cjs/stylable-assets", JSImport.Namespace)
   @js.native
-  def assureRelativeUrlPrefix(url: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "collectAssets")
-  @js.native
-  def collectAssets(ast: Root_): js.Array[String] = js.native
+  @scala.inline
+  def assureRelativeUrlPrefix(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("assureRelativeUrlPrefix")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "fixRelativeUrls")
-  @js.native
-  def fixRelativeUrls(ast: Root_, originPath: String, targetPath: String): Unit = js.native
+  @scala.inline
+  def collectAssets(ast: Root_): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectAssets")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "isAsset")
-  @js.native
-  def isAsset(url: String): Boolean = js.native
+  @scala.inline
+  def fixRelativeUrls(ast: Root_, originPath: String, targetPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixRelativeUrls")(ast.asInstanceOf[js.Any], originPath.asInstanceOf[js.Any], targetPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "isExternal")
-  @js.native
-  def isExternal(url: String): Boolean = js.native
+  @scala.inline
+  def isAsset(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsset")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "makeAbsolute")
-  @js.native
-  def makeAbsolute(resourcePath: String, rootContext: String, moduleContext: String): String = js.native
+  @scala.inline
+  def isExternal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/stylable-assets", "processDeclarationUrls")
-  @js.native
-  def processDeclarationUrls(decl: Declaration, onUrl: OnUrlCallback, transform: Boolean): Unit = js.native
+  @scala.inline
+  def makeAbsolute(resourcePath: String, rootContext: String, moduleContext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAbsolute")(resourcePath.asInstanceOf[js.Any], rootContext.asInstanceOf[js.Any], moduleContext.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def processDeclarationUrls(decl: Declaration, onUrl: OnUrlCallback, transform: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processDeclarationUrls")(decl.asInstanceOf[js.Any], onUrl.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OnUrlCallback = js.Function1[/* node */ ParsedValue, Unit]
 }

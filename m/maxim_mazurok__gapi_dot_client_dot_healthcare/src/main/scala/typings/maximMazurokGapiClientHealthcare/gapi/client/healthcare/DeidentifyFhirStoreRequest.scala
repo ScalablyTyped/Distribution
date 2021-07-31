@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeidentifyFhirStoreRequest extends StObject {
   
   /** Deidentify configuration. */
-  var config: js.UndefOr[DeidentifyConfig] = js.native
+  var config: js.UndefOr[DeidentifyConfig] = js.undefined
   
   /**
     * The name of the FHIR store to create and write the redacted data to. For example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. *
     * The destination dataset must exist. * The source dataset and destination dataset must both reside in the same project. De-identifying data across multiple projects is not supported.
     * * The destination FHIR store must exist. * The caller must have the healthcare.fhirResources.update permission to write to the destination FHIR store.
     */
-  var destinationStore: js.UndefOr[String] = js.native
+  var destinationStore: js.UndefOr[String] = js.undefined
   
   /** A filter specifying the resources to include in the output. If not specified, all resources are included in the output. */
-  var resourceFilter: js.UndefOr[FhirFilter] = js.native
+  var resourceFilter: js.UndefOr[FhirFilter] = js.undefined
 }
 object DeidentifyFhirStoreRequest {
   

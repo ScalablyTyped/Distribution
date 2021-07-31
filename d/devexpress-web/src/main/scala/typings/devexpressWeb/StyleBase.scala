@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for objects implementing different element styles.
   */
-@js.native
 trait StyleBase extends StObject {
   
   /**
     * Gets whether the specified style is marked as deleted.
     */
-  val isDeleted: Boolean = js.native
+  val isDeleted: Boolean
   
   /**
     * Gets or sets the name of the style.
     */
-  val name: String = js.native
+  val name: String
 }
 object StyleBase {
   

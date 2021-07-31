@@ -2,7 +2,6 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     a: [ 10.10.1.1:8675, 10.10.2.2:8675 ],
   *     b: [ 10.10.1.1:309, 10.10.2.2:309 ]
   */
-@js.native
 trait EndpointSubset extends StObject {
   
   /**
     * IP addresses which offer the related ports that are marked as ready. These endpoints should be considered safe for load balancers and clients to utilize.
     */
-  var addresses: js.Array[EndpointAddress] = js.native
+  var addresses: js.Array[EndpointAddress]
   
   /**
     * IP addresses which offer the related ports but are not currently marked as ready because they have not yet finished starting, have recently failed a readiness check, or have recently failed a liveness check.
     */
-  var notReadyAddresses: js.Array[EndpointAddress] = js.native
+  var notReadyAddresses: js.Array[EndpointAddress]
   
   /**
     * Port numbers available on the related IP addresses.
     */
-  var ports: js.Array[EndpointPort] = js.native
+  var ports: js.Array[EndpointPort]
 }
 object EndpointSubset {
   

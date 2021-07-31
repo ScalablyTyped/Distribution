@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipleQueriesQuery extends StObject {
   
   /**
     * The index name.
     */
-  val indexName: String = js.native
+  val indexName: String
   
   /**
     * The search options.
     */
-  val params: js.UndefOr[SearchOptions] = js.native
+  val params: js.UndefOr[SearchOptions] = js.undefined
   
   /**
     * The query associated with the request.
     */
-  val query: js.UndefOr[String] = js.native
+  val query: js.UndefOr[String] = js.undefined
 }
 object MultipleQueriesQuery {
   

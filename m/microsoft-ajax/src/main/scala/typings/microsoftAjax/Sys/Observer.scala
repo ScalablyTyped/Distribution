@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,5 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In order to be used with the Sys.Observer class, an object must be an object, array, or DOM element.
   * @see {@link http://msdn.microsoft.com/en-us/library/dd393710(v=vs.100).aspx}
   */
-@js.native
 trait Observer extends StObject

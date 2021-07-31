@@ -3,31 +3,24 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`cursor-update`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointDrawActionCursorUpdateEvent extends StObject {
   
-  var coordinates: js.Array[Double] = js.native
+  var coordinates: js.Array[Double]
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `cursor-update` = js.native
+  var `type`: `cursor-update`
 }
 object PointDrawActionCursorUpdateEvent {
   
   @scala.inline
-  def apply(
-    coordinates: js.Array[Double],
-    defaultPrevented: Boolean,
-    preventDefault: js.Function,
-    `type`: `cursor-update`
-  ): PointDrawActionCursorUpdateEvent = {
+  def apply(coordinates: js.Array[Double], defaultPrevented: Boolean, preventDefault: js.Function): PointDrawActionCursorUpdateEvent = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cursor-update")
     __obj.asInstanceOf[PointDrawActionCursorUpdateEvent]
   }
   

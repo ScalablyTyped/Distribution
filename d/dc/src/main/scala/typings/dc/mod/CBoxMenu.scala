@@ -2,11 +2,12 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CBoxMenu extends BaseMixin[CBoxMenu] {
+trait CBoxMenu
+  extends StObject
+     with BaseMixin[CBoxMenu] {
   
   def filterDisplayed(): js.Function = js.native
   def filterDisplayed(t: js.Function): CBoxMenu = js.native
@@ -31,5 +32,5 @@ trait CBoxMenu extends BaseMixin[CBoxMenu] {
   def promptValue(): js.Any = js.native
   def promptValue(t: js.Any): CBoxMenu = js.native
   @JSName("promptValue")
-  var promptValue_Original: IGetSet[_, CBoxMenu] = js.native
+  var promptValue_Original: IGetSet[js.Any, CBoxMenu] = js.native
 }

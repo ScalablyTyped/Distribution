@@ -3,15 +3,13 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesServer.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExecuteCommandCallback extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var data: Message = js.native
+  var data: Message
 }
 object IExecuteCommandCallback {
   

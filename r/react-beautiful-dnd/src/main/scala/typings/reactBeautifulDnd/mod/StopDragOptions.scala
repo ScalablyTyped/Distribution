@@ -2,13 +2,11 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDragOptions extends StObject {
   
-  var shouldBlockNextClick: Boolean = js.native
+  var shouldBlockNextClick: Boolean
 }
 object StopDragOptions {
   

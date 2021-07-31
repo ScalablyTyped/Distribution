@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHumanTaskUisResponse extends StObject {
   
   /**
     * An array of objects describing the human task user interfaces.
     */
-  var HumanTaskUiSummaries: typings.awsSdk.sagemakerMod.HumanTaskUiSummaries = js.native
+  var HumanTaskUiSummaries: typings.awsSdk.sagemakerMod.HumanTaskUiSummaries
   
   /**
     * A token to resume pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListHumanTaskUisResponse {
   

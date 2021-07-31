@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowseRequestData extends StObject {
   
   /**
     * If available, should be used for browsing to the next page.
     */
-  val cursor: js.UndefOr[String] = js.native
+  val cursor: js.UndefOr[String] = js.undefined
   
   /**
     * If cursor is not available, should be used for browsing to the next page.
     */
-  val page: js.UndefOr[Double] = js.native
+  val page: js.UndefOr[Double] = js.undefined
 }
 object BrowseRequestData {
   

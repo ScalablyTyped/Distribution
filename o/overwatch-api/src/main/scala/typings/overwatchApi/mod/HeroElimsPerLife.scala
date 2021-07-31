@@ -2,13 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeroElimsPerLife extends Hero {
+trait HeroElimsPerLife
+  extends StObject
+     with Hero {
   
-  var eliminations_per_life: String = js.native
+  var eliminations_per_life: String
 }
 object HeroElimsPerLife {
   

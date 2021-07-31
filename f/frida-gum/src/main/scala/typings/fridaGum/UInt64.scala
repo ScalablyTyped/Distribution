@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait UInt64
-  extends _Arm64CallArgument
+  extends StObject
+     with _Arm64CallArgument
      with _ArmCallArgument
      with _MipsCallArgument
      with _NativeArgumentValue

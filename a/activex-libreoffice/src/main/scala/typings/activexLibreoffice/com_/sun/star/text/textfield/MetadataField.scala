@@ -21,7 +21,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,22 +28,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.rdf
   * @since OOo 3.2
   */
-@js.native
 trait MetadataField
-  extends TextField_
+  extends StObject
+     with TextField_
      with XMetadatable
      with XText
      with XEnumerationAccess
      with XChild {
   
   /** determines whether changes in language attributes at the position of the text field also change the number format as appropriate for this language. */
-  var IsFixedLanguage: Boolean = js.native
+  var IsFixedLanguage: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
 }
 object MetadataField {
   

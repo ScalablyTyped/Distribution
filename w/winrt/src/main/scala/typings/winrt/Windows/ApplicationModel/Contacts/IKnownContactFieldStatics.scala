@@ -2,23 +2,21 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKnownContactFieldStatics extends StObject {
   
-  def convertNameToType(name: String): ContactFieldType = js.native
+  def convertNameToType(name: String): ContactFieldType
   
-  def convertTypeToName(`type`: ContactFieldType): String = js.native
+  def convertTypeToName(`type`: ContactFieldType): String
   
-  var email: String = js.native
+  var email: String
   
-  var instantMessage: String = js.native
+  var instantMessage: String
   
-  var location: String = js.native
+  var location: String
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object IKnownContactFieldStatics {
   

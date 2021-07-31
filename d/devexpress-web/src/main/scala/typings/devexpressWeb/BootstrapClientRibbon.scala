@@ -2,16 +2,16 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapRibbon control.
   */
-@js.native
-trait BootstrapClientRibbon extends ASPxClientRibbon {
+trait BootstrapClientRibbon
+  extends StObject
+     with ASPxClientRibbon {
   
-  def GetQuickAccessToolbarItem(name: String): ASPxClientRibbonItem = js.native
+  def GetQuickAccessToolbarItem(name: String): ASPxClientRibbonItem
 }
 object BootstrapClientRibbon {
   

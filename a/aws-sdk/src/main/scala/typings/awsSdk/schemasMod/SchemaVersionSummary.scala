@@ -2,31 +2,29 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVersionSummary extends StObject {
   
   /**
     * The ARN of the schema version.
     */
-  var SchemaArn: js.UndefOr[string] = js.native
+  var SchemaArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[string] = js.native
+  var SchemaName: js.UndefOr[string] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The type of schema.
     */
-  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.undefined
 }
 object SchemaVersionSummary {
   

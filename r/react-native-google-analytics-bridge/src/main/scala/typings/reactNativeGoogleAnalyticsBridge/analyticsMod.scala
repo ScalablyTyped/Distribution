@@ -7,7 +7,6 @@ import typings.reactNativeGoogleAnalyticsBridge.productMod.Product
 import typings.reactNativeGoogleAnalyticsBridge.productMod.ProductAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyticsMod {
@@ -19,23 +18,26 @@ object analyticsMod {
   object SessionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    def apply(value: String): js.UndefOr[SessionState & String] = js.native
     
     @js.native
-    sealed trait End extends SessionState
-    /* "end" */ val End: typings.reactNativeGoogleAnalyticsBridge.analyticsMod.SessionState.End with String = js.native
+    sealed trait End
+      extends StObject
+         with SessionState
+    /* "end" */ val End: typings.reactNativeGoogleAnalyticsBridge.analyticsMod.SessionState.End & String = js.native
     
     @js.native
-    sealed trait Start extends SessionState
-    /* "start" */ val Start: typings.reactNativeGoogleAnalyticsBridge.analyticsMod.SessionState.Start with String = js.native
+    sealed trait Start
+      extends StObject
+         with SessionState
+    /* "start" */ val Start: typings.reactNativeGoogleAnalyticsBridge.analyticsMod.SessionState.Start & String = js.native
   }
   
-  @js.native
   trait EventMetadata extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object EventMetadata {
     
@@ -62,26 +64,25 @@ object analyticsMod {
     }
   }
   
-  @js.native
   trait HitPayload extends StObject {
     
-    var customDimensions: js.UndefOr[CustomDimensionsByIndex | CustomDimensionsByField] = js.native
+    var customDimensions: js.UndefOr[CustomDimensionsByIndex | CustomDimensionsByField] = js.undefined
     
-    var customMetrics: js.UndefOr[CustomMetrics] = js.native
+    var customMetrics: js.UndefOr[CustomMetrics] = js.undefined
     
-    var impressionList: js.UndefOr[String] = js.native
+    var impressionList: js.UndefOr[String] = js.undefined
     
-    var impressionProducts: js.UndefOr[js.Array[Product]] = js.native
+    var impressionProducts: js.UndefOr[js.Array[Product]] = js.undefined
     
-    var impressionSource: js.UndefOr[String] = js.native
+    var impressionSource: js.UndefOr[String] = js.undefined
     
-    var productAction: js.UndefOr[ProductAction] = js.native
+    var productAction: js.UndefOr[ProductAction] = js.undefined
     
-    var products: js.UndefOr[js.Array[Product]] = js.native
+    var products: js.UndefOr[js.Array[Product]] = js.undefined
     
-    var session: js.UndefOr[SessionState] = js.native
+    var session: js.UndefOr[SessionState] = js.undefined
     
-    var utmCampaignUrl: js.UndefOr[String] = js.native
+    var utmCampaignUrl: js.UndefOr[String] = js.undefined
   }
   object HitPayload {
     
@@ -156,12 +157,11 @@ object analyticsMod {
     }
   }
   
-  @js.native
   trait TimingMetadata extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object TimingMetadata {
     

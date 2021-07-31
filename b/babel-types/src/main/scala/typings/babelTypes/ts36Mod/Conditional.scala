@@ -1,10 +1,7 @@
 package typings.babelTypes.ts36Mod
 
-import typings.babelTypes.babelTypesStrings.ConditionalExpression
-import typings.babelTypes.babelTypesStrings.IfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -21,11 +18,10 @@ object Conditional {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    test: Expression,
-    `type`: ConditionalExpression
+    test: Expression
   ): typings.babelTypes.ts36Mod.ConditionalExpression_ = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ConditionalExpression_]
   }
   
@@ -36,11 +32,10 @@ object Conditional {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    test: Expression,
-    `type`: IfStatement
+    test: Expression
   ): typings.babelTypes.ts36Mod.IfStatement_ = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.IfStatement_]
   }
 }

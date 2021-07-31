@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents 2D coordinate that is used to convey the values of timed text style properties. */
-@js.native
 trait TimedTextPoint extends StObject {
   
   /** The units of the coordinates, either pixels or percentage. */
-  var unit: TimedTextUnit = js.native
+  var unit: TimedTextUnit
   
   /** The X coordinate of the point. */
-  var x: Double = js.native
+  var x: Double
   
   /** The Y coordinate of the point. */
-  var y: Double = js.native
+  var y: Double
 }
 object TimedTextPoint {
   

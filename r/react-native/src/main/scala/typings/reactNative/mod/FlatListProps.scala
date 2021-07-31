@@ -4,38 +4,38 @@ import typings.react.mod.ComponentType
 import typings.reactNative.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
+trait FlatListProps[ItemT]
+  extends StObject
+     with VirtualizedListProps[ItemT] {
   
   /**
     * Rendered in between each item, but not at the top or bottom
     */
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
   
   /**
     * Styling for internal View for ListFooterComponent
     */
-  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.native
+  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
   
   /**
     * Styling for internal View for ListHeaderComponent
     */
-  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.native
+  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
   
   /**
     * Optional custom style for multi-item rows generated when numColumns > 1
     */
-  var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * For simplicity, data is just a plain array. If you want to use something else,
     * like an immutable list, use the underlying VirtualizedList directly.
     */
   @JSName("data")
-  var data_FlatListProps: js.UndefOr[js.Array[ItemT] | Null] = js.native
+  var data_FlatListProps: js.UndefOr[js.Array[ItemT] | Null] = js.undefined
   
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
@@ -52,24 +52,24 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
   @JSName("getItemLayout")
   var getItemLayout_FlatListProps: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double, Index]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Uses legacy MetroListView instead of default VirtualizedSectionList
     */
-  var legacyImplementation: js.UndefOr[Boolean] = js.native
+  var legacyImplementation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Multiple columns can only be rendered with `horizontal={false}` and will zig-zag like a `flexWrap` layout.
     * Items should all be the same height - masonry layouts are not supported.
     */
-  var numColumns: js.UndefOr[Double] = js.native
+  var numColumns: js.UndefOr[Double] = js.undefined
   
   /**
     * See `ViewabilityHelper` for flow type and further documentation.
     */
   @JSName("viewabilityConfig")
-  var viewabilityConfig_FlatListProps: js.UndefOr[js.Any] = js.native
+  var viewabilityConfig_FlatListProps: js.UndefOr[js.Any] = js.undefined
 }
 object FlatListProps {
   
@@ -80,7 +80,7 @@ object FlatListProps {
   }
   
   @scala.inline
-  implicit class FlatListPropsMutableBuilder[Self <: FlatListProps[_], ItemT] (val x: Self with FlatListProps[ItemT]) extends AnyVal {
+  implicit class FlatListPropsMutableBuilder[Self <: FlatListProps[?], ItemT] (val x: Self & FlatListProps[ItemT]) extends AnyVal {
     
     @scala.inline
     def setColumnWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "columnWrapperStyle", value.asInstanceOf[js.Any])
@@ -110,7 +110,7 @@ object FlatListProps {
     def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
     @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)

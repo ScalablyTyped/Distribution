@@ -2,20 +2,18 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Extendables
-@js.native
 trait canBeEnabled extends StObject {
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
   
-  def isPaused(): Boolean = js.native
+  def isPaused(): Boolean
   
-  def pause(): Unit = js.native
+  def pause(): Unit
 }
 object canBeEnabled {
   

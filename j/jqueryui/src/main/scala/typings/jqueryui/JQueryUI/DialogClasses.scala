@@ -2,33 +2,31 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogClasses extends StObject {
   
-  var `ui-dialog`: js.UndefOr[String] = js.native
+  var `ui-dialog`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-buttonpane`: js.UndefOr[String] = js.native
+  var `ui-dialog-buttonpane`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-buttons`: js.UndefOr[String] = js.native
+  var `ui-dialog-buttons`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-buttonset`: js.UndefOr[String] = js.native
+  var `ui-dialog-buttonset`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-content`: js.UndefOr[String] = js.native
+  var `ui-dialog-content`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-dragging`: js.UndefOr[String] = js.native
+  var `ui-dialog-dragging`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-resizing`: js.UndefOr[String] = js.native
+  var `ui-dialog-resizing`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-title`: js.UndefOr[String] = js.native
+  var `ui-dialog-title`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-titlebar`: js.UndefOr[String] = js.native
+  var `ui-dialog-titlebar`: js.UndefOr[String] = js.undefined
   
-  var `ui-dialog-titlebar-close`: js.UndefOr[String] = js.native
+  var `ui-dialog-titlebar-close`: js.UndefOr[String] = js.undefined
   
-  var `ui-widget-overlay`: js.UndefOr[String] = js.native
+  var `ui-widget-overlay`: js.UndefOr[String] = js.undefined
 }
 object DialogClasses {
   

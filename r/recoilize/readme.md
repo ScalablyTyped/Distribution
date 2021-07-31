@@ -10,9 +10,9 @@ Recoil Dev Tool
 | ------------------ | :-------------: |
 | Full name          | recoilize |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 2011 |
+| # downloads        | 3256 |
 | # stars            | 0 |
 
 ## Links

@@ -3,21 +3,19 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 import typings.googleGax.iamServiceMod.google.`type`.IExpr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Binding. */
-@js.native
 trait IBinding extends StObject {
   
   /** Binding condition */
-  var condition: js.UndefOr[IExpr | Null] = js.native
+  var condition: js.UndefOr[IExpr | Null] = js.undefined
   
   /** Binding members */
-  var members: js.UndefOr[js.Array[String] | Null] = js.native
+  var members: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** Binding role */
-  var role: js.UndefOr[String | Null] = js.native
+  var role: js.UndefOr[String | Null] = js.undefined
 }
 object IBinding {
   

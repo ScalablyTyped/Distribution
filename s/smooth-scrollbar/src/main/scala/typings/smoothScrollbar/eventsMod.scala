@@ -3,32 +3,29 @@ package typings.smoothScrollbar
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @JSImport("smooth-scrollbar/events", "keyboardHandler")
+  @JSImport("smooth-scrollbar/events", JSImport.Namespace)
   @js.native
-  def keyboardHandler(scrollbar: Scrollbar): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("smooth-scrollbar/events", "mouseHandler")
-  @js.native
-  def mouseHandler(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def keyboardHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/events", "resizeHandler")
-  @js.native
-  def resizeHandler(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def mouseHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/events", "selectHandler")
-  @js.native
-  def selectHandler(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def resizeHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/events", "touchHandler")
-  @js.native
-  def touchHandler(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def selectHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/events", "wheelHandler")
-  @js.native
-  def wheelHandler(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def touchHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("touchHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wheelHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wheelHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

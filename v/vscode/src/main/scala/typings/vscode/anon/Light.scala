@@ -3,15 +3,13 @@ package typings.vscode.anon
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Light extends StObject {
   
-  var dark: String | Uri = js.native
+  var dark: String | Uri
   
-  var light: String | Uri = js.native
+  var light: String | Uri
 }
 object Light {
   

@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesItemHighlight extends StObject {
   
-  var border: js.UndefOr[ChartSeriesItemHighlightBorder] = js.native
+  var border: js.UndefOr[ChartSeriesItemHighlightBorder] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[ChartSeriesItemHighlightLine] = js.native
+  var line: js.UndefOr[ChartSeriesItemHighlightLine] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var toggle: js.UndefOr[js.Function] = js.native
+  var toggle: js.UndefOr[js.Function] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartSeriesItemHighlight {
   

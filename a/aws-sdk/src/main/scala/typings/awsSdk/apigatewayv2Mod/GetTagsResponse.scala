@@ -2,13 +2,11 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTagsResponse extends StObject {
   
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
 }
 object GetTagsResponse {
   

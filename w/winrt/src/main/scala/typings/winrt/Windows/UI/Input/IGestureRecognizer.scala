@@ -4,79 +4,77 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGestureRecognizer extends StObject {
   
-  var autoProcessInertia: Boolean = js.native
+  var autoProcessInertia: Boolean
   
-  def canBeDoubleTap(value: PointerPoint): Boolean = js.native
+  def canBeDoubleTap(value: PointerPoint): Boolean
   
-  def completeGesture(): Unit = js.native
+  def completeGesture(): Unit
   
-  var crossSlideExact: Boolean = js.native
+  var crossSlideExact: Boolean
   
-  var crossSlideHorizontally: Boolean = js.native
+  var crossSlideHorizontally: Boolean
   
-  var crossSlideThresholds: CrossSlideThresholds = js.native
+  var crossSlideThresholds: CrossSlideThresholds
   
-  var gestureSettings: GestureSettings = js.native
+  var gestureSettings: GestureSettings
   
-  var inertiaExpansion: Double = js.native
+  var inertiaExpansion: Double
   
-  var inertiaExpansionDeceleration: Double = js.native
+  var inertiaExpansionDeceleration: Double
   
-  var inertiaRotationAngle: Double = js.native
+  var inertiaRotationAngle: Double
   
-  var inertiaRotationDeceleration: Double = js.native
+  var inertiaRotationDeceleration: Double
   
-  var inertiaTranslationDeceleration: Double = js.native
+  var inertiaTranslationDeceleration: Double
   
-  var inertiaTranslationDisplacement: Double = js.native
+  var inertiaTranslationDisplacement: Double
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isInertial: Boolean = js.native
+  var isInertial: Boolean
   
-  var manipulationExact: Boolean = js.native
+  var manipulationExact: Boolean
   
-  var mouseWheelParameters: MouseWheelParameters = js.native
+  var mouseWheelParameters: MouseWheelParameters
   
-  var oncrosssliding: js.Any = js.native
+  var oncrosssliding: js.Any
   
-  var ondragging: js.Any = js.native
+  var ondragging: js.Any
   
-  var onholding: js.Any = js.native
+  var onholding: js.Any
   
-  var onmanipulationcompleted: js.Any = js.native
+  var onmanipulationcompleted: js.Any
   
-  var onmanipulationinertiastarting: js.Any = js.native
+  var onmanipulationinertiastarting: js.Any
   
-  var onmanipulationstarted: js.Any = js.native
+  var onmanipulationstarted: js.Any
   
-  var onmanipulationupdated: js.Any = js.native
+  var onmanipulationupdated: js.Any
   
-  var onrighttapped: js.Any = js.native
+  var onrighttapped: js.Any
   
-  var ontapped: js.Any = js.native
+  var ontapped: js.Any
   
-  var pivotCenter: Point = js.native
+  var pivotCenter: Point
   
-  var pivotRadius: Double = js.native
+  var pivotRadius: Double
   
-  def processDownEvent(value: PointerPoint): Unit = js.native
+  def processDownEvent(value: PointerPoint): Unit
   
-  def processInertia(): Unit = js.native
+  def processInertia(): Unit
   
-  def processMouseWheelEvent(value: PointerPoint, isShiftKeyDown: Boolean, isControlKeyDown: Boolean): Unit = js.native
+  def processMouseWheelEvent(value: PointerPoint, isShiftKeyDown: Boolean, isControlKeyDown: Boolean): Unit
   
-  def processMoveEvents(value: IVector[PointerPoint]): Unit = js.native
+  def processMoveEvents(value: IVector[PointerPoint]): Unit
   
-  def processUpEvent(value: PointerPoint): Unit = js.native
+  def processUpEvent(value: PointerPoint): Unit
   
-  var showGestureFeedback: Boolean = js.native
+  var showGestureFeedback: Boolean
 }
 object IGestureRecognizer {
   

@@ -2,25 +2,23 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataOptions extends StObject {
   
   /* Signal that the call is cacheable. GRPC is free to use GET verb.
     * Defaults to false */
-  var cacheableRequest: js.UndefOr[Boolean] = js.native
+  var cacheableRequest: js.UndefOr[Boolean] = js.undefined
   
   /* Signal that the initial metadata should be corked. Defaults to false. */
-  var corked: js.UndefOr[Boolean] = js.native
+  var corked: js.UndefOr[Boolean] = js.undefined
   
   /* Signal that the request is idempotent. Defaults to false */
-  var idempotentRequest: js.UndefOr[Boolean] = js.native
+  var idempotentRequest: js.UndefOr[Boolean] = js.undefined
   
   /* Signal that the call should not return UNAVAILABLE before it has
     * started. Defaults to true. */
-  var waitForReady: js.UndefOr[Boolean] = js.native
+  var waitForReady: js.UndefOr[Boolean] = js.undefined
 }
 object MetadataOptions {
   

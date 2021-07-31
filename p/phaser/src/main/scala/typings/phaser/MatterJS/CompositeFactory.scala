@@ -2,7 +2,6 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -148,14 +147,9 @@ trait CompositeFactory extends StObject {
     * @param {boolean} [updateChildren=false]
     */
   def setModified(composite: CompositeType, isModified: Boolean): Unit = js.native
-  def setModified(
-    composite: CompositeType,
-    isModified: Boolean,
-    updateParents: js.UndefOr[scala.Nothing],
-    updateChildren: Boolean
-  ): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
+  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Unit, updateChildren: Boolean): Unit = js.native
   
   /**
     * Translates all children in the composite by a given vector relative to their current positions,

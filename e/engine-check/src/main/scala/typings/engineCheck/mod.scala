@@ -2,26 +2,26 @@ package typings.engineCheck
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("engine-check", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("engine-check", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Unit = js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  @JSImport("engine-check", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var searchRoot: js.UndefOr[String] = js.native
+    var searchRoot: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

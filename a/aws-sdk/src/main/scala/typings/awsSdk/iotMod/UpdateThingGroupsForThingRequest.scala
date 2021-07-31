@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThingGroupsForThingRequest extends StObject {
   
   /**
     * Override dynamic thing groups with static thing groups when 10-group limit is reached. If a thing belongs to 10 thing groups, and one or more of those groups are dynamic thing groups, adding a thing to a static group removes the thing from the last dynamic group.
     */
-  var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.native
+  var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined
   
   /**
     * The groups to which the thing will be added.
     */
-  var thingGroupsToAdd: js.UndefOr[ThingGroupList] = js.native
+  var thingGroupsToAdd: js.UndefOr[ThingGroupList] = js.undefined
   
   /**
     * The groups from which the thing will be removed.
     */
-  var thingGroupsToRemove: js.UndefOr[ThingGroupList] = js.native
+  var thingGroupsToRemove: js.UndefOr[ThingGroupList] = js.undefined
   
   /**
     * The thing whose group memberships will be updated.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object UpdateThingGroupsForThingRequest {
   

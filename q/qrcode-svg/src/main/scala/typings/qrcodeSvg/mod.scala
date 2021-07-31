@@ -13,14 +13,15 @@ import typings.qrcodeSvg.qrcodeSvgStrings.svg
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("qrcode-svg", JSImport.Namespace)
   @js.native
-  class ^ protected () extends QRCode {
+  class ^ protected ()
+    extends StObject
+       with QRCode {
     /**
       * Create a QRCode with the default options and the passed content.
       * @param content The content to encode in the QRCode.
@@ -35,7 +36,6 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Model extends StObject {
     
     /**
@@ -43,19 +43,19 @@ object mod {
       *   to actually generate the QRCode from the data.
       * @param data The data to queue up in this QRCode.
       */
-    def addData(data: String): Unit = js.native
+    def addData(data: String): Unit
     
     /** The cache used to store data during the creation of this QRCode. */
-    var dataCache: js.Array[Double] | Null = js.native
+    var dataCache: js.Array[Double] | Null
     
     /** A list of the data added to this QRCode. */
-    var dataList: js.Array[Data] = js.native
+    var dataList: js.Array[Data]
     
     /** The numerical error correction level for this QRCode. */
-    var errorCorrectLevel: Double = js.native
+    var errorCorrectLevel: Double
     
     /** Returns the length/width of this QRCode's matrix. */
-    def getModuleCount(): Double = js.native
+    def getModuleCount(): Double
     
     /**
       * Whether a given coordinate is filled in in this QRCode's matrix.
@@ -63,23 +63,23 @@ object mod {
       * @param  col The column to check.
       * @return True if the coordinate is filled in, false otherwise.
       */
-    def isDark(row: Double, col: Double): Boolean = js.native
+    def isDark(row: Double, col: Double): Boolean
     
     /** Generate this QRCode's matrix from the queued data. */
-    def make(): Unit = js.native
+    def make(): Unit
     
     /** The width/length of this QRCode's modules matrix. */
-    var moduleCount: Double = js.native
+    var moduleCount: Double
     
     /**
       * This QRCode's data matrix. A square, two-dimensional boolean array
       * of `moduleCount` x `moduleCount` size. True in a given slot means
       * that spot is filled in in the QRCode visualization.
       */
-    var modules: js.Array[js.Array[Boolean]] = js.native
+    var modules: js.Array[js.Array[Boolean]]
     
     /** The calculated type number for this QRCode. */
-    var typeNumber: Double = js.native
+    var typeNumber: Double
   }
   object Model {
     
@@ -95,7 +95,7 @@ object mod {
       modules: js.Array[js.Array[Boolean]],
       typeNumber: Double
     ): Model = {
-      val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList.asInstanceOf[js.Any], errorCorrectLevel = errorCorrectLevel.asInstanceOf[js.Any], getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], typeNumber = typeNumber.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList.asInstanceOf[js.Any], errorCorrectLevel = errorCorrectLevel.asInstanceOf[js.Any], getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], typeNumber = typeNumber.asInstanceOf[js.Any], dataCache = null)
       __obj.asInstanceOf[Model]
     }
     
@@ -146,14 +146,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Color of background, color name or hex string. Default is `#fffff`. */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Color of modules (squares), color name or hex string. Default is `#000000`. */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Wrapping element. Default is `svg`. \
@@ -165,37 +164,37 @@ object mod {
       * Useful when you need to put multiple QR Codes in a single SVG document \
       * `none`: No wrapper.
       */
-    var container: js.UndefOr[svg | `svg-viewbox` | g | none] = js.native
+    var container: js.UndefOr[svg | `svg-viewbox` | g | none] = js.undefined
     
     /** QR Code content, the only **required** parameter. */
-    var content: String = js.native
+    var content: String
     
     /** Error correction level. Default is `"M"`. */
-    var ecl: js.UndefOr[L | M | H | Q] = js.native
+    var ecl: js.UndefOr[L | M | H | Q] = js.undefined
     
     /** QR Code height in pixels. Default is `256`. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Join modules (squares) into one shape, into the SVG path element, **recommended** for web and responsive use. Default is `false`. */
-    var join: js.UndefOr[Boolean] = js.native
+    var join: js.UndefOr[Boolean] = js.undefined
     
     /** White space padding. `0` for no border. Default is `4`. */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /** To create a squares as pattern, then populate the canvas. Default is `false`. */
-    var predefined: js.UndefOr[Boolean] = js.native
+    var predefined: js.UndefOr[Boolean] = js.undefined
     
     /** Apply indents and new lines. Default is `true`. */
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
     /** Swap X and Y modules, only if you have issues with some QR readers. Default is `false`. */
-    var swap: js.UndefOr[Boolean] = js.native
+    var swap: js.UndefOr[Boolean] = js.undefined
     
     /** QR Code width in pixels. Default is `256`. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Prepend XML declaration to the SVG document, i.e. ```<?xml version="1.0" standalone="yes"?>```. Default is `true`. */
-    var xmlDeclaration: js.UndefOr[Boolean] = js.native
+    var xmlDeclaration: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,18 +3,16 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.personaTypesMod.PersonaInitialsColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaProps, 'primaryText' | 'text' | 'initialsColor'> */
-@js.native
 trait PickIPersonaPropsprimaryT extends StObject {
   
-  var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.native
+  var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.undefined
   
-  var primaryText: js.UndefOr[String] = js.native
+  var primaryText: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PickIPersonaPropsprimaryT {
   

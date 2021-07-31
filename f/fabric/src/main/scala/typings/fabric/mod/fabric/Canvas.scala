@@ -8,7 +8,6 @@ import typings.fabric.fabricStrings.toDataURLWithQuality
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Canvas")
@@ -44,27 +43,24 @@ object Canvas {
     * (either those of HTMLCanvasElement itself, or rendering context)
     * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
     */
-  @JSImport("fabric", "fabric.Canvas.supports")
-  @js.native
-  def supports_getImageData(methodName: getImageData): Boolean = js.native
-  @JSImport("fabric", "fabric.Canvas.supports")
-  @js.native
-  def supports_setLineDash(methodName: setLineDash): Boolean = js.native
-  @JSImport("fabric", "fabric.Canvas.supports")
-  @js.native
-  def supports_toDataURL(methodName: toDataURL): Boolean = js.native
-  @JSImport("fabric", "fabric.Canvas.supports")
-  @js.native
-  def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = js.native
+  @scala.inline
+  def supports_getImageData(methodName: getImageData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_setLineDash(methodName: setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_toDataURL(methodName: toDataURL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  @JSImport("fabric", "fabric.Canvas.toJSON")
-  @js.native
-  def toJSON(): String = js.native
-  @JSImport("fabric", "fabric.Canvas.toJSON")
-  @js.native
-  def toJSON(propertiesToInclude: js.Array[String]): String = js.native
+  @scala.inline
+  def toJSON(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[String]
+  @scala.inline
+  def toJSON(propertiesToInclude: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[String]
 }

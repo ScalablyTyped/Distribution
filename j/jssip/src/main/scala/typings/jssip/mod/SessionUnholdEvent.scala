@@ -2,13 +2,11 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionUnholdEvent extends StObject {
   
-  var originator: String = js.native
+  var originator: String
 }
 object SessionUnholdEvent {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHeaderRequest extends StObject {
   
   /**
     * The location of the SectionBreak which begins the section this header should belong to. If `section_break_location' is unset or if it refers to the first section break in the
     * document body, the header applies to the DocumentStyle
     */
-  var sectionBreakLocation: js.UndefOr[Location] = js.native
+  var sectionBreakLocation: js.UndefOr[Location] = js.undefined
   
   /** The type of header to create. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CreateHeaderRequest {
   

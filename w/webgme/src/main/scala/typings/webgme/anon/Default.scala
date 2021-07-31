@@ -2,16 +2,14 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
   /**
     * default = 'DefaultLayout'
     */
-  var default: String = js.native
+  var default: String
   
   /**
     * Array of base paths for the layouts.
@@ -19,7 +17,7 @@ trait Default extends StObject {
     * 
     * @type {string[]}
     */
-  var basePaths: js.Array[String] = js.native
+  var basePaths: js.Array[String]
 }
 object Default {
   

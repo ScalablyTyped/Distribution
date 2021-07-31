@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolBackpropAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolBackpropInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backend extends StObject {
   
-  var attrs: AvgPoolBackpropAttrs = js.native
+  var attrs: AvgPoolBackpropAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: AvgPoolBackpropInputs = js.native
+  var inputs: AvgPoolBackpropInputs
 }
 object Backend {
   

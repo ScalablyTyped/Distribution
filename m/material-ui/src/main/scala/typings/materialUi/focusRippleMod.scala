@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusRippleMod {
@@ -19,18 +18,19 @@ object focusRippleMod {
   trait FocusRipple
     extends Component[FocusRippleProps, js.Object, js.Any]
   
-  @js.native
-  trait FocusRippleProps extends Props[FocusRipple] {
+  trait FocusRippleProps
+    extends StObject
+       with Props[FocusRipple] {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var innerStyle: js.UndefOr[CSSProperties] = js.native
+    var innerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FocusRippleProps {
     

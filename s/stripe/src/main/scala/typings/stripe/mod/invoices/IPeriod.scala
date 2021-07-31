@@ -2,21 +2,19 @@ package typings.stripe.mod.invoices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPeriod extends StObject {
   
   /**
     * The period end date
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The period start date
     */
-  var start: Double = js.native
+  var start: Double
 }
 object IPeriod {
   

@@ -2,23 +2,21 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickOptions extends StObject {
   
   /** @default MouseButtons.Left */
-  var button: js.UndefOr[MouseButtons] = js.native
+  var button: js.UndefOr[MouseButtons] = js.undefined
   
   /** @default 1 */
-  var clickCount: js.UndefOr[Double] = js.native
+  var clickCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Time to wait between mousedown and mouseup in milliseconds.
     * @default 0
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
 }
 object ClickOptions {
   

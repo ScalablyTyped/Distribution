@@ -7,7 +7,6 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.olx.source.ImageWMSOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

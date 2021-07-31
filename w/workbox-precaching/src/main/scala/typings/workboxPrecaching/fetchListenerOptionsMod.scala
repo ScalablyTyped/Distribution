@@ -6,21 +6,19 @@ import typings.workboxPrecaching.anon.Url
 import typings.workboxPrecaching.urlmanipulationMod.URLManipulation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchListenerOptionsMod {
   
-  @js.native
   trait FetchListenerOptions extends StObject {
     
-    var cleanURLs: js.UndefOr[Boolean] = js.native
+    var cleanURLs: js.UndefOr[Boolean] = js.undefined
     
-    var directoryIndex: js.UndefOr[String] = js.native
+    var directoryIndex: js.UndefOr[String] = js.undefined
     
-    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.native
+    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var urlManipulation: js.UndefOr[URLManipulation] = js.native
+    var urlManipulation: js.UndefOr[URLManipulation] = js.undefined
   }
   object FetchListenerOptions {
     

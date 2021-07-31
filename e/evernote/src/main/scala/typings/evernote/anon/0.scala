@@ -3,13 +3,11 @@ package typings.evernote.anon
 import typings.evernote.mod.NoteStore.ManageNotebookSharesError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var errors: js.UndefOr[js.Array[ManageNotebookSharesError]] = js.native
+  var errors: js.UndefOr[js.Array[ManageNotebookSharesError]] = js.undefined
 }
 object `0` {
   

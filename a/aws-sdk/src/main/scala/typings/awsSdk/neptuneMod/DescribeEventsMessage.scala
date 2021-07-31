@@ -2,56 +2,54 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventsMessage extends StObject {
   
   /**
     * The number of minutes to retrieve events for. Default: 60
     */
-  var Duration: js.UndefOr[IntegerOptional] = js.native
+  var Duration: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     *  The end of the time interval for which to retrieve events, specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2009-07-08T18:00Z
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A list of event categories that trigger notifications for a event notification subscription.
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * This parameter is not currently supported.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     *  An optional pagination token provided by a previous DescribeEvents request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: Minimum 20, maximum 100.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The identifier of the event source for which events are returned. If not specified, then all sources are included in the response. Constraints:   If SourceIdentifier is supplied, SourceType must also be provided.   If the source type is DBInstance, then a DBInstanceIdentifier must be supplied.   If the source type is DBSecurityGroup, a DBSecurityGroupName must be supplied.   If the source type is DBParameterGroup, a DBParameterGroupName must be supplied.   If the source type is DBSnapshot, a DBSnapshotIdentifier must be supplied.   Cannot end with a hyphen or contain two consecutive hyphens.  
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The event source to retrieve events for. If no value is specified, all events are returned.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.neptuneMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.neptuneMod.SourceType] = js.undefined
   
   /**
     *  The beginning of the time interval to retrieve events for, specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2009-07-08T18:00Z
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
 }
 object DescribeEventsMessage {
   

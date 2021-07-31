@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersSetTargetPoolsRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaInstanceGroupManagersSetTargetPoolsRequest extends StObject {
     * request to ensure that you do not overwrite changes that were applied
     * from another concurrent request.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The list of target pool URLs that instances in this managed instance
@@ -24,7 +22,7 @@ trait SchemaInstanceGroupManagersSetTargetPoolsRequest extends StObject {
     * all of the instances in the group. Existing instances and new instances
     * in the group all receive these target pool settings.
     */
-  var targetPools: js.UndefOr[js.Array[String]] = js.native
+  var targetPools: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaInstanceGroupManagersSetTargetPoolsRequest {
   

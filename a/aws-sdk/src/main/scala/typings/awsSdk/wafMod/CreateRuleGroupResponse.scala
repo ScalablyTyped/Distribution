@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRuleGroupResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the CreateRuleGroup request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
     */
-  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.native
+  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.undefined
   
   /**
     * An empty RuleGroup.
     */
-  var RuleGroup: js.UndefOr[typings.awsSdk.wafMod.RuleGroup] = js.native
+  var RuleGroup: js.UndefOr[typings.awsSdk.wafMod.RuleGroup] = js.undefined
 }
 object CreateRuleGroupResponse {
   

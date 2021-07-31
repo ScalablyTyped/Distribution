@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassHttpMessage extends ClassMessage {
+trait ClassHttpMessage
+  extends StObject
+     with ClassMessage {
   
   /**
     * 
@@ -37,7 +38,7 @@ trait ClassHttpMessage extends ClassMessage {
     * 
     * 
     */
-  def allHeader(name: String): js.Array[_] = js.native
+  def allHeader(name: String): js.Array[js.Any] = js.native
   
   /**
     * 

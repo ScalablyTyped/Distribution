@@ -8,19 +8,22 @@ import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useRefetchableFragmentMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useRefetchableFragment", "useRefetchableFragment")
+  @JSImport("react-relay/lib/relay-experimental/useRefetchableFragment", JSImport.Namespace)
   @js.native
-  def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useRefetchableFragment", "useRefetchableFragment")
-  @js.native
-  def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, _]] = js.native
+  val ^ : js.Any = js.native
   
-  type ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[_] | Null */, TFragmentData] = js.Tuple2[TFragmentData, RefetchFnDynamic[TQuery, TKey, Options]]
+  @scala.inline
+  def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null]]
+  @scala.inline
+  def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]]]
+  
+  type ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData] = js.Tuple2[TFragmentData, RefetchFnDynamic[TQuery, TKey, Options]]
 }

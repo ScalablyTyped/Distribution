@@ -5,88 +5,88 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait heatmapCreateRendererParams extends Object {
+trait heatmapCreateRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * The [blurRadius](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#blurRadius) in pixels that determines the area of influence of each point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var blurRadius: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to fade the lower color stops to a transparent color to create a fuzzy boundary on the edge of the heatmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var fadeToTransparent: js.UndefOr[Boolean] = js.native
+  var fadeToTransparent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined heatmap scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var heatmapScheme: js.UndefOr[HeatmapScheme] = js.native
+  var heatmapScheme: js.UndefOr[HeatmapScheme] = js.undefined
   
   /**
     * The point layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   
   /**
     * The maximum [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio) used in the [HeatmapRenderer.colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops) of the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var maxRatio: js.UndefOr[Double] = js.native
+  var maxRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio) used in the [HeatmapRenderer.colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops) of the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var minRatio: js.UndefOr[Double] = js.native
+  var minRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * A statistics object generated from the [heatmapStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var statistics: js.UndefOr[HeatmapStatisticsResult] = js.native
+  var statistics: js.UndefOr[HeatmapStatisticsResult] = js.undefined
   
   /**
     * The view instance in which the visualization will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object heatmapCreateRendererParams {
   

@@ -2,7 +2,6 @@ package typings.clear
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,14 +9,15 @@ object mod {
   /**
     * Clear the terminal screen if possible.
     */
-  @JSImport("clear", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("clear", JSImport.Namespace)
-  @js.native
-  def apply(opts: ClearOptions): Unit = js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(opts: ClearOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  @JSImport("clear", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ClearOptions extends StObject {
     
     /**
@@ -27,7 +27,7 @@ object mod {
       *
       * @default true
       */
-    var fullClear: js.UndefOr[Boolean] = js.native
+    var fullClear: js.UndefOr[Boolean] = js.undefined
   }
   object ClearOptions {
     

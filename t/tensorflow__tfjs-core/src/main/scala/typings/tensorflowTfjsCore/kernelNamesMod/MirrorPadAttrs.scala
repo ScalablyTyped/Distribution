@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reflect
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MirrorPadAttrs extends StObject {
   
-  var mode: reflect | symmetric = js.native
+  var mode: reflect | symmetric
   
-  var paddings: js.Array[js.Tuple2[Double, Double]] = js.native
+  var paddings: js.Array[js.Tuple2[Double, Double]]
 }
 object MirrorPadAttrs {
   

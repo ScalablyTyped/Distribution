@@ -5,14 +5,16 @@ import typings.awsSdk.s3Mod.PutObjectRequest
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(client: S3): S3StreamUploader = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[S3StreamUploader]
+  
   @JSImport("s3-upload-stream", JSImport.Namespace)
   @js.native
-  def apply(client: S3): S3StreamUploader = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait S3StreamUploader extends StObject {

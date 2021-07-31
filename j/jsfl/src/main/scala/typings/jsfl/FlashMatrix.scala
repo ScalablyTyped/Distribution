@@ -2,23 +2,21 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashMatrix extends StObject {
   
-  var a: Double = js.native
+  var a: Double
   
-  var b: Double = js.native
+  var b: Double
   
-  var c: Double = js.native
+  var c: Double
   
-  var d: Double = js.native
+  var d: Double
   
-  var tx: Double = js.native
+  var tx: Double
   
-  var ty: Double = js.native
+  var ty: Double
 }
 object FlashMatrix {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAttributeGroupResponse extends StObject {
   
   /**
     * Information about the deleted attribute group.
     */
-  var attributeGroup: js.UndefOr[AttributeGroupSummary] = js.native
+  var attributeGroup: js.UndefOr[AttributeGroupSummary] = js.undefined
 }
 object DeleteAttributeGroupResponse {
   

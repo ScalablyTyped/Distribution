@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObaIcon extends StObject {
   
   /** Required. The click tracking URL of the OBA icon. Only URLs of the following domains are allowed: * https://info.evidon.com * https://l.betrad.com */
-  var clickTrackingUrl: js.UndefOr[String] = js.native
+  var clickTrackingUrl: js.UndefOr[String] = js.undefined
   
   /** The dimensions of the OBA icon. */
-  var dimensions: js.UndefOr[Dimensions] = js.native
+  var dimensions: js.UndefOr[Dimensions] = js.undefined
   
   /** Required. The landing page URL of the OBA icon. Only URLs of the following domains are allowed: * https://info.evidon.com * https://l.betrad.com */
-  var landingPageUrl: js.UndefOr[String] = js.native
+  var landingPageUrl: js.UndefOr[String] = js.undefined
   
   /** The position of the OBA icon on the creative. */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /** The program of the OBA icon. For example: “AdChoices”. */
-  var program: js.UndefOr[String] = js.native
+  var program: js.UndefOr[String] = js.undefined
   
   /** The MIME type of the OBA icon resource. */
-  var resourceMimeType: js.UndefOr[String] = js.native
+  var resourceMimeType: js.UndefOr[String] = js.undefined
   
   /** The URL of the OBA icon resource. */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
   
   /** Required. The view tracking URL of the OBA icon. Only URLs of the following domains are allowed: * https://info.evidon.com * https://l.betrad.com */
-  var viewTrackingUrl: js.UndefOr[String] = js.native
+  var viewTrackingUrl: js.UndefOr[String] = js.undefined
 }
 object ObaIcon {
   

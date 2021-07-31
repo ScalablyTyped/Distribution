@@ -2,13 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Node extends NodeOptions {
+trait Node
+  extends StObject
+     with NodeOptions {
   
-  var id: js.UndefOr[IdType] = js.native
+  var id: js.UndefOr[IdType] = js.undefined
 }
 object Node {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateRequest extends StObject {
   
   /**
     * The name for the certificate.
     */
-  var certificateName: CertificateName = js.native
+  var certificateName: CertificateName
   
   /**
     * The domain name (e.g., example.com) for the certificate.
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
   
   /**
     * An array of strings that specify the alternate domains (e.g., example2.com) and subdomains (e.g., blog.example.com) for the certificate. You can specify a maximum of nine alternate domains (in addition to the primary domain name). Wildcard domain entries (e.g., *.example.com) are not supported.
     */
-  var subjectAlternativeNames: js.UndefOr[SubjectAlternativeNameList] = js.native
+  var subjectAlternativeNames: js.UndefOr[SubjectAlternativeNameList] = js.undefined
   
   /**
     * The tag keys and optional values to add to the certificate during create. Use the TagResource action to tag a resource after it's created.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCertificateRequest {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupsSetNamedPortsRequest extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait InstanceGroupsSetNamedPortsRequest extends StObject {
     * concurrently. Obtain the fingerprint with the instanceGroups.get method. Then, include the fingerprint in your request to ensure that you do not overwrite changes that were applied
     * from another concurrent request. A request with an incorrect fingerprint will fail with error 412 conditionNotMet.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** The list of named ports to set for this instance group. */
-  var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.undefined
 }
 object InstanceGroupsSetNamedPortsRequest {
   

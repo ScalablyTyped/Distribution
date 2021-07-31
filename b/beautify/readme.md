@@ -11,8 +11,8 @@ beautify whatever
 | Full name          | beautify |
 | Keywords           | json, js, css, html, xml, prettify, beautify |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 71216 |
+| # dependents       | 16 |
+| # downloads        | 94192 |
 | # stars            | 3 |
 
 ## Links

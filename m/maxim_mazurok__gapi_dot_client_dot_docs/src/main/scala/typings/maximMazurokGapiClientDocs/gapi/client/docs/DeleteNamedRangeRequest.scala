@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNamedRangeRequest extends StObject {
   
   /** The name of the range(s) to delete. All named ranges with the given name will be deleted. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The ID of the named range to delete. */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
 }
 object DeleteNamedRangeRequest {
   

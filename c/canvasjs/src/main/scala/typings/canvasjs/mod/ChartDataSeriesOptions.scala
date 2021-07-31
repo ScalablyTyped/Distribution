@@ -2,32 +2,32 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartDataSeriesOptions extends ChartDataCommon {
+trait ChartDataSeriesOptions
+  extends StObject
+     with ChartDataCommon {
   
   /**
     * Setting axisXIndex lets you choose to which X axis the dataSeries should be attached.
     * In case of Multi-Series or Combinational Charts, one can assign some series to first X axis and rest to another axis.
     * This is helpful when dataSeries objects use different unit of measurement or range of data. By default, all series are plotted against first axis.
     */
-  var axisXIndex: js.UndefOr[Double] = js.native
+  var axisXIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting axisXType lets you choose between primary and secondary X Axis for a dataSeries to plot against. By choosing “secondary” Axis you can plot the series against axisX2.
     * In case of Multi-Series or Combinational Charts, one can assign primary axis to some series and secondary axis to other series.
     * This is helpful when dataSeries objects use different unit of measurement or range of data. By default, all series are plotted against primary X axis.
     */
-  var axisXType: js.UndefOr[String] = js.native
+  var axisXType: js.UndefOr[String] = js.undefined
   
   /**
     * Setting axisYIndex lets you choose to which Y axis the dataSeries should be attached to.
     * In case of Multi-Series or Combinational Charts, one can assign some series to first Y axis and rest to another axis.
     * This is helpful when dataSeries objects use different unit of measurement or range of data. By default, all series are plotted against first axis.
     */
-  var axisYIndex: js.UndefOr[Double] = js.native
+  var axisYIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting axisYType lets you choose between primary and secondary Y Axis for a dataSeries to plot against. By choosing "secondary" Axis you can plot the series against axisY2.
@@ -36,14 +36,14 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Default: "primary"
     * Options: "primary", "secondary"
     */
-  var axisYType: js.UndefOr[String] = js.native
+  var axisYType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the bevel property, which creates a chiselled effect at the corners of a Column Charts and Bar Charts.
     * Default: "true"
     * Example: "true", "false"
     */
-  var bevelEnabled: js.UndefOr[Boolean] = js.native
+  var bevelEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, a line breaks wherever a null dataPoint (y = null) is present.
@@ -51,25 +51,25 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Default: false
     * Example: true, false
     */
-  var connectNullData: js.UndefOr[Boolean] = js.native
+  var connectNullData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * It represents collection dataPoint inside dataSeries.
     */
-  var dataPoints: js.Array[ChartDataPoint] = js.native
+  var dataPoints: js.Array[ChartDataPoint]
   
   /**
     * Enables or disables exploding of Pie/Doughnut segment on click.
     * Default: true
     * Options: false, true
     */
-  var explodeOnClick: js.UndefOr[Boolean] = js.native
+  var explodeOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets opacity of the filled color.
     * Default: .7 for Area Charts and 1 for all other chart types.
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * innerRadius property allows you to set a Doughnut chart’s inner radius.
@@ -77,20 +77,20 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Default: “70%”
     * Example: 200, 150, “90%”, “75%”
     */
-  var innerRadius: js.UndefOr[Double | String] = js.native
+  var innerRadius: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Sets the Line Dash Type for all Line and Area Charts.
     * Default: solid
     */
-  var lineDashType: js.UndefOr[DashType] = js.native
+  var lineDashType: js.UndefOr[DashType] = js.undefined
   
   /**
     * Sets the thickness of line in line charts and area charts.
     * Default: 2
     * Example: 3,4..
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the Line Dash Type of line wherever null data is present.
@@ -100,12 +100,12 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * 3.Not Supported on IE8.
     * Default: "dash"
     */
-  var nullDataLineDashType: js.UndefOr[DashType] = js.native
+  var nullDataLineDashType: js.UndefOr[DashType] = js.undefined
   
   /**
     * Defines how percent values are formatted before they appear on the indexLabel or toolTip. You can format percent values using this property.
     */
-  var percentFormatString: js.UndefOr[String] = js.native
+  var percentFormatString: js.UndefOr[String] = js.undefined
   
   /**
     * radius property allows you to set the Pie/Doughnut chart’s (outer) radius.
@@ -115,28 +115,28 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Default: Automatically calculate in order to best fit the indexLabels.
     * Example: 200, 150, “90%”, “75%”
     */
-  var radius: js.UndefOr[Double | String] = js.native
+  var radius: js.UndefOr[Double | String] = js.undefined
   
   /**
     * In candle Stick chart, when Closing Price is greater than Opening price, the body is filled with white by default and it can be overridden by risingColor property.
     * Default: "white"
     * Options: "red", "#DD7E86", etc.
     */
-  var risingColor: js.UndefOr[String] = js.native
+  var risingColor: js.UndefOr[String] = js.undefined
   
   /**
     * Setting this property to true makes the dataSeries to appear in legend. In case of pie/ doughnut chart, dataPoints of the single series chart appear in legend.
     * Default: false
     * Options: false, true
     */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the starting Angle of the Pie or Doughnut Chart in degrees.
     * Default: 0
     * Example: 30, 240, -100..
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the type of chart to be rendered for corresponding dataSeries. One can choose from the following options.
@@ -160,19 +160,19 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     *     "pie"
     *     "doughnut"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of dataSeries. Data Series is visible by default and you can hide the same by setting visible property to false.
     * Default: true
     * Example: true, false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines how x axis values must be formatted before they appear on the indexLabel or toolTip. You can format numbers and date time values using this property.
     */
-  var xValueFormatString: js.UndefOr[String] = js.native
+  var xValueFormatString: js.UndefOr[String] = js.undefined
   
   /**
     * This defines the data type of x values. Data Type is normally figured out by default based on the object type that is assigned to x.
@@ -180,17 +180,17 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Default: Automatically Calculated
     * Options: "number", "dateTime"
     */
-  var xValueType: js.UndefOr[String] = js.native
+  var xValueType: js.UndefOr[String] = js.undefined
   
   /**
     * Defines how y axis values must be formatted before they appear on the indexLabel or toolTip. You can format numbers and date time values using this property.
     */
-  var yValueFormatString: js.UndefOr[String] = js.native
+  var yValueFormatString: js.UndefOr[String] = js.undefined
   
   /**
     * Defines how z values is formatted before they appear on the indexLabel or toolTip. You can format numbers using this property.
     */
-  var zValueFormatString: js.UndefOr[String] = js.native
+  var zValueFormatString: js.UndefOr[String] = js.undefined
 }
 object ChartDataSeriesOptions {
   

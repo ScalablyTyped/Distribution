@@ -8,7 +8,6 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.Popups.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StartScreen {
@@ -20,10 +19,14 @@ object StartScreen {
   object ForegroundText extends StObject {
     
     @js.native
-    sealed trait dark extends ForegroundText
+    sealed trait dark
+      extends StObject
+         with ForegroundText
     
     @js.native
-    sealed trait light extends ForegroundText
+    sealed trait light
+      extends StObject
+         with ForegroundText
   }
   
   @js.native
@@ -33,16 +36,24 @@ object StartScreen {
   object TileOptions extends StObject {
     
     @js.native
-    sealed trait copyOnDeployment extends TileOptions
+    sealed trait copyOnDeployment
+      extends StObject
+         with TileOptions
     
     @js.native
-    sealed trait none extends TileOptions
+    sealed trait none
+      extends StObject
+         with TileOptions
     
     @js.native
-    sealed trait showNameOnLogo extends TileOptions
+    sealed trait showNameOnLogo
+      extends StObject
+         with TileOptions
     
     @js.native
-    sealed trait showNameOnWideLogo extends TileOptions
+    sealed trait showNameOnWideLogo
+      extends StObject
+         with TileOptions
   }
   
   @js.native
@@ -87,7 +98,6 @@ object StartScreen {
     var wideLogo: Uri = js.native
   }
   
-  @js.native
   trait ISecondaryTileFactory extends StObject {
     
     def createTile(
@@ -97,7 +107,7 @@ object StartScreen {
       arguments: String,
       tileOptions: TileOptions,
       logoReference: Uri
-    ): SecondaryTile = js.native
+    ): SecondaryTile
     
     def createWideTile(
       tileId: String,
@@ -107,9 +117,9 @@ object StartScreen {
       tileOptions: TileOptions,
       logoReference: Uri,
       wideLogoReference: Uri
-    ): SecondaryTile = js.native
+    ): SecondaryTile
     
-    def createWithId(tileId: String): SecondaryTile = js.native
+    def createWithId(tileId: String): SecondaryTile
   }
   object ISecondaryTileFactory {
     
@@ -149,5 +159,7 @@ object StartScreen {
   }
   
   @js.native
-  trait SecondaryTile extends ISecondaryTile
+  trait SecondaryTile
+    extends StObject
+       with ISecondaryTile
 }

@@ -9,23 +9,23 @@ import typings.dynogels.anon.Name
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Model
-  extends Instantiable1[/* attrs */ StringDictionary[js.Any], Item] {
+  extends StObject
+     with Instantiable1[/* attrs */ StringDictionary[js.Any], Item] {
   
   def after(action: LifeCycleAction, listner: js.Function1[/* item */ Item, Unit]): Unit = js.native
   
   def batchGetItems(
     items: js.Array[String | StringDictionary[String]],
-    callback: js.Function2[/* err */ Error, /* items */ js.Array[_], Unit]
+    callback: js.Function2[/* err */ Error, /* items */ js.Array[js.Any], Unit]
   ): Unit = js.native
   def batchGetItems(
     items: js.Array[String | StringDictionary[String]],
     options: GetItemOptions,
-    callback: js.Function2[/* err */ Error, /* items */ js.Array[_], Unit]
+    callback: js.Function2[/* err */ Error, /* items */ js.Array[js.Any], Unit]
   ): Unit = js.native
   
   def before(
@@ -64,12 +64,12 @@ trait Model
   
   def getItems(
     items: js.Array[String | StringDictionary[String]],
-    callback: js.Function2[/* err */ Error, /* items */ js.Array[_], Unit]
+    callback: js.Function2[/* err */ Error, /* items */ js.Array[js.Any], Unit]
   ): Unit = js.native
   def getItems(
     items: js.Array[String | StringDictionary[String]],
     options: GetItemOptions,
-    callback: js.Function2[/* err */ Error, /* items */ js.Array[_], Unit]
+    callback: js.Function2[/* err */ Error, /* items */ js.Array[js.Any], Unit]
   ): Unit = js.native
   
   def parallelScan(totalSegments: Double): Scan = js.native

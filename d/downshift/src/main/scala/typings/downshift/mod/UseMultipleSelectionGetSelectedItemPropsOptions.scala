@@ -4,17 +4,16 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionGetSelectedItemPropsOptions[Item]
-  extends HTMLProps[HTMLElement]
+  extends StObject
+     with HTMLProps[HTMLElement]
      with GetPropsWithRefKey {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var selectedItem: Item = js.native
+  var selectedItem: Item
 }
 object UseMultipleSelectionGetSelectedItemPropsOptions {
   
@@ -25,7 +24,7 @@ object UseMultipleSelectionGetSelectedItemPropsOptions {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionGetSelectedItemPropsOptionsMutableBuilder[Self <: UseMultipleSelectionGetSelectedItemPropsOptions[_], Item] (val x: Self with UseMultipleSelectionGetSelectedItemPropsOptions[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionGetSelectedItemPropsOptionsMutableBuilder[Self <: UseMultipleSelectionGetSelectedItemPropsOptions[?], Item] (val x: Self & UseMultipleSelectionGetSelectedItemPropsOptions[Item]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

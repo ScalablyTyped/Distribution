@@ -2,69 +2,67 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a field in the document.
   */
-@js.native
 trait Field extends StObject {
   
   /**
     * Gets the text buffer interval occupied by the field code element.
     */
-  val codeInterval: Interval = js.native
+  val codeInterval: Interval
   
   /**
     * Gets or sets the name of a bookmark (or a hyperlink) in the current document which shall be the target of the hyperlink field.
     */
-  val hyperlinkAnchor: String = js.native
+  val hyperlinkAnchor: String
   
   /**
     * Gets or sets the text for the tooltip displayed when the mouse hovers over a hyperlink field.
     */
-  val hyperlinkTip: String = js.native
+  val hyperlinkTip: String
   
   /**
     * Gets or sets a URI to navigate to when the hyperlink (represented by the current field) is activated.
     */
-  val hyperlinkUri: String = js.native
+  val hyperlinkUri: String
   
   /**
     * Gets the index of the field
     */
-  val index: Double = js.native
+  val index: Double
   
   /**
     * Gets the text buffer interval occupied by the current field element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Returns a value specifying whether the field is a hyperlink.
     */
-  val isHyperlink: Boolean = js.native
+  val isHyperlink: Boolean
   
   /**
     * Gets the field length in a document.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the text buffer interval occupied by the field result element.
     */
-  val resultInterval: Interval = js.native
+  val resultInterval: Interval
   
   /**
     * Gets a value specifying whether a field's code or result is dispalyed.
     */
-  val showCode: Boolean = js.native
+  val showCode: Boolean
   
   /**
     * Gets the field's start position in a document.
     */
-  val start: Double = js.native
+  val start: Double
 }
 object Field {
   

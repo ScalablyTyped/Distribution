@@ -2,26 +2,24 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoOptions extends StObject {
   
   /**
     * Non-negative accuracy value.
     */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * Latitude between -90 and 90.
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * Longitude between -180 and 180.
     */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object GeoOptions {
   

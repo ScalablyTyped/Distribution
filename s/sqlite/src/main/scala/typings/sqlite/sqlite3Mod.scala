@@ -12,10 +12,13 @@ import typings.sqlite.sqliteStrings.trace
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlite3Mod {
+  
+  @JSImport("sqlite3", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sqlite3", "Database")
   @js.native
@@ -23,24 +26,20 @@ object sqlite3Mod {
     def this(filename: String) = this()
     def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
     def this(filename: String, mode: Double) = this()
-    def this(
-      filename: String,
-      mode: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit]
-    ) = this()
     def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
     
     def all(sql: String): this.type = js.native
     def all(
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[_], Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
     ): this.type = js.native
     def all(sql: String, params: js.Any*): this.type = js.native
     def all(sql: String, params: js.Any): this.type = js.native
     def all(
       sql: String,
       params: js.Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[_], Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
     ): this.type = js.native
     
     def close(): Unit = js.native
@@ -52,16 +51,16 @@ object sqlite3Mod {
     def each(sql: String): this.type = js.native
     def each(
       sql: String,
-      callback: js.UndefOr[scala.Nothing],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
-    ): this.type = js.native
-    def each(
-      sql: String,
       callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
     ): this.type = js.native
     def each(
       sql: String,
       callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit],
+      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each(
+      sql: String,
+      callback: Unit,
       complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     def each(sql: String, params: js.Any*): this.type = js.native
@@ -69,18 +68,18 @@ object sqlite3Mod {
     def each(
       sql: String,
       params: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
-    ): this.type = js.native
-    def each(
-      sql: String,
-      params: js.Any,
       callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
     ): this.type = js.native
     def each(
       sql: String,
       params: js.Any,
       callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit],
+      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each(
+      sql: String,
+      params: js.Any,
+      callback: Unit,
       complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     
@@ -172,12 +171,12 @@ object sqlite3Mod {
   class Statement () extends StObject {
     
     def all(): this.type = js.native
-    def all(callback: js.Function2[/* err */ Error | Null, /* rows */ js.Array[_], Unit]): this.type = js.native
+    def all(callback: js.Function2[/* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]): this.type = js.native
     def all(params: js.Any*): this.type = js.native
     def all(params: js.Any): this.type = js.native
     def all(
       params: js.Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* rows */ js.Array[_], Unit]
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
     ): this.type = js.native
     
     def bind(): this.type = js.native
@@ -185,22 +184,14 @@ object sqlite3Mod {
     def bind(params: js.Any*): this.type = js.native
     
     def each(): this.type = js.native
-    def each(
-      callback: js.UndefOr[scala.Nothing],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
-    ): this.type = js.native
     def each(callback: js.Function2[/* err */ Error | Null, /* row */ js.Any, Unit]): this.type = js.native
     def each(
       callback: js.Function2[/* err */ Error | Null, /* row */ js.Any, Unit],
       complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
+    def each(callback: Unit, complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]): this.type = js.native
     def each(params: js.Any*): this.type = js.native
     def each(params: js.Any): this.type = js.native
-    def each(
-      params: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
-    ): this.type = js.native
     def each(
       params: js.Any,
       callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* row */ js.Any, Unit]
@@ -208,6 +199,11 @@ object sqlite3Mod {
     def each(
       params: js.Any,
       callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* row */ js.Any, Unit],
+      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each(
+      params: js.Any,
+      callback: Unit,
       complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     
@@ -234,37 +230,35 @@ object sqlite3Mod {
   
   object cached {
     
-    @JSImport("sqlite3", "cached.Database")
+    @JSImport("sqlite3", "cached")
     @js.native
-    def Database(filename: String): typings.sqlite.sqlite3Mod.Database = js.native
-    @JSImport("sqlite3", "cached.Database")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Database(filename: String): typings.sqlite.sqlite3Mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
+    @scala.inline
     def Database(
       filename: String,
       callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite.sqlite3Mod.Database = js.native
-    @JSImport("sqlite3", "cached.Database")
-    @js.native
-    def Database(
-      filename: String,
-      mode: js.UndefOr[scala.Nothing],
-      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite.sqlite3Mod.Database = js.native
-    @JSImport("sqlite3", "cached.Database")
-    @js.native
-    def Database(filename: String, mode: Double): typings.sqlite.sqlite3Mod.Database = js.native
-    @JSImport("sqlite3", "cached.Database")
-    @js.native
+    ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
+    @scala.inline
+    def Database(filename: String, mode: Double): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
+    @scala.inline
     def Database(
       filename: String,
       mode: Double,
       callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite.sqlite3Mod.Database = js.native
+    ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
+    @scala.inline
+    def Database(
+      filename: String,
+      mode: Unit,
+      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
+    ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
   }
   
-  @JSImport("sqlite3", "verbose")
-  @js.native
-  def verbose(): sqlite3 = js.native
+  @scala.inline
+  def verbose(): sqlite3 = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")().asInstanceOf[sqlite3]
   
   @js.native
   trait RunResult extends Statement {
@@ -274,34 +268,33 @@ object sqlite3Mod {
     var lastID: Double = js.native
   }
   
-  @js.native
   trait sqlite3 extends StObject {
     
     var Database: Instantiable2[
         /* filename */ String, 
         /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
         typings.sqlite.sqlite3Mod.Database
-      ] = js.native
+      ]
     
-    var OPEN_CREATE: Double = js.native
+    var OPEN_CREATE: Double
     
-    var OPEN_PRIVATECACHE: Double = js.native
+    var OPEN_PRIVATECACHE: Double
     
-    var OPEN_READONLY: Double = js.native
+    var OPEN_READONLY: Double
     
-    var OPEN_READWRITE: Double = js.native
+    var OPEN_READWRITE: Double
     
-    var OPEN_SHAREDCACHE: Double = js.native
+    var OPEN_SHAREDCACHE: Double
     
-    var OPEN_URI: Double = js.native
+    var OPEN_URI: Double
     
-    var RunResult: typings.sqlite.sqlite3Mod.RunResult = js.native
+    var RunResult: typings.sqlite.sqlite3Mod.RunResult
     
-    var Statement: Instantiable0[typings.sqlite.sqlite3Mod.Statement] = js.native
+    var Statement: Instantiable0[typings.sqlite.sqlite3Mod.Statement]
     
-    var cached: typings.sqlite.anon.Database = js.native
+    var cached: typings.sqlite.anon.Database
     
-    def verbose(): this.type = js.native
+    def verbose(): this.type
   }
   object sqlite3 {
     

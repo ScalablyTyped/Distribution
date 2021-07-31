@@ -1,21 +1,19 @@
 package typings.pollyjsAdapter
 
-import typings.pollyjsCore.mod.Headers
+import typings.std.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Body {
     

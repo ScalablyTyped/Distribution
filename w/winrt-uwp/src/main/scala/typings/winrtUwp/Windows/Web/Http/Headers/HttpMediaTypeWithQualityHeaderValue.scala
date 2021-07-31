@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents accept information used in the Accept HTTP header on an HTTP request. */
-@js.native
 trait HttpMediaTypeWithQualityHeaderValue extends StObject {
   
   /** Gets or sets the character set of the content to accept that is used in the Accept HTTP header. */
-  var charSet: String = js.native
+  var charSet: String
   
   /** Gets or sets the media-type of the content to accept that is used in the Accept HTTP header. */
-  var mediaType: String = js.native
+  var mediaType: String
   
   /** Gets a set of parameters included in the Accept HTTP header. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
   
   /** Get or set the qvalue or quality used in the Accept HTTP header. */
-  var quality: Double = js.native
+  var quality: Double
 }
 object HttpMediaTypeWithQualityHeaderValue {
   

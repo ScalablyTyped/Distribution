@@ -4,13 +4,15 @@ import typings.std.ArrayLike
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scrypt-js", "scrypt")
+  @JSImport("scrypt-js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def scrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
@@ -18,9 +20,8 @@ object mod {
     r: Double,
     p: Double,
     dkLen: Double
-  ): js.Promise[Uint8Array] = js.native
-  @JSImport("scrypt-js", "scrypt")
-  @js.native
+  ): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+  @scala.inline
   def scrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
@@ -29,10 +30,9 @@ object mod {
     p: Double,
     dkLen: Double,
     callback: ProgressCallback
-  ): js.Promise[Uint8Array] = js.native
+  ): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   
-  @JSImport("scrypt-js", "syncScrypt")
-  @js.native
+  @scala.inline
   def syncScrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
@@ -40,7 +40,7 @@ object mod {
     r: Double,
     p: Double,
     dkLen: Double
-  ): Uint8Array = js.native
+  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("syncScrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
   type ProgressCallback = js.Function1[/* progress */ Double, Boolean | Unit]
 }

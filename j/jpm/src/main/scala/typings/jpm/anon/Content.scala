@@ -4,25 +4,23 @@ import typings.jpm.FFAddonSDK.SDKURL
 import typings.jpm.requestMod.STResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content[ResponseType] extends StObject {
   
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | js.Object] = js.native
+  var content: js.UndefOr[String | js.Object] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* response */ STResponse[ResponseType], _]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* response */ STResponse[ResponseType], js.Any]] = js.undefined
   
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | SDKURL] = js.native
+  var url: js.UndefOr[String | SDKURL] = js.undefined
 }
 object Content {
   
@@ -33,7 +31,7 @@ object Content {
   }
   
   @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content[_], ResponseType] (val x: Self with Content[ResponseType]) extends AnyVal {
+  implicit class ContentMutableBuilder[Self <: Content[?], ResponseType] (val x: Self & Content[ResponseType]) extends AnyVal {
     
     @scala.inline
     def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
@@ -60,7 +58,7 @@ object Content {
     def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setOnComplete(value: /* response */ STResponse[ResponseType] => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    def setOnComplete(value: /* response */ STResponse[ResponseType] => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)

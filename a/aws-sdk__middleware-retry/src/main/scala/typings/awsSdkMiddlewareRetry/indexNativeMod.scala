@@ -14,10 +14,13 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexNativeMod {
+  
+  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "CONFIG_MAX_ATTEMPTS")
   @js.native
@@ -59,27 +62,28 @@ object indexNativeMod {
     def this(maxAttemptsProvider: Provider[Double], options: StandardRetryStrategyOptions) = this()
   }
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "defaultDelayDecider")
-  @js.native
-  def defaultDelayDecider(delayBase: Double, attempts: Double): Double = js.native
+  @scala.inline
+  def defaultDelayDecider(delayBase: Double, attempts: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultDelayDecider")(delayBase.asInstanceOf[js.Any], attempts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "defaultRetryDecider")
-  @js.native
-  def defaultRetryDecider(error: SdkError): Boolean = js.native
+  @scala.inline
+  def defaultRetryDecider(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "getRetryPlugin")
-  @js.native
-  def getRetryPlugin(options: RetryResolvedConfig): Pluggable[_, _] = js.native
+  @scala.inline
+  def getRetryPlugin(options: RetryResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "resolveRetryConfig")
-  @js.native
-  def resolveRetryConfig[T](input: T with PreviouslyResolved with RetryInputConfig): T with RetryResolvedConfig = js.native
+  @scala.inline
+  def resolveRetryConfig[T](input: T & PreviouslyResolved & RetryInputConfig): T & RetryResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRetryConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RetryResolvedConfig]
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "retryMiddleware")
-  @js.native
-  def retryMiddleware(options: RetryResolvedConfig): js.Function1[/* next */ FinalizeHandler[_, MetadataBearer], FinalizeHandler[_, MetadataBearer]] = js.native
+  @scala.inline
+  def retryMiddleware(options: RetryResolvedConfig): js.Function1[
+    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
+    FinalizeHandler[js.Any, MetadataBearer]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
+    FinalizeHandler[js.Any, MetadataBearer]
+  ]]
   
   @JSImport("@aws-sdk/middleware-retry/dist/cjs/index.native", "retryMiddlewareOptions")
   @js.native
-  val retryMiddlewareOptions: FinalizeRequestHandlerOptions with AbsoluteLocation = js.native
+  val retryMiddlewareOptions: FinalizeRequestHandlerOptions & AbsoluteLocation = js.native
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDeploymentOutput extends StObject {
   
   /**
     * The status of the stop deployment operation:   Pending: The stop operation is pending.   Succeeded: The stop operation was successful.  
     */
-  var status: js.UndefOr[StopStatus] = js.native
+  var status: js.UndefOr[StopStatus] = js.undefined
   
   /**
     * An accompanying status message.
     */
-  var statusMessage: js.UndefOr[Message] = js.native
+  var statusMessage: js.UndefOr[Message] = js.undefined
 }
 object StopDeploymentOutput {
   

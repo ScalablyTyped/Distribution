@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationTime extends StObject {
   
   /**
     *  Specifies whether the replication time is enabled. 
     */
-  var Status: ReplicationTimeStatus = js.native
+  var Status: ReplicationTimeStatus
   
   /**
     *  A container specifying the time by which replication should be complete for all objects and operations on objects. 
     */
-  var Time: ReplicationTimeValue = js.native
+  var Time: ReplicationTimeValue
 }
 object ReplicationTime {
   

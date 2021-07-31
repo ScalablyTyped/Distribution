@@ -2,19 +2,23 @@ package typings.winrtUwp.global.Windows.Web.Http
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves standard HTTP methods such as GET and POST and creates new HTTP methods. */
 @JSGlobal("Windows.Web.Http.HttpMethod")
 @js.native
 class HttpMethod protected ()
-  extends typings.winrtUwp.Windows.Web.Http.HttpMethod {
+  extends StObject
+     with typings.winrtUwp.Windows.Web.Http.HttpMethod {
   /**
     * Initializes a new instance of the HttpMethod class with a specific HTTP method.
     * @param method The HTTP method.
     */
   def this(method: String) = this()
+  
+  /** Gets the HTTP method. */
+  /* CompleteClass */
+  var method: String = js.native
 }
 object HttpMethod {
   

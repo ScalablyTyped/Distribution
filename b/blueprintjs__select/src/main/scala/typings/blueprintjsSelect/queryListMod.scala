@@ -16,10 +16,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryListMod {
+  
+  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "QueryList")
   @js.native
@@ -106,13 +109,9 @@ object queryListMod {
     def setActiveItem(activeItem: ICreateNewItem): Unit = js.native
     
     def setQuery(query: String): Unit = js.native
-    def setQuery(
-      query: String,
-      resetActiveItem: js.UndefOr[scala.Nothing],
-      props: IQueryListProps[T] with ReadonlychildrenReactNode
-    ): Unit = js.native
     def setQuery(query: String, resetActiveItem: Boolean): Unit = js.native
-    def setQuery(query: String, resetActiveItem: Boolean, props: IQueryListProps[T] with ReadonlychildrenReactNode): Unit = js.native
+    def setQuery(query: String, resetActiveItem: Boolean, props: IQueryListProps[T] & ReadonlychildrenReactNode): Unit = js.native
+    def setQuery(query: String, resetActiveItem: Unit, props: IQueryListProps[T] & ReadonlychildrenReactNode): Unit = js.native
     
     /**
       * Flag indicating that we should check whether selected item is in viewport
@@ -142,74 +141,53 @@ object queryListMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "QueryList.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ IQueryListProps[U], QueryList[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ IQueryListProps[U], QueryList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IQueryListProps[U], QueryList[U]]]
   }
   
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T]): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](
-    items: js.Array[T],
-    itemDisabled: js.UndefOr[scala.Nothing],
-    direction: js.UndefOr[scala.Nothing],
-    startIndex: Double
-  ): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.UndefOr[scala.Nothing], direction: Double): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.UndefOr[scala.Nothing], direction: Double, startIndex: Double): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](
-    items: js.Array[T],
-    itemDisabled: /* keyof T */ String,
-    direction: js.UndefOr[scala.Nothing],
-    startIndex: Double
-  ): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double, startIndex: Double): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean]): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
-  def getFirstEnabledItem[T](
-    items: js.Array[T],
-    itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
-    direction: js.UndefOr[scala.Nothing],
-    startIndex: Double
-  ): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T]): T | ICreateNewItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any]).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Unit, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean]): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
   def getFirstEnabledItem[T](
     items: js.Array[T],
     itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
     direction: Double
-  ): T | ICreateNewItem | Null = js.native
-  @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
-  @js.native
+  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
   def getFirstEnabledItem[T](
     items: js.Array[T],
     itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
     direction: Double,
     startIndex: Double
-  ): T | ICreateNewItem | Null = js.native
+  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
+    direction: Unit,
+    startIndex: Double
+  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @scala.inline
+  def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Unit, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
   
   @js.native
-  trait IQueryListProps[T] extends IListItemsProps[T] {
+  trait IQueryListProps[T]
+    extends StObject
+       with IListItemsProps[T] {
     
     /**
       * Whether the list is disabled.
@@ -305,11 +283,10 @@ object queryListMod {
     var query: String = js.native
   }
   
-  @js.native
   trait IQueryListState[T] extends StObject {
     
     /** The currently focused item (for keyboard interactions). */
-    var activeItem: T | ICreateNewItem | Null = js.native
+    var activeItem: T | ICreateNewItem | Null
     
     /**
       * The item returned from `createNewItemFromQuery(this.state.query)`, cached
@@ -317,24 +294,24 @@ object queryListMod {
       * this element will be used to hide the "Create Item" option if its value
       * matches the current `query`.
       */
-    var createNewItem: js.UndefOr[T] = js.native
+    var createNewItem: js.UndefOr[T] = js.undefined
     
     /** The original `items` array filtered by `itemListPredicate` or `itemPredicate`. */
-    var filteredItems: js.Array[T] = js.native
+    var filteredItems: js.Array[T]
     
     /** The current query string. */
-    var query: String = js.native
+    var query: String
   }
   object IQueryListState {
     
     @scala.inline
     def apply[T](filteredItems: js.Array[T], query: String): IQueryListState[T] = {
-      val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], activeItem = null)
       __obj.asInstanceOf[IQueryListState[T]]
     }
     
     @scala.inline
-    implicit class IQueryListStateMutableBuilder[Self <: IQueryListState[_], T] (val x: Self with IQueryListState[T]) extends AnyVal {
+    implicit class IQueryListStateMutableBuilder[Self <: IQueryListState[?], T] (val x: Self & IQueryListState[T]) extends AnyVal {
       
       @scala.inline
       def setActiveItem(value: T | ICreateNewItem): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])

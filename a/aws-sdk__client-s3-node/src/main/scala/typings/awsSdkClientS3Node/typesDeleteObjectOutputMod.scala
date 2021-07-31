@@ -6,30 +6,29 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteObjectOutputMod {
   
-  @js.native
   trait DeleteObjectOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Specifies whether the versioned object that was permanently deleted was (true) or was not (false) a delete marker.</p>
       */
-    var DeleteMarker: js.UndefOr[Boolean] = js.native
+    var DeleteMarker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>Returns the version ID of the delete marker created as a result of the DELETE operation.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object DeleteObjectOutput {
     

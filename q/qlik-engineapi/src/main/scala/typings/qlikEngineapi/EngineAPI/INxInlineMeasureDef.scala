@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxInlineMeasureDef...
   */
-@js.native
 trait INxInlineMeasureDef extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait INxInlineMeasureDef extends StObject {
     * >> This parameter is optional.
     * >> Default is 0.
     */
-  var qAccumulate: js.UndefOr[Double] = js.native
+  var qAccumulate: js.UndefOr[Double] = js.undefined
   
   /**
     * Index of the active expression in a cyclic measure. The indexing starts from 0.
     * This parameter is optional.
     * >> The default value is 0.
     */
-  var qActiveExpression: js.UndefOr[Double] = js.native
+  var qActiveExpression: js.UndefOr[Double] = js.undefined
   
   /**
     * Aggregate function.
@@ -34,7 +32,7 @@ trait INxInlineMeasureDef extends StObject {
     * The default value is 0 (Sum of rows)
     * >> This parameter is optional.
     */
-  var qAggrFunc: js.UndefOr[String] = js.native
+  var qAggrFunc: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, the sum of rows total should be used rather than real expression total.
@@ -42,72 +40,72 @@ trait INxInlineMeasureDef extends StObject {
     * If using the Qlik Sense interface, it means that the total mode is set to Expression Total.
     * >> Default is false.
     */
-  var qBrutalSum: js.UndefOr[Boolean] = js.native
+  var qBrutalSum: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Definition of the expression in the measure.
     * Example: Sum (OrderTotal)
     * >> This parameter is mandatory.
     */
-  var qDef: String = js.native
+  var qDef: String
   
   /**
     * Description of the measure.
     * >> This parameter is optional.
     * An empty string is returned as a default value.
     */
-  var qDescription: js.UndefOr[String] = js.native
+  var qDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Array of expressions. This parameter is used in case of cyclic measures (qGrouping is C).
     * List of the expressions in the cyclic group.
     */
-  var qExpressions: js.UndefOr[js.Array[String]] = js.native
+  var qExpressions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Default value is no grouping.
     * >> This parameter is optional.
     */
-  var qGrouping: js.UndefOr[NxGrpType] = js.native
+  var qGrouping: js.UndefOr[NxGrpType] = js.undefined
   
   /**
     * Name of the measure.
     * >> This parameter is optional.
     * An empty string is returned as a default value.
     */
-  var qLabel: js.UndefOr[String] = js.native
+  var qLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Label expression.
     * >> This parameter is optional.
     * An empty string is returned as a default value.
     */
-  var qLabelExpression: js.UndefOr[String] = js.native
+  var qLabelExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Format of the field.
     * >> This parameter is optional.
     */
-  var qNumFormat: js.UndefOr[IFieldAttributes] = js.native
+  var qNumFormat: js.UndefOr[IFieldAttributes] = js.undefined
   
   /**
     * If set to true, percentage values are returned instead of absolute numbers.
     * >> This parameter is optional.
     * >> Default is false.
     */
-  var qRelative: js.UndefOr[Boolean] = js.native
+  var qRelative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it inverts the sort criteria in the field.
     */
-  var qReverseSort: js.UndefOr[Boolean] = js.native
+  var qReverseSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name connected to the measure that is used for search purposes.
     * >> This parameter is optional.
     * A measure can have several tags.
     */
-  var qTags: js.UndefOr[js.Array[String]] = js.native
+  var qTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object INxInlineMeasureDef {
   

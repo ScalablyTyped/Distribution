@@ -10,13 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an abstract control which contains other controls. */
-@js.native
 trait UnoControlContainer
-  extends UnoControl
+  extends StObject
+     with UnoControl
      with XUnoControlContainer
      with XControlContainer
      with XContainer

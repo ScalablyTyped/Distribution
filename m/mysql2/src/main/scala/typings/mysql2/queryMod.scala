@@ -12,7 +12,6 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryMod {
@@ -35,15 +34,15 @@ object queryMod {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_end(event: end, listener: js.Function0[_]): this.type = js.native
+    def on_end(event: end, listener: js.Function0[js.Any]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ QueryError, _]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ QueryError, js.Any]): this.type = js.native
     @JSName("on")
-    def on_fields(event: fields, listener: js.Function2[/* fields */ FieldPacket, /* index */ Double, _]): this.type = js.native
+    def on_fields(event: fields, listener: js.Function2[/* fields */ FieldPacket, /* index */ Double, js.Any]): this.type = js.native
     @JSName("on")
     def on_result(
       event: result,
-      listener: js.Function2[/* result */ RowDataPacket | OkPacket, /* index */ Double, _]
+      listener: js.Function2[/* result */ RowDataPacket | OkPacket, /* index */ Double, js.Any]
     ): this.type = js.native
     
     /**
@@ -64,8 +63,9 @@ object queryMod {
     def stream(options: StreamOptions): Readable = js.native
   }
   
-  @js.native
-  trait QueryError extends ErrnoException {
+  trait QueryError
+    extends StObject
+       with ErrnoException {
     
     /**
       * Either a MySQL server error (e.g. 'ER_ACCESS_DENIED_ERROR'),
@@ -73,27 +73,27 @@ object queryMod {
       * (e.g. 'PROTOCOL_CONNECTION_LOST').
       */
     @JSName("code")
-    var code_QueryError: String = js.native
+    var code_QueryError: String
     
     /**
       * Boolean, indicating if this error is terminal to the connection object.
       */
-    var fatal: Boolean = js.native
+    var fatal: Boolean
     
     /**
       * The field count
       */
-    var fieldCount: js.UndefOr[Double] = js.native
+    var fieldCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The sql state
       */
-    var sqlState: js.UndefOr[String] = js.native
+    var sqlState: js.UndefOr[String] = js.undefined
     
     /**
       * The sql state marker
       */
-    var sqlStateMarker: js.UndefOr[String] = js.native
+    var sqlStateMarker: js.UndefOr[String] = js.undefined
   }
   object QueryError {
     
@@ -132,19 +132,18 @@ object queryMod {
     }
   }
   
-  @js.native
   trait QueryOptions extends StObject {
     
     /**
       * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
       * nested as tableName_fieldName
       */
-    var nestTables: js.UndefOr[js.Any] = js.native
+    var nestTables: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The SQL for the query
       */
-    var sql: String = js.native
+    var sql: String
     
     /**
       * Every operation takes an optional inactivity timeout option. This allows you to specify appropriate timeouts for
@@ -152,7 +151,7 @@ object queryMod {
       * operations through the client. This means that when a timeout is reached, the connection it occurred on will be
       * destroyed and no further operations can be performed.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
@@ -174,12 +173,12 @@ object queryMod {
       *
       * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
       */
-    var typeCast: js.UndefOr[js.Any] = js.native
+    var typeCast: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The values for the query
       */
-    var values: js.UndefOr[js.Any | js.Array[_] | StringDictionary[js.Any]] = js.native
+    var values: js.UndefOr[js.Any | js.Array[js.Any] | StringDictionary[js.Any]] = js.undefined
   }
   object QueryOptions {
     
@@ -214,7 +213,7 @@ object queryMod {
       def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Any | js.Array[_] | StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Any | js.Array[js.Any] | StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -224,18 +223,17 @@ object queryMod {
     }
   }
   
-  @js.native
   trait StreamOptions extends StObject {
     
     /**
       * Sets the max buffer size in objects of a stream
       */
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * The object mode of the stream (Default: true)
       */
-    var objectMode: js.UndefOr[js.Any] = js.native
+    var objectMode: js.UndefOr[js.Any] = js.undefined
   }
   object StreamOptions {
     

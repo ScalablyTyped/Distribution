@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAnomalySubscriptionsRequest extends StObject {
   
   /**
     *  The number of entries a paginated response contains. 
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     *  Cost anomaly monitor ARNs. 
     */
-  var MonitorArn: js.UndefOr[GenericString] = js.native
+  var MonitorArn: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     *  A list of cost anomaly subscription ARNs. 
     */
-  var SubscriptionArnList: js.UndefOr[Values] = js.native
+  var SubscriptionArnList: js.UndefOr[Values] = js.undefined
 }
 object GetAnomalySubscriptionsRequest {
   

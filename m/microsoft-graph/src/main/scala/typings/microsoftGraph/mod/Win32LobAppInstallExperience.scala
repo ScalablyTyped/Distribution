@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Win32LobAppInstallExperience extends StObject {
   
   // Device restart behavior. Possible values are: basedOnReturnCode, allow, suppress, force.
-  var deviceRestartBehavior: js.UndefOr[Win32LobAppRestartBehavior] = js.native
+  var deviceRestartBehavior: js.UndefOr[Win32LobAppRestartBehavior] = js.undefined
   
   // Indicates the type of execution context the app runs in.
-  var runAsAccount: js.UndefOr[RunAsAccountType] = js.native
+  var runAsAccount: js.UndefOr[RunAsAccountType] = js.undefined
 }
 object Win32LobAppInstallExperience {
   

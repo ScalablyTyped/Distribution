@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the format of an image stream. */
-@js.native
 trait ImageEncodingProperties extends StObject {
   
   /** Gets or sets the image height. */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets additional format properties for the image stream. */
-  var properties: MediaPropertySet = js.native
+  var properties: MediaPropertySet
   
   /** Gets or sets the subtype of the format. */
-  var subtype: String = js.native
+  var subtype: String
   
   /** Gets the format type. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** Gets or sets the image width. */
-  var width: Double = js.native
+  var width: Double
 }
 object ImageEncodingProperties {
   

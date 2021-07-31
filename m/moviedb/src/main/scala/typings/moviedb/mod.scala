@@ -4,23 +4,24 @@ import typings.moviedb.mod.MovieDB.IMovieDB
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(key: String): IMovieDB = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[IMovieDB]
+  
   @JSImport("moviedb", JSImport.Namespace)
   @js.native
-  def apply(key: String): IMovieDB = js.native
+  val ^ : js.Any = js.native
   
   object MovieDB {
     
-    @js.native
     trait Genre extends StObject {
       
-      var id: Double = js.native
+      var id: Double
       
-      var name: String = js.native
+      var name: String
     }
     object Genre {
       
@@ -41,14 +42,13 @@ object mod {
       }
     }
     
-    @js.native
     trait IMovieDB extends StObject {
       
-      def movieImages(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]): Unit = js.native
+      def movieImages(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]): Unit
       
-      def movieInfo(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]): Unit = js.native
+      def movieInfo(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]): Unit
       
-      def searchMovie(params: SearchOptions, callback: js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]): Unit = js.native
+      def searchMovie(params: SearchOptions, callback: js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]): Unit
     }
     object IMovieDB {
       
@@ -76,12 +76,11 @@ object mod {
       }
     }
     
-    @js.native
     trait InfoOptions extends StObject {
       
-      var id: Double = js.native
+      var id: Double
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
     }
     object InfoOptions {
       
@@ -105,54 +104,53 @@ object mod {
       }
     }
     
-    @js.native
     trait Movie extends StObject {
       
-      var adult: Boolean = js.native
+      var adult: Boolean
       
-      var backdrop_path: String = js.native
+      var backdrop_path: String
       
-      var belongs_to_collection: js.Any = js.native
+      var belongs_to_collection: js.Any
       
-      var budget: Double = js.native
+      var budget: Double
       
-      var genres: js.Array[Genre] = js.native
+      var genres: js.Array[Genre]
       
-      var homepage: String = js.native
+      var homepage: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var imdb_id: Double = js.native
+      var imdb_id: Double
       
-      var original_title: String = js.native
+      var original_title: String
       
-      var overview: String = js.native
+      var overview: String
       
-      var popularity: Double = js.native
+      var popularity: Double
       
-      var poster_path: String = js.native
+      var poster_path: String
       
-      var production_companies: js.Array[ProductionCompany] = js.native
+      var production_companies: js.Array[ProductionCompany]
       
-      var production_countries: js.Array[ProductionCountry] = js.native
+      var production_countries: js.Array[ProductionCountry]
       
-      var release_date: Date = js.native
+      var release_date: Date
       
-      var revenue: Double = js.native
+      var revenue: Double
       
-      var runtime: Double = js.native
+      var runtime: Double
       
-      var spoken_languages: js.Array[SpokenLanguage] = js.native
+      var spoken_languages: js.Array[SpokenLanguage]
       
-      var status: String = js.native
+      var status: String
       
-      var tagline: String = js.native
+      var tagline: String
       
-      var title: String = js.native
+      var title: String
       
-      var vote_average: Double = js.native
+      var vote_average: Double
       
-      var vote_count: Double = js.native
+      var vote_count: Double
     }
     object Movie {
       
@@ -272,22 +270,21 @@ object mod {
       }
     }
     
-    @js.native
     trait MovieImage extends StObject {
       
-      var aspect_ratio: Double = js.native
+      var aspect_ratio: Double
       
-      var file_path: String = js.native
+      var file_path: String
       
-      var height: Double = js.native
+      var height: Double
       
-      var iso_639_1: String = js.native
+      var iso_639_1: String
       
-      var vote_average: Double = js.native
+      var vote_average: Double
       
-      var vote_count: Double = js.native
+      var vote_count: Double
       
-      var width: Double = js.native
+      var width: Double
     }
     object MovieImage {
       
@@ -331,14 +328,13 @@ object mod {
       }
     }
     
-    @js.native
     trait MovieImages extends StObject {
       
-      var backdrops: js.Array[MovieImage] = js.native
+      var backdrops: js.Array[MovieImage]
       
-      var id: Double = js.native
+      var id: Double
       
-      var posters: js.Array[MovieImage] = js.native
+      var posters: js.Array[MovieImage]
     }
     object MovieImages {
       
@@ -368,12 +364,11 @@ object mod {
       }
     }
     
-    @js.native
     trait ProductionCompany extends StObject {
       
-      var id: Double = js.native
+      var id: Double
       
-      var name: String = js.native
+      var name: String
     }
     object ProductionCompany {
       
@@ -394,12 +389,11 @@ object mod {
       }
     }
     
-    @js.native
     trait ProductionCountry extends StObject {
       
-      var iso_3166_1: Double = js.native
+      var iso_3166_1: Double
       
-      var name: String = js.native
+      var name: String
     }
     object ProductionCountry {
       
@@ -420,12 +414,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SearchOptions extends StObject {
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
-      var query: String = js.native
+      var query: String
     }
     object SearchOptions {
       
@@ -449,28 +442,27 @@ object mod {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
-      var adult: Boolean = js.native
+      var adult: Boolean
       
-      var backdrop_path: String = js.native
+      var backdrop_path: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var original_title: String = js.native
+      var original_title: String
       
-      var popularity: Double = js.native
+      var popularity: Double
       
-      var poster_path: String = js.native
+      var poster_path: String
       
-      var release_date: Date = js.native
+      var release_date: Date
       
-      var title: String = js.native
+      var title: String
       
-      var vote_average: Double = js.native
+      var vote_average: Double
       
-      var vote_count: Double = js.native
+      var vote_count: Double
     }
     object SearchResult {
       
@@ -526,16 +518,15 @@ object mod {
       }
     }
     
-    @js.native
     trait SearchResults extends StObject {
       
-      var page: Double = js.native
+      var page: Double
       
-      var results: js.Array[SearchResult] = js.native
+      var results: js.Array[SearchResult]
       
-      var total_Pages: Double = js.native
+      var total_Pages: Double
       
-      var total_results: Double = js.native
+      var total_results: Double
     }
     object SearchResults {
       
@@ -565,12 +556,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SpokenLanguage extends StObject {
       
-      var iso_639_1: Double = js.native
+      var iso_639_1: Double
       
-      var name: String = js.native
+      var name: String
     }
     object SpokenLanguage {
       

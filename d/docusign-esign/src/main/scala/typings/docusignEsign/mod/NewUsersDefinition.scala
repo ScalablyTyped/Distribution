@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewUsersDefinition extends StObject {
   
   /**
     * A list of one or more new users.
     */
-  var newUsers: js.UndefOr[js.Array[UserInformation]] = js.native
+  var newUsers: js.UndefOr[js.Array[UserInformation]] = js.undefined
 }
 object NewUsersDefinition {
   

@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistSnippet extends StObject {
   
   /** The ID that YouTube uses to uniquely identify the channel that published the playlist. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The channel title of the channel that the video belongs to. */
-  var channelTitle: js.UndefOr[String] = js.native
+  var channelTitle: js.UndefOr[String] = js.undefined
   
   /** The language of the playlist's default title and description. */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /** The playlist's description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Localized title and description, read-only. */
-  var localized: js.UndefOr[PlaylistLocalization] = js.native
+  var localized: js.UndefOr[PlaylistLocalization] = js.undefined
   
   /** The date and time that the playlist was created. The value is specified in ISO 8601 format. */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /** Keyword tags associated with the playlist. */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A map of thumbnail images associated with the playlist. For each object in the map, the key is the name of the thumbnail image, and the value is an object that contains other
     * information about the thumbnail.
     */
-  var thumbnails: js.UndefOr[ThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   
   /** The playlist's title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlaylistSnippet {
   

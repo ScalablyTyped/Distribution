@@ -3,46 +3,44 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDataRequest extends StObject {
   
   /**
     * Database name.
     */
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * Index name, empty string for object store data requests.
     */
-  var indexName: String = js.native
+  var indexName: String
   
   /**
     * Key range.
     */
-  var keyRange: js.UndefOr[KeyRange] = js.native
+  var keyRange: js.UndefOr[KeyRange] = js.undefined
   
   /**
     * Object store name.
     */
-  var objectStoreName: String = js.native
+  var objectStoreName: String
   
   /**
     * Number of records to fetch.
     */
-  var pageSize: integer = js.native
+  var pageSize: integer
   
   /**
     * Security origin.
     */
-  var securityOrigin: String = js.native
+  var securityOrigin: String
   
   /**
     * Number of records to skip.
     */
-  var skipCount: integer = js.native
+  var skipCount: integer
 }
 object RequestDataRequest {
   

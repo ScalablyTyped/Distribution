@@ -2,19 +2,17 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3 extends StObject {
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var event: String = js.native
+  var event: String
   
-  var existing: js.UndefOr[Boolean] = js.native
+  var existing: js.UndefOr[Boolean] = js.undefined
   
-  var rules: js.Array[S3Rule] = js.native
+  var rules: js.Array[S3Rule]
 }
 object S3 {
   

@@ -3,25 +3,23 @@ package typings.openfin
 import typings.openfin.preloadScriptMod.PreloadScript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webOptionsMod {
   
-  @js.native
   trait WebOptions extends StObject {
     
-    var contentRedirect: js.UndefOr[js.Any] = js.native
+    var contentRedirect: js.UndefOr[js.Any] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.native
+    var customContext: js.UndefOr[js.Any] = js.undefined
     
-    var experimental: js.UndefOr[js.Any] = js.native
+    var experimental: js.UndefOr[js.Any] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var preloadScripts: js.UndefOr[js.Array[PreloadScript]] = js.native
+    var preloadScripts: js.UndefOr[js.Array[PreloadScript]] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object WebOptions {
     

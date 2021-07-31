@@ -3,17 +3,17 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Comment extends Node {
+trait Comment
+  extends StObject
+     with Node {
   
-  var `inline`: scala.Boolean = js.native
+  var `inline`: scala.Boolean
   
-  var str: java.lang.String = js.native
+  var str: java.lang.String
   
-  var suppress: scala.Boolean = js.native
+  var suppress: scala.Boolean
 }
 object Comment {
   

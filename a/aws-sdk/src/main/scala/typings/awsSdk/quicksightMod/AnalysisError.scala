@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalysisError extends StObject {
   
   /**
     * The message associated with the analysis error.
     */
-  var Message: js.UndefOr[NonEmptyString] = js.native
+  var Message: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of the analysis error.
     */
-  var Type: js.UndefOr[AnalysisErrorType] = js.native
+  var Type: js.UndefOr[AnalysisErrorType] = js.undefined
 }
 object AnalysisError {
   

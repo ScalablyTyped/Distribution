@@ -2,12 +2,11 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridsProps
-  extends GridGapProps[StyledSystemLength]
+  extends StObject
+     with GridGapProps[StyledSystemLength]
      with GridColumnGapProps[StyledSystemLength]
      with GridRowGapProps[StyledSystemLength]
      with GridColumnProps

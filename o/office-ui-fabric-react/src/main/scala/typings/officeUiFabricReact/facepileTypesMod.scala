@@ -22,7 +22,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object facepileTypesMod {
@@ -34,69 +33,77 @@ object facepileTypesMod {
   object OverflowButtonType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OverflowButtonType with Double] = js.native
+    def apply(value: Double): js.UndefOr[OverflowButtonType & Double] = js.native
     
     /** +1 overflow icon */
     @js.native
-    sealed trait descriptive extends OverflowButtonType
-    /* 1 */ val descriptive: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.descriptive with Double = js.native
+    sealed trait descriptive
+      extends StObject
+         with OverflowButtonType
+    /* 1 */ val descriptive: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.descriptive & Double = js.native
     
     /** Chevron overflow icon */
     @js.native
-    sealed trait downArrow extends OverflowButtonType
-    /* 3 */ val downArrow: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.downArrow with Double = js.native
+    sealed trait downArrow
+      extends StObject
+         with OverflowButtonType
+    /* 3 */ val downArrow: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.downArrow & Double = js.native
     
     /** More overflow icon */
     @js.native
-    sealed trait more extends OverflowButtonType
-    /* 2 */ val more: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.more with Double = js.native
+    sealed trait more
+      extends StObject
+         with OverflowButtonType
+    /* 2 */ val more: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.more & Double = js.native
     
     /** No overflow */
     @js.native
-    sealed trait none extends OverflowButtonType
-    /* 0 */ val none: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.none with Double = js.native
+    sealed trait none
+      extends StObject
+         with OverflowButtonType
+    /* 0 */ val none: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.none & Double = js.native
   }
   
-  @js.native
   trait IFacepile extends StObject
   
-  @js.native
-  trait IFacepilePersona extends ButtonHTMLAttributes[HTMLButtonElement | HTMLDivElement] {
+  trait IFacepilePersona
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement | HTMLDivElement] {
     
     /**
       * Whether initials are calculated for phone numbers and number sequences.
       * Example: Set property to true to get initials for project names consisting of numbers only.
       * @defaultvalue false
       */
-    var allowPhoneInitials: js.UndefOr[Boolean] = js.native
+    var allowPhoneInitials: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extra data - not used directly but can be handy for passing additional data to custom event
       * handlers.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The user's initials to display in the image area when there is no image.
       * @defaultvalue [Derived from personaName]
       */
-    var imageInitials: js.UndefOr[String] = js.native
+    var imageInitials: js.UndefOr[String] = js.undefined
     
     /**
       * Url to the image to use, should be a square aspect ratio and big enough to fit in the image area.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The background color when the user's initials are displayed.
       * @defaultvalue [Derived from personaName]
       */
-    var initialsColor: js.UndefOr[PersonaInitialsColor] = js.native
+    var initialsColor: js.UndefOr[PersonaInitialsColor] = js.undefined
     
     /**
       * Optional keytip for this button that is only added when 'onClick' is defined for the persona
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * If provided, persona will be rendered with cursor:pointer and the handler will be
@@ -109,7 +116,7 @@ object facepileTypesMod {
           /* persona */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If provided, the handler will be called on mouse move.
@@ -121,7 +128,7 @@ object facepileTypesMod {
           /* persona */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If provided, the handler will be called when mouse moves out of the component.
@@ -133,12 +140,12 @@ object facepileTypesMod {
           /* persona */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the person.
       */
-    var personaName: js.UndefOr[String] = js.native
+    var personaName: js.UndefOr[String] = js.undefined
   }
   object IFacepilePersona {
     
@@ -219,81 +226,82 @@ object facepileTypesMod {
     }
   }
   
-  @js.native
-  trait IFacepileProps extends ClassAttributes[FacepileBase] {
+  trait IFacepileProps
+    extends StObject
+       with ClassAttributes[FacepileBase] {
     
     /** Button properties for the add face button */
-    var addButtonProps: js.UndefOr[IButtonProps] = js.native
+    var addButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /** ARIA label for persona list */
-    var ariaDescription: js.UndefOr[String] = js.native
+    var ariaDescription: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the aria label that the screen readers use when focus goes on a list of personas.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Deprecated at v0.70, use `overflowButtonProps` instead.
       * @deprecated Use `overflowButtonProps` instead.
       */
-    var chevronButtonProps: js.UndefOr[IButtonProps] = js.native
+    var chevronButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Additional css class to apply to the Facepile
       * @defaultvalue undefined
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IFacepile interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IFacepile]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IFacepile]] = js.undefined
     
     /** Method to access properties on the underlying Persona control */
-    var getPersonaProps: js.UndefOr[js.Function1[/* persona */ IFacepilePersona, IPersonaSharedProps]] = js.native
+    var getPersonaProps: js.UndefOr[js.Function1[/* persona */ IFacepilePersona, IPersonaSharedProps]] = js.undefined
     
     /** Maximum number of personas to show */
-    var maxDisplayablePersonas: js.UndefOr[Double] = js.native
+    var maxDisplayablePersonas: js.UndefOr[Double] = js.undefined
     
     /** Optional custom renderer for the persona, gets called when there is one persona in personas array*/
-    var onRenderPersona: js.UndefOr[IRenderFunction[IFacepilePersona]] = js.native
+    var onRenderPersona: js.UndefOr[IRenderFunction[IFacepilePersona]] = js.undefined
     
     /** Optional custom renderer for the persona coins, gets called when there are multiple persona in personas array*/
-    var onRenderPersonaCoin: js.UndefOr[IRenderFunction[IFacepilePersona]] = js.native
+    var onRenderPersonaCoin: js.UndefOr[IRenderFunction[IFacepilePersona]] = js.undefined
     
     /** Properties for the overflow icon */
-    var overflowButtonProps: js.UndefOr[IButtonProps] = js.native
+    var overflowButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /** Type of overflow icon to use */
-    var overflowButtonType: js.UndefOr[OverflowButtonType] = js.native
+    var overflowButtonType: js.UndefOr[OverflowButtonType] = js.undefined
     
     /**
       * Personas to place in the overflow
       */
-    var overflowPersonas: js.UndefOr[js.Array[IFacepilePersona]] = js.native
+    var overflowPersonas: js.UndefOr[js.Array[IFacepilePersona]] = js.undefined
     
     /** Size to display the personas */
-    var personaSize: js.UndefOr[PersonaSize] = js.native
+    var personaSize: js.UndefOr[PersonaSize] = js.undefined
     
     /**
       * Array of IPersonaProps that define each Persona.
       */
-    var personas: js.Array[IFacepilePersona] = js.native
+    var personas: js.Array[IFacepilePersona]
     
     /** Show add person button */
-    var showAddButton: js.UndefOr[Boolean] = js.native
+    var showAddButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IFacepileProps {
     
@@ -429,23 +437,22 @@ object facepileTypesMod {
     }
   }
   
-  @js.native
   trait IFacepileStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Pixel value for spacing around button. Number value set in pixels
       */
-    var spacingAroundItemButton: js.UndefOr[Double] = js.native
+    var spacingAroundItemButton: js.UndefOr[Double] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IFacepileStyleProps {
     
@@ -475,31 +482,30 @@ object facepileTypesMod {
     }
   }
   
-  @js.native
   trait IFacepileStyles extends StObject {
     
-    var addButton: IStyle = js.native
+    var addButton: IStyle
     
-    var descriptiveOverflowButton: IStyle = js.native
+    var descriptiveOverflowButton: IStyle
     
-    var itemButton: IStyle = js.native
+    var itemButton: IStyle
     
-    var itemContainer: IStyle = js.native
+    var itemContainer: IStyle
     
-    var member: IStyle = js.native
+    var member: IStyle
     
-    var members: IStyle = js.native
+    var members: IStyle
     
-    var overflowButton: IStyle = js.native
+    var overflowButton: IStyle
     
-    var overflowInitialsIcon: IStyle = js.native
+    var overflowInitialsIcon: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var screenReaderOnly: IStyle = js.native
+    var screenReaderOnly: IStyle
   }
   object IFacepileStyles {
     

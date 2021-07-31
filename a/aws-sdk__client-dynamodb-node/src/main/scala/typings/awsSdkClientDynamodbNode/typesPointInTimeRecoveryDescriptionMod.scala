@@ -5,28 +5,26 @@ import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ENABLED
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPointInTimeRecoveryDescriptionMod {
   
-  @js.native
   trait PointInTimeRecoveryDescription extends StObject {
     
     /**
       * <p>Specifies the earliest point in time you can restore your table to. It You can restore your table to any point in time during the last 35 days. </p>
       */
-    var EarliestRestorableDateTime: js.UndefOr[Date | String | Double] = js.native
+    var EarliestRestorableDateTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p> <code>LatestRestorableDateTime</code> is typically 5 minutes before the current time. </p>
       */
-    var LatestRestorableDateTime: js.UndefOr[Date | String | Double] = js.native
+    var LatestRestorableDateTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The current state of point in time recovery:</p> <ul> <li> <p> <code>ENABLING</code> - Point in time recovery is being enabled.</p> </li> <li> <p> <code>ENABLED</code> - Point in time recovery is enabled.</p> </li> <li> <p> <code>DISABLED</code> - Point in time recovery is disabled.</p> </li> </ul>
       */
-    var PointInTimeRecoveryStatus: js.UndefOr[ENABLED | DISABLED | String] = js.native
+    var PointInTimeRecoveryStatus: js.UndefOr[ENABLED | DISABLED | String] = js.undefined
   }
   object PointInTimeRecoveryDescription {
     
@@ -59,20 +57,21 @@ object typesPointInTimeRecoveryDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledPointInTimeRecoveryDescription extends PointInTimeRecoveryDescription {
+  trait UnmarshalledPointInTimeRecoveryDescription
+    extends StObject
+       with PointInTimeRecoveryDescription {
     
     /**
       * <p>Specifies the earliest point in time you can restore your table to. It You can restore your table to any point in time during the last 35 days. </p>
       */
     @JSName("EarliestRestorableDateTime")
-    var EarliestRestorableDateTime_UnmarshalledPointInTimeRecoveryDescription: js.UndefOr[Date] = js.native
+    var EarliestRestorableDateTime_UnmarshalledPointInTimeRecoveryDescription: js.UndefOr[Date] = js.undefined
     
     /**
       * <p> <code>LatestRestorableDateTime</code> is typically 5 minutes before the current time. </p>
       */
     @JSName("LatestRestorableDateTime")
-    var LatestRestorableDateTime_UnmarshalledPointInTimeRecoveryDescription: js.UndefOr[Date] = js.native
+    var LatestRestorableDateTime_UnmarshalledPointInTimeRecoveryDescription: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledPointInTimeRecoveryDescription {
     

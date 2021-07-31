@@ -4,27 +4,25 @@ import typings.gapiCalendar.anon.Type
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignaclRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acl_ extends StObject {
   
-  var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+  var etag: typings.gapiCalendar.gapi.client.calendar.etag
   
-  var id: String = js.native
+  var id: String
   
-  var kind: calendarNumbersignaclRule = js.native
+  var kind: calendarNumbersignaclRule
   
-  var role: AccessRole = js.native
+  var role: AccessRole
   
-  var scope: Type = js.native
+  var scope: Type
 }
 object Acl_ {
   
   @scala.inline
-  def apply(etag: etag, id: String, kind: calendarNumbersignaclRule, role: AccessRole, scope: Type): Acl_ = {
-    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+  def apply(etag: etag, id: String, role: AccessRole, scope: Type): Acl_ = {
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "calendar#aclRule", role = role.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Acl_]
   }
   

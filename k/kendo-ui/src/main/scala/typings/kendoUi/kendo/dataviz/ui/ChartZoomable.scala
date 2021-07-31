@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartZoomable extends StObject {
   
-  var mousewheel: js.UndefOr[Boolean | ChartZoomableMousewheel] = js.native
+  var mousewheel: js.UndefOr[Boolean | ChartZoomableMousewheel] = js.undefined
   
-  var selection: js.UndefOr[Boolean | ChartZoomableSelection] = js.native
+  var selection: js.UndefOr[Boolean | ChartZoomableSelection] = js.undefined
 }
 object ChartZoomable {
   

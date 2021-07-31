@@ -12,7 +12,7 @@ Single component release of accordion
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 35283 |
+| # downloads        | 22699 |
 | # stars            | 1 |
 
 ## Links

@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserScriptable extends UniqueId {
+trait UserScriptable
+  extends StObject
+     with UniqueId {
   
   /** The user function. Must set one of body or serverscript */
-  var body: js.UndefOr[UserFunction] = js.native
+  var body: js.UndefOr[UserFunction] = js.undefined
   
   /** The user function. Must set one of body or serverscript */
-  var serverScript: js.UndefOr[UserFunction] = js.native
+  var serverScript: js.UndefOr[UserFunction] = js.undefined
 }
 object UserScriptable {
   

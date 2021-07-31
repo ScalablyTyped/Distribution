@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterface extends StObject {
   
   /**
     * The attachment ID for the network interface.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The private IPv6 address for the network interface.
     */
-  var ipv6Address: js.UndefOr[String] = js.native
+  var ipv6Address: js.UndefOr[String] = js.undefined
   
   /**
     * The private IPv4 address for the network interface.
     */
-  var privateIpv4Address: js.UndefOr[String] = js.native
+  var privateIpv4Address: js.UndefOr[String] = js.undefined
 }
 object NetworkInterface {
   

@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Size")
 @js.native
 class Size protected ()
-  extends typings.scriptableIos.Size {
+  extends StObject
+     with typings.scriptableIos.Size {
   /**
     * _Structure representing a size._
     * @param width - Width value.
@@ -20,4 +20,18 @@ class Size protected ()
     * @see https://docs.scriptable.app/size/#-new-size
     */
   def this(width: Double, height: Double) = this()
+  
+  /**
+    * _Height value._
+    * @see https://docs.scriptable.app/size/#height
+    */
+  /* CompleteClass */
+  var height: Double = js.native
+  
+  /**
+    * _Width value._
+    * @see https://docs.scriptable.app/size/#width
+    */
+  /* CompleteClass */
+  var width: Double = js.native
 }

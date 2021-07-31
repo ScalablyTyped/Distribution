@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the font formatting of characters in a selected range.
   */
-@js.native
-trait ChangeFontFormattingCommand extends CommandBase {
+trait ChangeFontFormattingCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeFontFormattingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A  FontFormattingSettings object specifying font formatting settings.
     */
-  def execute(settings: FontFormattingSettings): Boolean = js.native
+  def execute(settings: FontFormattingSettings): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[FontFormattingSettings] = js.native
+  def getState(): CommandState[FontFormattingSettings]
 }
 object ChangeFontFormattingCommand {
   

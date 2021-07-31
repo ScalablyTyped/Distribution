@@ -4,12 +4,10 @@ import typings.angular.mod.IPromise
 import typings.uiGrid.anon.SaveRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowEdit {
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object rowEdit {
       * If set to -1, then saves are never triggered by timer
       * (implying that the user will call flushDirtyRows() manually)
       */
-    var rowEditWaitInterval: js.UndefOr[Double] = js.native
+    var rowEditWaitInterval: js.UndefOr[Double] = js.undefined
   }
   object IGridOptions {
     
@@ -49,8 +47,8 @@ object rowEdit {
       * @returns {ng.IPromise<Array<any>>} a promise that represents the aggregate of all of the individual save
       *          promises.  i.e. it will be resolved when all the individual save promises have been resolved.
       */
-    def flushDirtyRows(): IPromise[js.Array[_]] = js.native
-    def flushDirtyRows(grid: IGridInstanceOf[TEntity]): IPromise[js.Array[_]] = js.native
+    def flushDirtyRows(): IPromise[js.Array[js.Any]] = js.native
+    def flushDirtyRows(grid: IGridInstanceOf[TEntity]): IPromise[js.Array[js.Any]] = js.native
     
     /**
       * Returns all currently dirty rows
@@ -95,7 +93,7 @@ object rowEdit {
       * @param {ng.IPromise<any>} savePromise A promise that will be resolved when the save is successful, or
       *        rejected if the save fails
       */
-    def setSavePromise(rowEntity: js.Object, savePromise: IPromise[_]): Unit = js.native
+    def setSavePromise(rowEntity: js.Object, savePromise: IPromise[js.Any]): Unit = js.native
   }
   
   type saveRowHandler[TEntity] = js.Function1[/* rowEntity */ TEntity, Unit]

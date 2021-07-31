@@ -2,13 +2,11 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnGroupInterface[D /* <: js.Object */] extends StObject {
   
-  var columns: js.Array[Column[D]] = js.native
+  var columns: js.Array[Column[D]]
 }
 object ColumnGroupInterface {
   
@@ -19,7 +17,7 @@ object ColumnGroupInterface {
   }
   
   @scala.inline
-  implicit class ColumnGroupInterfaceMutableBuilder[Self <: ColumnGroupInterface[_], D /* <: js.Object */] (val x: Self with ColumnGroupInterface[D]) extends AnyVal {
+  implicit class ColumnGroupInterfaceMutableBuilder[Self <: ColumnGroupInterface[?], D /* <: js.Object */] (val x: Self & ColumnGroupInterface[D]) extends AnyVal {
     
     @scala.inline
     def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

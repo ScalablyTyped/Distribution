@@ -10,25 +10,23 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldOrDatumDef extends StObject {
   
-  var fieldOrDatumDef: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) = js.native
+  var fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
-  var scaleType: typings.vegaLite.scaleMod.ScaleType = js.native
+  var scaleType: typings.vegaLite.scaleMod.ScaleType
   
-  var size: js.UndefOr[SignalRef] = js.native
+  var size: js.UndefOr[SignalRef] = js.undefined
   
-  var values: js.UndefOr[(js.Array[Boolean | DateTime | Double | String]) | SignalRef] = js.native
+  var values: js.UndefOr[(js.Array[Boolean | DateTime | Double | String]) | SignalRef] = js.undefined
 }
 object FieldOrDatumDef {
   
   @scala.inline
   def apply(
-    fieldOrDatumDef: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
     scaleType: typings.vegaLite.scaleMod.ScaleType
   ): FieldOrDatumDef = {
     val __obj = js.Dynamic.literal(fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
@@ -40,7 +38,7 @@ object FieldOrDatumDef {
     
     @scala.inline
     def setFieldOrDatumDef(
-      value: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+      value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
     @scala.inline

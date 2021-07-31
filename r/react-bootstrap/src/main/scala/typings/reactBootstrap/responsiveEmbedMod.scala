@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responsiveEmbedMod {
@@ -18,14 +17,15 @@ object responsiveEmbedMod {
   trait ResponsiveEmbed
     extends Component[ResponsiveEmbedProps, js.Object, js.Any]
   
-  @js.native
-  trait ResponsiveEmbedProps extends HTMLProps[ResponsiveEmbed] {
+  trait ResponsiveEmbedProps
+    extends StObject
+       with HTMLProps[ResponsiveEmbed] {
     
-    var a16by9: js.UndefOr[Boolean] = js.native
+    var a16by9: js.UndefOr[Boolean] = js.undefined
     
-    var a4by3: js.UndefOr[Boolean] = js.native
+    var a4by3: js.UndefOr[Boolean] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
   }
   object ResponsiveEmbedProps {
     

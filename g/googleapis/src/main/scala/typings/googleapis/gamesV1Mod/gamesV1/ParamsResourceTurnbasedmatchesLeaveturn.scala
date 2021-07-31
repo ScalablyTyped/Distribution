@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTurnbasedmatchesLeaveturn extends StandardParameters {
+trait ParamsResourceTurnbasedmatchesLeaveturn
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The preferred language to use for strings returned by this method.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the match.
     */
-  var matchId: js.UndefOr[String] = js.native
+  var matchId: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the match being updated.
     */
-  var matchVersion: js.UndefOr[Double] = js.native
+  var matchVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of another participant who should take their turn next. If not
@@ -38,7 +38,7 @@ trait ParamsResourceTurnbasedmatchesLeaveturn extends StandardParameters {
     * this is only valid if automatch criteria is set on the match with
     * remaining slots for automatched players.
     */
-  var pendingParticipantId: js.UndefOr[String] = js.native
+  var pendingParticipantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTurnbasedmatchesLeaveturn {
   

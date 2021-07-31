@@ -3,7 +3,6 @@ package typings.bingmaps.global.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.IDataBinningOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.DataBinningLayer")
@@ -14,8 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The options used for calculating and rendering the data bins.
   */
 class DataBinningLayer ()
-  extends typings.bingmaps.Microsoft.Maps.DataBinningLayer {
+  extends StObject
+     with typings.bingmaps.Microsoft.Maps.DataBinningLayer {
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]) = this()
-  def this(pushpins: js.UndefOr[scala.Nothing], options: IDataBinningOptions) = this()
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin], options: IDataBinningOptions) = this()
+  def this(pushpins: Unit, options: IDataBinningOptions) = this()
+  
+  /** Clears all data in the layer. */
+  /* CompleteClass */
+  override def clear(): Unit = js.native
 }

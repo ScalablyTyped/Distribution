@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1BoundingPolyConfig extends StObject {
   
   /** Required. Annotation spec set resource name. */
-  var annotationSpecSet: js.UndefOr[String] = js.native
+  var annotationSpecSet: js.UndefOr[String] = js.undefined
   
   /** Optional. Instruction message showed on contributors UI. */
-  var instructionMessage: js.UndefOr[String] = js.native
+  var instructionMessage: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1BoundingPolyConfig {
   

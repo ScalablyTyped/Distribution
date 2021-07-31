@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcEndpointConnectionNotificationsRequest extends StObject {
   
   /**
     * The ID of the notification.
     */
-  var ConnectionNotificationId: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationId] = js.native
+  var ConnectionNotificationId: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationId] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more filters.    connection-notification-arn - The ARN of the SNS topic for the notification.    connection-notification-id - The ID of the notification.    connection-notification-state - The state of the notification (Enabled | Disabled).    connection-notification-type - The type of notification (Topic).    service-id - The ID of the endpoint service.    vpc-endpoint-id - The ID of the VPC endpoint.  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another request with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.native
+  var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeVpcEndpointConnectionNotificationsRequest {
   

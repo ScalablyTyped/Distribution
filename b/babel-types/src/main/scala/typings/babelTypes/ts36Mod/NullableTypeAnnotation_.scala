@@ -3,32 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.NullableTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NullableTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
-  var typeAnnotation: FlowTypeAnnotation = js.native
+  var typeAnnotation: FlowTypeAnnotation
   
   @JSName("type")
-  var type_NullableTypeAnnotation_ : NullableTypeAnnotation = js.native
+  var type_NullableTypeAnnotation_ : NullableTypeAnnotation
 }
 object NullableTypeAnnotation_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NullableTypeAnnotation,
-    typeAnnotation: FlowTypeAnnotation
-  ): NullableTypeAnnotation_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double, typeAnnotation: FlowTypeAnnotation): NullableTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullableTypeAnnotation")
     __obj.asInstanceOf[NullableTypeAnnotation_]
   }
   

@@ -3,16 +3,16 @@ package typings.reactWindow.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FixedSizeListProps extends ListProps {
+trait FixedSizeListProps
+  extends StObject
+     with ListProps {
   
   /**
     * Size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
     */
-  var itemSize: Double = js.native
+  var itemSize: Double
 }
 object FixedSizeListProps {
   

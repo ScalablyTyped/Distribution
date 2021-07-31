@@ -2,26 +2,24 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTeamMembersRequest extends StObject {
   
   /**
     * The maximum number of team members you want returned in a response.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The continuation token for the next set of results, if the results cannot be returned in one response.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ID of the project for which you want to list team members.
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
 }
 object ListTeamMembersRequest {
   

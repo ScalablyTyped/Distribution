@@ -3,7 +3,6 @@ package typings.pseudoAudioParam
 import typings.std.AudioParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,7 +10,9 @@ object mod {
   /** Simulate scheduled AudioParam values */
   @JSImport("pseudo-audio-param", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PseudoAudioParam {
+  class ^ protected ()
+    extends StObject
+       with PseudoAudioParam {
     def this(defaultValue: Double) = this()
   }
   
@@ -48,12 +49,11 @@ object mod {
     def setValueCurveAtTime(values: js.Array[Double], time: Double, duration: Double): PseudoAudioParam = js.native
   }
   
-  @js.native
   trait PseudoAudioParamEvent extends StObject {
     
-    var time: Double = js.native
+    var time: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object PseudoAudioParamEvent {
     

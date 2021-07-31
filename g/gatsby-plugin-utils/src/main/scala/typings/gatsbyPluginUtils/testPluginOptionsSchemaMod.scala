@@ -4,27 +4,28 @@ import typings.gatsbyPluginUtils.typesMod.IPluginInfoOptions
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testPluginOptionsSchemaMod {
   
-  @JSImport("gatsby-plugin-utils/dist/test-plugin-options-schema", "testPluginOptionsSchema")
+  @JSImport("gatsby-plugin-utils/dist/test-plugin-options-schema", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def testPluginOptionsSchema_pluginOptionsSchema(
     pluginSchemaFunction: Exclude[
       /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GatsbyNode * / any['pluginOptionsSchema'] */ js.Any, 
-      js.UndefOr[scala.Nothing]
+      Unit
     ],
     pluginOptions: IPluginInfoOptions
-  ): js.Promise[ITestPluginOptionsSchemaReturnType] = js.native
+  ): js.Promise[ITestPluginOptionsSchemaReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("testPluginOptionsSchema")(pluginSchemaFunction.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ITestPluginOptionsSchemaReturnType]]
   
-  @js.native
   trait ITestPluginOptionsSchemaReturnType extends StObject {
     
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object ITestPluginOptionsSchemaReturnType {
     

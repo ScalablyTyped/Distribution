@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramNodes extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): DiagramNode = js.native
+  def Item(Index: js.Any): DiagramNode
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.DiagramNodes_typekey")
-  var PowerPointDotDiagramNodes_typekey: DiagramNodes = js.native
+  var PowerPointDotDiagramNodes_typekey: DiagramNodes
   
-  def SelectAll(): Unit = js.native
+  def SelectAll(): Unit
 }
 object DiagramNodes {
   

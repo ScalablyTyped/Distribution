@@ -2,43 +2,41 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var beautifyFloatingPoint: js.UndefOr[Boolean] = js.native
+  var beautifyFloatingPoint: js.UndefOr[Boolean] = js.undefined
   
-  var currencySymbol: js.UndefOr[String] = js.native
+  var currencySymbol: js.UndefOr[String] = js.undefined
   
-  var currencySymbolAlign: js.UndefOr[String] = js.native
+  var currencySymbolAlign: js.UndefOr[String] = js.undefined
   
-  var decimalPlaces: js.UndefOr[Double] = js.native
+  var decimalPlaces: js.UndefOr[Double] = js.undefined
   
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
-  var divideByZeroValue: js.UndefOr[String] = js.native
+  var divideByZeroValue: js.UndefOr[String] = js.undefined
   
-  var infinityValue: js.UndefOr[String] = js.native
+  var infinityValue: js.UndefOr[String] = js.undefined
   
-  var isPercent: js.UndefOr[Boolean] = js.native
+  var isPercent: js.UndefOr[Boolean] = js.undefined
   
-  var maxDecimalPlaces: js.UndefOr[Double] = js.native
+  var maxDecimalPlaces: js.UndefOr[Double] = js.undefined
   
-  var maxSymbols: js.UndefOr[Double] = js.native
+  var maxSymbols: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var negativeCurrencyFormat: js.UndefOr[String] = js.native
+  var negativeCurrencyFormat: js.UndefOr[String] = js.undefined
   
-  var nullValue: js.UndefOr[String] = js.native
+  var nullValue: js.UndefOr[String] = js.undefined
   
-  var positiveCurrencyFormat: js.UndefOr[String] = js.native
+  var positiveCurrencyFormat: js.UndefOr[String] = js.undefined
   
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
-  var thousandsSeparator: js.UndefOr[String] = js.native
+  var thousandsSeparator: js.UndefOr[String] = js.undefined
 }
 object Format {
   

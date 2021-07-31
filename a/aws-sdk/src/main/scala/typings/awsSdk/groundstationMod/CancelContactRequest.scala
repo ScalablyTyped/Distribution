@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelContactRequest extends StObject {
   
   /**
     * UUID of a contact.
     */
-  var contactId: String = js.native
+  var contactId: String
 }
 object CancelContactRequest {
   

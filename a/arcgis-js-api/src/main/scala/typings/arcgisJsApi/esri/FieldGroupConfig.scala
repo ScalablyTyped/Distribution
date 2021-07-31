@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
 import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldGroupConfig extends Accessor {
+trait FieldGroupConfig
+  extends StObject
+     with Accessor {
   
   /**
     * The field's description.

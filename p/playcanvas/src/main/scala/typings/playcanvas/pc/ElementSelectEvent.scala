@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param camera - The CameraComponent that this event was originally raised via.
   * @param inputSource - The XR input source that this event was originally raised from.
   */
-@js.native
-trait ElementSelectEvent extends ElementInputEvent {
+trait ElementSelectEvent
+  extends StObject
+     with ElementInputEvent {
   
   /**
     * The XR input source that this event was originally raised from.
     */
-  var inputSource: XrInputSource = js.native
+  var inputSource: XrInputSource
 }
 object ElementSelectEvent {
   

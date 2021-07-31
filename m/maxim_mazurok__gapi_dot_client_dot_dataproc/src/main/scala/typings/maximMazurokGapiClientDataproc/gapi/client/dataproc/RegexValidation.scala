@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexValidation extends StObject {
   
   /** Required. RE2 regular expressions used to validate the parameter's value. The value must match the regex in its entirety (substring matches are not sufficient). */
-  var regexes: js.UndefOr[js.Array[String]] = js.native
+  var regexes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RegexValidation {
   

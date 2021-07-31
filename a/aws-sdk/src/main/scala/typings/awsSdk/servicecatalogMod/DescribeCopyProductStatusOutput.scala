@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCopyProductStatusOutput extends StObject {
   
   /**
     * The status of the copy product operation.
     */
-  var CopyProductStatus: js.UndefOr[typings.awsSdk.servicecatalogMod.CopyProductStatus] = js.native
+  var CopyProductStatus: js.UndefOr[typings.awsSdk.servicecatalogMod.CopyProductStatus] = js.undefined
   
   /**
     * The status message.
     */
-  var StatusDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.StatusDetail] = js.native
+  var StatusDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.StatusDetail] = js.undefined
   
   /**
     * The identifier of the copied product.
     */
-  var TargetProductId: js.UndefOr[Id] = js.native
+  var TargetProductId: js.UndefOr[Id] = js.undefined
 }
 object DescribeCopyProductStatusOutput {
   

@@ -3,11 +3,11 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseWheelParameters extends IMouseWheelParameters
+trait MouseWheelParameters
+  extends StObject
+     with IMouseWheelParameters
 object MouseWheelParameters {
   
   @scala.inline

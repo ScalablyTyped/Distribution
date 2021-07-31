@@ -2,15 +2,13 @@ package typings.waterline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ontology extends StObject {
   
-  var collections: js.Any = js.native
+  var collections: js.Any
   
-  var datastores: js.Any = js.native
+  var datastores: js.Any
 }
 object Ontology {
   

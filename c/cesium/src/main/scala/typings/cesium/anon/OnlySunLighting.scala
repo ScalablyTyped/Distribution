@@ -2,19 +2,17 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnlySunLighting extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var onlySunLighting: js.UndefOr[Boolean] = js.native
+  var onlySunLighting: js.UndefOr[Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var textureUrl: js.UndefOr[String] = js.native
+  var textureUrl: js.UndefOr[String] = js.undefined
 }
 object OnlySunLighting {
   

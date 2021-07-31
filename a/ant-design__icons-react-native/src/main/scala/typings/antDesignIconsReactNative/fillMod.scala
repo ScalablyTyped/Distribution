@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.reactNative.mod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillMod {
@@ -1666,14 +1665,15 @@ object fillMod {
   trait IconFill
     extends PureComponent[IconFillProps, js.Object, js.Any]
   
-  @js.native
-  trait IconFillProps extends TextProps {
+  trait IconFillProps
+    extends StObject
+       with TextProps {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var name: FillGlyphMapType = js.native
+    var name: FillGlyphMapType
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object IconFillProps {
     

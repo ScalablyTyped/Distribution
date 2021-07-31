@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatelessRuleGroupReference extends StObject {
   
   /**
     * An integer setting that indicates the order in which to run the stateless rule groups in a single FirewallPolicy. Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting. You must ensure that the priority settings are unique within each policy.
     */
-  var Priority: typings.awsSdk.networkfirewallMod.Priority = js.native
+  var Priority: typings.awsSdk.networkfirewallMod.Priority
   
   /**
     * The Amazon Resource Name (ARN) of the stateless rule group.
     */
-  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn
 }
 object StatelessRuleGroupReference {
   

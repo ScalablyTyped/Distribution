@@ -3,44 +3,38 @@ package typings.lovefield.mod
 import typings.lovefield.mod.schema.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // module op
 object fn {
   
-  @JSImport("lovefield", "fn.avg")
+  @JSImport("lovefield", "fn")
   @js.native
-  def avg(column: Column): Column = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lovefield", "fn.count")
-  @js.native
-  def count(): Column = js.native
-  @JSImport("lovefield", "fn.count")
-  @js.native
-  def count(column: Column): Column = js.native
+  @scala.inline
+  def avg(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("avg")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.distinct")
-  @js.native
-  def distinct(column: Column): Column = js.native
+  @scala.inline
+  def count(): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Column]
+  @scala.inline
+  def count(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.geomean")
-  @js.native
-  def geomean(column: Column): Column = js.native
+  @scala.inline
+  def distinct(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.max")
-  @js.native
-  def max(column: Column): Column = js.native
+  @scala.inline
+  def geomean(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("geomean")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.min")
-  @js.native
-  def min(column: Column): Column = js.native
+  @scala.inline
+  def max(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.stddev")
-  @js.native
-  def stddev(column: Column): Column = js.native
+  @scala.inline
+  def min(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
   
-  @JSImport("lovefield", "fn.sum")
-  @js.native
-  def sum(column: Column): Column = js.native
+  @scala.inline
+  def stddev(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("stddev")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
+  
+  @scala.inline
+  def sum(column: Column): Column = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(column.asInstanceOf[js.Any]).asInstanceOf[Column]
 }

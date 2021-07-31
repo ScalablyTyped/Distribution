@@ -2,31 +2,29 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTranslationJobFilter extends StObject {
   
   /**
     * Filters the list of jobs by name.
     */
-  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.undefined
   
   /**
     * Filters the list of jobs based by job status.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.undefined
   
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing and returns only the jobs submitted after the specified time. Jobs are returned in descending order, newest to oldest.
     */
-  var SubmittedAfterTime: js.UndefOr[Timestamp] = js.native
+  var SubmittedAfterTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing and returns only the jobs submitted before the specified time. Jobs are returned in ascending order, oldest to newest.
     */
-  var SubmittedBeforeTime: js.UndefOr[Timestamp] = js.native
+  var SubmittedBeforeTime: js.UndefOr[Timestamp] = js.undefined
 }
 object TextTranslationJobFilter {
   

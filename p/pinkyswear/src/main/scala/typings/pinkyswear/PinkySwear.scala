@@ -3,13 +3,14 @@ package typings.pinkyswear
 import typings.std.TypeError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PinkySwear {
   
   @js.native
-  trait GenericPromise[T] extends Promise {
+  trait GenericPromise[T]
+    extends StObject
+       with Promise {
     
     /**
       * Fulfill or reject the promise.
@@ -30,17 +31,14 @@ object PinkySwear {
     @JSName("then")
     def then_G_GenericPromise[G](): GenericPromise[G] = js.native
     @JSName("then")
-    def then_G_GenericPromise[G](
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[(/* value */ T) | (/* error */ TypeError), Unit]
-    ): GenericPromise[G] = js.native
-    @JSName("then")
     def then_G_GenericPromise[G](onFulfilled: js.Function1[/* value */ T, G | GenericPromise[G]]): GenericPromise[G] = js.native
     @JSName("then")
     def then_G_GenericPromise[G](
       onFulfilled: js.Function1[/* value */ T, G | GenericPromise[G]],
       onRejected: js.Function1[(/* value */ T) | (/* error */ TypeError), Unit]
     ): GenericPromise[G] = js.native
+    @JSName("then")
+    def then_G_GenericPromise[G](onFulfilled: Unit, onRejected: js.Function1[(/* value */ T) | (/* error */ TypeError), Unit]): GenericPromise[G] = js.native
   }
   
   @js.native
@@ -68,11 +66,11 @@ object PinkySwear {
       * @returns PinkySwear.Promise
       */
     def `then`(): Promise = js.native
-    def `then`(onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* repeated */ js.Any, Unit]): Promise = js.native
-    def `then`(onFulfilled: js.Function1[/* repeated */ js.Any, this.type | Unit | _]): Promise = js.native
+    def `then`(onFulfilled: js.Function1[/* repeated */ js.Any, this.type | Unit | js.Any]): Promise = js.native
     def `then`(
-      onFulfilled: js.Function1[/* repeated */ js.Any, this.type | Unit | _],
+      onFulfilled: js.Function1[/* repeated */ js.Any, this.type | Unit | js.Any],
       onRejected: js.Function1[/* repeated */ js.Any, Unit]
     ): Promise = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* repeated */ js.Any, Unit]): Promise = js.native
   }
 }

@@ -3,23 +3,21 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFNamedACLType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INamedACL extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  def Clone(): INamedACL = js.native
+  def Clone(): INamedACL
   
-  val GUID: String = js.native
+  val GUID: String
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  val NamedACLType: MFNamedACLType = js.native
+  val NamedACLType: MFNamedACLType
 }
 object INamedACL {
   

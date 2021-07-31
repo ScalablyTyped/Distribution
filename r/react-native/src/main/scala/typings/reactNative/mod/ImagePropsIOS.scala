@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePropsIOS extends StObject {
   
   /**
     * blurRadius: the blur radius of the blur filter added to the image
     * @platform ios
     */
-  var blurRadius: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * When the image is resized, the corners of the size specified by capInsets will stay a fixed size,
@@ -20,7 +18,7 @@ trait ImagePropsIOS extends StObject {
     * This is useful for creating resizable rounded buttons, shadows, and other resizable assets.
     * More info on Apple documentation
     */
-  var capInsets: js.UndefOr[Insets] = js.native
+  var capInsets: js.UndefOr[Insets] = js.undefined
   
   /**
     * Invoked when a partial load of the image is complete. The definition of
@@ -28,12 +26,12 @@ trait ImagePropsIOS extends StObject {
     * for progressive JPEG loads.
     * @platform ios
     */
-  var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Invoked on download progress with {nativeEvent: {loaded, total}}
     */
-  var onProgress: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]] = js.undefined
 }
 object ImagePropsIOS {
   

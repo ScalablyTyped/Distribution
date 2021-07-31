@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Relation extends StObject {
   
   /** Zero-based index to look up the related feature from the list of features in the tile. */
-  var relatedFeatureIndex: js.UndefOr[Double] = js.native
+  var relatedFeatureIndex: js.UndefOr[Double] = js.undefined
   
   /** Relation type between the origin feature to the related feature. */
-  var relationType: js.UndefOr[String] = js.native
+  var relationType: js.UndefOr[String] = js.undefined
 }
 object Relation {
   

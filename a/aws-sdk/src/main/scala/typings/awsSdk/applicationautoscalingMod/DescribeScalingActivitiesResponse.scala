@@ -2,21 +2,19 @@ package typings.awsSdk.applicationautoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScalingActivitiesResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
     * A list of scaling activity objects.
     */
-  var ScalingActivities: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScalingActivities] = js.native
+  var ScalingActivities: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScalingActivities] = js.undefined
 }
 object DescribeScalingActivitiesResponse {
   

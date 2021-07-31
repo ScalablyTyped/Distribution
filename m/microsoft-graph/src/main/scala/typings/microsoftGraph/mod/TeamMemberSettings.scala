@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamMemberSettings extends StObject {
   
   // If set to true, members can add and remove apps.
-  var allowAddRemoveApps: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowAddRemoveApps: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, members can add and update private channels.
-  var allowCreatePrivateChannels: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowCreatePrivateChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, members can add and update channels.
-  var allowCreateUpdateChannels: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowCreateUpdateChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, members can add, update, and remove connectors.
-  var allowCreateUpdateRemoveConnectors: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowCreateUpdateRemoveConnectors: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, members can add, update, and remove tabs.
-  var allowCreateUpdateRemoveTabs: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowCreateUpdateRemoveTabs: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, members can delete channels.
-  var allowDeleteChannels: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowDeleteChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object TeamMemberSettings {
   

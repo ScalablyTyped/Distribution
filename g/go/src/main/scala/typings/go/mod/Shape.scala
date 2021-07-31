@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -80,24 +79,26 @@ class Shape () extends GraphObject {
 }
 object Shape {
   
+  @JSImport("go", "Shape")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function defines a named arrowhead geometry.
     * @param {string} name the new arrowhead name must start with an uppercase letter, and must not be "None"
     * @param {Geometry} geo the Geometry for the arrowhead
     */
   /* static member */
-  @JSImport("go", "Shape.defineArrowheadGeometry")
-  @js.native
-  def defineArrowheadGeometry(name: String, geo: Geometry): Unit = js.native
+  @scala.inline
+  def defineArrowheadGeometry(name: String, geo: Geometry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], geo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * This static function defines a named arrowhead geometry.
     * @param {string} name the new arrowhead name must start with an uppercase letter, and must not be "None"
     * @param {string} pathstr a geometry path string that will be passed to Geometry.parse
     */
   /* static member */
-  @JSImport("go", "Shape.defineArrowheadGeometry")
-  @js.native
-  def defineArrowheadGeometry(name: String, pathstr: String): Unit = js.native
+  @scala.inline
+  def defineArrowheadGeometry(name: String, pathstr: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], pathstr.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This static function defines a named figure geometry generator for Shapes.
@@ -105,40 +106,39 @@ object Shape {
     * @param {function(Shape, number, number):Geometry} func returns a Geometry for the given Shape, width, and height
     */
   /* static member */
-  @JSImport("go", "Shape.defineFigureGenerator")
-  @js.native
+  @scala.inline
   def defineFigureGenerator(
     name: String,
     func: js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFigureGenerator")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * This static function defines a synonym for a named figure geometry generator.
     * @param {string} name the new figure name must start with an uppercase letter, and must not be "None"
     * @param {string} synonym an existing figure name
     */
   /* static member */
-  @JSImport("go", "Shape.defineFigureGenerator")
-  @js.native
-  def defineFigureGenerator(name: String, synonym: String): Unit = js.native
+  @scala.inline
+  def defineFigureGenerator(name: String, synonym: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFigureGenerator")(name.asInstanceOf[js.Any], synonym.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This static function returns a read-only Map of named arrowhead geometries.
     * @return {Map} the keys are arrowhead names; the values are Geometry objects
     */
   /* static member */
-  @JSImport("go", "Shape.getArrowheadGeometries")
-  @js.native
-  def getArrowheadGeometries(): Map[String, Geometry] = js.native
+  @scala.inline
+  def getArrowheadGeometries(): Map[String, Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrowheadGeometries")().asInstanceOf[Map[String, Geometry]]
   
   /**
     * This static function returns a read-only Map of named geometry generators.
     * @return {Map} the keys are figure names; the values are either synonymed names or generator functions
     */
   /* static member */
-  @JSImport("go", "Shape.getFigureGenerators")
-  @js.native
+  @scala.inline
   def getFigureGenerators(): Map[
     String, 
     js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFigureGenerators")().asInstanceOf[Map[
+    String, 
+    js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
+  ]]
 }

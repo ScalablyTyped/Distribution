@@ -8,26 +8,25 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a single item in a data pilot field. */
-@js.native
 trait DataPilotItem
-  extends XNamed
+  extends StObject
+     with XNamed
      with XPropertySet {
   
   /** specifies whether the item is hidden. */
-  var IsHidden: Boolean = js.native
+  var IsHidden: Boolean
   
   /**
     * specifies the item's position in its field if sorting is manual.
     * @since OOo 2.4
     */
-  var Position: Double = js.native
+  var Position: Double
   
   /** specifies whether the item is showing detail. */
-  var ShowDetail: Boolean = js.native
+  var ShowDetail: Boolean
 }
 object DataPilotItem {
   

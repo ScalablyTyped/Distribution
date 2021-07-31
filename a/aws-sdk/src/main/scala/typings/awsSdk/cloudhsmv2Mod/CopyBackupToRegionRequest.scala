@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyBackupToRegionRequest extends StObject {
   
   /**
     * The ID of the backup that will be copied to the destination region. 
     */
-  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId = js.native
+  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId
   
   /**
     * The AWS region that will contain your copied CloudHSM cluster backup.
     */
-  var DestinationRegion: Region = js.native
+  var DestinationRegion: Region
   
   /**
     * Tags to apply to the destination backup during creation. If you specify tags, only these tags will be applied to the destination backup. If you do not specify tags, the service copies tags from the source backup to the destination backup.
     */
-  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.undefined
 }
 object CopyBackupToRegionRequest {
   

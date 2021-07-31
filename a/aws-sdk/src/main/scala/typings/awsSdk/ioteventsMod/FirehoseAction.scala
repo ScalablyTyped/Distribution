@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseAction extends StObject {
   
   /**
     * The name of the Kinesis Data Firehose delivery stream where the data is written.
     */
-  var deliveryStreamName: DeliveryStreamName = js.native
+  var deliveryStreamName: DeliveryStreamName
   
   /**
     * You can configure the action payload when you send a message to an Amazon Kinesis Data Firehose delivery stream.
     */
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
   
   /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     */
-  var separator: js.UndefOr[FirehoseSeparator] = js.native
+  var separator: js.UndefOr[FirehoseSeparator] = js.undefined
 }
 object FirehoseAction {
   

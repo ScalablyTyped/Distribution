@@ -5,7 +5,6 @@ import typings.nomnom.NomnomInternal.Parser.Command
 import typings.nomnom.NomnomInternal.Parser.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NomnomInternal {
@@ -101,7 +100,6 @@ object NomnomInternal {
     */
   object Parser {
     
-    @js.native
     trait Command extends StObject {
       
       /**
@@ -109,19 +107,19 @@ object NomnomInternal {
         * @param func The callback function.
         * @returns The command.
         */
-      def callback(func: js.Function1[/* options */ js.Any, Unit]): Command = js.native
+      def callback(func: js.Function1[/* options */ js.Any, Unit]): Command
       
       /**
         * Sets the help string for the command.
         * @param help The help string.
         * @returns The command.
         */
-      def help(help: String): Command = js.native
+      def help(help: String): Command
       
       /**
         * The name of the command.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Sets an option of the command.
@@ -129,21 +127,21 @@ object NomnomInternal {
         * @param spec The specifiction of the option.
         * @returns The command.
         */
-      def option(name: String, spec: Option): Command = js.native
+      def option(name: String, spec: Option): Command
       
       /**
         * Sets the options of the command.
         * @param specs The specifications of the options.
         * @returns The command.
         */
-      def options(specs: StringDictionary[Option]): Command = js.native
+      def options(specs: StringDictionary[Option]): Command
       
       /**
         * Sets the usage string for the command.
         * @param usage The usage string.
         * @returns The command.
         */
-      def usage(usage: String): Command = js.native
+      def usage(usage: String): Command
     }
     object Command {
       
@@ -183,78 +181,77 @@ object NomnomInternal {
       }
     }
     
-    @js.native
     trait Option extends StObject {
       
       /**
         * The default value of the option.
         */
-      var default: js.UndefOr[js.Any] = js.native
+      var default: js.UndefOr[js.Any] = js.undefined
       
       /**
         * The abbreviated name of the option.
         */
-      var abbr: js.UndefOr[String] = js.native
+      var abbr: js.UndefOr[String] = js.undefined
       
       /**
         * A callback for the option.
         */
-      var callback: js.UndefOr[js.Function1[/* option */ js.Any, String]] = js.native
+      var callback: js.UndefOr[js.Function1[/* option */ js.Any, String]] = js.undefined
       
       /**
         * The choices for the option.
         */
-      var choices: js.UndefOr[js.Array[String]] = js.native
+      var choices: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Whether the option is a flag.
         */
-      var flag: js.UndefOr[Boolean] = js.native
+      var flag: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The full name of the option.
         */
-      var full: js.UndefOr[String] = js.native
+      var full: js.UndefOr[String] = js.undefined
       
       /**
         * A help string for the option.
         */
-      var help: js.UndefOr[String] = js.native
+      var help: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the option is hidden.
         */
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the option is a list.
         */
-      var list: js.UndefOr[Boolean] = js.native
+      var list: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A string to be used in the usage printout.
         */
-      var metavar: js.UndefOr[String] = js.native
+      var metavar: js.UndefOr[String] = js.undefined
       
       /**
         * The position of the option if it's a positional argument.
         */
-      var position: js.UndefOr[Double] = js.native
+      var position: js.UndefOr[Double] = js.undefined
       
       /**
         * Whether the option is required.
         */
-      var required: js.UndefOr[Boolean] = js.native
+      var required: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A shorthand for abbr, full, and metavar.
         */
-      var string: js.UndefOr[String] = js.native
+      var string: js.UndefOr[String] = js.undefined
       
       /**
         * If you don't want the option JSON-parsed, specify type "string".
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Option {
       

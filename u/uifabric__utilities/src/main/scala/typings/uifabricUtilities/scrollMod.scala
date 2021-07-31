@@ -5,45 +5,39 @@ import typings.std.Window
 import typings.uifabricUtilities.eventGroupMod.EventGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollMod {
+  
+  @JSImport("@uifabric/utilities/lib/scroll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uifabric/utilities/lib/scroll", "DATA_IS_SCROLLABLE_ATTRIBUTE")
   @js.native
   val DATA_IS_SCROLLABLE_ATTRIBUTE: /* "data-is-scrollable" */ String = js.native
   
-  @JSImport("@uifabric/utilities/lib/scroll", "allowOverscrollOnElement")
-  @js.native
-  def allowOverscrollOnElement(element: Null, events: EventGroup): Unit = js.native
-  @JSImport("@uifabric/utilities/lib/scroll", "allowOverscrollOnElement")
-  @js.native
-  def allowOverscrollOnElement(element: HTMLElement, events: EventGroup): Unit = js.native
+  @scala.inline
+  def allowOverscrollOnElement(element: Null, events: EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def allowOverscrollOnElement(element: HTMLElement, events: EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/scroll", "allowScrollOnElement")
-  @js.native
-  def allowScrollOnElement(element: Null, events: EventGroup): Unit = js.native
-  @JSImport("@uifabric/utilities/lib/scroll", "allowScrollOnElement")
-  @js.native
-  def allowScrollOnElement(element: HTMLElement, events: EventGroup): Unit = js.native
+  @scala.inline
+  def allowScrollOnElement(element: Null, events: EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def allowScrollOnElement(element: HTMLElement, events: EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/scroll", "disableBodyScroll")
-  @js.native
-  def disableBodyScroll(): Unit = js.native
+  @scala.inline
+  def disableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")().asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/scroll", "enableBodyScroll")
-  @js.native
-  def enableBodyScroll(): Unit = js.native
+  @scala.inline
+  def enableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")().asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/scroll", "findScrollableParent")
-  @js.native
-  def findScrollableParent(): js.UndefOr[HTMLElement | Window | Null] = js.native
-  @JSImport("@uifabric/utilities/lib/scroll", "findScrollableParent")
-  @js.native
-  def findScrollableParent(startingElement: HTMLElement): js.UndefOr[HTMLElement | Window | Null] = js.native
+  @scala.inline
+  def findScrollableParent(): js.UndefOr[HTMLElement | Window | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")().asInstanceOf[js.UndefOr[HTMLElement | Window | Null]]
+  @scala.inline
+  def findScrollableParent(startingElement: HTMLElement): js.UndefOr[HTMLElement | Window | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")(startingElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement | Window | Null]]
   
-  @JSImport("@uifabric/utilities/lib/scroll", "getScrollbarWidth")
-  @js.native
-  def getScrollbarWidth(): Double = js.native
+  @scala.inline
+  def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
 }

@@ -2,7 +2,6 @@ package typings.hooker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,15 +9,33 @@ object global {
   @JSGlobal("HookerFilter")
   @js.native
   class HookerFilter ()
-    extends typings.hooker.HookerFilter
+    extends StObject
+       with typings.hooker.HookerFilter {
+    
+    /* CompleteClass */
+    var args: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    var context: js.Any = js.native
+  }
   
   @JSGlobal("HookerOverride")
   @js.native
   class HookerOverride ()
-    extends typings.hooker.HookerOverride
+    extends StObject
+       with typings.hooker.HookerOverride {
+    
+    /* CompleteClass */
+    var value: js.Any = js.native
+  }
   
   @JSGlobal("HookerPreempt")
   @js.native
   class HookerPreempt ()
-    extends typings.hooker.HookerPreempt
+    extends StObject
+       with typings.hooker.HookerPreempt {
+    
+    /* CompleteClass */
+    var value: js.Any = js.native
+  }
 }

@@ -15,7 +15,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipHostTypesMod {
@@ -27,34 +26,37 @@ object tooltipHostTypesMod {
   object TooltipOverflowMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TooltipOverflowMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[TooltipOverflowMode & Double] = js.native
     
     /** Only show tooltip if parent DOM element is overflowing */
     @js.native
-    sealed trait Parent extends TooltipOverflowMode
-    /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent with Double = js.native
+    sealed trait Parent
+      extends StObject
+         with TooltipOverflowMode
+    /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent & Double = js.native
     
     /**
       * Only show tooltip if tooltip host's content is overflowing.
       * Note that this does not check the children for overflow, only the TooltipHost root.
       */
     @js.native
-    sealed trait Self extends TooltipOverflowMode
-    /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self with Double = js.native
+    sealed trait Self
+      extends StObject
+         with TooltipOverflowMode
+    /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self & Double = js.native
   }
   
-  @js.native
   trait ITooltipHost extends StObject {
     
     /**
       * Dismisses the tooltip.
       */
-    def dismiss(): Unit = js.native
+    def dismiss(): Unit
     
     /**
       * Shows the tooltip.
       */
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ITooltipHost {
     
@@ -75,59 +77,60 @@ object tooltipHostTypesMod {
     }
   }
   
-  @js.native
-  trait ITooltipHostProps extends HTMLAttributes[HTMLDivElement | TooltipHostBase] {
+  trait ITooltipHostProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement | TooltipHostBase] {
     
     /**
       * Additional properties to pass through for Callout.
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Number of milliseconds to delay closing the tooltip, so that the user has time to hover over
       * the tooltip and interact with it. Hovering over the tooltip will count as hovering over the
       * host, so that the tooltip will stay open if the user is actively interacting with it.
       */
-    var closeDelay: js.UndefOr[Double] = js.native
+    var closeDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional callback to access the ITooltipHost interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ITooltipHost]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ITooltipHost]] = js.undefined
     
     /**
       * Content to display in the Tooltip.
       */
-    var content: js.UndefOr[String | Element | js.Array[Element]] = js.native
+    var content: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
     
     /**
       * Length of delay before showing the tooltip on hover.
       * @defaultvalue TooltipDelay.medium
       */
-    var delay: js.UndefOr[TooltipDelay] = js.native
+    var delay: js.UndefOr[TooltipDelay] = js.undefined
     
     /**
       * How the tooltip should be anchored to its `targetElement`.
       * @defaultvalue DirectionalHint.topCenter
       */
-    var directionalHint: js.UndefOr[DirectionalHint] = js.native
+    var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * How the element should be positioned in RTL layouts.
       * If not specified, a mirror of `directionalHint` will be used.
       */
-    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.native
+    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * Class name to apply to tooltip host.
       */
-    var hostClassName: js.UndefOr[String] = js.native
+    var hostClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Notifies when tooltip becomes visible or hidden, whatever the trigger was.
       */
-    var onTooltipToggle: js.UndefOr[js.Function1[/* isTooltipVisible */ Boolean, Unit]] = js.native
+    var onTooltipToggle: js.UndefOr[js.Function1[/* isTooltipVisible */ Boolean, Unit]] = js.undefined
     
     /**
       * If this is unset (the default), the tooltip is always shown even if there's no overflow.
@@ -137,7 +140,7 @@ object tooltipHostTypesMod {
       *
       * Note that even with `Self` mode, the TooltipHost *does not* check whether any children have overflow.
       */
-    var overflowMode: js.UndefOr[TooltipOverflowMode] = js.native
+    var overflowMode: js.UndefOr[TooltipOverflowMode] = js.undefined
     
     /**
       * Whether or not to mark the TooltipHost root element as described by the tooltip.
@@ -145,22 +148,22 @@ object tooltipHostTypesMod {
       * the Tooltip) and mark the appropriate element as `aria-describedby` the `id`.
       * @defaultvalue true
       */
-    var setAriaDescribedBy: js.UndefOr[Boolean] = js.native
+    var setAriaDescribedBy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]] = js.undefined
     
     /**
       * Theme provided by higher-order component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Additional properties to pass through for Tooltip.
       */
-    var tooltipProps: js.UndefOr[ITooltipProps] = js.native
+    var tooltipProps: js.UndefOr[ITooltipProps] = js.undefined
   }
   object ITooltipHostProps {
     
@@ -268,12 +271,11 @@ object tooltipHostTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipHostStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ITooltipHostStyleProps {
     
@@ -297,13 +299,12 @@ object tooltipHostTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipHostStyles extends StObject {
     
     /**
       * Style for the host wrapper element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ITooltipHostStyles {
     

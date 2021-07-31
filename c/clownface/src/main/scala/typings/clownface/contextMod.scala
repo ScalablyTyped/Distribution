@@ -6,7 +6,6 @@ import typings.rdfJs.mod.QuadGraph
 import typings.rdfJs.mod.Term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -14,19 +13,27 @@ object contextMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("clownface/lib/Context", JSImport.Namespace)
   @js.native
-  class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected () extends StObject {
-    def this(dataset: D, graph: js.UndefOr[QuadGraph], value: js.Any) = this()
+  class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected ()
+    extends StObject
+       with Context[D, T] {
+    def this(dataset: D, graph: Unit, value: js.Any) = this()
+    def this(dataset: D, graph: QuadGraph, value: js.Any) = this()
+    
+    /* CompleteClass */
+    var dataset: D = js.native
+    
+    /* CompleteClass */
+    var term: T = js.native
   }
   
   // tslint:disable-next-line no-unnecessary-class
-  @js.native
   trait Context[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] extends StObject {
     
-    var dataset: D = js.native
+    var dataset: D
     
-    var graph: js.UndefOr[QuadGraph] = js.native
+    var graph: js.UndefOr[QuadGraph] = js.undefined
     
-    var term: T = js.native
+    var term: T
   }
   object Context {
     
@@ -37,7 +44,7 @@ object contextMod {
     }
     
     @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[_, _], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] (val x: Self with (Context[D, T])) extends AnyVal {
+    implicit class ContextMutableBuilder[Self <: Context[?, ?], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] (val x: Self & (Context[D, T])) extends AnyVal {
       
       @scala.inline
       def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])

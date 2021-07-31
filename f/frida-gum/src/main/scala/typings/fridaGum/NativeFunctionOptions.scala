@@ -2,19 +2,17 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeFunctionOptions extends StObject {
   
-  var abi: js.UndefOr[NativeABI] = js.native
+  var abi: js.UndefOr[NativeABI] = js.undefined
   
-  var exceptions: js.UndefOr[ExceptionsBehavior] = js.native
+  var exceptions: js.UndefOr[ExceptionsBehavior] = js.undefined
   
-  var scheduling: js.UndefOr[SchedulingBehavior] = js.native
+  var scheduling: js.UndefOr[SchedulingBehavior] = js.undefined
   
-  var traps: js.UndefOr[CodeTraps] = js.native
+  var traps: js.UndefOr[CodeTraps] = js.undefined
 }
 object NativeFunctionOptions {
   

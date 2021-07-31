@@ -3,7 +3,6 @@ package typings.durandal
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,39 +16,34 @@ object binderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("durandal/binder", "bind")
-  @js.native
-  def bind(obj: js.Any, view: HTMLElement): BindingInstruction = js.native
+  @scala.inline
+  def bind(obj: js.Any, view: HTMLElement): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(obj.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   
-  @JSImport("durandal/binder", "bindContext")
-  @js.native
+  @scala.inline
   def bindContext(
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
     view: HTMLElement
-  ): BindingInstruction = js.native
-  @JSImport("durandal/binder", "bindContext")
-  @js.native
-  def bindContext(
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
-    view: HTMLElement,
-    obj: js.UndefOr[scala.Nothing],
-    dataAlias: String
-  ): BindingInstruction = js.native
-  @JSImport("durandal/binder", "bindContext")
-  @js.native
+  ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
+  @scala.inline
   def bindContext(
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
     view: HTMLElement,
     obj: js.Any
-  ): BindingInstruction = js.native
-  @JSImport("durandal/binder", "bindContext")
-  @js.native
+  ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
+  @scala.inline
   def bindContext(
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
     view: HTMLElement,
     obj: js.Any,
     dataAlias: String
-  ): BindingInstruction = js.native
+  ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], dataAlias.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
+  @scala.inline
+  def bindContext(
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
+    view: HTMLElement,
+    obj: Unit,
+    dataAlias: String
+  ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], dataAlias.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   
   @JSImport("durandal/binder", "binding")
   @js.native
@@ -68,9 +62,8 @@ object binderMod {
     x: js.Function3[/* data */ js.Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binding")(x.asInstanceOf[js.Any])
   
-  @JSImport("durandal/binder", "getBindingInstruction")
-  @js.native
-  def getBindingInstruction(view: HTMLElement): BindingInstruction = js.native
+  @scala.inline
+  def getBindingInstruction(view: HTMLElement): BindingInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingInstruction")(view.asInstanceOf[js.Any]).asInstanceOf[BindingInstruction]
   
   @JSImport("durandal/binder", "throwOnErrors")
   @js.native
@@ -78,10 +71,9 @@ object binderMod {
   @scala.inline
   def throwOnErrors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwOnErrors")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait BindingInstruction extends StObject {
     
-    var applyBindings: Boolean = js.native
+    var applyBindings: Boolean
   }
   object BindingInstruction {
     

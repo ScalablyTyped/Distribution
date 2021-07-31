@@ -3,20 +3,20 @@ package typings.awsSdkTypes.middlewareMod
 import typings.awsSdkTypes.awsSdkTypesStrings.deserialize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeserializeHandlerOptions extends HandlerOptions {
+trait DeserializeHandlerOptions
+  extends StObject
+     with HandlerOptions {
   
   @JSName("step")
-  var step_DeserializeHandlerOptions: deserialize = js.native
+  var step_DeserializeHandlerOptions: deserialize
 }
 object DeserializeHandlerOptions {
   
   @scala.inline
-  def apply(step: deserialize): DeserializeHandlerOptions = {
-    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
+  def apply(): DeserializeHandlerOptions = {
+    val __obj = js.Dynamic.literal(step = "deserialize")
     __obj.asInstanceOf[DeserializeHandlerOptions]
   }
   

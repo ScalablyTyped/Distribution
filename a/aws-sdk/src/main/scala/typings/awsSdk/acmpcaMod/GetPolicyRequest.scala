@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Number (ARN) of the private CA that will have its policy retrieved. You can find the CA's ARN by calling the ListCertificateAuthorities action. 
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
 }
 object GetPolicyRequest {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appstateMod {
+  
+  @JSImport("googleapis/build/src/apis/appstate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -39,12 +42,11 @@ object appstateMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/appstate", "appstate")
-  @js.native
-  def appstate(options: Options): Appstate = js.native
-  @JSImport("googleapis/build/src/apis/appstate", "appstate")
-  @js.native
-  def appstate_v1(version: v1): Appstate = js.native
+  @scala.inline
+  def appstate(options: Options): Appstate = ^.asInstanceOf[js.Dynamic].applyDynamic("appstate")(options.asInstanceOf[js.Any]).asInstanceOf[Appstate]
+  
+  @scala.inline
+  def appstate_v1(version: v1): Appstate = ^.asInstanceOf[js.Dynamic].applyDynamic("appstate")(version.asInstanceOf[js.Any]).asInstanceOf[Appstate]
   
   object auth extends Shortcut {
     
@@ -75,9 +77,12 @@ object appstateMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/appstate", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/appstate", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

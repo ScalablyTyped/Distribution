@@ -4,37 +4,35 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitConflict extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var conflictId: Double = js.native
+  var conflictId: Double
   
-  var conflictPath: String = js.native
+  var conflictPath: String
   
-  var conflictType: GitConflictType = js.native
+  var conflictType: GitConflictType
   
-  var mergeBaseCommit: GitCommitRef = js.native
+  var mergeBaseCommit: GitCommitRef
   
-  var mergeOrigin: GitMergeOriginRef = js.native
+  var mergeOrigin: GitMergeOriginRef
   
-  var mergeSourceCommit: GitCommitRef = js.native
+  var mergeSourceCommit: GitCommitRef
   
-  var mergeTargetCommit: GitCommitRef = js.native
+  var mergeTargetCommit: GitCommitRef
   
-  var resolutionError: GitResolutionError = js.native
+  var resolutionError: GitResolutionError
   
-  var resolutionStatus: GitResolutionStatus = js.native
+  var resolutionStatus: GitResolutionStatus
   
-  var resolvedBy: IdentityRef = js.native
+  var resolvedBy: IdentityRef
   
-  var resolvedDate: Date = js.native
+  var resolvedDate: Date
   
-  var url: String = js.native
+  var url: String
 }
 object GitConflict {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectionFilter extends StObject {
   
   /**
     * Sets the minimum height of the word bounding box. Words with bounding box heights lesser than this value will be excluded from the result. Value is relative to the video frame height.
     */
-  var MinBoundingBoxHeight: js.UndefOr[BoundingBoxHeight] = js.native
+  var MinBoundingBoxHeight: js.UndefOr[BoundingBoxHeight] = js.undefined
   
   /**
     * Sets the minimum width of the word bounding box. Words with bounding boxes widths lesser than this value will be excluded from the result. Value is relative to the video frame width.
     */
-  var MinBoundingBoxWidth: js.UndefOr[BoundingBoxWidth] = js.native
+  var MinBoundingBoxWidth: js.UndefOr[BoundingBoxWidth] = js.undefined
   
   /**
     * Sets confidence of word detection. Words with detection confidence below this will be excluded from the result. Values should be between 0.5 and 1 as Text in Video will not return any result below 0.5.
     */
-  var MinConfidence: js.UndefOr[Percent] = js.native
+  var MinConfidence: js.UndefOr[Percent] = js.undefined
 }
 object DetectionFilter {
   

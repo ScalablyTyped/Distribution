@@ -2,145 +2,145 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource data element
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait DataElement extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait DataElement
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'copyright'.
     */
-  var _copyright: js.UndefOr[Element] = js.native
+  var _copyright: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.native
+  var _experimental: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.native
+  var _publisher: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'stringency'.
     */
-  var _stringency: js.UndefOr[Element] = js.native
+  var _stringency: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Use and/or publishing restrictions
     */
-  var copyright: js.UndefOr[markdown] = js.native
+  var copyright: js.UndefOr[markdown] = js.undefined
   
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Definition of element
     */
-  var element: js.Array[ElementDefinition] = js.native
+  var element: js.Array[ElementDefinition]
   
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.native
+  var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional identifier for the data element
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Intended jurisdiction for data element (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * External specification mapped to
     */
-  var mapping: js.UndefOr[js.Array[DataElementMapping]] = js.native
+  var mapping: js.UndefOr[js.Array[DataElementMapping]] = js.undefined
   
   /**
     * Name for this data element (computer friendly)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * draft | active | retired | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * comparable | fully-specified | equivalent | convertable | scaleable | flexible
     */
-  var stringency: js.UndefOr[code] = js.native
+  var stringency: js.UndefOr[code] = js.undefined
   
   /**
     * Name for this data element (human friendly)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Logical URI to reference this data element (globally unique)
     */
-  var url: js.UndefOr[uri] = js.native
+  var url: js.UndefOr[uri] = js.undefined
   
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
     * Business version of the data element
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DataElement {
   

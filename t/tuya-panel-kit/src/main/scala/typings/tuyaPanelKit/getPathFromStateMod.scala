@@ -6,25 +6,25 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.PathConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPathFromStateMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/core/getPathFromState", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/core/getPathFromState", JSImport.Namespace)
   @js.native
-  def default(state: State): String = js.native
-  @JSImport("tuya-panel-kit/@react-navigation/core/getPathFromState", JSImport.Default)
-  @js.native
-  def default(state: State, options: Options): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(state: State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(state: State, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
-  @js.native
   trait Options extends StObject {
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap = js.native
+    var screens: PathConfigMap
   }
   object Options {
     

@@ -3,18 +3,18 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object media {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Method] Returns the value of src
       * @returns Object
       */
-    var getSrc: js.UndefOr[js.Function0[_]] = js.native
+    var getSrc: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -24,12 +24,12 @@ object media {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of src
       * @param src Object The new value.
       */
-    var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[js.Any], Unit]] = js.native
+    var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -43,7 +43,7 @@ object media {
     implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetSrc(value: () => _): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
+      def setGetSrc(value: () => js.Any): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSrcUndefined: Self = StObject.set(x, "getSrc", js.undefined)
@@ -62,11 +62,12 @@ object media {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract {
+  trait ICordova
+    extends StObject
+       with IAbstract {
     
     /** [Property] (String) */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object ICordova {
     
@@ -87,11 +88,12 @@ object media {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract {
+  trait IPhoneGap
+    extends StObject
+       with IAbstract {
     
     /** [Property] (String) */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object IPhoneGap {
     

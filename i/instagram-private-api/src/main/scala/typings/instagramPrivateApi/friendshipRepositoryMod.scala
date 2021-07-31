@@ -12,7 +12,6 @@ import typings.instagramPrivateApi.setBestiesInputMod.SetBestiesInput
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object friendshipRepositoryMod {
@@ -62,7 +61,7 @@ object friendshipRepositoryMod {
     def show(id: String): js.Promise[FriendshipRepositoryShowResponseRootObject] = js.native
     def show(id: Double): js.Promise[FriendshipRepositoryShowResponseRootObject] = js.native
     
-    def showMany(userIds: js.Array[Double | String]): js.Promise[_] = js.native
+    def showMany(userIds: js.Array[Double | String]): js.Promise[js.Any] = js.native
     
     def unblock(id: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     def unblock(id: String, mediaIdAttribution: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native

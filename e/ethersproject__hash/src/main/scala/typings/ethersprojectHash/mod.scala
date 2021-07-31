@@ -7,10 +7,13 @@ import typings.ethersprojectHash.anon.Domain
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ethersproject/hash", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/hash", "_TypedDataEncoder")
   @js.native
@@ -21,64 +24,67 @@ object mod {
   /* static members */
   object TypedDataEncoder {
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.encode")
+    @JSImport("@ethersproject/hash", "_TypedDataEncoder")
     @js.native
-    def encode(domain: TypedDataDomain, types: Record[String, js.Array[TypedDataField]], value: Record[String, _]): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.from")
-    @js.native
-    def from(types: Record[String, js.Array[TypedDataField]]): typings.ethersprojectHash.typedDataMod.TypedDataEncoder = js.native
+    @scala.inline
+    def encode(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.getPayload")
-    @js.native
-    def getPayload(domain: TypedDataDomain, types: Record[String, js.Array[TypedDataField]], value: Record[String, _]): js.Any = js.native
+    @scala.inline
+    def from(types: Record[String, js.Array[TypedDataField]]): typings.ethersprojectHash.typedDataMod.TypedDataEncoder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(types.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectHash.typedDataMod.TypedDataEncoder]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.getPrimaryType")
-    @js.native
-    def getPrimaryType(types: Record[String, js.Array[TypedDataField]]): String = js.native
+    @scala.inline
+    def getPayload(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.hash")
-    @js.native
-    def hash(domain: TypedDataDomain, types: Record[String, js.Array[TypedDataField]], value: Record[String, _]): String = js.native
+    @scala.inline
+    def getPrimaryType(types: Record[String, js.Array[TypedDataField]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrimaryType")(types.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.hashDomain")
-    @js.native
-    def hashDomain(domain: TypedDataDomain): String = js.native
+    @scala.inline
+    def hash(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.hashStruct")
-    @js.native
-    def hashStruct(name: String, types: Record[String, js.Array[TypedDataField]], value: Record[String, _]): String = js.native
+    @scala.inline
+    def hashDomain(domain: TypedDataDomain): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@ethersproject/hash", "_TypedDataEncoder.resolveNames")
-    @js.native
+    @scala.inline
+    def hashStruct(name: String, types: Record[String, js.Array[TypedDataField]], value: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashStruct")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
     def resolveNames(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
-      value: Record[String, _],
+      value: Record[String, js.Any],
       resolveName: js.Function1[/* name */ String, js.Promise[String]]
-    ): js.Promise[Domain] = js.native
+    ): js.Promise[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNames")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolveName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Domain]]
   }
   
-  @JSImport("@ethersproject/hash", "hashMessage")
-  @js.native
-  def hashMessage(message: String): String = js.native
-  @JSImport("@ethersproject/hash", "hashMessage")
-  @js.native
-  def hashMessage(message: Bytes): String = js.native
+  @scala.inline
+  def hashMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hashMessage(message: Bytes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/hash", "id")
-  @js.native
-  def id(text: String): String = js.native
+  @scala.inline
+  def id(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/hash", "isValidName")
-  @js.native
-  def isValidName(name: String): Boolean = js.native
+  @scala.inline
+  def isValidName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@ethersproject/hash", "messagePrefix")
   @js.native
   val messagePrefix: /* "\\u0019Ethereum Signed Message:\n" */ String = js.native
   
-  @JSImport("@ethersproject/hash", "namehash")
-  @js.native
-  def namehash(name: String): String = js.native
+  @scala.inline
+  def namehash(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namehash")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

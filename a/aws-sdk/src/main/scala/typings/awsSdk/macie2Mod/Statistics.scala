@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statistics extends StObject {
   
   /**
     * The approximate number of objects that the job has yet to process during its current run.
     */
-  var approximateNumberOfObjectsToProcess: js.UndefOr[double] = js.native
+  var approximateNumberOfObjectsToProcess: js.UndefOr[double] = js.undefined
   
   /**
     * The number of times that the job has run.
     */
-  var numberOfRuns: js.UndefOr[double] = js.native
+  var numberOfRuns: js.UndefOr[double] = js.undefined
 }
 object Statistics {
   

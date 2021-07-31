@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesUsage extends Generic {
+trait NodesUsage
+  extends StObject
+     with Generic {
   
-  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object NodesUsage {
   

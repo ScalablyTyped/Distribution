@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("GoToLastDataRecordCommand")
 @js.native
 class GoToLastDataRecordCommand ()
-  extends typings.devexpressWeb.GoToLastDataRecordCommand
+  extends StObject
+     with typings.devexpressWeb.GoToLastDataRecordCommand {
+  
+  /**
+    * Executes the GoToLastDataRecordCommand command.
+    */
+  /* CompleteClass */
+  override def execute(): Boolean = js.native
+  
+  /**
+    * Gets information about the command's state.
+    */
+  /* CompleteClass */
+  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
+}

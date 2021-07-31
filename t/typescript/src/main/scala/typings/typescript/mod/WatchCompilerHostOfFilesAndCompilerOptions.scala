@@ -2,14 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Host to create watch with root files and options
   */
 @js.native
-trait WatchCompilerHostOfFilesAndCompilerOptions[T /* <: BuilderProgram */] extends WatchCompilerHost[T] {
+trait WatchCompilerHostOfFilesAndCompilerOptions[T /* <: BuilderProgram */]
+  extends StObject
+     with WatchCompilerHost[T] {
   
   /** Compiler options */
   var options: CompilerOptions = js.native

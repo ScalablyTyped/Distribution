@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,18 +12,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : JSSha512Static = js.native
   
-  @js.native
   trait Hash extends StObject {
     
-    def array(): js.Array[Double] = js.native
+    def array(): js.Array[Double]
     
-    def arrayBuffer(): ArrayBuffer = js.native
+    def arrayBuffer(): ArrayBuffer
     
-    def digest(): js.Array[Double] = js.native
+    def digest(): js.Array[Double]
     
-    def hex(): String = js.native
+    def hex(): String
     
-    def update(messageToHash: String): Hash = js.native
+    def update(messageToHash: String): Hash
   }
   object Hash {
     
@@ -93,7 +91,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait JSSha512Static extends HashStatic {
+  trait JSSha512Static
+    extends StObject
+       with HashStatic {
     
     def sha384(messageToHash: String): String = js.native
     @JSName("sha384")

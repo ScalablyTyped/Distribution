@@ -18,10 +18,13 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-md/transition", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/transition", "COLLAPSE_TIMEOUT")
   @js.native
@@ -37,11 +40,14 @@ object mod {
   
   object Collapse {
     
-    @JSImport("@react-md/transition", "Collapse")
-    @js.native
+    @scala.inline
     def apply(
       hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseProps
-    ): ReactElement | Null = js.native
+    ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("@react-md/transition", "Collapse")
+    @js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -195,11 +201,14 @@ object mod {
   
   object ScaleTransition {
     
+    @scala.inline
+    def apply(
+      hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/transition", "ScaleTransition")
     @js.native
-    def apply(
-      hasVisibleChildrenClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -275,40 +284,38 @@ object mod {
   @js.native
   val UNMOUNT: /* "unmount" */ String = js.native
   
-  @JSImport("@react-md/transition", "useCSSTransition")
-  @js.native
+  @scala.inline
   def useCSSTransition[E /* <: HTMLElement */](
-    hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNameClassNamesRef: CSSTransitionOptions[E]
-  ): CSSTransitionReturnValue[E] = js.native
+    hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef: CSSTransitionOptions[E]
+  ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   
-  @JSImport("@react-md/transition", "useCollapse")
-  @js.native
-  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = js.native
-  @JSImport("@react-md/transition", "useCollapse")
-  @js.native
+  @scala.inline
+  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  @scala.inline
   def useCollapse[E /* <: HTMLElement */](
     collapsed: Boolean,
     hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseOptions[E]
-  ): ReturnValue[E] = js.native
+  ): ReturnValue[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any], hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[E]]
   
-  @JSImport("@react-md/transition", "useCrossFade")
-  @js.native
-  def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = js.native
-  @JSImport("@react-md/transition", "useCrossFade")
-  @js.native
+  @scala.inline
+  def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")().asInstanceOf[CSSTransitionReturnValue[E]]
+  @scala.inline
   def useCrossFade[E /* <: HTMLElement */](
     hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: CrossFadeOptions[E]
-  ): CSSTransitionReturnValue[E] = js.native
+  ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")(hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   
-  @JSImport("@react-md/transition", "useFixedPositioning")
-  @js.native
+  @scala.inline
   def useFixedPositioning(
-    hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds: FixedPositioningOptions
-  ): typings.reactMdTransition.useFixedPositioningMod.ReturnValue = js.native
+    hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds: FixedPositioningOptions
+  ): typings.reactMdTransition.useFixedPositioningMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdTransition.useFixedPositioningMod.ReturnValue]
   
-  @JSImport("@react-md/transition", "useTransition")
-  @js.native
+  @scala.inline
   def useTransition[E /* <: HTMLElement */](
-    hasAppearRepaintTemporaryTransitionInTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedRef: TransitionOptions[E]
-  ): TransitionReturnValue[E] = js.native
+    hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef: TransitionOptions[E]
+  ): TransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef.asInstanceOf[js.Any]).asInstanceOf[TransitionReturnValue[E]]
+  
+  @js.native
+  trait Rendered
+    extends StObject
+       with typings.std.Boolean
 }

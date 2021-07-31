@@ -6,23 +6,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipToMainContentMod {
   
   @JSImport("@react-md/link/types/SkipToMainContent", "SkipToMainContent")
   @js.native
-  val SkipToMainContent: ForwardRefExoticComponent[SkipToMainContentProps with RefAttributes[HTMLAnchorElement]] = js.native
+  val SkipToMainContent: ForwardRefExoticComponent[SkipToMainContentProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  @js.native
-  trait SkipToMainContentProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+  trait SkipToMainContentProps
+    extends StObject
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
     /**
       * The id to use for the `<main>` content that should be focused once this
       * link is clicked.
       */
-    var mainId: String = js.native
+    var mainId: String
     
     /**
       * Boolean if the skip to main content link should be unstyled so that you can
@@ -34,7 +34,7 @@ object skipToMainContentMod {
       * The `$rmd-link-skip-styles` and `$rmd-link-skip-active-styles` will not be
       * applied.
       */
-    var unstyled: js.UndefOr[Boolean] = js.native
+    var unstyled: js.UndefOr[Boolean] = js.undefined
   }
   object SkipToMainContentProps {
     

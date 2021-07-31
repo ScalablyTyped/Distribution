@@ -7,21 +7,19 @@ import typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.markerClick
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastSelected extends StObject {
   
   var lastSelected: SelectChangeEventData | (SelectChangeEvent[
     markerClick | listElementClick, 
     (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
-  ]) | Null = js.native
+  ]) | Null
   
   var selected: SelectChangeEventData | (SelectChangeEvent[
     markerClick | listElementClick, 
     (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
-  ]) = js.native
+  ])
 }
 object LastSelected {
   
@@ -32,7 +30,7 @@ object LastSelected {
       (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
     ])
   ): LastSelected = {
-    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any], lastSelected = null)
     __obj.asInstanceOf[LastSelected]
   }
   

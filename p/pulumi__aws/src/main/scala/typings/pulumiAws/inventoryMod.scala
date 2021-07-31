@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inventoryMod {
@@ -72,6 +71,10 @@ object inventoryMod {
   /* static members */
   object Inventory {
     
+    @JSImport("@pulumi/aws/s3/inventory", "Inventory")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Inventory resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,71 +84,65 @@ object inventoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/inventory", "Inventory.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Inventory = js.native
-    @JSImport("@pulumi/aws/s3/inventory", "Inventory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Inventory = js.native
-    @JSImport("@pulumi/aws/s3/inventory", "Inventory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InventoryState): Inventory = js.native
-    @JSImport("@pulumi/aws/s3/inventory", "Inventory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): Inventory = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InventoryState): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
     
     /**
       * Returns true if the given object is an instance of Inventory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/inventory", "Inventory.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean]
   }
   
-  @js.native
   trait InventoryArgs extends StObject {
     
     /**
       * The name of the source bucket that inventory lists the objects for.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Contains information about where to publish the inventory results (documented below).
       */
-    val destination: Input[typings.pulumiAws.inputMod.s3.InventoryDestination] = js.native
+    val destination: Input[typings.pulumiAws.inputMod.s3.InventoryDestination]
     
     /**
       * Specifies whether the inventory is enabled or disabled.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryFilter]] = js.undefined
     
     /**
       * Object versions to include in the inventory list. Valid values: `All`, `Current`.
       */
-    val includedObjectVersions: Input[String] = js.native
+    val includedObjectVersions: Input[String]
     
     /**
       * Unique identifier of the inventory configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of optional fields that are included in the inventory results.
       * Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
       */
-    val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specifies the schedule for generating inventory results (documented below).
       */
-    val schedule: Input[typings.pulumiAws.inputMod.s3.InventorySchedule] = js.native
+    val schedule: Input[typings.pulumiAws.inputMod.s3.InventorySchedule]
   }
   object InventoryArgs {
     
@@ -204,49 +201,48 @@ object inventoryMod {
     }
   }
   
-  @js.native
   trait InventoryState extends StObject {
     
     /**
       * The name of the source bucket that inventory lists the objects for.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contains information about where to publish the inventory results (documented below).
       */
-    val destination: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryDestination]] = js.native
+    val destination: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryDestination]] = js.undefined
     
     /**
       * Specifies whether the inventory is enabled or disabled.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventoryFilter]] = js.undefined
     
     /**
       * Object versions to include in the inventory list. Valid values: `All`, `Current`.
       */
-    val includedObjectVersions: js.UndefOr[Input[String]] = js.native
+    val includedObjectVersions: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Unique identifier of the inventory configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of optional fields that are included in the inventory results.
       * Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
       */
-    val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specifies the schedule for generating inventory results (documented below).
       */
-    val schedule: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventorySchedule]] = js.native
+    val schedule: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.InventorySchedule]] = js.undefined
   }
   object InventoryState {
     

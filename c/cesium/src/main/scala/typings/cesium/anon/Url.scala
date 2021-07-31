@@ -4,19 +4,17 @@ import typings.cesium.mod.GoogleEarthEnterpriseMetadata
 import typings.cesium.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Url extends StObject {
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var metadata: GoogleEarthEnterpriseMetadata = js.native
+  var metadata: GoogleEarthEnterpriseMetadata
   
-  var url: Resource | String = js.native
+  var url: Resource | String
 }
 object Url {
   

@@ -6,28 +6,28 @@ import typings.stylefire.typesMod.State
 import typings.stylefire.typesMod.Styler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssMod {
   
-  @JSImport("stylefire/lib/css", JSImport.Default)
+  @JSImport("stylefire/lib/css", JSImport.Namespace)
   @js.native
-  def default(element: HTMLElement): Styler = js.native
-  @JSImport("stylefire/lib/css", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, hasEnableHardwareAccelerationAllowTransformNoneProps: Props): Styler = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(element: HTMLElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  @scala.inline
+  def default(element: HTMLElement, hasEnableHardwareAccelerationAllowTransformNoneProps: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasEnableHardwareAccelerationAllowTransformNoneProps.asInstanceOf[js.Any])).asInstanceOf[Styler]
+  
   trait CssStylerOptions extends StObject {
     
-    def buildStyles(state: State): ResolvedState = js.native
+    def buildStyles(state: State): ResolvedState
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var hasCSSVariable: js.UndefOr[Boolean] = js.native
+    var hasCSSVariable: js.UndefOr[Boolean] = js.undefined
     
-    var preparseOutput: Boolean = js.native
+    var preparseOutput: Boolean
   }
   object CssStylerOptions {
     
@@ -57,14 +57,13 @@ object cssMod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var allowTransformNone: js.UndefOr[Boolean] = js.native
+    var allowTransformNone: js.UndefOr[Boolean] = js.undefined
     
-    var enableHardwareAcceleration: js.UndefOr[Boolean] = js.native
+    var enableHardwareAcceleration: js.UndefOr[Boolean] = js.undefined
     
-    var preparseOutput: js.UndefOr[Boolean] = js.native
+    var preparseOutput: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     

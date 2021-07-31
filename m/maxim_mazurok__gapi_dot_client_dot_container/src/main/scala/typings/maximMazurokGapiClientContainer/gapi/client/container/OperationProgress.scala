@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationProgress extends StObject {
   
   /**
     * Progress metric bundle, for example: metrics: [{name: "nodes done", int_value: 15}, {name: "nodes total", int_value: 32}] or metrics: [{name: "progress", double_value: 0.56}, {name:
     * "progress scale", double_value: 1.0}]
     */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.native
+  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
   
   /** A non-parameterized string describing an operation stage. Unset for single-stage operations. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Substages of an operation or a stage. */
-  var stages: js.UndefOr[js.Array[OperationProgress]] = js.native
+  var stages: js.UndefOr[js.Array[OperationProgress]] = js.undefined
   
   /** Status of an operation stage. Unset for single-stage operations. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object OperationProgress {
   

@@ -2,15 +2,16 @@ package typings.loremIpsum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object makeArrayOfLengthMod {
   
-  @JSImport("lorem-ipsum/types/src/util/makeArrayOfLength", JSImport.Default)
+  @JSImport("lorem-ipsum/types/src/util/makeArrayOfLength", JSImport.Namespace)
   @js.native
-  def default(): js.Array[Double] = js.native
-  @JSImport("lorem-ipsum/types/src/util/makeArrayOfLength", JSImport.Default)
-  @js.native
-  def default(length: Double): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def default(length: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

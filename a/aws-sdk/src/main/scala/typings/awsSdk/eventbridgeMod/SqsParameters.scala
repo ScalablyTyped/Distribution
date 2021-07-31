@@ -2,16 +2,14 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqsParameters extends StObject {
   
   /**
     * The FIFO message group ID to use as the target.
     */
-  var MessageGroupId: js.UndefOr[typings.awsSdk.eventbridgeMod.MessageGroupId] = js.native
+  var MessageGroupId: js.UndefOr[typings.awsSdk.eventbridgeMod.MessageGroupId] = js.undefined
 }
 object SqsParameters {
   

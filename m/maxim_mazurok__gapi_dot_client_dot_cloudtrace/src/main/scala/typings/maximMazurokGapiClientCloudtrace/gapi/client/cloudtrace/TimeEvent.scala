@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeEvent extends StObject {
   
   /** Text annotation with a set of attributes. */
-  var annotation: js.UndefOr[Annotation] = js.native
+  var annotation: js.UndefOr[Annotation] = js.undefined
   
   /** An event describing a message sent/received between Spans. */
-  var messageEvent: js.UndefOr[MessageEvent] = js.native
+  var messageEvent: js.UndefOr[MessageEvent] = js.undefined
   
   /** The timestamp indicating the time the event occurred. */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object TimeEvent {
   

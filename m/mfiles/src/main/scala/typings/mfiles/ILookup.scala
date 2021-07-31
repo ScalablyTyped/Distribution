@@ -4,37 +4,35 @@ import typings.mfiles.MFiles.MFBuiltInObjectType
 import typings.mfiles.MFiles.MFSpecialObjectFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILookup extends StObject {
   
-  def Clone(): ILookup = js.native
+  def Clone(): ILookup
   
-  def CloneFrom(Lookup: ILookup): Unit = js.native
+  def CloneFrom(Lookup: ILookup): Unit
   
-  var Deleted: Boolean = js.native
+  var Deleted: Boolean
   
-  val DisplayID: String = js.native
+  val DisplayID: String
   
-  val DisplayIDAvailable: Boolean = js.native
+  val DisplayIDAvailable: Boolean
   
-  var DisplayValue: String = js.native
+  var DisplayValue: String
   
-  def GetFormattedDisplayValue(Localized: Boolean, EmptyLookupDispValuesAsHidden: Boolean, AddDeletedSuffixIfDeleted: Boolean): String = js.native
+  def GetFormattedDisplayValue(Localized: Boolean, EmptyLookupDispValuesAsHidden: Boolean, AddDeletedSuffixIfDeleted: Boolean): String
   
-  val Hidden: Boolean = js.native
+  val Hidden: Boolean
   
-  var Item: Double = js.native
+  var Item: Double
   
-  var ItemGUID: String = js.native
+  var ItemGUID: String
   
-  val ObjectFlags: MFSpecialObjectFlag = js.native
+  val ObjectFlags: MFSpecialObjectFlag
   
-  var ObjectType: MFBuiltInObjectType | Double = js.native
+  var ObjectType: MFBuiltInObjectType | Double
   
-  var Version: Double = js.native
+  var Version: Double
 }
 object ILookup {
   

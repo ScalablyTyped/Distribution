@@ -2,24 +2,22 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s bragging rights.
   */
-@js.native
 trait SchemaBraggingRights extends StObject {
   
   /**
     * Metadata about the bragging rights.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The bragging rights; for example, `climbed mount everest`.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaBraggingRights {
   

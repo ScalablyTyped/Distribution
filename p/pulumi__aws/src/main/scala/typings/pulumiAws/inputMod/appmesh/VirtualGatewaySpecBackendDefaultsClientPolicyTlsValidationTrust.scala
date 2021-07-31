@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust extends StObject {
   
   /**
     * The TLS validation context trust for an AWS Certificate Manager (ACM) certificate.
     */
-  var acm: js.UndefOr[Input[VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm]] = js.native
+  var acm: js.UndefOr[Input[VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm]] = js.undefined
   
   /**
     * The TLS validation context trust for a local file.
     */
-  var file: js.UndefOr[Input[VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile]] = js.native
+  var file: js.UndefOr[Input[VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile]] = js.undefined
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust {
   

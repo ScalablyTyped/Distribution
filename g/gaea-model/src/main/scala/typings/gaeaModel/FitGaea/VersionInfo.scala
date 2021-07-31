@@ -2,13 +2,11 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionInfo extends StObject {
   
-  var content: String = js.native
+  var content: String
 }
 object VersionInfo {
   

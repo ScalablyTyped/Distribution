@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1VideoSegment extends StObject {
   
   /** Time-offset, relative to the beginning of the video, corresponding to the end of the segment (inclusive). */
-  var endTimeOffset: js.UndefOr[String] = js.native
+  var endTimeOffset: js.UndefOr[String] = js.undefined
   
   /** Time-offset, relative to the beginning of the video, corresponding to the start of the segment (inclusive). */
-  var startTimeOffset: js.UndefOr[String] = js.native
+  var startTimeOffset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1VideoSegment {
   

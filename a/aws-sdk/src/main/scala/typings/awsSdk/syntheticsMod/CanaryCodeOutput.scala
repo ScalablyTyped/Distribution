@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryCodeOutput extends StObject {
   
   /**
     * The entry point to use for the source code when running the canary.
     */
-  var Handler: js.UndefOr[String] = js.native
+  var Handler: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the Lambda layer where Synthetics stores the canary script code.
     */
-  var SourceLocationArn: js.UndefOr[String] = js.native
+  var SourceLocationArn: js.UndefOr[String] = js.undefined
 }
 object CanaryCodeOutput {
   

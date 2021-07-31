@@ -2,61 +2,59 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageDetail extends StObject {
   
   /**
     * The artifact media type of the image.
     */
-  var artifactMediaType: js.UndefOr[MediaType] = js.native
+  var artifactMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
     * The sha256 digest of the image manifest.
     */
-  var imageDigest: js.UndefOr[ImageDigest] = js.native
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
     * The media type of the image manifest.
     */
-  var imageManifestMediaType: js.UndefOr[MediaType] = js.native
+  var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
     * The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository. 
     */
-  var imagePushedAt: js.UndefOr[PushTimestamp] = js.native
+  var imagePushedAt: js.UndefOr[PushTimestamp] = js.undefined
   
   /**
     * A summary of the last completed image scan.
     */
-  var imageScanFindingsSummary: js.UndefOr[ImageScanFindingsSummary] = js.native
+  var imageScanFindingsSummary: js.UndefOr[ImageScanFindingsSummary] = js.undefined
   
   /**
     * The current state of the scan.
     */
-  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.native
+  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.undefined
   
   /**
     * The size, in bytes, of the image in the repository. If the image is a manifest list, this will be the max size of all manifests in the list.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
     */
-  var imageSizeInBytes: js.UndefOr[ImageSizeInBytes] = js.native
+  var imageSizeInBytes: js.UndefOr[ImageSizeInBytes] = js.undefined
   
   /**
     * The list of tags associated with this image.
     */
-  var imageTags: js.UndefOr[ImageTagList] = js.native
+  var imageTags: js.UndefOr[ImageTagList] = js.undefined
   
   /**
     * The AWS account ID associated with the registry to which this image belongs.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to which this image belongs.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object ImageDetail {
   

@@ -4,13 +4,14 @@ import typings.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind
 import typings.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vscodeLanguageserverProtocolStrings {
   
   @js.native
-  sealed trait abort extends FailureHandlingKind
+  sealed trait abort
+    extends StObject
+       with FailureHandlingKind
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   
@@ -35,12 +36,16 @@ object vscodeLanguageserverProtocolStrings {
   def completionItemSlashresolve: completionItemSlashresolve = "completionItem/resolve".asInstanceOf[completionItemSlashresolve]
   
   @js.native
-  sealed trait create extends ResourceOperationKind
+  sealed trait create
+    extends StObject
+       with ResourceOperationKind
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait delete extends ResourceOperationKind
+  sealed trait delete
+    extends StObject
+       with ResourceOperationKind
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -70,7 +75,9 @@ object vscodeLanguageserverProtocolStrings {
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
-  sealed trait rename extends ResourceOperationKind
+  sealed trait rename
+    extends StObject
+       with ResourceOperationKind
   @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
   
@@ -230,17 +237,23 @@ object vscodeLanguageserverProtocolStrings {
   def textDocumentSlashwillSaveWaitUntil: textDocumentSlashwillSaveWaitUntil = "textDocument/willSaveWaitUntil".asInstanceOf[textDocumentSlashwillSaveWaitUntil]
   
   @js.native
-  sealed trait textOnlyTransactional extends FailureHandlingKind
+  sealed trait textOnlyTransactional
+    extends StObject
+       with FailureHandlingKind
   @scala.inline
   def textOnlyTransactional: textOnlyTransactional = "textOnlyTransactional".asInstanceOf[textOnlyTransactional]
   
   @js.native
-  sealed trait transactional extends FailureHandlingKind
+  sealed trait transactional
+    extends StObject
+       with FailureHandlingKind
   @scala.inline
   def transactional: transactional = "transactional".asInstanceOf[transactional]
   
   @js.native
-  sealed trait undo extends FailureHandlingKind
+  sealed trait undo
+    extends StObject
+       with FailureHandlingKind
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   

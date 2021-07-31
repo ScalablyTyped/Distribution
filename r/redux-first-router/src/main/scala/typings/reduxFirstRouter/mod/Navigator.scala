@@ -2,13 +2,11 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator[TState] extends StObject {
   
-  var router: Router[TState] = js.native
+  var router: Router[TState]
 }
 object Navigator {
   
@@ -19,7 +17,7 @@ object Navigator {
   }
   
   @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator[_], TState] (val x: Self with Navigator[TState]) extends AnyVal {
+  implicit class NavigatorMutableBuilder[Self <: Navigator[?], TState] (val x: Self & Navigator[TState]) extends AnyVal {
     
     @scala.inline
     def setRouter(value: Router[TState]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])

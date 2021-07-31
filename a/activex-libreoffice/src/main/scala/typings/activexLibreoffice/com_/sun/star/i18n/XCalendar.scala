@@ -6,57 +6,57 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Access to locale specific calendar systems. */
-@js.native
-trait XCalendar extends XInterface {
+trait XCalendar
+  extends StObject
+     with XInterface {
   
   /**
     * Get the UTC date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since start
     * date. The fractional part represents fractions of a day, thus 0.5 means 12 hours.
     */
-  var DateTime: Double = js.native
+  var DateTime: Double
   
   /** returns a sequence of {@link CalendarItem} describing the day names. */
-  val Days: SafeArray[CalendarItem] = js.native
+  val Days: SafeArray[CalendarItem]
   
   /** returns the first day of a week, one of {@link Weekdays} values. */
-  var FirstDayOfWeek: Double = js.native
+  var FirstDayOfWeek: Double
   
-  val LoadedCalendar: Calendar = js.native
+  val LoadedCalendar: Calendar
   
   /** returns how many days of a week must reside in the first week of a year. */
-  var MinimumNumberOfDaysForFirstWeek: Double = js.native
+  var MinimumNumberOfDaysForFirstWeek: Double
   
   /** returns a sequence of {@link CalendarItem} describing the month names. */
-  val Months: SafeArray[CalendarItem] = js.native
+  val Months: SafeArray[CalendarItem]
   
-  val NumberOfDaysInWeek: Double = js.native
+  val NumberOfDaysInWeek: Double
   
-  val NumberOfMonthsInYear: Double = js.native
+  val NumberOfMonthsInYear: Double
   
   /** Returns the ID string of the loaded calendar, for example, **"Gregorian"** */
-  val UniqueID: String = js.native
+  val UniqueID: String
   
   /**
     * Add an amount to a field.
     * @param nCalendarFieldIndex One of {@link CalendarFieldIndex} values.
     * @param nAmount The amount to add.
     */
-  def addValue(nCalendarFieldIndex: Double, nAmount: Double): Unit = js.native
+  def addValue(nCalendarFieldIndex: Double, nAmount: Double): Unit
   
-  def getAllCalendars(rLocale: Locale): SafeArray[String] = js.native
+  def getAllCalendars(rLocale: Locale): SafeArray[String]
   
   /**
     * Get the UTC date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since start
     * date. The fractional part represents fractions of a day, thus 0.5 means 12 hours.
     */
-  def getDateTime(): Double = js.native
+  def getDateTime(): Double
   
   /** returns a sequence of {@link CalendarItem} describing the day names. */
-  def getDays(): SafeArray[CalendarItem] = js.native
+  def getDays(): SafeArray[CalendarItem]
   
   /**
     * Returns a string (name to display) matching the given parameters.
@@ -65,60 +65,60 @@ trait XCalendar extends XInterface {
     * @param nNameType A value indicating whether to return the abbreviated or the full name, or the narrow name for some {@link CalendarDisplayIndex} values.
     * @since LibreOffice 3.5   This parameter is not used if the **nCalendarDisplayIndex** argument equals {@link CalendarDisplayIndex.AM_PM}
     */
-  def getDisplayName(nCalendarDisplayIndex: Double, nIdx: Double, nNameType: Double): String = js.native
+  def getDisplayName(nCalendarDisplayIndex: Double, nIdx: Double, nNameType: Double): String
   
   /** returns the first day of a week, one of {@link Weekdays} values. */
-  def getFirstDayOfWeek(): Double = js.native
+  def getFirstDayOfWeek(): Double
   
-  def getLoadedCalendar(): Calendar = js.native
+  def getLoadedCalendar(): Calendar
   
   /** returns how many days of a week must reside in the first week of a year. */
-  def getMinimumNumberOfDaysForFirstWeek(): Double = js.native
+  def getMinimumNumberOfDaysForFirstWeek(): Double
   
   /** returns a sequence of {@link CalendarItem} describing the month names. */
-  def getMonths(): SafeArray[CalendarItem] = js.native
+  def getMonths(): SafeArray[CalendarItem]
   
-  def getNumberOfDaysInWeek(): Double = js.native
+  def getNumberOfDaysInWeek(): Double
   
-  def getNumberOfMonthsInYear(): Double = js.native
+  def getNumberOfMonthsInYear(): Double
   
   /** Returns the ID string of the loaded calendar, for example, **"Gregorian"** */
-  def getUniqueID(): String = js.native
+  def getUniqueID(): String
   
   /**
     * Get the value of a field.
     * @param nCalendarFieldIndex One of {@link CalendarFieldIndex} values.
     */
-  def getValue(nCalendarFieldIndex: Double): Double = js.native
+  def getValue(nCalendarFieldIndex: Double): Double
   
   /**
     * Verify if the date fields set by a combination of {@link XCalendar.setValue()} calls is valid. It has a side-effect because it will internally
     * calculate the final value for the date fields
     */
-  def isValid(): Boolean = js.native
+  def isValid(): Boolean
   
-  def loadCalendar(uniqueID: String, rLocale: Locale): Unit = js.native
+  def loadCalendar(uniqueID: String, rLocale: Locale): Unit
   
-  def loadDefaultCalendar(rLocale: Locale): Unit = js.native
+  def loadDefaultCalendar(rLocale: Locale): Unit
   
   /**
     * Set the UTC date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since start
     * date. The fractional part represents fractions of a day, thus 0.5 means 12 hours.
     */
-  def setDateTime(nTimeInDays: Double): Unit = js.native
+  def setDateTime(nTimeInDays: Double): Unit
   
   /** Set the first day of a week, one of {@link Weekdays} values. */
-  def setFirstDayOfWeek(nDay: Double): Unit = js.native
+  def setFirstDayOfWeek(nDay: Double): Unit
   
   /** Set how many days of a week must reside in the first week of a year. */
-  def setMinimumNumberOfDaysForFirstWeek(nDays: Double): Unit = js.native
+  def setMinimumNumberOfDaysForFirstWeek(nDays: Double): Unit
   
   /**
     * Set the value of a field.
     * @param nCalendarFieldIndex One of {@link CalendarFieldIndex} values.
     * @param nValue A value of the allowed range for the field index.
     */
-  def setValue(nCalendarFieldIndex: Double, nValue: Double): Unit = js.native
+  def setValue(nCalendarFieldIndex: Double, nValue: Double): Unit
 }
 object XCalendar {
   

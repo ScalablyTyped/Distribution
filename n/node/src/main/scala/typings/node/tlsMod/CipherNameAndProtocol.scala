@@ -2,26 +2,24 @@ package typings.node.tlsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CipherNameAndProtocol extends StObject {
   
   /**
     * The cipher name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * IETF name for the cipher suite.
     */
-  var standardName: String = js.native
+  var standardName: String
   
   /**
     * SSL/TLS protocol version.
     */
-  var version: String = js.native
+  var version: String
 }
 object CipherNameAndProtocol {
   

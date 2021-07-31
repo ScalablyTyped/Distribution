@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the Indicator class.
   */
-@js.native
-trait ASPxClientIndicator extends ASPxClientWebChartElementNamed {
+trait ASPxClientIndicator
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Gets the indicator's associated series.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
 }
 object ASPxClientIndicator {
   

@@ -18,14 +18,116 @@ import typings.languageTags.tagMod.ErrorCode.ERR_WRONG_ORDER
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
   
   @JSImport("language-tags/Tag", JSImport.Namespace)
   @js.native
-  class ^ () extends Tag
+  class ^ ()
+    extends StObject
+       with Tag {
+    
+    /**
+      * For grandfathered or redundant tags, returns a date string reflecting the date the tag was added to the registry.
+      */
+    /* CompleteClass */
+    override def added(): String = js.native
+    
+    /**
+      * For grandfathered or redundant tags, returns a date string reflecting the deprecation date if the tag is
+      * deprecated.
+      *
+      * ```
+      * > tags('zh-cmn-Hant').deprecated();
+      * '2009-07-29'
+      * ```
+      */
+    /* CompleteClass */
+    override def deprecated(): String | Null = js.native
+    
+    /**
+      * Returns an array of tag descriptions for grandfathered or redundant tags, otherwise returns an empty array.
+      */
+    /* CompleteClass */
+    override def descriptions(): js.Array[String] = js.native
+    
+    /**
+      * Returns an array of `Error` objects if the tag is invalid. The `message` property of each is readable and helpful
+      * enough for UI output. The `code` property can be checked against the `Tag.ERR_*` constants. Each error will also
+      * have either a `subtag` or `tag` property with the code of the offending tag.
+      */
+    /* CompleteClass */
+    override def errors(): js.Array[LanguageTagsError] = js.native
+    
+    /**
+      * Find a subtag of the given type from those making up the tag.
+      */
+    /* CompleteClass */
+    override def find(`type`: String): typings.languageTags.subtagMod.^ = js.native
+    
+    /**
+      * Format a tag according to the case conventions defined in
+      * [RFC 5646 section 2.1.1](http://tools.ietf.org/html/rfc5646#section-2.1.1).
+      *
+      * ```
+      * > tags('en-gb').format();
+      * 'en-GB'
+      * ```
+      */
+    /* CompleteClass */
+    override def format(): String = js.native
+    
+    /**
+      * Shortcut for `tag.find('language')`.
+      */
+    /* CompleteClass */
+    override def language(): typings.languageTags.subtagMod.^ = js.native
+    
+    /**
+      * If the tag is listed as 'deprecated' or 'redundant' it might have a preferred value. This method returns a `Tag`
+      * object if so.
+      *
+      * ```
+      * > tags('zh-cmn-Hant').preferred();
+      * Tag
+      * ```
+      */
+    /* CompleteClass */
+    override def preferred(): Tag = js.native
+    
+    /**
+      * Shortcut for `tag.find('region')`.
+      */
+    /* CompleteClass */
+    override def region(): typings.languageTags.subtagMod.^ = js.native
+    
+    /**
+      * Shortcut for `tag.find('script')`.
+      */
+    /* CompleteClass */
+    override def script(): typings.languageTags.subtagMod.^ = js.native
+    
+    /**
+      * Returns an array of subtags making up the tag, as `Subtag` objects.
+      */
+    /* CompleteClass */
+    override def subtags(): js.Array[typings.languageTags.subtagMod.^] = js.native
+    
+    /**
+      * Returns `grandfathered` if the tag is grandfathered, `redundant` if the tag is redundant, and `tag` if neither.
+      * For a definition of grandfathered and redundant tags, see
+      * [RFC 5646 section 2.2.8](http://tools.ietf.org/html/rfc5646#section-2.2.8).
+      */
+    /* CompleteClass */
+    override def `type`(): grandfathered | redundant | tag = js.native
+    
+    /**
+      * Returns `true` if the tag is valid, `false` otherwise.
+      */
+    /* CompleteClass */
+    override def valid(): Boolean = js.native
+  }
   @JSImport("language-tags/Tag", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -122,51 +224,76 @@ object tagMod {
   object ErrorCode extends StObject {
     
     @js.native
-    sealed trait ERR_DEPRECATED extends ErrorCode
+    sealed trait ERR_DEPRECATED
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_DUPLICATE_VARIANT extends ErrorCode
+    sealed trait ERR_DUPLICATE_VARIANT
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_EXTRA_EXTLANG extends ErrorCode
+    sealed trait ERR_EXTRA_EXTLANG
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_EXTRA_LANGUAGE extends ErrorCode
+    sealed trait ERR_EXTRA_LANGUAGE
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_EXTRA_REGION extends ErrorCode
+    sealed trait ERR_EXTRA_REGION
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_EXTRA_SCRIPT extends ErrorCode
+    sealed trait ERR_EXTRA_SCRIPT
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_NO_LANGUAGE extends ErrorCode
+    sealed trait ERR_NO_LANGUAGE
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_SUBTAG_DEPRECATED extends ErrorCode
+    sealed trait ERR_SUBTAG_DEPRECATED
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_SUPPRESS_SCRIPT extends ErrorCode
+    sealed trait ERR_SUPPRESS_SCRIPT
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_TOO_LONG extends ErrorCode
+    sealed trait ERR_TOO_LONG
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_UNKNOWN extends ErrorCode
+    sealed trait ERR_UNKNOWN
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait ERR_WRONG_ORDER extends ErrorCode
+    sealed trait ERR_WRONG_ORDER
+      extends StObject
+         with ErrorCode
   }
   
   // This class isn’t exposed. It’s an error instance that has additional properties.
-  @js.native
-  trait LanguageTagsError extends Error {
+  trait LanguageTagsError
+    extends StObject
+       with Error {
     
-    var code: ErrorCode = js.native
+    var code: ErrorCode
     
-    var subtag: typings.languageTags.subtagMod.^ = js.native
+    var subtag: typings.languageTags.subtagMod.^
     
-    var tag: Tag = js.native
+    var tag: Tag
   }
   object LanguageTagsError {
     
@@ -190,13 +317,12 @@ object tagMod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
     /**
       * For grandfathered or redundant tags, returns a date string reflecting the date the tag was added to the registry.
       */
-    def added(): String = js.native
+    def added(): String
     
     /**
       * For grandfathered or redundant tags, returns a date string reflecting the deprecation date if the tag is
@@ -207,24 +333,24 @@ object tagMod {
       * '2009-07-29'
       * ```
       */
-    def deprecated(): String | Null = js.native
+    def deprecated(): String | Null
     
     /**
       * Returns an array of tag descriptions for grandfathered or redundant tags, otherwise returns an empty array.
       */
-    def descriptions(): js.Array[String] = js.native
+    def descriptions(): js.Array[String]
     
     /**
       * Returns an array of `Error` objects if the tag is invalid. The `message` property of each is readable and helpful
       * enough for UI output. The `code` property can be checked against the `Tag.ERR_*` constants. Each error will also
       * have either a `subtag` or `tag` property with the code of the offending tag.
       */
-    def errors(): js.Array[LanguageTagsError] = js.native
+    def errors(): js.Array[LanguageTagsError]
     
     /**
       * Find a subtag of the given type from those making up the tag.
       */
-    def find(`type`: String): typings.languageTags.subtagMod.^ = js.native
+    def find(`type`: String): typings.languageTags.subtagMod.^
     
     /**
       * Format a tag according to the case conventions defined in
@@ -235,12 +361,12 @@ object tagMod {
       * 'en-GB'
       * ```
       */
-    def format(): String = js.native
+    def format(): String
     
     /**
       * Shortcut for `tag.find('language')`.
       */
-    def language(): typings.languageTags.subtagMod.^ = js.native
+    def language(): typings.languageTags.subtagMod.^
     
     /**
       * If the tag is listed as 'deprecated' or 'redundant' it might have a preferred value. This method returns a `Tag`
@@ -251,34 +377,34 @@ object tagMod {
       * Tag
       * ```
       */
-    def preferred(): Tag = js.native
+    def preferred(): Tag
     
     /**
       * Shortcut for `tag.find('region')`.
       */
-    def region(): typings.languageTags.subtagMod.^ = js.native
+    def region(): typings.languageTags.subtagMod.^
     
     /**
       * Shortcut for `tag.find('script')`.
       */
-    def script(): typings.languageTags.subtagMod.^ = js.native
+    def script(): typings.languageTags.subtagMod.^
     
     /**
       * Returns an array of subtags making up the tag, as `Subtag` objects.
       */
-    def subtags(): js.Array[typings.languageTags.subtagMod.^] = js.native
+    def subtags(): js.Array[typings.languageTags.subtagMod.^]
     
     /**
       * Returns `grandfathered` if the tag is grandfathered, `redundant` if the tag is redundant, and `tag` if neither.
       * For a definition of grandfathered and redundant tags, see
       * [RFC 5646 section 2.2.8](http://tools.ietf.org/html/rfc5646#section-2.2.8).
       */
-    def `type`(): grandfathered | redundant | tag = js.native
+    def `type`(): grandfathered | redundant | tag
     
     /**
       * Returns `true` if the tag is valid, `false` otherwise.
       */
-    def valid(): Boolean = js.native
+    def valid(): Boolean
   }
   object Tag {
     

@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BookmarksViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with GoTo {
   
   /**
@@ -47,7 +47,7 @@ trait BookmarksViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#goTo)
     */
-  def goTo(bookmark: Bookmark): js.Promise[_] = js.native
+  def goTo(bookmark: Bookmark): js.Promise[js.Any] = js.native
   
   /**
     * The view model's state.

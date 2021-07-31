@@ -10,7 +10,6 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antd.menuContextMod.MenuTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultSettingsMod extends Shortcut {
@@ -33,40 +32,50 @@ object defaultSettingsMod extends Shortcut {
     def Fluid: typings.antDesignProLayout.antDesignProLayoutStrings.Fluid = "Fluid".asInstanceOf[typings.antDesignProLayout.antDesignProLayoutStrings.Fluid]
   }
   
-  type ProSettings = PureSettings with RenderSetting
+  trait ProSettings
+    extends StObject
+       with PureSettings
+       with RenderSetting
+  object ProSettings {
+    
+    @scala.inline
+    def apply(title: String | `false`): ProSettings = {
+      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProSettings]
+    }
+  }
   
-  @js.native
   trait PureSettings extends StObject {
     
     /**
       * @name 全局增加滤镜
       */
-    var colorWeak: js.UndefOr[Boolean] = js.native
+    var colorWeak: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name layout of content: `Fluid` or `Fixed`, only works when layout is top
       */
-    var contentWidth: js.UndefOr[ContentWidth] = js.native
+    var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
     /**
       * @name sticky siderbar
       */
-    var fixSiderbar: js.UndefOr[Boolean] = js.native
+    var fixSiderbar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name sticky header
       */
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name nav menu position: `side` or `top`
       */
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * @name 顶部菜单的颜色，mix 模式下生效
       */
-    var headerTheme: js.UndefOr[MenuTheme] = js.native
+    var headerTheme: js.UndefOr[MenuTheme] = js.undefined
     
     /**
       * Your custom iconfont Symbol script Url
@@ -74,39 +83,39 @@ object defaultSettingsMod extends Shortcut {
       * 注意：如果需要图标多色，Iconfont 图标项目里要进行批量去色处理
       * Usage: https://github.com/ant-design/ant-design-pro/pull/3517
       */
-    var iconfontUrl: js.UndefOr[String] = js.native
+    var iconfontUrl: js.UndefOr[String] = js.undefined
     
     /**
       * @name customize header height
       */
-    var layout: js.UndefOr[side | top | mix] = js.native
+    var layout: js.UndefOr[side | top | mix] = js.undefined
     
     /**
       * @name menu 相关的一些配置
       */
-    var menu: js.UndefOr[DefaultOpenAll] = js.native
+    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
     
     /**
       * @name theme for nav menu
       */
-    var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+    var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
     
     /**
       * @name 主色，需要配合 umi 使用
       */
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
     /**
       * @name 切割菜单
       * @description 只在 mix 模式下生效
       */
-    var splitMenus: js.UndefOr[Boolean] = js.native
+    var splitMenus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name Layout 的 title，也会显示在浏览器标签上
       * @description 设置为 false，在 layout 中只展示 pageName，而不是 pageName - title
       */
-    var title: String | `false` = js.native
+    var title: String | `false`
   }
   object PureSettings {
     
@@ -196,16 +205,15 @@ object defaultSettingsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait RenderSetting extends StObject {
     
-    var footerRender: js.UndefOr[`false`] = js.native
+    var footerRender: js.UndefOr[`false`] = js.undefined
     
-    var headerRender: js.UndefOr[`false`] = js.native
+    var headerRender: js.UndefOr[`false`] = js.undefined
     
-    var menuHeaderRender: js.UndefOr[`false`] = js.native
+    var menuHeaderRender: js.UndefOr[`false`] = js.undefined
     
-    var menuRender: js.UndefOr[`false`] = js.native
+    var menuRender: js.UndefOr[`false`] = js.undefined
   }
   object RenderSetting {
     

@@ -3,27 +3,27 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`exit-signal`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExitSignalChannelRequest extends ChannelRequest {
+trait ExitSignalChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var coredump: Boolean = js.native
+  var coredump: Boolean
   
-  var description: String = js.native
+  var description: String
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: `exit-signal` = js.native
+  var request: `exit-signal`
   
-  var signal: String = js.native
+  var signal: String
 }
 object ExitSignalChannelRequest {
   
   @scala.inline
-  def apply(coredump: Boolean, description: String, recipient: Double, request: `exit-signal`, signal: String): ExitSignalChannelRequest = {
-    val __obj = js.Dynamic.literal(coredump = coredump.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
+  def apply(coredump: Boolean, description: String, recipient: Double, signal: String): ExitSignalChannelRequest = {
+    val __obj = js.Dynamic.literal(coredump = coredump.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "exit-signal", signal = signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExitSignalChannelRequest]
   }
   

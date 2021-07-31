@@ -5,168 +5,190 @@ import typings.micromark.constantConstantsMod.Constant
 import typings.micromark.libSharedTypesMod.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object micromarkStrings {
   
   @js.native
   sealed trait ^
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
   sealed trait $
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def $: $ = "$".asInstanceOf[$]
   
   @js.native
   sealed trait `-_`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait `0`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
   sealed trait `2`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
   sealed trait `6`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `6`: `6` = "6".asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `7`: `7` = "7".asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `8`: `8` = "8".asInstanceOf[`8`]
   
   @js.native
   sealed trait `9`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
   sealed trait `@`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   
   @js.native
   sealed trait A
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   
   @js.native
   sealed trait Ampersand
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
   @js.native
   sealed trait Apostrophe
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Asterisk
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait B
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def B: B = "B".asInstanceOf[B]
   
   @js.native
   sealed trait Backslash
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   
   @js.native
   sealed trait C
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def C: C = "C".asInstanceOf[C]
   
   @js.native
   sealed trait `CDATA[`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `CDATA[`: `CDATA[` = "CDATA[".asInstanceOf[`CDATA[`]
   
   @js.native
   sealed trait Carriagereturn
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Carriagereturn: Carriagereturn = "\r".asInstanceOf[Carriagereturn]
@@ -178,371 +200,424 @@ object micromarkStrings {
   
   @js.native
   sealed trait Charactertabulation
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
   
   @js.native
   sealed trait Colon
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Colon: Colon = ":".asInstanceOf[Colon]
   
   @js.native
   sealed trait Comma
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Comma: Comma = ",".asInstanceOf[Comma]
   
   @js.native
   sealed trait D
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def D: D = "D".asInstanceOf[D]
   
   @js.native
   sealed trait Dot
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait E
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   
   @js.native
   sealed trait Equalssign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
   sealed trait Exclamationmark
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
   @js.native
   sealed trait F
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def F: F = "F".asInstanceOf[F]
   
   @js.native
   sealed trait G
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def G: G = "G".asInstanceOf[G]
   
   @js.native
   sealed trait Graveaccent
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
   @js.native
   sealed trait Greaterthansign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
   sealed trait H
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   
   @js.native
   sealed trait I
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   
   @js.native
   sealed trait J
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def J: J = "J".asInstanceOf[J]
   
   @js.native
   sealed trait K
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def K: K = "K".asInstanceOf[K]
   
   @js.native
   sealed trait L
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait Leftcurlybracket
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
   
   @js.native
   sealed trait Leftparenthesis
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
   @js.native
   sealed trait Lessthansign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
   sealed trait Linefeed
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   
   @js.native
   sealed trait M
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait N
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def N: N = "N".asInstanceOf[N]
   
   @js.native
   sealed trait Numbersign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
   @js.native
   sealed trait O
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def O: O = "O".asInstanceOf[O]
   
   @js.native
   sealed trait P
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def P: P = "P".asInstanceOf[P]
   
   @js.native
   sealed trait Percentsign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
   sealed trait Plussign
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
   sealed trait Q
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait Questionmark
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
   
   @js.native
   sealed trait Quotationmark
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
   sealed trait R
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def R: R = "R".asInstanceOf[R]
   
   @js.native
   sealed trait Replacementcharacter
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Replacementcharacter: Replacementcharacter = "\uFFFD".asInstanceOf[Replacementcharacter]
   
   @js.native
   sealed trait Rightcurlybracket
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
   
   @js.native
   sealed trait Rightparenthesis
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
   sealed trait S
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def S: S = "S".asInstanceOf[S]
   
   @js.native
   sealed trait Semicolon
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
   
   @js.native
   sealed trait Slash
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
   sealed trait Space
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
   sealed trait T
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def T: T = "T".asInstanceOf[T]
   
   @js.native
   sealed trait Tilde
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
   sealed trait U
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def U: U = "U".asInstanceOf[U]
   
   @js.native
   sealed trait V
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def V: V = "V".asInstanceOf[V]
   
   @js.native
   sealed trait Verticalline
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
   sealed trait W
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def W: W = "W".asInstanceOf[W]
   
   @js.native
   sealed trait X
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   
   @js.native
   sealed trait Y
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   
   @js.native
   sealed trait Z
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
   sealed trait `[`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `[`: `[` = "[".asInstanceOf[`[`]
   
   @js.native
   sealed trait `]`
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def `]`: `]` = "]".asInstanceOf[`]`]
   
   @js.native
   sealed trait _underscore
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def _underscore: _underscore = "_".asInstanceOf[_underscore]
   
   @js.native
   sealed trait a_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def a_ : a_ = "a".asInstanceOf[a_]
   
   @js.native
   sealed trait ascii
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
@@ -584,21 +659,24 @@ object micromarkStrings {
   
   @js.native
   sealed trait b_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def b_ : b_ = "b".asInstanceOf[b_]
   
   @js.native
   sealed trait base64
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait binary
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
@@ -625,7 +703,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait c_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def c_ : c_ = "c".asInstanceOf[c_]
@@ -742,14 +821,16 @@ object micromarkStrings {
   
   @js.native
   sealed trait content
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   
   @js.native
   sealed trait d_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def d_ : d_ = "d".asInstanceOf[d_]
@@ -826,7 +907,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait e_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def e_ : e_ = "e".asInstanceOf[e_]
@@ -853,28 +935,32 @@ object micromarkStrings {
   
   @js.native
   sealed trait f_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def f_ : f_ = "f".asInstanceOf[f_]
   
   @js.native
   sealed trait flow
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
   sealed trait g_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def g_ : g_ = "g".asInstanceOf[g_]
   
   @js.native
   sealed trait h_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def h_ : h_ = "h".asInstanceOf[h_]
@@ -891,7 +977,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait hex
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
@@ -918,7 +1005,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait i_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def i_ : i_ = "i".asInstanceOf[i_]
@@ -930,21 +1018,24 @@ object micromarkStrings {
   
   @js.native
   sealed trait j_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def j_ : j_ = "j".asInstanceOf[j_]
   
   @js.native
   sealed trait k_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def k_ : k_ = "k".asInstanceOf[k_]
   
   @js.native
   sealed trait l_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def l_ : l_ = "l".asInstanceOf[l_]
@@ -986,7 +1077,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait latin1
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
@@ -1053,14 +1145,16 @@ object micromarkStrings {
   
   @js.native
   sealed trait m_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
   sealed trait n_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def n_ : n_ = "n".asInstanceOf[n_]
@@ -1072,14 +1166,16 @@ object micromarkStrings {
   
   @js.native
   sealed trait o_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def o_ : o_ = "o".asInstanceOf[o_]
   
   @js.native
   sealed trait p_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def p_ : p_ = "p".asInstanceOf[p_]
@@ -1091,14 +1187,16 @@ object micromarkStrings {
   
   @js.native
   sealed trait q_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def q_ : q_ = "q".asInstanceOf[q_]
   
   @js.native
   sealed trait r_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def r_ : r_ = "r".asInstanceOf[r_]
@@ -1170,7 +1268,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait s_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def s_ : s_ = "s".asInstanceOf[s_]
@@ -1197,7 +1296,8 @@ object micromarkStrings {
   
   @js.native
   sealed trait string
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def string: string = "string".asInstanceOf[string]
@@ -1219,14 +1319,16 @@ object micromarkStrings {
   
   @js.native
   sealed trait t_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def t_ : t_ = "t".asInstanceOf[t_]
   
   @js.native
   sealed trait text
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1243,56 +1345,64 @@ object micromarkStrings {
   
   @js.native
   sealed trait u_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def u_ : u_ = "u".asInstanceOf[u_]
   
   @js.native
   sealed trait `ucs-2`
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
   
   @js.native
   sealed trait ucs2
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
   sealed trait `utf-8`
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
   sealed trait utf16le
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
   sealed trait utf8
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with typings.micromark.sharedTypesMod.BufferEncoding
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
   @js.native
   sealed trait v_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def v_ : v_ = "v".asInstanceOf[v_]
   
   @js.native
   sealed trait w_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def w_ : w_ = "w".asInstanceOf[w_]
@@ -1304,21 +1414,24 @@ object micromarkStrings {
   
   @js.native
   sealed trait x_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def x_ : x_ = "x".asInstanceOf[x_]
   
   @js.native
   sealed trait y_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def y_ : y_ = "y".asInstanceOf[y_]
   
   @js.native
   sealed trait z_
-    extends Value
+    extends StObject
+       with Value
        with typings.micromark.valuesMod.Value
   @scala.inline
   def z_ : z_ = "z".asInstanceOf[z_]

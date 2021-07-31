@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Company extends StObject {
   
   /** Optional. Email address of customer's users in the admin role. Each email address must be associated with a Google Account. */
-  var adminEmails: js.UndefOr[js.Array[String]] = js.native
+  var adminEmails: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The ID of the company. Assigned by the server. */
-  var companyId: js.UndefOr[String] = js.native
+  var companyId: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the company. For example _XYZ Corp_. Displayed to the company's employees in the zero-touch enrollment portal. */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The API resource name of the company. The resource name is one of the following formats: * `partners/[PARTNER_ID]/customers/[CUSTOMER_ID]` *
     * `partners/[PARTNER_ID]/vendors/[VENDOR_ID]` * `partners/[PARTNER_ID]/vendors/[VENDOR_ID]/customers/[CUSTOMER_ID]` Assigned by the server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Input only. Email address of customer's users in the owner role. At least one `owner_email` is required. Each email address must be associated with a Google Account.
     * Owners share the same access as admins but can also add, delete, and edit your organization's portal users.
     */
-  var ownerEmails: js.UndefOr[js.Array[String]] = js.native
+  var ownerEmails: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Whether any user from the company has accepted the latest Terms of Service (ToS). See TermsStatus. */
-  var termsStatus: js.UndefOr[String] = js.native
+  var termsStatus: js.UndefOr[String] = js.undefined
 }
 object Company {
   

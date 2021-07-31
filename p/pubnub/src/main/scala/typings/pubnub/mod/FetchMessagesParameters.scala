@@ -2,29 +2,27 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchMessagesParameters extends StObject {
   
-  var channels: js.Array[String] = js.native
+  var channels: js.Array[String]
   
-  var count: js.UndefOr[Double] = js.native
-  
-  // timetoken
-  var end: js.UndefOr[String | Double] = js.native
-  
-  var includeMessageActions: js.UndefOr[Boolean] = js.native
-  
-  var includeMeta: js.UndefOr[Boolean] = js.native
-  
-  var start: js.UndefOr[String | Double] = js.native
-  
-  var stringifiedTimeToken: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   // timetoken
-  var withMessageActions: js.UndefOr[Boolean] = js.native
+  var end: js.UndefOr[String | Double] = js.undefined
+  
+  var includeMessageActions: js.UndefOr[Boolean] = js.undefined
+  
+  var includeMeta: js.UndefOr[Boolean] = js.undefined
+  
+  var start: js.UndefOr[String | Double] = js.undefined
+  
+  var stringifiedTimeToken: js.UndefOr[Boolean] = js.undefined
+  
+  // timetoken
+  var withMessageActions: js.UndefOr[Boolean] = js.undefined
 }
 object FetchMessagesParameters {
   

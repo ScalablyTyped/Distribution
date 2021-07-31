@@ -3,25 +3,23 @@ package typings.jest.mod.jest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatcherState extends StObject {
   
-  var assertionCalls: Double = js.native
+  var assertionCalls: Double
   
-  var currentTestName: String = js.native
+  var currentTestName: String
   
-  var expand: Boolean = js.native
+  var expand: Boolean
   
-  var expectedAssertionsNumber: Double = js.native
+  var expectedAssertionsNumber: Double
   
-  var isExpectingAssertions: js.UndefOr[Boolean] = js.native
+  var isExpectingAssertions: js.UndefOr[Boolean] = js.undefined
   
-  var suppressedErrors: js.Array[Error] = js.native
+  var suppressedErrors: js.Array[Error]
   
-  var testPath: String = js.native
+  var testPath: String
 }
 object MatcherState {
   

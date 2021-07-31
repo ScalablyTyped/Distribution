@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listSynonyms` operation. */
@@ -16,14 +15,18 @@ object ListSynonymsConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait SYNONYM extends Sort
-    /* "synonym" */ val SYNONYM: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.SYNONYM with String = js.native
+    sealed trait SYNONYM
+      extends StObject
+         with Sort
+    /* "synonym" */ val SYNONYM: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.SYNONYM & String = js.native
     
     @js.native
-    sealed trait UPDATED extends Sort
-    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.UPDATED with String = js.native
+    sealed trait UPDATED
+      extends StObject
+         with Sort
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.UPDATED & String = js.native
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApprovalRuleTemplateContentInput extends StObject {
   
   /**
     * The name of the approval rule template where you want to update the content of the rule. 
     */
-  var approvalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var approvalRuleTemplateName: ApprovalRuleTemplateName
   
   /**
     * The SHA-256 hash signature for the content of the approval rule. You can retrieve this information by using GetPullRequest.
     */
-  var existingRuleContentSha256: js.UndefOr[RuleContentSha256] = js.native
+  var existingRuleContentSha256: js.UndefOr[RuleContentSha256] = js.undefined
   
   /**
     * The content that replaces the existing content of the rule. Content statements must be complete. You cannot provide only the changes.
     */
-  var newRuleContent: ApprovalRuleTemplateContent = js.native
+  var newRuleContent: ApprovalRuleTemplateContent
 }
 object UpdateApprovalRuleTemplateContentInput {
   

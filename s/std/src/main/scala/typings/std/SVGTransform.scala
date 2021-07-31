@@ -2,44 +2,42 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SVGTransform is the interface for one of the component transformations within an SVGTransformList; thus, an SVGTransform object corresponds to a single component (e.g., scale(…) or matrix(…)) within a transform attribute. */
-@js.native
 trait SVGTransform extends StObject {
   
-  val SVG_TRANSFORM_MATRIX: Double = js.native
+  val SVG_TRANSFORM_MATRIX: Double
   
-  val SVG_TRANSFORM_ROTATE: Double = js.native
+  val SVG_TRANSFORM_ROTATE: Double
   
-  val SVG_TRANSFORM_SCALE: Double = js.native
+  val SVG_TRANSFORM_SCALE: Double
   
-  val SVG_TRANSFORM_SKEWX: Double = js.native
+  val SVG_TRANSFORM_SKEWX: Double
   
-  val SVG_TRANSFORM_SKEWY: Double = js.native
+  val SVG_TRANSFORM_SKEWY: Double
   
-  val SVG_TRANSFORM_TRANSLATE: Double = js.native
+  val SVG_TRANSFORM_TRANSLATE: Double
   
-  val SVG_TRANSFORM_UNKNOWN: Double = js.native
+  val SVG_TRANSFORM_UNKNOWN: Double
   
-  val angle: Double = js.native
+  val angle: Double
   
-  val matrix: SVGMatrix = js.native
+  val matrix: SVGMatrix
   
-  def setMatrix(matrix: SVGMatrix): Unit = js.native
+  def setMatrix(matrix: SVGMatrix): Unit
   
-  def setRotate(angle: Double, cx: Double, cy: Double): Unit = js.native
+  def setRotate(angle: Double, cx: Double, cy: Double): Unit
   
-  def setScale(sx: Double, sy: Double): Unit = js.native
+  def setScale(sx: Double, sy: Double): Unit
   
-  def setSkewX(angle: Double): Unit = js.native
+  def setSkewX(angle: Double): Unit
   
-  def setSkewY(angle: Double): Unit = js.native
+  def setSkewY(angle: Double): Unit
   
-  def setTranslate(tx: Double, ty: Double): Unit = js.native
+  def setTranslate(tx: Double, ty: Double): Unit
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object SVGTransform {
   

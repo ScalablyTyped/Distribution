@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DeleteEnvironmentResponse. */
-@js.native
 trait DeleteEnvironmentResponse extends StObject {
   
   /** The unique identifier for the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
   /** Status of the environment. */
-  var status: String = js.native
+  var status: String
 }
 object DeleteEnvironmentResponse {
   

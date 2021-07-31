@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.commands.Command
 import typings.chromeApps.chrome.commands.CommandEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -24,13 +23,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object commands {
   
+  @JSGlobal("chrome.commands")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns all the registered commands for this app and their shortcut (if active).
     * @param callback Called to return the registered commands.
     */
-  @JSGlobal("chrome.commands.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Fired when a registered command is activated using a keyboard shortcut. */
   @JSGlobal("chrome.commands.onCommand")

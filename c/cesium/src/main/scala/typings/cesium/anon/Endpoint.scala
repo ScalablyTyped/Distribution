@@ -2,15 +2,13 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
-  var endpoint: js.Any = js.native
+  var endpoint: js.Any
   
-  var endpointResource: js.Any = js.native
+  var endpointResource: js.Any
 }
 object Endpoint {
   

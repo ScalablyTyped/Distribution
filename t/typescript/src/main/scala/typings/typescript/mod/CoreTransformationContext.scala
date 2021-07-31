@@ -2,34 +2,32 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreTransformationContext extends StObject {
   
   /** Ends a lexical environment, returning any declarations. */
-  def endLexicalEnvironment(): js.UndefOr[js.Array[Statement]] = js.native
+  def endLexicalEnvironment(): js.UndefOr[js.Array[Statement]]
   
-  val factory: NodeFactory = js.native
+  val factory: NodeFactory
   
   /** Gets the compiler options supplied to the transformer. */
-  def getCompilerOptions(): CompilerOptions = js.native
+  def getCompilerOptions(): CompilerOptions
   
   /** Hoists a function declaration to the containing scope. */
-  def hoistFunctionDeclaration(node: FunctionDeclaration): Unit = js.native
+  def hoistFunctionDeclaration(node: FunctionDeclaration): Unit
   
   /** Hoists a variable declaration to the containing scope. */
-  def hoistVariableDeclaration(node: Identifier): Unit = js.native
+  def hoistVariableDeclaration(node: Identifier): Unit
   
   /** Resumes a suspended lexical environment, usually before visiting a function body. */
-  def resumeLexicalEnvironment(): Unit = js.native
+  def resumeLexicalEnvironment(): Unit
   
   /** Starts a new lexical environment. */
-  def startLexicalEnvironment(): Unit = js.native
+  def startLexicalEnvironment(): Unit
   
   /** Suspends the current lexical environment, usually after visiting a parameter list. */
-  def suspendLexicalEnvironment(): Unit = js.native
+  def suspendLexicalEnvironment(): Unit
 }
 object CoreTransformationContext {
   

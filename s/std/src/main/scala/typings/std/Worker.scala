@@ -4,13 +4,13 @@ import typings.std.stdStrings.message
 import typings.std.stdStrings.messageerror
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Web Workers API interface represents a background task that can be easily created and can send messages back to its creator. Creating a worker is as simple as calling the Worker() constructor and specifying a script to be run in the worker thread. */
 @js.native
 trait Worker
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with AbstractWorker {
   
   /* InferMemberOverrides */
@@ -24,40 +24,43 @@ trait Worker
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]): Unit = js.native
+  def addEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(
     `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(
     `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]) | Null = js.native
+  var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]) | Null = js.native
   
-  var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]) | Null = js.native
+  var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]) | Null = js.native
   
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, options: PostMessageOptions): Unit = js.native
@@ -77,34 +80,37 @@ trait Worker
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]): Unit = js.native
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(
     `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(
     `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[_], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[js.Any], js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

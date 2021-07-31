@@ -11,7 +11,7 @@ Add `spread` method to the promise of $q.all
 | Keywords           | $q, all, spread, angular, angularjs |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3504 |
+| # downloads        | 4321 |
 | # stars            | 0 |
 
 ## Links

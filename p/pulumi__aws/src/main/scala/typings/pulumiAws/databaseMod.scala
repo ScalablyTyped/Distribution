@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
@@ -49,6 +48,10 @@ object databaseMod {
   /* static members */
   object Database {
     
+    @JSImport("@pulumi/aws/athena/database", "Database")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Database resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object databaseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/athena/database", "Database.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Database = js.native
-    @JSImport("@pulumi/aws/athena/database", "Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Database = js.native
-    @JSImport("@pulumi/aws/athena/database", "Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DatabaseState): Database = js.native
-    @JSImport("@pulumi/aws/athena/database", "Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): Database = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DatabaseState): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
     
     /**
       * Returns true if the given object is an instance of Database.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/athena/database", "Database.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean]
   }
   
-  @js.native
   trait DatabaseArgs extends StObject {
     
     /**
       * Name of s3 bucket to save the results of the query execution.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
       */
-    val encryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]] = js.native
+    val encryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]] = js.undefined
     
     /**
       * A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Name of the database to create.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object DatabaseArgs {
     
@@ -137,28 +134,27 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait DatabaseState extends StObject {
     
     /**
       * Name of s3 bucket to save the results of the query execution.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
       */
-    val encryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]] = js.native
+    val encryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]] = js.undefined
     
     /**
       * A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Name of the database to create.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object DatabaseState {
     

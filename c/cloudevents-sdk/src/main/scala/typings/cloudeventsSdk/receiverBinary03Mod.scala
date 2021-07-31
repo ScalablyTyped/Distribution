@@ -6,43 +6,68 @@ import typings.cloudeventsSdk.anon.Dictx
 import typings.cloudeventsSdk.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiverBinary03Mod {
   
   @JSImport("cloudevents-sdk/lib/bindings/http/v03/receiver_binary_0_3", JSImport.Namespace)
   @js.native
-  class ^ () extends Receiver
-  
-  @js.native
-  trait Receiver extends StObject {
+  class ^ ()
+    extends StObject
+       with Receiver {
     
+    /* CompleteClass */
     var Spec: Instantiable0[typings.cloudeventsSdk.spec03Mod.^] = js.native
     
-    var allowedContentTypes: js.Array[_] = js.native
+    /* CompleteClass */
+    var allowedContentTypes: js.Array[js.Any] = js.native
     
+    /* CompleteClass */
     var extensionsPrefix: js.Any = js.native
     
+    /* CompleteClass */
     var parsersByEncoding: Dictx = js.native
     
-    var requiredHeaders: js.Array[_] = js.native
+    /* CompleteClass */
+    var requiredHeaders: js.Array[js.Any] = js.native
     
+    /* CompleteClass */
     var setterByHeader: NumberDictionary[Name] = js.native
     
+    /* CompleteClass */
     var spec: typings.cloudeventsSdk.spec03Mod.^ = js.native
     
+    /* CompleteClass */
     var specversion: js.Any = js.native
+  }
+  
+  trait Receiver extends StObject {
+    
+    var Spec: Instantiable0[typings.cloudeventsSdk.spec03Mod.^]
+    
+    var allowedContentTypes: js.Array[js.Any]
+    
+    var extensionsPrefix: js.Any
+    
+    var parsersByEncoding: Dictx
+    
+    var requiredHeaders: js.Array[js.Any]
+    
+    var setterByHeader: NumberDictionary[Name]
+    
+    var spec: typings.cloudeventsSdk.spec03Mod.^
+    
+    var specversion: js.Any
   }
   object Receiver {
     
     @scala.inline
     def apply(
       Spec: Instantiable0[typings.cloudeventsSdk.spec03Mod.^],
-      allowedContentTypes: js.Array[_],
+      allowedContentTypes: js.Array[js.Any],
       extensionsPrefix: js.Any,
       parsersByEncoding: Dictx,
-      requiredHeaders: js.Array[_],
+      requiredHeaders: js.Array[js.Any],
       setterByHeader: NumberDictionary[Name],
       spec: typings.cloudeventsSdk.spec03Mod.^,
       specversion: js.Any
@@ -55,7 +80,7 @@ object receiverBinary03Mod {
     implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAllowedContentTypes(value: js.Array[_]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
+      def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
@@ -67,7 +92,7 @@ object receiverBinary03Mod {
       def setParsersByEncoding(value: Dictx): Self = StObject.set(x, "parsersByEncoding", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRequiredHeaders(value: js.Array[_]): Self = StObject.set(x, "requiredHeaders", value.asInstanceOf[js.Any])
+      def setRequiredHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "requiredHeaders", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRequiredHeadersVarargs(value: js.Any*): Self = StObject.set(x, "requiredHeaders", js.Array(value :_*))

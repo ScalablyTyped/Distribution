@@ -83,7 +83,6 @@ import typings.uifabricMergeStyles.uifabricMergeStylesStrings.visible
 import typings.uifabricMergeStyles.uifabricMergeStylesStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object irawstylebaseMod {
@@ -376,31 +375,32 @@ object irawstylebaseMod {
     def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
   }
   
-  @js.native
-  trait IFontFace extends IRawFontStyle {
+  trait IFontFace
+    extends StObject
+       with IRawFontStyle {
     
     /**
       * Determines how a font face is displayed based on whether and when it is downloaded
       * and ready to use.
       */
-    var fontDisplay: js.UndefOr[auto | block | swap | fallback | optional] = js.native
+    var fontDisplay: js.UndefOr[auto | block | swap | fallback | optional] = js.undefined
     
     /**
       * Feature settings for the font.
       */
-    var fontFeatureSettings: js.UndefOr[String] = js.native
+    var fontFeatureSettings: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the src of the font.
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
     /**
       * unicode-range allows you to set a specific range of characters to be downloaded
       * from a font (embedded using \@font-face) and made available for use on the current
       * page.
       */
-    var unicodeRange: js.UndefOr[ICSSRule | String] = js.native
+    var unicodeRange: js.UndefOr[ICSSRule | String] = js.undefined
   }
   object IFontFace {
     
@@ -600,7 +600,6 @@ object irawstylebaseMod {
     def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
   }
   
-  @js.native
   trait IRawFontStyle extends StObject {
     
     /**
@@ -608,7 +607,7 @@ object irawstylebaseMod {
       * either set up six of the most mature font properties in one line, or you can set
       *  one of a choice of keywords to adopt a system font setting.
       */
-    var font: js.UndefOr[ICSSRule | String] = js.native
+    var font: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The font-family property allows one or more font family names and/or generic family
@@ -616,7 +615,7 @@ object irawstylebaseMod {
       * goes through the list; for each character in the selection it applies the first
       * font family that has an available glyph for that character.
       */
-    var fontFamily: js.UndefOr[ICSSRule | String] = js.native
+    var fontFamily: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The font-kerning property allows contextual adjustment of inter-glyph spacing, i.e.
@@ -624,7 +623,7 @@ object irawstylebaseMod {
       * kerning</bold> - that utilizes adjustment data contained in the font. Optical
       * Kerning is not supported as yet.
       */
-    var fontKerning: js.UndefOr[ICSSRule | String] = js.native
+    var fontKerning: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the size of the font. Used to compute em and ex units.
@@ -632,7 +631,7 @@ object irawstylebaseMod {
       */
     var fontSize: js.UndefOr[
         ICSSRule | `xx-small` | `x-small` | small | medium | large | `x-large` | `xx-large` | larger | smaller | ICSSPixelUnitRule | ICSSPercentageRule
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The font-size-adjust property adjusts the font-size of the fallback fonts defined
@@ -641,7 +640,7 @@ object irawstylebaseMod {
       * See CSS 3 font-size-adjust property
       * https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust
       */
-    var fontSizeAdjust: js.UndefOr[ICSSRule | none | Double | String] = js.native
+    var fontSizeAdjust: js.UndefOr[ICSSRule | none | Double | String] = js.undefined
     
     /**
       * Allows you to expand or condense the widths for a normal, condensed, or expanded
@@ -651,7 +650,7 @@ object irawstylebaseMod {
       */
     var fontStretch: js.UndefOr[
         ICSSRule | normal | `ultra-condensed` | `extra-condensed` | condensed | `semi-condensed` | `semi-expanded` | expanded | `extra-expanded` | `ultra-expanded` | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The font-style property allows normal, italic, or oblique faces to be selected.
@@ -660,31 +659,31 @@ object irawstylebaseMod {
       * sloping the glyphs of the regular face.
       * See CSS 3 font-style property https://www.w3.org/TR/css-fonts-3/#propdef-font-style
       */
-    var fontStyle: js.UndefOr[ICSSRule | normal | italic | oblique | String] = js.native
+    var fontStyle: js.UndefOr[ICSSRule | normal | italic | oblique | String] = js.undefined
     
     /**
       * This value specifies whether the user agent is allowed to synthesize bold or
       *  oblique font faces when a font family lacks bold or italic faces.
       */
-    var fontSynthesis: js.UndefOr[ICSSRule | String] = js.native
+    var fontSynthesis: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The font-variant property enables you to select the small-caps font within a font
       * family.
       */
-    var fontVariant: js.UndefOr[ICSSRule | String] = js.native
+    var fontVariant: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Fonts can provide alternate glyphs in addition to default glyph for a character.
       * This property provides control over the selection of these alternate glyphs.
       */
-    var fontVariantAlternates: js.UndefOr[ICSSRule | String] = js.native
+    var fontVariantAlternates: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the weight or boldness of the font.
       * See CSS 3 'font-weight' property https://www.w3.org/TR/css-fonts-3/#propdef-font-weight
       */
-    var fontWeight: js.UndefOr[IFontWeight | String] = js.native
+    var fontWeight: js.UndefOr[IFontWeight | String] = js.undefined
   }
   object IRawFontStyle {
     
@@ -769,49 +768,50 @@ object irawstylebaseMod {
     }
   }
   
-  @js.native
-  trait IRawStyleBase extends IRawFontStyle {
+  trait IRawStyleBase
+    extends StObject
+       with IRawFontStyle {
     
     /**
       * (Moz specific) font smoothing directive.
       */
-    var MozOsxFontSmoothing: js.UndefOr[none | antialiased | grayscale | `subpixel-antialiased` | String] = js.native
+    var MozOsxFontSmoothing: js.UndefOr[none | antialiased | grayscale | `subpixel-antialiased` | String] = js.undefined
     
     /**
       * (Ms specific) constrast adjust rule.
       */
-    var MsHighContrastAdjust: js.UndefOr[ICSSRule | String] = js.native
+    var MsHighContrastAdjust: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * (Ms specific) scrollbar behavior adjust rule.
       */
-    var MsOverflowStyle: js.UndefOr[auto | none | scrollbar | `-ms-autohiding-scrollbar` | String] = js.native
+    var MsOverflowStyle: js.UndefOr[auto | none | scrollbar | `-ms-autohiding-scrollbar` | String] = js.undefined
     
     /**
       * Edge requires the -webkit prefix backdrop-filter.
       */
-    var WebkitBackdropFilter: js.UndefOr[ICSSRule | String] = js.native
+    var WebkitBackdropFilter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * (Webkit specific) font smoothing directive.
       */
-    var WebkitFontSmoothing: js.UndefOr[none | antialiased | grayscale | `subpixel-antialiased` | String] = js.native
+    var WebkitFontSmoothing: js.UndefOr[none | antialiased | grayscale | `subpixel-antialiased` | String] = js.undefined
     
     /**
       * (Webkit specific) momentum scrolling on iOS devices
       */
-    var WebkitOverflowScrolling: js.UndefOr[auto | touch | String] = js.native
+    var WebkitOverflowScrolling: js.UndefOr[auto | touch | String] = js.undefined
     
     /**
       * (Webkit specific) color of the highlight that appears overa  link while it's being tapped
       */
-    var WebkitTapHighlightColor: js.UndefOr[String] = js.native
+    var WebkitTapHighlightColor: js.UndefOr[String] = js.undefined
     
     /**
       * (Webkit specific) controls the text inflation algorithm used on some smartphones and tablets.
       * Other browsers will ignore this property.
       */
-    var WebkitTextSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule | String] = js.native
+    var WebkitTextSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule | String] = js.undefined
     
     /**
       * Aligns a flex container's lines within the flex container when there is extra space
@@ -819,13 +819,13 @@ object irawstylebaseMod {
       */
     var alignContent: js.UndefOr[
         ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Sets the default alignment in the cross axis for all of the flex container's items,
       * including anonymous flex items, similarly to how justify-content aligns items along the main axis.
       */
-    var alignItems: js.UndefOr[ICSSRule | `flex-start` | `flex-end` | center | baseline | stretch | String] = js.native
+    var alignItems: js.UndefOr[ICSSRule | `flex-start` | `flex-end` | center | baseline | stretch | String] = js.undefined
     
     /**
       * Aligns the box (as the alignment subject) within its containing block (as the alignment container)
@@ -836,7 +836,7 @@ object irawstylebaseMod {
       */
     var alignSelf: js.UndefOr[
         ICSSRule | auto | normal | stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This property allows precise alignment of elements, such as graphics, that do not
@@ -845,7 +845,7 @@ object irawstylebaseMod {
       * alignment-baseline can be explicitly determined. It also determines precisely
       * the alignment point for each glyph within a textual element.
       */
-    var alignmentAdjust: js.UndefOr[ICSSRule | String] = js.native
+    var alignmentAdjust: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies how an object is aligned with respect to its parent. This property specifies
@@ -854,7 +854,7 @@ object irawstylebaseMod {
       * across font size changes. It defaults to the baseline with the same name as the computed
       * value of the alignment-baseline property.
       */
-    var alignmentBaseline: js.UndefOr[ICSSRule | String] = js.native
+    var alignmentBaseline: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The animation CSS property is a shorthand property for the various animation properties:
@@ -862,69 +862,69 @@ object irawstylebaseMod {
       * `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and
       * `animation-play-state`.
       */
-    var animation: js.UndefOr[ICSSRule | String] = js.native
+    var animation: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines a length of time to elapse before an animation starts, allowing an animation to begin execution
       * some time after it is applied.
       */
-    var animationDelay: js.UndefOr[ICSSRule | String] = js.native
+    var animationDelay: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines whether an animation should run in reverse on some or all cycles.
       */
-    var animationDirection: js.UndefOr[ICSSRule | String] = js.native
+    var animationDirection: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the length an animation takes to finish. Default value is 0, meaning
       * there will be no animation.
       */
-    var animationDuration: js.UndefOr[ICSSRule | String] = js.native
+    var animationDuration: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The animation-fill-mode CSS property specifies how a CSS animation should apply
       * styles to its target before and after its execution.
       */
-    var animationFillMode: js.UndefOr[ICSSRule | none | forwards | backwards | both | String] = js.native
+    var animationFillMode: js.UndefOr[ICSSRule | none | forwards | backwards | both | String] = js.undefined
     
     /**
       * Specifies how many times an animation cycle should play.
       */
-    var animationIterationCount: js.UndefOr[ICSSRule | String] = js.native
+    var animationIterationCount: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines the list of animations that apply to the element.
       */
-    var animationName: js.UndefOr[ICSSRule | String] = js.native
+    var animationName: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines whether an animation is running or paused.
       */
-    var animationPlayState: js.UndefOr[ICSSRule | String] = js.native
+    var animationPlayState: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The animation-timing-function specifies the speed curve of an animation.
       */
-    var animationTimingFunction: js.UndefOr[ICSSRule | String] = js.native
+    var animationTimingFunction: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Allows changing the style of any element to platform-based interface elements or
       * vice versa.
       */
-    var appearance: js.UndefOr[ICSSRule | String] = js.native
+    var appearance: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Lets you apply graphical effects such as blurring or color shifting to the area
       * behind an element. Because it applies to everything behind the element, to see
       * the effect you must make the element or its background at least partially transparent.
       */
-    var backdropFilter: js.UndefOr[ICSSRule | String] = js.native
+    var backdropFilter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Determines whether or not the “back” side of a transformed element is visible when
       * facing the viewer.
       */
-    var backfaceVisibility: js.UndefOr[ICSSRule | String] = js.native
+    var backfaceVisibility: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Shorthand property to set the values for one or more of:
@@ -932,7 +932,7 @@ object irawstylebaseMod {
       * background-origin, background-position, background-repeat,
       * background-size, and background-attachment.
       */
-    var background: js.UndefOr[ICSSRule | String] = js.native
+    var background: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * If a background-image is specified, this property determines
@@ -940,7 +940,7 @@ object irawstylebaseMod {
       * or scrolls along with its containing block.
       * See CSS 3 background-attachment property https://drafts.csswg.org/css-backgrounds-3/#the-background-attachment
       */
-    var backgroundAttachment: js.UndefOr[ICSSRule | scroll | fixed | local | String] = js.native
+    var backgroundAttachment: js.UndefOr[ICSSRule | scroll | fixed | local | String] = js.undefined
     
     /**
       * This property describes how the element's background images should blend with each
@@ -950,7 +950,7 @@ object irawstylebaseMod {
       * comma-separated values to match the number of layers, the UA must calculate its
       * used value by repeating the list of values until there are enough.
       */
-    var backgroundBlendMode: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundBlendMode: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The background-clip CSS property specifies if an element's background, whether a
@@ -960,89 +960,89 @@ object irawstylebaseMod {
       *
       * \* The `text` value is experimental and should not be used in production code.
       */
-    var backgroundClip: js.UndefOr[ICSSRule | `border-box` | `padding-box` | `content-box` | text | String] = js.native
+    var backgroundClip: js.UndefOr[ICSSRule | `border-box` | `padding-box` | `content-box` | text | String] = js.undefined
     
     /**
       * Sets the background color of an element.
       */
-    var backgroundColor: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets a compositing style for background images and colors.
       */
-    var backgroundComposite: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundComposite: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Applies one or more background images to an element. These can be any valid CSS
       * image, including url() paths to image files or CSS gradients.
       */
-    var backgroundImage: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundImage: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies what the background-position property is relative to.
       */
-    var backgroundOrigin: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundOrigin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the position of a background image.
       */
-    var backgroundPosition: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundPosition: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Background-repeat defines if and how background images will be repeated after they
       * have been sized and positioned
       */
-    var backgroundRepeat: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundRepeat: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the size of background images
       */
-    var backgroundSize: js.UndefOr[ICSSRule | String] = js.native
+    var backgroundSize: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Shorthand property that defines the different properties of all four sides of an
       * element's border in a single declaration. It can be used to set border-width,
       * border-style and border-color, or a subset of these.
       */
-    var border: js.UndefOr[ICSSRule | `0` | String] = js.native
+    var border: js.UndefOr[ICSSRule | `0` | String] = js.undefined
     
     /**
       * Shorthand that sets the values of border-bottom-color,
       * border-bottom-style, and border-bottom-width.
       */
-    var borderBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the color of the bottom border of an element.
       */
-    var borderBottomColor: js.UndefOr[ICSSRule | String] = js.native
+    var borderBottomColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines the shape of the border of the bottom-left corner.
       */
-    var borderBottomLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderBottomLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Defines the shape of the border of the bottom-right corner.
       */
-    var borderBottomRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderBottomRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the line style of the bottom border of a box.
       */
-    var borderBottomStyle: js.UndefOr[ICSSRule | String] = js.native
+    var borderBottomStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the width of an element's bottom border. To set all four borders, use the
       * border-width shorthand property which sets the values simultaneously for
       * border-top-width, border-right-width, border-bottom-width, and border-left-width.
       */
-    var borderBottomWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderBottomWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Border-collapse can be used for collapsing the borders between table cells
       */
-    var borderCollapse: js.UndefOr[ICSSRule | String] = js.native
+    var borderCollapse: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The CSS border-color property sets the color of an element's four borders. This
@@ -1057,20 +1057,20 @@ object irawstylebaseMod {
       * vertical, and bottom values, in that order. Four values set all for sides: top,
       * right, bottom, and left, in that order.
       */
-    var borderColor: js.UndefOr[ICSSRule | String] = js.native
+    var borderColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies different corner clipping effects, such as scoop (inner curves), bevel
       * (straight cuts) or notch (cut-off rectangles). Works along with border-radius to
       * specify the size of each corner effect.
       */
-    var borderCornerShape: js.UndefOr[ICSSRule | String] = js.native
+    var borderCornerShape: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The property border-image-source is used to set the image to be used instead of
       * the border style. If this is set to none the border-style is used instead.
       */
-    var borderImageSource: js.UndefOr[ICSSRule | String] = js.native
+    var borderImageSource: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The border-image-width CSS property defines the offset to use for dividing the
@@ -1079,7 +1079,7 @@ object irawstylebaseMod {
       * and central right edge. They represent inward distance from the top, right, bottom,
       * and left edges.
       */
-    var borderImageWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderImageWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Shorthand property that defines the border-width, border-style and border-color of
@@ -1087,7 +1087,7 @@ object irawstylebaseMod {
       * corresponding longhand properties to set specific individual properties of the left
       * border — border-left-width, border-left-style and border-left-color.
       */
-    var borderLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The CSS border-left-color property sets the color of an element's left border. This
@@ -1096,26 +1096,26 @@ object irawstylebaseMod {
       * border-left or border-color. Colors can be defined several ways. For more
       * information, see Usage.
       */
-    var borderLeftColor: js.UndefOr[ICSSRule | String] = js.native
+    var borderLeftColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the style of an element's left border. To set all four borders, use the
       * shorthand property, border-style. Otherwise, you can set the borders individually
       * with border-top-style, border-right-style, border-bottom-style, border-left-style.
       */
-    var borderLeftStyle: js.UndefOr[ICSSRule | String] = js.native
+    var borderLeftStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the width of an element's left border. To set all four borders, use the
       * border-width shorthand property which sets the values simultaneously for
       * border-top-width, border-right-width, border-bottom-width, and border-left-width.
       */
-    var borderLeftWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderLeftWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Defines how round the border's corners are.
       */
-    var borderRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Shorthand property that defines the border-width, border-style and border-color of
@@ -1123,7 +1123,7 @@ object irawstylebaseMod {
       * corresponding longhand properties to set specific individual properties of the
       * right border — border-right-width, border-right-style and border-right-color.
       */
-    var borderRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the color of an element's right border. This page explains the
@@ -1131,26 +1131,26 @@ object irawstylebaseMod {
       * border's right color as part of a shorthand set, either border-right or border-color.
       * Colors can be defined several ways. For more information, see Usage.
       */
-    var borderRightColor: js.UndefOr[ICSSRule | String] = js.native
+    var borderRightColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the style of an element's right border. To set all four borders, use the
       * shorthand property, border-style. Otherwise, you can set the borders individually
       * with border-top-style, border-right-style, border-bottom-style, border-left-style.
       */
-    var borderRightStyle: js.UndefOr[ICSSRule | String] = js.native
+    var borderRightStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the width of an element's right border. To set all four borders, use the
       * border-width shorthand property which sets the values simultaneously for
       * border-top-width, border-right-width, border-bottom-width, and border-left-width.
       */
-    var borderRightWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderRightWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Specifies the distance between the borders of adjacent cells.
       */
-    var borderSpacing: js.UndefOr[ICSSRule | String] = js.native
+    var borderSpacing: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the style of an element's four borders. This property can have from one to
@@ -1159,7 +1159,7 @@ object irawstylebaseMod {
       *  border-right-style, border-bottom-style, border-left-style, where each border
       *  style may be assigned a separate value.
       */
-    var borderStyle: js.UndefOr[ICSSRule | String] = js.native
+    var borderStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Shorthand property that defines the border-width, border-style and border-color of
@@ -1167,7 +1167,7 @@ object irawstylebaseMod {
       * corresponding longhand properties to set specific individual properties of the top
       * border — border-top-width, border-top-style and border-top-color.
       */
-    var borderTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the color of an element's top border. This page explains the border-top-color
@@ -1175,38 +1175,38 @@ object irawstylebaseMod {
       * part of a shorthand set, either border-top or border-color.
       * Colors can be defined several ways. For more information, see Usage.
       */
-    var borderTopColor: js.UndefOr[ICSSRule | String] = js.native
+    var borderTopColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the rounding of the top-left corner of the element.
       */
-    var borderTopLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderTopLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the rounding of the top-right corner of the element.
       */
-    var borderTopRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderTopRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the style of an element's top border. To set all four borders, use the
       * shorthand property, border-style. Otherwise, you can set the borders individually
       * with border-top-style, border-right-style, border-bottom-style, border-left-style.
       */
-    var borderTopStyle: js.UndefOr[ICSSRule | String] = js.native
+    var borderTopStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the width of an element's top border. To set all four borders, use the
       * border-width shorthand property which sets the values simultaneously for
       * border-top-width, border-right-width, border-bottom-width, and border-left-width.
       */
-    var borderTopWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderTopWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the width of an element's four borders. This property can have from one to
       * four values. This is a shorthand property for setting values simultaneously for
       * border-top-width, border-right-width, border-bottom-width, and border-left-width.
       */
-    var borderWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var borderWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * This property specifies how far an absolutely positioned box's bottom margin edge
@@ -1215,26 +1215,26 @@ object irawstylebaseMod {
       * (i.e., the box is given a position in the normal flow, then offset from that
       * position according to these properties).
       */
-    var bottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var bottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Breaks a box into fragments creating new borders, padding and repeating backgrounds
       * or lets it stay as a continuous box on a page break, column break, or, for inline
       * elements, at a line break.
       */
-    var boxDecorationBreak: js.UndefOr[ICSSRule | String] = js.native
+    var boxDecorationBreak: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Cast a drop shadow from the frame of almost any element.
       * MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
       */
-    var boxShadow: js.UndefOr[ICSSRule | String] = js.native
+    var boxShadow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The CSS box-sizing property is used to alter the default CSS box model used to
       * calculate width and height of the elements.
       */
-    var boxSizing: js.UndefOr[ICSSRule | `border-box` | `content-box` | String] = js.native
+    var boxSizing: js.UndefOr[ICSSRule | `border-box` | `content-box` | String] = js.undefined
     
     /**
       * The CSS break-after property allows you to force a break on multi-column layouts.
@@ -1243,90 +1243,90 @@ object irawstylebaseMod {
       * break-after CSS property describes how the page, column or region break behaves
       * after the generated box. If there is no generated box, the property is ignored.
       */
-    var breakAfter: js.UndefOr[ICSSRule | String] = js.native
+    var breakAfter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Control page/column/region breaks that fall above a block of content
       */
-    var breakBefore: js.UndefOr[ICSSRule | String] = js.native
+    var breakBefore: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Control page/column/region breaks that fall within a block of content
       */
-    var breakInside: js.UndefOr[ICSSRule | String] = js.native
+    var breakInside: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The clear CSS property specifies if an element can be positioned next to or must be
       * positioned below the floating elements that precede it in the markup.
       */
-    var clear: js.UndefOr[ICSSRule | String] = js.native
+    var clear: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Clipping crops an graphic, so that only a portion of the graphic is rendered, or
       * filled. This clip-rule property, when used with the clip-path property, defines
       * which clip rule, or algorithm, to use when filling the different parts of a graphics.
       */
-    var clipRule: js.UndefOr[ICSSRule | String] = js.native
+    var clipRule: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The color property sets the color of an element's foreground content (usually text),
       * accepting any standard CSS color from keywords and hex values to RGB(a) and HSL(a).
       */
-    var color: js.UndefOr[ICSSRule | String] = js.native
+    var color: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Describes the number of columns of the element.
       * See CSS 3 column-count property https://www.w3.org/TR/css3-multicol/#cc
       */
-    var columnCount: js.UndefOr[ICSSRule | Double | auto | String] = js.native
+    var columnCount: js.UndefOr[ICSSRule | Double | auto | String] = js.undefined
     
     /**
       * Specifies how to fill columns (balanced or sequential).
       */
-    var columnFill: js.UndefOr[ICSSRule | String] = js.native
+    var columnFill: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The column-gap property controls the width of the gap between columns in multi-column
       * elements.
       */
-    var columnGap: js.UndefOr[ICSSRule | String] = js.native
+    var columnGap: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the width, style, and color of the rule between columns.
       */
-    var columnRule: js.UndefOr[ICSSRule | String] = js.native
+    var columnRule: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the color of the rule between columns.
       */
-    var columnRuleColor: js.UndefOr[ICSSRule | String] = js.native
+    var columnRuleColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the width of the rule between columns.
       */
-    var columnRuleWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var columnRuleWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The column-span CSS property makes it possible for an element to span across all
       * columns when its value is set to all. An element that spans more than one column
       * is called a spanning element.
       */
-    var columnSpan: js.UndefOr[ICSSRule | String] = js.native
+    var columnSpan: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the width of columns in multi-column elements.
       */
-    var columnWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var columnWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * This property is a shorthand property for setting column-width and/or column-count.
       */
-    var columns: js.UndefOr[ICSSRule | String] = js.native
+    var columns: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Content for pseudo selectors.
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /**
       * The counter-increment property accepts one or more names of counters (identifiers),
@@ -1334,14 +1334,14 @@ object irawstylebaseMod {
       * counter should be incremented (e.g. if the value is 2, the counter increases by 2
       * each time it is invoked).
       */
-    var counterIncrement: js.UndefOr[ICSSRule | String] = js.native
+    var counterIncrement: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The counter-reset property contains a list of one or more names of counters, each
       * one optionally followed by an integer (otherwise, the integer defaults to 0.) Each
       * time the given element is invoked, the counters specified by the property are set to the given integer.
       */
-    var counterReset: js.UndefOr[ICSSRule | String] = js.native
+    var counterReset: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The cue property specifies sound files (known as an "auditory icon") to be played by
@@ -1351,7 +1351,7 @@ object irawstylebaseMod {
       * specified. The icon files may also be set separately with the cue-before and
       * cue-after properties.
       */
-    var cue: js.UndefOr[ICSSRule | String] = js.native
+    var cue: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The cue-after property specifies a sound file (known as an "auditory icon") to be
@@ -1359,18 +1359,18 @@ object irawstylebaseMod {
       * which the file should be played may also be specified. The shorthand property cue
       * sets cue sounds for both before and after the element is presented.
       */
-    var cueAfter: js.UndefOr[ICSSRule | String] = js.native
+    var cueAfter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the mouse cursor displayed when the mouse pointer is over an element.
       */
-    var cursor: js.UndefOr[ICSSRule | String] = js.native
+    var cursor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The direction CSS property specifies the text direction/writing direction. The rtl
       * is used for Hebrew or Arabic text, the ltr is for other languages.
       */
-    var direction: js.UndefOr[ICSSRule | String] = js.native
+    var direction: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies the type of rendering box used for an element. It is a
@@ -1378,7 +1378,7 @@ object irawstylebaseMod {
       * W3: https://www.w3.org/TR/css-display-3/#the-display-properties
       * MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/display
       */
-    var display: js.UndefOr[ICSSRule | ICSSDisplayRule | String] = js.native
+    var display: js.UndefOr[ICSSRule | ICSSDisplayRule | String] = js.undefined
     
     /**
       * The ‘fill’ property paints the interior of the given graphical element. The area to
@@ -1388,14 +1388,14 @@ object irawstylebaseMod {
       * property. The zero-width geometric outline of a shape is included in the area to be
       * painted.
       */
-    var fill: js.UndefOr[ICSSRule | String] = js.native
+    var fill: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * SVG: Specifies the opacity of the color or the content the current object is filled
       * with.
       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#FillOpacityProperty
       */
-    var fillOpacity: js.UndefOr[ICSSRule | Double] = js.native
+    var fillOpacity: js.UndefOr[ICSSRule | Double] = js.undefined
     
     /**
       * The ‘fill-rule’ property indicates the algorithm which is to be used to determine
@@ -1406,49 +1406,49 @@ object irawstylebaseMod {
       * The ‘fill-rule’ property provides two options for how the inside of a shape is
       * determined:
       */
-    var fillRule: js.UndefOr[ICSSRule | String] = js.native
+    var fillRule: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Applies various image processing effects. This property is largely unsupported. See
       * Compatibility section for more information.
       */
-    var filter: js.UndefOr[ICSSRule | String] = js.native
+    var filter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
       */
-    var flex: js.UndefOr[ICSSRule | String | Double] = js.native
+    var flex: js.UndefOr[ICSSRule | String | Double] = js.undefined
     
     /**
       * The flex-basis CSS property describes the initial main size of the flex item before
       * any free space is distributed according to the flex factors described in the flex
       * property (flex-grow and flex-shrink).
       */
-    var flexBasis: js.UndefOr[ICSSRule | String | Double] = js.native
+    var flexBasis: js.UndefOr[ICSSRule | String | Double] = js.undefined
     
     /**
       * The flex-direction CSS property describes how flex items are placed in the flex
       * container, by setting the direction of the flex container's main axis.
       */
-    var flexDirection: js.UndefOr[ICSSRule | row | `row-reverse` | column | `column-reverse` | String] = js.native
+    var flexDirection: js.UndefOr[ICSSRule | row | `row-reverse` | column | `column-reverse` | String] = js.undefined
     
     /**
       * The flex-flow CSS property defines the flex container's main and cross axis. It is
       * a shorthand property for the flex-direction and flex-wrap properties.
       */
-    var flexFlow: js.UndefOr[ICSSRule | String] = js.native
+    var flexFlow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the flex grow factor of a flex item.
       * See CSS flex-grow property https://drafts.csswg.org/css-flexbox-1/#flex-grow-property
       */
-    var flexGrow: js.UndefOr[ICSSRule | Double | String] = js.native
+    var flexGrow: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * Specifies the flex shrink factor of a flex item.
       * See CSS flex-shrink property https://drafts.csswg.org/css-flexbox-1/#flex-shrink-property
       */
-    var flexShrink: js.UndefOr[ICSSRule | Double | String] = js.native
+    var flexShrink: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * Specifies whether flex items are forced into a single line or can be wrapped onto
@@ -1456,7 +1456,7 @@ object irawstylebaseMod {
       * the direction in which lines are stacked.
       * See CSS flex-wrap property https://drafts.csswg.org/css-flexbox-1/#flex-wrap-property
       */
-    var flexWrap: js.UndefOr[ICSSRule | nowrap | wrap | `wrap-reverse` | String] = js.native
+    var flexWrap: js.UndefOr[ICSSRule | nowrap | wrap | `wrap-reverse` | String] = js.undefined
     
     /**
       * Elements which have the style float are floated horizontally. These elements can
@@ -1465,49 +1465,49 @@ object irawstylebaseMod {
       * are not impacted. If several floating elements are placed after each other, they
       * will float next to each other as long as there is room.
       */
-    var float: js.UndefOr[ICSSRule | String] = js.native
+    var float: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Flows content from a named flow (specified by a corresponding flow-into) through
       * selected elements to form a dynamic chain of layout regions.
       */
-    var flowFrom: js.UndefOr[ICSSRule | String] = js.native
+    var flowFrom: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The property which allows authors to opt particular elements out of forced colors mode,
       * restoring full control over the colors to CSS. Currently it's only supported in Edge Chromium.
       */
-    var forcedColorAdjust: js.UndefOr[auto | none | String] = js.native
+    var forcedColorAdjust: js.UndefOr[auto | none | String] = js.undefined
     
     /**
       * Lays out one or more grid items bound by 4 grid lines. Shorthand for setting
       * grid-column-start, grid-column-end, grid-row-start, and grid-row-end in a single
       * declaration.
       */
-    var gridArea: js.UndefOr[ICSSRule | String] = js.native
+    var gridArea: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the size of an implicitly-created grid column track
       */
-    var gridAutoColumns: js.UndefOr[ICSSRule | String] = js.native
+    var gridAutoColumns: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Controls how the auto-placement algorithm works,
       * specifying exactly how auto-placed items get flowed into the grid.
       */
-    var gridAutoFlow: js.UndefOr[ICSSRule | String] = js.native
+    var gridAutoFlow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the size of an implicitly-created grid column track
       */
-    var gridAutoRows: js.UndefOr[ICSSRule | String] = js.native
+    var gridAutoRows: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Controls a grid item's placement in a grid area, particularly grid position and a
       * grid span. Shorthand for setting grid-column-start and grid-column-end in a single
       * declaration.
       */
-    var gridColumn: js.UndefOr[ICSSRule | String] = js.native
+    var gridColumn: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Controls a grid item's placement in a grid area as well as grid position and a
@@ -1515,12 +1515,12 @@ object irawstylebaseMod {
       * grid-column-start) determines a grid item's placement by specifying the grid lines
       * of a grid item's grid area.
       */
-    var gridColumnEnd: js.UndefOr[ICSSRule | String] = js.native
+    var gridColumnEnd: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the size of the gap (gutter) between an element's columns
       */
-    var gridColumnGap: js.UndefOr[ICSSRule | String] = js.native
+    var gridColumnGap: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Determines a grid item's placement by specifying the starting grid lines of a grid
@@ -1528,20 +1528,20 @@ object irawstylebaseMod {
       * position and a grid span. See also ( grid-row-start, grid-row-end, and
       * grid-column-end)
       */
-    var gridColumnStart: js.UndefOr[ICSSRule | String] = js.native
+    var gridColumnStart: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the gaps (gutters) between grid rows and columns. It is a shorthand
       * for grid-row-gap and grid-column-gap.
       */
-    var gridGap: js.UndefOr[ICSSRule | String] = js.native
+    var gridGap: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Gets or sets a value that indicates which row an element within a Grid should
       * appear in. Shorthand for setting grid-row-start and grid-row-end in a single
       * declaration.
       */
-    var gridRow: js.UndefOr[ICSSRule | String] = js.native
+    var gridRow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Determines a grid item’s placement by specifying the block-end. A grid item's
@@ -1550,12 +1550,12 @@ object irawstylebaseMod {
       * determines a grid item's placement by specifying the grid lines of a grid item's
       * grid area.
       */
-    var gridRowEnd: js.UndefOr[ICSSRule | String] = js.native
+    var gridRowEnd: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the size of the gap (gutter) between an element's grid rows
       */
-    var gridRowGap: js.UndefOr[ICSSRule | String] = js.native
+    var gridRowGap: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies a row position based upon an integer location, string value, or desired
@@ -1563,14 +1563,14 @@ object irawstylebaseMod {
       * css/properties/grid-row is used as short-hand for grid-row-position and
       * grid-row-position
       */
-    var gridRowPosition: js.UndefOr[ICSSRule | String] = js.native
+    var gridRowPosition: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies a grid item’s start position within the grid row by contributing a line,
       * a span, or nothing (automatic) to its grid placement, thereby specifying the
       * inline-start edge of its grid area
       */
-    var gridRowStart: js.UndefOr[ICSSRule | String] = js.native
+    var gridRowStart: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies named grid areas which are not associated with any particular grid item,
@@ -1578,12 +1578,12 @@ object irawstylebaseMod {
       * grid-template-areas property also provides a visualization of the structure of the
       * grid, making the overall layout of the grid container easier to understand.
       */
-    var gridTemplate: js.UndefOr[ICSSRule | String] = js.native
+    var gridTemplate: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies named grid areas
       */
-    var gridTemplateAreas: js.UndefOr[ICSSRule | String] = js.native
+    var gridTemplateAreas: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies (with grid-template-rows) the line names and track sizing functions of
@@ -1591,7 +1591,7 @@ object irawstylebaseMod {
       * grid container’s size, a measurement of the contents occupying the column or row,
       * or a fraction of the free space in the grid.
       */
-    var gridTemplateColumns: js.UndefOr[ICSSRule | String] = js.native
+    var gridTemplateColumns: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies (with grid-template-columns) the line names and track sizing functions of
@@ -1599,37 +1599,37 @@ object irawstylebaseMod {
       * grid container’s size, a measurement of the contents occupying the column or row,
       * or a fraction of the free space in the grid.
       */
-    var gridTemplateRows: js.UndefOr[ICSSRule | String] = js.native
+    var gridTemplateRows: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the height of an element. The content area of the element height does not
       * include the padding, border, and margin of the element.
       */
-    var height: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var height: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Specifies the minimum number of characters in a hyphenated word
       */
-    var hyphenateLimitChars: js.UndefOr[ICSSRule | String] = js.native
+    var hyphenateLimitChars: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Indicates the maximum number of successive hyphenated lines in an element. The
       * ‘no-limit’ value means that there is no limit.
       */
-    var hyphenateLimitLines: js.UndefOr[ICSSRule | String] = js.native
+    var hyphenateLimitLines: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the maximum amount of trailing whitespace (before justification) that may
       * be left in a line before hyphenation is triggered to pull part of a word from the
       * next line back up into the current one.
       */
-    var hyphenateLimitZone: js.UndefOr[ICSSRule | String] = js.native
+    var hyphenateLimitZone: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies whether or not words in a sentence can be split by the use of a manual or
       * automatic hyphenation mechanism.
       */
-    var hyphens: js.UndefOr[ICSSRule | String] = js.native
+    var hyphens: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines how the browser distributes space between and around flex items
@@ -1639,7 +1639,7 @@ object irawstylebaseMod {
       */
     var justifyContent: js.UndefOr[
         ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly` | stretch | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Justifies the box (as the alignment subject) within its containing block (as the alignment container)
@@ -1650,31 +1650,31 @@ object irawstylebaseMod {
       */
     var justifySelf: js.UndefOr[
         ICSSRule | auto | normal | stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule | left | right | (`safe left`) | (`safe right`) | (`unsafe left`) | (`unsafe right`) | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Sets the left position of an element relative to the nearest ancestor that is set
       * to position absolute, relative, or fixed.
       */
-    var left: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var left: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The letter-spacing CSS property specifies the spacing behavior between text
       * characters.
       */
-    var letterSpacing: js.UndefOr[ICSSRule | String] = js.native
+    var letterSpacing: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the height of an inline block level element.
       * See CSS 2.1 line-height property https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height
       */
-    var lineHeight: js.UndefOr[ICSSRule | normal | ICSSPixelUnitRule | ICSSPercentageRule] = js.native
+    var lineHeight: js.UndefOr[ICSSRule | normal | ICSSPixelUnitRule | ICSSPercentageRule] = js.undefined
     
     /**
       * Shorthand property that sets the list-style-type, list-style-position and
       * list-style-image properties in one declaration.
       */
-    var listStyle: js.UndefOr[ICSSRule | String] = js.native
+    var listStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property sets the image that will be used as the list item marker. When the
@@ -1682,68 +1682,68 @@ object irawstylebaseMod {
       * marker. That also means that if the image is not available, it will show the style
       * specified by list-style-property
       */
-    var listStyleImage: js.UndefOr[ICSSRule | String] = js.native
+    var listStyleImage: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies if the list-item markers should appear inside or outside the content flow.
       */
-    var listStylePosition: js.UndefOr[ICSSRule | String] = js.native
+    var listStylePosition: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the type of list-item marker in a list.
       */
-    var listStyleType: js.UndefOr[ICSSRule | String] = js.native
+    var listStyleType: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The margin property is shorthand to allow you to set all four margins of an element
       * at once. Its equivalent longhand properties are margin-top, margin-right,
       * margin-bottom and margin-left. Negative values are also allowed.
       */
-    var margin: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var margin: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * margin-bottom sets the bottom margin of an element.
       */
-    var marginBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var marginBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * margin-left sets the left margin of an element.
       */
-    var marginLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var marginLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * margin-right sets the right margin of an element.
       */
-    var marginRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var marginRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * margin-top sets the top margin of an element.
       */
-    var marginTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var marginTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The marquee-direction determines the initial direction in which the marquee content moves.
       */
-    var marqueeDirection: js.UndefOr[ICSSRule | String] = js.native
+    var marqueeDirection: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The 'marquee-style' property determines a marquee's scrolling behavior.
       */
-    var marqueeStyle: js.UndefOr[ICSSRule | String] = js.native
+    var marqueeStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property is shorthand for setting mask-image, mask-mode, mask-repeat,
       * mask-position, mask-clip, mask-origin, mask-composite and mask-size. Omitted
       * values are set to their original properties' initial values.
       */
-    var mask: js.UndefOr[ICSSRule | String] = js.native
+    var mask: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property is shorthand for setting mask-border-source, mask-border-slice,
       * mask-border-width, mask-border-outset, and mask-border-repeat. Omitted values
       * are set to their original properties' initial values.
       */
-    var maskBorder: js.UndefOr[ICSSRule | String] = js.native
+    var maskBorder: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies how the images for the sides and the middle part of the
@@ -1752,7 +1752,7 @@ object irawstylebaseMod {
       * absent, it is assumed to be the same as the first, similar to the CSS
       * border-image-repeat property.
       */
-    var maskBorderRepeat: js.UndefOr[ICSSRule | String] = js.native
+    var maskBorderRepeat: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies inward offsets from the top, right, bottom, and left
@@ -1762,26 +1762,26 @@ object irawstylebaseMod {
       * top, right, bottom and left offsets in that order, similar to the CSS
       * border-image-slice property.
       */
-    var maskBorderSlice: js.UndefOr[ICSSRule | String] = js.native
+    var maskBorderSlice: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies an image to be used as a mask. An image that is empty, fails to
       * download, is non-existent, or cannot be displayed is ignored and does not mask
       * the element.
       */
-    var maskBorderSource: js.UndefOr[ICSSRule | String] = js.native
+    var maskBorderSource: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property sets the width of the mask box image, similar to the CSS
       * border-image-width property.
       */
-    var maskBorderWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var maskBorderWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Determines the mask painting area, which defines the area that is affected by
       * the mask. The painted content of an element may be restricted to this area.
       */
-    var maskClip: js.UndefOr[ICSSRule | String] = js.native
+    var maskClip: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * For elements rendered as a single box, specifies the mask positioning area. For
@@ -1789,7 +1789,7 @@ object irawstylebaseMod {
       * on several pages) specifies which boxes box-decoration-break operates on to
       * determine the mask positioning area(s).
       */
-    var maskOrigin: js.UndefOr[ICSSRule | String] = js.native
+    var maskOrigin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property must not be used. It is no longer included in any standard or
@@ -1797,66 +1797,66 @@ object irawstylebaseMod {
       * used when the text-align-last property is set to size. It controls allowed
       * adjustments of font-size to fit line content.
       */
-    var maxFontSize: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var maxFontSize: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the maximum height for an element. It prevents the height of the element to
       *  exceed the specified value. If min-height is specified and is greater than
       * max-height, max-height is overridden.
       */
-    var maxHeight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var maxHeight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the maximum width for an element. It limits the width property to be larger
       * than the value specified in max-width.
       */
-    var maxWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var maxWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the minimum height for an element. It prevents the height of the element to
       * be smaller than the specified value. The value of min-height overrides both
       * max-height and height.
       */
-    var minHeight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var minHeight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the minimum width of an element. It limits the width property to be not
       * smaller than the value specified in min-width.
       */
-    var minWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var minWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The mix-blend-mode CSS property describes how an element's content should blend
       * with the content of the element's direct parent and the element's background.
       */
-    var mixBlendMode: js.UndefOr[ICSSRule | IMixBlendModes | String] = js.native
+    var mixBlendMode: js.UndefOr[ICSSRule | IMixBlendModes | String] = js.undefined
     
     /**
       * The ‘object-fit’ property specifies how the contents of a replaced element should
       * be fitted to the box established by its used height and width.
       * See CSS 3 object-fit property https://www.w3.org/TR/css3-images/#the-object-fit
       */
-    var objectFit: js.UndefOr[ICSSRule | cover | contain | fill | none | String] = js.native
+    var objectFit: js.UndefOr[ICSSRule | cover | contain | fill | none | String] = js.undefined
     
     /**
       * Specifies the transparency of an element.
       * See CSS 3 opacity property https://drafts.csswg.org/css-color-3/#opacity
       */
-    var opacity: js.UndefOr[ICSSRule | Double | String] = js.native
+    var opacity: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * Specifies the order used to lay out flex items in their flex container.
       * Elements are laid out in the ascending order of the order value.
       * See CSS order property https://drafts.csswg.org/css-flexbox-1/#order-property
       */
-    var order: js.UndefOr[ICSSRule | Double | String] = js.native
+    var order: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * In paged media, this property defines the minimum number of lines in
       * a block container that must be left at the bottom of the page.
       * See CSS 3 orphans, widows properties https://drafts.csswg.org/css-break-3/#widows-orphans
       */
-    var orphans: js.UndefOr[ICSSRule | Double | String] = js.native
+    var orphans: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * The CSS outline property is a shorthand property for setting one or more of the
@@ -1870,31 +1870,31 @@ object irawstylebaseMod {
       * around all elements or shapes that are indicated to have an outline. Opera draws a
       * non-rectangular shape around a construct.
       */
-    var outline: js.UndefOr[ICSSRule | `0` | String] = js.native
+    var outline: js.UndefOr[ICSSRule | `0` | String] = js.undefined
     
     /**
       * The outline-color property sets the color of the outline of an element. An
       * outline is a line that is drawn around elements, outside the border edge, to make
       * the element stand out.
       */
-    var outlineColor: js.UndefOr[ICSSRule | String] = js.native
+    var outlineColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The outline-offset property offsets the outline and draw it beyond the border edge.
       */
-    var outlineOffset: js.UndefOr[ICSSRule | String] = js.native
+    var outlineOffset: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The overflow property controls how extra content exceeding the bounding box of an
       * element is rendered. It can be used in conjunction with an element that has a
       * fixed width and height, to eliminate text-induced page distortion.
       */
-    var overflow: js.UndefOr[ICSSRule | auto | hidden | scroll | visible] = js.native
+    var overflow: js.UndefOr[ICSSRule | auto | hidden | scroll | visible] = js.undefined
     
     /**
       * Specifies the preferred scrolling methods for elements that overflow.
       */
-    var overflowStyle: js.UndefOr[ICSSRule | String] = js.native
+    var overflowStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies whether or not the browser should insert line breaks within words to
@@ -1902,19 +1902,19 @@ object irawstylebaseMod {
       * overflow-wrap will only create a break if an entire word cannot be placed on its
       * own line without overflowing.
       */
-    var overflowWrap: js.UndefOr[ICSSRule | normal | `break-word` | String] = js.native
+    var overflowWrap: js.UndefOr[ICSSRule | normal | `break-word` | String] = js.undefined
     
     /**
       * Controls how extra content exceeding the x-axis of the bounding box of an element
       * is rendered.
       */
-    var overflowX: js.UndefOr[ICSSRule | auto | hidden | scroll | visible | String] = js.native
+    var overflowX: js.UndefOr[ICSSRule | auto | hidden | scroll | visible | String] = js.undefined
     
     /**
       * Controls how extra content exceeding the y-axis of the bounding box of an element
       * is rendered.
       */
-    var overflowY: js.UndefOr[ICSSRule | auto | hidden | scroll | visible | String] = js.native
+    var overflowY: js.UndefOr[ICSSRule | auto | hidden | scroll | visible | String] = js.undefined
     
     /**
       * The padding optional CSS property sets the required padding space on one to four
@@ -1925,7 +1925,7 @@ object irawstylebaseMod {
       * setting each side separately (padding-top, padding-right, padding-bottom,
       * padding-left).
       */
-    var padding: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var padding: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-block-end CSS property defines the logical block end padding
@@ -1934,7 +1934,7 @@ object irawstylebaseMod {
       * padding-top, padding-right, padding-bottom, or padding-left property
       * depending on the values defined for writing-mode, direction, and text-orientation.
       */
-    var paddingBlockEnd: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingBlockEnd: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-block-start CSS property defines the logical block start padding
@@ -1943,7 +1943,7 @@ object irawstylebaseMod {
       * padding-top, padding-right, padding-bottom, or padding-left property depending
       * on the values defined for writing-mode, direction, and text-orientation.
       */
-    var paddingBlockStart: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingBlockStart: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-bottom CSS property of an element sets the padding space required on
@@ -1951,7 +1951,7 @@ object irawstylebaseMod {
       * element and its border. Contrary to margin-bottom values, negative values of
       * padding-bottom are invalid.
       */
-    var paddingBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingBottom: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-inline-end CSS property defines the logical inline end padding of an element,
@@ -1960,7 +1960,7 @@ object irawstylebaseMod {
       * or padding-left property depending on the values defined for writing-mode, direction,
       * and text-orientation.
       */
-    var paddingInlineEnd: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingInlineEnd: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-inline-start CSS property defines the logical inline start padding of
@@ -1969,7 +1969,7 @@ object irawstylebaseMod {
       * padding-bottom, or padding-left property depending on the values defined for writing-mode,
       * direction, and text-orientation.
       */
-    var paddingInlineStart: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingInlineStart: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-left CSS property of an element sets the padding space required on the
@@ -1977,7 +1977,7 @@ object irawstylebaseMod {
       * element and its border. Contrary to margin-left values, negative values of
       * padding-left are invalid.
       */
-    var paddingLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingLeft: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-right CSS property of an element sets the padding space required on the
@@ -1985,7 +1985,7 @@ object irawstylebaseMod {
       * element and its border. Contrary to margin-right values, negative values of
       * padding-right are invalid.
       */
-    var paddingRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingRight: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The padding-top CSS property of an element sets the padding space required on the
@@ -1993,49 +1993,49 @@ object irawstylebaseMod {
       * and its border. Contrary to margin-top values, negative values of padding-top are
       * invalid.
       */
-    var paddingTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var paddingTop: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The page-break-after property is supported in all major browsers. With CSS3,
       *  page-break-* properties are only aliases of the break-* properties. The CSS3
       * Fragmentation spec defines breaks for all CSS box fragmentation.
       */
-    var pageBreakAfter: js.UndefOr[ICSSRule | String] = js.native
+    var pageBreakAfter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The page-break-before property sets the page-breaking behavior before an element.
       * With CSS3, page-break-* properties are only aliases of the break-* properties. The
       * CSS3 Fragmentation spec defines breaks for all CSS box fragmentation.
       */
-    var pageBreakBefore: js.UndefOr[ICSSRule | String] = js.native
+    var pageBreakBefore: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the page-breaking behavior inside an element. With CSS3, page-break-*
       * properties are only aliases of the break-* properties. The CSS3 Fragmentation spec
       * defines breaks for all CSS box fragmentation.
       */
-    var pageBreakInside: js.UndefOr[ICSSRule | String] = js.native
+    var pageBreakInside: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The pause property determines how long a speech media agent should pause before and
       * after presenting an element. It is a shorthand for the pause-before and pause-after
       *  properties.
       */
-    var pause: js.UndefOr[ICSSRule | String] = js.native
+    var pause: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The pause-after property determines how long a speech media agent should pause after
       * presenting an element. It may be replaced by the shorthand property pause, which
       * sets pause time before and after.
       */
-    var pauseAfter: js.UndefOr[ICSSRule | String] = js.native
+    var pauseAfter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The pause-before property determines how long a speech media agent should pause
       * before presenting an element. It may be replaced by the shorthand property pause,
       * which sets pause time before and after.
       */
-    var pauseBefore: js.UndefOr[ICSSRule | String] = js.native
+    var pauseBefore: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The perspective property defines how far an element is placed from the view on the
@@ -2048,7 +2048,7 @@ object irawstylebaseMod {
       * were a window through which the viewer was looking at the object. In discussion of
       * virtual environments, this flat surface is called a projection plane.
       */
-    var perspective: js.UndefOr[ICSSRule | String] = js.native
+    var perspective: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The perspective-origin property establishes the origin for the perspective property.
@@ -2064,37 +2064,37 @@ object irawstylebaseMod {
       * viewer was looking toward the top left angle. A value of 100% 100% changes the
       * appearance as if viewed toward the bottom right angle.
       */
-    var perspectiveOrigin: js.UndefOr[ICSSRule | String] = js.native
+    var perspectiveOrigin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The pointer-events property allows you to control whether an element can be the
       * target for the pointing device (e.g, mouse, pen) events.
       */
-    var pointerEvents: js.UndefOr[ICSSRule | String] = js.native
+    var pointerEvents: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The position property controls the type of positioning used by an element within
       * its parent elements. The effect of the position property depends on a lot of
       * factors, for example the position property of parent elements.
       */
-    var position: js.UndefOr[ICSSRule | static | relative | absolute | fixed | sticky] = js.native
+    var position: js.UndefOr[ICSSRule | static | relative | absolute | fixed | sticky] = js.undefined
     
     /**
       * Sets the type of quotation marks for embedded quotations.
       */
-    var quotes: js.UndefOr[ICSSRule | String] = js.native
+    var quotes: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Controls whether the last region in a chain displays additional 'overset' content
       * according its default overflow property, or if it displays a fragment of content
       * as if it were flowing into a subsequent region.
       */
-    var regionFragment: js.UndefOr[ICSSRule | String] = js.native
+    var regionFragment: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The resize CSS sets whether an element is resizable, and if so, in which direction(s).
       */
-    var resize: js.UndefOr[ICSSRule | none | both | horizontal | vertical | block | `inline` | String] = js.native
+    var resize: js.UndefOr[ICSSRule | none | both | horizontal | vertical | block | `inline` | String] = js.undefined
     
     /**
       * The rest-after property determines how long a speech media agent should pause after
@@ -2102,7 +2102,7 @@ object irawstylebaseMod {
       * sound. It may be replaced by the shorthand property rest, which sets rest time
       * before and after.
       */
-    var restAfter: js.UndefOr[ICSSRule | String] = js.native
+    var restAfter: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The rest-before property determines how long a speech media agent should pause after
@@ -2110,20 +2110,20 @@ object irawstylebaseMod {
       * content. It may be replaced by the shorthand property rest, which sets rest time
       * before and after.
       */
-    var restBefore: js.UndefOr[ICSSRule | String] = js.native
+    var restBefore: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the position an element in relation to the right side of the containing
       * element.
       */
-    var right: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var right: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Defines the alpha channel threshold used to extract a shape from an image. Can be
       * thought of as a "minimum opacity" threshold; that is, a value of 0.5 means that the
       * shape will enclose all the pixels that are more than 50% opaque.
       */
-    var shapeImageThreshold: js.UndefOr[ICSSRule | String] = js.native
+    var shapeImageThreshold: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * A future level of CSS Shapes will define a shape-inside property, which will define
@@ -2131,7 +2131,7 @@ object irawstylebaseMod {
       * http://dev.w3.org/csswg/css-shapes and CSSWG wiki page on next-level plans
       * http://wiki.csswg.org/spec/css-shapes
       */
-    var shapeInside: js.UndefOr[ICSSRule | String] = js.native
+    var shapeInside: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Adds a margin to a shape-outside. In effect, defines a new shape that is the
@@ -2141,106 +2141,106 @@ object irawstylebaseMod {
       * points on a circle centered at the point and with a radius of the shape-margin
       * distance. This property accepts only non-negative values.
       */
-    var shapeMargin: js.UndefOr[ICSSRule | String] = js.native
+    var shapeMargin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Declares a shape around which text should be wrapped, with possible modifications
       * from the shape-margin property. The shape defined by shape-outside and shape-margin
       * changes the geometry of a float element's float area.
       */
-    var shapeOutside: js.UndefOr[ICSSRule | String] = js.native
+    var shapeOutside: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The speak property determines whether or not a speech synthesizer will read aloud
       * the contents of an element.
       */
-    var speak: js.UndefOr[ICSSRule | String] = js.native
+    var speak: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The speak-as property determines how the speech synthesizer interprets the content:
       * words as whole words or as a sequence of letters, numbers as a numerical value or a
       * sequence of digits, punctuation as pauses in speech or named punctuation characters.
       */
-    var speakAs: js.UndefOr[ICSSRule | String] = js.native
+    var speakAs: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The stroke property in CSS is for adding a border to SVG shapes.
       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#Stroke
       */
-    var stroke: js.UndefOr[ICSSRule | String] = js.native
+    var stroke: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * SVG: The stroke-linecap attribute defines the shape to be used at the end of open subpaths when they are stroked.
       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#LineCaps
       */
-    var strokeLinecap: js.UndefOr[ICSSRule | butt | round | square | String] = js.native
+    var strokeLinecap: js.UndefOr[ICSSRule | butt | round | square | String] = js.undefined
     
     /**
       * SVG: Specifies the opacity of the outline on the current object.
       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#StrokeOpacityProperty
       */
-    var strokeOpacity: js.UndefOr[ICSSRule | Double | String] = js.native
+    var strokeOpacity: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * SVG: Specifies the width of the outline on the current object.
       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#StrokeWidthProperty
       */
-    var strokeWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var strokeWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The tab-size CSS property is used to customise the width of a tab (U+0009) character.
       */
-    var tabSize: js.UndefOr[ICSSRule | String] = js.native
+    var tabSize: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The 'table-layout' property controls the algorithm used to lay out the table cells, rows, and columns.
       */
-    var tableLayout: js.UndefOr[ICSSRule | String] = js.native
+    var tableLayout: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-align CSS property describes how inline content like text is aligned in its
       * parent block element. text-align does not control the alignment of block elements
       * itself, only their inline content.
       */
-    var textAlign: js.UndefOr[ICSSRule | String] = js.native
+    var textAlign: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-align-last CSS property describes how the last line of a block element or
       * a line before line break is aligned in its parent block element.
       */
-    var textAlignLast: js.UndefOr[ICSSRule | String] = js.native
+    var textAlignLast: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-decoration CSS property is used to set the text formatting to underline,
       * overline, line-through or blink. underline and overline decorations are positioned
       * under the text, line-through over it.
       */
-    var textDecoration: js.UndefOr[ICSSRule | String] = js.native
+    var textDecoration: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the color of any text decoration, such as underlines, overlines, and strike
       * throughs.
       */
-    var textDecorationColor: js.UndefOr[ICSSRule | String] = js.native
+    var textDecorationColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets what kind of line decorations are added to an element, such as underlines,
       * overlines, etc.
       */
-    var textDecorationLine: js.UndefOr[ICSSRule | String] = js.native
+    var textDecorationLine: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies what parts of an element’s content are skipped over when applying any
       * text decoration.
       */
-    var textDecorationSkip: js.UndefOr[ICSSRule | String] = js.native
+    var textDecorationSkip: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies the style of the text decoration line drawn on the
       * specified element. The intended meaning for the values are the same as those of
       * the border-style-properties.
       */
-    var textDecorationStyle: js.UndefOr[ICSSRule | String] = js.native
+    var textDecorationStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-emphasis property will apply special emphasis marks to the elements text.
@@ -2248,19 +2248,19 @@ object irawstylebaseMod {
       * affect on the line-height. It also is noted that this is shorthand for
       * text-emphasis-style and for text-emphasis-color.
       */
-    var textEmphasis: js.UndefOr[ICSSRule | String] = js.native
+    var textEmphasis: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-emphasis-color property specifies the foreground color of the emphasis
       * marks.
       */
-    var textEmphasisColor: js.UndefOr[ICSSRule | String] = js.native
+    var textEmphasisColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-emphasis-style property applies special emphasis marks to an element's
       * text.
       */
-    var textEmphasisStyle: js.UndefOr[ICSSRule | String] = js.native
+    var textEmphasisStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property helps determine an inline box's block-progression dimension, derived
@@ -2269,14 +2269,14 @@ object irawstylebaseMod {
       * inline-block elements. The block-progression dimension determines the position of
       * the padding, border and margin for the element.
       */
-    var textHeight: js.UndefOr[ICSSRule | String] = js.native
+    var textHeight: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the amount of space horizontally that should be left on the first line of
       * the text of an element. This horizontal spacing is at the beginning of the first
       * line and is in respect to the left edge of the containing block box.
       */
-    var textIndent: js.UndefOr[ICSSRule | String] = js.native
+    var textIndent: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-overflow shorthand CSS property determines how overflowed content that is
@@ -2284,73 +2284,73 @@ object irawstylebaseMod {
       * ('…', U+2026 HORIZONTAL ELLIPSIS) or a Web author-defined string. It covers the
       * two long-hand properties text-overflow-mode and text-overflow-ellipsis
       */
-    var textOverflow: js.UndefOr[ICSSRule | String] = js.native
+    var textOverflow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-overline property is the shorthand for the text-overline-style,
       * text-overline-width, text-overline-color, and text-overline-mode properties.
       */
-    var textOverline: js.UndefOr[ICSSRule | String] = js.native
+    var textOverline: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the line color for the overline text decoration.
       */
-    var textOverlineColor: js.UndefOr[ICSSRule | String] = js.native
+    var textOverlineColor: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the mode for the overline text decoration, determining whether the text
       * decoration affects the space characters or not.
       */
-    var textOverlineMode: js.UndefOr[ICSSRule | String] = js.native
+    var textOverlineMode: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the line style for overline text decoration.
       */
-    var textOverlineStyle: js.UndefOr[ICSSRule | String] = js.native
+    var textOverlineStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies the line width for the overline text decoration.
       */
-    var textOverlineWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var textOverlineWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The text-rendering CSS property provides information to the browser about how to
       * optimize when rendering text. Options are: legibility, speed or geometric precision.
       */
-    var textRendering: js.UndefOr[ICSSRule | String] = js.native
+    var textRendering: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The CSS text-shadow property applies one or more drop shadows to the text and
       * `<text-decorations>` of an element. Each shadow is specified as an offset from the
       * text, along with optional color and blur radius values.
       */
-    var textShadow: js.UndefOr[ICSSRule | String] = js.native
+    var textShadow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The text-size-adjust CSS property controls the text inflation algorithm used
       * on some smartphones and tablets. Other browsers will ignore this property.
       */
-    var textSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule] = js.native
+    var textSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule] = js.undefined
     
     /**
       * This property transforms text for styling purposes. (It has no effect on the
       * underlying content.)
       */
-    var textTransform: js.UndefOr[ICSSRule | String] = js.native
+    var textTransform: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Unsupported.
       * This property will add a underline position value to the element that has an
       * underline defined.
       */
-    var textUnderlinePosition: js.UndefOr[ICSSRule | String] = js.native
+    var textUnderlinePosition: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * After review this should be replaced by text-decoration should it not?
       * This property will set the underline style for text with a line value for
       * underline, overline, and line-through.
       */
-    var textUnderlineStyle: js.UndefOr[ICSSRule | String] = js.native
+    var textUnderlineStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies how far an absolutely positioned box's top margin edge is
@@ -2359,13 +2359,13 @@ object irawstylebaseMod {
       * is given a position in the normal flow, then offset from that position according to
       * these properties).
       */
-    var top: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var top: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Determines whether touch input may trigger default behavior supplied by the user
       * agent, such as panning or zooming.
       */
-    var touchAction: js.UndefOr[ICSSRule | String] = js.native
+    var touchAction: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * CSS transforms allow elements styled with CSS to be transformed in two-dimensional
@@ -2373,31 +2373,31 @@ object irawstylebaseMod {
       * rotated, scaled, and skewed. The value list may consist of 2D and/or 3D transform
       * values.
       */
-    var transform: js.UndefOr[ICSSRule | String] = js.native
+    var transform: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property defines the origin of the transformation axes relative to the element
       * to which the transformation is applied.
       */
-    var transformOrigin: js.UndefOr[ICSSRule | String] = js.native
+    var transformOrigin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property allows you to define the relative position of the origin of the
       * transformation grid along the z-axis.
       */
-    var transformOriginZ: js.UndefOr[ICSSRule | String] = js.native
+    var transformOriginZ: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This property specifies how nested elements are rendered in 3D space relative to their parent.
       */
-    var transformStyle: js.UndefOr[ICSSRule | String] = js.native
+    var transformStyle: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The transition CSS property is a shorthand property for transition-property,
       * transition-duration, transition-timing-function, and transition-delay. It allows to
       * define the transition between two states of an element.
       */
-    var transition: js.UndefOr[ICSSRule | String] = js.native
+    var transition: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines when the transition will start. A value of ‘0s’ means the transition will
@@ -2405,61 +2405,61 @@ object irawstylebaseMod {
       * offset from the moment the property is changed, and the transition will delay
       * execution by that offset.
       */
-    var transitionDelay: js.UndefOr[ICSSRule | String] = js.native
+    var transitionDelay: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The 'transition-duration' property specifies the length of time a transition
       * animation takes to complete.
       */
-    var transitionDuration: js.UndefOr[ICSSRule | String] = js.native
+    var transitionDuration: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The 'transition-property' property specifies the name of the CSS property to which
       * the transition is applied.
       */
-    var transitionProperty: js.UndefOr[ICSSRule | String] = js.native
+    var transitionProperty: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Sets the pace of action within a transition
       */
-    var transitionTimingFunction: js.UndefOr[ICSSRule | String] = js.native
+    var transitionTimingFunction: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The unicode-bidi CSS property specifies the level of embedding with respect to the bidirectional algorithm.
       */
-    var unicodeBidi: js.UndefOr[ICSSRule | String] = js.native
+    var unicodeBidi: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * This is for all the high level UX stuff.
       */
-    var userFocus: js.UndefOr[ICSSRule | String] = js.native
+    var userFocus: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * For inputting user content
       */
-    var userInput: js.UndefOr[ICSSRule | String] = js.native
+    var userInput: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Defines the text selection behavior.
       */
-    var userSelect: js.UndefOr[ICSSRule | none | auto | text | all | contain | String] = js.native
+    var userSelect: js.UndefOr[ICSSRule | none | auto | text | all | contain | String] = js.undefined
     
     /**
       * The vertical-align property controls how inline elements or text are vertically
       * aligned compared to the baseline. If this property is used on table-cells it
       * controls the vertical alignment of content of the table cell.
       */
-    var verticalAlign: js.UndefOr[ICSSRule | String] = js.native
+    var verticalAlign: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The visibility property specifies whether the boxes generated by an element are rendered.
       */
-    var visibility: js.UndefOr[ICSSRule | String] = js.native
+    var visibility: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-balance property sets the apparent position (in stereo sound) of the synthesized voice for spoken media.
       */
-    var voiceBalance: js.UndefOr[ICSSRule | String] = js.native
+    var voiceBalance: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-duration property allows the author to explicitly set the amount of time
@@ -2468,7 +2468,7 @@ object irawstylebaseMod {
       * default) the length of time it takes to read the content is determined by the
       * content itself and the voice-rate property.
       */
-    var voiceDuration: js.UndefOr[ICSSRule | String] = js.native
+    var voiceDuration: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-family property sets the speaker's voice used by a speech media agent to
@@ -2479,14 +2479,14 @@ object irawstylebaseMod {
       * does not recognize the character name or cannot synthesize the requested combination
       * of generic properties.
       */
-    var voiceFamily: js.UndefOr[ICSSRule | String] = js.native
+    var voiceFamily: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-pitch property sets pitch or tone (high or low) for the synthesized speech
       * when reading an element; the pitch may be specified absolutely or relative to the
       * normal pitch for the voice-family used to read the text.
       */
-    var voicePitch: js.UndefOr[ICSSRule | String] = js.native
+    var voicePitch: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-range property determines how much variation in pitch or tone will be
@@ -2496,31 +2496,31 @@ object irawstylebaseMod {
       * associated with enthusiastic or emotional speech, while small ranges are associated
       * with flat or mechanical speech.
       */
-    var voiceRange: js.UndefOr[ICSSRule | String] = js.native
+    var voiceRange: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-rate property sets the speed at which the voice synthesized by a speech
       * media agent will read content.
       */
-    var voiceRate: js.UndefOr[ICSSRule | String] = js.native
+    var voiceRate: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-stress property sets the level of vocal emphasis to be used for
       * synthesized speech reading the element.
       */
-    var voiceStress: js.UndefOr[ICSSRule | String] = js.native
+    var voiceStress: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The voice-volume property sets the volume for spoken content in speech media. It
       * replaces the deprecated volume property.
       */
-    var voiceVolume: js.UndefOr[ICSSRule | String] = js.native
+    var voiceVolume: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The white-space property controls whether and how white space inside the element is
       * collapsed, and whether lines may wrap at unforced "soft wrap" opportunities.
       */
-    var whiteSpace: js.UndefOr[ICSSRule | String] = js.native
+    var whiteSpace: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * In paged media, this property defines the mimimum number of lines that must be left
@@ -2528,13 +2528,13 @@ object irawstylebaseMod {
       * See CSS 3 orphans, widows properties
       * https://drafts.csswg.org/css-break-3/#widows-orphans
       */
-    var widows: js.UndefOr[ICSSRule | Double | String] = js.native
+    var widows: js.UndefOr[ICSSRule | Double | String] = js.undefined
     
     /**
       * Specifies the width of the content area of an element. The content area of the element
       * width does not include the padding, border, and margin of the element.
       */
-    var width: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var width: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * The word-break property is often used when there is long generated content that is
@@ -2543,50 +2543,50 @@ object irawstylebaseMod {
       * potentially cause the breaking of the layout as it could extend past the parent
       * element.
       */
-    var wordBreak: js.UndefOr[ICSSRule | String] = js.native
+    var wordBreak: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The word-spacing CSS property specifies the spacing behavior between "words".
       */
-    var wordSpacing: js.UndefOr[ICSSRule | String] = js.native
+    var wordSpacing: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * An alias of css/properties/overflow-wrap, word-wrap defines whether to break
       * words when the content exceeds the boundaries of its container.
       */
-    var wordWrap: js.UndefOr[ICSSRule | String] = js.native
+    var wordWrap: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Specifies how exclusions affect inline content within block-level elements. Elements
       * lay out their inline content in their content area but wrap around exclusion areas.
       */
-    var wrapFlow: js.UndefOr[ICSSRule | String] = js.native
+    var wrapFlow: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * Set the value that is used to offset the inner wrap shape from other shapes. Inline
       * content that intersects a shape with this property will be pushed by this shape's
       * margin.
       */
-    var wrapMargin: js.UndefOr[ICSSRule | String] = js.native
+    var wrapMargin: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * writing-mode specifies if lines of text are laid out horizontally or vertically,
       * and the direction which lines of text and blocks progress.
       */
-    var writingMode: js.UndefOr[ICSSRule | String] = js.native
+    var writingMode: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The z-index property specifies the z-order of an element and its descendants.
       * When elements overlap, z-order determines which one covers the other.
       * See CSS 2 z-index property https://www.w3.org/TR/CSS2/visuren.html#z-index
       */
-    var zIndex: js.UndefOr[ICSSRule | auto | Double | String] = js.native
+    var zIndex: js.UndefOr[ICSSRule | auto | Double | String] = js.undefined
     
     /**
       * Sets the initial zoom factor of a document defined by `@viewport`.
       * See CSS zoom descriptor https://drafts.csswg.org/css-device-adapt/#zoom-desc
       */
-    var zoom: js.UndefOr[ICSSRule | auto | Double | ICSSPercentageRule] = js.native
+    var zoom: js.UndefOr[ICSSRule | auto | Double | ICSSPercentageRule] = js.undefined
   }
   object IRawStyleBase {
     

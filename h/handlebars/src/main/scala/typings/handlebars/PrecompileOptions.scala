@@ -2,15 +2,15 @@ package typings.handlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrecompileOptions extends CompileOptions {
+trait PrecompileOptions
+  extends StObject
+     with CompileOptions {
   
-  var destName: js.UndefOr[String] = js.native
+  var destName: js.UndefOr[String] = js.undefined
   
-  var srcName: js.UndefOr[String] = js.native
+  var srcName: js.UndefOr[String] = js.undefined
 }
 object PrecompileOptions {
   

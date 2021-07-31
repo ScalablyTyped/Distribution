@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,7 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     text.setForegroundColor(0, text.getText().length / 2, '#00FFFF');
   */
 @js.native
-trait Text extends Element {
+trait Text
+  extends StObject
+     with Element {
   
   def appendText(text: String): Text = js.native
   

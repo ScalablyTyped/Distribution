@@ -2,80 +2,78 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
   /** A reply from adding a banded range. */
-  var addBanding: js.UndefOr[AddBandingResponse] = js.native
+  var addBanding: js.UndefOr[AddBandingResponse] = js.undefined
   
   /** A reply from adding a chart. */
-  var addChart: js.UndefOr[AddChartResponse] = js.native
+  var addChart: js.UndefOr[AddChartResponse] = js.undefined
   
   /** A reply from adding a data source. */
-  var addDataSource: js.UndefOr[AddDataSourceResponse] = js.native
+  var addDataSource: js.UndefOr[AddDataSourceResponse] = js.undefined
   
   /** A reply from adding a dimension group. */
-  var addDimensionGroup: js.UndefOr[AddDimensionGroupResponse] = js.native
+  var addDimensionGroup: js.UndefOr[AddDimensionGroupResponse] = js.undefined
   
   /** A reply from adding a filter view. */
-  var addFilterView: js.UndefOr[AddFilterViewResponse] = js.native
+  var addFilterView: js.UndefOr[AddFilterViewResponse] = js.undefined
   
   /** A reply from adding a named range. */
-  var addNamedRange: js.UndefOr[AddNamedRangeResponse] = js.native
+  var addNamedRange: js.UndefOr[AddNamedRangeResponse] = js.undefined
   
   /** A reply from adding a protected range. */
-  var addProtectedRange: js.UndefOr[AddProtectedRangeResponse] = js.native
+  var addProtectedRange: js.UndefOr[AddProtectedRangeResponse] = js.undefined
   
   /** A reply from adding a sheet. */
-  var addSheet: js.UndefOr[AddSheetResponse] = js.native
+  var addSheet: js.UndefOr[AddSheetResponse] = js.undefined
   
   /** A reply from adding a slicer. */
-  var addSlicer: js.UndefOr[AddSlicerResponse] = js.native
+  var addSlicer: js.UndefOr[AddSlicerResponse] = js.undefined
   
   /** A reply from creating a developer metadata entry. */
-  var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataResponse] = js.native
+  var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataResponse] = js.undefined
   
   /** A reply from deleting a conditional format rule. */
-  var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleResponse] = js.native
+  var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleResponse] = js.undefined
   
   /** A reply from deleting a developer metadata entry. */
-  var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataResponse] = js.native
+  var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataResponse] = js.undefined
   
   /** A reply from deleting a dimension group. */
-  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupResponse] = js.native
+  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupResponse] = js.undefined
   
   /** A reply from removing rows containing duplicate values. */
-  var deleteDuplicates: js.UndefOr[DeleteDuplicatesResponse] = js.native
+  var deleteDuplicates: js.UndefOr[DeleteDuplicatesResponse] = js.undefined
   
   /** A reply from duplicating a filter view. */
-  var duplicateFilterView: js.UndefOr[DuplicateFilterViewResponse] = js.native
+  var duplicateFilterView: js.UndefOr[DuplicateFilterViewResponse] = js.undefined
   
   /** A reply from duplicating a sheet. */
-  var duplicateSheet: js.UndefOr[DuplicateSheetResponse] = js.native
+  var duplicateSheet: js.UndefOr[DuplicateSheetResponse] = js.undefined
   
   /** A reply from doing a find/replace. */
-  var findReplace: js.UndefOr[FindReplaceResponse] = js.native
+  var findReplace: js.UndefOr[FindReplaceResponse] = js.undefined
   
   /** A reply from refreshing data source objects. */
-  var refreshDataSource: js.UndefOr[RefreshDataSourceResponse] = js.native
+  var refreshDataSource: js.UndefOr[RefreshDataSourceResponse] = js.undefined
   
   /** A reply from trimming whitespace. */
-  var trimWhitespace: js.UndefOr[TrimWhitespaceResponse] = js.native
+  var trimWhitespace: js.UndefOr[TrimWhitespaceResponse] = js.undefined
   
   /** A reply from updating a conditional format rule. */
-  var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleResponse] = js.native
+  var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleResponse] = js.undefined
   
   /** A reply from updating a data source. */
-  var updateDataSource: js.UndefOr[UpdateDataSourceResponse] = js.native
+  var updateDataSource: js.UndefOr[UpdateDataSourceResponse] = js.undefined
   
   /** A reply from updating a developer metadata entry. */
-  var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataResponse] = js.native
+  var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataResponse] = js.undefined
   
   /** A reply from updating an embedded object's position. */
-  var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionResponse] = js.native
+  var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionResponse] = js.undefined
 }
 object Response {
   

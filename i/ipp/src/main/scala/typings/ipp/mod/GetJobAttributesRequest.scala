@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Requestedattributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobAttributesRequest extends StObject {
   
-  var `operation-attributes-tag`: Requestedattributes = js.native
+  var `operation-attributes-tag`: Requestedattributes
 }
 object GetJobAttributesRequest {
   

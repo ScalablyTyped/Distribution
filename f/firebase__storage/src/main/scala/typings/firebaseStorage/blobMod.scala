@@ -5,7 +5,6 @@ import typings.std.Blob
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blobMod {
@@ -37,8 +36,11 @@ object blobMod {
   /* static members */
   object FbsBlob {
     
-    @JSImport("@firebase/storage/dist/src/implementation/blob", "FbsBlob.getBlob")
+    @JSImport("@firebase/storage/dist/src/implementation/blob", "FbsBlob")
     @js.native
-    def getBlob(args: (String | FbsBlob)*): FbsBlob | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getBlob(args: (String | FbsBlob)*): FbsBlob | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlob")(args.asInstanceOf[js.Any]).asInstanceOf[FbsBlob | Null]
   }
 }

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediationReportSpecSortCondition extends StObject {
   
   /** Sort by the specified dimension. */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /** Sort by the specified metric. */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
   
   /** Sorting order of the dimension or metric. */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
 }
 object MediationReportSpecSortCondition {
   

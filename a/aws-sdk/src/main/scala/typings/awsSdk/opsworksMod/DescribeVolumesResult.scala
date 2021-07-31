@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVolumesResult extends StObject {
   
   /**
     * An array of volume IDs.
     */
-  var Volumes: js.UndefOr[typings.awsSdk.opsworksMod.Volumes] = js.native
+  var Volumes: js.UndefOr[typings.awsSdk.opsworksMod.Volumes] = js.undefined
 }
 object DescribeVolumesResult {
   

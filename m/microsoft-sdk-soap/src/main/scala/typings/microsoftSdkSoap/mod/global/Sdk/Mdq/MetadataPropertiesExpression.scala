@@ -2,7 +2,6 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Mdq.MetadataPropertiesExpression")
@@ -12,7 +11,7 @@ class MetadataPropertiesExpression protected () extends StObject {
   def this(
     allProperties: Boolean,
     propertyNames: js.Array[
-        EntityMetadataProperties | AttributeMetadataProperties | RelationshipMetadataProperties | _
+        EntityMetadataProperties | AttributeMetadataProperties | RelationshipMetadataProperties | js.Any
       ]
   ) = this()
 }

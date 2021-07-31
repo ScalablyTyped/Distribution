@@ -7,27 +7,25 @@ import typings.mongodbMemoryServerCore.typesMod.StorageEngineT
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var auth: js.UndefOr[Boolean] = js.native
+    var auth: js.UndefOr[Boolean] = js.undefined
     
-    var dbPath: js.UndefOr[String] = js.native
+    var dbPath: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var replSet: js.UndefOr[String] = js.native
+    var replSet: js.UndefOr[String] = js.undefined
     
-    var storageEngine: js.UndefOr[StorageEngineT] = js.native
+    var storageEngine: js.UndefOr[StorageEngineT] = js.undefined
   }
   object Args {
     
@@ -87,16 +85,15 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoStart extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var binary: MongoBinaryOpts = js.native
+    var binary: MongoBinaryOpts
     
-    var instanceOpts: js.Array[MongoMemoryInstancePropBaseT] = js.native
+    var instanceOpts: js.Array[MongoMemoryInstancePropBaseT]
     
-    var replSet: RequiredReplSetOpts = js.native
+    var replSet: RequiredReplSetOpts
   }
   object AutoStart {
     
@@ -133,10 +130,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -155,18 +151,17 @@ object anon {
   }
   
   /* Inlined std.Required<mongodb-memory-server-core.mongodb-memory-server-core/lib/util/MongoBinary.MongoBinaryOpts> */
-  @js.native
   trait RequiredMongoBinaryOpts extends StObject {
     
-    var arch: String = js.native
+    var arch: String
     
-    var checkMD5: Boolean = js.native
+    var checkMD5: Boolean
     
-    var downloadDir: String = js.native
+    var downloadDir: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var version: String = js.native
+    var version: String
   }
   object RequiredMongoBinaryOpts {
     
@@ -197,28 +192,27 @@ object anon {
   }
   
   /* Inlined std.Required<mongodb-memory-server-core.mongodb-memory-server-core/lib/MongoMemoryReplSet.ReplSetOpts> */
-  @js.native
   trait RequiredReplSetOpts extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var auth: Boolean = js.native
+    var auth: Boolean
     
-    var configSettings: MongoMemoryReplSetConfigSettingsT = js.native
+    var configSettings: MongoMemoryReplSetConfigSettingsT
     
-    var count: Double = js.native
+    var count: Double
     
-    var dbName: String = js.native
+    var dbName: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var name: String = js.native
+    var name: String
     
-    var oplogSize: Double = js.native
+    var oplogSize: Double
     
-    var spawn: SpawnOptions = js.native
+    var spawn: SpawnOptions
     
-    var storageEngine: StorageEngineT = js.native
+    var storageEngine: StorageEngineT
   }
   object RequiredReplSetOpts {
     

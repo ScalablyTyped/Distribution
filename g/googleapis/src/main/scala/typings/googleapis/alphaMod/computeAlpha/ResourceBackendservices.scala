@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Backendservices")
@@ -32,7 +31,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def addSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addSignedUrlKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(params: ParamsResourceBackendservicesAddsignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(
     params: ParamsResourceBackendservicesAddsignedurlkey,
@@ -69,7 +68,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaBackendServiceAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaBackendServiceAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendServiceAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendServiceAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceBackendservicesAggregatedlist): GaxiosPromise[SchemaBackendServiceAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceBackendservicesAggregatedlist,
@@ -105,7 +104,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendservicesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendservicesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -138,7 +137,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def deleteSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteSignedUrlKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(params: ParamsResourceBackendservicesDeletesignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(
     params: ParamsResourceBackendservicesDeletesignedurlkey,
@@ -172,7 +171,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBackendService] = js.native
   def get(callback: BodyResponseCallback[SchemaBackendService]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendService] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendService] = js.native
   def get(params: ParamsResourceBackendservicesGet): GaxiosPromise[SchemaBackendService] = js.native
   def get(params: ParamsResourceBackendservicesGet, callback: BodyResponseCallback[SchemaBackendService]): Unit = js.native
   def get(
@@ -203,7 +202,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def getHealth(): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(callback: BodyResponseCallback[SchemaBackendServiceGroupHealth]): Unit = js.native
-  def getHealth(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
+  def getHealth(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(params: ParamsResourceBackendservicesGethealth): GaxiosPromise[SchemaBackendServiceGroupHealth] = js.native
   def getHealth(
     params: ParamsResourceBackendservicesGethealth,
@@ -240,7 +239,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendservicesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendservicesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -274,7 +273,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(callback: BodyResponseCallback[SchemaBackendServiceList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendServiceList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(params: ParamsResourceBackendservicesList): GaxiosPromise[SchemaBackendServiceList] = js.native
   def list(
     params: ParamsResourceBackendservicesList,
@@ -313,7 +312,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendservicesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendservicesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -345,7 +344,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def setSecurityPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setSecurityPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setSecurityPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setSecurityPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setSecurityPolicy(params: ParamsResourceBackendservicesSetsecuritypolicy): GaxiosPromise[SchemaOperation] = js.native
   def setSecurityPolicy(
     params: ParamsResourceBackendservicesSetsecuritypolicy,
@@ -379,7 +378,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceBackendservicesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceBackendservicesTestiampermissions,
@@ -417,7 +416,7 @@ class ResourceBackendservices protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendservicesUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendservicesUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

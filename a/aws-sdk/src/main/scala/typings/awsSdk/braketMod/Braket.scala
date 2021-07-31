@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait Braket extends Service {
   ): Request[CancelQuantumTaskResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Braket: ConfigBase with ClientConfiguration = js.native
+  var config_Braket: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a quantum task.

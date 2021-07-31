@@ -2,28 +2,26 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   */
-@js.native
 trait TaskData extends StObject {
   
   /**
     * Delay in milliseconds when the Task will run.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * identifier returned by the native setTimeout.
     */
-  var handleId: js.UndefOr[Double] = js.native
+  var handleId: js.UndefOr[Double] = js.undefined
   
   /**
     * A periodic [MacroTask] is such which get automatically rescheduled after it is executed.
     */
-  var isPeriodic: js.UndefOr[Boolean] = js.native
+  var isPeriodic: js.UndefOr[Boolean] = js.undefined
 }
 object TaskData {
   

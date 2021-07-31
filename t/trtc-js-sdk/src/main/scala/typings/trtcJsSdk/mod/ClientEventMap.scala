@@ -3,50 +3,48 @@ package typings.trtcJsSdk.mod
 import typings.trtcJsSdk.anon.CurState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientEventMap extends StObject {
   
   /** 用户被踢出房间通知，被踢原因有 */
-  var `client-banned`: RtcError = js.native
+  var `client-banned`: RtcError
   
   /** 信令通道连接状态变化事件 */
-  var `connection-state-changed`: CurState = js.native
+  var `connection-state-changed`: CurState
   
   /** 客户端错误事件 */
-  var error: RtcError = js.native
+  var error: RtcError
   
   /** 远端用户禁用音频通知。 */
-  var `mute-audio`: RemoteUserInfo = js.native
+  var `mute-audio`: RemoteUserInfo
   
   /** 远端用户禁用视频通知。 */
-  var `mute-video`: RemoteUserInfo = js.native
+  var `mute-video`: RemoteUserInfo
   
   /** 远端用户进房通知，只有主动推流的远端用户进房才会收到该通知。 */
-  var `peer-join`: RemoteUserInfo = js.native
+  var `peer-join`: RemoteUserInfo
   
   /** 远端用户退房通知，只有主动推流的远端用户退房才会收到该通知。 */
-  var `peer-leave`: RemoteUserInfo = js.native
+  var `peer-leave`: RemoteUserInfo
   
   /** 远端流添加事件，当远端用户发布流后会收到该通知。 */
-  var `stream-added`: RemoteStreamInfo = js.native
+  var `stream-added`: RemoteStreamInfo
   
   /** 远端流移除事件，当远端用户取消发布流后会收到该通知。  */
-  var `stream-removed`: RemoteStreamInfo = js.native
+  var `stream-removed`: RemoteStreamInfo
   
   /** 远端流订阅成功事件，调用 subscribe() 成功后会触发该事件。 */
-  var `stream-subscribed`: RemoteStreamInfo = js.native
+  var `stream-subscribed`: RemoteStreamInfo
   
   /** 远端流更新事件，当远端用户添加、移除或更换音视频轨道后会收到该通知。 */
-  var `stream-updated`: RemoteStreamInfo = js.native
+  var `stream-updated`: RemoteStreamInfo
   
   /** 远端用户启用音频通知。 */
-  var `unmute-audio`: RemoteUserInfo = js.native
+  var `unmute-audio`: RemoteUserInfo
   
   /** 远端用户启用视频通知。 */
-  var `unmute-video`: RemoteUserInfo = js.native
+  var `unmute-video`: RemoteUserInfo
 }
 object ClientEventMap {
   

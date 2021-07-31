@@ -2,21 +2,19 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UriComponents extends StObject {
   
-  var authority: String = js.native
+  var authority: String
   
-  var fragment: String = js.native
+  var fragment: String
   
-  var path: String = js.native
+  var path: String
   
-  var query: String = js.native
+  var query: String
   
-  var scheme: String = js.native
+  var scheme: String
 }
 object UriComponents {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachingConfig extends StObject {
   
   /**
     * The caching keys for a resolver that has caching enabled. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
     */
-  var cachingKeys: js.UndefOr[CachingKeys] = js.native
+  var cachingKeys: js.UndefOr[CachingKeys] = js.undefined
   
   /**
     * The TTL in seconds for a resolver that has caching enabled. Valid values are between 1 and 3600 seconds.
     */
-  var ttl: js.UndefOr[Long] = js.native
+  var ttl: js.UndefOr[Long] = js.undefined
 }
 object CachingConfig {
   

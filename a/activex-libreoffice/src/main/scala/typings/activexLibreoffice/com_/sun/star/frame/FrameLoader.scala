@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * loaded are at least {@link Controller} . Instead of {@link SynchronousFrameLoader} this one use asynchronous processes to load the component.
   * @see SynchronousFrameLoader
   */
-@js.native
 trait FrameLoader
-  extends XFrameLoader
+  extends StObject
+     with XFrameLoader
      with XInitialization
      with XNamed
 object FrameLoader {
@@ -30,7 +29,7 @@ object FrameLoader {
     acquire: () => Unit,
     cancel: () => Unit,
     getName: () => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     load: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,

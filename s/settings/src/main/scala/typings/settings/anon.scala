@@ -3,19 +3,18 @@ package typings.settings
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DictenvName
-    extends // error is thrown if 'common' object is not provided
+    extends StObject
+       with // error is thrown if 'common' object is not provided
   /* envName */ StringDictionary[js.Any] {
     
-    var common: js.Any = js.native
+    var common: js.Any
     
-    var forceEnv: js.UndefOr[String] = js.native
+    var forceEnv: js.UndefOr[String] = js.undefined
   }
   object DictenvName {
     

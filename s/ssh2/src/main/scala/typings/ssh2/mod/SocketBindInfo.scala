@@ -2,14 +2,12 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketBindInfo extends StObject {
   
   /** The socket path to start/stop binding to. */
-  var socketPath: String = js.native
+  var socketPath: String
 }
 object SocketBindInfo {
   

@@ -2,26 +2,24 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLSelect extends StObject {
   
-  var DisplayValues: js.Any = js.native
+  var DisplayValues: js.Any
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
   @JSName("MSForms.HTMLSelect_typekey")
-  var MSFormsDotHTMLSelect_typekey: HTMLSelect = js.native
+  var MSFormsDotHTMLSelect_typekey: HTMLSelect
   
-  var MultiSelect: Boolean = js.native
+  var MultiSelect: Boolean
   
-  var Selected: String = js.native
+  var Selected: String
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Values: js.Any = js.native
+  var Values: js.Any
 }
 object HTMLSelect {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEndpointGroupsResponse extends StObject {
   
   /**
     * The list of the endpoint groups associated with a listener.
     */
-  var EndpointGroups: js.UndefOr[typings.awsSdk.globalacceleratorMod.EndpointGroups] = js.native
+  var EndpointGroups: js.UndefOr[typings.awsSdk.globalacceleratorMod.EndpointGroups] = js.undefined
   
   /**
     * The token for the next set of results. You receive this token from a previous call.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object ListEndpointGroupsResponse {
   

@@ -3,7 +3,6 @@ package typings.storybookApi
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object releaseNotesMod {
@@ -12,14 +11,13 @@ object releaseNotesMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait ReleaseNotes extends StObject {
     
-    var currentVersion: js.UndefOr[String] = js.native
+    var currentVersion: js.UndefOr[String] = js.undefined
     
-    var showOnFirstLaunch: js.UndefOr[Boolean] = js.native
+    var showOnFirstLaunch: js.UndefOr[Boolean] = js.undefined
     
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
   }
   object ReleaseNotes {
     
@@ -52,14 +50,13 @@ object releaseNotesMod {
     }
   }
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def releaseNotesVersion(): String = js.native
+    def releaseNotesVersion(): String
     
-    def setDidViewReleaseNotes(): Unit = js.native
+    def setDidViewReleaseNotes(): Unit
     
-    def showReleaseNotesOnLaunch(): Boolean = js.native
+    def showReleaseNotesOnLaunch(): Boolean
   }
   object SubAPI {
     
@@ -87,10 +84,9 @@ object releaseNotesMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var releaseNotesViewed: js.Array[String] = js.native
+    var releaseNotesViewed: js.Array[String]
   }
   object SubState {
     

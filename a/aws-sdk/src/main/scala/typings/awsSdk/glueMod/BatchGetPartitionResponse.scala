@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetPartitionResponse extends StObject {
   
   /**
     * A list of the requested partitions.
     */
-  var Partitions: js.UndefOr[PartitionList] = js.native
+  var Partitions: js.UndefOr[PartitionList] = js.undefined
   
   /**
     * A list of the partition values in the request for which partitions were not returned.
     */
-  var UnprocessedKeys: js.UndefOr[BatchGetPartitionValueList] = js.native
+  var UnprocessedKeys: js.UndefOr[BatchGetPartitionValueList] = js.undefined
 }
 object BatchGetPartitionResponse {
   

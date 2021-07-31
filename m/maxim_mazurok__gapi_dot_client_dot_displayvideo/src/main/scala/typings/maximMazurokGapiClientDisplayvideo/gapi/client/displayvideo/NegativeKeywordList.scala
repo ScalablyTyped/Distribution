@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NegativeKeywordList extends StObject {
   
   /** Output only. The unique ID of the advertiser the negative keyword list belongs to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the negative keyword list. Must be UTF-8 encoded with a maximum size of 255 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the negative keyword list. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the negative keyword list. Assigned by the system. */
-  var negativeKeywordListId: js.UndefOr[String] = js.native
+  var negativeKeywordListId: js.UndefOr[String] = js.undefined
 }
 object NegativeKeywordList {
   

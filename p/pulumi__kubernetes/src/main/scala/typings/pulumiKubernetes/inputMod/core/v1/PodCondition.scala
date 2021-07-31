@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodCondition contains details for the current condition of this pod.
   */
-@js.native
 trait PodCondition extends StObject {
   
   /**
     * Last time we probed the condition.
     */
-  var lastProbeTime: js.UndefOr[Input[String]] = js.native
+  var lastProbeTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Last time the condition transitioned from one status to another.
     */
-  var lastTransitionTime: js.UndefOr[Input[String]] = js.native
+  var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Human-readable message indicating details about last transition.
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Unique, one-word, CamelCase reason for the condition's last transition.
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Status is the status of the condition. Can be True, False, Unknown. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
     */
-  var status: Input[String] = js.native
+  var status: Input[String]
   
   /**
     * Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object PodCondition {
   

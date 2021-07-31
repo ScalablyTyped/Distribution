@@ -2,13 +2,11 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for watching changes to creative Status.
   */
-@js.native
 trait SchemaWatchCreativeRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaWatchCreativeRequest extends StObject {
     * to write to the topic. This should be the full resource name in
     * &quot;projects/{project_id}/topics/{topic_id}&quot; format.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaWatchCreativeRequest {
   

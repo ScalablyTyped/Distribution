@@ -3,15 +3,15 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.axisMod._TickCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeIntervalStep extends _TickCount {
+trait TimeIntervalStep
+  extends StObject
+     with _TickCount {
   
-  var interval: TimeInterval = js.native
+  var interval: TimeInterval
   
-  var step: Double = js.native
+  var step: Double
 }
 object TimeIntervalStep {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfigOutput extends StObject {
   
   /**
     * The IDs of the security groups for this canary.
     */
-  var SecurityGroupIds: js.UndefOr[typings.awsSdk.syntheticsMod.SecurityGroupIds] = js.native
+  var SecurityGroupIds: js.UndefOr[typings.awsSdk.syntheticsMod.SecurityGroupIds] = js.undefined
   
   /**
     * The IDs of the subnets where this canary is to run.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.syntheticsMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.syntheticsMod.SubnetIds] = js.undefined
   
   /**
     * The IDs of the VPC where this canary is to run.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.syntheticsMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.syntheticsMod.VpcId] = js.undefined
 }
 object VpcConfigOutput {
   

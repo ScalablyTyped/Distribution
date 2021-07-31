@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestElement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Pattern {
   
-  var argument: Pattern = js.native
+  var argument: Pattern
   
   @JSName("type")
-  var type_RestElement: typings.estree.estreeStrings.RestElement = js.native
+  var type_RestElement: typings.estree.estreeStrings.RestElement
 }
 object RestElement {
   
   @scala.inline
-  def apply(argument: Pattern, `type`: typings.estree.estreeStrings.RestElement): RestElement = {
+  def apply(argument: Pattern): RestElement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[RestElement]
   }
   

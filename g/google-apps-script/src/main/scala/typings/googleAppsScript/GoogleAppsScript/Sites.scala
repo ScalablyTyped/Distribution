@@ -7,7 +7,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sites {
@@ -26,10 +25,14 @@ object Sites {
   object AttachmentType extends StObject {
     
     @js.native
-    sealed trait HOSTED extends AttachmentType
+    sealed trait HOSTED
+      extends StObject
+         with AttachmentType
     
     @js.native
-    sealed trait WEB extends AttachmentType
+    sealed trait WEB
+      extends StObject
+         with AttachmentType
   }
   
   @js.native
@@ -46,19 +49,29 @@ object Sites {
   object PageType extends StObject {
     
     @js.native
-    sealed trait ANNOUNCEMENT extends PageType
+    sealed trait ANNOUNCEMENT
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait ANNOUNCEMENTS_PAGE extends PageType
+    sealed trait ANNOUNCEMENTS_PAGE
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait FILE_CABINET_PAGE extends PageType
+    sealed trait FILE_CABINET_PAGE
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait LIST_PAGE extends PageType
+    sealed trait LIST_PAGE
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait WEB_PAGE extends PageType
+    sealed trait WEB_PAGE
+      extends StObject
+         with PageType
   }
   
   /**
@@ -77,42 +90,41 @@ object Sites {
     *     // just pass it directly to that method
     *     var file = DocsList.createFile(attachments[0]);
     */
-  @js.native
   trait Attachment extends StObject {
     
-    def deleteAttachment(): Unit = js.native
+    def deleteAttachment(): Unit
     
-    def getAs(contentType: String): Blob = js.native
+    def getAs(contentType: String): Blob
     
-    def getAttachmentType(): AttachmentType = js.native
+    def getAttachmentType(): AttachmentType
     
-    def getBlob(): Blob = js.native
+    def getBlob(): Blob
     
-    def getContentType(): String = js.native
+    def getContentType(): String
     
-    def getDatePublished(): Date = js.native
+    def getDatePublished(): Date
     
-    def getDescription(): String = js.native
+    def getDescription(): String
     
-    def getLastUpdated(): Date = js.native
+    def getLastUpdated(): Date
     
-    def getParent(): Page = js.native
+    def getParent(): Page
     
-    def getTitle(): String = js.native
+    def getTitle(): String
     
-    def getUrl(): String = js.native
+    def getUrl(): String
     
-    def setContentType(contentType: String): Attachment = js.native
+    def setContentType(contentType: String): Attachment
     
-    def setDescription(description: String): Attachment = js.native
+    def setDescription(description: String): Attachment
     
-    def setFrom(blob: BlobSource): Attachment = js.native
+    def setFrom(blob: BlobSource): Attachment
     
-    def setParent(parent: Page): Attachment = js.native
+    def setParent(parent: Page): Attachment
     
-    def setTitle(title: String): Attachment = js.native
+    def setTitle(title: String): Attachment
     
-    def setUrl(url: String): Attachment = js.native
+    def setUrl(url: String): Attachment
   }
   object Attachment {
     
@@ -203,16 +215,15 @@ object Sites {
     * modify Sites made with this version, but script can still access
     * classic Sites.
     */
-  @js.native
   trait Column extends StObject {
     
-    def deleteColumn(): Unit = js.native
+    def deleteColumn(): Unit
     
-    def getName(): String = js.native
+    def getName(): String
     
-    def getParent(): Page = js.native
+    def getParent(): Page
     
-    def setName(name: String): Column = js.native
+    def setName(name: String): Column
   }
   object Column {
     
@@ -246,26 +257,25 @@ object Sites {
     * modify Sites made with this version, but script can still access
     * classic Sites.
     */
-  @js.native
   trait Comment extends StObject {
     
-    def deleteComment(): Unit = js.native
+    def deleteComment(): Unit
     
-    def getAuthorEmail(): String = js.native
+    def getAuthorEmail(): String
     
-    def getAuthorName(): String = js.native
+    def getAuthorName(): String
     
-    def getContent(): String = js.native
+    def getContent(): String
     
-    def getDatePublished(): Date = js.native
+    def getDatePublished(): Date
     
-    def getLastUpdated(): Date = js.native
+    def getLastUpdated(): Date
     
-    def getParent(): Page = js.native
+    def getParent(): Page
     
-    def setContent(content: String): Comment = js.native
+    def setContent(content: String): Comment
     
-    def setParent(parent: Page): Comment = js.native
+    def setParent(parent: Page): Comment
   }
   object Comment {
     
@@ -324,26 +334,25 @@ object Sites {
     * modify Sites made with this version, but script can still access
     * classic Sites.
     */
-  @js.native
   trait ListItem extends StObject {
     
-    def deleteListItem(): Unit = js.native
+    def deleteListItem(): Unit
     
-    def getDatePublished(): Date = js.native
+    def getDatePublished(): Date
     
-    def getLastUpdated(): Date = js.native
+    def getLastUpdated(): Date
     
-    def getParent(): Page = js.native
+    def getParent(): Page
     
-    def getValueByIndex(index: Integer): String = js.native
+    def getValueByIndex(index: Integer): String
     
-    def getValueByName(name: String): String = js.native
+    def getValueByName(name: String): String
     
-    def setParent(parent: Page): ListItem = js.native
+    def setParent(parent: Page): ListItem
     
-    def setValueByIndex(index: Integer, value: String): ListItem = js.native
+    def setValueByIndex(index: Integer, value: String): ListItem
     
-    def setValueByName(name: String, value: String): ListItem = js.native
+    def setValueByName(name: String, value: String): ListItem
   }
   object ListItem {
     
@@ -501,26 +510,25 @@ object Sites {
     def setTitle(title: String): Page = js.native
   }
   
-  @js.native
   trait PageAdvancedParameters extends StObject {
     
     /** whether to include deleted pages (default false) */
-    var includeDeleted: js.UndefOr[Boolean] = js.native
+    var includeDeleted: js.UndefOr[Boolean] = js.undefined
     
     /** whether to include draft pages (default false) */
-    var includeDrafts: js.UndefOr[Boolean] = js.native
+    var includeDrafts: js.UndefOr[Boolean] = js.undefined
     
     /** the max number of results (default 200) */
-    var max: js.UndefOr[Integer] = js.native
+    var max: js.UndefOr[Integer] = js.undefined
     
     /** only return pages matching this query */
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
     /** start the results here */
-    var start: js.UndefOr[Integer] = js.native
+    var start: js.UndefOr[Integer] = js.undefined
     
     /** only get pages of this type */
-    var `type`: js.UndefOr[js.Array[PageType]] = js.native
+    var `type`: js.UndefOr[js.Array[PageType]] = js.undefined
   }
   object PageAdvancedParameters {
     

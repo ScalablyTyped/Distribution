@@ -2,66 +2,64 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CACertificateDescription extends StObject {
   
   /**
     * Whether the CA certificate configured for auto registration of device certificates. Valid values are "ENABLE" and "DISABLE"
     */
-  var autoRegistrationStatus: js.UndefOr[AutoRegistrationStatus] = js.native
+  var autoRegistrationStatus: js.UndefOr[AutoRegistrationStatus] = js.undefined
   
   /**
     * The CA certificate ARN.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.native
+  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
     * The CA certificate ID.
     */
-  var certificateId: js.UndefOr[CertificateId] = js.native
+  var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The CA certificate data, in PEM format.
     */
-  var certificatePem: js.UndefOr[CertificatePem] = js.native
+  var certificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * The date the CA certificate was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The customer version of the CA certificate.
     */
-  var customerVersion: js.UndefOr[CustomerVersion] = js.native
+  var customerVersion: js.UndefOr[CustomerVersion] = js.undefined
   
   /**
     * The generation ID of the CA certificate.
     */
-  var generationId: js.UndefOr[GenerationId] = js.native
+  var generationId: js.UndefOr[GenerationId] = js.undefined
   
   /**
     * The date the CA certificate was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The owner of the CA certificate.
     */
-  var ownedBy: js.UndefOr[AwsAccountId] = js.native
+  var ownedBy: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The status of a CA certificate.
     */
-  var status: js.UndefOr[CACertificateStatus] = js.native
+  var status: js.UndefOr[CACertificateStatus] = js.undefined
   
   /**
     * When the CA certificate is valid.
     */
-  var validity: js.UndefOr[CertificateValidity] = js.native
+  var validity: js.UndefOr[CertificateValidity] = js.undefined
 }
 object CACertificateDescription {
   

@@ -3,50 +3,48 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOptionInputDefinition extends StObject {
   
   /**
     * The default value.
     */
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /**
     * The name of the input group that this input belongs to.
     */
-  var groupName: String = js.native
+  var groupName: String
   
-  var help: StringDictionary[String] = js.native
+  var help: StringDictionary[String]
   
   /**
     * The label for the input.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The name of the input.
     */
-  var name: String = js.native
+  var name: String
   
-  var options: StringDictionary[String] = js.native
+  var options: StringDictionary[String]
   
   /**
     * Indicates whether the input is required to have a value.
     */
-  var required: Boolean = js.native
+  var required: Boolean
   
   /**
     * Indicates the type of the input value.
     */
-  var `type`: BuildOptionInputType = js.native
+  var `type`: BuildOptionInputType
   
   /**
     * The rule that is applied to determine whether the input is visible in the UI.
     */
-  var visibleRule: String = js.native
+  var visibleRule: String
 }
 object BuildOptionInputDefinition {
   

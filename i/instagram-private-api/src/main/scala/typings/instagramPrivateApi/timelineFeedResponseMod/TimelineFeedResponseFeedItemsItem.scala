@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseFeedItemsItem extends StObject {
   
-  var media_or_ad: TimelineFeedResponseMediaOrAd = js.native
+  var media_or_ad: TimelineFeedResponseMediaOrAd
   
-  var stories_netego: js.UndefOr[TimelineFeedResponseStoriesNetego] = js.native
+  var stories_netego: js.UndefOr[TimelineFeedResponseStoriesNetego] = js.undefined
 }
 object TimelineFeedResponseFeedItemsItem {
   

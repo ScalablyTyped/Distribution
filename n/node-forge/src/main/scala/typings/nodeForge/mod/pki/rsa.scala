@@ -7,70 +7,61 @@ import typings.nodeForge.mod.pss.PSS
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsa {
   
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
+  @JSImport("node-forge", "pki.rsa")
   @js.native
-  def generateKeyPair(): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(
-    bits: js.UndefOr[scala.Nothing],
-    e: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(bits: js.UndefOr[scala.Nothing], e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(
-    bits: js.UndefOr[scala.Nothing],
-    e: Double,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(bits: Double): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(
-    bits: Double,
-    e: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(bits: Double, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def generateKeyPair(): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(bits: Double): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(bits: Double, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
   def generateKeyPair(
     bits: Double,
     e: Double,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
   def generateKeyPair(
-    options: js.UndefOr[scala.Nothing],
+    bits: Double,
+    e: Unit,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
-  def generateKeyPair(options: GenerateKeyPairOptions): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
-  @JSImport("node-forge", "pki.rsa.generateKeyPair")
-  @js.native
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(bits: Unit, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(
+    bits: Unit,
+    e: Double,
+    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(
+    bits: Unit,
+    e: Unit,
+    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(
+    options: Unit,
+    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
+  def generateKeyPair(options: GenerateKeyPairOptions): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  @scala.inline
   def generateKeyPair(
     options: GenerateKeyPairOptions,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
-  ): typings.nodeForge.mod.pki.rsa.KeyPair = js.native
+  ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   
-  @JSImport("node-forge", "pki.rsa.setPublicKey")
-  @js.native
-  def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = js.native
+  @scala.inline
+  def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.nodeForgeStrings.`RSAES-PKCS1-V1_5`
@@ -81,22 +72,21 @@ object rsa {
   */
   type EncryptionScheme = _EncryptionScheme | Null
   
-  @js.native
   trait GenerateKeyPairOptions extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var bits: js.UndefOr[Double] = js.native
+    var bits: js.UndefOr[Double] = js.undefined
     
-    var e: js.UndefOr[Double] = js.native
+    var e: js.UndefOr[Double] = js.undefined
     
-    var prng: js.UndefOr[js.Any] = js.native
+    var prng: js.UndefOr[js.Any] = js.undefined
     
-    var workLoad: js.UndefOr[Double] = js.native
+    var workLoad: js.UndefOr[Double] = js.undefined
     
-    var workerScript: js.UndefOr[String] = js.native
+    var workerScript: js.UndefOr[String] = js.undefined
     
-    var workers: js.UndefOr[Double] = js.native
+    var workers: js.UndefOr[Double] = js.undefined
   }
   object GenerateKeyPairOptions {
     
@@ -153,12 +143,11 @@ object rsa {
     }
   }
   
-  @js.native
   trait KeyPair extends StObject {
     
-    var privateKey: typings.nodeForge.mod.pki.rsa.PrivateKey = js.native
+    var privateKey: typings.nodeForge.mod.pki.rsa.PrivateKey
     
-    var publicKey: typings.nodeForge.mod.pki.rsa.PublicKey = js.native
+    var publicKey: typings.nodeForge.mod.pki.rsa.PublicKey
   }
   object KeyPair {
     
@@ -192,8 +181,9 @@ object rsa {
     var dQ: BigInteger = js.native
     
     def decrypt(data: Bytes): Bytes = js.native
-    def decrypt(data: Bytes, scheme: js.UndefOr[EncryptionScheme], schemeOptions: js.Any): Bytes = js.native
+    def decrypt(data: Bytes, scheme: Unit, schemeOptions: js.Any): Bytes = js.native
     def decrypt(data: Bytes, scheme: EncryptionScheme): Bytes = js.native
+    def decrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: js.Any): Bytes = js.native
     
     var e: BigInteger = js.native
     
@@ -215,8 +205,9 @@ object rsa {
     var e: BigInteger = js.native
     
     def encrypt(data: Bytes): Bytes = js.native
-    def encrypt(data: Bytes, scheme: js.UndefOr[EncryptionScheme], schemeOptions: js.Any): Bytes = js.native
+    def encrypt(data: Bytes, scheme: Unit, schemeOptions: js.Any): Bytes = js.native
     def encrypt(data: Bytes, scheme: EncryptionScheme): Bytes = js.native
+    def encrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: js.Any): Bytes = js.native
     
     var n: BigInteger = js.native
     

@@ -3,43 +3,41 @@ package typings.pulumiAws.inputMod.opsworks
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HaproxyLayerEbsVolume extends StObject {
   
-  var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * For PIOPS volumes, the IOPS per disk.
     */
-  var iops: js.UndefOr[Input[Double]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The path to mount the EBS volume on the layer's instances.
     */
-  var mountPoint: Input[String] = js.native
+  var mountPoint: Input[String]
   
   /**
     * The number of disks to use for the EBS volume.
     */
-  var numberOfDisks: Input[Double] = js.native
+  var numberOfDisks: Input[Double]
   
   /**
     * The RAID level to use for the volume.
     */
-  var raidLevel: js.UndefOr[Input[String]] = js.native
+  var raidLevel: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The size of the volume in gigabytes.
     */
-  var size: Input[Double] = js.native
+  var size: Input[Double]
   
   /**
     * The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object HaproxyLayerEbsVolume {
   

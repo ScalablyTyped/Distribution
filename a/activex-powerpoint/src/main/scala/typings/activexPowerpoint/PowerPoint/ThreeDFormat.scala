@@ -12,92 +12,90 @@ import typings.activexOffice.Office.MsoPresetThreeDFormat
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreeDFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var BevelBottomDepth: Double = js.native
+  var BevelBottomDepth: Double
   
-  var BevelBottomInset: Double = js.native
+  var BevelBottomInset: Double
   
-  var BevelBottomType: MsoBevelType = js.native
+  var BevelBottomType: MsoBevelType
   
-  var BevelTopDepth: Double = js.native
+  var BevelTopDepth: Double
   
-  var BevelTopInset: Double = js.native
+  var BevelTopInset: Double
   
-  var BevelTopType: MsoBevelType = js.native
+  var BevelTopType: MsoBevelType
   
-  val ContourColor: ColorFormat = js.native
+  val ContourColor: ColorFormat
   
-  var ContourWidth: Double = js.native
+  var ContourWidth: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Depth: Double = js.native
+  var Depth: Double
   
-  val ExtrusionColor: ColorFormat = js.native
+  val ExtrusionColor: ColorFormat
   
-  var ExtrusionColorType: MsoExtrusionColorType = js.native
+  var ExtrusionColorType: MsoExtrusionColorType
   
-  var FieldOfView: Double = js.native
+  var FieldOfView: Double
   
-  def IncrementRotationHorizontal(Increment: Double): Unit = js.native
+  def IncrementRotationHorizontal(Increment: Double): Unit
   
-  def IncrementRotationVertical(Increment: Double): Unit = js.native
+  def IncrementRotationVertical(Increment: Double): Unit
   
-  def IncrementRotationX(Increment: Double): Unit = js.native
+  def IncrementRotationX(Increment: Double): Unit
   
-  def IncrementRotationY(Increment: Double): Unit = js.native
+  def IncrementRotationY(Increment: Double): Unit
   
-  def IncrementRotationZ(Increment: Double): Unit = js.native
+  def IncrementRotationZ(Increment: Double): Unit
   
-  var LightAngle: Double = js.native
+  var LightAngle: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Perspective: MsoTriState = js.native
+  var Perspective: MsoTriState
   
   @JSName("PowerPoint.ThreeDFormat_typekey")
-  var PowerPointDotThreeDFormat_typekey: ThreeDFormat = js.native
+  var PowerPointDotThreeDFormat_typekey: ThreeDFormat
   
-  val PresetCamera: MsoPresetCamera = js.native
+  val PresetCamera: MsoPresetCamera
   
-  val PresetExtrusionDirection: MsoPresetExtrusionDirection = js.native
+  val PresetExtrusionDirection: MsoPresetExtrusionDirection
   
-  var PresetLighting: MsoLightRigType = js.native
+  var PresetLighting: MsoLightRigType
   
-  var PresetLightingDirection: MsoPresetLightingDirection = js.native
+  var PresetLightingDirection: MsoPresetLightingDirection
   
-  var PresetLightingSoftness: MsoPresetLightingSoftness = js.native
+  var PresetLightingSoftness: MsoPresetLightingSoftness
   
-  var PresetMaterial: MsoPresetMaterial = js.native
+  var PresetMaterial: MsoPresetMaterial
   
-  val PresetThreeDFormat: MsoPresetThreeDFormat = js.native
+  val PresetThreeDFormat: MsoPresetThreeDFormat
   
-  var ProjectText: MsoTriState = js.native
+  var ProjectText: MsoTriState
   
-  def ResetRotation(): Unit = js.native
+  def ResetRotation(): Unit
   
-  var RotationX: Double = js.native
+  var RotationX: Double
   
-  var RotationY: Double = js.native
+  var RotationY: Double
   
-  var RotationZ: Double = js.native
+  var RotationZ: Double
   
-  def SetExtrusionDirection(PresetExtrusionDirection: MsoPresetExtrusionDirection): Unit = js.native
+  def SetExtrusionDirection(PresetExtrusionDirection: MsoPresetExtrusionDirection): Unit
   
-  def SetPresetCamera(PresetCamera: MsoPresetCamera): Unit = js.native
+  def SetPresetCamera(PresetCamera: MsoPresetCamera): Unit
   
-  def SetThreeDFormat(PresetThreeDFormat: MsoPresetThreeDFormat): Unit = js.native
+  def SetThreeDFormat(PresetThreeDFormat: MsoPresetThreeDFormat): Unit
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
   
-  var Z: Double = js.native
+  var Z: Double
 }
 object ThreeDFormat {
   

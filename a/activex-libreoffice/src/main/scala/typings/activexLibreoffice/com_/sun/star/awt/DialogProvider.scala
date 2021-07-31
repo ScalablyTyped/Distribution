@@ -7,16 +7,16 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.script.XScriptListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a provider for dialogs implementing the {@link com.sun.star.awt.XDialog} interface. */
-@js.native
-trait DialogProvider extends XDialogProvider {
+trait DialogProvider
+  extends StObject
+     with XDialogProvider {
   
-  def createWithModel(Model: XModel): Unit = js.native
+  def createWithModel(Model: XModel): Unit
   
-  def createWithModelAndScripting(Model: XModel, InStream: XInputStream, DialogLib: XNameContainer, ScriptListener: XScriptListener): Unit = js.native
+  def createWithModelAndScripting(Model: XModel, InStream: XInputStream, DialogLib: XNameContainer, ScriptListener: XScriptListener): Unit
 }
 object DialogProvider {
   

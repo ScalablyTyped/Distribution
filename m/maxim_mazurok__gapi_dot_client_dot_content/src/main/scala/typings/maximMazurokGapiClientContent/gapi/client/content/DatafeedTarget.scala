@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedTarget extends StObject {
   
   /** The country where the items in the feed will be included in the search index, represented as a CLDR territory code. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The list of destinations to exclude for this target (corresponds to unchecked check boxes in Merchant Center). */
-  var excludedDestinations: js.UndefOr[js.Array[String]] = js.native
+  var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of destinations to include for this target (corresponds to checked check boxes in Merchant Center). Default destinations are always included unless provided in
     * `excludedDestinations`. List of supported destinations (if available to the account): - DisplayAds - Shopping - ShoppingActions - SurfacesAcrossGoogle
     */
-  var includedDestinations: js.UndefOr[js.Array[String]] = js.native
+  var includedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The two-letter ISO 639-1 language of the items in the feed. Must be a valid language for `targets[].country`. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object DatafeedTarget {
   

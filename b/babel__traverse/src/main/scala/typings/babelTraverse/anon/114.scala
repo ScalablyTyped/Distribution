@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.EnumBooleanMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `114` extends StObject {
   
-  var `type`: EnumBooleanMember = js.native
+  var `type`: EnumBooleanMember
 }
 object `114` {
   
   @scala.inline
-  def apply(`type`: EnumBooleanMember): `114` = {
+  def apply(): `114` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumBooleanMember")
     __obj.asInstanceOf[`114`]
   }
   

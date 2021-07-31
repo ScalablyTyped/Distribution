@@ -2,19 +2,17 @@ package typings.npmRegistryPackageInfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Failure extends StObject {
     
-    var failure: Double = js.native
+    var failure: Double
     
-    var success: Double = js.native
+    var success: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Failure {
     

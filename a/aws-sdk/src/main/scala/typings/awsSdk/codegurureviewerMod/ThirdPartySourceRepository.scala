@@ -2,26 +2,24 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartySourceRepository extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see  Connection  in the AWS CodeStar Connections API Reference. 
     */
-  var ConnectionArn: typings.awsSdk.codegurureviewerMod.ConnectionArn = js.native
+  var ConnectionArn: typings.awsSdk.codegurureviewerMod.ConnectionArn
   
   /**
     *  The name of the third party source repository. 
     */
-  var Name: typings.awsSdk.codegurureviewerMod.Name = js.native
+  var Name: typings.awsSdk.codegurureviewerMod.Name
   
   /**
     *  The owner of the repository. For a GitHub, GitHub Enterprise, or Bitbucket repository, this is the username for the account that owns the repository. 
     */
-  var Owner: typings.awsSdk.codegurureviewerMod.Owner = js.native
+  var Owner: typings.awsSdk.codegurureviewerMod.Owner
 }
 object ThirdPartySourceRepository {
   

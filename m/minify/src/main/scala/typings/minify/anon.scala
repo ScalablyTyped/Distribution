@@ -2,19 +2,17 @@ package typings.minify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MaxSize extends StObject {
     
     /**
       * bigger images are not base64 in the CSS
       * @default 4096
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
   }
   object MaxSize {
     

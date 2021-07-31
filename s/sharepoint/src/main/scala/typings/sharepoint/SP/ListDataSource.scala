@@ -2,13 +2,13 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListDataSource extends ClientValueObject {
+trait ListDataSource
+  extends StObject
+     with ClientValueObject {
   
-  def get_properties(): js.Any = js.native
+  def get_properties(): js.Any
 }
 object ListDataSource {
   

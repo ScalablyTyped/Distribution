@@ -2,31 +2,29 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasTouchedEndDate extends StObject {
   
   @JSName("$hasTouchedEndDate")
-  var $hasTouchedEndDate: Boolean = js.native
+  var $hasTouchedEndDate: Boolean
   
   @JSName("$hasTouchedStartDate")
-  var $hasTouchedStartDate: Boolean = js.native
+  var $hasTouchedStartDate: Boolean
   
   @JSName("$lastValidEndDate")
-  var $lastValidEndDate: String = js.native
+  var $lastValidEndDate: String
   
   @JSName("$lastValidStartDate")
-  var $lastValidStartDate: String = js.native
+  var $lastValidStartDate: String
   
-  var receivedEndDate: String = js.native
+  var receivedEndDate: String
   
-  var receivedFocusName: String = js.native
+  var receivedFocusName: String
   
-  var receivedIsFocus: Boolean = js.native
+  var receivedIsFocus: Boolean
   
-  var receivedStartDate: String = js.native
+  var receivedStartDate: String
 }
 object HasTouchedEndDate {
   

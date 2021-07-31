@@ -1,10 +1,10 @@
 package typings.nodeSnap7.mod
 
 import typings.node.Buffer
+import typings.nodeSnap7.mod.^
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -631,4 +631,9 @@ trait S7Client extends StObject {
     multiVars: js.Array[MultiVarWrite],
     callback: js.Function2[/* err */ js.Any, /* data */ js.Array[MultiVarsWriteResult], Unit]
   ): js.Array[MultiVarsWriteResult] | Boolean = js.native
+}
+object S7Client {
+  
+  @scala.inline
+  def apply: S7ClientStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("S7Client").asInstanceOf[S7ClientStatic]
 }

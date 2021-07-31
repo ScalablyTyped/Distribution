@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProxySessionResponse extends StObject {
   
   /**
     * The proxy session details.
     */
-  var ProxySession: js.UndefOr[typings.awsSdk.chimeMod.ProxySession] = js.native
+  var ProxySession: js.UndefOr[typings.awsSdk.chimeMod.ProxySession] = js.undefined
 }
 object GetProxySessionResponse {
   

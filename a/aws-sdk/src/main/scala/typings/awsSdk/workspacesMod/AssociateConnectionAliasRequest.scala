@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateConnectionAliasRequest extends StObject {
   
   /**
     * The identifier of the connection alias.
     */
-  var AliasId: ConnectionAliasId = js.native
+  var AliasId: ConnectionAliasId
   
   /**
     * The identifier of the directory to associate the connection alias with.
     */
-  var ResourceId: NonEmptyString = js.native
+  var ResourceId: NonEmptyString
 }
 object AssociateConnectionAliasRequest {
   

@@ -2,7 +2,6 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 4.5 Database query results
@@ -19,14 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in the order returned by the database. The same object must be returned each time.
   * If no rows were returned, then the object will be empty (its length will be zero)
   */
-@js.native
 trait SQLResultSet extends StObject {
   
-  var insertId: Double = js.native
+  var insertId: Double
   
-  var rows: SQLResultSetRowList = js.native
+  var rows: SQLResultSetRowList
   
-  var rowsAffected: Double = js.native
+  var rowsAffected: Double
 }
 object SQLResultSet {
   

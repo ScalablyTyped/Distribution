@@ -2,41 +2,39 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationContext extends StObject {
   
-  def getArgument(): GraphQLArgument = js.native
+  def getArgument(): GraphQLArgument
   
-  def getDirective(): GraphQLDirective = js.native
+  def getDirective(): GraphQLDirective
   
-  def getDocument(): Document = js.native
+  def getDocument(): Document
   
-  def getErrors(): js.Array[GraphQLError] = js.native
+  def getErrors(): js.Array[GraphQLError]
   
-  def getFieldDef(): GraphQLFieldDefinition = js.native
+  def getFieldDef(): GraphQLFieldDefinition
   
-  def getFragment(name: String): FragmentDefinition = js.native
+  def getFragment(name: String): FragmentDefinition
   
-  def getFragmentSpreads(node: SelectionSet): js.Array[FragmentSpread] = js.native
+  def getFragmentSpreads(node: SelectionSet): js.Array[FragmentSpread]
   
-  def getInputType(): GraphQLInputType = js.native
+  def getInputType(): GraphQLInputType
   
-  def getParentType(): GraphQLCompositeType = js.native
+  def getParentType(): GraphQLCompositeType
   
-  def getRecursiveVariableUsages(operation: OperationDefinition): js.Array[VariableUsage] = js.native
+  def getRecursiveVariableUsages(operation: OperationDefinition): js.Array[VariableUsage]
   
-  def getRecursivelyReferencedFragments(operation: OperationDefinition): js.Array[FragmentDefinition] = js.native
+  def getRecursivelyReferencedFragments(operation: OperationDefinition): js.Array[FragmentDefinition]
   
-  def getSchema(): GraphQLSchema = js.native
+  def getSchema(): GraphQLSchema
   
-  def getType(): GraphQLOutputType = js.native
+  def getType(): GraphQLOutputType
   
-  def getVariableUsages(node: HasSelectionSet): js.Array[VariableUsage] = js.native
+  def getVariableUsages(node: HasSelectionSet): js.Array[VariableUsage]
   
-  def reportError(error: GraphQLError): Unit = js.native
+  def reportError(error: GraphQLError): Unit
 }
 object ValidationContext {
   

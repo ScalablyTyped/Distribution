@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetModelProperty extends StObject {
   
   /**
     * The data type of the asset model property.
     */
-  var dataType: PropertyDataType = js.native
+  var dataType: PropertyDataType
   
   /**
     * The ID of the asset model property.
     */
-  var id: js.UndefOr[ID] = js.native
+  var id: js.UndefOr[ID] = js.undefined
   
   /**
     * The name of the asset model property.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The property type (see PropertyType).
     */
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
   
   /**
     * The unit of the asset model property, such as Newtons or RPM.
     */
-  var unit: js.UndefOr[PropertyUnit] = js.native
+  var unit: js.UndefOr[PropertyUnit] = js.undefined
 }
 object AssetModelProperty {
   

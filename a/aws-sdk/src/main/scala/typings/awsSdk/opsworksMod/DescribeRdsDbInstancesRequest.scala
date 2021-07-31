@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRdsDbInstancesRequest extends StObject {
   
   /**
     * An array containing the ARNs of the instances to be described.
     */
-  var RdsDbInstanceArns: js.UndefOr[Strings] = js.native
+  var RdsDbInstanceArns: js.UndefOr[Strings] = js.undefined
   
   /**
     * The ID of the stack with which the instances are registered. The operation returns descriptions of all registered Amazon RDS instances.
     */
-  var StackId: String = js.native
+  var StackId: String
 }
 object DescribeRdsDbInstancesRequest {
   

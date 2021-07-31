@@ -2,44 +2,42 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deployment Manager will call these methods during the events of
   * creation/deletion/update/get/setIamPolicy
   */
-@js.native
 trait SchemaMethodMap extends StObject {
   
   /**
     * The action identifier for the create method to be used for this
     * collection
     */
-  var create: js.UndefOr[String] = js.native
+  var create: js.UndefOr[String] = js.undefined
   
   /**
     * The action identifier for the delete method to be used for this
     * collection
     */
-  var delete: js.UndefOr[String] = js.native
+  var delete: js.UndefOr[String] = js.undefined
   
   /**
     * The action identifier for the get method to be used for this collection
     */
-  var get: js.UndefOr[String] = js.native
+  var get: js.UndefOr[String] = js.undefined
   
   /**
     * The action identifier for the setIamPolicy method to be used for this
     * collection
     */
-  var setIamPolicy: js.UndefOr[String] = js.native
+  var setIamPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The action identifier for the update method to be used for this
     * collection
     */
-  var update: js.UndefOr[String] = js.native
+  var update: js.UndefOr[String] = js.undefined
 }
 object SchemaMethodMap {
   

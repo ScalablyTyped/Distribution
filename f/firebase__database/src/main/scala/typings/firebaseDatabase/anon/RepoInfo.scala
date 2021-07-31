@@ -2,15 +2,13 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepoInfo extends StObject {
   
-  var path: typings.firebaseDatabase.pathMod.Path = js.native
+  var path: typings.firebaseDatabase.pathMod.Path
   
-  var repoInfo: typings.firebaseDatabase.repoInfoMod.RepoInfo = js.native
+  var repoInfo: typings.firebaseDatabase.repoInfoMod.RepoInfo
 }
 object RepoInfo {
   

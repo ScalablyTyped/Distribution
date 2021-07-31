@@ -4,53 +4,53 @@ import typings.ol.sizeMod.Size
 import typings.ol.textPlacementMod.TextPlacement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
   
   @JSImport("ol/style/Text", JSImport.Default)
   @js.native
-  class default () extends Text {
+  class default ()
+    extends StObject
+       with Text {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var backgroundFill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var backgroundFill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var backgroundStroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var backgroundStroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var maxAngle: js.UndefOr[Double] = js.native
+    var maxAngle: js.UndefOr[Double] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[js.Array[Double]] = js.native
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var placement: js.UndefOr[TextPlacement | String] = js.native
+    var placement: js.UndefOr[TextPlacement | String] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double | Size] = js.native
+    var scale: js.UndefOr[Double | Size] = js.undefined
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textBaseline: js.UndefOr[String] = js.native
+    var textBaseline: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -11,8 +11,8 @@ The lodash method `_.has` exported as a module.
 | Full name          | lodash.has |
 | Keywords           | lodash-modularized, has |
 | # releases         | 0 |
-| # dependents       | 282 |
-| # downloads        | 77111827 |
+| # dependents       | 303 |
+| # downloads        | 89423103 |
 | # stars            | 0 |
 
 ## Links

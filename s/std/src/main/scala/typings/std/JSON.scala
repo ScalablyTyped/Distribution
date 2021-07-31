@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,7 +16,7 @@ trait JSON extends StObject {
   def parse(text: java.lang.String): js.Any = js.native
   def parse(
     text: java.lang.String,
-    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _]
+    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, js.Any]
   ): js.Any = js.native
   
   /**
@@ -27,27 +26,27 @@ trait JSON extends StObject {
     * @param space Adds indentation, white space, and line break characters to the return-value JSON text to make it easier to read.
     */
   def stringify(value: js.Any): java.lang.String = js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: java.lang.String): java.lang.String = js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | java.lang.String]): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | java.lang.String], space: java.lang.String): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | java.lang.String], space: Double): java.lang.String = js.native
   def stringify(
     value: js.Any,
-    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _]
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, js.Any]
   ): java.lang.String = js.native
   def stringify(
     value: js.Any,
-    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _],
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, js.Any],
     space: java.lang.String
   ): java.lang.String = js.native
   def stringify(
     value: js.Any,
-    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _],
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, js.Any],
     space: Double
   ): java.lang.String = js.native
   def stringify(value: js.Any, replacer: Null, space: java.lang.String): java.lang.String = js.native
   def stringify(value: js.Any, replacer: Null, space: Double): java.lang.String = js.native
+  def stringify(value: js.Any, replacer: Unit, space: java.lang.String): java.lang.String = js.native
+  def stringify(value: js.Any, replacer: Unit, space: Double): java.lang.String = js.native
   
   @JSName(js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native

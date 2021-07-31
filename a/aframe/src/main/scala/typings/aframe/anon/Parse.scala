@@ -2,15 +2,13 @@ package typings.aframe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parse extends StObject {
   
-  def parse(value: String): js.Object = js.native
+  def parse(value: String): js.Object
   
-  def stringify(data: js.Object): String = js.native
+  def stringify(data: js.Object): String
 }
 object Parse {
   

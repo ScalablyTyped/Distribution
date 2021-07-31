@@ -2,26 +2,25 @@ package typings.webidl2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractBase extends StObject {
   
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute] = js.native
+  var extAttrs: js.Array[ExtendedAttribute]
   
   /** The container of this type. */
-  var parent: AbstractBase | Null = js.native
+  var parent: AbstractBase | Null
   
   /** String indicating the type of this node. */
-  var `type`: String | Null = js.native
+  var `type`: String | Null
 }
 object AbstractBase {
   
   @scala.inline
   def apply(extAttrs: js.Array[ExtendedAttribute]): AbstractBase = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[AbstractBase]
   }
   

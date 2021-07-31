@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteTableAssociationState extends StObject {
   
   /**
     * The state of the association.
     */
-  var State: js.UndefOr[RouteTableAssociationStateCode] = js.native
+  var State: js.UndefOr[RouteTableAssociationStateCode] = js.undefined
   
   /**
     * The status message, if applicable.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
 }
 object RouteTableAssociationState {
   

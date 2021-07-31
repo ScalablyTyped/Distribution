@@ -2,23 +2,21 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaddingRightProps[TLength] extends StObject {
   
   val paddingRight: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   val pr: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PaddingRightProps {
   
@@ -29,12 +27,12 @@ object PaddingRightProps {
   }
   
   @scala.inline
-  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[_], TLength] (val x: Self with PaddingRightProps[TLength]) extends AnyVal {
+  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[?], TLength] (val x: Self & PaddingRightProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setPaddingRight(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
@@ -42,12 +40,14 @@ object PaddingRightProps {
     def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def setPaddingRightVarargs(value: js.Any*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+    def setPaddingRightVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
     
     @scala.inline
     def setPr(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,8 @@ object PaddingRightProps {
     def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
     @scala.inline
-    def setPrVarargs(value: js.Any*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    def setPrVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "pr", js.Array(value :_*))
   }
 }

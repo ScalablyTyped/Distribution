@@ -2,49 +2,47 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * request interfaces
   ************************/
 /** Parameters for the `analyze` operation. */
-@js.native
 trait AnalyzeParams extends StObject {
   
   /** Set this to `false` to disable webpage cleaning. To learn more about webpage cleaning, see the [Analyzing webpages](https://cloud.ibm.com/docs/services/natural-language-understanding/analyzing-webpages.html) documentation. */
-  var clean: js.UndefOr[Boolean] = js.native
+  var clean: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to use raw HTML content if text cleaning fails. */
-  var fallback_to_raw: js.UndefOr[Boolean] = js.native
+  var fallback_to_raw: js.UndefOr[Boolean] = js.undefined
   
   /** Specific features to analyze the document for. */
-  var features: Features = js.native
+  var features: Features
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The HTML file to analyze. One of the `text`, `html`, or `url` parameters is required. */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
   /** ISO 639-1 code that specifies the language of your text. This overrides automatic language detection. Language support differs depending on the features you include in your analysis. See [Language support](https://www.bluemix.net/docs/services/natural-language-understanding/language-support.html) for more information. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Sets the maximum number of characters that are processed by the service. */
-  var limit_text_characters: js.UndefOr[Double] = js.native
+  var limit_text_characters: js.UndefOr[Double] = js.undefined
   
   /** Whether or not to return the analyzed text. */
-  var return_analyzed_text: js.UndefOr[Boolean] = js.native
+  var return_analyzed_text: js.UndefOr[Boolean] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The plain text to analyze. One of the `text`, `html`, or `url` parameters is required. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The webpage to analyze. One of the `text`, `html`, or `url` parameters is required. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** An [XPath query](https://cloud.ibm.com/docs/services/natural-language-understanding/analyzing-webpages.html#xpath) to perform on `html` or `url` input. Results of the query will be appended to the cleaned webpage text before it is analyzed. To analyze only the results of the XPath query, set the `clean` parameter to `false`. */
-  var xpath: js.UndefOr[String] = js.native
+  var xpath: js.UndefOr[String] = js.undefined
 }
 object AnalyzeParams {
   

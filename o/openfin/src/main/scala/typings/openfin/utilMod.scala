@@ -2,35 +2,31 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("openfin/_v2/launcher/util", "exists")
+  @JSImport("openfin/_v2/launcher/util", JSImport.Namespace)
   @js.native
-  def exists(path: String): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("openfin/_v2/launcher/util", "first")
-  @js.native
-  def first[T](arr: js.Array[T], func: js.Function3[/* x */ T, /* i */ Double, /* r */ js.Array[T], Boolean]): T | Null = js.native
+  @scala.inline
+  def exists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("openfin/_v2/launcher/util", "resolveDir")
-  @js.native
-  def resolveDir(base: String, paths: js.Array[String]): js.Promise[String] = js.native
+  @scala.inline
+  def first[T](arr: js.Array[T], func: js.Function3[/* x */ T, /* i */ Double, /* r */ js.Array[T], Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
-  @JSImport("openfin/_v2/launcher/util", "resolveRuntimeVersion")
-  @js.native
-  def resolveRuntimeVersion(versionOrChannel: String): js.Promise[String] = js.native
+  @scala.inline
+  def resolveDir(base: String, paths: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDir")(base.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("openfin/_v2/launcher/util", "rmDir")
-  @js.native
-  def rmDir(dirPath: String): js.Promise[Unit] = js.native
-  @JSImport("openfin/_v2/launcher/util", "rmDir")
-  @js.native
-  def rmDir(dirPath: String, removeSelf: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def resolveRuntimeVersion(versionOrChannel: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRuntimeVersion")(versionOrChannel.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("openfin/_v2/launcher/util", "unzip")
-  @js.native
-  def unzip(file: String, dest: String): js.Promise[_] = js.native
+  @scala.inline
+  def rmDir(dirPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmDir")(dirPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def rmDir(dirPath: String, removeSelf: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmDir")(dirPath.asInstanceOf[js.Any], removeSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def unzip(file: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(file.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

@@ -2,17 +2,15 @@ package typings.pem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientKey extends StObject {
     
-    var clientKey: String = js.native
+    var clientKey: String
     
-    var csr: String = js.native
+    var csr: String
   }
   object ClientKey {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Dhparam extends StObject {
     
-    var dhparam: js.Any = js.native
+    var dhparam: js.Any
   }
   object Dhparam {
     
@@ -54,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fingerprint extends StObject {
     
-    var fingerprint: String = js.native
+    var fingerprint: String
   }
   object Fingerprint {
     
@@ -75,10 +71,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
   }
   object Key {
     
@@ -96,10 +91,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Modulus extends StObject {
     
-    var modulus: js.Any = js.native
+    var modulus: js.Any
   }
   object Modulus {
     
@@ -117,10 +111,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pkcs12 extends StObject {
     
-    var pkcs12: js.Any = js.native
+    var pkcs12: js.Any
   }
   object Pkcs12 {
     
@@ -138,12 +131,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Prime extends StObject {
     
-    var prime: js.Any = js.native
+    var prime: js.Any
     
-    var size: js.Any = js.native
+    var size: js.Any
   }
   object Prime {
     
@@ -164,10 +156,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PublicKey extends StObject {
     
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object PublicKey {
     

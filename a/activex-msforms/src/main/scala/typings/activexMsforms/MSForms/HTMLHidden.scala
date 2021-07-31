@@ -2,20 +2,18 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLHidden extends StObject {
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLHidden_typekey")
-  var MSFormsDotHTMLHidden_typekey: HTMLHidden = js.native
+  var MSFormsDotHTMLHidden_typekey: HTMLHidden
   
-  var Value: String = js.native
+  var Value: String
 }
 object HTMLHidden {
   

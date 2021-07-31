@@ -2,23 +2,23 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Hotspot extends Overlay {
+trait Hotspot
+  extends StObject
+     with Overlay {
   
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def getUserData(): js.Any = js.native
+  def getUserData(): js.Any
   
-  def setPosition(position: Point): Unit = js.native
+  def setPosition(position: Point): Unit
   
-  def setText(text: String): Unit = js.native
+  def setText(text: String): Unit
   
-  def setUserData(data: js.Any): Unit = js.native
+  def setUserData(data: js.Any): Unit
 }
 object Hotspot {
   

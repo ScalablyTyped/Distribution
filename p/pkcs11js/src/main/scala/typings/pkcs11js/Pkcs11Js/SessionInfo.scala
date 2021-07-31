@@ -3,19 +3,17 @@ package typings.pkcs11js.Pkcs11Js
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionInfo extends StObject {
   
-  var deviceError: Double = js.native
+  var deviceError: Double
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var slotID: Buffer = js.native
+  var slotID: Buffer
   
-  var state: Double = js.native
+  var state: Double
 }
 object SessionInfo {
   

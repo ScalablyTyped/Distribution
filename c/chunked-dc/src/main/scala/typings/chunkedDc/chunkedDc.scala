@@ -8,28 +8,30 @@ import typings.std.IteratorResult
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chunkedDc {
   
   /** chunker.ts **/
   @js.native
-  trait Chunker extends IterableIterator[Uint8Array] {
+  trait Chunker
+    extends StObject
+       with IterableIterator[Uint8Array] {
     
     var hasNext: Boolean = js.native
     
-    def next(): IteratorResult[Uint8Array, _] = js.native
+    def next(): IteratorResult[Uint8Array, js.Any] = js.native
   }
   
   @js.native
-  trait ChunkerStatic extends Instantiable3[/* id */ Double, /* message */ Uint8Array, /* chunkSize */ Double, Chunker]
+  trait ChunkerStatic
+    extends StObject
+       with Instantiable3[/* id */ Double, /* message */ Uint8Array, /* chunkSize */ Double, Chunker]
   
   /** common.ts **/
-  @js.native
   trait CommonStatic extends StObject {
     
-    var HEADER_LENGTH: Double = js.native
+    var HEADER_LENGTH: Double
   }
   object CommonStatic {
     
@@ -51,12 +53,11 @@ object chunkedDc {
   type MessageListener = js.Function2[/* message */ Uint8Array, /* context */ js.UndefOr[js.Any], Unit]
   
   /** main.ts **/
-  @js.native
   trait Standalone extends StObject {
     
-    var Chunker: ChunkerStatic = js.native
+    var Chunker: ChunkerStatic
     
-    var Unchunker: UnchunkerStatic = js.native
+    var Unchunker: UnchunkerStatic
   }
   object Standalone {
     
@@ -92,5 +93,7 @@ object chunkedDc {
   }
   
   @js.native
-  trait UnchunkerStatic extends Instantiable0[Unchunker]
+  trait UnchunkerStatic
+    extends StObject
+       with Instantiable0[Unchunker]
 }

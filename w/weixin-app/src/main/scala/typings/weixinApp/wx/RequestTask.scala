@@ -2,16 +2,14 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 返回一个 requestTask 对象，通过 requestTask，可中断请求任务。
   */
-@js.native
 trait RequestTask extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
 }
 object RequestTask {
   

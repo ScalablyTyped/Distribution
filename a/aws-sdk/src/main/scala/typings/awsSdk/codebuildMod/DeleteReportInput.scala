@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReportInput extends StObject {
   
   /**
     *  The ARN of the report to delete. 
     */
-  var arn: NonEmptyString = js.native
+  var arn: NonEmptyString
 }
 object DeleteReportInput {
   

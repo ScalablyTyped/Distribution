@@ -5,19 +5,20 @@ import typings.react.mod.FC
 import typings.reactAuthKit.typesMod.signInFunctionParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withSignInMod {
   
-  @JSImport("react-auth-kit/higherOrderComponents/withSignIn", JSImport.Default)
+  @JSImport("react-auth-kit/higherOrderComponents/withSignIn", JSImport.Namespace)
   @js.native
-  def default[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
+  
   trait withSignInProps extends StObject {
     
-    def signIn(params: signInFunctionParams): Boolean = js.native
+    def signIn(params: signInFunctionParams): Boolean
   }
   object withSignInProps {
     

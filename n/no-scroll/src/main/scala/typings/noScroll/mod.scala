@@ -3,7 +3,6 @@ package typings.noScroll
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,14 +11,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : NoScroll = js.native
   
-  @js.native
   trait NoScroll extends StObject {
     
-    def off(): Unit = js.native
+    def off(): Unit
     
-    def on(): Unit = js.native
+    def on(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object NoScroll {
     

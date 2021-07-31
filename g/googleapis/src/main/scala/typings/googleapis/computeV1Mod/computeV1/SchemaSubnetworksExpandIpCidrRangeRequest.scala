@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
     * within this network. This range can only be larger than (i.e. a superset
     * of) the range previously defined before the update.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
 }
 object SchemaSubnetworksExpandIpCidrRangeRequest {
   

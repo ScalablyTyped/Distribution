@@ -10,7 +10,6 @@ import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod extends Shortcut {
@@ -19,18 +18,17 @@ object buttonMod extends Shortcut {
   @js.native
   val default: FC[ButtonProps] = js.native
   
-  @js.native
   trait ButtonProps extends StObject {
     
-    var buttonStyle: StyleProp[ViewProps] = js.native
+    var buttonStyle: StyleProp[ViewProps]
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var iconSrc: ImageSourcePropType = js.native
+    var iconSrc: ImageSourcePropType
     
-    def onPress(): Unit = js.native
+    def onPress(): Unit
     
-    var textStyle: StyleProp[TextProps] = js.native
+    var textStyle: StyleProp[TextProps]
   }
   object ButtonProps {
     

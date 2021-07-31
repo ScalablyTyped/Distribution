@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponseInformation extends IResponseInformation
+trait ResponseInformation
+  extends StObject
+     with IResponseInformation
 object ResponseInformation {
   
   @scala.inline

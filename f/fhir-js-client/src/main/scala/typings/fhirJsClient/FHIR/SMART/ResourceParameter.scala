@@ -2,25 +2,23 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Resource type with ID
   * Used by the get method
   */
-@js.native
 trait ResourceParameter extends StObject {
   
   /**
     * Resource ID
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource type
     */
-  var resource: String = js.native
+  var resource: String
 }
 object ResourceParameter {
   

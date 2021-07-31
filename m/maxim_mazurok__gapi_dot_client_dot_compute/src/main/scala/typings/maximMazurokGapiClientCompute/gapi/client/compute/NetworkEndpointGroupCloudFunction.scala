@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkEndpointGroupCloudFunction extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait NetworkEndpointGroupCloudFunction extends StObject {
     *
     * Example value: "func1".
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * A template to parse function field from a request URL. URL mask allows for routing to multiple Cloud Functions without having to create multiple Network Endpoint Groups and backend
@@ -24,7 +22,7 @@ trait NetworkEndpointGroupCloudFunction extends StObject {
     * For example, request URLs "mydomain.com/function1" and "mydomain.com/function2" can be backed by the same Serverless NEG with URL mask "/". The URL mask will parse them to {
     * function = "function1" } and { function = "function2" } respectively.
     */
-  var urlMask: js.UndefOr[String] = js.native
+  var urlMask: js.UndefOr[String] = js.undefined
 }
 object NetworkEndpointGroupCloudFunction {
   

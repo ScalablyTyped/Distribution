@@ -4,28 +4,26 @@ import typings.awsSdkClientDynamodbNode.typesAutoScalingSettingsUpdateMod.AutoSc
 import typings.awsSdkClientDynamodbNode.typesAutoScalingSettingsUpdateMod.UnmarshalledAutoScalingSettingsUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
   
-  @js.native
   trait GlobalTableGlobalSecondaryIndexSettingsUpdate extends StObject {
     
     /**
       * <p>The name of the global secondary index. The name must be unique among all other indexes on this table.</p>
       */
-    var IndexName: String = js.native
+    var IndexName: String
     
     /**
       * <p>AutoScaling settings for managing a global secondary index's write capacity units.</p>
       */
-    var ProvisionedWriteCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+    var ProvisionedWriteCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
     
     /**
       * <p>The maximum number of writes consumed per second before DynamoDB returns a <code>ThrottlingException.</code> </p>
       */
-    var ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.native
+    var ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object GlobalTableGlobalSecondaryIndexSettingsUpdate {
     
@@ -55,14 +53,15 @@ object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate extends GlobalTableGlobalSecondaryIndexSettingsUpdate {
+  trait UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate
+    extends StObject
+       with GlobalTableGlobalSecondaryIndexSettingsUpdate {
     
     /**
       * <p>AutoScaling settings for managing a global secondary index's write capacity units.</p>
       */
     @JSName("ProvisionedWriteCapacityAutoScalingSettingsUpdate")
-    var ProvisionedWriteCapacityAutoScalingSettingsUpdate_UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.native
+    var ProvisionedWriteCapacityAutoScalingSettingsUpdate_UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.undefined
   }
   object UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate {
     

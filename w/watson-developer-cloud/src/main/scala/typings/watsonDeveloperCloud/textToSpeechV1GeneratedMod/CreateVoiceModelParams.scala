@@ -3,25 +3,23 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 import typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createVoiceModel` operation. */
-@js.native
 trait CreateVoiceModelParams extends StObject {
   
   /** A description of the new custom voice model. Specifying a description is recommended. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The language of the new custom voice model. Omit the parameter to use the the default language, `en-US`. */
-  var language: js.UndefOr[Language | String] = js.native
+  var language: js.UndefOr[Language | String] = js.undefined
   
   /** The name of the new custom voice model. */
-  var name: String = js.native
+  var name: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object CreateVoiceModelParams {
   

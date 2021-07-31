@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limits extends StObject {
   
-  var MaximumPartitionCount: typings.awsSdk.cloudsearchMod.MaximumPartitionCount = js.native
+  var MaximumPartitionCount: typings.awsSdk.cloudsearchMod.MaximumPartitionCount
   
-  var MaximumReplicationCount: typings.awsSdk.cloudsearchMod.MaximumReplicationCount = js.native
+  var MaximumReplicationCount: typings.awsSdk.cloudsearchMod.MaximumReplicationCount
 }
 object Limits {
   

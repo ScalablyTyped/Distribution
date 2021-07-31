@@ -2,35 +2,33 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BitMatrix extends StObject {
   
-  val Dimension: Double = js.native
+  val Dimension: Double
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val Width: Double = js.native
+  val Width: Double
   
-  var bits: js.Array[Double] = js.native
+  var bits: js.Array[Double]
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def flip(x: Double, y: Double): Unit = js.native
+  def flip(x: Double, y: Double): Unit
   
-  def get_Renamed(x: Double, y: Double): Boolean = js.native
+  def get_Renamed(x: Double, y: Double): Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var rowSize: Double = js.native
+  var rowSize: Double
   
-  def setRegion(left: Double, top: Double, width: Double, height: Double): Unit = js.native
+  def setRegion(left: Double, top: Double, width: Double, height: Double): Unit
   
-  def set_Renamed(x: Double, y: Double): Unit = js.native
+  def set_Renamed(x: Double, y: Double): Unit
   
-  var width: Double = js.native
+  var width: Double
 }
 object BitMatrix {
   

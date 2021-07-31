@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "NestedFilter")
 @js.native
-class NestedFilter protected () extends Filter {
+class NestedFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Constructs a filter that is capable of executing a filter against objects
     nested within a document.

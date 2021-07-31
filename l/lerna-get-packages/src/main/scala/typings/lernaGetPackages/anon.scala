@@ -2,15 +2,13 @@ package typings.lernaGetPackages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdditionalTsTypings extends StObject {
     
-    var additionalTsTypings: js.UndefOr[js.Array[String]] = js.native
+    var additionalTsTypings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AdditionalTsTypings {
     
@@ -34,18 +32,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: js.UndefOr[AdditionalTsTypings] = js.native
+    var config: js.UndefOr[AdditionalTsTypings] = js.undefined
     
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object Config {
     

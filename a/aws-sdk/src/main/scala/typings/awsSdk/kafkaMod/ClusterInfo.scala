@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterInfo extends StObject {
   
   /**
@@ -13,116 +11,116 @@ trait ClusterInfo extends StObject {
     Arn of active cluster operation.
     
     */
-  var ActiveOperationArn: js.UndefOr[string] = js.native
+  var ActiveOperationArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Information about the broker nodes.
     
     */
-  var BrokerNodeGroupInfo: js.UndefOr[typings.awsSdk.kafkaMod.BrokerNodeGroupInfo] = js.native
+  var BrokerNodeGroupInfo: js.UndefOr[typings.awsSdk.kafkaMod.BrokerNodeGroupInfo] = js.undefined
   
   /**
     * 
     Includes all client authentication information.
     
     */
-  var ClientAuthentication: js.UndefOr[typings.awsSdk.kafkaMod.ClientAuthentication] = js.native
+  var ClientAuthentication: js.UndefOr[typings.awsSdk.kafkaMod.ClientAuthentication] = js.undefined
   
   /**
     * 
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The name of the cluster.
     
     */
-  var ClusterName: js.UndefOr[string] = js.native
+  var ClusterName: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The time when the cluster was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.native
+  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * 
     Information about the version of software currently deployed on the Kafka brokers in the cluster.
     
     */
-  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.native
+  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.undefined
   
   /**
     * 
     The current version of the MSK cluster.
     
     */
-  var CurrentVersion: js.UndefOr[string] = js.native
+  var CurrentVersion: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Includes all encryption-related information.
     
     */
-  var EncryptionInfo: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInfo] = js.native
+  var EncryptionInfo: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInfo] = js.undefined
   
   /**
     * 
     Specifies which metrics are gathered for the MSK cluster. This property has the following possible values: DEFAULT, PER_BROKER, PER_TOPIC_PER_BROKER, and PER_TOPIC_PER_PARTITION. For a list of the metrics associated with each of these levels of monitoring, see Monitoring.
     
     */
-  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.undefined
   
-  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.undefined
   
   /**
     * 
     The number of broker nodes in the cluster.
     
     */
-  var NumberOfBrokerNodes: js.UndefOr[integer] = js.native
+  var NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined
   
   /**
     * 
     Settings for open monitoring using Prometheus.
     
     */
-  var OpenMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.OpenMonitoring] = js.native
+  var OpenMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.OpenMonitoring] = js.undefined
   
   /**
     * 
     The state of the cluster. The possible states are CREATING, ACTIVE, and FAILED.
     
     */
-  var State: js.UndefOr[ClusterState] = js.native
+  var State: js.UndefOr[ClusterState] = js.undefined
   
-  var StateInfo: js.UndefOr[typings.awsSdk.kafkaMod.StateInfo] = js.native
+  var StateInfo: js.UndefOr[typings.awsSdk.kafkaMod.StateInfo] = js.undefined
   
   /**
     * 
     Tags attached to the cluster.
     
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
     * 
     The connection string to use to connect to the Apache ZooKeeper cluster.
     
     */
-  var ZookeeperConnectString: js.UndefOr[string] = js.native
+  var ZookeeperConnectString: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The connection string to use to connect to zookeeper cluster on Tls port.
     
     */
-  var ZookeeperConnectStringTls: js.UndefOr[string] = js.native
+  var ZookeeperConnectStringTls: js.UndefOr[string] = js.undefined
 }
 object ClusterInfo {
   

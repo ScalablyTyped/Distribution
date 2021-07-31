@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGlobalTableSettingsOutput extends StObject {
   
   /**
     * The name of the global table.
     */
-  var GlobalTableName: js.UndefOr[TableName] = js.native
+  var GlobalTableName: js.UndefOr[TableName] = js.undefined
   
   /**
     * The Region-specific settings for the global table.
     */
-  var ReplicaSettings: js.UndefOr[ReplicaSettingsDescriptionList] = js.native
+  var ReplicaSettings: js.UndefOr[ReplicaSettingsDescriptionList] = js.undefined
 }
 object DescribeGlobalTableSettingsOutput {
   

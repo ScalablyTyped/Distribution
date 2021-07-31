@@ -10,76 +10,64 @@ import typings.merkle.merkleStrings.whirlpool
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(hashname: md5): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: none): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: none, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: ripemd160): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: ripemd160, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha1): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha1, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha256): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha256, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha512): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: sha512, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: whirlpool): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  @scala.inline
+  def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  
   @JSImport("merkle", JSImport.Namespace)
   @js.native
-  def apply(hashname: md5): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: none): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: none, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: ripemd160): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: ripemd160, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha1): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha1, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha256): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha256, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha512): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: sha512, useUpperCaseForHash: Boolean): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: whirlpool): MerkleStream = js.native
-  @JSImport("merkle", JSImport.Namespace)
-  @js.native
-  def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait MerkleStream extends Transform {
     
-    def async(leaves: js.Array[_], callback: js.Function2[/* err */ String, /* tree */ MerkleTree, Unit]): Unit = js.native
+    def async(leaves: js.Array[js.Any], callback: js.Function2[/* err */ String, /* tree */ MerkleTree, Unit]): Unit = js.native
     
     def json(): MerkleStream = js.native
     
-    def sync(leaves: js.Array[_]): MerkleTree = js.native
+    def sync(leaves: js.Array[js.Any]): MerkleTree = js.native
   }
   
-  @js.native
   trait MerkleTree extends StObject {
     
-    def depth(): Double = js.native
+    def depth(): Double
     
-    def level(level: Double): js.UndefOr[Double] = js.native
+    def level(level: Double): js.UndefOr[Double]
     
-    def levels(): Double = js.native
+    def levels(): Double
     
-    def nodes(): Double = js.native
+    def nodes(): Double
     
-    def root(): String = js.native
+    def root(): String
   }
   object MerkleTree {
     

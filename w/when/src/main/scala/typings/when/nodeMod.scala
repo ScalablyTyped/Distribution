@@ -16,162 +16,117 @@ import typings.when.When._underscore.NodeFn4
 import typings.when.When._underscore.NodeFn5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
   
-  @JSImport("when/node", "apply")
+  @JSImport("when/node", JSImport.Namespace)
   @js.native
-  def apply[T](fn: NodeFn0[T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn0[T], args: IArguments): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn1[_, T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn1[_, T], args: IArguments): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn2[_, _, T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn2[_, _, T], args: IArguments): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn3[_, _, _, T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn3[_, _, _, T], args: IArguments): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn4[_, _, _, _, T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn4[_, _, _, _, T], args: IArguments): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn5[_, _, _, _, _, T], args: js.Array[_]): Promise[T] = js.native
-  @JSImport("when/node", "apply")
-  @js.native
-  def apply[T](fn: NodeFn5[_, _, _, _, _, T], args: IArguments): Promise[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("when/node", "bindCallback")
-  @js.native
-  def bindCallback[TArg](arg: Promise[TArg], callback: js.Function2[/* err */ js.Any, /* arg */ TArg, Unit]): Promise[TArg] = js.native
+  @scala.inline
+  def apply[T](fn: NodeFn0[T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn0[T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn1[js.Any, T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn1[js.Any, T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn2[js.Any, js.Any, T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn2[js.Any, js.Any, T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn3[js.Any, js.Any, js.Any, T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn3[js.Any, js.Any, js.Any, T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn4[js.Any, js.Any, js.Any, js.Any, T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn4[js.Any, js.Any, js.Any, js.Any, T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn5[js.Any, js.Any, js.Any, js.Any, js.Any, T], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def apply[T](fn: NodeFn5[js.Any, js.Any, js.Any, js.Any, js.Any, T], args: IArguments): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  @JSImport("when/node", "call")
-  @js.native
-  def call[T](fn: NodeFn0[T]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, T](fn: NodeFn1[A1, T], arg1: A1): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, T](fn: NodeFn1[A1, T], arg1: Promise[A1]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: A1, arg2: A2): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: A1, arg2: Promise[A2]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: Promise[A1], arg2: A2): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: Promise[A1], arg2: Promise[A2]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: A3): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  @scala.inline
+  def bindCallback[TArg](arg: Promise[TArg], callback: js.Function2[/* err */ js.Any, /* arg */ TArg, Unit]): Promise[TArg] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Promise[TArg]]
+  
+  @scala.inline
+  def call[T](fn: NodeFn0[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, T](fn: NodeFn1[A1, T], arg1: A1): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, T](fn: NodeFn1[A1, T], arg1: Promise[A1]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: A1, arg2: A2): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: A1, arg2: Promise[A2]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: Promise[A1], arg2: A2): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, T](fn: NodeFn2[A1, A2, T], arg1: Promise[A1], arg2: Promise[A2]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, T](
     fn: NodeFn4[A1, A2, A3, A4, T],
     arg1: Promise[A1],
     arg2: Promise[A2],
     arg3: Promise[A3],
     arg4: Promise[A4]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -179,12 +134,10 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -192,9 +145,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -202,9 +154,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -212,12 +163,10 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -225,9 +174,8 @@ object nodeMod {
     arg3: A3,
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -235,9 +183,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -245,9 +192,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -255,9 +201,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -265,9 +210,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -275,9 +219,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: A1,
@@ -285,12 +228,10 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
-  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -298,9 +239,8 @@ object nodeMod {
     arg3: A3,
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -308,9 +248,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -318,9 +257,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -328,9 +266,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -338,9 +275,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -348,9 +284,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -358,9 +293,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -368,9 +302,8 @@ object nodeMod {
     arg3: A3,
     arg4: A4,
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -378,9 +311,8 @@ object nodeMod {
     arg3: A3,
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -388,9 +320,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -398,9 +329,8 @@ object nodeMod {
     arg3: A3,
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -408,9 +338,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -418,9 +347,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: A4,
     arg5: Promise[A5]
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -428,9 +356,8 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: A5
-  ): Promise[T] = js.native
-  @JSImport("when/node", "call")
-  @js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  @scala.inline
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
     arg1: Promise[A1],
@@ -438,54 +365,42 @@ object nodeMod {
     arg3: Promise[A3],
     arg4: Promise[A4],
     arg5: Promise[A5]
-  ): Promise[T] = js.native
+  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  @JSImport("when/node", "createCallback")
-  @js.native
-  def createCallback[TArg](resolver: Resolver[TArg]): js.Function2[/* err */ js.Any, /* arg */ TArg, Unit] = js.native
+  @scala.inline
+  def createCallback[TArg](resolver: Resolver[TArg]): js.Function2[/* err */ js.Any, /* arg */ TArg, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallback")(resolver.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* err */ js.Any, /* arg */ TArg, Unit]]
   
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[T](fn: NodeFn0[T]): LiftedFn0[T] = js.native
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[A1, T](fn: NodeFn1[A1, T]): LiftedFn1[A1, T] = js.native
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[A1, A2, T](fn: NodeFn2[A1, A2, T]): LiftedFn2[A1, A2, T] = js.native
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T]): LiftedFn3[A1, A2, A3, T] = js.native
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T]): LiftedFn4[A1, A2, A3, A4, T] = js.native
-  @JSImport("when/node", "lift")
-  @js.native
-  def lift[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T]): LiftedFn5[A1, A2, A3, A4, A5, T] = js.native
+  @scala.inline
+  def lift[T](fn: NodeFn0[T]): LiftedFn0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn0[T]]
+  @scala.inline
+  def lift[A1, T](fn: NodeFn1[A1, T]): LiftedFn1[A1, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn1[A1, T]]
+  @scala.inline
+  def lift[A1, A2, T](fn: NodeFn2[A1, A2, T]): LiftedFn2[A1, A2, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn2[A1, A2, T]]
+  @scala.inline
+  def lift[A1, A2, A3, T](fn: NodeFn3[A1, A2, A3, T]): LiftedFn3[A1, A2, A3, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn3[A1, A2, A3, T]]
+  @scala.inline
+  def lift[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T]): LiftedFn4[A1, A2, A3, A4, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn4[A1, A2, A3, A4, T]]
+  @scala.inline
+  def lift[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T]): LiftedFn5[A1, A2, A3, A4, A5, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any]).asInstanceOf[LiftedFn5[A1, A2, A3, A4, A5, T]]
   
-  @JSImport("when/node", "liftAll")
-  @js.native
-  def liftAll(srcApi: js.Any): js.Any = js.native
-  @JSImport("when/node", "liftAll")
-  @js.native
-  def liftAll(srcApi: js.Any, transform: js.UndefOr[scala.Nothing], destApi: js.Any): js.Any = js.native
-  @JSImport("when/node", "liftAll")
-  @js.native
+  @scala.inline
+  def liftAll(srcApi: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("liftAll")(srcApi.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def liftAll(
     srcApi: js.Any,
-    transform: js.Function3[/* destApi */ js.Any, /* liftedFunc */ js.Function, /* name */ String, _]
-  ): js.Any = js.native
-  @JSImport("when/node", "liftAll")
-  @js.native
+    transform: js.Function3[/* destApi */ js.Any, /* liftedFunc */ js.Function, /* name */ String, js.Any]
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("liftAll")(srcApi.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def liftAll(
     srcApi: js.Any,
-    transform: js.Function3[/* destApi */ js.Any, /* liftedFunc */ js.Function, /* name */ String, _],
+    transform: js.Function3[/* destApi */ js.Any, /* liftedFunc */ js.Function, /* name */ String, js.Any],
     destApi: js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("liftAll")(srcApi.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destApi.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def liftAll(srcApi: js.Any, transform: Unit, destApi: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("liftAll")(srcApi.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destApi.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("when/node", "liftCallback")
-  @js.native
-  def liftCallback[TArg](callback: js.Function2[/* err */ js.Any, /* arg */ TArg, Unit]): js.Function1[/* value */ Promise[TArg], Promise[TArg]] = js.native
+  @scala.inline
+  def liftCallback[TArg](callback: js.Function2[/* err */ js.Any, /* arg */ TArg, Unit]): js.Function1[/* value */ Promise[TArg], Promise[TArg]] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ Promise[TArg], Promise[TArg]]]
   
   @js.native
   trait Resolver[T] extends StObject {

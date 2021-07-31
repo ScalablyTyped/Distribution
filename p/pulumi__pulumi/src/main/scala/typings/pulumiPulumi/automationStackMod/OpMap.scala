@@ -2,26 +2,24 @@ package typings.pulumiPulumi.automationStackMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @pulumi/pulumi.@pulumi/pulumi/x/automation/stack.OpType ]: number} */
-@js.native
 trait OpMap extends StObject {
   
-  var create: Double = js.native
+  var create: Double
   
-  var `create-replacement`: Double = js.native
+  var `create-replacement`: Double
   
-  var delete: Double = js.native
+  var delete: Double
   
-  var `delete-replaced`: Double = js.native
+  var `delete-replaced`: Double
   
-  var replace: Double = js.native
+  var replace: Double
   
-  var same: Double = js.native
+  var same: Double
   
-  var update: Double = js.native
+  var update: Double
 }
 object OpMap {
   

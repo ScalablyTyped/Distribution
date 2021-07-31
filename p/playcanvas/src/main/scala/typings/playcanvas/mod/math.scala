@@ -2,13 +2,16 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Math API.
   */
 object math {
+  
+  @JSImport("playcanvas", "math")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Conversion factor between degrees and radians.
@@ -43,9 +46,8 @@ object math {
     * @param b - A single byte (0-255).
     * @returns A single unsigned 24 bit Number.
     */
-  @JSImport("playcanvas", "math.bytesToInt24")
-  @js.native
-  def bytesToInt24(r: Double, g: Double, b: Double): Double = js.native
+  @scala.inline
+  def bytesToInt24(r: Double, g: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bytesToInt24")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Convert 4 1-byte Numbers into a single unsigned 32bit Number.
@@ -61,9 +63,8 @@ object math {
     * @param a - A single byte (0-255).
     * @returns A single unsigned 32bit Number.
     */
-  @JSImport("playcanvas", "math.bytesToInt32")
-  @js.native
-  def bytesToInt32(r: Double, g: Double, b: Double, a: Double): Double = js.native
+  @scala.inline
+  def bytesToInt32(r: Double, g: Double, b: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bytesToInt32")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Clamp a number between min and max inclusive.
@@ -72,18 +73,16 @@ object math {
     * @param max - Max value.
     * @returns The clamped value.
     */
-  @JSImport("playcanvas", "math.clamp")
-  @js.native
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Converts float number to half float representation.
     * @param val - The float number.
     * @returns A 16 bit number representing half float representation as used by GPU.
     */
-  @JSImport("playcanvas", "math.float2Half")
-  @js.native
-  def float2Half(`val`: Double): Double = js.native
+  @scala.inline
+  def float2Half(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float2Half")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Convert an 24 bit integer into an array of 3 bytes.
@@ -93,9 +92,8 @@ object math {
     * @param i - Number holding an integer value.
     * @returns An array of 3 bytes.
     */
-  @JSImport("playcanvas", "math.intToBytes24")
-  @js.native
-  def intToBytes24(i: Double): js.Array[Double] = js.native
+  @scala.inline
+  def intToBytes24(i: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("intToBytes24")(i.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /**
     * Convert an 32 bit integer into an array of 4 bytes.
@@ -105,9 +103,8 @@ object math {
     * @param i - Number holding an integer value.
     * @returns An array of 4 bytes.
     */
-  @JSImport("playcanvas", "math.intToBytes32")
-  @js.native
-  def intToBytes32(i: Double): js.Array[Double] = js.native
+  @scala.inline
+  def intToBytes32(i: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("intToBytes32")(i.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /**
     * Calculates the linear interpolation of two numbers.
@@ -118,9 +115,8 @@ object math {
     * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two numbers.
     */
-  @JSImport("playcanvas", "math.lerp")
-  @js.native
-  def lerp(a: Double, b: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def lerp(a: Double, b: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Calculates the linear interpolation of two angles ensuring that interpolation
@@ -132,27 +128,24 @@ object math {
     * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two angles.
     */
-  @JSImport("playcanvas", "math.lerpAngle")
-  @js.native
-  def lerpAngle(a: Double, b: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def lerpAngle(a: Double, b: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerpAngle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the next power of 2 for the specified value.
     * @param val - The value for which to calculate the next power of 2.
     * @returns The next power of 2.
     */
-  @JSImport("playcanvas", "math.nextPowerOfTwo")
-  @js.native
-  def nextPowerOfTwo(`val`: Double): Double = js.native
+  @scala.inline
+  def nextPowerOfTwo(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPowerOfTwo")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Returns true if argument is a power-of-two and false otherwise.
     * @param x - Number to check for power-of-two property.
     * @returns True if power-of-two and false otherwise.
     */
-  @JSImport("playcanvas", "math.powerOfTwo")
-  @js.native
-  def powerOfTwo(x: Double): Boolean = js.native
+  @scala.inline
+  def powerOfTwo(x: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("powerOfTwo")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Return a pseudo-random number between min and max.
@@ -161,9 +154,8 @@ object math {
     * @param max - Upper bound for range.
     * @returns Pseudo-random number between the supplied range.
     */
-  @JSImport("playcanvas", "math.random")
-  @js.native
-  def random(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def random(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Rounds a number up to nearest multiple.
@@ -171,9 +163,8 @@ object math {
     * @param multiple - The multiple to round up to.
     * @returns A number rounded up to nearest multiple.
     */
-  @JSImport("playcanvas", "math.roundUp")
-  @js.native
-  def roundUp(numToRound: Double, multiple: Double): Double = js.native
+  @scala.inline
+  def roundUp(numToRound: Double, multiple: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("roundUp")(numToRound.asInstanceOf[js.Any], multiple.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * An improved version of the pc.math.smoothstep function which has zero
@@ -184,9 +175,8 @@ object math {
     * @param x - The value to interpolate.
     * @returns The smoothly interpolated value clamped between zero and one.
     */
-  @JSImport("playcanvas", "math.smootherstep")
-  @js.native
-  def smootherstep(min: Double, max: Double, x: Double): Double = js.native
+  @scala.inline
+  def smootherstep(min: Double, max: Double, x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smootherstep")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * The function interpolates smoothly between two input values based on
@@ -201,7 +191,6 @@ object math {
     * @param x - The value to interpolate.
     * @returns The smoothly interpolated value clamped between zero and one.
     */
-  @JSImport("playcanvas", "math.smoothstep")
-  @js.native
-  def smoothstep(min: Double, max: Double, x: Double): Double = js.native
+  @scala.inline
+  def smoothstep(min: Double, max: Double, x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smoothstep")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

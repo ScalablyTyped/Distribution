@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveCellChangingEventUIParam extends StObject {
   
   /**
     * Gets reference to the cell object.
     */
-  var cell: js.UndefOr[js.Any] = js.native
+  var cell: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ActiveCellChangingEventUIParam {
   

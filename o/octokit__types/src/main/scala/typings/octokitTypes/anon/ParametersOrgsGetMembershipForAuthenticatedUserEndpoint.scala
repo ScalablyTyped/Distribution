@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.OrgsGetMembershipForAuthenticatedUserRe
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersOrgsGetMembershipForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: OrgsGetMembershipForAuthenticatedUserEndpoint = js.native
+  var parameters: OrgsGetMembershipForAuthenticatedUserEndpoint
   
-  var request: OrgsGetMembershipForAuthenticatedUserRequestOptions = js.native
+  var request: OrgsGetMembershipForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[OrgsGetMembershipForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[OrgsGetMembershipForAuthenticatedUserResponseData]
 }
 object ParametersOrgsGetMembershipForAuthenticatedUserEndpoint {
   

@@ -2,30 +2,28 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message representing the validation result for a UrlMap.
   */
-@js.native
 trait SchemaUrlMapValidationResult extends StObject {
   
-  var loadErrors: js.UndefOr[js.Array[String]] = js.native
+  var loadErrors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the given UrlMap can be successfully loaded. If false,
     * &#39;loadErrors&#39; indicates the reasons.
     */
-  var loadSucceeded: js.UndefOr[Boolean] = js.native
+  var loadSucceeded: js.UndefOr[Boolean] = js.undefined
   
-  var testFailures: js.UndefOr[js.Array[SchemaTestFailure]] = js.native
+  var testFailures: js.UndefOr[js.Array[SchemaTestFailure]] = js.undefined
   
   /**
     * If successfully loaded, this field indicates whether the test passed. If
     * false, &#39;testFailures&#39;s indicate the reason of failure.
     */
-  var testPassed: js.UndefOr[Boolean] = js.native
+  var testPassed: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaUrlMapValidationResult {
   

@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.windowLength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -102,29 +101,28 @@ object geckoProfiler {
     def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = "threads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads]
   }
   
-  @js.native
   trait StartSettings extends StObject {
     
     /**
       * The maximum size in bytes of the buffer used to store profiling data. A larger value allows capturing a profile that covers a greater amount of time.
       */
-    var bufferSize: Double = js.native
+    var bufferSize: Double
     
     /** A list of active features for the profiler. */
-    var features: js.Array[ProfilerFeature] = js.native
+    var features: js.Array[ProfilerFeature]
     
     /**
       * Interval in milliseconds between samples of profiling data. A smaller value will increase the detail of the profiles captured.
       */
-    var interval: Double = js.native
+    var interval: Double
     
     /** A list of thread names for which to capture profiles. */
-    var threads: js.UndefOr[js.Array[String]] = js.native
+    var threads: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The length of the window of time that's kept in the buffer. Any collected samples are discarded as soon as they are older than the number of seconds specified in this setting. Zero means no duration restriction.
       */
-    var windowLength: js.UndefOr[Double] = js.native
+    var windowLength: js.UndefOr[Double] = js.undefined
   }
   object StartSettings {
     

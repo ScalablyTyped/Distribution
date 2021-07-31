@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSettingsPaging
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,37 +16,37 @@ trait DataSourceSettingsPaging
     * Whether when a new page of data is requested we should append the new data to the existing data
     *
     */
-  var appendPage: js.UndefOr[Boolean] = js.native
+  var appendPage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Paging is not enabled by default
     *
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Current page index
     *
     */
-  var pageIndex: js.UndefOr[Double] = js.native
+  var pageIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page index
     *
     */
-  var pageIndexUrlKey: js.UndefOr[String] = js.native
+  var pageIndexUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Number of records on each page
     *
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page size
     *
     */
-  var pageSizeUrlKey: js.UndefOr[String] = js.native
+  var pageSizeUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Type for the paging operation
@@ -57,7 +56,7 @@ trait DataSourceSettingsPaging
     * "local" Data is paged client-side.
     * "remote" A remote request is done and URL params encoded
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourceSettingsPaging {
   

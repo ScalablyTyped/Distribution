@@ -2,25 +2,23 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response containing a partial list of resources and a page token used to
   * build the next request if the request has been truncated.
   */
-@js.native
 trait SchemaResourcesListResponse extends StObject {
   
   /**
     * A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Resources contained in this list response.
     */
-  var resources: js.UndefOr[js.Array[SchemaResource]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaResource]] = js.undefined
 }
 object SchemaResourcesListResponse {
   

@@ -10,9 +10,9 @@ SAML Protocol server middleware
 | ------------------ | :-------------: |
 | Full name          | samlp |
 | Keywords           | saml, auth |
-| # releases         | 4 |
+| # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 364081 |
+| # downloads        | 421992 |
 | # stars            | 0 |
 
 ## Links

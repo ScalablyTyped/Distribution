@@ -10,9 +10,9 @@ CID Implementation in JavaScript
 | ------------------ | :-------------: |
 | Full name          | cids |
 | Keywords           | multihash, cid, ipld |
-| # releases         | 18 |
-| # dependents       | 208 |
-| # downloads        | 2440608 |
+| # releases         | 22 |
+| # dependents       | 236 |
+| # downloads        | 3244935 |
 | # stars            | 0 |
 
 ## Links

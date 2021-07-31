@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("playcanvas", "TextureHandler")
 @js.native
-class TextureHandler protected () extends ResourceHandler {
+class TextureHandler protected ()
+  extends StObject
+     with ResourceHandler {
   def this(
     device: typings.playcanvas.pc.GraphicsDevice,
     assets: typings.playcanvas.pc.AssetRegistry,

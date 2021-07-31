@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallToRemoteAccessSessionResult extends StObject {
   
   /**
     * An app to upload or that has been uploaded.
     */
-  var appUpload: js.UndefOr[Upload] = js.native
+  var appUpload: js.UndefOr[Upload] = js.undefined
 }
 object InstallToRemoteAccessSessionResult {
   

@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.ChangeLogEntry.ISuccessor
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChangeLogEntry extends StObject {
   
   /** ChangeLogEntry additions */
-  var additions: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
+  var additions: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
   
   /** ChangeLogEntry parent */
-  var parent: js.UndefOr[Uint8Array | Null] = js.native
+  var parent: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ChangeLogEntry successors */
-  var successors: js.UndefOr[js.Array[ISuccessor] | Null] = js.native
+  var successors: js.UndefOr[js.Array[ISuccessor] | Null] = js.undefined
 }
 object IChangeLogEntry {
   

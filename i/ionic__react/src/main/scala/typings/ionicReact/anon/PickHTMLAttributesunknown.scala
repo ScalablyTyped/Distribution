@@ -89,528 +89,526 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react.react.HTMLAttributes<unknown>, 'hidden' | 'dir' | 'slot' | 'title' | 'color' | 'translate' | 'prefix' | 'children' | 'className' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'contentEditable' | 'contextMenu' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'spellCheck' | 'tabIndex' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & react.react.RefAttributes<unknown> */
-@js.native
 trait PickHTMLAttributesunknown extends StObject {
   
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
-  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-  ] = js.native
+  ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Booleanish] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var onAbort: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[js.Any] = js.native
+  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[_]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[js.Any]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[_]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[js.Any]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[_]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[js.Any]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAuxClick: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.native
+  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[_]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.native
+  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Any] = js.native
+  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onChange: js.UndefOr[FormEventHandler[_]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Any] = js.native
+  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Any] = js.native
+  var onClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[_]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[js.Any]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[_]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[js.Any]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[_]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[js.Any]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCopy: js.UndefOr[ClipboardEventHandler[_]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[js.Any]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Any] = js.native
+  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[_]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[js.Any]] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Any] = js.native
+  var onCutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.native
+  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Any] = js.native
+  var onDragCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Any] = js.native
+  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Any] = js.native
+  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Any] = js.native
+  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Any] = js.native
+  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[_]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[js.Any]] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Any] = js.native
+  var onDropCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.native
+  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.native
+  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.native
+  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onEndedCapture: js.UndefOr[js.Any] = js.native
+  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Any] = js.native
+  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Any] = js.native
+  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[_]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Any] = js.native
+  var onInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[_]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Any] = js.native
+  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[_]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Any]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[_]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[js.Any]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[_]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Any]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoad: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Any] = js.native
+  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.native
+  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[_]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[js.Any]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Any] = js.native
+  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onPauseCapture: js.UndefOr[js.Any] = js.native
+  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[js.Any] = js.native
+  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[js.Any] = js.native
+  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerDown: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[_]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[js.Any]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[js.Any] = js.native
+  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.native
+  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[_]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Any] = js.native
+  var onResetCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onScroll: js.UndefOr[UIEventHandler[_]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[js.Any]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Any] = js.native
+  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[js.Any] = js.native
+  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[js.Any] = js.native
+  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSelect: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[js.Any] = js.native
+  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onStalledCapture: js.UndefOr[js.Any] = js.native
+  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[_]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[js.Any]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Any] = js.native
+  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[js.Any] = js.native
+  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchCancel: js.UndefOr[TouchEventHandler[_]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[js.Any]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[_]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[js.Any]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[_]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[js.Any]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[_]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[js.Any]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[_]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[js.Any]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.native
+  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[_]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[js.Any]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[js.Any] = js.native
+  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWheel: js.UndefOr[WheelEventHandler[_]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[js.Any]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Any] = js.native
+  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[Ref[_]] = js.native
+  var ref: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr[yes | no] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
 }
 object PickHTMLAttributesunknown {
   
@@ -1094,7 +1092,7 @@ object PickHTMLAttributesunknown {
     def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def setOnAbort(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+    def setOnAbort(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAbortCapture(value: js.Any): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
@@ -1106,7 +1104,7 @@ object PickHTMLAttributesunknown {
     def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
     @scala.inline
-    def setOnAnimationEnd(value: AnimationEvent[_] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+    def setOnAnimationEnd(value: AnimationEvent[js.Any] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAnimationEndCapture(value: js.Any): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
@@ -1118,7 +1116,7 @@ object PickHTMLAttributesunknown {
     def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     @scala.inline
-    def setOnAnimationIteration(value: AnimationEvent[_] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+    def setOnAnimationIteration(value: AnimationEvent[js.Any] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAnimationIterationCapture(value: js.Any): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
@@ -1130,7 +1128,7 @@ object PickHTMLAttributesunknown {
     def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
     @scala.inline
-    def setOnAnimationStart(value: AnimationEvent[_] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+    def setOnAnimationStart(value: AnimationEvent[js.Any] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAnimationStartCapture(value: js.Any): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
@@ -1142,7 +1140,7 @@ object PickHTMLAttributesunknown {
     def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
     @scala.inline
-    def setOnAuxClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+    def setOnAuxClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAuxClickCapture(value: js.Any): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
@@ -1154,7 +1152,7 @@ object PickHTMLAttributesunknown {
     def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
     @scala.inline
-    def setOnBeforeInput(value: FormEvent[_] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+    def setOnBeforeInput(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBeforeInputCapture(value: js.Any): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
@@ -1166,7 +1164,7 @@ object PickHTMLAttributesunknown {
     def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: FocusEvent[_] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurCapture(value: js.Any): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
@@ -1178,7 +1176,7 @@ object PickHTMLAttributesunknown {
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnCanPlay(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+    def setOnCanPlay(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCanPlayCapture(value: js.Any): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
@@ -1187,7 +1185,7 @@ object PickHTMLAttributesunknown {
     def setOnCanPlayCaptureUndefined: Self = StObject.set(x, "onCanPlayCapture", js.undefined)
     
     @scala.inline
-    def setOnCanPlayThrough(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+    def setOnCanPlayThrough(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCanPlayThroughCapture(value: js.Any): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
@@ -1202,7 +1200,7 @@ object PickHTMLAttributesunknown {
     def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
     @scala.inline
-    def setOnChange(value: FormEvent[_] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeCapture(value: js.Any): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
@@ -1214,7 +1212,7 @@ object PickHTMLAttributesunknown {
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickCapture(value: js.Any): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
@@ -1226,7 +1224,7 @@ object PickHTMLAttributesunknown {
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnCompositionEnd(value: CompositionEvent[_] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+    def setOnCompositionEnd(value: CompositionEvent[js.Any] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCompositionEndCapture(value: js.Any): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
@@ -1238,7 +1236,7 @@ object PickHTMLAttributesunknown {
     def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
     @scala.inline
-    def setOnCompositionStart(value: CompositionEvent[_] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+    def setOnCompositionStart(value: CompositionEvent[js.Any] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCompositionStartCapture(value: js.Any): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
@@ -1250,7 +1248,7 @@ object PickHTMLAttributesunknown {
     def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
     @scala.inline
-    def setOnCompositionUpdate(value: CompositionEvent[_] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+    def setOnCompositionUpdate(value: CompositionEvent[js.Any] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCompositionUpdateCapture(value: js.Any): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
@@ -1262,7 +1260,7 @@ object PickHTMLAttributesunknown {
     def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
     @scala.inline
-    def setOnContextMenu(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    def setOnContextMenu(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnContextMenuCapture(value: js.Any): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
@@ -1274,7 +1272,7 @@ object PickHTMLAttributesunknown {
     def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     @scala.inline
-    def setOnCopy(value: ClipboardEvent[_] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+    def setOnCopy(value: ClipboardEvent[js.Any] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCopyCapture(value: js.Any): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
@@ -1286,7 +1284,7 @@ object PickHTMLAttributesunknown {
     def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
     @scala.inline
-    def setOnCut(value: ClipboardEvent[_] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+    def setOnCut(value: ClipboardEvent[js.Any] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCutCapture(value: js.Any): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
@@ -1298,7 +1296,7 @@ object PickHTMLAttributesunknown {
     def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
     @scala.inline
-    def setOnDoubleClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+    def setOnDoubleClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDoubleClickCapture(value: js.Any): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
@@ -1310,7 +1308,7 @@ object PickHTMLAttributesunknown {
     def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
     @scala.inline
-    def setOnDrag(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    def setOnDrag(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragCapture(value: js.Any): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
@@ -1319,7 +1317,7 @@ object PickHTMLAttributesunknown {
     def setOnDragCaptureUndefined: Self = StObject.set(x, "onDragCapture", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragEndCapture(value: js.Any): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
@@ -1331,7 +1329,7 @@ object PickHTMLAttributesunknown {
     def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDragEnter(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+    def setOnDragEnter(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragEnterCapture(value: js.Any): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
@@ -1343,7 +1341,7 @@ object PickHTMLAttributesunknown {
     def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
     @scala.inline
-    def setOnDragExit(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+    def setOnDragExit(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragExitCapture(value: js.Any): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
@@ -1355,7 +1353,7 @@ object PickHTMLAttributesunknown {
     def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
     @scala.inline
-    def setOnDragLeave(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+    def setOnDragLeave(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragLeaveCapture(value: js.Any): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
@@ -1367,7 +1365,7 @@ object PickHTMLAttributesunknown {
     def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
     @scala.inline
-    def setOnDragOver(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+    def setOnDragOver(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragOverCapture(value: js.Any): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
@@ -1379,7 +1377,7 @@ object PickHTMLAttributesunknown {
     def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
     @scala.inline
-    def setOnDragStart(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    def setOnDragStart(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragStartCapture(value: js.Any): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
@@ -1394,7 +1392,7 @@ object PickHTMLAttributesunknown {
     def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def setOnDrop(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+    def setOnDrop(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDropCapture(value: js.Any): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
@@ -1406,7 +1404,7 @@ object PickHTMLAttributesunknown {
     def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
     @scala.inline
-    def setOnDurationChange(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+    def setOnDurationChange(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDurationChangeCapture(value: js.Any): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
@@ -1418,7 +1416,7 @@ object PickHTMLAttributesunknown {
     def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
     @scala.inline
-    def setOnEmptied(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+    def setOnEmptied(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEmptiedCapture(value: js.Any): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
@@ -1430,7 +1428,7 @@ object PickHTMLAttributesunknown {
     def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
     @scala.inline
-    def setOnEncrypted(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+    def setOnEncrypted(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEncryptedCapture(value: js.Any): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
@@ -1442,7 +1440,7 @@ object PickHTMLAttributesunknown {
     def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
     @scala.inline
-    def setOnEnded(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+    def setOnEnded(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnEndedCapture(value: js.Any): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
@@ -1454,7 +1452,7 @@ object PickHTMLAttributesunknown {
     def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
     @scala.inline
-    def setOnError(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorCapture(value: js.Any): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
@@ -1466,7 +1464,7 @@ object PickHTMLAttributesunknown {
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: FocusEvent[_] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFocusCapture(value: js.Any): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
@@ -1490,7 +1488,7 @@ object PickHTMLAttributesunknown {
     def setOnGotPointerCaptureUndefined: Self = StObject.set(x, "onGotPointerCapture", js.undefined)
     
     @scala.inline
-    def setOnInput(value: FormEvent[_] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+    def setOnInput(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnInputCapture(value: js.Any): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
@@ -1502,7 +1500,7 @@ object PickHTMLAttributesunknown {
     def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
     @scala.inline
-    def setOnInvalid(value: FormEvent[_] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+    def setOnInvalid(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnInvalidCapture(value: js.Any): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
@@ -1514,7 +1512,7 @@ object PickHTMLAttributesunknown {
     def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
     @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    def setOnKeyDown(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnKeyDownCapture(value: js.Any): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
@@ -1526,7 +1524,7 @@ object PickHTMLAttributesunknown {
     def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     @scala.inline
-    def setOnKeyPress(value: KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+    def setOnKeyPress(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnKeyPressCapture(value: js.Any): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
@@ -1538,7 +1536,7 @@ object PickHTMLAttributesunknown {
     def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
     @scala.inline
-    def setOnKeyUp(value: KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    def setOnKeyUp(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnKeyUpCapture(value: js.Any): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
@@ -1550,7 +1548,7 @@ object PickHTMLAttributesunknown {
     def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
     @scala.inline
-    def setOnLoad(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    def setOnLoad(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadCapture(value: js.Any): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
@@ -1559,7 +1557,7 @@ object PickHTMLAttributesunknown {
     def setOnLoadCaptureUndefined: Self = StObject.set(x, "onLoadCapture", js.undefined)
     
     @scala.inline
-    def setOnLoadStart(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+    def setOnLoadStart(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadStartCapture(value: js.Any): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
@@ -1574,7 +1572,7 @@ object PickHTMLAttributesunknown {
     def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setOnLoadedData(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+    def setOnLoadedData(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadedDataCapture(value: js.Any): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
@@ -1586,7 +1584,7 @@ object PickHTMLAttributesunknown {
     def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
     @scala.inline
-    def setOnLoadedMetadata(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+    def setOnLoadedMetadata(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadedMetadataCapture(value: js.Any): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
@@ -1610,7 +1608,7 @@ object PickHTMLAttributesunknown {
     def setOnLostPointerCaptureUndefined: Self = StObject.set(x, "onLostPointerCapture", js.undefined)
     
     @scala.inline
-    def setOnMouseDown(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseDown(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseDownCapture(value: js.Any): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
@@ -1622,19 +1620,19 @@ object PickHTMLAttributesunknown {
     def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseMoveCapture(value: js.Any): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
@@ -1646,7 +1644,7 @@ object PickHTMLAttributesunknown {
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def setOnMouseOut(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    def setOnMouseOut(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseOutCapture(value: js.Any): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
@@ -1658,7 +1656,7 @@ object PickHTMLAttributesunknown {
     def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
     @scala.inline
-    def setOnMouseOver(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    def setOnMouseOver(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseOverCapture(value: js.Any): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
@@ -1670,7 +1668,7 @@ object PickHTMLAttributesunknown {
     def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
     @scala.inline
-    def setOnMouseUp(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    def setOnMouseUp(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseUpCapture(value: js.Any): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
@@ -1682,7 +1680,7 @@ object PickHTMLAttributesunknown {
     def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def setOnPaste(value: ClipboardEvent[_] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+    def setOnPaste(value: ClipboardEvent[js.Any] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPasteCapture(value: js.Any): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
@@ -1694,7 +1692,7 @@ object PickHTMLAttributesunknown {
     def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
     @scala.inline
-    def setOnPause(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+    def setOnPause(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPauseCapture(value: js.Any): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
@@ -1706,7 +1704,7 @@ object PickHTMLAttributesunknown {
     def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
     @scala.inline
-    def setOnPlay(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+    def setOnPlay(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPlayCapture(value: js.Any): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
@@ -1718,7 +1716,7 @@ object PickHTMLAttributesunknown {
     def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
     @scala.inline
-    def setOnPlaying(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+    def setOnPlaying(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPlayingCapture(value: js.Any): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
@@ -1730,7 +1728,7 @@ object PickHTMLAttributesunknown {
     def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
     @scala.inline
-    def setOnPointerCancel(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    def setOnPointerCancel(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerCancelCapture(value: js.Any): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
@@ -1742,7 +1740,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
     @scala.inline
-    def setOnPointerDown(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    def setOnPointerDown(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerDownCapture(value: js.Any): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
@@ -1754,7 +1752,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
     @scala.inline
-    def setOnPointerEnter(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    def setOnPointerEnter(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerEnterCapture(value: js.Any): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
@@ -1766,7 +1764,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
     @scala.inline
-    def setOnPointerLeave(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    def setOnPointerLeave(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerLeaveCapture(value: js.Any): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
@@ -1778,7 +1776,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
     @scala.inline
-    def setOnPointerMove(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    def setOnPointerMove(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerMoveCapture(value: js.Any): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
@@ -1790,7 +1788,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
     @scala.inline
-    def setOnPointerOut(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+    def setOnPointerOut(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerOutCapture(value: js.Any): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
@@ -1802,7 +1800,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
     @scala.inline
-    def setOnPointerOver(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+    def setOnPointerOver(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerOverCapture(value: js.Any): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
@@ -1814,7 +1812,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
     @scala.inline
-    def setOnPointerUp(value: PointerEvent[_] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    def setOnPointerUp(value: PointerEvent[js.Any] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnPointerUpCapture(value: js.Any): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
@@ -1826,7 +1824,7 @@ object PickHTMLAttributesunknown {
     def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     @scala.inline
-    def setOnProgress(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    def setOnProgress(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnProgressCapture(value: js.Any): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
@@ -1838,7 +1836,7 @@ object PickHTMLAttributesunknown {
     def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
     @scala.inline
-    def setOnRateChange(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+    def setOnRateChange(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnRateChangeCapture(value: js.Any): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
@@ -1850,7 +1848,7 @@ object PickHTMLAttributesunknown {
     def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
     @scala.inline
-    def setOnReset(value: FormEvent[_] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+    def setOnReset(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnResetCapture(value: js.Any): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
@@ -1862,7 +1860,7 @@ object PickHTMLAttributesunknown {
     def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: UIEvent[_, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    def setOnScroll(value: UIEvent[js.Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollCapture(value: js.Any): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
@@ -1874,7 +1872,7 @@ object PickHTMLAttributesunknown {
     def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnSeeked(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+    def setOnSeeked(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSeekedCapture(value: js.Any): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
@@ -1886,7 +1884,7 @@ object PickHTMLAttributesunknown {
     def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
     @scala.inline
-    def setOnSeeking(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+    def setOnSeeking(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSeekingCapture(value: js.Any): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
@@ -1898,7 +1896,7 @@ object PickHTMLAttributesunknown {
     def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
     @scala.inline
-    def setOnSelect(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    def setOnSelect(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSelectCapture(value: js.Any): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
@@ -1910,7 +1908,7 @@ object PickHTMLAttributesunknown {
     def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def setOnStalled(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+    def setOnStalled(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnStalledCapture(value: js.Any): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
@@ -1922,7 +1920,7 @@ object PickHTMLAttributesunknown {
     def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
     @scala.inline
-    def setOnSubmit(value: FormEvent[_] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    def setOnSubmit(value: FormEvent[js.Any] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSubmitCapture(value: js.Any): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
@@ -1934,7 +1932,7 @@ object PickHTMLAttributesunknown {
     def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
     @scala.inline
-    def setOnSuspend(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+    def setOnSuspend(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSuspendCapture(value: js.Any): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
@@ -1946,7 +1944,7 @@ object PickHTMLAttributesunknown {
     def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
     @scala.inline
-    def setOnTimeUpdate(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+    def setOnTimeUpdate(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTimeUpdateCapture(value: js.Any): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
@@ -1958,7 +1956,7 @@ object PickHTMLAttributesunknown {
     def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
     @scala.inline
-    def setOnTouchCancel(value: TouchEvent[_] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    def setOnTouchCancel(value: TouchEvent[js.Any] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTouchCancelCapture(value: js.Any): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
@@ -1970,7 +1968,7 @@ object PickHTMLAttributesunknown {
     def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
     @scala.inline
-    def setOnTouchEnd(value: TouchEvent[_] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchEnd(value: TouchEvent[js.Any] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTouchEndCapture(value: js.Any): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
@@ -1982,7 +1980,7 @@ object PickHTMLAttributesunknown {
     def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def setOnTouchMove(value: TouchEvent[_] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    def setOnTouchMove(value: TouchEvent[js.Any] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTouchMoveCapture(value: js.Any): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
@@ -1994,7 +1992,7 @@ object PickHTMLAttributesunknown {
     def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     @scala.inline
-    def setOnTouchStart(value: TouchEvent[_] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    def setOnTouchStart(value: TouchEvent[js.Any] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTouchStartCapture(value: js.Any): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
@@ -2006,7 +2004,7 @@ object PickHTMLAttributesunknown {
     def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     @scala.inline
-    def setOnTransitionEnd(value: TransitionEvent[_] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+    def setOnTransitionEnd(value: TransitionEvent[js.Any] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTransitionEndCapture(value: js.Any): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
@@ -2018,7 +2016,7 @@ object PickHTMLAttributesunknown {
     def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     @scala.inline
-    def setOnVolumeChange(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+    def setOnVolumeChange(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnVolumeChangeCapture(value: js.Any): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
@@ -2030,7 +2028,7 @@ object PickHTMLAttributesunknown {
     def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
     @scala.inline
-    def setOnWaiting(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+    def setOnWaiting(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWaitingCapture(value: js.Any): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
@@ -2042,7 +2040,7 @@ object PickHTMLAttributesunknown {
     def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
     @scala.inline
-    def setOnWheel(value: WheelEvent[_] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+    def setOnWheel(value: WheelEvent[js.Any] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWheelCapture(value: js.Any): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
@@ -2078,10 +2076,10 @@ object PickHTMLAttributesunknown {
     def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

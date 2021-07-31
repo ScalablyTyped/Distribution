@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchStartResponse extends StObject {
   
   /**
     * List of failed operations
     */
-  var Failed: js.UndefOr[listOfBatchFailedResultModel] = js.native
+  var Failed: js.UndefOr[listOfBatchFailedResultModel] = js.undefined
   
   /**
     * List of successful operations
     */
-  var Successful: js.UndefOr[listOfBatchSuccessfulResultModel] = js.native
+  var Successful: js.UndefOr[listOfBatchSuccessfulResultModel] = js.undefined
 }
 object BatchStartResponse {
   

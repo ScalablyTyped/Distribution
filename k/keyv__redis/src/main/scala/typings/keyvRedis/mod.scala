@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.redis.mod.ClientOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,14 +28,16 @@ object mod {
     def set(key: String): js.Promise[Double] = js.native
     def set(key: String, value: String): js.Promise[Double] = js.native
     def set(key: String, value: String, ttl: Double): js.Promise[Double] = js.native
+    def set(key: String, value: Unit, ttl: Double): js.Promise[Double] = js.native
     
     val ttlSupport: `true` = js.native
   }
   
-  @js.native
-  trait Options extends ClientOpts {
+  trait Options
+    extends StObject
+       with ClientOpts {
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -5,173 +5,171 @@ import typings.octokitTypes.anon.Admin
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposTransferResponseData extends StObject {
   
-  var allow_merge_commit: Boolean = js.native
+  var allow_merge_commit: Boolean
   
-  var allow_rebase_merge: Boolean = js.native
+  var allow_rebase_merge: Boolean
   
-  var allow_squash_merge: Boolean = js.native
+  var allow_squash_merge: Boolean
   
-  var archive_url: String = js.native
+  var archive_url: String
   
-  var archived: Boolean = js.native
+  var archived: Boolean
   
-  var assignees_url: String = js.native
+  var assignees_url: String
   
-  var blobs_url: String = js.native
+  var blobs_url: String
   
-  var branches_url: String = js.native
+  var branches_url: String
   
-  var clone_url: String = js.native
+  var clone_url: String
   
-  var collaborators_url: String = js.native
+  var collaborators_url: String
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var commits_url: String = js.native
+  var commits_url: String
   
-  var compare_url: String = js.native
+  var compare_url: String
   
-  var contents_url: String = js.native
+  var contents_url: String
   
-  var contributors_url: String = js.native
+  var contributors_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var default_branch: String = js.native
+  var default_branch: String
   
-  var delete_branch_on_merge: Boolean = js.native
+  var delete_branch_on_merge: Boolean
   
-  var deployments_url: String = js.native
+  var deployments_url: String
   
-  var description: String = js.native
+  var description: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var downloads_url: String = js.native
+  var downloads_url: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var fork: Boolean = js.native
+  var fork: Boolean
   
-  var forks_count: Double = js.native
+  var forks_count: Double
   
-  var forks_url: String = js.native
+  var forks_url: String
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var git_commits_url: String = js.native
+  var git_commits_url: String
   
-  var git_refs_url: String = js.native
+  var git_refs_url: String
   
-  var git_tags_url: String = js.native
+  var git_tags_url: String
   
-  var git_url: String = js.native
+  var git_url: String
   
-  var has_downloads: Boolean = js.native
+  var has_downloads: Boolean
   
-  var has_issues: Boolean = js.native
+  var has_issues: Boolean
   
-  var has_pages: Boolean = js.native
+  var has_pages: Boolean
   
-  var has_projects: Boolean = js.native
+  var has_projects: Boolean
   
-  var has_wiki: Boolean = js.native
+  var has_wiki: Boolean
   
-  var homepage: String = js.native
+  var homepage: String
   
-  var hooks_url: String = js.native
+  var hooks_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var is_template: Boolean = js.native
+  var is_template: Boolean
   
-  var issue_comment_url: String = js.native
+  var issue_comment_url: String
   
-  var issue_events_url: String = js.native
+  var issue_events_url: String
   
-  var issues_url: String = js.native
+  var issues_url: String
   
-  var keys_url: String = js.native
+  var keys_url: String
   
-  var labels_url: String = js.native
+  var labels_url: String
   
-  var language: String = js.native
+  var language: String
   
-  var languages_url: String = js.native
+  var languages_url: String
   
-  var merges_url: String = js.native
+  var merges_url: String
   
-  var milestones_url: String = js.native
+  var milestones_url: String
   
-  var mirror_url: String = js.native
+  var mirror_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var network_count: Double = js.native
+  var network_count: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var notifications_url: String = js.native
+  var notifications_url: String
   
-  var open_issues_count: Double = js.native
+  var open_issues_count: Double
   
-  var owner: Avatarurl = js.native
+  var owner: Avatarurl
   
-  var permissions: Admin = js.native
+  var permissions: Admin
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var pulls_url: String = js.native
+  var pulls_url: String
   
-  var pushed_at: String = js.native
+  var pushed_at: String
   
-  var releases_url: String = js.native
+  var releases_url: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var ssh_url: String = js.native
+  var ssh_url: String
   
-  var stargazers_count: Double = js.native
+  var stargazers_count: Double
   
-  var stargazers_url: String = js.native
+  var stargazers_url: String
   
-  var statuses_url: String = js.native
+  var statuses_url: String
   
-  var subscribers_count: Double = js.native
+  var subscribers_count: Double
   
-  var subscribers_url: String = js.native
+  var subscribers_url: String
   
-  var subscription_url: String = js.native
+  var subscription_url: String
   
-  var svn_url: String = js.native
+  var svn_url: String
   
-  var tags_url: String = js.native
+  var tags_url: String
   
-  var teams_url: String = js.native
+  var teams_url: String
   
-  var temp_clone_token: String = js.native
+  var temp_clone_token: String
   
-  var template_repository: StringDictionary[js.Any] = js.native
+  var template_repository: StringDictionary[js.Any]
   
-  var topics: js.Array[String] = js.native
+  var topics: js.Array[String]
   
-  var trees_url: String = js.native
+  var trees_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var visibility: String = js.native
+  var visibility: String
   
-  var watchers_count: Double = js.native
+  var watchers_count: Double
 }
 object ReposTransferResponseData {
   

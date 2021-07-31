@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferListItemMod extends Shortcut {
@@ -16,26 +15,25 @@ object transferListItemMod extends Shortcut {
   @js.native
   val default: MemoExoticComponent[js.Function1[/* props */ ListItemProps[KeyWiseTransferItem], Element]] = js.native
   
-  @js.native
   trait ListItemProps[RecordType] extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var item: RecordType = js.native
+    var item: RecordType
     
-    def onClick(item: RecordType): Unit = js.native
+    def onClick(item: RecordType): Unit
     
-    var onRemove: js.UndefOr[js.Function1[/* item */ RecordType, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* item */ RecordType, Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var renderedEl: ReactNode = js.native
+    var renderedEl: ReactNode
     
-    var renderedText: js.UndefOr[String | Double] = js.native
+    var renderedText: js.UndefOr[String | Double] = js.undefined
     
-    var showRemove: js.UndefOr[Boolean] = js.native
+    var showRemove: js.UndefOr[Boolean] = js.undefined
   }
   object ListItemProps {
     
@@ -46,7 +44,7 @@ object transferListItemMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ListItemPropsMutableBuilder[Self <: ListItemProps[_], RecordType] (val x: Self with ListItemProps[RecordType]) extends AnyVal {
+    implicit class ListItemPropsMutableBuilder[Self <: ListItemProps[?], RecordType] (val x: Self & ListItemProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])

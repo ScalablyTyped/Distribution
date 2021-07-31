@@ -10,9 +10,9 @@ Simple Node.js module that provides easy methods of obtaining urbandictionary.co
 | ------------------ | :-------------: |
 | Full name          | urban-dictionary |
 | Keywords           | urban, dictionary, node, nodejs, node.js, nightfallalicorn |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 16665 |
+| # downloads        | 20839 |
 | # stars            | 0 |
 
 ## Links

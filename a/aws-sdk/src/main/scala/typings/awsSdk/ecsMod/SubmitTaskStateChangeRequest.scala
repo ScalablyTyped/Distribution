@@ -2,56 +2,54 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitTaskStateChangeRequest extends StObject {
   
   /**
     * Any attachments associated with the state change request.
     */
-  var attachments: js.UndefOr[AttachmentStateChanges] = js.native
+  var attachments: js.UndefOr[AttachmentStateChanges] = js.undefined
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
   
   /**
     * Any containers associated with the state change request.
     */
-  var containers: js.UndefOr[ContainerStateChanges] = js.native
+  var containers: js.UndefOr[ContainerStateChanges] = js.undefined
   
   /**
     * The Unix timestamp for when the task execution stopped.
     */
-  var executionStoppedAt: js.UndefOr[Timestamp] = js.native
+  var executionStoppedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Unix timestamp for when the container image pull began.
     */
-  var pullStartedAt: js.UndefOr[Timestamp] = js.native
+  var pullStartedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Unix timestamp for when the container image pull completed.
     */
-  var pullStoppedAt: js.UndefOr[Timestamp] = js.native
+  var pullStoppedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The reason for the state change request.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the state change request.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The task ID or full ARN of the task in the state change request.
     */
-  var task: js.UndefOr[String] = js.native
+  var task: js.UndefOr[String] = js.undefined
 }
 object SubmitTaskStateChangeRequest {
   

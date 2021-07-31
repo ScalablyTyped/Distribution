@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableSortInfo extends StObject {
   
-  var ascending: Boolean = js.native
+  var ascending: Boolean
   
-  var column: Double = js.native
+  var column: Double
   
-  var sortedIndexes: js.Array[Double] = js.native
+  var sortedIndexes: js.Array[Double]
 }
 object TableSortInfo {
   

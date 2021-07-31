@@ -3,21 +3,20 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.DELETE_UNIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeleteUnitDelta
-  extends IDelta
+  extends StObject
+     with IDelta
      with Delta {
   
-  var deltaType: DELETE_UNIT = js.native
+  var deltaType: DELETE_UNIT
 }
 object IDeleteUnitDelta {
   
   @scala.inline
-  def apply(deltaType: DELETE_UNIT, unitId: String): IDeleteUnitDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def apply(unitId: String): IDeleteUnitDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "DELETE_UNIT", unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteUnitDelta]
   }
   

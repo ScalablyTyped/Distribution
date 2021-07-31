@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCoreDefinitionVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the core definition.
     */
-  var CoreDefinitionId: string = js.native
+  var CoreDefinitionId: string
   
   /**
     * A list of cores in the core definition version.
     */
-  var Cores: js.UndefOr[listOfCore] = js.native
+  var Cores: js.UndefOr[listOfCore] = js.undefined
 }
 object CreateCoreDefinitionVersionRequest {
   

@@ -2,19 +2,17 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerFormatDateOptions extends StObject {
   
-  var dayNames: js.UndefOr[js.Array[String]] = js.native
+  var dayNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dayNamesShort: js.UndefOr[js.Array[String]] = js.native
+  var dayNamesShort: js.UndefOr[js.Array[String]] = js.undefined
   
-  var monthNames: js.UndefOr[js.Array[String]] = js.native
+  var monthNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var monthNamesShort: js.UndefOr[js.Array[String]] = js.native
+  var monthNamesShort: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DatepickerFormatDateOptions {
   

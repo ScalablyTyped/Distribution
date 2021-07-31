@@ -2,7 +2,6 @@ package typings.recurlyRecurlyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterMod {
@@ -19,12 +18,16 @@ object emitterMod {
     def off(): Emitter[Event] = js.native
     def off(event: Event): Emitter[Event] = js.native
     def off(event: Event, listener: Listener): Emitter[Event] = js.native
-    def off(event: js.UndefOr[scala.Nothing], listener: Listener): Emitter[Event] = js.native
+    def off(event: Unit, listener: Listener): Emitter[Event] = js.native
     
     def on(event: Event, listener: Listener): Emitter[Event] = js.native
     
     def once(event: Event, listener: Listener): Emitter[Event] = js.native
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
 }

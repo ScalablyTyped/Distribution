@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRepositoryPolicyResponse extends StObject {
   
   /**
     * The JSON repository policy text applied to the repository.
     */
-  var policyText: js.UndefOr[RepositoryPolicyText] = js.native
+  var policyText: js.UndefOr[RepositoryPolicyText] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object SetRepositoryPolicyResponse {
   

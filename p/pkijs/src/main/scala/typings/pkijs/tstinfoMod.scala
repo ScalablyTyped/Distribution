@@ -5,70 +5,97 @@ import typings.std.BufferSource
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tstinfoMod {
   
   @JSImport("pkijs/src/TSTInfo", JSImport.Default)
   @js.native
-  class default () extends TSTInfo {
+  class default ()
+    extends StObject
+       with TSTInfo {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var genTime: Date = js.native
+    
+    /* CompleteClass */
+    var messageImprint: typings.pkijs.messageImprintMod.default = js.native
+    
+    /* CompleteClass */
+    var policy: String = js.native
+    
+    /* CompleteClass */
+    var serialNumber: Integer = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def verify(params: VerifyParams): js.Thenable[Boolean] = js.native
+    
+    /* CompleteClass */
+    var version: Double = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/TSTInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/TSTInfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/TSTInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/TSTInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/TSTInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait TSTInfo extends StObject {
     
-    var accuracy: js.UndefOr[typings.pkijs.accuracyMod.default] = js.native
+    var accuracy: js.UndefOr[typings.pkijs.accuracyMod.default] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[typings.pkijs.extensionMod.default]] = js.native
+    var extensions: js.UndefOr[js.Array[typings.pkijs.extensionMod.default]] = js.undefined
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var genTime: Date = js.native
+    var genTime: Date
     
-    var messageImprint: typings.pkijs.messageImprintMod.default = js.native
+    var messageImprint: typings.pkijs.messageImprintMod.default
     
-    var nonce: js.UndefOr[Integer] = js.native
+    var nonce: js.UndefOr[Integer] = js.undefined
     
-    var ordering: js.UndefOr[Boolean] = js.native
+    var ordering: js.UndefOr[Boolean] = js.undefined
     
-    var policy: String = js.native
+    var policy: String
     
-    var serialNumber: Integer = js.native
+    var serialNumber: Integer
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var tsa: js.UndefOr[typings.pkijs.generalNameMod.default] = js.native
+    var tsa: js.UndefOr[typings.pkijs.generalNameMod.default] = js.undefined
     
-    def verify(params: VerifyParams): js.Thenable[Boolean] = js.native
+    def verify(params: VerifyParams): js.Thenable[Boolean]
     
-    var version: Double = js.native
+    var version: Double
   }
   object TSTInfo {
     
@@ -153,14 +180,13 @@ object tstinfoMod {
     }
   }
   
-  @js.native
   trait VerifyParams extends StObject {
     
-    var data: BufferSource = js.native
+    var data: BufferSource
     
-    var notAfter: js.UndefOr[Date] = js.native
+    var notAfter: js.UndefOr[Date] = js.undefined
     
-    var notBefore: js.UndefOr[Date] = js.native
+    var notBefore: js.UndefOr[Date] = js.undefined
   }
   object VerifyParams {
     

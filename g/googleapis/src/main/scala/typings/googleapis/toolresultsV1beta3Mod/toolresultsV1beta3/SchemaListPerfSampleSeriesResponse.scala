@@ -2,16 +2,14 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListPerfSampleSeriesResponse extends StObject {
   
   /**
     * The resulting PerfSampleSeries sorted by id
     */
-  var perfSampleSeries: js.UndefOr[js.Array[SchemaPerfSampleSeries]] = js.native
+  var perfSampleSeries: js.UndefOr[js.Array[SchemaPerfSampleSeries]] = js.undefined
 }
 object SchemaListPerfSampleSeriesResponse {
   

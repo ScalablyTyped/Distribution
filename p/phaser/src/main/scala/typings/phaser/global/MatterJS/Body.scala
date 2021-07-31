@@ -4,7 +4,6 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IChamferableBodyDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.Body")
 @js.native
 class Body ()
-  extends typings.phaser.MatterJS.Body
+  extends StObject
+     with typings.phaser.MatterJS.Body
 object Body {
+  
+  @JSGlobal("MatterJS.Body")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Applies a force to a body from a given world-space position, including resulting torque.
@@ -30,9 +34,8 @@ object Body {
     * @param {vector} force
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.applyForce")
-  @js.native
-  def applyForce(body: BodyType, position: typings.phaser.MatterJS.Vector, force: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def applyForce(body: BodyType, position: typings.phaser.MatterJS.Vector, force: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyForce")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new rigid body model. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -43,9 +46,8 @@ object Body {
     * @return {body} body
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.create")
-  @js.native
-  def create(options: IChamferableBodyDefinition): typings.phaser.MatterJS.Body = js.native
+  @scala.inline
+  def create(options: IChamferableBodyDefinition): typings.phaser.MatterJS.Body = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Body]
   
   /**
     * Returns the next unique category bitfield (starting after the initial default category `0x0001`).
@@ -54,9 +56,8 @@ object Body {
     * @return {Number} Unique category bitfield
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.nextCategory")
-  @js.native
-  def nextCategory(): Double = js.native
+  @scala.inline
+  def nextCategory(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextCategory")().asInstanceOf[Double]
   
   /**
     * Returns the next unique group index for which bodies will collide.
@@ -67,9 +68,8 @@ object Body {
     * @return {Number} Unique group index
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.nextGroup")
-  @js.native
-  def nextGroup(isNonColliding: Boolean): Double = js.native
+  @scala.inline
+  def nextGroup(isNonColliding: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextGroup")(isNonColliding.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Rotates a body by a given angle relative to its current angle, without imparting any angular velocity.
@@ -78,9 +78,8 @@ object Body {
     * @param {number} rotation
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.rotate")
-  @js.native
-  def rotate(body: BodyType, rotation: Double): Unit = js.native
+  @scala.inline
+  def rotate(body: BodyType, rotation: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(body.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Scales the body, including updating physical properties (mass, area, axes, inertia), from a world-space point (default is body centre).
@@ -91,12 +90,10 @@ object Body {
     * @param {vector} [point]
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.scale")
-  @js.native
-  def scale(body: BodyType, scaleX: Double, scaleY: Double): Unit = js.native
-  @JSGlobal("MatterJS.Body.scale")
-  @js.native
-  def scale(body: BodyType, scaleX: Double, scaleY: Double, point: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def scale(body: BodyType, scaleX: Double, scaleY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scale(body: BodyType, scaleX: Double, scaleY: Double, point: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Given a property and a value (or map of), sets the property(s) on the body, using the appropriate setter functions if they exist.
@@ -107,12 +104,10 @@ object Body {
     * @param {} value The value to set if `settings` is a single property name.
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.set")
-  @js.native
-  def set(body: BodyType, settings: js.Any): Unit = js.native
-  @JSGlobal("MatterJS.Body.set")
-  @js.native
-  def set(body: BodyType, settings: js.Any, value: js.Any): Unit = js.native
+  @scala.inline
+  def set(body: BodyType, settings: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(body: BodyType, settings: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.
@@ -121,9 +116,8 @@ object Body {
     * @param {number} angle
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setAngle")
-  @js.native
-  def setAngle(body: BodyType, angle: Double): Unit = js.native
+  @scala.inline
+  def setAngle(body: BodyType, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngle")(body.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angular velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
@@ -132,9 +126,8 @@ object Body {
     * @param {number} velocity
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setAngularVelocity")
-  @js.native
-  def setAngularVelocity(body: BodyType, velocity: Double): Unit = js.native
+  @scala.inline
+  def setAngularVelocity(body: BodyType, velocity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngularVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the density of the body. Mass is automatically updated to reflect the change.
@@ -143,9 +136,8 @@ object Body {
     * @param {number} density
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setDensity")
-  @js.native
-  def setDensity(body: BodyType, density: Double): Unit = js.native
+  @scala.inline
+  def setDensity(body: BodyType, density: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDensity")(body.asInstanceOf[js.Any], density.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the moment of inertia (i.e. second moment of area) of the body of the body.
@@ -155,9 +147,8 @@ object Body {
     * @param {number} inertia
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setInertia")
-  @js.native
-  def setInertia(body: BodyType, inertia: Double): Unit = js.native
+  @scala.inline
+  def setInertia(body: BodyType, inertia: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInertia")(body.asInstanceOf[js.Any], inertia.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the mass of the body. Inverse mass and density are automatically updated to reflect the change.
@@ -166,9 +157,8 @@ object Body {
     * @param {number} mass
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setMass")
-  @js.native
-  def setMass(body: BodyType, mass: Double): Unit = js.native
+  @scala.inline
+  def setMass(body: BodyType, mass: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMass")(body.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the parts of the `body` and updates mass, inertia and centroid.
@@ -181,12 +171,10 @@ object Body {
     * @param {bool} [autoHull=true]
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setParts")
-  @js.native
-  def setParts(body: BodyType, parts: js.Array[BodyType]): Unit = js.native
-  @JSGlobal("MatterJS.Body.setParts")
-  @js.native
-  def setParts(body: BodyType, parts: js.Array[BodyType], autoHull: Boolean): Unit = js.native
+  @scala.inline
+  def setParts(body: BodyType, parts: js.Array[BodyType]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setParts(body: BodyType, parts: js.Array[BodyType], autoHull: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any], autoHull.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the position of the body instantly. Velocity, angle, force etc. are unchanged.
@@ -195,9 +183,8 @@ object Body {
     * @param {vector} position
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setPosition")
-  @js.native
-  def setPosition(body: BodyType, position: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def setPosition(body: BodyType, position: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the body as static, including isStatic flag and setting mass and inertia to Infinity.
@@ -206,9 +193,8 @@ object Body {
     * @param {bool} isStatic
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setStatic")
-  @js.native
-  def setStatic(body: BodyType, isStatic: Boolean): Unit = js.native
+  @scala.inline
+  def setStatic(body: BodyType, isStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(body.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the linear velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
@@ -217,9 +203,8 @@ object Body {
     * @param {vector} velocity
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setVelocity")
-  @js.native
-  def setVelocity(body: BodyType, velocity: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def setVelocity(body: BodyType, velocity: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the body's vertices and updates body properties accordingly, including inertia, area and mass (with respect to `body.density`).
@@ -234,9 +219,8 @@ object Body {
     * @param {vector[]} vertices
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.setVertices")
-  @js.native
-  def setVertices(body: BodyType, vertices: js.Array[typings.phaser.MatterJS.Vector]): Unit = js.native
+  @scala.inline
+  def setVertices(body: BodyType, vertices: js.Array[typings.phaser.MatterJS.Vector]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVertices")(body.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Moves a body by a given vector relative to its current position, without imparting any velocity.
@@ -245,9 +229,8 @@ object Body {
     * @param {vector} translation
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.translate")
-  @js.native
-  def translate(body: BodyType, translation: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def translate(body: BodyType, translation: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(body.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Performs a simulation step for the given `body`, including updating position and angle using Verlet integration.
@@ -258,7 +241,6 @@ object Body {
     * @param {number} correction
     */
   /* static member */
-  @JSGlobal("MatterJS.Body.update")
-  @js.native
-  def update(body: BodyType, deltaTime: Double, timeScale: Double, correction: Double): Unit = js.native
+  @scala.inline
+  def update(body: BodyType, deltaTime: Double, timeScale: Double, correction: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(body.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

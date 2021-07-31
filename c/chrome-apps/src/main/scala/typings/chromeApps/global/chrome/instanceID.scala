@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.instanceID.TokenParams
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -20,14 +19,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object instanceID {
   
+  @JSGlobal("chrome.instanceID")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Fired when all the granted tokens need to be refreshed.
     * @param callback Function called when the deletion completes.
     *                 The instance identifier was revoked successfully if runtime.lastError is not set.
     */
-  @JSGlobal("chrome.instanceID.deleteID")
-  @js.native
-  def deleteID(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def deleteID(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Revokes a granted token.
@@ -35,9 +37,8 @@ object instanceID {
     * @param callback Function called when the token deletion completes.
     *                 The token was revoked successfully if runtime.lastError is not set.
     */
-  @JSGlobal("chrome.instanceID.deleteToken")
-  @js.native
-  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteToken")(deleteTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves the time when the InstanceID has been generated.
@@ -47,9 +48,8 @@ object instanceID {
     *                 Provides `creationTime` (double)
     *                  > The time when the Instance ID has been generated, represented in milliseconds since the epoch.
     */
-  @JSGlobal("chrome.instanceID.getCreationTime")
-  @js.native
-  def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit = js.native
+  @scala.inline
+  def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreationTime")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Retrieves an identifier for the app instance.
@@ -60,18 +60,16 @@ object instanceID {
     *                 It should check runtime.lastError for error when instanceID is empty.
     *                 Will be provided with instanceID: An Instance ID assigned to the app instance.
     */
-  @JSGlobal("chrome.instanceID.getID")
-  @js.native
-  def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Return a token that allows the authorized entity to access the service defined by scope.
     * @param getTokenParams Parameters for getToken.
     * @param callback Function called when the retrieval completes. It should check runtime.lastError for error when token is empty.
     */
-  @JSGlobal("chrome.instanceID.getToken")
-  @js.native
-  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(getTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when all the granted tokens need to be refreshed. */
   @JSGlobal("chrome.instanceID.onTokenRefresh")

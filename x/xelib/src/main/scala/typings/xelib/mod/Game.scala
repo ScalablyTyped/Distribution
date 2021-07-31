@@ -2,31 +2,29 @@ package typings.xelib.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Game extends StObject {
   
   /**
     * The filename of the game executable.
     */
-  var exeName: String = js.native
+  var exeName: String
   
   /**
     * The game mode for the game.
     */
-  var mode: GameMode = js.native
+  var mode: GameMode
   
   /**
     * The name of the game used for display purposes.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The name of the game used to find the correct Hardcoded.dat file.
     */
-  var shortName: String = js.native
+  var shortName: String
 }
 object Game {
   

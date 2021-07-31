@@ -4,20 +4,20 @@ import typings.relayRuntime.relayRuntimeStrings.storeDotnotifyDotstart
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'store.notify.start'}> */
-@js.native
-trait Readonlynamestorenotifyst extends LogEvent {
+trait Readonlynamestorenotifyst
+  extends StObject
+     with LogEvent {
   
-  val name: storeDotnotifyDotstart = js.native
+  val name: storeDotnotifyDotstart
 }
 object Readonlynamestorenotifyst {
   
   @scala.inline
-  def apply(name: storeDotnotifyDotstart): Readonlynamestorenotifyst = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): Readonlynamestorenotifyst = {
+    val __obj = js.Dynamic.literal(name = "store.notify.start")
     __obj.asInstanceOf[Readonlynamestorenotifyst]
   }
   

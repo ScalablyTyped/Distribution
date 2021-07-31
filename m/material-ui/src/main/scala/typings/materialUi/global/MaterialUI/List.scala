@@ -10,11 +10,13 @@ import typings.react.mod.ComponentState
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
   
+  @JSGlobal("__MaterialUI.List")
+  @js.native
+  val ^ : js.Any = js.native
   @JSGlobal("__MaterialUI.List.List")
   @js.native
   class List ()
@@ -25,7 +27,6 @@ object List {
   class ListItem ()
     extends Component[ListItemProps, js.Object, js.Any]
   
-  @JSGlobal("__MaterialUI.List.makeSelectable")
-  @js.native
-  def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) with SelectableProps, ComponentState] = js.native
+  @scala.inline
+  def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
 }

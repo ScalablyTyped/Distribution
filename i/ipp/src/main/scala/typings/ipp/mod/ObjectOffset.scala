@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectOffset extends StObject {
   
-  var `x-offset`: js.UndefOr[Double] = js.native
+  var `x-offset`: js.UndefOr[Double] = js.undefined
   
-  var `y-offset`: js.UndefOr[Double] = js.native
+  var `y-offset`: js.UndefOr[Double] = js.undefined
   
-  var `z-offset`: js.UndefOr[Double] = js.native
+  var `z-offset`: js.UndefOr[Double] = js.undefined
 }
 object ObjectOffset {
   

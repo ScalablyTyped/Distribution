@@ -3,13 +3,14 @@ package typings.chromeApps
 import typings.chromeApps.WebView.Events.ConsoleMessageLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeAppsNumbers {
   
   @js.native
-  sealed trait `-1` extends ConsoleMessageLevel
+  sealed trait `-1`
+    extends StObject
+       with ConsoleMessageLevel
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
@@ -19,12 +20,16 @@ object chromeAppsNumbers {
   def `-2`: `-2` = -2.asInstanceOf[`-2`]
   
   @js.native
-  sealed trait `0` extends ConsoleMessageLevel
+  sealed trait `0`
+    extends StObject
+       with ConsoleMessageLevel
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1` extends ConsoleMessageLevel
+  sealed trait `1`
+    extends StObject
+       with ConsoleMessageLevel
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
@@ -49,7 +54,9 @@ object chromeAppsNumbers {
   def `1800`: `1800` = 1800.asInstanceOf[`1800`]
   
   @js.native
-  sealed trait `2` extends ConsoleMessageLevel
+  sealed trait `2`
+    extends StObject
+       with ConsoleMessageLevel
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   

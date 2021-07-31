@@ -5,7 +5,6 @@ import typings.hexo.mod.Post.RenderData
 import typings.moment.mod.MomentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,37 +15,36 @@ trait Post extends StObject {
     */
   def create(data: Data): js.Promise[Unit] = js.native
   def create(data: Data, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def create(data: Data, replace: js.UndefOr[scala.Nothing], fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def create(data: Data, replace: Boolean): js.Promise[Unit] = js.native
   def create(data: Data, replace: Boolean, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def create(data: Data, replace: Unit, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   
   /**
     * Publish a Draft
     */
   def publish(data: Data): js.Promise[Unit] = js.native
   def publish(data: Data, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def publish(data: Data, replace: js.UndefOr[scala.Nothing], fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def publish(data: Data, replace: Boolean): js.Promise[Unit] = js.native
   def publish(data: Data, replace: Boolean, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def publish(data: Data, replace: Unit, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   
-  def render(source: js.UndefOr[scala.Nothing], data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def render(source: String, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def render(source: Null, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def render(source: Unit, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
 }
 object Post {
   
-  @js.native
   trait Data extends StObject {
     
-    var date: js.UndefOr[MomentInput] = js.native
+    var date: js.UndefOr[MomentInput] = js.undefined
     
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Data {
     
@@ -94,12 +92,11 @@ object Post {
     }
   }
   
-  @js.native
   trait RenderData extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var engine: js.UndefOr[String] = js.native
+    var engine: js.UndefOr[String] = js.undefined
   }
   object RenderData {
     

@@ -2,17 +2,15 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildShard extends StObject {
   
-  var HashKeyRange: typings.awsSdk.kinesisMod.HashKeyRange = js.native
+  var HashKeyRange: typings.awsSdk.kinesisMod.HashKeyRange
   
-  var ParentShards: ShardIdList = js.native
+  var ParentShards: ShardIdList
   
-  var ShardId: typings.awsSdk.kinesisMod.ShardId = js.native
+  var ShardId: typings.awsSdk.kinesisMod.ShardId
 }
 object ChildShard {
   

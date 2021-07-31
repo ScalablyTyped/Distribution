@@ -2,34 +2,32 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Message received from history
   */
-@js.native
 trait IMHistoryMessage extends StObject {
   
   /**
     * Message body
     */
-  var body: String = js.native
+  var body: String
   
   /**
     * User id - author of the message
     */
-  var from: String = js.native
+  var from: String
   
   /**
     * Message id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Message creation time
     */
-  var time: String = js.native
+  var time: String
 }
 object IMHistoryMessage {
   

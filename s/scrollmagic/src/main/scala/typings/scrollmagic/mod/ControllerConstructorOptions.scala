@@ -3,21 +3,19 @@ package typings.scrollmagic.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControllerConstructorOptions extends StObject {
   
-  var container: js.UndefOr[String | Element] = js.native
+  var container: js.UndefOr[String | Element] = js.undefined
   
-  var globalSceneOptions: js.UndefOr[SceneConstructorOptions] = js.native
+  var globalSceneOptions: js.UndefOr[SceneConstructorOptions] = js.undefined
   
-  var loglevel: js.UndefOr[Double] = js.native
+  var loglevel: js.UndefOr[Double] = js.undefined
   
-  var refreshInterval: js.UndefOr[Double] = js.native
+  var refreshInterval: js.UndefOr[Double] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object ControllerConstructorOptions {
   

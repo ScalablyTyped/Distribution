@@ -5,36 +5,34 @@ import typings.pulumiAws.inputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilte
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalGatewayVirtualInterfaceGroupsMod {
   
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayVirtualInterfaceGroups", "getLocalGatewayVirtualInterfaceGroups")
+  @JSImport("@pulumi/aws/ec2/getLocalGatewayVirtualInterfaceGroups", JSImport.Namespace)
   @js.native
-  def getLocalGatewayVirtualInterfaceGroups(): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayVirtualInterfaceGroups", "getLocalGatewayVirtualInterfaceGroups")
-  @js.native
-  def getLocalGatewayVirtualInterfaceGroups(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayVirtualInterfaceGroups", "getLocalGatewayVirtualInterfaceGroups")
-  @js.native
-  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayVirtualInterfaceGroups", "getLocalGatewayVirtualInterfaceGroups")
-  @js.native
-  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalGatewayVirtualInterfaceGroups(): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")().asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  @scala.inline
+  def getLocalGatewayVirtualInterfaceGroups(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  @scala.inline
+  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  @scala.inline
+  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  
   trait GetLocalGatewayVirtualInterfaceGroupsArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. See the [EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayVirtualInterfaceGroups.html) for supported filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetLocalGatewayVirtualInterfaceGroupsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLocalGatewayVirtualInterfaceGroupsFilter]] = js.undefined
     
     /**
       * Key-value map of resource tags, each pair of which must exactly match a pair on the desired local gateway route table.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLocalGatewayVirtualInterfaceGroupsArgs {
     
@@ -64,29 +62,28 @@ object getLocalGatewayVirtualInterfaceGroupsMod {
     }
   }
   
-  @js.native
   trait GetLocalGatewayVirtualInterfaceGroupsResult extends StObject {
     
     val filters: js.UndefOr[
         js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilter]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of EC2 Local Gateway Virtual Interface Group identifiers.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
     /**
       * Set of EC2 Local Gateway Virtual Interface identifiers.
       */
-    val localGatewayVirtualInterfaceIds: js.Array[String] = js.native
+    val localGatewayVirtualInterfaceIds: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLocalGatewayVirtualInterfaceGroupsResult {
     

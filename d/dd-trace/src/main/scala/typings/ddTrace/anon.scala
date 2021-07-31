@@ -16,12 +16,10 @@ import typings.std.Number
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
     /**
@@ -32,9 +30,9 @@ object anon {
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[ClientRequest], 
           /* res */ js.UndefOr[IncomingMessage], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object `0` {
     
@@ -49,7 +47,7 @@ object anon {
       
       @scala.inline
       def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => _
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -57,15 +55,14 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
     /**
       * Hook to execute just before the aws span finishes.
       */
     var request: js.UndefOr[
-        js.Function2[/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject], _]
-      ] = js.native
+        js.Function2[/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject], js.Any]
+      ] = js.undefined
   }
   object `1` {
     
@@ -79,14 +76,13 @@ object anon {
     implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => _): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
     /**
@@ -97,9 +93,9 @@ object anon {
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[IncomingMessage | ClientRequest], 
           /* res */ js.UndefOr[ServerResponse | IncomingMessage], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object `2` {
     
@@ -114,7 +110,7 @@ object anon {
       
       @scala.inline
       def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse | IncomingMessage]) => _
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse | IncomingMessage]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -122,39 +118,38 @@ object anon {
     }
   }
   
-  @js.native
   trait B3 extends StObject {
     
-    var b3: js.UndefOr[Boolean] = js.native
+    var b3: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of origins to whitelist for distributed tracing. This is used to determine whether to propagate context from the browser for CORS.
       * @default []
       */
-    var distributedTracingOriginWhitelist: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var distributedTracingOriginWhitelist: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * Whether to enable the experimental `getRumData` method.
       * @default false
       */
-    var enableGetRumData: js.UndefOr[Boolean] = js.native
+    var enableGetRumData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to write traces to log output, rather than send to an agent
       * @default false
       */
-    var exporter: js.UndefOr[log | browser | agent] = js.native
+    var exporter: js.UndefOr[log | browser | agent] = js.undefined
     
     /**
       * Whether to add an auto-generated `runtime-id` tag to spans and metrics.
       * @default false
       */
-    var runtimeId: js.UndefOr[Boolean] = js.native
+    var runtimeId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration of the priority sampler. Supports a global config and rules by span name or service name. The first matching rule is applied, and if no rule matches it falls back to the global config or on the rates provided by the agent if there is no global config.
       */
-    var sampler: js.UndefOr[Rules] = js.native
+    var sampler: js.UndefOr[Rules] = js.undefined
   }
   object B3 {
     
@@ -221,7 +216,6 @@ object anon {
     def warn(message: String): Unit = js.native
   }
   
-  @js.native
   trait Execute extends StObject {
     
     var execute: js.UndefOr[
@@ -231,7 +225,7 @@ object anon {
           /* res */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Execute {
     
@@ -254,19 +248,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
     /**
       * The hostname of the Dogstatsd agent that the metrics will submitted to.
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * The port of the Dogstatsd agent that the metrics will submitted to.
       * @default 8125
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Hostname {
     
@@ -293,15 +286,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
     /**
       * Hook to execute just before the query span finishes.
       */
     var query: js.UndefOr[
-        js.Function2[/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams], _]
-      ] = js.native
+        js.Function2[/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams], js.Any]
+      ] = js.undefined
   }
   object Query {
     
@@ -315,25 +307,24 @@ object anon {
     implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => _): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
-  @js.native
   trait RateLimit extends StObject {
     
     /**
       * Controls the ingestion rate limit between the agent and the backend.
       */
-    var rateLimit: js.UndefOr[Double] = js.native
+    var rateLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls the ingestion sample rate (between 0 and 1) between the agent and the backend.
       */
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
   }
   object RateLimit {
     
@@ -360,7 +351,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
     /**
@@ -371,9 +361,9 @@ object anon {
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[IncomingMessage], 
           /* res */ js.UndefOr[ServerResponse], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Request {
     
@@ -388,7 +378,7 @@ object anon {
       
       @scala.inline
       def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => _
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -396,25 +386,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Rules extends StObject {
     
     /**
       * Global rate limit that is applied on the global sample rate and all rules.
       * @default 100
       */
-    var rateLimit: js.UndefOr[Number] = js.native
+    var rateLimit: js.UndefOr[Number] = js.undefined
     
     /**
       * Sampling rules to apply to priority sampling.
       * @default []
       */
-    var rules: js.UndefOr[js.Array[SamplingRule]] = js.native
+    var rules: js.UndefOr[js.Array[SamplingRule]] = js.undefined
     
     /**
       * Sample rate to apply globally when no other rule is matched. Omit to fallback on the dynamic rates returned by the agent instead.
       */
-    var sampleRate: js.UndefOr[Number] = js.native
+    var sampleRate: js.UndefOr[Number] = js.undefined
   }
   object Rules {
     

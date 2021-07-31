@@ -2,35 +2,33 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents output related to a built-in algorithm Job.
   */
-@js.native
 trait SchemaGoogleCloudMlV1BuiltInAlgorithmOutput extends StObject {
   
   /**
     * Framework on which the built-in algorithm was trained on.
     */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /**
     * Built-in algorithm&#39;s saved model path. Only set for non-hptuning
     * succeeded jobs.
     */
-  var modelPath: js.UndefOr[String] = js.native
+  var modelPath: js.UndefOr[String] = js.undefined
   
   /**
     * Python version on which the built-in algorithm was trained on.
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
   
   /**
     * CMLE runtime version on which the built-in algorithm was trained on.
     */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1BuiltInAlgorithmOutput {
   

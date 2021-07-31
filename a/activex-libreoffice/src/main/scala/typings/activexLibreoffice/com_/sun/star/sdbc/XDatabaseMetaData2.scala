@@ -6,26 +6,26 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the {@link XDatabaseMetaData} interface to allow retrieval of additional information. */
-@js.native
-trait XDatabaseMetaData2 extends XDatabaseMetaData {
+trait XDatabaseMetaData2
+  extends StObject
+     with XDatabaseMetaData {
   
   /**
     * complements {@link XDatabaseMetaData.getURL} by returning the settings which, upon construction of the connection, have been used besides the
     * connection URL.
     * @see XDriver.connect
     */
-  val ConnectionInfo: SafeArray[PropertyValue] = js.native
+  val ConnectionInfo: SafeArray[PropertyValue]
   
   /**
     * complements {@link XDatabaseMetaData.getURL} by returning the settings which, upon construction of the connection, have been used besides the
     * connection URL.
     * @see XDriver.connect
     */
-  def getConnectionInfo(): SafeArray[PropertyValue] = js.native
+  def getConnectionInfo(): SafeArray[PropertyValue]
 }
 object XDatabaseMetaData2 {
   

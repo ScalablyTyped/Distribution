@@ -2,25 +2,23 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedGraph extends StObject {
   
-  var V: Double = js.native
+  var V: Double
   
-  def addEdge(e: Edge): Unit = js.native
+  def addEdge(e: Edge): Unit
   
-  def adj(v: Double): js.Array[Edge] = js.native
+  def adj(v: Double): js.Array[Edge]
   
-  var adjList: js.Array[js.Array[Edge]] = js.native
+  var adjList: js.Array[js.Array[Edge]]
   
-  def edge(v: Double, w: Double): Edge | Null = js.native
+  def edge(v: Double, w: Double): Edge | Null
   
-  def node(v: Double): Node = js.native
+  def node(v: Double): Node
   
-  var nodeInfo: js.Any = js.native
+  var nodeInfo: js.Any
 }
 object WeightedGraph {
   

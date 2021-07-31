@@ -2,52 +2,50 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     *  A system-generated universally unique identifier (UUID) for the action. 
     */
-  var ActionId: typings.awsSdk.budgetsMod.ActionId = js.native
+  var ActionId: typings.awsSdk.budgetsMod.ActionId
   
   /**
     *  The trigger threshold of the action. 
     */
-  var ActionThreshold: typings.awsSdk.budgetsMod.ActionThreshold = js.native
+  var ActionThreshold: typings.awsSdk.budgetsMod.ActionThreshold
   
   /**
     *  The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. 
     */
-  var ActionType: typings.awsSdk.budgetsMod.ActionType = js.native
+  var ActionType: typings.awsSdk.budgetsMod.ActionType
   
   /**
     *  This specifies if the action needs manual or automatic approval. 
     */
-  var ApprovalModel: typings.awsSdk.budgetsMod.ApprovalModel = js.native
+  var ApprovalModel: typings.awsSdk.budgetsMod.ApprovalModel
   
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
     *  Where you specify all of the type-specific parameters. 
     */
-  var Definition: typings.awsSdk.budgetsMod.Definition = js.native
+  var Definition: typings.awsSdk.budgetsMod.Definition
   
   /**
     *  The role passed for action execution and reversion. Roles and actions must be in the same account. 
     */
-  var ExecutionRoleArn: RoleArn = js.native
+  var ExecutionRoleArn: RoleArn
   
-  var NotificationType: typings.awsSdk.budgetsMod.NotificationType = js.native
+  var NotificationType: typings.awsSdk.budgetsMod.NotificationType
   
   /**
     *  The status of action. 
     */
-  var Status: ActionStatus = js.native
+  var Status: ActionStatus
   
-  var Subscribers: typings.awsSdk.budgetsMod.Subscribers = js.native
+  var Subscribers: typings.awsSdk.budgetsMod.Subscribers
 }
 object Action {
   

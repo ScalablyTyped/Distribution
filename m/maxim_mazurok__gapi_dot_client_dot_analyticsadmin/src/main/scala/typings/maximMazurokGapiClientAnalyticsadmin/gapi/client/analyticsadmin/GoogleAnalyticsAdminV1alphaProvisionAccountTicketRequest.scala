@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest extends StObject {
   
   /** The account to create. */
-  var account: js.UndefOr[GoogleAnalyticsAdminV1alphaAccount] = js.native
+  var account: js.UndefOr[GoogleAnalyticsAdminV1alphaAccount] = js.undefined
   
   /** Redirect URI where the user will be sent after accepting Terms of Service. Must be configured in Developers Console as a Redirect URI */
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest {
   

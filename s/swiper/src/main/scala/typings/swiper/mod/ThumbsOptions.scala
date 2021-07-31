@@ -2,21 +2,19 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbsOptions extends StObject {
   
-  var autoScrollOffset: js.UndefOr[Double] = js.native
+  var autoScrollOffset: js.UndefOr[Double] = js.undefined
   
-  var multipleActiveThumbs: js.UndefOr[Boolean] = js.native
+  var multipleActiveThumbs: js.UndefOr[Boolean] = js.undefined
   
-  var slideThumbActiveClass: js.UndefOr[String] = js.native
+  var slideThumbActiveClass: js.UndefOr[String] = js.undefined
   
-  var swiper: js.UndefOr[Swiper] = js.native
+  var swiper: js.UndefOr[Swiper] = js.undefined
   
-  var thumbsContainerClass: js.UndefOr[String] = js.native
+  var thumbsContainerClass: js.UndefOr[String] = js.undefined
 }
 object ThumbsOptions {
   

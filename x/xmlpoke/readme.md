@@ -12,7 +12,7 @@ Module for modifying XML files.
 | Keywords           | xmlpoke, xml |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 122431 |
+| # downloads        | 129516 |
 | # stars            | 1 |
 
 ## Links

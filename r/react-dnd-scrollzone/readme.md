@@ -11,8 +11,8 @@ A cross browser solution to scrolling during drag and drop.
 | Full name          | react-dnd-scrollzone |
 | Keywords           | react, drag, drop, scroll, dnd, drag and drop, polyfill, auto |
 | # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 1050268 |
+| # dependents       | 62 |
+| # downloads        | 1046274 |
 | # stars            | 0 |
 
 ## Links

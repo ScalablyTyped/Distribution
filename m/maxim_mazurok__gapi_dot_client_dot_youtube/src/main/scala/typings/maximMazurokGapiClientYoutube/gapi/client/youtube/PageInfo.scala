@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageInfo extends StObject {
   
   /** The number of results included in the API response. */
-  var resultsPerPage: js.UndefOr[Double] = js.native
+  var resultsPerPage: js.UndefOr[Double] = js.undefined
   
   /** The total number of results in the result set. */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object PageInfo {
   

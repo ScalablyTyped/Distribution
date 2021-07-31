@@ -12,23 +12,21 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String | Null = js.native
+    var body: String | Null
     
-    var created_date: Date | Null = js.native
+    var created_date: Date | Null
   }
   object Body {
     
     @scala.inline
     def apply(): Body = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(body = null, created_date = null)
       __obj.asInstanceOf[Body]
     }
     
@@ -98,9 +96,9 @@ object anon {
   trait CallLayoutNameCallback extends StObject {
     
     def apply(): LayoutInfo = js.native
-    def apply(layoutName: js.UndefOr[scala.Nothing], callback: Callback[LayoutInfo]): LayoutInfo = js.native
     def apply(layoutName: String): LayoutInfo = js.native
     def apply(layoutName: String, callback: Callback[LayoutInfo]): LayoutInfo = js.native
+    def apply(layoutName: Unit, callback: Callback[LayoutInfo]): LayoutInfo = js.native
     
     def clear(): Unit = js.native
   }
@@ -115,14 +113,13 @@ object anon {
     def clear(): Unit = js.native
   }
   
-  @js.native
   trait CreatedDate extends StObject {
     
-    var createdDate: String = js.native
+    var createdDate: String
     
-    var replayId: js.UndefOr[Double] = js.native
+    var replayId: js.UndefOr[Double] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CreatedDate {
     
@@ -150,42 +147,41 @@ object anon {
     }
   }
   
-  @js.native
   trait Customdomain extends StObject {
     
-    var custom_domain: js.UndefOr[String] = js.native
+    var custom_domain: js.UndefOr[String] = js.undefined
     
-    var enterprise: String = js.native
+    var enterprise: String
     
-    var feed_elements: String = js.native
+    var feed_elements: String
     
-    var feed_items: String = js.native
+    var feed_items: String
     
-    var feeds: String = js.native
+    var feeds: String
     
-    var groups: String = js.native
+    var groups: String
     
-    var metadata: String = js.native
+    var metadata: String
     
-    var partner: String = js.native
+    var partner: String
     
-    var profile: String = js.native
+    var profile: String
     
-    var query: String = js.native
+    var query: String
     
-    var recent: String = js.native
+    var recent: String
     
-    var rest: String = js.native
+    var rest: String
     
-    var search: String = js.native
+    var search: String
     
-    var sobjects: String = js.native
+    var sobjects: String
     
-    var tooling_rest: String = js.native
+    var tooling_rest: String
     
-    var tooling_soap: String = js.native
+    var tooling_soap: String
     
-    var users: String = js.native
+    var users: String
   }
   object Customdomain {
     
@@ -271,10 +267,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ExtIdField extends StObject {
     
-    var extIdField: js.UndefOr[String] = js.native
+    var extIdField: js.UndefOr[String] = js.undefined
   }
   object ExtIdField {
     
@@ -295,10 +290,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var Id: js.UndefOr[SalesforceId] = js.native
+    var Id: js.UndefOr[SalesforceId] = js.undefined
   }
   object Id {
     
@@ -320,20 +314,19 @@ object anon {
   }
   
   /* Inlined std.Partial<jsforce.jsforce/connection.PartialOAuth2Options> */
-  @js.native
   trait PartialPartialOAuth2Optio extends StObject {
     
-    var authzServiceUrl: js.UndefOr[String] = js.native
+    var authzServiceUrl: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
-    var tokenServiceUrl: js.UndefOr[String] = js.native
+    var tokenServiceUrl: js.UndefOr[String] = js.undefined
   }
   object PartialPartialOAuth2Optio {
     
@@ -384,12 +377,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Picture extends StObject {
     
-    var picture: String = js.native
+    var picture: String
     
-    var thumbnail: String = js.native
+    var thumbnail: String
   }
   object Picture {
     
@@ -410,12 +402,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Scope {
     

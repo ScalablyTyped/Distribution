@@ -3,12 +3,11 @@ package typings.mdast.mod
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parent
-  extends typings.unist.mod.Parent
+  extends StObject
+     with typings.unist.mod.Parent
 object Parent {
   
   @scala.inline

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SuggestionResult extends Object {
+trait SuggestionResult
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the result is a Collection.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
     */
-  var isCollection: Boolean = js.native
+  var isCollection: Boolean
   
   /**
     * ID used in combination with the `text` property to uniquely identify a suggestion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
     */
-  var magicKey: String = js.native
+  var magicKey: String
   
   /**
     * The string name of the suggested location to geocode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
     */
-  var text: String = js.native
+  var text: String
 }
 object SuggestionResult {
   

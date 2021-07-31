@@ -5,22 +5,22 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XFormField extends XInterface {
+trait XFormField
+  extends StObject
+     with XInterface {
   
-  var FieldType: String = js.native
+  var FieldType: String
   
-  val Parameters: XNameContainer = js.native
+  val Parameters: XNameContainer
   
-  def getFieldType(): String = js.native
+  def getFieldType(): String
   
-  def getParameters(): XNameContainer = js.native
+  def getParameters(): XNameContainer
   
-  def setFieldType(fieldType: String): Unit = js.native
+  def setFieldType(fieldType: String): Unit
 }
 object XFormField {
   

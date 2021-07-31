@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait CheckboxChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
+trait CheckboxChoiceMap[T /* <: Answers */]
+  extends StObject
+     with BaseChoiceMap[T] {
   
-  var CheckboxChoiceOptions: typings.inquirer.mod.CheckboxChoiceOptions[T] = js.native
+  var CheckboxChoiceOptions: typings.inquirer.mod.CheckboxChoiceOptions[T]
 }
 object CheckboxChoiceMap {
   
@@ -31,7 +31,7 @@ object CheckboxChoiceMap {
   }
   
   @scala.inline
-  implicit class CheckboxChoiceMapMutableBuilder[Self <: CheckboxChoiceMap[_], T /* <: Answers */] (val x: Self with CheckboxChoiceMap[T]) extends AnyVal {
+  implicit class CheckboxChoiceMapMutableBuilder[Self <: CheckboxChoiceMap[?], T /* <: Answers */] (val x: Self & CheckboxChoiceMap[T]) extends AnyVal {
     
     @scala.inline
     def setCheckboxChoiceOptions(value: CheckboxChoiceOptions[T]): Self = StObject.set(x, "CheckboxChoiceOptions", value.asInstanceOf[js.Any])

@@ -3,23 +3,21 @@ package typings.filesystem
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /**
     * This is the time at which the file or directory was last modified.
     * @readonly
     */
-  var modificationTime: Date = js.native
+  var modificationTime: Date
   
   /**
     * The size of the file, in bytes. This must return 0 for directories.
     * @readonly
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Metadata {
   

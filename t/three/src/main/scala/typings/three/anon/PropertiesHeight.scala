@@ -2,20 +2,18 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesHeight extends StObject {
   
-  var properties: Height = js.native
+  var properties: Height
   
-  var value: js.Array[_] = js.native
+  var value: js.Array[js.Any]
 }
 object PropertiesHeight {
   
   @scala.inline
-  def apply(properties: Height, value: js.Array[_]): PropertiesHeight = {
+  def apply(properties: Height, value: js.Array[js.Any]): PropertiesHeight = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesHeight]
   }
@@ -27,7 +25,7 @@ object PropertiesHeight {
     def setProperties(value: Height): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

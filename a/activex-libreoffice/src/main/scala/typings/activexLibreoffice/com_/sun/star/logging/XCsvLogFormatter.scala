@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLogFormatter, XLogHandler
   * @since OOo 3.0
   */
-@js.native
-trait XCsvLogFormatter extends XLogFormatter {
+trait XCsvLogFormatter
+  extends StObject
+     with XLogFormatter {
   
   /**
     * Defines the names of the additional columns this defaults to only one row titled "message". if this is set to more than one column, the messages need
     * to be preformatted using `formatMultiColumn`
     */
-  var Columnnames: SafeArray[String] = js.native
+  var Columnnames: SafeArray[String]
   
   /** Defines if the EventNo should be logged */
-  var LogEventNo: Boolean = js.native
+  var LogEventNo: Boolean
   
   /** Defines if the Source should be logged */
-  var LogSource: Boolean = js.native
+  var LogSource: Boolean
   
   /** Defines if the ThreadId should be logged */
-  var LogThread: Boolean = js.native
+  var LogThread: Boolean
   
   /** Defines if the Timestamp should be logged */
-  var LogTimestamp: Boolean = js.native
+  var LogTimestamp: Boolean
   
   /**
     * if the {@link CsvLogFormatter} is set to have more than one column, any logged information has to be send through this method before calling log().
@@ -39,7 +39,7 @@ trait XCsvLogFormatter extends XLogFormatter {
     *
     * `XLoggerInstance.log(1000, XCsvLogFormatterInstance.formatMultiColumn(columnData))`
     */
-  def formatMultiColumn(columnData: SeqEquiv[String]): String = js.native
+  def formatMultiColumn(columnData: SeqEquiv[String]): String
 }
 object XCsvLogFormatter {
   

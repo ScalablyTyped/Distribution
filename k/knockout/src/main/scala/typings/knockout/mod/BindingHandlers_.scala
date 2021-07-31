@@ -23,76 +23,76 @@ import typings.knockout.anon.`8`
 import typings.knockout.anon.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BindingHandlers_ extends /* name */ StringDictionary[BindingHandler[_]] {
+trait BindingHandlers_
+  extends StObject
+     with /* name */ StringDictionary[BindingHandler[js.Any]] {
   
-  var attr: `2` = js.native
+  var attr: `2`
   
-  var checked: AfterInit = js.native
+  var checked: AfterInit
   
-  var checkedValue: Update = js.native
+  var checkedValue: Update
   
-  var `class`: `0` = js.native
+  var `class`: `0`
   
-  var click: `7` = js.native
+  var click: `7`
   
-  var component: `12` = js.native
+  var component: `12`
   
-  var css: `1` = js.native
+  var css: `1`
   
-  var disable: Update = js.native
+  var disable: Update
   
-  var enable: Update = js.native
+  var enable: Update
   
   // Working with form fields
-  var event: `6` = js.native
+  var event: `6`
   
   // Control Flow
-  var foreach: `3` = js.native
+  var foreach: `3`
   
-  var hasFocus: InitUpdate = js.native
+  var hasFocus: InitUpdate
   
-  var hasfocus: InitUpdate = js.native
+  var hasfocus: InitUpdate
   
-  var hidden: Update = js.native
+  var hidden: Update
   
-  var html: Init = js.native
+  var html: Init
   
-  var `if`: `4` = js.native
+  var `if`: `4`
   
-  var ifnot: `4` = js.native
+  var ifnot: `4`
   
-  var let: `5` = js.native
+  var let: `5`
   
-  var options: `9` = js.native
+  var options: `9`
   
-  var selectedOptions: AfterInitUpdate = js.native
+  var selectedOptions: AfterInitUpdate
   
-  var style: `2` = js.native
+  var style: `2`
   
-  var submit: `7` = js.native
+  var submit: `7`
   
-  var template: `11` = js.native
+  var template: `11`
   
-  var text: Init = js.native
+  var text: Init
   
-  var textInput: `8` = js.native
+  var textInput: `8`
   
-  var textinput: Preprocess = js.native
+  var textinput: Preprocess
   
-  var uniqueName: `10` = js.native
+  var uniqueName: `10`
   
-  var using: `4` = js.native
+  var `using`: `4`
   
-  var value: After = js.native
+  var value: After
   
   // Controlling text and appearance
-  var visible: Update = js.native
+  var visible: Update
   
-  var `with`: `4` = js.native
+  var `with`: `4`
 }
 object BindingHandlers_ {
   
@@ -125,14 +125,15 @@ object BindingHandlers_ {
     textInput: `8`,
     textinput: Preprocess,
     uniqueName: `10`,
-    using: `4`,
+    `using`: `4`,
     value: After,
     visible: Update,
     `with`: `4`
   ): BindingHandlers_ = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], checkedValue = checkedValue.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], foreach = foreach.asInstanceOf[js.Any], hasFocus = hasFocus.asInstanceOf[js.Any], hasfocus = hasfocus.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ifnot = ifnot.asInstanceOf[js.Any], let = let.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selectedOptions = selectedOptions.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textInput = textInput.asInstanceOf[js.Any], textinput = textinput.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], checkedValue = checkedValue.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], foreach = foreach.asInstanceOf[js.Any], hasFocus = hasFocus.asInstanceOf[js.Any], hasfocus = hasfocus.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ifnot = ifnot.asInstanceOf[js.Any], let = let.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selectedOptions = selectedOptions.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textInput = textInput.asInstanceOf[js.Any], textinput = textinput.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")(`using`.asInstanceOf[js.Any])
     __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingHandlers_]
   }

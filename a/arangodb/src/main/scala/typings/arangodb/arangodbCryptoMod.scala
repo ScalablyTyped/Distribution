@@ -5,88 +5,71 @@ import typings.arangodb.ArangoDB.JwtAlgorithm
 import typings.arangodb.arangodbStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arangodbCryptoMod {
   
-  @JSImport("@arangodb/crypto", "checkAndMarkNonce")
+  @JSImport("@arangodb/crypto", JSImport.Namespace)
   @js.native
-  def checkAndMarkNonce(nonce: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@arangodb/crypto", "constantEquals")
-  @js.native
-  def constantEquals(a: String, b: String): Boolean = js.native
+  @scala.inline
+  def checkAndMarkNonce(nonce: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAndMarkNonce")(nonce.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@arangodb/crypto", "createNonce")
-  @js.native
-  def createNonce(): String = js.native
+  @scala.inline
+  def constantEquals(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("constantEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@arangodb/crypto", "genRandomAlphaNumbers")
-  @js.native
-  def genRandomAlphaNumbers(length: Double): String = js.native
+  @scala.inline
+  def createNonce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonce")().asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "genRandomNumbers")
-  @js.native
-  def genRandomNumbers(length: Double): String = js.native
+  @scala.inline
+  def genRandomAlphaNumbers(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomAlphaNumbers")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "genRandomSalt")
-  @js.native
-  def genRandomSalt(length: Double): String = js.native
+  @scala.inline
+  def genRandomNumbers(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomNumbers")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "hmac")
-  @js.native
-  def hmac(key: String, message: String, algorithm: HashAlgorithm): String = js.native
+  @scala.inline
+  def genRandomSalt(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomSalt")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "jwtDecode")
-  @js.native
-  def jwtDecode(key: String, token: String): js.Object | Null = js.native
-  @JSImport("@arangodb/crypto", "jwtDecode")
-  @js.native
-  def jwtDecode(key: String, token: String, noVerify: Boolean): js.Object | Null = js.native
-  @JSImport("@arangodb/crypto", "jwtDecode")
-  @js.native
-  def jwtDecode(key: Null, token: String): js.Object | Null = js.native
-  @JSImport("@arangodb/crypto", "jwtDecode")
-  @js.native
-  def jwtDecode(key: Null, token: String, noVerify: Boolean): js.Object | Null = js.native
+  @scala.inline
+  def hmac(key: String, message: String, algorithm: HashAlgorithm): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(key.asInstanceOf[js.Any], message.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "jwtEncode")
-  @js.native
-  def jwtEncode(key: String, message: String, algorithm: JwtAlgorithm): String = js.native
-  @JSImport("@arangodb/crypto", "jwtEncode")
-  @js.native
-  def jwtEncode_none(key: Null, message: String, algorithm: none): String = js.native
+  @scala.inline
+  def jwtDecode(key: String, token: String): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtDecode")(key.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
+  @scala.inline
+  def jwtDecode(key: String, token: String, noVerify: Boolean): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtDecode")(key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], noVerify.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
+  @scala.inline
+  def jwtDecode(key: Null, token: String): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtDecode")(key.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
+  @scala.inline
+  def jwtDecode(key: Null, token: String, noVerify: Boolean): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtDecode")(key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], noVerify.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
   
-  @JSImport("@arangodb/crypto", "md5")
-  @js.native
-  def md5(message: String): String = js.native
+  @scala.inline
+  def jwtEncode(key: String, message: String, algorithm: JwtAlgorithm): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtEncode")(key.asInstanceOf[js.Any], message.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(salt: String, password: String, iterations: Double, keyLength: Double): String = js.native
+  @scala.inline
+  def jwtEncode_none(key: Null, message: String, algorithm: none): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtEncode")(key.asInstanceOf[js.Any], message.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "rand")
-  @js.native
-  def rand(): Double = js.native
+  @scala.inline
+  def md5(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "sha1")
-  @js.native
-  def sha1(message: String): String = js.native
+  @scala.inline
+  def pbkdf2(salt: String, password: String, iterations: Double, keyLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(salt.asInstanceOf[js.Any], password.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "sha224")
-  @js.native
-  def sha224(message: String): String = js.native
+  @scala.inline
+  def rand(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")().asInstanceOf[Double]
   
-  @JSImport("@arangodb/crypto", "sha256")
-  @js.native
-  def sha256(message: String): String = js.native
+  @scala.inline
+  def sha1(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "sha384")
-  @js.native
-  def sha384(message: String): String = js.native
+  @scala.inline
+  def sha224(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha224")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@arangodb/crypto", "sha512")
-  @js.native
-  def sha512(message: String): String = js.native
+  @scala.inline
+  def sha256(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def sha384(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def sha512(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(message.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateIamInstanceProfile extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the launch template.
     */
-  var arn: String = js.native
+  var arn: String
   
   /**
     * The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
     */
-  var name: String = js.native
+  var name: String
 }
 object GetLaunchTemplateIamInstanceProfile {
   

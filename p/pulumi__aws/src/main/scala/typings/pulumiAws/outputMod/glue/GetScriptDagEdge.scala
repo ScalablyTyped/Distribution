@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScriptDagEdge extends StObject {
   
   /**
     * The ID of the node at which the edge starts.
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * The ID of the node at which the edge ends.
     */
-  var target: String = js.native
+  var target: String
   
   /**
     * The target of the edge.
     */
-  var targetParameter: js.UndefOr[String] = js.native
+  var targetParameter: js.UndefOr[String] = js.undefined
 }
 object GetScriptDagEdge {
   

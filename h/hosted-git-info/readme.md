@@ -10,9 +10,9 @@ Provides metadata and conversions from repository urls for Github, Bitbucket and
 | ------------------ | :-------------: |
 | Full name          | hosted-git-info |
 | Keywords           | git, github, bitbucket, gitlab |
-| # releases         | 15 |
-| # dependents       | 312 |
-| # downloads        | 707542326 |
+| # releases         | 17 |
+| # dependents       | 362 |
+| # downloads        | 853009056 |
 | # stars            | 3 |
 
 ## Links

@@ -2,25 +2,23 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the resources used to actively manage an instance group.
   */
-@js.native
 trait SchemaManagedGroupConfig extends StObject {
   
   /**
     * Output only. The name of the Instance Group Manager for this group.
     */
-  var instanceGroupManagerName: js.UndefOr[String] = js.native
+  var instanceGroupManagerName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The name of the Instance Template used for the Managed
     * Instance Group.
     */
-  var instanceTemplateName: js.UndefOr[String] = js.native
+  var instanceTemplateName: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedGroupConfig {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetWorkflowsRequest extends StObject {
   
   /**
     * Specifies whether to include a graph when returning the workflow resource metadata.
     */
-  var IncludeGraph: js.UndefOr[NullableBoolean] = js.native
+  var IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * A list of workflow names, which may be the names returned from the ListWorkflows operation.
     */
-  var Names: WorkflowNames = js.native
+  var Names: WorkflowNames
 }
 object BatchGetWorkflowsRequest {
   

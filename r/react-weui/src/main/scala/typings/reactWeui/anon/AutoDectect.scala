@@ -2,26 +2,24 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoDectect extends StObject {
   
-  var autoDectect: Boolean = js.native
+  var autoDectect: Boolean
   
-  var buttons: js.Array[_] = js.native
+  var buttons: js.Array[js.Any]
   
-  var show: Boolean = js.native
+  var show: Boolean
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AutoDectect {
   
   @scala.inline
-  def apply(autoDectect: Boolean, buttons: js.Array[_], show: Boolean, title: String, `type`: String): AutoDectect = {
+  def apply(autoDectect: Boolean, buttons: js.Array[js.Any], show: Boolean, title: String, `type`: String): AutoDectect = {
     val __obj = js.Dynamic.literal(autoDectect = autoDectect.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoDectect]
@@ -34,7 +32,7 @@ object AutoDectect {
     def setAutoDectect(value: Boolean): Self = StObject.set(x, "autoDectect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))

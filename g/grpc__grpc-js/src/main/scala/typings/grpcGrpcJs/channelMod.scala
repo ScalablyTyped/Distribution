@@ -10,14 +10,15 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
   
   @JSImport("@grpc/grpc-js/build/src/channel", "ChannelImplementation")
   @js.native
-  class ChannelImplementation protected () extends Channel {
+  class ChannelImplementation protected ()
+    extends StObject
+       with Channel {
     def this(target: String, credentials: ChannelCredentials, options: ChannelOptions) = this()
     
     def _startCallStream(stream: Http2CallStream, metadata: Metadata): Unit = js.native
@@ -76,27 +77,37 @@ object channelMod {
   object ConnectivityState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ConnectivityState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ConnectivityState & Double] = js.native
     
     @js.native
-    sealed trait CONNECTING extends ConnectivityState
-    /* 0 */ val CONNECTING: typings.grpcGrpcJs.channelMod.ConnectivityState.CONNECTING with Double = js.native
+    sealed trait CONNECTING
+      extends StObject
+         with ConnectivityState
+    /* 0 */ val CONNECTING: typings.grpcGrpcJs.channelMod.ConnectivityState.CONNECTING & Double = js.native
     
     @js.native
-    sealed trait IDLE extends ConnectivityState
-    /* 3 */ val IDLE: typings.grpcGrpcJs.channelMod.ConnectivityState.IDLE with Double = js.native
+    sealed trait IDLE
+      extends StObject
+         with ConnectivityState
+    /* 3 */ val IDLE: typings.grpcGrpcJs.channelMod.ConnectivityState.IDLE & Double = js.native
     
     @js.native
-    sealed trait READY extends ConnectivityState
-    /* 1 */ val READY: typings.grpcGrpcJs.channelMod.ConnectivityState.READY with Double = js.native
+    sealed trait READY
+      extends StObject
+         with ConnectivityState
+    /* 1 */ val READY: typings.grpcGrpcJs.channelMod.ConnectivityState.READY & Double = js.native
     
     @js.native
-    sealed trait SHUTDOWN extends ConnectivityState
-    /* 4 */ val SHUTDOWN: typings.grpcGrpcJs.channelMod.ConnectivityState.SHUTDOWN with Double = js.native
+    sealed trait SHUTDOWN
+      extends StObject
+         with ConnectivityState
+    /* 4 */ val SHUTDOWN: typings.grpcGrpcJs.channelMod.ConnectivityState.SHUTDOWN & Double = js.native
     
     @js.native
-    sealed trait TRANSIENT_FAILURE extends ConnectivityState
-    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.channelMod.ConnectivityState.TRANSIENT_FAILURE with Double = js.native
+    sealed trait TRANSIENT_FAILURE
+      extends StObject
+         with ConnectivityState
+    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.channelMod.ConnectivityState.TRANSIENT_FAILURE & Double = js.native
   }
   
   @js.native
@@ -108,15 +119,6 @@ object channelMod {
       */
     def close(): Unit = js.native
     
-    def createCall(method: String, deadline: Deadline, host: js.UndefOr[scala.Nothing], parentCall: js.Any): Call = js.native
-    def createCall(
-      method: String,
-      deadline: Deadline,
-      host: js.UndefOr[scala.Nothing],
-      parentCall: js.Any,
-      // eslint-disable-line @typescript-eslint/no-explicit-any
-    propagateFlags: Double
-    ): Call = js.native
     /**
       * Create a call object. Call is an opaque type that is used by the Client
       * class. This function is called by the gRPC library when starting a
@@ -143,6 +145,15 @@ object channelMod {
       method: String,
       deadline: Deadline,
       host: Null,
+      parentCall: js.Any,
+      // eslint-disable-line @typescript-eslint/no-explicit-any
+    propagateFlags: Double
+    ): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Unit, parentCall: js.Any): Call = js.native
+    def createCall(
+      method: String,
+      deadline: Deadline,
+      host: Unit,
       parentCall: js.Any,
       // eslint-disable-line @typescript-eslint/no-explicit-any
     propagateFlags: Double

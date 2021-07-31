@@ -3,15 +3,13 @@ package typings.googleapis.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleResults extends StObject {
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var ruleResults: js.UndefOr[StringDictionary[Groups]] = js.native
+  var ruleResults: js.UndefOr[StringDictionary[Groups]] = js.undefined
 }
 object RuleResults {
   

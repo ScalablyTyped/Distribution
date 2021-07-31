@@ -4,18 +4,16 @@ import typings.awsSdkClientGlacierNode.typesCsvinputMod.CSVInput
 import typings.awsSdkClientGlacierNode.typesCsvinputMod.UnmarshalledCSVInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInputSerializationMod {
   
-  @js.native
   trait InputSerialization extends StObject {
     
     /**
       * <p>Describes the serialization of a CSV-encoded object.</p>
       */
-    var csv: js.UndefOr[CSVInput] = js.native
+    var csv: js.UndefOr[CSVInput] = js.undefined
   }
   object InputSerialization {
     
@@ -36,14 +34,15 @@ object typesInputSerializationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledInputSerialization extends InputSerialization {
+  trait UnmarshalledInputSerialization
+    extends StObject
+       with InputSerialization {
     
     /**
       * <p>Describes the serialization of a CSV-encoded object.</p>
       */
     @JSName("csv")
-    var csv_UnmarshalledInputSerialization: js.UndefOr[UnmarshalledCSVInput] = js.native
+    var csv_UnmarshalledInputSerialization: js.UndefOr[UnmarshalledCSVInput] = js.undefined
   }
   object UnmarshalledInputSerialization {
     

@@ -2,17 +2,15 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IParentElement extends StObject {
   
-  def addElement(element: IElement, index: Double): js.Any = js.native
+  def addElement(element: IElement, index: Double): js.Any
   
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
-  def removeElement(element: IElement): Boolean = js.native
+  def removeElement(element: IElement): Boolean
 }
 object IParentElement {
   

@@ -6,7 +6,6 @@ import typings.wordpressComponents.menuItemsChoiceMod.MenuItemsChoice.Props
 import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemsChoiceMod {
@@ -25,24 +24,23 @@ object menuItemsChoiceMod {
   
   object MenuItemsChoice {
     
-    @js.native
     trait Choice extends StObject {
       
       /**
         * Human-readable label for choice.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * Optional keyboard sequence to trigger choice with keyboard shortcut
         * (e.g. `ctrl+s`).
         */
-      var shortcut: js.UndefOr[ShortcutType] = js.native
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
       /**
         * Unique value for choice.
         */
-      var value: String = js.native
+      var value: String
     }
     object Choice {
       
@@ -69,25 +67,24 @@ object menuItemsChoiceMod {
       }
     }
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Array of choices.
         */
-      var choices: js.Array[Choice] = js.native
+      var choices: js.Array[Choice]
       
       /**
         * Callback function to be called with the selected choice when user
         * selects a new choice.
         */
-      def onSelect(value: String): Unit = js.native
+      def onSelect(value: String): Unit
       
       /**
         * Value of currently selected choice (should match a `value` property
         * from a choice in `choices`).
         */
-      var value: String = js.native
+      var value: String
     }
     object Props {
       

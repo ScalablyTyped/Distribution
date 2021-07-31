@@ -8,7 +8,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMapGuideMod {
@@ -53,32 +52,31 @@ object imageMapGuideMod {
     def updateParams(params: js.Any): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var displayDpi: js.UndefOr[Double] = js.native
+    var displayDpi: js.UndefOr[Double] = js.undefined
     
-    var hidpi: js.UndefOr[Boolean] = js.native
+    var hidpi: js.UndefOr[Boolean] = js.undefined
     
-    var imageLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var imageLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var metersPerUnit: js.UndefOr[Double] = js.native
+    var metersPerUnit: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var resolutions: js.UndefOr[js.Array[Double]] = js.native
+    var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var useOverlay: js.UndefOr[Boolean] = js.native
+    var useOverlay: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

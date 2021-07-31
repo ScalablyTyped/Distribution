@@ -2,42 +2,38 @@ package typings.reactSelect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accessibilityMod {
   
-  @JSImport("react-select/src/accessibility", "instructionsAriaMessage")
+  @JSImport("react-select/src/accessibility", JSImport.Namespace)
   @js.native
-  def instructionsAriaMessage(event: js.Any): String = js.native
-  @JSImport("react-select/src/accessibility", "instructionsAriaMessage")
-  @js.native
-  def instructionsAriaMessage(event: js.Any, context: InstructionsContext): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/accessibility", "optionFocusAriaMessage")
-  @js.native
-  def optionFocusAriaMessage(hasFocusedOptionGetOptionLabelOptions: js.Any): String = js.native
+  @scala.inline
+  def instructionsAriaMessage(event: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("instructionsAriaMessage")(event.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def instructionsAriaMessage(event: js.Any, context: InstructionsContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("instructionsAriaMessage")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-select/src/accessibility", "resultsAriaMessage")
-  @js.native
-  def resultsAriaMessage(hasInputValueScreenReaderMessage: js.Any): String = js.native
+  @scala.inline
+  def optionFocusAriaMessage(hasFocusedOptionGetOptionLabelOptions: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionFocusAriaMessage")(hasFocusedOptionGetOptionLabelOptions.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-select/src/accessibility", "valueEventAriaMessage")
-  @js.native
-  def valueEventAriaMessage(event: js.Any, context: ValueEventContext): String = js.native
+  @scala.inline
+  def resultsAriaMessage(hasInputValueScreenReaderMessage: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resultsAriaMessage")(hasInputValueScreenReaderMessage.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-select/src/accessibility", "valueFocusAriaMessage")
-  @js.native
-  def valueFocusAriaMessage(hasFocusedValueGetOptionLabelSelectValue: js.Any): String = js.native
+  @scala.inline
+  def valueEventAriaMessage(event: js.Any, context: ValueEventContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueEventAriaMessage")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def valueFocusAriaMessage(hasFocusedValueGetOptionLabelSelectValue: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("valueFocusAriaMessage")(hasFocusedValueGetOptionLabelSelectValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait InstructionsContext extends StObject {
     
-    var isMulti: js.UndefOr[Boolean] = js.native
+    var isMulti: js.UndefOr[Boolean] = js.undefined
     
-    var isSearchable: js.UndefOr[Boolean] = js.native
+    var isSearchable: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
   }
   object InstructionsContext {
     
@@ -70,10 +66,9 @@ object accessibilityMod {
     }
   }
   
-  @js.native
   trait ValueEventContext extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object ValueEventContext {
     

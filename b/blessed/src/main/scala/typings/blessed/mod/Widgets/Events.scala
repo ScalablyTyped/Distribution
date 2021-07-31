@@ -3,25 +3,23 @@ package typings.blessed.mod.Widgets
 import typings.blessed.mod.Widgets.Types.TMouseAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
   
-  @js.native
   trait IKeyEventArg extends StObject {
     
-    var ctrl: Boolean = js.native
+    var ctrl: Boolean
     
-    var full: String = js.native
+    var full: String
     
-    var meta: Boolean = js.native
+    var meta: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var sequence: String = js.native
+    var sequence: String
     
-    var shift: Boolean = js.native
+    var shift: Boolean
   }
   object IKeyEventArg {
     
@@ -54,14 +52,13 @@ object Events {
     }
   }
   
-  @js.native
   trait IMouseEventArg extends StObject {
     
-    var action: TMouseAction = js.native
+    var action: TMouseAction
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IMouseEventArg {
     

@@ -2,12 +2,14 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorIsEmptyMod {
   
-  @JSImport("rxjs-compat/operator/isEmpty", "isEmpty")
+  @JSImport("rxjs-compat/operator/isEmpty", JSImport.Namespace)
   @js.native
-  def isEmpty[T](): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isEmpty[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")().asInstanceOf[js.Any]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteKeyPairRequest extends StObject {
   
   /**
     * The name of the key pair to delete.
     */
-  var keyPairName: ResourceName = js.native
+  var keyPairName: ResourceName
 }
 object DeleteKeyPairRequest {
   

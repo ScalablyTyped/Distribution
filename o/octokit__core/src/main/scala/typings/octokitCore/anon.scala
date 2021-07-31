@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    def debug(message: String): js.Any = js.native
+    def debug(message: String): js.Any
     
-    def error(message: String): js.Any = js.native
+    def error(message: String): js.Any
     
-    def info(message: String): js.Any = js.native
+    def info(message: String): js.Any
     
-    def warn(message: String): js.Any = js.native
+    def warn(message: String): js.Any
   }
   object Debug {
     
@@ -47,7 +45,8 @@ object anon {
   
   @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     def debug(message: String): js.Any = js.native
     def debug(message: String, additionalInfo: js.Object): js.Any = js.native
@@ -64,24 +63,25 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* args (repeated) */ js.Any, StringDictionary[js.Any]]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, StringDictionary[js.Any]]
   
   @js.native
   trait InstantiablePlugins
-    extends Instantiable1[/* args (repeated) */ js.Any, StringDictionary[js.Any]] {
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, StringDictionary[js.Any]] {
     
-    var plugins: js.Array[_] = js.native
+    var plugins: js.Array[js.Any] = js.native
   }
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.Array[_] = js.native
+    var plugins: js.Array[js.Any]
   }
   object Plugins {
     
     @scala.inline
-    def apply(plugins: js.Array[_]): Plugins = {
+    def apply(plugins: js.Array[js.Any]): Plugins = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugins]
     }
@@ -90,7 +90,7 @@ object anon {
     implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))

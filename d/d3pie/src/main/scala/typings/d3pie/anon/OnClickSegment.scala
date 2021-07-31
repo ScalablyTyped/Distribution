@@ -2,19 +2,17 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClickSegment extends StObject {
   
-  var onClickSegment: js.UndefOr[js.Function] = js.native
+  var onClickSegment: js.UndefOr[js.Function] = js.undefined
   
-  var onMouseoutSegment: js.UndefOr[js.Function] = js.native
+  var onMouseoutSegment: js.UndefOr[js.Function] = js.undefined
   
-  var onMouseoverSegment: js.UndefOr[js.Function] = js.native
+  var onMouseoverSegment: js.UndefOr[js.Function] = js.undefined
   
-  var onload: js.UndefOr[js.Function] = js.native
+  var onload: js.UndefOr[js.Function] = js.undefined
 }
 object OnClickSegment {
   

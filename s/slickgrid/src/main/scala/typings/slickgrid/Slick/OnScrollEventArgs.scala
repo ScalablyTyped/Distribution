@@ -2,15 +2,15 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnScrollEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnScrollEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object OnScrollEventArgs {
   
@@ -21,7 +21,7 @@ object OnScrollEventArgs {
   }
   
   @scala.inline
-  implicit class OnScrollEventArgsMutableBuilder[Self <: OnScrollEventArgs[_], T /* <: SlickData */] (val x: Self with OnScrollEventArgs[T]) extends AnyVal {
+  implicit class OnScrollEventArgsMutableBuilder[Self <: OnScrollEventArgs[?], T /* <: SlickData */] (val x: Self & OnScrollEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])

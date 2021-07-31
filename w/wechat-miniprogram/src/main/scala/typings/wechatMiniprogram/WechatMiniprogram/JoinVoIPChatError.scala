@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinVoIPChatError extends StObject {
   
   /** 错误码
@@ -15,7 +13,7 @@ trait JoinVoIPChatError extends StObject {
     * | -1 | 当前已在房间内 |  |
     * | -2 | 录音设备被占用，可能是当前正在使用微信内语音通话或系统通话 |  |
     * | -3 | 加入会话期间退出（可能是用户主动退出，或者退后台、来电等原因），因此加入失败 |  |
-    * | -1000 | 系统错误 |  | */ var errCode: Double = js.native
+    * | -1000 | 系统错误 |  | */ var errCode: Double
   
   /** 错误信息
     *
@@ -24,7 +22,7 @@ trait JoinVoIPChatError extends StObject {
     * | -1 | 当前已在房间内 |  |
     * | -2 | 录音设备被占用，可能是当前正在使用微信内语音通话或系统通话 |  |
     * | -3 | 加入会话期间退出（可能是用户主动退出，或者退后台、来电等原因），因此加入失败 |  |
-    * | -1000 | 系统错误 |  | */ var errMsg: String = js.native
+    * | -1000 | 系统错误 |  | */ var errMsg: String
 }
 object JoinVoIPChatError {
   

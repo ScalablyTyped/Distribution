@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The name assigned to the tag that you create.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     * Contains one or more values that you assigned to the key name you create.
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

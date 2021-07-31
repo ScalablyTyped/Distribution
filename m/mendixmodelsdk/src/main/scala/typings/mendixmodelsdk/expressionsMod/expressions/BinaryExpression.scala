@@ -38,7 +38,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -91,9 +90,8 @@ object BinaryExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.create")
-  @js.native
-  def create(model: IModel): BinaryExpression = js.native
+  @scala.inline
+  def create(model: IModel): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -104,9 +102,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -117,9 +114,8 @@ object BinaryExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): BinaryExpression = js.native
+  @scala.inline
+  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -130,9 +126,8 @@ object BinaryExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): BinaryExpression = js.native
+  @scala.inline
+  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -143,9 +138,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryExpressionUnderLeft")
-  @js.native
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderLeft(container: BinaryExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -156,9 +150,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryExpressionUnderRight")
-  @js.native
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderRight(container: BinaryExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -169,9 +162,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryRequestHandlingUnderExpressionModel")
-  @js.native
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): BinaryExpression = js.native
+  @scala.inline
+  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -182,9 +174,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInChangeListActionUnderValueModel")
-  @js.native
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): BinaryExpression = js.native
+  @scala.inline
+  def createInChangeListActionUnderValueModel(container: ChangeListAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -195,9 +186,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInChangeVariableActionUnderValueModel")
-  @js.native
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): BinaryExpression = js.native
+  @scala.inline
+  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -208,9 +198,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInConditionalSettingsUnderExpressionModel")
-  @js.native
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): BinaryExpression = js.native
+  @scala.inline
+  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -221,9 +210,8 @@ object BinaryExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInConsumedODataServiceUnderTimeoutModel")
-  @js.native
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): BinaryExpression = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -234,9 +222,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCreateVariableActionUnderInitialValueModel")
-  @js.native
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): BinaryExpression = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -247,9 +234,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCustomRangeUnderLimitExpressionModel")
-  @js.native
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): BinaryExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -260,9 +246,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCustomRangeUnderOffsetExpressionModel")
-  @js.native
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): BinaryExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -273,9 +258,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
-  @js.native
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -286,9 +270,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInEndEventUnderReturnValueModel")
-  @js.native
-  def createInEndEventUnderReturnValueModel(container: EndEvent): BinaryExpression = js.native
+  @scala.inline
+  def createInEndEventUnderReturnValueModel(container: EndEvent): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -299,9 +282,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInExpressionSplitConditionUnderExpressionModel")
-  @js.native
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): BinaryExpression = js.native
+  @scala.inline
+  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -312,9 +294,8 @@ object BinaryExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInFormDataPartUnderValueModel")
-  @js.native
-  def createInFormDataPartUnderValueModel(container: FormDataPart): BinaryExpression = js.native
+  @scala.inline
+  def createInFormDataPartUnderValueModel(container: FormDataPart): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -325,9 +306,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInFunctionCallExpressionUnderArguments")
-  @js.native
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -338,9 +318,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -351,9 +330,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -364,9 +342,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -377,9 +354,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -390,9 +366,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderCustomLocationModel")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -403,9 +378,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderPassword")
-  @js.native
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -416,9 +390,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderUsername")
-  @js.native
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -429,9 +402,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpHeaderEntryUnderValueModel")
-  @js.native
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): BinaryExpression = js.native
+  @scala.inline
+  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -442,9 +414,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderCondition")
-  @js.native
-  def createInIfExpressionUnderCondition(container: IfExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderCondition(container: IfExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -455,9 +426,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderIfFalse")
-  @js.native
-  def createInIfExpressionUnderIfFalse(container: IfExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfFalse(container: IfExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -468,9 +438,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderIfTrue")
-  @js.native
-  def createInIfExpressionUnderIfTrue(container: IfExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfTrue(container: IfExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -481,9 +450,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInInspectAttributeUnderExpressionModel")
-  @js.native
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): BinaryExpression = js.native
+  @scala.inline
+  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -494,9 +462,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInLogMessageActionUnderNodeModel")
-  @js.native
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): BinaryExpression = js.native
+  @scala.inline
+  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -507,9 +474,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInMemberChangeUnderValueModel")
-  @js.native
-  def createInMemberChangeUnderValueModel(container: MemberChange): BinaryExpression = js.native
+  @scala.inline
+  def createInMemberChangeUnderValueModel(container: MemberChange): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -520,9 +486,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -533,9 +498,8 @@ object BinaryExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -546,9 +510,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInParenthesisExpressionUnderExpression")
-  @js.native
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -559,9 +522,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderHostExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -572,9 +534,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderPasswordExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -585,9 +546,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderPortExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -598,9 +558,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -611,9 +570,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderUsernameExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -624,9 +582,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInRestCallActionUnderTimeOutModel")
-  @js.native
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): BinaryExpression = js.native
+  @scala.inline
+  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -637,9 +594,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInRuleCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -650,9 +606,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInTemplateArgumentUnderExpressionModel")
-  @js.native
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): BinaryExpression = js.native
+  @scala.inline
+  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -663,9 +618,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInUnaryExpressionUnderExpression")
-  @js.native
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): BinaryExpression = js.native
+  @scala.inline
+  def createInUnaryExpressionUnderExpression(container: UnaryExpression): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -676,9 +630,8 @@ object BinaryExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWebServiceCallActionUnderTimeOutModel")
-  @js.native
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): BinaryExpression = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -689,9 +642,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
-  @js.native
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): BinaryExpression = js.native
+  @scala.inline
+  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
@@ -702,9 +654,8 @@ object BinaryExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWidgetValidationUnderExpressionModel")
-  @js.native
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): BinaryExpression = js.native
+  @scala.inline
+  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): BinaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.structureTypeName")

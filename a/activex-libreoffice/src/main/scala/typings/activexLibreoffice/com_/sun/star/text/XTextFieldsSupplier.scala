@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SpreadsheetDocument
   * @see TextDocument
   */
-@js.native
-trait XTextFieldsSupplier extends XInterface {
+trait XTextFieldsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of {@link TextFieldMaster} instances which are defined in this context (i.e. this document). */
-  val TextFieldMasters: XNameAccess = js.native
+  val TextFieldMasters: XNameAccess
   
   /** @returns the collection of {@link TextField} instances in this context (i.e. this document). */
-  val TextFields: XEnumerationAccess = js.native
+  val TextFields: XEnumerationAccess
   
   /** @returns the collection of {@link TextFieldMaster} instances which are defined in this context (i.e. this document). */
-  def getTextFieldMasters(): XNameAccess = js.native
+  def getTextFieldMasters(): XNameAccess
   
   /** @returns the collection of {@link TextField} instances in this context (i.e. this document). */
-  def getTextFields(): XEnumerationAccess = js.native
+  def getTextFields(): XEnumerationAccess
 }
 object XTextFieldsSupplier {
   

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,24 +13,23 @@ object mod {
   class ^ ()
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: String = js.native
+    var component: String
     
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var onOutClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOutClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Props {
     

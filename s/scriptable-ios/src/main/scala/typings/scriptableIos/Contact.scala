@@ -8,7 +8,6 @@ import typings.scriptableIos.Contact.SocialProfiles
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,14 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Contact.persistChanges()` to persist the changes.
   * @see https://docs.scriptable.app/contact/#-new-contact
   */
-@js.native
 trait Contact extends StObject {
   
   /**
     * _Birthday._
     * @see https://docs.scriptable.app/contact/#birthday
     */
-  var birthday: Date = js.native
+  var birthday: Date
   
   /**
     * _Dates._
@@ -33,13 +31,13 @@ trait Contact extends StObject {
     * When updating this property, you must set the entire array of dates that you would like to store on the contact. The "identifier" key is optional.
     * @see https://docs.scriptable.app/contact/#dates
     */
-  var dates: js.Array[StringDictionary[_]] = js.native
+  var dates: js.Array[StringDictionary[js.Any]]
   
   /**
     * _Name of the department associated with the contact._
     * @see https://docs.scriptable.app/contact/#departmentname
     */
-  var departmentName: String = js.native
+  var departmentName: String
   
   /**
     * _Email addresses._
@@ -59,31 +57,31 @@ trait Contact extends StObject {
     * other keys are optional.
     * @see https://docs.scriptable.app/contact/#emailaddresses
     */
-  var emailAddresses: js.Array[EmailAddresses] = js.native
+  var emailAddresses: js.Array[EmailAddresses]
   
   /**
     * _Family name._
     * @see https://docs.scriptable.app/contact/#familyname
     */
-  var familyName: String = js.native
+  var familyName: String
   
   /**
     * _Given name._
     * @see https://docs.scriptable.app/contact/#givenname
     */
-  var givenName: String = js.native
+  var givenName: String
   
   /**
     * _Uniquely identifies the contact on the device._
     * @see https://docs.scriptable.app/contact/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Profile picture._
     * @see https://docs.scriptable.app/contact/#image
     */
-  var image: Image = js.native
+  var image: Image
   
   /**
     * _Whether or not birthday is available._
@@ -91,7 +89,7 @@ trait Contact extends StObject {
     * The `birthday` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isbirthdayavailable
     */
-  var isBirthdayAvailable: Boolean = js.native
+  var isBirthdayAvailable: Boolean
   
   /**
     * _Whether or not dates are available._
@@ -99,7 +97,7 @@ trait Contact extends StObject {
     * The `date` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isdatesavailable
     */
-  var isDatesAvailable: Boolean = js.native
+  var isDatesAvailable: Boolean
   
   /**
     * _Whether or not department name is available._
@@ -107,7 +105,7 @@ trait Contact extends StObject {
     * The `departmentName` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isdepartmentnameavailable
     */
-  var isDepartmentNameAvailable: Boolean = js.native
+  var isDepartmentNameAvailable: Boolean
   
   /**
     * _Whether or not email addresses are available._
@@ -115,7 +113,7 @@ trait Contact extends StObject {
     * The `emailAddresses` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isemailaddressesavailable
     */
-  var isEmailAddressesAvailable: Boolean = js.native
+  var isEmailAddressesAvailable: Boolean
   
   /**
     * _Whether or not family name is available._
@@ -123,7 +121,7 @@ trait Contact extends StObject {
     * The `familyName` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isfamilynameavailable
     */
-  var isFamilyNameAvailable: Boolean = js.native
+  var isFamilyNameAvailable: Boolean
   
   /**
     * _Whether or not given name is available._
@@ -131,7 +129,7 @@ trait Contact extends StObject {
     * The `givenName` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isgivenameavailable
     */
-  var isGiveNameAvailable: Boolean = js.native
+  var isGiveNameAvailable: Boolean
   
   /**
     * _Whether or not image is available._
@@ -139,7 +137,7 @@ trait Contact extends StObject {
     * The `image` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isimageavailable
     */
-  var isImageAvailable: Boolean = js.native
+  var isImageAvailable: Boolean
   
   /**
     * _Whether or not job title is available._
@@ -147,7 +145,7 @@ trait Contact extends StObject {
     * The `jobTitle` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isjobtitleavailable
     */
-  var isJobTitleAvailable: Boolean = js.native
+  var isJobTitleAvailable: Boolean
   
   /**
     * _Whether or not middle name is available._
@@ -155,7 +153,7 @@ trait Contact extends StObject {
     * The `middleName` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#ismiddlenameavailable
     */
-  var isMiddleNameAvailable: Boolean = js.native
+  var isMiddleNameAvailable: Boolean
   
   /**
     * _Whether or not name prefix is available._
@@ -163,7 +161,7 @@ trait Contact extends StObject {
     * The `namePrefix` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isnameprefixavailable
     */
-  var isNamePrefixAvailable: Boolean = js.native
+  var isNamePrefixAvailable: Boolean
   
   /**
     * _Whether or not nickname is available._
@@ -171,7 +169,7 @@ trait Contact extends StObject {
     * The `nickname` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isnicknameavailable
     */
-  var isNicknameAvailable: Boolean = js.native
+  var isNicknameAvailable: Boolean
   
   /**
     * _Whether or not note is available._
@@ -179,7 +177,7 @@ trait Contact extends StObject {
     * The `note` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isnoteavailable
     */
-  var isNoteAvailable: Boolean = js.native
+  var isNoteAvailable: Boolean
   
   /**
     * _Whether or not organization name is available._
@@ -187,7 +185,7 @@ trait Contact extends StObject {
     * The `organizationName` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isorganizationnameavailable
     */
-  var isOrganizationNameAvailable: Boolean = js.native
+  var isOrganizationNameAvailable: Boolean
   
   /**
     * _Whether or not phone numbers are available._
@@ -195,7 +193,7 @@ trait Contact extends StObject {
     * The `phoneNumbers` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isphonenumbersavailable
     */
-  var isPhoneNumbersAvailable: Boolean = js.native
+  var isPhoneNumbersAvailable: Boolean
   
   /**
     * _Whether or not postal addresses are available._
@@ -203,7 +201,7 @@ trait Contact extends StObject {
     * The `postalAddresses` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#ispostaladdressesavailable
     */
-  var isPostalAddressesAvailable: Boolean = js.native
+  var isPostalAddressesAvailable: Boolean
   
   /**
     * _Whether or not social profiles are available._
@@ -211,7 +209,7 @@ trait Contact extends StObject {
     * The `socialProfiles` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#issocialprofilesavailable
     */
-  var isSocialProfilesAvailable: Boolean = js.native
+  var isSocialProfilesAvailable: Boolean
   
   /**
     * _Whether or not URL addresses are available._
@@ -219,31 +217,31 @@ trait Contact extends StObject {
     * The `urlAddresses` property may not be available if the container does not support it. In that case any value set on the property will be ignored.
     * @see https://docs.scriptable.app/contact/#isurladdressesavailable
     */
-  var isURLAddressesAvailable: Boolean = js.native
+  var isURLAddressesAvailable: Boolean
   
   /**
     * _The contacts job title._
     * @see https://docs.scriptable.app/contact/#jobtitle
     */
-  var jobTitle: String = js.native
+  var jobTitle: String
   
   /**
     * _Middle name._
     * @see https://docs.scriptable.app/contact/#middlename
     */
-  var middleName: String = js.native
+  var middleName: String
   
   /**
     * _Name prefix._
     * @see https://docs.scriptable.app/contact/#nameprefix
     */
-  var namePrefix: String = js.native
+  var namePrefix: String
   
   /**
     * _Nickname._
     * @see https://docs.scriptable.app/contact/#nickname
     */
-  var nickname: String = js.native
+  var nickname: String
   
   /**
     * _Note for the contact._
@@ -251,13 +249,13 @@ trait Contact extends StObject {
     * For security reasons, a contacts notes cannot be accessed in Siri, the Shortcuts app and in a notification.
     * @see https://docs.scriptable.app/contact/#note
     */
-  var note: String = js.native
+  var note: String
   
   /**
     * _Name of the organization associated with the contact._
     * @see https://docs.scriptable.app/contact/#organizationname
     */
-  var organizationName: String = js.native
+  var organizationName: String
   
   /**
     * _Phone numbers._
@@ -277,7 +275,7 @@ trait Contact extends StObject {
     * other keys are optional.
     * @see https://docs.scriptable.app/contact/#phonenumbers
     */
-  var phoneNumbers: js.Array[PhoneNumbers] = js.native
+  var phoneNumbers: js.Array[PhoneNumbers]
   
   /**
     * _Postal addresses._
@@ -300,7 +298,7 @@ trait Contact extends StObject {
     * When updating this property, you must set the entire array of postal addresses that you would like to store on the contact. The "identifier" key is optional.
     * @see https://docs.scriptable.app/contact/#postaladdresses
     */
-  var postalAddresses: js.Array[PostalAddresses] = js.native
+  var postalAddresses: js.Array[PostalAddresses]
   
   /**
     * _Social profiles._
@@ -323,7 +321,7 @@ trait Contact extends StObject {
     * When updating this property, you must set the entire array of social profiles that you would like to store on the contact. The "identifier" key is optional.
     * @see https://docs.scriptable.app/contact/#socialprofiles
     */
-  var socialProfiles: js.Array[SocialProfiles] = js.native
+  var socialProfiles: js.Array[SocialProfiles]
   
   /**
     * _URL addresses._
@@ -331,14 +329,14 @@ trait Contact extends StObject {
     * When updating this property, you must set the entire array of URL addresses that you would like to store on the contact. The "identifier" key is optional.
     * @see https://docs.scriptable.app/contact/#urladdresses
     */
-  var urlAddresses: js.Array[StringDictionary[String]] = js.native
+  var urlAddresses: js.Array[StringDictionary[String]]
 }
 object Contact {
   
   @scala.inline
   def apply(
     birthday: Date,
-    dates: js.Array[StringDictionary[_]],
+    dates: js.Array[StringDictionary[js.Any]],
     departmentName: String,
     emailAddresses: js.Array[EmailAddresses],
     familyName: String,
@@ -384,7 +382,7 @@ object Contact {
     def setBirthday(value: Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDates(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    def setDates(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDatesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "dates", js.Array(value :_*))
@@ -504,16 +502,15 @@ object Contact {
     def setUrlAddressesVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "urlAddresses", js.Array(value :_*))
   }
   
-  @js.native
   trait EmailAddresses extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var localizedLabel: js.UndefOr[String] = js.native
+    var localizedLabel: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object EmailAddresses {
     
@@ -549,16 +546,15 @@ object Contact {
     }
   }
   
-  @js.native
   trait PhoneNumbers extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var localizedLabel: js.UndefOr[String] = js.native
+    var localizedLabel: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object PhoneNumbers {
     
@@ -594,24 +590,23 @@ object Contact {
     }
   }
   
-  @js.native
   trait PostalAddresses extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var localizedLabel: String = js.native
+    var localizedLabel: String
     
-    var postalCode: String = js.native
+    var postalCode: String
     
-    var state: String = js.native
+    var state: String
     
-    var street: String = js.native
+    var street: String
   }
   object PostalAddresses {
     
@@ -661,22 +656,21 @@ object Contact {
     }
   }
   
-  @js.native
   trait SocialProfiles extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var localizedLabel: String = js.native
+    var localizedLabel: String
     
-    var service: String = js.native
+    var service: String
     
-    var url: String = js.native
+    var url: String
     
-    var userIdentifier: String = js.native
+    var userIdentifier: String
     
-    var username: String = js.native
+    var username: String
   }
   object SocialProfiles {
     

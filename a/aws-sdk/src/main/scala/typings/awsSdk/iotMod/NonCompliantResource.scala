@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonCompliantResource extends StObject {
   
   /**
     * Other information about the noncompliant resource.
     */
-  var additionalInfo: js.UndefOr[StringMap] = js.native
+  var additionalInfo: js.UndefOr[StringMap] = js.undefined
   
   /**
     * Information that identifies the noncompliant resource.
     */
-  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.native
+  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   
   /**
     * The type of the noncompliant resource.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object NonCompliantResource {
   

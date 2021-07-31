@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reroutes a line such that it&#39;s connected at the two closest connection
   * sites on the connected page elements.
   */
-@js.native
 trait SchemaRerouteLineRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaRerouteLineRequest extends StObject {
     * indicating it is a &quot;connector&quot; can be rerouted. The start and
     * end connections of the line must be on different page elements.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaRerouteLineRequest {
   

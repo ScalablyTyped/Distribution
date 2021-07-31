@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceIdentity extends StObject {
   
   /**
     * A description of an EC2 instance that is generated when the instance is launched and exposed to the instance via the instance metadata service in the form of a JSON representation of an object.
     */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /**
     * A signature which can be used to verify the accuracy and authenticity of the information provided in the instance identity document.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object InstanceIdentity {
   

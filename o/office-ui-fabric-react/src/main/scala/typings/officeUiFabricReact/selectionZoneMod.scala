@@ -9,7 +9,6 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionZoneMod {
@@ -150,18 +149,16 @@ object selectionZoneMod {
     @scala.inline
     def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
   }
   
-  @js.native
   trait ISelectionZone extends StObject {
     
     /**
       * Method to ignore subsequent focus.
       */
-    def ignoreNextFocus(): Unit = js.native
+    def ignoreNextFocus(): Unit
   }
   object ISelectionZone {
     
@@ -179,23 +176,24 @@ object selectionZoneMod {
     }
   }
   
-  @js.native
-  trait ISelectionZoneProps extends ClassAttributes[SelectionZone] {
+  trait ISelectionZoneProps
+    extends StObject
+       with ClassAttributes[SelectionZone] {
     
     /**
       * Additional CSS class(es) to apply to the SelectionZone.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Reference to the component interface.
       */
-    var componentRef: js.UndefOr[js.Function0[Unit]] = js.native
+    var componentRef: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If true, disables automatic selection on input elements.
       */
-    var disableAutoSelectOnInputElements: js.UndefOr[Boolean] = js.native
+    var disableAutoSelectOnInputElements: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether elements with the attribute `data-selection-touch-invoke` should be used as invocation targets
@@ -203,24 +201,24 @@ object selectionZoneMod {
       *
       * @defaultvalue false
       */
-    var enableTouchInvocationTarget: js.UndefOr[Boolean] = js.native
+    var enableTouchInvocationTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, modal selection is enabled on touch event.
       */
-    var enterModalOnTouch: js.UndefOr[Boolean] = js.native
+    var enterModalOnTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if an item is selected on focus.
       *
       * @defaultvalue true
       */
-    var isSelectedOnFocus: js.UndefOr[Boolean] = js.native
+    var isSelectedOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated No longer in use, focus is now managed by {@link FocusZone}.
       */
-    var layout: js.UndefOr[js.Object] = js.native
+    var layout: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional callback for when an
@@ -233,7 +231,7 @@ object selectionZoneMod {
           /* ev */ js.UndefOr[Event], 
           Unit | Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional callback for when an item is
@@ -246,12 +244,12 @@ object selectionZoneMod {
           /* ev */ js.UndefOr[Event], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Required {@link ISelection} instance bound to the {@link SelectionZone}.
       */
-    var selection: ISelection[IObjectWithKey] = js.native
+    var selection: ISelection[IObjectWithKey]
     
     /**
       * The mode of Selection, where the value is one of
@@ -259,12 +257,12 @@ object selectionZoneMod {
       *
       * @defaultvalue {@link SelectionMode.multiple}
       */
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
     
     /**
       * If true, selection is preserved on outer click.
       */
-    var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.native
+    var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined
   }
   object ISelectionZoneProps {
     
@@ -352,10 +350,9 @@ object selectionZoneMod {
     }
   }
   
-  @js.native
   trait ISelectionZoneState extends StObject {
     
-    var isModal: js.UndefOr[Boolean] = js.native
+    var isModal: js.UndefOr[Boolean] = js.undefined
   }
   object ISelectionZoneState {
     

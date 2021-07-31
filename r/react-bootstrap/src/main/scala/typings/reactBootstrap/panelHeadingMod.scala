@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelHeadingMod {
@@ -18,12 +17,13 @@ object panelHeadingMod {
   trait PanelHeading
     extends Component[PanelHeadingProps, js.Object, js.Any]
   
-  @js.native
-  trait PanelHeadingProps extends HTMLProps[PanelHeading] {
+  trait PanelHeadingProps
+    extends StObject
+       with HTMLProps[PanelHeading] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[String] = js.native
+    var componentClass: js.UndefOr[String] = js.undefined
   }
   object PanelHeadingProps {
     

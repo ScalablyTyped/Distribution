@@ -4,17 +4,33 @@ import typings.activexExcel.Excel.Range
 import typings.activexExcel.Excel.Worksheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShTarget extends StObject {
   
-  val Sh: Worksheet = js.native
+  val Sh: Worksheet
   
-  def Target(Address: String): Range = js.native
-  def Target(RowIndex: Double): Range = js.native
-  def Target(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def Target(Address: String): Range
+  def Target(RowIndex: Double): Range
+  def Target(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("Target")
-  val Target_Original: Range = js.native
+  val Target_Original: Range
+}
+object ShTarget {
+  
+  @scala.inline
+  def apply(Sh: Worksheet, Target: Range): ShTarget = {
+    val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShTarget]
+  }
+  
+  @scala.inline
+  implicit class ShTargetMutableBuilder[Self <: ShTarget] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+  }
 }

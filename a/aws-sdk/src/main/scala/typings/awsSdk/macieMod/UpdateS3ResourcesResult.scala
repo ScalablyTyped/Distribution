@@ -2,16 +2,14 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateS3ResourcesResult extends StObject {
   
   /**
     * The S3 resources whose classification types can't be updated. An error code and an error message are provided for each failed item. 
     */
-  var failedS3Resources: js.UndefOr[FailedS3Resources] = js.native
+  var failedS3Resources: js.UndefOr[FailedS3Resources] = js.undefined
 }
 object UpdateS3ResourcesResult {
   

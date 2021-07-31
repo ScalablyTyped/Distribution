@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterInfoStatistics extends Object {
+trait RasterInfoStatistics
+  extends StObject
+     with Object {
   
   /**
     * The average of calculated pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var avg: Double = js.native
+  var avg: Double
   
   /**
     * The maximum pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The standard deviation of calculated pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var stddev: Double = js.native
+  var stddev: Double
 }
 object RasterInfoStatistics {
   

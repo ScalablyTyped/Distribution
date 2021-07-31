@@ -21,17 +21,18 @@ import typings.webdriverJsExtender.webdriverJsExtenderStrings.tapOut
 import typings.webdriverJsExtender.webdriverJsExtenderStrings.tapOutside
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webdriver-js-extender", "extend")
+  @JSImport("webdriver-js-extender", JSImport.Namespace)
   @js.native
-  def extend(baseDriver: WebDriver): ExtendedWebDriver = js.native
-  @JSImport("webdriver-js-extender", "extend")
-  @js.native
-  def extend(baseDriver: WebDriver, fallbackGracefully: Boolean): ExtendedWebDriver = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def extend(baseDriver: WebDriver): ExtendedWebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any]).asInstanceOf[ExtendedWebDriver]
+  @scala.inline
+  def extend(baseDriver: WebDriver, fallbackGracefully: Boolean): ExtendedWebDriver = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any], fallbackGracefully.asInstanceOf[js.Any])).asInstanceOf[ExtendedWebDriver]
   
   @js.native
   trait ExtendedWebDriver extends WebDriver {
@@ -43,7 +44,7 @@ object mod {
     def getAppStrings(): js.Promise[js.Array[String]] = js.native
     def getAppStrings(language: String): js.Promise[js.Array[String]] = js.native
     
-    def getAppiumSettings(): js.Promise[StringDictionary[_]] = js.native
+    def getAppiumSettings(): js.Promise[StringDictionary[js.Any]] = js.native
     
     def getCurrentContext(): js.Promise[String] = js.native
     
@@ -58,7 +59,7 @@ object mod {
     def getScreenOrientation(): js.Promise[LANDSCAPE | PORTRAIT] = js.native
     
     def hideSoftKeyboard(): js.Promise[Unit] = js.native
-    def hideSoftKeyboard(strategy: js.UndefOr[scala.Nothing], key: String): js.Promise[Unit] = js.native
+    def hideSoftKeyboard(strategy: Unit, key: String): js.Promise[Unit] = js.native
     @JSName("hideSoftKeyboard")
     def hideSoftKeyboard_default(strategy: default): js.Promise[Unit] = js.native
     @JSName("hideSoftKeyboard")
@@ -101,7 +102,7 @@ object mod {
     
     def pullFileFromDevice(path: String): js.Promise[String] = js.native
     
-    def pullFolderFromDevice(path: String): js.Promise[_] = js.native
+    def pullFolderFromDevice(path: String): js.Promise[js.Any] = js.native
     
     def pushFileToDevice(path: String, base64Data: String): js.Promise[Unit] = js.native
     
@@ -129,96 +130,91 @@ object mod {
     def setAppiumSettings(settings: StringDictionary[js.Any]): js.Promise[Unit] = js.native
     
     def setGeolocation(): js.Promise[Unit] = js.native
-    def setGeolocation(latitude: js.UndefOr[scala.Nothing], longitude: js.UndefOr[scala.Nothing], altitude: Double): js.Promise[Unit] = js.native
-    def setGeolocation(latitude: js.UndefOr[scala.Nothing], longitude: Double): js.Promise[Unit] = js.native
-    def setGeolocation(latitude: js.UndefOr[scala.Nothing], longitude: Double, altitude: Double): js.Promise[Unit] = js.native
     def setGeolocation(latitude: Double): js.Promise[Unit] = js.native
-    def setGeolocation(latitude: Double, longitude: js.UndefOr[scala.Nothing], altitude: Double): js.Promise[Unit] = js.native
     def setGeolocation(latitude: Double, longitude: Double): js.Promise[Unit] = js.native
     def setGeolocation(latitude: Double, longitude: Double, altitude: Double): js.Promise[Unit] = js.native
+    def setGeolocation(latitude: Double, longitude: Unit, altitude: Double): js.Promise[Unit] = js.native
+    def setGeolocation(latitude: Unit, longitude: Double): js.Promise[Unit] = js.native
+    def setGeolocation(latitude: Unit, longitude: Double, altitude: Double): js.Promise[Unit] = js.native
+    def setGeolocation(latitude: Unit, longitude: Unit, altitude: Double): js.Promise[Unit] = js.native
     
     def setNetworkConnection(typeOrAirplaneMode: Boolean): js.Promise[Unit] = js.native
-    def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_0(typeOrAirplaneMode: `0`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`): js.Promise[Unit] = js.native
+    def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_1(typeOrAirplaneMode: `1`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`): js.Promise[Unit] = js.native
+    def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_2(typeOrAirplaneMode: `2`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`): js.Promise[Unit] = js.native
+    def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_3(typeOrAirplaneMode: `3`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`): js.Promise[Unit] = js.native
+    def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_4(typeOrAirplaneMode: `4`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`): js.Promise[Unit] = js.native
+    def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_5(typeOrAirplaneMode: `5`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`): js.Promise[Unit] = js.native
+    def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_6(typeOrAirplaneMode: `6`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`): js.Promise[Unit] = js.native
+    def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection_7(typeOrAirplaneMode: `7`): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Boolean): js.Promise[Unit] = js.native
     @JSName("setNetworkConnection")
     def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
+    @JSName("setNetworkConnection")
+    def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     
     def setScreenOrientation(orientation: String): js.Promise[Unit] = js.native
     
     def shakeDevice(): js.Promise[Unit] = js.native
     
     def startDeviceActivity(appPackage: String, appActivity: String): js.Promise[Unit] = js.native
-    def startDeviceActivity(
-      appPackage: String,
-      appActivity: String,
-      appWaitPackage: js.UndefOr[scala.Nothing],
-      appWaitActivity: String
-    ): js.Promise[Unit] = js.native
     def startDeviceActivity(appPackage: String, appActivity: String, appWaitPackage: String): js.Promise[Unit] = js.native
     def startDeviceActivity(appPackage: String, appActivity: String, appWaitPackage: String, appWaitActivity: String): js.Promise[Unit] = js.native
+    def startDeviceActivity(appPackage: String, appActivity: String, appWaitPackage: Unit, appWaitActivity: String): js.Promise[Unit] = js.native
     
     def switchToParentFrame(): js.Promise[Unit] = js.native
     

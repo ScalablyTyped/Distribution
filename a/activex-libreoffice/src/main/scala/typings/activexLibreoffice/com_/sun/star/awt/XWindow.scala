@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,59 +13,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A window is a rectangular region on an output device with its own position, size, and internal coordinate system. A window is used for displaying
   * data. In addition, the window receives events from the user.
   */
-@js.native
-trait XWindow extends XComponent {
+trait XWindow
+  extends StObject
+     with XComponent {
   
   /** returns the outer bounds of the window. */
-  val PosSize: Rectangle = js.native
+  val PosSize: Rectangle
   
   /** adds a focus listener to the object. */
-  def addFocusListener(xListener: XFocusListener): Unit = js.native
+  def addFocusListener(xListener: XFocusListener): Unit
   
   /** adds a key listener to the object. */
-  def addKeyListener(xListener: XKeyListener): Unit = js.native
+  def addKeyListener(xListener: XKeyListener): Unit
   
   /** adds a mouse listener to the object. */
-  def addMouseListener(xListener: XMouseListener): Unit = js.native
+  def addMouseListener(xListener: XMouseListener): Unit
   
   /** adds a mouse motion listener to the object. */
-  def addMouseMotionListener(xListener: XMouseMotionListener): Unit = js.native
+  def addMouseMotionListener(xListener: XMouseMotionListener): Unit
   
   /** adds a paint listener to the object. */
-  def addPaintListener(xListener: XPaintListener): Unit = js.native
+  def addPaintListener(xListener: XPaintListener): Unit
   
   /**
     * adds a window listener to the object.
     * @param xListener the listener to add. If this listener also supports the {@link XWindowListener2} interface, it will receive the additional events decla
     */
-  def addWindowListener(xListener: XWindowListener): Unit = js.native
+  def addWindowListener(xListener: XWindowListener): Unit
   
   /** returns the outer bounds of the window. */
-  def getPosSize(): Rectangle = js.native
+  def getPosSize(): Rectangle
   
   /** removes the specified focus listener from the listener list. */
-  def removeFocusListener(xListener: XFocusListener): Unit = js.native
+  def removeFocusListener(xListener: XFocusListener): Unit
   
   /** removes the specified key listener from the listener list. */
-  def removeKeyListener(xListener: XKeyListener): Unit = js.native
+  def removeKeyListener(xListener: XKeyListener): Unit
   
   /** removes the specified mouse listener from the listener list. */
-  def removeMouseListener(xListener: XMouseListener): Unit = js.native
+  def removeMouseListener(xListener: XMouseListener): Unit
   
   /** removes the specified mouse motion listener from the listener list. */
-  def removeMouseMotionListener(xListener: XMouseMotionListener): Unit = js.native
+  def removeMouseMotionListener(xListener: XMouseMotionListener): Unit
   
   /** removes the specified paint listener from the listener list. */
-  def removePaintListener(xListener: XPaintListener): Unit = js.native
+  def removePaintListener(xListener: XPaintListener): Unit
   
   /** removes the specified window listener from the listener list. */
-  def removeWindowListener(xListener: XWindowListener): Unit = js.native
+  def removeWindowListener(xListener: XWindowListener): Unit
   
   /** enables or disables the window depending on the parameter. */
-  def setEnable(Enable: Boolean): Unit = js.native
+  def setEnable(Enable: Boolean): Unit
   
   /** sets the focus to the window. */
-  def setFocus(): Unit = js.native
+  def setFocus(): Unit
   
   /**
     * sets the outer bounds of the window.
@@ -76,10 +76,10 @@ trait XWindow extends XComponent {
     * @param Height the height of the window.
     * @param Flags Flags are of type {@link PosSize} and specify, which parameters are taken into account when setting the outer bounds of the window.
     */
-  def setPosSize(X: Double, Y: Double, Width: Double, Height: Double, Flags: Double): Unit = js.native
+  def setPosSize(X: Double, Y: Double, Width: Double, Height: Double, Flags: Double): Unit
   
   /** shows or hides the window depending on the parameter. */
-  def setVisible(Visible: Boolean): Unit = js.native
+  def setVisible(Visible: Boolean): Unit
 }
 object XWindow {
   

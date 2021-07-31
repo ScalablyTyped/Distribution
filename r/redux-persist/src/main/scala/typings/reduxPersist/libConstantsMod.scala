@@ -9,7 +9,6 @@ import typings.reduxPersist.reduxPersistStrings.persistSlashREGISTER
 import typings.reduxPersist.reduxPersistStrings.persistSlashREHYDRATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libConstantsMod {

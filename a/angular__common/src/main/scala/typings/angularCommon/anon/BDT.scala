@@ -2,119 +2,117 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BDT extends StObject {
   
-  var ARS: js.Array[scala.Nothing] = js.native
+  var ARS: js.Array[scala.Nothing]
   
-  var AUD: js.Array[scala.Nothing] = js.native
+  var AUD: js.Array[scala.Nothing]
   
-  var BBD: js.Array[scala.Nothing] = js.native
+  var BBD: js.Array[scala.Nothing]
   
-  var BDT: js.Array[scala.Nothing] = js.native
+  var BDT: js.Array[scala.Nothing]
   
-  var BGN: js.Array[String] = js.native
+  var BGN: js.Array[String]
   
-  var BMD: js.Array[scala.Nothing] = js.native
+  var BMD: js.Array[scala.Nothing]
   
-  var BND: js.Array[scala.Nothing] = js.native
+  var BND: js.Array[scala.Nothing]
   
-  var BRL: js.Array[scala.Nothing] = js.native
+  var BRL: js.Array[scala.Nothing]
   
-  var BSD: js.Array[scala.Nothing] = js.native
+  var BSD: js.Array[scala.Nothing]
   
-  var BYN: js.Array[scala.Nothing] = js.native
+  var BYN: js.Array[scala.Nothing]
   
-  var BZD: js.Array[scala.Nothing] = js.native
+  var BZD: js.Array[scala.Nothing]
   
-  var CAD: js.Array[scala.Nothing] = js.native
+  var CAD: js.Array[scala.Nothing]
   
-  var CLP: js.Array[scala.Nothing] = js.native
+  var CLP: js.Array[scala.Nothing]
   
-  var CNY: js.Array[scala.Nothing] = js.native
+  var CNY: js.Array[scala.Nothing]
   
-  var COP: js.Array[scala.Nothing] = js.native
+  var COP: js.Array[scala.Nothing]
   
-  var CRC: js.Array[scala.Nothing] = js.native
+  var CRC: js.Array[scala.Nothing]
   
-  var CUP: js.Array[scala.Nothing] = js.native
+  var CUP: js.Array[scala.Nothing]
   
-  var DOP: js.Array[scala.Nothing] = js.native
+  var DOP: js.Array[scala.Nothing]
   
-  var FJD: js.Array[scala.Nothing] = js.native
+  var FJD: js.Array[scala.Nothing]
   
-  var FKP: js.Array[scala.Nothing] = js.native
+  var FKP: js.Array[scala.Nothing]
   
-  var GBP: js.Array[js.UndefOr[String]] = js.native
+  var GBP: js.Array[js.UndefOr[String]]
   
-  var GIP: js.Array[scala.Nothing] = js.native
+  var GIP: js.Array[scala.Nothing]
   
-  var GYD: js.Array[scala.Nothing] = js.native
+  var GYD: js.Array[scala.Nothing]
   
-  var HKD: js.Array[scala.Nothing] = js.native
+  var HKD: js.Array[scala.Nothing]
   
-  var ILS: js.Array[scala.Nothing] = js.native
+  var ILS: js.Array[scala.Nothing]
   
-  var INR: js.Array[scala.Nothing] = js.native
+  var INR: js.Array[scala.Nothing]
   
-  var JMD: js.Array[scala.Nothing] = js.native
+  var JMD: js.Array[scala.Nothing]
   
-  var JPY: js.Array[js.UndefOr[String]] = js.native
+  var JPY: js.Array[js.UndefOr[String]]
   
-  var KHR: js.Array[scala.Nothing] = js.native
+  var KHR: js.Array[scala.Nothing]
   
-  var KRW: js.Array[scala.Nothing] = js.native
+  var KRW: js.Array[scala.Nothing]
   
-  var KYD: js.Array[scala.Nothing] = js.native
+  var KYD: js.Array[scala.Nothing]
   
-  var KZT: js.Array[scala.Nothing] = js.native
+  var KZT: js.Array[scala.Nothing]
   
-  var LAK: js.Array[scala.Nothing] = js.native
+  var LAK: js.Array[scala.Nothing]
   
-  var LRD: js.Array[scala.Nothing] = js.native
+  var LRD: js.Array[scala.Nothing]
   
-  var MNT: js.Array[scala.Nothing] = js.native
+  var MNT: js.Array[scala.Nothing]
   
-  var MXN: js.Array[scala.Nothing] = js.native
+  var MXN: js.Array[scala.Nothing]
   
-  var NAD: js.Array[scala.Nothing] = js.native
+  var NAD: js.Array[scala.Nothing]
   
-  var NGN: js.Array[scala.Nothing] = js.native
+  var NGN: js.Array[scala.Nothing]
   
-  var NZD: js.Array[scala.Nothing] = js.native
+  var NZD: js.Array[scala.Nothing]
   
-  var PHP: js.Array[scala.Nothing] = js.native
+  var PHP: js.Array[scala.Nothing]
   
-  var PYG: js.Array[scala.Nothing] = js.native
+  var PYG: js.Array[scala.Nothing]
   
-  var RON: js.Array[scala.Nothing] = js.native
+  var RON: js.Array[scala.Nothing]
   
-  var SBD: js.Array[scala.Nothing] = js.native
+  var SBD: js.Array[scala.Nothing]
   
-  var SGD: js.Array[scala.Nothing] = js.native
+  var SGD: js.Array[scala.Nothing]
   
-  var SRD: js.Array[scala.Nothing] = js.native
+  var SRD: js.Array[scala.Nothing]
   
-  var SSP: js.Array[scala.Nothing] = js.native
+  var SSP: js.Array[scala.Nothing]
   
-  var TRY: js.Array[scala.Nothing] = js.native
+  var TRY: js.Array[scala.Nothing]
   
-  var TTD: js.Array[scala.Nothing] = js.native
+  var TTD: js.Array[scala.Nothing]
   
-  var TWD: js.Array[scala.Nothing] = js.native
+  var TWD: js.Array[scala.Nothing]
   
-  var UAH: js.Array[scala.Nothing] = js.native
+  var UAH: js.Array[scala.Nothing]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var UYU: js.Array[scala.Nothing] = js.native
+  var UYU: js.Array[scala.Nothing]
   
-  var VND: js.Array[scala.Nothing] = js.native
+  var VND: js.Array[scala.Nothing]
   
-  var XCD: js.Array[js.UndefOr[String]] = js.native
+  var XCD: js.Array[js.UndefOr[String]]
 }
 object BDT {
   

@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.locating
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocateViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented
      with GeolocationPositioning
      with GoTo {
@@ -29,7 +29,7 @@ trait LocateViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#locate)
     */
-  def locate(): js.Promise[_] = js.native
+  def locate(): js.Promise[js.Any] = js.native
   
   @JSName("on")
   def on_locateerror(name: `locate-error`, eventHandler: LocateViewModelLocateErrorEventHandler): IHandle = js.native

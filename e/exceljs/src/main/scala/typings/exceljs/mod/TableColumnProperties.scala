@@ -12,39 +12,37 @@ import typings.exceljs.exceljsStrings.stdDev
 import typings.exceljs.exceljsStrings.sum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumnProperties extends StObject {
   
   /**
   	  * Switches the filter control in the header
   	  * @default false
   	  */
-  var filterButton: js.UndefOr[Boolean] = js.native
+  var filterButton: js.UndefOr[Boolean] = js.undefined
   
   /**
   	  * The name of the column, also used in the header
   	  */
-  var name: String = js.native
+  var name: String
   
   /**
   	  * Optional formula for custom functions
   	  */
-  var totalsRowFormula: js.UndefOr[String] = js.native
+  var totalsRowFormula: js.UndefOr[String] = js.undefined
   
   /**
   	  * Name of the totals function
   	  * @default 'none'
   	  */
-  var totalsRowFunction: js.UndefOr[none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom] = js.native
+  var totalsRowFunction: js.UndefOr[none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom] = js.undefined
   
   /**
   	  * Label to describe the totals row (first column)
   	  * @default 'Total'
   	  */
-  var totalsRowLabel: js.UndefOr[String] = js.native
+  var totalsRowLabel: js.UndefOr[String] = js.undefined
 }
 object TableColumnProperties {
   

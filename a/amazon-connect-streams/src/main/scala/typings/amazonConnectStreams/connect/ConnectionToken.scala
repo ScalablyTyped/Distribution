@@ -3,13 +3,11 @@ package typings.amazonConnectStreams.connect
 import typings.amazonConnectStreams.anon.Expiry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionToken extends StObject {
   
-  val chatTokenTransport: Expiry = js.native
+  val chatTokenTransport: Expiry
 }
 object ConnectionToken {
   

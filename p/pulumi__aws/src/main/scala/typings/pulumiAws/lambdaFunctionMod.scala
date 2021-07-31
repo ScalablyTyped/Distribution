@@ -16,7 +16,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaFunctionMod {
@@ -181,6 +180,10 @@ object lambdaFunctionMod {
   /* static members */
   object Function {
     
+    @JSImport("@pulumi/aws/lambda/function", "Function")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Function resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -190,137 +193,131 @@ object lambdaFunctionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Function = js.native
-    @JSImport("@pulumi/aws/lambda/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Function = js.native
-    @JSImport("@pulumi/aws/lambda/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionState): Function = js.native
-    @JSImport("@pulumi/aws/lambda/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Returns true if the given object is an instance of Function.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/function", "Function.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean]
   }
   
-  @js.native
   trait FunctionArgs extends StObject {
     
     /**
       * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
       */
-    val code: js.UndefOr[Input[Archive]] = js.native
+    val code: js.UndefOr[Input[Archive]] = js.undefined
     
     /**
       * Nested block to configure the function's *dead letter queue*. See details below.
       */
-    val deadLetterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]] = js.native
+    val deadLetterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]] = js.undefined
     
     /**
       * Description of what your Lambda Function does.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Lambda environment's configuration settings. Fields documented below.
       */
-    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]] = js.native
+    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]] = js.undefined
     
     /**
       * The connection settings for an EFS file system. Fields documented below. Before creating or updating Lambda functions with `fileSystemConfig`, EFS mount targets much be in available lifecycle state. Use `dependsOn` to explicitly declare this dependency. See [Using Amazon EFS with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-efs.html).
       */
-    val fileSystemConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]] = js.native
+    val fileSystemConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]] = js.undefined
     
     /**
       * The function [entrypoint](https://docs.aws.amazon.com/lambda/latest/dg/walkthrough-custom-events-create-test-function.html) in your code.
       */
-    val handler: Input[String] = js.native
+    val handler: Input[String]
     
     /**
       * Amazon Resource Name (ARN) of the AWS Key Management Service (KMS) key that is used to encrypt environment variables. If this configuration is not provided when environment variables are in use, AWS Lambda uses a default service key. If this configuration is provided when environment variables are not in use, the AWS Lambda API does not save this configuration and this provider will show a perpetual difference of adding the key. To fix the perpetual difference, remove this configuration.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
       */
-    val layers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val layers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
       */
-    val memorySize: js.UndefOr[Input[Double]] = js.native
+    val memorySize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A unique name for your Lambda Function.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
       */
-    val publish: js.UndefOr[Input[Boolean]] = js.native
+    val publish: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency](https://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html)
       */
-    val reservedConcurrentExecutions: js.UndefOr[Input[Double]] = js.native
+    val reservedConcurrentExecutions: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html) for more details.
       */
-    val role: Input[ARN] = js.native
+    val role: Input[ARN]
     
     /**
       * See [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html#SSS-CreateFunction-request-Runtime) for valid values.
       */
-    val runtime: Input[String] = js.native
+    val runtime: Input[String]
     
     /**
       * The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3Key: js.UndefOr[Input[String]] = js.native
+    val s3Key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object version containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3ObjectVersion: js.UndefOr[Input[String]] = js.native
+    val s3ObjectVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3Key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
       */
-    val sourceCodeHash: js.UndefOr[Input[String]] = js.native
+    val sourceCodeHash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A mapping of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
-    val tracingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]] = js.native
+    val tracingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]] = js.undefined
     
     /**
       * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC](http://docs.aws.amazon.com/lambda/latest/dg/vpc.html)
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]] = js.undefined
   }
   object FunctionArgs {
     
@@ -455,146 +452,145 @@ object lambdaFunctionMod {
     }
   }
   
-  @js.native
   trait FunctionState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon EFS Access Point that provides access to the file system.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
       */
-    val code: js.UndefOr[Input[Archive]] = js.native
+    val code: js.UndefOr[Input[Archive]] = js.undefined
     
     /**
       * Nested block to configure the function's *dead letter queue*. See details below.
       */
-    val deadLetterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]] = js.native
+    val deadLetterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]] = js.undefined
     
     /**
       * Description of what your Lambda Function does.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Lambda environment's configuration settings. Fields documented below.
       */
-    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]] = js.native
+    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]] = js.undefined
     
     /**
       * The connection settings for an EFS file system. Fields documented below. Before creating or updating Lambda functions with `fileSystemConfig`, EFS mount targets much be in available lifecycle state. Use `dependsOn` to explicitly declare this dependency. See [Using Amazon EFS with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-efs.html).
       */
-    val fileSystemConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]] = js.native
+    val fileSystemConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]] = js.undefined
     
     /**
       * The function [entrypoint](https://docs.aws.amazon.com/lambda/latest/dg/walkthrough-custom-events-create-test-function.html) in your code.
       */
-    val handler: js.UndefOr[Input[String]] = js.native
+    val handler: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN to be used for invoking Lambda Function from API Gateway - to be used in `aws.apigateway.Integration`'s `uri`
       */
-    val invokeArn: js.UndefOr[Input[String]] = js.native
+    val invokeArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the AWS Key Management Service (KMS) key that is used to encrypt environment variables. If this configuration is not provided when environment variables are in use, AWS Lambda uses a default service key. If this configuration is provided when environment variables are not in use, the AWS Lambda API does not save this configuration and this provider will show a perpetual difference of adding the key. To fix the perpetual difference, remove this configuration.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date this resource was last modified.
       */
-    val lastModified: js.UndefOr[Input[String]] = js.native
+    val lastModified: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
       */
-    val layers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val layers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
       */
-    val memorySize: js.UndefOr[Input[Double]] = js.native
+    val memorySize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A unique name for your Lambda Function.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
       */
-    val publish: js.UndefOr[Input[Boolean]] = js.native
+    val publish: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) identifying your Lambda Function Version
       * (if versioning is enabled via `publish = true`).
       */
-    val qualifiedArn: js.UndefOr[Input[String]] = js.native
+    val qualifiedArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency](https://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html)
       */
-    val reservedConcurrentExecutions: js.UndefOr[Input[Double]] = js.native
+    val reservedConcurrentExecutions: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html) for more details.
       */
-    val role: js.UndefOr[Input[ARN]] = js.native
+    val role: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * See [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html#SSS-CreateFunction-request-Runtime) for valid values.
       */
-    val runtime: js.UndefOr[Input[String]] = js.native
+    val runtime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3Key: js.UndefOr[Input[String]] = js.native
+    val s3Key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object version containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3ObjectVersion: js.UndefOr[Input[String]] = js.native
+    val s3ObjectVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3Key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
       */
-    val sourceCodeHash: js.UndefOr[Input[String]] = js.native
+    val sourceCodeHash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size in bytes of the function .zip file.
       */
-    val sourceCodeSize: js.UndefOr[Input[Double]] = js.native
+    val sourceCodeSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A mapping of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
-    val tracingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]] = js.native
+    val tracingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]] = js.undefined
     
     /**
       * Latest published version of your Lambda Function.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC](http://docs.aws.amazon.com/lambda/latest/dg/vpc.html)
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]] = js.undefined
   }
   object FunctionState {
     

@@ -11,14 +11,14 @@ Promise version of glob
 | Full name          | glob-promise |
 | Keywords           | glob, promise |
 | # releases         | 0 |
-| # dependents       | 376 |
-| # downloads        | 7149653 |
+| # dependents       | 399 |
+| # downloads        | 21519407 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/ahmadnassri/glob-promise)
-- [Bugs](https://github.com/ahmadnassri/glob-promise/issues)
-- [Repository](https://github.com/ahmadnassri/glob-promise)
+- [Homepage](https://github.com/ahmadnassri/node-glob-promise)
+- [Bugs](https://github.com/ahmadnassri/node-glob-promise/issues)
+- [Repository](https://github.com/ahmadnassri/node-glob-promise)
 - [Npm](https://www.npmjs.com/package/glob-promise)
     
 

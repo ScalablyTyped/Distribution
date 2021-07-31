@@ -2,41 +2,39 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationEvent extends StObject {
   
   /**
     *  The details of the event in plain text. 
     */
-  var EventDetail: js.UndefOr[ConfigurationEventDetail] = js.native
+  var EventDetail: js.UndefOr[ConfigurationEventDetail] = js.undefined
   
   /**
     *  The name of the resource Application Insights attempted to configure. 
     */
-  var EventResourceName: js.UndefOr[ConfigurationEventResourceName] = js.native
+  var EventResourceName: js.UndefOr[ConfigurationEventResourceName] = js.undefined
   
   /**
     *  The resource type that Application Insights attempted to configure, for example, CLOUDWATCH_ALARM. 
     */
-  var EventResourceType: js.UndefOr[ConfigurationEventResourceType] = js.native
+  var EventResourceType: js.UndefOr[ConfigurationEventResourceType] = js.undefined
   
   /**
     *  The status of the configuration update event. Possible values include INFO, WARN, and ERROR. 
     */
-  var EventStatus: js.UndefOr[ConfigurationEventStatus] = js.native
+  var EventStatus: js.UndefOr[ConfigurationEventStatus] = js.undefined
   
   /**
     *  The timestamp of the event. 
     */
-  var EventTime: js.UndefOr[ConfigurationEventTime] = js.native
+  var EventTime: js.UndefOr[ConfigurationEventTime] = js.undefined
   
   /**
     *  The resource monitored by Application Insights. 
     */
-  var MonitoredResourceARN: js.UndefOr[ConfigurationEventMonitoredResourceARN] = js.native
+  var MonitoredResourceARN: js.UndefOr[ConfigurationEventMonitoredResourceARN] = js.undefined
 }
 object ConfigurationEvent {
   

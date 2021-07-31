@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
@@ -20,20 +19,19 @@ object messageMod {
     def this(props: MessageProps, context: js.Any) = this()
   }
   
-  @js.native
   trait MessageProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[js.Function1[/* props */ js.Object, _]] = js.native
+    var content: js.UndefOr[js.Function1[/* props */ js.Object, js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var severity: js.UndefOr[String] = js.native
+    var severity: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object MessageProps {
     
@@ -53,7 +51,7 @@ object messageMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setContent(value: /* props */ js.Object => _): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      def setContent(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
       @scala.inline
       def setContentUndefined: Self = StObject.set(x, "content", js.undefined)

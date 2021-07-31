@@ -2,13 +2,13 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMinorTicks extends ITicks {
+trait IMinorTicks
+  extends StObject
+     with ITicks {
   
-  var count: Double = js.native
+  var count: Double
 }
 object IMinorTicks {
   

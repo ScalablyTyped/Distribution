@@ -2,31 +2,29 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IngestEndpoint extends StObject {
   
   /**
     * The system generated unique identifier for the IngestEndpoint
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The system generated password for ingest authentication.
     */
-  var Password: js.UndefOr[string] = js.native
+  var Password: js.UndefOr[string] = js.undefined
   
   /**
     * The ingest URL to which the source stream should be sent.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
   
   /**
     * The system generated username for ingest authentication.
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object IngestEndpoint {
   

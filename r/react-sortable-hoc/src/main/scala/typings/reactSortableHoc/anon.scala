@@ -2,23 +2,21 @@ package typings.reactSortableHoc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    var cancel: js.UndefOr[js.Array[Double]] = js.native
+    var cancel: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var down: js.UndefOr[js.Array[Double]] = js.native
+    var down: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var drop: js.UndefOr[js.Array[Double]] = js.native
+    var drop: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lift: js.UndefOr[js.Array[Double]] = js.native
+    var lift: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var up: js.UndefOr[js.Array[Double]] = js.native
+    var up: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Cancel {
     
@@ -78,10 +76,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TagName extends StObject {
     
-    var tagName: String = js.native
+    var tagName: String
   }
   object TagName {
     
@@ -99,10 +96,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: TagName = js.native
+    var target: TagName
   }
   object Target {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateListenerResponse extends StObject {
   
   /**
     * Information for the updated listener.
     */
-  var Listener: js.UndefOr[typings.awsSdk.globalacceleratorMod.Listener] = js.native
+  var Listener: js.UndefOr[typings.awsSdk.globalacceleratorMod.Listener] = js.undefined
 }
 object UpdateListenerResponse {
   

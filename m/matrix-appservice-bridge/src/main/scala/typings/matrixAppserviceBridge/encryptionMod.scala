@@ -9,7 +9,6 @@ import typings.matrixAppserviceBridge.intentMod.Intent
 import typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encryptionMod {
@@ -25,14 +24,14 @@ object encryptionMod {
       membership: MembershipCache,
       asBot: AppServiceBot,
       onEvent: js.Function1[/* weakEvent */ WeakEvent, Unit],
-      onEphemeralEvent: js.UndefOr[scala.Nothing],
+      onEphemeralEvent: js.Function1[/* event */ EphemeralEvent, Unit],
       getIntent: js.Function1[/* userId */ String, Intent]
     ) = this()
     def this(
       membership: MembershipCache,
       asBot: AppServiceBot,
       onEvent: js.Function1[/* weakEvent */ WeakEvent, Unit],
-      onEphemeralEvent: js.Function1[/* event */ EphemeralEvent, Unit],
+      onEphemeralEvent: Unit,
       getIntent: js.Function1[/* userId */ String, Intent]
     ) = this()
     
@@ -93,19 +92,21 @@ object encryptionMod {
   /* static members */
   object EncryptedEventBroker {
     
-    @JSImport("matrix-appservice-bridge/lib/components/encryption", "EncryptedEventBroker.supportsLoginFlow")
+    @JSImport("matrix-appservice-bridge/lib/components/encryption", "EncryptedEventBroker")
     @js.native
-    def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsLoginFlow")(loginFlows.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeString]]
   }
   
-  @js.native
   trait ClientEncryptionSession extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var userId: String = js.native
+    var userId: String
   }
   object ClientEncryptionSession {
     
@@ -129,12 +130,11 @@ object encryptionMod {
     }
   }
   
-  @js.native
   trait ClientEncryptionStore extends StObject {
     
-    def getStoredSession(userId: String): js.Promise[ClientEncryptionSession | Null] = js.native
+    def getStoredSession(userId: String): js.Promise[ClientEncryptionSession | Null]
     
-    def setStoredSession(session: ClientEncryptionSession): js.Promise[Unit] = js.native
+    def setStoredSession(session: ClientEncryptionSession): js.Promise[Unit]
   }
   object ClientEncryptionStore {
     

@@ -3,27 +3,27 @@ package typings.onfleetNodeOnfleet
 import typings.onfleetNodeOnfleet.anon.Tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Organization", JSImport.Namespace)
   @js.native
-  class ^ () extends Organization
+  class ^ ()
+    extends StObject
+       with Organization
   
-  @js.native
   trait Delegatee extends StObject {
     
-    var country: String = js.native
+    var country: String
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var timezone: String = js.native
+    var timezone: String
   }
   object Delegatee {
     
@@ -53,26 +53,25 @@ object organizationMod {
     }
   }
   
-  @js.native
   trait OnfleetOrganization extends StObject {
     
-    var country: String = js.native
+    var country: String
     
-    var delegatees: js.Array[String] = js.native
+    var delegatees: js.Array[String]
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var image: String = js.native
+    var image: String
     
-    var name: String = js.native
+    var name: String
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var timezone: String = js.native
+    var timezone: String
   }
   object OnfleetOrganization {
     
@@ -133,6 +132,6 @@ object organizationMod {
     def get(): js.Promise[js.Array[OnfleetOrganization]] = js.native
     def get(id: String): js.Promise[OnfleetOrganization | Delegatee] = js.native
     
-    def insertTask(id: String, obj: Tasks): js.Promise[_] = js.native
+    def insertTask(id: String, obj: Tasks): js.Promise[js.Any] = js.native
   }
 }

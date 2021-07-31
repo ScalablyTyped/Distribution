@@ -5,7 +5,6 @@ import typings.googleapis.v41Mod.adsensehostV41.Adsensehost
 import typings.googleapis.v41Mod.adsensehostV41.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

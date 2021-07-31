@@ -3,33 +3,31 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acm {
   
-  @js.native
   trait CertificateDomainValidationOption extends StObject {
     
     /**
       * A domain name for which the certificate should be issued
       */
-    var domainName: js.UndefOr[Input[String]] = js.native
+    var domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DNS record to create to validate the certificate
       */
-    var resourceRecordName: js.UndefOr[Input[String]] = js.native
+    var resourceRecordName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of DNS record to create
       */
-    var resourceRecordType: js.UndefOr[Input[String]] = js.native
+    var resourceRecordType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value the DNS record needs to have
       */
-    var resourceRecordValue: js.UndefOr[Input[String]] = js.native
+    var resourceRecordValue: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateDomainValidationOption {
     
@@ -68,13 +66,12 @@ object acm {
     }
   }
   
-  @js.native
   trait CertificateOptions extends StObject {
     
     /**
       * Specifies whether certificate details should be added to a certificate transparency log. Valid values are `ENABLED` or `DISABLED`. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.
       */
-    var certificateTransparencyLoggingPreference: js.UndefOr[Input[String]] = js.native
+    var certificateTransparencyLoggingPreference: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateOptions {
     

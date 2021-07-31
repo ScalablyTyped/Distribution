@@ -4,10 +4,8 @@ import typings.reactBootstrapTable.anon.ColIndex
 import typings.reactBootstrapTable.reactBootstrapTableNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellEdit[TRow /* <: js.Object */] extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait CellEdit[TRow /* <: js.Object */] extends StObject {
       /* props */ ColIndex, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Accept a custom callback function, before cell saving, this function will be called.
@@ -50,31 +48,31 @@ trait CellEdit[TRow /* <: js.Object */] extends StObject {
       /* props */ ColIndex, 
       Boolean | `1`
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Enabling blurToEscape will result in a cell edit being cancelled when the user clicks outside the table during
     * editing.
     * Default is false.
     */
-  var blurToEscape: js.UndefOr[Boolean] = js.native
+  var blurToEscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enabling blurToSave will trigger a saving event on the cell when the input field becomes deselected. Default is false.
     * In the default condition, you need to press ENTER to save the cell.
     */
-  var blurToSave: js.UndefOr[Boolean] = js.native
+  var blurToSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Spectify which condition will trigger cell editing.(click or dbclick). Required.
     */
-  var mode: CellEditClickMode = js.native
+  var mode: CellEditClickMode
   
   /**
     * nonEditableRows tell react-bootstrap-table which rows should not be edited on all of the columns. Briefly, its a row level limitation
     * Please assign a callback function, and this function is supposed to be return an array of row keys.
     */
-  var nonEditableRows: js.UndefOr[js.Function0[js.Array[Double | String]]] = js.native
+  var nonEditableRows: js.UndefOr[js.Function0[js.Array[Double | String]]] = js.undefined
 }
 object CellEdit {
   
@@ -85,7 +83,7 @@ object CellEdit {
   }
   
   @scala.inline
-  implicit class CellEditMutableBuilder[Self <: CellEdit[_], TRow /* <: js.Object */] (val x: Self with CellEdit[TRow]) extends AnyVal {
+  implicit class CellEditMutableBuilder[Self <: CellEdit[?], TRow /* <: js.Object */] (val x: Self & CellEdit[TRow]) extends AnyVal {
     
     @scala.inline
     def setAfterSaveCell(

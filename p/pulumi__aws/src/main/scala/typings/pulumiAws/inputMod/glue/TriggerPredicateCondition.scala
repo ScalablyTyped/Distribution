@@ -3,36 +3,34 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerPredicateCondition extends StObject {
   
   /**
     * The condition crawl state. Currently, the values supported are `RUNNING`, `SUCCEEDED`, `CANCELLED`, and `FAILED`. If this is specified, `crawlerName` must also be specified. Conflicts with `state`.
     */
-  var crawlState: js.UndefOr[Input[String]] = js.native
+  var crawlState: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the crawler to watch. If this is specified, `crawlState` must also be specified. Conflicts with `jobName`.
     */
-  var crawlerName: js.UndefOr[Input[String]] = js.native
+  var crawlerName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the job to watch. If this is specified, `state` must also be specified. Conflicts with `crawlerName`.
     */
-  var jobName: js.UndefOr[Input[String]] = js.native
+  var jobName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A logical operator. Defaults to `EQUALS`.
     */
-  var logicalOperator: js.UndefOr[Input[String]] = js.native
+  var logicalOperator: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The condition job state. Currently, the values supported are `SUCCEEDED`, `STOPPED`, `TIMEOUT` and `FAILED`. If this is specified, `jobName` must also be specified. Conflicts with `crawlerState`.
     */
-  var state: js.UndefOr[Input[String]] = js.native
+  var state: js.UndefOr[Input[String]] = js.undefined
 }
 object TriggerPredicateCondition {
   

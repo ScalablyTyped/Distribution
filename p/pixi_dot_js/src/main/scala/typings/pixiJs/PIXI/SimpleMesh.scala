@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait SimpleMesh extends Mesh {
+trait SimpleMesh
+  extends StObject
+     with Mesh {
   
   /**
     * upload vertices buffer each frame

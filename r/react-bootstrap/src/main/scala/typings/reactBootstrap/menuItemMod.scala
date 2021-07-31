@@ -8,7 +8,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.reactBootstrap.mod.SelectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemMod {
@@ -22,24 +21,25 @@ object menuItemMod {
   trait MenuItem
     extends Component[MenuItemProps, js.Object, js.Any]
   
-  @js.native
-  trait MenuItemProps extends HTMLProps[MenuItem] {
+  trait MenuItemProps
+    extends StObject
+       with HTMLProps[MenuItem] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var divider: js.UndefOr[Boolean] = js.native
+    var divider: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onClick")
-    var onClick_MenuItemProps: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onClick_MenuItemProps: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_MenuItemProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_MenuItemProps: js.UndefOr[SelectCallback] = js.undefined
   }
   object MenuItemProps {
     

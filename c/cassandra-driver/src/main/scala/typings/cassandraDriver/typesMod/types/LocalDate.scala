@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.LocalDate")
@@ -28,28 +27,27 @@ class LocalDate protected () extends StObject {
 }
 object LocalDate {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalDate.fromBuffer")
+  @JSImport("cassandra-driver/lib/types", "types.LocalDate")
   @js.native
-  def fromBuffer(buffer: Buffer): LocalDate = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalDate.fromDate")
-  @js.native
-  def fromDate(date: Date): LocalDate = js.native
+  @scala.inline
+  def fromBuffer(buffer: Buffer): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalDate.fromString")
-  @js.native
-  def fromString(value: String): LocalDate = js.native
+  @scala.inline
+  def fromDate(date: Date): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalDate.now")
-  @js.native
-  def now(): LocalDate = js.native
+  @scala.inline
+  def fromString(value: String): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalDate.utcNow")
-  @js.native
-  def utcNow(): LocalDate = js.native
+  @scala.inline
+  def now(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDate]
+  
+  /* static member */
+  @scala.inline
+  def utcNow(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("utcNow")().asInstanceOf[LocalDate]
 }

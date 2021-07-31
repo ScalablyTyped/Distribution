@@ -2,26 +2,24 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Event.Event> */
-@js.native
 trait PartialEvent extends StObject {
   
-  var created_at: js.UndefOr[Double] = js.native
+  var created_at: js.UndefOr[Double] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var event_name: js.UndefOr[String] = js.native
+  var event_name: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var intercom_user_id: js.UndefOr[String] = js.native
+  var intercom_user_id: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
 }
 object PartialEvent {
   

@@ -3,15 +3,13 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SurfaceTooltip extends StObject {
   
-  var animation: js.UndefOr[Boolean | SurfaceTooltipAnimation] = js.native
+  var animation: js.UndefOr[Boolean | SurfaceTooltipAnimation] = js.undefined
   
-  var appendTo: js.UndefOr[String | JQuery] = js.native
+  var appendTo: js.UndefOr[String | JQuery] = js.undefined
 }
 object SurfaceTooltip {
   

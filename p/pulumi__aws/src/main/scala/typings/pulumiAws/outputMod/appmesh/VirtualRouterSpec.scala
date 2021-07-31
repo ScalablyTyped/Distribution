@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterSpec extends StObject {
   
   /**
     * The listeners that the virtual router is expected to receive inbound traffic from.
     * Currently only one listener is supported per virtual router.
     */
-  var listener: VirtualRouterSpecListener = js.native
+  var listener: VirtualRouterSpecListener
 }
 object VirtualRouterSpec {
   

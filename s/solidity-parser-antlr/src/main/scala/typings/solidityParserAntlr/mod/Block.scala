@@ -2,29 +2,25 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var statements: js.Array[Statement] = js.native
+  var statements: js.Array[Statement]
   
   @JSName("type")
-  var type_Block: typings.solidityParserAntlr.solidityParserAntlrStrings.Block = js.native
+  var type_Block: typings.solidityParserAntlr.solidityParserAntlrStrings.Block
 }
 object Block {
   
   @scala.inline
-  def apply(
-    statements: js.Array[Statement],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Block
-  ): Block = {
+  def apply(statements: js.Array[Statement]): Block = {
     val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Block")
     __obj.asInstanceOf[Block]
   }
   

@@ -2,26 +2,24 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRequestAccess extends StObject {
   
   /**
     * A concurrent access response.
     */
-  var concurrentAccess: js.UndefOr[SchemaConcurrentAccessRestriction] = js.native
+  var concurrentAccess: js.UndefOr[SchemaConcurrentAccessRestriction] = js.undefined
   
   /**
     * A download access response.
     */
-  var downloadAccess: js.UndefOr[SchemaDownloadAccessRestriction] = js.native
+  var downloadAccess: js.UndefOr[SchemaDownloadAccessRestriction] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaRequestAccess {
   

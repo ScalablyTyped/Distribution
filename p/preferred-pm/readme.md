@@ -10,9 +10,9 @@ Detects what package manager was used for installation
 | ------------------ | :-------------: |
 | Full name          | preferred-pm |
 | Keywords           | npm, pnpm, yarn |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 2656687 |
+| # releases         | 4 |
+| # dependents       | 11 |
+| # downloads        | 3409982 |
 | # stars            | 0 |
 
 ## Links

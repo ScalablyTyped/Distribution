@@ -2,19 +2,17 @@ package typings.lyricist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avatar extends StObject {
   
-  var medium: AvatarConfig = js.native
+  var medium: AvatarConfig
   
-  var small: AvatarConfig = js.native
+  var small: AvatarConfig
   
-  var thumb: AvatarConfig = js.native
+  var thumb: AvatarConfig
   
-  var tiny: AvatarConfig = js.native
+  var tiny: AvatarConfig
 }
 object Avatar {
   

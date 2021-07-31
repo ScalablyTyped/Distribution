@@ -3,27 +3,25 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFSoftwarePlatformType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMFilesVersion extends StObject {
   
-  var Build: Double = js.native
+  var Build: Double
   
-  def Clone(): IMFilesVersion = js.native
+  def Clone(): IMFilesVersion
   
-  def CompareTo(RightSide: IMFilesVersion): Double = js.native
+  def CompareTo(RightSide: IMFilesVersion): Double
   
-  val Display: String = js.native
+  val Display: String
   
-  var Major: Double = js.native
+  var Major: Double
   
-  var Minor: Double = js.native
+  var Minor: Double
   
-  var Patch: Double = js.native
+  var Patch: Double
   
-  var SoftwarePlatform: MFSoftwarePlatformType = js.native
+  var SoftwarePlatform: MFSoftwarePlatformType
 }
 object IMFilesVersion {
   

@@ -5,7 +5,6 @@ import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.radioControlMod.RadioControl.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioControlMod {
@@ -13,25 +12,27 @@ object radioControlMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
+    @scala.inline
+    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/components/radio-control", JSImport.Default)
     @js.native
-    def apply[T](props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object RadioControl {
     
-    @js.native
     trait Option[T] extends StObject {
       
       /**
         * The label to be shown to the user.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * The internal value compared against select and passed to `onChange`.
         */
-      var value: T = js.native
+      var value: T
     }
     object Option {
       
@@ -42,7 +43,7 @@ object radioControlMod {
       }
       
       @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option[_], T] (val x: Self with Option[T]) extends AnyVal {
+      implicit class OptionMutableBuilder[Self <: Option[?], T] (val x: Self & Option[T]) extends AnyVal {
         
         @scala.inline
         def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -53,7 +54,9 @@ object radioControlMod {
     }
     
     @js.native
-    trait Props[T] extends ControlProps {
+    trait Props[T]
+      extends StObject
+         with ControlProps {
       
       /**
         * A function that receives the value of the new option that is being

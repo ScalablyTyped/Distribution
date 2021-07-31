@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoRegionTargetingOptionDetails extends StObject {
   
   /** Output only. The display name of the geographic region (e.g., "Ontario, Canada"). */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The type of geographic region targeting. */
-  var geoRegionType: js.UndefOr[String] = js.native
+  var geoRegionType: js.UndefOr[String] = js.undefined
 }
 object GeoRegionTargetingOptionDetails {
   

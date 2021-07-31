@@ -20,7 +20,6 @@ import typings.officeJs.officeJsStrings.Tabular
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait PivotLayout extends ClientObject {
+trait PivotLayout
+  extends StObject
+     with ClientObject {
   
   /**
     *

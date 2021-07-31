@@ -3,7 +3,6 @@ package typings.devexpressWeb.global
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientCalendarCellClickEventArgs")
 @js.native
 class ASPxClientCalendarCellClickEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientCalendarCellClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientCalendarCellClickEventArgs {
   /**
     * Initializes a new instance of the ASPxClientCalendarCellClickEventArgs class.
     * @param date A DateTime object representing the clicked date cell.
     */
   def this(date: Date) = this()
+  
+  /**
+    * Gets the date that relates to the processed calendar's cell click.
+    */
+  /* CompleteClass */
+  var date: Date = js.native
 }

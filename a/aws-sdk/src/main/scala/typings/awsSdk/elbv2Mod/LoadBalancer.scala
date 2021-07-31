@@ -2,76 +2,74 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancer extends StObject {
   
   /**
     * The subnets for the load balancer.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbv2Mod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbv2Mod.AvailabilityZones] = js.undefined
   
   /**
     * The ID of the Amazon Route 53 hosted zone associated with the load balancer.
     */
-  var CanonicalHostedZoneId: js.UndefOr[typings.awsSdk.elbv2Mod.CanonicalHostedZoneId] = js.native
+  var CanonicalHostedZoneId: js.UndefOr[typings.awsSdk.elbv2Mod.CanonicalHostedZoneId] = js.undefined
   
   /**
     * The date and time the load balancer was created.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.elbv2Mod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.elbv2Mod.CreatedTime] = js.undefined
   
   /**
     * [Application Load Balancers on Outposts] The ID of the customer-owned address pool.
     */
-  var CustomerOwnedIpv4Pool: js.UndefOr[typings.awsSdk.elbv2Mod.CustomerOwnedIpv4Pool] = js.native
+  var CustomerOwnedIpv4Pool: js.UndefOr[typings.awsSdk.elbv2Mod.CustomerOwnedIpv4Pool] = js.undefined
   
   /**
     * The public DNS name of the load balancer.
     */
-  var DNSName: js.UndefOr[typings.awsSdk.elbv2Mod.DNSName] = js.native
+  var DNSName: js.UndefOr[typings.awsSdk.elbv2Mod.DNSName] = js.undefined
   
   /**
     * The type of IP addresses used by the subnets for your load balancer. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses).
     */
-  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.native
+  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArn] = js.native
+  var LoadBalancerArn: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArn] = js.undefined
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerName] = js.native
+  var LoadBalancerName: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerName] = js.undefined
   
   /**
     * The nodes of an Internet-facing load balancer have public IP addresses. The DNS name of an Internet-facing load balancer is publicly resolvable to the public IP addresses of the nodes. Therefore, Internet-facing load balancers can route requests from clients over the internet. The nodes of an internal load balancer have only private IP addresses. The DNS name of an internal load balancer is publicly resolvable to the private IP addresses of the nodes. Therefore, internal load balancers can route requests only from clients with access to the VPC for the load balancer.
     */
-  var Scheme: js.UndefOr[LoadBalancerSchemeEnum] = js.native
+  var Scheme: js.UndefOr[LoadBalancerSchemeEnum] = js.undefined
   
   /**
     * The IDs of the security groups for the load balancer.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.elbv2Mod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.elbv2Mod.SecurityGroups] = js.undefined
   
   /**
     * The state of the load balancer.
     */
-  var State: js.UndefOr[LoadBalancerState] = js.native
+  var State: js.UndefOr[LoadBalancerState] = js.undefined
   
   /**
     * The type of load balancer.
     */
-  var Type: js.UndefOr[LoadBalancerTypeEnum] = js.native
+  var Type: js.UndefOr[LoadBalancerTypeEnum] = js.undefined
   
   /**
     * The ID of the VPC for the load balancer.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.elbv2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.elbv2Mod.VpcId] = js.undefined
 }
 object LoadBalancer {
   

@@ -3,15 +3,13 @@ package typings.xrm
 import typings.xrm.XrmEnum.StageCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GetValue extends StObject {
     
-    def getValue(): StageCategory = js.native
+    def getValue(): StageCategory
   }
   object GetValue {
     

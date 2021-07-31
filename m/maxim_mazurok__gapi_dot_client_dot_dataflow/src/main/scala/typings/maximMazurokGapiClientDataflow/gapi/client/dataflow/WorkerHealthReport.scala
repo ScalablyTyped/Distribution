@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerHealthReport extends StObject {
   
   /** A message describing any unusual health reports. */
-  var msg: js.UndefOr[String] = js.native
+  var msg: js.UndefOr[String] = js.undefined
   
   /**
     * The pods running on the worker. See: http://kubernetes.io/v1.1/docs/api-reference/v1/definitions.html#_v1_pod This field is used by the worker to send the status of the indvidual
@@ -20,21 +18,21 @@ trait WorkerHealthReport extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The interval at which the worker is sending health reports. The default value of 0 should be interpreted as the field is not being explicitly set by the worker. */
-  var reportInterval: js.UndefOr[String] = js.native
+  var reportInterval: js.UndefOr[String] = js.undefined
   
   /** Whether the VM is in a permanently broken state. Broken VMs should be abandoned or deleted ASAP to avoid assigning or completing any work. */
-  var vmIsBroken: js.UndefOr[Boolean] = js.native
+  var vmIsBroken: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the VM is currently healthy. */
-  var vmIsHealthy: js.UndefOr[Boolean] = js.native
+  var vmIsHealthy: js.UndefOr[Boolean] = js.undefined
   
   /** The time the VM was booted. */
-  var vmStartupTime: js.UndefOr[String] = js.native
+  var vmStartupTime: js.UndefOr[String] = js.undefined
 }
 object WorkerHealthReport {
   
@@ -58,7 +56,7 @@ object WorkerHealthReport {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
@@ -69,7 +67,7 @@ object WorkerHealthReport {
     def setPodsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any])*
     ): Self = StObject.set(x, "pods", js.Array(value :_*))
     
     @scala.inline

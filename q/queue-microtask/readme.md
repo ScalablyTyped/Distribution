@@ -10,9 +10,9 @@ fast, tiny `queueMicrotask` shim for modern engines
 | ------------------ | :-------------: |
 | Full name          | queue-microtask |
 | Keywords           | asap, immediate, micro task, microtask, nextTick, process.nextTick, queue micro task, queue microtask, queue-microtask, queueMicrotask, setImmediate, task |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 19 |
-| # downloads        | 2367237 |
+| # downloads        | 3091022 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.gatsbyCli.anon.End
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object structuredErrorsTypesMod {
@@ -17,23 +16,31 @@ object structuredErrorsTypesMod {
   object Level extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Level with String] = js.native
+    def apply(value: String): js.UndefOr[Level & String] = js.native
     
     @js.native
-    sealed trait DEBUG extends Level
-    /* "DEBUG" */ val DEBUG: typings.gatsbyCli.structuredErrorsTypesMod.Level.DEBUG with String = js.native
+    sealed trait DEBUG
+      extends StObject
+         with Level
+    /* "DEBUG" */ val DEBUG: typings.gatsbyCli.structuredErrorsTypesMod.Level.DEBUG & String = js.native
     
     @js.native
-    sealed trait ERROR extends Level
-    /* "ERROR" */ val ERROR: typings.gatsbyCli.structuredErrorsTypesMod.Level.ERROR with String = js.native
+    sealed trait ERROR
+      extends StObject
+         with Level
+    /* "ERROR" */ val ERROR: typings.gatsbyCli.structuredErrorsTypesMod.Level.ERROR & String = js.native
     
     @js.native
-    sealed trait INFO extends Level
-    /* "INFO" */ val INFO: typings.gatsbyCli.structuredErrorsTypesMod.Level.INFO with String = js.native
+    sealed trait INFO
+      extends StObject
+         with Level
+    /* "INFO" */ val INFO: typings.gatsbyCli.structuredErrorsTypesMod.Level.INFO & String = js.native
     
     @js.native
-    sealed trait WARNING extends Level
-    /* "WARNING" */ val WARNING: typings.gatsbyCli.structuredErrorsTypesMod.Level.WARNING with String = js.native
+    sealed trait WARNING
+      extends StObject
+         with Level
+    /* "WARNING" */ val WARNING: typings.gatsbyCli.structuredErrorsTypesMod.Level.WARNING & String = js.native
   }
   
   @js.native
@@ -43,29 +50,36 @@ object structuredErrorsTypesMod {
   object Type extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Type with String] = js.native
+    def apply(value: String): js.UndefOr[Type & String] = js.native
     
     @js.native
-    sealed trait CONFIG extends Type
-    /* "CONFIG" */ val CONFIG: typings.gatsbyCli.structuredErrorsTypesMod.Type.CONFIG with String = js.native
+    sealed trait CONFIG
+      extends StObject
+         with Type
+    /* "CONFIG" */ val CONFIG: typings.gatsbyCli.structuredErrorsTypesMod.Type.CONFIG & String = js.native
     
     @js.native
-    sealed trait GRAPHQL extends Type
-    /* "GRAPHQL" */ val GRAPHQL: typings.gatsbyCli.structuredErrorsTypesMod.Type.GRAPHQL with String = js.native
+    sealed trait GRAPHQL
+      extends StObject
+         with Type
+    /* "GRAPHQL" */ val GRAPHQL: typings.gatsbyCli.structuredErrorsTypesMod.Type.GRAPHQL & String = js.native
     
     @js.native
-    sealed trait PLUGIN extends Type
-    /* "PLUGIN" */ val PLUGIN: typings.gatsbyCli.structuredErrorsTypesMod.Type.PLUGIN with String = js.native
+    sealed trait PLUGIN
+      extends StObject
+         with Type
+    /* "PLUGIN" */ val PLUGIN: typings.gatsbyCli.structuredErrorsTypesMod.Type.PLUGIN & String = js.native
     
     @js.native
-    sealed trait WEBPACK extends Type
-    /* "WEBPACK" */ val WEBPACK: typings.gatsbyCli.structuredErrorsTypesMod.Type.WEBPACK with String = js.native
+    sealed trait WEBPACK
+      extends StObject
+         with Type
+    /* "WEBPACK" */ val WEBPACK: typings.gatsbyCli.structuredErrorsTypesMod.Type.WEBPACK & String = js.native
   }
   
-  @js.native
   trait IConstructError extends StObject {
     
-    var details: Dictkey = js.native
+    var details: Dictkey
   }
   object IConstructError {
     
@@ -83,12 +97,11 @@ object structuredErrorsTypesMod {
     }
   }
   
-  @js.native
   trait ILocationPosition extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object ILocationPosition {
     
@@ -109,16 +122,15 @@ object structuredErrorsTypesMod {
     }
   }
   
-  @js.native
   trait IOptionalGraphQLInfoContext extends StObject {
     
-    var codeFrame: js.UndefOr[String] = js.native
+    var codeFrame: js.UndefOr[String] = js.undefined
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
     
-    var plugin: js.UndefOr[String] = js.native
+    var plugin: js.UndefOr[String] = js.undefined
     
-    var urlPath: js.UndefOr[String] = js.native
+    var urlPath: js.UndefOr[String] = js.undefined
   }
   object IOptionalGraphQLInfoContext {
     
@@ -157,34 +169,33 @@ object structuredErrorsTypesMod {
     }
   }
   
-  @js.native
   trait IStructuredError extends StObject {
     
     var category: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCategory * / any */ String
-      ] = js.native
+      ] = js.undefined
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var docsUrl: js.UndefOr[String] = js.native
+    var docsUrl: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String = js.native
+    var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
     
-    var location: js.UndefOr[End] = js.native
+    var location: js.UndefOr[End] = js.undefined
     
-    var stack: js.Array[IStructuredStackFrame] = js.native
+    var stack: js.Array[IStructuredStackFrame]
     
-    var text: String = js.native
+    var text: String
     
     var `type`: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String
-      ] = js.native
+      ] = js.undefined
   }
   object IStructuredError {
     
@@ -269,16 +280,15 @@ object structuredErrorsTypesMod {
     }
   }
   
-  @js.native
   trait IStructuredStackFrame extends StObject {
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
   }
   object IStructuredStackFrame {
     

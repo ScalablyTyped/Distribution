@@ -2,31 +2,29 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationRevisionsResponse extends StObject {
   
   /**
     * The unique ID that Amazon MQ generates for the configuration.
     */
-  var ConfigurationId: js.UndefOr[string] = js.native
+  var ConfigurationId: js.UndefOr[string] = js.undefined
   
   /**
     * The maximum number of configuration revisions that can be returned per page (20 by default). This value must be an integer from 5 to 100.
     */
-  var MaxResults: js.UndefOr[integer] = js.native
+  var MaxResults: js.UndefOr[integer] = js.undefined
   
   /**
     * The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The list of all revisions for the specified configuration.
     */
-  var Revisions: js.UndefOr[listOfConfigurationRevision] = js.native
+  var Revisions: js.UndefOr[listOfConfigurationRevision] = js.undefined
 }
 object ListConfigurationRevisionsResponse {
   

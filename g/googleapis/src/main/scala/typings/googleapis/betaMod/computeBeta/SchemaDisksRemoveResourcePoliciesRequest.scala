@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDisksRemoveResourcePoliciesRequest extends StObject {
   
   /**
     * Resource policies to be removed from this disk.
     */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDisksRemoveResourcePoliciesRequest {
   

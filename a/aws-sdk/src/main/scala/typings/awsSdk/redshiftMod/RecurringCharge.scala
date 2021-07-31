@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurringCharge extends StObject {
   
   /**
     * The amount charged per the period of time specified by the recurring charge frequency.
     */
-  var RecurringChargeAmount: js.UndefOr[Double] = js.native
+  var RecurringChargeAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * The frequency at which the recurring charge amount is applied.
     */
-  var RecurringChargeFrequency: js.UndefOr[String] = js.native
+  var RecurringChargeFrequency: js.UndefOr[String] = js.undefined
 }
 object RecurringCharge {
   

@@ -7,47 +7,45 @@ import typings.reactNavigationStack.reactNavigationStackStrings.float
 import typings.reactNavigationStack.reactNavigationStackStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackHeaderProps extends StObject {
   
   /**
     * Safe area insets to use in the header, e.g. to apply extra spacing for statusbar and notch.
     */
-  var insets: EdgeInsets = js.native
+  var insets: EdgeInsets
   
   /**
     * Layout of the screen.
     */
-  var layout: Layout = js.native
+  var layout: Layout
   
   /**
     * Mode of the header: `float` renders a single floating header across all screens,
     * `screen` renders separate headers for each screen.
     */
-  var mode: float | screen = js.native
+  var mode: float | screen
   
   /**
     * Navigation prop for the header.
     */
-  var navigation: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams] = js.native
+  var navigation: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]
   
   /**
     * Object representing the previous scene.
     */
-  var previous: js.UndefOr[Scene[Route[String]]] = js.native
+  var previous: js.UndefOr[Scene[Route[String]]] = js.undefined
   
   /**
     * Object representing the current scene, such as the route object and animation progress.
     */
-  var scene: Scene[Route[String]] = js.native
+  var scene: Scene[Route[String]]
   
   /**
     * Interpolated styles for various elements in the header.
     */
-  var styleInterpolator: StackHeaderStyleInterpolator = js.native
+  var styleInterpolator: StackHeaderStyleInterpolator
 }
 object StackHeaderProps {
   

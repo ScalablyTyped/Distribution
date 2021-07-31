@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEventSubscriptionResult extends StObject {
   
-  var EventSubscription: js.UndefOr[typings.awsSdk.rdsMod.EventSubscription] = js.native
+  var EventSubscription: js.UndefOr[typings.awsSdk.rdsMod.EventSubscription] = js.undefined
 }
 object DeleteEventSubscriptionResult {
   

@@ -2,22 +2,20 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionContext extends StObject {
   
   /**
     * The trigger character (a single character) that has trigger code complete.
     * Is undefined if `triggerKind !== CompletionTriggerKind.TriggerCharacter`
     */
-  var triggerCharacter: js.UndefOr[String] = js.native
+  var triggerCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * How the completion was triggered.
     */
-  var triggerKind: CompletionTriggerKind = js.native
+  var triggerKind: CompletionTriggerKind
 }
 object CompletionContext {
   

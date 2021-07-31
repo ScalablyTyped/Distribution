@@ -1,7 +1,5 @@
 package typings.winston
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.Agent
@@ -9,7 +7,6 @@ import typings.winston.anon.Bearer
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportsMod extends Shortcut {
@@ -46,11 +43,20 @@ object transportsMod extends Shortcut {
     def this(options: StreamTransportOptions) = this()
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
   trait ConsoleTransportInstance
-    extends typings.winstonTransport.mod.^
-       with Instantiable0[ConsoleTransportInstance]
-       with Instantiable1[/* options */ ConsoleTransportOptions, ConsoleTransportInstance] {
+    extends typings.winstonTransport.mod.^ {
     
     var eol: String = js.native
     
@@ -59,16 +65,17 @@ object transportsMod extends Shortcut {
     var stderrLevels: js.Array[String] = js.native
   }
   
-  @js.native
-  trait ConsoleTransportOptions extends TransportStreamOptions {
+  trait ConsoleTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var consoleWarnLevels: js.UndefOr[js.Array[String]] = js.native
+    var consoleWarnLevels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var debugStdout: js.UndefOr[Boolean] = js.native
+    var debugStdout: js.UndefOr[Boolean] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var stderrLevels: js.UndefOr[js.Array[String]] = js.native
+    var stderrLevels: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ConsoleTransportOptions {
     
@@ -113,11 +120,20 @@ object transportsMod extends Shortcut {
     }
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
   trait FileTransportInstance
-    extends typings.winstonTransport.mod.^
-       with Instantiable0[FileTransportInstance]
-       with Instantiable1[/* options */ FileTransportOptions, FileTransportInstance] {
+    extends typings.winstonTransport.mod.^ {
     
     var dirname: String = js.native
     
@@ -140,28 +156,29 @@ object transportsMod extends Shortcut {
     var zippedArchive: Boolean = js.native
   }
   
-  @js.native
-  trait FileTransportOptions extends TransportStreamOptions {
+  trait FileTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var maxFiles: js.UndefOr[Double] = js.native
+    var maxFiles: js.UndefOr[Double] = js.undefined
     
-    var maxsize: js.UndefOr[Double] = js.native
+    var maxsize: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var rotationFormat: js.UndefOr[js.Function] = js.native
+    var rotationFormat: js.UndefOr[js.Function] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
-    var tailable: js.UndefOr[Boolean] = js.native
+    var tailable: js.UndefOr[Boolean] = js.undefined
     
-    var zippedArchive: js.UndefOr[Boolean] = js.native
+    var zippedArchive: js.UndefOr[Boolean] = js.undefined
   }
   object FileTransportOptions {
     
@@ -236,11 +253,20 @@ object transportsMod extends Shortcut {
     }
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
   trait HttpTransportInstance
-    extends typings.winstonTransport.mod.^
-       with Instantiable0[HttpTransportInstance]
-       with Instantiable1[/* options */ HttpTransportOptions, HttpTransportInstance] {
+    extends typings.winstonTransport.mod.^ {
     
     var agent: js.UndefOr[Agent | Null] = js.native
     
@@ -257,22 +283,23 @@ object transportsMod extends Shortcut {
     var ssl: Boolean = js.native
   }
   
-  @js.native
-  trait HttpTransportOptions extends TransportStreamOptions {
+  trait HttpTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var auth: js.UndefOr[Bearer] = js.native
+    var auth: js.UndefOr[Bearer] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var ssl: js.UndefOr[js.Any] = js.native
+    var ssl: js.UndefOr[js.Any] = js.undefined
   }
   object HttpTransportOptions {
     
@@ -329,21 +356,31 @@ object transportsMod extends Shortcut {
     }
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
   trait StreamTransportInstance
-    extends typings.winstonTransport.mod.^
-       with Instantiable0[StreamTransportInstance]
-       with Instantiable1[/* options */ StreamTransportOptions, StreamTransportInstance] {
+    extends typings.winstonTransport.mod.^ {
     
     var eol: String = js.native
   }
   
-  @js.native
-  trait StreamTransportOptions extends TransportStreamOptions {
+  trait StreamTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var stream: WritableStream = js.native
+    var stream: WritableStream
   }
   object StreamTransportOptions {
     
@@ -367,24 +404,23 @@ object transportsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Transports extends StObject {
     
-    var Console: ConsoleTransportInstance = js.native
+    var Console: ConsoleTransportInstance
     
-    var ConsoleTransportOptions: typings.winston.transportsMod.ConsoleTransportOptions = js.native
+    var ConsoleTransportOptions: typings.winston.transportsMod.ConsoleTransportOptions
     
-    var File: FileTransportInstance = js.native
+    var File: FileTransportInstance
     
-    var FileTransportOptions: typings.winston.transportsMod.FileTransportOptions = js.native
+    var FileTransportOptions: typings.winston.transportsMod.FileTransportOptions
     
-    var Http: HttpTransportInstance = js.native
+    var Http: HttpTransportInstance
     
-    var HttpTransportOptions: typings.winston.transportsMod.HttpTransportOptions = js.native
+    var HttpTransportOptions: typings.winston.transportsMod.HttpTransportOptions
     
-    var Stream: StreamTransportInstance = js.native
+    var Stream: StreamTransportInstance
     
-    var StreamTransportOptions: typings.winston.transportsMod.StreamTransportOptions = js.native
+    var StreamTransportOptions: typings.winston.transportsMod.StreamTransportOptions
   }
   object Transports {
     

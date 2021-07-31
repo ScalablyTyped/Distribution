@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OneTimeSchedule extends StObject {
   
   /** Required. The desired patch job execution time. */
-  var executeTime: js.UndefOr[String] = js.native
+  var executeTime: js.UndefOr[String] = js.undefined
 }
 object OneTimeSchedule {
   

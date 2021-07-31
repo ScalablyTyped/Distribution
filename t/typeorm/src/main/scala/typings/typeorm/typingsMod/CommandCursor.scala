@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.typeorm.platformToolsMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -80,14 +79,14 @@ trait CommandCursor extends Readable {
     * to store the results. Note that the array only contain partial results when this cursor had been previouly accessed.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/CommandCursor.html#toArray
     */
-  def toArray(): js.Promise[js.Array[_]] = js.native
+  def toArray(): js.Promise[js.Array[js.Any]] = js.native
   /**
     * Returns an array of documents. The caller is responsible for making sure that there is enough memory
     * to store the results. Note that the array only contain partial results when this cursor had been previouly accessed.
     * @param callback The result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/CommandCursor.html#toArray
     */
-  def toArray(callback: MongoCallback[js.Array[_]]): Unit = js.native
+  def toArray(callback: MongoCallback[js.Array[js.Any]]): Unit = js.native
   
   /**
     * This is useful in certain cases where a stream is being consumed by a parser,

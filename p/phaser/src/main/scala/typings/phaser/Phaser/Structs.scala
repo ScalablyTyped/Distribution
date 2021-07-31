@@ -10,7 +10,6 @@ import typings.phaser.integer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Structs {
@@ -41,7 +40,7 @@ object Structs {
       * @param skipCallback Skip calling the List.addCallback if this child is added successfully. Default false.
       */
     def addAt(child: T): T = js.native
-    def addAt(child: T, index: js.UndefOr[scala.Nothing], skipCallback: Boolean): T = js.native
+    def addAt(child: T, index: Unit, skipCallback: Boolean): T = js.native
     def addAt(child: T, index: integer): T = js.native
     def addAt(child: T, index: integer, skipCallback: Boolean): T = js.native
     
@@ -68,7 +67,6 @@ object Structs {
       */
     def destroy(): Unit = js.native
     
-    def each(callback: EachListCallback[T], context: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /**
       * Passes all children to the given callback.
       * @param callback The function to call.
@@ -76,6 +74,7 @@ object Structs {
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
     def each(callback: EachListCallback[T], context: js.Any, args: js.Any*): Unit = js.native
+    def each(callback: EachListCallback[T], context: Unit, args: js.Any*): Unit = js.native
     
     /**
       * Checks if an item exists within the List.
@@ -108,41 +107,21 @@ object Structs {
       * @param endIndex The last child index to search up until.
       */
     def getAll(): js.Array[T] = js.native
-    def getAll(property: js.UndefOr[scala.Nothing], value: T): js.Array[T] = js.native
-    def getAll(
-      property: js.UndefOr[scala.Nothing],
-      value: T,
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: integer
-    ): js.Array[T] = js.native
-    def getAll(property: js.UndefOr[scala.Nothing], value: T, startIndex: integer): js.Array[T] = js.native
-    def getAll(property: js.UndefOr[scala.Nothing], value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
-    def getAll(
-      property: js.UndefOr[scala.Nothing],
-      value: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: integer
-    ): js.Array[T] = js.native
-    def getAll(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[T] = js.native
-    def getAll(
-      property: js.UndefOr[scala.Nothing],
-      value: js.UndefOr[scala.Nothing],
-      startIndex: integer,
-      endIndex: integer
-    ): js.Array[T] = js.native
     def getAll(property: String): js.Array[T] = js.native
     def getAll(property: String, value: T): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[T] = js.native
+    def getAll(property: String, value: T, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
     def getAll(property: String, value: T, startIndex: integer): js.Array[T] = js.native
     def getAll(property: String, value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
-    def getAll(
-      property: String,
-      value: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: integer
-    ): js.Array[T] = js.native
-    def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: integer): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: T): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: integer, endIndex: integer): js.Array[T] = js.native
     
     /**
       * Retrieves the item at a given position inside the List.
@@ -166,9 +145,9 @@ object Structs {
       * @param endIndex The position in the List to optionally stop the search at. It won't be checked.
       */
     def getFirst(property: String, value: js.Any): T | Null = js.native
-    def getFirst(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): T | Null = js.native
     def getFirst(property: String, value: js.Any, startIndex: Double): T | Null = js.native
     def getFirst(property: String, value: js.Any, startIndex: Double, endIndex: Double): T | Null = js.native
+    def getFirst(property: String, value: js.Any, startIndex: Unit, endIndex: Double): T | Null = js.native
     
     /**
       * Locates an item within the List and returns its index.
@@ -182,7 +161,7 @@ object Structs {
       * @param length Restriction on the number of values you want to randomly select from. Default (to top).
       */
     def getRandom(): T | Null = js.native
-    def getRandom(startIndex: js.UndefOr[scala.Nothing], length: integer): T | Null = js.native
+    def getRandom(startIndex: Unit, length: integer): T | Null = js.native
     def getRandom(startIndex: integer): T | Null = js.native
     def getRandom(startIndex: integer, length: integer): T | Null = js.native
     
@@ -276,11 +255,11 @@ object Structs {
       * @param skipCallback Skip calling the List.removeCallback. Default false.
       */
     def removeBetween(): js.Array[T] = js.native
-    def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: js.UndefOr[scala.Nothing], skipCallback: Boolean): js.Array[T] = js.native
-    def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[T] = js.native
-    def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
+    def removeBetween(startIndex: Unit, endIndex: Unit, skipCallback: Boolean): js.Array[T] = js.native
+    def removeBetween(startIndex: Unit, endIndex: integer): js.Array[T] = js.native
+    def removeBetween(startIndex: Unit, endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
     def removeBetween(startIndex: integer): js.Array[T] = js.native
-    def removeBetween(startIndex: integer, endIndex: js.UndefOr[scala.Nothing], skipCallback: Boolean): js.Array[T] = js.native
+    def removeBetween(startIndex: integer, endIndex: Unit, skipCallback: Boolean): js.Array[T] = js.native
     def removeBetween(startIndex: integer, endIndex: integer): js.Array[T] = js.native
     def removeBetween(startIndex: integer, endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
     
@@ -315,7 +294,7 @@ object Structs {
       * @param endIndex The last child index to search up until.
       */
     def setAll(property: String, value: T): Unit = js.native
-    def setAll(property: String, value: T, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): Unit = js.native
+    def setAll(property: String, value: T, startIndex: Unit, endIndex: integer): Unit = js.native
     def setAll(property: String, value: T, startIndex: integer): Unit = js.native
     def setAll(property: String, value: T, startIndex: integer, endIndex: integer): Unit = js.native
     
@@ -456,7 +435,9 @@ object Structs {
     * time, rather than at the time of the request from the API.
     */
   @js.native
-  trait ProcessQueue[T] extends EventEmitter {
+  trait ProcessQueue[T]
+    extends StObject
+       with EventEmitter {
     
     /**
       * Adds a new item to the Process Queue.
@@ -515,7 +496,6 @@ object Structs {
     * 
     * rbush is forked from https://github.com/mourner/rbush by Vladimir Agafonkin
     */
-  @js.native
   trait RTree extends StObject
   
   /**
@@ -658,13 +638,13 @@ object Structs {
       * @param fit Perform a `fit` (true) constraint, or an `envelop` (false) constraint. Default true.
       */
     def constrain(): this.type = js.native
-    def constrain(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fit: Boolean): this.type = js.native
-    def constrain(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def constrain(width: js.UndefOr[scala.Nothing], height: Double, fit: Boolean): this.type = js.native
     def constrain(width: Double): this.type = js.native
-    def constrain(width: Double, height: js.UndefOr[scala.Nothing], fit: Boolean): this.type = js.native
     def constrain(width: Double, height: Double): this.type = js.native
     def constrain(width: Double, height: Double, fit: Boolean): this.type = js.native
+    def constrain(width: Double, height: Unit, fit: Boolean): this.type = js.native
+    def constrain(width: Unit, height: Double): this.type = js.native
+    def constrain(width: Unit, height: Double, fit: Boolean): this.type = js.native
+    def constrain(width: Unit, height: Unit, fit: Boolean): this.type = js.native
     
     /**
       * Copies the aspect mode, aspect ratio, width and height from this Size component
@@ -693,9 +673,9 @@ object Structs {
       * @param height The new height of the Size component. If not given, it will use the width value.
       */
     def envelop(): this.type = js.native
-    def envelop(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def envelop(width: Double): this.type = js.native
     def envelop(width: Double, height: Double): this.type = js.native
+    def envelop(width: Unit, height: Double): this.type = js.native
     
     /**
       * The current `width` and `height` are adjusted to fit inside the given dimensions, while keeping the aspect ratio.
@@ -708,9 +688,9 @@ object Structs {
       * @param height The new height of the Size component. If not given, it will use the width value.
       */
     def fitTo(): this.type = js.native
-    def fitTo(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def fitTo(width: Double): this.type = js.native
     def fitTo(width: Double, height: Double): this.type = js.native
+    def fitTo(width: Unit, height: Double): this.type = js.native
     
     /**
       * Takes a new height and passes it through the min/max clamp and then checks it doesn't exceed the parent height.
@@ -829,9 +809,9 @@ object Structs {
       * @param height The maximum allowed height of the Size component. If not given, it will use the `width`. Default width.
       */
     def setMax(): this.type = js.native
-    def setMax(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setMax(width: Double): this.type = js.native
     def setMax(width: Double, height: Double): this.type = js.native
+    def setMax(width: Unit, height: Double): this.type = js.native
     
     /**
       * Set the minimum width and height values this Size component will allow.
@@ -846,9 +826,9 @@ object Structs {
       * @param height The minimum allowed height of the Size component. If not given, it will use the `width`. Default width.
       */
     def setMin(): this.type = js.native
-    def setMin(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setMin(width: Double): this.type = js.native
     def setMin(width: Double, height: Double): this.type = js.native
+    def setMin(width: Unit, height: Double): this.type = js.native
     
     /**
       * Sets, or clears, the parent of this Size component.
@@ -888,9 +868,9 @@ object Structs {
       * @param height The new height of the Size component. If not given, it will use the `width`. Default width.
       */
     def setSize(): this.type = js.native
-    def setSize(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setSize(width: Double): this.type = js.native
     def setSize(width: Double, height: Double): this.type = js.native
+    def setSize(width: Unit, height: Double): this.type = js.native
     
     /**
       * By setting a Snap To value when this Size component is modified its dimensions will automatically
@@ -907,9 +887,9 @@ object Structs {
       * @param snapHeight The amount to snap the height to. If not provided it will use the `snapWidth` value. If you don't want to snap the height, pass a value of zero. Default snapWidth.
       */
     def setSnap(): this.type = js.native
-    def setSnap(snapWidth: js.UndefOr[scala.Nothing], snapHeight: Double): this.type = js.native
     def setSnap(snapWidth: Double): this.type = js.native
     def setSnap(snapWidth: Double, snapHeight: Double): this.type = js.native
+    def setSnap(snapWidth: Unit, snapHeight: Double): this.type = js.native
     
     /**
       * Sets the width of this Size component.

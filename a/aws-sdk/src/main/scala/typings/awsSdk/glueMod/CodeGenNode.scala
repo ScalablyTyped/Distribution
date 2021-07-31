@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeGenNode extends StObject {
   
   /**
     * Properties of the node, in the form of name-value pairs.
     */
-  var Args: CodeGenNodeArgs = js.native
+  var Args: CodeGenNodeArgs
   
   /**
     * A node identifier that is unique within the node's graph.
     */
-  var Id: CodeGenIdentifier = js.native
+  var Id: CodeGenIdentifier
   
   /**
     * The line number of the node.
     */
-  var LineNumber: js.UndefOr[Integer] = js.native
+  var LineNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * The type of node that this is.
     */
-  var NodeType: CodeGenNodeType = js.native
+  var NodeType: CodeGenNodeType
 }
 object CodeGenNode {
   

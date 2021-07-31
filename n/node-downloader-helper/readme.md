@@ -10,9 +10,9 @@ A simple http file downloader for node.js
 | ------------------ | :-------------: |
 | Full name          | node-downloader-helper |
 | Keywords           | node, nodejs, node.js, download, resumable, resume, http |
-| # releases         | 7 |
-| # dependents       | 21 |
-| # downloads        | 772204 |
+| # releases         | 5 |
+| # dependents       | 23 |
+| # downloads        | 805699 |
 | # stars            | 0 |
 
 ## Links

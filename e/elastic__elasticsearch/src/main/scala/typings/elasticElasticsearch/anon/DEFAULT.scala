@@ -2,19 +2,17 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DEFAULT extends StObject {
   
-  var DEFAULT: String = js.native
+  var DEFAULT: String
   
-  var SNIFF_INTERVAL: String = js.native
+  var SNIFF_INTERVAL: String
   
-  var SNIFF_ON_CONNECTION_FAULT: String = js.native
+  var SNIFF_ON_CONNECTION_FAULT: String
   
-  var SNIFF_ON_START: String = js.native
+  var SNIFF_ON_START: String
 }
 object DEFAULT {
   

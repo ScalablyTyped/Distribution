@@ -3,51 +3,49 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.HierarchicalDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanelBarOptions extends StObject {
   
-  var activate: js.UndefOr[js.Function1[/* e */ PanelBarActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ PanelBarActivateEvent, Unit]] = js.undefined
   
-  var animation: js.UndefOr[Boolean | PanelBarAnimation] = js.native
+  var animation: js.UndefOr[Boolean | PanelBarAnimation] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var collapse: js.UndefOr[js.Function1[/* e */ PanelBarCollapseEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ PanelBarCollapseEvent, Unit]] = js.undefined
   
-  var contentLoad: js.UndefOr[js.Function1[/* e */ PanelBarContentLoadEvent, Unit]] = js.native
+  var contentLoad: js.UndefOr[js.Function1[/* e */ PanelBarContentLoadEvent, Unit]] = js.undefined
   
-  var contentUrls: js.UndefOr[js.Any] = js.native
+  var contentUrls: js.UndefOr[js.Any] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ PanelBarDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ PanelBarDataBoundEvent, Unit]] = js.undefined
   
-  var dataImageUrlField: js.UndefOr[String] = js.native
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
   
-  var dataSpriteCssClassField: js.UndefOr[String] = js.native
+  var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.native
+  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
   
-  var dataUrlField: js.UndefOr[String] = js.native
+  var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ PanelBarErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ PanelBarErrorEvent, Unit]] = js.undefined
   
-  var expand: js.UndefOr[js.Function1[/* e */ PanelBarExpandEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ PanelBarExpandEvent, Unit]] = js.undefined
   
-  var expandMode: js.UndefOr[String] = js.native
+  var expandMode: js.UndefOr[String] = js.undefined
   
-  var loadOnDemand: js.UndefOr[Boolean] = js.native
+  var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[PanelBarMessages] = js.native
+  var messages: js.UndefOr[PanelBarMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ PanelBarSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ PanelBarSelectEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
 }
 object PanelBarOptions {
   

@@ -2,11 +2,12 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryMobile extends JQueryMobileOptions {
+trait JQueryMobile
+  extends StObject
+     with JQueryMobileOptions {
   
   var activePage: JQuery = js.native
   

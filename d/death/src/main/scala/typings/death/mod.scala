@@ -5,7 +5,6 @@ import typings.death.anon.SIGINT
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,9 +25,8 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
-  @JSImport("death", JSImport.Namespace)
-  @js.native
-  def apply(callback: js.Function1[/* arg */ Signal, Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def apply(callback: js.Function1[/* arg */ Signal, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   /**
     * Invokes a callback when a SIGINT, SIGTERM, or SIGQUIT is detected
     * on the current node process. Configurable by the provided options.
@@ -52,12 +50,14 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
-  @JSImport("death", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(options: Debug): js.Function1[
     /* callback */ js.Function2[/* signalOrErr */ Signal | Error, /* origin */ js.UndefOr[String], Unit], 
     js.Function0[Unit]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* callback */ js.Function2[/* signalOrErr */ Signal | Error, /* origin */ js.UndefOr[String], Unit], 
+    js.Function0[Unit]
+  ]]
   /**
     * Invokes a callback when a SIGINT, SIGTERM, or SIGQUIT is detected
     * on the current node process. Configurable by the provided options.
@@ -79,9 +79,12 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
+  @scala.inline
+  def apply(options: SIGINT): js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]]]
+  
   @JSImport("death", JSImport.Namespace)
   @js.native
-  def apply(options: SIGINT): js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]] = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.death.deathStrings.SIGINT

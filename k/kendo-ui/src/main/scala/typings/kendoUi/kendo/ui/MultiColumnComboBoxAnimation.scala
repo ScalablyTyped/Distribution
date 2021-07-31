@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiColumnComboBoxAnimation extends StObject {
   
-  var close: js.UndefOr[MultiColumnComboBoxAnimationClose] = js.native
+  var close: js.UndefOr[MultiColumnComboBoxAnimationClose] = js.undefined
   
-  var open: js.UndefOr[MultiColumnComboBoxAnimationOpen] = js.native
+  var open: js.UndefOr[MultiColumnComboBoxAnimationOpen] = js.undefined
 }
 object MultiColumnComboBoxAnimation {
   

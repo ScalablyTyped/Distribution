@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource.
     */
-  var resourceArn: AmazonResourceName = js.native
+  var resourceArn: AmazonResourceName
   
   /**
     * A list of the keys of the tags to be removed from the resource.
     */
-  var tagKeys: TagKeys = js.native
+  var tagKeys: TagKeys
 }
 object UntagResourceRequest {
   

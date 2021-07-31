@@ -9,44 +9,42 @@ import typings.reactNativeElements.reactNativeElementsStrings.rocket
 import typings.reactNativeElements.reactNativeElementsStrings.star
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-ratings.react-native-ratings.RatingProps> */
-@js.native
 trait PartialRatingProps extends StObject {
   
-  var fractions: js.UndefOr[Double] = js.native
+  var fractions: js.UndefOr[Double] = js.undefined
   
-  var imageSize: js.UndefOr[Double] = js.native
+  var imageSize: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
-  var onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.native
+  var onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.undefined
   
-  var onStartRating: js.UndefOr[js.Function0[Unit]] = js.native
+  var onStartRating: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ratingBackgroundColor: js.UndefOr[String] = js.native
+  var ratingBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var ratingColor: js.UndefOr[String] = js.native
+  var ratingColor: js.UndefOr[String] = js.undefined
   
-  var ratingCount: js.UndefOr[Double] = js.native
+  var ratingCount: js.UndefOr[Double] = js.undefined
   
-  var ratingImage: js.UndefOr[ImageURISource] = js.native
+  var ratingImage: js.UndefOr[ImageURISource] = js.undefined
   
-  var ratingTextColor: js.UndefOr[String] = js.native
+  var ratingTextColor: js.UndefOr[String] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var showRating: js.UndefOr[Boolean] = js.native
+  var showRating: js.UndefOr[Boolean] = js.undefined
   
-  var startingValue: js.UndefOr[Double] = js.native
+  var startingValue: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Requireable[js.Object]] = js.native
+  var style: js.UndefOr[Requireable[js.Object]] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.native
+  var `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.undefined
 }
 object PartialRatingProps {
   

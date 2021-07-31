@@ -2,14 +2,15 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.xlsx.xlsxStrings.sheet
   - typings.xlsx.xlsxStrings.chart
 */
-trait SheetType extends _SheetKeys
+trait SheetType
+  extends StObject
+     with _SheetKeys
 object SheetType {
   
   @scala.inline

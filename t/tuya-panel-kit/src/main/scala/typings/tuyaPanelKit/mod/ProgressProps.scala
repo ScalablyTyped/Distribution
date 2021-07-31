@@ -5,43 +5,43 @@ import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.themeMod.StopsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressProps extends GestureProps {
+trait ProgressProps
+  extends StObject
+     with GestureProps {
   
-  var andDegree: js.UndefOr[Double] = js.native
+  var andDegree: js.UndefOr[Double] = js.undefined
   
-  var backColor: js.UndefOr[String] = js.native
+  var backColor: js.UndefOr[String] = js.undefined
   
-  var backStrokeOpacity: js.UndefOr[Double] = js.native
+  var backStrokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var foreColor: js.UndefOr[String | js.Array[StopsProps] | StringDictionary[String]] = js.native
+  var foreColor: js.UndefOr[String | js.Array[StopsProps] | StringDictionary[String]] = js.undefined
   
-  var foreStrokeOpacity: js.UndefOr[Double] = js.native
+  var foreStrokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var gradientId: js.UndefOr[String] = js.native
+  var gradientId: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var renderCenterView: js.UndefOr[ReactNode] = js.native
+  var renderCenterView: js.UndefOr[ReactNode] = js.undefined
   
-  var scaleHeight: js.UndefOr[Double] = js.native
+  var scaleHeight: js.UndefOr[Double] = js.undefined
   
-  var startDegree: js.UndefOr[Double] = js.native
+  var startDegree: js.UndefOr[Double] = js.undefined
   
-  var stepValue: js.UndefOr[Double] = js.native
+  var stepValue: js.UndefOr[Double] = js.undefined
   
-  var x1: js.UndefOr[String] = js.native
+  var x1: js.UndefOr[String] = js.undefined
   
-  var x2: js.UndefOr[String] = js.native
+  var x2: js.UndefOr[String] = js.undefined
   
-  var y1: js.UndefOr[String] = js.native
+  var y1: js.UndefOr[String] = js.undefined
   
-  var y2: js.UndefOr[String] = js.native
+  var y2: js.UndefOr[String] = js.undefined
 }
 object ProgressProps {
   

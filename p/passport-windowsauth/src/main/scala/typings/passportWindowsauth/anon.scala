@@ -8,37 +8,35 @@ import typings.node.tlsMod.TlsOptions
 import typings.passportWindowsauth.passportWindowsauthBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var bindCredentials: js.UndefOr[String] = js.native
+    var bindCredentials: js.UndefOr[String] = js.undefined
     
-    var bindDN: js.UndefOr[String] = js.native
+    var bindDN: js.UndefOr[String] = js.undefined
     
-    var binder: js.UndefOr[Client] = js.native
+    var binder: js.UndefOr[Client] = js.undefined
     
-    var client: js.UndefOr[Client] = js.native
+    var client: js.UndefOr[Client] = js.undefined
     
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
-    var reconnect: js.UndefOr[Boolean | FailAfter] = js.native
+    var reconnect: js.UndefOr[Boolean | FailAfter] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tlsOptions: js.UndefOr[TlsOptions] = js.native
+    var tlsOptions: js.UndefOr[TlsOptions] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Base {
     
@@ -125,14 +123,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FailAfter extends StObject {
     
-    var failAfter: js.UndefOr[Double] = js.native
+    var failAfter: js.UndefOr[Double] = js.undefined
     
-    var initialDelay: js.UndefOr[Double] = js.native
+    var initialDelay: js.UndefOr[Double] = js.undefined
     
-    var maxDelay: js.UndefOr[Double] = js.native
+    var maxDelay: js.UndefOr[Double] = js.undefined
   }
   object FailAfter {
     
@@ -166,25 +163,26 @@ object anon {
   }
   
   /* Inlined passport-windowsauth.passport-windowsauth.Options & {  passReqToCallback :true} */
-  @js.native
   trait OptionspassReqToCallbackt extends StObject {
     
-    var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.native
+    var getUserNameFromHeader: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+      ] = js.undefined
     
-    var integrated: js.UndefOr[Boolean] = js.native
+    var integrated: js.UndefOr[Boolean] = js.undefined
     
-    var ldap: js.UndefOr[Base] = js.native
+    var ldap: js.UndefOr[Base] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] with `true` = js.native
+    var passReqToCallback: js.UndefOr[Boolean] & `true`
     
-    var passwordField: js.UndefOr[String] = js.native
+    var passwordField: js.UndefOr[String] = js.undefined
     
-    var usernameField: js.UndefOr[String] = js.native
+    var usernameField: js.UndefOr[String] = js.undefined
   }
   object OptionspassReqToCallbackt {
     
     @scala.inline
-    def apply(passReqToCallback: js.UndefOr[Boolean] with `true`): OptionspassReqToCallbackt = {
+    def apply(passReqToCallback: js.UndefOr[Boolean] & `true`): OptionspassReqToCallbackt = {
       val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionspassReqToCallbackt]
     }
@@ -193,7 +191,7 @@ object anon {
     implicit class OptionspassReqToCallbacktMutableBuilder[Self <: OptionspassReqToCallbackt] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
+      def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetUserNameFromHeaderUndefined: Self = StObject.set(x, "getUserNameFromHeader", js.undefined)
@@ -211,7 +209,7 @@ object anon {
       def setLdapUndefined: Self = StObject.set(x, "ldap", js.undefined)
       
       @scala.inline
-      def setPassReqToCallback(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      def setPassReqToCallback(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])

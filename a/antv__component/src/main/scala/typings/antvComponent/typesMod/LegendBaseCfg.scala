@@ -3,41 +3,41 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LegendBaseCfg extends GroupComponentCfg {
+trait LegendBaseCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 背景框配置项
     * @type {LegendBackgroundCfg}
     */
-  var background: js.UndefOr[LegendBackgroundCfg] = js.native
+  var background: js.UndefOr[LegendBackgroundCfg] = js.undefined
   
   /**
     * 布局方式： horizontal，vertical
     * @type {String}
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * 标题
     * @type {LegendTitleCfg}
     */
-  var title: js.UndefOr[LegendTitleCfg] = js.native
+  var title: js.UndefOr[LegendTitleCfg] = js.undefined
   
   /**
     * 位置 x
     * @type {number}
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置 y
     * @type {number}
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object LegendBaseCfg {
   

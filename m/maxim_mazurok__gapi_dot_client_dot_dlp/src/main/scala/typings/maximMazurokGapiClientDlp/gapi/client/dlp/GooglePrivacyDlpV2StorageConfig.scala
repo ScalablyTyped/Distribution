@@ -2,28 +2,26 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2StorageConfig extends StObject {
   
   /** BigQuery options. */
-  var bigQueryOptions: js.UndefOr[GooglePrivacyDlpV2BigQueryOptions] = js.native
+  var bigQueryOptions: js.UndefOr[GooglePrivacyDlpV2BigQueryOptions] = js.undefined
   
   /** Google Cloud Storage options. */
-  var cloudStorageOptions: js.UndefOr[GooglePrivacyDlpV2CloudStorageOptions] = js.native
+  var cloudStorageOptions: js.UndefOr[GooglePrivacyDlpV2CloudStorageOptions] = js.undefined
   
   /** Google Cloud Datastore options. */
-  var datastoreOptions: js.UndefOr[GooglePrivacyDlpV2DatastoreOptions] = js.native
+  var datastoreOptions: js.UndefOr[GooglePrivacyDlpV2DatastoreOptions] = js.undefined
   
   /**
     * Hybrid inspection options. Early access feature is in a pre-release state and might change or have limited support. For more information, see
     * https://cloud.google.com/products#product-launch-stages.
     */
-  var hybridOptions: js.UndefOr[GooglePrivacyDlpV2HybridOptions] = js.native
+  var hybridOptions: js.UndefOr[GooglePrivacyDlpV2HybridOptions] = js.undefined
   
-  var timespanConfig: js.UndefOr[GooglePrivacyDlpV2TimespanConfig] = js.native
+  var timespanConfig: js.UndefOr[GooglePrivacyDlpV2TimespanConfig] = js.undefined
 }
 object GooglePrivacyDlpV2StorageConfig {
   

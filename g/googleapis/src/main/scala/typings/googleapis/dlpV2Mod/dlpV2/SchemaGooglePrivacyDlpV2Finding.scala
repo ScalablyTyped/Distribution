@@ -2,35 +2,33 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a piece of potentially sensitive content.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Finding extends StObject {
   
   /**
     * Timestamp when finding was detected.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The type of content that might have been found. Provided if
     * `excluded_types` is false.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
     * Confidence of how likely it is that the `info_type` is correct.
     */
-  var likelihood: js.UndefOr[String] = js.native
+  var likelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Where the content was found.
     */
-  var location: js.UndefOr[SchemaGooglePrivacyDlpV2Location] = js.native
+  var location: js.UndefOr[SchemaGooglePrivacyDlpV2Location] = js.undefined
   
   /**
     * The content that was found. Even if the content is not textual, it may be
@@ -38,14 +36,14 @@ trait SchemaGooglePrivacyDlpV2Finding extends StObject {
     * is true and the finding is less than or equal to 4096 bytes long. If the
     * finding exceeds 4096 bytes in length, the quote may be omitted.
     */
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
   /**
     * Contains data parsed from quotes. Only populated if include_quote was set
     * to true and a supported infoType was requested. Currently supported
     * infoTypes: DATE, DATE_OF_BIRTH and TIME.
     */
-  var quoteInfo: js.UndefOr[SchemaGooglePrivacyDlpV2QuoteInfo] = js.native
+  var quoteInfo: js.UndefOr[SchemaGooglePrivacyDlpV2QuoteInfo] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Finding {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatastoreActivity extends StObject {
   
   /**
     * The name of the data store where processed messages are stored.
     */
-  var datastoreName: DatastoreName = js.native
+  var datastoreName: DatastoreName
   
   /**
     * The name of the datastore activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
 }
 object DatastoreActivity {
   

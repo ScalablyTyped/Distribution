@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geoMatchSetMod {
@@ -25,7 +24,7 @@ object geoMatchSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: GeoMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: GeoMatchSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -41,6 +40,10 @@ object geoMatchSetMod {
   /* static members */
   object GeoMatchSet {
     
+    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GeoMatchSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -50,29 +53,23 @@ object geoMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GeoMatchSet = js.native
-    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GeoMatchSet = js.native
-    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GeoMatchSetState): GeoMatchSet = js.native
-    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): GeoMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GeoMatchSetState): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
     
     /**
       * Returns true if the given object is an instance of GeoMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/geoMatchSet.GeoMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/geoMatchSet.GeoMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/geoMatchSet.GeoMatchSet */ Boolean]
   }
   
-  @js.native
   trait GeoMatchSetArgs extends StObject {
     
     /**
@@ -82,12 +79,12 @@ object geoMatchSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafregional.GeoMatchSetGeoMatchConstraint]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name or description of the Geo Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object GeoMatchSetArgs {
     
@@ -121,7 +118,6 @@ object geoMatchSetMod {
     }
   }
   
-  @js.native
   trait GeoMatchSetState extends StObject {
     
     /**
@@ -131,12 +127,12 @@ object geoMatchSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafregional.GeoMatchSetGeoMatchConstraint]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name or description of the Geo Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object GeoMatchSetState {
     

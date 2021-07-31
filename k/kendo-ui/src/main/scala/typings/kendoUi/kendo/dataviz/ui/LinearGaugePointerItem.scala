@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGaugePointerItem extends StObject {
   
-  var border: js.UndefOr[LinearGaugePointerItemBorder] = js.native
+  var border: js.UndefOr[LinearGaugePointerItemBorder] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.native
+  var margin: js.UndefOr[Double | js.Any] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var track: js.UndefOr[LinearGaugePointerItemTrack] = js.native
+  var track: js.UndefOr[LinearGaugePointerItemTrack] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object LinearGaugePointerItem {
   

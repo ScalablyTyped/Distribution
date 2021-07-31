@@ -3,31 +3,24 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`draw-complete`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointDrawActionDrawCompleteEvent extends StObject {
   
-  var coordinates: js.Array[Double] = js.native
+  var coordinates: js.Array[Double]
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `draw-complete` = js.native
+  var `type`: `draw-complete`
 }
 object PointDrawActionDrawCompleteEvent {
   
   @scala.inline
-  def apply(
-    coordinates: js.Array[Double],
-    defaultPrevented: Boolean,
-    preventDefault: js.Function,
-    `type`: `draw-complete`
-  ): PointDrawActionDrawCompleteEvent = {
+  def apply(coordinates: js.Array[Double], defaultPrevented: Boolean, preventDefault: js.Function): PointDrawActionDrawCompleteEvent = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("draw-complete")
     __obj.asInstanceOf[PointDrawActionDrawCompleteEvent]
   }
   

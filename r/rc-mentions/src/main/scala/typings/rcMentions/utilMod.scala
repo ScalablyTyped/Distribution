@@ -9,57 +9,51 @@ import typings.std.HTMLTextAreaElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("rc-mentions/es/util", "filterOption")
+  @JSImport("rc-mentions/es/util", JSImport.Namespace)
   @js.native
-  def filterOption(input: String, hasValue: OptionProps): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-mentions/es/util", "getBeforeSelectionText")
-  @js.native
-  def getBeforeSelectionText(input: HTMLTextAreaElement): String = js.native
+  @scala.inline
+  def filterOption(input: String, hasValue: OptionProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOption")(input.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-mentions/es/util", "getLastMeasureIndex")
-  @js.native
-  def getLastMeasureIndex(text: String): MeasureIndex = js.native
-  @JSImport("rc-mentions/es/util", "getLastMeasureIndex")
-  @js.native
-  def getLastMeasureIndex(text: String, prefix: String): MeasureIndex = js.native
-  @JSImport("rc-mentions/es/util", "getLastMeasureIndex")
-  @js.native
-  def getLastMeasureIndex(text: String, prefix: js.Array[String]): MeasureIndex = js.native
+  @scala.inline
+  def getBeforeSelectionText(input: HTMLTextAreaElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeforeSelectionText")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def getLastMeasureIndex(text: String): MeasureIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any]).asInstanceOf[MeasureIndex]
+  @scala.inline
+  def getLastMeasureIndex(text: String, prefix: String): MeasureIndex = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[MeasureIndex]
+  @scala.inline
+  def getLastMeasureIndex(text: String, prefix: js.Array[String]): MeasureIndex = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[MeasureIndex]
   
   @JSImport("rc-mentions/es/util", "omit")
   @js.native
   val omit: OmitFunc = js.native
   
-  @JSImport("rc-mentions/es/util", "replaceWithMeasure")
-  @js.native
-  def replaceWithMeasure(text: String, measureConfig: MeasureConfig): SelectionLocation = js.native
+  @scala.inline
+  def replaceWithMeasure(text: String, measureConfig: MeasureConfig): SelectionLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithMeasure")(text.asInstanceOf[js.Any], measureConfig.asInstanceOf[js.Any])).asInstanceOf[SelectionLocation]
   
-  @JSImport("rc-mentions/es/util", "setInputSelection")
-  @js.native
-  def setInputSelection(input: HTMLTextAreaElement, location: Double): Unit = js.native
+  @scala.inline
+  def setInputSelection(input: HTMLTextAreaElement, location: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInputSelection")(input.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-mentions/es/util", "validateSearch")
-  @js.native
-  def validateSearch(text: String, props: MentionsProps): Boolean = js.native
+  @scala.inline
+  def validateSearch(text: String, props: MentionsProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSearch")(text.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait MeasureConfig extends StObject {
     
-    var measureLocation: Double = js.native
+    var measureLocation: Double
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var selectionStart: Double = js.native
+    var selectionStart: Double
     
-    var split: String = js.native
+    var split: String
     
-    var targetText: String = js.native
+    var targetText: String
   }
   object MeasureConfig {
     
@@ -89,12 +83,11 @@ object utilMod {
     }
   }
   
-  @js.native
   trait MeasureIndex extends StObject {
     
-    var location: Double = js.native
+    var location: Double
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object MeasureIndex {
     
@@ -120,7 +113,7 @@ object utilMod {
     /* keys */ Array[/* keyof object */ String], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K2 in std.Exclude<keyof object, [...std.Array<keyof object>][number]> ]: object[K2]}
-    */ typings.rcMentions.rcMentionsStrings.OmitFunc with TopLevel[js.Object]
+    */ typings.rcMentions.rcMentionsStrings.OmitFunc & TopLevel[js.Object]
   ]
   
   type Omit_[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]

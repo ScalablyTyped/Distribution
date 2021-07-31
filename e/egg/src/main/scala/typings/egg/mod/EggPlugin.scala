@@ -3,36 +3,35 @@ package typings.egg.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EggPlugin
-  extends /* key */ StringDictionary[js.UndefOr[EggPluginItem]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[EggPluginItem]] {
   
-  var development: js.UndefOr[EggPluginItem] = js.native
+  var development: js.UndefOr[EggPluginItem] = js.undefined
   
-  var i18n: js.UndefOr[EggPluginItem] = js.native
+  var i18n: js.UndefOr[EggPluginItem] = js.undefined
   
-  var jsonp: js.UndefOr[EggPluginItem] = js.native
+  var jsonp: js.UndefOr[EggPluginItem] = js.undefined
   
-  var logrotator: js.UndefOr[EggPluginItem] = js.native
+  var logrotator: js.UndefOr[EggPluginItem] = js.undefined
   
-  var multipart: js.UndefOr[EggPluginItem] = js.native
+  var multipart: js.UndefOr[EggPluginItem] = js.undefined
   
-  var onerror: js.UndefOr[EggPluginItem] = js.native
+  var onerror: js.UndefOr[EggPluginItem] = js.undefined
   
-  var schedule: js.UndefOr[EggPluginItem] = js.native
+  var schedule: js.UndefOr[EggPluginItem] = js.undefined
   
-  var security: js.UndefOr[EggPluginItem] = js.native
+  var security: js.UndefOr[EggPluginItem] = js.undefined
   
-  var session: js.UndefOr[EggPluginItem] = js.native
+  var session: js.UndefOr[EggPluginItem] = js.undefined
   
-  var static: js.UndefOr[EggPluginItem] = js.native
+  var static: js.UndefOr[EggPluginItem] = js.undefined
   
-  var view: js.UndefOr[EggPluginItem] = js.native
+  var view: js.UndefOr[EggPluginItem] = js.undefined
   
-  var watcher: js.UndefOr[EggPluginItem] = js.native
+  var watcher: js.UndefOr[EggPluginItem] = js.undefined
 }
 object EggPlugin {
   

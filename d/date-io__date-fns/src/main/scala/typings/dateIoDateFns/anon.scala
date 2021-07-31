@@ -3,17 +3,15 @@ package typings.dateIoDateFns
 import typings.dateIoDateFns.dateFnsUtilsMod.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Formats extends StObject {
     
-    var formats: js.UndefOr[PartialDateIOFormatsstrin] = js.native
+    var formats: js.UndefOr[PartialDateIOFormatsstrin] = js.undefined
     
-    var locale: js.UndefOr[Locale] = js.native
+    var locale: js.UndefOr[Locale] = js.undefined
   }
   object Formats {
     
@@ -41,62 +39,61 @@ object anon {
   }
   
   /* Inlined std.Partial<@date-io/core.@date-io/core/IUtils.DateIOFormats<string>> */
-  @js.native
   trait PartialDateIOFormatsstrin extends StObject {
     
-    var dayOfMonth: js.UndefOr[String] = js.native
+    var dayOfMonth: js.UndefOr[String] = js.undefined
     
-    var fullDate: js.UndefOr[String] = js.native
+    var fullDate: js.UndefOr[String] = js.undefined
     
-    var fullDateTime: js.UndefOr[String] = js.native
+    var fullDateTime: js.UndefOr[String] = js.undefined
     
-    var fullDateTime12h: js.UndefOr[String] = js.native
+    var fullDateTime12h: js.UndefOr[String] = js.undefined
     
-    var fullDateTime24h: js.UndefOr[String] = js.native
+    var fullDateTime24h: js.UndefOr[String] = js.undefined
     
-    var fullDateWithWeekday: js.UndefOr[String] = js.native
+    var fullDateWithWeekday: js.UndefOr[String] = js.undefined
     
-    var fullTime: js.UndefOr[String] = js.native
+    var fullTime: js.UndefOr[String] = js.undefined
     
-    var fullTime12h: js.UndefOr[String] = js.native
+    var fullTime12h: js.UndefOr[String] = js.undefined
     
-    var fullTime24h: js.UndefOr[String] = js.native
+    var fullTime24h: js.UndefOr[String] = js.undefined
     
-    var hours12h: js.UndefOr[String] = js.native
+    var hours12h: js.UndefOr[String] = js.undefined
     
-    var hours24h: js.UndefOr[String] = js.native
+    var hours24h: js.UndefOr[String] = js.undefined
     
-    var keyboardDate: js.UndefOr[String] = js.native
+    var keyboardDate: js.UndefOr[String] = js.undefined
     
-    var keyboardDateTime: js.UndefOr[String] = js.native
+    var keyboardDateTime: js.UndefOr[String] = js.undefined
     
-    var keyboardDateTime12h: js.UndefOr[String] = js.native
+    var keyboardDateTime12h: js.UndefOr[String] = js.undefined
     
-    var keyboardDateTime24h: js.UndefOr[String] = js.native
+    var keyboardDateTime24h: js.UndefOr[String] = js.undefined
     
-    var minutes: js.UndefOr[String] = js.native
+    var minutes: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var monthAndDate: js.UndefOr[String] = js.native
+    var monthAndDate: js.UndefOr[String] = js.undefined
     
-    var monthAndYear: js.UndefOr[String] = js.native
+    var monthAndYear: js.UndefOr[String] = js.undefined
     
-    var monthShort: js.UndefOr[String] = js.native
+    var monthShort: js.UndefOr[String] = js.undefined
     
-    var normalDate: js.UndefOr[String] = js.native
+    var normalDate: js.UndefOr[String] = js.undefined
     
-    var normalDateWithWeekday: js.UndefOr[String] = js.native
+    var normalDateWithWeekday: js.UndefOr[String] = js.undefined
     
-    var seconds: js.UndefOr[String] = js.native
+    var seconds: js.UndefOr[String] = js.undefined
     
-    var shortDate: js.UndefOr[String] = js.native
+    var shortDate: js.UndefOr[String] = js.undefined
     
-    var weekday: js.UndefOr[String] = js.native
+    var weekday: js.UndefOr[String] = js.undefined
     
-    var weekdayShort: js.UndefOr[String] = js.native
+    var weekdayShort: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object PartialDateIOFormatsstrin {
     

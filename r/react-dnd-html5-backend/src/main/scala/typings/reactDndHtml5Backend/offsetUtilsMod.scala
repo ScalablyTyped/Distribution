@@ -8,26 +8,26 @@ import typings.std.MouseEvent
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object offsetUtilsMod {
   
-  @JSImport("react-dnd-html5-backend/lib/OffsetUtils", "getDragPreviewOffset")
+  @JSImport("react-dnd-html5-backend/lib/OffsetUtils", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getDragPreviewOffset(
     sourceNode: HTMLElement,
     dragPreview: HTMLElement,
     clientOffset: XYCoord,
     anchorPoint: AnchorX,
     offsetPoint: OffsetX
-  ): XYCoord = js.native
+  ): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("getDragPreviewOffset")(sourceNode.asInstanceOf[js.Any], dragPreview.asInstanceOf[js.Any], clientOffset.asInstanceOf[js.Any], anchorPoint.asInstanceOf[js.Any], offsetPoint.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
   
-  @JSImport("react-dnd-html5-backend/lib/OffsetUtils", "getEventClientOffset")
-  @js.native
-  def getEventClientOffset(e: MouseEvent): XYCoord = js.native
+  @scala.inline
+  def getEventClientOffset(e: MouseEvent): XYCoord = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[XYCoord]
   
-  @JSImport("react-dnd-html5-backend/lib/OffsetUtils", "getNodeClientOffset")
-  @js.native
-  def getNodeClientOffset(node: Node): XYCoord | Null = js.native
+  @scala.inline
+  def getNodeClientOffset(node: Node): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeClientOffset")(node.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
 }

@@ -2,7 +2,6 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * response is used in the provisioning api to return the result of creating
   * an account, property, and view (profile).
   */
-@js.native
 trait SchemaAccountTreeResponse extends StObject {
   
   /**
     * The account created.
     */
-  var account: js.UndefOr[SchemaAccount] = js.native
+  var account: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * Resource type for account ticket.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * View (Profile) for the account.
     */
-  var profile: js.UndefOr[SchemaProfile] = js.native
+  var profile: js.UndefOr[SchemaProfile] = js.undefined
   
   /**
     * Web property for the account.
     */
-  var webproperty: js.UndefOr[SchemaWebproperty] = js.native
+  var webproperty: js.UndefOr[SchemaWebproperty] = js.undefined
 }
 object SchemaAccountTreeResponse {
   

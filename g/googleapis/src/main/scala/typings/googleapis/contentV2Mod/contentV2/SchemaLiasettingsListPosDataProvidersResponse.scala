@@ -2,22 +2,20 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiasettingsListPosDataProvidersResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#liasettingsListPosDataProvidersResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The list of POS data providers for each eligible country
     */
-  var posDataProviders: js.UndefOr[js.Array[SchemaPosDataProviders]] = js.native
+  var posDataProviders: js.UndefOr[js.Array[SchemaPosDataProviders]] = js.undefined
 }
 object SchemaLiasettingsListPosDataProvidersResponse {
   

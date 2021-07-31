@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The structure of the input document. */
-@js.native
 trait DocStructure extends StObject {
   
   /** An array containing one object per section or subsection, in parallel with the `section_titles` array, that details the leading sentences in the corresponding section or subsection. */
-  var leading_sentences: js.UndefOr[js.Array[LeadingSentence]] = js.native
+  var leading_sentences: js.UndefOr[js.Array[LeadingSentence]] = js.undefined
   
   /** An array containing one object per section or subsection identified in the input document. */
-  var section_titles: js.UndefOr[js.Array[SectionTitles]] = js.native
+  var section_titles: js.UndefOr[js.Array[SectionTitles]] = js.undefined
 }
 object DocStructure {
   

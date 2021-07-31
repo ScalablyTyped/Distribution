@@ -9,44 +9,42 @@ import typings.reactBootstrap.reactBootstrapStrings.rootClose
 import typings.reactBootstrap.reactBootstrapStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveIndex extends StObject {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
-    var defaultActiveIndex: js.UndefOr[Double] = js.native
+    var defaultActiveIndex: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var indicators: js.UndefOr[Boolean] = js.native
+    var indicators: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[Double | Null] = js.native
+    var interval: js.UndefOr[Double | Null] = js.undefined
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var onSelect: js.UndefOr[SelectCallback] = js.native
+    var onSelect: js.UndefOr[SelectCallback] = js.undefined
     
     // TODO: Add more specific type
-    var onSlideEnd: js.UndefOr[js.Function] = js.native
+    var onSlideEnd: js.UndefOr[js.Function] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var slide: js.UndefOr[Boolean] = js.native
+    var slide: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object ActiveIndex {
     
@@ -154,10 +152,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BsClass extends StObject {
     
-    var bsClass: js.UndefOr[js.Any] = js.native
+    var bsClass: js.UndefOr[js.Any] = js.undefined
   }
   object BsClass {
     
@@ -178,10 +175,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var source: select | click | rootClose | keydown = js.native
+    var source: select | click | rootClose | keydown
   }
   object Source {
     

@@ -6,10 +6,13 @@ import typings.node.streamMod.TransformOptions
 import typings.nodemailer.nodemailerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object base64Mod {
+  
+  @JSImport("nodemailer/lib/base64", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nodemailer/lib/base64", "Encoder")
   @js.native
@@ -23,24 +26,21 @@ object base64Mod {
     var outputBytes: Double = js.native
   }
   
-  @JSImport("nodemailer/lib/base64", "encode")
-  @js.native
-  def encode(buffer: String): String = js.native
-  @JSImport("nodemailer/lib/base64", "encode")
-  @js.native
-  def encode(buffer: Buffer): String = js.native
+  @scala.inline
+  def encode(buffer: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/base64", "wrap")
-  @js.native
-  def wrap(str: String): String = js.native
-  @JSImport("nodemailer/lib/base64", "wrap")
-  @js.native
-  def wrap(str: String, lineLength: Double): String = js.native
+  @scala.inline
+  def wrap(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def wrap(str: String, lineLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
-  trait EncoderOptions extends TransformOptions {
+  trait EncoderOptions
+    extends StObject
+       with TransformOptions {
     
-    var lineLength: js.UndefOr[Double | `false`] = js.native
+    var lineLength: js.UndefOr[Double | `false`] = js.undefined
   }
   object EncoderOptions {
     

@@ -13,7 +13,6 @@ import typings.semanticUiReact.paginationItemMod.PaginationItemProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationPaginationMod {
@@ -38,9 +37,9 @@ object paginationPaginationMod {
   }
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationProps
-    extends StrictPaginationProps
+    extends StObject
+       with StrictPaginationProps
        with /* key */ StringDictionary[js.Any]
   object PaginationProps {
     
@@ -51,35 +50,34 @@ object paginationPaginationMod {
     }
   }
   
-  @js.native
   trait StrictPaginationProps extends StObject {
     
     /** Index of the currently active page. */
-    var activePage: js.UndefOr[Double | String] = js.native
+    var activePage: js.UndefOr[Double | String] = js.undefined
     
     /** A pagination item can have an aria label. */
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
     /** Number of always visible pages at the beginning and end. */
-    var boundaryRange: js.UndefOr[Double | String] = js.native
+    var boundaryRange: js.UndefOr[Double | String] = js.undefined
     
     /** Initial activePage value. */
-    var defaultActivePage: js.UndefOr[Double | String] = js.native
+    var defaultActivePage: js.UndefOr[Double | String] = js.undefined
     
     /** A pagination can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var ellipsisItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var ellipsisItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var firstItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var firstItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var lastItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var lastItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var nextItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var nextItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /**
       * Called on change of an active page.
@@ -93,19 +91,19 @@ object paginationPaginationMod {
           /* data */ PaginationProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var pageItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var pageItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /** A shorthand for PaginationItem. */
-    var prevItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.native
+    var prevItem: js.UndefOr[SemanticShorthandItem[PaginationItemProps]] = js.undefined
     
     /** Number of always visible pages before and after the current one. */
-    var siblingRange: js.UndefOr[Double | String] = js.native
+    var siblingRange: js.UndefOr[Double | String] = js.undefined
     
     /** Total number of pages. */
-    var totalPages: Double | String = js.native
+    var totalPages: Double | String
   }
   object StrictPaginationProps {
     

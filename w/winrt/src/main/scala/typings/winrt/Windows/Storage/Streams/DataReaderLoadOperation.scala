@@ -7,12 +7,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.anon.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataReaderLoadOperation
-  extends IAsyncOperation[Double]
+  extends StObject
+     with IAsyncOperation[Double]
      with IAsyncInfo {
   
   /* InferMemberOverrides */

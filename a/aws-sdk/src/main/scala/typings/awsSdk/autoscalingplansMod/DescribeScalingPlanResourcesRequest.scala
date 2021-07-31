@@ -2,31 +2,29 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScalingPlanResourcesRequest extends StObject {
   
   /**
     * The maximum number of scalable resources to return. The value must be between 1 and 50. The default value is 50.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.autoscalingplansMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.autoscalingplansMod.MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.undefined
   
   /**
     * The name of the scaling plan.
     */
-  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName = js.native
+  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
     * The version number of the scaling plan.
     */
-  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion = js.native
+  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
 }
 object DescribeScalingPlanResourcesRequest {
   

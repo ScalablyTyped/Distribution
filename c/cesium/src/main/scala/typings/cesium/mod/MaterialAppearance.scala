@@ -4,7 +4,6 @@ import typings.cesium.anon.FaceForward
 import typings.cesium.mod.MaterialAppearance.MaterialSupport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "MaterialAppearance")
@@ -29,18 +28,24 @@ object MaterialAppearance {
   object MaterialSupport extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MaterialSupport with Double] = js.native
+    def apply(value: Double): js.UndefOr[MaterialSupport & Double] = js.native
     
     @js.native
-    sealed trait ALL extends MaterialSupport
-    /* 2 */ val ALL: typings.cesium.mod.MaterialAppearance.MaterialSupport.ALL with Double = js.native
+    sealed trait ALL
+      extends StObject
+         with MaterialSupport
+    /* 2 */ val ALL: typings.cesium.mod.MaterialAppearance.MaterialSupport.ALL & Double = js.native
     
     @js.native
-    sealed trait BASIC extends MaterialSupport
-    /* 0 */ val BASIC: typings.cesium.mod.MaterialAppearance.MaterialSupport.BASIC with Double = js.native
+    sealed trait BASIC
+      extends StObject
+         with MaterialSupport
+    /* 0 */ val BASIC: typings.cesium.mod.MaterialAppearance.MaterialSupport.BASIC & Double = js.native
     
     @js.native
-    sealed trait TEXTURED extends MaterialSupport
-    /* 1 */ val TEXTURED: typings.cesium.mod.MaterialAppearance.MaterialSupport.TEXTURED with Double = js.native
+    sealed trait TEXTURED
+      extends StObject
+         with MaterialSupport
+    /* 1 */ val TEXTURED: typings.cesium.mod.MaterialAppearance.MaterialSupport.TEXTURED & Double = js.native
   }
 }

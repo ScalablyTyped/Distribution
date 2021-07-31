@@ -4,7 +4,6 @@ import typings.sentryTypes.anon.Attrs
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
@@ -16,31 +15,41 @@ object sessionMod {
   object SessionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SessionStatus with String] = js.native
+    def apply(value: String): js.UndefOr[SessionStatus & String] = js.native
     
     /** JSDoc */
     @js.native
-    sealed trait Abnormal extends SessionStatus
-    /* "abnormal" */ val Abnormal: typings.sentryTypes.sessionMod.SessionStatus.Abnormal with String = js.native
+    sealed trait Abnormal
+      extends StObject
+         with SessionStatus
+    /* "abnormal" */ val Abnormal: typings.sentryTypes.sessionMod.SessionStatus.Abnormal & String = js.native
     
     /** JSDoc */
     @js.native
-    sealed trait Crashed extends SessionStatus
-    /* "crashed" */ val Crashed: typings.sentryTypes.sessionMod.SessionStatus.Crashed with String = js.native
+    sealed trait Crashed
+      extends StObject
+         with SessionStatus
+    /* "crashed" */ val Crashed: typings.sentryTypes.sessionMod.SessionStatus.Crashed & String = js.native
     
     /** JSDoc */
     @js.native
-    sealed trait Exited extends SessionStatus
-    /* "exited" */ val Exited: typings.sentryTypes.sessionMod.SessionStatus.Exited with String = js.native
+    sealed trait Exited
+      extends StObject
+         with SessionStatus
+    /* "exited" */ val Exited: typings.sentryTypes.sessionMod.SessionStatus.Exited & String = js.native
     
     /** JSDoc */
     @js.native
-    sealed trait Ok extends SessionStatus
-    /* "ok" */ val Ok: typings.sentryTypes.sessionMod.SessionStatus.Ok with String = js.native
+    sealed trait Ok
+      extends StObject
+         with SessionStatus
+    /* "ok" */ val Ok: typings.sentryTypes.sessionMod.SessionStatus.Ok & String = js.native
   }
   
   @js.native
-  trait Session extends SessionContext {
+  trait Session
+    extends StObject
+       with SessionContext {
     
     /** JSDoc */
     def close(): Unit = js.native
@@ -54,32 +63,31 @@ object sessionMod {
     def update(context: SessionContext): Unit = js.native
   }
   
-  @js.native
   trait SessionContext extends StObject {
     
-    var did: js.UndefOr[String] = js.native
+    var did: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var errors: js.UndefOr[Double] = js.native
+    var errors: js.UndefOr[Double] = js.undefined
     
-    var ipAddress: js.UndefOr[String] = js.native
+    var ipAddress: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var sid: js.UndefOr[String] = js.native
+    var sid: js.UndefOr[String] = js.undefined
     
-    var started: js.UndefOr[Double] = js.native
+    var started: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[SessionStatus] = js.native
+    var status: js.UndefOr[SessionStatus] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var user: js.UndefOr[User | Null] = js.native
+    var user: js.UndefOr[User | Null] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object SessionContext {
     

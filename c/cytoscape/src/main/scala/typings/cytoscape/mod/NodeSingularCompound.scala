@@ -2,39 +2,37 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/compound-nodes
   */
-@js.native
 trait NodeSingularCompound extends StObject {
   
   /**
     * Get whether the node is a compound child (i.e. contained within a node)
     *  http://js.cytoscape.org/#node.isChild
     */
-  def isChild(): Boolean = js.native
+  def isChild(): Boolean
   
   /**
     * Get whether the node is childless (i.e. a node with no child nodes)
     * http://js.cytoscape.org/#node.isChildless
     */
-  def isChildless(): Boolean = js.native
+  def isChildless(): Boolean
   
   /**
     * Get whether the node is an orphan (i.e. a node with no parent)
     * http://js.cytoscape.org/#node.isOrphan
     */
-  def isOrphan(): Boolean = js.native
+  def isOrphan(): Boolean
   
   /**
     * Get whether the node is a compound parent
     * (i.e. a node containing one or more child nodes)
     * http://js.cytoscape.org/#node.isParent
     */
-  def isParent(): Boolean = js.native
+  def isParent(): Boolean
 }
 object NodeSingularCompound {
   

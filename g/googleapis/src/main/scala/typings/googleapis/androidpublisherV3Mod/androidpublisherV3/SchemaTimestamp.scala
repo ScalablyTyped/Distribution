@@ -2,15 +2,13 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTimestamp extends StObject {
   
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
-  var seconds: js.UndefOr[String] = js.native
+  var seconds: js.UndefOr[String] = js.undefined
 }
 object SchemaTimestamp {
   

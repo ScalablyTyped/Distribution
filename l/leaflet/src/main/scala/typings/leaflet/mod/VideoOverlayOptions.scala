@@ -2,20 +2,20 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoOverlayOptions extends ImageOverlayOptions {
+trait VideoOverlayOptions
+  extends StObject
+     with ImageOverlayOptions {
   
   /** Whether the video starts playing automatically when loaded. */
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the video will save aspect ratio after the projection. */
-  var keepAspectRatio: js.UndefOr[Boolean] = js.native
+  var keepAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the video will loop back to the beginning when played. */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
 }
 object VideoOverlayOptions {
   

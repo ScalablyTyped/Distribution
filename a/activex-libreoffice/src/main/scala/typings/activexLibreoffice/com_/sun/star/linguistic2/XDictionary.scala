@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,18 +19,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XDictionaryEvent
   * @see com.sun.star.container.XNamed
   */
-@js.native
-trait XDictionary extends XNamed {
+trait XDictionary
+  extends StObject
+     with XNamed {
   
   /** @returns the number of entries in the dictionary. */
-  val Count: Double = js.native
+  val Count: Double
   
   /**
     * returns the type of the dictionary.
     * @returns the type of the dictionary.
     * @see com.sun.star.linguistic2.DictionaryType
     */
-  val DictionaryType: typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType = js.native
+  val DictionaryType: typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType
   
   /**
     * This function should no longer be used since with the expansion of the maximum number of allowed entries the result may become unreasonable large!
@@ -40,13 +40,13 @@ trait XDictionary extends XNamed {
     * @see com.sun.star.linguistic2.XDictionaryEntry
     * @see com.sun.star.linguistic2.XSearchableDictionary
     */
-  val Entries: SafeArray[XDictionaryEntry] = js.native
+  val Entries: SafeArray[XDictionaryEntry]
   
   /**
     * @returns the language of the dictionary.
     * @see com.sun.star.lang.Locale
     */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /**
     * is used to make an entry in the dictionary.
@@ -60,7 +60,7 @@ trait XDictionary extends XNamed {
     * @returns `TRUE` if the entry was successfully added, `FALSE` otherwise.
     * @see com.sun.star.linguistic2.DictionaryType
     */
-  def add(aWord: String, bIsNegative: Boolean, aRplcText: String): Boolean = js.native
+  def add(aWord: String, bIsNegative: Boolean, aRplcText: String): Boolean
   
   /**
     * adds an entry to the list of dictionary event listeners.
@@ -72,7 +72,7 @@ trait XDictionary extends XNamed {
     * @see com.sun.star.linguistic2.XDictionary.removeDictionaryEventListener()
     * @see com.sun.star.linguistic2.XDictionaryEventListener
     */
-  def addDictionaryEventListener(xListener: XDictionaryEventListener): Boolean = js.native
+  def addDictionaryEventListener(xListener: XDictionaryEventListener): Boolean
   
   /**
     * is used to add an entry to the dictionary.
@@ -85,20 +85,20 @@ trait XDictionary extends XNamed {
     * @see com.sun.star.linguistic2.XDictionaryEntry
     * @see com.sun.star.linguistic2.DictionaryType
     */
-  def addEntry(xDicEntry: XDictionaryEntry): Boolean = js.native
+  def addEntry(xDicEntry: XDictionaryEntry): Boolean
   
   /** removes all entries from the dictionary. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** @returns the number of entries in the dictionary. */
-  def getCount(): Double = js.native
+  def getCount(): Double
   
   /**
     * returns the type of the dictionary.
     * @returns the type of the dictionary.
     * @see com.sun.star.linguistic2.DictionaryType
     */
-  def getDictionaryType(): typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType = js.native
+  def getDictionaryType(): typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType
   
   /**
     * This function should no longer be used since with the expansion of the maximum number of allowed entries the result may become unreasonable large!
@@ -107,7 +107,7 @@ trait XDictionary extends XNamed {
     * @see com.sun.star.linguistic2.XDictionaryEntry
     * @see com.sun.star.linguistic2.XSearchableDictionary
     */
-  def getEntries(): SafeArray[XDictionaryEntry] = js.native
+  def getEntries(): SafeArray[XDictionaryEntry]
   
   /**
     * searches for an entry that matches the given word.
@@ -115,26 +115,26 @@ trait XDictionary extends XNamed {
     * @returns the reference to the entry found. If no entry was found, it is NULL.
     * @see com.sun.star.linguistic2.XDictionaryEntry
     */
-  def getEntry(aWord: String): XDictionaryEntry = js.native
+  def getEntry(aWord: String): XDictionaryEntry
   
   /**
     * @returns the language of the dictionary.
     * @see com.sun.star.lang.Locale
     */
-  def getLocale(): Locale = js.native
+  def getLocale(): Locale
   
   /** @returns `TRUE` if the dictionary is active, `FALSE` otherwise. */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /** @returns `TRUE` if the dictionary is full and no further entry can be made, `FALSE` otherwise. */
-  def isFull(): Boolean = js.native
+  def isFull(): Boolean
   
   /**
     * removes an entry from the dictionary.
     * @param aWord the word matching the entry to be removed.
     * @returns `TRUE` if the entry was successfully removed, `FALSE` otherwise (especially if the entry was not found).
     */
-  def remove(aWord: String): Boolean = js.native
+  def remove(aWord: String): Boolean
   
   /**
     * removes an entry from the list of dictionary event listeners.
@@ -143,20 +143,20 @@ trait XDictionary extends XNamed {
     * @see com.sun.star.linguistic2.XDictionary.addDictionaryEventListener()
     * @see com.sun.star.linguistic2.XDictionaryEventListener
     */
-  def removeDictionaryEventListener(xListener: XDictionaryEventListener): Boolean = js.native
+  def removeDictionaryEventListener(xListener: XDictionaryEventListener): Boolean
   
   /**
     * specifies whether the dictionary should be used or not .
     * @param bActivate `TRUE` if the dictionary should be used, `FALSE` otherwise.
     */
-  def setActive(bActivate: Boolean): Unit = js.native
+  def setActive(bActivate: Boolean): Unit
   
   /**
     * is used to set the language of the dictionary.
     * @param aLocale the new language of the dictionary.
     * @see com.sun.star.lang.Locale
     */
-  def setLocale(aLocale: Locale): Unit = js.native
+  def setLocale(aLocale: Locale): Unit
 }
 object XDictionary {
   

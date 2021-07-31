@@ -2,58 +2,57 @@ package typings.enamdict
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("enamdict", "find")
+  @JSImport("enamdict", JSImport.Namespace)
   @js.native
-  def find(romajiName: String): Entries = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("enamdict", "findKanji")
-  @js.native
-  def findKanji(kanjiName: String): Entries = js.native
+  @scala.inline
+  def find(romajiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(romajiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
   
-  @JSImport("enamdict", "init")
-  @js.native
-  def init(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def findKanji(kanjiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("findKanji")(kanjiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
   
-  @js.native
+  @scala.inline
+  def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Entries extends StObject {
     
     /**
       * Returns an array of objects representing matching entries.
       */
-    def entries(): js.Array[Entry] = js.native
+    def entries(): js.Array[Entry]
     
     /**
       * If a query was done with `.find()` then this will return a string representing the Kana reading of the name.
       *
       * If a query was done with `.findKanji()` then this will return an array of all the possible Kana readings of the Kanji.
       */
-    def kana(): String | js.Array[String] = js.native
+    def kana(): String | js.Array[String]
     
     /**
       * If a query was done with `.find()` then this will return an array of all the possible Kanji versions of the name.
       *
       * If a query was done with `.findKanji()` then this will return a string representing the Kanji version of the name.
       */
-    def kanji(): String | js.Array[String] = js.native
+    def kanji(): String | js.Array[String]
     
     /**
       * If a query was done with .find() then this will return a string representing the Romaji reading of the name.
       *
       * If a query was done with `.findKanji()` then this will return an array of all the possible Romaji readings of the Kanji.
       */
-    def romaji(): String | js.Array[String] = js.native
+    def romaji(): String | js.Array[String]
     
     /**
       * Returns the most popular type of the name, aggregated from all matching entries.
       * For example if 5 entries were found, three of which were "surname", 1 of which was "given", and 1 of which was "unknown" then this method would return "surname".
       * Returns the same possible values as the type property itself.
       */
-    def `type`(): NameType = js.native
+    def `type`(): NameType
   }
   object Entries {
     
@@ -90,28 +89,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
     /**
       *  A string holding a Kana representation of a name.
       */
-    var kana: String | js.Array[String] = js.native
+    var kana: String | js.Array[String]
     
     /**
       * A string holding a Kanji representation of a name.
       */
-    var kanji: String | js.Array[String] = js.native
+    var kanji: String | js.Array[String]
     
     /**
       * A string holding an English (Romaji) representation of a name.
       */
-    var romaji: String | js.Array[String] = js.native
+    var romaji: String | js.Array[String]
     
     /**
       * A string that represents the type of the name.
       */
-    var `type`: NameType = js.native
+    var `type`: NameType
   }
   object Entry {
     
@@ -156,13 +154,13 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.enamdict.enamdictStrings.unknown
     - typings.enamdict.enamdictStrings.surname
-    - typings.enamdict.enamdictStrings.given
+    - typings.enamdict.enamdictStrings.`given`
   */
   trait NameType extends StObject
   object NameType {
     
     @scala.inline
-    def given: typings.enamdict.enamdictStrings.given = "given".asInstanceOf[typings.enamdict.enamdictStrings.given]
+    def `given`: typings.enamdict.enamdictStrings.`given` = "given".asInstanceOf[typings.enamdict.enamdictStrings.`given`]
     
     @scala.inline
     def surname: typings.enamdict.enamdictStrings.surname = "surname".asInstanceOf[typings.enamdict.enamdictStrings.surname]

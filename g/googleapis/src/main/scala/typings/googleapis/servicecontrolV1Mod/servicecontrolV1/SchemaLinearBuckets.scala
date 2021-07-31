@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describing buckets with constant width.
   */
-@js.native
 trait SchemaLinearBuckets extends StObject {
   
   /**
@@ -16,21 +14,21 @@ trait SchemaLinearBuckets extends StObject {
     * the total number of buckets is `num_finite_buckets` + 2. See comments on
     * `bucket_options` for details.
     */
-  var numFiniteBuckets: js.UndefOr[Double] = js.native
+  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * The i&#39;th linear bucket covers the interval   [offset + (i-1) * width,
     * offset + i * width) where i ranges from 1 to num_finite_buckets,
     * inclusive.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The i&#39;th linear bucket covers the interval   [offset + (i-1) * width,
     * offset + i * width) where i ranges from 1 to num_finite_buckets,
     * inclusive. Must be strictly positive.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaLinearBuckets {
   

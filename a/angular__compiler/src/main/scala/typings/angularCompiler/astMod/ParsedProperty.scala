@@ -3,7 +3,6 @@ package typings.angularCompiler.astMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ParsedProperty")
@@ -22,7 +21,7 @@ class ParsedProperty protected () extends StObject {
     expression: ASTWithSource,
     `type`: ParsedPropertyType,
     sourceSpan: ParseSourceSpan,
-    keySpan: js.UndefOr[scala.Nothing],
+    keySpan: Unit,
     valueSpan: ParseSourceSpan
   ) = this()
   def this(

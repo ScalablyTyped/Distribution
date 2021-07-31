@@ -2,7 +2,6 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,9 +74,12 @@ trait TextDocument extends StObject {
 }
 object TextDocument {
   
-  @JSImport("vscode-languageserver-types", "TextDocument.applyEdits")
+  @JSImport("vscode-languageserver-types", "TextDocument")
   @js.native
-  def applyEdits(document: TextDocument, edits: js.Array[TextEdit]): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def applyEdits(document: TextDocument, edits: js.Array[TextEdit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEdits")(document.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Creates a new ITextDocument literal from the given uri and content.
@@ -85,14 +87,12 @@ object TextDocument {
     * @param languageId  The document's language Id.
     * @param content The document's content.
     */
-  @JSImport("vscode-languageserver-types", "TextDocument.create")
-  @js.native
-  def create(uri: DocumentUri, languageId: String, version: Double, content: String): TextDocument = js.native
+  @scala.inline
+  def create(uri: DocumentUri, languageId: String, version: Double, content: String): TextDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[TextDocument]
   
   /**
     * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
     */
-  @JSImport("vscode-languageserver-types", "TextDocument.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean]
 }

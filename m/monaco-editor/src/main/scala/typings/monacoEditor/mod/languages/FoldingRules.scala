@@ -2,16 +2,14 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldingRules extends StObject {
   
   /**
     * Region markers used by the language.
     */
-  var markers: js.UndefOr[FoldingMarkers] = js.native
+  var markers: js.UndefOr[FoldingMarkers] = js.undefined
   
   /**
     * Used by the indentation based strategy to decide whether empty lines belong to the previous or the next block.
@@ -19,7 +17,7 @@ trait FoldingRules extends StObject {
     * See [wikipedia](https://en.wikipedia.org/wiki/Off-side_rule) for more information.
     * If not set, `false` is used and empty lines belong to the previous block.
     */
-  var offSide: js.UndefOr[Boolean] = js.native
+  var offSide: js.UndefOr[Boolean] = js.undefined
 }
 object FoldingRules {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,5 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to define and use a DataViewDefinition.
   */
 // tslint:disable-next-line: no-empty-interface
-@js.native
 trait DataViewDefinition extends StObject

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRowAccessPoliciesResponse extends StObject {
   
   /** A token to request the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Row access policies on the requested table. */
-  var rowAccessPolicies: js.UndefOr[js.Array[RowAccessPolicy]] = js.native
+  var rowAccessPolicies: js.UndefOr[js.Array[RowAccessPolicy]] = js.undefined
 }
 object ListRowAccessPoliciesResponse {
   

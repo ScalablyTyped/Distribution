@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRulePayload extends StObject {
   
   /**
     * The actions associated with the rule.
     */
-  var actions: ActionList = js.native
+  var actions: ActionList
   
   /**
     * The version of the SQL rules engine to use when evaluating the rule.
     */
-  var awsIotSqlVersion: js.UndefOr[AwsIotSqlVersion] = js.native
+  var awsIotSqlVersion: js.UndefOr[AwsIotSqlVersion] = js.undefined
   
   /**
     * The description of the rule.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The action to take when an error occurs.
     */
-  var errorAction: js.UndefOr[Action] = js.native
+  var errorAction: js.UndefOr[Action] = js.undefined
   
   /**
     * Specifies whether the rule is disabled.
     */
-  var ruleDisabled: js.UndefOr[IsDisabled] = js.native
+  var ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
   
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference in the AWS IoT Developer Guide.
     */
-  var sql: SQL = js.native
+  var sql: SQL
 }
 object TopicRulePayload {
   

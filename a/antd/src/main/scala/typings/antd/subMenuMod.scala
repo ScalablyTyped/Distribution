@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subMenuMod {
@@ -44,32 +43,31 @@ object subMenuMod {
     def renderTitle(inlineCollapsed: Boolean): js.UndefOr[js.Object | Null] = js.native
   }
   
-  @js.native
   trait SubMenuProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+    var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
     
-    var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+    var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
     
-    var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+    var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
     
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
-    var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var rootPrefixCls: js.UndefOr[String] = js.native
+    var rootPrefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object SubMenuProps {
     
@@ -156,12 +154,11 @@ object subMenuMod {
     }
   }
   
-  @js.native
   trait TitleEventEntity extends StObject {
     
-    var domEvent: Event = js.native
+    var domEvent: Event
     
-    var key: String = js.native
+    var key: String
   }
   object TitleEventEntity {
     

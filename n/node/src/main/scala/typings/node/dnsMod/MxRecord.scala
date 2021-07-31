@@ -2,15 +2,13 @@ package typings.node.dnsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MxRecord extends StObject {
   
-  var exchange: String = js.native
+  var exchange: String
   
-  var priority: Double = js.native
+  var priority: Double
 }
 object MxRecord {
   

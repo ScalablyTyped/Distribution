@@ -12,7 +12,6 @@ import typings.jsonwebtoken.mod.VerifyOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,28 +20,27 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[RegisterOptions] = js.native
   
-  @js.native
   trait ErrorContext extends StObject {
     
     /**
       * attributes passed into the Boom method call
       */
-    var attributes: js.UndefOr[StringDictionary[String]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Boom method to call (eg. unauthorized)
       */
-    var errorType: String = js.native
+    var errorType: String
     
     /**
       * message passed into the Boom method call
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * schema passed into the Boom method call
       */
-    var schema: String = js.native
+    var schema: String
   }
   object ErrorContext {
     
@@ -75,13 +73,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ExtraInfo extends StObject
   
   /**
     * Options passed to `hapi.auth.strategy` when this plugin is used
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -89,7 +85,7 @@ object mod extends Shortcut {
       * POST bodies
       * @default false
       */
-    var attemptToExtractTokenInPayload: js.UndefOr[Boolean] = js.native
+    var attemptToExtractTokenInPayload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true` to receive the complete token (`decoded.header`,
@@ -97,7 +93,7 @@ object mod extends Shortcut {
       * lookup and `verifyFunc` callbacks (*not `validateFunc`*)
       * @default false
       */
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you prefer to set your own cookie key or your project has a cookie
@@ -106,14 +102,14 @@ object mod extends Shortcut {
       * set cookieKey to `false` or ''.
       * @default 'token'
       */
-    var cookieKey: js.UndefOr[String | Boolean] = js.native
+    var cookieKey: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Custom token extraction function used to allow consumers to pull tokens from
       * sources not foreseen by the module, for example... YAR
       * @default false
       */
-    var customExtractionFunc: js.UndefOr[js.Function1[/* request */ Request, String]] = js.native
+    var customExtractionFunc: js.UndefOr[js.Function1[/* request */ Request, String]] = js.undefined
     
     /**
       *
@@ -124,7 +120,7 @@ object mod extends Shortcut {
       */
     var errorFunc: js.UndefOr[
         js.Function3[/* ctx */ ErrorContext, /* request */ Request, /* h */ ResponseToolkit, ErrorContext]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If you want to set a custom key for your header token use the
@@ -132,14 +128,14 @@ object mod extends Shortcut {
       * ''.
       * @default 'authorization'
       */
-    var headerKey: js.UndefOr[String | Boolean] = js.native
+    var headerKey: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * The secret key used to check the signature of the token *or* a *key lookup function*
       */
     var key: js.UndefOr[
         String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If you want to set a custom key for your payload token use the
@@ -147,7 +143,7 @@ object mod extends Shortcut {
       * ''.
       * @default 'token'
       */
-    var payloadKey: js.UndefOr[String | Boolean] = js.native
+    var payloadKey: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * function called to decorate the response with authentication headers
@@ -162,12 +158,12 @@ object mod extends Shortcut {
           /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allow custom token type, e.g. `Authorization: <tokenType> 12345678`
       */
-    var tokenType: js.UndefOr[String] = js.native
+    var tokenType: js.UndefOr[String] = js.undefined
     
     /**
       * If you prefer to pass your token via url, simply add a token url
@@ -175,7 +171,7 @@ object mod extends Shortcut {
       * To disable the url parameter set urlKey to `false` or ''.
       * @default 'token'
       */
-    var urlKey: js.UndefOr[String | Boolean] = js.native
+    var urlKey: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * The function which is run once the Token has been decoded
@@ -183,12 +179,12 @@ object mod extends Shortcut {
       * @param decoded the *decoded* and *verified* JWT received from the client in *request.headers.authorization*
       * @param request the original *request* received from the client
       */
-    def validate(decoded: js.Object, request: Request, tk: ResponseToolkit): ValidationResult | js.Promise[ValidationResult] = js.native
+    def validate(decoded: js.Object, request: Request, tk: ResponseToolkit): ValidationResult | js.Promise[ValidationResult]
     
     /**
       * Settings to define how tokens are verified by the jsonwebtoken library
       */
-    var verifyOptions: js.UndefOr[VerifyOptions] = js.native
+    var verifyOptions: js.UndefOr[VerifyOptions] = js.undefined
   }
   object Options {
     
@@ -288,7 +284,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RegisterOptions extends StObject {
     
     /**
@@ -296,7 +291,7 @@ object mod extends Shortcut {
       */
     var verify: js.UndefOr[
         js.Function2[/* decoded */ js.Any, /* request */ Request, js.Promise[Credentials]]
-      ] = js.native
+      ] = js.undefined
   }
   object RegisterOptions {
     
@@ -317,16 +312,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ValidationResult extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var response: js.UndefOr[ResponseObject] = js.native
+    var response: js.UndefOr[ResponseObject] = js.undefined
   }
   object ValidationResult {
     

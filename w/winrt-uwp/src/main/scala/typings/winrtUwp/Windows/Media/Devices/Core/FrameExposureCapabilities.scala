@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the exposure time capabilities of the capture device for frames in a variable photo sequences. */
-@js.native
 trait FrameExposureCapabilities extends StObject {
   
   /** Gets the maximum exposure time supported by the capture device. */
-  var max: Double = js.native
+  var max: Double
   
   /** Gets the minimum exposure time supported by the capture device. */
-  var min: Double = js.native
+  var min: Double
   
   /** Gets the smallest exposure time increment supported by the capture device. */
-  var step: Double = js.native
+  var step: Double
   
   /** Gets a value that indicates if the capture device supports the exposure control for variable photo sequences. */
-  var supported: Boolean = js.native
+  var supported: Boolean
 }
 object FrameExposureCapabilities {
   

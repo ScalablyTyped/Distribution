@@ -2,46 +2,44 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUploadStatusResponse extends StObject {
   
   /**
     * The date at which the upload was created.
     */
-  var createdDate: Timestamp = js.native
+  var createdDate: Timestamp
   
   /**
     * The reason for an upload failure.
     */
-  var failureReason: js.UndefOr[StringList] = js.native
+  var failureReason: js.UndefOr[StringList] = js.undefined
   
   /**
     * The ARN of the upload.
     */
-  var namespaceArn: js.UndefOr[Arn] = js.native
+  var namespaceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the upload's namespace.
     */
-  var namespaceName: js.UndefOr[NamespaceName] = js.native
+  var namespaceName: js.UndefOr[NamespaceName] = js.undefined
   
   /**
     * The version of the user's namespace. Defaults to the latest version of the user's namespace.
     */
-  var namespaceVersion: js.UndefOr[Version] = js.native
+  var namespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The ID of the upload.
     */
-  var uploadId: UploadId = js.native
+  var uploadId: UploadId
   
   /**
     * The status of the upload. The initial status is IN_PROGRESS. The response show all validation failures if the upload fails.
     */
-  var uploadStatus: UploadStatus = js.native
+  var uploadStatus: UploadStatus
 }
 object GetUploadStatusResponse {
   

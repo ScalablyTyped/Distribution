@@ -4,7 +4,6 @@ import typings.rcEasyui.anon.IsMatch
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "TreeGrid")
@@ -37,9 +36,12 @@ object TreeGrid {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.contextTypes.locale
       @JSImport("rc-easyui", "TreeGrid.contextTypes.locale.isRequired")
@@ -49,9 +51,12 @@ object TreeGrid {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.contextTypes.t
       @JSImport("rc-easyui", "TreeGrid.contextTypes.t.isRequired")
@@ -61,6 +66,10 @@ object TreeGrid {
   }
   
   object defaultProps {
+    
+    @JSImport("rc-easyui", "TreeGrid.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("rc-easyui", "TreeGrid.defaultProps.animate")
     @js.native
@@ -102,9 +111,8 @@ object TreeGrid {
     @js.native
     val defaultLoadMsg: String = js.native
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.filter")
-    @js.native
-    def filter(e: js.Any, t: js.Any, n: js.Any): js.Any = js.native
+    @scala.inline
+    def filter(e: js.Any, t: js.Any, n: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("rc-easyui", "TreeGrid.defaultProps.filterBtnPosition")
     @js.native
@@ -213,6 +221,10 @@ object TreeGrid {
     @js.native
     val frozenWidth: String = js.native
     
+    @JSImport("rc-easyui", "TreeGrid.defaultProps.lazy")
+    @js.native
+    val `lazy`: Boolean = js.native
+    
     @JSImport("rc-easyui", "TreeGrid.defaultProps.loading")
     @js.native
     val loading: Boolean = js.native
@@ -221,105 +233,80 @@ object TreeGrid {
     @js.native
     val multiSort: Boolean = js.native
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCellClick")
-    @js.native
-    def onCellClick(): Unit = js.native
+    @scala.inline
+    def onCellClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCellContextMenu")
-    @js.native
-    def onCellContextMenu(e: js.Any): Unit = js.native
+    @scala.inline
+    def onCellContextMenu(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellContextMenu")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCellDblClick")
-    @js.native
-    def onCellDblClick(): Unit = js.native
+    @scala.inline
+    def onCellDblClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellDblClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCellSelect")
-    @js.native
-    def onCellSelect(): Unit = js.native
+    @scala.inline
+    def onCellSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCellUnselect")
-    @js.native
-    def onCellUnselect(): Unit = js.native
+    @scala.inline
+    def onCellUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onCheckChange")
-    @js.native
-    def onCheckChange(e: js.Any): Unit = js.native
+    @scala.inline
+    def onCheckChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCheckChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onColumnMove")
-    @js.native
-    def onColumnMove(e: js.Any): Unit = js.native
+    @scala.inline
+    def onColumnMove(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onColumnMove")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onColumnResize")
-    @js.native
-    def onColumnResize(e: js.Any): Unit = js.native
+    @scala.inline
+    def onColumnResize(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onColumnResize")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onEditBegin")
-    @js.native
-    def onEditBegin(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditBegin(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditBegin")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onEditCancel")
-    @js.native
-    def onEditCancel(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditCancel(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditCancel")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onEditEnd")
-    @js.native
-    def onEditEnd(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditEnd(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditEnd")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onEditValidate")
-    @js.native
-    def onEditValidate(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditValidate(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditValidate")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onFilterChange")
-    @js.native
-    def onFilterChange(): Unit = js.native
+    @scala.inline
+    def onFilterChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFilterChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onPageChange")
-    @js.native
-    def onPageChange(): Unit = js.native
+    @scala.inline
+    def onPageChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowCheck")
-    @js.native
-    def onRowCheck(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowCheck(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowCheck")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowClick")
-    @js.native
-    def onRowClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowCollapse")
-    @js.native
-    def onRowCollapse(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowCollapse(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowCollapse")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowContextMenu")
-    @js.native
-    def onRowContextMenu(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowContextMenu(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowContextMenu")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowDblClick")
-    @js.native
-    def onRowDblClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowDblClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowDblClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowExpand")
-    @js.native
-    def onRowExpand(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowExpand(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowExpand")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowSelect")
-    @js.native
-    def onRowSelect(): Unit = js.native
+    @scala.inline
+    def onRowSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowUncheck")
-    @js.native
-    def onRowUncheck(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowUncheck(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowUncheck")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onRowUnselect")
-    @js.native
-    def onRowUnselect(): Unit = js.native
+    @scala.inline
+    def onRowUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onSelectionChange")
-    @js.native
-    def onSelectionChange(): Unit = js.native
+    @scala.inline
+    def onSelectionChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.onSortChange")
-    @js.native
-    def onSortChange(): Unit = js.native
+    @scala.inline
+    def onSortChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSortChange")().asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "TreeGrid.defaultProps.pageNumber")
     @js.native
@@ -368,19 +355,18 @@ object TreeGrid {
     @JSImport("rc-easyui", "TreeGrid.defaultProps.virtualScroll")
     @js.native
     val virtualScroll: Boolean = js.native
-    
-    @JSImport("rc-easyui", "TreeGrid.defaultProps.lazy")
-    @js.native
-    val `lazy`: Boolean = js.native
   }
   
   object propTypes {
     
     object animate {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.animate")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.animate
       @JSImport("rc-easyui", "TreeGrid.propTypes.animate.isRequired")
@@ -390,9 +376,12 @@ object TreeGrid {
     
     object border {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.border")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.border
       @JSImport("rc-easyui", "TreeGrid.propTypes.border.isRequired")
@@ -402,9 +391,12 @@ object TreeGrid {
     
     object cascadeCheck {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.cascadeCheck")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.cascadeCheck
       @JSImport("rc-easyui", "TreeGrid.propTypes.cascadeCheck.isRequired")
@@ -414,9 +406,12 @@ object TreeGrid {
     
     object checkbox {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.checkbox")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.checkbox
       @JSImport("rc-easyui", "TreeGrid.propTypes.checkbox.isRequired")
@@ -426,9 +421,12 @@ object TreeGrid {
     
     object clickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.clickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.clickToEdit
       @JSImport("rc-easyui", "TreeGrid.propTypes.clickToEdit.isRequired")
@@ -438,9 +436,12 @@ object TreeGrid {
     
     object columnMoving {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.columnMoving")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.columnMoving
       @JSImport("rc-easyui", "TreeGrid.propTypes.columnMoving.isRequired")
@@ -450,9 +451,12 @@ object TreeGrid {
     
     object data {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.data")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.data
       @JSImport("rc-easyui", "TreeGrid.propTypes.data.isRequired")
@@ -462,9 +466,12 @@ object TreeGrid {
     
     object dblclickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.dblclickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.dblclickToEdit
       @JSImport("rc-easyui", "TreeGrid.propTypes.dblclickToEdit.isRequired")
@@ -474,9 +481,12 @@ object TreeGrid {
     
     object editMode {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.editMode")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.editMode
       @JSImport("rc-easyui", "TreeGrid.propTypes.editMode.isRequired")
@@ -486,9 +496,12 @@ object TreeGrid {
     
     object filter {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filter")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filter
       @JSImport("rc-easyui", "TreeGrid.propTypes.filter.isRequired")
@@ -498,9 +511,12 @@ object TreeGrid {
     
     object filterBtnPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterBtnPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterBtnPosition
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterBtnPosition.isRequired")
@@ -510,9 +526,12 @@ object TreeGrid {
     
     object filterDelay {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterDelay")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterDelay
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterDelay.isRequired")
@@ -522,9 +541,12 @@ object TreeGrid {
     
     object filterIncludingChild {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterIncludingChild")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterIncludingChild
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterIncludingChild.isRequired")
@@ -534,9 +556,12 @@ object TreeGrid {
     
     object filterMatchingType {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterMatchingType")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterMatchingType
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterMatchingType.isRequired")
@@ -546,9 +571,12 @@ object TreeGrid {
     
     object filterOperators {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterOperators")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterOperators
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterOperators.isRequired")
@@ -558,9 +586,12 @@ object TreeGrid {
     
     object filterPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterPosition
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterPosition.isRequired")
@@ -570,9 +601,12 @@ object TreeGrid {
     
     object filterRules {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterRules")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterRules
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterRules.isRequired")
@@ -582,9 +616,12 @@ object TreeGrid {
     
     object filterable {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterable")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.filterable
       @JSImport("rc-easyui", "TreeGrid.propTypes.filterable.isRequired")
@@ -594,9 +631,12 @@ object TreeGrid {
     
     object footerData {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.footerData")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.footerData
       @JSImport("rc-easyui", "TreeGrid.propTypes.footerData.isRequired")
@@ -606,9 +646,12 @@ object TreeGrid {
     
     object frozenAlign {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.frozenAlign")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.frozenAlign
       @JSImport("rc-easyui", "TreeGrid.propTypes.frozenAlign.isRequired")
@@ -618,9 +661,12 @@ object TreeGrid {
     
     object frozenWidth {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.frozenWidth")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.frozenWidth
       @JSImport("rc-easyui", "TreeGrid.propTypes.frozenWidth.isRequired")
@@ -630,9 +676,12 @@ object TreeGrid {
     
     object idField {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.idField")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.idField
       @JSImport("rc-easyui", "TreeGrid.propTypes.idField.isRequired")
@@ -640,11 +689,29 @@ object TreeGrid {
       val isRequired: js.Any = js.native
     }
     
+    object `lazy` {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSImport("rc-easyui", "TreeGrid.propTypes.lazy")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      // Circular reference from rc_easyui.TreeGrid.propTypes.lazy
+      @JSImport("rc-easyui", "TreeGrid.propTypes.lazy.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
     object loadMsg {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "TreeGrid.propTypes.loadMsg")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.loadMsg
       @JSImport("rc-easyui", "TreeGrid.propTypes.loadMsg.isRequired")
@@ -654,9 +721,12 @@ object TreeGrid {
     
     object loading {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.loading")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.loading
       @JSImport("rc-easyui", "TreeGrid.propTypes.loading.isRequired")
@@ -666,9 +736,12 @@ object TreeGrid {
     
     object multiSort {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.multiSort")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.multiSort
       @JSImport("rc-easyui", "TreeGrid.propTypes.multiSort.isRequired")
@@ -678,9 +751,12 @@ object TreeGrid {
     
     object pageNumber {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageNumber")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.pageNumber
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageNumber.isRequired")
@@ -690,9 +766,12 @@ object TreeGrid {
     
     object pageOptions {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageOptions")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.pageOptions
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageOptions.isRequired")
@@ -702,9 +781,12 @@ object TreeGrid {
     
     object pagePosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.pagePosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.pagePosition
       @JSImport("rc-easyui", "TreeGrid.propTypes.pagePosition.isRequired")
@@ -714,9 +796,12 @@ object TreeGrid {
     
     object pageSize {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageSize")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.pageSize
       @JSImport("rc-easyui", "TreeGrid.propTypes.pageSize.isRequired")
@@ -726,9 +811,12 @@ object TreeGrid {
     
     object pagination {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.pagination")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.pagination
       @JSImport("rc-easyui", "TreeGrid.propTypes.pagination.isRequired")
@@ -738,9 +826,12 @@ object TreeGrid {
     
     object rowCss {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.rowCss")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.rowCss
       @JSImport("rc-easyui", "TreeGrid.propTypes.rowCss.isRequired")
@@ -750,9 +841,12 @@ object TreeGrid {
     
     object rowHeight {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.rowHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.rowHeight
       @JSImport("rc-easyui", "TreeGrid.propTypes.rowHeight.isRequired")
@@ -762,9 +856,12 @@ object TreeGrid {
     
     object selection {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.selection")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.selection
       @JSImport("rc-easyui", "TreeGrid.propTypes.selection.isRequired")
@@ -774,9 +871,12 @@ object TreeGrid {
     
     object selectionMode {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.selectionMode")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.selectionMode
       @JSImport("rc-easyui", "TreeGrid.propTypes.selectionMode.isRequired")
@@ -786,9 +886,12 @@ object TreeGrid {
     
     object showFooter {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.showFooter")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.showFooter
       @JSImport("rc-easyui", "TreeGrid.propTypes.showFooter.isRequired")
@@ -798,9 +901,12 @@ object TreeGrid {
     
     object showHeader {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.showHeader")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.showHeader
       @JSImport("rc-easyui", "TreeGrid.propTypes.showHeader.isRequired")
@@ -810,9 +916,12 @@ object TreeGrid {
     
     object sorts {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.sorts")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.sorts
       @JSImport("rc-easyui", "TreeGrid.propTypes.sorts.isRequired")
@@ -822,9 +931,12 @@ object TreeGrid {
     
     object striped {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.striped")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.striped
       @JSImport("rc-easyui", "TreeGrid.propTypes.striped.isRequired")
@@ -834,9 +946,12 @@ object TreeGrid {
     
     object total {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.total")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.total
       @JSImport("rc-easyui", "TreeGrid.propTypes.total.isRequired")
@@ -846,9 +961,12 @@ object TreeGrid {
     
     object treeField {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.treeField")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.treeField
       @JSImport("rc-easyui", "TreeGrid.propTypes.treeField.isRequired")
@@ -858,24 +976,15 @@ object TreeGrid {
     
     object virtualScroll {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "TreeGrid.propTypes.virtualScroll")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.TreeGrid.propTypes.virtualScroll
       @JSImport("rc-easyui", "TreeGrid.propTypes.virtualScroll.isRequired")
-      @js.native
-      val isRequired: js.Any = js.native
-    }
-    
-    object `lazy` {
-      
-      @JSImport("rc-easyui", "TreeGrid.propTypes.lazy")
-      @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.TreeGrid.propTypes.lazy
-      @JSImport("rc-easyui", "TreeGrid.propTypes.lazy.isRequired")
       @js.native
       val isRequired: js.Any = js.native
     }

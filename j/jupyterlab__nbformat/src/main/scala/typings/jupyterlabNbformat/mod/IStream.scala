@@ -3,35 +3,34 @@ package typings.jupyterlabNbformat.mod
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStream
-  extends IBaseOutput
+  extends StObject
+     with IBaseOutput
      with _IOutput {
   
   /**
     * The name of the stream.
     */
-  var name: StreamType = js.native
+  var name: StreamType
   
   /**
     * Type of cell output.
     */
   @JSName("output_type")
-  var output_type_IStream: stream = js.native
+  var output_type_IStream: stream
   
   /**
     * The stream's text output.
     */
-  var text: MultilineString = js.native
+  var text: MultilineString
 }
 object IStream {
   
   @scala.inline
-  def apply(name: StreamType, output_type: stream, text: MultilineString): IStream = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  def apply(name: StreamType, text: MultilineString): IStream = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], output_type = "stream", text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStream]
   }
   

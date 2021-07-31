@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -69,6 +68,10 @@ object connectionMod {
   /* static members */
   object Connection {
     
+    @JSImport("@pulumi/aws/directconnect/connection", "Connection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Connection resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -78,50 +81,44 @@ object connectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Connection = js.native
-    @JSImport("@pulumi/aws/directconnect/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Connection = js.native
-    @JSImport("@pulumi/aws/directconnect/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState): Connection = js.native
-    @JSImport("@pulumi/aws/directconnect/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
     
     /**
       * Returns true if the given object is an instance of Connection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/connection", "Connection.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean]
   }
   
-  @js.native
   trait ConnectionArgs extends StObject {
     
     /**
       * The bandwidth of the connection. Valid values for dedicated connections: 1Gbps, 10Gbps. Valid values for hosted connections: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.
       */
-    val bandwidth: Input[String] = js.native
+    val bandwidth: Input[String]
     
     /**
       * The AWS Direct Connect location where the connection is located. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
       */
-    val location: Input[String] = js.native
+    val location: Input[String]
     
     /**
       * The name of the connection.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ConnectionArgs {
     
@@ -154,48 +151,47 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait ConnectionState extends StObject {
     
     /**
       * The ARN of the connection.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Direct Connect endpoint on which the physical connection terminates.
       */
-    val awsDevice: js.UndefOr[Input[String]] = js.native
+    val awsDevice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The bandwidth of the connection. Valid values for dedicated connections: 1Gbps, 10Gbps. Valid values for hosted connections: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.
       */
-    val bandwidth: js.UndefOr[Input[String]] = js.native
+    val bandwidth: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the connection supports a secondary BGP peer in the same address family (IPv4/IPv6).
       */
-    val hasLogicalRedundancy: js.UndefOr[Input[String]] = js.native
+    val hasLogicalRedundancy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean value representing if jumbo frames have been enabled for this connection.
       */
-    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.native
+    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AWS Direct Connect location where the connection is located. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
       */
-    val location: js.UndefOr[Input[String]] = js.native
+    val location: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the connection.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ConnectionState {
     

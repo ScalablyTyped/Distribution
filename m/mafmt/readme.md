@@ -10,9 +10,9 @@ A multiaddr validator
 | ------------------ | :-------------: |
 | Full name          | mafmt |
 | Keywords           | multiaddr |
-| # releases         | 14 |
-| # dependents       | 38 |
-| # downloads        | 848689 |
+| # releases         | 15 |
+| # dependents       | 42 |
+| # downloads        | 941078 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseObservableMod {
@@ -15,14 +14,16 @@ object promiseObservableMod {
   /* static members */
   object PromiseObservable {
     
-    @JSImport("rxjs/observable/PromiseObservable", "PromiseObservable.create")
+    @JSImport("rxjs/observable/PromiseObservable", "PromiseObservable")
     @js.native
-    def create[T](promise: js.Thenable[T]): js.Any = js.native
-    @JSImport("rxjs/observable/PromiseObservable", "PromiseObservable.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[T](promise: js.Thenable[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
     def create[T](
       promise: js.Thenable[T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

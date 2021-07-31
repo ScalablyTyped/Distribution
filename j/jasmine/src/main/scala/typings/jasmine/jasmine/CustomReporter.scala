@@ -2,23 +2,21 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomReporter extends StObject {
   
-  var jasmineDone: js.UndefOr[js.Function1[/* runDetails */ RunDetails, Unit]] = js.native
+  var jasmineDone: js.UndefOr[js.Function1[/* runDetails */ RunDetails, Unit]] = js.undefined
   
-  var jasmineStarted: js.UndefOr[js.Function1[/* suiteInfo */ SuiteInfo, Unit]] = js.native
+  var jasmineStarted: js.UndefOr[js.Function1[/* suiteInfo */ SuiteInfo, Unit]] = js.undefined
   
-  var specDone: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.native
+  var specDone: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.undefined
   
-  var specStarted: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.native
+  var specStarted: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.undefined
   
-  var suiteDone: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.native
+  var suiteDone: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.undefined
   
-  var suiteStarted: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.native
+  var suiteStarted: js.UndefOr[js.Function1[/* result */ CustomReporterResult, Unit]] = js.undefined
 }
 object CustomReporter {
   

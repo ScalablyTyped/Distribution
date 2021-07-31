@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2NewSurfaceValue
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2NewSurfaceValueSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object newsurfaceMod {
@@ -24,27 +23,26 @@ object newsurfaceMod {
   
   type NewSurfaceArgument = GoogleActionsV2NewSurfaceValue
   
-  @js.native
   trait NewSurfaceOptions extends StObject {
     
     /**
       * The list of capabilities required in the surface.
       * @public
       */
-    var capabilities: SurfaceCapability | js.Array[SurfaceCapability] = js.native
+    var capabilities: SurfaceCapability | js.Array[SurfaceCapability]
     
     /**
       * Context why new surface is requested.
       * It's the TTS prompt prefix (action phrase) we ask the user.
       * @public
       */
-    var context: String = js.native
+    var context: String
     
     /**
       * Title of the notification appearing on new surface device.
       * @public
       */
-    var notification: String = js.native
+    var notification: String
   }
   object NewSurfaceOptions {
     

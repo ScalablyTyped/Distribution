@@ -2,15 +2,15 @@ package typings.pathfinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDAStarFinderOptions extends FinderOptions {
+trait IDAStarFinderOptions
+  extends StObject
+     with FinderOptions {
   
-  var timeLimit: js.UndefOr[Double] = js.native
+  var timeLimit: js.UndefOr[Double] = js.undefined
   
-  var trackRecursion: js.UndefOr[Boolean] = js.native
+  var trackRecursion: js.UndefOr[Boolean] = js.undefined
 }
 object IDAStarFinderOptions {
   

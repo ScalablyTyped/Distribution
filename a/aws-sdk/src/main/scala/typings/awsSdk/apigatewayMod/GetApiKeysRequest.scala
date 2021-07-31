@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApiKeysRequest extends StObject {
   
   /**
     * The identifier of a customer in AWS Marketplace or an external system, such as a developer portal.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean flag to specify whether (true) or not (false) the result contains key values.
     */
-  var includeValues: js.UndefOr[NullableBoolean] = js.native
+  var includeValues: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
     */
-  var limit: js.UndefOr[NullableInteger] = js.native
+  var limit: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The name of queried API keys.
     */
-  var nameQuery: js.UndefOr[String] = js.native
+  var nameQuery: js.UndefOr[String] = js.undefined
   
   /**
     * The current pagination position in the paged result set.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object GetApiKeysRequest {
   

@@ -2,14 +2,14 @@ package typings.tensorflowTfjsLayers.recurrentMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RNNLayerArgs extends BaseRNNLayerArgs {
+trait RNNLayerArgs
+  extends StObject
+     with BaseRNNLayerArgs {
   
   @JSName("cell")
-  var cell_RNNLayerArgs: RNNCell | js.Array[RNNCell] = js.native
+  var cell_RNNLayerArgs: RNNCell | js.Array[RNNCell]
 }
 object RNNLayerArgs {
   

@@ -2,17 +2,15 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deletion extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var deletion: Double = js.native
+  var deletion: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object Deletion {
   

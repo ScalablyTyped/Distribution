@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowRunStatistics extends StObject {
   
   /**
     * Total number of Actions that have failed.
     */
-  var FailedActions: js.UndefOr[IntegerValue] = js.native
+  var FailedActions: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * Total number Actions in running state.
     */
-  var RunningActions: js.UndefOr[IntegerValue] = js.native
+  var RunningActions: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * Total number of Actions that have stopped.
     */
-  var StoppedActions: js.UndefOr[IntegerValue] = js.native
+  var StoppedActions: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * Total number of Actions that have succeeded.
     */
-  var SucceededActions: js.UndefOr[IntegerValue] = js.native
+  var SucceededActions: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * Total number of Actions that timed out.
     */
-  var TimeoutActions: js.UndefOr[IntegerValue] = js.native
+  var TimeoutActions: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * Total number of Actions in the workflow run.
     */
-  var TotalActions: js.UndefOr[IntegerValue] = js.native
+  var TotalActions: js.UndefOr[IntegerValue] = js.undefined
 }
 object WorkflowRunStatistics {
   

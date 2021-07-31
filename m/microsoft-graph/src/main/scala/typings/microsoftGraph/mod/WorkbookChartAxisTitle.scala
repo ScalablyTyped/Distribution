@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartAxisTitle extends Entity {
+trait WorkbookChartAxisTitle
+  extends StObject
+     with Entity {
   
   // Represents the formatting of chart axis title. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartAxisTitleFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartAxisTitleFormat]] = js.undefined
   
   // Represents the axis title.
-  var text: js.UndefOr[NullableOption[String]] = js.native
+  var text: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A boolean that specifies the visibility of an axis title.
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookChartAxisTitle {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTablesRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the tables reside. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The database in the catalog whose tables to list. For Hive compatibility, this name is entirely lowercase.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A regular expression pattern. If present, only those tables whose names match the pattern are returned.
     */
-  var Expression: js.UndefOr[FilterString] = js.native
+  var Expression: js.UndefOr[FilterString] = js.undefined
   
   /**
     * The maximum number of tables to return in a single response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, included if this is a continuation call.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetTablesRequest {
   

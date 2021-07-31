@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,27 +19,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait TableFormula extends TextField_ {
+trait TableFormula
+  extends StObject
+     with TextField_ {
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /** contains the formula. */
-  var Formula: String = js.native
+  var Formula: String
   
   /** determines whether the formula displayed as text or evaluated. */
-  var IsShowFormula: Boolean = js.native
+  var IsShowFormula: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
 }
 object TableFormula {
   

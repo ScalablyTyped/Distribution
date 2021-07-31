@@ -2,19 +2,17 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Site extends StObject {
   
-  var AccountId: js.UndefOr[typings.awsSdk.outpostsMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.outpostsMod.AccountId] = js.undefined
   
-  var Description: js.UndefOr[SiteDescription] = js.native
+  var Description: js.UndefOr[SiteDescription] = js.undefined
   
-  var Name: js.UndefOr[SiteName] = js.native
+  var Name: js.UndefOr[SiteName] = js.undefined
   
-  var SiteId: js.UndefOr[typings.awsSdk.outpostsMod.SiteId] = js.native
+  var SiteId: js.UndefOr[typings.awsSdk.outpostsMod.SiteId] = js.undefined
 }
 object Site {
   

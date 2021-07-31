@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,9 +44,8 @@ object HorizontalSplitPane {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object HorizontalSplitPane {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -71,9 +68,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -84,9 +80,8 @@ object HorizontalSplitPane {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -97,9 +92,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -110,9 +104,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -123,9 +116,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -136,9 +128,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -149,9 +140,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -162,9 +152,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -175,9 +164,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -188,9 +176,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -201,9 +188,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -214,9 +200,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -227,9 +212,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -240,9 +224,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -253,9 +236,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -266,9 +248,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -279,9 +260,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -292,9 +272,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -305,9 +284,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -318,9 +296,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -331,9 +308,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -344,9 +320,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -357,9 +332,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -370,9 +344,8 @@ object HorizontalSplitPane {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -383,9 +356,8 @@ object HorizontalSplitPane {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -396,9 +368,8 @@ object HorizontalSplitPane {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -409,9 +380,8 @@ object HorizontalSplitPane {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -422,9 +392,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -435,9 +404,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -448,9 +416,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -461,9 +428,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -474,9 +440,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -487,9 +452,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -500,9 +464,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -513,9 +476,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -526,9 +488,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -539,9 +500,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -552,9 +512,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -565,9 +524,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -578,9 +536,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -591,9 +548,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -604,9 +560,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -617,9 +572,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -630,9 +584,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -643,9 +596,8 @@ object HorizontalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
@@ -656,9 +608,8 @@ object HorizontalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.HorizontalSplitPane]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.HorizontalSplitPane.structureTypeName")

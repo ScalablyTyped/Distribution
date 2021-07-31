@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettingTemplateValue extends StObject {
   
   // Default value for the setting.
-  var defaultValue: js.UndefOr[NullableOption[String]] = js.native
+  var defaultValue: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Description of the setting.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the setting.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Type of the setting.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SettingTemplateValue {
   

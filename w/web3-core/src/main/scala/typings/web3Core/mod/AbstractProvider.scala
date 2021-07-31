@@ -5,15 +5,15 @@ import typings.web3CoreHelpers.mod.JsonRpcPayload
 import typings.web3CoreHelpers.mod.JsonRpcResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbstractProvider extends _provider {
+trait AbstractProvider
+  extends StObject
+     with _provider {
   
-  var connected: js.UndefOr[Boolean] = js.native
+  var connected: js.UndefOr[Boolean] = js.undefined
   
-  var request: js.UndefOr[js.Function1[/* args */ RequestArguments, js.Promise[_]]] = js.native
+  var request: js.UndefOr[js.Function1[/* args */ RequestArguments, js.Promise[js.Any]]] = js.undefined
   
   var send: js.UndefOr[
     js.Function2[
@@ -21,12 +21,12 @@ trait AbstractProvider extends _provider {
       /* callback */ js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   def sendAsync(
     payload: JsonRpcPayload,
     callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object AbstractProvider {
   
@@ -48,7 +48,7 @@ object AbstractProvider {
     def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
     @scala.inline
-    def setRequest(value: /* args */ RequestArguments => js.Promise[_]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    def setRequest(value: /* args */ RequestArguments => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)

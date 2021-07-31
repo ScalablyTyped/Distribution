@@ -2,25 +2,23 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStructuralType extends StObject {
   
-  var complexProperties: js.Array[DataProperty] = js.native
+  var complexProperties: js.Array[DataProperty]
   
-  var dataProperties: js.Array[DataProperty] = js.native
+  var dataProperties: js.Array[DataProperty]
   
-  var name: String = js.native
+  var name: String
   
-  var namespace: String = js.native
+  var namespace: String
   
-  var shortName: String = js.native
+  var shortName: String
   
-  var unmappedProperties: js.Array[DataProperty] = js.native
+  var unmappedProperties: js.Array[DataProperty]
   
-  var validators: js.Array[Validator] = js.native
+  var validators: js.Array[Validator]
 }
 object IStructuralType {
   

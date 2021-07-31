@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringAppSpecification extends StObject {
   
   /**
     * An array of arguments for the container used to run the monitoring job.
     */
-  var ContainerArguments: js.UndefOr[MonitoringContainerArguments] = js.native
+  var ContainerArguments: js.UndefOr[MonitoringContainerArguments] = js.undefined
   
   /**
     * Specifies the entrypoint for a container used to run the monitoring job.
     */
-  var ContainerEntrypoint: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerEntrypoint] = js.native
+  var ContainerEntrypoint: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerEntrypoint] = js.undefined
   
   /**
     * The container image to be run by the monitoring job.
     */
-  var ImageUri: typings.awsSdk.sagemakerMod.ImageUri = js.native
+  var ImageUri: typings.awsSdk.sagemakerMod.ImageUri
   
   /**
     * An Amazon S3 URI to a script that is called after analysis has been performed. Applicable only for the built-in (first party) containers.
     */
-  var PostAnalyticsProcessorSourceUri: js.UndefOr[S3Uri] = js.native
+  var PostAnalyticsProcessorSourceUri: js.UndefOr[S3Uri] = js.undefined
   
   /**
     * An Amazon S3 URI to a script that is called per row prior to running analysis. It can base64 decode the payload and convert it into a flatted json so that the built-in container can use the converted data. Applicable only for the built-in (first party) containers.
     */
-  var RecordPreprocessorSourceUri: js.UndefOr[S3Uri] = js.native
+  var RecordPreprocessorSourceUri: js.UndefOr[S3Uri] = js.undefined
 }
 object MonitoringAppSpecification {
   

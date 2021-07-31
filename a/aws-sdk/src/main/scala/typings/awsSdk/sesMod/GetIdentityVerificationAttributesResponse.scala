@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityVerificationAttributesResponse extends StObject {
   
   /**
     * A map of Identities to IdentityVerificationAttributes objects.
     */
-  var VerificationAttributes: typings.awsSdk.sesMod.VerificationAttributes = js.native
+  var VerificationAttributes: typings.awsSdk.sesMod.VerificationAttributes
 }
 object GetIdentityVerificationAttributesResponse {
   

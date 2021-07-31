@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TenancyUnit extends StObject {
   
   /** Output only. @OutputOnly Cloud resource name of the consumer of this service. For example 'projects/123456'. */
-  var consumer: js.UndefOr[String] = js.native
+  var consumer: js.UndefOr[String] = js.undefined
   
   /** Output only. @OutputOnly The time this tenancy unit was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Globally unique identifier of this tenancy unit "services/{service}/{collection id}/{resource id}/tenancyUnits/{unit}" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Google Cloud API name of the managed service owning this tenancy unit. For example 'serviceconsumermanagement.googleapis.com'. */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /** Resources constituting the tenancy unit. There can be at most 512 tenant resources in a tenancy unit. */
-  var tenantResources: js.UndefOr[js.Array[TenantResource]] = js.native
+  var tenantResources: js.UndefOr[js.Array[TenantResource]] = js.undefined
 }
 object TenancyUnit {
   

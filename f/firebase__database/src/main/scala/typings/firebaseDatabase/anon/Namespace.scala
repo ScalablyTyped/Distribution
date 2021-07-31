@@ -2,15 +2,13 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namespace extends StObject {
   
-  var instance: typings.firebaseDatabaseTypes.mod.Database = js.native
+  var instance: typings.firebaseDatabaseTypes.mod.Database
   
-  var namespace: DataSnapshot = js.native
+  var namespace: DataSnapshot
 }
 object Namespace {
   

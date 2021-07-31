@@ -3,41 +3,40 @@ package typings.tryghostContentApi.mod
 import typings.tryghostContentApi.anon.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings
-  extends SocialMedia
+  extends StObject
      with Metadata
      with CodeInjection
+     with SocialMedia
      with GhostData {
   
-  var cover_image: js.UndefOr[String] = js.native
+  var cover_image: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var facebook: js.UndefOr[String] = js.native
+  var facebook: js.UndefOr[String] = js.undefined
   
-  var ghost_foot: js.UndefOr[Nullable[String]] = js.native
+  var ghost_foot: js.UndefOr[Nullable[String]] = js.undefined
   
-  var ghost_head: js.UndefOr[Nullable[String]] = js.native
+  var ghost_head: js.UndefOr[Nullable[String]] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
-  var navigation: js.UndefOr[js.Array[Label]] = js.native
+  var navigation: js.UndefOr[js.Array[Label]] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var twitter: js.UndefOr[String] = js.native
+  var twitter: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Settings {
   

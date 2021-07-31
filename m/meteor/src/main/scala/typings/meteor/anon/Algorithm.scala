@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Algorithm extends StObject {
   
-  var algorithm: String = js.native
+  var algorithm: String
   
-  var digest: String = js.native
+  var digest: String
 }
 object Algorithm {
   

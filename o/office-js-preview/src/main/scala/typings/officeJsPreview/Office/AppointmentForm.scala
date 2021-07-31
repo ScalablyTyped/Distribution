@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait AppointmentForm extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var body: Body | String = js.native
+  var body: Body | String
   
   /**
     * Gets or sets the date and time that the appointment is to end.
@@ -54,7 +52,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var end: Time | Date = js.native
+  var end: Time | Date
   
   /**
     * Gets or sets the location of an appointment.
@@ -73,7 +71,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var location: Location | String = js.native
+  var location: Location | String
   
   /**
     * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
@@ -101,7 +99,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var optionalAttendees: js.Array[EmailAddressDetails | Recipients] = js.native
+  var optionalAttendees: js.Array[EmailAddressDetails | Recipients]
   
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
@@ -129,7 +127,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var requiredAttendees: js.Array[EmailAddressDetails | Recipients] = js.native
+  var requiredAttendees: js.Array[EmailAddressDetails | Recipients]
   
   /**
     * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
@@ -140,7 +138,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var resources: js.Array[String] = js.native
+  var resources: js.Array[String]
   
   /**
     * Gets or sets the date and time that the appointment is to begin.
@@ -165,7 +163,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var start: Time | Date = js.native
+  var start: Time | Date
   
   /**
     * Gets or sets the description that appears in the subject field of an item.
@@ -186,7 +184,7 @@ trait AppointmentForm extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var subject: Subject | String = js.native
+  var subject: Subject | String
 }
 object AppointmentForm {
   

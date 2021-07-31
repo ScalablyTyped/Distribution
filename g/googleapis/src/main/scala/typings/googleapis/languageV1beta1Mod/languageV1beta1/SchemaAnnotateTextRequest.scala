@@ -2,30 +2,28 @@ package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for the text annotation API, which can perform multiple
   * analysis types (sentiment, entities, and syntax) in one call.
   */
-@js.native
 trait SchemaAnnotateTextRequest extends StObject {
   
   /**
     * Input document.
     */
-  var document: js.UndefOr[SchemaDocument] = js.native
+  var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The encoding type used by the API to calculate offsets.
     */
-  var encodingType: js.UndefOr[String] = js.native
+  var encodingType: js.UndefOr[String] = js.undefined
   
   /**
     * The enabled features.
     */
-  var features: js.UndefOr[SchemaFeatures] = js.native
+  var features: js.UndefOr[SchemaFeatures] = js.undefined
 }
 object SchemaAnnotateTextRequest {
   

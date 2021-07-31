@@ -3,7 +3,6 @@ package typings.gestalt
 import typings.gestalt.mod.Icons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gestaltStrings {
@@ -29,47 +28,65 @@ object gestaltStrings {
   def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait ad extends Icons
+  sealed trait ad
+    extends StObject
+       with Icons
   @scala.inline
   def ad: ad = "ad".asInstanceOf[ad]
   
   @js.native
-  sealed trait `ad-group` extends Icons
+  sealed trait `ad-group`
+    extends StObject
+       with Icons
   @scala.inline
   def `ad-group`: `ad-group` = "ad-group".asInstanceOf[`ad-group`]
   
   @js.native
-  sealed trait add extends Icons
+  sealed trait add
+    extends StObject
+       with Icons
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait `add-circle` extends Icons
+  sealed trait `add-circle`
+    extends StObject
+       with Icons
   @scala.inline
   def `add-circle`: `add-circle` = "add-circle".asInstanceOf[`add-circle`]
   
   @js.native
-  sealed trait `add-layout` extends Icons
+  sealed trait `add-layout`
+    extends StObject
+       with Icons
   @scala.inline
   def `add-layout`: `add-layout` = "add-layout".asInstanceOf[`add-layout`]
   
   @js.native
-  sealed trait `add-pin` extends Icons
+  sealed trait `add-pin`
+    extends StObject
+       with Icons
   @scala.inline
   def `add-pin`: `add-pin` = "add-pin".asInstanceOf[`add-pin`]
   
   @js.native
-  sealed trait `ads-overview` extends Icons
+  sealed trait `ads-overview`
+    extends StObject
+       with Icons
   @scala.inline
   def `ads-overview`: `ads-overview` = "ads-overview".asInstanceOf[`ads-overview`]
   
   @js.native
-  sealed trait `ads-stats` extends Icons
+  sealed trait `ads-stats`
+    extends StObject
+       with Icons
   @scala.inline
   def `ads-stats`: `ads-stats` = "ads-stats".asInstanceOf[`ads-stats`]
   
   @js.native
-  sealed trait alert extends Icons
+  sealed trait alert
+    extends StObject
+       with Icons
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
@@ -79,57 +96,79 @@ object gestaltStrings {
   def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
   
   @js.native
-  sealed trait `align-bottom` extends Icons
+  sealed trait `align-bottom`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-bottom`: `align-bottom` = "align-bottom".asInstanceOf[`align-bottom`]
   
   @js.native
-  sealed trait `align-bottom-center` extends Icons
+  sealed trait `align-bottom-center`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-bottom-center`: `align-bottom-center` = "align-bottom-center".asInstanceOf[`align-bottom-center`]
   
   @js.native
-  sealed trait `align-bottom-left` extends Icons
+  sealed trait `align-bottom-left`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-bottom-left`: `align-bottom-left` = "align-bottom-left".asInstanceOf[`align-bottom-left`]
   
   @js.native
-  sealed trait `align-bottom-right` extends Icons
+  sealed trait `align-bottom-right`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-bottom-right`: `align-bottom-right` = "align-bottom-right".asInstanceOf[`align-bottom-right`]
   
   @js.native
-  sealed trait `align-middle` extends Icons
+  sealed trait `align-middle`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-middle`: `align-middle` = "align-middle".asInstanceOf[`align-middle`]
   
   @js.native
-  sealed trait `align-top` extends Icons
+  sealed trait `align-top`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-top`: `align-top` = "align-top".asInstanceOf[`align-top`]
   
   @js.native
-  sealed trait `align-top-center` extends Icons
+  sealed trait `align-top-center`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-top-center`: `align-top-center` = "align-top-center".asInstanceOf[`align-top-center`]
   
   @js.native
-  sealed trait `align-top-left` extends Icons
+  sealed trait `align-top-left`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-top-left`: `align-top-left` = "align-top-left".asInstanceOf[`align-top-left`]
   
   @js.native
-  sealed trait `align-top-right` extends Icons
+  sealed trait `align-top-right`
+    extends StObject
+       with Icons
   @scala.inline
   def `align-top-right`: `align-top-right` = "align-top-right".asInstanceOf[`align-top-right`]
   
   @js.native
-  sealed trait `android-share` extends Icons
+  sealed trait `android-share`
+    extends StObject
+       with Icons
   @scala.inline
   def `android-share`: `android-share` = "android-share".asInstanceOf[`android-share`]
   
   @js.native
-  sealed trait `angled-pin` extends Icons
+  sealed trait `angled-pin`
+    extends StObject
+       with Icons
   @scala.inline
   def `angled-pin`: `angled-pin` = "angled-pin".asInstanceOf[`angled-pin`]
   
@@ -139,7 +178,9 @@ object gestaltStrings {
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
-  sealed trait apps extends Icons
+  sealed trait apps
+    extends StObject
+       with Icons
   @scala.inline
   def apps: apps = "apps".asInstanceOf[apps]
   
@@ -149,52 +190,72 @@ object gestaltStrings {
   def around: around = "around".asInstanceOf[around]
   
   @js.native
-  sealed trait `arrow-back` extends Icons
+  sealed trait `arrow-back`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-back`: `arrow-back` = "arrow-back".asInstanceOf[`arrow-back`]
   
   @js.native
-  sealed trait `arrow-circle-down` extends Icons
+  sealed trait `arrow-circle-down`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-circle-down`: `arrow-circle-down` = "arrow-circle-down".asInstanceOf[`arrow-circle-down`]
   
   @js.native
-  sealed trait `arrow-circle-forward` extends Icons
+  sealed trait `arrow-circle-forward`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-circle-forward`: `arrow-circle-forward` = "arrow-circle-forward".asInstanceOf[`arrow-circle-forward`]
   
   @js.native
-  sealed trait `arrow-circle-up` extends Icons
+  sealed trait `arrow-circle-up`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-circle-up`: `arrow-circle-up` = "arrow-circle-up".asInstanceOf[`arrow-circle-up`]
   
   @js.native
-  sealed trait `arrow-down` extends Icons
+  sealed trait `arrow-down`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
   
   @js.native
-  sealed trait `arrow-end` extends Icons
+  sealed trait `arrow-end`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-end`: `arrow-end` = "arrow-end".asInstanceOf[`arrow-end`]
   
   @js.native
-  sealed trait `arrow-forward` extends Icons
+  sealed trait `arrow-forward`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-forward`: `arrow-forward` = "arrow-forward".asInstanceOf[`arrow-forward`]
   
   @js.native
-  sealed trait `arrow-start` extends Icons
+  sealed trait `arrow-start`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-start`: `arrow-start` = "arrow-start".asInstanceOf[`arrow-start`]
   
   @js.native
-  sealed trait `arrow-up` extends Icons
+  sealed trait `arrow-up`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-up`: `arrow-up` = "arrow-up".asInstanceOf[`arrow-up`]
   
   @js.native
-  sealed trait `arrow-up-right` extends Icons
+  sealed trait `arrow-up-right`
+    extends StObject
+       with Icons
   @scala.inline
   def `arrow-up-right`: `arrow-up-right` = "arrow-up-right".asInstanceOf[`arrow-up-right`]
   
@@ -214,7 +275,9 @@ object gestaltStrings {
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait bell extends Icons
+  sealed trait bell
+    extends StObject
+       with Icons
   @scala.inline
   def bell: bell = "bell".asInstanceOf[bell]
   
@@ -254,27 +317,37 @@ object gestaltStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait calendar extends Icons
+  sealed trait calendar
+    extends StObject
+       with Icons
   @scala.inline
   def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait camera extends Icons
+  sealed trait camera
+    extends StObject
+       with Icons
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait `camera-roll` extends Icons
+  sealed trait `camera-roll`
+    extends StObject
+       with Icons
   @scala.inline
   def `camera-roll`: `camera-roll` = "camera-roll".asInstanceOf[`camera-roll`]
   
   @js.native
-  sealed trait cancel extends Icons
+  sealed trait cancel
+    extends StObject
+       with Icons
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait `canonical-pin` extends Icons
+  sealed trait `canonical-pin`
+    extends StObject
+       with Icons
   @scala.inline
   def `canonical-pin`: `canonical-pin` = "canonical-pin".asInstanceOf[`canonical-pin`]
   
@@ -284,12 +357,16 @@ object gestaltStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait check extends Icons
+  sealed trait check
+    extends StObject
+       with Icons
   @scala.inline
   def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait `check-circle` extends Icons
+  sealed trait `check-circle`
+    extends StObject
+       with Icons
   @scala.inline
   def `check-circle`: `check-circle` = "check-circle".asInstanceOf[`check-circle`]
   
@@ -299,7 +376,9 @@ object gestaltStrings {
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait `circle-outline` extends Icons
+  sealed trait `circle-outline`
+    extends StObject
+       with Icons
   @scala.inline
   def `circle-outline`: `circle-outline` = "circle-outline".asInstanceOf[`circle-outline`]
   
@@ -309,22 +388,30 @@ object gestaltStrings {
   def circule: circule = "circule".asInstanceOf[circule]
   
   @js.native
-  sealed trait clear extends Icons
+  sealed trait clear
+    extends StObject
+       with Icons
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait clock extends Icons
+  sealed trait clock
+    extends StObject
+       with Icons
   @scala.inline
   def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
-  sealed trait code extends Icons
+  sealed trait code
+    extends StObject
+       with Icons
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait cog extends Icons
+  sealed trait cog
+    extends StObject
+       with Icons
   @scala.inline
   def cog: cog = "cog".asInstanceOf[cog]
   
@@ -339,7 +426,9 @@ object gestaltStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait `color-picker` extends Icons
+  sealed trait `color-picker`
+    extends StObject
+       with Icons
   @scala.inline
   def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
   
@@ -349,7 +438,9 @@ object gestaltStrings {
   def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait compass extends Icons
+  sealed trait compass
+    extends StObject
+       with Icons
   @scala.inline
   def compass: compass = "compass".asInstanceOf[compass]
   
@@ -359,7 +450,9 @@ object gestaltStrings {
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait compose extends Icons
+  sealed trait compose
+    extends StObject
+       with Icons
   @scala.inline
   def compose: compose = "compose".asInstanceOf[compose]
   
@@ -374,7 +467,9 @@ object gestaltStrings {
   def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait `conversion-tag` extends Icons
+  sealed trait `conversion-tag`
+    extends StObject
+       with Icons
   @scala.inline
   def `conversion-tag`: `conversion-tag` = "conversion-tag".asInstanceOf[`conversion-tag`]
   
@@ -389,12 +484,16 @@ object gestaltStrings {
   def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait `credit-card` extends Icons
+  sealed trait `credit-card`
+    extends StObject
+       with Icons
   @scala.inline
   def `credit-card`: `credit-card` = "credit-card".asInstanceOf[`credit-card`]
   
   @js.native
-  sealed trait crop extends Icons
+  sealed trait crop
+    extends StObject
+       with Icons
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
@@ -419,7 +518,9 @@ object gestaltStrings {
   def darkWash: darkWash = "darkWash".asInstanceOf[darkWash]
   
   @js.native
-  sealed trait dash extends Icons
+  sealed trait dash
+    extends StObject
+       with Icons
   @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]
   
@@ -439,12 +540,16 @@ object gestaltStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait `directional-arrow-left` extends Icons
+  sealed trait `directional-arrow-left`
+    extends StObject
+       with Icons
   @scala.inline
   def `directional-arrow-left`: `directional-arrow-left` = "directional-arrow-left".asInstanceOf[`directional-arrow-left`]
   
   @js.native
-  sealed trait `directional-arrow-right` extends Icons
+  sealed trait `directional-arrow-right`
+    extends StObject
+       with Icons
   @scala.inline
   def `directional-arrow-right`: `directional-arrow-right` = "directional-arrow-right".asInstanceOf[`directional-arrow-right`]
   
@@ -454,17 +559,23 @@ object gestaltStrings {
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait download extends Icons
+  sealed trait download
+    extends StObject
+       with Icons
   @scala.inline
   def download: download = "download".asInstanceOf[download]
   
   @js.native
-  sealed trait `drag-drop` extends Icons
+  sealed trait `drag-drop`
+    extends StObject
+       with Icons
   @scala.inline
   def `drag-drop`: `drag-drop` = "drag-drop".asInstanceOf[`drag-drop`]
   
   @js.native
-  sealed trait duplicate extends Icons
+  sealed trait duplicate
+    extends StObject
+       with Icons
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
@@ -474,7 +585,9 @@ object gestaltStrings {
   def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
-  sealed trait edit extends Icons
+  sealed trait edit
+    extends StObject
+       with Icons
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   
@@ -484,12 +597,16 @@ object gestaltStrings {
   def eggplant: eggplant = "eggplant".asInstanceOf[eggplant]
   
   @js.native
-  sealed trait ellipsis extends Icons
+  sealed trait ellipsis
+    extends StObject
+       with Icons
   @scala.inline
   def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
   @js.native
-  sealed trait `ellipsis-circle-outline` extends Icons
+  sealed trait `ellipsis-circle-outline`
+    extends StObject
+       with Icons
   @scala.inline
   def `ellipsis-circle-outline`: `ellipsis-circle-outline` = "ellipsis-circle-outline".asInstanceOf[`ellipsis-circle-outline`]
   
@@ -504,7 +621,9 @@ object gestaltStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait envelope extends Icons
+  sealed trait envelope
+    extends StObject
+       with Icons
   @scala.inline
   def envelope: envelope = "envelope".asInstanceOf[envelope]
   
@@ -519,32 +638,44 @@ object gestaltStrings {
   def evenly: evenly = "evenly".asInstanceOf[evenly]
   
   @js.native
-  sealed trait eye extends Icons
+  sealed trait eye
+    extends StObject
+       with Icons
   @scala.inline
   def eye: eye = "eye".asInstanceOf[eye]
   
   @js.native
-  sealed trait `face-happy` extends Icons
+  sealed trait `face-happy`
+    extends StObject
+       with Icons
   @scala.inline
   def `face-happy`: `face-happy` = "face-happy".asInstanceOf[`face-happy`]
   
   @js.native
-  sealed trait `face-sad` extends Icons
+  sealed trait `face-sad`
+    extends StObject
+       with Icons
   @scala.inline
   def `face-sad`: `face-sad` = "face-sad".asInstanceOf[`face-sad`]
   
   @js.native
-  sealed trait `face-smiley` extends Icons
+  sealed trait `face-smiley`
+    extends StObject
+       with Icons
   @scala.inline
   def `face-smiley`: `face-smiley` = "face-smiley".asInstanceOf[`face-smiley`]
   
   @js.native
-  sealed trait facebook extends Icons
+  sealed trait facebook
+    extends StObject
+       with Icons
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
-  sealed trait `file-unknown` extends Icons
+  sealed trait `file-unknown`
+    extends StObject
+       with Icons
   @scala.inline
   def `file-unknown`: `file-unknown` = "file-unknown".asInstanceOf[`file-unknown`]
   
@@ -554,17 +685,23 @@ object gestaltStrings {
   def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait `fill-opaque` extends Icons
+  sealed trait `fill-opaque`
+    extends StObject
+       with Icons
   @scala.inline
   def `fill-opaque`: `fill-opaque` = "fill-opaque".asInstanceOf[`fill-opaque`]
   
   @js.native
-  sealed trait `fill-transparent` extends Icons
+  sealed trait `fill-transparent`
+    extends StObject
+       with Icons
   @scala.inline
   def `fill-transparent`: `fill-transparent` = "fill-transparent".asInstanceOf[`fill-transparent`]
   
   @js.native
-  sealed trait filter extends Icons
+  sealed trait filter
+    extends StObject
+       with Icons
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
@@ -579,17 +716,23 @@ object gestaltStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait flag extends Icons
+  sealed trait flag
+    extends StObject
+       with Icons
   @scala.inline
   def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait flash extends Icons
+  sealed trait flash
+    extends StObject
+       with Icons
   @scala.inline
   def flash: flash = "flash".asInstanceOf[flash]
   
   @js.native
-  sealed trait flashlight extends Icons
+  sealed trait flashlight
+    extends StObject
+       with Icons
   @scala.inline
   def flashlight: flashlight = "flashlight".asInstanceOf[flashlight]
   
@@ -604,42 +747,58 @@ object gestaltStrings {
   def flexible: flexible = "flexible".asInstanceOf[flexible]
   
   @js.native
-  sealed trait flipHorizontal extends Icons
+  sealed trait flipHorizontal
+    extends StObject
+       with Icons
   @scala.inline
   def flipHorizontal: flipHorizontal = "flipHorizontal".asInstanceOf[flipHorizontal]
   
   @js.native
-  sealed trait flipVertical extends Icons
+  sealed trait flipVertical
+    extends StObject
+       with Icons
   @scala.inline
   def flipVertical: flipVertical = "flipVertical".asInstanceOf[flipVertical]
   
   @js.native
-  sealed trait folder extends Icons
+  sealed trait folder
+    extends StObject
+       with Icons
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   
   @js.native
-  sealed trait gif extends Icons
+  sealed trait gif
+    extends StObject
+       with Icons
   @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait globe extends Icons
+  sealed trait globe
+    extends StObject
+       with Icons
   @scala.inline
   def globe: globe = "globe".asInstanceOf[globe]
   
   @js.native
-  sealed trait `globe-checked` extends Icons
+  sealed trait `globe-checked`
+    extends StObject
+       with Icons
   @scala.inline
   def `globe-checked`: `globe-checked` = "globe-checked".asInstanceOf[`globe-checked`]
   
   @js.native
-  sealed trait gmail extends Icons
+  sealed trait gmail
+    extends StObject
+       with Icons
   @scala.inline
   def gmail: gmail = "gmail".asInstanceOf[gmail]
   
   @js.native
-  sealed trait `google-plus` extends Icons
+  sealed trait `google-plus`
+    extends StObject
+       with Icons
   @scala.inline
   def `google-plus`: `google-plus` = "google-plus".asInstanceOf[`google-plus`]
   
@@ -654,7 +813,9 @@ object gestaltStrings {
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
   
   @js.native
-  sealed trait `graph-bar` extends Icons
+  sealed trait `graph-bar`
+    extends StObject
+       with Icons
   @scala.inline
   def `graph-bar`: `graph-bar` = "graph-bar".asInstanceOf[`graph-bar`]
   
@@ -674,27 +835,37 @@ object gestaltStrings {
   def grow: grow = "grow".asInstanceOf[grow]
   
   @js.native
-  sealed trait `hand-pointing` extends Icons
+  sealed trait `hand-pointing`
+    extends StObject
+       with Icons
   @scala.inline
   def `hand-pointing`: `hand-pointing` = "hand-pointing".asInstanceOf[`hand-pointing`]
   
   @js.native
-  sealed trait handle extends Icons
+  sealed trait handle
+    extends StObject
+       with Icons
   @scala.inline
   def handle: handle = "handle".asInstanceOf[handle]
   
   @js.native
-  sealed trait heart extends Icons
+  sealed trait heart
+    extends StObject
+       with Icons
   @scala.inline
   def heart: heart = "heart".asInstanceOf[heart]
   
   @js.native
-  sealed trait `heart-broken` extends Icons
+  sealed trait `heart-broken`
+    extends StObject
+       with Icons
   @scala.inline
   def `heart-broken`: `heart-broken` = "heart-broken".asInstanceOf[`heart-broken`]
   
   @js.native
-  sealed trait `heart-outline` extends Icons
+  sealed trait `heart-outline`
+    extends StObject
+       with Icons
   @scala.inline
   def `heart-outline`: `heart-outline` = "heart-outline".asInstanceOf[`heart-outline`]
   
@@ -709,7 +880,9 @@ object gestaltStrings {
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait impressum extends Icons
+  sealed trait impressum
+    extends StObject
+       with Icons
   @scala.inline
   def impressum: impressum = "impressum".asInstanceOf[impressum]
   
@@ -724,7 +897,9 @@ object gestaltStrings {
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait `info-circle` extends Icons
+  sealed trait `info-circle`
+    extends StObject
+       with Icons
   @scala.inline
   def `info-circle`: `info-circle` = "info-circle".asInstanceOf[`info-circle`]
   
@@ -739,12 +914,16 @@ object gestaltStrings {
   def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait key extends Icons
+  sealed trait key
+    extends StObject
+       with Icons
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait knoop extends Icons
+  sealed trait knoop
+    extends StObject
+       with Icons
   @scala.inline
   def knoop: knoop = "knoop".asInstanceOf[knoop]
   
@@ -779,42 +958,58 @@ object gestaltStrings {
   def lightWash: lightWash = "lightWash".asInstanceOf[lightWash]
   
   @js.native
-  sealed trait lightbulb extends Icons
+  sealed trait lightbulb
+    extends StObject
+       with Icons
   @scala.inline
   def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
   
   @js.native
-  sealed trait `lightning-bolt-circle` extends Icons
+  sealed trait `lightning-bolt-circle`
+    extends StObject
+       with Icons
   @scala.inline
   def `lightning-bolt-circle`: `lightning-bolt-circle` = "lightning-bolt-circle".asInstanceOf[`lightning-bolt-circle`]
   
   @js.native
-  sealed trait link extends Icons
+  sealed trait link
+    extends StObject
+       with Icons
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait location extends Icons
+  sealed trait location
+    extends StObject
+       with Icons
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait lock extends Icons
+  sealed trait lock
+    extends StObject
+       with Icons
   @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   
   @js.native
-  sealed trait `logo-large` extends Icons
+  sealed trait `logo-large`
+    extends StObject
+       with Icons
   @scala.inline
   def `logo-large`: `logo-large` = "logo-large".asInstanceOf[`logo-large`]
   
   @js.native
-  sealed trait `logo-small` extends Icons
+  sealed trait `logo-small`
+    extends StObject
+       with Icons
   @scala.inline
   def `logo-small`: `logo-small` = "logo-small".asInstanceOf[`logo-small`]
   
   @js.native
-  sealed trait logout extends Icons
+  sealed trait logout
+    extends StObject
+       with Icons
   @scala.inline
   def logout: logout = "logout".asInstanceOf[logout]
   
@@ -824,17 +1019,23 @@ object gestaltStrings {
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait `margins-large` extends Icons
+  sealed trait `margins-large`
+    extends StObject
+       with Icons
   @scala.inline
   def `margins-large`: `margins-large` = "margins-large".asInstanceOf[`margins-large`]
   
   @js.native
-  sealed trait `margins-medium` extends Icons
+  sealed trait `margins-medium`
+    extends StObject
+       with Icons
   @scala.inline
   def `margins-medium`: `margins-medium` = "margins-medium".asInstanceOf[`margins-medium`]
   
   @js.native
-  sealed trait `margins-small` extends Icons
+  sealed trait `margins-small`
+    extends StObject
+       with Icons
   @scala.inline
   def `margins-small`: `margins-small` = "margins-small".asInstanceOf[`margins-small`]
   
@@ -844,7 +1045,9 @@ object gestaltStrings {
   def maroon: maroon = "maroon".asInstanceOf[maroon]
   
   @js.native
-  sealed trait maximize extends Icons
+  sealed trait maximize
+    extends StObject
+       with Icons
   @scala.inline
   def maximize: maximize = "maximize".asInstanceOf[maximize]
   
@@ -854,12 +1057,16 @@ object gestaltStrings {
   def md: md = "md".asInstanceOf[md]
   
   @js.native
-  sealed trait megaphone extends Icons
+  sealed trait megaphone
+    extends StObject
+       with Icons
   @scala.inline
   def megaphone: megaphone = "megaphone".asInstanceOf[megaphone]
   
   @js.native
-  sealed trait menu extends Icons
+  sealed trait menu
+    extends StObject
+       with Icons
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   
@@ -879,17 +1086,23 @@ object gestaltStrings {
   def midnight: midnight = "midnight".asInstanceOf[midnight]
   
   @js.native
-  sealed trait minimize extends Icons
+  sealed trait minimize
+    extends StObject
+       with Icons
   @scala.inline
   def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
-  sealed trait move extends Icons
+  sealed trait move
+    extends StObject
+       with Icons
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait mute extends Icons
+  sealed trait mute
+    extends StObject
+       with Icons
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   
@@ -969,7 +1182,9 @@ object gestaltStrings {
   def orchid: orchid = "orchid".asInstanceOf[orchid]
   
   @js.native
-  sealed trait `overlay-text` extends Icons
+  sealed trait `overlay-text`
+    extends StObject
+       with Icons
   @scala.inline
   def `overlay-text`: `overlay-text` = "overlay-text".asInstanceOf[`overlay-text`]
   
@@ -979,7 +1194,9 @@ object gestaltStrings {
   def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait pause extends Icons
+  sealed trait pause
+    extends StObject
+       with Icons
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   
@@ -989,22 +1206,30 @@ object gestaltStrings {
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait people extends Icons
+  sealed trait people
+    extends StObject
+       with Icons
   @scala.inline
   def people: people = "people".asInstanceOf[people]
   
   @js.native
-  sealed trait person extends Icons
+  sealed trait person
+    extends StObject
+       with Icons
   @scala.inline
   def person: person = "person".asInstanceOf[person]
   
   @js.native
-  sealed trait `person-add` extends Icons
+  sealed trait `person-add`
+    extends StObject
+       with Icons
   @scala.inline
   def `person-add`: `person-add` = "person-add".asInstanceOf[`person-add`]
   
   @js.native
-  sealed trait phone extends Icons
+  sealed trait phone
+    extends StObject
+       with Icons
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   
@@ -1014,12 +1239,16 @@ object gestaltStrings {
   def pill: pill = "pill".asInstanceOf[pill]
   
   @js.native
-  sealed trait pin extends Icons
+  sealed trait pin
+    extends StObject
+       with Icons
   @scala.inline
   def pin: pin = "pin".asInstanceOf[pin]
   
   @js.native
-  sealed trait `pin-hide` extends Icons
+  sealed trait `pin-hide`
+    extends StObject
+       with Icons
   @scala.inline
   def `pin-hide`: `pin-hide` = "pin-hide".asInstanceOf[`pin-hide`]
   
@@ -1029,12 +1258,16 @@ object gestaltStrings {
   def pine: pine = "pine".asInstanceOf[pine]
   
   @js.native
-  sealed trait pinterest extends Icons
+  sealed trait pinterest
+    extends StObject
+       with Icons
   @scala.inline
   def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
-  sealed trait play extends Icons
+  sealed trait play
+    extends StObject
+       with Icons
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
@@ -1044,7 +1277,9 @@ object gestaltStrings {
   def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
-  sealed trait protect extends Icons
+  sealed trait protect
+    extends StObject
+       with Icons
   @scala.inline
   def protect: protect = "protect".asInstanceOf[protect]
   
@@ -1054,7 +1289,9 @@ object gestaltStrings {
   def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
-  sealed trait `question-mark` extends Icons
+  sealed trait `question-mark`
+    extends StObject
+       with Icons
   @scala.inline
   def `question-mark`: `question-mark` = "question-mark".asInstanceOf[`question-mark`]
   
@@ -1069,7 +1306,9 @@ object gestaltStrings {
   def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait refresh extends Icons
+  sealed trait refresh
+    extends StObject
+       with Icons
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
   
@@ -1079,22 +1318,30 @@ object gestaltStrings {
   def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait remove extends Icons
+  sealed trait remove
+    extends StObject
+       with Icons
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait `reorder-images` extends Icons
+  sealed trait `reorder-images`
+    extends StObject
+       with Icons
   @scala.inline
   def `reorder-images`: `reorder-images` = "reorder-images".asInstanceOf[`reorder-images`]
   
   @js.native
-  sealed trait replace extends Icons
+  sealed trait replace
+    extends StObject
+       with Icons
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait report extends Icons
+  sealed trait report
+    extends StObject
+       with Icons
   @scala.inline
   def report: report = "report".asInstanceOf[report]
   
@@ -1104,7 +1351,9 @@ object gestaltStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rotate extends Icons
+  sealed trait rotate
+    extends StObject
+       with Icons
   @scala.inline
   def rotate: rotate = "rotate".asInstanceOf[rotate]
   
@@ -1119,7 +1368,9 @@ object gestaltStrings {
   def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   
   @js.native
-  sealed trait scale extends Icons
+  sealed trait scale
+    extends StObject
+       with Icons
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   
@@ -1144,12 +1395,16 @@ object gestaltStrings {
   def scrollY: scrollY = "scrollY".asInstanceOf[scrollY]
   
   @js.native
-  sealed trait search extends Icons
+  sealed trait search
+    extends StObject
+       with Icons
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait security extends Icons
+  sealed trait security
+    extends StObject
+       with Icons
   @scala.inline
   def security: security = "security".asInstanceOf[security]
   
@@ -1159,7 +1414,9 @@ object gestaltStrings {
   def self: self = "self".asInstanceOf[self]
   
   @js.native
-  sealed trait send extends Icons
+  sealed trait send
+    extends StObject
+       with Icons
   @scala.inline
   def send: send = "send".asInstanceOf[send]
   
@@ -1169,12 +1426,16 @@ object gestaltStrings {
   def shadow: shadow = "shadow".asInstanceOf[shadow]
   
   @js.native
-  sealed trait share extends Icons
+  sealed trait share
+    extends StObject
+       with Icons
   @scala.inline
   def share: share = "share".asInstanceOf[share]
   
   @js.native
-  sealed trait `shopping-bag` extends Icons
+  sealed trait `shopping-bag`
+    extends StObject
+       with Icons
   @scala.inline
   def `shopping-bag`: `shopping-bag` = "shopping-bag".asInstanceOf[`shopping-bag`]
   
@@ -1189,42 +1450,58 @@ object gestaltStrings {
   def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
-  sealed trait smiley extends Icons
+  sealed trait smiley
+    extends StObject
+       with Icons
   @scala.inline
   def smiley: smiley = "smiley".asInstanceOf[smiley]
   
   @js.native
-  sealed trait `smiley-outline` extends Icons
+  sealed trait `smiley-outline`
+    extends StObject
+       with Icons
   @scala.inline
   def `smiley-outline`: `smiley-outline` = "smiley-outline".asInstanceOf[`smiley-outline`]
   
   @js.native
-  sealed trait `sort-ascending` extends Icons
+  sealed trait `sort-ascending`
+    extends StObject
+       with Icons
   @scala.inline
   def `sort-ascending`: `sort-ascending` = "sort-ascending".asInstanceOf[`sort-ascending`]
   
   @js.native
-  sealed trait `sort-descending` extends Icons
+  sealed trait `sort-descending`
+    extends StObject
+       with Icons
   @scala.inline
   def `sort-descending`: `sort-descending` = "sort-descending".asInstanceOf[`sort-descending`]
   
   @js.native
-  sealed trait sound extends Icons
+  sealed trait sound
+    extends StObject
+       with Icons
   @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   
   @js.native
-  sealed trait sparkle extends Icons
+  sealed trait sparkle
+    extends StObject
+       with Icons
   @scala.inline
   def sparkle: sparkle = "sparkle".asInstanceOf[sparkle]
   
   @js.native
-  sealed trait speech extends Icons
+  sealed trait speech
+    extends StObject
+       with Icons
   @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
   
   @js.native
-  sealed trait `speech-ellipsis` extends Icons
+  sealed trait `speech-ellipsis`
+    extends StObject
+       with Icons
   @scala.inline
   def `speech-ellipsis`: `speech-ellipsis` = "speech-ellipsis".asInstanceOf[`speech-ellipsis`]
   
@@ -1234,12 +1511,16 @@ object gestaltStrings {
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait star extends Icons
+  sealed trait star
+    extends StObject
+       with Icons
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   
   @js.native
-  sealed trait `star-half` extends Icons
+  sealed trait `star-half`
+    extends StObject
+       with Icons
   @scala.inline
   def `star-half`: `star-half` = "star-half".asInstanceOf[`star-half`]
   
@@ -1254,7 +1535,9 @@ object gestaltStrings {
   def static: static = "static".asInstanceOf[static]
   
   @js.native
-  sealed trait `story-pin` extends Icons
+  sealed trait `story-pin`
+    extends StObject
+       with Icons
   @scala.inline
   def `story-pin`: `story-pin` = "story-pin".asInstanceOf[`story-pin`]
   
@@ -1274,7 +1557,9 @@ object gestaltStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait `switch-account` extends Icons
+  sealed trait `switch-account`
+    extends StObject
+       with Icons
   @scala.inline
   def `switch-account`: `switch-account` = "switch-account".asInstanceOf[`switch-account`]
   
@@ -1284,12 +1569,16 @@ object gestaltStrings {
   def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
-  sealed trait tag extends Icons
+  sealed trait tag
+    extends StObject
+       with Icons
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
-  sealed trait terms extends Icons
+  sealed trait terms
+    extends StObject
+       with Icons
   @scala.inline
   def terms: terms = "terms".asInstanceOf[terms]
   
@@ -1299,62 +1588,86 @@ object gestaltStrings {
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait `text-align-center` extends Icons
+  sealed trait `text-align-center`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-align-center`: `text-align-center` = "text-align-center".asInstanceOf[`text-align-center`]
   
   @js.native
-  sealed trait `text-align-left` extends Icons
+  sealed trait `text-align-left`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-align-left`: `text-align-left` = "text-align-left".asInstanceOf[`text-align-left`]
   
   @js.native
-  sealed trait `text-align-right` extends Icons
+  sealed trait `text-align-right`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-align-right`: `text-align-right` = "text-align-right".asInstanceOf[`text-align-right`]
   
   @js.native
-  sealed trait `text-all-caps` extends Icons
+  sealed trait `text-all-caps`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-all-caps`: `text-all-caps` = "text-all-caps".asInstanceOf[`text-all-caps`]
   
   @js.native
-  sealed trait `text-extra-small` extends Icons
+  sealed trait `text-extra-small`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-extra-small`: `text-extra-small` = "text-extra-small".asInstanceOf[`text-extra-small`]
   
   @js.native
-  sealed trait `text-large` extends Icons
+  sealed trait `text-large`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-large`: `text-large` = "text-large".asInstanceOf[`text-large`]
   
   @js.native
-  sealed trait `text-line-height` extends Icons
+  sealed trait `text-line-height`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-line-height`: `text-line-height` = "text-line-height".asInstanceOf[`text-line-height`]
   
   @js.native
-  sealed trait `text-medium` extends Icons
+  sealed trait `text-medium`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-medium`: `text-medium` = "text-medium".asInstanceOf[`text-medium`]
   
   @js.native
-  sealed trait `text-sentence-case` extends Icons
+  sealed trait `text-sentence-case`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-sentence-case`: `text-sentence-case` = "text-sentence-case".asInstanceOf[`text-sentence-case`]
   
   @js.native
-  sealed trait `text-size` extends Icons
+  sealed trait `text-size`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-size`: `text-size` = "text-size".asInstanceOf[`text-size`]
   
   @js.native
-  sealed trait `text-small` extends Icons
+  sealed trait `text-small`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-small`: `text-small` = "text-small".asInstanceOf[`text-small`]
   
   @js.native
-  sealed trait `text-spacing` extends Icons
+  sealed trait `text-spacing`
+    extends StObject
+       with Icons
   @scala.inline
   def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
   
@@ -1379,12 +1692,16 @@ object gestaltStrings {
   def transparentWhiteText: transparentWhiteText = "transparentWhiteText".asInstanceOf[transparentWhiteText]
   
   @js.native
-  sealed trait `trash-can` extends Icons
+  sealed trait `trash-can`
+    extends StObject
+       with Icons
   @scala.inline
   def `trash-can`: `trash-can` = "trash-can".asInstanceOf[`trash-can`]
   
   @js.native
-  sealed trait twitter extends Icons
+  sealed trait twitter
+    extends StObject
+       with Icons
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   
@@ -1419,7 +1736,9 @@ object gestaltStrings {
   def username: username = "username".asInstanceOf[username]
   
   @js.native
-  sealed trait `video-camera` extends Icons
+  sealed trait `video-camera`
+    extends StObject
+       with Icons
   @scala.inline
   def `video-camera`: `video-camera` = "video-camera".asInstanceOf[`video-camera`]
   
@@ -1439,17 +1758,23 @@ object gestaltStrings {
   def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
   
   @js.native
-  sealed trait `view-type-default` extends Icons
+  sealed trait `view-type-default`
+    extends StObject
+       with Icons
   @scala.inline
   def `view-type-default`: `view-type-default` = "view-type-default".asInstanceOf[`view-type-default`]
   
   @js.native
-  sealed trait `view-type-dense` extends Icons
+  sealed trait `view-type-dense`
+    extends StObject
+       with Icons
   @scala.inline
   def `view-type-dense`: `view-type-dense` = "view-type-dense".asInstanceOf[`view-type-dense`]
   
   @js.native
-  sealed trait `view-type-list` extends Icons
+  sealed trait `view-type-list`
+    extends StObject
+       with Icons
   @scala.inline
   def `view-type-list`: `view-type-list` = "view-type-list".asInstanceOf[`view-type-list`]
   
@@ -1479,37 +1804,51 @@ object gestaltStrings {
   def white: white = "white".asInstanceOf[white]
   
   @js.native
-  sealed trait `workflow-status-all` extends Icons
+  sealed trait `workflow-status-all`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-all`: `workflow-status-all` = "workflow-status-all".asInstanceOf[`workflow-status-all`]
   
   @js.native
-  sealed trait `workflow-status-halted` extends Icons
+  sealed trait `workflow-status-halted`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-halted`: `workflow-status-halted` = "workflow-status-halted".asInstanceOf[`workflow-status-halted`]
   
   @js.native
-  sealed trait `workflow-status-in-progress` extends Icons
+  sealed trait `workflow-status-in-progress`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-in-progress`: `workflow-status-in-progress` = "workflow-status-in-progress".asInstanceOf[`workflow-status-in-progress`]
   
   @js.native
-  sealed trait `workflow-status-ok` extends Icons
+  sealed trait `workflow-status-ok`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-ok`: `workflow-status-ok` = "workflow-status-ok".asInstanceOf[`workflow-status-ok`]
   
   @js.native
-  sealed trait `workflow-status-problem` extends Icons
+  sealed trait `workflow-status-problem`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-problem`: `workflow-status-problem` = "workflow-status-problem".asInstanceOf[`workflow-status-problem`]
   
   @js.native
-  sealed trait `workflow-status-unstarted` extends Icons
+  sealed trait `workflow-status-unstarted`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-unstarted`: `workflow-status-unstarted` = "workflow-status-unstarted".asInstanceOf[`workflow-status-unstarted`]
   
   @js.native
-  sealed trait `workflow-status-warning` extends Icons
+  sealed trait `workflow-status-warning`
+    extends StObject
+       with Icons
   @scala.inline
   def `workflow-status-warning`: `workflow-status-warning` = "workflow-status-warning".asInstanceOf[`workflow-status-warning`]
   

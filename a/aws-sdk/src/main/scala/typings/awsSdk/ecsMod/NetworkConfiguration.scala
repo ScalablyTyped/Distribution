@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConfiguration extends StObject {
   
   /**
     * The VPC subnets and security groups associated with a task.  All specified subnets and security groups must be from the same VPC. 
     */
-  var awsvpcConfiguration: js.UndefOr[AwsVpcConfiguration] = js.native
+  var awsvpcConfiguration: js.UndefOr[AwsVpcConfiguration] = js.undefined
 }
 object NetworkConfiguration {
   

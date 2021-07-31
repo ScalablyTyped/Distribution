@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBrokerCountRequest extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UpdateBrokerCountRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The version of cluster to update from. A successful operation will then generate a new version.
     
     */
-  var CurrentVersion: string = js.native
+  var CurrentVersion: string
   
   /**
     * 
     The number of broker nodes that you want the cluster to have after this operation completes successfully.
     
     */
-  var TargetNumberOfBrokerNodes: integerMin1Max15 = js.native
+  var TargetNumberOfBrokerNodes: integerMin1Max15
 }
 object UpdateBrokerCountRequest {
   

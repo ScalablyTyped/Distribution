@@ -4,12 +4,14 @@ import typings.firebaseDatabase.anon.D
 import typings.firebaseDatabase.packetReceiverMod.PacketReceiver
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.Transport
+import typings.std.AddEventListenerOptions
 import typings.std.Document
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLIFrameElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserPollConnectionMod {
@@ -28,24 +30,12 @@ object browserPollConnectionMod {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
-    def this(
-      connId: String,
-      repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
-      transportSessionId: String
-    ) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: Unit, transportSessionId: String) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
-      transportSessionId: js.UndefOr[scala.Nothing],
-      lastSessionId: String
-    ) = this()
-    def this(
-      connId: String,
-      repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
+      applicationId: String,
       transportSessionId: String,
       lastSessionId: String
     ) = this()
@@ -53,14 +43,21 @@ object browserPollConnectionMod {
       connId: String,
       repoInfo: RepoInfo,
       applicationId: String,
-      transportSessionId: js.UndefOr[scala.Nothing],
+      transportSessionId: Unit,
       lastSessionId: String
     ) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
-      applicationId: String,
+      applicationId: Unit,
       transportSessionId: String,
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: Unit,
+      transportSessionId: Unit,
       lastSessionId: String
     ) = this()
     
@@ -136,9 +133,8 @@ object browserPollConnectionMod {
     /**
       * Forces long polling to be considered as a potential transport
       */
-    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceAllow")
-    @js.native
-    def forceAllow(): Unit = js.native
+    @scala.inline
+    def forceAllow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceAllow")().asInstanceOf[Unit]
     
     @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceAllow_")
     @js.native
@@ -149,9 +145,8 @@ object browserPollConnectionMod {
     /**
       * Forces longpolling to not be considered as a potential transport
       */
-    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceDisallow")
-    @js.native
-    def forceDisallow(): Unit = js.native
+    @scala.inline
+    def forceDisallow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDisallow")().asInstanceOf[Unit]
     
     @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceDisallow_")
     @js.native
@@ -159,9 +154,8 @@ object browserPollConnectionMod {
     @scala.inline
     def forceDisallow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceDisallow_")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_CALLBACK_ID_PARAM")
@@ -323,8 +317,24 @@ object browserPollConnectionMod {
   }
   
   @js.native
-  trait IFrameElement extends HTMLIFrameElement {
+  trait IFrameElement
+    extends StObject
+       with HTMLIFrameElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var doc: Document = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
 }

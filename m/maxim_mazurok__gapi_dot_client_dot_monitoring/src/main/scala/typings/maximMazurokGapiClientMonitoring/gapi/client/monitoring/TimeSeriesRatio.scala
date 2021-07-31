@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeSeriesRatio extends StObject {
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries quantifying bad service, either demanded service that was not provided or demanded
     * service that was of inadequate quality. Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or MetricKind = CUMULATIVE.
     */
-  var badServiceFilter: js.UndefOr[String] = js.native
+  var badServiceFilter: js.UndefOr[String] = js.undefined
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries quantifying good service provided. Must have ValueType = DOUBLE or ValueType = INT64
     * and must have MetricKind = DELTA or MetricKind = CUMULATIVE.
     */
-  var goodServiceFilter: js.UndefOr[String] = js.native
+  var goodServiceFilter: js.UndefOr[String] = js.undefined
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries quantifying total demanded service. Must have ValueType = DOUBLE or ValueType =
     * INT64 and must have MetricKind = DELTA or MetricKind = CUMULATIVE.
     */
-  var totalServiceFilter: js.UndefOr[String] = js.native
+  var totalServiceFilter: js.UndefOr[String] = js.undefined
 }
 object TimeSeriesRatio {
   

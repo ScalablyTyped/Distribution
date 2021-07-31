@@ -8,25 +8,23 @@ import typings.inboxsdk.mod.Lists.ThreadRowView
 import typings.inboxsdk.mod.Router.RouteView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Toolbars {
   
-  @js.native
   trait AppToolbarButtonDescriptor extends StObject {
     
-    var arrowColor: js.UndefOr[String] = js.native
+    var arrowColor: js.UndefOr[String] = js.undefined
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: String = js.native
+    var iconUrl: String
     
-    def onClick(event: AppToolbarButtonEvent): Unit = js.native
+    def onClick(event: AppToolbarButtonEvent): Unit
     
-    var title: String = js.native
+    var title: String
     
-    var titleClass: js.UndefOr[String] = js.native
+    var titleClass: js.UndefOr[String] = js.undefined
   }
   object AppToolbarButtonDescriptor {
     
@@ -68,10 +66,9 @@ object Toolbars {
     }
   }
   
-  @js.native
   trait AppToolbarButtonEvent extends StObject {
     
-    var dropdown: DropdownView = js.native
+    var dropdown: DropdownView
   }
   object AppToolbarButtonEvent {
     
@@ -89,19 +86,18 @@ object Toolbars {
     }
   }
   
-  @js.native
   trait AppToolbarButtonView extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
     @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
     
-    def open(): Unit = js.native
+    def open(): Unit
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object AppToolbarButtonView {
     
@@ -137,24 +133,23 @@ object Toolbars {
     }
   }
   
-  @js.native
   trait LegacyToolbarButtonDescriptor extends StObject {
     
-    var hasDropdown: js.UndefOr[Boolean] = js.native
+    var hasDropdown: js.UndefOr[Boolean] = js.undefined
     
-    var hideFor: js.UndefOr[js.Function1[/* routeView */ RouteView, Unit]] = js.native
+    var hideFor: js.UndefOr[js.Function1[/* routeView */ RouteView, Unit]] = js.undefined
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var keyboardShortcutHandle: js.UndefOr[KeyboardShortcutHandle] = js.native
+    var keyboardShortcutHandle: js.UndefOr[KeyboardShortcutHandle] = js.undefined
     
-    def onClick(event: LegacyToolbarButtonEvent): Unit = js.native
+    def onClick(event: LegacyToolbarButtonEvent): Unit
     
-    var section: SectionNames = js.native
+    var section: SectionNames
     
-    var title: String = js.native
+    var title: String
   }
   object LegacyToolbarButtonDescriptor {
     
@@ -208,16 +203,15 @@ object Toolbars {
     }
   }
   
-  @js.native
   trait LegacyToolbarButtonEvent extends StObject {
     
-    var dropdown: js.UndefOr[DropdownView] = js.native
+    var dropdown: js.UndefOr[DropdownView] = js.undefined
     
-    var selectedThreadRowViews: js.Array[ThreadRowView] = js.native
+    var selectedThreadRowViews: js.Array[ThreadRowView]
     
-    var threadRowViews: js.Array[ThreadRowView] = js.native
+    var threadRowViews: js.Array[ThreadRowView]
     
-    var threadView: ThreadView = js.native
+    var threadView: ThreadView
   }
   object LegacyToolbarButtonEvent {
     
@@ -275,30 +269,29 @@ object Toolbars {
     def OTHER: typings.inboxsdk.inboxsdkStrings.OTHER = "OTHER".asInstanceOf[typings.inboxsdk.inboxsdkStrings.OTHER]
   }
   
-  @js.native
   trait ToolbarButtonDescriptor extends StObject {
     
-    var hasDropdown: js.UndefOr[Boolean] = js.native
+    var hasDropdown: js.UndefOr[Boolean] = js.undefined
     
-    var hideFor: js.UndefOr[js.Function1[/* routeView */ RouteView, Unit]] = js.native
+    var hideFor: js.UndefOr[js.Function1[/* routeView */ RouteView, Unit]] = js.undefined
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var keyboardShortcutHandle: js.UndefOr[KeyboardShortcutHandle] = js.native
+    var keyboardShortcutHandle: js.UndefOr[KeyboardShortcutHandle] = js.undefined
     
-    var listSection: js.UndefOr[SectionNames] = js.native
+    var listSection: js.UndefOr[SectionNames] = js.undefined
     
-    def onClick(event: ToolbarButtonEvent): Unit = js.native
+    def onClick(event: ToolbarButtonEvent): Unit
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
     
-    var positions: js.UndefOr[js.Array[ToolbarButtonPosition]] = js.native
+    var positions: js.UndefOr[js.Array[ToolbarButtonPosition]] = js.undefined
     
-    var threadSection: js.UndefOr[SectionNames] = js.native
+    var threadSection: js.UndefOr[SectionNames] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object ToolbarButtonDescriptor {
     
@@ -376,16 +369,15 @@ object Toolbars {
     }
   }
   
-  @js.native
   trait ToolbarButtonEvent extends StObject {
     
-    var dropdown: js.UndefOr[DropdownView] = js.native
+    var dropdown: js.UndefOr[DropdownView] = js.undefined
     
-    var position: ToolbarButtonPosition = js.native
+    var position: ToolbarButtonPosition
     
-    var selectedThreadRowViews: js.Array[ThreadRowView] = js.native
+    var selectedThreadRowViews: js.Array[ThreadRowView]
     
-    var selectedThreadViews: js.Array[ThreadView] = js.native
+    var selectedThreadViews: js.Array[ThreadView]
   }
   object ToolbarButtonEvent {
     
@@ -443,24 +435,23 @@ object Toolbars {
     def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
   }
   
-  @js.native
   trait ToolbarsInstance extends StObject {
     
-    def addToolbarButtonForApp(appToolbarButtonDescriptor: AppToolbarButtonDescriptor): AppToolbarButtonView = js.native
+    def addToolbarButtonForApp(appToolbarButtonDescriptor: AppToolbarButtonDescriptor): AppToolbarButtonView
     
-    def registerThreadButton(toolbarButtonDescriptor: ToolbarButtonDescriptor): js.Function0[Unit] = js.native
-    
-    /**
-      * @deprecated. use registerThreadButton
-      * @param toolbarButtonDescriptor
-      */
-    def registerToolbarButtonForList(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit] = js.native
+    def registerThreadButton(toolbarButtonDescriptor: ToolbarButtonDescriptor): js.Function0[Unit]
     
     /**
       * @deprecated. use registerThreadButton
       * @param toolbarButtonDescriptor
       */
-    def registerToolbarButtonForThreadView(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit] = js.native
+    def registerToolbarButtonForList(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit]
+    
+    /**
+      * @deprecated. use registerThreadButton
+      * @param toolbarButtonDescriptor
+      */
+    def registerToolbarButtonForThreadView(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit]
   }
   object ToolbarsInstance {
     

@@ -3,17 +3,15 @@ package typings.rxJquery
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RxJQueryAjaxResult[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var jqXHR: JQueryXHR = js.native
+  var jqXHR: JQueryXHR
   
-  var textStatus: String = js.native
+  var textStatus: String
 }
 object RxJQueryAjaxResult {
   
@@ -24,7 +22,7 @@ object RxJQueryAjaxResult {
   }
   
   @scala.inline
-  implicit class RxJQueryAjaxResultMutableBuilder[Self <: RxJQueryAjaxResult[_], T] (val x: Self with RxJQueryAjaxResult[T]) extends AnyVal {
+  implicit class RxJQueryAjaxResultMutableBuilder[Self <: RxJQueryAjaxResult[?], T] (val x: Self & RxJQueryAjaxResult[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -3,14 +3,14 @@ package typings.angularCommon.httpHttpMod
 import typings.angularCommon.httpHttpMod.HttpEventType.UploadProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HttpUploadProgressEvent extends HttpProgressEvent {
+trait HttpUploadProgressEvent
+  extends StObject
+     with HttpProgressEvent {
   
   @JSName("type")
-  var type_HttpUploadProgressEvent: UploadProgress = js.native
+  var type_HttpUploadProgressEvent: UploadProgress
 }
 object HttpUploadProgressEvent {
   

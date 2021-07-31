@@ -2,34 +2,32 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The node this Taint is attached to has the "effect" on any pod that does not tolerate the Taint.
   */
-@js.native
 trait Taint extends StObject {
   
   /**
     * Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.
     */
-  var effect: String = js.native
+  var effect: String
   
   /**
     * Required. The taint key to be applied to a node.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * TimeAdded represents the time at which the taint was added. It is only written for NoExecute taints.
     */
-  var timeAdded: String = js.native
+  var timeAdded: String
   
   /**
     * The taint value corresponding to the taint key.
     */
-  var value: String = js.native
+  var value: String
 }
 object Taint {
   

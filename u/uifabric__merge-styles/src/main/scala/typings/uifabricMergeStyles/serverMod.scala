@@ -3,15 +3,16 @@ package typings.uifabricMergeStyles
 import typings.uifabricMergeStyles.anon.Css
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
   
-  @JSImport("@uifabric/merge-styles/lib/server", "renderStatic")
+  @JSImport("@uifabric/merge-styles/lib/server", JSImport.Namespace)
   @js.native
-  def renderStatic(onRender: js.Function0[String]): Css = js.native
-  @JSImport("@uifabric/merge-styles/lib/server", "renderStatic")
-  @js.native
-  def renderStatic(onRender: js.Function0[String], namespace: String): Css = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def renderStatic(onRender: js.Function0[String]): Css = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any]).asInstanceOf[Css]
+  @scala.inline
+  def renderStatic(onRender: js.Function0[String], namespace: String): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[Css]
 }

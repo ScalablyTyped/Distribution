@@ -2,18 +2,16 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Show dialog action
   */
-@js.native
 trait IShowDialogAction extends StObject {
   
-  var alias: String = js.native
+  var alias: String
   
-  var name: String = js.native
+  var name: String
 }
 object IShowDialogAction {
   

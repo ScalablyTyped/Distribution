@@ -2,16 +2,14 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSocketOpenCallbackResult extends StObject {
   
   /** 连接成功的 HTTP 响应 Header
     *
     * 最低基础库： `2.0.0` */
-  var header: js.Object = js.native
+  var header: js.Object
 }
 object OnSocketOpenCallbackResult {
   

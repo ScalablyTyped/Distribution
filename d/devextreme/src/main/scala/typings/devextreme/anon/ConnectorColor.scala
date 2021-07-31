@@ -3,25 +3,23 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorColor extends StObject {
   
-  var connectorColor: js.UndefOr[String] = js.native
+  var connectorColor: js.UndefOr[String] = js.undefined
   
-  var connectorWidth: js.UndefOr[Double] = js.native
+  var connectorWidth: js.UndefOr[Double] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* barValue */ ValueText, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* barValue */ ValueText, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ConnectorColor {
   

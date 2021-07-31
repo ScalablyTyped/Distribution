@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,10 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ExtendedTypeDetection} services to look into the document stream. Last mode can be suppressed to perform the operation. Of course the results can't be
   * guaranteed then. (e.g. in case the extension was changed)
   */
-@js.native
 trait TypeDetection
-  extends XNameContainer
+  extends StObject
      with XTypeDetection
+     with XNameContainer
      with XContainerQuery
      with XFlushable
 object TypeDetection {

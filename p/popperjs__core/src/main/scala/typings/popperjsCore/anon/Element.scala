@@ -5,19 +5,17 @@ import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var element: Rect | ClientRectObject = js.native
+  var element: Rect | ClientRectObject
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.native
+  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
-  var reference: Rect | ClientRectObject = js.native
+  var reference: Rect | ClientRectObject
   
-  var strategy: PositioningStrategy = js.native
+  var strategy: PositioningStrategy
 }
 object Element {
   

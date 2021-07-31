@@ -8,14 +8,15 @@ import typings.sqltoolsFormatter.typesMod.TokenizerConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenizerMod {
   
   @JSImport("@sqltools/formatter/lib/core/Tokenizer", JSImport.Default)
   @js.native
-  class default protected () extends Tokenizer {
+  class default protected ()
+    extends StObject
+       with Tokenizer {
     def this(cfg: TokenizerConfig) = this()
   }
   

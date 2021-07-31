@@ -6,7 +6,6 @@ import typings.jqueryUiLayout.anon.North
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryUILayout {
@@ -52,44 +51,45 @@ object JQueryUILayout {
     def toggle(pane: String): JQuery = js.native
   }
   
-  @js.native
-  trait Options extends PaneOptions {
+  trait Options
+    extends StObject
+       with PaneOptions {
     
-    var center: js.UndefOr[PaneOptions] = js.native
+    var center: js.UndefOr[PaneOptions] = js.undefined
     
-    var center__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var center__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var center__buttonClass: js.UndefOr[String] = js.native
+    var center__buttonClass: js.UndefOr[String] = js.undefined
     
-    var center__closable: js.UndefOr[Boolean] = js.native
+    var center__closable: js.UndefOr[Boolean] = js.undefined
     
-    var center__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var center__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var center__contentSelector: js.UndefOr[String] = js.native
+    var center__contentSelector: js.UndefOr[String] = js.undefined
     
-    var center__customHotkey: js.UndefOr[String | Double] = js.native
+    var center__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var center__customHotkeyModifier: js.UndefOr[String] = js.native
+    var center__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var center__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var center__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var center__fxName: js.UndefOr[String] = js.native
+    var center__fxName: js.UndefOr[String] = js.undefined
     
-    var center__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var center__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var center__fxSpeed: js.UndefOr[String | Double] = js.native
+    var center__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var center__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var center__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var center__initClosed: js.UndefOr[Boolean] = js.native
+    var center__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var center__initHidden: js.UndefOr[Boolean] = js.native
+    var center__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var center__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var center__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var center__maxSize: js.UndefOr[Double] = js.native
+    var center__maxSize: js.UndefOr[Double] = js.undefined
     
-    var center__minSize: js.UndefOr[Double] = js.native
+    var center__minSize: js.UndefOr[Double] = js.undefined
     
     var center__onclose: js.UndefOr[
         String | (js.Function5[
@@ -100,7 +100,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -111,7 +111,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -122,7 +122,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onhide: js.UndefOr[
         String | (js.Function5[
@@ -133,7 +133,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -144,7 +144,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -155,7 +155,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onopen: js.UndefOr[
         String | (js.Function5[
@@ -166,7 +166,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -177,7 +177,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -188,7 +188,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onresize: js.UndefOr[
         String | (js.Function5[
@@ -199,7 +199,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -210,7 +210,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -221,7 +221,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onshow: js.UndefOr[
         String | (js.Function5[
@@ -232,7 +232,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -243,7 +243,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var center__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -254,95 +254,95 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var center__paneClass: js.UndefOr[String] = js.native
+    var center__paneClass: js.UndefOr[String] = js.undefined
     
-    var center__paneSelector: js.UndefOr[String] = js.native
+    var center__paneSelector: js.UndefOr[String] = js.undefined
     
-    var center__resizable: js.UndefOr[Boolean] = js.native
+    var center__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var center__resizerClass: js.UndefOr[String] = js.native
+    var center__resizerClass: js.UndefOr[String] = js.undefined
     
-    var center__resizerCursor: js.UndefOr[String] = js.native
+    var center__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var center__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var center__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var center__resizerTip: js.UndefOr[String] = js.native
+    var center__resizerTip: js.UndefOr[String] = js.undefined
     
-    var center__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var center__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var center__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var center__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var center__size: js.UndefOr[String | Double] = js.native
+    var center__size: js.UndefOr[String | Double] = js.undefined
     
-    var center__slidable: js.UndefOr[Boolean] = js.native
+    var center__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var center__slideTrigger_close: js.UndefOr[String] = js.native
+    var center__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var center__slideTrigger_open: js.UndefOr[String] = js.native
+    var center__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var center__sliderCursor: js.UndefOr[String] = js.native
+    var center__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var center__sliderTip: js.UndefOr[String] = js.native
+    var center__sliderTip: js.UndefOr[String] = js.undefined
     
-    var center__spacing_closed: js.UndefOr[Double] = js.native
+    var center__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var center__spacing_open: js.UndefOr[Double] = js.native
+    var center__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var center__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var center__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var center__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var center__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var center__togglerClass: js.UndefOr[String] = js.native
+    var center__togglerClass: js.UndefOr[String] = js.undefined
     
-    var center__togglerContent_closed: js.UndefOr[String] = js.native
+    var center__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var center__togglerContent_open: js.UndefOr[String] = js.native
+    var center__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var center__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var center__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var center__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var center__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var center__togglerTip_closed: js.UndefOr[String] = js.native
+    var center__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var center__togglerTip_open: js.UndefOr[String] = js.native
+    var center__togglerTip_open: js.UndefOr[String] = js.undefined
     
-    var defaults: js.UndefOr[PaneOptions] = js.native
+    var defaults: js.UndefOr[PaneOptions] = js.undefined
     
-    var defaults__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var defaults__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__buttonClass: js.UndefOr[String] = js.native
+    var defaults__buttonClass: js.UndefOr[String] = js.undefined
     
-    var defaults__closable: js.UndefOr[Boolean] = js.native
+    var defaults__closable: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var defaults__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var defaults__contentSelector: js.UndefOr[String] = js.native
+    var defaults__contentSelector: js.UndefOr[String] = js.undefined
     
-    var defaults__customHotkey: js.UndefOr[String | Double] = js.native
+    var defaults__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var defaults__customHotkeyModifier: js.UndefOr[String] = js.native
+    var defaults__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var defaults__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var defaults__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__fxName: js.UndefOr[String] = js.native
+    var defaults__fxName: js.UndefOr[String] = js.undefined
     
-    var defaults__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var defaults__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var defaults__fxSpeed: js.UndefOr[String | Double] = js.native
+    var defaults__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var defaults__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var defaults__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__initClosed: js.UndefOr[Boolean] = js.native
+    var defaults__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__initHidden: js.UndefOr[Boolean] = js.native
+    var defaults__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var defaults__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var defaults__maxSize: js.UndefOr[Double] = js.native
+    var defaults__maxSize: js.UndefOr[Double] = js.undefined
     
-    var defaults__minSize: js.UndefOr[Double] = js.native
+    var defaults__minSize: js.UndefOr[Double] = js.undefined
     
     var defaults__onclose: js.UndefOr[
         String | (js.Function5[
@@ -353,7 +353,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -364,7 +364,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -375,7 +375,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onhide: js.UndefOr[
         String | (js.Function5[
@@ -386,7 +386,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -397,7 +397,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -408,7 +408,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onopen: js.UndefOr[
         String | (js.Function5[
@@ -419,7 +419,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -430,7 +430,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -441,7 +441,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onresize: js.UndefOr[
         String | (js.Function5[
@@ -452,7 +452,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -463,7 +463,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -474,7 +474,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onshow: js.UndefOr[
         String | (js.Function5[
@@ -485,7 +485,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -496,7 +496,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var defaults__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -507,95 +507,95 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var defaults__paneClass: js.UndefOr[String] = js.native
+    var defaults__paneClass: js.UndefOr[String] = js.undefined
     
-    var defaults__paneSelector: js.UndefOr[String] = js.native
+    var defaults__paneSelector: js.UndefOr[String] = js.undefined
     
-    var defaults__resizable: js.UndefOr[Boolean] = js.native
+    var defaults__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__resizerClass: js.UndefOr[String] = js.native
+    var defaults__resizerClass: js.UndefOr[String] = js.undefined
     
-    var defaults__resizerCursor: js.UndefOr[String] = js.native
+    var defaults__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var defaults__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var defaults__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var defaults__resizerTip: js.UndefOr[String] = js.native
+    var defaults__resizerTip: js.UndefOr[String] = js.undefined
     
-    var defaults__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var defaults__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var defaults__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__size: js.UndefOr[String | Double] = js.native
+    var defaults__size: js.UndefOr[String | Double] = js.undefined
     
-    var defaults__slidable: js.UndefOr[Boolean] = js.native
+    var defaults__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var defaults__slideTrigger_close: js.UndefOr[String] = js.native
+    var defaults__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var defaults__slideTrigger_open: js.UndefOr[String] = js.native
+    var defaults__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var defaults__sliderCursor: js.UndefOr[String] = js.native
+    var defaults__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var defaults__sliderTip: js.UndefOr[String] = js.native
+    var defaults__sliderTip: js.UndefOr[String] = js.undefined
     
-    var defaults__spacing_closed: js.UndefOr[Double] = js.native
+    var defaults__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var defaults__spacing_open: js.UndefOr[Double] = js.native
+    var defaults__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var defaults__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var defaults__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var defaults__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var defaults__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var defaults__togglerClass: js.UndefOr[String] = js.native
+    var defaults__togglerClass: js.UndefOr[String] = js.undefined
     
-    var defaults__togglerContent_closed: js.UndefOr[String] = js.native
+    var defaults__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var defaults__togglerContent_open: js.UndefOr[String] = js.native
+    var defaults__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var defaults__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var defaults__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var defaults__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var defaults__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var defaults__togglerTip_closed: js.UndefOr[String] = js.native
+    var defaults__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var defaults__togglerTip_open: js.UndefOr[String] = js.native
+    var defaults__togglerTip_open: js.UndefOr[String] = js.undefined
     
-    var east: js.UndefOr[PaneOptions] = js.native
+    var east: js.UndefOr[PaneOptions] = js.undefined
     
-    var east__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var east__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var east__buttonClass: js.UndefOr[String] = js.native
+    var east__buttonClass: js.UndefOr[String] = js.undefined
     
-    var east__closable: js.UndefOr[Boolean] = js.native
+    var east__closable: js.UndefOr[Boolean] = js.undefined
     
-    var east__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var east__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var east__contentSelector: js.UndefOr[String] = js.native
+    var east__contentSelector: js.UndefOr[String] = js.undefined
     
-    var east__customHotkey: js.UndefOr[String | Double] = js.native
+    var east__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var east__customHotkeyModifier: js.UndefOr[String] = js.native
+    var east__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var east__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var east__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var east__fxName: js.UndefOr[String] = js.native
+    var east__fxName: js.UndefOr[String] = js.undefined
     
-    var east__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var east__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var east__fxSpeed: js.UndefOr[String | Double] = js.native
+    var east__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var east__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var east__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var east__initClosed: js.UndefOr[Boolean] = js.native
+    var east__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var east__initHidden: js.UndefOr[Boolean] = js.native
+    var east__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var east__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var east__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var east__maxSize: js.UndefOr[Double] = js.native
+    var east__maxSize: js.UndefOr[Double] = js.undefined
     
-    var east__minSize: js.UndefOr[Double] = js.native
+    var east__minSize: js.UndefOr[Double] = js.undefined
     
     var east__onclose: js.UndefOr[
         String | (js.Function5[
@@ -606,7 +606,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -617,7 +617,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -628,7 +628,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onhide: js.UndefOr[
         String | (js.Function5[
@@ -639,7 +639,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -650,7 +650,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -661,7 +661,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onopen: js.UndefOr[
         String | (js.Function5[
@@ -672,7 +672,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -683,7 +683,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -694,7 +694,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onresize: js.UndefOr[
         String | (js.Function5[
@@ -705,7 +705,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -716,7 +716,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -727,7 +727,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onshow: js.UndefOr[
         String | (js.Function5[
@@ -738,7 +738,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -749,7 +749,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var east__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -760,95 +760,95 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var east__paneClass: js.UndefOr[String] = js.native
+    var east__paneClass: js.UndefOr[String] = js.undefined
     
-    var east__paneSelector: js.UndefOr[String] = js.native
+    var east__paneSelector: js.UndefOr[String] = js.undefined
     
-    var east__resizable: js.UndefOr[Boolean] = js.native
+    var east__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var east__resizerClass: js.UndefOr[String] = js.native
+    var east__resizerClass: js.UndefOr[String] = js.undefined
     
-    var east__resizerCursor: js.UndefOr[String] = js.native
+    var east__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var east__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var east__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var east__resizerTip: js.UndefOr[String] = js.native
+    var east__resizerTip: js.UndefOr[String] = js.undefined
     
-    var east__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var east__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var east__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var east__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var east__size: js.UndefOr[String | Double] = js.native
+    var east__size: js.UndefOr[String | Double] = js.undefined
     
-    var east__slidable: js.UndefOr[Boolean] = js.native
+    var east__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var east__slideTrigger_close: js.UndefOr[String] = js.native
+    var east__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var east__slideTrigger_open: js.UndefOr[String] = js.native
+    var east__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var east__sliderCursor: js.UndefOr[String] = js.native
+    var east__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var east__sliderTip: js.UndefOr[String] = js.native
+    var east__sliderTip: js.UndefOr[String] = js.undefined
     
-    var east__spacing_closed: js.UndefOr[Double] = js.native
+    var east__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var east__spacing_open: js.UndefOr[Double] = js.native
+    var east__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var east__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var east__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var east__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var east__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var east__togglerClass: js.UndefOr[String] = js.native
+    var east__togglerClass: js.UndefOr[String] = js.undefined
     
-    var east__togglerContent_closed: js.UndefOr[String] = js.native
+    var east__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var east__togglerContent_open: js.UndefOr[String] = js.native
+    var east__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var east__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var east__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var east__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var east__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var east__togglerTip_closed: js.UndefOr[String] = js.native
+    var east__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var east__togglerTip_open: js.UndefOr[String] = js.native
+    var east__togglerTip_open: js.UndefOr[String] = js.undefined
     
-    var north: js.UndefOr[PaneOptions] = js.native
+    var north: js.UndefOr[PaneOptions] = js.undefined
     
-    var north__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var north__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var north__buttonClass: js.UndefOr[String] = js.native
+    var north__buttonClass: js.UndefOr[String] = js.undefined
     
-    var north__closable: js.UndefOr[Boolean] = js.native
+    var north__closable: js.UndefOr[Boolean] = js.undefined
     
-    var north__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var north__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var north__contentSelector: js.UndefOr[String] = js.native
+    var north__contentSelector: js.UndefOr[String] = js.undefined
     
-    var north__customHotkey: js.UndefOr[String | Double] = js.native
+    var north__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var north__customHotkeyModifier: js.UndefOr[String] = js.native
+    var north__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var north__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var north__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var north__fxName: js.UndefOr[String] = js.native
+    var north__fxName: js.UndefOr[String] = js.undefined
     
-    var north__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var north__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var north__fxSpeed: js.UndefOr[String | Double] = js.native
+    var north__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var north__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var north__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var north__initClosed: js.UndefOr[Boolean] = js.native
+    var north__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var north__initHidden: js.UndefOr[Boolean] = js.native
+    var north__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var north__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var north__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var north__maxSize: js.UndefOr[Double] = js.native
+    var north__maxSize: js.UndefOr[Double] = js.undefined
     
-    var north__minSize: js.UndefOr[Double] = js.native
+    var north__minSize: js.UndefOr[Double] = js.undefined
     
     var north__onclose: js.UndefOr[
         String | (js.Function5[
@@ -859,7 +859,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -870,7 +870,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -881,7 +881,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onhide: js.UndefOr[
         String | (js.Function5[
@@ -892,7 +892,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -903,7 +903,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -914,7 +914,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onopen: js.UndefOr[
         String | (js.Function5[
@@ -925,7 +925,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -936,7 +936,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -947,7 +947,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onresize: js.UndefOr[
         String | (js.Function5[
@@ -958,7 +958,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -969,7 +969,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -980,7 +980,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onshow: js.UndefOr[
         String | (js.Function5[
@@ -991,7 +991,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -1002,7 +1002,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var north__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -1013,95 +1013,95 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var north__paneClass: js.UndefOr[String] = js.native
+    var north__paneClass: js.UndefOr[String] = js.undefined
     
-    var north__paneSelector: js.UndefOr[String] = js.native
+    var north__paneSelector: js.UndefOr[String] = js.undefined
     
-    var north__resizable: js.UndefOr[Boolean] = js.native
+    var north__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var north__resizerClass: js.UndefOr[String] = js.native
+    var north__resizerClass: js.UndefOr[String] = js.undefined
     
-    var north__resizerCursor: js.UndefOr[String] = js.native
+    var north__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var north__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var north__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var north__resizerTip: js.UndefOr[String] = js.native
+    var north__resizerTip: js.UndefOr[String] = js.undefined
     
-    var north__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var north__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var north__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var north__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var north__size: js.UndefOr[String | Double] = js.native
+    var north__size: js.UndefOr[String | Double] = js.undefined
     
-    var north__slidable: js.UndefOr[Boolean] = js.native
+    var north__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var north__slideTrigger_close: js.UndefOr[String] = js.native
+    var north__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var north__slideTrigger_open: js.UndefOr[String] = js.native
+    var north__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var north__sliderCursor: js.UndefOr[String] = js.native
+    var north__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var north__sliderTip: js.UndefOr[String] = js.native
+    var north__sliderTip: js.UndefOr[String] = js.undefined
     
-    var north__spacing_closed: js.UndefOr[Double] = js.native
+    var north__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var north__spacing_open: js.UndefOr[Double] = js.native
+    var north__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var north__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var north__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var north__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var north__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var north__togglerClass: js.UndefOr[String] = js.native
+    var north__togglerClass: js.UndefOr[String] = js.undefined
     
-    var north__togglerContent_closed: js.UndefOr[String] = js.native
+    var north__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var north__togglerContent_open: js.UndefOr[String] = js.native
+    var north__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var north__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var north__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var north__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var north__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var north__togglerTip_closed: js.UndefOr[String] = js.native
+    var north__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var north__togglerTip_open: js.UndefOr[String] = js.native
+    var north__togglerTip_open: js.UndefOr[String] = js.undefined
     
-    var south: js.UndefOr[PaneOptions] = js.native
+    var south: js.UndefOr[PaneOptions] = js.undefined
     
-    var south__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var south__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var south__buttonClass: js.UndefOr[String] = js.native
+    var south__buttonClass: js.UndefOr[String] = js.undefined
     
-    var south__closable: js.UndefOr[Boolean] = js.native
+    var south__closable: js.UndefOr[Boolean] = js.undefined
     
-    var south__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var south__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var south__contentSelector: js.UndefOr[String] = js.native
+    var south__contentSelector: js.UndefOr[String] = js.undefined
     
-    var south__customHotkey: js.UndefOr[String | Double] = js.native
+    var south__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var south__customHotkeyModifier: js.UndefOr[String] = js.native
+    var south__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var south__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var south__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var south__fxName: js.UndefOr[String] = js.native
+    var south__fxName: js.UndefOr[String] = js.undefined
     
-    var south__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var south__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var south__fxSpeed: js.UndefOr[String | Double] = js.native
+    var south__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var south__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var south__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var south__initClosed: js.UndefOr[Boolean] = js.native
+    var south__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var south__initHidden: js.UndefOr[Boolean] = js.native
+    var south__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var south__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var south__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var south__maxSize: js.UndefOr[Double] = js.native
+    var south__maxSize: js.UndefOr[Double] = js.undefined
     
-    var south__minSize: js.UndefOr[Double] = js.native
+    var south__minSize: js.UndefOr[Double] = js.undefined
     
     var south__onclose: js.UndefOr[
         String | (js.Function5[
@@ -1112,7 +1112,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -1123,7 +1123,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -1134,7 +1134,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onhide: js.UndefOr[
         String | (js.Function5[
@@ -1145,7 +1145,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -1156,7 +1156,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -1167,7 +1167,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onopen: js.UndefOr[
         String | (js.Function5[
@@ -1178,7 +1178,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -1189,7 +1189,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -1200,7 +1200,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onresize: js.UndefOr[
         String | (js.Function5[
@@ -1211,7 +1211,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -1222,7 +1222,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -1233,7 +1233,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onshow: js.UndefOr[
         String | (js.Function5[
@@ -1244,7 +1244,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -1255,7 +1255,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var south__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -1266,95 +1266,95 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var south__paneClass: js.UndefOr[String] = js.native
+    var south__paneClass: js.UndefOr[String] = js.undefined
     
-    var south__paneSelector: js.UndefOr[String] = js.native
+    var south__paneSelector: js.UndefOr[String] = js.undefined
     
-    var south__resizable: js.UndefOr[Boolean] = js.native
+    var south__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var south__resizerClass: js.UndefOr[String] = js.native
+    var south__resizerClass: js.UndefOr[String] = js.undefined
     
-    var south__resizerCursor: js.UndefOr[String] = js.native
+    var south__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var south__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var south__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var south__resizerTip: js.UndefOr[String] = js.native
+    var south__resizerTip: js.UndefOr[String] = js.undefined
     
-    var south__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var south__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var south__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var south__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var south__size: js.UndefOr[String | Double] = js.native
+    var south__size: js.UndefOr[String | Double] = js.undefined
     
-    var south__slidable: js.UndefOr[Boolean] = js.native
+    var south__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var south__slideTrigger_close: js.UndefOr[String] = js.native
+    var south__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var south__slideTrigger_open: js.UndefOr[String] = js.native
+    var south__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var south__sliderCursor: js.UndefOr[String] = js.native
+    var south__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var south__sliderTip: js.UndefOr[String] = js.native
+    var south__sliderTip: js.UndefOr[String] = js.undefined
     
-    var south__spacing_closed: js.UndefOr[Double] = js.native
+    var south__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var south__spacing_open: js.UndefOr[Double] = js.native
+    var south__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var south__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var south__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var south__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var south__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var south__togglerClass: js.UndefOr[String] = js.native
+    var south__togglerClass: js.UndefOr[String] = js.undefined
     
-    var south__togglerContent_closed: js.UndefOr[String] = js.native
+    var south__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var south__togglerContent_open: js.UndefOr[String] = js.native
+    var south__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var south__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var south__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var south__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var south__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var south__togglerTip_closed: js.UndefOr[String] = js.native
+    var south__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var south__togglerTip_open: js.UndefOr[String] = js.native
+    var south__togglerTip_open: js.UndefOr[String] = js.undefined
     
-    var west: js.UndefOr[PaneOptions] = js.native
+    var west: js.UndefOr[PaneOptions] = js.undefined
     
-    var west__applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var west__applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var west__buttonClass: js.UndefOr[String] = js.native
+    var west__buttonClass: js.UndefOr[String] = js.undefined
     
-    var west__closable: js.UndefOr[Boolean] = js.native
+    var west__closable: js.UndefOr[Boolean] = js.undefined
     
-    var west__contentIgnoreSelector: js.UndefOr[String] = js.native
+    var west__contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var west__contentSelector: js.UndefOr[String] = js.native
+    var west__contentSelector: js.UndefOr[String] = js.undefined
     
-    var west__customHotkey: js.UndefOr[String | Double] = js.native
+    var west__customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var west__customHotkeyModifier: js.UndefOr[String] = js.native
+    var west__customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var west__enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var west__enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var west__fxName: js.UndefOr[String] = js.native
+    var west__fxName: js.UndefOr[String] = js.undefined
     
-    var west__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var west__fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var west__fxSpeed: js.UndefOr[String | Double] = js.native
+    var west__fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var west__hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var west__hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var west__initClosed: js.UndefOr[Boolean] = js.native
+    var west__initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var west__initHidden: js.UndefOr[Boolean] = js.native
+    var west__initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var west__maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var west__maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var west__maxSize: js.UndefOr[Double] = js.native
+    var west__maxSize: js.UndefOr[Double] = js.undefined
     
-    var west__minSize: js.UndefOr[Double] = js.native
+    var west__minSize: js.UndefOr[Double] = js.undefined
     
     var west__onclose: js.UndefOr[
         String | (js.Function5[
@@ -1365,7 +1365,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -1376,7 +1376,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -1387,7 +1387,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onhide: js.UndefOr[
         String | (js.Function5[
@@ -1398,7 +1398,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -1409,7 +1409,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -1420,7 +1420,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onopen: js.UndefOr[
         String | (js.Function5[
@@ -1431,7 +1431,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -1442,7 +1442,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -1453,7 +1453,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onresize: js.UndefOr[
         String | (js.Function5[
@@ -1464,7 +1464,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -1475,7 +1475,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -1486,7 +1486,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onshow: js.UndefOr[
         String | (js.Function5[
@@ -1497,7 +1497,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -1508,7 +1508,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var west__onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -1519,59 +1519,59 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var west__paneClass: js.UndefOr[String] = js.native
+    var west__paneClass: js.UndefOr[String] = js.undefined
     
-    var west__paneSelector: js.UndefOr[String] = js.native
+    var west__paneSelector: js.UndefOr[String] = js.undefined
     
-    var west__resizable: js.UndefOr[Boolean] = js.native
+    var west__resizable: js.UndefOr[Boolean] = js.undefined
     
-    var west__resizerClass: js.UndefOr[String] = js.native
+    var west__resizerClass: js.UndefOr[String] = js.undefined
     
-    var west__resizerCursor: js.UndefOr[String] = js.native
+    var west__resizerCursor: js.UndefOr[String] = js.undefined
     
-    var west__resizerDragOpacity: js.UndefOr[Double] = js.native
+    var west__resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var west__resizerTip: js.UndefOr[String] = js.native
+    var west__resizerTip: js.UndefOr[String] = js.undefined
     
-    var west__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var west__scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var west__showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var west__showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var west__size: js.UndefOr[String | Double] = js.native
+    var west__size: js.UndefOr[String | Double] = js.undefined
     
-    var west__slidable: js.UndefOr[Boolean] = js.native
+    var west__slidable: js.UndefOr[Boolean] = js.undefined
     
-    var west__slideTrigger_close: js.UndefOr[String] = js.native
+    var west__slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var west__slideTrigger_open: js.UndefOr[String] = js.native
+    var west__slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var west__sliderCursor: js.UndefOr[String] = js.native
+    var west__sliderCursor: js.UndefOr[String] = js.undefined
     
-    var west__sliderTip: js.UndefOr[String] = js.native
+    var west__sliderTip: js.UndefOr[String] = js.undefined
     
-    var west__spacing_closed: js.UndefOr[Double] = js.native
+    var west__spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var west__spacing_open: js.UndefOr[Double] = js.native
+    var west__spacing_open: js.UndefOr[Double] = js.undefined
     
-    var west__togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var west__togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var west__togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var west__togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var west__togglerClass: js.UndefOr[String] = js.native
+    var west__togglerClass: js.UndefOr[String] = js.undefined
     
-    var west__togglerContent_closed: js.UndefOr[String] = js.native
+    var west__togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var west__togglerContent_open: js.UndefOr[String] = js.native
+    var west__togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var west__togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var west__togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var west__togglerLength_open: js.UndefOr[Double | String] = js.native
+    var west__togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var west__togglerTip_closed: js.UndefOr[String] = js.native
+    var west__togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var west__togglerTip_open: js.UndefOr[String] = js.native
+    var west__togglerTip_open: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -4970,42 +4970,41 @@ object JQueryUILayout {
     }
   }
   
-  @js.native
   trait PaneOptions extends StObject {
     
-    var applyDefaultStyles: js.UndefOr[Boolean] = js.native
+    var applyDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
-    var buttonClass: js.UndefOr[String] = js.native
+    var buttonClass: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var contentIgnoreSelector: js.UndefOr[String] = js.native
+    var contentIgnoreSelector: js.UndefOr[String] = js.undefined
     
-    var contentSelector: js.UndefOr[String] = js.native
+    var contentSelector: js.UndefOr[String] = js.undefined
     
-    var customHotkey: js.UndefOr[String | Double] = js.native
+    var customHotkey: js.UndefOr[String | Double] = js.undefined
     
-    var customHotkeyModifier: js.UndefOr[String] = js.native
+    var customHotkeyModifier: js.UndefOr[String] = js.undefined
     
-    var enableCursorHotkey: js.UndefOr[Boolean] = js.native
+    var enableCursorHotkey: js.UndefOr[Boolean] = js.undefined
     
-    var fxName: js.UndefOr[String] = js.native
+    var fxName: js.UndefOr[String] = js.undefined
     
-    var fxSettings: js.UndefOr[JQueryAnimationOptions] = js.native
+    var fxSettings: js.UndefOr[JQueryAnimationOptions] = js.undefined
     
-    var fxSpeed: js.UndefOr[String | Double] = js.native
+    var fxSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var hideTogglerOnSlide: js.UndefOr[Boolean] = js.native
+    var hideTogglerOnSlide: js.UndefOr[Boolean] = js.undefined
     
-    var initClosed: js.UndefOr[Boolean] = js.native
+    var initClosed: js.UndefOr[Boolean] = js.undefined
     
-    var initHidden: js.UndefOr[Boolean] = js.native
+    var initHidden: js.UndefOr[Boolean] = js.undefined
     
-    var maskIframesOnResize: js.UndefOr[Boolean | String] = js.native
+    var maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     var onclose: js.UndefOr[
         String | (js.Function5[
@@ -5016,7 +5015,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onclose_end: js.UndefOr[
         String | (js.Function5[
@@ -5027,7 +5026,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onclose_start: js.UndefOr[
         String | (js.Function5[
@@ -5038,7 +5037,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onhide: js.UndefOr[
         String | (js.Function5[
@@ -5049,7 +5048,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onhide_end: js.UndefOr[
         String | (js.Function5[
@@ -5060,7 +5059,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onhide_start: js.UndefOr[
         String | (js.Function5[
@@ -5071,7 +5070,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onopen: js.UndefOr[
         String | (js.Function5[
@@ -5082,7 +5081,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onopen_end: js.UndefOr[
         String | (js.Function5[
@@ -5093,7 +5092,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onopen_start: js.UndefOr[
         String | (js.Function5[
@@ -5104,7 +5103,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onresize: js.UndefOr[
         String | (js.Function5[
@@ -5115,7 +5114,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onresize_end: js.UndefOr[
         String | (js.Function5[
@@ -5126,7 +5125,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onresize_start: js.UndefOr[
         String | (js.Function5[
@@ -5137,7 +5136,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onshow: js.UndefOr[
         String | (js.Function5[
@@ -5148,7 +5147,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onshow_end: js.UndefOr[
         String | (js.Function5[
@@ -5159,7 +5158,7 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onshow_start: js.UndefOr[
         String | (js.Function5[
@@ -5170,59 +5169,59 @@ object JQueryUILayout {
           /* layout_name */ String, 
           Boolean | Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var paneClass: js.UndefOr[String] = js.native
+    var paneClass: js.UndefOr[String] = js.undefined
     
-    var paneSelector: js.UndefOr[String] = js.native
+    var paneSelector: js.UndefOr[String] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var resizerClass: js.UndefOr[String] = js.native
+    var resizerClass: js.UndefOr[String] = js.undefined
     
-    var resizerCursor: js.UndefOr[String] = js.native
+    var resizerCursor: js.UndefOr[String] = js.undefined
     
-    var resizerDragOpacity: js.UndefOr[Double] = js.native
+    var resizerDragOpacity: js.UndefOr[Double] = js.undefined
     
-    var resizerTip: js.UndefOr[String] = js.native
+    var resizerTip: js.UndefOr[String] = js.undefined
     
-    var scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.native
+    var scrollToBookmarkOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var showOverflowOnHover: js.UndefOr[Boolean] = js.native
+    var showOverflowOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
     
-    var slidable: js.UndefOr[Boolean] = js.native
+    var slidable: js.UndefOr[Boolean] = js.undefined
     
-    var slideTrigger_close: js.UndefOr[String] = js.native
+    var slideTrigger_close: js.UndefOr[String] = js.undefined
     
-    var slideTrigger_open: js.UndefOr[String] = js.native
+    var slideTrigger_open: js.UndefOr[String] = js.undefined
     
-    var sliderCursor: js.UndefOr[String] = js.native
+    var sliderCursor: js.UndefOr[String] = js.undefined
     
-    var sliderTip: js.UndefOr[String] = js.native
+    var sliderTip: js.UndefOr[String] = js.undefined
     
-    var spacing_closed: js.UndefOr[Double] = js.native
+    var spacing_closed: js.UndefOr[Double] = js.undefined
     
-    var spacing_open: js.UndefOr[Double] = js.native
+    var spacing_open: js.UndefOr[Double] = js.undefined
     
-    var togglerAlign_closed: js.UndefOr[String | Double] = js.native
+    var togglerAlign_closed: js.UndefOr[String | Double] = js.undefined
     
-    var togglerAlign_open: js.UndefOr[String | Double] = js.native
+    var togglerAlign_open: js.UndefOr[String | Double] = js.undefined
     
-    var togglerClass: js.UndefOr[String] = js.native
+    var togglerClass: js.UndefOr[String] = js.undefined
     
-    var togglerContent_closed: js.UndefOr[String] = js.native
+    var togglerContent_closed: js.UndefOr[String] = js.undefined
     
-    var togglerContent_open: js.UndefOr[String] = js.native
+    var togglerContent_open: js.UndefOr[String] = js.undefined
     
-    var togglerLength_closed: js.UndefOr[Double | String] = js.native
+    var togglerLength_closed: js.UndefOr[Double | String] = js.undefined
     
-    var togglerLength_open: js.UndefOr[Double | String] = js.native
+    var togglerLength_open: js.UndefOr[Double | String] = js.undefined
     
-    var togglerTip_closed: js.UndefOr[String] = js.native
+    var togglerTip_closed: js.UndefOr[String] = js.undefined
     
-    var togglerTip_open: js.UndefOr[String] = js.native
+    var togglerTip_open: js.UndefOr[String] = js.undefined
   }
   object PaneOptions {
     
@@ -5795,24 +5794,23 @@ object JQueryUILayout {
     }
   }
   
-  @js.native
   trait PaneState extends StObject {
     
-    var isClosed: Boolean = js.native
+    var isClosed: Boolean
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var isResizing: Boolean = js.native
+    var isResizing: Boolean
     
-    var isSliding: Boolean = js.native
+    var isSliding: Boolean
     
-    var maxSize: Double = js.native
+    var maxSize: Double
     
-    var minSize: Double = js.native
+    var minSize: Double
     
-    var noRoom: Boolean = js.native
+    var noRoom: Boolean
     
-    var size: Double = js.native
+    var size: Double
   }
   object PaneState {
     

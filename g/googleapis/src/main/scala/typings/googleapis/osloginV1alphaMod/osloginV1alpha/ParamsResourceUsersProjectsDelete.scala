@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersProjectsDelete extends StandardParameters {
+trait ParamsResourceUsersProjectsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A reference to the POSIX account to update. POSIX accounts are identified
     * by the project ID they are associated with. A reference to the POSIX
     * account is in format `users/{user}/projects/{project}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of operating system associated with the account.
     */
-  var operatingSystemType: js.UndefOr[String] = js.native
+  var operatingSystemType: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersProjectsDelete {
   

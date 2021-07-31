@@ -2,15 +2,13 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthOptions extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var username: String = js.native
+  var username: String
 }
 object AuthOptions {
   

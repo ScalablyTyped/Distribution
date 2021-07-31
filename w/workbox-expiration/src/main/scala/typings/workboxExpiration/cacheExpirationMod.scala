@@ -2,7 +2,6 @@ package typings.workboxExpiration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheExpirationMod {
@@ -22,12 +21,11 @@ object cacheExpirationMod {
     def updateTimestamp(url: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait CacheExpirationConfig extends StObject {
     
-    var maxAgeSeconds: js.UndefOr[Double] = js.native
+    var maxAgeSeconds: js.UndefOr[Double] = js.undefined
     
-    var maxEntries: js.UndefOr[Double] = js.native
+    var maxEntries: js.UndefOr[Double] = js.undefined
   }
   object CacheExpirationConfig {
     

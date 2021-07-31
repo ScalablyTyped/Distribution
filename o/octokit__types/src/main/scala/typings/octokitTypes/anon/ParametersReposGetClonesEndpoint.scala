@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetClonesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetClonesEndpoint extends StObject {
   
-  var parameters: ReposGetClonesEndpoint = js.native
+  var parameters: ReposGetClonesEndpoint
   
-  var request: ReposGetClonesRequestOptions = js.native
+  var request: ReposGetClonesRequestOptions
   
-  var response: OctokitResponse[ReposGetClonesResponseData] = js.native
+  var response: OctokitResponse[ReposGetClonesResponseData]
 }
 object ParametersReposGetClonesEndpoint {
   

@@ -1,24 +1,28 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreateRoleFn
-import typings.nodePgMigrate.anon.ReverseRenameRoleFn
 import typings.nodePgMigrate.generalTypesMod.IfExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.generalTypesMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rolesTypesMod {
   
   type AlterRole = js.Function2[/* roleName */ Name, /* roleOptions */ RoleOptions, String | js.Array[String]]
   
-  type CreateRole = CreateRoleFn with ReverseCreateRoleFn
+  @js.native
+  trait CreateRole extends CreateRoleFn {
+    
+    def reverse(roleName: Name): String | js.Array[String] = js.native
+    def reverse(roleName: Name, roleOptions: RoleOptions & IfExistsOption): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateRoleFn = js.native
+  }
   
   type CreateRoleFn = js.Function2[
     /* roleName */ Name, 
-    /* roleOptions */ js.UndefOr[RoleOptions with IfExistsOption], 
+    /* roleOptions */ js.UndefOr[RoleOptions & IfExistsOption], 
     String | js.Array[String]
   ]
   
@@ -28,40 +32,45 @@ object rolesTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameRole = RenameRoleFn with ReverseRenameRoleFn
+  @js.native
+  trait RenameRole extends RenameRoleFn {
+    
+    def reverse(oldRoleName: Name, newRoleName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameRoleFn = js.native
+  }
   
   type RenameRoleFn = js.Function2[/* oldRoleName */ Name, /* newRoleName */ Name, String | js.Array[String]]
   
-  @js.native
   trait RoleOptions extends StObject {
     
-    var admin: js.UndefOr[String | js.Array[String]] = js.native
+    var admin: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var bypassrls: js.UndefOr[Boolean] = js.native
+    var bypassrls: js.UndefOr[Boolean] = js.undefined
     
-    var createdb: js.UndefOr[Boolean] = js.native
+    var createdb: js.UndefOr[Boolean] = js.undefined
     
-    var createrole: js.UndefOr[Boolean] = js.native
+    var createrole: js.UndefOr[Boolean] = js.undefined
     
-    var encrypted: js.UndefOr[Boolean] = js.native
+    var encrypted: js.UndefOr[Boolean] = js.undefined
     
-    var inRole: js.UndefOr[String | js.Array[String]] = js.native
+    var inRole: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var inherit: js.UndefOr[Boolean] = js.native
+    var inherit: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var login: js.UndefOr[Boolean] = js.native
+    var login: js.UndefOr[Boolean] = js.undefined
     
-    var password: js.UndefOr[Value] = js.native
+    var password: js.UndefOr[Value] = js.undefined
     
-    var replication: js.UndefOr[Boolean] = js.native
+    var replication: js.UndefOr[Boolean] = js.undefined
     
-    var role: js.UndefOr[String | js.Array[String]] = js.native
+    var role: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var superuser: js.UndefOr[Boolean] = js.native
+    var superuser: js.UndefOr[Boolean] = js.undefined
     
-    var valid: js.UndefOr[Value] = js.native
+    var valid: js.UndefOr[Value] = js.undefined
   }
   object RoleOptions {
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toObjectMod extends Shortcut {
@@ -13,22 +12,21 @@ object toObjectMod extends Shortcut {
   @js.native
   val ^ : PluginFunc[js.Any] = js.native
   
-  @js.native
   trait DayjsObject extends StObject {
     
-    var date: Double = js.native
+    var date: Double
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var milliseconds: Double = js.native
+    var milliseconds: Double
     
-    var minutes: Double = js.native
+    var minutes: Double
     
-    var months: Double = js.native
+    var months: Double
     
-    var seconds: Double = js.native
+    var seconds: Double
     
-    var years: Double = js.native
+    var years: Double
   }
   object DayjsObject {
     
@@ -80,10 +78,9 @@ object toObjectMod extends Shortcut {
   /* augmented module */
   object dayjsEsmAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def toObject(): DayjsObject = js.native
+      def toObject(): DayjsObject
     }
     object Dayjs {
       

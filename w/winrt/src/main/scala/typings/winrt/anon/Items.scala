@@ -2,15 +2,13 @@ package typings.winrt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items[T] extends StObject {
   
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object Items {
   
@@ -21,7 +19,7 @@ object Items {
   }
   
   @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items[_], T] (val x: Self with Items[T]) extends AnyVal {
+  implicit class ItemsMutableBuilder[Self <: Items[?], T] (val x: Self & Items[T]) extends AnyVal {
     
     @scala.inline
     def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])

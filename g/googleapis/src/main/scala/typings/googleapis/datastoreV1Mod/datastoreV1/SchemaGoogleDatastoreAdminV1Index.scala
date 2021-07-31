@@ -2,46 +2,44 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A minimal index definition.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1Index extends StObject {
   
   /**
     * The index&#39;s ancestor mode.  Must not be ANCESTOR_MODE_UNSPECIFIED.
     * Required.
     */
-  var ancestor: js.UndefOr[String] = js.native
+  var ancestor: js.UndefOr[String] = js.undefined
   
   /**
     * The resource ID of the index. Output only.
     */
-  var indexId: js.UndefOr[String] = js.native
+  var indexId: js.UndefOr[String] = js.undefined
   
   /**
     * The entity kind to which this index applies. Required.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID. Output only.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * An ordered sequence of property names and their index attributes.
     * Required.
     */
-  var properties: js.UndefOr[js.Array[SchemaGoogleDatastoreAdminV1IndexedProperty]] = js.native
+  var properties: js.UndefOr[js.Array[SchemaGoogleDatastoreAdminV1IndexedProperty]] = js.undefined
   
   /**
     * The state of the index. Output only.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1Index {
   

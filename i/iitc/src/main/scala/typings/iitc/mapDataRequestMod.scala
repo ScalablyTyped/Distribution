@@ -5,7 +5,6 @@ import typings.iitc.mapDataDebugMod.RenderDebugTiles
 import typings.iitc.mapDataRenderMod.Render
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapDataRequestMod {
@@ -168,9 +167,9 @@ object mapDataRequestMod {
     def sendTileRequest(tiles: js.Array[String]): Unit = js.native
     
     def setStatus(short: String): Unit = js.native
-    def setStatus(short: String, long: js.UndefOr[scala.Nothing], progress: Double): Unit = js.native
     def setStatus(short: String, long: String): Unit = js.native
     def setStatus(short: String, long: String, progress: Double): Unit = js.native
+    def setStatus(short: String, long: Unit, progress: Double): Unit = js.native
     
     var staleTileCount: Double = js.native
     
@@ -183,14 +182,13 @@ object mapDataRequestMod {
     var successTileCount: Double = js.native
   }
   
-  @js.native
   trait MapDataRequestStatus extends StObject {
     
-    var long: js.UndefOr[String] = js.native
+    var long: js.UndefOr[String] = js.undefined
     
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
-    var short: String = js.native
+    var short: String
   }
   object MapDataRequestStatus {
     

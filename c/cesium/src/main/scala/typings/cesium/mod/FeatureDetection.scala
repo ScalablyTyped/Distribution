@@ -2,24 +2,23 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FeatureDetection {
   
-  @JSImport("cesium", "FeatureDetection.supportsFullscreen")
+  @JSImport("cesium", "FeatureDetection")
   @js.native
-  def supportsFullscreen(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "FeatureDetection.supportsTypedArrays")
-  @js.native
-  def supportsTypedArrays(): Boolean = js.native
+  @scala.inline
+  def supportsFullscreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFullscreen")().asInstanceOf[Boolean]
   
-  @JSImport("cesium", "FeatureDetection.supportsWebAssembly")
-  @js.native
-  def supportsWebAssembly(): Boolean = js.native
+  @scala.inline
+  def supportsTypedArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsTypedArrays")().asInstanceOf[Boolean]
   
-  @JSImport("cesium", "FeatureDetection.supportsWebWorkers")
-  @js.native
-  def supportsWebWorkers(): Boolean = js.native
+  @scala.inline
+  def supportsWebAssembly(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebAssembly")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supportsWebWorkers(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebWorkers")().asInstanceOf[Boolean]
 }

@@ -3,38 +3,36 @@ package typings.typeorm
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joinOptionsMod {
   
-  @js.native
   trait JoinOptions extends StObject {
     
     /**
       * Alias of the main entity.
       */
-    var alias: String = js.native
+    var alias: String
     
     /**
       * Array of columns to INNER JOIN.
       */
-    var innerJoin: js.UndefOr[StringDictionary[String]] = js.native
+    var innerJoin: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Array of columns to INNER JOIN.
       */
-    var innerJoinAndSelect: js.UndefOr[StringDictionary[String]] = js.native
+    var innerJoinAndSelect: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Array of columns to LEFT JOIN.
       */
-    var leftJoin: js.UndefOr[StringDictionary[String]] = js.native
+    var leftJoin: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Array of columns to LEFT JOIN.
       */
-    var leftJoinAndSelect: js.UndefOr[StringDictionary[String]] = js.native
+    var leftJoinAndSelect: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object JoinOptions {
     

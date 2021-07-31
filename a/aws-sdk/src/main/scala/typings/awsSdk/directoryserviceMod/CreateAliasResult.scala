@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAliasResult extends StObject {
   
   /**
     * The alias for the directory.
     */
-  var Alias: js.UndefOr[AliasName] = js.native
+  var Alias: js.UndefOr[AliasName] = js.undefined
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
 }
 object CreateAliasResult {
   

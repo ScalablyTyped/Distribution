@@ -2,37 +2,32 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayOpsUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getPermuted")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", JSImport.Namespace)
   @js.native
-  def getPermuted(reshapedRank: Double, blockShapeRank: Double): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getPermuted")
-  @js.native
-  def getPermuted(reshapedRank: Double, blockShapeRank: Double, batchToSpace: Boolean): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getReshaped")
-  @js.native
-  def getReshaped(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getReshaped")
-  @js.native
-  def getReshaped(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double, batchToSpace: Boolean): js.Array[Double] = js.native
+  @scala.inline
+  def getPermuted(reshapedRank: Double, blockShapeRank: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPermuted")(reshapedRank.asInstanceOf[js.Any], blockShapeRank.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getPermuted(reshapedRank: Double, blockShapeRank: Double, batchToSpace: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPermuted")(reshapedRank.asInstanceOf[js.Any], blockShapeRank.asInstanceOf[js.Any], batchToSpace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getReshapedPermuted")
-  @js.native
-  def getReshapedPermuted(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getReshapedPermuted")
-  @js.native
-  def getReshapedPermuted(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double, batchToSpace: Boolean): js.Array[Double] = js.native
+  @scala.inline
+  def getReshaped(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReshaped")(inputShape.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], prod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getReshaped(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double, batchToSpace: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReshaped")(inputShape.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], prod.asInstanceOf[js.Any], batchToSpace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getSliceBeginCoords")
-  @js.native
-  def getSliceBeginCoords(crops: js.Array[js.Array[Double]], blockShape: Double): js.Array[Double] = js.native
+  @scala.inline
+  def getReshapedPermuted(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReshapedPermuted")(inputShape.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], prod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getReshapedPermuted(inputShape: js.Array[Double], blockShape: js.Array[Double], prod: Double, batchToSpace: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReshapedPermuted")(inputShape.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], prod.asInstanceOf[js.Any], batchToSpace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops_util", "getSliceSize")
-  @js.native
-  def getSliceSize(uncroppedShape: js.Array[Double], crops: js.Array[js.Array[Double]], blockShape: Double): js.Array[Double] = js.native
+  @scala.inline
+  def getSliceBeginCoords(crops: js.Array[js.Array[Double]], blockShape: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSliceBeginCoords")(crops.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def getSliceSize(uncroppedShape: js.Array[Double], crops: js.Array[js.Array[Double]], blockShape: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSliceSize")(uncroppedShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

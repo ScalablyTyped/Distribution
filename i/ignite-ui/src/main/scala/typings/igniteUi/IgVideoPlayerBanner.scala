@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgVideoPlayerBanner
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,73 +16,73 @@ trait IgVideoPlayerBanner
     * Gets/Sets whether to apply animation effects when showing or hiding the banner. If set to true, the animation is played for banner.duration in milliseconds.
     *
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether to automatically hide the banner. If set to true, the banner is hidden after [hidedelay](ui.igvideoplayer#options:banners.hidedelay) in milliseconds.
     *
     */
-  var autohide: js.UndefOr[Boolean] = js.native
+  var autohide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the user will be able to close the banner or not.
     *
     */
-  var closeBanner: js.UndefOr[Boolean] = js.native
+  var closeBanner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the banner specific css class, that will be applied on the banner grid.
     *
     */
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the banner animation duration.
     *
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the banner height
     *
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Gets/Sets the banner autohide delay in milliseconds. It is taken into account only if the banner.autohide option is set to true.
     *
     */
-  var hidedelay: js.UndefOr[Double] = js.native
+  var hidedelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the banner image url.
     *
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the banner link that will open in new window.
     *
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets an array of numbers. Each number specifies on which second in the movie the banner will pop.
     *
     */
-  var times: js.UndefOr[js.Array[_]] = js.native
+  var times: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets whether the banner is visible or not.
     *
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the banner width
     *
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IgVideoPlayerBanner {
   
@@ -151,7 +150,7 @@ object IgVideoPlayerBanner {
     def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setTimes(value: js.Array[_]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    def setTimes(value: js.Array[js.Any]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)

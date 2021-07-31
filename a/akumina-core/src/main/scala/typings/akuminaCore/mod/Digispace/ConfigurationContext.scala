@@ -4,7 +4,6 @@ import typings.akuminaCore.mod.IConstants
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.ConfigurationContext")
@@ -177,23 +176,20 @@ object ConfigurationContext {
   def ErrorRedirectUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorRedirectUrl")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetAdditionalLoaderConfigurations")
-  @js.native
-  def GetAdditionalLoaderConfigurations(): Unit = js.native
+  @scala.inline
+  def GetAdditionalLoaderConfigurations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAdditionalLoaderConfigurations")().asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetDefaultLanguage")
-  @js.native
-  def GetDefaultLanguage(): js.Any = js.native
+  @scala.inline
+  def GetDefaultLanguage(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaultLanguage")().asInstanceOf[js.Any]
   
   /**
     * Get site visible languages
     * @param languages
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetSiteVisibleLanguages")
-  @js.native
-  def GetSiteVisibleLanguages(languages: js.Any): js.Any = js.native
+  @scala.inline
+  def GetSiteVisibleLanguages(languages: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSiteVisibleLanguages")(languages.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.ConfigurationContext.GoogleMapKey")
@@ -327,9 +323,8 @@ object ConfigurationContext {
     * @param activeLanguages
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.LoadActiveLanguages")
-  @js.native
-  def LoadActiveLanguages(activeLanguages: js.Any): Unit = js.native
+  @scala.inline
+  def LoadActiveLanguages(activeLanguages: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadActiveLanguages")(activeLanguages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** HTML template for Loading */
   /* static member */
@@ -345,9 +340,8 @@ object ConfigurationContext {
     * @returns Associative array.
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.MapDepartmentSites")
-  @js.native
-  def MapDepartmentSites(sitedepartments: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def MapDepartmentSites(sitedepartments: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("MapDepartmentSites")(sitedepartments.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.ConfigurationContext.NotFoundPage")
@@ -418,9 +412,8 @@ object ConfigurationContext {
   def Personas_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Personas")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.PopulateTemplateURLPrefix")
-  @js.native
-  def PopulateTemplateURLPrefix(): Unit = js.native
+  @scala.inline
+  def PopulateTemplateURLPrefix(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PopulateTemplateURLPrefix")().asInstanceOf[Unit]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.ConfigurationContext.RemoteListSiteUrl")
@@ -434,9 +427,8 @@ object ConfigurationContext {
     * @param cachingStrategy
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.ResolveCachingStrategy")
-  @js.native
-  def ResolveCachingStrategy(cachingStrategy: js.Any): Double = js.native
+  @scala.inline
+  def ResolveCachingStrategy(cachingStrategy: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ResolveCachingStrategy")(cachingStrategy.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.ConfigurationContext.ReusableContentList")
@@ -466,18 +458,16 @@ object ConfigurationContext {
     * @param defaultLanguage
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.SetDefaultLanguage")
-  @js.native
-  def SetDefaultLanguage(defaultLanguage: js.Any): Unit = js.native
+  @scala.inline
+  def SetDefaultLanguage(defaultLanguage: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetDefaultLanguage")(defaultLanguage.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set Site visible Languages.
     * @param languages
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.SetSiteVisibleLanguages")
-  @js.native
-  def SetSiteVisibleLanguages(languages: js.Any): js.Any = js.native
+  @scala.inline
+  def SetSiteVisibleLanguages(languages: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("SetSiteVisibleLanguages")(languages.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** settings object */
   /* static member */
@@ -591,48 +581,42 @@ object ConfigurationContext {
   def WorkspaceThemesAvailable_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkspaceThemesAvailable")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
   /**
     * GetCacheKey
     * @param attribute
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.getCacheKey")
-  @js.native
-  def getCacheKey(attribute: String): String = js.native
+  @scala.inline
+  def getCacheKey(attribute: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKey")(attribute.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get Language Neutral cache key
     * @param key
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.getCacheKeyLanguageNeutral")
-  @js.native
-  def getCacheKeyLanguageNeutral(key: String): String = js.native
+  @scala.inline
+  def getCacheKeyLanguageNeutral(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKeyLanguageNeutral")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.loadDigispaceConfiguration")
-  @js.native
-  def loadDigispaceConfiguration(): JQueryDeferred[_] = js.native
+  @scala.inline
+  def loadDigispaceConfiguration(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDigispaceConfiguration")().asInstanceOf[JQueryDeferred[js.Any]]
   
   /**
     * @param isLoggedIn
     * @param loggedInTime
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.setAppManagerLogin")
-  @js.native
-  def setAppManagerLogin(isLoggedIn: Boolean, loggedInTime: js.Any): Unit = js.native
+  @scala.inline
+  def setAppManagerLogin(isLoggedIn: Boolean, loggedInTime: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAppManagerLogin")(isLoggedIn.asInstanceOf[js.Any], loggedInTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set configuration from digispace object passed.
     * @param digispaceConfiguration
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.ConfigurationContext.setDigispaceConfiguration")
-  @js.native
-  def setDigispaceConfiguration(digispaceConfiguration: js.Any): Unit = js.native
+  @scala.inline
+  def setDigispaceConfiguration(digispaceConfiguration: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDigispaceConfiguration")(digispaceConfiguration.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

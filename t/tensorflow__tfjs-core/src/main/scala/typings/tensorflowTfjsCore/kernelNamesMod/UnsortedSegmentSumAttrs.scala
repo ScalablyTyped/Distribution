@@ -2,13 +2,11 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsortedSegmentSumAttrs extends StObject {
   
-  var numSegments: Double = js.native
+  var numSegments: Double
 }
 object UnsortedSegmentSumAttrs {
   

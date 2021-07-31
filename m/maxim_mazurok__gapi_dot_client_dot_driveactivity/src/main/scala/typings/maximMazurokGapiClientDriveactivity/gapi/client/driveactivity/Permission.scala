@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /** If true, the item can be discovered (e.g. in the user's "Shared with me" collection) without needing a link to the item. */
-  var allowDiscovery: js.UndefOr[Boolean] = js.native
+  var allowDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /** If set, this permission applies to anyone, even logged out users. */
-  var anyone: js.UndefOr[js.Any] = js.native
+  var anyone: js.UndefOr[js.Any] = js.undefined
   
   /** The domain to whom this permission applies. */
-  var domain: js.UndefOr[Domain] = js.native
+  var domain: js.UndefOr[Domain] = js.undefined
   
   /** The group to whom this permission applies. */
-  var group: js.UndefOr[Group] = js.native
+  var group: js.UndefOr[Group] = js.undefined
   
   /** Indicates the Google Drive permissions role. The role determines a user's ability to read, write, and comment on items. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /** The user to whom this permission applies. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object Permission {
   

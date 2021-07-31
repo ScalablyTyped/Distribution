@@ -3,52 +3,50 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension extends StObject {
   
   /**
     * Optional: Errors because of which this order was rejected.
     */
-  var errors: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]] = js.native
+  var errors: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]] = js.undefined
   
   /**
     * Any extra fields exchanged between merchant and google.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Fulfillment info for the order.
     */
-  var fulfillmentInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo] = js.native
+  var fulfillmentInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo] = js.undefined
   
   /**
     * Location of the purchase (in-store / online)
     */
-  var purchaseLocationType: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocationType] = js.native
+  var purchaseLocationType: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocationType] = js.undefined
   
   /**
     * Return info for the order.
     */
-  var returnsInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo] = js.native
+  var returnsInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo] = js.undefined
   
   /**
     * Required: Overall Status for the order.
     */
-  var status: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus] = js.native
+  var status: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus] = js.undefined
   
   /**
     * Required: Type of purchase.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionType] = js.undefined
   
   /**
     * User visible label/string for the status.
     * Max allowed length is 50 chars.
     */
-  var userVisibleStatusLabel: js.UndefOr[String] = js.native
+  var userVisibleStatusLabel: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
   
@@ -71,7 +69,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
     def setErrorsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)

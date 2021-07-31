@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Routes")
@@ -32,7 +31,7 @@ class ResourceRoutes protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRoutesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRoutesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceRoutes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRoute] = js.native
   def get(callback: BodyResponseCallback[SchemaRoute]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoute] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoute] = js.native
   def get(params: ParamsResourceRoutesGet): GaxiosPromise[SchemaRoute] = js.native
   def get(params: ParamsResourceRoutesGet, callback: BodyResponseCallback[SchemaRoute]): Unit = js.native
   def get(
@@ -95,7 +94,7 @@ class ResourceRoutes protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRoutesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRoutesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -129,7 +128,7 @@ class ResourceRoutes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaRouteList] = js.native
   def list(callback: BodyResponseCallback[SchemaRouteList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRouteList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRouteList] = js.native
   def list(params: ParamsResourceRoutesList): GaxiosPromise[SchemaRouteList] = js.native
   def list(params: ParamsResourceRoutesList, callback: BodyResponseCallback[SchemaRouteList]): Unit = js.native
   def list(
@@ -160,7 +159,7 @@ class ResourceRoutes protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRoutesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRoutesTestiampermissions,

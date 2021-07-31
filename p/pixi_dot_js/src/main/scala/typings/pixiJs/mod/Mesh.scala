@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Mesh")
 @js.native
 class Mesh protected ()
-  extends typings.pixiJs.PIXI.Mesh {
+  extends StObject
+     with typings.pixiJs.PIXI.Mesh {
   def this(geometry: typings.pixiJs.PIXI.Geometry, shader: typings.pixiJs.PIXI.MeshMaterial) = this()
   def this(
     geometry: typings.pixiJs.PIXI.Geometry,
@@ -36,7 +36,7 @@ class Mesh protected ()
   def this(
     geometry: typings.pixiJs.PIXI.Geometry,
     shader: typings.pixiJs.PIXI.MeshMaterial,
-    state: js.UndefOr[scala.Nothing],
+    state: Unit,
     drawMode: Double
   ) = this()
   def this(

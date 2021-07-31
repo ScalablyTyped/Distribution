@@ -2,51 +2,49 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagementResource extends StObject {
   
-  var accountSummaries: AccountSummariesResource = js.native
+  var accountSummaries: AccountSummariesResource
   
-  var accountUserLinks: AccountUserLinksResource = js.native
+  var accountUserLinks: AccountUserLinksResource
   
-  var accounts: AccountsResource = js.native
+  var accounts: AccountsResource
   
-  var clientId: ClientIdResource = js.native
+  var clientId: ClientIdResource
   
-  var customDataSources: CustomDataSourcesResource = js.native
+  var customDataSources: CustomDataSourcesResource
   
-  var customDimensions: CustomDimensionsResource = js.native
+  var customDimensions: CustomDimensionsResource
   
-  var customMetrics: CustomMetricsResource = js.native
+  var customMetrics: CustomMetricsResource
   
-  var experiments: ExperimentsResource = js.native
+  var experiments: ExperimentsResource
   
-  var filters: FiltersResource = js.native
+  var filters: FiltersResource
   
-  var goals: GoalsResource = js.native
+  var goals: GoalsResource
   
-  var profileFilterLinks: ProfileFilterLinksResource = js.native
+  var profileFilterLinks: ProfileFilterLinksResource
   
-  var profileUserLinks: ProfileUserLinksResource = js.native
+  var profileUserLinks: ProfileUserLinksResource
   
-  var profiles: ProfilesResource = js.native
+  var profiles: ProfilesResource
   
-  var remarketingAudience: RemarketingAudienceResource = js.native
+  var remarketingAudience: RemarketingAudienceResource
   
-  var segments: SegmentsResource = js.native
+  var segments: SegmentsResource
   
-  var unsampledReports: UnsampledReportsResource = js.native
+  var unsampledReports: UnsampledReportsResource
   
-  var uploads: UploadsResource = js.native
+  var uploads: UploadsResource
   
-  var webPropertyAdWordsLinks: WebPropertyAdWordsLinksResource = js.native
+  var webPropertyAdWordsLinks: WebPropertyAdWordsLinksResource
   
-  var webproperties: WebpropertiesResource = js.native
+  var webproperties: WebpropertiesResource
   
-  var webpropertyUserLinks: WebpropertyUserLinksResource = js.native
+  var webpropertyUserLinks: WebpropertyUserLinksResource
 }
 object ManagementResource {
   

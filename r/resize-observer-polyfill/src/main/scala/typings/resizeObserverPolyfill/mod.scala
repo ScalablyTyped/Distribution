@@ -4,7 +4,6 @@ import typings.resizeObserverPolyfill.mod.global.ResizeObserverCallback
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,28 +11,38 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("resize-observer-polyfill", JSImport.Default)
   @js.native
-  class defaultCls protected () extends ResizeObserver {
+  class defaultCls protected ()
+    extends StObject
+       with ResizeObserver {
     def this(callback: ResizeObserverCallback) = this()
+    
+    /* CompleteClass */
+    override def disconnect(): Unit = js.native
+    
+    /* CompleteClass */
+    override def observe(target: Element): Unit = js.native
+    
+    /* CompleteClass */
+    override def unobserve(target: Element): Unit = js.native
   }
   
-  @js.native
   trait DOMRectReadOnly extends StObject {
     
-    val bottom: Double = js.native
+    val bottom: Double
     
-    val height: Double = js.native
+    val height: Double
     
-    val left: Double = js.native
+    val left: Double
     
-    val right: Double = js.native
+    val right: Double
     
-    val top: Double = js.native
+    val top: Double
     
-    val width: Double = js.native
+    val width: Double
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object DOMRectReadOnly {
     
@@ -81,14 +90,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizeObserver extends StObject {
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def observe(target: Element): Unit = js.native
+    def observe(target: Element): Unit
     
-    def unobserve(target: Element): Unit = js.native
+    def unobserve(target: Element): Unit
   }
   object ResizeObserver {
     
@@ -114,14 +122,13 @@ object mod {
   
   object global {
     
-    @js.native
     trait ResizeObserver extends StObject {
       
-      def disconnect(): Unit = js.native
+      def disconnect(): Unit
       
-      def observe(target: Element): Unit = js.native
+      def observe(target: Element): Unit
       
-      def unobserve(target: Element): Unit = js.native
+      def unobserve(target: Element): Unit
     }
     object ResizeObserver {
       
@@ -151,12 +158,11 @@ object mod {
         Unit
       ]
     
-    @js.native
     trait ResizeObserverEntry extends StObject {
       
-      val contentRect: DOMRectReadOnly = js.native
+      val contentRect: DOMRectReadOnly
       
-      val target: Element = js.native
+      val target: Element
     }
     object ResizeObserverEntry {
       

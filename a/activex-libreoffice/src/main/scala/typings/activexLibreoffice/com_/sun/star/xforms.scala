@@ -32,15 +32,14 @@ import typings.activexLibreoffice.com_.sun.star.xsd.XDataType
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xforms {
   
   /** represent a binding to one or more nodes in the DOM tree of an {@link XModel} . */
-  @js.native
   trait Binding
-    extends ValueBinding
+    extends StObject
+       with ValueBinding
        with ListEntrySource
        with XValidator {
     
@@ -52,7 +51,7 @@ object xforms {
       * The value supports the service {@link com.sun.star.xml.NamespaceContainer}
       * @see com.sun.star.xml.NamespaceContainer
       */
-    var BindingNamespaces: XNameContainer = js.native
+    var BindingNamespaces: XNameContainer
   }
   object Binding {
     
@@ -121,9 +120,9 @@ object xforms {
     *
     * The elements of the repository are instances supporting the {@link com.sun.star.xsd.XDataType} interface.
     */
-  @js.native
   trait XDataTypeRepository
-    extends XEnumerationAccess
+    extends StObject
+       with XEnumerationAccess
        with XNameAccess {
     
     /**
@@ -131,16 +130,16 @@ object xforms {
       * @throws com::sun::star::container::NoSuchElementException if the given name does not refer to a type in the repository
       * @throws com::sun::star::container::ElementExistException if the new name is already used in the repository
       */
-    def cloneDataType(sourceName: String, newName: String): XDataType = js.native
+    def cloneDataType(sourceName: String, newName: String): XDataType
     
     /**
       * retrieves the basic type for the given type class
       * @see com.sun.star.xsd.DataTypeClass
       * @throws com::sun::star::container::NoSuchElementException if in the repository, there is no data type with the given class
       */
-    def getBasicDataType(dataTypeClass: Double): XDataType = js.native
+    def getBasicDataType(dataTypeClass: Double): XDataType
     
-    def getDataType(typeName: String): XDataType = js.native
+    def getDataType(typeName: String): XDataType
     
     /**
       * removes a data type given by name from the repository
@@ -148,7 +147,7 @@ object xforms {
       * @throws com::sun::star::container::NoSuchElementException if the given name does not refer to a type in the repository
       * @throws com::sun::star::util::VetoException if the specified data type is a built-in (basic) data type, and cannot be removed
       */
-    def revokeDataType(typeName: String): Unit = js.native
+    def revokeDataType(typeName: String): Unit
   }
   object XDataTypeRepository {
     
@@ -194,10 +193,11 @@ object xforms {
   /** @since LibreOffice 4.1 */
   type XForms = XNameContainer
   
-  @js.native
-  trait XFormsEvent extends XEvent {
+  trait XFormsEvent
+    extends StObject
+       with XEvent {
     
-    def initXFormsEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean): Unit = js.native
+    def initXFormsEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean): Unit
   }
   object XFormsEvent {
     
@@ -238,20 +238,21 @@ object xforms {
   }
   
   /** provides access to the {@link XForms} models contained in the component */
-  @js.native
-  trait XFormsSupplier extends XInterface {
+  trait XFormsSupplier
+    extends StObject
+       with XInterface {
     
     /**
       * access {@link XForms} model container.
       * @returns a container for the {@link XForms} models contained in the component
       */
-    val XForms: XNameContainer = js.native
+    val XForms: XNameContainer
     
     /**
       * access {@link XForms} model container.
       * @returns a container for the {@link XForms} models contained in the component
       */
-    def getXForms(): XNameContainer = js.native
+    def getXForms(): XNameContainer
   }
   object XFormsSupplier {
     
@@ -283,54 +284,53 @@ object xforms {
     *
     * **This interfaces is for UI use only, and will likely be unsupported in future versions.**
     */
-  @js.native
   trait XFormsUIHelper1 extends StObject {
     
-    def cloneBindingAsGhost(binding: XPropertySet): XPropertySet = js.native
+    def cloneBindingAsGhost(binding: XPropertySet): XPropertySet
     
-    def createAttribute(xParent: XNode, sName: String): XNode = js.native
+    def createAttribute(xParent: XNode, sName: String): XNode
     
-    def createElement(xParent: XNode, sName: String): XNode = js.native
+    def createElement(xParent: XNode, sName: String): XNode
     
-    def getBindingForNode(xNode: XNode, bCreate: Boolean): XPropertySet = js.native
+    def getBindingForNode(xNode: XNode, bCreate: Boolean): XPropertySet
     
-    def getBindingName(xBinding: XPropertySet, bDetail: Boolean): String = js.native
+    def getBindingName(xBinding: XPropertySet, bDetail: Boolean): String
     
-    def getDefaultBindingExpressionForNode(xNode: XNode): String = js.native
+    def getDefaultBindingExpressionForNode(xNode: XNode): String
     
-    def getDefaultServiceNameForNode(xNode: XNode): String = js.native
+    def getDefaultServiceNameForNode(xNode: XNode): String
     
-    def getNodeDisplayName(xNode: XNode, bDetail: Boolean): String = js.native
+    def getNodeDisplayName(xNode: XNode, bDetail: Boolean): String
     
-    def getNodeName(xNode: XNode): String = js.native
+    def getNodeName(xNode: XNode): String
     
-    def getResultForExpression(xBinding: XPropertySet, bIsBindingExpression: Boolean, sExpression: String): String = js.native
+    def getResultForExpression(xBinding: XPropertySet, bIsBindingExpression: Boolean, sExpression: String): String
     
-    def getSubmissionName(xSubm: XPropertySet, bDetail: Boolean): String = js.native
+    def getSubmissionName(xSubm: XPropertySet, bDetail: Boolean): String
     
-    def isValidPrefixName(sName: String): Boolean = js.native
+    def isValidPrefixName(sName: String): Boolean
     
-    def isValidXMLName(sName: String): Boolean = js.native
+    def isValidXMLName(sName: String): Boolean
     
-    def newInstance(sName: String, sURL: String, bURLOnce: Boolean): XDocument = js.native
+    def newInstance(sName: String, sURL: String, bURLOnce: Boolean): XDocument
     
-    def newModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sName: String): XModel = js.native
+    def newModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sName: String): XModel
     
-    def removeBindingForNode(xNode: XNode): Unit = js.native
+    def removeBindingForNode(xNode: XNode): Unit
     
-    def removeBindingIfUseless(xBinding: XPropertySet): Unit = js.native
+    def removeBindingIfUseless(xBinding: XPropertySet): Unit
     
-    def removeInstance(sName: String): Unit = js.native
+    def removeInstance(sName: String): Unit
     
-    def removeModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sName: String): Unit = js.native
+    def removeModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sName: String): Unit
     
-    def renameInstance(sFrom: String, sTo: String, sURL: String, bURLOnce: Boolean): Unit = js.native
+    def renameInstance(sFrom: String, sTo: String, sURL: String, bURLOnce: Boolean): Unit
     
-    def renameModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sFrom: String, sTo: String): Unit = js.native
+    def renameModel(xModel: typings.activexLibreoffice.com_.sun.star.frame.XModel, sFrom: String, sTo: String): Unit
     
-    def renameNode(xNode: XNode, sName: String): XNode = js.native
+    def renameNode(xNode: XNode, sName: String): XNode
     
-    def setNodeValue(xNode: XNode, sValue: String): Unit = js.native
+    def setNodeValue(xNode: XNode, sValue: String): Unit
   }
   object XFormsUIHelper1 {
     
@@ -439,30 +439,29 @@ object xforms {
   }
   
   /** represent an {@link XForms} model */
-  @js.native
   trait XModel extends StObject {
     
     /** get a container containing all bindings; also supports XNameAccess */
-    val Bindings: XSet = js.native
+    val Bindings: XSet
     
     /** provides management access to the XSD data types associated with the model */
-    val DataTypeRepository: XDataTypeRepository = js.native
+    val DataTypeRepository: XDataTypeRepository
     
     /** get the default instance for this model */
-    val DefaultInstance: XDocument = js.native
+    val DefaultInstance: XDocument
     
     /** get the {@link XForms} model ID */
-    var ID: String = js.native
+    var ID: String
     
     /**
       * gets container containing all instances;
       *
       * The elements of the set are arrays of {@link com.sun.star.beans.PropertyValues} , containing the ID, the URL, and the instance itself.
       */
-    val Instances: XSet = js.native
+    val Instances: XSet
     
     /** get container containing all submissions; also supports XNameAccess */
-    val Submissions: XSet = js.native
+    val Submissions: XSet
     
     /**
       * clone an arbitrary binding element for this model; still needs
@@ -470,7 +469,7 @@ object xforms {
       * The returned binding still needs to be inserted into the bindings container.
       * @see getBindings
       */
-    def cloneBinding(binding: XPropertySet): XPropertySet = js.native
+    def cloneBinding(binding: XPropertySet): XPropertySet
     
     /**
       * clone an arbitrary submission element for this model
@@ -478,7 +477,7 @@ object xforms {
       * The returned submission element still needs to be inserted into the submission container.
       * @see getSubmissions
       */
-    def cloneSubmission(submission: XPropertySet): XSubmission = js.native
+    def cloneSubmission(submission: XPropertySet): XSubmission
     
     /**
       * create a binding element for this model
@@ -486,7 +485,7 @@ object xforms {
       * The returned binding still needs to be inserted into the bindings container.
       * @see getBindings
       */
-    def createBinding(): XPropertySet = js.native
+    def createBinding(): XPropertySet
     
     /**
       * create a submission element for this model
@@ -494,64 +493,64 @@ object xforms {
       * The returned submission element still needs to be inserted into the submission container.
       * @see getSubmissions
       */
-    def createSubmission(): XSubmission = js.native
+    def createSubmission(): XSubmission
     
     /**
       * get a binding with a certain ID
       *
       * This is a convenience method: the same result can also be obtained through {@link getBindings()}
       */
-    def getBinding(id: String): XPropertySet = js.native
+    def getBinding(id: String): XPropertySet
     
     /** get a container containing all bindings; also supports XNameAccess */
-    def getBindings(): XSet = js.native
+    def getBindings(): XSet
     
     /** provides management access to the XSD data types associated with the model */
-    def getDataTypeRepository(): XDataTypeRepository = js.native
+    def getDataTypeRepository(): XDataTypeRepository
     
     /** get the default instance for this model */
-    def getDefaultInstance(): XDocument = js.native
+    def getDefaultInstance(): XDocument
     
     /** get the {@link XForms} model ID */
-    def getID(): String = js.native
+    def getID(): String
     
     /** retrieves the instance with the given id */
-    def getInstanceDocument(id: String): XDocument = js.native
+    def getInstanceDocument(id: String): XDocument
     
     /**
       * gets container containing all instances;
       *
       * The elements of the set are arrays of {@link com.sun.star.beans.PropertyValues} , containing the ID, the URL, and the instance itself.
       */
-    def getInstances(): XSet = js.native
+    def getInstances(): XSet
     
     /**
       * get a submission with a certain ID.
       *
       * This is a convenience method: the same result can also be obtained through {@link getSubmissions()} .
       */
-    def getSubmission(id: String): XSubmission = js.native
+    def getSubmission(id: String): XSubmission
     
     /** get container containing all submissions; also supports XNameAccess */
-    def getSubmissions(): XSet = js.native
+    def getSubmissions(): XSet
     
     /** initialize the model */
-    def initialize(): Unit = js.native
+    def initialize(): Unit
     
     /** rebuild the model */
-    def rebuild(): Unit = js.native
+    def rebuild(): Unit
     
     /** re-evaluate all calculate attributes */
-    def recalculate(): Unit = js.native
+    def recalculate(): Unit
     
     /** refresh the model */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
     
     /** re-evaluate all validity attributes */
-    def revalidate(): Unit = js.native
+    def revalidate(): Unit
     
     /** set the {@link XForms} model ID */
-    def setID(id: String): Unit = js.native
+    def setID(id: String): Unit
     
     /**
       * submit form through given submission id
@@ -561,7 +560,7 @@ object xforms {
       * @throws com::sun::star::util::VetoException when the current model state does not allow a submission. Usually, this indicates that consistency criteria f
       * @throws com::sun::star::lang::WrappedTargetException when another error occurred during the submission. The {@link com.sun.star.lang.WrappedTargetExcepti
       */
-    def submit(id: String): Unit = js.native
+    def submit(id: String): Unit
     
     /**
       * submit form through given submission id
@@ -572,7 +571,7 @@ object xforms {
       * @throws com::sun::star::util::VetoException when the current model state does not allow a submission. Usually, this indicates that consistency criteria f
       * @throws com::sun::star::lang::WrappedTargetException when another error occurred during the submission. The {@link com.sun.star.lang.WrappedTargetExcepti
       */
-    def submitWithInteraction(id: String, aHandler: XInteractionHandler): Unit = js.native
+    def submitWithInteraction(id: String, aHandler: XInteractionHandler): Unit
   }
   object XModel {
     
@@ -697,10 +696,10 @@ object xforms {
   }
   
   /** @since LibreOffice 4.1 */
-  @js.native
   trait XModel2
-    extends XPropertySet
+    extends StObject
        with XModel
+       with XPropertySet
   object XModel2 {
     
     @scala.inline
@@ -750,9 +749,9 @@ object xforms {
   }
   
   /** specifies a submission object, associated with an {@link XModel} */
-  @js.native
   trait XSubmission
-    extends XPropertySet
+    extends StObject
+       with XPropertySet
        with XNamed
        with typings.activexLibreoffice.com_.sun.star.form.submission.XSubmission
   object XSubmission {

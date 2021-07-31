@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "ScriptScoreFunction")
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   Modify a documents score using a script.
   */
-class ScriptScoreFunction () extends ScoreFunction {
+class ScriptScoreFunction ()
+  extends StObject
+     with ScoreFunction {
   
   /*
     The type of ejs object.  For internal use only.

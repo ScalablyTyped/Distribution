@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountArtifactsMetadata extends StObject {
   
   /** End time of count operation. Available when operation is done. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The matter ID of the associated matter. */
-  var matterId: js.UndefOr[String] = js.native
+  var matterId: js.UndefOr[String] = js.undefined
   
   /** The search query from the request. */
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
   /** Creation time of count operation. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object CountArtifactsMetadata {
   

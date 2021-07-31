@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait ColumnProperties extends SettableColumnProperties {
+trait ColumnProperties
+  extends StObject
+     with SettableColumnProperties {
   
   /**
     *
@@ -20,7 +20,7 @@ trait ColumnProperties extends SettableColumnProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +28,7 @@ trait ColumnProperties extends SettableColumnProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var addressLocal: js.UndefOr[String] = js.native
+  var addressLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +36,7 @@ trait ColumnProperties extends SettableColumnProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
 }
 object ColumnProperties {
   

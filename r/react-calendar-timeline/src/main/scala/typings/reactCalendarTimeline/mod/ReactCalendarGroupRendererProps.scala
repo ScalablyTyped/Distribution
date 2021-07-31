@@ -2,15 +2,13 @@ package typings.reactCalendarTimeline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactCalendarGroupRendererProps[CustomGroup /* <: TimelineGroupBase */] extends StObject {
   
-  var group: CustomGroup = js.native
+  var group: CustomGroup
   
-  var isRightSidebar: js.UndefOr[Boolean] = js.native
+  var isRightSidebar: js.UndefOr[Boolean] = js.undefined
 }
 object ReactCalendarGroupRendererProps {
   
@@ -21,7 +19,7 @@ object ReactCalendarGroupRendererProps {
   }
   
   @scala.inline
-  implicit class ReactCalendarGroupRendererPropsMutableBuilder[Self <: ReactCalendarGroupRendererProps[_], CustomGroup /* <: TimelineGroupBase */] (val x: Self with ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
+  implicit class ReactCalendarGroupRendererPropsMutableBuilder[Self <: ReactCalendarGroupRendererProps[?], CustomGroup /* <: TimelineGroupBase */] (val x: Self & ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
     
     @scala.inline
     def setGroup(value: CustomGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])

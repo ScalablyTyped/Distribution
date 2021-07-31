@@ -2,19 +2,17 @@ package typings.antvGBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Capture extends StObject {
     
-    var capture: Boolean = js.native
+    var capture: Boolean
     
-    var visible: Boolean = js.native
+    var visible: Boolean
     
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object Capture {
     
@@ -38,16 +36,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ClientX extends StObject {
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ClientX {
     
@@ -74,24 +71,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -139,12 +135,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Matrix extends StObject {
     
-    var matrix: js.Any = js.native
+    var matrix: js.Any
     
-    var opacity: Double = js.native
+    var opacity: Double
   }
   object Matrix {
     
@@ -166,24 +161,23 @@ object anon {
   }
   
   /* Inlined std.Partial<@antv/g-base.@antv/g-base/lib/types.BBox> */
-  @js.native
   trait PartialBBox extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var maxX: js.UndefOr[Double] = js.native
+    var maxX: js.UndefOr[Double] = js.undefined
     
-    var maxY: js.UndefOr[Double] = js.native
+    var maxY: js.UndefOr[Double] = js.undefined
     
-    var minX: js.UndefOr[Double] = js.native
+    var minX: js.UndefOr[Double] = js.undefined
     
-    var minY: js.UndefOr[Double] = js.native
+    var minY: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object PartialBBox {
     
@@ -246,12 +240,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

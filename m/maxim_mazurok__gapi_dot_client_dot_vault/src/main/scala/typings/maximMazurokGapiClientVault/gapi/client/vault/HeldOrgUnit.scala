@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeldOrgUnit extends StObject {
   
   /** When the org unit was put on hold. This property is immutable. */
-  var holdTime: js.UndefOr[String] = js.native
+  var holdTime: js.UndefOr[String] = js.undefined
   
   /** The org unit's immutable ID as provided by the Admin SDK. */
-  var orgUnitId: js.UndefOr[String] = js.native
+  var orgUnitId: js.UndefOr[String] = js.undefined
 }
 object HeldOrgUnit {
   

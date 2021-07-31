@@ -1,8 +1,8 @@
 package typings.asana.mod.resources
 
+import typings.asana.mod.resources.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,8 +25,8 @@ trait Resource extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchDelete(path: String): typings.bluebird.mod.^[_] = js.native
-  def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def dispatchDelete(path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Dispatches a GET request to the API, where the expected result is a
@@ -41,10 +41,10 @@ trait Resource extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchGet(path: String): typings.bluebird.mod.^[_] = js.native
-  def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def dispatchGet(path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGet(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Dispatches a GET request to the API, where the expected result is a
@@ -59,10 +59,10 @@ trait Resource extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchGetCollection(path: String): typings.bluebird.mod.^[_] = js.native
-  def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def dispatchGetCollection(path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Dispatches a POST request to the API, where the expected response is a
@@ -77,10 +77,10 @@ trait Resource extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchPost(path: String): typings.bluebird.mod.^[_] = js.native
-  def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def dispatchPost(path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPost(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Dispatches a POST request to the API, where the expected response is a
@@ -95,14 +95,19 @@ trait Resource extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchPut(path: String): typings.bluebird.mod.^[_] = js.native
-  def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-  def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def dispatchPut(path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPut(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   var gid: String = js.native
   
   var id: Double = js.native
   
   var name: String = js.native
+}
+object Resource {
+  
+  @scala.inline
+  def apply: ResourceStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Resource").asInstanceOf[ResourceStatic]
 }

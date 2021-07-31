@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactResponse extends StObject {
   
   /**
     * The details of the requested contact.
     */
-  var Contact: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Contact] = js.native
+  var Contact: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Contact] = js.undefined
 }
 object GetContactResponse {
   

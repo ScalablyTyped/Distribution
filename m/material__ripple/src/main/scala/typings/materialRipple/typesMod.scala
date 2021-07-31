@@ -3,15 +3,13 @@ package typings.materialRipple
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCRippleAttachOpts extends StObject {
     
-    var isUnbounded: js.UndefOr[Boolean] = js.native
+    var isUnbounded: js.UndefOr[Boolean] = js.undefined
   }
   object MDCRippleAttachOpts {
     
@@ -32,14 +30,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCRippleCapableSurface extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var root: Element = js.native
+    var root: Element
     
-    var unbounded: js.UndefOr[Boolean] = js.native
+    var unbounded: js.UndefOr[Boolean] = js.undefined
   }
   object MDCRippleCapableSurface {
     
@@ -69,12 +66,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCRipplePoint extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object MDCRipplePoint {
     

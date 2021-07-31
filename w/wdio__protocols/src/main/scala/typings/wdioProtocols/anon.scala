@@ -3,20 +3,18 @@ package typings.wdioProtocols
 import typings.wdioProtocols.WDIOProtocols.CommandEndpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Record<@wdio/protocols.WDIOProtocols.CommandMethod, @wdio/protocols.WDIOProtocols.CommandEndpoint> */
-  @js.native
   trait RecordCommandMethodComman extends StObject {
     
-    var DELETE: CommandEndpoint = js.native
+    var DELETE: CommandEndpoint
     
-    var GET: CommandEndpoint = js.native
+    var GET: CommandEndpoint
     
-    var POST: CommandEndpoint = js.native
+    var POST: CommandEndpoint
   }
   object RecordCommandMethodComman {
     
@@ -41,14 +39,13 @@ object anon {
   }
   
   /* Inlined std.Record<@wdio/protocols.WDIOProtocols.Environments, string> */
-  @js.native
   trait RecordEnvironmentsstring extends StObject {
     
-    var UIAutomation: String = js.native
+    var UIAutomation: String
     
-    var UiAutomator: String = js.native
+    var UiAutomator: String
     
-    var XCUITest: String = js.native
+    var XCUITest: String
   }
   object RecordEnvironmentsstring {
     

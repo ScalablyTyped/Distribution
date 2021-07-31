@@ -5,7 +5,6 @@ import typings.reactSAlert.mod.SAlert.SAlertConfigProps
 import typings.reactSAlert.mod.SAlert.SAlertProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,79 +15,64 @@ object mod {
     extends Component[SAlertProps, js.Object, js.Any]
   object default {
     
-    @JSImport("react-s-alert", "default.close")
+    @JSImport("react-s-alert", JSImport.Default)
     @js.native
-    def close(id: Double): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-s-alert", "default.closeAll")
-    @js.native
-    def closeAll(): Unit = js.native
+    @scala.inline
+    def close(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-s-alert", "default.error")
-    @js.native
-    def error(): Double = js.native
-    @JSImport("react-s-alert", "default.error")
-    @js.native
-    def error(msg: js.UndefOr[scala.Nothing], data: SAlertConfigProps): Double = js.native
-    @JSImport("react-s-alert", "default.error")
-    @js.native
-    def error(msg: String): Double = js.native
-    @JSImport("react-s-alert", "default.error")
-    @js.native
-    def error(msg: String, data: SAlertConfigProps): Double = js.native
+    @scala.inline
+    def closeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[Unit]
     
-    @JSImport("react-s-alert", "default.info")
-    @js.native
-    def info(): Double = js.native
-    @JSImport("react-s-alert", "default.info")
-    @js.native
-    def info(msg: js.UndefOr[scala.Nothing], data: SAlertConfigProps): Double = js.native
-    @JSImport("react-s-alert", "default.info")
-    @js.native
-    def info(msg: String): Double = js.native
-    @JSImport("react-s-alert", "default.info")
-    @js.native
-    def info(msg: String, data: SAlertConfigProps): Double = js.native
+    @scala.inline
+    def error(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Double]
+    @scala.inline
+    def error(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def error(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def error(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("react-s-alert", "default.success")
-    @js.native
-    def success(): Double = js.native
-    @JSImport("react-s-alert", "default.success")
-    @js.native
-    def success(msg: js.UndefOr[scala.Nothing], data: SAlertConfigProps): Double = js.native
-    @JSImport("react-s-alert", "default.success")
-    @js.native
-    def success(msg: String): Double = js.native
-    @JSImport("react-s-alert", "default.success")
-    @js.native
-    def success(msg: String, data: SAlertConfigProps): Double = js.native
+    @scala.inline
+    def info(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[Double]
+    @scala.inline
+    def info(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def info(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("react-s-alert", "default.warning")
-    @js.native
-    def warning(): Double = js.native
-    @JSImport("react-s-alert", "default.warning")
-    @js.native
-    def warning(msg: js.UndefOr[scala.Nothing], data: SAlertConfigProps): Double = js.native
-    @JSImport("react-s-alert", "default.warning")
-    @js.native
-    def warning(msg: String): Double = js.native
-    @JSImport("react-s-alert", "default.warning")
-    @js.native
-    def warning(msg: String, data: SAlertConfigProps): Double = js.native
+    @scala.inline
+    def success(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[Double]
+    @scala.inline
+    def success(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def success(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def warning(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")().asInstanceOf[Double]
+    @scala.inline
+    def warning(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def warning(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def warning(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   object SAlert {
     
-    @js.native
     trait SAlertBeepProps extends StObject {
       
-      var error: js.UndefOr[String] = js.native
+      var error: js.UndefOr[String] = js.undefined
       
-      var info: js.UndefOr[String] = js.native
+      var info: js.UndefOr[String] = js.undefined
       
-      var success: js.UndefOr[String] = js.native
+      var success: js.UndefOr[String] = js.undefined
       
-      var warning: js.UndefOr[String] = js.native
+      var warning: js.UndefOr[String] = js.undefined
     }
     object SAlertBeepProps {
       
@@ -127,30 +111,29 @@ object mod {
       }
     }
     
-    @js.native
     trait SAlertConfigProps extends StObject {
       
-      var beep: js.UndefOr[String | Boolean | SAlertBeepProps] = js.native
+      var beep: js.UndefOr[String | Boolean | SAlertBeepProps] = js.undefined
       
-      var contentTemplate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+      var contentTemplate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
       
-      var customFields: js.UndefOr[js.Object] = js.native
+      var customFields: js.UndefOr[js.Object] = js.undefined
       
-      var effect: js.UndefOr[String] = js.native
+      var effect: js.UndefOr[String] = js.undefined
       
-      var html: js.UndefOr[Boolean] = js.native
+      var html: js.UndefOr[Boolean] = js.undefined
       
-      var offset: js.UndefOr[Double] = js.native
+      var offset: js.UndefOr[Double] = js.undefined
       
-      var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+      var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+      var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var stack: js.UndefOr[Boolean | SAlertStackProps] = js.native
+      var stack: js.UndefOr[Boolean | SAlertStackProps] = js.undefined
       
-      var timeout: js.UndefOr[String | Double] = js.native
+      var timeout: js.UndefOr[String | Double] = js.undefined
     }
     object SAlertConfigProps {
       
@@ -170,7 +153,7 @@ object mod {
         def setBeepUndefined: Self = StObject.set(x, "beep", js.undefined)
         
         @scala.inline
-        def setContentTemplate(value: /* repeated */ js.Any => _): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
+        def setContentTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
         
         @scala.inline
         def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
@@ -231,10 +214,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait SAlertProps extends SAlertConfigProps {
+    trait SAlertProps
+      extends StObject
+         with SAlertConfigProps {
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object SAlertProps {
       
@@ -255,12 +239,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SAlertStackProps extends StObject {
       
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
     }
     object SAlertStackProps {
       

@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A term from the request that was identified as an entity. */
-@js.native
 trait RuntimeEntity extends StObject {
   
   /** A decimal percentage that represents Watson's confidence in the entity. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** An entity detected in the input. */
-  var entity: String = js.native
+  var entity: String
   
   /** The recognized capture groups for the entity, as defined by the entity pattern. */
-  var groups: js.UndefOr[js.Array[CaptureGroup]] = js.native
+  var groups: js.UndefOr[js.Array[CaptureGroup]] = js.undefined
   
   /** An array of zero-based character offsets that indicate where the detected entity values begin and end in the input text. */
-  var location: js.Array[Double] = js.native
+  var location: js.Array[Double]
   
   /** Any metadata for the entity. */
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
   
   /** The term in the input text that was recognized as an entity value. */
-  var value: String = js.native
+  var value: String
 }
 object RuntimeEntity {
   

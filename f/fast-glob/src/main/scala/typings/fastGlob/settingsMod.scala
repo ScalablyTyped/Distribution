@@ -5,22 +5,94 @@ import typings.fastGlob.typesMod.FileSystemAdapter
 import typings.fastGlob.typesMod.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
   @JSImport("fast-glob/out/settings", JSImport.Default)
   @js.native
-  class default () extends Settings {
+  class default ()
+    extends StObject
+       with Settings {
     def this(_options: Options) = this()
+    
+    /* CompleteClass */
+    var _getFileSystemMethods: js.Any = js.native
+    
+    /* CompleteClass */
+    var _getValue: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _options: js.Any = js.native
+    
+    /* CompleteClass */
+    override val absolute: Boolean = js.native
+    
+    /* CompleteClass */
+    override val baseNameMatch: Boolean = js.native
+    
+    /* CompleteClass */
+    override val braceExpansion: Boolean = js.native
+    
+    /* CompleteClass */
+    override val caseSensitiveMatch: Boolean = js.native
+    
+    /* CompleteClass */
+    override val concurrency: Double = js.native
+    
+    /* CompleteClass */
+    override val cwd: String = js.native
+    
+    /* CompleteClass */
+    override val deep: Double = js.native
+    
+    /* CompleteClass */
+    override val dot: Boolean = js.native
+    
+    /* CompleteClass */
+    override val extglob: Boolean = js.native
+    
+    /* CompleteClass */
+    override val followSymbolicLinks: Boolean = js.native
+    
+    /* CompleteClass */
+    override val fs: FileSystemAdapter = js.native
+    
+    /* CompleteClass */
+    override val globstar: Boolean = js.native
+    
+    /* CompleteClass */
+    override val ignore: js.Array[Pattern] = js.native
+    
+    /* CompleteClass */
+    override val markDirectories: Boolean = js.native
+    
+    /* CompleteClass */
+    override val objectMode: Boolean = js.native
+    
+    /* CompleteClass */
+    override val onlyDirectories: Boolean = js.native
+    
+    /* CompleteClass */
+    override val onlyFiles: Boolean = js.native
+    
+    /* CompleteClass */
+    override val stats: Boolean = js.native
+    
+    /* CompleteClass */
+    override val suppressErrors: Boolean = js.native
+    
+    /* CompleteClass */
+    override val throwErrorOnBrokenSymbolicLink: Boolean = js.native
+    
+    /* CompleteClass */
+    override val unique: Boolean = js.native
   }
   
   @JSImport("fast-glob/out/settings", "DEFAULT_FILE_SYSTEM_ADAPTER")
   @js.native
   val DEFAULT_FILE_SYSTEM_ADAPTER: FileSystemAdapter = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -28,7 +100,7 @@ object settingsMod {
       *
       * @default false
       */
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, then patterns without slashes will be matched against
@@ -36,21 +108,21 @@ object settingsMod {
       *
       * @default false
       */
-    var baseNameMatch: js.UndefOr[Boolean] = js.native
+    var baseNameMatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables Bash-like brace expansion.
       *
       * @default true
       */
-    var braceExpansion: js.UndefOr[Boolean] = js.native
+    var braceExpansion: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables a case-sensitive mode for matching files.
       *
       * @default true
       */
-    var caseSensitiveMatch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveMatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies the maximum number of concurrent requests from a reader to read
@@ -58,14 +130,14 @@ object settingsMod {
       *
       * @default os.cpus().length
       */
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * The current working directory in which to search.
       *
       * @default process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the maximum depth of a read directory relative to the start
@@ -73,35 +145,35 @@ object settingsMod {
       *
       * @default Infinity
       */
-    var deep: js.UndefOr[Double] = js.native
+    var deep: js.UndefOr[Double] = js.undefined
     
     /**
       * Allow patterns to match entries that begin with a period (`.`).
       *
       * @default false
       */
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables Bash-like `extglob` functionality.
       *
       * @default true
       */
-    var extglob: js.UndefOr[Boolean] = js.native
+    var extglob: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether to traverse descendants of symbolic link directories.
       *
       * @default true
       */
-    var followSymbolicLinks: js.UndefOr[Boolean] = js.native
+    var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom implementation of methods for working with the file system.
       *
       * @default fs.*
       */
-    var fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+    var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
     
     /**
       * Enables recursively repeats a pattern containing `**`.
@@ -109,7 +181,7 @@ object settingsMod {
       *
       * @default true
       */
-    var globstar: js.UndefOr[Boolean] = js.native
+    var globstar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of glob patterns to exclude matches.
@@ -117,42 +189,42 @@ object settingsMod {
       *
       * @default []
       */
-    var ignore: js.UndefOr[js.Array[Pattern]] = js.native
+    var ignore: js.UndefOr[js.Array[Pattern]] = js.undefined
     
     /**
       * Mark the directory path with the final slash.
       *
       * @default false
       */
-    var markDirectories: js.UndefOr[Boolean] = js.native
+    var markDirectories: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns objects (instead of strings) describing entries.
       *
       * @default false
       */
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return only directories.
       *
       * @default false
       */
-    var onlyDirectories: js.UndefOr[Boolean] = js.native
+    var onlyDirectories: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return only files.
       *
       * @default true
       */
-    var onlyFiles: js.UndefOr[Boolean] = js.native
+    var onlyFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables an object mode (`objectMode`) with an additional `stats` field.
       *
       * @default false
       */
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default this package suppress only `ENOENT` errors.
@@ -160,7 +232,7 @@ object settingsMod {
       *
       * @default false
       */
-    var suppressErrors: js.UndefOr[Boolean] = js.native
+    var suppressErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Throw an error when symbolic link is broken if `true` or safely
@@ -168,14 +240,14 @@ object settingsMod {
       *
       * @default false
       */
-    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
+    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ensures that the returned entries are unique.
       *
       * @default true
       */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -319,56 +391,55 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var _getFileSystemMethods: js.Any = js.native
+    var _getFileSystemMethods: js.Any
     
-    var _getValue: js.Any = js.native
+    var _getValue: js.Any
     
-    val _options: js.Any = js.native
+    val _options: js.Any
     
-    val absolute: Boolean = js.native
+    val absolute: Boolean
     
-    val baseNameMatch: Boolean = js.native
+    val baseNameMatch: Boolean
     
-    val braceExpansion: Boolean = js.native
+    val braceExpansion: Boolean
     
-    val caseSensitiveMatch: Boolean = js.native
+    val caseSensitiveMatch: Boolean
     
-    val concurrency: Double = js.native
+    val concurrency: Double
     
-    val cwd: String = js.native
+    val cwd: String
     
-    val deep: Double = js.native
+    val deep: Double
     
-    val dot: Boolean = js.native
+    val dot: Boolean
     
-    val extglob: Boolean = js.native
+    val extglob: Boolean
     
-    val followSymbolicLinks: Boolean = js.native
+    val followSymbolicLinks: Boolean
     
-    val fs: FileSystemAdapter = js.native
+    val fs: FileSystemAdapter
     
-    val globstar: Boolean = js.native
+    val globstar: Boolean
     
-    val ignore: js.Array[Pattern] = js.native
+    val ignore: js.Array[Pattern]
     
-    val markDirectories: Boolean = js.native
+    val markDirectories: Boolean
     
-    val objectMode: Boolean = js.native
+    val objectMode: Boolean
     
-    val onlyDirectories: Boolean = js.native
+    val onlyDirectories: Boolean
     
-    val onlyFiles: Boolean = js.native
+    val onlyFiles: Boolean
     
-    val stats: Boolean = js.native
+    val stats: Boolean
     
-    val suppressErrors: Boolean = js.native
+    val suppressErrors: Boolean
     
-    val throwErrorOnBrokenSymbolicLink: Boolean = js.native
+    val throwErrorOnBrokenSymbolicLink: Boolean
     
-    val unique: Boolean = js.native
+    val unique: Boolean
   }
   object Settings {
     

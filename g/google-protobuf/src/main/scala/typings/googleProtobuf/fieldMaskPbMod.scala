@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldMaskPbMod {
@@ -34,13 +33,11 @@ object fieldMaskPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): FieldMask = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
     
-    @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: FieldMask, reader: BinaryReader): FieldMask = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: FieldMask, reader: BinaryReader): FieldMask = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldMask]
     
     @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask.extensions")
     @js.native
@@ -55,18 +52,15 @@ object fieldMaskPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: FieldMask, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: FieldMask, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: FieldMask): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: FieldMask): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var pathsList: js.Array[String] = js.native
+      var pathsList: js.Array[String]
     }
     object AsObject {
       

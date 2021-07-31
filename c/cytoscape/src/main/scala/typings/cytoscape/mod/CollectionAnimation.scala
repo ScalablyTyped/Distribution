@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait CollectionAnimation extends StObject {
     * http://js.cytoscape.org/#eles.stop
     */
   def stop(): this.type = js.native
-  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): this.type = js.native
   def stop(clearQueue: Boolean): this.type = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): this.type = js.native
+  def stop(clearQueue: Unit, jumpToEnd: Boolean): this.type = js.native
 }

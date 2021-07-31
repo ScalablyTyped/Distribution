@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The transferable source interface.
   * @see com.sun.star.datatransfer.XTransferable
   */
-@js.native
-trait XTransferableSource extends XInterface {
+trait XTransferableSource
+  extends StObject
+     with XInterface {
   
   /** @returns A human presentable description of the source that created the transferable object. */
-  val DataSourceDescription: String = js.native
+  val DataSourceDescription: String
   
   /** @returns A human presentable description of the source that created the transferable object. */
-  def getDataSourceDescription(): String = js.native
+  def getDataSourceDescription(): String
 }
 object XTransferableSource {
   

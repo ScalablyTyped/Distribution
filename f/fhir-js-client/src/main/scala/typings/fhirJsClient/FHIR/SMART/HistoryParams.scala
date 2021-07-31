@@ -2,21 +2,21 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistoryParams extends CommonQueryFilters {
+trait HistoryParams
+  extends StObject
+     with CommonQueryFilters {
   
   /**
     * Resource ID,  if the history to be fetched is resource specific.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource,  if the history to be fetched is resource specific.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object HistoryParams {
   

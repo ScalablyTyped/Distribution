@@ -6,26 +6,24 @@ import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderThumbDragEvent extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var state: drag | start | stop = js.native
+  var state: drag | start | stop
   
-  var `type`: `thumb-drag` = js.native
+  var `type`: `thumb-drag`
   
-  var value: Double = js.native
+  var value: Double
 }
 object SliderThumbDragEvent {
   
   @scala.inline
-  def apply(index: Double, state: drag | start | stop, `type`: `thumb-drag`, value: Double): SliderThumbDragEvent = {
+  def apply(index: Double, state: drag | start | stop, value: Double): SliderThumbDragEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("thumb-drag")
     __obj.asInstanceOf[SliderThumbDragEvent]
   }
   

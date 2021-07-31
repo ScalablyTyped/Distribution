@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentCurrencyAmount extends StObject {
   
-  var currency: java.lang.String = js.native
+  var currency: java.lang.String
   
-  var currencySystem: js.UndefOr[java.lang.String] = js.native
+  var currencySystem: js.UndefOr[java.lang.String] = js.undefined
   
-  var value: java.lang.String = js.native
+  var value: java.lang.String
 }
 object PaymentCurrencyAmount {
   

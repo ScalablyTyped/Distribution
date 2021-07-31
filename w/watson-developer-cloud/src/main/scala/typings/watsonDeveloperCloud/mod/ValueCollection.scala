@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ValueCollection. */
-@js.native
 trait ValueCollection extends StObject {
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
   
   /** An array of entity values. */
-  var values: js.Array[Value] = js.native
+  var values: js.Array[Value]
 }
 object ValueCollection {
   

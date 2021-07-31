@@ -2,15 +2,15 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HostPathVolume extends Volume {
+trait HostPathVolume
+  extends StObject
+     with Volume {
   
-  var kind: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = js.native
+  var kind: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume
   
-  var path: String = js.native
+  var path: String
 }
 object HostPathVolume {
   

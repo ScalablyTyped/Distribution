@@ -5,23 +5,21 @@ import typings.awsSdkClientXrayNode.typesServiceIdMod.UnmarshalledServiceId
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTraceUserMod {
   
-  @js.native
   trait TraceUser extends StObject {
     
     /**
       * <p>Services that the user's request hit.</p>
       */
-    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.native
+    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.undefined
     
     /**
       * <p>The user's name.</p>
       */
-    var UserName: js.UndefOr[String] = js.native
+    var UserName: js.UndefOr[String] = js.undefined
   }
   object TraceUser {
     
@@ -51,14 +49,15 @@ object typesTraceUserMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTraceUser extends TraceUser {
+  trait UnmarshalledTraceUser
+    extends StObject
+       with TraceUser {
     
     /**
       * <p>Services that the user's request hit.</p>
       */
     @JSName("ServiceIds")
-    var ServiceIds_UnmarshalledTraceUser: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.native
+    var ServiceIds_UnmarshalledTraceUser: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.undefined
   }
   object UnmarshalledTraceUser {
     

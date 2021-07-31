@@ -6,20 +6,20 @@ import typings.leaflet.mod.VideoOverlayOptions
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet */ @js.native
-trait VideoOverlayProps extends VideoOverlayOptions {
+- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet */ trait VideoOverlayProps
+  extends StObject
+     with VideoOverlayOptions {
   
-  var bounds: LatLngBoundsExpression = js.native
+  var bounds: LatLngBoundsExpression
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   
-  var play: js.UndefOr[Boolean] = js.native
+  var play: js.UndefOr[Boolean] = js.undefined
   
-  var url: String | js.Array[String] | HTMLVideoElement = js.native
+  var url: String | js.Array[String] | HTMLVideoElement
 }
 object VideoOverlayProps {
   

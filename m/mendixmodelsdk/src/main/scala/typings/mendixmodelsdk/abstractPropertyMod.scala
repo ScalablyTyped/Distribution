@@ -8,7 +8,6 @@ import typings.mendixmodelsdk.utilsMod.utils.IMap
 import typings.mendixmodelsdk.versionChecksMod.PropertyVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractPropertyMod {

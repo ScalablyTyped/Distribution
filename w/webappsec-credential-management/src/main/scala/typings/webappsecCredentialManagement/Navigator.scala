@@ -2,7 +2,6 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* ***************** CREDENTIAL MANAGEMENT API DEFINITONS ******************* */
@@ -10,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Declaration merge for 'navigator' which adds the credential management
   * interface.
   */
-@js.native
 trait Navigator extends StObject {
   
-  val credentials: CredentialsContainer = js.native
+  val credentials: CredentialsContainer
 }
 object Navigator {
   

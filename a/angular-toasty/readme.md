@@ -12,7 +12,7 @@ Angular Toasty ================= **Angular Toasty** is a simple standalone Angul
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 30960 |
+| # downloads        | 42271 |
 | # stars            | 0 |
 
 ## Links

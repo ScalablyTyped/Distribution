@@ -8,20 +8,18 @@ import typings.screeps.FindClosestByPathAlgorithm
 import typings.screeps.RoomPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined screeps.FindPathOpts & std.Partial<screeps.FilterOptions<screeps.FIND_STRUCTURES>> & {  algorithm :screeps.FindClosestByPathAlgorithm | undefined} */
-@js.native
 trait FindPathOptsPartialFilter extends StObject {
   
-  var algorithm: js.UndefOr[FindClosestByPathAlgorithm] = js.native
+  var algorithm: js.UndefOr[FindClosestByPathAlgorithm] = js.undefined
   
   /**
     * An array of the room's objects or RoomPosition objects which should be treated as obstacles during the search. This option cannot
     * be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var avoid: js.UndefOr[js.Array[_ | RoomPosition]] = js.native
+  var avoid: js.UndefOr[js.Array[js.Any | RoomPosition]] = js.undefined
   
   /**
     * You can use this callback to modify a CostMatrix for any room during the search. The callback accepts two arguments, roomName
@@ -34,71 +32,71 @@ trait FindPathOptsPartialFilter extends StObject {
     */
   var costCallback: js.UndefOr[
     js.Function2[/* roomName */ String, /* costMatrix */ CostMatrix, Unit | CostMatrix]
-  ] = js.native
+  ] = js.undefined
   
-  var filter: js.UndefOr[FilterFunction[FIND_STRUCTURES] | FilterObject | String] = js.native
+  var filter: js.UndefOr[FilterFunction[FIND_STRUCTURES] | FilterObject | String] = js.undefined
   
   /**
     * Weight to apply to the heuristic in the A* formula F = G + weight * H. Use this option only if you understand the underlying
     * A* algorithm mechanics! The default value is 1.2.
     */
-  var heuristicWeight: js.UndefOr[Double] = js.native
+  var heuristicWeight: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of the room's objects or RoomPosition objects which should be treated as walkable tiles during the search. This option
     * cannot be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var ignore: js.UndefOr[js.Array[_ | RoomPosition]] = js.native
+  var ignore: js.UndefOr[js.Array[js.Any | RoomPosition]] = js.undefined
   
   /**
     * Treat squares with creeps as walkable. Can be useful with too many moving creeps around or in some other cases. The default
     * value is false.
     */
-  var ignoreCreeps: js.UndefOr[Boolean] = js.native
+  var ignoreCreeps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Treat squares with destructible structures (constructed walls, ramparts, spawns, extensions) as walkable. Use this flag when
     * you need to move through a territory blocked by hostile structures. If a creep with an ATTACK body part steps on such a square,
     * it automatically attacks the structure. The default value is false.
     */
-  var ignoreDestructibleStructures: js.UndefOr[Boolean] = js.native
+  var ignoreDestructibleStructures: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ignore road structures. Enabling this option can speed up the search. The default value is false. This is only used when the
     * new PathFinder is enabled.
     */
-  var ignoreRoads: js.UndefOr[Boolean] = js.native
+  var ignoreRoads: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum limit of possible pathfinding operations. You can limit CPU time used for the search based on ratio 1 op ~ 0.001 CPU.
     * The default value is 2000.
     */
-  var maxOps: js.UndefOr[Double] = js.native
+  var maxOps: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed rooms to search. The default (and maximum) is 16. This is only used when the new PathFinder is enabled.
     */
-  var maxRooms: js.UndefOr[Double] = js.native
+  var maxRooms: js.UndefOr[Double] = js.undefined
   
   /**
     * Cost for walking on plain positions. The default is 1.
     */
-  var plainCost: js.UndefOr[Double] = js.native
+  var plainCost: js.UndefOr[Double] = js.undefined
   
   /**
     * Path to within (range) tiles of target tile. The default is to path to the tile that the target is on (0).
     */
-  var range: js.UndefOr[Double] = js.native
+  var range: js.UndefOr[Double] = js.undefined
   
   /**
     * If true, the result path will be serialized using Room.serializePath. The default is false.
     */
-  var serialize: js.UndefOr[Boolean] = js.native
+  var serialize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Cost for walking on swamp positions. The default is 5.
     */
-  var swampCost: js.UndefOr[Double] = js.native
+  var swampCost: js.UndefOr[Double] = js.undefined
 }
 object FindPathOptsPartialFilter {
   
@@ -118,7 +116,7 @@ object FindPathOptsPartialFilter {
     def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def setAvoid(value: js.Array[_ | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+    def setAvoid(value: js.Array[js.Any | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
@@ -150,7 +148,7 @@ object FindPathOptsPartialFilter {
     def setHeuristicWeightUndefined: Self = StObject.set(x, "heuristicWeight", js.undefined)
     
     @scala.inline
-    def setIgnore(value: js.Array[_ | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    def setIgnore(value: js.Array[js.Any | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIgnoreCreeps(value: Boolean): Self = StObject.set(x, "ignoreCreeps", value.asInstanceOf[js.Any])

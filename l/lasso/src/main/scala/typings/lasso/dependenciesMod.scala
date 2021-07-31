@@ -7,29 +7,28 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dependenciesMod {
   
-  @JSImport("lasso/lib/dependencies", "createRegistry")
+  @JSImport("lasso/lib/dependencies", JSImport.Namespace)
   @js.native
-  def createRegistry(): DependencyRegistry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lasso/lib/dependencies", "isDependency")
-  @js.native
-  def isDependency(d: js.Any): Boolean = js.native
+  @scala.inline
+  def createRegistry(): DependencyRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")().asInstanceOf[DependencyRegistry]
   
-  @JSImport("lasso/lib/dependencies", "isRegistry")
-  @js.native
-  def isRegistry(o: js.Any): Boolean = js.native
+  @scala.inline
+  def isDependency(d: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDependency")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def isRegistry(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistry")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait Bundle extends StObject {
     
-    var dependencies: js.Array[DependencyConfig | String] = js.native
+    var dependencies: js.Array[DependencyConfig | String]
     
-    var name: String = js.native
+    var name: String
   }
   object Bundle {
     
@@ -72,13 +71,13 @@ object dependenciesMod {
     var contentType: js.UndefOr[String] = js.native
     
     def createPackageManifest(): js.Any = js.native
-    def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: js.UndefOr[scala.Nothing], filename: String): js.Any = js.native
-    def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: String): js.Any = js.native
-    def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: String, filename: String): js.Any = js.native
     def createPackageManifest(manifest: js.Any): js.Any = js.native
-    def createPackageManifest(manifest: js.Any, dirname: js.UndefOr[scala.Nothing], filename: String): js.Any = js.native
     def createPackageManifest(manifest: js.Any, dirname: String): js.Any = js.native
     def createPackageManifest(manifest: js.Any, dirname: String, filename: String): js.Any = js.native
+    def createPackageManifest(manifest: js.Any, dirname: Unit, filename: String): js.Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: String): js.Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: String, filename: String): js.Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: Unit, filename: String): js.Any = js.native
     
     def createReadStream(lassoContext: default): js.Any = js.native
     
@@ -91,9 +90,9 @@ object dependenciesMod {
     def getContentType(): js.Any = js.native
     
     def getDefaultBundleName(): String = js.native
-    def getDefaultBundleName(pageBundleName: js.UndefOr[scala.Nothing], lassoContext: default): String = js.native
     def getDefaultBundleName(pageBundleName: String): String = js.native
     def getDefaultBundleName(pageBundleName: String, lassoContext: default): String = js.native
+    def getDefaultBundleName(pageBundleName: Unit, lassoContext: default): String = js.native
     
     def getDir(): String | Null = js.native
     
@@ -159,42 +158,41 @@ object dependenciesMod {
     def shouldCache(lassoContext: default): Boolean = js.native
   }
   
-  @js.native
   trait DependencyConfig extends StObject {
     
-    var attributes: js.UndefOr[Crossorigin] = js.native
+    var attributes: js.UndefOr[Crossorigin] = js.undefined
     
-    var `css-slot`: js.UndefOr[String] = js.native
+    var `css-slot`: js.UndefOr[String] = js.undefined
     
-    var dependencies: js.UndefOr[js.Array[DependencyConfig | String]] = js.native
+    var dependencies: js.UndefOr[js.Array[DependencyConfig | String]] = js.undefined
     
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var `if`: js.UndefOr[String] = js.native
+    var `if`: js.UndefOr[String] = js.undefined
     
-    var `if-flag`: js.UndefOr[String] = js.native
+    var `if-flag`: js.UndefOr[String] = js.undefined
     
-    var `if-not-flag`: js.UndefOr[String] = js.native
+    var `if-not-flag`: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[String] = js.native
+    var `inline`: js.UndefOr[String] = js.undefined
     
-    var `js-slot`: js.UndefOr[String] = js.native
+    var `js-slot`: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var require: js.UndefOr[String] = js.native
+    var require: js.UndefOr[String] = js.undefined
     
-    var `require-run`: js.UndefOr[String] = js.native
+    var `require-run`: js.UndefOr[String] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object DependencyConfig {
     
@@ -334,11 +332,11 @@ object dependenciesMod {
     
     def getType(`type`: String): js.Any = js.native
     
-    def normalizeDependencies(dependencies: js.Array[_], dirname: String, filename: String, callback: Callback): js.Any = js.native
+    def normalizeDependencies(dependencies: js.Array[js.Any], dirname: String, filename: String, callback: Callback): js.Any = js.native
     
     def registerDefaults(): Unit = js.native
     
-    def registerExtension(extension: String, `type`: String): Unit = js.native
+    def registerExtension(`extension`: String, `type`: String): Unit = js.native
     
     def registerJavaScriptType(`type`: String, mixins: js.Any): Unit = js.native
     

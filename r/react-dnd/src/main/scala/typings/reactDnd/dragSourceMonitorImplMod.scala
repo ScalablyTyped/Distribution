@@ -8,14 +8,15 @@ import typings.reactDnd.anon.Shallow
 import typings.reactDnd.monitorsMod.DragSourceMonitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragSourceMonitorImplMod {
   
   @JSImport("react-dnd/lib/common/DragSourceMonitorImpl", "DragSourceMonitorImpl")
   @js.native
-  class DragSourceMonitorImpl protected () extends DragSourceMonitor {
+  class DragSourceMonitorImpl protected ()
+    extends StObject
+       with DragSourceMonitor {
     def this(manager: DragDropManager) = this()
     
     def canDragSource(sourceId: Identifier): Boolean = js.native

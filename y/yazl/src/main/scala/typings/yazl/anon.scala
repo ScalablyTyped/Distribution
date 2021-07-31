@@ -3,18 +3,16 @@ package typings.yazl
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<yazl.yazl.DirectoryOptions> */
-  @js.native
   trait PartialDirectoryOptions extends StObject {
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
   }
   object PartialDirectoryOptions {
     
@@ -42,16 +40,15 @@ object anon {
   }
   
   /* Inlined std.Partial<yazl.yazl.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var forceZip64Format: js.UndefOr[Boolean] = js.native
+    var forceZip64Format: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
   }
   object PartialOptions {
     
@@ -91,18 +88,17 @@ object anon {
   }
   
   /* Inlined std.Partial<yazl.yazl.ReadStreamOptions> */
-  @js.native
   trait PartialReadStreamOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var forceZip64Format: js.UndefOr[Boolean] = js.native
+    var forceZip64Format: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object PartialReadStreamOptions {
     

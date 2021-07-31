@@ -7,106 +7,106 @@ import typings.fabric.fabricStrings.normal
 import typings.fabric.fabricStrings.oblique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextOptions extends IObjectOptions {
+trait TextOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * additional space between characters
     * expressed in thousands of em unit
     * @type Number
     */
-  var charSpacing: js.UndefOr[Double] = js.native
+  var charSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * Baseline shift, stlyes only, keep at 0 for the main text object
     * @type {Number}
     */
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
   
   /**
     * Font family
     * @type String
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Font size (in pixels)
     * @type Number
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Font style . Possible values: "", "normal", "italic" or "oblique".
     * @type String
     */
-  var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.native
+  var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.undefined
   
   /**
     * Font weight (e.g. bold, normal, 400, 600, 800)
     * @type {(Number|String)}
     */
-  var fontWeight: js.UndefOr[String | Double] = js.native
+  var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Line height
     * @type Number
     */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Text decoration linethrough.
     * @type Boolean
     */
-  var linethrough: js.UndefOr[Boolean] = js.native
+  var linethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text decoration overline.
     * @type Boolean
     */
-  var overline: js.UndefOr[Boolean] = js.native
+  var overline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Object containing character styles - top-level properties -> line numbers,
     * 2nd-level properties - charater numbers
     * @type Object
     */
-  var styles: js.UndefOr[js.Any] = js.native
+  var styles: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Subscript schema object (minimum overlap)
     * @type {Object}
     */
-  var subscript: js.UndefOr[Baseline] = js.native
+  var subscript: js.UndefOr[Baseline] = js.undefined
   
   /**
     * Superscript schema object (minimum overlap)
     * @type {Object}
     */
-  var superscript: js.UndefOr[Baseline] = js.native
+  var superscript: js.UndefOr[Baseline] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Text alignment. Possible values: "left", "center", "right", "justify",
     * "justify-left", "justify-center" or "justify-right".
     * @type String
     */
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Background color of text lines
     * @type String
     */
-  var textBackgroundColor: js.UndefOr[String] = js.native
+  var textBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Text decoration underline.
     * @type Boolean
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
 }
 object TextOptions {
   

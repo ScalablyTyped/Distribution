@@ -3,24 +3,22 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait FusionTablesLayerOptions extends StObject {
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var heatmap: js.UndefOr[FusionTablesHeatmap] = js.native
+  var heatmap: js.UndefOr[FusionTablesHeatmap] = js.undefined
   
-  var map: js.UndefOr[Map[Element]] = js.native
+  var map: js.UndefOr[Map[Element]] = js.undefined
   
-  var query: js.UndefOr[FusionTablesQuery] = js.native
+  var query: js.UndefOr[FusionTablesQuery] = js.undefined
   
-  var styles: js.UndefOr[js.Array[FusionTablesStyle]] = js.native
+  var styles: js.UndefOr[js.Array[FusionTablesStyle]] = js.undefined
   
-  var suppressInfoWindows: js.UndefOr[Boolean] = js.native
+  var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
 }
 object FusionTablesLayerOptions {
   

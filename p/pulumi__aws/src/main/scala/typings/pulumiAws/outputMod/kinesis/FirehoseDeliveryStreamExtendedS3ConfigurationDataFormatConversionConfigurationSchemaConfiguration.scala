@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration extends StObject {
   
   /**
     * The ID of the AWS Glue Data Catalog. If you don't supply this, the AWS account ID is used by default.
     */
-  var catalogId: String = js.native
+  var catalogId: String
   
   /**
     * Specifies the name of the AWS Glue database that contains the schema for the output data.
     */
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * If you don't specify an AWS Region, the default is the current region.
     */
-  var region: String = js.native
+  var region: String
   
   /**
     * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * Specifies the AWS Glue table that contains the column information that constitutes your data schema.
     */
-  var tableName: String = js.native
+  var tableName: String
   
   /**
     * Specifies the table version for the output data schema. Defaults to `LATEST`.
     */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration {
   

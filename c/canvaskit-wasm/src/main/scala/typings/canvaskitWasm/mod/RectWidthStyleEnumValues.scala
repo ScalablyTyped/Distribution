@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RectWidthStyleEnumValues extends EmbindEnum {
+trait RectWidthStyleEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Max: RectWidthStyle = js.native
+  var Max: RectWidthStyle
   
-  var Tight: RectWidthStyle = js.native
+  var Tight: RectWidthStyle
 }
 object RectWidthStyleEnumValues {
   

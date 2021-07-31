@@ -2,20 +2,18 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /** Event code. */
-  var code: Double = js.native
+  var code: Double
   
   /** Event message. */
-  var msg: String = js.native
+  var msg: String
   
   /** The uid of the user who experiences the exception or recovery event. */
-  var uid: String = js.native
+  var uid: String
 }
 object Code {
   

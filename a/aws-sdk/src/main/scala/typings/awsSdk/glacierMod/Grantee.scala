@@ -2,36 +2,34 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Grantee extends StObject {
   
   /**
     * Screen name of the grantee.
     */
-  var DisplayName: js.UndefOr[String] = js.native
+  var DisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Email address of the grantee.
     */
-  var EmailAddress: js.UndefOr[String] = js.native
+  var EmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The canonical user ID of the grantee.
     */
-  var ID: js.UndefOr[String] = js.native
+  var ID: js.UndefOr[String] = js.undefined
   
   /**
     * Type of grantee
     */
-  var Type: typings.awsSdk.glacierMod.Type = js.native
+  var Type: typings.awsSdk.glacierMod.Type
   
   /**
     * URI of the grantee group.
     */
-  var URI: js.UndefOr[String] = js.native
+  var URI: js.UndefOr[String] = js.undefined
 }
 object Grantee {
   

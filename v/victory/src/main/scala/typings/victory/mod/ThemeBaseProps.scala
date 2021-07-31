@@ -2,19 +2,17 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeBaseProps extends StObject {
   
-  var colorScale: js.Array[String] = js.native
+  var colorScale: js.Array[String]
   
-  var height: Double = js.native
+  var height: Double
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object ThemeBaseProps {
   

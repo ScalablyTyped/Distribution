@@ -2,27 +2,25 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseIcon extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var closeIcon: js.UndefOr[String] = js.native
+  var closeIcon: js.UndefOr[String] = js.undefined
   
-  var errorIcon: js.UndefOr[String] = js.native
+  var errorIcon: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var successIcon: js.UndefOr[String] = js.native
+  var successIcon: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var warningIcon: js.UndefOr[String] = js.native
+  var warningIcon: js.UndefOr[String] = js.undefined
 }
 object CloseIcon {
   

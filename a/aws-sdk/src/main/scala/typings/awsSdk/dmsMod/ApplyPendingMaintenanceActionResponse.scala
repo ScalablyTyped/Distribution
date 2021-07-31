@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyPendingMaintenanceActionResponse extends StObject {
   
   /**
     * The AWS DMS resource that the pending maintenance action will be applied to.
     */
-  var ResourcePendingMaintenanceActions: js.UndefOr[typings.awsSdk.dmsMod.ResourcePendingMaintenanceActions] = js.native
+  var ResourcePendingMaintenanceActions: js.UndefOr[typings.awsSdk.dmsMod.ResourcePendingMaintenanceActions] = js.undefined
 }
 object ApplyPendingMaintenanceActionResponse {
   

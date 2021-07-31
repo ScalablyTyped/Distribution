@@ -2,24 +2,22 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detected start or end of a structural component.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1TextAnnotationDetectedBreak extends StObject {
   
   /**
     * True if break prepends the element.
     */
-  var isPrefix: js.UndefOr[Boolean] = js.native
+  var isPrefix: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Detected break type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1TextAnnotationDetectedBreak {
   

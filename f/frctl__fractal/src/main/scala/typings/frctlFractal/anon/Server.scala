@@ -2,15 +2,13 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Server extends StObject {
   
-  var server: js.UndefOr[Double] = js.native
+  var server: js.UndefOr[Double] = js.undefined
   
-  var sync: js.UndefOr[Double] = js.native
+  var sync: js.UndefOr[Double] = js.undefined
 }
 object Server {
   

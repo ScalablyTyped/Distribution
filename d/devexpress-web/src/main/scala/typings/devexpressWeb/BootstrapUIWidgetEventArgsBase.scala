@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides base data for the client-side events.
   */
-@js.native
-trait BootstrapUIWidgetEventArgsBase extends ASPxClientEventArgs {
+trait BootstrapUIWidgetEventArgsBase
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * The widget instance.
     */
-  var component: js.Any = js.native
+  var component: js.Any
   
   /**
     * The widget's container.
     */
-  var element: js.Any = js.native
+  var element: js.Any
 }
 object BootstrapUIWidgetEventArgsBase {
   

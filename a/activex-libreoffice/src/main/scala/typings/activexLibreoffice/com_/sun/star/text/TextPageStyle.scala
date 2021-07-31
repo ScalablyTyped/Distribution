@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,95 +10,94 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This service extends the service {@link com.sun.star.style.PageStyle} with specific properties for text documents.
   */
-@js.native
 trait TextPageStyle extends StObject {
   
   /**
     * contains the interface to the text of the footer.
     * @see com.sun.star.text.Text
     */
-  var FooterText: XText = js.native
+  var FooterText: XText
   
   /**
     * contains the interface to the text of the footer of a first page.
     * @see com.sun.star.text.Text
     * @since LibreOffice 4.0
     */
-  var FooterTextFirst: XText = js.native
+  var FooterTextFirst: XText
   
   /**
     * contains the interface to the text of the footer of a left page.
     * @see com.sun.star.text.Text
     */
-  var FooterTextLeft: XText = js.native
+  var FooterTextLeft: XText
   
   /**
     * contains the interface to the text of the footer of a right page.
     * @see com.sun.star.text.Text
     */
-  var FooterTextRight: XText = js.native
+  var FooterTextRight: XText
   
   /**
     * contains the maximum height of the footnote area (in 1/100 mm).
     *
     * If set to zero, the height of the current page is used as limit.
     */
-  var FootnoteHeight: Double = js.native
+  var FootnoteHeight: Double
   
   /**
     * contains the adjustment of the separator line between the text and the footnote area.
     * @see com.sun.star.text.HorizontalAdjust
     */
-  var FootnoteLineAdjust: Double = js.native
+  var FootnoteLineAdjust: Double
   
   /** contains the color of the separator line between the text and the footnote area. */
-  var FootnoteLineColor: Color = js.native
+  var FootnoteLineColor: Color
   
   /** contains the distance between the footnote area and the separator line between the text and the footnote area (in 1/100 mm). */
-  var FootnoteLineDistance: Double = js.native
+  var FootnoteLineDistance: Double
   
   /** contains the relative width of the separator line between the text and the footnote area (in percent). */
-  var FootnoteLineRelativeWidth: Double = js.native
+  var FootnoteLineRelativeWidth: Double
   
   /** contains the distance between the text and the separator line between the text and the footnote area (in 1/100 mm). */
-  var FootnoteLineTextDistance: Double = js.native
+  var FootnoteLineTextDistance: Double
   
   /** contains the weight of the separator line between the text and the footnote area (in 1/100 mm). */
-  var FootnoteLineWeight: Double = js.native
+  var FootnoteLineWeight: Double
   
   /**
     * contains the interface to the text of the header.
     * @see com.sun.star.text.Text
     */
-  var HeaderText: XText = js.native
+  var HeaderText: XText
   
   /**
     * contains the interface to the text of the header of first pages.
     * @see com.sun.star.text.Text
     * @since LibreOffice 4.0
     */
-  var HeaderTextFirst: XText = js.native
+  var HeaderTextFirst: XText
   
   /**
     * contains the interface to the text of the header of left pages.
     * @see com.sun.star.text.Text
     */
-  var HeaderTextLeft: XText = js.native
+  var HeaderTextLeft: XText
   
   /**
     * contains the interface to the text of the header of right pages.
     * @see com.sun.star.text.Text
     */
-  var HeaderTextRight: XText = js.native
+  var HeaderTextRight: XText
   
   /** determines whether the register mode is active on that page. */
-  var RegisterModeActive: Boolean = js.native
+  var RegisterModeActive: Boolean
   
   /** contains the name of the paragraph style that is used as reference of the register mode. */
-  var RegisterParagraphStyle: String = js.native
+  var RegisterParagraphStyle: String
   
   /** contains the column settings of the page. */
-  var TextColumns: XTextColumns = js.native
+  var TextColumns: XTextColumns
 }
 object TextPageStyle {
   

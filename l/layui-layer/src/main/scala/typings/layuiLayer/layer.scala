@@ -27,23 +27,23 @@ import typings.std.HTMLElement
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layer {
   
-  @js.native
-  trait ConfigOptions extends Options {
+  trait ConfigOptions
+    extends StObject
+       with Options {
     
     /**
       * 拓展的css皮肤
       */
-    var extend: js.UndefOr[String | js.Array[String]] = js.native
+    var extend: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * js所在的目录，可以是绝对目录，也可以是相对目录
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object ConfigOptions {
     
@@ -85,14 +85,14 @@ object layer {
       * @param yes
       */
     def alert(): Index = js.native
-    def alert(content: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
-    def alert(content: js.UndefOr[scala.Nothing], options: Options): Index = js.native
-    def alert(content: js.UndefOr[scala.Nothing], options: Options, yes: Yes): Index = js.native
     def alert(content: String): Index = js.native
-    def alert(content: String, options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
+    def alert(content: String, options: Unit, yes: Yes): Index = js.native
     def alert(content: String, options: Options): Index = js.native
     def alert(content: String, options: Options, yes: Yes): Index = js.native
     def alert(content: String, yes: Yes): Index = js.native
+    def alert(content: Unit, options: Unit, yes: Yes): Index = js.native
+    def alert(content: Unit, options: Options): Index = js.native
+    def alert(content: Unit, options: Options, yes: Yes): Index = js.native
     def alert(options: Options): Index = js.native
     def alert(options: Options, yes: Yes): Index = js.native
     def alert(yes: Yes): Index = js.native
@@ -124,26 +124,27 @@ object layer {
       * @param cancel
       */
     def confirm(): Index = js.native
-    def confirm(
-      content: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      yes: js.UndefOr[Yes],
-      cancel: Cancel
-    ): Index = js.native
-    def confirm(content: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
-    def confirm(content: js.UndefOr[scala.Nothing], options: Options): Index = js.native
-    def confirm(content: js.UndefOr[scala.Nothing], options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
-    def confirm(content: js.UndefOr[scala.Nothing], options: Options, yes: Yes): Index = js.native
     def confirm(content: String): Index = js.native
-    def confirm(content: String, options: js.UndefOr[Yes], yes: Cancel | Yes): Index = js.native
-    def confirm(content: String, options: js.UndefOr[scala.Nothing], yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
+    def confirm(content: String, options: Unit, yes: Unit, cancel: Cancel): Index = js.native
+    def confirm(content: String, options: Unit, yes: Yes): Index = js.native
+    def confirm(content: String, options: Unit, yes: Yes, cancel: Cancel): Index = js.native
     def confirm(content: String, options: Options): Index = js.native
-    def confirm(content: String, options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
+    def confirm(content: String, options: Options, yes: Unit, cancel: Cancel): Index = js.native
     def confirm(content: String, options: Options, yes: Yes): Index = js.native
+    def confirm(content: String, options: Options, yes: Yes, cancel: Cancel): Index = js.native
     def confirm(content: String, yes: Yes): Index = js.native
+    def confirm(content: String, yes: Yes, cancel: Cancel): Index = js.native
+    def confirm(content: Unit, options: Unit, yes: Unit, cancel: Cancel): Index = js.native
+    def confirm(content: Unit, options: Unit, yes: Yes): Index = js.native
+    def confirm(content: Unit, options: Unit, yes: Yes, cancel: Cancel): Index = js.native
+    def confirm(content: Unit, options: Options): Index = js.native
+    def confirm(content: Unit, options: Options, yes: Unit, cancel: Cancel): Index = js.native
+    def confirm(content: Unit, options: Options, yes: Yes): Index = js.native
+    def confirm(content: Unit, options: Options, yes: Yes, cancel: Cancel): Index = js.native
     def confirm(options: Options): Index = js.native
-    def confirm(options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
+    def confirm(options: Options, yes: Unit, cancel: Cancel): Index = js.native
     def confirm(options: Options, yes: Yes): Index = js.native
+    def confirm(options: Options, yes: Yes, cancel: Cancel): Index = js.native
     def confirm(yes: Yes): Index = js.native
     def confirm(yes: Yes, cancel: Cancel): Index = js.native
     
@@ -190,7 +191,7 @@ object layer {
       * @param options
       */
     def load(): Index = js.native
-    def load(icon: js.UndefOr[scala.Nothing], options: Options): Index = js.native
+    def load(icon: Unit, options: Options): Index = js.native
     @JSName("load")
     def load_0(icon: `0`): Index = js.native
     @JSName("load")
@@ -218,7 +219,7 @@ object layer {
       */
     def msg(content: String): Index = js.native
     def msg(content: String, end: End): Index = js.native
-    def msg(content: String, options: js.UndefOr[scala.Nothing], end: End): Index = js.native
+    def msg(content: String, options: Unit, end: End): Index = js.native
     def msg(content: String, options: Options): Index = js.native
     def msg(content: String, options: Options, end: End): Index = js.native
     
@@ -241,7 +242,7 @@ object layer {
       * @param yes
       */
     def prompt(): Index = js.native
-    def prompt(options: js.UndefOr[scala.Nothing], yes: Prompt): Index = js.native
+    def prompt(options: Unit, yes: Prompt): Index = js.native
     def prompt(options: PromptOptions): Index = js.native
     def prompt(options: PromptOptions, yes: Prompt): Index = js.native
     def prompt(yes: Prompt): Index = js.native
@@ -306,7 +307,6 @@ object layer {
   /**
     * 基础参数
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -323,7 +323,7 @@ object layer {
       * 5    //渐显
       * 6    //抖动
       */
-    var anim: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var anim: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
     /**
       * 宽高
@@ -332,47 +332,47 @@ object layer {
       * '500px'    //定义宽度，高度自适应
       * ['500px', '300px']    //定义宽高
       */
-    var area: js.UndefOr[String | (js.Tuple2[String, String])] = js.native
+    var area: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     
     /**
       * 按钮
       * @default '确认'
       * @description 信息框模式时，btn默认是一个确认按钮，其它层类型则默认不显示，加载层和tips层则无效。
       */
-    var btn: js.UndefOr[String | js.Array[String]] = js.native
+    var btn: js.UndefOr[String | js.Array[String]] = js.undefined
     
     //#region 按钮1的回调是yes，而从按钮2开始，则回调为btn2: function(){}，以此类推。
     var btn2: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn3: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn4: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn5: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn6: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn7: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn8: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     var btn9: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * 按钮排列
@@ -382,7 +382,7 @@ object layer {
       * 'c'    //按钮居中对齐
       * 'r'    //按钮右对齐。默认值，不用设置
       */
-    var btnAlign: js.UndefOr[l | c | r] = js.native
+    var btnAlign: js.UndefOr[l | c | r] = js.undefined
     
     //#endregion
     /**
@@ -393,119 +393,119 @@ object layer {
       */
     var cancel: js.UndefOr[
         js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], `false` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * 关闭按钮
       * @description layer提供了两种风格的关闭按钮，可通过配置1和2来展示，如果不显示，则closeBtn: 0
       * @default 1
       */
-    var closeBtn: js.UndefOr[`0` | `1` | `2`] = js.native
+    var closeBtn: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * 内容
       * @default ''
       */
-    var content: js.UndefOr[String | HTMLElement | JQuery[HTMLElement] | (js.Tuple2[String, String])] = js.native
+    var content: js.UndefOr[String | HTMLElement | JQuery[HTMLElement] | (js.Tuple2[String, String])] = js.undefined
     
     /**
       * 层销毁后触发的回调
       * @description 无论是确认还是取消，只要层被销毁了，end都会执行，不携带任何参数。
       */
-    var end: js.UndefOr[js.Function0[Unit]] = js.native
+    var end: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * @deprecated v3.0
       * @see {@link #fixed}
       */
-    var fix: js.UndefOr[Boolean] = js.native
+    var fix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 固定
       * @default true
       * @description 鼠标滚动时，层是否固定在可视区域。
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 最大化后触发的回调
       * @param layero 当前层DOM
       */
-    var full: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var full: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
     
     /**
       * 图标
       * 信息框和加载层的私有参数
       * @description 信息框默认不显示图标。当你想显示图标时，默认皮肤可以传入0-6如果是加载层，可以传入0-2。
       */
-    var icon: js.UndefOr[Double] = js.native
+    var icon: js.UndefOr[Double] = js.undefined
     
     /**
       * 用于控制弹层唯一标识
       * @description 设置该值后，不管是什么类型的层，都只允许同时弹出一个。一般用于页面层和iframe层模式
       * @default ''
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * 关闭动画
       * @default true
       * @since 3.0.3
       */
-    var isOutAnim: js.UndefOr[Boolean] = js.native
+    var isOutAnim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 最大高度
       * @since 3.1.0
       * @description 只有当高度自适应时，maxHeight的设定才有效。
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * 最大宽度
       * @default 360
       * @description 只有当`area: 'auto'`时，maxWidth的设定才有效。
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * 最大最小化
       * @default false
       * @description 显示最大小化按钮。该参数值对type:1和type:2有效。
       */
-    var maxmin: js.UndefOr[Boolean] = js.native
+    var maxmin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 最小化后触发的回调
       * @param layero 当前层DOM
       * @description `return false` 不执行默认最小化。
       */
-    var min: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], `false` | Unit]] = js.native
+    var min: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], `false` | Unit]] = js.undefined
     
     /**
       * 触发拖动的元素
       * @default '.layui-layer-title'
       */
-    var move: js.UndefOr[Selector | `false` | JQuery[HTMLElement]] = js.native
+    var move: js.UndefOr[Selector | `false` | JQuery[HTMLElement]] = js.undefined
     
     /**
       * 拖动完毕后的回调方法
       * @param this 合并的选项
       * @param layero 当前层的DOM对象
       */
-    var moveEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var moveEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* layero */ JQuery[HTMLElement], Unit]] = js.undefined
     
     /**
       * 是否允许拖拽到窗口外
       * @default false
       */
-    var moveOut: js.UndefOr[Boolean] = js.native
+    var moveOut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated v3.0
       * @description 只提供默认的一种拖拽风格
       */
-    var moveType: js.UndefOr[Double] = js.native
+    var moveType: js.UndefOr[Double] = js.undefined
     
     /**
       * 坐标
@@ -523,71 +523,71 @@ object layer {
       * 'rt'    //快捷设置右上角
       * 'rb'    //快捷设置右下角
       */
-    var offset: js.UndefOr[String | (js.Tuple2[String, String])] = js.native
+    var offset: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     
     /**
       * 是否允许拉伸
       * @default true
       * @description 可以在弹层右下角拖动来拉伸尺寸。该参数对loading、tips层无效
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 监听窗口拉伸动作
       * @param layero 当前层的DOM对象
       */
-    var resizing: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var resizing: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
     
     /**
       * 还原后触发的回调
       * @param layero 当前层DOM
       */
-    var restore: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var restore: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], Unit]] = js.undefined
     
     /**
       * 是否允许浏览器出现滚动条
       * @default true
       */
-    var scrollbar: js.UndefOr[Boolean] = js.native
+    var scrollbar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 遮罩
       * @default 0.3
       * @example [0.8, '#393D49']    //透明度、颜色
       */
-    var shade: js.UndefOr[Double | `false` | (js.Tuple2[Double, String])] = js.native
+    var shade: js.UndefOr[Double | `false` | (js.Tuple2[Double, String])] = js.undefined
     
     /**
       * 是否点击遮罩关闭
       * @description 如果你的shade是存在的，那么你可以设定shadeClose来控制点击弹层外区域关闭。
       * @default false
       */
-    var shadeClose: js.UndefOr[Boolean] = js.native
+    var shadeClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated v3.0
       * @see {@link #anim}
       */
-    var shift: js.UndefOr[Double] = js.native
+    var shift: js.UndefOr[Double] = js.undefined
     
     /**
       * 样式类名
       * @default ''
       */
-    var skin: js.UndefOr[String] = js.native
+    var skin: js.UndefOr[String] = js.undefined
     
     /**
       * 层弹出后的成功回调方法
       * @param layero 当前层DOM
       * @param index 当前层索引
       */
-    var success: js.UndefOr[js.Function2[/* layero */ JQuery[HTMLElement], /* index */ Index, Unit]] = js.native
+    var success: js.UndefOr[js.Function2[/* layero */ JQuery[HTMLElement], /* index */ Index, Unit]] = js.undefined
     
     /**
       * 自动关闭所需毫秒
       * @default 0 //不会自动关闭
       */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
     
     /**
       * tips方向和颜色
@@ -600,14 +600,14 @@ object layer {
       * 4    //左
       * [1, '#c00']  //方向，颜色
       */
-    var tips: js.UndefOr[Double | (js.Tuple2[Double, String])] = js.native
+    var tips: js.UndefOr[Double | (js.Tuple2[Double, String])] = js.undefined
     
     /**
       * 是否允许多个tips
       * @default false
       * @description 允许多个意味着不会销毁之前的tips层。
       */
-    var tipsMore: js.UndefOr[Boolean] = js.native
+    var tipsMore: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 标题
@@ -617,13 +617,13 @@ object layer {
       * ['文本', 'font-size:18px;']
       * false    //不显示标题栏
       */
-    var title: js.UndefOr[String | `false` | (js.Tuple2[String, String])] = js.native
+    var title: js.UndefOr[String | `false` | (js.Tuple2[String, String])] = js.undefined
     
     /**
       * 基本层类型
       * @default 0
       */
-    var `type`: js.UndefOr[`3` | `2` | `4` | `0` | `1`] = js.native
+    var `type`: js.UndefOr[`3` | `2` | `4` | `0` | `1`] = js.undefined
     
     /**
       * 确定按钮回调方法
@@ -631,14 +631,14 @@ object layer {
       * @param layero 当前层DOM对象
       * @description 如果设定了yes回调，需进行手工关闭，`close(index)`
       */
-    var yes: js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var yes: js.UndefOr[js.Function2[/* index */ Index, /* layero */ JQuery[HTMLElement], Unit]] = js.undefined
     
     /**
       * 层叠顺序
       * @default 19891014
       * @description 一般用于解决和其它组件的层叠冲突。
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -938,23 +938,22 @@ object layer {
     }
   }
   
-  @js.native
   trait PhotosData extends StObject {
     
     /** 相册包含的图片 */
-    var data: js.Array[PhotosDataItem] = js.native
+    var data: js.Array[PhotosDataItem]
     
     /** 相册id */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * 初始显示的图片序号
       * @default 0
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** 相册标题 */
-    var title: String = js.native
+    var title: String
   }
   object PhotosData {
     
@@ -987,20 +986,19 @@ object layer {
     }
   }
   
-  @js.native
   trait PhotosDataItem extends StObject {
     
     /** 图片名 */
-    var alt: String = js.native
+    var alt: String
     
     /** 图片id */
-    var pid: js.UndefOr[Double] = js.native
+    var pid: js.UndefOr[Double] = js.undefined
     
     /** 原图地址 */
-    var src: String = js.native
+    var src: String
     
     /** 缩略图地址 */
-    var thumb: String = js.native
+    var thumb: String
   }
   object PhotosDataItem {
     
@@ -1030,17 +1028,18 @@ object layer {
     }
   }
   
-  @js.native
-  trait PhotosOptions extends Options {
+  trait PhotosOptions
+    extends StObject
+       with Options {
     
-    var photos: PhotosData | Selector = js.native
+    var photos: PhotosData | Selector
     
     /**
       * 切换图片时触发
       * @param pic
       * @param layero
       */
-    var tab: js.UndefOr[js.Function2[/* pic */ PhotosDataItem, /* layero */ JQuery[HTMLElement], Unit]] = js.native
+    var tab: js.UndefOr[js.Function2[/* pic */ PhotosDataItem, /* layero */ JQuery[HTMLElement], Unit]] = js.undefined
   }
   object PhotosOptions {
     
@@ -1064,25 +1063,26 @@ object layer {
     }
   }
   
-  @js.native
-  trait PromptOptions extends Options {
+  trait PromptOptions
+    extends StObject
+       with Options {
     
     /**
       * 输入框类型，支持0（文本）默认1（密码）2（多行文本）
       */
-    var formType: js.UndefOr[`0` | `1` | `2`] = js.native
+    var formType: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * 可输入文本的最大长度
       * @default 500
       */
-    var maxlength: js.UndefOr[Double] = js.native
+    var maxlength: js.UndefOr[Double] = js.undefined
     
     /**
       * 初始时的值
       * @default ''
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PromptOptions {
     
@@ -1117,12 +1117,11 @@ object layer {
   
   type Selector = String
   
-  @js.native
   trait TabItem extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var title: String = js.native
+    var title: String
   }
   object TabItem {
     
@@ -1143,17 +1142,18 @@ object layer {
     }
   }
   
-  @js.native
-  trait TabOptions extends Options {
+  trait TabOptions
+    extends StObject
+       with Options {
     
     /**
       * 监听选项卡的切换事件
       * @param this 传入的选项
       * @param tabIndex 选项卡索引
       */
-    var change: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* tabIndex */ Double, Unit]] = js.native
+    var change: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* tabIndex */ Double, Unit]] = js.undefined
     
-    var tab: js.Array[TabItem] = js.native
+    var tab: js.Array[TabItem]
   }
   object TabOptions {
     
@@ -1180,29 +1180,28 @@ object layer {
     }
   }
   
-  @js.native
   trait Types extends StObject {
     
     /** 信息框 */
-    var dialog: `0` = js.native
+    var dialog: `0`
     
     /** iframe层 */
-    var iframe: `2` = js.native
+    var iframe: `2`
     
     /** 加载层 */
-    var loading: `3` = js.native
+    var loading: `3`
     
     /** 页面层 */
-    var page: `1` = js.native
+    var page: `1`
     
     /** tips层 */
-    var tips: `4` = js.native
+    var tips: `4`
   }
   object Types {
     
     @scala.inline
-    def apply(dialog: `0`, iframe: `2`, loading: `3`, page: `1`, tips: `4`): Types = {
-      val __obj = js.Dynamic.literal(dialog = dialog.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
+    def apply(): Types = {
+      val __obj = js.Dynamic.literal(dialog = 0, iframe = 2, loading = 3, page = 1, tips = 4)
       __obj.asInstanceOf[Types]
     }
     

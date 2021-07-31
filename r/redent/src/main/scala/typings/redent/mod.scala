@@ -2,7 +2,6 @@ package typings.redent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,18 @@ object mod {
   //=> '\n foo\n   bar\n'
   ```
   */
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("redent", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
-  @JSImport("redent", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("redent", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: Double): String = js.native
-  @JSImport("redent", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: Double, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   type Options = typings.indentString.mod.Options
 }

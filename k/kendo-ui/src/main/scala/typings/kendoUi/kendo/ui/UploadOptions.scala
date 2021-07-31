@@ -2,57 +2,55 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadOptions extends StObject {
   
-  var async: js.UndefOr[UploadAsync] = js.native
+  var async: js.UndefOr[UploadAsync] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ UploadCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ UploadCancelEvent, Unit]] = js.undefined
   
-  var clear: js.UndefOr[js.Function1[/* e */ UploadClearEvent, Unit]] = js.native
+  var clear: js.UndefOr[js.Function1[/* e */ UploadClearEvent, Unit]] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* e */ UploadEvent, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* e */ UploadEvent, Unit]] = js.undefined
   
-  var directory: js.UndefOr[Boolean] = js.native
+  var directory: js.UndefOr[Boolean] = js.undefined
   
-  var directoryDrop: js.UndefOr[Boolean] = js.native
+  var directoryDrop: js.UndefOr[Boolean] = js.undefined
   
-  var dropZone: js.UndefOr[String] = js.native
+  var dropZone: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ UploadErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ UploadErrorEvent, Unit]] = js.undefined
   
-  var files: js.UndefOr[js.Array[UploadFile]] = js.native
+  var files: js.UndefOr[js.Array[UploadFile]] = js.undefined
   
-  var localization: js.UndefOr[UploadLocalization] = js.native
+  var localization: js.UndefOr[UploadLocalization] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pause: js.UndefOr[js.Function1[/* e */ UploadPauseEvent, Unit]] = js.native
+  var pause: js.UndefOr[js.Function1[/* e */ UploadPauseEvent, Unit]] = js.undefined
   
-  var progress: js.UndefOr[js.Function1[/* e */ UploadProgressEvent, Unit]] = js.native
+  var progress: js.UndefOr[js.Function1[/* e */ UploadProgressEvent, Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ UploadRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ UploadRemoveEvent, Unit]] = js.undefined
   
-  var resume: js.UndefOr[js.Function1[/* e */ UploadEvent, Unit]] = js.native
+  var resume: js.UndefOr[js.Function1[/* e */ UploadEvent, Unit]] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ UploadSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ UploadSelectEvent, Unit]] = js.undefined
   
-  var showFileList: js.UndefOr[Boolean] = js.native
+  var showFileList: js.UndefOr[Boolean] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* e */ UploadSuccessEvent, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* e */ UploadSuccessEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var upload: js.UndefOr[js.Function1[/* e */ UploadUploadEvent, Unit]] = js.native
+  var upload: js.UndefOr[js.Function1[/* e */ UploadUploadEvent, Unit]] = js.undefined
   
-  var validation: js.UndefOr[UploadValidation] = js.native
+  var validation: js.UndefOr[UploadValidation] = js.undefined
 }
 object UploadOptions {
   

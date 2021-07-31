@@ -2,24 +2,22 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options.
   */
-@js.native
 trait BlockCipherOption extends StObject {
   
   /**
     * The block mode to use. Default: CBC
     */
-  var mode: Mode_ = js.native
+  var mode: Mode_
   
   /**
     * The padding strategy to use. Default: Pkcs7
     */
-  var padding: Padding = js.native
+  var padding: Padding
 }
 object BlockCipherOption {
   

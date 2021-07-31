@@ -4,35 +4,33 @@ import typings.algoliaClientSearch.anon.Distance
 import typings.algoliaClientSearch.anon.FiltersScore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RankingInfo extends StObject {
   
-  val filters: Double = js.native
+  val filters: Double
   
-  val firstMatchedWord: Double = js.native
+  val firstMatchedWord: Double
   
-  val geoDistance: Double = js.native
+  val geoDistance: Double
   
-  val geoPrecision: js.UndefOr[Double] = js.native
+  val geoPrecision: js.UndefOr[Double] = js.undefined
   
-  val matchedGeoLocation: js.UndefOr[Distance] = js.native
+  val matchedGeoLocation: js.UndefOr[Distance] = js.undefined
   
-  val nbExactWords: Double = js.native
+  val nbExactWords: Double
   
-  val nbTypos: Double = js.native
+  val nbTypos: Double
   
-  val personalization: js.UndefOr[FiltersScore] = js.native
+  val personalization: js.UndefOr[FiltersScore] = js.undefined
   
-  val promoted: Boolean = js.native
+  val promoted: Boolean
   
-  val proximityDistance: js.UndefOr[Double] = js.native
+  val proximityDistance: js.UndefOr[Double] = js.undefined
   
-  val userScore: Double = js.native
+  val userScore: Double
   
-  val words: Double = js.native
+  val words: Double
 }
 object RankingInfo {
   

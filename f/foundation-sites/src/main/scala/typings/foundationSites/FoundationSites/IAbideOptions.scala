@@ -2,25 +2,23 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAbideOptions extends StObject {
   
-  var formErrorClass: js.UndefOr[String] = js.native
+  var formErrorClass: js.UndefOr[String] = js.undefined
   
-  var formErrorSelector: js.UndefOr[String] = js.native
+  var formErrorSelector: js.UndefOr[String] = js.undefined
   
-  var inputErrorClass: js.UndefOr[String] = js.native
+  var inputErrorClass: js.UndefOr[String] = js.undefined
   
-  var labelErrorClass: js.UndefOr[String] = js.native
+  var labelErrorClass: js.UndefOr[String] = js.undefined
   
-  var liveValidate: js.UndefOr[Boolean] = js.native
+  var liveValidate: js.UndefOr[Boolean] = js.undefined
   
-  var validateOn: js.UndefOr[String] = js.native
+  var validateOn: js.UndefOr[String] = js.undefined
   
-  var validators: js.UndefOr[js.Any] = js.native
+  var validators: js.UndefOr[js.Any] = js.undefined
 }
 object IAbideOptions {
   

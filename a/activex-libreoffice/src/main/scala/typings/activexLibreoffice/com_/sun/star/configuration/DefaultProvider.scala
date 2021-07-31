@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DefaultProvider
-  extends ConfigurationProvider
+  extends StObject
+     with ConfigurationProvider
      with XRefreshable
      with XFlushable
      with XLocalizable {

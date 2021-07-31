@@ -2,19 +2,17 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchType extends StObject {
   
-  var batchType: js.UndefOr[String] = js.native
+  var batchType: js.UndefOr[String] = js.undefined
   
-  var lastRangeBackward: js.UndefOr[Boolean] = js.native
+  var lastRangeBackward: js.UndefOr[Boolean] = js.undefined
   
-  var rootName: js.UndefOr[String] = js.native
+  var rootName: js.UndefOr[String] = js.undefined
   
-  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.native
+  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object BatchType {
   

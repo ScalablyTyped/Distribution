@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.3]
   */
 @js.native
-trait RangeView extends ClientObject {
+trait RangeView
+  extends StObject
+     with ClientObject {
   
   /**
     *
@@ -26,7 +27,7 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  val cellAddresses: js.Array[js.Array[_]] = js.native
+  val cellAddresses: js.Array[js.Array[js.Any]] = js.native
   
   /**
     *
@@ -46,7 +47,7 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulas: js.Array[js.Array[_]] = js.native
+  var formulas: js.Array[js.Array[js.Any]] = js.native
   
   /**
     *
@@ -54,7 +55,7 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasLocal: js.Array[js.Array[_]] = js.native
+  var formulasLocal: js.Array[js.Array[js.Any]] = js.native
   
   /**
     *
@@ -62,7 +63,7 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasR1C1: js.Array[js.Array[_]] = js.native
+  var formulasR1C1: js.Array[js.Array[js.Any]] = js.native
   
   /**
     * Gets the parent range associated with the current RangeView.
@@ -96,7 +97,7 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var numberFormat: js.Array[js.Array[_]] = js.native
+  var numberFormat: js.Array[js.Array[js.Any]] = js.native
   
   /**
     *
@@ -158,5 +159,5 @@ trait RangeView extends ClientObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var values: js.Array[js.Array[_]] = js.native
+  var values: js.Array[js.Array[js.Any]] = js.native
 }

@@ -2,13 +2,13 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateQuery extends Executable {
+trait CreateQuery
+  extends StObject
+     with Executable {
   
-  def ifNotExists(): Executable = js.native
+  def ifNotExists(): Executable
 }
 object CreateQuery {
   

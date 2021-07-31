@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CounterexampleCollection. */
-@js.native
 trait CounterexampleCollection extends StObject {
   
   /** An array of objects describing the examples marked as irrelevant input. */
-  var counterexamples: js.Array[Counterexample] = js.native
+  var counterexamples: js.Array[Counterexample]
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
 }
 object CounterexampleCollection {
   

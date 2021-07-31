@@ -2,41 +2,39 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyNotebookModel extends StObject {
   
-  var createdBy: js.UndefOr[NullableOption[String]] = js.native
+  var createdBy: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var createdByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  var createdTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var isDefault: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDefault: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var isShared: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isShared: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var lastModifiedBy: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedBy: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var lastModifiedByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var lastModifiedByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  var lastModifiedTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var links: js.UndefOr[NullableOption[NotebookLinks]] = js.native
+  var links: js.UndefOr[NullableOption[NotebookLinks]] = js.undefined
   
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var sectionGroupsUrl: js.UndefOr[NullableOption[String]] = js.native
+  var sectionGroupsUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var sectionsUrl: js.UndefOr[NullableOption[String]] = js.native
+  var sectionsUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var self: js.UndefOr[NullableOption[String]] = js.native
+  var self: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var userRole: js.UndefOr[NullableOption[OnenoteUserRole]] = js.native
+  var userRole: js.UndefOr[NullableOption[OnenoteUserRole]] = js.undefined
 }
 object CopyNotebookModel {
   

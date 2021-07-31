@@ -2,39 +2,37 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPollItemsRequest extends StObject {
   
   /**
     * Name of connector making this call. &lt;br /&gt;Format:
     * datasources/{source_id}/connectors/{ID}
     */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /**
     * Common debug options.
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
   /**
     * Maximum number of items to return. &lt;br /&gt;The maximum and the
     * default value is 1000
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * Queue name to fetch items from.  If unspecified, PollItems will fetch
     * from &#39;default&#39; queue. The maximum length is 100 characters.
     */
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
   /**
     * Limit the items polled to the ones with these statuses.
     */
-  var statusCodes: js.UndefOr[js.Array[String]] = js.native
+  var statusCodes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPollItemsRequest {
   

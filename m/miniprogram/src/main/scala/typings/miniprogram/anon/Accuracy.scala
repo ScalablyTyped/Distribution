@@ -2,20 +2,18 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accuracy extends StObject {
   
   /**
     * Accuracy, in m.
     */
-  var accuracy: String = js.native
+  var accuracy: String
   
-  var latitude: String = js.native
+  var latitude: String
   
-  var longitude: String = js.native
+  var longitude: String
 }
 object Accuracy {
   

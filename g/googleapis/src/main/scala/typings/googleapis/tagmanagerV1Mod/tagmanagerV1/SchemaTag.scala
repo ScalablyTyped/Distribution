@@ -2,85 +2,83 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Tag.
   */
-@js.native
 trait SchemaTag extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Blocking rule IDs. If any of the listed rules evaluate to true, the tag
     * will not fire.
     */
-  var blockingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var blockingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Blocking trigger IDs. If any of the listed triggers evaluate to true, the
     * tag will not fire.
     */
-  var blockingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var blockingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM Tag as computed at storage time. This value is
     * recomputed whenever the tag is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Firing rule IDs. A tag will fire when any of the listed rules are true
     * and all of its blockingRuleIds (if any specified) are false.
     */
-  var firingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var firingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Firing trigger IDs. A tag will fire when any of the listed triggers are
     * true and all of its blockingTriggerIds (if any specified) are false.
     */
-  var firingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var firingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set to true, this tag will only fire in the live environment (e.g. not
     * in preview or debug mode).
     */
-  var liveOnly: js.UndefOr[Boolean] = js.native
+  var liveOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Tag display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this tag in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * The tag&#39;s parameters.
     */
-  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * Parent folder id.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * True if the tag is paused.
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User defined numeric priority of the tag. Tags are fired asynchronously
@@ -88,42 +86,42 @@ trait SchemaTag extends StObject {
     * tag&#39;s priority can be a positive or negative value. The default value
     * is 0.
     */
-  var priority: js.UndefOr[SchemaParameter] = js.native
+  var priority: js.UndefOr[SchemaParameter] = js.undefined
   
   /**
     * The end timestamp in milliseconds to schedule a tag.
     */
-  var scheduleEndMs: js.UndefOr[String] = js.native
+  var scheduleEndMs: js.UndefOr[String] = js.undefined
   
   /**
     * The start timestamp in milliseconds to schedule a tag.
     */
-  var scheduleStartMs: js.UndefOr[String] = js.native
+  var scheduleStartMs: js.UndefOr[String] = js.undefined
   
   /**
     * The list of setup tags. Currently we only allow one.
     */
-  var setupTag: js.UndefOr[js.Array[SchemaSetupTag]] = js.native
+  var setupTag: js.UndefOr[js.Array[SchemaSetupTag]] = js.undefined
   
   /**
     * Option to fire this tag.
     */
-  var tagFiringOption: js.UndefOr[String] = js.native
+  var tagFiringOption: js.UndefOr[String] = js.undefined
   
   /**
     * The Tag ID uniquely identifies the GTM Tag.
     */
-  var tagId: js.UndefOr[String] = js.native
+  var tagId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of teardown tags. Currently we only allow one.
     */
-  var teardownTag: js.UndefOr[js.Array[SchemaTeardownTag]] = js.native
+  var teardownTag: js.UndefOr[js.Array[SchemaTeardownTag]] = js.undefined
   
   /**
     * GTM Tag Type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaTag {
   

@@ -2,57 +2,55 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlidingWindow extends StObject {
   
-  var _pinCount: js.Any = js.native
+  var _pinCount: js.Any
   
-  def absoluteIndex(): Double = js.native
+  def absoluteIndex(): Double
   
-  /* private */ def addMoreItemsToWindow(argument: js.Any): js.Any = js.native
+  /* private */ def addMoreItemsToWindow(argument: js.Any): js.Any
   
-  def currentItem(argument: js.Any): js.Any = js.native
+  def currentItem(argument: js.Any): js.Any
   
-  var currentRelativeItemIndex: Double = js.native
+  var currentRelativeItemIndex: Double
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
   
-  def disgardAllItemsFromCurrentIndexOnwards(): Unit = js.native
+  def disgardAllItemsFromCurrentIndexOnwards(): Unit
   
-  var firstPinnedAbsoluteIndex: js.Any = js.native
+  var firstPinnedAbsoluteIndex: js.Any
   
-  def getAndPinAbsoluteIndex(): Double = js.native
+  def getAndPinAbsoluteIndex(): Double
   
-  def isAtEndOfSource(): Boolean = js.native
+  def isAtEndOfSource(): Boolean
   
-  def moveToNextItem(): Unit = js.native
+  def moveToNextItem(): Unit
   
-  def peekItemN(n: Double): js.Any = js.native
+  def peekItemN(n: Double): js.Any
   
-  def pinCount(): Double = js.native
+  def pinCount(): Double
   
-  def releaseAndUnpinAbsoluteIndex(absoluteIndex: Double): Unit = js.native
+  def releaseAndUnpinAbsoluteIndex(absoluteIndex: Double): Unit
   
-  def rewindToPinnedIndex(absoluteIndex: Double): Unit = js.native
+  def rewindToPinnedIndex(absoluteIndex: Double): Unit
   
-  def setAbsoluteIndex(absoluteIndex: Double): Unit = js.native
+  def setAbsoluteIndex(absoluteIndex: Double): Unit
   
-  var source: js.Any = js.native
+  var source: js.Any
   
-  var sourceLength: js.Any = js.native
+  var sourceLength: js.Any
   
-  /* private */ def tryShiftOrGrowWindow(): js.Any = js.native
+  /* private */ def tryShiftOrGrowWindow(): js.Any
   
-  var window: js.Array[_] = js.native
+  var window: js.Array[js.Any]
   
-  /* private */ def windowAbsoluteEndIndex(): js.Any = js.native
+  /* private */ def windowAbsoluteEndIndex(): js.Any
   
-  var windowAbsoluteStartIndex: Double = js.native
+  var windowAbsoluteStartIndex: Double
   
-  var windowCount: Double = js.native
+  var windowCount: Double
 }
 object SlidingWindow {
   
@@ -77,7 +75,7 @@ object SlidingWindow {
     source: js.Any,
     sourceLength: js.Any,
     tryShiftOrGrowWindow: () => js.Any,
-    window: js.Array[_],
+    window: js.Array[js.Any],
     windowAbsoluteEndIndex: () => js.Any,
     windowAbsoluteStartIndex: Double,
     windowCount: Double
@@ -144,7 +142,7 @@ object SlidingWindow {
     def setTryShiftOrGrowWindow(value: () => js.Any): Self = StObject.set(x, "tryShiftOrGrowWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWindow(value: js.Array[_]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    def setWindow(value: js.Array[js.Any]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWindowAbsoluteEndIndex(value: () => js.Any): Self = StObject.set(x, "windowAbsoluteEndIndex", js.Any.fromFunction0(value))

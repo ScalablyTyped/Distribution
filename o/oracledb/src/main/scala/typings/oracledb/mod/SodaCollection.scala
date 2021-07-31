@@ -3,7 +3,6 @@ package typings.oracledb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -119,9 +118,9 @@ trait SodaCollection extends StObject {
     * @requires Oracle Client 18.5 or higher
     * @since 4.0
     */
-  def insertMany(documents: js.Array[SodaDocument | (Record[String, _])]): js.Promise[Unit] = js.native
+  def insertMany(documents: js.Array[SodaDocument | (Record[String, js.Any])]): js.Promise[Unit] = js.native
   def insertMany(
-    documents: js.Array[SodaDocument | (Record[String, _])],
+    documents: js.Array[SodaDocument | (Record[String, js.Any])],
     callback: js.Function1[/* error */ DBError, Unit]
   ): Unit = js.native
   
@@ -138,9 +137,9 @@ trait SodaCollection extends StObject {
     * @required Oracle Client 18.5 or higher
     * @since 4.0
     */
-  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, _])]): js.Promise[js.Array[SodaDocument]] = js.native
+  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, js.Any])]): js.Promise[js.Array[SodaDocument]] = js.native
   def insertManyAndGet(
-    documents: js.Array[SodaDocument | (Record[String, _])],
+    documents: js.Array[SodaDocument | (Record[String, js.Any])],
     callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit]
   ): Unit = js.native
   
@@ -162,8 +161,8 @@ trait SodaCollection extends StObject {
     */
   def insertOne(newDocument: SodaDocument): js.Promise[Unit] = js.native
   def insertOne(newDocument: SodaDocument, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
-  def insertOne(newDocument: Record[String, _]): js.Promise[Unit] = js.native
-  def insertOne(newDocument: Record[String, _], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  def insertOne(newDocument: Record[String, js.Any]): js.Promise[Unit] = js.native
+  def insertOne(newDocument: Record[String, js.Any], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   
   /**
     * Similar to sodaCollection.insertOne() but also returns the inserted document so system managed properties,
@@ -189,9 +188,9 @@ trait SodaCollection extends StObject {
     newDocument: SodaDocument,
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
-  def insertOneAndGet(newDocument: Record[String, _]): js.Promise[SodaDocument] = js.native
+  def insertOneAndGet(newDocument: Record[String, js.Any]): js.Promise[SodaDocument] = js.native
   def insertOneAndGet(
-    newDocument: Record[String, _],
+    newDocument: Record[String, js.Any],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
   

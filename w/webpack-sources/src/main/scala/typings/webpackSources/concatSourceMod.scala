@@ -6,7 +6,6 @@ import typings.webpackSources.libMod.SourceAndMapMixin
 import typings.webpackSources.libMod.SourceAndMapResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatSourceMod {

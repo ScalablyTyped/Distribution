@@ -3,7 +3,6 @@ package typings.inquirer
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenManagerMod {
@@ -13,7 +12,9 @@ object screenManagerMod {
     */
   @JSImport("inquirer/lib/utils/screen-manager", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ScreenManager {
+  class ^ protected ()
+    extends StObject
+       with ScreenManager {
     /**
       * Initializes a new instance of the `ScreenManager` class.
       *
@@ -21,13 +22,6 @@ object screenManagerMod {
       * An object for performing read from and write to the console.
       */
     def this(readLine: Interface) = this()
-  }
-  
-  /**
-    * Provides the functionality to manage the content of a console-screen.
-    */
-  @js.native
-  trait ScreenManager extends StObject {
     
     /**
       * Splits the `text` into multiple lines with the specified max `width`.
@@ -38,7 +32,8 @@ object screenManagerMod {
       * @param width
       * The max width of each line.
       */
-    /* protected */ def breakLines(text: String, width: Double): js.Array[String] = js.native
+    /* CompleteClass */
+    /* protected */ override def breakLines(text: String, width: Double): js.Array[String] = js.native
     
     /**
       * Cleans all lines expect the first `extraLines`.
@@ -46,16 +41,19 @@ object screenManagerMod {
       * @param extraLines
       * The number of lines at the begin to skip.
       */
-    def clean(extraLines: Double): Unit = js.native
+    /* CompleteClass */
+    override def clean(extraLines: Double): Unit = js.native
     
     /**
       * Releases all unmanaged resources.
       */
-    def done(): Unit = js.native
+    /* CompleteClass */
+    override def done(): Unit = js.native
     
     /**
       * Gets or sets the number of extra-lines below the prompt.
       */
+    /* CompleteClass */
     var extraLinesUnderPrompt: Double = js.native
     
     /**
@@ -67,11 +65,13 @@ object screenManagerMod {
       * @param width
       * The max width of each line.
       */
-    /* protected */ def forceLineReturn(text: String, width: Double): String = js.native
+    /* CompleteClass */
+    /* protected */ override def forceLineReturn(text: String, width: Double): String = js.native
     
     /**
       * Gets or sets the height of the screen.
       */
+    /* CompleteClass */
     var height: Double = js.native
     
     /**
@@ -80,12 +80,14 @@ object screenManagerMod {
       * @returns
       * The width of the screen.
       */
-    /* protected */ def normalizedCliWidth(): Double = js.native
+    /* CompleteClass */
+    /* protected */ override def normalizedCliWidth(): Double = js.native
     
     /**
       * Releases the cursor.
       */
-    def releaseCursor(): Unit = js.native
+    /* CompleteClass */
+    override def releaseCursor(): Unit = js.native
     
     /**
       * Renders content to the screen.
@@ -96,12 +98,94 @@ object screenManagerMod {
       * @param bottomContent
       * The content to render to the bottom of the screen.
       */
-    def render(content: String, bottomContent: String): Unit = js.native
+    /* CompleteClass */
+    override def render(content: String, bottomContent: String): Unit = js.native
     
     /**
       * Gets or sets an object for performing read from and write to the console.
       */
+    /* CompleteClass */
     var rl: Interface = js.native
+  }
+  
+  /**
+    * Provides the functionality to manage the content of a console-screen.
+    */
+  trait ScreenManager extends StObject {
+    
+    /**
+      * Splits the `text` into multiple lines with the specified max `width`.
+      *
+      * @param text
+      * The text to process.
+      *
+      * @param width
+      * The max width of each line.
+      */
+    /* protected */ def breakLines(text: String, width: Double): js.Array[String]
+    
+    /**
+      * Cleans all lines expect the first `extraLines`.
+      *
+      * @param extraLines
+      * The number of lines at the begin to skip.
+      */
+    def clean(extraLines: Double): Unit
+    
+    /**
+      * Releases all unmanaged resources.
+      */
+    def done(): Unit
+    
+    /**
+      * Gets or sets the number of extra-lines below the prompt.
+      */
+    var extraLinesUnderPrompt: Double
+    
+    /**
+      * Adds line-breaks to the specified `text` with the specified max `width`.
+      *
+      * @param text
+      * The text to process.
+      *
+      * @param width
+      * The max width of each line.
+      */
+    /* protected */ def forceLineReturn(text: String, width: Double): String
+    
+    /**
+      * Gets or sets the height of the screen.
+      */
+    var height: Double
+    
+    /**
+      * Identifies the width of the screen.
+      *
+      * @returns
+      * The width of the screen.
+      */
+    /* protected */ def normalizedCliWidth(): Double
+    
+    /**
+      * Releases the cursor.
+      */
+    def releaseCursor(): Unit
+    
+    /**
+      * Renders content to the screen.
+      *
+      * @param content
+      * The content to render.
+      *
+      * @param bottomContent
+      * The content to render to the bottom of the screen.
+      */
+    def render(content: String, bottomContent: String): Unit
+    
+    /**
+      * Gets or sets an object for performing read from and write to the console.
+      */
+    var rl: Interface
   }
   object ScreenManager {
     

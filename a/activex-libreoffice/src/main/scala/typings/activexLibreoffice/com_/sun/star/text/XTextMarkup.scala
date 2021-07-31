@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to markup text.
   * @since OOo 2.3
   */
-@js.native
 trait XTextMarkup extends StObject {
   
   /**
     * obtains a container to store additional user defined text markup information.
     * @returns a container to store additional user defined text markup information.
     */
-  val MarkupInfoContainer: XStringKeyMap = js.native
+  val MarkupInfoContainer: XStringKeyMap
   
   /**
     * submits a new markup range.
@@ -33,15 +31,15 @@ trait XTextMarkup extends StObject {
     nStart: Double,
     nLength: Double,
     xMarkupInfoContainer: XStringKeyMap
-  ): Unit = js.native
+  ): Unit
   
-  def commitTextRangeMarkup(nType: Double, aIdentifier: String, xRange: XTextRange, xMarkupInfoContainer: XStringKeyMap): Unit = js.native
+  def commitTextRangeMarkup(nType: Double, aIdentifier: String, xRange: XTextRange, xMarkupInfoContainer: XStringKeyMap): Unit
   
   /**
     * obtains a container to store additional user defined text markup information.
     * @returns a container to store additional user defined text markup information.
     */
-  def getMarkupInfoContainer(): XStringKeyMap = js.native
+  def getMarkupInfoContainer(): XStringKeyMap
 }
 object XTextMarkup {
   

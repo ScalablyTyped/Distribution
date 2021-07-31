@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityType extends StObject {
   
   /**
     * A scaling activity.
     */
-  var Activity: js.UndefOr[typings.awsSdk.autoscalingMod.Activity] = js.native
+  var Activity: js.UndefOr[typings.awsSdk.autoscalingMod.Activity] = js.undefined
 }
 object ActivityType {
   

@@ -2,27 +2,25 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Project extends StObject {
   
   /** Add a path to the project's list of root paths. */
-  def addPath(projectPath: String): Unit = js.native
+  def addPath(projectPath: String): Unit
   
   /**
     *  Determines whether the given path (real or symbolic) is inside the
     *  project's directory.
     */
-  def contains(pathToCheck: String): Boolean = js.native
+  def contains(pathToCheck: String): Boolean
   
   /** Get an Array of Directorys associated with this project. */
-  def getDirectories(): js.Array[Directory] = js.native
+  def getDirectories(): js.Array[Directory]
   
   // Managing Paths
   /** Get an Array of strings containing the paths of the project's directories. */
-  def getPaths(): js.Array[String] = js.native
+  def getPaths(): js.Array[String]
   
   // Accessing the Git Repository
   /**
@@ -30,56 +28,56 @@ trait Project extends StObject {
     *
     * This method will be removed in 2.0 because it does synchronous I/O.
     */
-  def getRepositories(): js.Array[GitRepository] = js.native
+  def getRepositories(): js.Array[GitRepository]
   
   /**
     *  Access a promise that resolves when the filesystem watcher associated with a
     *  project root directory is ready to begin receiving events.
     */
-  def getWatcherPromise(projectPath: String): js.Promise[PathWatcher] = js.native
+  def getWatcherPromise(projectPath: String): js.Promise[PathWatcher]
   
   /**
     *  Invoke the given callback with all current and future text buffers in
     *  the project.
     */
-  def observeBuffers(callback: js.Function1[/* buffer */ TextBuffer, Unit]): Disposable = js.native
+  def observeBuffers(callback: js.Function1[/* buffer */ TextBuffer, Unit]): Disposable
   
   /** Invoke the given callback with all current and future repositories in the project. */
-  def observeRepositories(callback: js.Function1[/* repository */ GitRepository, Unit]): Disposable = js.native
+  def observeRepositories(callback: js.Function1[/* repository */ GitRepository, Unit]): Disposable
   
   /** Invoke the given callback when a text buffer is added to the project. */
-  def onDidAddBuffer(callback: js.Function1[/* buffer */ TextBuffer, Unit]): Disposable = js.native
+  def onDidAddBuffer(callback: js.Function1[/* buffer */ TextBuffer, Unit]): Disposable
   
   /** Invoke the given callback when a repository is added to the project. */
-  def onDidAddRepository(callback: js.Function1[/* repository */ GitRepository, Unit]): Disposable = js.native
+  def onDidAddRepository(callback: js.Function1[/* repository */ GitRepository, Unit]): Disposable
   
   /** Invoke a callback when a filesystem change occurs within any open project path. */
-  def onDidChangeFiles(callback: js.Function1[/* events */ FilesystemChangeEvent, Unit]): Disposable = js.native
+  def onDidChangeFiles(callback: js.Function1[/* events */ FilesystemChangeEvent, Unit]): Disposable
   
   // Event Subscription
   /** Invoke the given callback when the project paths change. */
-  def onDidChangePaths(callback: js.Function1[/* projectPaths */ js.Array[String], Unit]): Disposable = js.native
+  def onDidChangePaths(callback: js.Function1[/* projectPaths */ js.Array[String], Unit]): Disposable
   
   /** Invoke a callback whenever the project's configuration has been replaced. */
-  def onDidReplace(callback: js.Function1[/* projectSpec */ js.UndefOr[ProjectSpecification | Null], Unit]): Disposable = js.native
+  def onDidReplace(callback: js.Function1[/* projectSpec */ js.UndefOr[ProjectSpecification | Null], Unit]): Disposable
   
   /** Get the relative path from the project directory to the given path. */
-  def relativize(fullPath: String): String = js.native
+  def relativize(fullPath: String): String
   
   /**
     *  Get the path to the project directory that contains the given path, and
     *  the relative path from that project directory to the given path.
     */
-  def relativizePath(fullPath: String): js.Tuple2[String | Null, String] = js.native
+  def relativizePath(fullPath: String): js.Tuple2[String | Null, String]
   
   /** Remove a path from the project's list of root paths. */
-  def removePath(projectPath: String): Unit = js.native
+  def removePath(projectPath: String): Unit
   
   /** Get the repository for a given directory asynchronously. */
-  def repositoryForDirectory(directory: Directory): js.Promise[GitRepository | Null] = js.native
+  def repositoryForDirectory(directory: Directory): js.Promise[GitRepository | Null]
   
   /** Set the paths of the project's directories. */
-  def setPaths(projectPaths: js.Array[String]): Unit = js.native
+  def setPaths(projectPaths: js.Array[String]): Unit
 }
 object Project {
   

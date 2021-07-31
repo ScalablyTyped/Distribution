@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
   /**
     * Output only. The time at which the document was created. This value increases monotonically when a document is deleted then recreated. It can also be compared to values from other
     * documents and the `read_time` of a query.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The document's fields. The map keys represent field names. A simple field name contains only characters `a` to `z`, `A` to `Z`, `0` to `9`, or `_`, and must not start with `0` to
@@ -26,17 +24,17 @@ trait Document extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The resource name of the document, for example `projects/{project_id}/databases/{database_id}/documents/{document_path}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which the document was last changed. This value is initially set to the `create_time` then increases monotonically with each change to the document. It can
     * also be compared to values from other documents and the `read_time` of a query.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Document {
   
@@ -59,7 +57,7 @@ object Document {
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline

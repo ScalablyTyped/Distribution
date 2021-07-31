@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,34 +20,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setAggregation(aggregationType.AVG)
   *       .setType(fieldType.CURRENCY_USD);
   */
-@js.native
 trait CommunityConnector extends StObject {
   
-  var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any = js.native
+  var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any
   
-  var AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any = js.native
+  var AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any
   
-  var BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any = js.native
+  var BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any
   
-  var FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any = js.native
+  var FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any
   
-  def getConfig(): Config = js.native
+  def getConfig(): Config
   
-  def getFields(): Fields = js.native
+  def getFields(): Fields
   
-  def newAuthTypeResponse(): GetAuthTypeResponse = js.native
+  def newAuthTypeResponse(): GetAuthTypeResponse
   
-  def newBigQueryConfig(): BigQueryConfig = js.native
+  def newBigQueryConfig(): BigQueryConfig
   
-  def newDebugError(): DebugError = js.native
+  def newDebugError(): DebugError
   
-  def newGetDataResponse(): GetDataResponse = js.native
+  def newGetDataResponse(): GetDataResponse
   
-  def newGetSchemaResponse(): GetSchemaResponse = js.native
+  def newGetSchemaResponse(): GetSchemaResponse
   
-  def newSetCredentialsResponse(): SetCredentialsResponse = js.native
+  def newSetCredentialsResponse(): SetCredentialsResponse
   
-  def newUserError(): UserError = js.native
+  def newUserError(): UserError
 }
 object CommunityConnector {
   

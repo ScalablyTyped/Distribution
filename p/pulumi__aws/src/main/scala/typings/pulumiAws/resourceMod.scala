@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceMod {
@@ -49,6 +48,10 @@ object resourceMod {
   /* static members */
   object Resource {
     
+    @JSImport("@pulumi/aws/apigateway/resource", "Resource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Resource resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,45 +61,39 @@ object resourceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/resource", "Resource.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Resource = js.native
-    @JSImport("@pulumi/aws/apigateway/resource", "Resource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Resource = js.native
-    @JSImport("@pulumi/aws/apigateway/resource", "Resource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceState): Resource = js.native
-    @JSImport("@pulumi/aws/apigateway/resource", "Resource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceState, opts: CustomResourceOptions): Resource = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceState): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceState, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
     
     /**
       * Returns true if the given object is an instance of Resource.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/resource", "Resource.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean]
   }
   
-  @js.native
   trait ResourceArgs extends StObject {
     
     /**
       * The ID of the parent API resource
       */
-    val parentId: Input[String] = js.native
+    val parentId: Input[String]
     
     /**
       * The last path segment of this API resource.
       */
-    val pathPart: Input[String] = js.native
+    val pathPart: Input[String]
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
   }
   object ResourceArgs {
     
@@ -120,28 +117,27 @@ object resourceMod {
     }
   }
   
-  @js.native
   trait ResourceState extends StObject {
     
     /**
       * The ID of the parent API resource
       */
-    val parentId: js.UndefOr[Input[String]] = js.native
+    val parentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The complete path for this API resource, including all parent paths.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last path segment of this API resource.
       */
-    val pathPart: js.UndefOr[Input[String]] = js.native
+    val pathPart: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
   }
   object ResourceState {
     

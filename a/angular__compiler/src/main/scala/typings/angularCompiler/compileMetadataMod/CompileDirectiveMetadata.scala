@@ -7,7 +7,6 @@ import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
@@ -62,9 +61,12 @@ class CompileDirectiveMetadata protected () extends StObject {
 /* static members */
 object CompileDirectiveMetadata {
   
-  @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata.create")
+  @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: ChangeDetection
-  ): CompileDirectiveMetadata = js.native
+  ): CompileDirectiveMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory.asInstanceOf[js.Any]).asInstanceOf[CompileDirectiveMetadata]
 }

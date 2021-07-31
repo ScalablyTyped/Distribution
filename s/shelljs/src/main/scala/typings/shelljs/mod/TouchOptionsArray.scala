@@ -2,15 +2,13 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchOptionsArray extends StObject {
   
-  var `-d`: js.UndefOr[String] = js.native
+  var `-d`: js.UndefOr[String] = js.undefined
   
-  var `-r`: js.UndefOr[String] = js.native
+  var `-r`: js.UndefOr[String] = js.undefined
 }
 object TouchOptionsArray {
   

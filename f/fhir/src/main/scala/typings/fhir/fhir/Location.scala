@@ -2,115 +2,115 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details and position information for a physical place
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Location extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Location
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'alias'.
     */
-  var _alias: js.UndefOr[js.Array[Element]] = js.native
+  var _alias: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Physical location
     */
-  var address: js.UndefOr[Address] = js.native
+  var address: js.UndefOr[Address] = js.undefined
   
   /**
     * A list of alternate names that the location is known as, or was known as in the past
     */
-  var alias: js.UndefOr[js.Array[String]] = js.native
+  var alias: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Additional details about the location that could be displayed as further information to identify the location beyond its name
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Technical endpoints providing access to services operated for the location
     */
-  var endpoint: js.UndefOr[js.Array[Reference]] = js.native
+  var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Unique code or number identifying the location to its users
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Organization responsible for provisioning and upkeep
     */
-  var managingOrganization: js.UndefOr[Reference] = js.native
+  var managingOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
     * instance | kind
     */
-  var mode: js.UndefOr[code] = js.native
+  var mode: js.UndefOr[code] = js.undefined
   
   /**
     * Name of the location as used by humans
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Operational status of the location (typically only for a bed/room)
     */
-  var operationalStatus: js.UndefOr[Coding] = js.native
+  var operationalStatus: js.UndefOr[Coding] = js.undefined
   
   /**
     * Another Location this one is physically part of
     */
-  var partOf: js.UndefOr[Reference] = js.native
+  var partOf: js.UndefOr[Reference] = js.undefined
   
   /**
     * Physical form of the location
     */
-  var physicalType: js.UndefOr[CodeableConcept] = js.native
+  var physicalType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The absolute geographic location
     */
-  var position: js.UndefOr[LocationPosition] = js.native
+  var position: js.UndefOr[LocationPosition] = js.undefined
   
   /**
     * active | suspended | inactive
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * Contact details of the location
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
   
   /**
     * Type of function performed
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object Location {
   

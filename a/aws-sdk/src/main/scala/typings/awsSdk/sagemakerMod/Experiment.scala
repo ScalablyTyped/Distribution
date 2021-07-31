@@ -2,52 +2,50 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Experiment extends StObject {
   
-  var CreatedBy: js.UndefOr[UserContext] = js.native
+  var CreatedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the experiment was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the experiment.
     */
-  var Description: js.UndefOr[ExperimentDescription] = js.native
+  var Description: js.UndefOr[ExperimentDescription] = js.undefined
   
   /**
     * The name of the experiment as displayed. If DisplayName isn't specified, ExperimentName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the experiment.
     */
-  var ExperimentArn: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentArn] = js.native
+  var ExperimentArn: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentArn] = js.undefined
   
   /**
     * The name of the experiment.
     */
-  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
-  var LastModifiedBy: js.UndefOr[UserContext] = js.native
+  var LastModifiedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the experiment was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
-  var Source: js.UndefOr[ExperimentSource] = js.native
+  var Source: js.UndefOr[ExperimentSource] = js.undefined
   
   /**
     * The list of tags that are associated with the experiment. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Experiment {
   

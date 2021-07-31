@@ -3,37 +3,36 @@ package typings.extjs.Ext
 import typings.extjs.Ext.tab.IBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITabPanel
-  extends typings.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typings.extjs.Ext.panel.IPanel {
   
   /** [Config Option] (String/Number/Ext.Component) */
-  var activeTab: js.UndefOr[js.Any] = js.native
+  var activeTab: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var deferredRender: js.UndefOr[Boolean] = js.native
+  var deferredRender: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns the item that is currently active inside this TabPanel
     * @returns Ext.Component The currently active item.
     */
-  var getActiveTab: js.UndefOr[js.Function0[IComponent]] = js.native
+  var getActiveTab: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Returns the Ext tab Bar currently used in this TabPanel
     * @returns Ext.tab.Bar The TabBar
     */
-  var getTabBar: js.UndefOr[js.Function0[IBar]] = js.native
+  var getTabBar: js.UndefOr[js.Function0[IBar]] = js.undefined
   
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.native
+  var itemCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxTabWidth: js.UndefOr[Double] = js.native
+  var maxTabWidth: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minTabWidth: js.UndefOr[Double] = js.native
+  var minTabWidth: js.UndefOr[Double] = js.undefined
   
   /** [Method] Makes sure we have a Tab for each item added to the TabPanel
     * @param item Object
@@ -42,25 +41,25 @@ trait ITabPanel
   @JSName("onAdd")
   var onAdd_ITabPanel: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var plain: js.UndefOr[Boolean] = js.native
+  var plain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var removePanelHeader: js.UndefOr[Boolean] = js.native
+  var removePanelHeader: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Makes the given card active
     * @param card String/Number/Ext.Component The card to make active. Either an ID, index or the component itself.
     * @returns Ext.Component The resulting active child Component. The call may have been vetoed, or otherwise modified by an event listener.
     */
-  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.native
+  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.undefined
   
   /** [Config Option] (Object) */
-  var tabBar: js.UndefOr[js.Any] = js.native
+  var tabBar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] ("top"/"bottom"/"left"/"right") */
-  var tabPosition: js.UndefOr[js.Any] = js.native
+  var tabPosition: js.UndefOr[js.Any] = js.undefined
 }
 object ITabPanel {
   

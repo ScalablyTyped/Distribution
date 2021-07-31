@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridGroupByGroupedColumn
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,24 +16,24 @@ trait IgGridGroupByGroupedColumn
     * [column](ui.iggrid#options:columns) object for the column that is grouped
     *
     */
-  var col: js.UndefOr[js.Any] = js.native
+  var col: js.UndefOr[js.Any] = js.undefined
   
   /**
     * sort order - ascending or descending
     *
     */
-  var dir: js.UndefOr[js.Any] = js.native
+  var dir: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Key of the column that's grouped
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Key of the columnLayout, if the grid is hierarchical
     *
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
 }
 object IgGridGroupByGroupedColumn {
   

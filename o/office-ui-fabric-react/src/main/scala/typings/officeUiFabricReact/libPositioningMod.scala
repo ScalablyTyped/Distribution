@@ -13,25 +13,28 @@ import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libPositioningMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/Positioning", "Position")
   @js.native
   object Position extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.Position with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.Position & Double] = js.native
     
-    /* 1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.Position.bottom with Double = js.native
+    /* 1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.Position.bottom & Double = js.native
     
-    /* 3 */ val end: typings.officeUiFabricReact.positioningTypesMod.Position.end with Double = js.native
+    /* 3 */ val end: typings.officeUiFabricReact.positioningTypesMod.Position.end & Double = js.native
     
-    /* 2 */ val start: typings.officeUiFabricReact.positioningTypesMod.Position.start with Double = js.native
+    /* 2 */ val start: typings.officeUiFabricReact.positioningTypesMod.Position.start & Double = js.native
     
-    /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top with Double = js.native
+    /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Positioning", "RectangleEdge")
@@ -39,227 +42,153 @@ object libPositioningMod {
   object RectangleEdge extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge & Double] = js.native
     
-    /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom with Double = js.native
+    /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom & Double = js.native
     
-    /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left with Double = js.native
+    /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left & Double = js.native
     
-    /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right with Double = js.native
+    /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right & Double = js.native
     
-    /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top with Double = js.native
+    /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top & Double = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
-  @js.native
-  def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
-  @js.native
-  def getBoundsFromTargetWindow(target: Element, targetWindow: IWindowWithSegments): IRectangle = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
-  @js.native
-  def getBoundsFromTargetWindow(target: MouseEvent, targetWindow: IWindowWithSegments): IRectangle = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
-  @js.native
-  def getBoundsFromTargetWindow(target: Point, targetWindow: IWindowWithSegments): IRectangle = js.native
+  @scala.inline
+  def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+  @scala.inline
+  def getBoundsFromTargetWindow(target: Element, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+  @scala.inline
+  def getBoundsFromTargetWindow(target: MouseEvent, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+  @scala.inline
+  def getBoundsFromTargetWindow(target: Point, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double, bounds: Unit, coverTarget: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
     target: Element,
     targetEdge: DirectionalHint,
     gapSpace: Double,
     bounds: IRectangle,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Unit, bounds: Unit, coverTarget: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Unit, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
-    target: MouseEvent,
+    target: Element,
     targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
+    gapSpace: Unit,
     bounds: IRectangle,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
     target: MouseEvent,
     targetEdge: DirectionalHint,
     gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
+    bounds: Unit,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
     target: MouseEvent,
     targetEdge: DirectionalHint,
     gapSpace: Double,
     bounds: IRectangle,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
-    target: Point,
+    target: MouseEvent,
     targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
+    gapSpace: Unit,
+    bounds: Unit,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Unit, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
-    target: Point,
+    target: MouseEvent,
     targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
+    gapSpace: Unit,
     bounds: IRectangle,
     coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double, bounds: Unit, coverTarget: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getMaxHeight(
     target: Point,
     targetEdge: DirectionalHint,
     gapSpace: Double,
     bounds: IRectangle,
     coverTarget: Boolean
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Unit, bounds: Unit, coverTarget: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Unit, bounds: IRectangle): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: Unit,
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "getOppositeEdge")
-  @js.native
-  def getOppositeEdge(edge: RectangleEdge): RectangleEdge = js.native
+  @scala.inline
+  def getOppositeEdge(edge: RectangleEdge): RectangleEdge = ^.asInstanceOf[js.Dynamic].applyDynamic("getOppositeEdge")(edge.asInstanceOf[js.Any]).asInstanceOf[RectangleEdge]
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCallout")
-  @js.native
-  def positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCallout")
-  @js.native
+  @scala.inline
+  def positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
+  @scala.inline
   def positionCallout(
     props: IPositionProps,
     hostElement: HTMLElement,
     elementToPosition: HTMLElement,
     previousPositions: ICalloutPositionedInfo
-  ): ICalloutPositionedInfo = js.native
+  ): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCard")
-  @js.native
-  def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCard")
-  @js.native
+  @scala.inline
+  def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
+  @scala.inline
   def positionCard(
     props: IPositionProps,
     hostElement: HTMLElement,
     elementToPosition: HTMLElement,
     previousPositions: ICalloutPositionedInfo
-  ): ICalloutPositionedInfo = js.native
+  ): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
   
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionElement")
-  @js.native
-  def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = js.native
-  @JSImport("office-ui-fabric-react/lib/Positioning", "positionElement")
-  @js.native
+  @scala.inline
+  def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = (^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[IPositionedData]
+  @scala.inline
   def positionElement(
     props: IPositionProps,
     hostElement: HTMLElement,
     elementToPosition: HTMLElement,
     previousPositions: IPositionedData
-  ): IPositionedData = js.native
+  ): IPositionedData = (^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[IPositionedData]
 }

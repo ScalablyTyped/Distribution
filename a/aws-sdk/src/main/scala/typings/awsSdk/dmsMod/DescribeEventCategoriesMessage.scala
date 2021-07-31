@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventCategoriesMessage extends StObject {
   
   /**
     * Filters applied to the event categories.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-task
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
 }
 object DescribeEventCategoriesMessage {
   

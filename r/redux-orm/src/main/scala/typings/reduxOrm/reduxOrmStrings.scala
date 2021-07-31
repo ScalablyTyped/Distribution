@@ -3,7 +3,6 @@ package typings.reduxOrm
 import typings.reduxOrm.querySetMod.QuerySet.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxOrmStrings {
@@ -74,7 +73,9 @@ object reduxOrmStrings {
   def arrName: arrName = "arrName".asInstanceOf[arrName]
   
   @js.native
-  sealed trait asc extends SortOrder
+  sealed trait asc
+    extends StObject
+       with SortOrder
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
@@ -89,7 +90,9 @@ object reduxOrmStrings {
   def createDatabase: createDatabase = "createDatabase".asInstanceOf[createDatabase]
   
   @js.native
-  sealed trait desc extends SortOrder
+  sealed trait desc
+    extends StObject
+       with SortOrder
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   

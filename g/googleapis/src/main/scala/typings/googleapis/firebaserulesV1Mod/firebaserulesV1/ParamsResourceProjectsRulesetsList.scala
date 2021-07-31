@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsRulesetsList extends StandardParameters {
+trait ParamsResourceProjectsRulesetsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * `Ruleset` filter. The list method supports filters with restrictions on
@@ -24,12 +24,12 @@ trait ParamsResourceProjectsRulesetsList extends StandardParameters {
     * specifications.  Example: `create_time > date("2017-01-01T00:00:00Z") AND
     * name=UUID-*`
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name for the project.  Format: `projects/{project_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Page size to load. Maximum of 100. Defaults to 10. Note: `page_size` is
@@ -37,12 +37,12 @@ trait ParamsResourceProjectsRulesetsList extends StandardParameters {
     * to the size of the output. To traverse all of the releases, caller should
     * iterate until the `page_token` is empty.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Next page token for loading the next batch of `Ruleset` instances.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsRulesetsList {
   

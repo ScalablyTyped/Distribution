@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please do **not** use anymore, this interface is superseded by {@link com.sun.star.sdb.XSQLErrorListener} .
   * @deprecated Deprecated
   */
-@js.native
-trait XErrorListener extends XEventListener {
+trait XErrorListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a database action performed by a database form raises an exception. */
-  def errorOccured(aEvent: ErrorEvent): Unit = js.native
+  def errorOccured(aEvent: ErrorEvent): Unit
 }
 object XErrorListener {
   

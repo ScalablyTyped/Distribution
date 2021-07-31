@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** The building identifier. */
-  var buildingId: js.UndefOr[String] = js.native
+  var buildingId: js.UndefOr[String] = js.undefined
   
   /** Whether the location is the current location. */
-  var current: js.UndefOr[Boolean] = js.native
+  var current: js.UndefOr[Boolean] = js.undefined
   
   /** The individual desk location. */
-  var deskCode: js.UndefOr[String] = js.native
+  var deskCode: js.UndefOr[String] = js.undefined
   
   /** The floor name or number. */
-  var floor: js.UndefOr[String] = js.native
+  var floor: js.UndefOr[String] = js.undefined
   
   /** The floor section in `floor_name`. */
-  var floorSection: js.UndefOr[String] = js.native
+  var floorSection: js.UndefOr[String] = js.undefined
   
   /** Metadata about the location. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The type of the location. The type can be custom or one of these predefined values: * `desk` * `grewUp` */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The free-form value of the location. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Location {
   

@@ -6,19 +6,17 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.right
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dispose extends StObject {
   
-  var align: js.UndefOr[right | left] = js.native
+  var align: js.UndefOr[right | left] = js.undefined
   
-  var dispose: js.UndefOr[Boolean] = js.native
+  var dispose: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var target: JQuery[HTMLElement] = js.native
+  var target: JQuery[HTMLElement]
 }
 object Dispose {
   

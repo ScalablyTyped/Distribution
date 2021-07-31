@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformDeleteTransform extends Generic {
+trait TransformDeleteTransform
+  extends StObject
+     with Generic {
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var transform_id: String = js.native
+  var transform_id: String
 }
 object TransformDeleteTransform {
   

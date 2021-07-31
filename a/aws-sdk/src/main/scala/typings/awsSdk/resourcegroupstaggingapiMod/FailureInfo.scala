@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureInfo extends StObject {
   
   /**
     * The code of the common error. Valid values include InternalServiceException, InvalidParameterException, and any valid error code returned by the AWS service that hosts the resource that you want to tag.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorCode] = js.undefined
   
   /**
     * The message of the common error.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorMessage] = js.undefined
   
   /**
     * The HTTP status code of the common error.
     */
-  var StatusCode: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.StatusCode] = js.native
+  var StatusCode: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.StatusCode] = js.undefined
 }
 object FailureInfo {
   

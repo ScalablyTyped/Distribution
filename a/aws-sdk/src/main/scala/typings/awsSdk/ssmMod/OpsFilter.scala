@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsFilter extends StObject {
   
   /**
     * The name of the filter.
     */
-  var Key: OpsFilterKey = js.native
+  var Key: OpsFilterKey
   
   /**
     * The type of filter.
     */
-  var Type: js.UndefOr[OpsFilterOperatorType] = js.native
+  var Type: js.UndefOr[OpsFilterOperatorType] = js.undefined
   
   /**
     * The filter value.
     */
-  var Values: OpsFilterValueList = js.native
+  var Values: OpsFilterValueList
 }
 object OpsFilter {
   

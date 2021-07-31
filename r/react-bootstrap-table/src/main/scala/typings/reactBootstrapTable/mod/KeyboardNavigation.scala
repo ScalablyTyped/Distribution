@@ -3,41 +3,39 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardNavigation extends StObject {
   
   /**
     * Set to false to disable click to navigate, usually user wants to click to select row instead of navigation.
     */
-  var clickToNav: js.UndefOr[Boolean] = js.native
+  var clickToNav: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return a style object which will be applied on the navigating cell.
     */
-  var customStyle: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.native
+  var customStyle: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.undefined
   
   /**
     * Return a style object which will be applied on the both of navigating and editing cell.
     */
-  var customStyleOnEditCell: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.native
+  var customStyleOnEditCell: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.undefined
   
   /**
     * When set to true, pressing ENTER will begin to edit the cell if cellEdit is also enabled.
     */
-  var enterToEdit: js.UndefOr[Boolean] = js.native
+  var enterToEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true, pressing ENTER will expand or collapse the current row.
     */
-  var enterToExpand: js.UndefOr[Boolean] = js.native
+  var enterToExpand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true, pressing ENTER will select or unselect the current row.
     */
-  var enterToSelect: js.UndefOr[Boolean] = js.native
+  var enterToSelect: js.UndefOr[Boolean] = js.undefined
 }
 object KeyboardNavigation {
   

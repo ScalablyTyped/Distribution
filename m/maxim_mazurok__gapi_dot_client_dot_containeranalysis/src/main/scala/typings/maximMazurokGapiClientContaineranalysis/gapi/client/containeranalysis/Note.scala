@@ -2,63 +2,61 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Note extends StObject {
   
   /** A note describing a package hosted by various package managers. */
   @JSName("package")
-  var _package: js.UndefOr[Package] = js.native
+  var _package: js.UndefOr[Package] = js.undefined
   
   /** A note describing an attestation role. */
-  var attestationAuthority: js.UndefOr[Authority] = js.native
+  var attestationAuthority: js.UndefOr[Authority] = js.undefined
   
   /** A note describing a base image. */
-  var baseImage: js.UndefOr[Basis] = js.native
+  var baseImage: js.UndefOr[Basis] = js.undefined
   
   /** A note describing build provenance for a verifiable build. */
-  var build: js.UndefOr[Build] = js.native
+  var build: js.UndefOr[Build] = js.undefined
   
   /** Output only. The time this note was created. This field can be used as a filter in list requests. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** A note describing something that can be deployed. */
-  var deployable: js.UndefOr[Deployable] = js.native
+  var deployable: js.UndefOr[Deployable] = js.undefined
   
   /** A note describing the initial analysis of a resource. */
-  var discovery: js.UndefOr[Discovery] = js.native
+  var discovery: js.UndefOr[Discovery] = js.undefined
   
   /** Time of expiration for this note. Empty if note does not expire. */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /** A note describing an in-toto link. */
-  var intoto: js.UndefOr[InToto] = js.native
+  var intoto: js.UndefOr[InToto] = js.undefined
   
   /** Output only. The type of analysis. This field can be used as a filter in list requests. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A detailed description of this note. */
-  var longDescription: js.UndefOr[String] = js.native
+  var longDescription: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of the note in the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Other notes related to this note. */
-  var relatedNoteNames: js.UndefOr[js.Array[String]] = js.native
+  var relatedNoteNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URLs associated with this note. */
-  var relatedUrl: js.UndefOr[js.Array[RelatedUrl]] = js.native
+  var relatedUrl: js.UndefOr[js.Array[RelatedUrl]] = js.undefined
   
   /** A one sentence description of this note. */
-  var shortDescription: js.UndefOr[String] = js.native
+  var shortDescription: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this note was last updated. This field can be used as a filter in list requests. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** A note describing a package vulnerability. */
-  var vulnerability: js.UndefOr[Vulnerability] = js.native
+  var vulnerability: js.UndefOr[Vulnerability] = js.undefined
 }
 object Note {
   

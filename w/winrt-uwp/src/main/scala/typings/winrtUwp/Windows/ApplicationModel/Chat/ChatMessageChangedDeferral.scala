@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a deferred asynchronous change request. */
-@js.native
 trait ChatMessageChangedDeferral extends StObject {
   
   /** Fires to indicate that the deferred change request has completed. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object ChatMessageChangedDeferral {
   

@@ -2,10 +2,8 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDeploymentsStopRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaDeploymentsStopRequest extends StObject {
     * request to modify a deployment. To get the latest fingerprint value,
     * perform a get() request on the deployment.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
 }
 object SchemaDeploymentsStopRequest {
   

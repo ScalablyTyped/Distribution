@@ -6,7 +6,6 @@ import typings.reactColor.anon.PartialClassesAlphaPicker
 import typings.reactColor.mod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alphaMod {
@@ -20,15 +19,16 @@ object alphaMod {
   trait AlphaPicker
     extends Component[AlphaPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait AlphaPickerProps extends ColorPickerProps[AlphaPicker] {
+  trait AlphaPickerProps
+    extends StObject
+       with ColorPickerProps[AlphaPicker] {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     @JSName("styles")
-    var styles_AlphaPickerProps: js.UndefOr[PartialClassesAlphaPicker] = js.native
+    var styles_AlphaPickerProps: js.UndefOr[PartialClassesAlphaPicker] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object AlphaPickerProps {
     
@@ -61,12 +61,11 @@ object alphaMod {
     }
   }
   
-  @js.native
   trait AlphaPickerStylesProps extends StObject {
     
-    var alpha: CSSProperties = js.native
+    var alpha: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
   }
   object AlphaPickerStylesProps {
     

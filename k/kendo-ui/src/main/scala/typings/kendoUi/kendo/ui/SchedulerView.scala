@@ -3,71 +3,69 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerView extends StObject {
   
-  var adaptiveSlotHeight: js.UndefOr[Boolean] = js.native
+  var adaptiveSlotHeight: js.UndefOr[Boolean] = js.undefined
   
-  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.native
+  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var allDaySlot: js.UndefOr[Boolean] = js.native
+  var allDaySlot: js.UndefOr[Boolean] = js.undefined
   
-  var allDaySlotTemplate: js.UndefOr[String | js.Function] = js.native
+  var allDaySlotTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var dayTemplate: js.UndefOr[String | js.Function] = js.native
+  var dayTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.native
+  var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.undefined
   
-  var endTime: js.UndefOr[Date] = js.native
+  var endTime: js.UndefOr[Date] = js.undefined
   
-  var eventHeight: js.UndefOr[Double | String] = js.native
+  var eventHeight: js.UndefOr[Double | String] = js.undefined
   
-  var eventSpacing: js.UndefOr[Double] = js.native
+  var eventSpacing: js.UndefOr[Double] = js.undefined
   
-  var eventTemplate: js.UndefOr[String | js.Function] = js.native
+  var eventTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var eventTimeTemplate: js.UndefOr[String | js.Function] = js.native
+  var eventTimeTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var eventsPerDay: js.UndefOr[Double] = js.native
+  var eventsPerDay: js.UndefOr[Double] = js.undefined
   
-  var group: js.UndefOr[SchedulerViewGroup] = js.native
+  var group: js.UndefOr[SchedulerViewGroup] = js.undefined
   
-  var majorTick: js.UndefOr[Double] = js.native
+  var majorTick: js.UndefOr[Double] = js.undefined
   
-  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.undefined
   
-  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var selectedDateFormat: js.UndefOr[String] = js.native
+  var selectedDateFormat: js.UndefOr[String] = js.undefined
   
-  var selectedShortDateFormat: js.UndefOr[String] = js.native
+  var selectedShortDateFormat: js.UndefOr[String] = js.undefined
   
-  var showWorkHours: js.UndefOr[Boolean] = js.native
+  var showWorkHours: js.UndefOr[Boolean] = js.undefined
   
-  var slotTemplate: js.UndefOr[String | js.Function] = js.native
+  var slotTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var startTime: js.UndefOr[Date] = js.native
+  var startTime: js.UndefOr[Date] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var workWeekEnd: js.UndefOr[Double] = js.native
+  var workWeekEnd: js.UndefOr[Double] = js.undefined
   
-  var workWeekStart: js.UndefOr[Double] = js.native
+  var workWeekStart: js.UndefOr[Double] = js.undefined
 }
 object SchedulerView {
   

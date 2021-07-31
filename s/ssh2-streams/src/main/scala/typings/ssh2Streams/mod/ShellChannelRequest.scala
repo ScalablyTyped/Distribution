@@ -3,23 +3,23 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.shell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShellChannelRequest extends ChannelRequest {
+trait ShellChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: shell = js.native
+  var request: shell
   
-  var wantReply: Boolean = js.native
+  var wantReply: Boolean
 }
 object ShellChannelRequest {
   
   @scala.inline
-  def apply(recipient: Double, request: shell, wantReply: Boolean): ShellChannelRequest = {
-    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+  def apply(recipient: Double, wantReply: Boolean): ShellChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "shell", wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellChannelRequest]
   }
   

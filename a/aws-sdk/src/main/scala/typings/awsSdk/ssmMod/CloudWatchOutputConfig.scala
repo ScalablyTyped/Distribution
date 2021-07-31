@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchOutputConfig extends StObject {
   
   /**
     * The name of the CloudWatch log group where you want to send command output. If you don't specify a group name, Systems Manager automatically creates a log group for you. The log group uses the following naming format: aws/ssm/SystemsManagerDocumentName.
     */
-  var CloudWatchLogGroupName: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchLogGroupName] = js.native
+  var CloudWatchLogGroupName: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchLogGroupName] = js.undefined
   
   /**
     * Enables Systems Manager to send command output to CloudWatch Logs.
     */
-  var CloudWatchOutputEnabled: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputEnabled] = js.native
+  var CloudWatchOutputEnabled: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputEnabled] = js.undefined
 }
 object CloudWatchOutputConfig {
   

@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends a text range by method to modify its position. */
-@js.native
 trait XMarkingAccess extends StObject {
   
-  def invalidateMarkings(nType: Double): Unit = js.native
+  def invalidateMarkings(nType: Double): Unit
 }
 object XMarkingAccess {
   

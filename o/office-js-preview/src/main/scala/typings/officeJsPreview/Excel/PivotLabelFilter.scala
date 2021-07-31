@@ -12,7 +12,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.LessThanOrEqualTo
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait PivotLabelFilter extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var comparator: js.UndefOr[String] = js.native
+  var comparator: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var condition: LabelFilterCondition | Unknown_ | Equals | BeginsWith | EndsWith | Contains | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between = js.native
+  var condition: LabelFilterCondition | Unknown_ | Equals | BeginsWith | EndsWith | Contains | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between
   
   /**
     *
@@ -48,7 +46,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var lowerBound: js.UndefOr[String] = js.native
+  var lowerBound: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var substring: js.UndefOr[String] = js.native
+  var substring: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait PivotLabelFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var upperBound: js.UndefOr[String] = js.native
+  var upperBound: js.UndefOr[String] = js.undefined
 }
 object PivotLabelFilter {
   

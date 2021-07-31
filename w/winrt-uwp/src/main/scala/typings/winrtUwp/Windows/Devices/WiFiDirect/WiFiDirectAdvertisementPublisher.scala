@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to publish Wi-Fi Direct advertisements. */
 @js.native
 trait WiFiDirectAdvertisementPublisher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statuschanged(
     `type`: statuschanged,
@@ -28,7 +27,7 @@ trait WiFiDirectAdvertisementPublisher extends StObject {
   
   /** Notification that the status of the WiFiDirectAdvertisementPublisher has changed. */
   def onstatuschanged(
-    ev: WiFiDirectAdvertisementPublisherStatusChangedEventArgs with WinRTEvent[WiFiDirectAdvertisementPublisher]
+    ev: WiFiDirectAdvertisementPublisherStatusChangedEventArgs & WinRTEvent[WiFiDirectAdvertisementPublisher]
   ): Unit = js.native
   /** Notification that the status of the WiFiDirectAdvertisementPublisher has changed. */
   @JSName("onstatuschanged")
@@ -37,7 +36,7 @@ trait WiFiDirectAdvertisementPublisher extends StObject {
     WiFiDirectAdvertisementPublisherStatusChangedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(
     `type`: statuschanged,

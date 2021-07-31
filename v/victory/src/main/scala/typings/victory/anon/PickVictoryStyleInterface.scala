@@ -3,14 +3,12 @@ package typings.victory.anon
 import typings.victory.mod.VictoryStyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<victory.victory.VictoryStyleInterface, 'parent'> */
-@js.native
 trait PickVictoryStyleInterface extends StObject {
   
-  var parent: js.UndefOr[VictoryStyleObject] = js.native
+  var parent: js.UndefOr[VictoryStyleObject] = js.undefined
 }
 object PickVictoryStyleInterface {
   

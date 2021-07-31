@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Debugger$Debuggees")
@@ -82,7 +81,7 @@ class ResourceDebuggerDebuggees protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDebuggeesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(params: ParamsResourceDebuggerDebuggeesList): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(
     params: ParamsResourceDebuggerDebuggeesList,

@@ -2,17 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputVenueMessageContent extends InputLocationMessageContent {
+trait InputVenueMessageContent
+  extends StObject
+     with InputLocationMessageContent {
   
-  var address: String = js.native
+  var address: String
   
-  var foursquare_id: js.UndefOr[String] = js.native
+  var foursquare_id: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object InputVenueMessageContent {
   

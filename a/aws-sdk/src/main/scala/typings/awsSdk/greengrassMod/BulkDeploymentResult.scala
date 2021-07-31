@@ -2,51 +2,49 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkDeploymentResult extends StObject {
   
   /**
     * The time, in ISO format, when the deployment was created.
     */
-  var CreatedAt: js.UndefOr[string] = js.native
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the group deployment.
     */
-  var DeploymentArn: js.UndefOr[string] = js.native
+  var DeploymentArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the group deployment.
     */
-  var DeploymentId: js.UndefOr[string] = js.native
+  var DeploymentId: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the group deployment: ''InProgress'', ''Building'', ''Success'', or ''Failure''.
     */
-  var DeploymentStatus: js.UndefOr[string] = js.native
+  var DeploymentStatus: js.UndefOr[string] = js.undefined
   
   /**
     * The type of the deployment.
     */
-  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.native
+  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.undefined
   
   /**
     * Details about the error.
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.undefined
   
   /**
     * The error message for a failed deployment
     */
-  var ErrorMessage: js.UndefOr[string] = js.native
+  var ErrorMessage: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the Greengrass group.
     */
-  var GroupArn: js.UndefOr[string] = js.native
+  var GroupArn: js.UndefOr[string] = js.undefined
 }
 object BulkDeploymentResult {
   

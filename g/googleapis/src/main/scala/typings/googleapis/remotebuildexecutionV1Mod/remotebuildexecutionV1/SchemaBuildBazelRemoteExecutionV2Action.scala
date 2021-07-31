@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,19 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reproducible so that serving a result from cache is always desirable and
   * correct.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2Action extends StObject {
   
   /**
     * The digest of the Command to run, which MUST be present in the
     * ContentAddressableStorage.
     */
-  var commandDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var commandDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * If true, then the `Action`&#39;s result cannot be cached.
     */
-  var doNotCache: js.UndefOr[Boolean] = js.native
+  var doNotCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The digest of the root Directory for the input files. The files in the
@@ -42,7 +40,7 @@ trait SchemaBuildBazelRemoteExecutionV2Action extends StObject {
     * subdirectory and content blob referred to, MUST be in the
     * ContentAddressableStorage.
     */
-  var inputRootDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var inputRootDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * A timeout after which the execution should be killed. If the timeout is
@@ -59,7 +57,7 @@ trait SchemaBuildBazelRemoteExecutionV2Action extends StObject {
     * lower timeout will result in a cache miss and the execution timeout will
     * fail immediately, rather than whenever the cache entry gets evicted.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2Action {
   

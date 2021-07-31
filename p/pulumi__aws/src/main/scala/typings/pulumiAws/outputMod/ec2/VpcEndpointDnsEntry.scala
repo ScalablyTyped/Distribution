@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcEndpointDnsEntry extends StObject {
   
   /**
     * The DNS name.
     */
-  var dnsName: String = js.native
+  var dnsName: String
   
   /**
     * The ID of the private hosted zone.
     */
-  var hostedZoneId: String = js.native
+  var hostedZoneId: String
 }
 object VpcEndpointDnsEntry {
   

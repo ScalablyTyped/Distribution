@@ -2,38 +2,36 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMaintenanceStartTimeOutput extends StObject {
   
   /**
     * The day of the month component of the maintenance start time represented as an ordinal number from 1 to 28, where 1 represents the first day of the month and 28 represents the last day of the month.
     */
-  var DayOfMonth: js.UndefOr[typings.awsSdk.storagegatewayMod.DayOfMonth] = js.native
+  var DayOfMonth: js.UndefOr[typings.awsSdk.storagegatewayMod.DayOfMonth] = js.undefined
   
   /**
     * An ordinal number between 0 and 6 that represents the day of the week, where 0 represents Sunday and 6 represents Saturday. The day of week is in the time zone of the gateway.
     */
-  var DayOfWeek: js.UndefOr[typings.awsSdk.storagegatewayMod.DayOfWeek] = js.native
+  var DayOfWeek: js.UndefOr[typings.awsSdk.storagegatewayMod.DayOfWeek] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The hour component of the maintenance start time represented as hh, where hh is the hour (0 to 23). The hour of the day is in the time zone of the gateway.
     */
-  var HourOfDay: js.UndefOr[typings.awsSdk.storagegatewayMod.HourOfDay] = js.native
+  var HourOfDay: js.UndefOr[typings.awsSdk.storagegatewayMod.HourOfDay] = js.undefined
   
   /**
     * The minute component of the maintenance start time represented as mm, where mm is the minute (0 to 59). The minute of the hour is in the time zone of the gateway.
     */
-  var MinuteOfHour: js.UndefOr[typings.awsSdk.storagegatewayMod.MinuteOfHour] = js.native
+  var MinuteOfHour: js.UndefOr[typings.awsSdk.storagegatewayMod.MinuteOfHour] = js.undefined
   
   /**
     * A value that indicates the time zone that is set for the gateway. The start time and day of week specified should be in the time zone of the gateway.
     */
-  var Timezone: js.UndefOr[GatewayTimezone] = js.native
+  var Timezone: js.UndefOr[GatewayTimezone] = js.undefined
 }
 object DescribeMaintenanceStartTimeOutput {
   

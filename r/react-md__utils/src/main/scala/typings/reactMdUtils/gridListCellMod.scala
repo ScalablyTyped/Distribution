@@ -6,17 +6,17 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridListCellMod {
   
   @JSImport("@react-md/utils/types/layout/GridListCell", "GridListCell")
   @js.native
-  val GridListCell: ForwardRefExoticComponent[GridListCellProps with RefAttributes[HTMLDivElement]] = js.native
+  val GridListCell: ForwardRefExoticComponent[GridListCellProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait GridListCellProps extends HTMLAttributes[HTMLDivElement] {
+  trait GridListCellProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the className should be cloned into the child instead of
@@ -24,13 +24,13 @@ object gridListCellMod {
       * ReactElement.
       */
     @JSName("clone")
-    var clone_FGridListCellProps: js.UndefOr[Boolean] = js.native
+    var clone_FGridListCellProps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the cell should be square by also setting the current cell size
       * to the `height`.
       */
-    var square: js.UndefOr[Boolean] = js.native
+    var square: js.UndefOr[Boolean] = js.undefined
   }
   object GridListCellProps {
     

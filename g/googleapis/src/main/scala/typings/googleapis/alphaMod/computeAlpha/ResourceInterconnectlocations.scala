@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Interconnectlocations")
@@ -32,7 +31,7 @@ class ResourceInterconnectlocations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaInterconnectLocation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectLocation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(params: ParamsResourceInterconnectlocationsGet): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(
     params: ParamsResourceInterconnectlocationsGet,
@@ -69,7 +68,7 @@ class ResourceInterconnectlocations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(callback: BodyResponseCallback[SchemaInterconnectLocationList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectLocationList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(params: ParamsResourceInterconnectlocationsList): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(
     params: ParamsResourceInterconnectlocationsList,
@@ -103,7 +102,7 @@ class ResourceInterconnectlocations protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInterconnectlocationsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInterconnectlocationsTestiampermissions,

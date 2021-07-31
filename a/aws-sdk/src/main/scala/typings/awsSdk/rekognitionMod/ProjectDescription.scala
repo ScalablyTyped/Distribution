@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectDescription extends StObject {
   
   /**
     * The Unix timestamp for the date and time that the project was created.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.native
+  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the project.
     */
-  var ProjectArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectArn] = js.native
+  var ProjectArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectArn] = js.undefined
   
   /**
     * The current status of the project.
     */
-  var Status: js.UndefOr[ProjectStatus] = js.native
+  var Status: js.UndefOr[ProjectStatus] = js.undefined
 }
 object ProjectDescription {
   

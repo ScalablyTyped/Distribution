@@ -2,22 +2,20 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonNode extends StObject {
   
   /**
     * Returns the node's parent node.
     */
-  var parent: js.UndefOr[JsonContainer] = js.native
+  var parent: js.UndefOr[JsonContainer] = js.undefined
   
   /**
     * Contains information to generate byte-to-byte equal node string as it
     * was in origin input.
     */
-  var raws: js.UndefOr[NodeRaws] = js.native
+  var raws: js.UndefOr[NodeRaws] = js.undefined
   
   /**
     * Returns the input source of the node. The property is used in source
@@ -28,13 +26,13 @@ trait JsonNode extends StObject {
     * case the new node's source will reference the original, cloned node)
     * or setting the source property manually.
     */
-  var source: js.UndefOr[NodeSource] = js.native
+  var source: js.UndefOr[NodeSource] = js.undefined
   
   /**
     * Returns a string representing the node's type. Possible values are
     * root, atrule, rule, decl or comment.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object JsonNode {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServerResponse extends StObject {
   
   /**
     * An array containing the properties of a server with the ServerID you specified.
     */
-  var Server: DescribedServer = js.native
+  var Server: DescribedServer
 }
 object DescribeServerResponse {
   

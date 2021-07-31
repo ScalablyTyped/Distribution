@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tiers list response.
   */
-@js.native
 trait SchemaTiersListResponse extends StObject {
   
   /**
     * List of tiers.
     */
-  var items: js.UndefOr[js.Array[SchemaTier]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTier]] = js.undefined
   
   /**
     * This is always sql#tiersList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaTiersListResponse {
   

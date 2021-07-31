@@ -2,19 +2,17 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxDataPage extends StObject {
   
-  var qArea: Rect = js.native
+  var qArea: Rect
   
-  var qIsReduced: Boolean = js.native
+  var qIsReduced: Boolean
   
-  var qMatrix: js.Array[NxCellRows] = js.native
+  var qMatrix: js.Array[NxCellRows]
   
-  var qTails: js.Array[NxGroupTail] = js.native
+  var qTails: js.Array[NxGroupTail]
 }
 object NxDataPage {
   

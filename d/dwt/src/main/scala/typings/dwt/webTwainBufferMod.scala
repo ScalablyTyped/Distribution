@@ -4,13 +4,14 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTImageType
 import typings.dwt.webTwainIOMod.WebTwainIO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainBufferMod {
   
   @js.native
-  trait WebTwainBuffer extends WebTwainIO {
+  trait WebTwainBuffer
+    extends StObject
+       with WebTwainIO {
     
     /**
       * Return the current deviation of the pixels in the image.
@@ -71,9 +72,9 @@ object webTwainBufferMod {
       * @param height the height of the image, it must be 150 or bigger
       */
     def GetImagePartURL(index: Double): String = js.native
-    def GetImagePartURL(index: Double, width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def GetImagePartURL(index: Double, width: Double): String = js.native
     def GetImagePartURL(index: Double, width: Double, height: Double): String = js.native
+    def GetImagePartURL(index: Double, width: Unit, height: Double): String = js.native
     
     /**
       * Calculate the size in bytes of the specified image assuming it's resized to the given dimensions.
@@ -100,9 +101,9 @@ object webTwainBufferMod {
       * @param height Specify the height.
       */
     def GetImageURL(index: Double): String = js.native
-    def GetImageURL(index: Double, width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def GetImageURL(index: Double, width: Double): String = js.native
     def GetImageURL(index: Double, width: Double, height: Double): String = js.native
+    def GetImageURL(index: Double, width: Unit, height: Double): String = js.native
     
     /**
       * Return the width (in pixels) of the specified image.
@@ -146,15 +147,15 @@ object webTwainBufferMod {
       * @argument errorString The error string.
       */
     def GetSkewAngle(index: Double): Double | Unit = js.native
-    def GetSkewAngle(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Double | Unit = js.native
     def GetSkewAngle(index: Double, successCallback: js.Function1[/* angle */ Double, Unit]): Double | Unit = js.native
     def GetSkewAngle(
       index: Double,
       successCallback: js.Function1[/* angle */ Double, Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Double | Unit = js.native
+    def GetSkewAngle(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Double | Unit = js.native
     
@@ -178,15 +179,6 @@ object webTwainBufferMod {
       top: Double,
       right: Double,
       bottom: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Double | Unit = js.native
-    def GetSkewAngleEx(
-      index: Double,
-      left: Double,
-      top: Double,
-      right: Double,
-      bottom: Double,
       successCallback: js.Function1[/* angle */ Double, Unit]
     ): Double | Unit = js.native
     def GetSkewAngleEx(
@@ -196,6 +188,15 @@ object webTwainBufferMod {
       right: Double,
       bottom: Double,
       successCallback: js.Function1[/* angle */ Double, Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Double | Unit = js.native
+    def GetSkewAngleEx(
+      index: Double,
+      left: Double,
+      top: Double,
+      right: Double,
+      bottom: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Double | Unit = js.native
     

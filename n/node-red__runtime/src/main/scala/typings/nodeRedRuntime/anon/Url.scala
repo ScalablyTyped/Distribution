@@ -2,17 +2,15 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Url extends StObject {
   
   /** Help Link Text */
-  var label: String = js.native
+  var label: String
   
   /** Help Link URL */
-  var url: String = js.native
+  var url: String
 }
 object Url {
   

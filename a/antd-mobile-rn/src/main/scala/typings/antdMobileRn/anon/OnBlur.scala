@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBlur extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onClear(): Unit = js.native
+  def onClear(): Unit
   
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
-  def onSubmit(): Unit = js.native
+  def onSubmit(): Unit
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var showCancelButton: Boolean = js.native
+  var showCancelButton: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object OnBlur {
   
@@ -43,7 +41,7 @@ object OnBlur {
     placeholder: String,
     prefixCls: String,
     showCancelButton: Boolean,
-    styles: StringDictionary[RegisteredStyle[_]]
+    styles: StringDictionary[RegisteredStyle[js.Any]]
   ): OnBlur = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], showCancelButton = showCancelButton.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBlur]
@@ -80,6 +78,6 @@ object OnBlur {
     def setShowCancelButton(value: Boolean): Self = StObject.set(x, "showCancelButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

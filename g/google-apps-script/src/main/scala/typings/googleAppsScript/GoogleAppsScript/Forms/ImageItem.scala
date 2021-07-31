@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,36 +18,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setHelpText('Google Logo') // The help text is the image description
   *         .setImage(img);
   */
-@js.native
 trait ImageItem extends StObject {
   
-  def duplicate(): ImageItem = js.native
+  def duplicate(): ImageItem
   
-  def getAlignment(): Alignment = js.native
+  def getAlignment(): Alignment
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getImage(): Blob = js.native
+  def getImage(): Blob
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def getWidth(): Integer = js.native
+  def getWidth(): Integer
   
-  def setAlignment(alignment: Alignment): ImageItem = js.native
+  def setAlignment(alignment: Alignment): ImageItem
   
-  def setHelpText(text: String): ImageItem = js.native
+  def setHelpText(text: String): ImageItem
   
-  def setImage(image: BlobSource): ImageItem = js.native
+  def setImage(image: BlobSource): ImageItem
   
-  def setTitle(title: String): ImageItem = js.native
+  def setTitle(title: String): ImageItem
   
-  def setWidth(width: Integer): ImageItem = js.native
+  def setWidth(width: Integer): ImageItem
 }
 object ImageItem {
   

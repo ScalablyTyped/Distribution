@@ -2,61 +2,59 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlColor extends StObject {
   
   /**
     * Returns the color of an object.
     */
-  def get(): String = js.native
+  def get(): String
   
   /**
     * opacity value
     */
-  def getA(): Double = js.native
+  def getA(): Double
   
   /**
     * blue numerical value
     */
-  def getB(): Double = js.native
+  def getB(): Double
   
   /**
     * green numerical value
     */
-  def getG(): Double = js.native
+  def getG(): Double
   
   /**
     * red numerical value
     */
-  def getR(): Double = js.native
+  def getR(): Double
   
   /**
     * Set the color of an object.
     */
-  def set(color: String): Unit = js.native
+  def set(color: String): Unit
   
   /**
     * opacity value
     */
-  def setA(a: Double): Unit = js.native
+  def setA(a: Double): Unit
   
   /**
     * blue numerical value
     */
-  def setB(b: Double): Unit = js.native
+  def setB(b: Double): Unit
   
   /**
     * green numerical value
     */
-  def setG(g: Double): Unit = js.native
+  def setG(g: Double): Unit
   
   /**
     * red numerical value
     */
-  def setR(r: Double): Unit = js.native
+  def setR(r: Double): Unit
 }
 object KmlColor {
   

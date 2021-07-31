@@ -9,19 +9,20 @@ import typings.globalize.globalizeStrings.narrow
 import typings.globalize.globalizeStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/unit", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/unit", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -36,10 +37,10 @@ object unitMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `unitMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
@@ -68,20 +69,19 @@ object unitMod extends Shortcut {
       def unitFormatter(unit: String, options: UnitFormatterOptions): js.Function1[/* value */ Double, String] = js.native
     }
     
-    @js.native
     trait UnitFormatterOptions extends StObject {
       
       /**
         * form: [String] eg. "long", "short" or "narrow".
         */
-      var form: js.UndefOr[long | short | narrow] = js.native
+      var form: js.UndefOr[long | short | narrow] = js.undefined
       
       /**
         * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
         */
       var numberFormatter: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
-          ] = js.native
+          ] = js.undefined
     }
     object UnitFormatterOptions {
       

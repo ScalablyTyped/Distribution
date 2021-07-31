@@ -3,14 +3,15 @@ package typings.quillDelta
 import typings.quillDelta.opMod.Op
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iteratorMod {
   
   @JSImport("quill-delta/dist/Iterator", JSImport.Default)
   @js.native
-  class default protected () extends Iterator {
+  class default protected ()
+    extends StObject
+       with Iterator {
     def this(ops: js.Array[Op]) = this()
   }
   

@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveOffCanvasPaths extends PluginConfig {
+trait PluginRemoveOffCanvasPaths
+  extends StObject
+     with PluginConfig {
   
-  var removeOffCanvasPaths: Boolean | js.Object = js.native
+  var removeOffCanvasPaths: Boolean | js.Object
 }
 object PluginRemoveOffCanvasPaths {
   

@@ -12,7 +12,6 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object executionContextMod {
@@ -21,60 +20,52 @@ object executionContextMod {
   @js.native
   class ExecutionContext () extends StObject {
     def this(weightMap: NamedTensorsMap) = this()
-    def this(weightMap: js.UndefOr[scala.Nothing], tensorArrayMap: TensorArrayMap) = this()
+    def this(weightMap: Unit, tensorArrayMap: TensorArrayMap) = this()
     def this(weightMap: NamedTensorsMap, tensorArrayMap: TensorArrayMap) = this()
-    def this(
-      weightMap: js.UndefOr[scala.Nothing],
-      tensorArrayMap: js.UndefOr[scala.Nothing],
-      tensorListMap: TensorListMap
-    ) = this()
-    def this(weightMap: js.UndefOr[scala.Nothing], tensorArrayMap: TensorArrayMap, tensorListMap: TensorListMap) = this()
-    def this(
-      weightMap: NamedTensorsMap,
-      tensorArrayMap: js.UndefOr[scala.Nothing],
-      tensorListMap: TensorListMap
-    ) = this()
+    def this(weightMap: Unit, tensorArrayMap: Unit, tensorListMap: TensorListMap) = this()
+    def this(weightMap: Unit, tensorArrayMap: TensorArrayMap, tensorListMap: TensorListMap) = this()
+    def this(weightMap: NamedTensorsMap, tensorArrayMap: Unit, tensorListMap: TensorListMap) = this()
     def this(weightMap: NamedTensorsMap, tensorArrayMap: TensorArrayMap, tensorListMap: TensorListMap) = this()
     def this(
-      weightMap: js.UndefOr[scala.Nothing],
-      tensorArrayMap: js.UndefOr[scala.Nothing],
-      tensorListMap: js.UndefOr[scala.Nothing],
+      weightMap: Unit,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     def this(
-      weightMap: js.UndefOr[scala.Nothing],
-      tensorArrayMap: js.UndefOr[scala.Nothing],
+      weightMap: Unit,
+      tensorArrayMap: Unit,
       tensorListMap: TensorListMap,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     def this(
-      weightMap: js.UndefOr[scala.Nothing],
+      weightMap: Unit,
       tensorArrayMap: TensorArrayMap,
-      tensorListMap: js.UndefOr[scala.Nothing],
+      tensorListMap: Unit,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     def this(
-      weightMap: js.UndefOr[scala.Nothing],
+      weightMap: Unit,
       tensorArrayMap: TensorArrayMap,
-      tensorListMap: TensorListMap,
-      functionMap: StringDictionary[FunctionExecutor]
-    ) = this()
-    def this(
-      weightMap: NamedTensorsMap,
-      tensorArrayMap: js.UndefOr[scala.Nothing],
-      tensorListMap: js.UndefOr[scala.Nothing],
-      functionMap: StringDictionary[FunctionExecutor]
-    ) = this()
-    def this(
-      weightMap: NamedTensorsMap,
-      tensorArrayMap: js.UndefOr[scala.Nothing],
       tensorListMap: TensorListMap,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     def this(
       weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
+      functionMap: StringDictionary[FunctionExecutor]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: TensorListMap,
+      functionMap: StringDictionary[FunctionExecutor]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
       tensorArrayMap: TensorArrayMap,
-      tensorListMap: js.UndefOr[scala.Nothing],
+      tensorListMap: Unit,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     def this(
@@ -155,14 +146,13 @@ object executionContextMod {
     val weightMap: NamedTensorsMap = js.native
   }
   
-  @js.native
   trait ExecutionContextInfo extends StObject {
     
-    var frameName: String = js.native
+    var frameName: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var iterationId: Double = js.native
+    var iterationId: Double
   }
   object ExecutionContextInfo {
     

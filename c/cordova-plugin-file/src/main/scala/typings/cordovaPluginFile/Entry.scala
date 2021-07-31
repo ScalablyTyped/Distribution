@@ -2,7 +2,6 @@ package typings.cordovaPluginFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,39 +27,35 @@ trait Entry extends StObject {
     * @param errorCallback A callback that is called when errors happen.
     */
   def copyTo(parent: DirectoryEntry): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* entry */ this.type, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* entry */ this.type, Unit],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
   def copyTo(parent: DirectoryEntry, newName: String): Unit = js.native
   def copyTo(
     parent: DirectoryEntry,
     newName: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: String,
     successCallback: js.Function1[/* entry */ this.type, Unit]
   ): Unit = js.native
   def copyTo(
     parent: DirectoryEntry,
     newName: String,
     successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: String,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def copyTo(parent: DirectoryEntry, newName: Unit, successCallback: js.Function1[/* entry */ this.type, Unit]): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: Unit,
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: Unit,
+    successCallback: Unit,
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
   
@@ -112,39 +107,35 @@ trait Entry extends StObject {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def moveTo(parent: DirectoryEntry): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* entry */ this.type, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* entry */ this.type, Unit],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
   def moveTo(parent: DirectoryEntry, newName: String): Unit = js.native
   def moveTo(
     parent: DirectoryEntry,
     newName: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ FileError, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: String,
     successCallback: js.Function1[/* entry */ this.type, Unit]
   ): Unit = js.native
   def moveTo(
     parent: DirectoryEntry,
     newName: String,
     successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: String,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def moveTo(parent: DirectoryEntry, newName: Unit, successCallback: js.Function1[/* entry */ this.type, Unit]): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: Unit,
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: Unit,
+    successCallback: Unit,
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
   

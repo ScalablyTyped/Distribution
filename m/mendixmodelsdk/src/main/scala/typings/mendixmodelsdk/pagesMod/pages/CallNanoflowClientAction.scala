@@ -15,7 +15,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,9 +68,8 @@ object CallNanoflowClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.create")
-  @js.native
-  def create(model: IModel): CallNanoflowClientAction = js.native
+  @scala.inline
+  def create(model: IModel): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -82,9 +80,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -95,9 +92,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -108,9 +104,8 @@ object CallNanoflowClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -121,9 +116,8 @@ object CallNanoflowClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -134,9 +128,8 @@ object CallNanoflowClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -147,9 +140,8 @@ object CallNanoflowClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -160,9 +152,8 @@ object CallNanoflowClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -173,9 +164,8 @@ object CallNanoflowClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -186,9 +176,8 @@ object CallNanoflowClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -199,9 +188,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -212,9 +200,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -225,9 +212,8 @@ object CallNanoflowClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -238,9 +224,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -251,9 +236,8 @@ object CallNanoflowClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -264,9 +248,8 @@ object CallNanoflowClientAction {
     *  7.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -277,9 +260,8 @@ object CallNanoflowClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /**
     * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
@@ -290,9 +272,8 @@ object CallNanoflowClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): CallNanoflowClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): CallNanoflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallNanoflowClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallNanoflowClientAction.structureTypeName")

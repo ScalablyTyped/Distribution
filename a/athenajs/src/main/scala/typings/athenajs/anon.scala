@@ -33,81 +33,64 @@ import typings.athenajs.mod.EffectOptions
 import typings.athenajs.mod.JSObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait `0` extends Instantiable0[Effect]
+  trait `0`
+    extends StObject
+       with Instantiable0[Effect]
   
-  @js.native
   trait `32` extends StObject {
     
-    var `32`: `1` = js.native
+    var `32`: `1`
     
-    var `37`: `14` = js.native
+    var `37`: `14`
     
-    var `38`: `12` = js.native
+    var `38`: `12`
     
-    var `39`: `15` = js.native
+    var `39`: `15`
     
     // Directional (discrete) pad
-    var `40`: `13` = js.native
+    var `40`: `13`
     
     // Face (main) buttons
-    var FACE_0: `1` = js.native
+    var FACE_0: `1`
     
-    var FACE_3: `2` = js.native
+    var FACE_3: `2`
     
-    var FACE_4: `3` = js.native
+    var FACE_4: `3`
     
-    var LEFT_ANALOGUE_STICK: `10` = js.native
+    var LEFT_ANALOGUE_STICK: `10`
     
-    var LEFT_SHOULDER: `4` = js.native
+    var LEFT_SHOULDER: `4`
     
-    var LEFT_SHOULDER_BOTTOM: `6` = js.native
+    var LEFT_SHOULDER_BOTTOM: `6`
     
     // Analogue sticks (if depressible)
-    var RIGHT_ANALOGUE_STICK: `11` = js.native
+    var RIGHT_ANALOGUE_STICK: `11`
     
     // Top shoulder buttons
-    var RIGHT_SHOULDER: `5` = js.native
+    var RIGHT_SHOULDER: `5`
     
     // Bottom shoulder buttons
-    var RIGHT_SHOULDER_BOTTOM: `7` = js.native
+    var RIGHT_SHOULDER_BOTTOM: `7`
     
-    var SELECT: `8` = js.native
+    var SELECT: `8`
     
-    var START: `9` = js.native
+    var START: `9`
   }
   object `32` {
     
     @scala.inline
-    def apply(
-      `32`: `1`,
-      `37`: `14`,
-      `38`: `12`,
-      `39`: `15`,
-      `40`: `13`,
-      FACE_0: `1`,
-      FACE_3: `2`,
-      FACE_4: `3`,
-      LEFT_ANALOGUE_STICK: `10`,
-      LEFT_SHOULDER: `4`,
-      LEFT_SHOULDER_BOTTOM: `6`,
-      RIGHT_ANALOGUE_STICK: `11`,
-      RIGHT_SHOULDER: `5`,
-      RIGHT_SHOULDER_BOTTOM: `7`,
-      SELECT: `8`,
-      START: `9`
-    ): `32` = {
-      val __obj = js.Dynamic.literal(FACE_0 = FACE_0.asInstanceOf[js.Any], FACE_3 = FACE_3.asInstanceOf[js.Any], FACE_4 = FACE_4.asInstanceOf[js.Any], LEFT_ANALOGUE_STICK = LEFT_ANALOGUE_STICK.asInstanceOf[js.Any], LEFT_SHOULDER = LEFT_SHOULDER.asInstanceOf[js.Any], LEFT_SHOULDER_BOTTOM = LEFT_SHOULDER_BOTTOM.asInstanceOf[js.Any], RIGHT_ANALOGUE_STICK = RIGHT_ANALOGUE_STICK.asInstanceOf[js.Any], RIGHT_SHOULDER = RIGHT_SHOULDER.asInstanceOf[js.Any], RIGHT_SHOULDER_BOTTOM = RIGHT_SHOULDER_BOTTOM.asInstanceOf[js.Any], SELECT = SELECT.asInstanceOf[js.Any], START = START.asInstanceOf[js.Any])
-      __obj.updateDynamic("32")(`32`.asInstanceOf[js.Any])
-      __obj.updateDynamic("37")(`37`.asInstanceOf[js.Any])
-      __obj.updateDynamic("38")(`38`.asInstanceOf[js.Any])
-      __obj.updateDynamic("39")(`39`.asInstanceOf[js.Any])
-      __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
+    def apply(): `32` = {
+      val __obj = js.Dynamic.literal(FACE_0 = 1, FACE_3 = 2, FACE_4 = 3, LEFT_ANALOGUE_STICK = 10, LEFT_SHOULDER = 4, LEFT_SHOULDER_BOTTOM = 6, RIGHT_ANALOGUE_STICK = 11, RIGHT_SHOULDER = 5, RIGHT_SHOULDER_BOTTOM = 7, SELECT = 8, START = 9)
+      __obj.updateDynamic("32")(1)
+      __obj.updateDynamic("37")(14)
+      __obj.updateDynamic("38")(12)
+      __obj.updateDynamic("39")(15)
+      __obj.updateDynamic("40")(13)
       __obj.asInstanceOf[`32`]
     }
     
@@ -164,20 +147,19 @@ object anon {
     }
   }
   
-  @js.native
   trait AIR extends StObject {
     
-    var AIR: `1` = js.native
+    var AIR: `1`
     
-    var LADDER: `3` = js.native
+    var LADDER: `3`
     
-    var WALL: `2` = js.native
+    var WALL: `2`
   }
   object AIR {
     
     @scala.inline
-    def apply(AIR: `1`, LADDER: `3`, WALL: `2`): AIR = {
-      val __obj = js.Dynamic.literal(AIR = AIR.asInstanceOf[js.Any], LADDER = LADDER.asInstanceOf[js.Any], WALL = WALL.asInstanceOf[js.Any])
+    def apply(): AIR = {
+      val __obj = js.Dynamic.literal(AIR = 1, LADDER = 3, WALL = 2)
       __obj.asInstanceOf[AIR]
     }
     
@@ -195,39 +177,29 @@ object anon {
     }
   }
   
-  @js.native
   trait CTRL extends StObject {
     
-    var CTRL: `17` = js.native
+    var CTRL: `17`
     
-    var DOWN: `40` = js.native
+    var DOWN: `40`
     
-    var ENTER: `13` = js.native
+    var ENTER: `13`
     
-    var ESCAPE: `27` = js.native
+    var ESCAPE: `27`
     
-    var LEFT: `37` = js.native
+    var LEFT: `37`
     
-    var RIGHT: `39` = js.native
+    var RIGHT: `39`
     
-    var SPACE: typings.athenajs.athenajsNumbers.`32` = js.native
+    var SPACE: typings.athenajs.athenajsNumbers.`32`
     
-    var UP: `38` = js.native
+    var UP: `38`
   }
   object CTRL {
     
     @scala.inline
-    def apply(
-      CTRL: `17`,
-      DOWN: `40`,
-      ENTER: `13`,
-      ESCAPE: `27`,
-      LEFT: `37`,
-      RIGHT: `39`,
-      SPACE: typings.athenajs.athenajsNumbers.`32`,
-      UP: `38`
-    ): CTRL = {
-      val __obj = js.Dynamic.literal(CTRL = CTRL.asInstanceOf[js.Any], DOWN = DOWN.asInstanceOf[js.Any], ENTER = ENTER.asInstanceOf[js.Any], ESCAPE = ESCAPE.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], SPACE = SPACE.asInstanceOf[js.Any], UP = UP.asInstanceOf[js.Any])
+    def apply(): CTRL = {
+      val __obj = js.Dynamic.literal(CTRL = 17, DOWN = 40, ENTER = 13, ESCAPE = 27, LEFT = 37, RIGHT = 39, SPACE = 32, UP = 38)
       __obj.asInstanceOf[CTRL]
     }
     
@@ -260,20 +232,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var hitBox: js.UndefOr[X] = js.native
+    var hitBox: js.UndefOr[X] = js.undefined
     
-    var offsetX: Double = js.native
+    var offsetX: Double
     
-    var offsetY: Double = js.native
+    var offsetY: Double
     
-    var plane: js.UndefOr[Double] = js.native
+    var plane: js.UndefOr[Double] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -314,18 +285,20 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* sprite */ Drawable, Behavior]
+    extends StObject
+       with Instantiable1[/* sprite */ Drawable, Behavior]
        with Instantiable2[/* sprite */ Drawable, /* options */ JSObject, Behavior]
   
   @js.native
-  trait InstantiableEffect extends Instantiable2[/* options */ EffectOptions, /* display */ Display, Effect]
+  trait InstantiableEffect
+    extends StObject
+       with Instantiable2[/* options */ EffectOptions, /* display */ Display, Effect]
   
-  @js.native
   trait Loop extends StObject {
     
-    var loop: js.UndefOr[`false`] = js.native
+    var loop: js.UndefOr[`false`] = js.undefined
     
-    var pan: js.UndefOr[Boolean] = js.native
+    var pan: js.UndefOr[Boolean] = js.undefined
   }
   object Loop {
     
@@ -352,16 +325,15 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object X {
     

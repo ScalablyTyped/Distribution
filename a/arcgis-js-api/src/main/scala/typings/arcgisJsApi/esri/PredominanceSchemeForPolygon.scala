@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredominanceSchemeForPolygon
-  extends Object
+  extends StObject
+     with Object
      with PredominanceScheme {
   
   /**
@@ -17,49 +16,49 @@ trait PredominanceSchemeForPolygon
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the fill symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the fill symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var outline: PredominanceSchemeForPolygonOutline = js.native
+  var outline: PredominanceSchemeForPolygonOutline
   
   /**
     * The scheme defining the size visual variable if included in a predominance visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var sizeScheme: SizeSchemeForPolygon = js.native
+  var sizeScheme: SizeSchemeForPolygon
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object PredominanceSchemeForPolygon {
   

@@ -2,13 +2,11 @@ package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashAlgorithmProviderStatics extends StObject {
   
-  def openAlgorithm(algorithm: String): HashAlgorithmProvider = js.native
+  def openAlgorithm(algorithm: String): HashAlgorithmProvider
 }
 object IHashAlgorithmProviderStatics {
   

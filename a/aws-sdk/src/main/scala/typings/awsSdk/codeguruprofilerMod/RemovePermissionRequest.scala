@@ -2,26 +2,24 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePermissionRequest extends StObject {
   
   /**
     *  Specifies an action group that contains the permissions to remove from a profiling group's resource-based policy. One action group is supported, agentPermissions, which grants ConfigureAgent and PostAgentProfile permissions. 
     */
-  var actionGroup: ActionGroup = js.native
+  var actionGroup: ActionGroup
   
   /**
     * The name of the profiling group.
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
   
   /**
     *  A universally unique identifier (UUID) for the revision of the resource-based policy from which you want to remove permissions. 
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object RemovePermissionRequest {
   

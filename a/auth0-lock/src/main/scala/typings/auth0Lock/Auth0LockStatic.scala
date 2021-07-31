@@ -11,12 +11,12 @@ import typings.auth0Lock.auth0LockStrings.show
 import typings.auth0Lock.auth0LockStrings.unrecoverable_error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Auth0LockStatic
-  extends Instantiable2[/* clientId */ String, /* domain */ String, Auth0LockStatic]
+  extends StObject
+     with Instantiable2[/* clientId */ String, /* domain */ String, Auth0LockStatic]
      with Instantiable3[
       /* clientId */ String, 
       /* domain */ String, 

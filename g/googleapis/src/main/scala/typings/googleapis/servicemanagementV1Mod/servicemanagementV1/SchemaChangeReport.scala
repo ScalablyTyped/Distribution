@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contains a list of ConfigChanges based on the comparison between two
   * service configurations.
   */
-@js.native
 trait SchemaChangeReport extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaChangeReport extends StObject {
     * Example:
     * visibility.rules[selector=&#39;LibraryService.CreateBook&#39;].restriction
     */
-  var configChanges: js.UndefOr[js.Array[SchemaConfigChange]] = js.native
+  var configChanges: js.UndefOr[js.Array[SchemaConfigChange]] = js.undefined
 }
 object SchemaChangeReport {
   

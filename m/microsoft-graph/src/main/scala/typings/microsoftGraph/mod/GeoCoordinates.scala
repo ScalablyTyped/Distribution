@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoCoordinates extends StObject {
   
   // Optional. The altitude (height), in feet, above sea level for the item. Read-only.
-  var altitude: js.UndefOr[NullableOption[Double]] = js.native
+  var altitude: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Optional. The latitude, in decimal, for the item. Read-only.
-  var latitude: js.UndefOr[NullableOption[Double]] = js.native
+  var latitude: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Optional. The longitude, in decimal, for the item. Read-only.
-  var longitude: js.UndefOr[NullableOption[Double]] = js.native
+  var longitude: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object GeoCoordinates {
   

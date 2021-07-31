@@ -12,7 +12,7 @@ JSX assertions for Jasmine
 | Keywords           | assert, assertion, jasmine, expect, jsx, react, test |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 45506 |
+| # downloads        | 45429 |
 | # stars            | 0 |
 
 ## Links

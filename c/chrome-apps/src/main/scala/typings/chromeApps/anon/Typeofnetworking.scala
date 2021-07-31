@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofnetworking extends StObject {
   
   // #endregion
@@ -19,7 +17,7 @@ trait Typeofnetworking extends StObject {
     * @description
     * Use the *networking.config* API to authenticate to captive portals.
     */
-  val config: Typeofconfig = js.native
+  val config: Typeofconfig
   
   //////////////////////////////////////
   // Open Network Configuration (ONC) //
@@ -38,7 +36,7 @@ trait Typeofnetworking extends StObject {
     * Most interface properties and type values use UpperCamelCase to match
     * the ONC specification instead of the JavaScript lowerCamelCase convention.
     */
-  val onc: Typeofonc = js.native
+  val onc: Typeofonc
 }
 object Typeofnetworking {
   

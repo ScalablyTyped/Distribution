@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Export extends StObject {
   
   /**
     * The stack that contains the exported output name and value.
     */
-  var ExportingStackId: js.UndefOr[StackId] = js.native
+  var ExportingStackId: js.UndefOr[StackId] = js.undefined
   
   /**
     * The name of exported output value. Use this name and the Fn::ImportValue function to import the associated value into other stacks. The name is defined in the Export field in the associated stack's Outputs section.
     */
-  var Name: js.UndefOr[ExportName] = js.native
+  var Name: js.UndefOr[ExportName] = js.undefined
   
   /**
     * The value of the exported output, such as a resource physical ID. This value is defined in the Export field in the associated stack's Outputs section.
     */
-  var Value: js.UndefOr[ExportValue] = js.native
+  var Value: js.UndefOr[ExportValue] = js.undefined
 }
 object Export {
   

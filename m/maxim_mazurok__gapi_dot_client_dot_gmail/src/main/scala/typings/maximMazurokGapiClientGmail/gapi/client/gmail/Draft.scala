@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Draft extends StObject {
   
   /** The immutable ID of the draft. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The message content of the draft. */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
 }
 object Draft {
   

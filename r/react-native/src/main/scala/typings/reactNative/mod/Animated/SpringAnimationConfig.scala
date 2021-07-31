@@ -3,37 +3,37 @@ package typings.reactNative.mod.Animated
 import typings.reactNative.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpringAnimationConfig extends AnimationConfig {
+trait SpringAnimationConfig
+  extends StObject
+     with AnimationConfig {
   
-  var bounciness: js.UndefOr[Double] = js.native
+  var bounciness: js.UndefOr[Double] = js.undefined
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var overshootClamping: js.UndefOr[Boolean] = js.native
+  var overshootClamping: js.UndefOr[Boolean] = js.undefined
   
-  var restDisplacementThreshold: js.UndefOr[Double] = js.native
+  var restDisplacementThreshold: js.UndefOr[Double] = js.undefined
   
-  var restSpeedThreshold: js.UndefOr[Double] = js.native
+  var restSpeedThreshold: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
   
-  var toValue: Double | AnimatedValue | X | AnimatedValueXY = js.native
+  var toValue: Double | AnimatedValue | X | AnimatedValueXY
   
-  var velocity: js.UndefOr[Double | X] = js.native
+  var velocity: js.UndefOr[Double | X] = js.undefined
 }
 object SpringAnimationConfig {
   

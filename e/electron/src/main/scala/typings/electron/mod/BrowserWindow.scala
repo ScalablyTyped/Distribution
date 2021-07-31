@@ -5,7 +5,6 @@ import typings.electron.Electron.ExtensionInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron", "BrowserWindow")
@@ -18,6 +17,10 @@ class BrowserWindow ()
   def this(options: BrowserWindowConstructorOptions) = this()
 }
 object BrowserWindow {
+  
+  @JSImport("electron", "BrowserWindow")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds DevTools extension located at `path`, and returns extension's name.
@@ -38,9 +41,8 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.addDevToolsExtension")
-  @js.native
-  def addDevToolsExtension(path: String): Unit = js.native
+  @scala.inline
+  def addDevToolsExtension(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDevToolsExtension")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Adds Chrome extension located at `path`, and returns extension's name.
@@ -56,43 +58,38 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.addExtension")
-  @js.native
-  def addExtension(path: String): Unit = js.native
+  @scala.inline
+  def addExtension(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addExtension")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * The window that owns the given `browserView`. If the given view is not attached
     * to any window, returns `null`.
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.fromBrowserView")
-  @js.native
-  def fromBrowserView(browserView: typings.electron.Electron.BrowserView): typings.electron.Electron.BrowserWindow | Null = js.native
+  @scala.inline
+  def fromBrowserView(browserView: typings.electron.Electron.BrowserView): typings.electron.Electron.BrowserWindow | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBrowserView")(browserView.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.BrowserWindow | Null]
   
   /**
     * The window with the given `id`.
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.fromId")
-  @js.native
-  def fromId(id: Double): typings.electron.Electron.BrowserWindow | Null = js.native
+  @scala.inline
+  def fromId(id: Double): typings.electron.Electron.BrowserWindow | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.BrowserWindow | Null]
   
   /**
     * The window that owns the given `webContents` or `null` if the contents are not
     * owned by a window.
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.fromWebContents")
-  @js.native
-  def fromWebContents(webContents: typings.electron.Electron.WebContents_): typings.electron.Electron.BrowserWindow | Null = js.native
+  @scala.inline
+  def fromWebContents(webContents: typings.electron.Electron.WebContents_): typings.electron.Electron.BrowserWindow | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebContents")(webContents.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.BrowserWindow | Null]
   
   /**
     * An array of all opened browser windows.
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.getAllWindows")
-  @js.native
-  def getAllWindows(): js.Array[typings.electron.Electron.BrowserWindow] = js.native
+  @scala.inline
+  def getAllWindows(): js.Array[typings.electron.Electron.BrowserWindow] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWindows")().asInstanceOf[js.Array[typings.electron.Electron.BrowserWindow]]
   
   /**
     * The keys are the extension names and each value is an Object containing `name`
@@ -108,9 +105,8 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.getDevToolsExtensions")
-  @js.native
-  def getDevToolsExtensions(): Record[String, ExtensionInfo] = js.native
+  @scala.inline
+  def getDevToolsExtensions(): Record[String, ExtensionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevToolsExtensions")().asInstanceOf[Record[String, ExtensionInfo]]
   
   /**
     * The keys are the extension names and each value is an Object containing `name`
@@ -124,17 +120,15 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.getExtensions")
-  @js.native
-  def getExtensions(): Record[String, ExtensionInfo] = js.native
+  @scala.inline
+  def getExtensions(): Record[String, ExtensionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")().asInstanceOf[Record[String, ExtensionInfo]]
   
   /**
     * The window that is focused in this application, otherwise returns `null`.
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.getFocusedWindow")
-  @js.native
-  def getFocusedWindow(): typings.electron.Electron.BrowserWindow | Null = js.native
+  @scala.inline
+  def getFocusedWindow(): typings.electron.Electron.BrowserWindow | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWindow")().asInstanceOf[typings.electron.Electron.BrowserWindow | Null]
   
   /**
     * Remove a DevTools extension by name.
@@ -148,9 +142,8 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.removeDevToolsExtension")
-  @js.native
-  def removeDevToolsExtension(name: String): Unit = js.native
+  @scala.inline
+  def removeDevToolsExtension(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDevToolsExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Remove a Chrome extension by name.
@@ -164,7 +157,6 @@ object BrowserWindow {
     * @deprecated
     */
   /* static member */
-  @JSImport("electron", "BrowserWindow.removeExtension")
-  @js.native
-  def removeExtension(name: String): Unit = js.native
+  @scala.inline
+  def removeExtension(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

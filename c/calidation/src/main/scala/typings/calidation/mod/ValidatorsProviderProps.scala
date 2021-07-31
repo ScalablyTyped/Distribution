@@ -3,13 +3,11 @@ package typings.calidation.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatorsProviderProps[T /* <: js.Object */] extends StObject {
   
-  var validators: Record[String, CustomValidatorFunction[T]] = js.native
+  var validators: Record[String, CustomValidatorFunction[T]]
 }
 object ValidatorsProviderProps {
   
@@ -20,7 +18,7 @@ object ValidatorsProviderProps {
   }
   
   @scala.inline
-  implicit class ValidatorsProviderPropsMutableBuilder[Self <: ValidatorsProviderProps[_], T /* <: js.Object */] (val x: Self with ValidatorsProviderProps[T]) extends AnyVal {
+  implicit class ValidatorsProviderPropsMutableBuilder[Self <: ValidatorsProviderProps[?], T /* <: js.Object */] (val x: Self & ValidatorsProviderProps[T]) extends AnyVal {
     
     @scala.inline
     def setValidators(value: Record[String, CustomValidatorFunction[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])

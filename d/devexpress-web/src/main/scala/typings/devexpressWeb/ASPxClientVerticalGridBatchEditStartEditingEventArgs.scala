@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.BatchEditStartEditing event.
   */
-@js.native
-trait ASPxClientVerticalGridBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientVerticalGridBatchEditStartEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the grid row that owns a cell that is about to be edited.
     */
-  var focusedRow: ASPxClientVerticalGridRow = js.native
+  var focusedRow: ASPxClientVerticalGridRow
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var recordValues: js.Any = js.native
+  var recordValues: js.Any
   
   /**
     * Gets the visible index of the record whose cells are about to be edited.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientVerticalGridBatchEditStartEditingEventArgs {
   

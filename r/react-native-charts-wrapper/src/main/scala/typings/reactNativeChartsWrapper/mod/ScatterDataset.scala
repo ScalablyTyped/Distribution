@@ -2,18 +2,18 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScatterDataset extends Dataset {
+trait ScatterDataset
+  extends StObject
+     with Dataset {
   
-  var config: js.UndefOr[ScatterDatasetConfig] = js.native
+  var config: js.UndefOr[ScatterDatasetConfig] = js.undefined
   
   @JSName("label")
-  var label_ScatterDataset: String = js.native
+  var label_ScatterDataset: String
   
-  var values: js.UndefOr[js.Array[LineValue | Double]] = js.native
+  var values: js.UndefOr[js.Array[LineValue | Double]] = js.undefined
 }
 object ScatterDataset {
   

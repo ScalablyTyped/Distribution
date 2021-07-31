@@ -2,37 +2,35 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A polymorphic targeting value used as part of Shared Targeting.
   */
-@js.native
 trait SchemaTargetingValue extends StObject {
   
   /**
     * The creative size value to include/exclude. Filled in when key =
     * GOOG_CREATIVE_SIZE
     */
-  var creativeSizeValue: js.UndefOr[SchemaCreativeSize] = js.native
+  var creativeSizeValue: js.UndefOr[SchemaCreativeSize] = js.undefined
   
   /**
     * The daypart targeting to include / exclude. Filled in when the key is
     * GOOG_DAYPART_TARGETING. The definition of this targeting is derived from
     * the structure used by Ad Manager.
     */
-  var dayPartTargetingValue: js.UndefOr[SchemaDayPartTargeting] = js.native
+  var dayPartTargetingValue: js.UndefOr[SchemaDayPartTargeting] = js.undefined
   
   /**
     * The long value to include/exclude.
     */
-  var longValue: js.UndefOr[String] = js.native
+  var longValue: js.UndefOr[String] = js.undefined
   
   /**
     * The string value to include/exclude.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetingValue {
   

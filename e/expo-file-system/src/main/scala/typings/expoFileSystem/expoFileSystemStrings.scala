@@ -3,7 +3,6 @@ package typings.expoFileSystem
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemAcceptedUploadHttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoFileSystemStrings {
@@ -14,17 +13,23 @@ object expoFileSystemStrings {
   def ExponentFileSystem: ExponentFileSystem = "ExponentFileSystem".asInstanceOf[ExponentFileSystem]
   
   @js.native
-  sealed trait PATCH extends FileSystemAcceptedUploadHttpMethod
+  sealed trait PATCH
+    extends StObject
+       with FileSystemAcceptedUploadHttpMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends FileSystemAcceptedUploadHttpMethod
+  sealed trait POST
+    extends StObject
+       with FileSystemAcceptedUploadHttpMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends FileSystemAcceptedUploadHttpMethod
+  sealed trait PUT
+    extends StObject
+       with FileSystemAcceptedUploadHttpMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   

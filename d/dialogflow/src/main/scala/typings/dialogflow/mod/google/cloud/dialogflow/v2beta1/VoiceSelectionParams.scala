@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a VoiceSelectionParams. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new VoiceSelectionParams.
   * @param [properties] Properties to set
   */
-class VoiceSelectionParams () extends IVoiceSelectionParams {
+class VoiceSelectionParams ()
+  extends StObject
+     with IVoiceSelectionParams {
   def this(properties: IVoiceSelectionParams) = this()
   
   /** VoiceSelectionParams name. */
@@ -36,18 +37,20 @@ class VoiceSelectionParams () extends IVoiceSelectionParams {
 }
 object VoiceSelectionParams {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new VoiceSelectionParams instance using the specified properties.
     * @param [properties] Properties to set
     * @returns VoiceSelectionParams instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.create")
-  @js.native
-  def create(): VoiceSelectionParams = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.create")
-  @js.native
-  def create(properties: IVoiceSelectionParams): VoiceSelectionParams = js.native
+  @scala.inline
+  def create(): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[VoiceSelectionParams]
+  @scala.inline
+  def create(properties: IVoiceSelectionParams): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
   
   /**
     * Decodes a VoiceSelectionParams message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object VoiceSelectionParams {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decode")
-  @js.native
-  def decode(reader: Reader): VoiceSelectionParams = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): VoiceSelectionParams = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decode")
-  @js.native
-  def decode(reader: Uint8Array): VoiceSelectionParams = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): VoiceSelectionParams = js.native
+  @scala.inline
+  def decode(reader: Reader): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
+  @scala.inline
+  def decode(reader: Reader, length: Double): VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[VoiceSelectionParams]
+  @scala.inline
+  def decode(reader: Uint8Array): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[VoiceSelectionParams]
   
   /**
     * Decodes a VoiceSelectionParams message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object VoiceSelectionParams {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): VoiceSelectionParams = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): VoiceSelectionParams = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
   
   /**
     * Encodes the specified VoiceSelectionParams message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.VoiceSelectionParams.verify|verify} messages.
@@ -93,12 +90,10 @@ object VoiceSelectionParams {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.encode")
-  @js.native
-  def encode(message: IVoiceSelectionParams): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.encode")
-  @js.native
-  def encode(message: IVoiceSelectionParams, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified VoiceSelectionParams message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.VoiceSelectionParams.verify|verify} messages.
@@ -107,12 +102,10 @@ object VoiceSelectionParams {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IVoiceSelectionParams): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IVoiceSelectionParams, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a VoiceSelectionParams message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object VoiceSelectionParams {
     * @returns VoiceSelectionParams
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): VoiceSelectionParams = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[VoiceSelectionParams]
   
   /**
     * Creates a plain object from a VoiceSelectionParams message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object VoiceSelectionParams {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.toObject")
-  @js.native
-  def toObject(message: VoiceSelectionParams): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.toObject")
-  @js.native
-  def toObject(message: VoiceSelectionParams, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: VoiceSelectionParams): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: VoiceSelectionParams, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a VoiceSelectionParams message.
@@ -144,7 +134,6 @@ object VoiceSelectionParams {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.VoiceSelectionParams.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

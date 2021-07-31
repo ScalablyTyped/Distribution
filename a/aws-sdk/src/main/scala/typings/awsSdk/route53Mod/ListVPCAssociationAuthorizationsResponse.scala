@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVPCAssociationAuthorizationsResponse extends StObject {
   
   /**
     * The ID of the hosted zone that you can associate the listed VPCs with.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * When the response includes a NextToken element, there are more VPCs that can be associated with the specified hosted zone. To get the next page of VPCs, submit another ListVPCAssociationAuthorizations request, and include the value of the NextToken element from the response in the nexttoken request parameter.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The list of VPCs that are authorized to be associated with the specified hosted zone.
     */
-  var VPCs: typings.awsSdk.route53Mod.VPCs = js.native
+  var VPCs: typings.awsSdk.route53Mod.VPCs
 }
 object ListVPCAssociationAuthorizationsResponse {
   

@@ -31,10 +31,8 @@ import typings.vegaLite.vegaLiteStrings.variancep
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aggregate extends StObject {
   
   /**
@@ -47,7 +45,7 @@ trait Aggregate extends StObject {
     */
   var aggregate: js.UndefOr[
     max | values | count | min | average | distinct | mean | median | missing | product | q1 | q3 | ci0 | ci1 | stderr | stdev | stdevp | sum | valid | variance | variancep | ArgminDef | ArgmaxDef | boxplot | errorbar | errorband
-  ] = js.native
+  ] = js.undefined
   
   /**
     * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
@@ -57,7 +55,7 @@ trait Aggregate extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#params), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
@@ -70,7 +68,7 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`bin`](https://vega.github.io/vega-lite/docs/bin.html) documentation.
     */
-  var bin: js.UndefOr[Boolean | BinParams | binned] = js.native
+  var bin: js.UndefOr[Boolean | BinParams | binned] = js.undefined
   
   /**
     * __Required.__ A string defining the name of the field from which to pull a data value
@@ -84,7 +82,7 @@ trait Aggregate extends StObject {
     * See more details about escaping in the [field documentation](https://vega.github.io/vega-lite/docs/field.html).
     * 2) `field` is not required if `aggregate` is `count`.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Time unit (e.g., `year`, `yearmonth`, `month`, `hours`) for a temporal field.
@@ -96,9 +94,9 @@ trait Aggregate extends StObject {
     */
   var timeUnit: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.native
+  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
   
   /**
     * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
@@ -130,7 +128,7 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`type`](https://vega.github.io/vega-lite/docs/type.html) documentation.
     */
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
 }
 object Aggregate {
   

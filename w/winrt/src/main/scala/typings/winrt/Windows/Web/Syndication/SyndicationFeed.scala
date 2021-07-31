@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyndicationFeed extends ISyndicationFeed
+trait SyndicationFeed
+  extends StObject
+     with ISyndicationFeed
 object SyndicationFeed {
   
   @scala.inline

@@ -4,12 +4,13 @@ import typings.leaflet.mod.LatLng_
 import typings.leafletRoutingMachine.anon.InputWaypoints
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Routing.OSRMv1")
 @js.native
-class OSRMv1_ () extends IRouter {
+class OSRMv1_ ()
+  extends StObject
+     with IRouter {
   def this(options: OSRMOptions) = this()
   
   def buildRouteUrl(waypoints: js.Array[Waypoint_], options: RoutingOptions): String = js.native
@@ -20,18 +21,18 @@ class OSRMv1_ () extends IRouter {
   def route(
     waypoints: js.Array[Waypoint_],
     callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
-    context: js.UndefOr[scala.Nothing],
-    options: RoutingOptions
-  ): Unit = js.native
-  def route(
-    waypoints: js.Array[Waypoint_],
-    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
     context: js.Object
   ): Unit = js.native
   def route(
     waypoints: js.Array[Waypoint_],
     callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
     context: js.Object,
+    options: RoutingOptions
+  ): Unit = js.native
+  def route(
+    waypoints: js.Array[Waypoint_],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    context: Unit,
     options: RoutingOptions
   ): Unit = js.native
 }

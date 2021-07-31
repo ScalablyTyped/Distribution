@@ -2,56 +2,54 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2InstanceDetails extends StObject {
   
   /**
     * The IAM profile ARN of the instance.
     */
-  var IamInstanceProfileArn: js.UndefOr[NonEmptyString] = js.native
+  var IamInstanceProfileArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Machine Image (AMI) ID of the instance.
     */
-  var ImageId: js.UndefOr[NonEmptyString] = js.native
+  var ImageId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The IPv4 addresses associated with the instance.
     */
-  var IpV4Addresses: js.UndefOr[StringList] = js.native
+  var IpV4Addresses: js.UndefOr[StringList] = js.undefined
   
   /**
     * The IPv6 addresses associated with the instance.
     */
-  var IpV6Addresses: js.UndefOr[StringList] = js.native
+  var IpV6Addresses: js.UndefOr[StringList] = js.undefined
   
   /**
     * The key name associated with the instance.
     */
-  var KeyName: js.UndefOr[NonEmptyString] = js.native
+  var KeyName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the instance was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LaunchedAt: js.UndefOr[NonEmptyString] = js.native
+  var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the subnet that the instance was launched in.
     */
-  var SubnetId: js.UndefOr[NonEmptyString] = js.native
+  var SubnetId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The instance type of the instance. 
     */
-  var Type: js.UndefOr[NonEmptyString] = js.native
+  var Type: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the VPC that the instance was launched in.
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2InstanceDetails {
   

@@ -8,40 +8,40 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("signature_pad", JSImport.Default)
   @js.native
-  class default protected () extends SignaturePad {
+  class default protected ()
+    extends StObject
+       with SignaturePad {
     def this(canvas: HTMLCanvasElement) = this()
     def this(canvas: HTMLCanvasElement, options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var dotSize: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var dotSize: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minDistance: js.UndefOr[Double] = js.native
+    var minDistance: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var onBegin: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.native
+    var onBegin: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.undefined
     
-    var penColor: js.UndefOr[String] = js.native
+    var penColor: js.UndefOr[String] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
-    var velocityFilterWeight: js.UndefOr[Double] = js.native
+    var velocityFilterWeight: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -119,12 +119,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PointGroup extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var points: js.Array[BasicPoint] = js.native
+    var points: js.Array[BasicPoint]
   }
   object PointGroup {
     
@@ -224,7 +223,7 @@ object mod {
     def fromDataURL(dataUrl: String): Unit = js.native
     def fromDataURL(
       dataUrl: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function1[/* error */ js.UndefOr[String | Event], Unit]
     ): Unit = js.native
     def fromDataURL(dataUrl: String, options: Height): Unit = js.native
@@ -259,19 +258,18 @@ object mod {
     def toData(): js.Array[PointGroup] = js.native
     
     def toDataURL(): String = js.native
-    def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: Double): String = js.native
     def toDataURL(`type`: String): String = js.native
     def toDataURL(`type`: String, encoderOptions: Double): String = js.native
+    def toDataURL(`type`: Unit, encoderOptions: Double): String = js.native
     
     var velocityFilterWeight: Double = js.native
   }
   
   object global {
     
-    @js.native
     trait CSSStyleDeclaration extends StObject {
       
-      var msTouchAction: String = js.native
+      var msTouchAction: String
     }
     object CSSStyleDeclaration {
       

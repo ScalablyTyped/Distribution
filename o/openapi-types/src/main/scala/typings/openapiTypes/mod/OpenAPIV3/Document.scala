@@ -2,36 +2,40 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document
-  extends typings.openapiTypes.mod.OpenAPI.Document {
+  extends StObject
+     with typings.openapiTypes.mod.OpenAPI.Document {
   
-  var components: js.UndefOr[ComponentsObject] = js.native
+  var components: js.UndefOr[ComponentsObject] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var info: InfoObject = js.native
+  var info: InfoObject
   
-  var openapi: String = js.native
+  var openapi: String
   
-  var paths: PathsObject = js.native
+  var paths: PathsObject
   
-  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.native
+  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   
-  var servers: js.UndefOr[js.Array[ServerObject]] = js.native
+  var servers: js.UndefOr[js.Array[ServerObject]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[TagObject]] = js.native
+  var tags: js.UndefOr[js.Array[TagObject]] = js.undefined
   
   var `x-express-openapi-additional-middleware`: js.UndefOr[
     js.Array[
-      js.Function3[/* request */ _, /* response */ _, /* next */ _, js.Promise[Unit] | Unit]
+      js.Function3[
+        /* request */ js.Any, 
+        /* response */ js.Any, 
+        /* next */ js.Any, 
+        js.Promise[Unit] | Unit
+      ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `x-express-openapi-validation-strict`: js.UndefOr[Boolean] = js.native
+  var `x-express-openapi-validation-strict`: js.UndefOr[Boolean] = js.undefined
 }
 object Document {
   
@@ -95,7 +99,12 @@ object Document {
     @scala.inline
     def `setX-express-openapi-additional-middleware`(
       value: js.Array[
-          js.Function3[/* request */ _, /* response */ _, /* next */ _, js.Promise[Unit] | Unit]
+          js.Function3[
+            /* request */ js.Any, 
+            /* response */ js.Any, 
+            /* next */ js.Any, 
+            js.Promise[Unit] | Unit
+          ]
         ]
     ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
     
@@ -103,7 +112,14 @@ object Document {
     def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
     
     @scala.inline
-    def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
+    def `setX-express-openapi-additional-middlewareVarargs`(
+      value: (js.Function3[
+          /* request */ js.Any, 
+          /* response */ js.Any, 
+          /* next */ js.Any, 
+          js.Promise[Unit] | Unit
+        ])*
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
     
     @scala.inline
     def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])

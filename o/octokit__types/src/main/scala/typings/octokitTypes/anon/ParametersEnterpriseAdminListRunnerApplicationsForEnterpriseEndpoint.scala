@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminListRunnerApplicationsFo
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
   
-  var request: EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions = js.native
+  var request: EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData]
 }
 object ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint {
   

@@ -4,17 +4,15 @@ import typings.winrt.Windows.Storage.Streams.DataReader
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessageWebSocketMessageReceivedEventArgs extends StObject {
   
-  def getDataReader(): DataReader = js.native
+  def getDataReader(): DataReader
   
-  def getDataStream(): IInputStream = js.native
+  def getDataStream(): IInputStream
   
-  var messageType: SocketMessageType = js.native
+  var messageType: SocketMessageType
 }
 object IMessageWebSocketMessageReceivedEventArgs {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBClusterEndpointMessage extends StObject {
   
   /**
     * The identifier of the endpoint to modify. This parameter is stored as a lowercase string.
     */
-  var DBClusterEndpointIdentifier: String = js.native
+  var DBClusterEndpointIdentifier: String
   
   /**
     * The type of the endpoint. One of: READER, WRITER, ANY.
     */
-  var EndpointType: js.UndefOr[String] = js.native
+  var EndpointType: js.UndefOr[String] = js.undefined
   
   /**
     * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
     */
-  var ExcludedMembers: js.UndefOr[StringList] = js.native
+  var ExcludedMembers: js.UndefOr[StringList] = js.undefined
   
   /**
     * List of DB instance identifiers that are part of the custom endpoint group.
     */
-  var StaticMembers: js.UndefOr[StringList] = js.native
+  var StaticMembers: js.UndefOr[StringList] = js.undefined
 }
 object ModifyDBClusterEndpointMessage {
   

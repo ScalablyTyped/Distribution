@@ -11,14 +11,15 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5backendimplMod {
   
   @JSImport("react-dnd-html5-backend/lib/HTML5BackendImpl", "HTML5BackendImpl")
   @js.native
-  class HTML5BackendImpl protected () extends Backend {
+  class HTML5BackendImpl protected ()
+    extends StObject
+       with Backend {
     def this(manager: DragDropManager) = this()
     def this(manager: DragDropManager, globalContext: HTML5BackendContext) = this()
     
@@ -129,10 +130,9 @@ object html5backendimplMod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var __isReactDndBackendSetUp: js.UndefOr[Boolean] = js.native
+      var __isReactDndBackendSetUp: js.UndefOr[Boolean] = js.undefined
     }
     object Window {
       

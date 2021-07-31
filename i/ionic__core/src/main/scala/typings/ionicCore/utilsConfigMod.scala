@@ -7,228 +7,228 @@ import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsConfigMod {
   
-  @JSImport("@ionic/core/dist/types/utils/config", "getMode")
+  @JSImport("@ionic/core/dist/types/utils/config", JSImport.Namespace)
   @js.native
-  def getMode(): Mode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/config", "setupConfig")
-  @js.native
-  def setupConfig(config: IonicConfig): js.Any = js.native
+  @scala.inline
+  def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
   
-  @js.native
+  @scala.inline
+  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait IonicConfig extends StObject {
     
     var _ael: js.UndefOr[
-        js.Function4[/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any, _]
-      ] = js.native
+        js.Function4[/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any, js.Any]
+      ] = js.undefined
     
-    var _forceStatusbarPadding: js.UndefOr[Boolean] = js.native
+    var _forceStatusbarPadding: js.UndefOr[Boolean] = js.undefined
     
     var _rel: js.UndefOr[
-        js.Function4[/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any, _]
-      ] = js.native
+        js.Function4[/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any, js.Any]
+      ] = js.undefined
     
-    var _testing: js.UndefOr[Boolean] = js.native
+    var _testing: js.UndefOr[Boolean] = js.undefined
     
-    var _zoneGate: js.UndefOr[js.Function1[/* h */ js.Function0[_], _]] = js.native
+    var _zoneGate: js.UndefOr[js.Function1[/* h */ js.Function0[js.Any], js.Any]] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-action-sheet`, overriding the default "animation".
       */
-    var actionSheetEnter: js.UndefOr[AnimationBuilder] = js.native
+    var actionSheetEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-action-sheet`, overriding the default "animation".
       */
-    var actionSheetLeave: js.UndefOr[AnimationBuilder] = js.native
+    var actionSheetLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-alert`, overriding the default "animation".
       */
-    var alertEnter: js.UndefOr[AnimationBuilder] = js.native
+    var alertEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-alert`, overriding the default "animation".
       */
-    var alertLeave: js.UndefOr[AnimationBuilder] = js.native
+    var alertLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * When it's set to `false`, disables all animation and transition across the app.
       * Can be useful to make ionic smoother in slow devices, when animations can't run smoothly.
       */
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the default defaultHref in all `<ion-back-button>` components.
       */
-    var backButtonDefaultHref: js.UndefOr[String] = js.native
+    var backButtonDefaultHref: js.UndefOr[String] = js.undefined
     
     /**
       * Overrides the default icon in all `<ion-back-button>` components.
       */
-    var backButtonIcon: js.UndefOr[String] = js.native
+    var backButtonIcon: js.UndefOr[String] = js.undefined
     
     /**
       * Overrides the default text in all `<ion-back-button>` components.
       */
-    var backButtonText: js.UndefOr[String] = js.native
+    var backButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * EXPERIMENTAL: Adds a page shadow to transitioning pages on iOS. Disabled by default.
       */
-    var experimentalTransitionShadow: js.UndefOr[Boolean] = js.native
+    var experimentalTransitionShadow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Wherever ionic will respond to hardware go back buttons in an Android device.
       * Defaults to `true` when ionic runs in a mobile device.
       */
-    var hardwareBackButton: js.UndefOr[Boolean] = js.native
+    var hardwareBackButton: js.UndefOr[Boolean] = js.undefined
     
-    var hideCaretOnScroll: js.UndefOr[Boolean] = js.native
+    var hideCaretOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the default spinner type in all `<ion-infinite-scroll-content>` components.
       */
-    var infiniteLoadingSpinner: js.UndefOr[SpinnerTypes | Null] = js.native
+    var infiniteLoadingSpinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
     
-    var inputBlurring: js.UndefOr[Boolean] = js.native
+    var inputBlurring: js.UndefOr[Boolean] = js.undefined
     
-    var inputShims: js.UndefOr[Boolean] = js.native
+    var inputShims: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardHeight: js.UndefOr[Double] = js.native
+    var keyboardHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-loading`, overriding the default "animation".
       */
-    var loadingEnter: js.UndefOr[AnimationBuilder] = js.native
+    var loadingEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-loading`, overriding the default "animation".
       */
-    var loadingLeave: js.UndefOr[AnimationBuilder] = js.native
+    var loadingLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Overrides the default spinner for all `ion-loading` overlays, ie. the ones
       * created with `ion-loading-controller`.
       */
-    var loadingSpinner: js.UndefOr[SpinnerTypes | Null] = js.native
+    var loadingSpinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
     
     /**
       * Overrides the default icon in all `<ion-menu-button>` components.
       */
-    var menuIcon: js.UndefOr[String] = js.native
+    var menuIcon: js.UndefOr[String] = js.undefined
     
     /**
       * Overrides the default menu type for all `<ion-menu>` components.
       * By default the menu type is chosen based in the app's mode.
       */
-    var menuType: js.UndefOr[String] = js.native
+    var menuType: js.UndefOr[String] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-modal`, overriding the default "animation".
       */
-    var modalEnter: js.UndefOr[AnimationBuilder] = js.native
+    var modalEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-modal`, overriding the default "animation".
       */
-    var modalLeave: js.UndefOr[AnimationBuilder] = js.native
+    var modalLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * The mode determines which platform styles to use for the whole application.
       */
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
     /**
       * Overrides the default "animation" of all `ion-nav` and `ion-router-outlet` across the whole application.
       * This prop allows to replace the default transition and provide a custom one that applies to all navigation outlets.
       */
-    var navAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var navAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var persistConfig: js.UndefOr[Boolean] = js.native
+    var persistConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-picker`, overriding the default "animation".
       */
-    var pickerEnter: js.UndefOr[AnimationBuilder] = js.native
+    var pickerEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-picker`, overriding the default "animation".
       */
-    var pickerLeave: js.UndefOr[AnimationBuilder] = js.native
+    var pickerLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-popover`, overriding the default "animation".
       */
-    var popoverEnter: js.UndefOr[AnimationBuilder] = js.native
+    var popoverEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-popover`, overriding the default "animation".
       */
-    var popoverLeave: js.UndefOr[AnimationBuilder] = js.native
+    var popoverLeave: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Overrides the default icon in all `<ion-refresh-content>` components.
       */
-    var refreshingIcon: js.UndefOr[String] = js.native
+    var refreshingIcon: js.UndefOr[String] = js.undefined
     
     /**
       * Overrides the default spinner type in all `<ion-refresh-content>` components.
       */
-    var refreshingSpinner: js.UndefOr[SpinnerTypes | Null] = js.native
+    var refreshingSpinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
     
     /**
       * When it's set to `false`, it disables all material-design ripple-effects across the app.
       * Defaults to `true`.
       */
-    var rippleEffect: js.UndefOr[Boolean] = js.native
+    var rippleEffect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, Ionic will enable a basic DOM sanitizer on component properties that accept custom HTML.
       */
-    var sanitizerEnabled: js.UndefOr[Boolean] = js.native
+    var sanitizerEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var scrollAssist: js.UndefOr[Boolean] = js.native
+    var scrollAssist: js.UndefOr[Boolean] = js.undefined
     
-    var scrollPadding: js.UndefOr[Boolean] = js.native
+    var scrollPadding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the default spinner in all `<ion-spinner>` components.
       * By default the spinner type is chosen based in the mode (ios or md).
       */
-    var spinner: js.UndefOr[SpinnerTypes] = js.native
+    var spinner: js.UndefOr[SpinnerTypes] = js.undefined
     
     /**
       * Whenever clicking the top status bar should cause the scroll to top in an application.
       * Defaults to `true` when ionic runs in a mobile device.
       */
-    var statusTap: js.UndefOr[Boolean] = js.native
+    var statusTap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Global switch that disables or enables "swipe-to-go-back" gesture across all
       * `ion-nav` in your application.
       */
-    var swipeBackEnabled: js.UndefOr[Boolean] = js.native
+    var swipeBackEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the default "layout" of all `ion-bar-button` across the whole application.
       */
-    var tabButtonLayout: js.UndefOr[TabButtonLayout] = js.native
+    var tabButtonLayout: js.UndefOr[TabButtonLayout] = js.undefined
     
     /**
       * Provides a custom enter animation for all `ion-toast`, overriding the default "animation".
       */
-    var toastEnter: js.UndefOr[AnimationBuilder] = js.native
+    var toastEnter: js.UndefOr[AnimationBuilder] = js.undefined
     
     /**
       * Provides a custom leave animation for all `ion-toast`, overriding the default "animation".
       */
-    var toastLeave: js.UndefOr[AnimationBuilder] = js.native
+    var toastLeave: js.UndefOr[AnimationBuilder] = js.undefined
   }
   object IonicConfig {
     
@@ -497,7 +497,7 @@ object utilsConfigMod {
       def setToastLeaveUndefined: Self = StObject.set(x, "toastLeave", js.undefined)
       
       @scala.inline
-      def set_ael(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => _): Self = StObject.set(x, "_ael", js.Any.fromFunction4(value))
+      def set_ael(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_ael", js.Any.fromFunction4(value))
       
       @scala.inline
       def set_aelUndefined: Self = StObject.set(x, "_ael", js.undefined)
@@ -509,7 +509,7 @@ object utilsConfigMod {
       def set_forceStatusbarPaddingUndefined: Self = StObject.set(x, "_forceStatusbarPadding", js.undefined)
       
       @scala.inline
-      def set_rel(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => _): Self = StObject.set(x, "_rel", js.Any.fromFunction4(value))
+      def set_rel(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_rel", js.Any.fromFunction4(value))
       
       @scala.inline
       def set_relUndefined: Self = StObject.set(x, "_rel", js.undefined)
@@ -521,7 +521,7 @@ object utilsConfigMod {
       def set_testingUndefined: Self = StObject.set(x, "_testing", js.undefined)
       
       @scala.inline
-      def set_zoneGate(value: /* h */ js.Function0[_] => _): Self = StObject.set(x, "_zoneGate", js.Any.fromFunction1(value))
+      def set_zoneGate(value: /* h */ js.Function0[js.Any] => js.Any): Self = StObject.set(x, "_zoneGate", js.Any.fromFunction1(value))
       
       @scala.inline
       def set_zoneGateUndefined: Self = StObject.set(x, "_zoneGate", js.undefined)

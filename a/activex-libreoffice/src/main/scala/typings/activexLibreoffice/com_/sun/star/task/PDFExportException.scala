@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is an exception that provides information on an error during PDF export. */
-@js.native
-trait PDFExportException extends Exception {
+trait PDFExportException
+  extends StObject
+     with Exception {
   
   /** contains a number of errors that occurred during PDFExport */
-  var ErrorCodes: SafeArray[Double] = js.native
+  var ErrorCodes: SafeArray[Double]
 }
 object PDFExportException {
   

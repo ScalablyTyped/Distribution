@@ -3,25 +3,23 @@ package typings.xelib
 import typings.xelib.mod.Handle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var form_id: Double = js.native
+    var form_id: Double
     
-    var group: Double = js.native
+    var group: Double
     
-    var handle: Handle = js.native
+    var handle: Handle
     
-    var path: String = js.native
+    var path: String
     
-    var signature: String = js.native
+    var signature: String
   }
   object Data {
     

@@ -3,36 +3,34 @@ package typings.wegameApi.wx.types
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UDPSendParams extends StObject {
   
   /**
     * 要发消息的地址。可以是一个和本机同网段的 IP 地址，也可以是在安全域名列表内的域名地址
     */
-  var address: String = js.native
+  var address: String
   
   /**
     * 发送数据的长度，仅当 message 为 ArrayBuffer 类型时有效，默认值message.byteLength
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * 要发送的数据
     */
-  var message: String | ArrayBuffer = js.native
+  var message: String | ArrayBuffer
   
   /**
     * 发送数据的偏移量，仅当 message 为 ArrayBuffer 类型时有效，默认值0
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * 要发送消息的端口号
     */
-  var port: Double = js.native
+  var port: Double
 }
 object UDPSendParams {
   

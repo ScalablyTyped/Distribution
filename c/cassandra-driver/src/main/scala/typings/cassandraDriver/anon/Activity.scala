@@ -3,21 +3,19 @@ package typings.cassandraDriver.anon
 import typings.cassandraDriver.typesMod.types.Uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activity extends StObject {
   
-  var activity: js.Any = js.native
+  var activity: js.Any
   
-  var elapsed: js.Any = js.native
+  var elapsed: js.Any
   
-  var id: Uuid = js.native
+  var id: Uuid
   
-  var source: js.Any = js.native
+  var source: js.Any
   
-  var thread: js.Any = js.native
+  var thread: js.Any
 }
 object Activity {
   

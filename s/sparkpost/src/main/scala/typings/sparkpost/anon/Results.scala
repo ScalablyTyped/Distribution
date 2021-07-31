@@ -2,13 +2,11 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Results[T] extends StObject {
   
-  var results: T = js.native
+  var results: T
 }
 object Results {
   
@@ -19,7 +17,7 @@ object Results {
   }
   
   @scala.inline
-  implicit class ResultsMutableBuilder[Self <: Results[_], T] (val x: Self with Results[T]) extends AnyVal {
+  implicit class ResultsMutableBuilder[Self <: Results[?], T] (val x: Self & Results[T]) extends AnyVal {
     
     @scala.inline
     def setResults(value: T): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])

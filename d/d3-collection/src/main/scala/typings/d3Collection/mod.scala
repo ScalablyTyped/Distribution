@@ -10,87 +10,70 @@ import typings.std.Array
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-collection", "entries")
+  @JSImport("d3-collection", JSImport.Namespace)
   @js.native
-  def entries(obj: js.Object): js.Array[Value] = js.native
-  @JSImport("d3-collection", "entries")
-  @js.native
-  def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = js.native
-  @JSImport("d3-collection", "entries")
-  @js.native
-  def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-collection", "keys")
-  @js.native
-  def keys(obj: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def entries(obj: js.Object): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
   
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map(obj: js.Object): Map_[_] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map[T](): Map_[T] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map[T](array: js.Array[T]): Map_[T] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
+  @scala.inline
+  def keys(obj: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def map(obj: js.Object): Map_[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[js.Any]]
+  @scala.inline
+  def map[T](): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Map_[T]]
+  @scala.inline
+  def map[T](array: js.Array[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  @scala.inline
   def map[T](
     array: js.Array[T],
     key: js.Function3[/* value */ T, /* i */ js.UndefOr[Double], /* array */ js.UndefOr[js.Array[T]], String]
-  ): Map_[T] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map[T](d3Map: Map_[T]): Map_[T] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map[T](obj: NumberDictionary[T]): Map_[T] = js.native
-  @JSImport("d3-collection", "map")
-  @js.native
-  def map[T](obj: StringDictionary[T]): Map_[T] = js.native
+  ): Map_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map_[T]]
+  @scala.inline
+  def map[T](d3Map: Map_[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(d3Map.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  @scala.inline
+  def map[T](obj: NumberDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  @scala.inline
+  def map[T](obj: StringDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
   
-  @JSImport("d3-collection", "nest")
-  @js.native
-  def nest[Datum, RollupType](): Nest_[Datum, RollupType] = js.native
+  @scala.inline
+  def nest[Datum, RollupType](): Nest_[Datum, RollupType] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")().asInstanceOf[Nest_[Datum, RollupType]]
   
-  @JSImport("d3-collection", "set")
-  @js.native
-  def set(): Set_ = js.native
-  @JSImport("d3-collection", "set")
-  @js.native
-  def set(array: js.Array[String | Stringifiable]): Set_ = js.native
-  @JSImport("d3-collection", "set")
-  @js.native
-  def set(d3Set: Set_): Set_ = js.native
-  @JSImport("d3-collection", "set")
-  @js.native
+  @scala.inline
+  def set(): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[Set_]
+  @scala.inline
+  def set(array: js.Array[String | Stringifiable]): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any]).asInstanceOf[Set_]
+  @scala.inline
+  def set(d3Set: Set_): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(d3Set.asInstanceOf[js.Any]).asInstanceOf[Set_]
+  @scala.inline
   def set[T](
     array: js.Array[T],
     key: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], String]
-  ): Set_ = js.native
+  ): Set_ = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Set_]
   
-  @JSImport("d3-collection", "values")
-  @js.native
-  def values(obj: js.Object): js.Array[_] = js.native
-  @JSImport("d3-collection", "values")
-  @js.native
-  def values[T](obj: StringDictionary[T]): js.Array[T] = js.native
-  @JSImport("d3-collection", "values")
-  @js.native
-  def values[T](obj: ArrayLike[T]): js.Array[T] = js.native
+  @scala.inline
+  def values(obj: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def values[T](obj: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def values[T](obj: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @js.native
   trait Map_[T] extends StObject {
     
     /**
       * Removes all entries from this map.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * Calls the specified function for each entry in this map and returns undefined.
@@ -99,18 +82,18 @@ object mod {
       * @param func Function to call for each entry. The function is passed the entry’s value and key as arguments,
       * followed by the map itself.
       */
-    def each(func: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit]): Unit = js.native
+    def each(func: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit]): Unit
     
     /**
       * Returns true if and only if this map has zero entries.
       */
-    def empty(): Boolean = js.native
+    def empty(): Boolean
     
     /**
       * Returns an array of key-value objects for each entry in this map. The order of the returned entries is arbitrary.
       * Each entry’s key is a string, but the value can have arbitrary type.
       */
-    def entries(): js.Array[Key[T]] = js.native
+    def entries(): js.Array[Key[T]]
     
     /**
       * Returns the value for the specified key string.
@@ -118,7 +101,7 @@ object mod {
       *
       * @param key Key of map entry to access.
       */
-    def get(key: String): js.UndefOr[T] = js.native
+    def get(key: String): js.UndefOr[T]
     
     /**
       * Returns true if and only if this map has an entry for the specified key string.
@@ -126,13 +109,13 @@ object mod {
       *
       * @param key Key of map entry to access.
       */
-    def has(key: String): Boolean = js.native
+    def has(key: String): Boolean
     
     /**
       * Returns an array of string keys for every entry in this map.
       * The order of the returned keys is arbitrary.
       */
-    def keys(): js.Array[String] = js.native
+    def keys(): js.Array[String]
     
     /**
       * If the map has an entry for the specified key string, removes the entry and returns true.
@@ -140,7 +123,7 @@ object mod {
       *
       * @param key Map key for which to remove the entry.
       */
-    def remove(key: String): Boolean = js.native
+    def remove(key: String): Boolean
     
     /**
       * Sets the value for the specified key string and returns the updated map.
@@ -149,18 +132,18 @@ object mod {
       * @param key Key of map entry to access.
       * @param value Value to set for entry at key.
       */
-    def set(key: String, value: T): this.type = js.native
+    def set(key: String, value: T): this.type
     
     /**
       * Returns the number of entries in this map.
       */
-    def size(): Double = js.native
+    def size(): Double
     
     /**
       * Returns an array of values for every entry in this map.
       * The order of the returned values is arbitrary.
       */
-    def values(): js.Array[T] = js.native
+    def values(): js.Array[T]
   }
   object Map_ {
     
@@ -183,7 +166,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class Map_MutableBuilder[Self <: Map_[_], T] (val x: Self with Map_[T]) extends AnyVal {
+    implicit class Map_MutableBuilder[Self <: Map_[?], T] (val x: Self & Map_[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -220,7 +203,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Nest_[Datum, RollupType] extends StObject {
     
     /**
@@ -253,7 +235,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def entries(array: js.Array[Datum]): js.Array[KeyValue[RollupType]] = js.native
+    def entries(array: js.Array[Datum]): js.Array[KeyValue[RollupType]]
     
     /**
       * Registers a new key function and returns this nest operator.
@@ -265,7 +247,7 @@ object mod {
       *
       * @param func A key accessor function being invoked for each element.
       */
-    def key(func: js.Function1[/* datum */ Datum, String]): this.type = js.native
+    def key(func: js.Function1[/* datum */ Datum, String]): this.type
     
     /**
       * Applies the nest operator to the specified array, returning a nested map.
@@ -296,7 +278,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def map(array: js.Array[Datum]): Map_[_] = js.native
+    def map(array: js.Array[Datum]): Map_[js.Any]
     
     /**
       * Applies the nest operator to the specified array, returning a nested object.
@@ -329,7 +311,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def `object`(array: js.Array[Datum]): StringDictionary[js.Any] = js.native
+    def `object`(array: js.Array[Datum]): StringDictionary[js.Any]
     
     /**
       * Specifies a rollup function to be applied on each group of leaf elements and returns this nest operator.
@@ -340,7 +322,7 @@ object mod {
       *
       * @param func A function computing the rollup value for a group of leaf elements.
       */
-    def rollup(func: js.Function1[/* values */ js.Array[Datum], RollupType]): this.type = js.native
+    def rollup(func: js.Function1[/* values */ js.Array[Datum], RollupType]): this.type
     
     /**
       * Sorts key values for the current key using the specified comparator function, such as d3.ascending or d3.descending.
@@ -353,7 +335,7 @@ object mod {
       * @param comparator A comparator function which returns a negative value if, according to the sorting criterion,
       * a is less than b, or a positive value if a is greater than b, or 0 if the two values are the same under the sorting criterion.
       */
-    def sortKeys(comparator: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native
+    def sortKeys(comparator: js.Function2[/* a */ String, /* b */ String, Double]): this.type
     
     /**
       * Sorts leaf elements using the specified comparator function, such as d3.ascending or d3.descending.
@@ -366,7 +348,7 @@ object mod {
       * @param comparator A comparator function which returns a negative value if, according to the sorting criterion,
       * a is less than b, or a positive value if a is greater than b, or 0 if the two values are the same under the sorting criterion.
       */
-    def sortValues(comparator: js.Function2[/* a */ Datum, /* b */ Datum, Double]): this.type = js.native
+    def sortValues(comparator: js.Function2[/* a */ Datum, /* b */ Datum, Double]): this.type
   }
   object Nest_ {
     
@@ -374,7 +356,7 @@ object mod {
     def apply[Datum, RollupType](
       entries: js.Array[Datum] => js.Array[KeyValue[RollupType]],
       key: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType],
-      map: js.Array[Datum] => Map_[_],
+      map: js.Array[Datum] => Map_[js.Any],
       `object`: js.Array[Datum] => StringDictionary[js.Any],
       rollup: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType],
       sortKeys: js.Function2[/* a */ String, /* b */ String, Double] => Nest_[Datum, RollupType],
@@ -386,7 +368,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class Nest_MutableBuilder[Self <: Nest_[_, _], Datum, RollupType] (val x: Self with (Nest_[Datum, RollupType])) extends AnyVal {
+    implicit class Nest_MutableBuilder[Self <: Nest_[?, ?], Datum, RollupType] (val x: Self & (Nest_[Datum, RollupType])) extends AnyVal {
       
       @scala.inline
       def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
@@ -395,7 +377,7 @@ object mod {
       def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setMap(value: js.Array[Datum] => Map_[_]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      def setMap(value: js.Array[Datum] => Map_[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       @scala.inline
       def setObject(value: js.Array[Datum] => StringDictionary[js.Any]): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
@@ -412,11 +394,13 @@ object mod {
   }
   
   @js.native
-  trait NestedArray[Datum, RollupType] extends Array[Values[Datum, RollupType]]
+  trait NestedArray[Datum, RollupType]
+    extends StObject
+       with Array[Values[Datum, RollupType]]
   
-  @js.native
   trait NestedMap[Datum, RollupType]
-    extends Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
+    extends StObject
+       with Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
   object NestedMap {
     
     @scala.inline
@@ -443,9 +427,9 @@ object mod {
     }
   }
   
-  @js.native
   trait NestedObject[Datum, RollupType]
-    extends /* key */ StringDictionary[(NestedObject[Datum, RollupType]) | js.Array[Datum] | RollupType]
+    extends StObject
+       with /* key */ StringDictionary[(NestedObject[Datum, RollupType]) | js.Array[Datum] | RollupType]
   object NestedObject {
     
     @scala.inline
@@ -515,6 +499,5 @@ object mod {
     def values(): js.Array[String] = js.native
   }
   
-  @js.native
   trait Stringifiable extends StObject
 }

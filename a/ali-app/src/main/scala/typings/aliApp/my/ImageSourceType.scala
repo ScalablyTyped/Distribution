@@ -3,7 +3,6 @@ package typings.aliApp.my
 import typings.aliApp.aliAppStrings.camera_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 图片 https://docs.alipay.com/mini/api/media-image

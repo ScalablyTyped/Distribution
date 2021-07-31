@@ -2,19 +2,17 @@ package typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for ReimageNode.
   */
-@js.native
 trait SchemaReimageNodeRequest extends StObject {
   
   /**
     * The version for reimage to create.
     */
-  var tensorflowVersion: js.UndefOr[String] = js.native
+  var tensorflowVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaReimageNodeRequest {
   

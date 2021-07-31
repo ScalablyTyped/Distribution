@@ -11,9 +11,10 @@ import typings.vue.optionsMod.DirectiveBinding
 import typings.vue.optionsMod.DirectiveFunction
 import typings.vue.pluginMod.PluginObject
 import typings.vue.vnodeMod.VNode
+import typings.vue.vueMod.Vue
+import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,24 +23,58 @@ object mod extends Shortcut {
   @js.native
   val ^ : VueTheMaskPlugin = js.native
   
-  @js.native
   trait VueTheMaskPlugin
-    extends PluginObject[js.UndefOr[scala.Nothing]] {
+    extends StObject
+       with PluginObject[Unit] {
     
     var TheMask: Component[
         DefaultData[scala.Nothing], 
         DefaultMethods[scala.Nothing], 
         DefaultComputed, 
         DefaultProps
-      ] = js.native
+      ]
     
-    def mask(el: HTMLElement, binding: DirectiveBinding, vnode: VNode, oldVnode: VNode): Unit = js.native
+    def mask(el: HTMLElement, binding: DirectiveBinding, vnode: VNode, oldVnode: VNode): Unit
     @JSName("mask")
-    var mask_Original: DirectiveFunction = js.native
+    var mask_Original: DirectiveFunction
   }
   object VueTheMaskPlugin {
     
+    @scala.inline
+    def apply(
+      TheMask: Component[
+          DefaultData[scala.Nothing], 
+          DefaultMethods[scala.Nothing], 
+          DefaultComputed, 
+          DefaultProps
+        ],
+      install: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[Unit]) => Unit,
+      mask: (/* el */ HTMLElement, /* binding */ DirectiveBinding, /* vnode */ VNode, /* oldVnode */ VNode) => Unit
+    ): VueTheMaskPlugin = {
+      val __obj = js.Dynamic.literal(TheMask = TheMask.asInstanceOf[js.Any], install = js.Any.fromFunction2(install), mask = js.Any.fromFunction4(mask))
+      __obj.asInstanceOf[VueTheMaskPlugin]
+    }
+    
     type VueStatic = js.Function0[Unit]
+    
+    @scala.inline
+    implicit class VueTheMaskPluginMutableBuilder[Self <: VueTheMaskPlugin] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMask(
+        value: (/* el */ HTMLElement, /* binding */ DirectiveBinding, /* vnode */ VNode, /* oldVnode */ VNode) => Unit
+      ): Self = StObject.set(x, "mask", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setTheMask(
+        value: Component[
+              DefaultData[scala.Nothing], 
+              DefaultMethods[scala.Nothing], 
+              DefaultComputed, 
+              DefaultProps
+            ]
+      ): Self = StObject.set(x, "TheMask", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = VueTheMaskPlugin

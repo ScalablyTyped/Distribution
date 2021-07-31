@@ -3,49 +3,50 @@ package typings.ghauth
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(authOptions: AuthOptions, callback: js.Function2[/* err */ Error, /* tokenData */ TokenData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("ghauth", JSImport.Namespace)
   @js.native
-  def apply(authOptions: AuthOptions, callback: js.Function2[/* err */ Error, /* tokenData */ TokenData, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AuthOptions extends StObject {
     
     /**
       * @default "https://api.github.com/authorizations"
       */
-    var authUrl: js.UndefOr[String] = js.native
+    var authUrl: js.UndefOr[String] = js.undefined
     
-    var configName: String = js.native
+    var configName: String
     
     /**
       * @default false
       */
-    var noSave: js.UndefOr[Boolean] = js.native
+    var noSave: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default "Node.js command-line app with ghauth"
       */
-    var note: js.UndefOr[String] = js.native
+    var note: js.UndefOr[String] = js.undefined
     
     /**
       * @default "GitHub"
       */
-    var promptName: js.UndefOr[String] = js.native
+    var promptName: js.UndefOr[String] = js.undefined
     
     /**
       * @default []
       */
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @default "Magic Node.js application that does magic things with ghauth"
       */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object AuthOptions {
     
@@ -102,12 +103,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenData extends StObject {
     
-    var token: String = js.native
+    var token: String
     
-    var user: String = js.native
+    var user: String
   }
   object TokenData {
     

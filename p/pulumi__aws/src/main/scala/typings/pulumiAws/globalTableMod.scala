@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalTableMod {
@@ -44,6 +43,10 @@ object globalTableMod {
   /* static members */
   object GlobalTable {
     
+    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GlobalTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,40 +56,34 @@ object globalTableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalTableState): GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalTableState, opts: CustomResourceOptions): GlobalTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalTableState): GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalTableState, opts: CustomResourceOptions): GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GlobalTable]
     
     /**
       * Returns true if the given object is an instance of GlobalTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean]
   }
   
-  @js.native
   trait GlobalTableArgs extends StObject {
     
     /**
       * The name of the global table. Must match underlying DynamoDB Table names in all regions.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Underlying DynamoDB Table. At least 1 replica must be defined. See below.
       */
-    val replicas: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.GlobalTableReplica]]] = js.native
+    val replicas: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.GlobalTableReplica]]]
   }
   object GlobalTableArgs {
     
@@ -113,23 +110,22 @@ object globalTableMod {
     }
   }
   
-  @js.native
   trait GlobalTableState extends StObject {
     
     /**
       * The ARN of the DynamoDB Global Table
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the global table. Must match underlying DynamoDB Table names in all regions.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Underlying DynamoDB Table. At least 1 replica must be defined. See below.
       */
-    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.GlobalTableReplica]]]] = js.native
+    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.GlobalTableReplica]]]] = js.undefined
   }
   object GlobalTableState {
     

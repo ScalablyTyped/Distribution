@@ -2,7 +2,6 @@ package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait PlayToConnectionError extends StObject
 object PlayToConnectionError extends StObject {
   
   @js.native
-  sealed trait deviceError extends PlayToConnectionError
+  sealed trait deviceError
+    extends StObject
+       with PlayToConnectionError
   
   @js.native
-  sealed trait deviceLocked extends PlayToConnectionError
+  sealed trait deviceLocked
+    extends StObject
+       with PlayToConnectionError
   
   @js.native
-  sealed trait deviceNotResponding extends PlayToConnectionError
+  sealed trait deviceNotResponding
+    extends StObject
+       with PlayToConnectionError
   
   @js.native
-  sealed trait none extends PlayToConnectionError
+  sealed trait none
+    extends StObject
+       with PlayToConnectionError
 }

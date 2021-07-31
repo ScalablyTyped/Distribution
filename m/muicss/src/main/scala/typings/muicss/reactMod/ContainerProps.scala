@@ -4,13 +4,13 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContainerProps extends HTMLAttributes[HTMLDivElement] {
+trait ContainerProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var fluid: js.UndefOr[Boolean] = js.native
+  var fluid: js.UndefOr[Boolean] = js.undefined
 }
 object ContainerProps {
   

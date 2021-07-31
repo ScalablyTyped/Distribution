@@ -2,34 +2,32 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A change about comments on an object.
   */
-@js.native
 trait SchemaComment extends StObject {
   
   /**
     * A change on an assignment.
     */
-  var assignment: js.UndefOr[SchemaAssignment] = js.native
+  var assignment: js.UndefOr[SchemaAssignment] = js.undefined
   
   /**
     * Users who are mentioned in this comment.
     */
-  var mentionedUsers: js.UndefOr[js.Array[SchemaUser]] = js.native
+  var mentionedUsers: js.UndefOr[js.Array[SchemaUser]] = js.undefined
   
   /**
     * A change on a regular posted comment.
     */
-  var post: js.UndefOr[SchemaPost] = js.native
+  var post: js.UndefOr[SchemaPost] = js.undefined
   
   /**
     * A change on a suggestion.
     */
-  var suggestion: js.UndefOr[SchemaSuggestion] = js.native
+  var suggestion: js.UndefOr[SchemaSuggestion] = js.undefined
 }
 object SchemaComment {
   

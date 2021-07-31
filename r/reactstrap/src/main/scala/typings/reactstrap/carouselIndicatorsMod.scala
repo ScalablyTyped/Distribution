@@ -7,7 +7,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselIndicatorsMod {
@@ -19,18 +18,18 @@ object carouselIndicatorsMod {
   
   type CarouselIndicators = Component[CarouselIndicatorsProps, js.Object, js.Any]
   
-  @js.native
   trait CarouselIndicatorsProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var items: js.Array[js.Object] = js.native
+    var items: js.Array[js.Object]
     
-    def onClickHandler(idx: Double): Unit = js.native
+    def onClickHandler(idx: Double): Unit
   }
   object CarouselIndicatorsProps {
     

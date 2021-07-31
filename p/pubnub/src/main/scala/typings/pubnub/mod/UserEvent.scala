@@ -3,24 +3,22 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * deprecated: For objects v2, use objects.the ObjectsEvent
   */
-@js.native
 trait UserEvent extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var message: Data = js.native
+  var message: Data
   
-  var publisher: String = js.native
+  var publisher: String
   
-  var subscription: String = js.native
+  var subscription: String
   
-  var timetoken: String = js.native
+  var timetoken: String
 }
 object UserEvent {
   

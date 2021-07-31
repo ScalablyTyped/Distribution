@@ -2,26 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAttrExprDef...
   */
-@js.native
 trait INxAttrExprDef extends StObject {
   
   /**
     * Definition of the attribute expression.
     * Example: "Max(OrderID)"
     */
-  var qExpression: String = js.native
+  var qExpression: String
   
   /**
     * Definition of the attribute expression stored in the library..
     * Example: "MyGenericMeasure"
     */
-  var qLibraryId_ : String = js.native
+  var qLibraryId_ : String
 }
 object INxAttrExprDef {
   

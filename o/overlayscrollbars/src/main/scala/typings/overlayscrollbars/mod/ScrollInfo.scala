@@ -3,31 +3,29 @@ package typings.overlayscrollbars.mod
 import typings.overlayscrollbars.anon.XNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollInfo extends StObject {
   
-  var handleLength: XNumber = js.native
+  var handleLength: XNumber
   
-  var handleLengthRatio: XNumber = js.native
+  var handleLengthRatio: XNumber
   
-  var handleOffset: XNumber = js.native
+  var handleOffset: XNumber
   
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
   
-  var isRTLNormalized: Boolean = js.native
+  var isRTLNormalized: Boolean
   
-  var max: XNumber = js.native
+  var max: XNumber
   
-  var position: XNumber = js.native
+  var position: XNumber
   
-  var ratio: XNumber = js.native
+  var ratio: XNumber
   
-  var snappedHandleOffset: XNumber = js.native
+  var snappedHandleOffset: XNumber
   
-  var trackLength: XNumber = js.native
+  var trackLength: XNumber
 }
 object ScrollInfo {
   

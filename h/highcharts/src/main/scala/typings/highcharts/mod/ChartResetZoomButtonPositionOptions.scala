@@ -2,35 +2,33 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartResetZoomButtonPositionOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The horizontal alignment of the
     * button.
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * button.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The horizontal offset of the
     * button.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical offset of the
     * button.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ChartResetZoomButtonPositionOptions {
   

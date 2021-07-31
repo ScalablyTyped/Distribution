@@ -2,26 +2,24 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /**
     * 文件的保存时的时间戳，从1970/01/01 08:00:00 到当前时间的秒数
     */
-  var createTime: Double = js.native
+  var createTime: Double
   
   /**
     * 文件的本地路径
     */
-  var filePath: String = js.native
+  var filePath: String
   
   /**
     * 文件大小，单位B
     */
-  var size: Double = js.native
+  var size: Double
 }
 object File {
   

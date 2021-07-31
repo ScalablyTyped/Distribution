@@ -2,51 +2,49 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecoveryPointsByBackupVaultInput extends StObject {
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
-  var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName = js.native
+  var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName
   
   /**
     * Returns only recovery points that match the specified backup plan ID.
     */
-  var ByBackupPlanId: js.UndefOr[String] = js.native
+  var ByBackupPlanId: js.UndefOr[String] = js.undefined
   
   /**
     * Returns only recovery points that were created after the specified timestamp.
     */
-  var ByCreatedAfter: js.UndefOr[timestamp] = js.native
+  var ByCreatedAfter: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Returns only recovery points that were created before the specified timestamp.
     */
-  var ByCreatedBefore: js.UndefOr[timestamp] = js.native
+  var ByCreatedBefore: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Returns only recovery points that match the specified resource Amazon Resource Name (ARN).
     */
-  var ByResourceArn: js.UndefOr[ARN] = js.native
+  var ByResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Returns only recovery points that match the specified resource type.
     */
-  var ByResourceType: js.UndefOr[ResourceType] = js.native
+  var ByResourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The maximum number of items to be returned.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.backupMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.backupMod.MaxResults] = js.undefined
   
   /**
     * The next item following a partial list of returned items. For example, if a request is made to return maxResults number of items, NextToken allows you to return more items in your list starting at the location pointed to by the next token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListRecoveryPointsByBackupVaultInput {
   

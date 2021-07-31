@@ -2,15 +2,13 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var image: String = js.native
+  var image: String
   
-  var root: String = js.native
+  var root: String
 }
 object Image {
   

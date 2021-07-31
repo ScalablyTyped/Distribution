@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait CrossSlidingState extends StObject
 object CrossSlidingState extends StObject {
   
   @js.native
-  sealed trait completed extends CrossSlidingState
+  sealed trait completed
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait dragging extends CrossSlidingState
+  sealed trait dragging
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait rearranging extends CrossSlidingState
+  sealed trait rearranging
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait selectSpeedBumping extends CrossSlidingState
+  sealed trait selectSpeedBumping
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait selecting extends CrossSlidingState
+  sealed trait selecting
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait speedBumping extends CrossSlidingState
+  sealed trait speedBumping
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait started extends CrossSlidingState
+  sealed trait started
+    extends StObject
+       with CrossSlidingState
 }

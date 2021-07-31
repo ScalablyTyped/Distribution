@@ -3,19 +3,17 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultSummary extends StObject {
   
-  var aggregatedResultsAnalysis: AggregatedResultsAnalysis = js.native
+  var aggregatedResultsAnalysis: AggregatedResultsAnalysis
   
-  var teamProject: TeamProjectReference = js.native
+  var teamProject: TeamProjectReference
   
-  var testFailures: TestFailuresAnalysis = js.native
+  var testFailures: TestFailuresAnalysis
   
-  var testResultsContext: TestResultsContext = js.native
+  var testResultsContext: TestResultsContext
 }
 object TestResultSummary {
   

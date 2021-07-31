@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,22 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * layer is the same as the document ui configuration manager uses.
   * @since OOo 2.0
   */
-@js.native
-trait XModuleUIConfigurationManager extends XInterface {
+trait XModuleUIConfigurationManager
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the settings from the default layer of the user interface configuration manager if it has a default layer.
     * @param ResourceURL a resource URL which identifies the user interface element. A resource URL must meet the following syntax: "private:resource/$type/$n
     * @returns `TRUE` if default settings have been found in the default layer, otherwise `FALSE` .
     */
-  def getDefaultSettings(ResourceURL: String): XIndexAccess = js.native
+  def getDefaultSettings(ResourceURL: String): XIndexAccess
   
   /**
     * determine if the settings of a user interface element is part of the default layer of the user interface configuration manager.
     * @param ResourceURL a resource URL which identifies the user interface element. A resource URL must meet the following syntax: "private:resource/$type/$n
     * @returns `TRUE` if settings have been found in the default layer, otherwise `FALSE` .
     */
-  def isDefaultSettings(ResourceURL: String): Boolean = js.native
+  def isDefaultSettings(ResourceURL: String): Boolean
 }
 object XModuleUIConfigurationManager {
   

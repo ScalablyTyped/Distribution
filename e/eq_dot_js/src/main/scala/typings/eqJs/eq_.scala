@@ -7,19 +7,17 @@ import typings.std.HTMLElement
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eq_ {
   
   type AvailableElementType = HTMLElement | HTMLCollectionOf[Element] | js.Array[HTMLElement] | NodeList | JQuery
   
-  @js.native
   trait EqjsKeyValuePair extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object EqjsKeyValuePair {
     

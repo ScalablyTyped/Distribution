@@ -3,23 +3,21 @@ package typings.sharepoint.SP.JsGrid
 import typings.sharepoint.anon.AnyChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Internal {
   
-  @js.native
   trait DiffTracker extends StObject {
     
-    def Clear(): Unit = js.native
+    def Clear(): Unit
     
-    var ExternalAPI: AnyChanges = js.native
+    var ExternalAPI: AnyChanges
     
-    def NotifyRollbackChange(changeKey: IChangeKey): Unit = js.native
+    def NotifyRollbackChange(changeKey: IChangeKey): Unit
     
-    def NotifySynchronizeToChange(changeKey: IChangeKey): Unit = js.native
+    def NotifySynchronizeToChange(changeKey: IChangeKey): Unit
     
-    def NotifyVacateChange(changeKey: IChangeKey): Unit = js.native
+    def NotifyVacateChange(changeKey: IChangeKey): Unit
   }
   object DiffTracker {
     
@@ -55,11 +53,12 @@ object Internal {
     }
   }
   
-  @js.native
-  trait PropertyUpdate extends IValue {
+  trait PropertyUpdate
+    extends StObject
+       with IValue {
     
     @JSName("localized")
-    var localized_PropertyUpdate: String = js.native
+    var localized_PropertyUpdate: String
   }
   object PropertyUpdate {
     

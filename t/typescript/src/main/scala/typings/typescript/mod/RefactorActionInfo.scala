@@ -2,14 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single refactoring action - for example, the "Extract Method..." refactor might
   * offer several actions, each corresponding to a surround class or closure to extract into.
   */
-@js.native
 trait RefactorActionInfo extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait RefactorActionInfo extends StObject {
     * If the parent refactoring is inlined away, this will be the only text shown,
     * so this description should make sense by itself if the parent is inlineable=true
     */
-  var description: java.lang.String = js.native
+  var description: java.lang.String
   
   /**
     * The programmatic name of the refactoring action
     */
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
   /**
     * A message to show to the user if the refactoring cannot be applied in
     * the current context.
     */
-  var notApplicableReason: js.UndefOr[java.lang.String] = js.native
+  var notApplicableReason: js.UndefOr[java.lang.String] = js.undefined
 }
 object RefactorActionInfo {
   

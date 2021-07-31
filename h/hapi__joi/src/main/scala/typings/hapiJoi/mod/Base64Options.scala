@@ -2,21 +2,19 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<@hapi/joi.@hapi/joi.DataUriOptions, 'paddingRequired'> */
-@js.native
 trait Base64Options extends StObject {
   
-  var paddingRequired: js.UndefOr[Boolean] = js.native
+  var paddingRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * if true, uses the URI-safe base64 format which replaces `+` with `-` and `\` with `_`.
     *
     * @default false
     */
-  var urlSafe: js.UndefOr[Boolean] = js.native
+  var urlSafe: js.UndefOr[Boolean] = js.undefined
 }
 object Base64Options {
   

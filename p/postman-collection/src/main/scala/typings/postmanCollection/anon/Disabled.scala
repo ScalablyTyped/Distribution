@@ -2,15 +2,13 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled[TDefinition /* <: js.Object */] extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var info: TDefinition = js.native
+  var info: TDefinition
 }
 object Disabled {
   
@@ -21,7 +19,7 @@ object Disabled {
   }
   
   @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled[_], TDefinition /* <: js.Object */] (val x: Self with Disabled[TDefinition]) extends AnyVal {
+  implicit class DisabledMutableBuilder[Self <: Disabled[?], TDefinition /* <: js.Object */] (val x: Self & Disabled[TDefinition]) extends AnyVal {
     
     @scala.inline
     def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRenderTemplateRequest extends StObject {
   
   /**
     * A list of replacement values to apply to the template. This parameter is a JSON object, typically consisting of key-value pairs in which the keys correspond to replacement tags in the email template.
     */
-  var TemplateData: typings.awsSdk.sesMod.TemplateData = js.native
+  var TemplateData: typings.awsSdk.sesMod.TemplateData
   
   /**
     * The name of the template that you want to render.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
 }
 object TestRenderTemplateRequest {
   

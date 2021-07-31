@@ -5,7 +5,6 @@ import typings.moment.mod.Moment
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,22 +18,21 @@ object mod {
   
   type InputMoment = Component[InputMomentProps, js.Object, js.Any]
   
-  @js.native
   trait InputMomentProps extends StObject {
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var minStep: js.UndefOr[Double] = js.native
+    var minStep: js.UndefOr[Double] = js.undefined
     
-    var moment: Moment = js.native
+    var moment: Moment
     
-    var nextMonthIcon: js.UndefOr[String] = js.native
+    var nextMonthIcon: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[OnChangeListener] = js.native
+    var onChange: js.UndefOr[OnChangeListener] = js.undefined
     
-    var onSave: js.UndefOr[OnSaveListener] = js.native
+    var onSave: js.UndefOr[OnSaveListener] = js.undefined
     
-    var prevMonthIcon: js.UndefOr[String] = js.native
+    var prevMonthIcon: js.UndefOr[String] = js.undefined
   }
   object InputMomentProps {
     

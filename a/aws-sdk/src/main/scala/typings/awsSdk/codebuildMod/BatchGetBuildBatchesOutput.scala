@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetBuildBatchesOutput extends StObject {
   
   /**
     * An array of BuildBatch objects that represent the retrieved batch builds.
     */
-  var buildBatches: js.UndefOr[BuildBatches] = js.native
+  var buildBatches: js.UndefOr[BuildBatches] = js.undefined
   
   /**
     * An array that contains the identifiers of any batch builds that are not found.
     */
-  var buildBatchesNotFound: js.UndefOr[BuildBatchIds] = js.native
+  var buildBatchesNotFound: js.UndefOr[BuildBatchIds] = js.undefined
 }
 object BatchGetBuildBatchesOutput {
   

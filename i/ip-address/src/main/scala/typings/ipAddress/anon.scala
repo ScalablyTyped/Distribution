@@ -3,19 +3,17 @@ package typings.ipAddress
 import typings.ipAddress.ipv6Mod.Address6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: Null = js.native
+    var address: Null
     
-    var error: String = js.native
+    var error: String
     
-    var port: Null = js.native
+    var port: Null
   }
   object Address {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var v4: js.UndefOr[Boolean] = js.native
+    var v4: js.UndefOr[Boolean] = js.undefined
   }
   object ClassName {
     
@@ -79,20 +76,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var address: Address6 = js.native
+    var address: Address6
     
-    var error: js.UndefOr[scala.Nothing] = js.native
+    var error: Unit
     
-    var port: Double | Null = js.native
+    var port: Double | Null
   }
   object Error {
     
     @scala.inline
-    def apply(address: Address6): Error = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    def apply(address: Address6, error: Unit): Error = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], port = null)
       __obj.asInstanceOf[Error]
     }
     
@@ -103,6 +99,9 @@ object anon {
       def setAddress(value: Address6): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -110,16 +109,15 @@ object anon {
     }
   }
   
-  @js.native
   trait GroupIndividual extends StObject {
     
-    var groupIndividual: Boolean = js.native
+    var groupIndividual: Boolean
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var reserved: Boolean = js.native
+    var reserved: Boolean
     
-    var universalLocal: Boolean = js.native
+    var universalLocal: Boolean
   }
   object GroupIndividual {
     

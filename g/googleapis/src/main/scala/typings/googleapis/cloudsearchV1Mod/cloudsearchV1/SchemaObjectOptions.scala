@@ -2,25 +2,23 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for an object.
   */
-@js.native
 trait SchemaObjectOptions extends StObject {
   
   /**
     * Options that determine how the object is displayed in the Cloud Search
     * results page.
     */
-  var displayOptions: js.UndefOr[SchemaObjectDisplayOptions] = js.native
+  var displayOptions: js.UndefOr[SchemaObjectDisplayOptions] = js.undefined
   
   /**
     * The freshness options for an object.
     */
-  var freshnessOptions: js.UndefOr[SchemaFreshnessOptions] = js.native
+  var freshnessOptions: js.UndefOr[SchemaFreshnessOptions] = js.undefined
 }
 object SchemaObjectOptions {
   

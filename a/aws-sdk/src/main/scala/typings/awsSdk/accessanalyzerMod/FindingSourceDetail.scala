@@ -2,16 +2,14 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingSourceDetail extends StObject {
   
   /**
     * The ARN of the access point that generated the finding.
     */
-  var accessPointArn: js.UndefOr[String] = js.native
+  var accessPointArn: js.UndefOr[String] = js.undefined
 }
 object FindingSourceDetail {
   

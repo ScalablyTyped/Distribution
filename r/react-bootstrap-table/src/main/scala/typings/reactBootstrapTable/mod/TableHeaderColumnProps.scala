@@ -6,18 +6,18 @@ import typings.react.mod.ReactElement
 import typings.reactBootstrapTable.anon.GetElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
+trait TableHeaderColumnProps
+  extends StObject
+     with Props[TableHeaderColumn] {
   
   /**
     * It only work for enabling insertRow and be assign on rowKey column. If true, the value of rowkey will be
     * generated automatically after a row insertion. If a function given, you can customize the value by yourself and
     * remember to return the value for the cell from the function.
     */
-  var autoValue: js.UndefOr[Boolean | js.Function0[_]] = js.native
+  var autoValue: js.UndefOr[Boolean | js.Function0[js.Any]] = js.undefined
   
   /**
     * Allow user to render a custom sort caret. You should give a function and should return a JSX.
@@ -27,7 +27,7 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     */
   var caretRender: js.UndefOr[
     js.Function2[/* direction */ SortOrder | Null, /* fieldName */ String, String | ReactElement]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Add custom css class on table header column, this attribute only accept String or Function.
@@ -42,13 +42,13 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* columnIndex */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates how many columns this column takes.
     * Default: 1
     */
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * Add custom css class on table body column, this attribute only accept String or Function.
@@ -63,7 +63,7 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* columnIndex */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Show the title on each column in the data section of the table.
@@ -77,29 +77,29 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* colIndex */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specify the field type to use when exporting this column to CSV. Available types are 'number' and 'string'.
     * Defaults to 'string'.
     */
-  var csvFieldType: js.UndefOr[CSVFieldType] = js.native
+  var csvFieldType: js.UndefOr[CSVFieldType] = js.undefined
   
   /**
     * Customize the cell content when exporting to a CSV file. This function takes two argument: cell, row.
     */
-  var csvFormat: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, String]] = js.native
+  var csvFormat: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, String]] = js.undefined
   
   /**
     * It's usually used with csvFormat, and it's same as formatExtraData.
     * You can give any additional data you want to be passed to the csvFormat function.
     */
-  var csvFormatExtraData: js.UndefOr[js.Any] = js.native
+  var csvFormatExtraData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Customize the column header text for the column when exporting to a CSV file.
     */
-  var csvHeader: js.UndefOr[String] = js.native
+  var csvHeader: js.UndefOr[String] = js.undefined
   
   /**
     * Give an Object like following to able to customize your own editing component.
@@ -107,7 +107,7 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     *   getElement(REQUIRED): Accept a callback function and take two arguments: onUpdate and props.
     *   customEditorParameters: Additional data for custom cell edit component.
     */
-  var customEditor: js.UndefOr[CustomEditor[_, _]] = js.native
+  var customEditor: js.UndefOr[CustomEditor[js.Any, js.Any]] = js.undefined
   
   /**
     * Custom insert editor element. This is a function to generate a custom edit element to display in the InsertModal
@@ -120,18 +120,18 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     * The function should return either a JSX element for the field, or false to default back to the standard edit
     * element.
     */
-  var customInsertEditor: js.UndefOr[GetElement] = js.native
+  var customInsertEditor: js.UndefOr[GetElement] = js.undefined
   
   /**
     * Set the text alignment in the column, possible values are 'left', 'center', 'right', 'start' and 'end'.
     */
-  var dataAlign: js.UndefOr[DataAlignType] = js.native
+  var dataAlign: js.UndefOr[DataAlignType] = js.undefined
   
   /**
     * The field of data you want to show on column. This is used throughout react-bootstrap-table as the column field
     * name.
     */
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
   /**
     * To customize the column. This callback function should return a String or a React Component.
@@ -146,27 +146,27 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* rowIndex */ Double, 
       String | ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * True to enable table sorting on this column. Default is disabled.
     */
-  var dataSort: js.UndefOr[Boolean] = js.native
+  var dataSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Support specifying that the column should start sorting with the 'asc' option.
     */
-  var defaultASC: js.UndefOr[Boolean] = js.native
+  var defaultASC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add custom css class on editing cell, if assign a callback function, you are supposed to return a String for class name
     */
-  var editColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.native
+  var editColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.undefined
   
   /**
     * Specify custom tdAttrs to use for a cell that is being edited within this column.
     */
-  var editTdAttr: js.UndefOr[CustomAttrs] = js.native
+  var editTdAttr: js.UndefOr[CustomAttrs] = js.undefined
   
   /**
     * boolean: Add True to set column editable, false is non-editable.
@@ -176,21 +176,21 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     * object: @see Editable interface.
     */
   var editable: js.UndefOr[
-    Boolean | (Editable[_, _]) | (js.Function4[
+    Boolean | (Editable[js.Any, js.Any]) | (js.Function4[
       /* cell */ js.Any, 
       /* row */ js.Any, 
       /* rowIndex */ Double, 
       /* columnIndex */ Double, 
       Boolean | String | EditValidatorObject
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Usually used with Options.expandBy.
     * You can assign which columns will trigger a row expansion or not.
     * If false, clicking on a row inside this column will not cause the row to expand.
     */
-  var expandable: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to specify whether a column will be exported to csv.
@@ -200,19 +200,19 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     *
     * If false, the column will be excluded from the csv export.
     */
-  var export: js.UndefOr[Boolean] = js.native
+  var `export`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * To Enable a column filter within header column.
     * This feature support a lots of filter types and conditions.
     */
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
   /**
     * When true, the column will filter using the value returned by the column's formatter.
     * When false (default), the column will filter using the pre-formatted value.
     */
-  var filterFormatted: js.UndefOr[Boolean] = js.native
+  var filterFormatted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return the value you want to be filtered on that column.
@@ -220,70 +220,70 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     * @example: (cell, row) => cell.fieldOne;
     * @see: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/manipulation/search-format-table.js
     */
-  var filterValue: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, _]] = js.native
+  var filterValue: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, js.Any]] = js.undefined
   
   /**
     * It's useful with dataFormat, you can give any data you want to be passed to the formatter.
     */
-  var formatExtraData: js.UndefOr[js.Any] = js.native
+  var formatExtraData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Alignment of text in the column header.
     * Tip: If you don't set the headerAlign, it will default to the setting for dataAlign.
     */
-  var headerAlign: js.UndefOr[DataAlignType] = js.native
+  var headerAlign: js.UndefOr[DataAlignType] = js.undefined
   
   /**
     * If the children of TableHeaderColumn is a JSX or Object, we prefer to add this prop to describe this column with
     * a pure text(String). It will be used on the placeholder or tips in the filter, search field or insert field etc.
     */
-  var headerText: js.UndefOr[String] = js.native
+  var headerText: js.UndefOr[String] = js.undefined
   
   /**
     * Show the title on each column in the header section of the table, default is true.
     */
-  var headerTitle: js.UndefOr[Boolean] = js.native
+  var headerTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true to hide the column. Default is false. Often used to hide rowKey columns that are required to
     * identify a row but that do not need to be visible.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set this to true to hide this column on insert modal. Default is false.
     *
     * This is often used together with autoValue for auto-generated columns like row keys.
     */
-  var hiddenOnInsert: js.UndefOr[Boolean] = js.native
+  var hiddenOnInsert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add custom css class for invalid editing cell, if assign a callback function, you are supposed to return a String for class name
     */
-  var invalidEditColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.native
+  var invalidEditColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.undefined
   
   /**
     * Use isKey to tell table which column is unique. This is same as the keyField in <BootstrapTable>
     * Tips: You need choose one configuration to set key field: isKey or the keyField in <BootstrapTable>
     */
-  var isKey: js.UndefOr[Boolean] = js.native
+  var isKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always used together with rowSpan and colSpan, to create multi-row/multi-column headers.
     * Row is the header row on which this header column present.
     */
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates how many rows this column takes.
     * Default: 1
     */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * False to disable search functionality on column, default is true.
     */
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Give a custom callback function for data sorting.
@@ -299,12 +299,12 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* extraData */ js.Any, 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Extra data for the custom sort function. If defined, this data will be passed as fifth argument in sortFunc.
     */
-  var sortFuncExtraData: js.UndefOr[js.Any] = js.native
+  var sortFuncExtraData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set the column class name for the actively filtered column. Can be either a string, or a function that takes two
@@ -315,13 +315,13 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
     * or 'desc'.
     * @see https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/sort/sort-style-table.js#L36-L37
     */
-  var sortHeaderColumnClassName: js.UndefOr[String | (js.Function2[/* order */ SortOrder, /* dataField */ String, String])] = js.native
+  var sortHeaderColumnClassName: js.UndefOr[String | (js.Function2[/* order */ SortOrder, /* dataField */ String, String])] = js.undefined
   
   /**
     * Allow you to add your custom attributes on TD element.
     * Example: tdAttr={ { 'data-attr': 'test' } }
     */
-  var tdAttr: js.UndefOr[CustomAttrs] = js.native
+  var tdAttr: js.UndefOr[CustomAttrs] = js.undefined
   
   /**
     * Allow you to add your custom style object on TD element. Accepts either a CSS Properties object, or
@@ -339,17 +339,17 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* columnIndex */ Double, 
       CSSProperties
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allow you to add your custom style object on TH element.
     */
-  var thStyle: js.UndefOr[CSSProperties] = js.native
+  var thStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Set the column width, including the units. e.g. '10%' or '150px'
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object TableHeaderColumnProps {
   
@@ -363,10 +363,10 @@ object TableHeaderColumnProps {
   implicit class TableHeaderColumnPropsMutableBuilder[Self <: TableHeaderColumnProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAutoValue(value: Boolean | js.Function0[_]): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
+    def setAutoValue(value: Boolean | js.Function0[js.Any]): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoValueFunction0(value: () => _): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
+    def setAutoValueFunction0(value: () => js.Any): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
@@ -465,7 +465,7 @@ object TableHeaderColumnProps {
     def setCsvHeaderUndefined: Self = StObject.set(x, "csvHeader", js.undefined)
     
     @scala.inline
-    def setCustomEditor(value: CustomEditor[_, _]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
+    def setCustomEditor(value: CustomEditor[js.Any, js.Any]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomEditorUndefined: Self = StObject.set(x, "customEditor", js.undefined)
@@ -525,7 +525,7 @@ object TableHeaderColumnProps {
     
     @scala.inline
     def setEditable(
-      value: Boolean | (Editable[_, _]) | (js.Function4[
+      value: Boolean | (Editable[js.Any, js.Any]) | (js.Function4[
           /* cell */ js.Any, 
           /* row */ js.Any, 
           /* rowIndex */ Double, 
@@ -567,7 +567,7 @@ object TableHeaderColumnProps {
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFilterValue(value: (/* cell */ js.Any, /* row */ js.Any) => _): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
+    def setFilterValue(value: (/* cell */ js.Any, /* row */ js.Any) => js.Any): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
     
     @scala.inline
     def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)

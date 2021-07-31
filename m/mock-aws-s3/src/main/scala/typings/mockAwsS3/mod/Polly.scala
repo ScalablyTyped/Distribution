@@ -4,7 +4,6 @@ import typings.awsSdk.pollyMod.ClientConfiguration
 import typings.awsSdk.presignerMod.Presigner.PresignerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Polly")

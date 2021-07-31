@@ -17,7 +17,6 @@ import typings.typedGithubApi.typedGithubApiStrings.sources
 import typings.typedGithubApi.typedGithubApiStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationRefMod {

@@ -2,39 +2,37 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait env extends StObject {
   
-  var cssPrefix: String = js.native
+  var cssPrefix: String
   
-  var isFF: Boolean = js.native
+  var isFF: Boolean
   
-  var isIE: Boolean = js.native
+  var isIE: Boolean
   
-  var isSafari: Boolean = js.native
+  var isSafari: Boolean
   
-  var isWebKit: Boolean = js.native
+  var isWebKit: Boolean
   
-  var jsPrefix: String = js.native
+  var jsPrefix: String
   
-  var mouse: js.Any = js.native
+  var mouse: js.Any
   
-  var strict: Boolean = js.native
+  var strict: Boolean
   
-  var svg: Boolean = js.native
+  var svg: Boolean
   
-  var transform: Boolean = js.native
+  var transform: Boolean
   
-  var transition: Boolean = js.native
+  var transition: Boolean
   
-  var transitionDuration: String = js.native
+  var transitionDuration: String
   
-  var transitionEnd: String = js.native
+  var transitionEnd: String
   
-  var translate: String = js.native
+  var translate: String
 }
 object env {
   

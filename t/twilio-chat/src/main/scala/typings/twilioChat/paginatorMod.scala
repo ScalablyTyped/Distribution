@@ -2,7 +2,6 @@ package typings.twilioChat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatorMod {
@@ -16,15 +15,17 @@ object paginatorMod {
     */
   @JSImport("twilio-chat/lib/interfaces/paginator", "SamplePaginator")
   @js.native
-  class SamplePaginator[T] () extends Paginator[T]
-  
-  @js.native
-  trait Paginator[T] extends StObject {
+  class SamplePaginator[T] ()
+    extends StObject
+       with Paginator[T] {
     
+    /* CompleteClass */
     var hasNextPage: Boolean = js.native
     
+    /* CompleteClass */
     var hasPrevPage: Boolean = js.native
     
+    /* CompleteClass */
     var items: js.Array[T] = js.native
     
     /**
@@ -32,14 +33,39 @@ object paginatorMod {
       * Does not modify existing object.
       * @return {Promise<Paginator<T>>}
       */
-    def nextPage(): js.Promise[Paginator[T]] = js.native
+    /* CompleteClass */
+    override def nextPage(): js.Promise[Paginator[T]] = js.native
     
     /**
       * Request previous page.
       * Does not modify existing object.
       * @return {Promise<Paginator<T>>}
       */
-    def prevPage(): js.Promise[Paginator[T]] = js.native
+    /* CompleteClass */
+    override def prevPage(): js.Promise[Paginator[T]] = js.native
+  }
+  
+  trait Paginator[T] extends StObject {
+    
+    var hasNextPage: Boolean
+    
+    var hasPrevPage: Boolean
+    
+    var items: js.Array[T]
+    
+    /**
+      * Request next page.
+      * Does not modify existing object.
+      * @return {Promise<Paginator<T>>}
+      */
+    def nextPage(): js.Promise[Paginator[T]]
+    
+    /**
+      * Request previous page.
+      * Does not modify existing object.
+      * @return {Promise<Paginator<T>>}
+      */
+    def prevPage(): js.Promise[Paginator[T]]
   }
   object Paginator {
     
@@ -56,7 +82,7 @@ object paginatorMod {
     }
     
     @scala.inline
-    implicit class PaginatorMutableBuilder[Self <: Paginator[_], T] (val x: Self with Paginator[T]) extends AnyVal {
+    implicit class PaginatorMutableBuilder[Self <: Paginator[?], T] (val x: Self & Paginator[T]) extends AnyVal {
       
       @scala.inline
       def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])

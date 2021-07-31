@@ -8,7 +8,6 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -19,7 +18,8 @@ object gapi {
       
       @js.native
       trait BaseModelEvent
-        extends /* Parameters:
+        extends StObject
+           with /* Parameters:
         target
         gapi.drive.realtime.CollaborativeObject
         The collaborative object that initiated the event.
@@ -91,7 +91,9 @@ object gapi {
       }
       
       @js.native
-      trait CollaborativeList[V] extends CollaborativeObject {
+      trait CollaborativeList[V]
+        extends StObject
+           with CollaborativeObject {
         
         // Returns a copy of the contents of this collaborative list as an array.
         // Changes to the returned object will not affect the original collaborative list.
@@ -169,7 +171,9 @@ object gapi {
       }
       
       @js.native
-      trait CollaborativeMap[V] extends CollaborativeObject {
+      trait CollaborativeMap[V]
+        extends StObject
+           with CollaborativeObject {
         
         // Removes all entries.
         def clear(): Unit = js.native
@@ -253,7 +257,9 @@ object gapi {
       }
       
       @js.native
-      trait CollaborativeString extends CollaborativeObject {
+      trait CollaborativeString
+        extends StObject
+           with CollaborativeObject {
         
         // Appends a string to the end of this one.
         def append(text: String): Unit = js.native
@@ -283,37 +289,36 @@ object gapi {
         var text: String = js.native
       }
       
-      @js.native
       trait Collaborator extends StObject {
         
         // The HTML color associated with this collaborator. When possible, collaborators are assigned unique colors.
-        var color: String = js.native
+        var color: String
         
         // The display name for this collaborator.
-        var displayName: String = js.native
+        var displayName: String
         
         // True if this collaborator is anonymous, false otherwise.
-        var isAnonymous: Boolean = js.native
+        var isAnonymous: Boolean
         
         // True if this collaborator is the local user, false otherwise.
-        var isMe: Boolean = js.native
+        var isMe: Boolean
         
         // The permission ID for this collaborator. This ID is stable for a given user and is compatible with the
         // Drive API permissions APIs. Use the userId property for all other uses.
-        var permissionId: String = js.native
+        var permissionId: String
         
         // A URL that points to the profile photo for this collaborator, or to a generic profile photo for
         // anonymous collaborators.
-        var photoUrl: String = js.native
+        var photoUrl: String
         
         // The session ID for this collaborator. A single user may have multiple sessions if they have the same document
         // open on multiple devices or in multiple browser tabs.
-        var sessionId: String = js.native
+        var sessionId: String
         
         // The user ID for this collaborator. This ID is stable for a given user and is compatible with most Google APIs
         // except the Drive API permission APIs. For an ID which is compatible with the Drive API permission APIs,
         // use the permissionId property.
-        var userId: String = js.native
+        var userId: String
       }
       object Collaborator {
         
@@ -415,18 +420,17 @@ object gapi {
         var saveDelay: Double = js.native
       }
       
-      @js.native
       trait Error extends StObject {
         
         // Whether the error is fatal. Fatal errors cannot be recovered
         // from and require the document to be reloaded.
-        var isFatal: Boolean = js.native
+        var isFatal: Boolean
         
         // A message describing the error.
-        var message: String = js.native
+        var message: String
         
         // The type of the error that occurred.
-        var `type`: ErrorType = js.native
+        var `type`: ErrorType
       }
       object Error {
         
@@ -570,7 +574,9 @@ object gapi {
       type GoogEventHandler = (js.Function1[(/* e */ Event) | (/* evt */ ObjectChangedEvent), Unit]) | EventListener
       
       @js.native
-      trait IndexReference[V] extends CollaborativeObject {
+      trait IndexReference[V]
+        extends StObject
+           with CollaborativeObject {
         
         // The behavior of this index reference when the element it points at is deleted.
         // @return one of the elements of DeleteMode
@@ -602,9 +608,9 @@ object gapi {
         // Note that the compound operation MUST start and end in the same synchronous execution block. If this invariant
         // is violated, the data model will become invalid and all future changes will fail.
         def beginCompoundOperation(): Unit = js.native
-        def beginCompoundOperation(opt_name: js.UndefOr[scala.Nothing], opt_isUndoable: Boolean): Unit = js.native
         def beginCompoundOperation(opt_name: String): Unit = js.native
         def beginCompoundOperation(opt_name: String, opt_isUndoable: Boolean): Unit = js.native
+        def beginCompoundOperation(opt_name: Unit, opt_isUndoable: Boolean): Unit = js.native
         
         // An estimate of the number of bytes used by data stored in the model.
         var bytesUsed: Double = js.native
@@ -645,7 +651,7 @@ object gapi {
         def getObject(id: String): CollaborativeObject = js.native
         
         // Returns the root of the object model.
-        def getRoot(): CollaborativeMap[_] = js.native
+        def getRoot(): CollaborativeMap[js.Any] = js.native
         
         // The mode of the document. If true, the document is read-only. If false, it is editable.
         def isReadOnly(): Boolean = js.native
@@ -673,9 +679,9 @@ object gapi {
         // version of this data model which does not require a network connection.
         // See https://developers.google.com/drive/v2/reference/realtime/update for more information.
         def toJson(): String = js.native
-        def toJson(opt_appId: js.UndefOr[scala.Nothing], opt_revision: Double): String = js.native
         def toJson(opt_appId: String): String = js.native
         def toJson(opt_appId: String, opt_revision: Double): String = js.native
+        def toJson(opt_appId: Unit, opt_revision: Double): String = js.native
         
         // Undo the last thing the active collaborator did.
         def undo(): Unit = js.native
@@ -683,7 +689,8 @@ object gapi {
       
       @js.native
       trait ObjectChangedEvent
-        extends BaseModelEvent
+        extends StObject
+           with BaseModelEvent
            with // parameters as in BaseModelEvent above except for addition of:
       // events:
       // Array of gapi.drive.realtime.BaseModelEvent
@@ -707,7 +714,8 @@ object gapi {
       
       @js.native
       trait ValuesAddedEvent[V]
-        extends BaseModelEvent
+        extends StObject
+           with BaseModelEvent
            with Instantiable11[
                   /* target */ CollaborativeObject, 
                   /* sessionId */ String, 
@@ -735,7 +743,8 @@ object gapi {
       
       @js.native
       trait ValuesRemovedEvent[V]
-        extends BaseModelEvent
+        extends StObject
+           with BaseModelEvent
            with Instantiable11[
                   /* target */ CollaborativeObject, 
                   /* sessionId */ String, 
@@ -763,18 +772,17 @@ object gapi {
       
       object databinding {
         
-        @js.native
         trait Binding extends StObject {
           
           // Throws gapi.drive.realtime.databinding.AlreadyBoundError If domElement has already been bound.
           // The collaborative object to bind.
-          var collaborativeObject: CollaborativeObject = js.native
+          var collaborativeObject: CollaborativeObject
           
           // The DOM element that the collaborative object is bound to. Value must not be null.
-          var domElement: Element = js.native
+          var domElement: Element
           
           // Unbinds the domElement from collaborativeObject.
-          def unbind(): Unit = js.native
+          def unbind(): Unit
         }
         object Binding {
           

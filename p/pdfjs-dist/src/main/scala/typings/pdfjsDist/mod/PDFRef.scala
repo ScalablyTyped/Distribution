@@ -2,15 +2,13 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFRef extends StObject {
   
-  var gen: js.Any = js.native
+  var gen: js.Any
   
-  var num: Double = js.native
+  var num: Double
 }
 object PDFRef {
   

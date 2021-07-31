@@ -3,39 +3,37 @@ package typings.bull
 import typings.bull.mod.JobOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AttemptsMade[T] extends StObject {
     
-    var attemptsMade: Double = js.native
+    var attemptsMade: Double
     
-    var data: T = js.native
+    var data: T
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var failedReason: js.Any = js.native
+    var failedReason: js.Any
     
-    var finishedOn: Double | Null = js.native
+    var finishedOn: Double | Null
     
-    var id: typings.bull.mod.JobId = js.native
+    var id: typings.bull.mod.JobId
     
-    var name: String = js.native
+    var name: String
     
-    var opts: JobOptions = js.native
+    var opts: JobOptions
     
-    var processedOn: Double | Null = js.native
+    var processedOn: Double | Null
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var returnvalue: js.Any = js.native
+    var returnvalue: js.Any
     
-    var stacktrace: js.Array[String] | Null = js.native
+    var stacktrace: js.Array[String] | Null
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object AttemptsMade {
     
@@ -52,12 +50,12 @@ object anon {
       returnvalue: js.Any,
       timestamp: Double
     ): AttemptsMade[T] = {
-      val __obj = js.Dynamic.literal(attemptsMade = attemptsMade.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], failedReason = failedReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], returnvalue = returnvalue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attemptsMade = attemptsMade.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], failedReason = failedReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], returnvalue = returnvalue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], finishedOn = null, processedOn = null, stacktrace = null)
       __obj.asInstanceOf[AttemptsMade[T]]
     }
     
     @scala.inline
-    implicit class AttemptsMadeMutableBuilder[Self <: AttemptsMade[_], T] (val x: Self with AttemptsMade[T]) extends AnyVal {
+    implicit class AttemptsMadeMutableBuilder[Self <: AttemptsMade[?], T] (val x: Self & AttemptsMade[T]) extends AnyVal {
       
       @scala.inline
       def setAttemptsMade(value: Double): Self = StObject.set(x, "attemptsMade", value.asInstanceOf[js.Any])
@@ -112,12 +110,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var logs: js.Array[String] = js.native
+    var logs: js.Array[String]
   }
   object Count {
     
@@ -141,14 +138,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var opts: js.UndefOr[JobOptions] = js.native
+    var opts: js.UndefOr[JobOptions] = js.undefined
   }
   object Data {
     
@@ -159,7 +155,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -178,10 +174,9 @@ object anon {
     }
   }
   
-  @js.native
   trait JobId extends StObject {
     
-    var jobId: js.UndefOr[typings.bull.mod.JobId] = js.native
+    var jobId: js.UndefOr[typings.bull.mod.JobId] = js.undefined
   }
   object JobId {
     
@@ -202,10 +197,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     

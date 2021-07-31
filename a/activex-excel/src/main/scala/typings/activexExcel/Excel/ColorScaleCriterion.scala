@@ -2,22 +2,20 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorScaleCriterion extends StObject {
   
   @JSName("Excel.ColorScaleCriterion_typekey")
-  var ExcelDotColorScaleCriterion_typekey: ColorScaleCriterion = js.native
+  var ExcelDotColorScaleCriterion_typekey: ColorScaleCriterion
   
-  val FormatColor: typings.activexExcel.Excel.FormatColor = js.native
+  val FormatColor: typings.activexExcel.Excel.FormatColor
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Type: XlConditionValueTypes = js.native
+  var Type: XlConditionValueTypes
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object ColorScaleCriterion {
   

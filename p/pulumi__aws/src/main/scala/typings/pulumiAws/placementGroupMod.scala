@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placementGroupMod {
@@ -55,6 +54,10 @@ object placementGroupMod {
   /* static members */
   object PlacementGroup {
     
+    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PlacementGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,45 +67,39 @@ object placementGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PlacementGroup = js.native
-    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PlacementGroup = js.native
-    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlacementGroupState): PlacementGroup = js.native
-    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlacementGroupState, opts: CustomResourceOptions): PlacementGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PlacementGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PlacementGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PlacementGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlacementGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlacementGroupState): PlacementGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PlacementGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlacementGroupState, opts: CustomResourceOptions): PlacementGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlacementGroup]
     
     /**
       * Returns true if the given object is an instance of PlacementGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/placementGroup.PlacementGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/placementGroup.PlacementGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/placementGroup.PlacementGroup */ Boolean]
   }
   
-  @js.native
   trait PlacementGroupArgs extends StObject {
     
     /**
       * The name of the placement group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The placement strategy. Can be `"cluster"`, `"partition"` or `"spread"`.
       */
-    val strategy: Input[PlacementStrategy] = js.native
+    val strategy: Input[PlacementStrategy]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PlacementGroupArgs {
     
@@ -132,33 +129,32 @@ object placementGroupMod {
     }
   }
   
-  @js.native
   trait PlacementGroupState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the placement group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the placement group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the placement group.
       */
-    val placementGroupId: js.UndefOr[Input[String]] = js.native
+    val placementGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The placement strategy. Can be `"cluster"`, `"partition"` or `"spread"`.
       */
-    val strategy: js.UndefOr[Input[PlacementStrategy]] = js.native
+    val strategy: js.UndefOr[Input[PlacementStrategy]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PlacementGroupState {
     

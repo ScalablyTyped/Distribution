@@ -7,27 +7,26 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.dismissed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a dismissal event and image location information for the app's splash screen. */
 @js.native
 trait SplashScreen extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, _]): Unit = js.native
+  def addEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, js.Any]): Unit = js.native
   
   /** The coordinates of the app's splash screen image relative to the window. */
   var imageLocation: Rect = js.native
   
   /** Fires when the app's splash screen is dismissed. */
-  def ondismissed(ev: js.Any with WinRTEvent[SplashScreen]): Unit = js.native
+  def ondismissed(ev: js.Any & WinRTEvent[SplashScreen]): Unit = js.native
   /** Fires when the app's splash screen is dismissed. */
   @JSName("ondismissed")
-  var ondismissed_Original: TypedEventHandler[SplashScreen, _] = js.native
+  var ondismissed_Original: TypedEventHandler[SplashScreen, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, _]): Unit = js.native
+  def removeEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, js.Any]): Unit = js.native
 }

@@ -2,19 +2,17 @@ package typings.highland
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Array[R] extends StObject {
     
-    var array: js.Any = js.native
+    var array: js.Any
     
-    var stream: js.Any = js.native
+    var stream: js.Any
     
-    var value: R = js.native
+    var value: R
   }
   object Array {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ArrayMutableBuilder[Self <: Array[_], R] (val x: Self with Array[R]) extends AnyVal {
+    implicit class ArrayMutableBuilder[Self <: Array[?], R] (val x: Self & Array[R]) extends AnyVal {
       
       @scala.inline
       def setArray(value: js.Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     

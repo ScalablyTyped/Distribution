@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpTransferCodingHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Transfer-Encoding HTTP header on an HTTP request. */
 @js.native
-trait HttpTransferCodingHeaderValueCollection extends Array[HttpTransferCodingHeaderValue] {
+trait HttpTransferCodingHeaderValueCollection
+  extends StObject
+     with Array[HttpTransferCodingHeaderValue] {
   
   /**
     * Adds a new HttpTransferCodingHeaderValue item to the end of the collection.

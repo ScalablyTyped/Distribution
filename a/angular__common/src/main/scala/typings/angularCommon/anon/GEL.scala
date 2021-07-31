@@ -2,73 +2,71 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GEL extends StObject {
   
-  var AUD: js.Array[String] = js.native
+  var AUD: js.Array[String]
   
-  var BEF: js.Array[String] = js.native
+  var BEF: js.Array[String]
   
-  var BYN: js.Array[js.UndefOr[String]] = js.native
+  var BYN: js.Array[js.UndefOr[String]]
   
-  var CAD: js.Array[String] = js.native
+  var CAD: js.Array[String]
   
-  var CYP: js.Array[String] = js.native
+  var CYP: js.Array[String]
   
-  var EGP: js.Array[js.UndefOr[String]] = js.native
+  var EGP: js.Array[js.UndefOr[String]]
   
-  var FRF: js.Array[String] = js.native
+  var FRF: js.Array[String]
   
-  var GEL: js.Array[scala.Nothing] = js.native
+  var GEL: js.Array[scala.Nothing]
   
-  var HKD: js.Array[String] = js.native
+  var HKD: js.Array[String]
   
-  var IEP: js.Array[String] = js.native
+  var IEP: js.Array[String]
   
-  var ILP: js.Array[String] = js.native
+  var ILP: js.Array[String]
   
-  var ILS: js.Array[js.UndefOr[String]] = js.native
+  var ILS: js.Array[js.UndefOr[String]]
   
-  var INR: js.Array[js.UndefOr[String]] = js.native
+  var INR: js.Array[js.UndefOr[String]]
   
-  var ITL: js.Array[String] = js.native
+  var ITL: js.Array[String]
   
-  var KRW: js.Array[js.UndefOr[String]] = js.native
+  var KRW: js.Array[js.UndefOr[String]]
   
-  var LBP: js.Array[js.UndefOr[String]] = js.native
+  var LBP: js.Array[js.UndefOr[String]]
   
-  var MTP: js.Array[String] = js.native
+  var MTP: js.Array[String]
   
-  var MXN: js.Array[js.UndefOr[String]] = js.native
+  var MXN: js.Array[js.UndefOr[String]]
   
-  var NZD: js.Array[String] = js.native
+  var NZD: js.Array[String]
   
-  var RHD: js.Array[String] = js.native
+  var RHD: js.Array[String]
   
-  var RON: js.Array[js.UndefOr[String]] = js.native
+  var RON: js.Array[js.UndefOr[String]]
   
-  var RWF: js.Array[js.UndefOr[String]] = js.native
+  var RWF: js.Array[js.UndefOr[String]]
   
-  var SGD: js.Array[String] = js.native
+  var SGD: js.Array[String]
   
-  var TOP: js.Array[js.UndefOr[String]] = js.native
+  var TOP: js.Array[js.UndefOr[String]]
   
-  var TWD: js.Array[js.UndefOr[String]] = js.native
+  var TWD: js.Array[js.UndefOr[String]]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var VND: js.Array[js.UndefOr[String]] = js.native
+  var VND: js.Array[js.UndefOr[String]]
   
-  var XAF: js.Array[scala.Nothing] = js.native
+  var XAF: js.Array[scala.Nothing]
   
-  var XCD: js.Array[js.UndefOr[String]] = js.native
+  var XCD: js.Array[js.UndefOr[String]]
   
-  var XOF: js.Array[scala.Nothing] = js.native
+  var XOF: js.Array[scala.Nothing]
   
-  var XPF: js.Array[scala.Nothing] = js.native
+  var XPF: js.Array[scala.Nothing]
 }
 object GEL {
   

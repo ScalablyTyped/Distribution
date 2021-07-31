@@ -2,36 +2,34 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
-@js.native
 trait DatabaseReplicateOptions extends StObject {
   
   // Cancels the replication
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
   // Configure the replication to be continuous
-  var continuous: js.UndefOr[Boolean] = js.native
+  var continuous: js.UndefOr[Boolean] = js.undefined
   
   // Creates the target database. Required administrator’s privileges on target server.
-  var create_target: js.UndefOr[Boolean] = js.native
+  var create_target: js.UndefOr[Boolean] = js.undefined
   
   // Array of document IDs to be synchronized
-  var doc_ids: js.UndefOr[js.Array[String]] = js.native
+  var doc_ids: js.UndefOr[js.Array[String]] = js.undefined
   
   // The name of a filter function.
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   // Address of a proxy server through which replication should occur (protocol can be “http” or “socks5”)
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
   // Source database name or URL
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   // Target database name or URL
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object DatabaseReplicateOptions {
   

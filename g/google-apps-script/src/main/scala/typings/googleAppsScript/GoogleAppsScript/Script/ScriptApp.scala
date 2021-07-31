@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Forms.Form
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

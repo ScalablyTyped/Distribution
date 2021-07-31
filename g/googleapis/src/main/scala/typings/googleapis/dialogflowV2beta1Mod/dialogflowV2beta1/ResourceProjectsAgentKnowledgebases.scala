@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Knowledgebases")
@@ -31,7 +30,7 @@ class ResourceProjectsAgentKnowledgebases protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def create(params: ParamsResourceProjectsAgentKnowledgebasesCreate): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def create(
     params: ParamsResourceProjectsAgentKnowledgebasesCreate,
@@ -64,7 +63,7 @@ class ResourceProjectsAgentKnowledgebases protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsAgentKnowledgebasesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsAgentKnowledgebasesDelete,
@@ -98,7 +97,7 @@ class ResourceProjectsAgentKnowledgebases protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def get(params: ParamsResourceProjectsAgentKnowledgebasesGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def get(
     params: ParamsResourceProjectsAgentKnowledgebasesGet,
@@ -132,7 +131,7 @@ class ResourceProjectsAgentKnowledgebases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse] = js.native
   def list(params: ParamsResourceProjectsAgentKnowledgebasesList): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse] = js.native
   def list(
     params: ParamsResourceProjectsAgentKnowledgebasesList,
@@ -166,7 +165,7 @@ class ResourceProjectsAgentKnowledgebases protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def patch(params: ParamsResourceProjectsAgentKnowledgebasesPatch): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.native
   def patch(
     params: ParamsResourceProjectsAgentKnowledgebasesPatch,

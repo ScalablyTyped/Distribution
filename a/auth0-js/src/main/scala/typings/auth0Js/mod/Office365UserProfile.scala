@@ -2,15 +2,15 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Office365UserProfile extends Auth0UserProfile {
+trait Office365UserProfile
+  extends StObject
+     with Auth0UserProfile {
   
-  var tenantid: String = js.native
+  var tenantid: String
   
-  var upn: String = js.native
+  var upn: String
 }
 object Office365UserProfile {
   

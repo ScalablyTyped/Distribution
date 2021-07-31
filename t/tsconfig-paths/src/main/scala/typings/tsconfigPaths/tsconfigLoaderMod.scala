@@ -4,53 +4,48 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tsconfigPaths.anon.BaseUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsconfigLoaderMod {
   
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "loadTsconfig")
+  @JSImport("tsconfig-paths/lib/tsconfig-loader", JSImport.Namespace)
   @js.native
-  def loadTsconfig(configFilePath: String): js.UndefOr[Tsconfig] = js.native
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "loadTsconfig")
-  @js.native
-  def loadTsconfig(
-    configFilePath: String,
-    existsSync: js.UndefOr[scala.Nothing],
-    readFileSync: js.Function1[/* filename */ String, String]
-  ): js.UndefOr[Tsconfig] = js.native
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "loadTsconfig")
-  @js.native
-  def loadTsconfig(configFilePath: String, existsSync: js.Function1[/* path */ String, Boolean]): js.UndefOr[Tsconfig] = js.native
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "loadTsconfig")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def loadTsconfig(configFilePath: String): js.UndefOr[Tsconfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTsconfig")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Tsconfig]]
+  @scala.inline
+  def loadTsconfig(configFilePath: String, existsSync: js.Function1[/* path */ String, Boolean]): js.UndefOr[Tsconfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTsconfig")(configFilePath.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Tsconfig]]
+  @scala.inline
   def loadTsconfig(
     configFilePath: String,
     existsSync: js.Function1[/* path */ String, Boolean],
     readFileSync: js.Function1[/* filename */ String, String]
-  ): js.UndefOr[Tsconfig] = js.native
+  ): js.UndefOr[Tsconfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTsconfig")(configFilePath.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any], readFileSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Tsconfig]]
+  @scala.inline
+  def loadTsconfig(
+    configFilePath: String,
+    existsSync: Unit,
+    readFileSync: js.Function1[/* filename */ String, String]
+  ): js.UndefOr[Tsconfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTsconfig")(configFilePath.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any], readFileSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Tsconfig]]
   
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "tsConfigLoader")
-  @js.native
-  def tsConfigLoader(hasGetEnvCwdLoadSync: TsConfigLoaderParams): TsConfigLoaderResult = js.native
+  @scala.inline
+  def tsConfigLoader(hasGetEnvCwdLoadSync: TsConfigLoaderParams): TsConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("tsConfigLoader")(hasGetEnvCwdLoadSync.asInstanceOf[js.Any]).asInstanceOf[TsConfigLoaderResult]
   
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "walkForTsConfig")
-  @js.native
-  def walkForTsConfig(directory: String): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/tsconfig-loader", "walkForTsConfig")
-  @js.native
-  def walkForTsConfig(directory: String, existsSync: js.Function1[/* path */ String, Boolean]): js.UndefOr[String] = js.native
+  @scala.inline
+  def walkForTsConfig(directory: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def walkForTsConfig(directory: String, existsSync: js.Function1[/* path */ String, Boolean]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @js.native
   trait TsConfigLoaderParams extends StObject {
     
-    var cwd: String = js.native
+    var cwd: String
     
-    def getEnv(key: String): js.UndefOr[String] = js.native
+    def getEnv(key: String): js.UndefOr[String]
     
     var loadSync: js.UndefOr[
         js.Function2[/* cwd */ String, /* filename */ js.UndefOr[String], TsConfigLoaderResult]
-      ] = js.native
+      ] = js.undefined
   }
   object TsConfigLoaderParams {
     
@@ -77,14 +72,13 @@ object tsconfigLoaderMod {
     }
   }
   
-  @js.native
   trait TsConfigLoaderResult extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var paths: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var paths: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var tsConfigPath: js.UndefOr[String] = js.native
+    var tsConfigPath: js.UndefOr[String] = js.undefined
   }
   object TsConfigLoaderResult {
     
@@ -117,12 +111,11 @@ object tsconfigLoaderMod {
     }
   }
   
-  @js.native
   trait Tsconfig extends StObject {
     
-    var compilerOptions: js.UndefOr[BaseUrl] = js.native
+    var compilerOptions: js.UndefOr[BaseUrl] = js.undefined
     
-    var `extends`: js.UndefOr[String] = js.native
+    var `extends`: js.UndefOr[String] = js.undefined
   }
   object Tsconfig {
     

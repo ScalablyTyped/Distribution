@@ -12,7 +12,7 @@ Converts JSON configuration into a proper bunyan configuration object.
 | Keywords           | bunyan, config |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 628 |
+| # downloads        | 980 |
 | # stars            | 0 |
 
 ## Links

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemRenamed event.
   */
-@js.native
-trait ASPxClientFileManagerItemRenamedEventArgs extends ASPxClientFileManagerActionEventArgsBase {
+trait ASPxClientFileManagerItemRenamedEventArgs
+  extends StObject
+     with ASPxClientFileManagerActionEventArgsBase {
   
   /**
     * Gets the previous name of the renamed item.
     */
-  var oldName: String = js.native
+  var oldName: String
 }
 object ASPxClientFileManagerItemRenamedEventArgs {
   

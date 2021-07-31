@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.AwaitPromiseRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.AwaitPromiseResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeAwaitPromiseResponse extends StObject {
   
-  var paramsType: js.Array[AwaitPromiseRequest] = js.native
+  var paramsType: js.Array[AwaitPromiseRequest]
   
-  var returnType: AwaitPromiseResponse = js.native
+  var returnType: AwaitPromiseResponse
 }
 object ReturnTypeAwaitPromiseResponse {
   

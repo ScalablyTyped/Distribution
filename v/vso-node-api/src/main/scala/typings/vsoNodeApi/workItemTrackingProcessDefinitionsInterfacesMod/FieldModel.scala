@@ -2,41 +2,39 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldModel extends StObject {
   
   /**
     * Description about field
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * ID of the field
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Name of the field
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Reference to picklist in this field
     */
-  var pickList: PickListMetadataModel = js.native
+  var pickList: PickListMetadataModel
   
   /**
     * Type of field
     */
-  var `type`: FieldType = js.native
+  var `type`: FieldType
   
   /**
     * Url to the field
     */
-  var url: String = js.native
+  var url: String
 }
 object FieldModel {
   

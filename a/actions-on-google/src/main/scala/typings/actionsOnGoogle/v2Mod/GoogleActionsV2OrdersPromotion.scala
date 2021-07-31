@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersPromotion extends StObject {
   
   /**
     * Required. Coupon code understood by 3P. For ex: GOOGLE10.
     */
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2OrdersPromotion {
   

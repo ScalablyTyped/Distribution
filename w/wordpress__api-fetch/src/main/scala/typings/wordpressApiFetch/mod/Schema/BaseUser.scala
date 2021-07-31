@@ -4,45 +4,45 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseUser[T /* <: Context */] extends BaseResponse {
+trait BaseUser[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var avatar_urls: Record[Double, String] = js.native
+  var avatar_urls: Record[Double, String]
   
-  var capabilities: Record[String, Boolean] = js.native
+  var capabilities: Record[String, Boolean]
   
-  var description: String = js.native
+  var description: String
   
-  var email: String = js.native
+  var email: String
   
-  var extra_capabilities: Record[String, Boolean] = js.native
+  var extra_capabilities: Record[String, Boolean]
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var last_name: String = js.native
+  var last_name: String
   
-  var link: String = js.native
+  var link: String
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var name: String = js.native
+  var name: String
   
-  var nickname: String = js.native
+  var nickname: String
   
-  var registered_date: String = js.native
+  var registered_date: String
   
-  var roles: js.Array[String] = js.native
+  var roles: js.Array[String]
   
-  var slug: String = js.native
+  var slug: String
   
-  var url: String = js.native
+  var url: String
   
-  var username: String = js.native
+  var username: String
 }
 object BaseUser {
   
@@ -58,7 +58,7 @@ object BaseUser {
     id: Double,
     last_name: String,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     name: String,
     nickname: String,
     registered_date: String,
@@ -72,7 +72,7 @@ object BaseUser {
   }
   
   @scala.inline
-  implicit class BaseUserMutableBuilder[Self <: BaseUser[_], T /* <: Context */] (val x: Self with BaseUser[T]) extends AnyVal {
+  implicit class BaseUserMutableBuilder[Self <: BaseUser[?], T /* <: Context */] (val x: Self & BaseUser[T]) extends AnyVal {
     
     @scala.inline
     def setAvatar_urls(value: Record[Double, String]): Self = StObject.set(x, "avatar_urls", value.asInstanceOf[js.Any])
@@ -102,7 +102,7 @@ object BaseUser {
     def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))

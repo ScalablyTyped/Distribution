@@ -7,10 +7,8 @@ import typings.electron.electronStrings.never
 import typings.electron.electronStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConstructorOptions extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait NotificationConstructorOptions extends StObject {
     *
     * @platform darwin
     */
-  var actions: js.UndefOr[js.Array[NotificationAction]] = js.native
+  var actions: js.UndefOr[js.Array[NotificationAction]] = js.undefined
   
   /**
     * The body text of the notification, which will be displayed below the title or
     * subtitle.
     */
-  var body: String = js.native
+  var body: String
   
   /**
     * A custom title for the close button of an alert. An empty string will cause the
@@ -33,65 +31,65 @@ trait NotificationConstructorOptions extends StObject {
     *
     * @platform darwin
     */
-  var closeButtonText: js.UndefOr[String] = js.native
+  var closeButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to add an inline reply option to the notification.
     *
     * @platform darwin
     */
-  var hasReply: js.UndefOr[Boolean] = js.native
+  var hasReply: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An icon to use in the notification.
     */
-  var icon: js.UndefOr[String | NativeImage_] = js.native
+  var icon: js.UndefOr[String | NativeImage_] = js.undefined
   
   /**
     * The placeholder to write in the inline reply input field.
     *
     * @platform darwin
     */
-  var replyPlaceholder: js.UndefOr[String] = js.native
+  var replyPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to emit an OS notification noise when showing the notification.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the sound file to play when the notification is shown.
     *
     * @platform darwin
     */
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
   /**
     * A subtitle for the notification, which will be displayed below the title.
     *
     * @platform darwin
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * The timeout duration of the notification. Can be 'default' or 'never'.
     *
     * @platform linux,win32
     */
-  var timeoutType: js.UndefOr[default | never] = js.native
+  var timeoutType: js.UndefOr[default | never] = js.undefined
   
   /**
     * A title for the notification, which will be shown at the top of the notification
     * window when it is shown.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * The urgency level of the notification. Can be 'normal', 'critical', or 'low'.
     *
     * @platform linux
     */
-  var urgency: js.UndefOr[normal | critical | low] = js.native
+  var urgency: js.UndefOr[normal | critical | low] = js.undefined
 }
 object NotificationConstructorOptions {
   

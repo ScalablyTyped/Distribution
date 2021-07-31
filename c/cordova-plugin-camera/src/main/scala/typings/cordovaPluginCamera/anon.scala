@@ -2,19 +2,17 @@ package typings.cordovaPluginCamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ALLMEDIA extends StObject {
     
-    var ALLMEDIA: Double = js.native
+    var ALLMEDIA: Double
     
-    var PICTURE: Double = js.native
+    var PICTURE: Double
     
-    var VIDEO: Double = js.native
+    var VIDEO: Double
   }
   object ALLMEDIA {
     
@@ -38,18 +36,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ARROWANY extends StObject {
     
-    var ARROW_ANY: Double = js.native
+    var ARROW_ANY: Double
     
-    var ARROW_DOWN: Double = js.native
+    var ARROW_DOWN: Double
     
-    var ARROW_LEFT: Double = js.native
+    var ARROW_LEFT: Double
     
-    var ARROW_RIGHT: Double = js.native
+    var ARROW_RIGHT: Double
     
-    var ARROW_UP: Double = js.native
+    var ARROW_UP: Double
   }
   object ARROWANY {
     
@@ -79,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BACK extends StObject {
     
-    var BACK: Double = js.native
+    var BACK: Double
     
-    var FRONT: Double = js.native
+    var FRONT: Double
   }
   object BACK {
     
@@ -105,14 +101,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CAMERA extends StObject {
     
-    var CAMERA: Double = js.native
+    var CAMERA: Double
     
-    var PHOTOLIBRARY: Double = js.native
+    var PHOTOLIBRARY: Double
     
-    var SAVEDPHOTOALBUM: Double = js.native
+    var SAVEDPHOTOALBUM: Double
   }
   object CAMERA {
     
@@ -136,12 +131,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DATAURL extends StObject {
     
-    var DATA_URL: Double = js.native
+    var DATA_URL: Double
     
-    var FILE_URI: Double = js.native
+    var FILE_URI: Double
   }
   object DATAURL {
     
@@ -162,12 +156,11 @@ object anon {
     }
   }
   
-  @js.native
   trait JPEG extends StObject {
     
-    var JPEG: Double = js.native
+    var JPEG: Double
     
-    var PNG: Double = js.native
+    var PNG: Double
   }
   object JPEG {
     

@@ -2,47 +2,45 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofIkConstraintTimelin extends StObject {
   
   /* static member */
-  var BEND_DIRECTION: Double = js.native
+  var BEND_DIRECTION: Double
   
   /* static member */
-  var COMPRESS: Double = js.native
+  var COMPRESS: Double
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var MIX: Double = js.native
+  var MIX: Double
   
   /* static member */
-  var PREV_BEND_DIRECTION: Double = js.native
+  var PREV_BEND_DIRECTION: Double
   
   /* static member */
-  var PREV_COMPRESS: Double = js.native
+  var PREV_COMPRESS: Double
   
   /* static member */
-  var PREV_MIX: Double = js.native
+  var PREV_MIX: Double
   
   /* static member */
-  var PREV_SOFTNESS: Double = js.native
+  var PREV_SOFTNESS: Double
   
   /* static member */
-  var PREV_STRETCH: Double = js.native
+  var PREV_STRETCH: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var SOFTNESS: Double = js.native
+  var SOFTNESS: Double
   
   /* static member */
-  var STRETCH: Double = js.native
+  var STRETCH: Double
 }
 object TypeofIkConstraintTimelin {
   

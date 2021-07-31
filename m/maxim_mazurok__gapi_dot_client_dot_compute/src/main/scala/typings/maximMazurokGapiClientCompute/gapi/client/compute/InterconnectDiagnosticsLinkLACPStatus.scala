@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectDiagnosticsLinkLACPStatus extends StObject {
   
   /** System ID of the port on Google's side of the LACP exchange. */
-  var googleSystemId: js.UndefOr[String] = js.native
+  var googleSystemId: js.UndefOr[String] = js.undefined
   
   /** System ID of the port on the neighbor's side of the LACP exchange. */
-  var neighborSystemId: js.UndefOr[String] = js.native
+  var neighborSystemId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of a LACP link, which can take one of the following values:
     * - ACTIVE: The link is configured and active within the bundle.
     * - DETACHED: The link is not configured within the bundle. This means that the rest of the object should be empty.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object InterconnectDiagnosticsLinkLACPStatus {
   

@@ -2,18 +2,16 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsViewColumnOptionsMod {
   
-  @js.native
   trait ViewColumnOptions extends StObject {
     
     /**
       * Column name in the database.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ViewColumnOptions {
     

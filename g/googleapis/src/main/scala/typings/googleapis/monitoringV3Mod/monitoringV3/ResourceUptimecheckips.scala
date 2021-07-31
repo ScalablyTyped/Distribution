@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Uptimecheckips")
@@ -31,7 +30,7 @@ class ResourceUptimecheckips protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUptimeCheckIpsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(params: ParamsResourceUptimecheckipsList): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(
     params: ParamsResourceUptimecheckipsList,

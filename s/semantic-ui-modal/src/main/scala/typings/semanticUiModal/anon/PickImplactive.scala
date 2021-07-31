@@ -2,14 +2,12 @@ package typings.semanticUiModal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.Modal.ClassNameSettings._Impl, 'active'> */
-@js.native
 trait PickImplactive extends StObject {
   
-  var active: String = js.native
+  var active: String
 }
 object PickImplactive {
   

@@ -2,13 +2,11 @@ package typings.toTitleCaseGouch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String extends StObject {
   
-  def toTitleCase(): java.lang.String = js.native
+  def toTitleCase(): java.lang.String
 }
 object String {
   

@@ -4,7 +4,6 @@ import typings.rxCore.Rx.IScheduler
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
@@ -43,7 +42,7 @@ object Rx {
     def takeLastBufferWithTime(duration: Double, scheduler: IScheduler): Observable[js.Array[T]] = js.native
     
     def takeLastWithTime(duration: Double): Observable[T] = js.native
-    def takeLastWithTime(duration: Double, timerScheduler: js.UndefOr[scala.Nothing], loopScheduler: IScheduler): Observable[T] = js.native
+    def takeLastWithTime(duration: Double, timerScheduler: Unit, loopScheduler: IScheduler): Observable[T] = js.native
     def takeLastWithTime(duration: Double, timerScheduler: IScheduler): Observable[T] = js.native
     def takeLastWithTime(duration: Double, timerScheduler: IScheduler, loopScheduler: IScheduler): Observable[T] = js.native
     
@@ -63,11 +62,6 @@ object Rx {
     def timeoutWithSelector[TTimeout](firstTimeout: Observable[TTimeout]): Observable[T] = js.native
     def timeoutWithSelector[TTimeout](
       firstTimeout: Observable[TTimeout],
-      timeoutdurationSelector: js.UndefOr[scala.Nothing],
-      other: Observable[T]
-    ): Observable[T] = js.native
-    def timeoutWithSelector[TTimeout](
-      firstTimeout: Observable[TTimeout],
       timeoutdurationSelector: js.Function1[/* item */ T, Observable[TTimeout]]
     ): Observable[T] = js.native
     def timeoutWithSelector[TTimeout](
@@ -75,6 +69,7 @@ object Rx {
       timeoutdurationSelector: js.Function1[/* item */ T, Observable[TTimeout]],
       other: Observable[T]
     ): Observable[T] = js.native
+    def timeoutWithSelector[TTimeout](firstTimeout: Observable[TTimeout], timeoutdurationSelector: Unit, other: Observable[T]): Observable[T] = js.native
     
     def windowWithTime(timeSpan: Double): Observable[Observable[T]] = js.native
     def windowWithTime(timeSpan: Double, scheduler: IScheduler): Observable[Observable[T]] = js.native

@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomOutSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object zoomOutSmallMod extends Shortcut {
   @js.native
   val default: SFC[ZoomOutSmallProps] = js.native
   
-  @js.native
-  trait ZoomOutSmallProps extends SVGAttributes[SVGElement] {
+  trait ZoomOutSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ZoomOutSmallProps {
     

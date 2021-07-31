@@ -2,53 +2,51 @@ package typings.uglifycss
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("uglifycss", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Uglify one or more files
     */
-  @JSImport("uglifycss", "processFiles")
-  @js.native
-  def processFiles(filenames: js.Array[String]): String = js.native
-  @JSImport("uglifycss", "processFiles")
-  @js.native
-  def processFiles(filenames: js.Array[String], options: UglifyCSSOptions): String = js.native
+  @scala.inline
+  def processFiles(filenames: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("processFiles")(filenames.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def processFiles(filenames: js.Array[String], options: UglifyCSSOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processFiles")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Uglify a string
     */
-  @JSImport("uglifycss", "processString")
-  @js.native
-  def processString(content: String): String = js.native
-  @JSImport("uglifycss", "processString")
-  @js.native
-  def processString(content: String, options: UglifyCSSOptions): String = js.native
+  @scala.inline
+  def processString(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("processString")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def processString(content: String, options: UglifyCSSOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processString")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait UglifyCSSOptions extends StObject {
     
     /**
       * Preserves newlines within and around preserved comments
       */
-    var cuteComments: js.UndefOr[Boolean] = js.native
+    var cuteComments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * eEpands variables; by default, @variables blocks are preserved and var(x)s are not expanded
       */
-    var expandVars: js.UndefOr[Boolean] = js.native
+    var expandVars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a newline (approx.) every n characters; 0 means no newline and is the default value
       */
-    var maxLineLen: js.UndefOr[Double] = js.native
+    var maxLineLen: js.UndefOr[Double] = js.undefined
     
     /**
       * Removes newlines within preserved comments; by default, newlines are preserved
       */
-    var uglyComments: js.UndefOr[Boolean] = js.native
+    var uglyComments: js.UndefOr[Boolean] = js.undefined
   }
   object UglifyCSSOptions {
     

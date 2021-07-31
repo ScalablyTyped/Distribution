@@ -2,16 +2,14 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  sha :string} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
-@js.native
 trait shastringSudo extends StObject {
   
-  var sha: String = js.native
+  var sha: String
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object shastringSudo {
   

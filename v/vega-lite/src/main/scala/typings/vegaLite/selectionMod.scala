@@ -21,10 +21,13 @@ import typings.vegaTypings.signalMod.NewSignal
 import typings.vegaTypings.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionMod {
+  
+  @JSImport("vega-lite/build/src/compile/selection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/selection", "MODIFY")
   @js.native
@@ -46,8 +49,7 @@ object selectionMod {
   @js.native
   val VL_SELECTION_RESOLVE: /* "vlSelectionResolve" */ String = js.native
   
-  @JSImport("vega-lite/build/src/compile/selection", "forEachSelection")
-  @js.native
+  @scala.inline
   def forEachSelection(
     model: Model,
     cb: js.Function2[
@@ -55,34 +57,30 @@ object selectionMod {
       /* selCompiler */ SelectionCompiler[SelectionType], 
       Unit | Boolean
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSelection")(model.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/selection", "requiresSelectionId")
-  @js.native
-  def requiresSelectionId(model: Model): Boolean = js.native
+  @scala.inline
+  def requiresSelectionId(model: Model): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("requiresSelectionId")(model.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/compile/selection", "unitName")
-  @js.native
-  def unitName(model: Model): String = js.native
-  @JSImport("vega-lite/build/src/compile/selection", "unitName")
-  @js.native
-  def unitName(model: Model, hasEscape: Escape): String = js.native
+  @scala.inline
+  def unitName(model: Model): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def unitName(model: Model, hasEscape: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any], hasEscape.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait SelectionCompiler[T /* <: SelectionType */] extends StObject {
     
     var marks: js.UndefOr[
         js.Function3[
           /* model */ UnitModel, 
           /* selCmpt */ SelectionComponent[T], 
-          /* marks */ js.Array[_], 
-          js.Array[_]
+          /* marks */ js.Array[js.Any], 
+          js.Array[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    def modifyExpr(model: UnitModel, selCmpt: SelectionComponent[T]): String = js.native
+    def modifyExpr(model: UnitModel, selCmpt: SelectionComponent[T]): String
     
-    def signals(model: UnitModel, selCmpt: SelectionComponent[T]): js.Array[NewSignal] = js.native
+    def signals(model: UnitModel, selCmpt: SelectionComponent[T]): js.Array[NewSignal]
     
     var topLevelSignals: js.UndefOr[
         js.Function3[
@@ -91,7 +89,7 @@ object selectionMod {
           /* signals */ js.Array[NewSignal], 
           js.Array[NewSignal]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SelectionCompiler {
     
@@ -105,11 +103,11 @@ object selectionMod {
     }
     
     @scala.inline
-    implicit class SelectionCompilerMutableBuilder[Self <: SelectionCompiler[_], T /* <: SelectionType */] (val x: Self with SelectionCompiler[T]) extends AnyVal {
+    implicit class SelectionCompilerMutableBuilder[Self <: SelectionCompiler[?], T /* <: SelectionType */] (val x: Self & SelectionCompiler[T]) extends AnyVal {
       
       @scala.inline
       def setMarks(
-        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[T], /* marks */ js.Array[_]) => js.Array[_]
+        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[T], /* marks */ js.Array[js.Any]) => js.Array[js.Any]
       ): Self = StObject.set(x, "marks", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -131,40 +129,39 @@ object selectionMod {
     }
   }
   
-  @js.native
   trait SelectionComponent[T /* <: SelectionType */] extends StObject {
     
-    var bind: js.UndefOr[scales | Binding | Dict[Binding] | LegendBinding] = js.native
+    var bind: js.UndefOr[scales | Binding | Dict[Binding] | LegendBinding] = js.undefined
     
-    var clear: js.UndefOr[js.Any] = js.native
+    var clear: js.UndefOr[js.Any] = js.undefined
     
-    var empty: all | none = js.native
+    var empty: all | none
     
-    var events: js.Array[Stream] = js.native
+    var events: js.Array[Stream]
     
-    var init: js.UndefOr[js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]] = js.native
+    var init: js.UndefOr[js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]] = js.undefined
     
-    var mark: js.UndefOr[BrushConfig] = js.native
+    var mark: js.UndefOr[BrushConfig] = js.undefined
     
-    var materialized: OutputNode = js.native
+    var materialized: OutputNode
     
-    var name: String = js.native
+    var name: String
     
-    var nearest: js.UndefOr[js.Any] = js.native
+    var nearest: js.UndefOr[js.Any] = js.undefined
     
-    var project: js.UndefOr[SelectionProjectionComponent] = js.native
+    var project: js.UndefOr[SelectionProjectionComponent] = js.undefined
     
-    var resolve: SelectionResolution = js.native
+    var resolve: SelectionResolution
     
-    var scales: js.UndefOr[js.Array[SelectionProjection]] = js.native
+    var scales: js.UndefOr[js.Array[SelectionProjection]] = js.undefined
     
-    var toggle: js.UndefOr[js.Any] = js.native
+    var toggle: js.UndefOr[js.Any] = js.undefined
     
-    var translate: js.UndefOr[js.Any] = js.native
+    var translate: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: T = js.native
+    var `type`: T
     
-    var zoom: js.UndefOr[js.Any] = js.native
+    var zoom: js.UndefOr[js.Any] = js.undefined
   }
   object SelectionComponent {
     
@@ -183,7 +180,7 @@ object selectionMod {
     }
     
     @scala.inline
-    implicit class SelectionComponentMutableBuilder[Self <: SelectionComponent[_], T /* <: SelectionType */] (val x: Self with SelectionComponent[T]) extends AnyVal {
+    implicit class SelectionComponentMutableBuilder[Self <: SelectionComponent[?], T /* <: SelectionType */] (val x: Self & SelectionComponent[T]) extends AnyVal {
       
       @scala.inline
       def setBind(value: scales | Binding | Dict[Binding] | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])

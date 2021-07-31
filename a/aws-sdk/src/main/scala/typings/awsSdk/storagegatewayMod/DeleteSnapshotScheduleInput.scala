@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSnapshotScheduleInput extends StObject {
   
   /**
     * The volume which snapshot schedule to delete.
     */
-  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN = js.native
+  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN
 }
 object DeleteSnapshotScheduleInput {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetGroupRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group to describe.
     */
-  var datasetGroupArn: Arn = js.native
+  var datasetGroupArn: Arn
 }
 object DescribeDatasetGroupRequest {
   

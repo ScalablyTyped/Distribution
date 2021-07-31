@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeAnalyticsMod {
+  
+  @JSImport("googleapis/build/src/apis/youtubeAnalytics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -126,9 +129,12 @@ object youtubeAnalyticsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -172,22 +178,19 @@ object youtubeAnalyticsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics(options: Options): Youtubeanalytics = js.native
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Options): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = js.native
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Options): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = js.native
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics_v1(version: v1): Youtubeanalytics = js.native
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics_v1beta1(version: v1beta1): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = js.native
-  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics")
-  @js.native
-  def youtubeAnalytics_v2(version: v2): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = js.native
+  @scala.inline
+  def youtubeAnalytics(options: Options): Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[Youtubeanalytics]
+  @scala.inline
+  def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Options): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics]
+  @scala.inline
+  def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Options): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics]
+  
+  @scala.inline
+  def youtubeAnalytics_v1(version: v1): Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[Youtubeanalytics]
+  
+  @scala.inline
+  def youtubeAnalytics_v1beta1(version: v1beta1): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics]
+  
+  @scala.inline
+  def youtubeAnalytics_v2(version: v2): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics]
 }

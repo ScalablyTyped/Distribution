@@ -3,16 +3,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitPullRequestCommentThread extends CommentThread {
+trait GitPullRequestCommentThread
+  extends StObject
+     with CommentThread {
   
   /**
     * Extended context information unique to pull requests
     */
-  var pullRequestThreadContext: GitPullRequestCommentThreadContext = js.native
+  var pullRequestThreadContext: GitPullRequestCommentThreadContext
 }
 object GitPullRequestCommentThread {
   

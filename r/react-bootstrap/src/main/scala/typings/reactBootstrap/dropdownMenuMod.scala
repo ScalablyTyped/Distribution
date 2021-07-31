@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.SelectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMenuMod {
@@ -19,17 +18,18 @@ object dropdownMenuMod {
   trait DropdownMenu
     extends Component[DropdownMenuProps, js.Object, js.Any]
   
-  @js.native
-  trait DropdownMenuProps extends HTMLProps[DropdownMenu] {
+  trait DropdownMenuProps
+    extends StObject
+       with HTMLProps[DropdownMenu] {
     
-    var labelledBy: js.UndefOr[String | Double] = js.native
+    var labelledBy: js.UndefOr[String | Double] = js.undefined
     
-    var onClose: js.UndefOr[js.Function] = js.native
+    var onClose: js.UndefOr[js.Function] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_DropdownMenuProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_DropdownMenuProps: js.UndefOr[SelectCallback] = js.undefined
     
-    var pullRight: js.UndefOr[Boolean] = js.native
+    var pullRight: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownMenuProps {
     

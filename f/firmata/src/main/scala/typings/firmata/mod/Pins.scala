@@ -2,23 +2,21 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pins extends StObject {
   
-  var analogChannel: Double = js.native
+  var analogChannel: Double
   
-  var mode: PIN_MODE = js.native
+  var mode: PIN_MODE
   
-  var report: REPORTING = js.native
+  var report: REPORTING
   
-  var state: PIN_STATE | PULLUP_STATE = js.native
+  var state: PIN_STATE | PULLUP_STATE
   
-  var supportedModes: js.Array[PIN_MODE] = js.native
+  var supportedModes: js.Array[PIN_MODE]
   
-  var value: PIN_STATE | Double = js.native
+  var value: PIN_STATE | Double
 }
 object Pins {
   

@@ -2,17 +2,15 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransportStateListener extends StObject {
   
-  def onClose(): Unit = js.native
+  def onClose(): Unit
   
-  def onError(error: String): Unit = js.native
+  def onError(error: String): Unit
   
-  def onOpen(): Unit = js.native
+  def onOpen(): Unit
 }
 object ITransportStateListener {
   

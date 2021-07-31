@@ -2,21 +2,19 @@ package typings.rcResizeObserver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var offsetHeight: Double = js.native
+    var offsetHeight: Double
     
-    var offsetWidth: Double = js.native
+    var offsetWidth: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -43,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait OffsetHeight extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var offsetHeight: Double = js.native
+    var offsetHeight: Double
     
-    var offsetWidth: Double = js.native
+    var offsetWidth: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object OffsetHeight {
     

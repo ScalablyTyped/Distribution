@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,33 +13,49 @@ object ColorTemperaturePreset extends StObject {
   
   /** Indicates that the color temperature is set automatically. */
   @js.native
-  sealed trait auto extends ColorTemperaturePreset
+  sealed trait auto
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a scene lit by candlelight. */
   @js.native
-  sealed trait candlelight extends ColorTemperaturePreset
+  sealed trait candlelight
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a cloudy scene. */
   @js.native
-  sealed trait cloudy extends ColorTemperaturePreset
+  sealed trait cloudy
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a daylight scene. */
   @js.native
-  sealed trait daylight extends ColorTemperaturePreset
+  sealed trait daylight
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a scene lit by a flash. */
   @js.native
-  sealed trait flash extends ColorTemperaturePreset
+  sealed trait flash
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a scene lit by florescent light. */
   @js.native
-  sealed trait fluorescent extends ColorTemperaturePreset
+  sealed trait fluorescent
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is set manually. */
   @js.native
-  sealed trait manual extends ColorTemperaturePreset
+  sealed trait manual
+    extends StObject
+       with ColorTemperaturePreset
   
   /** Indicates that the color temperature is adjusted for a scene lit by tungsten light. */
   @js.native
-  sealed trait tungsten extends ColorTemperaturePreset
+  sealed trait tungsten
+    extends StObject
+       with ColorTemperaturePreset
 }

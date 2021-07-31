@@ -5,31 +5,29 @@ import typings.basicscroll.mod.KnownTimings
 import typings.basicscroll.mod.TimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait From extends StObject {
     
     /**
       * Start and end values.
       * @default null
       */
-    var from: js.UndefOr[AnimatedType] = js.native
+    var from: js.UndefOr[AnimatedType] = js.undefined
     
     /**
       * Animation timing.
       * @default 'linear'
       */
-    var timing: js.UndefOr[KnownTimings | TimingFunction] = js.native
+    var timing: js.UndefOr[KnownTimings | TimingFunction] = js.undefined
     
     /**
       * Start and end values.
       * @default null
       */
-    var to: js.UndefOr[AnimatedType] = js.native
+    var to: js.UndefOr[AnimatedType] = js.undefined
   }
   object From {
     

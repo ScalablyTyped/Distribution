@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Allowrebasemerge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsListReposAccessibleToInstallationResponseData extends StObject {
   
-  var repositories: js.Array[Allowrebasemerge] = js.native
+  var repositories: js.Array[Allowrebasemerge]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object AppsListReposAccessibleToInstallationResponseData {
   

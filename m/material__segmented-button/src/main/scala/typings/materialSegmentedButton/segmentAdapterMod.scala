@@ -3,12 +3,10 @@ package typings.materialSegmentedButton
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentAdapterMod {
   
-  @js.native
   trait MDCSegmentedButtonSegmentAdapter extends StObject {
     
     /**
@@ -16,30 +14,30 @@ object segmentAdapterMod {
       *
       * @param className Class to add
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * @param attrName Attribute of interest
       * @return Returns segment's attribute value if it is set, otherwise returns
       * null
       */
-    def getAttr(attrName: String): String | Null = js.native
+    def getAttr(attrName: String): String | Null
     
     /**
       * @return Returns bounding rectangle for ripple effect
       */
-    def getRootBoundingClientRect(): ClientRect = js.native
+    def getRootBoundingClientRect(): ClientRect
     
     /**
       * @param className Class of interest
       * @return Returns true if segment has css class, otherwise returns false
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * @return Returns true if wrapping segmented button is single select
       */
-    def isSingleSelect(): Boolean = js.native
+    def isSingleSelect(): Boolean
     
     /**
       * Emits event about segment to wrapping segmented button
@@ -47,14 +45,14 @@ object segmentAdapterMod {
       * @param selected Represents whether segment is currently selected
       * @event selected With detail - SegmentDetail
       */
-    def notifySelectedChange(selected: Boolean): Unit = js.native
+    def notifySelectedChange(selected: Boolean): Unit
     
     /**
       * Removes css class from segment
       *
       * @param className Class to remove
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets segment's attribute value to new value
@@ -62,7 +60,7 @@ object segmentAdapterMod {
       * @param attrName Attribute of interest
       * @param value New value of attribute
       */
-    def setAttr(attrName: String, value: String): Unit = js.native
+    def setAttr(attrName: String, value: String): Unit
   }
   object MDCSegmentedButtonSegmentAdapter {
     

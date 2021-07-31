@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisFirehoseDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that can write data to an Amazon Kinesis Data Firehose stream.
     */
-  var DeliveryStreamArn: js.UndefOr[String] = js.native
+  var DeliveryStreamArn: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Kinesis Data Firehose destination that you want to use in the event destination.
     */
-  var IamRoleArn: js.UndefOr[String] = js.native
+  var IamRoleArn: js.UndefOr[String] = js.undefined
 }
 object KinesisFirehoseDestination {
   

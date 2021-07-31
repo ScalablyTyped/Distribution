@@ -3,33 +3,31 @@ package typings.oakdexPokedex.mod
 import typings.oakdexPokedex.anon.Jump
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PokemonVariation extends StObject {
   
-  var abilities: js.UndefOr[js.Array[String]] = js.native
+  var abilities: js.UndefOr[js.Array[String]] = js.undefined
   
-  var base_stats: js.UndefOr[StatObject] = js.native
+  var base_stats: js.UndefOr[StatObject] = js.undefined
   
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
-  var height_eu: js.UndefOr[String] = js.native
+  var height_eu: js.UndefOr[String] = js.undefined
   
-  var height_us: js.UndefOr[String] = js.native
+  var height_us: js.UndefOr[String] = js.undefined
   
-  var image_suffix: js.UndefOr[String] = js.native
+  var image_suffix: js.UndefOr[String] = js.undefined
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var pokeathlon_stats: js.UndefOr[Jump] = js.native
+  var pokeathlon_stats: js.UndefOr[Jump] = js.undefined
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
   
-  var weight_eu: js.UndefOr[String] = js.native
+  var weight_eu: js.UndefOr[String] = js.undefined
   
-  var weight_us: js.UndefOr[String] = js.native
+  var weight_us: js.UndefOr[String] = js.undefined
 }
 object PokemonVariation {
   

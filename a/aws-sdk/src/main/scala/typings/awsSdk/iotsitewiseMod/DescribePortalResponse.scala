@@ -2,76 +2,74 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePortalResponse extends StObject {
   
   /**
     * The ARN of the portal, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId} 
     */
-  var portalArn: ARN = js.native
+  var portalArn: ARN
   
   /**
     * The service to use to authenticate users to the portal.
     */
-  var portalAuthMode: js.UndefOr[AuthMode] = js.native
+  var portalAuthMode: js.UndefOr[AuthMode] = js.undefined
   
   /**
     * The AWS SSO application generated client ID (used with AWS SSO APIs). AWS IoT SiteWise includes portalClientId for only portals that use AWS SSO to authenticate users.
     */
-  var portalClientId: PortalClientId = js.native
+  var portalClientId: PortalClientId
   
   /**
     * The AWS administrator's contact email address.
     */
-  var portalContactEmail: Email = js.native
+  var portalContactEmail: Email
   
   /**
     * The date the portal was created, in Unix epoch time.
     */
-  var portalCreationDate: Timestamp = js.native
+  var portalCreationDate: Timestamp
   
   /**
     * The portal's description.
     */
-  var portalDescription: js.UndefOr[Description] = js.native
+  var portalDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the portal.
     */
-  var portalId: ID = js.native
+  var portalId: ID
   
   /**
     * The date the portal was last updated, in Unix epoch time.
     */
-  var portalLastUpdateDate: Timestamp = js.native
+  var portalLastUpdateDate: Timestamp
   
   /**
     * The portal's logo image, which is available at a URL.
     */
-  var portalLogoImageLocation: js.UndefOr[ImageLocation] = js.native
+  var portalLogoImageLocation: js.UndefOr[ImageLocation] = js.undefined
   
   /**
     * The name of the portal.
     */
-  var portalName: Name = js.native
+  var portalName: Name
   
   /**
     * The URL for the AWS IoT SiteWise Monitor portal. You can use this URL to access portals that use AWS SSO for authentication. For portals that use IAM for authentication, you must use the CreatePresignedPortalUrl operation to create a URL that you can use to access the portal.
     */
-  var portalStartUrl: Url = js.native
+  var portalStartUrl: Url
   
   /**
     * The current status of the portal, which contains a state and any error message.
     */
-  var portalStatus: PortalStatus = js.native
+  var portalStatus: PortalStatus
   
   /**
     * The ARN of the service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
     */
-  var roleArn: js.UndefOr[ARN] = js.native
+  var roleArn: js.UndefOr[ARN] = js.undefined
 }
 object DescribePortalResponse {
   

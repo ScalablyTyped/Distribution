@@ -3,46 +3,41 @@ package typings.suncalc
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("suncalc", "addTime")
+  @JSImport("suncalc", JSImport.Namespace)
   @js.native
-  def addTime(angleInDegrees: Double, morningName: String, eveningName: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("suncalc", "getMoonIllumination")
-  @js.native
-  def getMoonIllumination(timeAndDate: Date): GetMoonIlluminationResult = js.native
+  @scala.inline
+  def addTime(angleInDegrees: Double, morningName: String, eveningName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTime")(angleInDegrees.asInstanceOf[js.Any], morningName.asInstanceOf[js.Any], eveningName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("suncalc", "getMoonPosition")
-  @js.native
-  def getMoonPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetMoonPositionResult = js.native
+  @scala.inline
+  def getMoonIllumination(timeAndDate: Date): GetMoonIlluminationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getMoonIllumination")(timeAndDate.asInstanceOf[js.Any]).asInstanceOf[GetMoonIlluminationResult]
   
-  @JSImport("suncalc", "getMoonTimes")
-  @js.native
-  def getMoonTimes(date: Date, latitude: Double, longitude: Double): GetMoonTimes_ = js.native
-  @JSImport("suncalc", "getMoonTimes")
-  @js.native
-  def getMoonTimes(date: Date, latitude: Double, longitude: Double, inUTC: Boolean): GetMoonTimes_ = js.native
+  @scala.inline
+  def getMoonPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetMoonPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonPositionResult]
   
-  @JSImport("suncalc", "getPosition")
-  @js.native
-  def getPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetSunPositionResult = js.native
+  @scala.inline
+  def getMoonTimes(date: Date, latitude: Double, longitude: Double): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
+  @scala.inline
+  def getMoonTimes(date: Date, latitude: Double, longitude: Double, inUTC: Boolean): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], inUTC.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
   
-  @JSImport("suncalc", "getTimes")
-  @js.native
-  def getTimes(date: Date, latitude: Double, longitude: Double): GetTimesResult = js.native
+  @scala.inline
+  def getPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetSunPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetSunPositionResult]
   
-  @js.native
+  @scala.inline
+  def getTimes(date: Date, latitude: Double, longitude: Double): GetTimesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetTimesResult]
+  
   trait GetMoonIlluminationResult extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var fraction: Double = js.native
+    var fraction: Double
     
-    var phase: Double = js.native
+    var phase: Double
   }
   object GetMoonIlluminationResult {
     
@@ -66,16 +61,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GetMoonPositionResult extends StObject {
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var azimuth: Double = js.native
+    var azimuth: Double
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var parallacticAngle: Double = js.native
+    var parallacticAngle: Double
   }
   object GetMoonPositionResult {
     
@@ -102,16 +96,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GetMoonTimes_ extends StObject {
     
-    var alwaysDown: Boolean = js.native
+    var alwaysDown: Boolean
     
-    var alwaysUp: Boolean = js.native
+    var alwaysUp: Boolean
     
-    var rise: Date = js.native
+    var rise: Date
     
-    var set: Date = js.native
+    var set: Date
   }
   object GetMoonTimes_ {
     
@@ -138,12 +131,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GetSunPositionResult extends StObject {
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var azimuth: Double = js.native
+    var azimuth: Double
   }
   object GetSunPositionResult {
     
@@ -164,36 +156,35 @@ object mod {
     }
   }
   
-  @js.native
   trait GetTimesResult extends StObject {
     
-    var dawn: Date = js.native
+    var dawn: Date
     
-    var dusk: Date = js.native
+    var dusk: Date
     
-    var goldenHour: Date = js.native
+    var goldenHour: Date
     
-    var goldenHourEnd: Date = js.native
+    var goldenHourEnd: Date
     
-    var nadir: Date = js.native
+    var nadir: Date
     
-    var nauticalDawn: Date = js.native
+    var nauticalDawn: Date
     
-    var nauticalDusk: Date = js.native
+    var nauticalDusk: Date
     
-    var night: Date = js.native
+    var night: Date
     
-    var nightEnd: Date = js.native
+    var nightEnd: Date
     
-    var solarNoon: Date = js.native
+    var solarNoon: Date
     
-    var sunrise: Date = js.native
+    var sunrise: Date
     
-    var sunriseEnd: Date = js.native
+    var sunriseEnd: Date
     
-    var sunset: Date = js.native
+    var sunset: Date
     
-    var sunsetStart: Date = js.native
+    var sunsetStart: Date
   }
   object GetTimesResult {
     

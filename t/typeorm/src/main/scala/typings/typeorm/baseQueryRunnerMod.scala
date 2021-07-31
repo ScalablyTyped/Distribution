@@ -11,7 +11,6 @@ import typings.typeorm.tableMod.Table
 import typings.typeorm.viewMod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseQueryRunnerMod {
@@ -115,14 +114,9 @@ object baseQueryRunnerMod {
       * Does not checks column type, length and autoincrement, because these properties changes separately.
       */
     /* protected */ def isColumnChanged(oldColumn: TableColumn, newColumn: TableColumn): Boolean = js.native
-    /* protected */ def isColumnChanged(
-      oldColumn: TableColumn,
-      newColumn: TableColumn,
-      checkDefault: js.UndefOr[scala.Nothing],
-      checkComment: Boolean
-    ): Boolean = js.native
     /* protected */ def isColumnChanged(oldColumn: TableColumn, newColumn: TableColumn, checkDefault: Boolean): Boolean = js.native
     /* protected */ def isColumnChanged(oldColumn: TableColumn, newColumn: TableColumn, checkDefault: Boolean, checkComment: Boolean): Boolean = js.native
+    /* protected */ def isColumnChanged(oldColumn: TableColumn, newColumn: TableColumn, checkDefault: Unit, checkComment: Boolean): Boolean = js.native
     
     /**
       * Checks if column length is by default.
@@ -179,8 +173,8 @@ object baseQueryRunnerMod {
     /**
       * Executes a given SQL query.
       */
-    def query(query: String): js.Promise[_] = js.native
-    def query(query: String, parameters: js.Array[_]): js.Promise[_] = js.native
+    def query(query: String): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Replaces loaded table with given changed table.

@@ -2,14 +2,12 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TailOptions extends StObject {
   
   /** Show the last <num> lines of files. */
-  var `-n`: Double = js.native
+  var `-n`: Double
 }
 object TailOptions {
   

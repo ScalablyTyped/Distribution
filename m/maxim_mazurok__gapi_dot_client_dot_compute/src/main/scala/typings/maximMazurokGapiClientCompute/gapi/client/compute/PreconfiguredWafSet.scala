@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreconfiguredWafSet extends StObject {
   
   /** List of entities that are currently supported for WAF rules. */
-  var expressionSets: js.UndefOr[js.Array[WafExpressionSet]] = js.native
+  var expressionSets: js.UndefOr[js.Array[WafExpressionSet]] = js.undefined
 }
 object PreconfiguredWafSet {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifySnapshotScheduleMessage extends StObject {
   
   /**
     * An updated list of schedule definitions. A schedule definition is made up of schedule expressions, for example, "cron(30 12 *)" or "rate(12 hours)".
     */
-  var ScheduleDefinitions: ScheduleDefinitionList = js.native
+  var ScheduleDefinitions: ScheduleDefinitionList
   
   /**
     * A unique alphanumeric identifier of the schedule to modify.
     */
-  var ScheduleIdentifier: String = js.native
+  var ScheduleIdentifier: String
 }
 object ModifySnapshotScheduleMessage {
   

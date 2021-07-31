@@ -11,7 +11,6 @@ import typings.wepy.pageMod.PageConstructor
 import typings.wepy.wxEnhancedMod.WxEnhances
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -65,7 +64,9 @@ object mod {
   type Component = Instantiable0[typings.wepy.componentMod.default]
   
   @js.native
-  trait DefaultExport extends WxEnhances {
+  trait DefaultExport
+    extends StObject
+       with WxEnhances {
     
     @JSName("$copy")
     def $copy[T](obj: T): T = js.native
@@ -89,7 +90,7 @@ object mod {
     @JSName("$extend")
     def $extend(): js.Any = js.native
     @JSName("$extend")
-    var $extend_Original: js.Function0[_] = js.native
+    var $extend_Original: js.Function0[js.Any] = js.native
     
     @JSName("$has")
     def $has(obj: js.Object, path: String): Boolean = js.native
@@ -99,17 +100,17 @@ object mod {
     @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
+    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
+    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any], bStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[_], bStack: js.Array[_]): Boolean = js.native
+    def $isDeepEqual(a: js.Any, b: js.Any, aStack: Unit, bStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isDeepEqual")
     var $isDeepEqual_Original: js.Function4[
         /* a */ js.Any, 
         /* b */ js.Any, 
-        /* aStack */ js.UndefOr[js.Array[_]], 
-        /* bStack */ js.UndefOr[js.Array[_]], 
+        /* aStack */ js.UndefOr[js.Array[js.Any]], 
+        /* bStack */ js.UndefOr[js.Array[js.Any]], 
         Boolean
       ] = js.native
     
@@ -121,17 +122,17 @@ object mod {
     @JSName("$isEqual")
     def $isEqual(a: js.Any, b: js.Any): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
+    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
+    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any], bStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[_], bStack: js.Array[_]): Boolean = js.native
+    def $isEqual(a: js.Any, b: js.Any, aStack: Unit, bStack: js.Array[js.Any]): Boolean = js.native
     @JSName("$isEqual")
     var $isEqual_Original: js.Function4[
         /* a */ js.Any, 
         /* b */ js.Any, 
-        /* aStack */ js.UndefOr[js.Array[_]], 
-        /* bStack */ js.UndefOr[js.Array[_]], 
+        /* aStack */ js.UndefOr[js.Array[js.Any]], 
+        /* bStack */ js.UndefOr[js.Array[js.Any]], 
         Boolean
       ] = js.native
     

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamUserPolicy extends StObject {
   
   /**
     * The name of the policy.
     */
-  var PolicyName: js.UndefOr[NonEmptyString] = js.native
+  var PolicyName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamUserPolicy {
   

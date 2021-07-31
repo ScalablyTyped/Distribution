@@ -11,16 +11,16 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.`3G`
 import typings.tizenCommonWeb.tizenCommonWebStrings.`4G`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoNetwork extends SystemInfoProperty {
+trait SystemInfoNetwork
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the network type of the current data network.
     */
-  val networkType: SystemInfoNetworkType | NONE | `2G` | `2Dot5G` | `3G` | `4G` | WIFI | ETHERNET | NET_PROXY | UNKNOWN = js.native
+  val networkType: SystemInfoNetworkType | NONE | `2G` | `2Dot5G` | `3G` | `4G` | WIFI | ETHERNET | NET_PROXY | UNKNOWN
 }
 object SystemInfoNetwork {
   

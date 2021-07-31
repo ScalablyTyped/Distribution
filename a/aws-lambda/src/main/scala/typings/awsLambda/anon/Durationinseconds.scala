@@ -4,26 +4,24 @@ import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseStatusType
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Durationinseconds extends StObject {
   
   // Not available for COMPLETED phase-type
-  var `duration-in-seconds`: js.UndefOr[Double] = js.native
+  var `duration-in-seconds`: js.UndefOr[Double] = js.undefined
   
-  var `end-time`: js.UndefOr[String] = js.native
+  var `end-time`: js.UndefOr[String] = js.undefined
   
-  var `phase-context`: js.UndefOr[js.Array[String]] = js.native
+  var `phase-context`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `phase-status`: js.UndefOr[CodeBuildPhaseStatusType] = js.native
-  
-  // Not available for COMPLETED phase-type
-  var `phase-type`: CodeBuildPhaseType = js.native
+  var `phase-status`: js.UndefOr[CodeBuildPhaseStatusType] = js.undefined
   
   // Not available for COMPLETED phase-type
-  var `start-time`: String = js.native
+  var `phase-type`: CodeBuildPhaseType
+  
+  // Not available for COMPLETED phase-type
+  var `start-time`: String
 }
 object Durationinseconds {
   

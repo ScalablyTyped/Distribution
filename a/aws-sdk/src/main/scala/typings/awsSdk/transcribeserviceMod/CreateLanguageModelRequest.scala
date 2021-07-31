@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLanguageModelRequest extends StObject {
   
   /**
     * The Amazon Transcribe standard language model, or base model used to create your custom language model. If you want to use your custom language model to transcribe audio with a sample rate of 16 kHz or greater, choose Wideband. If you want to use your custom language model to transcribe audio with a sample rate that is less than 16 kHz, choose Narrowband.
     */
-  var BaseModelName: typings.awsSdk.transcribeserviceMod.BaseModelName = js.native
+  var BaseModelName: typings.awsSdk.transcribeserviceMod.BaseModelName
   
   /**
     * Contains the data access role and the Amazon S3 prefixes to read the required input files to create a custom language model.
     */
-  var InputDataConfig: typings.awsSdk.transcribeserviceMod.InputDataConfig = js.native
+  var InputDataConfig: typings.awsSdk.transcribeserviceMod.InputDataConfig
   
   /**
     * The language of the input text you're using to train your custom language model.
     */
-  var LanguageCode: CLMLanguageCode = js.native
+  var LanguageCode: CLMLanguageCode
   
   /**
     * The name you choose for your custom language model when you create it.
     */
-  var ModelName: typings.awsSdk.transcribeserviceMod.ModelName = js.native
+  var ModelName: typings.awsSdk.transcribeserviceMod.ModelName
 }
 object CreateLanguageModelRequest {
   

@@ -3,15 +3,13 @@ package typings.theming
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[Theme] extends StObject {
     
-    var theme: js.UndefOr[NonNullable[Theme]] = js.native
+    var theme: js.UndefOr[NonNullable[Theme]] = js.undefined
   }
   object `0` {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], Theme] (val x: Self with `0`[Theme]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], Theme] (val x: Self & `0`[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: NonNullable[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ThemeNonNullable[Theme] extends StObject {
     
-    var theme: NonNullable[Theme] = js.native
+    var theme: NonNullable[Theme]
   }
   object ThemeNonNullable {
     
@@ -46,7 +43,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ThemeNonNullableMutableBuilder[Self <: ThemeNonNullable[_], Theme] (val x: Self with ThemeNonNullable[Theme]) extends AnyVal {
+    implicit class ThemeNonNullableMutableBuilder[Self <: ThemeNonNullable[?], Theme] (val x: Self & ThemeNonNullable[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: NonNullable[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

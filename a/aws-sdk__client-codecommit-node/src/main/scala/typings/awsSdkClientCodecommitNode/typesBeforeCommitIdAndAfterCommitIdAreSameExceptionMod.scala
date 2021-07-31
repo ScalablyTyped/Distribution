@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBeforeCommitIdAndAfterCommitIdAreSameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BeforeCommitIdAndAfterCommitIdAreSameExceptionDetails> * / any */ @js.native
-  trait BeforeCommitIdAndAfterCommitIdAreSameException
-    extends PostCommentForComparedCommitExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BeforeCommitIdAndAfterCommitIdAreSameExceptionDetails> * / any */ trait BeforeCommitIdAndAfterCommitIdAreSameException
+    extends StObject
+       with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BeforeCommitIdAndAfterCommitIdAreSameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BeforeCommitIdAndAfterCommitIdAreSameException
   }
   object BeforeCommitIdAndAfterCommitIdAreSameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BeforeCommitIdAndAfterCommitIdAreSameException
-    ): BeforeCommitIdAndAfterCommitIdAreSameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BeforeCommitIdAndAfterCommitIdAreSameException = {
+      val __obj = js.Dynamic.literal(name = "BeforeCommitIdAndAfterCommitIdAreSameException")
       __obj.asInstanceOf[BeforeCommitIdAndAfterCommitIdAreSameException]
     }
     
@@ -37,6 +34,5 @@ object typesBeforeCommitIdAndAfterCommitIdAreSameExceptionMod {
     }
   }
   
-  @js.native
   trait BeforeCommitIdAndAfterCommitIdAreSameExceptionDetails extends StObject
 }

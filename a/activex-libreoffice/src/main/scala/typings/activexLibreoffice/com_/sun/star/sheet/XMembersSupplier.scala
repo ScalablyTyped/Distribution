@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSourceLevel
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
-trait XMembersSupplier extends XInterface {
+trait XMembersSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of members.
     * @see com.sun.star.sheet.DataPilotSourceMembers
     */
-  val Members: XMembersAccess = js.native
+  val Members: XMembersAccess
   
   /**
     * returns the collection of members.
     * @see com.sun.star.sheet.DataPilotSourceMembers
     */
-  def getMembers(): XMembersAccess = js.native
+  def getMembers(): XMembersAccess
 }
 object XMembersSupplier {
   

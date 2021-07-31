@@ -3,23 +3,21 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Branch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreatePagesSiteResponseData extends StObject {
   
-  var cname: String = js.native
+  var cname: String
   
-  var custom_404: Boolean = js.native
+  var custom_404: Boolean
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var source: Branch = js.native
+  var source: Branch
   
-  var status: String = js.native
+  var status: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReposCreatePagesSiteResponseData {
   

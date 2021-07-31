@@ -3,13 +3,11 @@ package typings.fridaGum.ObjC
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolSpec extends StObject {
   
-  var methods: js.UndefOr[StringDictionary[ProtocolMethodSpec]] = js.native
+  var methods: js.UndefOr[StringDictionary[ProtocolMethodSpec]] = js.undefined
   
   /**
     * Name of the protocol.
@@ -17,12 +15,12 @@ trait ProtocolSpec extends StObject {
     * Omit this if you don’t care about the globally visible name and would like the runtime to auto-generate one
     * for you.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Protocols this protocol conforms to.
     */
-  var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+  var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
 }
 object ProtocolSpec {
   

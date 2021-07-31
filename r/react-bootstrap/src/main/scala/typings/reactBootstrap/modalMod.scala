@@ -9,7 +9,6 @@ import typings.reactBootstrap.mod.TransitionCallbacks
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -86,61 +85,61 @@ object modalMod {
   trait Modal
     extends Component[ModalProps, js.Object, js.Any]
   
-  @js.native
   trait ModalProps
-    extends HTMLProps[Modal]
-       with TransitionCallbacks {
+    extends StObject
+       with TransitionCallbacks
+       with HTMLProps[Modal] {
     
     // Optional
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var backdrop: js.UndefOr[Boolean | String] = js.native
+    var backdrop: js.UndefOr[Boolean | String] = js.undefined
     
-    var backdropClassName: js.UndefOr[String] = js.native
+    var backdropClassName: js.UndefOr[String] = js.undefined
     
-    var backdropStyle: js.UndefOr[js.Any] = js.native
+    var backdropStyle: js.UndefOr[js.Any] = js.undefined
     
-    var backdropTransitionTimeout: js.UndefOr[Double] = js.native
+    var backdropTransitionTimeout: js.UndefOr[Double] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var container: js.UndefOr[js.Any] = js.native
-    
-    // TODO: Add more specific type
-    var containerClassName: js.UndefOr[String] = js.native
-    
-    var dialogClassName: js.UndefOr[String] = js.native
-    
-    var dialogComponent: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var dialogTransitionTimeout: js.UndefOr[Double] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var dialogClassName: js.UndefOr[String] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var dialogComponent: js.UndefOr[js.Any] = js.undefined
     
-    var onBackdropClick: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+    // TODO: Add more specific type
+    var dialogTransitionTimeout: js.UndefOr[Double] = js.undefined
     
-    var onEscapeKeyDown: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var keyboard: js.UndefOr[Boolean] = js.undefined
+    
+    var onBackdropClick: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+    
+    var onEscapeKeyDown: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
     
     /**
       * @deprecated since Sept 25, 2017, use onEscapeKeyDown instead
       **/
-    var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+    var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
     
     // Required
-    var onHide: js.Function = js.native
+    var onHide: js.Function
     
-    var onShow: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
     
-    var restoreFocus: js.UndefOr[Boolean] = js.native
+    var restoreFocus: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var transition: js.UndefOr[ReactElement] = js.native
+    var transition: js.UndefOr[ReactElement] = js.undefined
   }
   object ModalProps {
     
@@ -238,19 +237,19 @@ object modalMod {
       def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
       @scala.inline
-      def setOnBackdropClick(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
+      def setOnBackdropClick(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
       
       @scala.inline
-      def setOnEscapeKeyDown(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
+      def setOnEscapeKeyDown(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
       
       @scala.inline
-      def setOnEscapeKeyUp(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
+      def setOnEscapeKeyUp(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEscapeKeyUpUndefined: Self = StObject.set(x, "onEscapeKeyUp", js.undefined)
@@ -259,7 +258,7 @@ object modalMod {
       def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnShow(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      def setOnShow(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)

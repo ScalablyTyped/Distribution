@@ -2,50 +2,48 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The period during which some deployable was active in a runtime.
   */
-@js.native
 trait SchemaDeployment extends StObject {
   
   /**
     * Address of the runtime element hosting this deployment.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration used to create this deployment.
     */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Beginning of the lifetime of this deployment.
     */
-  var deployTime: js.UndefOr[String] = js.native
+  var deployTime: js.UndefOr[String] = js.undefined
   
   /**
     * Platform hosting this deployment.
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Resource URI for the artifact being deployed taken from the
     * deployable field with the same name.
     */
-  var resourceUri: js.UndefOr[js.Array[String]] = js.native
+  var resourceUri: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * End of the lifetime of this deployment.
     */
-  var undeployTime: js.UndefOr[String] = js.native
+  var undeployTime: js.UndefOr[String] = js.undefined
   
   /**
     * Identity of the user that triggered this deployment.
     */
-  var userEmail: js.UndefOr[String] = js.native
+  var userEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaDeployment {
   

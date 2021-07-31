@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizerConfig extends StObject {
   
   /**
     * A Boolean that specifies whether the domain configuration's authorization service can be overridden.
     */
-  var allowAuthorizerOverride: js.UndefOr[AllowAuthorizerOverride] = js.native
+  var allowAuthorizerOverride: js.UndefOr[AllowAuthorizerOverride] = js.undefined
   
   /**
     * The name of the authorization service for a domain configuration.
     */
-  var defaultAuthorizerName: js.UndefOr[AuthorizerName] = js.native
+  var defaultAuthorizerName: js.UndefOr[AuthorizerName] = js.undefined
 }
 object AuthorizerConfig {
   

@@ -3,34 +3,34 @@ package typings.senchaTouch.Ext.chart.series
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStackedCartesian extends ICartesian {
+trait IStackedCartesian
+  extends StObject
+     with ICartesian {
   
   /** [Method] Returns the value of stacked
     * @returns Boolean
     */
-  var getStacked: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getStacked: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Array) */
   @JSName("hidden")
-  var hidden_IStackedCartesian: js.UndefOr[Array] = js.native
+  var hidden_IStackedCartesian: js.UndefOr[Array] = js.undefined
   
   /** [Method] Sets the value of hidden
     * @param hidden Array The new value.
     */
   @JSName("setHidden")
-  var setHidden_IStackedCartesian: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Array], Unit]] = js.native
+  var setHidden_IStackedCartesian: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of stacked
     * @param stacked Boolean The new value.
     */
-  var setStacked: js.UndefOr[js.Function1[/* stacked */ js.UndefOr[Boolean], Unit]] = js.native
+  var setStacked: js.UndefOr[js.Function1[/* stacked */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var stacked: js.UndefOr[Boolean] = js.native
+  var stacked: js.UndefOr[Boolean] = js.undefined
 }
 object IStackedCartesian {
   

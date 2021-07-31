@@ -4,24 +4,22 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever a player places a block.
   */
-@js.native
 trait IPlayerPlacedBlockEventData extends StObject {
   
   /**
     * The position of the block that was placed
     */
-  var block_position: VectorXYZ = js.native
+  var block_position: VectorXYZ
   
   /**
     * The player that placed the block
     */
-  var player: IEntity = js.native
+  var player: IEntity
 }
 object IPlayerPlacedBlockEventData {
   

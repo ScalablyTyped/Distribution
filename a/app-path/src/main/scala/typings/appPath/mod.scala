@@ -3,7 +3,6 @@ package typings.appPath
 import typings.appPath.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("app-path", JSImport.Namespace)
-  @js.native
-  def apply(appName: String): js.Promise[String] = js.native
+  @scala.inline
+  def apply(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("app-path", JSImport.Namespace)
   @js.native
@@ -51,9 +49,8 @@ object mod {
   	```
   	*/
   // TODO: remove this in the next major version
-  @JSImport("app-path", "default")
-  @js.native
-  def default(appName: String): js.Promise[String] = js.native
+  @scala.inline
+  def default(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
@@ -70,7 +67,6 @@ object mod {
   	//=> '/Applications/Safari.app'
   	```
   	*/
-  @JSImport("app-path", "sync")
-  @js.native
-  def sync(appName: String): String = js.native
+  @scala.inline
+  def sync(appName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(appName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

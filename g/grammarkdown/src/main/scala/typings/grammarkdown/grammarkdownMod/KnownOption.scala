@@ -3,37 +3,37 @@ package typings.grammarkdown.grammarkdownMod
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnownOption extends StObject {
   
-  var aliasFor: js.UndefOr[js.Array[String]] = js.native
+  var aliasFor: js.UndefOr[js.Array[String]] = js.undefined
   
-  var convert: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, _]] = js.native
+  var convert: js.UndefOr[
+    js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, js.Any]
+  ] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var isUsage: js.UndefOr[Boolean] = js.native
+  var isUsage: js.UndefOr[Boolean] = js.undefined
   
-  var longName: String = js.native
+  var longName: String
   
-  var many: js.UndefOr[Boolean] = js.native
+  var many: js.UndefOr[Boolean] = js.undefined
   
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
   
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String | (Map[String, _])] = js.native
+  var `type`: js.UndefOr[String | (Map[String, js.Any])] = js.undefined
   
   var validate: js.UndefOr[
     js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, Boolean]
-  ] = js.native
+  ] = js.undefined
 }
 object KnownOption {
   
@@ -56,7 +56,7 @@ object KnownOption {
     def setAliasForVarargs(value: String*): Self = StObject.set(x, "aliasFor", js.Array(value :_*))
     
     @scala.inline
-    def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => _): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
+    def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
     
     @scala.inline
     def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
@@ -107,7 +107,7 @@ object KnownOption {
     def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
     @scala.inline
-    def setType(value: String | (Map[String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: String | (Map[String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

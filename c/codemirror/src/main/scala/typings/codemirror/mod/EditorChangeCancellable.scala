@@ -2,13 +2,13 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorChangeCancellable extends EditorChange {
+trait EditorChangeCancellable
+  extends StObject
+     with EditorChange {
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** may be used to modify the change. All three arguments to update are optional, and can be left off to leave the existing value for that field intact.
     If the change came from undo/redo, `update` is undefined and the change cannot be modified. */
@@ -19,7 +19,7 @@ trait EditorChangeCancellable extends EditorChange {
       /* text */ js.UndefOr[js.Array[String]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object EditorChangeCancellable {
   

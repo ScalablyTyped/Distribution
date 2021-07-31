@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFhirStoresResponse extends StObject {
   
   /** The returned FHIR stores. Won't be more FHIR stores than the value of page_size in the request. */
-  var fhirStores: js.UndefOr[js.Array[FhirStore]] = js.native
+  var fhirStores: js.UndefOr[js.Array[FhirStore]] = js.undefined
   
   /** Token to retrieve the next page of results or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListFhirStoresResponse {
   

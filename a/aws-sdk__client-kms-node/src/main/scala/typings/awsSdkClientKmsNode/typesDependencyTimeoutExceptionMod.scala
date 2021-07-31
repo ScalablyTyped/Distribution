@@ -34,15 +34,14 @@ import typings.awsSdkClientKmsNode.updateAliasExceptionsUnionMod.UpdateAliasExce
 import typings.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDependencyTimeoutExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DependencyTimeoutExceptionDetails> * / any */ @js.native
-  trait DependencyTimeoutException
-    extends CancelKeyDeletionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DependencyTimeoutExceptionDetails> * / any */ trait DependencyTimeoutException
+    extends StObject
+       with CancelKeyDeletionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateGrantExceptionsUnion
        with CreateKeyExceptionsUnion
@@ -75,13 +74,13 @@ object typesDependencyTimeoutExceptionMod {
        with UpdateAliasExceptionsUnion
        with UpdateKeyDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DependencyTimeoutException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DependencyTimeoutException
   }
   object DependencyTimeoutException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DependencyTimeoutException): DependencyTimeoutException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): DependencyTimeoutException = {
+      val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[DependencyTimeoutException]
     }
     
@@ -93,13 +92,12 @@ object typesDependencyTimeoutExceptionMod {
     }
   }
   
-  @js.native
   trait DependencyTimeoutExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object DependencyTimeoutExceptionDetails {
     

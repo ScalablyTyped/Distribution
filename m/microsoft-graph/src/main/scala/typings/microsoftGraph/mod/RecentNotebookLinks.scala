@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecentNotebookLinks extends StObject {
   
   // Opens the notebook in the OneNote native client if it's installed.
-  var oneNoteClientUrl: js.UndefOr[NullableOption[ExternalLink]] = js.native
+  var oneNoteClientUrl: js.UndefOr[NullableOption[ExternalLink]] = js.undefined
   
   // Opens the notebook in OneNote on the web.
-  var oneNoteWebUrl: js.UndefOr[NullableOption[ExternalLink]] = js.native
+  var oneNoteWebUrl: js.UndefOr[NullableOption[ExternalLink]] = js.undefined
 }
 object RecentNotebookLinks {
   

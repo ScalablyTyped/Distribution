@@ -7,7 +7,6 @@ import typings.three.materialMod.Material
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineSegmentsMod {
@@ -21,7 +20,7 @@ object lineSegmentsMod {
   class LineSegments[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Line[TGeometry, TMaterial] {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    def this(geometry: Unit, material: TMaterial) = this()
     
     val isLineSegments: `true` = js.native
     

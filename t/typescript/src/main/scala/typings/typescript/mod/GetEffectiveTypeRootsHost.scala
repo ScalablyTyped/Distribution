@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEffectiveTypeRootsHost extends StObject {
   
-  var directoryExists: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, Boolean]] = js.native
+  var directoryExists: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, Boolean]] = js.undefined
   
-  var getCurrentDirectory: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getCurrentDirectory: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
 }
 object GetEffectiveTypeRootsHost {
   

@@ -22,7 +22,6 @@ import typings.protractorHttpMock.mod.requests.PostData
 import typings.protractorHttpMock.mod.requests.Put
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -62,7 +61,6 @@ object mod extends Shortcut {
   /**
     * Plugin for custom matching logic with 2 generic types.
     */
-  @js.native
   trait Plugin2[T1, T2] extends StObject {
     
     /**
@@ -72,7 +70,7 @@ object mod extends Shortcut {
       * @param mockRequest The mock to compare request with.
       * @param requestConfig The request object to compare mock with.
       */
-    def `match`[O /* <: PostData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean = js.native
+    def `match`[O /* <: PostData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean
   }
   object Plugin2 {
     
@@ -84,7 +82,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class Plugin2MutableBuilder[Self <: Plugin2[_, _], T1, T2] (val x: Self with (Plugin2[T1, T2])) extends AnyVal {
+    implicit class Plugin2MutableBuilder[Self <: Plugin2[?, ?], T1, T2] (val x: Self & (Plugin2[T1, T2])) extends AnyVal {
       
       @scala.inline
       def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
@@ -102,21 +100,24 @@ object mod extends Shortcut {
       * @param skipDefaults Set true to skip loading of default mocks.
       */
     def apply(): ProtractorHttpMock = js.native
-    def apply(mocks: js.UndefOr[scala.Nothing], plugins: js.UndefOr[scala.Nothing], skipDefaults: Boolean): ProtractorHttpMock = js.native
-    def apply(mocks: js.UndefOr[scala.Nothing], plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String]): ProtractorHttpMock = js.native
-    def apply(
-      mocks: js.UndefOr[scala.Nothing],
-      plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String],
-      skipDefaults: Boolean
-    ): ProtractorHttpMock = js.native
     def apply(mocks: js.Array[AllRequests | String]): ProtractorHttpMock = js.native
-    def apply(mocks: js.Array[AllRequests | String], plugins: js.UndefOr[scala.Nothing], skipDefaults: Boolean): ProtractorHttpMock = js.native
-    def apply(mocks: js.Array[AllRequests | String], plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String]): ProtractorHttpMock = js.native
     def apply(
       mocks: js.Array[AllRequests | String],
-      plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String],
+      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String]
+    ): ProtractorHttpMock = js.native
+    def apply(
+      mocks: js.Array[AllRequests | String],
+      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String],
       skipDefaults: Boolean
     ): ProtractorHttpMock = js.native
+    def apply(mocks: js.Array[AllRequests | String], plugins: Unit, skipDefaults: Boolean): ProtractorHttpMock = js.native
+    def apply(mocks: Unit, plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String]): ProtractorHttpMock = js.native
+    def apply(
+      mocks: Unit,
+      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String],
+      skipDefaults: Boolean
+    ): ProtractorHttpMock = js.native
+    def apply(mocks: Unit, plugins: Unit, skipDefaults: Boolean): ProtractorHttpMock = js.native
     
     /**
       * Add mocks during test execution.
@@ -164,12 +165,11 @@ object mod extends Shortcut {
   /**
     * Matched request.
     */
-  @js.native
   trait ReceivedRequest extends StObject {
     
-    var method: Method = js.native
+    var method: Method
     
-    var url: String = js.native
+    var url: String
   }
   object ReceivedRequest {
     
@@ -205,12 +205,11 @@ object mod extends Shortcut {
     /**
       * HTTP Delete request mock.
       */
-    @js.native
     trait Delete[TResponse] extends StObject {
       
-      var request: MethodPath = js.native
+      var request: MethodPath
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Delete {
       
@@ -221,7 +220,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class DeleteMutableBuilder[Self <: Delete[_], TResponse] (val x: Self with Delete[TResponse]) extends AnyVal {
+      implicit class DeleteMutableBuilder[Self <: Delete[?], TResponse] (val x: Self & Delete[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: MethodPath): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -234,12 +233,11 @@ object mod extends Shortcut {
     /**
       * GET request mock.
       */
-    @js.native
     trait Get[TResponse] extends StObject {
       
-      var request: Headers = js.native
+      var request: Headers
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Get {
       
@@ -250,7 +248,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class GetMutableBuilder[Self <: Get[_], TResponse] (val x: Self with Get[TResponse]) extends AnyVal {
+      implicit class GetMutableBuilder[Self <: Get[?], TResponse] (val x: Self & Get[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -263,12 +261,11 @@ object mod extends Shortcut {
     /**
       * HEAD request mock.
       */
-    @js.native
     trait Head[TResponse] extends StObject {
       
-      var request: Regex = js.native
+      var request: Regex
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Head {
       
@@ -279,7 +276,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class HeadMutableBuilder[Self <: Head[_], TResponse] (val x: Self with Head[TResponse]) extends AnyVal {
+      implicit class HeadMutableBuilder[Self <: Head[?], TResponse] (val x: Self & Head[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: Regex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -292,12 +289,11 @@ object mod extends Shortcut {
     /**
       * JSONP request mock.
       */
-    @js.native
     trait Jsonp[TResponse] extends StObject {
       
-      var request: PathString = js.native
+      var request: PathString
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Jsonp {
       
@@ -308,7 +304,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class JsonpMutableBuilder[Self <: Jsonp[_], TResponse] (val x: Self with Jsonp[TResponse]) extends AnyVal {
+      implicit class JsonpMutableBuilder[Self <: Jsonp[?], TResponse] (val x: Self & Jsonp[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: PathString): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -358,12 +354,11 @@ object mod extends Shortcut {
     /**
       * PATCH request mock.
       */
-    @js.native
     trait Patch[TResponse] extends StObject {
       
-      var request: MethodPathRegex = js.native
+      var request: MethodPathRegex
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Patch {
       
@@ -374,7 +369,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class PatchMutableBuilder[Self <: Patch[_], TResponse] (val x: Self with Patch[TResponse]) extends AnyVal {
+      implicit class PatchMutableBuilder[Self <: Patch[?], TResponse] (val x: Self & Patch[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: MethodPathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -387,12 +382,11 @@ object mod extends Shortcut {
     /**
       * POST request mock.
       */
-    @js.native
     trait Post[TResponse] extends StObject {
       
-      var request: Path = js.native
+      var request: Path
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Post {
       
@@ -403,7 +397,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class PostMutableBuilder[Self <: Post[_], TResponse] (val x: Self with Post[TResponse]) extends AnyVal {
+      implicit class PostMutableBuilder[Self <: Post[?], TResponse] (val x: Self & Post[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -416,12 +410,11 @@ object mod extends Shortcut {
     /**
       * POST request mock with payload.
       */
-    @js.native
     trait PostData[TResponse, TPayload] extends StObject {
       
-      var request: typings.protractorHttpMock.anon.Method[TPayload] = js.native
+      var request: typings.protractorHttpMock.anon.Method[TPayload]
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object PostData {
       
@@ -432,7 +425,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class PostDataMutableBuilder[Self <: PostData[_, _], TResponse, TPayload] (val x: Self with (PostData[TResponse, TPayload])) extends AnyVal {
+      implicit class PostDataMutableBuilder[Self <: PostData[?, ?], TResponse, TPayload] (val x: Self & (PostData[TResponse, TPayload])) extends AnyVal {
         
         @scala.inline
         def setRequest(value: typings.protractorHttpMock.anon.Method[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
@@ -445,12 +438,11 @@ object mod extends Shortcut {
     /**
       * PUT request mock.
       */
-    @js.native
     trait Put[TResponse] extends StObject {
       
-      var request: PathRegex = js.native
+      var request: PathRegex
       
-      var response: Data[TResponse] = js.native
+      var response: Data[TResponse]
     }
     object Put {
       
@@ -461,7 +453,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class PutMutableBuilder[Self <: Put[_], TResponse] (val x: Self with Put[TResponse]) extends AnyVal {
+      implicit class PutMutableBuilder[Self <: Put[?], TResponse] (val x: Self & Put[TResponse]) extends AnyVal {
         
         @scala.inline
         def setRequest(value: PathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

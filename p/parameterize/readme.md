@@ -11,8 +11,8 @@ This repository adds node.js and npm support for parameterize which is originall
 | Full name          | parameterize |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 85629 |
+| # dependents       | 13 |
+| # downloads        | 104231 |
 | # stars            | 2 |
 
 ## Links

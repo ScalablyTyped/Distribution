@@ -2,38 +2,36 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentConfiguration extends StObject {
   
   /** See `agent.getAgentStates()` for more info. */
-  val agentStates: js.Array[AgentStateDefinition] = js.native
+  val agentStates: js.Array[AgentStateDefinition]
   
   /** See `agent.getDialableCountries()` for more info. */
-  val dialableCountries: js.Array[String] = js.native
+  val dialableCountries: js.Array[String]
   
   /** See `agent.getExtension()` for more info. */
-  var extension: String = js.native
+  var `extension`: String
   
   /** See `agent.getName()` for more info. */
-  val name: String = js.native
+  val name: String
   
   /** See `agent.getPermissions()` for more info. */
-  val permissions: js.Array[String] = js.native
+  val permissions: js.Array[String]
   
   /** See `agent.getRoutingProfile()` for more info. */
-  val routingProfile: AgentRoutingProfile = js.native
+  val routingProfile: AgentRoutingProfile
   
   /** Indicates whether auto accept soft phone calls is enabled. */
-  val softphoneAutoAccept: Boolean = js.native
+  val softphoneAutoAccept: Boolean
   
   /** See `agent.isSoftphoneEnabled()` for more info. */
-  var softphoneEnabled: Boolean = js.native
+  var softphoneEnabled: Boolean
   
   /** The username for the agent as entered in their Amazon Connect user account. */
-  val username: String = js.native
+  val username: String
 }
 object AgentConfiguration {
   
@@ -41,7 +39,7 @@ object AgentConfiguration {
   def apply(
     agentStates: js.Array[AgentStateDefinition],
     dialableCountries: js.Array[String],
-    extension: String,
+    `extension`: String,
     name: String,
     permissions: js.Array[String],
     routingProfile: AgentRoutingProfile,
@@ -49,7 +47,8 @@ object AgentConfiguration {
     softphoneEnabled: Boolean,
     username: String
   ): AgentConfiguration = {
-    val __obj = js.Dynamic.literal(agentStates = agentStates.asInstanceOf[js.Any], dialableCountries = dialableCountries.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], routingProfile = routingProfile.asInstanceOf[js.Any], softphoneAutoAccept = softphoneAutoAccept.asInstanceOf[js.Any], softphoneEnabled = softphoneEnabled.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(agentStates = agentStates.asInstanceOf[js.Any], dialableCountries = dialableCountries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], routingProfile = routingProfile.asInstanceOf[js.Any], softphoneAutoAccept = softphoneAutoAccept.asInstanceOf[js.Any], softphoneEnabled = softphoneEnabled.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentConfiguration]
   }
   

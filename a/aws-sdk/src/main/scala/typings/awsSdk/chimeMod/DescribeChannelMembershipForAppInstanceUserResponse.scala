@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChannelMembershipForAppInstanceUserResponse extends StObject {
   
   /**
     * The channel to which a user belongs.
     */
-  var ChannelMembership: js.UndefOr[ChannelMembershipForAppInstanceUserSummary] = js.native
+  var ChannelMembership: js.UndefOr[ChannelMembershipForAppInstanceUserSummary] = js.undefined
 }
 object DescribeChannelMembershipForAppInstanceUserResponse {
   

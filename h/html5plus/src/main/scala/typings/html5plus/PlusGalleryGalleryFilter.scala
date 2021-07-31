@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
   */
-@js.native
 trait PlusGalleryGalleryFilter extends StObject {
   
   /**
@@ -18,21 +16,21 @@ trait PlusGalleryGalleryFilter extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * 不过滤，可选择图片或视频文件
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var none: js.UndefOr[String] = js.native
+  var none: js.UndefOr[String] = js.undefined
   
   /**
     * 仅可选择视频文件
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var video: js.UndefOr[String] = js.native
+  var video: js.UndefOr[String] = js.undefined
 }
 object PlusGalleryGalleryFilter {
   

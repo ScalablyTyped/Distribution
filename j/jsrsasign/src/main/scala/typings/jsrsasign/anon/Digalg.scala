@@ -3,25 +3,23 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Digalg extends StObject {
   
-  var digalg: String = js.native
+  var digalg: String
   
-  var obj: SignerInfo = js.native
+  var obj: SignerInfo
   
-  var sattrs: String = js.native
+  var sattrs: String
   
-  var si: String = js.native
+  var si: String
   
-  var sigalg: String = js.native
+  var sigalg: String
   
-  var sigval: String = js.native
+  var sigval: String
   
-  var version: String = js.native
+  var version: String
 }
 object Digalg {
   

@@ -12,7 +12,7 @@ Get product information from HTML markup on merchant websites
 | Keywords           | price, metascraper, shopping, sku, mpn, currency, condition, availability, asin |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1193 |
+| # downloads        | 2402 |
 | # stars            | 0 |
 
 ## Links

@@ -4,7 +4,6 @@ import typings.monk.mod.DropResult
 import typings.monk.mod.UpdateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monkStrings {
@@ -18,11 +17,6 @@ object monkStrings {
   sealed trait DEFAULT extends StObject
   @scala.inline
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  
-  @js.native
-  sealed trait FindOptions extends StObject
-  @scala.inline
-  def FindOptions: FindOptions = "FindOptions".asInstanceOf[FindOptions]
   
   @js.native
   sealed trait GSSAPI extends StObject
@@ -65,22 +59,30 @@ object monkStrings {
   def majority: majority = "majority".asInstanceOf[majority]
   
   @js.native
-  sealed trait n extends UpdateResult
+  sealed trait n
+    extends StObject
+       with UpdateResult
   @scala.inline
   def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait nModified extends UpdateResult
+  sealed trait nModified
+    extends StObject
+       with UpdateResult
   @scala.inline
   def nModified: nModified = "nModified".asInstanceOf[nModified]
   
   @js.native
-  sealed trait `ns not found` extends DropResult
+  sealed trait `ns not found`
+    extends StObject
+       with DropResult
   @scala.inline
   def `ns not found`: `ns not found` = ("ns not found").asInstanceOf[`ns not found`]
   
   @js.native
-  sealed trait ok extends UpdateResult
+  sealed trait ok
+    extends StObject
+       with UpdateResult
   @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
   

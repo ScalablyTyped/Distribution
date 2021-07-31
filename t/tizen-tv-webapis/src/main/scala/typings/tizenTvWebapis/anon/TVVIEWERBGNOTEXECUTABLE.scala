@@ -4,27 +4,25 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TVVIEWERBGNOTEXECUTABLE extends StObject {
   
   /**
     * Background execution is supported
     */
-  var TV_VIEWER_BG_EXECUTABLE: `1` = js.native
+  var TV_VIEWER_BG_EXECUTABLE: `1`
   
   /**
     * Background execution is not supported
     */
-  var TV_VIEWER_BG_NOT_EXECUTABLE: `0` = js.native
+  var TV_VIEWER_BG_NOT_EXECUTABLE: `0`
 }
 object TVVIEWERBGNOTEXECUTABLE {
   
   @scala.inline
-  def apply(TV_VIEWER_BG_EXECUTABLE: `1`, TV_VIEWER_BG_NOT_EXECUTABLE: `0`): TVVIEWERBGNOTEXECUTABLE = {
-    val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = TV_VIEWER_BG_EXECUTABLE.asInstanceOf[js.Any], TV_VIEWER_BG_NOT_EXECUTABLE = TV_VIEWER_BG_NOT_EXECUTABLE.asInstanceOf[js.Any])
+  def apply(): TVVIEWERBGNOTEXECUTABLE = {
+    val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = 1, TV_VIEWER_BG_NOT_EXECUTABLE = 0)
     __obj.asInstanceOf[TVVIEWERBGNOTEXECUTABLE]
   }
   

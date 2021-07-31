@@ -4,40 +4,39 @@ import typings.std.RegExp
 import typings.turistFetch.anon.Typeofdns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dnsResolveMod {
   
-  @JSImport("@turist/fetch/dist/dns-resolve", JSImport.Default)
+  @JSImport("@turist/fetch/dist/dns-resolve", JSImport.Namespace)
   @js.native
-  def default(host: String): js.Promise[String] = js.native
-  @JSImport("@turist/fetch/dist/dns-resolve", JSImport.Default)
-  @js.native
-  def default(host: String, options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(host: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(host: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("@turist/fetch/dist/dns-resolve", "localhostRegex")
   @js.native
   val localhostRegex: RegExp = js.native
   
-  @JSImport("@turist/fetch/dist/dns-resolve", "setupCache")
-  @js.native
-  def setupCache(): Unit = js.native
+  @scala.inline
+  def setupCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupCache")().asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var ipv6: js.UndefOr[Boolean] = js.native
+    var ipv6: js.UndefOr[Boolean] = js.undefined
     
-    var minimumCacheTime: js.UndefOr[Double] = js.native
+    var minimumCacheTime: js.UndefOr[Double] = js.undefined
     
-    var refreshCache: js.UndefOr[Boolean] = js.native
+    var refreshCache: js.UndefOr[Boolean] = js.undefined
     
-    var resolver: js.UndefOr[Typeofdns] = js.native
+    var resolver: js.UndefOr[Typeofdns] = js.undefined
     
     var retryOpts: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

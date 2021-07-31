@@ -2,17 +2,15 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSkeletonDebugRender extends StObject {
   
   /* static member */
-  var GREEN: js.Any = js.native
+  var GREEN: js.Any
   
   /* static member */
-  var LIGHT_GRAY: js.Any = js.native
+  var LIGHT_GRAY: js.Any
 }
 object TypeofSkeletonDebugRender {
   

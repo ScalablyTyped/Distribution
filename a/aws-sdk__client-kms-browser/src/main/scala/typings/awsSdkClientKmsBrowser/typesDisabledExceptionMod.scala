@@ -10,15 +10,14 @@ import typings.awsSdkClientKmsBrowser.generateDataKeyWithoutPlaintextExceptionsU
 import typings.awsSdkClientKmsBrowser.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDisabledExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DisabledExceptionDetails> * / any */ @js.native
-  trait DisabledException
-    extends CreateGrantExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DisabledExceptionDetails> * / any */ trait DisabledException
+    extends StObject
+       with CreateGrantExceptionsUnion
        with DecryptExceptionsUnion
        with DisableKeyRotationExceptionsUnion
        with EnableKeyRotationExceptionsUnion
@@ -27,13 +26,13 @@ object typesDisabledExceptionMod {
        with GenerateDataKeyWithoutPlaintextExceptionsUnion
        with ReEncryptExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException
   }
   object DisabledException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException): DisabledException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): DisabledException = {
+      val __obj = js.Dynamic.literal(name = "DisabledException")
       __obj.asInstanceOf[DisabledException]
     }
     
@@ -45,13 +44,12 @@ object typesDisabledExceptionMod {
     }
   }
   
-  @js.native
   trait DisabledExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object DisabledExceptionDetails {
     

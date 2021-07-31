@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeHistory extends StObject {
   
   /**
     * UTC Timestamp at which the Upgrade API call was made in "yyyy-MM-ddTHH:mm:ssZ" format.
     */
-  var StartTimestamp: js.UndefOr[typings.awsSdk.esMod.StartTimestamp] = js.native
+  var StartTimestamp: js.UndefOr[typings.awsSdk.esMod.StartTimestamp] = js.undefined
   
   /**
     *  A list of  UpgradeStepItem  s representing information about each step performed as pard of a specific Upgrade or Upgrade Eligibility Check. 
     */
-  var StepsList: js.UndefOr[UpgradeStepsList] = js.native
+  var StepsList: js.UndefOr[UpgradeStepsList] = js.undefined
   
   /**
     * A string that describes the update briefly
     */
-  var UpgradeName: js.UndefOr[typings.awsSdk.esMod.UpgradeName] = js.native
+  var UpgradeName: js.UndefOr[typings.awsSdk.esMod.UpgradeName] = js.undefined
   
   /**
     *  The overall status of the update. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
     */
-  var UpgradeStatus: js.UndefOr[typings.awsSdk.esMod.UpgradeStatus] = js.native
+  var UpgradeStatus: js.UndefOr[typings.awsSdk.esMod.UpgradeStatus] = js.undefined
 }
 object UpgradeHistory {
   

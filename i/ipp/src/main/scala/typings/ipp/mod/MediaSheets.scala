@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaSheets extends StObject {
   
-  var blank: js.UndefOr[Double] = js.native
+  var blank: js.UndefOr[Double] = js.undefined
   
-  var `full-color`: js.UndefOr[Double] = js.native
+  var `full-color`: js.UndefOr[Double] = js.undefined
   
-  var `highlight-color`: js.UndefOr[Double] = js.native
+  var `highlight-color`: js.UndefOr[Double] = js.undefined
   
-  var monochrome: js.UndefOr[Double] = js.native
+  var monochrome: js.UndefOr[Double] = js.undefined
 }
 object MediaSheets {
   

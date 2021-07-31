@@ -3,23 +3,21 @@ package typings.relayRuntime
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayRuntimeTypesMod {
   
-  @js.native
   trait CacheConfig extends StObject {
     
-    var force: js.UndefOr[Boolean | Null] = js.native
+    var force: js.UndefOr[Boolean | Null] = js.undefined
     
-    var liveConfigId: js.UndefOr[String | Null] = js.native
+    var liveConfigId: js.UndefOr[String | Null] = js.undefined
     
-    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var poll: js.UndefOr[Double | Null] = js.native
+    var poll: js.UndefOr[Double | Null] = js.undefined
     
-    var transactionId: js.UndefOr[String | Null] = js.native
+    var transactionId: js.UndefOr[String | Null] = js.undefined
   }
   object CacheConfig {
     
@@ -78,10 +76,9 @@ object relayRuntimeTypesMod {
   
   type DataID = String
   
-  @js.native
   trait Disposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Disposable {
     
@@ -137,14 +134,13 @@ object relayRuntimeTypesMod {
     def `store-or-network`: typings.relayRuntime.relayRuntimeStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.`store-or-network`]
   }
   
-  @js.native
   trait OperationType extends StObject {
     
-    val rawResponse: js.UndefOr[js.Any] = js.native
+    val rawResponse: js.UndefOr[js.Any] = js.undefined
     
-    val response: js.Any = js.native
+    val response: js.Any
     
-    val variables: Variables = js.native
+    val variables: Variables
   }
   object OperationType {
     

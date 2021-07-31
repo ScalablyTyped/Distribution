@@ -6,10 +6,13 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashNAVIGATE
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashSET_PARAMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavigationActions {
+  
+  @JSImport("react-navigation", "NavigationActions")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-navigation", "NavigationActions.BACK")
   @js.native
@@ -27,25 +30,19 @@ object NavigationActions {
   @js.native
   val SET_PARAMS: NavigationSlashSET_PARAMS = js.native
   
-  @JSImport("react-navigation", "NavigationActions.back")
-  @js.native
-  def back(): NavigationBackAction = js.native
-  @JSImport("react-navigation", "NavigationActions.back")
-  @js.native
-  def back(options: NavigationBackActionPayload): NavigationBackAction = js.native
+  @scala.inline
+  def back(): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[NavigationBackAction]
+  @scala.inline
+  def back(options: NavigationBackActionPayload): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationBackAction]
   
-  @JSImport("react-navigation", "NavigationActions.init")
-  @js.native
-  def init(): NavigationInitAction = js.native
-  @JSImport("react-navigation", "NavigationActions.init")
-  @js.native
-  def init(options: NavigationInitActionPayload): NavigationInitAction = js.native
+  @scala.inline
+  def init(): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[NavigationInitAction]
+  @scala.inline
+  def init(options: NavigationInitActionPayload): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationInitAction]
   
-  @JSImport("react-navigation", "NavigationActions.navigate")
-  @js.native
-  def navigate(options: NavigationNavigateActionPayload): NavigationNavigateAction = js.native
+  @scala.inline
+  def navigate(options: NavigationNavigateActionPayload): NavigationNavigateAction = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigateAction]
   
-  @JSImport("react-navigation", "NavigationActions.setParams")
-  @js.native
-  def setParams(options: NavigationSetParamsActionPayload): NavigationSetParamsAction = js.native
+  @scala.inline
+  def setParams(options: NavigationSetParamsActionPayload): NavigationSetParamsAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationSetParamsAction]
 }

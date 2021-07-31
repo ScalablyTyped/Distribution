@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectStore extends StObject {
   
   /**
     * If true, object store has auto increment flag set.
     */
-  var autoIncrement: Boolean = js.native
+  var autoIncrement: Boolean
   
   /**
     * Indexes in this object store.
     */
-  var indexes: js.Array[ObjectStoreIndex] = js.native
+  var indexes: js.Array[ObjectStoreIndex]
   
   /**
     * Object store key path.
     */
-  var keyPath: KeyPath = js.native
+  var keyPath: KeyPath
   
   /**
     * Object store name.
     */
-  var name: String = js.native
+  var name: String
 }
 object ObjectStore {
   

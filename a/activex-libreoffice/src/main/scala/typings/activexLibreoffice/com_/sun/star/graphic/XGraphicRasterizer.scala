@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interfaces exposes the initialize and a rasterize method to rasterize a given data stream to a pixel graphic */
-@js.native
-trait XGraphicRasterizer extends XInterface {
+trait XGraphicRasterizer
+  extends StObject
+     with XInterface {
   
   /**
     * Initializing the rasterizer
@@ -27,7 +27,7 @@ trait XGraphicRasterizer extends XInterface {
     * @see com.sun.star.io.XInputStream
     * @see com.sun.star.awt.Size
     */
-  def initializeData(DataStream: XInputStream, DPI_X: Double, DPI_Y: Double, DefaultSizePixel: js.Array[Size]): Boolean = js.native
+  def initializeData(DataStream: XInputStream, DPI_X: Double, DPI_Y: Double, DefaultSizePixel: js.Array[Size]): Boolean
   
   /**
     * Rasterizing the initialized data into a {@link XGraphic} container.
@@ -52,7 +52,7 @@ trait XGraphicRasterizer extends XInterface {
     ShearAngle_X: Double,
     ShearAngle_Y: Double,
     RasterizeProperties: PropertyValues
-  ): XGraphic = js.native
+  ): XGraphic
 }
 object XGraphicRasterizer {
   

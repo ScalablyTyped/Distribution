@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsInput extends StObject {
   
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
   
   /**
     * The keys of the tags to remove.
     */
-  var tagKeys: stringList = js.native
+  var tagKeys: stringList
 }
 object RemoveTagsInput {
   

@@ -15,7 +15,6 @@ import typings.sipJs.userAgentCoreMod.UserAgentCore
 import typings.sipJs.userAgentServerMod.ServerTransactionConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentsMod {
@@ -26,7 +25,7 @@ object userAgentsMod {
     extends typings.sipJs.byeUserAgentClientMod.ByeUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -52,7 +51,7 @@ object userAgentsMod {
     extends typings.sipJs.infoUserAgentClientMod.InfoUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -102,7 +101,7 @@ object userAgentsMod {
     extends typings.sipJs.notifyUserAgentClientMod.NotifyUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -127,7 +126,7 @@ object userAgentsMod {
     extends typings.sipJs.prackUserAgentClientMod.PrackUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -153,7 +152,7 @@ object userAgentsMod {
     extends typings.sipJs.reInviteUserAgentClientMod.ReInviteUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -171,7 +170,7 @@ object userAgentsMod {
     extends typings.sipJs.reSubscribeUserAgentClientMod.ReSubscribeUserAgentClient {
     def this(dialog: SubscriptionDialog) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SubscriptionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SubscriptionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   
@@ -189,7 +188,7 @@ object userAgentsMod {
     extends typings.sipJs.referUserAgentClientMod.ReferUserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   

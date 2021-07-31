@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.typeorm.columnMetadataMod.ColumnMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateUtilsMod {
@@ -37,159 +36,122 @@ object dateUtilsMod {
     @scala.inline
     def formatZerolessValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatZerolessValue")(x.asInstanceOf[js.Any])
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: String): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: String, toUtc: js.UndefOr[scala.Nothing], useMilliseconds: Boolean): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: String, toUtc: Boolean): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: String, toUtc: Boolean, useMilliseconds: Boolean): Date = js.native
+    @scala.inline
+    def mixedDateToDate(mixedDate: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any]).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: String, toUtc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: String, toUtc: Boolean, useMilliseconds: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: String, toUtc: Unit, useMilliseconds: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
     /**
       * Converts given value into date object.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: Date): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: Date, toUtc: js.UndefOr[scala.Nothing], useMilliseconds: Boolean): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: Date, toUtc: Boolean): Date = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDate")
-    @js.native
-    def mixedDateToDate(mixedDate: Date, toUtc: Boolean, useMilliseconds: Boolean): Date = js.native
+    @scala.inline
+    def mixedDateToDate(mixedDate: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any]).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: Date, toUtc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: Date, toUtc: Boolean, useMilliseconds: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def mixedDateToDate(mixedDate: Date, toUtc: Unit, useMilliseconds: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDate")(mixedDate.asInstanceOf[js.Any], toUtc.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDateString")
-    @js.native
-    def mixedDateToDateString(value: js.Any): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToDateString(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDateString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     /**
       * Converts given value into date string in a "YYYY-MM-DD" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDateString")
-    @js.native
-    def mixedDateToDateString(value: Date): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToDateString(value: Date): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDateString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDatetimeString")
-    @js.native
-    def mixedDateToDatetimeString(value: js.Any): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDatetimeString")
-    @js.native
-    def mixedDateToDatetimeString(value: js.Any, useMilliseconds: Boolean): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToDatetimeString(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDatetimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedDateToDatetimeString(value: js.Any, useMilliseconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDatetimeString")(value.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     /**
       * Converts given value into datetime string in a "YYYY-MM-DD HH-mm-ss" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDatetimeString")
-    @js.native
-    def mixedDateToDatetimeString(value: Date): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToDatetimeString")
-    @js.native
-    def mixedDateToDatetimeString(value: Date, useMilliseconds: Boolean): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToDatetimeString(value: Date): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDatetimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedDateToDatetimeString(value: Date, useMilliseconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToDatetimeString")(value.asInstanceOf[js.Any], useMilliseconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToTimeString")
-    @js.native
-    def mixedDateToTimeString(value: js.Any): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToTimeString")
-    @js.native
-    def mixedDateToTimeString(value: js.Any, skipSeconds: Boolean): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToTimeString(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToTimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedDateToTimeString(value: js.Any, skipSeconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToTimeString")(value.asInstanceOf[js.Any], skipSeconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     /**
       * Converts given value into time string in a "HH:mm:ss" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToTimeString")
-    @js.native
-    def mixedDateToTimeString(value: Date): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToTimeString")
-    @js.native
-    def mixedDateToTimeString(value: Date, skipSeconds: Boolean): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToTimeString(value: Date): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToTimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedDateToTimeString(value: Date, skipSeconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToTimeString")(value.asInstanceOf[js.Any], skipSeconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToUtcDatetimeString")
-    @js.native
-    def mixedDateToUtcDatetimeString(value: js.Any): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToUtcDatetimeString(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToUtcDatetimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     /**
       * Converts given value into utc datetime string in a "YYYY-MM-DD HH-mm-ss.sss" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedDateToUtcDatetimeString")
-    @js.native
-    def mixedDateToUtcDatetimeString(value: Date): String | js.Any = js.native
+    @scala.inline
+    def mixedDateToUtcDatetimeString(value: Date): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedDateToUtcDatetimeString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToDate")
-    @js.native
-    def mixedTimeToDate(value: js.Any): String | js.Any = js.native
+    @scala.inline
+    def mixedTimeToDate(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToDate")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     /**
       * Converts given value into time string in a "HH:mm:ss" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToDate")
-    @js.native
-    def mixedTimeToDate(value: Date): String | js.Any = js.native
+    @scala.inline
+    def mixedTimeToDate(value: Date): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToDate")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     
     /**
       * Converts given string value with "-" separator into a "HH:mm:ss" format.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToString")
-    @js.native
-    def mixedTimeToString(value: String): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToString")
-    @js.native
-    def mixedTimeToString(value: String, skipSeconds: Boolean): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToString")
-    @js.native
-    def mixedTimeToString(value: js.Any): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.mixedTimeToString")
-    @js.native
-    def mixedTimeToString(value: js.Any, skipSeconds: Boolean): String | js.Any = js.native
+    @scala.inline
+    def mixedTimeToString(value: String): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedTimeToString(value: String, skipSeconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToString")(value.asInstanceOf[js.Any], skipSeconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedTimeToString(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToString")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def mixedTimeToString(value: js.Any, skipSeconds: Boolean): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mixedTimeToString")(value.asInstanceOf[js.Any], skipSeconds.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     
     /**
       * Normalizes date object hydrated from the database.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.normalizeHydratedDate")
-    @js.native
-    def normalizeHydratedDate(): js.UndefOr[Date | String] = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.normalizeHydratedDate")
-    @js.native
-    def normalizeHydratedDate(mixedDate: String): js.UndefOr[Date | String] = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.normalizeHydratedDate")
-    @js.native
-    def normalizeHydratedDate(mixedDate: Date): js.UndefOr[Date | String] = js.native
+    @scala.inline
+    def normalizeHydratedDate(): js.UndefOr[Date | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHydratedDate")().asInstanceOf[js.UndefOr[Date | String]]
+    @scala.inline
+    def normalizeHydratedDate(mixedDate: String): js.UndefOr[Date | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHydratedDate")(mixedDate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Date | String]]
+    @scala.inline
+    def normalizeHydratedDate(mixedDate: Date): js.UndefOr[Date | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHydratedDate")(mixedDate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Date | String]]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.simpleArrayToString")
-    @js.native
-    def simpleArrayToString(value: js.Any): js.Array[String] | js.Any = js.native
+    @scala.inline
+    def simpleArrayToString(value: js.Any): js.Array[String] | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleArrayToString")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | js.Any]
     /**
       * Converts each item in the given array to string joined by "," separator.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.simpleArrayToString")
-    @js.native
-    def simpleArrayToString(value: js.Array[_]): js.Array[String] | js.Any = js.native
+    @scala.inline
+    def simpleArrayToString(value: js.Array[js.Any]): js.Array[String] | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleArrayToString")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.simpleEnumToString")
-    @js.native
-    def simpleEnumToString(value: js.Any): String = js.native
+    @scala.inline
+    def simpleEnumToString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleEnumToString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.simpleJsonToString")
-    @js.native
-    def simpleJsonToString(value: js.Any): String = js.native
+    @scala.inline
+    def simpleJsonToString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleJsonToString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts given string to simple array split by "," separator.
       */
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.stringToSimpleArray")
-    @js.native
-    def stringToSimpleArray(value: String): String | js.Any = js.native
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.stringToSimpleArray")
-    @js.native
-    def stringToSimpleArray(value: js.Any): String | js.Any = js.native
+    @scala.inline
+    def stringToSimpleArray(value: String): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToSimpleArray")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def stringToSimpleArray(value: js.Any): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToSimpleArray")(value.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.stringToSimpleEnum")
-    @js.native
-    def stringToSimpleEnum(value: js.Any, columnMetadata: ColumnMetadata): js.Any = js.native
+    @scala.inline
+    def stringToSimpleEnum(value: js.Any, columnMetadata: ColumnMetadata): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToSimpleEnum")(value.asInstanceOf[js.Any], columnMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("typeorm/browser/util/DateUtils", "DateUtils.stringToSimpleJson")
-    @js.native
-    def stringToSimpleJson(value: js.Any): js.Any = js.native
+    @scala.inline
+    def stringToSimpleJson(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToSimpleJson")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * operation.
   * Contains the list of tenants for the current batch and the next page token if available.
   */
-@js.native
 trait ListTenantsResult extends StObject {
   
   /**
     * The next page token if available. This is needed for the next batch download.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of {@link auth.Tenant `Tenant`} objects for the downloaded batch.
     */
-  var tenants: js.Array[Tenant] = js.native
+  var tenants: js.Array[Tenant]
 }
 object ListTenantsResult {
   

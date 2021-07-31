@@ -11,8 +11,8 @@ only here to make types work
 | Full name          | express-serve-static-core |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 300190 |
+| # dependents       | 17 |
+| # downloads        | 372614 |
 | # stars            | 0 |
 
 ## Links

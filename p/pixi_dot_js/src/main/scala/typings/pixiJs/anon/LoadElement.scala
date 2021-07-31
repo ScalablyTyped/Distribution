@@ -5,17 +5,15 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadElement extends StObject {
   
-  var loadElement: js.UndefOr[HTMLImageElement | HTMLAudioElement | HTMLVideoElement] = js.native
+  var loadElement: js.UndefOr[HTMLImageElement | HTMLAudioElement | HTMLVideoElement] = js.undefined
   
-  var mimeType: js.UndefOr[String | js.Array[String]] = js.native
+  var mimeType: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var skipSource: js.UndefOr[Boolean] = js.native
+  var skipSource: js.UndefOr[Boolean] = js.undefined
 }
 object LoadElement {
   

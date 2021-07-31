@@ -10,7 +10,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "StaticCanvas")
@@ -22,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @return {Object} thisArg
   */
 class StaticCanvas ()
-  extends IObservable[StaticCanvas]
+  extends StObject
+     with IObservable[StaticCanvas]
      with IStaticCanvasOptions
      with ICollection[StaticCanvas]
      with ICanvasAnimation[StaticCanvas] {
@@ -119,9 +119,9 @@ class StaticCanvas ()
     */
   def clearContext(ctx: CanvasRenderingContext2D): Canvas = js.native
   
-  def clone(callback: js.UndefOr[scala.Nothing], properties: js.Array[String]): Unit = js.native
   def clone(callback: js.Any): Unit = js.native
   def clone(callback: js.Any, properties: js.Array[String]): Unit = js.native
+  def clone(callback: Unit, properties: js.Array[String]): Unit = js.native
   
   /**
     * Clones canvas instance without cloning existing data.
@@ -139,7 +139,7 @@ class StaticCanvas ()
     * @param {Array} objects Array of fabric objects
     * @return {String}
     */
-  def createSVGFontFacesMarkup(objects: js.Array[_]): String = js.native
+  def createSVGFontFacesMarkup(objects: js.Array[js.Any]): String = js.native
   
   /**
     * Creates markup containing SVG referenced elements like patterns, gradients etc.
@@ -460,7 +460,7 @@ class StaticCanvas ()
     * @return {String} SVG string
     */
   def toSVG(): String = js.native
-  def toSVG(options: js.UndefOr[scala.Nothing], reviver: js.Function): String = js.native
+  def toSVG(options: Unit, reviver: js.Function): String = js.native
   def toSVG(options: IToSVGOptions): String = js.native
   def toSVG(options: IToSVGOptions, reviver: js.Function): String = js.native
   
@@ -524,27 +524,24 @@ object StaticCanvas {
     * @return {Boolean | null} `true` if method is supported (or at least exists),
     *                          `null` if canvas element or context can not be initialized
     */
-  @JSImport("fabric/fabric-impl", "StaticCanvas.supports")
-  @js.native
-  def supports_getImageData(methodName: getImageData): Boolean = js.native
-  @JSImport("fabric/fabric-impl", "StaticCanvas.supports")
-  @js.native
-  def supports_setLineDash(methodName: setLineDash): Boolean = js.native
-  @JSImport("fabric/fabric-impl", "StaticCanvas.supports")
-  @js.native
-  def supports_toDataURL(methodName: toDataURL): Boolean = js.native
-  @JSImport("fabric/fabric-impl", "StaticCanvas.supports")
-  @js.native
-  def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = js.native
+  @scala.inline
+  def supports_getImageData(methodName: getImageData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_setLineDash(methodName: setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_toDataURL(methodName: toDataURL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  @JSImport("fabric/fabric-impl", "StaticCanvas.toJSON")
-  @js.native
-  def toJSON(): String = js.native
-  @JSImport("fabric/fabric-impl", "StaticCanvas.toJSON")
-  @js.native
-  def toJSON(propertiesToInclude: js.Array[String]): String = js.native
+  @scala.inline
+  def toJSON(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[String]
+  @scala.inline
+  def toJSON(propertiesToInclude: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[String]
 }

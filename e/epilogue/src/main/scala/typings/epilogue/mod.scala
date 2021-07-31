@@ -46,10 +46,13 @@ import typings.sequelize.mod.Sequelize
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("epilogue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("epilogue", "BaseController")
   @js.native
@@ -66,7 +69,7 @@ object mod {
   class CreateController protected () extends BaseController {
     def this(options: BaseContollerOptions) = this()
     
-    def write(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def write(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
   @JSImport("epilogue", "DeleteController")
@@ -74,9 +77,9 @@ object mod {
   class DeleteController protected () extends BaseController {
     def this(options: BaseContollerOptions) = this()
     
-    def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def fetch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
     
-    def write(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def write(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
   @JSImport("epilogue", "Endpoint")
@@ -95,47 +98,45 @@ object mod {
     @js.native
     class BadRequestError () extends EpilogueError {
       def this(message: String) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String]) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.UndefOr[scala.Nothing], cause: Error) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String], cause: Error) = this()
-      def this(message: String, errors: js.UndefOr[scala.Nothing], cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String], cause: Error) = this()
+      def this(message: String, errors: Unit, cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String], cause: Error) = this()
+      def this(message: Unit, errors: Unit, cause: Error) = this()
     }
     
     @JSImport("epilogue", "Errors.EpilogueError")
     @js.native
-    class EpilogueError protected () extends Error {
+    class EpilogueError protected ()
+      extends StObject
+         with Error {
       def this(status: Double) = this()
       def this(status: EpilogueError) = this()
       def this(status: Double, message: String) = this()
       def this(status: EpilogueError, message: String) = this()
-      def this(status: Double, message: js.UndefOr[scala.Nothing], errors: js.Array[String]) = this()
       def this(status: Double, message: String, errors: js.Array[String]) = this()
-      def this(status: EpilogueError, message: js.UndefOr[scala.Nothing], errors: js.Array[String]) = this()
+      def this(status: Double, message: Unit, errors: js.Array[String]) = this()
       def this(status: EpilogueError, message: String, errors: js.Array[String]) = this()
-      def this(
-        status: Double,
-        message: js.UndefOr[scala.Nothing],
-        errors: js.UndefOr[scala.Nothing],
-        cause: Error
-      ) = this()
-      def this(status: Double, message: js.UndefOr[scala.Nothing], errors: js.Array[String], cause: Error) = this()
-      def this(status: Double, message: String, errors: js.UndefOr[scala.Nothing], cause: Error) = this()
+      def this(status: EpilogueError, message: Unit, errors: js.Array[String]) = this()
       def this(status: Double, message: String, errors: js.Array[String], cause: Error) = this()
-      def this(
-        status: EpilogueError,
-        message: js.UndefOr[scala.Nothing],
-        errors: js.UndefOr[scala.Nothing],
-        cause: Error
-      ) = this()
-      def this(status: EpilogueError, message: js.UndefOr[scala.Nothing], errors: js.Array[String], cause: Error) = this()
-      def this(status: EpilogueError, message: String, errors: js.UndefOr[scala.Nothing], cause: Error) = this()
+      def this(status: Double, message: String, errors: Unit, cause: Error) = this()
+      def this(status: Double, message: Unit, errors: js.Array[String], cause: Error) = this()
+      def this(status: Double, message: Unit, errors: Unit, cause: Error) = this()
       def this(status: EpilogueError, message: String, errors: js.Array[String], cause: Error) = this()
+      def this(status: EpilogueError, message: String, errors: Unit, cause: Error) = this()
+      def this(status: EpilogueError, message: Unit, errors: js.Array[String], cause: Error) = this()
+      def this(status: EpilogueError, message: Unit, errors: Unit, cause: Error) = this()
       
       var cause: Error = js.native
       
       var errors: js.Array[String] = js.native
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       var status: Double | EpilogueError = js.native
     }
@@ -144,29 +145,38 @@ object mod {
     @js.native
     class ForbiddenError () extends EpilogueError {
       def this(message: String) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String]) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.UndefOr[scala.Nothing], cause: Error) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String], cause: Error) = this()
-      def this(message: String, errors: js.UndefOr[scala.Nothing], cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String], cause: Error) = this()
+      def this(message: String, errors: Unit, cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String], cause: Error) = this()
+      def this(message: Unit, errors: Unit, cause: Error) = this()
     }
     
     @JSImport("epilogue", "Errors.NotFoundError")
     @js.native
     class NotFoundError () extends EpilogueError {
       def this(message: String) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String]) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.UndefOr[scala.Nothing], cause: Error) = this()
-      def this(message: js.UndefOr[scala.Nothing], errors: js.Array[String], cause: Error) = this()
-      def this(message: String, errors: js.UndefOr[scala.Nothing], cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String]) = this()
       def this(message: String, errors: js.Array[String], cause: Error) = this()
+      def this(message: String, errors: Unit, cause: Error) = this()
+      def this(message: Unit, errors: js.Array[String], cause: Error) = this()
+      def this(message: Unit, errors: Unit, cause: Error) = this()
     }
     
     @JSImport("epilogue", "Errors.RequestCompleted")
     @js.native
-    class RequestCompleted () extends Error
+    class RequestCompleted ()
+      extends StObject
+         with Error {
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
+    }
   }
   
   @JSImport("epilogue", "ListController")
@@ -200,7 +210,7 @@ object mod {
     def _safeishParse(value: js.Any, `type`: DataTypeUUIDv4, sequelize: Sequelize): js.Any = js.native
     def _safeishParse(value: js.Any, `type`: DataTypeVirtual, sequelize: Sequelize): js.Any = js.native
     
-    def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def fetch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
   @JSImport("epilogue", "ReadController")
@@ -208,7 +218,7 @@ object mod {
   class ReadController protected () extends BaseController {
     def this(options: BaseContollerOptions) = this()
     
-    def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def fetch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
   @JSImport("epilogue", "Resource")
@@ -222,9 +232,9 @@ object mod {
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("app")
     var app_Original: Express = js.native
@@ -263,46 +273,77 @@ object mod {
   class UpdateController protected () extends BaseController {
     def this(options: BaseContollerOptions) = this()
     
-    def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def fetch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
     
-    def write(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+    def write(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
-  @JSImport("epilogue", "initialize")
-  @js.native
-  def initialize(): Unit = js.native
-  @JSImport("epilogue", "initialize")
-  @js.native
-  def initialize(options: InitializeOptions): Unit = js.native
+  @scala.inline
+  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  @scala.inline
+  def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("epilogue", "resource")
-  @js.native
-  def resource(): Resource_ = js.native
-  @JSImport("epilogue", "resource")
-  @js.native
-  def resource(options: ResourceOptions): Resource_ = js.native
+  @scala.inline
+  def resource(): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")().asInstanceOf[Resource_]
+  @scala.inline
+  def resource(options: ResourceOptions): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")(options.asInstanceOf[js.Any]).asInstanceOf[Resource_]
   
-  @js.native
   trait BaseContollerOptions extends StObject {
     
     /**
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
+    def app(req: IncomingMessage, res: ServerResponse): js.Any
     @JSName("app")
-    var app_Original: Express = js.native
+    var app_Original: Express
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var include: js.Array[Model | String] = js.native
+    var include: js.Array[Model | String]
     
-    var model: js.Any = js.native
+    var model: js.Any
     
-    var resource: Resource_ = js.native
+    var resource: Resource_
+  }
+  object BaseContollerOptions {
+    
+    @scala.inline
+    def apply(
+      app: Express,
+      endpoint: String,
+      include: js.Array[Model | String],
+      model: js.Any,
+      resource: Resource_
+    ): BaseContollerOptions = {
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BaseContollerOptions]
+    }
+    
+    @scala.inline
+    implicit class BaseContollerOptionsMutableBuilder[Self <: BaseContollerOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInclude(value: js.Array[Model | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIncludeVarargs(value: (Model | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      
+      @scala.inline
+      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setResource(value: Resource_): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -315,36 +356,21 @@ object mod {
     var criteria: js.Any = js.native
     
     def error(status: Double): Unit = js.native
-    def error(
-      status: Double,
-      message: js.UndefOr[scala.Nothing],
-      errorList: js.UndefOr[scala.Nothing],
-      cause: Error
-    ): Unit = js.native
-    def error(status: Double, message: js.UndefOr[scala.Nothing], errorList: js.Array[String]): Unit = js.native
-    def error(status: Double, message: js.UndefOr[scala.Nothing], errorList: js.Array[String], cause: Error): Unit = js.native
     def error(status: Double, message: String): Unit = js.native
-    def error(status: Double, message: String, errorList: js.UndefOr[scala.Nothing], cause: Error): Unit = js.native
     def error(status: Double, message: String, errorList: js.Array[String]): Unit = js.native
     def error(status: Double, message: String, errorList: js.Array[String], cause: Error): Unit = js.native
+    def error(status: Double, message: String, errorList: Unit, cause: Error): Unit = js.native
+    def error(status: Double, message: Unit, errorList: js.Array[String]): Unit = js.native
+    def error(status: Double, message: Unit, errorList: js.Array[String], cause: Error): Unit = js.native
+    def error(status: Double, message: Unit, errorList: Unit, cause: Error): Unit = js.native
     def error(status: EpilogueError): Unit = js.native
-    def error(
-      status: EpilogueError,
-      message: js.UndefOr[scala.Nothing],
-      errorList: js.UndefOr[scala.Nothing],
-      cause: Error
-    ): Unit = js.native
-    def error(status: EpilogueError, message: js.UndefOr[scala.Nothing], errorList: js.Array[String]): Unit = js.native
-    def error(
-      status: EpilogueError,
-      message: js.UndefOr[scala.Nothing],
-      errorList: js.Array[String],
-      cause: Error
-    ): Unit = js.native
     def error(status: EpilogueError, message: String): Unit = js.native
-    def error(status: EpilogueError, message: String, errorList: js.UndefOr[scala.Nothing], cause: Error): Unit = js.native
     def error(status: EpilogueError, message: String, errorList: js.Array[String]): Unit = js.native
     def error(status: EpilogueError, message: String, errorList: js.Array[String], cause: Error): Unit = js.native
+    def error(status: EpilogueError, message: String, errorList: Unit, cause: Error): Unit = js.native
+    def error(status: EpilogueError, message: Unit, errorList: js.Array[String]): Unit = js.native
+    def error(status: EpilogueError, message: Unit, errorList: js.Array[String], cause: Error): Unit = js.native
+    def error(status: EpilogueError, message: Unit, errorList: Unit, cause: Error): Unit = js.native
     
     var instance: Resource_ = js.native
     
@@ -355,20 +381,19 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait Controllers extends StObject {
     
-    var base: BaseController = js.native
+    var base: BaseController
     
-    var create: CreateController = js.native
+    var create: CreateController
     
-    var delete: DeleteController = js.native
+    var delete: DeleteController
     
-    var list: ListController = js.native
+    var list: ListController
     
-    var read: ReadController = js.native
+    var read: ReadController
     
-    var update: UpdateController = js.native
+    var update: UpdateController
   }
   object Controllers {
     
@@ -408,31 +433,61 @@ object mod {
     }
   }
   
-  @js.native
   trait InitializeOptions extends StObject {
     
     /**
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
+    def app(req: IncomingMessage, res: ServerResponse): js.Any
     @JSName("app")
-    var app_Original: Express = js.native
+    var app_Original: Express
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var sequelize: Sequelize = js.native
+    var sequelize: Sequelize
     
-    var updateMethod: js.UndefOr[String] = js.native
+    var updateMethod: js.UndefOr[String] = js.undefined
+  }
+  object InitializeOptions {
+    
+    @scala.inline
+    def apply(app: Express, sequelize: Sequelize): InitializeOptions = {
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], sequelize = sequelize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InitializeOptions]
+    }
+    
+    @scala.inline
+    implicit class InitializeOptionsMutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      
+      @scala.inline
+      def setSequelize(value: Sequelize): Self = StObject.set(x, "sequelize", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUpdateMethod(value: String): Self = StObject.set(x, "updateMethod", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUpdateMethodUndefined: Self = StObject.set(x, "updateMethod", js.undefined)
+    }
   }
   
-  @js.native
-  trait ResourceAssociationOptions extends AssociationOptions {
+  trait ResourceAssociationOptions
+    extends StObject
+       with AssociationOptions {
     
-    var removeForeignKeys: Boolean = js.native
+    var removeForeignKeys: Boolean
   }
   object ResourceAssociationOptions {
     
@@ -450,32 +505,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ResourceOptions extends StObject {
     
-    var actions: js.UndefOr[js.Array[String]] = js.native
+    var actions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var associations: js.UndefOr[AssociationOptions] = js.native
+    var associations: js.UndefOr[AssociationOptions] = js.undefined
     
-    var endpoints: js.Array[String] = js.native
+    var endpoints: js.Array[String]
     
-    var excludeAttributes: js.UndefOr[js.Array[String]] = js.native
+    var excludeAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[js.Array[Model | String]] = js.native
+    var include: js.UndefOr[js.Array[Model | String]] = js.undefined
     
-    var model: js.Any = js.native
+    var model: js.Any
     
-    var pagination: js.UndefOr[Boolean] = js.native
+    var pagination: js.UndefOr[Boolean] = js.undefined
     
-    var readOnlyAttributes: js.UndefOr[js.Array[String]] = js.native
+    var readOnlyAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reloadInstances: js.UndefOr[Boolean] = js.native
+    var reloadInstances: js.UndefOr[Boolean] = js.undefined
     
-    var search: js.UndefOr[ResourceSearchOption] = js.native
+    var search: js.UndefOr[ResourceSearchOption] = js.undefined
     
-    var sort: js.UndefOr[ResourceSortOption] = js.native
+    var sort: js.UndefOr[ResourceSortOption] = js.undefined
     
-    var updateMethod: js.UndefOr[String] = js.native
+    var updateMethod: js.UndefOr[String] = js.undefined
   }
   object ResourceOptions {
     
@@ -571,14 +625,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ResourceSearchOption extends StObject {
     
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
-    var operator: String = js.native
+    var operator: String
     
-    var param: String = js.native
+    var param: String
   }
   object ResourceSearchOption {
     
@@ -605,12 +658,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResourceSortOption extends StObject {
     
-    var default: String = js.native
+    var default: String
     
-    var param: String = js.native
+    var param: String
   }
   object ResourceSortOption {
     

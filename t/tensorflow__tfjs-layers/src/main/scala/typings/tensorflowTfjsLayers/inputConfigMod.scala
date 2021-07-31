@@ -6,7 +6,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer
 import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputConfigMod {
@@ -18,20 +17,19 @@ object inputConfigMod {
   /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/input_config.InputLayerSerialization['class_name'] */
   type InputLayerClassName = InputLayer
   
-  @js.native
   trait InputLayerConfig extends StObject {
     
-    var batch_input_shape: js.UndefOr[Shape] = js.native
+    var batch_input_shape: js.UndefOr[Shape] = js.undefined
     
-    var batch_size: js.UndefOr[Double] = js.native
+    var batch_size: js.UndefOr[Double] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
-    var input_shape: js.UndefOr[Shape] = js.native
+    var input_shape: js.UndefOr[Shape] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var sparse: js.UndefOr[Boolean] = js.native
+    var sparse: js.UndefOr[Boolean] = js.undefined
   }
   object InputLayerConfig {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobResource extends StObject {
   
   /**
     * The Amazon Machine Images (AMIs) associated with this job.
     */
-  var Ec2AmiResources: js.UndefOr[Ec2AmiResourceList] = js.native
+  var Ec2AmiResources: js.UndefOr[Ec2AmiResourceList] = js.undefined
   
   /**
     * The Python-language Lambda functions for this job.
     */
-  var LambdaResources: js.UndefOr[LambdaResourceList] = js.native
+  var LambdaResources: js.UndefOr[LambdaResourceList] = js.undefined
   
   /**
     * An array of S3Resource objects.
     */
-  var S3Resources: js.UndefOr[S3ResourceList] = js.native
+  var S3Resources: js.UndefOr[S3ResourceList] = js.undefined
 }
 object JobResource {
   

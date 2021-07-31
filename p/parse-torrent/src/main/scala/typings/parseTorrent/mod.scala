@@ -10,7 +10,6 @@ import typings.std.Error
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,29 +20,29 @@ object mod extends Shortcut {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.std.Object because Already inherited
-  - typings.parseTorrentFile.mod.Instance because var conflicts: announce, constructor, infoHash, infoHashBuffer, name, urlList. Inlined pieceLength, `private`, files, pieces, info, createdBy, lastPieceLength, created, length, infoBuffer */ @js.native
-  trait Instance
-    extends typings.magnetUri.mod.Instance {
+  - typings.parseTorrentFile.mod.Instance because var conflicts: announce, constructor, infoHash, infoHashBuffer, name, urlList. Inlined pieceLength, `private`, files, pieces, info, createdBy, lastPieceLength, created, length, infoBuffer */ trait Instance
+    extends StObject
+       with typings.magnetUri.mod.Instance {
     
-    var created: js.UndefOr[Date] = js.native
+    var created: js.UndefOr[Date] = js.undefined
     
-    var createdBy: js.UndefOr[String] = js.native
+    var createdBy: js.UndefOr[String] = js.undefined
     
-    var files: js.UndefOr[js.Array[ParsedFile]] = js.native
+    var files: js.UndefOr[js.Array[ParsedFile]] = js.undefined
     
-    var info: js.UndefOr[TorrentInfo] = js.native
+    var info: js.UndefOr[TorrentInfo] = js.undefined
     
-    var infoBuffer: js.UndefOr[Buffer] = js.native
+    var infoBuffer: js.UndefOr[Buffer] = js.undefined
     
-    var lastPieceLength: js.UndefOr[Double] = js.native
+    var lastPieceLength: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var pieceLength: js.UndefOr[Double] = js.native
+    var pieceLength: js.UndefOr[Double] = js.undefined
     
-    var pieces: js.UndefOr[js.Array[String]] = js.native
+    var pieces: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
   }
   object Instance {
     

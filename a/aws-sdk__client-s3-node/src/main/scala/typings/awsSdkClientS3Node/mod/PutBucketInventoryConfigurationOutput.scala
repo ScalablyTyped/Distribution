@@ -1,0 +1,18 @@
+package typings.awsSdkClientS3Node.mod
+
+import typings.awsSdkTypes.responseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait PutBucketInventoryConfigurationOutput
+  extends StObject
+     with typings.awsSdkClientS3Node.typesPutBucketInventoryConfigurationOutputMod.PutBucketInventoryConfigurationOutput
+object PutBucketInventoryConfigurationOutput {
+  
+  @scala.inline
+  def apply($metadata: ResponseMetadata): PutBucketInventoryConfigurationOutput = {
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PutBucketInventoryConfigurationOutput]
+  }
+}

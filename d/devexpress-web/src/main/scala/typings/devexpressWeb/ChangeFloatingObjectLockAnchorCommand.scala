@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to lock a floating object's anchor.
   */
-@js.native
-trait ChangeFloatingObjectLockAnchorCommand extends ChangeFloatingObjectPropertyCommandBase[Boolean]
+trait ChangeFloatingObjectLockAnchorCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[Boolean]
 object ChangeFloatingObjectLockAnchorCommand {
   
   @scala.inline

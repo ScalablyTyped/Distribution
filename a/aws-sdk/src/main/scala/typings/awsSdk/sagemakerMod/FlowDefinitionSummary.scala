@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowDefinitionSummary extends StObject {
   
   /**
     * The timestamp when SageMaker created the flow definition.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The reason why the flow definition creation failed. A failure reason is returned only when the flow definition status is Failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition.
     */
-  var FlowDefinitionArn: typings.awsSdk.sagemakerMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.sagemakerMod.FlowDefinitionArn
   
   /**
     * The name of the flow definition.
     */
-  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName = js.native
+  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName
   
   /**
     * The status of the flow definition. Valid values:
     */
-  var FlowDefinitionStatus: typings.awsSdk.sagemakerMod.FlowDefinitionStatus = js.native
+  var FlowDefinitionStatus: typings.awsSdk.sagemakerMod.FlowDefinitionStatus
 }
 object FlowDefinitionSummary {
   

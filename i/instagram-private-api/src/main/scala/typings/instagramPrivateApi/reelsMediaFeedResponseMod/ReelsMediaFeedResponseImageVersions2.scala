@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseImageVersions2 extends StObject {
   
-  var candidates: js.Array[ReelsMediaFeedResponseCandidatesItem] = js.native
+  var candidates: js.Array[ReelsMediaFeedResponseCandidatesItem]
 }
 object ReelsMediaFeedResponseImageVersions2 {
   

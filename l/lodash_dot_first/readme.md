@@ -12,7 +12,7 @@ The modern build of lodash’s `_.first` as a module.
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
 | # dependents       | 52 |
-| # downloads        | 614100 |
+| # downloads        | 707833 |
 | # stars            | 0 |
 
 ## Links

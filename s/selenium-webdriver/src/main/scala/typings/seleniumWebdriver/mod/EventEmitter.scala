@@ -2,7 +2,6 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "EventEmitter")
@@ -25,9 +24,9 @@ class EventEmitter () extends StObject {
     * @private
     */
   def addListener(`type`: String, fn: js.Function): EventEmitter = js.native
-  def addListener(`type`: String, fn: js.Function, opt_scope: js.UndefOr[scala.Nothing], opt_oneshot: Boolean): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any, opt_oneshot: Boolean): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Unit, opt_oneshot: Boolean): EventEmitter = js.native
   
   // endregion
   // region Methods

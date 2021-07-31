@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsDnssdServiceInstance extends StObject {
   
-  /** The retrieved DnssdServiceInstance objects. */ var items: DnssdServiceInstance = js.native
+  /** The retrieved DnssdServiceInstance objects. */ var items: DnssdServiceInstance
   
-  /** The number of items in items. */ var returnValue: Double = js.native
+  /** The number of items in items. */ var returnValue: Double
 }
 object ItemsDnssdServiceInstance {
   

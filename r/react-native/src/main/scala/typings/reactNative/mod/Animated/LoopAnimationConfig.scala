@@ -2,19 +2,17 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoopAnimationConfig extends StObject {
   
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
   // default -1 for infinite
   /**
     * Defaults to `true`
     */
-  var resetBeforeIteration: js.UndefOr[Boolean] = js.native
+  var resetBeforeIteration: js.UndefOr[Boolean] = js.undefined
 }
 object LoopAnimationConfig {
   

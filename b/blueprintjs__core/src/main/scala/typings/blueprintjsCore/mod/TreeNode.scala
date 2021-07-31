@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.treeNodeMod.ITreeNodeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "TreeNode")
@@ -31,7 +30,6 @@ object TreeNode {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core", "TreeNode.ofType")
-  @js.native
-  def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]] = js.native
+  @scala.inline
+  def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]]]
 }

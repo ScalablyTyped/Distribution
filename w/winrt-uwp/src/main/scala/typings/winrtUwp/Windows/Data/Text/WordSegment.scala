@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Data.Text
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a word from your provided text. */
-@js.native
 trait WordSegment extends StObject {
   
   /** Gets the alternate forms (if any) associated with the current word. */
-  var alternateForms: IVectorView[AlternateWordForm] = js.native
+  var alternateForms: IVectorView[AlternateWordForm]
   
   /** Gets the TextSegment that identifies the source text's sub-string that is a word. */
-  var sourceTextSegment: TextSegment = js.native
+  var sourceTextSegment: TextSegment
   
   /** Gets the text of the word identified by this WordSegment object. */
-  var text: String = js.native
+  var text: String
 }
 object WordSegment {
   

@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.P13nDimMeasureItem")
 @js.native
 class P13nDimMeasureItem protected ()
-  extends typings.openui5.sap.m.P13nDimMeasureItem {
+  extends StObject
+     with typings.openui5.sap.m.P13nDimMeasureItem {
   /**
     * Constructor for a new P13nDimMeasureItem.Accepts an object literal <code>mSettings</code> that
     * defines initialproperty values, aggregated and associated objects as well as event handlers.See

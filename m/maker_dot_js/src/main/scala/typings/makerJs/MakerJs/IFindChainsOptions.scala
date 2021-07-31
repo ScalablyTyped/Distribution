@@ -2,24 +2,24 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to model.findLoops.
   */
-@js.native
-trait IFindChainsOptions extends IPointMatchOptions {
+trait IFindChainsOptions
+  extends StObject
+     with IPointMatchOptions {
   
   /**
     * Flag to separate chains by layers.
     */
-  var byLayers: js.UndefOr[Boolean] = js.native
+  var byLayers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to not recurse models, look only within current model's immediate paths.
     */
-  var shallow: js.UndefOr[Boolean] = js.native
+  var shallow: js.UndefOr[Boolean] = js.undefined
 }
 object IFindChainsOptions {
   

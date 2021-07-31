@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallPackageOptions extends StObject {
   
-  var fileName: Path = js.native
+  var fileName: Path
   
-  var packageName: java.lang.String = js.native
+  var packageName: java.lang.String
 }
 object InstallPackageOptions {
   

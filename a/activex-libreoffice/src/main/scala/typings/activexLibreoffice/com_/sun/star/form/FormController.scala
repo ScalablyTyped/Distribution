@@ -24,17 +24,16 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is superseded by {@link com.sun.star.form.runtime.FormController} .
   * @deprecated Deprecated
   */
-@js.native
 trait FormController
-  extends XFormController
+  extends StObject
      with XDispatchProvider
+     with XFormController
      with XChild
      with XComponent
      with XEnumerationAccess

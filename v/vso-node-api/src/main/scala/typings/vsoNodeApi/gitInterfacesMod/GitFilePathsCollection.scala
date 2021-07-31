@@ -2,17 +2,15 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitFilePathsCollection extends StObject {
   
-  var commitId: String = js.native
+  var commitId: String
   
-  var paths: js.Array[String] = js.native
+  var paths: js.Array[String]
   
-  var url: String = js.native
+  var url: String
 }
 object GitFilePathsCollection {
   

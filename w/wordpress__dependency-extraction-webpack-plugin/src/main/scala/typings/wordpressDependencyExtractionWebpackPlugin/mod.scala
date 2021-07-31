@@ -6,7 +6,6 @@ import typings.wordpressDependencyExtractionWebpackPlugin.wordpressDependencyExt
 import typings.wordpressDependencyExtractionWebpackPlugin.wordpressDependencyExtractionWebpackPluginStrings.php
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,25 +49,81 @@ object mod {
     */
   @JSImport("@wordpress/dependency-extraction-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DependencyExtractionWebpackPlugin {
+  class ^ protected ()
+    extends StObject
+       with DependencyExtractionWebpackPlugin {
     /**
       * @param {Partial<Options>} options
       */
     def this(options: PartialOptions) = this()
+    
+    /**
+      * @param {WebpackCompiler} compiler
+      * @return {void}
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
+    ): Unit = js.native
+    
+    /**
+      * @param {Parameters<WebpackExternalsFunction>[0]} _context
+      * @param {Parameters<WebpackExternalsFunction>[1]} request
+      * @param {Parameters<WebpackExternalsFunction>[2]} callback
+      */
+    /* CompleteClass */
+    override def externalizeWpDeps(
+      _context: js.Any,
+      request: js.Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any
+    ): Unit = js.native
+    
+    /**
+      * Track requests that are externalized.
+      *
+      * Because we don't have a closed set of dependencies, we need to track what has
+      * been externalized so we can recognize them in a later phase when the dependency
+      * lists are generated.
+      *
+      * @type {Set<string>}
+      */
+    /* CompleteClass */
+    var externalizedDeps: Set[String] = js.native
+    
+    /* CompleteClass */
+    var externalsPlugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any = js.native
+    
+    /**
+      * @param {string} request
+      * @return {string} Transformed request
+      */
+    /* CompleteClass */
+    override def mapRequestToDependency(request: String): String = js.native
+    
+    /** @type {Options} */
+    /* CompleteClass */
+    var options: Options = js.native
+    
+    /**
+      * @param {Object} asset
+      * @return {string} Stringified asset
+      */
+    /* CompleteClass */
+    override def stringify(asset: js.Object): String = js.native
   }
   
-  @js.native
   trait AssetData extends StObject {
     
     /**
       * The script dependencies
       */
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
     
     /**
       * String representing a particular build
       */
-    var version: String = js.native
+    var version: String
   }
   object AssetData {
     
@@ -129,7 +184,6 @@ object mod {
     * @property {string|null}                 combinedOutputFile  This option is useful only when the combineAssets option is enabled. It allows providing a custom output file for the generated single assets file. It's possible to provide a path that is relative to the output directory.
     * @property {boolean|undefined}           combineAssets       By default, one asset file is created for each entry point. When this flag is set to true, all information about assets is combined into a single assets.(json|php) file generated in the output directory.
     */
-  @js.native
   trait DependencyExtractionWebpackPlugin extends StObject {
     
     /**
@@ -139,7 +193,7 @@ object mod {
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
     
     /**
       * @param {Parameters<WebpackExternalsFunction>[0]} _context
@@ -150,7 +204,7 @@ object mod {
       _context: js.Any,
       request: js.Any,
       callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Track requests that are externalized.
@@ -161,24 +215,24 @@ object mod {
       *
       * @type {Set<string>}
       */
-    var externalizedDeps: Set[String] = js.native
+    var externalizedDeps: Set[String]
     
-    var externalsPlugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any = js.native
+    var externalsPlugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any
     
     /**
       * @param {string} request
       * @return {string} Transformed request
       */
-    def mapRequestToDependency(request: String): String = js.native
+    def mapRequestToDependency(request: String): String
     
     /** @type {Options} */
-    var options: Options = js.native
+    var options: Options
     
     /**
       * @param {Object} asset
       * @return {string} Stringified asset
       */
-    def stringify(asset: js.Object): String = js.native
+    def stringify(asset: js.Object): String
   }
   object DependencyExtractionWebpackPlugin {
     
@@ -228,49 +282,48 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * By default, one asset file is created for each entry point. When this flag is set to true, all information about assets is combined into a single assets.(json|php) file generated in the output directory.
       */
-    var combineAssets: js.UndefOr[Boolean] = js.native
+    var combineAssets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This option is useful only when the combineAssets option is enabled. It allows providing a custom output file for the generated single assets file. It's possible to provide a path that is relative to the output directory.
       */
-    var combinedOutputFile: String | Null = js.native
+    var combinedOutputFile: String | Null
     
     /**
       * Force wp-polyfill to be included in each entry point's dependency list. This is like importing `@wordpress/polyfill` for each entry point.
       */
-    var injectPolyfill: Boolean = js.native
+    var injectPolyfill: Boolean
     
     /**
       * The output format for the generated asset file.
       */
-    var outputFormat: json | php = js.native
+    var outputFormat: json | php
     
     /**
       * Map module requests to an external.
       */
-    var requestToExternal: js.UndefOr[RequestToExternal] = js.native
+    var requestToExternal: js.UndefOr[RequestToExternal] = js.undefined
     
     /**
       * Map module requests to a script handle.
       */
-    var requestToHandle: js.UndefOr[RequestToHandle] = js.native
+    var requestToHandle: js.UndefOr[RequestToHandle] = js.undefined
     
     /**
       * Set to `false` to disable the default WordPress script request handling.
       */
-    var useDefaults: Boolean = js.native
+    var useDefaults: Boolean
   }
   object Options {
     
     @scala.inline
     def apply(injectPolyfill: Boolean, outputFormat: json | php, useDefaults: Boolean): Options = {
-      val __obj = js.Dynamic.literal(injectPolyfill = injectPolyfill.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], useDefaults = useDefaults.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(injectPolyfill = injectPolyfill.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], useDefaults = useDefaults.asInstanceOf[js.Any], combinedOutputFile = null)
       __obj.asInstanceOf[Options]
     }
     

@@ -2,39 +2,39 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PannerOptions extends AudioNodeOptions {
+trait PannerOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var coneInnerAngle: js.UndefOr[Double] = js.native
+  var coneInnerAngle: js.UndefOr[Double] = js.undefined
   
-  var coneOuterAngle: js.UndefOr[Double] = js.native
+  var coneOuterAngle: js.UndefOr[Double] = js.undefined
   
-  var coneOuterGain: js.UndefOr[Double] = js.native
+  var coneOuterGain: js.UndefOr[Double] = js.undefined
   
-  var distanceModel: js.UndefOr[DistanceModelType] = js.native
+  var distanceModel: js.UndefOr[DistanceModelType] = js.undefined
   
-  var maxDistance: js.UndefOr[Double] = js.native
+  var maxDistance: js.UndefOr[Double] = js.undefined
   
-  var orientationX: js.UndefOr[Double] = js.native
+  var orientationX: js.UndefOr[Double] = js.undefined
   
-  var orientationY: js.UndefOr[Double] = js.native
+  var orientationY: js.UndefOr[Double] = js.undefined
   
-  var orientationZ: js.UndefOr[Double] = js.native
+  var orientationZ: js.UndefOr[Double] = js.undefined
   
-  var panningModel: js.UndefOr[PanningModelType] = js.native
+  var panningModel: js.UndefOr[PanningModelType] = js.undefined
   
-  var positionX: js.UndefOr[Double] = js.native
+  var positionX: js.UndefOr[Double] = js.undefined
   
-  var positionY: js.UndefOr[Double] = js.native
+  var positionY: js.UndefOr[Double] = js.undefined
   
-  var positionZ: js.UndefOr[Double] = js.native
+  var positionZ: js.UndefOr[Double] = js.undefined
   
-  var refDistance: js.UndefOr[Double] = js.native
+  var refDistance: js.UndefOr[Double] = js.undefined
   
-  var rolloffFactor: js.UndefOr[Double] = js.native
+  var rolloffFactor: js.UndefOr[Double] = js.undefined
 }
 object PannerOptions {
   

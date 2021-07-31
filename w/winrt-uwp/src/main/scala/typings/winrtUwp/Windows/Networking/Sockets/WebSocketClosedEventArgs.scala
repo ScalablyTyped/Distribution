@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a closed event on a MessageWebSocket , StreamWebSocket , or IWebSocket object. */
-@js.native
 trait WebSocketClosedEventArgs extends StObject {
   
   /** Gets information about the reason that a WebSocket object was closed. */
-  var code: Double = js.native
+  var code: Double
   
   /** Gets additional details about the reason that a WebSocket object was closed. */
-  var reason: String = js.native
+  var reason: String
 }
 object WebSocketClosedEventArgs {
   

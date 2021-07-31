@@ -10,23 +10,23 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snackbarQueueMod {
   
   @JSImport("@react-md/alert/types/SnackbarQueue", "SnackbarQueue")
   @js.native
-  val SnackbarQueue: ForwardRefExoticComponent[SnackbarQueueProps[_] with RefAttributes[HTMLDivElement]] = js.native
+  val SnackbarQueue: ForwardRefExoticComponent[SnackbarQueueProps[js.Any] & RefAttributes[HTMLDivElement]] = js.native
   
   type ActionEventHandler[M /* <: ToastMessage */] = js.Function2[/* message */ M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]
   
-  @js.native
-  trait SnackbarQueueProps[M /* <: ToastMessage */] extends SnackbarProps {
+  trait SnackbarQueueProps[M /* <: ToastMessage */]
+    extends StObject
+       with SnackbarProps {
     
-    var onActionClick: js.UndefOr[ActionEventHandler[M]] = js.native
+    var onActionClick: js.UndefOr[ActionEventHandler[M]] = js.undefined
     
-    var queue: js.Array[M] = js.native
+    var queue: js.Array[M]
   }
   object SnackbarQueueProps {
     
@@ -37,7 +37,7 @@ object snackbarQueueMod {
     }
     
     @scala.inline
-    implicit class SnackbarQueuePropsMutableBuilder[Self <: SnackbarQueueProps[_], M /* <: ToastMessage */] (val x: Self with SnackbarQueueProps[M]) extends AnyVal {
+    implicit class SnackbarQueuePropsMutableBuilder[Self <: SnackbarQueueProps[?], M /* <: ToastMessage */] (val x: Self & SnackbarQueueProps[M]) extends AnyVal {
       
       @scala.inline
       def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))

@@ -2,36 +2,34 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityType extends StObject {
   
   /**
     * The entity type ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * Timestamp of when the entity type was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The entity type description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * Timestamp of when the entity type was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The entity type name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object EntityType {
   

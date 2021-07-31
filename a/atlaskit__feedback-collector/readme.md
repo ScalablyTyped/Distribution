@@ -10,9 +10,9 @@ A component that collects feedback across Atlassian products.
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/feedback-collector |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 54 |
+| # releases         | 50 |
 | # dependents       | 1 |
-| # downloads        | 89537 |
+| # downloads        | 90241 |
 | # stars            | 0 |
 
 ## Links

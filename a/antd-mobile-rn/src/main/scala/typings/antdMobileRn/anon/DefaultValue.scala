@@ -2,23 +2,21 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValue extends StObject {
   
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var maximumTrackTintColor: String = js.native
+  var maximumTrackTintColor: String
   
-  var minimumTrackTintColor: String = js.native
+  var minimumTrackTintColor: String
   
-  def onAfterChange(): Unit = js.native
+  def onAfterChange(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
 }
 object DefaultValue {
   

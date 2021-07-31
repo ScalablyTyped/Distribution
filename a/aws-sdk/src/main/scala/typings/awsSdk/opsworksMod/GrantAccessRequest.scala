@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrantAccessRequest extends StObject {
   
   /**
     * The instance's AWS OpsWorks Stacks ID.
     */
-  var InstanceId: String = js.native
+  var InstanceId: String
   
   /**
     * The length of time (in minutes) that the grant is valid. When the grant expires at the end of this period, the user will no longer be able to use the credentials to log in. If the user is logged in at the time, he or she automatically will be logged out.
     */
-  var ValidForInMinutes: js.UndefOr[typings.awsSdk.opsworksMod.ValidForInMinutes] = js.native
+  var ValidForInMinutes: js.UndefOr[typings.awsSdk.opsworksMod.ValidForInMinutes] = js.undefined
 }
 object GrantAccessRequest {
   

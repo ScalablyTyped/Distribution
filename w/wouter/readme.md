@@ -10,9 +10,9 @@ A minimalistic routing for React and Preact. Nothing extra, just HOOKS.
 | ------------------ | :-------------: |
 | Full name          | wouter |
 | Keywords           | react, preact, router, tiny, routing, hooks, useLocation |
-| # releases         | 27 |
+| # releases         | 31 |
 | # dependents       | 6 |
-| # downloads        | 67416 |
+| # downloads        | 82735 |
 | # stars            | 0 |
 
 ## Links

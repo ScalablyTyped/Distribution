@@ -6,17 +6,15 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultRef extends StObject {
   
-  var defaultRef: js.UndefOr[VgValueRef] = js.native
+  var defaultRef: js.UndefOr[VgValueRef] = js.undefined
   
-  var defaultValue: js.UndefOr[(typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | SignalRef] = js.native
+  var defaultValue: js.UndefOr[(typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | SignalRef] = js.undefined
   
-  var vgChannel: js.UndefOr[VgEncodeChannel] = js.native
+  var vgChannel: js.UndefOr[VgEncodeChannel] = js.undefined
 }
 object DefaultRef {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrokClassifier extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, and so on.
     */
-  var Classification: typings.awsSdk.glueMod.Classification = js.native
+  var Classification: typings.awsSdk.glueMod.Classification
   
   /**
     * The time that this classifier was registered.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Optional custom grok patterns defined by this classifier. For more information, see custom patterns in Writing Custom Classifiers.
     */
-  var CustomPatterns: js.UndefOr[typings.awsSdk.glueMod.CustomPatterns] = js.native
+  var CustomPatterns: js.UndefOr[typings.awsSdk.glueMod.CustomPatterns] = js.undefined
   
   /**
     * The grok pattern applied to a data store by this classifier. For more information, see built-in patterns in Writing Custom Classifiers.
     */
-  var GrokPattern: typings.awsSdk.glueMod.GrokPattern = js.native
+  var GrokPattern: typings.awsSdk.glueMod.GrokPattern
   
   /**
     * The time that this classifier was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.native
+  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the classifier.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The version of this classifier.
     */
-  var Version: js.UndefOr[VersionId] = js.native
+  var Version: js.UndefOr[VersionId] = js.undefined
 }
 object GrokClassifier {
   

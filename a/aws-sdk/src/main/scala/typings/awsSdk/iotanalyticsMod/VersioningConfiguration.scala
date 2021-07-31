@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersioningConfiguration extends StObject {
   
   /**
     * How many versions of dataset contents are kept. The unlimited parameter must be false.
     */
-  var maxVersions: js.UndefOr[MaxVersions] = js.native
+  var maxVersions: js.UndefOr[MaxVersions] = js.undefined
   
   /**
     * If true, unlimited versions of dataset contents are kept.
     */
-  var unlimited: js.UndefOr[UnlimitedVersioning] = js.native
+  var unlimited: js.UndefOr[UnlimitedVersioning] = js.undefined
 }
 object VersioningConfiguration {
   

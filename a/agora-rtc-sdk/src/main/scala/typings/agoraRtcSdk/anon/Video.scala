@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Video extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Video extends StObject {
     *  - `true`: (Default) Receives the audio data.
     *  - `false`: Not receives the audio data.
     */
-  var audio: js.UndefOr[Boolean] = js.native
+  var audio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marks whether to receive the video data.
     *  - `true`: (Default) Receives the video data.
     *  - `false`: Not receives the video data.
     */
-  var video: js.UndefOr[Boolean] = js.native
+  var video: js.UndefOr[Boolean] = js.undefined
 }
 object Video {
   

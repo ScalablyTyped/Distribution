@@ -38,7 +38,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,9 +71,8 @@ object EmptyLiteral {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.create")
-  @js.native
-  def create(model: IModel): EmptyLiteral = js.native
+  @scala.inline
+  def create(model: IModel): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInAppServiceCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -98,9 +95,8 @@ object EmptyLiteral {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInBasicCodeActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): EmptyLiteral = js.native
+  @scala.inline
+  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -111,9 +107,8 @@ object EmptyLiteral {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInBasicJavaActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): EmptyLiteral = js.native
+  @scala.inline
+  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -124,9 +119,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInBinaryExpressionUnderLeft")
-  @js.native
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderLeft(container: BinaryExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -137,9 +131,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInBinaryExpressionUnderRight")
-  @js.native
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderRight(container: BinaryExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -150,9 +143,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInBinaryRequestHandlingUnderExpressionModel")
-  @js.native
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): EmptyLiteral = js.native
+  @scala.inline
+  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -163,9 +155,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInChangeListActionUnderValueModel")
-  @js.native
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInChangeListActionUnderValueModel(container: ChangeListAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -176,9 +167,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInChangeVariableActionUnderValueModel")
-  @js.native
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -189,9 +179,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInConditionalSettingsUnderExpressionModel")
-  @js.native
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EmptyLiteral = js.native
+  @scala.inline
+  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -202,9 +191,8 @@ object EmptyLiteral {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInConsumedODataServiceUnderTimeoutModel")
-  @js.native
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EmptyLiteral = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -215,9 +203,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInCreateVariableActionUnderInitialValueModel")
-  @js.native
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -228,9 +215,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInCustomRangeUnderLimitExpressionModel")
-  @js.native
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): EmptyLiteral = js.native
+  @scala.inline
+  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -241,9 +227,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInCustomRangeUnderOffsetExpressionModel")
-  @js.native
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): EmptyLiteral = js.native
+  @scala.inline
+  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -254,9 +239,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInDocumentTemplateParameterMappingUnderArgumentModel")
-  @js.native
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -267,9 +251,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInEndEventUnderReturnValueModel")
-  @js.native
-  def createInEndEventUnderReturnValueModel(container: EndEvent): EmptyLiteral = js.native
+  @scala.inline
+  def createInEndEventUnderReturnValueModel(container: EndEvent): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -280,9 +263,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInExpressionSplitConditionUnderExpressionModel")
-  @js.native
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): EmptyLiteral = js.native
+  @scala.inline
+  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -293,9 +275,8 @@ object EmptyLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInFormDataPartUnderValueModel")
-  @js.native
-  def createInFormDataPartUnderValueModel(container: FormDataPart): EmptyLiteral = js.native
+  @scala.inline
+  def createInFormDataPartUnderValueModel(container: FormDataPart): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -306,9 +287,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInFunctionCallExpressionUnderArguments")
-  @js.native
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -319,9 +299,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInGenerateDocumentActionUnderMarginBottomInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -332,9 +311,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInGenerateDocumentActionUnderMarginLeftInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -345,9 +323,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInGenerateDocumentActionUnderMarginRightInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -358,9 +335,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInGenerateDocumentActionUnderMarginTopInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -371,9 +347,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInHttpConfigurationUnderCustomLocationModel")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -384,9 +359,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInHttpConfigurationUnderPassword")
-  @js.native
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -397,9 +371,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInHttpConfigurationUnderUsername")
-  @js.native
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -410,9 +383,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInHttpHeaderEntryUnderValueModel")
-  @js.native
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): EmptyLiteral = js.native
+  @scala.inline
+  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -423,9 +395,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInIfExpressionUnderCondition")
-  @js.native
-  def createInIfExpressionUnderCondition(container: IfExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderCondition(container: IfExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -436,9 +407,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInIfExpressionUnderIfFalse")
-  @js.native
-  def createInIfExpressionUnderIfFalse(container: IfExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfFalse(container: IfExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -449,9 +419,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInIfExpressionUnderIfTrue")
-  @js.native
-  def createInIfExpressionUnderIfTrue(container: IfExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfTrue(container: IfExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -462,9 +431,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInInspectAttributeUnderExpressionModel")
-  @js.native
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): EmptyLiteral = js.native
+  @scala.inline
+  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -475,9 +443,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInLogMessageActionUnderNodeModel")
-  @js.native
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -488,9 +455,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInMemberChangeUnderValueModel")
-  @js.native
-  def createInMemberChangeUnderValueModel(container: MemberChange): EmptyLiteral = js.native
+  @scala.inline
+  def createInMemberChangeUnderValueModel(container: MemberChange): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -501,9 +467,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInMicroflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -514,9 +479,8 @@ object EmptyLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInNanoflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -527,9 +491,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInParenthesisExpressionUnderExpression")
-  @js.native
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -540,9 +503,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInProxyConfigurationUnderHostExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -553,9 +515,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInProxyConfigurationUnderPasswordExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -566,9 +527,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInProxyConfigurationUnderPortExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -579,9 +539,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInProxyConfigurationUnderUseConfigurationExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -592,9 +551,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInProxyConfigurationUnderUsernameExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): EmptyLiteral = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -605,9 +563,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInRestCallActionUnderTimeOutModel")
-  @js.native
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -618,9 +575,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInRuleCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -631,9 +587,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInTemplateArgumentUnderExpressionModel")
-  @js.native
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): EmptyLiteral = js.native
+  @scala.inline
+  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -644,9 +599,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInUnaryExpressionUnderExpression")
-  @js.native
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): EmptyLiteral = js.native
+  @scala.inline
+  def createInUnaryExpressionUnderExpression(container: UnaryExpression): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -657,9 +611,8 @@ object EmptyLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInWebServiceCallActionUnderTimeOutModel")
-  @js.native
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): EmptyLiteral = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -670,9 +623,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInWebServiceOperationParameterMappingUnderArgumentModel")
-  @js.native
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): EmptyLiteral = js.native
+  @scala.inline
+  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /**
     * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
@@ -683,9 +635,8 @@ object EmptyLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.createInWidgetValidationUnderExpressionModel")
-  @js.native
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): EmptyLiteral = js.native
+  @scala.inline
+  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): EmptyLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EmptyLiteral]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EmptyLiteral.structureTypeName")

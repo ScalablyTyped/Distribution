@@ -6,33 +6,31 @@ import typings.awsLambda.connectContactFlowMod.ConnectContactFlowEndpoint
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowInitiationMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var Attributes: StringDictionary[String] = js.native
+  var Attributes: StringDictionary[String]
   
-  var Channel: ConnectContactFlowChannel = js.native
+  var Channel: ConnectContactFlowChannel
   
-  var ContactId: String = js.native
+  var ContactId: String
   
-  var CustomerEndpoint: ConnectContactFlowEndpoint | Null = js.native
+  var CustomerEndpoint: ConnectContactFlowEndpoint | Null
   
-  var InitialContactId: String = js.native
+  var InitialContactId: String
   
-  var InitiationMethod: ConnectContactFlowInitiationMethod = js.native
+  var InitiationMethod: ConnectContactFlowInitiationMethod
   
-  var InstanceARN: String = js.native
+  var InstanceARN: String
   
-  var MediaStreams: Customer = js.native
+  var MediaStreams: Customer
   
-  var PreviousContactId: String = js.native
+  var PreviousContactId: String
   
-  var Queue: String | Null = js.native
+  var Queue: String | Null
   
-  var SystemEndpoint: ConnectContactFlowEndpoint | Null = js.native
+  var SystemEndpoint: ConnectContactFlowEndpoint | Null
 }
 object Attributes {
   
@@ -47,7 +45,7 @@ object Attributes {
     MediaStreams: Customer,
     PreviousContactId: String
   ): Attributes = {
-    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Channel = Channel.asInstanceOf[js.Any], ContactId = ContactId.asInstanceOf[js.Any], InitialContactId = InitialContactId.asInstanceOf[js.Any], InitiationMethod = InitiationMethod.asInstanceOf[js.Any], InstanceARN = InstanceARN.asInstanceOf[js.Any], MediaStreams = MediaStreams.asInstanceOf[js.Any], PreviousContactId = PreviousContactId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Channel = Channel.asInstanceOf[js.Any], ContactId = ContactId.asInstanceOf[js.Any], InitialContactId = InitialContactId.asInstanceOf[js.Any], InitiationMethod = InitiationMethod.asInstanceOf[js.Any], InstanceARN = InstanceARN.asInstanceOf[js.Any], MediaStreams = MediaStreams.asInstanceOf[js.Any], PreviousContactId = PreviousContactId.asInstanceOf[js.Any], CustomerEndpoint = null, Queue = null, SystemEndpoint = null)
     __obj.asInstanceOf[Attributes]
   }
   

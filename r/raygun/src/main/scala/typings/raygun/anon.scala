@@ -9,15 +9,13 @@ import typings.raygun.typesMod.Tag
 import typings.raygun.typesMod.UserDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
   }
   object Host {
     
@@ -35,10 +33,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
   }
   object Hostname {
     
@@ -56,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HttpOptions extends StObject {
     
-    var httpOptions: HTTPOptions = js.native
+    var httpOptions: HTTPOptions
     
-    var interval: Double = js.native
+    var interval: Double
   }
   object HttpOptions {
     
@@ -82,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -109,30 +104,29 @@ object anon {
   }
   
   /* Inlined std.Partial<raygun.raygun/build/types.MessageDetails> */
-  @js.native
   trait PartialMessageDetails extends StObject {
     
-    var client: js.UndefOr[Name] = js.native
+    var client: js.UndefOr[Name] = js.undefined
     
-    var correlationId: js.UndefOr[String | Null] = js.native
+    var correlationId: js.UndefOr[String | Null] = js.undefined
     
-    var environment: js.UndefOr[Environment] = js.native
+    var environment: js.UndefOr[Environment] = js.undefined
     
-    var error: js.UndefOr[BuiltError] = js.native
+    var error: js.UndefOr[BuiltError] = js.undefined
     
-    var groupingKey: js.UndefOr[String | Null] = js.native
+    var groupingKey: js.UndefOr[String | Null] = js.undefined
     
-    var machineName: js.UndefOr[String] = js.native
+    var machineName: js.UndefOr[String] = js.undefined
     
-    var request: js.UndefOr[RequestDetails] = js.native
+    var request: js.UndefOr[RequestDetails] = js.undefined
     
-    var tags: js.UndefOr[js.Array[Tag]] = js.native
+    var tags: js.UndefOr[js.Array[Tag]] = js.undefined
     
-    var user: js.UndefOr[UserDetails] = js.native
+    var user: js.UndefOr[UserDetails] = js.undefined
     
-    var userCustomData: js.UndefOr[CustomData] = js.native
+    var userCustomData: js.UndefOr[CustomData] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PartialMessageDetails {
     

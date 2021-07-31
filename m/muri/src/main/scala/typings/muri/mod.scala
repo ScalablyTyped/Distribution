@@ -3,21 +3,24 @@ package typings.muri
 import typings.muri.anon.Pass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(uri: String): ParsedUri = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[ParsedUri]
+  
   @JSImport("muri", JSImport.Namespace)
   @js.native
-  def apply(uri: String): ParsedUri = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait DefaultHost extends Host {
+  trait DefaultHost
+    extends StObject
+       with Host {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object DefaultHost {
     
@@ -58,16 +61,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedUri extends StObject {
     
-    var auth: js.UndefOr[Pass] = js.native
+    var auth: js.UndefOr[Pass] = js.undefined
     
-    var db: String = js.native
+    var db: String
     
-    var hosts: js.Array[Host] = js.native
+    var hosts: js.Array[Host]
     
-    var options: js.Any = js.native
+    var options: js.Any
   }
   object ParsedUri {
     
@@ -100,10 +102,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait SocketHost extends Host {
+  trait SocketHost
+    extends StObject
+       with Host {
     
-    var ipc: String = js.native
+    var ipc: String
   }
   object SocketHost {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDiscoveredSchemaRequest extends StObject {
   
   /**
     * An array of strings where each string is a JSON event. These are the events that were used to generate the schema. The array includes a single type of event and has a maximum size of 10 events.
     */
-  var Events: listOfGetDiscoveredSchemaVersionItemInput = js.native
+  var Events: listOfGetDiscoveredSchemaVersionItemInput
   
   /**
     * The type of event.
     */
-  var Type: typings.awsSdk.schemasMod.Type = js.native
+  var Type: typings.awsSdk.schemasMod.Type
 }
 object GetDiscoveredSchemaRequest {
   

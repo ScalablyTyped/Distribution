@@ -3,16 +3,14 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatchFileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerWithWatchFileSystemMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler * / any */ @js.native
-  trait CompilerWithWatchFileSystem[TWatchFileSystem /* <: WatchFileSystem */] extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler * / any */ trait CompilerWithWatchFileSystem[TWatchFileSystem /* <: WatchFileSystem */] extends StObject {
     
-    var watchFileSystem: js.UndefOr[TWatchFileSystem] = js.native
+    var watchFileSystem: js.UndefOr[TWatchFileSystem] = js.undefined
   }
   object CompilerWithWatchFileSystem {
     
@@ -23,7 +21,7 @@ object compilerWithWatchFileSystemMod {
     }
     
     @scala.inline
-    implicit class CompilerWithWatchFileSystemMutableBuilder[Self <: CompilerWithWatchFileSystem[_], TWatchFileSystem /* <: WatchFileSystem */] (val x: Self with CompilerWithWatchFileSystem[TWatchFileSystem]) extends AnyVal {
+    implicit class CompilerWithWatchFileSystemMutableBuilder[Self <: CompilerWithWatchFileSystem[?], TWatchFileSystem /* <: WatchFileSystem */] (val x: Self & CompilerWithWatchFileSystem[TWatchFileSystem]) extends AnyVal {
       
       @scala.inline
       def setWatchFileSystem(value: TWatchFileSystem): Self = StObject.set(x, "watchFileSystem", value.asInstanceOf[js.Any])

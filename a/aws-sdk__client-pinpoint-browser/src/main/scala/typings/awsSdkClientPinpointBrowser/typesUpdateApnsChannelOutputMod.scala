@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesApnschannelresponseMod.Unmarshal
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateApnsChannelOutputMod {
   
-  @js.native
-  trait UpdateApnsChannelOutput extends OutputTypesUnion {
+  trait UpdateApnsChannelOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Apple Distribution Push Notification Service channel definition.
       */
-    var APNSChannelResponse: UnmarshalledAPNSChannelResponse = js.native
+    var APNSChannelResponse: UnmarshalledAPNSChannelResponse
   }
   object UpdateApnsChannelOutput {
     

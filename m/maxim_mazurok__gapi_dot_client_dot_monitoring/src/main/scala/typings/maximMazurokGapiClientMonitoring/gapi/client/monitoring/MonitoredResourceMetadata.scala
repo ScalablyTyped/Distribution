@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoredResourceMetadata extends StObject {
   
   /**
@@ -17,15 +15,15 @@ trait MonitoredResourceMetadata extends StObject {
   var systemLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. A map of user-defined metadata labels. */
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+  ] = js.undefined
 }
 object MonitoredResourceMetadata {
   
@@ -42,7 +40,7 @@ object MonitoredResourceMetadata {
     def setSystemLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -52,7 +50,7 @@ object MonitoredResourceMetadata {
     def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     @scala.inline

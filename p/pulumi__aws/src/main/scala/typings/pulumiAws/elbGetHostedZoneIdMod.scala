@@ -3,32 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbGetHostedZoneIdMod {
   
-  @JSImport("@pulumi/aws/elb/getHostedZoneId", "getHostedZoneId")
+  @JSImport("@pulumi/aws/elb/getHostedZoneId", JSImport.Namespace)
   @js.native
-  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] = js.native
-  @JSImport("@pulumi/aws/elb/getHostedZoneId", "getHostedZoneId")
-  @js.native
-  def getHostedZoneId(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
-  @JSImport("@pulumi/aws/elb/getHostedZoneId", "getHostedZoneId")
-  @js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] = js.native
-  @JSImport("@pulumi/aws/elb/getHostedZoneId", "getHostedZoneId")
-  @js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZoneId")().asInstanceOf[js.Promise[GetHostedZoneIdResult]]
+  @scala.inline
+  def getHostedZoneId(args: Unit, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZoneId")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneIdResult]]
+  @scala.inline
+  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZoneId")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetHostedZoneIdResult]]
+  @scala.inline
+  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZoneId")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneIdResult]]
+  
   trait GetHostedZoneIdArgs extends StObject {
     
     /**
       * Name of the region whose AWS ELB HostedZoneId is desired.
       * Defaults to the region from the AWS provider configuration.
       */
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
   }
   object GetHostedZoneIdArgs {
     
@@ -49,15 +47,14 @@ object elbGetHostedZoneIdMod {
     }
   }
   
-  @js.native
   trait GetHostedZoneIdResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
   }
   object GetHostedZoneIdResult {
     

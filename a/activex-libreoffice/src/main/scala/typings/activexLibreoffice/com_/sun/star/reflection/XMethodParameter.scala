@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,56 +12,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type is superseded by {@link XParameter} , which supports parameters of service constructors as well as parameters of interface methods.
   * @see XInterfaceMethodTypeDescription
   */
-@js.native
-trait XMethodParameter extends XInterface {
+trait XMethodParameter
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the name of the parameter
     * @returns name of parameter
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * Returns the position of the parameter regarding the IDL method declaration.
     * @returns position of the parameter
     */
-  val Position: Double = js.native
+  val Position: Double
   
   /**
     * Returns the type of the parameter.
     * @returns type of parameter
     */
-  val Type: XTypeDescription = js.native
+  val Type: XTypeDescription
   
   /**
     * Returns the name of the parameter
     * @returns name of parameter
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Returns the position of the parameter regarding the IDL method declaration.
     * @returns position of the parameter
     */
-  def getPosition(): Double = js.native
+  def getPosition(): Double
   
   /**
     * Returns the type of the parameter.
     * @returns type of parameter
     */
-  def getType(): XTypeDescription = js.native
+  def getType(): XTypeDescription
   
   /**
     * Returns true, if the parameter is declared as [in] or [inout] in IDL.
     * @returns true, if declared [in] or [inout] parameter
     */
-  def isIn(): Boolean = js.native
+  def isIn(): Boolean
   
   /**
     * Returns true, if the parameter is declared as [out] or [inout] in IDL.
     * @returns true, if declared [out] or [inout] parameter
     */
-  def isOut(): Boolean = js.native
+  def isOut(): Boolean
 }
 object XMethodParameter {
   

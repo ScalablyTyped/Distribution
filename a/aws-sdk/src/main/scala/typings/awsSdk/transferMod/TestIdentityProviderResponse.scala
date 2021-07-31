@@ -2,31 +2,29 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestIdentityProviderResponse extends StObject {
   
   /**
     * A message that indicates whether the test was successful or not.
     */
-  var Message: js.UndefOr[typings.awsSdk.transferMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.transferMod.Message] = js.undefined
   
   /**
     * The response that is returned from your API Gateway.
     */
-  var Response: js.UndefOr[typings.awsSdk.transferMod.Response] = js.native
+  var Response: js.UndefOr[typings.awsSdk.transferMod.Response] = js.undefined
   
   /**
     * The HTTP status code that is the response from your API Gateway.
     */
-  var StatusCode: typings.awsSdk.transferMod.StatusCode = js.native
+  var StatusCode: typings.awsSdk.transferMod.StatusCode
   
   /**
     * The endpoint of the service used to authenticate a user.
     */
-  var Url: typings.awsSdk.transferMod.Url = js.native
+  var Url: typings.awsSdk.transferMod.Url
 }
 object TestIdentityProviderResponse {
   

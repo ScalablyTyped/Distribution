@@ -5,7 +5,6 @@ import typings.objectHash.mod.ObjectHash.Hash
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -60,7 +59,6 @@ object mod extends Shortcut {
     def utf8: typings.objectHash.objectHashStrings.utf8 = "utf8".asInstanceOf[typings.objectHash.objectHashStrings.utf8]
   }
   
-  @js.native
   trait IStream extends StObject {
     
     var update: js.UndefOr[
@@ -70,7 +68,7 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var write: js.UndefOr[
         js.Function3[
@@ -79,7 +77,7 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IStream {
     
@@ -130,32 +128,31 @@ object mod extends Shortcut {
       def writeToStream(value: js.Any, stream: IStream): Unit = js.native
     }
     
-    @js.native
     trait IOptions extends StObject {
       
-      var algorithm: js.UndefOr[String] = js.native
+      var algorithm: js.UndefOr[String] = js.undefined
       
-      var encoding: js.UndefOr[String] = js.native
+      var encoding: js.UndefOr[String] = js.undefined
       
-      var excludeKeys: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.native
+      var excludeKeys: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.undefined
       
-      var excludeValues: js.UndefOr[Boolean] = js.native
+      var excludeValues: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreUnknown: js.UndefOr[Boolean] = js.native
+      var ignoreUnknown: js.UndefOr[Boolean] = js.undefined
       
-      var replacer: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+      var replacer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
       
-      var respectFunctionNames: js.UndefOr[Boolean] = js.native
+      var respectFunctionNames: js.UndefOr[Boolean] = js.undefined
       
-      var respectFunctionProperties: js.UndefOr[Boolean] = js.native
+      var respectFunctionProperties: js.UndefOr[Boolean] = js.undefined
       
-      var respectType: js.UndefOr[Boolean] = js.native
+      var respectType: js.UndefOr[Boolean] = js.undefined
       
-      var unorderedArrays: js.UndefOr[Boolean] = js.native
+      var unorderedArrays: js.UndefOr[Boolean] = js.undefined
       
-      var unorderedObjects: js.UndefOr[Boolean] = js.native
+      var unorderedObjects: js.UndefOr[Boolean] = js.undefined
       
-      var unorderedSets: js.UndefOr[Boolean] = js.native
+      var unorderedSets: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
@@ -199,7 +196,7 @@ object mod extends Shortcut {
         def setIgnoreUnknownUndefined: Self = StObject.set(x, "ignoreUnknown", js.undefined)
         
         @scala.inline
-        def setReplacer(value: /* value */ js.Any => _): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
+        def setReplacer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
         
         @scala.inline
         def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)

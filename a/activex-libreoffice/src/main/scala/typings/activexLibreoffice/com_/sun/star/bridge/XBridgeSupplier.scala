@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Uik
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,8 +33,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.bridge.OleBridgeSupplier
   */
-@js.native
-trait XBridgeSupplier extends XInterface {
+trait XBridgeSupplier
+  extends StObject
+     with XInterface {
   
   /** creates a bridge to provide an object of one object model with another. */
   def createBridge(
@@ -44,7 +44,7 @@ trait XBridgeSupplier extends XInterface {
     ProcessId: Double,
     sourceModelType: Double,
     destModelType: Double
-  ): js.Any = js.native
+  ): js.Any
 }
 object XBridgeSupplier {
   

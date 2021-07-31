@@ -19,100 +19,85 @@ import typings.node.streamMod.Duplex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(source: String): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: String, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: String, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: String, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: js.Array[String], configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: js.Array[String], configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: js.Array[String], configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: Buffer): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: Buffer, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: Buffer, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: Buffer, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: Buffer, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("favicons", JSImport.Namespace)
   @js.native
-  def apply(source: String): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: String, callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: String, configuration: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: String, configuration: PartialConfiguration): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: String, configuration: PartialConfiguration, callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String]): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], configuration: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], configuration: PartialConfiguration): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], configuration: PartialConfiguration, callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: Buffer): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: Buffer, callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: Buffer, configuration: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: Buffer, configuration: PartialConfiguration): Unit = js.native
-  @JSImport("favicons", JSImport.Namespace)
-  @js.native
-  def apply(source: Buffer, configuration: PartialConfiguration, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /** You can programmatically access Favicons configuration (icon filenames, HTML, manifest files, etc) with this export */
   @JSImport("favicons", "config")
   @js.native
   val config: Configuration = js.native
   
-  @JSImport("favicons", "stream")
-  @js.native
-  def stream(): Duplex = js.native
-  @JSImport("favicons", "stream")
-  @js.native
-  def stream(configuration: Configuration): Duplex = js.native
+  @scala.inline
+  def stream(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Duplex]
+  @scala.inline
+  def stream(configuration: Configuration): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(configuration.asInstanceOf[js.Any]).asInstanceOf[Duplex]
   
   type Callback = js.Function2[/* error */ Error | Null, /* response */ FavIconResponse, Unit]
   
-  @js.native
   trait Configuration extends StObject {
     
     /** Your application's description @default null */
-    var appDescription: String | Null = js.native
+    var appDescription: String | Null
     
     /** Your application's name @default null */
-    var appName: String | Null = js.native
+    var appName: String | Null
     
     /** Your application's short_name. If not set, `appName` will be used @default null */
-    var appShortName: String | Null = js.native
+    var appShortName: String | Null
     
     /** Style for Apple status bar @default 'black-translucent' */
-    var appleStatusBarStyle: `black-translucent` | default | black = js.native
+    var appleStatusBarStyle: `black-translucent` | default | black
     
     /** Background colour for flattened icons @default '#fff' */
-    var background: String = js.native
+    var background: String
     
     /** Your (or your developer's) name @default null */
-    var developerName: String | Null = js.native
+    var developerName: String | Null
     
     /** Your (or your developer's) URL @default null */
-    var developerURL: String | Null = js.native
+    var developerURL: String | Null
     
     /** Primary text direction for name, short_name, and description @default 'auto' */
-    var dir: String = js.native
+    var dir: String
     
     /** Preferred display mode: 'fullscreen', 'standalone', 'minimal-ui' or 'browser' @default 'standalone' */
-    var display: fullscreen | standalone | `minimal-ui` | browser = js.native
+    var display: fullscreen | standalone | `minimal-ui` | browser
     
     /**
       * Platform Options:
@@ -125,43 +110,43 @@ object mod {
       * - overlayGlow - apply glow effect after mask has been applied (applied by default for firefox)
       * - overlayShadow - apply drop shadow after mask has been applied
       */
-    var icons: PartialandroidbooleanIcon = js.native
+    var icons: PartialandroidbooleanIcon
     
     /** Primary language for name and short_name @default 'en-US' */
-    var lang: String = js.native
+    var lang: String
     
     /** Browsers don't send cookies when fetching a manifest, enable this to fix that @default false */
-    var loadManifestWithCredentials: Boolean = js.native
+    var loadManifestWithCredentials: Boolean
     
     /** Print logs to console? @default false */
-    var logging: Boolean = js.native
+    var logging: Boolean
     
     /** Determines whether to set relative paths in manifests @default false */
-    var manifestRelativePaths: Boolean = js.native
+    var manifestRelativePaths: Boolean
     
     /** Default orientation: 'any', 'natural', 'portrait' or 'landscape' @default 'any' */
-    var orientation: any | natural | portrait | landscape = js.native
+    var orientation: any | natural | portrait | landscape
     
     /** Path for overriding default icons path @default '/' */
-    var path: String = js.native
+    var path: String
     
     /** Determines whether to allow piping html as a file @default false */
-    var pipeHTML: Boolean = js.native
+    var pipeHTML: Boolean
     
     /** Use nearest neighbor resampling to preserve hard edges on pixel art @default false */
-    var pixel_art: Boolean = js.native
+    var pixel_art: Boolean
     
     /** Set of URLs that the browser considers within your app @default null */
-    var scope: String = js.native
+    var scope: String
     
     /** Start URL when launching the application from a device @default '/?homescreen=1' */
-    var start_url: String = js.native
+    var start_url: String
     
     /** Theme color user for example in Android's task switcher @default '#fff' */
-    var theme_color: String = js.native
+    var theme_color: String
     
     /** Your application's version string @default '1.0' */
-    var version: String = js.native
+    var version: String
   }
   object Configuration {
     
@@ -185,7 +170,7 @@ object mod {
       theme_color: String,
       version: String
     ): Configuration = {
-      val __obj = js.Dynamic.literal(appleStatusBarStyle = appleStatusBarStyle.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], loadManifestWithCredentials = loadManifestWithCredentials.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], manifestRelativePaths = manifestRelativePaths.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pipeHTML = pipeHTML.asInstanceOf[js.Any], pixel_art = pixel_art.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], theme_color = theme_color.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(appleStatusBarStyle = appleStatusBarStyle.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], loadManifestWithCredentials = loadManifestWithCredentials.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], manifestRelativePaths = manifestRelativePaths.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pipeHTML = pipeHTML.asInstanceOf[js.Any], pixel_art = pixel_art.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], theme_color = theme_color.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], appDescription = null, appName = null, appShortName = null, developerName = null, developerURL = null)
       __obj.asInstanceOf[Configuration]
     }
     
@@ -275,14 +260,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FavIconResponse extends StObject {
     
-    var files: js.Array[Contents] = js.native
+    var files: js.Array[Contents]
     
-    var html: js.Array[String] = js.native
+    var html: js.Array[String]
     
-    var images: js.Array[Contents] = js.native
+    var images: js.Array[Contents]
   }
   object FavIconResponse {
     
@@ -315,18 +299,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IconOptions extends StObject {
     
-    var background: js.UndefOr[Boolean | String] = js.native
+    var background: js.UndefOr[Boolean | String] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var ovelayShadow: js.UndefOr[Boolean] = js.native
+    var ovelayShadow: js.UndefOr[Boolean] = js.undefined
     
-    var overlayGlow: js.UndefOr[Boolean] = js.native
+    var overlayGlow: js.UndefOr[Boolean] = js.undefined
   }
   object IconOptions {
     

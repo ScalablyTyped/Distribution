@@ -18,19 +18,17 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listPropsTypeMod {
   
-  @js.native
   trait BriefProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object BriefProps {
     
@@ -66,30 +64,29 @@ object listPropsTypeMod {
     }
   }
   
-  @js.native
   trait ListItemPropsType extends StObject {
     
-    var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var align: js.UndefOr[top | middle | bottom] = js.native
+    var align: js.UndefOr[top | middle | bottom] = js.undefined
     
-    var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.native
+    var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var multipleLine: js.UndefOr[Boolean] = js.native
+    var multipleLine: js.UndefOr[Boolean] = js.undefined
     
-    var platform: js.UndefOr[android | ios] = js.native
+    var platform: js.UndefOr[android | ios] = js.undefined
     
-    var thumb: js.UndefOr[ReactNode | Null] = js.native
+    var thumb: js.UndefOr[ReactNode | Null] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object ListItemPropsType {
     
@@ -176,14 +173,13 @@ object listPropsTypeMod {
     }
   }
   
-  @js.native
   trait ListPropsType extends StObject {
     
-    var children: js.UndefOr[`false` | Element | js.Array[Element]] = js.native
+    var children: js.UndefOr[`false` | Element | js.Array[Element]] = js.undefined
     
-    var renderFooter: js.UndefOr[js.Function0[ReactType[_]] | String | Element] = js.native
+    var renderFooter: js.UndefOr[js.Function0[ReactType[js.Any]] | String | Element] = js.undefined
     
-    var renderHeader: js.UndefOr[js.Function0[ReactType[_]] | String | Element] = js.native
+    var renderHeader: js.UndefOr[js.Function0[ReactType[js.Any]] | String | Element] = js.undefined
   }
   object ListPropsType {
     
@@ -206,19 +202,19 @@ object listPropsTypeMod {
       def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
       
       @scala.inline
-      def setRenderFooter(value: js.Function0[ReactType[_]] | String | Element): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
+      def setRenderFooter(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRenderFooterFunction0(value: () => ReactType[_]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
+      def setRenderFooterFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
       
       @scala.inline
-      def setRenderHeader(value: js.Function0[ReactType[_]] | String | Element): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
+      def setRenderHeader(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRenderHeaderFunction0(value: () => ReactType[_]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
+      def setRenderHeaderFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
       
       @scala.inline
       def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)

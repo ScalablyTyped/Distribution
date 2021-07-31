@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellPlusColor extends StObject {
   
-  var cellPlusColor: js.UndefOr[String] = js.native
+  var cellPlusColor: js.UndefOr[String] = js.undefined
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
 }
 object CellPlusColor {
   

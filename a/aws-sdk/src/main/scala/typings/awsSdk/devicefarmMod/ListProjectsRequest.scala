@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProjectsRequest extends StObject {
   
   /**
     * Optional. If no Amazon Resource Name (ARN) is specified, then AWS Device Farm returns a list of all projects for the AWS account. You can also specify a project ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListProjectsRequest {
   

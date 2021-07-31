@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableCellStyle extends StObject {
   
   /** The background color of the cell. */
-  var backgroundColor: js.UndefOr[OptionalColor] = js.native
+  var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
   
   /** The bottom border of the cell. */
-  var borderBottom: js.UndefOr[TableCellBorder] = js.native
+  var borderBottom: js.UndefOr[TableCellBorder] = js.undefined
   
   /** The left border of the cell. */
-  var borderLeft: js.UndefOr[TableCellBorder] = js.native
+  var borderLeft: js.UndefOr[TableCellBorder] = js.undefined
   
   /** The right border of the cell. */
-  var borderRight: js.UndefOr[TableCellBorder] = js.native
+  var borderRight: js.UndefOr[TableCellBorder] = js.undefined
   
   /** The top border of the cell. */
-  var borderTop: js.UndefOr[TableCellBorder] = js.native
+  var borderTop: js.UndefOr[TableCellBorder] = js.undefined
   
   /** The column span of the cell. This property is read-only. */
-  var columnSpan: js.UndefOr[Double] = js.native
+  var columnSpan: js.UndefOr[Double] = js.undefined
   
   /** The alignment of the content in the table cell. The default alignment matches the alignment for newly created table cells in the Docs editor. */
-  var contentAlignment: js.UndefOr[String] = js.native
+  var contentAlignment: js.UndefOr[String] = js.undefined
   
   /** The bottom padding of the cell. */
-  var paddingBottom: js.UndefOr[Dimension] = js.native
+  var paddingBottom: js.UndefOr[Dimension] = js.undefined
   
   /** The left padding of the cell. */
-  var paddingLeft: js.UndefOr[Dimension] = js.native
+  var paddingLeft: js.UndefOr[Dimension] = js.undefined
   
   /** The right padding of the cell. */
-  var paddingRight: js.UndefOr[Dimension] = js.native
+  var paddingRight: js.UndefOr[Dimension] = js.undefined
   
   /** The top padding of the cell. */
-  var paddingTop: js.UndefOr[Dimension] = js.native
+  var paddingTop: js.UndefOr[Dimension] = js.undefined
   
   /** The row span of the cell. This property is read-only. */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
 }
 object TableCellStyle {
   

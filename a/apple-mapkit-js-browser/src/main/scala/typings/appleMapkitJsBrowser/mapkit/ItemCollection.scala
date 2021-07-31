@@ -2,30 +2,28 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tree structure containing annotations, overlays, and nested item
   * collection objects.
   */
-@js.native
 trait ItemCollection extends StObject {
   
   /**
     * The raw GeoJSON data.
     */
-  var data: js.Object = js.native
+  var data: js.Object
   
   /**
     * A flattened array of items that include annotations or overlays.
     */
-  var getFlattenedItemList: js.Array[Annotation | Overlay] = js.native
+  var getFlattenedItemList: js.Array[Annotation | Overlay]
   
   /**
     * A nested list of annotations, overlays, or other item collections.
     */
-  var items: js.Array[Annotation | Overlay | ItemCollection] = js.native
+  var items: js.Array[Annotation | Overlay | ItemCollection]
 }
 object ItemCollection {
   

@@ -3,31 +3,29 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnFilterable extends StObject {
   
-  var cell: js.UndefOr[GridColumnFilterableCell] = js.native
+  var cell: js.UndefOr[GridColumnFilterableCell] = js.undefined
   
-  var checkAll: js.UndefOr[Boolean] = js.native
+  var checkAll: js.UndefOr[Boolean] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var extra: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var itemTemplate: js.UndefOr[js.Function] = js.native
+  var itemTemplate: js.UndefOr[js.Function] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var operators: js.UndefOr[js.Any] = js.native
+  var operators: js.UndefOr[js.Any] = js.undefined
   
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
-  var ui: js.UndefOr[String | js.Function] = js.native
+  var ui: js.UndefOr[String | js.Function] = js.undefined
 }
 object GridColumnFilterable {
   

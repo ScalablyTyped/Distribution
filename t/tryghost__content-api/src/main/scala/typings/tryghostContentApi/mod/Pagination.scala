@@ -2,29 +2,27 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pagination extends StObject {
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var next: Nullable[Double] = js.native
+  var next: Nullable[Double]
   
-  var page: Double = js.native
+  var page: Double
   
-  var pages: Double = js.native
+  var pages: Double
   
-  var prev: Nullable[Double] = js.native
+  var prev: Nullable[Double]
   
-  var total: Double = js.native
+  var total: Double
 }
 object Pagination {
   
   @scala.inline
   def apply(limit: Double, page: Double, pages: Double, total: Double): Pagination = {
-    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], next = null, prev = null)
     __obj.asInstanceOf[Pagination]
   }
   

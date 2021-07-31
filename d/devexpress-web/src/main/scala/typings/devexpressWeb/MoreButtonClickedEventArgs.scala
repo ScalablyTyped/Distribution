@@ -3,34 +3,34 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.MoreButtonClicked client-side event.
   */
-@js.native
-trait MoreButtonClickedEventArgs extends ASPxClientProcessingModeEventArgs {
+trait MoreButtonClickedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets or sets whether an event is handled. If it is handled, default actions are not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the time interval of the cell where the button is located.
     */
-  var interval: ASPxClientTimeInterval = js.native
+  var interval: ASPxClientTimeInterval
   
   /**
     * Gets the resource identifier associated with the cell where the button is located.
     */
-  var resource: String = js.native
+  var resource: String
   
   /**
     * Gets the Start or End values of the target appointment.
     */
-  var targetDateTime: Date = js.native
+  var targetDateTime: Date
 }
 object MoreButtonClickedEventArgs {
   

@@ -2,40 +2,38 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionFilter extends StObject {
   
   /**
     * The creation time of the subscription filter, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the destination.
     */
-  var destinationArn: js.UndefOr[DestinationArn] = js.native
+  var destinationArn: js.UndefOr[DestinationArn] = js.undefined
   
-  var distribution: js.UndefOr[Distribution] = js.native
+  var distribution: js.UndefOr[Distribution] = js.undefined
   
   /**
     * The name of the subscription filter.
     */
-  var filterName: js.UndefOr[FilterName] = js.native
+  var filterName: js.UndefOr[FilterName] = js.undefined
   
-  var filterPattern: js.UndefOr[FilterPattern] = js.native
+  var filterPattern: js.UndefOr[FilterPattern] = js.undefined
   
   /**
     * The name of the log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * 
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object SubscriptionFilter {
   

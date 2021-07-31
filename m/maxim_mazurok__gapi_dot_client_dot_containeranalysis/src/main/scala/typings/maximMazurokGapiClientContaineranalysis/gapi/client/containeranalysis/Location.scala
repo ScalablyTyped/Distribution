@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** Required. The CPE URI in [CPE format](https://cpe.mitre.org/specification/) denoting the package manager version distributing a package. */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /** The path from which we gathered that this package/version is installed. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** The version installed at this location. */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object Location {
   

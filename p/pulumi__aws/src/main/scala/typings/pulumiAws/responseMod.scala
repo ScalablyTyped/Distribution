@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMod {
@@ -54,6 +53,10 @@ object responseMod {
   /* static members */
   object Response {
     
+    @JSImport("@pulumi/aws/apigateway/response", "Response")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Response resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object responseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/response", "Response.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Response = js.native
-    @JSImport("@pulumi/aws/apigateway/response", "Response.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Response = js.native
-    @JSImport("@pulumi/aws/apigateway/response", "Response.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResponseState): Response = js.native
-    @JSImport("@pulumi/aws/apigateway/response", "Response.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResponseState, opts: CustomResourceOptions): Response = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Response]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResponseState): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Response]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResponseState, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
     
     /**
       * Returns true if the given object is an instance of Response.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/response", "Response.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean]
   }
   
-  @js.native
   trait ResponseArgs extends StObject {
     
     /**
       * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map specifying the templates used to transform the response body.
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The response type of the associated GatewayResponse.
       */
-    val responseType: Input[String] = js.native
+    val responseType: Input[String]
     
     /**
       * The string identifier of the associated REST API.
       */
-    val restApiId: Input[String] = js.native
+    val restApiId: Input[String]
     
     /**
       * The HTTP status code of the Gateway Response.
       */
-    val statusCode: js.UndefOr[Input[String]] = js.native
+    val statusCode: js.UndefOr[Input[String]] = js.undefined
   }
   object ResponseArgs {
     
@@ -150,33 +147,32 @@ object responseMod {
     }
   }
   
-  @js.native
   trait ResponseState extends StObject {
     
     /**
       * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map specifying the templates used to transform the response body.
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The response type of the associated GatewayResponse.
       */
-    val responseType: js.UndefOr[Input[String]] = js.native
+    val responseType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The string identifier of the associated REST API.
       */
-    val restApiId: js.UndefOr[Input[String]] = js.native
+    val restApiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP status code of the Gateway Response.
       */
-    val statusCode: js.UndefOr[Input[String]] = js.native
+    val statusCode: js.UndefOr[Input[String]] = js.undefined
   }
   object ResponseState {
     

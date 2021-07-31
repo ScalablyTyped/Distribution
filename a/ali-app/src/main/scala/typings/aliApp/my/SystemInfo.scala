@@ -5,88 +5,86 @@ import typings.aliApp.aliAppStrings.alipay
 import typings.aliApp.aliAppStrings.iOS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 系统信息 https://docs.alipay.com/mini/api/system-info
-@js.native
 trait SystemInfo extends StObject {
   
   /**
     * 当前运行的客户端，当前是支付宝则有效值是"alipay"
     */
-  var app: alipay | String = js.native
+  var app: alipay | String
   
   /**
     * 手机品牌
     */
-  var brand: String = js.native
+  var brand: String
   
   /**
     * 当前电量百分比
     */
-  var currentBattery: String = js.native
+  var currentBattery: String
   
   /**
     * 用户设置字体大小
     */
-  var fontSizeSetting: Double = js.native
+  var fontSizeSetting: Double
   
   /**
     * 支付宝设置的语言
     */
-  var language: String = js.native
+  var language: String
   
   /**
     * 手机型号
     */
-  var model: String = js.native
+  var model: String
   
   /**
     * 设备像素比
     */
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   /**
     * 系统名：Android，iOS
     */
-  var platform: Android | iOS | String = js.native
+  var platform: Android | iOS | String
   
   /**
     * 屏幕高度
     */
-  var screenHeight: Double = js.native
+  var screenHeight: Double
   
   /**
     * 屏幕宽度
     */
-  var screenWidth: Double = js.native
+  var screenWidth: Double
   
   /**
     * 设备磁盘容量
     */
-  var storage: String = js.native
+  var storage: String
   
   /**
     * 系统版本
     */
-  var system: String = js.native
+  var system: String
   
   /**
     * 支付宝版本号
     */
-  var version: String = js.native
+  var version: String
   
   /**
     * 窗口高度
     */
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
   /**
     * 窗口宽度
     */
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object SystemInfo {
   

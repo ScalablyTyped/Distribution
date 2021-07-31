@@ -3,7 +3,6 @@ package typings.typescript.mod
 import typings.typescript.anon.WithMetadataCompletionInf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait LanguageService extends StObject {
   def getApplicableRefactors(
     fileName: java.lang.String,
     positionOrRange: Double,
-    preferences: js.UndefOr[scala.Nothing],
+    preferences: Unit,
     triggerReason: RefactorTriggerReason
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: Double, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
@@ -54,7 +53,7 @@ trait LanguageService extends StObject {
   def getApplicableRefactors(
     fileName: java.lang.String,
     positionOrRange: TextRange,
-    preferences: js.UndefOr[scala.Nothing],
+    preferences: Unit,
     triggerReason: RefactorTriggerReason
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
@@ -105,23 +104,23 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     position: Double,
     entryName: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    entryName: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
+    formatOptions: Unit,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
     entryName: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
+    formatOptions: Unit,
     source: java.lang.String,
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: Unit,
+    source: Unit,
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -135,14 +134,6 @@ trait LanguageService extends StObject {
     position: Double,
     entryName: java.lang.String,
     formatOptions: FormatCodeOptions,
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    entryName: java.lang.String,
-    formatOptions: FormatCodeOptions,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -151,6 +142,14 @@ trait LanguageService extends StObject {
     entryName: java.lang.String,
     formatOptions: FormatCodeOptions,
     source: java.lang.String,
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: Unit,
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -164,14 +163,6 @@ trait LanguageService extends StObject {
     position: Double,
     entryName: java.lang.String,
     formatOptions: FormatCodeSettings,
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    entryName: java.lang.String,
-    formatOptions: FormatCodeSettings,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -180,6 +171,14 @@ trait LanguageService extends StObject {
     entryName: java.lang.String,
     formatOptions: FormatCodeSettings,
     source: java.lang.String,
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: Unit,
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   
@@ -245,9 +244,9 @@ trait LanguageService extends StObject {
   ): js.UndefOr[RefactorEditInfo] = js.native
   
   def getEmitOutput(fileName: java.lang.String): EmitOutput = js.native
-  def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: js.UndefOr[scala.Nothing], forceDtsEmit: Boolean): EmitOutput = js.native
   def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: Boolean): EmitOutput = js.native
   def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: Boolean, forceDtsEmit: Boolean): EmitOutput = js.native
+  def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: Unit, forceDtsEmit: Boolean): EmitOutput = js.native
   
   /**
     * Gets semantic highlights information for a particular file. Has two formats, an older
@@ -287,30 +286,7 @@ trait LanguageService extends StObject {
   def getNameOrDottedNameSpan(fileName: java.lang.String, startPos: Double, endPos: Double): js.UndefOr[TextSpan] = js.native
   
   def getNavigateToItems(searchValue: java.lang.String): js.Array[NavigateToItem] = js.native
-  def getNavigateToItems(
-    searchValue: java.lang.String,
-    maxResultCount: js.UndefOr[scala.Nothing],
-    fileName: js.UndefOr[scala.Nothing],
-    excludeDtsFiles: Boolean
-  ): js.Array[NavigateToItem] = js.native
-  def getNavigateToItems(
-    searchValue: java.lang.String,
-    maxResultCount: js.UndefOr[scala.Nothing],
-    fileName: java.lang.String
-  ): js.Array[NavigateToItem] = js.native
-  def getNavigateToItems(
-    searchValue: java.lang.String,
-    maxResultCount: js.UndefOr[scala.Nothing],
-    fileName: java.lang.String,
-    excludeDtsFiles: Boolean
-  ): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Double): js.Array[NavigateToItem] = js.native
-  def getNavigateToItems(
-    searchValue: java.lang.String,
-    maxResultCount: Double,
-    fileName: js.UndefOr[scala.Nothing],
-    excludeDtsFiles: Boolean
-  ): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Double, fileName: java.lang.String): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(
     searchValue: java.lang.String,
@@ -318,6 +294,15 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     excludeDtsFiles: Boolean
   ): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Double, fileName: Unit, excludeDtsFiles: Boolean): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Unit, fileName: java.lang.String): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(
+    searchValue: java.lang.String,
+    maxResultCount: Unit,
+    fileName: java.lang.String,
+    excludeDtsFiles: Boolean
+  ): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Unit, fileName: Unit, excludeDtsFiles: Boolean): js.Array[NavigateToItem] = js.native
   
   def getNavigationBarItems(fileName: java.lang.String): js.Array[NavigationBarItem] = js.native
   

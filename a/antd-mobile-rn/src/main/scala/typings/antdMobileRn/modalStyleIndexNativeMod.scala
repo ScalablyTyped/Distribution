@@ -21,7 +21,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalStyleIndexNativeMod {
@@ -143,44 +142,43 @@ object modalStyleIndexNativeMod {
     def wrap_=(x: AlignItemsJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IModalStyle extends StObject {
     
-    var body: ViewStyle = js.native
+    var body: ViewStyle
     
-    var buttonGroupH: ViewStyle = js.native
+    var buttonGroupH: ViewStyle
     
-    var buttonGroupV: ViewStyle = js.native
+    var buttonGroupV: ViewStyle
     
-    var buttonText: TextStyle = js.native
+    var buttonText: TextStyle
     
-    var buttonTextOperation: TextStyle = js.native
+    var buttonTextOperation: TextStyle
     
-    var buttonWrapH: ViewStyle = js.native
+    var buttonWrapH: ViewStyle
     
-    var buttonWrapV: ViewStyle = js.native
+    var buttonWrapV: ViewStyle
     
-    var close: TextStyle = js.native
+    var close: TextStyle
     
-    var closeWrap: ViewStyle = js.native
+    var closeWrap: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var footer: ViewStyle = js.native
+    var footer: ViewStyle
     
-    var header: TextStyle = js.native
+    var header: TextStyle
     
-    var innerContainer: ViewStyle = js.native
+    var innerContainer: ViewStyle
     
-    var maskClosable: ViewStyle = js.native
+    var maskClosable: ViewStyle
     
-    var operationBody: ViewStyle = js.native
+    var operationBody: ViewStyle
     
-    var operationContainer: ViewStyle = js.native
+    var operationContainer: ViewStyle
     
-    var popupContainer: ViewStyle = js.native
+    var popupContainer: ViewStyle
     
-    var wrap: ViewStyle = js.native
+    var wrap: ViewStyle
   }
   object IModalStyle {
     

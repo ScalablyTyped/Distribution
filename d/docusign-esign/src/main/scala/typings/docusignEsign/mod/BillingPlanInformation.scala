@@ -2,54 +2,52 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlanInformation extends StObject {
   
-  var appStoreReceipt: js.UndefOr[/* Contains information about an APP store receipt. */ AppStoreReceipt] = js.native
+  var appStoreReceipt: js.UndefOr[/* Contains information about an APP store receipt. */ AppStoreReceipt] = js.undefined
   
   /**
     * The billing address for the account.
     */
   var billingAddress: js.UndefOr[
     /* Contains information about the address associated with the account. */ AccountAddress
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex type that has information about the credit card used to pay for this account.
     */
   var creditCardInformation: js.UndefOr[
     /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the bank that processes direct debits for the payment plan.
     */
   var directDebitProcessorInformation: js.UndefOr[
     /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Optional) The user's reason for downgrading their billing plan.
     */
-  var downgradeReason: js.UndefOr[String] = js.native
+  var downgradeReason: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, customer support is provided as part of the account plan.
     */
-  var enableSupport: js.UndefOr[String] = js.native
+  var enableSupport: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seats (users) included in the plan.
     */
-  var includedSeats: js.UndefOr[String] = js.native
+  var includedSeats: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var incrementalSeats: js.UndefOr[String] = js.native
+  var incrementalSeats: js.UndefOr[String] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -64,24 +62,24 @@ trait BillingPlanInformation extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the entity that processes payments for the billing plan.
     */
-  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.native
+  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.undefined
   
   /**
     * An object used to identify the features and attributes of the account being created.
     */
   var planInformation: js.UndefOr[
     /* An object used to identify the features and attributes of the account being created. */ PlanInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex type that contains properties for entering referral and discount information.
     */
-  var referralInformation: js.UndefOr[ReferralInformation] = js.native
+  var referralInformation: js.UndefOr[ReferralInformation] = js.undefined
   
   /**
     * The renewal status of the account. Possible values are:
@@ -90,32 +88,32 @@ trait BillingPlanInformation extends StObject {
     * - `queued_for_close`: The account will be closed at the billingPeriodEndDate.
     * - queued_for_downgrade`: The account will be downgraded at the `billingPeriodEndDate`.
     */
-  var renewalStatus: js.UndefOr[String] = js.native
+  var renewalStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountAmount: js.UndefOr[String] = js.native
+  var saleDiscountAmount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountFixedAmount: js.UndefOr[String] = js.native
+  var saleDiscountFixedAmount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountPercent: js.UndefOr[String] = js.native
+  var saleDiscountPercent: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountPeriods: js.UndefOr[String] = js.native
+  var saleDiscountPeriods: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var saleDiscountSeatPriceOverride: js.UndefOr[String] = js.native
+  var saleDiscountSeatPriceOverride: js.UndefOr[String] = js.undefined
 }
 object BillingPlanInformation {
   

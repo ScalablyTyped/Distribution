@@ -6,7 +6,6 @@ import typings.angularLocalforage.anon.DefaultValue
 import typings.localforage.LocalForageDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -14,12 +13,11 @@ object mod {
   
   object localForage {
     
-    @js.native
     trait ILocalForageProvider extends StObject {
       
-      def config(config: LocalForageConfig): Unit = js.native
+      def config(config: LocalForageConfig): Unit
       
-      def setNotify(onItemSet: Boolean, onItemRemove: Boolean): Unit = js.native
+      def setNotify(onItemSet: Boolean, onItemRemove: Boolean): Unit
     }
     object ILocalForageProvider {
       
@@ -43,8 +41,8 @@ object mod {
     @js.native
     trait ILocalForageService extends StObject {
       
-      def bind($scope: IScope, config: DefaultValue): IPromise[_] = js.native
-      def bind($scope: IScope, key: String): IPromise[_] = js.native
+      def bind($scope: IScope, config: DefaultValue): IPromise[js.Any] = js.native
+      def bind($scope: IScope, key: String): IPromise[js.Any] = js.native
       
       def clear(): IPromise[Unit] = js.native
       
@@ -52,8 +50,8 @@ object mod {
       
       def driver(): LocalForageDriver = js.native
       
-      def getItem(key: String): IPromise[_] = js.native
-      def getItem(keys: js.Array[String]): IPromise[js.Array[_]] = js.native
+      def getItem(key: String): IPromise[js.Any] = js.native
+      def getItem(keys: js.Array[String]): IPromise[js.Array[js.Any]] = js.native
       
       def instance(name: String): ILocalForageService = js.native
       
@@ -65,8 +63,8 @@ object mod {
       
       def length(): IPromise[Double] = js.native
       
-      def pull(key: String): IPromise[_] = js.native
-      def pull(keys: js.Array[String]): IPromise[js.Array[_]] = js.native
+      def pull(key: String): IPromise[js.Any] = js.native
+      def pull(keys: js.Array[String]): IPromise[js.Array[js.Any]] = js.native
       
       def removeItem(key: String): IPromise[Unit] = js.native
       def removeItem(key: js.Array[String]): IPromise[Unit] = js.native
@@ -75,24 +73,23 @@ object mod {
       def setDriver(name: js.Array[String]): IPromise[Unit] = js.native
       
       def setItem(key: String, value: js.Any): IPromise[Unit] = js.native
-      def setItem(keys: js.Array[String], values: js.Array[_]): IPromise[Unit] = js.native
+      def setItem(keys: js.Array[String], values: js.Array[js.Any]): IPromise[Unit] = js.native
       
       def unbind($scope: IScope, key: String): Unit = js.native
       def unbind($scope: IScope, key: String, scopeKey: String): Unit = js.native
     }
     
-    @js.native
     trait LocalForageConfig extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var driver: js.UndefOr[String] = js.native
+      var driver: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String | Double] = js.native
+      var name: js.UndefOr[String | Double] = js.undefined
       
-      var storeName: js.UndefOr[String] = js.native
+      var storeName: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[Double] = js.native
+      var version: js.UndefOr[Double] = js.undefined
     }
     object LocalForageConfig {
       

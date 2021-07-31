@@ -2,39 +2,37 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollState extends StObject {
   
-  var colOverscanEndIdx: Double = js.native
+  var colOverscanEndIdx: Double
   
-  var colOverscanStartIdx: Double = js.native
+  var colOverscanStartIdx: Double
   
-  var colVisibleEndIdx: Double = js.native
+  var colVisibleEndIdx: Double
   
-  var colVisibleStartIdx: Double = js.native
+  var colVisibleStartIdx: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var lastFrozenColumnIndex: Double = js.native
+  var lastFrozenColumnIndex: Double
   
-  var rowOverscanEndIdx: Double = js.native
+  var rowOverscanEndIdx: Double
   
-  var rowOverscanStartIdx: Double = js.native
+  var rowOverscanStartIdx: Double
   
-  var rowVisibleEndIdx: Double = js.native
+  var rowVisibleEndIdx: Double
   
-  var rowVisibleStartIdx: Double = js.native
+  var rowVisibleStartIdx: Double
   
-  var scrollDirection: SCROLL_DIRECTION = js.native
+  var scrollDirection: SCROLL_DIRECTION
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object ScrollState {
   

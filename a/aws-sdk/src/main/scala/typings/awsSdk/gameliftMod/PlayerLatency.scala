@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerLatency extends StObject {
   
   /**
     * Amount of time that represents the time lag experienced by the player when connected to the specified Region.
     */
-  var LatencyInMilliseconds: js.UndefOr[Float] = js.native
+  var LatencyInMilliseconds: js.UndefOr[Float] = js.undefined
   
   /**
     * A unique identifier for a player associated with the latency data.
     */
-  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.native
+  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Name of the Region that is associated with the latency value.
     */
-  var RegionIdentifier: js.UndefOr[NonZeroAndMaxString] = js.native
+  var RegionIdentifier: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object PlayerLatency {
   

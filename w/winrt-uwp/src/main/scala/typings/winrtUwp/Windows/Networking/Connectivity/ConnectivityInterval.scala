@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the start time and duration for an established or prior connection. */
-@js.native
 trait ConnectivityInterval extends StObject {
   
   /** Indicates the duration of connectivity. */
-  var connectionDuration: Double = js.native
+  var connectionDuration: Double
   
   /** Indicates when the connection was initially established. */
-  var startTime: Date = js.native
+  var startTime: Date
 }
 object ConnectivityInterval {
   

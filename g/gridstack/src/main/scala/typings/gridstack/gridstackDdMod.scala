@@ -8,7 +8,6 @@ import typings.gridstack.typesMod.GridItemHTMLElement
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridstackDdMod {
@@ -21,15 +20,18 @@ object gridstackDdMod {
     def dragIn(el: GridStackElement, opts: DDDragInOpt): GridStackDD = js.native
     
     def draggable(el: GridItemHTMLElement, opts: DDOpts): GridStackDD = js.native
-    def draggable(el: GridItemHTMLElement, opts: DDOpts, key: js.UndefOr[DDKey], value: DDValue): GridStackDD = js.native
+    def draggable(el: GridItemHTMLElement, opts: DDOpts, key: Unit, value: DDValue): GridStackDD = js.native
     def draggable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey): GridStackDD = js.native
+    def draggable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey, value: DDValue): GridStackDD = js.native
     
     def droppable(el: GridItemHTMLElement, opts: DDDropOpt): GridStackDD = js.native
-    def droppable(el: GridItemHTMLElement, opts: DDDropOpt, key: js.UndefOr[DDKey], value: DDValue): GridStackDD = js.native
+    def droppable(el: GridItemHTMLElement, opts: DDDropOpt, key: Unit, value: DDValue): GridStackDD = js.native
     def droppable(el: GridItemHTMLElement, opts: DDDropOpt, key: DDKey): GridStackDD = js.native
+    def droppable(el: GridItemHTMLElement, opts: DDDropOpt, key: DDKey, value: DDValue): GridStackDD = js.native
     def droppable(el: GridItemHTMLElement, opts: DDOpts): GridStackDD = js.native
-    def droppable(el: GridItemHTMLElement, opts: DDOpts, key: js.UndefOr[DDKey], value: DDValue): GridStackDD = js.native
+    def droppable(el: GridItemHTMLElement, opts: DDOpts, key: Unit, value: DDValue): GridStackDD = js.native
     def droppable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey): GridStackDD = js.native
+    def droppable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey, value: DDValue): GridStackDD = js.native
     
     var grid: GridStack = js.native
     
@@ -45,8 +47,9 @@ object gridstackDdMod {
     def remove(el: GridItemHTMLElement): GridStackDD = js.native
     
     def resizable(el: GridItemHTMLElement, opts: DDOpts): GridStackDD = js.native
-    def resizable(el: GridItemHTMLElement, opts: DDOpts, key: js.UndefOr[DDKey], value: DDValue): GridStackDD = js.native
+    def resizable(el: GridItemHTMLElement, opts: DDOpts, key: Unit, value: DDValue): GridStackDD = js.native
     def resizable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey): GridStackDD = js.native
+    def resizable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey, value: DDValue): GridStackDD = js.native
   }
   /* static members */
   object GridStackDD {
@@ -56,14 +59,12 @@ object gridstackDdMod {
     val ^ : js.Any = js.native
     
     /** get the current registered plugin to use */
-    @JSImport("gridstack/dist/gridstack-dd", "GridStackDD.get")
-    @js.native
-    def get(): TypeofGridStackDD = js.native
+    @scala.inline
+    def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
     
     /** call this method to register your plugin instead of the default no-op one */
-    @JSImport("gridstack/dist/gridstack-dd", "GridStackDD.registerPlugin")
-    @js.native
-    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = js.native
+    @scala.inline
+    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("gridstack/dist/gridstack-dd", "GridStackDD.registeredPlugins")
     @js.native
@@ -79,11 +80,10 @@ object gridstackDdMod {
     Unit
   ]
   
-  @js.native
   trait DDDropOpt extends StObject {
     
     /** function or class type that this grid will accept as dropped items (see GridStackOptions.acceptWidgets) */
-    var accept: js.UndefOr[js.Function1[/* el */ GridItemHTMLElement, Boolean]] = js.native
+    var accept: js.UndefOr[js.Function1[/* el */ GridItemHTMLElement, Boolean]] = js.undefined
   }
   object DDDropOpt {
     

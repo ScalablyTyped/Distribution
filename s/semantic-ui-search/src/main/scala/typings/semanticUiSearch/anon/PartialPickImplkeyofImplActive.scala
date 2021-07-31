@@ -2,22 +2,20 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.ClassNameSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplActive extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.undefined
   
-  var focus: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var pressed: js.UndefOr[String] = js.native
+  var pressed: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplActive {
   

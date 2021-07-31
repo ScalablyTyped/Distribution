@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExecutionContext extends StObject {
   
   /**
     * The name of the data catalog used in the query execution.
     */
-  var Catalog: js.UndefOr[CatalogNameString] = js.native
+  var Catalog: js.UndefOr[CatalogNameString] = js.undefined
   
   /**
     * The name of the database used in the query execution.
     */
-  var Database: js.UndefOr[DatabaseString] = js.native
+  var Database: js.UndefOr[DatabaseString] = js.undefined
 }
 object QueryExecutionContext {
   

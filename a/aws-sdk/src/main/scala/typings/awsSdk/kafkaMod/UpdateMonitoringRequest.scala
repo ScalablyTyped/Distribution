@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMonitoringRequest extends StObject {
   
   /**
@@ -13,30 +11,30 @@ trait UpdateMonitoringRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The version of the MSK cluster to update. Cluster versions aren't simple numbers. You can describe an MSK cluster to find its version. When this update operation is successful, it generates a new cluster version.
     
     */
-  var CurrentVersion: string = js.native
+  var CurrentVersion: string
   
   /**
     * 
     Specifies which Apache Kafka metrics Amazon MSK gathers and sends to Amazon CloudWatch for this cluster.
     
     */
-  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.undefined
   
-  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.undefined
   
   /**
     * 
     The settings for open monitoring.
     
     */
-  var OpenMonitoring: js.UndefOr[OpenMonitoringInfo] = js.native
+  var OpenMonitoring: js.UndefOr[OpenMonitoringInfo] = js.undefined
 }
 object UpdateMonitoringRequest {
   

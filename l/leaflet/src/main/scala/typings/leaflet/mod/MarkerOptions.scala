@@ -2,49 +2,49 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerOptions extends InteractiveLayerOptions {
+trait MarkerOptions
+  extends StObject
+     with InteractiveLayerOptions {
   
   /** Text for the `alt` attribute of the icon image (useful for accessibility). */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Whether to pan the map when dragging this marker near its edge or not. */
-  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPan: js.UndefOr[Boolean] = js.undefined
   
   /** Distance (in pixels to the left/right and to the top/bottom) of the map edge to start panning the map. */
-  var autoPanPadding: js.UndefOr[PointExpression] = js.native
+  var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
   
   /** Number of pixels the map should pan by. */
-  var autoPanSpeed: js.UndefOr[Double] = js.native
+  var autoPanSpeed: js.UndefOr[Double] = js.undefined
   
   /** Whether the marker is draggable with mouse/touch or not. */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+  var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
   
   /** Whether the marker can be tabbed to with a keyboard and clicked by pressing enter. */
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
   /** The opacity of the marker. */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /** The z-index offset used for the `riseOnHover` feature. */
-  var riseOffset: js.UndefOr[Double] = js.native
+  var riseOffset: js.UndefOr[Double] = js.undefined
   
   /** If `true`, the marker will get on top of others when you hover the mouse over it. */
-  var riseOnHover: js.UndefOr[Boolean] = js.native
+  var riseOnHover: js.UndefOr[Boolean] = js.undefined
   
   /** `Map pane` where the markers shadow will be added. */
-  var shadowPane: js.UndefOr[String] = js.native
+  var shadowPane: js.UndefOr[String] = js.undefined
   
   /** Text for the browser tooltip that appear on marker hover (no tooltip by default). */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Option for putting the marker on top of all others (or below). */
-  var zIndexOffset: js.UndefOr[Double] = js.native
+  var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
 object MarkerOptions {
   

@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.suggestionsrequested
 import typings.winrtUwp.winrtUwpStrings.visibilitychanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents and manages the search pane that opens when a user activates the Search charm. The search pane provides a consistent, touch-friendly search box and optional search suggestions. */
 @js.native
 trait SearchPane extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_querychanged(`type`: querychanged, listener: TypedEventHandler[SearchPane, SearchPaneQueryChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -42,31 +41,31 @@ trait SearchPane extends StObject {
   var language: String = js.native
   
   /** Fires when the user changes the text in the search box. */
-  def onquerychanged(ev: SearchPaneQueryChangedEventArgs with WinRTEvent[SearchPane]): Unit = js.native
+  def onquerychanged(ev: SearchPaneQueryChangedEventArgs & WinRTEvent[SearchPane]): Unit = js.native
   /** Fires when the user changes the text in the search box. */
   @JSName("onquerychanged")
   var onquerychanged_Original: TypedEventHandler[SearchPane, SearchPaneQueryChangedEventArgs] = js.native
   
   /** Fires when the user submits the text in the search box and the app needs to display search results. */
-  def onquerysubmitted(ev: SearchPaneQuerySubmittedEventArgs with WinRTEvent[SearchPane]): Unit = js.native
+  def onquerysubmitted(ev: SearchPaneQuerySubmittedEventArgs & WinRTEvent[SearchPane]): Unit = js.native
   /** Fires when the user submits the text in the search box and the app needs to display search results. */
   @JSName("onquerysubmitted")
   var onquerysubmitted_Original: TypedEventHandler[SearchPane, SearchPaneQuerySubmittedEventArgs] = js.native
   
   /** Fires when the user selects one of the suggested results that was provided by the app and displayed in the search pane. */
-  def onresultsuggestionchosen(ev: SearchPaneResultSuggestionChosenEventArgs with WinRTEvent[SearchPane]): Unit = js.native
+  def onresultsuggestionchosen(ev: SearchPaneResultSuggestionChosenEventArgs & WinRTEvent[SearchPane]): Unit = js.native
   /** Fires when the user selects one of the suggested results that was provided by the app and displayed in the search pane. */
   @JSName("onresultsuggestionchosen")
   var onresultsuggestionchosen_Original: TypedEventHandler[SearchPane, SearchPaneResultSuggestionChosenEventArgs] = js.native
   
   /** Fires when the user's query text changes and the app needs to provide new suggestions to display in the search pane. */
-  def onsuggestionsrequested(ev: SearchPaneSuggestionsRequestedEventArgs with WinRTEvent[SearchPane]): Unit = js.native
+  def onsuggestionsrequested(ev: SearchPaneSuggestionsRequestedEventArgs & WinRTEvent[SearchPane]): Unit = js.native
   /** Fires when the user's query text changes and the app needs to provide new suggestions to display in the search pane. */
   @JSName("onsuggestionsrequested")
   var onsuggestionsrequested_Original: TypedEventHandler[SearchPane, SearchPaneSuggestionsRequestedEventArgs] = js.native
   
   /** Fires when the user opens or closes the search pane. */
-  def onvisibilitychanged(ev: SearchPaneVisibilityChangedEventArgs with WinRTEvent[SearchPane]): Unit = js.native
+  def onvisibilitychanged(ev: SearchPaneVisibilityChangedEventArgs & WinRTEvent[SearchPane]): Unit = js.native
   /** Fires when the user opens or closes the search pane. */
   @JSName("onvisibilitychanged")
   var onvisibilitychanged_Original: TypedEventHandler[SearchPane, SearchPaneVisibilityChangedEventArgs] = js.native
@@ -77,7 +76,7 @@ trait SearchPane extends StObject {
   /** The current text in the search box of the search pane. */
   var queryText: String = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_querychanged(`type`: querychanged, listener: TypedEventHandler[SearchPane, SearchPaneQueryChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

@@ -5,7 +5,6 @@ import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusZoneFocusZoneMod {
@@ -157,8 +156,7 @@ object focusZoneFocusZoneMod {
     def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /** Used for testing purposes only. */
-    @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone.getOuterZones")
-    @js.native
-    def getOuterZones(): Double = js.native
+    @scala.inline
+    def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
   }
 }

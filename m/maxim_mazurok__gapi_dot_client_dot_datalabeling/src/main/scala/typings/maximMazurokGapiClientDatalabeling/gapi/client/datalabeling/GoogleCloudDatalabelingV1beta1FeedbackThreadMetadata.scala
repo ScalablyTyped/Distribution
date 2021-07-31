@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata extends StObject {
   
   /** When the thread is created */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** When the thread is last updated. */
-  var lastUpdateTime: js.UndefOr[String] = js.native
+  var lastUpdateTime: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** An image thumbnail of this thread. */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata {
   

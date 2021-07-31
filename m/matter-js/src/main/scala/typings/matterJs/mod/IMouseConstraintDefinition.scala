@@ -2,10 +2,8 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseConstraintDefinition extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IMouseConstraintDefinition extends StObject {
     * @type body
     * @default null
     */
-  var body: js.UndefOr[Body] = js.native
+  var body: js.UndefOr[Body] = js.undefined
   
   /**
     * An `Object` that specifies the collision filter properties.
@@ -25,7 +23,7 @@ trait IMouseConstraintDefinition extends StObject {
     * @property collisionFilter
     * @type object
     */
-  var collisionFilter: js.UndefOr[ICollisionFilter] = js.native
+  var collisionFilter: js.UndefOr[ICollisionFilter] = js.undefined
   
   /**
     * The `Constraint` object that is used to move the body during interaction.
@@ -33,7 +31,7 @@ trait IMouseConstraintDefinition extends StObject {
     * @property constraint
     * @type constraint
     */
-  var constraint: js.UndefOr[Constraint] = js.native
+  var constraint: js.UndefOr[Constraint] = js.undefined
   
   /**
     * The `Mouse` instance in use. If not supplied in `MouseConstraint.create`, one will be created.
@@ -42,7 +40,7 @@ trait IMouseConstraintDefinition extends StObject {
     * @type mouse
     * @default mouse
     */
-  var mouse: js.UndefOr[Mouse] = js.native
+  var mouse: js.UndefOr[Mouse] = js.undefined
   
   /**
     * A `String` denoting the type of object.
@@ -51,7 +49,7 @@ trait IMouseConstraintDefinition extends StObject {
     * @type string
     * @default "constraint"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IMouseConstraintDefinition {
   

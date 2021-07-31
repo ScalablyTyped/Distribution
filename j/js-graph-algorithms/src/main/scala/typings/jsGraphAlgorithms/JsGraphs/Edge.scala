@@ -2,27 +2,25 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
-  def either(): Double = js.native
+  def either(): Double
   
-  def from(): Double = js.native
+  def from(): Double
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  def other(x: Double): Double = js.native
+  def other(x: Double): Double
   
-  def to(): Double = js.native
+  def to(): Double
   
-  var v: js.Any = js.native
+  var v: js.Any
   
-  var w: js.Any = js.native
+  var w: js.Any
   
-  var weight: Double = js.native
+  var weight: Double
 }
 object Edge {
   

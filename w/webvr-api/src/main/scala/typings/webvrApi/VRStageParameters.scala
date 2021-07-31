@@ -3,17 +3,15 @@ package typings.webvrApi
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VRStageParameters extends StObject {
   
-  var sittingToStandingTransform: js.UndefOr[Float32Array] = js.native
+  var sittingToStandingTransform: js.UndefOr[Float32Array] = js.undefined
   
-  var sizeX: js.UndefOr[Double] = js.native
+  var sizeX: js.UndefOr[Double] = js.undefined
   
-  var sizeY: js.UndefOr[Double] = js.native
+  var sizeY: js.UndefOr[Double] = js.undefined
 }
 object VRStageParameters {
   

@@ -9,14 +9,12 @@ import typings.minappEnv.minappEnvStrings.hex
 import typings.minappEnv.minappEnvStrings.latin1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadFileOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ReadFileCompleteCallback] = js.native
+  var complete: js.UndefOr[ReadFileCompleteCallback] = js.undefined
   
   /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
     *
@@ -30,16 +28,16 @@ trait ReadFileOption extends StObject {
     * - 'latin1': ; */
   var encoding: js.UndefOr[
     ascii | base64 | binary | hex | `ucs2Slashucs-2Slashutf16leSlashutf-16le` | `utf-8Slashutf8` | latin1
-  ] = js.native
+  ] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ReadFileFailCallback] = js.native
+  var fail: js.UndefOr[ReadFileFailCallback] = js.undefined
   
   /** 要读取的文件的路径 */
-  var filePath: String = js.native
+  var filePath: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ReadFileSuccessCallback] = js.native
+  var success: js.UndefOr[ReadFileSuccessCallback] = js.undefined
 }
 object ReadFileOption {
   

@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instructs the speech synthesizer how to generate the output audio content.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2OutputAudioConfig extends StObject {
   
   /**
     * Required. Audio encoding of the synthesized audio content.
     */
-  var audioEncoding: js.UndefOr[String] = js.native
+  var audioEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The synthesis sample rate (in hertz) for this audio. If not
@@ -23,12 +21,12 @@ trait SchemaGoogleCloudDialogflowV2OutputAudioConfig extends StObject {
     * sample rate, then the synthesizer will honor this request by converting
     * to the desired sample rate (which might result in worse audio quality).
     */
-  var sampleRateHertz: js.UndefOr[Double] = js.native
+  var sampleRateHertz: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Configuration of how speech should be synthesized.
     */
-  var synthesizeSpeechConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig] = js.native
+  var synthesizeSpeechConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2OutputAudioConfig {
   

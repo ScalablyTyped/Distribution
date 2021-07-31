@@ -3,65 +3,63 @@ package typings.auth0Js.mod
 import typings.auth0Js.anon.Jwksuri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthOptions extends StObject {
   
-  var __tryLocalStorageFirst: js.UndefOr[Boolean] = js.native
+  var __tryLocalStorageFirst: js.UndefOr[Boolean] = js.undefined
   
-  var _csrf: js.UndefOr[String] = js.native
+  var _csrf: js.UndefOr[String] = js.undefined
   
-  var _disableDeprecationWarnings: js.UndefOr[Boolean] = js.native
+  var _disableDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var _intstate: js.UndefOr[String] = js.native
+  var _intstate: js.UndefOr[String] = js.undefined
   
-  var _sendTelemetry: js.UndefOr[Boolean] = js.native
+  var _sendTelemetry: js.UndefOr[Boolean] = js.undefined
   
-  var _telemetryInfo: js.UndefOr[js.Any] = js.native
+  var _telemetryInfo: js.UndefOr[js.Any] = js.undefined
   
-  var _timesToRetryFailedRequests: js.UndefOr[Double] = js.native
+  var _timesToRetryFailedRequests: js.UndefOr[Double] = js.undefined
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var clientID: String = js.native
+  var clientID: String
   
-  var domain: String = js.native
+  var domain: String
   
-  var jwksURI: js.UndefOr[String] = js.native
+  var jwksURI: js.UndefOr[String] = js.undefined
   
-  var leeway: js.UndefOr[Double] = js.native
+  var leeway: js.UndefOr[Double] = js.undefined
   
   /**
     * maximum elapsed time in seconds since the last time the user
     * was actively authenticated by the authorization server.
     */
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var overrides: js.UndefOr[Jwksuri] = js.native
+  var overrides: js.UndefOr[Jwksuri] = js.undefined
   
-  var plugins: js.UndefOr[js.Any] = js.native
+  var plugins: js.UndefOr[js.Any] = js.undefined
   
-  var popupOrigin: js.UndefOr[String] = js.native
+  var popupOrigin: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
   
-  var responseMode: js.UndefOr[String] = js.native
+  var responseMode: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var response_type: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var tenant: js.UndefOr[String] = js.native
+  var tenant: js.UndefOr[String] = js.undefined
   
-  var universalLoginPage: js.UndefOr[Boolean] = js.native
+  var universalLoginPage: js.UndefOr[Boolean] = js.undefined
 }
 object AuthOptions {
   

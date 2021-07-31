@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceInfo extends StObject {
   
   /** Drive file ID. */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /** Title of the resource, for example email subject, or document title. */
-  var resourceTitle: js.UndefOr[String] = js.native
+  var resourceTitle: js.UndefOr[String] = js.undefined
 }
 object ResourceInfo {
   

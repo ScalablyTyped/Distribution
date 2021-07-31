@@ -2,14 +2,12 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
-@js.native
 trait I18n extends StObject {
   
-  def lang(): String = js.native
+  def lang(): String
 }
 object I18n {
   

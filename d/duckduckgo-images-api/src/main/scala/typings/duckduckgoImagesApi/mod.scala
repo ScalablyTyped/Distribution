@@ -3,35 +3,35 @@ package typings.duckduckgoImagesApi
 import typings.duckduckgoImagesApi.anon.Iterations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("duckduckgo-images-api", "image_search")
+  @JSImport("duckduckgo-images-api", JSImport.Namespace)
   @js.native
-  def imageSearch(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("duckduckgo-images-api", "image_search_generator")
-  @js.native
-  def imageSearchGenerator(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = js.native
+  @scala.inline
+  def imageSearch(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
   
-  @js.native
+  @scala.inline
+  def imageSearchGenerator(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search_generator")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
+  
   trait DuckDuckGoImage extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var image: String = js.native
+    var image: String
     
-    var source: String = js.native
+    var source: String
     
-    var thumbnail: String = js.native
+    var thumbnail: String
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object DuckDuckGoImage {
     

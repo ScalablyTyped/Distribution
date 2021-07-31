@@ -2,7 +2,6 @@ package typings.winjs.mod.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("winjs", "UI.Command")
 @js.native
 class Command ()
-  extends typings.winjs.WinJS.UI.Command
+  extends StObject
+     with typings.winjs.WinJS.UI.Command
 object Command {
   
   @JSImport("winjs", "UI.Command")

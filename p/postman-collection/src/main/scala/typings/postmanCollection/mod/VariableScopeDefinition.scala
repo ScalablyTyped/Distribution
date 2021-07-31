@@ -2,13 +2,13 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableScopeDefinition extends PropertyDefinition {
+trait VariableScopeDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var values: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var values: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 object VariableScopeDefinition {
   

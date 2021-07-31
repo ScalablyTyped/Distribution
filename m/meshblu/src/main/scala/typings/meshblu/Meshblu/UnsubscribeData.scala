@@ -2,15 +2,13 @@ package typings.meshblu.Meshblu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsubscribeData extends StObject {
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object UnsubscribeData {
   

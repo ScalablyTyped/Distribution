@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiOptions extends StObject {
   
   /**
@@ -13,30 +11,30 @@ trait StockToolsGuiOptions extends StObject {
     * toolbar items. Each name refers to a unique key from the definitions
     * object.
     */
-  var buttons: js.UndefOr[js.Array[String]] = js.native
+  var buttons: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highstock) A CSS class name to apply to the stocktools' div, allowing
     * unique CSS styling for each chart.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) An options object of the buttons definitions. Each name
     * refers to unique key from buttons array.
     */
-  var definitions: js.UndefOr[StockToolsGuiDefinitionsOptions] = js.native
+  var definitions: js.UndefOr[StockToolsGuiDefinitionsOptions] = js.undefined
   
   /**
     * (Highstock) Enable or disable the stockTools gui.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) A CSS class name to apply to the container of buttons,
     * allowing unique CSS styling for each chart.
     */
-  var toolbarClassName: js.UndefOr[String] = js.native
+  var toolbarClassName: js.UndefOr[String] = js.undefined
 }
 object StockToolsGuiOptions {
   

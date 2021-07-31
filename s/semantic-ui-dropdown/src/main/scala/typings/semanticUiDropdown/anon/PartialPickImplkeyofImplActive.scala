@@ -2,50 +2,48 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.ClassNameSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplActive extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var addition: js.UndefOr[String] = js.native
+  var addition: js.UndefOr[String] = js.undefined
   
-  var animating: js.UndefOr[String] = js.native
+  var animating: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var dropdown: js.UndefOr[String] = js.native
+  var dropdown: js.UndefOr[String] = js.undefined
   
-  var filtered: js.UndefOr[String] = js.native
+  var filtered: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[String] = js.undefined
   
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var menu: js.UndefOr[String] = js.native
+  var menu: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var multiple: js.UndefOr[String] = js.native
+  var multiple: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
-  var selection: js.UndefOr[String] = js.native
+  var selection: js.UndefOr[String] = js.undefined
   
-  var upward: js.UndefOr[String] = js.native
+  var upward: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplActive {
   

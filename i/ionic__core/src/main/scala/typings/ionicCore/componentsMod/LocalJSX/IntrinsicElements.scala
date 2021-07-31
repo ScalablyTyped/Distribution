@@ -2,185 +2,183 @@ package typings.ionicCore.componentsMod.LocalJSX
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrinsicElements extends StObject {
   
-  var `ion-action-sheet`: IonActionSheet = js.native
+  var `ion-action-sheet`: IonActionSheet
   
-  var `ion-alert`: IonAlert = js.native
+  var `ion-alert`: IonAlert
   
-  var `ion-app`: IonApp = js.native
+  var `ion-app`: IonApp
   
-  var `ion-avatar`: IonAvatar = js.native
+  var `ion-avatar`: IonAvatar
   
-  var `ion-back-button`: IonBackButton = js.native
+  var `ion-back-button`: IonBackButton
   
-  var `ion-backdrop`: IonBackdrop = js.native
+  var `ion-backdrop`: IonBackdrop
   
-  var `ion-badge`: IonBadge = js.native
+  var `ion-badge`: IonBadge
   
-  var `ion-button`: IonButton = js.native
+  var `ion-button`: IonButton
   
-  var `ion-buttons`: IonButtons = js.native
+  var `ion-buttons`: IonButtons
   
-  var `ion-card`: IonCard = js.native
+  var `ion-card`: IonCard
   
-  var `ion-card-content`: IonCardContent = js.native
+  var `ion-card-content`: IonCardContent
   
-  var `ion-card-header`: IonCardHeader = js.native
+  var `ion-card-header`: IonCardHeader
   
-  var `ion-card-subtitle`: IonCardSubtitle = js.native
+  var `ion-card-subtitle`: IonCardSubtitle
   
-  var `ion-card-title`: IonCardTitle = js.native
+  var `ion-card-title`: IonCardTitle
   
-  var `ion-checkbox`: IonCheckbox = js.native
+  var `ion-checkbox`: IonCheckbox
   
-  var `ion-chip`: IonChip = js.native
+  var `ion-chip`: IonChip
   
-  var `ion-col`: IonCol = js.native
+  var `ion-col`: IonCol
   
-  var `ion-content`: IonContent = js.native
+  var `ion-content`: IonContent
   
-  var `ion-datetime`: IonDatetime = js.native
+  var `ion-datetime`: IonDatetime
   
-  var `ion-fab`: IonFab = js.native
+  var `ion-fab`: IonFab
   
-  var `ion-fab-button`: IonFabButton = js.native
+  var `ion-fab-button`: IonFabButton
   
-  var `ion-fab-list`: IonFabList = js.native
+  var `ion-fab-list`: IonFabList
   
-  var `ion-footer`: IonFooter = js.native
+  var `ion-footer`: IonFooter
   
-  var `ion-grid`: IonGrid = js.native
+  var `ion-grid`: IonGrid
   
-  var `ion-header`: IonHeader = js.native
+  var `ion-header`: IonHeader
   
-  var `ion-img`: IonImg = js.native
+  var `ion-img`: IonImg
   
-  var `ion-infinite-scroll`: IonInfiniteScroll = js.native
+  var `ion-infinite-scroll`: IonInfiniteScroll
   
-  var `ion-infinite-scroll-content`: IonInfiniteScrollContent = js.native
+  var `ion-infinite-scroll-content`: IonInfiniteScrollContent
   
-  var `ion-input`: IonInput = js.native
+  var `ion-input`: IonInput
   
-  var `ion-item`: IonItem = js.native
+  var `ion-item`: IonItem
   
-  var `ion-item-divider`: IonItemDivider = js.native
+  var `ion-item-divider`: IonItemDivider
   
-  var `ion-item-group`: IonItemGroup = js.native
+  var `ion-item-group`: IonItemGroup
   
-  var `ion-item-option`: IonItemOption = js.native
+  var `ion-item-option`: IonItemOption
   
-  var `ion-item-options`: IonItemOptions = js.native
+  var `ion-item-options`: IonItemOptions
   
-  var `ion-item-sliding`: IonItemSliding = js.native
+  var `ion-item-sliding`: IonItemSliding
   
-  var `ion-label`: IonLabel = js.native
+  var `ion-label`: IonLabel
   
-  var `ion-list`: IonList = js.native
+  var `ion-list`: IonList
   
-  var `ion-list-header`: IonListHeader = js.native
+  var `ion-list-header`: IonListHeader
   
-  var `ion-loading`: IonLoading = js.native
+  var `ion-loading`: IonLoading
   
-  var `ion-menu`: IonMenu = js.native
+  var `ion-menu`: IonMenu
   
-  var `ion-menu-button`: IonMenuButton = js.native
+  var `ion-menu-button`: IonMenuButton
   
-  var `ion-menu-toggle`: IonMenuToggle = js.native
+  var `ion-menu-toggle`: IonMenuToggle
   
-  var `ion-modal`: IonModal = js.native
+  var `ion-modal`: IonModal
   
-  var `ion-nav`: IonNav = js.native
+  var `ion-nav`: IonNav
   
-  var `ion-nav-link`: IonNavLink = js.native
+  var `ion-nav-link`: IonNavLink
   
-  var `ion-note`: IonNote = js.native
+  var `ion-note`: IonNote
   
-  var `ion-picker`: IonPicker = js.native
+  var `ion-picker`: IonPicker
   
-  var `ion-picker-column`: IonPickerColumn = js.native
+  var `ion-picker-column`: IonPickerColumn
   
-  var `ion-popover`: IonPopover = js.native
+  var `ion-popover`: IonPopover
   
-  var `ion-progress-bar`: IonProgressBar = js.native
+  var `ion-progress-bar`: IonProgressBar
   
-  var `ion-radio`: IonRadio = js.native
+  var `ion-radio`: IonRadio
   
-  var `ion-radio-group`: IonRadioGroup = js.native
+  var `ion-radio-group`: IonRadioGroup
   
-  var `ion-range`: IonRange = js.native
+  var `ion-range`: IonRange
   
-  var `ion-refresher`: IonRefresher = js.native
+  var `ion-refresher`: IonRefresher
   
-  var `ion-refresher-content`: IonRefresherContent = js.native
+  var `ion-refresher-content`: IonRefresherContent
   
-  var `ion-reorder`: IonReorder = js.native
+  var `ion-reorder`: IonReorder
   
-  var `ion-reorder-group`: IonReorderGroup = js.native
+  var `ion-reorder-group`: IonReorderGroup
   
-  var `ion-ripple-effect`: IonRippleEffect = js.native
+  var `ion-ripple-effect`: IonRippleEffect
   
-  var `ion-route`: IonRoute = js.native
+  var `ion-route`: IonRoute
   
-  var `ion-route-redirect`: IonRouteRedirect = js.native
+  var `ion-route-redirect`: IonRouteRedirect
   
-  var `ion-router`: IonRouter = js.native
+  var `ion-router`: IonRouter
   
-  var `ion-router-link`: IonRouterLink = js.native
+  var `ion-router-link`: IonRouterLink
   
-  var `ion-router-outlet`: IonRouterOutlet = js.native
+  var `ion-router-outlet`: IonRouterOutlet
   
-  var `ion-row`: IonRow = js.native
+  var `ion-row`: IonRow
   
-  var `ion-searchbar`: IonSearchbar = js.native
+  var `ion-searchbar`: IonSearchbar
   
-  var `ion-segment`: IonSegment = js.native
+  var `ion-segment`: IonSegment
   
-  var `ion-segment-button`: IonSegmentButton = js.native
+  var `ion-segment-button`: IonSegmentButton
   
-  var `ion-select`: IonSelect = js.native
+  var `ion-select`: IonSelect
   
-  var `ion-select-option`: IonSelectOption = js.native
+  var `ion-select-option`: IonSelectOption
   
-  var `ion-select-popover`: IonSelectPopover = js.native
+  var `ion-select-popover`: IonSelectPopover
   
-  var `ion-skeleton-text`: IonSkeletonText = js.native
+  var `ion-skeleton-text`: IonSkeletonText
   
-  var `ion-slide`: IonSlide = js.native
+  var `ion-slide`: IonSlide
   
-  var `ion-slides`: IonSlides = js.native
+  var `ion-slides`: IonSlides
   
-  var `ion-spinner`: IonSpinner = js.native
+  var `ion-spinner`: IonSpinner
   
-  var `ion-split-pane`: IonSplitPane = js.native
+  var `ion-split-pane`: IonSplitPane
   
-  var `ion-tab`: IonTab = js.native
+  var `ion-tab`: IonTab
   
-  var `ion-tab-bar`: IonTabBar = js.native
+  var `ion-tab-bar`: IonTabBar
   
-  var `ion-tab-button`: IonTabButton = js.native
+  var `ion-tab-button`: IonTabButton
   
-  var `ion-tabs`: IonTabs = js.native
+  var `ion-tabs`: IonTabs
   
-  var `ion-text`: IonText = js.native
+  var `ion-text`: IonText
   
-  var `ion-textarea`: IonTextarea = js.native
+  var `ion-textarea`: IonTextarea
   
-  var `ion-thumbnail`: IonThumbnail = js.native
+  var `ion-thumbnail`: IonThumbnail
   
-  var `ion-title`: IonTitle = js.native
+  var `ion-title`: IonTitle
   
-  var `ion-toast`: IonToast = js.native
+  var `ion-toast`: IonToast
   
-  var `ion-toggle`: IonToggle = js.native
+  var `ion-toggle`: IonToggle
   
-  var `ion-toolbar`: IonToolbar = js.native
+  var `ion-toolbar`: IonToolbar
   
-  var `ion-virtual-scroll`: IonVirtualScroll = js.native
+  var `ion-virtual-scroll`: IonVirtualScroll
 }
 object IntrinsicElements {
   

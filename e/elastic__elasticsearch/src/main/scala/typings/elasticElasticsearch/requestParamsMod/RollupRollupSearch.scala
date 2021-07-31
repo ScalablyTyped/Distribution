@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupRollupSearch[T] extends Generic {
+trait RollupRollupSearch[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var index: String | js.Array[String] = js.native
+  var index: String | js.Array[String]
   
-  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var typed_keys: js.UndefOr[Boolean] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.undefined
 }
 object RollupRollupSearch {
   
@@ -27,7 +27,7 @@ object RollupRollupSearch {
   }
   
   @scala.inline
-  implicit class RollupRollupSearchMutableBuilder[Self <: RollupRollupSearch[_], T] (val x: Self with RollupRollupSearch[T]) extends AnyVal {
+  implicit class RollupRollupSearchMutableBuilder[Self <: RollupRollupSearch[?], T] (val x: Self & RollupRollupSearch[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -13,39 +13,39 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of text field that displays the name of a database.
   * @see com.sun.star.text.TextField Only one of the properties {@link DataBaseName} , {@link DataBaseURL} and {@link DataBaseResource} should be set. If
   */
-@js.native
-trait DatabaseName extends DependentTextField {
+trait DatabaseName
+  extends StObject
+     with DependentTextField {
   
   /** specifies the database name. */
-  var DataBaseName: String = js.native
+  var DataBaseName: String
   
   /**
     * indicates a connection {@link URL} , which locates a database driver.
     * @since OOo 2.0
     */
-  var DataBaseResource: String = js.native
+  var DataBaseResource: String
   
   /**
     * indicates the {@link URL} of a database file.
     * @since OOo 2.0
     */
-  var DataBaseURL: String = js.native
+  var DataBaseURL: String
   
   /**
     * determines the interpretation of the property DataTableName.
     * @see com.sun.star.sdb.CommandType
     */
-  var DataCommandType: Double = js.native
+  var DataCommandType: Double
   
   /** contains the name of the database table, query or a statement depending on the DataCommandType property. */
-  var DataTableName: String = js.native
+  var DataTableName: String
 }
 object DatabaseName {
   

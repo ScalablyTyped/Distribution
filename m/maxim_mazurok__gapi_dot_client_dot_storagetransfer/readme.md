@@ -10,9 +10,9 @@ TypeScript typings for Storage Transfer API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.storagetransfer |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 53 |
+| # downloads        | 1129 |
 | # stars            | 0 |
 
 ## Links

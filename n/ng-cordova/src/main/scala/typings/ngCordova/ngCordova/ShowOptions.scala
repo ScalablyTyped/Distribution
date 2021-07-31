@@ -2,23 +2,21 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowOptions extends StObject {
   
-  var addCancelButtonWithLabel: js.UndefOr[String] = js.native
+  var addCancelButtonWithLabel: js.UndefOr[String] = js.undefined
   
-  var addDestructiveButtonWithLabel: js.UndefOr[String] = js.native
+  var addDestructiveButtonWithLabel: js.UndefOr[String] = js.undefined
   
-  var androidEnableCancelButton: js.UndefOr[Boolean] = js.native
+  var androidEnableCancelButton: js.UndefOr[Boolean] = js.undefined
   
-  var buttonLabels: js.UndefOr[js.Array[String]] = js.native
+  var buttonLabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var winphoneEnableCancelButton: js.UndefOr[Boolean] = js.native
+  var winphoneEnableCancelButton: js.UndefOr[Boolean] = js.undefined
 }
 object ShowOptions {
   

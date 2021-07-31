@@ -2,15 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeaseOptions extends AccessConditionsOptions {
+trait LeaseOptions
+  extends StObject
+     with AccessConditionsOptions {
   
-  var leaseDuration: js.UndefOr[String] = js.native
+  var leaseDuration: js.UndefOr[String] = js.undefined
   
-  var proposedLeaseId: js.UndefOr[String] = js.native
+  var proposedLeaseId: js.UndefOr[String] = js.undefined
 }
 object LeaseOptions {
   

@@ -6,7 +6,6 @@ import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.definitionsMod.INamespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {

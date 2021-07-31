@@ -2,7 +2,6 @@ package typings.i18nextNodeFsBackend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nextNodeFsBackEnd {
@@ -11,10 +10,9 @@ object i18nextNodeFsBackEnd {
     * @summary Options for "i18next".
     * @interface
     */
-  @js.native
   trait I18nextOptions extends StObject {
     
-    var backend: js.UndefOr[i18nextNodeFsBackEndOptions] = js.native
+    var backend: js.UndefOr[i18nextNodeFsBackEndOptions] = js.undefined
   }
   object I18nextOptions {
     
@@ -39,32 +37,31 @@ object i18nextNodeFsBackEnd {
     * @summary Options for "i18next-node-fs-backend".
     * @interface
     */
-  @js.native
   trait i18nextNodeFsBackEndOptions extends StObject {
     
     /**
       * @summary Path to post missing resources
       * @type {string}
       */
-    var addPath: String = js.native
+    var addPath: String
     
     /**
       * @summary jsonIndent to use when storing json files
       * @type {number}
       */
-    var jsonIndent: Double = js.native
+    var jsonIndent: Double
     
     /**
       * @summary Path where resources get loaded from.
       * @type {string}
       */
-    var loadPath: String = js.native
+    var loadPath: String
     
     /**
       * @summary custom parser
       * @type {function}
       */
-    var parse: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var parse: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
   }
   object i18nextNodeFsBackEndOptions {
     
@@ -87,7 +84,7 @@ object i18nextNodeFsBackEnd {
       def setLoadPath(value: String): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParse(value: /* data */ js.Any => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      def setParse(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       @scala.inline
       def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)

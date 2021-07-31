@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongRunningRecognizeMetadata extends StObject {
   
   /** Time of the most recent processing update. */
-  var lastUpdateTime: js.UndefOr[String] = js.native
+  var lastUpdateTime: js.UndefOr[String] = js.undefined
   
   /** Approximate percentage of audio processed thus far. Guaranteed to be 100 when the audio is fully processed and the results are available. */
-  var progressPercent: js.UndefOr[Double] = js.native
+  var progressPercent: js.UndefOr[Double] = js.undefined
   
   /** Time when the request was received. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The URI of the audio file being transcribed. Empty if the audio was sent as byte content. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object LongRunningRecognizeMetadata {
   

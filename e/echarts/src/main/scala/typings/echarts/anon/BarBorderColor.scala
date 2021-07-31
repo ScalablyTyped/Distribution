@@ -1,13 +1,13 @@
 package typings.echarts.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarBorderColor
-  extends /**
+  extends StObject
+     with /**
   * Some properties like "normal" or "emphasis" are not documented.
   * Please, write description for them
   */
@@ -21,7 +21,7 @@ trait BarBorderColor
     * '#000'
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderColor
     */
-  var barBorderColor: js.UndefOr[String] = js.native
+  var barBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * The radius of rounded corner.
@@ -36,7 +36,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderRadius
     */
-  var barBorderRadius: js.UndefOr[js.Array[_] | Double] = js.native
+  var barBorderRadius: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
   
   /**
     * The bodrder width of bar. defaults to have no border.
@@ -44,7 +44,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderWidth
     */
-  var barBorderWidth: js.UndefOr[Double] = js.native
+  var barBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Bar color. defaults to acquire colors from global palette
@@ -56,7 +56,7 @@ trait BarBorderColor
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.color
     */
-  var color: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.native
+  var color: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.undefined
   
   /**
     * Opacity of the component.
@@ -66,7 +66,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.opacity
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Size of shadow blur.
@@ -80,7 +80,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow color. Support same format as `color`.
@@ -88,7 +88,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowColor
     */
-  var shadowColor: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.native
+  var shadowColor: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.undefined
   
   /**
     * Offset distance on the horizontal direction of shadow.
@@ -96,7 +96,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Offset distance on the vertical direction of shadow.
@@ -104,7 +104,7 @@ trait BarBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }
 object BarBorderColor {
   
@@ -115,75 +115,63 @@ object BarBorderColor {
   }
   
   @scala.inline
-  implicit class BarBorderColorOps[Self <: BarBorderColor] (val x: Self) extends AnyVal {
+  implicit class BarBorderColorMutableBuilder[Self <: BarBorderColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarBorderColor(value: String): Self = StObject.set(x, "barBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarBorderColorUndefined: Self = StObject.set(x, "barBorderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarBorderRadius(value: js.Array[js.Any] | Double): Self = StObject.set(x, "barBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderColor(value: String): Self = this.set("barBorderColor", value.asInstanceOf[js.Any])
+    def setBarBorderRadiusUndefined: Self = StObject.set(x, "barBorderRadius", js.undefined)
     
     @scala.inline
-    def deleteBarBorderColor: Self = this.set("barBorderColor", js.undefined)
+    def setBarBorderRadiusVarargs(value: js.Any*): Self = StObject.set(x, "barBorderRadius", js.Array(value :_*))
     
     @scala.inline
-    def setBarBorderRadiusVarargs(value: js.Any*): Self = this.set("barBorderRadius", js.Array(value :_*))
+    def setBarBorderWidth(value: Double): Self = StObject.set(x, "barBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderRadius(value: js.Array[_] | Double): Self = this.set("barBorderRadius", value.asInstanceOf[js.Any])
+    def setBarBorderWidthUndefined: Self = StObject.set(x, "barBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteBarBorderRadius: Self = this.set("barBorderRadius", js.undefined)
+    def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderWidth(value: Double): Self = this.set("barBorderWidth", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBarBorderWidth: Self = this.set("barBorderWidth", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setShadowColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: typings.echarts.echarts.EChartOption.Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
-    
-    @scala.inline
-    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
   }
 }

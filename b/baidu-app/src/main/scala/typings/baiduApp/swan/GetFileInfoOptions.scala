@@ -2,21 +2,20 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 计算文件摘要的算法，默认值 md5，有效值：md5，sha1 */
-  var digestAlgorithm: js.UndefOr[String] = js.native
+  var digestAlgorithm: js.UndefOr[String] = js.undefined
   
   /** 本地文件路径 */
-  var filePath: String = js.native
+  var filePath: String
   
   @JSName("success")
-  var success_GetFileInfoOptions: js.UndefOr[js.Function1[/* options */ GetFileInfoSuccess, Unit]] = js.native
+  var success_GetFileInfoOptions: js.UndefOr[js.Function1[/* options */ GetFileInfoSuccess, Unit]] = js.undefined
 }
 object GetFileInfoOptions {
   

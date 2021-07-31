@@ -2,44 +2,42 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLSelection extends StObject {
   
   @JSName("MSHTML.IHTMLSelection_typekey")
-  var MSHTMLDotIHTMLSelection_typekey: IHTMLSelection = js.native
+  var MSHTMLDotIHTMLSelection_typekey: IHTMLSelection
   
-  def addRange(range: js.Any): Unit = js.native
+  def addRange(range: js.Any): Unit
   
-  val anchorNode: IHTMLDOMNode = js.native
+  val anchorNode: IHTMLDOMNode
   
-  val anchorOffset: Double = js.native
+  val anchorOffset: Double
   
-  def collapse(parentNode: js.Any, offfset: Double): Unit = js.native
+  def collapse(parentNode: js.Any, offfset: Double): Unit
   
-  def collapseToEnd(): Unit = js.native
+  def collapseToEnd(): Unit
   
-  def collapseToStart(): Unit = js.native
+  def collapseToStart(): Unit
   
-  def deleteFromDocument(): Unit = js.native
+  def deleteFromDocument(): Unit
   
-  val focusNode: IHTMLDOMNode = js.native
+  val focusNode: IHTMLDOMNode
   
-  val focusOffset: Double = js.native
+  val focusOffset: Double
   
-  def getRangeAt(index: Double): IHTMLDOMRange = js.native
+  def getRangeAt(index: Double): IHTMLDOMRange
   
-  val isCollapsed: Boolean = js.native
+  val isCollapsed: Boolean
   
-  val rangeCount: Double = js.native
+  val rangeCount: Double
   
-  def removeAllRanges(): Unit = js.native
+  def removeAllRanges(): Unit
   
-  def removeRange(range: js.Any): Unit = js.native
+  def removeRange(range: js.Any): Unit
   
-  def selectAllChildren(parentNode: js.Any): Unit = js.native
+  def selectAllChildren(parentNode: js.Any): Unit
 }
 object IHTMLSelection {
   

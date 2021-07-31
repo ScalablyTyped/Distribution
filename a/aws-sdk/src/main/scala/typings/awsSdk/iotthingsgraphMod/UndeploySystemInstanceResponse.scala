@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeploySystemInstanceResponse extends StObject {
   
   /**
     * An object that contains summary information about the system instance that was removed from its target.
     */
-  var summary: js.UndefOr[SystemInstanceSummary] = js.native
+  var summary: js.UndefOr[SystemInstanceSummary] = js.undefined
 }
 object UndeploySystemInstanceResponse {
   

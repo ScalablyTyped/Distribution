@@ -4,31 +4,33 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowableMod {
   
   @JSImport("rsocket-flowable/Flowable", JSImport.Default)
   @js.native
-  class default[T] protected () extends Flowable[T] {
+  class default[T] protected ()
+    extends StObject
+       with Flowable[T] {
     def this(source: Source[T]) = this()
     def this(source: Source[T], max: Double) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("rsocket-flowable/Flowable", "default.error")
+    @JSImport("rsocket-flowable/Flowable", JSImport.Default)
     @js.native
-    def error(error: Error): Flowable[scala.Nothing] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rsocket-flowable/Flowable", "default.just")
-    @js.native
-    def just[U](values: U*): Flowable[U] = js.native
+    @scala.inline
+    def error(error: Error): Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Flowable[scala.Nothing]]
     
-    @JSImport("rsocket-flowable/Flowable", "default.never")
-    @js.native
-    def never(): Flowable[scala.Nothing] = js.native
+    @scala.inline
+    def just[U](values: U*): Flowable[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(values.asInstanceOf[js.Any]).asInstanceOf[Flowable[U]]
+    
+    @scala.inline
+    def never(): Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Flowable[scala.Nothing]]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -38,7 +40,7 @@ object flowableMod {
     def lift[R](
       onSubscribeLift: js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ /* subscriber */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ js.Any
         ]
     ): Flowable[R] = js.native
     
@@ -48,7 +50,7 @@ object flowableMod {
     def subscribe(subscriberOrCallback: js.Function1[/* a */ T, Unit]): Unit = js.native
     def subscribe(
       subscriberOrCallback: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ js.Any
         ]
     ): Unit = js.native
     

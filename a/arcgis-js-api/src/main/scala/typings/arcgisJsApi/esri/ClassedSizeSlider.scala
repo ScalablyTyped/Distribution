@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassedSizeSlider extends SmartMappingSliderBase {
+trait ClassedSizeSlider
+  extends StObject
+     with SmartMappingSliderBase {
   
   /**
     * An array of class breaks with associated sizes.

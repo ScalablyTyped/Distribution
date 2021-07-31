@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureHealthCheckInput extends StObject {
   
   /**
     * The configuration information.
     */
-  var HealthCheck: typings.awsSdk.elbMod.HealthCheck = js.native
+  var HealthCheck: typings.awsSdk.elbMod.HealthCheck
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
 }
 object ConfigureHealthCheckInput {
   

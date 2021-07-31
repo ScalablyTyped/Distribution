@@ -2,11 +2,12 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShape extends INode {
+trait IShape
+  extends StObject
+     with INode {
   
   def applyLineJoin(): Unit = js.native
   
@@ -34,7 +35,7 @@ trait IShape extends INode {
   
   def intersects(point: js.Any): Boolean = js.native
   
-  def setDrawFunc(drawFunc: js.Function0[_]): js.Any = js.native
+  def setDrawFunc(drawFunc: js.Function0[js.Any]): js.Any = js.native
   
   def setFill(fill: String): js.Any = js.native
   

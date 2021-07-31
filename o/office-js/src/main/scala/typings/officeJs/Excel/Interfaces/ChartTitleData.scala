@@ -13,11 +13,9 @@ import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartTitle.toJSON()`. */
-@js.native
 trait ChartTitleData extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartTitleFormatData] = js.native
+  var format: js.UndefOr[ChartTitleFormatData] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.native
+  var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var overlay: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var position: js.UndefOr[ChartTitlePosition | Automatic | Top | Bottom | Left | Right] = js.native
+  var position: js.UndefOr[ChartTitlePosition | Automatic | Top | Bottom | Left | Right] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showShadow: js.UndefOr[Boolean] = js.native
+  var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait ChartTitleData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartTitleData {
   

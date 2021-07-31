@@ -12,7 +12,7 @@ A wrapper for jQuery Cycle 2
 | Keywords           | slideshow, carousel, jquery, cycle2 |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 16500 |
+| # downloads        | 19847 |
 | # stars            | 0 |
 
 ## Links

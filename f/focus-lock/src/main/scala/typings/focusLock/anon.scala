@@ -3,15 +3,13 @@ package typings.focusLock
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Node extends StObject {
     
-    var node: HTMLInputElement = js.native
+    var node: HTMLInputElement
   }
   object Node {
     

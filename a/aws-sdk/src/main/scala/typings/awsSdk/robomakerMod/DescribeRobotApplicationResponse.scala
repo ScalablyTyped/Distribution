@@ -2,51 +2,49 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRobotApplicationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the robot application.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the robot application was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The name of the robot application.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The revision id of the robot application.
     */
-  var revisionId: js.UndefOr[RevisionId] = js.native
+  var revisionId: js.UndefOr[RevisionId] = js.undefined
   
   /**
     * The robot software suite (ROS distribution) used by the robot application.
     */
-  var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.native
+  var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.undefined
   
   /**
     * The sources of the robot application.
     */
-  var sources: js.UndefOr[Sources] = js.native
+  var sources: js.UndefOr[Sources] = js.undefined
   
   /**
     * The list of all tags added to the specified robot application.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The version of the robot application.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object DescribeRobotApplicationResponse {
   

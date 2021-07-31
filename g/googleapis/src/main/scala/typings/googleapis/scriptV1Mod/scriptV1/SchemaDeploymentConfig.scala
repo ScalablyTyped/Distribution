@@ -2,34 +2,32 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata the defines how a deployment is configured.
   */
-@js.native
 trait SchemaDeploymentConfig extends StObject {
   
   /**
     * The description for this deployment.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The manifest file name for this deployment.
     */
-  var manifestFileName: js.UndefOr[String] = js.native
+  var manifestFileName: js.UndefOr[String] = js.undefined
   
   /**
     * The script project&#39;s Drive ID.
     */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
   
   /**
     * The version number on which this deployment is based.
     */
-  var versionNumber: js.UndefOr[Double] = js.native
+  var versionNumber: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeploymentConfig {
   

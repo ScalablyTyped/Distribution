@@ -10,9 +10,9 @@ A form input builder and validator for React
 | ------------------ | :-------------: |
 | Full name          | formsy-react |
 | Keywords           | form, forms, formsy, react, react-component, validation |
-| # releases         | 14 |
-| # dependents       | 50 |
-| # downloads        | 2687472 |
+| # releases         | 16 |
+| # dependents       | 74 |
+| # downloads        | 3182113 |
 | # stars            | 12 |
 
 ## Links

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects extends StObject {
   
   /**
     * Boolean which indicates if this criteria is enabled.
     */
-  var enabled: Input[Boolean] = js.native
+  var enabled: Input[Boolean]
 }
 object BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
   

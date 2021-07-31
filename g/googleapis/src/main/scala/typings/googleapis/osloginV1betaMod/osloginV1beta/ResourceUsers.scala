@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1beta", "oslogin_v1beta.Resource$Users")
@@ -33,7 +32,7 @@ class ResourceUsers protected () extends StObject {
     */
   def getLoginProfile(): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
-  def getLoginProfile(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLoginProfile] = js.native
+  def getLoginProfile(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile, callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
   def getLoginProfile(
@@ -66,7 +65,7 @@ class ResourceUsers protected () extends StObject {
     */
   def importSshPublicKey(): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]): Unit = js.native
-  def importSshPublicKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
+  def importSshPublicKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(params: ParamsResourceUsersImportsshpublickey): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(
     params: ParamsResourceUsersImportsshpublickey,

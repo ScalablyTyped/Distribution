@@ -2,16 +2,14 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListDataSourcesResponse extends StObject {
   
   /**
     * A previously created data source.
     */
-  var dataSource: js.UndefOr[js.Array[SchemaDataSource]] = js.native
+  var dataSource: js.UndefOr[js.Array[SchemaDataSource]] = js.undefined
 }
 object SchemaListDataSourcesResponse {
   

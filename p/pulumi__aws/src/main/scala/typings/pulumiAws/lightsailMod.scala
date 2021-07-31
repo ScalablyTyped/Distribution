@@ -15,7 +15,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightsailMod {
@@ -37,6 +36,10 @@ object lightsailMod {
   /* static members */
   object Domain {
     
+    @JSImport("@pulumi/aws/lightsail", "Domain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -46,26 +49,21 @@ object lightsailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailDomainMod.Domain = js.native
-    @JSImport("@pulumi/aws/lightsail", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = js.native
-    @JSImport("@pulumi/aws/lightsail", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.lightsailDomainMod.Domain = js.native
-    @JSImport("@pulumi/aws/lightsail", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailDomainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailDomainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailDomainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.lightsailDomainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailDomainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailDomainMod.Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail", "Domain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/domain.Domain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/domain.Domain */ Boolean]
   }
   
   @JSImport("@pulumi/aws/lightsail", "Instance")
@@ -85,6 +83,10 @@ object lightsailMod {
   /* static members */
   object Instance {
     
+    @JSImport("@pulumi/aws/lightsail", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Instance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,26 +96,21 @@ object lightsailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
-    @JSImport("@pulumi/aws/lightsail", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
-    @JSImport("@pulumi/aws/lightsail", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
-    @JSImport("@pulumi/aws/lightsail", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailInstanceMod.Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailInstanceMod.Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailInstanceMod.Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState): typings.pulumiAws.lightsailInstanceMod.Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailInstanceMod.Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailInstanceMod.Instance]
     
     /**
       * Returns true if the given object is an instance of Instance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail", "Instance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean]
   }
   
   @JSImport("@pulumi/aws/lightsail", "KeyPair")
@@ -129,11 +126,15 @@ object lightsailMod {
       */
     def this(name: String) = this()
     def this(name: String, args: KeyPairArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: KeyPairArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object KeyPair {
+    
+    @JSImport("@pulumi/aws/lightsail", "KeyPair")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing KeyPair resource's state with the given name, ID, and optional extra
@@ -144,26 +145,21 @@ object lightsailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
-    @JSImport("@pulumi/aws/lightsail", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
-    @JSImport("@pulumi/aws/lightsail", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyPairState): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
-    @JSImport("@pulumi/aws/lightsail", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailKeyPairMod.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailKeyPairMod.KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailKeyPairMod.KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyPairState): typings.pulumiAws.lightsailKeyPairMod.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailKeyPairMod.KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lightsailKeyPairMod.KeyPair]
     
     /**
       * Returns true if the given object is an instance of KeyPair.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail", "KeyPair.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean]
   }
   
   @JSImport("@pulumi/aws/lightsail", "StaticIp")
@@ -179,11 +175,15 @@ object lightsailMod {
       */
     def this(name: String) = this()
     def this(name: String, args: StaticIpArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StaticIpArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object StaticIp {
+    
+    @JSImport("@pulumi/aws/lightsail", "StaticIp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing StaticIp resource's state with the given name, ID, and optional extra
@@ -194,26 +194,21 @@ object lightsailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail", "StaticIp.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpMod.StaticIp = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIp.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIp.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StaticIpState): typings.pulumiAws.staticIpMod.StaticIp = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIp.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StaticIpState, opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpMod.StaticIp = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpMod.StaticIp]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpMod.StaticIp]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StaticIpState): typings.pulumiAws.staticIpMod.StaticIp = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpMod.StaticIp]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StaticIpState, opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpMod.StaticIp]
     
     /**
       * Returns true if the given object is an instance of StaticIp.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail", "StaticIp.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIp.StaticIp */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIp.StaticIp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/staticIp.StaticIp */ Boolean]
   }
   
   @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment")
@@ -233,6 +228,10 @@ object lightsailMod {
   /* static members */
   object StaticIpAttachment {
     
+    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StaticIpAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -242,25 +241,20 @@ object lightsailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StaticIpAttachmentState): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
-    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StaticIpAttachmentState): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment]
     
     /**
       * Returns true if the given object is an instance of StaticIpAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean]
   }
 }

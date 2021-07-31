@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object SearchBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SearchBar.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SearchBar = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
   
   /**
     * Creates and returns a new SearchBar instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object SearchBar {
     * of the parent GridBaseSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SearchBar.createInGridBaseSourceUnderSearchBar")
-  @js.native
-  def createInGridBaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridBaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = js.native
+  @scala.inline
+  def createInGridBaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridBaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridBaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
   
   /**
     * Creates and returns a new SearchBar instance in the SDK and on the server.
@@ -60,9 +57,8 @@ object SearchBar {
     * of the parent GridDatabaseSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SearchBar.createInGridDatabaseSourceUnderSearchBar")
-  @js.native
-  def createInGridDatabaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = js.native
+  @scala.inline
+  def createInGridDatabaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridDatabaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBar.structureTypeName")

@@ -3,32 +3,32 @@ package typings.microCors
 import typings.micro.mod.RequestHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("micro-cors", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function1[/* handler */ RequestHandler, RequestHandler] = js.native
-  @JSImport("micro-cors", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Function1[/* handler */ RequestHandler, RequestHandler] = js.native
+  @scala.inline
+  def apply(): js.Function1[/* handler */ RequestHandler, RequestHandler] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* handler */ RequestHandler, RequestHandler]]
+  @scala.inline
+  def apply(options: Options): js.Function1[/* handler */ RequestHandler, RequestHandler] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* handler */ RequestHandler, RequestHandler]]
   
+  @JSImport("micro-cors", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var allowCredentials: js.UndefOr[Boolean] = js.native
+    var allowCredentials: js.UndefOr[Boolean] = js.undefined
     
-    var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowMethods: js.UndefOr[js.Array[String]] = js.native
+    var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+    var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
   }
   object Options {
     

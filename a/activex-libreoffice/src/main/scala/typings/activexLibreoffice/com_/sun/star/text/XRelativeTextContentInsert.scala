@@ -4,29 +4,29 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to insert new text contents before or after existing text contents.
   * @deprecated Deprecated
   */
-@js.native
-trait XRelativeTextContentInsert extends XInterface {
+trait XRelativeTextContentInsert
+  extends StObject
+     with XInterface {
   
   /**
     * inserts text the new text content after the predecessor argument.
     *
     * This is helpful to insert paragraphs after text tables especially in headers, footers or text frames.
     */
-  def insertTextContentAfter(xNewContent: XTextContent, xPredecessor: XTextContent): Unit = js.native
+  def insertTextContentAfter(xNewContent: XTextContent, xPredecessor: XTextContent): Unit
   
   /**
     * inserts text the new text content before of the successor argument.
     *
     * This is helpful to insert paragraphs before of text tables.
     */
-  def insertTextContentBefore(xNewContent: XTextContent, xSuccessor: XTextContent): Unit = js.native
+  def insertTextContentBefore(xNewContent: XTextContent, xSuccessor: XTextContent): Unit
 }
 object XRelativeTextContentInsert {
   

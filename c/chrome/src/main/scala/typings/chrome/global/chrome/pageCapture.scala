@@ -3,7 +3,6 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.pageCapture.SaveDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,7 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pageCapture {
   
-  @JSGlobal("chrome.pageCapture.saveAsMHTML")
+  @JSGlobal("chrome.pageCapture")
   @js.native
-  def saveAsMHTML(details: SaveDetails, callback: js.Function1[/* mhtmlData */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def saveAsMHTML(details: SaveDetails, callback: js.Function1[/* mhtmlData */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAsMHTML")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

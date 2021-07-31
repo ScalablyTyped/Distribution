@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermFilter")
 @js.native
-class TermFilter protected () extends Filter {
+class TermFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Constructs a filter for docs matching the term added to this object.
     */

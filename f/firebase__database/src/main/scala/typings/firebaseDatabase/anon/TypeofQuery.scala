@@ -7,12 +7,12 @@ import typings.firebaseDatabase.queryParamsMod.QueryParams
 import typings.firebaseDatabase.repoMod.Repo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofQuery
-  extends Instantiable4[
+  extends StObject
+     with Instantiable4[
       /* repo */ Repo, 
       /* path */ typings.firebaseDatabase.pathMod.Path, 
       /* queryParams_ */ QueryParams, 

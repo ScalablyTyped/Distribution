@@ -2,13 +2,11 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableHeadRow extends StObject {
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
 }
 object MUIDataTableHeadRow {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a user changed event. */
-@js.native
 trait UserChangedEventArgs extends StObject {
   
   /** Gets the user. */
-  var user: User = js.native
+  var user: User
 }
 object UserChangedEventArgs {
   

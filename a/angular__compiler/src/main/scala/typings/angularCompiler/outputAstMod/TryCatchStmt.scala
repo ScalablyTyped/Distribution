@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "TryCatchStmt")
@@ -14,13 +13,13 @@ class TryCatchStmt protected () extends Statement {
   def this(
     bodyStmts: js.Array[Statement],
     catchStmts: js.Array[Statement],
-    sourceSpan: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
     leadingComments: js.Array[LeadingComment_]
   ) = this()
   def this(
     bodyStmts: js.Array[Statement],
     catchStmts: js.Array[Statement],
-    sourceSpan: Null,
+    sourceSpan: Unit,
     leadingComments: js.Array[LeadingComment_]
   ) = this()
   def this(

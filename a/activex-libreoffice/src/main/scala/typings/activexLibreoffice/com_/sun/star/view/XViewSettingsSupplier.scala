@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the view settings of the object. */
-@js.native
-trait XViewSettingsSupplier extends XInterface {
+trait XViewSettingsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns an interface to the {@link ViewSettings} .  Subclasses might be returned instead, offering more settings. */
-  val ViewSettings: XPropertySet = js.native
+  val ViewSettings: XPropertySet
   
   /** @returns an interface to the {@link ViewSettings} .  Subclasses might be returned instead, offering more settings. */
-  def getViewSettings(): XPropertySet = js.native
+  def getViewSettings(): XPropertySet
 }
 object XViewSettingsSupplier {
   

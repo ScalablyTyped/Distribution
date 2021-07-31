@@ -6,27 +6,27 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages secure stop messages. */
-@js.native
-trait IPlayReadySecureStopServiceRequest extends IPlayReadyServiceRequest {
+trait IPlayReadySecureStopServiceRequest
+  extends StObject
+     with IPlayReadyServiceRequest {
   
   /** Gets the current publisher certificate property. */
-  var publisherCertificate: Double = js.native
+  var publisherCertificate: Double
   
   /** Gets the secure stop session identifier property. */
-  var sessionID: String = js.native
+  var sessionID: String
   
   /** Gets the secure stop session's start time property. */
-  var startTime: Date = js.native
+  var startTime: Date
   
   /** Gets the secure stop session's stopped flag property which indicates whether the secure stop session for this request was cleanly shut down. */
-  var stopped: Boolean = js.native
+  var stopped: Boolean
   
   /** Gets the secure stop session's update/stop time property. */
-  var updateTime: Date = js.native
+  var updateTime: Date
 }
 object IPlayReadySecureStopServiceRequest {
   

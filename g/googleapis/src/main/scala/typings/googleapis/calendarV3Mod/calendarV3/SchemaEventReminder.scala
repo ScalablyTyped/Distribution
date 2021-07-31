@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaEventReminder extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait SchemaEventReminder extends StObject {
     * are ignored.  - &quot;popup&quot; - Reminders are sent via a UI popup.
     * Required when adding a reminder.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Number of minutes before the start of the event when the reminder should
     * trigger. Valid values are between 0 and 40320 (4 weeks in minutes).
     * Required when adding a reminder.
     */
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
 }
 object SchemaEventReminder {
   

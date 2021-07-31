@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a mapping from `string` to `string` */
-@js.native
-trait XStringMapping extends XInterface {
+trait XStringMapping
+  extends StObject
+     with XInterface {
   
   /** provides a mapping for a given sequence of strings to a sequence of belonging strings. */
-  def mapStrings(Parameter: js.Array[SeqEquiv[String]]): Boolean = js.native
+  def mapStrings(Parameter: js.Array[SeqEquiv[String]]): Boolean
 }
 object XStringMapping {
   

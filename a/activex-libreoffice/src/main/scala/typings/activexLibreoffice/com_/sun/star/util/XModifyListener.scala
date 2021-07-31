@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events when a model object changes. */
-@js.native
-trait XModifyListener extends XEventListener {
+trait XModifyListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when something changes in the object.
@@ -19,7 +19,7 @@ trait XModifyListener extends XEventListener {
     *
     * The source of the event may be the content of the object to which the listener is registered.
     */
-  def modified(aEvent: EventObject): Unit = js.native
+  def modified(aEvent: EventObject): Unit
 }
 object XModifyListener {
   

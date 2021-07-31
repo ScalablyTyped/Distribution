@@ -2,46 +2,44 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigurationSetResponse extends StObject {
   
   /**
     * The name of the configuration set.
     */
-  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.native
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
   /**
     * An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set.
     */
-  var DeliveryOptions: js.UndefOr[typings.awsSdk.sesv2Mod.DeliveryOptions] = js.native
+  var DeliveryOptions: js.UndefOr[typings.awsSdk.sesv2Mod.DeliveryOptions] = js.undefined
   
   /**
     * An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set.
     */
-  var ReputationOptions: js.UndefOr[typings.awsSdk.sesv2Mod.ReputationOptions] = js.native
+  var ReputationOptions: js.UndefOr[typings.awsSdk.sesv2Mod.ReputationOptions] = js.undefined
   
   /**
     * An object that defines whether or not Amazon SES can send email that you send using the configuration set.
     */
-  var SendingOptions: js.UndefOr[typings.awsSdk.sesv2Mod.SendingOptions] = js.native
+  var SendingOptions: js.UndefOr[typings.awsSdk.sesv2Mod.SendingOptions] = js.undefined
   
   /**
     * An object that contains information about the suppression list preferences for your account.
     */
-  var SuppressionOptions: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressionOptions] = js.native
+  var SuppressionOptions: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressionOptions] = js.undefined
   
   /**
     * An array of objects that define the tags (keys and values) that are associated with the configuration set.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * An object that defines the open and click tracking options for emails that you send using the configuration set.
     */
-  var TrackingOptions: js.UndefOr[typings.awsSdk.sesv2Mod.TrackingOptions] = js.native
+  var TrackingOptions: js.UndefOr[typings.awsSdk.sesv2Mod.TrackingOptions] = js.undefined
 }
 object GetConfigurationSetResponse {
   

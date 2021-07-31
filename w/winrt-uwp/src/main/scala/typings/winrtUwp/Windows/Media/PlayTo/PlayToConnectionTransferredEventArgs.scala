@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the Transferred event. */
-@js.native
 trait PlayToConnectionTransferredEventArgs extends StObject {
   
   /** Gets the current Play To source that a connection was transferred to. */
-  var currentSource: PlayToSource = js.native
+  var currentSource: PlayToSource
   
   /** Gets the previous Play To source that a connection was transferred from. */
-  var previousSource: PlayToSource = js.native
+  var previousSource: PlayToSource
 }
 object PlayToConnectionTransferredEventArgs {
   

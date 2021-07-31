@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * For Composite resources to define the parts
   */
-@js.native
-trait SearchParameterComponent extends BackboneElement {
+trait SearchParameterComponent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Defines how the part works
     */
-  var definition: Reference = js.native
+  var definition: Reference
   
   /**
     * Subexpression relative to main expression
     */
-  var expression: String = js.native
+  var expression: String
 }
 object SearchParameterComponent {
   

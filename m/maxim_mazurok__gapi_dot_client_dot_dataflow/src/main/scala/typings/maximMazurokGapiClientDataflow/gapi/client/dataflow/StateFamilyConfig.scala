@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateFamilyConfig extends StObject {
   
   /** If true, this family corresponds to a read operation. */
-  var isRead: js.UndefOr[Boolean] = js.native
+  var isRead: js.UndefOr[Boolean] = js.undefined
   
   /** The state family value. */
-  var stateFamily: js.UndefOr[String] = js.native
+  var stateFamily: js.UndefOr[String] = js.undefined
 }
 object StateFamilyConfig {
   

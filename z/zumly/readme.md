@@ -12,7 +12,7 @@ Javascript library for building zooming user interfaces
 | Keywords           | zumly, zooming, javascript, UI, library |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 399 |
+| # downloads        | 900 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFolderResponse extends StObject {
   
   /**
     * The metadata of the folder.
     */
-  var Metadata: js.UndefOr[FolderMetadata] = js.native
+  var Metadata: js.UndefOr[FolderMetadata] = js.undefined
 }
 object CreateFolderResponse {
   

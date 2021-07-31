@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.oauth2Server.oauth2ServerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Request () extends StObject {
   def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Request_[ParamsDictionary, _, _, Query]) = this()
+  def this(options: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
   
   var body: js.UndefOr[js.Any] = js.native
   

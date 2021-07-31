@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticGpusResult extends StObject {
   
   /**
     * Information about the Elastic Graphics accelerators.
     */
-  var ElasticGpuSet: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuSet] = js.native
+  var ElasticGpuSet: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuSet] = js.undefined
   
   /**
     * The total number of items to return. If the total number of items available is more than the value specified in max-items then a Next-Token will be provided in the output that you can use to resume pagination.
     */
-  var MaxResults: js.UndefOr[Integer] = js.native
+  var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeElasticGpusResult {
   

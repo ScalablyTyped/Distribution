@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProtocolClientCapabilities extends StObject {
   
-  var hostName: String = js.native
+  var hostName: String
   
-  var hostVersion: String = js.native
+  var hostVersion: String
 }
 object DataProtocolClientCapabilities {
   

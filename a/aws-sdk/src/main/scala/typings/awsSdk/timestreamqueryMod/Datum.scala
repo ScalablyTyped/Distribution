@@ -2,36 +2,34 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datum extends StObject {
   
   /**
     *  Indicates if the data point is an array. 
     */
-  var ArrayValue: js.UndefOr[DatumList] = js.native
+  var ArrayValue: js.UndefOr[DatumList] = js.undefined
   
   /**
     *  Indicates if the data point is null. 
     */
-  var NullValue: js.UndefOr[NullableBoolean] = js.native
+  var NullValue: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     *  Indicates if the data point is a row. 
     */
-  var RowValue: js.UndefOr[Row] = js.native
+  var RowValue: js.UndefOr[Row] = js.undefined
   
   /**
     *  Indicates if the data point is a scalar value such as integer, string, double, or boolean. 
     */
-  var ScalarValue: js.UndefOr[typings.awsSdk.timestreamqueryMod.ScalarValue] = js.native
+  var ScalarValue: js.UndefOr[typings.awsSdk.timestreamqueryMod.ScalarValue] = js.undefined
   
   /**
     *  Indicates if the data point is of timeseries data type. 
     */
-  var TimeSeriesValue: js.UndefOr[TimeSeriesDataPointList] = js.native
+  var TimeSeriesValue: js.UndefOr[TimeSeriesDataPointList] = js.undefined
 }
 object Datum {
   

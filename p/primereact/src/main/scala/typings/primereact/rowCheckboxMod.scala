@@ -4,7 +4,6 @@ import typings.primereact.anon.CheckedData
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowCheckboxMod {
@@ -21,12 +20,11 @@ object rowCheckboxMod {
     def this(props: RowCheckboxProps, context: js.Any) = this()
   }
   
-  @js.native
   trait RowCheckboxProps extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* e */ CheckedData, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ CheckedData, Unit]] = js.undefined
     
-    var rowData: js.UndefOr[js.Object] = js.native
+    var rowData: js.UndefOr[js.Object] = js.undefined
   }
   object RowCheckboxProps {
     

@@ -13,21 +13,21 @@ import typings.koaRouter.mod.Router
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Body extends OutputValidation {
+  trait Body
+    extends StObject
+       with OutputValidation {
     
-    var body: SchemaLike = js.native
+    var body: SchemaLike
   }
   object Body {
     
     @scala.inline
     def apply(): Body = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(body = null)
       __obj.asInstanceOf[Body]
     }
     
@@ -42,32 +42,31 @@ object anon {
     }
   }
   
-  @js.native
   trait ContinueOnError extends StObject {
     
-    var body: js.UndefOr[SchemaLike] = js.native
+    var body: js.UndefOr[SchemaLike] = js.undefined
     
-    var continueOnError: js.UndefOr[Boolean] = js.native
+    var continueOnError: js.UndefOr[Boolean] = js.undefined
     
-    var failure: js.UndefOr[Double] = js.native
+    var failure: js.UndefOr[Double] = js.undefined
     
-    var formOptions: js.UndefOr[Options] = js.native
+    var formOptions: js.UndefOr[Options] = js.undefined
     
-    var header: js.UndefOr[SchemaLike] = js.native
+    var header: js.UndefOr[SchemaLike] = js.undefined
     
-    var jsonOptions: js.UndefOr[Options] = js.native
+    var jsonOptions: js.UndefOr[Options] = js.undefined
     
-    var maxBody: js.UndefOr[Double] = js.native
+    var maxBody: js.UndefOr[Double] = js.undefined
     
-    var multipartOptions: js.UndefOr[Options] = js.native
+    var multipartOptions: js.UndefOr[Options] = js.undefined
     
-    var output: js.UndefOr[StringDictionary[OutputValidation]] = js.native
+    var output: js.UndefOr[StringDictionary[OutputValidation]] = js.undefined
     
-    var params: js.UndefOr[SchemaLike] = js.native
+    var params: js.UndefOr[SchemaLike] = js.undefined
     
-    var query: js.UndefOr[SchemaLike] = js.native
+    var query: js.UndefOr[SchemaLike] = js.undefined
     
-    var `type`: js.UndefOr[form | json | multipart] = js.native
+    var `type`: js.UndefOr[form | json | multipart] = js.undefined
   }
   object ContinueOnError {
     
@@ -169,22 +168,23 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(middleware: (IMiddleware[_, js.Object])*): Router[_, js.Object] = js.native
-    def apply(path: String, middleware: (IMiddleware[_, js.Object])*): Router[_, js.Object] = js.native
-    def apply(path: js.Array[String], middleware: (IMiddleware[_, js.Object])*): Router[_, js.Object] = js.native
-    def apply(path: RegExp, middleware: (IMiddleware[_, js.Object])*): Router[_, js.Object] = js.native
+    def apply(middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
+    def apply(path: String, middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
+    def apply(path: js.Array[String], middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
+    def apply(path: RegExp, middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
   }
   
-  @js.native
-  trait Headers extends OutputValidation {
+  trait Headers
+    extends StObject
+       with OutputValidation {
     
-    var headers: SchemaLike = js.native
+    var headers: SchemaLike
   }
   object Headers {
     
     @scala.inline
     def apply(): Headers = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(headers = null)
       __obj.asInstanceOf[Headers]
     }
     
@@ -200,5 +200,7 @@ object anon {
   }
   
   @js.native
-  trait TypeofJoi extends Root
+  trait TypeofJoi
+    extends StObject
+       with Root
 }

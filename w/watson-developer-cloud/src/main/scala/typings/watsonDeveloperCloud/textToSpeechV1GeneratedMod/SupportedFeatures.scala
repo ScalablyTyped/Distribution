@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the additional service features that are supported with the voice. */
-@js.native
 trait SupportedFeatures extends StObject {
   
   /** If `true`, the voice can be customized; if `false`, the voice cannot be customized. (Same as `customizable`.). */
-  var custom_pronunciation: Boolean = js.native
+  var custom_pronunciation: Boolean
   
   /** If `true`, the voice can be transformed by using the SSML &lt;voice-transformation&gt; element; if `false`, the voice cannot be transformed. */
-  var voice_transformation: Boolean = js.native
+  var voice_transformation: Boolean
 }
 object SupportedFeatures {
   

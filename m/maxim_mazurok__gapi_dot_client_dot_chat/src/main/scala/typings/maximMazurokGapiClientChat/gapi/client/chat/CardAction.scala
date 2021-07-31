@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardAction extends StObject {
   
   /** The label used to be displayed in the action menu item. */
-  var actionLabel: js.UndefOr[String] = js.native
+  var actionLabel: js.UndefOr[String] = js.undefined
   
   /** The onclick action for this action item. */
-  var onClick: js.UndefOr[OnClick] = js.native
+  var onClick: js.UndefOr[OnClick] = js.undefined
 }
 object CardAction {
   

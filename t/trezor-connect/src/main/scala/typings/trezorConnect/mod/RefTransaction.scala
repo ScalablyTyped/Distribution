@@ -2,27 +2,25 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefTransaction extends StObject {
   
-  var bin_outputs: js.Array[BinOutput] = js.native
+  var bin_outputs: js.Array[BinOutput]
   
-  var extra_data: js.UndefOr[String] = js.native
+  var extra_data: js.UndefOr[String] = js.undefined
   
-  var hash: String = js.native
+  var hash: String
   
-  var inputs: js.Array[Input] = js.native
+  var inputs: js.Array[Input]
   
-  var lock_time: js.UndefOr[Double] = js.native
+  var lock_time: js.UndefOr[Double] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var version_group_id: js.UndefOr[Double] = js.native
+  var version_group_id: js.UndefOr[Double] = js.undefined
 }
 object RefTransaction {
   

@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgResponsiveContainerMethods extends StObject {
   
   /**
@@ -16,29 +14,29 @@ trait IgResponsiveContainerMethods extends StObject {
     * @param reactionStep The sensitivity of the size change recognition.
     * @param reactionDirection The dimensions the changes of which to be traced.
     */
-  def addCallback(callback: js.Function, owner: js.Object, reactionStep: Double, reactionDirection: js.Object): Unit = js.native
+  def addCallback(callback: js.Function, owner: js.Object, reactionStep: Double, reactionDirection: js.Object): Unit
   
   /**
     * Destroys the ResponsiveContainer widget
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Removes a callback from the callbacks collection.
     *
     * @param callbackId The callback id to remove.
     */
-  def removeCallback(callbackId: Double): Unit = js.native
+  def removeCallback(callbackId: Double): Unit
   
   /**
     * Starts the automatic size check procedure
     */
-  def startPoller(): Unit = js.native
+  def startPoller(): Unit
   
   /**
     * Stops the automatic size check procedure
     */
-  def stopPoller(): Unit = js.native
+  def stopPoller(): Unit
 }
 object IgResponsiveContainerMethods {
   

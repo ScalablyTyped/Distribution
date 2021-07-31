@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSqlInjectionMatchSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafMod.ChangeToken
   
   /**
     * A friendly name or description for the SqlInjectionMatchSet that you're creating. You can't change Name after you create the SqlInjectionMatchSet.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
 }
 object CreateSqlInjectionMatchSetRequest {
   

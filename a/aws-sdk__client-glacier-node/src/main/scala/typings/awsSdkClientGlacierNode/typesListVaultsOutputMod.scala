@@ -5,29 +5,29 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListVaultsOutputMod {
   
-  @js.native
-  trait ListVaultsOutput extends _OutputTypesUnion {
+  trait ListVaultsOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The vault ARN at which to continue pagination of the results. You use the marker in another List Vaults request to obtain more vaults in the list.</p>
       */
-    var Marker: js.UndefOr[String] = js.native
+    var Marker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>List of vaults.</p>
       */
-    var VaultList: js.UndefOr[js.Array[UnmarshalledDescribeVaultOutput]] = js.native
+    var VaultList: js.UndefOr[js.Array[UnmarshalledDescribeVaultOutput]] = js.undefined
   }
   object ListVaultsOutput {
     

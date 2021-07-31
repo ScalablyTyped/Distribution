@@ -4,12 +4,10 @@ import typings.expressMyconnection.mysql.Connection
 import typings.expressMyconnection.mysql.MysqlError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Express {
   
-  @js.native
   trait Request extends StObject {
     
     var getConnection: js.UndefOr[
@@ -17,7 +15,7 @@ object Express {
           /* callback */ js.Function2[/* err */ MysqlError, /* connection */ Connection, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Request {
     

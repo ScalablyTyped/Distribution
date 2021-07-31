@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGatewayResponse extends StObject {
   
   /**
     * The ARN of the gateway, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId} 
     */
-  var gatewayArn: ARN = js.native
+  var gatewayArn: ARN
   
   /**
     * The ID of the gateway device. You can use this ID when you call other AWS IoT SiteWise APIs.
     */
-  var gatewayId: ID = js.native
+  var gatewayId: ID
 }
 object CreateGatewayResponse {
   

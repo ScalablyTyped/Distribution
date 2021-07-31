@@ -2,56 +2,54 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventsMessage extends StObject {
   
   /**
     * The duration of the events to be listed.
     */
-  var Duration: js.UndefOr[IntegerOptional] = js.native
+  var Duration: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The end time for the events to be listed.
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A list of event categories for the source type that you've chosen.
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * Filters applied to events.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     *  The identifier of an event source.
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The type of AWS DMS resource that generates events. Valid values: replication-instance | replication-task
     */
-  var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.undefined
   
   /**
     * The start time for the events to be listed.
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
 }
 object DescribeEventsMessage {
   

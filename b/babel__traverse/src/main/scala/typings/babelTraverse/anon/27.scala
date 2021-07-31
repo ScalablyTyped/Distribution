@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var `type`: File = js.native
+  var `type`: File
 }
 object `27` {
   
   @scala.inline
-  def apply(`type`: File): `27` = {
+  def apply(): `27` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("File")
     __obj.asInstanceOf[`27`]
   }
   

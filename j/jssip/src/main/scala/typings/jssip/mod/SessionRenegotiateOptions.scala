@@ -3,17 +3,15 @@ package typings.jssip.mod
 import typings.std.RTCOfferOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionRenegotiateOptions extends StObject {
   
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
-  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.native
+  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.undefined
   
-  var useUpdate: js.UndefOr[Boolean] = js.native
+  var useUpdate: js.UndefOr[Boolean] = js.undefined
 }
 object SessionRenegotiateOptions {
   

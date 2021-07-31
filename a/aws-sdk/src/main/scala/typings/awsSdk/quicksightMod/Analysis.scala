@@ -2,61 +2,59 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analysis extends StObject {
   
   /**
     * The ID of the analysis.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.native
+  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the analysis.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The time that the analysis was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The ARNs of the datasets of the analysis.
     */
-  var DataSetArns: js.UndefOr[DataSetArnsList] = js.native
+  var DataSetArns: js.UndefOr[DataSetArnsList] = js.undefined
   
   /**
     * Errors associated with the analysis.
     */
-  var Errors: js.UndefOr[AnalysisErrorList] = js.native
+  var Errors: js.UndefOr[AnalysisErrorList] = js.undefined
   
   /**
     * The time that the analysis was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The descriptive name of the analysis.
     */
-  var Name: js.UndefOr[AnalysisName] = js.native
+  var Name: js.UndefOr[AnalysisName] = js.undefined
   
   /**
     * A list of the associated sheets with the unique identifier and name of each sheet.
     */
-  var Sheets: js.UndefOr[SheetList] = js.native
+  var Sheets: js.UndefOr[SheetList] = js.undefined
   
   /**
     * Status associated with the analysis.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The ARN of the theme of the analysis.
     */
-  var ThemeArn: js.UndefOr[Arn] = js.native
+  var ThemeArn: js.UndefOr[Arn] = js.undefined
 }
 object Analysis {
   

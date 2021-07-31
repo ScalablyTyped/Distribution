@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an externalId entry.
   */
-@js.native
 trait SchemaUserExternalId extends StObject {
   
   /**
     * Custom type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the Id.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the id.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaUserExternalId {
   

@@ -2,7 +2,6 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,9 +41,9 @@ trait Record extends StObject {
     * @param Async [Async=false]
     */
   def DeleteRecord(): Unit = js.native
-  def DeleteRecord(Source: js.UndefOr[scala.Nothing], Async: Boolean): Unit = js.native
   def DeleteRecord(Source: String): Unit = js.native
   def DeleteRecord(Source: String, Async: Boolean): Unit = js.native
+  def DeleteRecord(Source: Unit, Async: Boolean): Unit = js.native
   
   def Fields(Index: String): Field = js.native
   def Fields(Index: Double): Field = js.native

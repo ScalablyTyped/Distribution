@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait TopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StOb
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/top)
     */
-  var top: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var top: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object TopProps {
   
@@ -25,7 +23,7 @@ object TopProps {
   }
   
   @scala.inline
-  implicit class TopPropsMutableBuilder[Self <: TopProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (TopProps[ThemeType, TVal])) extends AnyVal {
+  implicit class TopPropsMutableBuilder[Self <: TopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (TopProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])

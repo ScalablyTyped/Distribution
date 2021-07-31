@@ -2,14 +2,14 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @hidden
   */
-@js.native
-trait TwitterAuthProviderInstance extends AuthProvider {
+trait TwitterAuthProviderInstance
+  extends StObject
+     with AuthProvider {
   
   /**
     * Sets the OAuth custom parameters to pass in a Twitter OAuth request for popup
@@ -21,7 +21,7 @@ trait TwitterAuthProviderInstance extends AuthProvider {
     *     in the OAuth request.
     * @return The provider instance itself.
     */
-  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }
 object TwitterAuthProviderInstance {
   

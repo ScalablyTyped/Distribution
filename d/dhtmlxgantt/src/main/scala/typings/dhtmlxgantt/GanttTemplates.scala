@@ -3,7 +3,6 @@ package typings.dhtmlxgantt
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -104,7 +103,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to the specified resource and overlap start/end dates of the cell
     */
-  def histogram_cell_allocated(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): Unit = js.native
+  def histogram_cell_allocated(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): Unit = js.native
   
   /**
     * specifies the height of the line that defines the available capacity of the resource
@@ -113,7 +112,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to the specified resource and overlap start/end dates of the cell
     */
-  def histogram_cell_capacity(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): Unit = js.native
+  def histogram_cell_capacity(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): Unit = js.native
   
   /**
     * defines the CSS class which is applied to a cell of the resource panel
@@ -122,7 +121,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to the specified resource and overlap start/end dates of the cell
     */
-  def histogram_cell_class(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): Unit = js.native
+  def histogram_cell_class(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): Unit = js.native
   
   /**
     * defines the label inside a cell
@@ -131,7 +130,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to the specified resource and overlap start/end dates of the cell
     */
-  def histogram_cell_label(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): Unit = js.native
+  def histogram_cell_label(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): Unit = js.native
   
   /**
     * specifies the text assigned to tasks bars on the left side
@@ -208,7 +207,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to specified resource and overlap start/end dates of the cell
     */
-  def resource_cell_class(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): String = js.native
+  def resource_cell_class(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): String = js.native
   
   /**
     * defines the HTML content of resource timeline cells
@@ -217,7 +216,7 @@ trait GanttTemplates extends StObject {
     * @param resource the resource object
     * @param tasks tasks that are assigned to specified resource and overlap start/end dates of the cell
     */
-  def resource_cell_value(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[_]): String = js.native
+  def resource_cell_value(start_date: Date, end_date: Date, resource: js.Any, tasks: js.Array[js.Any]): String = js.native
   
   /**
     * specifies the text assigned to tasks bars on the right side

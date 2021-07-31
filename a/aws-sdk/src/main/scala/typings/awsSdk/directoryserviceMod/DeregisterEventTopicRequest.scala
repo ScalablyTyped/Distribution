@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterEventTopicRequest extends StObject {
   
   /**
     * The Directory ID to remove as a publisher. This directory will no longer send messages to the specified SNS topic.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The name of the SNS topic from which to remove the directory as a publisher.
     */
-  var TopicName: typings.awsSdk.directoryserviceMod.TopicName = js.native
+  var TopicName: typings.awsSdk.directoryserviceMod.TopicName
 }
 object DeregisterEventTopicRequest {
   

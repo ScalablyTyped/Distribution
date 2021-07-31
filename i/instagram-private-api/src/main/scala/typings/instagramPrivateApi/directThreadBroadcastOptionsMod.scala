@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tsXor.xorTypeMod.XOR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadBroadcastOptionsMod {
   
-  @js.native
   trait CreateThreadOptions extends StObject {
     
-    var userIds: (js.Array[String | Double]) | String | Double = js.native
+    var userIds: (js.Array[String | Double]) | String | Double
   }
   object CreateThreadOptions {
     
@@ -33,18 +31,17 @@ object directThreadBroadcastOptionsMod {
     }
   }
   
-  type DirectThreadBroadcastOptions = DirectTreadBroadcastBaseOptions with (XOR[ExistingThreadOptions, CreateThreadOptions])
+  type DirectThreadBroadcastOptions = DirectTreadBroadcastBaseOptions & (XOR[ExistingThreadOptions, CreateThreadOptions])
   
-  @js.native
   trait DirectTreadBroadcastBaseOptions extends StObject {
     
-    var form: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var form: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var item: String = js.native
+    var item: String
     
-    var qs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var qs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object DirectTreadBroadcastBaseOptions {
     
@@ -80,10 +77,9 @@ object directThreadBroadcastOptionsMod {
     }
   }
   
-  @js.native
   trait ExistingThreadOptions extends StObject {
     
-    var threadIds: (js.Array[String | Double]) | String | Double = js.native
+    var threadIds: (js.Array[String | Double]) | String | Double
   }
   object ExistingThreadOptions {
     

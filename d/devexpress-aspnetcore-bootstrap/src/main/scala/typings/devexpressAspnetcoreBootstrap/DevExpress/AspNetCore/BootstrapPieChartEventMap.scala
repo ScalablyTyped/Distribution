@@ -2,42 +2,42 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapPieChartEventMap extends ControlEventMap {
+trait BootstrapPieChartEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var disposing: BootstrapChartEventArgsBase = js.native
+  var disposing: BootstrapChartEventArgsBase
   
-  var done: BootstrapChartEventArgsBase = js.native
+  var done: BootstrapChartEventArgsBase
   
-  var drawn: BootstrapChartEventArgsBase = js.native
+  var drawn: BootstrapChartEventArgsBase
   
-  var exported: BootstrapChartEventArgsBase = js.native
+  var exported: BootstrapChartEventArgsBase
   
-  var exporting: BootstrapChartExportEventArgs = js.native
+  var exporting: BootstrapChartExportEventArgs
   
-  var fileSaving: BootstrapChartExportEventArgs = js.native
+  var fileSaving: BootstrapChartExportEventArgs
   
-  var incidentOccurred: BootstrapChartErrorEventArgs = js.native
+  var incidentOccurred: BootstrapChartErrorEventArgs
   
   @JSName("init")
-  var init_BootstrapPieChartEventMap: BootstrapChartEventArgsBase = js.native
+  var init_BootstrapPieChartEventMap: BootstrapChartEventArgsBase
   
-  var legendClick: BootstrapChartElementClickEventArgs = js.native
+  var legendClick: BootstrapChartElementClickEventArgs
   
-  var optionChanged: BootstrapChartOptionChangedEventArgs = js.native
+  var optionChanged: BootstrapChartOptionChangedEventArgs
   
-  var pointClick: BootstrapChartElementClickEventArgs = js.native
+  var pointClick: BootstrapChartElementClickEventArgs
   
-  var pointHoverChanged: BootstrapChartElementActionEventArgs = js.native
+  var pointHoverChanged: BootstrapChartElementActionEventArgs
   
-  var pointSelectionChanged: BootstrapChartElementActionEventArgs = js.native
+  var pointSelectionChanged: BootstrapChartElementActionEventArgs
   
-  var tooltipHidden: BootstrapChartElementActionEventArgs = js.native
+  var tooltipHidden: BootstrapChartElementActionEventArgs
   
-  var tooltipShown: BootstrapChartElementActionEventArgs = js.native
+  var tooltipShown: BootstrapChartElementActionEventArgs
 }
 object BootstrapPieChartEventMap {
   

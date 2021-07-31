@@ -2,20 +2,18 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * swan节点布局相交状态
   */
-@js.native
 trait CreateIntersectionObserverOption extends StObject {
   
-  var initialRatio: js.UndefOr[Double] = js.native
+  var initialRatio: js.UndefOr[Double] = js.undefined
   
-  var selectAll: js.UndefOr[Boolean] = js.native
+  var selectAll: js.UndefOr[Boolean] = js.undefined
   
-  var thresholds: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var thresholds: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object CreateIntersectionObserverOption {
   

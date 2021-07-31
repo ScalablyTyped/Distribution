@@ -4,7 +4,6 @@ import typings.std.HTMLElement
 import typings.youtube.YT.PlayerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -14,7 +13,8 @@ object global {
     @JSGlobal("YT.Player")
     @js.native
     class Player protected ()
-      extends typings.youtube.YT.Player {
+      extends StObject
+         with typings.youtube.YT.Player {
       /**
         * Initializes a new instance of the Player class.
         *

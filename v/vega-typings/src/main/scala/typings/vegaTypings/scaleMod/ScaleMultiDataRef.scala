@@ -3,13 +3,11 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleMultiDataRef extends StObject {
   
-  var fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef] = js.native
+  var fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]
 }
 object ScaleMultiDataRef {
   

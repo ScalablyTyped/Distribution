@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("text-to-svg", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TextToSVG {
+  class ^ protected ()
+    extends StObject
+       with TextToSVG {
     /**
       * Create an instance of the SVG generator, using an already parsed font file.
       *
@@ -22,6 +23,9 @@ object mod {
       */
     def this(font: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Font */ js.Any) = this()
   }
+  @JSImport("text-to-svg", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Asynchronously load a font from an URL and create a TextToSVG instance.
@@ -31,9 +35,8 @@ object mod {
     * @param callback called, when instance has been created
     */
   /* static member */
-  @JSImport("text-to-svg", "load")
-  @js.native
-  def load(url: String, callback: LoadCallback): Unit = js.native
+  @scala.inline
+  def load(url: String, callback: LoadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronously load a font from the filesystem and create a TextToSVG instance.
@@ -43,12 +46,10 @@ object mod {
     * @param file path to font file
     */
   /* static member */
-  @JSImport("text-to-svg", "loadSync")
-  @js.native
-  def loadSync(): TextToSVG = js.native
-  @JSImport("text-to-svg", "loadSync")
-  @js.native
-  def loadSync(file: String): TextToSVG = js.native
+  @scala.inline
+  def loadSync(): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")().asInstanceOf[TextToSVG]
+  @scala.inline
+  def loadSync(file: String): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(file.asInstanceOf[js.Any]).asInstanceOf[TextToSVG]
   
   /**
     * Text anchor.
@@ -137,47 +138,46 @@ object mod {
     def top: typings.textToSvg.textToSvgStrings.top = "top".asInstanceOf[typings.textToSvg.textToSvgStrings.top]
   }
   
-  @js.native
   trait FontOptions extends StObject {
     
     /**
       * @default "left baseline"
       */
-    var anchor: js.UndefOr[Anchor | Null] = js.native
+    var anchor: js.UndefOr[Anchor | Null] = js.undefined
     
     /**
       * Size of the text.
       * @default 72
       */
-    var fontSize: js.UndefOr[Double | Null] = js.native
+    var fontSize: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * If true takes kerning information into account.
       * @default true
       */
-    var kerning: js.UndefOr[Boolean | Null] = js.native
+    var kerning: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Letter-spacing value in em.
       */
-    var letterSpacing: js.UndefOr[Double | Null] = js.native
+    var letterSpacing: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Tracking value in (em / 1000).
       */
-    var tracking: js.UndefOr[Double | Null] = js.native
+    var tracking: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Horizontal position of the beginning of the text.
       * @default 0
       */
-    var x: js.UndefOr[Double | Null] = js.native
+    var x: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Vertical position of the baseline of the text.
       * @default 0
       */
-    var y: js.UndefOr[Double | Null] = js.native
+    var y: js.UndefOr[Double | Null] = js.undefined
   }
   object FontOptions {
     
@@ -255,13 +255,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait GenerationOptions extends FontOptions {
+  trait GenerationOptions
+    extends StObject
+       with FontOptions {
     
     /**
       * Key-value pairs of attributes for `<path>` element.
       */
-    var attributes: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var attributes: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   }
   object GenerationOptions {
     
@@ -287,22 +288,21 @@ object mod {
   
   type LoadCallback = js.Function2[/* error */ Error | Null, /* textToSVG */ TextToSVG | Null, Unit]
   
-  @js.native
   trait Metrics extends StObject {
     
-    var ascender: Double = js.native
+    var ascender: Double
     
-    var baseline: Double = js.native
+    var baseline: Double
     
-    var descender: Double = js.native
+    var descender: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Metrics {
     

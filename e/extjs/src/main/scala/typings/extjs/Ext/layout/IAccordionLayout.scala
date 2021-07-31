@@ -3,35 +3,35 @@ package typings.extjs.Ext.layout
 import typings.extjs.Ext.layout.container.IVBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAccordionLayout extends IVBox {
+trait IAccordionLayout
+  extends StObject
+     with IVBox {
   
   /** [Config Option] (Boolean) */
-  var activeOnTop: js.UndefOr[Boolean] = js.native
+  var activeOnTop: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapseFirst: js.UndefOr[Boolean] = js.native
+  var collapseFirst: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideCollapseTool: js.UndefOr[Boolean] = js.native
+  var hideCollapseTool: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var titleCollapse: js.UndefOr[Boolean] = js.native
+  var titleCollapse: js.UndefOr[Boolean] = js.undefined
 }
 object IAccordionLayout {
   

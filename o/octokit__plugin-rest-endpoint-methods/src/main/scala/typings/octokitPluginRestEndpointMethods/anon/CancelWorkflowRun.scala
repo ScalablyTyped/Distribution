@@ -2,105 +2,103 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelWorkflowRun extends StObject {
   
-  var addSelectedRepoToOrgSecret: Parameters = js.native
+  var addSelectedRepoToOrgSecret: Parameters
   
-  var cancelWorkflowRun: Response = js.native
+  var cancelWorkflowRun: Response
   
-  var createOrUpdateOrgSecret: ParametersResponse = js.native
+  var createOrUpdateOrgSecret: ParametersResponse
   
-  var createOrUpdateRepoSecret: ResponseOctokitResponse = js.native
+  var createOrUpdateRepoSecret: ResponseOctokitResponse
   
-  var createRegistrationTokenForOrg: ParametersResponseOctokitResponse = js.native
+  var createRegistrationTokenForOrg: ParametersResponseOctokitResponse
   
-  var createRegistrationTokenForRepo: `547` = js.native
+  var createRegistrationTokenForRepo: `547`
   
-  var createRemoveTokenForOrg: `548` = js.native
+  var createRemoveTokenForOrg: `548`
   
-  var createRemoveTokenForRepo: `549` = js.native
+  var createRemoveTokenForRepo: `549`
   
-  var createWorkflowDispatch: `550` = js.native
+  var createWorkflowDispatch: `550`
   
-  var deleteArtifact: `551` = js.native
+  var deleteArtifact: `551`
   
-  var deleteOrgSecret: `552` = js.native
+  var deleteOrgSecret: `552`
   
-  var deleteRepoSecret: `553` = js.native
+  var deleteRepoSecret: `553`
   
-  var deleteSelfHostedRunnerFromOrg: `554` = js.native
+  var deleteSelfHostedRunnerFromOrg: `554`
   
-  var deleteSelfHostedRunnerFromRepo: `555` = js.native
+  var deleteSelfHostedRunnerFromRepo: `555`
   
-  var deleteWorkflowRun: `556` = js.native
+  var deleteWorkflowRun: `556`
   
-  var deleteWorkflowRunLogs: `557` = js.native
+  var deleteWorkflowRunLogs: `557`
   
-  var downloadArtifact: `558` = js.native
+  var downloadArtifact: `558`
   
-  var downloadJobLogsForWorkflowRun: `559` = js.native
+  var downloadJobLogsForWorkflowRun: `559`
   
-  var downloadWorkflowRunLogs: `560` = js.native
+  var downloadWorkflowRunLogs: `560`
   
-  var getArtifact: `561` = js.native
+  var getArtifact: `561`
   
-  var getJobForWorkflowRun: `562` = js.native
+  var getJobForWorkflowRun: `562`
   
-  var getOrgPublicKey: `563` = js.native
+  var getOrgPublicKey: `563`
   
-  var getOrgSecret: `564` = js.native
+  var getOrgSecret: `564`
   
-  var getRepoPublicKey: `565` = js.native
+  var getRepoPublicKey: `565`
   
-  var getRepoSecret: `566` = js.native
+  var getRepoSecret: `566`
   
-  var getSelfHostedRunnerForOrg: `567` = js.native
+  var getSelfHostedRunnerForOrg: `567`
   
-  var getSelfHostedRunnerForRepo: `568` = js.native
+  var getSelfHostedRunnerForRepo: `568`
   
-  var getWorkflow: `569` = js.native
+  var getWorkflow: `569`
   
-  var getWorkflowRun: `570` = js.native
+  var getWorkflowRun: `570`
   
-  var getWorkflowRunUsage: `571` = js.native
+  var getWorkflowRunUsage: `571`
   
-  var getWorkflowUsage: `572` = js.native
+  var getWorkflowUsage: `572`
   
-  var listArtifactsForRepo: `573` = js.native
+  var listArtifactsForRepo: `573`
   
-  var listJobsForWorkflowRun: `574` = js.native
+  var listJobsForWorkflowRun: `574`
   
-  var listOrgSecrets: `575` = js.native
+  var listOrgSecrets: `575`
   
-  var listRepoSecrets: `576` = js.native
+  var listRepoSecrets: `576`
   
-  var listRepoWorkflows: `577` = js.native
+  var listRepoWorkflows: `577`
   
-  var listRunnerApplicationsForOrg: `578` = js.native
+  var listRunnerApplicationsForOrg: `578`
   
-  var listRunnerApplicationsForRepo: `579` = js.native
+  var listRunnerApplicationsForRepo: `579`
   
-  var listSelectedReposForOrgSecret: `580` = js.native
+  var listSelectedReposForOrgSecret: `580`
   
-  var listSelfHostedRunnersForOrg: `581` = js.native
+  var listSelfHostedRunnersForOrg: `581`
   
-  var listSelfHostedRunnersForRepo: `582` = js.native
+  var listSelfHostedRunnersForRepo: `582`
   
-  var listWorkflowRunArtifacts: `583` = js.native
+  var listWorkflowRunArtifacts: `583`
   
-  var listWorkflowRuns: `584` = js.native
+  var listWorkflowRuns: `584`
   
-  var listWorkflowRunsForRepo: `585` = js.native
+  var listWorkflowRunsForRepo: `585`
   
-  var reRunWorkflow: `586` = js.native
+  var reRunWorkflow: `586`
   
-  var removeSelectedRepoFromOrgSecret: `587` = js.native
+  var removeSelectedRepoFromOrgSecret: `587`
   
-  var setSelectedReposForOrgSecret: `588` = js.native
+  var setSelectedReposForOrgSecret: `588`
 }
 object CancelWorkflowRun {
   

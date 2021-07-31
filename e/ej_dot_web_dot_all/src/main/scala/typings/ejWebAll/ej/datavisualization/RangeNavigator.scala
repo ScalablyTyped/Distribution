@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeNavigator extends Widget_ {
+trait RangeNavigator
+  extends StObject
+     with Widget_ {
   
   /** destroy the range navigator widget
     * @returns {void}
@@ -30,15 +31,21 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Bold extends FontStyle
+    sealed trait Bold
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Normal extends FontStyle
+    sealed trait Normal
+      extends StObject
+         with FontStyle
   }
   
   @js.native
@@ -49,11 +56,15 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Lighter extends FontWeight
+    sealed trait Lighter
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Regular extends FontWeight
+    sealed trait Regular
+      extends StObject
+         with FontWeight
   }
   
   @js.native
@@ -64,15 +75,21 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Left extends HorizontalAlignment
+    sealed trait Left
+      extends StObject
+         with HorizontalAlignment
     
     //string
     @js.native
-    sealed trait Middle extends HorizontalAlignment
+    sealed trait Middle
+      extends StObject
+         with HorizontalAlignment
     
     //string
     @js.native
-    sealed trait Right extends HorizontalAlignment
+    sealed trait Right
+      extends StObject
+         with HorizontalAlignment
   }
   
   @js.native
@@ -83,31 +100,45 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Days extends IntervalType
+    sealed trait Days
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Hours extends IntervalType
+    sealed trait Hours
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Minutes extends IntervalType
+    sealed trait Minutes
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Months extends IntervalType
+    sealed trait Months
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Quarters extends IntervalType
+    sealed trait Quarters
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Weeks extends IntervalType
+    sealed trait Weeks
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Years extends IntervalType
+    sealed trait Years
+      extends StObject
+         with IntervalType
   }
   
   @js.native
@@ -118,11 +149,15 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Hide extends LabelIntersectAction
+    sealed trait Hide
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait None extends LabelIntersectAction
+    sealed trait None
+      extends StObject
+         with LabelIntersectAction
   }
   
   @js.native
@@ -133,11 +168,15 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Inside extends LabelPlacement
+    sealed trait Inside
+      extends StObject
+         with LabelPlacement
     
     //string
     @js.native
-    sealed trait Outside extends LabelPlacement
+    sealed trait Outside
+      extends StObject
+         with LabelPlacement
   }
   
   @js.native
@@ -148,11 +187,15 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Bottom extends Position
+    sealed trait Bottom
+      extends StObject
+         with Position
     
     //string
     @js.native
-    sealed trait Top extends Position
+    sealed trait Top
+      extends StObject
+         with Position
   }
   
   @js.native
@@ -163,19 +206,27 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Additional extends RangePadding
+    sealed trait Additional
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait None extends RangePadding
+    sealed trait None
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait Normal extends RangePadding
+    sealed trait Normal
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait Round extends RangePadding
+    sealed trait Round
+      extends StObject
+         with RangePadding
   }
   
   @js.native
@@ -186,27 +237,39 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait Area extends Type
+    sealed trait Area
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Line extends Type
+    sealed trait Line
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Spline extends Type
+    sealed trait Spline
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait SplineArea extends Type
+    sealed trait SplineArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StepArea extends Type
+    sealed trait StepArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StepLine extends Type
+    sealed trait StepLine
+      extends StObject
+         with Type
   }
   
   @js.native
@@ -217,30 +280,33 @@ object RangeNavigator {
     
     //string
     @js.native
-    sealed trait DateTime extends ValueType
+    sealed trait DateTime
+      extends StObject
+         with ValueType
     
     //string
     @js.native
-    sealed trait Numeric extends ValueType
+    sealed trait Numeric
+      extends StObject
+         with ValueType
   }
   
-  @js.native
   trait Border extends StObject {
     
     /** Border color of rangenavigator. When enable the scrollbar, the default color will be set as &quot;#B4B4B4&quot;.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Opacity of the rangeNavigator border.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the RangeNavigator border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Border {
     
@@ -273,24 +339,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -329,24 +394,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -385,20 +449,19 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettings extends StObject {
     
     /** Options for customizing the higher level labels in range navigator.
       */
-    var higherLevel: js.UndefOr[LabelSettingsHigherLevel] = js.native
+    var higherLevel: js.UndefOr[LabelSettingsHigherLevel] = js.undefined
     
     /** Options for customizing the labels in lower level.
       */
-    var lowerLevel: js.UndefOr[LabelSettingsLowerLevel] = js.native
+    var lowerLevel: js.UndefOr[LabelSettingsLowerLevel] = js.undefined
     
     /** Options for customizing the style of labels in range navigator.
       */
-    var style: js.UndefOr[LabelSettingsStyle] = js.native
+    var style: js.UndefOr[LabelSettingsStyle] = js.undefined
   }
   object LabelSettings {
     
@@ -431,50 +494,49 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsHigherLevel extends StObject {
     
     /** Options for customizing the border of grid lines in higher level.
       */
-    var border: js.UndefOr[LabelSettingsHigherLevelBorder] = js.native
+    var border: js.UndefOr[LabelSettingsHigherLevelBorder] = js.undefined
     
     /** Specifies the fill color of higher level labels.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the grid line colors, width, dashArray, border.
       */
-    var gridLineStyle: js.UndefOr[LabelSettingsHigherLevelGridLineStyle] = js.native
+    var gridLineStyle: js.UndefOr[LabelSettingsHigherLevelGridLineStyle] = js.undefined
     
     /** Specifies the intervalType for higher level labels. See
       * @Default {auto}
       */
-    var intervalType: js.UndefOr[IntervalType | String] = js.native
+    var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Specifies to hide the labels when it intersects with each other.
       * @Default {none}
       */
-    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.native
+    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the position of the labels to render either inside or outside of plot area
       * @Default {outside}
       */
-    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.native
+    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the labels in higher level
       * @Default {top}
       */
-    var position: js.UndefOr[Position | String] = js.native
+    var position: js.UndefOr[Position | String] = js.undefined
     
     /** Options for customizing the style of higher level labels.
       */
-    var style: js.UndefOr[LabelSettingsHigherLevelStyle] = js.native
+    var style: js.UndefOr[LabelSettingsHigherLevelStyle] = js.undefined
     
     /** Toggles the visibility of higher level labels.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object LabelSettingsHigherLevel {
     
@@ -543,18 +605,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsHigherLevelBorder extends StObject {
     
     /** Specifies the border color of grid lines.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of grid lines.
       * @Default {0.5}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsHigherLevelBorder {
     
@@ -581,23 +642,22 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsHigherLevelGridLineStyle extends StObject {
     
     /** Specifies the color of grid lines in higher level.
       * @Default {#B5B5B5}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the dashArray of grid lines in higher level.
       * @Default {20 5 0}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of grid lines in higher level.
       * @Default {#B5B5B5}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsHigherLevelGridLineStyle {
     
@@ -630,17 +690,16 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsHigherLevelStyle extends StObject {
     
     /** Options for customizing the font properties.
       */
-    var font: js.UndefOr[LabelSettingsHigherLevelStyleFont] = js.native
+    var font: js.UndefOr[LabelSettingsHigherLevelStyleFont] = js.undefined
     
     /** Specifies the horizontal text alignment of the text in label.
       * @Default {middle}
       */
-    var horizontalAlignment: js.UndefOr[String] = js.native
+    var horizontalAlignment: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsHigherLevelStyle {
     
@@ -667,38 +726,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsHigherLevelStyleFont extends StObject {
     
     /** Specifies the label font color. Labels render with the specified font color.
       * @Default {black}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font family. Labels render with the specified font family.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font style. Labels render with the specified font style.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font weight. Labels render with the specified font weight.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Specifies the label opacity. Labels render with the specified opacity.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label font size. Labels render with the specified font size.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsHigherLevelStyleFont {
     
@@ -749,50 +807,49 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsLowerLevel extends StObject {
     
     /** Options for customizing the border of grid lines in lower level.
       */
-    var border: js.UndefOr[LabelSettingsLowerLevelBorder] = js.native
+    var border: js.UndefOr[LabelSettingsLowerLevelBorder] = js.undefined
     
     /** Specifies the fill color of labels in lower level.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the grid lines in lower level.
       */
-    var gridLineStyle: js.UndefOr[LabelSettingsLowerLevelGridLineStyle] = js.native
+    var gridLineStyle: js.UndefOr[LabelSettingsLowerLevelGridLineStyle] = js.undefined
     
     /** Specifies the intervalType of the labels in lower level.See IntervalType
       * @Default {auto}
       */
-    var intervalType: js.UndefOr[IntervalType | String] = js.native
+    var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Specifies to hide the labels when it intersects with each other.
       * @Default {none}
       */
-    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.native
+    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the position of the labels to render either inside or outside of plot area. See LabelPlacement
       * @Default {outside}
       */
-    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.native
+    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the labels in lower level.See Position
       * @Default {bottom}
       */
-    var position: js.UndefOr[Position | String] = js.native
+    var position: js.UndefOr[Position | String] = js.undefined
     
     /** Options for customizing the style of labels.
       */
-    var style: js.UndefOr[LabelSettingsLowerLevelStyle] = js.native
+    var style: js.UndefOr[LabelSettingsLowerLevelStyle] = js.undefined
     
     /** Toggles the visibility of labels in lower level.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object LabelSettingsLowerLevel {
     
@@ -861,18 +918,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsLowerLevelBorder extends StObject {
     
     /** Specifies the border color of grid lines.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of grid lines.
       * @Default {0.5}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsLowerLevelBorder {
     
@@ -899,23 +955,22 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsLowerLevelGridLineStyle extends StObject {
     
     /** Specifies the color of grid lines in lower level.
       * @Default {#B5B5B5}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the dashArray of gridLines in lowerLevel.
       * @Default {20 5 0}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of grid lines in lower level.
       * @Default {#B5B5B5}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsLowerLevelGridLineStyle {
     
@@ -948,17 +1003,16 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsLowerLevelStyle extends StObject {
     
     /** Options for customizing the font of labels.
       */
-    var font: js.UndefOr[LabelSettingsLowerLevelStyleFont] = js.native
+    var font: js.UndefOr[LabelSettingsLowerLevelStyleFont] = js.undefined
     
     /** Specifies the horizontal text alignment of the text in label.
       * @Default {middle}
       */
-    var horizontalAlignment: js.UndefOr[String] = js.native
+    var horizontalAlignment: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsLowerLevelStyle {
     
@@ -985,38 +1039,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsLowerLevelStyleFont extends StObject {
     
     /** Specifies the color of labels. Label text render in this specified color.
       * @Default {black}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the font family of labels. Label text render in this specified font family.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font style of labels. Label text render in this specified font style.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the font weight of labels. Label text render in this specified font weight.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Specifies the opacity of labels. Label text render in this specified opacity.
       * @Default {12px}
       */
-    var opacity: js.UndefOr[String] = js.native
+    var opacity: js.UndefOr[String] = js.undefined
     
     /** Specifies the size of labels. Label text render in this specified size.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LabelSettingsLowerLevelStyleFont {
     
@@ -1067,17 +1120,16 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsStyle extends StObject {
     
     /** Options for customizing the font of labels in range navigator.
       */
-    var font: js.UndefOr[LabelSettingsStyleFont] = js.native
+    var font: js.UndefOr[LabelSettingsStyleFont] = js.undefined
     
     /** Specifies the horizontalAlignment of the label in RangeNavigator
       * @Default {middle}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
   }
   object LabelSettingsStyle {
     
@@ -1104,38 +1156,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LabelSettingsStyleFont extends StObject {
     
     /** Specifies the label color. This color is applied to the labels in range navigator.
       * @Default {#333333}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font family. Labels render with the specified font family.
       * @Default {Segoe UI}
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font opacity. Labels render with the specified font opacity.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label font size. Labels render with the specified font size.
       * @Default {1px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Specifies the label font style. Labels render with the specified font style..
       * @Default {Normal}
       */
-    var style: js.UndefOr[FontStyle | String] = js.native
+    var style: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the label font weight
       * @Default {regular}
       */
-    var weight: js.UndefOr[FontWeight | String] = js.native
+    var weight: js.UndefOr[FontWeight | String] = js.undefined
   }
   object LabelSettingsStyleFont {
     
@@ -1186,24 +1237,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1242,24 +1292,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait LoadedEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadedEventArgs {
     
@@ -1298,173 +1347,172 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the range of range navigator.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** It allows to show the value between the particular periods (i.e) from 1st January to 31st February and so on. The default value is true. If we set the property as false, it allows
       * to show the value between the particular periods.(i.e) from 1st January to 31st January and so on.
       * @Default {true}
       */
-    var allowNextValue: js.UndefOr[Boolean] = js.native
+    var allowNextValue: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the placement of slider exactly on the place it left or on the nearest interval.
       * @Default {false}
       */
-    var allowSnapping: js.UndefOr[Boolean] = js.native
+    var allowSnapping: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the color, opacity and width of the chart border.
       */
-    var border: js.UndefOr[Border] = js.native
+    var border: js.UndefOr[Border] = js.undefined
     
     /** Specifies the data source for range navigator.
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Fires, on double clicking the range of range navigator.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Enable the resize option in the rangenavigator.
       * @Default {false}
       */
-    var enableAutoResizing: js.UndefOr[Boolean] = js.native
+    var enableAutoResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the redrawing of chart on moving the sliders.
       * @Default {true}
       */
-    var enableDeferredUpdate: js.UndefOr[Boolean] = js.native
+    var enableDeferredUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the direction of rendering the range navigator control.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the scrollbar option in the rangenavigator.
       * @Default {false}
       */
-    var enableScrollbar: js.UndefOr[Boolean] = js.native
+    var enableScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /** Sets a value whether to make the range navigator responsive on resize.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the labels colors, font, style, size, horizontalAlignment and opacity.
       */
-    var labelSettings: js.UndefOr[LabelSettings] = js.native
+    var labelSettings: js.UndefOr[LabelSettings] = js.undefined
     
     /** Fires on load of range navigator.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Fires after range navigator is loaded.
       */
-    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.undefined
     
     /** This property is to specify the localization of range navigator.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the range navigator.
       */
-    var navigatorStyleSettings: js.UndefOr[NavigatorStyleSettings] = js.native
+    var navigatorStyleSettings: js.UndefOr[NavigatorStyleSettings] = js.undefined
     
     /** Padding specifies the gap between the container and the range navigator.
       * @Default {0}
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     /** Fires on changing the range of range navigator.
       */
-    var rangeChanged: js.UndefOr[js.Function1[/* e */ RangeChangedEventArgs, Unit]] = js.native
+    var rangeChanged: js.UndefOr[js.Function1[/* e */ RangeChangedEventArgs, Unit]] = js.undefined
     
     /** If the range is not given explicitly, range will be calculated automatically.
       * @Default {none}
       */
-    var rangePadding: js.UndefOr[RangePadding | String] = js.native
+    var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Options for customizing the starting and ending ranges.
       */
-    var rangeSettings: js.UndefOr[RangeSettings] = js.native
+    var rangeSettings: js.UndefOr[RangeSettings] = js.undefined
     
     /** Fires, on right clicking the range of range navigator.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Fires on changing the scrollbar position of range navigator.
       */
-    var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, Unit]] = js.native
+    var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, Unit]] = js.undefined
     
     /** Fires on changes ending the scrollbar position of range navigator.
       */
-    var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, Unit]] = js.native
+    var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, Unit]] = js.undefined
     
     /** Options for rendering scrollbar based on the start and end range values.
       */
-    var scrollRangeSettings: js.UndefOr[ScrollRangeSettings] = js.native
+    var scrollRangeSettings: js.UndefOr[ScrollRangeSettings] = js.undefined
     
     /** Fires on when starting to change the scrollbar position of range navigator.
       */
-    var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, Unit]] = js.native
+    var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, Unit]] = js.undefined
     
     /** selectedData is for getting the data when the &quot;rangeChanged&quot; event trigger from client side.
       */
-    var selectedData: js.UndefOr[js.Any] = js.native
+    var selectedData: js.UndefOr[js.Any] = js.undefined
     
     /** Fires when the selection  ends in the range navigator
       */
-    var selectedRangeEnd: js.UndefOr[js.Function1[/* e */ SelectedRangeEndEventArgs, Unit]] = js.native
+    var selectedRangeEnd: js.UndefOr[js.Function1[/* e */ SelectedRangeEndEventArgs, Unit]] = js.undefined
     
     /** Options for customizing the start and end range values.
       */
-    var selectedRangeSettings: js.UndefOr[SelectedRangeSettings] = js.native
+    var selectedRangeSettings: js.UndefOr[SelectedRangeSettings] = js.undefined
     
     /** Fires on when starting to change the slider position of range navigator.
       */
-    var selectedRangeStart: js.UndefOr[js.Function1[/* e */ SelectedRangeStartEventArgs, Unit]] = js.native
+    var selectedRangeStart: js.UndefOr[js.Function1[/* e */ SelectedRangeStartEventArgs, Unit]] = js.undefined
     
     /** Specifies the properties used for customizing the range series.
       */
-    var series: js.UndefOr[js.Array[Series]] = js.native
+    var series: js.UndefOr[js.Array[Series]] = js.undefined
     
     /** Specifies the  properties used for customizing all the range series.
       */
-    var seriesSettings: js.UndefOr[js.Array[SeriesSetting]] = js.native
+    var seriesSettings: js.UndefOr[js.Array[SeriesSetting]] = js.undefined
     
     /** Contains property to customize the hight and width of range navigator.
       */
-    var sizeSettings: js.UndefOr[SizeSettings] = js.native
+    var sizeSettings: js.UndefOr[SizeSettings] = js.undefined
     
     /** By specifying this property the user can change the theme of the range navigator.
       * @Default {null}
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the tooltip in range navigator.
       */
-    var tooltipSettings: js.UndefOr[TooltipSettings] = js.native
+    var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Options for configuring minor grid lines, major grid lines, axis line of axis.
       */
-    var valueAxisSettings: js.UndefOr[ValueAxisSettings] = js.native
+    var valueAxisSettings: js.UndefOr[ValueAxisSettings] = js.undefined
     
     /** You can plot data of type date time or numeric. This property determines the type of data that this axis will handle.
       * @Default {datetime}
       */
-    var valueType: js.UndefOr[ValueType | String] = js.native
+    var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Specifies the xName for dataSource. This is used to take the x values from dataSource
       */
-    var xName: js.UndefOr[js.Any] = js.native
+    var xName: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the yName for dataSource. This is used to take the y values from dataSource
       */
-    var yName: js.UndefOr[js.Any] = js.native
+    var yName: js.UndefOr[js.Any] = js.undefined
   }
   object Model {
     
@@ -1713,83 +1761,82 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettings extends StObject {
     
     /** Specifies the background color of range navigator.
       * @Default {#dddddd}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the border color and width of range navigator.
       */
-    var border: js.UndefOr[NavigatorStyleSettingsBorder] = js.native
+    var border: js.UndefOr[NavigatorStyleSettingsBorder] = js.undefined
     
     /** Contains the options for highlighting the range navigator on mouse over.
       */
-    var highlightSettings: js.UndefOr[NavigatorStyleSettingsHighlightSettings] = js.native
+    var highlightSettings: js.UndefOr[NavigatorStyleSettingsHighlightSettings] = js.undefined
     
     /** Specifies the left side thumb template in range navigator we can give either div id or HTML string
       * @Default {null}
       */
-    var leftThumbTemplate: js.UndefOr[String] = js.native
+    var leftThumbTemplate: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the major grid lines.
       */
-    var majorGridLineStyle: js.UndefOr[NavigatorStyleSettingsMajorGridLineStyle] = js.native
+    var majorGridLineStyle: js.UndefOr[NavigatorStyleSettingsMajorGridLineStyle] = js.undefined
     
     /** Options for customizing the minor grid lines.
       */
-    var minorGridLineStyle: js.UndefOr[NavigatorStyleSettingsMinorGridLineStyle] = js.native
+    var minorGridLineStyle: js.UndefOr[NavigatorStyleSettingsMinorGridLineStyle] = js.undefined
     
     /** Specifies the opacity of RangeNavigator.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the right side thumb template in range navigator we can give either div id or HTML string
       * @Default {null}
       */
-    var rightThumbTemplate: js.UndefOr[String] = js.native
+    var rightThumbTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the color of the selected region in range navigator.
       * @Default {#EFEFEF}
       */
-    var selectedRegionColor: js.UndefOr[String] = js.native
+    var selectedRegionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the opacity of Selected Region.
       * @Default {0}
       */
-    var selectedRegionOpacity: js.UndefOr[Double] = js.native
+    var selectedRegionOpacity: js.UndefOr[Double] = js.undefined
     
     /** Contains the options for selection the range navigator on mouse over.
       */
-    var selectionSettings: js.UndefOr[NavigatorStyleSettingsSelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[NavigatorStyleSettingsSelectionSettings] = js.undefined
     
     /** Specifies the color of the thumb in range navigator.
       * @Default {#2382C3}
       */
-    var thumbColor: js.UndefOr[String] = js.native
+    var thumbColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the radius of the thumb in range navigator.
       * @Default {10}
       */
-    var thumbRadius: js.UndefOr[Double] = js.native
+    var thumbRadius: js.UndefOr[Double] = js.undefined
     
     /** Specifies the stroke color of the thumb in range navigator.
       * @Default {#303030}
       */
-    var thumbStroke: js.UndefOr[String] = js.native
+    var thumbStroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the color of the unselected region in range navigator.
       * @Default {#5EABDE}
       */
-    var unselectedRegionColor: js.UndefOr[String] = js.native
+    var unselectedRegionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the opacity of Unselected Region.
       * @Default {0.3}
       */
-    var unselectedRegionOpacity: js.UndefOr[Double] = js.native
+    var unselectedRegionOpacity: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettings {
     
@@ -1900,23 +1947,22 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsBorder extends StObject {
     
     /** Specifies the border color of range navigator.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the dash array of range navigator.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of range navigator.
       * @Default {0.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettingsBorder {
     
@@ -1949,27 +1995,26 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsHighlightSettings extends StObject {
     
     /** Contains the border properties for highlighting rectangle.
       */
-    var border: js.UndefOr[NavigatorStyleSettingsHighlightSettingsBorder] = js.native
+    var border: js.UndefOr[NavigatorStyleSettingsHighlightSettingsBorder] = js.undefined
     
     /** To set the color to the highlight.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Enable the highlight settings in range navigator.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To set the opacity to the highlight.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettingsHighlightSettings {
     
@@ -2008,18 +2053,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsHighlightSettingsBorder extends StObject {
     
     /** To set the border color to the highlight.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** To set the border width to the highlight.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettingsHighlightSettingsBorder {
     
@@ -2046,18 +2090,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsMajorGridLineStyle extends StObject {
     
     /** Specifies the color of major grid lines in range navigator.
       * @Default {#B5B5B5}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of major grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object NavigatorStyleSettingsMajorGridLineStyle {
     
@@ -2084,18 +2127,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsMinorGridLineStyle extends StObject {
     
     /** Specifies the color of minor grid lines in range navigator.
       * @Default {#B5B5B5}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of minor grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object NavigatorStyleSettingsMinorGridLineStyle {
     
@@ -2122,27 +2164,26 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsSelectionSettings extends StObject {
     
     /** Contains the border properties for selecting the rectangle.
       */
-    var border: js.UndefOr[NavigatorStyleSettingsSelectionSettingsBorder] = js.native
+    var border: js.UndefOr[NavigatorStyleSettingsSelectionSettingsBorder] = js.undefined
     
     /** To set the color to the selection.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Enable the selection settings in range navigator.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To set the opacity to the selection.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettingsSelectionSettings {
     
@@ -2181,18 +2222,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait NavigatorStyleSettingsSelectionSettingsBorder extends StObject {
     
     /** To set the border color to the selection.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** To set the border width to the selection.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NavigatorStyleSettingsSelectionSettingsBorder {
     
@@ -2219,24 +2259,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait RangeChangedEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RangeChangedEventArgs {
     
@@ -2275,18 +2314,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait RangeSettings extends StObject {
     
     /** Specifies the ending range of range navigator.
       * @Default {null}
       */
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
     /** Specifies the starting range of range navigator.
       * @Default {null}
       */
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
   }
   object RangeSettings {
     
@@ -2313,24 +2351,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.native
+    var Data: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -2369,32 +2406,31 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ScrollChangedEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scrollbar position new start and end range value on changing scrollbar
       */
-    var dataNewRange: js.UndefOr[js.Any] = js.native
+    var dataNewRange: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scrollbar position old start and end range value on changing scrollbar
       */
-    var dataOldRange: js.UndefOr[js.Any] = js.native
+    var dataOldRange: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollChangedEventArgs {
     
@@ -2445,32 +2481,31 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ScrollEndEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scrollbar position new start and end range value on change end of scrollbar
       */
-    var dataNewRange: js.UndefOr[js.Any] = js.native
+    var dataNewRange: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scrollbar position old start and end range value on change end of scrollbar
       */
-    var dataOldRange: js.UndefOr[js.Any] = js.native
+    var dataOldRange: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollEndEventArgs {
     
@@ -2521,18 +2556,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ScrollRangeSettings extends StObject {
     
     /** Specifies the ending range of range navigator scrollbar and that should be greater than the rangenavigator datasource end value.
       * @Default {null}
       */
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
     /** Specifies the starting range of range navigator scrollbar and that should be less than the rangenavigator datasource start value.
       * @Default {null}
       */
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
   }
   object ScrollRangeSettings {
     
@@ -2559,32 +2593,31 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ScrollStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scrollbar position end range value on changing scrollbar
       */
-    var dataEndRange: js.UndefOr[String] = js.native
+    var dataEndRange: js.UndefOr[String] = js.undefined
     
     /** returns the scrollbar position starting range value on changing scrollbar
       */
-    var dataStartRange: js.UndefOr[String] = js.native
+    var dataStartRange: js.UndefOr[String] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollStartEventArgs {
     
@@ -2635,24 +2668,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait SelectedRangeEndEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SelectedRangeEndEventArgs {
     
@@ -2691,18 +2723,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait SelectedRangeSettings extends StObject {
     
     /** Specifies the ending range of range navigator.
       * @Default {null}
       */
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
     /** Specifies the starting range of range navigator.
       * @Default {null}
       */
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
   }
   object SelectedRangeSettings {
     
@@ -2729,24 +2760,23 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait SelectedRangeStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SelectedRangeStartEventArgs {
     
@@ -2785,38 +2815,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait Series extends StObject {
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Enable/disable the animation of series.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Fill color of the series.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the type of the series to render in chart.
       * @Default {column. see Type}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
   }
   object Series {
     
@@ -2867,38 +2896,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait SeriesSetting extends StObject {
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Enable/disable the animation of series.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Fill color of the series.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the type of the series to render in chart.
       * @Default {column. see Type}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
   }
   object SeriesSetting {
     
@@ -2949,18 +2977,17 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait SizeSettings extends StObject {
     
     /** Specifies height of the range navigator.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies width of the range navigator.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SizeSettings {
     
@@ -2987,32 +3014,31 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait TooltipSettings extends StObject {
     
     /** Specifies the background color of tooltip.
       * @Default {#303030}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the font in tooltip.
       */
-    var font: js.UndefOr[TooltipSettingsFont] = js.native
+    var font: js.UndefOr[TooltipSettingsFont] = js.undefined
     
     /** Specifies the format of text to be displayed in tooltip.
       * @Default {MM/dd/yyyy}
       */
-    var labelFormat: js.UndefOr[String] = js.native
+    var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of displaying the tooltip. Neither to display the tooltip always nor on demand.
       * @Default {null}
       */
-    var tooltipDisplayMode: js.UndefOr[String] = js.native
+    var tooltipDisplayMode: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of tooltip.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object TooltipSettings {
     
@@ -3057,38 +3083,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait TooltipSettingsFont extends StObject {
     
     /** Specifies the color of text in tooltip. Tooltip text render in the specified color.
       * @Default {#FFFFFF}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the font family of text in tooltip. Tooltip text render in the specified font family.
       * @Default {Segoe UI}
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /** Specifies the font style of text in tooltip. Tooltip text render in the specified font style.
       * @Default {ej.datavisualization.RangeNavigator.fontStyle.Normal}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the opacity of text in tooltip. Tooltip text render in the specified opacity.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the size of text in tooltip. Tooltip text render in the specified size.
       * @Default {10px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Specifies the weight of text in tooltip. Tooltip text render in the specified weight.
       * @Default {ej.datavisualization.RangeNavigator.weight.Regular}
       */
-    var weight: js.UndefOr[String] = js.native
+    var weight: js.UndefOr[String] = js.undefined
   }
   object TooltipSettingsFont {
     
@@ -3139,38 +3164,37 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettings extends StObject {
     
     /** Options for customizing the axis line.
       */
-    var axisLine: js.UndefOr[ValueAxisSettingsAxisLine] = js.native
+    var axisLine: js.UndefOr[ValueAxisSettingsAxisLine] = js.undefined
     
     /** Options for customizing the font of the axis.
       */
-    var font: js.UndefOr[ValueAxisSettingsFont] = js.native
+    var font: js.UndefOr[ValueAxisSettingsFont] = js.undefined
     
     /** Options for customizing the major grid lines.
       */
-    var majorGridLines: js.UndefOr[ValueAxisSettingsMajorGridLines] = js.native
+    var majorGridLines: js.UndefOr[ValueAxisSettingsMajorGridLines] = js.undefined
     
     /** Options for customizing the major tick lines in axis.
       */
-    var majorTickLines: js.UndefOr[ValueAxisSettingsMajorTickLines] = js.native
+    var majorTickLines: js.UndefOr[ValueAxisSettingsMajorTickLines] = js.undefined
     
     /** You can customize the range of the axis by setting minimum , maximum and interval.
       */
-    var range: js.UndefOr[ValueAxisSettingsRange] = js.native
+    var range: js.UndefOr[ValueAxisSettingsRange] = js.undefined
     
     /** If the range is not given explicitly, range will be calculated automatically. You can customize the automatic range calculation using rangePadding.
       * @Default {none}
       */
-    var rangePadding: js.UndefOr[String] = js.native
+    var rangePadding: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of axis in range navigator.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ValueAxisSettings {
     
@@ -3227,13 +3251,12 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettingsAxisLine extends StObject {
     
     /** Toggles the visibility of axis line.
       * @Default {none}
       */
-    var visible: js.UndefOr[String] = js.native
+    var visible: js.UndefOr[String] = js.undefined
   }
   object ValueAxisSettingsAxisLine {
     
@@ -3254,13 +3277,12 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettingsFont extends StObject {
     
     /** Text in axis render with the specified size.
       * @Default {0px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ValueAxisSettingsFont {
     
@@ -3281,13 +3303,12 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettingsMajorGridLines extends StObject {
     
     /** Toggles the visibility of major grid lines.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ValueAxisSettingsMajorGridLines {
     
@@ -3308,23 +3329,22 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettingsMajorTickLines extends StObject {
     
     /** Specifies the size of the majorTickLines in range navigator
       * @Default {0}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Toggles the visibility of major tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies width of the major tick lines.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ValueAxisSettingsMajorTickLines {
     
@@ -3357,23 +3377,22 @@ object RangeNavigator {
     }
   }
   
-  @js.native
   trait ValueAxisSettingsRange extends StObject {
     
     /** Default Value
       * @Default {null}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Default Value
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Default Value
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object ValueAxisSettingsRange {
     

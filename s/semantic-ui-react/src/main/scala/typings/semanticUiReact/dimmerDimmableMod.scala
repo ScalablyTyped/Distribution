@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dimmerDimmableMod extends Shortcut {
@@ -26,9 +25,9 @@ object dimmerDimmableMod extends Shortcut {
   @js.native
   val default: ComponentClass[DimmerDimmableProps, ComponentState] = js.native
   
-  @js.native
   trait DimmerDimmableProps
-    extends StrictDimmerDimmableProps
+    extends StObject
+       with StrictDimmerDimmableProps
        with /* key */ StringDictionary[js.Any]
   object DimmerDimmableProps {
     
@@ -39,26 +38,25 @@ object dimmerDimmableMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDimmerDimmableProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A dimmable element can blur its contents. */
-    var blurring: js.UndefOr[Boolean] = js.native
+    var blurring: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Controls whether or not the dim is displayed. */
-    var dimmed: js.UndefOr[Boolean] = js.native
+    var dimmed: js.UndefOr[Boolean] = js.undefined
   }
   object StrictDimmerDimmableProps {
     

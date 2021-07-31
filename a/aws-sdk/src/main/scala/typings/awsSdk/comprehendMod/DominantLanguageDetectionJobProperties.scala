@@ -2,66 +2,64 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DominantLanguageDetectionJobProperties extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that gives Amazon Comprehend read access to your input data.
     */
-  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.native
+  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
     * The time that the dominant language detection job completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The input data configuration that you supplied when you created the dominant language detection job.
     */
-  var InputDataConfig: js.UndefOr[typings.awsSdk.comprehendMod.InputDataConfig] = js.native
+  var InputDataConfig: js.UndefOr[typings.awsSdk.comprehendMod.InputDataConfig] = js.undefined
   
   /**
     * The identifier assigned to the dominant language detection job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.undefined
   
   /**
     * The name that you assigned to the dominant language detection job.
     */
-  var JobName: js.UndefOr[typings.awsSdk.comprehendMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.comprehendMod.JobName] = js.undefined
   
   /**
     * The current status of the dominant language detection job. If the status is FAILED, the Message field shows the reason for the failure.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.undefined
   
   /**
     * A description for the status of a job.
     */
-  var Message: js.UndefOr[AnyLengthString] = js.native
+  var Message: js.UndefOr[AnyLengthString] = js.undefined
   
   /**
     * The output data configuration that you supplied when you created the dominant language detection job.
     */
-  var OutputDataConfig: js.UndefOr[typings.awsSdk.comprehendMod.OutputDataConfig] = js.native
+  var OutputDataConfig: js.UndefOr[typings.awsSdk.comprehendMod.OutputDataConfig] = js.undefined
   
   /**
     * The time that the dominant language detection job was submitted for processing.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.native
+  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
-  var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     *  Configuration parameters for a private Virtual Private Cloud (VPC) containing the resources you are using for your dominant language detection job. For more information, see Amazon VPC. 
     */
-  var VpcConfig: js.UndefOr[typings.awsSdk.comprehendMod.VpcConfig] = js.native
+  var VpcConfig: js.UndefOr[typings.awsSdk.comprehendMod.VpcConfig] = js.undefined
 }
 object DominantLanguageDetectionJobProperties {
   

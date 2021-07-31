@@ -14,7 +14,6 @@ import typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback
 import typings.sharepoint.SP.BusinessData.Runtime.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BusinessData {
@@ -28,20 +27,30 @@ object BusinessData {
     object EntityEventType extends StObject {
       
       @js.native
-      sealed trait itemAdded extends EntityEventType
+      sealed trait itemAdded
+        extends StObject
+           with EntityEventType
       
       @js.native
-      sealed trait itemDeleted extends EntityEventType
+      sealed trait itemDeleted
+        extends StObject
+           with EntityEventType
       
       @js.native
-      sealed trait itemUpdated extends EntityEventType
+      sealed trait itemUpdated
+        extends StObject
+           with EntityEventType
       
       @js.native
-      sealed trait none extends EntityEventType
+      sealed trait none
+        extends StObject
+           with EntityEventType
     }
     
     @js.native
-    trait EntityFieldValueDictionary extends ClientObject {
+    trait EntityFieldValueDictionary
+      extends StObject
+         with ClientObject {
       
       def createCollectionInstance(fieldDotNotation: String, size: Double): Unit = js.native
       
@@ -61,7 +70,9 @@ object BusinessData {
     }
     
     @js.native
-    trait EntityIdentity extends ClientObject {
+    trait EntityIdentity
+      extends StObject
+         with ClientObject {
       
       def get_fieldValues(): js.Any = js.native
       
@@ -71,7 +82,9 @@ object BusinessData {
     }
     
     @js.native
-    trait EntityInstance extends ClientObject {
+    trait EntityInstance
+      extends StObject
+         with ClientObject {
       
       def createCollectionInstance(fieldDotNotation: String, size: Double): Unit = js.native
       
@@ -95,7 +108,9 @@ object BusinessData {
     }
     
     @js.native
-    trait NotificationCallback extends ClientObject {
+    trait NotificationCallback
+      extends StObject
+         with ClientObject {
       
       def get_notificationContext(): String = js.native
       
@@ -109,7 +124,9 @@ object BusinessData {
     }
     
     @js.native
-    trait Subscription extends ClientObject {
+    trait Subscription
+      extends StObject
+         with ClientObject {
       
       def get_hash(): String = js.native
       
@@ -118,7 +135,9 @@ object BusinessData {
   }
   
   @js.native
-  trait AppBdcCatalog extends ClientObject {
+  trait AppBdcCatalog
+    extends StObject
+       with ClientObject {
     
     def getConnectionId(lobSystemName: String, lobSystemInstanceName: String): StringResult = js.native
     
@@ -140,7 +159,9 @@ object BusinessData {
   object Collections {
     
     @js.native
-    trait EntityFieldCollection extends ClientObjectCollection[EntityField] {
+    trait EntityFieldCollection
+      extends StObject
+         with ClientObjectCollection[EntityField] {
       
       def get_item(index: Double): EntityField = js.native
       
@@ -148,7 +169,9 @@ object BusinessData {
     }
     
     @js.native
-    trait EntityIdentifierCollection extends ClientObjectCollection[EntityIdentifier] {
+    trait EntityIdentifierCollection
+      extends StObject
+         with ClientObjectCollection[EntityIdentifier] {
       
       def get_item(index: Double): EntityIdentifier = js.native
       
@@ -156,7 +179,9 @@ object BusinessData {
     }
     
     @js.native
-    trait EntityInstanceCollection extends ClientObjectCollection[EntityInstance] {
+    trait EntityInstanceCollection
+      extends StObject
+         with ClientObjectCollection[EntityInstance] {
       
       def get_item(index: Double): EntityInstance = js.native
       
@@ -164,7 +189,9 @@ object BusinessData {
     }
     
     @js.native
-    trait FilterCollection extends ClientObjectCollection[Filter] {
+    trait FilterCollection
+      extends StObject
+         with ClientObjectCollection[Filter] {
       
       def get_item(index: Double): Filter = js.native
       
@@ -174,7 +201,9 @@ object BusinessData {
     }
     
     @js.native
-    trait LobSystemInstanceCollection extends ClientObjectCollection[LobSystemInstance] {
+    trait LobSystemInstanceCollection
+      extends StObject
+         with ClientObjectCollection[LobSystemInstance] {
       
       def get_item(index: Double): LobSystemInstance = js.native
       
@@ -182,7 +211,9 @@ object BusinessData {
     }
     
     @js.native
-    trait TypeDescriptorCollection extends ClientObjectCollection[TypeDescriptor] {
+    trait TypeDescriptorCollection
+      extends StObject
+         with ClientObjectCollection[TypeDescriptor] {
       
       def get_item(index: Double): TypeDescriptor = js.native
       
@@ -191,11 +222,13 @@ object BusinessData {
   }
   
   @js.native
-  trait Entity extends ClientObject {
+  trait Entity
+    extends StObject
+       with ClientObject {
     
     def create(fieldValues: EntityFieldValueDictionary, lobSystemInstance: LobSystemInstance): EntityIdentity = js.native
     
-    def execute(methodInstanceName: String, lobSystemInstance: LobSystemInstance, inputParams: js.Array[_]): MethodExecutionResult = js.native
+    def execute(methodInstanceName: String, lobSystemInstance: LobSystemInstance, inputParams: js.Array[js.Any]): MethodExecutionResult = js.native
     
     def findAssociated(
       entityInstance: EntityInstance,
@@ -257,7 +290,9 @@ object BusinessData {
   }
   
   @js.native
-  trait EntityField extends ClientObject {
+  trait EntityField
+    extends StObject
+       with ClientObject {
     
     def get_containsLocalizedDisplayName(): Boolean = js.native
     
@@ -269,7 +304,9 @@ object BusinessData {
   }
   
   @js.native
-  trait EntityIdentifier extends ClientObject {
+  trait EntityIdentifier
+    extends StObject
+       with ClientObject {
     
     def containsLocalizedDisplayName(): BooleanResult = js.native
     
@@ -283,7 +320,9 @@ object BusinessData {
   }
   
   @js.native
-  trait EntityView extends ClientObject {
+  trait EntityView
+    extends StObject
+       with ClientObject {
     
     def getDefaultValues(): EntityFieldValueDictionary = js.native
     
@@ -301,7 +340,9 @@ object BusinessData {
   }
   
   @js.native
-  trait Filter extends ClientObject {
+  trait Filter
+    extends StObject
+       with ClientObject {
     
     def get_defaultDisplayName(): String = js.native
     
@@ -319,14 +360,18 @@ object BusinessData {
   object Infrastructure {
     
     @js.native
-    trait ExternalSubscriptionStore extends ClientObject {
+    trait ExternalSubscriptionStore
+      extends StObject
+         with ClientObject {
       
       def indexStore(): Unit = js.native
     }
   }
   
   @js.native
-  trait LobSystem extends ClientObject {
+  trait LobSystem
+    extends StObject
+       with ClientObject {
     
     def getLobSystemInstances(): LobSystemInstanceCollection = js.native
     
@@ -334,19 +379,25 @@ object BusinessData {
   }
   
   @js.native
-  trait LobSystemInstance extends ClientObject {
+  trait LobSystemInstance
+    extends StObject
+       with ClientObject {
     
     def get_name(): String = js.native
   }
   
   @js.native
-  trait MethodExecutionResult extends ClientObject {
+  trait MethodExecutionResult
+    extends StObject
+       with ClientObject {
     
     def get_returnParameterCollection(): ReturnParameterCollection = js.native
   }
   
   @js.native
-  trait ReturnParameterCollection extends ClientObjectCollection[EntityFieldValueDictionary] {
+  trait ReturnParameterCollection
+    extends StObject
+       with ClientObjectCollection[EntityFieldValueDictionary] {
     
     def get_item(index: Double): EntityFieldValueDictionary = js.native
     
@@ -354,7 +405,9 @@ object BusinessData {
   }
   
   @js.native
-  trait TypeDescriptor extends ClientObject {
+  trait TypeDescriptor
+    extends StObject
+       with ClientObject {
     
     def containsLocalizedDisplayName(): BooleanResult = js.native
     

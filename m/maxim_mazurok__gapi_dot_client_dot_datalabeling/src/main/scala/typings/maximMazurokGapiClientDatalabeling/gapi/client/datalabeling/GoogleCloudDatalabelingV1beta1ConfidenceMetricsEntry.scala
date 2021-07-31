@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry extends StObject {
   
   /**
@@ -13,34 +11,34 @@ trait GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry extends StObject {
     * on the PR curve) based on whether the label's score meets this threshold. For image object detection (bounding box) tasks, this is the [intersection-over-union
     * (IOU)](/vision/automl/object-detection/docs/evaluate#intersection-over-union) threshold for the context of this point on the PR curve.
     */
-  var confidenceThreshold: js.UndefOr[Double] = js.native
+  var confidenceThreshold: js.UndefOr[Double] = js.undefined
   
   /** Harmonic mean of recall and precision. */
-  var f1Score: js.UndefOr[Double] = js.native
+  var f1Score: js.UndefOr[Double] = js.undefined
   
   /** The harmonic mean of recall_at1 and precision_at1. */
-  var f1ScoreAt1: js.UndefOr[Double] = js.native
+  var f1ScoreAt1: js.UndefOr[Double] = js.undefined
   
   /** The harmonic mean of recall_at5 and precision_at5. */
-  var f1ScoreAt5: js.UndefOr[Double] = js.native
+  var f1ScoreAt5: js.UndefOr[Double] = js.undefined
   
   /** Precision value. */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /** Precision value for entries with label that has highest score. */
-  var precisionAt1: js.UndefOr[Double] = js.native
+  var precisionAt1: js.UndefOr[Double] = js.undefined
   
   /** Precision value for entries with label that has highest 5 scores. */
-  var precisionAt5: js.UndefOr[Double] = js.native
+  var precisionAt5: js.UndefOr[Double] = js.undefined
   
   /** Recall value. */
-  var recall: js.UndefOr[Double] = js.native
+  var recall: js.UndefOr[Double] = js.undefined
   
   /** Recall value for entries with label that has highest score. */
-  var recallAt1: js.UndefOr[Double] = js.native
+  var recallAt1: js.UndefOr[Double] = js.undefined
   
   /** Recall value for entries with label that has highest 5 scores. */
-  var recallAt5: js.UndefOr[Double] = js.native
+  var recallAt5: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry {
   

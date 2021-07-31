@@ -5,62 +5,60 @@ import typings.maximMazurokGapiClientDrive.anon.BackgroundImageLink
 import typings.maximMazurokGapiClientDrive.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait About extends StObject {
   
   /** Whether the user has installed the requesting app. */
-  var appInstalled: js.UndefOr[Boolean] = js.native
+  var appInstalled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the user can create shared drives. */
-  var canCreateDrives: js.UndefOr[Boolean] = js.native
+  var canCreateDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canCreateDrives instead. */
-  var canCreateTeamDrives: js.UndefOr[Boolean] = js.native
+  var canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /** A list of themes that are supported for shared drives. */
-  var driveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
+  var driveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.undefined
   
   /** A map of source MIME type to possible targets for all supported exports. */
   var exportFormats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The currently supported folder colors as RGB hex strings. */
-  var folderColorPalette: js.UndefOr[js.Array[String]] = js.native
+  var folderColorPalette: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A map of source MIME type to possible targets for all supported imports. */
   var importFormats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#about". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A map of maximum import sizes by MIME type, in bytes. */
   var maxImportSizes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The maximum upload size in bytes. */
-  var maxUploadSize: js.UndefOr[String] = js.native
+  var maxUploadSize: js.UndefOr[String] = js.undefined
   
   /** The user's storage quota limits and usage. All fields are measured in bytes. */
-  var storageQuota: js.UndefOr[Limit] = js.native
+  var storageQuota: js.UndefOr[Limit] = js.undefined
   
   /** Deprecated - use driveThemes instead. */
-  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
+  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.undefined
   
   /** The authenticated user. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object About {
   
@@ -104,7 +102,7 @@ object About {
     def setExportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
     ): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -123,7 +121,7 @@ object About {
     def setImportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
     ): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -139,7 +137,7 @@ object About {
     def setMaxImportSizes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
     ): Self = StObject.set(x, "maxImportSizes", value.asInstanceOf[js.Any])
     
     @scala.inline

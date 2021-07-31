@@ -12,7 +12,7 @@ Sets default values in request properties according to defaults defined in opena
 | Keywords           | openapi, default, setter |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 693333 |
+| # downloads        | 785017 |
 | # stars            | 0 |
 
 ## Links

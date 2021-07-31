@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GamesPlayerLevelResource extends StObject {
   
   /** The level for the user. */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /** The maximum experience points for this level. */
-  var maxExperiencePoints: js.UndefOr[String] = js.native
+  var maxExperiencePoints: js.UndefOr[String] = js.undefined
   
   /** The minimum experience points for this level. */
-  var minExperiencePoints: js.UndefOr[String] = js.native
+  var minExperiencePoints: js.UndefOr[String] = js.undefined
 }
 object GamesPlayerLevelResource {
   

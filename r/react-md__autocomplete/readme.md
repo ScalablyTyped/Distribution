@@ -10,9 +10,9 @@ Create an accessible autocomplete component that allows a user to get real-time 
 | ------------------ | :-------------: |
 | Full name          | @react-md/autocomplete |
 | Keywords           | accessibility, a11y, react-md, material design, react, autocomplete, typeahead, component, components |
-| # releases         | 24 |
+| # releases         | 35 |
 | # dependents       | 1 |
-| # downloads        | 5601 |
+| # downloads        | 17634 |
 | # stars            | 0 |
 
 ## Links

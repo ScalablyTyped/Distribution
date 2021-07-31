@@ -2,17 +2,16 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArraySchemaObject
-  extends BaseSchemaObject
+  extends StObject
+     with BaseSchemaObject
      with SchemaObject {
   
-  var items: ReferenceObject | SchemaObject = js.native
+  var items: ReferenceObject | SchemaObject
   
-  var `type`: ArraySchemaObjectType = js.native
+  var `type`: ArraySchemaObjectType
 }
 object ArraySchemaObject {
   

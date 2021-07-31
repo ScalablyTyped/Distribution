@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFeedsResponse extends StObject {
   
   /** A list of feeds. */
-  var feeds: js.UndefOr[js.Array[Feed]] = js.native
+  var feeds: js.UndefOr[js.Array[Feed]] = js.undefined
 }
 object ListFeedsResponse {
   

@@ -11,8 +11,8 @@ Chosen is a JavaScript plugin that makes select boxes user-friendly. It is curre
 | Full name          | chosen-js |
 | Keywords           | select, multiselect, dropdown, form, input, ui |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1821979 |
+| # dependents       | 17 |
+| # downloads        | 2046449 |
 | # stars            | 3 |
 
 ## Links

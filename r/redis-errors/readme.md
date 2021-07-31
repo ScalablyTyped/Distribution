@@ -11,8 +11,8 @@ Error classes used in node_redis
 | Full name          | redis-errors |
 | Keywords           | redis, javascript, node, error |
 | # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 32291663 |
+| # dependents       | 15 |
+| # downloads        | 51748688 |
 | # stars            | 0 |
 
 ## Links

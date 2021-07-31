@@ -2,26 +2,24 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetsResponse extends StObject {
   
   /**
     * Number of datasets returned.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * A set of datasets.
     */
-  var Datasets: js.UndefOr[DatasetList] = js.native
+  var Datasets: js.UndefOr[DatasetList] = js.undefined
   
   /**
     * A pagination token for obtaining the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListDatasetsResponse {
   

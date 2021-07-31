@@ -2,29 +2,27 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Capabilities of the remote execution system.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities extends StObject {
   
   /**
     * Remote execution may only support a single digest function.
     */
-  var digestFunction: js.UndefOr[String] = js.native
+  var digestFunction: js.UndefOr[String] = js.undefined
   
   /**
     * Whether remote execution is enabled for the particular server/instance.
     */
-  var execEnabled: js.UndefOr[Boolean] = js.native
+  var execEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Supported execution priority range.
     */
-  var executionPriorityCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2PriorityCapabilities] = js.native
+  var executionPriorityCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2PriorityCapabilities] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities {
   

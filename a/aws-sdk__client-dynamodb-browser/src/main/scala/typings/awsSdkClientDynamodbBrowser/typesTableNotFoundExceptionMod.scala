@@ -8,30 +8,27 @@ import typings.awsSdkClientDynamodbBrowser.updateContinuousBackupsExceptionsUnio
 import typings.awsSdkClientDynamodbBrowser.updateGlobalTableExceptionsUnionMod.UpdateGlobalTableExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTableNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableNotFoundExceptionDetails> * / any */ @js.native
-  trait TableNotFoundException
-    extends CreateBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableNotFoundExceptionDetails> * / any */ trait TableNotFoundException
+    extends StObject
+       with CreateBackupExceptionsUnion
        with CreateGlobalTableExceptionsUnion
        with DescribeContinuousBackupsExceptionsUnion
        with RestoreTableToPointInTimeExceptionsUnion
        with UpdateContinuousBackupsExceptionsUnion
        with UpdateGlobalTableExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableNotFoundException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableNotFoundException
   }
   object TableNotFoundException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableNotFoundException
-    ): TableNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TableNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "TableNotFoundException")
       __obj.asInstanceOf[TableNotFoundException]
     }
     
@@ -45,13 +42,12 @@ object typesTableNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait TableNotFoundExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object TableNotFoundExceptionDetails {
     

@@ -3,23 +3,24 @@ package typings.next
 import typings.next.anon.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeRegexMod {
   
-  @JSImport("next/dist/next-server/lib/router/utils/route-regex", "getRouteRegex")
+  @JSImport("next/dist/next-server/lib/router/utils/route-regex", JSImport.Namespace)
   @js.native
-  def getRouteRegex(normalizedRoute: String): Groups = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRouteRegex(normalizedRoute: String): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteRegex")(normalizedRoute.asInstanceOf[js.Any]).asInstanceOf[Groups]
+  
   trait Group extends StObject {
     
-    var optional: Boolean = js.native
+    var optional: Boolean
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var repeat: Boolean = js.native
+    var repeat: Boolean
   }
   object Group {
     

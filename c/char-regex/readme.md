@@ -11,8 +11,8 @@ A regex to match any full character, considering weird character ranges.
 | Full name          | char-regex |
 | Keywords           | character, regex, match, split, length |
 | # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 20089328 |
+| # dependents       | 25 |
+| # downloads        | 93632560 |
 | # stars            | 0 |
 
 ## Links

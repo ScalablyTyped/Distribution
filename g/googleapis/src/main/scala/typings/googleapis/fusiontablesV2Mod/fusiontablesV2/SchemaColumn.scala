@@ -3,40 +3,38 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 import typings.googleapis.anon.ColumnId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the details of a column in a table.
   */
-@js.native
 trait SchemaColumn extends StObject {
   
   /**
     * Identifier of the base column. If present, this column is derived from
     * the specified base column.
     */
-  var baseColumn: js.UndefOr[ColumnId] = js.native
+  var baseColumn: js.UndefOr[ColumnId] = js.undefined
   
   /**
     * Identifier for the column.
     */
-  var columnId: js.UndefOr[Double] = js.native
+  var columnId: js.UndefOr[Double] = js.undefined
   
   /**
     * JSON schema for interpreting JSON in this column.
     */
-  var columnJsonSchema: js.UndefOr[String] = js.native
+  var columnJsonSchema: js.UndefOr[String] = js.undefined
   
   /**
     * JSON object containing custom column properties.
     */
-  var columnPropertiesJson: js.UndefOr[String] = js.native
+  var columnPropertiesJson: js.UndefOr[String] = js.undefined
   
   /**
     * Column description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Format pattern. Acceptable values are DT_DATE_MEDIUMe.g Dec 24, 2008
@@ -65,40 +63,40 @@ trait SchemaColumn extends StObject {
     * STRING_ONE_LINE_IMAGEDisplays thumbnail images as tall as one line of
     * text STRING_VIDEO_OR_MAPDisplay a video or map thumbnail
     */
-  var formatPattern: js.UndefOr[String] = js.native
+  var formatPattern: js.UndefOr[String] = js.undefined
   
   /**
     * Column graph predicate. Used to map table to graph data model
     * (subject,predicate,object) See W3C Graph-based Data Model.
     */
-  var graphPredicate: js.UndefOr[String] = js.native
+  var graphPredicate: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For a column, this is always
     * fusiontables#column.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the column.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the column.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * List of valid values used to validate data and supply a drop-down list of
     * values in the web application.
     */
-  var validValues: js.UndefOr[js.Array[String]] = js.native
+  var validValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If true, data entered via the web application is validated.
     */
-  var validateData: js.UndefOr[Boolean] = js.native
+  var validateData: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaColumn {
   

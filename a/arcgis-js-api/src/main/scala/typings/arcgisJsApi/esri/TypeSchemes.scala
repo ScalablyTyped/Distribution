@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeSchemes extends Object {
+trait TypeSchemes
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap associated with the given schemes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average basemap color is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * The type scheme best suited for the given basemap and geometry type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
     */
-  var primaryScheme: TypeScheme = js.native
+  var primaryScheme: TypeScheme
   
   /**
     * Additional type schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
     */
-  var secondarySchemes: js.Array[TypeScheme] = js.native
+  var secondarySchemes: js.Array[TypeScheme]
 }
 object TypeSchemes {
   

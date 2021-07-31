@@ -5,29 +5,27 @@ import typings.openfin.openfinStrings.`desktop-icon-clicked`
 import typings.openfin.openfinStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesktopIconClickedEvent extends StObject {
   
-  var mouse: Top = js.native
+  var mouse: Top
   
   /**
     * the number of milliseconds that have elapsed since the system was started,
     */
-  var tickCount: Double = js.native
+  var tickCount: Double
   
-  var topic: system = js.native
+  var topic: system
   
-  var `type`: `desktop-icon-clicked` = js.native
+  var `type`: `desktop-icon-clicked`
 }
 object DesktopIconClickedEvent {
   
   @scala.inline
-  def apply(mouse: Top, tickCount: Double, topic: system, `type`: `desktop-icon-clicked`): DesktopIconClickedEvent = {
-    val __obj = js.Dynamic.literal(mouse = mouse.asInstanceOf[js.Any], tickCount = tickCount.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(mouse: Top, tickCount: Double): DesktopIconClickedEvent = {
+    val __obj = js.Dynamic.literal(mouse = mouse.asInstanceOf[js.Any], tickCount = tickCount.asInstanceOf[js.Any], topic = "system")
+    __obj.updateDynamic("type")("desktop-icon-clicked")
     __obj.asInstanceOf[DesktopIconClickedEvent]
   }
   

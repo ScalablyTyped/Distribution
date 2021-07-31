@@ -9,24 +9,28 @@ import typings.popmotion.typesMod.Animation
 import typings.popmotion.typesMod.DecayOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detectAnimationFromOptionsMod {
   
-  @JSImport("popmotion/lib/animations/utils/detect-animation-from-options", "detectAnimationFromOptions")
+  @JSImport("popmotion/lib/animations/utils/detect-animation-from-options", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def detectAnimationFromOptions[T /* <: Options */](config: T): Typeofspring | FnCall | (js.Function1[
     /* hasVelocityFromPowerTimeConstantRestDeltaModifyTarget */ DecayOptions, 
     Animation[Double]
-  ]) = js.native
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAnimationFromOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Typeofspring | FnCall | (js.Function1[
+    /* hasVelocityFromPowerTimeConstantRestDeltaModifyTarget */ DecayOptions, 
+    Animation[Double]
+  ])]
   
-  @js.native
   trait Options extends StObject {
     
-    var to: js.UndefOr[js.Any] = js.native
+    var to: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[decay | keyframes | spring] = js.native
+    var `type`: js.UndefOr[decay | keyframes | spring] = js.undefined
   }
   object Options {
     

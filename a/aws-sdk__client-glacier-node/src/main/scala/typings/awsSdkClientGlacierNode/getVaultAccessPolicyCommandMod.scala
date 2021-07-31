@@ -7,16 +7,18 @@ import typings.awsSdkClientGlacierNode.typesGetVaultAccessPolicyInputMod.GetVaul
 import typings.awsSdkClientGlacierNode.typesGetVaultAccessPolicyOutputMod.GetVaultAccessPolicyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVaultAccessPolicyCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/GetVaultAccessPolicyCommand", "GetVaultAccessPolicyCommand")
   @js.native
-  class GetVaultAccessPolicyCommand protected () extends Command[
+  class GetVaultAccessPolicyCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetVaultAccessPolicyInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object getVaultAccessPolicyCommandMod {
         ] {
     def this(input: GetVaultAccessPolicyInput) = this()
     
+    /* CompleteClass */
+    override val input: GetVaultAccessPolicyInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetVaultAccessPolicyInput, GetVaultAccessPolicyOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: GlacierResolvedConfiguration
+    ): Handler[GetVaultAccessPolicyInput, GetVaultAccessPolicyOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: GlacierResolvedConfiguration,
+      options: js.Any
     ): Handler[GetVaultAccessPolicyInput, GetVaultAccessPolicyOutput] = js.native
   }
 }

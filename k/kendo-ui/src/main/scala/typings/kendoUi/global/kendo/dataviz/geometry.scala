@@ -3,7 +3,6 @@ package typings.kendoUi.global.kendo.dataviz
 import typings.kendoUi.kendo.dataviz.geometry.ArcOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometry {
@@ -11,7 +10,8 @@ object geometry {
   @JSGlobal("kendo.dataviz.geometry.Arc")
   @js.native
   class Arc protected ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Arc {
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Arc {
     def this(center: js.Any) = this()
     def this(center: typings.kendoUi.kendo.geometry.Point) = this()
     def this(center: js.Any, options: ArcOptions) = this()
@@ -21,7 +21,8 @@ object geometry {
   @JSGlobal("kendo.dataviz.geometry.Circle")
   @js.native
   class Circle protected ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Circle {
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Circle {
     def this(center: js.Any, radius: Double) = this()
     def this(center: typings.kendoUi.kendo.geometry.Point, radius: Double) = this()
   }
@@ -29,76 +30,76 @@ object geometry {
   @JSGlobal("kendo.dataviz.geometry.Matrix")
   @js.native
   class Matrix ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Matrix
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Matrix
   object Matrix {
     
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Matrix.rotate")
+    @JSGlobal("kendo.dataviz.geometry.Matrix")
     @js.native
-    def rotate(angle: Double, x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Matrix.scale")
-    @js.native
-    def scale(scaleX: Double, scaleY: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
+    @scala.inline
+    def rotate(angle: Double, x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(angle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Matrix.translate")
-    @js.native
-    def translate(x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = js.native
+    @scala.inline
+    def scale(scaleX: Double, scaleY: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Matrix.unit")
-    @js.native
-    def unit(): typings.kendoUi.kendo.geometry.Matrix = js.native
+    @scala.inline
+    def translate(x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
+    
+    /* static member */
+    @scala.inline
+    def unit(): typings.kendoUi.kendo.geometry.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Point")
   @js.native
   class Point protected ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Point {
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Point {
     def this(x: Double, y: Double) = this()
   }
   object Point {
     
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.create")
+    @JSGlobal("kendo.dataviz.geometry.Point")
     @js.native
-    def create(x: js.Any, y: Double): typings.kendoUi.kendo.geometry.Point = js.native
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.create")
-    @js.native
-    def create(x: Double, y: Double): typings.kendoUi.kendo.geometry.Point = js.native
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.create")
-    @js.native
-    def create(x: typings.kendoUi.kendo.geometry.Point, y: Double): typings.kendoUi.kendo.geometry.Point = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.max")
-    @js.native
-    def max(): typings.kendoUi.kendo.geometry.Point = js.native
+    @scala.inline
+    def create(x: js.Any, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    /* static member */
+    @scala.inline
+    def create(x: Double, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    /* static member */
+    @scala.inline
+    def create(x: typings.kendoUi.kendo.geometry.Point, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.maxPoint")
-    @js.native
-    def maxPoint(): typings.kendoUi.kendo.geometry.Point = js.native
+    @scala.inline
+    def max(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.min")
-    @js.native
-    def min(): typings.kendoUi.kendo.geometry.Point = js.native
+    @scala.inline
+    def maxPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Point.minPoint")
-    @js.native
-    def minPoint(): typings.kendoUi.kendo.geometry.Point = js.native
+    @scala.inline
+    def min(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    
+    /* static member */
+    @scala.inline
+    def minPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("minPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Rect")
   @js.native
   class Rect protected ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Rect {
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Rect {
     def this(origin: js.Any, size: js.Any) = this()
     def this(origin: js.Any, size: typings.kendoUi.kendo.geometry.Size) = this()
     def this(origin: typings.kendoUi.kendo.geometry.Point, size: js.Any) = this()
@@ -106,39 +107,44 @@ object geometry {
   }
   object Rect {
     
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Rect.fromPoints")
+    @JSGlobal("kendo.dataviz.geometry.Rect")
     @js.native
-    def fromPoints(pointA: typings.kendoUi.kendo.geometry.Point, pointB: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Rect = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Rect.union")
-    @js.native
-    def union(rectA: typings.kendoUi.kendo.geometry.Rect, rectB: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.geometry.Rect = js.native
+    @scala.inline
+    def fromPoints(pointA: typings.kendoUi.kendo.geometry.Point, pointB: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
+    
+    /* static member */
+    @scala.inline
+    def union(rectA: typings.kendoUi.kendo.geometry.Rect, rectB: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Size")
   @js.native
   class Size ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Size
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Size
   object Size {
     
-    /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Size.create")
+    @JSGlobal("kendo.dataviz.geometry.Size")
     @js.native
-    def create(width: js.Any, height: Double): typings.kendoUi.kendo.geometry.Size = js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Size.create")
-    @js.native
-    def create(width: Double, height: Double): typings.kendoUi.kendo.geometry.Size = js.native
+    @scala.inline
+    def create(width: js.Any, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
     /* static member */
-    @JSGlobal("kendo.dataviz.geometry.Size.create")
-    @js.native
-    def create(width: typings.kendoUi.kendo.geometry.Size, height: Double): typings.kendoUi.kendo.geometry.Size = js.native
+    @scala.inline
+    def create(width: Double, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
+    /* static member */
+    @scala.inline
+    def create(width: typings.kendoUi.kendo.geometry.Size, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Transformation")
   @js.native
   class Transformation ()
-    extends typings.kendoUi.kendo.dataviz.geometry.Transformation
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.geometry.Transformation
 }

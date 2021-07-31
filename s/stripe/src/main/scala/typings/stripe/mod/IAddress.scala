@@ -2,41 +2,39 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAddress extends StObject {
   
   /**
     * City/Suburb/Town/Village
     */
-  var city: js.UndefOr[String | Null] = js.native
+  var city: js.UndefOr[String | Null] = js.undefined
   
   /**
     * 2-letter country code
     */
-  var country: js.UndefOr[String | Null] = js.native
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Address line 1 (Street address/PO Box/Company name)
     */
-  var line1: String = js.native
+  var line1: String
   
   /**
     * Address line 2 (Apartment/Suite/Unit/Building)
     */
-  var line2: js.UndefOr[String | Null] = js.native
+  var line2: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Zip/Postal Code
     */
-  var postal_code: js.UndefOr[String | Null] = js.native
+  var postal_code: js.UndefOr[String | Null] = js.undefined
   
   /**
     * State/Province/County
     */
-  var state: js.UndefOr[String | Null] = js.native
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object IAddress {
   

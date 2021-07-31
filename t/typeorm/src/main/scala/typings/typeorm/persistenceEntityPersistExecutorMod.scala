@@ -11,7 +11,6 @@ import typings.typeorm.typeormStrings.remove
 import typings.typeorm.typeormStrings.save
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object persistenceEntityPersistExecutorMod {
@@ -25,7 +24,7 @@ object persistenceEntityPersistExecutorMod {
       mode: save | remove | `soft-remove` | recover,
       target: js.UndefOr[js.Function | String],
       entity: ObjectLiteral | js.Array[ObjectLiteral],
-      options: js.UndefOr[SaveOptions with RemoveOptions]
+      options: js.UndefOr[SaveOptions & RemoveOptions]
     ) = this()
     
     var connection: Connection = js.native
@@ -39,7 +38,7 @@ object persistenceEntityPersistExecutorMod {
     
     var mode: save | remove | `soft-remove` | recover = js.native
     
-    var options: js.UndefOr[SaveOptions with RemoveOptions] = js.native
+    var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
     
     var queryRunner: js.UndefOr[QueryRunner] = js.native
     

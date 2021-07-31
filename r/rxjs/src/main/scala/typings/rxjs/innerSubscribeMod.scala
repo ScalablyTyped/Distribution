@@ -5,10 +5,13 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.PartialObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object innerSubscribeMod {
+  
+  @JSImport("rxjs/internal/innerSubscribe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rxjs/internal/innerSubscribe", "ComplexInnerSubscriber")
   @js.native
@@ -34,46 +37,31 @@ object innerSubscribeMod {
     */
   class ComplexOuterSubscriber[T, R] () extends Subscriber[T] {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
     
     /**
       * @param _innerSub Used by: race, bufferToggle, delayWhen, windowToggle, windowWhen
@@ -94,7 +82,7 @@ object innerSubscribeMod {
   @JSImport("rxjs/internal/innerSubscribe", "SimpleInnerSubscriber")
   @js.native
   class SimpleInnerSubscriber[T] protected () extends Subscriber[T] {
-    def this(parent: SimpleOuterSubscriberLike[_]) = this()
+    def this(parent: SimpleOuterSubscriberLike[js.Any]) = this()
     
     var parent: js.Any = js.native
   }
@@ -113,71 +101,74 @@ object innerSubscribeMod {
     extends Subscriber[T]
        with SimpleOuterSubscriberLike[R] {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
-  }
-  
-  @JSImport("rxjs/internal/innerSubscribe", "innerSubscribe")
-  @js.native
-  def innerSubscribe(result: js.Any, innerSubscriber: Subscriber[_]): js.UndefOr[Subscription] = js.native
-  
-  @js.native
-  trait SimpleOuterSubscriberLike[T] extends StObject {
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
     
     /**
       * A handler for inner complete notifications from the inner subscription.
       */
-    def notifyComplete(): Unit = js.native
+    /* CompleteClass */
+    override def notifyComplete(): Unit = js.native
     
     /**
       * A handler for inner error notifications from the inner subscription
       * @param err the error from the inner producer
       */
-    def notifyError(err: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def notifyError(err: js.Any): Unit = js.native
     
     /**
       * A handler for inner next notifications from the inner subscription
       * @param innerValue the value nexted by the inner producer
       */
-    def notifyNext(innerValue: T): Unit = js.native
+    /* CompleteClass */
+    override def notifyNext(innerValue: R): Unit = js.native
+  }
+  
+  @scala.inline
+  def innerSubscribe(result: js.Any, innerSubscriber: Subscriber[js.Any]): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("innerSubscribe")(result.asInstanceOf[js.Any], innerSubscriber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  
+  trait SimpleOuterSubscriberLike[T] extends StObject {
+    
+    /**
+      * A handler for inner complete notifications from the inner subscription.
+      */
+    def notifyComplete(): Unit
+    
+    /**
+      * A handler for inner error notifications from the inner subscription
+      * @param err the error from the inner producer
+      */
+    def notifyError(err: js.Any): Unit
+    
+    /**
+      * A handler for inner next notifications from the inner subscription
+      * @param innerValue the value nexted by the inner producer
+      */
+    def notifyNext(innerValue: T): Unit
   }
   object SimpleOuterSubscriberLike {
     
@@ -188,7 +179,7 @@ object innerSubscribeMod {
     }
     
     @scala.inline
-    implicit class SimpleOuterSubscriberLikeMutableBuilder[Self <: SimpleOuterSubscriberLike[_], T] (val x: Self with SimpleOuterSubscriberLike[T]) extends AnyVal {
+    implicit class SimpleOuterSubscriberLikeMutableBuilder[Self <: SimpleOuterSubscriberLike[?], T] (val x: Self & SimpleOuterSubscriberLike[T]) extends AnyVal {
       
       @scala.inline
       def setNotifyComplete(value: () => Unit): Self = StObject.set(x, "notifyComplete", js.Any.fromFunction0(value))

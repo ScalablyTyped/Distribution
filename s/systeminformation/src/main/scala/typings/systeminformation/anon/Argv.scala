@@ -2,21 +2,19 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Argv extends StObject {
   
-  var argv: js.Array[java.lang.String] = js.native
+  var argv: js.Array[java.lang.String]
   
-  var build_info: java.lang.String = js.native
+  var build_info: java.lang.String
   
-  var exit_status: Double = js.native
+  var exit_status: Double
   
-  var platform_info: java.lang.String = js.native
+  var platform_info: java.lang.String
   
-  var version: js.Array[Double] = js.native
+  var version: js.Array[Double]
 }
 object Argv {
   

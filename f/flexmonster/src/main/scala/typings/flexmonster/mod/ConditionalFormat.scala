@@ -2,29 +2,27 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalFormat extends StObject {
   
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[Style] = js.native
+  var format: js.UndefOr[Style] = js.undefined
   
-  var formatCSS: js.UndefOr[String] = js.native
+  var formatCSS: js.UndefOr[String] = js.undefined
   
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
-  var hierarchy: js.UndefOr[String] = js.native
+  var hierarchy: js.UndefOr[String] = js.undefined
   
-  var isTotal: js.UndefOr[Double] = js.native
+  var isTotal: js.UndefOr[Double] = js.undefined
   
-  var measureName: js.UndefOr[String] = js.native
+  var measureName: js.UndefOr[String] = js.undefined
   
-  var member: js.UndefOr[String] = js.native
+  var member: js.UndefOr[String] = js.undefined
   
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
 }
 object ConditionalFormat {
   

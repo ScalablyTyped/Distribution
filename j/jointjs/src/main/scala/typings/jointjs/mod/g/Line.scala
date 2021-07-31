@@ -2,12 +2,13 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Line")
 @js.native
-class Line () extends _PathObjectUnit {
+class Line ()
+  extends StObject
+     with _PathObjectUnit {
   def this(line: Line) = this()
   def this(p1: String, p2: String) = this()
   def this(p1: String, p2: PlainPoint) = this()
@@ -88,9 +89,9 @@ class Line () extends _PathObjectUnit {
   def tangentAtLength(length: Double): Line | Null = js.native
   
   def translate(): this.type = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): this.type = js.native
   def translate(tx: Double): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
+  def translate(tx: Unit, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
   
   def vector(): Point = js.native

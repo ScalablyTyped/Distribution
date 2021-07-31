@@ -2,23 +2,21 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowScriptableWebParts extends StObject {
   
-  var AllowScriptableWebParts: Boolean = js.native
+  var AllowScriptableWebParts: Boolean
   
-  var CurrentUserId: Double = js.native
+  var CurrentUserId: Double
   
-  var EffectivePresenceEnabled: Boolean = js.native
+  var EffectivePresenceEnabled: Boolean
   
-  var LCID: String = js.native
+  var LCID: String
   
-  var PermissionCustomizePages: Boolean = js.native
+  var PermissionCustomizePages: Boolean
   
-  var WebUrl: String = js.native
+  var WebUrl: String
 }
 object AllowScriptableWebParts {
   

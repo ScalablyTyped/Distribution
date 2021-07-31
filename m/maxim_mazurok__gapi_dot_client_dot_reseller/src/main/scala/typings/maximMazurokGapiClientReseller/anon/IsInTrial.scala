@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientReseller.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsInTrial extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait IsInTrial extends StObject {
     * - true — The plan is in trial.
     * - false — The plan is not in trial.
     */
-  var isInTrial: js.UndefOr[Boolean] = js.native
+  var isInTrial: js.UndefOr[Boolean] = js.undefined
   
   /** Date when the trial ends. The value is in milliseconds using the UNIX Epoch format. See an example Epoch converter. */
-  var trialEndTime: js.UndefOr[String] = js.native
+  var trialEndTime: js.UndefOr[String] = js.undefined
 }
 object IsInTrial {
   

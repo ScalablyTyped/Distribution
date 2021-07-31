@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpnConnectionOptionsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: 0.0.0.0/0 
     */
-  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: ::/0 
     */
-  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 CIDR on the AWS side of the VPN connection. Default: 0.0.0.0/0 
     */
-  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the AWS side of the VPN connection. Default: ::/0 
     */
-  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Site-to-Site VPN connection. 
     */
-  var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId = js.native
+  var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId
 }
 object ModifyVpnConnectionOptionsRequest {
   

@@ -4,15 +4,13 @@ import typings.imageThumbnail.imageThumbnailStrings.base64
 import typings.imageThumbnail.imageThumbnailStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Uri extends StObject {
     
-    var uri: String = js.native
+    var uri: String
   }
   object Uri {
     
@@ -31,21 +29,20 @@ object anon {
   }
   
   /* Inlined {  responseType :'base64'} & image-thumbnail.image-thumbnail.Options */
-  @js.native
   trait responseTypebase64Options extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var responseType: base64 with js.UndefOr[String] = js.native
+    var responseType: base64 & js.UndefOr[String]
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object responseTypebase64Options {
     
     @scala.inline
-    def apply(responseType: base64 with js.UndefOr[String]): responseTypebase64Options = {
+    def apply(responseType: base64 & js.UndefOr[String]): responseTypebase64Options = {
       val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[responseTypebase64Options]
     }
@@ -66,7 +63,7 @@ object anon {
       def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
       @scala.inline
-      def setResponseType(value: base64 with js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      def setResponseType(value: base64 & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
@@ -77,21 +74,20 @@ object anon {
   }
   
   /* Inlined {  responseType :'buffer'} & image-thumbnail.image-thumbnail.Options */
-  @js.native
   trait responseTypebufferOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var responseType: buffer with js.UndefOr[String] = js.native
+    var responseType: buffer & js.UndefOr[String]
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object responseTypebufferOptions {
     
     @scala.inline
-    def apply(responseType: buffer with js.UndefOr[String]): responseTypebufferOptions = {
+    def apply(responseType: buffer & js.UndefOr[String]): responseTypebufferOptions = {
       val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[responseTypebufferOptions]
     }
@@ -112,7 +108,7 @@ object anon {
       def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
       @scala.inline
-      def setResponseType(value: buffer with js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      def setResponseType(value: buffer & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])

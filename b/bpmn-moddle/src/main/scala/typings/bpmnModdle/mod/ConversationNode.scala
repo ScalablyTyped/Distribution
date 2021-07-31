@@ -3,48 +3,48 @@ package typings.bpmnModdle.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
-- typings.bpmnModdle.mod.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ @js.native
-trait ConversationNode extends InteractionNode {
+- typings.bpmnModdle.mod.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait ConversationNode
+  extends StObject
+     with InteractionNode {
   
   /**
     * Attributes that aren't defined by the BPMN Spec such
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var correlationKeys: js.Array[CorrelationKey] = js.native
+  var correlationKeys: js.Array[CorrelationKey]
   
   /**
     * Documentation for the element
     */
-  var documentation: js.UndefOr[js.Array[Documentation]] = js.native
+  var documentation: js.UndefOr[js.Array[Documentation]] = js.undefined
   
   /**
     * Reference to the extension definitions for this element
     */
-  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.native
+  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.undefined
   
   /**
     * Extension Elements
     */
-  var extensionElements: js.UndefOr[ExtensionElements] = js.native
+  var extensionElements: js.UndefOr[ExtensionElements] = js.undefined
   
   /**
     * Is the primary Id of the element
     */
-  var id: String = js.native
+  var id: String
   
-  var messageFlowRefs: js.Array[MessageFlow] = js.native
+  var messageFlowRefs: js.Array[MessageFlow]
   
-  var name: String = js.native
+  var name: String
   
-  var participantRefs: js.Array[Participant] = js.native
+  var participantRefs: js.Array[Participant]
 }
 object ConversationNode {
   

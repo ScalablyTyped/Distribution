@@ -4,30 +4,28 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-ratings.react-native-ratings.AirbnbRatingProps>> */
-@js.native
 trait RecursivePartialPartialAi extends StObject {
   
-  var count: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var count: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var defaultRating: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var defaultRating: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var isDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var isDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var onFinishRating: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.native
+  var onFinishRating: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.undefined
   
-  var reviews: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[String]]]] = js.native
+  var reviews: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[String]]]] = js.undefined
   
-  var selectedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var selectedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var showRating: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var showRating: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var size: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var size: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var starStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.native
+  var starStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.undefined
 }
 object RecursivePartialPartialAi {
   

@@ -2,32 +2,32 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchableHighlightProps extends TouchableWithoutFeedbackProps {
+trait TouchableHighlightProps
+  extends StObject
+     with TouchableWithoutFeedbackProps {
   
   /**
     * Determines what the opacity of the wrapped view should be when touch is active.
     */
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     *
     * Called immediately after the underlay is hidden
     */
-  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called immediately after the underlay is shown
     */
-  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The color of the underlay that will show through when the touch is active.
     */
-  var underlayColor: js.UndefOr[ColorValue] = js.native
+  var underlayColor: js.UndefOr[ColorValue] = js.undefined
 }
 object TouchableHighlightProps {
   

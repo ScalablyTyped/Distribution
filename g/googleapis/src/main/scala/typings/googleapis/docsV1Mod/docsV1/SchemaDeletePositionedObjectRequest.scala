@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a PositionedObject from the document.
   */
-@js.native
 trait SchemaDeletePositionedObjectRequest extends StObject {
   
   /**
     * The ID of the positioned object to delete.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaDeletePositionedObjectRequest {
   

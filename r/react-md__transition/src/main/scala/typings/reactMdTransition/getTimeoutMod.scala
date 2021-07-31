@@ -3,23 +3,24 @@ package typings.reactMdTransition
 import typings.reactMdTransition.typesMod.TransitionTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTimeoutMod {
   
-  @JSImport("@react-md/transition/types/getTimeout", "getTimeout")
+  @JSImport("@react-md/transition/types/getTimeout", JSImport.Namespace)
   @js.native
-  def getTimeout(timeout: TransitionTimeout, appear: Boolean): DefinedTimeout = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTimeout(timeout: TransitionTimeout, appear: Boolean): DefinedTimeout = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeout")(timeout.asInstanceOf[js.Any], appear.asInstanceOf[js.Any])).asInstanceOf[DefinedTimeout]
+  
   trait DefinedTimeout extends StObject {
     
-    var appear: Double = js.native
+    var appear: Double
     
-    var enter: Double = js.native
+    var enter: Double
     
-    var exit: Double = js.native
+    var exit: Double
   }
   object DefinedTimeout {
     

@@ -5,36 +5,34 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.apiextensionsDotk8sDotio
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CustomResourceDefinition represents a resource that should be exposed on the API server.  Its name MUST be in the format <.spec.name>.<.spec.group>.
   */
-@js.native
 trait CustomResourceDefinition extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[apiextensionsDotk8sDotioSlashv1]] = js.native
+  var apiVersion: js.UndefOr[Input[apiextensionsDotk8sDotioSlashv1]] = js.undefined
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinition]] = js.native
+  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinition]] = js.undefined
   
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * spec describes how the user wants the resources to appear
     */
-  var spec: Input[CustomResourceDefinitionSpec] = js.native
+  var spec: Input[CustomResourceDefinitionSpec]
   
   /**
     * status indicates the actual state of the CustomResourceDefinition
     */
-  var status: js.UndefOr[Input[CustomResourceDefinitionStatus]] = js.native
+  var status: js.UndefOr[Input[CustomResourceDefinitionStatus]] = js.undefined
 }
 object CustomResourceDefinition {
   

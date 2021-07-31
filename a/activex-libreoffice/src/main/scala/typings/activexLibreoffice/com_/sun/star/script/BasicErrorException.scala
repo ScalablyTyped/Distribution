@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is thrown in order to transport an error to Basic.
   * @since OOo 2.0
   */
-@js.native
-trait BasicErrorException extends Exception {
+trait BasicErrorException
+  extends StObject
+     with Exception {
   
   /** The error code. */
-  var ErrorCode: Double = js.native
+  var ErrorCode: Double
   
   /** Specifies the argument which is used in the localized error message for the placeholder. */
-  var ErrorMessageArgument: String = js.native
+  var ErrorMessageArgument: String
 }
 object BasicErrorException {
   

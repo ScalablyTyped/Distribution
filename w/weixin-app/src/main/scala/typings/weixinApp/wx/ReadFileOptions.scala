@@ -3,21 +3,20 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadFileOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 要读取的文件的路径
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var filePath: String = js.native
+  var filePath: String
   
   // 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
   @JSName("success")
-  var success_ReadFileOptions: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.native
+  var success_ReadFileOptions: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.undefined
 }
 object ReadFileOptions {
   

@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterInterface extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait SchemaRouterInterface extends StObject {
     * for example: 169.254.0.1/30. NOTE: Do not truncate the address as it
     * represents the IP address of the interface.
     */
-  var ipRange: js.UndefOr[String] = js.native
+  var ipRange: js.UndefOr[String] = js.undefined
   
   /**
     * URI of the linked interconnect attachment. It must be in the same region
     * as the router. Each interface can have at most one linked resource and it
     * could either be a VPN Tunnel or an interconnect attachment.
     */
-  var linkedInterconnectAttachment: js.UndefOr[String] = js.native
+  var linkedInterconnectAttachment: js.UndefOr[String] = js.undefined
   
   /**
     * URI of the linked VPN tunnel. It must be in the same region as the
     * router. Each interface can have at most one linked resource and it could
     * either be a VPN Tunnel or an interconnect attachment.
     */
-  var linkedVpnTunnel: js.UndefOr[String] = js.native
+  var linkedVpnTunnel: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The resource that configures and manages this interface.
@@ -39,13 +37,13 @@ trait SchemaRouterInterface extends StObject {
     * this type of interface when the PARTNER InterconnectAttachment is
     * created, updated, or deleted.
     */
-  var managementType: js.UndefOr[String] = js.native
+  var managementType: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this interface entry. The name must be 1-63 characters long and
     * comply with RFC1035.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaRouterInterface {
   

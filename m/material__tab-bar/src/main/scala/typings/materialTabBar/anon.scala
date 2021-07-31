@@ -4,31 +4,29 @@ import typings.materialTab.typesMod.MDCTabDimensions
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ARROWLEFTKEY extends StObject {
     
-    var ARROW_LEFT_KEY: String = js.native
+    var ARROW_LEFT_KEY: String
     
-    var ARROW_RIGHT_KEY: String = js.native
+    var ARROW_RIGHT_KEY: String
     
-    var END_KEY: String = js.native
+    var END_KEY: String
     
-    var ENTER_KEY: String = js.native
+    var ENTER_KEY: String
     
-    var HOME_KEY: String = js.native
+    var HOME_KEY: String
     
-    var SPACE_KEY: String = js.native
+    var SPACE_KEY: String
     
-    var TAB_ACTIVATED_EVENT: String = js.native
+    var TAB_ACTIVATED_EVENT: String
     
-    var TAB_SCROLLER_SELECTOR: String = js.native
+    var TAB_SCROLLER_SELECTOR: String
     
-    var TAB_SELECTOR: String = js.native
+    var TAB_SELECTOR: String
   }
   object ARROWLEFTKEY {
     
@@ -80,22 +78,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ARROWLEFTKEYCODE extends StObject {
     
-    var ARROW_LEFT_KEYCODE: Double = js.native
+    var ARROW_LEFT_KEYCODE: Double
     
-    var ARROW_RIGHT_KEYCODE: Double = js.native
+    var ARROW_RIGHT_KEYCODE: Double
     
-    var END_KEYCODE: Double = js.native
+    var END_KEYCODE: Double
     
-    var ENTER_KEYCODE: Double = js.native
+    var ENTER_KEYCODE: Double
     
-    var EXTRA_SCROLL_AMOUNT: Double = js.native
+    var EXTRA_SCROLL_AMOUNT: Double
     
-    var HOME_KEYCODE: Double = js.native
+    var HOME_KEYCODE: Double
     
-    var SPACE_KEYCODE: Double = js.native
+    var SPACE_KEYCODE: Double
   }
   object ARROWLEFTKEYCODE {
     
@@ -140,42 +137,41 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tab-bar.@material/tab-bar/adapter.MDCTabBarAdapter> */
-  @js.native
   trait PartialMDCTabBarAdapter extends StObject {
     
-    var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[ClientRect], Unit]] = js.native
+    var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[ClientRect], Unit]] = js.undefined
     
-    var deactivateTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var deactivateTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var focusTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var getFocusedTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getFocusedTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getIndexOfTabById: js.UndefOr[js.Function1[/* id */ String, Double]] = js.native
+    var getIndexOfTabById: js.UndefOr[js.Function1[/* id */ String, Double]] = js.undefined
     
-    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getPreviousActiveTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getPreviousActiveTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollContentWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollContentWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getTabDimensionsAtIndex: js.UndefOr[js.Function1[/* index */ Double, MDCTabDimensions]] = js.native
+    var getTabDimensionsAtIndex: js.UndefOr[js.Function1[/* index */ Double, MDCTabDimensions]] = js.undefined
     
-    var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, ClientRect]] = js.native
+    var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, ClientRect]] = js.undefined
     
-    var getTabListLength: js.UndefOr[js.Function0[Double]] = js.native
+    var getTabListLength: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var incrementScroll: js.UndefOr[js.Function1[/* scrollXIncrement */ Double, Unit]] = js.native
+    var incrementScroll: js.UndefOr[js.Function1[/* scrollXIncrement */ Double, Unit]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyTabActivated: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var notifyTabActivated: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var scrollTo: js.UndefOr[js.Function1[/* scrollX */ Double, Unit]] = js.native
+    var scrollTo: js.UndefOr[js.Function1[/* scrollX */ Double, Unit]] = js.undefined
     
-    var setActiveTab: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var setActiveTab: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   }
   object PartialMDCTabBarAdapter {
     

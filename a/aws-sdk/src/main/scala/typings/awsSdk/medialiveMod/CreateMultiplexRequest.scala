@@ -2,37 +2,35 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMultiplexRequest extends StObject {
   
   /**
     * A list of availability zones for the multiplex. You must specify exactly two.
     */
-  var AvailabilityZones: listOfString = js.native
+  var AvailabilityZones: listOfString
   
   /**
     * Configuration for a multiplex event.
     */
-  var MultiplexSettings: typings.awsSdk.medialiveMod.MultiplexSettings = js.native
+  var MultiplexSettings: typings.awsSdk.medialiveMod.MultiplexSettings
   
   /**
     * Name of multiplex.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Unique request ID. This prevents retries from creating multiple
   resources.
     */
-  var RequestId: string = js.native
+  var RequestId: string
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object CreateMultiplexRequest {
   

@@ -3,21 +3,24 @@ package typings.zSchema
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("z-schema", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Validator {
+  class ^ protected ()
+    extends StObject
+       with Validator {
     def this(options: Options) = this()
   }
+  @JSImport("z-schema", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("z-schema", "getDefaultOptions")
-  @js.native
-  def getDefaultOptions(): Options = js.native
+  @scala.inline
+  def getDefaultOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[Options]
   
   /**
     * Get the list of all registered formats.
@@ -28,9 +31,8 @@ object mod {
     * @returns {string[]} the list of all registered format names.
     */
   /* static member */
-  @JSImport("z-schema", "getRegisteredFormats")
-  @js.native
-  def getRegisteredFormats(): js.Array[String] = js.native
+  @scala.inline
+  def getRegisteredFormats(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredFormats")().asInstanceOf[js.Array[String]]
   
   @JSImport("z-schema", "jsonSymbol")
   @js.native
@@ -44,9 +46,8 @@ object mod {
     *   Returns `true` if `value` matches the custom format.
     */
   /* static member */
-  @JSImport("z-schema", "registerFormat")
-  @js.native
-  def registerFormat(formatName: String, validatorFunction: js.Function1[/* value */ js.Any, Boolean]): Unit = js.native
+  @scala.inline
+  def registerFormat(formatName: String, validatorFunction: js.Function1[/* value */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(formatName.asInstanceOf[js.Any], validatorFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("z-schema", "schemaSymbol")
   @js.native
@@ -58,54 +59,52 @@ object mod {
     * @param name - name of the custom format
     */
   /* static member */
-  @JSImport("z-schema", "unregisterFormat")
-  @js.native
-  def unregisterFormat(name: String): Unit = js.native
+  @scala.inline
+  def unregisterFormat(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFormat")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var assumeAdditional: js.UndefOr[Boolean] = js.native
+    var assumeAdditional: js.UndefOr[Boolean] = js.undefined
     
-    var asyncTimeout: js.UndefOr[Double] = js.native
+    var asyncTimeout: js.UndefOr[Double] = js.undefined
     
-    var breakOnFirstError: js.UndefOr[Boolean] = js.native
+    var breakOnFirstError: js.UndefOr[Boolean] = js.undefined
     
-    var customValidator: js.UndefOr[js.Function3[/* report */ Report, /* schema */ js.Any, /* json */ js.Any, Unit]] = js.native
+    var customValidator: js.UndefOr[js.Function3[/* report */ Report, /* schema */ js.Any, /* json */ js.Any, Unit]] = js.undefined
     
-    var forceAdditional: js.UndefOr[Boolean] = js.native
+    var forceAdditional: js.UndefOr[Boolean] = js.undefined
     
-    var forceItems: js.UndefOr[Boolean] = js.native
+    var forceItems: js.UndefOr[Boolean] = js.undefined
     
-    var forceMaxItems: js.UndefOr[Boolean] = js.native
+    var forceMaxItems: js.UndefOr[Boolean] = js.undefined
     
-    var forceMaxLength: js.UndefOr[Boolean] = js.native
+    var forceMaxLength: js.UndefOr[Boolean] = js.undefined
     
-    var forceMinItems: js.UndefOr[Boolean] = js.native
+    var forceMinItems: js.UndefOr[Boolean] = js.undefined
     
-    var forceMinLength: js.UndefOr[Boolean] = js.native
+    var forceMinLength: js.UndefOr[Boolean] = js.undefined
     
-    var forceProperties: js.UndefOr[Boolean] = js.native
+    var forceProperties: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreUnknownFormats: js.UndefOr[Boolean] = js.native
+    var ignoreUnknownFormats: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreUnresolvableReferences: js.UndefOr[Boolean] = js.native
+    var ignoreUnresolvableReferences: js.UndefOr[Boolean] = js.undefined
     
-    var noEmptyArrays: js.UndefOr[Boolean] = js.native
+    var noEmptyArrays: js.UndefOr[Boolean] = js.undefined
     
-    var noEmptyStrings: js.UndefOr[Boolean] = js.native
+    var noEmptyStrings: js.UndefOr[Boolean] = js.undefined
     
-    var noExtraKeywords: js.UndefOr[Boolean] = js.native
+    var noExtraKeywords: js.UndefOr[Boolean] = js.undefined
     
-    var noTypeless: js.UndefOr[Boolean] = js.native
+    var noTypeless: js.UndefOr[Boolean] = js.undefined
     
-    var pedanticCheck: js.UndefOr[Boolean] = js.native
+    var pedanticCheck: js.UndefOr[Boolean] = js.undefined
     
-    var reportPathAsArray: js.UndefOr[Boolean] = js.native
+    var reportPathAsArray: js.UndefOr[Boolean] = js.undefined
     
-    var strictMode: js.UndefOr[Boolean] = js.native
+    var strictMode: js.UndefOr[Boolean] = js.undefined
     
-    var strictUris: js.UndefOr[Boolean] = js.native
+    var strictUris: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -249,7 +248,6 @@ object mod {
   /**
     * Basic representation of the Report class -- just enough to support customValidator
     */
-  @js.native
   trait Report extends StObject {
     
     /**
@@ -266,7 +264,7 @@ object mod {
       params: js.Array[String],
       subReports: String,
       schemaDescription: String
-    ): Unit = js.native
+    ): Unit
   }
   object Report {
     
@@ -284,14 +282,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait SchemaError extends Error {
+  trait SchemaError
+    extends StObject
+       with Error {
     
     /**
       * Returns details for each error that occurred during validation.
       * See Options.breakOnFirstError.
       */
-    var details: js.Array[SchemaErrorDetail] = js.native
+    var details: js.Array[SchemaErrorDetail]
   }
   object SchemaError {
     
@@ -312,44 +311,43 @@ object mod {
     }
   }
   
-  @js.native
   trait SchemaErrorDetail extends StObject {
     
     /**
       * An error identifier that can be used to format a custom error message.
       * Example: "INVALID_TYPE"
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * The schema rule description, which is included for certain errors where
       * this information is useful (e.g. to describe a constraint).
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Returns details for sub-schemas that failed to match.  For example, if the schema
       * uses the "oneOf" constraint to accept several alternative possibilities, each
       * alternative will have its own inner detail object explaining why it failed to match.
       */
-    var inner: js.Array[SchemaErrorDetail] = js.native
+    var inner: js.Array[SchemaErrorDetail]
     
     /**
       * Example: "Expected type string but found type array"
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * Format parameters that can be used to format a custom error message.
       * Example: ["string","array"]
       */
-    var params: js.Array[String] = js.native
+    var params: js.Array[String]
     
     /**
       * A JSON path indicating the location of the error.
       * Example: "#/projects/1"
       */
-    var path: String = js.native
+    var path: String
   }
   object SchemaErrorDetail {
     

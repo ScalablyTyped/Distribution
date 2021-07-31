@@ -11,37 +11,35 @@ import typings.gestalt.gestaltStrings.none
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageProps extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: String = js.native
+  var color: String
   
-  var fit: js.UndefOr[cover | contain | none] = js.native
+  var fit: js.UndefOr[cover | contain | none] = js.undefined
   
-  var importance: js.UndefOr[high | low | auto] = js.native
+  var importance: js.UndefOr[high | low | auto] = js.undefined
   
-  var loading: js.UndefOr[eager | `lazy` | auto] = js.native
+  var loading: js.UndefOr[eager | `lazy` | auto] = js.undefined
   
-  var naturalHeight: Double = js.native
+  var naturalHeight: Double
   
-  var naturalWidth: Double = js.native
+  var naturalWidth: Double
   
-  var onError: js.UndefOr[js.Function0[Unit]] = js.native
+  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var src: String = js.native
+  var src: String
   
-  var srcSet: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.undefined
 }
 object ImageProps {
   

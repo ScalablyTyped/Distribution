@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookInstanceLifecycleConfigSummary extends StObject {
   
   /**
     * A timestamp that tells when the lifecycle configuration was created.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * A timestamp that tells when the lifecycle configuration was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigArn: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigArn = js.native
+  var NotebookInstanceLifecycleConfigArn: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigArn
   
   /**
     * The name of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigName: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName = js.native
+  var NotebookInstanceLifecycleConfigName: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName
 }
 object NotebookInstanceLifecycleConfigSummary {
   

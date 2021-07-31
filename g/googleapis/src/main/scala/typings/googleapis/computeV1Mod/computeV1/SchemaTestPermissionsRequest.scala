@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTestPermissionsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaTestPermissionsRequest extends StObject {
     * with wildcards (such as &#39;*&#39; or &#39;storage.*&#39;) are not
     * allowed.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestPermissionsRequest {
   

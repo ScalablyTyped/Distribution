@@ -2,23 +2,23 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterRerouteParams extends GenericParams {
+trait ClusterRerouteParams
+  extends StObject
+     with GenericParams {
   
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var metric: js.UndefOr[NameList] = js.native
+  var metric: js.UndefOr[NameList] = js.undefined
   
-  var retryFailed: js.UndefOr[Boolean] = js.native
+  var retryFailed: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
 object ClusterRerouteParams {
   

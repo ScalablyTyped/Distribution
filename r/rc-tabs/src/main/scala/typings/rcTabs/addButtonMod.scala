@@ -9,25 +9,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addButtonMod extends Shortcut {
   
   @JSImport("rc-tabs/es/TabNavList/AddButton", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[AddButtonProps with RefAttributes[HTMLButtonElement]] = js.native
+  val default: ForwardRefExoticComponent[AddButtonProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  @js.native
   trait AddButtonProps extends StObject {
     
-    var editable: js.UndefOr[EditableConfig] = js.native
+    var editable: js.UndefOr[EditableConfig] = js.undefined
     
-    var locale: js.UndefOr[TabsLocale] = js.native
+    var locale: js.UndefOr[TabsLocale] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AddButtonProps {
     
@@ -63,8 +61,8 @@ object addButtonMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[AddButtonProps with RefAttributes[HTMLButtonElement]]
+  type _To = ForwardRefExoticComponent[AddButtonProps & RefAttributes[HTMLButtonElement]]
   
   /* This means you don't have to write `default`, but can instead just say `addButtonMod.foo` */
-  override def _to: ForwardRefExoticComponent[AddButtonProps with RefAttributes[HTMLButtonElement]] = default
+  override def _to: ForwardRefExoticComponent[AddButtonProps & RefAttributes[HTMLButtonElement]] = default
 }

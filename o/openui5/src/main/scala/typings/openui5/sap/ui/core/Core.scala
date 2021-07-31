@@ -7,11 +7,12 @@ import typings.openui5.sap.ui.core.message.MessageManager
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Core extends Object {
+trait Core
+  extends StObject
+     with Object {
   
   /**
     * Enforces an immediate update of the visible UI (aka "rendering").In general, applications should
@@ -158,31 +159,21 @@ trait Core extends Object {
     * @param mSettings the settings object for the component
     */
   def createComponent(vComponent: String): Unit = js.native
-  def createComponent(
-    vComponent: String,
-    sUrl: js.UndefOr[scala.Nothing],
-    sId: js.UndefOr[scala.Nothing],
-    mSettings: js.Any
-  ): Unit = js.native
-  def createComponent(vComponent: String, sUrl: js.UndefOr[scala.Nothing], sId: String): Unit = js.native
-  def createComponent(vComponent: String, sUrl: js.UndefOr[scala.Nothing], sId: String, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: String, sUrl: String): Unit = js.native
-  def createComponent(vComponent: String, sUrl: String, sId: js.UndefOr[scala.Nothing], mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: String, sUrl: String, sId: String): Unit = js.native
   def createComponent(vComponent: String, sUrl: String, sId: String, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: String, sUrl: String, sId: Unit, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: String, sUrl: Unit, sId: String): Unit = js.native
+  def createComponent(vComponent: String, sUrl: Unit, sId: String, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: String, sUrl: Unit, sId: Unit, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any): Unit = js.native
-  def createComponent(
-    vComponent: js.Any,
-    sUrl: js.UndefOr[scala.Nothing],
-    sId: js.UndefOr[scala.Nothing],
-    mSettings: js.Any
-  ): Unit = js.native
-  def createComponent(vComponent: js.Any, sUrl: js.UndefOr[scala.Nothing], sId: String): Unit = js.native
-  def createComponent(vComponent: js.Any, sUrl: js.UndefOr[scala.Nothing], sId: String, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String): Unit = js.native
-  def createComponent(vComponent: js.Any, sUrl: String, sId: js.UndefOr[scala.Nothing], mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: String, sId: Unit, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: Unit, sId: String): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: Unit, sId: String, mSettings: js.Any): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: Unit, sId: Unit, mSettings: js.Any): Unit = js.native
   
   /**
     * Returns a new instance of the RenderManager interface.
@@ -451,9 +442,9 @@ trait Core extends Object {
     * @param sQuery to be used only by the Core
     */
   def includeLibraryTheme(sLibName: String): Unit = js.native
-  def includeLibraryTheme(sLibName: String, sVariant: js.UndefOr[scala.Nothing], sQuery: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String, sQuery: String): Unit = js.native
+  def includeLibraryTheme(sLibName: String, sVariant: Unit, sQuery: String): Unit = js.native
   
   /**
     * Provides the framework with information about a library.This method is intended to be called exactly
@@ -547,8 +538,8 @@ trait Core extends Object {
     * @param mOptions configuration options
     * @returns returns a Promise in async mode, otherwise <code>undefined</code>
     */
-  def loadLibraries(aLibraries: js.Array[String]): JQueryPromise[_] | js.Any = js.native
-  def loadLibraries(aLibraries: js.Array[String], mOptions: js.Any): JQueryPromise[_] | js.Any = js.native
+  def loadLibraries(aLibraries: js.Array[String]): JQueryPromise[js.Any] | js.Any = js.native
+  def loadLibraries(aLibraries: js.Array[String], mOptions: js.Any): JQueryPromise[js.Any] | js.Any = js.native
   
   /**
     * Synchronously loads the given library and makes it available to the application.Loads the *.library

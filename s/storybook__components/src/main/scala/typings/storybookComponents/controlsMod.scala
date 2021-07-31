@@ -13,10 +13,13 @@ import typings.storybookComponents.rangeMod.RangeProps
 import typings.storybookComponents.textMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlsMod {
+  
+  @JSImport("@storybook/components/dist/controls", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components/dist/controls", "ArrayControl")
   @js.native
@@ -54,11 +57,9 @@ object controlsMod {
   @js.native
   val TextControl: FC[TextProps] = js.native
   
-  @JSImport("@storybook/components/dist/controls", "format")
-  @js.native
-  def format(value: NumberValue): String = js.native
+  @scala.inline
+  def format(value: NumberValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@storybook/components/dist/controls", "parse")
-  @js.native
-  def parse(value: String): Double = js.native
+  @scala.inline
+  def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

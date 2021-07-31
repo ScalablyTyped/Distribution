@@ -8,19 +8,17 @@ import typings.winston.configMod.SyslogConfigSetColors
 import typings.winston.configMod.SyslogConfigSetLevels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bearer extends StObject {
     
-    var bearer: js.UndefOr[String] = js.native
+    var bearer: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Bearer {
     
@@ -53,12 +51,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: CliConfigSetColors = js.native
+    var colors: CliConfigSetColors
     
-    var levels: CliConfigSetLevels = js.native
+    var levels: CliConfigSetLevels
   }
   object Colors {
     
@@ -79,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ColorsLevels extends StObject {
     
-    var colors: SyslogConfigSetColors = js.native
+    var colors: SyslogConfigSetColors
     
-    var levels: SyslogConfigSetLevels = js.native
+    var levels: SyslogConfigSetLevels
   }
   object ColorsLevels {
     
@@ -105,12 +101,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Levels extends StObject {
     
-    var colors: NpmConfigSetColors = js.native
+    var colors: NpmConfigSetColors
     
-    var levels: NpmConfigSetLevels = js.native
+    var levels: NpmConfigSetLevels
   }
   object Levels {
     

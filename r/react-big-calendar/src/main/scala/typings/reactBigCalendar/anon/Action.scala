@@ -6,19 +6,17 @@ import typings.reactBigCalendar.reactBigCalendarStrings.doubleClick
 import typings.reactBigCalendar.reactBigCalendarStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: select | click | doubleClick = js.native
+  var action: select | click | doubleClick
   
-  var end: stringOrDate = js.native
+  var end: stringOrDate
   
-  var slots: js.Array[typings.std.Date | String] = js.native
+  var slots: js.Array[typings.std.Date | String]
   
-  var start: stringOrDate = js.native
+  var start: stringOrDate
 }
 object Action {
   

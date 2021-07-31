@@ -10,7 +10,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemMod extends Shortcut {
@@ -23,22 +22,21 @@ object listItemMod extends Shortcut {
   @js.native
   val Meta: FC[ListItemMetaProps] = js.native
   
-  @js.native
   trait ListItemMetaProps extends StObject {
     
-    var avatar: js.UndefOr[ReactNode] = js.native
+    var avatar: js.UndefOr[ReactNode] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ListItemMetaProps {
     
@@ -95,18 +93,19 @@ object listItemMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait ListItemProps extends HTMLAttributes[HTMLDivElement] {
+  trait ListItemProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var actions: js.UndefOr[js.Array[ReactNode]] = js.native
+    var actions: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
-    var colStyle: js.UndefOr[CSSProperties] = js.native
+    var colStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var grid: js.UndefOr[ListGridType] = js.native
+    var grid: js.UndefOr[ListGridType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object ListItemProps {
     
@@ -155,7 +154,9 @@ object listItemMod extends Shortcut {
   }
   
   @js.native
-  trait ListItemTypeProps extends FunctionComponent[ListItemProps] {
+  trait ListItemTypeProps
+    extends StObject
+       with FunctionComponent[ListItemProps] {
     
     var Meta: FC[ListItemMetaProps] = js.native
   }

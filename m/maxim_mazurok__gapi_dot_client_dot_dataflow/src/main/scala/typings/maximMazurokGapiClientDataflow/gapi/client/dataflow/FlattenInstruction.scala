@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlattenInstruction extends StObject {
   
   /** Describes the inputs to the flatten instruction. */
-  var inputs: js.UndefOr[js.Array[InstructionInput]] = js.native
+  var inputs: js.UndefOr[js.Array[InstructionInput]] = js.undefined
 }
 object FlattenInstruction {
   

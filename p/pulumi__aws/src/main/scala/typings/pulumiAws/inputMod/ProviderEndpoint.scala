@@ -3,303 +3,301 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderEndpoint extends StObject {
   
-  var accessanalyzer: js.UndefOr[Input[String]] = js.native
+  var accessanalyzer: js.UndefOr[Input[String]] = js.undefined
   
-  var acm: js.UndefOr[Input[String]] = js.native
+  var acm: js.UndefOr[Input[String]] = js.undefined
   
-  var acmpca: js.UndefOr[Input[String]] = js.native
+  var acmpca: js.UndefOr[Input[String]] = js.undefined
   
-  var amplify: js.UndefOr[Input[String]] = js.native
+  var amplify: js.UndefOr[Input[String]] = js.undefined
   
-  var apigateway: js.UndefOr[Input[String]] = js.native
+  var apigateway: js.UndefOr[Input[String]] = js.undefined
   
-  var applicationautoscaling: js.UndefOr[Input[String]] = js.native
+  var applicationautoscaling: js.UndefOr[Input[String]] = js.undefined
   
-  var applicationinsights: js.UndefOr[Input[String]] = js.native
+  var applicationinsights: js.UndefOr[Input[String]] = js.undefined
   
-  var appmesh: js.UndefOr[Input[String]] = js.native
+  var appmesh: js.UndefOr[Input[String]] = js.undefined
   
-  var appstream: js.UndefOr[Input[String]] = js.native
+  var appstream: js.UndefOr[Input[String]] = js.undefined
   
-  var appsync: js.UndefOr[Input[String]] = js.native
+  var appsync: js.UndefOr[Input[String]] = js.undefined
   
-  var athena: js.UndefOr[Input[String]] = js.native
+  var athena: js.UndefOr[Input[String]] = js.undefined
   
-  var autoscaling: js.UndefOr[Input[String]] = js.native
+  var autoscaling: js.UndefOr[Input[String]] = js.undefined
   
-  var autoscalingplans: js.UndefOr[Input[String]] = js.native
+  var autoscalingplans: js.UndefOr[Input[String]] = js.undefined
   
-  var backup: js.UndefOr[Input[String]] = js.native
+  var backup: js.UndefOr[Input[String]] = js.undefined
   
-  var batch: js.UndefOr[Input[String]] = js.native
+  var batch: js.UndefOr[Input[String]] = js.undefined
   
-  var budgets: js.UndefOr[Input[String]] = js.native
+  var budgets: js.UndefOr[Input[String]] = js.undefined
   
-  var cloud9: js.UndefOr[Input[String]] = js.native
+  var cloud9: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudformation: js.UndefOr[Input[String]] = js.native
+  var cloudformation: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudfront: js.UndefOr[Input[String]] = js.native
+  var cloudfront: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudhsm: js.UndefOr[Input[String]] = js.native
+  var cloudhsm: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudsearch: js.UndefOr[Input[String]] = js.native
+  var cloudsearch: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudtrail: js.UndefOr[Input[String]] = js.native
+  var cloudtrail: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudwatch: js.UndefOr[Input[String]] = js.native
+  var cloudwatch: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudwatchevents: js.UndefOr[Input[String]] = js.native
+  var cloudwatchevents: js.UndefOr[Input[String]] = js.undefined
   
-  var cloudwatchlogs: js.UndefOr[Input[String]] = js.native
+  var cloudwatchlogs: js.UndefOr[Input[String]] = js.undefined
   
-  var codeartifact: js.UndefOr[Input[String]] = js.native
+  var codeartifact: js.UndefOr[Input[String]] = js.undefined
   
-  var codebuild: js.UndefOr[Input[String]] = js.native
+  var codebuild: js.UndefOr[Input[String]] = js.undefined
   
-  var codecommit: js.UndefOr[Input[String]] = js.native
+  var codecommit: js.UndefOr[Input[String]] = js.undefined
   
-  var codedeploy: js.UndefOr[Input[String]] = js.native
+  var codedeploy: js.UndefOr[Input[String]] = js.undefined
   
-  var codepipeline: js.UndefOr[Input[String]] = js.native
+  var codepipeline: js.UndefOr[Input[String]] = js.undefined
   
-  var codestarconnections: js.UndefOr[Input[String]] = js.native
+  var codestarconnections: js.UndefOr[Input[String]] = js.undefined
   
-  var cognitoidentity: js.UndefOr[Input[String]] = js.native
+  var cognitoidentity: js.UndefOr[Input[String]] = js.undefined
   
-  var cognitoidp: js.UndefOr[Input[String]] = js.native
+  var cognitoidp: js.UndefOr[Input[String]] = js.undefined
   
-  var configservice: js.UndefOr[Input[String]] = js.native
+  var configservice: js.UndefOr[Input[String]] = js.undefined
   
-  var cur: js.UndefOr[Input[String]] = js.native
+  var cur: js.UndefOr[Input[String]] = js.undefined
   
-  var dataexchange: js.UndefOr[Input[String]] = js.native
+  var dataexchange: js.UndefOr[Input[String]] = js.undefined
   
-  var datapipeline: js.UndefOr[Input[String]] = js.native
+  var datapipeline: js.UndefOr[Input[String]] = js.undefined
   
-  var datasync: js.UndefOr[Input[String]] = js.native
+  var datasync: js.UndefOr[Input[String]] = js.undefined
   
-  var dax: js.UndefOr[Input[String]] = js.native
+  var dax: js.UndefOr[Input[String]] = js.undefined
   
-  var devicefarm: js.UndefOr[Input[String]] = js.native
+  var devicefarm: js.UndefOr[Input[String]] = js.undefined
   
-  var directconnect: js.UndefOr[Input[String]] = js.native
+  var directconnect: js.UndefOr[Input[String]] = js.undefined
   
-  var dlm: js.UndefOr[Input[String]] = js.native
+  var dlm: js.UndefOr[Input[String]] = js.undefined
   
-  var dms: js.UndefOr[Input[String]] = js.native
+  var dms: js.UndefOr[Input[String]] = js.undefined
   
-  var docdb: js.UndefOr[Input[String]] = js.native
+  var docdb: js.UndefOr[Input[String]] = js.undefined
   
-  var ds: js.UndefOr[Input[String]] = js.native
+  var ds: js.UndefOr[Input[String]] = js.undefined
   
-  var dynamodb: js.UndefOr[Input[String]] = js.native
+  var dynamodb: js.UndefOr[Input[String]] = js.undefined
   
-  var ec2: js.UndefOr[Input[String]] = js.native
+  var ec2: js.UndefOr[Input[String]] = js.undefined
   
-  var ecr: js.UndefOr[Input[String]] = js.native
+  var ecr: js.UndefOr[Input[String]] = js.undefined
   
-  var ecs: js.UndefOr[Input[String]] = js.native
+  var ecs: js.UndefOr[Input[String]] = js.undefined
   
-  var efs: js.UndefOr[Input[String]] = js.native
+  var efs: js.UndefOr[Input[String]] = js.undefined
   
-  var eks: js.UndefOr[Input[String]] = js.native
+  var eks: js.UndefOr[Input[String]] = js.undefined
   
-  var elasticache: js.UndefOr[Input[String]] = js.native
+  var elasticache: js.UndefOr[Input[String]] = js.undefined
   
-  var elasticbeanstalk: js.UndefOr[Input[String]] = js.native
+  var elasticbeanstalk: js.UndefOr[Input[String]] = js.undefined
   
-  var elastictranscoder: js.UndefOr[Input[String]] = js.native
+  var elastictranscoder: js.UndefOr[Input[String]] = js.undefined
   
-  var elb: js.UndefOr[Input[String]] = js.native
+  var elb: js.UndefOr[Input[String]] = js.undefined
   
-  var emr: js.UndefOr[Input[String]] = js.native
+  var emr: js.UndefOr[Input[String]] = js.undefined
   
-  var es: js.UndefOr[Input[String]] = js.native
+  var es: js.UndefOr[Input[String]] = js.undefined
   
-  var firehose: js.UndefOr[Input[String]] = js.native
+  var firehose: js.UndefOr[Input[String]] = js.undefined
   
-  var fms: js.UndefOr[Input[String]] = js.native
+  var fms: js.UndefOr[Input[String]] = js.undefined
   
-  var forecast: js.UndefOr[Input[String]] = js.native
+  var forecast: js.UndefOr[Input[String]] = js.undefined
   
-  var fsx: js.UndefOr[Input[String]] = js.native
+  var fsx: js.UndefOr[Input[String]] = js.undefined
   
-  var gamelift: js.UndefOr[Input[String]] = js.native
+  var gamelift: js.UndefOr[Input[String]] = js.undefined
   
-  var glacier: js.UndefOr[Input[String]] = js.native
+  var glacier: js.UndefOr[Input[String]] = js.undefined
   
-  var globalaccelerator: js.UndefOr[Input[String]] = js.native
+  var globalaccelerator: js.UndefOr[Input[String]] = js.undefined
   
-  var glue: js.UndefOr[Input[String]] = js.native
+  var glue: js.UndefOr[Input[String]] = js.undefined
   
-  var greengrass: js.UndefOr[Input[String]] = js.native
+  var greengrass: js.UndefOr[Input[String]] = js.undefined
   
-  var guardduty: js.UndefOr[Input[String]] = js.native
+  var guardduty: js.UndefOr[Input[String]] = js.undefined
   
-  var iam: js.UndefOr[Input[String]] = js.native
+  var iam: js.UndefOr[Input[String]] = js.undefined
   
-  var identitystore: js.UndefOr[Input[String]] = js.native
+  var identitystore: js.UndefOr[Input[String]] = js.undefined
   
-  var imagebuilder: js.UndefOr[Input[String]] = js.native
+  var imagebuilder: js.UndefOr[Input[String]] = js.undefined
   
-  var inspector: js.UndefOr[Input[String]] = js.native
+  var inspector: js.UndefOr[Input[String]] = js.undefined
   
-  var iot: js.UndefOr[Input[String]] = js.native
+  var iot: js.UndefOr[Input[String]] = js.undefined
   
-  var iotanalytics: js.UndefOr[Input[String]] = js.native
+  var iotanalytics: js.UndefOr[Input[String]] = js.undefined
   
-  var iotevents: js.UndefOr[Input[String]] = js.native
+  var iotevents: js.UndefOr[Input[String]] = js.undefined
   
-  var kafka: js.UndefOr[Input[String]] = js.native
+  var kafka: js.UndefOr[Input[String]] = js.undefined
   
-  var kinesis: js.UndefOr[Input[String]] = js.native
+  var kinesis: js.UndefOr[Input[String]] = js.undefined
   
-  var kinesisanalytics: js.UndefOr[Input[String]] = js.native
+  var kinesisanalytics: js.UndefOr[Input[String]] = js.undefined
   
-  var kinesisanalyticsv2: js.UndefOr[Input[String]] = js.native
+  var kinesisanalyticsv2: js.UndefOr[Input[String]] = js.undefined
   
-  var kinesisvideo: js.UndefOr[Input[String]] = js.native
+  var kinesisvideo: js.UndefOr[Input[String]] = js.undefined
   
-  var kms: js.UndefOr[Input[String]] = js.native
+  var kms: js.UndefOr[Input[String]] = js.undefined
   
-  var lakeformation: js.UndefOr[Input[String]] = js.native
+  var lakeformation: js.UndefOr[Input[String]] = js.undefined
   
-  var lambda: js.UndefOr[Input[String]] = js.native
+  var lambda: js.UndefOr[Input[String]] = js.undefined
   
-  var lexmodels: js.UndefOr[Input[String]] = js.native
+  var lexmodels: js.UndefOr[Input[String]] = js.undefined
   
-  var licensemanager: js.UndefOr[Input[String]] = js.native
+  var licensemanager: js.UndefOr[Input[String]] = js.undefined
   
-  var lightsail: js.UndefOr[Input[String]] = js.native
+  var lightsail: js.UndefOr[Input[String]] = js.undefined
   
-  var macie: js.UndefOr[Input[String]] = js.native
+  var macie: js.UndefOr[Input[String]] = js.undefined
   
-  var macie2: js.UndefOr[Input[String]] = js.native
+  var macie2: js.UndefOr[Input[String]] = js.undefined
   
-  var managedblockchain: js.UndefOr[Input[String]] = js.native
+  var managedblockchain: js.UndefOr[Input[String]] = js.undefined
   
-  var marketplacecatalog: js.UndefOr[Input[String]] = js.native
+  var marketplacecatalog: js.UndefOr[Input[String]] = js.undefined
   
-  var mediaconnect: js.UndefOr[Input[String]] = js.native
+  var mediaconnect: js.UndefOr[Input[String]] = js.undefined
   
-  var mediaconvert: js.UndefOr[Input[String]] = js.native
+  var mediaconvert: js.UndefOr[Input[String]] = js.undefined
   
-  var medialive: js.UndefOr[Input[String]] = js.native
+  var medialive: js.UndefOr[Input[String]] = js.undefined
   
-  var mediapackage: js.UndefOr[Input[String]] = js.native
+  var mediapackage: js.UndefOr[Input[String]] = js.undefined
   
-  var mediastore: js.UndefOr[Input[String]] = js.native
+  var mediastore: js.UndefOr[Input[String]] = js.undefined
   
-  var mediastoredata: js.UndefOr[Input[String]] = js.native
+  var mediastoredata: js.UndefOr[Input[String]] = js.undefined
   
-  var mq: js.UndefOr[Input[String]] = js.native
+  var mq: js.UndefOr[Input[String]] = js.undefined
   
-  var neptune: js.UndefOr[Input[String]] = js.native
+  var neptune: js.UndefOr[Input[String]] = js.undefined
   
-  var networkfirewall: js.UndefOr[Input[String]] = js.native
+  var networkfirewall: js.UndefOr[Input[String]] = js.undefined
   
-  var networkmanager: js.UndefOr[Input[String]] = js.native
+  var networkmanager: js.UndefOr[Input[String]] = js.undefined
   
-  var opsworks: js.UndefOr[Input[String]] = js.native
+  var opsworks: js.UndefOr[Input[String]] = js.undefined
   
-  var organizations: js.UndefOr[Input[String]] = js.native
+  var organizations: js.UndefOr[Input[String]] = js.undefined
   
-  var outposts: js.UndefOr[Input[String]] = js.native
+  var outposts: js.UndefOr[Input[String]] = js.undefined
   
-  var personalize: js.UndefOr[Input[String]] = js.native
+  var personalize: js.UndefOr[Input[String]] = js.undefined
   
-  var pinpoint: js.UndefOr[Input[String]] = js.native
+  var pinpoint: js.UndefOr[Input[String]] = js.undefined
   
-  var pricing: js.UndefOr[Input[String]] = js.native
+  var pricing: js.UndefOr[Input[String]] = js.undefined
   
-  var qldb: js.UndefOr[Input[String]] = js.native
+  var qldb: js.UndefOr[Input[String]] = js.undefined
   
-  var quicksight: js.UndefOr[Input[String]] = js.native
+  var quicksight: js.UndefOr[Input[String]] = js.undefined
   
-  var ram: js.UndefOr[Input[String]] = js.native
+  var ram: js.UndefOr[Input[String]] = js.undefined
   
-  var rds: js.UndefOr[Input[String]] = js.native
+  var rds: js.UndefOr[Input[String]] = js.undefined
   
-  var redshift: js.UndefOr[Input[String]] = js.native
+  var redshift: js.UndefOr[Input[String]] = js.undefined
   
-  var resourcegroups: js.UndefOr[Input[String]] = js.native
+  var resourcegroups: js.UndefOr[Input[String]] = js.undefined
   
-  var resourcegroupstaggingapi: js.UndefOr[Input[String]] = js.native
+  var resourcegroupstaggingapi: js.UndefOr[Input[String]] = js.undefined
   
-  var route53: js.UndefOr[Input[String]] = js.native
+  var route53: js.UndefOr[Input[String]] = js.undefined
   
-  var route53domains: js.UndefOr[Input[String]] = js.native
+  var route53domains: js.UndefOr[Input[String]] = js.undefined
   
-  var route53resolver: js.UndefOr[Input[String]] = js.native
+  var route53resolver: js.UndefOr[Input[String]] = js.undefined
   
-  var s3: js.UndefOr[Input[String]] = js.native
+  var s3: js.UndefOr[Input[String]] = js.undefined
   
-  var s3control: js.UndefOr[Input[String]] = js.native
+  var s3control: js.UndefOr[Input[String]] = js.undefined
   
-  var s3outposts: js.UndefOr[Input[String]] = js.native
+  var s3outposts: js.UndefOr[Input[String]] = js.undefined
   
-  var sagemaker: js.UndefOr[Input[String]] = js.native
+  var sagemaker: js.UndefOr[Input[String]] = js.undefined
   
-  var sdb: js.UndefOr[Input[String]] = js.native
+  var sdb: js.UndefOr[Input[String]] = js.undefined
   
-  var secretsmanager: js.UndefOr[Input[String]] = js.native
+  var secretsmanager: js.UndefOr[Input[String]] = js.undefined
   
-  var securityhub: js.UndefOr[Input[String]] = js.native
+  var securityhub: js.UndefOr[Input[String]] = js.undefined
   
-  var serverlessrepo: js.UndefOr[Input[String]] = js.native
+  var serverlessrepo: js.UndefOr[Input[String]] = js.undefined
   
-  var servicecatalog: js.UndefOr[Input[String]] = js.native
+  var servicecatalog: js.UndefOr[Input[String]] = js.undefined
   
-  var servicediscovery: js.UndefOr[Input[String]] = js.native
+  var servicediscovery: js.UndefOr[Input[String]] = js.undefined
   
-  var servicequotas: js.UndefOr[Input[String]] = js.native
+  var servicequotas: js.UndefOr[Input[String]] = js.undefined
   
-  var ses: js.UndefOr[Input[String]] = js.native
+  var ses: js.UndefOr[Input[String]] = js.undefined
   
-  var shield: js.UndefOr[Input[String]] = js.native
+  var shield: js.UndefOr[Input[String]] = js.undefined
   
-  var sns: js.UndefOr[Input[String]] = js.native
+  var sns: js.UndefOr[Input[String]] = js.undefined
   
-  var sqs: js.UndefOr[Input[String]] = js.native
+  var sqs: js.UndefOr[Input[String]] = js.undefined
   
-  var ssm: js.UndefOr[Input[String]] = js.native
+  var ssm: js.UndefOr[Input[String]] = js.undefined
   
-  var ssoadmin: js.UndefOr[Input[String]] = js.native
+  var ssoadmin: js.UndefOr[Input[String]] = js.undefined
   
-  var stepfunctions: js.UndefOr[Input[String]] = js.native
+  var stepfunctions: js.UndefOr[Input[String]] = js.undefined
   
-  var storagegateway: js.UndefOr[Input[String]] = js.native
+  var storagegateway: js.UndefOr[Input[String]] = js.undefined
   
-  var sts: js.UndefOr[Input[String]] = js.native
+  var sts: js.UndefOr[Input[String]] = js.undefined
   
-  var swf: js.UndefOr[Input[String]] = js.native
+  var swf: js.UndefOr[Input[String]] = js.undefined
   
-  var synthetics: js.UndefOr[Input[String]] = js.native
+  var synthetics: js.UndefOr[Input[String]] = js.undefined
   
-  var timestreamwrite: js.UndefOr[Input[String]] = js.native
+  var timestreamwrite: js.UndefOr[Input[String]] = js.undefined
   
-  var transfer: js.UndefOr[Input[String]] = js.native
+  var transfer: js.UndefOr[Input[String]] = js.undefined
   
-  var waf: js.UndefOr[Input[String]] = js.native
+  var waf: js.UndefOr[Input[String]] = js.undefined
   
-  var wafregional: js.UndefOr[Input[String]] = js.native
+  var wafregional: js.UndefOr[Input[String]] = js.undefined
   
-  var wafv2: js.UndefOr[Input[String]] = js.native
+  var wafv2: js.UndefOr[Input[String]] = js.undefined
   
-  var worklink: js.UndefOr[Input[String]] = js.native
+  var worklink: js.UndefOr[Input[String]] = js.undefined
   
-  var workmail: js.UndefOr[Input[String]] = js.native
+  var workmail: js.UndefOr[Input[String]] = js.undefined
   
-  var workspaces: js.UndefOr[Input[String]] = js.native
+  var workspaces: js.UndefOr[Input[String]] = js.undefined
   
-  var xray: js.UndefOr[Input[String]] = js.native
+  var xray: js.UndefOr[Input[String]] = js.undefined
 }
 object ProviderEndpoint {
   

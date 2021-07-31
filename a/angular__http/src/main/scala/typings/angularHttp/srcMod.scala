@@ -7,7 +7,6 @@ import typings.angularHttp.interfacesMod.RequestOptionsArgs
 import typings.angularHttp.interfacesMod.ResponseOptionsArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcMod {
@@ -42,8 +41,8 @@ object srcMod {
   class CookieXSRFStrategy ()
     extends typings.angularHttp.xhrBackendMod.CookieXSRFStrategy {
     def this(_cookieName: String) = this()
-    def this(_cookieName: js.UndefOr[scala.Nothing], _headerName: String) = this()
     def this(_cookieName: String, _headerName: String) = this()
+    def this(_cookieName: Unit, _headerName: String) = this()
   }
   
   @JSImport("@angular/http/src", "Headers")
@@ -56,12 +55,15 @@ object srcMod {
   /* static members */
   object Headers {
     
+    @JSImport("@angular/http/src", "Headers")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
-    @JSImport("@angular/http/src", "Headers.fromResponseHeaderString")
-    @js.native
-    def fromResponseHeaderString(headersString: String): typings.angularHttp.headersMod.Headers = js.native
+    @scala.inline
+    def fromResponseHeaderString(headersString: String): typings.angularHttp.headersMod.Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[typings.angularHttp.headersMod.Headers]
   }
   
   @JSImport("@angular/http/src", "Http")
@@ -114,19 +116,19 @@ object srcMod {
   object ReadyState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ReadyState with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ReadyState & Double] = js.native
     
-    /* 5 */ val Cancelled: typings.angularHttp.enumsMod.ReadyState.Cancelled with Double = js.native
+    /* 5 */ val Cancelled: typings.angularHttp.enumsMod.ReadyState.Cancelled & Double = js.native
     
-    /* 4 */ val Done: typings.angularHttp.enumsMod.ReadyState.Done with Double = js.native
+    /* 4 */ val Done: typings.angularHttp.enumsMod.ReadyState.Done & Double = js.native
     
-    /* 2 */ val HeadersReceived: typings.angularHttp.enumsMod.ReadyState.HeadersReceived with Double = js.native
+    /* 2 */ val HeadersReceived: typings.angularHttp.enumsMod.ReadyState.HeadersReceived & Double = js.native
     
-    /* 3 */ val Loading: typings.angularHttp.enumsMod.ReadyState.Loading with Double = js.native
+    /* 3 */ val Loading: typings.angularHttp.enumsMod.ReadyState.Loading & Double = js.native
     
-    /* 1 */ val Open: typings.angularHttp.enumsMod.ReadyState.Open with Double = js.native
+    /* 1 */ val Open: typings.angularHttp.enumsMod.ReadyState.Open & Double = js.native
     
-    /* 0 */ val Unsent: typings.angularHttp.enumsMod.ReadyState.Unsent with Double = js.native
+    /* 0 */ val Unsent: typings.angularHttp.enumsMod.ReadyState.Unsent & Double = js.native
   }
   
   @JSImport("@angular/http/src", "Request")
@@ -141,21 +143,21 @@ object srcMod {
   object RequestMethod extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.RequestMethod with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.RequestMethod & Double] = js.native
     
-    /* 3 */ val Delete: typings.angularHttp.enumsMod.RequestMethod.Delete with Double = js.native
+    /* 3 */ val Delete: typings.angularHttp.enumsMod.RequestMethod.Delete & Double = js.native
     
-    /* 0 */ val Get: typings.angularHttp.enumsMod.RequestMethod.Get with Double = js.native
+    /* 0 */ val Get: typings.angularHttp.enumsMod.RequestMethod.Get & Double = js.native
     
-    /* 5 */ val Head: typings.angularHttp.enumsMod.RequestMethod.Head with Double = js.native
+    /* 5 */ val Head: typings.angularHttp.enumsMod.RequestMethod.Head & Double = js.native
     
-    /* 4 */ val Options: typings.angularHttp.enumsMod.RequestMethod.Options with Double = js.native
+    /* 4 */ val Options: typings.angularHttp.enumsMod.RequestMethod.Options & Double = js.native
     
-    /* 6 */ val Patch: typings.angularHttp.enumsMod.RequestMethod.Patch with Double = js.native
+    /* 6 */ val Patch: typings.angularHttp.enumsMod.RequestMethod.Patch & Double = js.native
     
-    /* 1 */ val Post: typings.angularHttp.enumsMod.RequestMethod.Post with Double = js.native
+    /* 1 */ val Post: typings.angularHttp.enumsMod.RequestMethod.Post & Double = js.native
     
-    /* 2 */ val Put: typings.angularHttp.enumsMod.RequestMethod.Put with Double = js.native
+    /* 2 */ val Put: typings.angularHttp.enumsMod.RequestMethod.Put & Double = js.native
   }
   
   @JSImport("@angular/http/src", "RequestOptions")
@@ -177,15 +179,15 @@ object srcMod {
   object ResponseContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseContentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseContentType & Double] = js.native
     
-    /* 2 */ val ArrayBuffer: typings.angularHttp.enumsMod.ResponseContentType.ArrayBuffer with Double = js.native
+    /* 2 */ val ArrayBuffer: typings.angularHttp.enumsMod.ResponseContentType.ArrayBuffer & Double = js.native
     
-    /* 3 */ val Blob: typings.angularHttp.enumsMod.ResponseContentType.Blob with Double = js.native
+    /* 3 */ val Blob: typings.angularHttp.enumsMod.ResponseContentType.Blob & Double = js.native
     
-    /* 1 */ val Json: typings.angularHttp.enumsMod.ResponseContentType.Json with Double = js.native
+    /* 1 */ val Json: typings.angularHttp.enumsMod.ResponseContentType.Json & Double = js.native
     
-    /* 0 */ val Text: typings.angularHttp.enumsMod.ResponseContentType.Text with Double = js.native
+    /* 0 */ val Text: typings.angularHttp.enumsMod.ResponseContentType.Text & Double = js.native
   }
   
   @JSImport("@angular/http/src", "ResponseOptions")
@@ -200,17 +202,17 @@ object srcMod {
   object ResponseType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseType & Double] = js.native
     
-    /* 0 */ val Basic: typings.angularHttp.enumsMod.ResponseType.Basic with Double = js.native
+    /* 0 */ val Basic: typings.angularHttp.enumsMod.ResponseType.Basic & Double = js.native
     
-    /* 1 */ val Cors: typings.angularHttp.enumsMod.ResponseType.Cors with Double = js.native
+    /* 1 */ val Cors: typings.angularHttp.enumsMod.ResponseType.Cors & Double = js.native
     
-    /* 2 */ val Default: typings.angularHttp.enumsMod.ResponseType.Default with Double = js.native
+    /* 2 */ val Default: typings.angularHttp.enumsMod.ResponseType.Default & Double = js.native
     
-    /* 3 */ val Error: typings.angularHttp.enumsMod.ResponseType.Error with Double = js.native
+    /* 3 */ val Error: typings.angularHttp.enumsMod.ResponseType.Error & Double = js.native
     
-    /* 4 */ val Opaque: typings.angularHttp.enumsMod.ResponseType.Opaque with Double = js.native
+    /* 4 */ val Opaque: typings.angularHttp.enumsMod.ResponseType.Opaque & Double = js.native
   }
   
   @JSImport("@angular/http/src", "URLSearchParams")
@@ -218,11 +220,8 @@ object srcMod {
   class URLSearchParams ()
     extends typings.angularHttp.urlSearchParamsMod.URLSearchParams {
     def this(rawParams: String) = this()
-    def this(
-      rawParams: js.UndefOr[scala.Nothing],
-      queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder
-    ) = this()
     def this(rawParams: String, queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder) = this()
+    def this(rawParams: Unit, queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder) = this()
   }
   
   @JSImport("@angular/http/src", "VERSION")

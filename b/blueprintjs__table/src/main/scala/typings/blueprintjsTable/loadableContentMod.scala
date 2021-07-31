@@ -3,7 +3,6 @@ package typings.blueprintjsTable
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadableContentMod {
@@ -22,20 +21,19 @@ object loadableContentMod {
     var style: js.Any = js.native
   }
   
-  @js.native
   trait ILoadableContentProps extends StObject {
     
     /**
       * If true, render a skeleton. Otherwise render the single, non-string child passed to this
       * component.
       */
-    var loading: Boolean = js.native
+    var loading: Boolean
     
     /**
       * If true, show a skeleton of random width (25-75% cell width) when rendering the loading state.
       * @default false
       */
-    var variableLength: js.UndefOr[Boolean] = js.native
+    var variableLength: js.UndefOr[Boolean] = js.undefined
   }
   object ILoadableContentProps {
     

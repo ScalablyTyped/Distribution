@@ -2,21 +2,19 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPermissionsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the permissions.
     */
-  var permissions: js.UndefOr[ResourceSharePermissionList] = js.native
+  var permissions: js.UndefOr[ResourceSharePermissionList] = js.undefined
 }
 object ListPermissionsResponse {
   

@@ -10,7 +10,6 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client")
@@ -28,12 +27,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class OAuth2Client () extends AuthClient {
   def this(clientId: String) = this()
   def this(options: OAuth2ClientOptions) = this()
-  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
   def this(clientId: String, clientSecret: String) = this()
-  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
-  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
-  def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+  def this(clientId: Unit, clientSecret: String) = this()
   def this(clientId: String, clientSecret: String, redirectUri: String) = this()
+  def this(clientId: String, clientSecret: Unit, redirectUri: String) = this()
+  def this(clientId: Unit, clientSecret: String, redirectUri: String) = this()
+  def this(clientId: Unit, clientSecret: Unit, redirectUri: String) = this()
   
   var _clientId: js.UndefOr[String] = js.native
   
@@ -222,34 +221,7 @@ class OAuth2Client () extends AuthClient {
     * @return Returns a promise resolving to LoginTicket on verification.
     */
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(
-    jwt: String,
-    certs: Certificates | PublicKeys,
-    requiredAudience: js.UndefOr[scala.Nothing],
-    issuers: js.UndefOr[scala.Nothing],
-    maxExpiry: Double
-  ): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(
-    jwt: String,
-    certs: Certificates | PublicKeys,
-    requiredAudience: js.UndefOr[scala.Nothing],
-    issuers: js.Array[String]
-  ): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(
-    jwt: String,
-    certs: Certificates | PublicKeys,
-    requiredAudience: js.UndefOr[scala.Nothing],
-    issuers: js.Array[String],
-    maxExpiry: Double
-  ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(
-    jwt: String,
-    certs: Certificates | PublicKeys,
-    requiredAudience: String,
-    issuers: js.UndefOr[scala.Nothing],
-    maxExpiry: Double
-  ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String, issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
@@ -258,14 +230,14 @@ class OAuth2Client () extends AuthClient {
     issuers: js.Array[String],
     maxExpiry: Double
   ): js.Promise[LoginTicket] = js.native
-  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
     certs: Certificates | PublicKeys,
-    requiredAudience: js.Array[String],
-    issuers: js.UndefOr[scala.Nothing],
+    requiredAudience: String,
+    issuers: Unit,
     maxExpiry: Double
   ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
     certs: Certificates | PublicKeys,
@@ -279,9 +251,35 @@ class OAuth2Client () extends AuthClient {
     issuers: js.Array[String],
     maxExpiry: Double
   ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.Array[String],
+    issuers: Unit,
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: Unit, issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: Unit,
+    issuers: js.Array[String],
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: Unit,
+    issuers: Unit,
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
 }
 /* static members */
 object OAuth2Client {
+  
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Clock skew - five minutes in seconds
@@ -354,7 +352,6 @@ object OAuth2Client {
     * Generates an URL to revoke the given token.
     * @param token The existing token to be revoked.
     */
-  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.getRevokeTokenUrl")
-  @js.native
-  def getRevokeTokenUrl(token: String): String = js.native
+  @scala.inline
+  def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

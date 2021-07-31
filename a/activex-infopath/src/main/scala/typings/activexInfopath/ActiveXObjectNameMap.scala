@@ -5,20 +5,18 @@ import typings.activexInfopath.InfoPath.ExternalApplication
 import typings.activexInfopath.InfoPath.InfoPathEditorObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("InfoPath.Application")
-  var InfoPathDotApplication: Application = js.native
+  var InfoPathDotApplication: Application
   
   @JSName("InfoPath.Editor")
-  var InfoPathDotEditor: InfoPathEditorObject = js.native
+  var InfoPathDotEditor: InfoPathEditorObject
   
   @JSName("InfoPath.ExternalApplication")
-  var InfoPathDotExternalApplication: ExternalApplication = js.native
+  var InfoPathDotExternalApplication: ExternalApplication
 }
 object ActiveXObjectNameMap {
   

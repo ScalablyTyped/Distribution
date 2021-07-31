@@ -3,19 +3,17 @@ package typings.formatjsEcma402Abstract.numberMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberFormatLocaleInternalData extends StObject {
   
-  var currencies: Record[String, CurrencyData] = js.native
+  var currencies: Record[String, CurrencyData]
   
-  var nu: js.Array[String] = js.native
+  var nu: js.Array[String]
   
-  var numbers: RawNumberData = js.native
+  var numbers: RawNumberData
   
-  var units: UnitDataTable = js.native
+  var units: UnitDataTable
 }
 object NumberFormatLocaleInternalData {
   

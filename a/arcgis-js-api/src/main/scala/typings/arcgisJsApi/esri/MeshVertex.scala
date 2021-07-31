@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshVertex extends Object {
+trait MeshVertex
+  extends StObject
+     with Object {
   
   /**
     * The distance parameter for this vertex; this only applies when tessellating polylines.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The `u`-coordinate for texture mapping.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var uTexcoord: Double = js.native
+  var uTexcoord: Double
   
   /**
     * The `v`-coordinate for texture mapping.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var vTexcoord: Double = js.native
+  var vTexcoord: Double
   
   /**
     * The `x`-coordinate, expressed in the same units as the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The `x`-offset in screen space; this is used to extrude points (into quads) and polylines, and is 0 for polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var xOffset: Double = js.native
+  var xOffset: Double
   
   /**
     * The `y`-coordinate, expressed in the same units as the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * The `y`-offset in screen space; this is used to extrude points (into quads) and polylines, and is 0 for polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#MeshVertex)
     */
-  var yOffset: Double = js.native
+  var yOffset: Double
 }
 object MeshVertex {
   

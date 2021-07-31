@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delegate extends StObject {
   
   /** The email address of the delegate. */
-  var delegateEmail: js.UndefOr[String] = js.native
+  var delegateEmail: js.UndefOr[String] = js.undefined
   
   /** Indicates whether this address has been verified and can act as a delegate for the account. Read-only. */
-  var verificationStatus: js.UndefOr[String] = js.native
+  var verificationStatus: js.UndefOr[String] = js.undefined
 }
 object Delegate {
   

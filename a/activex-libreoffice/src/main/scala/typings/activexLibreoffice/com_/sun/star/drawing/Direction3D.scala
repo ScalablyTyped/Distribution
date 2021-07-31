@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a 3-dimensional vector. */
-@js.native
 trait Direction3D extends StObject {
   
-  var DirectionX: Double = js.native
+  var DirectionX: Double
   
-  var DirectionY: Double = js.native
+  var DirectionY: Double
   
-  var DirectionZ: Double = js.native
+  var DirectionZ: Double
 }
 object Direction3D {
   

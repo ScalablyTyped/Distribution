@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XContainerListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.SetElement Child objects of this service generally implement SetElement. The template name returned by the child from
   * @see com.sun.star.configuration.GroupAccess A complementary service that provides for static heterogeneous groups of elements within the hierarchy.
   */
-@js.native
 trait SetAccess
-  extends HierarchyAccess
+  extends StObject
+     with HierarchyAccess
      with SimpleSetAccess {
   
   /**
@@ -33,7 +32,7 @@ trait SetAccess
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object SetAccess {
   
@@ -55,7 +54,7 @@ object SetAccess {
     getProperties: () => SafeArray[Property],
     getPropertyByName: String => Property,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     hasByHierarchicalName: String => Boolean,

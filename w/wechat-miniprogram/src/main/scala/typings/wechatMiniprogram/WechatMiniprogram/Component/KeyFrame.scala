@@ -2,104 +2,102 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyFrame extends StObject {
   
   /** 背景颜色，即 CSS background-color */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /** 底边位置，即 CSS bottom */
-  var bottom: js.UndefOr[Double | String] = js.native
+  var bottom: js.UndefOr[Double | String] = js.undefined
   
   /** 动画缓动函数 */
-  var ease: js.UndefOr[String] = js.native
+  var ease: js.UndefOr[String] = js.undefined
   
   /** 高度，即 CSS height */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /** 左边位置，即 CSS left */
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
   /** 变换矩阵，即 CSS transform matrix */
-  var matrix: js.UndefOr[js.Array[Double]] = js.native
+  var matrix: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** 三维变换矩阵，即 CSS transform matrix3d */
-  var matrix3d: js.UndefOr[js.Array[Double]] = js.native
+  var matrix3d: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** 关键帧的偏移，范围[0-1] */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** 不透明度，即 CSS opacity */
-  var opacity: js.UndefOr[Double | String] = js.native
+  var opacity: js.UndefOr[Double | String] = js.undefined
   
   /** 右边位置，即 CSS right */
-  var right: js.UndefOr[Double | String] = js.native
+  var right: js.UndefOr[Double | String] = js.undefined
   
   /** 旋转，即 CSS transform rotate */
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
   
   /** 三维旋转，即 CSS transform rotate3d */
-  var rotate3d: js.UndefOr[js.Array[Double]] = js.native
+  var rotate3d: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** X 方向旋转，即 CSS transform rotateX */
-  var rotateX: js.UndefOr[Double] = js.native
+  var rotateX: js.UndefOr[Double] = js.undefined
   
   /** Y 方向旋转，即 CSS transform rotateY */
-  var rotateY: js.UndefOr[Double] = js.native
+  var rotateY: js.UndefOr[Double] = js.undefined
   
   /** Z 方向旋转，即 CSS transform rotateZ */
-  var rotateZ: js.UndefOr[Double] = js.native
+  var rotateZ: js.UndefOr[Double] = js.undefined
   
   /** 缩放，即 CSS transform scale */
-  var scale: js.UndefOr[js.Array[Double]] = js.native
+  var scale: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** 三维缩放，即 CSS transform scale3d */
-  var scale3d: js.UndefOr[js.Array[Double]] = js.native
+  var scale3d: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** X 方向缩放，即 CSS transform scaleX */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /** Y 方向缩放，即 CSS transform scaleY */
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
   /** Z 方向缩放，即 CSS transform scaleZ */
-  var scaleZ: js.UndefOr[Double] = js.native
+  var scaleZ: js.UndefOr[Double] = js.undefined
   
   /** 倾斜，即 CSS transform skew */
-  var skew: js.UndefOr[js.Array[Double]] = js.native
+  var skew: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** X 方向倾斜，即 CSS transform skewX */
-  var skewX: js.UndefOr[Double] = js.native
+  var skewX: js.UndefOr[Double] = js.undefined
   
   /** Y 方向倾斜，即 CSS transform skewY */
-  var skewY: js.UndefOr[Double] = js.native
+  var skewY: js.UndefOr[Double] = js.undefined
   
   /** 顶边位置，即 CSS top */
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
   
   /** 基点位置，即 CSS transform-origin */
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
   
   /** 位移，即 CSS transform translate */
-  var translate: js.UndefOr[js.Array[Double | String]] = js.native
+  var translate: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /** 三维位移，即 CSS transform translate3d */
-  var translate3d: js.UndefOr[js.Array[Double | String]] = js.native
+  var translate3d: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /** X 方向位移，即 CSS transform translateX */
-  var translateX: js.UndefOr[Double | String] = js.native
+  var translateX: js.UndefOr[Double | String] = js.undefined
   
   /** Y 方向位移，即 CSS transform translateY */
-  var translateY: js.UndefOr[Double | String] = js.native
+  var translateY: js.UndefOr[Double | String] = js.undefined
   
   /** Z 方向位移，即 CSS transform translateZ */
-  var translateZ: js.UndefOr[Double | String] = js.native
+  var translateZ: js.UndefOr[Double | String] = js.undefined
   
   /** 宽度，即 CSS width */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object KeyFrame {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVersionsByFunctionRequest extends StObject {
   
   /**
     * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
-  var FunctionName: NamespacedFunctionName = js.native
+  var FunctionName: NamespacedFunctionName
   
   /**
     * Specify the pagination token that's returned by a previous request to retrieve the next page of results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of versions to return.
     */
-  var MaxItems: js.UndefOr[MaxListItems] = js.native
+  var MaxItems: js.UndefOr[MaxListItems] = js.undefined
 }
 object ListVersionsByFunctionRequest {
   

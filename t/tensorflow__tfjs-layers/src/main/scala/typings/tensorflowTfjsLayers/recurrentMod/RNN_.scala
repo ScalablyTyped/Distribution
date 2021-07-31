@@ -9,7 +9,6 @@ import typings.tensorflowTfjsLayers.topologyMod.InputSpec
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN")
@@ -29,9 +28,9 @@ class RNN_ protected () extends Layer {
   
   var numConstants: js.Any = js.native
   
-  def resetStates(states: js.UndefOr[scala.Nothing], training: Boolean): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]], training: Boolean): Unit = js.native
+  def resetStates(states: Unit, training: Boolean): Unit = js.native
   def resetStates(states: Tensor[Rank]): Unit = js.native
   def resetStates(states: Tensor[Rank], training: Boolean): Unit = js.native
   
@@ -70,10 +69,8 @@ object RNN_ {
   def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   
   /** @nocollapse */
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.fromConfig")
-  @js.native
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.fromConfig")
-  @js.native
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+  @scala.inline
+  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
 }

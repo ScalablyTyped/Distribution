@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glacier {
   
-  @js.native
   trait VaultNotification extends StObject {
     
     /**
       * You can configure a vault to publish a notification for `ArchiveRetrievalCompleted` and `InventoryRetrievalCompleted` events.
       */
-    var events: js.Array[String] = js.native
+    var events: js.Array[String]
     
     /**
       * The SNS Topic ARN.
       */
-    var snsTopic: String = js.native
+    var snsTopic: String
   }
   object VaultNotification {
     

@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Attenuation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PointCloudShading")
@@ -32,7 +31,10 @@ class PointCloudShading () extends StObject {
 /* static members */
 object PointCloudShading {
   
-  @JSImport("cesium", "PointCloudShading.isSupported")
+  @JSImport("cesium", "PointCloudShading")
   @js.native
-  def isSupported(scene: Scene): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -5,16 +5,14 @@ import typings.reactNavigationRouters.typesMod.PartialRoute
 import typings.reactNavigationRouters.typesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  stale :true | undefined,   routes :std.Array<@react-navigation/core.@react-navigation/core.PartialRoute<@react-navigation/core.@react-navigation/core.Route<string, object | undefined>>>}> */
-@js.native
 trait Readonlystaletrueundefine extends StObject {
   
-  val routes: js.Array[PartialRoute[Route[String, js.UndefOr[js.Object]]]] = js.native
+  val routes: js.Array[PartialRoute[Route[String, js.UndefOr[js.Object]]]]
   
-  val stale: js.UndefOr[`true`] = js.native
+  val stale: js.UndefOr[`true`] = js.undefined
 }
 object Readonlystaletrueundefine {
   

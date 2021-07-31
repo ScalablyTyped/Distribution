@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.list_
 import typings.chromeApps.chromeAppsStrings.progress_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BASIC extends StObject {
   
-  var BASIC: basic_ = js.native
+  var BASIC: basic_
   
-  var IMAGE: image_ = js.native
+  var IMAGE: image_
   
-  var LIST: list_ = js.native
+  var LIST: list_
   
-  var PROGRESS: progress_ = js.native
+  var PROGRESS: progress_
 }
 object BASIC {
   
   @scala.inline
-  def apply(BASIC: basic_, IMAGE: image_, LIST: list_, PROGRESS: progress_): BASIC = {
-    val __obj = js.Dynamic.literal(BASIC = BASIC.asInstanceOf[js.Any], IMAGE = IMAGE.asInstanceOf[js.Any], LIST = LIST.asInstanceOf[js.Any], PROGRESS = PROGRESS.asInstanceOf[js.Any])
+  def apply(): BASIC = {
+    val __obj = js.Dynamic.literal(BASIC = "basic", IMAGE = "image", LIST = "list", PROGRESS = "progress")
     __obj.asInstanceOf[BASIC]
   }
   

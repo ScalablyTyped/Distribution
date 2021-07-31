@@ -2,25 +2,23 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginValue extends StObject {
   
-  var beginValue: js.Any = js.native
+  var beginValue: js.Any
   
-  var delay: js.Any = js.native
+  var delay: js.Any
   
-  var duration: js.Any = js.native
+  var duration: js.Any
   
-  var easing: js.Any = js.native
+  var easing: js.Any
   
-  var endValue: js.Any = js.native
+  var endValue: js.Any
   
-  var onEnd: js.Any = js.native
+  var onEnd: js.Any
   
-  var stackBehavior: js.Any = js.native
+  var stackBehavior: js.Any
 }
 object BeginValue {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EcsCluster extends StObject {
   
   /**
     * The cluster's ARN.
     */
-  var EcsClusterArn: js.UndefOr[String] = js.native
+  var EcsClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     * The cluster name.
     */
-  var EcsClusterName: js.UndefOr[String] = js.native
+  var EcsClusterName: js.UndefOr[String] = js.undefined
   
   /**
     * The time and date that the cluster was registered with the stack.
     */
-  var RegisteredAt: js.UndefOr[DateTime] = js.native
+  var RegisteredAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object EcsCluster {
   

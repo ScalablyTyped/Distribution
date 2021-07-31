@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectedCount extends StObject {
   
-  var selectedCount: Double = js.native
+  var selectedCount: Double
   
-  var totalCount: Double = js.native
+  var totalCount: Double
 }
 object SelectedCount {
   

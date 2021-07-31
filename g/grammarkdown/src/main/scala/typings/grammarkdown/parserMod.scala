@@ -7,7 +7,6 @@ import typings.grammarkdown.typesMod.Range
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -189,12 +188,11 @@ object parserMod {
     var tryStopParsingList: js.Any = js.native
   }
   
-  @js.native
   trait TextChange extends StObject {
     
-    var range: Range = js.native
+    var range: Range
     
-    var text: String = js.native
+    var text: String
   }
   object TextChange {
     
@@ -204,21 +202,21 @@ object parserMod {
       __obj.asInstanceOf[TextChange]
     }
     
-    @JSImport("grammarkdown/dist/parser", "TextChange.applyChange")
+    @JSImport("grammarkdown/dist/parser", "TextChange")
     @js.native
-    def applyChange(originalText: String, change: TextChange): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("grammarkdown/dist/parser", "TextChange.clone")
-    @js.native
-    def clone_(change: TextChange): Text = js.native
+    @scala.inline
+    def applyChange(originalText: String, change: TextChange): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(originalText.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("grammarkdown/dist/parser", "TextChange.create")
-    @js.native
-    def create(text: String, range: Range): Text = js.native
+    @scala.inline
+    def clone_(change: TextChange): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(change.asInstanceOf[js.Any]).asInstanceOf[Text]
     
-    @JSImport("grammarkdown/dist/parser", "TextChange.isUnchanged")
-    @js.native
-    def isUnchanged(change: TextChange): Boolean = js.native
+    @scala.inline
+    def create(text: String, range: Range): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Text]
+    
+    @scala.inline
+    def isUnchanged(change: TextChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnchanged")(change.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @scala.inline
     implicit class TextChangeMutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {

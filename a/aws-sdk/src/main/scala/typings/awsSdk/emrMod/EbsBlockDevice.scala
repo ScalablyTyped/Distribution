@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EbsBlockDevice extends StObject {
   
   /**
     * The device name that is exposed to the instance, such as /dev/sdh.
     */
-  var Device: js.UndefOr[String] = js.native
+  var Device: js.UndefOr[String] = js.undefined
   
   /**
     * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
     */
-  var VolumeSpecification: js.UndefOr[typings.awsSdk.emrMod.VolumeSpecification] = js.native
+  var VolumeSpecification: js.UndefOr[typings.awsSdk.emrMod.VolumeSpecification] = js.undefined
 }
 object EbsBlockDevice {
   

@@ -3,7 +3,6 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * within a Cloud SCC organization -- they can be modified and viewed by all
   * users who have proper permissions on the organization.
   */
-@js.native
 trait SchemaSecurityMarks extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaSecurityMarks extends StObject {
     * leading and trailing whitespace trimmed, remaining     characters must be
     * between 1 - 4096 characters (inclusive)
     */
-  var marks: js.UndefOr[StringDictionary[String]] = js.native
+  var marks: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The relative resource name of the SecurityMarks. See:
@@ -31,7 +29,7 @@ trait SchemaSecurityMarks extends StObject {
     * Examples: &quot;organizations/123/assets/456/securityMarks&quot;
     * &quot;organizations/123/sources/456/findings/789/securityMarks&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaSecurityMarks {
   

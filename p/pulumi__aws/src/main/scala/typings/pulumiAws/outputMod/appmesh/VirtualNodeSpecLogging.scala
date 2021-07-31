@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecLogging extends StObject {
   
   /**
     * The access log configuration for a virtual node.
     */
-  var accessLog: js.UndefOr[VirtualNodeSpecLoggingAccessLog] = js.native
+  var accessLog: js.UndefOr[VirtualNodeSpecLoggingAccessLog] = js.undefined
 }
 object VirtualNodeSpecLogging {
   

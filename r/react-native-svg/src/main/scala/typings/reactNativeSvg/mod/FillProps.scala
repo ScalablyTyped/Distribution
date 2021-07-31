@@ -2,17 +2,15 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillProps extends StObject {
   
-  var fill: js.UndefOr[Color] = js.native
+  var fill: js.UndefOr[Color] = js.undefined
   
-  var fillOpacity: js.UndefOr[NumberProp] = js.native
+  var fillOpacity: js.UndefOr[NumberProp] = js.undefined
   
-  var fillRule: js.UndefOr[FillRule] = js.native
+  var fillRule: js.UndefOr[FillRule] = js.undefined
 }
 object FillProps {
   

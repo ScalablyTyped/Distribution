@@ -7,38 +7,32 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object es5Mod {
   
+  @scala.inline
+  def apply(): Stringifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(callback: Callback): Stringifier = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(input: Input): Stringifier = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(input: Input, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(input: Input, options: Unit, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(input: Input, options: Options): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(input: Input, options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(options: Options): Stringifier = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  @scala.inline
+  def apply(options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  
   @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
   @js.native
-  def apply(): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(callback: Callback): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(input: Input): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(input: Input, callback: Callback): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(input: Input, options: js.UndefOr[scala.Nothing], callback: Callback): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(input: Input, options: Options): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(input: Input, options: Options, callback: Callback): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Stringifier = js.native
-  @JSImport("csv-stringify/lib/es5", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: Callback): Stringifier = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("csv-stringify/lib/es5", "Stringifier")
   @js.native
@@ -52,16 +46,15 @@ object es5Mod {
   
   type Cast[T] = js.Function2[/* value */ T, /* context */ CastingContext, String]
   
-  @js.native
   trait CastingContext extends StObject {
     
-    val column: js.UndefOr[Double | String] = js.native
+    val column: js.UndefOr[Double | String] = js.undefined
     
-    val header: Boolean = js.native
+    val header: Boolean
     
-    val index: Double = js.native
+    val index: Double
     
-    val records: Double = js.native
+    val records: Double
   }
   object CastingContext {
     
@@ -91,12 +84,11 @@ object es5Mod {
     }
   }
   
-  @js.native
   trait ColumnOption extends StObject {
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
   }
   object ColumnOption {
     
@@ -122,18 +114,17 @@ object es5Mod {
   
   type Input = js.Array[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Prepend the byte order mark (BOM) to the output stream.
       */
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Key-value object which defines custom cast for certain data types
       */
-    var cast: js.UndefOr[typings.csvStringify.anon.Boolean] = js.native
+    var cast: js.UndefOr[typings.csvStringify.anon.Boolean] = js.undefined
     
     /**
       * List of fields, applied when `transform` returns an object
@@ -143,59 +134,59 @@ object es5Mod {
       * can refer to nested properties of the input JSON
       * see the "header" option on how to print columns names on the first line
       */
-    var columns: js.UndefOr[(js.Array[ColumnOption | String]) | PlainObject[String]] = js.native
+    var columns: js.UndefOr[(js.Array[ColumnOption | String]) | PlainObject[String]] = js.undefined
     
     /**
       * Set the field delimiter, one character only, defaults to a comma.
       */
-    var delimiter: js.UndefOr[String | Buffer] = js.native
+    var delimiter: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Add the value of "options.RecordDelimiter" on the last line, default to true.
       */
-    var eof: js.UndefOr[Boolean] = js.native
+    var eof: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defaults to the escape read option.
       */
-    var escape: js.UndefOr[String | Buffer] = js.native
+    var escape: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Display the column names on the first line if the columns option is provided or discovered.
       */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The quote characters, defaults to the ", an empty quote value will preserve the original field.
       */
-    var quote: js.UndefOr[String | Buffer | Boolean] = js.native
+    var quote: js.UndefOr[String | Buffer | Boolean] = js.undefined
     
     /**
       * Boolean, default to false, quote all the non-empty fields even if not required.
       */
-    var quoted: js.UndefOr[Boolean] = js.native
+    var quoted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean, no default, quote empty fields and overrides `quoted_string` on empty strings when defined.
       */
-    var quoted_empty: js.UndefOr[Boolean] = js.native
+    var quoted_empty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String or RegExp, no default, quote all fields matching a regular expression.
       */
-    var quoted_match: js.UndefOr[String | RegExp] = js.native
+    var quoted_match: js.UndefOr[String | RegExp] = js.undefined
     
     /**
       * Boolean, default to false, quote all fields of type string even if not required.
       */
-    var quoted_string: js.UndefOr[Boolean] = js.native
+    var quoted_string: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String used to delimit record rows or a special value
       * special values are 'auto', 'unix', 'mac', 'windows', 'ascii', 'unicode'
       * defaults to 'auto' (discovered in source or 'unix' if no source is specified).
       */
-    var record_delimiter: js.UndefOr[RecordDelimiter] = js.native
+    var record_delimiter: js.UndefOr[RecordDelimiter] = js.undefined
   }
   object Options {
     

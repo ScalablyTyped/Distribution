@@ -2,7 +2,6 @@ package typings.codeExcerpt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,8 +9,7 @@ object mod {
   /**
     * Extract code excerpts
     */
-  @JSImport("code-excerpt", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     /**
   	 * Source code
@@ -21,9 +19,8 @@ object mod {
   	 * Line number to extract excerpt for.
   	 */
   line: Double
-  ): js.UndefOr[js.Array[ExcerptLine]] = js.native
-  @JSImport("code-excerpt", JSImport.Namespace)
-  @js.native
+  ): js.UndefOr[js.Array[ExcerptLine]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[ExcerptLine]]]
+  @scala.inline
   def apply(
     /**
   	 * Source code
@@ -37,20 +34,23 @@ object mod {
   	 * Options
   	 */
   options: Options
-  ): js.UndefOr[js.Array[ExcerptLine]] = js.native
+  ): js.UndefOr[js.Array[ExcerptLine]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[ExcerptLine]]]
   
+  @JSImport("code-excerpt", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ExcerptLine extends StObject {
     
     /**
     		 * Line number
     		 */
-    val line: Double = js.native
+    val line: Double
     
     /**
     		 * Line itself
     		 */
-    val value: String = js.native
+    val value: String
   }
   object ExcerptLine {
     
@@ -71,7 +71,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -79,7 +78,7 @@ object mod {
     		 *
     		 * @default 3
     		 */
-    val around: js.UndefOr[Double] = js.native
+    val around: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

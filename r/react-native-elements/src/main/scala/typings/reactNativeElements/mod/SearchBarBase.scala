@@ -3,50 +3,50 @@ package typings.reactNativeElements.mod
 import typings.reactNative.mod.ActivityIndicatorProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBarBase extends InputProps {
+trait SearchBarBase
+  extends StObject
+     with InputProps {
   
   /**
     * Override the clear Icon props or use a custom component. Use null or false to hide the icon.
     */
-  var clearIcon: js.UndefOr[IconNode] = js.native
+  var clearIcon: js.UndefOr[IconNode] = js.undefined
   
   /**
     * Optional props to pass to the ActivityIndicator
     */
-  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.native
+  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.undefined
   
   /**
     * Callback fired when the input is blurred via the keyboard
     */
   @JSName("onBlur")
-  var onBlur_SearchBarBase: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBlur_SearchBarBase: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback fired when the clear button is pressed
     */
-  var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback fired when the input is focused
     */
   @JSName("onFocus")
-  var onFocus_SearchBarBase: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFocus_SearchBarBase: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Override the search Icon props or use a custom component. Use null or false to hide the icon.
     */
-  var searchIcon: js.UndefOr[IconNode] = js.native
+  var searchIcon: js.UndefOr[IconNode] = js.undefined
   
   /**
     * If to show the loading indicator
     *
     * @default false
     */
-  var showLoading: js.UndefOr[Boolean] = js.native
+  var showLoading: js.UndefOr[Boolean] = js.undefined
 }
 object SearchBarBase {
   

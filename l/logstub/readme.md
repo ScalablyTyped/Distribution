@@ -10,9 +10,9 @@ A basic libray to stub logging calls when an external logger is expected.
 | ------------------ | :-------------: |
 | Full name          | logstub |
 | Keywords           | log, logging, stub, mock, mocking, winston, bunyan, log4js, console |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 10518 |
+| # downloads        | 19958 |
 | # stars            | 0 |
 
 ## Links

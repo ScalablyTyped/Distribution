@@ -2,13 +2,11 @@ package typings.rcSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selected extends StObject {
   
-  var selected: Boolean = js.native
+  var selected: Boolean
 }
 object Selected {
   

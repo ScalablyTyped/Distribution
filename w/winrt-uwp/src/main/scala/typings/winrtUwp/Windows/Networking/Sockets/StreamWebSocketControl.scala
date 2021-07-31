@@ -4,27 +4,25 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket control data on a StreamWebSocket object. */
-@js.native
 trait StreamWebSocketControl extends StObject {
   
   /** A value that indicates whether the Nagle algorithm is used on a StreamWebSocket object. */
-  var noDelay: Boolean = js.native
+  var noDelay: Boolean
   
   /** The size, in bytes, of the send buffer to be used for sending data on a StreamWebSocket object. */
-  var outboundBufferSizeInBytes: Double = js.native
+  var outboundBufferSizeInBytes: Double
   
   /** The credential to use to authenticate to the proxy server through HTTP header authentication using a StreamWebSocket object. */
-  var proxyCredential: PasswordCredential = js.native
+  var proxyCredential: PasswordCredential
   
   /** The credential to use to authenticate to the WebSocket server through HTTP header authentication using a StreamWebSocket object. */
-  var serverCredential: PasswordCredential = js.native
+  var serverCredential: PasswordCredential
   
   /** Gets a collection that can be used to add a list of supported sub-protocols that will be advertised to the server during the connect handshake. */
-  var supportedProtocols: IVector[String] = js.native
+  var supportedProtocols: IVector[String]
 }
 object StreamWebSocketControl {
   

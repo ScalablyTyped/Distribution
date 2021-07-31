@@ -2,32 +2,30 @@ package typings.openapiTypes.mod.OpenAPIV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathItemObject extends StObject {
   
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.native
+  var $ref: js.UndefOr[String] = js.undefined
   
-  var del: js.UndefOr[OperationObject] = js.native
+  var del: js.UndefOr[OperationObject] = js.undefined
   
-  var delete: js.UndefOr[OperationObject] = js.native
+  var delete: js.UndefOr[OperationObject] = js.undefined
   
-  var get: js.UndefOr[OperationObject] = js.native
+  var get: js.UndefOr[OperationObject] = js.undefined
   
-  var head: js.UndefOr[OperationObject] = js.native
+  var head: js.UndefOr[OperationObject] = js.undefined
   
-  var options: js.UndefOr[OperationObject] = js.native
+  var options: js.UndefOr[OperationObject] = js.undefined
   
-  var parameters: js.UndefOr[Parameters] = js.native
+  var parameters: js.UndefOr[Parameters] = js.undefined
   
-  var patch: js.UndefOr[OperationObject] = js.native
+  var patch: js.UndefOr[OperationObject] = js.undefined
   
-  var post: js.UndefOr[OperationObject] = js.native
+  var post: js.UndefOr[OperationObject] = js.undefined
   
-  var put: js.UndefOr[OperationObject] = js.native
+  var put: js.UndefOr[OperationObject] = js.undefined
 }
 object PathItemObject {
   

@@ -6,12 +6,12 @@ import typings.webBluetooth.webBluetoothStrings.advertisementreceived
 import typings.webBluetooth.webBluetoothStrings.availabilitychanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Bluetooth
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with BluetoothDeviceEventHandlers
      with CharacteristicEventHandlers
      with ServiceEventHandlers {
@@ -19,20 +19,23 @@ trait Bluetooth
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(
     `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(
     `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_availabilitychanged(`type`: availabilitychanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_availabilitychanged(
+    `type`: availabilitychanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_availabilitychanged(
     `type`: availabilitychanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     useCapture: Boolean
   ): Unit = js.native
   

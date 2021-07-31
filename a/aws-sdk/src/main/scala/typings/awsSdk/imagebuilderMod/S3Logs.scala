@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Logs extends StObject {
   
   /**
     * The Amazon S3 bucket in which to store the logs.
     */
-  var s3BucketName: js.UndefOr[NonEmptyString] = js.native
+  var s3BucketName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon S3 path in which to store the logs.
     */
-  var s3KeyPrefix: js.UndefOr[NonEmptyString] = js.native
+  var s3KeyPrefix: js.UndefOr[NonEmptyString] = js.undefined
 }
 object S3Logs {
   

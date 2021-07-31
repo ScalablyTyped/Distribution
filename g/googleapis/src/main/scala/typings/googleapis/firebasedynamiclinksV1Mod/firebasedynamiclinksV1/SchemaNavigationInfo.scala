@@ -2,20 +2,18 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information of navigation behavior.
   */
-@js.native
 trait SchemaNavigationInfo extends StObject {
   
   /**
     * If this option is on, FDL click will be forced to redirect rather than
     * show an interstitial page.
     */
-  var enableForcedRedirect: js.UndefOr[Boolean] = js.native
+  var enableForcedRedirect: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaNavigationInfo {
   

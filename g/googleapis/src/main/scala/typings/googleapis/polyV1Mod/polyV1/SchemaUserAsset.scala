@@ -2,19 +2,17 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data about the user&#39;s asset.
   */
-@js.native
 trait SchemaUserAsset extends StObject {
   
   /**
     * An Asset.
     */
-  var asset: js.UndefOr[SchemaAsset] = js.native
+  var asset: js.UndefOr[SchemaAsset] = js.undefined
 }
 object SchemaUserAsset {
   

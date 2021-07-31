@@ -12,7 +12,6 @@ import typings.heremaps.H.util.Event
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layer {
@@ -22,7 +21,9 @@ object layer {
     * calculation, tile request management.
     */
   @js.native
-  trait BaseTileLayer extends Layer {
+  trait BaseTileLayer
+    extends StObject
+       with Layer {
     
     /**
       * This method cancels a previously requested tile.
@@ -87,7 +88,6 @@ object layer {
   /**
     * This interface describes a layer which provides marker objects to the renderer.
     */
-  @js.native
   trait IMarkerLayer extends StObject {
     
     /**
@@ -103,7 +103,7 @@ object layer {
       zoomLevel: Double,
       cacheOnly: Boolean,
       prioCenter: Point
-    ): typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse = js.native
+    ): typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
     
     /**
       * This method requests marker objects for provided bounding rectangle.
@@ -118,7 +118,7 @@ object layer {
       zoomLevel: Double,
       cacheOnly: Boolean,
       prioCenter: Point
-    ): typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse = js.native
+    ): typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
   }
   object IMarkerLayer {
     
@@ -150,12 +150,11 @@ object layer {
       * @property total {number} - The total number of markers, inclusive markers with not ready icons
       * @property markers {Array<H.map.AbstractMarker>} - The marker objects for the bounding rectangle (only ready)
       */
-    @js.native
     trait Response extends StObject {
       
-      var markers: js.Array[AbstractMarker] = js.native
+      var markers: js.Array[AbstractMarker]
       
-      var total: Double = js.native
+      var total: Double
     }
     object Response {
       
@@ -185,14 +184,13 @@ object layer {
       * @property requested {number} - number of requested tiles
       * @property objects {Array<H.map.AbstractMarker>} - the marker objects within requested tiled area
       */
-    @js.native
     trait TiledResponse extends StObject {
       
-      var number: Double = js.native
+      var number: Double
       
-      var objects: js.Array[AbstractMarker] = js.native
+      var objects: js.Array[AbstractMarker]
       
-      var requested: Double = js.native
+      var requested: Double
     }
     object TiledResponse {
       
@@ -224,7 +222,6 @@ object layer {
     * This interface describes a layer which provides data partitioned in quad-tree tiles in an x, y, z fashion (where z describes the level within the tree and x and y describe the absolute
     * column and row indeces whithin the level).
     */
-  @js.native
   trait ITileLayer extends StObject {
     
     /**
@@ -233,7 +230,7 @@ object layer {
       * @param y {number} - tile column position
       * @param z {number} - zoom level
       */
-    def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+    def cancelTile(x: Double, y: Double, z: Double): Unit
     
     /**
       * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
@@ -243,7 +240,7 @@ object layer {
       * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
       * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
       */
-    def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
+    def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit
     
     /**
       * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
@@ -258,7 +255,7 @@ object layer {
       zoomLevel: Double,
       cacheOnly: Boolean,
       prioCenter: Point
-    ): Response = js.native
+    ): Response
   }
   object ITileLayer {
     
@@ -290,12 +287,11 @@ object layer {
       * @property projection {H.geo.IProjection=} - an optional projection to be used for this layer, default is H.geo.mercator
       * @property opacity {number=} - tile layer opacity, default is 1
       */
-    @js.native
     trait Options extends StObject {
       
-      var opacity: js.UndefOr[Double] = js.native
+      var opacity: js.UndefOr[Double] = js.undefined
       
-      var projection: js.UndefOr[IProjection] = js.native
+      var projection: js.UndefOr[IProjection] = js.undefined
     }
     object Options {
       
@@ -327,12 +323,11 @@ object layer {
       * @property total {number} - the total number of requested tiles
       * @property tiles {Array<H.map.provider.Tile>} - the tiles which this provider can currently return synchronously
       */
-    @js.native
     trait Response extends StObject {
       
-      var tiles: js.Array[Tile] = js.native
+      var tiles: js.Array[Tile]
       
-      var total: Double = js.native
+      var total: Double
     }
     object Response {
       
@@ -362,7 +357,9 @@ object layer {
     * update events to the renderer in case new data is available.
     */
   @js.native
-  trait Layer extends EventTarget {
+  trait Layer
+    extends StObject
+       with EventTarget {
     
     def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
     
@@ -405,18 +402,17 @@ object layer {
       * @property projection {H.geo.IProjection=} - The projection to be used for this layer, default is H.geo.mercator
       * @property minWorldSize {number=} - The minimal world size at zoom level 0, default is 256
       */
-    @js.native
     trait Options extends StObject {
       
-      var dark: js.UndefOr[Boolean] = js.native
+      var dark: js.UndefOr[Boolean] = js.undefined
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var minWorldSize: js.UndefOr[Double] = js.native
+      var minWorldSize: js.UndefOr[Double] = js.undefined
       
-      var projection: js.UndefOr[IProjection] = js.native
+      var projection: js.UndefOr[IProjection] = js.undefined
     }
     object Options {
       
@@ -467,7 +463,8 @@ object layer {
     */
   @js.native
   trait MarkerTileLayer
-    extends BaseTileLayer
+    extends StObject
+       with BaseTileLayer
        with IMarkerLayer
   
   /**
@@ -476,7 +473,8 @@ object layer {
     */
   @js.native
   trait ObjectLayer
-    extends Layer
+    extends StObject
+       with Layer
        with ITileLayer {
     
     /**
@@ -534,16 +532,15 @@ object layer {
       * @property dataCacheSize {number=} - the number of tiles to cache which have render data only, default is 512
       * @property pixelRatio {number=} - The pixelRatio to use for over-sampling in cases of high-resolution displays
       */
-    @js.native
     trait Options extends StObject {
       
-      var dataCacheSize: js.UndefOr[Double] = js.native
+      var dataCacheSize: js.UndefOr[Double] = js.undefined
       
-      var pixelRatio: js.UndefOr[Double] = js.native
+      var pixelRatio: js.UndefOr[Double] = js.undefined
       
-      var tileCacheSize: js.UndefOr[Double] = js.native
+      var tileCacheSize: js.UndefOr[Double] = js.undefined
       
-      var tileSize: js.UndefOr[Double] = js.native
+      var tileSize: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -587,12 +584,11 @@ object layer {
       * @property total {number} - The total number of overlays within the requested bounds, inclusive overlays which are not ready loaded yet
       * @property overlays {Array<H.map.Overlay>} - A list all overlays which are ready to render
       */
-    @js.native
     trait OverlaysResponse extends StObject {
       
-      var overlays: js.Array[Overlay] = js.native
+      var overlays: js.Array[Overlay]
       
-      var total: Double = js.native
+      var total: Double
     }
     object OverlaysResponse {
       
@@ -623,7 +619,8 @@ object layer {
     */
   @js.native
   trait TileLayer
-    extends BaseTileLayer
+    extends StObject
+       with BaseTileLayer
        with ITileLayer {
     
     /**

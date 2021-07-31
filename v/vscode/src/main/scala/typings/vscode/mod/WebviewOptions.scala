@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebviewOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait WebviewOptions extends StObject {
     *
     * Defaults to false.
     */
-  val enableCommandUris: js.UndefOr[Boolean] = js.native
+  val enableCommandUris: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls whether scripts are enabled in the webview content or not.
     *
     * Defaults to false (scripts-disabled).
     */
-  val enableScripts: js.UndefOr[Boolean] = js.native
+  val enableScripts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Root paths from which the webview can load local (filesystem) resources using uris from `asWebviewUri`
@@ -29,7 +27,7 @@ trait WebviewOptions extends StObject {
     *
     * Pass in an empty array to disallow access to any local resources.
     */
-  val localResourceRoots: js.UndefOr[js.Array[Uri]] = js.native
+  val localResourceRoots: js.UndefOr[js.Array[Uri]] = js.undefined
   
   /**
     * Mappings of localhost ports used inside the webview.
@@ -44,7 +42,7 @@ trait WebviewOptions extends StObject {
     * *Note* that port mappings only work for `http` or `https` urls. Websocket urls (e.g. `ws://localhost:3000`)
     * cannot be mapped to another port.
     */
-  val portMapping: js.UndefOr[js.Array[WebviewPortMapping]] = js.native
+  val portMapping: js.UndefOr[js.Array[WebviewPortMapping]] = js.undefined
 }
 object WebviewOptions {
   

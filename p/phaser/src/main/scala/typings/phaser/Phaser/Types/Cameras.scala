@@ -6,60 +6,58 @@ import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cameras {
   
   object Controls {
     
-    @js.native
     trait FixedKeyControlConfig extends StObject {
       
       /**
         * The Camera that this Control will update.
         */
-      var camera: js.UndefOr[Camera] = js.native
+      var camera: js.UndefOr[Camera] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera down.
         */
-      var down: js.UndefOr[Key] = js.native
+      var down: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera left.
         */
-      var left: js.UndefOr[Key] = js.native
+      var left: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera right.
         */
-      var right: js.UndefOr[Key] = js.native
+      var right: js.UndefOr[Key] = js.undefined
       
       /**
         * The horizontal and vertical speed the camera will move.
         */
-      var speed: js.UndefOr[Double | js.Object] = js.native
+      var speed: js.UndefOr[Double | js.Object] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera up.
         */
-      var up: js.UndefOr[Key] = js.native
+      var up: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will zoom the Camera in.
         */
-      var zoomIn: js.UndefOr[Key] = js.native
+      var zoomIn: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
-      var zoomOut: js.UndefOr[Key] = js.native
+      var zoomOut: js.UndefOr[Key] = js.undefined
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
         */
-      var zoomSpeed: js.UndefOr[Double] = js.native
+      var zoomSpeed: js.UndefOr[Double] = js.undefined
     }
     object FixedKeyControlConfig {
       
@@ -128,63 +126,62 @@ object Cameras {
       }
     }
     
-    @js.native
     trait SmoothedKeyControlConfig extends StObject {
       
       /**
         * The horizontal and vertical acceleration the camera will move.
         */
-      var acceleration: js.UndefOr[Double | js.Object] = js.native
+      var acceleration: js.UndefOr[Double | js.Object] = js.undefined
       
       /**
         * The Camera that this Control will update.
         */
-      var camera: js.UndefOr[Camera] = js.native
+      var camera: js.UndefOr[Camera] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera down.
         */
-      var down: js.UndefOr[Key] = js.native
+      var down: js.UndefOr[Key] = js.undefined
       
       /**
         * The horizontal and vertical drag applied to the camera when it is moving.
         */
-      var drag: js.UndefOr[Double | js.Object] = js.native
+      var drag: js.UndefOr[Double | js.Object] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera left.
         */
-      var left: js.UndefOr[Key] = js.native
+      var left: js.UndefOr[Key] = js.undefined
       
       /**
         * The maximum horizontal and vertical speed the camera will move.
         */
-      var maxSpeed: js.UndefOr[Double | js.Object] = js.native
+      var maxSpeed: js.UndefOr[Double | js.Object] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera right.
         */
-      var right: js.UndefOr[Key] = js.native
+      var right: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera up.
         */
-      var up: js.UndefOr[Key] = js.native
+      var up: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will zoom the Camera in.
         */
-      var zoomIn: js.UndefOr[Key] = js.native
+      var zoomIn: js.UndefOr[Key] = js.undefined
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
-      var zoomOut: js.UndefOr[Key] = js.native
+      var zoomOut: js.UndefOr[Key] = js.undefined
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
         */
-      var zoomSpeed: js.UndefOr[Double] = js.native
+      var zoomSpeed: js.UndefOr[Double] = js.undefined
     }
     object SmoothedKeyControlConfig {
       
@@ -268,92 +265,91 @@ object Cameras {
   
   object Scene2D {
     
-    @js.native
     trait CameraConfig extends StObject {
       
       /**
         * A CSS color string controlling the Camera background color.
         */
-      var backgroundColor: js.UndefOr[`false` | String] = js.native
+      var backgroundColor: js.UndefOr[`false` | String] = js.undefined
       
       /**
         * Defines the Camera bounds.
         */
-      var bounds: js.UndefOr[js.Object] = js.native
+      var bounds: js.UndefOr[js.Object] = js.undefined
       
       /**
         * The height of the Camera bounds.
         */
       @JSName("bounds.height")
-      var boundsDotheight: js.UndefOr[Double] = js.native
+      var boundsDotheight: js.UndefOr[Double] = js.undefined
       
       /**
         * The width of the Camera bounds.
         */
       @JSName("bounds.width")
-      var boundsDotwidth: js.UndefOr[Double] = js.native
+      var boundsDotwidth: js.UndefOr[Double] = js.undefined
       
       /**
         * The top-left extent of the Camera bounds.
         */
       @JSName("bounds.x")
-      var boundsDotx: js.UndefOr[Double] = js.native
+      var boundsDotx: js.UndefOr[Double] = js.undefined
       
       /**
         * The top-left extent of the Camera bounds.
         */
       @JSName("bounds.y")
-      var boundsDoty: js.UndefOr[Double] = js.native
+      var boundsDoty: js.UndefOr[Double] = js.undefined
       
       /**
         * The height of the Camera viewport.
         */
-      var height: js.UndefOr[integer] = js.native
+      var height: js.UndefOr[integer] = js.undefined
       
       /**
         * The name of the Camera.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The rotation of the Camera, in radians.
         */
-      var rotation: js.UndefOr[Double] = js.native
+      var rotation: js.UndefOr[Double] = js.undefined
       
       /**
         * Should the Camera round pixels before rendering?
         */
-      var roundPixels: js.UndefOr[Boolean] = js.native
+      var roundPixels: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The horizontal scroll position of the Camera.
         */
-      var scrollX: js.UndefOr[Double] = js.native
+      var scrollX: js.UndefOr[Double] = js.undefined
       
       /**
         * The vertical scroll position of the Camera.
         */
-      var scrollY: js.UndefOr[Double] = js.native
+      var scrollY: js.UndefOr[Double] = js.undefined
       
       /**
         * The width of the Camera viewport.
         */
-      var width: js.UndefOr[integer] = js.native
+      var width: js.UndefOr[integer] = js.undefined
       
       /**
         * The horizontal position of the Camera viewport.
         */
-      var x: js.UndefOr[integer] = js.native
+      var x: js.UndefOr[integer] = js.undefined
       
       /**
         * The vertical position of the Camera viewport.
         */
-      var y: js.UndefOr[integer] = js.native
+      var y: js.UndefOr[integer] = js.undefined
       
       /**
         * The default zoom level of the Camera.
         */
-      var zoom: js.UndefOr[Double] = js.native
+      var zoom: js.UndefOr[Double] = js.undefined
     }
     object CameraConfig {
       
@@ -474,68 +470,67 @@ object Cameras {
     
     type CameraZoomCallback = js.Function3[/* camera */ Camera, /* progress */ Double, /* zoom */ Double, Unit]
     
-    @js.native
     trait JSONCamera extends StObject {
       
       /**
         * The background color of camera
         */
-      var backgroundColor: String = js.native
+      var backgroundColor: String
       
       /**
         * The bounds of camera
         */
-      var bounds: js.UndefOr[JSONCameraBounds] = js.native
+      var bounds: js.UndefOr[JSONCameraBounds] = js.undefined
       
       /**
         * The height size of camera
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * The name of the camera
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The rotation of camera
         */
-      var rotation: Double = js.native
+      var rotation: Double
       
       /**
         * The round pixels st status of camera
         */
-      var roundPixels: Boolean = js.native
+      var roundPixels: Boolean
       
       /**
         * The horizontal scroll of camera
         */
-      var scrollX: Double = js.native
+      var scrollX: Double
       
       /**
         * The vertical scroll of camera
         */
-      var scrollY: Double = js.native
+      var scrollY: Double
       
       /**
         * The width size of camera
         */
-      var width: Double = js.native
+      var width: Double
       
       /**
         * The horizontal position of camera
         */
-      var x: Double = js.native
+      var x: Double
       
       /**
         * The vertical position of camera
         */
-      var y: Double = js.native
+      var y: Double
       
       /**
         * The zoom of camera
         */
-      var zoom: Double = js.native
+      var zoom: Double
     }
     object JSONCamera {
       
@@ -601,28 +596,27 @@ object Cameras {
       }
     }
     
-    @js.native
     trait JSONCameraBounds extends StObject {
       
       /**
         * The height size of camera
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * The width size of camera
         */
-      var width: Double = js.native
+      var width: Double
       
       /**
         * The horizontal position of camera
         */
-      var x: Double = js.native
+      var x: Double
       
       /**
         * The vertical position of camera
         */
-      var y: Double = js.native
+      var y: Double
     }
     object JSONCameraBounds {
       

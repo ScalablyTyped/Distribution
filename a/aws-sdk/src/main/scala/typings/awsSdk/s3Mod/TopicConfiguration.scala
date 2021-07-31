@@ -2,25 +2,23 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicConfiguration extends StObject {
   
   /**
     * The Amazon S3 bucket event about which to send notifications. For more information, see Supported Event Types in the Amazon Simple Storage Service Developer Guide.
     */
-  var Events: EventList = js.native
+  var Events: EventList
   
-  var Filter: js.UndefOr[NotificationConfigurationFilter] = js.native
+  var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
   
-  var Id: js.UndefOr[NotificationId] = js.native
+  var Id: js.UndefOr[NotificationId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic to which Amazon S3 publishes a message when it detects events of the specified type.
     */
-  var TopicArn: typings.awsSdk.s3Mod.TopicArn = js.native
+  var TopicArn: typings.awsSdk.s3Mod.TopicArn
 }
 object TopicConfiguration {
   

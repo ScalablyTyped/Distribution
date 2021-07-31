@@ -2,21 +2,19 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadPipelineResponse extends StObject {
   
   /**
     * A section of the response body that provides information about the pipeline.
     */
-  var Pipeline: js.UndefOr[typings.awsSdk.elastictranscoderMod.Pipeline] = js.native
+  var Pipeline: js.UndefOr[typings.awsSdk.elastictranscoderMod.Pipeline] = js.undefined
   
   /**
     * Elastic Transcoder returns a warning if the resources used by your pipeline are not in the same region as the pipeline. Using resources in the same region, such as your Amazon S3 buckets, Amazon SNS notification topics, and AWS KMS key, reduces processing time and prevents cross-regional charges.
     */
-  var Warnings: js.UndefOr[typings.awsSdk.elastictranscoderMod.Warnings] = js.native
+  var Warnings: js.UndefOr[typings.awsSdk.elastictranscoderMod.Warnings] = js.undefined
 }
 object ReadPipelineResponse {
   

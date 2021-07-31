@@ -8,7 +8,6 @@ import typings.officeJs.Visio.Interfaces.CommentCollectionData
 import typings.officeJs.Visio.Interfaces.CommentCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait CommentCollection extends ClientObject {
+trait CommentCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -61,7 +62,7 @@ trait CommentCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CommentCollection = js.native
-  def load(option: CommentCollectionLoadOptions with CollectionLoadOptions): CommentCollection = js.native
+  def load(option: CommentCollectionLoadOptions & CollectionLoadOptions): CommentCollection = js.native
   def load(option: String): CommentCollection = js.native
   def load(option: js.Array[String]): CommentCollection = js.native
   def load(option: LoadOption): CommentCollection = js.native

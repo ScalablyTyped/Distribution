@@ -3,25 +3,23 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetSheetFilterColumn extends StObject {
   
-  var criteria: js.UndefOr[js.Array[SpreadsheetSheetFilterColumnCriteriaItem]] = js.native
+  var criteria: js.UndefOr[js.Array[SpreadsheetSheetFilterColumnCriteriaItem]] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var logic: js.UndefOr[String] = js.native
+  var logic: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double | String | Date] = js.native
+  var value: js.UndefOr[Double | String | Date] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object SpreadsheetSheetFilterColumn {
   

@@ -3,14 +3,14 @@ package typings.chromeApps.chrome.fileSystemProvider
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecuteActionRequestedEventOptions extends GetActionsRequestedEventOptions {
+trait ExecuteActionRequestedEventOptions
+  extends StObject
+     with GetActionsRequestedEventOptions {
   
   /** The identifier of the action to be executed. */
-  var actionId: String = js.native
+  var actionId: String
 }
 object ExecuteActionRequestedEventOptions {
   

@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * InlineObjectProperties have been changed in this suggestion. For any field
   * set to true, there is a new suggested value.
   */
-@js.native
 trait SchemaInlineObjectPropertiesSuggestionState extends StObject {
   
   /**
     * A mask that indicates which of the fields in embedded_object have been
     * changed in this suggestion.
     */
-  var embeddedObjectSuggestionState: js.UndefOr[SchemaEmbeddedObjectSuggestionState] = js.native
+  var embeddedObjectSuggestionState: js.UndefOr[SchemaEmbeddedObjectSuggestionState] = js.undefined
 }
 object SchemaInlineObjectPropertiesSuggestionState {
   

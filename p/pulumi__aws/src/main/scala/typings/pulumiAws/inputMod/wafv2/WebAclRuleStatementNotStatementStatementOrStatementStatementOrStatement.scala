@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementNotStatementStatementOrStatementStatementOrStatement extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementOrStatement ex
     js.Array[
       Input[WebAclRuleStatementNotStatementStatementOrStatementStatementOrStatementStatement]
     ]
-  ] = js.native
+  ]
 }
 object WebAclRuleStatementNotStatementStatementOrStatementStatementOrStatement {
   

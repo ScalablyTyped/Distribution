@@ -2,19 +2,17 @@ package typings.sharpie
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Assignment extends StObject {
     
     /**  use ~ for better uri-encoding */
-    var assignment: js.UndefOr[String] = js.native
+    var assignment: js.UndefOr[String] = js.undefined
     
     /** use ! for better uri-encoding */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object Assignment {
     

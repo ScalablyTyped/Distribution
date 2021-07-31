@@ -187,7 +187,6 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.verbose
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: Should 'value'/'values' parameters be of type 'string' instead of 'any'?
@@ -294,7 +293,7 @@ trait Dropdown extends StObject {
   /**
     * Sets selected values to exactly specified values, removing current selection
     */
-  def apply(behavior: `set exactly`, values: js.Array[_]): JQuery = js.native
+  def apply(behavior: `set exactly`, values: js.Array[js.Any]): JQuery = js.native
   /**
     * Sets value as selected
     */
@@ -302,7 +301,7 @@ trait Dropdown extends StObject {
   /**
     * Adds a group of values as selected
     */
-  def apply(behavior: `set selected`, values: js.Array[_]): JQuery = js.native
+  def apply(behavior: `set selected`, values: js.Array[js.Any]): JQuery = js.native
   /**
     * Sets dropdown text to a value
     */
@@ -336,17 +335,10 @@ trait Dropdown extends StObject {
     * Refreshes all cached selectors and data
     */
   def apply(behavior: refresh): JQuery = js.native
-  def apply(behavior: setting, name: `match`, value: js.UndefOr[scala.Nothing]): both | value | text = js.native
+  def apply(behavior: setting, name: `match`, value: Unit): both | value | text = js.native
   def apply(behavior: setting, name: `match`, value: both): JQuery = js.native
   def apply(behavior: setting, name: `match`, value: text): JQuery = js.native
   def apply(behavior: setting, name: `match`, value: value): JQuery = js.native
-  def apply(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): activate | select | combo | nothing | hide | (js.ThisFunction3[
-    /* this */ JQuery, 
-    /* text */ String, 
-    /* value */ String | `false`, 
-    /* element */ JQuery, 
-    Unit
-  ]) = js.native
   def apply(
     behavior: setting,
     name: action,
@@ -358,69 +350,78 @@ trait Dropdown extends StObject {
       Unit
     ]
   ): JQuery = js.native
+  def apply(behavior: setting, name: action, value: Unit): activate | select | combo | nothing | hide | (js.ThisFunction3[
+    /* this */ JQuery, 
+    /* text */ String, 
+    /* value */ String | `false`, 
+    /* element */ JQuery, 
+    Unit
+  ]) = js.native
   def apply(behavior: setting, name: action, value: activate): JQuery = js.native
   def apply(behavior: setting, name: action, value: combo): JQuery = js.native
   def apply(behavior: setting, name: action, value: hide): JQuery = js.native
   def apply(behavior: setting, name: action, value: nothing): JQuery = js.native
   def apply(behavior: setting, name: action, value: select): JQuery = js.native
-  def apply(behavior: setting, name: allowAdditions, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: allowAdditions, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: allowCategorySelection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: allowAdditions, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: allowCategorySelection, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: allowReselection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: allowCategorySelection, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: allowReselection, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: allowTab, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: allowReselection, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: allowTab, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: apiSettings, value: js.UndefOr[scala.Nothing]): `false` | ApiSettings = js.native
+  def apply(behavior: setting, name: allowTab, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: apiSettings, value: Unit): `false` | ApiSettings = js.native
+  def apply(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
   def apply(behavior: setting, name: apiSettings, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+  def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
   def apply(behavior: setting, name: context, value: String): JQuery = js.native
+  def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
   def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: delay, value: js.UndefOr[scala.Nothing]): DelaySettings = js.native
-  def apply(behavior: setting, name: direction, value: js.UndefOr[scala.Nothing]): auto | upward | downward = js.native
+  def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: delay, value: Unit): DelaySettings = js.native
+  def apply(behavior: setting, name: delay, value: DelaySettings): JQuery = js.native
+  def apply(behavior: setting, name: direction, value: Unit): auto | upward | downward = js.native
   def apply(behavior: setting, name: direction, value: auto): JQuery = js.native
   def apply(behavior: setting, name: direction, value: downward): JQuery = js.native
   def apply(behavior: setting, name: direction, value: upward): JQuery = js.native
-  def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def apply(behavior: setting, name: fields, value: js.UndefOr[scala.Nothing]): FieldsSettings = js.native
-  def apply(behavior: setting, name: filterRemoteData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+  def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  def apply(behavior: setting, name: fields, value: Unit): FieldsSettings = js.native
+  def apply(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
   def apply(behavior: setting, name: filterRemoteData, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: forceSelection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: filterRemoteData, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: forceSelection, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: fullTextSearch, value: js.UndefOr[scala.Nothing]): Boolean | exact = js.native
+  def apply(behavior: setting, name: forceSelection, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: fullTextSearch, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: fullTextSearch, value: Unit): Boolean | exact = js.native
   def apply(behavior: setting, name: fullTextSearch, value: exact): JQuery = js.native
-  def apply(behavior: setting, name: glyphWidth, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: glyphWidth, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: hideAdditions, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: glyphWidth, value: Unit): Double = js.native
   def apply(behavior: setting, name: hideAdditions, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: keepOnScreen, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: hideAdditions, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: keepOnScreen, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: keys, value: js.UndefOr[scala.Nothing]): KeySettings = js.native
-  def apply(behavior: setting, name: label, value: js.UndefOr[scala.Nothing]): LabelSettings = js.native
-  def apply(behavior: setting, name: maxSelections, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
+  def apply(behavior: setting, name: keepOnScreen, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: keys, value: Unit): KeySettings = js.native
+  def apply(behavior: setting, name: keys, value: KeySettings): JQuery = js.native
+  def apply(behavior: setting, name: label, value: Unit): LabelSettings = js.native
+  def apply(behavior: setting, name: label, value: LabelSettings): JQuery = js.native
   def apply(behavior: setting, name: maxSelections, value: Double): JQuery = js.native
+  def apply(behavior: setting, name: maxSelections, value: Unit): `false` | Double = js.native
   def apply(behavior: setting, name: maxSelections, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: message, value: js.UndefOr[scala.Nothing]): MessageSettings = js.native
-  def apply(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-  def apply(behavior: setting, name: minCharacters, value: js.UndefOr[scala.Nothing]): Double = js.native
+  def apply(behavior: setting, name: message, value: Unit): MessageSettings = js.native
+  def apply(behavior: setting, name: message, value: MessageSettings): JQuery = js.native
+  def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
+  def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
   def apply(behavior: setting, name: minCharacters, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+  def apply(behavior: setting, name: minCharacters, value: Unit): Double = js.native
   def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+  def apply(behavior: setting, name: namespace, value: Unit): String = js.native
   def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: onAdd, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
-    /* this */ JQuery, 
-    /* addedValue */ js.Any, 
-    /* addedText */ String, 
-    /* $addedChoice */ JQuery, 
-    Unit
-  ] = js.native
+  def apply(behavior: setting, name: name, value: Unit): String = js.native
   def apply(
     behavior: setting,
     name: onAdd,
@@ -432,45 +433,45 @@ trait Dropdown extends StObject {
       Unit
     ]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onAdd, value: Unit): js.ThisFunction3[
+    /* this */ JQuery, 
+    /* addedValue */ js.Any, 
+    /* addedText */ String, 
+    /* $addedChoice */ JQuery, 
+    Unit
+  ] = js.native
   def apply(
     behavior: setting,
     name: onChange,
     value: js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onLabelCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery] = js.native
+  def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
   def apply(
     behavior: setting,
     name: onLabelCreate,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onLabelRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onLabelCreate, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery] = js.native
   def apply(
     behavior: setting,
     name: onLabelRemove,
     value: js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onLabelSelect, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onLabelRemove, value: Unit): js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit] = js.native
   def apply(
     behavior: setting,
     name: onLabelSelect,
     value: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onNoResults, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit] = js.native
+  def apply(behavior: setting, name: onLabelSelect, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit] = js.native
   def apply(
     behavior: setting,
     name: onNoResults,
     value: js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
-    /* this */ JQuery, 
-    /* removedValue */ js.Any, 
-    /* removedText */ String, 
-    /* $removedChoice */ JQuery, 
-    Unit
-  ] = js.native
+  def apply(behavior: setting, name: onNoResults, value: Unit): js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit] = js.native
   def apply(
     behavior: setting,
     name: onRemove,
@@ -482,44 +483,52 @@ trait Dropdown extends StObject {
       Unit
     ]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onRemove, value: Unit): js.ThisFunction3[
+    /* this */ JQuery, 
+    /* removedValue */ js.Any, 
+    /* removedText */ String, 
+    /* $removedChoice */ JQuery, 
+    Unit
+  ] = js.native
   def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): JQuery = js.native
-  def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
+  def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
   def apply(behavior: setting, name: on, value: String): JQuery = js.native
-  def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: on, value: Unit): String = js.native
   def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: placeholder, value: js.UndefOr[scala.Nothing]): auto | value | `false` = js.native
+  def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: placeholder, value: Unit): auto | value | `false` = js.native
   def apply(behavior: setting, name: placeholder, value: `false`): JQuery = js.native
   def apply(behavior: setting, name: placeholder, value: auto): JQuery = js.native
   def apply(behavior: setting, name: placeholder, value: value): JQuery = js.native
-  def apply(behavior: setting, name: preserveHTML, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: preserveHTML, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
+  def apply(behavior: setting, name: preserveHTML, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
   def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def apply(behavior: setting, name: saveRemoteData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: saveRemoteData, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: selectOnKeydown, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: saveRemoteData, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: selectOnKeydown, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def apply(behavior: setting, name: showOnFocus, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: selectOnKeydown, value: Unit): Boolean = js.native
+  def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   def apply(behavior: setting, name: showOnFocus, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: showOnFocus, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: sortSelect, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: sortSelect, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): auto | String = js.native
+  def apply(behavior: setting, name: sortSelect, value: Unit): Boolean = js.native
   def apply(behavior: setting, name: transition, value: String): JQuery = js.native
+  def apply(behavior: setting, name: transition, value: Unit): auto | String = js.native
   def apply(behavior: setting, name: transition, value: auto): JQuery = js.native
-  def apply(behavior: setting, name: useLabels, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: useLabels, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: values, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any = js.native
+  def apply(behavior: setting, name: useLabels, value: Unit): Boolean = js.native
   def apply(
     behavior: setting,
     name: values,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any
   ): JQuery = js.native
-  def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def apply(behavior: setting, name: values, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any = js.native
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
   def apply(behavior: setting, value: DropdownSettings): JQuery = js.native
   /**
     * Shows dropdown
@@ -537,103 +546,102 @@ object Dropdown {
   
   object ClassNameSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 'active'
         */
-      var active: String = js.native
+      var active: String
       
       /**
         * @default 'addition'
         */
-      var addition: String = js.native
+      var addition: String
       
       /**
         * @default 'animating'
         */
-      var animating: String = js.native
+      var animating: String
       
       /**
         * @default 'disabled'
         */
-      var disabled: String = js.native
+      var disabled: String
       
       /**
         * @default 'ui dropdown'
         */
-      var dropdown: String = js.native
+      var dropdown: String
       
       /**
         * @default 'filtered'
         */
-      var filtered: String = js.native
+      var filtered: String
       
       /**
         * @default 'hidden transition'
         */
-      var hidden: String = js.native
+      var hidden: String
       
       /**
         * @default 'item'
         */
-      var item: String = js.native
+      var item: String
       
       /**
         * @default 'ui label'
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * @default 'loading'
         */
-      var loading: String = js.native
+      var loading: String
       
       /**
         * @default 'menu'
         */
-      var menu: String = js.native
+      var menu: String
       
       /**
         * @default 'message'
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * @default 'multiple'
         */
-      var multiple: String = js.native
+      var multiple: String
       
       /**
         * @default 'default'
         */
-      var placeholder: String = js.native
+      var placeholder: String
       
       /**
         * @default 'search'
         */
-      var search: String = js.native
+      var search: String
       
       /**
         * @default 'selected'
         */
-      var selected: String = js.native
+      var selected: String
       
       /**
         * @default 'selection'
         */
-      var selection: String = js.native
+      var selection: String
       
       /**
         * @default 'upward'
         */
-      var upward: String = js.native
+      var upward: String
       
       /**
         * @default 'visible'
         */
-      var visible: String = js.native
+      var visible: String
     }
     object Impl {
       
@@ -725,34 +733,33 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImplactive | PickImpladdition | PickImplanimating | PickImpldisabled | PickImpldropdown | PickImplfiltered | PickImplhidden | PickImplitem | PickImpllabelLabel | PickImplloading | PickImplmenu | PickImplmessageMessage | PickImplmultiple | PickImplplaceholderPlaceholder | PickImplsearchSearch | PickImplselected | PickImplselection | PickImplupward | PickImplvisible) with PartialPickImplkeyofImplActive
+    type Param = (PickImplactive | PickImpladdition | PickImplanimating | PickImpldisabled | PickImpldropdown | PickImplfiltered | PickImplhidden | PickImplitem | PickImpllabelLabel | PickImplloading | PickImplmenu | PickImplmessageMessage | PickImplmultiple | PickImplplaceholderPlaceholder | PickImplsearchSearch | PickImplselected | PickImplselection | PickImplupward | PickImplvisible) & PartialPickImplkeyofImplActive
   }
   type ClassNameSettings = Param
   
   object DelaySettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 300
         */
-      var hide: Double = js.native
+      var hide: Double
       
       /**
         * @default 50
         */
-      var search: Double = js.native
+      var search: Double
       
       /**
         * @default 200
         */
-      var show: Double = js.native
+      var show: Double
       
       /**
         * @default 50
         */
-      var touch: Double = js.native
+      var touch: Double
     }
     object Impl {
       
@@ -779,39 +786,38 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImplhide | PickImplshow | PickImplsearch | PickImpltouch) with PartialPickImplkeyofImplHide
+    type Param = (PickImplhide | PickImplshow | PickImplsearch | PickImpltouch) & PartialPickImplkeyofImplHide
   }
   type DelaySettings = typings.semanticUiDropdown.SemanticUI.Dropdown.DelaySettings.Param
   
   object ErrorSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 'You called a dropdown action that was not defined'
         */
-      var action: String = js.native
+      var action: String
       
       /**
         * @default 'Once a select has been initialized behaviors must be called on the created ui dropdown'
         */
-      var alreadySetup: String = js.native
+      var alreadySetup: String
       
       /**
         * @default 'Allowing user additions currently requires the use of labels.'
         */
-      var labels: String = js.native
+      var labels: String
       
       /**
         * @default 'The method you called is not defined.'
         */
-      var method: String = js.native
+      var method: String
       
       /**
         * @default 'This module requires ui transitions <https: github.com="" semantic-org="" ui-transition="">'
         */
-      var noTransition: String = js.native
+      var noTransition: String
     }
     object Impl {
       
@@ -841,13 +847,12 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImplactionAction | PickImplalreadySetup | PickImpllabels | PickImplmethod | PickImplnoTransition) with PartialPickImplkeyofImplAction
+    type Param = (PickImplactionAction | PickImplalreadySetup | PickImpllabels | PickImplmethod | PickImplnoTransition) & PartialPickImplkeyofImplAction
   }
   type ErrorSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.ErrorSettings.Param
   
   object FieldsSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
@@ -855,28 +860,28 @@ object Dropdown {
         *
         * @default 'name'
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * grouping for api results
         *
         * @default 'results'
         */
-      var remoteValues: String = js.native
+      var remoteValues: String
       
       /**
         * actual dropdown value
         *
         * @default 'value'
         */
-      var value: String = js.native
+      var value: String
       
       /**
         * grouping for all dropdown values
         *
         * @default 'values'
         */
-      var values: String = js.native
+      var values: String
     }
     object Impl {
       
@@ -903,69 +908,68 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImplremoteValues | PickImplvaluesValues | PickImplname | PickImplvalue) with PartialPickImplkeyofImplName
+    type Param = (PickImplremoteValues | PickImplvaluesValues | PickImplname | PickImplvalue) & PartialPickImplkeyofImplName
   }
   type FieldsSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.FieldsSettings.Param
   
   object KeySettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 8
         */
-      var backspace: Double = js.native
+      var backspace: Double
       
       /**
         * @default 46
         */
-      var deleteKey: Double = js.native
+      var deleteKey: Double
       
       /**
         * @default 188
         */
-      var delimiter: Double | `false` = js.native
+      var delimiter: Double | `false`
       
       /**
         * @default 40
         */
-      var downArrow: Double = js.native
+      var downArrow: Double
       
       /**
         * @default 13
         */
-      var enter: Double = js.native
+      var enter: Double
       
       /**
         * @default 27
         */
-      var escape: Double = js.native
+      var escape: Double
       
       /**
         * @default 37
         */
-      var leftArrow: Double = js.native
+      var leftArrow: Double
       
       /**
         * @default 34
         */
-      var pageDown: Double = js.native
+      var pageDown: Double
       
       /**
         * @default 33
         */
-      var pageUp: Double = js.native
+      var pageUp: Double
       
       /**
         * @default 39
         */
-      var rightArrow: Double = js.native
+      var rightArrow: Double
       
       /**
         * @default 38
         */
-      var upArrow: Double = js.native
+      var upArrow: Double
     }
     object Impl {
       
@@ -1025,29 +1029,28 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImplbackspace | PickImpldelimiter | PickImpldeleteKey | PickImplenter | PickImplescape | PickImplpageUp | PickImplpageDown | PickImplleftArrow | PickImplupArrow | PickImplrightArrow | PickImpldownArrow) with PartialPickImplkeyofImplBackspace
+    type Param = (PickImplbackspace | PickImpldelimiter | PickImpldeleteKey | PickImplenter | PickImplescape | PickImplpageUp | PickImplpageDown | PickImplleftArrow | PickImplupArrow | PickImplrightArrow | PickImpldownArrow) & PartialPickImplkeyofImplBackspace
   }
   type KeySettings = typings.semanticUiDropdown.SemanticUI.Dropdown.KeySettings.Param
   
   object LabelSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 200
         */
-      var duration: Double = js.native
+      var duration: Double
       
       /**
         * @default 'horizontal flip'
         */
-      var transition: String = js.native
+      var transition: String
       
       /**
         * @default false
         */
-      var variation: `false` | String = js.native
+      var variation: `false` | String
     }
     object Impl {
       
@@ -1071,34 +1074,33 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImpltransitionTransition | PickImplduration | PickImplvariation) with PartialPickImplkeyofImplDuration
+    type Param = (PickImpltransitionTransition | PickImplduration | PickImplvariation) & PartialPickImplkeyofImplDuration
   }
   type LabelSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.LabelSettings.Param
   
   object MessageSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 'Add <b>{term}</b>'
         */
-      var addResult: String = js.native
+      var addResult: String
       
       /**
         * @default '{count} selected'
         */
-      var count: String = js.native
+      var count: String
       
       /**
         * @default 'Max {maxCount} selections'
         */
-      var maxSelections: String = js.native
+      var maxSelections: String
       
       /**
         * 'No results found.'
         */
-      var noResults: String = js.native
+      var noResults: String
     }
     object Impl {
       
@@ -1125,39 +1127,38 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImpladdResult | PickImplcount | PickImplmaxSelectionsMaxSelections | PickImplnoResults) with PartialPickImplkeyofImplAddResult
+    type Param = (PickImpladdResult | PickImplcount | PickImplmaxSelectionsMaxSelections | PickImplnoResults) & PartialPickImplkeyofImplAddResult
   }
   type MessageSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.MessageSettings.Param
   
   object MetadataSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default 'defaultText'
         */
-      var defaultText: String = js.native
+      var defaultText: String
       
       /**
         * @default 'defaultValue'
         */
-      var defaultValue: String = js.native
+      var defaultValue: String
       
       /**
         * @default 'placeholderText'
         */
-      var placeholderText: String = js.native
+      var placeholderText: String
       
       /**
         * @default 'text'
         */
-      var text: String = js.native
+      var text: String
       
       /**
         * @default 'value'
         */
-      var value: String = js.native
+      var value: String
     }
     object Impl {
       
@@ -1187,31 +1188,29 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImpldefaultText | PickImpldefaultValue | PickImplplaceholderText | PickImpltext | PickImplvalue) with PartialPickImplkeyofImplDefaultText
+    type Param = (PickImpldefaultText | PickImpldefaultValue | PickImplplaceholderText | PickImpltext | PickImplvalue) & PartialPickImplkeyofImplDefaultText
   }
   type MetadataSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.MetadataSettings.Param
   
   /* Inlined semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings.Param */
-  @js.native
   trait RegExpSettings extends StObject {
     
-    var escape: RegExp with js.UndefOr[RegExp] = js.native
+    var escape: RegExp & js.UndefOr[RegExp]
   }
   object RegExpSettings {
     
     @scala.inline
-    def apply(escape: RegExp with js.UndefOr[RegExp]): RegExpSettings = {
+    def apply(escape: RegExp & js.UndefOr[RegExp]): RegExpSettings = {
       val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegExpSettings]
     }
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default /[-[\]{}()*+?.,\\^$|#\s]/g
         */
-      var escape: RegExp = js.native
+      var escape: RegExp
     }
     object Impl {
       
@@ -1230,15 +1229,14 @@ object Dropdown {
     }
     
     /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl, 'escape'> & std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl>> */
-    @js.native
     trait Param extends StObject {
       
-      var escape: RegExp with js.UndefOr[RegExp] = js.native
+      var escape: RegExp & js.UndefOr[RegExp]
     }
     object Param {
       
       @scala.inline
-      def apply(escape: RegExp with js.UndefOr[RegExp]): typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param = {
+      def apply(escape: RegExp & js.UndefOr[RegExp]): typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param = {
         val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param]
       }
@@ -1247,7 +1245,7 @@ object Dropdown {
       implicit class ParamMutableBuilder[Self <: typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setEscape(value: RegExp with js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+        def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1255,79 +1253,78 @@ object Dropdown {
     implicit class RegExpSettingsMutableBuilder[Self <: RegExpSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEscape(value: RegExp with js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
   }
   
   object SelectorSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * @default '.addition'
         */
-      var addition: String = js.native
+      var addition: String
       
       /**
         * @default '.ui.dropdown'
         */
-      var dropdown: String = js.native
+      var dropdown: String
       
       /**
         * @default '> .dropdown.icon'
         */
-      var icon: String = js.native
+      var icon: String
       
       /**
         * @default '> input[type="hidden"], > select'
         */
-      var input: String = js.native
+      var input: String
       
       /**
         * @default '.item'
         */
-      var item: String = js.native
+      var item: String
       
       /**
         * @default '> .label'
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * @default '.menu'
         */
-      var menu: String = js.native
+      var menu: String
       
       /**
         * @default '.dropdown.icon'
         */
-      var menuIcon: String = js.native
+      var menuIcon: String
       
       /**
         * @default '.message'
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * @default '> .label > .delete.icon'
         */
-      var remove: String = js.native
+      var remove: String
       
       /**
         * @default 'input.search, .menu > .search > input'
         */
-      var search: String = js.native
+      var search: String
       
       /**
         * @default '.label'
         */
-      var siblingLabel: String = js.native
+      var siblingLabel: String
       
       /**
         * @default '> .text:not(.icon)'
         */
-      var text: String = js.native
+      var text: String
     }
     object Impl {
       
@@ -1395,7 +1392,7 @@ object Dropdown {
       }
     }
     
-    type Param = (PickImpladdition | PickImpldropdown | PickImplicon | PickImplinput | PickImplitem | PickImpllabelLabel | PickImplremove | PickImplsiblingLabel | PickImplmenu | PickImplmessageMessage | PickImplmenuIcon | PickImplsearchSearch | PickImpltext) with PartialPickImplkeyofImplAddition
+    type Param = (PickImpladdition | PickImpldropdown | PickImplicon | PickImplinput | PickImplitem | PickImpllabelLabel | PickImplremove | PickImplsiblingLabel | PickImplmenu | PickImplmessageMessage | PickImplmenuIcon | PickImplsearchSearch | PickImpltext) & PartialPickImplkeyofImplAddition
   }
   type SelectorSettings = typings.semanticUiDropdown.SemanticUI.Dropdown.SelectorSettings.Param
 }

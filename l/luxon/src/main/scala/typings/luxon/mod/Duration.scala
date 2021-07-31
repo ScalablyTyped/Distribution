@@ -3,7 +3,6 @@ package typings.luxon.mod
 import typings.luxon.anon.IncludeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "Duration")
@@ -77,32 +76,28 @@ class Duration () extends StObject {
 /* static members */
 object Duration {
   
-  @JSImport("luxon", "Duration.fromISO")
+  @JSImport("luxon", "Duration")
   @js.native
-  def fromISO(text: String): Duration = js.native
-  @JSImport("luxon", "Duration.fromISO")
-  @js.native
-  def fromISO(text: String, options: DurationOptions): Duration = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("luxon", "Duration.fromMillis")
-  @js.native
-  def fromMillis(count: Double): Duration = js.native
-  @JSImport("luxon", "Duration.fromMillis")
-  @js.native
-  def fromMillis(count: Double, options: DurationOptions): Duration = js.native
+  @scala.inline
+  def fromISO(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def fromISO(text: String, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
-  @JSImport("luxon", "Duration.fromObject")
-  @js.native
-  def fromObject(Object: DurationObject): Duration = js.native
+  @scala.inline
+  def fromMillis(count: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def fromMillis(count: Double, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
-  @JSImport("luxon", "Duration.invalid")
-  @js.native
-  def invalid(): Duration = js.native
-  @JSImport("luxon", "Duration.invalid")
-  @js.native
-  def invalid(reason: String): Duration = js.native
+  @scala.inline
+  def fromObject(Object: DurationObject): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(Object.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("luxon", "Duration.isDuration")
-  @js.native
-  def isDuration(o: js.Any): /* is luxon.luxon.Duration */ Boolean = js.native
+  @scala.inline
+  def invalid(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Duration]
+  @scala.inline
+  def invalid(reason: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  
+  @scala.inline
+  def isDuration(o: js.Any): /* is luxon.luxon.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.Duration */ Boolean]
 }

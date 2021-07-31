@@ -3,17 +3,15 @@ package typings.screeps.anon
 import typings.screeps.EventAttackType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackType extends StObject {
   
-  var attackType: EventAttackType = js.native
+  var attackType: EventAttackType
   
-  var damage: Double = js.native
+  var damage: Double
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object AttackType {
   

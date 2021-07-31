@@ -3,23 +3,21 @@ package typings.nodeHueApi.mod
 import typings.nodeHueApi.anon.Bri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILightGroup extends StObject {
   
-  var action: js.UndefOr[Bri] = js.native
+  var action: js.UndefOr[Bri] = js.undefined
   
-  var `class`: js.UndefOr[RoomType] = js.native
+  var `class`: js.UndefOr[RoomType] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var lights: js.UndefOr[js.Array[String]] = js.native
+  var lights: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: LightGroupType = js.native
+  var `type`: LightGroupType
 }
 object ILightGroup {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactsFilter extends StObject {
   
   /**
     * The status by which you are filtering: OPT_IN or OPT_OUT.
     */
-  var FilteredStatus: js.UndefOr[SubscriptionStatus] = js.native
+  var FilteredStatus: js.UndefOr[SubscriptionStatus] = js.undefined
   
   /**
     * Used for filtering by a specific topic preference.
     */
-  var TopicFilter: js.UndefOr[typings.awsSdk.sesv2Mod.TopicFilter] = js.native
+  var TopicFilter: js.UndefOr[typings.awsSdk.sesv2Mod.TopicFilter] = js.undefined
 }
 object ListContactsFilter {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfusionMatrix extends StObject {
   
   /** Confidence threshold used when computing the entries of the confusion matrix. */
-  var confidenceThreshold: js.UndefOr[Double] = js.native
+  var confidenceThreshold: js.UndefOr[Double] = js.undefined
   
   /** One row per actual label. */
-  var rows: js.UndefOr[js.Array[Row]] = js.native
+  var rows: js.UndefOr[js.Array[Row]] = js.undefined
 }
 object ConfusionMatrix {
   

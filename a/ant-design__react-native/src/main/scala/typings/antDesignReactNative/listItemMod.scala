@@ -12,7 +12,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemMod {
@@ -52,9 +51,9 @@ object listItemMod {
     def this(props: BriefProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BriefProps
-    extends typings.antDesignReactNative.listPropsTypeMod.BriefProps
+    extends StObject
+       with typings.antDesignReactNative.listPropsTypeMod.BriefProps
        with WithThemeStyles[PickListStyleBriefBriefTe]
   object BriefProps {
     
@@ -69,22 +68,22 @@ object listItemMod {
   trait Item
     extends Component[ListItemProps, js.Any, js.Any]
   
-  @js.native
   trait ListItemProps
-    extends ListItemPropsType
+    extends StObject
+       with ListItemPropsType
        with WithThemeStyles[ListStyle] {
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object ListItemProps {
     

@@ -2,14 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayersMixin extends StObject {
   
-  def add(layer: js.Promise[_]): Unit = js.native
-  def add(layer: js.Promise[_], index: Double): Unit = js.native
+  def add(layer: js.Promise[js.Any]): Unit = js.native
+  def add(layer: js.Promise[js.Any], index: Double): Unit = js.native
   /**
     * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     *

@@ -2,16 +2,15 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //shape configs class
-@js.native
 trait RectConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
 }
 object RectConfig {
   

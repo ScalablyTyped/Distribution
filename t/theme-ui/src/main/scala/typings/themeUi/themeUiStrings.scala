@@ -3,13 +3,14 @@ package typings.themeUi
 import typings.themeUi.mod.StyledTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeUiStrings {
   
   @js.native
-  sealed trait a extends StyledTags
+  sealed trait a
+    extends StObject
+       with StyledTags
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   
@@ -49,7 +50,9 @@ object themeUiStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait b extends StyledTags
+  sealed trait b
+    extends StObject
+       with StyledTags
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   
@@ -74,7 +77,9 @@ object themeUiStrings {
   def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait blockquote extends StyledTags
+  sealed trait blockquote
+    extends StObject
+       with StyledTags
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
@@ -119,7 +124,9 @@ object themeUiStrings {
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait code extends StyledTags
+  sealed trait code
+    extends StObject
+       with StyledTags
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   
@@ -159,7 +166,9 @@ object themeUiStrings {
   def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait delete extends StyledTags
+  sealed trait delete
+    extends StObject
+       with StyledTags
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -184,7 +193,9 @@ object themeUiStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait div extends StyledTags
+  sealed trait div
+    extends StObject
+       with StyledTags
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   
@@ -204,7 +215,9 @@ object themeUiStrings {
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait em extends StyledTags
+  sealed trait em
+    extends StObject
+       with StyledTags
   @scala.inline
   def em: em = "em".asInstanceOf[em]
   
@@ -379,32 +392,44 @@ object themeUiStrings {
   def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait h1 extends StyledTags
+  sealed trait h1
+    extends StObject
+       with StyledTags
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait h2 extends StyledTags
+  sealed trait h2
+    extends StObject
+       with StyledTags
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait h3 extends StyledTags
+  sealed trait h3
+    extends StObject
+       with StyledTags
   @scala.inline
   def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait h4 extends StyledTags
+  sealed trait h4
+    extends StObject
+       with StyledTags
   @scala.inline
   def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait h5 extends StyledTags
+  sealed trait h5
+    extends StObject
+       with StyledTags
   @scala.inline
   def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait h6 extends StyledTags
+  sealed trait h6
+    extends StObject
+       with StyledTags
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   
@@ -424,7 +449,9 @@ object themeUiStrings {
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait hr extends StyledTags
+  sealed trait hr
+    extends StObject
+       with StyledTags
   @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   
@@ -434,7 +461,9 @@ object themeUiStrings {
   def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait i extends StyledTags
+  sealed trait i
+    extends StObject
+       with StyledTags
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   
@@ -449,12 +478,16 @@ object themeUiStrings {
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait img extends StyledTags
+  sealed trait img
+    extends StObject
+       with StyledTags
   @scala.inline
   def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait inlineCode extends StyledTags
+  sealed trait inlineCode
+    extends StObject
+       with StyledTags
   @scala.inline
   def inlineCode: inlineCode = "inlineCode".asInstanceOf[inlineCode]
   
@@ -489,7 +522,9 @@ object themeUiStrings {
   def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait li extends StyledTags
+  sealed trait li
+    extends StObject
+       with StyledTags
   @scala.inline
   def li: li = "li".asInstanceOf[li]
   
@@ -574,7 +609,9 @@ object themeUiStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait ol extends StyledTags
+  sealed trait ol
+    extends StObject
+       with StyledTags
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   
@@ -594,7 +631,9 @@ object themeUiStrings {
   def output: output = "output".asInstanceOf[output]
   
   @js.native
-  sealed trait p extends StyledTags
+  sealed trait p
+    extends StObject
+       with StyledTags
   @scala.inline
   def p: p = "p".asInstanceOf[p]
   
@@ -629,7 +668,9 @@ object themeUiStrings {
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait pre extends StyledTags
+  sealed trait pre
+    extends StObject
+       with StyledTags
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   
@@ -654,7 +695,9 @@ object themeUiStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait root extends StyledTags
+  sealed trait root
+    extends StObject
+       with StyledTags
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   
@@ -724,7 +767,9 @@ object themeUiStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait strong extends StyledTags
+  sealed trait strong
+    extends StObject
+       with StyledTags
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   
@@ -764,7 +809,9 @@ object themeUiStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait table extends StyledTags
+  sealed trait table
+    extends StObject
+       with StyledTags
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
@@ -774,7 +821,9 @@ object themeUiStrings {
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
-  sealed trait td extends StyledTags
+  sealed trait td
+    extends StObject
+       with StyledTags
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   
@@ -804,7 +853,9 @@ object themeUiStrings {
   def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
-  sealed trait th extends StyledTags
+  sealed trait th
+    extends StObject
+       with StyledTags
   @scala.inline
   def th: th = "th".asInstanceOf[th]
   
@@ -814,7 +865,9 @@ object themeUiStrings {
   def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
-  sealed trait thematicBreak extends StyledTags
+  sealed trait thematicBreak
+    extends StObject
+       with StyledTags
   @scala.inline
   def thematicBreak: thematicBreak = "thematicBreak".asInstanceOf[thematicBreak]
   
@@ -829,7 +882,9 @@ object themeUiStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait tr extends StyledTags
+  sealed trait tr
+    extends StObject
+       with StyledTags
   @scala.inline
   def tr: tr = "tr".asInstanceOf[tr]
   
@@ -849,7 +904,9 @@ object themeUiStrings {
   def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait ul extends StyledTags
+  sealed trait ul
+    extends StObject
+       with StyledTags
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   

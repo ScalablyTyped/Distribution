@@ -2,8 +2,9 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromise[T] extends Promise[T]
+trait IPromise[T]
+  extends StObject
+     with Promise[T]

@@ -2,31 +2,29 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of getting a code for user confirmation (reset password, change
   * email etc.).
   */
-@js.native
 trait SchemaGetOobConfirmationCodeResponse extends StObject {
   
   /**
     * The email address that the email is sent to.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The fixed string
     * &quot;identitytoolkit#GetOobConfirmationCodeResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The code to be send to the user.
     */
-  var oobCode: js.UndefOr[String] = js.native
+  var oobCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGetOobConfirmationCodeResponse {
   

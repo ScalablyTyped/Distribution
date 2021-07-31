@@ -4,36 +4,34 @@ import typings.winrtUwp.Windows.Foundation.Deferral
 import typings.winrtUwp.Windows.Globalization.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TextUpdating event. */
-@js.native
 trait CoreTextTextUpdatingEventArgs extends StObject {
   
   /**
     * Requests that the text update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
     * @return A Deferral deferral object.
     */
-  def getDeferral(): Deferral = js.native
+  def getDeferral(): Deferral
   
   /** Gets a Language object representing the current input language. */
-  var inputLanguage: Language = js.native
+  var inputLanguage: Language
   
   /** Gets a value that indicates whether the text update operation is canceled. */
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
   
   /** Gets a value that indicates the range of text that the text input server indicates should be selected. The server populates this property before raising the event. */
-  var newSelection: CoreTextRange = js.native
+  var newSelection: CoreTextRange
   
   /** Gets a value that indicates the range of text that the text input server needs to modify. The server populates this property before raising the event. */
-  var range: CoreTextRange = js.native
+  var range: CoreTextRange
   
   /** Gets or sets a value that indicates the result of handling the TextUpdating event. The default value is Succeeded but if you can't action the operation as the text input server expects then before returning from the event handler set the property to the appropriate value to indicate what has happened. */
-  var result: CoreTextTextUpdatingResult = js.native
+  var result: CoreTextTextUpdatingResult
   
   /** Gets the text that the text input server is requesting to be set into the modified range. The server populates this property before raising the event. */
-  var text: String = js.native
+  var text: String
 }
 object CoreTextTextUpdatingEventArgs {
   

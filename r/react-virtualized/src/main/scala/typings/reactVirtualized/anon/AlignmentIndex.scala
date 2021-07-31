@@ -2,15 +2,13 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignmentIndex extends StObject {
   
-  var alignment: js.UndefOr[typings.reactVirtualized.mod.Alignment] = js.native
+  var alignment: js.UndefOr[typings.reactVirtualized.mod.Alignment] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object AlignmentIndex {
   

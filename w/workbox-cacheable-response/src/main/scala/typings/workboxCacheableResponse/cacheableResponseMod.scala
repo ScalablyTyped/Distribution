@@ -4,7 +4,6 @@ import typings.std.Record
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheableResponseMod {
@@ -17,12 +16,11 @@ object cacheableResponseMod {
     def isResponseCacheable(response: Response): Boolean = js.native
   }
   
-  @js.native
   trait CacheableResponseConfig extends StObject {
     
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
-    var statuses: js.UndefOr[js.Array[Double]] = js.native
+    var statuses: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object CacheableResponseConfig {
     

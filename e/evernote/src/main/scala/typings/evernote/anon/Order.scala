@@ -3,19 +3,17 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.NoteSortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
-  var order: js.UndefOr[NoteSortOrder] = js.native
+  var order: js.UndefOr[NoteSortOrder] = js.undefined
   
-  var publicDescription: js.UndefOr[String] = js.native
+  var publicDescription: js.UndefOr[String] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Order {
   

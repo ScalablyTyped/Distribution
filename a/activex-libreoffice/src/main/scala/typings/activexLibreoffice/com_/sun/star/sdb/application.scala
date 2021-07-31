@@ -47,7 +47,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object application {
@@ -109,18 +108,19 @@ object application {
     * actually does the copying.
     * @see CopyTableWizard
     */
-  @js.native
-  trait CopyTableRowEvent extends EventObject {
+  trait CopyTableRowEvent
+    extends StObject
+       with EventObject {
     
     /**
       * denotes the error which happened while copying the data.
       *
       * Usually, this contains an instance of {@link com.sun.star.sdbc.SQLException} .
       */
-    var Error: js.Any = js.native
+    var Error: js.Any
     
     /** contains the result set which is being copied by the wizard currently. */
-    var SourceData: XResultSet = js.native
+    var SourceData: XResultSet
   }
   object CopyTableRowEvent {
     
@@ -168,8 +168,9 @@ object application {
     * @see com.sun.star.sdb.InteractionHandler
     * @since OOo 2.4
     */
-  @js.native
-  trait CopyTableWizard extends XCopyTableWizard {
+  trait CopyTableWizard
+    extends StObject
+       with XCopyTableWizard {
     
     /**
       * creates an executable wizard dialog, which is to guide the user through copying a table from one database to another.
@@ -185,7 +186,7 @@ object application {
       * @throws com::sun::star::sdbc::SQLException if an error occurs during obtaining the source or destination connection. Those errors are passed unchanged to
       * @throws com::sun::star::lang::WrappedTargetException if an error other than the ones mentioned above occurs while extracting the necessary information fr
       */
-    def create(Source: XPropertySet, Destination: XPropertySet): Unit = js.native
+    def create(Source: XPropertySet, Destination: XPropertySet): Unit
     
     /**
       * creates an executable wizard dialog, which is to guide the user through copying a table from one database to another.
@@ -197,7 +198,7 @@ object application {
       * @param InteractionHandler specifies an interaction handler to use when user input is required.  When specifying this parameter, you should use an implem
       * @see com.sun.star.sdb.InteractionHandler
       */
-    def createWithInteractionHandler(Source: XPropertySet, Destination: XPropertySet, InteractionHandler: XInteractionHandler): Unit = js.native
+    def createWithInteractionHandler(Source: XPropertySet, Destination: XPropertySet, InteractionHandler: XInteractionHandler): Unit
   }
   object CopyTableWizard {
     
@@ -295,9 +296,9 @@ object application {
   }
   
   /** is the default controller implementation for OpenOffice.org's database application. */
-  @js.native
   trait DefaultViewController
-    extends Controller
+    extends StObject
+       with Controller
        with XTitle
        with XTitleChangeBroadcaster
        with XDatabaseDocumentUI
@@ -361,10 +362,11 @@ object application {
   }
   
   /** @since LibreOffice 4.1 */
-  @js.native
-  trait MacroMigrationWizard extends XExecutableDialog {
+  trait MacroMigrationWizard
+    extends StObject
+       with XExecutableDialog {
     
-    def createWithDocument(Document: XOfficeDatabaseDocument): Unit = js.native
+    def createWithDocument(Document: XOfficeDatabaseDocument): Unit
   }
   object MacroMigrationWizard {
     
@@ -393,7 +395,6 @@ object application {
     * denotes a named database object, or a named folder of database objects
     * @since OOo 3.0
     */
-  @js.native
   trait NamedDatabaseObject extends StObject {
     
     /**
@@ -417,14 +418,14 @@ object application {
       * @see XDatabaseMetaData.isCatalogAtStart
       * @see DatabaseObjectContainer
       */
-    var Name: String = js.native
+    var Name: String
     
     /**
       * denotes the type of the object.
       *
       * This member is one of the {@link DatabaseObject} or {@link DatabaseObjectContainer} constants.
       */
-    var Type: Double = js.native
+    var Type: Double
   }
   object NamedDatabaseObject {
     
@@ -450,8 +451,9 @@ object application {
     * @see CopyTableRowEvent
     * @see CopyTableWizard
     */
-  @js.native
-  trait XCopyTableListener extends XEventListener {
+  trait XCopyTableListener
+    extends StObject
+       with XEventListener {
     
     /**
       * is called when a row was successfully copied.
@@ -459,14 +461,14 @@ object application {
       * This method is called right after a row has been successfully copied. It might be used, for instance, to update a progress indicator.
       * @param Event describes the current state of the copy operation. {@link CopyTableRowEvent.SourceData} is positioned at the row which was just copied to t
       */
-    def copiedRow(Event: CopyTableRowEvent): Unit = js.native
+    def copiedRow(Event: CopyTableRowEvent): Unit
     
     /**
       * is called when copying a row failed.
       * @param Event describes the current state of the copy operation. {@link CopyTableRowEvent.SourceData} is positioned at the row which was attempted to be
       * @returns how to continue with copying. Must be one of the {@link CopyTableContinuation} constants.
       */
-    def copyRowError(Event: CopyTableRowEvent): Double = js.native
+    def copyRowError(Event: CopyTableRowEvent): Double
     
     /**
       * is called when a row is about to be copied.
@@ -474,7 +476,7 @@ object application {
       * This method is called immediately before a row is copied. It might be used, for instance, to update a progress indicator.
       * @param Event describes the current state of the copy operation. {@link CopyTableRowEvent.SourceData} is positioned at the row which is about to be copied.
       */
-    def copyingRow(Event: CopyTableRowEvent): Unit = js.native
+    def copyingRow(Event: CopyTableRowEvent): Unit
   }
   object XCopyTableListener {
     
@@ -515,8 +517,9 @@ object application {
     * The `copy table wizard` described by this interfaces cares for those, and other, settings.
     * @since OOo 2.4
     */
-  @js.native
-  trait XCopyTableWizard extends XExecutableDialog {
+  trait XCopyTableWizard
+    extends StObject
+       with XExecutableDialog {
     
     /**
       * specifies that a new primary key is to be created in the target database
@@ -534,7 +537,7 @@ object application {
       * When a primary key is to be created by the wizard, it will be an auto-increment column, if possible.
       * @throws com::sun::star::lang::IllegalArgumentException if the target database does not support primary keys
       */
-    var CreatePrimaryKey: Optional[String] = js.native
+    var CreatePrimaryKey: Optional[String]
     
     /**
       * specifies the name of the table in the destination database.
@@ -546,7 +549,7 @@ object application {
       *
       * Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
       */
-    var DestinationTableName: String = js.native
+    var DestinationTableName: String
     
     /**
       * specifies the basic operation for the wizard to execute.
@@ -560,7 +563,7 @@ object application {
       * Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
       * @throws IllegalArgumentException if you attempt to set an invalid operation, or if the given operation is not supported by the target database type, e.g.
       */
-    var Operation: Double = js.native
+    var Operation: Double
     
     /**
       * specifies that the first row should be used to identify column names.
@@ -568,13 +571,13 @@ object application {
       * This attribute is ignored when the source defines the column names which isn't the case when only a part of a table should be copied e.g. in the RTF
       * format or in the HTML format.
       */
-    var UseHeaderLineAsColumnNames: Boolean = js.native
+    var UseHeaderLineAsColumnNames: Boolean
     
     /** adds a listener which is to be notified of progress in the copy operation */
-    def addCopyTableListener(Listener: XCopyTableListener): Unit = js.native
+    def addCopyTableListener(Listener: XCopyTableListener): Unit
     
     /** removes a listener */
-    def removeCopyTableListener(Listener: XCopyTableListener): Unit = js.native
+    def removeCopyTableListener(Listener: XCopyTableListener): Unit
   }
   object XCopyTableWizard {
     
@@ -627,7 +630,6 @@ object application {
     * @see com.sun.star.sdb.DatabaseDocument
     * @since OOo 2.2
     */
-  @js.native
   trait XDatabaseDocumentUI extends StObject {
     
     /**
@@ -637,7 +639,7 @@ object application {
       * connection can yield unexpected results and should definitely be avoided. If you need a separate connection to the data source, use {@link
       * com.sun.star.sdbc.XDataSource.getConnection()} .
       */
-    var ActiveConnection: XConnection = js.native
+    var ActiveConnection: XConnection
     
     /**
       * provides access to the application's main window
@@ -647,10 +649,10 @@ object application {
       * @see com.sun.star.frame.XController
       * @see com.sun.star.frame.XFrame
       */
-    var ApplicationMainWindow: XWindow = js.native
+    var ApplicationMainWindow: XWindow
     
     /** provides access to the data source belong to the database document */
-    var DataSource: XDataSource = js.native
+    var DataSource: XDataSource
     
     /**
       * contains all sub components of the database document
@@ -662,7 +664,7 @@ object application {
       * ( {@link com.sun.star.frame.XFrame} ).
       * @since OOo 3.0
       */
-    var SubComponents: SafeArray[XComponent] = js.native
+    var SubComponents: SafeArray[XComponent]
     
     /**
       * closes all sub components of the database document.
@@ -679,7 +681,7 @@ object application {
       * @returns `TRUE` if and only if both suspending and closing all sub components succeeds.
       * @since OOo 3.0
       */
-    def closeSubComponents(): Boolean = js.native
+    def closeSubComponents(): Boolean
     
     /**
       * lets the application connect to the database
@@ -690,14 +692,14 @@ object application {
       * If the connection cannot be established, the respective error message is shown in the application window.
       * @throws com::sun::star::sdbc::SQLException if the connection cannot be established
       */
-    def connect(): Unit = js.native
+    def connect(): Unit
     
     /**
       * creates a new sub component of the given type
       * @param ObjectType specifies the type of the object, must be one of the {@link DatabaseObject} constants.
       * @param DocumentDefinition Upon successful return, and if and only if ObjectType equals {@link DatabaseObject.FORM} or {@link DatabaseObject.REPORT} , th
       */
-    def createComponent(ObjectType: Double, DocumentDefinition: js.Array[XComponent]): XComponent = js.native
+    def createComponent(ObjectType: Double, DocumentDefinition: js.Array[XComponent]): XComponent
     
     /**
       * creates a new sub component of the given type
@@ -707,7 +709,7 @@ object application {
       * @param Arguments The meaning of the arguments is defined at the service which is effectively created. See the [above table]{@link url="#component_types"
       * @param DocumentDefinition Upon successful return, and if and only if ObjectType equals {@link DatabaseObject.FORM} or {@link DatabaseObject.REPORT} , th
       */
-    def createComponentWithArguments(ObjectType: Double, Arguments: SeqEquiv[PropertyValue], DocumentDefinition: js.Array[XComponent]): XComponent = js.native
+    def createComponentWithArguments(ObjectType: Double, Arguments: SeqEquiv[PropertyValue], DocumentDefinition: js.Array[XComponent]): XComponent
     
     /**
       * identifies the given sub component
@@ -715,10 +717,10 @@ object application {
       * @returns a record describing the sub component. The first element of the returned pair is the type of the component, denoted by one of the {@link Database
       * @throws com::sun::star::lang::IllegalArgumentException if the given component is not one of the controller's sub components
       */
-    def identifySubComponent(SubComponent: XComponent): Pair[Double, String] = js.native
+    def identifySubComponent(SubComponent: XComponent): Pair[Double, String]
     
     /** determines whether the application is currently connected to the database */
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
     
     /**
       * loads the given sub component of the database document
@@ -742,7 +744,7 @@ object application {
       * @throws com::sun::star::container::NoSuchElementException if an object with the given name and of the given type does not exist
       * @throws com::sun::star::sdbc::SQLException if there is no connection to the database at the time the method is called.
       */
-    def loadComponent(ObjectType: Double, ObjectName: String, ForEditing: Boolean): XComponent = js.native
+    def loadComponent(ObjectType: Double, ObjectName: String, ForEditing: Boolean): XComponent
     
     /**
       * loads the given sub component of the database document
@@ -752,7 +754,7 @@ object application {
       * The meaning of the arguments is defined at the service which is effectively created. See the [above table]{@link url="#component_types"} for a list of
       * those services.
       */
-    def loadComponentWithArguments(ObjectType: Double, ObjectName: String, ForEditing: Boolean, Arguments: SeqEquiv[PropertyValue]): XComponent = js.native
+    def loadComponentWithArguments(ObjectType: Double, ObjectName: String, ForEditing: Boolean, Arguments: SeqEquiv[PropertyValue]): XComponent
   }
   object XDatabaseDocumentUI {
     
@@ -821,7 +823,6 @@ object application {
     * @see com.sun.star.sdb.Connection
     * @since OOo 2.2
     */
-  @js.native
   trait XTableUIProvider extends StObject {
     
     /**
@@ -832,7 +833,7 @@ object application {
       * @throws com::sun::star::lang::IllegalArgumentException if the given TableName does not denote an existing table
       * @throws com::sun::star::lang::WrappedTargetException if an error occurs while creating the table editor component.
       */
-    def getTableEditor(DocumentUI: XDatabaseDocumentUI, TableName: String): XInterface = js.native
+    def getTableEditor(DocumentUI: XDatabaseDocumentUI, TableName: String): XInterface
     
     /**
       * provides the icon which should be used to represent the table in the database application window.
@@ -843,7 +844,7 @@ object application {
       * @param ColorMode denotes the color mode of the graphic to retrieve, being one of the {@link com.sun.star.graphic.GraphicColorMode} constants.
       * @returns the icon which should be used to represent the table in the database application window, or `NULL` if the default icon should be used.
       */
-    def getTableIcon(TableName: String, ColorMode: Double): XGraphic = js.native
+    def getTableIcon(TableName: String, ColorMode: Double): XGraphic
   }
   object XTableUIProvider {
     

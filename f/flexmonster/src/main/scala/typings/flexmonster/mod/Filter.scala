@@ -2,21 +2,19 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
-  var include: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.undefined
   
-  var measure: js.UndefOr[String | MeasureObject] = js.native
+  var measure: js.UndefOr[String | MeasureObject] = js.undefined
   
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
-  var query: js.UndefOr[NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery] = js.native
+  var query: js.UndefOr[NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery] = js.undefined
 }
 object Filter {
   

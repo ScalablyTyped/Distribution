@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchAxis extends StObject {
   
-  var client: js.UndefOr[Double] = js.native
+  var client: js.UndefOr[Double] = js.undefined
   
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
   
-  var location: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Double] = js.undefined
   
-  var startLocation: js.UndefOr[Double] = js.native
+  var startLocation: js.UndefOr[Double] = js.undefined
   
-  var velocity: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.undefined
 }
 object TouchAxis {
   

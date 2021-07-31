@@ -2,10 +2,13 @@ package typings.srcset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("srcset", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Parse the HTML `<img>` [srcset](http://mobile.smashingmagazine.com/2013/08/21/webkit-implements-srcset-and-why-its-a-good-thing/) attribute.
@@ -26,9 +29,8 @@ object mod {
   	// ]
   	```
   	*/
-  @JSImport("srcset", "parse")
-  @js.native
-  def parse(srcset: String): js.Array[SrcSetDefinition] = js.native
+  @scala.inline
+  def parse(srcset: String): js.Array[SrcSetDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(srcset.asInstanceOf[js.Any]).asInstanceOf[js.Array[SrcSetDefinition]]
   
   /**
   	Stringify `SrcSetDefinition`s.
@@ -55,18 +57,16 @@ object mod {
   	// banner-HD.jpg 2x, banner-phone.jpg 100w, banner-phone-HD.jpg 100w 2x
   	```
   	*/
-  @JSImport("srcset", "stringify")
-  @js.native
-  def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = js.native
+  @scala.inline
+  def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(srcSetDefinitions.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait SrcSetDefinition extends StObject {
     
-    var density: js.UndefOr[Double] = js.native
+    var density: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SrcSetDefinition {
     

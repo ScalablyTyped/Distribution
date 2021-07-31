@@ -3,14 +3,14 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.positioningContainerTypesMod.IPositioningContainerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positioningContainerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer", "PositioningContainer")
   @js.native
-  class PositioningContainer protected () extends StObject {
+  class PositioningContainer protected ()
+    extends typings.officeUiFabricReact.positioningContainerPositioningContainerMod.PositioningContainer {
     def this(props: IPositioningContainerProps) = this()
   }
   /* static members */

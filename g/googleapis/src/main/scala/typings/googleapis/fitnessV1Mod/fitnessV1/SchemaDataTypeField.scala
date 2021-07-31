@@ -2,7 +2,6 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,21 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data (int, float, etc.).  This message is only instantiated in code and not
   * used for wire comms or stored in any way.
   */
-@js.native
 trait SchemaDataTypeField extends StObject {
   
   /**
     * The different supported formats for each field in a data type.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the name and format of data. Unlike data type names, field names
     * are not namespaced, and only need to be unique within the data type.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDataTypeField {
   

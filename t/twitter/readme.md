@@ -11,8 +11,8 @@ Twitter API client library for node.js
 | Full name          | twitter |
 | Keywords           | twitter, streaming, oauth |
 | # releases         | 1 |
-| # dependents       | 286 |
-| # downloads        | 1685798 |
+| # dependents       | 295 |
+| # downloads        | 1956704 |
 | # stars            | 141 |
 
 ## Links

@@ -10,9 +10,9 @@ A library for React-Native to help you download large files on iOS and Android b
 | ------------------ | :-------------: |
 | Full name          | react-native-background-downloader |
 | Keywords           | react-native, background, download, large files |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 131041 |
+| # downloads        | 280733 |
 | # stars            | 0 |
 
 ## Links

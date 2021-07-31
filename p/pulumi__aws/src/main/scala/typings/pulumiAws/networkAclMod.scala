@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkAclMod {
@@ -66,6 +65,10 @@ object networkAclMod {
   /* static members */
   object NetworkAcl {
     
+    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkAcl resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,55 +78,49 @@ object networkAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAclState): NetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAclState, opts: CustomResourceOptions): NetworkAcl = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAclState): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAclState, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
     
     /**
       * Returns true if the given object is an instance of NetworkAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean]
   }
   
-  @js.native
   trait NetworkAclArgs extends StObject {
     
     /**
       * Specifies an egress rule. Parameters defined below.
       */
-    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]] = js.native
+    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]] = js.undefined
     
     /**
       * Specifies an ingress rule. Parameters defined below.
       */
-    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]] = js.native
+    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]] = js.undefined
     
     /**
       * A list of Subnet IDs to apply the ACL to
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated VPC.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object NetworkAclArgs {
     
@@ -174,43 +171,42 @@ object networkAclMod {
     }
   }
   
-  @js.native
   trait NetworkAclState extends StObject {
     
     /**
       * The ARN of the network ACL
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies an egress rule. Parameters defined below.
       */
-    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]] = js.native
+    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]] = js.undefined
     
     /**
       * Specifies an ingress rule. Parameters defined below.
       */
-    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]] = js.native
+    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the network ACL.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Subnet IDs to apply the ACL to
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated VPC.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object NetworkAclState {
     

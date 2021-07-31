@@ -6,18 +6,20 @@ import typings.reactMdUtils.useAppSizeMediaMod.AppSize
 import typings.reactMdUtils.useAppSizeMediaMod.AppSizeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appSizeListenerMod {
   
   object AppSizeListener {
     
-    @JSImport("@react-md/utils/types/sizing/AppSizeListener", "AppSizeListener")
-    @js.native
+    @scala.inline
     def apply(
       hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeListenerProps
-    ): ReactElement = js.native
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
+    @JSImport("@react-md/utils/types/sizing/AppSizeListener", "AppSizeListener")
+    @js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -75,17 +77,18 @@ object appSizeListenerMod {
     }
   }
   
-  @js.native
-  trait AppSizeListenerProps extends AppSizeOptions {
+  trait AppSizeListenerProps
+    extends StObject
+       with AppSizeOptions {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * An change handler for the app size. This will be called each time the app
       * size changes based on a window resize event and will be provided the next
       * size and the previous size.
       */
-    var onChange: js.UndefOr[js.Function2[/* nextSize */ AppSize, /* lastSize */ AppSize, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* nextSize */ AppSize, /* lastSize */ AppSize, Unit]] = js.undefined
   }
   object AppSizeListenerProps {
     

@@ -15,55 +15,53 @@ import typings.awsSdkClientCodecommitNode.typesPullRequestStatusChangedEventMeta
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestEventMod {
   
-  @js.native
   trait PullRequestEvent extends StObject {
     
     /**
       * <p>The Amazon Resource Name (ARN) of the user whose actions resulted in the event. Examples include updating the pull request with additional commits or changing the status of a pull request.</p>
       */
-    var actorArn: js.UndefOr[String] = js.native
+    var actorArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The day and time of the pull request event, in timestamp format.</p>
       */
-    var eventDate: js.UndefOr[Date | String | Double] = js.native
+    var eventDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>Information about the source and destination branches for the pull request.</p>
       */
-    var pullRequestCreatedEventMetadata: js.UndefOr[PullRequestCreatedEventMetadata] = js.native
+    var pullRequestCreatedEventMetadata: js.UndefOr[PullRequestCreatedEventMetadata] = js.undefined
     
     /**
       * <p>The type of the pull request event, for example a status change event (PULL_REQUEST_STATUS_CHANGED) or update event (PULL_REQUEST_SOURCE_REFERENCE_UPDATED).</p>
       */
     var pullRequestEventType: js.UndefOr[
         PULL_REQUEST_CREATED | PULL_REQUEST_STATUS_CHANGED | PULL_REQUEST_SOURCE_REFERENCE_UPDATED | PULL_REQUEST_MERGE_STATE_CHANGED | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>The system-generated ID of the pull request.</p>
       */
-    var pullRequestId: js.UndefOr[String] = js.native
+    var pullRequestId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Information about the change in mergability state for the pull request event.</p>
       */
-    var pullRequestMergedStateChangedEventMetadata: js.UndefOr[PullRequestMergedStateChangedEventMetadata] = js.native
+    var pullRequestMergedStateChangedEventMetadata: js.UndefOr[PullRequestMergedStateChangedEventMetadata] = js.undefined
     
     /**
       * <p>Information about the updated source branch for the pull request event. </p>
       */
-    var pullRequestSourceReferenceUpdatedEventMetadata: js.UndefOr[PullRequestSourceReferenceUpdatedEventMetadata] = js.native
+    var pullRequestSourceReferenceUpdatedEventMetadata: js.UndefOr[PullRequestSourceReferenceUpdatedEventMetadata] = js.undefined
     
     /**
       * <p>Information about the change in status for the pull request event.</p>
       */
-    var pullRequestStatusChangedEventMetadata: js.UndefOr[PullRequestStatusChangedEventMetadata] = js.native
+    var pullRequestStatusChangedEventMetadata: js.UndefOr[PullRequestStatusChangedEventMetadata] = js.undefined
   }
   object PullRequestEvent {
     
@@ -128,38 +126,39 @@ object typesPullRequestEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledPullRequestEvent extends PullRequestEvent {
+  trait UnmarshalledPullRequestEvent
+    extends StObject
+       with PullRequestEvent {
     
     /**
       * <p>The day and time of the pull request event, in timestamp format.</p>
       */
     @JSName("eventDate")
-    var eventDate_UnmarshalledPullRequestEvent: js.UndefOr[Date] = js.native
+    var eventDate_UnmarshalledPullRequestEvent: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Information about the source and destination branches for the pull request.</p>
       */
     @JSName("pullRequestCreatedEventMetadata")
-    var pullRequestCreatedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestCreatedEventMetadata] = js.native
+    var pullRequestCreatedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestCreatedEventMetadata] = js.undefined
     
     /**
       * <p>Information about the change in mergability state for the pull request event.</p>
       */
     @JSName("pullRequestMergedStateChangedEventMetadata")
-    var pullRequestMergedStateChangedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestMergedStateChangedEventMetadata] = js.native
+    var pullRequestMergedStateChangedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestMergedStateChangedEventMetadata] = js.undefined
     
     /**
       * <p>Information about the updated source branch for the pull request event. </p>
       */
     @JSName("pullRequestSourceReferenceUpdatedEventMetadata")
-    var pullRequestSourceReferenceUpdatedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestSourceReferenceUpdatedEventMetadata] = js.native
+    var pullRequestSourceReferenceUpdatedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestSourceReferenceUpdatedEventMetadata] = js.undefined
     
     /**
       * <p>Information about the change in status for the pull request event.</p>
       */
     @JSName("pullRequestStatusChangedEventMetadata")
-    var pullRequestStatusChangedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestStatusChangedEventMetadata] = js.native
+    var pullRequestStatusChangedEventMetadata_UnmarshalledPullRequestEvent: js.UndefOr[UnmarshalledPullRequestStatusChangedEventMetadata] = js.undefined
   }
   object UnmarshalledPullRequestEvent {
     

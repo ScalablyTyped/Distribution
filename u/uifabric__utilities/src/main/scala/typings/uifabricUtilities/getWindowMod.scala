@@ -4,15 +4,16 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getWindowMod {
   
-  @JSImport("@uifabric/utilities/lib/dom/getWindow", "getWindow")
+  @JSImport("@uifabric/utilities/lib/dom/getWindow", JSImport.Namespace)
   @js.native
-  def getWindow(): js.UndefOr[Window] = js.native
-  @JSImport("@uifabric/utilities/lib/dom/getWindow", "getWindow")
-  @js.native
-  def getWindow(rootElement: Element): js.UndefOr[Window] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[js.UndefOr[Window]]
+  @scala.inline
+  def getWindow(rootElement: Element): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Window]]
 }

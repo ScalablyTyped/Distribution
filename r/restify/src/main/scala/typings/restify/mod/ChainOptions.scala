@@ -2,15 +2,13 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChainOptions extends StObject {
   
-  var onceNext: js.UndefOr[Boolean] = js.native
+  var onceNext: js.UndefOr[Boolean] = js.undefined
   
-  var strictNext: js.UndefOr[Boolean] = js.native
+  var strictNext: js.UndefOr[Boolean] = js.undefined
 }
 object ChainOptions {
   

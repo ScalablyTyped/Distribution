@@ -2,29 +2,27 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullScreen extends StObject {
   
-  var closeMenu: js.UndefOr[String] = js.native
+  var closeMenu: js.UndefOr[String] = js.undefined
   
-  var fullScreen: js.UndefOr[String] = js.native
+  var fullScreen: js.UndefOr[String] = js.undefined
   
-  var openMenu: js.UndefOr[String] = js.native
+  var openMenu: js.UndefOr[String] = js.undefined
   
-  var pauseButton: js.UndefOr[String] = js.native
+  var pauseButton: js.UndefOr[String] = js.undefined
   
-  var playButton: js.UndefOr[String] = js.native
+  var playButton: js.UndefOr[String] = js.undefined
   
-  var progressMeter: js.UndefOr[String] = js.native
+  var progressMeter: js.UndefOr[String] = js.undefined
   
-  var scrubber: js.UndefOr[String] = js.native
+  var scrubber: js.UndefOr[String] = js.undefined
   
-  var volueDown: js.UndefOr[String] = js.native
+  var volueDown: js.UndefOr[String] = js.undefined
   
-  var volumeUp: js.UndefOr[String] = js.native
+  var volumeUp: js.UndefOr[String] = js.undefined
 }
 object FullScreen {
   

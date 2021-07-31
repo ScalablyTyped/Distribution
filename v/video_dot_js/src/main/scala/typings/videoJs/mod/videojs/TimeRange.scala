@@ -2,14 +2,12 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that contains ranges of time for various reasons.
   * @see https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges
   */
-@js.native
 trait TimeRange extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait TimeRange extends StObject {
     *
     * @return The time that offset at the specified index.
     */
-  def end(index: Double): Double = js.native
+  def end(index: Double): Double
   
   /**
     *           The number of time ranges represented by this Object
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Returns the time offset at which a specified time range begins.
@@ -35,7 +33,7 @@ trait TimeRange extends StObject {
     *
     * @return The time that offset at the specified index.
     */
-  def start(index: Double): Double = js.native
+  def start(index: Double): Double
 }
 object TimeRange {
   

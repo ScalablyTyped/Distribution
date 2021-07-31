@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
   /**
     * The error code associated with the operation failure.
     */
-  var Code: stringType = js.native
+  var Code: stringType
   
   /**
     * Detailed information about the reason that the operation failed.
     */
-  var Message: stringType = js.native
+  var Message: stringType
 }
 object ErrorDetails {
   

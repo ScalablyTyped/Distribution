@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckDNSAvailabilityResultMessage extends StObject {
   
   /**
     * Indicates if the specified CNAME is available:    true : The CNAME is available.    false : The CNAME is not available.  
     */
-  var Available: js.UndefOr[CnameAvailability] = js.native
+  var Available: js.UndefOr[CnameAvailability] = js.undefined
   
   /**
     * The fully qualified CNAME to reserve when CreateEnvironment is called with the provided prefix.
     */
-  var FullyQualifiedCNAME: js.UndefOr[DNSCname] = js.native
+  var FullyQualifiedCNAME: js.UndefOr[DNSCname] = js.undefined
 }
 object CheckDNSAvailabilityResultMessage {
   

@@ -2,20 +2,18 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gRPC call credentials to access the SDS server.
   */
-@js.native
 trait SchemaCallCredentials extends StObject {
   
   /**
     * The access token that is used as call credential for the SDS server. This
     * field is used only if callCredentialType is ACCESS_TOKEN.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The type of call credentials to use for GRPC requests to the SDS server.
@@ -26,19 +24,19 @@ trait SchemaCallCredentials extends StObject {
     * used to access the SDS server. FROM_PLUGIN: Custom authenticator
     * credentials are used to access the SDS server.
     */
-  var callCredentialType: js.UndefOr[String] = js.native
+  var callCredentialType: js.UndefOr[String] = js.undefined
   
   /**
     * Custom authenticator credentials.
     */
-  var fromPlugin: js.UndefOr[SchemaMetadataCredentialsFromPlugin] = js.native
+  var fromPlugin: js.UndefOr[SchemaMetadataCredentialsFromPlugin] = js.undefined
   
   /**
     * This service account credentials are used as call credentials for the SDS
     * server. This field is used only if callCredentialType is
     * JWT_SERVICE_ACCOUNT.
     */
-  var jwtServiceAccount: js.UndefOr[SchemaServiceAccountJwtAccessCredentials] = js.native
+  var jwtServiceAccount: js.UndefOr[SchemaServiceAccountJwtAccessCredentials] = js.undefined
 }
 object SchemaCallCredentials {
   

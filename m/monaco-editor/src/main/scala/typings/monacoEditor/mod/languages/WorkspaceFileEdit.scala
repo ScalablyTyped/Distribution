@@ -3,19 +3,17 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceFileEdit extends StObject {
   
-  var metadata: js.UndefOr[WorkspaceEditMetadata] = js.native
+  var metadata: js.UndefOr[WorkspaceEditMetadata] = js.undefined
   
-  var newUri: js.UndefOr[Uri] = js.native
+  var newUri: js.UndefOr[Uri] = js.undefined
   
-  var oldUri: js.UndefOr[Uri] = js.native
+  var oldUri: js.UndefOr[Uri] = js.undefined
   
-  var options: js.UndefOr[WorkspaceFileEditOptions] = js.native
+  var options: js.UndefOr[WorkspaceFileEditOptions] = js.undefined
 }
 object WorkspaceFileEdit {
   

@@ -2,22 +2,22 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShowLoadingArgs extends AsyncCallback[Unit] {
+trait ShowLoadingArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Text contents of loading.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Displaying delay, in ms, 0 by default If my.hideLoading was
     * called before this time, it is not displayed.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
 }
 object ShowLoadingArgs {
   

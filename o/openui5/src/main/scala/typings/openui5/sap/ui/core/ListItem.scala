@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListItem extends Item {
+trait ListItem
+  extends StObject
+     with Item {
   
   /**
     * Gets current value of property <code>additionalText</code>.Some additional text of type string,

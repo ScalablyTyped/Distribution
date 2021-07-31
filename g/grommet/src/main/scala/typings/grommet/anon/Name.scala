@@ -8,19 +8,17 @@ import typings.grommet.grommetStrings.`North America`
 import typings.grommet.grommetStrings.`South America`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var color: js.UndefOr[String | Dark] = js.native
+  var color: js.UndefOr[String | Dark] = js.undefined
   
-  var name: Africa | Asia | Australia | Europe | (`North America`) | (`South America`) = js.native
+  var name: Africa | Asia | Australia | Europe | (`North America`) | (`South America`)
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object Name {
   
@@ -43,13 +41,13 @@ object Name {
     def setName(value: Africa | Asia | Australia | Europe | (`North America`) | (`South America`)): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnHover(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+    def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)

@@ -21,7 +21,6 @@ import typings.reactIntl.typesMod.IntlShape
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -48,9 +47,8 @@ object providerMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-intl/lib/src/components/provider", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: State): PartialStateCache | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: State): PartialStateCache | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevConfigCache.asInstanceOf[js.Any])).asInstanceOf[PartialStateCache | Null]
   }
   
   @JSImport("react-intl/lib/src/components/provider", "createIntl")
@@ -65,35 +63,34 @@ object providerMod {
   }
   
   /* Inlined std.Omit<react-intl.react-intl/lib/src/types.IntlConfig, keyof std.Pick<react-intl.react-intl/lib/src/types.IntlConfig, 'formats' | 'messages' | 'timeZone' | 'textComponent' | 'defaultLocale' | 'defaultFormats' | 'onError'>> & std.Partial<std.Pick<react-intl.react-intl/lib/src/types.IntlConfig, 'formats' | 'messages' | 'timeZone' | 'textComponent' | 'defaultLocale' | 'defaultFormats' | 'onError'>> */
-  @js.native
   trait OptionalIntlConfig extends StObject {
     
-    var defaultFormats: js.UndefOr[CustomFormats] = js.native
+    var defaultFormats: js.UndefOr[CustomFormats] = js.undefined
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
     var defaultRichTextElements: js.UndefOr[
         Record[
           String, 
           FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var formats: js.UndefOr[CustomFormats] = js.native
+    var formats: js.UndefOr[CustomFormats] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var messages: js.UndefOr[Record[String, js.Array[MessageFormatElement] | String]] = js.native
+    var messages: js.UndefOr[Record[String, js.Array[MessageFormatElement] | String]] = js.undefined
     
-    var onError: js.UndefOr[OnErrorFn] = js.native
+    var onError: js.UndefOr[OnErrorFn] = js.undefined
     
     var textComponent: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
-    var wrapRichTextChunksInFragment: js.UndefOr[Boolean] = js.native
+    var wrapRichTextChunksInFragment: js.UndefOr[Boolean] = js.undefined
   }
   object OptionalIntlConfig {
     
@@ -172,25 +169,24 @@ object providerMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
     /**
       * Explicit intl cache to prevent memory leaks
       */
-    var cache: IntlCache = js.native
+    var cache: IntlCache
     
     /**
       * Intl object we created
       */
-    var intl: js.UndefOr[IntlShape] = js.native
+    var intl: js.UndefOr[IntlShape] = js.undefined
     
     /**
       * list of memoized config we care about.
       * This is important since creating intl is
       * very expensive
       */
-    var prevConfig: OptionalIntlConfig = js.native
+    var prevConfig: OptionalIntlConfig
   }
   object State {
     

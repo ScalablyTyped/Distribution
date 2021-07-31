@@ -2,51 +2,51 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlIcon extends KmlLink {
+trait KmlIcon
+  extends StObject
+     with KmlLink {
   
   /**
     * Gets the height (<gx:h>), in pixels, of the icon.
     */
-  def getH(): Double = js.native
+  def getH(): Double
   
   /**
     * Gets the width (<gx:w>), in pixels, of the icon.
     */
-  def getW(): Double = js.native
+  def getW(): Double
   
   /**
     * Gets the offset from the left (<gx:x>), in pixels, of the icon.
     */
-  def getX(): Double = js.native
+  def getX(): Double
   
   /**
     * Gets the offset from the bottom (<gx:y>), in pixels, of the icon.
     */
-  def getY(): Double = js.native
+  def getY(): Double
   
   /**
     * Specifies the height (<gx:h>), in pixels, of the icon to use.
     */
-  def setH(h: Double): Unit = js.native
+  def setH(h: Double): Unit
   
   /**
     * Specifies the width (<gx:w>), in pixels, of the icon to use.
     */
-  def setW(w: Double): Unit = js.native
+  def setW(w: Double): Unit
   
   /**
     * Specifies the icon's offset (<gx:x>), in pixels from the left side of its icon palette, if a palette has been specified in the <href> element.
     */
-  def setX(x: Double): Double = js.native
+  def setX(x: Double): Double
   
   /**
     * Specifies the offset (<gx:y>), in pixels from the bottom of its icon palette, if a palette has been specified in the <href> element.
     */
-  def setY(y: Double): Unit = js.native
+  def setY(y: Double): Unit
 }
 object KmlIcon {
   

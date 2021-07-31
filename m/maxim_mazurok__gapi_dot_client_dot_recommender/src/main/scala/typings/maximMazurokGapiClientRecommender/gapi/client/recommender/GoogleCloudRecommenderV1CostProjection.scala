@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1CostProjection extends StObject {
   
   /**
     * An approximate projection on amount saved or amount incurred. Negative cost units indicate cost savings and positive cost units indicate increase. See google.type.Money
     * documentation for positive/negative units.
     */
-  var cost: js.UndefOr[GoogleTypeMoney] = js.native
+  var cost: js.UndefOr[GoogleTypeMoney] = js.undefined
   
   /** Duration for which this cost applies. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommenderV1CostProjection {
   

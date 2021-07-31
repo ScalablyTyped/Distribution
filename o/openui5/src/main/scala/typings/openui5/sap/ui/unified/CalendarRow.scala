@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarRow extends Control {
+trait CalendarRow
+  extends StObject
+     with Control {
   
   /**
     * Adds some appointment to the aggregation <code>appointments</code>.
@@ -235,7 +236,7 @@ trait CalendarRow extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>checkResize</code>.If set, the <code>CalendarRow</code> checks
@@ -423,7 +424,7 @@ trait CalendarRow extends Control {
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>intervalHeaders</code>.Additionally, it

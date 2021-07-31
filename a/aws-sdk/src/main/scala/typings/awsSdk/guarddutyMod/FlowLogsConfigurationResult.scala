@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowLogsConfigurationResult extends StObject {
   
   /**
     * Denotes whether VPC flow logs is enabled as a data source.
     */
-  var Status: DataSourceStatus = js.native
+  var Status: DataSourceStatus
 }
 object FlowLogsConfigurationResult {
   

@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to delete a specific bookmark.
   */
-@js.native
-trait DeleteBookmarkCommand extends CommandWithSimpleStateBase {
+trait DeleteBookmarkCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DeleteBookmarkCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param name A string value specifying a name of the deleted bookmark.
     */
-  def execute(name: String): Boolean = js.native
+  def execute(name: String): Boolean
 }
 object DeleteBookmarkCommand {
   

@@ -1,18 +1,20 @@
 package typings.blockingProxy
 
 import typings.blockingProxy.simpleWebdriverClientMod.SimpleWebDriverClient
+import typings.blockingProxy.webdriverCommandsMod.WebDriverCommand
 import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.blockingProxy.webdriverProxyMod.WebDriverBarrier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularWaitBarrierMod {
   
   @JSImport("blocking-proxy/built/lib/angular_wait_barrier", "AngularWaitBarrier")
   @js.native
-  class AngularWaitBarrier protected () extends WebDriverBarrier {
+  class AngularWaitBarrier protected ()
+    extends StObject
+       with WebDriverBarrier {
     def this(client: SimpleWebDriverClient) = this()
     
     var client: js.Any = js.native
@@ -27,6 +29,9 @@ object angularWaitBarrierMod {
     var enabled: Boolean = js.native
     
     var logger: WebDriverLogger = js.native
+    
+    /* CompleteClass */
+    override def onCommand(command: WebDriverCommand): js.Promise[Unit] = js.native
     
     var rootSelector: String = js.native
     

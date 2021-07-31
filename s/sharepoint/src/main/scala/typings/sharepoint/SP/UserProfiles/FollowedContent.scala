@@ -5,12 +5,13 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.IntResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to followed content items. */
 @js.native
-trait FollowedContent extends ClientObject {
+trait FollowedContent
+  extends StObject
+     with ClientObject {
   
   /** Finds the original item that is being pointed to in the Followed Content list and updates the Title, Url, and IconUrl fields if they have been changed.
     @param url The URL of the original item as stored in the Followed Content list. */

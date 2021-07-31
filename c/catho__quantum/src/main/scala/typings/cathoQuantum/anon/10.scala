@@ -3,19 +3,17 @@ package typings.cathoQuantum.anon
 import typings.cathoQuantum.cathoQuantumStrings.CardDotTitle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `10` extends StObject {
   
-  var displayName: CardDotTitle = js.native
+  var displayName: CardDotTitle
 }
 object `10` {
   
   @scala.inline
-  def apply(displayName: CardDotTitle): `10` = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
+  def apply(): `10` = {
+    val __obj = js.Dynamic.literal(displayName = "Card.Title")
     __obj.asInstanceOf[`10`]
   }
   

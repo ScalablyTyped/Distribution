@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubeAnalytics/v2", "youtubeAnalytics_v2.Resource$Groupitems")
@@ -31,7 +30,7 @@ class ResourceGroupitems protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmptyResponse] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmptyResponse]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmptyResponse] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmptyResponse] = js.native
   def delete(params: ParamsResourceGroupitemsDelete): GaxiosPromise[SchemaEmptyResponse] = js.native
   def delete(params: ParamsResourceGroupitemsDelete, callback: BodyResponseCallback[SchemaEmptyResponse]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceGroupitems protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(callback: BodyResponseCallback[SchemaGroupItem]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupItem] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(params: ParamsResourceGroupitemsInsert): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(params: ParamsResourceGroupitemsInsert, callback: BodyResponseCallback[SchemaGroupItem]): Unit = js.native
   def insert(
@@ -92,7 +91,7 @@ class ResourceGroupitems protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListGroupItemsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupItemsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGroupItemsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListGroupItemsResponse] = js.native
   def list(params: ParamsResourceGroupitemsList): GaxiosPromise[SchemaListGroupItemsResponse] = js.native
   def list(params: ParamsResourceGroupitemsList, callback: BodyResponseCallback[SchemaListGroupItemsResponse]): Unit = js.native
   def list(

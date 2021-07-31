@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Target extends StObject {
   
   /**
     * The name of a connection which allows a job or crawler to access data in Amazon S3 within an Amazon Virtual Private Cloud environment (Amazon VPC).
     */
-  var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.native
+  var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.undefined
   
   /**
     * A list of glob patterns used to exclude from the crawl. For more information, see Catalog Tables with a Crawler.
     */
-  var Exclusions: js.UndefOr[PathList] = js.native
+  var Exclusions: js.UndefOr[PathList] = js.undefined
   
   /**
     * The path to the Amazon S3 target.
     */
-  var Path: js.UndefOr[typings.awsSdk.glueMod.Path] = js.native
+  var Path: js.UndefOr[typings.awsSdk.glueMod.Path] = js.undefined
 }
 object S3Target {
   

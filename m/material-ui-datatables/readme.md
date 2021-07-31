@@ -12,7 +12,7 @@ An another React Data tables component.
 | Keywords           | react, react-component, material design, material-ui, datatables |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 42524 |
+| # downloads        | 42113 |
 | # stars            | 4 |
 
 ## Links

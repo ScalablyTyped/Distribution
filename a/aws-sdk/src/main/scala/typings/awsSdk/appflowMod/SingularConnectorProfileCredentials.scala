@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingularConnectorProfileCredentials extends StObject {
   
   /**
     *  A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API. 
     */
-  var apiKey: ApiKey = js.native
+  var apiKey: ApiKey
 }
 object SingularConnectorProfileCredentials {
   

@@ -2,39 +2,37 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Instance Template resource. (== resource_for beta.instanceTemplates ==)
   * (== resource_for v1.instanceTemplates ==)
   */
-@js.native
 trait SchemaInstanceTemplate extends StObject {
   
   /**
     * [Output Only] The creation timestamp for this instance template in
     * RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A unique identifier for this instance template. The server
     * defines this identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The resource type, which is always compute#instanceTemplate
     * for instance templates.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -45,18 +43,18 @@ trait SchemaInstanceTemplate extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The instance properties for this instance template.
     */
-  var properties: js.UndefOr[SchemaInstanceProperties] = js.native
+  var properties: js.UndefOr[SchemaInstanceProperties] = js.undefined
   
   /**
     * [Output Only] The URL for this instance template. The server defines this
     * URL.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The source instance used to create the template. You can provide this as
@@ -65,12 +63,12 @@ trait SchemaInstanceTemplate extends StObject {
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance
     * - projects/project/zones/zone/instances/instance
     */
-  var sourceInstance: js.UndefOr[String] = js.native
+  var sourceInstance: js.UndefOr[String] = js.undefined
   
   /**
     * The source instance params to use to create this instance template.
     */
-  var sourceInstanceParams: js.UndefOr[SchemaSourceInstanceParams] = js.native
+  var sourceInstanceParams: js.UndefOr[SchemaSourceInstanceParams] = js.undefined
 }
 object SchemaInstanceTemplate {
   

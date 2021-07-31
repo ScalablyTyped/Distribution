@@ -10,7 +10,6 @@ import typings.stripe.mod.sources.ISourceRetrieveOptions
 import typings.stripe.mod.sources.ISourceUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Sources")
@@ -25,14 +24,9 @@ class Sources protected () extends StripeResource {
   def create(data: ISourceCreationOptions, response: IResponseFn[ISource]): js.Promise[ISource] = js.native
   
   def retrieve(id: String): js.Promise[ISource] = js.native
-  def retrieve(id: String, data: js.UndefOr[scala.Nothing], options: HeaderOptions): js.Promise[ISource] = js.native
-  def retrieve(
-    id: String,
-    data: js.UndefOr[scala.Nothing],
-    options: HeaderOptions,
-    response: IResponseFn[ISource]
-  ): js.Promise[ISource] = js.native
-  def retrieve(id: String, data: js.UndefOr[scala.Nothing], response: IResponseFn[ISource]): js.Promise[ISource] = js.native
+  def retrieve(id: String, data: Unit, options: HeaderOptions): js.Promise[ISource] = js.native
+  def retrieve(id: String, data: Unit, options: HeaderOptions, response: IResponseFn[ISource]): js.Promise[ISource] = js.native
+  def retrieve(id: String, data: Unit, response: IResponseFn[ISource]): js.Promise[ISource] = js.native
   def retrieve(id: String, data: ISourceRetrieveOptions): js.Promise[ISource] = js.native
   /** Retrieve Source: https://stripe.com/docs/api/sources/retrieve */
   def retrieve(id: String, data: ISourceRetrieveOptions, options: HeaderOptions): js.Promise[ISource] = js.native

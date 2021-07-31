@@ -5,7 +5,6 @@ import typings.std.Record
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,16 +17,18 @@ object mod {
     * @param map The map of newly defined properties.
     * @param predicates The optional predicates map, return `true` to override existing properties on `object`.
     */
-  @JSImport("define-properties", JSImport.Namespace)
-  @js.native
-  def apply[M /* <: js.Object */](`object`: js.Object, map: M with ThisType[_]): Unit = js.native
-  @JSImport("define-properties", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[M /* <: js.Object */](`object`: js.Object, map: M & ThisType[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply[M /* <: js.Object */](
     `object`: js.Object,
-    map: M with ThisType[_],
+    map: M & ThisType[js.Any],
     predicates: Partial[Record[/* keyof M */ String, js.Function0[Boolean]]]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], map.asInstanceOf[js.Any], predicates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("define-properties", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Whether the current environment correctly supports property descriptors.

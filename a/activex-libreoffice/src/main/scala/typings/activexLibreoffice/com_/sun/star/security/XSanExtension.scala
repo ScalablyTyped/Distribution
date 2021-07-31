@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface represents a x509 certificate extension.
   */
-@js.native
-trait XSanExtension extends XCertificateExtension {
+trait XSanExtension
+  extends StObject
+     with XCertificateExtension {
   
   /** Contains the alternative names of a certificate */
-  var AlternativeNames: SafeArray[CertAltNameEntry] = js.native
+  var AlternativeNames: SafeArray[CertAltNameEntry]
 }
 object XSanExtension {
   

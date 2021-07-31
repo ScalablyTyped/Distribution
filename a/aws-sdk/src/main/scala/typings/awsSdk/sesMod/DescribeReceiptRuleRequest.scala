@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReceiptRuleRequest extends StObject {
   
   /**
     * The name of the receipt rule.
     */
-  var RuleName: ReceiptRuleName = js.native
+  var RuleName: ReceiptRuleName
   
   /**
     * The name of the receipt rule set that the receipt rule belongs to.
     */
-  var RuleSetName: ReceiptRuleSetName = js.native
+  var RuleSetName: ReceiptRuleSetName
 }
 object DescribeReceiptRuleRequest {
   

@@ -2,45 +2,43 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WebView element from html
   */
 /** A set of data types. Missing properties are interpreted as false. */
-@js.native
 trait ClearDataTypeSet extends StObject {
   
   /** Websites' appcaches. */
-  var appcache: js.UndefOr[Boolean] = js.native
+  var appcache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The browser's cache. Note: when removing data, this clears the entire cache; it is not limited to the range you specify.
     * @since Chrome 43.
     */
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
   /** The partition's cookies. */
-  var cookies: js.UndefOr[Boolean] = js.native
+  var cookies: js.UndefOr[Boolean] = js.undefined
   
   /** Websites' filesystems. */
-  var fileSystems: js.UndefOr[Boolean] = js.native
+  var fileSystems: js.UndefOr[Boolean] = js.undefined
   
   /** Websites' IndexedDB data. */
-  var indexedDB: js.UndefOr[Boolean] = js.native
+  var indexedDB: js.UndefOr[Boolean] = js.undefined
   
   /** Websites' local storage data. */
-  var localStorage: js.UndefOr[Boolean] = js.native
+  var localStorage: js.UndefOr[Boolean] = js.undefined
   
   /** The partition's persistent cookies. */
-  var persistentCookies: js.UndefOr[Boolean] = js.native
+  var persistentCookies: js.UndefOr[Boolean] = js.undefined
   
   /** The partition's session cookies. */
-  var sessionCookies: js.UndefOr[Boolean] = js.native
+  var sessionCookies: js.UndefOr[Boolean] = js.undefined
   
   /** Websites' WebSQL data. */
-  var webSQL: js.UndefOr[Boolean] = js.native
+  var webSQL: js.UndefOr[Boolean] = js.undefined
 }
 object ClearDataTypeSet {
   

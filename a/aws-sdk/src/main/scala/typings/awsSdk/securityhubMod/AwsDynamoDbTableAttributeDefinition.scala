@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableAttributeDefinition extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var AttributeName: js.UndefOr[NonEmptyString] = js.native
+  var AttributeName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of the attribute.
     */
-  var AttributeType: js.UndefOr[NonEmptyString] = js.native
+  var AttributeType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableAttributeDefinition {
   

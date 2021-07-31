@@ -3,16 +3,16 @@ package typings.jsonLogicJs.anon
 import typings.jsonLogicJs.mod._RulesLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `13` extends _RulesLogic {
+trait `13`
+  extends StObject
+     with _RulesLogic {
   
   var in: js.Tuple2[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
-  ] = js.native
+  ]
 }
 object `13` {
   

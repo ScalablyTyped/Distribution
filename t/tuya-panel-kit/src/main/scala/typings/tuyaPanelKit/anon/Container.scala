@@ -4,19 +4,17 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var container: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var content: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var content: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentRight: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentRight: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var title: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var title: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object Container {
   

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
   /** The result of creating a footer. */
-  var createFooter: js.UndefOr[CreateFooterResponse] = js.native
+  var createFooter: js.UndefOr[CreateFooterResponse] = js.undefined
   
   /** The result of creating a footnote. */
-  var createFootnote: js.UndefOr[CreateFootnoteResponse] = js.native
+  var createFootnote: js.UndefOr[CreateFootnoteResponse] = js.undefined
   
   /** The result of creating a header. */
-  var createHeader: js.UndefOr[CreateHeaderResponse] = js.native
+  var createHeader: js.UndefOr[CreateHeaderResponse] = js.undefined
   
   /** The result of creating a named range. */
-  var createNamedRange: js.UndefOr[CreateNamedRangeResponse] = js.native
+  var createNamedRange: js.UndefOr[CreateNamedRangeResponse] = js.undefined
   
   /** The result of inserting an inline image. */
-  var insertInlineImage: js.UndefOr[InsertInlineImageResponse] = js.native
+  var insertInlineImage: js.UndefOr[InsertInlineImageResponse] = js.undefined
   
   /** The result of inserting an inline Google Sheets chart. */
-  var insertInlineSheetsChart: js.UndefOr[InsertInlineSheetsChartResponse] = js.native
+  var insertInlineSheetsChart: js.UndefOr[InsertInlineSheetsChartResponse] = js.undefined
   
   /** The result of replacing text. */
-  var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.native
+  var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.undefined
 }
 object Response {
   

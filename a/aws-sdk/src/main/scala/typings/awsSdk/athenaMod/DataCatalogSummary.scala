@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataCatalogSummary extends StObject {
   
   /**
     * The name of the data catalog.
     */
-  var CatalogName: js.UndefOr[CatalogNameString] = js.native
+  var CatalogName: js.UndefOr[CatalogNameString] = js.undefined
   
   /**
     * The data catalog type.
     */
-  var Type: js.UndefOr[DataCatalogType] = js.native
+  var Type: js.UndefOr[DataCatalogType] = js.undefined
 }
 object DataCatalogSummary {
   

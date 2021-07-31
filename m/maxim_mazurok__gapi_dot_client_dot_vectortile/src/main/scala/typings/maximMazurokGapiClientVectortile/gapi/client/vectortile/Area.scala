@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Area extends StObject {
   
   /** True if the polygon is not entirely internal to the feature that it belongs to: that is, some of the edges are bordering another feature. */
-  var hasExternalEdges: js.UndefOr[Boolean] = js.native
+  var hasExternalEdges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When has_external_edges is true, the polygon has some edges that border another feature. This field indicates the internal edges that do not border another feature. Each value is an
@@ -18,7 +16,7 @@ trait Area extends StObject {
     * could be placed only on the external edges of a building polygon, or water could be lighter colored near the external edges of a body of water. If has_external_edges is false, all
     * edges are internal and this field will be empty.
     */
-  var internalEdges: js.UndefOr[js.Array[Double]] = js.native
+  var internalEdges: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Identifies the boundary loops of the polygon. Only set for INDEXED_TRIANGLE polygons. Each value is an index into the vertices array indicating the beginning of a loop. For
@@ -26,23 +24,23 @@ trait Area extends StObject {
     * polygon boundaries. Note that an edge may be on a polygon boundary but still internal to the feature. For example, a feature split across multiple tiles will have an internal
     * polygon boundary edge along the edge of the tile.
     */
-  var loopBreaks: js.UndefOr[js.Array[Double]] = js.native
+  var loopBreaks: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** When the polygon encoding is of type INDEXED_TRIANGLES, this contains the indices of the triangle vertices in the vertex_offsets field. There are 3 vertex indices per triangle. */
-  var triangleIndices: js.UndefOr[js.Array[Double]] = js.native
+  var triangleIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The polygon encoding type used for this area. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The vertices present in the polygon defining the area. */
-  var vertexOffsets: js.UndefOr[Vertex2DList] = js.native
+  var vertexOffsets: js.UndefOr[Vertex2DList] = js.undefined
   
   /**
     * The z-ordering of this area. Areas with a lower z-order should be rendered beneath areas with a higher z-order. This z-ordering does not imply anything about the altitude of the
     * line relative to the ground, but it can be used to prevent z-fighting during rendering on the client. This z-ordering can only be used to compare areas, and cannot be compared with
     * the z_order field in the Line message. The z-order may be negative or zero.
     */
-  var zOrder: js.UndefOr[Double] = js.native
+  var zOrder: js.UndefOr[Double] = js.undefined
 }
 object Area {
   

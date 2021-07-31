@@ -2,28 +2,26 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafariExtensionContextMenuItemValidateEvent extends StObject {
   
   /**
     * The object that the event is currently being sent to.
     * This attribute varies as the event progresses through the phases, changing as the event moves through the event-dispatch hierarchy.
     */
-  var currentTarget: SafariExtensionContextMenuItem = js.native
+  var currentTarget: SafariExtensionContextMenuItem
   
   /**
     * The target of the event.
     * This attribute stays the same as the event moves through the event-dispatch hierarchy. Its value is the same as the object that the event is sent to during the targeting phase.
     */
-  var target: SafariExtensionContextMenuItem = js.native
+  var target: SafariExtensionContextMenuItem
   
   /**
     * Information about the current context menu event.
     */
-  var userInfo: js.Any = js.native
+  var userInfo: js.Any
 }
 object SafariExtensionContextMenuItemValidateEvent {
   

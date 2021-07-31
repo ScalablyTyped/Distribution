@@ -4,7 +4,6 @@ import typings.primereact.anon.Index
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabViewMod {
@@ -33,24 +32,23 @@ object tabViewMod {
     def this(props: TabViewProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabPanelProps extends StObject {
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Any] = js.native
+    var contentStyle: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Any] = js.native
+    var headerStyle: js.UndefOr[js.Any] = js.undefined
     
-    var leftIcon: js.UndefOr[String] = js.native
+    var leftIcon: js.UndefOr[String] = js.undefined
     
-    var rightIcon: js.UndefOr[String] = js.native
+    var rightIcon: js.UndefOr[String] = js.undefined
   }
   object TabPanelProps {
     
@@ -113,20 +111,19 @@ object tabViewMod {
     }
   }
   
-  @js.native
   trait TabViewProps extends StObject {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.undefined
     
-    var renderActiveOnly: js.UndefOr[Boolean] = js.native
+    var renderActiveOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object TabViewProps {
     

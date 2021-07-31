@@ -2,24 +2,22 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for creating an operation
   */
-@js.native
 trait SchemaCreateOperationRequest extends StObject {
   
   /**
     * The operation to create.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * The ID to use for this operation.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateOperationRequest {
   

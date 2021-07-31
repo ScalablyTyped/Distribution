@@ -2,21 +2,19 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexSchemaJson extends StObject {
   
-  var keyPath: String | js.Array[String] = js.native
+  var keyPath: String | js.Array[String]
   
-  var multiEntry: js.UndefOr[Boolean] = js.native
+  var multiEntry: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object IndexSchemaJson {
   

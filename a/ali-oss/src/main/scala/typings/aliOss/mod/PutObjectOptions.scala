@@ -2,24 +2,22 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutObjectOptions extends StObject {
   
   // user meta, will send with x-oss-meta- prefix string e.g.: { uid: 123, pid: 110 }
-  var callback: js.UndefOr[ObjectCallback] = js.native
+  var callback: js.UndefOr[ObjectCallback] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   // custom mime, will send with Content-Type entity header
-  var meta: js.UndefOr[UserMeta] = js.native
+  var meta: js.UndefOr[UserMeta] = js.undefined
   
   // the operation timeout
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object PutObjectOptions {
   

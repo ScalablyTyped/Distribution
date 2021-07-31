@@ -2,132 +2,132 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait User extends DirectoryObject {
+trait User
+  extends StObject
+     with DirectoryObject {
   
   // A freeform text entry field for the user to describe themselves.
-  var aboutMe: js.UndefOr[NullableOption[String]] = js.native
+  var aboutMe: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter.
-  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The user's activities across devices. Read-only. Nullable.
-  var activities: js.UndefOr[NullableOption[js.Array[UserActivity]]] = js.native
+  var activities: js.UndefOr[NullableOption[js.Array[UserActivity]]] = js.undefined
   
   /**
     * Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property
     * definitions for further information.
     */
-  var ageGroup: js.UndefOr[NullableOption[String]] = js.native
+  var ageGroup: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.native
+  var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   // The licenses that are assigned to the user. Not nullable.
-  var assignedLicenses: js.UndefOr[js.Array[AssignedLicense]] = js.native
+  var assignedLicenses: js.UndefOr[js.Array[AssignedLicense]] = js.undefined
   
   // The plans that are assigned to the user. Read-only. Not nullable.
-  var assignedPlans: js.UndefOr[js.Array[AssignedPlan]] = js.native
+  var assignedPlans: js.UndefOr[js.Array[AssignedPlan]] = js.undefined
   
   /**
     * The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always
     * in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var birthday: js.UndefOr[String] = js.native
+  var birthday: js.UndefOr[String] = js.undefined
   
   /**
     * The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this
     * property. Read-only for users synced from on-premises directory.
     */
-  var businessPhones: js.UndefOr[js.Array[String]] = js.native
+  var businessPhones: js.UndefOr[js.Array[String]] = js.undefined
   
   // The user's primary calendar. Read-only.
-  var calendar: js.UndefOr[NullableOption[Calendar]] = js.native
+  var calendar: js.UndefOr[NullableOption[Calendar]] = js.undefined
   
   // The user's calendar groups. Read-only. Nullable.
-  var calendarGroups: js.UndefOr[NullableOption[js.Array[CalendarGroup]]] = js.native
+  var calendarGroups: js.UndefOr[NullableOption[js.Array[CalendarGroup]]] = js.undefined
   
   // The calendar view for the calendar. Read-only. Nullable.
-  var calendarView: js.UndefOr[NullableOption[js.Array[Event]]] = js.native
+  var calendarView: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
   // The user's calendars. Read-only. Nullable.
-  var calendars: js.UndefOr[NullableOption[js.Array[Calendar]]] = js.native
+  var calendars: js.UndefOr[NullableOption[js.Array[Calendar]]] = js.undefined
   
   // The city in which the user is located. Supports $filter.
-  var city: js.UndefOr[NullableOption[String]] = js.native
+  var city: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The company name which the user is associated. This property can be useful for describing the company that an external
     * user comes from. The maximum length of the company name is 64 chararcters.Returned only on $select.
     */
-  var companyName: js.UndefOr[NullableOption[String]] = js.native
+  var companyName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the
     * legal age group property definitions for further information.
     */
-  var consentProvidedForMinor: js.UndefOr[NullableOption[String]] = js.native
+  var consentProvidedForMinor: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's contacts folders. Read-only. Nullable.
-  var contactFolders: js.UndefOr[NullableOption[js.Array[ContactFolder]]] = js.native
+  var contactFolders: js.UndefOr[NullableOption[js.Array[ContactFolder]]] = js.undefined
   
   // The user's contacts. Read-only. Nullable.
-  var contacts: js.UndefOr[NullableOption[js.Array[Contact]]] = js.native
+  var contacts: js.UndefOr[NullableOption[js.Array[Contact]]] = js.undefined
   
   // The country/region in which the user is located; for example, 'US' or 'UK'. Supports $filter.
-  var country: js.UndefOr[NullableOption[String]] = js.native
+  var country: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The created date of the user object.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Directory objects that were created by the user. Read-only. Nullable.
-  var createdObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var createdObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Indicates whether the user account was created as a regular school or work account (null), an external account
     * (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using
     * email verification (EmailVerified). Read-only.
     */
-  var creationType: js.UndefOr[NullableOption[String]] = js.native
+  var creationType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name for the department in which the user works. Supports $filter.
-  var department: js.UndefOr[NullableOption[String]] = js.native
+  var department: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
-  var deviceEnrollmentLimit: js.UndefOr[Double] = js.native
+  var deviceEnrollmentLimit: js.UndefOr[Double] = js.undefined
   
   // The list of troubleshooting events for this user.
-  var deviceManagementTroubleshootingEvents: js.UndefOr[NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]] = js.native
+  var deviceManagementTroubleshootingEvents: js.UndefOr[NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]] = js.undefined
   
   /**
     * The users and contacts that report to the user. (The users and contacts that have their manager property set to this
     * user.) Read-only. Nullable.
     */
-  var directReports: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var directReports: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * The name displayed in the address book for the user. This is usually the combination of the user's first name, middle
     * initial and last name. This property is required when a user is created and it cannot be cleared during updates.
     * Supports $filter and $orderby.
     */
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's OneDrive. Read-only.
-  var drive: js.UndefOr[NullableOption[Drive]] = js.native
+  var drive: js.UndefOr[NullableOption[Drive]] = js.undefined
   
   // A collection of drives available for this user. Read-only.
-  var drives: js.UndefOr[NullableOption[js.Array[Drive]]] = js.native
+  var drives: js.UndefOr[NullableOption[js.Array[Drive]]] = js.undefined
   
   // The employee identifier assigned to the user by the organization. Returned only on $select. Supports $filter.
-  var employeeId: js.UndefOr[NullableOption[String]] = js.native
+  var employeeId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.
-  var events: js.UndefOr[NullableOption[js.Array[Event]]] = js.native
+  var events: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
   // The collection of open extensions defined for the user. Read-only. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   /**
     * For an external user invited to the tenant using the invitation API, this property represents the invited user's
@@ -135,18 +135,18 @@ trait User extends DirectoryObject {
     * Returned only on $select. Supports $filter with the supported values. For example: $filter=externalUserState eq
     * 'PendingAcceptance'.
     */
-  var externalUserState: js.UndefOr[NullableOption[String]] = js.native
+  var externalUserState: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Shows the timestamp for the latest change to the externalUserState property. Returned only on $select.
-  var externalUserStateChangeDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var externalUserStateChangeDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The fax number of the user.
-  var faxNumber: js.UndefOr[NullableOption[String]] = js.native
+  var faxNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var followedSites: js.UndefOr[NullableOption[js.Array[Site]]] = js.native
+  var followedSites: js.UndefOr[NullableOption[js.Array[Site]]] = js.undefined
   
   // The given name (first name) of the user. Supports $filter.
-  var givenName: js.UndefOr[NullableOption[String]] = js.native
+  var givenName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always
@@ -154,43 +154,43 @@ trait User extends DirectoryObject {
     * $select. Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property
     * to set and update hire date values using Microsoft Graph APIs.
     */
-  var hireDate: js.UndefOr[String] = js.native
+  var hireDate: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft
     * (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and
     * Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter.
     */
-  var identities: js.UndefOr[NullableOption[js.Array[ObjectIdentity]]] = js.native
+  var identities: js.UndefOr[NullableOption[js.Array[ObjectIdentity]]] = js.undefined
   
   // The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.
-  var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Relevance classification of the user's messages based on explicit designations which override inferred relevance or
     * importance.
     */
-  var inferenceClassification: js.UndefOr[NullableOption[InferenceClassification]] = js.native
+  var inferenceClassification: js.UndefOr[NullableOption[InferenceClassification]] = js.undefined
   
   // Read-only. Nullable.
-  var insights: js.UndefOr[NullableOption[OfficeGraphInsights]] = js.native
+  var insights: js.UndefOr[NullableOption[OfficeGraphInsights]] = js.undefined
   
   // A list for the user to describe their interests.
-  var interests: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var interests: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Do not use – reserved for future use.
-  var isResourceAccount: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isResourceAccount: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The user's job title. Supports $filter.
-  var jobTitle: js.UndefOr[NullableOption[String]] = js.native
+  var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var joinedTeams: js.UndefOr[NullableOption[js.Array[Team]]] = js.native
+  var joinedTeams: js.UndefOr[NullableOption[js.Array[Team]]] = js.undefined
   
   /**
     * The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is
     * always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var lastPasswordChangeDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastPasswordChangeDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated
@@ -198,67 +198,67 @@ trait User extends DirectoryObject {
     * minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property
     * definitions for further information.)
     */
-  var legalAgeGroupClassification: js.UndefOr[NullableOption[String]] = js.native
+  var legalAgeGroupClassification: js.UndefOr[NullableOption[String]] = js.undefined
   
   // State of license assignments for this user. Read-only.
-  var licenseAssignmentStates: js.UndefOr[NullableOption[js.Array[LicenseAssignmentState]]] = js.native
+  var licenseAssignmentStates: js.UndefOr[NullableOption[js.Array[LicenseAssignmentState]]] = js.undefined
   
   // A collection of this user's license details. Read-only.
-  var licenseDetails: js.UndefOr[NullableOption[js.Array[LicenseDetails]]] = js.native
+  var licenseDetails: js.UndefOr[NullableOption[js.Array[LicenseDetails]]] = js.undefined
   
   // The SMTP address for the user, for example, 'jeff@contoso.onmicrosoft.com'. Supports $filter.
-  var mail: js.UndefOr[NullableOption[String]] = js.native
+  var mail: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's mail folders. Read-only. Nullable.
-  var mailFolders: js.UndefOr[NullableOption[js.Array[MailFolder]]] = js.native
+  var mailFolders: js.UndefOr[NullableOption[js.Array[MailFolder]]] = js.undefined
   
   // The mail alias for the user. This property must be specified when a user is created. Supports $filter.
-  var mailNickname: js.UndefOr[NullableOption[String]] = js.native
+  var mailNickname: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to
     * incoming messages, locale and time zone.
     */
-  var mailboxSettings: js.UndefOr[NullableOption[MailboxSettings]] = js.native
+  var mailboxSettings: js.UndefOr[NullableOption[MailboxSettings]] = js.undefined
   
   // Zero or more managed app registrations that belong to the user.
-  var managedAppRegistrations: js.UndefOr[NullableOption[js.Array[ManagedAppRegistration]]] = js.native
+  var managedAppRegistrations: js.UndefOr[NullableOption[js.Array[ManagedAppRegistration]]] = js.undefined
   
   // The managed devices associated with the user.
-  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.native
+  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.undefined
   
   // The user or contact that is this user's manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)
-  var manager: js.UndefOr[NullableOption[DirectoryObject]] = js.native
+  var manager: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
   // The groups and directory roles that the user is a member of. Read-only. Nullable.
-  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // The messages in a mailbox or folder. Read-only. Nullable.
-  var messages: js.UndefOr[NullableOption[js.Array[Message]]] = js.native
+  var messages: js.UndefOr[NullableOption[js.Array[Message]]] = js.undefined
   
   // The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.
-  var mobilePhone: js.UndefOr[NullableOption[String]] = js.native
+  var mobilePhone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The URL for the user's personal site.
-  var mySite: js.UndefOr[NullableOption[String]] = js.native
+  var mySite: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var oauth2PermissionGrants: js.UndefOr[NullableOption[js.Array[OAuth2PermissionGrant]]] = js.native
+  var oauth2PermissionGrants: js.UndefOr[NullableOption[js.Array[OAuth2PermissionGrant]]] = js.undefined
   
   // The office location in the user's place of business.
-  var officeLocation: js.UndefOr[NullableOption[String]] = js.native
+  var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who
     * are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     */
-  var onPremisesDistinguishedName: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesDistinguishedName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The
     * property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory
     * via Azure AD Connect. Read-only.
     */
-  var onPremisesDomainName: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesDomainName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable
@@ -266,7 +266,7 @@ trait User extends DirectoryObject {
     * on-premises and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set
     * during creation or update. These extension attributes are also known as Exchange custom attributes 1-15.
     */
-  var onPremisesExtensionAttributes: js.UndefOr[NullableOption[OnPremisesExtensionAttributes]] = js.native
+  var onPremisesExtensionAttributes: js.UndefOr[NullableOption[OnPremisesExtensionAttributes]] = js.undefined
   
   /**
     * This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This
@@ -274,63 +274,63 @@ trait User extends DirectoryObject {
     * user's userPrincipalName (UPN) property. Important: The $ and _ characters cannot be used when specifying this
     * property. Supports $filter.
     */
-  var onPremisesImmutableId: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesImmutableId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates the last time at which the object was synced with the on-premises directory; for example:
     * '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in
     * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     */
-  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Errors when using Microsoft synchronization product during provisioning.
-  var onPremisesProvisioningErrors: js.UndefOr[NullableOption[js.Array[OnPremisesProvisioningError]]] = js.native
+  var onPremisesProvisioningErrors: js.UndefOr[NullableOption[js.Array[OnPremisesProvisioningError]]] = js.undefined
   
   /**
     * Contains the on-premises samAccountName synchronized from the on-premises directory. The property is only populated for
     * customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     */
-  var onPremisesSamAccountName: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesSamAccountName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud.
     * Read-only.
     */
-  var onPremisesSecurityIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesSecurityIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * true if this object is synced from an on-premises directory; false if this object was originally synced from an
     * on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory
     * (default). Read-only
     */
-  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated
     * for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.
     * Read-only.
     */
-  var onPremisesUserPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesUserPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only.
-  var onenote: js.UndefOr[NullableOption[Onenote]] = js.native
+  var onenote: js.UndefOr[NullableOption[Onenote]] = js.undefined
   
-  var onlineMeetings: js.UndefOr[NullableOption[js.Array[OnlineMeeting]]] = js.native
+  var onlineMeetings: js.UndefOr[NullableOption[js.Array[OnlineMeeting]]] = js.undefined
   
   /**
     * A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com']. Supports
     * $filter.
     */
-  var otherMails: js.UndefOr[js.Array[String]] = js.native
+  var otherMails: js.UndefOr[js.Array[String]] = js.undefined
   
   // Read-only.
-  var outlook: js.UndefOr[NullableOption[OutlookUser]] = js.native
+  var outlook: js.UndefOr[NullableOption[OutlookUser]] = js.undefined
   
   // Devices that are owned by the user. Read-only. Nullable.
-  var ownedDevices: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var ownedDevices: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // Directory objects that are owned by the user. Read-only. Nullable.
-  var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Specifies password policies for the user. This value is an enumeration with one possible value being
@@ -338,68 +338,68 @@ trait User extends DirectoryObject {
     * 'DisablePasswordExpiration' can also be specified. The two may be specified together; for example:
     * 'DisablePasswordExpiration, DisableStrongPassword'.
     */
-  var passwordPolicies: js.UndefOr[NullableOption[String]] = js.native
+  var passwordPolicies: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the password profile for the user. The profile contains the user’s password. This property is required when a
     * user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies
     * property. By default, a strong password is required.
     */
-  var passwordProfile: js.UndefOr[NullableOption[PasswordProfile]] = js.native
+  var passwordProfile: js.UndefOr[NullableOption[PasswordProfile]] = js.undefined
   
   // A list for the user to enumerate their past projects.
-  var pastProjects: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var pastProjects: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // People that are relevant to the user. Read-only. Nullable.
-  var people: js.UndefOr[NullableOption[js.Array[Person]]] = js.native
+  var people: js.UndefOr[NullableOption[js.Array[Person]]] = js.undefined
   
   // The user's profile photo. Read-only.
-  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.native
+  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.undefined
   
-  var photos: js.UndefOr[NullableOption[js.Array[ProfilePhoto]]] = js.native
+  var photos: js.UndefOr[NullableOption[js.Array[ProfilePhoto]]] = js.undefined
   
   // Entry-point to the Planner resource that might exist for a user. Read-only.
-  var planner: js.UndefOr[NullableOption[PlannerUser]] = js.native
+  var planner: js.UndefOr[NullableOption[PlannerUser]] = js.undefined
   
   /**
     * The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United
     * States of America, this attribute contains the ZIP code.
     */
-  var postalCode: js.UndefOr[NullableOption[String]] = js.native
+  var postalCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The preferred language for the user. Should follow ISO 639-1 Code; for example 'en-US'.
-  var preferredLanguage: js.UndefOr[NullableOption[String]] = js.native
+  var preferredLanguage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The preferred name for the user.
-  var preferredName: js.UndefOr[NullableOption[String]] = js.native
+  var preferredName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The plans that are provisioned for the user. Read-only. Not nullable.
-  var provisionedPlans: js.UndefOr[js.Array[ProvisionedPlan]] = js.native
+  var provisionedPlans: js.UndefOr[js.Array[ProvisionedPlan]] = js.undefined
   
   /**
     * For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'] The any operator is required for filter
     * expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.
     */
-  var proxyAddresses: js.UndefOr[js.Array[String]] = js.native
+  var proxyAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   // Devices that are registered for the user. Read-only. Nullable.
-  var registeredDevices: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var registeredDevices: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // A list for the user to enumerate their responsibilities.
-  var responsibilities: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var responsibilities: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // A list for the user to enumerate the schools they have attended.
-  var schools: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var schools: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var scopedRoleMemberOf: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.native
+  var scopedRoleMemberOf: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.undefined
   
-  var settings: js.UndefOr[NullableOption[UserSettings]] = js.native
+  var settings: js.UndefOr[NullableOption[UserSettings]] = js.undefined
   
   /**
     * true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as
     * true. For users invited through the invitation manager, this property will be set to false.
     */
-  var showInAddressList: js.UndefOr[NullableOption[Boolean]] = js.native
+  var showInAddressList: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get
@@ -407,33 +407,33 @@ trait User extends DirectoryObject {
     * Microsoft Graph). If this happens, the application will need to acquire a new refresh token by making a request to the
     * authorize endpoint. Read-only. Use revokeSignInSessions to reset.
     */
-  var signInSessionsValidFromDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var signInSessionsValidFromDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A list for the user to enumerate their skills.
-  var skills: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var skills: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The state or province in the user's address. Supports $filter.
-  var state: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The street address of the user's place of business.
-  var streetAddress: js.UndefOr[NullableOption[String]] = js.native
+  var streetAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's surname (family name or last name). Supports $filter.
-  var surname: js.UndefOr[NullableOption[String]] = js.native
+  var surname: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var teamwork: js.UndefOr[NullableOption[UserTeamwork]] = js.native
+  var teamwork: js.UndefOr[NullableOption[UserTeamwork]] = js.undefined
   
   // Represents the To Do services available to a user.
-  var todo: js.UndefOr[NullableOption[Todo]] = js.native
+  var todo: js.UndefOr[NullableOption[Todo]] = js.undefined
   
-  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal
     * requirement to check for availability of services in countries. Examples include: 'US', 'JP', and 'GB'. Not nullable.
     * Supports $filter.
     */
-  var usageLocation: js.UndefOr[NullableOption[String]] = js.native
+  var usageLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet
@@ -442,13 +442,13 @@ trait User extends DirectoryObject {
     * created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.
     * Supports $filter and $orderby.
     */
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'. Supports
     * $filter.
     */
-  var userType: js.UndefOr[NullableOption[String]] = js.native
+  var userType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object User {
   

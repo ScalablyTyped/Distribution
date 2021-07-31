@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adsensehostMod {
+  
+  @JSImport("googleapis/build/src/apis/adsensehost", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -49,12 +52,11 @@ object adsensehostMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4.1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/adsensehost", "adsensehost")
-  @js.native
-  def adsensehost(options: Options): Adsensehost = js.native
-  @JSImport("googleapis/build/src/apis/adsensehost", "adsensehost")
-  @js.native
-  def adsensehost_v41(version: v4Dot1): Adsensehost = js.native
+  @scala.inline
+  def adsensehost(options: Options): Adsensehost = ^.asInstanceOf[js.Dynamic].applyDynamic("adsensehost")(options.asInstanceOf[js.Any]).asInstanceOf[Adsensehost]
+  
+  @scala.inline
+  def adsensehost_v41(version: v4Dot1): Adsensehost = ^.asInstanceOf[js.Dynamic].applyDynamic("adsensehost")(version.asInstanceOf[js.Any]).asInstanceOf[Adsensehost]
   
   object auth extends Shortcut {
     
@@ -85,9 +87,12 @@ object adsensehostMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/adsensehost", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/adsensehost", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

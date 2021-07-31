@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpCountry extends StObject {
   
   /**
     * The two-character code, in ISO 3166-1 alpha-2 format, for the country that the IP address originated from. For example, US for the United States.
     */
-  var code: js.UndefOr[string] = js.native
+  var code: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the country that the IP address originated from.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
 }
 object IpCountry {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvideoPosition extends StObject {
   
   /** Describes in which corner of the video the visual widget will appear. */
-  var cornerPosition: js.UndefOr[String] = js.native
+  var cornerPosition: js.UndefOr[String] = js.undefined
   
   /** Defines the position type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object InvideoPosition {
   

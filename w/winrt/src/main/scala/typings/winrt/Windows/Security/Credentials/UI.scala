@@ -4,7 +4,6 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UI {
@@ -16,25 +15,39 @@ object UI {
   object AuthenticationProtocol extends StObject {
     
     @js.native
-    sealed trait basic extends AuthenticationProtocol
+    sealed trait basic
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait credSsp extends AuthenticationProtocol
+    sealed trait credSsp
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait custom extends AuthenticationProtocol
+    sealed trait custom
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait digest extends AuthenticationProtocol
+    sealed trait digest
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait kerberos extends AuthenticationProtocol
+    sealed trait kerberos
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait negotiate extends AuthenticationProtocol
+    sealed trait negotiate
+      extends StObject
+         with AuthenticationProtocol
     
     @js.native
-    sealed trait ntlm extends AuthenticationProtocol
+    sealed trait ntlm
+      extends StObject
+         with AuthenticationProtocol
   }
   
   @js.native
@@ -44,20 +57,26 @@ object UI {
   object CredentialSaveOption extends StObject {
     
     @js.native
-    sealed trait hidden extends CredentialSaveOption
+    sealed trait hidden
+      extends StObject
+         with CredentialSaveOption
     
     @js.native
-    sealed trait selected extends CredentialSaveOption
+    sealed trait selected
+      extends StObject
+         with CredentialSaveOption
     
     @js.native
-    sealed trait unselected extends CredentialSaveOption
+    sealed trait unselected
+      extends StObject
+         with CredentialSaveOption
   }
   
-  @js.native
   trait CredentialPicker extends StObject
   
-  @js.native
-  trait CredentialPickerOptions extends ICredentialPickerOptions
+  trait CredentialPickerOptions
+    extends StObject
+       with ICredentialPickerOptions
   object CredentialPickerOptions {
     
     @scala.inline
@@ -78,8 +97,9 @@ object UI {
     }
   }
   
-  @js.native
-  trait CredentialPickerResults extends ICredentialPickerResults
+  trait CredentialPickerResults
+    extends StObject
+       with ICredentialPickerResults
   object CredentialPickerResults {
     
     @scala.inline
@@ -97,28 +117,27 @@ object UI {
     }
   }
   
-  @js.native
   trait ICredentialPickerOptions extends StObject {
     
-    var alwaysDisplayDialog: Boolean = js.native
+    var alwaysDisplayDialog: Boolean
     
-    var authenticationProtocol: AuthenticationProtocol = js.native
+    var authenticationProtocol: AuthenticationProtocol
     
-    var callerSavesCredential: Boolean = js.native
+    var callerSavesCredential: Boolean
     
-    var caption: String = js.native
+    var caption: String
     
-    var credentialSaveOption: CredentialSaveOption = js.native
+    var credentialSaveOption: CredentialSaveOption
     
-    var customAuthenticationProtocol: String = js.native
+    var customAuthenticationProtocol: String
     
-    var errorCode: Double = js.native
+    var errorCode: Double
     
-    var message: String = js.native
+    var message: String
     
-    var previousCredential: IBuffer = js.native
+    var previousCredential: IBuffer
     
-    var targetName: String = js.native
+    var targetName: String
   }
   object ICredentialPickerOptions {
     
@@ -174,22 +193,21 @@ object UI {
     }
   }
   
-  @js.native
   trait ICredentialPickerResults extends StObject {
     
-    var credential: IBuffer = js.native
+    var credential: IBuffer
     
-    var credentialDomainName: String = js.native
+    var credentialDomainName: String
     
-    var credentialPassword: String = js.native
+    var credentialPassword: String
     
-    var credentialSaveOption: CredentialSaveOption = js.native
+    var credentialSaveOption: CredentialSaveOption
     
-    var credentialSaved: Boolean = js.native
+    var credentialSaved: Boolean
     
-    var credentialUserName: String = js.native
+    var credentialUserName: String
     
-    var errorCode: Double = js.native
+    var errorCode: Double
   }
   object ICredentialPickerResults {
     

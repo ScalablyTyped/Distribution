@@ -4,25 +4,23 @@ import typings.md5.md5Booleans.`true`
 import typings.md5.md5Strings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined md5.md5.Options & {  asBytes :true} */
-  @js.native
   trait OptionsasBytestrue extends StObject {
     
-    var asBytes: js.UndefOr[Boolean] with `true` = js.native
+    var asBytes: js.UndefOr[Boolean] & `true`
     
-    var asString: js.UndefOr[Boolean] = js.native
+    var asString: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[binary | String] = js.native
+    var encoding: js.UndefOr[binary | String] = js.undefined
   }
   object OptionsasBytestrue {
     
     @scala.inline
-    def apply(asBytes: js.UndefOr[Boolean] with `true`): OptionsasBytestrue = {
+    def apply(asBytes: js.UndefOr[Boolean] & `true`): OptionsasBytestrue = {
       val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsasBytestrue]
     }
@@ -31,7 +29,7 @@ object anon {
     implicit class OptionsasBytestrueMutableBuilder[Self <: OptionsasBytestrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsBytes(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      def setAsBytes(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
@@ -48,12 +46,11 @@ object anon {
   }
   
   /* Inlined std.Pick<md5.md5.Options, 'asString' | 'encoding'> */
-  @js.native
   trait PickOptionsasStringencodi extends StObject {
     
-    var asString: js.UndefOr[Boolean] = js.native
+    var asString: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[binary | String] = js.native
+    var encoding: js.UndefOr[binary | String] = js.undefined
   }
   object PickOptionsasStringencodi {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingAction extends StObject {
   
   /**
     * The type of action that occurred for the affected resource. This value is typically AWS_API_CALL, which indicates that an entity invoked an API operation for the resource.
     */
-  var actionType: js.UndefOr[FindingActionType] = js.native
+  var actionType: js.UndefOr[FindingActionType] = js.undefined
   
   /**
     * The invocation details of the API operation that an entity invoked for the affected resource, if the value for the actionType property is AWS_API_CALL.
     */
-  var apiCallDetails: js.UndefOr[ApiCallDetails] = js.native
+  var apiCallDetails: js.UndefOr[ApiCallDetails] = js.undefined
 }
 object FindingAction {
   

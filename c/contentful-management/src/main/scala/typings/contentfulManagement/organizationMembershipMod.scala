@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationMembershipMod {
   
-  @JSImport("contentful-management/dist/typings/entities/organization-membership", "wrapOrganizationMembership")
+  @JSImport("contentful-management/dist/typings/entities/organization-membership", JSImport.Namespace)
   @js.native
-  def wrapOrganizationMembership(http: AxiosInstance, data: OrganizationMembershipProps): OrganizationMembership = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/organization-membership", "wrapOrganizationMembershipCollection")
-  @js.native
-  def wrapOrganizationMembershipCollection(http: AxiosInstance, data: CollectionProp[OrganizationMembershipProps]): Collection[OrganizationMembership, OrganizationMembershipProps] = js.native
+  @scala.inline
+  def wrapOrganizationMembership(http: AxiosInstance, data: OrganizationMembershipProps): OrganizationMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationMembership]
   
-  @js.native
+  @scala.inline
+  def wrapOrganizationMembershipCollection(http: AxiosInstance, data: CollectionProp[OrganizationMembershipProps]): Collection[OrganizationMembership, OrganizationMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[OrganizationMembership, OrganizationMembershipProps]]
+  
   trait OrganizationMembership
-    extends OrganizationMembershipProps
+    extends StObject
+       with OrganizationMembershipProps
        with DefaultElements[OrganizationMembershipProps] {
     
     /**
@@ -42,7 +43,7 @@ object organizationMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -62,7 +63,7 @@ object organizationMembershipMod {
       * })
       * .catch(console.error)
       */
-    def update(): js.Promise[OrganizationMembership] = js.native
+    def update(): js.Promise[OrganizationMembership]
   }
   object OrganizationMembership {
     
@@ -90,23 +91,22 @@ object organizationMembershipMod {
     }
   }
   
-  @js.native
   trait OrganizationMembershipProps extends StObject {
     
     /**
       * Role
       */
-    var role: String = js.native
+    var role: String
     
     /**
       * status
       */
-    var status: Boolean = js.native
+    var status: Boolean
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object OrganizationMembershipProps {
     

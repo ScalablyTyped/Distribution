@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramViewModel extends Accessor {
+trait HistogramViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The statistical average of the data in the histogram.
@@ -37,9 +38,9 @@ trait HistogramViewModel extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *

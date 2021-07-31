@@ -2,46 +2,36 @@ package typings.harmon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(
-    reqSelectors: js.UndefOr[scala.Nothing],
-    resSelectors: js.UndefOr[scala.Nothing],
-    htmlOnly: Boolean
-  ): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.UndefOr[scala.Nothing], resSelectors: js.Array[Select]): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.UndefOr[scala.Nothing], resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.Array[Select]): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.Array[Select], resSelectors: js.UndefOr[scala.Nothing], htmlOnly: Boolean): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select]): js.Any = js.native
-  @JSImport("harmon", JSImport.Namespace)
-  @js.native
-  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: js.Array[Select]): js.Any = ^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: js.Array[Select], resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: Unit, resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: Unit, resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(reqSelectors: Unit, resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("harmon", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Select extends StObject {
     
-    def func(node: js.Any): js.Any = js.native
+    def func(node: js.Any): js.Any
     
-    var query: String = js.native
+    var query: String
   }
   object Select {
     

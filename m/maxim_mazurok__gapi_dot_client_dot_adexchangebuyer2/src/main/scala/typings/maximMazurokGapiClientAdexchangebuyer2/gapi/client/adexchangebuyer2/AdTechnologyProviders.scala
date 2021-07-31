@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdTechnologyProviders extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait AdTechnologyProviders extends StObject {
     * on the (OpenRTB protocol)[https://developers.google.com/authorized-buyers/rtb/downloads/openrtb-adx-proto], and a bid is submitted with that creative for an impression that will
     * serve to an EEA user, the bid will be filtered before the auction.
     */
-  var detectedProviderIds: js.UndefOr[js.Array[String]] = js.native
+  var detectedProviderIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the creative contains an unidentified ad technology provider. If true for a given creative, any bid submitted with that creative for an impression that will serve to an EEA
     * user will be filtered before the auction.
     */
-  var hasUnidentifiedProvider: js.UndefOr[Boolean] = js.native
+  var hasUnidentifiedProvider: js.UndefOr[Boolean] = js.undefined
 }
 object AdTechnologyProviders {
   

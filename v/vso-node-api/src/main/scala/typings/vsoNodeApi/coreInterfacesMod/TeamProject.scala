@@ -3,26 +3,26 @@ package typings.vsoNodeApi.coreInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamProject extends TeamProjectReference {
+trait TeamProject
+  extends StObject
+     with TeamProjectReference {
   
   /**
     * The links to other objects related to this object.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Set of capabilities this project has (such as process template & version control).
     */
-  var capabilities: StringDictionary[StringDictionary[String]] = js.native
+  var capabilities: StringDictionary[StringDictionary[String]]
   
   /**
     * The shallow ref to the default team.
     */
-  var defaultTeam: WebApiTeamRef = js.native
+  var defaultTeam: WebApiTeamRef
 }
 object TeamProject {
   

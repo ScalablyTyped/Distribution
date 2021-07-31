@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetResult extends StObject {
   
   /**
     * Information about the fleet.
     */
-  var Fleet: js.UndefOr[typings.awsSdk.appstreamMod.Fleet] = js.native
+  var Fleet: js.UndefOr[typings.awsSdk.appstreamMod.Fleet] = js.undefined
 }
 object CreateFleetResult {
   

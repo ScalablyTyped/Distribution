@@ -2,22 +2,20 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notary extends StObject {
   
   /**
     * The creation date of the account in UTC timedate format.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[String] = js.undefined
   
-  var searchable: js.UndefOr[String] = js.native
+  var searchable: js.UndefOr[String] = js.undefined
   
-  var userInfo: js.UndefOr[UserInformation] = js.native
+  var userInfo: js.UndefOr[UserInformation] = js.undefined
 }
 object Notary {
   

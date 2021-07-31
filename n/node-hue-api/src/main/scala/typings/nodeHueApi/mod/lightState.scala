@@ -2,10 +2,13 @@ package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightState {
+  
+  @JSImport("node-hue-api", "lightState")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-hue-api", "lightState.State")
   @js.native
@@ -262,14 +265,11 @@ object lightState {
     def xy_inc(value: Double): State = js.native
   }
   
-  @JSImport("node-hue-api", "lightState.create")
-  @js.native
-  def create(): State = js.native
-  @JSImport("node-hue-api", "lightState.create")
-  @js.native
-  def create(values: js.Object): State = js.native
+  @scala.inline
+  def create(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[State]
+  @scala.inline
+  def create(values: js.Object): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(values.asInstanceOf[js.Any]).asInstanceOf[State]
   
-  @JSImport("node-hue-api", "lightState.isLightState")
-  @js.native
-  def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = js.native
+  @scala.inline
+  def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLightState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is node-hue-api.node-hue-api.lightState.State */ Boolean]
 }

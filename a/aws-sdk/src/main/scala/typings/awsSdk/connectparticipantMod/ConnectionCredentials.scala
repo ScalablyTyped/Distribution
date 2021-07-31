@@ -2,21 +2,19 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionCredentials extends StObject {
   
   /**
     * The connection token.
     */
-  var ConnectionToken: js.UndefOr[ParticipantToken] = js.native
+  var ConnectionToken: js.UndefOr[ParticipantToken] = js.undefined
   
   /**
     * The expiration of the token. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
     */
-  var Expiry: js.UndefOr[ISO8601Datetime] = js.native
+  var Expiry: js.UndefOr[ISO8601Datetime] = js.undefined
 }
 object ConnectionCredentials {
   

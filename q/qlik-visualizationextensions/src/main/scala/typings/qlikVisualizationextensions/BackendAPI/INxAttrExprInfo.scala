@@ -2,36 +2,34 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxAttrExprInfo extends StObject {
   
   /**
     * Is continuous axis used.
     */
-  var qContinuousAxes: Boolean = js.native
+  var qContinuousAxes: Boolean
   
   /**
     * Corresponds to the label of the dimension that is selected.
     */
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
   /**
     * Is a cyclic dimension used.
     */
-  var qIsCyclic: Boolean = js.native
+  var qIsCyclic: Boolean
   
   /**
     * Maximum value.
     */
-  var qMax: Double = js.native
+  var qMax: Double
   
   /**
     * Minimum value.
     */
-  var qMin: Double = js.native
+  var qMin: Double
 }
 object INxAttrExprInfo {
   

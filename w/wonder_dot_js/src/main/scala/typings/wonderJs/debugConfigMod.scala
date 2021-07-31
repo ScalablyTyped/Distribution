@@ -1,18 +1,33 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/config/DebugConfig", JSImport.Namespace)
-@js.native
-object debugConfigMod extends js.Object {
-  @js.native
-  object DebugConfig extends js.Object {
-    var debugCollision: Boolean = js.native
-    var isTest: Boolean = js.native
-    var showDebugPanel: Boolean = js.native
-  }
+object debugConfigMod {
   
+  object DebugConfig {
+    
+    @JSImport("wonder.js/dist/es2015/config/DebugConfig", "DebugConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("wonder.js/dist/es2015/config/DebugConfig", "DebugConfig.debugCollision")
+    @js.native
+    def debugCollision: Boolean = js.native
+    @scala.inline
+    def debugCollision_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugCollision")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wonder.js/dist/es2015/config/DebugConfig", "DebugConfig.isTest")
+    @js.native
+    def isTest: Boolean = js.native
+    @scala.inline
+    def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wonder.js/dist/es2015/config/DebugConfig", "DebugConfig.showDebugPanel")
+    @js.native
+    def showDebugPanel: Boolean = js.native
+    @scala.inline
+    def showDebugPanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showDebugPanel")(x.asInstanceOf[js.Any])
+  }
 }
-

@@ -2,36 +2,34 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnConfiguration extends StObject {
   
   /**
     * One to five columns that indicate when a document in the database has changed.
     */
-  var ChangeDetectingColumns: typings.awsSdk.kendraMod.ChangeDetectingColumns = js.native
+  var ChangeDetectingColumns: typings.awsSdk.kendraMod.ChangeDetectingColumns
   
   /**
     * The column that contains the contents of the document.
     */
-  var DocumentDataColumnName: ColumnName = js.native
+  var DocumentDataColumnName: ColumnName
   
   /**
     * The column that provides the document's unique identifier.
     */
-  var DocumentIdColumnName: ColumnName = js.native
+  var DocumentIdColumnName: ColumnName
   
   /**
     * The column that contains the title of the document.
     */
-  var DocumentTitleColumnName: js.UndefOr[ColumnName] = js.native
+  var DocumentTitleColumnName: js.UndefOr[ColumnName] = js.undefined
   
   /**
     * An array of objects that map database column names to the corresponding fields in an index. You must first create the fields in the index using the UpdateIndex operation.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
 }
 object ColumnConfiguration {
   

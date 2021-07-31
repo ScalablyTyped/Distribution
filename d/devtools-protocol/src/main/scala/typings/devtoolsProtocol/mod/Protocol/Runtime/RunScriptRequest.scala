@@ -2,54 +2,52 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunScriptRequest extends StObject {
   
   /**
     * Whether execution should `await` for resulting value and return once awaited promise is
     * resolved.
     */
-  var awaitPromise: js.UndefOr[Boolean] = js.native
+  var awaitPromise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies in which execution context to perform script run. If the parameter is omitted the
     * evaluation will be performed in the context of the inspected page.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Whether preview should be generated for the result.
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether Command Line API should be available during the evaluation.
     */
-  var includeCommandLineAPI: js.UndefOr[Boolean] = js.native
+  var includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the result is expected to be a JSON object which should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Id of the script to run.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause
     * execution. Overrides `setPauseOnException` state.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object RunScriptRequest {
   

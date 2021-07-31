@@ -10,7 +10,6 @@ import typings.cryptoRandomString.cryptoRandomStringStrings.numeric
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,14 @@ object mod {
   	//=> '2cf05d94db'
   	```
   	*/
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("crypto-random-string", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("crypto-random-string", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Asynchronously generate a [cryptographically strong](https://en.wikipedia.org/wiki/Strong_cryptography) random string.
@@ -42,20 +43,17 @@ object mod {
   	//=> '2cf05d94db'
   	```
   	*/
-  @JSImport("crypto-random-string", "async")
-  @js.native
-  def async(): js.Promise[String] = js.native
-  @JSImport("crypto-random-string", "async")
-  @js.native
-  def async(options: Options): js.Promise[String] = js.native
+  @scala.inline
+  def async(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def async(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
     	Length of the returned string.
     	*/
-    var length: Double = js.native
+    var length: Double
   }
   object BaseOptions {
     
@@ -73,7 +71,6 @@ object mod {
     }
   }
   
-  @js.native
   trait CharactersOption extends StObject {
     
     /**
@@ -87,7 +84,7 @@ object mod {
     	//=> '8796225811'
     	```
     	*/
-    var characters: js.UndefOr[String] = js.native
+    var characters: js.UndefOr[String] = js.undefined
   }
   object CharactersOption {
     
@@ -108,9 +105,8 @@ object mod {
     }
   }
   
-  type Options = BaseOptions with (MergeExclusive[TypeOption, CharactersOption])
+  type Options = BaseOptions & (MergeExclusive[TypeOption, CharactersOption])
   
-  @js.native
   trait TypeOption extends StObject {
     
     /**
@@ -141,7 +137,7 @@ object mod {
     	*/
     var `type`: js.UndefOr[
         hex | base64 | `url-safe` | numeric | distinguishable | `ascii-printable` | alphanumeric
-      ] = js.native
+      ] = js.undefined
   }
   object TypeOption {
     

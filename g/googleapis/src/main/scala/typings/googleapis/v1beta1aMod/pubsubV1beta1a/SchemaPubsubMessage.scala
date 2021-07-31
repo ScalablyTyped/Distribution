@@ -2,25 +2,23 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message data and its labels.
   */
-@js.native
 trait SchemaPubsubMessage extends StObject {
   
   /**
     * The message payload.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * Optional list of labels for this message. Keys in this collection must be
     * unique.
     */
-  var label: js.UndefOr[js.Array[SchemaLabel]] = js.native
+  var label: js.UndefOr[js.Array[SchemaLabel]] = js.undefined
   
   /**
     * ID of this message assigned by the server at publication time. Guaranteed
@@ -28,13 +26,13 @@ trait SchemaPubsubMessage extends StObject {
     * that receives a PubsubMessage via a Pull call or a push delivery. It must
     * not be populated by a publisher in a Publish call.
     */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the message was published. The time is milliseconds
     * since the UNIX epoch.
     */
-  var publishTime: js.UndefOr[String] = js.native
+  var publishTime: js.UndefOr[String] = js.undefined
 }
 object SchemaPubsubMessage {
   

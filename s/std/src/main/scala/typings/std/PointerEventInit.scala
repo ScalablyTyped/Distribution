@@ -2,31 +2,31 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointerEventInit extends MouseEventInit {
+trait PointerEventInit
+  extends StObject
+     with MouseEventInit {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var isPrimary: js.UndefOr[scala.Boolean] = js.native
+  var isPrimary: js.UndefOr[scala.Boolean] = js.undefined
   
-  var pointerId: js.UndefOr[Double] = js.native
+  var pointerId: js.UndefOr[Double] = js.undefined
   
-  var pointerType: js.UndefOr[java.lang.String] = js.native
+  var pointerType: js.UndefOr[java.lang.String] = js.undefined
   
-  var pressure: js.UndefOr[Double] = js.native
+  var pressure: js.UndefOr[Double] = js.undefined
   
-  var tangentialPressure: js.UndefOr[Double] = js.native
+  var tangentialPressure: js.UndefOr[Double] = js.undefined
   
-  var tiltX: js.UndefOr[Double] = js.native
+  var tiltX: js.UndefOr[Double] = js.undefined
   
-  var tiltY: js.UndefOr[Double] = js.native
+  var tiltY: js.UndefOr[Double] = js.undefined
   
-  var twist: js.UndefOr[Double] = js.native
+  var twist: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PointerEventInit {
   

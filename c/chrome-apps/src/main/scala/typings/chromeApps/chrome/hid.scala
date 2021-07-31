@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -24,17 +23,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object hid {
   
-  @js.native
   trait Collection extends StObject {
     
     /** Report IDs which belong to the collection and to its children. */
-    var reportIds: js.Array[integer] = js.native
+    var reportIds: js.Array[integer]
     
     /** Page-defined usage identifier. */
-    var usage: integer = js.native
+    var usage: integer
     
     /** HID usage page identifier. */
-    var usagePage: integer = js.native
+    var usagePage: integer
   }
   object Collection {
     
@@ -62,20 +60,19 @@ object hid {
   }
   
   /** @since Chrome 39. */
-  @js.native
   trait DeviceFilter extends StObject {
     
     /** Device product ID, only checked only if the vendor ID matches. */
-    var productId: js.UndefOr[integer] = js.native
+    var productId: js.UndefOr[integer] = js.undefined
     
     /** HID usage identifier, checked only if the HID usage page matches. */
-    var usage: js.UndefOr[integer] = js.native
+    var usage: js.UndefOr[integer] = js.undefined
     
     /** HID usage page identifier. */
-    var usagePage: js.UndefOr[integer] = js.native
+    var usagePage: js.UndefOr[integer] = js.undefined
     
     /** Device vendor ID. */
-    var vendorId: js.UndefOr[integer] = js.native
+    var vendorId: js.UndefOr[integer] = js.undefined
   }
   object DeviceFilter {
     
@@ -114,7 +111,6 @@ object hid {
     }
   }
   
-  @js.native
   trait DeviceOptions extends StObject {
     
     /**
@@ -122,19 +118,19 @@ object hid {
       * An empty filter list will return all devices the app has permission for.
       * @since Chrome 39
       */
-    var filters: js.UndefOr[js.Array[DeviceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DeviceFilter]] = js.undefined
     
     /**
       * Equivalent to setting DeviceFilter.productId.
       * @deprecated Deprecated since Chrome 39.
       */
-    var productId: js.UndefOr[deprecated] = js.native
+    var productId: js.UndefOr[deprecated] = js.undefined
     
     /**
       * Equivalent to setting DeviceFilter.vendorId.
       * @deprecated Deprecated since Chrome 39
       */
-    var vendorId: js.UndefOr[deprecated] = js.native
+    var vendorId: js.UndefOr[deprecated] = js.undefined
   }
   object DeviceOptions {
     
@@ -170,49 +166,48 @@ object hid {
     }
   }
   
-  @js.native
   trait HidDeviceInfo extends StObject {
     
     /**
       * Top-level collections from this device's report descriptors.
       */
-    var collections: js.Array[Collection] = js.native
+    var collections: js.Array[Collection]
     
     /** Opaque device ID. */
-    var deviceId: integer = js.native
+    var deviceId: integer
     
     /** Top-level collection's maximum feature report size. */
-    var maxFeatureReportSize: integer = js.native
+    var maxFeatureReportSize: integer
     
     /** Top-level collection's maximum input report size. */
-    var maxInputReportSize: integer = js.native
+    var maxInputReportSize: integer
     
     /** Top-level collection's maximum output report size. */
-    var maxOutputReportSize: integer = js.native
+    var maxOutputReportSize: integer
     
     /** Product ID. */
-    var productId: integer = js.native
+    var productId: integer
     
     /**
       * The product name read from the device, if available.
       * @since Chrome 46
       * */
-    var productName: String = js.native
+    var productName: String
     
     /**
       * Raw device report descriptor (not available on Windows).
       * @since Chrome 42
       * */
-    var reportDescriptor: ArrayBuffer = js.native
+    var reportDescriptor: ArrayBuffer
     
     /**
       * The serial number read from the device, if available.
       * @since Chrome 46
       */
-    var serialNumber: String = js.native
+    var serialNumber: String
     
     /** Vendor ID. */
-    var vendorId: integer = js.native
+    var vendorId: integer
   }
   object HidDeviceInfo {
     
@@ -271,19 +266,18 @@ object hid {
     }
   }
   
-  @js.native
   trait UserSelectedDevicePickerOptions extends StObject {
     
     /**
       * Filter the list of devices presented to the user.
       * If multiple filters are provided devices matching any filter will be displayed.
       */
-    var filters: js.UndefOr[js.Array[DeviceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DeviceFilter]] = js.undefined
     
     /**
       * Allow the user to select multiple devices.
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object UserSelectedDevicePickerOptions {
     

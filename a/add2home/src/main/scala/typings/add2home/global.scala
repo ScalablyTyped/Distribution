@@ -2,28 +2,28 @@ package typings.add2home
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object addToHome {
     
-    /** Closes the popup. */
-    @JSGlobal("addToHome.close")
+    @JSGlobal("addToHome")
     @js.native
-    def close(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** Closes the popup. */
+    @scala.inline
+    def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
     
     /** Reset the local and session storages so the popup will show again (for automatic mode - has no affect if manually opening the popup). */
-    @JSGlobal("addToHome.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
     /** Shows the popup.
       * @param {boolean} overrideChecks Override all the compatibility checks and always show the popup.
       */
-    @JSGlobal("addToHome.show")
-    @js.native
-    def show(overrideChecks: Boolean): Unit = js.native
+    @scala.inline
+    def show(overrideChecks: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(overrideChecks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

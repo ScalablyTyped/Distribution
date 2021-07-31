@@ -3,7 +3,6 @@ package typings.typeorm.mod
 import typings.typeorm.mongodbTypingsMod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm", "Server")

@@ -2,7 +2,6 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortedMapMod {
@@ -45,7 +44,7 @@ object sortedMapMod {
       * node.  If it returns true, traversal is aborted.
       * @return {boolean} True if traversal was aborted.
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
     
     /**
       * Returns a copy of the tree, with the specified key/value added.
@@ -123,18 +122,18 @@ object sortedMapMod {
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBNode[K, V]) = this()
-    def this(key: K, value: V, color: Boolean, left: js.UndefOr[scala.Nothing], right: LLRBEmptyNode[K, V]) = this()
-    def this(key: K, value: V, color: Boolean, left: js.UndefOr[scala.Nothing], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: Null, right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: Null, right: LLRBNode[K, V]) = this()
+    def this(key: K, value: V, color: Boolean, left: Unit, right: LLRBEmptyNode[K, V]) = this()
+    def this(key: K, value: V, color: Boolean, left: Unit, right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBEmptyNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBEmptyNode[K, V], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V], right: LLRBNode[K, V]) = this()
-    def this(key: K, value: V, color: Null, left: js.UndefOr[scala.Nothing], right: LLRBEmptyNode[K, V]) = this()
-    def this(key: K, value: V, color: Null, left: js.UndefOr[scala.Nothing], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: Null, right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: Null, right: LLRBNode[K, V]) = this()
+    def this(key: K, value: V, color: Null, left: Unit, right: LLRBEmptyNode[K, V]) = this()
+    def this(key: K, value: V, color: Null, left: Unit, right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBNode[K, V], right: LLRBEmptyNode[K, V]) = this()
@@ -200,7 +199,7 @@ object sortedMapMod {
       * @return {*} The first truthy value returned by action, or the last falsey
       *   value returned by action
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
     
     /**
       *
@@ -375,7 +374,7 @@ object sortedMapMod {
       * @return {*} The first truthy value returned by action, or the last falsey
       *   value returned by action
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
     
     /**
       * Returns a copy of the map, with the specified key/value added or replaced.

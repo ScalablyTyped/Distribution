@@ -2,65 +2,63 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOptions extends StObject {
   
   /**
     * Keep comments in the templates AST, even in production
     */
-  var comments: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only needed for DOM compilers
     */
-  var decodeEntities: js.UndefOr[js.Function2[/* rawText */ String, /* asAttr */ Boolean, String]] = js.native
+  var decodeEntities: js.UndefOr[js.Function2[/* rawText */ String, /* asAttr */ Boolean, String]] = js.undefined
   
   /**
     * @default ['{{', '}}']
     */
-  var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
   /**
     * Get tag namespace
     */
-  var getNamespace: js.UndefOr[js.Function2[/* tag */ String, /* parent */ js.UndefOr[ElementNode], Namespace]] = js.native
+  var getNamespace: js.UndefOr[js.Function2[/* tag */ String, /* parent */ js.UndefOr[ElementNode], Namespace]] = js.undefined
   
   /**
     * Get text parsing mode for this element
     */
   var getTextMode: js.UndefOr[
     js.Function2[/* node */ ElementNode, /* parent */ js.UndefOr[ElementNode], TextModes]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Platform-specific built-in components e.g. `<Transition>`
     */
-  var isBuiltInComponent: js.UndefOr[js.Function1[/* tag */ String, js.Symbol | Unit]] = js.native
+  var isBuiltInComponent: js.UndefOr[js.Function1[/* tag */ String, js.Symbol | Unit]] = js.undefined
   
   /**
     * Separate option for end users to extend the native elements list
     */
-  var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean | Unit]] = js.native
+  var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean | Unit]] = js.undefined
   
   /**
     * e.g. platform native elements, e.g. `<div>` for browsers
     */
-  var isNativeTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.native
+  var isNativeTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
   /**
     * e.g. elements that should preserve whitespace inside, e.g. `<pre>`
     */
-  var isPreTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.native
+  var isPreTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
   /**
     * e.g. native elements that can self-close, e.g. `<img>`, `<br>`, `<hr>`
     */
-  var isVoidTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.native
+  var isVoidTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.undefined
 }
 object ParserOptions {
   

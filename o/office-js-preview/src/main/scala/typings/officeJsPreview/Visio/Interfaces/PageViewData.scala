@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "pageView.toJSON()". */
-@js.native
 trait PageViewData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageViewData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object PageViewData {
   

@@ -2,23 +2,21 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
-  var checkout: CheckoutResource = js.native
+  var checkout: CheckoutResource
   
-  var collection: CollectionResource = js.native
+  var collection: CollectionResource
   
-  def fetchNextPage[T /* <: GraphModel */](nextArray: js.Array[T]): js.Array[T] = js.native
+  def fetchNextPage[T /* <: GraphModel */](nextArray: js.Array[T]): js.Array[T]
   
-  var image: Image = js.native
+  var image: Image
   
-  var product: ProductResource = js.native
+  var product: ProductResource
   
-  var shop: ShopResource = js.native
+  var shop: ShopResource
 }
 object Client {
   

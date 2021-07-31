@@ -6,38 +6,34 @@ import typings.yesql.anon.Sql
 import typings.yesql.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String): String = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(dir: String, options: Pg): String = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("yesql", JSImport.Namespace)
   @js.native
-  def apply(dir: String): String = js.native
-  @JSImport("yesql", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Pg): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("yesql", "mysql")
-  @js.native
-  def mysql[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Sql[TParams]] = js.native
-  @JSImport("yesql", "mysql")
-  @js.native
-  def mysql[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Sql[TParams]] = js.native
+  @scala.inline
+  def mysql[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Sql[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
+  @scala.inline
+  def mysql[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Sql[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
   
-  @JSImport("yesql", "pg")
-  @js.native
-  def pg[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Text[TParams]] = js.native
-  @JSImport("yesql", "pg")
-  @js.native
-  def pg[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Text[TParams]] = js.native
+  @scala.inline
+  def pg[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Text[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
+  @scala.inline
+  def pg[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Text[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
   
   type AnyParams = Record[String, js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var useNullForMissing: js.UndefOr[Boolean] = js.native
+    var useNullForMissing: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

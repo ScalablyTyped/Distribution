@@ -4,30 +4,29 @@ import typings.std.ArrayBuffer
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.`public-key`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#publickeycredential}
   */
-@js.native
 trait PublicKeyCredential
-  extends Credential
+  extends StObject
+     with Credential
      with CredentialType {
   
-  val rawId: ArrayBuffer = js.native
+  val rawId: ArrayBuffer
   
-  val response: AuthenticatorResponse = js.native
+  val response: AuthenticatorResponse
   
   @JSName("type")
-  val type_PublicKeyCredential: `public-key` = js.native
+  val type_PublicKeyCredential: `public-key`
 }
 object PublicKeyCredential {
   
   @scala.inline
-  def apply(id: String, rawId: ArrayBuffer, response: AuthenticatorResponse, `type`: `public-key`): PublicKeyCredential = {
+  def apply(id: String, rawId: ArrayBuffer, response: AuthenticatorResponse): PublicKeyCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredential]
   }
   

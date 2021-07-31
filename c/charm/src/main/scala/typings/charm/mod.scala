@@ -20,7 +20,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.Process
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,12 +32,14 @@ object mod {
     * You can also pass `process` in which case
     * `process.stdin` and `process.stdout` will be used.
     */
+  @scala.inline
+  def apply(): CharmInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CharmInstance]
+  @scala.inline
+  def apply(param: CharmAnyStream): CharmInstance = ^.asInstanceOf[js.Dynamic].apply(param.asInstanceOf[js.Any]).asInstanceOf[CharmInstance]
+  
   @JSImport("charm", JSImport.Namespace)
   @js.native
-  def apply(): CharmInstance = js.native
-  @JSImport("charm", JSImport.Namespace)
-  @js.native
-  def apply(param: CharmAnyStream): CharmInstance = js.native
+  val ^ : js.Any = js.native
   
   type CharmAnyStream = WritableStream | ReadableStream | Process
   
@@ -85,7 +86,9 @@ object mod {
   }
   
   @js.native
-  trait CharmInstance extends WritableStream {
+  trait CharmInstance
+    extends StObject
+       with WritableStream {
     
     /**
       * Set the background color with the string `color`, which can be:
@@ -243,12 +246,12 @@ object mod {
     def up(y: Double): this.type = js.native
     
     def write(msg: String, cb: js.Function): Boolean = js.native
-    def write(msgs: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(msgs: String, encoding: String): Boolean = js.native
     def write(msgs: String, encoding: String, cb: js.Function): Boolean = js.native
-    def write(msgs: Buffer, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
+    def write(msgs: String, encoding: Unit, cb: js.Function): Boolean = js.native
     def write(msgs: Buffer, encoding: String): Boolean = js.native
     def write(msgs: Buffer, encoding: String, cb: js.Function): Boolean = js.native
+    def write(msgs: Buffer, encoding: Unit, cb: js.Function): Boolean = js.native
     def write(msg: Buffer): Boolean = js.native
     def write(msg: Buffer, cb: js.Function): Boolean = js.native
   }

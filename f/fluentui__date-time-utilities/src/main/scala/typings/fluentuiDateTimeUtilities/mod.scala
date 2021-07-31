@@ -14,10 +14,13 @@ import typings.std.Date
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@fluentui/date-time-utilities", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@fluentui/date-time-utilities", "DAYS_IN_WEEK")
   @js.native
@@ -40,15 +43,15 @@ object mod {
   object DateRangeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType & Double] = js.native
     
-    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Day with Double = js.native
+    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Day & Double = js.native
     
-    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Month with Double = js.native
+    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Month & Double = js.native
     
-    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Week with Double = js.native
+    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Week & Double = js.native
     
-    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek with Double = js.native
+    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek & Double = js.native
   }
   
   @JSImport("@fluentui/date-time-utilities", "DayOfWeek")
@@ -56,21 +59,21 @@ object mod {
   object DayOfWeek extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek & Double] = js.native
     
-    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Friday with Double = js.native
+    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Friday & Double = js.native
     
-    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Monday with Double = js.native
+    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Monday & Double = js.native
     
-    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Saturday with Double = js.native
+    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Saturday & Double = js.native
     
-    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Sunday with Double = js.native
+    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Sunday & Double = js.native
     
-    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Thursday with Double = js.native
+    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Thursday & Double = js.native
     
-    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Tuesday with Double = js.native
+    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Tuesday & Double = js.native
     
-    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday with Double = js.native
+    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday & Double = js.native
   }
   
   @JSImport("@fluentui/date-time-utilities", "FirstWeekOfYear")
@@ -78,13 +81,13 @@ object mod {
   object FirstWeekOfYear extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear & Double] = js.native
     
-    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstDay with Double = js.native
+    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
     
-    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek with Double = js.native
+    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
     
-    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
+    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
   }
   
   @JSImport("@fluentui/date-time-utilities", "MonthOfYear")
@@ -92,193 +95,156 @@ object mod {
   object MonthOfYear extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear & Double] = js.native
     
-    /* 3 */ val April: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.April with Double = js.native
+    /* 3 */ val April: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.April & Double = js.native
     
-    /* 7 */ val August: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.August with Double = js.native
+    /* 7 */ val August: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.August & Double = js.native
     
-    /* 11 */ val December: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.December with Double = js.native
+    /* 11 */ val December: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.December & Double = js.native
     
-    /* 1 */ val February: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.February with Double = js.native
+    /* 1 */ val February: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.February & Double = js.native
     
-    /* 0 */ val January: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.January with Double = js.native
+    /* 0 */ val January: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.January & Double = js.native
     
-    /* 6 */ val July: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.July with Double = js.native
+    /* 6 */ val July: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.July & Double = js.native
     
-    /* 5 */ val June: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.June with Double = js.native
+    /* 5 */ val June: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.June & Double = js.native
     
-    /* 2 */ val March: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.March with Double = js.native
+    /* 2 */ val March: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.March & Double = js.native
     
-    /* 4 */ val May: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.May with Double = js.native
+    /* 4 */ val May: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.May & Double = js.native
     
-    /* 10 */ val November: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.November with Double = js.native
+    /* 10 */ val November: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.November & Double = js.native
     
-    /* 9 */ val October: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.October with Double = js.native
+    /* 9 */ val October: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.October & Double = js.native
     
-    /* 8 */ val September: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.September with Double = js.native
+    /* 8 */ val September: typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear.September & Double = js.native
   }
   
-  @JSImport("@fluentui/date-time-utilities", "addDays")
-  @js.native
-  def addDays(date: Date, days: Double): Date = js.native
+  @scala.inline
+  def addDays(date: Date, days: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(date.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "addMonths")
-  @js.native
-  def addMonths(date: Date, months: Double): Date = js.native
+  @scala.inline
+  def addMonths(date: Date, months: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(date.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "addWeeks")
-  @js.native
-  def addWeeks(date: Date, weeks: Double): Date = js.native
+  @scala.inline
+  def addWeeks(date: Date, weeks: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeeks")(date.asInstanceOf[js.Any], weeks.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "addYears")
-  @js.native
-  def addYears(date: Date, years: Double): Date = js.native
+  @scala.inline
+  def addYears(date: Date, years: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(date.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "compareDatePart")
-  @js.native
-  def compareDatePart(date1: Date, date2: Date): Number = js.native
+  @scala.inline
+  def compareDatePart(date1: Date, date2: Date): Number = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDatePart")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Number]
   
-  @JSImport("@fluentui/date-time-utilities", "compareDates")
-  @js.native
-  def compareDates(date1: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def compareDates(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "findAvailableDate")
-  @js.native
-  def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[Date] = js.native
+  @scala.inline
+  def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableDate")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Date]]
   
-  @JSImport("@fluentui/date-time-utilities", "formatDay")
-  @js.native
-  def formatDay(date: Date): String = js.native
+  @scala.inline
+  def formatDay(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities", "formatMonthDayYear")
-  @js.native
-  def formatMonthDayYear(date: Date, strings: IDateGridStrings): String = js.native
+  @scala.inline
+  def formatMonthDayYear(date: Date, strings: IDateGridStrings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthDayYear")(date.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities", "formatMonthYear")
-  @js.native
-  def formatMonthYear(date: Date, strings: IDateGridStrings): String = js.native
+  @scala.inline
+  def formatMonthYear(date: Date, strings: IDateGridStrings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthYear")(date.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities", "formatYear")
-  @js.native
-  def formatYear(date: Date): String = js.native
+  @scala.inline
+  def formatYear(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatYear")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date]): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: js.UndefOr[scala.Nothing], maxDate: Date): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date, maxDate: Date): js.Array[Date] = js.native
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Unit, maxDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date, maxDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("@fluentui/date-time-utilities", "getDatePartHashValue")
-  @js.native
-  def getDatePartHashValue(date: Date): Double = js.native
+  @scala.inline
+  def getDatePartHashValue(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatePartHashValue")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeArray")
-  @js.native
-  def getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeArray")
-  @js.native
-  def getDateRangeArray(
-    date: Date,
-    dateRangeType: DateRangeType,
-    firstDayOfWeek: DayOfWeek,
-    workWeekDays: js.UndefOr[scala.Nothing],
-    daysToSelectInDayView: Double
-  ): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeArray")
-  @js.native
+  @scala.inline
+  def getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
   def getDateRangeArray(
     date: Date,
     dateRangeType: DateRangeType,
     firstDayOfWeek: DayOfWeek,
     workWeekDays: js.Array[DayOfWeek]
-  ): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeArray")
-  @js.native
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
   def getDateRangeArray(
     date: Date,
     dateRangeType: DateRangeType,
     firstDayOfWeek: DayOfWeek,
     workWeekDays: js.Array[DayOfWeek],
     daysToSelectInDayView: Double
-  ): js.Array[Date] = js.native
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getDateRangeArray(
+    date: Date,
+    dateRangeType: DateRangeType,
+    firstDayOfWeek: DayOfWeek,
+    workWeekDays: Unit,
+    daysToSelectInDayView: Double
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeTypeToUse")
-  @js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.UndefOr[scala.Nothing], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
-  @JSImport("@fluentui/date-time-utilities", "getDateRangeTypeToUse")
-  @js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
+  @scala.inline
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek], firstDayOfWeek: DayOfWeek): DateRangeType = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeTypeToUse")(dateRangeType.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[DateRangeType]
+  @scala.inline
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: Unit, firstDayOfWeek: DayOfWeek): DateRangeType = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeTypeToUse")(dateRangeType.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[DateRangeType]
   
-  @JSImport("@fluentui/date-time-utilities", "getDayGrid")
-  @js.native
-  def getDayGrid(options: IDayGridOptions): js.Array[js.Array[IDay]] = js.native
+  @scala.inline
+  def getDayGrid(options: IDayGridOptions): js.Array[js.Array[IDay]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayGrid")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[IDay]]]
   
-  @JSImport("@fluentui/date-time-utilities", "getEndDateOfWeek")
-  @js.native
-  def getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = js.native
+  @scala.inline
+  def getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "getMonthEnd")
-  @js.native
-  def getMonthEnd(date: Date): Date = js.native
+  @scala.inline
+  def getMonthEnd(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthEnd")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "getMonthStart")
-  @js.native
-  def getMonthStart(date: Date): Date = js.native
+  @scala.inline
+  def getMonthStart(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthStart")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "getStartDateOfWeek")
-  @js.native
-  def getStartDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = js.native
+  @scala.inline
+  def getStartDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getStartDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "getWeekNumber")
-  @js.native
-  def getWeekNumber(date: Date, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): Double = js.native
+  @scala.inline
+  def getWeekNumber(date: Date, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumber")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@fluentui/date-time-utilities", "getWeekNumbersInMonth")
-  @js.native
+  @scala.inline
   def getWeekNumbersInMonth(
     weeksInMonth: Double,
     firstDayOfWeek: DayOfWeek,
     firstWeekOfYear: FirstWeekOfYear,
     navigatedDate: Date
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumbersInMonth")(weeksInMonth.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any], navigatedDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@fluentui/date-time-utilities", "getYearEnd")
-  @js.native
-  def getYearEnd(date: Date): Date = js.native
+  @scala.inline
+  def getYearEnd(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearEnd")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "getYearStart")
-  @js.native
-  def getYearStart(date: Date): Date = js.native
+  @scala.inline
+  def getYearStart(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearStart")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("@fluentui/date-time-utilities", "isAfterMaxDate")
-  @js.native
-  def isAfterMaxDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def isAfterMaxDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfterMaxDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "isBeforeMinDate")
-  @js.native
-  def isBeforeMinDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def isBeforeMinDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBeforeMinDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "isContiguous")
-  @js.native
-  def isContiguous(days: js.Array[DayOfWeek], isSingleWeek: Boolean, firstDayOfWeek: DayOfWeek): Boolean = js.native
+  @scala.inline
+  def isContiguous(days: js.Array[DayOfWeek], isSingleWeek: Boolean, firstDayOfWeek: DayOfWeek): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContiguous")(days.asInstanceOf[js.Any], isSingleWeek.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "isInDateRangeArray")
-  @js.native
-  def isInDateRangeArray(date: Date, dateRange: js.Array[Date]): Boolean = js.native
+  @scala.inline
+  def isInDateRangeArray(date: Date, dateRange: js.Array[Date]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDateRangeArray")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "isRestrictedDate")
-  @js.native
-  def isRestrictedDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def isRestrictedDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRestrictedDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities", "setMonth")
-  @js.native
-  def setMonth(date: Date, month: Double): Date = js.native
+  @scala.inline
+  def setMonth(date: Date, month: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMonth")(date.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Date]
 }

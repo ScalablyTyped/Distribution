@@ -2,13 +2,13 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessagingOptions extends CommonMessagingProperties {
+trait MessagingOptions
+  extends StObject
+     with CommonMessagingProperties {
   
-  var qos: js.UndefOr[MessagingQOS] = js.native
+  var qos: js.UndefOr[MessagingQOS] = js.undefined
 }
 object MessagingOptions {
   

@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProgramOptions extends StObject {
   
-  var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   
-  var host: js.UndefOr[CompilerHost] = js.native
+  var host: js.UndefOr[CompilerHost] = js.undefined
   
-  var oldProgram: js.UndefOr[Program] = js.native
+  var oldProgram: js.UndefOr[Program] = js.undefined
   
-  var options: CompilerOptions = js.native
+  var options: CompilerOptions
   
-  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.native
+  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.undefined
   
-  var rootNames: js.Array[java.lang.String] = js.native
+  var rootNames: js.Array[java.lang.String]
 }
 object CreateProgramOptions {
   

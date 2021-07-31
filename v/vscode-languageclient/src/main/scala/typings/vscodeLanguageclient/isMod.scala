@@ -3,54 +3,45 @@ package typings.vscodeLanguageclient
 import typings.vscodeJsonrpc.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMod {
   
-  @JSImport("vscode-languageclient/lib/utils/is", "array")
+  @JSImport("vscode-languageclient/lib/utils/is", JSImport.Namespace)
   @js.native
-  def array[T](value: js.Any): /* is std.Array<T> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode-languageclient/lib/utils/is", "asPromise")
-  @js.native
-  def asPromise[T](value: T): js.Promise[T] = js.native
-  @JSImport("vscode-languageclient/lib/utils/is", "asPromise")
-  @js.native
-  def asPromise[T](value: js.Promise[T]): js.Promise[T] = js.native
-  @JSImport("vscode-languageclient/lib/utils/is", "asPromise")
-  @js.native
-  def asPromise[T](value: Thenable[T]): js.Promise[T] = js.native
+  @scala.inline
+  def array[T](value: js.Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "boolean")
-  @js.native
-  def boolean(value: js.Any): /* is boolean */ Boolean = js.native
+  @scala.inline
+  def asPromise[T](value: T): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def asPromise[T](value: js.Promise[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def asPromise[T](value: Thenable[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "error")
-  @js.native
-  def error(value: js.Any): /* is std.Error */ Boolean = js.native
+  @scala.inline
+  def boolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "func")
-  @js.native
-  def func(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def error(value: js.Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "number")
-  @js.native
-  def number(value: js.Any): /* is number */ Boolean = js.native
+  @scala.inline
+  def func(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "string")
-  @js.native
-  def string(value: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def number(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "stringArray")
-  @js.native
-  def stringArray(value: js.Any): /* is std.Array<string> */ Boolean = js.native
+  @scala.inline
+  def string(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "thenable")
-  @js.native
-  def thenable[T](value: js.Any): /* is vscode-jsonrpc.Thenable<T> */ Boolean = js.native
+  @scala.inline
+  def stringArray(value: js.Any): /* is std.Array<string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stringArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<string> */ Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/is", "typedArray")
-  @js.native
-  def typedArray[T](value: js.Any, check: js.Function1[/* value */ js.Any, Boolean]): /* is std.Array<T> */ Boolean = js.native
+  @scala.inline
+  def thenable[T](value: js.Any): /* is vscode-jsonrpc.Thenable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("thenable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.Thenable<T> */ Boolean]
+  
+  @scala.inline
+  def typedArray[T](value: js.Any, check: js.Function1[/* value */ js.Any, Boolean]): /* is std.Array<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("typedArray")(value.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[/* is std.Array<T> */ Boolean]
 }

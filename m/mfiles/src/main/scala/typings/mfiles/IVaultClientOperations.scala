@@ -4,23 +4,21 @@ import typings.mfiles.MFiles.MFOfflineTransitionResultFlags
 import typings.mfiles.MFiles.MFOnlineTransitionResultFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultClientOperations extends StObject {
   
-  def DisableCheckInReminderForCallingProcess(): Unit = js.native
+  def DisableCheckInReminderForCallingProcess(): Unit
   
-  def EnableCheckInReminderForCallingProcess(): Unit = js.native
+  def EnableCheckInReminderForCallingProcess(): Unit
   
-  def IsOffline(): Boolean = js.native
+  def IsOffline(): Boolean
   
-  def IsOnline(): Boolean = js.native
+  def IsOnline(): Boolean
   
-  def SetVaultToOffline(ParentWindow: Double): MFOfflineTransitionResultFlags = js.native
+  def SetVaultToOffline(ParentWindow: Double): MFOfflineTransitionResultFlags
   
-  def SetVaultToOnline(ParentWindow: Double): MFOnlineTransitionResultFlags = js.native
+  def SetVaultToOnline(ParentWindow: Double): MFOnlineTransitionResultFlags
 }
 object IVaultClientOperations {
   

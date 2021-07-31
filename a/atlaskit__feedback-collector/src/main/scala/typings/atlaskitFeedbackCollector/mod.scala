@@ -3,7 +3,6 @@ package typings.atlaskitFeedbackCollector
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,89 +38,88 @@ object mod {
   
   type FeedbackCollector = Component[FeedbackCollectorProps, js.Object, js.Any]
   
-  @js.native
   trait FeedbackCollectorProps extends StObject {
     
     /**  Additional fields to send to the widget service */
-    var additionalFields: js.UndefOr[js.Array[FieldType]] = js.native
+    var additionalFields: js.UndefOr[js.Array[FieldType]] = js.undefined
     
     /**  Override the default value for the "can be contacted" custom field in your widget service */
-    var canBeContactedDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var canBeContactedDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "can be contacted" custom field in your widget service */
-    var canBeContactedFieldId: js.UndefOr[String] = js.native
+    var canBeContactedFieldId: js.UndefOr[String] = js.undefined
     
     /**  Override the default value for the "customer name" custom field in your widget service */
-    var customerNameDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var customerNameDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "customer name" custom field in your widget service */
-    var customerNameFieldId: js.UndefOr[String] = js.native
+    var customerNameFieldId: js.UndefOr[String] = js.undefined
     
     /**  Override the default value for the "description" custom field in your widget service */
-    var descriptionDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var descriptionDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "description" custom field in your widget service */
-    var descriptionFieldId: js.UndefOr[String] = js.native
+    var descriptionFieldId: js.UndefOr[String] = js.undefined
     
     /** The customer email */
-    var email: String = js.native
+    var email: String
     
     /**  Override the default value for the "email" custom field in your widget service */
-    var emailDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var emailDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "email" custom field in your widget service */
-    var emailFieldId: js.UndefOr[String] = js.native
+    var emailFieldId: js.UndefOr[String] = js.undefined
     
     /** The embeddable key to access the widget service */
-    var embeddableKey: String = js.native
+    var embeddableKey: String
     
     /**  Override the default value for the "enroll in research" custom field in your widget service */
-    var enrollInResearchDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var enrollInResearchDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "enroll in research" custom field in your widget service */
-    var enrollInResearchFieldId: js.UndefOr[String] = js.native
+    var enrollInResearchFieldId: js.UndefOr[String] = js.undefined
     
     /** The customer name */
-    var name: String = js.native
+    var name: String
     
     /** Function that will be called to initiate the exit transition. */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Function that will be called optimistically after a delay when the feedback is submitted. */
-    var onSubmit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** The request id to access the widget service */
-    var requestTypeId: String = js.native
+    var requestTypeId: String
     
     /**  Override the default value for the "summary" custom field in your widget service */
-    var summaryDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var summaryDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "summary" custom field in your widget service */
-    var summaryFieldId: js.UndefOr[String] = js.native
+    var summaryFieldId: js.UndefOr[String] = js.undefined
     
     /**  Number of characters that the "summary" field accepts, the rest will be truncated */
-    var summaryTruncateLength: js.UndefOr[Double] = js.native
+    var summaryTruncateLength: js.UndefOr[Double] = js.undefined
     
     /** After this delay the onSubmit callback will be triggered optimistically */
-    var timeoutOnSubmit: js.UndefOr[Double] = js.native
+    var timeoutOnSubmit: js.UndefOr[Double] = js.undefined
     
     /**  Override the default value for the "Bug" type of response in your widget service */
-    var typeBugDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var typeBugDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default value for the "Comment" type of response in your widget service */
-    var typeCommentDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var typeCommentDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default value for the "Empty" type of response in your widget service */
-    var typeEmptyDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var typeEmptyDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default id for the "type" custom field in your widget service */
-    var typeFieldId: js.UndefOr[String] = js.native
+    var typeFieldId: js.UndefOr[String] = js.undefined
     
     /**  Override the default value for the "Question" type of response in your widget service */
-    var typeQuestionDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var typeQuestionDefaultValue: js.UndefOr[FieldValueType] = js.undefined
     
     /**  Override the default value for the "Suggestion" type of response in your widget service */
-    var typeSuggestionDefaultValue: js.UndefOr[FieldValueType] = js.native
+    var typeSuggestionDefaultValue: js.UndefOr[FieldValueType] = js.undefined
   }
   object FeedbackCollectorProps {
     
@@ -322,12 +320,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedbackFlagProps extends StObject {
     
-    var isDismissAllowed: js.UndefOr[Boolean] = js.native
+    var isDismissAllowed: js.UndefOr[Boolean] = js.undefined
     
-    var onDismissed: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onDismissed: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object FeedbackFlagProps {
     
@@ -347,21 +344,20 @@ object mod {
       def setIsDismissAllowedUndefined: Self = StObject.set(x, "isDismissAllowed", js.undefined)
       
       @scala.inline
-      def setOnDismissed(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
+      def setOnDismissed(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
     }
   }
   
-  @js.native
   trait FeedbackFormProps extends StObject {
     
     /** Function that will be called to initiate the exit transition. */
-    def onClose(): Unit = js.native
+    def onClose(): Unit
     
     /** Function that will be called immediately after the submit action  */
-    def onSubmit(formValues: FormFields): Unit = js.native
+    def onSubmit(formValues: FormFields): Unit
   }
   object FeedbackFormProps {
     
@@ -382,10 +378,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedbackType extends StObject {
     
-    var fields: js.Array[FieldType] = js.native
+    var fields: js.Array[FieldType]
   }
   object FeedbackType {
     
@@ -406,12 +401,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FieldType extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var value: FieldValueType = js.native
+    var value: FieldValueType
   }
   object FieldType {
     
@@ -437,16 +431,15 @@ object mod {
   
   type FieldValueType = String | js.Object | js.Array[js.Object]
   
-  @js.native
   trait FormFields extends StObject {
     
-    var canBeContacted: Boolean = js.native
+    var canBeContacted: Boolean
     
-    var description: String = js.native
+    var description: String
     
-    var enrollInResearchGroup: Boolean = js.native
+    var enrollInResearchGroup: Boolean
     
-    var `type`: SelectValue = js.native
+    var `type`: SelectValue
   }
   object FormFields {
     

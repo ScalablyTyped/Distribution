@@ -6,14 +6,13 @@ import typings.contentfulManagement.anon.Type
 import typings.contentfulManagement.tagMod.TagProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonTypesMod {
   
-  @js.native
   trait Collection[T, TPlain]
-    extends CollectionProp[T]
+    extends StObject
+       with CollectionProp[T]
        with DefaultElements[CollectionProp[TPlain]]
   object Collection {
     
@@ -31,18 +30,17 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait CollectionProp[TObj] extends StObject {
     
-    var items: js.Array[TObj] = js.native
+    var items: js.Array[TObj]
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var skip: Double = js.native
+    var skip: Double
     
-    var sys: Type = js.native
+    var sys: Type
     
-    var total: Double = js.native
+    var total: Double
   }
   object CollectionProp {
     
@@ -53,7 +51,7 @@ object commonTypesMod {
     }
     
     @scala.inline
-    implicit class CollectionPropMutableBuilder[Self <: CollectionProp[_], TObj] (val x: Self with CollectionProp[TObj]) extends AnyVal {
+    implicit class CollectionPropMutableBuilder[Self <: CollectionProp[?], TObj] (val x: Self & CollectionProp[TObj]) extends AnyVal {
       
       @scala.inline
       def setItems(value: js.Array[TObj]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
@@ -75,10 +73,9 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait DefaultElements[TPlainObject /* <: js.Object */] extends StObject {
     
-    def toPlainObject(): TPlainObject = js.native
+    def toPlainObject(): TPlainObject
   }
   object DefaultElements {
     
@@ -89,21 +86,20 @@ object commonTypesMod {
     }
     
     @scala.inline
-    implicit class DefaultElementsMutableBuilder[Self <: DefaultElements[_], TPlainObject /* <: js.Object */] (val x: Self with DefaultElements[TPlainObject]) extends AnyVal {
+    implicit class DefaultElementsMutableBuilder[Self <: DefaultElements[?], TPlainObject /* <: js.Object */] (val x: Self & DefaultElements[TPlainObject]) extends AnyVal {
       
       @scala.inline
       def setToPlainObject(value: () => TPlainObject): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait MetaLinkProps extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var linkType: String = js.native
+    var linkType: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MetaLinkProps {
     
@@ -128,30 +124,29 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait MetaSysProps extends StObject {
     
-    var archivedVersion: js.UndefOr[Double] = js.native
+    var archivedVersion: js.UndefOr[Double] = js.undefined
     
-    var createdAt: String = js.native
+    var createdAt: String
     
-    var createdBy: js.UndefOr[Sys] = js.native
+    var createdBy: js.UndefOr[Sys] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var publishedVersion: js.UndefOr[Double] = js.native
+    var publishedVersion: js.UndefOr[Double] = js.undefined
     
-    var space: js.UndefOr[Sys] = js.native
+    var space: js.UndefOr[Sys] = js.undefined
     
-    var status: js.UndefOr[Sys] = js.native
+    var status: js.UndefOr[Sys] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var updatedAt: String = js.native
+    var updatedAt: String
     
-    var updatedBy: js.UndefOr[Sys] = js.native
+    var updatedBy: js.UndefOr[Sys] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object MetaSysProps {
     
@@ -218,10 +213,9 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait MetadataProps extends StObject {
     
-    var tags: js.Array[TagProps] = js.native
+    var tags: js.Array[TagProps]
   }
   object MetadataProps {
     
@@ -242,19 +236,19 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait QueryOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var content_type: js.UndefOr[String] = js.native
+    var content_type: js.UndefOr[String] = js.undefined
     
-    var include: js.UndefOr[Double] = js.native
+    var include: js.UndefOr[Double] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[String] = js.native
+    var order: js.UndefOr[String] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
   }
   object QueryOptions {
     

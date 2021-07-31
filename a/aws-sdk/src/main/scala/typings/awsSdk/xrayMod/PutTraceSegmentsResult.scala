@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutTraceSegmentsResult extends StObject {
   
   /**
     * Segments that failed processing.
     */
-  var UnprocessedTraceSegments: js.UndefOr[UnprocessedTraceSegmentList] = js.native
+  var UnprocessedTraceSegments: js.UndefOr[UnprocessedTraceSegmentList] = js.undefined
 }
 object PutTraceSegmentsResult {
   

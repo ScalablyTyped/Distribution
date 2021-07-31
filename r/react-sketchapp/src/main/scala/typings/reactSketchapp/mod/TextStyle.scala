@@ -17,37 +17,37 @@ import typings.reactSketchapp.reactSketchappStrings.underline
 import typings.reactSketchapp.typesMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextStyle extends Style {
+trait TextStyle
+  extends StObject
+     with Style {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[normal | italic] = js.native
+  var fontStyle: js.UndefOr[normal | italic] = js.undefined
   
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
-  var letterSpacing: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var textAlign: js.UndefOr[auto | left | right | center | justify] = js.native
+  var textAlign: js.UndefOr[auto | left | right | center | justify] = js.undefined
   
-  var textDecorationLine: js.UndefOr[none | underline | double | `line-through`] = js.native
+  var textDecorationLine: js.UndefOr[none | underline | double | `line-through`] = js.undefined
   
-  var textShadowColor: js.UndefOr[Color] = js.native
+  var textShadowColor: js.UndefOr[Color] = js.undefined
   
-  var textShadowOffset: js.UndefOr[Width] = js.native
+  var textShadowOffset: js.UndefOr[Width] = js.undefined
   
-  var textShadowRadius: js.UndefOr[Double] = js.native
+  var textShadowRadius: js.UndefOr[Double] = js.undefined
   
-  var writingDirection: js.UndefOr[auto | ltr | rtl] = js.native
+  var writingDirection: js.UndefOr[auto | ltr | rtl] = js.undefined
 }
 object TextStyle {
   

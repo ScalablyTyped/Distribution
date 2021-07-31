@@ -10,9 +10,9 @@ TypeScript typings for YouTube Analytics API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.youtubeanalytics |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 46 |
 | # dependents       | 1 |
-| # downloads        | 169 |
+| # downloads        | 3220 |
 | # stars            | 0 |
 
 ## Links

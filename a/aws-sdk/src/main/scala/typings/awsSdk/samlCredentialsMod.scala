@@ -3,7 +3,6 @@ package typings.awsSdk
 import typings.awsSdk.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object samlCredentialsMod {
@@ -20,7 +19,6 @@ object samlCredentialsMod {
     var params: SAMLCredentialsParams = js.native
   }
   
-  @js.native
   trait SAMLCredentialsParams extends StObject {
     
     /**
@@ -28,28 +26,28 @@ object samlCredentialsMod {
       * The minimum duration is 15 minutes.
       * The maximum duration is 12 hours.
       */
-    var DurationSeconds: js.UndefOr[Double] = js.native
+    var DurationSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * An IAM policy in JSON format.
       * The policy plain text must be 2048 bytes or shorter.
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the SAML provider in IAM that describes the IdP.
       */
-    var PrincipalArn: String = js.native
+    var PrincipalArn: String
     
     /**
       * The Amazon Resource Name (ARN) of the role that the caller is assuming.
       */
-    var RoleArn: String = js.native
+    var RoleArn: String
     
     /**
       * The base-64 encoded SAML authentication response provided by the IdP.
       */
-    var SAMLAssertion: String = js.native
+    var SAMLAssertion: String
   }
   object SAMLCredentialsParams {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatusDetails extends StObject {
   
   /**
     * The name of the volume status.
     */
-  var Name: js.UndefOr[VolumeStatusName] = js.native
+  var Name: js.UndefOr[VolumeStatusName] = js.undefined
   
   /**
     * The intended status of the volume status.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object VolumeStatusDetails {
   

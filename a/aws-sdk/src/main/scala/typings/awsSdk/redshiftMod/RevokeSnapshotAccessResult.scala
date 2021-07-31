@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeSnapshotAccessResult extends StObject {
   
-  var Snapshot: js.UndefOr[typings.awsSdk.redshiftMod.Snapshot] = js.native
+  var Snapshot: js.UndefOr[typings.awsSdk.redshiftMod.Snapshot] = js.undefined
 }
 object RevokeSnapshotAccessResult {
   

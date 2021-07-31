@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloodlightGroup extends StObject {
   
   /** The Active View video viewability metric configuration for the Floodlight group. */
-  var activeViewConfig: js.UndefOr[ActiveViewVideoViewabilityMetricConfig] = js.native
+  var activeViewConfig: js.UndefOr[ActiveViewVideoViewabilityMetricConfig] = js.undefined
   
   /**
     * User-defined custom variables owned by the Floodlight group. Use custom Floodlight variables to create reporting data that is tailored to your unique business needs. Custom
@@ -23,23 +21,23 @@ trait FloodlightGroup extends StObject {
   var customVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The display name of the Floodlight group. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the Floodlight group. Assigned by the system. */
-  var floodlightGroupId: js.UndefOr[String] = js.native
+  var floodlightGroupId: js.UndefOr[String] = js.undefined
   
   /** Required. The lookback window for the Floodlight group. Both click_days and impression_days are required. Acceptable values for both are `0` to `90`, inclusive. */
-  var lookbackWindow: js.UndefOr[LookbackWindow] = js.native
+  var lookbackWindow: js.UndefOr[LookbackWindow] = js.undefined
   
   /** Output only. The resource name of the Floodlight group. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The web tag type enabled for the Floodlight group. */
-  var webTagType: js.UndefOr[String] = js.native
+  var webTagType: js.UndefOr[String] = js.undefined
 }
 object FloodlightGroup {
   
@@ -62,7 +60,7 @@ object FloodlightGroup {
     def setCustomVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[js.Any]
     ): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     @scala.inline

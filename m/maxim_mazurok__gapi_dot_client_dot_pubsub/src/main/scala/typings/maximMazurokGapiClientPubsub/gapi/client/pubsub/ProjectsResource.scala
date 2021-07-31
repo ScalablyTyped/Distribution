@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var snapshots: SnapshotsResource = js.native
+  var snapshots: SnapshotsResource
   
-  var subscriptions: SubscriptionsResource = js.native
+  var subscriptions: SubscriptionsResource
   
-  var topics: TopicsResource = js.native
+  var topics: TopicsResource
 }
 object ProjectsResource {
   

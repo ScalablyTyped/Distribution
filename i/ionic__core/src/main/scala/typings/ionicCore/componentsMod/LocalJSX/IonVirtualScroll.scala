@@ -9,76 +9,74 @@ import typings.ionicCore.virtualScrollInterfaceMod.ItemRenderFn
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonVirtualScroll extends StObject {
   
   /**
     * The approximate width of each footer template's cell. This dimension is used to help determine how many cells should be created when initialized, and to help calculate the height of the scrollable area. This height value can only use `px` units. Note that the actual rendered size of each cell comes from the app's CSS, whereas this approximation is used to help calculate initial dimensions before the item has been rendered.
     */
-  var approxFooterHeight: js.UndefOr[Double] = js.native
+  var approxFooterHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The approximate height of each header template's cell. This dimension is used to help determine how many cells should be created when initialized, and to help calculate the height of the scrollable area. This height value can only use `px` units. Note that the actual rendered size of each cell comes from the app's CSS, whereas this approximation is used to help calculate initial dimensions before the item has been rendered.
     */
-  var approxHeaderHeight: js.UndefOr[Double] = js.native
+  var approxHeaderHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * It is important to provide this if virtual item height will be significantly larger than the default The approximate height of each virtual item template's cell. This dimension is used to help determine how many cells should be created when initialized, and to help calculate the height of the scrollable area. This height value can only use `px` units. Note that the actual rendered size of each cell comes from the app's CSS, whereas this approximation is used to help calculate initial dimensions before the item has been rendered.
     */
-  var approxItemHeight: js.UndefOr[Double] = js.native
+  var approxItemHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Section footers and the data used within its given template can be dynamically created by passing a function to `footerFn`. The logic within the footer function can decide if the footer template should be used, and what data to give to the footer template. The function must return `null` if a footer cell shouldn't be created.
     */
-  var footerFn: js.UndefOr[HeaderFn] = js.native
+  var footerFn: js.UndefOr[HeaderFn] = js.undefined
   
   /**
     * An optional function that maps each item footer within their height.
     */
-  var footerHeight: js.UndefOr[FooterHeightFn] = js.native
+  var footerHeight: js.UndefOr[FooterHeightFn] = js.undefined
   
   /**
     * Section headers and the data used within its given template can be dynamically created by passing a function to `headerFn`. For example, a large list of contacts usually has dividers between each letter in the alphabet. App's can provide their own custom `headerFn` which is called with each record within the dataset. The logic within the header function can decide if the header template should be used, and what data to give to the header template. The function must return `null` if a header cell shouldn't be created.
     */
-  var headerFn: js.UndefOr[HeaderFn] = js.native
+  var headerFn: js.UndefOr[HeaderFn] = js.undefined
   
   /**
     * An optional function that maps each item header within their height.
     */
-  var headerHeight: js.UndefOr[HeaderHeightFn] = js.native
+  var headerHeight: js.UndefOr[HeaderHeightFn] = js.undefined
   
   /**
     * An optional function that maps each item within their height. When this function is provides, heavy optimizations and fast path can be taked by `ion-virtual-scroll` leading to massive performance improvements.  This function allows to skip all DOM reads, which can be Doing so leads to massive performance
     */
-  var itemHeight: js.UndefOr[ItemHeightFn] = js.native
+  var itemHeight: js.UndefOr[ItemHeightFn] = js.undefined
   
   /**
     * The data that builds the templates within the virtual scroll. It's important to note that when this data has changed, then the entire virtual scroll is reset, which is an expensive operation and should be avoided if possible.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * NOTE: only Vanilla JS API.
     */
-  var nodeRender: js.UndefOr[ItemRenderFn] = js.native
+  var nodeRender: js.UndefOr[ItemRenderFn] = js.undefined
   
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the footer to be rendered. Returns a JSX virtual-dom.
     */
-  var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.undefined
   
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the header to be rendered. Returns a JSX virtual-dom.
     */
-  var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.undefined
   
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the items to be rendered. Returns a JSX virtual-dom.
     */
-  var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.undefined
 }
 object IonVirtualScroll {
   
@@ -144,7 +142,7 @@ object IonVirtualScroll {
     def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -159,19 +157,19 @@ object IonVirtualScroll {
     def setNodeRenderUndefined: Self = StObject.set(x, "nodeRender", js.undefined)
     
     @scala.inline
-    def setRenderFooter(value: (/* item */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "renderFooter", js.Any.fromFunction2(value))
+    def setRenderFooter(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderFooter", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
     
     @scala.inline
-    def setRenderHeader(value: (/* item */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "renderHeader", js.Any.fromFunction2(value))
+    def setRenderHeader(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderHeader", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     
     @scala.inline
-    def setRenderItem(value: (/* item */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
+    def setRenderItem(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)

@@ -28,10 +28,13 @@ import typings.yaml.yamlStrings.`1Dot1`
 import typings.yaml.yamlStrings.`1Dot2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("yaml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yaml", "Document")
   @js.native
@@ -72,7 +75,8 @@ object mod {
       **/
     def setSchema(): Unit = js.native
     def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`]): Unit = js.native
-    def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`], customTags: js.Array[Tag | TagId]): Unit = js.native
+    def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`], customTags: js.Array[TagId | Tag]): Unit = js.native
+    def setSchema(id: Unit, customTags: js.Array[TagId | Tag]): Unit = js.native
     def setSchema(id: Name): Unit = js.native
     def setSchema(id: Name, customTags: js.Array[TagId | Tag]): Unit = js.native
     
@@ -85,12 +89,9 @@ object mod {
       */
     var tagPrefixes: js.Array[TagPrefix] = js.native
     
-    def toJSON(
-      arg: js.UndefOr[scala.Nothing],
-      onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]
-    ): js.Any = js.native
     def toJSON(arg: String): js.Any = js.native
     def toJSON(arg: String, onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]): js.Any = js.native
+    def toJSON(arg: Unit, onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]): js.Any = js.native
     
     @JSName("type")
     var type_Document: DOCUMENT = js.native
@@ -158,12 +159,11 @@ object mod {
       var schema_Parsed: Schema = js.native
     }
     
-    @js.native
     trait TagPrefix extends StObject {
       
-      var handle: String = js.native
+      var handle: String
       
-      var prefix: String = js.native
+      var prefix: String
     }
     object TagPrefix {
       
@@ -185,53 +185,42 @@ object mod {
     }
   }
   
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode(value: js.Any): YAMLMap | YAMLSeq | Scalar = js.native
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String): YAMLMap | YAMLSeq | Scalar = js.native
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode_false(value: js.Any, wrapScalars: `false`): YAMLMap | YAMLSeq | String | Double | Boolean | Null = js.native
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode_false(value: js.Any, wrapScalars: `false`, tag: String): YAMLMap | YAMLSeq | String | Double | Boolean | Null = js.native
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode_true(value: js.Any, wrapScalars: `true`): YAMLMap | YAMLSeq | Scalar = js.native
-  @JSImport("yaml", "createNode")
-  @js.native
-  def createNode_true(value: js.Any, wrapScalars: `true`, tag: String): YAMLMap | YAMLSeq | Scalar = js.native
+  @scala.inline
+  def createNode(value: js.Any): YAMLMap | YAMLSeq | Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any]).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  @scala.inline
+  def createNode(value: js.Any, wrapScalars: Unit, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  
+  @scala.inline
+  def createNode_false(value: js.Any, wrapScalars: `false`): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
+  @scala.inline
+  def createNode_false(value: js.Any, wrapScalars: `false`, tag: String): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
+  
+  @scala.inline
+  def createNode_true(value: js.Any, wrapScalars: `true`): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  @scala.inline
+  def createNode_true(value: js.Any, wrapScalars: `true`, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
   
   @JSImport("yaml", "defaultOptions")
   @js.native
   val defaultOptions: Options = js.native
   
-  @JSImport("yaml", "parse")
-  @js.native
-  def parse(str: String): js.Any = js.native
-  @JSImport("yaml", "parse")
-  @js.native
-  def parse(str: String, options: Options): js.Any = js.native
+  @scala.inline
+  def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("yaml", "parseAllDocuments")
-  @js.native
-  def parseAllDocuments(str: String): js.Array[Parsed] = js.native
-  @JSImport("yaml", "parseAllDocuments")
-  @js.native
-  def parseAllDocuments(str: String, options: Options): js.Array[Parsed] = js.native
+  @scala.inline
+  def parseAllDocuments(str: String): js.Array[Parsed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed]]
+  @scala.inline
+  def parseAllDocuments(str: String, options: Options): js.Array[Parsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed]]
   
-  @JSImport("yaml", "parseCST")
-  @js.native
-  def parseCST(str: String): ParsedCST = js.native
+  @scala.inline
+  def parseCST(str: String): ParsedCST = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCST")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedCST]
   
-  @JSImport("yaml", "parseDocument")
-  @js.native
-  def parseDocument(str: String): Parsed = js.native
-  @JSImport("yaml", "parseDocument")
-  @js.native
-  def parseDocument(str: String, options: Options): Parsed = js.native
+  @scala.inline
+  def parseDocument(str: String): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any]).asInstanceOf[Parsed]
+  @scala.inline
+  def parseDocument(str: String, options: Options): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   
   object scalarOptions {
     
@@ -257,13 +246,16 @@ object mod {
     @scala.inline
     def int_=(x: Int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
+    @JSImport("yaml", "scalarOptions.null")
+    @js.native
+    val `null`: typings.yaml.mod.scalarOptions.Null = js.native
+    
     @JSImport("yaml", "scalarOptions.str")
     @js.native
     def str: Str = js.native
     @scala.inline
     def str_=(x: Str): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("str")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait Binary extends StObject {
       
       /**
@@ -271,14 +263,14 @@ object mod {
         *
         * Default: `'BLOCK_LITERAL'`
         */
-      var defaultType: Type = js.native
+      var defaultType: Type
       
       /**
         * Maximum line width for `!!binary`.
         *
         * Default: `76`
         */
-      var lineWidth: Double = js.native
+      var lineWidth: Double
     }
     object Binary {
       
@@ -299,7 +291,6 @@ object mod {
       }
     }
     
-    @js.native
     trait Bool extends StObject {
       
       /**
@@ -307,14 +298,14 @@ object mod {
         *
         * Default: `'false'`
         */
-      var falseStr: String = js.native
+      var falseStr: String
       
       /**
         * String representation for `true`. With the core schema, use `'true' | 'True' | 'TRUE'`.
         *
         * Default: `'true'`
         */
-      var trueStr: String = js.native
+      var trueStr: String
     }
     object Bool {
       
@@ -335,7 +326,6 @@ object mod {
       }
     }
     
-    @js.native
     trait Int extends StObject {
       
       /**
@@ -343,13 +333,13 @@ object mod {
         *
         * Default: `false`
         */
-      var asBigInt: `false` = js.native
+      var asBigInt: `false`
     }
     object Int {
       
       @scala.inline
-      def apply(asBigInt: `false`): Int = {
-        val __obj = js.Dynamic.literal(asBigInt = asBigInt.asInstanceOf[js.Any])
+      def apply(): Int = {
+        val __obj = js.Dynamic.literal(asBigInt = false)
         __obj.asInstanceOf[Int]
       }
       
@@ -361,7 +351,6 @@ object mod {
       }
     }
     
-    @js.native
     trait Null extends StObject {
       
       /**
@@ -369,7 +358,7 @@ object mod {
         *
         * Default: `'null'`
         */
-      var nullStr: String = js.native
+      var nullStr: String
     }
     object Null {
       
@@ -387,7 +376,6 @@ object mod {
       }
     }
     
-    @js.native
     trait Str extends StObject {
       
       /**
@@ -395,11 +383,11 @@ object mod {
         *
         * Default: `'PLAIN'`
         */
-      var defaultType: Type = js.native
+      var defaultType: Type
       
-      var doubleQuoted: JsonEncoding = js.native
+      var doubleQuoted: JsonEncoding
       
-      var fold: LineWidth = js.native
+      var fold: LineWidth
     }
     object Str {
       
@@ -422,43 +410,37 @@ object mod {
         def setFold(value: LineWidth): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
       }
     }
-    
-    @JSImport("yaml", "scalarOptions.null")
-    @js.native
-    val `null`: typings.yaml.mod.scalarOptions.Null = js.native
   }
   
-  @JSImport("yaml", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("yaml", "stringify")
-  @js.native
-  def stringify(value: js.Any, options: Options): String = js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options
-    extends typings.yaml.typesMod.Schema.Options {
+    extends StObject
+       with typings.yaml.typesMod.Schema.Options {
     
     /**
       * Default prefix for anchors.
       *
       * Default: `'a'`, resulting in anchors `a1`, `a2`, etc.
       */
-    var anchorPrefix: js.UndefOr[String] = js.native
+    var anchorPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * The number of spaces to use when indenting code.
       *
       * Default: `2`
       */
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether block sequences should be indented.
       *
       * Default: `true`
       */
-    var indentSeq: js.UndefOr[Boolean] = js.native
+    var indentSeq: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow non-JSON JavaScript objects to remain in the `toJSON` output.
@@ -466,28 +448,28 @@ object mod {
       *
       * Default: `true`
       */
-    var keepBlobsInJSON: js.UndefOr[Boolean] = js.native
+    var keepBlobsInJSON: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include references in the AST to each node's corresponding CST node.
       *
       * Default: `false`
       */
-    var keepCstNodes: js.UndefOr[Boolean] = js.native
+    var keepCstNodes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Store the original node type when parsing documents.
       *
       * Default: `true`
       */
-    var keepNodeTypes: js.UndefOr[Boolean] = js.native
+    var keepNodeTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When outputting JS, use Map rather than Object to represent mappings.
       *
       * Default: `false`
       */
-    var mapAsMap: js.UndefOr[Boolean] = js.native
+    var mapAsMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent exponential entity expansion attacks by limiting data aliasing count;
@@ -495,28 +477,28 @@ object mod {
       *
       * Default: `100`
       */
-    var maxAliasCount: js.UndefOr[Double] = js.native
+    var maxAliasCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Include line position & node type directly in errors; drop their verbose source and context.
       *
       * Default: `false`
       */
-    var prettyErrors: js.UndefOr[Boolean] = js.native
+    var prettyErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When stringifying, require keys to be scalars and to use implicit rather than explicit notation.
       *
       * Default: `false`
       */
-    var simpleKeys: js.UndefOr[Boolean] = js.native
+    var simpleKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The YAML version used by documents without a `%YAML` directive.
       *
       * Default: `"1.2"`
       */
-    var version: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`] = js.native
+    var version: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`] = js.undefined
   }
   object Options {
     

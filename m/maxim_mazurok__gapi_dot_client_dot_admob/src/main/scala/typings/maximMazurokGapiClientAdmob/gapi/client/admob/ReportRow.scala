@@ -3,25 +3,23 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportRow extends StObject {
   
   /** Map of dimension values in a row, with keys as enum name of the dimensions. */
   var dimensionValues: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowDimensionValue}
-    */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Map of metric values in a row, with keys as enum name of the metrics. If a metric being requested has no value returned, the map will not include it. */
   var metricValues: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowMetricValue}
-    */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ReportRow {
   
@@ -38,7 +36,7 @@ object ReportRow {
     def setDimensionValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowDimensionValue}
-      */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
     ): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -48,7 +46,7 @@ object ReportRow {
     def setMetricValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowMetricValue}
-      */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
     ): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
     
     @scala.inline

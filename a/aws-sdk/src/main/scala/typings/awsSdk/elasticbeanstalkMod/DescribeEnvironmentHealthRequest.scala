@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentHealthRequest extends StObject {
   
   /**
     * Specify the response elements to return. To retrieve all attributes, set to All. If no attribute names are specified, returns the name of the environment.
     */
-  var AttributeNames: js.UndefOr[EnvironmentHealthAttributes] = js.native
+  var AttributeNames: js.UndefOr[EnvironmentHealthAttributes] = js.undefined
   
   /**
     * Specify the environment by ID. You must specify either this or an EnvironmentName, or both.
     */
-  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.native
+  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.undefined
   
   /**
     * Specify the environment by name. You must specify either this or an EnvironmentName, or both.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
 }
 object DescribeEnvironmentHealthRequest {
   

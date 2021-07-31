@@ -3,27 +3,25 @@ package typings.electron.Electron
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/upload-data
   /**
     * UUID of blob data. Use ses.getBlobData method to retrieve the data.
     */
-  var blobUUID: js.UndefOr[String] = js.native
+  var blobUUID: js.UndefOr[String] = js.undefined
   
   /**
     * Content being sent.
     */
-  var bytes: Buffer = js.native
+  var bytes: Buffer
   
   /**
     * Path of file being uploaded.
     */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
 }
 object UploadData {
   

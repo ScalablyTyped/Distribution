@@ -2,87 +2,85 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A query definition relevant for search &amp; export.
   */
-@js.native
 trait SchemaQuery extends StObject {
   
   /**
     * When &#39;ACCOUNT&#39; is chosen as search method, account_info needs to
     * be specified.
     */
-  var accountInfo: js.UndefOr[SchemaAccountInfo] = js.native
+  var accountInfo: js.UndefOr[SchemaAccountInfo] = js.undefined
   
   /**
     * The corpus to search.
     */
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
   /**
     * The data source to search from.
     */
-  var dataScope: js.UndefOr[String] = js.native
+  var dataScope: js.UndefOr[String] = js.undefined
   
   /**
     * For Drive search, specify more options in this field.
     */
-  var driveOptions: js.UndefOr[SchemaDriveOptions] = js.native
+  var driveOptions: js.UndefOr[SchemaDriveOptions] = js.undefined
   
   /**
     * The end time range for the search query. These timestamps are in GMT and
     * rounded down to the start of the given date.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * When &#39;ROOM&#39; is chosen as search method, hangout_chats_info needs
     * to be specified. (read-only)
     */
-  var hangoutsChatInfo: js.UndefOr[SchemaHangoutsChatInfo] = js.native
+  var hangoutsChatInfo: js.UndefOr[SchemaHangoutsChatInfo] = js.undefined
   
   /**
     * For hangouts chat search, specify more options in this field. (read-only)
     */
-  var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatOptions] = js.native
+  var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatOptions] = js.undefined
   
   /**
     * For mail search, specify more options in this field.
     */
-  var mailOptions: js.UndefOr[SchemaMailOptions] = js.native
+  var mailOptions: js.UndefOr[SchemaMailOptions] = js.undefined
   
   /**
     * When &#39;ORG_UNIT&#39; is chosen as as search method, org_unit_info
     * needs to be specified.
     */
-  var orgUnitInfo: js.UndefOr[SchemaOrgUnitInfo] = js.native
+  var orgUnitInfo: js.UndefOr[SchemaOrgUnitInfo] = js.undefined
   
   /**
     * The search method to use.
     */
-  var searchMethod: js.UndefOr[String] = js.native
+  var searchMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The start time range for the search query. These timestamps are in GMT
     * and rounded down to the start of the given date.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * When &#39;TEAM_DRIVE&#39; is chosen as search method, team_drive_info
     * needs to be specified.
     */
-  var teamDriveInfo: js.UndefOr[SchemaTeamDriveInfo] = js.native
+  var teamDriveInfo: js.UndefOr[SchemaTeamDriveInfo] = js.undefined
   
   /**
     * The corpus-specific &lt;a
     * href=&quot;https://support.google.com/vault/answer/2474474&quot;&gt;search
     * operators&lt;/a&gt; used to generate search results.
     */
-  var terms: js.UndefOr[String] = js.native
+  var terms: js.UndefOr[String] = js.undefined
   
   /**
     * The time zone name. It should be an IANA TZ name, such as
@@ -90,7 +88,7 @@ trait SchemaQuery extends StObject {
     * href=&quot;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones&quot;&gt;Time
     * Zone&lt;/a&gt;.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaQuery {
   

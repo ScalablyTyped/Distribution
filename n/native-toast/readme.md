@@ -12,7 +12,7 @@ Native-like toast notification but for the web.
 | Keywords           | toast, android, notification |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 25619 |
+| # downloads        | 30997 |
 | # stars            | 0 |
 
 ## Links

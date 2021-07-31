@@ -2,13 +2,11 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageID extends StObject {
   
-  var messageID: String = js.native
+  var messageID: String
 }
 object MessageID {
   

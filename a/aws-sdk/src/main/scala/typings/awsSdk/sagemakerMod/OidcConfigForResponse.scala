@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OidcConfigForResponse extends StObject {
   
   /**
     * The OIDC IdP authorization endpoint used to configure your private workforce.
     */
-  var AuthorizationEndpoint: js.UndefOr[OidcEndpoint] = js.native
+  var AuthorizationEndpoint: js.UndefOr[OidcEndpoint] = js.undefined
   
   /**
     * The OIDC IdP client ID used to configure your private workforce.
     */
-  var ClientId: js.UndefOr[typings.awsSdk.sagemakerMod.ClientId] = js.native
+  var ClientId: js.UndefOr[typings.awsSdk.sagemakerMod.ClientId] = js.undefined
   
   /**
     * The OIDC IdP issuer used to configure your private workforce.
     */
-  var Issuer: js.UndefOr[OidcEndpoint] = js.native
+  var Issuer: js.UndefOr[OidcEndpoint] = js.undefined
   
   /**
     * The OIDC IdP JSON Web Key Set (Jwks) URI used to configure your private workforce.
     */
-  var JwksUri: js.UndefOr[OidcEndpoint] = js.native
+  var JwksUri: js.UndefOr[OidcEndpoint] = js.undefined
   
   /**
     * The OIDC IdP logout endpoint used to configure your private workforce.
     */
-  var LogoutEndpoint: js.UndefOr[OidcEndpoint] = js.native
+  var LogoutEndpoint: js.UndefOr[OidcEndpoint] = js.undefined
   
   /**
     * The OIDC IdP token endpoint used to configure your private workforce.
     */
-  var TokenEndpoint: js.UndefOr[OidcEndpoint] = js.native
+  var TokenEndpoint: js.UndefOr[OidcEndpoint] = js.undefined
   
   /**
     * The OIDC IdP user information endpoint used to configure your private workforce.
     */
-  var UserInfoEndpoint: js.UndefOr[OidcEndpoint] = js.native
+  var UserInfoEndpoint: js.UndefOr[OidcEndpoint] = js.undefined
 }
 object OidcConfigForResponse {
   

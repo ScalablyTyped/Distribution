@@ -10,9 +10,9 @@ Routine to communicate with Siemens S7 PLCs
 | ------------------ | :-------------: |
 | Full name          | nodes7 |
 | Keywords           | S7, Siemens, PLC, RFC1006, iso-on-tcp |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 54369 |
+| # releases         | 10 |
+| # dependents       | 6 |
+| # downloads        | 55721 |
 | # stars            | 1 |
 
 ## Links

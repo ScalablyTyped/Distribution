@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyWorkspaceStateRequest extends StObject {
   
   /**
     * The identifier of the WorkSpace.
     */
-  var WorkspaceId: typings.awsSdk.workspacesMod.WorkspaceId = js.native
+  var WorkspaceId: typings.awsSdk.workspacesMod.WorkspaceId
   
   /**
     * The WorkSpace state.
     */
-  var WorkspaceState: TargetWorkspaceState = js.native
+  var WorkspaceState: TargetWorkspaceState
 }
 object ModifyWorkspaceStateRequest {
   

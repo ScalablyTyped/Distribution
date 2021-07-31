@@ -19,7 +19,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tab {
@@ -28,11 +27,12 @@ object tab {
     * An event used by a {@link XTabPageContainer} to notify changes in tab page activation.
     * @since OOo 3.4
     */
-  @js.native
-  trait TabPageActivatedEvent extends EventObject {
+  trait TabPageActivatedEvent
+    extends StObject
+       with EventObject {
     
     /** Contains the ID of the tab page */
-    var TabPageID: Double = js.native
+    var TabPageID: Double
   }
   object TabPageActivatedEvent {
     
@@ -55,8 +55,9 @@ object tab {
     * @since OOo 3.4
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait UnoControlTabPage extends UnoControlContainer
+  - Dropped any */ trait UnoControlTabPage
+    extends StObject
+       with UnoControlContainer
   object UnoControlTabPage {
     
     @scala.inline
@@ -131,9 +132,9 @@ object tab {
     * specifies a TabPageContainer control.
     * @since OOo 3.4
     */
-  @js.native
   trait UnoControlTabPageContainer
-    extends UnoControl
+    extends StObject
+       with UnoControl
        with XTabPageContainer
   object UnoControlTabPageContainer {
     
@@ -204,9 +205,9 @@ object tab {
     * specifies a model for a {@link UnoControlTabPageContainer} control.
     * @since OOo 3.4
     */
-  @js.native
   trait UnoControlTabPageContainerModel
-    extends UnoControlModel
+    extends StObject
+       with UnoControlModel
        with XTabPageContainerModel {
     
     /**
@@ -214,7 +215,7 @@ object tab {
       * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
     /* InferMemberOverrides */
-    override def getPropertySetInfo(): XPropertySetInfo = js.native
+    override def getPropertySetInfo(): XPropertySetInfo
   }
   object UnoControlTabPageContainerModel {
     
@@ -248,7 +249,7 @@ object tab {
       getElementType: () => `type`,
       getPropertySetInfo: () => XPropertySetInfo,
       getPropertyValue: String => js.Any,
-      getPropertyValues: SeqEquiv[String] => SafeArray[_],
+      getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
       getServiceName: () => String,
       hasElements: () => Boolean,
       insertByIndex: (Double, js.Any) => Unit,
@@ -264,7 +265,7 @@ object tab {
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       replaceByIndex: (Double, js.Any) => Unit,
       setPropertyValue: (String, js.Any) => Unit,
-      setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+      setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
       write: XObjectOutputStream => Unit
     ): UnoControlTabPageContainerModel = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), createTabPage = js.Any.fromFunction1(createTabPage), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), loadTabPage = js.Any.fromFunction2(loadTabPage), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -297,56 +298,55 @@ object tab {
     * @see UnoControlTabPageContainer
     * @since OOo 3.4
     */
-  @js.native
   trait XTabPageContainer extends StObject {
     
     /** Specifies the ID of the current active tab page. */
-    var ActiveTabPageID: Double = js.native
+    var ActiveTabPageID: Double
     
     /**
       * Returns the number of tab pages.
       * @returns the number of tab pages.
       */
-    val TabPageCount: Double = js.native
+    val TabPageCount: Double
     
     /**
       * Adds a listener for the TabPageActivedEvent posted after the tab page was activated.
       * @param listener the listener to add.
       */
-    def addTabPageContainerListener(listener: XTabPageContainerListener): Unit = js.native
+    def addTabPageContainerListener(listener: XTabPageContainerListener): Unit
     
     /**
       * Returns tab page for the given index.
       * @param tabPageIndex - index of the tab page in the IndexContainer.
       * @returns tab page which has tabPageIndex.
       */
-    def getTabPage(tabPageIndex: Double): XTabPage = js.native
+    def getTabPage(tabPageIndex: Double): XTabPage
     
     /**
       * Returns tab page for the given ID.
       * @param tabPageID - ID of the tab page.
       * @returns tab page which has tabPageID.
       */
-    def getTabPageByID(tabPageID: Double): XTabPage = js.native
+    def getTabPageByID(tabPageID: Double): XTabPage
     
     /**
       * Returns the number of tab pages.
       * @returns the number of tab pages.
       */
-    def getTabPageCount(): Double = js.native
+    def getTabPageCount(): Double
     
     /**
       * Checks whether a tab page is activated.
       * @param tabPageIndex the tab page to be checked.
       * @returns `TRUE` if tab page is activated, else `FALSE` .
       */
-    def isTabPageActive(tabPageIndex: Double): Boolean = js.native
+    def isTabPageActive(tabPageIndex: Double): Boolean
     
     /**
       * Removes a listener previously added with addTabPageListener().
       * @param listener the listener to remove.
       */
-    def removeTabPageContainerListener(listener: XTabPageContainerListener): Unit = js.native
+    def removeTabPageContainerListener(listener: XTabPageContainerListener): Unit
   }
   object XTabPageContainer {
     
@@ -398,11 +398,12 @@ object tab {
     * An instance of this interface is used by the {@link XTabPageContainer} to get notifications about changes in activation of tab pages.
     * @since OOo 3.4
     */
-  @js.native
-  trait XTabPageContainerListener extends XEventListener {
+  trait XTabPageContainerListener
+    extends StObject
+       with XEventListener {
     
     /** Invoked after a tab page was activated. */
-    def tabPageActivated(tabPageActivatedEvent: TabPageActivatedEvent): Unit = js.native
+    def tabPageActivated(tabPageActivatedEvent: TabPageActivatedEvent): Unit
   }
   object XTabPageContainerListener {
     
@@ -430,23 +431,23 @@ object tab {
     * specifies an interface for a {@link UnoControlTabPageContainerModel} .
     * @since OOo 3.4
     */
-  @js.native
   trait XTabPageContainerModel
-    extends XIndexContainer
+    extends StObject
+       with XIndexContainer
        with XContainer {
     
     /**
       * creates a TabPageModel which can be inserted into the container.
       * @param TabPageID the id of the tab page
       */
-    def createTabPage(TabPageID: Double): XTabPageModel = js.native
+    def createTabPage(TabPageID: Double): XTabPageModel
     
     /**
       * creates a TabPageModel which can be inserted into the container, by loading it from a user interface resource file.
       * @param TabPageID the id of the tab page
       * @param ResourceURL the URL of the user interface resource to load
       */
-    def loadTabPage(TabPageID: Double, ResourceURL: String): XTabPageModel = js.native
+    def loadTabPage(TabPageID: Double, ResourceURL: String): XTabPageModel
   }
   object XTabPageContainerModel {
     
@@ -488,23 +489,22 @@ object tab {
     * specifies an {@link XTabPageModel} interface.
     * @since OOo 3.4
     */
-  @js.native
   trait XTabPageModel extends StObject {
     
     /** determines whether a tab page is enabled or disabled. */
-    var Enabled: Boolean = js.native
+    var Enabled: Boolean
     
     /** specifies a URL that references a graphic that should be displayed in the tab bar. */
-    var ImageURL: String = js.native
+    var ImageURL: String
     
     /** ID for tab page. */
-    var TabPageID: Double = js.native
+    var TabPageID: Double
     
     /** specifies the text that is displayed in the tab bar of the tab page. */
-    var Title: String = js.native
+    var Title: String
     
     /** specifies a tooltip text that should be displayed in the tab bar. */
-    var ToolTip: String = js.native
+    var ToolTip: String
   }
   object XTabPageModel {
     

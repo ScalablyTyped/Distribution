@@ -2,29 +2,27 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the row toggler
   */
-@js.native
 trait OnRowExpandToggle extends StObject {
   
   /**
     * The name of the column group the row is in
     */
-  var columnGroupName: String = js.native
+  var columnGroupName: String
   
   /**
     * The name of the expanded row
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * If it should expand or not
     */
-  var shouldExpand: Boolean = js.native
+  var shouldExpand: Boolean
 }
 object OnRowExpandToggle {
   

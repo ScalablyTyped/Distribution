@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RecordLocation extends StObject {
   
   /** Field id of the field containing the finding. */
-  var fieldId: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var fieldId: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** Key of the finding. */
-  var recordKey: js.UndefOr[GooglePrivacyDlpV2RecordKey] = js.native
+  var recordKey: js.UndefOr[GooglePrivacyDlpV2RecordKey] = js.undefined
   
   /** Location within a `ContentItem.Table`. */
-  var tableLocation: js.UndefOr[GooglePrivacyDlpV2TableLocation] = js.native
+  var tableLocation: js.UndefOr[GooglePrivacyDlpV2TableLocation] = js.undefined
 }
 object GooglePrivacyDlpV2RecordLocation {
   

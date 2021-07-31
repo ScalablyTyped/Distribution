@@ -2,17 +2,15 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiSocialAccountInfo extends StObject {
   
-  var createdAt: Double = js.native
+  var createdAt: Double
   
-  var provider: KiiSocialNetworkName = js.native
+  var provider: KiiSocialNetworkName
   
-  var socialAccountId: String = js.native
+  var socialAccountId: String
 }
 object KiiSocialAccountInfo {
   

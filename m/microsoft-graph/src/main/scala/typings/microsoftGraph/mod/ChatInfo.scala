@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatInfo extends StObject {
   
   // The unique identifier of a message in a Microsoft Teams channel.
-  var messageId: js.UndefOr[NullableOption[String]] = js.native
+  var messageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The ID of the reply message.
-  var replyChainMessageId: js.UndefOr[NullableOption[String]] = js.native
+  var replyChainMessageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for a thread in Microsoft Teams.
-  var threadId: js.UndefOr[NullableOption[String]] = js.native
+  var threadId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ChatInfo {
   

@@ -3,26 +3,26 @@ package typings.reactMdTransition
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getElementSizingMod {
   
-  @JSImport("@react-md/transition/types/getElementSizing", "getElementSizing")
+  @JSImport("@react-md/transition/types/getElementSizing", JSImport.Namespace)
   @js.native
-  def getElementSizing(): CollapseSizing = js.native
-  @JSImport("@react-md/transition/types/getElementSizing", "getElementSizing")
-  @js.native
-  def getElementSizing(element: HTMLElement): CollapseSizing = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
+  @scala.inline
+  def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
+  
   trait CollapseSizing extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
   }
   object CollapseSizing {
     

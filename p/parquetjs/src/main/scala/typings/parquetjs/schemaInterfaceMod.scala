@@ -3,19 +3,19 @@ package typings.parquetjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaInterfaceMod {
   
-  @js.native
-  trait NestedFieldsInterface extends SchemaInterfaceField {
+  trait NestedFieldsInterface
+    extends StObject
+       with SchemaInterfaceField {
     
-    var fields: SchemaInterface = js.native
+    var fields: SchemaInterface
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var repeated: js.UndefOr[Boolean] = js.native
+    var repeated: js.UndefOr[Boolean] = js.undefined
   }
   object NestedFieldsInterface {
     
@@ -68,18 +68,19 @@ object schemaInterfaceMod {
     }
   }
   
-  @js.native
-  trait SingleFieldInterface extends SchemaInterfaceField {
+  trait SingleFieldInterface
+    extends StObject
+       with SchemaInterfaceField {
     
-    var bitWidth: js.UndefOr[Double] = js.native
+    var bitWidth: js.UndefOr[Double] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var repeated: js.UndefOr[Boolean] = js.native
+    var repeated: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SingleFieldInterface {
     

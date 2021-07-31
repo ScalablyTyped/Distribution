@@ -2,22 +2,20 @@ package typings.vegaExpression
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
     /** The generated code as a string */
-    var code: String = js.native
+    var code: String
     
     /** A hash of all properties referenced within the _fieldvar_ scope */
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
     /** A hash of all properties referenced outside a provided allowed list */
-    var globals: js.Array[String] = js.native
+    var globals: js.Array[String]
   }
   object Code {
     

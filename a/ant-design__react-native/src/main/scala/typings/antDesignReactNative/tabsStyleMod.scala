@@ -5,27 +5,28 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/tabs/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/tabs/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): TabBarStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): TabBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TabBarStyle]
+  
   trait TabBarStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var tab: ViewStyle = js.native
+    var tab: ViewStyle
     
-    var tabs: ViewStyle = js.native
+    var tabs: ViewStyle
     
-    var textStyle: TextStyle = js.native
+    var textStyle: TextStyle
     
-    var underline: ViewStyle = js.native
+    var underline: ViewStyle
   }
   object TabBarStyle {
     

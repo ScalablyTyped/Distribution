@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,35 +21,34 @@ object mod {
     def this(props: AutoSizerProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AutoSizerProps extends StObject {
     
     /** Function responsible for rendering children. */
-    def children(size: Size): ReactNode = js.native
+    def children(size: Size): ReactNode
     
     /** Optional custom CSS class name to attach to root AutoSizer element.    */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Default height to use for initial render; useful for SSR */
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
     /** Default width to use for initial render; useful for SSR */
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
     /** Disable dynamic :height property */
-    var disableHeight: js.UndefOr[Boolean] = js.native
+    var disableHeight: js.UndefOr[Boolean] = js.undefined
     
     /** Disable dynamic :width property */
-    var disableWidth: js.UndefOr[Boolean] = js.native
+    var disableWidth: js.UndefOr[Boolean] = js.undefined
     
     /** Nonce of the inlined stylesheet for Content Security Policy */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     /** Callback to be invoked on-resize */
-    var onResize: js.UndefOr[js.Function1[/* size */ Size, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* size */ Size, Unit]] = js.undefined
     
     /** Optional inline style */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AutoSizerProps {
     
@@ -116,12 +114,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCanaryRequest extends StObject {
   
   /**
     * The name of the canary that you want details for.
     */
-  var Name: CanaryName = js.native
+  var Name: CanaryName
 }
 object GetCanaryRequest {
   

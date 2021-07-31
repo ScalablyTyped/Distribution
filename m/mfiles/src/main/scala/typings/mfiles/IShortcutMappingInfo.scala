@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShortcutMappingInfo extends StObject {
   
-  var ObjectTypeGUID: String = js.native
+  var ObjectTypeGUID: String
   
-  var ObjectTypeID: Double = js.native
+  var ObjectTypeID: Double
   
-  var ObjectTypeName: String = js.native
+  var ObjectTypeName: String
   
-  var ObjectTypeSemanticAliases: ISemanticAliases = js.native
+  var ObjectTypeSemanticAliases: ISemanticAliases
 }
 object IShortcutMappingInfo {
   

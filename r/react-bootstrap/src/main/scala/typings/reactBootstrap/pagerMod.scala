@@ -6,7 +6,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.SelectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerMod {
@@ -35,13 +34,14 @@ object pagerMod {
   trait Pager
     extends Component[PagerProps, js.Object, js.Any]
   
-  @js.native
-  trait PagerProps extends HTMLProps[Pager] {
+  trait PagerProps
+    extends StObject
+       with HTMLProps[Pager] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_PagerProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_PagerProps: js.UndefOr[SelectCallback] = js.undefined
   }
   object PagerProps {
     

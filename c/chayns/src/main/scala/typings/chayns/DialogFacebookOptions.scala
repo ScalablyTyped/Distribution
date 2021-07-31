@@ -2,23 +2,21 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogFacebookOptions extends StObject {
   
-  var button: js.UndefOr[js.Array[DialogFacebookButton]] = js.native
+  var button: js.UndefOr[js.Array[DialogFacebookButton]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var multiselect: js.UndefOr[Double] = js.native
+  var multiselect: js.UndefOr[Double] = js.undefined
   
-  var preSelected: js.Array[Double] = js.native
+  var preSelected: js.Array[Double]
   
-  var quickfind: js.UndefOr[Double] = js.native
+  var quickfind: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object DialogFacebookOptions {
   

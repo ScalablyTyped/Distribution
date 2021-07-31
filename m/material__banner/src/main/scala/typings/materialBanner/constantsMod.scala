@@ -2,7 +2,6 @@ package typings.materialBanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -14,19 +13,25 @@ object constantsMod {
   object CloseReason extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CloseReason with Double] = js.native
+    def apply(value: Double): js.UndefOr[CloseReason & Double] = js.native
     
     @js.native
-    sealed trait PRIMARY extends CloseReason
-    /* 0 */ val PRIMARY: typings.materialBanner.constantsMod.CloseReason.PRIMARY with Double = js.native
+    sealed trait PRIMARY
+      extends StObject
+         with CloseReason
+    /* 0 */ val PRIMARY: typings.materialBanner.constantsMod.CloseReason.PRIMARY & Double = js.native
     
     @js.native
-    sealed trait SECONDARY extends CloseReason
-    /* 1 */ val SECONDARY: typings.materialBanner.constantsMod.CloseReason.SECONDARY with Double = js.native
+    sealed trait SECONDARY
+      extends StObject
+         with CloseReason
+    /* 1 */ val SECONDARY: typings.materialBanner.constantsMod.CloseReason.SECONDARY & Double = js.native
     
     @js.native
-    sealed trait UNSPECIFIED extends CloseReason
-    /* 2 */ val UNSPECIFIED: typings.materialBanner.constantsMod.CloseReason.UNSPECIFIED with Double = js.native
+    sealed trait UNSPECIFIED
+      extends StObject
+         with CloseReason
+    /* 2 */ val UNSPECIFIED: typings.materialBanner.constantsMod.CloseReason.UNSPECIFIED & Double = js.native
   }
   
   object cssClasses {
@@ -136,10 +141,9 @@ object constantsMod {
     def TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait MDCBannerCloseEventDetail extends StObject {
     
-    var reason: CloseReason = js.native
+    var reason: CloseReason
   }
   object MDCBannerCloseEventDetail {
     

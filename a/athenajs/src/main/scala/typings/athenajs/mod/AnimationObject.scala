@@ -3,19 +3,17 @@ package typings.athenajs.mod
 import typings.athenajs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationObject extends StObject {
   
-  var frameDuration: js.UndefOr[Double] = js.native
+  var frameDuration: js.UndefOr[Double] = js.undefined
   
-  var frames: js.Array[Height] = js.native
+  var frames: js.Array[Height]
   
-  var loop: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object AnimationObject {
   

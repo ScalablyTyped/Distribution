@@ -11,8 +11,8 @@ Streaming HTML rewriter.
 | Full name          | parse5-html-rewriting-stream |
 | Keywords           | parse5, parser, stream, streaming, rewritter, rewrite, HTML |
 | # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 3518530 |
+| # dependents       | 11 |
+| # downloads        | 6537285 |
 | # stars            | 0 |
 
 ## Links

@@ -2,28 +2,26 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeErrorOptions extends StObject {
   
   /**
     * An index inside a node's string that should be highlighted as source
     * of error.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Plugin name that created this error. PostCSS will set it automatically.
     */
-  var plugin: js.UndefOr[String] = js.native
+  var plugin: js.UndefOr[String] = js.undefined
   
   /**
     * A word inside a node's string, that should be highlighted as source
     * of error.
     */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object NodeErrorOptions {
   

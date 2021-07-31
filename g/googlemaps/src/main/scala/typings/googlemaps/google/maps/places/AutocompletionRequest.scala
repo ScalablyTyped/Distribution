@@ -6,33 +6,31 @@ import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompletionRequest extends StObject {
   
-  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   
-  var componentRestrictions: js.UndefOr[ComponentRestrictions] = js.native
+  var componentRestrictions: js.UndefOr[ComponentRestrictions] = js.undefined
   
-  var input: String = js.native
+  var input: String
   
-  var location: js.UndefOr[LatLng] = js.native
+  var location: js.UndefOr[LatLng] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The location where {@link AutocompletePrediction#distance_meters} is calculated from.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#AutocompletionRequest.origin Maps JavaScript API}
     */
-  var origin: js.UndefOr[LatLng | LatLngLiteral] = js.native
+  var origin: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var sessionToken: js.UndefOr[AutocompleteSessionToken] = js.native
+  var sessionToken: js.UndefOr[AutocompleteSessionToken] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AutocompletionRequest {
   

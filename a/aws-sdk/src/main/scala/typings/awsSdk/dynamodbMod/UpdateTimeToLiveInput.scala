@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTimeToLiveInput extends StObject {
   
   /**
     * The name of the table to be configured.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
   
   /**
     * Represents the settings used to enable or disable Time to Live for the specified table.
     */
-  var TimeToLiveSpecification: typings.awsSdk.dynamodbMod.TimeToLiveSpecification = js.native
+  var TimeToLiveSpecification: typings.awsSdk.dynamodbMod.TimeToLiveSpecification
 }
 object UpdateTimeToLiveInput {
   

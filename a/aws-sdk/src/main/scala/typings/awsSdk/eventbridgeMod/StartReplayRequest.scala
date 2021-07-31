@@ -2,41 +2,39 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartReplayRequest extends StObject {
   
   /**
     * A description for the replay to start.
     */
-  var Description: js.UndefOr[ReplayDescription] = js.native
+  var Description: js.UndefOr[ReplayDescription] = js.undefined
   
   /**
     * A ReplayDestination object that includes details about the destination for the replay.
     */
-  var Destination: ReplayDestination = js.native
+  var Destination: ReplayDestination
   
   /**
     * A time stamp for the time to stop replaying events. Only events that occurred between the EventStartTime and EventEndTime are replayed.
     */
-  var EventEndTime: Timestamp = js.native
+  var EventEndTime: Timestamp
   
   /**
     * The ARN of the archive to replay events from.
     */
-  var EventSourceArn: Arn = js.native
+  var EventSourceArn: Arn
   
   /**
     * A time stamp for the time to start replaying events. Only events that occurred between the EventStartTime and EventEndTime are replayed.
     */
-  var EventStartTime: Timestamp = js.native
+  var EventStartTime: Timestamp
   
   /**
     * The name of the replay to start.
     */
-  var ReplayName: typings.awsSdk.eventbridgeMod.ReplayName = js.native
+  var ReplayName: typings.awsSdk.eventbridgeMod.ReplayName
 }
 object StartReplayRequest {
   

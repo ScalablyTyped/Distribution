@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.entityMod.Entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockedUsersFeedResponseMod {
@@ -25,16 +24,15 @@ object blockedUsersFeedResponseMod {
     var username: String = js.native
   }
   
-  @js.native
   trait BlockedUsersFeedResponseRootObject extends StObject {
     
-    var blocked_list: js.Array[BlockedUsersFeedResponseBlockedListItem] = js.native
+    var blocked_list: js.Array[BlockedUsersFeedResponseBlockedListItem]
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var page_size: Double = js.native
+    var page_size: Double
     
-    var status: String = js.native
+    var status: String
   }
   object BlockedUsersFeedResponseRootObject {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDocumentPermissionRequest extends StObject {
   
   /**
     * The name of the document for which you are the owner.
     */
-  var Name: DocumentName = js.native
+  var Name: DocumentName
   
   /**
     * The permission type for the document. The permission type can be Share.
     */
-  var PermissionType: DocumentPermissionType = js.native
+  var PermissionType: DocumentPermissionType
 }
 object DescribeDocumentPermissionRequest {
   

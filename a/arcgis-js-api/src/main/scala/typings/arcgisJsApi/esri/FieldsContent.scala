@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.fields
 import typings.arcgisJsApi.esri.content.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FieldsContent
-  extends Content_
+  extends StObject
+     with Content_
      with Content
      with contentContent {
   

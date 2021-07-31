@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSectionContentDetails extends StObject {
   
   /** The channel ids for type multiple_channels. */
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The playlist ids for type single_playlist and multiple_playlists. For singlePlaylist, only one playlistId is allowed. */
-  var playlists: js.UndefOr[js.Array[String]] = js.native
+  var playlists: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ChannelSectionContentDetails {
   

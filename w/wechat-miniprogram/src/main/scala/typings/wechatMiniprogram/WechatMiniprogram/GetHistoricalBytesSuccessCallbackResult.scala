@@ -3,16 +3,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHistoricalBytesSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 返回历史二进制数据 */
-  var histBytes: ArrayBuffer = js.native
+  var histBytes: ArrayBuffer
 }
 object GetHistoricalBytesSuccessCallbackResult {
   

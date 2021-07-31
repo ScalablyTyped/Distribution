@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `workbook.toJSON()`. */
-@js.native
 trait WorkbookData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoSave: js.UndefOr[Boolean] = js.native
+  var autoSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bindings: js.UndefOr[js.Array[BindingData]] = js.native
+  var bindings: js.UndefOr[js.Array[BindingData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationEngineVersion: js.UndefOr[Double] = js.native
+  var calculationEngineVersion: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var chartDataPointTrack: js.UndefOr[Boolean] = js.native
+  var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var comments: js.UndefOr[js.Array[CommentData]] = js.native
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.5]
     */
-  var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.native
+  var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isDirty: js.UndefOr[Boolean] = js.native
+  var isDirty: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var names: js.UndefOr[js.Array[NamedItemData]] = js.native
+  var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.native
+  var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.native
+  var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var previouslySaved: js.UndefOr[Boolean] = js.native
+  var previouslySaved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var properties: js.UndefOr[DocumentPropertiesData] = js.native
+  var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var protection: js.UndefOr[WorkbookProtectionData] = js.native
+  var protection: js.UndefOr[WorkbookProtectionData] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -137,7 +135,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var settings: js.UndefOr[js.Array[SettingData]] = js.native
+  var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
   
   /**
     *
@@ -145,7 +143,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.native
+  var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var slicers: js.UndefOr[js.Array[SlicerData]] = js.native
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   
   /**
     *
@@ -161,7 +159,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var styles: js.UndefOr[js.Array[StyleData]] = js.native
+  var styles: js.UndefOr[js.Array[StyleData]] = js.undefined
   
   /**
     *
@@ -169,7 +167,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.native
+  var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
   
   /**
     *
@@ -177,7 +175,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var tables: js.UndefOr[js.Array[TableData]] = js.native
+  var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
     *
@@ -185,7 +183,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.native
+  var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
   
   /**
     *
@@ -194,7 +192,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.native
+  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -202,7 +200,7 @@ trait WorkbookData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var worksheets: js.UndefOr[js.Array[WorksheetData]] = js.native
+  var worksheets: js.UndefOr[js.Array[WorksheetData]] = js.undefined
 }
 object WorkbookData {
   

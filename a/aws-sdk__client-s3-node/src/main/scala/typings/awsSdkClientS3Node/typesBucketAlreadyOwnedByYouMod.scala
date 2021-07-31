@@ -3,22 +3,22 @@ package typings.awsSdkClientS3Node
 import typings.awsSdkClientS3Node.createBucketExceptionsUnionMod.CreateBucketExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBucketAlreadyOwnedByYouMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BucketAlreadyOwnedByYouDetails> * / any */ @js.native
-  trait BucketAlreadyOwnedByYou extends CreateBucketExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BucketAlreadyOwnedByYouDetails> * / any */ trait BucketAlreadyOwnedByYou
+    extends StObject
+       with CreateBucketExceptionsUnion {
     
-    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyOwnedByYou = js.native
+    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyOwnedByYou
   }
   object BucketAlreadyOwnedByYou {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyOwnedByYou): BucketAlreadyOwnedByYou = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BucketAlreadyOwnedByYou = {
+      val __obj = js.Dynamic.literal(name = "BucketAlreadyOwnedByYou")
       __obj.asInstanceOf[BucketAlreadyOwnedByYou]
     }
     
@@ -30,6 +30,5 @@ object typesBucketAlreadyOwnedByYouMod {
     }
   }
   
-  @js.native
   trait BucketAlreadyOwnedByYouDetails extends StObject
 }

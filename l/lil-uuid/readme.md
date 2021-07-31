@@ -12,7 +12,7 @@ UUID v4 generator and validator (RFC4122 compliant)
 | Keywords           | lil, tiny, micro, uuid, generator, v4, validator, unique, identifier, user |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 2831107 |
+| # downloads        | 3200487 |
 | # stars            | 1 |
 
 ## Links

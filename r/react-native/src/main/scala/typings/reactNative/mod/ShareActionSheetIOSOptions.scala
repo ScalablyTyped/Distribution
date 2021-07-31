@@ -2,22 +2,20 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareActionSheetIOSOptions extends StObject {
   
   /** The activities to exclude from the ActionSheet.
     * For example: ['com.apple.UIKit.activity.PostToTwitter']
     */
-  var excludedActivityTypes: js.UndefOr[js.Array[String]] = js.native
+  var excludedActivityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ShareActionSheetIOSOptions {
   

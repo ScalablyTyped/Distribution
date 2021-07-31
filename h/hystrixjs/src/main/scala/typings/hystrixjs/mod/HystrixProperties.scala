@@ -3,53 +3,51 @@ package typings.hystrixjs.mod
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HystrixProperties extends StObject {
   
   @JSName("hystrix.circuit.errorThresholdPercentage")
-  var hystrixDotcircuitDoterrorThresholdPercentage: js.UndefOr[Double] = js.native
+  var hystrixDotcircuitDoterrorThresholdPercentage: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.circuit.sleepWindowInMilliseconds")
-  var hystrixDotcircuitDotsleepWindowInMilliseconds: js.UndefOr[Double] = js.native
+  var hystrixDotcircuitDotsleepWindowInMilliseconds: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.circuit.volumeThreshold")
-  var hystrixDotcircuitDotvolumeThreshold: js.UndefOr[Double] = js.native
+  var hystrixDotcircuitDotvolumeThreshold: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.circuit.volumeThreshold.forceOverride")
-  var hystrixDotcircuitDotvolumeThresholdDotforceOverride: js.UndefOr[Boolean] = js.native
+  var hystrixDotcircuitDotvolumeThresholdDotforceOverride: js.UndefOr[Boolean] = js.undefined
   
   @JSName("hystrix.circuit.volumeThreshold.override")
-  var hystrixDotcircuitDotvolumeThresholdDotoverride: js.UndefOr[Double] = js.native
+  var hystrixDotcircuitDotvolumeThresholdDotoverride: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.execution.timeoutInMilliseconds")
-  var hystrixDotexecutionDottimeoutInMilliseconds: js.UndefOr[Double] = js.native
+  var hystrixDotexecutionDottimeoutInMilliseconds: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.force.circuit.closed")
-  var hystrixDotforceDotcircuitDotclosed: js.UndefOr[Boolean] = js.native
+  var hystrixDotforceDotcircuitDotclosed: js.UndefOr[Boolean] = js.undefined
   
   @JSName("hystrix.force.circuit.open")
-  var hystrixDotforceDotcircuitDotopen: js.UndefOr[Boolean] = js.native
+  var hystrixDotforceDotcircuitDotopen: js.UndefOr[Boolean] = js.undefined
   
   @JSName("hystrix.metrics.percentile.window.bucketsNumber")
-  var hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber: js.UndefOr[Double] = js.native
+  var hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.metrics.percentile.window.timeInMilliseconds")
-  var hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.native
+  var hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.metrics.statistical.window.bucketsNumber")
-  var hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber: js.UndefOr[Double] = js.native
+  var hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.metrics.statistical.window.timeInMilliseconds")
-  var hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.native
+  var hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.undefined
   
   @JSName("hystrix.promise.implementation")
-  var hystrixDotpromiseDotimplementation: js.UndefOr[PromiseConstructorLike] = js.native
+  var hystrixDotpromiseDotimplementation: js.UndefOr[PromiseConstructorLike] = js.undefined
   
   @JSName("hystrix.request.volume.rejectionThreshold")
-  var hystrixDotrequestDotvolumeDotrejectionThreshold: js.UndefOr[Double] = js.native
+  var hystrixDotrequestDotvolumeDotrejectionThreshold: js.UndefOr[Double] = js.undefined
 }
 object HystrixProperties {
   

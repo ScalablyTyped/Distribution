@@ -2,38 +2,37 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectJog
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The angle of the jog in the line which is measured in degrees.
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * The length of the segment that forms the jog in the line.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the center of the jog, as a percentage measured from the start of the input geometry.
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectJog: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog = js.native
+  var type_CIMGeometricEffectJog: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog
 }
 object CIMGeometricEffectJog {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog): CIMGeometricEffectJog = {
+  def apply(): CIMGeometricEffectJog = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectJog")
     __obj.asInstanceOf[CIMGeometricEffectJog]
   }
   

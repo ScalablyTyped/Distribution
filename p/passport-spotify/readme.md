@@ -10,9 +10,9 @@ Spotify authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-spotify |
 | Keywords           | node, passport, spotify |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 27121 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 32259 |
 | # stars            | 1 |
 
 ## Links

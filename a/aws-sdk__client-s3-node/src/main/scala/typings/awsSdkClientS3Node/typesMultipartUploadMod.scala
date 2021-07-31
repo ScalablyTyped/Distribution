@@ -11,43 +11,41 @@ import typings.awsSdkClientS3Node.typesOwnerMod.UnmarshalledOwner
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMultipartUploadMod {
   
-  @js.native
   trait MultipartUpload extends StObject {
     
     /**
       * <p>Date and time at which the multipart upload was initiated.</p>
       */
-    var Initiated: js.UndefOr[Date | String | Double] = js.native
+    var Initiated: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>Identifies who initiated the multipart upload.</p>
       */
-    var Initiator: js.UndefOr[typings.awsSdkClientS3Node.typesInitiatorMod.Initiator] = js.native
+    var Initiator: js.UndefOr[typings.awsSdkClientS3Node.typesInitiatorMod.Initiator] = js.undefined
     
     /**
       * <p>Key of the object for which the multipart upload was initiated.</p>
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.native
+    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.undefined
     
     /**
       * <p>The class of storage used to store the object.</p>
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
     
     /**
       * <p>Upload ID that identifies the multipart upload.</p>
       */
-    var UploadId: js.UndefOr[String] = js.native
+    var UploadId: js.UndefOr[String] = js.undefined
   }
   object MultipartUpload {
     
@@ -98,26 +96,27 @@ object typesMultipartUploadMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMultipartUpload extends MultipartUpload {
+  trait UnmarshalledMultipartUpload
+    extends StObject
+       with MultipartUpload {
     
     /**
       * <p>Date and time at which the multipart upload was initiated.</p>
       */
     @JSName("Initiated")
-    var Initiated_UnmarshalledMultipartUpload: js.UndefOr[Date] = js.native
+    var Initiated_UnmarshalledMultipartUpload: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Identifies who initiated the multipart upload.</p>
       */
     @JSName("Initiator")
-    var Initiator_UnmarshalledMultipartUpload: js.UndefOr[UnmarshalledInitiator] = js.native
+    var Initiator_UnmarshalledMultipartUpload: js.UndefOr[UnmarshalledInitiator] = js.undefined
     
     /**
       * _Owner shape
       */
     @JSName("Owner")
-    var Owner_UnmarshalledMultipartUpload: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner_UnmarshalledMultipartUpload: js.UndefOr[UnmarshalledOwner] = js.undefined
   }
   object UnmarshalledMultipartUpload {
     

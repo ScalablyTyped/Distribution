@@ -2,41 +2,39 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceSpecificCredentialMetadata extends StObject {
   
   /**
     * The date and time, in ISO 8601 date-time format, when the service-specific credential were created.
     */
-  var CreateDate: dateType = js.native
+  var CreateDate: dateType
   
   /**
     * The name of the service associated with the service-specific credential.
     */
-  var ServiceName: serviceName = js.native
+  var ServiceName: serviceName
   
   /**
     * The unique identifier for the service-specific credential.
     */
-  var ServiceSpecificCredentialId: serviceSpecificCredentialId = js.native
+  var ServiceSpecificCredentialId: serviceSpecificCredentialId
   
   /**
     * The generated user name for the service-specific credential.
     */
-  var ServiceUserName: serviceUserName = js.native
+  var ServiceUserName: serviceUserName
   
   /**
     * The status of the service-specific credential. Active means that the key is valid for API calls, while Inactive means it is not.
     */
-  var Status: statusType = js.native
+  var Status: statusType
   
   /**
     * The name of the IAM user associated with the service-specific credential.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object ServiceSpecificCredentialMetadata {
   

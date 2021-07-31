@@ -3,15 +3,13 @@ package typings.tslint.anon
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Files extends StObject {
   
-  var files: js.Array[String] = js.native
+  var files: js.Array[String]
   
-  var program: js.UndefOr[Program] = js.native
+  var program: js.UndefOr[Program] = js.undefined
 }
 object Files {
   

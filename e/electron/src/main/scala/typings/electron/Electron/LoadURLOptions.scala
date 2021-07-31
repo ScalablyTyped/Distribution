@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadURLOptions extends StObject {
   
   /**
@@ -13,24 +11,24 @@ trait LoadURLOptions extends StObject {
     * This is needed only if the specified `url` is a data url and needs to load other
     * files.
     */
-  var baseURLForDataURL: js.UndefOr[String] = js.native
+  var baseURLForDataURL: js.UndefOr[String] = js.undefined
   
   /**
     * Extra headers separated by "\n"
     */
-  var extraHeaders: js.UndefOr[String] = js.native
+  var extraHeaders: js.UndefOr[String] = js.undefined
   
   /**
     * An HTTP Referrer url.
     */
-  var httpReferrer: js.UndefOr[String | Referrer] = js.native
+  var httpReferrer: js.UndefOr[String | Referrer] = js.undefined
   
-  var postData: js.UndefOr[js.Array[UploadBlob | UploadFile | UploadRawData]] = js.native
+  var postData: js.UndefOr[js.Array[UploadBlob | UploadFile | UploadRawData]] = js.undefined
   
   /**
     * A user agent originating the request.
     */
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
 }
 object LoadURLOptions {
   

@@ -5,14 +5,15 @@ import typings.serverless.pluginMod.Plugin
 import typings.serverless.pluginMod.PluginStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginManagerMod {
   
   @JSImport("serverless/classes/PluginManager", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PluginManager {
+  class ^ protected ()
+    extends StObject
+       with PluginManager {
     def this(serverless: typings.serverless.mod.^) = this()
   }
   

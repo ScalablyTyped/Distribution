@@ -7,99 +7,85 @@ import typings.hibp.anon.Truncate
 import typings.hibp.anon.UserAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hibp", "breach")
+  @JSImport("hibp", JSImport.Namespace)
   @js.native
-  def breach(breachName: String): js.Promise[Breach_ | Null] = js.native
-  @JSImport("hibp", "breach")
-  @js.native
-  def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hibp", "breachedAccount")
-  @js.native
-  def breachedAccount(account: String): js.Promise[js.Array[Breach_] | Null] = js.native
-  @JSImport("hibp", "breachedAccount")
-  @js.native
-  def breachedAccount(account: String, options: ApiKey): js.Promise[js.Array[Breach_] | Null] = js.native
+  @scala.inline
+  def breach(breachName: String): js.Promise[Breach_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Breach_ | Null]]
+  @scala.inline
+  def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Breach_ | Null]]
   
-  @JSImport("hibp", "breaches")
-  @js.native
-  def breaches(): js.Promise[js.Array[Breach_]] = js.native
-  @JSImport("hibp", "breaches")
-  @js.native
-  def breaches(options: Domain): js.Promise[js.Array[Breach_]] = js.native
+  @scala.inline
+  def breachedAccount(account: String): js.Promise[js.Array[Breach_] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("breachedAccount")(account.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Breach_] | Null]]
+  @scala.inline
+  def breachedAccount(account: String, options: ApiKey): js.Promise[js.Array[Breach_] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("breachedAccount")(account.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Breach_] | Null]]
   
-  @JSImport("hibp", "dataClasses")
-  @js.native
-  def dataClasses(): js.Promise[js.Array[String] | Null] = js.native
-  @JSImport("hibp", "dataClasses")
-  @js.native
-  def dataClasses(options: BaseUrl): js.Promise[js.Array[String] | Null] = js.native
+  @scala.inline
+  def breaches(): js.Promise[js.Array[Breach_]] = ^.asInstanceOf[js.Dynamic].applyDynamic("breaches")().asInstanceOf[js.Promise[js.Array[Breach_]]]
+  @scala.inline
+  def breaches(options: Domain): js.Promise[js.Array[Breach_]] = ^.asInstanceOf[js.Dynamic].applyDynamic("breaches")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Breach_]]]
   
-  @JSImport("hibp", "pasteAccount")
-  @js.native
-  def pasteAccount(email: String): js.Promise[js.Array[Paste] | Null] = js.native
-  @JSImport("hibp", "pasteAccount")
-  @js.native
-  def pasteAccount(email: String, options: UserAgent): js.Promise[js.Array[Paste] | Null] = js.native
+  @scala.inline
+  def dataClasses(): js.Promise[js.Array[String] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataClasses")().asInstanceOf[js.Promise[js.Array[String] | Null]]
+  @scala.inline
+  def dataClasses(options: BaseUrl): js.Promise[js.Array[String] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataClasses")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String] | Null]]
   
-  @JSImport("hibp", "pwnedPassword")
-  @js.native
-  def pwnedPassword(password: String): js.Promise[Double] = js.native
-  @JSImport("hibp", "pwnedPassword")
-  @js.native
-  def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double] = js.native
+  @scala.inline
+  def pasteAccount(email: String): js.Promise[js.Array[Paste] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteAccount")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Paste] | Null]]
+  @scala.inline
+  def pasteAccount(email: String, options: UserAgent): js.Promise[js.Array[Paste] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("pasteAccount")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Paste] | Null]]
   
-  @JSImport("hibp", "pwnedPasswordRange")
-  @js.native
-  def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]] = js.native
-  @JSImport("hibp", "pwnedPasswordRange")
-  @js.native
-  def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]] = js.native
+  @scala.inline
+  def pwnedPassword(password: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("hibp", "search")
-  @js.native
-  def search(account: String): js.Promise[SearchResults] = js.native
-  @JSImport("hibp", "search")
-  @js.native
-  def search(account: String, breachOptions: Truncate): js.Promise[SearchResults] = js.native
+  @scala.inline
+  def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
+  @scala.inline
+  def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
   
-  @js.native
+  @scala.inline
+  def search(account: String): js.Promise[SearchResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResults]]
+  @scala.inline
+  def search(account: String, breachOptions: Truncate): js.Promise[SearchResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any], breachOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchResults]]
+  
   trait Breach_ extends StObject {
     
-    var AddedDate: String = js.native
+    var AddedDate: String
     
-    var BreachDate: String = js.native
+    var BreachDate: String
     
-    var DataClasses: js.Array[String] = js.native
+    var DataClasses: js.Array[String]
     
-    var Description: String = js.native
+    var Description: String
     
-    var Domain: String = js.native
+    var Domain: String
     
-    var IsFabricated: Boolean = js.native
+    var IsFabricated: Boolean
     
-    var IsRetired: Boolean = js.native
+    var IsRetired: Boolean
     
-    var IsSensitive: Boolean = js.native
+    var IsSensitive: Boolean
     
-    var IsSpamList: Boolean = js.native
+    var IsSpamList: Boolean
     
-    var IsVerified: Boolean = js.native
+    var IsVerified: Boolean
     
-    var LogoPath: String = js.native
+    var LogoPath: String
     
-    var ModifiedDate: String = js.native
+    var ModifiedDate: String
     
-    var Name: String = js.native
+    var Name: String
     
-    var PwnCount: Double = js.native
+    var PwnCount: Double
     
-    var Title: String = js.native
+    var Title: String
   }
   object Breach_ {
     
@@ -178,83 +164,134 @@ object mod {
     }
   }
   
-  @js.native
   trait HIBP extends StObject {
     
-    def breach(breachName: String): js.Promise[Breach_ | Null] = js.native
-    def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null] = js.native
+    def breach(breachName: String): js.Promise[Breach_ | Null]
+    def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null]
     @JSName("breach")
     var breach_Original: js.Function2[
         /* breachName */ String, 
         /* options */ js.UndefOr[BaseUrl], 
         js.Promise[Breach_ | Null]
-      ] = js.native
+      ]
     
-    def breachedAccount(account: String): js.Promise[js.Array[Breach_] | Null] = js.native
-    def breachedAccount(account: String, options: ApiKey): js.Promise[js.Array[Breach_] | Null] = js.native
+    def breachedAccount(account: String): js.Promise[js.Array[Breach_] | Null]
+    def breachedAccount(account: String, options: ApiKey): js.Promise[js.Array[Breach_] | Null]
     @JSName("breachedAccount")
     var breachedAccount_Original: js.Function2[
         /* account */ String, 
         /* options */ js.UndefOr[ApiKey], 
         js.Promise[js.Array[Breach_] | Null]
-      ] = js.native
+      ]
     
-    def breaches(): js.Promise[js.Array[Breach_]] = js.native
-    def breaches(options: Domain): js.Promise[js.Array[Breach_]] = js.native
+    def breaches(): js.Promise[js.Array[Breach_]]
+    def breaches(options: Domain): js.Promise[js.Array[Breach_]]
     @JSName("breaches")
-    var breaches_Original: js.Function1[/* options */ js.UndefOr[Domain], js.Promise[js.Array[Breach_]]] = js.native
+    var breaches_Original: js.Function1[/* options */ js.UndefOr[Domain], js.Promise[js.Array[Breach_]]]
     
-    def dataClasses(): js.Promise[js.Array[String] | Null] = js.native
-    def dataClasses(options: BaseUrl): js.Promise[js.Array[String] | Null] = js.native
+    def dataClasses(): js.Promise[js.Array[String] | Null]
+    def dataClasses(options: BaseUrl): js.Promise[js.Array[String] | Null]
     @JSName("dataClasses")
-    var dataClasses_Original: js.Function1[/* options */ js.UndefOr[BaseUrl], js.Promise[js.Array[String] | Null]] = js.native
+    var dataClasses_Original: js.Function1[/* options */ js.UndefOr[BaseUrl], js.Promise[js.Array[String] | Null]]
     
-    def pasteAccount(email: String): js.Promise[js.Array[Paste] | Null] = js.native
-    def pasteAccount(email: String, options: UserAgent): js.Promise[js.Array[Paste] | Null] = js.native
+    def pasteAccount(email: String): js.Promise[js.Array[Paste] | Null]
+    def pasteAccount(email: String, options: UserAgent): js.Promise[js.Array[Paste] | Null]
     @JSName("pasteAccount")
     var pasteAccount_Original: js.Function2[
         /* email */ String, 
         /* options */ js.UndefOr[UserAgent], 
         js.Promise[js.Array[Paste] | Null]
-      ] = js.native
+      ]
     
-    def pwnedPassword(password: String): js.Promise[Double] = js.native
-    def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double] = js.native
+    def pwnedPassword(password: String): js.Promise[Double]
+    def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double]
     
-    def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]] = js.native
-    def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]] = js.native
+    def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]]
+    def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]]
     @JSName("pwnedPasswordRange")
     var pwnedPasswordRange_Original: js.Function2[
         /* prefix */ String, 
         /* options */ js.UndefOr[BaseUrl], 
         js.Promise[js.Array[PwnedPasswordSuffix]]
-      ] = js.native
+      ]
     
     @JSName("pwnedPassword")
-    var pwnedPassword_Original: js.Function2[/* password */ String, /* options */ js.UndefOr[BaseUrl], js.Promise[Double]] = js.native
+    var pwnedPassword_Original: js.Function2[/* password */ String, /* options */ js.UndefOr[BaseUrl], js.Promise[Double]]
     
-    def search(account: String): js.Promise[SearchResults] = js.native
-    def search(account: String, breachOptions: Truncate): js.Promise[SearchResults] = js.native
+    def search(account: String): js.Promise[SearchResults]
+    def search(account: String, breachOptions: Truncate): js.Promise[SearchResults]
     @JSName("search")
     var search_Original: js.Function2[
         /* account */ String, 
         /* breachOptions */ js.UndefOr[Truncate], 
         js.Promise[SearchResults]
-      ] = js.native
+      ]
+  }
+  object HIBP {
+    
+    @scala.inline
+    def apply(
+      breach: (/* breachName */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Breach_ | Null],
+      breachedAccount: (/* account */ String, /* options */ js.UndefOr[ApiKey]) => js.Promise[js.Array[Breach_] | Null],
+      breaches: /* options */ js.UndefOr[Domain] => js.Promise[js.Array[Breach_]],
+      dataClasses: /* options */ js.UndefOr[BaseUrl] => js.Promise[js.Array[String] | Null],
+      pasteAccount: (/* email */ String, /* options */ js.UndefOr[UserAgent]) => js.Promise[js.Array[Paste] | Null],
+      pwnedPassword: (/* password */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Double],
+      pwnedPasswordRange: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[js.Array[PwnedPasswordSuffix]],
+      search: (/* account */ String, /* breachOptions */ js.UndefOr[Truncate]) => js.Promise[SearchResults]
+    ): HIBP = {
+      val __obj = js.Dynamic.literal(breach = js.Any.fromFunction2(breach), breachedAccount = js.Any.fromFunction2(breachedAccount), breaches = js.Any.fromFunction1(breaches), dataClasses = js.Any.fromFunction1(dataClasses), pasteAccount = js.Any.fromFunction2(pasteAccount), pwnedPassword = js.Any.fromFunction2(pwnedPassword), pwnedPasswordRange = js.Any.fromFunction2(pwnedPasswordRange), search = js.Any.fromFunction2(search))
+      __obj.asInstanceOf[HIBP]
+    }
+    
+    @scala.inline
+    implicit class HIBPMutableBuilder[Self <: HIBP] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBreach(value: (/* breachName */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Breach_ | Null]): Self = StObject.set(x, "breach", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setBreachedAccount(
+        value: (/* account */ String, /* options */ js.UndefOr[ApiKey]) => js.Promise[js.Array[Breach_] | Null]
+      ): Self = StObject.set(x, "breachedAccount", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setBreaches(value: /* options */ js.UndefOr[Domain] => js.Promise[js.Array[Breach_]]): Self = StObject.set(x, "breaches", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDataClasses(value: /* options */ js.UndefOr[BaseUrl] => js.Promise[js.Array[String] | Null]): Self = StObject.set(x, "dataClasses", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPasteAccount(
+        value: (/* email */ String, /* options */ js.UndefOr[UserAgent]) => js.Promise[js.Array[Paste] | Null]
+      ): Self = StObject.set(x, "pasteAccount", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPwnedPassword(value: (/* password */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Double]): Self = StObject.set(x, "pwnedPassword", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPwnedPasswordRange(
+        value: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[js.Array[PwnedPasswordSuffix]]
+      ): Self = StObject.set(x, "pwnedPasswordRange", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSearch(
+        value: (/* account */ String, /* breachOptions */ js.UndefOr[Truncate]) => js.Promise[SearchResults]
+      ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait Paste extends StObject {
     
-    var Date: String = js.native
+    var Date: String
     
-    var EmailCount: Double = js.native
+    var EmailCount: Double
     
-    var Id: String = js.native
+    var Id: String
     
-    var Source: String = js.native
+    var Source: String
     
-    var Title: String = js.native
+    var Title: String
   }
   object Paste {
     
@@ -284,12 +321,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PwnedPasswordSuffix extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object PwnedPasswordSuffix {
     
@@ -310,18 +346,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchResults extends StObject {
     
-    var breaches: js.Array[Breach_] | Null = js.native
+    var breaches: js.Array[Breach_] | Null
     
-    var pastes: js.Array[Paste] | Null = js.native
+    var pastes: js.Array[Paste] | Null
   }
   object SearchResults {
     
     @scala.inline
     def apply(): SearchResults = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(breaches = null, pastes = null)
       __obj.asInstanceOf[SearchResults]
     }
     

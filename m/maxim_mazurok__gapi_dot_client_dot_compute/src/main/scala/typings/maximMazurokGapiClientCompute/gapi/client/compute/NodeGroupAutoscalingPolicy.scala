@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupAutoscalingPolicy extends StObject {
   
   /** The maximum number of nodes that the group should have. Must be set if autoscaling is enabled. Maximum value allowed is 100. */
-  var maxNodes: js.UndefOr[Double] = js.native
+  var maxNodes: js.UndefOr[Double] = js.undefined
   
   /** The minimum number of nodes that the group should have. */
-  var minNodes: js.UndefOr[Double] = js.native
+  var minNodes: js.UndefOr[Double] = js.undefined
   
   /** The autoscaling mode. Set to one of: ON, OFF, or ONLY_SCALE_OUT. For more information, see  Autoscaler modes. */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object NodeGroupAutoscalingPolicy {
   

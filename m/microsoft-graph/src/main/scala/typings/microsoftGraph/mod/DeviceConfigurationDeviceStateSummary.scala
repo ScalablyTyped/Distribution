@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceConfigurationDeviceStateSummary extends Entity {
+trait DeviceConfigurationDeviceStateSummary
+  extends StObject
+     with Entity {
   
   // Number of compliant devices
-  var compliantDeviceCount: js.UndefOr[Double] = js.native
+  var compliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of conflict devices
-  var conflictDeviceCount: js.UndefOr[Double] = js.native
+  var conflictDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of error devices
-  var errorDeviceCount: js.UndefOr[Double] = js.native
+  var errorDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of NonCompliant devices
-  var nonCompliantDeviceCount: js.UndefOr[Double] = js.native
+  var nonCompliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of not applicable devices
-  var notApplicableDeviceCount: js.UndefOr[Double] = js.native
+  var notApplicableDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of remediated devices
-  var remediatedDeviceCount: js.UndefOr[Double] = js.native
+  var remediatedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of unknown devices
-  var unknownDeviceCount: js.UndefOr[Double] = js.native
+  var unknownDeviceCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceConfigurationDeviceStateSummary {
   

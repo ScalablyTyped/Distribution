@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object Annotation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation.create")
-  @js.native
-  def create(model: IModel): Annotation = js.native
+  @scala.inline
+  def create(model: IModel): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Annotation]
   
   /**
     * Creates and returns a new Annotation instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object Annotation {
     * of the parent DomainModel element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation.createIn")
-  @js.native
-  def createIn(container: DomainModel): Annotation = js.native
+  @scala.inline
+  def createIn(container: DomainModel): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Annotation]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation.structureTypeName")

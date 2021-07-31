@@ -2,31 +2,31 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILineStringGeometryAccess extends IFreezable {
+trait ILineStringGeometryAccess
+  extends StObject
+     with IFreezable {
   
-  def get(index: Double): js.Array[Double] = js.native
+  def get(index: Double): js.Array[Double]
   
-  def getChildGeometry(index: Double): IPointGeometryAccess = js.native
+  def getChildGeometry(index: Double): IPointGeometryAccess
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getClosest(anchorPosition: js.Array[Double]): js.Object
   
-  def getCoordinates(): js.Array[js.Array[Double]] = js.native
+  def getCoordinates(): js.Array[js.Array[Double]]
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
+  def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess
   
-  def remove(index: Double): js.Array[Double] = js.native
+  def remove(index: Double): js.Array[Double]
   
-  def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess = js.native
+  def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess
   
-  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
+  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess
   
-  def splice(index: Double, length: Double): js.Array[js.Array[Double]] = js.native
+  def splice(index: Double, length: Double): js.Array[js.Array[Double]]
 }
 object ILineStringGeometryAccess {
   

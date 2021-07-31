@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.GetEventListenersReques
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.GetEventListenersResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetEventListenersResponse extends StObject {
   
-  var paramsType: js.Array[GetEventListenersRequest] = js.native
+  var paramsType: js.Array[GetEventListenersRequest]
   
-  var returnType: GetEventListenersResponse = js.native
+  var returnType: GetEventListenersResponse
 }
 object ReturnTypeGetEventListenersResponse {
   

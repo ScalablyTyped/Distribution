@@ -2,14 +2,12 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeedOnlyInitializerArgs extends StObject {
   
   /** Random number generator seed. */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
 }
 object SeedOnlyInitializerArgs {
   

@@ -3,27 +3,25 @@ package typings.pulumiAws.outputMod.lb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetListenerDefaultActionAuthenticateCognito extends StObject {
   
-  var authenticationRequestExtraParams: StringDictionary[String] = js.native
+  var authenticationRequestExtraParams: StringDictionary[String]
   
-  var onUnauthenticatedRequest: String = js.native
+  var onUnauthenticatedRequest: String
   
-  var scope: String = js.native
+  var scope: String
   
-  var sessionCookieName: String = js.native
+  var sessionCookieName: String
   
-  var sessionTimeout: Double = js.native
+  var sessionTimeout: Double
   
-  var userPoolArn: String = js.native
+  var userPoolArn: String
   
-  var userPoolClientId: String = js.native
+  var userPoolClientId: String
   
-  var userPoolDomain: String = js.native
+  var userPoolDomain: String
 }
 object GetListenerDefaultActionAuthenticateCognito {
   

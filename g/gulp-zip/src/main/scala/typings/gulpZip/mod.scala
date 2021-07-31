@@ -4,26 +4,26 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-zip", JSImport.Namespace)
-  @js.native
-  def apply(filename: String): ReadStream = js.native
-  @JSImport("gulp-zip", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, options: GulpZipOptions): ReadStream = js.native
+  @scala.inline
+  def apply(filename: String): ReadStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadStream]
+  @scala.inline
+  def apply(filename: String, options: GulpZipOptions): ReadStream = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
   
+  @JSImport("gulp-zip", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait GulpZipOptions extends StObject {
     
     /**
       * Compress
       * @default true
       */
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the modification timestamp for all files added to the archive.
@@ -34,7 +34,7 @@ object mod {
       *
       * @default undefined
       */
-    var modifiedTime: js.UndefOr[Date] = js.native
+    var modifiedTime: js.UndefOr[Date] = js.undefined
   }
   object GulpZipOptions {
     

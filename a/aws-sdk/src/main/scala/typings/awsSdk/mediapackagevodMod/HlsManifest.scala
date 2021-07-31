@@ -2,10 +2,8 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsManifest extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait HlsManifest extends StObject {
   "SCTE35_ENHANCED" generates ad markers and blackout tags based on SCTE-35
   messages in the input source.
     */
-  var AdMarkers: js.UndefOr[typings.awsSdk.mediapackagevodMod.AdMarkers] = js.native
+  var AdMarkers: js.UndefOr[typings.awsSdk.mediapackagevodMod.AdMarkers] = js.undefined
   
   /**
     * When enabled, an I-Frame only stream will be included in the output.
     */
-  var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.native
+  var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined
   
   /**
     * An optional string to include in the name of the manifest.
     */
-  var ManifestName: js.UndefOr[string] = js.native
+  var ManifestName: js.UndefOr[string] = js.undefined
   
   /**
     * The interval (in seconds) between each EXT-X-PROGRAM-DATE-TIME tag
@@ -39,14 +37,14 @@ trait HlsManifest extends StObject {
   of this parameter, if any ID3 Timed Metadata is found in HTTP Live Streaming (HLS) input,
   it will be passed through to HLS output.
     */
-  var ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.native
+  var ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * When enabled, the EXT-X-KEY tag will be repeated in output manifests.
     */
-  var RepeatExtXKey: js.UndefOr[boolean] = js.native
+  var RepeatExtXKey: js.UndefOr[boolean] = js.undefined
   
-  var StreamSelection: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamSelection] = js.native
+  var StreamSelection: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamSelection] = js.undefined
 }
 object HlsManifest {
   

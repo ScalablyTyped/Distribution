@@ -2,26 +2,24 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserveResponse extends StObject {
   
   // 相交区域占目标节点的布局区域的比例
-  var boundingClientRect: RectArea = js.native
+  var boundingClientRect: RectArea
   
-  var dataset: js.Any = js.native
+  var dataset: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var intersectionRatio: Double = js.native
+  var intersectionRatio: Double
   
-  var intersectionRect: RectArea = js.native
+  var intersectionRect: RectArea
   
-  var relativeRect: RectArea = js.native
+  var relativeRect: RectArea
   
-  var time: Double = js.native
+  var time: Double
 }
 object ObserveResponse {
   

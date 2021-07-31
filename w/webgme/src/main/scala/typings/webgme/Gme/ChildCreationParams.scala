@@ -2,15 +2,13 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildCreationParams extends StObject {
   
-  var baseId: String = js.native
+  var baseId: String
   
-  var parentId: String = js.native
+  var parentId: String
 }
 object ChildCreationParams {
   

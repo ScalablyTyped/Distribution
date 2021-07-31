@@ -2,31 +2,29 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Defined Variable configuration.
   */
-@js.native
 trait SchemaUserDefinedVariableConfiguration extends StObject {
   
   /**
     * Data type for the variable. This is a required field.
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /**
     * User-friendly name for the variable which will appear in reports. This is
     * a required field, must be less than 64 characters long, and cannot
     * contain the following characters: &quot;&quot;&lt;&gt;&quot;.
     */
-  var reportName: js.UndefOr[String] = js.native
+  var reportName: js.UndefOr[String] = js.undefined
   
   /**
     * Variable name in the tag. This is a required field.
     */
-  var variableType: js.UndefOr[String] = js.native
+  var variableType: js.UndefOr[String] = js.undefined
 }
 object SchemaUserDefinedVariableConfiguration {
   

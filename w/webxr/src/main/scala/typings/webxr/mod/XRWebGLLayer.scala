@@ -5,7 +5,6 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webxr", "XRWebGLLayer")
@@ -31,7 +30,10 @@ class XRWebGLLayer protected () extends StObject {
 /* static members */
 object XRWebGLLayer {
   
-  @JSImport("webxr", "XRWebGLLayer.getNativeFramebufferScaleFactor")
+  @JSImport("webxr", "XRWebGLLayer")
   @js.native
-  def getNativeFramebufferScaleFactor(session: XRSession): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getNativeFramebufferScaleFactor(session: XRSession): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFramebufferScaleFactor")(session.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

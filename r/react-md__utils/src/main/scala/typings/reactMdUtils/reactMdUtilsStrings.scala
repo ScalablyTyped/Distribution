@@ -13,19 +13,21 @@ import typings.reactMdUtils.typesMod.VerticalPosition
 import typings.reactMdUtils.useModeDetectionMod.UserInteractionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdUtilsStrings {
   
   @js.native
-  sealed trait AAA extends ContrastRatioCompliance
+  sealed trait AAA
+    extends StObject
+       with ContrastRatioCompliance
   @scala.inline
   def AAA: AAA = "AAA".asInstanceOf[AAA]
   
   @js.native
   sealed trait above
-    extends SimplePosition
+    extends StObject
+       with SimplePosition
        with VerticalPosition
   @scala.inline
   def above: above = "above".asInstanceOf[above]
@@ -46,52 +48,67 @@ object reactMdUtilsStrings {
   def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
   
   @js.native
-  sealed trait auto extends PositionWidth
+  sealed trait auto
+    extends StObject
+       with PositionWidth
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait below
-    extends SimplePosition
+    extends StObject
+       with SimplePosition
        with VerticalPosition
   @scala.inline
   def below: below = "below".asInstanceOf[below]
   
   @js.native
-  sealed trait bottom extends VerticalPosition
+  sealed trait bottom
+    extends StObject
+       with VerticalPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait cancel extends TouchTypes
+  sealed trait cancel
+    extends StObject
+       with TouchTypes
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait center
-    extends HorizontalPosition
+    extends StObject
+       with HorizontalPosition
        with VerticalPosition
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait decrement extends FocusType
+  sealed trait decrement
+    extends StObject
+       with FocusType
   @scala.inline
   def decrement: decrement = "decrement".asInstanceOf[decrement]
   
   @js.native
-  sealed trait end extends TouchTypes
+  sealed trait end
+    extends StObject
+       with TouchTypes
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait equal extends PositionWidth
+  sealed trait equal
+    extends StObject
+       with PositionWidth
   @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
   sealed trait first
-    extends FocusType
+    extends StObject
+       with FocusType
        with _Focus
   @scala.inline
   def first: first = "first".asInstanceOf[first]
@@ -102,51 +119,67 @@ object reactMdUtilsStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait height extends SizingType
+  sealed trait height
+    extends StObject
+       with SizingType
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait increment extends FocusType
+  sealed trait increment
+    extends StObject
+       with FocusType
   @scala.inline
   def increment: increment = "increment".asInstanceOf[increment]
   
   @js.native
-  sealed trait `inner-left` extends HorizontalPosition
+  sealed trait `inner-left`
+    extends StObject
+       with HorizontalPosition
   @scala.inline
   def `inner-left`: `inner-left` = "inner-left".asInstanceOf[`inner-left`]
   
   @js.native
-  sealed trait `inner-right` extends HorizontalPosition
+  sealed trait `inner-right`
+    extends StObject
+       with HorizontalPosition
   @scala.inline
   def `inner-right`: `inner-right` = "inner-right".asInstanceOf[`inner-right`]
   
   @js.native
-  sealed trait keyboard extends UserInteractionMode
+  sealed trait keyboard
+    extends StObject
+       with UserInteractionMode
   @scala.inline
   def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
-  sealed trait large extends ContrastRatioCompliance
+  sealed trait large
+    extends StObject
+       with ContrastRatioCompliance
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait last
-    extends FocusType
+    extends StObject
+       with FocusType
        with _Focus
   @scala.inline
   def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
-    extends HorizontalPosition
+    extends StObject
+       with HorizontalPosition
        with SimplePosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait ltr extends WritingDirection
+  sealed trait ltr
+    extends StObject
+       with WritingDirection
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
@@ -161,7 +194,9 @@ object reactMdUtilsStrings {
   def `max-content`: `max-content` = "max-content".asInstanceOf[`max-content`]
   
   @js.native
-  sealed trait min extends PositionWidth
+  sealed trait min
+    extends StObject
+       with PositionWidth
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -171,49 +206,66 @@ object reactMdUtilsStrings {
   def `min-content`: `min-content` = "min-content".asInstanceOf[`min-content`]
   
   @js.native
-  sealed trait mouse extends UserInteractionMode
+  sealed trait mouse
+    extends StObject
+       with UserInteractionMode
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
-  sealed trait move extends TouchTypes
+  sealed trait move
+    extends StObject
+       with TouchTypes
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait normal extends ContrastRatioCompliance
+  sealed trait normal
+    extends StObject
+       with ContrastRatioCompliance
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait right
-    extends HorizontalPosition
+    extends StObject
+       with HorizontalPosition
        with SimplePosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rtl extends WritingDirection
+  sealed trait rtl
+    extends StObject
+       with WritingDirection
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait start extends TouchTypes
+  sealed trait start
+    extends StObject
+       with TouchTypes
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait top extends VerticalPosition
+  sealed trait top
+    extends StObject
+       with VerticalPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait touch extends UserInteractionMode
+  sealed trait touch
+    extends StObject
+       with UserInteractionMode
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
-  sealed trait width extends SizingType
+  sealed trait width
+    extends StObject
+       with SizingType
   @scala.inline
   def width: width = "width".asInstanceOf[width]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobTaggingResult extends StObject {
   
   /**
     * The set of tags associated with the S3 Batch Operations job.
     */
-  var Tags: js.UndefOr[S3TagSet] = js.native
+  var Tags: js.UndefOr[S3TagSet] = js.undefined
 }
 object GetJobTaggingResult {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceLimit extends StObject {
   
   /**
     * Specifies whether the account has met the quota that corresponds to the metric specified by the UsageByAccount.type field in the response.
     */
-  var isServiceLimited: js.UndefOr[boolean] = js.native
+  var isServiceLimited: js.UndefOr[boolean] = js.undefined
   
   /**
     * The unit of measurement for the value specified by the value field.
     */
-  var unit: js.UndefOr[Unit] = js.native
+  var unit: js.UndefOr[Unit] = js.undefined
   
   /**
     * The value for the metric specified by the UsageByAccount.type field in the response.
     */
-  var value: js.UndefOr[long] = js.native
+  var value: js.UndefOr[long] = js.undefined
 }
 object ServiceLimit {
   

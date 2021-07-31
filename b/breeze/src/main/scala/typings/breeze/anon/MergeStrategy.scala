@@ -3,15 +3,13 @@ package typings.breeze.anon
 import typings.breeze.breeze.MergeStrategySymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeStrategy extends StObject {
   
-  var mergeStrategy: js.UndefOr[MergeStrategySymbol] = js.native
+  var mergeStrategy: js.UndefOr[MergeStrategySymbol] = js.undefined
   
-  var metadataVersionFn: js.UndefOr[js.Function1[/* any */ js.Any, Unit]] = js.native
+  var metadataVersionFn: js.UndefOr[js.Function1[/* any */ js.Any, Unit]] = js.undefined
 }
 object MergeStrategy {
   

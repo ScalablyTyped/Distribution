@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
   /** Represents a list of available feature names for a given version. */
-  var availableFeatures: js.UndefOr[js.Array[String]] = js.native
+  var availableFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether this is currently the default version for Cloud Data Fusion */
-  var defaultVersion: js.UndefOr[Boolean] = js.native
+  var defaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /** The version number of the Data Fusion instance, such as '6.0.1.0'. */
-  var versionNumber: js.UndefOr[String] = js.native
+  var versionNumber: js.UndefOr[String] = js.undefined
 }
 object Version {
   

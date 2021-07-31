@@ -3,14 +3,12 @@ package typings.playcanvas.pc
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new identity Mat3 object.
   * @property data - Matrix elements in the form of a flat array.
   */
-@js.native
 trait Mat3 extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait Mat3 extends StObject {
     * @param rhs - A 3x3 matrix to be copied.
     * @returns Self for chaining.
     */
-  def copy(rhs: Mat3): Mat3 = js.native
+  def copy(rhs: Mat3): Mat3
   
   /**
     * Matrix elements in the form of a flat array.
     */
-  var data: Float32Array = js.native
+  var data: Float32Array
   
   /**
     * Reports whether two matrices are equal.
@@ -39,7 +37,7 @@ trait Mat3 extends StObject {
     * @param rhs - The other matrix.
     * @returns True if the matrices are equal and false otherwise.
     */
-  def equals(rhs: Mat3): Boolean = js.native
+  def equals(rhs: Mat3): Boolean
   
   /**
     * Reports whether the specified matrix is the identity matrix.
@@ -48,7 +46,7 @@ trait Mat3 extends StObject {
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     * @returns True if the matrix is identity and false otherwise.
     */
-  def isIdentity(): Boolean = js.native
+  def isIdentity(): Boolean
   
   /**
     * Copies the contents of a source array[9] to a destination 3x3 matrix.
@@ -58,7 +56,7 @@ trait Mat3 extends StObject {
     * @param src - An array[9] to be copied.
     * @returns Self for chaining.
     */
-  def set(src: js.Array[Double]): Mat3 = js.native
+  def set(src: js.Array[Double]): Mat3
   
   /**
     * Sets the matrix to the identity matrix.
@@ -67,7 +65,7 @@ trait Mat3 extends StObject {
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     * @returns Self for chaining.
     */
-  def setIdentity(): Mat3 = js.native
+  def setIdentity(): Mat3
   
   /**
     * Generates the transpose of the specified 3x3 matrix.
@@ -78,7 +76,7 @@ trait Mat3 extends StObject {
     * m.transpose();
     * @returns Self for chaining.
     */
-  def transpose(): Mat3 = js.native
+  def transpose(): Mat3
 }
 object Mat3 {
   

@@ -2,21 +2,19 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #region 基本参数
-@js.native
 trait DataResponse extends StObject {
   
   /** 回调函数返回的内容 */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /** 开发者服务器返回的 HTTP Response Header */
-  var headers: js.Object = js.native
+  var headers: js.Object
   
   /** 开发者服务器返回的 HTTP 状态码 */
-  var status: Double = js.native
+  var status: Double
 }
 object DataResponse {
   

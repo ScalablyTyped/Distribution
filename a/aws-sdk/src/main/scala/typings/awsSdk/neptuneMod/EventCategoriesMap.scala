@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCategoriesMap extends StObject {
   
   /**
     * The event categories for the specified source type
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * The source type that the returned categories belong to
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
 }
 object EventCategoriesMap {
   

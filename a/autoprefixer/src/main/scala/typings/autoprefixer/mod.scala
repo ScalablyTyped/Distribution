@@ -9,9 +9,10 @@ import typings.autoprefixer.autoprefixerStrings.`no-autoplace`
 import typings.autoprefixer.autoprefixerStrings.autoplace
 import typings.browserslist.mod.Stats
 import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Result
+import typings.postcss.mod.Root_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,21 +21,27 @@ object mod extends Shortcut {
   @js.native
   val ^ : Autoprefixer = js.native
   
-  type Autoprefixer = Plugin_[Options] with ExportedAPI
+  @js.native
+  trait Autoprefixer
+    extends Plugin_[Options]
+       with ExportedAPI {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
+  }
   
   type BrowserslistTarget = String | js.Array[String] | StringDictionary[js.Array[String]]
   
-  @js.native
   trait ExportedAPI extends StObject {
     
     /** Autoprefixer data */
-    var data: Browsers = js.native
+    var data: Browsers
     
     /** Autoprefixer default browsers */
-    var defaults: js.Any = js.native
+    var defaults: js.Any
     
     /** Inspect with default Autoprefixer */
-    def info(): Unit = js.native
+    def info(): Unit
   }
   object ExportedAPI {
     
@@ -58,38 +65,37 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** should Autoprefixer add prefixes. */
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated 'Change `browser` option to `overrideBrowserslist` in Autoprefixer */
-    var browser: js.UndefOr[String] = js.native
+    var browser: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Replace Autoprefixer `browsers` option to Browserslist config.
       * Use `browserslist` key in `package.json` or `.browserslistrc` file.
       */
-    var browsers: js.UndefOr[js.Array[String] | String] = js.native
+    var browsers: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** @deprecated Change `browserslist` option to `overrideBrowserslist` in Autoprefixer */
-    var browserslist: js.UndefOr[js.Array[String] | String] = js.native
+    var browserslist: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** should Autoprefixer use Visual Cascade, if CSS is uncompressed */
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
     /** environment for `Browserslist` */
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
     /** should Autoprefixer add prefixes for flexbox properties */
-    var flexbox: js.UndefOr[Boolean | `no-2009`] = js.native
+    var flexbox: js.UndefOr[Boolean | `no-2009`] = js.undefined
     
     /** should Autoprefixer add IE 10-11 prefixes for Grid Layout properties */
-    var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.native
+    var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
     
     /** do not raise error on unknown browser version in `Browserslist` config. */
-    var ignoreUnknownVersions: js.UndefOr[Boolean] = js.native
+    var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * list of queries for target browsers.
@@ -97,16 +103,16 @@ object mod extends Shortcut {
       * The best practice is to use `.browserslistrc` config or `browserslist` key in `package.json`
       * to share target browsers with Babel, ESLint and Stylelint
       */
-    var overrideBrowserslist: js.UndefOr[BrowserslistTarget] = js.native
+    var overrideBrowserslist: js.UndefOr[BrowserslistTarget] = js.undefined
     
     /** should Autoprefixer [remove outdated] prefixes */
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
     /** custom usage statistics for > 10% in my stats browsers query */
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
     
     /** should Autoprefixer add prefixes for @supports parameters. */
-    var supports: js.UndefOr[Boolean] = js.native
+    var supports: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

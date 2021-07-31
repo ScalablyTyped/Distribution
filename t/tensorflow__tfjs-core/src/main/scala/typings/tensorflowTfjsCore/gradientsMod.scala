@@ -11,10 +11,13 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradientsMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Overrides the gradient computation of a function `f`.
@@ -56,9 +59,8 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "customGrad")
-  @js.native
-  def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = js.native
+  @scala.inline
+  def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("customGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Tensor[Rank], T]]
   
   /**
     * Provided `f(x)`, returns another function `g(x, dy?)`, which gives the
@@ -94,13 +96,16 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "grad")
-  @js.native
+  @scala.inline
   def grad(f: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* x */ TensorLike | Tensor[Rank], 
     /* dy */ js.UndefOr[TensorLike | Tensor[Rank]], 
     Tensor[Rank]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("grad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* x */ TensorLike | Tensor[Rank], 
+    /* dy */ js.UndefOr[TensorLike | Tensor[Rank]], 
+    Tensor[Rank]
+  ]]
   
   /**
     * Provided `f(x1, x2,...)`, returns another function `g([x1, x2,...], dy?)`,
@@ -131,13 +136,16 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "grads")
-  @js.native
+  @scala.inline
   def grads(f: js.Function1[/* repeated */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* args */ js.Array[Tensor[Rank] | TensorLike], 
     /* dy */ js.UndefOr[Tensor[Rank] | TensorLike], 
     js.Array[Tensor[Rank]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("grads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* args */ js.Array[Tensor[Rank] | TensorLike], 
+    /* dy */ js.UndefOr[Tensor[Rank] | TensorLike], 
+    js.Array[Tensor[Rank]]
+  ]]
   
   /**
     * Like `tf.grad`, but also returns the value of `f()`. Useful when `f()`
@@ -164,9 +172,8 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "valueAndGrad")
-  @js.native
-  def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = js.native
+  @scala.inline
+  def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]]]
   
   /**
     * Like `tf.grads`, but returns also the value of `f()`. Useful when `f()`
@@ -199,9 +206,8 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "valueAndGrads")
-  @js.native
-  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = js.native
+  @scala.inline
+  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]]]
   
   /**
     * Computes and returns the gradient of f(x) with respect to the list of
@@ -233,10 +239,8 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "variableGrads")
-  @js.native
-  def variableGrads(f: js.Function0[Scalar]): Value = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/gradients", "variableGrads")
-  @js.native
-  def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = js.native
+  @scala.inline
+  def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
 }

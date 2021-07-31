@@ -2,18 +2,16 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourceReference. */
-@js.native
 trait ISourceReference extends StObject {
   
   /** SourceReference location */
-  var location: js.UndefOr[ILocation | Null] = js.native
+  var location: js.UndefOr[ILocation | Null] = js.undefined
   
   /** SourceReference uri */
-  var uri: js.UndefOr[String | Null] = js.native
+  var uri: js.UndefOr[String | Null] = js.undefined
 }
 object ISourceReference {
   

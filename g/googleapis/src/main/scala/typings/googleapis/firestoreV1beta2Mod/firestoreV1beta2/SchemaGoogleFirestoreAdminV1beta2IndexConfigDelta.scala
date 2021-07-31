@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about an index configuration change.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta extends StObject {
   
   /**
     * Specifies how the index is changing.
     */
-  var changeType: js.UndefOr[String] = js.native
+  var changeType: js.UndefOr[String] = js.undefined
   
   /**
     * The index being changed.
     */
-  var index: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Index] = js.native
+  var index: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Index] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta {
   

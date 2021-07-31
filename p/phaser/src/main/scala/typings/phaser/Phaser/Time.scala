@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Types.Time.TimerEventConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Time {
@@ -36,9 +35,9 @@ object Time {
       * @param callbackScope The scope (`this` object) to call the function with.
       */
     def delayedCall(delay: Double, callback: js.Function): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: js.UndefOr[scala.Nothing], callbackScope: js.Any): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: js.Array[_]): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: js.Array[_], callbackScope: js.Any): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.Array[js.Any]): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.Array[js.Any], callbackScope: js.Any): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: Unit, callbackScope: js.Any): TimerEvent = js.native
     
     /**
       * The current time of the Clock, in milliseconds.
@@ -102,7 +101,7 @@ object Time {
     /**
       * Additional arguments to be passed to the callback.
       */
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any] = js.native
     
     /**
       * The callback that will be called when the TimerEvent occurs.

@@ -4,22 +4,20 @@ import typings.nodeSqlParser.nodeSqlParserStrings.Asterisk
 import typings.nodeSqlParser.nodeSqlParserStrings.star
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Star extends StObject {
   
-  var `type`: star = js.native
+  var `type`: star
   
-  var value: Asterisk = js.native
+  var value: Asterisk
 }
 object Star {
   
   @scala.inline
-  def apply(`type`: star, value: Asterisk): Star = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): Star = {
+    val __obj = js.Dynamic.literal(value = "*")
+    __obj.updateDynamic("type")("star")
     __obj.asInstanceOf[Star]
   }
   

@@ -2,31 +2,30 @@ package typings.regexpp.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flags
-  extends LeafNode
-     with NodeBase {
+  extends StObject
+     with NodeBase
+     with LeafNode {
   
-  var dotAll: Boolean = js.native
+  var dotAll: Boolean
   
-  var global: Boolean = js.native
+  var global: Boolean
   
-  var ignoreCase: Boolean = js.native
+  var ignoreCase: Boolean
   
-  var multiline: Boolean = js.native
+  var multiline: Boolean
   
   @JSName("parent")
-  var parent_Flags: RegExpLiteral | Null = js.native
+  var parent_Flags: RegExpLiteral | Null
   
-  var sticky: Boolean = js.native
+  var sticky: Boolean
   
   @JSName("type")
-  var type_Flags: typings.regexpp.regexppStrings.Flags = js.native
+  var type_Flags: typings.regexpp.regexppStrings.Flags
   
-  var unicode: Boolean = js.native
+  var unicode: Boolean
 }
 object Flags {
   
@@ -40,11 +39,10 @@ object Flags {
     raw: String,
     start: Double,
     sticky: Boolean,
-    `type`: typings.regexpp.regexppStrings.Flags,
     unicode: Boolean
   ): Flags = {
-    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], parent = null)
+    __obj.updateDynamic("type")("Flags")
     __obj.asInstanceOf[Flags]
   }
   

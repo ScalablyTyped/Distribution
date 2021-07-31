@@ -2,24 +2,22 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutNativeTemplateEngine * / any */ @js.native
-trait KnockstrapStringTemplateEngine extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutNativeTemplateEngine * / any */ trait KnockstrapStringTemplateEngine extends StObject {
   
-  def addTemplate(name: String, template: js.Any): Unit = js.native
+  def addTemplate(name: String, template: js.Any): Unit
   
-  var allowTemplateRewriting: Boolean = js.native
+  var allowTemplateRewriting: Boolean
   
-  def getTemplate(name: String): js.Any = js.native
+  def getTemplate(name: String): js.Any
   
-  def isTemplateExist(name: String): Boolean = js.native
+  def isTemplateExist(name: String): Boolean
   
-  def makeTemplateSource(template: String): KnockstrapStringTemplate = js.native
+  def makeTemplateSource(template: String): KnockstrapStringTemplate
   
-  def removeTemplate(name: String): Unit = js.native
+  def removeTemplate(name: String): Unit
 }
 object KnockstrapStringTemplateEngine {
   

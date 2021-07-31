@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ButtonOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Button")
 @js.native
 class Button protected ()
-  extends typings.kendoUi.kendo.ui.Button {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Button {
   def this(element: Element) = this()
   def this(element: Element, options: ButtonOptions) = this()
 }
@@ -21,9 +21,8 @@ object Button {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Button.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Button = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Button = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Button]
   
   /* static member */
   @JSGlobal("kendo.ui.Button.fn")

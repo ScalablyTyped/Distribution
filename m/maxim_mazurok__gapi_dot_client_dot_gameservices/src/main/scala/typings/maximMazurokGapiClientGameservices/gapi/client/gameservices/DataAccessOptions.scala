@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataAccessOptions extends StObject {
   
-  var logMode: js.UndefOr[String] = js.native
+  var logMode: js.UndefOr[String] = js.undefined
 }
 object DataAccessOptions {
   

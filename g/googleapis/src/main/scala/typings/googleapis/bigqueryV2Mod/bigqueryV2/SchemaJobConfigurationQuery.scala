@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobConfigurationQuery extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaJobConfigurationQuery extends StObject {
     * set destinationTable when result size exceeds the allowed maximum
     * response size.
     */
-  var allowLargeResults: js.UndefOr[Boolean] = js.native
+  var allowLargeResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Beta] Clustering specification for the destination table. Must be
     * specified with time-based partitioning, data in the table will be first
     * partitioned and subsequently clustered.
     */
-  var clustering: js.UndefOr[SchemaClustering] = js.native
+  var clustering: js.UndefOr[SchemaClustering] = js.undefined
   
   /**
     * [Optional] Specifies whether the job is allowed to create new tables. The
@@ -34,19 +32,19 @@ trait SchemaJobConfigurationQuery extends StObject {
     * result. The default value is CREATE_IF_NEEDED. Creation, truncation and
     * append actions occur as one atomic update upon job completion.
     */
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Specifies the default dataset to use for unqualified table
     * names in the query. Note that this does not alter behavior of unqualified
     * dataset names.
     */
-  var defaultDataset: js.UndefOr[SchemaDatasetReference] = js.native
+  var defaultDataset: js.UndefOr[SchemaDatasetReference] = js.undefined
   
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys).
     */
-  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.undefined
   
   /**
     * [Optional] Describes the table where the query results should be stored.
@@ -54,7 +52,7 @@ trait SchemaJobConfigurationQuery extends StObject {
     * property must be set for large results that exceed the maximum response
     * size.
     */
-  var destinationTable: js.UndefOr[SchemaTableReference] = js.native
+  var destinationTable: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * [Optional] If true and query uses legacy SQL dialect, flattens all nested
@@ -62,56 +60,56 @@ trait SchemaJobConfigurationQuery extends StObject {
     * if this is set to false. For standard SQL queries, this flag is ignored
     * and results are never flattened.
     */
-  var flattenResults: js.UndefOr[Boolean] = js.native
+  var flattenResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Limits the billing tier for this job. Queries that have
     * resource usage beyond this tier will fail (without incurring a charge).
     * If unspecified, this will be set to your project default.
     */
-  var maximumBillingTier: js.UndefOr[Double] = js.native
+  var maximumBillingTier: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] Limits the bytes billed for this job. Queries that will have
     * bytes billed beyond this limit will fail (without incurring a charge). If
     * unspecified, this will be set to your project default.
     */
-  var maximumBytesBilled: js.UndefOr[String] = js.native
+  var maximumBytesBilled: js.UndefOr[String] = js.undefined
   
   /**
     * Standard SQL only. Set to POSITIONAL to use positional (?) query
     * parameters or to NAMED to use named (@myparam) query parameters in this
     * query.
     */
-  var parameterMode: js.UndefOr[String] = js.native
+  var parameterMode: js.UndefOr[String] = js.undefined
   
   /**
     * [Deprecated] This property is deprecated.
     */
-  var preserveNulls: js.UndefOr[Boolean] = js.native
+  var preserveNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Specifies a priority for the query. Possible values include
     * INTERACTIVE and BATCH. The default value is INTERACTIVE.
     */
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] SQL query text to execute. The useLegacySql field can be used
     * to indicate whether the query uses legacy SQL or standard SQL.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Query parameters for standard SQL queries.
     */
-  var queryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.native
+  var queryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.undefined
   
   /**
     * [TrustedTester] Range partitioning specification for this table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
-  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.undefined
   
   /**
     * Allows the schema of the destination table to be updated as a side effect
@@ -124,7 +122,7 @@ trait SchemaJobConfigurationQuery extends StObject {
     * ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original
     * schema to nullable.
     */
-  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.native
+  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Optional] If querying an external data source outside of BigQuery,
@@ -132,13 +130,13 @@ trait SchemaJobConfigurationQuery extends StObject {
     * source. By defining these properties, the data source can then be queried
     * as if it were a standard BigQuery table.
     */
-  var tableDefinitions: js.UndefOr[StringDictionary[SchemaExternalDataConfiguration]] = js.native
+  var tableDefinitions: js.UndefOr[StringDictionary[SchemaExternalDataConfiguration]] = js.undefined
   
   /**
     * Time-based partitioning specification for the destination table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
-  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.undefined
   
   /**
     * Specifies whether to use BigQuery&#39;s legacy SQL dialect for this
@@ -148,7 +146,7 @@ trait SchemaJobConfigurationQuery extends StObject {
     * to false, the value of flattenResults is ignored; query will be run as if
     * flattenResults is false.
     */
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Whether to look for the result in the query cache. The query
@@ -157,12 +155,12 @@ trait SchemaJobConfigurationQuery extends StObject {
     * query does not have a destination table specified. The default value is
     * true.
     */
-  var useQueryCache: js.UndefOr[Boolean] = js.native
+  var useQueryCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes user-defined function resources used in the query.
     */
-  var userDefinedFunctionResources: js.UndefOr[js.Array[SchemaUserDefinedFunctionResource]] = js.native
+  var userDefinedFunctionResources: js.UndefOr[js.Array[SchemaUserDefinedFunctionResource]] = js.undefined
   
   /**
     * [Optional] Specifies the action that occurs if the destination table
@@ -176,7 +174,7 @@ trait SchemaJobConfigurationQuery extends StObject {
     * Creation, truncation and append actions occur as one atomic update upon
     * job completion.
     */
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object SchemaJobConfigurationQuery {
   

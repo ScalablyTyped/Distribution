@@ -7,7 +7,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refreshclientMod {
@@ -24,12 +23,12 @@ object refreshclientMod {
   class UserRefreshClient () extends OAuth2Client {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
-    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: String) = this()
     def this(clientId: String, clientSecret: String, refreshToken: String) = this()
+    def this(clientId: String, clientSecret: Unit, refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: String, refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: Unit, refreshToken: String) = this()
     
     var _refreshToken: js.UndefOr[String | Null] = js.native
     
@@ -52,14 +51,15 @@ object refreshclientMod {
     var fromStreamAsync: js.Any = js.native
   }
   
-  @js.native
-  trait UserRefreshClientOptions extends RefreshOptions {
+  trait UserRefreshClientOptions
+    extends StObject
+       with RefreshOptions {
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
   }
   object UserRefreshClientOptions {
     

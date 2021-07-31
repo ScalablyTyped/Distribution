@@ -2,15 +2,13 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverPhoto extends StObject {
   
-  var metadata: FieldMetadata = js.native
+  var metadata: FieldMetadata
   
-  var url: String = js.native
+  var url: String
 }
 object CoverPhoto {
   

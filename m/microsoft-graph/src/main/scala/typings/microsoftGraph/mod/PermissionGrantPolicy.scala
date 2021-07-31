@@ -2,15 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PermissionGrantPolicy extends PolicyBase {
+trait PermissionGrantPolicy
+  extends StObject
+     with PolicyBase {
   
-  var excludes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.native
+  var excludes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.undefined
   
-  var includes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.native
+  var includes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.undefined
 }
 object PermissionGrantPolicy {
   

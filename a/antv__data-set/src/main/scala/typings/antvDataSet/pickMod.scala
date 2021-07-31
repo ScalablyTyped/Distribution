@@ -2,15 +2,13 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterSpecListener extends StObject {
   
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: VirtualRouterSpecListenerPortMapping = js.native
+  var portMapping: VirtualRouterSpecListenerPortMapping
 }
 object VirtualRouterSpecListener {
   

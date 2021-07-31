@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maintenanceWindowTaskMod {
@@ -85,6 +84,10 @@ object maintenanceWindowTaskMod {
   /* static members */
   object MaintenanceWindowTask {
     
+    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MaintenanceWindowTask resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,87 +97,81 @@ object maintenanceWindowTaskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MaintenanceWindowTask = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MaintenanceWindowTask = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): MaintenanceWindowTask = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): MaintenanceWindowTask = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindowTask.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTask", "MaintenanceWindowTask.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean]
   }
   
-  @js.native
   trait MaintenanceWindowTaskArgs extends StObject {
     
     /**
       * The description of the maintenance window task.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of targets this task can be run for in parallel.
       */
-    val maxConcurrency: Input[String] = js.native
+    val maxConcurrency: Input[String]
     
     /**
       * The maximum number of errors allowed before this task stops being scheduled.
       */
-    val maxErrors: Input[String] = js.native
+    val maxErrors: Input[String]
     
     /**
       * The name of the maintenance window task.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The role that should be assumed when executing the task.
       */
-    val serviceRoleArn: Input[String] = js.native
+    val serviceRoleArn: Input[String]
     
     /**
       * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
       */
-    val targets: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]] = js.native
+    val targets: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]
     
     /**
       * The ARN of the task to execute.
       */
-    val taskArn: Input[String] = js.native
+    val taskArn: Input[String]
     
     /**
       * Configuration block with parameters for task execution.
       */
     val taskInvocationParameters: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of task being registered. The only allowed value is `RUN_COMMAND`.
       */
-    val taskType: Input[String] = js.native
+    val taskType: Input[String]
     
     /**
       * The Id of the maintenance window to register the task with.
       */
-    val windowId: Input[String] = js.native
+    val windowId: Input[String]
   }
   object MaintenanceWindowTaskArgs {
     
@@ -245,67 +242,66 @@ object maintenanceWindowTaskMod {
     }
   }
   
-  @js.native
   trait MaintenanceWindowTaskState extends StObject {
     
     /**
       * The description of the maintenance window task.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of targets this task can be run for in parallel.
       */
-    val maxConcurrency: js.UndefOr[Input[String]] = js.native
+    val maxConcurrency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of errors allowed before this task stops being scheduled.
       */
-    val maxErrors: js.UndefOr[Input[String]] = js.native
+    val maxErrors: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the maintenance window task.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The role that should be assumed when executing the task.
       */
-    val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
       */
     val targets: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the task to execute.
       */
-    val taskArn: js.UndefOr[Input[String]] = js.native
+    val taskArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with parameters for task execution.
       */
     val taskInvocationParameters: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of task being registered. The only allowed value is `RUN_COMMAND`.
       */
-    val taskType: js.UndefOr[Input[String]] = js.native
+    val taskType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Id of the maintenance window to register the task with.
       */
-    val windowId: js.UndefOr[Input[String]] = js.native
+    val windowId: js.UndefOr[Input[String]] = js.undefined
   }
   object MaintenanceWindowTaskState {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingGroupConfiguration extends StObject {
   
   /**
     * The desired capacity, or number of instances, for the Auto Scaling group.
     */
-  var desiredCapacity: js.UndefOr[DesiredCapacity] = js.native
+  var desiredCapacity: js.UndefOr[DesiredCapacity] = js.undefined
   
   /**
     * The instance type for the Auto Scaling group.
     */
-  var instanceType: js.UndefOr[InstanceType] = js.native
+  var instanceType: js.UndefOr[InstanceType] = js.undefined
   
   /**
     * The maximum size, or maximum number of instances, for the Auto Scaling group.
     */
-  var maxSize: js.UndefOr[MaxSize] = js.native
+  var maxSize: js.UndefOr[MaxSize] = js.undefined
   
   /**
     * The minimum size, or minimum number of instances, for the Auto Scaling group.
     */
-  var minSize: js.UndefOr[MinSize] = js.native
+  var minSize: js.UndefOr[MinSize] = js.undefined
 }
 object AutoScalingGroupConfiguration {
   

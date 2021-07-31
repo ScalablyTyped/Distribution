@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoTaxonomy extends StObject {
   
   /** The list of regions associated with a sku. Empty for Global skus, which are associated with all Google Cloud regions. */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The type of Geo Taxonomy: GLOBAL, REGIONAL, or MULTI_REGIONAL. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GeoTaxonomy {
   

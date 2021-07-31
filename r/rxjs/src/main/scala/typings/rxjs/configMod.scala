@@ -4,7 +4,6 @@ import typings.std.PromiseConstructorLike
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
@@ -22,7 +21,9 @@ object configMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rxjs/internal/config", "config.Promise")
     @js.native
-    class Promise[T] protected () extends PromiseLike[T] {
+    class Promise[T] protected ()
+      extends StObject
+         with PromiseLike[T] {
       def this(executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
                 /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 

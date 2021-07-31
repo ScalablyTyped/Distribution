@@ -2,34 +2,32 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A border around a paragraph.
   */
-@js.native
 trait SchemaParagraphBorder extends StObject {
   
   /**
     * The color of the border.
     */
-  var color: js.UndefOr[SchemaOptionalColor] = js.native
+  var color: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The padding of the border.
     */
-  var padding: js.UndefOr[SchemaDimension] = js.native
+  var padding: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The width of the border.
     */
-  var width: js.UndefOr[SchemaDimension] = js.native
+  var width: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaParagraphBorder {
   

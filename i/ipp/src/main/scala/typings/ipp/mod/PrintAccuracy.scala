@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintAccuracy extends StObject {
   
-  var `accuracy-units`: js.UndefOr[AccuracyUnits] = js.native
+  var `accuracy-units`: js.UndefOr[AccuracyUnits] = js.undefined
   
-  var `x-accuracy`: js.UndefOr[Double] = js.native
+  var `x-accuracy`: js.UndefOr[Double] = js.undefined
   
-  var `y-accuracy`: js.UndefOr[Double] = js.native
+  var `y-accuracy`: js.UndefOr[Double] = js.undefined
   
-  var `z-accuracy`: js.UndefOr[Double] = js.native
+  var `z-accuracy`: js.UndefOr[Double] = js.undefined
 }
 object PrintAccuracy {
   

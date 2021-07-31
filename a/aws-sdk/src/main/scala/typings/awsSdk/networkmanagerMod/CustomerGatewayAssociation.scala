@@ -2,36 +2,34 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerGatewayAssociation extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the customer gateway.
     */
-  var CustomerGatewayArn: js.UndefOr[String] = js.native
+  var CustomerGatewayArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.native
+  var DeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.native
+  var LinkId: js.UndefOr[String] = js.undefined
   
   /**
     * The association state.
     */
-  var State: js.UndefOr[CustomerGatewayAssociationState] = js.native
+  var State: js.UndefOr[CustomerGatewayAssociationState] = js.undefined
 }
 object CustomerGatewayAssociation {
   

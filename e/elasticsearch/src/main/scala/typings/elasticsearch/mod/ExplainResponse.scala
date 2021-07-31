@@ -2,21 +2,19 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplainResponse extends StObject {
   
-  var _id: String = js.native
+  var _id: String
   
-  var _index: String = js.native
+  var _index: String
   
-  var _type: String = js.native
+  var _type: String
   
-  var explanation: ExplainResponseDetails = js.native
+  var explanation: ExplainResponseDetails
   
-  var matched: Boolean = js.native
+  var matched: Boolean
 }
 object ExplainResponse {
   

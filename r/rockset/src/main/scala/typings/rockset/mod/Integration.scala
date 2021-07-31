@@ -2,38 +2,36 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Integration extends StObject {
   
   // ISO-8601 date
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // email of user who created the integration
-  var created_by: String = js.native
+  var created_by: String
   
   // longer explanation for the integration
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // Amazon DynamoDB details, must have one of aws_access_key or aws_role
-  var dynamodb: js.UndefOr[DynamodbIntegration] = js.native
+  var dynamodb: js.UndefOr[DynamodbIntegration] = js.undefined
   
   // GCS details
-  var gcs: js.UndefOr[GcsIntegration] = js.native
+  var gcs: js.UndefOr[GcsIntegration] = js.undefined
   
   // Amazon Kinesis details, must have one of aws_access_key or aws_role
-  var kinesis: js.UndefOr[KinesisIntegration] = js.native
+  var kinesis: js.UndefOr[KinesisIntegration] = js.undefined
   
   // descriptive label and unique identifier
-  var name: String = js.native
+  var name: String
   
   // Amazon Redshift details
-  var redshift: js.UndefOr[RedshiftIntegration] = js.native
+  var redshift: js.UndefOr[RedshiftIntegration] = js.undefined
   
   // Amazon S3 details, must have one of aws_access_key or aws_role
-  var s3: js.UndefOr[S3Integration] = js.native
+  var s3: js.UndefOr[S3Integration] = js.undefined
 }
 object Integration {
   

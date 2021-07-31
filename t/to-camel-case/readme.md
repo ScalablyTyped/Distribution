@@ -11,8 +11,8 @@ Convert a string to camel case.
 | Full name          | to-camel-case |
 | Keywords           | camel, case, camelcase, string |
 | # releases         | 0 |
-| # dependents       | 118 |
-| # downloads        | 17609222 |
+| # dependents       | 122 |
+| # downloads        | 19189902 |
 | # stars            | 1 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOperationInfo extends StObject {
   
   /**
@@ -13,77 +11,77 @@ trait ClusterOperationInfo extends StObject {
     The ID of the API request that triggered this operation.
     
     */
-  var ClientRequestId: js.UndefOr[string] = js.native
+  var ClientRequestId: js.UndefOr[string] = js.undefined
   
   /**
     * 
     ARN of the cluster.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The time that the operation was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.native
+  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * 
     The time at which the operation finished.
     
     */
-  var EndTime: js.UndefOr[timestampIso8601] = js.native
+  var EndTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * 
     Describes the error if the operation fails.
     
     */
-  var ErrorInfo: js.UndefOr[typings.awsSdk.kafkaMod.ErrorInfo] = js.native
+  var ErrorInfo: js.UndefOr[typings.awsSdk.kafkaMod.ErrorInfo] = js.undefined
   
   /**
     * 
     ARN of the cluster operation.
     
     */
-  var OperationArn: js.UndefOr[string] = js.native
+  var OperationArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     State of the cluster operation.
     
     */
-  var OperationState: js.UndefOr[string] = js.native
+  var OperationState: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Steps completed during the operation.
     
     */
-  var OperationSteps: js.UndefOr[listOfClusterOperationStep] = js.native
+  var OperationSteps: js.UndefOr[listOfClusterOperationStep] = js.undefined
   
   /**
     * 
     Type of the cluster operation.
     
     */
-  var OperationType: js.UndefOr[string] = js.native
+  var OperationType: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Information about cluster attributes before a cluster is updated.
     
     */
-  var SourceClusterInfo: js.UndefOr[MutableClusterInfo] = js.native
+  var SourceClusterInfo: js.UndefOr[MutableClusterInfo] = js.undefined
   
   /**
     * 
     Information about cluster attributes after a cluster is updated.
     
     */
-  var TargetClusterInfo: js.UndefOr[MutableClusterInfo] = js.native
+  var TargetClusterInfo: js.UndefOr[MutableClusterInfo] = js.undefined
 }
 object ClusterOperationInfo {
   

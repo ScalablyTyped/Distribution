@@ -3,15 +3,13 @@ package typings.jssip.mod
 import typings.jssip.anon.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentSipEvent extends StObject {
   
-  var event: Event = js.native
+  var event: Event
   
-  var request: IncomingRequest = js.native
+  var request: IncomingRequest
 }
 object UserAgentSipEvent {
   

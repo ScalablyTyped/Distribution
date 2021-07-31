@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssessmentTargetRequest extends StObject {
   
   /**
     * The ARN of the assessment target that you want to update.
     */
-  var assessmentTargetArn: Arn = js.native
+  var assessmentTargetArn: Arn
   
   /**
     * The name of the assessment target that you want to update.
     */
-  var assessmentTargetName: AssessmentTargetName = js.native
+  var assessmentTargetName: AssessmentTargetName
   
   /**
     * The ARN of the resource group that is used to specify the new resource group to associate with the assessment target.
     */
-  var resourceGroupArn: js.UndefOr[Arn] = js.native
+  var resourceGroupArn: js.UndefOr[Arn] = js.undefined
 }
 object UpdateAssessmentTargetRequest {
   

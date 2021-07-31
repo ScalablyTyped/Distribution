@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxClientDocumentViewer control's toolbar.
   */
-@js.native
-trait ASPxClientReportToolbar extends ASPxClientControl {
+trait ASPxClientReportToolbar
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Provides access to the control template assigned for the specified menu item. A control.
     * @param name A String value, specifying the menu item name.
     */
-  def GetItemTemplateControl(name: String): ASPxClientControl = js.native
+  def GetItemTemplateControl(name: String): ASPxClientControl
 }
 object ASPxClientReportToolbar {
   

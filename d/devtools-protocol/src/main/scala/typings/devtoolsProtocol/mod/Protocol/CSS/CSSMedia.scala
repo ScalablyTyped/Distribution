@@ -6,22 +6,20 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.linkedSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mediaRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSMedia extends StObject {
   
   /**
     * Array of media queries.
     */
-  var mediaList: js.UndefOr[js.Array[MediaQuery]] = js.native
+  var mediaList: js.UndefOr[js.Array[MediaQuery]] = js.undefined
   
   /**
     * The associated rule (@media or @import) header range in the enclosing stylesheet (if
     * available).
     */
-  var range: js.UndefOr[SourceRange] = js.native
+  var range: js.UndefOr[SourceRange] = js.undefined
   
   /**
     * Source of the media query: "mediaRule" if specified by a @media rule, "importRule" if
@@ -29,22 +27,22 @@ trait CSSMedia extends StObject {
     * stylesheet's LINK tag, "inlineSheet" if specified by a "media" attribute in an inline
     * stylesheet's STYLE tag. (CSSMediaSource enum)
     */
-  var source: mediaRule | importRule | linkedSheet | inlineSheet = js.native
+  var source: mediaRule | importRule | linkedSheet | inlineSheet
   
   /**
     * URL of the document containing the media query description.
     */
-  var sourceURL: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the stylesheet containing this object (if exists).
     */
-  var styleSheetId: js.UndefOr[StyleSheetId] = js.native
+  var styleSheetId: js.UndefOr[StyleSheetId] = js.undefined
   
   /**
     * Media query text.
     */
-  var text: String = js.native
+  var text: String
 }
 object CSSMedia {
   

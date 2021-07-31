@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureBlobStorageData extends StObject {
   
   /**
     * Required. Input only. Credentials used to authenticate API requests to Azure. For information on our data retention policy for user credentials, see [User
     * credentials](data-retention#user-credentials).
     */
-  var azureCredentials: js.UndefOr[AzureCredentials] = js.native
+  var azureCredentials: js.UndefOr[AzureCredentials] = js.undefined
   
   /** Required. The container to transfer from the Azure Storage account. */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the Azure Storage account. */
-  var storageAccount: js.UndefOr[String] = js.native
+  var storageAccount: js.UndefOr[String] = js.undefined
 }
 object AzureBlobStorageData {
   

@@ -5,33 +5,34 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redisPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/redis.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/redis.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/redis.pub", "redis")
   @js.native
   val redis: IModulePatcher = js.native
   
-  @js.native
   trait IRedisData extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var commandObj: js.Any = js.native
+    var commandObj: js.Any
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var err: Error = js.native
+    var err: Error
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var time: Date = js.native
+    var time: Date
   }
   object IRedisData {
     

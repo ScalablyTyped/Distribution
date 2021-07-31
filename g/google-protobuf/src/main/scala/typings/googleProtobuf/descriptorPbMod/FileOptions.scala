@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FileOptions () extends Message {
   
   def addUninterpretedOption(): UninterpretedOption = js.native
-  def addUninterpretedOption(value: js.UndefOr[scala.Nothing], index: Double): UninterpretedOption = js.native
+  def addUninterpretedOption(value: Unit, index: Double): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption, index: Double): UninterpretedOption = js.native
   
@@ -202,28 +201,32 @@ object FileOptions {
   object OptimizeMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OptimizeMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[OptimizeMode & Double] = js.native
     
     @js.native
-    sealed trait CODE_SIZE extends OptimizeMode
-    /* 2 */ val CODE_SIZE: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.CODE_SIZE with Double = js.native
+    sealed trait CODE_SIZE
+      extends StObject
+         with OptimizeMode
+    /* 2 */ val CODE_SIZE: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.CODE_SIZE & Double = js.native
     
     @js.native
-    sealed trait LITE_RUNTIME extends OptimizeMode
-    /* 3 */ val LITE_RUNTIME: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.LITE_RUNTIME with Double = js.native
+    sealed trait LITE_RUNTIME
+      extends StObject
+         with OptimizeMode
+    /* 3 */ val LITE_RUNTIME: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.LITE_RUNTIME & Double = js.native
     
     @js.native
-    sealed trait SPEED extends OptimizeMode
-    /* 1 */ val SPEED: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.SPEED with Double = js.native
+    sealed trait SPEED
+      extends StObject
+         with OptimizeMode
+    /* 1 */ val SPEED: typings.googleProtobuf.descriptorPbMod.FileOptions.OptimizeMode.SPEED & Double = js.native
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): FileOptions = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: FileOptions, reader: BinaryReader): FileOptions = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: FileOptions, reader: BinaryReader): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions.extensions")
   @js.native
@@ -238,58 +241,55 @@ object FileOptions {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: FileOptions, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: FileOptions, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: FileOptions): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: FileOptions): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var ccEnableArenas: js.UndefOr[Boolean] = js.native
+    var ccEnableArenas: js.UndefOr[Boolean] = js.undefined
     
-    var ccGenericServices: js.UndefOr[Boolean] = js.native
+    var ccGenericServices: js.UndefOr[Boolean] = js.undefined
     
-    var csharpNamespace: js.UndefOr[String] = js.native
+    var csharpNamespace: js.UndefOr[String] = js.undefined
     
-    var deprecated: js.UndefOr[Boolean] = js.native
+    var deprecated: js.UndefOr[Boolean] = js.undefined
     
-    var goPackage: js.UndefOr[String] = js.native
+    var goPackage: js.UndefOr[String] = js.undefined
     
-    var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.native
+    var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.undefined
     
-    var javaGenericServices: js.UndefOr[Boolean] = js.native
+    var javaGenericServices: js.UndefOr[Boolean] = js.undefined
     
-    var javaMultipleFiles: js.UndefOr[Boolean] = js.native
+    var javaMultipleFiles: js.UndefOr[Boolean] = js.undefined
     
-    var javaOuterClassname: js.UndefOr[String] = js.native
+    var javaOuterClassname: js.UndefOr[String] = js.undefined
     
-    var javaPackage: js.UndefOr[String] = js.native
+    var javaPackage: js.UndefOr[String] = js.undefined
     
-    var javaStringCheckUtf8: js.UndefOr[Boolean] = js.native
+    var javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined
     
-    var objcClassPrefix: js.UndefOr[String] = js.native
+    var objcClassPrefix: js.UndefOr[String] = js.undefined
     
-    var optimizeFor: js.UndefOr[OptimizeMode] = js.native
+    var optimizeFor: js.UndefOr[OptimizeMode] = js.undefined
     
-    var phpClassPrefix: js.UndefOr[String] = js.native
+    var phpClassPrefix: js.UndefOr[String] = js.undefined
     
-    var phpGenericServices: js.UndefOr[Boolean] = js.native
+    var phpGenericServices: js.UndefOr[Boolean] = js.undefined
     
-    var phpMetadataNamespace: js.UndefOr[String] = js.native
+    var phpMetadataNamespace: js.UndefOr[String] = js.undefined
     
-    var phpNamespace: js.UndefOr[String] = js.native
+    var phpNamespace: js.UndefOr[String] = js.undefined
     
-    var pyGenericServices: js.UndefOr[Boolean] = js.native
+    var pyGenericServices: js.UndefOr[Boolean] = js.undefined
     
-    var rubyPackage: js.UndefOr[String] = js.native
+    var rubyPackage: js.UndefOr[String] = js.undefined
     
-    var swiftPrefix: js.UndefOr[String] = js.native
+    var swiftPrefix: js.UndefOr[String] = js.undefined
     
-    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject] = js.native
+    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
   }
   object AsObject {
     

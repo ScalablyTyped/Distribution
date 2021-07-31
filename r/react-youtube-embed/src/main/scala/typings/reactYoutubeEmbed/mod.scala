@@ -3,7 +3,6 @@ package typings.reactYoutubeEmbed
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,18 +14,17 @@ object mod {
   
   type YouTubeEmbed = Component[YouTubeEmbedProps, js.Object, js.Any]
   
-  @js.native
   trait YouTubeEmbedProps extends StObject {
     
-    var appendSrc: js.UndefOr[String] = js.native
+    var appendSrc: js.UndefOr[String] = js.undefined
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var prependSrc: js.UndefOr[String] = js.native
+    var prependSrc: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object YouTubeEmbedProps {
     

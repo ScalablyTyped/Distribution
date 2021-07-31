@@ -3,12 +3,10 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debugger {
   
-  @js.native
   trait Debuggee extends StObject {
     
     /**
@@ -16,17 +14,17 @@ object debugger {
       * Since Chrome 27.
       * The id of the extension which you intend to debug. Attaching to an extension background page is only possible when 'silent-debugger-extension-api' flag is enabled on the target browser.
       */
-    var extensionId: js.UndefOr[String] = js.native
+    var extensionId: js.UndefOr[String] = js.undefined
     
     /** Optional. The id of the tab which you intend to debug.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 28.
       * The opaque id of the debug target.
       */
-    var targetId: js.UndefOr[String] = js.native
+    var targetId: js.UndefOr[String] = js.undefined
   }
   object Debuggee {
     
@@ -65,40 +63,39 @@ object debugger {
     js.Function3[/* source */ Debuggee, /* method */ String, /* params */ js.UndefOr[js.Object], Unit]
   ]
   
-  @js.native
   trait TargetInfo extends StObject {
     
     /** True if debugger is already attached. */
-    var attached: Boolean = js.native
+    var attached: Boolean
     
     /**
       * Optional.
       * Since Chrome 30.
       * The extension id, defined if type = 'background_page'.
       */
-    var extensionId: js.UndefOr[String] = js.native
+    var extensionId: js.UndefOr[String] = js.undefined
     
     /** Optional. Target favicon URL.  */
-    var faviconUrl: js.UndefOr[String] = js.native
+    var faviconUrl: js.UndefOr[String] = js.undefined
     
     /** Target id. */
-    var id: String = js.native
+    var id: String
     
     /**
       * Optional.
       * Since Chrome 30.
       * The tab id, defined if type == 'page'.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** Target page title. */
-    var title: String = js.native
+    var title: String
     
     /** Target type. */
-    var `type`: String = js.native
+    var `type`: String
     
     /** Target URL. */
-    var url: String = js.native
+    var url: String
   }
   object TargetInfo {
     

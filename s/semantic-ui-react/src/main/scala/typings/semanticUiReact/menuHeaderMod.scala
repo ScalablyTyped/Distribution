@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuHeaderMod extends Shortcut {
@@ -26,9 +25,9 @@ object menuHeaderMod extends Shortcut {
   @js.native
   val default: ComponentClass[MenuHeaderProps, ComponentState] = js.native
   
-  @js.native
   trait MenuHeaderProps
-    extends StrictMenuHeaderProps
+    extends StObject
+       with StrictMenuHeaderProps
        with /* key */ StringDictionary[js.Any]
   object MenuHeaderProps {
     
@@ -39,20 +38,19 @@ object menuHeaderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictMenuHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
   }
   object StrictMenuHeaderProps {
     

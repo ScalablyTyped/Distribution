@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberSharedItems extends StObject {
   
   /**
     * List of information about shared envelopes.
     */
-  var envelopes: js.UndefOr[js.Array[/* Information about the shared item. */ SharedItem]] = js.native
+  var envelopes: js.UndefOr[js.Array[/* Information about the shared item. */ SharedItem]] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of information about shared folders.
     */
-  var folders: js.UndefOr[js.Array[FolderSharedItem]] = js.native
+  var folders: js.UndefOr[js.Array[FolderSharedItem]] = js.undefined
   
   /**
     * List of information about shared templates.
     */
-  var templates: js.UndefOr[js.Array[/* Information about shared templates. */ TemplateSharedItem]] = js.native
+  var templates: js.UndefOr[js.Array[/* Information about shared templates. */ TemplateSharedItem]] = js.undefined
   
   /**
     * Information about the user requesting sharing information.
     */
-  var user: js.UndefOr[UserInfo] = js.native
+  var user: js.UndefOr[UserInfo] = js.undefined
 }
 object MemberSharedItems {
   

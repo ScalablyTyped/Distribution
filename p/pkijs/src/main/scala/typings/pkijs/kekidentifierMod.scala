@@ -4,45 +4,58 @@ import typings.asn1js.mod.GeneralizedTime
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kekidentifierMod {
   
   @JSImport("pkijs/src/KEKIdentifier", JSImport.Default)
   @js.native
-  class default () extends KEKIdentifier {
+  class default ()
+    extends StObject
+       with KEKIdentifier {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var keyIdentifier: OctetString = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/KEKIdentifier", "default.defaultValues")
+    @JSImport("pkijs/src/KEKIdentifier", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/KEKIdentifier", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/KEKIdentifier", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait KEKIdentifier extends StObject {
     
-    var date: js.UndefOr[GeneralizedTime] = js.native
+    var date: js.UndefOr[GeneralizedTime] = js.undefined
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var keyIdentifier: OctetString = js.native
+    var keyIdentifier: OctetString
     
-    var other: js.UndefOr[typings.pkijs.otherKeyAttributeMod.default] = js.native
+    var other: js.UndefOr[typings.pkijs.otherKeyAttributeMod.default] = js.undefined
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object KEKIdentifier {
     

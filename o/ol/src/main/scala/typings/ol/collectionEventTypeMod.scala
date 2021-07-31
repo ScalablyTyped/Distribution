@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectionEventTypeMod {
@@ -12,11 +11,11 @@ object collectionEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[CollectionEventType with String] = js.native
+    def apply(value: String): js.UndefOr[CollectionEventType & String] = js.native
     
-    /* "add" */ val ADD: typings.ol.collectionEventTypeMod.CollectionEventType.ADD with String = js.native
+    /* "add" */ val ADD: typings.ol.collectionEventTypeMod.CollectionEventType.ADD & String = js.native
     
-    /* "remove" */ val REMOVE: typings.ol.collectionEventTypeMod.CollectionEventType.REMOVE with String = js.native
+    /* "remove" */ val REMOVE: typings.ol.collectionEventTypeMod.CollectionEventType.REMOVE & String = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object collectionEventTypeMod {
   object CollectionEventType extends StObject {
     
     @js.native
-    sealed trait ADD extends CollectionEventType
+    sealed trait ADD
+      extends StObject
+         with CollectionEventType
     
     @js.native
-    sealed trait REMOVE extends CollectionEventType
+    sealed trait REMOVE
+      extends StObject
+         with CollectionEventType
   }
 }

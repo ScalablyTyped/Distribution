@@ -3,42 +3,40 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of a representative info lookup query.
   */
-@js.native
 trait SchemaRepresentativeInfoResponse extends StObject {
   
   /**
     * Political geographic divisions that contain the requested address.
     */
-  var divisions: js.UndefOr[StringDictionary[SchemaGeographicDivision]] = js.native
+  var divisions: js.UndefOr[StringDictionary[SchemaGeographicDivision]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;civicinfo#representativeInfoResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The normalized version of the requested address
     */
-  var normalizedInput: js.UndefOr[SchemaSimpleAddressType] = js.native
+  var normalizedInput: js.UndefOr[SchemaSimpleAddressType] = js.undefined
   
   /**
     * Elected offices referenced by the divisions listed above. Will only be
     * present if includeOffices was true in the request.
     */
-  var offices: js.UndefOr[js.Array[SchemaOffice]] = js.native
+  var offices: js.UndefOr[js.Array[SchemaOffice]] = js.undefined
   
   /**
     * Officials holding the offices listed above. Will only be present if
     * includeOffices was true in the request.
     */
-  var officials: js.UndefOr[js.Array[SchemaOfficial]] = js.native
+  var officials: js.UndefOr[js.Array[SchemaOfficial]] = js.undefined
 }
 object SchemaRepresentativeInfoResponse {
   

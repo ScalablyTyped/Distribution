@@ -105,7 +105,6 @@ import typings.micromark.micromarkStrings.thematicBreakSequence
 import typings.micromark.micromarkStrings.whitespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantTypesMod extends Shortcut {
@@ -116,321 +115,217 @@ object constantTypesMod extends Shortcut {
   
   type Type = String
   
-  @js.native
   trait Types extends StObject {
     
-    var atxHeading: typings.micromark.micromarkStrings.atxHeading = js.native
+    var atxHeading: typings.micromark.micromarkStrings.atxHeading
     
-    var atxHeadingSequence: typings.micromark.micromarkStrings.atxHeadingSequence = js.native
+    var atxHeadingSequence: typings.micromark.micromarkStrings.atxHeadingSequence
     
-    var atxHeadingText: typings.micromark.micromarkStrings.atxHeadingText = js.native
+    var atxHeadingText: typings.micromark.micromarkStrings.atxHeadingText
     
-    var autolink: typings.micromark.micromarkStrings.autolink = js.native
+    var autolink: typings.micromark.micromarkStrings.autolink
     
-    var autolinkEmail: typings.micromark.micromarkStrings.autolinkEmail = js.native
+    var autolinkEmail: typings.micromark.micromarkStrings.autolinkEmail
     
-    var autolinkMarker: typings.micromark.micromarkStrings.autolinkMarker = js.native
+    var autolinkMarker: typings.micromark.micromarkStrings.autolinkMarker
     
-    var autolinkProtocol: typings.micromark.micromarkStrings.autolinkProtocol = js.native
+    var autolinkProtocol: typings.micromark.micromarkStrings.autolinkProtocol
     
-    var blockQuote: typings.micromark.micromarkStrings.blockQuote = js.native
+    var blockQuote: typings.micromark.micromarkStrings.blockQuote
     
-    var blockQuoteMarker: typings.micromark.micromarkStrings.blockQuoteMarker = js.native
+    var blockQuoteMarker: typings.micromark.micromarkStrings.blockQuoteMarker
     
-    var blockQuotePrefix: typings.micromark.micromarkStrings.blockQuotePrefix = js.native
+    var blockQuotePrefix: typings.micromark.micromarkStrings.blockQuotePrefix
     
-    var blockQuotePrefixWhitespace: typings.micromark.micromarkStrings.blockQuotePrefixWhitespace = js.native
+    var blockQuotePrefixWhitespace: typings.micromark.micromarkStrings.blockQuotePrefixWhitespace
     
-    var characterEscape: typings.micromark.micromarkStrings.characterEscape = js.native
+    var characterEscape: typings.micromark.micromarkStrings.characterEscape
     
-    var characterEscapeValue: typings.micromark.micromarkStrings.characterEscapeValue = js.native
+    var characterEscapeValue: typings.micromark.micromarkStrings.characterEscapeValue
     
-    var characterReference: typings.micromark.micromarkStrings.characterReference = js.native
+    var characterReference: typings.micromark.micromarkStrings.characterReference
     
-    var characterReferenceMarker: typings.micromark.micromarkStrings.characterReferenceMarker = js.native
+    var characterReferenceMarker: typings.micromark.micromarkStrings.characterReferenceMarker
     
-    var characterReferenceMarkerHexadecimal: typings.micromark.micromarkStrings.characterReferenceMarkerHexadecimal = js.native
+    var characterReferenceMarkerHexadecimal: typings.micromark.micromarkStrings.characterReferenceMarkerHexadecimal
     
-    var characterReferenceMarkerNumeric: typings.micromark.micromarkStrings.characterReferenceMarkerNumeric = js.native
+    var characterReferenceMarkerNumeric: typings.micromark.micromarkStrings.characterReferenceMarkerNumeric
     
-    var characterReferenceValue: typings.micromark.micromarkStrings.characterReferenceValue = js.native
+    var characterReferenceValue: typings.micromark.micromarkStrings.characterReferenceValue
     
-    var chunkContent: typings.micromark.micromarkStrings.chunkContent = js.native
+    var chunkContent: typings.micromark.micromarkStrings.chunkContent
     
-    var chunkFlow: typings.micromark.micromarkStrings.chunkFlow = js.native
+    var chunkFlow: typings.micromark.micromarkStrings.chunkFlow
     
-    var chunkString: typings.micromark.micromarkStrings.chunkString = js.native
+    var chunkString: typings.micromark.micromarkStrings.chunkString
     
-    var chunkText: typings.micromark.micromarkStrings.chunkText = js.native
+    var chunkText: typings.micromark.micromarkStrings.chunkText
     
-    var codeFenced: typings.micromark.micromarkStrings.codeFenced = js.native
+    var codeFenced: typings.micromark.micromarkStrings.codeFenced
     
-    var codeFencedFence: typings.micromark.micromarkStrings.codeFencedFence = js.native
+    var codeFencedFence: typings.micromark.micromarkStrings.codeFencedFence
     
-    var codeFencedFenceInfo: typings.micromark.micromarkStrings.codeFencedFenceInfo = js.native
+    var codeFencedFenceInfo: typings.micromark.micromarkStrings.codeFencedFenceInfo
     
-    var codeFencedFenceMeta: typings.micromark.micromarkStrings.codeFencedFenceMeta = js.native
+    var codeFencedFenceMeta: typings.micromark.micromarkStrings.codeFencedFenceMeta
     
-    var codeFencedFenceSequence: typings.micromark.micromarkStrings.codeFencedFenceSequence = js.native
+    var codeFencedFenceSequence: typings.micromark.micromarkStrings.codeFencedFenceSequence
     
-    var codeFlowValue: typings.micromark.micromarkStrings.codeFlowValue = js.native
+    var codeFlowValue: typings.micromark.micromarkStrings.codeFlowValue
     
-    var codeIndented: typings.micromark.micromarkStrings.codeIndented = js.native
+    var codeIndented: typings.micromark.micromarkStrings.codeIndented
     
-    var codeText: typings.micromark.micromarkStrings.codeText = js.native
+    var codeText: typings.micromark.micromarkStrings.codeText
     
-    var codeTextData: typings.micromark.micromarkStrings.codeTextData = js.native
+    var codeTextData: typings.micromark.micromarkStrings.codeTextData
     
-    var codeTextPadding: typings.micromark.micromarkStrings.codeTextPadding = js.native
+    var codeTextPadding: typings.micromark.micromarkStrings.codeTextPadding
     
-    var codeTextSequence: typings.micromark.micromarkStrings.codeTextSequence = js.native
+    var codeTextSequence: typings.micromark.micromarkStrings.codeTextSequence
     
-    var content: typings.micromark.micromarkStrings.content = js.native
+    var content: typings.micromark.micromarkStrings.content
     
-    var data: typings.micromark.micromarkStrings.data = js.native
+    var data: typings.micromark.micromarkStrings.data
     
-    var definition: typings.micromark.micromarkStrings.definition = js.native
+    var definition: typings.micromark.micromarkStrings.definition
     
-    var definitionDestination: typings.micromark.micromarkStrings.definitionDestination = js.native
+    var definitionDestination: typings.micromark.micromarkStrings.definitionDestination
     
-    var definitionDestinationLiteral: typings.micromark.micromarkStrings.definitionDestinationLiteral = js.native
+    var definitionDestinationLiteral: typings.micromark.micromarkStrings.definitionDestinationLiteral
     
-    var definitionDestinationLiteralMarker: typings.micromark.micromarkStrings.definitionDestinationLiteralMarker = js.native
+    var definitionDestinationLiteralMarker: typings.micromark.micromarkStrings.definitionDestinationLiteralMarker
     
-    var definitionDestinationRaw: typings.micromark.micromarkStrings.definitionDestinationRaw = js.native
+    var definitionDestinationRaw: typings.micromark.micromarkStrings.definitionDestinationRaw
     
-    var definitionDestinationString: typings.micromark.micromarkStrings.definitionDestinationString = js.native
+    var definitionDestinationString: typings.micromark.micromarkStrings.definitionDestinationString
     
-    var definitionLabel: typings.micromark.micromarkStrings.definitionLabel = js.native
+    var definitionLabel: typings.micromark.micromarkStrings.definitionLabel
     
-    var definitionLabelMarker: typings.micromark.micromarkStrings.definitionLabelMarker = js.native
+    var definitionLabelMarker: typings.micromark.micromarkStrings.definitionLabelMarker
     
-    var definitionLabelString: typings.micromark.micromarkStrings.definitionLabelString = js.native
+    var definitionLabelString: typings.micromark.micromarkStrings.definitionLabelString
     
-    var definitionMarker: typings.micromark.micromarkStrings.definitionMarker = js.native
+    var definitionMarker: typings.micromark.micromarkStrings.definitionMarker
     
-    var definitionTitle: typings.micromark.micromarkStrings.definitionTitle = js.native
+    var definitionTitle: typings.micromark.micromarkStrings.definitionTitle
     
-    var definitionTitleMarker: typings.micromark.micromarkStrings.definitionTitleMarker = js.native
+    var definitionTitleMarker: typings.micromark.micromarkStrings.definitionTitleMarker
     
-    var definitionTitleString: typings.micromark.micromarkStrings.definitionTitleString = js.native
+    var definitionTitleString: typings.micromark.micromarkStrings.definitionTitleString
     
-    var emphasis: typings.micromark.micromarkStrings.emphasis = js.native
+    var emphasis: typings.micromark.micromarkStrings.emphasis
     
-    var emphasisSequence: typings.micromark.micromarkStrings.emphasisSequence = js.native
+    var emphasisSequence: typings.micromark.micromarkStrings.emphasisSequence
     
-    var emphasisText: typings.micromark.micromarkStrings.emphasisText = js.native
+    var emphasisText: typings.micromark.micromarkStrings.emphasisText
     
-    var escapeMarker: typings.micromark.micromarkStrings.escapeMarker = js.native
+    var escapeMarker: typings.micromark.micromarkStrings.escapeMarker
     
-    var hardBreakEscape: typings.micromark.micromarkStrings.hardBreakEscape = js.native
+    var hardBreakEscape: typings.micromark.micromarkStrings.hardBreakEscape
     
-    var hardBreakTrailing: typings.micromark.micromarkStrings.hardBreakTrailing = js.native
+    var hardBreakTrailing: typings.micromark.micromarkStrings.hardBreakTrailing
     
-    var htmlFlow: typings.micromark.micromarkStrings.htmlFlow = js.native
+    var htmlFlow: typings.micromark.micromarkStrings.htmlFlow
     
-    var htmlFlowData: typings.micromark.micromarkStrings.htmlFlowData = js.native
+    var htmlFlowData: typings.micromark.micromarkStrings.htmlFlowData
     
-    var htmlText: typings.micromark.micromarkStrings.htmlText = js.native
+    var htmlText: typings.micromark.micromarkStrings.htmlText
     
-    var htmlTextData: typings.micromark.micromarkStrings.htmlTextData = js.native
+    var htmlTextData: typings.micromark.micromarkStrings.htmlTextData
     
-    var image: typings.micromark.micromarkStrings.image = js.native
+    var image: typings.micromark.micromarkStrings.image
     
-    var label: typings.micromark.micromarkStrings.label = js.native
+    var label: typings.micromark.micromarkStrings.label
     
-    var labelEnd: typings.micromark.micromarkStrings.labelEnd = js.native
+    var labelEnd: typings.micromark.micromarkStrings.labelEnd
     
-    var labelImage: typings.micromark.micromarkStrings.labelImage = js.native
+    var labelImage: typings.micromark.micromarkStrings.labelImage
     
-    var labelImageMarker: typings.micromark.micromarkStrings.labelImageMarker = js.native
+    var labelImageMarker: typings.micromark.micromarkStrings.labelImageMarker
     
-    var labelLink: typings.micromark.micromarkStrings.labelLink = js.native
+    var labelLink: typings.micromark.micromarkStrings.labelLink
     
-    var labelMarker: typings.micromark.micromarkStrings.labelMarker = js.native
+    var labelMarker: typings.micromark.micromarkStrings.labelMarker
     
-    var labelText: typings.micromark.micromarkStrings.labelText = js.native
+    var labelText: typings.micromark.micromarkStrings.labelText
     
-    var lineEnding: typings.micromark.micromarkStrings.lineEnding = js.native
+    var lineEnding: typings.micromark.micromarkStrings.lineEnding
     
-    var lineEndingBlank: typings.micromark.micromarkStrings.lineEndingBlank = js.native
+    var lineEndingBlank: typings.micromark.micromarkStrings.lineEndingBlank
     
-    var linePrefix: typings.micromark.micromarkStrings.linePrefix = js.native
+    var linePrefix: typings.micromark.micromarkStrings.linePrefix
     
-    var lineSuffix: typings.micromark.micromarkStrings.lineSuffix = js.native
+    var lineSuffix: typings.micromark.micromarkStrings.lineSuffix
     
-    var link: typings.micromark.micromarkStrings.link = js.native
+    var link: typings.micromark.micromarkStrings.link
     
-    var listItemIndent: typings.micromark.micromarkStrings.listItemIndent = js.native
+    var listItemIndent: typings.micromark.micromarkStrings.listItemIndent
     
-    var listItemMarker: typings.micromark.micromarkStrings.listItemMarker = js.native
+    var listItemMarker: typings.micromark.micromarkStrings.listItemMarker
     
-    var listItemPrefix: typings.micromark.micromarkStrings.listItemPrefix = js.native
+    var listItemPrefix: typings.micromark.micromarkStrings.listItemPrefix
     
-    var listItemPrefixWhitespace: typings.micromark.micromarkStrings.listItemPrefixWhitespace = js.native
+    var listItemPrefixWhitespace: typings.micromark.micromarkStrings.listItemPrefixWhitespace
     
-    var listItemValue: typings.micromark.micromarkStrings.listItemValue = js.native
+    var listItemValue: typings.micromark.micromarkStrings.listItemValue
     
-    var listOrdered: typings.micromark.micromarkStrings.listOrdered = js.native
+    var listOrdered: typings.micromark.micromarkStrings.listOrdered
     
-    var listUnordered: typings.micromark.micromarkStrings.listUnordered = js.native
+    var listUnordered: typings.micromark.micromarkStrings.listUnordered
     
-    var paragraph: typings.micromark.micromarkStrings.paragraph = js.native
+    var paragraph: typings.micromark.micromarkStrings.paragraph
     
-    var reference: typings.micromark.micromarkStrings.reference = js.native
+    var reference: typings.micromark.micromarkStrings.reference
     
-    var referenceMarker: typings.micromark.micromarkStrings.referenceMarker = js.native
+    var referenceMarker: typings.micromark.micromarkStrings.referenceMarker
     
-    var referenceString: typings.micromark.micromarkStrings.referenceString = js.native
+    var referenceString: typings.micromark.micromarkStrings.referenceString
     
-    var resource: typings.micromark.micromarkStrings.resource = js.native
+    var resource: typings.micromark.micromarkStrings.resource
     
-    var resourceDestination: typings.micromark.micromarkStrings.resourceDestination = js.native
+    var resourceDestination: typings.micromark.micromarkStrings.resourceDestination
     
-    var resourceDestinationLiteral: typings.micromark.micromarkStrings.resourceDestinationLiteral = js.native
+    var resourceDestinationLiteral: typings.micromark.micromarkStrings.resourceDestinationLiteral
     
-    var resourceDestinationLiteralMarker: typings.micromark.micromarkStrings.resourceDestinationLiteralMarker = js.native
+    var resourceDestinationLiteralMarker: typings.micromark.micromarkStrings.resourceDestinationLiteralMarker
     
-    var resourceDestinationRaw: typings.micromark.micromarkStrings.resourceDestinationRaw = js.native
+    var resourceDestinationRaw: typings.micromark.micromarkStrings.resourceDestinationRaw
     
-    var resourceDestinationString: typings.micromark.micromarkStrings.resourceDestinationString = js.native
+    var resourceDestinationString: typings.micromark.micromarkStrings.resourceDestinationString
     
-    var resourceMarker: typings.micromark.micromarkStrings.resourceMarker = js.native
+    var resourceMarker: typings.micromark.micromarkStrings.resourceMarker
     
-    var resourceTitle: typings.micromark.micromarkStrings.resourceTitle = js.native
+    var resourceTitle: typings.micromark.micromarkStrings.resourceTitle
     
-    var resourceTitleMarker: typings.micromark.micromarkStrings.resourceTitleMarker = js.native
+    var resourceTitleMarker: typings.micromark.micromarkStrings.resourceTitleMarker
     
-    var resourceTitleString: typings.micromark.micromarkStrings.resourceTitleString = js.native
+    var resourceTitleString: typings.micromark.micromarkStrings.resourceTitleString
     
-    var setextHeading: typings.micromark.micromarkStrings.setextHeading = js.native
+    var setextHeading: typings.micromark.micromarkStrings.setextHeading
     
-    var setextHeadingLine: typings.micromark.micromarkStrings.setextHeadingLine = js.native
+    var setextHeadingLine: typings.micromark.micromarkStrings.setextHeadingLine
     
-    var setextHeadingLineSequence: typings.micromark.micromarkStrings.setextHeadingLineSequence = js.native
+    var setextHeadingLineSequence: typings.micromark.micromarkStrings.setextHeadingLineSequence
     
-    var setextHeadingText: typings.micromark.micromarkStrings.setextHeadingText = js.native
+    var setextHeadingText: typings.micromark.micromarkStrings.setextHeadingText
     
-    var strong: typings.micromark.micromarkStrings.strong = js.native
+    var strong: typings.micromark.micromarkStrings.strong
     
-    var strongSequence: typings.micromark.micromarkStrings.strongSequence = js.native
+    var strongSequence: typings.micromark.micromarkStrings.strongSequence
     
-    var strongText: typings.micromark.micromarkStrings.strongText = js.native
+    var strongText: typings.micromark.micromarkStrings.strongText
     
-    var thematicBreak: typings.micromark.micromarkStrings.thematicBreak = js.native
+    var thematicBreak: typings.micromark.micromarkStrings.thematicBreak
     
-    var thematicBreakSequence: typings.micromark.micromarkStrings.thematicBreakSequence = js.native
+    var thematicBreakSequence: typings.micromark.micromarkStrings.thematicBreakSequence
     
-    var whitespace: typings.micromark.micromarkStrings.whitespace = js.native
+    var whitespace: typings.micromark.micromarkStrings.whitespace
   }
   object Types {
     
     @scala.inline
-    def apply(
-      atxHeading: atxHeading,
-      atxHeadingSequence: atxHeadingSequence,
-      atxHeadingText: atxHeadingText,
-      autolink: autolink,
-      autolinkEmail: autolinkEmail,
-      autolinkMarker: autolinkMarker,
-      autolinkProtocol: autolinkProtocol,
-      blockQuote: blockQuote,
-      blockQuoteMarker: blockQuoteMarker,
-      blockQuotePrefix: blockQuotePrefix,
-      blockQuotePrefixWhitespace: blockQuotePrefixWhitespace,
-      characterEscape: characterEscape,
-      characterEscapeValue: characterEscapeValue,
-      characterReference: characterReference,
-      characterReferenceMarker: characterReferenceMarker,
-      characterReferenceMarkerHexadecimal: characterReferenceMarkerHexadecimal,
-      characterReferenceMarkerNumeric: characterReferenceMarkerNumeric,
-      characterReferenceValue: characterReferenceValue,
-      chunkContent: chunkContent,
-      chunkFlow: chunkFlow,
-      chunkString: chunkString,
-      chunkText: chunkText,
-      codeFenced: codeFenced,
-      codeFencedFence: codeFencedFence,
-      codeFencedFenceInfo: codeFencedFenceInfo,
-      codeFencedFenceMeta: codeFencedFenceMeta,
-      codeFencedFenceSequence: codeFencedFenceSequence,
-      codeFlowValue: codeFlowValue,
-      codeIndented: codeIndented,
-      codeText: codeText,
-      codeTextData: codeTextData,
-      codeTextPadding: codeTextPadding,
-      codeTextSequence: codeTextSequence,
-      content: content,
-      data: data,
-      definition: definition,
-      definitionDestination: definitionDestination,
-      definitionDestinationLiteral: definitionDestinationLiteral,
-      definitionDestinationLiteralMarker: definitionDestinationLiteralMarker,
-      definitionDestinationRaw: definitionDestinationRaw,
-      definitionDestinationString: definitionDestinationString,
-      definitionLabel: definitionLabel,
-      definitionLabelMarker: definitionLabelMarker,
-      definitionLabelString: definitionLabelString,
-      definitionMarker: definitionMarker,
-      definitionTitle: definitionTitle,
-      definitionTitleMarker: definitionTitleMarker,
-      definitionTitleString: definitionTitleString,
-      emphasis: emphasis,
-      emphasisSequence: emphasisSequence,
-      emphasisText: emphasisText,
-      escapeMarker: escapeMarker,
-      hardBreakEscape: hardBreakEscape,
-      hardBreakTrailing: hardBreakTrailing,
-      htmlFlow: htmlFlow,
-      htmlFlowData: htmlFlowData,
-      htmlText: htmlText,
-      htmlTextData: htmlTextData,
-      image: image,
-      label: label,
-      labelEnd: labelEnd,
-      labelImage: labelImage,
-      labelImageMarker: labelImageMarker,
-      labelLink: labelLink,
-      labelMarker: labelMarker,
-      labelText: labelText,
-      lineEnding: lineEnding,
-      lineEndingBlank: lineEndingBlank,
-      linePrefix: linePrefix,
-      lineSuffix: lineSuffix,
-      link: link,
-      listItemIndent: listItemIndent,
-      listItemMarker: listItemMarker,
-      listItemPrefix: listItemPrefix,
-      listItemPrefixWhitespace: listItemPrefixWhitespace,
-      listItemValue: listItemValue,
-      listOrdered: listOrdered,
-      listUnordered: listUnordered,
-      paragraph: paragraph,
-      reference: reference,
-      referenceMarker: referenceMarker,
-      referenceString: referenceString,
-      resource: resource,
-      resourceDestination: resourceDestination,
-      resourceDestinationLiteral: resourceDestinationLiteral,
-      resourceDestinationLiteralMarker: resourceDestinationLiteralMarker,
-      resourceDestinationRaw: resourceDestinationRaw,
-      resourceDestinationString: resourceDestinationString,
-      resourceMarker: resourceMarker,
-      resourceTitle: resourceTitle,
-      resourceTitleMarker: resourceTitleMarker,
-      resourceTitleString: resourceTitleString,
-      setextHeading: setextHeading,
-      setextHeadingLine: setextHeadingLine,
-      setextHeadingLineSequence: setextHeadingLineSequence,
-      setextHeadingText: setextHeadingText,
-      strong: strong,
-      strongSequence: strongSequence,
-      strongText: strongText,
-      thematicBreak: thematicBreak,
-      thematicBreakSequence: thematicBreakSequence,
-      whitespace: whitespace
-    ): Types = {
-      val __obj = js.Dynamic.literal(atxHeading = atxHeading.asInstanceOf[js.Any], atxHeadingSequence = atxHeadingSequence.asInstanceOf[js.Any], atxHeadingText = atxHeadingText.asInstanceOf[js.Any], autolink = autolink.asInstanceOf[js.Any], autolinkEmail = autolinkEmail.asInstanceOf[js.Any], autolinkMarker = autolinkMarker.asInstanceOf[js.Any], autolinkProtocol = autolinkProtocol.asInstanceOf[js.Any], blockQuote = blockQuote.asInstanceOf[js.Any], blockQuoteMarker = blockQuoteMarker.asInstanceOf[js.Any], blockQuotePrefix = blockQuotePrefix.asInstanceOf[js.Any], blockQuotePrefixWhitespace = blockQuotePrefixWhitespace.asInstanceOf[js.Any], characterEscape = characterEscape.asInstanceOf[js.Any], characterEscapeValue = characterEscapeValue.asInstanceOf[js.Any], characterReference = characterReference.asInstanceOf[js.Any], characterReferenceMarker = characterReferenceMarker.asInstanceOf[js.Any], characterReferenceMarkerHexadecimal = characterReferenceMarkerHexadecimal.asInstanceOf[js.Any], characterReferenceMarkerNumeric = characterReferenceMarkerNumeric.asInstanceOf[js.Any], characterReferenceValue = characterReferenceValue.asInstanceOf[js.Any], chunkContent = chunkContent.asInstanceOf[js.Any], chunkFlow = chunkFlow.asInstanceOf[js.Any], chunkString = chunkString.asInstanceOf[js.Any], chunkText = chunkText.asInstanceOf[js.Any], codeFenced = codeFenced.asInstanceOf[js.Any], codeFencedFence = codeFencedFence.asInstanceOf[js.Any], codeFencedFenceInfo = codeFencedFenceInfo.asInstanceOf[js.Any], codeFencedFenceMeta = codeFencedFenceMeta.asInstanceOf[js.Any], codeFencedFenceSequence = codeFencedFenceSequence.asInstanceOf[js.Any], codeFlowValue = codeFlowValue.asInstanceOf[js.Any], codeIndented = codeIndented.asInstanceOf[js.Any], codeText = codeText.asInstanceOf[js.Any], codeTextData = codeTextData.asInstanceOf[js.Any], codeTextPadding = codeTextPadding.asInstanceOf[js.Any], codeTextSequence = codeTextSequence.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], definitionDestination = definitionDestination.asInstanceOf[js.Any], definitionDestinationLiteral = definitionDestinationLiteral.asInstanceOf[js.Any], definitionDestinationLiteralMarker = definitionDestinationLiteralMarker.asInstanceOf[js.Any], definitionDestinationRaw = definitionDestinationRaw.asInstanceOf[js.Any], definitionDestinationString = definitionDestinationString.asInstanceOf[js.Any], definitionLabel = definitionLabel.asInstanceOf[js.Any], definitionLabelMarker = definitionLabelMarker.asInstanceOf[js.Any], definitionLabelString = definitionLabelString.asInstanceOf[js.Any], definitionMarker = definitionMarker.asInstanceOf[js.Any], definitionTitle = definitionTitle.asInstanceOf[js.Any], definitionTitleMarker = definitionTitleMarker.asInstanceOf[js.Any], definitionTitleString = definitionTitleString.asInstanceOf[js.Any], emphasis = emphasis.asInstanceOf[js.Any], emphasisSequence = emphasisSequence.asInstanceOf[js.Any], emphasisText = emphasisText.asInstanceOf[js.Any], escapeMarker = escapeMarker.asInstanceOf[js.Any], hardBreakEscape = hardBreakEscape.asInstanceOf[js.Any], hardBreakTrailing = hardBreakTrailing.asInstanceOf[js.Any], htmlFlow = htmlFlow.asInstanceOf[js.Any], htmlFlowData = htmlFlowData.asInstanceOf[js.Any], htmlText = htmlText.asInstanceOf[js.Any], htmlTextData = htmlTextData.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelEnd = labelEnd.asInstanceOf[js.Any], labelImage = labelImage.asInstanceOf[js.Any], labelImageMarker = labelImageMarker.asInstanceOf[js.Any], labelLink = labelLink.asInstanceOf[js.Any], labelMarker = labelMarker.asInstanceOf[js.Any], labelText = labelText.asInstanceOf[js.Any], lineEnding = lineEnding.asInstanceOf[js.Any], lineEndingBlank = lineEndingBlank.asInstanceOf[js.Any], linePrefix = linePrefix.asInstanceOf[js.Any], lineSuffix = lineSuffix.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listItemIndent = listItemIndent.asInstanceOf[js.Any], listItemMarker = listItemMarker.asInstanceOf[js.Any], listItemPrefix = listItemPrefix.asInstanceOf[js.Any], listItemPrefixWhitespace = listItemPrefixWhitespace.asInstanceOf[js.Any], listItemValue = listItemValue.asInstanceOf[js.Any], listOrdered = listOrdered.asInstanceOf[js.Any], listUnordered = listUnordered.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], referenceMarker = referenceMarker.asInstanceOf[js.Any], referenceString = referenceString.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourceDestination = resourceDestination.asInstanceOf[js.Any], resourceDestinationLiteral = resourceDestinationLiteral.asInstanceOf[js.Any], resourceDestinationLiteralMarker = resourceDestinationLiteralMarker.asInstanceOf[js.Any], resourceDestinationRaw = resourceDestinationRaw.asInstanceOf[js.Any], resourceDestinationString = resourceDestinationString.asInstanceOf[js.Any], resourceMarker = resourceMarker.asInstanceOf[js.Any], resourceTitle = resourceTitle.asInstanceOf[js.Any], resourceTitleMarker = resourceTitleMarker.asInstanceOf[js.Any], resourceTitleString = resourceTitleString.asInstanceOf[js.Any], setextHeading = setextHeading.asInstanceOf[js.Any], setextHeadingLine = setextHeadingLine.asInstanceOf[js.Any], setextHeadingLineSequence = setextHeadingLineSequence.asInstanceOf[js.Any], setextHeadingText = setextHeadingText.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], strongSequence = strongSequence.asInstanceOf[js.Any], strongText = strongText.asInstanceOf[js.Any], thematicBreak = thematicBreak.asInstanceOf[js.Any], thematicBreakSequence = thematicBreakSequence.asInstanceOf[js.Any], whitespace = whitespace.asInstanceOf[js.Any])
+    def apply(): Types = {
+      val __obj = js.Dynamic.literal(atxHeading = "atxHeading", atxHeadingSequence = "atxHeadingSequence", atxHeadingText = "atxHeadingText", autolink = "autolink", autolinkEmail = "autolinkEmail", autolinkMarker = "autolinkMarker", autolinkProtocol = "autolinkProtocol", blockQuote = "blockQuote", blockQuoteMarker = "blockQuoteMarker", blockQuotePrefix = "blockQuotePrefix", blockQuotePrefixWhitespace = "blockQuotePrefixWhitespace", characterEscape = "characterEscape", characterEscapeValue = "characterEscapeValue", characterReference = "characterReference", characterReferenceMarker = "characterReferenceMarker", characterReferenceMarkerHexadecimal = "characterReferenceMarkerHexadecimal", characterReferenceMarkerNumeric = "characterReferenceMarkerNumeric", characterReferenceValue = "characterReferenceValue", chunkContent = "chunkContent", chunkFlow = "chunkFlow", chunkString = "chunkString", chunkText = "chunkText", codeFenced = "codeFenced", codeFencedFence = "codeFencedFence", codeFencedFenceInfo = "codeFencedFenceInfo", codeFencedFenceMeta = "codeFencedFenceMeta", codeFencedFenceSequence = "codeFencedFenceSequence", codeFlowValue = "codeFlowValue", codeIndented = "codeIndented", codeText = "codeText", codeTextData = "codeTextData", codeTextPadding = "codeTextPadding", codeTextSequence = "codeTextSequence", content = "content", data = "data", definition = "definition", definitionDestination = "definitionDestination", definitionDestinationLiteral = "definitionDestinationLiteral", definitionDestinationLiteralMarker = "definitionDestinationLiteralMarker", definitionDestinationRaw = "definitionDestinationRaw", definitionDestinationString = "definitionDestinationString", definitionLabel = "definitionLabel", definitionLabelMarker = "definitionLabelMarker", definitionLabelString = "definitionLabelString", definitionMarker = "definitionMarker", definitionTitle = "definitionTitle", definitionTitleMarker = "definitionTitleMarker", definitionTitleString = "definitionTitleString", emphasis = "emphasis", emphasisSequence = "emphasisSequence", emphasisText = "emphasisText", escapeMarker = "escapeMarker", hardBreakEscape = "hardBreakEscape", hardBreakTrailing = "hardBreakTrailing", htmlFlow = "htmlFlow", htmlFlowData = "htmlFlowData", htmlText = "htmlText", htmlTextData = "htmlTextData", image = "image", label = "label", labelEnd = "labelEnd", labelImage = "labelImage", labelImageMarker = "labelImageMarker", labelLink = "labelLink", labelMarker = "labelMarker", labelText = "labelText", lineEnding = "lineEnding", lineEndingBlank = "lineEndingBlank", linePrefix = "linePrefix", lineSuffix = "lineSuffix", link = "link", listItemIndent = "listItemIndent", listItemMarker = "listItemMarker", listItemPrefix = "listItemPrefix", listItemPrefixWhitespace = "listItemPrefixWhitespace", listItemValue = "listItemValue", listOrdered = "listOrdered", listUnordered = "listUnordered", paragraph = "paragraph", reference = "reference", referenceMarker = "referenceMarker", referenceString = "referenceString", resource = "resource", resourceDestination = "resourceDestination", resourceDestinationLiteral = "resourceDestinationLiteral", resourceDestinationLiteralMarker = "resourceDestinationLiteralMarker", resourceDestinationRaw = "resourceDestinationRaw", resourceDestinationString = "resourceDestinationString", resourceMarker = "resourceMarker", resourceTitle = "resourceTitle", resourceTitleMarker = "resourceTitleMarker", resourceTitleString = "resourceTitleString", setextHeading = "setextHeading", setextHeadingLine = "setextHeadingLine", setextHeadingLineSequence = "setextHeadingLineSequence", setextHeadingText = "setextHeadingText", strong = "strong", strongSequence = "strongSequence", strongText = "strongText", thematicBreak = "thematicBreak", thematicBreakSequence = "thematicBreakSequence", whitespace = "whitespace")
       __obj.asInstanceOf[Types]
     }
     

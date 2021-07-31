@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ratio of two Quantity values - a numerator and a denominator
   */
-@js.native
-trait Ratio extends Element {
+trait Ratio
+  extends StObject
+     with Element {
   
   /**
     * Denominator value
     */
-  var denominator: js.UndefOr[Quantity] = js.native
+  var denominator: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Numerator value
     */
-  var numerator: js.UndefOr[Quantity] = js.native
+  var numerator: js.UndefOr[Quantity] = js.undefined
 }
 object Ratio {
   

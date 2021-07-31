@@ -2,17 +2,15 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XAxis extends StObject {
   
   /** @deprecated use `fixedHeader` */
-  var xAxis: Boolean = js.native
+  var xAxis: Boolean
   
   /** @deprecated use `fixedSelectColumn` */
-  var yAxis: Boolean = js.native
+  var yAxis: Boolean
 }
 object XAxis {
   

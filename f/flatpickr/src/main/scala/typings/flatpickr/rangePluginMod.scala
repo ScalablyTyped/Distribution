@@ -5,24 +5,24 @@ import typings.flatpickr.optionsMod.Plugin
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangePluginMod {
   
-  @JSImport("flatpickr/dist/plugins/rangePlugin", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/rangePlugin", JSImport.Namespace)
   @js.native
-  def default(): Plugin[js.Object] = js.native
-  @JSImport("flatpickr/dist/plugins/rangePlugin", JSImport.Default)
-  @js.native
-  def default(config: Config): Plugin[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
+  @scala.inline
+  def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  
   trait Config extends StObject {
     
-    var input: js.UndefOr[String | HTMLInputElement] = js.native
+    var input: js.UndefOr[String | HTMLInputElement] = js.undefined
     
-    var position: js.UndefOr[left] = js.native
+    var position: js.UndefOr[left] = js.undefined
   }
   object Config {
     

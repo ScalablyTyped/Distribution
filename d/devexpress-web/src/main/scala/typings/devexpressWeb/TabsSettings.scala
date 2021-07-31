@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the information about tab stops.
   */
-@js.native
 trait TabsSettings extends StObject {
   
   /**
     * Specifies the default distance between tab stops.
     */
-  var defaultTabStop: Double = js.native
+  var defaultTabStop: Double
   
   /**
     * Gets or sets a list of tab stops.
     */
-  var tabs: js.Array[TabSettings] = js.native
+  var tabs: js.Array[TabSettings]
 }
 object TabsSettings {
   

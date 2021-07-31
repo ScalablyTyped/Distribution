@@ -2,13 +2,11 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEventConfig extends StObject {
   
-  var timeout: String = js.native
+  var timeout: String
 }
 object JobEventConfig {
   

@@ -2,24 +2,22 @@ package typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Locations.ListLocations.
   */
-@js.native
 trait SchemaListLocationsResponse extends StObject {
   
   /**
     * A list of locations that matches the specified filter in the request.
     */
-  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
   
   /**
     * The standard List next-page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLocationsResponse {
   

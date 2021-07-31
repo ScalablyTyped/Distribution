@@ -3,10 +3,13 @@ package typings.nodeOsUtils
 import typings.nodeOsUtils.cpuMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-os-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-os-utils", "cpu")
   @js.native
@@ -16,13 +19,11 @@ object mod {
   @js.native
   val drive: typings.nodeOsUtils.driveMod.default = js.native
   
-  @JSImport("node-os-utils", "exec")
-  @js.native
-  def exec(command: String): js.Function0[js.Promise[String]] = js.native
+  @scala.inline
+  def exec(command: String): js.Function0[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[String]]]
   
-  @JSImport("node-os-utils", "isNotSupported")
-  @js.native
-  def isNotSupported(res: js.Any): Boolean = js.native
+  @scala.inline
+  def isNotSupported(res: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotSupported")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("node-os-utils", "mem")
   @js.native
@@ -71,7 +72,6 @@ object mod {
   @js.native
   val users: typings.nodeOsUtils.usersMod.default = js.native
   
-  @JSImport("node-os-utils", "wrapExec")
-  @js.native
-  def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = js.native
+  @scala.inline
+  def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapExec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[js.Promise[String]]]]
 }

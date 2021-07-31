@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,8 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * being thrown.
   * @see http://udk.openoffice.org/common/man/typesystem.html
   */
-@js.native
-trait EnumerableMap extends XEnumerableMap {
+trait EnumerableMap
+  extends StObject
+     with XEnumerableMap {
   
   /**
     * creates an instance mapping from the given key type to the given value type
@@ -42,7 +42,7 @@ trait EnumerableMap extends XEnumerableMap {
     * @param ValueType denotes the type of the values in the to-be-created map
     * @throws com::sun::star::beans::IllegalTypeException if KeyType or ValueType are unsupported types. For values, all type classes except com::sun::star::un
     */
-  def create(KeyType: `type`, ValueType: `type`): Unit = js.native
+  def create(KeyType: `type`, ValueType: `type`): Unit
   
   /**
     * creates an instance mapping from the given key type to the given value type
@@ -54,7 +54,7 @@ trait EnumerableMap extends XEnumerableMap {
     * @throws com::sun::star::beans::IllegalTypeException if KeyType or ValueType are unsupported types. For values, all type classes except com::sun::star::un
     * @throws com::sun::star::lang::IllegalArgumentException if any of the given values or keys violates the [key rules]{@link url="#keyrules"} or [value rules
     */
-  def createImmutable(KeyType: `type`, ValueType: `type`, Values: SeqEquiv[Pair[_, _]]): Unit = js.native
+  def createImmutable(KeyType: `type`, ValueType: `type`, Values: SeqEquiv[Pair[js.Any, js.Any]]): Unit
 }
 object EnumerableMap {
   
@@ -69,7 +69,7 @@ object EnumerableMap {
     containsValue: js.Any => Boolean,
     create: (`type`, `type`) => Unit,
     createElementEnumeration: Boolean => XEnumeration,
-    createImmutable: (`type`, `type`, SeqEquiv[Pair[_, _]]) => Unit,
+    createImmutable: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit,
     createKeyEnumeration: Boolean => XEnumeration,
     createValueEnumeration: Boolean => XEnumeration,
     get: js.Any => js.Any,
@@ -91,6 +91,6 @@ object EnumerableMap {
     def setCreate(value: (`type`, `type`) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[_, _]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
+    def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
   }
 }

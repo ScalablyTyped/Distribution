@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskGb extends StObject {
   
   /** Size of the scratch disk, defined in GB. */
-  var diskGb: js.UndefOr[Double] = js.native
+  var diskGb: js.UndefOr[Double] = js.undefined
 }
 object DiskGb {
   

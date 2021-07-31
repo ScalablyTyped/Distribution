@@ -5,45 +5,43 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabBarProps extends StObject {
   
-  var activeColor: js.UndefOr[String] = js.native
+  var activeColor: js.UndefOr[String] = js.undefined
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var activeKey: js.UndefOr[String | Double] = js.native
+  var activeKey: js.UndefOr[String | Double] = js.undefined
   
-  var defaultActiveIndex: js.UndefOr[Double] = js.native
+  var defaultActiveIndex: js.UndefOr[Double] = js.undefined
   
-  var defaultActiveKey: js.UndefOr[String | Double] = js.native
+  var defaultActiveKey: js.UndefOr[String | Double] = js.undefined
   
-  var gutter: js.UndefOr[Double] = js.native
+  var gutter: js.UndefOr[Double] = js.undefined
   
-  var isUnderlineCenter: js.UndefOr[Boolean] = js.native
+  var isUnderlineCenter: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* index */ String, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* index */ String, Unit]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var tabs: js.Array[TabBarArr] = js.native
+  var tabs: js.Array[TabBarArr]
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var underlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var underlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object TabBarProps {
   

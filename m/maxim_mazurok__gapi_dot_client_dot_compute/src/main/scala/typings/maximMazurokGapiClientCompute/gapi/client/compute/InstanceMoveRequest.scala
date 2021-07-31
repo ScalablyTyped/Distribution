@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceMoveRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait InstanceMoveRequest extends StObject {
     * - projects/project/zones/zone
     * - zones/zone
     */
-  var destinationZone: js.UndefOr[String] = js.native
+  var destinationZone: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the target instance to move. This can be a full or partial URL. For example, the following are all valid URLs to an instance:
@@ -22,7 +20,7 @@ trait InstanceMoveRequest extends StObject {
     * - projects/project/zones/zone/instances/instance
     * - zones/zone/instances/instance
     */
-  var targetInstance: js.UndefOr[String] = js.native
+  var targetInstance: js.UndefOr[String] = js.undefined
 }
 object InstanceMoveRequest {
   

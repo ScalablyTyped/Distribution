@@ -2,36 +2,34 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateArchiveRequest extends StObject {
   
   /**
     * The name for the archive to create.
     */
-  var ArchiveName: typings.awsSdk.eventbridgeMod.ArchiveName = js.native
+  var ArchiveName: typings.awsSdk.eventbridgeMod.ArchiveName
   
   /**
     * A description for the archive.
     */
-  var Description: js.UndefOr[ArchiveDescription] = js.native
+  var Description: js.UndefOr[ArchiveDescription] = js.undefined
   
   /**
     * An event pattern to use to filter events sent to the archive.
     */
-  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.native
+  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
   /**
     * The ARN of the event source associated with the archive.
     */
-  var EventSourceArn: Arn = js.native
+  var EventSourceArn: Arn
   
   /**
     * The number of days to retain events for. Default value is 0. If set to 0, events are retained indefinitely
     */
-  var RetentionDays: js.UndefOr[typings.awsSdk.eventbridgeMod.RetentionDays] = js.native
+  var RetentionDays: js.UndefOr[typings.awsSdk.eventbridgeMod.RetentionDays] = js.undefined
 }
 object CreateArchiveRequest {
   

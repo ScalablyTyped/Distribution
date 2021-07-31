@@ -3,18 +3,18 @@ package typings.webappsecCredentialManagement
 import typings.std.BufferSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentity}
   */
-@js.native
-trait PublicKeyCredentialUserEntity extends PublicKeyCredentialEntity {
+trait PublicKeyCredentialUserEntity
+  extends StObject
+     with PublicKeyCredentialEntity {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var id: BufferSource = js.native
+  var id: BufferSource
 }
 object PublicKeyCredentialUserEntity {
   

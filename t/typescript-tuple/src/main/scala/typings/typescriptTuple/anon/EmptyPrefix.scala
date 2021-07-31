@@ -2,28 +2,26 @@ package typings.typescriptTuple.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmptyPrefix[Prefix /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends StObject {
+trait EmptyPrefix[Prefix /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */] extends StObject {
   
-  var empty: Prefix = js.native
+  var empty: Prefix
   
-  var infinite: CODENAME = js.native
+  var infinite: CODENAME
   
-  var nonEmpty: js.Any = js.native
+  var nonEmpty: js.Any
 }
 object EmptyPrefix {
   
   @scala.inline
-  def apply[Prefix /* <: js.Array[_] */, Tuple /* <: js.Array[_] */](empty: Prefix, infinite: CODENAME, nonEmpty: js.Any): EmptyPrefix[Prefix, Tuple] = {
+  def apply[Prefix /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */](empty: Prefix, infinite: CODENAME, nonEmpty: js.Any): EmptyPrefix[Prefix, Tuple] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyPrefix[Prefix, Tuple]]
   }
   
   @scala.inline
-  implicit class EmptyPrefixMutableBuilder[Self <: EmptyPrefix[_, _], Prefix /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] (val x: Self with (EmptyPrefix[Prefix, Tuple])) extends AnyVal {
+  implicit class EmptyPrefixMutableBuilder[Self <: EmptyPrefix[?, ?], Prefix /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */] (val x: Self & (EmptyPrefix[Prefix, Tuple])) extends AnyVal {
     
     @scala.inline
     def setEmpty(value: Prefix): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])

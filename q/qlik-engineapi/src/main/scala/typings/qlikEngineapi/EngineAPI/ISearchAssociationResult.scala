@@ -2,41 +2,39 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchAssociationResult...
   */
-@js.native
 trait ISearchAssociationResult extends StObject {
   
   /**
     * Information about the fields containing search hits.
     */
-  var qFieldDictionaries: js.Array[ISearchFieldDictionary] = js.native
+  var qFieldDictionaries: js.Array[ISearchFieldDictionary]
   
   /**
     * List of the fields that contains search associations.
     */
-  var qFieldNames: js.Array[String] = js.native
+  var qFieldNames: js.Array[String]
   
   /**
     * List of the search terms.
     */
-  var qSearchTerms: js.Array[String] = js.native
+  var qSearchTerms: js.Array[String]
   
   /**
     * List of search results.
     * The maximum number of search results in this list is set by qPage/qCount.
     */
-  var qSearchTermsMatched: js.Array[ISearchMatchCombinations] = js.native
+  var qSearchTermsMatched: js.Array[ISearchMatchCombinations]
   
   /**
     * Total number of search results.
     * This number is not limited by qPage/qCount.
     */
-  var qTotalSearchResults: Double = js.native
+  var qTotalSearchResults: Double
 }
 object ISearchAssociationResult {
   

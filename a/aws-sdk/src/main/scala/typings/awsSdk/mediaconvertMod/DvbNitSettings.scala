@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DvbNitSettings extends StObject {
   
   /**
     * The numeric value placed in the Network Information Table (NIT).
     */
-  var NetworkId: js.UndefOr[integerMin0Max65535] = js.native
+  var NetworkId: js.UndefOr[integerMin0Max65535] = js.undefined
   
   /**
     * The network name text placed in the network_name_descriptor inside the Network Information Table. Maximum length is 256 characters.
     */
-  var NetworkName: js.UndefOr[stringMin1Max256] = js.native
+  var NetworkName: js.UndefOr[stringMin1Max256] = js.undefined
   
   /**
     * The number of milliseconds between instances of this table in the output transport stream.
     */
-  var NitInterval: js.UndefOr[integerMin25Max10000] = js.native
+  var NitInterval: js.UndefOr[integerMin25Max10000] = js.undefined
 }
 object DvbNitSettings {
   

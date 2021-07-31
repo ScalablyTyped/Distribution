@@ -3,30 +3,30 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxTimeEdit control.
   */
-@js.native
-trait ASPxClientTimeEdit extends ASPxClientSpinEditBase {
+trait ASPxClientTimeEdit
+  extends StObject
+     with ASPxClientSpinEditBase {
   
   /**
     * Fires after the selected date has been changed within the time editor.
     */
-  var DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]] = js.native
+  var DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]
   
   /**
     * Gets the date that is the editor's value.
     */
-  def GetDate(): Date = js.native
+  def GetDate(): Date
   
   /**
     * Specifies the date for the editor.
     * @param date A DateTime object that is the date.
     */
-  def SetDate(date: Date): Unit = js.native
+  def SetDate(date: Date): Unit
 }
 object ASPxClientTimeEdit {
   

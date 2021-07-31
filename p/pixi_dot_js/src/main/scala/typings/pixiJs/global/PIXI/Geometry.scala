@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,12 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Geometry")
 @js.native
 class Geometry ()
-  extends typings.pixiJs.PIXI.Geometry {
+  extends StObject
+     with typings.pixiJs.PIXI.Geometry {
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer]) = this()
-  def this(buffers: js.UndefOr[scala.Nothing], attributes: js.Any) = this()
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer], attributes: js.Any) = this()
+  def this(buffers: Unit, attributes: js.Any) = this()
 }
 object Geometry {
+  
+  @JSGlobal("PIXI.Geometry")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * merges an array of geometries into a new single one
@@ -42,7 +46,6 @@ object Geometry {
     * @returns {PIXI.Geometry} shiny new geometry!
     */
   /* static member */
-  @JSGlobal("PIXI.Geometry.merge")
-  @js.native
-  def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = js.native
+  @scala.inline
+  def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Geometry]
 }

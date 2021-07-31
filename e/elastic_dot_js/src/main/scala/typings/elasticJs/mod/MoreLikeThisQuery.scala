@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MoreLikeThisQuery")
 @js.native
-class MoreLikeThisQuery protected () extends Query {
+class MoreLikeThisQuery protected ()
+  extends StObject
+     with Query {
   /*
     Constructs a query where each documents returned are “like” provided text
     */
@@ -105,7 +106,7 @@ class MoreLikeThisQuery protected () extends Query {
     the purposes of document similarity it seems reasonable to assume
     that “a stop word is never interesting”.
     */
-  def stopWords(stopWords: js.Array[_]): MoreLikeThisQuery = js.native
+  def stopWords(stopWords: js.Array[js.Any]): MoreLikeThisQuery = js.native
   
   /*
     Retrieves the internal query object. This is typically used by

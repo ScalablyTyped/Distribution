@@ -3,29 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.VariableDeclarator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableDeclarator_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var definite: Boolean | Null = js.native
+  var definite: Boolean | Null
   
-  var id: LVal = js.native
+  var id: LVal
   
-  var init: Expression | Null = js.native
+  var init: Expression | Null
   
   @JSName("type")
-  var type_VariableDeclarator_ : VariableDeclarator = js.native
+  var type_VariableDeclarator_ : VariableDeclarator
 }
 object VariableDeclarator_ {
   
   @scala.inline
-  def apply(id: LVal, `type`: VariableDeclarator): VariableDeclarator_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: LVal): VariableDeclarator_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], definite = null, end = null, init = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("VariableDeclarator")
     __obj.asInstanceOf[VariableDeclarator_]
   }
   

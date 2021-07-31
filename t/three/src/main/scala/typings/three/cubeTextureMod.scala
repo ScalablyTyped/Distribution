@@ -10,7 +10,6 @@ import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cubeTextureMod {
@@ -31,7 +30,7 @@ object cubeTextureMod {
     	 * @param [encoding=THREE.LinearEncoding]
     	 */
     def this(
-      images: js.UndefOr[js.Array[_]],
+      images: js.UndefOr[js.Array[js.Any]],
       // HTMLImageElement or HTMLCanvasElement
     mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],

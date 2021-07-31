@@ -5,21 +5,19 @@ import typings.lodash.mod.PropertyPath
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashProperty extends StObject {
   
   def apply(path: Double): LodashProperty9x1 = js.native
-  def apply(path: PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  def apply(path: PropertyPath): Unit = js.native
   def apply(path: PropertyPath, `object`: js.Any): js.Any = js.native
   def apply(path: __): LodashProperty11x2 = js.native
   def apply(path: __, `object`: js.Any): LodashProperty12x2 = js.native
   def apply[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T] = js.native
   def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty1x2[TObject] = js.native
   def apply[T](path: __, `object`: NumericDictionary[T]): LodashProperty10x2[T] = js.native
-  def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: TKey): LodashProperty1x1[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey]): LodashProperty1x1[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native

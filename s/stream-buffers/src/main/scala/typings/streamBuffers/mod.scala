@@ -8,7 +8,6 @@ import typings.node.streamMod.WritableOptions
 import typings.streamBuffers.streamBuffersBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,25 +54,26 @@ object mod {
     def getContents(length: Double): Buffer | `false` = js.native
     
     def getContentsAsString(): String | `false` = js.native
-    def getContentsAsString(encoding: js.UndefOr[scala.Nothing], length: Double): String | `false` = js.native
     def getContentsAsString(encoding: String): String | `false` = js.native
     def getContentsAsString(encoding: String, length: Double): String | `false` = js.native
+    def getContentsAsString(encoding: Unit, length: Double): String | `false` = js.native
     
     def maxSize(): Double = js.native
     
     def size(): Double = js.native
   }
   
-  @js.native
-  trait ReadableStreamBufferOptions extends ReadableOptions {
+  trait ReadableStreamBufferOptions
+    extends StObject
+       with ReadableOptions {
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
-    var incrementAmount: js.UndefOr[Double] = js.native
+    var incrementAmount: js.UndefOr[Double] = js.undefined
     
-    var initialSize: js.UndefOr[Double] = js.native
+    var initialSize: js.UndefOr[Double] = js.undefined
   }
   object ReadableStreamBufferOptions {
     
@@ -112,12 +112,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait WritableStreamBufferOptions extends WritableOptions {
+  trait WritableStreamBufferOptions
+    extends StObject
+       with WritableOptions {
     
-    var incrementAmount: js.UndefOr[Double] = js.native
+    var incrementAmount: js.UndefOr[Double] = js.undefined
     
-    var initialSize: js.UndefOr[Double] = js.native
+    var initialSize: js.UndefOr[Double] = js.undefined
   }
   object WritableStreamBufferOptions {
     

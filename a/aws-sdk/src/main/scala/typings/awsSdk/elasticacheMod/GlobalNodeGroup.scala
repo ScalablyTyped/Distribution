@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalNodeGroup extends StObject {
   
   /**
     * The name of the global node group
     */
-  var GlobalNodeGroupId: js.UndefOr[String] = js.native
+  var GlobalNodeGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The keyspace for this node group
     */
-  var Slots: js.UndefOr[String] = js.native
+  var Slots: js.UndefOr[String] = js.undefined
 }
 object GlobalNodeGroup {
   

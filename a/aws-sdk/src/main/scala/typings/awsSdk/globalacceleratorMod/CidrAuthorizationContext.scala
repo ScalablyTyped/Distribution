@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CidrAuthorizationContext extends StObject {
   
   /**
     * The plain-text authorization message for the prefix and account.
     */
-  var Message: GenericString = js.native
+  var Message: GenericString
   
   /**
     * The signed authorization message for the prefix and account.
     */
-  var Signature: GenericString = js.native
+  var Signature: GenericString
 }
 object CidrAuthorizationContext {
   

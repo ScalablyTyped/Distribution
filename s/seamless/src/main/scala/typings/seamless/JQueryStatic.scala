@@ -3,13 +3,11 @@ package typings.seamless
 import typings.seamless.Seamless.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var seamless: Static = js.native
+  var seamless: Static
 }
 object JQueryStatic {
   

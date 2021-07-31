@@ -11,62 +11,56 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("npm-profile", "createToken")
+  @JSImport("npm-profile", JSImport.Namespace)
   @js.native
-  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String]): js.Promise[Token] = js.native
-  @JSImport("npm-profile", "createToken")
-  @js.native
-  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String], options: Options): js.Promise[Token] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("npm-profile", "get")
-  @js.native
-  def get(): js.Promise[ProfileData] = js.native
-  @JSImport("npm-profile", "get")
-  @js.native
-  def get(options: Options): js.Promise[ProfileData] = js.native
+  @scala.inline
+  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String]): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
+  @scala.inline
+  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String], options: Options): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
   
-  @JSImport("npm-profile", "listTokens")
-  @js.native
-  def listTokens(): js.Promise[js.Array[Token]] = js.native
-  @JSImport("npm-profile", "listTokens")
-  @js.native
-  def listTokens(options: Options): js.Promise[js.Array[Token]] = js.native
+  @scala.inline
+  def get(): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[ProfileData]]
+  @scala.inline
+  def get(options: Options): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
   
-  @JSImport("npm-profile", "removeToken")
-  @js.native
-  def removeToken(tokenOrKey: String): js.Promise[Unit] = js.native
-  @JSImport("npm-profile", "removeToken")
-  @js.native
-  def removeToken(tokenOrKey: String, options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def listTokens(): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")().asInstanceOf[js.Promise[js.Array[Token]]]
+  @scala.inline
+  def listTokens(options: Options): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Token]]]
   
-  @JSImport("npm-profile", "set")
-  @js.native
-  def set(updateOptions: UpdateProfileData): js.Promise[ProfileData] = js.native
-  @JSImport("npm-profile", "set")
-  @js.native
-  def set(updateOptions: UpdateProfileData, options: Options): js.Promise[ProfileData] = js.native
+  @scala.inline
+  def removeToken(tokenOrKey: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def removeToken(tokenOrKey: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
-  trait FetchProfileError extends Error {
+  @scala.inline
+  def set(updateOptions: UpdateProfileData): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
+  @scala.inline
+  def set(updateOptions: UpdateProfileData, options: Options): js.Promise[ProfileData] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProfileData]]
+  
+  trait FetchProfileError
+    extends StObject
+       with Error {
     
-    var body: Uint8Array = js.native
+    var body: Uint8Array
     
-    var code: String = js.native
+    var code: String
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
     
-    var method: String = js.native
+    var method: String
     
-    var pkgid: js.UndefOr[String] = js.native
+    var pkgid: js.UndefOr[String] = js.undefined
     
-    var statucCode: Double = js.native
+    var statucCode: Double
     
-    var uri: String = js.native
+    var uri: String
   }
   object FetchProfileError {
     
@@ -152,14 +146,24 @@ object mod {
     def warn: typings.npmProfile.npmProfileStrings.warn = "warn".asInstanceOf[typings.npmProfile.npmProfileStrings.warn]
   }
   
-  type Options = typings.npmRegistryFetch.mod.Options with ProfileFetchOptions
+  trait Options
+    extends StObject
+       with typings.npmRegistryFetch.mod.Options
+       with ProfileFetchOptions
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
   
-  @js.native
   trait PasswordUpdate extends StObject {
     
-    var `new`: String = js.native
+    var `new`: String
     
-    var old: String = js.native
+    var old: String
   }
   object PasswordUpdate {
     
@@ -181,18 +185,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ProfileCredentials extends StObject {
     
     /**
       * default value for email
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * default value for username
       */
-    var username: String = js.native
+    var username: String
   }
   object ProfileCredentials {
     
@@ -213,35 +216,34 @@ object mod {
     }
   }
   
-  @js.native
   trait ProfileData extends StObject {
     
-    var cidr_whitelist: Null | js.Array[String] = js.native
+    var cidr_whitelist: Null | js.Array[String]
     
-    var created: Date | String = js.native
+    var created: Date | String
     
-    var email: String = js.native
+    var email: String
     
-    var email_verified: Boolean = js.native
+    var email_verified: Boolean
     
-    var freenode: js.UndefOr[String] = js.native
+    var freenode: js.UndefOr[String] = js.undefined
     
-    var fullname: js.UndefOr[String] = js.native
+    var fullname: js.UndefOr[String] = js.undefined
     
-    var github: js.UndefOr[String] = js.native
+    var github: js.UndefOr[String] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
     /**
       * two-factor authentication status
       */
-    var tfa: TFAStatus = js.native
+    var tfa: TFAStatus
     
-    var twitter: js.UndefOr[String] = js.native
+    var twitter: js.UndefOr[String] = js.undefined
     
-    var updated: Date | String = js.native
+    var updated: Date | String
   }
   object ProfileData {
     
@@ -253,7 +255,7 @@ object mod {
       name: String,
       updated: Date | String
     ): ProfileData = {
-      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], email_verified = email_verified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], email_verified = email_verified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], cidr_whitelist = null, tfa = null)
       __obj.asInstanceOf[ProfileData]
     }
     
@@ -322,17 +324,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ProfileFetchOptions extends StObject {
     
     /** passed through to prompter */
-    var creds: js.UndefOr[ProfileCredentials] = js.native
+    var creds: js.UndefOr[ProfileCredentials] = js.undefined
     
     /**
       * the hostname of the current machine, to show the user during the WebAuth flow.
       * @default os.hostname()
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
   }
   object ProfileFetchOptions {
     
@@ -368,12 +369,11 @@ object mod {
   */
   type TFAStatus = _TFAStatus | (js.Tuple2[String, String]) | Null | String
   
-  @js.native
   trait TFAStatusUpdate extends StObject {
     
-    var mode: disable | `auth-only` | `auth-and-writes` = js.native
+    var mode: disable | `auth-only` | `auth-and-writes`
     
-    var password: String = js.native
+    var password: String
   }
   object TFAStatusUpdate {
     
@@ -394,38 +394,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
     /**
       * An array of CIDR ranges that this token is allowed to be used from.
       */
-    var cidr_whitelist: js.Array[String] = js.native
+    var cidr_whitelist: js.Array[String]
     
     /**
       * The date and time the token was created
       */
-    var created: Date | String = js.native
+    var created: Date | String
     
     /**
       * A sha512 that can be used to remove this token.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * If true, this token can only be used to download private modules. Critically, it CAN NOT be used to publish.
       */
-    var readonly: Boolean = js.native
+    var readonly: Boolean
     
     /**
       * The first six characters of the token UUID. This should be used by the user to identify which token this is.
       */
-    var token: String | Null = js.native
+    var token: String | Null
     
     /**
       * The date and time the token was updated
       */
-    var updated: Date | String = js.native
+    var updated: Date | String
   }
   object Token {
     
@@ -437,7 +436,7 @@ object mod {
       readonly: Boolean,
       updated: Date | String
     ): Token = {
-      val __obj = js.Dynamic.literal(cidr_whitelist = cidr_whitelist.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cidr_whitelist = cidr_whitelist.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], token = null)
       __obj.asInstanceOf[Token]
     }
     
@@ -470,16 +469,15 @@ object mod {
     }
   }
   
-  @js.native
   trait UpdateOptions extends StObject {
     
     /**
       * This is used to change your password and is not visible (for obvious reasons) through the get() API.
       * The value should be an object with old and new properties, where the former has the user's current password and the latter has the desired new password.
       */
-    var password: js.UndefOr[PasswordUpdate] = js.native
+    var password: js.UndefOr[PasswordUpdate] = js.undefined
     
-    var tfa: js.UndefOr[TFAStatusUpdate] = js.native
+    var tfa: js.UndefOr[TFAStatusUpdate] = js.undefined
   }
   object UpdateOptions {
     
@@ -507,32 +505,31 @@ object mod {
   }
   
   /* Inlined std.Partial<std.Omit<npm-profile.npm-profile.ProfileData, 'tfa' | 'created' | 'updated' | 'email_verified'>> & npm-profile.npm-profile.UpdateOptions */
-  @js.native
   trait UpdateProfileData extends StObject {
     
-    var cidr_whitelist: js.UndefOr[Null | js.Array[String]] = js.native
+    var cidr_whitelist: js.UndefOr[Null | js.Array[String]] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var freenode: js.UndefOr[String] = js.native
+    var freenode: js.UndefOr[String] = js.undefined
     
-    var fullname: js.UndefOr[String] = js.native
+    var fullname: js.UndefOr[String] = js.undefined
     
-    var github: js.UndefOr[String] = js.native
+    var github: js.UndefOr[String] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * This is used to change your password and is not visible (for obvious reasons) through the get() API.
       * The value should be an object with old and new properties, where the former has the user's current password and the latter has the desired new password.
       */
-    var password: js.UndefOr[PasswordUpdate] = js.native
+    var password: js.UndefOr[PasswordUpdate] = js.undefined
     
-    var tfa: js.UndefOr[TFAStatusUpdate] = js.native
+    var tfa: js.UndefOr[TFAStatusUpdate] = js.undefined
     
-    var twitter: js.UndefOr[String] = js.native
+    var twitter: js.UndefOr[String] = js.undefined
   }
   object UpdateProfileData {
     
@@ -619,14 +616,13 @@ object mod {
     
     object NodeJS {
       
-      @js.native
       trait Process extends StObject {
         
         @JSName("emit")
-        def emit_log(event: log, logLevel: LogLevel, any: String*): Boolean = js.native
+        def emit_log(event: log, logLevel: LogLevel, any: String*): Boolean
         
         @JSName("on")
-        def on_log(event: `log `, listener: js.Function1[/* logLevel */ LogLevel, Unit]): this.type = js.native
+        def on_log(event: `log `, listener: js.Function1[/* logLevel */ LogLevel, Unit]): this.type
       }
       object Process {
         

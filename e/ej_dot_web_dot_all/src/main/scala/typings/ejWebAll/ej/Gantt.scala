@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.ej.Gantt.EjPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gantt extends Widget_ {
+trait Gantt
+  extends StObject
+     with Widget_ {
   
   /** To add a new item in Gantt
     * @param {any} Item to add in Gantt row.
@@ -67,10 +68,10 @@ trait Gantt extends Widget_ {
     * @param {boolean} optionalPass the multiple exporting value as true/false
     * @returns {void}
     */
-  def export(action: String): Unit = js.native
-  def export(action: String, serverEvent: js.UndefOr[scala.Nothing], multipleExport: Boolean): Unit = js.native
-  def export(action: String, serverEvent: String): Unit = js.native
-  def export(action: String, serverEvent: String, multipleExport: Boolean): Unit = js.native
+  def `export`(action: String): Unit = js.native
+  def `export`(action: String, serverEvent: String): Unit = js.native
+  def `export`(action: String, serverEvent: String, multipleExport: Boolean): Unit = js.native
+  def `export`(action: String, serverEvent: Unit, multipleExport: Boolean): Unit = js.native
   
   /** Sends filtering request to filter a column in Gantt dynamically.
     * @param {string} Pass the field name of the column.
@@ -81,19 +82,19 @@ trait Gantt extends Widget_ {
     * @returns {void}
     */
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String): Unit = js.native
-  def filterColumn(
-    fieldName: String,
-    filterOperator: String,
-    filterValue: String,
-    predicate: js.UndefOr[scala.Nothing],
-    matchCase: Boolean
-  ): Unit = js.native
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String, predicate: String): Unit = js.native
   def filterColumn(
     fieldName: String,
     filterOperator: String,
     filterValue: String,
     predicate: String,
+    matchCase: Boolean
+  ): Unit = js.native
+  def filterColumn(
+    fieldName: String,
+    filterOperator: String,
+    filterValue: String,
+    predicate: Unit,
     matchCase: Boolean
   ): Unit = js.native
   
@@ -159,13 +160,13 @@ trait Gantt extends Widget_ {
     * @param {boolean} Defines that we need to preserve the previously selected cells of not
     * @returns {void}
     */
-  def selectCells(Indexes: js.Array[_], preservePreviousSelectedCell: Boolean): Unit = js.native
+  def selectCells(Indexes: js.Array[js.Any], preservePreviousSelectedCell: Boolean): Unit = js.native
   
   /** To select multiple rows dynamically.
     * @param {any[]} array of row indexes to select
     * @returns {void}
     */
-  def selectMultipleRows(rowIndexes: js.Array[_]): Unit = js.native
+  def selectMultipleRows(rowIndexes: js.Array[js.Any]): Unit = js.native
   
   /** Method to set scroll top value for Gantt control.
     * @param {number} Pass a value to set top position of vertical scroll bar.
@@ -250,11 +251,15 @@ object Gantt {
     
     ///you can begin the editing at single click
     @js.native
-    sealed trait Click extends BeginEditAction
+    sealed trait Click
+      extends StObject
+         with BeginEditAction
     
     ///you can begin the editing at double click
     @js.native
-    sealed trait DblClick extends BeginEditAction
+    sealed trait DblClick
+      extends StObject
+         with BeginEditAction
   }
   
   @js.native
@@ -265,15 +270,21 @@ object Gantt {
     
     ///Sets the Duration Unit as day.
     @js.native
-    sealed trait Day extends DurationUnit
+    sealed trait Day
+      extends StObject
+         with DurationUnit
     
     ///Sets the Duration Unit as hour.
     @js.native
-    sealed trait Hour extends DurationUnit
+    sealed trait Hour
+      extends StObject
+         with DurationUnit
     
     ///Sets the Duration Unit as minute.
     @js.native
-    sealed trait Minute extends DurationUnit
+    sealed trait Minute
+      extends StObject
+         with DurationUnit
   }
   
   @js.native
@@ -284,23 +295,33 @@ object Gantt {
     
     ///you can add a new row to above selected row.
     @js.native
-    sealed trait AboveSelectedRow extends RowPosition
+    sealed trait AboveSelectedRow
+      extends StObject
+         with RowPosition
     
     ///you can add a new row to below selected row.
     @js.native
-    sealed trait BelowSelectedRow extends RowPosition
+    sealed trait BelowSelectedRow
+      extends StObject
+         with RowPosition
     
     ///you can add a new row at bottom.
     @js.native
-    sealed trait Bottom extends RowPosition
+    sealed trait Bottom
+      extends StObject
+         with RowPosition
     
     ///you can add a new row as a child for selected row.
     @js.native
-    sealed trait Child extends RowPosition
+    sealed trait Child
+      extends StObject
+         with RowPosition
     
     ///you can add a new row at top.
     @js.native
-    sealed trait Top extends RowPosition
+    sealed trait Top
+      extends StObject
+         with RowPosition
   }
   
   @js.native
@@ -311,23 +332,33 @@ object Gantt {
     
     ///Sets day Schedule Mode.
     @js.native
-    sealed trait Day extends ScheduleHeaderType
+    sealed trait Day
+      extends StObject
+         with ScheduleHeaderType
     
     ///Sets hour Schedule Mode.
     @js.native
-    sealed trait Hour extends ScheduleHeaderType
+    sealed trait Hour
+      extends StObject
+         with ScheduleHeaderType
     
     ///Sets month Schedule Mode.
     @js.native
-    sealed trait Month extends ScheduleHeaderType
+    sealed trait Month
+      extends StObject
+         with ScheduleHeaderType
     
     ///Sets week Schedule Mode.
     @js.native
-    sealed trait Week extends ScheduleHeaderType
+    sealed trait Week
+      extends StObject
+         with ScheduleHeaderType
     
     ///Sets year Schedule Mode.
     @js.native
-    sealed trait Year extends ScheduleHeaderType
+    sealed trait Year
+      extends StObject
+         with ScheduleHeaderType
   }
   
   @js.native
@@ -338,11 +369,15 @@ object Gantt {
     
     ///you can select a cell.
     @js.native
-    sealed trait Cell extends SelectionMode
+    sealed trait Cell
+      extends StObject
+         with SelectionMode
     
     ///you can select a row.
     @js.native
-    sealed trait Row extends SelectionMode
+    sealed trait Row
+      extends StObject
+         with SelectionMode
   }
   
   @js.native
@@ -353,11 +388,15 @@ object Gantt {
     
     ///you can select a multiple row.
     @js.native
-    sealed trait Multiple extends SelectionType
+    sealed trait Multiple
+      extends StObject
+         with SelectionType
     
     ///you can select a single row.
     @js.native
-    sealed trait Single extends SelectionType
+    sealed trait Single
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -368,15 +407,21 @@ object Gantt {
     
     ///All the tasks in the project will be displayed in auto scheduled mode, where the tasks are scheduled automatically over non-working days and holidays.
     @js.native
-    sealed trait Auto extends TaskSchedulingMode
+    sealed trait Auto
+      extends StObject
+         with TaskSchedulingMode
     
     ///Project consists of tasks with both auto and manually scheduled modes, based on the datasource values
     @js.native
-    sealed trait Custom extends TaskSchedulingMode
+    sealed trait Custom
+      extends StObject
+         with TaskSchedulingMode
     
     ///All the tasks in the project will be displayed in manually scheduled mode.
     @js.native
-    sealed trait Manual extends TaskSchedulingMode
+    sealed trait Manual
+      extends StObject
+         with TaskSchedulingMode
   }
   
   @js.native
@@ -387,15 +432,21 @@ object Gantt {
     
     ///Duration value remains constant while editing work and resource unit values.
     @js.native
-    sealed trait FixedDuration extends TaskType
+    sealed trait FixedDuration
+      extends StObject
+         with TaskType
     
     ///Resource unit remains constant while editing the work and duration values.
     @js.native
-    sealed trait FixedUnit extends TaskType
+    sealed trait FixedUnit
+      extends StObject
+         with TaskType
     
     ///Work value of a task remains constant while editing duration and resource unit values.
     @js.native
-    sealed trait FixedWork extends TaskType
+    sealed trait FixedWork
+      extends StObject
+         with TaskType
   }
   
   @js.native
@@ -406,19 +457,27 @@ object Gantt {
     
     ///The round-off value will be automatically calculated based on the data source values.
     @js.native
-    sealed trait Auto extends TimescaleRoundMode
+    sealed trait Auto
+      extends StObject
+         with TimescaleRoundMode
     
     ///Schedule headers start date will round off to the immediate month
     @js.native
-    sealed trait Month extends TimescaleRoundMode
+    sealed trait Month
+      extends StObject
+         with TimescaleRoundMode
     
     ///Schedule header start date will round-off to the immediate week.
     @js.native
-    sealed trait Week extends TimescaleRoundMode
+    sealed trait Week
+      extends StObject
+         with TimescaleRoundMode
     
     ///Schedule headers start date will round off to the immediate year
     @js.native
-    sealed trait Year extends TimescaleRoundMode
+    sealed trait Year
+      extends StObject
+         with TimescaleRoundMode
   }
   
   @js.native
@@ -429,63 +488,93 @@ object Gantt {
     
     ///Enables the add icon in toolbar
     @js.native
-    sealed trait Add extends ToolbarItems
+    sealed trait Add
+      extends StObject
+         with ToolbarItems
     
     ///Enables the cancel icon in toolbar
     @js.native
-    sealed trait Cancel extends ToolbarItems
+    sealed trait Cancel
+      extends StObject
+         with ToolbarItems
     
     ///Enables the collapse all icon in toolbar
     @js.native
-    sealed trait CollapseAll extends ToolbarItems
+    sealed trait CollapseAll
+      extends StObject
+         with ToolbarItems
     
     ///Enables the critical path icon in toolbar
     @js.native
-    sealed trait CriticalPath extends ToolbarItems
+    sealed trait CriticalPath
+      extends StObject
+         with ToolbarItems
     
     ///Enables the edit icon in toolbar
     @js.native
-    sealed trait Delete extends ToolbarItems
+    sealed trait Delete
+      extends StObject
+         with ToolbarItems
     
     ///Enables the edit icon in toolbar
     @js.native
-    sealed trait Edit extends ToolbarItems
+    sealed trait Edit
+      extends StObject
+         with ToolbarItems
     
     ///Enables the excel export toolbar icon
     @js.native
-    sealed trait ExcelExport extends ToolbarItems
+    sealed trait ExcelExport
+      extends StObject
+         with ToolbarItems
     
     ///Enables the expand all icon in toolbar
     @js.native
-    sealed trait ExpandAll extends ToolbarItems
+    sealed trait ExpandAll
+      extends StObject
+         with ToolbarItems
     
     ///Enables the indent icon in toolbar
     @js.native
-    sealed trait Indent extends ToolbarItems
+    sealed trait Indent
+      extends StObject
+         with ToolbarItems
     
     ///Enables the next time span icon in toolbar
     @js.native
-    sealed trait NextTimeSpan extends ToolbarItems
+    sealed trait NextTimeSpan
+      extends StObject
+         with ToolbarItems
     
     ///Enables the outdent icon in toolbar
     @js.native
-    sealed trait Outdent extends ToolbarItems
+    sealed trait Outdent
+      extends StObject
+         with ToolbarItems
     
     ///Enables the pdf export toolbar icon
     @js.native
-    sealed trait PdfExport extends ToolbarItems
+    sealed trait PdfExport
+      extends StObject
+         with ToolbarItems
     
     ///Enables the previous time span icon in toolbar
     @js.native
-    sealed trait PrevTimeSpan extends ToolbarItems
+    sealed trait PrevTimeSpan
+      extends StObject
+         with ToolbarItems
     
     ///Enables the search icon in toolbar
     @js.native
-    sealed trait Search extends ToolbarItems
+    sealed trait Search
+      extends StObject
+         with ToolbarItems
     
     ///Enables the update icon in toolbar
     @js.native
-    sealed trait Update extends ToolbarItems
+    sealed trait Update
+      extends StObject
+         with ToolbarItems
   }
   
   @js.native
@@ -496,15 +585,21 @@ object Gantt {
     
     ///Displays the project in histogram view in Gantt
     @js.native
-    sealed trait HistogramView extends ViewType
+    sealed trait HistogramView
+      extends StObject
+         with ViewType
     
     ///Displays the project in task view in Gantt.
     @js.native
-    sealed trait ProjectView extends ViewType
+    sealed trait ProjectView
+      extends StObject
+         with ViewType
     
     ///Displays the project in resource allocation view in Gantt.
     @js.native
-    sealed trait ResourceView extends ViewType
+    sealed trait ResourceView
+      extends StObject
+         with ViewType
   }
   
   @js.native
@@ -515,15 +610,21 @@ object Gantt {
     
     ///Displays the work involved in a task in days.
     @js.native
-    sealed trait Day extends WorkUnit
+    sealed trait Day
+      extends StObject
+         with WorkUnit
     
     ///Displays the work involved in a task in hours.
     @js.native
-    sealed trait Hour extends WorkUnit
+    sealed trait Hour
+      extends StObject
+         with WorkUnit
     
     ///Displays the work involved in a task in minutes
     @js.native
-    sealed trait Minute extends WorkUnit
+    sealed trait Minute
+      extends StObject
+         with WorkUnit
   }
   
   @js.native
@@ -534,23 +635,33 @@ object Gantt {
     
     ///Sets the interval automatically according with schedule start and end date.
     @js.native
-    sealed trait Auto extends minutesPerInterval
+    sealed trait Auto
+      extends StObject
+         with minutesPerInterval
     
     ///Sets fifteen minute intervals per hour.
     @js.native
-    sealed trait FifteenMinutes extends minutesPerInterval
+    sealed trait FifteenMinutes
+      extends StObject
+         with minutesPerInterval
     
     ///Sets Five minute intervals per hour.
     @js.native
-    sealed trait FiveMinutes extends minutesPerInterval
+    sealed trait FiveMinutes
+      extends StObject
+         with minutesPerInterval
     
     ///Sets one minute intervals per hour.
     @js.native
-    sealed trait OneMinute extends minutesPerInterval
+    sealed trait OneMinute
+      extends StObject
+         with minutesPerInterval
     
     ///Sets thirty minute intervals per hour.
     @js.native
-    sealed trait ThirtyMinutes extends minutesPerInterval
+    sealed trait ThirtyMinutes
+      extends StObject
+         with minutesPerInterval
   }
   
   @js.native
@@ -561,55 +672,58 @@ object Gantt {
     
     ///Sets twenty four hour timescale.
     @js.native
-    sealed trait TimeScale24Hours extends workingTimeScale
+    sealed trait TimeScale24Hours
+      extends StObject
+         with workingTimeScale
     
     ///Sets eight hour timescale.
     @js.native
-    sealed trait TimeScale8Hours extends workingTimeScale
+    sealed trait TimeScale8Hours
+      extends StObject
+         with workingTimeScale
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current grouped column field name.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the direction of sorting ascending or descending
       */
-    var columnSortDirection: js.UndefOr[String] = js.native
+    var columnSortDirection: js.UndefOr[String] = js.undefined
     
     /** Returns the data of deleting element.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Returns the edit dialog element.
       */
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
     /** Returns the value of searching element.
       */
-    var keyValue: js.UndefOr[String] = js.native
+    var keyValue: js.UndefOr[String] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns selected record index
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -684,44 +798,43 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current grouped column field name.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the direction of sorting ascending or descending
       */
-    var columnSortDirection: js.UndefOr[String] = js.native
+    var columnSortDirection: js.UndefOr[String] = js.undefined
     
     /** Returns the data of deleted element.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Returns the value of searched element.
       */
-    var keyValue: js.UndefOr[String] = js.native
+    var keyValue: js.UndefOr[String] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns selected record index
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -790,21 +903,20 @@ object Gantt {
     }
   }
   
-  @js.native
   trait AddDialogField extends StObject {
     
     /** Specifies the custom column field was displayed in General tab of add dialog or not.
       * @Default {false}
       */
-    var displayInGeneralTab: js.UndefOr[Boolean] = js.native
+    var displayInGeneralTab: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies editType of fields to be included in the add dialog in Gantt
       */
-    var editType: js.UndefOr[String] = js.native
+    var editType: js.UndefOr[String] = js.undefined
     
     /** Specifies mapping name to include required fields in Gantt
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
   }
   object AddDialogField {
     
@@ -837,28 +949,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait BeginEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column Index of cell belongs.
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object BeginEditEventArgs {
     
@@ -903,56 +1014,55 @@ object Gantt {
     }
   }
   
-  @js.native
   trait CellSelectedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell index on the selection.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected cell index
       */
-    var previousCellIndex: js.UndefOr[js.Any] = js.native
+    var previousCellIndex: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row data
       */
-    var previousData: js.UndefOr[js.Any] = js.native
+    var previousData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row index
       */
-    var previousRowIndex: js.UndefOr[js.Any] = js.native
+    var previousRowIndex: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected cell element
       */
-    var previousTargetCell: js.UndefOr[js.Any] = js.native
+    var previousTargetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row element
       */
-    var previousTargetRow: js.UndefOr[js.Any] = js.native
+    var previousTargetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on the selection
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.native
+    var targetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -1039,36 +1149,35 @@ object Gantt {
     }
   }
   
-  @js.native
   trait CellSelectingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell index on the selection.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on the selection
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.native
+    var targetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object CellSelectingEventArgs {
     
@@ -1125,28 +1234,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait CollapsedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of collapsed record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of collapsed record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns Request Type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
   }
   object CollapsedEventArgs {
     
@@ -1191,24 +1299,23 @@ object Gantt {
     }
   }
   
-  @js.native
   trait CollapsingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of edited cell record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of collapsing record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
   }
   object CollapsingEventArgs {
     
@@ -1247,28 +1354,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ContextMenuOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the default context menu items to which we add custom items.
       */
-    var contextMenuItems: js.UndefOr[js.Array[_]] = js.native
+    var contextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextMenuOpenEventArgs {
     
@@ -1288,7 +1394,7 @@ object Gantt {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setContextMenuItems(value: js.Array[_]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
+      def setContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
@@ -1316,20 +1422,19 @@ object Gantt {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Gantt model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -1362,23 +1467,22 @@ object Gantt {
     }
   }
   
-  @js.native
   trait DragTooltip extends StObject {
     
     /** Specifies option to enable/disable tooltip while drag and drop a row.
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the data source fields to be displayed in the drag tooltip.
       * @Default {[]}
       */
-    var tooltipItems: js.UndefOr[js.Array[_]] = js.native
+    var tooltipItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the custom template for drag tooltip.
       * @Default {null}
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
   }
   object DragTooltip {
     
@@ -1398,7 +1502,7 @@ object Gantt {
       def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
       @scala.inline
-      def setTooltipItems(value: js.Array[_]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
+      def setTooltipItems(value: js.Array[js.Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTooltipItemsUndefined: Self = StObject.set(x, "tooltipItems", js.undefined)
@@ -1414,21 +1518,20 @@ object Gantt {
     }
   }
   
-  @js.native
   trait EditDialogField extends StObject {
     
     /** Specifies the custom column field was displayed in General tab of edit dialog or not.
       * @Default {false}
       */
-    var displayInGeneralTab: js.UndefOr[Boolean] = js.native
+    var displayInGeneralTab: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies editType of fields to be included in the edit dialog in Gantt
       */
-    var editType: js.UndefOr[String] = js.native
+    var editType: js.UndefOr[String] = js.undefined
     
     /** Specifies mapping name to include required fields in Gantt
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
   }
   object EditDialogField {
     
@@ -1461,48 +1564,47 @@ object Gantt {
     }
   }
   
-  @js.native
   trait EditSettings extends StObject {
     
     /** Enables or disables add record icon in Gantt toolbar
       * @Default {false}
       */
-    var allowAdding: js.UndefOr[Boolean] = js.native
+    var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables delete icon in Gantt toolbar
       * @Default {false}
       */
-    var allowDeleting: js.UndefOr[Boolean] = js.native
+    var allowDeleting: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the option for enabling or disabling editing in Gantt grid part
       * @Default {false}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the option for enabling or disabling indent action in Gantt.
       * @Default {false}
       */
-    var allowIndent: js.UndefOr[Boolean] = js.native
+    var allowIndent: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mouse action whether single click or double click to begin the editing
       * @Default {ej.Gantt.BeginEditAction.DblClick}
       */
-    var beginEditAction: js.UndefOr[BeginEditAction | String] = js.native
+    var beginEditAction: js.UndefOr[BeginEditAction | String] = js.undefined
     
     /** Specifies the edit mode in Gantt, &quot;normal&quot; is for dialog editing ,&quot;cellEditing&quot; is for cell type editing
       * @Default {normal}
       */
-    var editMode: js.UndefOr[String] = js.native
+    var editMode: js.UndefOr[String] = js.undefined
     
     /** Specifies the position where the new row has to be added.
       * @Default {ej.Gantt.RowPosition.BelowSelectedRow}
       */
-    var rowPosition: js.UndefOr[RowPosition | String] = js.native
+    var rowPosition: js.UndefOr[RowPosition | String] = js.undefined
     
     /** Enable or disable the confirmation dialog while deleting the record.
       * @Default {false}
       */
-    var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.native
+    var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
   object EditSettings {
     
@@ -1565,24 +1667,23 @@ object Gantt {
     }
   }
   
-  @js.native
   trait EjPredicate extends StObject {
     
     /** Pass the field name of the column.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** string/integer/date operator.
       */
-    var filterOperator: js.UndefOr[String] = js.native
+    var filterOperator: js.UndefOr[String] = js.undefined
     
     /** Pass the value to be filtered in a column.
       */
-    var filterValue: js.UndefOr[String] = js.native
+    var filterValue: js.UndefOr[String] = js.undefined
     
     /** Optional - pass the ignore case value as true/false.
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
   }
   object EjPredicate {
     
@@ -1621,32 +1722,31 @@ object Gantt {
     }
   }
   
-  @js.native
   trait EndEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column name of edited cell belongs.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the column object of edited cell belongs.
       */
-    var columnObject: js.UndefOr[js.Any] = js.native
+    var columnObject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the data of edited cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object EndEditEventArgs {
     
@@ -1697,28 +1797,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ExpandedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of expanded record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns Request Type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
   }
   object ExpandedEventArgs {
     
@@ -1763,24 +1862,23 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ExpandingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of edited cell record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of record.
       */
-    var recordIndex: js.UndefOr[js.Any] = js.native
+    var recordIndex: js.UndefOr[js.Any] = js.undefined
   }
   object ExpandingEventArgs {
     
@@ -1819,13 +1917,12 @@ object Gantt {
     }
   }
   
-  @js.native
   trait FilterSettings extends StObject {
     
     /** Specifies the column collection for filtering the Gantt content on initial load
       * @Default {[]}
       */
-    var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.native
+    var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.undefined
   }
   object FilterSettings {
     
@@ -1849,24 +1946,23 @@ object Gantt {
     }
   }
   
-  @js.native
   trait FilterSettingsFilteredColumn extends StObject {
     
     /** Specifies the field where filtering has to be performed.
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** Specifies the filter condition to filtered column. See operator
       */
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
     /** Specifies the predicate(and/or) value to perform filtering.
       */
-    var predicate: js.UndefOr[String] = js.native
+    var predicate: js.UndefOr[String] = js.undefined
     
     /** Specifies the value to be filtered in Gantt.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FilterSettingsFilteredColumn {
     
@@ -1905,20 +2001,19 @@ object Gantt {
     }
   }
   
-  @js.native
   trait Holiday extends StObject {
     
     /** Specifies the background color for holiday date in Gantt Schedule
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Specifies holiday date to be displayed in Gantt
       */
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
     /** Specifies the label to be displayed for rendered holiday in Gantt
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
   }
   object Holiday {
     
@@ -1951,20 +2046,19 @@ object Gantt {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Gantt model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1997,680 +2091,679 @@ object Gantt {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered for every Gantt action before its starts.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered for every Gantt action success event.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Specifies the fields to be included in the add dialog in Gantt
       * @Default {[]}
       */
-    var addDialogFields: js.UndefOr[js.Array[AddDialogField]] = js.native
+    var addDialogFields: js.UndefOr[js.Array[AddDialogField]] = js.undefined
     
     /** Enables or disables the ability to resize column.
       * @Default {false}
       */
-    var allowColumnResize: js.UndefOr[Boolean] = js.native
+    var allowColumnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to drag and drop the row interactively to reorder the rows
       * @Default {false}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables Gantt chart editing in Gantt
       * @Default {true}
       */
-    var allowGanttChartEditing: js.UndefOr[Boolean] = js.native
+    var allowGanttChartEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables Keyboard navigation in Gantt
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies enabling or disabling multiple sorting for Gantt columns
       * @Default {false}
       */
-    var allowMultiSorting: js.UndefOr[Boolean] = js.native
+    var allowMultiSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the option for multiple exporting
       * @Default {false}
       */
-    var allowMultipleExporting: js.UndefOr[Boolean] = js.native
+    var allowMultipleExporting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the interactive selection of a row.
       * @Default {true}
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables sorting. When enabled, we can sort the column by clicking on the column.
       * @Default {false}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the rendering of unscheduled tasks.
       * @Default {false}
       */
-    var allowUnscheduledTask: js.UndefOr[Boolean] = js.native
+    var allowUnscheduledTask: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the baseline background color in Gantt
       * @Default {#fba41c}
       */
-    var baselineColor: js.UndefOr[String] = js.native
+    var baselineColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for baseline end date in datasource
       */
-    var baselineEndDateMapping: js.UndefOr[String] = js.native
+    var baselineEndDateMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for baseline start date of a task in datasource
       */
-    var baselineStartDateMapping: js.UndefOr[String] = js.native
+    var baselineStartDateMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered while enter the edit mode in the TreeGrid cell
       */
-    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.native
+    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.undefined
     
     /** Triggered after selected a cell
       */
-    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.native
+    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggered before selecting a cell
       */
-    var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.native
+    var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies the template for cell tooltip
       * @Default {null}
       */
-    var cellTooltipTemplate: js.UndefOr[String] = js.native
+    var cellTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for sub tasks in datasource
       */
-    var childMapping: js.UndefOr[String] = js.native
+    var childMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered after collapsed the Gantt record
       */
-    var collapsed: js.UndefOr[js.Function1[/* e */ CollapsedEventArgs, Unit]] = js.native
+    var collapsed: js.UndefOr[js.Function1[/* e */ CollapsedEventArgs, Unit]] = js.undefined
     
     /** Triggered while collapsing the Gantt record
       */
-    var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.native
+    var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.undefined
     
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
       * @Default {[]}
       */
-    var columnDialogFields: js.UndefOr[js.Array[_]] = js.native
+    var columnDialogFields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the background of connector lines in Gantt
       */
-    var connectorLineBackground: js.UndefOr[String] = js.native
+    var connectorLineBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the connector lines in Gantt
       * @Default {1}
       */
-    var connectorlineWidth: js.UndefOr[Double] = js.native
+    var connectorlineWidth: js.UndefOr[Double] = js.undefined
     
     /** Triggered while Context Menu is rendered in Gantt control
       */
-    var contextMenuOpen: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEventArgs, Unit]] = js.native
+    var contextMenuOpen: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEventArgs, Unit]] = js.undefined
     
     /** Triggered when Gantt is rendered completely.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class for Gantt to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Collection of data or hierarchical data to represent in Gantt
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
       * @Default {MM/dd/yyyy}
       */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the customized working time for tasks in Gantt
       * @Default {[{ from: 08:00 AM, to: 12:00 PM , background:   }, { from: 01:00 PM, to: 05:00 PM , background:  }]}
       */
-    var dayWorkingTime: js.UndefOr[js.Array[_]] = js.native
+    var dayWorkingTime: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Option for customizing the drag tooltip while reordering the rows.
       */
-    var dragTooltip: js.UndefOr[DragTooltip] = js.native
+    var dragTooltip: js.UndefOr[DragTooltip] = js.undefined
     
     /** Specifies the mapping property path for duration of a task in datasource
       */
-    var durationMapping: js.UndefOr[String] = js.native
+    var durationMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the duration unit for each tasks whether days or hours or minutes
       * @Default {ej.Gantt.DurationUnit.Day}
       */
-    var durationUnit: js.UndefOr[DurationUnit | String] = js.native
+    var durationUnit: js.UndefOr[DurationUnit | String] = js.undefined
     
     /** Specifies the mapping property path for task duration unit in datasource
       */
-    var durationUnitMapping: js.UndefOr[String] = js.native
+    var durationUnitMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the fields to be included in the edit dialog in Gantt
       * @Default {[]}
       */
-    var editDialogFields: js.UndefOr[js.Array[EditDialogField]] = js.native
+    var editDialogFields: js.UndefOr[js.Array[EditDialogField]] = js.undefined
     
     /** Specifies the editSettings options in Gantt.
       */
-    var editSettings: js.UndefOr[EditSettings] = js.native
+    var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Enables or Disables enableAltRow row effect in Gantt
       * @Default {true}
       */
-    var enableAltRow: js.UndefOr[Boolean] = js.native
+    var enableAltRow: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the collapse all records when loading the Gantt.
       * @Default {false}
       */
-    var enableCollapseAll: js.UndefOr[Boolean] = js.native
+    var enableCollapseAll: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the contextmenu for Gantt , when enabled contextmenu appears on right clicking Gantt
       * @Default {false}
       */
-    var enableContextMenu: js.UndefOr[Boolean] = js.native
+    var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
       * @Default {true}
       */
-    var enablePredecessorValidation: js.UndefOr[Boolean] = js.native
+    var enablePredecessorValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether we can edit the progress of a task interactively in Gantt.
       * @Default {true}
       */
-    var enableProgressBarResizing: js.UndefOr[Boolean] = js.native
+    var enableProgressBarResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the option for dynamically updating the Gantt size on window resizing
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
       * @Default {false}
       */
-    var enableSerialNumber: js.UndefOr[Boolean] = js.native
+    var enableSerialNumber: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables tooltip while editing (dragging/resizing) the taskbar.
       * @Default {true}
       */
-    var enableTaskbarDragTooltip: js.UndefOr[Boolean] = js.native
+    var enableTaskbarDragTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables tooltip for taskbar.
       * @Default {true}
       */
-    var enableTaskbarTooltip: js.UndefOr[Boolean] = js.native
+    var enableTaskbarTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/Disables virtualization for rendering Gantt items.
       * @Default {false}
       */
-    var enableVirtualization: js.UndefOr[Boolean] = js.native
+    var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables work breakdown structure column.
       * @Default {false}
       */
-    var enableWBS: js.UndefOr[Boolean] = js.native
+    var enableWBS: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables WBS predecessor column.
       * @Default {false}
       */
-    var enableWBSPredecessor: js.UndefOr[Boolean] = js.native
+    var enableWBSPredecessor: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mapping property path for end Date of a task in datasource
       */
-    var endDateMapping: js.UndefOr[String] = js.native
+    var endDateMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered after save the modified cellValue in Gantt.
       */
-    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.native
+    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.undefined
     
     /** Specifies the mapping property path for the expand status of a record in data source.
       */
-    var expandStateMapping: js.UndefOr[String] = js.native
+    var expandStateMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered after expand the record
       */
-    var expanded: js.UndefOr[js.Function1[/* e */ ExpandedEventArgs, Unit]] = js.native
+    var expanded: js.UndefOr[js.Function1[/* e */ ExpandedEventArgs, Unit]] = js.undefined
     
     /** Triggered while expanding the Gantt record
       */
-    var expanding: js.UndefOr[js.Function1[/* e */ ExpandingEventArgs, Unit]] = js.native
+    var expanding: js.UndefOr[js.Function1[/* e */ ExpandingEventArgs, Unit]] = js.undefined
     
     /** Options for filtering and customizing filter actions.
       */
-    var filterSettings: js.UndefOr[FilterSettings] = js.native
+    var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Specifies the data collection for grouping the resources in resource allocation view in Gantt.
       * @Default {[]}
       */
-    var groupCollection: js.UndefOr[js.Array[_]] = js.native
+    var groupCollection: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Default Value
       */
-    var groupIdMapping: js.UndefOr[String] = js.native
+    var groupIdMapping: js.UndefOr[String] = js.undefined
     
     /** Default Value
       */
-    var groupNameMapping: js.UndefOr[String] = js.native
+    var groupNameMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to highlight the non working time in Gantt.
       * @Default {false}
       */
-    var highlightNonWorkingTime: js.UndefOr[Boolean] = js.native
+    var highlightNonWorkingTime: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to highlight the weekends in Gantt .
       * @Default {true}
       */
-    var highlightWeekends: js.UndefOr[Boolean] = js.native
+    var highlightWeekends: js.UndefOr[Boolean] = js.undefined
     
     /** Collection of holidays with date, background and label information to be displayed in Gantt.
       * @Default {[]}
       */
-    var holidays: js.UndefOr[js.Array[Holiday]] = js.native
+    var holidays: js.UndefOr[js.Array[Holiday]] = js.undefined
     
     /** Specifies whether to include weekends while calculating the duration of a task.
       * @Default {true}
       */
-    var includeWeekend: js.UndefOr[Boolean] = js.native
+    var includeWeekend: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the responsiveness of Gantt
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the data source field name to be displayed as left task label
       */
-    var leftTaskLabelMapping: js.UndefOr[String] = js.native
+    var leftTaskLabelMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for left task label
       */
-    var leftTaskLabelTemplate: js.UndefOr[String] = js.native
+    var leftTaskLabelTemplate: js.UndefOr[String] = js.undefined
     
     /** Triggered while Gantt is loaded
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specify the locale for Gantt
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for milestone in datasource
       */
-    var milestoneMapping: js.UndefOr[String] = js.native
+    var milestoneMapping: js.UndefOr[String] = js.undefined
     
     /** To Specify the JsRender script Id to customize the mile stone with our preference
       */
-    var milestoneTemplate: js.UndefOr[String] = js.native
+    var milestoneTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the background color for non working time in Gantt.
       */
-    var nonWorkingBackground: js.UndefOr[String] = js.native
+    var nonWorkingBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for the task description in datasource
       */
-    var notesMapping: js.UndefOr[String] = js.native
+    var notesMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the background of parent progressbar in Gantt
       */
-    var parentProgressbarBackground: js.UndefOr[String] = js.native
+    var parentProgressbarBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for parent task Id in self reference datasource
       */
-    var parentTaskIdMapping: js.UndefOr[String] = js.native
+    var parentTaskIdMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the background of parent taskbar in Gantt
       */
-    var parentTaskbarBackground: js.UndefOr[String] = js.native
+    var parentTaskbarBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for parent taskbar
       */
-    var parentTaskbarTemplate: js.UndefOr[String] = js.native
+    var parentTaskbarTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for predecessors of a task in datasource
       */
-    var predecessorMapping: js.UndefOr[String] = js.native
+    var predecessorMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the JsRender template id or template script for predecessor tooltip on mouse action.
       */
-    var predecessorTooltipTemplate: js.UndefOr[String] = js.native
+    var predecessorTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for progress percentage of a task in datasource
       */
-    var progressMapping: js.UndefOr[String] = js.native
+    var progressMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the background of progressbar in Gantt
       */
-    var progressbarBackground: js.UndefOr[String] = js.native
+    var progressbarBackground: js.UndefOr[String] = js.undefined
     
     /** Specified the height of the progressbar in taskbar
       * @Default {100}
       */
-    var progressbarHeight: js.UndefOr[Double] = js.native
+    var progressbarHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the template for tooltip on resizing progressbar
       * @Default {null}
       */
-    var progressbarTooltipTemplate: js.UndefOr[String] = js.native
+    var progressbarTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the template ID for customized tooltip for progressbar editing in Gantt
       * @Default {null}
       */
-    var progressbarTooltipTemplateId: js.UndefOr[String] = js.native
+    var progressbarTooltipTemplateId: js.UndefOr[String] = js.undefined
     
     /** It receives query to retrieve data from the table (query is same as SQL).
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered while rendering each cell in the TreeGrid
       */
-    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.native
+    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** Triggered while rendering each taskbar in the Gantt
       */
-    var queryTaskbarInfo: js.UndefOr[js.Function1[/* e */ QueryTaskbarInfoEventArgs, Unit]] = js.native
+    var queryTaskbarInfo: js.UndefOr[js.Function1[/* e */ QueryTaskbarInfoEventArgs, Unit]] = js.undefined
     
     /** Enables or disables Gantt to read-only mode
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in Gantt
       * @Default {false}
       */
-    var renderBaseline: js.UndefOr[Boolean] = js.native
+    var renderBaseline: js.UndefOr[Boolean] = js.undefined
     
     /** Default Value
       */
-    var resourceCollectionMapping: js.UndefOr[String] = js.native
+    var resourceCollectionMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property name for resource ID in resource Collection in Gantt
       */
-    var resourceIdMapping: js.UndefOr[String] = js.native
+    var resourceIdMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for resources of a task in datasource
       */
-    var resourceInfoMapping: js.UndefOr[String] = js.native
+    var resourceInfoMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for resource name of a task in Gantt
       */
-    var resourceNameMapping: js.UndefOr[String] = js.native
+    var resourceNameMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for resource's percent effort involved in a task in datasource
       */
-    var resourceUnitMapping: js.UndefOr[String] = js.native
+    var resourceUnitMapping: js.UndefOr[String] = js.undefined
     
     /** Collection of data regarding resources involved in entire project
       * @Default {[]}
       */
-    var resources: js.UndefOr[js.Array[_]] = js.native
+    var resources: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the data source field name to be displayed as right task label
       */
-    var rightTaskLabelMapping: js.UndefOr[String] = js.native
+    var rightTaskLabelMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for right task label
       */
-    var rightTaskLabelTemplate: js.UndefOr[String] = js.native
+    var rightTaskLabelTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies whether rounding off the day working time edits
       * @Default {true}
       */
-    var roundOffDayworkingTime: js.UndefOr[Boolean] = js.native
+    var roundOffDayworkingTime: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered while rendering each row
       */
-    var rowDataBound: js.UndefOr[js.Function1[/* e */ RowDataBoundEventArgs, Unit]] = js.native
+    var rowDataBound: js.UndefOr[js.Function1[/* e */ RowDataBoundEventArgs, Unit]] = js.undefined
     
     /** Triggered while dragging a row in Gantt control
       */
-    var rowDrag: js.UndefOr[js.Function1[/* e */ RowDragEventArgs, Unit]] = js.native
+    var rowDrag: js.UndefOr[js.Function1[/* e */ RowDragEventArgs, Unit]] = js.undefined
     
     /** Triggered while start to drag row in Gantt control
       */
-    var rowDragStart: js.UndefOr[js.Function1[/* e */ RowDragStartEventArgs, Unit]] = js.native
+    var rowDragStart: js.UndefOr[js.Function1[/* e */ RowDragStartEventArgs, Unit]] = js.undefined
     
     /** Triggered while drop a row in Gantt control
       */
-    var rowDragStop: js.UndefOr[js.Function1[/* e */ RowDragStopEventArgs, Unit]] = js.native
+    var rowDragStop: js.UndefOr[js.Function1[/* e */ RowDragStopEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of a single row in Gantt. Also, we need to set same height in the CSS style with class name e-rowcell.
       * @Default {30}
       */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Triggered after the row is selected.
       */
-    var rowSelected: js.UndefOr[js.Function1[/* e */ RowSelectedEventArgs, Unit]] = js.native
+    var rowSelected: js.UndefOr[js.Function1[/* e */ RowSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggered before the row is going to be selected.
       */
-    var rowSelecting: js.UndefOr[js.Function1[/* e */ RowSelectingEventArgs, Unit]] = js.native
+    var rowSelecting: js.UndefOr[js.Function1[/* e */ RowSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies end date of the Gantt schedule. By default, end date will be rounded to its next Saturday.
       * @Default {null}
       */
-    var scheduleEndDate: js.UndefOr[String] = js.native
+    var scheduleEndDate: js.UndefOr[String] = js.undefined
     
     /** Specifies the options for customizing schedule header.
       */
-    var scheduleHeaderSettings: js.UndefOr[ScheduleHeaderSettings] = js.native
+    var scheduleHeaderSettings: js.UndefOr[ScheduleHeaderSettings] = js.undefined
     
     /** Specifies start date of the Gantt schedule. By default, start date will be rounded to its previous Sunday.
       * @Default {null}
       */
-    var scheduleStartDate: js.UndefOr[String] = js.native
+    var scheduleStartDate: js.UndefOr[String] = js.undefined
     
     /** Specifies the selected cell information on rendering Gantt.
       */
-    var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.native
+    var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.undefined
     
     /** Specifies the selected row Index in Gantt , the row with given index will highlighted
       * @Default {-1}
       */
-    var selectedRowIndex: js.UndefOr[Double] = js.native
+    var selectedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the type of selection whether to select row or cell.
       * @Default {ej.Gantt.SelectionMode.Row}
       */
-    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.native
+    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the row selection type.
       * @Default {ej.Gantt.SelectionType.Single}
       */
-    var selectionType: js.UndefOr[SelectionType | String] = js.native
+    var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Enables or disables the column chooser.
       * @Default {false}
       */
-    var showColumnChooser: js.UndefOr[Boolean] = js.native
+    var showColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the options for inserting , deleting and renaming  columns.
       * @Default {false}
       */
-    var showColumnOptions: js.UndefOr[Boolean] = js.native
+    var showColumnOptions: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the template for cell tooltip
       * @Default {true}
       */
-    var showGridCellTooltip: js.UndefOr[Boolean] = js.native
+    var showGridCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show grid cell tooltip over expander cell alone.
       * @Default {true}
       */
-    var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.native
+    var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether display task progress inside taskbar.
       * @Default {true}
       */
-    var showProgressStatus: js.UndefOr[Boolean] = js.native
+    var showProgressStatus: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to display resource names for a task beside taskbar.
       * @Default {true}
       */
-    var showResourceNames: js.UndefOr[Boolean] = js.native
+    var showResourceNames: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to display task name beside task bar.
       * @Default {true}
       */
-    var showTaskNames: js.UndefOr[Boolean] = js.native
+    var showTaskNames: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size option of Gantt control.
       */
-    var sizeSettings: js.UndefOr[SizeSettings] = js.native
+    var sizeSettings: js.UndefOr[SizeSettings] = js.undefined
     
     /** Specifies the sorting options for Gantt.
       */
-    var sortSettings: js.UndefOr[SortSettings] = js.native
+    var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Specifies splitter position in Gantt.
       * @Default {null}
       */
-    var splitterPosition: js.UndefOr[String] = js.native
+    var splitterPosition: js.UndefOr[String] = js.undefined
     
     /** Triggered after splitter resizing action in Gantt
       */
-    var splitterResized: js.UndefOr[js.Function1[/* e */ SplitterResizedEventArgs, Unit]] = js.native
+    var splitterResized: js.UndefOr[js.Function1[/* e */ SplitterResizedEventArgs, Unit]] = js.undefined
     
     /** Option to configure the splitter position.
       */
-    var splitterSettings: js.UndefOr[SplitterSettings] = js.native
+    var splitterSettings: js.UndefOr[SplitterSettings] = js.undefined
     
     /** Specifies the mapping property path for start date of a task in datasource
       */
-    var startDateMapping: js.UndefOr[String] = js.native
+    var startDateMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the options for striplines
       * @Default {[]}
       */
-    var stripLines: js.UndefOr[js.Array[StripLine]] = js.native
+    var stripLines: js.UndefOr[js.Array[StripLine]] = js.undefined
     
     /** Default Value
       */
-    var taskCollectionMapping: js.UndefOr[String] = js.native
+    var taskCollectionMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for task Id in datasource
       */
-    var taskIdMapping: js.UndefOr[String] = js.native
+    var taskIdMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for task name in datasource
       */
-    var taskNameMapping: js.UndefOr[String] = js.native
+    var taskNameMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
       * @Default {ej.Gantt.TaskSchedulingMode.Auto}
       */
-    var taskSchedulingMode: js.UndefOr[TaskSchedulingMode | String] = js.native
+    var taskSchedulingMode: js.UndefOr[TaskSchedulingMode | String] = js.undefined
     
     /** Specifies the mapping property path for the task scheduling mode for a task in datasource
       * @Default {auto}
       */
-    var taskSchedulingModeMapping: js.UndefOr[String] = js.native
+    var taskSchedulingModeMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
       * @Default {ej.Gantt.TaskType.FixedUnit}
       */
-    var taskType: js.UndefOr[TaskType | String] = js.native
+    var taskType: js.UndefOr[TaskType | String] = js.undefined
     
     /** Specifies the background of the taskbar in Gantt
       */
-    var taskbarBackground: js.UndefOr[String] = js.native
+    var taskbarBackground: js.UndefOr[String] = js.undefined
     
     /** Triggered when taskbar item is clicked in Gantt.
       */
-    var taskbarClick: js.UndefOr[js.Function1[/* e */ TaskbarClickEventArgs, Unit]] = js.native
+    var taskbarClick: js.UndefOr[js.Function1[/* e */ TaskbarClickEventArgs, Unit]] = js.undefined
     
     /** Triggered after completing the editing operation in taskbar
       */
-    var taskbarEdited: js.UndefOr[js.Function1[/* e */ TaskbarEditedEventArgs, Unit]] = js.native
+    var taskbarEdited: js.UndefOr[js.Function1[/* e */ TaskbarEditedEventArgs, Unit]] = js.undefined
     
     /** Triggered while editing the Gantt chart (dragging, resizing the taskbar )
       */
-    var taskbarEditing: js.UndefOr[js.Function1[/* e */ TaskbarEditingEventArgs, Unit]] = js.native
+    var taskbarEditing: js.UndefOr[js.Function1[/* e */ TaskbarEditingEventArgs, Unit]] = js.undefined
     
     /** Specifies the template script for customized tooltip for taskbar editing in Gantt
       */
-    var taskbarEditingTooltipTemplate: js.UndefOr[String] = js.native
+    var taskbarEditingTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the template Id for customized tooltip for taskbar editing in Gantt
       */
-    var taskbarEditingTooltipTemplateId: js.UndefOr[String] = js.native
+    var taskbarEditingTooltipTemplateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the height of taskBar in Gantt.
       * @Default {20}
       */
-    var taskbarHeight: js.UndefOr[Double] = js.native
+    var taskbarHeight: js.UndefOr[Double] = js.undefined
     
     /** To Specify the JsRender script Id to customize the task bar with our preference
       */
-    var taskbarTemplate: js.UndefOr[String] = js.native
+    var taskbarTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for tooltip on mouse action on taskbars
       */
-    var taskbarTooltipTemplate: js.UndefOr[String] = js.native
+    var taskbarTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the template id for tooltip on mouse action on taskbars
       */
-    var taskbarTooltipTemplateId: js.UndefOr[String] = js.native
+    var taskbarTooltipTemplateId: js.UndefOr[String] = js.undefined
     
     /** Triggered when toolbar item is clicked in Gantt.
       */
-    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.native
+    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the toolbarSettings options.
       */
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Specifies the tree expander column in Gantt
       * @Default {0}
       */
-    var treeColumnIndex: js.UndefOr[Double] = js.native
+    var treeColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
       * @Default {false}
       */
-    var validateManualTasksOnLinking: js.UndefOr[Boolean] = js.native
+    var validateManualTasksOnLinking: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the view type for a project in the Gantt.
       * @Default {ej.Gantt.ViewType.ProjectView}
       */
-    var viewType: js.UndefOr[ViewType | String] = js.native
+    var viewType: js.UndefOr[ViewType | String] = js.undefined
     
     /** Specifies the weekendBackground color in Gantt
       * @Default {#F2F2F2}
       */
-    var weekendBackground: js.UndefOr[String] = js.native
+    var weekendBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
       */
-    var workMapping: js.UndefOr[String] = js.native
+    var workMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the unit for the work involved in a task and it can be day, hour or minute
       * @Default {ej.Gantt.WorkUnit.Hour}
       */
-    var workUnit: js.UndefOr[WorkUnit | String] = js.native
+    var workUnit: js.UndefOr[WorkUnit | String] = js.undefined
     
     /** Gets or sets the working days of a week in a project.
       * @Default {[Monday,Tuesday,Wednesday,Thursday,Friday]}
       */
-    var workWeek: js.UndefOr[js.Array[_]] = js.native
+    var workWeek: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the working time schedule of day
       * @Default {ej.Gantt.workingTimeScale.TimeScale8Hours}
       */
-    var workingTimeScale: js.UndefOr[typings.ejWebAll.ej.Gantt.workingTimeScale | String] = js.native
+    var workingTimeScale: js.UndefOr[typings.ejWebAll.ej.Gantt.workingTimeScale | String] = js.undefined
   }
   object Model {
     
@@ -2819,7 +2912,7 @@ object Gantt {
       def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
       
       @scala.inline
-      def setColumnDialogFields(value: js.Array[_]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
+      def setColumnDialogFields(value: js.Array[js.Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnDialogFieldsUndefined: Self = StObject.set(x, "columnDialogFields", js.undefined)
@@ -2858,7 +2951,7 @@ object Gantt {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -2873,7 +2966,7 @@ object Gantt {
       def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
       @scala.inline
-      def setDayWorkingTime(value: js.Array[_]): Self = StObject.set(x, "dayWorkingTime", value.asInstanceOf[js.Any])
+      def setDayWorkingTime(value: js.Array[js.Any]): Self = StObject.set(x, "dayWorkingTime", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDayWorkingTimeUndefined: Self = StObject.set(x, "dayWorkingTime", js.undefined)
@@ -3029,7 +3122,7 @@ object Gantt {
       def setFilterSettingsUndefined: Self = StObject.set(x, "filterSettings", js.undefined)
       
       @scala.inline
-      def setGroupCollection(value: js.Array[_]): Self = StObject.set(x, "groupCollection", value.asInstanceOf[js.Any])
+      def setGroupCollection(value: js.Array[js.Any]): Self = StObject.set(x, "groupCollection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupCollectionUndefined: Self = StObject.set(x, "groupCollection", js.undefined)
@@ -3257,7 +3350,7 @@ object Gantt {
       def setResourceUnitMappingUndefined: Self = StObject.set(x, "resourceUnitMapping", js.undefined)
       
       @scala.inline
-      def setResources(value: js.Array[_]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
@@ -3602,7 +3695,7 @@ object Gantt {
       def setWorkUnitUndefined: Self = StObject.set(x, "workUnit", js.undefined)
       
       @scala.inline
-      def setWorkWeek(value: js.Array[_]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
+      def setWorkWeek(value: js.Array[js.Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWorkWeekUndefined: Self = StObject.set(x, "workWeek", js.undefined)
@@ -3618,28 +3711,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait QueryCellInfoEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selecting cell element.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the value of cell.
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the column of cell belongs.
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3684,60 +3776,59 @@ object Gantt {
     }
   }
   
-  @js.native
   trait QueryTaskbarInfoEventArgs extends StObject {
     
     /** Returns the baseline background of current item.
       */
-    var baselineBackground: js.UndefOr[String] = js.native
+    var baselineBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of the record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the milestone background of current item.
       */
-    var milestoneBackground: js.UndefOr[String] = js.native
+    var milestoneBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the parent progressbar background of current item.
       */
-    var parentProgressbarBackground: js.UndefOr[String] = js.native
+    var parentProgressbarBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the parent progressbar border color of current item.
       */
-    var parentProgressbarBorder: js.UndefOr[String] = js.native
+    var parentProgressbarBorder: js.UndefOr[String] = js.undefined
     
     /** Returns the parent taskbar background of current item.
       */
-    var parentTaskbarBackground: js.UndefOr[String] = js.native
+    var parentTaskbarBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the parent taskbar border color of current item.
       */
-    var parentTaskbarBorder: js.UndefOr[String] = js.native
+    var parentTaskbarBorder: js.UndefOr[String] = js.undefined
     
     /** Returns the progressbar background of current item.
       */
-    var progressbarBackground: js.UndefOr[String] = js.native
+    var progressbarBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the progressbar border color of current item.
       */
-    var progressbarBorder: js.UndefOr[String] = js.native
+    var progressbarBorder: js.UndefOr[String] = js.undefined
     
     /** Returns the taskbar background of current item.
       */
-    var taskbarBackground: js.UndefOr[String] = js.native
+    var taskbarBackground: js.UndefOr[String] = js.undefined
     
     /** Returns the taskbar border color of current item.
       */
-    var taskbarBorder: js.UndefOr[String] = js.native
+    var taskbarBorder: js.UndefOr[String] = js.undefined
     
     /** Returns the taskbar text color of current item.
       */
-    var taskbarTextColor: js.UndefOr[String] = js.native
+    var taskbarTextColor: js.UndefOr[String] = js.undefined
   }
   object QueryTaskbarInfoEventArgs {
     
@@ -3830,20 +3921,19 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowDataBoundEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of rendering row record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of rendering row.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object RowDataBoundEventArgs {
     
@@ -3876,52 +3966,51 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowDragEventArgs extends StObject {
     
     /** Returns that we can drop over that record or not.
       */
-    var canDrop: js.UndefOr[Boolean] = js.native
+    var canDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Double] = js.native
+    var draggedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the drop position value on current target row.
       */
-    var dropPosition: js.UndefOr[String] = js.native
+    var dropPosition: js.UndefOr[String] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Duration is rounded off when it is set true.
       */
-    var roundOffDuration: js.UndefOr[Boolean] = js.native
+    var roundOffDuration: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row on which we are dragging.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on which we are dragging.
       */
-    var targetRowIndex: js.UndefOr[Double] = js.native
+    var targetRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragEventArgs {
     
@@ -4002,32 +4091,31 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowDragStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Boolean] = js.native
+    var draggedRowIndex: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragStartEventArgs {
     
@@ -4078,40 +4166,39 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowDragStopEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Double] = js.native
+    var draggedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
-    var targetRowIndex: js.UndefOr[Double] = js.native
+    var targetRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragStopEventArgs {
     
@@ -4174,24 +4261,23 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowSelectedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of selected record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object RowSelectedEventArgs {
     
@@ -4230,44 +4316,43 @@ object Gantt {
     }
   }
   
-  @js.native
   trait RowSelectingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data selecting record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected row chart element.
       */
-    var previousChartRow: js.UndefOr[js.Any] = js.native
+    var previousChartRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected data.
       */
-    var previousData: js.UndefOr[js.Any] = js.native
+    var previousData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected row grid element.
       */
-    var previousGridRow: js.UndefOr[js.Any] = js.native
+    var previousGridRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
-    var previousIndex: js.UndefOr[String] = js.native
+    var previousIndex: js.UndefOr[String] = js.undefined
     
     /** Returns the index of selecting row record.
       */
-    var recordIndex: js.UndefOr[String] = js.native
+    var recordIndex: js.UndefOr[String] = js.undefined
     
     /** Returns the selecting row chart element.
       */
-    var targetChartRow: js.UndefOr[js.Any] = js.native
+    var targetChartRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selecting row grid element.
       */
-    var targetGridRow: js.UndefOr[js.Any] = js.native
+    var targetGridRow: js.UndefOr[js.Any] = js.undefined
   }
   object RowSelectingEventArgs {
     
@@ -4336,68 +4421,67 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ScheduleHeaderSettings extends StObject {
     
     /** Specified the format for day view in schedule header
       */
-    var dayHeaderFormat: js.UndefOr[String] = js.native
+    var dayHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specified the format for Hour view in schedule header
       * @Default {HH}
       */
-    var hourHeaderFormat: js.UndefOr[String] = js.native
+    var hourHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the number of minutes per interval
       * @Default {ej.Gantt.minutesPerInterval.Auto}
       */
-    var minutesPerInterval: js.UndefOr[typings.ejWebAll.ej.Gantt.minutesPerInterval | String] = js.native
+    var minutesPerInterval: js.UndefOr[typings.ejWebAll.ej.Gantt.minutesPerInterval | String] = js.undefined
     
     /** Specified the format for month view in schedule header
       * @Default {MMM}
       */
-    var monthHeaderFormat: js.UndefOr[String] = js.native
+    var monthHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the schedule mode
       * @Default {ej.Gantt.ScheduleHeaderType.Week}
       */
-    var scheduleHeaderType: js.UndefOr[ScheduleHeaderType | String] = js.native
+    var scheduleHeaderType: js.UndefOr[ScheduleHeaderType | String] = js.undefined
     
     /** Specifies the round-off mode for the start date in schedule header.
       * @Default {ej.Gantt.TimescaleRoundMode.Auto}
       */
-    var timescaleStartDateMode: js.UndefOr[TimescaleRoundMode | String] = js.native
+    var timescaleStartDateMode: js.UndefOr[TimescaleRoundMode | String] = js.undefined
     
     /** Specifies the size of the lowest time unit along the timescale, with minimum value as &quot;50%&quot; and maximum value as &quot;500%&quot;. It is also possible to set the value
       * in pixels.
       * @Default {100%}
       */
-    var timescaleUnitSize: js.UndefOr[String] = js.native
+    var timescaleUnitSize: js.UndefOr[String] = js.undefined
     
     /** Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
       * @Default {true}
       */
-    var updateTimescaleView: js.UndefOr[Boolean] = js.native
+    var updateTimescaleView: js.UndefOr[Boolean] = js.undefined
     
     /** Specified the format for week view in schedule header
       * @Default {MMM dd , yyyy}
       */
-    var weekHeaderFormat: js.UndefOr[String] = js.native
+    var weekHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the start day of the week in week timescale mode
       * @Default {0}
       */
-    var weekStartDay: js.UndefOr[Double] = js.native
+    var weekStartDay: js.UndefOr[Double] = js.undefined
     
     /** Specified the background for weekends in Gantt
       * @Default {#F2F2F2}
       */
-    var weekendBackground: js.UndefOr[String] = js.native
+    var weekendBackground: js.UndefOr[String] = js.undefined
     
     /** Specified the format for year view in schedule header
       * @Default {yyyy}
       */
-    var yearHeaderFormat: js.UndefOr[String] = js.native
+    var yearHeaderFormat: js.UndefOr[String] = js.undefined
   }
   object ScheduleHeaderSettings {
     
@@ -4484,18 +4568,17 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SelectedCellIndex extends StObject {
     
     /** Specifies the cell index to be selected in the row.
       * @Default {-1}
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the row index of the cell to be selected Gantt control
       * @Default {-1}
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object SelectedCellIndex {
     
@@ -4522,16 +4605,15 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SizeSettings extends StObject {
     
     /** Specifies the height of Gantt control
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of Gantt control
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SizeSettings {
     
@@ -4558,13 +4640,12 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SortSettings extends StObject {
     
     /** Specifies the sorted columns for Gantt
       * @Default {[]}
       */
-    var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.native
+    var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.undefined
   }
   object SortSettings {
     
@@ -4588,16 +4669,15 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SortSettingsSortedColumn extends StObject {
     
     /** Specifies the sort direction in Gantt
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Specifies the field to be sorted in Gantt
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
   }
   object SortSettingsSortedColumn {
     
@@ -4624,32 +4704,31 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SplitterResizedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the value based on current splitter position.
       */
-    var currentSplitterPosition: js.UndefOr[String] = js.native
+    var currentSplitterPosition: js.UndefOr[String] = js.undefined
     
     /** To set custom position for splitter after resize action.
       */
-    var customSplitterPosition: js.UndefOr[String] = js.native
+    var customSplitterPosition: js.UndefOr[String] = js.undefined
     
     /** Returns the value to differentiate whether splitter resizing is performed either by manual resizing or by method
       */
-    var isOnResize: js.UndefOr[Boolean] = js.native
+    var isOnResize: js.UndefOr[Boolean] = js.undefined
     
     /** To differentiate `customSplitterPosition` value was index or position.
       */
-    var isSplitterIndex: js.UndefOr[Boolean] = js.native
+    var isSplitterIndex: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the previous splitter position
       */
-    var prevSplitterPosition: js.UndefOr[String] = js.native
+    var prevSplitterPosition: js.UndefOr[String] = js.undefined
   }
   object SplitterResizedEventArgs {
     
@@ -4700,16 +4779,15 @@ object Gantt {
     }
   }
   
-  @js.native
   trait SplitterSettings extends StObject {
     
     /** Specifies the position of splitter in Gantt, based on column index in Gantt.
       */
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
     /** Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
   }
   object SplitterSettings {
     
@@ -4736,28 +4814,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait StripLine extends StObject {
     
     /** Specifies date to render striplines in Gantt
       */
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
     /** Specifies label to be displayed for striplines in Gantt
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Specifies the line color for rendered striplines in Gantt
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Specifies line style for rendered striplines in Gantt
       */
-    var lineStyle: js.UndefOr[String] = js.native
+    var lineStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the stripline in Gantt
       */
-    var lineWidth: js.UndefOr[String] = js.native
+    var lineWidth: js.UndefOr[String] = js.undefined
   }
   object StripLine {
     
@@ -4802,32 +4879,31 @@ object Gantt {
     }
   }
   
-  @js.native
   trait TaskbarClickEventArgs extends StObject {
     
     /** Returns currently clicked row data
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the clicked row element
       */
-    var taskbarElement: js.UndefOr[js.Any] = js.native
+    var taskbarElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TaskbarClickEventArgs {
     
@@ -4878,44 +4954,43 @@ object Gantt {
     }
   }
   
-  @js.native
   trait TaskbarEditedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of edited record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns 'true' if taskbar is dragged.
       */
-    var dragging: js.UndefOr[Boolean] = js.native
+    var dragging: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the field values of record being edited.
       */
-    var editingFields: js.UndefOr[js.Any] = js.native
+    var editingFields: js.UndefOr[js.Any] = js.undefined
     
     /** Returns 'true' if taskbar is left resized.
       */
-    var leftResizing: js.UndefOr[Boolean] = js.native
+    var leftResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous data value of edited record.
       */
-    var previousData: js.UndefOr[js.Any] = js.native
+    var previousData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns 'true' if taskbar is progress resized.
       */
-    var progressResizing: js.UndefOr[Boolean] = js.native
+    var progressResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Returns 'true' if taskbar is right resized.
       */
-    var rightResizing: js.UndefOr[Boolean] = js.native
+    var rightResizing: js.UndefOr[Boolean] = js.undefined
   }
   object TaskbarEditedEventArgs {
     
@@ -4984,32 +5059,31 @@ object Gantt {
     }
   }
   
-  @js.native
   trait TaskbarEditingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the field values of record being edited.
       */
-    var editingFields: js.UndefOr[js.Any] = js.native
+    var editingFields: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns duration value will be round-off or not.
       */
-    var roundOffDuration: js.UndefOr[Boolean] = js.native
+    var roundOffDuration: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row object being edited.
       */
-    var rowData: js.UndefOr[js.Any] = js.native
+    var rowData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TaskbarEditingEventArgs {
     
@@ -5060,28 +5134,27 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ToolbarClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the toolbar item on which mouse click has been performed
       */
-    var itemName: js.UndefOr[String] = js.native
+    var itemName: js.UndefOr[String] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToolbarClickEventArgs {
     
@@ -5126,22 +5199,21 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
     /** Allows the user to insert custom toolbar items.
       */
-    var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.native
+    var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.undefined
     
     /** Specifies the state of enabling or disabling toolbar
       * @Default {true}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of toolbar items to be rendered in Gantt toolbar
       * @Default {[]}
       */
-    var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.native
+    var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.undefined
   }
   object ToolbarSettings {
     
@@ -5180,20 +5252,19 @@ object Gantt {
     }
   }
   
-  @js.native
   trait ToolbarSettingsCustomToolbarItem extends StObject {
     
     /** Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
     
     /** Allows the user to insert the custom icons in toolbar using CSS class name selector.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Allows the user to display custom tooltip text for Gantt custom toolbar items.
       */
-    var tooltipText: js.UndefOr[String] = js.native
+    var tooltipText: js.UndefOr[String] = js.undefined
   }
   object ToolbarSettingsCustomToolbarItem {
     

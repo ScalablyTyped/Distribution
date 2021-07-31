@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indices[T /* <: Tensor[Rank] */] extends StObject {
   
-  var indices: T = js.native
+  var indices: T
   
-  var values: T = js.native
+  var values: T
 }
 object Indices {
   
@@ -23,7 +21,7 @@ object Indices {
   }
   
   @scala.inline
-  implicit class IndicesMutableBuilder[Self <: Indices[_], T /* <: Tensor[Rank] */] (val x: Self with Indices[T]) extends AnyVal {
+  implicit class IndicesMutableBuilder[Self <: Indices[?], T /* <: Tensor[Rank] */] (val x: Self & Indices[T]) extends AnyVal {
     
     @scala.inline
     def setIndices(value: T): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])

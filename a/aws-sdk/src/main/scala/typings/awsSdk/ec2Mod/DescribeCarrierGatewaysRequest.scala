@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCarrierGatewaysRequest extends StObject {
   
   /**
     * One or more carrier gateway IDs.
     */
-  var CarrierGatewayIds: js.UndefOr[CarrierGatewayIdSet] = js.native
+  var CarrierGatewayIds: js.UndefOr[CarrierGatewayIdSet] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more filters.    carrier-gateway-id - The ID of the carrier gateway.    state - The state of the carrier gateway (pending | failed | available | deleting | deleted).    owner-id - The AWS account ID of the owner of the carrier gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC associated with the carrier gateway.  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[CarrierGatewayMaxResults] = js.native
+  var MaxResults: js.UndefOr[CarrierGatewayMaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeCarrierGatewaysRequest {
   

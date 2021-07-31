@@ -2,23 +2,21 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetailedChooseSpecifier extends StObject {
   
   /**
     * Which class to look for instances of. E.g.: `ObjC.classes.UIButton`.
     */
-  var `class`: Object = js.native
+  var `class`: Object
   
   /**
     * Whether you’re also interested in subclasses matching the given class selector.
     *
     * The default is to also include subclasses.
     */
-  var subclasses: js.UndefOr[Boolean] = js.native
+  var subclasses: js.UndefOr[Boolean] = js.undefined
 }
 object DetailedChooseSpecifier {
   

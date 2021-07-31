@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationInfo extends StObject {
   
   /** If this option is on, FDL click will be forced to redirect rather than show an interstitial page. */
-  var enableForcedRedirect: js.UndefOr[Boolean] = js.native
+  var enableForcedRedirect: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationInfo {
   

@@ -3,24 +3,24 @@ package typings.extjs.Ext.layout.container
 import typings.extjs.Ext.layout.ISizePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAnchor extends IAuto {
+trait IAnchor
+  extends StObject
+     with IAuto {
   
   /** [Config Option] (String) */
-  var anchor: js.UndefOr[String] = js.native
+  var anchor: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var defaultAnchor: js.UndefOr[String] = js.native
+  var defaultAnchor: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns an object describing how this layout manages the size of the given component
     * @param item Object
     * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
     */
   @JSName("getItemSizePolicy")
-  var getItemSizePolicy_IAnchor: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.native
+  var getItemSizePolicy_IAnchor: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.undefined
 }
 object IAnchor {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldExportJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world export job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world export job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The status of the world export job.  Pending  The world export job request is pending.  Running  The world export job is running.   Completed  The world export job completed.   Failed  The world export job failed. See failureCode for more information.   Canceled  The world export job was cancelled.  Canceling  The world export job is being cancelled.  
     */
-  var status: js.UndefOr[WorldExportJobStatus] = js.native
+  var status: js.UndefOr[WorldExportJobStatus] = js.undefined
   
   /**
     * A list of worlds.
     */
-  var worlds: js.UndefOr[Arns] = js.native
+  var worlds: js.UndefOr[Arns] = js.undefined
 }
 object WorldExportJobSummary {
   

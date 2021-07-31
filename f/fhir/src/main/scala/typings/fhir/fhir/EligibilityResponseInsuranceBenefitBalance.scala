@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Benefits by Category
   */
-@js.native
-trait EligibilityResponseInsuranceBenefitBalance extends BackboneElement {
+trait EligibilityResponseInsuranceBenefitBalance
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'excluded'.
     */
-  var _excluded: js.UndefOr[Element] = js.native
+  var _excluded: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Type of services covered
     */
-  var category: CodeableConcept = js.native
+  var category: CodeableConcept
   
   /**
     * Description of the benefit or services covered
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Excluded from the plan
     */
-  var excluded: js.UndefOr[Boolean] = js.native
+  var excluded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Benefit Summary
     */
-  var financial: js.UndefOr[js.Array[EligibilityResponseInsuranceBenefitBalanceFinancial]] = js.native
+  var financial: js.UndefOr[js.Array[EligibilityResponseInsuranceBenefitBalanceFinancial]] = js.undefined
   
   /**
     * Short name for the benefit
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * In or out of network
     */
-  var network: js.UndefOr[CodeableConcept] = js.native
+  var network: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Detailed services covered within the type
     */
-  var subCategory: js.UndefOr[CodeableConcept] = js.native
+  var subCategory: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Annual or lifetime
     */
-  var term: js.UndefOr[CodeableConcept] = js.native
+  var term: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Individual or family
     */
-  var unit: js.UndefOr[CodeableConcept] = js.native
+  var unit: js.UndefOr[CodeableConcept] = js.undefined
 }
 object EligibilityResponseInsuranceBenefitBalance {
   

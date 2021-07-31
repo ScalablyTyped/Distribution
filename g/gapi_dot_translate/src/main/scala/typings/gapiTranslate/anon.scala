@@ -2,48 +2,46 @@ package typings.gapiTranslate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cid extends StObject {
     
     /**
       * The customization id for translate
       */
-    var cid: js.UndefOr[js.Array[String]] = js.native
+    var cid: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * This optional parameter allows you to indicate that the text to be translated is either plain-text or HTML. A value of html indicates HTML and a value of text indicates plain-text
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * If prettyprint=true, the results returned by the server will be human readable (pretty printed).
       */
-    var prettyprint: js.UndefOr[String] = js.native
+    var prettyprint: js.UndefOr[String] = js.undefined
     
     /**
       *  The text to translate
       */
-    var q: js.Array[String] = js.native
+    var q: js.Array[String]
     
     /**
       * The source language of the text
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * The target language into which the text should be translated
       */
-    var target: String = js.native
+    var target: String
   }
   object Cid {
     
@@ -100,12 +98,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Confidence extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var language: String = js.native
+    var language: String
   }
   object Confidence {
     
@@ -126,12 +123,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DetectedSourceLanguage extends StObject {
     
-    var detectedSourceLanguage: String = js.native
+    var detectedSourceLanguage: String
     
-    var translatedText: String = js.native
+    var translatedText: String
   }
   object DetectedSourceLanguage {
     
@@ -152,10 +148,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Detections extends StObject {
     
-    var detections: js.Array[js.Array[Confidence]] = js.native
+    var detections: js.Array[js.Array[Confidence]]
   }
   object Detections {
     
@@ -176,18 +171,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The text to detect
       */
-    var q: js.Array[String] = js.native
+    var q: js.Array[String]
   }
   object Fields {
     
@@ -214,12 +208,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Language extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var name: String = js.native
+    var name: String
   }
   object Language {
     
@@ -240,10 +233,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Languages extends StObject {
     
-    var languages: js.Array[Language] = js.native
+    var languages: js.Array[Language]
   }
   object Languages {
     
@@ -264,18 +256,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * the language and collation in which the localized results should be returned
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object Target {
     
@@ -302,10 +293,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Translations extends StObject {
     
-    var translations: js.Array[DetectedSourceLanguage] = js.native
+    var translations: js.Array[DetectedSourceLanguage]
   }
   object Translations {
     

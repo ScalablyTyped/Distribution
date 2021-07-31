@@ -9,7 +9,6 @@ import typings.three.textureMod.Texture
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshMatcapMaterialMod {
@@ -103,38 +102,39 @@ object meshMatcapMaterialMod {
     var skinning: Boolean = js.native
   }
   
-  @js.native
-  trait MeshMatcapMaterialParameters extends MaterialParameters {
+  trait MeshMatcapMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var bumpMap: js.UndefOr[Texture | Null] = js.native
+    var bumpMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var bumpScale: js.UndefOr[Double] = js.native
+    var bumpScale: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var displacementBias: js.UndefOr[Double] = js.native
+    var displacementBias: js.UndefOr[Double] = js.undefined
     
-    var displacementMap: js.UndefOr[Texture | Null] = js.native
+    var displacementMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementScale: js.UndefOr[Double] = js.native
+    var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var matcap: js.UndefOr[Texture | Null] = js.native
+    var matcap: js.UndefOr[Texture | Null] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.native
+    var morphNormals: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var normalMap: js.UndefOr[Texture | Null] = js.native
+    var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var normalMapType: js.UndefOr[NormalMapTypes] = js.native
+    var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
-    var normalScale: js.UndefOr[Vector2] = js.native
+    var normalScale: js.UndefOr[Vector2] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.native
+    var skinning: js.UndefOr[Boolean] = js.undefined
   }
   object MeshMatcapMaterialParameters {
     

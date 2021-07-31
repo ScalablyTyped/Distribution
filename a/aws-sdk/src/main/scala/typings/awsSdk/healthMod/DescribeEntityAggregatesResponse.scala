@@ -2,16 +2,14 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEntityAggregatesResponse extends StObject {
   
   /**
     * The number of entities that are affected by each of the specified events.
     */
-  var entityAggregates: js.UndefOr[EntityAggregateList] = js.native
+  var entityAggregates: js.UndefOr[EntityAggregateList] = js.undefined
 }
 object DescribeEntityAggregatesResponse {
   

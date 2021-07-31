@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.ConditionalPresetCriteriaRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in `presetCriteriaConditionalFormat.set({ ... })`. */
-@js.native
 trait PresetCriteriaConditionalFormatUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait PresetCriteriaConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.native
+  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait PresetCriteriaConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rule: js.UndefOr[ConditionalPresetCriteriaRule] = js.native
+  var rule: js.UndefOr[ConditionalPresetCriteriaRule] = js.undefined
 }
 object PresetCriteriaConditionalFormatUpdateData {
   

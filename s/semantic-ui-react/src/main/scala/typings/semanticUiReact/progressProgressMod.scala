@@ -25,7 +25,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.semanticUiReact.semanticUiReactStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressProgressMod extends Shortcut {
@@ -42,9 +41,9 @@ object progressProgressMod extends Shortcut {
   @js.native
   val default: ComponentClass[ProgressProps, ComponentState] = js.native
   
-  @js.native
   trait ProgressProps
-    extends StrictProgressProps
+    extends StObject
+       with StrictProgressProps
        with /* key */ StringDictionary[js.Any]
   object ProgressProps {
     
@@ -55,71 +54,70 @@ object progressProgressMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictProgressProps extends StObject {
     
     /** A progress bar can show activity. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A progress bar can attach to and show the progress of an element (i.e. Card or Segment). */
-    var attached: js.UndefOr[top | bottom] = js.native
+    var attached: js.UndefOr[top | bottom] = js.undefined
     
     /** Whether success state should automatically trigger when progress completes. */
-    var autoSuccess: js.UndefOr[Boolean] = js.native
+    var autoSuccess: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A progress bar can have different colors. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A progress bar be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A progress bar can show a error state. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** An indicating progress bar visually indicates the current level of progress of a task. */
-    var indicating: js.UndefOr[Boolean] = js.native
+    var indicating: js.UndefOr[Boolean] = js.undefined
     
     /** A progress bar can have its colors inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Can be set to either to display progress as percent or ratio. */
-    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.undefined
     
     /** Current percent complete. */
-    var percent: js.UndefOr[Double | String] = js.native
+    var percent: js.UndefOr[Double | String] = js.undefined
     
     /** Decimal point precision for calculated progress. */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /** A progress bar can contain a text value indicating current progress. */
-    var progress: js.UndefOr[Boolean | percent | ratio | value] = js.native
+    var progress: js.UndefOr[Boolean | percent | ratio | value] = js.undefined
     
     /** A progress bar can vary in size. */
-    var size: js.UndefOr[tiny | small | medium | large | big] = js.native
+    var size: js.UndefOr[tiny | small | medium | large | big] = js.undefined
     
     /** A progress bar can show a success state. */
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
     
     /** For use with value. Together, these will calculate the percent. Mutually excludes percent. */
-    var total: js.UndefOr[Double | String] = js.native
+    var total: js.UndefOr[Double | String] = js.undefined
     
     /** For use with total. Together, these will calculate the percent. Mutually excludes percent. */
-    var value: js.UndefOr[Double | String] = js.native
+    var value: js.UndefOr[Double | String] = js.undefined
     
     /** A progress bar can show a warning state. */
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
   }
   object StrictProgressProps {
     

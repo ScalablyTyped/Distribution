@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageTotalsResponse extends StObject {
   
   /**
     * An array of objects that contains the results of the query. Each object contains the data for a specific usage metric.
     */
-  var usageTotals: js.UndefOr[listOfUsageTotal] = js.native
+  var usageTotals: js.UndefOr[listOfUsageTotal] = js.undefined
 }
 object GetUsageTotalsResponse {
   

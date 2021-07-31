@@ -18,7 +18,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DocumentDefinition
   * @see DocumentContainer
   */
-@js.native
 trait DefinitionContent
-  extends Content
+  extends StObject
+     with Content
      with XHierarchicalName
 object DefinitionContent {
   

@@ -2,31 +2,29 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilerOptions extends StObject {
   
-  var diagnostics: js.UndefOr[Boolean] = js.native
+  var diagnostics: js.UndefOr[Boolean] = js.undefined
   
-  var emitLinks: js.UndefOr[Boolean] = js.native
+  var emitLinks: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[EmitFormat] = js.native
+  var format: js.UndefOr[EmitFormat] = js.undefined
   
-  var newLine: js.UndefOr[NewLineKind] = js.native
+  var newLine: js.UndefOr[NewLineKind] = js.undefined
   
-  var noChecks: js.UndefOr[Boolean] = js.native
+  var noChecks: js.UndefOr[Boolean] = js.undefined
   
-  var noEmit: js.UndefOr[Boolean] = js.native
+  var noEmit: js.UndefOr[Boolean] = js.undefined
   
-  var noEmitOnError: js.UndefOr[Boolean] = js.native
+  var noEmitOnError: js.UndefOr[Boolean] = js.undefined
   
-  var noStrictParametricProductions: js.UndefOr[Boolean] = js.native
+  var noStrictParametricProductions: js.UndefOr[Boolean] = js.undefined
   
-  var noUnusedParameters: js.UndefOr[Boolean] = js.native
+  var noUnusedParameters: js.UndefOr[Boolean] = js.undefined
   
-  var out: js.UndefOr[String] = js.native
+  var out: js.UndefOr[String] = js.undefined
 }
 object CompilerOptions {
   

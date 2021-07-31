@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.Sorter")
 @js.native
 class Sorter protected ()
-  extends typings.openui5.sap.ui.model.Sorter {
+  extends StObject
+     with typings.openui5.sap.ui.model.Sorter {
   /**
     * Constructor for Sorter
     * @param sPath the binding path used for sorting
@@ -24,19 +24,14 @@ class Sorter protected ()
     */
   def this(sPath: String) = this()
   def this(sPath: String, bDescending: Boolean) = this()
-  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: js.Any) = this()
-  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: Boolean) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: Boolean) = this()
-  def this(
-    sPath: String,
-    bDescending: js.UndefOr[scala.Nothing],
-    vGroup: js.UndefOr[scala.Nothing],
-    fnComparator: js.Any
-  ) = this()
-  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: js.Any, fnComparator: js.Any) = this()
-  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: Boolean, fnComparator: js.Any) = this()
-  def this(sPath: String, bDescending: Boolean, vGroup: js.UndefOr[scala.Nothing], fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Unit, vGroup: js.Any) = this()
+  def this(sPath: String, bDescending: Unit, vGroup: Boolean) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: js.Any, fnComparator: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: Boolean, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Boolean, vGroup: Unit, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Unit, vGroup: js.Any, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Unit, vGroup: Boolean, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Unit, vGroup: Unit, fnComparator: js.Any) = this()
 }

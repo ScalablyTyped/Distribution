@@ -2,20 +2,18 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of `GenerateDownloadUrl` method.
   */
-@js.native
 trait SchemaGenerateDownloadUrlResponse extends StObject {
   
   /**
     * The generated Google Cloud Storage signed URL that should be used for
     * function source code download.
     */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaGenerateDownloadUrlResponse {
   

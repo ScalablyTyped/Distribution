@@ -2,51 +2,49 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionDestinationSettings extends StObject {
   
   /**
     * Burn-In Destination Settings.
     */
-  var BurninDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.BurninDestinationSettings] = js.native
+  var BurninDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.BurninDestinationSettings] = js.undefined
   
   /**
     * Specify the format for this set of captions on this output. The default format is embedded without SCTE-20. Other options are embedded with SCTE-20, burn-in, DVB-sub, IMSC, SCC, SRT, teletext, TTML, and web-VTT. If you are using SCTE-20, choose SCTE-20 plus embedded (SCTE20_PLUS_EMBEDDED) to create an output that complies with the SCTE-43 spec. To create a non-compliant output where the embedded captions come first, choose Embedded plus SCTE-20 (EMBEDDED_PLUS_SCTE20).
     */
-  var DestinationType: js.UndefOr[CaptionDestinationType] = js.native
+  var DestinationType: js.UndefOr[CaptionDestinationType] = js.undefined
   
   /**
     * DVB-Sub Destination Settings
     */
-  var DvbSubDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSubDestinationSettings] = js.native
+  var DvbSubDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSubDestinationSettings] = js.undefined
   
   /**
     * Settings specific to embedded/ancillary caption outputs, including 608/708 Channel destination number.
     */
-  var EmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedDestinationSettings] = js.native
+  var EmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedDestinationSettings] = js.undefined
   
   /**
     * Settings specific to IMSC caption outputs.
     */
-  var ImscDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ImscDestinationSettings] = js.native
+  var ImscDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ImscDestinationSettings] = js.undefined
   
   /**
     * Settings for SCC caption output.
     */
-  var SccDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.SccDestinationSettings] = js.native
+  var SccDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.SccDestinationSettings] = js.undefined
   
   /**
     * Settings for Teletext caption output
     */
-  var TeletextDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TeletextDestinationSettings] = js.native
+  var TeletextDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TeletextDestinationSettings] = js.undefined
   
   /**
     * Settings specific to TTML caption outputs, including Pass style information (TtmlStylePassthrough).
     */
-  var TtmlDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TtmlDestinationSettings] = js.native
+  var TtmlDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TtmlDestinationSettings] = js.undefined
 }
 object CaptionDestinationSettings {
   

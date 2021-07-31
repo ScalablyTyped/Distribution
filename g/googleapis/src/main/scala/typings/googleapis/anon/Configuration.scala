@@ -7,29 +7,27 @@ import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaJobStatistics
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaJobStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
-  var configuration: js.UndefOr[SchemaJobConfiguration] = js.native
+  var configuration: js.UndefOr[SchemaJobConfiguration] = js.undefined
   
-  var errorResult: js.UndefOr[SchemaErrorProto] = js.native
+  var errorResult: js.UndefOr[SchemaErrorProto] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var jobReference: js.UndefOr[SchemaJobReference] = js.native
+  var jobReference: js.UndefOr[SchemaJobReference] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var statistics: js.UndefOr[SchemaJobStatistics] = js.native
+  var statistics: js.UndefOr[SchemaJobStatistics] = js.undefined
   
-  var status: js.UndefOr[SchemaJobStatus] = js.native
+  var status: js.UndefOr[SchemaJobStatus] = js.undefined
   
-  var user_email: js.UndefOr[String] = js.native
+  var user_email: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

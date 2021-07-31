@@ -2,30 +2,28 @@ package typings.awsSdkBuildTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smokeTestModelMod {
   
-  @js.native
   trait SmokeTestCase extends StObject {
     
     /**
       * Whether the test should expect an error-level (4xx or 5xx) HTTP status code.
       * If false, the status code is expected to be between 200 and 299, inclusive.
       */
-    var errorExpectedFromService: Boolean = js.native
+    var errorExpectedFromService: Boolean
     
     /**
       * A hash of arguments to pass to the operation under test.
       */
-    var input: js.Object = js.native
+    var input: js.Object
     
     /**
       * The operation under test.
       * This name must appear as an operation in the model of the service version under test.
       */
-    var operationName: String = js.native
+    var operationName: String
   }
   object SmokeTestCase {
     
@@ -49,20 +47,19 @@ object smokeTestModelMod {
     }
   }
   
-  @js.native
   trait SmokeTestModel extends StObject {
     
     /**
       * The region to use should no alternative be supplied via the test runner's execution environment.
       */
-    var defaultRegion: String = js.native
+    var defaultRegion: String
     
-    var testCases: js.Array[SmokeTestCase] = js.native
+    var testCases: js.Array[SmokeTestCase]
     
     /**
       * The version of smoke test document.
       */
-    var version: Double = js.native
+    var version: Double
   }
   object SmokeTestModel {
     

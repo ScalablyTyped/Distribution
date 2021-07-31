@@ -2,26 +2,24 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMountTargetsResponse extends StObject {
   
   /**
     * If the request included the Marker, the response returns that value in this field.
     */
-  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.undefined
   
   /**
     * Returns the file system's mount targets as an array of MountTargetDescription objects.
     */
-  var MountTargets: js.UndefOr[MountTargetDescriptions] = js.native
+  var MountTargets: js.UndefOr[MountTargetDescriptions] = js.undefined
   
   /**
     * If a value is present, there are more mount targets to return. In a subsequent request, you can provide Marker in your request with this value to retrieve the next set of mount targets.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeMountTargetsResponse {
   

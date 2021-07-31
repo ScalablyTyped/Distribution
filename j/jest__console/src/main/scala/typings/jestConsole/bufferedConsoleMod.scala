@@ -9,56 +9,58 @@ import typings.std.Console
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferedConsoleMod {
   
   @JSImport("@jest/console/build/BufferedConsole", JSImport.Default)
   @js.native
-  class default protected () extends BufferedConsole {
+  class default protected ()
+    extends StObject
+       with BufferedConsole {
     def this(getSourceMaps: js.Function0[js.UndefOr[SourceMapRegistry | Null]]) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @JSImport("@jest/console/build/BufferedConsole", JSImport.Default)
     @js.native
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console/build/BufferedConsole", "default.write")
-    @js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: js.UndefOr[scala.Nothing],
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console/build/BufferedConsole", "default.write")
-    @js.native
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console/build/BufferedConsole", "default.write")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
     def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Double,
       sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console/build/BufferedConsole", "default.write")
-    @js.native
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
     def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Null,
       sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: Unit,
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
   }
   
   @js.native
-  trait BufferedConsole extends Console {
+  trait BufferedConsole
+    extends StObject
+       with Console {
     
     var _buffer: js.Any = js.native
     
@@ -86,11 +88,11 @@ object bufferedConsoleMod {
     
     def getBuffer(): js.UndefOr[js.Array[LogEntry]] = js.native
     
-    def group(title: js.UndefOr[scala.Nothing], rest: js.Any*): Unit = js.native
     def group(title: String, rest: js.Any*): Unit = js.native
+    def group(title: Unit, rest: js.Any*): Unit = js.native
     
-    def groupCollapsed(title: js.UndefOr[scala.Nothing], rest: js.Any*): Unit = js.native
     def groupCollapsed(title: String, rest: js.Any*): Unit = js.native
+    def groupCollapsed(title: Unit, rest: js.Any*): Unit = js.native
     
     def info(firstArg: js.Any, rest: js.Any*): Unit = js.native
     

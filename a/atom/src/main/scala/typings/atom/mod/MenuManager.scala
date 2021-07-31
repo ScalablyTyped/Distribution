@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuManager extends StObject {
   
   /** Adds the given items to the application menu. */
-  def add(items: js.Array[MenuOptions]): Disposable = js.native
+  def add(items: js.Array[MenuOptions]): Disposable
   
   /** Refreshes the currently visible menu. */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object MenuManager {
   

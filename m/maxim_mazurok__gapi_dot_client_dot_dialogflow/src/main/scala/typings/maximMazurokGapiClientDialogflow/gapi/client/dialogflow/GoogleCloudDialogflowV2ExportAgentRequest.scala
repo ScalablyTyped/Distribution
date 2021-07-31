@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2ExportAgentRequest extends StObject {
   
   /**
     * Required. The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to export the agent to. The format of this URI must be `gs:///`. If left unspecified, the serialized
     * agent is returned inline.
     */
-  var agentUri: js.UndefOr[String] = js.native
+  var agentUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2ExportAgentRequest {
   

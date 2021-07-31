@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceEvent extends StObject {
   
   /**
     * An object representing the device associated with the event.
     */
-  var Device: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.Device] = js.native
+  var Device: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.Device] = js.undefined
   
   /**
     * A serialized JSON object representing the device-type specific event.
     */
-  var StdEvent: js.UndefOr[string] = js.native
+  var StdEvent: js.UndefOr[string] = js.undefined
 }
 object DeviceEvent {
   

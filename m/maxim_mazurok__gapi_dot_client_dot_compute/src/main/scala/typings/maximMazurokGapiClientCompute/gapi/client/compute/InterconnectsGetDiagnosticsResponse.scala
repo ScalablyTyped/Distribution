@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectsGetDiagnosticsResponse extends StObject {
   
-  var result: js.UndefOr[InterconnectDiagnostics] = js.native
+  var result: js.UndefOr[InterconnectDiagnostics] = js.undefined
 }
 object InterconnectsGetDiagnosticsResponse {
   

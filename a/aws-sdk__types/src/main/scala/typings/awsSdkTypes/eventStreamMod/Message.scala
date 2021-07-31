@@ -3,15 +3,13 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var body: Uint8Array = js.native
+  var body: Uint8Array
   
-  var headers: MessageHeaders = js.native
+  var headers: MessageHeaders
 }
 object Message {
   

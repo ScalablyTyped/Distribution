@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcClassicLinkDnsSupportRequest extends StObject {
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[DescribeVpcClassicLinkDnsSupportMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeVpcClassicLinkDnsSupportMaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[DescribeVpcClassicLinkDnsSupportNextToken] = js.native
+  var NextToken: js.UndefOr[DescribeVpcClassicLinkDnsSupportNextToken] = js.undefined
   
   /**
     * One or more VPC IDs.
     */
-  var VpcIds: js.UndefOr[VpcClassicLinkIdList] = js.native
+  var VpcIds: js.UndefOr[VpcClassicLinkIdList] = js.undefined
 }
 object DescribeVpcClassicLinkDnsSupportRequest {
   

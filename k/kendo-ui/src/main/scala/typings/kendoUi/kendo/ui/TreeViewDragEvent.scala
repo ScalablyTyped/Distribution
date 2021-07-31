@@ -3,23 +3,23 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeViewDragEvent extends TreeViewEvent {
+trait TreeViewDragEvent
+  extends StObject
+     with TreeViewEvent {
   
-  var dropTarget: js.UndefOr[Element] = js.native
+  var dropTarget: js.UndefOr[Element] = js.undefined
   
-  var pageX: js.UndefOr[Double] = js.native
+  var pageX: js.UndefOr[Double] = js.undefined
   
-  var pageY: js.UndefOr[Double] = js.native
+  var pageY: js.UndefOr[Double] = js.undefined
   
-  var setStatusClass: js.UndefOr[js.Function] = js.native
+  var setStatusClass: js.UndefOr[js.Function] = js.undefined
   
-  var sourceNode: js.UndefOr[Element] = js.native
+  var sourceNode: js.UndefOr[Element] = js.undefined
   
-  var statusClass: js.UndefOr[String] = js.native
+  var statusClass: js.UndefOr[String] = js.undefined
 }
 object TreeViewDragEvent {
   

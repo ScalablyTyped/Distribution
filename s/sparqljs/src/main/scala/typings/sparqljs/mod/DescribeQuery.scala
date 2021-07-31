@@ -2,32 +2,25 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.DESCRIBE
-import typings.sparqljs.sparqljsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeQuery
-  extends Query
-     with BaseQuery {
+  extends StObject
+     with BaseQuery
+     with Query {
   
-  var queryType: DESCRIBE = js.native
+  var queryType: DESCRIBE
   
-  var variables: js.Array[Variable | Wildcard] = js.native
+  var variables: js.Array[Variable | Wildcard]
 }
 object DescribeQuery {
   
   @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    queryType: DESCRIBE,
-    `type`: query,
-    variables: js.Array[Variable | Wildcard]
-  ): DescribeQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): DescribeQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "DESCRIBE", variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[DescribeQuery]
   }
   

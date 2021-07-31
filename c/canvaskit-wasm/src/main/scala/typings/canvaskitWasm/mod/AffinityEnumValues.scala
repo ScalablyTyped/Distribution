@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AffinityEnumValues extends EmbindEnum {
+trait AffinityEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Downstream: Affinity = js.native
+  var Downstream: Affinity
   
-  var Upstream: Affinity = js.native
+  var Upstream: Affinity
 }
 object AffinityEnumValues {
   

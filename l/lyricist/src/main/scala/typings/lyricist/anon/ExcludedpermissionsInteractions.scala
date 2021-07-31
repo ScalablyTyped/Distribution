@@ -2,17 +2,15 @@ package typings.lyricist.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcludedpermissionsInteractions extends StObject {
   
-  var excluded_permissions: js.Array[String] = js.native
+  var excluded_permissions: js.Array[String]
   
-  var interactions: Pyong = js.native
+  var interactions: Pyong
   
-  var permissions: js.Array[String] = js.native
+  var permissions: js.Array[String]
 }
 object ExcludedpermissionsInteractions {
   

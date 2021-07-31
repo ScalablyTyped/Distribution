@@ -5,43 +5,42 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerItemTypesMod {
   
-  @js.native
   trait IPickerItem extends StObject
   
-  @js.native
-  trait IPickerItemProps[T] extends AllHTMLAttributes[HTMLElement] {
+  trait IPickerItemProps[T]
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Optional callback to access the IPickerItem interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IPickerItem]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IPickerItem]] = js.undefined
     
     /** Index number of the item in the array of picked items. */
-    var index: Double = js.native
+    var index: Double
     
     /** The item of Type T (Persona, Tag, or any other custom item provided). */
-    var item: T = js.native
+    var item: T
     
     /** Unique key for each picked item. */
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Internal Use only, gives a callback to the renderer to call when an item has changed.
       * This allows the base picker to keep track of changes in the items.
       */
-    var onItemChange: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, Unit]] = js.native
+    var onItemChange: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, Unit]] = js.undefined
     
     /** Callback issued when the item is removed from the array of picked items. */
-    var onRemoveItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRemoveItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Aria-label for the picked item remove button. */
-    var removeButtonAriaLabel: js.UndefOr[String] = js.native
+    var removeButtonAriaLabel: js.UndefOr[String] = js.undefined
   }
   object IPickerItemProps {
     
@@ -52,7 +51,7 @@ object pickerItemTypesMod {
     }
     
     @scala.inline
-    implicit class IPickerItemPropsMutableBuilder[Self <: IPickerItemProps[_], T] (val x: Self with IPickerItemProps[T]) extends AnyVal {
+    implicit class IPickerItemPropsMutableBuilder[Self <: IPickerItemProps[?], T] (val x: Self & IPickerItemProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponentRef(value: IRefObject[IPickerItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])

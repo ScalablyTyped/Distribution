@@ -2,36 +2,34 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDirectConnectGatewayAssociationProposalsRequest extends StObject {
   
   /**
     * The ID of the associated gateway.
     */
-  var associatedGatewayId: js.UndefOr[AssociatedGatewayId] = js.native
+  var associatedGatewayId: js.UndefOr[AssociatedGatewayId] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
     */
-  var maxResults: js.UndefOr[MaxResultSetSize] = js.native
+  var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ID of the proposal.
     */
-  var proposalId: js.UndefOr[DirectConnectGatewayAssociationProposalId] = js.native
+  var proposalId: js.UndefOr[DirectConnectGatewayAssociationProposalId] = js.undefined
 }
 object DescribeDirectConnectGatewayAssociationProposalsRequest {
   

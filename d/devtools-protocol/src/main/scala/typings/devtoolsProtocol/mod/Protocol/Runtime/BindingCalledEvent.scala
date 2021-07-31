@@ -2,20 +2,18 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingCalledEvent extends StObject {
   
   /**
     * Identifier of the context where the call was made.
     */
-  var executionContextId: ExecutionContextId = js.native
+  var executionContextId: ExecutionContextId
   
-  var name: String = js.native
+  var name: String
   
-  var payload: String = js.native
+  var payload: String
 }
 object BindingCalledEvent {
   

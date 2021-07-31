@@ -10,52 +10,52 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.image
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TYListItemProps extends TouchableOpacityProps {
+trait TYListItemProps
+  extends StObject
+     with TouchableOpacityProps {
   
-  var Action: js.UndefOr[js.Any] = js.native
+  var Action: js.UndefOr[js.Any] = js.undefined
   
-  var Icon: js.UndefOr[js.Any] = js.native
+  var Icon: js.UndefOr[js.Any] = js.undefined
   
-  var actionDisabled: js.UndefOr[Boolean] = js.native
+  var actionDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var actionType: js.UndefOr[auto | image | iconfont | text] = js.native
+  var actionType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
-  var arrow: js.UndefOr[Boolean] = js.native
+  var arrow: js.UndefOr[Boolean] = js.undefined
   
-  var arrowColor: js.UndefOr[String] = js.native
+  var arrowColor: js.UndefOr[String] = js.undefined
   
-  var arrowUseIcon: js.UndefOr[Boolean] = js.native
+  var arrowUseIcon: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   @JSName("disabled")
-  var disabled_TYListItemProps: js.UndefOr[Boolean] = js.native
+  var disabled_TYListItemProps: js.UndefOr[Boolean] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var iconType: js.UndefOr[auto | image | iconfont | text] = js.native
+  var iconType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
-  var imageFollowIconColor: js.UndefOr[Boolean] = js.native
+  var imageFollowIconColor: js.UndefOr[Boolean] = js.undefined
   
-  var needUpdate: js.UndefOr[Boolean] = js.native
+  var needUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var onActionPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onActionPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var styles: js.UndefOr[Content] = js.native
+  var styles: js.UndefOr[Content] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[BoardBg] = js.native
+  var theme: js.UndefOr[BoardBg] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var useART: js.UndefOr[Boolean] = js.native
+  var useART: js.UndefOr[Boolean] = js.undefined
 }
 object TYListItemProps {
   

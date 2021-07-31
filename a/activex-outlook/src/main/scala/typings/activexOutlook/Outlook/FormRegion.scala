@@ -2,52 +2,50 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormRegion extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Detail: String = js.native
+  var Detail: String
   
-  val DisplayName: String = js.native
+  val DisplayName: String
   
-  var EnableAutoLayout: Boolean = js.native
+  var EnableAutoLayout: Boolean
   
-  val Form: js.Any = js.native
+  val Form: js.Any
   
-  val FormRegionMode: OlFormRegionMode = js.native
+  val FormRegionMode: OlFormRegionMode
   
-  val Inspector: typings.activexOutlook.Outlook.Inspector = js.native
+  val Inspector: typings.activexOutlook.Outlook.Inspector
   
-  val InternalName: String = js.native
+  val InternalName: String
   
-  val IsExpanded: Boolean = js.native
+  val IsExpanded: Boolean
   
-  val Item: js.Any = js.native
+  val Item: js.Any
   
-  val Language: Double = js.native
+  val Language: Double
   
   @JSName("Outlook.FormRegion_typekey")
-  var OutlookDotFormRegion_typekey: FormRegion = js.native
+  var OutlookDotFormRegion_typekey: FormRegion
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reflow(): Unit = js.native
+  def Reflow(): Unit
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def SetControlItemProperty(Control: js.Any, PropertyName: String): Unit = js.native
+  def SetControlItemProperty(Control: js.Any, PropertyName: String): Unit
   
-  var SuppressControlReplacement: Boolean = js.native
+  var SuppressControlReplacement: Boolean
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object FormRegion {
   

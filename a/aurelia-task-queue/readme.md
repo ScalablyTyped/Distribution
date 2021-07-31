@@ -10,9 +10,9 @@ A simple task queue for the browser that enables the queuing of both standard ta
 | ------------------ | :-------------: |
 | Full name          | aurelia-task-queue |
 | Keywords           | aurelia, queue, task, micro task |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 33 |
-| # downloads        | 485762 |
+| # downloads        | 504742 |
 | # stars            | 0 |
 
 ## Links

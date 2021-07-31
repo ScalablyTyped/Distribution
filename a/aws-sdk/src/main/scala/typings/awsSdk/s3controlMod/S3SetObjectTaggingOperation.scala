@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SetObjectTaggingOperation extends StObject {
   
   /**
     * 
     */
-  var TagSet: js.UndefOr[S3TagSet] = js.native
+  var TagSet: js.UndefOr[S3TagSet] = js.undefined
 }
 object S3SetObjectTaggingOperation {
   

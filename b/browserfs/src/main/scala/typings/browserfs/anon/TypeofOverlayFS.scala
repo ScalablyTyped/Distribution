@@ -10,12 +10,12 @@ import typings.browserfs.overlayFSMod.OverlayFSOptions
 import typings.browserfs.overlayFSMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofOverlayFS
-  extends Instantiable2[/* writable */ FileSystem, /* readable */ FileSystem, default]
+  extends StObject
+     with Instantiable2[/* writable */ FileSystem, /* readable */ FileSystem, default]
      with Instantiable3[
       /* writable */ FileSystem, 
       /* readable */ FileSystem, 

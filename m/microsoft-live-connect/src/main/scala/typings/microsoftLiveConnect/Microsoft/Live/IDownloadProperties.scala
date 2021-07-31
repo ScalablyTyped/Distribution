@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.download method.
   */
-@js.native
 trait IDownloadProperties extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait IDownloadProperties extends StObject {
     * for REST objects, see REST reference.
     * http://msdn.microsoft.com/en-us/library/live/hh243648.aspx
     */
-  var path: String = js.native
+  var path: String
 }
 object IDownloadProperties {
   

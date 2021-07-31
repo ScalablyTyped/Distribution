@@ -4,19 +4,17 @@ import typings.invityApi.invityApiStrings.QUOTE_TIMEOUT
 import typings.invityApi.invityApiStrings.UNKNOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyTradeResponse extends StObject {
   
-  var newQuote: js.UndefOr[BuyTrade] = js.native
+  var newQuote: js.UndefOr[BuyTrade] = js.undefined
   
-  var requestTradeErrorType: js.UndefOr[QUOTE_TIMEOUT | UNKNOWN] = js.native
+  var requestTradeErrorType: js.UndefOr[QUOTE_TIMEOUT | UNKNOWN] = js.undefined
   
-  var trade: BuyTrade = js.native
+  var trade: BuyTrade
   
-  var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.native
+  var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.undefined
 }
 object BuyTradeResponse {
   

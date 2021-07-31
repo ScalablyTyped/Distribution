@@ -2,19 +2,17 @@ package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlayToConnection extends StObject {
   
-  var onerror: js.Any = js.native
+  var onerror: js.Any
   
-  var onstatechanged: js.Any = js.native
+  var onstatechanged: js.Any
   
-  var ontransferred: js.Any = js.native
+  var ontransferred: js.Any
   
-  var state: PlayToConnectionState = js.native
+  var state: PlayToConnectionState
 }
 object IPlayToConnection {
   

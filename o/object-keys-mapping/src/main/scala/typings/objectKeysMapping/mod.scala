@@ -3,10 +3,13 @@ package typings.objectKeysMapping
 import typings.objectKeysMapping.anon.Camelcase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("object-keys-mapping", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("object-keys-mapping", "Operator")
   @js.native
@@ -23,39 +26,30 @@ object mod {
     def mapObject(origin: js.Object, path: String): js.Object = js.native
   }
   
-  @JSImport("object-keys-mapping", "reverseCamelcase")
-  @js.native
-  def reverseCamelcase(origin: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("object-keys-mapping", "reverseCamelcase")
-  @js.native
-  def reverseCamelcase(origin: js.Object): js.Object = js.native
+  @scala.inline
+  def reverseCamelcase(origin: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCamelcase")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def reverseCamelcase(origin: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCamelcase")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("object-keys-mapping", "toCamelcase")
-  @js.native
-  def toCamelcase(origin: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("object-keys-mapping", "toCamelcase")
-  @js.native
-  def toCamelcase(origin: js.Object): js.Object = js.native
+  @scala.inline
+  def toCamelcase(origin: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCamelcase")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def toCamelcase(origin: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("toCamelcase")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("object-keys-mapping", "trim")
-  @js.native
-  def trim(origin: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("object-keys-mapping", "trim")
-  @js.native
-  def trim(origin: js.Array[js.Object], ignore: js.Function1[/* v */ js.Any, Boolean]): js.Array[js.Object] = js.native
-  @JSImport("object-keys-mapping", "trim")
-  @js.native
-  def trim(origin: js.Object): js.Object = js.native
-  @JSImport("object-keys-mapping", "trim")
-  @js.native
-  def trim(origin: js.Object, ignore: js.Function1[/* v */ js.Any, Boolean]): js.Object = js.native
+  @scala.inline
+  def trim(origin: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def trim(origin: js.Array[js.Object], ignore: js.Function1[/* v */ js.Any, Boolean]): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def trim(origin: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def trim(origin: js.Object, ignore: js.Function1[/* v */ js.Any, Boolean]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @js.native
   trait OperatorOptions extends StObject {
     
-    var camelcase: js.UndefOr[Boolean] = js.native
+    var camelcase: js.UndefOr[Boolean] = js.undefined
     
-    var mapping: js.UndefOr[js.Object] = js.native
+    var mapping: js.UndefOr[js.Object] = js.undefined
   }
   object OperatorOptions {
     

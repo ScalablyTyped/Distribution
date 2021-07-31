@@ -2,19 +2,17 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The original request is prevented from being sent or completed and is instead
     * redirected to the given URL.
     */
-  var redirectURL: js.UndefOr[String] = js.native
+  var redirectURL: js.UndefOr[String] = js.undefined
 }
 object Response {
   

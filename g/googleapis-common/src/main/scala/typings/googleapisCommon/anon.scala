@@ -5,15 +5,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.mod.OAuth2Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
   }
   object Description {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fragment extends StObject {
     
-    var fragment: String = js.native
+    var fragment: String
   }
   object Fragment {
     
@@ -52,10 +49,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Oauth2 extends StObject {
     
-    var oauth2: Scopes = js.native
+    var oauth2: Scopes
   }
   object Oauth2 {
     
@@ -73,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Path {
     
@@ -94,10 +89,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Protocols extends StObject {
     
-    var protocols: Simple = js.native
+    var protocols: Simple
   }
   object Protocols {
     
@@ -115,11 +109,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref extends StObject {
     
     @JSName("$ref")
-    var $ref: String = js.native
+    var $ref: String
   }
   object Ref {
     
@@ -137,10 +130,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scopes extends StObject {
     
-    var scopes: StringDictionary[Description] = js.native
+    var scopes: StringDictionary[Description]
   }
   object Scopes {
     
@@ -158,10 +150,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Simple extends StObject {
     
-    var simple: Path = js.native
+    var simple: Path
   }
   object Simple {
     
@@ -180,7 +171,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofOAuth2Client extends Instantiable0[OAuth2Client] {
+  trait TypeofOAuth2Client
+    extends StObject
+       with Instantiable0[OAuth2Client] {
     
     /**
       * Clock skew - five minutes in seconds
@@ -236,10 +229,9 @@ object anon {
     def getRevokeTokenUrl(token: String): String = js.native
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     
@@ -257,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X16 extends StObject {
     
-    var x16: String = js.native
+    var x16: String
     
-    var x32: String = js.native
+    var x32: String
   }
   object X16 {
     

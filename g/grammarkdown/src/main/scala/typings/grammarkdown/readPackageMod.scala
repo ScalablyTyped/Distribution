@@ -3,44 +3,44 @@ package typings.grammarkdown
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readPackageMod {
   
-  @JSImport("grammarkdown/dist/read-package", "readPackage")
+  @JSImport("grammarkdown/dist/read-package", JSImport.Namespace)
   @js.native
-  def readPackage(packagePath: String, done: js.Function2[/* err */ js.Any, /* pkg */ js.UndefOr[Package], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("grammarkdown/dist/read-package", "readPackageSync")
-  @js.native
-  def readPackageSync(packagePath: String): Package = js.native
+  @scala.inline
+  def readPackage(packagePath: String, done: js.Function2[/* err */ js.Any, /* pkg */ js.UndefOr[Package], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")(packagePath.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def readPackageSync(packagePath: String): Package = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")(packagePath.asInstanceOf[js.Any]).asInstanceOf[Package]
+  
   trait Package extends StObject {
     
-    var author: js.UndefOr[String | Person] = js.native
+    var author: js.UndefOr[String | Person] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var devDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var license: js.UndefOr[String] = js.native
+    var license: js.UndefOr[String] = js.undefined
     
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     @JSName("typings")
-    var typings_ : js.UndefOr[String] = js.native
+    var typings_ : js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Package {
     
@@ -124,12 +124,11 @@ object readPackageMod {
     }
   }
   
-  @js.native
   trait Person extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Person {
     

@@ -2,17 +2,19 @@ package typings.egjsAxes
 
 import typings.egjsAxes.constMod.DIRECTION
 import typings.egjsAxes.inputTypeMod.IInputType
+import typings.egjsAxes.inputTypeMod.IInputTypeObserver
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panInputMod {
   
   @JSImport("@egjs/axes/inputType/PanInput", "PanInput")
   @js.native
-  class PanInput protected () extends IInputType {
+  class PanInput protected ()
+    extends StObject
+       with IInputType {
     def this(el: String) = this()
     def this(el: HTMLElement) = this()
     def this(el: String, options: PanInputOption) = this()
@@ -22,10 +24,25 @@ object panInputMod {
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
+    /* CompleteClass */
+    var axes: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def connect(observer: IInputTypeObserver): IInputType = js.native
+    
+    /* CompleteClass */
+    override def destroy(): js.Any = js.native
+    
     /* private */ def dettachEvent(): js.Any = js.native
     
     @JSName("disable")
     def disable_MPanInput(): this.type = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): js.Any = js.native
+    
+    /* CompleteClass */
+    var element: HTMLElement = js.native
     
     @JSName("enable")
     def enable_MPanInput(): this.type = js.native
@@ -34,6 +51,9 @@ object panInputMod {
     
     @JSName("isEnable")
     def isEnable_MPanInput(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
     var observer: js.Any = js.native
     
@@ -48,32 +68,31 @@ object panInputMod {
   /* static members */
   object PanInput {
     
-    @JSImport("@egjs/axes/inputType/PanInput", "PanInput.getDirectionByAngle")
+    @JSImport("@egjs/axes/inputType/PanInput", "PanInput")
     @js.native
-    def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@egjs/axes/inputType/PanInput", "PanInput.getNextOffset")
-    @js.native
-    def getNextOffset(speeds: js.Array[Double], deceleration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectionByAngle")(angle.asInstanceOf[js.Any], thresholdAngle.asInstanceOf[js.Any])).asInstanceOf[DIRECTION]
     
-    @JSImport("@egjs/axes/inputType/PanInput", "PanInput.useDirection")
-    @js.native
-    def useDirection(checkType: DIRECTION, direction: DIRECTION): Boolean = js.native
-    @JSImport("@egjs/axes/inputType/PanInput", "PanInput.useDirection")
-    @js.native
-    def useDirection(checkType: DIRECTION, direction: DIRECTION, userDirection: DIRECTION): Boolean = js.native
+    @scala.inline
+    def getNextOffset(speeds: js.Array[Double], deceleration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextOffset")(speeds.asInstanceOf[js.Any], deceleration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    
+    @scala.inline
+    def useDirection(checkType: DIRECTION, direction: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def useDirection(checkType: DIRECTION, direction: DIRECTION, userDirection: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], userDirection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait PanInputOption extends StObject {
     
-    var inputType: js.UndefOr[js.Array[String]] = js.native
+    var inputType: js.UndefOr[js.Array[String]] = js.undefined
     
-    var scale: js.UndefOr[js.Array[Double]] = js.native
+    var scale: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var thresholdAngle: js.UndefOr[Double] = js.native
+    var thresholdAngle: js.UndefOr[Double] = js.undefined
   }
   object PanInputOption {
     

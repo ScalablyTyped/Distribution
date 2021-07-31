@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,13 +13,14 @@ object ui {
   /**
     * Provides options for the bottom-bar UI.
     */
-  @js.native
-  trait BottomBarOptions extends StreamOptions {
+  trait BottomBarOptions
+    extends StObject
+       with StreamOptions {
     
     /**
       * The initial text to display.
       */
-    var bottomBar: js.UndefOr[String] = js.native
+    var bottomBar: js.UndefOr[String] = js.undefined
   }
   object BottomBarOptions {
     
@@ -44,18 +44,17 @@ object ui {
   /**
     * Represents a fetched answer.
     */
-  @js.native
   trait FetchedAnswer extends StObject {
     
     /**
       * The value of the answer.
       */
-    var answer: js.Any = js.native
+    var answer: js.Any
     
     /**
       * The name of the answer.
       */
-    var name: String = js.native
+    var name: String
   }
   object FetchedAnswer {
     
@@ -82,5 +81,5 @@ object ui {
     * @template T
     * The type of the answers.
     */
-  type FetchedQuestion[T /* <: Answers */] = DistinctQuestion[T] with Default[T]
+  type FetchedQuestion[T /* <: Answers */] = DistinctQuestion[T] & Default[T]
 }

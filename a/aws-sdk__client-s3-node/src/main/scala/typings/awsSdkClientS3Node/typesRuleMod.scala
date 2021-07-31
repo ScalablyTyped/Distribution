@@ -14,12 +14,10 @@ import typings.awsSdkClientS3Node.typesTransitionMod.Transition
 import typings.awsSdkClientS3Node.typesTransitionMod.UnmarshalledTransition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRuleMod {
   
-  @js.native
   trait Rule extends StObject {
     
     /**
@@ -27,46 +25,46 @@ object typesRuleMod {
       */
     var AbortIncompleteMultipartUpload: js.UndefOr[
         typings.awsSdkClientS3Node.typesAbortIncompleteMultipartUploadMod.AbortIncompleteMultipartUpload
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _LifecycleExpiration shape
       */
-    var Expiration: js.UndefOr[LifecycleExpiration] = js.native
+    var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
     
     /**
       * <p>Unique identifier for the rule. The value cannot be longer than 255 characters.</p>
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Specifies when noncurrent object versions expire. Upon expiration, Amazon S3 permanently deletes the noncurrent object versions. You set this lifecycle configuration action on a bucket that has versioning enabled (or suspended) to request that Amazon S3 delete noncurrent object versions at a specific period in the object's lifetime.</p>
       */
     var NoncurrentVersionExpiration: js.UndefOr[
         typings.awsSdkClientS3Node.typesNoncurrentVersionExpirationMod.NoncurrentVersionExpiration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Container for the transition rule that describes when noncurrent objects transition to the STANDARD_IA, ONEZONE_IA or GLACIER storage class. If your bucket is versioning-enabled (or versioning is suspended), you can set this action to request that Amazon S3 transition noncurrent object versions to the STANDARD_IA, ONEZONE_IA or GLACIER storage class at a specific period in the object's lifetime.</p>
       */
     var NoncurrentVersionTransition: js.UndefOr[
         typings.awsSdkClientS3Node.typesNoncurrentVersionTransitionMod.NoncurrentVersionTransition
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Prefix identifying one or more objects to which the rule applies.</p>
       */
-    var Prefix: String = js.native
+    var Prefix: String
     
     /**
       * <p>If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.</p>
       */
-    var Status: Enabled | Disabled | String = js.native
+    var Status: Enabled | Disabled | String
     
     /**
       * _Transition shape
       */
-    var Transition: js.UndefOr[typings.awsSdkClientS3Node.typesTransitionMod.Transition] = js.native
+    var Transition: js.UndefOr[typings.awsSdkClientS3Node.typesTransitionMod.Transition] = js.undefined
   }
   object Rule {
     
@@ -123,38 +121,39 @@ object typesRuleMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRule extends Rule {
+  trait UnmarshalledRule
+    extends StObject
+       with Rule {
     
     /**
       * <p>Specifies the days since the initiation of an Incomplete Multipart Upload that Lifecycle will wait before permanently removing all parts of the upload.</p>
       */
     @JSName("AbortIncompleteMultipartUpload")
-    var AbortIncompleteMultipartUpload_UnmarshalledRule: js.UndefOr[UnmarshalledAbortIncompleteMultipartUpload] = js.native
+    var AbortIncompleteMultipartUpload_UnmarshalledRule: js.UndefOr[UnmarshalledAbortIncompleteMultipartUpload] = js.undefined
     
     /**
       * _LifecycleExpiration shape
       */
     @JSName("Expiration")
-    var Expiration_UnmarshalledRule: js.UndefOr[UnmarshalledLifecycleExpiration] = js.native
+    var Expiration_UnmarshalledRule: js.UndefOr[UnmarshalledLifecycleExpiration] = js.undefined
     
     /**
       * <p>Specifies when noncurrent object versions expire. Upon expiration, Amazon S3 permanently deletes the noncurrent object versions. You set this lifecycle configuration action on a bucket that has versioning enabled (or suspended) to request that Amazon S3 delete noncurrent object versions at a specific period in the object's lifetime.</p>
       */
     @JSName("NoncurrentVersionExpiration")
-    var NoncurrentVersionExpiration_UnmarshalledRule: js.UndefOr[UnmarshalledNoncurrentVersionExpiration] = js.native
+    var NoncurrentVersionExpiration_UnmarshalledRule: js.UndefOr[UnmarshalledNoncurrentVersionExpiration] = js.undefined
     
     /**
       * <p>Container for the transition rule that describes when noncurrent objects transition to the STANDARD_IA, ONEZONE_IA or GLACIER storage class. If your bucket is versioning-enabled (or versioning is suspended), you can set this action to request that Amazon S3 transition noncurrent object versions to the STANDARD_IA, ONEZONE_IA or GLACIER storage class at a specific period in the object's lifetime.</p>
       */
     @JSName("NoncurrentVersionTransition")
-    var NoncurrentVersionTransition_UnmarshalledRule: js.UndefOr[UnmarshalledNoncurrentVersionTransition] = js.native
+    var NoncurrentVersionTransition_UnmarshalledRule: js.UndefOr[UnmarshalledNoncurrentVersionTransition] = js.undefined
     
     /**
       * _Transition shape
       */
     @JSName("Transition")
-    var Transition_UnmarshalledRule: js.UndefOr[UnmarshalledTransition] = js.native
+    var Transition_UnmarshalledRule: js.UndefOr[UnmarshalledTransition] = js.undefined
   }
   object UnmarshalledRule {
     

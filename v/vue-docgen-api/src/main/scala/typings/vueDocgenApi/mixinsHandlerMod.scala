@@ -5,17 +5,19 @@ import typings.babelTypes.mod.File_
 import typings.vueDocgenApi.parseMod.ParseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mixinsHandlerMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/mixinsHandler", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/mixinsHandler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
-    componentDefinition: NodePath[_, _],
+    componentDefinition: NodePath[js.Any, js.Any],
     astPath: File_,
     opt: ParseOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], componentDefinition.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

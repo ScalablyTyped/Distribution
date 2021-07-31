@@ -2,15 +2,13 @@ package typings.reactVirtualized.esTableMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiSortOptions extends StObject {
   
-  var defaultSortBy: js.UndefOr[js.Array[String]] = js.native
+  var defaultSortBy: js.UndefOr[js.Array[String]] = js.undefined
   
-  var defaultSortDirection: js.UndefOr[SortDirectionMap] = js.native
+  var defaultSortDirection: js.UndefOr[SortDirectionMap] = js.undefined
 }
 object MultiSortOptions {
   

@@ -3,44 +3,44 @@ package typings.awsSdkBuildTypes.customizationMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.ParserDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParserDecoratorCustomizationDefinition extends CustomizationDefinition {
+trait ParserDecoratorCustomizationDefinition
+  extends StObject
+     with CustomizationDefinition {
   
   /**
     * Any configuration necessary for this middleware to be resolved.
     */
-  var configuration: js.UndefOr[ConfigurationDefinition] = js.native
+  var configuration: js.UndefOr[ConfigurationDefinition] = js.undefined
   
   /**
     * An expression that resolves to the decorator with which to wrap the
     * parser.
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Packages that must be imported to use this parser decorator.
     * Packages will be imported using the `import * as ${snake_case_package_name} from 'package-name';`
     * syntax.
     */
-  var imports: js.UndefOr[js.Array[Import]] = js.native
+  var imports: js.UndefOr[js.Array[Import]] = js.undefined
   
   /**
     * The relative priority of this decorator relative to other decorators.
     * Used during client generation to order decorator application.
     */
-  var priority: Double = js.native
+  var priority: Double
   
-  var `type`: ParserDecorator = js.native
+  var `type`: ParserDecorator
 }
 object ParserDecoratorCustomizationDefinition {
   
   @scala.inline
-  def apply(expression: String, priority: Double, `type`: ParserDecorator): ParserDecoratorCustomizationDefinition = {
+  def apply(expression: String, priority: Double): ParserDecoratorCustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ParserDecorator")
     __obj.asInstanceOf[ParserDecoratorCustomizationDefinition]
   }
   

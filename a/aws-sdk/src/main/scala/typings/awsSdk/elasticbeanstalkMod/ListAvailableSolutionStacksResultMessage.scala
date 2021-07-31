@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAvailableSolutionStacksResultMessage extends StObject {
   
   /**
     *  A list of available solution stacks and their SolutionStackDescription. 
     */
-  var SolutionStackDetails: js.UndefOr[AvailableSolutionStackDetailsList] = js.native
+  var SolutionStackDetails: js.UndefOr[AvailableSolutionStackDetailsList] = js.undefined
   
   /**
     * A list of available solution stacks.
     */
-  var SolutionStacks: js.UndefOr[AvailableSolutionStackNamesList] = js.native
+  var SolutionStacks: js.UndefOr[AvailableSolutionStackNamesList] = js.undefined
 }
 object ListAvailableSolutionStacksResultMessage {
   

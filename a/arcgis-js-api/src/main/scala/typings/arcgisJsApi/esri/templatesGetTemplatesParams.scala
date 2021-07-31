@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait templatesGetTemplatesParams extends Object {
+trait templatesGetTemplatesParams
+  extends StObject
+     with Object {
   
   /**
     * The layer to which the suggested popup templates can be applied.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#getTemplates)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Specify the renderer to be used on the layer when if it will be different than the renderer already set on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#getTemplates)
     */
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
 }
 object templatesGetTemplatesParams {
   

@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Sparkline.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sparkline extends Widget_ {
+trait Sparkline
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -30,11 +31,15 @@ object Sparkline {
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Normal extends FontStyle
+    sealed trait Normal
+      extends StObject
+         with FontStyle
   }
   
   @js.native
@@ -45,15 +50,21 @@ object Sparkline {
     
     //string
     @js.native
-    sealed trait Bold extends FontWeight
+    sealed trait Bold
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Lighter extends FontWeight
+    sealed trait Lighter
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Regular extends FontWeight
+    sealed trait Regular
+      extends StObject
+         with FontWeight
   }
   
   @js.native
@@ -64,43 +75,63 @@ object Sparkline {
     
     //string
     @js.native
-    sealed trait Azure extends Theme
+    sealed trait Azure
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Azuredark extends Theme
+    sealed trait Azuredark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait FlatDark extends Theme
+    sealed trait FlatDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait FlatLight extends Theme
+    sealed trait FlatLight
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait GradientDark extends Theme
+    sealed trait GradientDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait GradientLight extends Theme
+    sealed trait GradientLight
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Lime extends Theme
+    sealed trait Lime
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait LimeDark extends Theme
+    sealed trait LimeDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Saffron extends Theme
+    sealed trait Saffron
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait SaffronDark extends Theme
+    sealed trait SaffronDark
+      extends StObject
+         with Theme
   }
   
   @js.native
@@ -111,47 +142,56 @@ object Sparkline {
     
     //string
     @js.native
-    sealed trait Area extends Type
+    sealed trait Area
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Column extends Type
+    sealed trait Column
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Line extends Type
+    sealed trait Line
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Pie extends Type
+    sealed trait Pie
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait WinLoss extends Type
+    sealed trait WinLoss
+      extends StObject
+         with Type
   }
   
-  @js.native
   trait AxisLineSettings extends StObject {
     
     /** Color of the axis line.
       * @Default {'#111111'}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Dash array of the axis line.
       * @Default {1}
       */
-    var dashArray: js.UndefOr[Double] = js.native
+    var dashArray: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of the axis.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the axis line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxisLineSettings {
     
@@ -190,18 +230,17 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait Border extends StObject {
     
     /** Border color of the sparkline.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sparkline border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Border {
     
@@ -228,20 +267,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -274,20 +312,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -320,20 +357,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -366,20 +402,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait LoadedEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadedEventArgs {
     
@@ -412,32 +447,31 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait MarkerSettings extends StObject {
     
     /** Options for customizing the border of the marker shape.
       */
-    var border: js.UndefOr[MarkerSettingsBorder] = js.native
+    var border: js.UndefOr[MarkerSettingsBorder] = js.undefined
     
     /** Color of the marker shape.
       * @Default {white}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Controls the opacity of the marker.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of the marker shape.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** width of the marker shape.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MarkerSettings {
     
@@ -482,23 +516,22 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait MarkerSettingsBorder extends StObject {
     
     /** Border color of the marker shape.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Controls the opacity of the marker border.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Border width of the marker shape.
       * @Default {null}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MarkerSettingsBorder {
     
@@ -531,180 +564,179 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the sparkline.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Options for customizing the color,dashArray and width of the axisLine.
       */
-    var axisLineSettings: js.UndefOr[AxisLineSettings] = js.native
+    var axisLineSettings: js.UndefOr[AxisLineSettings] = js.undefined
     
     /** Background color of the plot area.
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the color, opacity and width of the sparkline border.
       */
-    var border: js.UndefOr[Border] = js.native
+    var border: js.UndefOr[Border] = js.undefined
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Fires, on double clicking the sparkline.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Controls whether Sparkline has to be rendered as Canvas or SVG.Canvas rendering supports all functionalities in SVG rendering.
       * @Default {false}
       */
-    var enableCanvasRendering: js.UndefOr[Boolean] = js.native
+    var enableCanvasRendering: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the date object to string, using locale settings.
       * @Default {false}
       */
-    var enableGroupSeparator: js.UndefOr[Boolean] = js.native
+    var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Color for series end point.
       * @Default {null}
       */
-    var endPointColor: js.UndefOr[String] = js.native
+    var endPointColor: js.UndefOr[String] = js.undefined
     
     /** Fill color for the sparkline series.
       * @Default {#33ccff}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Color for series high point.
       * @Default {null}
       */
-    var highPointColor: js.UndefOr[String] = js.native
+    var highPointColor: js.UndefOr[String] = js.undefined
     
     /** Controls whether sparkline has to be responsive or not.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Fires before loading the sparkline.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Fires after loaded the sparkline.
       */
-    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which sparkline should be localized.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Color for series low point.
       * @Default {null}
       */
-    var lowPointColor: js.UndefOr[String] = js.native
+    var lowPointColor: js.UndefOr[String] = js.undefined
     
     /** Options for displaying and customizing marker for a data point.
       */
-    var markerSettings: js.UndefOr[MarkerSettings] = js.native
+    var markerSettings: js.UndefOr[MarkerSettings] = js.undefined
     
     /** Color for series negative point.
       * @Default {null}
       */
-    var negativePointColor: js.UndefOr[String] = js.native
+    var negativePointColor: js.UndefOr[String] = js.undefined
     
     /** Opacity of the series.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Gap or padding for sparkline.
       * @Default {8}
       */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /** Name of a field in data source, where the fill color for all the data points is generated.
       */
-    var palette: js.UndefOr[String] = js.native
+    var palette: js.UndefOr[String] = js.undefined
     
     /** Fires on clicking a point in sparkline. You can use this event to handle clicks made on points.
       */
-    var pointRegionMouseClick: js.UndefOr[js.Function1[/* e */ PointRegionMouseClickEventArgs, Unit]] = js.native
+    var pointRegionMouseClick: js.UndefOr[js.Function1[/* e */ PointRegionMouseClickEventArgs, Unit]] = js.undefined
     
     /** Fires when mouse is moved over a point.
       */
-    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, Unit]] = js.native
+    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Options for customizing the color, opacity of the sparkline start and end range.
       */
-    var rangeBandSettings: js.UndefOr[RangeBandSettings] = js.native
+    var rangeBandSettings: js.UndefOr[RangeBandSettings] = js.undefined
     
     /** Fires, on right clicking the sparkline.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Fires before rendering a series. This event is fired for each series in Sparkline.
       */
-    var seriesRendering: js.UndefOr[js.Function1[/* e */ SeriesRenderingEventArgs, Unit]] = js.native
+    var seriesRendering: js.UndefOr[js.Function1[/* e */ SeriesRenderingEventArgs, Unit]] = js.undefined
     
     /** Options to customize the Sparkline size.
       */
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
     /** Fires on moving mouse outside the sparkline.
       */
-    var sparklineMouseLeave: js.UndefOr[js.Function1[/* e */ SparklineMouseLeaveEventArgs, Unit]] = js.native
+    var sparklineMouseLeave: js.UndefOr[js.Function1[/* e */ SparklineMouseLeaveEventArgs, Unit]] = js.undefined
     
     /** Fires on moving mouse over the sparkline.
       */
-    var sparklineMouseMove: js.UndefOr[js.Function1[/* e */ SparklineMouseMoveEventArgs, Unit]] = js.native
+    var sparklineMouseMove: js.UndefOr[js.Function1[/* e */ SparklineMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Color for series start point.
       * @Default {null}
       */
-    var startPointColor: js.UndefOr[String] = js.native
+    var startPointColor: js.UndefOr[String] = js.undefined
     
     /** Border color of the series.
       * @Default {null}
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the theme for Sparkline.
       * @Default {Flatlight. See Theme}
       */
-    var theme: js.UndefOr[typings.ejWebAll.ej.Sparkline.Theme | String] = js.native
+    var theme: js.UndefOr[typings.ejWebAll.ej.Sparkline.Theme | String] = js.undefined
     
     /** Options to customize the tooltip.
       */
-    var tooltip: js.UndefOr[Tooltip] = js.native
+    var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Fires before rendering trackball tooltip. You can use this event to customize the text displayed in trackball tooltip.
       */
-    var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.native
+    var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.undefined
     
     /** Specifies the type of the series to render in sparkline.
       * @Default {line. See Type}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Sparkline.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Sparkline.Type | String] = js.undefined
     
     /** Border width of the series.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -947,36 +979,35 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait PointRegionMouseClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** X-coordinate of point in pixel
       */
-    var locationX: js.UndefOr[Double] = js.native
+    var locationX: js.UndefOr[Double] = js.undefined
     
     /** Y-coordinate of point in pixel
       */
-    var locationY: js.UndefOr[Double] = js.native
+    var locationY: js.UndefOr[Double] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Index of the point in series
       */
-    var pointIndex: js.UndefOr[Double] = js.native
+    var pointIndex: js.UndefOr[Double] = js.undefined
     
     /** Type of the series
       */
-    var seriesType: js.UndefOr[String] = js.native
+    var seriesType: js.UndefOr[String] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionMouseClickEventArgs {
     
@@ -1033,36 +1064,35 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait PointRegionMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** X-coordinate of point in pixel
       */
-    var locationX: js.UndefOr[Double] = js.native
+    var locationX: js.UndefOr[Double] = js.undefined
     
     /** Y-coordinate of point in pixel
       */
-    var locationY: js.UndefOr[Double] = js.native
+    var locationY: js.UndefOr[Double] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Index of the point in series
       */
-    var pointIndex: js.UndefOr[Double] = js.native
+    var pointIndex: js.UndefOr[Double] = js.undefined
     
     /** Type of the series
       */
-    var seriesType: js.UndefOr[String] = js.native
+    var seriesType: js.UndefOr[String] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionMouseMoveEventArgs {
     
@@ -1119,28 +1149,27 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait RangeBandSettings extends StObject {
     
     /** Range band color of the series.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** End value of the range band.
       * @Default {null}
       */
-    var endRange: js.UndefOr[Double] = js.native
+    var endRange: js.UndefOr[Double] = js.undefined
     
     /** Range band opacity of the series.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Start value of the range band.
       * @Default {null}
       */
-    var startRange: js.UndefOr[Double] = js.native
+    var startRange: js.UndefOr[Double] = js.undefined
   }
   object RangeBandSettings {
     
@@ -1179,20 +1208,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -1225,36 +1253,35 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait SeriesRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Maximum x value of the data point
       */
-    var maxX: js.UndefOr[js.Any] = js.native
+    var maxX: js.UndefOr[js.Any] = js.undefined
     
     /** Maximum y value of the data point
       */
-    var maxY: js.UndefOr[js.Any] = js.native
+    var maxY: js.UndefOr[js.Any] = js.undefined
     
     /** Minimum x value of the data point
       */
-    var minX: js.UndefOr[js.Any] = js.native
+    var minX: js.UndefOr[js.Any] = js.undefined
     
     /** Minimum y value of the data point
       */
-    var minY: js.UndefOr[js.Any] = js.native
+    var minY: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SeriesRenderingEventArgs {
     
@@ -1311,18 +1338,17 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
     /** Height of the Sparkline. Height can be specified in either pixel or percentage.
       * @Default {''}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Sparkline. Width can be specified in either pixel or percentage.
       * @Default {''}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Size {
     
@@ -1349,20 +1375,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait SparklineMouseLeaveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SparklineMouseLeaveEventArgs {
     
@@ -1395,20 +1420,19 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait SparklineMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SparklineMouseMoveEventArgs {
     
@@ -1441,30 +1465,29 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
     /** Options for customizing the border of the tooltip.
       */
-    var border: js.UndefOr[TooltipBorder] = js.native
+    var border: js.UndefOr[TooltipBorder] = js.undefined
     
     /** Fill color for the sparkline tooltip.
       * @Default {white}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the font of the tooltip.
       */
-    var font: js.UndefOr[TooltipFont] = js.native
+    var font: js.UndefOr[TooltipFont] = js.undefined
     
     /** Custom template to the tooltip.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Show/hides the tooltip visibility.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Tooltip {
     
@@ -1509,18 +1532,17 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait TooltipBorder extends StObject {
     
     /** Border color of the tooltip.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TooltipBorder {
     
@@ -1547,38 +1569,37 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait TooltipFont extends StObject {
     
     /** Font color of the text in the tooltip.
       * @Default {#111111}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for the tooltip.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for the tooltip.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontStyle | String] = js.undefined
     
     /** Specifies the font weight for the tooltip.
       * @Default {Regular}
       */
-    var fontWeight: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontWeight | String] = js.undefined
     
     /** Opacity for text in the tooltip.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in the tooltip.
       * @Default {8px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TooltipFont {
     
@@ -1629,36 +1650,35 @@ object Sparkline {
     }
   }
   
-  @js.native
   trait TooltipInitializeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Text to be displayed in trackball tooltip. Use this option to add custom text in trackball tooltip
       */
-    var currentText: js.UndefOr[String] = js.native
+    var currentText: js.UndefOr[String] = js.undefined
     
     /** X Location of the trackball tooltip in pixels
       */
-    var locationX: js.UndefOr[js.Any] = js.native
+    var locationX: js.UndefOr[js.Any] = js.undefined
     
     /** Y Location of the trackball tooltip in pixels
       */
-    var locationY: js.UndefOr[js.Any] = js.native
+    var locationY: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Index of the point for which trackball tooltip is displayed
       */
-    var pointIndex: js.UndefOr[Double] = js.native
+    var pointIndex: js.UndefOr[Double] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TooltipInitializeEventArgs {
     

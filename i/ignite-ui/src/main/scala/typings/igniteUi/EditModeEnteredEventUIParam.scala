@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditModeEnteredEventUIParam extends StObject {
   
   /**
     * Gets the cell for which the control has entered edit mode.
     */
-  var cell: js.UndefOr[String] = js.native
+  var cell: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object EditModeEnteredEventUIParam {
   

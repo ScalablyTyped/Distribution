@@ -2,21 +2,19 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupKeyOptions extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+  var modifier: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GroupKeyOptions {
   
@@ -46,7 +44,7 @@ object GroupKeyOptions {
     def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setModifier(value: /* value */ js.Any => _): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
+    def setModifier(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
     
     @scala.inline
     def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)

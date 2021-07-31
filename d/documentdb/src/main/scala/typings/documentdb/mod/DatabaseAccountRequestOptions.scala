@@ -2,14 +2,14 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatabaseAccountRequestOptions extends RequestOptions {
+trait DatabaseAccountRequestOptions
+  extends StObject
+     with RequestOptions {
   
   /** The endpoint url whose database account needs to be retrieved. If not present, current client's url will be used. */
-  var urlConnection: js.UndefOr[String] = js.native
+  var urlConnection: js.UndefOr[String] = js.undefined
 }
 object DatabaseAccountRequestOptions {
   

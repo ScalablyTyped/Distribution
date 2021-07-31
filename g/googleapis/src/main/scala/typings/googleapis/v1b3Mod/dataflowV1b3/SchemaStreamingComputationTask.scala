@@ -2,30 +2,28 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A task which describes what action should be performed for the specified
   * streaming computation ranges.
   */
-@js.native
 trait SchemaStreamingComputationTask extends StObject {
   
   /**
     * Contains ranges of a streaming computation this task should apply to.
     */
-  var computationRanges: js.UndefOr[js.Array[SchemaStreamingComputationRanges]] = js.native
+  var computationRanges: js.UndefOr[js.Array[SchemaStreamingComputationRanges]] = js.undefined
   
   /**
     * Describes the set of data disks this task should apply to.
     */
-  var dataDisks: js.UndefOr[js.Array[SchemaMountedDataDisk]] = js.native
+  var dataDisks: js.UndefOr[js.Array[SchemaMountedDataDisk]] = js.undefined
   
   /**
     * A type of streaming computation task.
     */
-  var taskType: js.UndefOr[String] = js.native
+  var taskType: js.UndefOr[String] = js.undefined
 }
 object SchemaStreamingComputationTask {
   

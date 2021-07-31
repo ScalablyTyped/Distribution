@@ -2,14 +2,12 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing all reasons for which a buyer was not billed
   * for a winning bid.
   */
-@js.native
 trait SchemaListNonBillableWinningBidsResponse extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaListNonBillableWinningBidsResponse extends StObject {
     * to the nonBillableWinningBids.list method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of rows, with counts of bids not billed aggregated by reason.
     */
-  var nonBillableWinningBidStatusRows: js.UndefOr[js.Array[SchemaNonBillableWinningBidStatusRow]] = js.native
+  var nonBillableWinningBidStatusRows: js.UndefOr[js.Array[SchemaNonBillableWinningBidStatusRow]] = js.undefined
 }
 object SchemaListNonBillableWinningBidsResponse {
   

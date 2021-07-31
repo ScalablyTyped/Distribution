@@ -4,7 +4,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,5 +19,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/forms", "\u0275angular_packages_forms_forms_x")
 @js.native
 class ɵangularPackagesFormsFormsX protected () extends ɵNgSelectMultipleOption {
-  def this(_element: ElementRef[_], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()
+  def this(_element: ElementRef[js.Any], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()
 }

@@ -6,7 +6,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("egg", "Application")
@@ -35,7 +34,7 @@ class Application () extends EggApplication {
   var locals: IApplicationLocals = js.native
   
   @JSName("middleware")
-  var middleware_Application: (js.Array[Middleware[DefaultState, DefaultContext]]) with IMiddleware = js.native
+  var middleware_Application: (js.Array[Middleware[DefaultState, DefaultContext]]) & IMiddleware = js.native
   
   /**
     * HTTP patch method

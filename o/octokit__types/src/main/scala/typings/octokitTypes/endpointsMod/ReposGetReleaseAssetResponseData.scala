@@ -3,37 +3,35 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetReleaseAssetResponseData extends StObject {
   
-  var browser_download_url: String = js.native
+  var browser_download_url: String
   
-  var content_type: String = js.native
+  var content_type: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var download_count: Double = js.native
+  var download_count: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var label: String = js.native
+  var label: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var state: String = js.native
+  var state: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var uploader: Avatarurl = js.native
+  var uploader: Avatarurl
   
-  var url: String = js.native
+  var url: String
 }
 object ReposGetReleaseAssetResponseData {
   

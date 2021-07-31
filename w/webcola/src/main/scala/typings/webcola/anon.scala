@@ -15,19 +15,17 @@ import typings.webcola.powergraphMod.PowerEdge
 import typings.webcola.vpscMod.Block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrowStart extends StObject {
     
-    var arrowStart: Point = js.native
+    var arrowStart: Point
     
-    var sourceIntersection: Point = js.native
+    var sourceIntersection: Point
     
-    var targetIntersection: Point = js.native
+    var targetIntersection: Point
   }
   object ArrowStart {
     
@@ -51,12 +49,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Arrowpath extends StObject {
     
-    var arrowpath: String = js.native
+    var arrowpath: String
     
-    var routepath: String = js.native
+    var routepath: String
   }
   object Arrowpath {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cola extends StObject {
     
-    var cola: Layout = js.native
+    var cola: Layout
     
-    var powerGraph: js.Any = js.native
+    var powerGraph: js.Any
   }
   object Cola {
     
@@ -103,14 +99,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Constraint extends StObject {
     
-    var constraint: typings.webcola.vpscMod.Constraint = js.native
+    var constraint: typings.webcola.vpscMod.Constraint
     
-    var lb: Block = js.native
+    var lb: Block
     
-    var rb: Block = js.native
+    var rb: Block
   }
   object Constraint {
     
@@ -134,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DesiredCenter extends StObject {
     
-    var desiredCenter: Double = js.native
+    var desiredCenter: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object DesiredCenter {
     
@@ -160,12 +154,11 @@ object anon {
     }
   }
   
-  @js.native
   trait E extends StObject {
     
-    var E: js.Array[VisibilityEdge] = js.native
+    var E: js.Array[VisibilityEdge]
     
-    var V: js.Array[VisibilityVertex] = js.native
+    var V: js.Array[VisibilityVertex]
   }
   object E {
     
@@ -202,9 +195,9 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
-    def apply(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
     def apply(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
     def apply(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+    def apply(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = js.native
   }
   
   @js.native
@@ -213,17 +206,16 @@ object anon {
     def apply[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
   }
   
-  @js.native
   trait Groups extends StObject {
     
-    var groups: js.Array[_] = js.native
+    var groups: js.Array[js.Any]
     
-    var powerEdges: js.Array[PowerEdge] = js.native
+    var powerEdges: js.Array[PowerEdge]
   }
   object Groups {
     
     @scala.inline
-    def apply(groups: js.Array[_], powerEdges: js.Array[PowerEdge]): Groups = {
+    def apply(groups: js.Array[js.Any], powerEdges: js.Array[PowerEdge]): Groups = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], powerEdges = powerEdges.asInstanceOf[js.Any])
       __obj.asInstanceOf[Groups]
     }
@@ -232,7 +224,7 @@ object anon {
     implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGroups(value: js.Array[_]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
@@ -245,12 +237,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Links extends StObject {
     
-    var links: js.Array[Link[Node]] = js.native
+    var links: js.Array[Link[Node]]
     
-    var nodes: js.Array[Node] = js.native
+    var nodes: js.Array[Node]
   }
   object Links {
     
@@ -277,14 +268,13 @@ object anon {
     }
   }
   
-  @js.native
   trait LowerBound extends StObject {
     
-    var lowerBound: Double = js.native
+    var lowerBound: Double
     
-    var newCenters: js.Array[Double] = js.native
+    var newCenters: js.Array[Double]
     
-    var upperBound: Double = js.native
+    var upperBound: Double
   }
   object LowerBound {
     
@@ -311,12 +301,11 @@ object anon {
     }
   }
   
-  @js.native
   trait T1 extends StObject {
     
-    var t1: Double = js.native
+    var t1: Double
     
-    var t2: Double = js.native
+    var t2: Double
   }
   object T1 {
     
@@ -337,12 +326,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

@@ -2,7 +2,6 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,4 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a new instance of the CertAuthenticator class.
   */
-class CertAuthenticator () extends Authenticator
+class CertAuthenticator ()
+  extends StObject
+     with Authenticator {
+  
+  /* CompleteClass */
+  var password: String = js.native
+  
+  /* CompleteClass */
+  var username: String = js.native
+}

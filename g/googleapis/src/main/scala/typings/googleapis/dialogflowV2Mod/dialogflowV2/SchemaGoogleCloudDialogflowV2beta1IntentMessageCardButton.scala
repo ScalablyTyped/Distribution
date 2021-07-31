@@ -2,24 +2,22 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional. Contains information about a button.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton extends StObject {
   
   /**
     * Optional. The text to send back to the Dialogflow API or a URI to open.
     */
-  var postback: js.UndefOr[String] = js.native
+  var postback: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The text to show on the button.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton {
   

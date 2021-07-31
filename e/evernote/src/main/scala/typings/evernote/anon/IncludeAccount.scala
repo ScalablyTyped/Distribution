@@ -2,17 +2,15 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeAccount extends StObject {
   
-  var includeAccount: js.UndefOr[Boolean] = js.native
+  var includeAccount: js.UndefOr[Boolean] = js.undefined
   
-  var includeBusinessLinkedNotebooks: js.UndefOr[Boolean] = js.native
+  var includeBusinessLinkedNotebooks: js.UndefOr[Boolean] = js.undefined
   
-  var includePersonalLinkedNotebooks: js.UndefOr[Boolean] = js.native
+  var includePersonalLinkedNotebooks: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeAccount {
   

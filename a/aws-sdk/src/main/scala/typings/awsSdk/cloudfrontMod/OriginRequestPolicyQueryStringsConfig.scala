@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginRequestPolicyQueryStringsConfig extends StObject {
   
   /**
     * Determines whether any URL query strings in viewer requests are included in requests that CloudFront sends to the origin. Valid values are:    none – Query strings in viewer requests are not included in requests that CloudFront sends to the origin. Even when this field is set to none, any query strings that are listed in a CachePolicy are included in origin requests.    whitelist – The query strings in viewer requests that are listed in the QueryStringNames type are included in requests that CloudFront sends to the origin.    all – All query strings in viewer requests are included in requests that CloudFront sends to the origin.  
     */
-  var QueryStringBehavior: OriginRequestPolicyQueryStringBehavior = js.native
+  var QueryStringBehavior: OriginRequestPolicyQueryStringBehavior
   
   /**
     * Contains a list of the query strings in viewer requests that are included in requests that CloudFront sends to the origin.
     */
-  var QueryStrings: js.UndefOr[QueryStringNames] = js.native
+  var QueryStrings: js.UndefOr[QueryStringNames] = js.undefined
 }
 object OriginRequestPolicyQueryStringsConfig {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
@@ -43,6 +42,10 @@ object tagMod {
   /* static members */
   object Tag {
     
+    @JSImport("@pulumi/aws/ec2/tag", "Tag")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Tag resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object tagMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/tag", "Tag.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Tag = js.native
-    @JSImport("@pulumi/aws/ec2/tag", "Tag.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Tag = js.native
-    @JSImport("@pulumi/aws/ec2/tag", "Tag.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TagState): Tag = js.native
-    @JSImport("@pulumi/aws/ec2/tag", "Tag.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TagState, opts: CustomResourceOptions): Tag = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TagState): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TagState, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
     
     /**
       * Returns true if the given object is an instance of Tag.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/tag", "Tag.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean]
   }
   
-  @js.native
   trait TagArgs extends StObject {
     
     /**
       * The tag name.
       */
-    val key: Input[String] = js.native
+    val key: Input[String]
     
     /**
       * The ID of the EC2 resource to manage the tag for.
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * The value of the tag.
       */
-    val value: Input[String] = js.native
+    val value: Input[String]
   }
   object TagArgs {
     
@@ -114,23 +111,22 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagState extends StObject {
     
     /**
       * The tag name.
       */
-    val key: js.UndefOr[Input[String]] = js.native
+    val key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the EC2 resource to manage the tag for.
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value of the tag.
       */
-    val value: js.UndefOr[Input[String]] = js.native
+    val value: js.UndefOr[Input[String]] = js.undefined
   }
   object TagState {
     

@@ -7,24 +7,24 @@ import typings.jsreportDocx.mod.JsReportDocx.Configuration
 import typings.jsreportDocx.mod.JsReportDocx.DocxTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  
   @JSImport("jsreport-docx", JSImport.Namespace)
   @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-docx", JSImport.Namespace)
-  @js.native
-  def apply(cfg: Configuration): ExtensionDefinition = js.native
+  val ^ : js.Any = js.native
   
   object JsReportDocx {
     
-    @js.native
     trait Configuration extends StObject {
       
-      var preview: js.UndefOr[Enabled] = js.native
+      var preview: js.UndefOr[Enabled] = js.undefined
     }
     object Configuration {
       
@@ -45,12 +45,11 @@ object mod {
       }
     }
     
-    @js.native
     trait DocxTemplate extends StObject {
       
-      var templateAsetShortid: js.UndefOr[String] = js.native
+      var templateAsetShortid: js.UndefOr[String] = js.undefined
       
-      var templateAsset: js.UndefOr[Content] = js.native
+      var templateAsset: js.UndefOr[Content] = js.undefined
     }
     object DocxTemplate {
       
@@ -81,10 +80,9 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var docx: js.UndefOr[DocxTemplate] = js.native
+      var docx: js.UndefOr[DocxTemplate] = js.undefined
     }
     object Template {
       

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proximitybeaconMod {
+  
+  @JSImport("googleapis/build/src/apis/proximitybeacon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object proximitybeaconMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/proximitybeacon", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/proximitybeacon", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object proximitybeaconMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/proximitybeacon", "proximitybeacon")
-  @js.native
-  def proximitybeacon(options: Options): Proximitybeacon = js.native
-  @JSImport("googleapis/build/src/apis/proximitybeacon", "proximitybeacon")
-  @js.native
-  def proximitybeacon_v1beta1(version: v1beta1): Proximitybeacon = js.native
+  @scala.inline
+  def proximitybeacon(options: Options): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(options.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
+  
+  @scala.inline
+  def proximitybeacon_v1beta1(version: v1beta1): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(version.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
 }

@@ -6,7 +6,6 @@ import typings.nodegit.treeEntryMod.TreeEntry
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeBuilderMod {
@@ -32,11 +31,13 @@ object treeBuilderMod {
   /* static members */
   object Treebuilder {
     
-    @JSImport("nodegit/tree-builder", "Treebuilder.create")
+    @JSImport("nodegit/tree-builder", "Treebuilder")
     @js.native
-    def create(repo: Repository): js.Promise[Treebuilder] = js.native
-    @JSImport("nodegit/tree-builder", "Treebuilder.create")
-    @js.native
-    def create(repo: Repository, source: Tree): js.Promise[Treebuilder] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(repo: Repository): js.Promise[Treebuilder] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Treebuilder]]
+    @scala.inline
+    def create(repo: Repository, source: Tree): js.Promise[Treebuilder] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Treebuilder]]
   }
 }

@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, 'decimal'> */
-@js.native
 trait PickImpldecimal extends StObject {
   
-  var decimal: String = js.native
+  var decimal: String
 }
 object PickImpldecimal {
   

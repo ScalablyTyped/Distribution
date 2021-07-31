@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayListener extends StObject {
   
   /**
     * The connection pool information for the virtual gateway listener.
     */
-  var connectionPool: js.UndefOr[VirtualGatewayConnectionPool] = js.native
+  var connectionPool: js.UndefOr[VirtualGatewayConnectionPool] = js.undefined
   
   /**
     * The health check information for the listener.
     */
-  var healthCheck: js.UndefOr[VirtualGatewayHealthCheckPolicy] = js.native
+  var healthCheck: js.UndefOr[VirtualGatewayHealthCheckPolicy] = js.undefined
   
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: VirtualGatewayPortMapping = js.native
+  var portMapping: VirtualGatewayPortMapping
   
   /**
     * A reference to an object that represents the Transport Layer Security (TLS) properties for the listener.
     */
-  var tls: js.UndefOr[VirtualGatewayListenerTls] = js.native
+  var tls: js.UndefOr[VirtualGatewayListenerTls] = js.undefined
 }
 object VirtualGatewayListener {
   

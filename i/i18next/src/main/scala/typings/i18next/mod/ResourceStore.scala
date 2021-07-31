@@ -4,7 +4,6 @@ import typings.i18next.i18nextStrings.added
 import typings.i18next.i18nextStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18next", "ResourceStore")

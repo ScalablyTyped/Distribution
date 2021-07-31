@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,9 +50,8 @@ object DropDownSearchField {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField.create")
-  @js.native
-  def create(model: IModel): DropDownSearchField = js.native
+  @scala.inline
+  def create(model: IModel): DropDownSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DropDownSearchField]
   
   /**
     * Creates and returns a new DropDownSearchField instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object DropDownSearchField {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField.createIn")
-  @js.native
-  def createIn(container: ControlBar): DropDownSearchField = js.native
+  @scala.inline
+  def createIn(container: ControlBar): DropDownSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownSearchField]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField.structureTypeName")

@@ -15,7 +15,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
@@ -32,7 +31,7 @@ object serviceMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -150,6 +149,10 @@ object serviceMod {
   /* static members */
   object Service {
     
+    @JSImport("@pulumi/aws/ecs/service", "Service")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Service resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -159,29 +162,23 @@ object serviceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Service = js.native
-    @JSImport("@pulumi/aws/ecs/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Service = js.native
-    @JSImport("@pulumi/aws/ecs/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState): Service = js.native
-    @JSImport("@pulumi/aws/ecs/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs/service", "Service.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean]
   }
   
-  @js.native
   trait ServiceArgs extends StObject {
     
     /**
@@ -189,118 +186,118 @@ object serviceMod {
       */
     val capacityProviderStrategies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * ARN of an ECS cluster
       */
-    val cluster: js.UndefOr[Input[String]] = js.native
+    val cluster: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing deployment controller configuration. Defined below.
       */
-    val deploymentController: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]] = js.native
+    val deploymentController: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]] = js.undefined
     
     /**
       * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
       */
-    val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.native
+    val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The lower limit (as a percentage of the service's desiredCount) of the number of running tasks that must remain running and healthy in a service during a deployment.
       */
-    val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.native
+    val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of instances of the task definition to place and keep running. Defaults to 0. Do not specify if using the `DAEMON` scheduling strategy.
       */
-    val desiredCount: js.UndefOr[Input[Double]] = js.native
+    val desiredCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies whether to enable Amazon ECS managed tags for the tasks within the service.
       */
-    val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.native
+    val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enable to force a new task deployment of the service. This can be used to update tasks to use a newer Docker image with same image/tag combination (e.g. `myimage:latest`), roll Fargate tasks onto a newer platform version, or immediately deploy `orderedPlacementStrategy` and `placementConstraints` updates.
       */
-    val forceNewDeployment: js.UndefOr[Input[Boolean]] = js.native
+    val forceNewDeployment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 2147483647. Only valid for services configured to use load balancers.
       */
-    val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.native
+    val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ARN of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf. This parameter is required if you are using a load balancer with your service, but only if your task definition does not use the `awsvpc` network mode. If using `awsvpc` network mode, do not specify this role. If your account has already created the Amazon ECS service-linked role, that role is used by default for your service unless you specify a role here.
       */
-    val iamRole: js.UndefOr[Input[String]] = js.native
+    val iamRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The launch type on which to run your service. The valid values are `EC2` and `FARGATE`. Defaults to `EC2`.
       */
-    val launchType: js.UndefOr[Input[String]] = js.native
+    val launchType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A load balancer block. Load balancers documented below.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]] = js.undefined
     
     /**
       * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
       */
-    val networkConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]] = js.native
+    val networkConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]] = js.undefined
     
     /**
       * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
       */
     val orderedPlacementStrategies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * rules that are taken into consideration during task placement. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. Maximum number of `placementConstraints` is `10`. Defined below.
       */
     val placementConstraints: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
       */
-    val platformVersion: js.UndefOr[Input[String]] = js.native
+    val platformVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to propagate the tags from the task definition or the service to the tasks. The valid values are `SERVICE` and `TASK_DEFINITION`.
       */
-    val propagateTags: js.UndefOr[Input[String]] = js.native
+    val propagateTags: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The scheduling strategy to use for the service. The valid values are `REPLICA` and `DAEMON`. Defaults to `REPLICA`. Note that [*Tasks using the Fargate launch type or the `CODE_DEPLOY` or `EXTERNAL` deployment controller types don't support the `DAEMON` scheduling strategy*](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html).
       */
-    val schedulingStrategy: js.UndefOr[Input[String]] = js.native
+    val schedulingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
       */
-    val serviceRegistries: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]] = js.native
+    val serviceRegistries: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service. Required unless using the `EXTERNAL` deployment controller. If a revision is not specified, the latest `ACTIVE` revision is used.
       */
-    val taskDefinition: js.UndefOr[Input[String]] = js.native
+    val taskDefinition: js.UndefOr[Input[String]] = js.undefined
     
-    val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.native
+    val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ServiceArgs {
     
@@ -465,7 +462,6 @@ object serviceMod {
     }
   }
   
-  @js.native
   trait ServiceState extends StObject {
     
     /**
@@ -473,118 +469,118 @@ object serviceMod {
       */
     val capacityProviderStrategies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * ARN of an ECS cluster
       */
-    val cluster: js.UndefOr[Input[String]] = js.native
+    val cluster: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing deployment controller configuration. Defined below.
       */
-    val deploymentController: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]] = js.native
+    val deploymentController: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]] = js.undefined
     
     /**
       * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
       */
-    val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.native
+    val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The lower limit (as a percentage of the service's desiredCount) of the number of running tasks that must remain running and healthy in a service during a deployment.
       */
-    val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.native
+    val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of instances of the task definition to place and keep running. Defaults to 0. Do not specify if using the `DAEMON` scheduling strategy.
       */
-    val desiredCount: js.UndefOr[Input[Double]] = js.native
+    val desiredCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies whether to enable Amazon ECS managed tags for the tasks within the service.
       */
-    val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.native
+    val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enable to force a new task deployment of the service. This can be used to update tasks to use a newer Docker image with same image/tag combination (e.g. `myimage:latest`), roll Fargate tasks onto a newer platform version, or immediately deploy `orderedPlacementStrategy` and `placementConstraints` updates.
       */
-    val forceNewDeployment: js.UndefOr[Input[Boolean]] = js.native
+    val forceNewDeployment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 2147483647. Only valid for services configured to use load balancers.
       */
-    val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.native
+    val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ARN of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf. This parameter is required if you are using a load balancer with your service, but only if your task definition does not use the `awsvpc` network mode. If using `awsvpc` network mode, do not specify this role. If your account has already created the Amazon ECS service-linked role, that role is used by default for your service unless you specify a role here.
       */
-    val iamRole: js.UndefOr[Input[String]] = js.native
+    val iamRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The launch type on which to run your service. The valid values are `EC2` and `FARGATE`. Defaults to `EC2`.
       */
-    val launchType: js.UndefOr[Input[String]] = js.native
+    val launchType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A load balancer block. Load balancers documented below.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]] = js.undefined
     
     /**
       * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
       */
-    val networkConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]] = js.native
+    val networkConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]] = js.undefined
     
     /**
       * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
       */
     val orderedPlacementStrategies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * rules that are taken into consideration during task placement. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. Maximum number of `placementConstraints` is `10`. Defined below.
       */
     val placementConstraints: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
       */
-    val platformVersion: js.UndefOr[Input[String]] = js.native
+    val platformVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to propagate the tags from the task definition or the service to the tasks. The valid values are `SERVICE` and `TASK_DEFINITION`.
       */
-    val propagateTags: js.UndefOr[Input[String]] = js.native
+    val propagateTags: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The scheduling strategy to use for the service. The valid values are `REPLICA` and `DAEMON`. Defaults to `REPLICA`. Note that [*Tasks using the Fargate launch type or the `CODE_DEPLOY` or `EXTERNAL` deployment controller types don't support the `DAEMON` scheduling strategy*](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html).
       */
-    val schedulingStrategy: js.UndefOr[Input[String]] = js.native
+    val schedulingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
       */
-    val serviceRegistries: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]] = js.native
+    val serviceRegistries: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service. Required unless using the `EXTERNAL` deployment controller. If a revision is not specified, the latest `ACTIVE` revision is used.
       */
-    val taskDefinition: js.UndefOr[Input[String]] = js.native
+    val taskDefinition: js.UndefOr[Input[String]] = js.undefined
     
-    val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.native
+    val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ServiceState {
     

@@ -2,31 +2,29 @@ package typings.mapsjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait envObject extends StObject {
   
   /**
     * @returns {number} maxX coord as integer
     */
-  var maxX: Double = js.native
+  var maxX: Double
   
   /**
     * @returns {number} maxY coord as integer
     */
-  var maxY: Double = js.native
+  var maxY: Double
   
   /**
     * @returns {number} minX as integer
     */
-  var minX: Double = js.native
+  var minX: Double
   
   /**
     * @returns {number} minY coord as integer
     */
-  var minY: Double = js.native
+  var minY: Double
 }
 object envObject {
   

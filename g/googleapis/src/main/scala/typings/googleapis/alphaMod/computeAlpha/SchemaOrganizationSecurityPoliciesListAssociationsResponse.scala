@@ -2,23 +2,21 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrganizationSecurityPoliciesListAssociationsResponse extends StObject {
   
   /**
     * A list of associations.
     */
-  var associations: js.UndefOr[js.Array[SchemaSecurityPolicyAssociation]] = js.native
+  var associations: js.UndefOr[js.Array[SchemaSecurityPolicyAssociation]] = js.undefined
   
   /**
     * [Output Only] Type of securityPolicy associations. Always
     * compute#organizationSecurityPoliciesListAssociations for lists of
     * securityPolicy associations.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaOrganizationSecurityPoliciesListAssociationsResponse {
   

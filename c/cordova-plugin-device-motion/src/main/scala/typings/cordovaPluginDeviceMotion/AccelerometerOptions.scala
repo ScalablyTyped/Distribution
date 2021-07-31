@@ -2,15 +2,13 @@ package typings.cordovaPluginDeviceMotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object with options for watchAcceleration */
-@js.native
 trait AccelerometerOptions extends StObject {
   
   /** How often to retrieve the Acceleration in milliseconds. (Default: 10000) */
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
 }
 object AccelerometerOptions {
   

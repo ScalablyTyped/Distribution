@@ -2,71 +2,69 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assignment extends StObject {
   
   /**
     *  The date and time the Worker accepted the assignment.
     */
-  var AcceptTime: js.UndefOr[Timestamp] = js.native
+  var AcceptTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The Worker's answers submitted for the HIT contained in a QuestionFormAnswers document, if the Worker provides an answer. If the Worker does not provide any answers, Answer may contain a QuestionFormAnswers document, or Answer may be empty.
     */
-  var Answer: js.UndefOr[String] = js.native
+  var Answer: js.UndefOr[String] = js.undefined
   
   /**
     *  If the Worker has submitted results and the Requester has approved the results, ApprovalTime is the date and time the Requester approved the results. This value is omitted from the assignment if the Requester has not yet approved the results.
     */
-  var ApprovalTime: js.UndefOr[Timestamp] = js.native
+  var ApprovalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  A unique identifier for the assignment.
     */
-  var AssignmentId: js.UndefOr[EntityId] = js.native
+  var AssignmentId: js.UndefOr[EntityId] = js.undefined
   
   /**
     *  The status of the assignment.
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.mturkMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.mturkMod.AssignmentStatus] = js.undefined
   
   /**
     *  If results have been submitted, AutoApprovalTime is the date and time the results of the assignment results are considered Approved automatically if they have not already been explicitly approved or rejected by the Requester. This value is derived from the auto-approval delay specified by the Requester in the HIT. This value is omitted from the assignment if the Worker has not yet submitted results.
     */
-  var AutoApprovalTime: js.UndefOr[Timestamp] = js.native
+  var AutoApprovalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The date and time of the deadline for the assignment. This value is derived from the deadline specification for the HIT and the date and time the Worker accepted the HIT.
     */
-  var Deadline: js.UndefOr[Timestamp] = js.native
+  var Deadline: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The ID of the HIT.
     */
-  var HITId: js.UndefOr[EntityId] = js.native
+  var HITId: js.UndefOr[EntityId] = js.undefined
   
   /**
     *  If the Worker has submitted results and the Requester has rejected the results, RejectionTime is the date and time the Requester rejected the results.
     */
-  var RejectionTime: js.UndefOr[Timestamp] = js.native
+  var RejectionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The feedback string included with the call to the ApproveAssignment operation or the RejectAssignment operation, if the Requester approved or rejected the assignment and specified feedback.
     */
-  var RequesterFeedback: js.UndefOr[String] = js.native
+  var RequesterFeedback: js.UndefOr[String] = js.undefined
   
   /**
     *  If the Worker has submitted results, SubmitTime is the date and time the assignment was submitted. This value is omitted from the assignment if the Worker has not yet submitted results.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.native
+  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The ID of the Worker who accepted the HIT.
     */
-  var WorkerId: js.UndefOr[CustomerId] = js.native
+  var WorkerId: js.UndefOr[CustomerId] = js.undefined
 }
 object Assignment {
   

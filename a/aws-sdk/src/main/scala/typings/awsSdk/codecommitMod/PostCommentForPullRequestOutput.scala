@@ -2,51 +2,49 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostCommentForPullRequestOutput extends StObject {
   
   /**
     * In the directionality of the pull request, the blob ID of the after blob.
     */
-  var afterBlobId: js.UndefOr[ObjectId] = js.native
+  var afterBlobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The full commit ID of the commit in the destination branch where the pull request is merged.
     */
-  var afterCommitId: js.UndefOr[CommitId] = js.native
+  var afterCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * In the directionality of the pull request, the blob ID of the before blob.
     */
-  var beforeBlobId: js.UndefOr[ObjectId] = js.native
+  var beforeBlobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The full commit ID of the commit in the source branch used to create the pull request, or in the case of an updated pull request, the full commit ID of the commit used to update the pull request.
     */
-  var beforeCommitId: js.UndefOr[CommitId] = js.native
+  var beforeCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The content of the comment you posted.
     */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
   
   /**
     * The location of the change where you posted your comment.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * The system-generated ID of the pull request. 
     */
-  var pullRequestId: js.UndefOr[PullRequestId] = js.native
+  var pullRequestId: js.UndefOr[PullRequestId] = js.undefined
   
   /**
     * The name of the repository where you posted a comment on a pull request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object PostCommentForPullRequestOutput {
   

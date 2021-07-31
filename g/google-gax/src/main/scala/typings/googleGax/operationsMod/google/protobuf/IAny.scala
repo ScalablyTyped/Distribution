@@ -3,18 +3,16 @@ package typings.googleGax.operationsMod.google.protobuf
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Any. */
-@js.native
 trait IAny extends StObject {
   
   /** Any type_url */
-  var type_url: js.UndefOr[String | Null] = js.native
+  var type_url: js.UndefOr[String | Null] = js.undefined
   
   /** Any value */
-  var value: js.UndefOr[Uint8Array | Null] = js.native
+  var value: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IAny {
   

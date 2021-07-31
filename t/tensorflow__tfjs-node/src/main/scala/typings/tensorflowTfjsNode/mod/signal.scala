@@ -4,60 +4,47 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signal {
   
-  @JSImport("@tensorflow/tfjs-node", "signal.frame")
+  @JSImport("@tensorflow/tfjs-node", "signal")
   @js.native
-  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.frame")
-  @js.native
-  def frame(
-    signal: Tensor[R1],
-    frameLength: Double,
-    frameStep: Double,
-    padEnd: js.UndefOr[scala.Nothing],
-    padValue: Double
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.frame")
-  @js.native
-  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.frame")
-  @js.native
-  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean, padValue: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-node", "signal.hammingWindow")
-  @js.native
-  def hammingWindow(windowLength: Double): Tensor[R1] = js.native
+  @scala.inline
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean, padValue: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Unit, padValue: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs-node", "signal.hannWindow")
-  @js.native
-  def hannWindow(windowLength: Double): Tensor[R1] = js.native
+  @scala.inline
+  def hammingWindow(windowLength: Double): Tensor[R1] = ^.asInstanceOf[js.Dynamic].applyDynamic("hammingWindow")(windowLength.asInstanceOf[js.Any]).asInstanceOf[Tensor[R1]]
   
-  @JSImport("@tensorflow/tfjs-node", "signal.stft")
-  @js.native
-  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.stft")
-  @js.native
-  def stft(
-    signal: Tensor[R1],
-    frameLength: Double,
-    frameStep: Double,
-    fftLength: js.UndefOr[scala.Nothing],
-    windowFn: js.Function1[/* length */ Double, Tensor[R1]]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.stft")
-  @js.native
-  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double, fftLength: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
-  @JSImport("@tensorflow/tfjs-node", "signal.stft")
-  @js.native
+  @scala.inline
+  def hannWindow(windowLength: Double): Tensor[R1] = ^.asInstanceOf[js.Dynamic].applyDynamic("hannWindow")(windowLength.asInstanceOf[js.Any]).asInstanceOf[Tensor[R1]]
+  
+  @scala.inline
+  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
+  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double, fftLength: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
   def stft(
     signal: Tensor[R1],
     frameLength: Double,
     frameStep: Double,
     fftLength: Double,
     windowFn: js.Function1[/* length */ Double, Tensor[R1]]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any], windowFn.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  @scala.inline
+  def stft(
+    signal: Tensor[R1],
+    frameLength: Double,
+    frameStep: Double,
+    fftLength: Unit,
+    windowFn: js.Function1[/* length */ Double, Tensor[R1]]
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any], windowFn.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
 }

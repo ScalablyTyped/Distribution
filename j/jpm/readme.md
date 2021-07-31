@@ -11,7 +11,7 @@ Jetpack Mechanic utilities for creating, testing, running and packaging Mozilla 
 | Keywords           | firefox, mozilla, jetpack, jpm |
 | # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 79321 |
+| # downloads        | 77146 |
 | # stars            | 12 |
 
 ## Links

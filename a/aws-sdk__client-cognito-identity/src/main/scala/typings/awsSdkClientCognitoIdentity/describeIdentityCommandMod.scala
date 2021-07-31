@@ -3,6 +3,7 @@ package typings.awsSdkClientCognitoIdentity
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.CognitoIdentityClientResolvedConfig
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInputTypes
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
+import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod._ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.DescribeIdentityInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.IdentityDescription
 import typings.awsSdkSmithyClient.mod.Command
@@ -10,9 +11,9 @@ import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object describeIdentityCommandMod {
@@ -46,5 +47,17 @@ object describeIdentityCommandMod {
   
   type DescribeIdentityCommandInput = DescribeIdentityInput
   
-  type DescribeIdentityCommandOutput = IdentityDescription with MetadataBearer
+  trait DescribeIdentityCommandOutput
+    extends StObject
+       with IdentityDescription
+       with MetadataBearer
+       with _ServiceOutputTypes
+  object DescribeIdentityCommandOutput {
+    
+    @scala.inline
+    def apply($metadata: ResponseMetadata): DescribeIdentityCommandOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeIdentityCommandOutput]
+    }
+  }
 }

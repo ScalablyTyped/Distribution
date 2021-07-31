@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePurchasesVoidedpurchasesList extends StandardParameters {
+trait ParamsResourcePurchasesVoidedpurchasesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The time, in milliseconds since the Epoch, of the newest voided in-app
@@ -25,23 +25,23 @@ trait ParamsResourcePurchasesVoidedpurchasesList extends StandardParameters {
     * is applied on the time at which the record is seen as voided by our
     * systems and not the actual voided time returned in the response.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The package name of the application for which voided purchases need to be
     * returned (for example, 'com.some.thing').
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The time, in milliseconds since the Epoch, of the oldest voided in-app
@@ -51,12 +51,12 @@ trait ParamsResourcePurchasesVoidedpurchasesList extends StandardParameters {
     * filter is applied on the time at which the record is seen as voided by
     * our systems and not the actual voided time returned in the response.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePurchasesVoidedpurchasesList {
   

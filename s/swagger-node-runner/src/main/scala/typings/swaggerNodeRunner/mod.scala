@@ -15,77 +15,78 @@ import typings.swaggerNodeRunner.anon.SwaggerMetadata
 import typings.swaggerSchemaOfficial.mod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("swagger-node-runner", "create")
+  @JSImport("swagger-node-runner", JSImport.Namespace)
   @js.native
-  def create(config: Config, cb: js.Function2[/* err */ js.UndefOr[Error], /* runner */ Runner, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(config: Config, cb: js.Function2[/* err */ js.UndefOr[Error], /* runner */ Runner, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Config extends StObject {
     
     /**
       *  Path to app
       */
-    var appRoot: String = js.native
+    var appRoot: String
     
     /**
       * Used for Bagpipes library
       *
       * @se @link{https://github.com/apigee-127/bagpipes|Github Source}
       */
-    var bagpipes: js.UndefOr[js.Any] = js.native
+    var bagpipes: js.UndefOr[js.Any] = js.undefined
     
     /**
       *  Sets `NODE_CONFIG_DIR` env if not set yet
       */
-    var configDir: js.UndefOr[String] = js.native
+    var configDir: js.UndefOr[String] = js.undefined
     
     /**
       * Swagger controller directories
       *
       * default is array with `/api/controllers` relative to `appRoot`
       */
-    var controllersDirs: js.UndefOr[js.Array[String]] = js.native
+    var controllersDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       *  default is `null`
       */
-    var defaultPipe: js.UndefOr[String] = js.native
+    var defaultPipe: js.UndefOr[String] = js.undefined
     
     /**
       * Used for Bagpipes library
       *
       * default is `[api/fittings]`
       */
-    var fittingsDirs: js.UndefOr[js.Array[String]] = js.native
+    var fittingsDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Swagger mock controller directories
       *
       * default is array with `/api/mocks` relative to `appRoot`
       */
-    var mockControllersDirs: js.UndefOr[js.Array[String]] = js.native
+    var mockControllersDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If `true` API is in mock mode
       *
       * default is `false`
       */
-    var mockMode: js.UndefOr[Boolean] = js.native
+    var mockMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * default is `swagger_controllers`
       */
-    var swaggerControllerPipe: js.UndefOr[String] = js.native
+    var swaggerControllerPipe: js.UndefOr[String] = js.undefined
     
     /**
       * Absolute path to swagger.yml file, if not set default value is used.
       */
-    var swaggerFile: js.UndefOr[String] = js.native
+    var swaggerFile: js.UndefOr[String] = js.undefined
     
     /**
       * Define Middleware for using Swagger security information to authenticate requests. Part of _swagger-tools_
@@ -93,14 +94,14 @@ object mod {
       * default is `undefined`
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-security.js|Github Source}
       */
-    var swaggerSecurityHandlers: js.UndefOr[SwaggerSecurityHandlers] = js.native
+    var swaggerSecurityHandlers: js.UndefOr[SwaggerSecurityHandlers] = js.undefined
     
     /**
       * If `true` resonse is validated
       *
       * default is `true`
       */
-    var validateResponse: js.UndefOr[Boolean] = js.native
+    var validateResponse: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -193,11 +194,10 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigInternal extends StObject {
     
     /** Config of SwaggerNodeRunner  */
-    var swagger: js.UndefOr[Config] = js.native
+    var swagger: js.UndefOr[Config] = js.undefined
   }
   object ConfigInternal {
     
@@ -218,13 +218,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConnectMiddleware extends Middleware {
+  trait ConnectMiddleware
+    extends StObject
+       with Middleware {
     
-    def middleware(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
+    def middleware(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]
     
     /** Register this Middleware with `app`  */
-    def register(app: Application): Unit = js.native
+    def register(app: Application): Unit
   }
   object ConnectMiddleware {
     
@@ -251,14 +252,15 @@ object mod {
   
   type ExpressMiddleware = ConnectMiddleware
   
-  @js.native
-  trait HapiMiddleware extends Middleware {
+  trait HapiMiddleware
+    extends StObject
+       with Middleware {
     
     /** Back-reference to Config object of `Runner` that has created this middleware */
-    var config: ConfigInternal = js.native
+    var config: ConfigInternal
     
     /** Hapi Plugin */
-    var plugin: Register = js.native
+    var plugin: Register
   }
   object HapiMiddleware {
     
@@ -279,11 +281,10 @@ object mod {
     }
   }
   
-  @js.native
   trait Middleware extends StObject {
     
     /** Back-reference to `swagger-node-runner`s `Runner` that has created this middleware */
-    var runner: Runner = js.native
+    var runner: Runner
   }
   object Middleware {
     
@@ -301,11 +302,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait RestifyMiddleware extends Middleware {
+  trait RestifyMiddleware
+    extends StObject
+       with Middleware {
     
     /** Register this Middleware with `app`  */
-    def register(app: Server): Unit = js.native
+    def register(app: Server): Unit
   }
   object RestifyMiddleware {
     
@@ -372,11 +374,12 @@ object mod {
     var swaggerTools: SwaggerMetadata = js.native
   }
   
-  @js.native
-  trait SailsMiddleware extends Middleware {
+  trait SailsMiddleware
+    extends StObject
+       with Middleware {
     
     /** Express style middleware */
-    def chain(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
+    def chain(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]
   }
   object SailsMiddleware {
     
@@ -413,16 +416,15 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait SwaggerToolsSecurityHandlerCallbackError extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object SwaggerToolsSecurityHandlerCallbackError {
     

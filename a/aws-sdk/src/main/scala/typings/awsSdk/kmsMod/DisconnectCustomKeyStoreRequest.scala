@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisconnectCustomKeyStoreRequest extends StObject {
   
   /**
     * Enter the ID of the custom key store you want to disconnect. To find the ID of a custom key store, use the DescribeCustomKeyStores operation.
     */
-  var CustomKeyStoreId: CustomKeyStoreIdType = js.native
+  var CustomKeyStoreId: CustomKeyStoreIdType
 }
 object DisconnectCustomKeyStoreRequest {
   

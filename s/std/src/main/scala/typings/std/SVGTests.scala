@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGTests extends StObject {
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
 }
 object SVGTests {
   

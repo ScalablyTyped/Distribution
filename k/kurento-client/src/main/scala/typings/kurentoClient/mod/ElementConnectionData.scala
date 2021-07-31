@@ -2,21 +2,19 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementConnectionData extends StObject {
   
-  var sink: WebRtcEndpoint = js.native
+  var sink: WebRtcEndpoint
   
-  var sinkDescription: String = js.native
+  var sinkDescription: String
   
-  var source: WebRtcEndpoint = js.native
+  var source: WebRtcEndpoint
   
-  var sourceDescription: String = js.native
+  var sourceDescription: String
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object ElementConnectionData {
   

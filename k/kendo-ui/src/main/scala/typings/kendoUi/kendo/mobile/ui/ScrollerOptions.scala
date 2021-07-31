@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollerOptions extends StObject {
   
-  var elastic: js.UndefOr[Boolean] = js.native
+  var elastic: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[ScrollerMessages] = js.native
+  var messages: js.UndefOr[ScrollerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pull: js.UndefOr[js.Function1[/* e */ ScrollerEvent, Unit]] = js.native
+  var pull: js.UndefOr[js.Function1[/* e */ ScrollerEvent, Unit]] = js.undefined
   
-  var pullOffset: js.UndefOr[Double] = js.native
+  var pullOffset: js.UndefOr[Double] = js.undefined
   
-  var pullToRefresh: js.UndefOr[Boolean] = js.native
+  var pullToRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ ScrollerEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ ScrollerEvent, Unit]] = js.undefined
   
-  var scroll: js.UndefOr[js.Function1[/* e */ ScrollerScrollEvent, Unit]] = js.native
+  var scroll: js.UndefOr[js.Function1[/* e */ ScrollerScrollEvent, Unit]] = js.undefined
   
-  var useNative: js.UndefOr[Boolean] = js.native
+  var useNative: js.UndefOr[Boolean] = js.undefined
   
-  var visibleScrollHints: js.UndefOr[Boolean] = js.native
+  var visibleScrollHints: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Boolean] = js.native
+  var zoom: js.UndefOr[Boolean] = js.undefined
 }
 object ScrollerOptions {
   

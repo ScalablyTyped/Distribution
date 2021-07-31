@@ -2,30 +2,28 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The auto-install constraint. Defines a set of restrictions for
   * installation. At least one of the fields must be set.
   */
-@js.native
 trait SchemaAutoInstallConstraint extends StObject {
   
   /**
     * Charging state constraint.
     */
-  var chargingStateConstraint: js.UndefOr[String] = js.native
+  var chargingStateConstraint: js.UndefOr[String] = js.undefined
   
   /**
     * Device idle state constraint.
     */
-  var deviceIdleStateConstraint: js.UndefOr[String] = js.native
+  var deviceIdleStateConstraint: js.UndefOr[String] = js.undefined
   
   /**
     * Network type constraint.
     */
-  var networkTypeConstraint: js.UndefOr[String] = js.native
+  var networkTypeConstraint: js.UndefOr[String] = js.undefined
 }
 object SchemaAutoInstallConstraint {
   

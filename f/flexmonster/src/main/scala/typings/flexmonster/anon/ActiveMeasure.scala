@@ -3,51 +3,49 @@ package typings.flexmonster.anon
 import typings.flexmonster.mod.MeasureObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveMeasure extends StObject {
   
-  var activeMeasure: js.UndefOr[MeasureObject] = js.native
+  var activeMeasure: js.UndefOr[MeasureObject] = js.undefined
   
-  var activeTupleIndex: js.UndefOr[Double] = js.native
+  var activeTupleIndex: js.UndefOr[Double] = js.undefined
   
-  var autoRange: js.UndefOr[Boolean] = js.native
+  var autoRange: js.UndefOr[Boolean] = js.undefined
   
-  var axisShortNumberFormat: js.UndefOr[Boolean] = js.native
+  var axisShortNumberFormat: js.UndefOr[Boolean] = js.undefined
   
-  var labelsHierarchy: js.UndefOr[String] = js.native
+  var labelsHierarchy: js.UndefOr[String] = js.undefined
   
-  var multipleMeasures: js.UndefOr[Boolean] = js.native
+  var multipleMeasures: js.UndefOr[Boolean] = js.undefined
   
-  var oneLevel: js.UndefOr[Boolean] = js.native
+  var oneLevel: js.UndefOr[Boolean] = js.undefined
   
-  var pieDataIndex: js.UndefOr[String] = js.native
+  var pieDataIndex: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var reversedAxes: js.UndefOr[Boolean] = js.native
+  var reversedAxes: js.UndefOr[Boolean] = js.undefined
   
-  var showAllLabels: js.UndefOr[Boolean] = js.native
+  var showAllLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showDataLabels: js.UndefOr[Boolean] = js.native
+  var showDataLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showFilter: js.UndefOr[Boolean] = js.native
+  var showFilter: js.UndefOr[Boolean] = js.undefined
   
-  var showLegend: js.UndefOr[Boolean] = js.native
+  var showLegend: js.UndefOr[Boolean] = js.undefined
   
-  var showLegendButton: js.UndefOr[Boolean] = js.native
+  var showLegendButton: js.UndefOr[Boolean] = js.undefined
   
-  var showMeasures: js.UndefOr[Boolean] = js.native
+  var showMeasures: js.UndefOr[Boolean] = js.undefined
   
-  var showOneMeasureSelection: js.UndefOr[Boolean] = js.native
+  var showOneMeasureSelection: js.UndefOr[Boolean] = js.undefined
   
-  var showWarning: js.UndefOr[Boolean] = js.native
+  var showWarning: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ActiveMeasure {
   

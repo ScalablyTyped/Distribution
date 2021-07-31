@@ -10,9 +10,9 @@ node cluster API wrapper and extensions
 | ------------------ | :-------------: |
 | Full name          | strong-cluster-control |
 | Keywords           | cluster, forever, master, pm, runner, strongloop, strongops, supervisor |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 109465 |
+| # downloads        | 108026 |
 | # stars            | 3 |
 
 ## Links

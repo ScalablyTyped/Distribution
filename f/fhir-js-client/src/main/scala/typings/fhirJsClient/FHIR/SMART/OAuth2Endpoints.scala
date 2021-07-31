@@ -2,29 +2,27 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The OAuth2 endpoints (Registration URI, Authorize URI, Token URI)
   */
-@js.native
 trait OAuth2Endpoints extends StObject {
   
   /**
     * OAuth2 Authorize URI
     */
-  var authorize_uri: js.UndefOr[String] = js.native
+  var authorize_uri: js.UndefOr[String] = js.undefined
   
   /**
     * OAuth2 Registration URI
     */
-  var registration_uri: js.UndefOr[String] = js.native
+  var registration_uri: js.UndefOr[String] = js.undefined
   
   /**
     * OAuth2 Token URI
     */
-  var token_uri: js.UndefOr[String] = js.native
+  var token_uri: js.UndefOr[String] = js.undefined
 }
 object OAuth2Endpoints {
   

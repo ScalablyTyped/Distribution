@@ -11,8 +11,8 @@ Define multiple non-enumerable properties at once. Uses `Object.defineProperty` 
 | Full name          | define-properties |
 | Keywords           | Object.defineProperty, Object.defineProperties, object, property descriptor, descriptor, define, ES5 |
 | # releases         | 0 |
-| # dependents       | 135 |
-| # downloads        | 627913533 |
+| # dependents       | 182 |
+| # downloads        | 767194207 |
 | # stars            | 0 |
 
 ## Links

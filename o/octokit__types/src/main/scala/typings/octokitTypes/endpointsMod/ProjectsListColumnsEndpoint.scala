@@ -1,42 +1,37 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.inertia
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  project_id :number,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsListColumnsEndpoint extends StObject {
-  
-  var mediaType: `7` = js.native
+trait ProjectsListColumnsEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var project_id: Double = js.native
+  var project_id: Double
 }
 object ProjectsListColumnsEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, project_id: Double): ProjectsListColumnsEndpoint = {
+  def apply(mediaType: `0`[inertia], project_id: Double): ProjectsListColumnsEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListColumnsEndpoint]
   }
   
   @scala.inline
   implicit class ProjectsListColumnsEndpointMutableBuilder[Self <: ProjectsListColumnsEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

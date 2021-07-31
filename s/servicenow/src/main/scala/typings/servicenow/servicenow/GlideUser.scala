@@ -2,27 +2,25 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideUser extends StObject {
   
-  def getCompanyID(): String = js.native
+  def getCompanyID(): String
   
-  def getDisplayName(): String = js.native
+  def getDisplayName(): String
   
-  def getID(): String = js.native
+  def getID(): String
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getPreference(name: String): String = js.native
+  def getPreference(name: String): String
   
-  def hasRole(role: String): Boolean = js.native
+  def hasRole(role: String): Boolean
   
-  def isMemberOf(group: String): Boolean = js.native
+  def isMemberOf(group: String): Boolean
   
-  def savePreference(name: String, value: String): Unit = js.native
+  def savePreference(name: String, value: String): Unit
 }
 object GlideUser {
   

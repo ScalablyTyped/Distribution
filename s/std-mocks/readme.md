@@ -12,7 +12,7 @@ Mock node stdout and stderr without pain.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 236233 |
+| # downloads        | 433085 |
 | # stars            | 0 |
 
 ## Links

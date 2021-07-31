@@ -3,38 +3,35 @@ package typings.htmlhint
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object HTMLHint {
     
-    @JSImport("htmlhint", "HTMLHint.addRule")
+    @JSImport("htmlhint", "HTMLHint")
     @js.native
-    def addRule(rule: Rule): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("htmlhint", "HTMLHint.format")
-    @js.native
-    def format(arrMessages: js.Array[LintResult]): js.Array[String] = js.native
-    @JSImport("htmlhint", "HTMLHint.format")
-    @js.native
-    def format(arrMessages: js.Array[LintResult], options: FormatOptions): js.Array[String] = js.native
+    @scala.inline
+    def addRule(rule: Rule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("htmlhint", "HTMLHint.verify")
-    @js.native
-    def verify(fileContent: String): js.Array[LintResult] = js.native
-    @JSImport("htmlhint", "HTMLHint.verify")
-    @js.native
-    def verify(fileContent: String, ruleSet: RuleSet): js.Array[LintResult] = js.native
+    @scala.inline
+    def format(arrMessages: js.Array[LintResult]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(arrMessages.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def format(arrMessages: js.Array[LintResult], options: FormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(arrMessages.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    
+    @scala.inline
+    def verify(fileContent: String): js.Array[LintResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Array[LintResult]]
+    @scala.inline
+    def verify(fileContent: String, ruleSet: RuleSet): js.Array[LintResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(fileContent.asInstanceOf[js.Any], ruleSet.asInstanceOf[js.Any])).asInstanceOf[js.Array[LintResult]]
   }
   
-  @js.native
   trait FormatOptions extends StObject {
     
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
   }
   object FormatOptions {
     
@@ -61,18 +58,17 @@ object mod {
     }
   }
   
-  @js.native
   trait LintResult extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var evidence: String = js.native
+    var evidence: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var rule: Rule = js.native
+    var rule: Rule
   }
   object LintResult {
     
@@ -102,14 +98,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Rule extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var id: String = js.native
+    var id: String
     
-    var link: String = js.native
+    var link: String
   }
   object Rule {
     

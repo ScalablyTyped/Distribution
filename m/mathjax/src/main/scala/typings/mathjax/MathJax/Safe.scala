@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Safe extends StObject {
   
   /*This block contains the flags that control what the Safe extension will allow, and what it will block. The
@@ -13,14 +11,14 @@ trait Safe extends StObject {
     * gives MathJax’s default behavior). When set to "none", these values are always filtered out. When set to
     * "safe", then only some values are allowed.
     */
-  var allow: js.UndefOr[SafeAllow] = js.native
+  var allow: js.UndefOr[SafeAllow] = js.undefined
   
   /*This is an object that lists the protocols that can be used in href attributes and the \href macro when URLs
     * is set to "safe" above.
     * Note that if a protocol doesn’t appear in the list, it is assumed to be false, so technically, javascript need
     * not have been listed, but it is given to make it explicit that it should not be allowed.
     */
-  var safeProtocols: js.UndefOr[SafeProtocols] = js.native
+  var safeProtocols: js.UndefOr[SafeProtocols] = js.undefined
   
   /*This is an object that lists the TeX extensions that can be loaded via the \require{} macro when require is
     * set to "safe" in the allowed property above.
@@ -28,24 +26,24 @@ trait Safe extends StObject {
     * possible override the individual filtering functions in order to customize the filtering even further, should
     * that be needed. See the code for the details of the function names and their definitions.
     */
-  var safeRequire: js.UndefOr[SafeRequire] = js.native
+  var safeRequire: js.UndefOr[SafeRequire] = js.undefined
   
   /*This is an object that lists the style properties that can be used in MathML style attributes and the \style
     * and \bbox macros when styles is set to "safe" in the allowed property above.
     * Any style property that doesn’t appear on this list is not allowed to be entered and will be removed (silently)
     * from the style definition.
     */
-  var safeStyles: js.UndefOr[SafeStyles] = js.native
+  var safeStyles: js.UndefOr[SafeStyles] = js.undefined
   
   /*This is the maximum font size (in em’s) that the TeX input jax will allow when fontsize is set to "safe" above.
     * The default is the size of \large. Values larger than this are set to this value.
     */
-  var sizeMax: js.UndefOr[Double] = js.native
+  var sizeMax: js.UndefOr[Double] = js.undefined
   
   /*This is the minimum font size (in em’s) that the TeX input jax will allow when fontsize is set to "safe" above.
     * The default is the size of \scriptsize. Values less than this are set to this value.
     */
-  var sizeMin: js.UndefOr[Double] = js.native
+  var sizeMin: js.UndefOr[Double] = js.undefined
 }
 object Safe {
   

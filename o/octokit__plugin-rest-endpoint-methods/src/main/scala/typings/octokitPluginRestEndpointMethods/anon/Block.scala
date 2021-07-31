@@ -2,75 +2,73 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block extends StObject {
   
-  var addEmailForAuthenticated: `1068` = js.native
+  var addEmailForAuthenticated: `1068`
   
-  var block: `1069` = js.native
+  var block: `1069`
   
-  var checkBlocked: `1070` = js.native
+  var checkBlocked: `1070`
   
-  var checkFollowingForUser: `1071` = js.native
+  var checkFollowingForUser: `1071`
   
-  var checkPersonIsFollowedByAuthenticated: `1072` = js.native
+  var checkPersonIsFollowedByAuthenticated: `1072`
   
-  var createGpgKeyForAuthenticated: `1073` = js.native
+  var createGpgKeyForAuthenticated: `1073`
   
-  var createPublicSshKeyForAuthenticated: `1074` = js.native
+  var createPublicSshKeyForAuthenticated: `1074`
   
-  var deleteEmailForAuthenticated: `1075` = js.native
+  var deleteEmailForAuthenticated: `1075`
   
-  var deleteGpgKeyForAuthenticated: `1076` = js.native
+  var deleteGpgKeyForAuthenticated: `1076`
   
-  var deletePublicSshKeyForAuthenticated: `1077` = js.native
+  var deletePublicSshKeyForAuthenticated: `1077`
   
-  var follow: `1078` = js.native
+  var follow: `1078`
   
-  var getAuthenticated: `1079` = js.native
+  var getAuthenticated: `1079`
   
-  var getByUsername: `1080` = js.native
+  var getByUsername: `1080`
   
-  var getContextForUser: `1081` = js.native
+  var getContextForUser: `1081`
   
-  var getGpgKeyForAuthenticated: `1082` = js.native
+  var getGpgKeyForAuthenticated: `1082`
   
-  var getPublicSshKeyForAuthenticated: `1083` = js.native
+  var getPublicSshKeyForAuthenticated: `1083`
   
-  var list: `1084` = js.native
+  var list: `1084`
   
-  var listBlockedByAuthenticated: `1085` = js.native
+  var listBlockedByAuthenticated: `1085`
   
-  var listEmailsForAuthenticated: `1086` = js.native
+  var listEmailsForAuthenticated: `1086`
   
-  var listFollowedByAuthenticated: `1087` = js.native
+  var listFollowedByAuthenticated: `1087`
   
-  var listFollowersForAuthenticatedUser: `1088` = js.native
+  var listFollowersForAuthenticatedUser: `1088`
   
-  var listFollowersForUser: `1089` = js.native
+  var listFollowersForUser: `1089`
   
-  var listFollowingForUser: `1090` = js.native
+  var listFollowingForUser: `1090`
   
-  var listGpgKeysForAuthenticated: `1091` = js.native
+  var listGpgKeysForAuthenticated: `1091`
   
-  var listGpgKeysForUser: `1092` = js.native
+  var listGpgKeysForUser: `1092`
   
-  var listPublicEmailsForAuthenticated: `1093` = js.native
+  var listPublicEmailsForAuthenticated: `1093`
   
-  var listPublicKeysForUser: `1094` = js.native
+  var listPublicKeysForUser: `1094`
   
-  var listPublicSshKeysForAuthenticated: `1095` = js.native
+  var listPublicSshKeysForAuthenticated: `1095`
   
-  var setPrimaryEmailVisibilityForAuthenticated: `1096` = js.native
+  var setPrimaryEmailVisibilityForAuthenticated: `1096`
   
-  var unblock: `1097` = js.native
+  var unblock: `1097`
   
-  var unfollow: `1098` = js.native
+  var unfollow: `1098`
   
-  var updateAuthenticated: `1099` = js.native
+  var updateAuthenticated: `1099`
 }
 object Block {
   

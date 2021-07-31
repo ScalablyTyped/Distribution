@@ -5,7 +5,6 @@ import typings.pulumiPulumi.automationConfigMod.ConfigValue
 import typings.pulumiPulumi.workspaceMod.Workspace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/x/automation/stack", "Stack")
@@ -123,6 +122,10 @@ class Stack protected () extends StObject {
 /* static members */
 object Stack {
   
+  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new stack using the given workspace, and stack name.
     * It fails if a stack with that name already exists
@@ -130,9 +133,8 @@ object Stack {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
-  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.create")
-  @js.native
-  def create(name: String, workspace: Workspace): js.Promise[Stack] = js.native
+  @scala.inline
+  def create(name: String, workspace: Workspace): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
   
   /**
     * Tries to create a new stack using the given workspace and
@@ -143,9 +145,8 @@ object Stack {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
-  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.createOrSelect")
-  @js.native
-  def createOrSelect(name: String, workspace: Workspace): js.Promise[Stack] = js.native
+  @scala.inline
+  def createOrSelect(name: String, workspace: Workspace): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelect")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
   
   /**
     * Selects stack using the given workspace, and stack name.
@@ -155,7 +156,6 @@ object Stack {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
-  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.select")
-  @js.native
-  def select(name: String, workspace: Workspace): js.Promise[Stack] = js.native
+  @scala.inline
+  def select(name: String, workspace: Workspace): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
 }

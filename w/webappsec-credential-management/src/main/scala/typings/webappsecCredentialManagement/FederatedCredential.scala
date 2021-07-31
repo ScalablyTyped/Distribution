@@ -3,12 +3,11 @@ package typings.webappsecCredentialManagement
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.federated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FederatedCredential
-  extends SiteBoundCredential
+  extends StObject
+     with SiteBoundCredential
      with CredentialType {
   
   /**
@@ -17,24 +16,24 @@ trait FederatedCredential
     * inferred from the provider.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredential-protocol}
     */
-  val protocol: String | Null = js.native
+  val protocol: String | Null
   
   /**
     * The credential’s federated identity provider. Must be a absolute,
     * hierarchical, https URI with no path (e.g. https://www.facebook.com).
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredential-provider}
     */
-  val provider: String = js.native
+  val provider: String
   
   @JSName("type")
-  val type_FederatedCredential: federated = js.native
+  val type_FederatedCredential: federated
 }
 object FederatedCredential {
   
   @scala.inline
-  def apply(id: String, provider: String, `type`: federated): FederatedCredential = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: String, provider: String): FederatedCredential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], iconURL = null, name = null, protocol = null)
+    __obj.updateDynamic("type")("federated")
     __obj.asInstanceOf[FederatedCredential]
   }
   

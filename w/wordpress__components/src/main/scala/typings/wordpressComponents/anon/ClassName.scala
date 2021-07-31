@@ -2,13 +2,11 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: String = js.native
+  var className: String
 }
 object ClassName {
   

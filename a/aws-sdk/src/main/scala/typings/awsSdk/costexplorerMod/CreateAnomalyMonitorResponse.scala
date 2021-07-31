@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnomalyMonitorResponse extends StObject {
   
   /**
     *  The unique identifier of your newly created cost anomaly detection monitor.
     */
-  var MonitorArn: GenericString = js.native
+  var MonitorArn: GenericString
 }
 object CreateAnomalyMonitorResponse {
   

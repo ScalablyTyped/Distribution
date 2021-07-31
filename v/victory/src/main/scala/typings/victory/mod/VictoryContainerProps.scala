@@ -4,10 +4,8 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryContainerProps extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait VictoryContainerProps extends StObject {
     * not represented above 5% each."
     * @default ""
     */
-  var desc: js.UndefOr[String] = js.native
+  var desc: js.UndefOr[String] = js.undefined
   
   /**
     * The events prop attaches arbitrary event handlers to the container component.
@@ -29,21 +27,21 @@ trait VictoryContainerProps extends StObject {
     * data. `scale.x.invert(evt.offsetX)`.
     * @examples {{ onClick: (evt) => alert(`x: ${evt.clientX}, y: ${evt.clientY}`)}}
     */
-  var events: js.UndefOr[DOMAttributes[_]] = js.native
+  var events: js.UndefOr[DOMAttributes[js.Any]] = js.undefined
   
   /**
     * The height props specifies the height the svg viewBox of the container.
     * This value should be given as a number of pixels. If no height prop
     * is given, the height prop from the child component passed will be used.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The responsive prop specifies whether the rendered container should be a responsive container
     * with a viewBox attribute, or a static container with absolute width and height.
     * @default true
     */
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The style prop specifies styles for your VictoryContainer. Any valid inline style properties
@@ -53,7 +51,7 @@ trait VictoryContainerProps extends StObject {
     * also be passed, if any exist.
     * @examples {border: 1px solid red}
     */
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * The title prop specifies the title to be applied to the SVG to assist
@@ -62,14 +60,14 @@ trait VictoryContainerProps extends StObject {
     * @example "Popularity of Dog Breeds by Percentage"
     * @default "Victory Chart"
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The width props specifies the width of the svg viewBox of the container
     * This value should be given as a number of pixels. If no width prop
     * is given, the width prop from the child component passed will be used.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object VictoryContainerProps {
   
@@ -89,7 +87,7 @@ object VictoryContainerProps {
     def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
     @scala.inline
-    def setEvents(value: DOMAttributes[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)

@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Right
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `paragraph.toJSON()`. */
-@js.native
 trait ParagraphData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.native
+  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var firstLineIndent: js.UndefOr[Double] = js.native
+  var firstLineIndent: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontData] = js.native
+  var font: js.UndefOr[FontData] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.native
+  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isLastParagraph: js.UndefOr[Boolean] = js.native
+  var isLastParagraph: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -62,7 +60,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isListItem: js.UndefOr[Boolean] = js.native
+  var isListItem: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -70,7 +68,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var leftIndent: js.UndefOr[Double] = js.native
+  var leftIndent: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -78,7 +76,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineSpacing: js.UndefOr[Double] = js.native
+  var lineSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineUnitAfter: js.UndefOr[Double] = js.native
+  var lineUnitAfter: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -94,7 +92,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineUnitBefore: js.UndefOr[Double] = js.native
+  var lineUnitBefore: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -102,7 +100,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listItem: js.UndefOr[ListItemData] = js.native
+  var listItem: js.UndefOr[ListItemData] = js.undefined
   
   /**
     *
@@ -110,7 +108,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listItemOrNullObject: js.UndefOr[ListItemData] = js.native
+  var listItemOrNullObject: js.UndefOr[ListItemData] = js.undefined
   
   /**
     *
@@ -118,7 +116,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var outlineLevel: js.UndefOr[Double] = js.native
+  var outlineLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -126,7 +124,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var rightIndent: js.UndefOr[Double] = js.native
+  var rightIndent: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -134,7 +132,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var spaceAfter: js.UndefOr[Double] = js.native
+  var spaceAfter: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -142,7 +140,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var spaceBefore: js.UndefOr[Double] = js.native
+  var spaceBefore: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -150,7 +148,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -160,7 +158,7 @@ trait ParagraphData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -168,7 +166,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var tableNestingLevel: js.UndefOr[Double] = js.native
+  var tableNestingLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -176,7 +174,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ParagraphData {
   

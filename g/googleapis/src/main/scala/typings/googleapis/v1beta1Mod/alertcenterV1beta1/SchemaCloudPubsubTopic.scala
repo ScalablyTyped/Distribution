@@ -2,7 +2,6 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `alerts-api-push-notifications@system.gserviceaccount.com` the
   * `projects.topics.publish` permission.
   */
-@js.native
 trait SchemaCloudPubsubTopic extends StObject {
   
   /**
     * Optional. The format of the payload that would be sent. If not specified
     * the format will be JSON.
     */
-  var payloadFormat: js.UndefOr[String] = js.native
+  var payloadFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The `name` field of a Cloud Pubsub [Topic]
     * (https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.topics#Topic).
     */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudPubsubTopic {
   

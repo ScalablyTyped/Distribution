@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateMatchmakingRuleSetInput extends StObject {
   
   /**
     * A collection of matchmaking rules to validate, formatted as a JSON string.
     */
-  var RuleSetBody: typings.awsSdk.gameliftMod.RuleSetBody = js.native
+  var RuleSetBody: typings.awsSdk.gameliftMod.RuleSetBody
 }
 object ValidateMatchmakingRuleSetInput {
   

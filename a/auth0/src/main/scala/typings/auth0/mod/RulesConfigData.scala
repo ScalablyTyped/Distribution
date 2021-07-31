@@ -2,16 +2,14 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesConfigData extends StObject {
   
   /**
     * Value for a rules config variable.
     */
-  var value: String = js.native
+  var value: String
 }
 object RulesConfigData {
   

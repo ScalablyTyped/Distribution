@@ -6,28 +6,26 @@ import typings.awsSdkClientS3Browser.typesStorageClassAnalysisMod.StorageClassAn
 import typings.awsSdkClientS3Browser.typesStorageClassAnalysisMod.UnmarshalledStorageClassAnalysis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAnalyticsConfigurationMod {
   
-  @js.native
   trait AnalyticsConfiguration extends StObject {
     
     /**
       * <p>The filter used to describe a set of objects for analyses. A filter must have exactly one prefix, one tag, or one conjunction (AnalyticsAndOperator). If no filter is provided, all objects will be considered in any analysis.</p>
       */
-    var Filter: js.UndefOr[AnalyticsFilter] = js.native
+    var Filter: js.UndefOr[AnalyticsFilter] = js.undefined
     
     /**
       * <p>The identifier used to represent an analytics configuration.</p>
       */
-    var Id: String = js.native
+    var Id: String
     
     /**
       * <p>If present, it indicates that data related to access patterns will be collected and made available to analyze the tradeoffs between different storage classes.</p>
       */
-    var StorageClassAnalysis: typings.awsSdkClientS3Browser.typesStorageClassAnalysisMod.StorageClassAnalysis = js.native
+    var StorageClassAnalysis: typings.awsSdkClientS3Browser.typesStorageClassAnalysisMod.StorageClassAnalysis
   }
   object AnalyticsConfiguration {
     
@@ -54,20 +52,21 @@ object typesAnalyticsConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAnalyticsConfiguration extends AnalyticsConfiguration {
+  trait UnmarshalledAnalyticsConfiguration
+    extends StObject
+       with AnalyticsConfiguration {
     
     /**
       * <p>The filter used to describe a set of objects for analyses. A filter must have exactly one prefix, one tag, or one conjunction (AnalyticsAndOperator). If no filter is provided, all objects will be considered in any analysis.</p>
       */
     @JSName("Filter")
-    var Filter_UnmarshalledAnalyticsConfiguration: js.UndefOr[UnmarshalledAnalyticsFilter] = js.native
+    var Filter_UnmarshalledAnalyticsConfiguration: js.UndefOr[UnmarshalledAnalyticsFilter] = js.undefined
     
     /**
       * <p>If present, it indicates that data related to access patterns will be collected and made available to analyze the tradeoffs between different storage classes.</p>
       */
     @JSName("StorageClassAnalysis")
-    var StorageClassAnalysis_UnmarshalledAnalyticsConfiguration: UnmarshalledStorageClassAnalysis = js.native
+    var StorageClassAnalysis_UnmarshalledAnalyticsConfiguration: UnmarshalledStorageClassAnalysis
   }
   object UnmarshalledAnalyticsConfiguration {
     

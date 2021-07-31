@@ -4,7 +4,6 @@ import typings.expo.remoteLoggingMod.LogData
 import typings.expo.remoteLoggingMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logSerializationMod {
@@ -26,12 +25,11 @@ object logSerializationMod {
   @js.native
   val EXPO_CONSOLE_METHOD_NAME: /* "__expoConsoleLog" */ String = js.native
   
-  @js.native
   trait SerializedData extends StObject {
     
-    var body: js.Array[LogData] = js.native
+    var body: js.Array[LogData]
     
-    var includesStack: Boolean = js.native
+    var includesStack: Boolean
   }
   object SerializedData {
     

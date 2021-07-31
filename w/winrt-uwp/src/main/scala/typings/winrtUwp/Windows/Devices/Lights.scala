@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.availabilitychanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for accessing and controlling lamp devices. */
@@ -17,7 +16,7 @@ object Lights {
   @js.native
   trait Lamp extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_availabilitychanged(`type`: availabilitychanged, listener: TypedEventHandler[Lamp, LampAvailabilityChangedEventArgs]): Unit = js.native
     
@@ -40,22 +39,21 @@ object Lights {
     var isEnabled: Boolean = js.native
     
     /** Occurs when the availability of the lamp device changes. */
-    def onavailabilitychanged(ev: LampAvailabilityChangedEventArgs with WinRTEvent[Lamp]): Unit = js.native
+    def onavailabilitychanged(ev: LampAvailabilityChangedEventArgs & WinRTEvent[Lamp]): Unit = js.native
     /** Occurs when the availability of the lamp device changes. */
     @JSName("onavailabilitychanged")
     var onavailabilitychanged_Original: TypedEventHandler[Lamp, LampAvailabilityChangedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_availabilitychanged(`type`: availabilitychanged, listener: TypedEventHandler[Lamp, LampAvailabilityChangedEventArgs]): Unit = js.native
   }
   
   /** Provides data for the AvailabilityChanged event. */
-  @js.native
   trait LampAvailabilityChangedEventArgs extends StObject {
     
     /** Gets a value indicating whether the lamp device that triggered the event is available. */
-    var isAvailable: Boolean = js.native
+    var isAvailable: Boolean
   }
   object LampAvailabilityChangedEventArgs {
     

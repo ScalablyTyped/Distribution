@@ -2,25 +2,23 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitModalOptions extends StObject {
   
-  var `bg-close`: js.UndefOr[Boolean] = js.native
+  var `bg-close`: js.UndefOr[Boolean] = js.undefined
   
-  var `cls-page`: js.UndefOr[String] = js.native
+  var `cls-page`: js.UndefOr[String] = js.undefined
   
-  var `cls-panel`: js.UndefOr[String] = js.native
+  var `cls-panel`: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String | Boolean] = js.native
+  var container: js.UndefOr[String | Boolean] = js.undefined
   
-  var `esc-close`: js.UndefOr[Boolean] = js.native
+  var `esc-close`: js.UndefOr[Boolean] = js.undefined
   
-  var `sel-close`: js.UndefOr[String] = js.native
+  var `sel-close`: js.UndefOr[String] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
 }
 object UIkitModalOptions {
   

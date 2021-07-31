@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptResponse extends StObject {
   
   /** The encrypted data. */
-  var ciphertext: js.UndefOr[String] = js.native
+  var ciphertext: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A CRC32C checksum of the returned EncryptResponse.ciphertext. An integrity check of EncryptResponse.ciphertext can be performed by computing the CRC32C
@@ -18,10 +16,10 @@ trait EncryptResponse extends StObject {
     * languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This field is
     * in Beta.
     */
-  var ciphertextCrc32c: js.UndefOr[String] = js.native
+  var ciphertextCrc32c: js.UndefOr[String] = js.undefined
   
   /** The resource name of the CryptoKeyVersion used in encryption. Check this field to verify that the intended resource was used for encryption. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A flag indicating whether EncryptRequest.additional_authenticated_data_crc32c was received by KeyManagementService and used for the integrity
@@ -29,14 +27,14 @@ trait EncryptResponse extends StObject {
     * KeyManagementService. If you've set EncryptRequest.additional_authenticated_data_crc32c but this field is still false, discard the response and perform a limited number of retries.
     * NOTE: This field is in Beta.
     */
-  var verifiedAdditionalAuthenticatedDataCrc32c: js.UndefOr[Boolean] = js.native
+  var verifiedAdditionalAuthenticatedDataCrc32c: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Integrity verification field. A flag indicating whether EncryptRequest.plaintext_crc32c was received by KeyManagementService and used for the integrity verification of the
     * plaintext. A false value of this field indicates either that EncryptRequest.plaintext_crc32c was left unset or that it was not delivered to KeyManagementService. If you've set
     * EncryptRequest.plaintext_crc32c but this field is still false, discard the response and perform a limited number of retries. NOTE: This field is in Beta.
     */
-  var verifiedPlaintextCrc32c: js.UndefOr[Boolean] = js.native
+  var verifiedPlaintextCrc32c: js.UndefOr[Boolean] = js.undefined
 }
 object EncryptResponse {
   

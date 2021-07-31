@@ -2,26 +2,24 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindAndModifyWriteOpResultObject extends StObject {
   
   /**
     * The raw lastErrorObject returned from the command.
     */
-  var lastErrorObject: js.UndefOr[js.Any] = js.native
+  var lastErrorObject: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Is 1 if the command executed correctly.
     */
-  var ok: js.UndefOr[scala.Double] = js.native
+  var ok: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Document returned from findAndModify command.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object FindAndModifyWriteOpResultObject {
   

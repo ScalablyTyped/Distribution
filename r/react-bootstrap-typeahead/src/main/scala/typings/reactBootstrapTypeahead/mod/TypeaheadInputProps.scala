@@ -4,38 +4,36 @@ import typings.react.mod.ReactNode
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadInputPropKeys> */
-@js.native
 trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends StObject {
   
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.native
+  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var inputProps: js.UndefOr[InputProps] = js.native
+  var inputProps: js.UndefOr[InputProps] = js.undefined
   
-  var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.native
+  var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[T], Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[T], Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   var renderToken: js.UndefOr[
     js.Function3[/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double, ReactNode]
-  ] = js.native
+  ] = js.undefined
   
-  var selected: js.UndefOr[js.Array[T]] = js.native
+  var selected: js.UndefOr[js.Array[T]] = js.undefined
 }
 object TypeaheadInputProps {
   
@@ -46,7 +44,7 @@ object TypeaheadInputProps {
   }
   
   @scala.inline
-  implicit class TypeaheadInputPropsMutableBuilder[Self <: TypeaheadInputProps[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadInputProps[T]) extends AnyVal {
+  implicit class TypeaheadInputPropsMutableBuilder[Self <: TypeaheadInputProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadInputProps[T]) extends AnyVal {
     
     @scala.inline
     def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])

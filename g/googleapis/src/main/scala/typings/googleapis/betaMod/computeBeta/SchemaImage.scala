@@ -4,42 +4,40 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.ContainerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Image resource. (== resource_for beta.images ==) (== resource_for
   * v1.images ==)
   */
-@js.native
 trait SchemaImage extends StObject {
   
   /**
     * Size of the image tar.gz archive stored in Google Cloud Storage (in
     * bytes).
     */
-  var archiveSizeBytes: js.UndefOr[String] = js.native
+  var archiveSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The deprecation status associated with this image.
     */
-  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.native
+  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Size of the image when restored onto a persistent disk (in GB).
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the image family to which this image belongs. You can create
@@ -47,20 +45,20 @@ trait SchemaImage extends StObject {
     * image family always returns its latest image that is not deprecated. The
     * name of the image family must comply with RFC1035.
     */
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
-  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypts the image using a customer-supplied encryption key.  After you
@@ -71,12 +69,12 @@ trait SchemaImage extends StObject {
     * image, then the disk will be encrypted using an automatically generated
     * key and you do not need to provide a key to use the image later.
     */
-  var imageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var imageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#image for images.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this image, which is
@@ -87,24 +85,24 @@ trait SchemaImage extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make a get() request to retrieve an image.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this image. These can be later modified by the
     * setLabels method.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Integer license codes indicating which licenses are attached to this
     * image.
     */
-  var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  var licenseCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Any applicable license URI.
     */
-  var licenses: js.UndefOr[js.Array[String]] = js.native
+  var licenses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -115,17 +113,17 @@ trait SchemaImage extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters of the raw disk image.
     */
-  var rawDisk: js.UndefOr[ContainerType] = js.native
+  var rawDisk: js.UndefOr[ContainerType] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the source disk used to create this image. This can be a full or
@@ -135,20 +133,20 @@ trait SchemaImage extends StObject {
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/disk
     * - projects/project/zones/zone/disks/disk  - zones/zone/disks/disk
     */
-  var sourceDisk: js.UndefOr[String] = js.native
+  var sourceDisk: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source disk. Required if the
     * source disk is protected by a customer-supplied encryption key.
     */
-  var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The ID value of the disk used to create this image. This
     * value may be used to determine whether the image was taken from the
     * current or a previous instance of a given disk name.
     */
-  var sourceDiskId: js.UndefOr[String] = js.native
+  var sourceDiskId: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the source image used to create this image. This can be a full or
@@ -156,20 +154,20 @@ trait SchemaImage extends StObject {
     * - the rawDisk.source property, or   - the sourceDisk property   in order
     * to create an image.
     */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source image. Required if the
     * source image is protected by a customer-supplied encryption key.
     */
-  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The ID value of the image used to create this image. This
     * value may be used to determine whether the image was taken from the
     * current or a previous instance of a given image name.
     */
-  var sourceImageId: js.UndefOr[String] = js.native
+  var sourceImageId: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the source snapshot used to create this image. This can be a full
@@ -177,26 +175,26 @@ trait SchemaImage extends StObject {
     * or   - the sourceImage property, or   - the rawDisk.source property, or
     * - the sourceDisk property   in order to create an image.
     */
-  var sourceSnapshot: js.UndefOr[String] = js.native
+  var sourceSnapshot: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source snapshot. Required if
     * the source snapshot is protected by a customer-supplied encryption key.
     */
-  var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The ID value of the snapshot used to create this image.
     * This value may be used to determine whether the snapshot was taken from
     * the current or a previous instance of a given snapshot name.
     */
-  var sourceSnapshotId: js.UndefOr[String] = js.native
+  var sourceSnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the image used to create this disk. The default and only
     * value is RAW
     */
-  var sourceType: js.UndefOr[String] = js.native
+  var sourceType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the image. An image can be used to create
@@ -204,7 +202,7 @@ trait SchemaImage extends StObject {
     * successfully created and the status is set to READY. Possible values are
     * FAILED, PENDING, or READY.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaImage {
   

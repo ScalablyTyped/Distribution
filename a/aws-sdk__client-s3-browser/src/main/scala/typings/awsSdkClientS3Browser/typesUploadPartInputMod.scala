@@ -7,12 +7,10 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUploadPartInputMod {
   
-  @js.native
   trait UploadPartInput[StreamType] extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object typesUploadPartInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Whether to use the bucket name as the endpoint for this request. The bucket
@@ -36,13 +34,13 @@ object typesUploadPartInputMod {
       * @see https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html#VirtualHostingCustomURLs
       */
     @JSName("$bucketEndpoint")
-    var $bucketEndpoint: js.UndefOr[String] = js.native
+    var $bucketEndpoint: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to force path style URLs for S3 objects (e.g., https://s3.amazonaws.com/<bucketName>/<key> instead of https://<bucketName>.s3.amazonaws.com/<key>
       */
     @JSName("$forcePathStyle")
-    var $forcePathStyle: js.UndefOr[Boolean] = js.native
+    var $forcePathStyle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -50,76 +48,76 @@ object typesUploadPartInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon does not store the encryption key. The key must be appropriate for use with the algorithm specified in the `SSECustomerAlgorithm` parameter
       */
     @JSName("$serverSideEncryptionKey")
-    var $serverSideEncryptionKey: js.UndefOr[SourceData] = js.native
+    var $serverSideEncryptionKey: js.UndefOr[SourceData] = js.undefined
     
     /**
       * Whether to use the S3 Transfer Acceleration endpoint by default
       */
     @JSName("$useAccelerateEndpoint")
-    var $useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
+    var $useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables IPv6/IPv4 dualstack endpoint. When a DNS lookup is performed on an endpoint of this type, it returns an “A” record with an IPv4 address and an “AAAA” record with an IPv6 address. In most cases the network stack in the client environment will automatically prefer the AAAA record and make a connection using the IPv6 address. Note, however, that currently on Windows, the IPv4 address will be preferred.
       */
     @JSName("$useDualstackEndpoint")
-    var $useDualstackEndpoint: js.UndefOr[Boolean] = js.native
+    var $useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>Object data.</p>
       */
-    var Body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.native
+    var Body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.undefined
     
     /**
       * <p>Name of the bucket to which the multipart upload was initiated.</p>
       */
-    var Bucket: String = js.native
+    var Bucket: String
     
     /**
       * <p>Size of the body in bytes. This parameter is useful when the size of the body cannot be determined automatically.</p>
       */
-    var ContentLength: js.UndefOr[Double] = js.native
+    var ContentLength: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The base64-encoded 128-bit MD5 digest of the part data.</p>
       */
-    var ContentMD5: js.UndefOr[String] = js.native
+    var ContentMD5: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Object key for which the multipart upload was initiated.</p>
       */
-    var Key: String = js.native
+    var Key: String
     
     /**
       * <p>Part number of part being uploaded. This is a positive integer between 1 and 10,000.</p>
       */
-    var PartNumber: Double = js.native
+    var PartNumber: Double
     
     /**
       * <p>Confirms that the requester knows that she or he will be charged for the request. Bucket owners need not specify this parameter in their requests. Documentation on downloading objects from requester pays buckets can be found at http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html</p>
       */
-    var RequestPayer: js.UndefOr[requester_ | String] = js.native
+    var RequestPayer: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>Specifies the algorithm to use to when encrypting the object (e.g., AES256).</p>
       */
-    var SSECustomerAlgorithm: js.UndefOr[String] = js.native
+    var SSECustomerAlgorithm: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Upload ID identifying the multipart upload whose part is being uploaded.</p>
       */
-    var UploadId: String = js.native
+    var UploadId: String
   }
   object UploadPartInput {
     
@@ -130,7 +128,7 @@ object typesUploadPartInputMod {
     }
     
     @scala.inline
-    implicit class UploadPartInputMutableBuilder[Self <: UploadPartInput[_], StreamType] (val x: Self with UploadPartInput[StreamType]) extends AnyVal {
+    implicit class UploadPartInputMutableBuilder[Self <: UploadPartInput[?], StreamType] (val x: Self & UploadPartInput[StreamType]) extends AnyVal {
       
       @scala.inline
       def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])

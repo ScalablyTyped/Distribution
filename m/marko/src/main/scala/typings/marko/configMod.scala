@@ -4,31 +4,29 @@ import typings.marko.markoStrings.html
 import typings.marko.markoStrings.vdom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @js.native
   trait Config extends StObject {
     
-    var assumeUpToDate: js.UndefOr[Boolean] = js.native
+    var assumeUpToDate: js.UndefOr[Boolean] = js.undefined
     
-    var autoKeyEnabled: js.UndefOr[Boolean] = js.native
+    var autoKeyEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var checkUpToDate: js.UndefOr[Boolean] = js.native
+    var checkUpToDate: js.UndefOr[Boolean] = js.undefined
     
-    var escapeAtTags: js.UndefOr[Boolean] = js.native
+    var escapeAtTags: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreUnrecognizedTags: js.UndefOr[Boolean] = js.native
+    var ignoreUnrecognizedTags: js.UndefOr[Boolean] = js.undefined
     
-    var output: js.UndefOr[vdom | html] = js.native
+    var output: js.UndefOr[vdom | html] = js.undefined
     
-    var preserveWhitespace: js.UndefOr[Boolean] = js.native
+    var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var writeToDisk: js.UndefOr[Boolean] = js.native
+    var writeToDisk: js.UndefOr[Boolean] = js.undefined
     
-    var writeVersionComment: js.UndefOr[Boolean] = js.native
+    var writeVersionComment: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

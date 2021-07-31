@@ -15,7 +15,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -92,7 +91,7 @@ trait OpsWorks extends Service {
   ): Request[CloneStackResult, AWSError] = js.native
   
   @JSName("config")
-  var config_OpsWorks: ConfigBase with ClientConfiguration = js.native
+  var config_OpsWorks: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an app for a specified stack. For more information, see Creating Apps.  Required Permissions: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see Managing User Permissions.

@@ -2,13 +2,13 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConversationsGrantPayload extends GrantPayload {
+trait ConversationsGrantPayload
+  extends StObject
+     with GrantPayload {
   
-  var configuration_profile_sid: String = js.native
+  var configuration_profile_sid: String
 }
 object ConversationsGrantPayload {
   

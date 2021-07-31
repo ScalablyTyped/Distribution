@@ -2,16 +2,17 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/device_util", "isBrowser")
+  @JSImport("@tensorflow/tfjs-core/dist/device_util", JSImport.Namespace)
   @js.native
-  def isBrowser(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/device_util", "isMobile")
-  @js.native
-  def isMobile(): Boolean = js.native
+  @scala.inline
+  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
 }

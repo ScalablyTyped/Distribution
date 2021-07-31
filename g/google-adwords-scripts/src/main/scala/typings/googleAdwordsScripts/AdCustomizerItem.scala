@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Ad Customizers
 @js.native
 trait AdCustomizerItem
-  extends AdWordsEntity
+  extends StObject
+     with AdWordsEntity
      with hasMobilePreferred
      with hasStartAndEndDate
      with hasSchedules {

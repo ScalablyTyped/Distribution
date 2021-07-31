@@ -2,27 +2,25 @@ package typings.i18next.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Services extends StObject {
   
-  var backendConnector: js.Any = js.native
+  var backendConnector: js.Any
   
-  var i18nFormat: js.Any = js.native
+  var i18nFormat: js.Any
   
-  var interpolator: Interpolator = js.native
+  var interpolator: Interpolator
   
-  var languageDetector: js.Any = js.native
+  var languageDetector: js.Any
   
-  var languageUtils: js.Any = js.native
+  var languageUtils: js.Any
   
-  var logger: js.Any = js.native
+  var logger: js.Any
   
-  var pluralResolver: js.Any = js.native
+  var pluralResolver: js.Any
   
-  var resourceStore: ResourceStore = js.native
+  var resourceStore: ResourceStore
 }
 object Services {
   

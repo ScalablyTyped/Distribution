@@ -3,34 +3,32 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSetting extends StObject {
   
-  var Action: PpActionType = js.native
+  var Action: PpActionType
   
-  var ActionVerb: String = js.native
+  var ActionVerb: String
   
-  var AnimateAction: MsoTriState = js.native
+  var AnimateAction: MsoTriState
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Hyperlink: typings.activexPowerpoint.PowerPoint.Hyperlink = js.native
+  val Hyperlink: typings.activexPowerpoint.PowerPoint.Hyperlink
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ActionSetting_typekey")
-  var PowerPointDotActionSetting_typekey: ActionSetting = js.native
+  var PowerPointDotActionSetting_typekey: ActionSetting
   
-  var Run: String = js.native
+  var Run: String
   
-  var ShowAndReturn: MsoTriState = js.native
+  var ShowAndReturn: MsoTriState
   
-  var SlideShowName: String = js.native
+  var SlideShowName: String
   
-  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect = js.native
+  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
 }
 object ActionSetting {
   

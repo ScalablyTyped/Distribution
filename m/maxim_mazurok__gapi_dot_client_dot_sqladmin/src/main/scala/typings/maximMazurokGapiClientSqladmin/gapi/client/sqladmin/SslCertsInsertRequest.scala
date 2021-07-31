@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertsInsertRequest extends StObject {
   
   /** User supplied name. Must be a distinct name from the other certificates for this instance. */
-  var commonName: js.UndefOr[String] = js.native
+  var commonName: js.UndefOr[String] = js.undefined
 }
 object SslCertsInsertRequest {
   

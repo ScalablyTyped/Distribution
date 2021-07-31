@@ -2,41 +2,39 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOperatorsOrdered extends StObject {
   
   /**
     * Add a remove operation to the bulk operation.
     */
-  def delete(): OrderedBulkOperation = js.native
+  def delete(): OrderedBulkOperation
   
   /**
     * Add a remove one operation to the bulk operation.
     */
-  def deleteOne(): OrderedBulkOperation = js.native
+  def deleteOne(): OrderedBulkOperation
   
   /**
     * Add a replace one operation to the bulk operation.
     */
-  def replaceOne(doc: js.Object): OrderedBulkOperation = js.native
+  def replaceOne(doc: js.Object): OrderedBulkOperation
   
   /**
     * Add a single update document to the bulk operation.
     */
-  def update(doc: js.Object): OrderedBulkOperation = js.native
+  def update(doc: js.Object): OrderedBulkOperation
   
   /**
     * Add a single update one document to the bulk operation.
     */
-  def updateOne(doc: js.Object): OrderedBulkOperation = js.native
+  def updateOne(doc: js.Object): OrderedBulkOperation
   
   /**
     * Upsert modifier for update bulk operation.
     */
-  def upsert(): FindOperatorsOrdered = js.native
+  def upsert(): FindOperatorsOrdered
 }
 object FindOperatorsOrdered {
   

@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client side authentication settings for connection originating from the
   * backend service.
   */
-@js.native
 trait SchemaClientTlsSettings extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaClientTlsSettings extends StObject {
     * identity information. This field is only applicable when mode is set to
     * MUTUAL.
     */
-  var clientTlsContext: js.UndefOr[SchemaTlsContext] = js.native
+  var clientTlsContext: js.UndefOr[SchemaTlsContext] = js.undefined
   
   /**
     * Indicates whether connections to this port should be secured using TLS.
@@ -27,13 +25,13 @@ trait SchemaClientTlsSettings extends StObject {
     * Secure connections to the backends using mutual TLS by presenting client
     * certificates for authentication.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * SNI string to present to the server during TLS handshake. This field is
     * applicable only when mode is SIMPLE or MUTUAL.
     */
-  var sni: js.UndefOr[String] = js.native
+  var sni: js.UndefOr[String] = js.undefined
   
   /**
     * A list of alternate names to verify the subject identity in the
@@ -41,7 +39,7 @@ trait SchemaClientTlsSettings extends StObject {
     * certificate&#39;s subject alt name matches one of the specified values.
     * This field is applicable only when mode is SIMPLE or MUTUAL.
     */
-  var subjectAltNames: js.UndefOr[js.Array[String]] = js.native
+  var subjectAltNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaClientTlsSettings {
   

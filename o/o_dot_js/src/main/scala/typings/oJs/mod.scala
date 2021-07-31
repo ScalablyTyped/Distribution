@@ -6,10 +6,13 @@ import typings.std.RequestInit
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("o.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("o.js", "OBatch")
   @js.native
@@ -20,7 +23,7 @@ object mod {
     def this(
       resources: js.Array[typings.oJs.orequestMod.ORequest],
       config: OdataConfig,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       changeset: Boolean
     ) = this()
     def this(
@@ -46,22 +49,16 @@ object mod {
     def this(url: URL, config: RequestInit) = this()
   }
   
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: String): typings.oJs.ohandlerMod.OHandler = js.native
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: String, config: js.Any): typings.oJs.ohandlerMod.OHandler = js.native
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: String, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = js.native
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: URL): typings.oJs.ohandlerMod.OHandler = js.native
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: URL, config: js.Any): typings.oJs.ohandlerMod.OHandler = js.native
-  @JSImport("o.js", "o")
-  @js.native
-  def o(rootUrl: URL, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = js.native
+  @scala.inline
+  def o(rootUrl: String): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  @scala.inline
+  def o(rootUrl: String, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  @scala.inline
+  def o(rootUrl: String, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  @scala.inline
+  def o(rootUrl: URL): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  @scala.inline
+  def o(rootUrl: URL, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  @scala.inline
+  def o(rootUrl: URL, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
 }

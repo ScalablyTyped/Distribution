@@ -2,7 +2,6 @@ package typings.loopback.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string | string[]} notes Additional notes, used by API documentation generators like Swagger.
   * @property {RemoteMethodArgument} returns Describes the remote method's callback arguments
   */
-@js.native
 trait RemoteMethodOptions extends StObject {
   
   /**
@@ -29,32 +27,32 @@ trait RemoteMethodOptions extends StObject {
     {arg: 'age', type: 'number'},...],
     ... }
     */
-  var accepts: js.UndefOr[js.Array[RemoteMethodArgument]] = js.native
+  var accepts: js.UndefOr[js.Array[RemoteMethodArgument]] = js.undefined
   
   /**
     * Text description of the method, used by API documentation generators such as Swagger.
     You can put long strings in an array if needed (see note below).
     */
-  var description: js.UndefOr[String | js.Array[String]] = js.native
+  var description: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     *
     */
-  var http: js.UndefOr[RemoteHttpOptions] = js.native
+  var http: js.UndefOr[RemoteHttpOptions] = js.undefined
   
   /**
     *
     * boolean. Whether the method is static (eg. `MyModel.myMethod`). Use `false` to define the method on the prototype (for example, `MyModel.prototype.myMethod`). Default is true.
     * default: true
     */
-  var isStatic: js.UndefOr[Boolean] = js.native
+  var isStatic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     Additional notes, used by API documentation generators like Swagger.
     You can put long strings in an array if needed (see note below).
     */
-  var notes: js.UndefOr[String | js.Array[String]] = js.native
+  var notes: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Describes the remote method's callback arguments; See Argument descriptions. The err argument is assumed; do not specify.
@@ -63,7 +61,7 @@ trait RemoteMethodOptions extends StObject {
     * returns: {arg: 'greeting', type: 'string'}`
     * ```
     */
-  var returns: js.UndefOr[RemoteMethodArgument] = js.native
+  var returns: js.UndefOr[RemoteMethodArgument] = js.undefined
 }
 object RemoteMethodOptions {
   

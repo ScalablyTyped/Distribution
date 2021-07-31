@@ -4,21 +4,22 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authContextProviderMod {
   
-  @JSImport("csw-aas-js/dist/components/context/AuthContextProvider", JSImport.Default)
+  @JSImport("csw-aas-js/dist/components/context/AuthContextProvider", JSImport.Namespace)
   @js.native
-  def default(props: AuthContextProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: AuthContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait AuthContextConfig extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var realm: String = js.native
+    var realm: String
   }
   object AuthContextConfig {
     
@@ -39,12 +40,11 @@ object authContextProviderMod {
     }
   }
   
-  @js.native
   trait AuthContextProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var config: AuthContextConfig = js.native
+    var config: AuthContextConfig
   }
   object AuthContextProps {
     

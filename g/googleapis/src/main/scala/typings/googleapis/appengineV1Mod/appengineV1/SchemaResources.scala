@@ -2,34 +2,32 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Machine resources for a version.
   */
-@js.native
 trait SchemaResources extends StObject {
   
   /**
     * Number of CPU cores needed.
     */
-  var cpu: js.UndefOr[Double] = js.native
+  var cpu: js.UndefOr[Double] = js.undefined
   
   /**
     * Disk size (GB) needed.
     */
-  var diskGb: js.UndefOr[Double] = js.native
+  var diskGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Memory (GB) needed.
     */
-  var memoryGb: js.UndefOr[Double] = js.native
+  var memoryGb: js.UndefOr[Double] = js.undefined
   
   /**
     * User specified volumes.
     */
-  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
 }
 object SchemaResources {
   

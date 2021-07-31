@@ -2,35 +2,33 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolsData extends StObject {
   
-  var decimal: String = js.native
+  var decimal: String
   
-  var exponential: String = js.native
+  var exponential: String
   
-  var group: String = js.native
+  var group: String
   
-  var infinity: String = js.native
+  var infinity: String
   
-  var list: String = js.native
+  var list: String
   
-  var minusSign: String = js.native
+  var minusSign: String
   
-  var nan: String = js.native
+  var nan: String
   
-  var perMille: String = js.native
+  var perMille: String
   
-  var percentSign: String = js.native
+  var percentSign: String
   
-  var plusSign: String = js.native
+  var plusSign: String
   
-  var superscriptingExponent: String = js.native
+  var superscriptingExponent: String
   
-  var timeSeparator: String = js.native
+  var timeSeparator: String
 }
 object SymbolsData {
   

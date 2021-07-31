@@ -2,49 +2,47 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coockies.getAll() details argument object
   */
-@js.native
 trait CookiesGetAllDetails extends StObject {
   
   /**
     * Restricts the retrieved cookies to those whose domains match or are subdomains of this one.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Filters the cookies by name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Restricts the retrieved cookies to those whose path exactly matches this string.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Filters the cookies by their Secure property.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filters out session vs. persistent cookies.
     */
-  var session: Boolean = js.native
+  var session: Boolean
   
   /**
     * The cookie store to retrieve cookies from. If omitted, the current execution context's cookie store will be used.
     */
-  var storeId: js.UndefOr[String] = js.native
+  var storeId: js.UndefOr[String] = js.undefined
   
   /**
     * Restricts the retrieved cookies to those that would match the given URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CookiesGetAllDetails {
   

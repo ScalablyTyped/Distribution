@@ -280,567 +280,565 @@ import typings.astTypes.namedTypesMod.namedTypes.YieldExpression
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedTypes_ extends StObject {
   
-  var AnyTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.AnyTypeAnnotation] = js.native
+  var AnyTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.AnyTypeAnnotation]
   
-  var ArrayExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayExpression] = js.native
+  var ArrayExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayExpression]
   
-  var ArrayPattern: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayPattern] = js.native
+  var ArrayPattern: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayPattern]
   
-  var ArrayTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayTypeAnnotation] = js.native
+  var ArrayTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ArrayTypeAnnotation]
   
-  var ArrowFunctionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression] = js.native
+  var ArrowFunctionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression]
   
-  var AssignmentExpression: Type[typings.astTypes.namedTypesMod.namedTypes.AssignmentExpression] = js.native
+  var AssignmentExpression: Type[typings.astTypes.namedTypesMod.namedTypes.AssignmentExpression]
   
-  var AssignmentPattern: Type[typings.astTypes.namedTypesMod.namedTypes.AssignmentPattern] = js.native
+  var AssignmentPattern: Type[typings.astTypes.namedTypesMod.namedTypes.AssignmentPattern]
   
-  var AwaitExpression: Type[typings.astTypes.namedTypesMod.namedTypes.AwaitExpression] = js.native
+  var AwaitExpression: Type[typings.astTypes.namedTypesMod.namedTypes.AwaitExpression]
   
-  var BigIntLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral] = js.native
+  var BigIntLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral]
   
-  var BigIntLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation] = js.native
+  var BigIntLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation]
   
-  var BigIntTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation] = js.native
+  var BigIntTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation]
   
-  var BinaryExpression: Type[typings.astTypes.namedTypesMod.namedTypes.BinaryExpression] = js.native
+  var BinaryExpression: Type[typings.astTypes.namedTypesMod.namedTypes.BinaryExpression]
   
-  var BindExpression: Type[typings.astTypes.namedTypesMod.namedTypes.BindExpression] = js.native
+  var BindExpression: Type[typings.astTypes.namedTypesMod.namedTypes.BindExpression]
   
-  var Block: Type[typings.astTypes.namedTypesMod.namedTypes.Block] = js.native
+  var Block: Type[typings.astTypes.namedTypesMod.namedTypes.Block]
   
-  var BlockStatement: Type[typings.astTypes.namedTypesMod.namedTypes.BlockStatement] = js.native
+  var BlockStatement: Type[typings.astTypes.namedTypesMod.namedTypes.BlockStatement]
   
-  var BooleanLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral] = js.native
+  var BooleanLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral]
   
-  var BooleanLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation] = js.native
+  var BooleanLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation]
   
-  var BooleanTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation] = js.native
+  var BooleanTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation]
   
-  var BreakStatement: Type[typings.astTypes.namedTypesMod.namedTypes.BreakStatement] = js.native
+  var BreakStatement: Type[typings.astTypes.namedTypesMod.namedTypes.BreakStatement]
   
-  var CallExpression: Type[typings.astTypes.namedTypesMod.namedTypes.CallExpression] = js.native
+  var CallExpression: Type[typings.astTypes.namedTypesMod.namedTypes.CallExpression]
   
-  var CatchClause: Type[typings.astTypes.namedTypesMod.namedTypes.CatchClause] = js.native
+  var CatchClause: Type[typings.astTypes.namedTypesMod.namedTypes.CatchClause]
   
-  var ChainElement: Type[typings.astTypes.namedTypesMod.namedTypes.ChainElement] = js.native
+  var ChainElement: Type[typings.astTypes.namedTypesMod.namedTypes.ChainElement]
   
-  var ChainExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ChainExpression] = js.native
+  var ChainExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ChainExpression]
   
-  var ClassBody: Type[typings.astTypes.namedTypesMod.namedTypes.ClassBody] = js.native
+  var ClassBody: Type[typings.astTypes.namedTypesMod.namedTypes.ClassBody]
   
-  var ClassDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration] = js.native
+  var ClassDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration]
   
-  var ClassExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ClassExpression] = js.native
+  var ClassExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ClassExpression]
   
-  var ClassImplements: Type[typings.astTypes.namedTypesMod.namedTypes.ClassImplements] = js.native
+  var ClassImplements: Type[typings.astTypes.namedTypesMod.namedTypes.ClassImplements]
   
-  var ClassMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ClassMethod] = js.native
+  var ClassMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ClassMethod]
   
-  var ClassPrivateMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod] = js.native
+  var ClassPrivateMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod]
   
-  var ClassPrivateProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty] = js.native
+  var ClassPrivateProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty]
   
-  var ClassProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ClassProperty] = js.native
+  var ClassProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ClassProperty]
   
-  var ClassPropertyDefinition: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPropertyDefinition] = js.native
+  var ClassPropertyDefinition: Type[typings.astTypes.namedTypesMod.namedTypes.ClassPropertyDefinition]
   
-  var Comment: Type[typings.astTypes.namedTypesMod.namedTypes.Comment] = js.native
+  var Comment: Type[typings.astTypes.namedTypesMod.namedTypes.Comment]
   
-  var CommentBlock: Type[typings.astTypes.namedTypesMod.namedTypes.CommentBlock] = js.native
+  var CommentBlock: Type[typings.astTypes.namedTypesMod.namedTypes.CommentBlock]
   
-  var CommentLine: Type[typings.astTypes.namedTypesMod.namedTypes.CommentLine] = js.native
+  var CommentLine: Type[typings.astTypes.namedTypesMod.namedTypes.CommentLine]
   
-  var ComprehensionBlock: Type[typings.astTypes.namedTypesMod.namedTypes.ComprehensionBlock] = js.native
+  var ComprehensionBlock: Type[typings.astTypes.namedTypesMod.namedTypes.ComprehensionBlock]
   
-  var ComprehensionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression] = js.native
+  var ComprehensionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression]
   
-  var ConditionalExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ConditionalExpression] = js.native
+  var ConditionalExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ConditionalExpression]
   
-  var ContinueStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ContinueStatement] = js.native
+  var ContinueStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ContinueStatement]
   
-  var DebuggerStatement: Type[typings.astTypes.namedTypesMod.namedTypes.DebuggerStatement] = js.native
+  var DebuggerStatement: Type[typings.astTypes.namedTypesMod.namedTypes.DebuggerStatement]
   
-  var Declaration: Type[typings.astTypes.namedTypesMod.namedTypes.Declaration] = js.native
+  var Declaration: Type[typings.astTypes.namedTypesMod.namedTypes.Declaration]
   
-  var DeclareClass: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareClass] = js.native
+  var DeclareClass: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareClass]
   
-  var DeclareExportAllDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration] = js.native
+  var DeclareExportAllDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration]
   
-  var DeclareExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration] = js.native
+  var DeclareExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration]
   
-  var DeclareFunction: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareFunction] = js.native
+  var DeclareFunction: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareFunction]
   
-  var DeclareInterface: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareInterface] = js.native
+  var DeclareInterface: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareInterface]
   
-  var DeclareModule: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareModule] = js.native
+  var DeclareModule: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareModule]
   
-  var DeclareModuleExports: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareModuleExports] = js.native
+  var DeclareModuleExports: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareModuleExports]
   
-  var DeclareOpaqueType: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType] = js.native
+  var DeclareOpaqueType: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType]
   
-  var DeclareTypeAlias: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias] = js.native
+  var DeclareTypeAlias: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias]
   
-  var DeclareVariable: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareVariable] = js.native
+  var DeclareVariable: Type[typings.astTypes.namedTypesMod.namedTypes.DeclareVariable]
   
-  var DeclaredPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate] = js.native
+  var DeclaredPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate]
   
-  var Decorator: Type[typings.astTypes.namedTypesMod.namedTypes.Decorator] = js.native
+  var Decorator: Type[typings.astTypes.namedTypesMod.namedTypes.Decorator]
   
-  var Directive: Type[typings.astTypes.namedTypesMod.namedTypes.Directive] = js.native
+  var Directive: Type[typings.astTypes.namedTypesMod.namedTypes.Directive]
   
-  var DirectiveLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral] = js.native
+  var DirectiveLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral]
   
-  var DoExpression: Type[typings.astTypes.namedTypesMod.namedTypes.DoExpression] = js.native
+  var DoExpression: Type[typings.astTypes.namedTypesMod.namedTypes.DoExpression]
   
-  var DoWhileStatement: Type[typings.astTypes.namedTypesMod.namedTypes.DoWhileStatement] = js.native
+  var DoWhileStatement: Type[typings.astTypes.namedTypesMod.namedTypes.DoWhileStatement]
   
-  var EmptyStatement: Type[typings.astTypes.namedTypesMod.namedTypes.EmptyStatement] = js.native
+  var EmptyStatement: Type[typings.astTypes.namedTypesMod.namedTypes.EmptyStatement]
   
-  var EmptyTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation] = js.native
+  var EmptyTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation]
   
-  var EnumBooleanBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumBooleanBody] = js.native
+  var EnumBooleanBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumBooleanBody]
   
-  var EnumBooleanMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumBooleanMember] = js.native
+  var EnumBooleanMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumBooleanMember]
   
-  var EnumDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration] = js.native
+  var EnumDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration]
   
-  var EnumDefaultedMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumDefaultedMember] = js.native
+  var EnumDefaultedMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumDefaultedMember]
   
-  var EnumNumberBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumNumberBody] = js.native
+  var EnumNumberBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumNumberBody]
   
-  var EnumNumberMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumNumberMember] = js.native
+  var EnumNumberMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumNumberMember]
   
-  var EnumStringBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumStringBody] = js.native
+  var EnumStringBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumStringBody]
   
-  var EnumStringMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumStringMember] = js.native
+  var EnumStringMember: Type[typings.astTypes.namedTypesMod.namedTypes.EnumStringMember]
   
-  var EnumSymbolBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumSymbolBody] = js.native
+  var EnumSymbolBody: Type[typings.astTypes.namedTypesMod.namedTypes.EnumSymbolBody]
   
-  var ExistentialTypeParam: Type[typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam] = js.native
+  var ExistentialTypeParam: Type[typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam]
   
-  var ExistsTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation] = js.native
+  var ExistsTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation]
   
-  var ExportAllDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration] = js.native
+  var ExportAllDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration]
   
-  var ExportBatchSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier] = js.native
+  var ExportBatchSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier]
   
-  var ExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration] = js.native
+  var ExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration]
   
-  var ExportDefaultDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration] = js.native
+  var ExportDefaultDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration]
   
-  var ExportDefaultSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDefaultSpecifier] = js.native
+  var ExportDefaultSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportDefaultSpecifier]
   
-  var ExportNamedDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration] = js.native
+  var ExportNamedDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration]
   
-  var ExportNamespaceSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportNamespaceSpecifier] = js.native
+  var ExportNamespaceSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportNamespaceSpecifier]
   
-  var ExportSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier] = js.native
+  var ExportSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier]
   
-  var Expression: Type[typings.astTypes.namedTypesMod.namedTypes.Expression] = js.native
+  var Expression: Type[typings.astTypes.namedTypesMod.namedTypes.Expression]
   
-  var ExpressionStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ExpressionStatement] = js.native
+  var ExpressionStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ExpressionStatement]
   
-  var File: Type[typings.astTypes.namedTypesMod.namedTypes.File] = js.native
+  var File: Type[typings.astTypes.namedTypesMod.namedTypes.File]
   
-  var Flow: Type[typings.astTypes.namedTypesMod.namedTypes.Flow] = js.native
+  var Flow: Type[typings.astTypes.namedTypesMod.namedTypes.Flow]
   
-  var FlowPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.FlowPredicate] = js.native
+  var FlowPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.FlowPredicate]
   
-  var FlowType: Type[typings.astTypes.namedTypesMod.namedTypes.FlowType] = js.native
+  var FlowType: Type[typings.astTypes.namedTypesMod.namedTypes.FlowType]
   
-  var ForAwaitStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForAwaitStatement] = js.native
+  var ForAwaitStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForAwaitStatement]
   
-  var ForInStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForInStatement] = js.native
+  var ForInStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForInStatement]
   
-  var ForOfStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForOfStatement] = js.native
+  var ForOfStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForOfStatement]
   
-  var ForStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForStatement] = js.native
+  var ForStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ForStatement]
   
-  var Function: Type[typings.astTypes.namedTypesMod.namedTypes.Function] = js.native
+  var Function: Type[typings.astTypes.namedTypesMod.namedTypes.Function]
   
-  var FunctionDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionDeclaration] = js.native
+  var FunctionDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionDeclaration]
   
-  var FunctionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionExpression] = js.native
+  var FunctionExpression: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionExpression]
   
-  var FunctionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionTypeAnnotation] = js.native
+  var FunctionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionTypeAnnotation]
   
-  var FunctionTypeParam: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionTypeParam] = js.native
+  var FunctionTypeParam: Type[typings.astTypes.namedTypesMod.namedTypes.FunctionTypeParam]
   
-  var GeneratorExpression: Type[typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression] = js.native
+  var GeneratorExpression: Type[typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression]
   
-  var GenericTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation] = js.native
+  var GenericTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation]
   
-  var Identifier: Type[typings.astTypes.namedTypesMod.namedTypes.Identifier] = js.native
+  var Identifier: Type[typings.astTypes.namedTypesMod.namedTypes.Identifier]
   
-  var IfStatement: Type[typings.astTypes.namedTypesMod.namedTypes.IfStatement] = js.native
+  var IfStatement: Type[typings.astTypes.namedTypesMod.namedTypes.IfStatement]
   
-  var Import: Type[typings.astTypes.namedTypesMod.namedTypes.Import] = js.native
+  var Import: Type[typings.astTypes.namedTypesMod.namedTypes.Import]
   
-  var ImportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration] = js.native
+  var ImportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration]
   
-  var ImportDefaultSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier] = js.native
+  var ImportDefaultSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier]
   
-  var ImportExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ImportExpression] = js.native
+  var ImportExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ImportExpression]
   
-  var ImportNamespaceSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier] = js.native
+  var ImportNamespaceSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier]
   
-  var ImportSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier] = js.native
+  var ImportSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier]
   
-  var InferredPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.InferredPredicate] = js.native
+  var InferredPredicate: Type[typings.astTypes.namedTypesMod.namedTypes.InferredPredicate]
   
-  var InterfaceDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration] = js.native
+  var InterfaceDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration]
   
-  var InterfaceExtends: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceExtends] = js.native
+  var InterfaceExtends: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceExtends]
   
-  var InterfaceTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceTypeAnnotation] = js.native
+  var InterfaceTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.InterfaceTypeAnnotation]
   
-  var InterpreterDirective: Type[typings.astTypes.namedTypesMod.namedTypes.InterpreterDirective] = js.native
+  var InterpreterDirective: Type[typings.astTypes.namedTypesMod.namedTypes.InterpreterDirective]
   
-  var IntersectionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.IntersectionTypeAnnotation] = js.native
+  var IntersectionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.IntersectionTypeAnnotation]
   
-  var JSXAttribute: Type[typings.astTypes.namedTypesMod.namedTypes.JSXAttribute] = js.native
+  var JSXAttribute: Type[typings.astTypes.namedTypesMod.namedTypes.JSXAttribute]
   
-  var JSXClosingElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXClosingElement] = js.native
+  var JSXClosingElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXClosingElement]
   
-  var JSXClosingFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXClosingFragment] = js.native
+  var JSXClosingFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXClosingFragment]
   
-  var JSXElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXElement] = js.native
+  var JSXElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXElement]
   
-  var JSXEmptyExpression: Type[typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression] = js.native
+  var JSXEmptyExpression: Type[typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression]
   
-  var JSXExpressionContainer: Type[typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer] = js.native
+  var JSXExpressionContainer: Type[typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer]
   
-  var JSXFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXFragment] = js.native
+  var JSXFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXFragment]
   
-  var JSXIdentifier: Type[typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier] = js.native
+  var JSXIdentifier: Type[typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier]
   
-  var JSXMemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression] = js.native
+  var JSXMemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression]
   
-  var JSXNamespacedName: Type[typings.astTypes.namedTypesMod.namedTypes.JSXNamespacedName] = js.native
+  var JSXNamespacedName: Type[typings.astTypes.namedTypesMod.namedTypes.JSXNamespacedName]
   
-  var JSXOpeningElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXOpeningElement] = js.native
+  var JSXOpeningElement: Type[typings.astTypes.namedTypesMod.namedTypes.JSXOpeningElement]
   
-  var JSXOpeningFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXOpeningFragment] = js.native
+  var JSXOpeningFragment: Type[typings.astTypes.namedTypesMod.namedTypes.JSXOpeningFragment]
   
-  var JSXSpreadAttribute: Type[typings.astTypes.namedTypesMod.namedTypes.JSXSpreadAttribute] = js.native
+  var JSXSpreadAttribute: Type[typings.astTypes.namedTypesMod.namedTypes.JSXSpreadAttribute]
   
-  var JSXSpreadChild: Type[typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild] = js.native
+  var JSXSpreadChild: Type[typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild]
   
-  var JSXText: Type[typings.astTypes.namedTypesMod.namedTypes.JSXText] = js.native
+  var JSXText: Type[typings.astTypes.namedTypesMod.namedTypes.JSXText]
   
-  var LabeledStatement: Type[typings.astTypes.namedTypesMod.namedTypes.LabeledStatement] = js.native
+  var LabeledStatement: Type[typings.astTypes.namedTypesMod.namedTypes.LabeledStatement]
   
-  var Line: Type[typings.astTypes.namedTypesMod.namedTypes.Line] = js.native
+  var Line: Type[typings.astTypes.namedTypesMod.namedTypes.Line]
   
-  var Literal: Type[typings.astTypes.namedTypesMod.namedTypes.Literal] = js.native
+  var Literal: Type[typings.astTypes.namedTypesMod.namedTypes.Literal]
   
-  var LogicalExpression: Type[typings.astTypes.namedTypesMod.namedTypes.LogicalExpression] = js.native
+  var LogicalExpression: Type[typings.astTypes.namedTypesMod.namedTypes.LogicalExpression]
   
-  var MemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.MemberExpression] = js.native
+  var MemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.MemberExpression]
   
-  var MemberTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.MemberTypeAnnotation] = js.native
+  var MemberTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.MemberTypeAnnotation]
   
-  var MetaProperty: Type[typings.astTypes.namedTypesMod.namedTypes.MetaProperty] = js.native
+  var MetaProperty: Type[typings.astTypes.namedTypesMod.namedTypes.MetaProperty]
   
-  var MethodDefinition: Type[typings.astTypes.namedTypesMod.namedTypes.MethodDefinition] = js.native
+  var MethodDefinition: Type[typings.astTypes.namedTypesMod.namedTypes.MethodDefinition]
   
-  var MixedTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation] = js.native
+  var MixedTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation]
   
-  var ModuleSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ModuleSpecifier] = js.native
+  var ModuleSpecifier: Type[typings.astTypes.namedTypesMod.namedTypes.ModuleSpecifier]
   
-  var NewExpression: Type[typings.astTypes.namedTypesMod.namedTypes.NewExpression] = js.native
+  var NewExpression: Type[typings.astTypes.namedTypesMod.namedTypes.NewExpression]
   
-  var Node: Type[typings.astTypes.namedTypesMod.namedTypes.Node] = js.native
+  var Node: Type[typings.astTypes.namedTypesMod.namedTypes.Node]
   
-  var Noop: Type[typings.astTypes.namedTypesMod.namedTypes.Noop] = js.native
+  var Noop: Type[typings.astTypes.namedTypesMod.namedTypes.Noop]
   
-  var NullLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.NullLiteral] = js.native
+  var NullLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.NullLiteral]
   
-  var NullLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullLiteralTypeAnnotation] = js.native
+  var NullLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullLiteralTypeAnnotation]
   
-  var NullTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullTypeAnnotation] = js.native
+  var NullTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullTypeAnnotation]
   
-  var NullableTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullableTypeAnnotation] = js.native
+  var NullableTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NullableTypeAnnotation]
   
-  var NumberLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation] = js.native
+  var NumberLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation]
   
-  var NumberTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation] = js.native
+  var NumberTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation]
   
-  var NumericLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.NumericLiteral] = js.native
+  var NumericLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.NumericLiteral]
   
-  var NumericLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation] = js.native
+  var NumericLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation]
   
-  var ObjectExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectExpression] = js.native
+  var ObjectExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectExpression]
   
-  var ObjectMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectMethod] = js.native
+  var ObjectMethod: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectMethod]
   
-  var ObjectPattern: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectPattern] = js.native
+  var ObjectPattern: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectPattern]
   
-  var ObjectProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectProperty] = js.native
+  var ObjectProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectProperty]
   
-  var ObjectTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeAnnotation] = js.native
+  var ObjectTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeAnnotation]
   
-  var ObjectTypeCallProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeCallProperty] = js.native
+  var ObjectTypeCallProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeCallProperty]
   
-  var ObjectTypeIndexer: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeIndexer] = js.native
+  var ObjectTypeIndexer: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeIndexer]
   
-  var ObjectTypeInternalSlot: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeInternalSlot] = js.native
+  var ObjectTypeInternalSlot: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeInternalSlot]
   
-  var ObjectTypeProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeProperty] = js.native
+  var ObjectTypeProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeProperty]
   
-  var ObjectTypeSpreadProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeSpreadProperty] = js.native
+  var ObjectTypeSpreadProperty: Type[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeSpreadProperty]
   
-  var OpaqueType: Type[typings.astTypes.namedTypesMod.namedTypes.OpaqueType] = js.native
+  var OpaqueType: Type[typings.astTypes.namedTypesMod.namedTypes.OpaqueType]
   
-  var OptionalCallExpression: Type[typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression] = js.native
+  var OptionalCallExpression: Type[typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression]
   
-  var OptionalMemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression] = js.native
+  var OptionalMemberExpression: Type[typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression]
   
-  var ParenthesizedExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression] = js.native
+  var ParenthesizedExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression]
   
-  var Pattern: Type[typings.astTypes.namedTypesMod.namedTypes.Pattern] = js.native
+  var Pattern: Type[typings.astTypes.namedTypesMod.namedTypes.Pattern]
   
-  var Position: Type[typings.astTypes.namedTypesMod.namedTypes.Position] = js.native
+  var Position: Type[typings.astTypes.namedTypesMod.namedTypes.Position]
   
-  var Printable: Type[typings.astTypes.namedTypesMod.namedTypes.Printable] = js.native
+  var Printable: Type[typings.astTypes.namedTypesMod.namedTypes.Printable]
   
-  var PrivateName: Type[typings.astTypes.namedTypesMod.namedTypes.PrivateName] = js.native
+  var PrivateName: Type[typings.astTypes.namedTypesMod.namedTypes.PrivateName]
   
-  var Program: Type[typings.astTypes.namedTypesMod.namedTypes.Program] = js.native
+  var Program: Type[typings.astTypes.namedTypesMod.namedTypes.Program]
   
-  var Property: Type[typings.astTypes.namedTypesMod.namedTypes.Property] = js.native
+  var Property: Type[typings.astTypes.namedTypesMod.namedTypes.Property]
   
-  var PropertyPattern: Type[typings.astTypes.namedTypesMod.namedTypes.PropertyPattern] = js.native
+  var PropertyPattern: Type[typings.astTypes.namedTypesMod.namedTypes.PropertyPattern]
   
-  var QualifiedTypeIdentifier: Type[typings.astTypes.namedTypesMod.namedTypes.QualifiedTypeIdentifier] = js.native
+  var QualifiedTypeIdentifier: Type[typings.astTypes.namedTypesMod.namedTypes.QualifiedTypeIdentifier]
   
-  var RegExpLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral] = js.native
+  var RegExpLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral]
   
-  var RestElement: Type[typings.astTypes.namedTypesMod.namedTypes.RestElement] = js.native
+  var RestElement: Type[typings.astTypes.namedTypesMod.namedTypes.RestElement]
   
-  var RestProperty: Type[typings.astTypes.namedTypesMod.namedTypes.RestProperty] = js.native
+  var RestProperty: Type[typings.astTypes.namedTypesMod.namedTypes.RestProperty]
   
-  var ReturnStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ReturnStatement] = js.native
+  var ReturnStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ReturnStatement]
   
-  var SequenceExpression: Type[typings.astTypes.namedTypesMod.namedTypes.SequenceExpression] = js.native
+  var SequenceExpression: Type[typings.astTypes.namedTypesMod.namedTypes.SequenceExpression]
   
-  var SourceLocation: Type[typings.astTypes.namedTypesMod.namedTypes.SourceLocation] = js.native
+  var SourceLocation: Type[typings.astTypes.namedTypesMod.namedTypes.SourceLocation]
   
-  var Specifier: Type[typings.astTypes.namedTypesMod.namedTypes.Specifier] = js.native
+  var Specifier: Type[typings.astTypes.namedTypesMod.namedTypes.Specifier]
   
-  var SpreadElement: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadElement] = js.native
+  var SpreadElement: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadElement]
   
-  var SpreadElementPattern: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadElementPattern] = js.native
+  var SpreadElementPattern: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadElementPattern]
   
-  var SpreadProperty: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadProperty] = js.native
+  var SpreadProperty: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadProperty]
   
-  var SpreadPropertyPattern: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadPropertyPattern] = js.native
+  var SpreadPropertyPattern: Type[typings.astTypes.namedTypesMod.namedTypes.SpreadPropertyPattern]
   
-  var Statement: Type[typings.astTypes.namedTypesMod.namedTypes.Statement] = js.native
+  var Statement: Type[typings.astTypes.namedTypesMod.namedTypes.Statement]
   
-  var StringLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.StringLiteral] = js.native
+  var StringLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.StringLiteral]
   
-  var StringLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation] = js.native
+  var StringLiteralTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation]
   
-  var StringTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation] = js.native
+  var StringTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation]
   
-  var Super: Type[typings.astTypes.namedTypesMod.namedTypes.Super] = js.native
+  var Super: Type[typings.astTypes.namedTypesMod.namedTypes.Super]
   
-  var SwitchCase: Type[typings.astTypes.namedTypesMod.namedTypes.SwitchCase] = js.native
+  var SwitchCase: Type[typings.astTypes.namedTypesMod.namedTypes.SwitchCase]
   
-  var SwitchStatement: Type[typings.astTypes.namedTypesMod.namedTypes.SwitchStatement] = js.native
+  var SwitchStatement: Type[typings.astTypes.namedTypesMod.namedTypes.SwitchStatement]
   
-  var SymbolTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation] = js.native
+  var SymbolTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation]
   
-  var TSAnyKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSAnyKeyword] = js.native
+  var TSAnyKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSAnyKeyword]
   
-  var TSArrayType: Type[typings.astTypes.namedTypesMod.namedTypes.TSArrayType] = js.native
+  var TSArrayType: Type[typings.astTypes.namedTypesMod.namedTypes.TSArrayType]
   
-  var TSAsExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TSAsExpression] = js.native
+  var TSAsExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TSAsExpression]
   
-  var TSBigIntKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSBigIntKeyword] = js.native
+  var TSBigIntKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSBigIntKeyword]
   
-  var TSBooleanKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSBooleanKeyword] = js.native
+  var TSBooleanKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSBooleanKeyword]
   
-  var TSCallSignatureDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSCallSignatureDeclaration] = js.native
+  var TSCallSignatureDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSCallSignatureDeclaration]
   
-  var TSConditionalType: Type[typings.astTypes.namedTypesMod.namedTypes.TSConditionalType] = js.native
+  var TSConditionalType: Type[typings.astTypes.namedTypesMod.namedTypes.TSConditionalType]
   
-  var TSConstructSignatureDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSConstructSignatureDeclaration] = js.native
+  var TSConstructSignatureDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSConstructSignatureDeclaration]
   
-  var TSConstructorType: Type[typings.astTypes.namedTypesMod.namedTypes.TSConstructorType] = js.native
+  var TSConstructorType: Type[typings.astTypes.namedTypesMod.namedTypes.TSConstructorType]
   
-  var TSDeclareFunction: Type[typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction] = js.native
+  var TSDeclareFunction: Type[typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction]
   
-  var TSDeclareMethod: Type[typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod] = js.native
+  var TSDeclareMethod: Type[typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod]
   
-  var TSEnumDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSEnumDeclaration] = js.native
+  var TSEnumDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSEnumDeclaration]
   
-  var TSEnumMember: Type[typings.astTypes.namedTypesMod.namedTypes.TSEnumMember] = js.native
+  var TSEnumMember: Type[typings.astTypes.namedTypesMod.namedTypes.TSEnumMember]
   
-  var TSExportAssignment: Type[typings.astTypes.namedTypesMod.namedTypes.TSExportAssignment] = js.native
+  var TSExportAssignment: Type[typings.astTypes.namedTypesMod.namedTypes.TSExportAssignment]
   
-  var TSExpressionWithTypeArguments: Type[typings.astTypes.namedTypesMod.namedTypes.TSExpressionWithTypeArguments] = js.native
+  var TSExpressionWithTypeArguments: Type[typings.astTypes.namedTypesMod.namedTypes.TSExpressionWithTypeArguments]
   
-  var TSExternalModuleReference: Type[typings.astTypes.namedTypesMod.namedTypes.TSExternalModuleReference] = js.native
+  var TSExternalModuleReference: Type[typings.astTypes.namedTypesMod.namedTypes.TSExternalModuleReference]
   
-  var TSFunctionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSFunctionType] = js.native
+  var TSFunctionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSFunctionType]
   
-  var TSHasOptionalTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TSHasOptionalTypeAnnotation] = js.native
+  var TSHasOptionalTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TSHasOptionalTypeAnnotation]
   
   var TSHasOptionalTypeParameterInstantiation: Type[
     typings.astTypes.namedTypesMod.namedTypes.TSHasOptionalTypeParameterInstantiation
-  ] = js.native
+  ]
   
-  var TSHasOptionalTypeParameters: Type[typings.astTypes.namedTypesMod.namedTypes.TSHasOptionalTypeParameters] = js.native
+  var TSHasOptionalTypeParameters: Type[typings.astTypes.namedTypesMod.namedTypes.TSHasOptionalTypeParameters]
   
-  var TSImportEqualsDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSImportEqualsDeclaration] = js.native
+  var TSImportEqualsDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSImportEqualsDeclaration]
   
-  var TSImportType: Type[typings.astTypes.namedTypesMod.namedTypes.TSImportType] = js.native
+  var TSImportType: Type[typings.astTypes.namedTypesMod.namedTypes.TSImportType]
   
-  var TSIndexSignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSIndexSignature] = js.native
+  var TSIndexSignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSIndexSignature]
   
-  var TSIndexedAccessType: Type[typings.astTypes.namedTypesMod.namedTypes.TSIndexedAccessType] = js.native
+  var TSIndexedAccessType: Type[typings.astTypes.namedTypesMod.namedTypes.TSIndexedAccessType]
   
-  var TSInferType: Type[typings.astTypes.namedTypesMod.namedTypes.TSInferType] = js.native
+  var TSInferType: Type[typings.astTypes.namedTypesMod.namedTypes.TSInferType]
   
-  var TSInterfaceBody: Type[typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody] = js.native
+  var TSInterfaceBody: Type[typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody]
   
-  var TSInterfaceDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration] = js.native
+  var TSInterfaceDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration]
   
-  var TSIntersectionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSIntersectionType] = js.native
+  var TSIntersectionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSIntersectionType]
   
-  var TSLiteralType: Type[typings.astTypes.namedTypesMod.namedTypes.TSLiteralType] = js.native
+  var TSLiteralType: Type[typings.astTypes.namedTypesMod.namedTypes.TSLiteralType]
   
-  var TSMappedType: Type[typings.astTypes.namedTypesMod.namedTypes.TSMappedType] = js.native
+  var TSMappedType: Type[typings.astTypes.namedTypesMod.namedTypes.TSMappedType]
   
-  var TSMethodSignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSMethodSignature] = js.native
+  var TSMethodSignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSMethodSignature]
   
-  var TSModuleBlock: Type[typings.astTypes.namedTypesMod.namedTypes.TSModuleBlock] = js.native
+  var TSModuleBlock: Type[typings.astTypes.namedTypesMod.namedTypes.TSModuleBlock]
   
-  var TSModuleDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSModuleDeclaration] = js.native
+  var TSModuleDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSModuleDeclaration]
   
-  var TSNamedTupleMember: Type[typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember] = js.native
+  var TSNamedTupleMember: Type[typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember]
   
-  var TSNamespaceExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSNamespaceExportDeclaration] = js.native
+  var TSNamespaceExportDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSNamespaceExportDeclaration]
   
-  var TSNeverKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNeverKeyword] = js.native
+  var TSNeverKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNeverKeyword]
   
-  var TSNonNullExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression] = js.native
+  var TSNonNullExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression]
   
-  var TSNullKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNullKeyword] = js.native
+  var TSNullKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNullKeyword]
   
-  var TSNumberKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNumberKeyword] = js.native
+  var TSNumberKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSNumberKeyword]
   
-  var TSObjectKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSObjectKeyword] = js.native
+  var TSObjectKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSObjectKeyword]
   
-  var TSOptionalType: Type[typings.astTypes.namedTypesMod.namedTypes.TSOptionalType] = js.native
+  var TSOptionalType: Type[typings.astTypes.namedTypesMod.namedTypes.TSOptionalType]
   
-  var TSParameterProperty: Type[typings.astTypes.namedTypesMod.namedTypes.TSParameterProperty] = js.native
+  var TSParameterProperty: Type[typings.astTypes.namedTypesMod.namedTypes.TSParameterProperty]
   
-  var TSParenthesizedType: Type[typings.astTypes.namedTypesMod.namedTypes.TSParenthesizedType] = js.native
+  var TSParenthesizedType: Type[typings.astTypes.namedTypesMod.namedTypes.TSParenthesizedType]
   
-  var TSPropertySignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSPropertySignature] = js.native
+  var TSPropertySignature: Type[typings.astTypes.namedTypesMod.namedTypes.TSPropertySignature]
   
-  var TSQualifiedName: Type[typings.astTypes.namedTypesMod.namedTypes.TSQualifiedName] = js.native
+  var TSQualifiedName: Type[typings.astTypes.namedTypesMod.namedTypes.TSQualifiedName]
   
-  var TSRestType: Type[typings.astTypes.namedTypesMod.namedTypes.TSRestType] = js.native
+  var TSRestType: Type[typings.astTypes.namedTypesMod.namedTypes.TSRestType]
   
-  var TSStringKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSStringKeyword] = js.native
+  var TSStringKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSStringKeyword]
   
-  var TSSymbolKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSSymbolKeyword] = js.native
+  var TSSymbolKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSSymbolKeyword]
   
-  var TSThisType: Type[typings.astTypes.namedTypesMod.namedTypes.TSThisType] = js.native
+  var TSThisType: Type[typings.astTypes.namedTypesMod.namedTypes.TSThisType]
   
-  var TSTupleType: Type[typings.astTypes.namedTypesMod.namedTypes.TSTupleType] = js.native
+  var TSTupleType: Type[typings.astTypes.namedTypesMod.namedTypes.TSTupleType]
   
-  var TSType: Type[typings.astTypes.namedTypesMod.namedTypes.TSType] = js.native
+  var TSType: Type[typings.astTypes.namedTypesMod.namedTypes.TSType]
   
-  var TSTypeAliasDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAliasDeclaration] = js.native
+  var TSTypeAliasDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAliasDeclaration]
   
-  var TSTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAnnotation] = js.native
+  var TSTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAnnotation]
   
-  var TSTypeAssertion: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion] = js.native
+  var TSTypeAssertion: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion]
   
-  var TSTypeLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeLiteral] = js.native
+  var TSTypeLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeLiteral]
   
-  var TSTypeOperator: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeOperator] = js.native
+  var TSTypeOperator: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeOperator]
   
-  var TSTypeParameter: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter] = js.native
+  var TSTypeParameter: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter]
   
-  var TSTypeParameterDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration] = js.native
+  var TSTypeParameterDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration]
   
-  var TSTypeParameterInstantiation: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterInstantiation] = js.native
+  var TSTypeParameterInstantiation: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterInstantiation]
   
-  var TSTypePredicate: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypePredicate] = js.native
+  var TSTypePredicate: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypePredicate]
   
-  var TSTypeQuery: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeQuery] = js.native
+  var TSTypeQuery: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeQuery]
   
-  var TSTypeReference: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeReference] = js.native
+  var TSTypeReference: Type[typings.astTypes.namedTypesMod.namedTypes.TSTypeReference]
   
-  var TSUndefinedKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSUndefinedKeyword] = js.native
+  var TSUndefinedKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSUndefinedKeyword]
   
-  var TSUnionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSUnionType] = js.native
+  var TSUnionType: Type[typings.astTypes.namedTypesMod.namedTypes.TSUnionType]
   
-  var TSUnknownKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSUnknownKeyword] = js.native
+  var TSUnknownKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSUnknownKeyword]
   
-  var TSVoidKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSVoidKeyword] = js.native
+  var TSVoidKeyword: Type[typings.astTypes.namedTypesMod.namedTypes.TSVoidKeyword]
   
-  var TaggedTemplateExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression] = js.native
+  var TaggedTemplateExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression]
   
-  var TemplateElement: Type[typings.astTypes.namedTypesMod.namedTypes.TemplateElement] = js.native
+  var TemplateElement: Type[typings.astTypes.namedTypesMod.namedTypes.TemplateElement]
   
-  var TemplateLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral] = js.native
+  var TemplateLiteral: Type[typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral]
   
-  var ThisExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ThisExpression] = js.native
+  var ThisExpression: Type[typings.astTypes.namedTypesMod.namedTypes.ThisExpression]
   
-  var ThisTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ThisTypeAnnotation] = js.native
+  var ThisTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.ThisTypeAnnotation]
   
-  var ThrowStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ThrowStatement] = js.native
+  var ThrowStatement: Type[typings.astTypes.namedTypesMod.namedTypes.ThrowStatement]
   
-  var TryStatement: Type[typings.astTypes.namedTypesMod.namedTypes.TryStatement] = js.native
+  var TryStatement: Type[typings.astTypes.namedTypesMod.namedTypes.TryStatement]
   
-  var TupleTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation] = js.native
+  var TupleTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation]
   
-  var TypeAlias: Type[typings.astTypes.namedTypesMod.namedTypes.TypeAlias] = js.native
+  var TypeAlias: Type[typings.astTypes.namedTypesMod.namedTypes.TypeAlias]
   
-  var TypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeAnnotation] = js.native
+  var TypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeAnnotation]
   
-  var TypeCastExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression] = js.native
+  var TypeCastExpression: Type[typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression]
   
-  var TypeParameter: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameter] = js.native
+  var TypeParameter: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameter]
   
-  var TypeParameterDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameterDeclaration] = js.native
+  var TypeParameterDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameterDeclaration]
   
-  var TypeParameterInstantiation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation] = js.native
+  var TypeParameterInstantiation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation]
   
-  var TypeofTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeofTypeAnnotation] = js.native
+  var TypeofTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.TypeofTypeAnnotation]
   
-  var UnaryExpression: Type[typings.astTypes.namedTypesMod.namedTypes.UnaryExpression] = js.native
+  var UnaryExpression: Type[typings.astTypes.namedTypesMod.namedTypes.UnaryExpression]
   
-  var UnionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.UnionTypeAnnotation] = js.native
+  var UnionTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.UnionTypeAnnotation]
   
-  var UpdateExpression: Type[typings.astTypes.namedTypesMod.namedTypes.UpdateExpression] = js.native
+  var UpdateExpression: Type[typings.astTypes.namedTypesMod.namedTypes.UpdateExpression]
   
-  var VariableDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.VariableDeclaration] = js.native
+  var VariableDeclaration: Type[typings.astTypes.namedTypesMod.namedTypes.VariableDeclaration]
   
-  var VariableDeclarator: Type[typings.astTypes.namedTypesMod.namedTypes.VariableDeclarator] = js.native
+  var VariableDeclarator: Type[typings.astTypes.namedTypesMod.namedTypes.VariableDeclarator]
   
-  var Variance: Type[typings.astTypes.namedTypesMod.namedTypes.Variance] = js.native
+  var Variance: Type[typings.astTypes.namedTypesMod.namedTypes.Variance]
   
-  var VoidTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation] = js.native
+  var VoidTypeAnnotation: Type[typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation]
   
-  var WhileStatement: Type[typings.astTypes.namedTypesMod.namedTypes.WhileStatement] = js.native
+  var WhileStatement: Type[typings.astTypes.namedTypesMod.namedTypes.WhileStatement]
   
-  var WithStatement: Type[typings.astTypes.namedTypesMod.namedTypes.WithStatement] = js.native
+  var WithStatement: Type[typings.astTypes.namedTypesMod.namedTypes.WithStatement]
   
-  var YieldExpression: Type[typings.astTypes.namedTypesMod.namedTypes.YieldExpression] = js.native
+  var YieldExpression: Type[typings.astTypes.namedTypesMod.namedTypes.YieldExpression]
 }
 object NamedTypes_ {
   

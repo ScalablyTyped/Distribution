@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceTypeInstanceDisk extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GetInstanceTypeInstanceDisk {
   

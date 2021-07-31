@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ngStomp.ngStomp.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,7 +33,7 @@ trait ngStomp extends StObject {
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
-    headers: js.UndefOr[scala.Nothing],
+    headers: Unit,
     scope: js.Any
   ): js.Any = js.native
   def subscribe(

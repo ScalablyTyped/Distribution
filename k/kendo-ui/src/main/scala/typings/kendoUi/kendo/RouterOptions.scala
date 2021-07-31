@@ -2,27 +2,25 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ RouterChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ RouterChangeEvent, Unit]] = js.undefined
   
-  var hashBang: js.UndefOr[Boolean] = js.native
+  var hashBang: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ RouterEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ RouterEvent, Unit]] = js.undefined
   
-  var pushState: js.UndefOr[Boolean] = js.native
+  var pushState: js.UndefOr[Boolean] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var routeMissing: js.UndefOr[js.Function1[/* e */ RouterRouteMissingEvent, Unit]] = js.native
+  var routeMissing: js.UndefOr[js.Function1[/* e */ RouterRouteMissingEvent, Unit]] = js.undefined
   
-  var same: js.UndefOr[js.Function1[/* e */ RouterEvent, Unit]] = js.native
+  var same: js.UndefOr[js.Function1[/* e */ RouterEvent, Unit]] = js.undefined
 }
 object RouterOptions {
   

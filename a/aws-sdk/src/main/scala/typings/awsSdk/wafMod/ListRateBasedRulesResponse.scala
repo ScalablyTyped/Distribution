@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRateBasedRulesResponse extends StObject {
   
   /**
     * If you have more Rules than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more Rules, submit another ListRateBasedRules request, and specify the NextMarker value from the response in the NextMarker value in the next request.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.undefined
   
   /**
     * An array of RuleSummary objects.
     */
-  var Rules: js.UndefOr[RuleSummaries] = js.native
+  var Rules: js.UndefOr[RuleSummaries] = js.undefined
 }
 object ListRateBasedRulesResponse {
   

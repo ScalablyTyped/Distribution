@@ -8,25 +8,23 @@ import typings.retry.mod.OperationOptions
 import typings.websocket.mod.IClientConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientConfig extends StObject {
     
-    var clientConfig: js.UndefOr[IClientConfig] = js.native
+    var clientConfig: js.UndefOr[IClientConfig] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var protocols: js.UndefOr[String | js.Array[String]] = js.native
+    var protocols: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var requestOptions: js.UndefOr[js.Object] = js.native
+    var requestOptions: js.UndefOr[js.Object] = js.undefined
     
-    var retry: js.UndefOr[OperationOptions] = js.native
+    var retry: js.UndefOr[OperationOptions] = js.undefined
   }
   object ClientConfig {
     
@@ -80,22 +78,23 @@ object anon {
     }
   }
   
-  @js.native
-  trait Data extends ProtooResponse {
+  trait Data
+    extends StObject
+       with ProtooResponse {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: Double = js.native
+    var id: Double
     
-    var ok: `true` = js.native
+    var ok: `true`
     
-    var response: `true` = js.native
+    var response: `true`
   }
   object Data {
     
     @scala.inline
-    def apply(data: js.Any, id: Double, ok: `true`, response: `true`): Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    def apply(data: js.Any, id: Double): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = true, response = true)
       __obj.asInstanceOf[Data]
     }
     
@@ -116,24 +115,25 @@ object anon {
     }
   }
   
-  @js.native
-  trait ErrorCode extends ProtooResponse {
+  trait ErrorCode
+    extends StObject
+       with ProtooResponse {
     
-    var errorCode: Double = js.native
+    var errorCode: Double
     
-    var errorReason: String = js.native
+    var errorReason: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var ok: `false` = js.native
+    var ok: `false`
     
-    var response: `true` = js.native
+    var response: `true`
   }
   object ErrorCode {
     
     @scala.inline
-    def apply(errorCode: Double, errorReason: String, id: Double, ok: `false`, response: `true`): ErrorCode = {
-      val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorReason = errorReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    def apply(errorCode: Double, errorReason: String, id: Double): ErrorCode = {
+      val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorReason = errorReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = false, response = true)
       __obj.asInstanceOf[ErrorCode]
     }
     

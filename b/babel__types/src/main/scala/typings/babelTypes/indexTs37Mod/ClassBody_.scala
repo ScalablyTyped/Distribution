@@ -3,20 +3,19 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ClassBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassBody_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   var body: js.Array[
     ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
-  ] = js.native
+  ]
   
   @JSName("type")
-  var type_ClassBody_ : ClassBody = js.native
+  var type_ClassBody_ : ClassBody
 }
 object ClassBody_ {
   
@@ -24,11 +23,10 @@ object ClassBody_ {
   def apply(
     body: js.Array[
       ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
-    ],
-    `type`: ClassBody
+    ]
   ): ClassBody_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ClassBody")
     __obj.asInstanceOf[ClassBody_]
   }
   

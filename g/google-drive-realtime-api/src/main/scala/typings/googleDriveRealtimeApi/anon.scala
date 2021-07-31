@@ -2,16 +2,14 @@ package typings.googleDriveRealtimeApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FileIds extends StObject {
     
     // string containing one or more file ids separated by spaces.
-    var fileIds: String = js.native
+    var fileIds: String
   }
   object FileIds {
     
@@ -29,14 +27,13 @@ object anon {
     }
   }
   
-  @js.native
   trait SHIFTAFTERDELETE extends StObject {
     
-    var SHIFT_AFTER_DELETE: String = js.native
+    var SHIFT_AFTER_DELETE: String
     
-    var SHIFT_BEFORE_DELETE: String = js.native
+    var SHIFT_BEFORE_DELETE: String
     
-    var SHIFT_TO_INVALID: String = js.native
+    var SHIFT_TO_INVALID: String
   }
   object SHIFTAFTERDELETE {
     

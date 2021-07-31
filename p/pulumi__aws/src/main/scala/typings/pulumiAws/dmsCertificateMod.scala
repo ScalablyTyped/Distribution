@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dmsCertificateMod {
@@ -48,6 +47,10 @@ object dmsCertificateMod {
   /* static members */
   object Certificate {
     
+    @JSImport("@pulumi/aws/dms/certificate", "Certificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Certificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object dmsCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dms/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Certificate = js.native
-    @JSImport("@pulumi/aws/dms/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Certificate = js.native
-    @JSImport("@pulumi/aws/dms/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = js.native
-    @JSImport("@pulumi/aws/dms/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dms/certificate", "Certificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean]
   }
   
-  @js.native
   trait CertificateArgs extends StObject {
     
     /**
       * The certificate identifier.
       */
-    val certificateId: Input[String] = js.native
+    val certificateId: Input[String]
     
     /**
       * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
       */
-    val certificatePem: js.UndefOr[Input[String]] = js.native
+    val certificatePem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
       */
-    val certificateWallet: js.UndefOr[Input[String]] = js.native
+    val certificateWallet: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateArgs {
     
@@ -125,28 +122,27 @@ object dmsCertificateMod {
     }
   }
   
-  @js.native
   trait CertificateState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) for the certificate.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate identifier.
       */
-    val certificateId: js.UndefOr[Input[String]] = js.native
+    val certificateId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
       */
-    val certificatePem: js.UndefOr[Input[String]] = js.native
+    val certificatePem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
       */
-    val certificateWallet: js.UndefOr[Input[String]] = js.native
+    val certificateWallet: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateState {
     

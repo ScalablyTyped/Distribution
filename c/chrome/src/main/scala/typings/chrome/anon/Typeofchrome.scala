@@ -2,13 +2,11 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofchrome extends StObject {
   
-  val _debugger: TypeofDebugger = js.native
+  val _debugger: TypeofDebugger
   
   ////////////////////
   // Accessibility Features
@@ -19,7 +17,7 @@ trait Typeofchrome extends StObject {
     * Permissions: "accessibilityFeatures.read"
     * Important: This API works only on Chrome OS.
     */
-  val accessibilityFeatures: TypeofaccessibilityFeatur = js.native
+  val accessibilityFeatures: TypeofaccessibilityFeatur
   
   ////////////////////
   // Alarms
@@ -29,7 +27,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 22.
     * Permissions:  "alarms"
     */
-  val alarms: Typeofalarms = js.native
+  val alarms: Typeofalarms
   
   ////////////////////
   // Bookmarks
@@ -39,7 +37,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 5.
     * Permissions:  "bookmarks"
     */
-  val bookmarks: Typeofbookmarks = js.native
+  val bookmarks: Typeofbookmarks
   
   ////////////////////
   // Browser
@@ -48,7 +46,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.browser API to interact with the Chrome browser associated with
     * the current application and Chrome profile.
     */
-  val browser: Typeofbrowser = js.native
+  val browser: Typeofbrowser
   
   ////////////////////
   // Browser Action
@@ -58,7 +56,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 5.
     * Manifest:  "browser_action": {...}
     */
-  val browserAction: TypeofbrowserAction = js.native
+  val browserAction: TypeofbrowserAction
   
   ////////////////////
   // Browsing Data
@@ -68,9 +66,9 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 19.
     * Permissions:  "browsingData"
     */
-  val browsingData: TypeofbrowsingData = js.native
+  val browsingData: TypeofbrowsingData
   
-  val cast: Typeofcast = js.native
+  val cast: Typeofcast
   
   ////////////////////
   // Commands
@@ -80,7 +78,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 25.
     * Manifest:  "commands": {...}
     */
-  val commands: Typeofcommands = js.native
+  val commands: Typeofcommands
   
   ////////////////////
   // Content Settings
@@ -90,7 +88,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 16.
     * Permissions:  "contentSettings"
     */
-  val contentSettings: TypeofcontentSettings = js.native
+  val contentSettings: TypeofcontentSettings
   
   ////////////////////
   // Context Menus
@@ -100,7 +98,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 6.
     * Permissions:  "contextMenus"
     */
-  val contextMenus: TypeofcontextMenus = js.native
+  val contextMenus: TypeofcontextMenus
   
   ////////////////////
   // Cookies
@@ -110,7 +108,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 6.
     * Permissions:  "cookies", host permissions
     */
-  val cookies: Typeofcookies = js.native
+  val cookies: Typeofcookies
   
   ////////////////////
   // Declarative Content
@@ -120,12 +118,12 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 33.
     * Permissions:  "declarativeContent"
     */
-  val declarativeContent: TypeofdeclarativeContent = js.native
+  val declarativeContent: TypeofdeclarativeContent
   
   ////////////////////
   // Declarative Web Request
   ////////////////////
-  val declarativeWebRequest: TypeofdeclarativeWebReque = js.native
+  val declarativeWebRequest: TypeofdeclarativeWebReque
   
   ////////////////////
   // DesktopCapture
@@ -135,9 +133,9 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 34.
     * Permissions:  "desktopCapture"
     */
-  val desktopCapture: TypeofdesktopCapture = js.native
+  val desktopCapture: TypeofdesktopCapture
   
-  val devtools: Typeofdevtools = js.native
+  val devtools: Typeofdevtools
   
   ////////////////////
   // Document Scan
@@ -148,7 +146,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "documentScan"
     * Important: This API works only on Chrome OS.
     */
-  val documentScan: TypeofdocumentScan = js.native
+  val documentScan: TypeofdocumentScan
   
   ////////////////////
   // Dev Tools - Downloads
@@ -158,9 +156,9 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 31.
     * Permissions:  "downloads"
     */
-  val downloads: Typeofdownloads = js.native
+  val downloads: Typeofdownloads
   
-  val enterprise: Typeofenterprise = js.native
+  val enterprise: Typeofenterprise
   
   ////////////////////
   // Events
@@ -169,7 +167,7 @@ trait Typeofchrome extends StObject {
     * The chrome.events namespace contains common types used by APIs dispatching events to notify you when something interesting happens.
     * Availability: Since Chrome 21.
     */
-  val events: js.Any = js.native
+  val events: js.Any
   
   ////////////////////
   // Extension
@@ -178,7 +176,7 @@ trait Typeofchrome extends StObject {
     * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
     * Availability: Since Chrome 5.
     */
-  val extension: Typeofextension = js.native
+  val `extension`: Typeofextension
   
   ////////////////////
   // File Browser Handler
@@ -189,7 +187,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "fileBrowserHandler"
     * Important: This API works only on Chrome OS.
     */
-  val fileBrowserHandler: TypeoffileBrowserHandler = js.native
+  val fileBrowserHandler: TypeoffileBrowserHandler
   
   ////////////////////
   // File System Provider
@@ -200,7 +198,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "fileSystemProvider"
     * Important: This API works only on Chrome OS.
     */
-  val fileSystemProvider: TypeoffileSystemProvider = js.native
+  val fileSystemProvider: TypeoffileSystemProvider
   
   ////////////////////
   // Font Settings
@@ -210,7 +208,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 22.
     * Permissions:  "fontSettings"
     */
-  val fontSettings: TypeoffontSettings = js.native
+  val fontSettings: TypeoffontSettings
   
   ////////////////////
   // Google Cloud Messaging
@@ -220,7 +218,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 35.
     * Permissions:  "gcm"
     */
-  val gcm: Typeofgcm = js.native
+  val gcm: Typeofgcm
   
   ////////////////////
   // History
@@ -230,7 +228,7 @@ trait Typeofchrome extends StObject {
     * Availability: Since Chrome 5.
     * Permissions:  "history"
     */
-  val history: Typeofhistory = js.native
+  val history: Typeofhistory
   
   ////////////////////
   // i18n
@@ -239,7 +237,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.i18n infrastructure to implement internationalization across your whole app or extension.
     * @since Chrome 5.
     */
-  val i18n: Typeofi18n = js.native
+  val i18n: Typeofi18n
   
   ////////////////////
   // Identity
@@ -249,7 +247,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "identity"
     * @since Chrome 29.
     */
-  val identity: Typeofidentity = js.native
+  val identity: Typeofidentity
   
   ////////////////////
   // Idle
@@ -259,9 +257,9 @@ trait Typeofchrome extends StObject {
     * Permissions:  "idle"
     * @since Chrome 6.
     */
-  val idle: Typeofidle = js.native
+  val idle: Typeofidle
   
-  val input: Typeofinput = js.native
+  val input: Typeofinput
   
   ////////////////////
   // LoginState
@@ -272,7 +270,7 @@ trait Typeofchrome extends StObject {
     * @since Chrome 78.
     * Important: This API works only on Chrome OS.
     */
-  val loginState: TypeofloginState = js.native
+  val loginState: TypeofloginState
   
   ////////////////////
   // Management
@@ -282,9 +280,9 @@ trait Typeofchrome extends StObject {
     * Permissions:  "management"
     * @since Chrome 8.
     */
-  val management: Typeofmanagement = js.native
+  val management: Typeofmanagement
   
-  val networking: Typeofnetworking = js.native
+  val networking: Typeofnetworking
   
   ////////////////////
   // Notifications
@@ -295,7 +293,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "notifications"
     * @since Chrome 28.
     */
-  val notifications: Typeofnotifications = js.native
+  val notifications: Typeofnotifications
   
   ////////////////////
   // Omnibox
@@ -305,7 +303,7 @@ trait Typeofchrome extends StObject {
     * Manifest:  "omnibox": {...}
     * @since Chrome 9.
     */
-  val omnibox: Typeofomnibox = js.native
+  val omnibox: Typeofomnibox
   
   ////////////////////
   // Page Action
@@ -315,7 +313,7 @@ trait Typeofchrome extends StObject {
     * Manifest:  "page_action": {...}
     * @since Chrome 5.
     */
-  val pageAction: TypeofpageAction = js.native
+  val pageAction: TypeofpageAction
   
   ////////////////////
   // Page Capture
@@ -325,7 +323,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "pageCapture"
     * @since Chrome 18.
     */
-  val pageCapture: TypeofpageCapture = js.native
+  val pageCapture: TypeofpageCapture
   
   ////////////////////
   // Permissions
@@ -334,7 +332,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
     * @since Chrome 16.
     */
-  val permissions: Typeofpermissions = js.native
+  val permissions: Typeofpermissions
   
   ////////////////////
   // Platform Keys
@@ -345,7 +343,7 @@ trait Typeofchrome extends StObject {
     * Important: This API works only on Chrome OS.
     * @since Chrome 45.
     */
-  val platformKeys: TypeofplatformKeysGetKeyPair = js.native
+  val platformKeys: TypeofplatformKeysGetKeyPair
   
   ////////////////////
   // Power
@@ -355,7 +353,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "power"
     * @since Chrome 27.
     */
-  val power: Typeofpower = js.native
+  val power: Typeofpower
   
   ////////////////////
   // Printer Provider
@@ -365,7 +363,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "printerProvider"
     * @since Chrome 44.
     */
-  val printerProvider: TypeofprinterProvider = js.native
+  val printerProvider: TypeofprinterProvider
   
   ////////////////////
   // Privacy
@@ -376,7 +374,7 @@ trait Typeofchrome extends StObject {
     * The Chrome Privacy Whitepaper gives background detail regarding the features which this API can control.
     * @since Chrome 18.
     */
-  val privacy: Typeofprivacy = js.native
+  val privacy: Typeofprivacy
   
   ////////////////////
   // Proxy
@@ -386,7 +384,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "proxy"
     * @since Chrome 13.
     */
-  val proxy: Typeofproxy = js.native
+  val proxy: Typeofproxy
   
   ////////////////////
   // Runtime
@@ -395,12 +393,12 @@ trait Typeofchrome extends StObject {
     * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
     * @since Chrome 22
     */
-  val runtime: Typeofruntime = js.native
+  val runtime: Typeofruntime
   
   ////////////////////
   // Script Badge
   ////////////////////
-  val scriptBadge: TypeofscriptBadge = js.native
+  val scriptBadge: TypeofscriptBadge
   
   ////////////////////
   // Serial
@@ -411,7 +409,7 @@ trait Typeofchrome extends StObject {
     * Since: Chrome 29
     * Important: This API works only on Chrome OS.
     */
-  val serial: Typeofserial = js.native
+  val serial: Typeofserial
   
   ////////////////////
   // Sessions
@@ -421,12 +419,12 @@ trait Typeofchrome extends StObject {
     * Permissions:  "sessions"
     * @since Chrome 37.
     */
-  val sessions: Typeofsessions = js.native
+  val sessions: Typeofsessions
   
   ////////////////////
   // Socket
   ////////////////////
-  val socket: Typeofsocket = js.native
+  val socket: Typeofsocket
   
   ////////////////////
   // Storage
@@ -436,9 +434,9 @@ trait Typeofchrome extends StObject {
     * Permissions:  "storage"
     * @since Chrome 20.
     */
-  val storage: Typeofstorage = js.native
+  val storage: Typeofstorage
   
-  val system: Typeofsystem = js.native
+  val system: Typeofsystem
   
   ////////////////////
   // TabCapture
@@ -448,7 +446,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "tabCapture"
     * @since Chrome 31.
     */
-  val tabCapture: TypeoftabCapture = js.native
+  val tabCapture: TypeoftabCapture
   
   ////////////////////
   // Tabs
@@ -458,7 +456,7 @@ trait Typeofchrome extends StObject {
     * Permissions: The majority of the chrome.tabs API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab.
     * @since Chrome 5.
     */
-  val tabs: Typeoftabs = js.native
+  val tabs: Typeoftabs
   
   ////////////////////
   // Top Sites
@@ -468,7 +466,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "topSites"
     * @since Chrome 19.
     */
-  val topSites: TypeoftopSites = js.native
+  val topSites: TypeoftopSites
   
   ////////////////////
   // Text to Speech
@@ -478,7 +476,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "tts"
     * @since Chrome 14.
     */
-  val tts: Typeoftts = js.native
+  val tts: Typeoftts
   
   ////////////////////
   // Text to Speech Engine
@@ -488,7 +486,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "ttsEngine"
     * @since Chrome 14.
     */
-  val ttsEngine: TypeofttsEngine = js.native
+  val ttsEngine: TypeofttsEngine
   
   ////////////////////
   // Types
@@ -497,7 +495,7 @@ trait Typeofchrome extends StObject {
     * The chrome.types API contains type declarations for Chrome.
     * @since Chrome 13.
     */
-  val types: js.Any = js.native
+  val types: js.Any
   
   ////////////////////
   // VPN Provider
@@ -508,7 +506,7 @@ trait Typeofchrome extends StObject {
     * Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val vpnProvider: TypeofvpnProvider = js.native
+  val vpnProvider: TypeofvpnProvider
   
   ////////////////////
   // Wallpaper
@@ -519,7 +517,7 @@ trait Typeofchrome extends StObject {
     * Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val wallpaper: Typeofwallpaper = js.native
+  val wallpaper: Typeofwallpaper
   
   ////////////////////
   // Web Navigation
@@ -529,7 +527,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "webNavigation"
     * @since Chrome 16.
     */
-  val webNavigation: TypeofwebNavigation = js.native
+  val webNavigation: TypeofwebNavigation
   
   ////////////////////
   // Web Request
@@ -539,7 +537,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  "webRequest", host permissions
     * @since Chrome 17.
     */
-  val webRequest: TypeofwebRequest = js.native
+  val webRequest: TypeofwebRequest
   
   ////////////////////
   // Web Store
@@ -548,7 +546,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.webstore API to initiate app and extension installations "inline" from your site.
     * @since Chrome 15.
     */
-  val webstore: Typeofwebstore = js.native
+  val webstore: Typeofwebstore
   
   ////////////////////
   // Windows
@@ -558,7 +556,7 @@ trait Typeofchrome extends StObject {
     * Permissions: The chrome.windows API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab objects.
     * @since Chrome 5.
     */
-  val windows: Typeofwindows = js.native
+  val windows: Typeofwindows
 }
 object Typeofchrome {
   
@@ -584,7 +582,7 @@ object Typeofchrome {
     downloads: Typeofdownloads,
     enterprise: Typeofenterprise,
     events: js.Any,
-    extension: Typeofextension,
+    `extension`: Typeofextension,
     fileBrowserHandler: TypeoffileBrowserHandler,
     fileSystemProvider: TypeoffileSystemProvider,
     fontSettings: TypeoffontSettings,
@@ -627,7 +625,8 @@ object Typeofchrome {
     webstore: Typeofwebstore,
     windows: Typeofwindows
   ): Typeofchrome = {
-    val __obj = js.Dynamic.literal(_debugger = _debugger.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], declarativeWebRequest = declarativeWebRequest.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], loginState = loginState.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scriptBadge = scriptBadge.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webstore = webstore.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_debugger = _debugger.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], declarativeWebRequest = declarativeWebRequest.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], loginState = loginState.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scriptBadge = scriptBadge.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webstore = webstore.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofchrome]
   }
   

@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSchemeForPolyline
-  extends Object
+  extends StObject
+     with Object
      with SizeScheme {
   
   /**
@@ -17,49 +16,49 @@ trait SizeSchemeForPolyline
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The maximum width of a line symbol in pixels or points representing features with high data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
   /**
     * The minimum width of a line symbol in pixels or points representing features with low data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var minWidth: Double = js.native
+  var minWidth: Double
   
   /**
     * The color of the line symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The width of the line symbol in pixels or points used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var noDataWidth: Double = js.native
+  var noDataWidth: Double
   
   /**
     * The opacity of the line symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * The default width of the line symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolyline)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object SizeSchemeForPolyline {
   

@@ -3,22 +3,22 @@ package typings.awsSdkClientKmsNode
 import typings.awsSdkClientKmsNode.importKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesExpiredImportTokenExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExpiredImportTokenExceptionDetails> * / any */ @js.native
-  trait ExpiredImportTokenException extends ImportKeyMaterialExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExpiredImportTokenExceptionDetails> * / any */ trait ExpiredImportTokenException
+    extends StObject
+       with ImportKeyMaterialExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException
   }
   object ExpiredImportTokenException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException): ExpiredImportTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ExpiredImportTokenException = {
+      val __obj = js.Dynamic.literal(name = "ExpiredImportTokenException")
       __obj.asInstanceOf[ExpiredImportTokenException]
     }
     
@@ -30,13 +30,12 @@ object typesExpiredImportTokenExceptionMod {
     }
   }
   
-  @js.native
   trait ExpiredImportTokenExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ExpiredImportTokenExceptionDetails {
     

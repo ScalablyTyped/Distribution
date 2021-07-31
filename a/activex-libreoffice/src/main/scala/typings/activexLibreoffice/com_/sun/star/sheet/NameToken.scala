@@ -2,16 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the information regarding named tokens */
-@js.native
 trait NameToken extends StObject {
   
-  var Index: Double = js.native
+  var Index: Double
   
-  var Sheet: Double = js.native
+  var Sheet: Double
 }
 object NameToken {
   

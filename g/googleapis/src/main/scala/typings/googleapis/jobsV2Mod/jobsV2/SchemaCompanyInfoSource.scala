@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,32 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for example, a Google+ business page or a Google Maps business page. For
   * unsupported types, use `unknown_type_id`.
   */
-@js.native
 trait SchemaCompanyInfoSource extends StObject {
   
   /**
     * Optional.  The Google&#39;s Knowledge Graph value for the employer&#39;s
     * company.
     */
-  var freebaseMid: js.UndefOr[String] = js.native
+  var freebaseMid: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The numeric identifier for the employer&#39;s Google+ business
     * page.
     */
-  var gplusId: js.UndefOr[String] = js.native
+  var gplusId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The numeric identifier for the employer&#39;s headquarters on
     * Google Maps, namely, the Google Maps CID (cell id).
     */
-  var mapsCid: js.UndefOr[String] = js.native
+  var mapsCid: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A Google identifier that does not match any of the other
     * types.
     */
-  var unknownTypeId: js.UndefOr[String] = js.native
+  var unknownTypeId: js.UndefOr[String] = js.undefined
 }
 object SchemaCompanyInfoSource {
   

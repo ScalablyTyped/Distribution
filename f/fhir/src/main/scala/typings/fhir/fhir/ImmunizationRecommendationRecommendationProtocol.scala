@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Protocol used by recommendation
   */
-@js.native
-trait ImmunizationRecommendationRecommendationProtocol extends BackboneElement {
+trait ImmunizationRecommendationRecommendationProtocol
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'doseSequence'.
     */
-  var _doseSequence: js.UndefOr[Element] = js.native
+  var _doseSequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'series'.
     */
-  var _series: js.UndefOr[Element] = js.native
+  var _series: js.UndefOr[Element] = js.undefined
   
   /**
     * Who is responsible for protocol
     */
-  var authority: js.UndefOr[Reference] = js.native
+  var authority: js.UndefOr[Reference] = js.undefined
   
   /**
     * Protocol details
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Dose number within sequence
     */
-  var doseSequence: js.UndefOr[positiveInt] = js.native
+  var doseSequence: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Name of vaccination series
     */
-  var series: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.undefined
 }
 object ImmunizationRecommendationRecommendationProtocol {
   

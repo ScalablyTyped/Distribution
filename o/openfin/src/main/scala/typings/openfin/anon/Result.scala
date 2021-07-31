@@ -5,13 +5,11 @@ import typings.openfin.openfinStrings.failed
 import typings.openfin.openfinStrings.terminated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var result: clean | terminated | failed = js.native
+  var result: clean | terminated | failed
 }
 object Result {
   

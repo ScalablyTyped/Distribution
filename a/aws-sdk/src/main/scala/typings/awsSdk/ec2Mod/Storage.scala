@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Storage extends StObject {
   
   /**
     * An Amazon S3 storage location.
     */
-  var S3: js.UndefOr[S3Storage] = js.native
+  var S3: js.UndefOr[S3Storage] = js.undefined
 }
 object Storage {
   

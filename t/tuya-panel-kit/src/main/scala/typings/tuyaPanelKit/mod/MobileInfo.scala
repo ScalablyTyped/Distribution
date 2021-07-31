@@ -2,45 +2,43 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileInfo extends StObject {
   
-  var appRnVersion: String = js.native
+  var appRnVersion: String
   
-  var appVersion: String = js.native
+  var appVersion: String
   
-  var celsius: Double = js.native
+  var celsius: Double
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var ele: String = js.native
+  var ele: String
   
-  var iconfontNameMap: String = js.native
+  var iconfontNameMap: String
   
-  var lang: String = js.native
+  var lang: String
   
-  var lat: String = js.native
+  var lat: String
   
-  var lon: String = js.native
+  var lon: String
   
-  var os: String = js.native
+  var os: String
   
-  var osSystem: String = js.native
+  var osSystem: String
   
-  var phoneCode: String = js.native
+  var phoneCode: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var service: MobileService = js.native
+  var service: MobileService
   
-  var t: Double = js.native
+  var t: Double
   
-  var timezoneId: String = js.native
+  var timezoneId: String
   
-  var ttid: String = js.native
+  var ttid: String
 }
 object MobileInfo {
   

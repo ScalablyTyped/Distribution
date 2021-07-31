@@ -2,21 +2,19 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingOptions extends StObject {
   
   /**
     * Print query execution time in milliseconds when logging SQL.
     */
-  var benchmark: js.UndefOr[Boolean] = js.native
+  var benchmark: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
 }
 object LoggingOptions {
   

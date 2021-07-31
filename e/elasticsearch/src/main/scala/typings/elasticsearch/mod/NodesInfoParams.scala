@@ -2,21 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesInfoParams extends GenericParams {
+trait NodesInfoParams
+  extends StObject
+     with GenericParams {
   
-  var flatSettings: js.UndefOr[Boolean] = js.native
+  var flatSettings: js.UndefOr[Boolean] = js.undefined
   
-  var human: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.undefined
   
-  var metric: js.UndefOr[NameList] = js.native
+  var metric: js.UndefOr[NameList] = js.undefined
   
-  var nodeId: NameList = js.native
+  var nodeId: NameList
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
 object NodesInfoParams {
   

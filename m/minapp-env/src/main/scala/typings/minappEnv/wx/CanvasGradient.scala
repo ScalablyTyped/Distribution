@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGradient extends StObject {
   
   /** [CanvasGradient.addColorStop(number stop, [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Color.html) color)](CanvasGradient.addColorStop.md)
@@ -41,7 +39,7 @@ trait CanvasGradient extends StObject {
     *
     * 渐变点的颜色。 */
   color: Color
-  ): Unit = js.native
+  ): Unit
 }
 object CanvasGradient {
   

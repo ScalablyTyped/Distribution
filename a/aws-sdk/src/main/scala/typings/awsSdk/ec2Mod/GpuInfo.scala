@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GpuInfo extends StObject {
   
   /**
     * Describes the GPU accelerators for the instance type.
     */
-  var Gpus: js.UndefOr[GpuDeviceInfoList] = js.native
+  var Gpus: js.UndefOr[GpuDeviceInfoList] = js.undefined
   
   /**
     * The total size of the memory for the GPU accelerators for the instance type, in MiB.
     */
-  var TotalGpuMemoryInMiB: js.UndefOr[totalGpuMemory] = js.native
+  var TotalGpuMemoryInMiB: js.UndefOr[totalGpuMemory] = js.undefined
 }
 object GpuInfo {
   

@@ -5,22 +5,20 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mandate {
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.mandate.MandateData, 'Tag', 'BankAccountId' | 'Culture' | 'ReturnURL'> */
-  @js.native
   trait CreateMandate extends StObject {
     
-    var BankAccountId: String = js.native
+    var BankAccountId: String
     
-    var Culture: MandateCultureCode = js.native
+    var Culture: MandateCultureCode
     
-    var ReturnURL: String = js.native
+    var ReturnURL: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateMandate {
     
@@ -84,73 +82,74 @@ object mandate {
     def PL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PL = "PL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PL]
   }
   
-  @js.native
-  trait MandateData extends EntityBaseData {
+  trait MandateData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * An ID of a Bank Account
       */
-    var BankAccountId: String = js.native
+    var BankAccountId: String
     
     /**
       * The banking reference for this mandate
       */
-    var BankReference: String = js.native
+    var BankReference: String
     
     /**
       * The language to use for the mandate confirmation page - needs to be the ISO code of the language
       */
-    var Culture: MandateCultureCode = js.native
+    var Culture: MandateCultureCode
     
     /**
       * The URL to download the mandate
       */
-    var DocumentURL: String = js.native
+    var DocumentURL: String
     
     /**
       * The execution type for creating the mandate
       */
-    var ExecutionType: MandateExecutionType = js.native
+    var ExecutionType: MandateExecutionType
     
     /**
       * The type of Mandate
       */
-    var MandateType: typings.mangopay2NodejsSdk.mod.mandate.MandateType = js.native
+    var MandateType: typings.mangopay2NodejsSdk.mod.mandate.MandateType
     
     /**
       * The URL to redirect to user to for them to proceed with the payment
       */
-    var RedirectURL: String = js.native
+    var RedirectURL: String
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The URL to redirect to after payment (whether successful or not)
       */
-    var ReturnURL: String = js.native
+    var ReturnURL: String
     
     /**
       * The type of mandate, but will only be completed once the mandate has been submitted
       */
-    var Scheme: MandateScheme = js.native
+    var Scheme: MandateScheme
     
     /**
       * The status of the mandate:
       */
-    var Status: MandateStatus = js.native
+    var Status: MandateStatus
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object MandateData {
     

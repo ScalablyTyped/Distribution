@@ -4,18 +4,17 @@ import typings.siesta.Siesta.Test.Action.Role.IHasTarget
 import typings.siesta.Siesta.Test.IAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-@js.native
 trait MouseDown
-  extends IAction
+  extends StObject
+     with IAction
      with IHasTarget {
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
 }
 object MouseDown {
   

@@ -2,17 +2,15 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFQDNOptions extends StObject {
   
-  var allow_trailing_dot: js.UndefOr[Boolean] = js.native
+  var allow_trailing_dot: js.UndefOr[Boolean] = js.undefined
   
-  var allow_underscores: js.UndefOr[Boolean] = js.native
+  var allow_underscores: js.UndefOr[Boolean] = js.undefined
   
-  var require_tld: js.UndefOr[Boolean] = js.native
+  var require_tld: js.UndefOr[Boolean] = js.undefined
 }
 object IsFQDNOptions {
   

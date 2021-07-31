@@ -2,14 +2,12 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specification for a time range, this will request transfer runs with
   * run_time between start_time (inclusive) and end_time (exclusive).
   */
-@js.native
 trait SchemaTimeRange extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaTimeRange extends StObject {
     * future. Creates transfer runs where run_time is in the range betwen
     * start_time (inclusive) and end_time (exlusive).
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Start time of the range of transfer runs. For example,
@@ -26,7 +24,7 @@ trait SchemaTimeRange extends StObject {
     * less than the end_time. Creates transfer runs where run_time is in the
     * range betwen start_time (inclusive) and end_time (exlusive).
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeRange {
   

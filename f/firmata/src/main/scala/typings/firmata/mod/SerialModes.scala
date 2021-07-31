@@ -2,15 +2,13 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialModes extends StObject {
   
-  var CONTINUOUS_READ: SERIAL_MODE = js.native
+  var CONTINUOUS_READ: SERIAL_MODE
   
-  var STOP_READING: SERIAL_MODE = js.native
+  var STOP_READING: SERIAL_MODE
 }
 object SerialModes {
   

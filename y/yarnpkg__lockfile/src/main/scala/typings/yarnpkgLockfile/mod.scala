@@ -4,41 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.yarnpkgLockfile.anon.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@yarnpkg/lockfile", "parse")
+  @JSImport("@yarnpkg/lockfile", JSImport.Namespace)
   @js.native
-  def parse(file: String): Object = js.native
-  @JSImport("@yarnpkg/lockfile", "parse")
-  @js.native
-  def parse(file: String, fileLoc: String): Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@yarnpkg/lockfile", "stringify")
-  @js.native
-  def stringify(json: js.Any): String = js.native
-  @JSImport("@yarnpkg/lockfile", "stringify")
-  @js.native
-  def stringify(json: js.Any, noHeader: js.UndefOr[scala.Nothing], enableVersions: Boolean): String = js.native
-  @JSImport("@yarnpkg/lockfile", "stringify")
-  @js.native
-  def stringify(json: js.Any, noHeader: Boolean): String = js.native
-  @JSImport("@yarnpkg/lockfile", "stringify")
-  @js.native
-  def stringify(json: js.Any, noHeader: Boolean, enableVersions: Boolean): String = js.native
+  @scala.inline
+  def parse(file: String): Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any]).asInstanceOf[Object]
+  @scala.inline
+  def parse(file: String, fileLoc: String): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], fileLoc.asInstanceOf[js.Any])).asInstanceOf[Object]
+  
+  @scala.inline
+  def stringify(json: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(json: js.Any, noHeader: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(json: js.Any, noHeader: Boolean, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(json: js.Any, noHeader: Unit, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Dependency = StringDictionary[String]
   
-  @js.native
   trait FirstLevelDependency extends StObject {
     
-    var dependencies: js.UndefOr[Dependency] = js.native
+    var dependencies: js.UndefOr[Dependency] = js.undefined
     
-    var resolved: js.UndefOr[String] = js.native
+    var resolved: js.UndefOr[String] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object FirstLevelDependency {
     

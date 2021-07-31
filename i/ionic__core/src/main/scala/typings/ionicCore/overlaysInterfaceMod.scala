@@ -6,20 +6,21 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlaysInterfaceMod {
   
   @js.native
-  trait HTMLIonOverlayElement extends HTMLStencilElement {
+  trait HTMLIonOverlayElement
+    extends StObject
+       with HTMLStencilElement {
     
     var backdropDismiss: js.UndefOr[Boolean] = js.native
     
     def dismiss(): js.Promise[Boolean] = js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = js.native
     
     var lastFocus: js.UndefOr[HTMLElement] = js.native
     
@@ -33,23 +34,22 @@ object overlaysInterfaceMod {
     def create(opts: js.Any): js.Promise[HTMLElement] = js.native
     
     def dismiss(): js.Promise[Boolean] = js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = js.native
     
     def getTop(): js.Promise[js.UndefOr[HTMLIonOverlayElement]] = js.native
   }
   
-  @js.native
   trait OverlayEventDetail[T] extends StObject {
     
-    var data: js.UndefOr[T] = js.native
+    var data: js.UndefOr[T] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object OverlayEventDetail {
     
@@ -60,7 +60,7 @@ object overlaysInterfaceMod {
     }
     
     @scala.inline
-    implicit class OverlayEventDetailMutableBuilder[Self <: OverlayEventDetail[_], T] (val x: Self with OverlayEventDetail[T]) extends AnyVal {
+    implicit class OverlayEventDetailMutableBuilder[Self <: OverlayEventDetail[?], T] (val x: Self & OverlayEventDetail[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -81,14 +81,14 @@ object overlaysInterfaceMod {
     
     var animated: Boolean = js.native
     
-    var didDismiss: EventEmitter[OverlayEventDetail[_]] = js.native
+    var didDismiss: EventEmitter[OverlayEventDetail[js.Any]] = js.native
     
     var didPresent: EventEmitter[Unit] = js.native
     
     def dismiss(): js.Promise[Boolean] = js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = js.native
     
     var el: HTMLElement = js.native
     
@@ -104,7 +104,7 @@ object overlaysInterfaceMod {
     
     var presented: Boolean = js.native
     
-    var willDismiss: EventEmitter[OverlayEventDetail[_]] = js.native
+    var willDismiss: EventEmitter[OverlayEventDetail[js.Any]] = js.native
     
     var willPresent: EventEmitter[Unit] = js.native
   }

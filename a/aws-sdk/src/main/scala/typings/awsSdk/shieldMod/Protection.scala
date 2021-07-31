@@ -2,31 +2,29 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Protection extends StObject {
   
   /**
     * The unique identifier (ID) for the Route 53 health check that's associated with the protection. 
     */
-  var HealthCheckIds: js.UndefOr[typings.awsSdk.shieldMod.HealthCheckIds] = js.native
+  var HealthCheckIds: js.UndefOr[typings.awsSdk.shieldMod.HealthCheckIds] = js.undefined
   
   /**
     * The unique identifier (ID) of the protection.
     */
-  var Id: js.UndefOr[ProtectionId] = js.native
+  var Id: js.UndefOr[ProtectionId] = js.undefined
   
   /**
     * The name of the protection. For example, My CloudFront distributions.
     */
-  var Name: js.UndefOr[ProtectionName] = js.native
+  var Name: js.UndefOr[ProtectionName] = js.undefined
   
   /**
     * The ARN (Amazon Resource Name) of the AWS resource that is protected.
     */
-  var ResourceArn: js.UndefOr[typings.awsSdk.shieldMod.ResourceArn] = js.native
+  var ResourceArn: js.UndefOr[typings.awsSdk.shieldMod.ResourceArn] = js.undefined
 }
 object Protection {
   

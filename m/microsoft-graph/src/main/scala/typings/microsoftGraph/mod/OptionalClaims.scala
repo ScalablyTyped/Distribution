@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionalClaims extends StObject {
   
   // The optional claims returned in the JWT access token.
-  var accessToken: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.native
+  var accessToken: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.undefined
   
   // The optional claims returned in the JWT ID token.
-  var idToken: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.native
+  var idToken: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.undefined
   
   // The optional claims returned in the SAML token.
-  var saml2Token: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.native
+  var saml2Token: js.UndefOr[NullableOption[js.Array[OptionalClaim]]] = js.undefined
 }
 object OptionalClaims {
   

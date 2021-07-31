@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFromGlobalClusterMessage extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) identifying the cluster that was detached from the Aurora global database cluster. 
     */
-  var DbClusterIdentifier: js.UndefOr[String] = js.native
+  var DbClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  The cluster identifier to detach from the Aurora global database cluster. 
     */
-  var GlobalClusterIdentifier: js.UndefOr[String] = js.native
+  var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
 }
 object RemoveFromGlobalClusterMessage {
   

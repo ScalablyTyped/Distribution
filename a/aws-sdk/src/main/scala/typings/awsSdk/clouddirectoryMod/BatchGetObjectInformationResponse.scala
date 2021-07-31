@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetObjectInformationResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the specified object.
     */
-  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.native
+  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.undefined
   
   /**
     * The facets attached to the specified object.
     */
-  var SchemaFacets: js.UndefOr[SchemaFacetList] = js.native
+  var SchemaFacets: js.UndefOr[SchemaFacetList] = js.undefined
 }
 object BatchGetObjectInformationResponse {
   

@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRepositoryStoryResponseOwner extends StObject {
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: String = js.native
+  var lng: String
   
-  var location_dict: LocationRepositoryStoryResponseLocationDict = js.native
+  var location_dict: LocationRepositoryStoryResponseLocationDict
   
-  var name: String = js.native
+  var name: String
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var profile_pic_username: String = js.native
+  var profile_pic_username: String
   
-  var short_name: String = js.native
+  var short_name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object LocationRepositoryStoryResponseOwner {
   

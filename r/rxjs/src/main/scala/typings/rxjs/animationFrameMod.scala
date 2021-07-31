@@ -3,7 +3,6 @@ package typings.rxjs
 import typings.rxjs.animationFrameSchedulerMod.AnimationFrameScheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationFrameMod {

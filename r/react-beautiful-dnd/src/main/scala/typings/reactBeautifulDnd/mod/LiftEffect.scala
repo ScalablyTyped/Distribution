@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiftEffect extends StObject {
   
-  var displacedBy: DisplacedBy = js.native
+  var displacedBy: DisplacedBy
   
-  var effected: DraggableIdMap = js.native
+  var effected: DraggableIdMap
   
-  var inVirtualList: Boolean = js.native
+  var inVirtualList: Boolean
 }
 object LiftEffect {
   

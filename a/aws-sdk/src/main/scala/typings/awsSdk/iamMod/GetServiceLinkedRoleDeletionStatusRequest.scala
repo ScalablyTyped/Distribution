@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceLinkedRoleDeletionStatusRequest extends StObject {
   
   /**
     * The deletion task identifier. This identifier is returned by the DeleteServiceLinkedRole operation in the format task/aws-service-role/&lt;service-principal-name&gt;/&lt;role-name&gt;/&lt;task-uuid&gt;.
     */
-  var DeletionTaskId: DeletionTaskIdType = js.native
+  var DeletionTaskId: DeletionTaskIdType
 }
 object GetServiceLinkedRoleDeletionStatusRequest {
   

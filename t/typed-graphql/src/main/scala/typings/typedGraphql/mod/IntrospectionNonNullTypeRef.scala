@@ -3,21 +3,21 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.NON_NULL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionNonNullTypeRef extends IntrospectionTypeRef {
+trait IntrospectionNonNullTypeRef
+  extends StObject
+     with IntrospectionTypeRef {
   
-  var kind: NON_NULL = js.native
+  var kind: NON_NULL
   
-  var ofType: js.UndefOr[IntrospectionTypeRef] = js.native
+  var ofType: js.UndefOr[IntrospectionTypeRef] = js.undefined
 }
 object IntrospectionNonNullTypeRef {
   
   @scala.inline
-  def apply(kind: NON_NULL): IntrospectionNonNullTypeRef = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def apply(): IntrospectionNonNullTypeRef = {
+    val __obj = js.Dynamic.literal(kind = "NON_NULL")
     __obj.asInstanceOf[IntrospectionNonNullTypeRef]
   }
   

@@ -2,13 +2,11 @@ package typings.terminalKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoAlternate extends StObject {
   
-  var noAlternate: Boolean = js.native
+  var noAlternate: Boolean
 }
 object NoAlternate {
   

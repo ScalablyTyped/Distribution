@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "TileProviderError")
@@ -37,62 +36,61 @@ class TileProviderError protected () extends StObject {
 }
 object TileProviderError {
   
-  /* static member */
-  @JSImport("cesium", "TileProviderError.handleError")
+  @JSImport("cesium", "TileProviderError")
   @js.native
-  def handleError(
-    previousError: TileProviderError,
-    provider: ImageryProvider,
-    event: Event[js.Array[TileProviderError]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    retryFunction: RetryFunction
-  ): TileProviderError = js.native
-  @JSImport("cesium", "TileProviderError.handleError")
-  @js.native
-  def handleError(
-    previousError: TileProviderError,
-    provider: ImageryProvider,
-    event: Event[js.Array[TileProviderError]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    retryFunction: RetryFunction,
-    errorDetails: Error
-  ): TileProviderError = js.native
-  @JSImport("cesium", "TileProviderError.handleError")
-  @js.native
-  def handleError(
-    previousError: TileProviderError,
-    provider: TerrainProvider,
-    event: Event[js.Array[TileProviderError]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    retryFunction: RetryFunction
-  ): TileProviderError = js.native
-  @JSImport("cesium", "TileProviderError.handleError")
-  @js.native
-  def handleError(
-    previousError: TileProviderError,
-    provider: TerrainProvider,
-    event: Event[js.Array[TileProviderError]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    retryFunction: RetryFunction,
-    errorDetails: Error
-  ): TileProviderError = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "TileProviderError.handleSuccess")
-  @js.native
-  def handleSuccess(previousError: TileProviderError): Unit = js.native
+  @scala.inline
+  def handleError(
+    previousError: TileProviderError,
+    provider: ImageryProvider,
+    event: Event[js.Array[TileProviderError]],
+    message: String,
+    x: Double,
+    y: Double,
+    level: Double,
+    retryFunction: RetryFunction
+  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
+  @scala.inline
+  def handleError(
+    previousError: TileProviderError,
+    provider: ImageryProvider,
+    event: Event[js.Array[TileProviderError]],
+    message: String,
+    x: Double,
+    y: Double,
+    level: Double,
+    retryFunction: RetryFunction,
+    errorDetails: Error
+  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
+  @scala.inline
+  def handleError(
+    previousError: TileProviderError,
+    provider: TerrainProvider,
+    event: Event[js.Array[TileProviderError]],
+    message: String,
+    x: Double,
+    y: Double,
+    level: Double,
+    retryFunction: RetryFunction
+  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
+  @scala.inline
+  def handleError(
+    previousError: TileProviderError,
+    provider: TerrainProvider,
+    event: Event[js.Array[TileProviderError]],
+    message: String,
+    x: Double,
+    y: Double,
+    level: Double,
+    retryFunction: RetryFunction,
+    errorDetails: Error
+  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
+  
+  /* static member */
+  @scala.inline
+  def handleSuccess(previousError: TileProviderError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleSuccess")(previousError.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type RetryFunction = js.Function0[Unit]
 }

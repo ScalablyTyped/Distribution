@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsTransferconfigsPatch extends StandardParameters {
+trait ParamsResourceProjectsTransferconfigsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional OAuth2 authorization code to use with this transfer
@@ -33,7 +33,7 @@ trait ParamsResourceProjectsTransferconfigsPatch extends StandardParameters {
     * browser, with the page text prompting   the user to copy the code and
     * paste it in the application.
     */
-  var authorizationCode: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the transfer config. Transfer config names have the
@@ -44,17 +44,17 @@ trait ParamsResourceProjectsTransferconfigsPatch extends StandardParameters {
     * config_id is not provided, usually a uuid, even though it is not
     * guaranteed or required, will be generated for config_id.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaTransferConfig] = js.native
+  var requestBody: js.UndefOr[SchemaTransferConfig] = js.undefined
   
   /**
     * Required list of fields to be updated in this request.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /**
     * Optional version info. If users want to find a very recent access token,
@@ -64,7 +64,7 @@ trait ParamsResourceProjectsTransferconfigsPatch extends StandardParameters {
     * version_info back in the authorization response which be be put in a JWT
     * claim in the token request.
     */
-  var versionInfo: js.UndefOr[String] = js.native
+  var versionInfo: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsTransferconfigsPatch {
   

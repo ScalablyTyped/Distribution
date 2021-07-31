@@ -4,14 +4,12 @@ import typings.semanticUiPopup.semanticUiPopupBooleans.`false`
 import typings.semanticUiPopup.semanticUiPopupStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'hideOnScroll'> */
-@js.native
 trait PickImplhideOnScroll extends StObject {
   
-  var hideOnScroll: auto | `false` = js.native
+  var hideOnScroll: auto | `false`
 }
 object PickImplhideOnScroll {
   

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XDispatchProvider
   * @since OOo 2.0
   */
-@js.native
 trait ToolbarController
-  extends XStatusListener
+  extends StObject
+     with XStatusListener
      with XInitialization
      with XUpdatable
      with XToolbarController
@@ -41,7 +40,7 @@ object ToolbarController {
     execute: Double => Unit,
     functionSelected: String => Unit,
     getSubToolbarName: () => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     opensSubToolbar: () => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit,

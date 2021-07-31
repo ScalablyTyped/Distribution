@@ -17,24 +17,24 @@ import typings.std.PointerEvent
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuItemWrapperTypesMod {
   
-  @js.native
-  trait IContextualMenuItemWrapperProps extends ClassAttributes[IContextualMenuItem] {
+  trait IContextualMenuItemWrapperProps
+    extends StObject
+       with ClassAttributes[IContextualMenuItem] {
     
     /**
       * CSS class to apply to the context menu.
       */
-    var classNames: IMenuItemClassNames = js.native
+    var classNames: IMenuItemClassNames
     
     /**
       * Optional callback to access the ContextualMenuSplitButton interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ContextualMenuItemWrapper]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ContextualMenuItemWrapper]] = js.undefined
     
     /**
       * Method to override the render of the individual menu items.
@@ -42,7 +42,7 @@ object contextualMenuItemWrapperTypesMod {
       */
     var contextualMenuItemAs: js.UndefOr[
         (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to close the menu this item belongs to.
@@ -50,12 +50,12 @@ object contextualMenuItemWrapperTypesMod {
       */
     var dismissMenu: js.UndefOr[
         js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to close this item's subMenu, if present.
       */
-    var dismissSubMenu: js.UndefOr[js.Function0[Unit]] = js.native
+    var dismissSubMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback for when the click event on the primary button.
@@ -66,42 +66,42 @@ object contextualMenuItemWrapperTypesMod {
           /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Key of the currently expanded subMenu.
       */
-    var expandedMenuItemKey: js.UndefOr[String] = js.native
+    var expandedMenuItemKey: js.UndefOr[String] = js.undefined
     
     /**
       * The index number of the wrapper among all items in the contextual menu excluding dividers and headers.
       */
-    var focusableElementIndex: Double = js.native
+    var focusableElementIndex: Double
     
     /**
       * Callback to get the subMenu ID for an IContextualMenuItem.
       */
-    var getSubMenuId: js.UndefOr[js.Function1[/* item */ IContextualMenuItem, js.UndefOr[String]]] = js.native
+    var getSubMenuId: js.UndefOr[js.Function1[/* item */ IContextualMenuItem, js.UndefOr[String]]] = js.undefined
     
     /**
       * Whether or not if the item for the wrapper uses checkmarks.
       */
-    var hasCheckmarks: js.UndefOr[Boolean] = js.native
+    var hasCheckmarks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the item for the wrapper uses icons.
       */
-    var hasIcons: js.UndefOr[Boolean] = js.native
+    var hasIcons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The index number of the wrapper among all items in the contextual menu including things like dividers and headers.
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The IContextualMenuItem that is used to render the item in the menu.
       */
-    var item: IContextualMenuItem = js.native
+    var item: IContextualMenuItem
     
     /**
       * Callback for when the click event on the icon button from the wrapper.
@@ -112,7 +112,7 @@ object contextualMenuItemWrapperTypesMod {
           /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the click event on the icon button which also takes in a specific HTMLElement
@@ -125,14 +125,14 @@ object contextualMenuItemWrapperTypesMod {
           /* target */ HTMLElement, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for keyboard events on the wrapper.
       */
     var onItemKeyDown: js.UndefOr[
         js.Function2[/* item */ IContextualMenuItem, /* ev */ KeyboardEvent[HTMLElement], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for the mousedown event on the icon button in the wrapper.
@@ -143,7 +143,7 @@ object contextualMenuItemWrapperTypesMod {
           /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the user's mouse enters the wrapper.
@@ -155,7 +155,7 @@ object contextualMenuItemWrapperTypesMod {
           /* target */ HTMLElement, 
           Boolean | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the user's mouse leaves the wrapper.
@@ -166,7 +166,7 @@ object contextualMenuItemWrapperTypesMod {
           /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the user's mouse moves in the wrapper.
@@ -178,22 +178,22 @@ object contextualMenuItemWrapperTypesMod {
           /* target */ HTMLElement, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for touch/pointer events on the split button.
       */
-    var onTap: js.UndefOr[js.Function1[/* ev */ TouchEvent[HTMLElement] | PointerEvent, Unit]] = js.native
+    var onTap: js.UndefOr[js.Function1[/* ev */ TouchEvent[HTMLElement] | PointerEvent, Unit]] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to open this item's subMenu, if present.
       */
-    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.native
+    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.undefined
     
     /**
       * The total number of items in the contextual menu.
       */
-    var totalItemCount: Double = js.native
+    var totalItemCount: Double
   }
   object IContextualMenuItemWrapperProps {
     

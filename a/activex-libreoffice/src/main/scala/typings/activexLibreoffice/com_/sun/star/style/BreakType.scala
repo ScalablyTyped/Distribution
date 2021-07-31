@@ -9,7 +9,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These enumeration values are used to specify if and how a page or column break is applied. */

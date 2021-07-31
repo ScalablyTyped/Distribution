@@ -2,137 +2,137 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the Series class.
   */
-@js.native
-trait ASPxClientSeries extends ASPxClientWebChartElementNamed {
+trait ASPxClientSeries
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Gets a value indicating whether a crosshair cursor is enabled.
     */
-  var actualCrosshairEnabled: Boolean = js.native
+  var actualCrosshairEnabled: Boolean
   
   /**
     * Gets a value indicating whether a crosshair label should be shown for this series.
     */
-  var actualCrosshairLabelVisibility: Boolean = js.native
+  var actualCrosshairLabelVisibility: Boolean
   
   /**
     * Gets a value that specifies the scale type for the argument data of the series' data points.
     */
-  var argumentScaleType: String = js.native
+  var argumentScaleType: String
   
   /**
     * Gets the X-Axis that is used to plot the current series on the XY-diagram.
     */
-  var axisX: String = js.native
+  var axisX: String
   
   /**
     * Gets the Y-Axis that is used to plot the current series on the XY-diagram.
     */
-  var axisY: String = js.native
+  var axisY: String
   
   /**
     * Gets the color of a series.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Gets a string which represents the pattern specifying the text to be displayed within a crosshair label for the current Series  type.
     */
-  var crosshairLabelPattern: String = js.native
+  var crosshairLabelPattern: String
   
   /**
     * Returns a collection of crosshair value items.
     */
-  var crosshairValueItems: js.Array[ASPxClientCrosshairValueItem] = js.native
+  var crosshairValueItems: js.Array[ASPxClientCrosshairValueItem]
   
   /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of Fibonacci Indicators.
     */
-  var fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator] = js.native
+  var fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator]
   
   /**
     * This property is intended for internal use only.
     */
-  var groupedElementsPattern: String = js.native
+  var groupedElementsPattern: String
   
   /**
     * Gets the series' collection of indicators.
     */
-  var indicators: js.Array[ASPxClientIndicator] = js.native
+  var indicators: js.Array[ASPxClientIndicator]
   
   /**
     * Gets the settings of series labels.
     */
-  var label: ASPxClientSeriesLabel = js.native
+  var label: ASPxClientSeriesLabel
   
   /**
     * Gets the pane that is used to plot the current series on the XY-diagram.
     */
-  var pane: String = js.native
+  var pane: String
   
   /**
     * Gets the series' collection of data points.
     */
-  var points: js.Array[ASPxClientSeriesPoint] = js.native
+  var points: js.Array[ASPxClientSeriesPoint]
   
   /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of regression lines.
     */
-  var regressionLines: js.Array[ASPxClientRegressionLine] = js.native
+  var regressionLines: js.Array[ASPxClientRegressionLine]
   
   /**
     * Gets a value that defines a group for stacked series.
     */
-  var stackedGroup: String = js.native
+  var stackedGroup: String
   
   /**
     * Provides access to the collection of series titles.
     */
-  var titles: js.Array[ASPxClientSeriesTitle] = js.native
+  var titles: js.Array[ASPxClientSeriesTitle]
   
   /**
     * Gets a value that specifies whether or not a tooltip is enabled for a chart.
     */
-  var toolTipEnabled: Boolean = js.native
+  var toolTipEnabled: Boolean
   
   /**
     * Gets an image to be displayed within series tooltips.
     */
-  var toolTipImage: String = js.native
+  var toolTipImage: String
   
   /**
     * Gets the text to be displayed within series tooltips.
     */
-  var toolTipText: String = js.native
+  var toolTipText: String
   
   /** @deprecated This property is now obsolete. Use the indicators property instead. */
   /**
     * Provides access to the collection of trendlines.
     */
-  var trendLines: js.Array[ASPxClientTrendLine] = js.native
+  var trendLines: js.Array[ASPxClientTrendLine]
   
   /**
     * Gets a value that specifies the scale type for the value data of the series' data points.
     */
-  var valueScaleType: String = js.native
+  var valueScaleType: String
   
   /**
     * Gets a value that specifies the view type of the series.
     */
-  var viewType: String = js.native
+  var viewType: String
   
   /**
     * Gets a value indicating whether the series is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientSeries {
   

@@ -132,14 +132,14 @@ import typings.activexOutlook.Outlook.OlViewType
 import typings.activexOutlook.Outlook.OlWindowState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexOutlookNumbers {
   
   @js.native
   sealed trait `0`
-    extends OlAccountType
+    extends StObject
+       with OlAccountType
        with OlActionCopyLike
        with OlActionReplyStyle
        with OlActionResponseStyle
@@ -250,7 +250,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `1`
-    extends OlAccountType
+    extends StObject
+       with OlAccountType
        with OlActionCopyLike
        with OlActionReplyStyle
        with OlActionResponseStyle
@@ -378,7 +379,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `10`
-    extends OlAddressEntryUserType
+    extends StObject
+       with OlAddressEntryUserType
        with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
@@ -396,64 +398,86 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `100`
-    extends OlExchangeConnectionMode
+    extends StObject
+       with OlExchangeConnectionMode
        with OlObjectClass
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
-  sealed trait `1000` extends OlActionReplyStyle
+  sealed trait `1000`
+    extends StObject
+       with OlActionReplyStyle
   @scala.inline
   def `1000`: `1000` = 1000.asInstanceOf[`1000`]
   
   @js.native
-  sealed trait `101` extends OlObjectClass
+  sealed trait `101`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `101`: `101` = 101.asInstanceOf[`101`]
   
   @js.native
-  sealed trait `102` extends OlObjectClass
+  sealed trait `102`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `102`: `102` = 102.asInstanceOf[`102`]
   
   @js.native
-  sealed trait `103` extends OlObjectClass
+  sealed trait `103`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `103`: `103` = 103.asInstanceOf[`103`]
   
   @js.native
-  sealed trait `104` extends OlObjectClass
+  sealed trait `104`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `104`: `104` = 104.asInstanceOf[`104`]
   
   @js.native
-  sealed trait `105` extends OlObjectClass
+  sealed trait `105`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `105`: `105` = 105.asInstanceOf[`105`]
   
   @js.native
-  sealed trait `106` extends OlObjectClass
+  sealed trait `106`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `106`: `106` = 106.asInstanceOf[`106`]
   
   @js.native
-  sealed trait `107` extends OlObjectClass
+  sealed trait `107`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `107`: `107` = 107.asInstanceOf[`107`]
   
   @js.native
-  sealed trait `108` extends OlObjectClass
+  sealed trait `108`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `108`: `108` = 108.asInstanceOf[`108`]
   
   @js.native
-  sealed trait `109` extends OlObjectClass
+  sealed trait `109`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `109`: `109` = 109.asInstanceOf[`109`]
   
   @js.native
   sealed trait `11`
-    extends OlAddressEntryUserType
+    extends StObject
+       with OlAddressEntryUserType
        with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
@@ -470,58 +494,79 @@ object activexOutlookNumbers {
   def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
-  sealed trait `110` extends OlObjectClass
+  sealed trait `110`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `110`: `110` = 110.asInstanceOf[`110`]
   
   @js.native
-  sealed trait `111` extends OlObjectClass
+  sealed trait `111`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `111`: `111` = 111.asInstanceOf[`111`]
   
   @js.native
-  sealed trait `112` extends OlObjectClass
+  sealed trait `112`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `112`: `112` = 112.asInstanceOf[`112`]
   
   @js.native
-  sealed trait `113` extends OlObjectClass
+  sealed trait `113`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `113`: `113` = 113.asInstanceOf[`113`]
   
   @js.native
-  sealed trait `114` extends OlObjectClass
+  sealed trait `114`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `114`: `114` = 114.asInstanceOf[`114`]
   
   @js.native
-  sealed trait `115` extends OlObjectClass
+  sealed trait `115`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `115`: `115` = 115.asInstanceOf[`115`]
   
   @js.native
-  sealed trait `116` extends OlObjectClass
+  sealed trait `116`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `116`: `116` = 116.asInstanceOf[`116`]
   
   @js.native
-  sealed trait `117` extends OlObjectClass
+  sealed trait `117`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `117`: `117` = 117.asInstanceOf[`117`]
   
   @js.native
-  sealed trait `118` extends OlObjectClass
+  sealed trait `118`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `118`: `118` = 118.asInstanceOf[`118`]
   
   @js.native
-  sealed trait `119` extends OlObjectClass
+  sealed trait `119`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `119`: `119` = 119.asInstanceOf[`119`]
   
   @js.native
   sealed trait `12`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlColor
        with OlContactPhoneNumber
        with OlDefaultFolders
@@ -536,58 +581,79 @@ object activexOutlookNumbers {
   def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `120` extends OlObjectClass
+  sealed trait `120`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `120`: `120` = 120.asInstanceOf[`120`]
   
   @js.native
-  sealed trait `121` extends OlObjectClass
+  sealed trait `121`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `121`: `121` = 121.asInstanceOf[`121`]
   
   @js.native
-  sealed trait `122` extends OlObjectClass
+  sealed trait `122`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `122`: `122` = 122.asInstanceOf[`122`]
   
   @js.native
-  sealed trait `123` extends OlObjectClass
+  sealed trait `123`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `123`: `123` = 123.asInstanceOf[`123`]
   
   @js.native
-  sealed trait `124` extends OlObjectClass
+  sealed trait `124`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `124`: `124` = 124.asInstanceOf[`124`]
   
   @js.native
-  sealed trait `125` extends OlObjectClass
+  sealed trait `125`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `125`: `125` = 125.asInstanceOf[`125`]
   
   @js.native
-  sealed trait `126` extends OlObjectClass
+  sealed trait `126`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `126`: `126` = 126.asInstanceOf[`126`]
   
   @js.native
-  sealed trait `127` extends OlObjectClass
+  sealed trait `127`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `127`: `127` = 127.asInstanceOf[`127`]
   
   @js.native
-  sealed trait `128` extends OlObjectClass
+  sealed trait `128`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
-  sealed trait `129` extends OlObjectClass
+  sealed trait `129`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `129`: `129` = 129.asInstanceOf[`129`]
   
   @js.native
   sealed trait `13`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlColor
        with OlContactPhoneNumber
        with OlDefaultFolders
@@ -599,58 +665,79 @@ object activexOutlookNumbers {
   def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
-  sealed trait `130` extends OlObjectClass
+  sealed trait `130`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `130`: `130` = 130.asInstanceOf[`130`]
   
   @js.native
-  sealed trait `131` extends OlObjectClass
+  sealed trait `131`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `131`: `131` = 131.asInstanceOf[`131`]
   
   @js.native
-  sealed trait `132` extends OlObjectClass
+  sealed trait `132`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `132`: `132` = 132.asInstanceOf[`132`]
   
   @js.native
-  sealed trait `133` extends OlObjectClass
+  sealed trait `133`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `133`: `133` = 133.asInstanceOf[`133`]
   
   @js.native
-  sealed trait `134` extends OlObjectClass
+  sealed trait `134`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `134`: `134` = 134.asInstanceOf[`134`]
   
   @js.native
-  sealed trait `135` extends OlObjectClass
+  sealed trait `135`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `135`: `135` = 135.asInstanceOf[`135`]
   
   @js.native
-  sealed trait `136` extends OlObjectClass
+  sealed trait `136`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `136`: `136` = 136.asInstanceOf[`136`]
   
   @js.native
-  sealed trait `137` extends OlObjectClass
+  sealed trait `137`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `137`: `137` = 137.asInstanceOf[`137`]
   
   @js.native
-  sealed trait `138` extends OlObjectClass
+  sealed trait `138`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `138`: `138` = 138.asInstanceOf[`138`]
   
   @js.native
-  sealed trait `139` extends OlObjectClass
+  sealed trait `139`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `139`: `139` = 139.asInstanceOf[`139`]
   
   @js.native
   sealed trait `14`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlColor
        with OlContactPhoneNumber
        with OlMousePointer
@@ -661,53 +748,72 @@ object activexOutlookNumbers {
   def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
-  sealed trait `140` extends OlObjectClass
+  sealed trait `140`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `140`: `140` = 140.asInstanceOf[`140`]
   
   @js.native
-  sealed trait `141` extends OlObjectClass
+  sealed trait `141`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `141`: `141` = 141.asInstanceOf[`141`]
   
   @js.native
-  sealed trait `142` extends OlObjectClass
+  sealed trait `142`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `142`: `142` = 142.asInstanceOf[`142`]
   
   @js.native
-  sealed trait `144` extends OlObjectClass
+  sealed trait `144`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `144`: `144` = 144.asInstanceOf[`144`]
   
   @js.native
-  sealed trait `145` extends OlObjectClass
+  sealed trait `145`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `145`: `145` = 145.asInstanceOf[`145`]
   
   @js.native
-  sealed trait `146` extends OlObjectClass
+  sealed trait `146`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `146`: `146` = 146.asInstanceOf[`146`]
   
   @js.native
-  sealed trait `147` extends OlObjectClass
+  sealed trait `147`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `147`: `147` = 147.asInstanceOf[`147`]
   
   @js.native
-  sealed trait `148` extends OlObjectClass
+  sealed trait `148`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `148`: `148` = 148.asInstanceOf[`148`]
   
   @js.native
-  sealed trait `149` extends OlObjectClass
+  sealed trait `149`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `149`: `149` = 149.asInstanceOf[`149`]
   
   @js.native
   sealed trait `15`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlColor
        with OlContactPhoneNumber
        with OlFormatDateTime
@@ -719,58 +825,79 @@ object activexOutlookNumbers {
   def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
-  sealed trait `150` extends OlObjectClass
+  sealed trait `150`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `150`: `150` = 150.asInstanceOf[`150`]
   
   @js.native
-  sealed trait `151` extends OlObjectClass
+  sealed trait `151`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `151`: `151` = 151.asInstanceOf[`151`]
   
   @js.native
-  sealed trait `152` extends OlObjectClass
+  sealed trait `152`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `152`: `152` = 152.asInstanceOf[`152`]
   
   @js.native
-  sealed trait `153` extends OlObjectClass
+  sealed trait `153`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `153`: `153` = 153.asInstanceOf[`153`]
   
   @js.native
-  sealed trait `154` extends OlObjectClass
+  sealed trait `154`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `154`: `154` = 154.asInstanceOf[`154`]
   
   @js.native
-  sealed trait `155` extends OlObjectClass
+  sealed trait `155`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `155`: `155` = 155.asInstanceOf[`155`]
   
   @js.native
-  sealed trait `156` extends OlObjectClass
+  sealed trait `156`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `156`: `156` = 156.asInstanceOf[`156`]
   
   @js.native
-  sealed trait `157` extends OlObjectClass
+  sealed trait `157`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `157`: `157` = 157.asInstanceOf[`157`]
   
   @js.native
-  sealed trait `158` extends OlObjectClass
+  sealed trait `158`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `158`: `158` = 158.asInstanceOf[`158`]
   
   @js.native
-  sealed trait `159` extends OlObjectClass
+  sealed trait `159`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `159`: `159` = 159.asInstanceOf[`159`]
   
   @js.native
   sealed trait `16`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlColor
        with OlContactPhoneNumber
        with OlDaysOfWeek
@@ -783,58 +910,79 @@ object activexOutlookNumbers {
   def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
-  sealed trait `160` extends OlObjectClass
+  sealed trait `160`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `160`: `160` = 160.asInstanceOf[`160`]
   
   @js.native
-  sealed trait `161` extends OlObjectClass
+  sealed trait `161`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `161`: `161` = 161.asInstanceOf[`161`]
   
   @js.native
-  sealed trait `162` extends OlObjectClass
+  sealed trait `162`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `162`: `162` = 162.asInstanceOf[`162`]
   
   @js.native
-  sealed trait `163` extends OlObjectClass
+  sealed trait `163`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `163`: `163` = 163.asInstanceOf[`163`]
   
   @js.native
-  sealed trait `164` extends OlObjectClass
+  sealed trait `164`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `164`: `164` = 164.asInstanceOf[`164`]
   
   @js.native
-  sealed trait `165` extends OlObjectClass
+  sealed trait `165`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `165`: `165` = 165.asInstanceOf[`165`]
   
   @js.native
-  sealed trait `166` extends OlObjectClass
+  sealed trait `166`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `166`: `166` = 166.asInstanceOf[`166`]
   
   @js.native
-  sealed trait `167` extends OlObjectClass
+  sealed trait `167`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `167`: `167` = 167.asInstanceOf[`167`]
   
   @js.native
-  sealed trait `168` extends OlObjectClass
+  sealed trait `168`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `168`: `168` = 168.asInstanceOf[`168`]
   
   @js.native
-  sealed trait `169` extends OlObjectClass
+  sealed trait `169`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `169`: `169` = 169.asInstanceOf[`169`]
   
   @js.native
   sealed trait `17`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlContactPhoneNumber
        with OlFormatDateTime
        with OlObjectClass
@@ -844,58 +992,79 @@ object activexOutlookNumbers {
   def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
-  sealed trait `170` extends OlObjectClass
+  sealed trait `170`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `170`: `170` = 170.asInstanceOf[`170`]
   
   @js.native
-  sealed trait `171` extends OlObjectClass
+  sealed trait `171`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `171`: `171` = 171.asInstanceOf[`171`]
   
   @js.native
-  sealed trait `172` extends OlObjectClass
+  sealed trait `172`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `172`: `172` = 172.asInstanceOf[`172`]
   
   @js.native
-  sealed trait `173` extends OlObjectClass
+  sealed trait `173`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `173`: `173` = 173.asInstanceOf[`173`]
   
   @js.native
-  sealed trait `174` extends OlObjectClass
+  sealed trait `174`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `174`: `174` = 174.asInstanceOf[`174`]
   
   @js.native
-  sealed trait `175` extends OlObjectClass
+  sealed trait `175`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `175`: `175` = 175.asInstanceOf[`175`]
   
   @js.native
-  sealed trait `176` extends OlObjectClass
+  sealed trait `176`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `176`: `176` = 176.asInstanceOf[`176`]
   
   @js.native
-  sealed trait `177` extends OlObjectClass
+  sealed trait `177`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `177`: `177` = 177.asInstanceOf[`177`]
   
   @js.native
-  sealed trait `178` extends OlObjectClass
+  sealed trait `178`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `178`: `178` = 178.asInstanceOf[`178`]
   
   @js.native
-  sealed trait `179` extends OlObjectClass
+  sealed trait `179`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `179`: `179` = 179.asInstanceOf[`179`]
   
   @js.native
   sealed trait `18`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlContactPhoneNumber
        with OlDefaultFolders
        with OlObjectClass
@@ -906,23 +1075,30 @@ object activexOutlookNumbers {
   def `18`: `18` = 18.asInstanceOf[`18`]
   
   @js.native
-  sealed trait `180` extends OlObjectClass
+  sealed trait `180`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `180`: `180` = 180.asInstanceOf[`180`]
   
   @js.native
-  sealed trait `181` extends OlObjectClass
+  sealed trait `181`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `181`: `181` = 181.asInstanceOf[`181`]
   
   @js.native
-  sealed trait `182` extends OlObjectClass
+  sealed trait `182`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `182`: `182` = 182.asInstanceOf[`182`]
   
   @js.native
   sealed trait `19`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlDefaultFolders
        with OlRuleActionType
        with OlRuleConditionType
@@ -932,7 +1108,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `2`
-    extends OlAccountType
+    extends StObject
+       with OlAccountType
        with OlActionCopyLike
        with OlActionReplyStyle
        with OlActionResponseStyle
@@ -1040,7 +1217,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `20`
-    extends OlAddressEntryUserType
+    extends StObject
+       with OlAddressEntryUserType
        with OlCategoryColor
        with OlDefaultFolders
        with OlObjectClass
@@ -1051,13 +1229,16 @@ object activexOutlookNumbers {
   def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
-  sealed trait `200` extends OlExchangeConnectionMode
+  sealed trait `200`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `200`: `200` = 200.asInstanceOf[`200`]
   
   @js.native
   sealed trait `21`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlDefaultFolders
        with OlObjectClass
        with OlRuleActionType
@@ -1068,7 +1249,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `22`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlDefaultFolders
        with OlRuleActionType
        with OlRuleConditionType
@@ -1078,7 +1260,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `23`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlDefaultFolders
        with OlRuleActionType
        with OlRuleConditionType
@@ -1087,7 +1270,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `24`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlRuleActionType
        with OlRuleConditionType
   @scala.inline
@@ -1095,7 +1279,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `25`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlDefaultFolders
        with OlRuleActionType
        with OlRuleConditionType
@@ -1104,7 +1289,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `26`
-    extends OlObjectClass
+    extends StObject
+       with OlObjectClass
        with OlRuleActionType
        with OlRuleConditionType
   @scala.inline
@@ -1112,14 +1298,16 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `27`
-    extends OlRuleActionType
+    extends StObject
+       with OlRuleActionType
        with OlRuleConditionType
   @scala.inline
   def `27`: `27` = 27.asInstanceOf[`27`]
   
   @js.native
   sealed trait `28`
-    extends OlDefaultFolders
+    extends StObject
+       with OlDefaultFolders
        with OlObjectClass
        with OlRuleActionType
        with OlRuleConditionType
@@ -1128,7 +1316,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `29`
-    extends OlDefaultFolders
+    extends StObject
+       with OlDefaultFolders
        with OlObjectClass
        with OlRuleActionType
        with OlRuleConditionType
@@ -1137,7 +1326,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `3`
-    extends OlAccountType
+    extends StObject
+       with OlAccountType
        with OlActionCopyLike
        with OlActionReplyStyle
        with OlAddressEntryUserType
@@ -1211,7 +1401,8 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `30`
-    extends OlAddressEntryUserType
+    extends StObject
+       with OlAddressEntryUserType
        with OlDefaultFolders
        with OlObjectClass
        with OlRuleActionType
@@ -1220,60 +1411,80 @@ object activexOutlookNumbers {
   def `30`: `30` = 30.asInstanceOf[`30`]
   
   @js.native
-  sealed trait `300` extends OlExchangeConnectionMode
+  sealed trait `300`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `300`: `300` = 300.asInstanceOf[`300`]
   
   @js.native
-  sealed trait `31` extends OlRuleConditionType
+  sealed trait `31`
+    extends StObject
+       with OlRuleConditionType
   @scala.inline
   def `31`: `31` = 31.asInstanceOf[`31`]
   
   @js.native
   sealed trait `32`
-    extends OlDaysOfWeek
+    extends StObject
+       with OlDaysOfWeek
        with OlObjectClass
   @scala.inline
   def `32`: `32` = 32.asInstanceOf[`32`]
   
   @js.native
-  sealed trait `33` extends OlObjectClass
+  sealed trait `33`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `33`: `33` = 33.asInstanceOf[`33`]
   
   @js.native
-  sealed trait `34` extends OlObjectClass
+  sealed trait `34`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `34`: `34` = 34.asInstanceOf[`34`]
   
   @js.native
-  sealed trait `35` extends OlObjectClass
+  sealed trait `35`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `35`: `35` = 35.asInstanceOf[`35`]
   
   @js.native
-  sealed trait `36` extends OlObjectClass
+  sealed trait `36`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `36`: `36` = 36.asInstanceOf[`36`]
   
   @js.native
-  sealed trait `37` extends OlObjectClass
+  sealed trait `37`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `37`: `37` = 37.asInstanceOf[`37`]
   
   @js.native
-  sealed trait `38` extends OlObjectClass
+  sealed trait `38`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `38`: `38` = 38.asInstanceOf[`38`]
   
   @js.native
-  sealed trait `39` extends OlObjectClass
+  sealed trait `39`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `39`: `39` = 39.asInstanceOf[`39`]
   
   @js.native
   sealed trait `4`
-    extends OlActionCopyLike
+    extends StObject
+       with OlActionCopyLike
        with OlActionReplyStyle
        with OlAddressEntryUserType
        with OlAddressListType
@@ -1328,64 +1539,86 @@ object activexOutlookNumbers {
   
   @js.native
   sealed trait `40`
-    extends OlAddressEntryUserType
+    extends StObject
+       with OlAddressEntryUserType
        with OlObjectClass
   @scala.inline
   def `40`: `40` = 40.asInstanceOf[`40`]
   
   @js.native
-  sealed trait `400` extends OlExchangeConnectionMode
+  sealed trait `400`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `400`: `400` = 400.asInstanceOf[`400`]
   
   @js.native
-  sealed trait `41` extends OlObjectClass
+  sealed trait `41`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `41`: `41` = 41.asInstanceOf[`41`]
   
   @js.native
-  sealed trait `42` extends OlObjectClass
+  sealed trait `42`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `42`: `42` = 42.asInstanceOf[`42`]
   
   @js.native
-  sealed trait `43` extends OlObjectClass
+  sealed trait `43`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `43`: `43` = 43.asInstanceOf[`43`]
   
   @js.native
-  sealed trait `44` extends OlObjectClass
+  sealed trait `44`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `44`: `44` = 44.asInstanceOf[`44`]
   
   @js.native
-  sealed trait `45` extends OlObjectClass
+  sealed trait `45`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `45`: `45` = 45.asInstanceOf[`45`]
   
   @js.native
-  sealed trait `46` extends OlObjectClass
+  sealed trait `46`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `46`: `46` = 46.asInstanceOf[`46`]
   
   @js.native
-  sealed trait `47` extends OlObjectClass
+  sealed trait `47`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `47`: `47` = 47.asInstanceOf[`47`]
   
   @js.native
-  sealed trait `48` extends OlObjectClass
+  sealed trait `48`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `48`: `48` = 48.asInstanceOf[`48`]
   
   @js.native
-  sealed trait `49` extends OlObjectClass
+  sealed trait `49`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `49`: `49` = 49.asInstanceOf[`49`]
   
   @js.native
   sealed trait `5`
-    extends OlAccountType
+    extends StObject
+       with OlAccountType
        with OlActionReplyStyle
        with OlAddressEntryUserType
        with OlAttachmentType
@@ -1423,53 +1656,72 @@ object activexOutlookNumbers {
   def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
-  sealed trait `50` extends OlObjectClass
+  sealed trait `50`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `50`: `50` = 50.asInstanceOf[`50`]
   
   @js.native
-  sealed trait `500` extends OlExchangeConnectionMode
+  sealed trait `500`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `500`: `500` = 500.asInstanceOf[`500`]
   
   @js.native
-  sealed trait `51` extends OlObjectClass
+  sealed trait `51`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `51`: `51` = 51.asInstanceOf[`51`]
   
   @js.native
-  sealed trait `52` extends OlObjectClass
+  sealed trait `52`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `52`: `52` = 52.asInstanceOf[`52`]
   
   @js.native
-  sealed trait `53` extends OlObjectClass
+  sealed trait `53`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `53`: `53` = 53.asInstanceOf[`53`]
   
   @js.native
-  sealed trait `54` extends OlObjectClass
+  sealed trait `54`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `54`: `54` = 54.asInstanceOf[`54`]
   
   @js.native
-  sealed trait `55` extends OlObjectClass
+  sealed trait `55`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `55`: `55` = 55.asInstanceOf[`55`]
   
   @js.native
-  sealed trait `56` extends OlObjectClass
+  sealed trait `56`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `56`: `56` = 56.asInstanceOf[`56`]
   
   @js.native
-  sealed trait `57` extends OlObjectClass
+  sealed trait `57`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `57`: `57` = 57.asInstanceOf[`57`]
   
   @js.native
   sealed trait `6`
-    extends OlAttachmentType
+    extends StObject
+       with OlAttachmentType
        with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
@@ -1497,65 +1749,87 @@ object activexOutlookNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
-  sealed trait `60` extends OlObjectClass
+  sealed trait `60`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `60`: `60` = 60.asInstanceOf[`60`]
   
   @js.native
-  sealed trait `600` extends OlExchangeConnectionMode
+  sealed trait `600`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `600`: `600` = 600.asInstanceOf[`600`]
   
   @js.native
-  sealed trait `61` extends OlObjectClass
+  sealed trait `61`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `61`: `61` = 61.asInstanceOf[`61`]
   
   @js.native
-  sealed trait `62` extends OlObjectClass
+  sealed trait `62`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `62`: `62` = 62.asInstanceOf[`62`]
   
   @js.native
-  sealed trait `63` extends OlObjectClass
+  sealed trait `63`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `63`: `63` = 63.asInstanceOf[`63`]
   
   @js.native
   sealed trait `64`
-    extends OlDaysOfWeek
+    extends StObject
+       with OlDaysOfWeek
        with OlObjectClass
   @scala.inline
   def `64`: `64` = 64.asInstanceOf[`64`]
   
   @js.native
-  sealed trait `65` extends OlObjectClass
+  sealed trait `65`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `65`: `65` = 65.asInstanceOf[`65`]
   
   @js.native
-  sealed trait `66` extends OlObjectClass
+  sealed trait `66`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `66`: `66` = 66.asInstanceOf[`66`]
   
   @js.native
-  sealed trait `67` extends OlObjectClass
+  sealed trait `67`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `67`: `67` = 67.asInstanceOf[`67`]
   
   @js.native
-  sealed trait `68` extends OlObjectClass
+  sealed trait `68`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `68`: `68` = 68.asInstanceOf[`68`]
   
   @js.native
-  sealed trait `69` extends OlObjectClass
+  sealed trait `69`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `69`: `69` = 69.asInstanceOf[`69`]
   
   @js.native
   sealed trait `7`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
        with OlContactPhoneNumber
@@ -1578,63 +1852,86 @@ object activexOutlookNumbers {
   def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
-  sealed trait `70` extends OlObjectClass
+  sealed trait `70`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `70`: `70` = 70.asInstanceOf[`70`]
   
   @js.native
-  sealed trait `700` extends OlExchangeConnectionMode
+  sealed trait `700`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `700`: `700` = 700.asInstanceOf[`700`]
   
   @js.native
-  sealed trait `71` extends OlObjectClass
+  sealed trait `71`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `71`: `71` = 71.asInstanceOf[`71`]
   
   @js.native
-  sealed trait `72` extends OlObjectClass
+  sealed trait `72`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `72`: `72` = 72.asInstanceOf[`72`]
   
   @js.native
-  sealed trait `73` extends OlObjectClass
+  sealed trait `73`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `73`: `73` = 73.asInstanceOf[`73`]
   
   @js.native
-  sealed trait `74` extends OlObjectClass
+  sealed trait `74`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `74`: `74` = 74.asInstanceOf[`74`]
   
   @js.native
-  sealed trait `75` extends OlObjectClass
+  sealed trait `75`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `75`: `75` = 75.asInstanceOf[`75`]
   
   @js.native
-  sealed trait `76` extends OlObjectClass
+  sealed trait `76`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `76`: `76` = 76.asInstanceOf[`76`]
   
   @js.native
-  sealed trait `77` extends OlObjectClass
+  sealed trait `77`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `77`: `77` = 77.asInstanceOf[`77`]
   
   @js.native
-  sealed trait `78` extends OlObjectClass
+  sealed trait `78`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `78`: `78` = 78.asInstanceOf[`78`]
   
   @js.native
-  sealed trait `79` extends OlObjectClass
+  sealed trait `79`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `79`: `79` = 79.asInstanceOf[`79`]
   
   @js.native
   sealed trait `8`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
        with OlContactPhoneNumber
@@ -1654,18 +1951,23 @@ object activexOutlookNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
-  sealed trait `80` extends OlObjectClass
+  sealed trait `80`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `80`: `80` = 80.asInstanceOf[`80`]
   
   @js.native
-  sealed trait `800` extends OlExchangeConnectionMode
+  sealed trait `800`
+    extends StObject
+       with OlExchangeConnectionMode
   @scala.inline
   def `800`: `800` = 800.asInstanceOf[`800`]
   
   @js.native
   sealed trait `9`
-    extends OlCategoryColor
+    extends StObject
+       with OlCategoryColor
        with OlCategoryShortcutKey
        with OlColor
        with OlContactPhoneNumber
@@ -1682,13 +1984,16 @@ object activexOutlookNumbers {
   def `9`: `9` = 9.asInstanceOf[`9`]
   
   @js.native
-  sealed trait `98` extends OlObjectClass
+  sealed trait `98`
+    extends StObject
+       with OlObjectClass
   @scala.inline
   def `98`: `98` = 98.asInstanceOf[`98`]
   
   @js.native
   sealed trait `99`
-    extends OlMousePointer
+    extends StObject
+       with OlMousePointer
        with OlObjectClass
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]

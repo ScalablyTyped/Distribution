@@ -2,7 +2,6 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //  RESPONSES
 //
 ////////////////////////
-@js.native
 trait AuthResponse extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
-  var grantedScopes: js.UndefOr[String] = js.native
+  var grantedScopes: js.UndefOr[String] = js.undefined
   
-  var reauthorize_required_in: js.UndefOr[Double] = js.native
+  var reauthorize_required_in: js.UndefOr[Double] = js.undefined
   
-  var signedRequest: String = js.native
+  var signedRequest: String
   
-  var userID: String = js.native
+  var userID: String
 }
 object AuthResponse {
   

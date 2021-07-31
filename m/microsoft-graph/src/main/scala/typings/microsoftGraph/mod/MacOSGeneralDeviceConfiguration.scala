@@ -2,50 +2,50 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MacOSGeneralDeviceConfiguration extends DeviceConfiguration {
+trait MacOSGeneralDeviceConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
-  var compliantAppListType: js.UndefOr[AppListType] = js.native
+  var compliantAppListType: js.UndefOr[AppListType] = js.undefined
   
   /**
     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
     * can contain a maximum of 10000 elements.
     */
-  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
-  var emailInDomainSuffixes: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var emailInDomainSuffixes: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Block simple passwords.
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires.
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of character sets a password must contain. Valid values 0 to 4
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passwords.
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity required before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity required before the screen times out.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block.
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Whether or not to require a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
 }
 object MacOSGeneralDeviceConfiguration {
   

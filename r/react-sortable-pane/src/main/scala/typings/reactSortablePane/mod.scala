@@ -19,7 +19,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -221,37 +220,29 @@ object mod {
       @scala.inline
       def margin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("margin")(x.asInstanceOf[js.Any])
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onClick")
-      @js.native
-      def onClick(): Null = js.native
+      @scala.inline
+      def onClick(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onClick")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onDragStart")
-      @js.native
-      def onDragStart(): Null = js.native
+      @scala.inline
+      def onDragStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onDragStop")
-      @js.native
-      def onDragStop(): Null = js.native
+      @scala.inline
+      def onDragStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStop")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onOrderChange")
-      @js.native
-      def onOrderChange(): Null = js.native
+      @scala.inline
+      def onOrderChange(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onOrderChange")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onResize")
-      @js.native
-      def onResize(): Null = js.native
+      @scala.inline
+      def onResize(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onResizeStart")
-      @js.native
-      def onResizeStart(): Null = js.native
+      @scala.inline
+      def onResizeStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStart")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onResizeStop")
-      @js.native
-      def onResizeStop(): Null = js.native
+      @scala.inline
+      def onResizeStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStop")().asInstanceOf[Null]
       
-      @JSImport("react-sortable-pane", "SortablePane.defaultProps.onTouchStart")
-      @js.native
-      def onTouchStart(): Null = js.native
+      @scala.inline
+      def onTouchStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onTouchStart")().asInstanceOf[Null]
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.springConfig")
       @js.native
@@ -291,18 +282,17 @@ object mod {
     def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
   }
   
-  @js.native
   trait PaneProperty extends StObject {
     
-    var key: PaneKey = js.native
+    var key: PaneKey
     
-    var ref: typings.std.Element | Null = js.native
+    var ref: typings.std.Element | Null
   }
   object PaneProperty {
     
     @scala.inline
     def apply(): PaneProperty = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(key = null, ref = null)
       __obj.asInstanceOf[PaneProperty]
     }
     
@@ -341,12 +331,11 @@ object mod {
     def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
   }
   
-  @js.native
   trait PaneSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PaneSize {
     
@@ -367,24 +356,23 @@ object mod {
     }
   }
   
-  @js.native
   trait SortablePaneProps extends StObject {
     
-    var children: js.Array[ReactElement] = js.native
+    var children: js.Array[ReactElement]
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultOrder: js.UndefOr[js.Array[String]] = js.native
+    var defaultOrder: js.UndefOr[js.Array[String]] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var disableEffect: js.UndefOr[Boolean] = js.native
+    var disableEffect: js.UndefOr[Boolean] = js.undefined
     
-    var dragHandleClassName: js.UndefOr[String] = js.native
+    var dragHandleClassName: js.UndefOr[String] = js.undefined
     
-    var isSortable: js.UndefOr[Boolean] = js.native
+    var isSortable: js.UndefOr[Boolean] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     var onDragStart: js.UndefOr[
         js.Function3[
@@ -393,7 +381,7 @@ object mod {
           /* elementRef */ HTMLElement, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDragStop: js.UndefOr[
         js.Function4[
@@ -403,9 +391,9 @@ object mod {
           /* order */ js.Array[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onOrderChange: js.UndefOr[js.Function1[/* order */ js.Array[String], Unit]] = js.native
+    var onOrderChange: js.UndefOr[js.Function1[/* order */ js.Array[String], Unit]] = js.undefined
     
     var onResize: js.UndefOr[
         js.Function5[
@@ -416,7 +404,7 @@ object mod {
           /* delta */ PaneSize, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onResizeStart: js.UndefOr[
         js.Function3[
@@ -425,7 +413,7 @@ object mod {
           /* dir */ PaneResizeDirection, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onResizeStop: js.UndefOr[
         js.Function5[
@@ -436,13 +424,13 @@ object mod {
           /* delta */ PaneSize, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var order: js.UndefOr[js.Array[String]] = js.native
+    var order: js.UndefOr[js.Array[String]] = js.undefined
     
-    var springConfig: js.UndefOr[SpringHelperConfig] = js.native
+    var springConfig: js.UndefOr[SpringHelperConfig] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SortablePaneProps {
     
@@ -575,20 +563,19 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var isPressed: Boolean = js.native
+    var isPressed: Boolean
     
-    var isResizing: Boolean = js.native
+    var isResizing: Boolean
     
-    var lastPressed: Double = js.native
+    var lastPressed: Double
     
-    var mouse: Double = js.native
+    var mouse: Double
     
-    var panes: js.Array[PaneProperty] = js.native
+    var panes: js.Array[PaneProperty]
   }
   object State {
     
@@ -633,10 +620,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var TouchEvent: typings.std.TouchEvent = js.native
+      var TouchEvent: typings.std.TouchEvent
     }
     object Window {
       

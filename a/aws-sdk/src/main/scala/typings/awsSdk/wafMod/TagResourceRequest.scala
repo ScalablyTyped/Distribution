@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * 
     */
-  var ResourceARN: ResourceArn = js.native
+  var ResourceARN: ResourceArn
   
   /**
     * 
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

@@ -5,16 +5,56 @@ import typings.hapiCatbox.hapiCatboxBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@hapi/catbox", "Client")
   @js.native
-  class Client[T] protected () extends ClientApi[T] {
+  class Client[T] protected ()
+    extends StObject
+       with ClientApi[T] {
     def this(engine: EnginePrototypeOrObject) = this()
     def this(engine: EnginePrototypeOrObject, options: ClientOptions) = this()
+    
+    /**
+      * drop(key) - remove an item from cache where:
+      *  * key - a cache key object (see [ICacheKey]).
+      */
+    /* CompleteClass */
+    override def drop(key: CacheKey): js.Promise[Unit] = js.native
+    
+    /**
+      * get(key, callback) - retrieve an item from the cache engine if found where:
+      *  * key - a cache key object (see [ICacheKey]).
+      */
+    /* CompleteClass */
+    override def get(key: CacheKey): js.Promise[Null | CachedObject[T]] = js.native
+    
+    /** isReady() - returns true if cache engine determines itself as ready, false if it is not ready. */
+    /* CompleteClass */
+    override def isReady(): Boolean = js.native
+    
+    /**
+      * set(key, value, ttl) - store an item in the cache for a specified length of time, where:
+      *  * key - a cache key object (see [ICacheKey]).
+      *  * value - the string or object value to be stored.
+      *  * ttl - a time-to-live value in milliseconds after which the item is automatically removed from the cache (or is marked invalid).
+      */
+    /* CompleteClass */
+    override def set(key: CacheKey, value: T, ttl: Double): js.Promise[Unit] = js.native
+    
+    /** start() - creates a connection to the cache server. Must be called before any other method is available. */
+    /* CompleteClass */
+    override def start(): js.Promise[Unit] = js.native
+    
+    /** stop() - terminates the connection to the cache server. */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
+    /* CompleteClass */
+    override def validateSegmentName(segment: String): Null | Error = js.native
   }
   
   @JSImport("@hapi/catbox", "Policy")
@@ -68,14 +108,13 @@ object mod {
     def ttl(created: Double): Double = js.native
   }
   
-  @js.native
   trait CacheKey extends StObject {
     
     /** id - a unique item identifier string (per segment). Can be an empty string. */
-    var id: String = js.native
+    var id: String
     
     /** segment - a caching segment name string. Enables using a single cache server for storing different sets of items with overlapping ids. */
-    var segment: String = js.native
+    var segment: String
   }
   object CacheKey {
     
@@ -96,26 +135,25 @@ object mod {
     }
   }
   
-  @js.native
   trait CacheStatisticsObject extends StObject {
     
     /** errors - cache operations errors. TODO check this */
-    var errors: Double = js.native
+    var errors: Double
     
     /** generates - number of calls to the generate function. */
-    var generates: Double = js.native
+    var generates: Double
     
     /** gets - number of cache get() requests. */
-    var gets: Double = js.native
+    var gets: Double
     
     /** hits - number of cache get() requests in which the requested id was found in the cache (can be stale). */
-    var hits: Double = js.native
+    var hits: Double
     
     /** sets - number of cache writes. */
-    var sets: Double = js.native
+    var sets: Double
     
     /** stales - number of cache reads with stale requests (only counts the first request in a queued get() operation). */
-    var stales: Double = js.native
+    var stales: Double
   }
   object CacheStatisticsObject {
     
@@ -148,17 +186,16 @@ object mod {
     }
   }
   
-  @js.native
   trait CachedObject[T] extends StObject {
     
     /** item - the value stored in the cache using set(). */
-    var item: T = js.native
+    var item: T
     
     /** stored - the timestamp when the item was stored in the cache (in milliseconds). */
-    var stored: Double = js.native
+    var stored: Double
     
     /** ttl - the remaining time-to-live (not the original value used when storing the object). */
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object CachedObject {
     
@@ -169,7 +206,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CachedObjectMutableBuilder[Self <: CachedObject[_], T] (val x: Self with CachedObject[T]) extends AnyVal {
+    implicit class CachedObjectMutableBuilder[Self <: CachedObject[?], T] (val x: Self & CachedObject[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -182,23 +219,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientApi[T] extends StObject {
     
     /**
       * drop(key) - remove an item from cache where:
       *  * key - a cache key object (see [ICacheKey]).
       */
-    def drop(key: CacheKey): js.Promise[Unit] = js.native
+    def drop(key: CacheKey): js.Promise[Unit]
     
     /**
       * get(key, callback) - retrieve an item from the cache engine if found where:
       *  * key - a cache key object (see [ICacheKey]).
       */
-    def get(key: CacheKey): js.Promise[Null | CachedObject[T]] = js.native
+    def get(key: CacheKey): js.Promise[Null | CachedObject[T]]
     
     /** isReady() - returns true if cache engine determines itself as ready, false if it is not ready. */
-    def isReady(): Boolean = js.native
+    def isReady(): Boolean
     
     /**
       * set(key, value, ttl) - store an item in the cache for a specified length of time, where:
@@ -206,16 +242,16 @@ object mod {
       *  * value - the string or object value to be stored.
       *  * ttl - a time-to-live value in milliseconds after which the item is automatically removed from the cache (or is marked invalid).
       */
-    def set(key: CacheKey, value: T, ttl: Double): js.Promise[Unit] = js.native
+    def set(key: CacheKey, value: T, ttl: Double): js.Promise[Unit]
     
     /** start() - creates a connection to the cache server. Must be called before any other method is available. */
-    def start(): js.Promise[Unit] = js.native
+    def start(): js.Promise[Unit]
     
     /** stop() - terminates the connection to the cache server. */
-    def stop(): Unit = js.native
+    def stop(): Unit
     
     /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
-    def validateSegmentName(segment: String): Null | Error = js.native
+    def validateSegmentName(segment: String): Null | Error
   }
   object ClientApi {
     
@@ -234,7 +270,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClientApiMutableBuilder[Self <: ClientApi[_], T] (val x: Self with ClientApi[T]) extends AnyVal {
+    implicit class ClientApiMutableBuilder[Self <: ClientApi[?], T] (val x: Self & ClientApi[T]) extends AnyVal {
       
       @scala.inline
       def setDrop(value: CacheKey => js.Promise[Unit]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
@@ -259,13 +295,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
       * this will store items under keys that start with this value.
       */
-    var partition: js.UndefOr[String] = js.native
+    var partition: js.UndefOr[String] = js.undefined
   }
   object ClientOptions {
     
@@ -287,13 +322,14 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.hapiCatbox.mod.PolicyOptionVariants because Already inherited */ @js.native
-  trait DecoratedPolicyOptions[T] extends PolicyOptions[T] {
+  - typings.hapiCatbox.mod.PolicyOptionVariants because Already inherited */ trait DecoratedPolicyOptions[T]
+    extends StObject
+       with PolicyOptions[T] {
     
     /**
       * @default false
       */
-    var getDecoratedValue: js.UndefOr[Boolean] = js.native
+    var getDecoratedValue: js.UndefOr[Boolean] = js.undefined
   }
   object DecoratedPolicyOptions {
     
@@ -304,7 +340,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DecoratedPolicyOptionsMutableBuilder[Self <: DecoratedPolicyOptions[_], T] (val x: Self with DecoratedPolicyOptions[T]) extends AnyVal {
+    implicit class DecoratedPolicyOptionsMutableBuilder[Self <: DecoratedPolicyOptions[?], T] (val x: Self & DecoratedPolicyOptions[T]) extends AnyVal {
       
       @scala.inline
       def setGetDecoratedValue(value: Boolean): Self = StObject.set(x, "getDecoratedValue", value.asInstanceOf[js.Any])
@@ -314,14 +350,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DecoratedResult[T] extends StObject {
     
-    var cached: PolicyGetCachedOptions[T] = js.native
+    var cached: PolicyGetCachedOptions[T]
     
-    var report: PolicyGetReportLog = js.native
+    var report: PolicyGetReportLog
     
-    var value: T = js.native
+    var value: T
   }
   object DecoratedResult {
     
@@ -332,7 +367,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DecoratedResultMutableBuilder[Self <: DecoratedResult[_], T] (val x: Self with DecoratedResult[T]) extends AnyVal {
+    implicit class DecoratedResultMutableBuilder[Self <: DecoratedResult[?], T] (val x: Self & DecoratedResult[T]) extends AnyVal {
       
       @scala.inline
       def setCached(value: PolicyGetCachedOptions[T]): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
@@ -346,16 +381,17 @@ object mod {
   }
   
   @js.native
-  trait EnginePrototype[T] extends Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
+  trait EnginePrototype[T]
+    extends StObject
+       with Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
   
   type EnginePrototypeOrObject = EnginePrototype[js.Any] | ClientApi[js.Any]
   
   type GenerateFunc[T] = js.Function2[/* id */ Id, /* flags */ GenerateFuncFlags, js.Promise[T]]
   
-  @js.native
   trait GenerateFuncFlags extends StObject {
     
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object GenerateFuncFlags {
     
@@ -375,20 +411,19 @@ object mod {
   
   type Id = String | typings.hapiCatbox.anon.Id
   
-  @js.native
   trait PolicyGetCachedOptions[T] extends StObject {
     
     /** isStale - true if the item is stale. */
-    var isStale: Boolean = js.native
+    var isStale: Boolean
     
     /** item - the cached value. */
-    var item: T = js.native
+    var item: T
     
     /** stored - the timestamp when the item was stored in the cache. */
-    var stored: Double = js.native
+    var stored: Double
     
     /** ttl - the cache ttl value for the record. */
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object PolicyGetCachedOptions {
     
@@ -399,7 +434,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PolicyGetCachedOptionsMutableBuilder[Self <: PolicyGetCachedOptions[_], T] (val x: Self with PolicyGetCachedOptions[T]) extends AnyVal {
+    implicit class PolicyGetCachedOptionsMutableBuilder[Self <: PolicyGetCachedOptions[?], T] (val x: Self & PolicyGetCachedOptions[T]) extends AnyVal {
       
       @scala.inline
       def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
@@ -415,23 +450,22 @@ object mod {
     }
   }
   
-  @js.native
   trait PolicyGetReportLog extends StObject {
     
     /** error - lookup error. */
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
     /** isStale - true if the item is stale. */
-    var isStale: Boolean = js.native
+    var isStale: Boolean
     
     /** msec - the cache lookup time in milliseconds. */
-    var msec: Double = js.native
+    var msec: Double
     
     /** stored - the timestamp when the item was stored in the cache. */
-    var stored: Double = js.native
+    var stored: Double
     
     /** ttl - the cache ttl value for the record. */
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object PolicyGetReportLog {
     
@@ -484,39 +518,40 @@ object mod {
     }
   }
   
-  @js.native
-  trait PolicyOptions[T] extends PolicyOptionVariants[T] {
+  trait PolicyOptions[T]
+    extends StObject
+       with PolicyOptionVariants[T] {
     
     /** dropOnError - if true, an error or timeout in the generateFunc causes the stale value to be evicted from the cache. Defaults to true. */
-    var dropOnError: js.UndefOr[Boolean] = js.native
+    var dropOnError: js.UndefOr[Boolean] = js.undefined
     
     /** expiresAt - time of day expressed in 24h notation using the 'HH:MM' format, at which point all cache records for the route expire. Uses local time. Cannot be used together with expiresIn. */
-    var expiresAt: js.UndefOr[String] = js.native
+    var expiresAt: js.UndefOr[String] = js.undefined
     
     /** expiresIn - relative expiration expressed in the number of milliseconds since the item was saved in the cache. Cannot be used together with expiresAt. */
-    var expiresIn: js.UndefOr[Double] = js.native
+    var expiresIn: js.UndefOr[Double] = js.undefined
     
     /** generateFunc - a function used to generate a new cache item if one is not found in the cache when calling get(). The method's signature is function(id, next) where: */
-    var generateFunc: js.UndefOr[GenerateFunc[T]] = js.native
+    var generateFunc: js.UndefOr[GenerateFunc[T]] = js.undefined
     
     /** generateIgnoreWriteError - if false, an upstream cache write error will be passed back with the generated value when calling the get() method. Defaults to true. */
-    var generateIgnoreWriteError: js.UndefOr[Boolean] = js.native
+    var generateIgnoreWriteError: js.UndefOr[Boolean] = js.undefined
     
     /** generateOnReadError - if false, an upstream cache read error will stop the get() method from calling the generate function and will instead pass back the cache error. Defaults to true. */
-    var generateOnReadError: js.UndefOr[Boolean] = js.native
+    var generateOnReadError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * generateTimeout - number of milliseconds to wait before returning a timeout error when the generateFunc function takes too long to return a value.
       * When the value is eventually returned, it is stored in the cache for future requests. Required if generateFunc is present.
       * Set to false to disable timeouts which may cause all get() requests to get stuck forever.
       */
-    var generateTimeout: js.UndefOr[Double | `false`] = js.native
+    var generateTimeout: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * pendingGenerateTimeout - number of milliseconds while generateFunc call is in progress for a given id, before a subsequent generateFunc call is allowed.
       * @default 0, no blocking of concurrent generateFunc calls beyond staleTimeout.
       */
-    var pendingGenerateTimeout: js.UndefOr[Double] = js.native
+    var pendingGenerateTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * staleIn - number of milliseconds to mark an item stored in cache as stale and attempt to regenerate it when generateFunc is provided.
@@ -524,10 +559,10 @@ object mod {
       *  * stored - the timestamp when the item was stored in the cache (in milliseconds).
       *  * ttl - the remaining time-to-live (not the original value used when storing the object).
       */
-    var staleIn: js.UndefOr[Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double])] = js.native
+    var staleIn: js.UndefOr[Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double])] = js.undefined
     
     /** staleTimeout - number of milliseconds to wait before returning a stale value while generateFunc is generating a fresh value. */
-    var staleTimeout: js.UndefOr[Double] = js.native
+    var staleTimeout: js.UndefOr[Double] = js.undefined
   }
   object PolicyOptions {
     
@@ -538,7 +573,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PolicyOptionsMutableBuilder[Self <: PolicyOptions[_], T] (val x: Self with PolicyOptions[T]) extends AnyVal {
+    implicit class PolicyOptionsMutableBuilder[Self <: PolicyOptions[?], T] (val x: Self & PolicyOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDropOnError(value: Boolean): Self = StObject.set(x, "dropOnError", value.asInstanceOf[js.Any])

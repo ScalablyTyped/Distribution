@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.ARGB
 import typings.html5plus.html5plusStrings.RGB565
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewDrawOptions extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait PlusWebviewWebviewDrawOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var bit: js.UndefOr[RGB565 | ARGB] = js.native
+  var bit: js.UndefOr[RGB565 | ARGB] = js.undefined
   
   /**
     * 是否检测截屏图片是否为空白
@@ -40,7 +38,7 @@ trait PlusWebviewWebviewDrawOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var check: js.UndefOr[Boolean] = js.native
+  var check: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否检测当前是否弹出软键盘
@@ -51,7 +49,7 @@ trait PlusWebviewWebviewDrawOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var checkKeyboard: js.UndefOr[Boolean] = js.native
+  var checkKeyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 设置截屏区域
@@ -59,7 +57,7 @@ trait PlusWebviewWebviewDrawOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var clip: js.UndefOr[PlusNativeObj] = js.native
+  var clip: js.UndefOr[PlusNativeObj] = js.undefined
 }
 object PlusWebviewWebviewDrawOptions {
   

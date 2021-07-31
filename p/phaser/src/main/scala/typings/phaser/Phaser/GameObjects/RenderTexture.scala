@@ -28,7 +28,6 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,7 +44,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait RenderTexture
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with ComputedSize
@@ -135,45 +135,21 @@ trait RenderTexture
     * @param tint WebGL only. The tint color value. Only used for Texture Frames and if not specified defaults to the `globalTint` property. Game Objects use their own current tint value.
     */
   def draw(entries: js.Any): this.type = js.native
-  def draw(
-    entries: js.Any,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def draw(entries: js.Any, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
-  def draw(
-    entries: js.Any,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def draw(entries: js.Any, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def draw(
-    entries: js.Any,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def draw(entries: js.Any, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double): this.type = js.native
-  def draw(entries: js.Any, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double, tint: Double): this.type = js.native
   def draw(entries: js.Any, x: Double): this.type = js.native
-  def draw(
-    entries: js.Any,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def draw(entries: js.Any, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
-  def draw(entries: js.Any, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double, tint: Double): this.type = js.native
   def draw(entries: js.Any, x: Double, y: Double): this.type = js.native
-  def draw(entries: js.Any, x: Double, y: Double, alpha: js.UndefOr[scala.Nothing], tint: Double): this.type = js.native
   def draw(entries: js.Any, x: Double, y: Double, alpha: Double): this.type = js.native
   def draw(entries: js.Any, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Double, y: Unit, alpha: Double): this.type = js.native
+  def draw(entries: js.Any, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Double, alpha: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Unit, alpha: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def draw(entries: js.Any, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
   
   /**
     * Draws the Texture Frame to the Render Texture at the given position.
@@ -200,188 +176,53 @@ trait RenderTexture
     * @param tint WebGL only. The tint color to use. If not specified it uses the `globalTint` property.
     */
   def drawFrame(key: String): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: Double, y: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: Double, y: Double, alpha: Double): this.type = js.native
-  def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: String): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: String, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: String, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double): this.type = js.native
-  def drawFrame(key: String, frame: String, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: String, x: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: String,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: String, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
-  def drawFrame(key: String, frame: String, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: String, x: Double, y: Double): this.type = js.native
-  def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: js.UndefOr[scala.Nothing], tint: Double): this.type = js.native
   def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double): this.type = js.native
   def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: integer): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: integer,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: integer,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: integer,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: integer,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: js.UndefOr[scala.Nothing], y: Double, alpha: Double, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: integer, x: Double): this.type = js.native
-  def drawFrame(
-    key: String,
-    frame: integer,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    tint: Double
-  ): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: Double, y: js.UndefOr[scala.Nothing], alpha: Double, tint: Double): this.type = js.native
   def drawFrame(key: String, frame: integer, x: Double, y: Double): this.type = js.native
-  def drawFrame(key: String, frame: integer, x: Double, y: Double, alpha: js.UndefOr[scala.Nothing], tint: Double): this.type = js.native
   def drawFrame(key: String, frame: integer, x: Double, y: Double, alpha: Double): this.type = js.native
   def drawFrame(key: String, frame: integer, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Double, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Double, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Unit, alpha: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+  def drawFrame(key: String, frame: integer, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
   
   /**
     * Draws the given object, or an array of objects, to this Render Texture using a blend mode of ERASE.
@@ -425,9 +266,9 @@ trait RenderTexture
     * @param y The y position to draw the Frame at, or the offset applied to the object.
     */
   def erase(entries: js.Any): this.type = js.native
-  def erase(entries: js.Any, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def erase(entries: js.Any, x: Double): this.type = js.native
   def erase(entries: js.Any, x: Double, y: Double): this.type = js.native
+  def erase(entries: js.Any, x: Unit, y: Double): this.type = js.native
   
   /**
     * Fills the Render Texture with the given color.
@@ -439,138 +280,37 @@ trait RenderTexture
     * @param height The height of the fill rectangle. Default this.frame.cutHeight.
     */
   def fill(rgb: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: Double,
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    width: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    width: Double,
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: js.UndefOr[scala.Nothing], x: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    width: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    width: Double,
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: js.UndefOr[scala.Nothing], x: Double, y: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    x: Double,
-    y: Double,
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: js.UndefOr[scala.Nothing], x: Double, y: Double, width: Double): this.type = js.native
-  def fill(rgb: Double, alpha: js.UndefOr[scala.Nothing], x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: Double,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: Double,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: Double
-  ): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: Double,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: Double,
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: Double,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double, x: Double): this.type = js.native
-  def fill(
-    rgb: Double,
-    alpha: Double,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double, x: Double, y: Double): this.type = js.native
-  def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+  def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
   
   /**
     * A reference to the GL Frame Buffer this Render Texture is drawing to.
@@ -681,9 +421,9 @@ trait RenderTexture
     * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
     */
   def snapshot(callback: SnapshotCallback): this.type = js.native
-  def snapshot(callback: SnapshotCallback, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): this.type = js.native
   def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
   def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+  def snapshot(callback: SnapshotCallback, `type`: Unit, encoderOptions: Double): this.type = js.native
   
   /**
     * Takes a snapshot of the given area of this Render Texture.
@@ -711,15 +451,6 @@ trait RenderTexture
     width: integer,
     height: integer,
     callback: SnapshotCallback,
-    `type`: js.UndefOr[scala.Nothing],
-    encoderOptions: Double
-  ): this.type = js.native
-  def snapshotArea(
-    x: integer,
-    y: integer,
-    width: integer,
-    height: integer,
-    callback: SnapshotCallback,
     `type`: String
   ): this.type = js.native
   def snapshotArea(
@@ -729,6 +460,15 @@ trait RenderTexture
     height: integer,
     callback: SnapshotCallback,
     `type`: String,
+    encoderOptions: Double
+  ): this.type = js.native
+  def snapshotArea(
+    x: integer,
+    y: integer,
+    width: integer,
+    height: integer,
+    callback: SnapshotCallback,
+    `type`: Unit,
     encoderOptions: Double
   ): this.type = js.native
   

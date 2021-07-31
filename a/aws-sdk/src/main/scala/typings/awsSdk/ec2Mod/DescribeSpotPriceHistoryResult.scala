@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSpotPriceHistoryResult extends StObject {
   
   /**
     * The token required to retrieve the next set of results. This value is null or an empty string when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The historical Spot prices.
     */
-  var SpotPriceHistory: js.UndefOr[SpotPriceHistoryList] = js.native
+  var SpotPriceHistory: js.UndefOr[SpotPriceHistoryList] = js.undefined
 }
 object DescribeSpotPriceHistoryResult {
   

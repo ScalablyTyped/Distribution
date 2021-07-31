@@ -3,46 +3,46 @@ package typings.geojson
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   type BBox = (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple6[Double, Double, Double, Double, Double, Double])
   
-  @js.native
-  trait Feature[G /* <: Geometry | Null */, P] extends GeoJsonObject {
+  trait Feature[G /* <: Geometry | Null */, P]
+    extends StObject
+       with GeoJsonObject {
     
     /**
       * The feature's geometry
       */
-    var geometry: G = js.native
+    var geometry: G
     
     /**
       * A value that uniquely identifies this feature in a
       * https://tools.ietf.org/html/rfc7946#section-3.2.
       */
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Properties associated with this feature.
       */
-    var properties: P = js.native
+    var properties: P
     
     @JSName("type")
-    var type_Feature: typings.geojson.geojsonStrings.Feature = js.native
+    var type_Feature: typings.geojson.geojsonStrings.Feature
   }
   object Feature {
     
     @scala.inline
-    def apply[G /* <: Geometry | Null */, P](geometry: G, properties: P, `type`: typings.geojson.geojsonStrings.Feature): Feature[G, P] = {
+    def apply[G /* <: Geometry | Null */, P](geometry: G, properties: P): Feature[G, P] = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[Feature[G, P]]
     }
     
     @scala.inline
-    implicit class FeatureMutableBuilder[Self <: Feature[_, _], G /* <: Geometry | Null */, P] (val x: Self with (Feature[G, P])) extends AnyVal {
+    implicit class FeatureMutableBuilder[Self <: Feature[?, ?], G /* <: Geometry | Null */, P] (val x: Self & (Feature[G, P])) extends AnyVal {
       
       @scala.inline
       def setGeometry(value: G): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
@@ -61,25 +61,26 @@ object mod {
     }
   }
   
-  @js.native
-  trait FeatureCollection[G /* <: Geometry | Null */, P] extends GeoJsonObject {
+  trait FeatureCollection[G /* <: Geometry | Null */, P]
+    extends StObject
+       with GeoJsonObject {
     
-    var features: js.Array[Feature[G, P]] = js.native
+    var features: js.Array[Feature[G, P]]
     
     @JSName("type")
-    var type_FeatureCollection: typings.geojson.geojsonStrings.FeatureCollection = js.native
+    var type_FeatureCollection: typings.geojson.geojsonStrings.FeatureCollection
   }
   object FeatureCollection {
     
     @scala.inline
-    def apply[G /* <: Geometry | Null */, P](features: js.Array[Feature[G, P]], `type`: typings.geojson.geojsonStrings.FeatureCollection): FeatureCollection[G, P] = {
+    def apply[G /* <: Geometry | Null */, P](features: js.Array[Feature[G, P]]): FeatureCollection[G, P] = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("FeatureCollection")
       __obj.asInstanceOf[FeatureCollection[G, P]]
     }
     
     @scala.inline
-    implicit class FeatureCollectionMutableBuilder[Self <: FeatureCollection[_, _], G /* <: Geometry | Null */, P] (val x: Self with (FeatureCollection[G, P])) extends AnyVal {
+    implicit class FeatureCollectionMutableBuilder[Self <: FeatureCollection[?, ?], G /* <: Geometry | Null */, P] (val x: Self & (FeatureCollection[G, P])) extends AnyVal {
       
       @scala.inline
       def setFeatures(value: js.Array[Feature[G, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
@@ -129,7 +130,6 @@ object mod {
     def Polygon: typings.geojson.geojsonStrings.Polygon = "Polygon".asInstanceOf[typings.geojson.geojsonStrings.Polygon]
   }
   
-  @js.native
   trait GeoJsonObject extends StObject {
     
     /**
@@ -140,7 +140,7 @@ object mod {
       * The axes order of a bbox follows the axes order of geometries.
       * https://tools.ietf.org/html/rfc7946#section-5
       */
-    var bbox: js.UndefOr[BBox] = js.native
+    var bbox: js.UndefOr[BBox] = js.undefined
     
     // Don't include foreign members directly into this type def.
     // in order to preserve type safety.
@@ -148,7 +148,7 @@ object mod {
     /**
       * Specifies the type of GeoJSON object.
       */
-    var `type`: GeoJsonTypes = js.native
+    var `type`: GeoJsonTypes
   }
   object GeoJsonObject {
     
@@ -231,74 +231,71 @@ object mod {
   object Geometry {
     
     @scala.inline
-    def GeometryCollection(geometries: js.Array[Geometry], `type`: typings.geojson.geojsonStrings.GeometryCollection): typings.geojson.mod.GeometryCollection = {
+    def GeometryCollection(geometries: js.Array[Geometry]): typings.geojson.mod.GeometryCollection = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[typings.geojson.mod.GeometryCollection]
     }
     
     @scala.inline
-    def LineString(coordinates: js.Array[Position], `type`: typings.geojson.geojsonStrings.LineString): typings.geojson.mod.LineString = {
+    def LineString(coordinates: js.Array[Position]): typings.geojson.mod.LineString = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("LineString")
       __obj.asInstanceOf[typings.geojson.mod.LineString]
     }
     
     @scala.inline
-    def MultiLineString(coordinates: js.Array[js.Array[Position]], `type`: typings.geojson.geojsonStrings.MultiLineString): typings.geojson.mod.MultiLineString = {
+    def MultiLineString(coordinates: js.Array[js.Array[Position]]): typings.geojson.mod.MultiLineString = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiLineString")
       __obj.asInstanceOf[typings.geojson.mod.MultiLineString]
     }
     
     @scala.inline
-    def MultiPoint(coordinates: js.Array[Position], `type`: typings.geojson.geojsonStrings.MultiPoint): typings.geojson.mod.MultiPoint = {
+    def MultiPoint(coordinates: js.Array[Position]): typings.geojson.mod.MultiPoint = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPoint")
       __obj.asInstanceOf[typings.geojson.mod.MultiPoint]
     }
     
     @scala.inline
-    def MultiPolygon(
-      coordinates: js.Array[js.Array[js.Array[Position]]],
-      `type`: typings.geojson.geojsonStrings.MultiPolygon
-    ): typings.geojson.mod.MultiPolygon = {
+    def MultiPolygon(coordinates: js.Array[js.Array[js.Array[Position]]]): typings.geojson.mod.MultiPolygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[typings.geojson.mod.MultiPolygon]
     }
     
     @scala.inline
-    def Point(coordinates: Position, `type`: typings.geojson.geojsonStrings.Point): typings.geojson.mod.Point = {
+    def Point(coordinates: Position): typings.geojson.mod.Point = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[typings.geojson.mod.Point]
     }
     
     @scala.inline
-    def Polygon(coordinates: js.Array[js.Array[Position]], `type`: typings.geojson.geojsonStrings.Polygon): typings.geojson.mod.Polygon = {
+    def Polygon(coordinates: js.Array[js.Array[Position]]): typings.geojson.mod.Polygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Polygon")
       __obj.asInstanceOf[typings.geojson.mod.Polygon]
     }
   }
   
-  @js.native
   trait GeometryCollection
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var geometries: js.Array[Geometry] = js.native
+    var geometries: js.Array[Geometry]
     
     @JSName("type")
-    var type_GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection = js.native
+    var type_GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection
   }
   object GeometryCollection {
     
     @scala.inline
-    def apply(geometries: js.Array[Geometry], `type`: typings.geojson.geojsonStrings.GeometryCollection): GeometryCollection = {
+    def apply(geometries: js.Array[Geometry]): GeometryCollection = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[GeometryCollection]
     }
     
@@ -318,22 +315,22 @@ object mod {
   
   type GeometryObject = Geometry
   
-  @js.native
   trait LineString
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: js.Array[Position] = js.native
+    var coordinates: js.Array[Position]
     
     @JSName("type")
-    var type_LineString: typings.geojson.geojsonStrings.LineString = js.native
+    var type_LineString: typings.geojson.geojsonStrings.LineString
   }
   object LineString {
     
     @scala.inline
-    def apply(coordinates: js.Array[Position], `type`: typings.geojson.geojsonStrings.LineString): LineString = {
+    def apply(coordinates: js.Array[Position]): LineString = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("LineString")
       __obj.asInstanceOf[LineString]
     }
     
@@ -351,22 +348,22 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiLineString
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: js.Array[js.Array[Position]] = js.native
+    var coordinates: js.Array[js.Array[Position]]
     
     @JSName("type")
-    var type_MultiLineString: typings.geojson.geojsonStrings.MultiLineString = js.native
+    var type_MultiLineString: typings.geojson.geojsonStrings.MultiLineString
   }
   object MultiLineString {
     
     @scala.inline
-    def apply(coordinates: js.Array[js.Array[Position]], `type`: typings.geojson.geojsonStrings.MultiLineString): MultiLineString = {
+    def apply(coordinates: js.Array[js.Array[Position]]): MultiLineString = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiLineString")
       __obj.asInstanceOf[MultiLineString]
     }
     
@@ -384,22 +381,22 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiPoint
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: js.Array[Position] = js.native
+    var coordinates: js.Array[Position]
     
     @JSName("type")
-    var type_MultiPoint: typings.geojson.geojsonStrings.MultiPoint = js.native
+    var type_MultiPoint: typings.geojson.geojsonStrings.MultiPoint
   }
   object MultiPoint {
     
     @scala.inline
-    def apply(coordinates: js.Array[Position], `type`: typings.geojson.geojsonStrings.MultiPoint): MultiPoint = {
+    def apply(coordinates: js.Array[Position]): MultiPoint = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPoint")
       __obj.asInstanceOf[MultiPoint]
     }
     
@@ -417,25 +414,22 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiPolygon
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: js.Array[js.Array[js.Array[Position]]] = js.native
+    var coordinates: js.Array[js.Array[js.Array[Position]]]
     
     @JSName("type")
-    var type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon = js.native
+    var type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon
   }
   object MultiPolygon {
     
     @scala.inline
-    def apply(
-      coordinates: js.Array[js.Array[js.Array[Position]]],
-      `type`: typings.geojson.geojsonStrings.MultiPolygon
-    ): MultiPolygon = {
+    def apply(coordinates: js.Array[js.Array[js.Array[Position]]]): MultiPolygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[MultiPolygon]
     }
     
@@ -453,22 +447,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Point
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: Position = js.native
+    var coordinates: Position
     
     @JSName("type")
-    var type_Point: typings.geojson.geojsonStrings.Point = js.native
+    var type_Point: typings.geojson.geojsonStrings.Point
   }
   object Point {
     
     @scala.inline
-    def apply(coordinates: Position, `type`: typings.geojson.geojsonStrings.Point): Point = {
+    def apply(coordinates: Position): Point = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[Point]
     }
     
@@ -486,22 +480,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Polygon
-    extends GeoJsonObject
+    extends StObject
+       with GeoJsonObject
        with Geometry {
     
-    var coordinates: js.Array[js.Array[Position]] = js.native
+    var coordinates: js.Array[js.Array[Position]]
     
     @JSName("type")
-    var type_Polygon: typings.geojson.geojsonStrings.Polygon = js.native
+    var type_Polygon: typings.geojson.geojsonStrings.Polygon
   }
   object Polygon {
     
     @scala.inline
-    def apply(coordinates: js.Array[js.Array[Position]], `type`: typings.geojson.geojsonStrings.Polygon): Polygon = {
+    def apply(coordinates: js.Array[js.Array[Position]]): Polygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Polygon")
       __obj.asInstanceOf[Polygon]
     }
     

@@ -2,30 +2,28 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMMSTransitionEvent extends StObject {
   
   @JSName("MSHTML.DOMMSTransitionEvent_typekey")
-  var MSHTMLDotDOMMSTransitionEvent_typekey: DOMMSTransitionEvent = js.native
+  var MSHTMLDotDOMMSTransitionEvent_typekey: DOMMSTransitionEvent
   
-  val bubbles: Boolean = js.native
+  val bubbles: Boolean
   
-  var cancelBubble: Boolean = js.native
+  var cancelBubble: Boolean
   
-  val cancelable: Boolean = js.native
+  val cancelable: Boolean
   
-  val currentTarget: IEventTarget = js.native
+  val currentTarget: IEventTarget
   
-  val defaultPrevented: Boolean = js.native
+  val defaultPrevented: Boolean
   
-  val elapsedTime: Double = js.native
+  val elapsedTime: Double
   
-  val eventPhase: Double = js.native
+  val eventPhase: Double
   
-  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit
   
   def initMSTransitionEvent(
     eventType: String,
@@ -33,25 +31,25 @@ trait DOMMSTransitionEvent extends StObject {
     cancelable: Boolean,
     propertyName: String,
     elapsedTime: Double
-  ): Unit = js.native
+  ): Unit
   
-  val isTrusted: Boolean = js.native
+  val isTrusted: Boolean
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  val propertyName: String = js.native
+  val propertyName: String
   
-  val srcElement: IHTMLElement = js.native
+  val srcElement: IHTMLElement
   
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  val target: IEventTarget = js.native
+  val target: IEventTarget
   
-  val timeStamp: Double = js.native
+  val timeStamp: Double
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object DOMMSTransitionEvent {
   

@@ -3,36 +3,36 @@ package typings.pickadate.Pickadate
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateItem extends Item {
+trait DateItem
+  extends StObject
+     with Item {
   
   /**
     * The date of the month.
     */
-  var date: Double = js.native
+  var date: Double
   
   /**
     * The day of the week with zero-as-index.
     */
-  var day: Double = js.native
+  var day: Double
   
   /**
     * The month with zero-as-index.
     */
-  var month: Double = js.native
+  var month: Double
   
   /**
     * The underlying JavaScript Date object.
     */
-  var obj: Date = js.native
+  var obj: Date
   
   /**
     * The full year.
     */
-  var year: Double = js.native
+  var year: Double
 }
 object DateItem {
   

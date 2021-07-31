@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingStatisticsResponse extends StObject {
   
   /**
     * An array of objects, one for each group of findings that meet the filter criteria specified in the request.
     */
-  var countsByGroup: js.UndefOr[listOfGroupCount] = js.native
+  var countsByGroup: js.UndefOr[listOfGroupCount] = js.undefined
 }
 object GetFindingStatisticsResponse {
   

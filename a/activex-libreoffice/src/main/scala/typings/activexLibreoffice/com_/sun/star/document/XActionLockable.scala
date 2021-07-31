@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to prevent object internal updates for a certain period to be able to quickly change multiple parts of the objects, where the
   * updates would invalidate each other, anyway.
   */
-@js.native
-trait XActionLockable extends XInterface {
+trait XActionLockable
+  extends StObject
+     with XInterface {
   
   /** increments the lock count of the object by one. */
-  def addActionLock(): Unit = js.native
+  def addActionLock(): Unit
   
   /** @returns `TRUE` if at least one lock exists. */
-  def isActionLocked(): Boolean = js.native
+  def isActionLocked(): Boolean
   
   /** decrements the lock count of the object by one. */
-  def removeActionLock(): Unit = js.native
+  def removeActionLock(): Unit
   
   /**
     * resets the locking level.
@@ -29,14 +29,14 @@ trait XActionLockable extends XInterface {
     * This method is used for debugging purposes. The debugging environment of a programming language can reset the locks to allow refreshing of the view if
     * a breakpoint is reached or step execution is used.
     */
-  def resetActionLocks(): Double = js.native
+  def resetActionLocks(): Double
   
   /**
     * sets the locking level.
     *
     * This method is used for debugging purposes. The programming environment can restore the locking after a break of a debug session.
     */
-  def setActionLocks(nLock: Double): Unit = js.native
+  def setActionLocks(nLock: Double): Unit
 }
 object XActionLockable {
   

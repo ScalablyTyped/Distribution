@@ -5,14 +5,14 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
-trait ControlFontDialog extends XExecutableDialog {
+trait ControlFontDialog
+  extends StObject
+     with XExecutableDialog {
   
-  def createWithGridModel(GridModel: XPropertySet): Unit = js.native
+  def createWithGridModel(GridModel: XPropertySet): Unit
 }
 object ControlFontDialog {
   

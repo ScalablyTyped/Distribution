@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
-@js.native
 trait DocumentPropertiesUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var manager: js.UndefOr[String] = js.native
+  var manager: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var revisionNumber: js.UndefOr[Double] = js.native
+  var revisionNumber: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait DocumentPropertiesUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DocumentPropertiesUpdateData {
   

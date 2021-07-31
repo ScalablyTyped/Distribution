@@ -5,24 +5,23 @@ import typings.regexpp.regexppStrings.space
 import typings.regexpp.regexppStrings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EscapeCharacterSet
-  extends CharacterSet
+  extends StObject
      with NodeBase
-     with CharacterClassElement {
+     with CharacterClassElement
+     with CharacterSet {
   
-  var kind: digit | space | word = js.native
+  var kind: digit | space | word
   
-  var negate: Boolean = js.native
+  var negate: Boolean
   
   @JSName("parent")
-  var parent_EscapeCharacterSet: Alternative | Quantifier | CharacterClass = js.native
+  var parent_EscapeCharacterSet: Alternative | Quantifier | CharacterClass
   
   @JSName("type")
-  var type_EscapeCharacterSet: typings.regexpp.regexppStrings.CharacterSet = js.native
+  var type_EscapeCharacterSet: typings.regexpp.regexppStrings.CharacterSet
 }
 object EscapeCharacterSet {
   
@@ -33,11 +32,10 @@ object EscapeCharacterSet {
     negate: Boolean,
     parent: Alternative | Quantifier | CharacterClass,
     raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.CharacterSet
+    start: Double
   ): EscapeCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[EscapeCharacterSet]
   }
   

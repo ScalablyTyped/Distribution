@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseItemVersion extends Entity {
+trait BaseItemVersion
+  extends StObject
+     with Entity {
   
   // Identity of the user which last modified the version. Read-only.
-  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Date and time the version was last modified. Read-only.
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the publication status of this particular version. Read-only.
-  var publication: js.UndefOr[NullableOption[PublicationFacet]] = js.native
+  var publication: js.UndefOr[NullableOption[PublicationFacet]] = js.undefined
 }
 object BaseItemVersion {
   

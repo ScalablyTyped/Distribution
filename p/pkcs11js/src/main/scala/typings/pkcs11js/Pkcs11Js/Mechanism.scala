@@ -3,15 +3,13 @@ package typings.pkcs11js.Pkcs11Js
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mechanism extends StObject {
   
-  var mechanism: Double = js.native
+  var mechanism: Double
   
-  var parameter: js.UndefOr[Buffer | IParams] = js.native
+  var parameter: js.UndefOr[Buffer | IParams] = js.undefined
 }
 object Mechanism {
   

@@ -2,15 +2,14 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides visibility into a distant room from your script.
   */
-@js.native
 trait StructureObserver
-  extends OwnedStructure[STRUCTURE_OBSERVER]
+  extends StObject
+     with OwnedStructure[STRUCTURE_OBSERVER]
      with AnyOwnedStructure
      with ConcreteStructure[js.Any] {
   
@@ -18,7 +17,7 @@ trait StructureObserver
     * Provide visibility into a distant room from your script. The target room object will be available on the next tick. The maximum range is 5 rooms.
     * @param roomName The room to observe.
     */
-  def observeRoom(roomName: String): ScreepsReturnCode = js.native
+  def observeRoom(roomName: String): ScreepsReturnCode
 }
 object StructureObserver {
   

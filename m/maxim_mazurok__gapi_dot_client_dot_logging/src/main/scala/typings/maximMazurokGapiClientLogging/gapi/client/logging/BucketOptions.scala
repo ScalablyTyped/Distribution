@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketOptions extends StObject {
   
   /** The explicit buckets. */
-  var explicitBuckets: js.UndefOr[Explicit] = js.native
+  var explicitBuckets: js.UndefOr[Explicit] = js.undefined
   
   /** The exponential buckets. */
-  var exponentialBuckets: js.UndefOr[Exponential] = js.native
+  var exponentialBuckets: js.UndefOr[Exponential] = js.undefined
   
   /** The linear bucket. */
-  var linearBuckets: js.UndefOr[Linear] = js.native
+  var linearBuckets: js.UndefOr[Linear] = js.undefined
 }
 object BucketOptions {
   

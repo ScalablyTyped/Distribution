@@ -2,17 +2,15 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Room extends StObject {
   
-  var room: String = js.native
+  var room: String
   
-  var sender: String = js.native
+  var sender: String
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object Room {
   

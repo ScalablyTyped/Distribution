@@ -2,13 +2,11 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearSessionParams extends StObject {
   
-  var federated: Boolean = js.native
+  var federated: Boolean
 }
 object ClearSessionParams {
   

@@ -4,39 +4,37 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity acquires an item.
   */
-@js.native
 trait IEntityAcquiredItemEventData extends StObject {
   
   /**
     * The total number of items acquired by the entity during this event
     */
-  var acquired_amount: Double = js.native
+  var acquired_amount: Double
   
   /**
     * The way the entity acquired the item
     */
-  var acquisition_method: String = js.native
+  var acquisition_method: String
   
   /**
     * The entity who acquired the item
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The item that was acquired
     */
-  var item_stack: IItemStack = js.native
+  var item_stack: IItemStack
   
   /**
     * If it exists, the entity that affected the item before it was acquired. Example: A player completes a trade with a villager. The `entity` property would be the player and the `secondary_entity` would be the villager
     */
-  var secondary_entity: IEntity = js.native
+  var secondary_entity: IEntity
 }
 object IEntityAcquiredItemEventData {
   

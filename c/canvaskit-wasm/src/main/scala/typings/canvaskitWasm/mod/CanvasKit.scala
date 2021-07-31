@@ -8,7 +8,6 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -210,7 +209,7 @@ trait CanvasKit extends StObject {
     *                       Lottie properties (surfaced in the embedded player controls)
     */
   def MakeManagedAnimation(json: String): ManagedSkottieAnimation = js.native
-  def MakeManagedAnimation(json: String, assets: js.UndefOr[scala.Nothing], filterPrefix: String): ManagedSkottieAnimation = js.native
+  def MakeManagedAnimation(json: String, assets: Unit, filterPrefix: String): ManagedSkottieAnimation = js.native
   def MakeManagedAnimation(json: String, assets: Record[String, ArrayBuffer]): ManagedSkottieAnimation = js.native
   def MakeManagedAnimation(json: String, assets: Record[String, ArrayBuffer], filterPrefix: String): ManagedSkottieAnimation = js.native
   
@@ -311,7 +310,7 @@ trait CanvasKit extends StObject {
   def MakeSurface(width: Double, height: Double): SkSurface | Null = js.native
   
   def MakeWebGLCanvasSurface(canvas: String): SkSurface | Null = js.native
-  def MakeWebGLCanvasSurface(canvas: String, colorSpace: js.UndefOr[scala.Nothing], opts: WebGLOptions): SkSurface | Null = js.native
+  def MakeWebGLCanvasSurface(canvas: String, colorSpace: Unit, opts: WebGLOptions): SkSurface | Null = js.native
   def MakeWebGLCanvasSurface(canvas: String, colorSpace: ColorSpace): SkSurface | Null = js.native
   def MakeWebGLCanvasSurface(canvas: String, colorSpace: ColorSpace, opts: WebGLOptions): SkSurface | Null = js.native
   /**
@@ -322,7 +321,7 @@ trait CanvasKit extends StObject {
     * @param opts - Options that will get passed to the creation of the WebGL context.
     */
   def MakeWebGLCanvasSurface(canvas: HTMLCanvasElement): SkSurface | Null = js.native
-  def MakeWebGLCanvasSurface(canvas: HTMLCanvasElement, colorSpace: js.UndefOr[scala.Nothing], opts: WebGLOptions): SkSurface | Null = js.native
+  def MakeWebGLCanvasSurface(canvas: HTMLCanvasElement, colorSpace: Unit, opts: WebGLOptions): SkSurface | Null = js.native
   def MakeWebGLCanvasSurface(canvas: HTMLCanvasElement, colorSpace: ColorSpace): SkSurface | Null = js.native
   def MakeWebGLCanvasSurface(canvas: HTMLCanvasElement, colorSpace: ColorSpace, opts: WebGLOptions): SkSurface | Null = js.native
   

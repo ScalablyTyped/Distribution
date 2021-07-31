@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AspectRating extends StObject {
   
   /** the user's rating for this particular aspect, from 0 to 3. */
-  var rating: Double = js.native
+  var rating: Double
   
   /** the name of the aspect that is being rated. */
-  var `type`: AspectRatingType = js.native
+  var `type`: AspectRatingType
 }
 object AspectRating {
   

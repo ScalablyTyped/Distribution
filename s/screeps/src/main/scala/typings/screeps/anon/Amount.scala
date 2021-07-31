@@ -2,17 +2,15 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amount extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var energySpent: Double = js.native
+  var energySpent: Double
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object Amount {
   

@@ -2,23 +2,21 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DDPRateLimiter {
   
-  @js.native
   trait Matcher extends StObject {
     
-    var clientAddress: js.UndefOr[String | (js.Function1[/* clientAddress */ String, Boolean])] = js.native
+    var clientAddress: js.UndefOr[String | (js.Function1[/* clientAddress */ String, Boolean])] = js.undefined
     
-    var connectionId: js.UndefOr[String | (js.Function1[/* connectionId */ String, Boolean])] = js.native
+    var connectionId: js.UndefOr[String | (js.Function1[/* connectionId */ String, Boolean])] = js.undefined
     
-    var name: js.UndefOr[String | (js.Function1[/* name */ String, Boolean])] = js.native
+    var name: js.UndefOr[String | (js.Function1[/* name */ String, Boolean])] = js.undefined
     
-    var `type`: js.UndefOr[String | (js.Function1[/* type */ String, Boolean])] = js.native
+    var `type`: js.UndefOr[String | (js.Function1[/* type */ String, Boolean])] = js.undefined
     
-    var userId: js.UndefOr[String | (js.Function1[/* userId */ String, Boolean])] = js.native
+    var userId: js.UndefOr[String | (js.Function1[/* userId */ String, Boolean])] = js.undefined
   }
   object Matcher {
     

@@ -5,18 +5,16 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointBatchItemMod.Unmarshalle
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointBatchRequestMod {
   
-  @js.native
   trait EndpointBatchRequest extends StObject {
     
     /**
       * List of items to update. Maximum 100 items
       */
-    var Item: js.UndefOr[js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]] = js.native
+    var Item: js.UndefOr[js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]] = js.undefined
   }
   object EndpointBatchRequest {
     
@@ -40,14 +38,15 @@ object typesEndpointBatchRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEndpointBatchRequest extends EndpointBatchRequest {
+  trait UnmarshalledEndpointBatchRequest
+    extends StObject
+       with EndpointBatchRequest {
     
     /**
       * List of items to update. Maximum 100 items
       */
     @JSName("Item")
-    var Item_UnmarshalledEndpointBatchRequest: js.UndefOr[js.Array[UnmarshalledEndpointBatchItem]] = js.native
+    var Item_UnmarshalledEndpointBatchRequest: js.UndefOr[js.Array[UnmarshalledEndpointBatchItem]] = js.undefined
   }
   object UnmarshalledEndpointBatchRequest {
     

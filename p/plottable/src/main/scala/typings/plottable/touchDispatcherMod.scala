@@ -7,7 +7,6 @@ import typings.plottable.interfacesMod.Point
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchDispatcherMod {
@@ -140,9 +139,8 @@ object touchDispatcherMod {
       * @param component
       * @return {Dispatchers.Touch}
       */
-    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch.getDispatcher")
-    @js.native
-    def getDispatcher(component: Component): typings.plottable.dispatchersMod.Touch = js.native
+    @scala.inline
+    def getDispatcher(component: Component): typings.plottable.dispatchersMod.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Touch]
   }
   
   type TouchCallback = js.Function3[

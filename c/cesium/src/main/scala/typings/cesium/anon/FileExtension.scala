@@ -2,33 +2,31 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileExtension extends StObject {
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var fileExtension: js.UndefOr[String] = js.native
+  var fileExtension: js.UndefOr[String] = js.undefined
   
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
-  var minimumLevel: js.UndefOr[Double] = js.native
+  var minimumLevel: js.UndefOr[Double] = js.undefined
   
-  var proxy: js.UndefOr[js.Any] = js.native
+  var proxy: js.UndefOr[js.Any] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object FileExtension {
   

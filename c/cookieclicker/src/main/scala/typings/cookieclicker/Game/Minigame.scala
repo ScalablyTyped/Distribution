@@ -3,44 +3,42 @@ package typings.cookieclicker.Game
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Minigame extends StObject {
   
-  var draw: js.UndefOr[js.Function0[Unit]] = js.native
+  var draw: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var effs: js.UndefOr[Effects] = js.native
+  var effs: js.UndefOr[Effects] = js.undefined
   
-  def init(div: HTMLDivElement): Unit = js.native
+  def init(div: HTMLDivElement): Unit
   
   /**
     * Ran on load, never after
     */
-  def launch(): Unit = js.native
+  def launch(): Unit
   
-  def load(save: String): Unit = js.native
+  def load(save: String): Unit
   
-  var logic: js.UndefOr[js.Function0[Unit]] = js.native
+  var logic: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The name of the minigame
     */
-  var name: String = js.native
+  var name: String
   
-  var onLevel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLevel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onResize: js.UndefOr[js.Function0[Unit]] = js.native
+  var onResize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onRuinTheFun: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRuinTheFun: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var parent: GameObject = js.native
+  var parent: GameObject
   
   /**
     * @returns The save string, can't contain `;` `|` or `,`, it's recommended to not use letters
     */
-  def save(): String = js.native
+  def save(): String
 }
 object Minigame {
   

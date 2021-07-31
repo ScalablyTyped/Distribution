@@ -3,20 +3,18 @@ package typings.snowpackEnv
 import typings.snowpackEnv.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportMeta extends StObject {
   
-  val env: Dictkey = js.native
+  val env: Dictkey
   
   // TypeScript Bug: https://github.com/microsoft/TypeScript/issues/41468
   // When TS bug is fixed and ecosystem has upgraded, then it will be safe
   // to change `hot` to the more correct "possibly undefined" (hot?: ...).
-  val hot: ImportMetaHot = js.native
+  val hot: ImportMetaHot
   
-  val url: String = js.native
+  val url: String
 }
 object ImportMeta {
   

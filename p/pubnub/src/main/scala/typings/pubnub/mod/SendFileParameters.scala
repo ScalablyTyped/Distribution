@@ -2,25 +2,23 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendFileParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var cipherKey: js.UndefOr[String] = js.native
+  var cipherKey: js.UndefOr[String] = js.undefined
   
-  var file: StreamFileInput | BufferFileInput | UriFileInput = js.native
+  var file: StreamFileInput | BufferFileInput | UriFileInput
   
-  var message: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[js.Any] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var storeInHistory: js.UndefOr[Boolean] = js.native
+  var storeInHistory: js.UndefOr[Boolean] = js.undefined
   
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object SendFileParameters {
   

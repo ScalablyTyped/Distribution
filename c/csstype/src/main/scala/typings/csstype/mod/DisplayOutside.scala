@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`inline`
   - typings.csstype.csstypeStrings.`run-in`
 */
-trait DisplayOutside extends _DisplayProperty
+trait DisplayOutside
+  extends StObject
+     with _DisplayProperty
 object DisplayOutside {
   
   @scala.inline

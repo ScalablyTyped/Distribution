@@ -6,19 +6,17 @@ import typings.awsLambda.awsLambdaStrings.replace
 import typings.awsLambda.awsLambdaStrings.text_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: `read-only` | replace = js.native
+  var action: `read-only` | replace
   
-  var data: String = js.native
+  var data: String
   
-  var encoding: base64 | text_ = js.native
+  var encoding: base64 | text_
   
-  val inputTruncated: Boolean = js.native
+  val inputTruncated: Boolean
 }
 object Action {
   

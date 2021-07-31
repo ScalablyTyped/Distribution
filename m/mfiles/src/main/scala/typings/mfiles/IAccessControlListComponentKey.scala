@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlListComponentKey extends StObject {
   
-  def Clone(): IAccessControlListComponentKey = js.native
+  def Clone(): IAccessControlListComponentKey
   
-  var ItemID: Double = js.native
+  var ItemID: Double
   
-  var PropertyDefID: MFBuiltInPropertyDef | Double = js.native
+  var PropertyDefID: MFBuiltInPropertyDef | Double
 }
 object IAccessControlListComponentKey {
   

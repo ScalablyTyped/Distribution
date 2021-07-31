@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyDelta extends StObject {
   
   /** The delta for Bindings between two policies. */
-  var bindingDeltas: js.UndefOr[js.Array[BindingDelta]] = js.native
+  var bindingDeltas: js.UndefOr[js.Array[BindingDelta]] = js.undefined
 }
 object PolicyDelta {
   

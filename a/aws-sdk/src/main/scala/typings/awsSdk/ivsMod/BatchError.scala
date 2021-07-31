@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchError extends StObject {
   
   /**
     * Channel ARN.
     */
-  var arn: js.UndefOr[ResourceArn] = js.native
+  var arn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * Error code.
     */
-  var code: js.UndefOr[errorCode] = js.native
+  var code: js.UndefOr[errorCode] = js.undefined
   
   /**
     * Error message, determined by the application.
     */
-  var message: js.UndefOr[errorMessage] = js.native
+  var message: js.UndefOr[errorMessage] = js.undefined
 }
 object BatchError {
   

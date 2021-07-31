@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SqlClearCursor[T] extends Generic {
+trait SqlClearCursor[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object SqlClearCursor {
   
@@ -19,7 +19,7 @@ object SqlClearCursor {
   }
   
   @scala.inline
-  implicit class SqlClearCursorMutableBuilder[Self <: SqlClearCursor[_], T] (val x: Self with SqlClearCursor[T]) extends AnyVal {
+  implicit class SqlClearCursorMutableBuilder[Self <: SqlClearCursor[?], T] (val x: Self & SqlClearCursor[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

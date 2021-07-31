@@ -8,26 +8,26 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service provides a simple functionality to allow read/write the storages in OLE storage format. */
-@js.native
-trait OLESimpleStorage extends XOLESimpleStorage {
+trait OLESimpleStorage
+  extends StObject
+     with XOLESimpleStorage {
   
   /**
     * is used to initialize the object on it's creation.
     * @param xInputStream [in] the InputStream that contains data in OLE storage format.
     * @param bNoTempCopy [in] specifies whether a temporary copy should be created during substreams opening. If the copy is not created the storage must stay
     */
-  def createFromInputStream(xInputStream: XInputStream, bNoTempCopy: Boolean): Unit = js.native
+  def createFromInputStream(xInputStream: XInputStream, bNoTempCopy: Boolean): Unit
   
   /**
     * is used to initialize the object on it's creation.
     * @param xStream [in] the Stream that contains data in OLE storage format.
     * @param bNoTempCopy [in] specifies whether a temporary copy should be created during substreams opening. If the copy is not created the storage must stay
     */
-  def createFromStream(xStream: XStream, bNoTempCopy: Boolean): Unit = js.native
+  def createFromStream(xStream: XStream, bNoTempCopy: Boolean): Unit
 }
 object OLESimpleStorage {
   

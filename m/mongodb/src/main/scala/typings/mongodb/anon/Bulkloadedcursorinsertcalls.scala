@@ -2,41 +2,39 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bulkloadedcursorinsertcalls extends StObject {
   
-  var `bulk-loaded cursor-insert calls`: Double = js.native
+  var `bulk-loaded cursor-insert calls`: Double
   
-  var `create calls`: Double = js.native
+  var `create calls`: Double
   
-  var `cursor-insert key and value bytes inserted`: Double = js.native
+  var `cursor-insert key and value bytes inserted`: Double
   
-  var `cursor-remove key bytes removed`: Double = js.native
+  var `cursor-remove key bytes removed`: Double
   
-  var `cursor-update value bytes updated`: Double = js.native
+  var `cursor-update value bytes updated`: Double
   
-  var `insert calls`: Double = js.native
+  var `insert calls`: Double
   
-  var `next calls`: Double = js.native
+  var `next calls`: Double
   
-  var `prev calls`: Double = js.native
+  var `prev calls`: Double
   
-  var `remove calls`: Double = js.native
+  var `remove calls`: Double
   
-  var `reset calls`: Double = js.native
+  var `reset calls`: Double
   
-  var `restarted searches`: Double = js.native
+  var `restarted searches`: Double
   
-  var `search calls`: Double = js.native
+  var `search calls`: Double
   
-  var `search near calls`: Double = js.native
+  var `search near calls`: Double
   
-  var `truncate calls`: Double = js.native
+  var `truncate calls`: Double
   
-  var `update calls`: Double = js.native
+  var `update calls`: Double
 }
 object Bulkloadedcursorinsertcalls {
   

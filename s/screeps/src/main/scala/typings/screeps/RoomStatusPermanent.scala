@@ -4,15 +4,15 @@ import typings.screeps.screepsStrings.closed
 import typings.screeps.screepsStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoomStatusPermanent extends RoomStatus {
+trait RoomStatusPermanent
+  extends StObject
+     with RoomStatus {
   
-  var status: normal | closed = js.native
+  var status: normal | closed
   
-  var timestamp: Null = js.native
+  var timestamp: Null
 }
 object RoomStatusPermanent {
   

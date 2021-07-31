@@ -2,17 +2,15 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomPosition extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var position: String = js.native
+  var position: String
   
-  var right: Double = js.native
+  var right: Double
 }
 object BottomPosition {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recommendation extends StObject {
   
   /**
     * Describes the recommended steps to take to remediate an issue identified in a finding.
     */
-  var Text: js.UndefOr[NonEmptyString] = js.native
+  var Text: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A URL to a page or site that contains information about how to remediate a finding.
     */
-  var Url: js.UndefOr[NonEmptyString] = js.native
+  var Url: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Recommendation {
   

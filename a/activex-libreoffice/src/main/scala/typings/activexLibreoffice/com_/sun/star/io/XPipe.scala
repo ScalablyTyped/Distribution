@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * With the pipe-service, an outputstream can be converted into an input stream at the cost of an additional buffer.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XPipe
-  extends XOutputStream
+  extends StObject
+     with XOutputStream
      with XInputStream
 object XPipe {
   

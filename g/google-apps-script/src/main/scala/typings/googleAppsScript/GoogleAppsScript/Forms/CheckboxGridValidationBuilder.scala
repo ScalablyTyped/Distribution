@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,10 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .build();
   *     checkboxGridItem.setValidation(checkboxGridValidation);
   */
-@js.native
 trait CheckboxGridValidationBuilder extends StObject {
   
-  def requireLimitOneResponsePerColumn(): CheckboxGridValidationBuilder = js.native
+  def requireLimitOneResponsePerColumn(): CheckboxGridValidationBuilder
 }
 object CheckboxGridValidationBuilder {
   

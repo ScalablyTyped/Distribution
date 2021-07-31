@@ -2,27 +2,25 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeAllow extends StObject {
   
   /*When set to "safe" only URL’s with protocols that are listed in the safeProtocols property (see below) are
     * allowed as targets of href attributes or the \href macro. By default, these are http://, https://, and
     * file:// URL’s.
     */
-  var URLs: js.UndefOr[String] = js.native
+  var URLs: js.UndefOr[String] = js.undefined
   
   /*When set to "safe", only class names that begin with MJX- and contain only letters, numbers, or the
     * characters -, _, or . are allowed.
     */
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
   /*When set to "safe", only ID’s that begin with MJX- and contain only letters, numbers, or the characters -, _,
     * or . are allowed.
     */
-  var cssIDs: js.UndefOr[String] = js.native
+  var cssIDs: js.UndefOr[String] = js.undefined
   
   /*When set to "safe", MathJax will try to limit the font size to sizes between those given by the sizeMin and
     * sizeMax properties. These are .7 and 1.44 by default, which means sizes between \scriptsize and \large are
@@ -32,17 +30,17 @@ trait SafeAllow extends StObject {
     * non-negative values (so scripts can’t be made larger), and the scriptsizemultiplier is restricted to being
     * no larger than 1, and no less than .6.
     */
-  var fontsize: js.UndefOr[String] = js.native
+  var fontsize: js.UndefOr[String] = js.undefined
   
   /*When set to "safe", only the extensions listed in the safeRequire property (see below) are allowed to be
     * loaded by the \require{} macro.
     */
-  var require: js.UndefOr[String] = js.native
+  var require: js.UndefOr[String] = js.undefined
   
   /*When set to "safe", only styles taken from a predefined set of styles are allowed to be given. These are
     * listed in the safeStyles property (see below).
     */
-  var styles: js.UndefOr[String] = js.native
+  var styles: js.UndefOr[String] = js.undefined
 }
 object SafeAllow {
   

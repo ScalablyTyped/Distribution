@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.imm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64ImmOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
   
-  var `type`: imm = js.native
+  var `type`: imm
   
-  var value: Int64 = js.native
+  var value: Int64
 }
 object Arm64ImmOperand {
   
   @scala.inline
-  def apply(`type`: imm, value: Int64): Arm64ImmOperand = {
+  def apply(value: Int64): Arm64ImmOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[Arm64ImmOperand]
   }
   

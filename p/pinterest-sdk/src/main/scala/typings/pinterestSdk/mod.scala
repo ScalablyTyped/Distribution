@@ -2,10 +2,13 @@ package typings.pinterestSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pinterest-sdk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait HttpMethod extends StObject
@@ -14,23 +17,31 @@ object mod {
   object HttpMethod extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HttpMethod with Double] = js.native
+    def apply(value: Double): js.UndefOr[HttpMethod & Double] = js.native
     
     @js.native
-    sealed trait delete extends HttpMethod
-    /* 3 */ val delete: typings.pinterestSdk.mod.HttpMethod.delete with Double = js.native
+    sealed trait delete
+      extends StObject
+         with HttpMethod
+    /* 3 */ val delete: typings.pinterestSdk.mod.HttpMethod.delete & Double = js.native
     
     @js.native
-    sealed trait get extends HttpMethod
-    /* 0 */ val get: typings.pinterestSdk.mod.HttpMethod.get with Double = js.native
+    sealed trait get
+      extends StObject
+         with HttpMethod
+    /* 0 */ val get: typings.pinterestSdk.mod.HttpMethod.get & Double = js.native
     
     @js.native
-    sealed trait post extends HttpMethod
-    /* 2 */ val post: typings.pinterestSdk.mod.HttpMethod.post with Double = js.native
+    sealed trait post
+      extends StObject
+         with HttpMethod
+    /* 2 */ val post: typings.pinterestSdk.mod.HttpMethod.post & Double = js.native
     
     @js.native
-    sealed trait put extends HttpMethod
-    /* 1 */ val put: typings.pinterestSdk.mod.HttpMethod.put with Double = js.native
+    sealed trait put
+      extends StObject
+         with HttpMethod
+    /* 1 */ val put: typings.pinterestSdk.mod.HttpMethod.put & Double = js.native
   }
   
   @js.native
@@ -40,118 +51,97 @@ object mod {
   object OAuthScopes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OAuthScopes with Double] = js.native
+    def apply(value: Double): js.UndefOr[OAuthScopes & Double] = js.native
     
     @js.native
-    sealed trait read_public extends OAuthScopes
-    /* 0 */ val read_public: typings.pinterestSdk.mod.OAuthScopes.read_public with Double = js.native
+    sealed trait read_public
+      extends StObject
+         with OAuthScopes
+    /* 0 */ val read_public: typings.pinterestSdk.mod.OAuthScopes.read_public & Double = js.native
     
     @js.native
-    sealed trait read_relationships extends OAuthScopes
-    /* 2 */ val read_relationships: typings.pinterestSdk.mod.OAuthScopes.read_relationships with Double = js.native
+    sealed trait read_relationships
+      extends StObject
+         with OAuthScopes
+    /* 2 */ val read_relationships: typings.pinterestSdk.mod.OAuthScopes.read_relationships & Double = js.native
     
     @js.native
-    sealed trait write_public extends OAuthScopes
-    /* 1 */ val write_public: typings.pinterestSdk.mod.OAuthScopes.write_public with Double = js.native
+    sealed trait write_public
+      extends StObject
+         with OAuthScopes
+    /* 1 */ val write_public: typings.pinterestSdk.mod.OAuthScopes.write_public & Double = js.native
     
     @js.native
-    sealed trait write_relationships extends OAuthScopes
-    /* 3 */ val write_relationships: typings.pinterestSdk.mod.OAuthScopes.write_relationships with Double = js.native
+    sealed trait write_relationships
+      extends StObject
+         with OAuthScopes
+    /* 3 */ val write_relationships: typings.pinterestSdk.mod.OAuthScopes.write_relationships & Double = js.native
   }
   
-  @JSImport("pinterest-sdk", "getSession")
-  @js.native
-  def getSession(): OauthSession = js.native
+  @scala.inline
+  def getSession(): OauthSession = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")().asInstanceOf[OauthSession]
   
-  @JSImport("pinterest-sdk", "init")
-  @js.native
-  def init(options: InitOptions): Unit = js.native
+  @scala.inline
+  def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "login")
-  @js.native
-  def login(options: LoginOptions, callback: js.Function): Unit = js.native
+  @scala.inline
+  def login(options: LoginOptions, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "logout")
-  @js.native
-  def logout(): Unit = js.native
-  @JSImport("pinterest-sdk", "logout")
-  @js.native
-  def logout(callback: js.Function1[/* session */ OauthSession, _]): Unit = js.native
+  @scala.inline
+  def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
+  @scala.inline
+  def logout(callback: js.Function1[/* session */ OauthSession, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "me")
-  @js.native
-  def me(callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "me")
-  @js.native
-  def me(path: String, callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "me")
-  @js.native
-  def me(path: String, params: js.Object, callback: js.Function): Unit = js.native
+  @scala.inline
+  def me(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("me")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def me(path: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("me")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def me(path: String, params: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("me")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "pin")
-  @js.native
-  def pin(imageUrl: String, note: String, url: String, callback: js.Function): Unit = js.native
+  @scala.inline
+  def pin(imageUrl: String, note: String, url: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pin")(imageUrl.asInstanceOf[js.Any], note.asInstanceOf[js.Any], url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(
-    path: String,
-    httpMethod: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: js.UndefOr[scala.Nothing], data: PinData): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: js.UndefOr[scala.Nothing], data: PinData, callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: String): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: String, data: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: String, data: PinData): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: String, data: PinData, callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: HttpMethod): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: HttpMethod, data: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: HttpMethod, data: PinData): Unit = js.native
-  @JSImport("pinterest-sdk", "request")
-  @js.native
-  def request(path: String, httpMethod: HttpMethod, data: PinData, callback: js.Function): Unit = js.native
+  @scala.inline
+  def request(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: String, data: Unit, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: String, data: PinData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: String, data: PinData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: Unit, data: Unit, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: Unit, data: PinData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: Unit, data: PinData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: HttpMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: HttpMethod, data: Unit, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: HttpMethod, data: PinData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(path: String, httpMethod: HttpMethod, data: PinData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(path.asInstanceOf[js.Any], httpMethod.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pinterest-sdk", "setSession")
-  @js.native
-  def setSession(session: OauthSession): Unit = js.native
-  @JSImport("pinterest-sdk", "setSession")
-  @js.native
-  def setSession(session: OauthSession, callback: js.Function1[/* session */ OauthSession, _]): Unit = js.native
+  @scala.inline
+  def setSession(session: OauthSession): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSession")(session.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setSession(session: OauthSession, callback: js.Function1[/* session */ OauthSession, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSession")(session.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait InitOptions extends StObject {
     
     /** Your application ID from developer.pinterest.com */
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var cookie: js.UndefOr[Boolean] = js.native
+    var cookie: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var session: js.UndefOr[OauthSession] = js.native
+    var session: js.UndefOr[OauthSession] = js.undefined
   }
   object InitOptions {
     
@@ -190,20 +180,19 @@ object mod {
     }
   }
   
-  @js.native
   trait LoginOptions extends StObject {
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var cookie: js.UndefOr[Boolean] = js.native
+    var cookie: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var scope: String | OAuthScopes = js.native
+    var scope: String | OAuthScopes
     
-    var session: js.UndefOr[OauthSession] = js.native
+    var session: js.UndefOr[OauthSession] = js.undefined
   }
   object LoginOptions {
     
@@ -251,12 +240,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OAuthRequestParams extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object OAuthRequestParams {
     
@@ -283,14 +271,13 @@ object mod {
     }
   }
   
-  @js.native
   trait OauthSession extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object OauthSession {
     
@@ -323,16 +310,15 @@ object mod {
     }
   }
   
-  @js.native
   trait PinData extends StObject {
     
-    var board: String = js.native
+    var board: String
     
-    var image_url: String = js.native
+    var image_url: String
     
-    var link: String = js.native
+    var link: String
     
-    var note: String = js.native
+    var note: String
   }
   object PinData {
     

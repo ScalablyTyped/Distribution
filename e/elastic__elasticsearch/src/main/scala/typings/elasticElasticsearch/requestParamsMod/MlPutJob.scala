@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlPutJob[T] extends Generic {
+trait MlPutJob[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var job_id: String = js.native
+  var job_id: String
 }
 object MlPutJob {
   
@@ -21,7 +21,7 @@ object MlPutJob {
   }
   
   @scala.inline
-  implicit class MlPutJobMutableBuilder[Self <: MlPutJob[_], T] (val x: Self with MlPutJob[T]) extends AnyVal {
+  implicit class MlPutJobMutableBuilder[Self <: MlPutJob[?], T] (val x: Self & MlPutJob[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

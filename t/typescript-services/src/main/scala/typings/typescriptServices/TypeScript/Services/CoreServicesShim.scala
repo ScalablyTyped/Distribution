@@ -4,27 +4,27 @@ import typings.typescriptServices.TypeScript.ILogger
 import typings.typescriptServices.TypeScript.IScriptSnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoreServicesShim extends ShimBase {
+trait CoreServicesShim
+  extends StObject
+     with ShimBase {
   
-  def dumpMemory(dummy: js.Any): String = js.native
+  def dumpMemory(dummy: js.Any): String
   
-  /* private */ def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any = js.native
+  /* private */ def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any
   
-  def getDefaultCompilationSettings(): String = js.native
+  def getDefaultCompilationSettings(): String
   
-  def getMemoryInfo(dummy: js.Any): String = js.native
+  def getMemoryInfo(dummy: js.Any): String
   
-  def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): String = js.native
+  def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): String
   
-  var host: ICoreServicesHost = js.native
+  var host: ICoreServicesHost
   
-  var logger: ILogger = js.native
+  var logger: ILogger
   
-  var services: CoreServices = js.native
+  var services: CoreServices
 }
 object CoreServicesShim {
   

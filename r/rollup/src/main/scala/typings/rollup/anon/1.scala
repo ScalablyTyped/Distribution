@@ -3,13 +3,11 @@ package typings.rollup.anon
 import typings.rollup.mod.CustomPluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var custom: js.UndefOr[CustomPluginOptions] = js.native
+  var custom: js.UndefOr[CustomPluginOptions] = js.undefined
 }
 object `1` {
   

@@ -2,18 +2,16 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfResize extends StObject {
   
-  var ifResize: js.UndefOr[Boolean] = js.native
+  var ifResize: js.UndefOr[Boolean] = js.undefined
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   // Example: 26,
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
 }
 object IfResize {
   

@@ -3,17 +3,17 @@ package typings.miniprogram
 import typings.miniprogram.anon.Shown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShowAuthGuideArgs extends AsyncCallback[Shown] {
+trait ShowAuthGuideArgs
+  extends StObject
+     with AsyncCallback[Shown] {
   
   /**
     * Identifier of the permission under guide, used to identify
     * the type of the permission (such as LBS).
     */
-  var authType: String = js.native
+  var authType: String
 }
 object ShowAuthGuideArgs {
   

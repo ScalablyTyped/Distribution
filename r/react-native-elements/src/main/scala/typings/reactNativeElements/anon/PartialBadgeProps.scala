@@ -13,28 +13,26 @@ import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.BadgeProps> */
-@js.native
 trait PartialBadgeProps extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var status: js.UndefOr[primary | success | warning | error] = js.native
+  var status: js.UndefOr[primary | success | warning | error] = js.undefined
   
-  var textProps: js.UndefOr[TextProperties] = js.native
+  var textProps: js.UndefOr[TextProperties] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var value: js.UndefOr[ReactNode] = js.native
+  var value: js.UndefOr[ReactNode] = js.undefined
 }
 object PartialBadgeProps {
   

@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait ViewRef extends ChangeDetectorRef {
+trait ViewRef
+  extends StObject
+     with ChangeDetectorRef {
   
   /**
     * Destroys this view and all of the data structures associated with it.

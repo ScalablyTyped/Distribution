@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,32 +25,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.reflection.XStructTypeDescription.getTypeArguments()} return an empty sequence.
   * @since OOo 2.0
   */
-@js.native
-trait XStructTypeDescription extends XCompoundTypeDescription {
+trait XStructTypeDescription
+  extends StObject
+     with XCompoundTypeDescription {
   
   /**
     * Returns the type arguments of an instantiated polymorphic struct type.
     * @returns a sequence of all type arguments, in the correct order; for a plain struct type, or a polymorphic struct type template, an empty sequence is returned
     */
-  val TypeArguments: SafeArray[XTypeDescription] = js.native
+  val TypeArguments: SafeArray[XTypeDescription]
   
   /**
     * Returns the type parameters of a polymorphic struct type template.
     * @returns a sequence of the names of all type parameters, in the correct order; for a plain struct type, or an instantiated polymorphic struct type, an emp
     */
-  val TypeParameters: SafeArray[String] = js.native
+  val TypeParameters: SafeArray[String]
   
   /**
     * Returns the type arguments of an instantiated polymorphic struct type.
     * @returns a sequence of all type arguments, in the correct order; for a plain struct type, or a polymorphic struct type template, an empty sequence is returned
     */
-  def getTypeArguments(): SafeArray[XTypeDescription] = js.native
+  def getTypeArguments(): SafeArray[XTypeDescription]
   
   /**
     * Returns the type parameters of a polymorphic struct type template.
     * @returns a sequence of the names of all type parameters, in the correct order; for a plain struct type, or an instantiated polymorphic struct type, an emp
     */
-  def getTypeParameters(): SafeArray[String] = js.native
+  def getTypeParameters(): SafeArray[String]
 }
 object XStructTypeDescription {
   

@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait KiiACLAction extends StObject
 object KiiACLAction extends StObject {
   
   @js.native
-  sealed trait KiiACLBucketActionCreateObjects extends KiiACLAction
+  sealed trait KiiACLBucketActionCreateObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLBucketActionDropBucket extends KiiACLAction
+  sealed trait KiiACLBucketActionDropBucket
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLBucketActionQueryObjects extends KiiACLAction
+  sealed trait KiiACLBucketActionQueryObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLBucketActionReadObjects extends KiiACLAction
+  sealed trait KiiACLBucketActionReadObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLObjectActionRead extends KiiACLAction
+  sealed trait KiiACLObjectActionRead
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLObjectActionWrite extends KiiACLAction
+  sealed trait KiiACLObjectActionWrite
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLSendMessageToTopic extends KiiACLAction
+  sealed trait KiiACLSendMessageToTopic
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLSubscribeToTopic extends KiiACLAction
+  sealed trait KiiACLSubscribeToTopic
+    extends StObject
+       with KiiACLAction
 }

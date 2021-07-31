@@ -8,14 +8,15 @@ import typings.std.Element
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("clipboard", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ClipboardJS {
+  class ^ protected ()
+    extends StObject
+       with ClipboardJS {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: NodeListOf[Element]) = this()
@@ -23,14 +24,16 @@ object mod {
     def this(selector: Element, options: Options) = this()
     def this(selector: NodeListOf[Element], options: Options) = this()
   }
+  @JSImport("clipboard", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Checks if clipboard.js is supported
     */
   /* static member */
-  @JSImport("clipboard", "isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
   @js.native
   trait ClipboardJS extends StObject {
@@ -52,16 +55,15 @@ object mod {
     def on_success(`type`: success, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    def clearSelection(): Unit = js.native
+    def clearSelection(): Unit
     
-    var text: String = js.native
+    var text: String
     
-    var trigger: Element = js.native
+    var trigger: Element
   }
   object Event {
     
@@ -88,14 +90,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Overwrites default command ('cut' or 'copy').
       * @param elem Current element
       */
-    var action: js.UndefOr[js.Function1[/* elem */ Element, cut | copy]] = js.native
+    var action: js.UndefOr[js.Function1[/* elem */ Element, cut | copy]] = js.undefined
     
     /**
       * For use in Bootstrap Modals or with any
@@ -103,21 +104,21 @@ object mod {
       * you'll want to set the focused element
       * as the container value.
       */
-    var container: js.UndefOr[Element] = js.native
+    var container: js.UndefOr[Element] = js.undefined
     
     /**
       * Overwrites default target input element.
       * @param elem Current element
       * @returns <input> element to use.
       */
-    var target: js.UndefOr[js.Function1[/* elem */ Element, Element]] = js.native
+    var target: js.UndefOr[js.Function1[/* elem */ Element, Element]] = js.undefined
     
     /**
       * Returns the explicit text to copy.
       * @param elem Current element
       * @returns Text to be copied.
       */
-    var text: js.UndefOr[js.Function1[/* elem */ Element, String]] = js.native
+    var text: js.UndefOr[js.Function1[/* elem */ Element, String]] = js.undefined
   }
   object Options {
     

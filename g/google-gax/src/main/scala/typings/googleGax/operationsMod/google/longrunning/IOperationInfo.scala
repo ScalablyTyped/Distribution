@@ -2,18 +2,16 @@ package typings.googleGax.operationsMod.google.longrunning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an OperationInfo. */
-@js.native
 trait IOperationInfo extends StObject {
   
   /** OperationInfo metadataType */
-  var metadataType: js.UndefOr[String | Null] = js.native
+  var metadataType: js.UndefOr[String | Null] = js.undefined
   
   /** OperationInfo responseType */
-  var responseType: js.UndefOr[String | Null] = js.native
+  var responseType: js.UndefOr[String | Null] = js.undefined
 }
 object IOperationInfo {
   

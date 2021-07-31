@@ -2,26 +2,24 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/data
   */
-@js.native
 trait EdgeSingularData extends StObject {
   
   /**
     * Get whether the edge is a loop (i.e. source same as target).
     * http://js.cytoscape.org/#edge.isLoop
     */
-  def isLoop(): Boolean = js.native
+  def isLoop(): Boolean
   
   /**
     * Get whether the edge is simple (i.e. source different than target).
     * http://js.cytoscape.org/#edge.isSimple
     */
-  def isSimple(): Boolean = js.native
+  def isSimple(): Boolean
 }
 object EdgeSingularData {
   

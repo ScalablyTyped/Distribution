@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is supported by objects with data that can be refreshed from a data source. */
-@js.native
-trait XRefreshable extends XInterface {
+trait XRefreshable
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive the event "refreshed." */
-  def addRefreshListener(l: XRefreshListener): Unit = js.native
+  def addRefreshListener(l: XRefreshListener): Unit
   
   /** refreshes the data of the object from the connected data source. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /** removes the specified listener. */
-  def removeRefreshListener(l: XRefreshListener): Unit = js.native
+  def removeRefreshListener(l: XRefreshListener): Unit
 }
 object XRefreshable {
   

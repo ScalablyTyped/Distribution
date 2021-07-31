@@ -2,26 +2,24 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionFilterModel extends StObject {
   
   /**
     * Flat list of clauses in this subscription
     */
-  var clauses: js.Array[ExpressionFilterClause] = js.native
+  var clauses: js.Array[ExpressionFilterClause]
   
   /**
     * Grouping of clauses in the subscription
     */
-  var groups: js.Array[ExpressionFilterGroup] = js.native
+  var groups: js.Array[ExpressionFilterGroup]
   
   /**
     * Max depth of the Subscription tree
     */
-  var maxGroupLevel: Double = js.native
+  var maxGroupLevel: Double
 }
 object ExpressionFilterModel {
   

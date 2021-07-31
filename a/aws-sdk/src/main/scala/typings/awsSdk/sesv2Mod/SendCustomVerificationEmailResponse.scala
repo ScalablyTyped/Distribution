@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendCustomVerificationEmailResponse extends StObject {
   
   /**
     * The unique message identifier returned from the SendCustomVerificationEmail operation.
     */
-  var MessageId: js.UndefOr[OutboundMessageId] = js.native
+  var MessageId: js.UndefOr[OutboundMessageId] = js.undefined
 }
 object SendCustomVerificationEmailResponse {
   

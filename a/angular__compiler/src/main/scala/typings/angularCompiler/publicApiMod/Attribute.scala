@@ -3,7 +3,6 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.i18nAstMod.I18nMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "Attribute")
@@ -21,7 +20,7 @@ class Attribute protected ()
     name: String,
     value: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
+    valueSpan: Unit,
     i18n: I18nMeta
   ) = this()
   def this(

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectStackSetDriftOutput extends StObject {
   
   /**
     * The ID of the drift detection stack set operation.  you can use this operation id with  DescribeStackSetOperation  to monitor the progress of the drift detection operation. 
     */
-  var OperationId: js.UndefOr[ClientRequestToken] = js.native
+  var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
 }
 object DetectStackSetDriftOutput {
   

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,18 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object sidebarAction {
   
-  @js.native
   trait GetPanelDetails extends StObject {
     
     /**
       * Specify the tab to get the panel from. If no tab nor window is specified, the global panel is returned.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the window to get the panel from. If no tab nor window is specified, the global panel is returned.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object GetPanelDetails {
     
@@ -55,18 +53,17 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait GetTitleDetails extends StObject {
     
     /**
       * Specify the tab to get the title from. If no tab nor window is specified, the global title is returned.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the window to get the title from. If no tab nor window is specified, the global title is returned.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object GetTitleDetails {
     
@@ -97,11 +94,10 @@ object sidebarAction {
   /** Pixel data for an image. Must be an ImageData object (for example, from a `canvas` element). */
   type ImageDataType = ImageData
   
-  @js.native
   trait IsOpenDetails extends StObject {
     
     /** Specify the window to get the openness from. */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object IsOpenDetails {
     
@@ -122,24 +118,23 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SetIconDetails extends StObject {
     
     /**
       * Either an ImageData object or a dictionary {size -> ImageData} representing icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals `scale`, then image with size `scale` * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'
       */
-    var imageData: js.UndefOr[ImageDataType | NumberDictionary[ImageDataType]] = js.native
+    var imageData: js.UndefOr[ImageDataType | NumberDictionary[ImageDataType]] = js.undefined
     
     /**
       * Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals `scale`, then image with size `scale` * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.path = foo' is equivalent to 'details.imageData = {'19': foo}'
       */
-    var path: js.UndefOr[String | StringDictionary[String]] = js.native
+    var path: js.UndefOr[String | StringDictionary[String]] = js.undefined
     
     /** Sets the sidebar icon for the tab specified by tabId. Automatically resets when the tab is closed. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** Sets the sidebar icon for the window specified by windowId. */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetIconDetails {
     
@@ -178,23 +173,22 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SetPanelDetails extends StObject {
     
     /** The url to the html file to show in a sidebar. If set to the empty string (''), no sidebar is shown. */
-    var panel: String | Null = js.native
+    var panel: String | Null
     
     /** Sets the sidebar url for the tab specified by tabId. Automatically resets when the tab is closed. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** Sets the sidebar url for the window specified by windowId. */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetPanelDetails {
     
     @scala.inline
     def apply(): SetPanelDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(panel = null)
       __obj.asInstanceOf[SetPanelDetails]
     }
     
@@ -221,23 +215,22 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SetTitleDetails extends StObject {
     
     /** Sets the sidebar title for the tab specified by tabId. Automatically resets when the tab is closed. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** The string the sidebar action should display when moused over. */
-    var title: String | Null = js.native
+    var title: String | Null
     
     /** Sets the sidebar title for the window specified by windowId. */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetTitleDetails {
     
     @scala.inline
     def apply(): SetTitleDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(title = null)
       __obj.asInstanceOf[SetTitleDetails]
     }
     

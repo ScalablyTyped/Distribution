@@ -2,7 +2,6 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * provide customers with useful information that helps make the scanning
   * process more effective.
   */
-@js.native
 trait SchemaScanRunWarningTrace extends StObject {
   
   /**
     * Output only. Indicates the warning code.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object SchemaScanRunWarningTrace {
   

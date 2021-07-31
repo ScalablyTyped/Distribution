@@ -2,32 +2,55 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   // ElementSelector
   // http://www.xjsfl.com/support/api/elements/ItemSelector
-  @JSGlobal("$$")
-  @js.native
-  def $(selector: String): ItemCollection = js.native
+  @scala.inline
+  def $(selector: String): ItemCollection = js.Dynamic.global.applyDynamic("$$")(selector.asInstanceOf[js.Any]).asInstanceOf[ItemCollection]
   
   @JSGlobal("_Context")
   @js.native
   class Context ()
-    extends typings.jsfl.Context
+    extends StObject
+       with typings.jsfl.Context {
+    
+    /* CompleteClass */
+    var elements: js.Array[FlashElement] = js.native
+    
+    /* CompleteClass */
+    var frame: FlashFrame = js.native
+    
+    /* CompleteClass */
+    override def goto(): js.Any = js.native
+    
+    /* CompleteClass */
+    var keyframes: js.Array[FlashFrame] = js.native
+    
+    /* CompleteClass */
+    var layer: FlashLayer = js.native
+    
+    /* CompleteClass */
+    override def setLayer(index: Double): js.Any = js.native
+    
+    /* CompleteClass */
+    override def update(): js.Any = js.native
+  }
   object Context {
     
-    /* static member */
-    @JSGlobal("_Context.create")
+    @JSGlobal("_Context")
     @js.native
-    def create(): typings.jsfl.Context = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("_Context.from")
-    @js.native
-    def from(frame: FlashFrame): typings.jsfl.Context = js.native
+    @scala.inline
+    def create(): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.jsfl.Context]
+    
+    /* static member */
+    @scala.inline
+    def from(frame: FlashFrame): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.jsfl.Context]
   }
   
   @JSGlobal("FLfile")
@@ -39,50 +62,82 @@ object global {
   @JSGlobal("_File")
   @js.native
   class File protected ()
-    extends typings.jsfl.File {
+    extends StObject
+       with typings.jsfl.File {
     def this(path: String) = this()
+    
+    /* CompleteClass */
+    var contents: String = js.native
+    
+    /* CompleteClass */
+    override def copy(path: String): typings.jsfl.File = js.native
+    
+    /* CompleteClass */
+    override def write(data: String): typings.jsfl.File = js.native
   }
   
   @JSGlobal("_Folder")
   @js.native
   class Folder protected ()
-    extends typings.jsfl.Folder {
+    extends StObject
+       with typings.jsfl.Folder {
     def this(path: String) = this()
+    
+    /* CompleteClass */
+    var contents: js.Array[typings.jsfl.File] = js.native
   }
   
   @JSGlobal("SpriteSheetExporter")
   @js.native
   class SpriteSheetExporter ()
-    extends typings.jsfl.SpriteSheetExporter
+    extends StObject
+       with typings.jsfl.SpriteSheetExporter
   
   @JSGlobal("_URI")
   @js.native
   class _URI protected ()
-    extends typings.jsfl._URI {
+    extends StObject
+       with typings.jsfl._URI {
     def this(path: String) = this()
+    
+    /* CompleteClass */
+    var `extension`: String = js.native
+    
+    /* CompleteClass */
+    var folder: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /* CompleteClass */
+    override def toURI(string: String): String = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /* CompleteClass */
+    var uri: String = js.native
   }
   
   // http://www.xjsfl.com/support/guides/working-with-flash/introduction-to-selectors
   // http://www.xjsfl.com/support/api/elements/ElementSelector
-  @JSGlobal("$")
-  @js.native
-  def _empty(selector: String): ElementCollection = js.native
+  @scala.inline
+  def _empty(selector: String): ElementCollection = js.Dynamic.global.applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[ElementCollection]
   
-  @JSGlobal("alert")
-  @js.native
-  def alert(alertText: String): Unit = js.native
+  @scala.inline
+  def alert(alertText: String): Unit = js.Dynamic.global.applyDynamic("alert")(alertText.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def clear(): Unit = js.Dynamic.global.applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSGlobal("confirm")
-  @js.native
-  def confirm(strAlert: String): Boolean = js.native
+  @scala.inline
+  def confirm(strAlert: String): Boolean = js.Dynamic.global.applyDynamic("confirm")(strAlert.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("debug")
-  @js.native
-  def debug(item: js.Any): Unit = js.native
+  @scala.inline
+  def debug(item: js.Any): Unit = js.Dynamic.global.applyDynamic("debug")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Global variables
   @JSGlobal("$dom")
@@ -98,19 +153,16 @@ object global {
   @scala.inline
   def fl_=(x: FlashFL): Unit = js.Dynamic.global.updateDynamic("fl")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("format")
-  @js.native
-  def format(format: String, params: js.Any*): Unit = js.native
+  @scala.inline
+  def format(format: String, params: js.Any*): Unit = (js.Dynamic.global.applyDynamic("format")(format.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Library / class loading
-  @JSGlobal("include")
-  @js.native
-  def include(className: String): Unit = js.native
+  @scala.inline
+  def include(className: String): Unit = js.Dynamic.global.applyDynamic("include")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Inspection and debugging
-  @JSGlobal("inspect")
-  @js.native
-  def inspect(item: js.Any): Unit = js.native
+  @scala.inline
+  def inspect(item: js.Any): Unit = js.Dynamic.global.applyDynamic("inspect")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("$library")
   @js.native
@@ -119,29 +171,23 @@ object global {
   @scala.inline
   def library_=(x: FlashLibrary): Unit = js.Dynamic.global.updateDynamic("$library")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("list")
-  @js.native
-  def list(item: js.Any): Unit = js.native
+  @scala.inline
+  def list(item: js.Any): Unit = js.Dynamic.global.applyDynamic("list")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // File
-  @JSGlobal("load")
-  @js.native
-  def load(filePath: String): String = js.native
+  @scala.inline
+  def load(filePath: String): String = js.Dynamic.global.applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("prompt")
-  @js.native
-  def prompt(promptMsg: String): String = js.native
-  @JSGlobal("prompt")
-  @js.native
-  def prompt(promptMsg: String, text: String): String = js.native
+  @scala.inline
+  def prompt(promptMsg: String): String = js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prompt(promptMsg: String, text: String): String = (js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("require")
-  @js.native
-  def require(className: String): Unit = js.native
+  @scala.inline
+  def require(className: String): Unit = js.Dynamic.global.applyDynamic("require")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("save")
-  @js.native
-  def save(filePath: String, data: String): Unit = js.native
+  @scala.inline
+  def save(filePath: String, data: String): Unit = (js.Dynamic.global.applyDynamic("save")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("$selection")
   @js.native
@@ -159,9 +205,8 @@ object global {
   
   // Global functions
   // Output
-  @JSGlobal("trace")
-  @js.native
-  def trace(args: js.Any*): Unit = js.native
+  @scala.inline
+  def trace(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("xjsfl")
   @js.native

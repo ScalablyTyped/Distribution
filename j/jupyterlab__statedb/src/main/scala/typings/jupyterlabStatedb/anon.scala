@@ -3,17 +3,15 @@ package typings.jupyterlabStatedb
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ids[V, T] extends StObject {
     
-    var ids: js.Array[V] = js.native
+    var ids: js.Array[V]
     
-    var values: js.Array[T] = js.native
+    var values: js.Array[T]
   }
   object Ids {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdsMutableBuilder[Self <: Ids[_, _], V, T] (val x: Self with (Ids[V, T])) extends AnyVal {
+    implicit class IdsMutableBuilder[Self <: Ids[?, ?], V, T] (val x: Self & (Ids[V, T])) extends AnyVal {
       
       @scala.inline
       def setIds(value: js.Array[V]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IdsValues extends StObject {
     
-    var ids: js.Array[String] = js.native
+    var ids: js.Array[String]
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object IdsValues {
     
@@ -72,12 +69,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Values[T /* <: ReadonlyPartialJSONValue */] extends StObject {
     
-    var ids: js.Array[String] = js.native
+    var ids: js.Array[String]
     
-    var values: js.Array[T] = js.native
+    var values: js.Array[T]
   }
   object Values {
     
@@ -88,7 +84,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValuesMutableBuilder[Self <: Values[_], T /* <: ReadonlyPartialJSONValue */] (val x: Self with Values[T]) extends AnyVal {
+    implicit class ValuesMutableBuilder[Self <: Values[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & Values[T]) extends AnyVal {
       
       @scala.inline
       def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])

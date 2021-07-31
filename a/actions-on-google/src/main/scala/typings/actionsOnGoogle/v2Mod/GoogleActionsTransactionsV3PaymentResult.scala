@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3PaymentResult extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait GoogleActionsTransactionsV3PaymentResult extends StObject {
     * Otherwise, refer to following documentation for payload details.
     * https://developers.google.com/pay/api/payment-data-cryptography
     */
-  var googlePaymentData: js.UndefOr[String] = js.native
+  var googlePaymentData: js.UndefOr[String] = js.undefined
   
   /**
     * Merchant/Action provided payment method chosen by user.
     */
-  var merchantPaymentMethodId: js.UndefOr[String] = js.native
+  var merchantPaymentMethodId: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsTransactionsV3PaymentResult {
   

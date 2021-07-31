@@ -1,10 +1,7 @@
 package typings.trezorConnect.mod
 
-import typings.trezorConnect.trezorConnectStrings.`send-max`
-import typings.trezorConnect.trezorConnectStrings.opreturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -23,9 +20,9 @@ object Output {
   }
   
   @scala.inline
-  def OpReturnOutput(dataHex: String, `type`: opreturn): typings.trezorConnect.mod.OpReturnOutput = {
+  def OpReturnOutput(dataHex: String): typings.trezorConnect.mod.OpReturnOutput = {
     val __obj = js.Dynamic.literal(dataHex = dataHex.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("opreturn")
     __obj.asInstanceOf[typings.trezorConnect.mod.OpReturnOutput]
   }
   
@@ -36,9 +33,9 @@ object Output {
   }
   
   @scala.inline
-  def SendMaxOutput(address: String, `type`: `send-max`): typings.trezorConnect.mod.SendMaxOutput = {
+  def SendMaxOutput(address: String): typings.trezorConnect.mod.SendMaxOutput = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("send-max")
     __obj.asInstanceOf[typings.trezorConnect.mod.SendMaxOutput]
   }
 }

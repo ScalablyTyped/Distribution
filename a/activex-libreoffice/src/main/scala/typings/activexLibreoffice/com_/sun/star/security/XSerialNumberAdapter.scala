@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface converts a certificate serial number to and from a string
   */
-@js.native
-trait XSerialNumberAdapter extends XInterface {
+trait XSerialNumberAdapter
+  extends StObject
+     with XInterface {
   
   /** Convert the SerialNumber to a sequence */
-  def toSequence(SerialNumber: String): SafeArray[Double] = js.native
+  def toSequence(SerialNumber: String): SafeArray[Double]
   
   /** Convert the SerialNumber to a string */
-  def toString(SerialNumber: SeqEquiv[Double]): String = js.native
+  def toString(SerialNumber: SeqEquiv[Double]): String
 }
 object XSerialNumberAdapter {
   

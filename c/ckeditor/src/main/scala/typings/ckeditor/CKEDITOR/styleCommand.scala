@@ -2,13 +2,11 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait styleCommand extends StObject {
   
-  def exec(editor: editor): Unit = js.native
+  def exec(editor: editor): Unit
 }
 object styleCommand {
   

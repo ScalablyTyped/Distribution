@@ -6,11 +6,12 @@ import typings.konva.nodeMod.NodeConfig
 import typings.konva.utilMod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofCollection extends Instantiable0[Collection[Node[NodeConfig]]] {
+trait TypeofCollection
+  extends StObject
+     with Instantiable0[Collection[Node[NodeConfig]]] {
   
   def _mapMethod(methodName: js.Any): Unit = js.native
   

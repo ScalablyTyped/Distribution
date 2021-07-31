@@ -2,28 +2,26 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/artwork
-@js.native
 trait Artwork extends StObject {
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var textColor1: js.UndefOr[String] = js.native
+  var textColor1: js.UndefOr[String] = js.undefined
   
-  var textColor2: js.UndefOr[String] = js.native
+  var textColor2: js.UndefOr[String] = js.undefined
   
-  var textColor3: js.UndefOr[String] = js.native
+  var textColor3: js.UndefOr[String] = js.undefined
   
-  var textColor4: js.UndefOr[String] = js.native
+  var textColor4: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Artwork {
   

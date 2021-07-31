@@ -3,11 +3,12 @@ package typings.bingmaps.Microsoft.Maps
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoXmlLayer extends CustomOverlay {
+trait GeoXmlLayer
+  extends StObject
+     with CustomOverlay {
   
   /**
     * Removes all the data in the layer.

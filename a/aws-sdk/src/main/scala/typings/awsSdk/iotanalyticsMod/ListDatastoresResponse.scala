@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatastoresResponse extends StObject {
   
   /**
     * A list of DatastoreSummary objects.
     */
-  var datastoreSummaries: js.UndefOr[DatastoreSummaries] = js.native
+  var datastoreSummaries: js.UndefOr[DatastoreSummaries] = js.undefined
   
   /**
     * The token to retrieve the next set of results, or null if there are no more results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDatastoresResponse {
   

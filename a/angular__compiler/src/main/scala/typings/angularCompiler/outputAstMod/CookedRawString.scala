@@ -3,23 +3,21 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookedRawString extends StObject {
   
-  var cooked: String = js.native
+  var cooked: String
   
-  var range: ParseSourceSpan | Null = js.native
+  var range: ParseSourceSpan | Null
   
-  var raw: String = js.native
+  var raw: String
 }
 object CookedRawString {
   
   @scala.inline
   def apply(cooked: String, raw: String): CookedRawString = {
-    val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], range = null)
     __obj.asInstanceOf[CookedRawString]
   }
   

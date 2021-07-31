@@ -3,15 +3,13 @@ package typings.jsClipper.ClipperLib
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExPolygon extends StObject {
   
-  var holes: ArrayLike[ArrayLike[IntPoint]] = js.native
+  var holes: ArrayLike[ArrayLike[IntPoint]]
   
-  var outer: ArrayLike[IntPoint] = js.native
+  var outer: ArrayLike[IntPoint]
 }
 object ExPolygon {
   

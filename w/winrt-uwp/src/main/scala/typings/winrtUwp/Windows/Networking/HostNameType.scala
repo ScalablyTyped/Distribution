@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object HostNameType extends StObject {
   
   /** A Bluetooth address. This represents the hardware or media access control (MAC) address for a Bluetooth device. */
   @js.native
-  sealed trait bluetooth extends HostNameType
+  sealed trait bluetooth
+    extends StObject
+       with HostNameType
   
   /** A domain name. */
   @js.native
-  sealed trait domainName extends HostNameType
+  sealed trait domainName
+    extends StObject
+       with HostNameType
   
   /** An IPv4 address. */
   @js.native
-  sealed trait ipv4 extends HostNameType
+  sealed trait ipv4
+    extends StObject
+       with HostNameType
   
   /** An IPv6 address. */
   @js.native
-  sealed trait ipv6 extends HostNameType
+  sealed trait ipv6
+    extends StObject
+       with HostNameType
 }

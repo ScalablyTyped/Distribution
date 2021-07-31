@@ -7,7 +7,6 @@ import typings.ol.webglLayerMod.PostProcessesOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointsLayerMod {
@@ -18,12 +17,11 @@ object pointsLayerMod {
     def this(layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], options: Options) = this()
   }
   
-  @js.native
   trait CustomAttribute extends StObject {
     
-    def callback(p0: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], p1: StringDictionary[js.Any]): Double = js.native
+    def callback(p0: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], p1: StringDictionary[js.Any]): Double
     
-    var name: String = js.native
+    var name: String
   }
   object CustomAttribute {
     
@@ -49,14 +47,13 @@ object pointsLayerMod {
     }
   }
   
-  @js.native
   trait FeatureCacheItem extends StObject {
     
-    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]
     
-    var geometry: typings.ol.geometryMod.default = js.native
+    var geometry: typings.ol.geometryMod.default
     
-    var properties: StringDictionary[js.Any] = js.native
+    var properties: StringDictionary[js.Any]
   }
   object FeatureCacheItem {
     
@@ -84,22 +81,21 @@ object pointsLayerMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributes: js.UndefOr[js.Array[CustomAttribute]] = js.native
+    var attributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
     
-    var fragmentShader: String = js.native
+    var fragmentShader: String
     
-    var hitFragmentShader: js.UndefOr[String] = js.native
+    var hitFragmentShader: js.UndefOr[String] = js.undefined
     
-    var hitVertexShader: js.UndefOr[String] = js.native
+    var hitVertexShader: js.UndefOr[String] = js.undefined
     
-    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.native
+    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
     
-    var vertexShader: String = js.native
+    var vertexShader: String
   }
   object Options {
     

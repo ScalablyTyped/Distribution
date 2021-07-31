@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftwareConfig extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait SoftwareConfig extends StObject {
     * (https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-versions#supported_dataproc_versions), such as "1.2" (including a subminor version, such as "1.2.29"), or the
     * "preview" version (https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-versions#other_versions). If unspecified, it defaults to the latest Debian version.
     */
-  var imageVersion: js.UndefOr[String] = js.native
+  var imageVersion: js.UndefOr[String] = js.undefined
   
   /** Optional. The set of components to activate on the cluster. */
-  var optionalComponents: js.UndefOr[js.Array[String]] = js.native
+  var optionalComponents: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The properties to set on daemon config files.Property keys are specified in prefix:property format, for example core:hadoop.tmp.dir. The following are supported prefixes
@@ -27,8 +25,8 @@ trait SoftwareConfig extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object SoftwareConfig {
   
@@ -60,7 +58,7 @@ object SoftwareConfig {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline

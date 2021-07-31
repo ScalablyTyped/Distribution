@@ -2,131 +2,129 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseItemsItem extends StObject {
   
-  var attribution: js.UndefOr[TagFeedResponseAttribution] = js.native
+  var attribution: js.UndefOr[TagFeedResponseAttribution] = js.undefined
   
-  var can_reply: js.UndefOr[Boolean] = js.native
+  var can_reply: js.UndefOr[Boolean] = js.undefined
   
-  var can_reshare: js.UndefOr[Boolean] = js.native
+  var can_reshare: js.UndefOr[Boolean] = js.undefined
   
-  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.native
+  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined
   
-  var can_view_more_preview_comments: js.UndefOr[Boolean] = js.native
+  var can_view_more_preview_comments: js.UndefOr[Boolean] = js.undefined
   
-  var can_viewer_reshare: js.UndefOr[Boolean] = js.native
+  var can_viewer_reshare: js.UndefOr[Boolean] = js.undefined
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: TagFeedResponseCaption | Null = js.native
+  var caption: TagFeedResponseCaption | Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var caption_position: js.UndefOr[Double] = js.native
+  var caption_position: js.UndefOr[Double] = js.undefined
   
-  var carousel_media: js.UndefOr[js.Array[TagFeedResponseCarouselMediaItem]] = js.native
+  var carousel_media: js.UndefOr[js.Array[TagFeedResponseCarouselMediaItem]] = js.undefined
   
-  var carousel_media_count: js.UndefOr[Double] = js.native
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: js.UndefOr[Double] = js.native
+  var comment_count: js.UndefOr[Double] = js.undefined
   
-  var comment_likes_enabled: js.UndefOr[Boolean] = js.native
+  var comment_likes_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var comment_threading_enabled: js.UndefOr[Boolean] = js.native
+  var comment_threading_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.native
+  var commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.undefined
   
-  var comments_disabled: js.UndefOr[Boolean] = js.native
+  var comments_disabled: js.UndefOr[Boolean] = js.undefined
   
-  var creative_config: js.UndefOr[TagFeedResponseCreativeConfig] = js.native
+  var creative_config: js.UndefOr[TagFeedResponseCreativeConfig] = js.undefined
   
-  var device_timestamp: String | Double = js.native
+  var device_timestamp: String | Double
   
-  var expiring_at: js.UndefOr[Double] = js.native
+  var expiring_at: js.UndefOr[Double] = js.undefined
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_liked: js.UndefOr[Boolean] = js.native
+  var has_liked: js.UndefOr[Boolean] = js.undefined
   
-  var has_more_comments: js.UndefOr[Boolean] = js.native
+  var has_more_comments: js.UndefOr[Boolean] = js.undefined
   
-  var has_shared_to_fb: js.UndefOr[Double] = js.native
+  var has_shared_to_fb: js.UndefOr[Double] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: js.UndefOr[TagFeedResponseImageVersions2] = js.native
+  var image_versions2: js.UndefOr[TagFeedResponseImageVersions2] = js.undefined
   
-  var imported_taken_at: js.UndefOr[Double] = js.native
+  var imported_taken_at: js.UndefOr[Double] = js.undefined
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_reel_media: js.UndefOr[Boolean] = js.native
+  var is_reel_media: js.UndefOr[Boolean] = js.undefined
   
-  var lat: js.UndefOr[Double | String] = js.native
+  var lat: js.UndefOr[Double | String] = js.undefined
   
-  var like_count: js.UndefOr[Double] = js.native
+  var like_count: js.UndefOr[Double] = js.undefined
   
-  var likers: js.UndefOr[js.Array[TagFeedResponseLikersItem]] = js.native
+  var likers: js.UndefOr[js.Array[TagFeedResponseLikersItem]] = js.undefined
   
-  var lng: js.UndefOr[Double | String] = js.native
+  var lng: js.UndefOr[Double | String] = js.undefined
   
-  var location: js.UndefOr[TagFeedResponseLocation] = js.native
+  var location: js.UndefOr[TagFeedResponseLocation] = js.undefined
   
-  var max_num_visible_preview_comments: js.UndefOr[Double] = js.native
+  var max_num_visible_preview_comments: js.UndefOr[Double] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var next_max_id: js.UndefOr[String] = js.native
+  var next_max_id: js.UndefOr[String] = js.undefined
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: js.UndefOr[Double] = js.native
+  var original_height: js.UndefOr[Double] = js.undefined
   
-  var original_width: js.UndefOr[Double] = js.native
+  var original_width: js.UndefOr[Double] = js.undefined
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.UndefOr[js.Array[TagFeedResponsePreviewCommentsItem]] = js.native
+  var preview_comments: js.UndefOr[js.Array[TagFeedResponsePreviewCommentsItem]] = js.undefined
   
-  var reel_mentions: js.UndefOr[js.Array[TagFeedResponseReelMentionsItem]] = js.native
+  var reel_mentions: js.UndefOr[js.Array[TagFeedResponseReelMentionsItem]] = js.undefined
   
-  var show_one_tap_fb_share_tooltip: js.UndefOr[Boolean] = js.native
+  var show_one_tap_fb_share_tooltip: js.UndefOr[Boolean] = js.undefined
   
-  var story_hashtags: js.UndefOr[js.Array[TagFeedResponseStoryHashtagsItem]] = js.native
+  var story_hashtags: js.UndefOr[js.Array[TagFeedResponseStoryHashtagsItem]] = js.undefined
   
-  var story_locations: js.UndefOr[js.Array[TagFeedResponseStoryLocationsItem]] = js.native
+  var story_locations: js.UndefOr[js.Array[TagFeedResponseStoryLocationsItem]] = js.undefined
   
-  var supports_reel_reactions: js.UndefOr[Boolean] = js.native
+  var supports_reel_reactions: js.UndefOr[Boolean] = js.undefined
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var user: TagFeedResponseUser = js.native
+  var user: TagFeedResponseUser
   
-  var usertags: js.UndefOr[TagFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TagFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[TagFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[TagFeedResponseVideoVersionsItem]] = js.undefined
   
-  var view_count: js.UndefOr[Double] = js.native
+  var view_count: js.UndefOr[Double] = js.undefined
 }
 object TagFeedResponseItemsItem {
   
@@ -146,7 +144,7 @@ object TagFeedResponseItemsItem {
     taken_at: Double,
     user: TagFeedResponseUser
   ): TagFeedResponseItemsItem = {
-    val __obj = js.Dynamic.literal(can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], caption = null)
     __obj.asInstanceOf[TagFeedResponseItemsItem]
   }
   

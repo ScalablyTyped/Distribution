@@ -33,7 +33,6 @@ import typings.riotGamesApi.RiotGamesAPI.TournamentProvider.TournamentCodeParame
 import typings.riotGamesApi.RiotGamesAPI.TournamentProvider.TournamentCodeUpdateParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,10 +59,10 @@ object mod {
       * @param     {[type]}    data        body parameters
       * @param     {(JSON}     callback    callback function with formatted JSON
       */
-    def getJSON(url: String, method: String, data: js.Any): js.Promise[_] = js.native
+    def getJSON(url: String, method: String, data: js.Any): js.Promise[js.Any] = js.native
     
-    def request(url: String, method: String, data: js.Any): js.Promise[_] = js.native
-    def request(url: String, method: String, data: js.Any, prop: String): js.Promise[_] = js.native
+    def request(url: String, method: String, data: js.Any): js.Promise[js.Any] = js.native
+    def request(url: String, method: String, data: js.Any, prop: String): js.Promise[js.Any] = js.native
     
     /**
       * set the API Keys
@@ -524,50 +523,72 @@ object mod {
   object regionE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[regionE with Double] = js.native
+    def apply(value: Double): js.UndefOr[regionE & Double] = js.native
     
     @js.native
-    sealed trait BR extends regionE
-    /* 0 */ val BR: typings.riotApiNodejs.mod.regionE.BR with Double = js.native
+    sealed trait BR
+      extends StObject
+         with regionE
+    /* 0 */ val BR: typings.riotApiNodejs.mod.regionE.BR & Double = js.native
     
     @js.native
-    sealed trait EUNE extends regionE
-    /* 1 */ val EUNE: typings.riotApiNodejs.mod.regionE.EUNE with Double = js.native
+    sealed trait EUNE
+      extends StObject
+         with regionE
+    /* 1 */ val EUNE: typings.riotApiNodejs.mod.regionE.EUNE & Double = js.native
     
     @js.native
-    sealed trait EUW extends regionE
-    /* 2 */ val EUW: typings.riotApiNodejs.mod.regionE.EUW with Double = js.native
+    sealed trait EUW
+      extends StObject
+         with regionE
+    /* 2 */ val EUW: typings.riotApiNodejs.mod.regionE.EUW & Double = js.native
     
     @js.native
-    sealed trait KR extends regionE
-    /* 3 */ val KR: typings.riotApiNodejs.mod.regionE.KR with Double = js.native
+    sealed trait KR
+      extends StObject
+         with regionE
+    /* 3 */ val KR: typings.riotApiNodejs.mod.regionE.KR & Double = js.native
     
     @js.native
-    sealed trait LAN extends regionE
-    /* 4 */ val LAN: typings.riotApiNodejs.mod.regionE.LAN with Double = js.native
+    sealed trait LAN
+      extends StObject
+         with regionE
+    /* 4 */ val LAN: typings.riotApiNodejs.mod.regionE.LAN & Double = js.native
     
     @js.native
-    sealed trait LAS extends regionE
-    /* 5 */ val LAS: typings.riotApiNodejs.mod.regionE.LAS with Double = js.native
+    sealed trait LAS
+      extends StObject
+         with regionE
+    /* 5 */ val LAS: typings.riotApiNodejs.mod.regionE.LAS & Double = js.native
     
     @js.native
-    sealed trait NA extends regionE
-    /* 6 */ val NA: typings.riotApiNodejs.mod.regionE.NA with Double = js.native
+    sealed trait NA
+      extends StObject
+         with regionE
+    /* 6 */ val NA: typings.riotApiNodejs.mod.regionE.NA & Double = js.native
     
     @js.native
-    sealed trait OCE extends regionE
-    /* 7 */ val OCE: typings.riotApiNodejs.mod.regionE.OCE with Double = js.native
+    sealed trait OCE
+      extends StObject
+         with regionE
+    /* 7 */ val OCE: typings.riotApiNodejs.mod.regionE.OCE & Double = js.native
     
     @js.native
-    sealed trait PBE extends regionE
-    /* 10 */ val PBE: typings.riotApiNodejs.mod.regionE.PBE with Double = js.native
+    sealed trait PBE
+      extends StObject
+         with regionE
+    /* 10 */ val PBE: typings.riotApiNodejs.mod.regionE.PBE & Double = js.native
     
     @js.native
-    sealed trait RU extends regionE
-    /* 9 */ val RU: typings.riotApiNodejs.mod.regionE.RU with Double = js.native
+    sealed trait RU
+      extends StObject
+         with regionE
+    /* 9 */ val RU: typings.riotApiNodejs.mod.regionE.RU & Double = js.native
     
     @js.native
-    sealed trait TR extends regionE
-    /* 8 */ val TR: typings.riotApiNodejs.mod.regionE.TR with Double = js.native
+    sealed trait TR
+      extends StObject
+         with regionE
+    /* 8 */ val TR: typings.riotApiNodejs.mod.regionE.TR & Double = js.native
   }
 }

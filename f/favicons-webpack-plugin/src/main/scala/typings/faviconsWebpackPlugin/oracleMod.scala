@@ -2,51 +2,90 @@ package typings.faviconsWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oracleMod {
   
   @JSImport("favicons-webpack-plugin/src/oracle", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Oracle {
+  class ^ protected ()
+    extends StObject
+       with Oracle {
     def this(context: js.Any) = this()
+    
+    /**
+      * Tries to guess the name from package.json
+      */
+    /* CompleteClass */
+    override def guessAppName(): js.Any = js.native
+    
+    /**
+      * Tries to guess the description from package.json
+      */
+    /* CompleteClass */
+    override def guessDescription(): js.Any = js.native
+    
+    /**
+      * Tries to guess the developer {name, email, url} from package.json
+      */
+    /* CompleteClass */
+    override def guessDeveloper(): js.Any = js.native
+    
+    /**
+      * Tries to guess the developer name from package.json
+      */
+    /* CompleteClass */
+    override def guessDeveloperName(): js.Any = js.native
+    
+    /**
+      * Tries to guess the developer URL from package.json
+      */
+    /* CompleteClass */
+    override def guessDeveloperURL(): js.Any = js.native
+    
+    /**
+      * Tries to guess the version from package.json
+      */
+    /* CompleteClass */
+    override def guessVersion(): js.Any = js.native
+    
+    /* CompleteClass */
+    var pkg: js.Any = js.native
   }
   
-  @js.native
   trait Oracle extends StObject {
     
     /**
       * Tries to guess the name from package.json
       */
-    def guessAppName(): js.Any = js.native
+    def guessAppName(): js.Any
     
     /**
       * Tries to guess the description from package.json
       */
-    def guessDescription(): js.Any = js.native
+    def guessDescription(): js.Any
     
     /**
       * Tries to guess the developer {name, email, url} from package.json
       */
-    def guessDeveloper(): js.Any = js.native
+    def guessDeveloper(): js.Any
     
     /**
       * Tries to guess the developer name from package.json
       */
-    def guessDeveloperName(): js.Any = js.native
+    def guessDeveloperName(): js.Any
     
     /**
       * Tries to guess the developer URL from package.json
       */
-    def guessDeveloperURL(): js.Any = js.native
+    def guessDeveloperURL(): js.Any
     
     /**
       * Tries to guess the version from package.json
       */
-    def guessVersion(): js.Any = js.native
+    def guessVersion(): js.Any
     
-    var pkg: js.Any = js.native
+    var pkg: js.Any
   }
   object Oracle {
     

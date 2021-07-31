@@ -2,71 +2,69 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectObjectContentRequest extends StObject {
   
   /**
     * The S3 bucket.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The expression that is used to query the object.
     */
-  var Expression: typings.awsSdk.s3Mod.Expression = js.native
+  var Expression: typings.awsSdk.s3Mod.Expression
   
   /**
     * The type of the provided expression (for example, SQL).
     */
-  var ExpressionType: typings.awsSdk.s3Mod.ExpressionType = js.native
+  var ExpressionType: typings.awsSdk.s3Mod.ExpressionType
   
   /**
     * Describes the format of the data in the object that is being queried.
     */
-  var InputSerialization: typings.awsSdk.s3Mod.InputSerialization = js.native
+  var InputSerialization: typings.awsSdk.s3Mod.InputSerialization
   
   /**
     * The object key.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * Describes the format of the data that you want Amazon S3 to return in response.
     */
-  var OutputSerialization: typings.awsSdk.s3Mod.OutputSerialization = js.native
+  var OutputSerialization: typings.awsSdk.s3Mod.OutputSerialization
   
   /**
     * Specifies if periodic request progress information should be enabled.
     */
-  var RequestProgress: js.UndefOr[typings.awsSdk.s3Mod.RequestProgress] = js.native
+  var RequestProgress: js.UndefOr[typings.awsSdk.s3Mod.RequestProgress] = js.undefined
   
   /**
     * The SSE Algorithm used to encrypt the object. For more information, see Server-Side Encryption (Using Customer-Provided Encryption Keys. 
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * The SSE Customer Key. For more information, see Server-Side Encryption (Using Customer-Provided Encryption Keys. 
     */
-  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.native
+  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.undefined
   
   /**
     * The SSE Customer Key MD5. For more information, see Server-Side Encryption (Using Customer-Provided Encryption Keys. 
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * Specifies the byte range of the object to get the records from. A record is processed when its first byte is contained by the range. This parameter is optional, but when specified, it must not be empty. See RFC 2616, Section 14.35.1 about how to specify the start and end of the range.  ScanRangemay be used in the following ways:    &lt;scanrange&gt;&lt;start&gt;50&lt;/start&gt;&lt;end&gt;100&lt;/end&gt;&lt;/scanrange&gt; - process only the records starting between the bytes 50 and 100 (inclusive, counting from zero)    &lt;scanrange&gt;&lt;start&gt;50&lt;/start&gt;&lt;/scanrange&gt; - process only the records starting after the byte 50    &lt;scanrange&gt;&lt;end&gt;50&lt;/end&gt;&lt;/scanrange&gt; - process only the records within the last 50 bytes of the file.  
     */
-  var ScanRange: js.UndefOr[typings.awsSdk.s3Mod.ScanRange] = js.native
+  var ScanRange: js.UndefOr[typings.awsSdk.s3Mod.ScanRange] = js.undefined
 }
 object SelectObjectContentRequest {
   

@@ -3,7 +3,6 @@ package typings.lodash
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertMod extends Shortcut {
@@ -17,22 +16,21 @@ object convertMod extends Shortcut {
     
     def apply(func: js.Object): js.Any = js.native
     def apply(func: js.Object, options: ConvertOptions): js.Any = js.native
-    def apply(name: String, func: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
-    def apply(name: String, func: js.Function1[/* repeated */ js.Any, _], options: ConvertOptions): js.Any = js.native
+    def apply(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def apply(name: String, func: js.Function1[/* repeated */ js.Any, js.Any], options: ConvertOptions): js.Any = js.native
   }
   
-  @js.native
   trait ConvertOptions extends StObject {
     
-    var cap: js.UndefOr[Boolean] = js.native
+    var cap: js.UndefOr[Boolean] = js.undefined
     
-    var curry: js.UndefOr[Boolean] = js.native
+    var curry: js.UndefOr[Boolean] = js.undefined
     
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
-    var immutable: js.UndefOr[Boolean] = js.native
+    var immutable: js.UndefOr[Boolean] = js.undefined
     
-    var rearg: js.UndefOr[Boolean] = js.native
+    var rearg: js.UndefOr[Boolean] = js.undefined
   }
   object ConvertOptions {
     

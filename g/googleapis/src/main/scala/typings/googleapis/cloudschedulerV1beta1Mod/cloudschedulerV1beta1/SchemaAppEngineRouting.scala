@@ -2,7 +2,6 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and [App Engine Flex request
   * routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
   */
-@js.native
 trait SchemaAppEngineRouting extends StObject {
   
   /**
@@ -49,7 +47,7 @@ trait SchemaAppEngineRouting extends StObject {
     * version, or instance is invalid, then the job will be sent to the default
     * version of the default service when the job is attempted.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * App instance.  By default, the job is sent to an instance which is
@@ -62,19 +60,19 @@ trait SchemaAppEngineRouting extends StObject {
     * and [App Engine Flex request
     * routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * App service.  By default, the job is sent to the service which is the
     * default service when the job is attempted.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * App version.  By default, the job is sent to the version which is the
     * default version when the job is attempted.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaAppEngineRouting {
   

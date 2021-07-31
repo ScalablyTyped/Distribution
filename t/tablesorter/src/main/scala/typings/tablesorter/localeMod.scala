@@ -2,48 +2,46 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
   
-  @js.native
   trait Locale extends StObject {
     
     /**
       * The text to show for applying ascending sorting.
       */
-    var nextAsc: String = js.native
+    var nextAsc: String
     
     /**
       * The text to show for applying descending sorting.
       */
-    var nextDesc: String = js.native
+    var nextDesc: String
     
     /**
       * The text to show for disabling sorting.
       */
-    var nextNone: String = js.native
+    var nextNone: String
     
     /**
       * The text to show for ascending sorting.
       */
-    var sortAsc: String = js.native
+    var sortAsc: String
     
     /**
       * The text to show for descending sorting.
       */
-    var sortDesc: String = js.native
+    var sortDesc: String
     
     /**
       * The text to show for disabled sorting.
       */
-    var sortDisabled: String = js.native
+    var sortDisabled: String
     
     /**
       * The text to show for non-sorted columns.
       */
-    var sortNone: String = js.native
+    var sortNone: String
   }
   object Locale {
     

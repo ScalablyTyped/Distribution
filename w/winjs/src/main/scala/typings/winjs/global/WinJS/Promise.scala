@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.winjs.WinJS.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,14 +19,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param onCancel The function to call if a consumer of this promise wants to cancel its undone work. Promises are not required to support cancellation.
   **/
 class Promise[T] ()
-  extends typings.winjs.WinJS.Promise[T] {
+  extends StObject
+     with typings.winjs.WinJS.Promise[T] {
   def this(init: js.Function3[
         /* completeDispatch */ js.Any, 
         /* errorDispatch */ js.Any, 
         /* progressDispatch */ js.Any, 
         Unit
       ]) = this()
-  def this(init: js.UndefOr[scala.Nothing], onCancel: js.Function) = this()
   def this(
     init: js.Function3[
         /* completeDispatch */ js.Any, 
@@ -37,6 +36,7 @@ class Promise[T] ()
       ],
     onCancel: js.Function
   ) = this()
+  def this(init: Unit, onCancel: js.Function) = this()
 }
 object Promise {
   
@@ -53,26 +53,22 @@ object Promise {
     * @param capture true to initiate capture, otherwise false.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: js.Function): Unit = js.native
-  @JSGlobal("WinJS.Promise.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("WinJS.Promise.any")
-  @js.native
-  def any(value: js.Any): IPromise[_] = js.native
+  @scala.inline
+  def any(value: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   /**
     * Returns a promise that is fulfilled when one of the input promises has been fulfilled.
     * @param value An array that contains Promise objects or objects whose property values include Promise objects.
     * @returns A promise that on fulfillment yields the value of the input (complete or error).
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.any")
-  @js.native
-  def any(value: js.Array[IPromise[_]]): IPromise[_] = js.native
+  @scala.inline
+  def any(value: js.Array[IPromise[js.Any]]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   
   /**
     * Returns a promise. If the object is already a Promise it is returned; otherwise the object is wrapped in a Promise. You can use this function when you need to treat a non-Promise object like a Promise, for example when you are calling a function that expects a promise, but already have the value needed rather than needing to get it asynchronously.
@@ -80,12 +76,10 @@ object Promise {
     * @returns The promise.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.as")
-  @js.native
-  def as[U](): IPromise[U] = js.native
-  @JSGlobal("WinJS.Promise.as")
-  @js.native
-  def as[U](value: U): IPromise[U] = js.native
+  @scala.inline
+  def as[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")().asInstanceOf[IPromise[U]]
+  @scala.inline
+  def as[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
   
   /**
     * Canceled promise value, can be returned from a promise completion handler to indicate cancelation of the promise chain.
@@ -104,9 +98,8 @@ object Promise {
     * @returns true if preventDefault was called on the event; otherwise, false.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.dispatchEvent")
-  @js.native
-  def dispatchEvent(`type`: String, details: js.Any): Boolean = js.native
+  @scala.inline
+  def dispatchEvent(`type`: String, details: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Determines whether a value fulfills the promise contract.
@@ -114,9 +107,8 @@ object Promise {
     * @returns true if the object conforms to the promise contract (has a then function), otherwise false.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.is")
-  @js.native
-  def is(value: js.Any): Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a Promise that is fulfilled when all the values are fulfilled.
@@ -124,9 +116,8 @@ object Promise {
     * @returns A Promise whose value is an object with the same field names as those of the object in the values parameter, where each field value is the fulfilled value of a promise.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.join")
-  @js.native
-  def join(values: js.Any): IPromise[_] = js.native
+  @scala.inline
+  def join(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   
   //#endregion Constructors
   //#region Events
@@ -135,9 +126,8 @@ object Promise {
     * @param eventInfo An object that contains information about the event.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.onerror")
-  @js.native
-  def onerror(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def onerror(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -146,12 +136,10 @@ object Promise {
     * @param capture Specifies whether or not to initiate capture.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.removeEventListener")
-  @js.native
-  def removeEventListener(eventType: String, listener: js.Function): Unit = js.native
-  @JSGlobal("WinJS.Promise.removeEventListener")
-  @js.native
-  def removeEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = js.native
+  @scala.inline
+  def removeEventListener(eventType: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //#endregion Methods
   //#region Properties
@@ -166,107 +154,6 @@ object Promise {
   def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
   
   /**
-    * Performs an operation on all the input promises and returns a promise that has the shape of the input and contains the result of the operation that has been performed on each input.
-    * @param values A set of values (which could be either an array or an object) of which some or all are promises..
-    * @param complete The function to be called if the promise is fulfilled with a value. This function takes a single argument, which is the fulfilled value of the promise.
-    * @param error The function to be called if the promise is fulfilled with an error. This function takes a single argument, which is the error value of the promise.
-    * @param progress The function to be called if the promise reports progress. This function takes a single argument, which is the data about the progress of the promise. Promises are not required to support progress.
-    * @returns A Promise that is the result of calling join on the values parameter.
-    **/
-  /* static member */
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(values: js.Any): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(
-    values: js.Any,
-    complete: js.UndefOr[scala.Nothing],
-    error: js.UndefOr[scala.Nothing],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(values: js.Any, complete: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, Unit]): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(
-    values: js.Any,
-    complete: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* error */ js.Any, Unit],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
-    error: js.UndefOr[scala.Nothing],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
-    error: js.Function1[/* error */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.thenEach")
-  @js.native
-  def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
-    error: js.Function1[/* error */ js.Any, Unit],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  
-  /**
-    * This method has two forms: WinJS.Promise.timeout(timeout) and WinJS.Promise.timeout(timeout, promise). WinJS.Promise.timeout(timeout) creates a promise that is completed asynchronously after the specified timeout, essentially wrapping a call to setTimeout within a promise. WinJS.Promise.timeout(timeout, promise) sets a timeout period for completion of the specified promise, automatically canceling the promise if it is not completed within the timeout period.
-    * @param timeout The timeout period in milliseconds. If this value is zero or not specified, msSetImmediate is called, otherwise setTimeout is called.
-    * @param promise Optional. A promise that will be canceled if it doesn't complete within the timeout period.
-    * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
-    **/
-  /* static member */
-  @JSGlobal("WinJS.Promise.timeout")
-  @js.native
-  def timeout(): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.timeout")
-  @js.native
-  def timeout(timeout: js.UndefOr[scala.Nothing], promise: IPromise[_]): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.timeout")
-  @js.native
-  def timeout(timeout: Double): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.timeout")
-  @js.native
-  def timeout(timeout: Double, promise: IPromise[_]): IPromise[_] = js.native
-  
-  /**
-    * Wraps a non-promise value in a promise. This method is like wrapError, which allows you to produce a Promise in error conditions, in that it allows you to return a Promise in success conditions.
-    * @param value Some non-promise value to be wrapped in a promise.
-    * @returns A promise that is successfully fulfilled with the specified value.
-    **/
-  /* static member */
-  @JSGlobal("WinJS.Promise.wrap")
-  @js.native
-  def wrap[U](): IPromise[U] = js.native
-  @JSGlobal("WinJS.Promise.wrap")
-  @js.native
-  def wrap[U](value: U): IPromise[U] = js.native
-  
-  /**
-    * Wraps a non-promise error value in a promise. You can use this function if you need to pass an error to a function that requires a promise.
-    * @param error A non-promise error value to be wrapped in a promise.
-    * @returns A promise that is in an error state with the specified value.
-    **/
-  /* static member */
-  @JSGlobal("WinJS.Promise.wrapError")
-  @js.native
-  def wrapError[U](error: U): IPromise[U] = js.native
-  
-  /**
     * A static helper that functions identically to then() off a promise instance.
     * @param promise The promise to chain from.
     * @param onComplete The function to be called if the promise is fulfilled successfully with a value. The value is passed as the single argument. If the value is null, the value is returned. The value returned from the function becomes the fulfilled value of the promise returned by then. If an exception is thrown while this function is being executed, the promise returned by then moves into the error state.
@@ -275,56 +162,125 @@ object Promise {
     * @returns The promise whose value is the result of executing the onComplete function.
     **/
   /* static member */
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
-  def `then`(promise: IPromise[_]): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
+  @scala.inline
+  def `then`(promise: IPromise[js.Any]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def `then`(promise: IPromise[js.Any], onComplete: js.Function1[/* value */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
   def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
+    promise: IPromise[js.Any],
+    onComplete: js.Function1[/* value */ js.Any, js.Any],
+    onError: js.Function1[/* error */ js.Any, js.Any]
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def `then`(
+    promise: IPromise[js.Any],
+    onComplete: js.Function1[/* value */ js.Any, js.Any],
+    onError: js.Function1[/* error */ js.Any, js.Any],
     onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
   def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* error */ js.Any, _]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* error */ js.Any, _],
+    promise: IPromise[js.Any],
+    onComplete: js.Function1[/* value */ js.Any, js.Any],
+    onError: Unit,
     onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
-  def `then`(promise: IPromise[_], onComplete: js.Function1[/* value */ js.Any, _]): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def `then`(promise: IPromise[js.Any], onComplete: Unit, onError: js.Function1[/* error */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
   def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.UndefOr[scala.Nothing],
+    promise: IPromise[js.Any],
+    onComplete: Unit,
+    onError: js.Function1[/* error */ js.Any, js.Any],
     onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
   def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.Function1[/* error */ js.Any, _]
-  ): IPromise[_] = js.native
-  @JSGlobal("WinJS.Promise.then")
-  @js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.Function1[/* error */ js.Any, _],
+    promise: IPromise[js.Any],
+    onComplete: Unit,
+    onError: Unit,
     onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  
+  /**
+    * Performs an operation on all the input promises and returns a promise that has the shape of the input and contains the result of the operation that has been performed on each input.
+    * @param values A set of values (which could be either an array or an object) of which some or all are promises..
+    * @param complete The function to be called if the promise is fulfilled with a value. This function takes a single argument, which is the fulfilled value of the promise.
+    * @param error The function to be called if the promise is fulfilled with an error. This function takes a single argument, which is the error value of the promise.
+    * @param progress The function to be called if the promise reports progress. This function takes a single argument, which is the data about the progress of the promise. Promises are not required to support progress.
+    * @returns A Promise that is the result of calling join on the values parameter.
+    **/
+  /* static member */
+  @scala.inline
+  def thenEach(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(
+    values: js.Any,
+    complete: js.Function1[/* value */ js.Any, Unit],
+    error: js.Function1[/* error */ js.Any, Unit]
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(
+    values: js.Any,
+    complete: js.Function1[/* value */ js.Any, Unit],
+    error: js.Function1[/* error */ js.Any, Unit],
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(
+    values: js.Any,
+    complete: js.Function1[/* value */ js.Any, Unit],
+    error: Unit,
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(values: js.Any, complete: Unit, error: js.Function1[/* error */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(
+    values: js.Any,
+    complete: Unit,
+    error: js.Function1[/* error */ js.Any, Unit],
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def thenEach(values: js.Any, complete: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  
+  /**
+    * This method has two forms: WinJS.Promise.timeout(timeout) and WinJS.Promise.timeout(timeout, promise). WinJS.Promise.timeout(timeout) creates a promise that is completed asynchronously after the specified timeout, essentially wrapping a call to setTimeout within a promise. WinJS.Promise.timeout(timeout, promise) sets a timeout period for completion of the specified promise, automatically canceling the promise if it is not completed within the timeout period.
+    * @param timeout The timeout period in milliseconds. If this value is zero or not specified, msSetImmediate is called, otherwise setTimeout is called.
+    * @param promise Optional. A promise that will be canceled if it doesn't complete within the timeout period.
+    * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
+    **/
+  /* static member */
+  @scala.inline
+  def timeout(): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")().asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def timeout(timeout: Double): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def timeout(timeout: Double, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  @scala.inline
+  def timeout(timeout: Unit, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  
+  /**
+    * Wraps a non-promise value in a promise. This method is like wrapError, which allows you to produce a Promise in error conditions, in that it allows you to return a Promise in success conditions.
+    * @param value Some non-promise value to be wrapped in a promise.
+    * @returns A promise that is successfully fulfilled with the specified value.
+    **/
+  /* static member */
+  @scala.inline
+  def wrap[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[IPromise[U]]
+  @scala.inline
+  def wrap[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
+  
+  /**
+    * Wraps a non-promise error value in a promise. You can use this function if you need to pass an error to a function that requires a promise.
+    * @param error A non-promise error value to be wrapped in a promise.
+    * @returns A promise that is in an error state with the specified value.
+    **/
+  /* static member */
+  @scala.inline
+  def wrapError[U](error: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(error.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
 }

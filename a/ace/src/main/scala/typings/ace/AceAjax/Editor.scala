@@ -4,11 +4,12 @@ import typings.ace.aceStrings.change
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor extends OptionProvider {
+trait Editor
+  extends StObject
+     with OptionProvider {
   
   /**
     * Get rid of console warning by setting this to Infinity
@@ -18,7 +19,7 @@ trait Editor extends OptionProvider {
   
   def addEventListener(ev: String, callback: js.Function): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(ev: change, callback: js.Function1[/* ev */ EditorChangeEvent, _]): Unit = js.native
+  def addEventListener_change(ev: change, callback: js.Function1[/* ev */ EditorChangeEvent, js.Any]): Unit = js.native
   
   /**
     * Indents the current line.
@@ -75,9 +76,9 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def find(needle: String): Unit = js.native
-  def find(needle: String, options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def find(needle: String, options: js.Any): Unit = js.native
   def find(needle: String, options: js.Any, animate: Boolean): Unit = js.native
+  def find(needle: String, options: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Performs another search for `needle` in the document. For more information on `options`, see [[Search `Search`]].
@@ -85,9 +86,9 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def findNext(): Unit = js.native
-  def findNext(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findNext(options: js.Any): Unit = js.native
   def findNext(options: js.Any, animate: Boolean): Unit = js.native
+  def findNext(options: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Performs a search for `needle` backwards. For more information on `options`, see [[Search `Search`]].
@@ -95,9 +96,9 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def findPrevious(): Unit = js.native
-  def findPrevious(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findPrevious(options: js.Any): Unit = js.native
   def findPrevious(options: js.Any, animate: Boolean): Unit = js.native
+  def findPrevious(options: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Brings the current `textInput` into focus.
@@ -241,9 +242,9 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animates scolling
     **/
   def gotoLine(lineNumber: Double): Unit = js.native
-  def gotoLine(lineNumber: Double, column: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def gotoLine(lineNumber: Double, column: Double): Unit = js.native
   def gotoLine(lineNumber: Double, column: Double, animate: Boolean): Unit = js.native
+  def gotoLine(lineNumber: Double, column: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Shifts the document to wherever "page down" is, as well as moving the cursor position.
@@ -304,9 +305,9 @@ trait Editor extends OptionProvider {
     * @param column The new column number
     **/
   def moveCursorTo(row: Double): Unit = js.native
-  def moveCursorTo(row: Double, column: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def moveCursorTo(row: Double, column: Double): Unit = js.native
   def moveCursorTo(row: Double, column: Double, animate: Boolean): Unit = js.native
+  def moveCursorTo(row: Double, column: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Moves the cursor to the position indicated by `pos.row` and `pos.column`.
@@ -400,7 +401,7 @@ trait Editor extends OptionProvider {
   
   def off(ev: String, callback: js.Function): Unit = js.native
   
-  def on(ev: String, callback: js.Function1[/* e */ js.Any, _]): Unit = js.native
+  def on(ev: String, callback: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
   
   /**
     * Emitted once the editor has been blurred.

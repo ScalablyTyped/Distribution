@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,15 @@ object FillMode extends StObject {
     * Centered fill.
     */
   @js.native
-  sealed trait Centered extends FillMode
+  sealed trait Centered
+    extends StObject
+       with FillMode
   
   /**
     * Mosaic fill.
     */
   @js.native
-  sealed trait Mosaic extends FillMode
+  sealed trait Mosaic
+    extends StObject
+       with FillMode
 }

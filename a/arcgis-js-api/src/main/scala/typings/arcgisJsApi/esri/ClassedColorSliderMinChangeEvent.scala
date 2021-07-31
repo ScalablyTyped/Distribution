@@ -3,24 +3,22 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`min-change`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassedColorSliderMinChangeEvent extends StObject {
   
-  var oldValue: Double = js.native
+  var oldValue: Double
   
-  var `type`: `min-change` = js.native
+  var `type`: `min-change`
   
-  var value: Double = js.native
+  var value: Double
 }
 object ClassedColorSliderMinChangeEvent {
   
   @scala.inline
-  def apply(oldValue: Double, `type`: `min-change`, value: Double): ClassedColorSliderMinChangeEvent = {
+  def apply(oldValue: Double, value: Double): ClassedColorSliderMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("min-change")
     __obj.asInstanceOf[ClassedColorSliderMinChangeEvent]
   }
   

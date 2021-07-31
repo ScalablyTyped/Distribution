@@ -9,7 +9,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLLabelElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
@@ -21,37 +20,37 @@ object labelMod {
   
   type Label = Component[LabelProps, js.Object, js.Any]
   
-  @js.native
   trait LabelProps
-    extends LabelHTMLAttributes[HTMLLabelElement]
+    extends StObject
+       with LabelHTMLAttributes[HTMLLabelElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var `for`: js.UndefOr[String] = js.native
+    var `for`: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var lg: js.UndefOr[ColumnProps] = js.native
+    var lg: js.UndefOr[ColumnProps] = js.undefined
     
-    var md: js.UndefOr[ColumnProps] = js.native
+    var md: js.UndefOr[ColumnProps] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var sm: js.UndefOr[ColumnProps] = js.native
+    var sm: js.UndefOr[ColumnProps] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     // custom widths
-    var widths: js.UndefOr[js.Array[String]] = js.native
+    var widths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var xl: js.UndefOr[ColumnProps] = js.native
+    var xl: js.UndefOr[ColumnProps] = js.undefined
     
-    var xs: js.UndefOr[ColumnProps] = js.native
+    var xs: js.UndefOr[ColumnProps] = js.undefined
   }
   object LabelProps {
     
@@ -119,7 +118,7 @@ object labelMod {
       def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

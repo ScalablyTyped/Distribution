@@ -2,14 +2,12 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'autoSuccess'> */
-@js.native
 trait PickImplautoSuccess extends StObject {
   
-  var autoSuccess: Boolean = js.native
+  var autoSuccess: Boolean
 }
 object PickImplautoSuccess {
   

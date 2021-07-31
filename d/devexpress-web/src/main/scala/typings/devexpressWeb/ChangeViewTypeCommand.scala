@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the Rich Edit's document view type.
   */
-@js.native
-trait ChangeViewTypeCommand extends CommandWithBooleanStateBase {
+trait ChangeViewTypeCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ChangeViewTypeCommand command with the specified parameter. A Boolean value identifying whether method execution was successful or failed.
     * @param viewType A string value specifying the Rich Edit's document view type.
     */
-  def execute(viewType: ViewType): Boolean = js.native
+  def execute(viewType: ViewType): Boolean
 }
 object ChangeViewTypeCommand {
   

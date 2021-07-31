@@ -3,7 +3,6 @@ package typings.sjcl.mod
 import typings.sjcl.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,109 +23,37 @@ trait SjclMisc extends StObject {
   var hmac: SjclHMACStatic = js.native
   
   def pbkdf2(password: String, salt: String): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: String,
-    count: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
-  def pbkdf2(password: String, salt: String, count: js.UndefOr[scala.Nothing], length: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: String,
-    count: js.UndefOr[scala.Nothing],
-    length: Double,
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: String, salt: String, count: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: String,
-    count: Double,
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: String, salt: String, count: Double, length: Double): BitArray_ = js.native
   def pbkdf2(password: String, salt: String, count: Double, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: String, count: Double, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: String, count: Unit, length: Double): BitArray_ = js.native
+  def pbkdf2(password: String, salt: String, count: Unit, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: String, count: Unit, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
   def pbkdf2(password: String, salt: BitArray_): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: BitArray_,
-    count: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
-  def pbkdf2(password: String, salt: BitArray_, count: js.UndefOr[scala.Nothing], length: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: BitArray_,
-    count: js.UndefOr[scala.Nothing],
-    length: Double,
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: String, salt: BitArray_, count: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: String,
-    salt: BitArray_,
-    count: Double,
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: String, salt: BitArray_, count: Double, length: Double): BitArray_ = js.native
   def pbkdf2(password: String, salt: BitArray_, count: Double, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: BitArray_, count: Double, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: BitArray_, count: Unit, length: Double): BitArray_ = js.native
+  def pbkdf2(password: String, salt: BitArray_, count: Unit, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: String, salt: BitArray_, count: Unit, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: String): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: String,
-    count: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
-  def pbkdf2(password: BitArray_, salt: String, count: js.UndefOr[scala.Nothing], length: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: String,
-    count: js.UndefOr[scala.Nothing],
-    length: Double,
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: String, count: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: String,
-    count: Double,
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: String, count: Double, length: Double): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: String, count: Double, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: String, count: Double, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: String, count: Unit, length: Double): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: String, count: Unit, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: String, count: Unit, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: BitArray_): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: BitArray_,
-    count: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
-  def pbkdf2(password: BitArray_, salt: BitArray_, count: js.UndefOr[scala.Nothing], length: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: BitArray_,
-    count: js.UndefOr[scala.Nothing],
-    length: Double,
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: BitArray_, count: Double): BitArray_ = js.native
-  def pbkdf2(
-    password: BitArray_,
-    salt: BitArray_,
-    count: Double,
-    length: js.UndefOr[scala.Nothing],
-    Prff: SjclPRFFamilyStatic
-  ): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: BitArray_, count: Double, length: Double): BitArray_ = js.native
   def pbkdf2(password: BitArray_, salt: BitArray_, count: Double, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: BitArray_, count: Double, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: BitArray_, count: Unit, length: Double): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: BitArray_, count: Unit, length: Double, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
+  def pbkdf2(password: BitArray_, salt: BitArray_, count: Unit, length: Unit, Prff: SjclPRFFamilyStatic): BitArray_ = js.native
   
   def scrypt(
     password: BitArray_ | String,

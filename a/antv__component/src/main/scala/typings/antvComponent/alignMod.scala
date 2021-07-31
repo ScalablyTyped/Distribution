@@ -4,16 +4,17 @@ import typings.antvGBase.typesMod.BBox
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignMod {
   
-  @JSImport("@antv/component/lib/util/align", "getAlignPoint")
+  @JSImport("@antv/component/lib/util/align", JSImport.Namespace)
   @js.native
-  def getAlignPoint(x: Double, y: Double, offset: Double, width: Double, height: Double, position: String): Point = js.native
-  @JSImport("@antv/component/lib/util/align", "getAlignPoint")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getAlignPoint(x: Double, y: Double, offset: Double, width: Double, height: Double, position: String): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
   def getAlignPoint(
     x: Double,
     y: Double,
@@ -22,26 +23,23 @@ object alignMod {
     height: Double,
     position: String,
     limitBox: BBox
-  ): Point = js.native
+  ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], position.asInstanceOf[js.Any], limitBox.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("@antv/component/lib/util/align", "getOutSides")
-  @js.native
-  def getOutSides(x: Double, y: Double, width: Double, height: Double, limitBox: BBox): OutSides = js.native
+  @scala.inline
+  def getOutSides(x: Double, y: Double, width: Double, height: Double, limitBox: BBox): OutSides = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutSides")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], limitBox.asInstanceOf[js.Any])).asInstanceOf[OutSides]
   
-  @JSImport("@antv/component/lib/util/align", "getPointByPosition")
-  @js.native
-  def getPointByPosition(x: Double, y: Double, offset: Double, width: Double, height: Double, position: String): Point = js.native
+  @scala.inline
+  def getPointByPosition(x: Double, y: Double, offset: Double, width: Double, height: Double, position: String): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointByPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @js.native
   trait OutSides extends StObject {
     
-    var bottom: Boolean = js.native
+    var bottom: Boolean
     
-    var left: Boolean = js.native
+    var left: Boolean
     
-    var right: Boolean = js.native
+    var right: Boolean
     
-    var top: Boolean = js.native
+    var top: Boolean
   }
   object OutSides {
     

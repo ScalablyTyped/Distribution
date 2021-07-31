@@ -2,17 +2,15 @@ package typings.writeFileAtomic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Gid extends StObject {
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Gid {
     

@@ -6,38 +6,36 @@ import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ImportDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait ImportDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with ModuleDeclaration
      with Statement {
   
-  var assertions: ImportAttribute_ | Null = js.native
+  var assertions: ImportAttribute_ | Null
   
-  var importKind: `type` | typeof | value | Null = js.native
+  var importKind: `type` | typeof | value | Null
   
-  var source: StringLiteral_ = js.native
+  var source: StringLiteral_
   
-  var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_] = js.native
+  var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   
   @JSName("type")
-  var type_ImportDeclaration_ : ImportDeclaration = js.native
+  var type_ImportDeclaration_ : ImportDeclaration
 }
 object ImportDeclaration_ {
   
   @scala.inline
   def apply(
     source: StringLiteral_,
-    specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_],
-    `type`: ImportDeclaration
+    specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   ): ImportDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[ImportDeclaration_]
   }
   

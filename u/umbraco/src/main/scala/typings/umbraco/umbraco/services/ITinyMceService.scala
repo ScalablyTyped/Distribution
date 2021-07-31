@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.services
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * A service containing all logic for all of the Umbraco TinyMCE plugins
   */
-@js.native
 trait ITinyMceService extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait ITinyMceService extends StObject {
     * Returns a collection of plugins available to the tinyMCE editor
     *
     */
-  def configuration(): js.Array[ITinyMcePlugin] = js.native
+  def configuration(): js.Array[ITinyMcePlugin]
   
   /**
     * @ngdoc method
@@ -39,7 +37,7 @@ trait ITinyMceService extends StObject {
     * @param {Object} editor the TinyMCE editor instance
     * @param {Object} $scope the current controller scope
     */
-  def createInsertEmbeddedMedia(editor: js.Object, $scope: IScope): Unit = js.native
+  def createInsertEmbeddedMedia(editor: js.Object, $scope: IScope): Unit
   
   /**
     * @ngdoc method
@@ -52,7 +50,7 @@ trait ITinyMceService extends StObject {
     * @param {Object} editor the TinyMCE editor instance
     * @param {Object} $scope the current controller scope
     */
-  def createInsertMacro(editor: js.Object, $scope: IScope): Unit = js.native
+  def createInsertMacro(editor: js.Object, $scope: IScope): Unit
   
   /**
     * @ngdoc method
@@ -65,7 +63,7 @@ trait ITinyMceService extends StObject {
     * @param {Object} editor the TinyMCE editor instance
     * @param {Object} $scope the current controller scope
     */
-  def createMediaPicker(editor: js.Object): Unit = js.native
+  def createMediaPicker(editor: js.Object): Unit
   
   /**
     * @ngdoc method
@@ -76,7 +74,7 @@ trait ITinyMceService extends StObject {
     * Returns a default configration to fallback on in case none is provided
     *
     */
-  def defaultPrevalues(): IConfiguration = js.native
+  def defaultPrevalues(): IConfiguration
 }
 object ITinyMceService {
   

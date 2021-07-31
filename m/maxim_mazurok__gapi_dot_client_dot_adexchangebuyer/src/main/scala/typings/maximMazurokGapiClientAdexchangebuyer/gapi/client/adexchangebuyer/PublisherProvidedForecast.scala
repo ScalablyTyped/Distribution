@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherProvidedForecast extends StObject {
   
   /** Publisher provided dimensions. E.g. geo, sizes etc... */
-  var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** Publisher provided weekly impressions. */
-  var weeklyImpressions: js.UndefOr[String] = js.native
+  var weeklyImpressions: js.UndefOr[String] = js.undefined
   
   /** Publisher provided weekly uniques. */
-  var weeklyUniques: js.UndefOr[String] = js.native
+  var weeklyUniques: js.UndefOr[String] = js.undefined
 }
 object PublisherProvidedForecast {
   

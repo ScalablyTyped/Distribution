@@ -2,31 +2,29 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSON extends StObject {
   
   /**
     * Full copyright note of the geographic data.
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * Short copyright note of the geographic data suitable for watermarks.
     */
-  var copyrightShort: js.UndefOr[String] = js.native
+  var copyrightShort: js.UndefOr[String] = js.undefined
   
   /**
     * Additional meta information based on the coordinate reference system.
     */
-  var crs: js.UndefOr[Dictionary[_]] = js.native
+  var crs: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * Data sets of geographic features.
     */
-  var features: js.Array[GeoJSONFeature] = js.native
+  var features: js.Array[GeoJSONFeature]
   
   /**
     * Map projections and transformations to be used when calculating between
@@ -36,23 +34,23 @@ trait GeoJSON extends StObject {
     * on a portion of the map that does not match a `hitZone`, the definition
     * with the key `default` is used.
     */
-  var `hc-transform`: js.UndefOr[Dictionary[GeoJSONTranslation]] = js.native
+  var `hc-transform`: js.UndefOr[Dictionary[GeoJSONTranslation]] = js.undefined
   
   /**
     * Title of the geographic data.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the geographic data. Type of an optimized map collection is
     * `FeatureCollection`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Version of the geographic data.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GeoJSON {
   
@@ -78,7 +76,7 @@ object GeoJSON {
     def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def setCrs(value: Dictionary[_]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
+    def setCrs(value: Dictionary[js.Any]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)

@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.Blob")
@@ -18,13 +17,15 @@ class Blob () extends StObject {
 }
 object Blob {
   
-  /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.Blob.fromBase64String")
+  @JSImport("react-native-firebase", "RNFirebase.firestore.Blob")
   @js.native
-  def fromBase64String(base64: String): Blob = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.Blob.fromUint8Array")
-  @js.native
-  def fromUint8Array(array: Uint8Array): Blob = js.native
+  @scala.inline
+  def fromBase64String(base64: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  
+  /* static member */
+  @scala.inline
+  def fromUint8Array(array: Uint8Array): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[Blob]
 }

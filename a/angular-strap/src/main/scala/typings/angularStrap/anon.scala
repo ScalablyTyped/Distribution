@@ -2,17 +2,15 @@ package typings.angularStrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hide extends StObject {
     
-    var hide: Double = js.native
+    var hide: Double
     
-    var show: Double = js.native
+    var show: Double
   }
   object Hide {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Padding extends StObject {
     
-    var padding: String | Double = js.native
+    var padding: String | Double
     
-    var selector: String = js.native
+    var selector: String
   }
   object Padding {
     

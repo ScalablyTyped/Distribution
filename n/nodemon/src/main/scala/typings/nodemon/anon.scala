@@ -2,15 +2,13 @@ package typings.nodemon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Re extends StObject {
     
-    var re: String = js.native
+    var re: String
   }
   object Re {
     

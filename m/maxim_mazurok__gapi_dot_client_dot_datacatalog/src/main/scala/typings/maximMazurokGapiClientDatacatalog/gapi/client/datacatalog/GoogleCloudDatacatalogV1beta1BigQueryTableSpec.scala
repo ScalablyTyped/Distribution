@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1BigQueryTableSpec extends StObject {
   
   /** Output only. The table source type. */
-  var tableSourceType: js.UndefOr[String] = js.native
+  var tableSourceType: js.UndefOr[String] = js.undefined
   
   /** Spec of a BigQuery table. This field should only be populated if `table_source_type` is `BIGQUERY_TABLE`. */
-  var tableSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1TableSpec] = js.native
+  var tableSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1TableSpec] = js.undefined
   
   /** Table view specification. This field should only be populated if `table_source_type` is `BIGQUERY_VIEW`. */
-  var viewSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1ViewSpec] = js.native
+  var viewSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1ViewSpec] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1BigQueryTableSpec {
   

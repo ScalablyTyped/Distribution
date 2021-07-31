@@ -2,26 +2,24 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArchiveCreationOutput extends StObject {
   
   /**
     * The ID of the archive. This value is also included as part of the location.
     */
-  var archiveId: js.UndefOr[String] = js.native
+  var archiveId: js.UndefOr[String] = js.undefined
   
   /**
     * The checksum of the archive computed by Amazon S3 Glacier.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI path of the newly added archive resource.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object ArchiveCreationOutput {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sheetsMod {
+  
+  @JSImport("googleapis/build/src/apis/sheets", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,9 +69,12 @@ object sheetsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/sheets", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/sheets", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -112,10 +118,9 @@ object sheetsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/sheets", "sheets")
-  @js.native
-  def sheets(options: Options): Sheets = js.native
-  @JSImport("googleapis/build/src/apis/sheets", "sheets")
-  @js.native
-  def sheets_v4(version: v4): Sheets = js.native
+  @scala.inline
+  def sheets(options: Options): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(options.asInstanceOf[js.Any]).asInstanceOf[Sheets]
+  
+  @scala.inline
+  def sheets_v4(version: v4): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(version.asInstanceOf[js.Any]).asInstanceOf[Sheets]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationConfig extends StObject {
   
   /**
     * A list of service names that identity the target application. The AWS IoT client running on the destination device reads this value and uses it to look up a port or an IP address and a port. The AWS IoT client instantiates the local proxy which uses this information to connect to the destination application.
     */
-  var services: ServiceList = js.native
+  var services: ServiceList
   
   /**
     * The name of the IoT thing to which you want to connect.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object DestinationConfig {
   

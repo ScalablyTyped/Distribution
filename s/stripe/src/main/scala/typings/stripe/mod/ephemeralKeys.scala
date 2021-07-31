@@ -3,17 +3,15 @@ package typings.stripe.mod
 import typings.stripe.stripeStrings.ephemeral_key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ephemeralKeys {
   
-  @js.native
   trait IAssociatedObject extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IAssociatedObject {
     
@@ -35,13 +33,12 @@ object ephemeralKeys {
     }
   }
   
-  @js.native
   trait ICustomer extends StObject {
     
     /**
       * customer id
       */
-    var customer: String = js.native
+    var customer: String
   }
   object ICustomer {
     
@@ -59,21 +56,22 @@ object ephemeralKeys {
     }
   }
   
-  @js.native
-  trait IEphemeralKey extends IResourceObject {
+  trait IEphemeralKey
+    extends StObject
+       with IResourceObject {
     
-    var associated_objects: js.Array[IAssociatedObject] = js.native
+    var associated_objects: js.Array[IAssociatedObject]
     
-    var created: Double = js.native
+    var created: Double
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     @JSName("object")
-    var object_IEphemeralKey: ephemeral_key = js.native
+    var object_IEphemeralKey: ephemeral_key
     
-    var secret: String = js.native
+    var secret: String
   }
   object IEphemeralKey {
     
@@ -84,11 +82,10 @@ object ephemeralKeys {
       expires: Double,
       id: String,
       livemode: Boolean,
-      `object`: ephemeral_key,
       secret: String
     ): IEphemeralKey = {
       val __obj = js.Dynamic.literal(associated_objects = associated_objects.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("ephemeral_key")
       __obj.asInstanceOf[IEphemeralKey]
     }
     
@@ -118,13 +115,12 @@ object ephemeralKeys {
     }
   }
   
-  @js.native
   trait IStripeVersion extends StObject {
     
     /**
       * https://stripe.com/docs/upgrades#api-changelog
       */
-    var stripe_version: String = js.native
+    var stripe_version: String
   }
   object IStripeVersion {
     

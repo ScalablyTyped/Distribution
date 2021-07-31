@@ -2,19 +2,17 @@ package typings.succinct
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQuerySuccinct {
   
-  @js.native
   trait Options extends StObject {
     
-    var ignore: js.UndefOr[Boolean] = js.native
+    var ignore: js.UndefOr[Boolean] = js.undefined
     
-    var omission: js.UndefOr[String] = js.native
+    var omission: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -4,20 +4,18 @@ import typings.octokitTypes.octokitTypesStrings.opt_in
 import typings.octokitTypes.octokitTypesStrings.opt_out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsSetLfsPreferenceEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Can be one of `opt_in` (large files will be stored using Git LFS) or `opt_out` (large files will be removed during the import).
     */
-  var use_lfs: opt_in | opt_out = js.native
+  var use_lfs: opt_in | opt_out
 }
 object MigrationsSetLfsPreferenceEndpoint {
   

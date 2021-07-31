@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.arcgisJsApi.arcgisJsApiStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExpressionInfo
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

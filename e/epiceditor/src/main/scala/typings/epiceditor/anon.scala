@@ -2,19 +2,17 @@ package typings.epiceditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoSave extends StObject {
     
-    var autoSave: js.Any = js.native
+    var autoSave: js.Any
     
-    var defaultContent: String = js.native
+    var defaultContent: String
     
-    var name: String = js.native
+    var name: String
   }
   object AutoSave {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Base extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var editor: String = js.native
+    var editor: String
     
-    var preview: String = js.native
+    var preview: String
   }
   object Base {
     
@@ -69,14 +66,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fullscreen extends StObject {
     
-    var fullscreen: Double = js.native
+    var fullscreen: Double
     
-    var modifier: Double = js.native
+    var modifier: Double
     
-    var preview: Double = js.native
+    var preview: Double
   }
   object Fullscreen {
     
@@ -100,14 +96,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ToggleEdit extends StObject {
     
-    var toggleEdit: String = js.native
+    var toggleEdit: String
     
-    var toggleFullscreen: String = js.native
+    var toggleFullscreen: String
     
-    var togglePreview: String = js.native
+    var togglePreview: String
   }
   object ToggleEdit {
     

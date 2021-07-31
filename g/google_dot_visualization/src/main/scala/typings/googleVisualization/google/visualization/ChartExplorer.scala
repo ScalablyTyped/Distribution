@@ -2,23 +2,21 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartExplorer extends StObject {
   
-  var actions: js.UndefOr[js.Array[String]] = js.native
+  var actions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var keepInBounds: js.UndefOr[Boolean] = js.native
+  var keepInBounds: js.UndefOr[Boolean] = js.undefined
   
-  var maxZoomIn: js.UndefOr[Double] = js.native
+  var maxZoomIn: js.UndefOr[Double] = js.undefined
   
-  var maxZoomOut: js.UndefOr[Double] = js.native
+  var maxZoomOut: js.UndefOr[Double] = js.undefined
   
-  var zoomDelta: js.UndefOr[Double] = js.native
+  var zoomDelta: js.UndefOr[Double] = js.undefined
 }
 object ChartExplorer {
   

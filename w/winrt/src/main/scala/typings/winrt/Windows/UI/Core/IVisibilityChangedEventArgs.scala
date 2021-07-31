@@ -2,13 +2,13 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IVisibilityChangedEventArgs extends ICoreWindowEventArgs {
+trait IVisibilityChangedEventArgs
+  extends StObject
+     with ICoreWindowEventArgs {
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IVisibilityChangedEventArgs {
   

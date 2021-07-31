@@ -5,15 +5,13 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uboDeclaration {
   
-  @js.native
   trait CreateUboDeclaration extends StObject {
     
-    var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.native
+    var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CreateUboDeclaration {
     
@@ -37,33 +35,34 @@ object uboDeclaration {
     }
   }
   
-  @js.native
-  trait UboDeclarationData extends EntityBaseData {
+  trait UboDeclarationData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * An array of UserIDs declared as Ultimate Beneficial Owners of a BUSINESS Legal User.
       */
-    var DeclaredUBOs: js.Array[String] = js.native
+    var DeclaredUBOs: js.Array[String]
     
     /**
       * Refused Reason Message for a UBO Declaration
       */
-    var RefusedReasonMessage: String = js.native
+    var RefusedReasonMessage: String
     
     /**
       * Reason types for a UBO Declaration
       */
-    var RefusedReasonTypes: js.Array[String] = js.native
+    var RefusedReasonTypes: js.Array[String]
     
     /**
       * Status of a UBO Declaration
       */
-    var Status: DocumentStatus = js.native
+    var Status: DocumentStatus
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object UboDeclarationData {
     
@@ -108,19 +107,18 @@ object uboDeclaration {
     }
   }
   
-  @js.native
   trait UpdateUboDeclaration extends StObject {
     
     /**
       * An array of UserIDs declared as Ultimate Beneficial Owners of a BUSINESS Legal User.
       */
-    var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.native
+    var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var Id: String = js.native
+    var Id: String
     
-    var Status: js.UndefOr[VALIDATION_ASKED] = js.native
+    var Status: js.UndefOr[VALIDATION_ASKED] = js.undefined
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object UpdateUboDeclaration {
     

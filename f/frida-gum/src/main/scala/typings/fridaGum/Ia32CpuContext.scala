@@ -2,30 +2,30 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fridaGum.CpuContext because Already inherited */ @js.native
-trait Ia32CpuContext extends PortableCpuContext {
+- typings.fridaGum.CpuContext because Already inherited */ trait Ia32CpuContext
+  extends StObject
+     with PortableCpuContext {
   
-  var eax: NativePointer = js.native
+  var eax: NativePointer
   
-  var ebp: NativePointer = js.native
+  var ebp: NativePointer
   
-  var ebx: NativePointer = js.native
+  var ebx: NativePointer
   
-  var ecx: NativePointer = js.native
+  var ecx: NativePointer
   
-  var edi: NativePointer = js.native
+  var edi: NativePointer
   
-  var edx: NativePointer = js.native
+  var edx: NativePointer
   
-  var eip: NativePointer = js.native
+  var eip: NativePointer
   
-  var esi: NativePointer = js.native
+  var esi: NativePointer
   
-  var esp: NativePointer = js.native
+  var esp: NativePointer
 }
 object Ia32CpuContext {
   

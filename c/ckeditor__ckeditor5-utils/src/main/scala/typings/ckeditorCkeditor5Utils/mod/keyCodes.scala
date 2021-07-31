@@ -60,7 +60,6 @@ import typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsNumbers.`89`
 import typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsNumbers.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyCodes {
@@ -68,6 +67,46 @@ object keyCodes {
   @JSImport("@ckeditor/ckeditor5-utils", "keyCodes")
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.0")
+  @js.native
+  val `0`: `48` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.1")
+  @js.native
+  val `1`: `49` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.2")
+  @js.native
+  val `2`: `50` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.3")
+  @js.native
+  val `3`: `51` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.4")
+  @js.native
+  val `4`: `52` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.5")
+  @js.native
+  val `5`: `53` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.6")
+  @js.native
+  val `6`: `54` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.7")
+  @js.native
+  val `7`: `55` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.8")
+  @js.native
+  val `8`: `56` = js.native
+  
+  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.9")
+  @js.native
+  val `9`: `57` = js.native
   
   @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.a")
   @js.native
@@ -382,44 +421,4 @@ object keyCodes {
   def z: `90` = js.native
   @scala.inline
   def z_=(x: `90`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("z")(x.asInstanceOf[js.Any])
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.0")
-  @js.native
-  val `0`: `48` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.1")
-  @js.native
-  val `1`: `49` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.2")
-  @js.native
-  val `2`: `50` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.3")
-  @js.native
-  val `3`: `51` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.4")
-  @js.native
-  val `4`: `52` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.5")
-  @js.native
-  val `5`: `53` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.6")
-  @js.native
-  val `6`: `54` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.7")
-  @js.native
-  val `7`: `55` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.8")
-  @js.native
-  val `8`: `56` = js.native
-  
-  @JSImport("@ckeditor/ckeditor5-utils", "keyCodes.9")
-  @js.native
-  val `9`: `57` = js.native
 }

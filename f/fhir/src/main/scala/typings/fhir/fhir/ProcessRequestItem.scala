@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Items to re-adjudicate
   */
-@js.native
-trait ProcessRequestItem extends BackboneElement {
+trait ProcessRequestItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[Element] = js.native
+  var _sequenceLinkId: js.UndefOr[Element] = js.undefined
   
   /**
     * Service instance
     */
-  var sequenceLinkId: integer = js.native
+  var sequenceLinkId: integer
 }
 object ProcessRequestItem {
   

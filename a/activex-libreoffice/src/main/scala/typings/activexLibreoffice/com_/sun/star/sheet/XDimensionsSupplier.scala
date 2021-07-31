@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the collection of dimensions of a data pilot source.
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
-trait XDimensionsSupplier extends XInterface {
+trait XDimensionsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of dimensions.
     * @see com.sun.star.sheet.DataPilotSourceDimensions
     */
-  val Dimensions: XNameAccess = js.native
+  val Dimensions: XNameAccess
   
   /**
     * returns the collection of dimensions.
     * @see com.sun.star.sheet.DataPilotSourceDimensions
     */
-  def getDimensions(): XNameAccess = js.native
+  def getDimensions(): XNameAccess
 }
 object XDimensionsSupplier {
   

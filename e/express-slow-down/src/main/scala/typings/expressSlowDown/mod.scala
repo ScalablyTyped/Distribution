@@ -8,47 +8,52 @@ import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-slow-down", JSImport.Namespace)
   @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * express-slow-down options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * Max number of connections during `windowMs` before starting to delay responses.
       * Defaults to `1`. Set to `0` to disable delaying.
       */
-    var delayAfter: js.UndefOr[Double] = js.native
+    var delayAfter: js.UndefOr[Double] = js.undefined
     
     /**
       * How long to delay the response, multiplied by `(number recent hits - delayAfter)`.
       * Defaults to `1000` (1 second). Set to `0` to disable delaying.
       */
-    var delayMs: js.UndefOr[Double] = js.native
+    var delayMs: js.UndefOr[Double] = js.undefined
     
     /**
       * Function used to generate keys. By default user IP address (`req.ip`) is used.
       * Default: `(req, res) => req.ip`
       */
     var keyGenerator: js.UndefOr[
-        js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
-      ] = js.native
+        js.Function2[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
+          String
+        ]
+      ] = js.undefined
     
     /**
       * Maximum value for `delayMs` after many consecutive attempts, that is, after the n-th request,
       * the delay will be always `maxDelayMs`. Important when your application is running behind a
       * load balancer or reverse proxy that has a request timeout. Defaults to Infinity.
       */
-    var maxDelayMs: js.UndefOr[Double] = js.native
+    var maxDelayMs: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to execute the first time the limit is reached within `windowMs`.
@@ -57,39 +62,43 @@ object mod {
     var onLimitReached: js.UndefOr[
         js.Function3[
           /* req */ RequestWithSlowDown, 
-          /* res */ Response_[_], 
+          /* res */ Response_[js.Any], 
           /* optionsUsed */ this.type, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function used to skip requests. Returning `true` from the function will skip delaying for that request.
       * Default: `(req, res) => false`
       */
     var skip: js.UndefOr[
-        js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
-      ] = js.native
+        js.Function2[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
+          Boolean
+        ]
+      ] = js.undefined
     
     /**
       * When `true` failed requests (response status >= 400) won't be counted. Defaults to `false`.
       */
-    var skipFailedRequests: js.UndefOr[Boolean] = js.native
+    var skipFailedRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` successful requests (response status < 400) won't be counted. Defaults to `false`.
       */
-    var skipSuccessfulRequests: js.UndefOr[Boolean] = js.native
+    var skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The storage to use when persisting request attempts. By default, the MemoryStore is used.
       */
-    var store: js.UndefOr[Store] = js.native
+    var store: js.UndefOr[Store] = js.undefined
     
     /**
       * How long to keep records of requests in memory. Defaults to `60000` (1 minute)
       */
-    var windowMs: js.UndefOr[Double] = js.native
+    var windowMs: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -115,7 +124,9 @@ object mod {
       def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
       
       @scala.inline
-      def setKeyGenerator(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
+      def setKeyGenerator(
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+      ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
       @scala.inline
       def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
@@ -127,13 +138,15 @@ object mod {
       def setMaxDelayMsUndefined: Self = StObject.set(x, "maxDelayMs", js.undefined)
       
       @scala.inline
-      def setOnLimitReached(value: (/* req */ RequestWithSlowDown, /* res */ Response_[_], Options) => Unit): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
+      def setOnLimitReached(value: (/* req */ RequestWithSlowDown, /* res */ Response_[js.Any], Options) => Unit): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
       
       @scala.inline
-      def setSkip(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      def setSkip(
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+      ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
@@ -174,35 +187,34 @@ object mod {
     var slowDown: SlowDownRequestAugmentation = js.native
   }
   
-  @js.native
   trait SlowDownRequestAugmentation extends StObject {
     
     /**
       * The number of requests in the current window
       */
-    var current: Double = js.native
+    var current: Double
     
     /**
       * Amount of delay imposed on current request in milliseconds
       */
-    var delay: Double = js.native
+    var delay: Double
     
     /**
       * The `options.delayAfter` value
       */
-    var limit: Double = js.native
+    var limit: Double
     
     /**
       * the number of requests remaining before rate-limiting begins
       */
-    var remaining: Double = js.native
+    var remaining: Double
     
     /**
       * When the window will reset, `current` will return to `0`, and `remaining` will return
       * to limit. Represents milliseconds since epoch (compare to `Date.now()`). This field
       * depends on store support. It will be `undefined` if the store does not provide the value.
       */
-    var resetTime: js.UndefOr[Double] = js.native
+    var resetTime: js.UndefOr[Double] = js.undefined
   }
   object SlowDownRequestAugmentation {
     
@@ -235,14 +247,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Store extends StObject {
     
-    def decrement(key: String): Unit = js.native
+    def decrement(key: String): Unit
     
-    def incr(key: String, cb: StoreIncrementCallback): Unit = js.native
+    def incr(key: String, cb: StoreIncrementCallback): Unit
     
-    def resetKey(key: String): Unit = js.native
+    def resetKey(key: String): Unit
   }
   object Store {
     

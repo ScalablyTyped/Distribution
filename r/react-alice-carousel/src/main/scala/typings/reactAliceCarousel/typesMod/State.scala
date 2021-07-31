@@ -2,59 +2,57 @@ package typings.reactAliceCarousel.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var autoWidth: Boolean = js.native
+  var autoWidth: Boolean
   
-  var clones: js.Array[_] = js.native
+  var clones: js.Array[js.Any]
   
-  var fadeoutAnimationIndex: Double | Null = js.native
+  var fadeoutAnimationIndex: Double | Null
   
-  var fadeoutAnimationPosition: Double | Null = js.native
+  var fadeoutAnimationPosition: Double | Null
   
-  var fadeoutAnimationProcessing: Boolean = js.native
+  var fadeoutAnimationProcessing: Boolean
   
-  var infinite: js.UndefOr[Boolean] = js.native
+  var infinite: js.UndefOr[Boolean] = js.undefined
   
-  var initialStageHeight: Double = js.native
+  var initialStageHeight: Double
   
-  var isAutoPlayCanceledOnAction: Boolean = js.native
+  var isAutoPlayCanceledOnAction: Boolean
   
-  var isAutoPlaying: Boolean = js.native
+  var isAutoPlaying: Boolean
   
-  var isStageContentPartial: Boolean = js.native
+  var isStageContentPartial: Boolean
   
-  var itemsCount: Double = js.native
+  var itemsCount: Double
   
-  var itemsInSlide: Double = js.native
+  var itemsInSlide: Double
   
-  var itemsOffset: Double = js.native
+  var itemsOffset: Double
   
-  var stageContentWidth: Double = js.native
+  var stageContentWidth: Double
   
-  var stageWidth: Double = js.native
+  var stageWidth: Double
   
-  var swipeAllowedPositionMax: Double = js.native
+  var swipeAllowedPositionMax: Double
   
-  var swipeLimitMax: Double = js.native
+  var swipeLimitMax: Double
   
-  var swipeLimitMin: Double = js.native
+  var swipeLimitMin: Double
   
-  var swipeShiftValue: Double = js.native
+  var swipeShiftValue: Double
   
-  var transformationSet: js.Array[TransformationSetItem] = js.native
+  var transformationSet: js.Array[TransformationSetItem]
   
-  var transition: String = js.native
+  var transition: String
   
-  var translate3d: Double = js.native
+  var translate3d: Double
 }
 object State {
   
@@ -62,7 +60,7 @@ object State {
   def apply(
     activeIndex: Double,
     autoWidth: Boolean,
-    clones: js.Array[_],
+    clones: js.Array[js.Any],
     fadeoutAnimationProcessing: Boolean,
     initialStageHeight: Double,
     isAutoPlayCanceledOnAction: Boolean,
@@ -81,7 +79,7 @@ object State {
     transition: String,
     translate3d: Double
   ): State = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], clones = clones.asInstanceOf[js.Any], fadeoutAnimationProcessing = fadeoutAnimationProcessing.asInstanceOf[js.Any], initialStageHeight = initialStageHeight.asInstanceOf[js.Any], isAutoPlayCanceledOnAction = isAutoPlayCanceledOnAction.asInstanceOf[js.Any], isAutoPlaying = isAutoPlaying.asInstanceOf[js.Any], isStageContentPartial = isStageContentPartial.asInstanceOf[js.Any], itemsCount = itemsCount.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], itemsOffset = itemsOffset.asInstanceOf[js.Any], stageContentWidth = stageContentWidth.asInstanceOf[js.Any], stageWidth = stageWidth.asInstanceOf[js.Any], swipeAllowedPositionMax = swipeAllowedPositionMax.asInstanceOf[js.Any], swipeLimitMax = swipeLimitMax.asInstanceOf[js.Any], swipeLimitMin = swipeLimitMin.asInstanceOf[js.Any], swipeShiftValue = swipeShiftValue.asInstanceOf[js.Any], transformationSet = transformationSet.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], translate3d = translate3d.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], clones = clones.asInstanceOf[js.Any], fadeoutAnimationProcessing = fadeoutAnimationProcessing.asInstanceOf[js.Any], initialStageHeight = initialStageHeight.asInstanceOf[js.Any], isAutoPlayCanceledOnAction = isAutoPlayCanceledOnAction.asInstanceOf[js.Any], isAutoPlaying = isAutoPlaying.asInstanceOf[js.Any], isStageContentPartial = isStageContentPartial.asInstanceOf[js.Any], itemsCount = itemsCount.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], itemsOffset = itemsOffset.asInstanceOf[js.Any], stageContentWidth = stageContentWidth.asInstanceOf[js.Any], stageWidth = stageWidth.asInstanceOf[js.Any], swipeAllowedPositionMax = swipeAllowedPositionMax.asInstanceOf[js.Any], swipeLimitMax = swipeLimitMax.asInstanceOf[js.Any], swipeLimitMin = swipeLimitMin.asInstanceOf[js.Any], swipeShiftValue = swipeShiftValue.asInstanceOf[js.Any], transformationSet = transformationSet.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], translate3d = translate3d.asInstanceOf[js.Any], fadeoutAnimationIndex = null, fadeoutAnimationPosition = null)
     __obj.asInstanceOf[State]
   }
   
@@ -101,7 +99,7 @@ object State {
     def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClones(value: js.Array[_]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    def setClones(value: js.Array[js.Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))

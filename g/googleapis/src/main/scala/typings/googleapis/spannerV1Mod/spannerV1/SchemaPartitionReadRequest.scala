@@ -2,26 +2,24 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for PartitionRead
   */
-@js.native
 trait SchemaPartitionReadRequest extends StObject {
   
   /**
     * The columns of table to be returned for each row matching this request.
     */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If non-empty, the name of an index on table. This index is used instead
     * of the table primary key when interpreting key_set and sorting result
     * rows. See key_set for further information.
     */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * Required. `key_set` identifies the rows to be yielded. `key_set` names
@@ -30,23 +28,23 @@ trait SchemaPartitionReadRequest extends StObject {
     * index.  It is not an error for the `key_set` to name rows that do not
     * exist in the database. Read yields nothing for nonexistent rows.
     */
-  var keySet: js.UndefOr[SchemaKeySet] = js.native
+  var keySet: js.UndefOr[SchemaKeySet] = js.undefined
   
   /**
     * Additional options that affect how many partitions are created.
     */
-  var partitionOptions: js.UndefOr[SchemaPartitionOptions] = js.native
+  var partitionOptions: js.UndefOr[SchemaPartitionOptions] = js.undefined
   
   /**
     * Required. The name of the table in the database to be read.
     */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
   
   /**
     * Read only snapshot transactions are supported, read/write and single use
     * transactions are not.
     */
-  var transaction: js.UndefOr[SchemaTransactionSelector] = js.native
+  var transaction: js.UndefOr[SchemaTransactionSelector] = js.undefined
 }
 object SchemaPartitionReadRequest {
   

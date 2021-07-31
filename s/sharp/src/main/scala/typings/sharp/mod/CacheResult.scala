@@ -4,17 +4,15 @@ import typings.sharp.anon.Current
 import typings.sharp.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheResult extends StObject {
   
-  var files: Max = js.native
+  var files: Max
   
-  var items: Max = js.native
+  var items: Max
   
-  var memory: Current = js.native
+  var memory: Current
 }
 object CacheResult {
   

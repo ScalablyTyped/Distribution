@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialsHeaderValue extends StObject {
   
-  /** The HttpCredentialsHeaderValue version of the string. */ var credentialsHeaderValue: HttpCredentialsHeaderValue = js.native
+  /** The HttpCredentialsHeaderValue version of the string. */ var credentialsHeaderValue: HttpCredentialsHeaderValue
   
-  /** true if input is valid HttpCredentialsHeaderValue information; otherwise, false. */ var returnValue: Boolean = js.native
+  /** true if input is valid HttpCredentialsHeaderValue information; otherwise, false. */ var returnValue: Boolean
 }
 object CredentialsHeaderValue {
   

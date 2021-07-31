@@ -5,21 +5,19 @@ import typings.reactSketchapp.typesMod.ResizeConstraints
 import typings.reactSketchapp.typesMod.SketchShadow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewProps extends StObject {
   
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var resizingConstraint: js.UndefOr[ResizeConstraints] = js.native
+  var resizingConstraint: js.UndefOr[ResizeConstraints] = js.undefined
   
-  var shadows: js.UndefOr[js.Array[SketchShadow]] = js.native
+  var shadows: js.UndefOr[js.Array[SketchShadow]] = js.undefined
   
-  var style: js.UndefOr[Style | StyleReference] = js.native
+  var style: js.UndefOr[Style | StyleReference] = js.undefined
 }
 object ViewProps {
   

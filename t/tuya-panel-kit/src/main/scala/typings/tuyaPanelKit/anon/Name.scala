@@ -5,15 +5,13 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.NavigatorScreenParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name[State /* <: NavigationState[ParamListBase] */] extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var params: js.UndefOr[NavigatorScreenParams[State, NavigationState[ParamListBase]]] = js.native
+  var params: js.UndefOr[NavigatorScreenParams[State, NavigationState[ParamListBase]]] = js.undefined
 }
 object Name {
   
@@ -24,7 +22,7 @@ object Name {
   }
   
   @scala.inline
-  implicit class NameMutableBuilder[Self <: Name[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Name[State]) extends AnyVal {
+  implicit class NameMutableBuilder[Self <: Name[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Name[State]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

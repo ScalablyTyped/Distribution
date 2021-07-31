@@ -2,41 +2,39 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartQueryRequest extends StObject {
   
   /**
     * The end of the time range to query. The range is inclusive, so the specified end time is included in the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * The maximum number of log events to return in the query. If the query string uses the fields command, only the specified fields and their values are returned. The default is 1000.
     */
-  var limit: js.UndefOr[EventsLimit] = js.native
+  var limit: js.UndefOr[EventsLimit] = js.undefined
   
   /**
     * The log group on which to perform the query. A StartQuery operation must include a logGroupNames or a logGroupName parameter, but not both.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The list of log groups to be queried. You can include up to 20 log groups. A StartQuery operation must include a logGroupNames or a logGroupName parameter, but not both.
     */
-  var logGroupNames: js.UndefOr[LogGroupNames] = js.native
+  var logGroupNames: js.UndefOr[LogGroupNames] = js.undefined
   
   /**
     * The query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
     */
-  var queryString: QueryString = js.native
+  var queryString: QueryString
   
   /**
     * The beginning of the time range to query. The range is inclusive, so the specified start time is included in the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
 }
 object StartQueryRequest {
   

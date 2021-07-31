@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,13 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This data has nothing to do with `Memory` contents, it's a separate data container.
   */
-@js.native
 trait InterShardMemory extends StObject {
   
   /**
     * Returns the string contents of the current shard's data.
     */
-  def getLocal(): String = js.native
+  def getLocal(): String
   
   /**
     * Returns the string contents of another shard's data, null if shard exists but data is not set.
@@ -29,13 +27,13 @@ trait InterShardMemory extends StObject {
     * @param shard Shard name.
     * @throws Error if shard name is invalid
     */
-  def getRemote(shard: String): String | Null = js.native
+  def getRemote(shard: String): String | Null
   
   /**
     * Replace the current shard's data with the new value
     * @param value New data value in string format.
     */
-  def setLocal(value: String): Unit = js.native
+  def setLocal(value: String): Unit
 }
 object InterShardMemory {
   

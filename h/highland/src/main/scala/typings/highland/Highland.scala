@@ -13,17 +13,15 @@ import typings.std.Pick
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Highland {
   
-  @js.native
   trait CleanupObject extends StObject {
     
-    var continueOnError: js.UndefOr[Boolean] = js.native
+    var continueOnError: js.UndefOr[Boolean] = js.undefined
     
-    var onDestroy: js.UndefOr[js.Function] = js.native
+    var onDestroy: js.UndefOr[js.Function] = js.undefined
   }
   object CleanupObject {
     
@@ -54,10 +52,9 @@ object Highland {
   
   // hacky unique
   // TODO do we need this?
-  @js.native
   trait Nil extends StObject {
     
-    var Highland_NIL: Nil = js.native
+    var Highland_NIL: Nil
   }
   object Nil {
     
@@ -81,10 +78,9 @@ object Highland {
     Unit | js.Function | CleanupObject
   ]
   
-  @js.native
   trait PipeOptions extends StObject {
     
-    var end: Boolean = js.native
+    var end: Boolean
   }
   object PipeOptions {
     
@@ -109,7 +105,9 @@ object Highland {
     * Actual Stream constructor wrapped the the main exported function
     */
   @js.native
-  trait Stream[R] extends EventEmitter {
+  trait Stream[R]
+    extends StObject
+       with EventEmitter {
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // TRANSFORMS
@@ -539,7 +537,7 @@ object Highland {
       * @param {Array} args - the arguments to call the method with
       * @api public
       */
-    def invoke[U](method: String, args: js.Array[_]): Stream[U] = js.native
+    def invoke[U](method: String, args: js.Array[js.Any]): Stream[U] = js.native
     
     /**
       * Drops all values from the Stream apart from the last one (if any).
@@ -1028,7 +1026,7 @@ object Highland {
       */
     def throttle(ms: Double): Stream[R] = js.native
     
-    def through(thru: ReadWriteStream): Stream[_] = js.native
+    def through(thru: ReadWriteStream): Stream[js.Any] = js.native
     /**
       * Transforms a stream using an arbitrary target transform.
       *
@@ -1273,10 +1271,9 @@ object Highland {
     * Used as an Error marker when writing to a Stream's incoming buffer
     */
   // TODO is this public?
-  @js.native
   trait StreamError extends StObject {
     
-    var error: Error = js.native
+    var error: Error
   }
   object StreamError {
     
@@ -1298,10 +1295,9 @@ object Highland {
     * Used as a Redirect marker when writing to a Stream's incoming buffer
     */
   // TODO is this public?
-  @js.native
   trait StreamRedirect[R] extends StObject {
     
-    var to: Stream[R] = js.native
+    var to: Stream[R]
   }
   object StreamRedirect {
     
@@ -1312,7 +1308,7 @@ object Highland {
     }
     
     @scala.inline
-    implicit class StreamRedirectMutableBuilder[Self <: StreamRedirect[_], R] (val x: Self with StreamRedirect[R]) extends AnyVal {
+    implicit class StreamRedirectMutableBuilder[Self <: StreamRedirect[?], R] (val x: Self & StreamRedirect[R]) extends AnyVal {
       
       @scala.inline
       def setTo(value: Stream[R]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])

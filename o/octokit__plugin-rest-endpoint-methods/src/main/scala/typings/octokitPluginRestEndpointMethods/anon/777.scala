@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `777` extends StObject {
   
-  var parameters: RequestParameters with (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[MigrationsMapCommitAuthorResponseData] = js.native
+  var response: OctokitResponse[MigrationsMapCommitAuthorResponseData]
 }
 object `777` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[MigrationsMapCommitAuthorResponseData]
   ): `777` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `777` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[MigrationsMapCommitAuthorEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

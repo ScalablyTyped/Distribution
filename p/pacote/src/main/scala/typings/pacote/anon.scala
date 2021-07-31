@@ -2,17 +2,15 @@ package typings.pacote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Created extends StObject {
     
-    var created: String = js.native
+    var created: String
     
-    var modified: String = js.native
+    var modified: String
   }
   object Created {
     
@@ -33,14 +31,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Directory extends StObject {
     
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Directory {
     
@@ -73,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -105,10 +101,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Latest extends StObject {
     
-    var latest: String = js.native
+    var latest: String
   }
   object Latest {
     

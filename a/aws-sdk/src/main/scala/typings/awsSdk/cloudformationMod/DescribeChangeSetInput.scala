@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChangeSetInput extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of the change set that you want to describe.
     */
-  var ChangeSetName: ChangeSetNameOrId = js.native
+  var ChangeSetName: ChangeSetNameOrId
   
   /**
     * A string (provided by the DescribeChangeSet response output) that identifies the next page of information that you want to retrieve.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * If you specified the name of a change set, specify the stack name or ID (ARN) of the change set you want to describe.
     */
-  var StackName: js.UndefOr[StackNameOrId] = js.native
+  var StackName: js.UndefOr[StackNameOrId] = js.undefined
 }
 object DescribeChangeSetInput {
   

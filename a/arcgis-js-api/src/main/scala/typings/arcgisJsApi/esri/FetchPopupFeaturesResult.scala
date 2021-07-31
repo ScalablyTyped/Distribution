@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchPopupFeaturesResult extends Object {
+trait FetchPopupFeaturesResult
+  extends StObject
+     with Object {
   
   /**
     * An array of promises containing graphics from the selected location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchPopupFeaturesResult)
     */
-  var allGraphicsPromise: js.UndefOr[js.Promise[js.Array[Graphic]]] = js.native
+  var allGraphicsPromise: js.UndefOr[js.Promise[js.Array[Graphic]]] = js.undefined
   
   /**
     * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) that do not have any associated [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html), ie.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchPopupFeaturesResult)
     */
-  var clientOnlyGraphics: js.UndefOr[js.Array[Graphic]] = js.native
+  var clientOnlyGraphics: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
     * The resulting location of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest)'s' `hitTest`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchPopupFeaturesResult)
     */
-  var location: js.UndefOr[Point] = js.native
+  var location: js.UndefOr[Point] = js.undefined
   
   /**
     * An array of [FetchPopupFeaturesPromisesPerLayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchPopupFeaturesPromisesPerLayerView).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchPopupFeaturesResult)
     */
-  var promisesPerLayerView: js.UndefOr[js.Array[FetchPopupFeaturesPromisesPerLayerView]] = js.native
+  var promisesPerLayerView: js.UndefOr[js.Array[FetchPopupFeaturesPromisesPerLayerView]] = js.undefined
 }
 object FetchPopupFeaturesResult {
   

@@ -3,7 +3,6 @@ package typings.orgRegex
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,21 +17,22 @@ object mod {
   	//=> ['@ava']
   	```
   	*/
-  @JSImport("org-regex", JSImport.Namespace)
-  @js.native
-  def apply(): RegExp = js.native
-  @JSImport("org-regex", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RegExp = js.native
+  @scala.inline
+  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  @scala.inline
+  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
+  @JSImport("org-regex", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Only match an exact string. By default, it matches any organization names in a string. Useful with `RegExp#test()` to check if a string is a organization name.
     		@default false
     		*/
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

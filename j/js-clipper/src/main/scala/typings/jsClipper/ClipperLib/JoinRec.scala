@@ -2,23 +2,21 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinRec extends StObject {
   
-  var poly1Idx: Double = js.native
+  var poly1Idx: Double
   
-  var poly2Idx: Double = js.native
+  var poly2Idx: Double
   
-  var pt1a: IntPoint = js.native
+  var pt1a: IntPoint
   
-  var pt1b: IntPoint = js.native
+  var pt1b: IntPoint
   
-  var pt2a: IntPoint = js.native
+  var pt2a: IntPoint
   
-  var pt2b: IntPoint = js.native
+  var pt2b: IntPoint
 }
 object JoinRec {
   

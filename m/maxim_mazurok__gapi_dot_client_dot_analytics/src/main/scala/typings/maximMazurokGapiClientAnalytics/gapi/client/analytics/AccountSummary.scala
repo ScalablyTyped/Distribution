@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSummary extends StObject {
   
   /** Account ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics AccountSummary. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Account name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Indicates whether this account is starred or not. */
-  var starred: js.UndefOr[Boolean] = js.native
+  var starred: js.UndefOr[Boolean] = js.undefined
   
   /** List of web properties under this account. */
-  var webProperties: js.UndefOr[js.Array[WebPropertySummary]] = js.native
+  var webProperties: js.UndefOr[js.Array[WebPropertySummary]] = js.undefined
 }
 object AccountSummary {
   

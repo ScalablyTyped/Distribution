@@ -2,17 +2,15 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clientid extends StObject {
   
   /** You need to register your app in the Google APIs Console to get the client ID. */
-  var client_id: String = js.native
+  var client_id: String
   
   /** Applies to these scopes */
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
 }
 object Clientid {
   

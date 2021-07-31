@@ -10,9 +10,9 @@ TypeScript typings for Groups Settings API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.groupssettings |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 1220 |
 | # stars            | 0 |
 
 ## Links

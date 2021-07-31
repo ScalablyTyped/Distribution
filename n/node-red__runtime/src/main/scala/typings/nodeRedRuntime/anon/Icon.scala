@@ -2,21 +2,19 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var label: String = js.native
+  var label: String
   
-  var name: String = js.native
+  var name: String
   
-  var options: js.Object = js.native
+  var options: js.Object
   
-  var strategy: typings.passport.mod.Strategy = js.native
+  var strategy: typings.passport.mod.Strategy
 }
 object Icon {
   

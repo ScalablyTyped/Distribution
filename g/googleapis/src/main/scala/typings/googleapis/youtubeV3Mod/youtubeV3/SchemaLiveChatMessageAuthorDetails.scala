@@ -2,51 +2,49 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatMessageAuthorDetails extends StObject {
   
   /**
     * The YouTube channel ID.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The channel&#39;s URL.
     */
-  var channelUrl: js.UndefOr[String] = js.native
+  var channelUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The channel&#39;s display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the author is a moderator of the live chat.
     */
-  var isChatModerator: js.UndefOr[Boolean] = js.native
+  var isChatModerator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the author is the owner of the live chat.
     */
-  var isChatOwner: js.UndefOr[Boolean] = js.native
+  var isChatOwner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the author is a sponsor of the live chat.
     */
-  var isChatSponsor: js.UndefOr[Boolean] = js.native
+  var isChatSponsor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the author&#39;s identity has been verified by YouTube.
     */
-  var isVerified: js.UndefOr[Boolean] = js.native
+  var isVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The channels&#39;s avatar URL.
     */
-  var profileImageUrl: js.UndefOr[String] = js.native
+  var profileImageUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveChatMessageAuthorDetails {
   

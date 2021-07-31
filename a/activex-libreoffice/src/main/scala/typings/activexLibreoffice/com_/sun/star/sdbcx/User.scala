@@ -8,18 +8,17 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a user of the database, who has certain access rights for the objects of the database. */
-@js.native
 trait User
-  extends XUser
+  extends StObject
+     with XUser
      with XGroupsSupplier
      with XPropertySet {
   
   /** is the name of the user. */
-  var Name: String = js.native
+  var Name: String
 }
 object User {
   

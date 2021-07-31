@@ -16,10 +16,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.svgz
 import typings.arcgisJsApi.arcgisJsApiStrings.tiff
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileInfoProperties extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait TileInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#dpi)
     */
-  var dpi: js.UndefOr[Double] = js.native
+  var dpi: js.UndefOr[Double] = js.undefined
   
   /**
     * Image format of the cached tiles.
@@ -36,42 +34,42 @@ trait TileInfoProperties extends StObject {
     */
   var format: js.UndefOr[
     png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates if the tiling scheme supports wrap around.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#isWrappable)
     */
-  var isWrappable: js.UndefOr[Boolean] = js.native
+  var isWrappable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of levels of detail that define the tiling scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods)
     */
-  var lods: js.UndefOr[js.Array[LODProperties]] = js.native
+  var lods: js.UndefOr[js.Array[LODProperties]] = js.undefined
   
   /**
     * The tiling scheme origin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#origin)
     */
-  var origin: js.UndefOr[PointProperties] = js.native
+  var origin: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Size of tiles in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#size)
     */
-  var size: js.UndefOr[js.Array[Double]] = js.native
+  var size: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The spatial reference of the tiling schema.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object TileInfoProperties {
   

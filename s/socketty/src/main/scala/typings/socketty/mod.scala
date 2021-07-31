@@ -3,7 +3,6 @@ package typings.socketty
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,7 +11,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : Socketty = js.native
   
-  @js.native
   trait Socketty extends StObject {
     
     /**
@@ -21,14 +19,14 @@ object mod extends Shortcut {
       * @param callback The callback to be run when the connection is open
       * @return A Socket
       */
-    def connect(url: String, callback: js.Function1[/* socket */ SockettySocket, Unit]): SockettySocket = js.native
+    def connect(url: String, callback: js.Function1[/* socket */ SockettySocket, Unit]): SockettySocket
     
     /**
       * Create a socketty server.
       * @param httpServer The HTTP server to use
       * @return A socketty server
       */
-    def createServer(httpServer: js.Any): SockettyServer = js.native
+    def createServer(httpServer: js.Any): SockettyServer
   }
   object Socketty {
     
@@ -52,14 +50,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SockettyServer extends StObject {
     
     /**
       * Specify a callback to be run when a new socket connects to the server.
       * @param callback The callback
       */
-    def connection(callback: js.Function1[/* socket */ SockettySocket, Unit]): Unit = js.native
+    def connection(callback: js.Function1[/* socket */ SockettySocket, Unit]): Unit
   }
   object SockettyServer {
     

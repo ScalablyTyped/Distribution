@@ -2,42 +2,40 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiasettingsCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry to which this entry responds.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if, and only if, the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The the list of accessible GMB accounts.
     */
-  var gmbAccounts: js.UndefOr[SchemaGmbAccounts] = js.native
+  var gmbAccounts: js.UndefOr[SchemaGmbAccounts] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#liasettingsCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The retrieved or updated Lia settings.
     */
-  var liaSettings: js.UndefOr[SchemaLiaSettings] = js.native
+  var liaSettings: js.UndefOr[SchemaLiaSettings] = js.undefined
   
   /**
     * The list of POS data providers.
     */
-  var posDataProviders: js.UndefOr[js.Array[SchemaPosDataProviders]] = js.native
+  var posDataProviders: js.UndefOr[js.Array[SchemaPosDataProviders]] = js.undefined
 }
 object SchemaLiasettingsCustomBatchResponseEntry {
   

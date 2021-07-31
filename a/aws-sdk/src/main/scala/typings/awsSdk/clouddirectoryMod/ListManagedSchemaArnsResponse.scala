@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListManagedSchemaArnsResponse extends StObject {
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * The ARNs for all AWS managed schemas.
     */
-  var SchemaArns: js.UndefOr[Arns] = js.native
+  var SchemaArns: js.UndefOr[Arns] = js.undefined
 }
 object ListManagedSchemaArnsResponse {
   

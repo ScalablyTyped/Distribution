@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingResources extends StObject {
   
   /**
     * The configuration for the resources in a cluster used to run the processing job.
     */
-  var ClusterConfig: ProcessingClusterConfig = js.native
+  var ClusterConfig: ProcessingClusterConfig
 }
 object ProcessingResources {
   

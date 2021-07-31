@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ComboBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofComboBox extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ComboBox = js.native
+  def extend(proto: js.Object): ComboBox
   
   /* static member */
-  var fn: ComboBox = js.native
+  var fn: ComboBox
 }
 object TypeofComboBox {
   

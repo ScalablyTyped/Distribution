@@ -2,26 +2,24 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTunnelsRequest extends StObject {
   
   /**
     * The maximum number of results to return at once.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * A token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The name of the IoT thing associated with the destination device.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object ListTunnelsRequest {
   

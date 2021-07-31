@@ -2,19 +2,17 @@ package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferProgress extends StObject {
   
-  var bytesRetrieved: Double = js.native
+  var bytesRetrieved: Double
   
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
-  var totalBytesToRetrieve: Double = js.native
+  var totalBytesToRetrieve: Double
   
-  var totalBytesToSend: Double = js.native
+  var totalBytesToSend: Double
 }
 object TransferProgress {
   

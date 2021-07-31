@@ -6,14 +6,15 @@ import typings.firebaseDatabase.pathMod.Path
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
   @JSImport("@firebase/database/dist/src/core/view/Event", "CancelEvent")
   @js.native
-  class CancelEvent protected () extends Event {
+  class CancelEvent protected ()
+    extends StObject
+       with Event {
     /**
       * @param {EventRegistration} eventRegistration
       * @param {Error} error
@@ -25,12 +26,32 @@ object eventMod {
     
     var eventRegistration: EventRegistration = js.native
     
+    /**
+      * @return {!function()}
+      */
+    /* CompleteClass */
+    override def getEventRunner(): js.Function0[Unit] = js.native
+    
+    /**
+      * @return {!string}
+      */
+    /* CompleteClass */
+    override def getEventType(): String = js.native
+    
+    /**
+      * @return {!Path}
+      */
+    /* CompleteClass */
+    override def getPath(): Path = js.native
+    
     var path: Path = js.native
   }
   
   @JSImport("@firebase/database/dist/src/core/view/Event", "DataEvent")
   @js.native
-  class DataEvent protected () extends Event {
+  class DataEvent protected ()
+    extends StObject
+       with Event {
     /**
       * @param {!string} eventType One of: value, child_added, child_changed, child_moved, child_removed
       * @param {!EventRegistration} eventRegistration The function to call to with the event data. User provided
@@ -49,28 +70,45 @@ object eventMod {
     
     var eventType: EventType = js.native
     
+    /**
+      * @return {!function()}
+      */
+    /* CompleteClass */
+    override def getEventRunner(): js.Function0[Unit] = js.native
+    
+    /**
+      * @return {!string}
+      */
+    /* CompleteClass */
+    override def getEventType(): String = js.native
+    
+    /**
+      * @return {!Path}
+      */
+    /* CompleteClass */
+    override def getPath(): Path = js.native
+    
     var prevName: js.UndefOr[String | Null] = js.native
     
     var snapshot: DataSnapshot = js.native
   }
   
-  @js.native
   trait Event extends StObject {
     
     /**
       * @return {!function()}
       */
-    def getEventRunner(): js.Function0[Unit] = js.native
+    def getEventRunner(): js.Function0[Unit]
     
     /**
       * @return {!string}
       */
-    def getEventType(): String = js.native
+    def getEventType(): String
     
     /**
       * @return {!Path}
       */
-    def getPath(): Path = js.native
+    def getPath(): Path
   }
   object Event {
     

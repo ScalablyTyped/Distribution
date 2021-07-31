@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * drag over feedback.
   * @see com.sun.star.datatransfer.dnd.XDropTargetListener
   */
-@js.native
-trait DropTargetDragEvent extends DropTargetEvent {
+trait DropTargetDragEvent
+  extends StObject
+     with DropTargetEvent {
   
   /**
     * The drop target context of the current drag operation.
     * @see com.sun.star.datatransfer.dnd.XDropTargetDragContext
     */
-  var Context: XDropTargetDragContext = js.native
+  var Context: XDropTargetDragContext
   
   /**
     * This value represents the currently selected drop action.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  var DropAction: Double = js.native
+  var DropAction: Double
   
   /** The cursor's current x location within the window's coordinates. */
-  var LocationX: Double = js.native
+  var LocationX: Double
   
   /** The cursor's current y location within the window's coordinates. */
-  var LocationY: Double = js.native
+  var LocationY: Double
   
   /**
     * This value represents the action or actions supported by the source. This may be a combination of arbitrary source actions except ACTION_DEFAULT.
@@ -40,7 +40,7 @@ trait DropTargetDragEvent extends DropTargetEvent {
     * To combine different actions use a logical OR.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  var SourceActions: Double = js.native
+  var SourceActions: Double
 }
 object DropTargetDragEvent {
   

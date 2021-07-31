@@ -3,33 +3,33 @@ package typings.twineSugarcube
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object passageMod {
   
-  @js.native
-  trait Passage extends PassageBase {
+  trait Passage
+    extends StObject
+       with PassageBase {
     
     /**
       * Returns the description of the passage (created from either an excerpt of the passage or the
       * Config.passages.descriptions object).
       * @since 2.0.0
       */
-    def description(): String = js.native
+    def description(): String
     
     /**
       * The DOM ID of the passage (created from the slugified passage title).
       * @since 2.0.0
       */
-    var domId: String = js.native
+    var domId: String
     
     /**
       * Returns the text of the Passage object (similar to <Passage>.text) after applying nobr tag and image passage
       * processing to it.
       * @since 2.0.0
       */
-    def processText(): String = js.native
+    def processText(): String
   }
   object Passage {
     
@@ -60,26 +60,25 @@ object passageMod {
     }
   }
   
-  @js.native
   trait PassageBase extends StObject {
     
     /**
       * The tags of the passage.
       * @since 2.0.0
       */
-    var tags: Array[String] = js.native
+    var tags: Array[String]
     
     /**
       * The raw text of the passage.
       * @since 2.0.0
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * The title of the passage.
       * @since 2.0.0
       */
-    var title: String = js.native
+    var title: String
   }
   object PassageBase {
     

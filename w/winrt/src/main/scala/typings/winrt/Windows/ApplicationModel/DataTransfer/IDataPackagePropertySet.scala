@@ -9,24 +9,23 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataPackagePropertySet
-  extends IMap[String, js.Any] {
+  extends StObject
+     with IMap[String, js.Any] {
   
-  var applicationListingUri: Uri = js.native
+  var applicationListingUri: Uri
   
-  var applicationName: String = js.native
+  var applicationName: String
   
-  var description: String = js.native
+  var description: String
   
-  var fileTypes: IVector[String] = js.native
+  var fileTypes: IVector[String]
   
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
   
-  var title: String = js.native
+  var title: String
 }
 object IDataPackagePropertySet {
   

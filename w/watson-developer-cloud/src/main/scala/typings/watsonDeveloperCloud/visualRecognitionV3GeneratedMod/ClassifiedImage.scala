@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Results for one image. */
-@js.native
 trait ClassifiedImage extends StObject {
   
   /** The classifiers. */
-  var classifiers: js.Array[ClassifierResult] = js.native
+  var classifiers: js.Array[ClassifierResult]
   
   /** Information about what might have caused a failure, such as an image that is too large. Not returned when there is no error. */
-  var error: js.UndefOr[ErrorInfo] = js.native
+  var error: js.UndefOr[ErrorInfo] = js.undefined
   
   /** Relative path of the image file if uploaded directly. Not returned when the image is passed by URL. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** Fully resolved URL of the image after redirects are followed. Not returned when the image is uploaded. */
-  var resolved_url: js.UndefOr[String] = js.native
+  var resolved_url: js.UndefOr[String] = js.undefined
   
   /** Source of the image before any redirects. Not returned when the image is uploaded. */
-  var source_url: js.UndefOr[String] = js.native
+  var source_url: js.UndefOr[String] = js.undefined
 }
 object ClassifiedImage {
   

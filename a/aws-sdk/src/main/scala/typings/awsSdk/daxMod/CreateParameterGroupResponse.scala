@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateParameterGroupResponse extends StObject {
   
   /**
     * Represents the output of a CreateParameterGroup action.
     */
-  var ParameterGroup: js.UndefOr[typings.awsSdk.daxMod.ParameterGroup] = js.native
+  var ParameterGroup: js.UndefOr[typings.awsSdk.daxMod.ParameterGroup] = js.undefined
 }
 object CreateParameterGroupResponse {
   

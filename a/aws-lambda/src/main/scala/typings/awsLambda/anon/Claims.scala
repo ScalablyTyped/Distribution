@@ -3,15 +3,13 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Claims extends StObject {
   
-  var claims: StringDictionary[String | Double | Boolean | js.Array[String]] = js.native
+  var claims: StringDictionary[String | Double | Boolean | js.Array[String]]
   
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
 }
 object Claims {
   

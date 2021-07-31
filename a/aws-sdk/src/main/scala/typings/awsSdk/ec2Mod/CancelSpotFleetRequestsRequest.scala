@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSpotFleetRequestsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IDs of the Spot Fleet requests.
     */
-  var SpotFleetRequestIds: SpotFleetRequestIdList = js.native
+  var SpotFleetRequestIds: SpotFleetRequestIdList
   
   /**
     * Indicates whether to terminate instances for a Spot Fleet request if it is canceled successfully.
     */
-  var TerminateInstances: Boolean = js.native
+  var TerminateInstances: Boolean
 }
 object CancelSpotFleetRequestsRequest {
   

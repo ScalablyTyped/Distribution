@@ -2,29 +2,27 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashActionsPanel extends StObject {
   
-  def getClassForObject(): js.Any = js.native
+  def getClassForObject(): js.Any
   
-  def getScriptAssistMode(): js.Any = js.native
+  def getScriptAssistMode(): js.Any
   
-  def getSelectedText(): js.Any = js.native
+  def getSelectedText(): js.Any
   
-  def getText(): js.Any = js.native
+  def getText(): js.Any
   
-  def hasSelection(): js.Any = js.native
+  def hasSelection(): js.Any
   
-  def replaceSelectedText(): js.Any = js.native
+  def replaceSelectedText(): js.Any
   
-  def setScriptAssistMode(): js.Any = js.native
+  def setScriptAssistMode(): js.Any
   
-  def setSelection(): js.Any = js.native
+  def setSelection(): js.Any
   
-  def setText(): js.Any = js.native
+  def setText(): js.Any
 }
 object FlashActionsPanel {
   

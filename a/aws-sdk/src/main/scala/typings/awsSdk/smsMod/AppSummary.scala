@@ -2,106 +2,104 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppSummary extends StObject {
   
   /**
     * The unique ID of the application.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * The creation time of the application.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the application.
     */
-  var description: js.UndefOr[AppDescription] = js.native
+  var description: js.UndefOr[AppDescription] = js.undefined
   
   /**
     * The ID of the application.
     */
-  var importedAppId: js.UndefOr[ImportedAppId] = js.native
+  var importedAppId: js.UndefOr[ImportedAppId] = js.undefined
   
   /**
     * The last modified time of the application.
     */
-  var lastModified: js.UndefOr[Timestamp] = js.native
+  var lastModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The timestamp of the application's most recent successful replication.
     */
-  var latestReplicationTime: js.UndefOr[Timestamp] = js.native
+  var latestReplicationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Status of the launch configuration.
     */
-  var launchConfigurationStatus: js.UndefOr[AppLaunchConfigurationStatus] = js.native
+  var launchConfigurationStatus: js.UndefOr[AppLaunchConfigurationStatus] = js.undefined
   
   /**
     * Details about the latest launch of the application.
     */
-  var launchDetails: js.UndefOr[LaunchDetails] = js.native
+  var launchDetails: js.UndefOr[LaunchDetails] = js.undefined
   
   /**
     * The launch status of the application.
     */
-  var launchStatus: js.UndefOr[AppLaunchStatus] = js.native
+  var launchStatus: js.UndefOr[AppLaunchStatus] = js.undefined
   
   /**
     * A message related to the launch status of the application.
     */
-  var launchStatusMessage: js.UndefOr[AppLaunchStatusMessage] = js.native
+  var launchStatusMessage: js.UndefOr[AppLaunchStatusMessage] = js.undefined
   
   /**
     * The name of the application.
     */
-  var name: js.UndefOr[AppName] = js.native
+  var name: js.UndefOr[AppName] = js.undefined
   
   /**
     * Status of the replication configuration.
     */
-  var replicationConfigurationStatus: js.UndefOr[AppReplicationConfigurationStatus] = js.native
+  var replicationConfigurationStatus: js.UndefOr[AppReplicationConfigurationStatus] = js.undefined
   
   /**
     * The replication status of the application.
     */
-  var replicationStatus: js.UndefOr[AppReplicationStatus] = js.native
+  var replicationStatus: js.UndefOr[AppReplicationStatus] = js.undefined
   
   /**
     * A message related to the replication status of the application.
     */
-  var replicationStatusMessage: js.UndefOr[AppReplicationStatusMessage] = js.native
+  var replicationStatusMessage: js.UndefOr[AppReplicationStatusMessage] = js.undefined
   
   /**
     * The name of the service role in the customer's account used by AWS SMS.
     */
-  var roleName: js.UndefOr[RoleName] = js.native
+  var roleName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * Status of the application.
     */
-  var status: js.UndefOr[AppStatus] = js.native
+  var status: js.UndefOr[AppStatus] = js.undefined
   
   /**
     * A message related to the status of the application
     */
-  var statusMessage: js.UndefOr[AppStatusMessage] = js.native
+  var statusMessage: js.UndefOr[AppStatusMessage] = js.undefined
   
   /**
     * The number of server groups present in the application.
     */
-  var totalServerGroups: js.UndefOr[TotalServerGroups] = js.native
+  var totalServerGroups: js.UndefOr[TotalServerGroups] = js.undefined
   
   /**
     * The number of servers present in the application.
     */
-  var totalServers: js.UndefOr[TotalServers] = js.native
+  var totalServers: js.UndefOr[TotalServers] = js.undefined
 }
 object AppSummary {
   

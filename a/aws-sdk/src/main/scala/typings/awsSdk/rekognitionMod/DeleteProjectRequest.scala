@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the project that you want to delete.
     */
-  var ProjectArn: typings.awsSdk.rekognitionMod.ProjectArn = js.native
+  var ProjectArn: typings.awsSdk.rekognitionMod.ProjectArn
 }
 object DeleteProjectRequest {
   

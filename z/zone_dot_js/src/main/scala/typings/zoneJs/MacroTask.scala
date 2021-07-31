@@ -3,14 +3,14 @@ package typings.zoneJs
 import typings.zoneJs.zoneJsStrings.macroTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MacroTask extends Task {
+trait MacroTask
+  extends StObject
+     with Task {
   
   @JSName("type")
-  var type_MacroTask: macroTask = js.native
+  var type_MacroTask: macroTask
 }
 object MacroTask {
   
@@ -22,11 +22,10 @@ object MacroTask {
     runCount: Double,
     source: String,
     state: TaskState,
-    `type`: macroTask,
     zone: Zone
   ): MacroTask = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], cancelScheduleRequest = js.Any.fromFunction0(cancelScheduleRequest), invoke = invoke.asInstanceOf[js.Any], runCount = runCount.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("macroTask")
     __obj.asInstanceOf[MacroTask]
   }
   

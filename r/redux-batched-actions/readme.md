@@ -10,9 +10,9 @@ redux higher order reducer + action creator to reduce actions under a single sub
 | ------------------ | :-------------: |
 | Full name          | redux-batched-actions |
 | Keywords           | redux, react, reactjs, batched, action |
-| # releases         | 3 |
-| # dependents       | 52 |
-| # downloads        | 1760541 |
+| # releases         | 2 |
+| # dependents       | 50 |
+| # downloads        | 1855704 |
 | # stars            | 4 |
 
 ## Links

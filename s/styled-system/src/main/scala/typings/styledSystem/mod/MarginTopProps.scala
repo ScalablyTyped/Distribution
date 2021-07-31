@@ -2,26 +2,24 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'mt' | 'marginTop'> */
-@js.native
 trait MarginTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var marginTop: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
   
   var mt: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MarginTopProps {
   
@@ -32,12 +30,12 @@ object MarginTopProps {
   }
   
   @scala.inline
-  implicit class MarginTopPropsMutableBuilder[Self <: MarginTopProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginTopProps[ThemeType]) extends AnyVal {
+  implicit class MarginTopPropsMutableBuilder[Self <: MarginTopProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & MarginTopProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setMarginTop(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
@@ -54,7 +52,7 @@ object MarginTopProps {
     @scala.inline
     def setMt(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])

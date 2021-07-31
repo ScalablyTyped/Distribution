@@ -8,46 +8,35 @@ import typings.rxjs.typesMod.ObservedValuesFromArray
 import typings.rxjs.typesMod.SubscribableOrPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkJoinMod {
   
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
+  @JSImport("rxjs/internal/observable/forkJoin", JSImport.Namespace)
   @js.native
-  def forkJoin(args: (ObservableInput[_] | js.Function)*): Observable[_] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin(sourcesObject: js.Object): Observable[scala.Nothing] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[A /* <: js.Array[ObservableInput[_]] */](sources: A): Observable[js.Array[ObservedValuesFromArray[A]]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[A](sources: js.Array[ObservableInput[A]]): Observable[js.Array[A]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[T](v1: SubscribableOrPromise[T]): Observable[js.Array[T]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[A, B](sources: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[js.Tuple2[A, B]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[js.Tuple2[T, T2]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[A, B, C](sources: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[js.Tuple3[A, B, C]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[js.Tuple3[T, T2, T3]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[A, B, C, D](sources: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[js.Tuple4[A, B, C, D]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[js.Tuple4[T, T2, T3, T4]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def forkJoin(args: (ObservableInput[js.Any] | js.Function)*): Observable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(args.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Any]]
+  @scala.inline
+  def forkJoin(sourcesObject: js.Object): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sourcesObject.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+  @scala.inline
+  def forkJoin[A /* <: js.Array[ObservableInput[js.Any]] */](sources: A): Observable[js.Array[ObservedValuesFromArray[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValuesFromArray[A]]]]
+  @scala.inline
+  def forkJoin[A](sources: js.Array[ObservableInput[A]]): Observable[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[A]]]
+  @scala.inline
+  def forkJoin[A, B](sources: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[js.Tuple2[A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple2[A, B]]]
+  @scala.inline
+  def forkJoin[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[js.Tuple2[T, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[T, T2]]]
+  @scala.inline
+  def forkJoin[A, B, C](sources: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[js.Tuple3[A, B, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple3[A, B, C]]]
+  @scala.inline
+  def forkJoin[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[js.Tuple3[T, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[T, T2, T3]]]
+  @scala.inline
+  def forkJoin[A, B, C, D](sources: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[js.Tuple4[A, B, C, D]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple4[A, B, C, D]]]
+  @scala.inline
+  def forkJoin[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[js.Tuple4[T, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple4[T, T2, T3, T4]]]
+  @scala.inline
   def forkJoin[A, B, C, D, E](
     sources: js.Tuple5[
       ObservableInput[A], 
@@ -56,18 +45,16 @@ object forkJoinMod {
       ObservableInput[D], 
       ObservableInput[E]
     ]
-  ): Observable[js.Tuple5[A, B, C, D, E]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple5[A, B, C, D, E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple5[A, B, C, D, E]]]
+  @scala.inline
   def forkJoin[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     v5: ObservableInput[T5]
-  ): Observable[js.Tuple5[T, T2, T3, T4, T5]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple5[T, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple5[T, T2, T3, T4, T5]]]
+  @scala.inline
   def forkJoin[A, B, C, D, E, F](
     sources: js.Tuple6[
       ObservableInput[A], 
@@ -77,9 +64,8 @@ object forkJoinMod {
       ObservableInput[E], 
       ObservableInput[F]
     ]
-  ): Observable[js.Tuple6[A, B, C, D, E, F]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple6[A, B, C, D, E, F]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple6[A, B, C, D, E, F]]]
+  @scala.inline
   def forkJoin[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -87,15 +73,21 @@ object forkJoinMod {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6]
-  ): Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
-  def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = js.native
-  @JSImport("rxjs/internal/observable/forkJoin", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple6[T, T2, T3, T4, T5, T6]]]
+  
+  @scala.inline
+  def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[T]]]
+  @scala.inline
+  def forkJoin_T[T](v1: SubscribableOrPromise[T]): Observable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[T]]]
+  
+  @scala.inline
   def forkJoin_TK_String[T, K /* <: /* keyof T */ String */](sourcesObject: T): Observable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
-    */ forkJoin with TopLevel[T]
-  ] = js.native
+    */ forkJoin & TopLevel[T]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sourcesObject.asInstanceOf[js.Any]).asInstanceOf[Observable[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
+    */ forkJoin & TopLevel[T]
+  ]]
 }

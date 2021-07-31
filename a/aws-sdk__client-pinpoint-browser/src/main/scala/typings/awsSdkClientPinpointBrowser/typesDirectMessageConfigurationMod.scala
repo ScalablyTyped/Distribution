@@ -18,55 +18,53 @@ import typings.awsSdkClientPinpointBrowser.typesSmsmessageMod.SMSMessage
 import typings.awsSdkClientPinpointBrowser.typesSmsmessageMod.UnmarshalledSMSMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDirectMessageConfigurationMod {
   
-  @js.native
   trait DirectMessageConfiguration extends StObject {
     
     /**
       * The message to ADM channels. Overrides the default push notification message.
       */
-    var ADMMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesAdmmessageMod.ADMMessage] = js.native
+    var ADMMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesAdmmessageMod.ADMMessage] = js.undefined
     
     /**
       * The message to APNS channels. Overrides the default push notification message.
       */
-    var APNSMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesApnsmessageMod.APNSMessage] = js.native
+    var APNSMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesApnsmessageMod.APNSMessage] = js.undefined
     
     /**
       * The message to Baidu GCM channels. Overrides the default push notification message.
       */
-    var BaiduMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesBaiduMessageMod.BaiduMessage] = js.native
+    var BaiduMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesBaiduMessageMod.BaiduMessage] = js.undefined
     
     /**
       * The default message for all channels.
       */
-    var DefaultMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesDefaultMessageMod.DefaultMessage] = js.native
+    var DefaultMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesDefaultMessageMod.DefaultMessage] = js.undefined
     
     /**
       * The default push notification message for all push channels.
       */
     var DefaultPushNotificationMessage: js.UndefOr[
         typings.awsSdkClientPinpointBrowser.typesDefaultPushNotificationMessageMod.DefaultPushNotificationMessage
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The message to Email channels. Overrides the default message.
       */
-    var EmailMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesEmailMessageMod.EmailMessage] = js.native
+    var EmailMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesEmailMessageMod.EmailMessage] = js.undefined
     
     /**
       * The message to GCM channels. Overrides the default push notification message.
       */
-    var GCMMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesGcmmessageMod.GCMMessage] = js.native
+    var GCMMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesGcmmessageMod.GCMMessage] = js.undefined
     
     /**
       * The message to SMS channels. Overrides the default message.
       */
-    var SMSMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSmsmessageMod.SMSMessage] = js.native
+    var SMSMessage: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSmsmessageMod.SMSMessage] = js.undefined
   }
   object DirectMessageConfiguration {
     
@@ -129,56 +127,57 @@ object typesDirectMessageConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDirectMessageConfiguration extends DirectMessageConfiguration {
+  trait UnmarshalledDirectMessageConfiguration
+    extends StObject
+       with DirectMessageConfiguration {
     
     /**
       * The message to ADM channels. Overrides the default push notification message.
       */
     @JSName("ADMMessage")
-    var ADMMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledADMMessage] = js.native
+    var ADMMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledADMMessage] = js.undefined
     
     /**
       * The message to APNS channels. Overrides the default push notification message.
       */
     @JSName("APNSMessage")
-    var APNSMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledAPNSMessage] = js.native
+    var APNSMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledAPNSMessage] = js.undefined
     
     /**
       * The message to Baidu GCM channels. Overrides the default push notification message.
       */
     @JSName("BaiduMessage")
-    var BaiduMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledBaiduMessage] = js.native
+    var BaiduMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledBaiduMessage] = js.undefined
     
     /**
       * The default message for all channels.
       */
     @JSName("DefaultMessage")
-    var DefaultMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledDefaultMessage] = js.native
+    var DefaultMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledDefaultMessage] = js.undefined
     
     /**
       * The default push notification message for all push channels.
       */
     @JSName("DefaultPushNotificationMessage")
-    var DefaultPushNotificationMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledDefaultPushNotificationMessage] = js.native
+    var DefaultPushNotificationMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledDefaultPushNotificationMessage] = js.undefined
     
     /**
       * The message to Email channels. Overrides the default message.
       */
     @JSName("EmailMessage")
-    var EmailMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledEmailMessage] = js.native
+    var EmailMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledEmailMessage] = js.undefined
     
     /**
       * The message to GCM channels. Overrides the default push notification message.
       */
     @JSName("GCMMessage")
-    var GCMMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledGCMMessage] = js.native
+    var GCMMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledGCMMessage] = js.undefined
     
     /**
       * The message to SMS channels. Overrides the default message.
       */
     @JSName("SMSMessage")
-    var SMSMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledSMSMessage] = js.native
+    var SMSMessage_UnmarshalledDirectMessageConfiguration: js.UndefOr[UnmarshalledSMSMessage] = js.undefined
   }
   object UnmarshalledDirectMessageConfiguration {
     

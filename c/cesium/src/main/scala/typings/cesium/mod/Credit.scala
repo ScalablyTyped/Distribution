@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Credit")
@@ -32,8 +31,11 @@ class Credit protected () extends StObject {
 }
 object Credit {
   
-  /* static member */
-  @JSImport("cesium", "Credit.equals")
+  @JSImport("cesium", "Credit")
   @js.native
-  def equals_(left: Credit, right: Credit): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def equals_(left: Credit, right: Credit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

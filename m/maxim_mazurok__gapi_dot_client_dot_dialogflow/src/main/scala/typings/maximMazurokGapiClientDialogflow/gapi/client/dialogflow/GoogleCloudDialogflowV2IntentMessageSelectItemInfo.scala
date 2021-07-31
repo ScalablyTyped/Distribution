@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageSelectItemInfo extends StObject {
   
   /** Required. A unique key that will be sent back to the agent if this response is given. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Optional. A list of synonyms that can also be used to trigger this item in dialog. */
-  var synonyms: js.UndefOr[js.Array[String]] = js.native
+  var synonyms: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageSelectItemInfo {
   

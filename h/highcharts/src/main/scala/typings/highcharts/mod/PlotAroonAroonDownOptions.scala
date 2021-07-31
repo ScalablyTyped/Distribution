@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotAroonAroonDownOptions extends StObject {
   
   /**
     * (Highstock) Styles for an aroonDown line.
     */
-  var styles: js.UndefOr[PlotAroonAroonDownStylesOptions] = js.native
+  var styles: js.UndefOr[PlotAroonAroonDownStylesOptions] = js.undefined
 }
 object PlotAroonAroonDownOptions {
   

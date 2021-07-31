@@ -7,14 +7,12 @@ import typings.winrtUwp.Windows.Globalization.Language
 import typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Media.Ocr namespace provides classes for optical character recognition (OCR) that enable Windows Runtime apps to read and interpret text from images. */
 object Ocr {
   
   /** Provides optical character recognition (OCR) functionality. */
-  @js.native
   trait OcrEngine extends StObject {
     
     /**
@@ -22,10 +20,10 @@ object Ocr {
       * @param bitmap Represents an uncompressed bitmap.
       * @return The result of the OCR that was initiated by the OcrEngine object.
       */
-    def recognizeAsync(bitmap: SoftwareBitmap): IPromiseWithIAsyncOperation[OcrResult] = js.native
+    def recognizeAsync(bitmap: SoftwareBitmap): IPromiseWithIAsyncOperation[OcrResult]
     
     /** Gets the language being used for text recognition. */
-    var recognizerLanguage: Language = js.native
+    var recognizerLanguage: Language
   }
   object OcrEngine {
     
@@ -50,14 +48,13 @@ object Ocr {
   }
   
   /** Represents a single line of text recognized by the OCR engine and returned as part of the OcrResult . */
-  @js.native
   trait OcrLine extends StObject {
     
     /** Gets the text of the recognized line. */
-    var text: String = js.native
+    var text: String
     
     /** Gets the collection of OcrWord objects that represents the words detected in the current line of text by the RecognizeAsync method. */
-    var words: IVectorView[OcrWord] = js.native
+    var words: IVectorView[OcrWord]
   }
   object OcrLine {
     
@@ -79,17 +76,16 @@ object Ocr {
   }
   
   /** Contains the results of Optical Character Recognition (OCR). */
-  @js.native
   trait OcrResult extends StObject {
     
     /** Gets the collection of OcrLine objects that represents the lines of text detected in the image by the RecognizeAsync method. */
-    var lines: IVectorView[OcrLine] = js.native
+    var lines: IVectorView[OcrLine]
     
     /** Gets the recognized text. */
-    var text: String = js.native
+    var text: String
     
     /** Gets the clockwise rotation of the recognized text, in degrees, around the center of the image. */
-    var textAngle: Double = js.native
+    var textAngle: Double
   }
   object OcrResult {
     
@@ -114,14 +110,13 @@ object Ocr {
   }
   
   /** Represents a single word in a line of text recognized by the OCR engine and returned as part of the OcrLine . */
-  @js.native
   trait OcrWord extends StObject {
     
     /** Gets the position and size in pixels of the recognized word from the top left corner of image when the value of TextAngle property is 0 (zero). */
-    var boundingRect: Rect = js.native
+    var boundingRect: Rect
     
     /** Gets the text of the recognized word. */
-    var text: String = js.native
+    var text: String
   }
   object OcrWord {
     

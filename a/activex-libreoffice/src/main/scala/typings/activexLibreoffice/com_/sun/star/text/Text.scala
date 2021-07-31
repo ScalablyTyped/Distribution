@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextFrame
   * @see com.sun.star.table.Cell
   */
-@js.native
 trait Text
-  extends XText
+  extends StObject
      with XEnumerationAccess
+     with XText
      with XTextRangeCompare
      with XTextRangeMover
      with XRelativeTextContentInsert {
@@ -68,7 +67,7 @@ trait Text
     * {@link com.sun.star.beans.PropertyValues} RedlineSuccessorData (contains the same properties except for the RedlineSuccessorData)
     * @see StartRedline
     */
-  var EndRedline: PropertyValues = js.native
+  var EndRedline: PropertyValues
   
   /**
     * contains the properties of a redline at the start of the document. ;  The sequence contains the following properties
@@ -112,7 +111,7 @@ trait Text
     * {@link com.sun.star.beans.PropertyValues} RedlineSuccessorData (contains the same properties except for the RedlineSuccessorData)
     * @see EndRedline
     */
-  var StartRedline: PropertyValues = js.native
+  var StartRedline: PropertyValues
 }
 object Text {
   

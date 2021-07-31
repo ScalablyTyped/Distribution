@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsProductsGet extends StandardParameters {
+trait ParamsResourceAccountsProductsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The information to be included in the response. Only sections listed here
     * will be returned.
     */
-  var include: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name in the format `{target_country}:{content_language}:{product_id}`.
@@ -32,13 +32,13 @@ trait ParamsResourceAccountsProductsGet extends StandardParameters {
     * more information, see
     * https://support.google.com/manufacturers/answer/6124116#id.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Parent ID in the format `accounts/{account_id}`.  `account_id` - The ID
     * of the Manufacturer Center account.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsProductsGet {
   

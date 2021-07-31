@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.FocusedCellChanging event.
   */
-@js.native
-trait ASPxClientVerticalGridFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientVerticalGridFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides information on a cell currently being focused.
     */
-  var cellInfo: ASPxClientVerticalGridCellInfo = js.native
+  var cellInfo: ASPxClientVerticalGridCellInfo
 }
 object ASPxClientVerticalGridFocusedCellChangingEventArgs {
   

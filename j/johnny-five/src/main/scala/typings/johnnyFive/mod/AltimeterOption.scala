@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AltimeterOption extends StObject {
   
-  var address: js.UndefOr[Double] = js.native
+  var address: js.UndefOr[Double] = js.undefined
   
-  var controller: String = js.native
+  var controller: String
   
-  var elevation: js.UndefOr[Double] = js.native
+  var elevation: js.UndefOr[Double] = js.undefined
   
-  var freq: js.UndefOr[Double] = js.native
+  var freq: js.UndefOr[Double] = js.undefined
 }
 object AltimeterOption {
   

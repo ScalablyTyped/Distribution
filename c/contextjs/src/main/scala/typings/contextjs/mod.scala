@@ -4,42 +4,39 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("contextjs", "attach")
+  @JSImport("contextjs", JSImport.Namespace)
   @js.native
-  def attach(selector: js.Any, menuObjects: js.Array[MenuObject]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contextjs", "destroy")
-  @js.native
-  def destroy(selector: js.Any): Unit = js.native
+  @scala.inline
+  def attach(selector: js.Any, menuObjects: js.Array[MenuObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], menuObjects.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("contextjs", "init")
-  @js.native
-  def init(): Unit = js.native
-  @JSImport("contextjs", "init")
-  @js.native
-  def init(settings: InitSettings): Unit = js.native
+  @scala.inline
+  def destroy(selector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("contextjs", "settings")
-  @js.native
-  def settings(settings: InitSettings): Unit = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  @scala.inline
+  def init(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def settings(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait InitSettings extends StObject {
     
-    var above: js.UndefOr[String | Boolean] = js.native
+    var above: js.UndefOr[String | Boolean] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var fadeSpeed: js.UndefOr[Double] = js.native
+    var fadeSpeed: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* e */ Element, Unit]] = js.native
+    var filter: js.UndefOr[js.Function1[/* e */ Element, Unit]] = js.undefined
     
-    var preventDoubleContext: js.UndefOr[Boolean] = js.native
+    var preventDoubleContext: js.UndefOr[Boolean] = js.undefined
   }
   object InitSettings {
     
@@ -84,22 +81,21 @@ object mod {
     }
   }
   
-  @js.native
   trait MenuObject extends StObject {
     
-    var action: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var action: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var divider: js.UndefOr[Boolean] = js.native
+    var divider: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var subMenu: js.UndefOr[js.Array[MenuObject]] = js.native
+    var subMenu: js.UndefOr[js.Array[MenuObject]] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object MenuObject {
     

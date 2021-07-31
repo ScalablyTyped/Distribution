@@ -2,55 +2,53 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICopyVaultJob extends StObject {
   
-  def Clone(): ICopyVaultJob = js.native
+  def Clone(): ICopyVaultJob
   
-  var CopyflagAllData: Boolean = js.native
+  var CopyflagAllData: Boolean
   
-  var CopyflagAllExceptData: Boolean = js.native
+  var CopyflagAllExceptData: Boolean
   
-  var CopyflagApplications: Boolean = js.native
+  var CopyflagApplications: Boolean
   
-  var CopyflagDataSets: Boolean = js.native
+  var CopyflagDataSets: Boolean
   
-  var CopyflagDocumentProfiles: Boolean = js.native
+  var CopyflagDocumentProfiles: Boolean
   
-  var CopyflagDocuments: Boolean = js.native
+  var CopyflagDocuments: Boolean
   
-  var CopyflagEventLog: Boolean = js.native
+  var CopyflagEventLog: Boolean
   
-  var CopyflagExternalLocations: Boolean = js.native
+  var CopyflagExternalLocations: Boolean
   
-  var CopyflagFiles: Boolean = js.native
+  var CopyflagFiles: Boolean
   
-  var CopyflagInternalEventHandlers: Boolean = js.native
+  var CopyflagInternalEventHandlers: Boolean
   
-  var CopyflagLanguagesAndTranslations: Boolean = js.native
+  var CopyflagLanguagesAndTranslations: Boolean
   
-  var CopyflagPropertyDefinitions: Boolean = js.native
+  var CopyflagPropertyDefinitions: Boolean
   
-  var CopyflagScheduledExportAndImportJobs: Boolean = js.native
+  var CopyflagScheduledExportAndImportJobs: Boolean
   
-  var CopyflagUseTargetGUID: Boolean = js.native
+  var CopyflagUseTargetGUID: Boolean
   
-  var CopyflagUserAccounts: Boolean = js.native
+  var CopyflagUserAccounts: Boolean
   
-  var CopyflagValueListContent: Boolean = js.native
+  var CopyflagValueListContent: Boolean
   
-  var CopyflagValueLists: Boolean = js.native
+  var CopyflagValueLists: Boolean
   
-  var CopyflagViews: Boolean = js.native
+  var CopyflagViews: Boolean
   
-  var CopyflagWorkflows: Boolean = js.native
+  var CopyflagWorkflows: Boolean
   
-  var VaultGUID: String = js.native
+  var VaultGUID: String
   
-  var VaultProperties: IVaultProperties = js.native
+  var VaultProperties: IVaultProperties
 }
 object ICopyVaultJob {
   

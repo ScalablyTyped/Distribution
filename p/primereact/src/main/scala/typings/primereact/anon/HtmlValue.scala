@@ -2,25 +2,23 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlValue extends StObject {
   
-  var delta: js.Any = js.native
+  var delta: js.Any
   
-  var htmlValue: String | Null = js.native
+  var htmlValue: String | Null
   
-  var source: String = js.native
+  var source: String
   
-  var textValue: String = js.native
+  var textValue: String
 }
 object HtmlValue {
   
   @scala.inline
   def apply(delta: js.Any, source: String, textValue: String): HtmlValue = {
-    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], textValue = textValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], textValue = textValue.asInstanceOf[js.Any], htmlValue = null)
     __obj.asInstanceOf[HtmlValue]
   }
   

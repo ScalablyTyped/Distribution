@@ -2,17 +2,15 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageBoxSyncOptions extends StObject {
   
   /**
     * Array of texts for buttons. On Windows, an empty array will result in one button
     * labeled "OK".
     */
-  var buttons: js.UndefOr[js.Array[String]] = js.native
+  var buttons: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The index of the button to be used to cancel the dialog, via the `Esc` key. By
@@ -20,35 +18,35 @@ trait MessageBoxSyncOptions extends StObject {
     * If no such labeled buttons exist and this option is not set, `0` will be used as
     * the return value.
     */
-  var cancelId: js.UndefOr[Double] = js.native
+  var cancelId: js.UndefOr[Double] = js.undefined
   
   /**
     * Initial checked state of the checkbox. `false` by default.
     */
-  var checkboxChecked: js.UndefOr[Boolean] = js.native
+  var checkboxChecked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If provided, the message box will include a checkbox with the given label.
     */
-  var checkboxLabel: js.UndefOr[String] = js.native
+  var checkboxLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Index of the button in the buttons array which will be selected by default when
     * the message box opens.
     */
-  var defaultId: js.UndefOr[Double] = js.native
+  var defaultId: js.UndefOr[Double] = js.undefined
   
   /**
     * Extra information of the message.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[NativeImage_ | String] = js.native
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   
   /**
     * Content of the message box.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * On Windows Electron will try to figure out which one of the `buttons` are common
@@ -56,7 +54,7 @@ trait MessageBoxSyncOptions extends StObject {
     * dialog. This can make the dialog appear in the style of modern Windows apps. If
     * you don't like this behavior, you can set `noLink` to `true`.
     */
-  var noLink: js.UndefOr[Boolean] = js.native
+  var noLink: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalize the keyboard access keys across platforms. Default is `false`.
@@ -67,12 +65,12 @@ trait MessageBoxSyncOptions extends StObject {
     * will be converted to `Vie_w` on Linux and `View` on macOS and can be selected
     * via `Alt-W` on Windows and Linux.
     */
-  var normalizeAccessKeys: js.UndefOr[Boolean] = js.native
+  var normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Title of the message box, some platforms will not show it.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Can be `"none"`, `"info"`, `"error"`, `"question"` or `"warning"`. On Windows,
@@ -80,7 +78,7 @@ trait MessageBoxSyncOptions extends StObject {
     * the `"icon"` option. On macOS, both `"warning"` and `"error"` display the same
     * warning icon.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MessageBoxSyncOptions {
   

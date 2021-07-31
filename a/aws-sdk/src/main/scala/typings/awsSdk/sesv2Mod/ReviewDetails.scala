@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewDetails extends StObject {
   
   /**
     * The associated support center case ID (if any).
     */
-  var CaseId: js.UndefOr[typings.awsSdk.sesv2Mod.CaseId] = js.native
+  var CaseId: js.UndefOr[typings.awsSdk.sesv2Mod.CaseId] = js.undefined
   
   /**
     * The status of the latest review of your account. The status can be one of the following:    PENDING – We have received your appeal and are in the process of reviewing it.    GRANTED – Your appeal has been reviewed and your production access has been granted.    DENIED – Your appeal has been reviewed and your production access has been denied.    FAILED – An internal error occurred and we didn't receive your appeal. You can submit your appeal again.  
     */
-  var Status: js.UndefOr[ReviewStatus] = js.native
+  var Status: js.UndefOr[ReviewStatus] = js.undefined
 }
 object ReviewDetails {
   

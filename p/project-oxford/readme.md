@@ -12,7 +12,7 @@ Vision, and Face Intelligence with Project Oxford
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 16635 |
+| # downloads        | 18757 |
 | # stars            | 5 |
 
 ## Links

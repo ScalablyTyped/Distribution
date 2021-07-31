@@ -3,7 +3,6 @@ package typings.broadcastChannel
 import typings.broadcastChannel.broadcastChannelMod.BroadcastChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leaderElectionMod {
@@ -40,20 +39,19 @@ object leaderElectionMod {
     LeaderElector
   ]
   
-  @js.native
   trait LeaderElectionOptions extends StObject {
     
     /**
       * This value decides how often instances will renegotiate who is leader.
       * Probably should be at least 2x bigger than responseTime.
       */
-    var fallbackInterval: js.UndefOr[Double] = js.native
+    var fallbackInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * This timer value is used when resolving which instance should be leader.
       * In case when your application elects more than one leader increase this value.
       */
-    var responseTime: js.UndefOr[Double] = js.native
+    var responseTime: js.UndefOr[Double] = js.undefined
   }
   object LeaderElectionOptions {
     

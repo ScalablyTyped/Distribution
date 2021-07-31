@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsEvaluationResult extends StObject {
   
   /**
     * Count of events evaluated.
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Count of matched events.
     */
-  var matchedCount: Double = js.native
+  var matchedCount: Double
 }
 object EventsEvaluationResult {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadEntityDefinitionsRequest extends StObject {
   
   /**
     * A Boolean that specifies whether to deprecate all entities in the latest version before uploading the new DefinitionDocument. If set to true, the upload will create a new namespace version.
     */
-  var deprecateExistingEntities: js.UndefOr[DeprecateExistingEntities] = js.native
+  var deprecateExistingEntities: js.UndefOr[DeprecateExistingEntities] = js.undefined
   
   /**
     * The DefinitionDocument that defines the updated entities.
     */
-  var document: js.UndefOr[DefinitionDocument] = js.native
+  var document: js.UndefOr[DefinitionDocument] = js.undefined
   
   /**
     * A Boolean that specifies whether to synchronize with the latest version of the public namespace. If set to true, the upload will create a new namespace version.
     */
-  var syncWithPublicNamespace: js.UndefOr[SyncWithPublicNamespace] = js.native
+  var syncWithPublicNamespace: js.UndefOr[SyncWithPublicNamespace] = js.undefined
 }
 object UploadEntityDefinitionsRequest {
   

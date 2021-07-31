@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,17 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * event queue.
   * @see WindowEvent
   */
-@js.native
-trait PaintEvent extends EventObject {
+trait PaintEvent
+  extends StObject
+     with EventObject {
   
   /**
     * contains the number of paint events that follows this event if it is a multiple {@link PaintEvent} . You can collect the {@link PaintEvent} until
     * Count is zero.
     */
-  var Count: Double = js.native
+  var Count: Double
   
   /** contains the rectangle area which needs to be repainted. */
-  var UpdateRect: Rectangle = js.native
+  var UpdateRect: Rectangle
 }
 object PaintEvent {
   

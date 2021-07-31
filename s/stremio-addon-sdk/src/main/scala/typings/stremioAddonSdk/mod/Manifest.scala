@@ -3,10 +3,8 @@ package typings.stremioAddonSdk.mod
 import typings.stremioAddonSdk.anon.Adult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Manifest extends StObject {
   
   /**
@@ -14,57 +12,57 @@ trait Manifest extends StObject {
     *
     * This can be used for an addon to act just as a catalog of other addons.
     */
-  var addonCatalogs: js.UndefOr[js.Array[ManifestCatalog]] = js.native
+  var addonCatalogs: js.UndefOr[js.Array[ManifestCatalog]] = js.undefined
   
   /**
     * Background image for the addon.
     *
     * URL to png/jpg, at least 1024x786 resolution.
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var behaviorHints: js.UndefOr[Adult] = js.native
+  var behaviorHints: js.UndefOr[Adult] = js.undefined
   
   /**
     * A list of the content catalogs your addon provides.
     *
     * Leave this an empty array ([]) if your addon does not provide the catalog resource.
     */
-  var catalogs: js.Array[ManifestCatalog] = js.native
+  var catalogs: js.Array[ManifestCatalog]
   
   /**
     * Contact email for addon issues.
     * Used for the Report button in the app.
     * Also, the Stremio team may reach you on this email for anything relating your addon.
     */
-  var contactEmail: js.UndefOr[String] = js.native
+  var contactEmail: js.UndefOr[String] = js.undefined
   
   /**
     *  Human readable description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Identifier, dot-separated, e.g. "com.stremio.filmon"
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Use this if you want your addon to be called only for specific content IDs.
     *
     * For example, if you set this to ["yt_id:", "tt"], your addon will only be called for id values that start with 'yt_id:' or 'tt'.
     */
-  var idPrefixes: js.UndefOr[js.Array[String]] = js.native
+  var idPrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Logo icon, URL to png, monochrome, 256x256.
     */
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
   /**
     * Human readable name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Supported resources, defined as an array of objects (long version) or strings (short version).
@@ -73,17 +71,17 @@ trait Manifest extends StObject {
     *
     * Example #2: ["catalog", "meta", "stream", "subtitles", "addon_catalog"]
     */
-  var resources: js.Array[FullManifestResource | ShortManifestResource] = js.native
+  var resources: js.Array[FullManifestResource | ShortManifestResource]
   
   /**
     * Supported types.
     */
-  var types: js.Array[ContentType] = js.native
+  var types: js.Array[ContentType]
   
   /**
     * Semantic version of the addon
     */
-  var version: String = js.native
+  var version: String
 }
 object Manifest {
   

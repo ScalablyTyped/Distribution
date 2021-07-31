@@ -3,17 +3,15 @@ package typings.tuyaPanelKit.themeMod
 import typings.tuyaPanelKit.anon.FontSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextThemeMap extends StObject {
   
-  def large(props: js.Any): FontSize = js.native
+  def large(props: js.Any): FontSize
   
-  def normal(props: js.Any): FontSize = js.native
+  def normal(props: js.Any): FontSize
   
-  def small(props: js.Any): FontSize = js.native
+  def small(props: js.Any): FontSize
 }
 object TextThemeMap {
   

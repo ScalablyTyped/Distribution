@@ -2,41 +2,41 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IColorPalette extends IComponent {
+trait IColorPalette
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (Boolean) */
-  var allowReselect: js.UndefOr[Boolean] = js.native
+  var allowReselect: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Clears any selection and sets the value to null  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var clickEvent: js.UndefOr[java.lang.String] = js.native
+  var clickEvent: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Property] (String[]) */
-  var colors: js.UndefOr[Array] = js.native
+  var colors: js.UndefOr[Array] = js.undefined
   
   /** [Method] Get the currently selected color value
     * @returns String value The selected value. Null if nothing is selected.
     */
-  var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.native
+  var handler: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.native
+  var itemCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Template method called when this Component s DOM structure is created  */
   @JSName("onRender")
-  var onRender_IColorPalette: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRender_IColorPalette: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Selects the specified color in the picker fires the select event
     * @param color String A valid 6-digit color hex code (# will be stripped if included)
@@ -48,13 +48,13 @@ trait IColorPalette extends IComponent {
       /* suppressEvent */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var selectedCls: js.UndefOr[java.lang.String] = js.native
+  var selectedCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var value: js.UndefOr[java.lang.String] = js.native
+  var value: js.UndefOr[java.lang.String] = js.undefined
 }
 object IColorPalette {
   

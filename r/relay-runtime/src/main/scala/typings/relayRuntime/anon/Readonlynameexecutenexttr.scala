@@ -6,24 +6,24 @@ import typings.relayRuntime.relayRuntimeStrings.executeDotnext
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.next',   transactionID :number,   response :relay-runtime.relay-runtime/lib/network/RelayNetworkTypes.GraphQLResponse}> */
-@js.native
-trait Readonlynameexecutenexttr extends LogEvent {
+trait Readonlynameexecutenexttr
+  extends StObject
+     with LogEvent {
   
-  val name: executeDotnext = js.native
+  val name: executeDotnext
   
-  val response: GraphQLResponse = js.native
+  val response: GraphQLResponse
   
-  val transactionID: Double = js.native
+  val transactionID: Double
 }
 object Readonlynameexecutenexttr {
   
   @scala.inline
-  def apply(name: executeDotnext, response: GraphQLResponse, transactionID: Double): Readonlynameexecutenexttr = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
+  def apply(response: GraphQLResponse, transactionID: Double): Readonlynameexecutenexttr = {
+    val __obj = js.Dynamic.literal(name = "execute.next", response = response.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutenexttr]
   }
   

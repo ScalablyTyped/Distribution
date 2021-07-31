@@ -3,7 +3,6 @@ package typings.businessRulesEngine.mod
 import typings.businessRulesEngine.anon.Contains
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("business-rules-engine", "MessageLocalization")
@@ -16,9 +15,8 @@ object MessageLocalization {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("business-rules-engine", "MessageLocalization.GetValidationMessage")
-  @js.native
-  def GetValidationMessage(validator: js.Any): String = js.native
+  @scala.inline
+  def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("business-rules-engine", "MessageLocalization.ValidationMessages")
   @js.native

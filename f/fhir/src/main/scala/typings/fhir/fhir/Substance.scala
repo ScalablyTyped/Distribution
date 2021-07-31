@@ -2,60 +2,60 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A homogeneous material with a definite composition
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Substance extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Substance
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * What class/type of substance this is
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * What substance this is
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Textual description of the substance, comments
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Composition information about the substance
     */
-  var ingredient: js.UndefOr[js.Array[SubstanceIngredient]] = js.native
+  var ingredient: js.UndefOr[js.Array[SubstanceIngredient]] = js.undefined
   
   /**
     * If this describes a specific package/container of the substance
     */
-  var instance: js.UndefOr[js.Array[SubstanceInstance]] = js.native
+  var instance: js.UndefOr[js.Array[SubstanceInstance]] = js.undefined
   
   /**
     * active | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
 }
 object Substance {
   

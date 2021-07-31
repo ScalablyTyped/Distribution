@@ -4,79 +4,77 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2Joint extends StObject {
   
   /**
     * Get the anchor point on bodyA in world coordinates.
     * @return Anchor A point.
     **/
-  def GetAnchorA(): b2Vec2 = js.native
+  def GetAnchorA(): b2Vec2
   
   /**
     * Get the anchor point on bodyB in world coordinates.
     * @return Anchor B point.
     **/
-  def GetAnchorB(): b2Vec2 = js.native
+  def GetAnchorB(): b2Vec2
   
   /**
     * Get the first body attached to this joint.
     * @return Body A.
     **/
-  def GetBodyA(): b2Body = js.native
+  def GetBodyA(): b2Body
   
   /**
     * Get the second body attached to this joint.
     * @return Body B.
     **/
-  def GetBodyB(): b2Body = js.native
+  def GetBodyB(): b2Body
   
   /**
     * Get the next joint the world joint list.
     * @return Next joint.
     **/
-  def GetNext(): b2Joint = js.native
+  def GetNext(): b2Joint
   
   /**
     * Get the reaction force on body2 at the joint anchor in Newtons.
     * @param inv_dt
     * @return Reaction force (N)
     **/
-  def GetReactionForce(inv_dt: Double): b2Vec2 = js.native
+  def GetReactionForce(inv_dt: Double): b2Vec2
   
   /**
     * Get the reaction torque on body2 in N.
     * @param inv_dt
     * @return Reaction torque (N).
     **/
-  def GetReactionTorque(inv_dt: Double): Double = js.native
+  def GetReactionTorque(inv_dt: Double): Double
   
   /**
     * Get the type of the concrete joint.
     * @return Joint type.
     **/
-  def GetType(): Double = js.native
+  def GetType(): Double
   
   /**
     * Get the user data pointer.
     * @return User data.  Cast to your data type.
     **/
-  def GetUserData(): js.Any = js.native
+  def GetUserData(): js.Any
   
   /**
     * Short-cut function to determine if either body is inactive.
     * @return True if active, otherwise false.
     **/
-  def IsActive(): Boolean = js.native
+  def IsActive(): Boolean
   
   /**
     * Set the user data pointer.
     * @param data Your custom data.
     **/
-  def SetUserData(data: js.Any): Unit = js.native
+  def SetUserData(data: js.Any): Unit
 }
 object b2Joint {
   

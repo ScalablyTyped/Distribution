@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,9 +16,9 @@ trait MVCObject extends StObject {
   
   /** Binds a View to a Model. */
   def bindTo(key: String, target: MVCObject): Unit = js.native
-  def bindTo(key: String, target: MVCObject, targetKey: js.UndefOr[scala.Nothing], noNotify: Boolean): Unit = js.native
   def bindTo(key: String, target: MVCObject, targetKey: String): Unit = js.native
   def bindTo(key: String, target: MVCObject, targetKey: String, noNotify: Boolean): Unit = js.native
+  def bindTo(key: String, target: MVCObject, targetKey: Unit, noNotify: Boolean): Unit = js.native
   
   def changed(key: String): Unit = js.native
   

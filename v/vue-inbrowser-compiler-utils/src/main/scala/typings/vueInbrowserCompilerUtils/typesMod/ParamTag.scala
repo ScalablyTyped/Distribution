@@ -2,13 +2,12 @@ package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamTag
-  extends Param
+  extends StObject
      with RootTag
+     with Param
      with BlockTag
 object ParamTag {
   

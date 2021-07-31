@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostedZoneLimitRequest extends StObject {
   
   /**
     * The ID of the hosted zone that you want to get a limit for.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * The limit that you want to get. Valid values include the following:    MAX_RRSETS_BY_ZONE: The maximum number of records that you can create in the specified hosted zone.    MAX_VPCS_ASSOCIATED_BY_ZONE: The maximum number of Amazon VPCs that you can associate with the specified private hosted zone.  
     */
-  var Type: HostedZoneLimitType = js.native
+  var Type: HostedZoneLimitType
 }
 object GetHostedZoneLimitRequest {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMetricFiltersResponse extends StObject {
   
   /**
     * The metric filters.
     */
-  var metricFilters: js.UndefOr[MetricFilters] = js.native
+  var metricFilters: js.UndefOr[MetricFilters] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeMetricFiltersResponse {
   

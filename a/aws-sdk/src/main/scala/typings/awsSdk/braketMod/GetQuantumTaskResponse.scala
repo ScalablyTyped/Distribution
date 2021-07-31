@@ -2,66 +2,64 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQuantumTaskResponse extends StObject {
   
   /**
     * The time at which the task was created.
     */
-  var createdAt: SyntheticTimestampDateTime = js.native
+  var createdAt: SyntheticTimestampDateTime
   
   /**
     * The ARN of the device the task was run on.
     */
-  var deviceArn: DeviceArn = js.native
+  var deviceArn: DeviceArn
   
   /**
     * The parameters for the device on which the task ran.
     */
-  var deviceParameters: JsonValue = js.native
+  var deviceParameters: JsonValue
   
   /**
     * The time at which the task ended.
     */
-  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.native
+  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.undefined
   
   /**
     * The reason that a task failed.
     */
-  var failureReason: js.UndefOr[String] = js.native
+  var failureReason: js.UndefOr[String] = js.undefined
   
   /**
     * The S3 bucket where task results are stored.
     */
-  var outputS3Bucket: String = js.native
+  var outputS3Bucket: String
   
   /**
     * The folder in the S3 bucket where task results are stored.
     */
-  var outputS3Directory: String = js.native
+  var outputS3Directory: String
   
   /**
     * The ARN of the task.
     */
-  var quantumTaskArn: QuantumTaskArn = js.native
+  var quantumTaskArn: QuantumTaskArn
   
   /**
     * The number of shots used in the task.
     */
-  var shots: Long = js.native
+  var shots: Long
   
   /**
     * The status of the task.
     */
-  var status: QuantumTaskStatus = js.native
+  var status: QuantumTaskStatus
   
   /**
     * The tags that belong to this task.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object GetQuantumTaskResponse {
   

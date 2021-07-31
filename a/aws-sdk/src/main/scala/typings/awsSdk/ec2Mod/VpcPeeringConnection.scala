@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnection extends StObject {
   
   /**
     * Information about the accepter VPC. CIDR block information is only returned when describing an active VPC peering connection.
     */
-  var AccepterVpcInfo: js.UndefOr[VpcPeeringConnectionVpcInfo] = js.native
+  var AccepterVpcInfo: js.UndefOr[VpcPeeringConnectionVpcInfo] = js.undefined
   
   /**
     * The time that an unaccepted VPC peering connection will expire.
     */
-  var ExpirationTime: js.UndefOr[DateTime] = js.native
+  var ExpirationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Information about the requester VPC. CIDR block information is only returned when describing an active VPC peering connection.
     */
-  var RequesterVpcInfo: js.UndefOr[VpcPeeringConnectionVpcInfo] = js.native
+  var RequesterVpcInfo: js.UndefOr[VpcPeeringConnectionVpcInfo] = js.undefined
   
   /**
     * The status of the VPC peering connection.
     */
-  var Status: js.UndefOr[VpcPeeringConnectionStateReason] = js.native
+  var Status: js.UndefOr[VpcPeeringConnectionStateReason] = js.undefined
   
   /**
     * Any tags assigned to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC peering connection.
     */
-  var VpcPeeringConnectionId: js.UndefOr[String] = js.native
+  var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
 }
 object VpcPeeringConnection {
   

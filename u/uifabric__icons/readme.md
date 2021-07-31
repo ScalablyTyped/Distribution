@@ -10,9 +10,9 @@ Fluent UI React icon set.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/icons |
 | Keywords           | - |
-| # releases         | 139 |
-| # dependents       | 34 |
-| # downloads        | 3793178 |
+| # releases         | 141 |
+| # dependents       | 35 |
+| # downloads        | 4280378 |
 | # stars            | 0 |
 
 ## Links

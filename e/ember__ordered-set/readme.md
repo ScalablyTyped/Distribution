@@ -12,7 +12,7 @@ The default blueprint for ember-cli addons.
 | Keywords           | ember-addon |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 3768904 |
+| # downloads        | 3821056 |
 | # stars            | 0 |
 
 ## Links

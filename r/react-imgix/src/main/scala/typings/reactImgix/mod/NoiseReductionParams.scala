@@ -2,15 +2,13 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoiseReductionParams extends StObject {
   
-  var nr: js.UndefOr[ImgixParamType] = js.native
+  var nr: js.UndefOr[ImgixParamType] = js.undefined
   
-  var nrs: js.UndefOr[ImgixParamType] = js.native
+  var nrs: js.UndefOr[ImgixParamType] = js.undefined
 }
 object NoiseReductionParams {
   

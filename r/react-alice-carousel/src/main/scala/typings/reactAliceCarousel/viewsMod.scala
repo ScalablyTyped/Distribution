@@ -6,28 +6,26 @@ import typings.reactAliceCarousel.anon.SlidesLength
 import typings.reactAliceCarousel.dotsNavigationMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsMod {
   
-  @JSImport("react-alice-carousel/lib/views", "DotsNavigation")
+  @JSImport("react-alice-carousel/lib/views", JSImport.Namespace)
   @js.native
-  def DotsNavigation(hasStateOnClickOnMouseEnterOnMouseLeave: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-alice-carousel/lib/views", "PlayPauseButton")
-  @js.native
-  def PlayPauseButton(hasIsPlayingOnClick: typings.reactAliceCarousel.playPauseButtonMod.Props): Element = js.native
+  @scala.inline
+  def DotsNavigation(hasStateOnClickOnMouseEnterOnMouseLeave: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(hasStateOnClickOnMouseEnterOnMouseLeave.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-alice-carousel/lib/views", "PrevNextButton")
-  @js.native
-  def PrevNextButton(hasNameDisabledOnClick: typings.reactAliceCarousel.prevNextButtonMod.Props): Element = js.native
+  @scala.inline
+  def PlayPauseButton(hasIsPlayingOnClick: typings.reactAliceCarousel.playPauseButtonMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PlayPauseButton")(hasIsPlayingOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-alice-carousel/lib/views", "SlideInfo")
-  @js.native
-  def SlideInfo(hasActiveIndexSlidesLength: SlidesLength): Element = js.native
+  @scala.inline
+  def PrevNextButton(hasNameDisabledOnClick: typings.reactAliceCarousel.prevNextButtonMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-alice-carousel/lib/views", "StageItem")
-  @js.native
-  def StageItem(hasItemClassNameStyles: ClassName): Element = js.native
+  @scala.inline
+  def SlideInfo(hasActiveIndexSlidesLength: SlidesLength): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexSlidesLength.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def StageItem(hasItemClassNameStyles: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StageItem")(hasItemClassNameStyles.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -10,9 +10,9 @@ A tiny (less than 1k) event emitter library
 | ------------------ | :-------------: |
 | Full name          | tiny-emitter |
 | Keywords           | event, emitter, pubsub, tiny, events, bind |
-| # releases         | 2 |
-| # dependents       | 210 |
-| # downloads        | 125981875 |
+| # releases         | 0 |
+| # dependents       | 225 |
+| # downloads        | 159315331 |
 | # stars            | 11 |
 
 ## Links

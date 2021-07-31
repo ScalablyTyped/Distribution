@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.DeleteApiKeyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.DeleteApiKeyResponse>> */
-@js.native
 trait ReadonlyWaitablePromiseDeCatch extends StObject {
   
-  def `catch`[TResult](): js.Promise[DeleteApiKeyResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[DeleteApiKeyResponse | TResult]
   
-  def `finally`(): js.Promise[DeleteApiKeyResponse] = js.native
+  def `finally`(): js.Promise[DeleteApiKeyResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyWaitablePromiseDeCatch {
   

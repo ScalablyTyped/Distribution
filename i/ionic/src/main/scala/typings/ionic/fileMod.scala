@@ -2,7 +2,6 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileMod {
@@ -11,14 +10,13 @@ object fileMod {
   @js.native
   val fileUtils: FileUtils_ = js.native
   
-  @js.native
   trait FileUtils_ extends StObject {
     
-    var filenameReservedRegex: js.Any = js.native
+    var filenameReservedRegex: js.Any
     
-    var filenameReservedRegexWindows: js.Any = js.native
+    var filenameReservedRegexWindows: js.Any
     
-    def isValidFileName(fileName: js.Any): Boolean = js.native
+    def isValidFileName(fileName: js.Any): Boolean
   }
   object FileUtils_ {
     

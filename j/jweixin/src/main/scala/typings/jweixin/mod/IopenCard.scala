@@ -3,13 +3,13 @@ package typings.jweixin.mod
 import typings.jweixin.anon.CardId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IopenCard extends BaseParams {
+trait IopenCard
+  extends StObject
+     with BaseParams {
   
-  var cardList: js.Array[CardId] = js.native
+  var cardList: js.Array[CardId]
 }
 object IopenCard {
   

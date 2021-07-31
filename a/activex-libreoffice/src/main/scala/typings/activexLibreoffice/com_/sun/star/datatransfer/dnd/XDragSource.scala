@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferable
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Differently to Java, the association between view and interface is fixed and can not be changed. Otherwise, the AWT messaging would have to be
   * implemented for any window supporting Drag and Drop operations, which would be a real performance issue.
   */
-@js.native
-trait XDragSource extends XInterface {
+trait XDragSource
+  extends StObject
+     with XInterface {
   
   /**
     * To get the default cursor for a specified drag action.
     * @param dragAction A drag action as specified in {@link DNDConstants} .
     * @returns The default drag cursor for the specified drag action. The returned value may be used as parameter for the method {@link com.sun.star.datatransfe
     */
-  def getDefaultCursor(dragAction: Double): Double = js.native
+  def getDefaultCursor(dragAction: Double): Double
   
   /**
     * In order to query if drag image support is available.
     * @returns A boolean indicating whether or not drag image support is available on the underlying platform.
     */
-  def isDragImageSupported(): Boolean = js.native
+  def isDragImageSupported(): Boolean
   
   /**
     * Starts the drag operation.
@@ -53,7 +53,7 @@ trait XDragSource extends XInterface {
     image: Double,
     trans: XTransferable,
     listener: XDragSourceListener
-  ): Unit = js.native
+  ): Unit
 }
 object XDragSource {
   

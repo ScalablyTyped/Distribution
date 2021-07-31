@@ -4,14 +4,15 @@ import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.playbackEngineTypesMod.IPlaybackEngineDependencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playbackEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/playback-engine", JSImport.Default)
   @js.native
-  class default protected () extends Engine {
+  class default protected ()
+    extends StObject
+       with Engine {
     def this(hasEventEmitterNativeOutputConfig: IPlaybackEngineDependencies) = this()
   }
   object default {
@@ -36,7 +37,9 @@ object playbackEngineMod {
   }
   
   @js.native
-  trait Engine extends IPlaybackEngine {
+  trait Engine
+    extends StObject
+       with IPlaybackEngine {
     
     var _applyConfig: js.Any = js.native
     
@@ -49,7 +52,7 @@ object playbackEngineMod {
     var _output: js.Any = js.native
     
     def changeOutput(): Unit = js.native
-    def changeOutput(output: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
+    def changeOutput(output: Unit, callback: js.Function): Unit = js.native
     
     @JSName("isAutoPlayActive")
     def isAutoPlayActive_MEngine: Boolean = js.native

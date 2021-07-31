@@ -5,15 +5,15 @@ import typings.reactAlbus.mod.WizardContext
 import typings.reactAlbus.mod.WizardContextRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Children extends WizardContextRenderProps {
+  trait Children
+    extends StObject
+       with WizardContextRenderProps {
     
-    def children(wizard: WizardContext): ReactNode = js.native
+    def children(wizard: WizardContext): ReactNode
   }
   object Children {
     
@@ -31,10 +31,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Render extends WizardContextRenderProps {
+  trait Render
+    extends StObject
+       with WizardContextRenderProps {
     
-    var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.undefined
   }
   object Render {
     

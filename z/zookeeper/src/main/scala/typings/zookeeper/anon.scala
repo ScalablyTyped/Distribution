@@ -2,19 +2,17 @@ package typings.zookeeper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Auth extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var perms: Double = js.native
+    var perms: Double
     
-    var scheme: String = js.native
+    var scheme: String
   }
   object Auth {
     

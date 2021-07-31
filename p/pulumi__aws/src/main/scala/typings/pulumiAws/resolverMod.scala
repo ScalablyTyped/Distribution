@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverMod {
@@ -80,6 +79,10 @@ object resolverMod {
   /* static members */
   object Resolver {
     
+    @JSImport("@pulumi/aws/appsync/resolver", "Resolver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Resolver resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,75 +92,69 @@ object resolverMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appsync/resolver", "Resolver.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Resolver = js.native
-    @JSImport("@pulumi/aws/appsync/resolver", "Resolver.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Resolver = js.native
-    @JSImport("@pulumi/aws/appsync/resolver", "Resolver.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverState): Resolver = js.native
-    @JSImport("@pulumi/aws/appsync/resolver", "Resolver.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverState, opts: CustomResourceOptions): Resolver = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Resolver]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resolver]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverState): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Resolver]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverState, opts: CustomResourceOptions): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resolver]
     
     /**
       * Returns true if the given object is an instance of Resolver.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appsync/resolver", "Resolver.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/resolver.Resolver */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/resolver.Resolver */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/resolver.Resolver */ Boolean]
   }
   
-  @js.native
   trait ResolverArgs extends StObject {
     
     /**
       * The API ID for the GraphQL API.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The CachingConfig.
       */
-    val cachingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverCachingConfig]] = js.native
+    val cachingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverCachingConfig]] = js.undefined
     
     /**
       * The DataSource name.
       */
-    val dataSource: js.UndefOr[Input[String]] = js.native
+    val dataSource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The field name from the schema defined in the GraphQL API.
       */
-    val field: Input[String] = js.native
+    val field: Input[String]
     
     /**
       * The resolver type. Valid values are `UNIT` and `PIPELINE`.
       */
-    val kind: js.UndefOr[Input[String]] = js.native
+    val kind: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The PipelineConfig.
       */
-    val pipelineConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverPipelineConfig]] = js.native
+    val pipelineConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverPipelineConfig]] = js.undefined
     
     /**
       * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
       */
-    val requestTemplate: Input[String] = js.native
+    val requestTemplate: Input[String]
     
     /**
       * The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
       */
-    val responseTemplate: Input[String] = js.native
+    val responseTemplate: Input[String]
     
     /**
       * The type name from the schema defined in the GraphQL API.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object ResolverArgs {
     
@@ -218,58 +215,57 @@ object resolverMod {
     }
   }
   
-  @js.native
   trait ResolverState extends StObject {
     
     /**
       * The API ID for the GraphQL API.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CachingConfig.
       */
-    val cachingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverCachingConfig]] = js.native
+    val cachingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverCachingConfig]] = js.undefined
     
     /**
       * The DataSource name.
       */
-    val dataSource: js.UndefOr[Input[String]] = js.native
+    val dataSource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The field name from the schema defined in the GraphQL API.
       */
-    val field: js.UndefOr[Input[String]] = js.native
+    val field: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resolver type. Valid values are `UNIT` and `PIPELINE`.
       */
-    val kind: js.UndefOr[Input[String]] = js.native
+    val kind: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The PipelineConfig.
       */
-    val pipelineConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverPipelineConfig]] = js.native
+    val pipelineConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.ResolverPipelineConfig]] = js.undefined
     
     /**
       * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
       */
-    val requestTemplate: js.UndefOr[Input[String]] = js.native
+    val requestTemplate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
       */
-    val responseTemplate: js.UndefOr[Input[String]] = js.native
+    val responseTemplate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type name from the schema defined in the GraphQL API.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object ResolverState {
     

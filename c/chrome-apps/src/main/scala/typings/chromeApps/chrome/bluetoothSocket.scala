@@ -5,7 +5,6 @@ import typings.chromeApps.chromeAppsStrings.disconnected__
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bluetoothSocket {
   
-  @js.native
   trait CreateInfo extends StObject {
     
     /**
@@ -26,7 +24,7 @@ object bluetoothSocket {
       * created from other APIs, such as the
       * sockets.tcp API.
       */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object CreateInfo {
     
@@ -44,14 +42,13 @@ object bluetoothSocket {
     }
   }
   
-  @js.native
   trait ListenOptions extends StObject {
     
     /**
       * Length of the socket's listen queue.
       * The default value depends on the operating system's host subsystem.
       * */
-    var backlog: js.UndefOr[integer] = js.native
+    var backlog: js.UndefOr[integer] = js.undefined
     
     /**
       * The RFCOMM Channel used by listenUsingRfcomm.
@@ -59,7 +56,7 @@ object bluetoothSocket {
       * in use or the method call will fail. When not specified,
       * an unused channel will be automatically allocated.
       */
-    var channel: js.UndefOr[integer] = js.native
+    var channel: js.UndefOr[integer] = js.undefined
     
     /**
       * The L2CAP PSM used by listenUsingL2cap.
@@ -67,7 +64,7 @@ object bluetoothSocket {
       * in use or the method call with fail. When not specified,
       * an unused PSM will be automatically allocated.
       * */
-    var psm: js.UndefOr[integer] = js.native
+    var psm: js.UndefOr[integer] = js.undefined
   }
   object ListenOptions {
     
@@ -116,7 +113,6 @@ object bluetoothSocket {
   
   type OnAcceptErrorEvent = Event[js.Function1[/* info */ OnAcceptErrorEventData, Unit]]
   
-  @js.native
   trait OnAcceptErrorEventData extends StObject {
     
     /**
@@ -127,13 +123,13 @@ object bluetoothSocket {
       * not_listening
       *  > The socket is not listening.
       */
-    var error: OnAcceptErrorCode = js.native
+    var error: OnAcceptErrorCode
     
     /** The error message */
-    var errorMessage: String = js.native
+    var errorMessage: String
     
     /** The server socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object OnAcceptErrorEventData {
     
@@ -159,7 +155,6 @@ object bluetoothSocket {
   
   type OnAcceptEvent = Event[js.Function1[/* info */ OnAcceptInfoData, Unit]]
   
-  @js.native
   trait OnAcceptInfoData extends StObject {
     
     /**
@@ -171,10 +166,10 @@ object bluetoothSocket {
       * be explictly un-paused by the application to start
       * receiving data.
       */
-    var clientSocketId: integer = js.native
+    var clientSocketId: integer
     
     /** The server socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object OnAcceptInfoData {
     
@@ -215,7 +210,6 @@ object bluetoothSocket {
   
   type OnReceiveErrorEvent = Event[js.Function1[/* info */ OnReceiveErrorEventData, Unit]]
   
-  @js.native
   trait OnReceiveErrorEventData extends StObject {
     
     /**
@@ -228,13 +222,13 @@ object bluetoothSocket {
       * not_connected
       *  > The socket has not been connected.
       */
-    var error: OnAcceptErrorCode = js.native
+    var error: OnAcceptErrorCode
     
     /** The error message */
-    var errorMessage: String = js.native
+    var errorMessage: String
     
     /** The server socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object OnReceiveErrorEventData {
     
@@ -260,14 +254,13 @@ object bluetoothSocket {
   
   type OnReceiveEvent = Event[js.Function1[/* info */ OnReceiveEventData, Unit]]
   
-  @js.native
   trait OnReceiveEventData extends StObject {
     
     /** The data received, with a maxium size of bufferSize. */
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
     /** The socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object OnReceiveEventData {
     
@@ -288,31 +281,30 @@ object bluetoothSocket {
     }
   }
   
-  @js.native
   trait SocketInfo extends StObject {
     
     /**
       * If the underlying socket is connected,
       * contains the Bluetooth address of the device it is connected to.
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /**
       * The size of the buffer used to receive data.
       * If no buffer size has been specified explictly,
       * the value is not provided.
       */
-    var bufferSize: js.UndefOr[integer] = js.native
+    var bufferSize: js.UndefOr[integer] = js.undefined
     
     /**
       * Flag indicating whether the socket is connected to a remote peer.
       */
-    var connected: Boolean = js.native
+    var connected: Boolean
     
     /**
       * Application-defined string associated with the socket.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Flag indicating whether a connected socket
@@ -322,7 +314,7 @@ object bluetoothSocket {
       * event or queued up in the listen queue backlog.
       * See setPaused. The default value is 'false'.
       */
-    var paused: Boolean = js.native
+    var paused: Boolean
     
     /**
       * Flag indicating if the socket remains
@@ -330,12 +322,12 @@ object bluetoothSocket {
       * is unloaded (see SocketProperties.persistent).
       * The default value is 'false'.
       */
-    var persistent: Boolean = js.native
+    var persistent: Boolean
     
     /**
       * The socket identifier.
       * */
-    var socketId: integer = js.native
+    var socketId: integer
     
     /**
       * If the underlying socket is connected,
@@ -345,7 +337,7 @@ object bluetoothSocket {
       * contains information about the service
       * UUID it is listening on.
       */
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object SocketInfo {
     
@@ -396,7 +388,6 @@ object bluetoothSocket {
     }
   }
   
-  @js.native
   trait SocketProperties extends StObject {
     
     /**
@@ -404,10 +395,10 @@ object bluetoothSocket {
       * @description
       * The size of the buffer used to receive data.
       * */
-    var bufferSize: js.UndefOr[integer] = js.native
+    var bufferSize: js.UndefOr[integer] = js.undefined
     
     /** An application-defined string associated with the socket. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Flag indicating whether the socket is left open when
@@ -416,7 +407,7 @@ object bluetoothSocket {
       * When the application is loaded, any sockets previously
       * opened with persistent=true can be fetched with $ref:getSockets.
       */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object SocketProperties {
     

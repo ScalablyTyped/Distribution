@@ -3,7 +3,6 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "ReflectionObject")
@@ -48,7 +47,7 @@ abstract class ReflectionObject () extends StObject {
   var parent: Namespace | Null = js.native
   
   /** Parsed Options. */
-  var parsedOptions: js.UndefOr[StringDictionary[js.Array[_]]] = js.native
+  var parsedOptions: js.UndefOr[StringDictionary[js.Array[js.Any]]] = js.native
   
   /**
     * Resolves this objects type references.

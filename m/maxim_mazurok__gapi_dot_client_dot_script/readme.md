@@ -10,9 +10,9 @@ TypeScript typings for Apps Script API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.script |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 38 |
+| # releases         | 11 |
+| # dependents       | 1 |
+| # downloads        | 1092 |
 | # stars            | 0 |
 
 ## Links

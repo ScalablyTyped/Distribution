@@ -2,32 +2,32 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.ScriptUtility")
 @js.native
 class ScriptUtility ()
-  extends typings.sharepoint.SP.ScriptUtility
+  extends StObject
+     with typings.sharepoint.SP.ScriptUtility
 object ScriptUtility {
   
-  /* static member */
-  @JSGlobal("SP.ScriptUtility.isNullOrEmptyString")
+  @JSGlobal("SP.ScriptUtility")
   @js.native
-  def isNullOrEmptyString(str: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("SP.ScriptUtility.isNullOrUndefined")
-  @js.native
-  def isNullOrUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNullOrEmptyString(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrEmptyString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptUtility.isUndefined")
-  @js.native
-  def isUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNullOrUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptUtility.truncateToInt")
-  @js.native
-  def truncateToInt(n: Double): Double = js.native
+  @scala.inline
+  def isUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /* static member */
+  @scala.inline
+  def truncateToInt(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateToInt")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

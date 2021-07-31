@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of inserting an inline image.
   */
-@js.native
 trait SchemaInsertInlineImageResponse extends StObject {
   
   /**
     * The ID of the created InlineObject.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaInsertInlineImageResponse {
   

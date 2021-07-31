@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollNumberMod extends Shortcut {
@@ -15,26 +14,25 @@ object scrollNumberMod extends Shortcut {
   @js.native
   val default: FC[ScrollNumberProps] = js.native
   
-  @js.native
   trait ScrollNumberProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var count: js.UndefOr[String | Double | Null] = js.native
+    var count: js.UndefOr[String | Double | Null] = js.undefined
     
-    var onAnimated: js.UndefOr[js.Function] = js.native
+    var onAnimated: js.UndefOr[js.Function] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var show: Boolean = js.native
+    var show: Boolean
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String | Double | Null] = js.native
+    var title: js.UndefOr[String | Double | Null] = js.undefined
   }
   object ScrollNumberProps {
     
@@ -106,12 +104,11 @@ object scrollNumberMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ScrollNumberState extends StObject {
     
-    var animateStarted: js.UndefOr[Boolean] = js.native
+    var animateStarted: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[String | Double | Null] = js.native
+    var count: js.UndefOr[String | Double | Null] = js.undefined
   }
   object ScrollNumberState {
     

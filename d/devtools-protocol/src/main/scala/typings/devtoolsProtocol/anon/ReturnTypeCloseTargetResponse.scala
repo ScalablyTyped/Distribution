@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Target.CloseTargetRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.CloseTargetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCloseTargetResponse extends StObject {
   
-  var paramsType: js.Array[CloseTargetRequest] = js.native
+  var paramsType: js.Array[CloseTargetRequest]
   
-  var returnType: CloseTargetResponse = js.native
+  var returnType: CloseTargetResponse
 }
 object ReturnTypeCloseTargetResponse {
   

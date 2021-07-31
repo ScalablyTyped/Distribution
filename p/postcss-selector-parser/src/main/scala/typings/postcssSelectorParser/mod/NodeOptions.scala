@@ -3,19 +3,17 @@ package typings.postcssSelectorParser.mod
 import typings.postcssSelectorParser.anon.PartialSpaces
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeOptions[Value] extends StObject {
   
-  var source: js.UndefOr[NodeSource] = js.native
+  var source: js.UndefOr[NodeSource] = js.undefined
   
-  var sourceIndex: js.UndefOr[Double] = js.native
+  var sourceIndex: js.UndefOr[Double] = js.undefined
   
-  var spaces: js.UndefOr[PartialSpaces] = js.native
+  var spaces: js.UndefOr[PartialSpaces] = js.undefined
   
-  var value: Value = js.native
+  var value: Value
 }
 object NodeOptions {
   
@@ -26,7 +24,7 @@ object NodeOptions {
   }
   
   @scala.inline
-  implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[_], Value] (val x: Self with NodeOptions[Value]) extends AnyVal {
+  implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[?], Value] (val x: Self & NodeOptions[Value]) extends AnyVal {
     
     @scala.inline
     def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])

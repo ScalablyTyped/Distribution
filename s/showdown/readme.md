@@ -10,9 +10,9 @@ A Markdown to HTML converter written in Javascript
 | ------------------ | :-------------: |
 | Full name          | showdown |
 | Keywords           | markdown, converter |
-| # releases         | 4 |
-| # dependents       | 618 |
-| # downloads        | 11666156 |
+| # releases         | 2 |
+| # dependents       | 681 |
+| # downloads        | 14334061 |
 | # stars            | 30 |
 
 ## Links

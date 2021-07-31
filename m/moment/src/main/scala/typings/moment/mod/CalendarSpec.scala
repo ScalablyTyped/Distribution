@@ -3,25 +3,24 @@ package typings.moment.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarSpec
-  extends // any additional properties might be used with moment.calendarFormat
+  extends StObject
+     with // any additional properties might be used with moment.calendarFormat
 /* x */ StringDictionary[CalendarSpecVal | Unit] {
   
-  var lastDay: js.UndefOr[CalendarSpecVal] = js.native
+  var lastDay: js.UndefOr[CalendarSpecVal] = js.undefined
   
-  var lastWeek: js.UndefOr[CalendarSpecVal] = js.native
+  var lastWeek: js.UndefOr[CalendarSpecVal] = js.undefined
   
-  var nextDay: js.UndefOr[CalendarSpecVal] = js.native
+  var nextDay: js.UndefOr[CalendarSpecVal] = js.undefined
   
-  var nextWeek: js.UndefOr[CalendarSpecVal] = js.native
+  var nextWeek: js.UndefOr[CalendarSpecVal] = js.undefined
   
-  var sameDay: js.UndefOr[CalendarSpecVal] = js.native
+  var sameDay: js.UndefOr[CalendarSpecVal] = js.undefined
   
-  var sameElse: js.UndefOr[CalendarSpecVal] = js.native
+  var sameElse: js.UndefOr[CalendarSpecVal] = js.undefined
 }
 object CalendarSpec {
   

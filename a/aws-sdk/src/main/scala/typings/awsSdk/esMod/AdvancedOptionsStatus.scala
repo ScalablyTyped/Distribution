@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvancedOptionsStatus extends StObject {
   
   /**
     *  Specifies the status of advanced options for the specified Elasticsearch domain.
     */
-  var Options: AdvancedOptions = js.native
+  var Options: AdvancedOptions
   
   /**
     *  Specifies the status of OptionStatus for advanced options for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object AdvancedOptionsStatus {
   

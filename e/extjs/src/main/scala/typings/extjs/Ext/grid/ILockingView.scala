@@ -3,14 +3,14 @@ package typings.extjs.Ext.grid
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILockingView extends IObservable {
+trait ILockingView
+  extends StObject
+     with IObservable {
   
   /** [Property] (Boolean) */
-  var isLockingView: js.UndefOr[Boolean] = js.native
+  var isLockingView: js.UndefOr[Boolean] = js.undefined
 }
 object ILockingView {
   

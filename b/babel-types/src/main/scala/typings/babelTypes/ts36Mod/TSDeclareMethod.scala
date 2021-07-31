@@ -9,220 +9,45 @@ import typings.babelTypes.babelTypesStrings.public
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TSDeclareMethod extends Node {
+trait TSDeclareMethod
+  extends StObject
+     with Node {
   
-  var `abstract`: Boolean | Null = js.native
+  var `abstract`: Boolean | Null
   
-  var access: public | `private` | `protected` | Null = js.native
+  var access: public | `private` | `protected` | Null
   
-  var accessibility: public | `private` | `protected` | Null = js.native
+  var accessibility: public | `private` | `protected` | Null
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var kind: get | set | method | constructor = js.native
+  var kind: get | set | method | constructor
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var params: js.Array[LVal] = js.native
+  var params: js.Array[LVal]
   
-  var returnType: TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null = js.native
+  var returnType: TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null
   
-  var static: Boolean | Null = js.native
+  var static: Boolean | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_TSDeclareMethod: typings.babelTypes.babelTypesStrings.TSDeclareMethod = js.native
+  var type_TSDeclareMethod: typings.babelTypes.babelTypesStrings.TSDeclareMethod
 }
 object TSDeclareMethod {
   
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Null,
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Null,
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Null,
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Null,
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Noop_,
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Noop_,
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Noop_,
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: Noop_,
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: TypeParameterDeclaration_,
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: TypeParameterDeclaration_,
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: TypeParameterDeclaration_,
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.UndefOr[scala.Nothing],
-    key: Expression,
-    typeParameters: TypeParameterDeclaration_,
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.Array[Decorator_],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.Array[Decorator_],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.Array[Decorator_],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: js.Array[Decorator_],
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
   @JSImport("babel-types/ts3.6", "TSDeclareMethod")
   @js.native
   def apply(decorators: js.Array[Decorator_], key: Expression, typeParameters: Null, params: js.Array[LVal]): TSDeclareMethod = js.native
@@ -250,6 +75,36 @@ object TSDeclareMethod {
     decorators: js.Array[Decorator_],
     key: Expression,
     typeParameters: Null,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: js.Array[Decorator_], key: Expression, typeParameters: Unit, params: js.Array[LVal]): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: js.Array[Decorator_],
+    key: Expression,
+    typeParameters: Unit,
+    params: js.Array[LVal],
+    returnType: Noop_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: js.Array[Decorator_],
+    key: Expression,
+    typeParameters: Unit,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: js.Array[Decorator_],
+    key: Expression,
+    typeParameters: Unit,
     params: js.Array[LVal],
     returnType: TypeAnnotation_
   ): TSDeclareMethod = js.native
@@ -320,41 +175,6 @@ object TSDeclareMethod {
   ): TSDeclareMethod = js.native
   @JSImport("babel-types/ts3.6", "TSDeclareMethod")
   @js.native
-  def apply(
-    decorators: Null,
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal]
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: Null,
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: Noop_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: Null,
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TSTypeAnnotation
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
-  def apply(
-    decorators: Null,
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[LVal],
-    returnType: TypeAnnotation_
-  ): TSDeclareMethod = js.native
-  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
-  @js.native
   def apply(decorators: Null, key: Expression, typeParameters: Null, params: js.Array[LVal]): TSDeclareMethod = js.native
   @JSImport("babel-types/ts3.6", "TSDeclareMethod")
   @js.native
@@ -374,6 +194,30 @@ object TSDeclareMethod {
     decorators: Null,
     key: Expression,
     typeParameters: Null,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Null, key: Expression, typeParameters: Unit, params: js.Array[LVal]): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Null, key: Expression, typeParameters: Unit, params: js.Array[LVal], returnType: Noop_): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Null,
+    key: Expression,
+    typeParameters: Unit,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Null,
+    key: Expression,
+    typeParameters: Unit,
     params: js.Array[LVal],
     returnType: TypeAnnotation_
   ): TSDeclareMethod = js.native
@@ -437,6 +281,119 @@ object TSDeclareMethod {
   @js.native
   def apply(
     decorators: Null,
+    key: Expression,
+    typeParameters: TypeParameterDeclaration_,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Unit, key: Expression, typeParameters: Null, params: js.Array[LVal]): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Unit, key: Expression, typeParameters: Null, params: js.Array[LVal], returnType: Noop_): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Null,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Null,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Unit, key: Expression, typeParameters: Unit, params: js.Array[LVal]): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Unit, key: Expression, typeParameters: Unit, params: js.Array[LVal], returnType: Noop_): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Unit,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Unit,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(decorators: Unit, key: Expression, typeParameters: Noop_, params: js.Array[LVal]): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Noop_,
+    params: js.Array[LVal],
+    returnType: Noop_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Noop_,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: Noop_,
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: TypeParameterDeclaration_,
+    params: js.Array[LVal]
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: TypeParameterDeclaration_,
+    params: js.Array[LVal],
+    returnType: Noop_
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
+    key: Expression,
+    typeParameters: TypeParameterDeclaration_,
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  @JSImport("babel-types/ts3.6", "TSDeclareMethod")
+  @js.native
+  def apply(
+    decorators: Unit,
     key: Expression,
     typeParameters: TypeParameterDeclaration_,
     params: js.Array[LVal],

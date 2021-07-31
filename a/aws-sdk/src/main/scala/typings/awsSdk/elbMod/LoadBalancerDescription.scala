@@ -2,91 +2,89 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerDescription extends StObject {
   
   /**
     * The Availability Zones for the load balancer.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbMod.AvailabilityZones] = js.undefined
   
   /**
     * Information about your EC2 instances.
     */
-  var BackendServerDescriptions: js.UndefOr[typings.awsSdk.elbMod.BackendServerDescriptions] = js.native
+  var BackendServerDescriptions: js.UndefOr[typings.awsSdk.elbMod.BackendServerDescriptions] = js.undefined
   
   /**
     * The DNS name of the load balancer. For more information, see Configure a Custom Domain Name in the Classic Load Balancers Guide.
     */
-  var CanonicalHostedZoneName: js.UndefOr[DNSName] = js.native
+  var CanonicalHostedZoneName: js.UndefOr[DNSName] = js.undefined
   
   /**
     * The ID of the Amazon Route 53 hosted zone for the load balancer.
     */
-  var CanonicalHostedZoneNameID: js.UndefOr[DNSName] = js.native
+  var CanonicalHostedZoneNameID: js.UndefOr[DNSName] = js.undefined
   
   /**
     * The date and time the load balancer was created.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.elbMod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.elbMod.CreatedTime] = js.undefined
   
   /**
     * The DNS name of the load balancer.
     */
-  var DNSName: js.UndefOr[typings.awsSdk.elbMod.DNSName] = js.native
+  var DNSName: js.UndefOr[typings.awsSdk.elbMod.DNSName] = js.undefined
   
   /**
     * Information about the health checks conducted on the load balancer.
     */
-  var HealthCheck: js.UndefOr[typings.awsSdk.elbMod.HealthCheck] = js.native
+  var HealthCheck: js.UndefOr[typings.awsSdk.elbMod.HealthCheck] = js.undefined
   
   /**
     * The IDs of the instances for the load balancer.
     */
-  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.undefined
   
   /**
     * The listeners for the load balancer.
     */
-  var ListenerDescriptions: js.UndefOr[typings.awsSdk.elbMod.ListenerDescriptions] = js.native
+  var ListenerDescriptions: js.UndefOr[typings.awsSdk.elbMod.ListenerDescriptions] = js.undefined
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: js.UndefOr[AccessPointName] = js.native
+  var LoadBalancerName: js.UndefOr[AccessPointName] = js.undefined
   
   /**
     * The policies defined for the load balancer.
     */
-  var Policies: js.UndefOr[typings.awsSdk.elbMod.Policies] = js.native
+  var Policies: js.UndefOr[typings.awsSdk.elbMod.Policies] = js.undefined
   
   /**
     * The type of load balancer. Valid only for load balancers in a VPC. If Scheme is internet-facing, the load balancer has a public DNS name that resolves to a public IP address. If Scheme is internal, the load balancer has a public DNS name that resolves to a private IP address.
     */
-  var Scheme: js.UndefOr[LoadBalancerScheme] = js.native
+  var Scheme: js.UndefOr[LoadBalancerScheme] = js.undefined
   
   /**
     * The security groups for the load balancer. Valid only for load balancers in a VPC.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.elbMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.elbMod.SecurityGroups] = js.undefined
   
   /**
     * The security group for the load balancer, which you can use as part of your inbound rules for your registered instances. To only allow traffic from load balancers, add a security group rule that specifies this source security group as the inbound source.
     */
-  var SourceSecurityGroup: js.UndefOr[typings.awsSdk.elbMod.SourceSecurityGroup] = js.native
+  var SourceSecurityGroup: js.UndefOr[typings.awsSdk.elbMod.SourceSecurityGroup] = js.undefined
   
   /**
     * The IDs of the subnets for the load balancer.
     */
-  var Subnets: js.UndefOr[typings.awsSdk.elbMod.Subnets] = js.native
+  var Subnets: js.UndefOr[typings.awsSdk.elbMod.Subnets] = js.undefined
   
   /**
     * The ID of the VPC for the load balancer.
     */
-  var VPCId: js.UndefOr[typings.awsSdk.elbMod.VPCId] = js.native
+  var VPCId: js.UndefOr[typings.awsSdk.elbMod.VPCId] = js.undefined
 }
 object LoadBalancerDescription {
   

@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGPathSegArcAbs extends StObject {
   
   @JSName("MSHTML.ISVGPathSegArcAbs_typekey")
-  var MSHTMLDotISVGPathSegArcAbs_typekey: ISVGPathSegArcAbs = js.native
+  var MSHTMLDotISVGPathSegArcAbs_typekey: ISVGPathSegArcAbs
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var largeArcFlag: Boolean = js.native
+  var largeArcFlag: Boolean
   
-  var r1: Double = js.native
+  var r1: Double
   
-  var r2: Double = js.native
+  var r2: Double
   
-  var sweepFlag: Boolean = js.native
+  var sweepFlag: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ISVGPathSegArcAbs {
   

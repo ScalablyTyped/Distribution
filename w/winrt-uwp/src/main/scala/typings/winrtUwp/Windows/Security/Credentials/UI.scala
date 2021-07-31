@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.Security.Credentials
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to use credentials without the complexity of the underlying operations, providing a uniform experience for credentials that reduces credential prompting to an absolute minimum. This namespace collects various types of credentials from users, stores them on the local computer, and presents them to web services and proxies by using existing authentication models. */
@@ -18,31 +17,45 @@ object UI {
     
     /** The authentication protocol is basic. Credentials are returned to the caller as plaintext. */
     @js.native
-    sealed trait basic extends AuthenticationProtocol
+    sealed trait basic
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is for remote access using the Credential Security Support Provider (CredSSP) protocol. */
     @js.native
-    sealed trait credSsp extends AuthenticationProtocol
+    sealed trait credSsp
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is anything other than the previous ones. Credentials are returned to the caller as plaintext. */
     @js.native
-    sealed trait custom extends AuthenticationProtocol
+    sealed trait custom
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is digest. Credentials are returned to the caller as plaintext. */
     @js.native
-    sealed trait digest extends AuthenticationProtocol
+    sealed trait digest
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is Kerberos. Credentials are transformed before being returned to the caller. */
     @js.native
-    sealed trait kerberos extends AuthenticationProtocol
+    sealed trait kerberos
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is negotiate, including negotiate extensions. Credentials are transformed before being returned to the caller. */
     @js.native
-    sealed trait negotiate extends AuthenticationProtocol
+    sealed trait negotiate
+      extends StObject
+         with AuthenticationProtocol
     
     /** The authentication protocol is NTLM. Credentials are transformed before being returned to the caller. */
     @js.native
-    sealed trait ntlm extends AuthenticationProtocol
+    sealed trait ntlm
+      extends StObject
+         with AuthenticationProtocol
   }
   
   @js.native
@@ -54,15 +67,21 @@ object UI {
     
     /** The "Save credentials?" dialog box is not displayed at all. */
     @js.native
-    sealed trait hidden extends CredentialSaveOption
+    sealed trait hidden
+      extends StObject
+         with CredentialSaveOption
     
     /** The "Save credentials?" dialog box is selected, indicating that the user wants their credentials saved. */
     @js.native
-    sealed trait selected extends CredentialSaveOption
+    sealed trait selected
+      extends StObject
+         with CredentialSaveOption
     
     /** The "Save credentials?" dialog box is not selected, indicating that the user doesn't want their credentials saved. */
     @js.native
-    sealed trait unselected extends CredentialSaveOption
+    sealed trait unselected
+      extends StObject
+         with CredentialSaveOption
   }
   
   @js.native
@@ -74,31 +93,45 @@ object UI {
     
     /** The verification operation was canceled. */
     @js.native
-    sealed trait canceled extends UserConsentVerificationResult
+    sealed trait canceled
+      extends StObject
+         with UserConsentVerificationResult
     
     /** The biometric verifier device is performing an operation and is unavailable. */
     @js.native
-    sealed trait deviceBusy extends UserConsentVerificationResult
+    sealed trait deviceBusy
+      extends StObject
+         with UserConsentVerificationResult
     
     /** There is no biometric verifier device available. */
     @js.native
-    sealed trait deviceNotPresent extends UserConsentVerificationResult
+    sealed trait deviceNotPresent
+      extends StObject
+         with UserConsentVerificationResult
     
     /** Group policy has disabled the biometric verifier device. */
     @js.native
-    sealed trait disabledByPolicy extends UserConsentVerificationResult
+    sealed trait disabledByPolicy
+      extends StObject
+         with UserConsentVerificationResult
     
     /** A biometric verifier device is not configured for this user. */
     @js.native
-    sealed trait notConfiguredForUser extends UserConsentVerificationResult
+    sealed trait notConfiguredForUser
+      extends StObject
+         with UserConsentVerificationResult
     
     /** After 10 attempts, the original verification request and all subsequent attempts at the same verification were not verified. */
     @js.native
-    sealed trait retriesExhausted extends UserConsentVerificationResult
+    sealed trait retriesExhausted
+      extends StObject
+         with UserConsentVerificationResult
     
     /** The fingerprint was verified. */
     @js.native
-    sealed trait verified extends UserConsentVerificationResult
+    sealed trait verified
+      extends StObject
+         with UserConsentVerificationResult
   }
   
   @js.native
@@ -110,62 +143,70 @@ object UI {
     
     /** A biometric verifier device is available. */
     @js.native
-    sealed trait available extends UserConsentVerifierAvailability
+    sealed trait available
+      extends StObject
+         with UserConsentVerifierAvailability
     
     /** The biometric verifier device is performing an operation and is unavailable. */
     @js.native
-    sealed trait deviceBusy extends UserConsentVerifierAvailability
+    sealed trait deviceBusy
+      extends StObject
+         with UserConsentVerifierAvailability
     
     /** There is no biometric verifier device available. */
     @js.native
-    sealed trait deviceNotPresent extends UserConsentVerifierAvailability
+    sealed trait deviceNotPresent
+      extends StObject
+         with UserConsentVerifierAvailability
     
     /** Group policy has disabled the biometric verifier device. */
     @js.native
-    sealed trait disabledByPolicy extends UserConsentVerifierAvailability
+    sealed trait disabledByPolicy
+      extends StObject
+         with UserConsentVerifierAvailability
     
     /** A biometric verifier device is not configured for this user. */
     @js.native
-    sealed trait notConfiguredForUser extends UserConsentVerifierAvailability
+    sealed trait notConfiguredForUser
+      extends StObject
+         with UserConsentVerifierAvailability
   }
   
   /** Creates an asynchronous object that displays a dialog box of credentials to the user and collects the user's response. */
-  @js.native
   trait CredentialPicker extends StObject
   
   /** Controls the appearance and behavior of a credential prompt. */
-  @js.native
   trait CredentialPickerOptions extends StObject {
     
     /** Gets or sets the option of whether the dialog box is displayed. */
-    var alwaysDisplayDialog: Boolean = js.native
+    var alwaysDisplayDialog: Boolean
     
     /** Gets or sets the authentication protocol. */
-    var authenticationProtocol: AuthenticationProtocol = js.native
+    var authenticationProtocol: AuthenticationProtocol
     
     /** Gets or sets whether the caller wants to save the credentials. */
-    var callerSavesCredential: Boolean = js.native
+    var callerSavesCredential: Boolean
     
     /** Gets or sets the caption text that is displayed to the user. */
-    var caption: String = js.native
+    var caption: String
     
     /** Gets or sets the option on saving credentials. */
-    var credentialSaveOption: CredentialSaveOption = js.native
+    var credentialSaveOption: CredentialSaveOption
     
     /** Gets or sets whether the authentication protocol is custom rather than a standard authentication protocol. */
-    var customAuthenticationProtocol: String = js.native
+    var customAuthenticationProtocol: String
     
     /** Gets or sets the error code. */
-    var errorCode: Double = js.native
+    var errorCode: Double
     
     /** Gets or sets the body of text that displays to the user. */
-    var message: String = js.native
+    var message: String
     
     /** Gets or sets whether to fill dialog box fields with previous credentials. */
-    var previousCredential: IBuffer = js.native
+    var previousCredential: IBuffer
     
     /** Gets or sets the name of the target computer. */
-    var targetName: String = js.native
+    var targetName: String
   }
   object CredentialPickerOptions {
     
@@ -222,29 +263,28 @@ object UI {
   }
   
   /** Describes the results of the dialog box operation. */
-  @js.native
   trait CredentialPickerResults extends StObject {
     
     /** Gets the opaque credential. */
-    var credential: IBuffer = js.native
+    var credential: IBuffer
     
     /** Gets the domain name portion of the unpacked credential. */
-    var credentialDomainName: String = js.native
+    var credentialDomainName: String
     
     /** Gets the password portion of the unpacked credential. */
-    var credentialPassword: String = js.native
+    var credentialPassword: String
     
     /** Gets the state of the "Save Credentials" check box. */
-    var credentialSaveOption: CredentialSaveOption = js.native
+    var credentialSaveOption: CredentialSaveOption
     
     /** Gets the status of the credential save operation. */
-    var credentialSaved: Boolean = js.native
+    var credentialSaved: Boolean
     
     /** Gets the user name of the unpacked credential. */
-    var credentialUserName: String = js.native
+    var credentialUserName: String
     
     /** Gets the value of the error code. */
-    var errorCode: Double = js.native
+    var errorCode: Double
   }
   object CredentialPickerResults {
     
@@ -289,6 +329,5 @@ object UI {
   }
   
   /** Checks for availability of a biometric (fingerprint) verifier device and performs a biometric verification. */
-  @js.native
   trait UserConsentVerifier extends StObject
 }

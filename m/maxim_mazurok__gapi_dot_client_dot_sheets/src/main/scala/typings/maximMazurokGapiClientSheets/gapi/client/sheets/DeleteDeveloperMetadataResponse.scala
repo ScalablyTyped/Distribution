@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDeveloperMetadataResponse extends StObject {
   
   /** The metadata that was deleted. */
-  var deletedDeveloperMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+  var deletedDeveloperMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
 }
 object DeleteDeveloperMetadataResponse {
   

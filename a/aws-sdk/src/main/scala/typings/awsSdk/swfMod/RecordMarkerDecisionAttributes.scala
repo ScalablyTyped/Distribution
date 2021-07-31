@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordMarkerDecisionAttributes extends StObject {
   
   /**
     *  The details of the marker.
     */
-  var details: js.UndefOr[Data] = js.native
+  var details: js.UndefOr[Data] = js.undefined
   
   /**
     *  The name of the marker.
     */
-  var markerName: MarkerName = js.native
+  var markerName: MarkerName
 }
 object RecordMarkerDecisionAttributes {
   

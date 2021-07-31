@@ -6,37 +6,35 @@ import typings.oembedParser.oembedParserStrings.rich
 import typings.oembedParser.oembedParserStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("oembed-parser", "extract")
+  @JSImport("oembed-parser", JSImport.Namespace)
   @js.native
-  def extract(url: String): js.Promise[OembedData] = js.native
-  @JSImport("oembed-parser", "extract")
-  @js.native
-  def extract(url: String, params: js.Any): js.Promise[OembedData] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("oembed-parser", "hasProvider")
-  @js.native
-  def hasProvider(url: String): Boolean = js.native
+  @scala.inline
+  def extract(url: String): js.Promise[OembedData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OembedData]]
+  @scala.inline
+  def extract(url: String, params: js.Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
   
-  @JSImport("oembed-parser", "setProviderList")
-  @js.native
-  def setProviderList(providers: js.Array[Provider]): Unit = js.native
+  @scala.inline
+  def hasProvider(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProvider")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def setProviderList(providers: js.Array[Provider]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProviderList")(providers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Endpoint extends StObject {
     
     // "json" "xml"
-    var discovery: js.UndefOr[Boolean] = js.native
+    var discovery: js.UndefOr[Boolean] = js.undefined
     
-    var formats: js.UndefOr[js.Array[String]] = js.native
+    var formats: js.UndefOr[js.Array[String]] = js.undefined
     
-    var schemes: js.UndefOr[js.Array[String]] = js.native
+    var schemes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Endpoint {
     
@@ -78,18 +76,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait LinkTypeData extends OembedData {
+  trait LinkTypeData
+    extends StObject
+       with OembedData {
     
     @JSName("type")
-    val type_LinkTypeData: link = js.native
+    val type_LinkTypeData: link
   }
   object LinkTypeData {
     
     @scala.inline
-    def apply(`type`: link, version: String): LinkTypeData = {
+    def apply(version: String): LinkTypeData = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[LinkTypeData]
     }
     
@@ -101,49 +100,48 @@ object mod {
     }
   }
   
-  @js.native
   trait OembedData extends StObject {
     
     /** The name of the author/owner of the resource. */
-    var author_name: js.UndefOr[String] = js.native
+    var author_name: js.UndefOr[String] = js.undefined
     
     /** A URL for the author/owner of the resource. */
-    var author_url: js.UndefOr[String] = js.native
+    var author_url: js.UndefOr[String] = js.undefined
     
     /** The suggested cache lifetime for this resource, in seconds. Consumers may choose to use this value or not. */
-    var cache_age: js.UndefOr[String] = js.native
+    var cache_age: js.UndefOr[String] = js.undefined
     
     /** The name of the resource provider. */
-    var provider_name: js.UndefOr[String] = js.native
+    var provider_name: js.UndefOr[String] = js.undefined
     
     /** The url of the resource provider. */
-    var provider_url: js.UndefOr[String] = js.native
+    var provider_url: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the optional thumbnail.
       * If this parameter is present, thumbnail_url and thumbnail_width must also be present.
       */
-    var thumbnail_height: js.UndefOr[Double] = js.native
+    var thumbnail_height: js.UndefOr[Double] = js.undefined
     
     /**
       * A URL to a thumbnail image representing the resource.
       * The thumbnail must respect any maxwidth and maxheight parameters.
       * If this parameter is present, thumbnail_width and thumbnail_height must also be present.
       */
-    var thumbnail_url: js.UndefOr[String] = js.native
+    var thumbnail_url: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the optional thumbnail.
       * If this parameter is present, thumbnail_url and thumbnail_height must also be present.
       */
-    var thumbnail_width: js.UndefOr[Double] = js.native
+    var thumbnail_width: js.UndefOr[Double] = js.undefined
     
     /** A text title, describing the resource. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: rich | video | photo | link = js.native
+    var `type`: rich | video | photo | link
     
-    var version: String = js.native
+    var version: String
   }
   object OembedData {
     
@@ -219,30 +217,31 @@ object mod {
     }
   }
   
-  @js.native
-  trait PhotoTypeData extends OembedData {
+  trait PhotoTypeData
+    extends StObject
+       with OembedData {
     
     /** The height in pixels of the image specified in the url parameter. */
-    var height: Double = js.native
+    var height: Double
     
     @JSName("type")
-    val type_PhotoTypeData: photo = js.native
+    val type_PhotoTypeData: photo
     
     /**
       * The source URL of the image. Consumers should be able to insert this URL into an <img> element.
       * Only HTTP and HTTPS URLs are valid.
       */
-    var url: String = js.native
+    var url: String
     
     /** The width in pixels of the image specified in the url parameter. */
-    var width: Double = js.native
+    var width: Double
   }
   object PhotoTypeData {
     
     @scala.inline
-    def apply(height: Double, `type`: photo, url: String, version: String, width: Double): PhotoTypeData = {
+    def apply(height: Double, url: String, version: String, width: Double): PhotoTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("photo")
       __obj.asInstanceOf[PhotoTypeData]
     }
     
@@ -263,14 +262,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
-    var endpoints: js.Array[Endpoint] = js.native
+    var endpoints: js.Array[Endpoint]
     
-    var provider_name: String = js.native
+    var provider_name: String
     
-    var provider_url: String = js.native
+    var provider_url: String
   }
   object Provider {
     
@@ -297,11 +295,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait RichTypeData extends OembedData {
+  trait RichTypeData
+    extends StObject
+       with OembedData {
     
     /** The height in pixels required to display the HTML. */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The HTML required to display the resource.
@@ -309,20 +308,20 @@ object mod {
       * Consumers may wish to load the HTML in an off-domain iframe to avoid XSS vulnerabilities.
       * The markup should be valid XHTML 1.0 Basic.
       */
-    var html: String = js.native
+    var html: String
     
     @JSName("type")
-    val type_RichTypeData: rich = js.native
+    val type_RichTypeData: rich
     
     /** The width in pixels required to display the HTML. */
-    var width: Double = js.native
+    var width: Double
   }
   object RichTypeData {
     
     @scala.inline
-    def apply(height: Double, html: String, `type`: rich, version: String, width: Double): RichTypeData = {
+    def apply(height: Double, html: String, version: String, width: Double): RichTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("rich")
       __obj.asInstanceOf[RichTypeData]
     }
     
@@ -343,31 +342,32 @@ object mod {
     }
   }
   
-  @js.native
-  trait VideoTypeData extends OembedData {
+  trait VideoTypeData
+    extends StObject
+       with OembedData {
     
     /** The height in pixels required to display the HTML. */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The HTML required to embed a video player.
       * The HTML should have no padding or margins.
       * Consumers may wish to load the HTML in an off-domain iframe to avoid XSS vulnerabilities.
       */
-    var html: String = js.native
+    var html: String
     
     @JSName("type")
-    val type_VideoTypeData: video = js.native
+    val type_VideoTypeData: video
     
     /** The width in pixels required to display the HTML. */
-    var width: Double = js.native
+    var width: Double
   }
   object VideoTypeData {
     
     @scala.inline
-    def apply(height: Double, html: String, `type`: video, version: String, width: Double): VideoTypeData = {
+    def apply(height: Double, html: String, version: String, width: Double): VideoTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("video")
       __obj.asInstanceOf[VideoTypeData]
     }
     

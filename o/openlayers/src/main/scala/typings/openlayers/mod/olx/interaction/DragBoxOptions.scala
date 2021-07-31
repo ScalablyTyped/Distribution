@@ -6,19 +6,17 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.Pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragBoxOptions extends StObject {
   
-  var boxEndCondition: js.UndefOr[DragBoxEndConditionType] = js.native
+  var boxEndCondition: js.UndefOr[DragBoxEndConditionType] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var condition: js.UndefOr[EventsConditionType] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var minArea: js.UndefOr[Double] = js.native
+  var minArea: js.UndefOr[Double] = js.undefined
 }
 object DragBoxOptions {
   

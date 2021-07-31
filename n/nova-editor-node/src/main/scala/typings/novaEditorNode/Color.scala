@@ -2,15 +2,13 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var components: ColorComponents = js.native
+  var components: ColorComponents
   
-  var format: ColorFormat = js.native
+  var format: ColorFormat
 }
 object Color {
   

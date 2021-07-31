@@ -2,42 +2,40 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object to represent a person.
   */
-@js.native
 trait SchemaPerson extends StObject {
   
   /**
     * The person&#39;s email addresses
     */
-  var emailAddresses: js.UndefOr[js.Array[SchemaEmailAddress]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[SchemaEmailAddress]] = js.undefined
   
   /**
     * The resource name of the person to provide information about. See &lt;a
     * href=&quot;https://developers.google.com/people/api/rest/v1/people/get&quot;&gt;
     * People.get&lt;/a&gt; from Google People API.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Obfuscated ID of a person.
     */
-  var obfuscatedId: js.UndefOr[String] = js.native
+  var obfuscatedId: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s name
     */
-  var personNames: js.UndefOr[js.Array[SchemaName]] = js.native
+  var personNames: js.UndefOr[js.Array[SchemaName]] = js.undefined
   
   /**
     * A person&#39;s read-only photo. A picture shown next to the person&#39;s
     * name to help others recognize the person in search results.
     */
-  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.native
+  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.undefined
 }
 object SchemaPerson {
   

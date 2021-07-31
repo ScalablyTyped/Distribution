@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetagameConfig extends StObject {
   
   /** Current version of the metagame configuration data. When this data is updated, the version number will be increased by one. */
-  var currentVersion: js.UndefOr[Double] = js.native
+  var currentVersion: js.UndefOr[Double] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#metagameConfig`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The list of player levels. */
-  var playerLevels: js.UndefOr[js.Array[PlayerLevel]] = js.native
+  var playerLevels: js.UndefOr[js.Array[PlayerLevel]] = js.undefined
 }
 object MetagameConfig {
   

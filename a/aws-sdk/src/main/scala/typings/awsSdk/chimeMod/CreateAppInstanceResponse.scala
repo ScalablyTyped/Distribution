@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppInstanceResponse extends StObject {
   
   /**
     * The Amazon Resource Number (ARN) of the app instance.
     */
-  var AppInstanceArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
 }
 object CreateAppInstanceResponse {
   

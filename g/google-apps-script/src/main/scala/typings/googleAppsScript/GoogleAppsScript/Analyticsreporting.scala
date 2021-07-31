@@ -32,93 +32,91 @@ import typings.googleAppsScript.GoogleAppsScript.Analyticsreporting.Schema.Simpl
 import typings.googleAppsScript.GoogleAppsScript.Analyticsreporting.Schema.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analyticsreporting extends StObject {
   
-  var Reports: js.UndefOr[ReportsCollection] = js.native
+  var Reports: js.UndefOr[ReportsCollection] = js.undefined
   
-  var UserActivity: js.UndefOr[UserActivityCollection] = js.native
+  var UserActivity: js.UndefOr[UserActivityCollection] = js.undefined
   
   // Create a new instance of Cohort
-  def newCohort(): Cohort = js.native
+  def newCohort(): Cohort
   
   // Create a new instance of CohortGroup
-  def newCohortGroup(): CohortGroup = js.native
+  def newCohortGroup(): CohortGroup
   
   // Create a new instance of DateRange
-  def newDateRange(): DateRange = js.native
+  def newDateRange(): DateRange
   
   // Create a new instance of Dimension
-  def newDimension(): Dimension = js.native
+  def newDimension(): Dimension
   
   // Create a new instance of DimensionFilter
-  def newDimensionFilter(): DimensionFilter = js.native
+  def newDimensionFilter(): DimensionFilter
   
   // Create a new instance of DimensionFilterClause
-  def newDimensionFilterClause(): DimensionFilterClause = js.native
+  def newDimensionFilterClause(): DimensionFilterClause
   
   // Create a new instance of DynamicSegment
-  def newDynamicSegment(): DynamicSegment = js.native
+  def newDynamicSegment(): DynamicSegment
   
   // Create a new instance of GetReportsRequest
-  def newGetReportsRequest(): GetReportsRequest = js.native
+  def newGetReportsRequest(): GetReportsRequest
   
   // Create a new instance of Metric
-  def newMetric(): Metric = js.native
+  def newMetric(): Metric
   
   // Create a new instance of MetricFilter
-  def newMetricFilter(): MetricFilter = js.native
+  def newMetricFilter(): MetricFilter
   
   // Create a new instance of MetricFilterClause
-  def newMetricFilterClause(): MetricFilterClause = js.native
+  def newMetricFilterClause(): MetricFilterClause
   
   // Create a new instance of OrFiltersForSegment
-  def newOrFiltersForSegment(): OrFiltersForSegment = js.native
+  def newOrFiltersForSegment(): OrFiltersForSegment
   
   // Create a new instance of OrderBy
-  def newOrderBy(): OrderBy = js.native
+  def newOrderBy(): OrderBy
   
   // Create a new instance of Pivot
-  def newPivot(): Pivot = js.native
+  def newPivot(): Pivot
   
   // Create a new instance of ReportRequest
-  def newReportRequest(): ReportRequest = js.native
+  def newReportRequest(): ReportRequest
   
   // Create a new instance of SearchUserActivityRequest
-  def newSearchUserActivityRequest(): SearchUserActivityRequest = js.native
+  def newSearchUserActivityRequest(): SearchUserActivityRequest
   
   // Create a new instance of Segment
-  def newSegment(): Segment = js.native
+  def newSegment(): Segment
   
   // Create a new instance of SegmentDefinition
-  def newSegmentDefinition(): SegmentDefinition = js.native
+  def newSegmentDefinition(): SegmentDefinition
   
   // Create a new instance of SegmentDimensionFilter
-  def newSegmentDimensionFilter(): SegmentDimensionFilter = js.native
+  def newSegmentDimensionFilter(): SegmentDimensionFilter
   
   // Create a new instance of SegmentFilter
-  def newSegmentFilter(): SegmentFilter = js.native
+  def newSegmentFilter(): SegmentFilter
   
   // Create a new instance of SegmentFilterClause
-  def newSegmentFilterClause(): SegmentFilterClause = js.native
+  def newSegmentFilterClause(): SegmentFilterClause
   
   // Create a new instance of SegmentMetricFilter
-  def newSegmentMetricFilter(): SegmentMetricFilter = js.native
+  def newSegmentMetricFilter(): SegmentMetricFilter
   
   // Create a new instance of SegmentSequenceStep
-  def newSegmentSequenceStep(): SegmentSequenceStep = js.native
+  def newSegmentSequenceStep(): SegmentSequenceStep
   
   // Create a new instance of SequenceSegment
-  def newSequenceSegment(): SequenceSegment = js.native
+  def newSequenceSegment(): SequenceSegment
   
   // Create a new instance of SimpleSegment
-  def newSimpleSegment(): SimpleSegment = js.native
+  def newSimpleSegment(): SimpleSegment
   
   // Create a new instance of User
-  def newUser(): User = js.native
+  def newUser(): User
 }
 object Analyticsreporting {
   
@@ -251,11 +249,10 @@ object Analyticsreporting {
   
   object Collection {
     
-    @js.native
     trait ReportsCollection extends StObject {
       
       // Returns the Analytics data.
-      def batchGet(resource: GetReportsRequest): GetReportsResponse = js.native
+      def batchGet(resource: GetReportsRequest): GetReportsResponse
     }
     object ReportsCollection {
       
@@ -273,11 +270,10 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait UserActivityCollection extends StObject {
       
       // Returns User Activity data.
-      def search(resource: SearchUserActivityRequest): SearchUserActivityResponse = js.native
+      def search(resource: SearchUserActivityRequest): SearchUserActivityResponse
     }
     object UserActivityCollection {
       
@@ -298,38 +294,37 @@ object Analyticsreporting {
   
   object Schema {
     
-    @js.native
     trait Activity extends StObject {
       
-      var activityTime: js.UndefOr[String] = js.native
+      var activityTime: js.UndefOr[String] = js.undefined
       
-      var activityType: js.UndefOr[String] = js.native
+      var activityType: js.UndefOr[String] = js.undefined
       
-      var appview: js.UndefOr[ScreenviewData] = js.native
+      var appview: js.UndefOr[ScreenviewData] = js.undefined
       
-      var campaign: js.UndefOr[String] = js.native
+      var campaign: js.UndefOr[String] = js.undefined
       
-      var channelGrouping: js.UndefOr[String] = js.native
+      var channelGrouping: js.UndefOr[String] = js.undefined
       
-      var customDimension: js.UndefOr[js.Array[CustomDimension]] = js.native
+      var customDimension: js.UndefOr[js.Array[CustomDimension]] = js.undefined
       
-      var ecommerce: js.UndefOr[EcommerceData] = js.native
+      var ecommerce: js.UndefOr[EcommerceData] = js.undefined
       
-      var event: js.UndefOr[EventData] = js.native
+      var event: js.UndefOr[EventData] = js.undefined
       
-      var goals: js.UndefOr[GoalSetData] = js.native
+      var goals: js.UndefOr[GoalSetData] = js.undefined
       
-      var hostname: js.UndefOr[String] = js.native
+      var hostname: js.UndefOr[String] = js.undefined
       
-      var keyword: js.UndefOr[String] = js.native
+      var keyword: js.UndefOr[String] = js.undefined
       
-      var landingPagePath: js.UndefOr[String] = js.native
+      var landingPagePath: js.UndefOr[String] = js.undefined
       
-      var medium: js.UndefOr[String] = js.native
+      var medium: js.UndefOr[String] = js.undefined
       
-      var pageview: js.UndefOr[PageviewData] = js.native
+      var pageview: js.UndefOr[PageviewData] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
     }
     object Activity {
       
@@ -437,14 +432,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Cohort extends StObject {
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Cohort {
       
@@ -477,12 +471,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait CohortGroup extends StObject {
       
-      var cohorts: js.UndefOr[js.Array[Cohort]] = js.native
+      var cohorts: js.UndefOr[js.Array[Cohort]] = js.undefined
       
-      var lifetimeValue: js.UndefOr[Boolean] = js.native
+      var lifetimeValue: js.UndefOr[Boolean] = js.undefined
     }
     object CohortGroup {
       
@@ -512,12 +505,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ColumnHeader extends StObject {
       
-      var dimensions: js.UndefOr[js.Array[String]] = js.native
+      var dimensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var metricHeader: js.UndefOr[MetricHeader] = js.native
+      var metricHeader: js.UndefOr[MetricHeader] = js.undefined
     }
     object ColumnHeader {
       
@@ -547,12 +539,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait CustomDimension extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CustomDimension {
       
@@ -579,12 +570,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait DateRange extends StObject {
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object DateRange {
       
@@ -611,12 +601,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait DateRangeValues extends StObject {
       
-      var pivotValueRegions: js.UndefOr[js.Array[PivotValueRegion]] = js.native
+      var pivotValueRegions: js.UndefOr[js.Array[PivotValueRegion]] = js.undefined
       
-      var values: js.UndefOr[js.Array[String]] = js.native
+      var values: js.UndefOr[js.Array[String]] = js.undefined
     }
     object DateRangeValues {
       
@@ -649,12 +638,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Dimension extends StObject {
       
-      var histogramBuckets: js.UndefOr[js.Array[String]] = js.native
+      var histogramBuckets: js.UndefOr[js.Array[String]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Dimension {
       
@@ -684,18 +672,17 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait DimensionFilter extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var dimensionName: js.UndefOr[String] = js.native
+      var dimensionName: js.UndefOr[String] = js.undefined
       
-      var expressions: js.UndefOr[js.Array[String]] = js.native
+      var expressions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var not: js.UndefOr[Boolean] = js.native
+      var not: js.UndefOr[Boolean] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
     }
     object DimensionFilter {
       
@@ -743,12 +730,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait DimensionFilterClause extends StObject {
       
-      var filters: js.UndefOr[js.Array[DimensionFilter]] = js.native
+      var filters: js.UndefOr[js.Array[DimensionFilter]] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
     }
     object DimensionFilterClause {
       
@@ -778,14 +764,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait DynamicSegment extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var sessionSegment: js.UndefOr[SegmentDefinition] = js.native
+      var sessionSegment: js.UndefOr[SegmentDefinition] = js.undefined
       
-      var userSegment: js.UndefOr[SegmentDefinition] = js.native
+      var userSegment: js.UndefOr[SegmentDefinition] = js.undefined
     }
     object DynamicSegment {
       
@@ -818,16 +803,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait EcommerceData extends StObject {
       
-      var actionType: js.UndefOr[String] = js.native
+      var actionType: js.UndefOr[String] = js.undefined
       
-      var ecommerceType: js.UndefOr[String] = js.native
+      var ecommerceType: js.UndefOr[String] = js.undefined
       
-      var products: js.UndefOr[js.Array[ProductData]] = js.native
+      var products: js.UndefOr[js.Array[ProductData]] = js.undefined
       
-      var transaction: js.UndefOr[TransactionData] = js.native
+      var transaction: js.UndefOr[TransactionData] = js.undefined
     }
     object EcommerceData {
       
@@ -869,18 +853,17 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait EventData extends StObject {
       
-      var eventAction: js.UndefOr[String] = js.native
+      var eventAction: js.UndefOr[String] = js.undefined
       
-      var eventCategory: js.UndefOr[String] = js.native
+      var eventCategory: js.UndefOr[String] = js.undefined
       
-      var eventCount: js.UndefOr[String] = js.native
+      var eventCount: js.UndefOr[String] = js.undefined
       
-      var eventLabel: js.UndefOr[String] = js.native
+      var eventLabel: js.UndefOr[String] = js.undefined
       
-      var eventValue: js.UndefOr[String] = js.native
+      var eventValue: js.UndefOr[String] = js.undefined
     }
     object EventData {
       
@@ -925,12 +908,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait GetReportsRequest extends StObject {
       
-      var reportRequests: js.UndefOr[js.Array[ReportRequest]] = js.native
+      var reportRequests: js.UndefOr[js.Array[ReportRequest]] = js.undefined
       
-      var useResourceQuotas: js.UndefOr[Boolean] = js.native
+      var useResourceQuotas: js.UndefOr[Boolean] = js.undefined
     }
     object GetReportsRequest {
       
@@ -960,14 +942,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait GetReportsResponse extends StObject {
       
-      var queryCost: js.UndefOr[Double] = js.native
+      var queryCost: js.UndefOr[Double] = js.undefined
       
-      var reports: js.UndefOr[js.Array[Report]] = js.native
+      var reports: js.UndefOr[js.Array[Report]] = js.undefined
       
-      var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.native
+      var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.undefined
     }
     object GetReportsResponse {
       
@@ -1003,24 +984,23 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait GoalData extends StObject {
       
-      var goalCompletionLocation: js.UndefOr[String] = js.native
+      var goalCompletionLocation: js.UndefOr[String] = js.undefined
       
-      var goalCompletions: js.UndefOr[String] = js.native
+      var goalCompletions: js.UndefOr[String] = js.undefined
       
-      var goalIndex: js.UndefOr[Double] = js.native
+      var goalIndex: js.UndefOr[Double] = js.undefined
       
-      var goalName: js.UndefOr[String] = js.native
+      var goalName: js.UndefOr[String] = js.undefined
       
-      var goalPreviousStep1: js.UndefOr[String] = js.native
+      var goalPreviousStep1: js.UndefOr[String] = js.undefined
       
-      var goalPreviousStep2: js.UndefOr[String] = js.native
+      var goalPreviousStep2: js.UndefOr[String] = js.undefined
       
-      var goalPreviousStep3: js.UndefOr[String] = js.native
+      var goalPreviousStep3: js.UndefOr[String] = js.undefined
       
-      var goalValue: js.UndefOr[Double] = js.native
+      var goalValue: js.UndefOr[Double] = js.undefined
     }
     object GoalData {
       
@@ -1083,10 +1063,9 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait GoalSetData extends StObject {
       
-      var goals: js.UndefOr[js.Array[GoalData]] = js.native
+      var goals: js.UndefOr[js.Array[GoalData]] = js.undefined
     }
     object GoalSetData {
       
@@ -1110,14 +1089,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Metric extends StObject {
       
-      var alias: js.UndefOr[String] = js.native
+      var alias: js.UndefOr[String] = js.undefined
       
-      var expression: js.UndefOr[String] = js.native
+      var expression: js.UndefOr[String] = js.undefined
       
-      var formattingType: js.UndefOr[String] = js.native
+      var formattingType: js.UndefOr[String] = js.undefined
     }
     object Metric {
       
@@ -1150,16 +1128,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait MetricFilter extends StObject {
       
-      var comparisonValue: js.UndefOr[String] = js.native
+      var comparisonValue: js.UndefOr[String] = js.undefined
       
-      var metricName: js.UndefOr[String] = js.native
+      var metricName: js.UndefOr[String] = js.undefined
       
-      var not: js.UndefOr[Boolean] = js.native
+      var not: js.UndefOr[Boolean] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
     }
     object MetricFilter {
       
@@ -1198,12 +1175,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait MetricFilterClause extends StObject {
       
-      var filters: js.UndefOr[js.Array[MetricFilter]] = js.native
+      var filters: js.UndefOr[js.Array[MetricFilter]] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
     }
     object MetricFilterClause {
       
@@ -1233,12 +1209,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait MetricHeader extends StObject {
       
-      var metricHeaderEntries: js.UndefOr[js.Array[MetricHeaderEntry]] = js.native
+      var metricHeaderEntries: js.UndefOr[js.Array[MetricHeaderEntry]] = js.undefined
       
-      var pivotHeaders: js.UndefOr[js.Array[PivotHeader]] = js.native
+      var pivotHeaders: js.UndefOr[js.Array[PivotHeader]] = js.undefined
     }
     object MetricHeader {
       
@@ -1271,12 +1246,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait MetricHeaderEntry extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object MetricHeaderEntry {
       
@@ -1303,10 +1277,9 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait OrFiltersForSegment extends StObject {
       
-      var segmentFilterClauses: js.UndefOr[js.Array[SegmentFilterClause]] = js.native
+      var segmentFilterClauses: js.UndefOr[js.Array[SegmentFilterClause]] = js.undefined
     }
     object OrFiltersForSegment {
       
@@ -1330,14 +1303,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait OrderBy extends StObject {
       
-      var fieldName: js.UndefOr[String] = js.native
+      var fieldName: js.UndefOr[String] = js.undefined
       
-      var orderType: js.UndefOr[String] = js.native
+      var orderType: js.UndefOr[String] = js.undefined
       
-      var sortOrder: js.UndefOr[String] = js.native
+      var sortOrder: js.UndefOr[String] = js.undefined
     }
     object OrderBy {
       
@@ -1370,12 +1342,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait PageviewData extends StObject {
       
-      var pagePath: js.UndefOr[String] = js.native
+      var pagePath: js.UndefOr[String] = js.undefined
       
-      var pageTitle: js.UndefOr[String] = js.native
+      var pageTitle: js.UndefOr[String] = js.undefined
     }
     object PageviewData {
       
@@ -1402,18 +1373,17 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Pivot extends StObject {
       
-      var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.native
+      var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var maxGroupCount: js.UndefOr[Double] = js.native
+      var maxGroupCount: js.UndefOr[Double] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var startGroup: js.UndefOr[Double] = js.native
+      var startGroup: js.UndefOr[Double] = js.undefined
     }
     object Pivot {
       
@@ -1467,12 +1437,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait PivotHeader extends StObject {
       
-      var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.native
+      var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.undefined
       
-      var totalPivotGroupsCount: js.UndefOr[Double] = js.native
+      var totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
     }
     object PivotHeader {
       
@@ -1502,14 +1471,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait PivotHeaderEntry extends StObject {
       
-      var dimensionNames: js.UndefOr[js.Array[String]] = js.native
+      var dimensionNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var dimensionValues: js.UndefOr[js.Array[String]] = js.native
+      var dimensionValues: js.UndefOr[js.Array[String]] = js.undefined
       
-      var metric: js.UndefOr[MetricHeaderEntry] = js.native
+      var metric: js.UndefOr[MetricHeaderEntry] = js.undefined
     }
     object PivotHeaderEntry {
       
@@ -1548,10 +1516,9 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait PivotValueRegion extends StObject {
       
-      var values: js.UndefOr[js.Array[String]] = js.native
+      var values: js.UndefOr[js.Array[String]] = js.undefined
     }
     object PivotValueRegion {
       
@@ -1575,16 +1542,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ProductData extends StObject {
       
-      var itemRevenue: js.UndefOr[Double] = js.native
+      var itemRevenue: js.UndefOr[Double] = js.undefined
       
-      var productName: js.UndefOr[String] = js.native
+      var productName: js.UndefOr[String] = js.undefined
       
-      var productQuantity: js.UndefOr[String] = js.native
+      var productQuantity: js.UndefOr[String] = js.undefined
       
-      var productSku: js.UndefOr[String] = js.native
+      var productSku: js.UndefOr[String] = js.undefined
     }
     object ProductData {
       
@@ -1623,14 +1589,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Report extends StObject {
       
-      var columnHeader: js.UndefOr[ColumnHeader] = js.native
+      var columnHeader: js.UndefOr[ColumnHeader] = js.undefined
       
-      var data: js.UndefOr[ReportData] = js.native
+      var data: js.UndefOr[ReportData] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Report {
       
@@ -1663,26 +1628,25 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ReportData extends StObject {
       
-      var dataLastRefreshed: js.UndefOr[String] = js.native
+      var dataLastRefreshed: js.UndefOr[String] = js.undefined
       
-      var isDataGolden: js.UndefOr[Boolean] = js.native
+      var isDataGolden: js.UndefOr[Boolean] = js.undefined
       
-      var maximums: js.UndefOr[js.Array[DateRangeValues]] = js.native
+      var maximums: js.UndefOr[js.Array[DateRangeValues]] = js.undefined
       
-      var minimums: js.UndefOr[js.Array[DateRangeValues]] = js.native
+      var minimums: js.UndefOr[js.Array[DateRangeValues]] = js.undefined
       
-      var rowCount: js.UndefOr[Double] = js.native
+      var rowCount: js.UndefOr[Double] = js.undefined
       
-      var rows: js.UndefOr[js.Array[ReportRow]] = js.native
+      var rows: js.UndefOr[js.Array[ReportRow]] = js.undefined
       
-      var samplesReadCounts: js.UndefOr[js.Array[String]] = js.native
+      var samplesReadCounts: js.UndefOr[js.Array[String]] = js.undefined
       
-      var samplingSpaceSizes: js.UndefOr[js.Array[String]] = js.native
+      var samplingSpaceSizes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var totals: js.UndefOr[js.Array[DateRangeValues]] = js.native
+      var totals: js.UndefOr[js.Array[DateRangeValues]] = js.undefined
     }
     object ReportData {
       
@@ -1769,42 +1733,41 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ReportRequest extends StObject {
       
-      var cohortGroup: js.UndefOr[CohortGroup] = js.native
+      var cohortGroup: js.UndefOr[CohortGroup] = js.undefined
       
-      var dateRanges: js.UndefOr[js.Array[DateRange]] = js.native
+      var dateRanges: js.UndefOr[js.Array[DateRange]] = js.undefined
       
-      var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.native
+      var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var filtersExpression: js.UndefOr[String] = js.native
+      var filtersExpression: js.UndefOr[String] = js.undefined
       
-      var hideTotals: js.UndefOr[Boolean] = js.native
+      var hideTotals: js.UndefOr[Boolean] = js.undefined
       
-      var hideValueRanges: js.UndefOr[Boolean] = js.native
+      var hideValueRanges: js.UndefOr[Boolean] = js.undefined
       
-      var includeEmptyRows: js.UndefOr[Boolean] = js.native
+      var includeEmptyRows: js.UndefOr[Boolean] = js.undefined
       
-      var metricFilterClauses: js.UndefOr[js.Array[MetricFilterClause]] = js.native
+      var metricFilterClauses: js.UndefOr[js.Array[MetricFilterClause]] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var orderBys: js.UndefOr[js.Array[OrderBy]] = js.native
+      var orderBys: js.UndefOr[js.Array[OrderBy]] = js.undefined
       
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
-      var pivots: js.UndefOr[js.Array[Pivot]] = js.native
+      var pivots: js.UndefOr[js.Array[Pivot]] = js.undefined
       
-      var samplingLevel: js.UndefOr[String] = js.native
+      var samplingLevel: js.UndefOr[String] = js.undefined
       
-      var segments: js.UndefOr[js.Array[Segment]] = js.native
+      var segments: js.UndefOr[js.Array[Segment]] = js.undefined
       
-      var viewId: js.UndefOr[String] = js.native
+      var viewId: js.UndefOr[String] = js.undefined
     }
     object ReportRequest {
       
@@ -1945,12 +1908,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ReportRow extends StObject {
       
-      var dimensions: js.UndefOr[js.Array[String]] = js.native
+      var dimensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[DateRangeValues]] = js.native
+      var metrics: js.UndefOr[js.Array[DateRangeValues]] = js.undefined
     }
     object ReportRow {
       
@@ -1983,12 +1945,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ResourceQuotasRemaining extends StObject {
       
-      var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+      var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
       
-      var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+      var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
     }
     object ResourceQuotasRemaining {
       
@@ -2015,16 +1976,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait ScreenviewData extends StObject {
       
-      var appName: js.UndefOr[String] = js.native
+      var appName: js.UndefOr[String] = js.undefined
       
-      var mobileDeviceBranding: js.UndefOr[String] = js.native
+      var mobileDeviceBranding: js.UndefOr[String] = js.undefined
       
-      var mobileDeviceModel: js.UndefOr[String] = js.native
+      var mobileDeviceModel: js.UndefOr[String] = js.undefined
       
-      var screenName: js.UndefOr[String] = js.native
+      var screenName: js.UndefOr[String] = js.undefined
     }
     object ScreenviewData {
       
@@ -2063,20 +2023,19 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SearchUserActivityRequest extends StObject {
       
-      var activityTypes: js.UndefOr[js.Array[String]] = js.native
+      var activityTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
       
-      var viewId: js.UndefOr[String] = js.native
+      var viewId: js.UndefOr[String] = js.undefined
     }
     object SearchUserActivityRequest {
       
@@ -2130,16 +2089,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SearchUserActivityResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var sampleRate: js.UndefOr[Double] = js.native
+      var sampleRate: js.UndefOr[Double] = js.undefined
       
-      var sessions: js.UndefOr[js.Array[UserActivitySession]] = js.native
+      var sessions: js.UndefOr[js.Array[UserActivitySession]] = js.undefined
       
-      var totalRows: js.UndefOr[Double] = js.native
+      var totalRows: js.UndefOr[Double] = js.undefined
     }
     object SearchUserActivityResponse {
       
@@ -2181,12 +2139,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait Segment extends StObject {
       
-      var dynamicSegment: js.UndefOr[DynamicSegment] = js.native
+      var dynamicSegment: js.UndefOr[DynamicSegment] = js.undefined
       
-      var segmentId: js.UndefOr[String] = js.native
+      var segmentId: js.UndefOr[String] = js.undefined
     }
     object Segment {
       
@@ -2213,10 +2170,9 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentDefinition extends StObject {
       
-      var segmentFilters: js.UndefOr[js.Array[SegmentFilter]] = js.native
+      var segmentFilters: js.UndefOr[js.Array[SegmentFilter]] = js.undefined
     }
     object SegmentDefinition {
       
@@ -2240,20 +2196,19 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentDimensionFilter extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var dimensionName: js.UndefOr[String] = js.native
+      var dimensionName: js.UndefOr[String] = js.undefined
       
-      var expressions: js.UndefOr[js.Array[String]] = js.native
+      var expressions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var maxComparisonValue: js.UndefOr[String] = js.native
+      var maxComparisonValue: js.UndefOr[String] = js.undefined
       
-      var minComparisonValue: js.UndefOr[String] = js.native
+      var minComparisonValue: js.UndefOr[String] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
     }
     object SegmentDimensionFilter {
       
@@ -2307,14 +2262,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentFilter extends StObject {
       
-      var not: js.UndefOr[Boolean] = js.native
+      var not: js.UndefOr[Boolean] = js.undefined
       
-      var sequenceSegment: js.UndefOr[SequenceSegment] = js.native
+      var sequenceSegment: js.UndefOr[SequenceSegment] = js.undefined
       
-      var simpleSegment: js.UndefOr[SimpleSegment] = js.native
+      var simpleSegment: js.UndefOr[SimpleSegment] = js.undefined
     }
     object SegmentFilter {
       
@@ -2347,14 +2301,13 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentFilterClause extends StObject {
       
-      var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.native
+      var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.undefined
       
-      var metricFilter: js.UndefOr[SegmentMetricFilter] = js.native
+      var metricFilter: js.UndefOr[SegmentMetricFilter] = js.undefined
       
-      var not: js.UndefOr[Boolean] = js.native
+      var not: js.UndefOr[Boolean] = js.undefined
     }
     object SegmentFilterClause {
       
@@ -2387,18 +2340,17 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentMetricFilter extends StObject {
       
-      var comparisonValue: js.UndefOr[String] = js.native
+      var comparisonValue: js.UndefOr[String] = js.undefined
       
-      var maxComparisonValue: js.UndefOr[String] = js.native
+      var maxComparisonValue: js.UndefOr[String] = js.undefined
       
-      var metricName: js.UndefOr[String] = js.native
+      var metricName: js.UndefOr[String] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
     }
     object SegmentMetricFilter {
       
@@ -2443,12 +2395,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SegmentSequenceStep extends StObject {
       
-      var matchType: js.UndefOr[String] = js.native
+      var matchType: js.UndefOr[String] = js.undefined
       
-      var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.native
+      var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.undefined
     }
     object SegmentSequenceStep {
       
@@ -2478,12 +2429,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SequenceSegment extends StObject {
       
-      var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.native
+      var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.undefined
       
-      var segmentSequenceSteps: js.UndefOr[js.Array[SegmentSequenceStep]] = js.native
+      var segmentSequenceSteps: js.UndefOr[js.Array[SegmentSequenceStep]] = js.undefined
     }
     object SequenceSegment {
       
@@ -2513,10 +2463,9 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait SimpleSegment extends StObject {
       
-      var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.native
+      var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.undefined
     }
     object SimpleSegment {
       
@@ -2540,16 +2489,15 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait TransactionData extends StObject {
       
-      var transactionId: js.UndefOr[String] = js.native
+      var transactionId: js.UndefOr[String] = js.undefined
       
-      var transactionRevenue: js.UndefOr[Double] = js.native
+      var transactionRevenue: js.UndefOr[Double] = js.undefined
       
-      var transactionShipping: js.UndefOr[Double] = js.native
+      var transactionShipping: js.UndefOr[Double] = js.undefined
       
-      var transactionTax: js.UndefOr[Double] = js.native
+      var transactionTax: js.UndefOr[Double] = js.undefined
     }
     object TransactionData {
       
@@ -2588,12 +2536,11 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait User extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object User {
       
@@ -2620,20 +2567,19 @@ object Analyticsreporting {
       }
     }
     
-    @js.native
     trait UserActivitySession extends StObject {
       
-      var activities: js.UndefOr[js.Array[Activity]] = js.native
+      var activities: js.UndefOr[js.Array[Activity]] = js.undefined
       
-      var dataSource: js.UndefOr[String] = js.native
+      var dataSource: js.UndefOr[String] = js.undefined
       
-      var deviceCategory: js.UndefOr[String] = js.native
+      var deviceCategory: js.UndefOr[String] = js.undefined
       
-      var platform: js.UndefOr[String] = js.native
+      var platform: js.UndefOr[String] = js.undefined
       
-      var sessionDate: js.UndefOr[String] = js.native
+      var sessionDate: js.UndefOr[String] = js.undefined
       
-      var sessionId: js.UndefOr[String] = js.native
+      var sessionId: js.UndefOr[String] = js.undefined
     }
     object UserActivitySession {
       

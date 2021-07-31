@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLedgerMod {
   
-  @JSImport("@pulumi/aws/qldb/getLedger", "getLedger")
+  @JSImport("@pulumi/aws/qldb/getLedger", JSImport.Namespace)
   @js.native
-  def getLedger(args: GetLedgerArgs): js.Promise[GetLedgerResult] = js.native
-  @JSImport("@pulumi/aws/qldb/getLedger", "getLedger")
-  @js.native
-  def getLedger(args: GetLedgerArgs, opts: InvokeOptions): js.Promise[GetLedgerResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLedger(args: GetLedgerArgs): js.Promise[GetLedgerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLedger")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLedgerResult]]
+  @scala.inline
+  def getLedger(args: GetLedgerArgs, opts: InvokeOptions): js.Promise[GetLedgerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLedger")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLedgerResult]]
+  
   trait GetLedgerArgs extends StObject {
     
     /**
       * The friendly name of the ledger to match.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetLedgerArgs {
     
@@ -39,25 +39,24 @@ object getLedgerMod {
     }
   }
   
-  @js.native
   trait GetLedgerResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the ledger.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Deletion protection on the QLDB Ledger instance. Set to `true` by default.
       */
-    val deletionProtection: Boolean = js.native
+    val deletionProtection: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetLedgerResult {
     

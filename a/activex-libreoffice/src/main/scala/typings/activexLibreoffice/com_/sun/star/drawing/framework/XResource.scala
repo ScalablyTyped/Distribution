@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Base interface that provides functionality shared by all resource types of the drawing framework. */
-@js.native
 trait XResource extends StObject {
   
   /** Return an {@link XResourceId} object for the called resource. The returned id unambiguously identifies the resource. */
-  val ResourceId: XResourceId = js.native
+  val ResourceId: XResourceId
   
   /** Return an {@link XResourceId} object for the called resource. The returned id unambiguously identifies the resource. */
-  def getResourceId(): XResourceId = js.native
+  def getResourceId(): XResourceId
   
   /**
     * Some resources must not be leafs, i.e. have to be anchor to at least one other resource. Most panes are examples for this. Views on the other hand are
@@ -22,7 +20,7 @@ trait XResource extends StObject {
     * The return value is used to determine whether a resource has to be deactivated when it has no children, either because none is requested or because
     * none can be created.
     */
-  def isAnchorOnly(): Boolean = js.native
+  def isAnchorOnly(): Boolean
 }
 object XResource {
   

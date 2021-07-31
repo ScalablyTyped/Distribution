@@ -2,40 +2,40 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object env {
   
-  @js.native
-  trait IBrowser extends IBase {
+  trait IBrowser
+    extends StObject
+       with IBase {
     
     /** [Property] (String) */
-    var engineName: js.UndefOr[java.lang.String] = js.native
+    var engineName: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Ext.Version) */
-    var engineVersion: js.UndefOr[IVersion] = js.native
+    var engineVersion: js.UndefOr[IVersion] = js.undefined
     
     /** [Method] A hybrid property can be either accessed as a method call for example  if Ext browser is IE
       * @param value String The OS name to check.
       * @returns Boolean
       */
-    var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isSecure: js.UndefOr[Boolean] = js.native
+    var isSecure: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var isStrict: js.UndefOr[Boolean] = js.native
+    var isStrict: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (String) */
-    var userAgent: js.UndefOr[java.lang.String] = js.native
+    var userAgent: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Ext.Version) */
-    var version: js.UndefOr[IVersion] = js.native
+    var version: js.UndefOr[IVersion] = js.undefined
   }
   object IBrowser {
     
@@ -100,20 +100,21 @@ object env {
   
   type IFeature = IBase
   
-  @js.native
-  trait IOS extends IBase {
+  trait IOS
+    extends StObject
+       with IBase {
     
     /** [Method] A hybrid property can be either accessed as a method call i e  if Ext os is Android
       * @param value String The OS name to check.
       * @returns Boolean
       */
-    var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Property] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Ext.Version) */
-    var version: js.UndefOr[IVersion] = js.native
+    var version: js.UndefOr[IVersion] = js.undefined
   }
   object IOS {
     

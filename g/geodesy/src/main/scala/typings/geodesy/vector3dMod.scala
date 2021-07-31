@@ -2,14 +2,15 @@ package typings.geodesy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vector3dMod {
   
   @JSImport("geodesy/vector3d", JSImport.Default)
   @js.native
-  class default protected () extends Vector3d {
+  class default protected ()
+    extends StObject
+       with Vector3d {
     def this(x: Double, y: Double, z: Double) = this()
   }
   

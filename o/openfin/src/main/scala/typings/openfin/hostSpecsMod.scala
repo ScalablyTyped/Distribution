@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostSpecsMod {
   
-  @js.native
   trait CpuInfo extends StObject {
     
-    var model: String = js.native
+    var model: String
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var times: Time = js.native
+    var times: Time
   }
   object CpuInfo {
     
@@ -38,10 +36,9 @@ object hostSpecsMod {
     }
   }
   
-  @js.native
   trait GpuInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object GpuInfo {
     
@@ -59,22 +56,21 @@ object hostSpecsMod {
     }
   }
   
-  @js.native
   trait HostSpecs extends StObject {
     
-    var aeroGlassEnabled: js.UndefOr[Boolean] = js.native
+    var aeroGlassEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var arch: String = js.native
+    var arch: String
     
-    var cpus: js.Array[CpuInfo] = js.native
+    var cpus: js.Array[CpuInfo]
     
-    var gpu: GpuInfo = js.native
+    var gpu: GpuInfo
     
-    var memory: Double = js.native
+    var memory: Double
     
-    var name: String = js.native
+    var name: String
     
-    var screenSaver: js.UndefOr[Boolean] = js.native
+    var screenSaver: js.UndefOr[Boolean] = js.undefined
   }
   object HostSpecs {
     
@@ -119,18 +115,17 @@ object hostSpecsMod {
     }
   }
   
-  @js.native
   trait Time extends StObject {
     
-    var idle: Double = js.native
+    var idle: Double
     
-    var irq: Double = js.native
+    var irq: Double
     
-    var nice: Double = js.native
+    var nice: Double
     
-    var sys: Double = js.native
+    var sys: Double
     
-    var user: Double = js.native
+    var user: Double
   }
   object Time {
     

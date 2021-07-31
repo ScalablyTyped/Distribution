@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommsOperation extends Entity {
+trait CommsOperation
+  extends StObject
+     with Entity {
   
   // Unique Client Context string. Max limit is 256 chars.
-  var clientContext: js.UndefOr[NullableOption[String]] = js.native
+  var clientContext: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The result information. Read-only.
-  var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.native
+  var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.undefined
   
   // Possible values are: notStarted, running, completed, failed. Read-only.
-  var status: js.UndefOr[OperationStatus] = js.native
+  var status: js.UndefOr[OperationStatus] = js.undefined
 }
 object CommsOperation {
   

@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Browser.typesTagMod.UnmarshalledTag
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLifecycleRuleAndOperatorMod {
   
-  @js.native
   trait LifecycleRuleAndOperator extends StObject {
     
     /**
       * _Prefix shape
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>All of these tags must exist in the object's tag set in order for the rule to apply.</p>
       */
-    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.native
+    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.undefined
   }
   object LifecycleRuleAndOperator {
     
@@ -51,14 +49,15 @@ object typesLifecycleRuleAndOperatorMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledLifecycleRuleAndOperator extends LifecycleRuleAndOperator {
+  trait UnmarshalledLifecycleRuleAndOperator
+    extends StObject
+       with LifecycleRuleAndOperator {
     
     /**
       * <p>All of these tags must exist in the object's tag set in order for the rule to apply.</p>
       */
     @JSName("Tags")
-    var Tags_UnmarshalledLifecycleRuleAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.native
+    var Tags_UnmarshalledLifecycleRuleAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.undefined
   }
   object UnmarshalledLifecycleRuleAndOperator {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsRequest extends StObject {
   
   /**
     * The maximum number of tags to return in the response. When there are more tags than the number you specify, the response contains a NextToken value.
     */
-  var MaxResults: js.UndefOr[MaxSize] = js.native
+  var MaxResults: js.UndefOr[MaxSize] = js.undefined
   
   /**
     * The NextToken value that you received in the previous response. Use this value to get more tags.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.undefined
   
   /**
     * The cluster identifier (ID) for the cluster whose tags you are getting. To find the cluster ID, use DescribeClusters.
     */
-  var ResourceId: typings.awsSdk.cloudhsmv2Mod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.cloudhsmv2Mod.ResourceId
 }
 object ListTagsRequest {
   

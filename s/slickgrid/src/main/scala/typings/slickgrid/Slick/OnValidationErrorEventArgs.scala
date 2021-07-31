@@ -4,23 +4,23 @@ import typings.slickgrid.Slick.Editors.Editor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnValidationErrorEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnValidationErrorEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var cell: Double = js.native
+  var cell: Double
   
-  var cellNode: HTMLElement = js.native
+  var cellNode: HTMLElement
   
-  var column: Column[T] = js.native
+  var column: Column[T]
   
-  var editor: Editor[T] = js.native
+  var editor: Editor[T]
   
-  var row: Double = js.native
+  var row: Double
   
-  var validationResults: ValidateResults = js.native
+  var validationResults: ValidateResults
 }
 object OnValidationErrorEventArgs {
   
@@ -39,7 +39,7 @@ object OnValidationErrorEventArgs {
   }
   
   @scala.inline
-  implicit class OnValidationErrorEventArgsMutableBuilder[Self <: OnValidationErrorEventArgs[_], T /* <: SlickData */] (val x: Self with OnValidationErrorEventArgs[T]) extends AnyVal {
+  implicit class OnValidationErrorEventArgsMutableBuilder[Self <: OnValidationErrorEventArgs[?], T /* <: SlickData */] (val x: Self & OnValidationErrorEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])

@@ -26,10 +26,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storagegatewayMod {
+  
+  @JSImport("@pulumi/aws/storagegateway", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/storagegateway", "Cache")
   @js.native
@@ -48,6 +51,10 @@ object storagegatewayMod {
   /* static members */
   object Cache {
     
+    @JSImport("@pulumi/aws/storagegateway", "Cache")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cache resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,26 +64,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.cacheMod.Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.cacheMod.Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CacheState): typings.pulumiAws.cacheMod.Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): typings.pulumiAws.cacheMod.Cache = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.cacheMod.Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cacheMod.Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.cacheMod.Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cacheMod.Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CacheState): typings.pulumiAws.cacheMod.Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cacheMod.Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): typings.pulumiAws.cacheMod.Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cacheMod.Cache]
     
     /**
       * Returns true if the given object is an instance of Cache.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "Cache.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume")
@@ -96,6 +98,10 @@ object storagegatewayMod {
   /* static members */
   object CachesIscsiVolume {
     
+    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CachesIscsiVolume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -105,26 +111,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CachesIscsiVolumeState): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CachesIscsiVolumeState, opts: CustomResourceOptions): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CachesIscsiVolumeState): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CachesIscsiVolumeState, opts: CustomResourceOptions): typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.cachesIscsiVolumeMod.CachesIscsiVolume]
     
     /**
       * Returns true if the given object is an instance of CachesIscsiVolume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cachesIscsiVolume.CachesIscsiVolume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cachesIscsiVolume.CachesIscsiVolume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/cachesIscsiVolume.CachesIscsiVolume */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "Gateway")
@@ -144,6 +145,10 @@ object storagegatewayMod {
   /* static members */
   object Gateway {
     
+    @JSImport("@pulumi/aws/storagegateway", "Gateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Gateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -153,26 +158,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.storagegatewayGatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.storagegatewayGatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState): typings.pulumiAws.storagegatewayGatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): typings.pulumiAws.storagegatewayGatewayMod.Gateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.storagegatewayGatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storagegatewayGatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.storagegatewayGatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storagegatewayGatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState): typings.pulumiAws.storagegatewayGatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storagegatewayGatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): typings.pulumiAws.storagegatewayGatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storagegatewayGatewayMod.Gateway]
     
     /**
       * Returns true if the given object is an instance of Gateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "Gateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "NfsFileShare")
@@ -192,6 +192,10 @@ object storagegatewayMod {
   /* static members */
   object NfsFileShare {
     
+    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NfsFileShare resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -201,26 +205,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.nfsFileShareMod.NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.nfsFileShareMod.NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsFileShareState): typings.pulumiAws.nfsFileShareMod.NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsFileShareState, opts: CustomResourceOptions): typings.pulumiAws.nfsFileShareMod.NfsFileShare = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.nfsFileShareMod.NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.nfsFileShareMod.NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.nfsFileShareMod.NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.nfsFileShareMod.NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsFileShareState): typings.pulumiAws.nfsFileShareMod.NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.nfsFileShareMod.NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsFileShareState, opts: CustomResourceOptions): typings.pulumiAws.nfsFileShareMod.NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.nfsFileShareMod.NfsFileShare]
     
     /**
       * Returns true if the given object is an instance of NfsFileShare.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "NfsFileShare.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "SmbFileShare")
@@ -240,6 +239,10 @@ object storagegatewayMod {
   /* static members */
   object SmbFileShare {
     
+    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SmbFileShare resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -249,26 +252,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.smbFileShareMod.SmbFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.smbFileShareMod.SmbFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SmbFileShareState): typings.pulumiAws.smbFileShareMod.SmbFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SmbFileShareState, opts: CustomResourceOptions): typings.pulumiAws.smbFileShareMod.SmbFileShare = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.smbFileShareMod.SmbFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.smbFileShareMod.SmbFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.smbFileShareMod.SmbFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.smbFileShareMod.SmbFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SmbFileShareState): typings.pulumiAws.smbFileShareMod.SmbFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.smbFileShareMod.SmbFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SmbFileShareState, opts: CustomResourceOptions): typings.pulumiAws.smbFileShareMod.SmbFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.smbFileShareMod.SmbFileShare]
     
     /**
       * Returns true if the given object is an instance of SmbFileShare.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "SmbFileShare.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/smbFileShare.SmbFileShare */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/smbFileShare.SmbFileShare */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/smbFileShare.SmbFileShare */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume")
@@ -288,6 +286,10 @@ object storagegatewayMod {
   /* static members */
   object StoredIscsiVolume {
     
+    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StoredIscsiVolume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -297,26 +299,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState, opts: CustomResourceOptions): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState, opts: CustomResourceOptions): typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.storedIscsiVolumeMod.StoredIscsiVolume]
     
     /**
       * Returns true if the given object is an instance of StoredIscsiVolume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "StoredIscsiVolume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "TapePool")
@@ -336,6 +333,10 @@ object storagegatewayMod {
   /* static members */
   object TapePool {
     
+    @JSImport("@pulumi/aws/storagegateway", "TapePool")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TapePool resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -345,26 +346,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.tapePoolMod.TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.tapePoolMod.TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TapePoolState): typings.pulumiAws.tapePoolMod.TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): typings.pulumiAws.tapePoolMod.TapePool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.tapePoolMod.TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tapePoolMod.TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.tapePoolMod.TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tapePoolMod.TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TapePoolState): typings.pulumiAws.tapePoolMod.TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tapePoolMod.TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): typings.pulumiAws.tapePoolMod.TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tapePoolMod.TapePool]
     
     /**
       * Returns true if the given object is an instance of TapePool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "TapePool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "UploadBuffer")
@@ -384,6 +380,10 @@ object storagegatewayMod {
   /* static members */
   object UploadBuffer {
     
+    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UploadBuffer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -393,26 +393,21 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.uploadBufferMod.UploadBuffer = js.native
-    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.uploadBufferMod.UploadBuffer = js.native
-    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UploadBufferState): typings.pulumiAws.uploadBufferMod.UploadBuffer = js.native
-    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UploadBufferState, opts: CustomResourceOptions): typings.pulumiAws.uploadBufferMod.UploadBuffer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.uploadBufferMod.UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.uploadBufferMod.UploadBuffer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.uploadBufferMod.UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.uploadBufferMod.UploadBuffer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UploadBufferState): typings.pulumiAws.uploadBufferMod.UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.uploadBufferMod.UploadBuffer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UploadBufferState, opts: CustomResourceOptions): typings.pulumiAws.uploadBufferMod.UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.uploadBufferMod.UploadBuffer]
     
     /**
       * Returns true if the given object is an instance of UploadBuffer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "UploadBuffer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean]
   }
   
   @JSImport("@pulumi/aws/storagegateway", "WorkingStorage")
@@ -432,6 +427,10 @@ object storagegatewayMod {
   /* static members */
   object WorkingStorage {
     
+    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WorkingStorage resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -441,32 +440,25 @@ object storagegatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.workingStorageMod.WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.workingStorageMod.WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkingStorageState): typings.pulumiAws.workingStorageMod.WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): typings.pulumiAws.workingStorageMod.WorkingStorage = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.workingStorageMod.WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workingStorageMod.WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.workingStorageMod.WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workingStorageMod.WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkingStorageState): typings.pulumiAws.workingStorageMod.WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workingStorageMod.WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): typings.pulumiAws.workingStorageMod.WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workingStorageMod.WorkingStorage]
     
     /**
       * Returns true if the given object is an instance of WorkingStorage.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway", "WorkingStorage.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/storagegateway", "getLocalDisk")
-  @js.native
-  def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = js.native
-  @JSImport("@pulumi/aws/storagegateway", "getLocalDisk")
-  @js.native
-  def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = js.native
+  @scala.inline
+  def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalDiskResult]]
+  @scala.inline
+  def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalDiskResult]]
 }

@@ -5,7 +5,6 @@ import typings.plottable.plottableStrings.center
 import typings.plottable.plottableStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object YAlignment {

@@ -2,15 +2,13 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOptimisticPersistence extends StObject {
   
-  var localStorage: js.Array[String] = js.native
+  var localStorage: js.Array[String]
   
-  var sessionStorage: js.Array[String] = js.native
+  var sessionStorage: js.Array[String]
 }
 object GridOptimisticPersistence {
   

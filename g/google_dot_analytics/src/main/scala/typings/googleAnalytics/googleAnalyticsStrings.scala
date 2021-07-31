@@ -3,7 +3,6 @@ package typings.googleAnalytics
 import typings.googleAnalytics.UniversalAnalytics.HitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleAnalyticsStrings {
@@ -14,22 +13,30 @@ object googleAnalyticsStrings {
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait event extends HitType
+  sealed trait event
+    extends StObject
+       with HitType
   @scala.inline
   def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait exception extends HitType
+  sealed trait exception
+    extends StObject
+       with HitType
   @scala.inline
   def exception: exception = "exception".asInstanceOf[exception]
   
   @js.native
-  sealed trait item extends HitType
+  sealed trait item
+    extends StObject
+       with HitType
   @scala.inline
   def item: item = "item".asInstanceOf[item]
   
   @js.native
-  sealed trait pageview extends HitType
+  sealed trait pageview
+    extends StObject
+       with HitType
   @scala.inline
   def pageview: pageview = "pageview".asInstanceOf[pageview]
   
@@ -49,7 +56,9 @@ object googleAnalyticsStrings {
   def require: require = "require".asInstanceOf[require]
   
   @js.native
-  sealed trait screenview extends HitType
+  sealed trait screenview
+    extends StObject
+       with HitType
   @scala.inline
   def screenview: screenview = "screenview".asInstanceOf[screenview]
   
@@ -59,17 +68,23 @@ object googleAnalyticsStrings {
   def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait social extends HitType
+  sealed trait social
+    extends StObject
+       with HitType
   @scala.inline
   def social: social = "social".asInstanceOf[social]
   
   @js.native
-  sealed trait timing extends HitType
+  sealed trait timing
+    extends StObject
+       with HitType
   @scala.inline
   def timing: timing = "timing".asInstanceOf[timing]
   
   @js.native
-  sealed trait transaction extends HitType
+  sealed trait transaction
+    extends StObject
+       with HitType
   @scala.inline
   def transaction: transaction = "transaction".asInstanceOf[transaction]
 }

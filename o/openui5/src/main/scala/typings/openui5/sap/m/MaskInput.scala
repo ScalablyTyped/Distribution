@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskInput extends InputBase {
+trait MaskInput
+  extends StObject
+     with InputBase {
   
   /**
     * Gets a replacement string for the character being placed in the input.Subclasses may override this

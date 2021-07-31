@@ -5,19 +5,19 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dialog extends Window {
+trait Dialog
+  extends StObject
+     with Window {
   
-  def addButton(widget: Widget, layoutOptions: js.Any): Unit = js.native
+  def addButton(widget: Widget, layoutOptions: js.Any): Unit
   
-  var buttonNames: js.Array[String] = js.native
+  var buttonNames: js.Array[String]
   
-  var buttons: js.Array[Widget] = js.native
+  var buttons: js.Array[Widget]
   
-  def removeButton(widget: Widget): Unit = js.native
+  def removeButton(widget: Widget): Unit
 }
 object Dialog {
   

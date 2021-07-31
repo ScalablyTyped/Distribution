@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThumbnailSet extends Entity {
+trait ThumbnailSet
+  extends StObject
+     with Entity {
   
   // A 1920x1920 scaled thumbnail.
-  var large: js.UndefOr[NullableOption[Thumbnail]] = js.native
+  var large: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
   
   // A 176x176 scaled thumbnail.
-  var medium: js.UndefOr[NullableOption[Thumbnail]] = js.native
+  var medium: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
   
   // A 48x48 cropped thumbnail.
-  var small: js.UndefOr[NullableOption[Thumbnail]] = js.native
+  var small: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
   
   // A custom thumbnail image or the original image used to generate other thumbnails.
-  var source: js.UndefOr[NullableOption[Thumbnail]] = js.native
+  var source: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
 }
 object ThumbnailSet {
   

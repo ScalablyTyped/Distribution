@@ -2,24 +2,22 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link LatLngLiteral}.
   */
-@js.native
 trait ReadonlyLatLngLiteral extends StObject {
   
   /**
     * @see {@link LatLngLiteral#lat}
     */
-  val lat: Double = js.native
+  val lat: Double
   
   /**
     * @see {@link LatLngLiteral#lng}
     */
-  val lng: Double = js.native
+  val lng: Double
 }
 object ReadonlyLatLngLiteral {
   

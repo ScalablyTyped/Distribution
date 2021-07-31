@@ -17,10 +17,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.sum
 import typings.arcgisJsApi.arcgisJsApiStrings.viewpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MosaicRuleProperties extends StObject {
   
   /**
@@ -28,21 +26,21 @@ trait MosaicRuleProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#ascending)
     */
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The rendering rule applied on items before mosaicking.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRenderingRule)
     */
-  var itemRenderingRule: js.UndefOr[RasterFunctionProperties] = js.native
+  var itemRenderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
     * An array of raster Ids.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
     */
-  var lockRasterIds: js.UndefOr[js.Array[Double]] = js.native
+  var lockRasterIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The mosaic method determines how the selected rasters are ordered.
@@ -51,56 +49,56 @@ trait MosaicRuleProperties extends StObject {
     */
   var method: js.UndefOr[
     none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A multiple dimensional service can have multiple dimensions for one or more variables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition)
     */
-  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.native
+  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.undefined
   
   /**
     * Defines a selection using a set of ObjectIDs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#objectIds)
     */
-  var objectIds: js.UndefOr[js.Array[Double]] = js.native
+  var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Defines the mosaic operation used to resolve overlapping pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#operation)
     */
-  var operation: js.UndefOr[first | last | min | max | mean | blend | sum] = js.native
+  var operation: js.UndefOr[first | last | min | max | mean | blend | sum] = js.undefined
   
   /**
     * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortField)
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * A constant value defining a reference or base value for the sort field when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortValue)
     */
-  var sortValue: js.UndefOr[String] = js.native
+  var sortValue: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the viewpoint location on which the ordering is defined based on the distance from the viewpoint and the nadir of rasters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[PointProperties] = js.native
+  var viewpoint: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * The where clause determines which rasters will participate in the mosaic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#where)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object MosaicRuleProperties {
   

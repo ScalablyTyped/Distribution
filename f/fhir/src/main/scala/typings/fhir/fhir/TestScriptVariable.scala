@@ -2,94 +2,94 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Placeholder for evaluated elements
   */
-@js.native
-trait TestScriptVariable extends BackboneElement {
+trait TestScriptVariable
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'defaultValue'.
     */
-  var _defaultValue: js.UndefOr[Element] = js.native
+  var _defaultValue: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'headerField'.
     */
-  var _headerField: js.UndefOr[Element] = js.native
+  var _headerField: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'hint'.
     */
-  var _hint: js.UndefOr[Element] = js.native
+  var _hint: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.native
+  var _path: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sourceId'.
     */
-  var _sourceId: js.UndefOr[Element] = js.native
+  var _sourceId: js.UndefOr[Element] = js.undefined
   
   /**
     * Default, hard-coded, or user-defined value for this variable
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * Natural language description of the variable
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The fluentpath expression against the fixture body
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP header field name for source
     */
-  var headerField: js.UndefOr[String] = js.native
+  var headerField: js.UndefOr[String] = js.undefined
   
   /**
     * Hint help text for default value to enter
     */
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
   /**
     * Descriptive name for this variable
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * XPath or JSONPath against the fixture body
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Fixture Id of source expression or headerField within this variable
     */
-  var sourceId: js.UndefOr[id] = js.native
+  var sourceId: js.UndefOr[id] = js.undefined
 }
 object TestScriptVariable {
   

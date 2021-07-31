@@ -2,13 +2,13 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropQuery extends Executable[Unit] {
+trait DropQuery
+  extends StObject
+     with Executable[Unit] {
   
-  def ifExists(): Executable[Unit] = js.native
+  def ifExists(): Executable[Unit]
 }
 object DropQuery {
   

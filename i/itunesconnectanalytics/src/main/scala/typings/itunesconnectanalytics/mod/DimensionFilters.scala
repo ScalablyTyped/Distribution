@@ -2,15 +2,13 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionFilters extends StObject {
   
-  var dimensionKey: dimensionFilterKey = js.native
+  var dimensionKey: dimensionFilterKey
   
-  var optionKeys: js.Array[String] = js.native
+  var optionKeys: js.Array[String]
 }
 object DimensionFilters {
   

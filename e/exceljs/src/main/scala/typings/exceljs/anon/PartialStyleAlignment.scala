@@ -3,24 +3,22 @@ package typings.exceljs.anon
 import typings.exceljs.mod.Fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Style> */
-@js.native
 trait PartialStyleAlignment extends StObject {
   
-  var alignment: js.UndefOr[PartialAlignment] = js.native
+  var alignment: js.UndefOr[PartialAlignment] = js.undefined
   
-  var border: js.UndefOr[PartialBordersDiagonal] = js.native
+  var border: js.UndefOr[PartialBordersDiagonal] = js.undefined
   
-  var fill: js.UndefOr[Fill] = js.native
+  var fill: js.UndefOr[Fill] = js.undefined
   
-  var font: js.UndefOr[PartialFontBold] = js.native
+  var font: js.UndefOr[PartialFontBold] = js.undefined
   
-  var numFmt: js.UndefOr[String] = js.native
+  var numFmt: js.UndefOr[String] = js.undefined
   
-  var protection: js.UndefOr[PartialProtection] = js.native
+  var protection: js.UndefOr[PartialProtection] = js.undefined
 }
 object PartialStyleAlignment {
   

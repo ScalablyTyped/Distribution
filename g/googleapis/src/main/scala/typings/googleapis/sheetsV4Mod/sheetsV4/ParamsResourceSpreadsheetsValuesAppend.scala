@@ -6,39 +6,39 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSpreadsheetsValuesAppend extends StandardParameters {
+trait ParamsResourceSpreadsheetsValuesAppend
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Determines if the update response should include the values of the cells
     * that were appended. By default, responses do not include the updated
     * values.
     */
-  var includeValuesInResponse: js.UndefOr[Boolean] = js.native
+  var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How the input data should be inserted.
     */
-  var insertDataOption: js.UndefOr[String] = js.native
+  var insertDataOption: js.UndefOr[String] = js.undefined
   
   /**
     * The A1 notation of a range to search for a logical table of data. Values
     * will be appended after the last row of the table.
     */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaValueRange] = js.native
+  var requestBody: js.UndefOr[SchemaValueRange] = js.undefined
   
   /**
     * Determines how dates, times, and durations in the response should be
@@ -46,23 +46,23 @@ trait ParamsResourceSpreadsheetsValuesAppend extends StandardParameters {
     * FORMATTED_VALUE. The default dateTime render option is
     * [DateTimeRenderOption.SERIAL_NUMBER].
     */
-  var responseDateTimeRenderOption: js.UndefOr[String] = js.native
+  var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /**
     * Determines how values in the response should be rendered. The default
     * render option is ValueRenderOption.FORMATTED_VALUE.
     */
-  var responseValueRenderOption: js.UndefOr[String] = js.native
+  var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the spreadsheet to update.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /**
     * How the input data should be interpreted.
     */
-  var valueInputOption: js.UndefOr[String] = js.native
+  var valueInputOption: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSpreadsheetsValuesAppend {
   

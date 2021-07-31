@@ -2,137 +2,135 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerHandlerMap[C /* <: Marker */] extends StObject {
   
   /**
     * This event is fired when the marker's animation property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.animation_changed Maps JavaScript API}
     */
-  def animation_changed(): Unit = js.native
+  def animation_changed(): Unit
   
   /**
     * This event is fired when the marker icon was clicked.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.click Maps JavaScript API}
     */
-  def click(event: MouseEvent): Unit = js.native
+  def click(event: MouseEvent): Unit
   
   /**
     * This event is fired when the marker's clickable property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.clickable_changed Maps JavaScript API}
     */
-  def clickable_changed(): Unit = js.native
+  def clickable_changed(): Unit
   
   /**
     * This event is fired when the marker's cursor property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.cursor_changed Maps JavaScript API}
     */
-  def cursor_changed(): Unit = js.native
+  def cursor_changed(): Unit
   
   /**
     * This event is fired when the marker icon was double clicked.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.dblclick Maps JavaScript API}
     */
-  def dblclick(event: MouseEvent): Unit = js.native
+  def dblclick(event: MouseEvent): Unit
   
   /**
     * This event is repeatedly fired while the user drags the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.drag Maps JavaScript API}
     */
-  def drag(event: MouseEvent): Unit = js.native
+  def drag(event: MouseEvent): Unit
   
   /**
     * This event is fired when the user stops dragging the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.dragend Maps JavaScript API}
     */
-  def dragend(event: MouseEvent): Unit = js.native
+  def dragend(event: MouseEvent): Unit
   
   /**
     * This event is fired when the marker's draggable property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.draggable_changed Maps JavaScript API}
     */
-  def draggable_changed(): Unit = js.native
+  def draggable_changed(): Unit
   
   /**
     * This event is fired when the user starts dragging the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.dragstart Maps JavaScript API}
     */
-  def dragstart(event: MouseEvent): Unit = js.native
+  def dragstart(event: MouseEvent): Unit
   
   /**
     * This event is fired when the marker's flat property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.flat_changed Maps JavaScript API}
     */
-  def flat_changed(): Unit = js.native
+  def flat_changed(): Unit
   
   /**
     * This event is fired when the marker icon property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.icon_changed Maps JavaScript API}
     */
-  def icon_changed(): Unit = js.native
+  def icon_changed(): Unit
   
   /**
     * This event is fired for a mousedown on the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.mousedown Maps JavaScript API}
     */
-  def mousedown(event: MouseEvent): Unit = js.native
+  def mousedown(event: MouseEvent): Unit
   
   /**
     * This event is fired when the mouse leaves the area of the marker icon.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.mouseout Maps JavaScript API}
     */
-  def mouseout(event: MouseEvent): Unit = js.native
+  def mouseout(event: MouseEvent): Unit
   
   /**
     * This event is fired when the mouse enters the area of the marker icon.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.mouseover Maps JavaScript API}
     */
-  def mouseover(event: MouseEvent): Unit = js.native
+  def mouseover(event: MouseEvent): Unit
   
   /**
     * This event is fired for a mouseup on the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.mouseup Maps JavaScript API}
     */
-  def mouseup(event: MouseEvent): Unit = js.native
+  def mouseup(event: MouseEvent): Unit
   
   /**
     * This event is fired when the marker position property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.position_changed Maps JavaScript API}
     */
-  def position_changed(): Unit = js.native
+  def position_changed(): Unit
   
   /**
     * This event is fired for a rightclick on the marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.rightclick Maps JavaScript API}
     */
-  def rightclick(event: MouseEvent): Unit = js.native
+  def rightclick(event: MouseEvent): Unit
   
   /**
     * This event is fired when the marker's shape property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.shape_changed Maps JavaScript API}
     */
-  def shape_changed(): Unit = js.native
+  def shape_changed(): Unit
   
   /**
     * This event is fired when the marker title property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.title_changed Maps JavaScript API}
     */
-  def title_changed(): Unit = js.native
+  def title_changed(): Unit
   
   /**
     * This event is fired when the marker's visible property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.visible_changed Maps JavaScript API}
     */
-  def visible_changed(): Unit = js.native
+  def visible_changed(): Unit
   
   /**
     * This event is fired when the marker's zIndex property changes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.zindex_changed Maps JavaScript API}
     */
-  def zindex_changed(): Unit = js.native
+  def zindex_changed(): Unit
 }
 object MarkerHandlerMap {
   
@@ -165,7 +163,7 @@ object MarkerHandlerMap {
   }
   
   @scala.inline
-  implicit class MarkerHandlerMapMutableBuilder[Self <: MarkerHandlerMap[_], C /* <: Marker */] (val x: Self with MarkerHandlerMap[C]) extends AnyVal {
+  implicit class MarkerHandlerMapMutableBuilder[Self <: MarkerHandlerMap[?], C /* <: Marker */] (val x: Self & MarkerHandlerMap[C]) extends AnyVal {
     
     @scala.inline
     def setAnimation_changed(value: () => Unit): Self = StObject.set(x, "animation_changed", js.Any.fromFunction0(value))

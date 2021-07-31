@@ -3,17 +3,18 @@ package typings.remotedevServer
 import typings.remotedevServer.remotedevServerBooleans.`true`
 import typings.remotedevServer.remotedevServerStrings.http
 import typings.remotedevServer.remotedevServerStrings.https
-import typings.socketcluster.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(argv: Options): js.Promise[typings.socketcluster.mod.^ | PortUsedError] = ^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.socketcluster.mod.^ | PortUsedError]]
+  
   @JSImport("remotedev-server", JSImport.Namespace)
   @js.native
-  def apply(argv: Options): js.Promise[^ | PortUsedError] = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait LogLevel extends StObject
@@ -22,56 +23,63 @@ object mod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
     
     @js.native
-    sealed trait ERROR extends LogLevel
-    /* 1 */ val ERROR: typings.remotedevServer.mod.LogLevel.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with LogLevel
+    /* 1 */ val ERROR: typings.remotedevServer.mod.LogLevel.ERROR & Double = js.native
     
     @js.native
-    sealed trait INFO extends LogLevel
-    /* 3 */ val INFO: typings.remotedevServer.mod.LogLevel.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with LogLevel
+    /* 3 */ val INFO: typings.remotedevServer.mod.LogLevel.INFO & Double = js.native
     
     @js.native
-    sealed trait NONE extends LogLevel
-    /* 0 */ val NONE: typings.remotedevServer.mod.LogLevel.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with LogLevel
+    /* 0 */ val NONE: typings.remotedevServer.mod.LogLevel.NONE & Double = js.native
     
     @js.native
-    sealed trait WARN extends LogLevel
-    /* 2 */ val WARN: typings.remotedevServer.mod.LogLevel.WARN with Double = js.native
+    sealed trait WARN
+      extends StObject
+         with LogLevel
+    /* 2 */ val WARN: typings.remotedevServer.mod.LogLevel.WARN & Double = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** The cert file for running a HTTPS server (`protocol` must be set to "https"). */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /** Database configuration, can be an object or a path to a JSON configuration file. */
-    var dbOptions: js.UndefOr[String] = js.native
+    var dbOptions: js.UndefOr[String] = js.undefined
     
     /** Hostname. */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /** The key file for running a HTTPS server (`protocol` must be set to "https"). */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var logHTTPRequests: js.UndefOr[Boolean] = js.native
+    var logHTTPRequests: js.UndefOr[Boolean] = js.undefined
     
     /** The socket server log level. */
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
     /** The key passphrase for running a HTTPS server (`protocol` must be set to "https"). */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /** Port. */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Protocol. */
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
     /** The socket server websocket engine. */
-    var wsEngine: js.UndefOr[String] = js.native
+    var wsEngine: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -146,18 +154,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PortUsedError extends StObject {
     
-    def on(status: String, cb: js.Function0[Unit]): Unit = js.native
+    def on(status: String, cb: js.Function0[Unit]): Unit
     
-    var portAlreadyUsed: `true` = js.native
+    var portAlreadyUsed: `true`
   }
   object PortUsedError {
     
     @scala.inline
-    def apply(on: (String, js.Function0[Unit]) => Unit, portAlreadyUsed: `true`): PortUsedError = {
-      val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), portAlreadyUsed = portAlreadyUsed.asInstanceOf[js.Any])
+    def apply(on: (String, js.Function0[Unit]) => Unit): PortUsedError = {
+      val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), portAlreadyUsed = true)
       __obj.asInstanceOf[PortUsedError]
     }
     

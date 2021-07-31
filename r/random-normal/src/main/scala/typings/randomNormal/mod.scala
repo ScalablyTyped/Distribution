@@ -2,7 +2,6 @@ package typings.randomNormal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,21 +12,22 @@ object mod {
     * deviation of 1 which is the standard normal distribution.
     * @param options Controls the shape of the normal distribution
     */
-  @JSImport("random-normal", JSImport.Namespace)
-  @js.native
-  def apply(): Double = js.native
-  @JSImport("random-normal", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Double = js.native
+  @scala.inline
+  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
+  @scala.inline
+  def apply(options: Options): Double = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  @JSImport("random-normal", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /** The standard deviation of the normal distribution. Defaults to 1 */
-    var dev: js.UndefOr[Double] = js.native
+    var dev: js.UndefOr[Double] = js.undefined
     
     /** The mean of the normal distribution. Defaults to 0 */
-    var mean: js.UndefOr[Double] = js.native
+    var mean: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

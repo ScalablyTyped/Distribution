@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.emr
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterCoreInstanceFleetInstanceTypeConfig extends StObject {
   
   /**
     * The bid price for each EC2 Spot instance type as defined by `instanceType`. Expressed in USD. If neither `bidPrice` nor `bidPriceAsPercentageOfOnDemandPrice` is provided, `bidPriceAsPercentageOfOnDemandPrice` defaults to 100%.
     */
-  var bidPrice: js.UndefOr[Input[String]] = js.native
+  var bidPrice: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The bid price, as a percentage of On-Demand price, for each EC2 Spot instance as defined by `instanceType`. Expressed as a number (for example, 20 specifies 20%). If neither `bidPrice` nor `bidPriceAsPercentageOfOnDemandPrice` is provided, `bidPriceAsPercentageOfOnDemandPrice` defaults to 100%.
     */
-  var bidPriceAsPercentageOfOnDemandPrice: js.UndefOr[Input[Double]] = js.native
+  var bidPriceAsPercentageOfOnDemandPrice: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * A configuration classification that applies when provisioning cluster instances, which can include configurations for applications and software that run on the cluster. List of `configuration` blocks.
     */
-  var configurations: js.UndefOr[Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfigConfiguration]]]] = js.native
+  var configurations: js.UndefOr[Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfigConfiguration]]]] = js.undefined
   
   /**
     * Configuration block(s) for EBS volumes attached to each instance in the instance group. Detailed below.
     */
-  var ebsConfigs: js.UndefOr[Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfigEbsConfig]]]] = js.native
+  var ebsConfigs: js.UndefOr[Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfigEbsConfig]]]] = js.undefined
   
   /**
     * An EC2 instance type, such as m4.xlarge.
     */
-  var instanceType: Input[String] = js.native
+  var instanceType: Input[String]
   
   /**
     * The number of units that a provisioned instance of this type provides toward fulfilling the target capacities defined in `aws.emr.InstanceFleet`.
     */
-  var weightedCapacity: js.UndefOr[Input[Double]] = js.native
+  var weightedCapacity: js.UndefOr[Input[Double]] = js.undefined
 }
 object ClusterCoreInstanceFleetInstanceTypeConfig {
   

@@ -6,7 +6,6 @@ import typings.node.streamMod.Transform
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,8 +66,9 @@ object mod {
   
   type JsonArray = js.Array[Boolean | Date | Double | JsonMap | String]
   
-  @js.native
-  trait JsonMap extends /* key */ StringDictionary[AnyJson]
+  trait JsonMap
+    extends StObject
+       with /* key */ StringDictionary[AnyJson]
   object JsonMap {
     
     @scala.inline
@@ -78,13 +78,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * The amount text to parser per pass through the event loop. Defaults to 40kb (`40000`).
       */
-    var blocksize: Double = js.native
+    var blocksize: Double
   }
   object ParseOptions {
     

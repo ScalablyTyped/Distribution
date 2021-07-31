@@ -2,24 +2,22 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListServiceConfigs method.
   */
-@js.native
 trait SchemaListServiceConfigsResponse extends StObject {
   
   /**
     * The token of the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of service configuration resources.
     */
-  var serviceConfigs: js.UndefOr[js.Array[SchemaService]] = js.native
+  var serviceConfigs: js.UndefOr[js.Array[SchemaService]] = js.undefined
 }
 object SchemaListServiceConfigsResponse {
   

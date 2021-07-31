@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationRecorder extends StObject {
   
   /**
     * The name of the recorder. By default, AWS Config automatically assigns the name "default" when creating the configuration recorder. You cannot change the assigned name.
     */
-  var name: js.UndefOr[RecorderName] = js.native
+  var name: js.UndefOr[RecorderName] = js.undefined
   
   /**
     * Specifies the types of AWS resources for which AWS Config records configuration changes.
     */
-  var recordingGroup: js.UndefOr[RecordingGroup] = js.native
+  var recordingGroup: js.UndefOr[RecordingGroup] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the IAM role used to describe the AWS resources associated with the account.
     */
-  var roleARN: js.UndefOr[String] = js.native
+  var roleARN: js.UndefOr[String] = js.undefined
 }
 object ConfigurationRecorder {
   

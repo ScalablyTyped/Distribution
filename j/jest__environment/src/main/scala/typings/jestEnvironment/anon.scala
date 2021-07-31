@@ -5,7 +5,6 @@ import typings.jestTypes.globalMod.TestFn
 import typings.jestTypes.globalMod.TestName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -24,10 +23,9 @@ object anon {
     def apply(fn: HookFn, timeout: Double): Unit = js.native
   }
   
-  @js.native
   trait Virtual extends StObject {
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object Virtual {
     

@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.text.XFlatParagraphIteratorProvi
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * API for the proofreading iterator that mediates between the document and the proofreader.
   * @since OOo 3.0.1
   */
-@js.native
-trait XProofreadingIterator extends XInterface {
+trait XProofreadingIterator
+  extends StObject
+     with XInterface {
   
   /**
     * start proofreading from a given position
@@ -36,17 +36,17 @@ trait XProofreadingIterator extends XInterface {
     nStartOfSentencePosition: Double,
     nSuggestedBehindEndOfSentencePosition: Double,
     nErrorPositionInParagraph: Double
-  ): ProofreadingResult = js.native
+  ): ProofreadingResult
   
   /**
     * checks if the given document is currently being checked
     * @param xDocument the document.
     * @returns if the document is currently being checked.
     */
-  def isProofreading(xDocument: XInterface): Boolean = js.native
+  def isProofreading(xDocument: XInterface): Boolean
   
   /** clears the list of ignored rules for each proofreader */
-  def resetIgnoreRules(): Unit = js.native
+  def resetIgnoreRules(): Unit
   
   /**
     * start proofreading and automatically process the whole text
@@ -54,7 +54,7 @@ trait XProofreadingIterator extends XInterface {
     * @param xIteratorProvider the flat paragraph iterator provider.
     * @throws IllegalArgumentException when any argument is wrong.
     */
-  def startProofreading(xDocument: XInterface, xIteratorProvider: XFlatParagraphIteratorProvider): Unit = js.native
+  def startProofreading(xDocument: XInterface, xIteratorProvider: XFlatParagraphIteratorProvider): Unit
 }
 object XProofreadingIterator {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionDetail extends StObject {
   
   /**
     * The configuration settings for this workflow execution including timeout values, tasklist etc.
     */
-  var executionConfiguration: WorkflowExecutionConfiguration = js.native
+  var executionConfiguration: WorkflowExecutionConfiguration
   
   /**
     * Information about the workflow execution.
     */
-  var executionInfo: WorkflowExecutionInfo = js.native
+  var executionInfo: WorkflowExecutionInfo
   
   /**
     * The time when the last activity task was scheduled for this workflow execution. You can use this information to determine if the workflow has not made progress for an unusually long period of time and might require a corrective action.
     */
-  var latestActivityTaskTimestamp: js.UndefOr[Timestamp] = js.native
+  var latestActivityTaskTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The latest executionContext provided by the decider for this workflow execution. A decider can provide an executionContext (a free-form string) when closing a decision task using RespondDecisionTaskCompleted.
     */
-  var latestExecutionContext: js.UndefOr[Data] = js.native
+  var latestExecutionContext: js.UndefOr[Data] = js.undefined
   
   /**
     * The number of tasks for this workflow execution. This includes open and closed tasks of all types.
     */
-  var openCounts: WorkflowExecutionOpenCounts = js.native
+  var openCounts: WorkflowExecutionOpenCounts
 }
 object WorkflowExecutionDetail {
   

@@ -3,15 +3,15 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityGrantApiKey[T] extends Generic {
+trait SecurityGrantApiKey[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
 }
 object SecurityGrantApiKey {
   
@@ -22,7 +22,7 @@ object SecurityGrantApiKey {
   }
   
   @scala.inline
-  implicit class SecurityGrantApiKeyMutableBuilder[Self <: SecurityGrantApiKey[_], T] (val x: Self with SecurityGrantApiKey[T]) extends AnyVal {
+  implicit class SecurityGrantApiKeyMutableBuilder[Self <: SecurityGrantApiKey[?], T] (val x: Self & SecurityGrantApiKey[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

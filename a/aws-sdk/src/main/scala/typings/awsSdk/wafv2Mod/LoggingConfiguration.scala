@@ -2,31 +2,29 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfiguration extends StObject {
   
   /**
     * The Amazon Kinesis Data Firehose Amazon Resource Name (ARNs) that you want to associate with the web ACL.
     */
-  var LogDestinationConfigs: typings.awsSdk.wafv2Mod.LogDestinationConfigs = js.native
+  var LogDestinationConfigs: typings.awsSdk.wafv2Mod.LogDestinationConfigs
   
   /**
     * Indicates whether the logging configuration was created by AWS Firewall Manager, as part of an AWS WAF policy configuration. If true, only Firewall Manager can modify or delete the configuration. 
     */
-  var ManagedByFirewallManager: js.UndefOr[Boolean] = js.native
+  var ManagedByFirewallManager: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The parts of the request that you want to keep out of the logs. For example, if you redact the HEADER field, the HEADER field in the firehose will be xxx.   You must use one of the following values: URI, QUERY_STRING, HEADER, or METHOD. 
     */
-  var RedactedFields: js.UndefOr[typings.awsSdk.wafv2Mod.RedactedFields] = js.native
+  var RedactedFields: js.UndefOr[typings.awsSdk.wafv2Mod.RedactedFields] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the web ACL that you want to associate with LogDestinationConfigs.
     */
-  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn
 }
 object LoggingConfiguration {
   

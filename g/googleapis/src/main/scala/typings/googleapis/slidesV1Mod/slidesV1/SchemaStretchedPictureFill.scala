@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The stretched picture fill. The page or page element is filled entirely
   * with the specified picture. The picture is stretched to fit its container.
   */
-@js.native
 trait SchemaStretchedPictureFill extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait SchemaStretchedPictureFill extends StObject {
     * megapixels, and must be in one of PNG, JPEG, or GIF format.  The provided
     * URL can be at most 2 kB in length.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The original size of the picture fill. This field is read-only.
     */
-  var size: js.UndefOr[SchemaSize] = js.native
+  var size: js.UndefOr[SchemaSize] = js.undefined
 }
 object SchemaStretchedPictureFill {
   

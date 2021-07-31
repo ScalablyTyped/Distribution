@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStackPolicyInput extends StObject {
   
   /**
     * The name or unique stack ID that is associated with the stack whose policy you want to get.
     */
-  var StackName: typings.awsSdk.cloudformationMod.StackName = js.native
+  var StackName: typings.awsSdk.cloudformationMod.StackName
 }
 object GetStackPolicyInput {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLifecyclePolicyResponse extends StObject {
   
   /**
     * The identifier of the lifecycle policy.
     */
-  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.native
+  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.undefined
 }
 object CreateLifecyclePolicyResponse {
   

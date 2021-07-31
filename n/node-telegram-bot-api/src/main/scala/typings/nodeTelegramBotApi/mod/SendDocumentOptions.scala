@@ -2,15 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendDocumentOptions extends SendBasicOptions {
+trait SendDocumentOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var parse_mode: js.UndefOr[ParseMode] = js.native
+  var parse_mode: js.UndefOr[ParseMode] = js.undefined
 }
 object SendDocumentOptions {
   

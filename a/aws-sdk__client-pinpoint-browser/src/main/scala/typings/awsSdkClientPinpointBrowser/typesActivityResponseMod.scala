@@ -2,82 +2,80 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesActivityResponseMod {
   
-  @js.native
   trait ActivityResponse extends StObject {
     
     /**
       * The ID of the application to which the campaign applies.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the campaign to which the activity applies.
       */
-    var CampaignId: js.UndefOr[String] = js.native
+    var CampaignId: js.UndefOr[String] = js.undefined
     
     /**
       * The actual time the activity was marked CANCELLED or COMPLETED. Provided in ISO 8601 format.
       */
-    var End: js.UndefOr[String] = js.native
+    var End: js.UndefOr[String] = js.undefined
     
     /**
       * The unique activity ID.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether the activity succeeded.
       *
       * Valid values: SUCCESS, FAIL
       */
-    var Result: js.UndefOr[String] = js.native
+    var Result: js.UndefOr[String] = js.undefined
     
     /**
       * The scheduled start time for the activity in ISO 8601 format.
       */
-    var ScheduledStart: js.UndefOr[String] = js.native
+    var ScheduledStart: js.UndefOr[String] = js.undefined
     
     /**
       * The actual start time of the activity in ISO 8601 format.
       */
-    var Start: js.UndefOr[String] = js.native
+    var Start: js.UndefOr[String] = js.undefined
     
     /**
       * The state of the activity.
       *
       * Valid values: PENDING, INITIALIZING, RUNNING, PAUSED, CANCELLED, COMPLETED
       */
-    var State: js.UndefOr[String] = js.native
+    var State: js.UndefOr[String] = js.undefined
     
     /**
       * The total number of endpoints to which the campaign successfully delivered messages.
       */
-    var SuccessfulEndpointCount: js.UndefOr[Double] = js.native
+    var SuccessfulEndpointCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The total number of timezones completed.
       */
-    var TimezonesCompletedCount: js.UndefOr[Double] = js.native
+    var TimezonesCompletedCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The total number of unique timezones present in the segment.
       */
-    var TimezonesTotalCount: js.UndefOr[Double] = js.native
+    var TimezonesTotalCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The total number of endpoints to which the campaign attempts to deliver messages.
       */
-    var TotalEndpointCount: js.UndefOr[Double] = js.native
+    var TotalEndpointCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of a variation of the campaign used for A/B testing.
       */
-    var TreatmentId: js.UndefOr[String] = js.native
+    var TreatmentId: js.UndefOr[String] = js.undefined
   }
   object ActivityResponse {
     

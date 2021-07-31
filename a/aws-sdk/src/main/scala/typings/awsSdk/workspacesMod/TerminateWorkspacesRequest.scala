@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpaces to terminate. You can specify up to 25 WorkSpaces.
     */
-  var TerminateWorkspaceRequests: typings.awsSdk.workspacesMod.TerminateWorkspaceRequests = js.native
+  var TerminateWorkspaceRequests: typings.awsSdk.workspacesMod.TerminateWorkspaceRequests
 }
 object TerminateWorkspacesRequest {
   

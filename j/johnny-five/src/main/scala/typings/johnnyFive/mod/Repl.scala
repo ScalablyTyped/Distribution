@@ -2,13 +2,11 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Repl extends StObject {
   
-  def inject(`object`: js.Any): Unit = js.native
+  def inject(`object`: js.Any): Unit
 }
 object Repl {
   

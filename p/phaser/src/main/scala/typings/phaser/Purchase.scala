@@ -2,41 +2,39 @@ package typings.phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Purchase extends StObject {
   
   /**
     * A developer-specified string, provided during the purchase of the product.
     */
-  var developerPayload: js.UndefOr[String] = js.native
+  var developerPayload: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the purchase transaction.
     */
-  var paymentID: js.UndefOr[String] = js.native
+  var paymentID: js.UndefOr[String] = js.undefined
   
   /**
     * The product's game-specified identifier.
     */
-  var productID: js.UndefOr[String] = js.native
+  var productID: js.UndefOr[String] = js.undefined
   
   /**
     * Unix timestamp of when the purchase occurred.
     */
-  var purchaseTime: js.UndefOr[String] = js.native
+  var purchaseTime: js.UndefOr[String] = js.undefined
   
   /**
     * A token representing the purchase that may be used to consume the purchase.
     */
-  var purchaseToken: js.UndefOr[String] = js.native
+  var purchaseToken: js.UndefOr[String] = js.undefined
   
   /**
     * Server-signed encoding of the purchase request.
     */
-  var signedRequest: js.UndefOr[String] = js.native
+  var signedRequest: js.UndefOr[String] = js.undefined
 }
 object Purchase {
   

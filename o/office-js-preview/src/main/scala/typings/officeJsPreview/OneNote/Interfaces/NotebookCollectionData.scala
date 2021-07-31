@@ -2,14 +2,12 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "notebookCollection.toJSON()". */
-@js.native
 trait NotebookCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[NotebookData]] = js.native
+  var items: js.UndefOr[js.Array[NotebookData]] = js.undefined
 }
 object NotebookCollectionData {
   

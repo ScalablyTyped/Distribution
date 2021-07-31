@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,6 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "SceneRegistryItem")
 @js.native
 class SceneRegistryItem protected ()
-  extends typings.playcanvas.pc.SceneRegistryItem {
+  extends StObject
+     with typings.playcanvas.pc.SceneRegistryItem {
   def this(name: String, url: String) = this()
+  
+  /**
+    * The name of the scene.
+    */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /**
+    * The url of the scene file.
+    */
+  /* CompleteClass */
+  var url: String = js.native
 }

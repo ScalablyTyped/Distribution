@@ -2,13 +2,11 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Laypage extends StObject {
   
-  def render(options: PageOptions): js.Any = js.native
+  def render(options: PageOptions): js.Any
 }
 object Laypage {
   

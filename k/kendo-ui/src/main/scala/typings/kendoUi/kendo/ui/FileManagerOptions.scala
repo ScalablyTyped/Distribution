@@ -3,59 +3,57 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.FileManagerDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerOptions extends StObject {
   
-  var breadcrumb: js.UndefOr[Boolean | FileManagerBreadcrumb] = js.native
+  var breadcrumb: js.UndefOr[Boolean | FileManagerBreadcrumb] = js.undefined
   
-  var contextMenu: js.UndefOr[Boolean | FileManagerContextMenu] = js.native
+  var contextMenu: js.UndefOr[Boolean | FileManagerContextMenu] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | FileManagerDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | FileManagerDataSource] = js.undefined
   
-  var dialogs: js.UndefOr[FileManagerDialogs] = js.native
+  var dialogs: js.UndefOr[FileManagerDialogs] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var drop: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var execute: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var execute: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var initialView: js.UndefOr[String] = js.native
+  var initialView: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[FileManagerMessages] = js.native
+  var messages: js.UndefOr[FileManagerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var previewPane: js.UndefOr[FileManagerPreviewPane] = js.native
+  var previewPane: js.UndefOr[FileManagerPreviewPane] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var toolbar: js.UndefOr[Boolean | FileManagerToolbar] = js.native
+  var toolbar: js.UndefOr[Boolean | FileManagerToolbar] = js.undefined
   
-  var upload: js.UndefOr[js.Any] = js.native
+  var upload: js.UndefOr[js.Any] = js.undefined
   
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
   
-  var views: js.UndefOr[FileManagerViews] = js.native
+  var views: js.UndefOr[FileManagerViews] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object FileManagerOptions {
   

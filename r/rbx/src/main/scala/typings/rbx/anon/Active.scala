@@ -3,25 +3,23 @@ package typings.rbx.anon
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: Requireable[Boolean] = js.native
+  var active: Requireable[Boolean]
   
-  var clipped: Requireable[Boolean] = js.native
+  var clipped: Requireable[Boolean]
   
-  var closeOnBlur: Requireable[Boolean] = js.native
+  var closeOnBlur: Requireable[Boolean]
   
-  var closeOnEsc: Requireable[Boolean] = js.native
+  var closeOnEsc: Requireable[Boolean]
   
-  var containerClassName: Requireable[String] = js.native
+  var containerClassName: Requireable[String]
   
-  var document: Requireable[js.Object] = js.native
+  var document: Requireable[js.Object]
   
-  var onClose: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+  var onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
 }
 object Active {
   
@@ -33,7 +31,7 @@ object Active {
     closeOnEsc: Requireable[Boolean],
     containerClassName: Requireable[String],
     document: Requireable[js.Object],
-    onClose: Requireable[js.Function1[/* repeated */ _, _]]
+    onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
   ): Active = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], clipped = clipped.asInstanceOf[js.Any], closeOnBlur = closeOnBlur.asInstanceOf[js.Any], closeOnEsc = closeOnEsc.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
@@ -61,6 +59,6 @@ object Active {
     def setDocument(value: Requireable[js.Object]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
   }
 }

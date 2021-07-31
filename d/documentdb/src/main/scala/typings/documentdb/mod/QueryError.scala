@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryError extends StObject {
   
   /** A string representing the error information. */
-  var body: String = js.native
+  var body: String
   
   /** The response code corresponding to the error. */
-  var code: Double = js.native
+  var code: Double
 }
 object QueryError {
   

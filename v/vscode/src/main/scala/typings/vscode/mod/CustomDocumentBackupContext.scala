@@ -2,13 +2,11 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information used to implement [`CustomEditableDocument.backup`](#CustomEditableDocument.backup).
   */
-@js.native
 trait CustomDocumentBackupContext extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CustomDocumentBackupContext extends StObject {
     * `ExtensionContext.storagePath`. The parent folder of `destination` may not exist, so make sure to created it
     * before writing the backup to this location.
     */
-  val destination: Uri = js.native
+  val destination: Uri
 }
 object CustomDocumentBackupContext {
   

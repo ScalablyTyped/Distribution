@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLayoutMetricsResponse extends StObject {
   
   /**
     * Size of scrollable area.
     */
-  var contentSize: Rect = js.native
+  var contentSize: Rect
   
   /**
     * Metrics relating to the layout viewport.
     */
-  var layoutViewport: LayoutViewport = js.native
+  var layoutViewport: LayoutViewport
   
   /**
     * Metrics relating to the visual viewport.
     */
-  var visualViewport: VisualViewport = js.native
+  var visualViewport: VisualViewport
 }
 object GetLayoutMetricsResponse {
   

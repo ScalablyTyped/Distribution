@@ -13,7 +13,6 @@ import typings.std.Error
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,27 +52,37 @@ object mod {
     object modes extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[modes with String] = js.native
+      def apply(value: String): js.UndefOr[modes & String] = js.native
       
       @js.native
-      sealed trait COMMENT extends modes
-      /* "comment" */ val COMMENT: typings.ejs.mod.Template.modes.COMMENT with String = js.native
+      sealed trait COMMENT
+        extends StObject
+           with modes
+      /* "comment" */ val COMMENT: typings.ejs.mod.Template.modes.COMMENT & String = js.native
       
       @js.native
-      sealed trait ESCAPED extends modes
-      /* "escaped" */ val ESCAPED: typings.ejs.mod.Template.modes.ESCAPED with String = js.native
+      sealed trait ESCAPED
+        extends StObject
+           with modes
+      /* "escaped" */ val ESCAPED: typings.ejs.mod.Template.modes.ESCAPED & String = js.native
       
       @js.native
-      sealed trait EVAL extends modes
-      /* "eval" */ val EVAL: typings.ejs.mod.Template.modes.EVAL with String = js.native
+      sealed trait EVAL
+        extends StObject
+           with modes
+      /* "eval" */ val EVAL: typings.ejs.mod.Template.modes.EVAL & String = js.native
       
       @js.native
-      sealed trait LITERAL extends modes
-      /* "literal" */ val LITERAL: typings.ejs.mod.Template.modes.LITERAL with String = js.native
+      sealed trait LITERAL
+        extends StObject
+           with modes
+      /* "literal" */ val LITERAL: typings.ejs.mod.Template.modes.LITERAL & String = js.native
       
       @js.native
-      sealed trait RAW extends modes
-      /* "raw" */ val RAW: typings.ejs.mod.Template.modes.RAW with String = js.native
+      sealed trait RAW
+        extends StObject
+           with modes
+      /* "raw" */ val RAW: typings.ejs.mod.Template.modes.RAW & String = js.native
     }
   }
   
@@ -87,9 +96,8 @@ object mod {
   @scala.inline
   def cache_=(x: Cache_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
   
-  @JSImport("ejs", "clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
   @JSImport("ejs", "closeDelimiter")
   @js.native
@@ -97,30 +105,24 @@ object mod {
   @scala.inline
   def closeDelimiter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeDelimiter")(x.asInstanceOf[js.Any])
   
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String): TemplateFunction | AsyncTemplateFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String, opts: Optionsasyncfalseundefine): TemplateFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String, opts: OptionsasyncfalseundefineAsync): ClientFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String, opts: Optionsasynctrueclientfal): AsyncTemplateFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String, opts: Optionsasynctrueclienttru): AsyncClientFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile(template: String, opts: Options): TemplateFunction | AsyncTemplateFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile_ClientFunction(template: String): ClientFunction = js.native
-  @JSImport("ejs", "compile")
-  @js.native
-  def compile_TemplateFunction(template: String): TemplateFunction = js.native
+  @scala.inline
+  def compile(template: String): TemplateFunction | AsyncTemplateFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[TemplateFunction | AsyncTemplateFunction]
+  @scala.inline
+  def compile(template: String, opts: Optionsasyncfalseundefine): TemplateFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TemplateFunction]
+  @scala.inline
+  def compile(template: String, opts: OptionsasyncfalseundefineAsync): ClientFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClientFunction]
+  @scala.inline
+  def compile(template: String, opts: Optionsasynctrueclientfal): AsyncTemplateFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AsyncTemplateFunction]
+  @scala.inline
+  def compile(template: String, opts: Optionsasynctrueclienttru): AsyncClientFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AsyncClientFunction]
+  @scala.inline
+  def compile(template: String, opts: Options): TemplateFunction | AsyncTemplateFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TemplateFunction | AsyncTemplateFunction]
+  
+  @scala.inline
+  def compile_ClientFunction(template: String): ClientFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[ClientFunction]
+  
+  @scala.inline
+  def compile_TemplateFunction(template: String): TemplateFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[TemplateFunction]
   
   @JSImport("ejs", "delimiter")
   @js.native
@@ -128,12 +130,10 @@ object mod {
   @scala.inline
   def delimiter_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
   
-  @JSImport("ejs", "escapeXML")
-  @js.native
-  def escapeXML(): String = js.native
-  @JSImport("ejs", "escapeXML")
-  @js.native
-  def escapeXML(markup: js.Any): String = js.native
+  @scala.inline
+  def escapeXML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")().asInstanceOf[String]
+  @scala.inline
+  def escapeXML(markup: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(markup.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ejs", "fileLoader")
   @js.native
@@ -164,72 +164,51 @@ object mod {
   @scala.inline
   def promiseImpl_=(x: js.UndefOr[PromiseConstructorLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promiseImpl")(x.asInstanceOf[js.Any])
   
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: js.UndefOr[scala.Nothing], opts: Optionsasyncfalse): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: js.UndefOr[scala.Nothing], opts: Optionsasyncneverundefine): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: js.UndefOr[scala.Nothing], opts: Optionsasynctrue): js.Promise[String] = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: js.UndefOr[scala.Nothing], opts: Options): String | js.Promise[String] = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: Data): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: Data, opts: Optionsasyncfalse): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: Data, opts: Optionsasyncneverundefine): String = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: Data, opts: Optionsasynctrue): js.Promise[String] = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render(template: String, data: Data, opts: Options): String | js.Promise[String] = js.native
+  @scala.inline
+  def render(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Unit, opts: Optionsasyncfalse): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Unit, opts: Optionsasyncneverundefine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Unit, opts: Optionsasynctrue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def render(template: String, data: Unit, opts: Options): String | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | js.Promise[String]]
+  @scala.inline
+  def render(template: String, data: Data): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Data, opts: Optionsasyncfalse): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Data, opts: Optionsasyncneverundefine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, data: Data, opts: Optionsasynctrue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def render(template: String, data: Data, opts: Options): String | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | js.Promise[String]]
   
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile(path: String): js.Promise[String] = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile(path: String, data: js.UndefOr[scala.Nothing], opts: Options): js.Promise[String] = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile(path: String, data: Data): js.Promise[String] = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile(path: String, data: Data, opts: Options): js.Promise[String] = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile[T](path: String, cb: RenderFileCallback[T]): T = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile[T](path: String, data: Data, cb: RenderFileCallback[T]): T = js.native
-  @JSImport("ejs", "renderFile")
-  @js.native
-  def renderFile[T](path: String, data: Data, opts: Options, cb: RenderFileCallback[T]): T = js.native
+  @scala.inline
+  def renderFile(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def renderFile(path: String, data: Unit, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def renderFile(path: String, data: Data): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def renderFile(path: String, data: Data, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def renderFile[T](path: String, cb: RenderFileCallback[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def renderFile[T](path: String, data: Data, cb: RenderFileCallback[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def renderFile[T](path: String, data: Data, opts: Options, cb: RenderFileCallback[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("ejs", "render")
-  @js.native
-  def render_Union(template: String): String | js.Promise[String] = js.native
-  @JSImport("ejs", "render")
-  @js.native
-  def render_Union(template: String, data: Data): String | js.Promise[String] = js.native
+  @scala.inline
+  def render_Union(template: String): String | js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any]).asInstanceOf[String | js.Promise[String]]
+  @scala.inline
+  def render_Union(template: String, data: Data): String | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | js.Promise[String]]
   
-  @JSImport("ejs", "resolveInclude")
-  @js.native
-  def resolveInclude(name: String, filename: String): String = js.native
-  @JSImport("ejs", "resolveInclude")
-  @js.native
-  def resolveInclude(name: String, filename: String, isDir: Boolean): String = js.native
+  @scala.inline
+  def resolveInclude(name: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveInclude")(name.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def resolveInclude(name: String, filename: String, isDir: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveInclude")(name.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], isDir.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type AsyncClientFunction = js.Function4[
     /* locals */ js.UndefOr[Data], 
@@ -241,7 +220,6 @@ object mod {
   
   type AsyncTemplateFunction = js.Function1[/* data */ js.UndefOr[Data], js.Promise[String]]
   
-  @js.native
   trait Cache_ extends StObject {
     
     /**
@@ -249,12 +227,12 @@ object mod {
       *
       * @param key key for caching
       */
-    def get(key: String): js.UndefOr[TemplateFunction] = js.native
+    def get(key: String): js.UndefOr[TemplateFunction]
     
     /**
       * Clear the entire cache.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * Cache the intermediate JavaScript function for a template.
@@ -262,7 +240,7 @@ object mod {
       * @param key key for caching
       * @param val cached function
       */
-    def set(key: String, `val`: TemplateFunction): Unit = js.native
+    def set(key: String, `val`: TemplateFunction): Unit
   }
   object Cache_ {
     
@@ -304,7 +282,6 @@ object mod {
   
   type IncludeCallback = js.Function2[/* path */ String, /* data */ js.UndefOr[Data], String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -314,7 +291,7 @@ object mod {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -322,14 +299,14 @@ object mod {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -341,7 +318,7 @@ object mod {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -350,7 +327,7 @@ object mod {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -359,7 +336,7 @@ object mod {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -367,27 +344,27 @@ object mod {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -395,7 +372,7 @@ object mod {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -403,7 +380,7 @@ object mod {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -411,14 +388,14 @@ object mod {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -427,10 +404,10 @@ object mod {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -440,7 +417,7 @@ object mod {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -448,7 +425,7 @@ object mod {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -456,7 +433,7 @@ object mod {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

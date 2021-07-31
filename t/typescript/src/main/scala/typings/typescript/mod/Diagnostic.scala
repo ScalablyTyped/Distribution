@@ -2,20 +2,20 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Diagnostic extends DiagnosticRelatedInformation {
+trait Diagnostic
+  extends StObject
+     with DiagnosticRelatedInformation {
   
-  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.native
+  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.undefined
   
-  var reportsDeprecated: js.UndefOr[js.Object] = js.native
+  var reportsDeprecated: js.UndefOr[js.Object] = js.undefined
   
   /** May store more in future. For now, this will simply be `true` to indicate when a diagnostic is an unused-identifier diagnostic. */
-  var reportsUnnecessary: js.UndefOr[js.Object] = js.native
+  var reportsUnnecessary: js.UndefOr[js.Object] = js.undefined
   
-  var source: js.UndefOr[java.lang.String] = js.native
+  var source: js.UndefOr[java.lang.String] = js.undefined
 }
 object Diagnostic {
   

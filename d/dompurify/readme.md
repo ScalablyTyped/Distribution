@@ -10,9 +10,9 @@ DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathM
 | ------------------ | :-------------: |
 | Full name          | dompurify |
 | Keywords           | dom, xss, html, svg, mathml, security, secure, sanitizer, sanitize, filter, purify |
-| # releases         | 27 |
-| # dependents       | 351 |
-| # downloads        | 24226721 |
+| # releases         | 31 |
+| # dependents       | 382 |
+| # downloads        | 27745126 |
 | # stars            | 16 |
 
 ## Links

@@ -4,41 +4,39 @@ import typings.rsocketFlowable.mod.Flowable
 import typings.rsocketFlowable.mod.Single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Responder[D, M] extends StObject {
   
   /**
     * Fire and Forget interaction model of `ReactiveSocket`. The returned
     * Publisher resolves when the passed `payload` is successfully handled.
     */
-  def fireAndForget(payload: Payload[D, M]): Unit = js.native
+  def fireAndForget(payload: Payload[D, M]): Unit
   
   /**
     * Metadata-Push interaction model of `ReactiveSocket`. The returned Publisher
     * resolves when the passed `payload` is successfully handled.
     */
-  def metadataPush(payload: Payload[D, M]): Single[Unit] = js.native
+  def metadataPush(payload: Payload[D, M]): Single[Unit]
   
   /**
     * Request-Channel interaction model of `ReactiveSocket`. The returned
     * Publisher returns values representing the response(s).
     */
-  def requestChannel(payloads: Flowable[Payload[D, M]]): Flowable[Payload[D, M]] = js.native
+  def requestChannel(payloads: Flowable[Payload[D, M]]): Flowable[Payload[D, M]]
   
   /**
     * Request-Response interaction model of `ReactiveSocket`. The returned
     * Publisher resolves with the response.
     */
-  def requestResponse(payload: Payload[D, M]): Single[Payload[D, M]] = js.native
+  def requestResponse(payload: Payload[D, M]): Single[Payload[D, M]]
   
   /**
     * Request-Stream interaction model of `ReactiveSocket`. The returned
     * Publisher returns values representing the response(s).
     */
-  def requestStream(payload: Payload[D, M]): Flowable[Payload[D, M]] = js.native
+  def requestStream(payload: Payload[D, M]): Flowable[Payload[D, M]]
 }
 object Responder {
   
@@ -55,7 +53,7 @@ object Responder {
   }
   
   @scala.inline
-  implicit class ResponderMutableBuilder[Self <: Responder[_, _], D, M] (val x: Self with (Responder[D, M])) extends AnyVal {
+  implicit class ResponderMutableBuilder[Self <: Responder[?, ?], D, M] (val x: Self & (Responder[D, M])) extends AnyVal {
     
     @scala.inline
     def setFireAndForget(value: Payload[D, M] => Unit): Self = StObject.set(x, "fireAndForget", js.Any.fromFunction1(value))

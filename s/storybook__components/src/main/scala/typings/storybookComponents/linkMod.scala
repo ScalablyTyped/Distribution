@@ -8,23 +8,21 @@ import typings.std.Element
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkMod {
   
   @JSImport("@storybook/components/dist/typography/link/link", "Link")
   @js.native
-  val Link: FunctionComponent[LinkProps with AProps] = js.native
+  val Link: FunctionComponent[LinkProps & AProps] = js.native
   
   type AProps = AnchorHTMLAttributes[HTMLAnchorElement]
   
-  @js.native
   trait LinkInnerProps extends StObject {
     
-    var containsIcon: js.UndefOr[Boolean] = js.native
+    var containsIcon: js.UndefOr[Boolean] = js.undefined
     
-    var withArrow: js.UndefOr[Boolean] = js.native
+    var withArrow: js.UndefOr[Boolean] = js.undefined
   }
   object LinkInnerProps {
     
@@ -51,20 +49,20 @@ object linkMod {
     }
   }
   
-  @js.native
   trait LinkProps
-    extends LinkInnerProps
+    extends StObject
+       with LinkInnerProps
        with LinkStylesProps {
     
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object LinkProps {
     
@@ -109,18 +107,17 @@ object linkMod {
     }
   }
   
-  @js.native
   trait LinkStylesProps extends StObject {
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var isButton: js.UndefOr[Boolean] = js.native
+    var isButton: js.UndefOr[Boolean] = js.undefined
     
-    var nochrome: js.UndefOr[Boolean] = js.native
+    var nochrome: js.UndefOr[Boolean] = js.undefined
     
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
-    var tertiary: js.UndefOr[Boolean] = js.native
+    var tertiary: js.UndefOr[Boolean] = js.undefined
   }
   object LinkStylesProps {
     

@@ -3,13 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFServerConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAuthenticationResultServerFinal extends StObject {
   
-  val ServerConnection: MFServerConnection = js.native
+  val ServerConnection: MFServerConnection
 }
 object IAuthenticationResultServerFinal {
   

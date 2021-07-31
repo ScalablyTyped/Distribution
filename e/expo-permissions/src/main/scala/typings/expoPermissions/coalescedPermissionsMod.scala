@@ -5,24 +5,23 @@ import typings.unimodulesPermissionsInterface.mod.PermissionExpiration
 import typings.unimodulesPermissionsInterface.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coalescedPermissionsMod {
   
-  @JSImport("expo-permissions/build/CoalescedPermissions", "coalesceCanAskAgain")
+  @JSImport("expo-permissions/build/CoalescedPermissions", JSImport.Namespace)
   @js.native
-  def coalesceCanAskAgain(permissions: PermissionMap): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-permissions/build/CoalescedPermissions", "coalesceExpirations")
-  @js.native
-  def coalesceExpirations(permissions: PermissionMap): PermissionExpiration = js.native
+  @scala.inline
+  def coalesceCanAskAgain(permissions: PermissionMap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("coalesceCanAskAgain")(permissions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("expo-permissions/build/CoalescedPermissions", "coalesceGranted")
-  @js.native
-  def coalesceGranted(permissions: PermissionMap): Boolean = js.native
+  @scala.inline
+  def coalesceExpirations(permissions: PermissionMap): PermissionExpiration = ^.asInstanceOf[js.Dynamic].applyDynamic("coalesceExpirations")(permissions.asInstanceOf[js.Any]).asInstanceOf[PermissionExpiration]
   
-  @JSImport("expo-permissions/build/CoalescedPermissions", "coalesceStatuses")
-  @js.native
-  def coalesceStatuses(permissions: PermissionMap): PermissionStatus = js.native
+  @scala.inline
+  def coalesceGranted(permissions: PermissionMap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("coalesceGranted")(permissions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def coalesceStatuses(permissions: PermissionMap): PermissionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("coalesceStatuses")(permissions.asInstanceOf[js.Any]).asInstanceOf[PermissionStatus]
 }

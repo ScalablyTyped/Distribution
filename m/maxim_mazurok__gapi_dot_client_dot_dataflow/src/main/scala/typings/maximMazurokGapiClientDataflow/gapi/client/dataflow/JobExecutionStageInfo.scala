@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecutionStageInfo extends StObject {
   
   /** The steps associated with the execution stage. Note that stages may have several steps, and that a given step might be run by more than one stage. */
-  var stepName: js.UndefOr[js.Array[String]] = js.native
+  var stepName: js.UndefOr[js.Array[String]] = js.undefined
 }
 object JobExecutionStageInfo {
   

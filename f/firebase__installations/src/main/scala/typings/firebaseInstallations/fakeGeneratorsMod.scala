@@ -6,23 +6,22 @@ import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.firebaseDependenciesMod.FirebaseDependencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fakeGeneratorsMod {
   
-  @JSImport("@firebase/installations/dist/src/testing/fake-generators", "getFakeApp")
+  @JSImport("@firebase/installations/dist/src/testing/fake-generators", JSImport.Namespace)
   @js.native
-  def getFakeApp(): FirebaseApp = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/installations/dist/src/testing/fake-generators", "getFakeAppConfig")
-  @js.native
-  def getFakeAppConfig(): AppConfig = js.native
-  @JSImport("@firebase/installations/dist/src/testing/fake-generators", "getFakeAppConfig")
-  @js.native
-  def getFakeAppConfig(customValues: PartialAppConfig): AppConfig = js.native
+  @scala.inline
+  def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
   
-  @JSImport("@firebase/installations/dist/src/testing/fake-generators", "getFakeDependencies")
-  @js.native
-  def getFakeDependencies(): FirebaseDependencies = js.native
+  @scala.inline
+  def getFakeAppConfig(): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")().asInstanceOf[AppConfig]
+  @scala.inline
+  def getFakeAppConfig(customValues: PartialAppConfig): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")(customValues.asInstanceOf[js.Any]).asInstanceOf[AppConfig]
+  
+  @scala.inline
+  def getFakeDependencies(): FirebaseDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeDependencies")().asInstanceOf[FirebaseDependencies]
 }

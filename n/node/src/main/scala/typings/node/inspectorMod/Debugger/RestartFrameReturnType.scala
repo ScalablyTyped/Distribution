@@ -4,27 +4,25 @@ import typings.node.inspectorMod.Runtime.StackTrace
 import typings.node.inspectorMod.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestartFrameReturnType extends StObject {
   
   /**
     * Async stack trace, if any.
     */
-  var asyncStackTrace: js.UndefOr[StackTrace] = js.native
+  var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Async stack trace, if any.
     * @experimental
     */
-  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * New stack trace.
     */
-  var callFrames: js.Array[CallFrame] = js.native
+  var callFrames: js.Array[CallFrame]
 }
 object RestartFrameReturnType {
   

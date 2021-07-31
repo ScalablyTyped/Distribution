@@ -2,39 +2,37 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph2dDataAxisOption extends StObject {
   
-  var alignZeros: js.UndefOr[Boolean] = js.native
+  var alignZeros: js.UndefOr[Boolean] = js.undefined
   
-  var iconWidth: js.UndefOr[Double] = js.native
+  var iconWidth: js.UndefOr[Double] = js.undefined
   
-  var icons: js.UndefOr[Boolean] = js.native
+  var icons: js.UndefOr[Boolean] = js.undefined
   
-  var labelOffsetX: js.UndefOr[Double] = js.native
+  var labelOffsetX: js.UndefOr[Double] = js.undefined
   
-  var labelOffsetY: js.UndefOr[Double] = js.native
+  var labelOffsetY: js.UndefOr[Double] = js.undefined
   
-  var left: js.UndefOr[DataAxisSideOption] = js.native
+  var left: js.UndefOr[DataAxisSideOption] = js.undefined
   
-  var majorLinesOffset: js.UndefOr[Double] = js.native
+  var majorLinesOffset: js.UndefOr[Double] = js.undefined
   
-  var minorLinesOffset: js.UndefOr[Double] = js.native
+  var minorLinesOffset: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[TimelineOptionsOrientationType] = js.native
+  var orientation: js.UndefOr[TimelineOptionsOrientationType] = js.undefined
   
-  var right: js.UndefOr[DataAxisSideOption] = js.native
+  var right: js.UndefOr[DataAxisSideOption] = js.undefined
   
-  var showMajorLabels: js.UndefOr[Boolean] = js.native
+  var showMajorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showMinorLabels: js.UndefOr[Boolean] = js.native
+  var showMinorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object Graph2dDataAxisOption {
   

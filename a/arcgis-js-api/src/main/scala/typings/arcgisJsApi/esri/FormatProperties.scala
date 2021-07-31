@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatProperties extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait FormatProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#conversionInfo)
     */
-  var conversionInfo: js.UndefOr[ConversionInfo] = js.native
+  var conversionInfo: js.UndefOr[ConversionInfo] = js.undefined
   
   /**
     * A array of [Coordinate Segments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#coordinateSegments)
     */
-  var coordinateSegments: js.UndefOr[js.Array[CoordinateSegment]] = js.native
+  var coordinateSegments: js.UndefOr[js.Array[CoordinateSegment]] = js.undefined
   
   /**
     * A string that serves as a pattern describing how this Format should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#currentPattern)
     */
-  var currentPattern: js.UndefOr[String] = js.native
+  var currentPattern: js.UndefOr[String] = js.undefined
   
   /**
     * The default pattern describing how this Format should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#defaultPattern)
     */
-  var defaultPattern: js.UndefOr[String] = js.native
+  var defaultPattern: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html) for this format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The view model of the [CoordinateConversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html) widget that is utilizing this format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#viewModel)
     */
-  var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.native
+  var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.undefined
 }
 object FormatProperties {
   

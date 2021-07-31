@@ -4,21 +4,19 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastEditorId extends StObject {
   
-  var lastEditorId: js.UndefOr[UserID] = js.native
+  var lastEditorId: js.UndefOr[UserID] = js.undefined
   
-  var saved: js.UndefOr[Timestamp] = js.native
+  var saved: js.UndefOr[Timestamp] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
   
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
 }
 object LastEditorId {
   

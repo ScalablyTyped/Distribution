@@ -6,39 +6,37 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.code
 import typings.forkTsCheckerWebpackPlugin.formatterFormatterMod.Formatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterFactoryMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", JSImport.Namespace)
   @js.native
-  def createFormatter[T /* <: NotConfigurableFormatterType */](): Formatter = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
-  @js.native
-  def createFormatter[T /* <: NotConfigurableFormatterType */](`type`: T): Formatter = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createFormatter[T /* <: NotConfigurableFormatterType */](): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[Formatter]
+  @scala.inline
+  def createFormatter[T /* <: NotConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  @scala.inline
   def createFormatter[T /* <: ConfigurableFormatterType */](
     `type`: T,
     options: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory.ConfigurableFormatterOptions[T] */ js.Any
-  ): Formatter = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
-  @js.native
-  def createFormatter[T /* <: FormatterType */](`type`: T, options: js.Object): Formatter = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
-  @js.native
-  def createFormatter_T_ConfigurableFormatterType[T /* <: ConfigurableFormatterType */](`type`: T): Formatter = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory", "createFormatter")
-  @js.native
-  def createFormatter_T_FormatterType[T /* <: FormatterType */](`type`: T): Formatter = js.native
+  ): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Formatter]
+  @scala.inline
+  def createFormatter[T /* <: FormatterType */](`type`: T, options: js.Object): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Formatter]
+  
+  @scala.inline
+  def createFormatter_T_ConfigurableFormatterType[T /* <: ConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  
+  @scala.inline
+  def createFormatter_T_FormatterType[T /* <: FormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
   
   type ComplexFormatterOptions[T /* <: FormatterType */] = /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory.ConfigurableFormatterOptions[T] */ js.Any
   
-  @js.native
   trait ConfigurableFormatterOptions extends StObject {
     
-    var codeframe: BabelCodeFrameOptions = js.native
+    var codeframe: BabelCodeFrameOptions
   }
   object ConfigurableFormatterOptions {
     

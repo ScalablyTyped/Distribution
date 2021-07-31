@@ -12,22 +12,22 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a text input field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Input extends TextField_ {
+trait Input
+  extends StObject
+     with TextField_ {
   
   /**
     * contains the text content of the text field.
     *
     * The field displays the text content.
     */
-  var Content: String = js.native
+  var Content: String
   
   /**
     * contains an internal-use-only multi purpose string.
@@ -36,14 +36,14 @@ trait Input extends TextField_ {
     *
     * It's content must NEVER be modified by the user.
     */
-  var Help: String = js.native
+  var Help: String
   
   /**
     * contains a hint text.
     *
     * This hint may be used as help tip or as headline of a corresponding dialog to edit the field content.
     */
-  var Hint: String = js.native
+  var Hint: String
 }
 object Input {
   

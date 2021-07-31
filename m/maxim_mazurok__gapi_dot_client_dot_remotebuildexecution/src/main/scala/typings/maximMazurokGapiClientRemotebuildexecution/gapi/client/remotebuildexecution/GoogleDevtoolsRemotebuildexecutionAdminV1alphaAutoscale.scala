@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale extends StObject {
   
   /** The maximal number of workers. Must be equal to or greater than min_size. */
-  var maxSize: js.UndefOr[String] = js.native
+  var maxSize: js.UndefOr[String] = js.undefined
   
   /** The minimal number of workers. Must be greater than 0. */
-  var minSize: js.UndefOr[String] = js.native
+  var minSize: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale {
   

@@ -3,41 +3,39 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOutpostMod {
   
-  @JSImport("@pulumi/aws/outposts/getOutpost", "getOutpost")
+  @JSImport("@pulumi/aws/outposts/getOutpost", JSImport.Namespace)
   @js.native
-  def getOutpost(): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutpost", "getOutpost")
-  @js.native
-  def getOutpost(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutpost", "getOutpost")
-  @js.native
-  def getOutpost(args: GetOutpostArgs): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutpost", "getOutpost")
-  @js.native
-  def getOutpost(args: GetOutpostArgs, opts: InvokeOptions): js.Promise[GetOutpostResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOutpost(): js.Promise[GetOutpostResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")().asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: GetOutpostArgs): js.Promise[GetOutpostResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: GetOutpostArgs, opts: InvokeOptions): js.Promise[GetOutpostResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostResult]]
+  
   trait GetOutpostArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN).
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the Outpost.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the Outpost.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object GetOutpostArgs {
     
@@ -70,39 +68,38 @@ object getOutpostMod {
     }
   }
   
-  @js.native
   trait GetOutpostResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Availability Zone name.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * Availability Zone identifier.
       */
-    val availabilityZoneId: String = js.native
+    val availabilityZoneId: String
     
     /**
       * Description.
       */
-    val description: String = js.native
+    val description: String
     
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * AWS Account identifier of the Outpost owner.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * Site identifier.
       */
-    val siteId: String = js.native
+    val siteId: String
   }
   object GetOutpostResult {
     

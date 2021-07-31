@@ -4,39 +4,39 @@ import typings.voximplantWebsdk.mod.RosterItemEvent
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when roster item changed
   */
-@js.native
-trait RosterItemChange extends VoxImplantIMEvent {
+trait RosterItemChange
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    User display name
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     *    Roster item groups
     */
-  var groups: js.Array[String] = js.native
+  var groups: js.Array[String]
   
   /**
     *    User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    Resource name
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     *    Roster item event type. See VoxImplant.RosterItemEvent enum
     */
-  var `type`: RosterItemEvent = js.native
+  var `type`: RosterItemEvent
 }
 object RosterItemChange {
   

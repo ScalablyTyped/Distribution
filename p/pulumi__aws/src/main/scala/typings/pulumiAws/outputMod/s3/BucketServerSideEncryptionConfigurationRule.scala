@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketServerSideEncryptionConfigurationRule extends StObject {
   
   /**
     * A single object for setting server-side encryption by default. (documented below)
     */
-  var applyServerSideEncryptionByDefault: BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault = js.native
+  var applyServerSideEncryptionByDefault: BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault
 }
 object BucketServerSideEncryptionConfigurationRule {
   

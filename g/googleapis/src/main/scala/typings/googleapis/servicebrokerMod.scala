@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicebrokerMod {
+  
+  @JSImport("googleapis/build/src/apis/servicebroker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -126,9 +129,12 @@ object servicebrokerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/servicebroker", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/servicebroker", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -172,22 +178,19 @@ object servicebrokerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker(options: Options): Servicebroker = js.native
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker(options: typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Options): typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker = js.native
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker(options: typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Options): typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker = js.native
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker_v1(version: v1): Servicebroker = js.native
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker_v1alpha1(version: v1alpha1): typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker = js.native
-  @JSImport("googleapis/build/src/apis/servicebroker", "servicebroker")
-  @js.native
-  def servicebroker_v1beta1(version: v1beta1): typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker = js.native
+  @scala.inline
+  def servicebroker(options: Options): Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(options.asInstanceOf[js.Any]).asInstanceOf[Servicebroker]
+  @scala.inline
+  def servicebroker(options: typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Options): typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker]
+  @scala.inline
+  def servicebroker(options: typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Options): typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker]
+  
+  @scala.inline
+  def servicebroker_v1(version: v1): Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(version.asInstanceOf[js.Any]).asInstanceOf[Servicebroker]
+  
+  @scala.inline
+  def servicebroker_v1alpha1(version: v1alpha1): typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker]
+  
+  @scala.inline
+  def servicebroker_v1beta1(version: v1beta1): typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker = ^.asInstanceOf[js.Dynamic].applyDynamic("servicebroker")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker]
 }

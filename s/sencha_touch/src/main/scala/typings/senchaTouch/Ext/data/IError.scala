@@ -3,37 +3,37 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IError extends IBase {
+trait IError
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of field
     * @returns String
     */
-  var getField: js.UndefOr[js.Function0[String]] = js.native
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of message
     * @returns String
     */
-  var getMessage: js.UndefOr[js.Function0[String]] = js.native
+  var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of field
     * @param field String The new value.
     */
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of message
     * @param message String The new value.
     */
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.native
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
 }
 object IError {
   

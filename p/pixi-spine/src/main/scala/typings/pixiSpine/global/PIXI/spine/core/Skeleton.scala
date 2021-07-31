@@ -2,13 +2,13 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.Skeleton")
 @js.native
 class Skeleton protected ()
-  extends typings.pixiSpine.PIXI.spine.core.Skeleton {
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.Skeleton {
   def this(data: typings.pixiSpine.PIXI.spine.core.SkeletonData) = this()
 }
 object Skeleton {

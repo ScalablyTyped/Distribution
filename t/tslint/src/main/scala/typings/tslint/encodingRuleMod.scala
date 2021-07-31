@@ -6,7 +6,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encodingRuleMod {
@@ -23,9 +22,8 @@ object encodingRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/encodingRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(actual: Encoding): String = js.native
+    @scala.inline
+    def FAILURE_STRING(actual: Encoding): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(actual.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/encodingRule", "Rule.metadata")
     @js.native

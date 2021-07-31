@@ -2,13 +2,11 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupWidth extends StObject {
   
-  var groupWidth: js.Any = js.native
+  var groupWidth: js.Any
 }
 object GroupWidth {
   

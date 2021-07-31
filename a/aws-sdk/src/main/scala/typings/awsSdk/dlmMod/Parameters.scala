@@ -2,21 +2,19 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters extends StObject {
   
   /**
     * [EBS Snapshot Management – Instance policies only] Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.
     */
-  var ExcludeBootVolume: js.UndefOr[typings.awsSdk.dlmMod.ExcludeBootVolume] = js.native
+  var ExcludeBootVolume: js.UndefOr[typings.awsSdk.dlmMod.ExcludeBootVolume] = js.undefined
   
   /**
     * Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instance are not rebooted).
     */
-  var NoReboot: js.UndefOr[typings.awsSdk.dlmMod.NoReboot] = js.native
+  var NoReboot: js.UndefOr[typings.awsSdk.dlmMod.NoReboot] = js.undefined
 }
 object Parameters {
   

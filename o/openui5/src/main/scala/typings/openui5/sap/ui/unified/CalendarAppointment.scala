@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarAppointment extends DateTypeRange {
+trait CalendarAppointment
+  extends StObject
+     with DateTypeRange {
   
   /**
     * Gets current value of property <code>icon</code>.Icon of the Appointment. (e.g. picture of the

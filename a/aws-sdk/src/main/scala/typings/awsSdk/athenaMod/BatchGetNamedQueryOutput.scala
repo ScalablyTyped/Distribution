@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetNamedQueryOutput extends StObject {
   
   /**
     * Information about the named query IDs submitted.
     */
-  var NamedQueries: js.UndefOr[NamedQueryList] = js.native
+  var NamedQueries: js.UndefOr[NamedQueryList] = js.undefined
   
   /**
     * Information about provided query IDs.
     */
-  var UnprocessedNamedQueryIds: js.UndefOr[UnprocessedNamedQueryIdList] = js.native
+  var UnprocessedNamedQueryIds: js.UndefOr[UnprocessedNamedQueryIdList] = js.undefined
 }
 object BatchGetNamedQueryOutput {
   

@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CcrFollow[T] extends Generic {
+trait CcrFollow[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var index: String = js.native
+  var index: String
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object CcrFollow {
   
@@ -23,7 +23,7 @@ object CcrFollow {
   }
   
   @scala.inline
-  implicit class CcrFollowMutableBuilder[Self <: CcrFollow[_], T] (val x: Self with CcrFollow[T]) extends AnyVal {
+  implicit class CcrFollowMutableBuilder[Self <: CcrFollow[?], T] (val x: Self & CcrFollow[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

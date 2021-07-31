@@ -3,17 +3,15 @@ package typings.firebaseMessaging
 import typings.std.ClientTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientQueryOptions extends StObject {
   
-  var includeReserved: js.UndefOr[Boolean] = js.native
+  var includeReserved: js.UndefOr[Boolean] = js.undefined
   
-  var includeUncontrolled: js.UndefOr[Boolean] = js.native
+  var includeUncontrolled: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[ClientTypes] = js.native
+  var `type`: js.UndefOr[ClientTypes] = js.undefined
 }
 object ClientQueryOptions {
   

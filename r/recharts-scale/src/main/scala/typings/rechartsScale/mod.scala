@@ -2,47 +2,38 @@ package typings.rechartsScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("recharts-scale", "getNiceTickValues")
+  @JSImport("recharts-scale", JSImport.Namespace)
   @js.native
-  def getNiceTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getNiceTickValues")
-  @js.native
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: js.UndefOr[scala.Nothing], allowDecimals: Boolean): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getNiceTickValues")
-  @js.native
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getNiceTickValues")
-  @js.native
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("recharts-scale", "getTickValues")
-  @js.native
-  def getTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValues")
-  @js.native
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: js.UndefOr[scala.Nothing], allowDecimals: Boolean): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValues")
-  @js.native
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValues")
-  @js.native
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = js.native
+  @scala.inline
+  def getNiceTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("recharts-scale", "getTickValuesFixedDomain")
-  @js.native
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double]): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValuesFixedDomain")
-  @js.native
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: js.UndefOr[scala.Nothing], allowDecimals: Boolean): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValuesFixedDomain")
-  @js.native
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = js.native
-  @JSImport("recharts-scale", "getTickValuesFixedDomain")
-  @js.native
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = js.native
+  @scala.inline
+  def getTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

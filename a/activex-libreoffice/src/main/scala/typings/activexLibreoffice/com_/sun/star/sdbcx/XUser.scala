@@ -3,12 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.sdbcx
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows for changing a users password. */
-@js.native
-trait XUser extends XAuthorizable {
+trait XUser
+  extends StObject
+     with XAuthorizable {
   
   /**
     * allows modifying a user password.
@@ -16,7 +16,7 @@ trait XUser extends XAuthorizable {
     * @param newPassword the new password
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def changePassword(oldPassword: String, newPassword: String): Unit = js.native
+  def changePassword(oldPassword: String, newPassword: String): Unit
 }
 object XUser {
   

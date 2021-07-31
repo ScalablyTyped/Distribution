@@ -10,9 +10,9 @@ WordPress URL utilities.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/url |
 | Keywords           | wordpress, gutenberg, url |
-| # releases         | 23 |
-| # dependents       | 23 |
-| # downloads        | 973562 |
+| # releases         | 22 |
+| # dependents       | 24 |
+| # downloads        | 1120782 |
 | # stars            | 1 |
 
 ## Links

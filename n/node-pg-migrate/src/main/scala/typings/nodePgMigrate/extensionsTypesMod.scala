@@ -1,28 +1,36 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreateExtensionFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
 import typings.nodePgMigrate.generalTypesMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionsTypesMod {
   
-  type CreateExtension = CreateExtensionFn with ReverseCreateExtensionFn
+  @js.native
+  trait CreateExtension extends CreateExtensionFn {
+    
+    def reverse(`extension`: js.Array[StringExtension]): String | js.Array[String] = js.native
+    def reverse(`extension`: js.Array[StringExtension], options: CreateExtensionOptions & DropOptions): String | js.Array[String] = js.native
+    def reverse(`extension`: StringExtension): String | js.Array[String] = js.native
+    def reverse(`extension`: StringExtension, options: CreateExtensionOptions & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateExtensionFn = js.native
+  }
   
   type CreateExtensionFn = js.Function2[
     /* extension */ StringExtension | js.Array[StringExtension], 
-    /* options */ js.UndefOr[CreateExtensionOptions with DropOptions], 
+    /* options */ js.UndefOr[CreateExtensionOptions & DropOptions], 
     String | js.Array[String]
   ]
   
-  @js.native
-  trait CreateExtensionOptions extends IfNotExistsOption {
+  trait CreateExtensionOptions
+    extends StObject
+       with IfNotExistsOption {
     
-    var schema: js.UndefOr[String] = js.native
+    var schema: js.UndefOr[String] = js.undefined
   }
   object CreateExtensionOptions {
     

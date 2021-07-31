@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveList extends StObject {
   
   /** The list of shared drives. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. */
-  var drives: js.UndefOr[js.Array[Drive]] = js.native
+  var drives: js.UndefOr[js.Array[Drive]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#driveList". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of shared drives. This will be absent if the end of the list has been reached. If the token is rejected for any reason, it should be discarded, and
     * pagination should be restarted from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object DriveList {
   

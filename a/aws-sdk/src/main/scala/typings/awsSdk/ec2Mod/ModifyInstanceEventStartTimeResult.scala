@@ -2,13 +2,11 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstanceEventStartTimeResult extends StObject {
   
-  var Event: js.UndefOr[InstanceStatusEvent] = js.native
+  var Event: js.UndefOr[InstanceStatusEvent] = js.undefined
 }
 object ModifyInstanceEventStartTimeResult {
   

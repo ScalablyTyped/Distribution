@@ -2,13 +2,11 @@ package typings.pkgcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseProviderOptions extends StObject {
   
-  var provider: Providers = js.native
+  var provider: Providers
 }
 object BaseProviderOptions {
   

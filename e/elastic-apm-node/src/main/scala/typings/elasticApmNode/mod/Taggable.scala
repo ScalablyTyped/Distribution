@@ -2,15 +2,13 @@ package typings.elasticApmNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Taggable extends StObject {
   
-  def addLabels(labels: Labels): Boolean = js.native
+  def addLabels(labels: Labels): Boolean
   
-  def setLabel(name: String, value: LabelValue): Boolean = js.native
+  def setLabel(name: String, value: LabelValue): Boolean
 }
 object Taggable {
   

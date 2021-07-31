@@ -2,25 +2,23 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendedDto extends StObject {
   
-  var block: js.Array[BlockDto] = js.native
+  var block: js.Array[BlockDto]
   
-  var champion: String = js.native
+  var champion: String
   
-  var map: String = js.native
+  var map: String
   
-  var mode: String = js.native
+  var mode: String
   
-  var priority: Boolean = js.native
+  var priority: Boolean
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object RecommendedDto {
   

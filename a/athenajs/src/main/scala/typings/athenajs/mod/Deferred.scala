@@ -2,7 +2,6 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Deferred")
@@ -18,14 +17,16 @@ class Deferred () extends StObject {
 /* static members */
 object Deferred {
   
+  @JSImport("athenajs", "Deferred")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and immediately resolves a new deferred.
     *
     */
-  @JSImport("athenajs", "Deferred.resolve")
-  @js.native
-  def resolve(): Promise = js.native
-  @JSImport("athenajs", "Deferred.resolve")
-  @js.native
-  def resolve(`val`: js.Any): Promise = js.native
+  @scala.inline
+  def resolve(): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise]
+  @scala.inline
+  def resolve(`val`: js.Any): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`val`.asInstanceOf[js.Any]).asInstanceOf[Promise]
 }

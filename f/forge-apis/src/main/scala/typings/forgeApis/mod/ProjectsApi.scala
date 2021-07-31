@@ -3,7 +3,6 @@ package typings.forgeApis.mod
 import typings.forgeApis.anon.FilterExtensionTypeFilterId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ProjectsApi")

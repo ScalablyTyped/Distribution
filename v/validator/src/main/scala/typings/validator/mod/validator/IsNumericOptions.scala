@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsNumericOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IsNumericOptions extends StObject {
     *
     * @default false
     */
-  var no_symbols: js.UndefOr[Boolean] = js.native
+  var no_symbols: js.UndefOr[Boolean] = js.undefined
 }
 object IsNumericOptions {
   

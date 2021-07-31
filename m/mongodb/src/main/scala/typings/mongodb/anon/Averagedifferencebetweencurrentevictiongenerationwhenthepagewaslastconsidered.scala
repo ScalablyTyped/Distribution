@@ -2,47 +2,45 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered extends StObject {
   
-  var `Average difference between current eviction generation when the page was last considered`: Double = js.native
+  var `Average difference between current eviction generation when the page was last considered`: Double
   
-  var `Average on-disk page image size seen`: Double = js.native
+  var `Average on-disk page image size seen`: Double
   
-  var `Clean pages currently in cache`: Double = js.native
+  var `Clean pages currently in cache`: Double
   
-  var `Current eviction generation`: Double = js.native
+  var `Current eviction generation`: Double
   
-  var `Dirty pages currently in cache`: Double = js.native
+  var `Dirty pages currently in cache`: Double
   
-  var `Entries in the root page`: Double = js.native
+  var `Entries in the root page`: Double
   
-  var `Internal pages currently in cache`: Double = js.native
+  var `Internal pages currently in cache`: Double
   
-  var `Leaf pages currently in cache`: Double = js.native
+  var `Leaf pages currently in cache`: Double
   
-  var `Maximum difference between current eviction generation when the page was last considered`: Double = js.native
+  var `Maximum difference between current eviction generation when the page was last considered`: Double
   
-  var `Maximum page size seen`: Double = js.native
+  var `Maximum page size seen`: Double
   
-  var `Minimum on-disk page image size seen`: Double = js.native
+  var `Minimum on-disk page image size seen`: Double
   
-  var `On-disk page image sizes smaller than a single allocation unit`: Double = js.native
+  var `On-disk page image sizes smaller than a single allocation unit`: Double
   
-  var `Pages created in memory and never written`: Double = js.native
+  var `Pages created in memory and never written`: Double
   
-  var `Pages currently queued for eviction`: Double = js.native
+  var `Pages currently queued for eviction`: Double
   
-  var `Pages that could not be queued for eviction`: Double = js.native
+  var `Pages that could not be queued for eviction`: Double
   
-  var `Refs skipped during cache traversal`: Double = js.native
+  var `Refs skipped during cache traversal`: Double
   
-  var `Size of the root page`: Double = js.native
+  var `Size of the root page`: Double
   
-  var `Total number of pages currently in cache`: Double = js.native
+  var `Total number of pages currently in cache`: Double
 }
 object Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered {
   

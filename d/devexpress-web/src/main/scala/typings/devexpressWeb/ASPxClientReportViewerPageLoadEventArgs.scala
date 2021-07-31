@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportViewer.PageLoad and ASPxClientDocumentViewer.PageLoad events on the client side.
   */
-@js.native
-trait ASPxClientReportViewerPageLoadEventArgs extends ASPxClientEventArgs {
+trait ASPxClientReportViewerPageLoadEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a value indicating whether a report page, which is currently loaded into the ASPxClientReportViewer, is the first page of a report.
     */
-  def IsFirstPage(): Boolean = js.native
+  def IsFirstPage(): Boolean
   
   /**
     * Gets a value indicating whether a report page, which is currently loaded into the ASPxClientReportViewer, is the last page of a report.
     */
-  def IsLastPage(): Boolean = js.native
+  def IsLastPage(): Boolean
   
   /**
     * Gets a value specifying the total number of pages displayed in a report viewer.
     */
-  var PageCount: Double = js.native
+  var PageCount: Double
   
   /**
     * Gets a value specifying a zero-based index of a page to be displayed in a report viewer.
     */
-  var PageIndex: Double = js.native
+  var PageIndex: Double
 }
 object ASPxClientReportViewerPageLoadEventArgs {
   

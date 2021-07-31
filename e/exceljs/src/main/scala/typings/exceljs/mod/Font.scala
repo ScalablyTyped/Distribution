@@ -12,35 +12,33 @@ import typings.exceljs.exceljsStrings.subscript
 import typings.exceljs.exceljsStrings.superscript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var bold: Boolean = js.native
+  var bold: Boolean
   
-  var charset: Double = js.native
+  var charset: Double
   
-  var color: PartialColor = js.native
+  var color: PartialColor
   
-  var family: Double = js.native
+  var family: Double
   
-  var italic: Boolean = js.native
+  var italic: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var outline: Boolean = js.native
+  var outline: Boolean
   
-  var scheme: minor | major | none_ = js.native
+  var scheme: minor | major | none_
   
-  var size: Double = js.native
+  var size: Double
   
-  var strike: Boolean = js.native
+  var strike: Boolean
   
-  var underline: Boolean | none_ | single | double | singleAccounting | doubleAccounting = js.native
+  var underline: Boolean | none_ | single | double | singleAccounting | doubleAccounting
   
-  var vertAlign: superscript | subscript = js.native
+  var vertAlign: superscript | subscript
 }
 object Font {
   

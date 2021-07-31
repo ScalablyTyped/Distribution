@@ -3,15 +3,13 @@ package typings.nightwatch.mod
 import typings.nightwatch.anon.Ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchTestRunner extends StObject {
   
-  var options: js.UndefOr[Ui] = js.native
+  var options: js.UndefOr[Ui] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object NightwatchTestRunner {
   

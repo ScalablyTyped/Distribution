@@ -2,20 +2,18 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a property relative to the kind expressions.
   */
-@js.native
 trait SchemaPropertyReference extends StObject {
   
   /**
     * The name of the property. If name includes &quot;.&quot;s, it may be
     * interpreted as a property name path.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPropertyReference {
   

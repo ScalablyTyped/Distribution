@@ -2,17 +2,15 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildProcessResources extends StObject {
   
-  var endpoints: js.Array[ServiceEndpointReference] = js.native
+  var endpoints: js.Array[ServiceEndpointReference]
   
-  var files: js.Array[SecureFileReference] = js.native
+  var files: js.Array[SecureFileReference]
   
-  var queues: js.Array[AgentPoolQueueReference] = js.native
+  var queues: js.Array[AgentPoolQueueReference]
 }
 object BuildProcessResources {
   

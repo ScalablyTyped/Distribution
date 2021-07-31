@@ -11,8 +11,8 @@ A Karma plugin. Report results in junit xml format.
 | Full name          | karma-junit-reporter |
 | Keywords           | junit, karma-plugin, karma-reporter |
 | # releases         | 2 |
-| # dependents       | 89 |
-| # downloads        | 17776079 |
+| # dependents       | 90 |
+| # downloads        | 19466751 |
 | # stars            | 4 |
 
 ## Links

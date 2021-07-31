@@ -3,17 +3,15 @@ package typings.bip174.interfacesMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionInput extends StObject {
   
-  var hash: String | Buffer = js.native
+  var hash: String | Buffer
   
-  var index: Double = js.native
+  var index: Double
   
-  var sequence: js.UndefOr[Double] = js.native
+  var sequence: js.UndefOr[Double] = js.undefined
 }
 object TransactionInput {
   

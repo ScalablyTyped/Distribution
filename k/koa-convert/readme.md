@@ -10,9 +10,9 @@ convert modern Koa legacy generator-based middleware to promise-based middleware
 | ------------------ | :-------------: |
 | Full name          | koa-convert |
 | Keywords           | koa, middleware, convert, back, generator, promise, generator-based-middleware, promise-based-middleware, support |
-| # releases         | 0 |
-| # dependents       | 291 |
-| # downloads        | 20140622 |
+| # releases         | 2 |
+| # dependents       | 300 |
+| # downloads        | 25982748 |
 | # stars            | 16 |
 
 ## Links

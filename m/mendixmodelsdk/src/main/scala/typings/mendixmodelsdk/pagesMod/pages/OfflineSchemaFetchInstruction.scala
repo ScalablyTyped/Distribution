@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ object OfflineSchemaFetchInstruction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction.create")
-  @js.native
-  def create(model: IModel): OfflineSchemaFetchInstruction = js.native
+  @scala.inline
+  def create(model: IModel): OfflineSchemaFetchInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OfflineSchemaFetchInstruction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction.structureTypeName")

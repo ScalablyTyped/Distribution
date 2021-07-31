@@ -2,18 +2,18 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderFragmentSpread extends ReaderSelection {
+trait ReaderFragmentSpread
+  extends StObject
+     with ReaderSelection {
   
-  val args: js.UndefOr[js.Array[ReaderArgument] | Null] = js.native
+  val args: js.UndefOr[js.Array[ReaderArgument] | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
   // 'FragmentSpread';
-  val name: String = js.native
+  val name: String
 }
 object ReaderFragmentSpread {
   

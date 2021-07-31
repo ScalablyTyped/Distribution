@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of adding a group.
   */
-@js.native
 trait SchemaAddDimensionGroupResponse extends StObject {
   
   /**
     * All groups of a dimension after adding a group to that dimension.
     */
-  var dimensionGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.native
+  var dimensionGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.undefined
 }
 object SchemaAddDimensionGroupResponse {
   

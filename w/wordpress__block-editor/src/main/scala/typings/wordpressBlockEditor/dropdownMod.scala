@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.dropdownMod.BlockNavigationDropdown.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
@@ -24,12 +23,11 @@ object dropdownMod {
   
   object BlockNavigationDropdown {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var isDisabled: js.UndefOr[Boolean] = js.native
+      var isDisabled: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

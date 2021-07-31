@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesEnable extends StandardParameters {
+trait ParamsResourceServicesEnable
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the consumer and service to enable the service on.  The
@@ -25,12 +25,12 @@ trait ParamsResourceServicesEnable extends StandardParameters {
     * `projects/123/services/serviceusage.googleapis.com` where `123` is the
     * project number (not project ID).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaEnableServiceRequest] = js.native
+  var requestBody: js.UndefOr[SchemaEnableServiceRequest] = js.undefined
 }
 object ParamsResourceServicesEnable {
   

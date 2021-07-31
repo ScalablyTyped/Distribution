@@ -3,18 +3,21 @@ package typings.reduxForm
 import typings.reduxForm.mod.FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxFormStrings {
   
   @js.native
-  sealed trait Field extends FieldType
+  sealed trait Field
+    extends StObject
+       with FieldType
   @scala.inline
   def Field: Field = "Field".asInstanceOf[Field]
   
   @js.native
-  sealed trait FieldArray extends FieldType
+  sealed trait FieldArray
+    extends StObject
+       with FieldType
   @scala.inline
   def FieldArray: FieldArray = "FieldArray".asInstanceOf[FieldArray]
   

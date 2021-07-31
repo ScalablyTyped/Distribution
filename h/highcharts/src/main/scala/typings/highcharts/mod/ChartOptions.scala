@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ChartOptions extends StObject {
     *
     * Disabled for logarithmic axes.
     */
-  var alignTicks: js.UndefOr[Boolean] = js.native
+  var alignTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set the overall animation for
@@ -48,37 +46,37 @@ trait ChartOptions extends StObject {
     * be done with animation, but in case of more data points, it is necessary
     * to set this option to ensure animation on zoom.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the outer chart area.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the outer chart
     * border.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The corner radius of the outer
     * chart border.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the outer
     * chart border.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
     * charts container `div`, allowing unique CSS styling for each chart.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In styled mode, this sets how
@@ -87,18 +85,18 @@ trait ChartOptions extends StObject {
     * `highcharts-color-0` [...] `highcharts-color-9`. The equivalent in
     * non-styled mode is to set colors using the colors setting.
     */
-  var colorCount: js.UndefOr[Double] = js.native
+  var colorCount: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to display errors on the
     * chart. When `false`, the errors will be shown only in the console.
     */
-  var displayErrors: js.UndefOr[Boolean] = js.native
+  var displayErrors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event listeners for the chart.
     */
-  var events: js.UndefOr[ChartEventsOptions] = js.native
+  var events: js.UndefOr[ChartEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An explicit height for the
@@ -111,7 +109,7 @@ trait ChartOptions extends StObject {
     * of the containing element, or 400 pixels if the containing element's
     * height is 0.
     */
-  var height: js.UndefOr[Double | String | Null] = js.native
+  var height: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) If true, the axes will scale to the
@@ -120,27 +118,27 @@ trait ChartOptions extends StObject {
     * stacks, once one series within the stack is hidden, the rest of the stack
     * will close in around it even if the axis is not affected.
     */
-  var ignoreHiddenSeries: js.UndefOr[Boolean] = js.native
+  var ignoreHiddenSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to invert the axes so that the x
     * axis is vertical and y axis is horizontal. When `true`, the x axis is
     * reversed by default.
     */
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Default `mapData` for all series. If set to a string, it
     * functions as an index into the `Highcharts.maps` array. Otherwise it is
     * interpreted as map data.
     */
-  var map: js.UndefOr[String | GeoJSON | js.Array[_]] = js.native
+  var map: js.UndefOr[String | GeoJSON | js.Array[js.Any]] = js.undefined
   
   /**
     * (Highmaps) Set lat/lon transformation definitions for the chart. If not
     * defined, these are extracted from the map data.
     */
-  var mapTransforms: js.UndefOr[js.Any] = js.native
+  var mapTransforms: js.UndefOr[js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the outer
@@ -154,7 +152,7 @@ trait ChartOptions extends StObject {
     * addition to the `spacingTop`, `spacingRight`, `spacingBottom` and
     * `spacingLeft` options.
     */
-  var margin: js.UndefOr[Double | js.Array[Double]] = js.native
+  var margin: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the bottom
@@ -162,7 +160,7 @@ trait ChartOptions extends StObject {
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingBottom`.
     */
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the left
@@ -170,7 +168,7 @@ trait ChartOptions extends StObject {
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingLeft`.
     */
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the right
@@ -178,7 +176,7 @@ trait ChartOptions extends StObject {
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingRight`.
     */
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the top outer
@@ -186,21 +184,21 @@ trait ChartOptions extends StObject {
     * for the margin as opposed to the default dynamic margin. See also
     * `spacingTop`.
     */
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to override
     * the default function that formats all the numbers in the chart. Returns a
     * string with the formatted number.
     */
-  var numberFormatter: js.UndefOr[NumberFormatterCallbackFunction] = js.native
+  var numberFormatter: js.UndefOr[NumberFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highcharts) Options to render charts in 3 dimensions. This feature
     * requires `highcharts-3d.js`, found in the download package or online at
     * code.highcharts.com/highcharts-3d.js.
     */
-  var options3d: js.UndefOr[Chart3dOptions] = js.native
+  var options3d: js.UndefOr[Chart3dOptions] = js.undefined
   
   /**
     * (Highcharts, Gantt) Allows setting a key to switch between zooming and
@@ -209,7 +207,7 @@ trait ChartOptions extends StObject {
     * key properties of the click event argument (`event.altKey`,
     * `event.ctrlKey`, `event.metaKey` and `event.shiftKey`).
     */
-  var panKey: js.UndefOr[OptionsPanKeyValue] = js.native
+  var panKey: js.UndefOr[OptionsPanKeyValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Allow panning in a chart. Best used with
@@ -219,7 +217,7 @@ trait ChartOptions extends StObject {
     * (default), panning requires two fingers. To allow panning with one
     * finger, set `followTouchMove` to `false`.
     */
-  var panning: js.UndefOr[ChartPanningOptions] = js.native
+  var panning: js.UndefOr[ChartPanningOptions] = js.undefined
   
   /**
     * (Highcharts) Common options for all yAxes rendered in a parallel
@@ -228,7 +226,7 @@ trait ChartOptions extends StObject {
     *
     * The default options are: (see online documentation for example)
     */
-  var parallelAxes: js.UndefOr[ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]] = js.native
+  var parallelAxes: js.UndefOr[ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]] = js.undefined
   
   /**
     * (Highcharts) Flag to render charts as a parallel coordinates plot. In a
@@ -236,7 +234,7 @@ trait ChartOptions extends StObject {
     * generated and the legend is disabled. This feature requires
     * `modules/parallel-coordinates.js`.
     */
-  var parallelCoordinates: js.UndefOr[Boolean] = js.native
+  var parallelCoordinates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Equivalent to zoomType, but for multitouch
@@ -246,13 +244,13 @@ trait ChartOptions extends StObject {
     * is enabled. When tooltip.followTouchMove is true, pinchType only applies
     * to two-finger touches.
     */
-  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.native
+  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the plot area.
     */
-  var plotBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var plotBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for an image to use as
@@ -261,19 +259,19 @@ trait ChartOptions extends StObject {
     * the image to be applied to exported charts, its URL needs to be
     * accessible by the export server.
     */
-  var plotBackgroundImage: js.UndefOr[String] = js.native
+  var plotBackgroundImage: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the inner chart or
     * plot area border.
     */
-  var plotBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var plotBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the plot area
     * border.
     */
-  var plotBorderWidth: js.UndefOr[Double] = js.native
+  var plotBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
@@ -281,14 +279,14 @@ trait ChartOptions extends StObject {
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var plotShadow: js.UndefOr[Boolean | CSSObject] = js.native
+  var plotShadow: js.UndefOr[Boolean | CSSObject] = js.undefined
   
   /**
     * (Highcharts) When true, cartesian charts like line, spline, area and
     * column are transformed into the polar coordinate system. This produces
     * _polar charts_, also known as _radar charts_.
     */
-  var polar: js.UndefOr[Boolean] = js.native
+  var polar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Allows to manually load the proj4 library from Highcharts
@@ -296,13 +294,13 @@ trait ChartOptions extends StObject {
     * `script` tag, this option is not needed, it will be loaded from there by
     * default.
     */
-  var proj4: js.UndefOr[js.Function] = js.native
+  var proj4: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to reflow the chart to
     * fit the width of the container div on resizing the window.
     */
-  var reflow: js.UndefOr[Boolean] = js.native
+  var reflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML element where the chart
@@ -311,13 +309,13 @@ trait ChartOptions extends StObject {
     * argument of the chart constructor, in which case the option is not
     * needed.
     */
-  var renderTo: js.UndefOr[String | HTMLDOMElement] = js.native
+  var renderTo: js.UndefOr[String | HTMLDOMElement] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The button that appears after a
     * selection zoom, allowing the user to reset zoom.
     */
-  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.native
+  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.undefined
   
   /**
     * (Highcharts, Gantt) Options for a scrollable plot area. This feature
@@ -331,13 +329,13 @@ trait ChartOptions extends StObject {
     * or vertical scrolling, depending on whether the `minWidth` or `minHeight`
     * option is set.
     */
-  var scrollablePlotArea: js.UndefOr[ChartScrollablePlotAreaOptions] = js.native
+  var scrollablePlotArea: js.UndefOr[ChartScrollablePlotAreaOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color of the
     * marker square when selecting (zooming in on) an area of the chart.
     */
-  var selectionMarkerFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var selectionMarkerFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
@@ -345,14 +343,14 @@ trait ChartOptions extends StObject {
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | CSSObject] = js.native
+  var shadow: js.UndefOr[Boolean | CSSObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) Whether to show the axes initially. This only applies
     * to empty charts where series are added dynamically, as axes are
     * automatically added to cartesian series.
     */
-  var showAxes: js.UndefOr[Boolean] = js.native
+  var showAxes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The distance between the outer
@@ -362,35 +360,35 @@ trait ChartOptions extends StObject {
     * spacingBottom and spacingLeft options for shorthand setting of one
     * option.
     */
-  var spacing: js.UndefOr[js.Array[Double]] = js.native
+  var spacing: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the bottom
     * edge of the chart and the content (plot area, axis title and labels,
     * title, subtitle or legend in top position).
     */
-  var spacingBottom: js.UndefOr[Double] = js.native
+  var spacingBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the left edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingLeft: js.UndefOr[Double] = js.native
+  var spacingLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the right edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingRight: js.UndefOr[Double] = js.native
+  var spacingRight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the top edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingTop: js.UndefOr[Double] = js.native
+  var spacingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional CSS styles to apply
@@ -398,7 +396,7 @@ trait ChartOptions extends StObject {
     * are applied in the renderer, it is ignorant of the individual chart
     * options and must be set globally.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply styled mode.
@@ -407,7 +405,7 @@ trait ChartOptions extends StObject {
     * default style sheet is available from
     * `https://code.highcharts.com/css/highcharts.css`.
     */
-  var styledMode: js.UndefOr[Boolean] = js.native
+  var styledMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default series type for the
@@ -417,27 +415,27 @@ trait ChartOptions extends StObject {
     * In TypeScript this option has no effect in sense of typing and instead
     * the `type` option must always be set in the series.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An explicit width for the chart.
     * By default (when `null`) the width is calculated from the offset width of
     * the containing element.
     */
-  var width: js.UndefOr[Double | String | Null] = js.native
+  var width: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set a key to hold when dragging
     * to zoom the chart. This is useful to avoid zooming while moving points.
     * Should be set different than chart.panKey.
     */
-  var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.native
+  var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
     * zoom by dragging the mouse. Can be one of `x`, `y` or `xy`.
     */
-  var zoomType: js.UndefOr[OptionsZoomTypeValue] = js.native
+  var zoomType: js.UndefOr[OptionsZoomTypeValue] = js.undefined
 }
 object ChartOptions {
   
@@ -532,7 +530,7 @@ object ChartOptions {
     def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def setMap(value: String | GeoJSON | js.Array[_]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    def setMap(value: String | GeoJSON | js.Array[js.Any]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMapTransforms(value: js.Any): Self = StObject.set(x, "mapTransforms", value.asInstanceOf[js.Any])

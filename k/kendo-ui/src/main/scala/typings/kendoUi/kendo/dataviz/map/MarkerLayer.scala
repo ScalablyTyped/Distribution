@@ -3,24 +3,24 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.dataviz.ui.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerLayer extends Layer_ {
+trait MarkerLayer
+  extends StObject
+     with Layer_ {
   
-  def add(marker: Marker): Unit = js.native
+  def add(marker: Marker): Unit
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  var items: js.Any = js.native
+  var items: js.Any
   
   @JSName("options")
-  var options_MarkerLayer: MarkerLayerOptions = js.native
+  var options_MarkerLayer: MarkerLayerOptions
   
-  def remove(marker: Marker): Unit = js.native
+  def remove(marker: Marker): Unit
   
-  def setDataSource(dataSource: js.Any): Unit = js.native
+  def setDataSource(dataSource: js.Any): Unit
 }
 object MarkerLayer {
   

@@ -2,19 +2,17 @@ package typings.expressWinston
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.Array[String] = js.native
+    var body: js.Array[String]
     
-    var req: js.Array[String] = js.native
+    var req: js.Array[String]
     
-    var res: js.Array[String] = js.native
+    var res: js.Array[String]
   }
   object Body {
     

@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Redacts identifying information from the specified dataset.
   */
-@js.native
 trait SchemaDeidentifyDatasetRequest extends StObject {
   
   /**
     * Deidentify configuration
     */
-  var config: js.UndefOr[SchemaDeidentifyConfig] = js.native
+  var config: js.UndefOr[SchemaDeidentifyConfig] = js.undefined
   
   /**
     * The name of the dataset resource to which the redacted data should be
@@ -22,7 +20,7 @@ trait SchemaDeidentifyDatasetRequest extends StObject {
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`).
     * The new dataset must not exist, or the request will fail.
     */
-  var destinationDataset: js.UndefOr[String] = js.native
+  var destinationDataset: js.UndefOr[String] = js.undefined
 }
 object SchemaDeidentifyDatasetRequest {
   

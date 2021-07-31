@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxValue extends StObject {
   
-  var maxValue: Double = js.native
+  var maxValue: Double
   
-  var minValue: Double = js.native
+  var minValue: Double
 }
 object MaxValue {
   

@@ -2,19 +2,17 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a structure used by Map to hold key-value pairs.
   */
-@js.native
 trait KeyValuePair[K, V] extends StObject {
   
   // undocumented
-  var key: K = js.native
+  var key: K
   
-  var value: V = js.native
+  var value: V
 }
 object KeyValuePair {
   
@@ -25,7 +23,7 @@ object KeyValuePair {
   }
   
   @scala.inline
-  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[_, _], K, V] (val x: Self with (KeyValuePair[K, V])) extends AnyVal {
+  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[?, ?], K, V] (val x: Self & (KeyValuePair[K, V])) extends AnyVal {
     
     @scala.inline
     def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

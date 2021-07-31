@@ -5,13 +5,13 @@ import typings.react.mod.ComponentState
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComponentProps extends ComponentPropsBase {
+trait ComponentProps
+  extends StObject
+     with ComponentPropsBase {
   
-  var ref: js.UndefOr[MutableRefObject[ComponentClass[js.Object, ComponentState]]] = js.native
+  var ref: js.UndefOr[MutableRefObject[ComponentClass[js.Object, ComponentState]]] = js.undefined
 }
 object ComponentProps {
   

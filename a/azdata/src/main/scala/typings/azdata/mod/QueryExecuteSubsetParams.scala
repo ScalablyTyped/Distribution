@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExecuteSubsetParams extends StObject {
   
-  var batchIndex: Double = js.native
+  var batchIndex: Double
   
-  var ownerUri: String = js.native
+  var ownerUri: String
   
-  var resultSetIndex: Double = js.native
+  var resultSetIndex: Double
   
-  var rowsCount: Double = js.native
+  var rowsCount: Double
   
-  var rowsStartIndex: Double = js.native
+  var rowsStartIndex: Double
 }
 object QueryExecuteSubsetParams {
   

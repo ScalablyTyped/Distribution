@@ -3,23 +3,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.measures
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMeasures extends StObject {
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var uses: measures = js.native
+  var uses: measures
 }
 object IMeasures {
   
   @scala.inline
-  def apply(uses: measures): IMeasures = {
-    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+  def apply(): IMeasures = {
+    val __obj = js.Dynamic.literal(uses = "measures")
     __obj.asInstanceOf[IMeasures]
   }
   

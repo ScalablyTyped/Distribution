@@ -6,47 +6,45 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingSphere extends StObject {
   
-  var boundingSphere: typings.cesium.mod.BoundingSphere = js.native
+  var boundingSphere: typings.cesium.mod.BoundingSphere
   
-  var childTileMask: js.UndefOr[Double] = js.native
+  var childTileMask: js.UndefOr[Double] = js.undefined
   
-  var createdByUpsampling: js.UndefOr[Boolean] = js.native
+  var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var eastIndices: js.Array[Double] = js.native
+  var eastIndices: js.Array[Double]
   
-  var eastSkirtHeight: Double = js.native
+  var eastSkirtHeight: Double
   
-  var encodedNormals: js.UndefOr[Uint8Array] = js.native
+  var encodedNormals: js.UndefOr[Uint8Array] = js.undefined
   
-  var horizonOcclusionPoint: Cartesian3 = js.native
+  var horizonOcclusionPoint: Cartesian3
   
-  var indices: Uint16Array | Uint32Array = js.native
+  var indices: Uint16Array | Uint32Array
   
-  var maximumHeight: Double = js.native
+  var maximumHeight: Double
   
-  var minimumHeight: Double = js.native
+  var minimumHeight: Double
   
-  var northIndices: js.Array[Double] = js.native
+  var northIndices: js.Array[Double]
   
-  var northSkirtHeight: Double = js.native
+  var northSkirtHeight: Double
   
-  var quantizedVertices: Uint16Array = js.native
+  var quantizedVertices: Uint16Array
   
-  var southIndices: js.Array[Double] = js.native
+  var southIndices: js.Array[Double]
   
-  var southSkirtHeight: Double = js.native
+  var southSkirtHeight: Double
   
-  var waterMask: js.UndefOr[Uint8Array] = js.native
+  var waterMask: js.UndefOr[Uint8Array] = js.undefined
   
-  var westIndices: js.Array[Double] = js.native
+  var westIndices: js.Array[Double]
   
-  var westSkirtHeight: Double = js.native
+  var westSkirtHeight: Double
 }
 object BoundingSphere {
   

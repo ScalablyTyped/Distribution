@@ -3,32 +3,30 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specified snapshot properties for scheduled snapshots created by this
   * policy.
   */
-@js.native
 trait SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties extends StObject {
   
   /**
     * Indication to perform a ?guest aware? snapshot.
     */
-  var guestFlush: js.UndefOr[Boolean] = js.native
+  var guestFlush: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Labels to apply to scheduled snapshots. These can be later modified by
     * the setLabels method. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * GCS bucket storage location of the auto snapshot (regional or
     * multi-regional).
     */
-  var storageLocations: js.UndefOr[js.Array[String]] = js.native
+  var storageLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties {
   

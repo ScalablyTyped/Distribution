@@ -3,27 +3,25 @@ package typings.storybookAddonBackgrounds
 import typings.storybookAddonBackgrounds.typesMod.Background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@storybook/addon-backgrounds/dist/helpers", "addBackgroundStyle")
+  @JSImport("@storybook/addon-backgrounds/dist/helpers", JSImport.Namespace)
   @js.native
-  def addBackgroundStyle(selector: String, css: String, storyId: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-backgrounds/dist/helpers", "addGridStyle")
-  @js.native
-  def addGridStyle(selector: String, css: String): Unit = js.native
+  @scala.inline
+  def addBackgroundStyle(selector: String, css: String, storyId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundStyle")(selector.asInstanceOf[js.Any], css.asInstanceOf[js.Any], storyId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-backgrounds/dist/helpers", "clearStyles")
-  @js.native
-  def clearStyles(selector: String): Unit = js.native
-  @JSImport("@storybook/addon-backgrounds/dist/helpers", "clearStyles")
-  @js.native
-  def clearStyles(selector: js.Array[String]): Unit = js.native
+  @scala.inline
+  def addGridStyle(selector: String, css: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGridStyle")(selector.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-backgrounds/dist/helpers", "getBackgroundColorByName")
-  @js.native
-  def getBackgroundColorByName(currentSelectedValue: String, backgrounds: js.Array[Background], defaultName: String): String = js.native
+  @scala.inline
+  def clearStyles(selector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def clearStyles(selector: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def getBackgroundColorByName(currentSelectedValue: String, backgrounds: js.Array[Background], defaultName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundColorByName")(currentSelectedValue.asInstanceOf[js.Any], backgrounds.asInstanceOf[js.Any], defaultName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

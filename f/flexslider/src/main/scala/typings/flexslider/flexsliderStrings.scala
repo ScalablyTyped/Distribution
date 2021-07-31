@@ -3,7 +3,6 @@ package typings.flexslider
 import typings.flexslider.FlexSlider.HelperActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexsliderStrings {
@@ -24,27 +23,37 @@ object flexsliderStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait next extends HelperActions
+  sealed trait next
+    extends StObject
+       with HelperActions
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait pause extends HelperActions
+  sealed trait pause
+    extends StObject
+       with HelperActions
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait play extends HelperActions
+  sealed trait play
+    extends StObject
+       with HelperActions
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait prev extends HelperActions
+  sealed trait prev
+    extends StObject
+       with HelperActions
   @scala.inline
   def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
-  sealed trait previous extends HelperActions
+  sealed trait previous
+    extends StObject
+       with HelperActions
   @scala.inline
   def previous: previous = "previous".asInstanceOf[previous]
   
@@ -54,7 +63,9 @@ object flexsliderStrings {
   def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait stop extends HelperActions
+  sealed trait stop
+    extends StObject
+       with HelperActions
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   

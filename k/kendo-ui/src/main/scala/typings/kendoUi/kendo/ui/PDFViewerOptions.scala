@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFViewerOptions extends StObject {
   
-  var defaultPageSize: js.UndefOr[PDFViewerDefaultPageSize] = js.native
+  var defaultPageSize: js.UndefOr[PDFViewerDefaultPageSize] = js.undefined
   
-  var dplProcessing: js.UndefOr[PDFViewerDplProcessing] = js.native
+  var dplProcessing: js.UndefOr[PDFViewerDplProcessing] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ PDFViewerErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ PDFViewerErrorEvent, Unit]] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var messages: js.UndefOr[PDFViewerMessages] = js.native
+  var messages: js.UndefOr[PDFViewerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ PDFViewerOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ PDFViewerOpenEvent, Unit]] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var pdfjsProcessing: js.UndefOr[PDFViewerPdfjsProcessing] = js.native
+  var pdfjsProcessing: js.UndefOr[PDFViewerPdfjsProcessing] = js.undefined
   
-  var render: js.UndefOr[js.Function1[/* e */ PDFViewerRenderEvent, Unit]] = js.native
+  var render: js.UndefOr[js.Function1[/* e */ PDFViewerRenderEvent, Unit]] = js.undefined
   
-  var toolbar: js.UndefOr[Boolean | PDFViewerToolbar] = js.native
+  var toolbar: js.UndefOr[Boolean | PDFViewerToolbar] = js.undefined
   
-  var view: js.UndefOr[PDFViewerView] = js.native
+  var view: js.UndefOr[PDFViewerView] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object PDFViewerOptions {
   

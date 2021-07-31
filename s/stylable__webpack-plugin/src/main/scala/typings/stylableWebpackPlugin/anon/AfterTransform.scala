@@ -4,15 +4,13 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterTransform extends StObject {
   
-  var afterTransform: js.Any = js.native
+  var afterTransform: js.Any
   
-  var runtimeStylesheetId: module | namespace = js.native
+  var runtimeStylesheetId: module | namespace
 }
 object AfterTransform {
   

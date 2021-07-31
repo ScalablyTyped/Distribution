@@ -19,7 +19,6 @@ import typings.roslib.roslibNumbers.`3`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -175,7 +174,9 @@ object mod {
     *   * z - the z value
     *   * w - the w value
     */
-  class Quaternion () extends QuaternionLike {
+  class Quaternion ()
+    extends StObject
+       with QuaternionLike {
     def this(options: W) = this()
     
     /**
@@ -689,7 +690,9 @@ object mod {
   
   @JSImport("roslib", "UrdfBox")
   @js.native
-  class UrdfBox protected () extends UrdfGeometry {
+  class UrdfBox protected ()
+    extends StObject
+       with UrdfGeometry {
     /**
       * A Box element in a URDF.
       *
@@ -727,7 +730,9 @@ object mod {
   
   @JSImport("roslib", "UrdfCylinder")
   @js.native
-  class UrdfCylinder protected () extends UrdfGeometry {
+  class UrdfCylinder protected ()
+    extends StObject
+       with UrdfGeometry {
     /**
       * A Cylinder element in a URDF.
       *
@@ -809,7 +814,9 @@ object mod {
   
   @JSImport("roslib", "UrdfMesh")
   @js.native
-  class UrdfMesh protected () extends UrdfGeometry {
+  class UrdfMesh protected ()
+    extends StObject
+       with UrdfGeometry {
     /**
       * A Box element in a URDF.
       *
@@ -849,7 +856,9 @@ object mod {
   
   @JSImport("roslib", "UrdfSphere")
   @js.native
-  class UrdfSphere protected () extends UrdfGeometry {
+  class UrdfSphere protected ()
+    extends StObject
+       with UrdfGeometry {
     /**
       * A Sphere element in a URDF.
       *
@@ -894,7 +903,9 @@ object mod {
     *   * y - the y value
     *   * z - the z value
     */
-  class Vector3 () extends Vector3Like {
+  class Vector3 ()
+    extends StObject
+       with Vector3Like {
     def this(options: X) = this()
     
     /**
@@ -928,16 +939,15 @@ object mod {
     var z_Vector3: Double = js.native
   }
   
-  @js.native
   trait QuaternionLike extends StObject {
     
-    var w: js.UndefOr[Double | Null] = js.native
+    var w: js.UndefOr[Double | Null] = js.undefined
     
-    var x: js.UndefOr[Double | Null] = js.native
+    var x: js.UndefOr[Double | Null] = js.undefined
     
-    var y: js.UndefOr[Double | Null] = js.native
+    var y: js.UndefOr[Double | Null] = js.undefined
     
-    var z: js.UndefOr[Double | Null] = js.native
+    var z: js.UndefOr[Double | Null] = js.undefined
   }
   object QuaternionLike {
     
@@ -996,14 +1006,13 @@ object mod {
   */
   trait UrdfGeometry extends StObject
   
-  @js.native
   trait Vector3Like extends StObject {
     
-    var x: js.UndefOr[Double | Null] = js.native
+    var x: js.UndefOr[Double | Null] = js.undefined
     
-    var y: js.UndefOr[Double | Null] = js.native
+    var y: js.UndefOr[Double | Null] = js.undefined
     
-    var z: js.UndefOr[Double | Null] = js.native
+    var z: js.UndefOr[Double | Null] = js.undefined
   }
   object Vector3Like {
     

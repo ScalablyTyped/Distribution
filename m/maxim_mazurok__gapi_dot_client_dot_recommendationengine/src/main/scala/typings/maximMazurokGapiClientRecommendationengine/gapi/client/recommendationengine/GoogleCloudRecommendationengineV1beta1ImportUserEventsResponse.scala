@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse extends StObject {
   
   /** A sample of errors encountered while processing the request. */
-  var errorSamples: js.UndefOr[js.Array[GoogleRpcStatus]] = js.native
+  var errorSamples: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
   
   /** Echoes the destination for the complete errors if this field was set in the request. */
-  var errorsConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] = js.native
+  var errorsConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] = js.undefined
   
   /** Aggregated statistics of user event import status. */
-  var importSummary: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEventImportSummary] = js.native
+  var importSummary: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEventImportSummary] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse {
   

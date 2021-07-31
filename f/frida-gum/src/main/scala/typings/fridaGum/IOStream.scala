@@ -2,10 +2,8 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOStream extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait IOStream extends StObject {
     * streams. Once the stream is closed, all other operations will fail. Closing a stream multiple times is allowed
     * and will not result in an error.
     */
-  def close(): js.Promise[Unit] = js.native
+  def close(): js.Promise[Unit]
   
   /**
     * The `InputStream` to read from.
     */
-  var input: InputStream = js.native
+  var input: InputStream
   
   /**
     * The `OutputStream` to write to.
     */
-  var output: OutputStream = js.native
+  var output: OutputStream
 }
 object IOStream {
   

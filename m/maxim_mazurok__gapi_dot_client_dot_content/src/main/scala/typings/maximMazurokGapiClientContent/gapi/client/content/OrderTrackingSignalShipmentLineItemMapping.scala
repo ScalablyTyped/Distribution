@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderTrackingSignalShipmentLineItemMapping extends StObject {
   
   /** Required. The line item ID. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** Required. The line item quantity in the shipment. */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /** Required. The shipment ID. */
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
 }
 object OrderTrackingSignalShipmentLineItemMapping {
   

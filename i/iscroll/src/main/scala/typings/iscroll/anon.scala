@@ -2,17 +2,15 @@ package typings.iscroll
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fn extends StObject {
     
-    def fn(k: js.Any): js.Any = js.native
+    def fn(k: js.Any): js.Any
     
-    var style: String = js.native
+    var style: String
   }
   object Fn {
     

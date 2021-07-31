@@ -10,51 +10,49 @@ import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonBackButton extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * The url to navigate back to by default when there is no history.
     */
-  var defaultHref: js.UndefOr[String] = js.native
+  var defaultHref: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the button.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The icon name to use for the back button.
     */
-  var icon: js.UndefOr[String | Null] = js.native
+  var icon: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * When using a router, it specifies the transition animation when navigating to another page.
     */
-  var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The text to display in the back button.
     */
-  var text: js.UndefOr[String | Null] = js.native
+  var text: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of the button.
     */
-  var `type`: submit | reset | button = js.native
+  var `type`: submit | reset | button
 }
 object IonBackButton {
   

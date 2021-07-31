@@ -2,26 +2,24 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstalledExtensionStateIssue extends StObject {
   
   /**
     * The error message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Source of the installation issue, for example  "Demands"
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * Installation issue type (Warning, Error)
     */
-  var `type`: InstalledExtensionStateIssueType = js.native
+  var `type`: InstalledExtensionStateIssueType
 }
 object InstalledExtensionStateIssue {
   

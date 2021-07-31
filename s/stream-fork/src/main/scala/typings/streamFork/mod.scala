@@ -4,7 +4,6 @@ import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,26 +20,28 @@ object mod {
     def this(outputs: js.Array[Writable]) = this()
     def this(outputs: js.Array[Writable], options: ForkOptions) = this()
   }
+  @JSImport("stream-fork", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * It is a factory function, which accepts the same arguments as the constructor, and returns a fully constructed Fork object.
     */
   /* static member */
-  @JSImport("stream-fork", "fork")
-  @js.native
-  def fork(outputs: js.Array[Writable]): Fork_ = js.native
-  @JSImport("stream-fork", "fork")
-  @js.native
-  def fork(outputs: js.Array[Writable], options: ForkOptions): Fork_ = js.native
+  @scala.inline
+  def fork(outputs: js.Array[Writable]): Fork_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any]).asInstanceOf[Fork_]
+  @scala.inline
+  def fork(outputs: js.Array[Writable], options: ForkOptions): Fork_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fork_]
   
-  @js.native
-  trait ForkOptions extends WritableOptions {
+  trait ForkOptions
+    extends StObject
+       with WritableOptions {
     
     /**
       * ignoreErrors is a flag. When its value is truthy, a Fork instance never fails on write() silently ignoring downstream errors.
       * Otherwise, the first encountered downstream error is reported upstream as its own error. The default: false.
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   }
   object ForkOptions {
     

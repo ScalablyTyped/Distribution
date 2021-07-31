@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterSchemaVersionResponse extends StObject {
   
   /**
     * The unique ID that represents the version of this schema.
     */
-  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.native
+  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.undefined
   
   /**
     * The status of the schema version.
     */
-  var Status: js.UndefOr[SchemaVersionStatus] = js.native
+  var Status: js.UndefOr[SchemaVersionStatus] = js.undefined
   
   /**
     * The version of this schema (for sync flow only, in case this is the first version).
     */
-  var VersionNumber: js.UndefOr[VersionLongNumber] = js.native
+  var VersionNumber: js.UndefOr[VersionLongNumber] = js.undefined
 }
 object RegisterSchemaVersionResponse {
   

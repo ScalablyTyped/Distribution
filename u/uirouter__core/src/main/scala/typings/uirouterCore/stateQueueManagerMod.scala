@@ -9,14 +9,15 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.stateRegistryMod.StateRegistryListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateQueueManagerMod {
   
   @JSImport("@uirouter/core/lib/state/stateQueueManager", "StateQueueManager")
   @js.native
-  class StateQueueManager protected () extends Disposable {
+  class StateQueueManager protected ()
+    extends StObject
+       with Disposable {
     def this(
       router: UIRouter,
       states: StringDictionary[StateObject],

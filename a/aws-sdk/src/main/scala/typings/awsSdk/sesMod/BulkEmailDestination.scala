@@ -2,23 +2,21 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEmailDestination extends StObject {
   
-  var Destination: typings.awsSdk.sesMod.Destination = js.native
+  var Destination: typings.awsSdk.sesMod.Destination
   
   /**
     * A list of tags, in the form of name/value pairs, to apply to an email that you send using SendBulkTemplatedEmail. Tags correspond to characteristics of the email that you define, so that you can publish email sending events.
     */
-  var ReplacementTags: js.UndefOr[MessageTagList] = js.native
+  var ReplacementTags: js.UndefOr[MessageTagList] = js.undefined
   
   /**
     * A list of replacement values to apply to the template. This parameter is a JSON object, typically consisting of key-value pairs in which the keys correspond to replacement tags in the email template.
     */
-  var ReplacementTemplateData: js.UndefOr[TemplateData] = js.native
+  var ReplacementTemplateData: js.UndefOr[TemplateData] = js.undefined
 }
 object BulkEmailDestination {
   

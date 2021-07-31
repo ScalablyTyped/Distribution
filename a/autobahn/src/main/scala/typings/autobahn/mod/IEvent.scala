@@ -2,17 +2,15 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEvent extends StObject {
   
-  var publication: Double = js.native
+  var publication: Double
   
-  var publisher: js.UndefOr[Double] = js.native
+  var publisher: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object IEvent {
   

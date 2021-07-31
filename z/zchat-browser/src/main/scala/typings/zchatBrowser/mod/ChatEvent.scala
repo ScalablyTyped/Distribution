@@ -1,31 +1,19 @@
 package typings.zchatBrowser.mod
 
 import typings.zchatBrowser.zchatBrowserStrings.LINK_ACTION
-import typings.zchatBrowser.zchatBrowserStrings.LIST_TEMPLATE
 import typings.zchatBrowser.zchatBrowserStrings.PANEL_TEMPLATE
-import typings.zchatBrowser.zchatBrowserStrings.PANEL_TEMPLATE_CAROUSEL
-import typings.zchatBrowser.zchatBrowserStrings.QUICK_REPLIES
 import typings.zchatBrowser.zchatBrowserStrings.QUICK_REPLY_ACTION
-import typings.zchatBrowser.zchatBrowserStrings.chatDotcomment
-import typings.zchatBrowser.zchatBrowserStrings.chatDotfile
-import typings.zchatBrowser.zchatBrowserStrings.chatDotmemberjoin
-import typings.zchatBrowser.zchatBrowserStrings.chatDotmemberleave
-import typings.zchatBrowser.zchatBrowserStrings.chatDotmsg
-import typings.zchatBrowser.zchatBrowserStrings.chatDotrating
-import typings.zchatBrowser.zchatBrowserStrings.chatDotrequestDotrating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ChatEvent {
   
-  @js.native
   trait Action extends StObject {
     
-    var `type`: QUICK_REPLY_ACTION | LINK_ACTION = js.native
+    var `type`: QUICK_REPLY_ACTION | LINK_ACTION
     
-    var value: String = js.native
+    var value: String
   }
   object Action {
     
@@ -47,14 +35,13 @@ object ChatEvent {
     }
   }
   
-  @js.native
   trait BaseChatEventData extends StObject {
     
-    var display_name: String = js.native
+    var display_name: String
     
-    var nick: String = js.native
+    var nick: String
     
-    var time_stamp: Double = js.native
+    var time_stamp: Double
   }
   object BaseChatEventData {
     
@@ -78,12 +65,11 @@ object ChatEvent {
     }
   }
   
-  @js.native
   trait Button extends StObject {
     
-    var action: Action = js.native
+    var action: Action
     
-    var text: String = js.native
+    var text: String
   }
   object Button {
     
@@ -113,7 +99,9 @@ object ChatEvent {
     - typings.zchatBrowser.anon.BaseChatEventDatatypechatNewrating
     - typings.zchatBrowser.anon.BaseChatEventDatatypechatComment
   */
-  trait ChatEventData extends EventData
+  trait ChatEventData
+    extends StObject
+       with EventData
   object ChatEventData {
     
     @scala.inline
@@ -123,74 +111,65 @@ object ChatEvent {
       nick: String,
       options: js.Array[String],
       structured_msg: StructuredMessage,
-      time_stamp: Double,
-      `type`: chatDotmsg
+      time_stamp: Double
     ): typings.zchatBrowser.anon.BaseChatEventDatatypechat = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], structured_msg = structured_msg.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.msg")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechat]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatAttachment(
-      attachment: Attachment,
-      deleted: Boolean,
-      display_name: String,
-      nick: String,
-      time_stamp: Double,
-      `type`: chatDotfile
-    ): typings.zchatBrowser.anon.BaseChatEventDatatypechatAttachment = {
+    def BaseChatEventDatatypechatAttachment(attachment: Attachment, deleted: Boolean, display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatAttachment = {
       val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.file")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatAttachment]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatComment(display_name: String, nick: String, time_stamp: Double, `type`: chatDotcomment): typings.zchatBrowser.anon.BaseChatEventDatatypechatComment = {
+    def BaseChatEventDatatypechatComment(display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatComment = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.comment")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatComment]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatDisplayname(display_name: String, nick: String, time_stamp: Double, `type`: chatDotmemberjoin): typings.zchatBrowser.anon.BaseChatEventDatatypechatDisplayname = {
+    def BaseChatEventDatatypechatDisplayname(display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatDisplayname = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.memberjoin")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatDisplayname]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatNewrating(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrating): typings.zchatBrowser.anon.BaseChatEventDatatypechatNewrating = {
+    def BaseChatEventDatatypechatNewrating(display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatNewrating = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.rating")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatNewrating]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatNick(display_name: String, nick: String, time_stamp: Double, `type`: chatDotmemberleave): typings.zchatBrowser.anon.BaseChatEventDatatypechatNick = {
+    def BaseChatEventDatatypechatNick(display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatNick = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.memberleave")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatNick]
     }
     
     @scala.inline
-    def BaseChatEventDatatypechatTimestamp(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrequestDotrating): typings.zchatBrowser.anon.BaseChatEventDatatypechatTimestamp = {
+    def BaseChatEventDatatypechatTimestamp(display_name: String, nick: String, time_stamp: Double): typings.zchatBrowser.anon.BaseChatEventDatatypechatTimestamp = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chat.request.rating")
       __obj.asInstanceOf[typings.zchatBrowser.anon.BaseChatEventDatatypechatTimestamp]
     }
   }
   
-  @js.native
   trait ListItem extends StObject {
     
-    var action: Action = js.native
+    var action: Action
     
-    var heading: String = js.native
+    var heading: String
     
-    var image_url: js.UndefOr[String] = js.native
+    var image_url: js.UndefOr[String] = js.undefined
     
-    var paragraph: String = js.native
+    var paragraph: String
   }
   object ListItem {
     
@@ -220,16 +199,15 @@ object ChatEvent {
     }
   }
   
-  @js.native
   trait Panel extends StObject {
     
-    var action: Action = js.native
+    var action: Action
     
-    var heading: String = js.native
+    var heading: String
     
-    var image_url: String = js.native
+    var image_url: String
     
-    var paragraph: js.UndefOr[String] = js.native
+    var paragraph: js.UndefOr[String] = js.undefined
   }
   object Panel {
     
@@ -259,21 +237,20 @@ object ChatEvent {
     }
   }
   
-  @js.native
   trait PanelTemplate extends StObject {
     
-    var buttons: js.Array[Button] = js.native
+    var buttons: js.Array[Button]
     
-    var panel: Panel = js.native
+    var panel: Panel
     
-    var `type`: PANEL_TEMPLATE = js.native
+    var `type`: PANEL_TEMPLATE
   }
   object PanelTemplate {
     
     @scala.inline
-    def apply(buttons: js.Array[Button], panel: Panel, `type`: PANEL_TEMPLATE): PanelTemplate = {
+    def apply(buttons: js.Array[Button], panel: Panel): PanelTemplate = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("PANEL_TEMPLATE")
       __obj.asInstanceOf[PanelTemplate]
     }
     
@@ -304,30 +281,30 @@ object ChatEvent {
   object StructuredMessage {
     
     @scala.inline
-    def Buttons(buttons: js.Array[Button], panel: Panel, `type`: PANEL_TEMPLATE): typings.zchatBrowser.anon.Buttons = {
+    def Buttons(buttons: js.Array[Button], panel: Panel): typings.zchatBrowser.anon.Buttons = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("PANEL_TEMPLATE")
       __obj.asInstanceOf[typings.zchatBrowser.anon.Buttons]
     }
     
     @scala.inline
-    def Items(items: js.Array[PanelTemplate], `type`: PANEL_TEMPLATE_CAROUSEL): typings.zchatBrowser.anon.Items = {
+    def Items(items: js.Array[PanelTemplate]): typings.zchatBrowser.anon.Items = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("PANEL_TEMPLATE_CAROUSEL")
       __obj.asInstanceOf[typings.zchatBrowser.anon.Items]
     }
     
     @scala.inline
-    def Msg(msg: String, quick_replies: js.Array[Button], `type`: QUICK_REPLIES): typings.zchatBrowser.anon.Msg = {
+    def Msg(msg: String, quick_replies: js.Array[Button]): typings.zchatBrowser.anon.Msg = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], quick_replies = quick_replies.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("QUICK_REPLIES")
       __obj.asInstanceOf[typings.zchatBrowser.anon.Msg]
     }
     
     @scala.inline
-    def Type(buttons: js.Array[Button], items: js.Array[ListItem], `type`: LIST_TEMPLATE): typings.zchatBrowser.anon.Type = {
+    def Type(buttons: js.Array[Button], items: js.Array[ListItem]): typings.zchatBrowser.anon.Type = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("LIST_TEMPLATE")
       __obj.asInstanceOf[typings.zchatBrowser.anon.Type]
     }
   }

@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAuthorizationTokenResponse extends StObject {
   
   /**
     * A list of authorization token data objects that correspond to the registryIds values in the request.
     */
-  var authorizationData: js.UndefOr[AuthorizationDataList] = js.native
+  var authorizationData: js.UndefOr[AuthorizationDataList] = js.undefined
 }
 object GetAuthorizationTokenResponse {
   

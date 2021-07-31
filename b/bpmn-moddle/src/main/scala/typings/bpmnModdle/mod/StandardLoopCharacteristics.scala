@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StandardLoopCharacteristics extends BaseElement {
+trait StandardLoopCharacteristics
+  extends StObject
+     with BaseElement {
   
-  var loopCondition: Expression = js.native
+  var loopCondition: Expression
   
-  var loopMaximum: Expression = js.native
+  var loopMaximum: Expression
   
-  var testBefore: Boolean = js.native
+  var testBefore: Boolean
 }
 object StandardLoopCharacteristics {
   

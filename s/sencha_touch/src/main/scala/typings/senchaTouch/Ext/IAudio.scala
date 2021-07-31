@@ -2,23 +2,23 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAudio extends IMedia {
+trait IAudio
+  extends StObject
+     with IMedia {
   
   /** [Method] Returns the value of cls
     * @returns String
     */
   @JSName("getCls")
-  var getCls_IAudio: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getCls_IAudio: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
   @JSName("setCls")
-  var setCls_IAudio: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setCls_IAudio: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
 }
 object IAudio {
   

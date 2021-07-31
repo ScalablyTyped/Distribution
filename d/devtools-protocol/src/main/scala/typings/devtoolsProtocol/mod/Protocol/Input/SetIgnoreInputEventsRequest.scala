@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIgnoreInputEventsRequest extends StObject {
   
   /**
     * Ignores input events processing when set to true.
     */
-  var ignore: Boolean = js.native
+  var ignore: Boolean
 }
 object SetIgnoreInputEventsRequest {
   

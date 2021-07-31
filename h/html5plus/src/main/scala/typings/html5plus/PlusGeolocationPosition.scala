@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
-@js.native
 trait PlusGeolocationPosition extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusGeolocationPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var address: js.UndefOr[PlusGeolocationAddress] = js.native
+  var address: js.UndefOr[PlusGeolocationAddress] = js.undefined
   
   /**
     * 获取完整地址描述信息
@@ -28,14 +26,14 @@ trait PlusGeolocationPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var addresses: js.UndefOr[String] = js.native
+  var addresses: js.UndefOr[String] = js.undefined
   
   /**
     * 地理坐标信息，包括经纬度、海拔、速度等信息
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coords: js.UndefOr[PlusGeolocationCoordinates] = js.native
+  var coords: js.UndefOr[PlusGeolocationCoordinates] = js.undefined
   
   /**
     * 获取到地理坐标信息的坐标系类型
@@ -47,7 +45,7 @@ trait PlusGeolocationPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coordsType: js.UndefOr[String] = js.native
+  var coordsType: js.UndefOr[String] = js.undefined
   
   /**
     * 获取到地理坐标的时间戳信息
@@ -55,7 +53,7 @@ trait PlusGeolocationPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
 }
 object PlusGeolocationPosition {
   

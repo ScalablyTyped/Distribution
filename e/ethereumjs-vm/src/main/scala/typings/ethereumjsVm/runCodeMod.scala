@@ -6,76 +6,77 @@ import typings.ethereumjsVm.evmMod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runCodeMod {
   
-  @JSImport("ethereumjs-vm/dist/runCode", JSImport.Default)
+  @JSImport("ethereumjs-vm/dist/runCode", JSImport.Namespace)
   @js.native
-  def default(opts: RunCodeOpts): js.Promise[ExecResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(opts: RunCodeOpts): js.Promise[ExecResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExecResult]]
+  
   trait RunCodeOpts extends StObject {
     
     /**
       * The address of the account that is executing this code. The address should be a `Buffer` of bytes. Defaults to `0`
       */
-    var address: js.UndefOr[Buffer] = js.native
+    var address: js.UndefOr[Buffer] = js.undefined
     
     /**
       * The [`Block`](https://github.com/ethereumjs/ethereumjs-block) the `tx` belongs to. If omitted a blank block will be used
       */
-    var block: js.UndefOr[js.Any] = js.native
+    var block: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The address that ran this code. The address should be a `Buffer` of 20 bits. Defaults to `0`
       */
-    var caller: js.UndefOr[Buffer] = js.native
+    var caller: js.UndefOr[Buffer] = js.undefined
     
     /**
       * The EVM code to run
       */
-    var code: js.UndefOr[Buffer] = js.native
+    var code: js.UndefOr[Buffer] = js.undefined
     
     /**
       * The input data
       */
-    var data: js.UndefOr[Buffer] = js.native
+    var data: js.UndefOr[Buffer] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var evm: js.UndefOr[default] = js.native
+    var evm: js.UndefOr[default] = js.undefined
     
     /**
       * Gas limit
       */
-    var gasLimit: js.UndefOr[Buffer] = js.native
+    var gasLimit: js.UndefOr[Buffer] = js.undefined
     
-    var gasPrice: js.UndefOr[Buffer] = js.native
+    var gasPrice: js.UndefOr[Buffer] = js.undefined
     
-    var isStatic: js.UndefOr[Boolean] = js.native
+    var isStatic: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[typings.ethereumjsVm.messageMod.default] = js.native
+    var message: js.UndefOr[typings.ethereumjsVm.messageMod.default] = js.undefined
     
     /**
       * The address where the call originated from. The address should be a `Buffer` of 20 bits. Defaults to `0`
       */
-    var origin: js.UndefOr[Buffer] = js.native
+    var origin: js.UndefOr[Buffer] = js.undefined
     
     /**
       * The initial program counter. Defaults to `0`
       */
-    var pc: js.UndefOr[Double] = js.native
+    var pc: js.UndefOr[Double] = js.undefined
     
-    var selfdestruct: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var selfdestruct: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var txContext: js.UndefOr[typings.ethereumjsVm.txContextMod.default] = js.native
+    var txContext: js.UndefOr[typings.ethereumjsVm.txContextMod.default] = js.undefined
     
     /**
       * The value in ether that is being sent to `opt.address`. Defaults to `0`
       */
-    var value: js.UndefOr[Buffer] = js.native
+    var value: js.UndefOr[Buffer] = js.undefined
   }
   object RunCodeOpts {
     

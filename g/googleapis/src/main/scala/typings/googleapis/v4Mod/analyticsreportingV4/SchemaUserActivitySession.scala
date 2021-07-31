@@ -2,20 +2,18 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This represents a user session performed on a specific device at a certain
   * time over a period of time.
   */
-@js.native
 trait SchemaUserActivitySession extends StObject {
   
   /**
     * Represents a detailed view into each of the activity in this session.
     */
-  var activities: js.UndefOr[js.Array[SchemaActivity]] = js.native
+  var activities: js.UndefOr[js.Array[SchemaActivity]] = js.undefined
   
   /**
     * The data source of a hit. By default, hits sent from analytics.js are
@@ -23,28 +21,28 @@ trait SchemaUserActivitySession extends StObject {
     * reported as &quot;app&quot;. These values can be overridden in the
     * Measurement Protocol.
     */
-  var dataSource: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[String] = js.undefined
   
   /**
     * The type of device used: &quot;mobile&quot;, &quot;tablet&quot; etc.
     */
-  var deviceCategory: js.UndefOr[String] = js.native
+  var deviceCategory: js.UndefOr[String] = js.undefined
   
   /**
     * Platform on which the activity happened: &quot;android&quot;,
     * &quot;ios&quot; etc.
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * Date of this session in ISO-8601 format.
     */
-  var sessionDate: js.UndefOr[String] = js.native
+  var sessionDate: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID of the session.
     */
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
 }
 object SchemaUserActivitySession {
   

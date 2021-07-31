@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageVersionHistory extends StObject {
   
   /**
     * A message associated with the version.
     */
-  var CommitMessage: js.UndefOr[typings.awsSdk.esMod.CommitMessage] = js.native
+  var CommitMessage: js.UndefOr[typings.awsSdk.esMod.CommitMessage] = js.undefined
   
   /**
     * Timestamp which tells creation time of the package version.
     */
-  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.native
+  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.undefined
   
   /**
     * Version of the package.
     */
-  var PackageVersion: js.UndefOr[typings.awsSdk.esMod.PackageVersion] = js.native
+  var PackageVersion: js.UndefOr[typings.awsSdk.esMod.PackageVersion] = js.undefined
 }
 object PackageVersionHistory {
   

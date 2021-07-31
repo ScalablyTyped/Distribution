@@ -2,31 +2,29 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeConfiguration extends StObject {
   
   /**
     * The Availability Zone in which the node exists.
     */
-  var AvailabilityZone: AvailabilityZoneString = js.native
+  var AvailabilityZone: AvailabilityZoneString
   
   /**
     * The Amazon Managed Blockchain instance type for the node.
     */
-  var InstanceType: InstanceTypeString = js.native
+  var InstanceType: InstanceTypeString
   
   /**
     * Configuration properties for logging events associated with a peer node owned by a member in a Managed Blockchain network. 
     */
-  var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.native
+  var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.undefined
   
   /**
     * The state database that the node uses. Values are LevelDB or CouchDB. When using an Amazon Managed Blockchain network with Hyperledger Fabric version 1.4 or later, the default is CouchDB.
     */
-  var StateDB: js.UndefOr[StateDBType] = js.native
+  var StateDB: js.UndefOr[StateDBType] = js.undefined
 }
 object NodeConfiguration {
   

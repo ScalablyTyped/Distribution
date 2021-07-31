@@ -2,17 +2,15 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stemmer extends StObject {
   
-  def attach(): Unit = js.native
+  def attach(): Unit
   
-  def stem(token: String): String = js.native
+  def stem(token: String): String
   
-  def tokenizeAndStem(text: String): js.Array[String] = js.native
+  def tokenizeAndStem(text: String): js.Array[String]
 }
 object Stemmer {
   

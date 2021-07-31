@@ -6,32 +6,33 @@ import typings.pathToRegexp.mod.TokensToFunctionOptions
 import typings.universalRouter.mod.RouterContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateUrlsMod {
   
+  @JSImport("universal-router/src/generateUrls", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a function to generate urls by route names.
     */
-  @JSImport("universal-router/src/generateUrls", JSImport.Default)
-  @js.native
-  def default(router: typings.universalRouter.mod.default[_, RouterContext]): GenerateUrl = js.native
-  @JSImport("universal-router/src/generateUrls", JSImport.Default)
-  @js.native
-  def default(router: typings.universalRouter.mod.default[_, RouterContext], options: GenerateUrlsOptions): GenerateUrl = js.native
+  @scala.inline
+  def default(router: typings.universalRouter.mod.default[js.Any, RouterContext]): GenerateUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[GenerateUrl]
+  @scala.inline
+  def default(router: typings.universalRouter.mod.default[js.Any, RouterContext], options: GenerateUrlsOptions): GenerateUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenerateUrl]
   
   type GenerateUrl = js.Function2[/* routeName */ String, /* params */ js.UndefOr[UrlParams], String]
   
-  @js.native
   trait GenerateUrlsOptions
-    extends ParseOptions
+    extends StObject
+       with ParseOptions
        with TokensToFunctionOptions {
     
     /**
       * Add a query string to generated url based on unknown route params.
       */
-    var stringifyQueryParams: js.UndefOr[js.Function1[/* params */ UrlParams, String]] = js.native
+    var stringifyQueryParams: js.UndefOr[js.Function1[/* params */ UrlParams, String]] = js.undefined
   }
   object GenerateUrlsOptions {
     

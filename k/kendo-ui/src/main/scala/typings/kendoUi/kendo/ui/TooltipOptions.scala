@@ -2,45 +2,43 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | TooltipAnimation] = js.native
+  var animation: js.UndefOr[Boolean | TooltipAnimation] = js.undefined
   
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | js.Function | TooltipContent] = js.native
+  var content: js.UndefOr[String | js.Function | TooltipContent] = js.undefined
   
-  var contentLoad: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.native
+  var contentLoad: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ TooltipErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ TooltipErrorEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.undefined
   
-  var iframe: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var requestStart: js.UndefOr[js.Function1[/* e */ TooltipRequestStartEvent, Unit]] = js.native
+  var requestStart: js.UndefOr[js.Function1[/* e */ TooltipRequestStartEvent, Unit]] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ TooltipEvent, Unit]] = js.undefined
   
-  var showAfter: js.UndefOr[Double] = js.native
+  var showAfter: js.UndefOr[Double] = js.undefined
   
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TooltipOptions {
   

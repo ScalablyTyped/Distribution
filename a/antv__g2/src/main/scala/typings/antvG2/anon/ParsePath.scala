@@ -2,17 +2,15 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsePath extends StObject {
   
-  var parsePath: js.Any = js.native
+  var parsePath: js.Any
   
-  var parsePoint: js.Any = js.native
+  var parsePoint: js.Any
   
-  var parsePoints: js.Any = js.native
+  var parsePoints: js.Any
 }
 object ParsePath {
   

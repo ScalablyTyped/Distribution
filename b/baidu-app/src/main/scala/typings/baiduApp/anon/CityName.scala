@@ -2,65 +2,63 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CityName extends StObject {
   
   /**
     * 国标收货地址第二级地址
     *
     */
-  var cityName: String = js.native
+  var cityName: String
   
   /**
     * 国标收货地址第三级地址
     *
     */
-  var countyName: String = js.native
+  var countyName: String
   
   /**
     * 详细收货地址信息
     *
     */
-  var detailInfo: String = js.native
+  var detailInfo: String
   
   /**
     * 调用结果
     *
     */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /**
     * 收货地址国家码
     *
     */
-  var nationalCode: String = js.native
+  var nationalCode: String
   
   /**
     * 邮编
     *
     */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /**
     * 国标收货地址第一级地址
     *
     */
-  var provinceName: String = js.native
+  var provinceName: String
   
   /**
     * 收货人手机号码
     *
     */
-  var telNumber: String = js.native
+  var telNumber: String
   
   /**
     * 收货人姓名
     *
     */
-  var userName: String = js.native
+  var userName: String
 }
 object CityName {
   

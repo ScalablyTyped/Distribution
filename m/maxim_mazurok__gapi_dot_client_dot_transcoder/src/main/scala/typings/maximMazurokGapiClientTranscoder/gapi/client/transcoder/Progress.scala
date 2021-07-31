@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress extends StObject {
   
   /** Estimated fractional progress for `analyzing` step. */
-  var analyzed: js.UndefOr[Double] = js.native
+  var analyzed: js.UndefOr[Double] = js.undefined
   
   /** Estimated fractional progress for `encoding` step. */
-  var encoded: js.UndefOr[Double] = js.native
+  var encoded: js.UndefOr[Double] = js.undefined
   
   /** Estimated fractional progress for `notifying` step. */
-  var notified: js.UndefOr[Double] = js.native
+  var notified: js.UndefOr[Double] = js.undefined
   
   /** Estimated fractional progress for `uploading` step. */
-  var uploaded: js.UndefOr[Double] = js.native
+  var uploaded: js.UndefOr[Double] = js.undefined
 }
 object Progress {
   

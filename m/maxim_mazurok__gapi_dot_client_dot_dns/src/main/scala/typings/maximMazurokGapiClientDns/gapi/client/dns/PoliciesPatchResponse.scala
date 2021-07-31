@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PoliciesPatchResponse extends StObject {
   
-  var header: js.UndefOr[ResponseHeader] = js.native
+  var header: js.UndefOr[ResponseHeader] = js.undefined
   
-  var policy: js.UndefOr[Policy] = js.native
+  var policy: js.UndefOr[Policy] = js.undefined
 }
 object PoliciesPatchResponse {
   

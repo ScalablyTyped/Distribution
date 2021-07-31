@@ -6,25 +6,23 @@ import typings.mpvScript.mpvScriptStrings.repeat
 import typings.mpvScript.mpvScriptStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mp {
   
-  @js.native
   trait AddKeyBindingFlags extends StObject {
     
-    var complex: js.UndefOr[Boolean] = js.native
+    var complex: js.UndefOr[Boolean] = js.undefined
     
-    var event: js.UndefOr[down | repeat | up | press] = js.native
+    var event: js.UndefOr[down | repeat | up | press] = js.undefined
     
-    var is_mouse: js.UndefOr[Boolean] = js.native
+    var is_mouse: js.UndefOr[Boolean] = js.undefined
     
-    var key_name: js.UndefOr[String] = js.native
+    var key_name: js.UndefOr[String] = js.undefined
     
-    var key_text: js.UndefOr[String] = js.native
+    var key_text: js.UndefOr[String] = js.undefined
     
-    var repeatable: js.UndefOr[Boolean] = js.native
+    var repeatable: js.UndefOr[Boolean] = js.undefined
   }
   object AddKeyBindingFlags {
     
@@ -75,22 +73,21 @@ object mp {
     }
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
-    var atime: Double = js.native
+    var atime: Double
     
-    var ctime: Double = js.native
+    var ctime: Double
     
-    var is_dir: Boolean = js.native
+    var is_dir: Boolean
     
-    var is_file: Boolean = js.native
+    var is_file: Boolean
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Double = js.native
+    var mtime: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object FileInfo {
     
@@ -168,20 +165,19 @@ object mp {
     def warn: typings.mpvScript.mpvScriptStrings.warn = "warn".asInstanceOf[typings.mpvScript.mpvScriptStrings.warn]
   }
   
-  @js.native
   trait OSDOverlay extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    var res_x: Double = js.native
+    var res_x: Double
     
-    var res_y: Double = js.native
+    var res_y: Double
     
-    def update(): Unit = js.native
+    def update(): Unit
     
-    var z: Double = js.native
+    var z: Double
   }
   object OSDOverlay {
     
@@ -214,14 +210,13 @@ object mp {
     }
   }
   
-  @js.native
   trait OSDSize extends StObject {
     
-    var aspect: js.UndefOr[Double] = js.native
+    var aspect: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OSDSize {
     

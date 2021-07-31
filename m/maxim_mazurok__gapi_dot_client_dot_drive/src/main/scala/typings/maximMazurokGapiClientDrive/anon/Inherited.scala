@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inherited extends StObject {
   
   /** Whether this permission is inherited. This field is always populated. This is an output-only field. */
-  var inherited: js.UndefOr[Boolean] = js.native
+  var inherited: js.UndefOr[Boolean] = js.undefined
   
   /** The ID of the item from which this permission is inherited. This is an output-only field. */
-  var inheritedFrom: js.UndefOr[String] = js.native
+  var inheritedFrom: js.UndefOr[String] = js.undefined
   
   /**
     * The permission type for this user. While new values may be added in future, the following are currently possible:
     * - file
     * - member
     */
-  var permissionType: js.UndefOr[String] = js.native
+  var permissionType: js.UndefOr[String] = js.undefined
   
   /**
     * The primary role for this user. While new values may be added in the future, the following are currently possible:
@@ -29,7 +27,7 @@ trait Inherited extends StObject {
     * - commenter
     * - reader
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object Inherited {
   

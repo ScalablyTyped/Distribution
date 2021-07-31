@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Media
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties for music information that is displayed by the SystemMediaTransportControlsDisplayUpdater class. */
-@js.native
 trait MusicDisplayProperties extends StObject {
   
   /** Gets or sets the name of the album artist. */
-  var albumArtist: String = js.native
+  var albumArtist: String
   
   /** Gets or sets the album title. */
-  var albumTitle: String = js.native
+  var albumTitle: String
   
   /** Gets or set the name of the song artist. */
-  var artist: String = js.native
+  var artist: String
   
   /** Gets a modifiable list of strings representing genre names. */
-  var genres: IVector[String] = js.native
+  var genres: IVector[String]
   
   /** Gets or set the title of the song. */
-  var title: String = js.native
+  var title: String
   
   /** Gets or sets the track number. */
-  var trackNumber: Double = js.native
+  var trackNumber: Double
 }
 object MusicDisplayProperties {
   

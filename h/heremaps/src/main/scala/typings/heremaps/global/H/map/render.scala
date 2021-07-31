@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.render.RenderEngine.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object render {
@@ -17,7 +16,8 @@ object render {
   @JSGlobal("H.map.render.RenderEngine")
   @js.native
   class RenderEngine protected ()
-    extends typings.heremaps.H.map.render.RenderEngine {
+    extends StObject
+       with typings.heremaps.H.map.render.RenderEngine {
     /**
       * Constructor
       * @param viewPort {H.map.ViewPort} - An object representing the map viewport
@@ -42,17 +42,17 @@ object render {
     object InteractionModifiers extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderEngine.InteractionModifiers with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderEngine.InteractionModifiers & Double] = js.native
       
-      /* 4 */ val COORD: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.COORD with Double = js.native
+      /* 4 */ val COORD: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.COORD & Double = js.native
       
-      /* 1 */ val HEADING: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.HEADING with Double = js.native
+      /* 1 */ val HEADING: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.HEADING & Double = js.native
       
-      /* 3 */ val INCLINE: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.INCLINE with Double = js.native
+      /* 3 */ val INCLINE: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.INCLINE & Double = js.native
       
-      /* 2 */ val TILT: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.TILT with Double = js.native
+      /* 2 */ val TILT: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.TILT & Double = js.native
       
-      /* 0 */ val ZOOM: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.ZOOM with Double = js.native
+      /* 0 */ val ZOOM: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.ZOOM & Double = js.native
     }
   }
   
@@ -64,13 +64,13 @@ object render {
   object RenderState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderState with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderState & Double] = js.native
     
-    /* 1 */ val ACTIVE: typings.heremaps.H.map.render.RenderState.ACTIVE with Double = js.native
+    /* 1 */ val ACTIVE: typings.heremaps.H.map.render.RenderState.ACTIVE & Double = js.native
     
-    /* 2 */ val DONE: typings.heremaps.H.map.render.RenderState.DONE with Double = js.native
+    /* 2 */ val DONE: typings.heremaps.H.map.render.RenderState.DONE & Double = js.native
     
-    /* 0 */ val PENDING: typings.heremaps.H.map.render.RenderState.PENDING with Double = js.native
+    /* 0 */ val PENDING: typings.heremaps.H.map.render.RenderState.PENDING & Double = js.native
   }
   
   /**
@@ -85,7 +85,8 @@ object render {
     @JSGlobal("H.map.render.p2d.RenderEngine")
     @js.native
     class RenderEngine protected ()
-      extends typings.heremaps.H.map.render.p2d.RenderEngine {
+      extends StObject
+         with typings.heremaps.H.map.render.p2d.RenderEngine {
       /**
         * Constructor
         * @param viewPort {H.map.ViewPort} - An object representing the map viewport

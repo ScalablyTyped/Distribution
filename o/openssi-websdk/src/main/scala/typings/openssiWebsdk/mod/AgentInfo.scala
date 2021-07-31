@@ -2,27 +2,25 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentInfo extends StObject {
   
-  var creation_time: String = js.native
+  var creation_time: String
   
-  var did: DID = js.native
+  var did: DID
   
-  var expiration: Double = js.native
+  var expiration: Double
   
-  var metrics: js.Any = js.native
+  var metrics: js.Any
   
-  var name: AgentName = js.native
+  var name: AgentName
   
-  var role: String | Null = js.native
+  var role: String | Null
   
-  var url: AgentURL = js.native
+  var url: AgentURL
   
-  var verkey: Verkey = js.native
+  var verkey: Verkey
 }
 object AgentInfo {
   
@@ -36,7 +34,7 @@ object AgentInfo {
     url: AgentURL,
     verkey: Verkey
   ): AgentInfo = {
-    val __obj = js.Dynamic.literal(creation_time = creation_time.asInstanceOf[js.Any], did = did.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verkey = verkey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(creation_time = creation_time.asInstanceOf[js.Any], did = did.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verkey = verkey.asInstanceOf[js.Any], role = null)
     __obj.asInstanceOf[AgentInfo]
   }
   

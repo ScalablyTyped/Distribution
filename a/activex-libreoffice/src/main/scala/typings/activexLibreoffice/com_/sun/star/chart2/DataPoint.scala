@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesAsian
 import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesComplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataPoint
-  extends DataPointProperties
+  extends StObject
+     with DataPointProperties
      with CharacterProperties
      with CharacterPropertiesAsian
      with CharacterPropertiesComplex {

@@ -11,8 +11,8 @@ A simple utility for precise-dateing functions and classes.
 | Full name          | @google-cloud/precise-date |
 | Keywords           | nano, date, time, precise |
 | # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 15882386 |
+| # dependents       | 6 |
+| # downloads        | 22327489 |
 | # stars            | 0 |
 
 ## Links

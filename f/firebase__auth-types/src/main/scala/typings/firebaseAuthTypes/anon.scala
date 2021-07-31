@@ -27,15 +27,13 @@ import typings.firebaseAuthTypes.mod.TwitterAuthProviderInstance
 import typings.firebaseAuthTypes.mod.firebaseAppTypesAugmentingMod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BundleId extends StObject {
     
-    var bundleId: String = js.native
+    var bundleId: String
   }
   object BundleId {
     
@@ -101,12 +99,11 @@ object anon {
     var TwitterAuthProvider_Instance: Instantiable0[TwitterAuthProviderInstance] = js.native
   }
   
-  @js.native
   trait DisplayName extends StObject {
     
-    var displayName: js.UndefOr[String | Null] = js.native
+    var displayName: js.UndefOr[String | Null] = js.undefined
     
-    var photoURL: js.UndefOr[String | Null] = js.native
+    var photoURL: js.UndefOr[String | Null] = js.undefined
   }
   object DisplayName {
     
@@ -139,20 +136,19 @@ object anon {
     }
   }
   
-  @js.native
   trait EMAILSIGNIN extends StObject {
     
-    var EMAIL_SIGNIN: Operation = js.native
+    var EMAIL_SIGNIN: Operation
     
-    var PASSWORD_RESET: Operation = js.native
+    var PASSWORD_RESET: Operation
     
-    var RECOVER_EMAIL: Operation = js.native
+    var RECOVER_EMAIL: Operation
     
-    var REVERT_SECOND_FACTOR_ADDITION: Operation = js.native
+    var REVERT_SECOND_FACTOR_ADDITION: Operation
     
-    var VERIFY_AND_CHANGE_EMAIL: Operation = js.native
+    var VERIFY_AND_CHANGE_EMAIL: Operation
     
-    var VERIFY_EMAIL: Operation = js.native
+    var VERIFY_EMAIL: Operation
   }
   object EMAILSIGNIN {
     
@@ -192,16 +188,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String | Null] = js.native
+    var email: js.UndefOr[String | Null] = js.undefined
     
-    var fromEmail: js.UndefOr[String | Null] = js.native
+    var fromEmail: js.UndefOr[String | Null] = js.undefined
     
-    var multiFactorInfo: js.UndefOr[MultiFactorInfo | Null] = js.native
+    var multiFactorInfo: js.UndefOr[MultiFactorInfo | Null] = js.undefined
     
-    var previousEmail: js.UndefOr[String | Null] = js.native
+    var previousEmail: js.UndefOr[String | Null] = js.undefined
   }
   object Email {
     
@@ -252,14 +247,13 @@ object anon {
     }
   }
   
-  @js.native
   trait InstallApp extends StObject {
     
-    var installApp: js.UndefOr[Boolean] = js.native
+    var installApp: js.UndefOr[Boolean] = js.undefined
     
-    var minimumVersion: js.UndefOr[String] = js.native
+    var minimumVersion: js.UndefOr[String] = js.undefined
     
-    var packageName: String = js.native
+    var packageName: String
   }
   object InstallApp {
     
@@ -289,14 +283,13 @@ object anon {
     }
   }
   
-  @js.native
   trait LOCAL extends StObject {
     
-    var LOCAL: Persistence = js.native
+    var LOCAL: Persistence
     
-    var NONE: Persistence = js.native
+    var NONE: Persistence
     
-    var SESSION: Persistence = js.native
+    var SESSION: Persistence
   }
   object LOCAL {
     
@@ -321,7 +314,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofEmailAuthProvider extends Instantiable0[EmailAuthProvider] {
+  trait TypeofEmailAuthProvider
+    extends StObject
+       with Instantiable0[EmailAuthProvider] {
     
     var EMAIL_LINK_SIGN_IN_METHOD: String = js.native
     
@@ -335,7 +330,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofFacebookAuthProvide extends Instantiable0[FacebookAuthProvider] {
+  trait TypeofFacebookAuthProvide
+    extends StObject
+       with Instantiable0[FacebookAuthProvider] {
     
     var FACEBOOK_SIGN_IN_METHOD: String = js.native
     
@@ -345,13 +342,17 @@ object anon {
   }
   
   @js.native
-  trait TypeofFirebaseAuth extends Instantiable0[FirebaseAuth] {
+  trait TypeofFirebaseAuth
+    extends StObject
+       with Instantiable0[FirebaseAuth] {
     
     var Persistence: LOCAL = js.native
   }
   
   @js.native
-  trait TypeofGithubAuthProvider extends Instantiable0[GithubAuthProvider] {
+  trait TypeofGithubAuthProvider
+    extends StObject
+       with Instantiable0[GithubAuthProvider] {
     
     var GITHUB_SIGN_IN_METHOD: String = js.native
     
@@ -361,21 +362,25 @@ object anon {
   }
   
   @js.native
-  trait TypeofGoogleAuthProvider extends Instantiable0[GoogleAuthProvider] {
+  trait TypeofGoogleAuthProvider
+    extends StObject
+       with Instantiable0[GoogleAuthProvider] {
     
     var GOOGLE_SIGN_IN_METHOD: String = js.native
     
     var PROVIDER_ID: String = js.native
     
     def credential(): AuthCredential = js.native
-    def credential(idToken: js.UndefOr[scala.Nothing], accessToken: String): AuthCredential = js.native
     def credential(idToken: String): AuthCredential = js.native
     def credential(idToken: String, accessToken: String): AuthCredential = js.native
     def credential(idToken: Null, accessToken: String): AuthCredential = js.native
+    def credential(idToken: Unit, accessToken: String): AuthCredential = js.native
   }
   
   @js.native
-  trait TypeofPhoneAuthProvider extends Instantiable0[PhoneAuthProvider] {
+  trait TypeofPhoneAuthProvider
+    extends StObject
+       with Instantiable0[PhoneAuthProvider] {
     
     var PHONE_SIGN_IN_METHOD: String = js.native
     
@@ -385,7 +390,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofPhoneMultiFactorGen extends Instantiable0[PhoneMultiFactorGenerator] {
+  trait TypeofPhoneMultiFactorGen
+    extends StObject
+       with Instantiable0[PhoneMultiFactorGenerator] {
     
     var FACTOR_ID: String = js.native
     
@@ -393,7 +400,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofTwitterAuthProvider extends Instantiable0[TwitterAuthProvider] {
+  trait TypeofTwitterAuthProvider
+    extends StObject
+       with Instantiable0[TwitterAuthProvider] {
     
     var PROVIDER_ID: String = js.native
     

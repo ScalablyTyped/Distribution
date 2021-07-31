@@ -4,203 +4,154 @@ import typings.bitwise.bitwiseTypesMod.Bit
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
   
+  @JSImport("bitwise/buffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("bitwise/buffer", "default.and")
+    @JSImport("bitwise/buffer", JSImport.Default)
     @js.native
-    def and(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.and")
-    @js.native
-    def and(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitwise/buffer", "default.create")
-    @js.native
-    def create(bits: js.Array[Bit]): Buffer = js.native
+    @scala.inline
+    def and(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def and(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.modify")
-    @js.native
-    def modify(buffer: Buffer, bits: js.Array[Bit]): Unit = js.native
-    @JSImport("bitwise/buffer", "default.modify")
-    @js.native
-    def modify(buffer: Buffer, bits: js.Array[Bit], offset: Double): Unit = js.native
+    @scala.inline
+    def create(bits: js.Array[Bit]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.nand")
-    @js.native
-    def nand(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.nand")
-    @js.native
-    def nand(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    @scala.inline
+    def modify(buffer: Buffer, bits: js.Array[Bit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(buffer.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def modify(buffer: Buffer, bits: js.Array[Bit], offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(buffer.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("bitwise/buffer", "default.nor")
-    @js.native
-    def nor(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.nor")
-    @js.native
-    def nor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    @scala.inline
+    def nand(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nand")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def nand(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nand")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.not")
-    @js.native
-    def not(buffer: Buffer): Buffer = js.native
+    @scala.inline
+    def nor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def nor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.or")
-    @js.native
-    def or(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.or")
-    @js.native
-    def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    @scala.inline
+    def not(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.read")
-    @js.native
-    def read(buffer: Buffer): js.Array[Bit] = js.native
-    @JSImport("bitwise/buffer", "default.read")
-    @js.native
-    def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[Bit] = js.native
-    @JSImport("bitwise/buffer", "default.read")
-    @js.native
-    def read(buffer: Buffer, offset: Double): js.Array[Bit] = js.native
-    @JSImport("bitwise/buffer", "default.read")
-    @js.native
-    def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = js.native
+    @scala.inline
+    def or(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitwise/buffer", "default.readInt")
-    @js.native
-    def readInt(buffer: Buffer): Double = js.native
-    @JSImport("bitwise/buffer", "default.readInt")
-    @js.native
-    def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-    @JSImport("bitwise/buffer", "default.readInt")
-    @js.native
-    def readInt(buffer: Buffer, offset: Double): Double = js.native
-    @JSImport("bitwise/buffer", "default.readInt")
-    @js.native
-    def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    @scala.inline
+    def read(buffer: Buffer): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
+    @scala.inline
+    def read(buffer: Buffer, offset: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
+    @scala.inline
+    def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
+    @scala.inline
+    def read(buffer: Buffer, offset: Unit, length: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
     
-    @JSImport("bitwise/buffer", "default.readUInt")
-    @js.native
-    def readUInt(buffer: Buffer): Double = js.native
-    @JSImport("bitwise/buffer", "default.readUInt")
-    @js.native
-    def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-    @JSImport("bitwise/buffer", "default.readUInt")
-    @js.native
-    def readUInt(buffer: Buffer, offset: Double): Double = js.native
-    @JSImport("bitwise/buffer", "default.readUInt")
-    @js.native
-    def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+    @scala.inline
+    def readInt(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def readInt(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def readInt(buffer: Buffer, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def readInt(buffer: Buffer, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("bitwise/buffer", "default.xnor")
-    @js.native
-    def xnor(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.xnor")
-    @js.native
-    def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    @scala.inline
+    def readUInt(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def readUInt(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def readUInt(buffer: Buffer, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def readUInt(buffer: Buffer, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("bitwise/buffer", "default.xor")
-    @js.native
-    def xor(a: Buffer, b: Buffer): Buffer = js.native
-    @JSImport("bitwise/buffer", "default.xor")
-    @js.native
-    def xor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+    @scala.inline
+    def xnor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xnor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xnor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    
+    @scala.inline
+    def xor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    @scala.inline
+    def xor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
-  @JSImport("bitwise/buffer", "and")
-  @js.native
-  def and(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "and")
-  @js.native
-  def and(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def and(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def and(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "create")
-  @js.native
-  def create(bits: js.Array[Bit]): Buffer = js.native
+  @scala.inline
+  def create(bits: js.Array[Bit]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "modify")
-  @js.native
-  def modify(buffer: Buffer, bits: js.Array[Bit]): Unit = js.native
-  @JSImport("bitwise/buffer", "modify")
-  @js.native
-  def modify(buffer: Buffer, bits: js.Array[Bit], offset: Double): Unit = js.native
+  @scala.inline
+  def modify(buffer: Buffer, bits: js.Array[Bit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(buffer.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def modify(buffer: Buffer, bits: js.Array[Bit], offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(buffer.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bitwise/buffer", "nand")
-  @js.native
-  def nand(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "nand")
-  @js.native
-  def nand(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def nand(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nand")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def nand(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nand")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "nor")
-  @js.native
-  def nor(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "nor")
-  @js.native
-  def nor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def nor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def nor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("nor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "not")
-  @js.native
-  def not(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def not(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "or")
-  @js.native
-  def or(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "or")
-  @js.native
-  def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def or(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "read")
-  @js.native
-  def read(buffer: Buffer): js.Array[Bit] = js.native
-  @JSImport("bitwise/buffer", "read")
-  @js.native
-  def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[Bit] = js.native
-  @JSImport("bitwise/buffer", "read")
-  @js.native
-  def read(buffer: Buffer, offset: Double): js.Array[Bit] = js.native
-  @JSImport("bitwise/buffer", "read")
-  @js.native
-  def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = js.native
+  @scala.inline
+  def read(buffer: Buffer): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
+  @scala.inline
+  def read(buffer: Buffer, offset: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
+  @scala.inline
+  def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
+  @scala.inline
+  def read(buffer: Buffer, offset: Unit, length: Double): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
   
-  @JSImport("bitwise/buffer", "readInt")
-  @js.native
-  def readInt(buffer: Buffer): Double = js.native
-  @JSImport("bitwise/buffer", "readInt")
-  @js.native
-  def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  @JSImport("bitwise/buffer", "readInt")
-  @js.native
-  def readInt(buffer: Buffer, offset: Double): Double = js.native
-  @JSImport("bitwise/buffer", "readInt")
-  @js.native
-  def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+  @scala.inline
+  def readInt(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def readInt(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readInt(buffer: Buffer, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readInt(buffer: Buffer, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bitwise/buffer", "readUInt")
-  @js.native
-  def readUInt(buffer: Buffer): Double = js.native
-  @JSImport("bitwise/buffer", "readUInt")
-  @js.native
-  def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  @JSImport("bitwise/buffer", "readUInt")
-  @js.native
-  def readUInt(buffer: Buffer, offset: Double): Double = js.native
-  @JSImport("bitwise/buffer", "readUInt")
-  @js.native
-  def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
+  @scala.inline
+  def readUInt(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def readUInt(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readUInt(buffer: Buffer, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readUInt(buffer: Buffer, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bitwise/buffer", "xnor")
-  @js.native
-  def xnor(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "xnor")
-  @js.native
-  def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def xnor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xnor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def xnor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xnor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bitwise/buffer", "xor")
-  @js.native
-  def xor(a: Buffer, b: Buffer): Buffer = js.native
-  @JSImport("bitwise/buffer", "xor")
-  @js.native
-  def xor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+  @scala.inline
+  def xor(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def xor(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

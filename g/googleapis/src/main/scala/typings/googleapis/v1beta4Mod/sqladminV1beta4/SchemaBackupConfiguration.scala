@@ -2,41 +2,39 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance backup configuration.
   */
-@js.native
 trait SchemaBackupConfiguration extends StObject {
   
   /**
     * Whether binary log is enabled. If backup configuration is disabled,
     * binary log must be disabled as well.
     */
-  var binaryLogEnabled: js.UndefOr[Boolean] = js.native
+  var binaryLogEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this configuration is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always sql#backupConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.native
+  var replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Start time for the daily backup configuration in UTC timezone in the 24
     * hour format - HH:MM.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaBackupConfiguration {
   

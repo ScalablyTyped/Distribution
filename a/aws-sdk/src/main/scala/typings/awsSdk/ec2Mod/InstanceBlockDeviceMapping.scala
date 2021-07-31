@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceBlockDeviceMapping extends StObject {
   
   /**
     * The device name (for example, /dev/sdh or xvdh).
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Parameters used to automatically set up EBS volumes when the instance is launched.
     */
-  var Ebs: js.UndefOr[EbsInstanceBlockDevice] = js.native
+  var Ebs: js.UndefOr[EbsInstanceBlockDevice] = js.undefined
 }
 object InstanceBlockDeviceMapping {
   

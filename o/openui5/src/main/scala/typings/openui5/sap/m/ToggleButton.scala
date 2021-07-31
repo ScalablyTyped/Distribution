@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToggleButton extends Button {
+trait ToggleButton
+  extends StObject
+     with Button {
   
   /**
     * Gets current value of property <code>pressed</code>.The property is “true” when the control is

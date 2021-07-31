@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessagePolicyViolation extends StObject {
   
   /**
@@ -14,20 +12,20 @@ trait ChatMessagePolicyViolation extends StObject {
     * message.BlockAccessExternal -- Block users outside the organization from reading the message, while allowing users
     * within the organization to read the message.
     */
-  var dlpAction: js.UndefOr[NullableOption[ChatMessagePolicyViolationDlpActionTypes]] = js.native
+  var dlpAction: js.UndefOr[NullableOption[ChatMessagePolicyViolationDlpActionTypes]] = js.undefined
   
   // Justification text provided by the sender of the message when overriding a policy violation.
-  var justificationText: js.UndefOr[NullableOption[String]] = js.native
+  var justificationText: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Information to display to the message sender about why the message was flagged as a violation.
-  var policyTip: js.UndefOr[NullableOption[ChatMessagePolicyViolationPolicyTip]] = js.native
+  var policyTip: js.UndefOr[NullableOption[ChatMessagePolicyViolationPolicyTip]] = js.undefined
   
   /**
     * Indicates the action taken by the user on a message blocked by the DLP provider. Supported values are:
     * NoneOverrideReportFalsePositiveWhen the DLP provider is updating the message for blocking sensitive content, userAction
     * is not required.
     */
-  var userAction: js.UndefOr[NullableOption[ChatMessagePolicyViolationUserActionTypes]] = js.native
+  var userAction: js.UndefOr[NullableOption[ChatMessagePolicyViolationUserActionTypes]] = js.undefined
   
   /**
     * Indicates what actions the sender may take in response to the policy violation. Supported values are:
@@ -39,7 +37,7 @@ trait ChatMessagePolicyViolation extends StObject {
     * providing an explanation for doing so.AllowOverrideWithoutJustification and AllowOverrideWithJustification are mutually
     * exclusive.
     */
-  var verdictDetails: js.UndefOr[NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]] = js.native
+  var verdictDetails: js.UndefOr[NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]] = js.undefined
 }
 object ChatMessagePolicyViolation {
   

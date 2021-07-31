@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDevicePolicyConfigurationRequest extends StObject {
   
   /**
     * The certificate chain, including intermediate certificates and the root certificate authority certificate used to issue device certificates.
     */
-  var DeviceCaCertificate: js.UndefOr[CertificateChain] = js.native
+  var DeviceCaCertificate: js.UndefOr[CertificateChain] = js.undefined
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
 }
 object UpdateDevicePolicyConfigurationRequest {
   

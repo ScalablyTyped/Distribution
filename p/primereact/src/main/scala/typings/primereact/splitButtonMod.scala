@@ -6,7 +6,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitButtonMod {
@@ -23,38 +22,37 @@ object splitButtonMod {
     def this(props: SplitButtonProps, context: js.Any) = this()
   }
   
-  @js.native
   trait SplitButtonProps extends StObject {
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var buttonTemplate: js.UndefOr[js.Any] = js.native
+    var buttonTemplate: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var menuClassName: js.UndefOr[String] = js.native
+    var menuClassName: js.UndefOr[String] = js.undefined
     
-    var menuStyle: js.UndefOr[js.Object] = js.native
+    var menuStyle: js.UndefOr[js.Object] = js.undefined
     
-    var model: js.UndefOr[js.Array[_]] = js.native
+    var model: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   }
   object SplitButtonProps {
     
@@ -122,7 +120,7 @@ object splitButtonMod {
       def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
       
       @scala.inline
-      def setModel(value: js.Array[_]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      def setModel(value: js.Array[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setModelUndefined: Self = StObject.set(x, "model", js.undefined)

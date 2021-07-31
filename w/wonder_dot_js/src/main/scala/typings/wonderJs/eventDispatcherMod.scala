@@ -1,16 +1,15 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/dispatcher/EventDispatcher", JSImport.Namespace)
-@js.native
-object eventDispatcherMod extends js.Object {
+object eventDispatcherMod {
+  
+  @JSImport("wonder.js/dist/es2015/event/dispatcher/EventDispatcher", "EventDispatcher")
   @js.native
-  abstract class EventDispatcher () extends js.Object {
+  abstract class EventDispatcher () extends StObject {
+    
     def trigger(args: js.Any*): js.Any = js.native
   }
-  
 }
-

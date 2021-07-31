@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regularPolygonMod {
@@ -15,7 +14,7 @@ object regularPolygonMod {
   class RegularPolygon () extends Shape[RegularPolygonConfig] {
     def this(config: RegularPolygonConfig) = this()
     
-    def _getPoints(): js.Array[_] = js.native
+    def _getPoints(): js.Array[js.Any] = js.native
     
     def _sceneFunc(context: js.Any): Unit = js.native
     
@@ -38,12 +37,13 @@ object regularPolygonMod {
     var sides_Original: GetSet[Double, this.type] = js.native
   }
   
-  @js.native
-  trait RegularPolygonConfig extends ShapeConfig {
+  trait RegularPolygonConfig
+    extends StObject
+       with ShapeConfig {
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var sides: Double = js.native
+    var sides: Double
   }
   object RegularPolygonConfig {
     

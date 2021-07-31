@@ -6,10 +6,13 @@ import typings.d3Selection.mod.Selection_
 import typings.venn.anon.Setid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("venn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait VennDiagram extends StObject {
@@ -28,47 +31,41 @@ object mod {
     
     def width(w: Double): VennDiagram = js.native
   }
-  @JSImport("venn", "VennDiagram")
-  @js.native
-  def VennDiagram(): VennDiagram = js.native
+  object VennDiagram {
+    
+    @JSImport("venn", "VennDiagram")
+    @js.native
+    def apply(): VennDiagram = js.native
+  }
   
-  @JSImport("venn", "bestInitialLayout")
-  @js.native
-  def bestInitialLayout(areas: js.Array[Area], params: LayoutParameter): js.Array[Circle] = js.native
+  @scala.inline
+  def bestInitialLayout(areas: js.Array[Area], params: LayoutParameter): js.Array[Circle] = (^.asInstanceOf[js.Dynamic].applyDynamic("bestInitialLayout")(areas.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Circle]]
   
-  @JSImport("venn", "circleFromPath")
-  @js.native
-  def circleFromPath(path: String): Circle = js.native
+  @scala.inline
+  def circleFromPath(path: String): Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("circleFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[Circle]
   
-  @JSImport("venn", "circleOverlap")
-  @js.native
-  def circleOverlap(r1: Double, r2: Double, d: Double): Double = js.native
+  @scala.inline
+  def circleOverlap(r1: Double, r2: Double, d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("circleOverlap")(r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("venn", "distance")
-  @js.native
-  def distance(p1: Point, p2: Point): Double = js.native
+  @scala.inline
+  def distance(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("venn", "intersectionArea")
-  @js.native
-  def intersectionArea(circles: js.Array[js.Object]): Double = js.native
-  @JSImport("venn", "intersectionArea")
-  @js.native
-  def intersectionArea(circles: js.Array[js.Object], stats: js.Object): Double = js.native
+  @scala.inline
+  def intersectionArea(circles: js.Array[js.Object]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("intersectionArea")(circles.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def intersectionArea(circles: js.Array[js.Object], stats: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectionArea")(circles.asInstanceOf[js.Any], stats.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("venn", "sortAreas")
-  @js.native
-  def sortAreas(div: Selection_[BaseType, js.Object, BaseType, js.UndefOr[js.Object]], relativeTo: Area): Unit = js.native
+  @scala.inline
+  def sortAreas(div: Selection_[BaseType, js.Object, BaseType, js.UndefOr[js.Object]], relativeTo: Area): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortAreas")(div.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("venn", "venn")
-  @js.native
-  def venn(areas: js.Array[Area], parameters: js.Object): js.Array[Circle] = js.native
+  @scala.inline
+  def venn(areas: js.Array[Area], parameters: js.Object): js.Array[Circle] = (^.asInstanceOf[js.Dynamic].applyDynamic("venn")(areas.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Array[Circle]]
   
-  @js.native
   trait Area extends StObject {
     
-    var sets: js.Array[String] = js.native
+    var sets: js.Array[String]
     
-    var size: Double = js.native
+    var size: Double
   }
   object Area {
     
@@ -92,14 +89,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Circle extends StObject {
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Circle {
     
@@ -123,14 +119,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LayoutParameter extends StObject {
     
     var lossFunction: js.UndefOr[
         js.Function2[/* sets */ StringDictionary[Circle], /* overlaps */ js.Array[Overlap], Double]
-      ] = js.native
+      ] = js.undefined
     
-    var restarts: js.UndefOr[Double] = js.native
+    var restarts: js.UndefOr[Double] = js.undefined
   }
   object LayoutParameter {
     
@@ -157,14 +152,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Overlap extends StObject {
     
-    var sets: js.Array[String] = js.native
+    var sets: js.Array[String]
     
-    var size: Double = js.native
+    var size: Double
     
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object Overlap {
     
@@ -194,12 +188,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     

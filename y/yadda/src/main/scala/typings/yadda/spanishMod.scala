@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spanishMod extends Shortcut {
@@ -16,7 +15,8 @@ object spanishMod extends Shortcut {
   
   @js.native
   trait Library
-    extends typings.yadda.englishMod.Library {
+    extends StObject
+       with typings.yadda.englishMod.Library {
     
     def cuando(
       step: String,
@@ -1810,27 +1810,27 @@ object spanishMod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Vocabulary
-    extends typings.yadda.englishMod.Vocabulary {
+    extends StObject
+       with typings.yadda.englishMod.Vocabulary {
     
-    var cuando: String = js.native
+    var cuando: String
     
-    var dada: String = js.native
+    var dada: String
     
-    var dadas: String = js.native
+    var dadas: String
     
-    var dado: String = js.native
+    var dado: String
     
-    var dados: String = js.native
+    var dados: String
     
-    var entonces: String = js.native
+    var entonces: String
     
-    var sea: String = js.native
+    var sea: String
     
-    var sean: String = js.native
+    var sean: String
     
-    var si: String = js.native
+    var si: String
   }
   object Vocabulary {
     
@@ -1846,7 +1846,7 @@ object spanishMod extends Shortcut {
       entonces: String,
       examples: String,
       feature: String,
-      given: String,
+      `given`: String,
       only: String,
       pending: String,
       scenario: String,
@@ -1856,7 +1856,8 @@ object spanishMod extends Shortcut {
       `then`: String,
       when: String
     ): Vocabulary = {
-      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], cuando = cuando.asInstanceOf[js.Any], dada = dada.asInstanceOf[js.Any], dadas = dadas.asInstanceOf[js.Any], dado = dado.asInstanceOf[js.Any], dados = dados.asInstanceOf[js.Any], entonces = entonces.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], sea = sea.asInstanceOf[js.Any], sean = sean.asInstanceOf[js.Any], si = si.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], cuando = cuando.asInstanceOf[js.Any], dada = dada.asInstanceOf[js.Any], dadas = dadas.asInstanceOf[js.Any], dado = dado.asInstanceOf[js.Any], dados = dados.asInstanceOf[js.Any], entonces = entonces.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], sea = sea.asInstanceOf[js.Any], sean = sean.asInstanceOf[js.Any], si = si.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }

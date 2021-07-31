@@ -2,16 +2,14 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBInstanceMessage extends StObject {
   
   /**
     * The instance identifier for the instance to be deleted. This parameter isn't case sensitive. Constraints:   Must match the name of an existing instance.  
     */
-  var DBInstanceIdentifier: String = js.native
+  var DBInstanceIdentifier: String
 }
 object DeleteDBInstanceMessage {
   

@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBotAliasMod {
   
-  @JSImport("@pulumi/aws/lex/getBotAlias", "getBotAlias")
+  @JSImport("@pulumi/aws/lex/getBotAlias", JSImport.Namespace)
   @js.native
-  def getBotAlias(args: GetBotAliasArgs): js.Promise[GetBotAliasResult] = js.native
-  @JSImport("@pulumi/aws/lex/getBotAlias", "getBotAlias")
-  @js.native
-  def getBotAlias(args: GetBotAliasArgs, opts: InvokeOptions): js.Promise[GetBotAliasResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBotAlias(args: GetBotAliasArgs): js.Promise[GetBotAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotAliasResult]]
+  @scala.inline
+  def getBotAlias(args: GetBotAliasArgs, opts: InvokeOptions): js.Promise[GetBotAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotAliasResult]]
+  
   trait GetBotAliasArgs extends StObject {
     
     /**
       * The name of the bot.
       */
-    val botName: String = js.native
+    val botName: String
     
     /**
       * The name of the bot alias. The name is case sensitive.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetBotAliasArgs {
     
@@ -47,53 +47,52 @@ object getBotAliasMod {
     }
   }
   
-  @js.native
   trait GetBotAliasResult extends StObject {
     
     /**
       * The ARN of the bot alias.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The name of the bot.
       */
-    val botName: String = js.native
+    val botName: String
     
     /**
       * The version of the bot that the alias points to.
       */
-    val botVersion: String = js.native
+    val botVersion: String
     
     /**
       * Checksum of the bot alias.
       */
-    val checksum: String = js.native
+    val checksum: String
     
     /**
       * The date that the bot alias was created.
       */
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * A description of the alias.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The date that the bot alias was updated. When you create a resource, the creation date and the last updated date are the same.
       */
-    val lastUpdatedDate: String = js.native
+    val lastUpdatedDate: String
     
     /**
       * The name of the alias. The name is not case sensitive.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetBotAliasResult {
     

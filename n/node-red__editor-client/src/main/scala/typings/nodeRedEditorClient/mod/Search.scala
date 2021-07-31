@@ -2,19 +2,17 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Search extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def search(`val`: String): js.Array[js.Object] = js.native
+  def search(`val`: String): js.Array[js.Object]
   
-  def show(v: String): Unit = js.native
+  def show(v: String): Unit
 }
 object Search {
   

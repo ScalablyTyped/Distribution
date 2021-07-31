@@ -8,42 +8,40 @@ import typings.mangopay2NodejsSdk.mod.dispute.DisputeType
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData> */
-@js.native
 trait PartialDisputeData extends StObject {
   
-  var ContestDeadlineDate: js.UndefOr[Timestamp] = js.native
+  var ContestDeadlineDate: js.UndefOr[Timestamp] = js.undefined
   
-  var ContestedFunds: js.UndefOr[MoneyData] = js.native
+  var ContestedFunds: js.UndefOr[MoneyData] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var DisputeReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeReason] = js.native
+  var DisputeReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeReason] = js.undefined
   
-  var DisputeType: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeType] = js.native
+  var DisputeType: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeType] = js.undefined
   
-  var DisputedFunds: js.UndefOr[MoneyData] = js.native
+  var DisputedFunds: js.UndefOr[MoneyData] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var InitialTransactionId: js.UndefOr[String] = js.native
+  var InitialTransactionId: js.UndefOr[String] = js.undefined
   
-  var InitialTransactionType: js.UndefOr[TransactionType] = js.native
+  var InitialTransactionType: js.UndefOr[TransactionType] = js.undefined
   
-  var RepudiationId: js.UndefOr[String] = js.native
+  var RepudiationId: js.UndefOr[String] = js.undefined
   
-  var ResultCode: js.UndefOr[String] = js.native
+  var ResultCode: js.UndefOr[String] = js.undefined
   
-  var ResultMessage: js.UndefOr[String] = js.native
+  var ResultMessage: js.UndefOr[String] = js.undefined
   
-  var Status: js.UndefOr[DisputeStatus] = js.native
+  var Status: js.UndefOr[DisputeStatus] = js.undefined
   
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object PartialDisputeData {
   

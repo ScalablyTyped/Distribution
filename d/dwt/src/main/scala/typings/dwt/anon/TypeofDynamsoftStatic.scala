@@ -7,23 +7,21 @@ import typings.dwt.dynamsoftMod.Messages
 import typings.dwt.dynamsoftMod.WebTwainEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDynamsoftStatic extends StObject {
   
-  var FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader = js.native
+  var FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader
   
-  var Lib: DynamsoftLib = js.native
+  var Lib: DynamsoftLib
   
-  var MSG: Messages = js.native
+  var MSG: Messages
   
-  val WebTwain: TypeofWebTwain = js.native
+  val WebTwain: TypeofWebTwain
   
-  var WebTwainEnv: typings.dwt.dynamsoftMod.WebTwainEnv = js.native
+  var WebTwainEnv: typings.dwt.dynamsoftMod.WebTwainEnv
   
-  var managerEnv: ManagerEnv = js.native
+  var managerEnv: ManagerEnv
 }
 object TypeofDynamsoftStatic {
   

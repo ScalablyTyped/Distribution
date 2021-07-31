@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateStampProperties extends StObject {
   
   /**
     * The height of the rectangle.
     */
-  var dateAreaHeight: js.UndefOr[String] = js.native
+  var dateAreaHeight: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the rectangle.
     */
-  var dateAreaWidth: js.UndefOr[String] = js.native
+  var dateAreaWidth: js.UndefOr[String] = js.undefined
   
   /**
     * The X axis position of the top-left corner.
     */
-  var dateAreaX: js.UndefOr[String] = js.native
+  var dateAreaX: js.UndefOr[String] = js.undefined
   
   /**
     * The Y axis position of the top-left corner.
     */
-  var dateAreaY: js.UndefOr[String] = js.native
+  var dateAreaY: js.UndefOr[String] = js.undefined
 }
 object DateStampProperties {
   

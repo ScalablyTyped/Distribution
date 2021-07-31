@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardError extends StObject {
   
   /**
     * Message.
     */
-  var Message: js.UndefOr[NonEmptyString] = js.native
+  var Message: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Type.
     */
-  var Type: js.UndefOr[DashboardErrorType] = js.native
+  var Type: js.UndefOr[DashboardErrorType] = js.undefined
 }
 object DashboardError {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentOtherDeviceId extends StObject {
   
   /** Project ID for your smart home Action. */
-  var agentId: js.UndefOr[String] = js.native
+  var agentId: js.UndefOr[String] = js.undefined
   
   /** Unique third-party device ID. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
 }
 object AgentOtherDeviceId {
   

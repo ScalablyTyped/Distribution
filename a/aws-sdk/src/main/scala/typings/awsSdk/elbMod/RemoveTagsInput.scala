@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsInput extends StObject {
   
   /**
     * The name of the load balancer. You can specify a maximum of one load balancer name.
     */
-  var LoadBalancerNames: typings.awsSdk.elbMod.LoadBalancerNames = js.native
+  var LoadBalancerNames: typings.awsSdk.elbMod.LoadBalancerNames
   
   /**
     * The list of tag keys to remove.
     */
-  var Tags: TagKeyList = js.native
+  var Tags: TagKeyList
 }
 object RemoveTagsInput {
   

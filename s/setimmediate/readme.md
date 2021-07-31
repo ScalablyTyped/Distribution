@@ -11,8 +11,8 @@ A shim for the setImmediate efficient script yielding API
 | Full name          | setimmediate |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 398 |
-| # downloads        | 407859936 |
+| # dependents       | 455 |
+| # downloads        | 500648664 |
 | # stars            | 7 |
 
 ## Links

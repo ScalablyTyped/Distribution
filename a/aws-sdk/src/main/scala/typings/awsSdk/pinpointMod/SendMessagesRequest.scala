@@ -2,18 +2,16 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessagesRequest extends StObject {
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
-  var MessageRequest: typings.awsSdk.pinpointMod.MessageRequest = js.native
+  var MessageRequest: typings.awsSdk.pinpointMod.MessageRequest
 }
 object SendMessagesRequest {
   

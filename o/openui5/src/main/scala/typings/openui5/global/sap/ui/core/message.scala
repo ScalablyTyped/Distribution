@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object message {
@@ -13,12 +12,14 @@ object message {
     * Constructor for a new ControlMessageProcessor
     */
   class ControlMessageProcessor ()
-    extends typings.openui5.sap.ui.core.message.ControlMessageProcessor
+    extends StObject
+       with typings.openui5.sap.ui.core.message.ControlMessageProcessor
   
   @JSGlobal("sap.ui.core.message.Message")
   @js.native
   class Message protected ()
-    extends typings.openui5.sap.ui.core.message.Message {
+    extends StObject
+       with typings.openui5.sap.ui.core.message.Message {
     /**
       * Constructor for a new Message.
       * @param mParameters (optional) a map which contains the following parameter properties:
@@ -32,7 +33,8 @@ object message {
     * Constructor for a new MessageManager.
     */
   class MessageManager ()
-    extends typings.openui5.sap.ui.core.message.MessageManager
+    extends StObject
+       with typings.openui5.sap.ui.core.message.MessageManager
   
   @JSGlobal("sap.ui.core.message.MessageParser")
   @js.native
@@ -40,7 +42,8 @@ object message {
     * Abstract MessageParser class to be inherited in back-end specific implementations.
     */
   abstract class MessageParser ()
-    extends typings.openui5.sap.ui.core.message.MessageParser
+    extends StObject
+       with typings.openui5.sap.ui.core.message.MessageParser
   
   @JSGlobal("sap.ui.core.message.MessageProcessor")
   @js.native
@@ -48,5 +51,6 @@ object message {
     * Constructor for a new MessageProcessor
     */
   abstract class MessageProcessor ()
-    extends typings.openui5.sap.ui.core.message.MessageProcessor
+    extends StObject
+       with typings.openui5.sap.ui.core.message.MessageProcessor
 }

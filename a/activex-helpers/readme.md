@@ -10,9 +10,9 @@ Event handler management, and parameterized property setters, for ActiveX object
 | ------------------ | :-------------: |
 | Full name          | activex-helpers |
 | Keywords           | activex, events |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 21 |
-| # downloads        | 14880 |
+| # downloads        | 14179 |
 | # stars            | 0 |
 
 ## Links

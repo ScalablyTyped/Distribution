@@ -6,11 +6,12 @@ import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.files
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformFiles[T /* <: Record[String, _] */] extends Transform[T] {
+trait TransformFiles[T /* <: Record[String, js.Any] */]
+  extends StObject
+     with Transform[T] {
   
   var isMatch: js.UndefOr[js.Function1[/* files */ FileList, Boolean]] = js.native
   

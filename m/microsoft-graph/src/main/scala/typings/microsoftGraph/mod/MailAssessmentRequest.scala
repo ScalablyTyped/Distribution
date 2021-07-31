@@ -2,24 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MailAssessmentRequest extends ThreatAssessmentRequest {
+trait MailAssessmentRequest
+  extends StObject
+     with ThreatAssessmentRequest {
   
   /**
     * The reason for mail routed to its destination. Possible values are: none, mailFlowRule, safeSender, blockedSender,
     * advancedSpamFiltering, domainAllowList, domainBlockList, notInAddressBook, firstTimeSender, autoPurgeToInbox,
     * autoPurgeToJunk, autoPurgeToDeleted, outbound, notJunk, junk.
     */
-  var destinationRoutingReason: js.UndefOr[NullableOption[MailDestinationRoutingReason]] = js.native
+  var destinationRoutingReason: js.UndefOr[NullableOption[MailDestinationRoutingReason]] = js.undefined
   
   // The resource URI of the mail message for assessment.
-  var messageUri: js.UndefOr[String] = js.native
+  var messageUri: js.UndefOr[String] = js.undefined
   
   // The mail recipient whose policies are used to assess the mail.
-  var recipientEmail: js.UndefOr[String] = js.native
+  var recipientEmail: js.UndefOr[String] = js.undefined
 }
 object MailAssessmentRequest {
   

@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CommandStart. */
@@ -24,18 +23,20 @@ class CommandStart ()
 }
 object CommandStart {
   
+  @JSImport("cucumber-messages", "messages.CommandStart")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CommandStart instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandStart instance
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.create")
-  @js.native
-  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.create")
-  @js.native
-  def create(properties: ICommandStart): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
+  @scala.inline
+  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
+  @scala.inline
+  def create(properties: ICommandStart): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
   
   /**
     * Decodes a CommandStart message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object CommandStart {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.decode")
-  @js.native
-  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
   
   /**
     * Decodes a CommandStart message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object CommandStart {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
   
   /**
     * Encodes the specified CommandStart message. Does not implicitly {@link io.cucumber.messages.CommandStart.verify|verify} messages.
@@ -81,12 +76,10 @@ object CommandStart {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.encode")
-  @js.native
-  def encode(message: ICommandStart): Writer = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.encode")
-  @js.native
-  def encode(message: ICommandStart, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICommandStart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICommandStart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandStart message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandStart.verify|verify} messages.
@@ -95,12 +88,10 @@ object CommandStart {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandStart): Writer = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandStart, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICommandStart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICommandStart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandStart message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object CommandStart {
     * @returns CommandStart
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart]
   
   /**
     * Creates a plain object from a CommandStart message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object CommandStart {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.toObject")
-  @js.native
-  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages", "messages.CommandStart.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandStart,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandStart message.
@@ -135,7 +123,6 @@ object CommandStart {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.CommandStart.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

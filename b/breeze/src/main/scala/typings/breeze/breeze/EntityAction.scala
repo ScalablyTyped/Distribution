@@ -4,35 +4,35 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EntityAction extends IEnum {
+trait EntityAction
+  extends StObject
+     with IEnum {
   
-  var AcceptChanges: EntityActionSymbol = js.native
+  var AcceptChanges: EntityActionSymbol
   
-  var Attach: EntityActionSymbol = js.native
+  var Attach: EntityActionSymbol
   
-  var AttachOnImport: EntityActionSymbol = js.native
+  var AttachOnImport: EntityActionSymbol
   
-  var AttachOnQuery: EntityActionSymbol = js.native
+  var AttachOnQuery: EntityActionSymbol
   
-  var Clear: EntityActionSymbol = js.native
+  var Clear: EntityActionSymbol
   
-  var Detach: EntityActionSymbol = js.native
+  var Detach: EntityActionSymbol
   
-  var EntityStateChange: EntityActionSymbol = js.native
+  var EntityStateChange: EntityActionSymbol
   
-  var MergeOnImport: EntityActionSymbol = js.native
+  var MergeOnImport: EntityActionSymbol
   
-  var MergeOnQuery: EntityActionSymbol = js.native
+  var MergeOnQuery: EntityActionSymbol
   
-  var MergeOnSave: EntityActionSymbol = js.native
+  var MergeOnSave: EntityActionSymbol
   
-  var PropertyChange: EntityActionSymbol = js.native
+  var PropertyChange: EntityActionSymbol
   
-  var RejectChanges: EntityActionSymbol = js.native
+  var RejectChanges: EntityActionSymbol
 }
 object EntityAction {
   

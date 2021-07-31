@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEmailTemplateRequest extends StObject {
   
   /**
     * The name of the template to be deleted.
     */
-  var TemplateName: EmailTemplateName = js.native
+  var TemplateName: EmailTemplateName
 }
 object DeleteEmailTemplateRequest {
   

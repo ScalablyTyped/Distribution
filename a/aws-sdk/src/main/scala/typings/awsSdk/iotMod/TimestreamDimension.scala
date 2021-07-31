@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestreamDimension extends StObject {
   
   /**
     * The metadata dimension name. This is the name of the column in the Amazon Timestream database table record. Dimensions cannot be named: measure_name, measure_value, or time. These names are reserved. Dimension names cannot start with ts_ or measure_value and they cannot contain the colon (:) character.
     */
-  var name: TimestreamDimensionName = js.native
+  var name: TimestreamDimensionName
   
   /**
     * The value to write in this column of the database record.
     */
-  var value: TimestreamDimensionValue = js.native
+  var value: TimestreamDimensionValue
 }
 object TimestreamDimension {
   

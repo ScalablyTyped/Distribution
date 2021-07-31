@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDynamicThingGroupRequest extends StObject {
   
   /**
     * The expected version of the dynamic thing group to update.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
     * The dynamic thing group index to update.  Currently one index is supported: 'AWS_Things'. 
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The dynamic thing group search query string to update.
     */
-  var queryString: js.UndefOr[QueryString] = js.native
+  var queryString: js.UndefOr[QueryString] = js.undefined
   
   /**
     * The dynamic thing group query version to update.  Currently one query version is supported: "2017-09-30". If not specified, the query version defaults to this value. 
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
   
   /**
     * The name of the dynamic thing group to update.
     */
-  var thingGroupName: ThingGroupName = js.native
+  var thingGroupName: ThingGroupName
   
   /**
     * The dynamic thing group properties to update.
     */
-  var thingGroupProperties: ThingGroupProperties = js.native
+  var thingGroupProperties: ThingGroupProperties
 }
 object UpdateDynamicThingGroupRequest {
   

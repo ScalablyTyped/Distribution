@@ -2,21 +2,21 @@ package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ThHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var rowspan: js.UndefOr[Double | String] = js.native
+  var rowspan: js.UndefOr[Double | String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object ThHTMLAttributes {
   
@@ -27,7 +27,7 @@ object ThHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ThHTMLAttributesMutableBuilder[Self <: ThHTMLAttributes[_], T] (val x: Self with ThHTMLAttributes[T]) extends AnyVal {
+  implicit class ThHTMLAttributesMutableBuilder[Self <: ThHTMLAttributes[?], T] (val x: Self & ThHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.awsLambda.handlerMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,22 +12,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Function1[/* options */ js.UndefOr[ContextOptions], Context] = js.native
   
-  @js.native
   trait ContextOptions extends StObject {
     
-    var account: js.UndefOr[String] = js.native
+    var account: js.UndefOr[String] = js.undefined
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    var functionVersion: js.UndefOr[String] = js.native
+    var functionVersion: js.UndefOr[String] = js.undefined
     
-    var memoryLimitInMB: js.UndefOr[String] = js.native
+    var memoryLimitInMB: js.UndefOr[String] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ContextOptions {
     

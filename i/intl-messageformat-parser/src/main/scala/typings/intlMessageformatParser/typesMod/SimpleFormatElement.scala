@@ -2,13 +2,13 @@ package typings.intlMessageformatParser.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleFormatElement[T /* <: TYPE */, S /* <: Skeleton */] extends BaseElement[T] {
+trait SimpleFormatElement[T /* <: TYPE */, S /* <: Skeleton */]
+  extends StObject
+     with BaseElement[T] {
   
-  var style: js.UndefOr[String | S | Null] = js.native
+  var style: js.UndefOr[String | S | Null] = js.undefined
 }
 object SimpleFormatElement {
   
@@ -20,7 +20,7 @@ object SimpleFormatElement {
   }
   
   @scala.inline
-  implicit class SimpleFormatElementMutableBuilder[Self <: SimpleFormatElement[_, _], T /* <: TYPE */, S /* <: Skeleton */] (val x: Self with (SimpleFormatElement[T, S])) extends AnyVal {
+  implicit class SimpleFormatElementMutableBuilder[Self <: SimpleFormatElement[?, ?], T /* <: TYPE */, S /* <: Skeleton */] (val x: Self & (SimpleFormatElement[T, S])) extends AnyVal {
     
     @scala.inline
     def setStyle(value: String | S): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])

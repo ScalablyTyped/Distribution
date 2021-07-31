@@ -2,31 +2,29 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the payload to request to increment an
   * achievement.
   */
-@js.native
 trait SchemaGamesAchievementIncrement extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#GamesAchievementIncrement.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The requestId associated with an increment to an achievement.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of steps to be incremented.
     */
-  var steps: js.UndefOr[Double] = js.native
+  var steps: js.UndefOr[Double] = js.undefined
 }
 object SchemaGamesAchievementIncrement {
   

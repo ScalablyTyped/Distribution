@@ -2,15 +2,13 @@ package typings.activexWord.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldContentControl extends StObject {
   
-  val InUndoRedo: Boolean = js.native
+  val InUndoRedo: Boolean
   
-  val OldContentControl: typings.activexWord.Word.ContentControl = js.native
+  val OldContentControl: typings.activexWord.Word.ContentControl
 }
 object OldContentControl {
   

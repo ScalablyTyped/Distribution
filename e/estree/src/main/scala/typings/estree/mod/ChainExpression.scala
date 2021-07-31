@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChainExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var expression: ChainElement = js.native
+  var expression: ChainElement
   
   @JSName("type")
-  var type_ChainExpression: typings.estree.estreeStrings.ChainExpression = js.native
+  var type_ChainExpression: typings.estree.estreeStrings.ChainExpression
 }
 object ChainExpression {
   
   @scala.inline
-  def apply(expression: ChainElement, `type`: typings.estree.estreeStrings.ChainExpression): ChainExpression = {
+  def apply(expression: ChainElement): ChainExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ChainExpression")
     __obj.asInstanceOf[ChainExpression]
   }
   

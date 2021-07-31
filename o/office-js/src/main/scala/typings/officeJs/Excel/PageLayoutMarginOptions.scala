@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait PageLayoutMarginOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var footer: js.UndefOr[Double] = js.native
+  var footer: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var header: js.UndefOr[Double] = js.native
+  var header: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait PageLayoutMarginOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object PageLayoutMarginOptions {
   

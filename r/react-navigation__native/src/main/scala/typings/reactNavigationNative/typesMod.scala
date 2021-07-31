@@ -8,23 +8,21 @@ import typings.reactNavigationRouters.typesMod.Route
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait DocumentTitleOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     var formatter: js.UndefOr[
         js.Function2[
-          /* options */ js.UndefOr[Record[String, _]], 
+          /* options */ js.UndefOr[Record[String, js.Any]], 
           /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DocumentTitleOptions {
     
@@ -45,7 +43,7 @@ object typesMod {
       
       @scala.inline
       def setFormatter(
-        value: (/* options */ js.UndefOr[Record[String, _]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
+        value: (/* options */ js.UndefOr[Record[String, js.Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
       ): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -53,7 +51,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait LinkingOptions extends StObject {
     
     /**
@@ -69,13 +66,13 @@ object typesMod {
       * }
       * ```
       */
-    var config: js.UndefOr[InitialRouteName] = js.native
+    var config: js.UndefOr[InitialRouteName] = js.undefined
     
     /**
       * Whether deep link handling should be enabled.
       * Defaults to true.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom function to get the initial URL used for linking.
@@ -89,18 +86,18 @@ object typesMod {
       * }
       * ```
       */
-    var getInitialURL: js.UndefOr[js.Function0[js.Promise[js.UndefOr[String | Null]]]] = js.native
+    var getInitialURL: js.UndefOr[js.Function0[js.Promise[js.UndefOr[String | Null]]]] = js.undefined
     
     /**
       * Custom function to convert the state object to a valid URL (advanced).
       * Only applicable on Web.
       */
-    var getPathFromState: js.UndefOr[FnCallStateOptions] = js.native
+    var getPathFromState: js.UndefOr[FnCallStateOptions] = js.undefined
     
     /**
       * Custom function to parse the URL to a valid navigation state (advanced).
       */
-    var getStateFromPath: js.UndefOr[FnCall] = js.native
+    var getStateFromPath: js.UndefOr[FnCall] = js.undefined
     
     /**
       * The prefixes are stripped from the URL before parsing them.
@@ -118,7 +115,7 @@ object typesMod {
       * }
       * ```
       */
-    var prefixes: js.Array[String] = js.native
+    var prefixes: js.Array[String]
     
     /**
       * Custom function to get subscribe to URL updates.
@@ -143,7 +140,7 @@ object typesMod {
           /* listener */ js.Function1[/* url */ String, Unit], 
           js.UndefOr[Unit | js.Function0[Unit]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object LinkingOptions {
     
@@ -202,15 +199,14 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ServerContainerRef extends StObject {
     
-    def getCurrentOptions(): js.UndefOr[Record[String, _]] = js.native
+    def getCurrentOptions(): js.UndefOr[Record[String, js.Any]]
   }
   object ServerContainerRef {
     
     @scala.inline
-    def apply(getCurrentOptions: () => js.UndefOr[Record[String, _]]): ServerContainerRef = {
+    def apply(getCurrentOptions: () => js.UndefOr[Record[String, js.Any]]): ServerContainerRef = {
       val __obj = js.Dynamic.literal(getCurrentOptions = js.Any.fromFunction0(getCurrentOptions))
       __obj.asInstanceOf[ServerContainerRef]
     }
@@ -219,16 +215,15 @@ object typesMod {
     implicit class ServerContainerRefMutableBuilder[Self <: ServerContainerRef] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetCurrentOptions(value: () => js.UndefOr[Record[String, _]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
+      def setGetCurrentOptions(value: () => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var colors: Background = js.native
+    var colors: Background
     
-    var dark: Boolean = js.native
+    var dark: Boolean
   }
   object Theme {
     

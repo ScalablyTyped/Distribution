@@ -2,22 +2,25 @@ package typings.jsRomanNumerals
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("js-roman-numerals", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RomanNumeral {
+  class ^ protected ()
+    extends StObject
+       with RomanNumeral {
     def this(value: String) = this()
     def this(value: Double) = this()
+    
+    /* CompleteClass */
+    override def toInt(): Double = js.native
   }
   
-  @js.native
   trait RomanNumeral extends StObject {
     
-    def toInt(): Double = js.native
+    def toInt(): Double
   }
   object RomanNumeral {
     

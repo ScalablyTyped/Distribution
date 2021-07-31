@@ -2,15 +2,15 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Notification extends Envelope {
+trait Notification
+  extends StObject
+     with Envelope {
   
-  var event: String = js.native
+  var event: String
   
-  var reason: js.UndefOr[Reason] = js.native
+  var reason: js.UndefOr[Reason] = js.undefined
 }
 object Notification {
   

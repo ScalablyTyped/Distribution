@@ -2,15 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingParticipants extends StObject {
   
-  var attendees: js.UndefOr[NullableOption[js.Array[MeetingParticipantInfo]]] = js.native
+  var attendees: js.UndefOr[NullableOption[js.Array[MeetingParticipantInfo]]] = js.undefined
   
-  var organizer: js.UndefOr[NullableOption[MeetingParticipantInfo]] = js.native
+  var organizer: js.UndefOr[NullableOption[MeetingParticipantInfo]] = js.undefined
 }
 object MeetingParticipants {
   

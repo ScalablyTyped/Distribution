@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SamplePlayableLocation extends StObject {
   
   /**
     * Required. The latitude and longitude associated with the center of the playable location. By default, the set of playable locations returned from SamplePlayableLocations use
     * center-point coordinates.
     */
-  var centerPoint: js.UndefOr[GoogleTypeLatLng] = js.native
+  var centerPoint: js.UndefOr[GoogleTypeLatLng] = js.undefined
   
   /** Required. The name of this playable location. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A [place ID] (https://developers.google.com/places/place-id) */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /** A [plus code] (http://openlocationcode.com) */
-  var plusCode: js.UndefOr[String] = js.native
+  var plusCode: js.UndefOr[String] = js.undefined
   
   /** The playable location's coordinates, snapped to the sidewalk of the nearest road, if a nearby road exists. */
-  var snappedPoint: js.UndefOr[GoogleTypeLatLng] = js.native
+  var snappedPoint: js.UndefOr[GoogleTypeLatLng] = js.undefined
   
   /**
     * A collection of [Playable Location Types](/maps/documentation/gaming/tt/types) for this playable location. The first type in the collection is the primary type. Type information
     * might not be available for all playable locations.
     */
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocation {
   

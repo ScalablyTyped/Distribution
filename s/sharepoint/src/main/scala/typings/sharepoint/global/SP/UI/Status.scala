@@ -2,51 +2,46 @@ package typings.sharepoint.global.SP.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.UI.Status")
 @js.native
 class Status ()
-  extends typings.sharepoint.SP.UI.Status
+  extends StObject
+     with typings.sharepoint.SP.UI.Status
 object Status {
   
-  /* static member */
-  @JSGlobal("SP.UI.Status.addStatus")
+  @JSGlobal("SP.UI.Status")
   @js.native
-  def addStatus(strTitle: String): String = js.native
-  @JSGlobal("SP.UI.Status.addStatus")
-  @js.native
-  def addStatus(strTitle: String, strHtml: js.UndefOr[scala.Nothing], atBegining: Boolean): String = js.native
-  @JSGlobal("SP.UI.Status.addStatus")
-  @js.native
-  def addStatus(strTitle: String, strHtml: String): String = js.native
-  @JSGlobal("SP.UI.Status.addStatus")
-  @js.native
-  def addStatus(strTitle: String, strHtml: String, atBegining: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("SP.UI.Status.appendStatus")
-  @js.native
-  def appendStatus(sid: String, strTitle: String, strHtml: String): String = js.native
+  @scala.inline
+  def addStatus(strTitle: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatus")(strTitle.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def addStatus(strTitle: String, strHtml: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addStatus")(strTitle.asInstanceOf[js.Any], strHtml.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addStatus(strTitle: String, strHtml: String, atBegining: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addStatus")(strTitle.asInstanceOf[js.Any], strHtml.asInstanceOf[js.Any], atBegining.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addStatus(strTitle: String, strHtml: Unit, atBegining: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addStatus")(strTitle.asInstanceOf[js.Any], strHtml.asInstanceOf[js.Any], atBegining.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.UI.Status.removeAllStatus")
-  @js.native
-  def removeAllStatus(hide: Boolean): Unit = js.native
+  @scala.inline
+  def appendStatus(sid: String, strTitle: String, strHtml: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendStatus")(sid.asInstanceOf[js.Any], strTitle.asInstanceOf[js.Any], strHtml.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.UI.Status.removeStatus")
-  @js.native
-  def removeStatus(sid: String): Unit = js.native
+  @scala.inline
+  def removeAllStatus(hide: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllStatus")(hide.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.UI.Status.setStatusPriColor")
-  @js.native
-  def setStatusPriColor(sid: String, strColor: String): Unit = js.native
+  @scala.inline
+  def removeStatus(sid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStatus")(sid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.UI.Status.updateStatus")
-  @js.native
-  def updateStatus(sid: String, strHtml: String): Unit = js.native
+  @scala.inline
+  def setStatusPriColor(sid: String, strColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatusPriColor")(sid.asInstanceOf[js.Any], strColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /* static member */
+  @scala.inline
+  def updateStatus(sid: String, strHtml: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStatus")(sid.asInstanceOf[js.Any], strHtml.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -3,70 +3,68 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc workflow template resource.
   */
-@js.native
 trait SchemaWorkflowMetadata extends StObject {
   
   /**
     * Output only. The name of the target cluster.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The UUID of target cluster.
     */
-  var clusterUuid: js.UndefOr[String] = js.native
+  var clusterUuid: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The create cluster operation metadata.
     */
-  var createCluster: js.UndefOr[SchemaClusterOperation] = js.native
+  var createCluster: js.UndefOr[SchemaClusterOperation] = js.undefined
   
   /**
     * Output only. The delete cluster operation metadata.
     */
-  var deleteCluster: js.UndefOr[SchemaClusterOperation] = js.native
+  var deleteCluster: js.UndefOr[SchemaClusterOperation] = js.undefined
   
   /**
     * Output only. Workflow end time.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The workflow graph.
     */
-  var graph: js.UndefOr[SchemaWorkflowGraph] = js.native
+  var graph: js.UndefOr[SchemaWorkflowGraph] = js.undefined
   
   /**
     * Map from parameter names to values that were used for those parameters.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. Workflow start time.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The workflow state.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The &quot;resource name&quot; of the template.
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The version of template at the time of workflow
     * instantiation.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaWorkflowMetadata {
   

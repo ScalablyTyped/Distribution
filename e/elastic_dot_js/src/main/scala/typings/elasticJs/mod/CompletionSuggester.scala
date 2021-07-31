@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "CompletionSuggester")
 @js.native
-class CompletionSuggester protected () extends Suggest {
+class CompletionSuggester protected ()
+  extends StObject
+     with Suggest {
   /*
     A suggester that allows basic auto-complete functionality.
     */

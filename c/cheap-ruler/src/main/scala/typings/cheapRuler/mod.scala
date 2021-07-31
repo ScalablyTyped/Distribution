@@ -3,16 +3,56 @@ package typings.cheapRuler
 import typings.cheapRuler.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cheap-ruler", JSImport.Default)
   @js.native
-  class default protected () extends CheapRuler {
+  class default protected ()
+    extends StObject
+       with CheapRuler {
     def this(lat: Double) = this()
     def this(lat: Double, units: String) = this()
+    
+    /* CompleteClass */
+    override def along(line: Line, dist: Double): Point = js.native
+    
+    /* CompleteClass */
+    override def area(polygon: Polygon): Double = js.native
+    
+    /* CompleteClass */
+    override def bearing(a: Point, b: Point): Double = js.native
+    
+    /* CompleteClass */
+    override def bufferBBox(bbox: BBox, buffer: Double): BBox = js.native
+    
+    /* CompleteClass */
+    override def bufferPoint(p: Point, buffer: Double): BBox = js.native
+    
+    /* CompleteClass */
+    override def destination(p: Point, dist: Double, bearing: Double): Point = js.native
+    
+    /* CompleteClass */
+    override def distance(a: Point, b: Point): Double = js.native
+    
+    /* CompleteClass */
+    override def insideBBox(p: Point, bbox: BBox): Boolean = js.native
+    
+    /* CompleteClass */
+    override def lineDistance(points: Points): Double = js.native
+    
+    /* CompleteClass */
+    override def lineSlice(start: Point, stop: Point, line: Line): Line = js.native
+    
+    /* CompleteClass */
+    override def lineSliceAlong(start: Double, stop: Double, line: Line): Line = js.native
+    
+    /* CompleteClass */
+    override def offset(p: Point, dx: Double, dy: Double): Point = js.native
+    
+    /* CompleteClass */
+    override def pointOnLine(line: Line, p: Point): Index = js.native
   }
   /* static members */
   object default {
@@ -21,12 +61,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("cheap-ruler", "default.fromTile")
-    @js.native
-    def fromTile(y: Double, z: Double): CheapRuler = js.native
-    @JSImport("cheap-ruler", "default.fromTile")
-    @js.native
-    def fromTile(y: Double, z: Double, units: String): CheapRuler = js.native
+    @scala.inline
+    def fromTile(y: Double, z: Double): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
+    @scala.inline
+    def fromTile(y: Double, z: Double, units: String): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
     
     @JSImport("cheap-ruler", "default.units")
     @js.native
@@ -37,34 +75,33 @@ object mod {
   
   type BBox = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait CheapRuler extends StObject {
     
-    def along(line: Line, dist: Double): Point = js.native
+    def along(line: Line, dist: Double): Point
     
-    def area(polygon: Polygon): Double = js.native
+    def area(polygon: Polygon): Double
     
-    def bearing(a: Point, b: Point): Double = js.native
+    def bearing(a: Point, b: Point): Double
     
-    def bufferBBox(bbox: BBox, buffer: Double): BBox = js.native
+    def bufferBBox(bbox: BBox, buffer: Double): BBox
     
-    def bufferPoint(p: Point, buffer: Double): BBox = js.native
+    def bufferPoint(p: Point, buffer: Double): BBox
     
-    def destination(p: Point, dist: Double, bearing: Double): Point = js.native
+    def destination(p: Point, dist: Double, bearing: Double): Point
     
-    def distance(a: Point, b: Point): Double = js.native
+    def distance(a: Point, b: Point): Double
     
-    def insideBBox(p: Point, bbox: BBox): Boolean = js.native
+    def insideBBox(p: Point, bbox: BBox): Boolean
     
-    def lineDistance(points: Points): Double = js.native
+    def lineDistance(points: Points): Double
     
-    def lineSlice(start: Point, stop: Point, line: Line): Line = js.native
+    def lineSlice(start: Point, stop: Point, line: Line): Line
     
-    def lineSliceAlong(start: Double, stop: Double, line: Line): Line = js.native
+    def lineSliceAlong(start: Double, stop: Double, line: Line): Line
     
-    def offset(p: Point, dx: Double, dy: Double): Point = js.native
+    def offset(p: Point, dx: Double, dy: Double): Point
     
-    def pointOnLine(line: Line, p: Point): Index = js.native
+    def pointOnLine(line: Line, p: Point): Index
   }
   object CheapRuler {
     
@@ -132,24 +169,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Factors extends StObject {
     
-    var feet: Double = js.native
+    var feet: Double
     
-    var inches: Double = js.native
+    var inches: Double
     
-    var kilometers: Double = js.native
+    var kilometers: Double
     
-    var meters: Double = js.native
+    var meters: Double
     
-    var metres: Double = js.native
+    var metres: Double
     
-    var miles: Double = js.native
+    var miles: Double
     
-    var nauticalmiles: Double = js.native
+    var nauticalmiles: Double
     
-    var yards: Double = js.native
+    var yards: Double
   }
   object Factors {
     

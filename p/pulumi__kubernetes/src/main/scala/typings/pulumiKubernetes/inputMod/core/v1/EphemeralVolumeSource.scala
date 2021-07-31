@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an ephemeral volume that is handled by a normal storage driver.
   */
-@js.native
 trait EphemeralVolumeSource extends StObject {
   
   /**
     * Specifies a read-only configuration for the volume. Defaults to false (read/write).
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Will be used to create a stand-alone PVC to provision the volume. The pod in which this EphemeralVolumeSource is embedded will be the owner of the PVC, i.e. the PVC will be deleted together with the pod.  The name of the PVC will be `<pod name>-<volume name>` where `<volume name>` is the name from the `PodSpec.Volumes` array entry. Pod validation will reject the pod if the concatenated name is not valid for a PVC (for example, too long).
@@ -26,7 +24,7 @@ trait EphemeralVolumeSource extends StObject {
     *
     * Required, must not be nil.
     */
-  var volumeClaimTemplate: js.UndefOr[Input[PersistentVolumeClaimTemplate]] = js.native
+  var volumeClaimTemplate: js.UndefOr[Input[PersistentVolumeClaimTemplate]] = js.undefined
 }
 object EphemeralVolumeSource {
   

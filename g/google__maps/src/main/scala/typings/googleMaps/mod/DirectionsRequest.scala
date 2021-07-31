@@ -4,27 +4,25 @@ import typings.googleMaps.googleMapsStrings.now
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsRequest extends StObject {
   
   /**
     * If set to `true`, specifies that the Directions service may provide more than one route alternative in the response.
     * Note that providing route alternatives may increase the response time from the server.
     */
-  var alternatives: js.UndefOr[Boolean] = js.native
+  var alternatives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the desired time of arrival for transit directions, in seconds since midnight, January 1, 1970 UTC.
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
-  var arrival_time: js.UndefOr[Date | Double] = js.native
+  var arrival_time: js.UndefOr[Date | Double] = js.undefined
   
   /** Indicates that the calculated route(s) should avoid the indicated features. */
-  var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.native
+  var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.undefined
   
   /**
     * Specifies the desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC.
@@ -38,13 +36,13 @@ trait DirectionsRequest extends StObject {
     *    This option is only available if the request contains a valid API key, or a valid Google Maps APIs Premium Plan client ID
     *    and signature. The `departure_time` must be set to the current time or some time in the future. It cannot be in the past.
     */
-  var departure_time: js.UndefOr[Date | Double | now] = js.native
+  var departure_time: js.UndefOr[Date | Double | now] = js.undefined
   
   /**
     * The address, textual latitude/longitude value, or place ID to which you wish to calculate directions.
     * The options for the `destination` parameter are the same as for the `origin` parameter, described above
     */
-  var destination: LatLng = js.native
+  var destination: LatLng
   
   /**
     * The language in which to return results.
@@ -61,17 +59,17 @@ trait DirectionsRequest extends StObject {
     *    such as the abbreviations for street types, or synonyms that may be valid in one language but not in another.
     *    For example, utca and tér are synonyms for street in Hungarian.
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /**
     * Specifies the mode of transport to use when calculating directions
     *
     * @default TravelMode.driving
     */
-  var mode: js.UndefOr[TravelMode] = js.native
+  var mode: js.UndefOr[TravelMode] = js.undefined
   
   /** Wherever to optimize the provided route by rearranging the waypoints in a more efficient order. */
-  var optimize: js.UndefOr[Boolean] = js.native
+  var optimize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The address, textual latitude/longitude value, or place ID from which you wish to calculate directions.
@@ -93,10 +91,10 @@ trait DirectionsRequest extends StObject {
     *
     *    `origin=place_id:ChIJ3S-JXmauEmsRUcIaWtf4MzE`
     */
-  var origin: LatLng = js.native
+  var origin: LatLng
   
   /** Specifies the region code, specified as a ccTLD ("top-level domain") two-character value. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the assumptions to use when calculating time in traffic.
@@ -110,14 +108,14 @@ trait DirectionsRequest extends StObject {
     *
     * @default TrafficModel.best_guess
     */
-  var traffic_model: js.UndefOr[TrafficModel] = js.native
+  var traffic_model: js.UndefOr[TrafficModel] = js.undefined
   
   /**
     * Specifies one or more preferred modes of transit.
     * This parameter may only be specified for transit directions, and only if the request includes an API key or
     * a Google Maps APIs Premium Plan client ID.
     */
-  var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.native
+  var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.undefined
   
   /**
     * Specifies preferences for transit routes.
@@ -125,10 +123,10 @@ trait DirectionsRequest extends StObject {
     * This parameter may only be specified for transit directions, and only if the request includes an API key or
     * a Google Maps APIs Premium Plan client ID.
     */
-  var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.native
+  var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.undefined
   
   /** Specifies the unit system to use when displaying results. */
-  var units: js.UndefOr[UnitSystem] = js.native
+  var units: js.UndefOr[UnitSystem] = js.undefined
   
   /**
     * Specifies an array of waypoints.
@@ -138,7 +136,7 @@ trait DirectionsRequest extends StObject {
     * The place ID may only be specified if the request includes an API key or a Google Maps APIs Premium Plan client ID.
     * Waypoints are only supported for driving, walking and bicycling directions.
     */
-  var waypoints: js.UndefOr[js.Array[LatLng]] = js.native
+  var waypoints: js.UndefOr[js.Array[LatLng]] = js.undefined
 }
 object DirectionsRequest {
   

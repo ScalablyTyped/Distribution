@@ -2,25 +2,23 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileContentMetadata extends StObject {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var encoding: Double = js.native
+  var encoding: Double
   
-  var extension: String = js.native
+  var `extension`: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var isBinary: Boolean = js.native
+  var isBinary: Boolean
   
-  var isImage: Boolean = js.native
+  var isImage: Boolean
   
-  var vsLink: String = js.native
+  var vsLink: String
 }
 object FileContentMetadata {
   
@@ -28,13 +26,14 @@ object FileContentMetadata {
   def apply(
     contentType: String,
     encoding: Double,
-    extension: String,
+    `extension`: String,
     fileName: String,
     isBinary: Boolean,
     isImage: Boolean,
     vsLink: String
   ): FileContentMetadata = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isBinary = isBinary.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], vsLink = vsLink.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isBinary = isBinary.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], vsLink = vsLink.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileContentMetadata]
   }
   

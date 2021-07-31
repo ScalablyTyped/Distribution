@@ -1,57 +1,45 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.CircleCI
 import typings.envCi.envCiStrings.circleci_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleCiEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var build: String = js.native
+  var build: String
   
-  var buildUrl: String = js.native
+  var buildUrl: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var job: String = js.native
+  var job: String
   
-  var name: CircleCI = js.native
+  var name: CircleCI
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var service: circleci_ = js.native
+  var service: circleci_
   
-  var slug: String = js.native
+  var slug: String
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object CircleCiEnv {
   
   @scala.inline
-  def apply(
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    job: String,
-    name: CircleCI,
-    service: circleci_,
-    slug: String
-  ): CircleCiEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(build: String, buildUrl: String, commit: String, isPr: Boolean, job: String, slug: String): CircleCiEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "CircleCI", service = "circleci", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleCiEnv]
   }
   

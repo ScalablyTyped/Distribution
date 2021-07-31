@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.JSXClosingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait JSXClosingElement_
-  extends Immutable
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait JSXClosingElement_
+  extends StObject
      with BaseNode
+     with Immutable
      with JSX {
   
-  var name: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_ = js.native
+  var name: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_
   
   @JSName("type")
-  var type_JSXClosingElement_ : JSXClosingElement = js.native
+  var type_JSXClosingElement_ : JSXClosingElement
 }
 object JSXClosingElement_ {
   
   @scala.inline
-  def apply(name: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_, `type`: JSXClosingElement): JSXClosingElement_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_): JSXClosingElement_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXClosingElement")
     __obj.asInstanceOf[JSXClosingElement_]
   }
   

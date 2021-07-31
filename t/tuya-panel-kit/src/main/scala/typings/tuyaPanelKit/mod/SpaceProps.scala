@@ -2,21 +2,21 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpaceProps extends ProgressProps {
+trait SpaceProps
+  extends StObject
+     with ProgressProps {
   
-  var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var scaleNumber: js.UndefOr[Double] = js.native
+  var scaleNumber: js.UndefOr[Double] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SpaceProps {
   

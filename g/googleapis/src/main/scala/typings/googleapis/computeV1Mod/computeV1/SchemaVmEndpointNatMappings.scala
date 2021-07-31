@@ -2,21 +2,19 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contain information of Nat mapping for a VM endpoint (i.e., NIC).
   */
-@js.native
 trait SchemaVmEndpointNatMappings extends StObject {
   
   /**
     * Name of the VM instance which the endpoint belongs to
     */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
-  var interfaceNatMappings: js.UndefOr[js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings]] = js.native
+  var interfaceNatMappings: js.UndefOr[js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings]] = js.undefined
 }
 object SchemaVmEndpointNatMappings {
   

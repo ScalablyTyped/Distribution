@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssociationStatusRequest extends StObject {
   
   /**
     * The association status.
     */
-  var AssociationStatus: typings.awsSdk.ssmMod.AssociationStatus = js.native
+  var AssociationStatus: typings.awsSdk.ssmMod.AssociationStatus
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: typings.awsSdk.ssmMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: DocumentARN = js.native
+  var Name: DocumentARN
 }
 object UpdateAssociationStatusRequest {
   

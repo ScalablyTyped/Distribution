@@ -3,23 +3,21 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyExpr extends StObject {
   
   var dataSource: js.UndefOr[
-    js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-  ] = js.native
+    js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
+  ] = js.undefined
   
-  var keyExpr: js.UndefOr[String | js.Function] = js.native
+  var keyExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var predecessorIdExpr: js.UndefOr[String | js.Function] = js.native
+  var predecessorIdExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var successorIdExpr: js.UndefOr[String | js.Function] = js.native
+  var successorIdExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var typeExpr: js.UndefOr[String | js.Function] = js.native
+  var typeExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 object KeyExpr {
   
@@ -33,7 +31,7 @@ object KeyExpr {
   implicit class KeyExprMutableBuilder[Self <: KeyExpr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

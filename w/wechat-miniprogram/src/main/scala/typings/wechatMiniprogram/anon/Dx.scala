@@ -2,15 +2,13 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dx extends StObject {
   
-  var dx: Double = js.native
+  var dx: Double
   
-  var dy: Double = js.native
+  var dy: Double
 }
 object Dx {
   

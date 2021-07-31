@@ -4,17 +4,15 @@ import typings.vegaLite.vegaLiteBooleans.`true`
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AriaAriaRoleDescription extends StObject {
   
-  var aria: js.UndefOr[`true` | SignalRef] = js.native
+  var aria: js.UndefOr[`true` | SignalRef] = js.undefined
   
-  var ariaRoleDescription: ValueScaleField = js.native
+  var ariaRoleDescription: ValueScaleField
   
-  var description: SignalRef | ValueString = js.native
+  var description: SignalRef | ValueString
 }
 object AriaAriaRoleDescription {
   

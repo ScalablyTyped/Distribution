@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CohortSpec extends StObject {
   
   /** Settings of a cohort report. */
-  var cohortReportSettings: js.UndefOr[CohortReportSettings] = js.native
+  var cohortReportSettings: js.UndefOr[CohortReportSettings] = js.undefined
   
   /** The definition for the cohorts. */
-  var cohorts: js.UndefOr[js.Array[Cohort]] = js.native
+  var cohorts: js.UndefOr[js.Array[Cohort]] = js.undefined
   
   /** The data ranges of cohorts. */
-  var cohortsRange: js.UndefOr[CohortsRange] = js.native
+  var cohortsRange: js.UndefOr[CohortsRange] = js.undefined
 }
 object CohortSpec {
   

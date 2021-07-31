@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecretVersion extends StObject {
   
   /** Output only. The time at which the SecretVersion was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this SecretVersion was destroyed. Only present if state is DESTROYED. */
-  var destroyTime: js.UndefOr[String] = js.native
+  var destroyTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the SecretVersion in the format `projects/∗/secrets/∗/versions/ *`. SecretVersion IDs in a Secret start at 1 and are incremented for each subsequent
     * version of the secret.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The replication status of the SecretVersion. */
-  var replicationStatus: js.UndefOr[ReplicationStatus] = js.native
+  var replicationStatus: js.UndefOr[ReplicationStatus] = js.undefined
   
   /** Output only. The current state of the SecretVersion. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SecretVersion {
   

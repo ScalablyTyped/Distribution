@@ -11,11 +11,9 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.shared
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.ShallowPartial<@stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableWebpackPluginOptions> */
-@js.native
 trait ShallowPartialStylableWeb extends StObject {
   
   var afterTransform: js.UndefOr[
@@ -34,53 +32,53 @@ trait ShallowPartialStylableWeb extends StObject {
       /* stylable */ Stylable, 
       Unit
     ]) | Null
-  ] = js.native
+  ] = js.undefined
   
-  var bootstrap: js.UndefOr[PartialautoInitbooleanget | AutoInit] = js.native
+  var bootstrap: js.UndefOr[PartialautoInitbooleanget | AutoInit] = js.undefined
   
-  var createRuntimeChunk: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var createRuntimeChunk: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var experimentalHMR: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var experimentalHMR: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var filename: js.UndefOr[Partial[String] | String] = js.native
+  var filename: js.UndefOr[Partial[String] | String] = js.undefined
   
-  var generate: js.UndefOr[PartialruntimeStylesheetI | AfterTransform] = js.native
+  var generate: js.UndefOr[PartialruntimeStylesheetI | AfterTransform] = js.undefined
   
-  var globalRuntimeId: js.UndefOr[Partial[String] | String] = js.native
+  var globalRuntimeId: js.UndefOr[Partial[String] | String] = js.undefined
   
-  var includeCSSInJS: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var includeCSSInJS: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var includeDynamicModulesInCSS: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var includeDynamicModulesInCSS: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var optimize: js.UndefOr[PartialremoveUnusedCompon | ClassNameOptimizations] = js.native
+  var optimize: js.UndefOr[PartialremoveUnusedCompon | ClassNameOptimizations] = js.undefined
   
-  var optimizeStylableModulesPerChunks: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var optimizeStylableModulesPerChunks: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var optimizer: js.UndefOr[Partial[js.UndefOr[StylableOptimizer]] | StylableOptimizer] = js.native
+  var optimizer: js.UndefOr[Partial[js.UndefOr[StylableOptimizer]] | StylableOptimizer] = js.undefined
   
-  var outputCSS: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var outputCSS: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var plugins: js.UndefOr[Partial[js.UndefOr[js.Array[Apply]]] | js.Array[Apply]] = js.native
+  var plugins: js.UndefOr[Partial[js.UndefOr[js.Array[Apply]]] | js.Array[Apply]] = js.undefined
   
   var requireModule: js.UndefOr[
-    (Partial[js.Function1[/* path */ String, _]]) | (js.Function1[/* path */ String, _])
-  ] = js.native
+    (Partial[js.Function1[/* path */ String, js.Any]]) | (js.Function1[/* path */ String, js.Any])
+  ] = js.undefined
   
-  var resolveNamespace: js.UndefOr[Partial[js.UndefOr[js.Function0[String]]] | js.Function0[String]] = js.native
+  var resolveNamespace: js.UndefOr[Partial[js.UndefOr[js.Function0[String]]] | js.Function0[String]] = js.undefined
   
-  var runtimeMode: js.UndefOr[(Partial[isolated | shared | external]) | isolated | shared | external] = js.native
+  var runtimeMode: js.UndefOr[(Partial[isolated | shared | external]) | isolated | shared | external] = js.undefined
   
-  var skipDynamicCSSEmit: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var skipDynamicCSSEmit: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var transformHooks: js.UndefOr[Partial[js.UndefOr[TransformHooks]] | TransformHooks] = js.native
+  var transformHooks: js.UndefOr[Partial[js.UndefOr[TransformHooks]] | TransformHooks] = js.undefined
   
-  var unsafeBuildNamespace: js.UndefOr[Partial[js.UndefOr[Boolean]] | Boolean] = js.native
+  var unsafeBuildNamespace: js.UndefOr[Partial[js.UndefOr[Boolean]] | Boolean] = js.undefined
   
-  var unsafeMuteDiagnostics: js.UndefOr[PartialDUPLICATEMODULENAM | DUPLICATEMODULENAMESPACE] = js.native
+  var unsafeMuteDiagnostics: js.UndefOr[PartialDUPLICATEMODULENAM | DUPLICATEMODULENAMESPACE] = js.undefined
   
-  var useEntryModuleInjection: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var useEntryModuleInjection: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
   
-  var useWeakDeps: js.UndefOr[Partial[Boolean] | Boolean] = js.native
+  var useWeakDeps: js.UndefOr[Partial[Boolean] | Boolean] = js.undefined
 }
 object ShallowPartialStylableWeb {
   
@@ -205,10 +203,12 @@ object ShallowPartialStylableWeb {
     def setPluginsVarargs(value: Apply*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setRequireModule(value: (Partial[js.Function1[/* path */ String, _]]) | (js.Function1[/* path */ String, _])): Self = StObject.set(x, "requireModule", value.asInstanceOf[js.Any])
+    def setRequireModule(
+      value: (Partial[js.Function1[/* path */ String, js.Any]]) | (js.Function1[/* path */ String, js.Any])
+    ): Self = StObject.set(x, "requireModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireModuleFunction1(value: /* path */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+    def setRequireModuleFunction1(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)

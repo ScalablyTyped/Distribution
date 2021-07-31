@@ -5,7 +5,6 @@ import typings.chrome.chrome.loginState.SessionState
 import typings.chrome.chrome.loginState.SessionStateChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -19,13 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object loginState {
   
-  @JSGlobal("chrome.loginState.getProfileType")
+  @JSGlobal("chrome.loginState")
   @js.native
-  def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.loginState.getSessionState")
-  @js.native
-  def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit = js.native
+  @scala.inline
+  def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileType")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.loginState.onSessionStateChanged")
   @js.native

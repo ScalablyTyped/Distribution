@@ -3,13 +3,11 @@ package typings.safariExtension
 import typings.safariExtension.anon.Typeofsafari
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var safari: Typeofsafari = js.native
+  var safari: Typeofsafari
 }
 object Window {
   

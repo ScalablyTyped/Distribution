@@ -7,38 +7,37 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to define a new key for a table.
   * @see com.sun.star.sdbcx.Key
   */
-@js.native
 trait KeyDescriptor
-  extends Descriptor
+  extends StObject
+     with Descriptor
      with XColumnsSupplier {
   
   /**
     * is the rule which is applied for deletions; only used for foreign keys.
     * @see com.sun.star.sdbc.KeyRule
     */
-  var DeleteRule: Double = js.native
+  var DeleteRule: Double
   
   /** is the name of the referenced table, only used for foreign keys. */
-  var ReferencedTable: String = js.native
+  var ReferencedTable: String
   
   /**
     * indicates the type of the key.
     * @see com.sun.star.sdbcx.KeyType
     */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * is the rule which is applied for updates; only used for foreign keys.
     * @see com.sun.star.sdbc.KeyRule
     */
-  var UpdateRule: Double = js.native
+  var UpdateRule: Double
 }
 object KeyDescriptor {
   

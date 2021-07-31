@@ -3,14 +3,12 @@ package typings.semanticUiPopup.anon
 import typings.semanticUiPopup.SemanticUI.Popup.ClassNameSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'className'> */
-@js.native
 trait PickImplclassName extends StObject {
   
-  var className: ClassNameSettings = js.native
+  var className: ClassNameSettings
 }
 object PickImplclassName {
   

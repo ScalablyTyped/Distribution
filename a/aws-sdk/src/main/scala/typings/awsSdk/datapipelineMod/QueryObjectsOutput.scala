@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryObjectsOutput extends StObject {
   
   /**
     * Indicates whether there are more results that can be obtained by a subsequent call.
     */
-  var hasMoreResults: js.UndefOr[Boolean] = js.native
+  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifiers that match the query selectors.
     */
-  var ids: js.UndefOr[idList] = js.native
+  var ids: js.UndefOr[idList] = js.undefined
   
   /**
     * The starting point for the next page of results. To view the next page of results, call QueryObjects again with this marker value. If the value is null, there are no more results.
     */
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
 }
 object QueryObjectsOutput {
   

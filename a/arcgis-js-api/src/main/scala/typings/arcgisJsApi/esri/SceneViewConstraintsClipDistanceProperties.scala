@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewConstraintsClipDistanceProperties extends Object {
+trait SceneViewConstraintsClipDistanceProperties
+  extends StObject
+     with Object {
   
   /**
     * The far clip distance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var far: js.UndefOr[Double] = js.native
+  var far: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the mode of the constraint which is either `auto` or `manual`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var mode: js.UndefOr[auto | manual] = js.native
+  var mode: js.UndefOr[auto | manual] = js.undefined
   
   /**
     * The near clip distance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var near: js.UndefOr[Double] = js.native
+  var near: js.UndefOr[Double] = js.undefined
 }
 object SceneViewConstraintsClipDistanceProperties {
   

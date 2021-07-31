@@ -3,41 +3,39 @@ package typings.braintreeWebDropIn.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var applePay: js.UndefOr[applePayCreateOptions] = js.native
+  var applePay: js.UndefOr[applePayCreateOptions] = js.undefined
   
-  var authorization: String = js.native
+  var authorization: String
   
-  var card: js.UndefOr[Boolean | cardCreateOptions] = js.native
+  var card: js.UndefOr[Boolean | cardCreateOptions] = js.undefined
   
-  var container: String | HTMLElement = js.native
+  var container: String | HTMLElement
   
-  var dataCollector: js.UndefOr[dataCollectorOptions | Boolean] = js.native
+  var dataCollector: js.UndefOr[dataCollectorOptions | Boolean] = js.undefined
   
-  var googlePay: js.UndefOr[googlePayCreateOptions] = js.native
+  var googlePay: js.UndefOr[googlePayCreateOptions] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var paymentOptionPriority: js.UndefOr[js.Array[String]] = js.native
+  var paymentOptionPriority: js.UndefOr[js.Array[String]] = js.undefined
   
-  var paypal: js.UndefOr[paypalCreateOptions] = js.native
+  var paypal: js.UndefOr[paypalCreateOptions] = js.undefined
   
-  var paypalCredit: js.UndefOr[paypalCreateOptions] = js.native
+  var paypalCredit: js.UndefOr[paypalCreateOptions] = js.undefined
   
-  var preselectVaultedPaymentMethod: js.UndefOr[Boolean] = js.native
+  var preselectVaultedPaymentMethod: js.UndefOr[Boolean] = js.undefined
   
-  var threeDSecure: js.UndefOr[Boolean | threeDSecureOptions] = js.native
+  var threeDSecure: js.UndefOr[Boolean | threeDSecureOptions] = js.undefined
   
-  var translations: js.UndefOr[js.Object] = js.native
+  var translations: js.UndefOr[js.Object] = js.undefined
   
-  var vaultManager: js.UndefOr[Boolean] = js.native
+  var vaultManager: js.UndefOr[Boolean] = js.undefined
   
-  var venmo: js.UndefOr[venmoCreateOptions | Boolean] = js.native
+  var venmo: js.UndefOr[venmoCreateOptions | Boolean] = js.undefined
 }
 object Options {
   

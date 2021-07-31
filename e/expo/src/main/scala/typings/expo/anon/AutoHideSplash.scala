@@ -3,19 +3,19 @@ package typings.expo.anon
 import typings.expo.appLoadingMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutoHideSplash extends Props {
+trait AutoHideSplash
+  extends StObject
+     with Props {
   
-  var autoHideSplash: js.UndefOr[Boolean] = js.native
+  var autoHideSplash: js.UndefOr[Boolean] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ typings.std.Error, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ typings.std.Error, Unit]] = js.undefined
   
-  var onFinish: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var startAsync: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var startAsync: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
 }
 object AutoHideSplash {
   

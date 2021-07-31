@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.manifest.HttpURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,10 @@ object identity {
   
   /* identity types */
   /** An object encapsulating an OAuth account id. */
-  @js.native
   trait AccountInfo extends StObject {
     
     /** A unique identifier for the account. This ID will not change for the lifetime of the account. */
-    var id: String = js.native
+    var id: String
   }
   object AccountInfo {
     
@@ -39,14 +37,13 @@ object identity {
     }
   }
   
-  @js.native
   trait GetAuthTokenDetails extends StObject {
     
-    var account: js.UndefOr[AccountInfo] = js.native
+    var account: js.UndefOr[AccountInfo] = js.undefined
     
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetAuthTokenDetails {
     
@@ -82,12 +79,11 @@ object identity {
     }
   }
   
-  @js.native
   trait GetProfileUserInfoReturnUserinfo extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
   }
   object GetProfileUserInfoReturnUserinfo {
     
@@ -108,12 +104,11 @@ object identity {
     }
   }
   
-  @js.native
   trait LaunchWebAuthFlowDetails extends StObject {
     
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
-    var url: HttpURL = js.native
+    var url: HttpURL
   }
   object LaunchWebAuthFlowDetails {
     
@@ -137,10 +132,9 @@ object identity {
     }
   }
   
-  @js.native
   trait RemoveCachedAuthTokenDetails extends StObject {
     
-    var token: String = js.native
+    var token: String
   }
   object RemoveCachedAuthTokenDetails {
     
@@ -158,12 +152,11 @@ object identity {
     }
   }
   
-  @js.native
   trait RemoveCachedAuthTokenReturnUserinfo extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
   }
   object RemoveCachedAuthTokenReturnUserinfo {
     

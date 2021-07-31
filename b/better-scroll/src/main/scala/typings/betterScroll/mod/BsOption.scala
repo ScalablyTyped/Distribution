@@ -10,65 +10,63 @@ import typings.betterScroll.anon.PartialWheelOption
 import typings.betterScroll.anon.PartialZoomOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BsOption extends StObject {
   
-  var HWCompositing: Boolean = js.native
+  var HWCompositing: Boolean
   
-  var autoBlur: Boolean = js.native
+  var autoBlur: Boolean
   
-  var bindToWrapper: Boolean = js.native
+  var bindToWrapper: Boolean
   
-  var bounce: Boolean | BounceObjectOption = js.native
+  var bounce: Boolean | BounceObjectOption
   
-  var bounceTime: Double = js.native
+  var bounceTime: Double
   
-  var click: Boolean = js.native
+  var click: Boolean
   
-  var dblclick: Boolean | DoubleClick = js.native
+  var dblclick: Boolean | DoubleClick
   
-  var deceleration: Double = js.native
+  var deceleration: Double
   
-  var directionLockThreshold: Double = js.native
+  var directionLockThreshold: Double
   
-  var disableMouse: Boolean = js.native
+  var disableMouse: Boolean
   
-  var disableTouch: Boolean = js.native
+  var disableTouch: Boolean
   
-  var eventPassthrough: String | Boolean = js.native
+  var eventPassthrough: String | Boolean
   
-  var flickLimitDistance: Double = js.native
+  var flickLimitDistance: Double
   
-  var flickLimitTime: Double = js.native
+  var flickLimitTime: Double
   
-  var freeScroll: Boolean = js.native
+  var freeScroll: Boolean
   
   // https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/options-advanced.html
-  var infinity: PartialInfinityOption | Boolean = js.native
+  var infinity: PartialInfinityOption | Boolean
   
-  var momentum: Boolean = js.native
+  var momentum: Boolean
   
-  var momentumLimitDistance: Double = js.native
+  var momentumLimitDistance: Double
   
-  var momentumLimitTime: Double = js.native
+  var momentumLimitTime: Double
   
   // mouseWheel: {
   //  speed: 20,
   //  invert: false,
   //  easeTime: 300
   // }
-  var mouseWheel: PartialMouseWheelOption | Boolean = js.native
+  var mouseWheel: PartialMouseWheelOption | Boolean
   
-  var observeDOM: Boolean = js.native
+  var observeDOM: Boolean
   
-  var preventDefault: Boolean = js.native
+  var preventDefault: Boolean
   
-  var preventDefaultException: js.Object = js.native
+  var preventDefaultException: js.Object
   
-  var probeType: Double = js.native
+  var probeType: Double
   
   /**
     * for pull down and refresh
@@ -77,7 +75,7 @@ trait BsOption extends StObject {
     *   stop: 20
     * }
     */
-  var pullDownRefresh: PartialPullDownOption | Boolean = js.native
+  var pullDownRefresh: PartialPullDownOption | Boolean
   
   /**
     * for pull up and load
@@ -85,13 +83,13 @@ trait BsOption extends StObject {
     *   threshold: 50
     * }
     */
-  var pullUpLoad: PartialPullUpOption | Boolean = js.native
+  var pullUpLoad: PartialPullUpOption | Boolean
   
-  var resizePolling: Double = js.native
+  var resizePolling: Double
   
-  var scrollX: Boolean = js.native
+  var scrollX: Boolean
   
-  var scrollY: Boolean = js.native
+  var scrollY: Boolean
   
   /**
     * for scrollbar
@@ -99,7 +97,7 @@ trait BsOption extends StObject {
     *   fade: true
     * }
     */
-  var scrollbar: PartialScrollBarOption | Boolean = js.native
+  var scrollbar: PartialScrollBarOption | Boolean
   
   /**
     * for slide
@@ -112,23 +110,23 @@ trait BsOption extends StObject {
     *   listenFlick: true
     * }
     */
-  var snap: PartialSlideOption | Boolean = js.native
+  var snap: PartialSlideOption | Boolean
   
-  var startX: Double = js.native
+  var startX: Double
   
-  var startY: Double = js.native
+  var startY: Double
   
-  var stopPropagation: Boolean = js.native
+  var stopPropagation: Boolean
   
-  var swipeBounceTime: Double = js.native
+  var swipeBounceTime: Double
   
-  var swipeTime: Double = js.native
+  var swipeTime: Double
   
-  var tap: Boolean = js.native
+  var tap: Boolean
   
-  var useTransform: Boolean = js.native
+  var useTransform: Boolean
   
-  var useTransition: Boolean = js.native
+  var useTransition: Boolean
   
   /**
     * for picker
@@ -138,14 +136,14 @@ trait BsOption extends StObject {
     *   adjustTime: 400
     * }
     */
-  var wheel: PartialWheelOption | Boolean = js.native
+  var wheel: PartialWheelOption | Boolean
   
   // zoom: {
   //  start: 1,
   //  min: 1,
   //  max: 4
   // }
-  var zoom: PartialZoomOption | Boolean = js.native
+  var zoom: PartialZoomOption | Boolean
 }
 object BsOption {
   

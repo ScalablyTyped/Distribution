@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FocusEventInit extends UIEventInit {
+trait FocusEventInit
+  extends StObject
+     with UIEventInit {
   
-  var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
+  var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
 }
 object FocusEventInit {
   

@@ -10,9 +10,9 @@ Typings are for version 1.2.0
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-utils |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 24 |
-| # dependents       | 10 |
-| # downloads        | 107753 |
+| # releases         | 52 |
+| # dependents       | 17 |
+| # downloads        | 284615 |
 | # stars            | 0 |
 
 ## Links

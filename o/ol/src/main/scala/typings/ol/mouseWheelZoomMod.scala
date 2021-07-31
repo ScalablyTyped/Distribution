@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.conditionMod.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mouseWheelZoomMod {
@@ -21,15 +20,19 @@ object mouseWheelZoomMod {
   object Mode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Mode with String] = js.native
+    def apply(value: String): js.UndefOr[Mode & String] = js.native
     
     @js.native
-    sealed trait TRACKPAD extends Mode
-    /* "trackpad" */ val TRACKPAD: typings.ol.mouseWheelZoomMod.Mode.TRACKPAD with String = js.native
+    sealed trait TRACKPAD
+      extends StObject
+         with Mode
+    /* "trackpad" */ val TRACKPAD: typings.ol.mouseWheelZoomMod.Mode.TRACKPAD & String = js.native
     
     @js.native
-    sealed trait WHEEL extends Mode
-    /* "wheel" */ val WHEEL: typings.ol.mouseWheelZoomMod.Mode.WHEEL with String = js.native
+    sealed trait WHEEL
+      extends StObject
+         with Mode
+    /* "wheel" */ val WHEEL: typings.ol.mouseWheelZoomMod.Mode.WHEEL & String = js.native
   }
   
   @js.native
@@ -42,22 +45,21 @@ object mouseWheelZoomMod {
     def setMouseAnchor(useAnchor: Boolean): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var constrainResolution: js.UndefOr[Boolean] = js.native
+    var constrainResolution: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var maxDelta: js.UndefOr[Double] = js.native
+    var maxDelta: js.UndefOr[Double] = js.undefined
     
-    var onFocusOnly: js.UndefOr[Boolean] = js.native
+    var onFocusOnly: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var useAnchor: js.UndefOr[Boolean] = js.native
+    var useAnchor: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

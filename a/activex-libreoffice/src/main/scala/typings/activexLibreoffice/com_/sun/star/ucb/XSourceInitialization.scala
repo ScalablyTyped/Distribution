@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the initialization of a component with any source object. */
-@js.native
-trait XSourceInitialization extends XInterface {
+trait XSourceInitialization
+  extends StObject
+     with XInterface {
   
   /**
     * provides the initialization of a component with any source object.
@@ -21,7 +21,7 @@ trait XSourceInitialization extends XInterface {
     * @param Source the source.
     * @throws AlreadyInitializedException if this method is called more than once during the lifetime of the object implementing this interface.
     */
-  def setSource(Source: XInterface): Unit = js.native
+  def setSource(Source: XInterface): Unit
 }
 object XSourceInitialization {
   

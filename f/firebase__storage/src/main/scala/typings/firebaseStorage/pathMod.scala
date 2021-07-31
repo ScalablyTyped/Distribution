@@ -2,20 +2,20 @@ package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/path", "child")
+  @JSImport("@firebase/storage/dist/src/implementation/path", JSImport.Namespace)
   @js.native
-  def child(path: String, childPath: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/storage/dist/src/implementation/path", "lastComponent")
-  @js.native
-  def lastComponent(path: String): String = js.native
+  @scala.inline
+  def child(path: String, childPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("child")(path.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@firebase/storage/dist/src/implementation/path", "parent")
-  @js.native
-  def parent(path: String): String | Null = js.native
+  @scala.inline
+  def lastComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lastComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def parent(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parent")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

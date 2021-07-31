@@ -2,25 +2,23 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Polyfill extends StObject {
   
-  var Blob: PolyfillBlob = js.native
+  var Blob: PolyfillBlob
   
-  var Event: PolyfillEvent = js.native
+  var Event: PolyfillEvent
   
-  var Fetch: PolyfillFetch = js.native
+  var Fetch: PolyfillFetch
   
-  var File: PolyfillFile = js.native
+  var File: PolyfillFile
   
-  var FileReader: PolyfillFileReader = js.native
+  var FileReader: PolyfillFileReader
   
-  var ProgressEvent: PolyfillProgressEvent = js.native
+  var ProgressEvent: PolyfillProgressEvent
   
-  var XMLHttpRequest: PolyfillXMLHttpRequest = js.native
+  var XMLHttpRequest: PolyfillXMLHttpRequest
 }
 object Polyfill {
   

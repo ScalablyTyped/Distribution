@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor 
         ]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of processor. Valid Values: `Lambda`
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor {
   

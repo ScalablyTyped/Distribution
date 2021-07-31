@@ -9,22 +9,20 @@ import typings.backbonePaginator.mod.PageableCollection
 import typings.backbonePaginator.mod.PageableInitialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait TypeofPageableCollection
-    extends Instantiable0[PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]]
+    extends StObject
+       with Instantiable0[PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]]
        with Instantiable1[
           /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
           PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]
         ]
        with Instantiable2[
-          js.UndefOr[
-            /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]
-          ], 
+          (/* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]) | (/* models */ Unit), 
           /* options */ PageableInitialOptions, 
           PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]
         ] {

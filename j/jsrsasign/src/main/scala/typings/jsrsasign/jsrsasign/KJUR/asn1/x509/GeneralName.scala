@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,12 +45,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gn = new KJUR.asn1.x509.GeneralName({certissuer: certPEM});
   * gn = new KJUR.asn1.x509.GeneralName({certsubj:   certPEM});
   */
-@js.native
 trait GeneralName extends StObject {
   
-  def getEncodedHex(): String = js.native
+  def getEncodedHex(): String
   
-  def setByParam(params: js.Array[String]): Unit = js.native
+  def setByParam(params: js.Array[String]): Unit
 }
 object GeneralName {
   

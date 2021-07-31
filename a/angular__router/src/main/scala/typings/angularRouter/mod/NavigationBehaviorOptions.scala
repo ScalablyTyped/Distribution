@@ -3,10 +3,8 @@ package typings.angularRouter.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBehaviorOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait NavigationBehaviorOptions extends StObject {
     * this.router.navigate(['/view'], { replaceUrl: true });
     * ```
     */
-  var replaceUrl: js.UndefOr[Boolean] = js.native
+  var replaceUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, navigates without pushing a new state into history.
@@ -27,7 +25,7 @@ trait NavigationBehaviorOptions extends StObject {
     * this.router.navigate(['/view'], { skipLocationChange: true });
     * ```
     */
-  var skipLocationChange: js.UndefOr[Boolean] = js.native
+  var skipLocationChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Developer-defined state that can be passed to any navigation.
@@ -44,7 +42,7 @@ trait NavigationBehaviorOptions extends StObject {
     * the router adds the `navigationId` on each navigation.
     *
     */
-  var state: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var state: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object NavigationBehaviorOptions {
   

@@ -2,23 +2,21 @@ package typings.reactSpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FinalTranscript extends StObject {
     
-    var finalTranscript: String = js.native
+    var finalTranscript: String
     
-    var interimTranscript: String = js.native
+    var interimTranscript: String
     
-    var listening: Boolean = js.native
+    var listening: Boolean
     
-    def resetTranscript(): Unit = js.native
+    def resetTranscript(): Unit
     
-    var transcript: String = js.native
+    var transcript: String
   }
   object FinalTranscript {
     

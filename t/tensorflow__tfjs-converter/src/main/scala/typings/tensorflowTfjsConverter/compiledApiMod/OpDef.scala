@@ -2,35 +2,33 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OpDef {
   
   /** Properties of an ArgDef. */
-  @js.native
   trait IArgDef extends StObject {
     
     /** ArgDef description */
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
     /** ArgDef isRef */
-    var isRef: js.UndefOr[Boolean | Null] = js.native
+    var isRef: js.UndefOr[Boolean | Null] = js.undefined
     
     /** ArgDef name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** ArgDef numberAttr */
-    var numberAttr: js.UndefOr[String | Null] = js.native
+    var numberAttr: js.UndefOr[String | Null] = js.undefined
     
     /** ArgDef type */
-    var `type`: js.UndefOr[DataType | Null] = js.native
+    var `type`: js.UndefOr[DataType | Null] = js.undefined
     
     /** ArgDef typeAttr */
-    var typeAttr: js.UndefOr[String | Null] = js.native
+    var typeAttr: js.UndefOr[String | Null] = js.undefined
     
     /** ArgDef typeListAttr */
-    var typeListAttr: js.UndefOr[String | Null] = js.native
+    var typeListAttr: js.UndefOr[String | Null] = js.undefined
   }
   object IArgDef {
     
@@ -109,29 +107,28 @@ object OpDef {
   }
   
   /** Properties of an AttrDef. */
-  @js.native
   trait IAttrDef extends StObject {
     
     /** AttrDef allowedValues */
-    var allowedValues: js.UndefOr[IAttrValue | Null] = js.native
+    var allowedValues: js.UndefOr[IAttrValue | Null] = js.undefined
     
     /** AttrDef defaultValue */
-    var defaultValue: js.UndefOr[IAttrValue | Null] = js.native
+    var defaultValue: js.UndefOr[IAttrValue | Null] = js.undefined
     
     /** AttrDef description */
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
     /** AttrDef hasMinimum */
-    var hasMinimum: js.UndefOr[Boolean | Null] = js.native
+    var hasMinimum: js.UndefOr[Boolean | Null] = js.undefined
     
     /** AttrDef minimum */
-    var minimum: js.UndefOr[Double | String | Null] = js.native
+    var minimum: js.UndefOr[Double | String | Null] = js.undefined
     
     /** AttrDef name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** AttrDef type */
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
   }
   object IAttrDef {
     
@@ -210,14 +207,13 @@ object OpDef {
   }
   
   /** Properties of an OpDeprecation. */
-  @js.native
   trait IOpDeprecation extends StObject {
     
     /** OpDeprecation explanation */
-    var explanation: js.UndefOr[String | Null] = js.native
+    var explanation: js.UndefOr[String | Null] = js.undefined
     
     /** OpDeprecation version */
-    var version: js.UndefOr[Double | Null] = js.native
+    var version: js.UndefOr[Double | Null] = js.undefined
   }
   object IOpDeprecation {
     

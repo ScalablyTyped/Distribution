@@ -12,7 +12,7 @@ Triggers 'mouseexit' event when mouse focus has completely left the element. Thi
 | Keywords           | jquery-plugin, ecosystem:jquery, ebayui, accessibility, a11y |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3277 |
+| # downloads        | 3026 |
 | # stars            | 0 |
 
 ## Links

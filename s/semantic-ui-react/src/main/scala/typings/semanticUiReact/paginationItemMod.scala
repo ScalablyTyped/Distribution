@@ -13,7 +13,6 @@ import typings.semanticUiReact.semanticUiReactStrings.prevItem
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationItemMod {
@@ -25,9 +24,9 @@ object paginationItemMod {
   
   type PaginationItem = Component[PaginationItemProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationItemProps
-    extends StrictPaginationItemProps
+    extends StObject
+       with StrictPaginationItemProps
        with /* key */ StringDictionary[js.Any]
   object PaginationItemProps {
     
@@ -38,14 +37,13 @@ object paginationItemMod {
     }
   }
   
-  @js.native
   trait StrictPaginationItemProps extends StObject {
     
     /** A pagination item can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** A pagination item can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called on click.
@@ -59,7 +57,7 @@ object paginationItemMod {
           /* data */ PaginationItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on key down.
@@ -73,10 +71,10 @@ object paginationItemMod {
           /* data */ PaginationItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A pagination should have a type. */
-    var `type`: js.UndefOr[ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem] = js.native
+    var `type`: js.UndefOr[ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem] = js.undefined
   }
   object StrictPaginationItemProps {
     

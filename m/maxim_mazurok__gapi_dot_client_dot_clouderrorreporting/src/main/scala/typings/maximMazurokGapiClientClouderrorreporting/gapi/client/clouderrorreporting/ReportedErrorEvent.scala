@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderror
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportedErrorEvent extends StObject {
   
   /** Optional. A description of the context in which the error occurred. */
-  var context: js.UndefOr[ErrorContext] = js.native
+  var context: js.UndefOr[ErrorContext] = js.undefined
   
   /** Optional. Time when the event occurred. If not provided, the time when the event was received by the Error Reporting system will be used. */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The error message. If no `context.reportLocation` is provided, the message must contain a header (typically consisting of the exception type name and an error message) and
@@ -25,10 +23,10 @@ trait ReportedErrorEvent extends StObject {
     * contain the result of [`(string)$exception`](http://php.net/manual/en/exception.tostring.php). * **Go**: Must be the return value of
     * [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** Required. The service context in which this error has occurred. */
-  var serviceContext: js.UndefOr[ServiceContext] = js.native
+  var serviceContext: js.UndefOr[ServiceContext] = js.undefined
 }
 object ReportedErrorEvent {
   

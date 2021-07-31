@@ -2,13 +2,11 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Responsetype extends StObject {
   
-  var response_type: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.undefined
 }
 object Responsetype {
   

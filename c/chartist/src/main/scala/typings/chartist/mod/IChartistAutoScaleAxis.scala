@@ -2,23 +2,23 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartistAutoScaleAxis extends ILineChartAxis {
+trait IChartistAutoScaleAxis
+  extends StObject
+     with ILineChartAxis {
   
-  var high: js.UndefOr[Double] = js.native
+  var high: js.UndefOr[Double] = js.undefined
   
-  var low: js.UndefOr[Double] = js.native
+  var low: js.UndefOr[Double] = js.undefined
   
-  var onlyInteger: js.UndefOr[Boolean] = js.native
+  var onlyInteger: js.UndefOr[Boolean] = js.undefined
   
-  var referenceValue: js.UndefOr[Double] = js.native
+  var referenceValue: js.UndefOr[Double] = js.undefined
   
-  var scaleMinSpace: js.UndefOr[Double] = js.native
+  var scaleMinSpace: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[IAutoScaleAxisStatic] = js.native
+  var `type`: js.UndefOr[IAutoScaleAxisStatic] = js.undefined
 }
 object IChartistAutoScaleAxis {
   

@@ -3,27 +3,27 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait CodeToken extends BlockContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait CodeToken
+  extends StObject
+     with BlockContentToken {
   
   /**
     * Code: `true` if block, `false` if inline.
     */
-  var block: Boolean = js.native
+  var block: Boolean
   
   @JSName("type")
-  var type_CodeToken: code = js.native
+  var type_CodeToken: code
 }
 object CodeToken {
   
   @scala.inline
-  def apply(block: Boolean, level: Double, `type`: code): CodeToken = {
+  def apply(block: Boolean, level: Double): CodeToken = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[CodeToken]
   }
   

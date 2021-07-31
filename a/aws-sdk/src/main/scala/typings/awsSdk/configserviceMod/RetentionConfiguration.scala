@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionConfiguration extends StObject {
   
   /**
     * The name of the retention configuration object.
     */
-  var Name: RetentionConfigurationName = js.native
+  var Name: RetentionConfigurationName
   
   /**
     * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
     */
-  var RetentionPeriodInDays: typings.awsSdk.configserviceMod.RetentionPeriodInDays = js.native
+  var RetentionPeriodInDays: typings.awsSdk.configserviceMod.RetentionPeriodInDays
 }
 object RetentionConfiguration {
   

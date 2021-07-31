@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateRoleToGroupRequest extends StObject {
   
   /**
     * The ID of the Greengrass group.
     */
-  var GroupId: string = js.native
+  var GroupId: string
   
   /**
     * The ARN of the role you wish to associate with this group. The existence of the role is not validated.
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
 }
 object AssociateRoleToGroupRequest {
   

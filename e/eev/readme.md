@@ -10,9 +10,9 @@ A tiny, fast, zero-dependency event emitter
 | ------------------ | :-------------: |
 | Full name          | eev |
 | Keywords           | emitter, events, event, listener, pubsub, trigger, observe |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 34838 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 40772 |
 | # stars            | 0 |
 
 ## Links

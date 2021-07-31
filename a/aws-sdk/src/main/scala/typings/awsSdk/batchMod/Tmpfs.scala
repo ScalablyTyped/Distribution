@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tmpfs extends StObject {
   
   /**
     * The absolute file path in the container where the tmpfs volume is to be mounted.
     */
-  var containerPath: String = js.native
+  var containerPath: String
   
   /**
     * The list of tmpfs volume mount options. Valid values: "defaults" | "ro" | "rw" | "suid" | "nosuid" | "dev" | "nodev" | "exec" | "noexec" | "sync" | "async" | "dirsync" | "remount" | "mand" | "nomand" | "atime" | "noatime" | "diratime" | "nodiratime" | "bind" | "rbind" | "unbindable" | "runbindable" | "private" | "rprivate" | "shared" | "rshared" | "slave" | "rslave" | "relatime" | "norelatime" | "strictatime" | "nostrictatime" | "mode" | "uid" | "gid" | "nr_inodes" | "nr_blocks" | "mpol"
     */
-  var mountOptions: js.UndefOr[StringList] = js.native
+  var mountOptions: js.UndefOr[StringList] = js.undefined
   
   /**
     * The size (in MiB) of the tmpfs volume.
     */
-  var size: Integer = js.native
+  var size: Integer
 }
 object Tmpfs {
   

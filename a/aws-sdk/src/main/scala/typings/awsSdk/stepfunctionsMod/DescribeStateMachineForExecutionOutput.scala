@@ -2,43 +2,41 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStateMachineForExecutionOutput extends StObject {
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
-  var definition: Definition = js.native
+  var definition: Definition
   
-  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
+  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
   /**
     * The name of the state machine associated with the execution.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role of the State Machine for the execution. 
     */
-  var roleArn: Arn = js.native
+  var roleArn: Arn
   
   /**
     * The Amazon Resource Name (ARN) of the state machine associated with the execution.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * Selects whether AWS X-Ray tracing is enabled.
     */
-  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.native
+  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   
   /**
     * The date and time the state machine associated with an execution was updated. For a newly created state machine, this is the creation date.
     */
-  var updateDate: Timestamp = js.native
+  var updateDate: Timestamp
 }
 object DescribeStateMachineForExecutionOutput {
   

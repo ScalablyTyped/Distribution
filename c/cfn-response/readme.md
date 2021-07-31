@@ -12,7 +12,7 @@ A module for sending responses from lambda-funciton backed custom resources in A
 | Keywords           | aws, cfn-response, response, lambda, function, cloudFormation, custom, resource, cloud, formation |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 506195 |
+| # downloads        | 416590 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/dom-util |
 | Keywords           | util, antv, g |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 448278 |
+| # releases         | 5 |
+| # dependents       | 22 |
+| # downloads        | 768896 |
 | # stars            | 0 |
 
 ## Links

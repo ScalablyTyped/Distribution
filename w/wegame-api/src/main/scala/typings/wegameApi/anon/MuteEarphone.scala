@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MuteEarphone extends StObject {
   
   /**
     * 是否静音耳机，默认值false
     */
-  var muteEarphone: js.UndefOr[Boolean] = js.native
+  var muteEarphone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否静音麦克风，默认值false
     */
-  var muteMicrophone: js.UndefOr[Boolean] = js.native
+  var muteMicrophone: js.UndefOr[Boolean] = js.undefined
 }
 object MuteEarphone {
   

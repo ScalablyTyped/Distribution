@@ -2,11 +2,12 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shape extends Item {
+trait Shape
+  extends StObject
+     with Item {
   
   /** 
     * The radius of the shape, as a number if it is a circle, or a size object

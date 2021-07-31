@@ -3,17 +3,17 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.winrt.Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails because Already inherited
-- typings.winrt.Windows.Graphics.Printing.OptionDetails.IPrintCustomOptionDetails because var conflicts: errorText, optionId, optionType, state, value. Inlined displayName */ @js.native
-trait IPrintCustomItemListOptionDetails extends IPrintItemListOptionDetails {
+- typings.winrt.Windows.Graphics.Printing.OptionDetails.IPrintCustomOptionDetails because var conflicts: errorText, optionId, optionType, state, value. Inlined displayName */ trait IPrintCustomItemListOptionDetails
+  extends StObject
+     with IPrintItemListOptionDetails {
   
-  def addItem(itemId: String, displayName: String): Unit = js.native
+  def addItem(itemId: String, displayName: String): Unit
   
-  var displayName: String = js.native
+  var displayName: String
 }
 object IPrintCustomItemListOptionDetails {
   
@@ -22,7 +22,7 @@ object IPrintCustomItemListOptionDetails {
     addItem: (String, String) => Unit,
     displayName: String,
     errorText: String,
-    items: IVectorView[_],
+    items: IVectorView[js.Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,

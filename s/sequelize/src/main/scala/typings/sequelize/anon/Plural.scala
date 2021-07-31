@@ -2,15 +2,13 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plural extends StObject {
   
-  var plural: String = js.native
+  var plural: String
   
-  var singular: String = js.native
+  var singular: String
 }
 object Plural {
   

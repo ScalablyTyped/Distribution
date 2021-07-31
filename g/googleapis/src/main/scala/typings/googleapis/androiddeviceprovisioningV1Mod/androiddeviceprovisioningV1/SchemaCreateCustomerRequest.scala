@@ -2,13 +2,11 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message to create a customer.
   */
-@js.native
 trait SchemaCreateCustomerRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaCreateCustomerRequest extends StObject {
     * associated with a Google Account. The values for `companyId` and `name`
     * must be empty.
     */
-  var customer: js.UndefOr[SchemaCompany] = js.native
+  var customer: js.UndefOr[SchemaCompany] = js.undefined
 }
 object SchemaCreateCustomerRequest {
   

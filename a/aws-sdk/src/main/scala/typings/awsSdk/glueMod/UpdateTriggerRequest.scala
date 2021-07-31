@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTriggerRequest extends StObject {
   
   /**
     * The name of the trigger to update.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The new values with which to update the trigger.
     */
-  var TriggerUpdate: typings.awsSdk.glueMod.TriggerUpdate = js.native
+  var TriggerUpdate: typings.awsSdk.glueMod.TriggerUpdate
 }
 object UpdateTriggerRequest {
   

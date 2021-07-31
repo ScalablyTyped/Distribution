@@ -4,17 +4,15 @@ import typings.webgme.webgmeStrings.memory
 import typings.webgme.webgmeStrings.redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Manager extends StObject {
   
   /**
     * If true will start a webhook-manager from the server.
     *  config.webhooks.enable = true;
     */
-  var enable: Boolean = js.native
+  var enable: Boolean
   
   /**
     * Type of webhook-manager for detecting events, can be 'memory', 'redis'. 
@@ -24,7 +22,7 @@ trait Manager extends StObject {
     * (It is also possible to run the redis manager separately from the webgme server.)
     *   config.webhooks.manager = 'memory';
     */
-  var manager: memory | redis = js.native
+  var manager: memory | redis
 }
 object Manager {
   

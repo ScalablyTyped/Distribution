@@ -11,8 +11,8 @@ Middleware for meddling with Cache-Control headers
 | Full name          | koa-cache-control |
 | Keywords           | Koa, cache, cache-control, no-cache |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 169427 |
+| # dependents       | 12 |
+| # downloads        | 199532 |
 | # stars            | 0 |
 
 ## Links

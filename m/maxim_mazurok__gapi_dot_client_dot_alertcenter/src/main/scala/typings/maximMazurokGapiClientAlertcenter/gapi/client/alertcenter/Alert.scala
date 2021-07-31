@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alert extends StObject {
   
   /** Output only. The unique identifier for the alert. */
-  var alertId: js.UndefOr[String] = js.native
+  var alertId: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this alert was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique identifier of the Google account of the customer. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /** Optional. The data associated with this alert, for example google.apps.alertcenter.type.DeviceCompromised. */
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. `True` if this alert is marked for deletion. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The time the event that caused this alert ceased being active. If provided, the end time must not be earlier than the start time. If not provided, it indicates an ongoing
     * alert.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of an alert from overwriting each other. It is strongly suggested that
@@ -40,31 +38,31 @@ trait Alert extends StObject {
     * alerts, and systems are expected to put that etag in the request to update alert to ensure that their change will be applied to the same version of the alert. If no `etag` is
     * provided in the call to update alert, then the existing alert is overwritten blindly.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Output only. The metadata associated with this alert. */
-  var metadata: js.UndefOr[AlertMetadata] = js.native
+  var metadata: js.UndefOr[AlertMetadata] = js.undefined
   
   /** Output only. An optional [Security Investigation Tool](https://support.google.com/a/answer/7575955) query for this alert. */
-  var securityInvestigationToolLink: js.UndefOr[String] = js.native
+  var securityInvestigationToolLink: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A unique identifier for the system that reported the alert. This is output only after alert is created. Supported sources are any of the following: * Google Operations *
     * Mobile device management * Gmail phishing * Domain wide takeout * State sponsored attack * Google identity
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** Required. The time the event that caused this alert was started or detected. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the alert. This is output only after alert is created. For a list of available alert types see [G Suite Alert
     * types](/admin-sdk/alertcenter/reference/alert-types).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this alert was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Alert {
   
@@ -99,7 +97,7 @@ object Alert {
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline

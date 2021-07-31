@@ -5,33 +5,29 @@ import typings.node.childProcessMod.ExecException
 import typings.node.childProcessMod.ExecSyncOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("list-git-remotes", JSImport.Namespace)
-  @js.native
-  def apply(callback: Callback): Unit = js.native
-  @JSImport("list-git-remotes", JSImport.Namespace)
-  @js.native
-  def apply(cwd: String, callback: Callback): Unit = js.native
+  @scala.inline
+  def apply(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(cwd: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("list-git-remotes", "sync")
+  @JSImport("list-git-remotes", JSImport.Namespace)
   @js.native
-  def sync(): Remotes = js.native
-  @JSImport("list-git-remotes", "sync")
-  @js.native
-  def sync(cwd: js.UndefOr[scala.Nothing], options: ExecSyncOptions): Remotes = js.native
-  @JSImport("list-git-remotes", "sync")
-  @js.native
-  def sync(cwd: String): Remotes = js.native
-  @JSImport("list-git-remotes", "sync")
-  @js.native
-  def sync(cwd: String, options: ExecSyncOptions): Remotes = js.native
-  @JSImport("list-git-remotes", "sync")
-  @js.native
-  def sync(options: ExecSyncOptions): Remotes = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(): Remotes = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Remotes]
+  @scala.inline
+  def sync(cwd: String): Remotes = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[Remotes]
+  @scala.inline
+  def sync(cwd: String, options: ExecSyncOptions): Remotes = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Remotes]
+  @scala.inline
+  def sync(cwd: Unit, options: ExecSyncOptions): Remotes = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Remotes]
+  @scala.inline
+  def sync(options: ExecSyncOptions): Remotes = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Remotes]
   
   type Callback = js.Function3[
     /* err */ ExecException | Null, 

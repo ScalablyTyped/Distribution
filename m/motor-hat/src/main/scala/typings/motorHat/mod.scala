@@ -12,19 +12,21 @@ import typings.motorHat.motorHatStrings.single
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("motor-hat", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new MotorHat controller
     *
     * Pass in an options object to generate an uninitialized MotorHat object.
     */
-  @JSImport("motor-hat", JSImport.Default)
-  @js.native
-  def default(options: MotorHatOptions): MotorHat = js.native
+  @scala.inline
+  def default(options: MotorHatOptions): MotorHat = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[MotorHat]
   
   type Callback = js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
   
@@ -112,22 +114,21 @@ object mod {
     def stopSync(): Unit = js.native
   }
   
-  @js.native
   trait DCOptions extends StObject {
     
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
     /**
       * Pin definition for the motor
       */
-    var pins: PinDefinition = js.native
+    var pins: PinDefinition
     
     /**
       * PWM Interface Object
       */
-    var pwm: js.Object = js.native
+    var pwm: js.Object
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object DCOptions {
     
@@ -259,7 +260,6 @@ object mod {
     val steppers: js.Array[Stepper] = js.native
   }
   
-  @js.native
   trait MotorHatOptions extends StObject {
     
     /**
@@ -269,26 +269,26 @@ object mod {
       *
       * * 0x60 for official AdaFruit HATs??
       */
-    var address: js.UndefOr[Double] = js.native
+    var address: js.UndefOr[Double] = js.undefined
     
     /**
       * i2c driver devfile number. Varies by RaspBerry version.
       * Should be automatically detected.
       */
-    var busnum: js.UndefOr[Double] = js.native
+    var busnum: js.UndefOr[Double] = js.undefined
     
     /**
       * Definition of the DC motors connected to the HAT.
       * At most 4 DCs, each should be one of following: 'M1', 'M2', 'M3', 'M4' depending on
       * port the motor is connected to.
       */
-    var dcs: js.UndefOr[js.Array[Motor]] = js.native
+    var dcs: js.UndefOr[js.Array[Motor]] = js.undefined
     
     /**
       * Definition of the servos connected to the HAT.
       * List of the channels that have servos connected to them. 0 to 15.
       */
-    var servos: js.UndefOr[js.Array[Double]] = js.native
+    var servos: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Definition of the stepper motors connected to the HAT.
@@ -296,7 +296,7 @@ object mod {
       * { W1: winding, W2: winding }. Each winding should be one of following: 'M1', 'M2', 'M3',
       * 'M4' depending on the port the stepper is connected to. Correct example: { W1: 'M3', W2: 'M1' }
       */
-    var steppers: js.UndefOr[js.Array[W2]] = js.native
+    var steppers: js.UndefOr[js.Array[W2]] = js.undefined
   }
   object MotorHatOptions {
     
@@ -350,14 +350,13 @@ object mod {
     }
   }
   
-  @js.native
   trait MotorPins extends StObject {
     
-    val IN1: Double = js.native
+    val IN1: Double
     
-    val IN2: Double = js.native
+    val IN2: Double
     
-    val PWM: Double = js.native
+    val PWM: Double
   }
   object MotorPins {
     
@@ -383,23 +382,22 @@ object mod {
   
   type PinDefinition = PinDefinitionObject | js.Array[Double]
   
-  @js.native
   trait PinDefinitionObject extends StObject {
     
     /**
       * Pin number of the first coil output
       */
-    var IN1: Double = js.native
+    var IN1: Double
     
     /**
       * Pin number of the second coil output
       */
-    var IN2: Double = js.native
+    var IN2: Double
     
     /**
       * Pin number of the PWM output
       */
-    var PWM: Double = js.native
+    var PWM: Double
   }
   object PinDefinitionObject {
     
@@ -423,7 +421,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Servo extends StObject {
     
     /**
@@ -433,14 +430,14 @@ object mod {
       * @param   min     The min. pulse in ms
       * @param   max     The max. pulse in ms
       */
-    def calibrate(freq: Double, min: Double, max: Double): Unit = js.native
+    def calibrate(freq: Double, min: Double, max: Double): Unit
     
     /**
       * Move Servo to desired position.
       *
       * @param   pos     Relative position (0% to 100%).
       */
-    def moveTo(pos: Double): Unit = js.native
+    def moveTo(pos: Double): Unit
   }
   object Servo {
     
@@ -461,33 +458,32 @@ object mod {
     }
   }
   
-  @js.native
   trait ServoOptions extends StObject {
     
     /**
       * PWM Controller frequency for the servo
       */
-    var freq: js.UndefOr[Double] = js.native
+    var freq: js.UndefOr[Double] = js.undefined
     
     /**
       * Duration in ms of pulse at position 100
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Duration in ms of pulse at position 0
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Servo controller pin. Which pin (0 to 15) is the servo connected to?
       */
-    var pin: Double = js.native
+    var pin: Double
     
     /**
       * PWM Interface Object
       */
-    var pwm: js.Object = js.native
+    var pwm: js.Object
   }
   object ServoOptions {
     
@@ -526,28 +522,27 @@ object mod {
     }
   }
   
-  @js.native
   trait StepResult extends StObject {
     
     /**
       * Direction of steps performed
       */
-    var dir: Direction = js.native
+    var dir: Direction
     
     /**
       * Time in ms taken to perform the steps
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * Number of steps retried
       */
-    var retried: Double = js.native
+    var retried: Double
     
     /**
       * Performed steps
       */
-    var steps: Double = js.native
+    var steps: Double
   }
   object StepResult {
     
@@ -574,23 +569,22 @@ object mod {
     }
   }
   
-  @js.native
   trait StepSyncResult extends StObject {
     
     /**
       * Direction of steps performed
       */
-    var dir: Direction = js.native
+    var dir: Direction
     
     /**
       * Time in ms taken to perform the steps
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * Performed steps
       */
-    var steps: Double = js.native
+    var steps: Double
   }
   object StepSyncResult {
     
@@ -754,55 +748,54 @@ object mod {
     def stepSync(dir: Direction, steps: Double): StepSyncResult = js.native
   }
   
-  @js.native
   trait StepperOptions extends StObject {
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
     /**
       * PWM Controller frequency for the stepper
       */
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
     /**
       * number of microsteps per step
       */
-    var microsteps: js.UndefOr[`8` | `16`] = js.native
+    var microsteps: js.UndefOr[`8` | `16`] = js.undefined
     
     /**
       * Pin definition for the motor
       */
-    var pins: W1 = js.native
+    var pins: W1
     
     /**
       * Pulses per second
       */
-    var pps: js.UndefOr[Double] = js.native
+    var pps: js.UndefOr[Double] = js.undefined
     
     /**
       * PWM Interface Object
       */
-    var pwm: js.Object = js.native
+    var pwm: js.Object
     
     /**
       * Revolutions per minute
       */
-    var rpm: js.UndefOr[Double] = js.native
+    var rpm: js.UndefOr[Double] = js.undefined
     
     /**
       * Steps per second
       */
-    var sps: js.UndefOr[Double] = js.native
+    var sps: js.UndefOr[Double] = js.undefined
     
     /**
       * Steps per revolution of the stepper motor
       */
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
     /**
       * Stepping style
       */
-    var style: js.UndefOr[single | double | interleaved | microstep] = js.native
+    var style: js.UndefOr[single | double | interleaved | microstep] = js.undefined
   }
   object StepperOptions {
     
@@ -871,23 +864,22 @@ object mod {
     }
   }
   
-  @js.native
   trait StepperSpeed extends StObject {
     
     /**
       * Speed in pulses per second (pulses can be steps, microsteps, etc)
       */
-    var pps: js.UndefOr[Double] = js.native
+    var pps: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed in revolutions per minute
       */
-    var rpm: js.UndefOr[Double] = js.native
+    var rpm: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed in steps per second
       */
-    var sps: js.UndefOr[Double] = js.native
+    var sps: js.UndefOr[Double] = js.undefined
   }
   object StepperSpeed {
     

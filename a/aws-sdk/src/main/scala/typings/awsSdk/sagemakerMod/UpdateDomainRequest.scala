@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainRequest extends StObject {
   
   /**
     * A collection of settings.
     */
-  var DefaultUserSettings: js.UndefOr[UserSettings] = js.native
+  var DefaultUserSettings: js.UndefOr[UserSettings] = js.undefined
   
   /**
     * The ID of the domain to be updated.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
 }
 object UpdateDomainRequest {
   

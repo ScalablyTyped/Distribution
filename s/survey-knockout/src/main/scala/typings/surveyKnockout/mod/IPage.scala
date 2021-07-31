@@ -2,15 +2,14 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPage
-  extends IPanel
+  extends StObject
+     with IPanel
      with IConditionRunner {
   
-  var isStarted: Boolean = js.native
+  var isStarted: Boolean
 }
 object IPage {
   
@@ -37,7 +36,7 @@ object IPage {
     onSurveyLoad: () => js.Any,
     parent: IPanel,
     removeElement: IElement => Boolean,
-    runCondition: (HashTable[_], HashTable[_]) => js.Any,
+    runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any,
     setSurveyImpl: ISurveyImpl => js.Any,
     setVisibleIndex: Double => Double
   ): IPage = {

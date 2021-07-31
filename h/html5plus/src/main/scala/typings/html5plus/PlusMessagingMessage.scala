@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.textSlashhtml
 import typings.html5plus.html5plusStrings.textSlashplain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,7 @@ trait PlusMessagingMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
-  var bcc: js.UndefOr[js.Array[_]] = js.native
+  var bcc: js.UndefOr[js.Array[js.Any]] = js.native
   
   /**
     * 发送消息内容
@@ -56,7 +55,7 @@ trait PlusMessagingMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
-  var cc: js.UndefOr[js.Array[_]] = js.native
+  var cc: js.UndefOr[js.Array[js.Any]] = js.native
   
   /**
     * 发件人信息
@@ -88,5 +87,5 @@ trait PlusMessagingMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
-  var to: js.UndefOr[js.Array[_]] = js.native
+  var to: js.UndefOr[js.Array[js.Any]] = js.native
 }

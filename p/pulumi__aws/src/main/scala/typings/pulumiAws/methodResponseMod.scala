@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodResponseMod {
@@ -62,6 +61,10 @@ object methodResponseMod {
   /* static members */
   object MethodResponse {
     
+    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MethodResponse resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,62 +74,56 @@ object methodResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MethodResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MethodResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodResponseState): MethodResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodResponseState, opts: CustomResourceOptions): MethodResponse = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodResponseState): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodResponseState, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
     
     /**
       * Returns true if the given object is an instance of MethodResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean]
   }
   
-  @js.native
   trait MethodResponseArgs extends StObject {
     
     /**
       * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: Input[String] = js.native
+    val httpMethod: Input[String]
     
     /**
       * The API resource ID
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * A map of the API models used for the response's content type
       */
-    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of response parameters that can be sent to the caller.
       * For example: `responseParameters = { "method.response.header.X-Some-Header" = true }`
       * would define that the header `X-Some-Header` can be provided on the response.
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The HTTP status code
       */
-    val statusCode: Input[String] = js.native
+    val statusCode: Input[String]
   }
   object MethodResponseArgs {
     
@@ -170,40 +167,39 @@ object methodResponseMod {
     }
   }
   
-  @js.native
   trait MethodResponseState extends StObject {
     
     /**
       * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: js.UndefOr[Input[String]] = js.native
+    val httpMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API resource ID
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of the API models used for the response's content type
       */
-    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of response parameters that can be sent to the caller.
       * For example: `responseParameters = { "method.response.header.X-Some-Header" = true }`
       * would define that the header `X-Some-Header` can be provided on the response.
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The HTTP status code
       */
-    val statusCode: js.UndefOr[Input[String]] = js.native
+    val statusCode: js.UndefOr[Input[String]] = js.undefined
   }
   object MethodResponseState {
     

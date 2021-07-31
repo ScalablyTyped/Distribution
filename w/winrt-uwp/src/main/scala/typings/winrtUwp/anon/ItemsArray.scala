@@ -2,15 +2,13 @@ package typings.winrtUwp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsArray extends StObject {
   
-  /** The file name extensions in the collection that start at startIndex. */ var items: js.Array[String] = js.native
+  /** The file name extensions in the collection that start at startIndex. */ var items: js.Array[String]
   
-  /** The number of items retrieved. */ var returnValue: Double = js.native
+  /** The number of items retrieved. */ var returnValue: Double
 }
 object ItemsArray {
   

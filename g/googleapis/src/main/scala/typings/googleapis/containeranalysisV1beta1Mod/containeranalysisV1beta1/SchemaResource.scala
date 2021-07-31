@@ -2,31 +2,29 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An entity that can have metadata. For example, a Docker image.
   */
-@js.native
 trait SchemaResource extends StObject {
   
   /**
     * The hash of the resource content. For example, the Docker digest.
     */
-  var contentHash: js.UndefOr[SchemaHash] = js.native
+  var contentHash: js.UndefOr[SchemaHash] = js.undefined
   
   /**
     * The name of the resource. For example, the name of a Docker image -
     * &quot;Debian&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The unique URI of the resource. For example,
     * `https://gcr.io/project/image@sha256:foo` for a Docker image.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaResource {
   

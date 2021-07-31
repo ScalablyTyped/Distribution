@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backend extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait Backend extends StObject {
     * You can use the UTILIZATION balancing mode if the loadBalancingScheme of the backend service is EXTERNAL, INTERNAL_SELF_MANAGED, or INTERNAL_MANAGED and the backends are instance
     * groups. There are no restrictions on the backend service protocol.
     */
-  var balancingMode: js.UndefOr[String] = js.native
+  var balancingMode: js.UndefOr[String] = js.undefined
   
   /**
     * A multiplier applied to the group's maximum servicing capacity (based on UTILIZATION, RATE or CONNECTION). Default value is 1, which means the group will serve up to 100% of its
@@ -39,13 +37,13 @@ trait Backend extends StObject {
     *
     * This cannot be used for internal load balancing.
     */
-  var capacityScaler: js.UndefOr[Double] = js.native
+  var capacityScaler: js.UndefOr[Double] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** This field designates whether this is a failover backend. More than one failover backend can be configured for a given BackendService. */
-  var failover: js.UndefOr[Boolean] = js.native
+  var failover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fully-qualified URL of an instance group or network endpoint group (NEG) resource. The type of backend that a backend service supports depends on the backend service's
@@ -60,7 +58,7 @@ trait Backend extends StObject {
     *
     * You must use the fully-qualified URL (starting with https://www.googleapis.com/) to specify the instance group or NEG. Partial URLs are not supported.
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * Defines a target maximum number of simultaneous connections that the backend can handle. Valid for network endpoint group and instance group backends (except for regional managed
@@ -70,7 +68,7 @@ trait Backend extends StObject {
     * Not available if the backend's balancingMode is RATE. If the loadBalancingScheme is INTERNAL, then maxConnections is not supported, even though the backend requires a balancing mode
     * of CONNECTION.
     */
-  var maxConnections: js.UndefOr[Double] = js.native
+  var maxConnections: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines a target maximum number of simultaneous connections for an endpoint of a NEG. This is multiplied by the number of endpoints in the NEG to implicitly calculate a maximum
@@ -80,7 +78,7 @@ trait Backend extends StObject {
     * Not available if the backend's balancingMode is RATE. Internal TCP/UDP load balancing does not support setting maxConnectionsPerEndpoint even though its backends require a balancing
     * mode of CONNECTION.
     */
-  var maxConnectionsPerEndpoint: js.UndefOr[Double] = js.native
+  var maxConnectionsPerEndpoint: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines a target maximum number of simultaneous connections for a single VM in a backend instance group. This is multiplied by the number of instances in the instance group to
@@ -91,7 +89,7 @@ trait Backend extends StObject {
     * Not available if the backend's balancingMode is RATE. Internal TCP/UDP load balancing does not support setting maxConnectionsPerInstance even though its backends require a balancing
     * mode of CONNECTION.
     */
-  var maxConnectionsPerInstance: js.UndefOr[Double] = js.native
+  var maxConnectionsPerInstance: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines a maximum number of HTTP requests per second (RPS) that the backend can handle. Valid for network endpoint group and instance group backends (except for regional managed
@@ -102,7 +100,7 @@ trait Backend extends StObject {
     *
     * Not available if the backend's balancingMode is CONNECTION.
     */
-  var maxRate: js.UndefOr[Double] = js.native
+  var maxRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines a maximum target for requests per second (RPS) for an endpoint of a NEG. This is multiplied by the number of endpoints in the NEG to implicitly calculate a target maximum
@@ -112,7 +110,7 @@ trait Backend extends StObject {
     *
     * Not available if the backend's balancingMode is CONNECTION.
     */
-  var maxRatePerEndpoint: js.UndefOr[Double] = js.native
+  var maxRatePerEndpoint: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines a maximum target for requests per second (RPS) for a single VM in a backend instance group. This is multiplied by the number of instances in the instance group to implicitly
@@ -123,7 +121,7 @@ trait Backend extends StObject {
     *
     * Not available if the backend's balancingMode is CONNECTION.
     */
-  var maxRatePerInstance: js.UndefOr[Double] = js.native
+  var maxRatePerInstance: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the maximum average backend utilization of a backend VM in an instance group. The valid range is [0.0, 1.0]. This is an optional parameter if the backend's balancingMode is
@@ -131,7 +129,7 @@ trait Backend extends StObject {
     *
     * This parameter can be used in conjunction with maxRate, maxRatePerInstance, maxConnections (except for regional managed instance groups), or maxConnectionsPerInstance.
     */
-  var maxUtilization: js.UndefOr[Double] = js.native
+  var maxUtilization: js.UndefOr[Double] = js.undefined
 }
 object Backend {
   

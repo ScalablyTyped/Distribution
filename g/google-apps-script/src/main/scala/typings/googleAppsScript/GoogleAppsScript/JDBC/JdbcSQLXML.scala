@@ -2,21 +2,19 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC SQLXML. For documentation of this class, see java.sql.SQLXML
   * .
   */
-@js.native
 trait JdbcSQLXML extends StObject {
   
-  def free(): Unit = js.native
+  def free(): Unit
   
-  def getString(): String = js.native
+  def getString(): String
   
-  def setString(value: String): Unit = js.native
+  def setString(value: String): Unit
 }
 object JdbcSQLXML {
   

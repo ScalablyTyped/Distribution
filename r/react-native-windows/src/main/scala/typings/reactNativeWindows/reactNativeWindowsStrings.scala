@@ -4,7 +4,6 @@ import typings.reactNativeWindows.appThemeTypesMod.AppThemeTypes
 import typings.reactNativeWindows.flyoutPropsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeWindowsStrings {
@@ -35,17 +34,23 @@ object reactNativeWindowsStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends Placement
+  sealed trait bottom
+    extends StObject
+       with Placement
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-edge-aligned-left` extends Placement
+  sealed trait `bottom-edge-aligned-left`
+    extends StObject
+       with Placement
   @scala.inline
   def `bottom-edge-aligned-left`: `bottom-edge-aligned-left` = "bottom-edge-aligned-left".asInstanceOf[`bottom-edge-aligned-left`]
   
   @js.native
-  sealed trait `bottom-edge-aligned-right` extends Placement
+  sealed trait `bottom-edge-aligned-right`
+    extends StObject
+       with Placement
   @scala.inline
   def `bottom-edge-aligned-right`: `bottom-edge-aligned-right` = "bottom-edge-aligned-right".asInstanceOf[`bottom-edge-aligned-right`]
   
@@ -65,7 +70,9 @@ object reactNativeWindowsStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait dark extends AppThemeTypes
+  sealed trait dark
+    extends StObject
+       with AppThemeTypes
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
@@ -80,27 +87,37 @@ object reactNativeWindowsStrings {
   def `dayofweek day month`: `dayofweek day month` = ("dayofweek day month").asInstanceOf[`dayofweek day month`]
   
   @js.native
-  sealed trait full extends Placement
+  sealed trait full
+    extends StObject
+       with Placement
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait left extends Placement
+  sealed trait left
+    extends StObject
+       with Placement
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `left-edge-aligned-bottom` extends Placement
+  sealed trait `left-edge-aligned-bottom`
+    extends StObject
+       with Placement
   @scala.inline
   def `left-edge-aligned-bottom`: `left-edge-aligned-bottom` = "left-edge-aligned-bottom".asInstanceOf[`left-edge-aligned-bottom`]
   
   @js.native
-  sealed trait `left-edge-aligned-top` extends Placement
+  sealed trait `left-edge-aligned-top`
+    extends StObject
+       with Placement
   @scala.inline
   def `left-edge-aligned-top`: `left-edge-aligned-top` = "left-edge-aligned-top".asInstanceOf[`left-edge-aligned-top`]
   
   @js.native
-  sealed trait light extends AppThemeTypes
+  sealed trait light
+    extends StObject
+       with AppThemeTypes
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -140,17 +157,23 @@ object reactNativeWindowsStrings {
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
-  sealed trait right extends Placement
+  sealed trait right
+    extends StObject
+       with Placement
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait `right-edge-aligned-bottom` extends Placement
+  sealed trait `right-edge-aligned-bottom`
+    extends StObject
+       with Placement
   @scala.inline
   def `right-edge-aligned-bottom`: `right-edge-aligned-bottom` = "right-edge-aligned-bottom".asInstanceOf[`right-edge-aligned-bottom`]
   
   @js.native
-  sealed trait `right-edge-aligned-top` extends Placement
+  sealed trait `right-edge-aligned-top`
+    extends StObject
+       with Placement
   @scala.inline
   def `right-edge-aligned-top`: `right-edge-aligned-top` = "right-edge-aligned-top".asInstanceOf[`right-edge-aligned-top`]
   
@@ -160,17 +183,23 @@ object reactNativeWindowsStrings {
   def shortdate: shortdate = "shortdate".asInstanceOf[shortdate]
   
   @js.native
-  sealed trait top extends Placement
+  sealed trait top
+    extends StObject
+       with Placement
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-edge-aligned-left` extends Placement
+  sealed trait `top-edge-aligned-left`
+    extends StObject
+       with Placement
   @scala.inline
   def `top-edge-aligned-left`: `top-edge-aligned-left` = "top-edge-aligned-left".asInstanceOf[`top-edge-aligned-left`]
   
   @js.native
-  sealed trait `top-edge-aligned-right` extends Placement
+  sealed trait `top-edge-aligned-right`
+    extends StObject
+       with Placement
   @scala.inline
   def `top-edge-aligned-right`: `top-edge-aligned-right` = "top-edge-aligned-right".asInstanceOf[`top-edge-aligned-right`]
   

@@ -2,36 +2,34 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a single training query run for the model.
   */
-@js.native
 trait SchemaTrainingRun extends StObject {
   
   /**
     * The evaluation metrics over training/eval data that were computed at the
     * end of training.
     */
-  var evaluationMetrics: js.UndefOr[SchemaEvaluationMetrics] = js.native
+  var evaluationMetrics: js.UndefOr[SchemaEvaluationMetrics] = js.undefined
   
   /**
     * Output of each iteration run, results.size() &lt;= max_iterations.
     */
-  var results: js.UndefOr[js.Array[SchemaIterationResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaIterationResult]] = js.undefined
   
   /**
     * The start time of this training run.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Options that were used for this training run, includes user specified and
     * default options that were used.
     */
-  var trainingOptions: js.UndefOr[SchemaTrainingOptions] = js.native
+  var trainingOptions: js.UndefOr[SchemaTrainingOptions] = js.undefined
 }
 object SchemaTrainingRun {
   

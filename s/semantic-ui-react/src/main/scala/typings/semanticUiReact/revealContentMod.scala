@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object revealContentMod extends Shortcut {
@@ -16,9 +15,9 @@ object revealContentMod extends Shortcut {
   @js.native
   val default: StatelessComponent[RevealContentProps] = js.native
   
-  @js.native
   trait RevealContentProps
-    extends StrictRevealContentProps
+    extends StObject
+       with StrictRevealContentProps
        with /* key */ StringDictionary[js.Any]
   object RevealContentProps {
     
@@ -29,26 +28,25 @@ object revealContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictRevealContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A reveal may contain content that is visible before interaction. */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** A reveal may contain content that is hidden before user interaction. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object StrictRevealContentProps {
     

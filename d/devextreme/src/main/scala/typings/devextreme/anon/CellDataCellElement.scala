@@ -5,23 +5,21 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxScheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellDataCellElement extends StObject {
   
-  var cellData: js.UndefOr[js.Any] = js.native
+  var cellData: js.UndefOr[js.Any] = js.undefined
   
-  var cellElement: js.UndefOr[dxElement] = js.native
+  var cellElement: js.UndefOr[dxElement] = js.undefined
   
-  var component: js.UndefOr[dxScheduler] = js.native
+  var component: js.UndefOr[dxScheduler] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object CellDataCellElement {
   

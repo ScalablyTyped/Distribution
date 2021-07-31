@@ -2,24 +2,22 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A range within a buffer.
   */
-@js.native
 trait IBufferRange extends StObject {
   
   /**
     * The end position of the range.
     */
-  var end: IBufferCellPosition = js.native
+  var end: IBufferCellPosition
   
   /**
     * The start position of the range.
     */
-  var start: IBufferCellPosition = js.native
+  var start: IBufferCellPosition
 }
 object IBufferRange {
   

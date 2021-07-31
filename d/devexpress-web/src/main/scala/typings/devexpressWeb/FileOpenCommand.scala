@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to open the file, specifying its path.
   */
-@js.native
 trait FileOpenCommand extends StObject {
   
   /**
     * Executes the FileOpenCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param path A string value specifying path to the opening file.
     */
-  def execute(path: String): Boolean = js.native
+  def execute(path: String): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): SimpleCommandState = js.native
+  def getState(): SimpleCommandState
 }
 object FileOpenCommand {
   

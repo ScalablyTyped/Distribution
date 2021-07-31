@@ -6,27 +6,25 @@ import typings.jpm.jpmStrings.start
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allow extends StObject {
   
-  var allow: js.UndefOr[Script] = js.native
+  var allow: js.UndefOr[Script] = js.undefined
   
-  var contentScript: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptOptions: js.UndefOr[js.Any] = js.native
+  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
   
-  var contentScriptWhen: js.UndefOr[start | ready | end] = js.native
+  var contentScriptWhen: js.UndefOr[start | ready | end] = js.undefined
   
-  var contentURL: js.UndefOr[String] = js.native
+  var contentURL: js.UndefOr[String] = js.undefined
   
-  var include: js.UndefOr[String | (js.Array[RegExp | String]) | RegExp] = js.native
+  var include: js.UndefOr[String | (js.Array[RegExp | String]) | RegExp] = js.undefined
   
-  var onMessage: js.UndefOr[js.Function1[/* message */ String, _]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
 }
 object Allow {
   
@@ -91,7 +89,7 @@ object Allow {
     def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setOnMessage(value: /* message */ String => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    def setOnMessage(value: /* message */ String => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)

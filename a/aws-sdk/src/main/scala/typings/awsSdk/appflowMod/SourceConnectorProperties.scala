@@ -2,81 +2,79 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceConnectorProperties extends StObject {
   
   /**
     *  Specifies the information that is required for querying Amplitude. 
     */
-  var Amplitude: js.UndefOr[AmplitudeSourceProperties] = js.native
+  var Amplitude: js.UndefOr[AmplitudeSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Datadog. 
     */
-  var Datadog: js.UndefOr[DatadogSourceProperties] = js.native
+  var Datadog: js.UndefOr[DatadogSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Dynatrace. 
     */
-  var Dynatrace: js.UndefOr[DynatraceSourceProperties] = js.native
+  var Dynatrace: js.UndefOr[DynatraceSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Google Analytics. 
     */
-  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsSourceProperties] = js.native
+  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Infor Nexus. 
     */
-  var InforNexus: js.UndefOr[InforNexusSourceProperties] = js.native
+  var InforNexus: js.UndefOr[InforNexusSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Marketo. 
     */
-  var Marketo: js.UndefOr[MarketoSourceProperties] = js.native
+  var Marketo: js.UndefOr[MarketoSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Amazon S3. 
     */
-  var S3: js.UndefOr[S3SourceProperties] = js.native
+  var S3: js.UndefOr[S3SourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Salesforce. 
     */
-  var Salesforce: js.UndefOr[SalesforceSourceProperties] = js.native
+  var Salesforce: js.UndefOr[SalesforceSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying ServiceNow. 
     */
-  var ServiceNow: js.UndefOr[ServiceNowSourceProperties] = js.native
+  var ServiceNow: js.UndefOr[ServiceNowSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Singular. 
     */
-  var Singular: js.UndefOr[SingularSourceProperties] = js.native
+  var Singular: js.UndefOr[SingularSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Slack. 
     */
-  var Slack: js.UndefOr[SlackSourceProperties] = js.native
+  var Slack: js.UndefOr[SlackSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Trend Micro. 
     */
-  var Trendmicro: js.UndefOr[TrendmicroSourceProperties] = js.native
+  var Trendmicro: js.UndefOr[TrendmicroSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Veeva. 
     */
-  var Veeva: js.UndefOr[VeevaSourceProperties] = js.native
+  var Veeva: js.UndefOr[VeevaSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Zendesk. 
     */
-  var Zendesk: js.UndefOr[ZendeskSourceProperties] = js.native
+  var Zendesk: js.UndefOr[ZendeskSourceProperties] = js.undefined
 }
 object SourceConnectorProperties {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagProjectRequest extends StObject {
   
   /**
     * The ID of the project you want to add a tag to.
     */
-  var id: ProjectId = js.native
+  var id: ProjectId
   
   /**
     * The tags you want to add to the project.
     */
-  var tags: Tags = js.native
+  var tags: Tags
 }
 object TagProjectRequest {
   

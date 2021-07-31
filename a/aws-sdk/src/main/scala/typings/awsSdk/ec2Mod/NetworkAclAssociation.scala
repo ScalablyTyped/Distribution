@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAclAssociation extends StObject {
   
   /**
     * The ID of the association between a network ACL and a subnet.
     */
-  var NetworkAclAssociationId: js.UndefOr[String] = js.native
+  var NetworkAclAssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network ACL.
     */
-  var NetworkAclId: js.UndefOr[String] = js.native
+  var NetworkAclId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
 }
 object NetworkAclAssociation {
   

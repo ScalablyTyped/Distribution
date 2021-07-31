@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheParameterGroupNameMessage extends StObject {
   
   /**
     * The name of the cache parameter group.
     */
-  var CacheParameterGroupName: js.UndefOr[String] = js.native
+  var CacheParameterGroupName: js.UndefOr[String] = js.undefined
 }
 object CacheParameterGroupNameMessage {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveRoomRequest extends StObject {
   
   /**
     * The ARN of the skill that was requested. Required.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
   
   /**
     * The ARN of the user. Required.
     */
-  var UserId: typings.awsSdk.alexaforbusinessMod.UserId = js.native
+  var UserId: typings.awsSdk.alexaforbusinessMod.UserId
 }
 object ResolveRoomRequest {
   

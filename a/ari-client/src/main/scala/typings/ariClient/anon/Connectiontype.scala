@@ -3,29 +3,27 @@ package typings.ariClient.anon
 import typings.ariClient.mod.Containers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connectiontype extends StObject {
   
-  var app: String = js.native
+  var app: String
   
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
-  var connection_type: js.UndefOr[String] = js.native
+  var connection_type: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var encapsulation: js.UndefOr[String] = js.native
+  var encapsulation: js.UndefOr[String] = js.undefined
   
-  var external_host: String = js.native
+  var external_host: String
   
-  var format: String = js.native
+  var format: String
   
-  var transport: js.UndefOr[String] = js.native
+  var transport: js.UndefOr[String] = js.undefined
   
-  var variables: js.UndefOr[Containers] = js.native
+  var variables: js.UndefOr[Containers] = js.undefined
 }
 object Connectiontype {
   

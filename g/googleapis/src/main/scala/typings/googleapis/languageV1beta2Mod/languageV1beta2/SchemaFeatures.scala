@@ -2,7 +2,6 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Setting each one to true will enable that specific analysis for the input.
   * Next ID: 10
   */
-@js.native
 trait SchemaFeatures extends StObject {
   
   /**
@@ -18,27 +16,27 @@ trait SchemaFeatures extends StObject {
     * use the default model which classifies into a [predefined
     * taxonomy](/natural-language/docs/categories).
     */
-  var classifyText: js.UndefOr[Boolean] = js.native
+  var classifyText: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extract document-level sentiment.
     */
-  var extractDocumentSentiment: js.UndefOr[Boolean] = js.native
+  var extractDocumentSentiment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extract entities.
     */
-  var extractEntities: js.UndefOr[Boolean] = js.native
+  var extractEntities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extract entities and their associated sentiment.
     */
-  var extractEntitySentiment: js.UndefOr[Boolean] = js.native
+  var extractEntitySentiment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extract syntax information.
     */
-  var extractSyntax: js.UndefOr[Boolean] = js.native
+  var extractSyntax: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaFeatures {
   

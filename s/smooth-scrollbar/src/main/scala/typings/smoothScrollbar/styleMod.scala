@@ -2,16 +2,17 @@ package typings.smoothScrollbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleMod {
   
-  @JSImport("smooth-scrollbar/style", "attachStyle")
+  @JSImport("smooth-scrollbar/style", JSImport.Namespace)
   @js.native
-  def attachStyle(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("smooth-scrollbar/style", "detachStyle")
-  @js.native
-  def detachStyle(): Unit = js.native
+  @scala.inline
+  def attachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachStyle")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def detachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachStyle")().asInstanceOf[Unit]
 }

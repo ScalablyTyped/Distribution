@@ -4,19 +4,21 @@
 Typings are for version 5.14
 
 ## Library description:
-metascraper integration with Clearbit Logo API
+Metascraper integration with Clearbit Logo API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metascraper-clearbit |
 | Keywords           | autocomplete, clearbit, logo, metascraper |
-| # releases         | 89 |
+| # releases         | 117 |
 | # dependents       | 7 |
-| # downloads        | 68065 |
+| # downloads        | 90450 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-clearbit)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-clearbit)
     
 

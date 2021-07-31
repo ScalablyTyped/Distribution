@@ -2,17 +2,15 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarSpace extends StObject {
   
-  var barSpace: Double = js.native
+  var barSpace: Double
   
-  var fromX: Double = js.native
+  var fromX: Double
   
-  var groupSpace: Double = js.native
+  var groupSpace: Double
 }
 object BarSpace {
   

@@ -6,32 +6,32 @@ import typings.senchaTouch.Ext.draw.sprite.ISprite
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engine {
   
-  @js.native
-  trait ICanvas extends ISurface {
+  trait ICanvas
+    extends StObject
+       with ISurface {
     
     /** [Method] Clears the current transformation state on the surface  */
-    var clearTransform: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearTransform: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the value of highPrecision
       * @returns Boolean
       */
-    var getHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var highPrecision: js.UndefOr[Boolean] = js.native
+    var highPrecision: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Initialize the canvas element  */
-    var initElement: js.UndefOr[js.Function0[Unit]] = js.native
+    var initElement: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Sets the value of highPrecision
       * @param highPrecision Boolean The new value.
       */
-    var setHighPrecision: js.UndefOr[js.Function1[/* highPrecision */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHighPrecision: js.UndefOr[js.Function1[/* highPrecision */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ICanvas {
     
@@ -76,17 +76,18 @@ object engine {
     }
   }
   
-  @js.native
-  trait ISvg extends ISurface {
+  trait ISvg
+    extends StObject
+       with ISurface {
     
     /** [Method] Clears the current transformation state on the surface  */
-    var clearTransform: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearTransform: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Creates a DOM element under the SVG namespace of the given type
       * @param type String The type of the SVG DOM element.
       * @returns * The created element.
       */
-    var createSvgNode: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], _]] = js.native
+    var createSvgNode: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], js.Any]] = js.undefined
     
     /** [Method] Destroys the Canvas element and prepares it for Garbage Collection
       * @param path Object
@@ -101,15 +102,15 @@ object engine {
           /* band */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of highPrecision
       * @returns Boolean
       */
-    var getHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var highPrecision: js.UndefOr[Boolean] = js.native
+    var highPrecision: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Remove a given sprite from the surface optionally destroying the sprite in the process
       * @param sprite Object
@@ -118,18 +119,18 @@ object engine {
     @JSName("remove")
     var remove_ISvg: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[js.Any], /* destroySprite */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Renders a single sprite into the surface
       * @param sprite Ext.draw.sprite.Sprite The Sprite to be rendered.
       * @returns Boolean returns false to stop the rendering to continue.
       */
-    var renderSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Boolean]] = js.native
+    var renderSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Boolean]] = js.undefined
     
     /** [Method] Sets the value of highPrecision
       * @param highPrecision Boolean The new value.
       */
-    var setHighPrecision: js.UndefOr[js.Function1[/* highPrecision */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHighPrecision: js.UndefOr[js.Function1[/* highPrecision */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ISvg {
     
@@ -149,7 +150,7 @@ object engine {
       def setClearTransformUndefined: Self = StObject.set(x, "clearTransform", js.undefined)
       
       @scala.inline
-      def setCreateSvgNode(value: /* type */ js.UndefOr[String] => _): Self = StObject.set(x, "createSvgNode", js.Any.fromFunction1(value))
+      def setCreateSvgNode(value: /* type */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "createSvgNode", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCreateSvgNodeUndefined: Self = StObject.set(x, "createSvgNode", js.undefined)
@@ -194,8 +195,9 @@ object engine {
     }
   }
   
-  @js.native
-  trait ISvgContext extends IBase {
+  trait ISvgContext
+    extends StObject
+       with IBase {
     
     /** [Method] Adds points to the subpath such that the arc described by the circumference of the circle described by the arguments
       * @param x Number
@@ -215,7 +217,7 @@ object engine {
           /* anticlockwise */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Arc command using svg parameters
       * @param r1 Number
@@ -237,7 +239,7 @@ object engine {
           /* y2 */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds an arc with the given control points and radius to the current subpath connected to the previous point by a str
       * @param x1 Number
@@ -259,10 +261,10 @@ object engine {
           /* rotation */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Resets the current default path  */
-    var beginPath: js.UndefOr[js.Function0[Unit]] = js.native
+    var beginPath: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Adds the given point to the current subpath connected to the previous one by a cubic B zier curve with the given con
       * @param x1 Number
@@ -282,13 +284,13 @@ object engine {
           /* y3 */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Clears the context  */
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Marks the current subpath as closed and starts a new subpath with a point the same as the start and end of the newly  */
-    var closePath: js.UndefOr[js.Function0[Unit]] = js.native
+    var closePath: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns an object that represents a linear gradient that paints along the line given by the coordinates represented b
       * @param x0 Number
@@ -305,7 +307,7 @@ object engine {
           /* y1 */ js.UndefOr[Double], 
           IGradient
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns a CanvasGradient object that represents a radial gradient that paints along the cone given by the circles rep
       * @param x0 Number
@@ -326,7 +328,7 @@ object engine {
           /* r1 */ js.UndefOr[Double], 
           IGradient
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Draws the given image onto the canvas
       * @param image HTMLElement
@@ -352,7 +354,7 @@ object engine {
           /* dh */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds points to the subpath such that the arc described by the circumference of the ellipse described by the arguments
       * @param x Number
@@ -376,10 +378,10 @@ object engine {
           /* anticlockwise */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Fills the subpaths of the current default path or the given path with the current fill style  */
-    var fill: js.UndefOr[js.Function0[Unit]] = js.native
+    var fill: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Paints the given rectangle onto the canvas using the current fill style
       * @param x Number
@@ -395,7 +397,7 @@ object engine {
           /* height */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Note After the method guarantees the transform matrix will be inverted
       * @param attr Object The attribute object
@@ -403,7 +405,7 @@ object engine {
       */
     var fillStroke: js.UndefOr[
         js.Function2[/* attr */ js.UndefOr[js.Any], /* transformFillStroke */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Fills the given text at the given position
       * @param text String
@@ -417,19 +419,19 @@ object engine {
           /* y */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds the given point to the current subpath connected to the previous one by a straight line
       * @param x Number
       * @param y Number
       */
-    var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+    var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Creates a new subpath with the given point
       * @param x Number
       * @param y Number
       */
-    var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+    var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Adds a new closed subpath to the path representing the given rectangle
       * @param x Number
@@ -445,13 +447,13 @@ object engine {
           /* height */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Pops the state stack and restores the state  */
-    var restore: js.UndefOr[js.Function0[Unit]] = js.native
+    var restore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Pushes the context state to the state stack  */
-    var save: js.UndefOr[js.Function0[Unit]] = js.native
+    var save: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Changes the transformation matrix to the matrix given by the arguments as described below
       * @param xx Number
@@ -471,10 +473,10 @@ object engine {
           /* dy */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Strokes the subpaths of the current default path or the given path with the current stroke style  */
-    var stroke: js.UndefOr[js.Function0[Unit]] = js.native
+    var stroke: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Paints the box that outlines the given rectangle onto the canvas using the current stroke style
       * @param x Number
@@ -490,7 +492,7 @@ object engine {
           /* height */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Strokes the given text at the given position
       * @param text String
@@ -504,7 +506,7 @@ object engine {
           /* y */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Changes the transformation matrix to apply the matrix given by the arguments as described below
       * @param xx Number
@@ -524,7 +526,7 @@ object engine {
           /* dy */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ISvgContext {
     
@@ -721,8 +723,9 @@ object engine {
   
   object svgcontext {
     
-    @js.native
-    trait IGradient extends IBase {
+    trait IGradient
+      extends StObject
+         with IBase {
       
       /** [Method] Adds a color stop with the given color to the gradient at the given offset
         * @param offset Number
@@ -730,7 +733,7 @@ object engine {
         */
       var addColorStop: js.UndefOr[
             js.Function2[/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
     }
     object IGradient {
       

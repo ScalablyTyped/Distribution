@@ -2,66 +2,64 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetImportJobResponse extends StObject {
   
   /**
     * When the dataset import job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The size of the dataset in gigabytes (GB) after the import job has finished.
     */
-  var DataSize: js.UndefOr[Double] = js.native
+  var DataSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the training data to import and an AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the data. If encryption is used, DataSource includes an AWS Key Management Service (KMS) key.
     */
-  var DataSource: js.UndefOr[typings.awsSdk.forecastserviceMod.DataSource] = js.native
+  var DataSource: js.UndefOr[typings.awsSdk.forecastserviceMod.DataSource] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset that the training data was imported to.
     */
-  var DatasetArn: js.UndefOr[Arn] = js.native
+  var DatasetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the dataset import job.
     */
-  var DatasetImportJobArn: js.UndefOr[Arn] = js.native
+  var DatasetImportJobArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the dataset import job.
     */
-  var DatasetImportJobName: js.UndefOr[Name] = js.native
+  var DatasetImportJobName: js.UndefOr[Name] = js.undefined
   
   /**
     * Statistical information about each field in the input data.
     */
-  var FieldStatistics: js.UndefOr[typings.awsSdk.forecastserviceMod.FieldStatistics] = js.native
+  var FieldStatistics: js.UndefOr[typings.awsSdk.forecastserviceMod.FieldStatistics] = js.undefined
   
   /**
     * The last time that the dataset was modified. The time depends on the status of the job, as follows:    CREATE_PENDING - The same time as CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
-  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
   
   /**
     * The status of the dataset import job. The status is reflected in the status of the dataset. For example, when the import job status is CREATE_IN_PROGRESS, the status of the dataset is UPDATE_IN_PROGRESS. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED   
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
   
   /**
     * The format of timestamps in the dataset. The format that you specify depends on the DataFrequency specified when the dataset was created. The following formats are supported   "yyyy-MM-dd" For the following data frequencies: Y, M, W, and D   "yyyy-MM-dd HH:mm:ss" For the following data frequencies: H, 30min, 15min, and 1min; and optionally, for: Y, M, W, and D  
     */
-  var TimestampFormat: js.UndefOr[typings.awsSdk.forecastserviceMod.TimestampFormat] = js.native
+  var TimestampFormat: js.UndefOr[typings.awsSdk.forecastserviceMod.TimestampFormat] = js.undefined
 }
 object DescribeDatasetImportJobResponse {
   

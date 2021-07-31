@@ -9,20 +9,29 @@ import typings.std.Error
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cancellationMod {
   
   @JSImport("prex/out/lib/cancellation", "CancelError")
   @js.native
-  class CancelError () extends Error {
+  class CancelError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("prex/out/lib/cancellation", "CancellationToken")
   @js.native
-  class CancellationToken () extends Cancelable {
+  class CancellationToken ()
+    extends StObject
+       with Cancelable {
     
     var _source: js.Any = js.native
     
@@ -51,13 +60,16 @@ object cancellationMod {
   /* static members */
   object CancellationToken {
     
+    @JSImport("prex/out/lib/cancellation", "CancellationToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.all")
-    @js.native
-    def all(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = js.native
+    @scala.inline
+    def all(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
     
     /**
       * A token that is already canceled.
@@ -66,21 +78,17 @@ object cancellationMod {
     @js.native
     val canceled: CancellationToken = js.native
     
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.from")
-    @js.native
-    def from(cancelable: Cancelable): CancellationToken = js.native
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.from")
-    @js.native
-    def from(cancelable: AbortSignalLike): CancellationToken = js.native
+    @scala.inline
+    def from(cancelable: Cancelable): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
+    @scala.inline
+    def from(cancelable: AbortSignalLike): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
     /**
       * Adapts a CancellationToken-like primitive from a different library.
       */
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.from")
-    @js.native
-    def from(cancelable: CancellationToken): CancellationToken = js.native
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.from")
-    @js.native
-    def from(cancelable: VSCodeCancellationTokenLike): CancellationToken = js.native
+    @scala.inline
+    def from(cancelable: CancellationToken): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
+    @scala.inline
+    def from(cancelable: VSCodeCancellationTokenLike): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
     
     /**
       * A token which will never be canceled.
@@ -93,9 +101,8 @@ object cancellationMod {
       * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    @JSImport("prex/out/lib/cancellation", "CancellationToken.race")
-    @js.native
-    def race(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = js.native
+    @scala.inline
+    def race(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
   }
   
   @JSImport("prex/out/lib/cancellation", "CancellationTokenCountdown")
@@ -144,7 +151,9 @@ object cancellationMod {
     *
     * @param linkedTokens An optional iterable of tokens to which to link this source.
     */
-  class CancellationTokenSource () extends CancelableSource {
+  class CancellationTokenSource ()
+    extends StObject
+       with CancelableSource {
     def this(linkedTokens: Iterable[CancellationToken | Cancelable]) = this()
     
     /**
@@ -184,18 +193,17 @@ object cancellationMod {
     def token: CancellationToken = js.native
   }
   
-  @js.native
   trait AbortSignalLike extends StObject {
     
-    val aborted: Boolean = js.native
+    val aborted: Boolean
     
     @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, callback: js.Function0[_]): js.Any = js.native
+    def addEventListener_abort(`type`: abort, callback: js.Function0[js.Any]): js.Any
   }
   object AbortSignalLike {
     
     @scala.inline
-    def apply(aborted: Boolean, addEventListener: (abort, js.Function0[_]) => js.Any): AbortSignalLike = {
+    def apply(aborted: Boolean, addEventListener: (abort, js.Function0[js.Any]) => js.Any): AbortSignalLike = {
       val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener))
       __obj.asInstanceOf[AbortSignalLike]
     }
@@ -207,12 +215,14 @@ object cancellationMod {
       def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAddEventListener(value: (abort, js.Function0[_]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      def setAddEventListener(value: (abort, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
-  trait CancellationTokenRegistration extends Disposable {
+  trait CancellationTokenRegistration
+    extends StObject
+       with Disposable {
     
     /**
       * Unregisters the callback
@@ -220,17 +230,16 @@ object cancellationMod {
     def unregister(): Unit = js.native
   }
   
-  @js.native
   trait VSCodeCancellationTokenLike extends StObject {
     
-    val isCancellationRequested: Boolean = js.native
+    val isCancellationRequested: Boolean
     
-    def onCancellationRequested(listener: js.Function0[_]): Dispose = js.native
+    def onCancellationRequested(listener: js.Function0[js.Any]): Dispose
   }
   object VSCodeCancellationTokenLike {
     
     @scala.inline
-    def apply(isCancellationRequested: Boolean, onCancellationRequested: js.Function0[_] => Dispose): VSCodeCancellationTokenLike = {
+    def apply(isCancellationRequested: Boolean, onCancellationRequested: js.Function0[js.Any] => Dispose): VSCodeCancellationTokenLike = {
       val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.asInstanceOf[js.Any], onCancellationRequested = js.Any.fromFunction1(onCancellationRequested))
       __obj.asInstanceOf[VSCodeCancellationTokenLike]
     }
@@ -242,7 +251,7 @@ object cancellationMod {
       def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCancellationRequested(value: js.Function0[_] => Dispose): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction1(value))
+      def setOnCancellationRequested(value: js.Function0[js.Any] => Dispose): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction1(value))
     }
   }
 }

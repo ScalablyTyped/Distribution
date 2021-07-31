@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FollowModeScheduleActionStartSettings extends StObject {
   
   /**
     * Identifies whether this action starts relative to the start or relative to the end of the reference action.
     */
-  var FollowPoint: typings.awsSdk.medialiveMod.FollowPoint = js.native
+  var FollowPoint: typings.awsSdk.medialiveMod.FollowPoint
   
   /**
     * The action name of another action that this one refers to.
     */
-  var ReferenceActionName: string = js.native
+  var ReferenceActionName: string
 }
 object FollowModeScheduleActionStartSettings {
   

@@ -4,17 +4,15 @@ import typings.antd.anchorAnchorMod.AntAnchor
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAnchorLink extends StObject {
   
   /* static member */
-  var contextType: Context[AntAnchor] = js.native
+  var contextType: Context[AntAnchor]
   
   /* static member */
-  var defaultProps: HrefString = js.native
+  var defaultProps: HrefString
 }
 object TypeofAnchorLink {
   

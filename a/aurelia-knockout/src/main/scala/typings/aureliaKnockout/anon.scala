@@ -2,17 +2,15 @@ package typings.aureliaKnockout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Container extends StObject {
     
-    var container: typings.aureliaDependencyInjection.mod.Container = js.native
+    var container: typings.aureliaDependencyInjection.mod.Container
     
-    def globalResources(resources: String*): js.Any = js.native
+    def globalResources(resources: String*): js.Any
   }
   object Container {
     

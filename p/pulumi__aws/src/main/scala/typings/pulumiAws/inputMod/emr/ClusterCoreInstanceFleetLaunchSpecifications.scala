@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.emr
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterCoreInstanceFleetLaunchSpecifications extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait ClusterCoreInstanceFleetLaunchSpecifications extends StObject {
     Input[
       js.Array[Input[ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Configuration block for spot instances launch specifications
     */
   var spotSpecifications: js.UndefOr[
     Input[js.Array[Input[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]]]
-  ] = js.native
+  ] = js.undefined
 }
 object ClusterCoreInstanceFleetLaunchSpecifications {
   

@@ -2,29 +2,27 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadata extends StObject {
   
   /** The approximate total surface area (in square kilometers) covered by all the polygons that comprise this entity. */
-  var AreaSqKm: String = js.native
+  var AreaSqKm: String
   
   /**
     * An area on the Earth that provides the best map view for this entity. This area is defined as a bounding box in the format of a
     * “MULTIPOINT ((WestLongitude SouthLatitude), (EastLongitude NorthLatitude))”.
     */
-  var BestMapViewBox: String = js.native
+  var BestMapViewBox: String
   
   /** The culture associated with this entity. Example: en */
-  var OfficialCulture: String = js.native
+  var OfficialCulture: String
   
   /** The approximate population within this entity. Example: PopClass20000to99999 */
-  var PopulationClass: String = js.native
+  var PopulationClass: String
   
   /** The regional culture associated with this entity. */
-  var RegionalCulture: String = js.native
+  var RegionalCulture: String
 }
 object IMetadata {
   

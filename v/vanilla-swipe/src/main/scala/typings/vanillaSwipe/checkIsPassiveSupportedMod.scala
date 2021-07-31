@@ -2,19 +2,19 @@ package typings.vanillaSwipe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkIsPassiveSupportedMod {
   
-  @JSImport("vanilla-swipe/lib/utils/checkIsPassiveSupported", "checkIsPassiveSupported")
+  @JSImport("vanilla-swipe/lib/utils/checkIsPassiveSupported", JSImport.Namespace)
   @js.native
-  def checkIsPassiveSupported(): Boolean = js.native
-  @JSImport("vanilla-swipe/lib/utils/checkIsPassiveSupported", "checkIsPassiveSupported")
-  @js.native
-  def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vanilla-swipe/lib/utils/checkIsPassiveSupported", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def checkIsPassiveSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")().asInstanceOf[Boolean]
+  @scala.inline
+  def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")(isPassiveSupported.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
 }

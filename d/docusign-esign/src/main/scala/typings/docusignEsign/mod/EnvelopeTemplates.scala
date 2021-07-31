@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeTemplates extends StObject {
   
   /**
     * An array of `templateSummary` objects that contain information about templates.
     */
-  var templates: js.UndefOr[js.Array[/* Summary of a template request. */ TemplateSummary]] = js.native
+  var templates: js.UndefOr[js.Array[/* Summary of a template request. */ TemplateSummary]] = js.undefined
 }
 object EnvelopeTemplates {
   

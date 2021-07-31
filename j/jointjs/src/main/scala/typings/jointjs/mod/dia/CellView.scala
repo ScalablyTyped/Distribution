@@ -5,7 +5,6 @@ import typings.jointjs.mod.dia.CellView.Options
 import typings.jointjs.mod.mvc.ViewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.CellView")
@@ -17,9 +16,9 @@ object CellView {
   
   type FlagLabel = String | js.Array[String]
   
-  @js.native
   trait InteractivityOptions
-    extends typings.jointjs.mod.dia.ElementView.InteractivityOptions
+    extends StObject
+       with typings.jointjs.mod.dia.ElementView.InteractivityOptions
        with typings.jointjs.mod.dia.LinkView.InteractivityOptions
   object InteractivityOptions {
     
@@ -30,8 +29,9 @@ object CellView {
     }
   }
   
-  @js.native
-  trait Options[T /* <: Cell */] extends ViewOptions[T]
+  trait Options[T /* <: Cell */]
+    extends StObject
+       with ViewOptions[T]
   object Options {
     
     @scala.inline

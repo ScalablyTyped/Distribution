@@ -3,13 +3,13 @@ package typings.modernizr
 import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatauriBoolean extends Boolean {
+trait DatauriBoolean
+  extends StObject
+     with Boolean {
   
-  var over32kb: scala.Boolean = js.native
+  var over32kb: scala.Boolean
 }
 object DatauriBoolean {
   

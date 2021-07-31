@@ -23,12 +23,12 @@ import typings.std.Record
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelStatic[TTechnology /* <: RaphaelTechnology */]
-  extends /**
+  extends StObject
+     with /**
   * @param onReadyCallback Function that is going to be called on DOM ready event. You can also subscribe to this
   * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
   * @return A new raphael paper that can be used for drawing shapes to the canvas.
@@ -171,9 +171,9 @@ Instantiable4[
     * @return The angle in degrees.
     */
   def angle(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
-  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: js.UndefOr[scala.Nothing], y3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): Double = js.native
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Unit, y3: Double): Double = js.native
   
   /**
     * Creates an animation object that can be passed to the {@link RaphaelElement.animate} or
@@ -189,7 +189,7 @@ Instantiable4[
   def animation(
     params: PartialRaphaelAttributes,
     milliseconds: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     callback: js.ThisFunction0[
       /* this */ RaphaelElement[
         TTechnology, 
@@ -388,7 +388,7 @@ Instantiable4[
     * @param json Object with properties that will be used as a replacement.
     * @return The formatted string.
     */
-  def fullfill(token: String, json: Record[String, _]): String = js.native
+  def fullfill(token: String, json: Record[String, js.Any]): String = js.native
   
   /**
     * On each call returns next colour in the spectrum. To reset it back to red call

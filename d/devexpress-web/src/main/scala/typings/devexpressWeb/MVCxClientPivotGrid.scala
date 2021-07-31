@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the PivotGrid extension.
   */
 @js.native
-trait MVCxClientPivotGrid extends ASPxClientPivotGrid {
+trait MVCxClientPivotGrid
+  extends StObject
+     with ASPxClientPivotGrid {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

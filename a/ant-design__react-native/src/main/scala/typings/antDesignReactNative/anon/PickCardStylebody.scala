@@ -3,14 +3,12 @@ package typings.antDesignReactNative.anon
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/card/style.CardStyle, 'body'> */
-@js.native
 trait PickCardStylebody extends StObject {
   
-  var body: ViewStyle = js.native
+  var body: ViewStyle
 }
 object PickCardStylebody {
   

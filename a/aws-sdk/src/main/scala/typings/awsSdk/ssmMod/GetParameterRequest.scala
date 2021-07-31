@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParameterRequest extends StObject {
   
   /**
     * The name of the parameter you want to query.
     */
-  var Name: PSParameterName = js.native
+  var Name: PSParameterName
   
   /**
     * Return decrypted values for secure string parameters. This flag is ignored for String and StringList parameter types.
     */
-  var WithDecryption: js.UndefOr[Boolean] = js.native
+  var WithDecryption: js.UndefOr[Boolean] = js.undefined
 }
 object GetParameterRequest {
   

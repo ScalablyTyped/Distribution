@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Pushtokens")
@@ -31,7 +30,7 @@ class ResourcePushtokens protected () extends StObject {
     */
   def remove(): GaxiosPromise[Unit] = js.native
   def remove(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def remove(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def remove(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def remove(params: ParamsResourcePushtokensRemove): GaxiosPromise[Unit] = js.native
   def remove(params: ParamsResourcePushtokensRemove, callback: BodyResponseCallback[Unit]): Unit = js.native
   def remove(
@@ -60,7 +59,7 @@ class ResourcePushtokens protected () extends StObject {
     */
   def update(): GaxiosPromise[Unit] = js.native
   def update(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourcePushtokensUpdate): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourcePushtokensUpdate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def update(

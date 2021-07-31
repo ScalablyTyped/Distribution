@@ -2,13 +2,11 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/edge-points
   */
-@js.native
 trait EdgeSingularPoints extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait EdgeSingularPoints extends StObject {
     * The points are specified in the order of source-to-target direction.
     * This function works for bundled beziers, but it is not applicable to the middle, straight-line edge in the bundle.
     */
-  def controlPoints(): js.Array[Position] = js.native
+  def controlPoints(): js.Array[Position]
   
   /**
     * Get the model position of the midpoint of the edge.
@@ -31,7 +29,7 @@ trait EdgeSingularPoints extends StObject {
     * For curve-style: segments edges, the midpoint is the middle segment point if the number of segment points is odd.
     * For an even number of segment points, the overall midpoint is the midpoint of the middle-most line segment (i.e. the mean of the middle two segment points).
     */
-  def midpoint(): Position = js.native
+  def midpoint(): Position
   
   /**
     * Get an array of segment point model positions (i.e. bend points) for a {@code curve-style: segments} edge.
@@ -40,17 +38,17 @@ trait EdgeSingularPoints extends StObject {
     * this function returns the absolute model positions of the segment points.
     * The points are specified in the order of source-to-target direction.
     */
-  def segmentPoints(): js.Array[Position] = js.native
+  def segmentPoints(): js.Array[Position]
   
   /**
     * Get the model position of where the edge ends, towards the source node.
     */
-  def sourceEndpoint(): Position = js.native
+  def sourceEndpoint(): Position
   
   /**
     * Get the model position of where the edge ends, towards the target node.
     */
-  def targetEndpoint(): Position = js.native
+  def targetEndpoint(): Position
 }
 object EdgeSingularPoints {
   

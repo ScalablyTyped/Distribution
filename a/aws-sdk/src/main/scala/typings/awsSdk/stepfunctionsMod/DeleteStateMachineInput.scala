@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteStateMachineInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the state machine to delete.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
 }
 object DeleteStateMachineInput {
   

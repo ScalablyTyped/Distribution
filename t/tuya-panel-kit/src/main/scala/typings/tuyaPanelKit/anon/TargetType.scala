@@ -4,28 +4,28 @@ import typings.tuyaPanelKit.stackRouterMod.StackActionType
 import typings.tuyaPanelKit.tuyaPanelKitStrings.POP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetType extends StackActionType {
+trait TargetType
+  extends StObject
+     with StackActionType {
   
-  var payload: Count = js.native
-  
-  // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var payload: Count
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: POP = js.native
+  // tslint:disable-next-line no-redundant-undefined
+  var target: js.UndefOr[String] = js.undefined
+  
+  var `type`: POP
 }
 object TargetType {
   
   @scala.inline
-  def apply(payload: Count, `type`: POP): TargetType = {
+  def apply(payload: Count): TargetType = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("POP")
     __obj.asInstanceOf[TargetType]
   }
   

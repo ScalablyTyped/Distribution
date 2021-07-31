@@ -2,7 +2,6 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,31 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * documentation to determine which is the case for a particular data type.
   * Data points always contain one value for each field of the data type.
   */
-@js.native
 trait SchemaDataPoint extends StObject {
   
   /**
     * DO NOT USE THIS FIELD. It is ignored, and not stored.
     */
-  var computationTimeMillis: js.UndefOr[String] = js.native
+  var computationTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The data type defining the format of the values in this data point.
     */
-  var dataTypeName: js.UndefOr[String] = js.native
+  var dataTypeName: js.UndefOr[String] = js.undefined
   
   /**
     * The end time of the interval represented by this data point, in
     * nanoseconds since epoch.
     */
-  var endTimeNanos: js.UndefOr[String] = js.native
+  var endTimeNanos: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the last time this data point was modified. Useful only in
     * contexts where we are listing the data changes, rather than representing
     * the current state of the data.
     */
-  var modifiedTimeMillis: js.UndefOr[String] = js.native
+  var modifiedTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * If the data point is contained in a dataset for a derived data source,
@@ -49,18 +47,18 @@ trait SchemaDataPoint extends StObject {
     * all, is an implementation detail and is not guaranteed to remain
     * consistent.
     */
-  var originDataSourceId: js.UndefOr[String] = js.native
+  var originDataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The raw timestamp from the original SensorEvent.
     */
-  var rawTimestampNanos: js.UndefOr[String] = js.native
+  var rawTimestampNanos: js.UndefOr[String] = js.undefined
   
   /**
     * The start time of the interval represented by this data point, in
     * nanoseconds since epoch.
     */
-  var startTimeNanos: js.UndefOr[String] = js.native
+  var startTimeNanos: js.UndefOr[String] = js.undefined
   
   /**
     * Values of each data type field for the data point. It is expected that
@@ -69,7 +67,7 @@ trait SchemaDataPoint extends StObject {
     * source.  Only one of integer and floating point fields will be populated,
     * depending on the format enum value within data source&#39;s type field.
     */
-  var value: js.UndefOr[js.Array[SchemaValue]] = js.native
+  var value: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
 object SchemaDataPoint {
   

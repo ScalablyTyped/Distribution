@@ -7,7 +7,6 @@ import typings.typedoc.reflectionsMod.ProjectReflection
 import typings.typedoc.reflectionsMod.Reflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentPluginMod {
@@ -53,19 +52,15 @@ object commentPluginMod {
     @scala.inline
     def isHidden_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CommentPlugin", "CommentPlugin.removeReflection")
-    @js.native
-    def removeReflection(project: ProjectReflection, reflection: Reflection): Unit = js.native
+    @scala.inline
+    def removeReflection(project: ProjectReflection, reflection: Reflection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeReflection")(project.asInstanceOf[js.Any], reflection.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CommentPlugin", "CommentPlugin.removeReflections")
-    @js.native
-    def removeReflections(project: ProjectReflection, reflections: js.Array[Reflection]): Unit = js.native
+    @scala.inline
+    def removeReflections(project: ProjectReflection, reflections: js.Array[Reflection]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeReflections")(project.asInstanceOf[js.Any], reflections.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CommentPlugin", "CommentPlugin.removeTags")
-    @js.native
-    def removeTags(comment: js.UndefOr[scala.Nothing], tagName: String): Unit = js.native
-    @JSImport("typedoc/dist/lib/converter/plugins/CommentPlugin", "CommentPlugin.removeTags")
-    @js.native
-    def removeTags(comment: Comment, tagName: String): Unit = js.native
+    @scala.inline
+    def removeTags(comment: Unit, tagName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(comment.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeTags(comment: Comment, tagName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(comment.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

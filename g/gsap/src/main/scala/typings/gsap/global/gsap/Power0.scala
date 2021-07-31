@@ -2,14 +2,19 @@ package typings.gsap.global.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* was `typeof Linear` */
 @JSGlobal("gsap.Power0")
 @js.native
 class Power0 ()
-  extends typings.gsap.gsap.Ease
+  extends StObject
+     with typings.gsap.gsap.Ease {
+  
+  /** Translates the tween's progress ratio into the corresponding ease ratio. */
+  /* CompleteClass */
+  override def getRatio(p: Double): Double = js.native
+}
 /* was `typeof Linear` */
 object Power0 {
   

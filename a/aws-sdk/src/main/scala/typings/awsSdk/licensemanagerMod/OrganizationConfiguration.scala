@@ -2,16 +2,14 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationConfiguration extends StObject {
   
   /**
     * Enables AWS Organization integration.
     */
-  var EnableIntegration: Boolean = js.native
+  var EnableIntegration: Boolean
 }
 object OrganizationConfiguration {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -38,7 +37,7 @@ object tableMod {
       * @returns A promise for the resulting document if found, or for undefined if not found,
       *   or a failed promise if the query could not be processed.
       */
-    def get(query: js.Object): js.Promise[_] = js.native
+    def get(query: js.Object): js.Promise[js.Any] = js.native
     
     /**
       * Insert a document into the table.
@@ -67,8 +66,8 @@ object tableMod {
       * @returns A promise for the resulting documents, or a failed promise if
       * the lookup fails.
       */
-    def scan(): js.Promise[js.Array[_]] = js.native
-    def scan(callback: js.Function1[/* items */ js.Array[_], js.Promise[Boolean]]): js.Promise[Unit] = js.native
+    def scan(): js.Promise[js.Array[js.Any]] = js.native
+    def scan(callback: js.Function1[/* items */ js.Array[js.Any], js.Promise[Boolean]]): js.Promise[Unit] = js.native
     
     /**
       * Updates a documents in the table.
@@ -88,7 +87,9 @@ object tableMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud/table", "Table")
   @js.native
-  class TableCls protected () extends Table {
+  class TableCls protected ()
+    extends StObject
+       with Table {
     /**
       * Creates a new Table.
       *
@@ -99,11 +100,15 @@ object tableMod {
       */
     def this(name: String) = this()
     def this(name: String, primaryKey: Input[String]) = this()
-    def this(name: String, primaryKey: js.UndefOr[Input[String]], primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Input[String], primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Unit, opts: ResourceOptions) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Input[PrimaryKeyType], opts: ResourceOptions) = this()
+    def this(name: String, primaryKey: Input[String], primaryKeyType: Unit, opts: ResourceOptions) = this()
     def this(
       name: String,
-      primaryKey: js.UndefOr[Input[String]],
-      primaryKeyType: js.UndefOr[Input[PrimaryKeyType]],
+      primaryKey: Input[String],
+      primaryKeyType: Input[PrimaryKeyType],
       opts: ResourceOptions
     ) = this()
   }
@@ -131,7 +136,8 @@ object tableMod {
   
   @js.native
   trait TableConstructor
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Table.
     *
     * @param name A unique name for the table.
@@ -143,14 +149,14 @@ object tableMod {
        with Instantiable2[/* name */ String, /* primaryKey */ Input[String], Table]
        with Instantiable3[
           /* name */ String, 
-          js.UndefOr[/* primaryKey */ Input[String]], 
+          (/* primaryKey */ Input[String]) | (/* primaryKey */ Unit), 
           /* primaryKeyType */ Input[PrimaryKeyType], 
           Table
         ]
        with Instantiable4[
           /* name */ String, 
-          js.UndefOr[/* primaryKey */ Input[String]], 
-          js.UndefOr[/* primaryKeyType */ Input[PrimaryKeyType]], 
+          (/* primaryKey */ Input[String]) | (/* primaryKey */ Unit), 
+          (/* primaryKeyType */ Input[PrimaryKeyType]) | (/* primaryKeyType */ Unit), 
           /* opts */ ResourceOptions, 
           Table
         ]

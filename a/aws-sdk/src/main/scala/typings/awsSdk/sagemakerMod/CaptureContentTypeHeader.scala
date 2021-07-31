@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureContentTypeHeader extends StObject {
   
   /**
     * 
     */
-  var CsvContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.CsvContentTypes] = js.native
+  var CsvContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.CsvContentTypes] = js.undefined
   
   /**
     * 
     */
-  var JsonContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.JsonContentTypes] = js.native
+  var JsonContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.JsonContentTypes] = js.undefined
 }
 object CaptureContentTypeHeader {
   

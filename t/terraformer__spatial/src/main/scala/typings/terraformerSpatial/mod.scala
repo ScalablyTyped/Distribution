@@ -18,10 +18,13 @@ import typings.terraformerSpatial.anon.H
 import typings.terraformerSpatial.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@terraformer/spatial", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object GeographicCRS {
     
@@ -57,106 +60,76 @@ object mod {
     val `type`: String = js.native
   }
   
-  @JSImport("@terraformer/spatial", "calculateBounds")
-  @js.native
-  def calculateBounds(geojson: GeoJSON): BBox = js.native
+  @scala.inline
+  def calculateBounds(geojson: GeoJSON): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateBounds")(geojson.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  @JSImport("@terraformer/spatial", "calculateEnvelope")
-  @js.native
-  def calculateEnvelope(geojson: GeoJSON): H = js.native
+  @scala.inline
+  def calculateEnvelope(geojson: GeoJSON): H = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateEnvelope")(geojson.asInstanceOf[js.Any]).asInstanceOf[H]
   
-  @JSImport("@terraformer/spatial", "contains")
-  @js.native
-  def contains(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = js.native
+  @scala.inline
+  def contains(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(geojson.asInstanceOf[js.Any], comparisonGeojson.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@terraformer/spatial", "convexHull")
-  @js.native
-  def convexHull(geojson: GeoJSON): Polygon = js.native
+  @scala.inline
+  def convexHull(geojson: GeoJSON): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(geojson.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  @JSImport("@terraformer/spatial", "intersects")
-  @js.native
-  def intersects(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = js.native
+  @scala.inline
+  def intersects(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(geojson.asInstanceOf[js.Any], comparisonGeojson.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@terraformer/spatial", "isConvex")
-  @js.native
-  def isConvex(geojson: GeoJSON): Boolean = js.native
+  @scala.inline
+  def isConvex(geojson: GeoJSON): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(geojson.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@terraformer/spatial", "polygonContainsPoint")
-  @js.native
-  def polygonContainsPoint(polygon: js.Array[js.Array[Position]], point: Position): Boolean = js.native
+  @scala.inline
+  def polygonContainsPoint(polygon: js.Array[js.Array[Position]], point: Position): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonContainsPoint")(polygon.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@terraformer/spatial", "positionToGeographic")
-  @js.native
-  def positionToGeographic(position: Position): Position = js.native
+  @scala.inline
+  def positionToGeographic(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("positionToGeographic")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
   
-  @JSImport("@terraformer/spatial", "positionToMercator")
-  @js.native
-  def positionToMercator(position: Position): Position = js.native
+  @scala.inline
+  def positionToMercator(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("positionToMercator")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
   
-  @JSImport("@terraformer/spatial", "toCircle")
-  @js.native
-  def toCircle(center: Position, radius: Double): Feature[Polygon, GeoJsonProperties] = js.native
-  @JSImport("@terraformer/spatial", "toCircle")
-  @js.native
-  def toCircle(center: Position, radius: Double, interpolate: Double): Feature[Polygon, GeoJsonProperties] = js.native
+  @scala.inline
+  def toCircle(center: Position, radius: Double): Feature[Polygon, GeoJsonProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCircle")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Feature[Polygon, GeoJsonProperties]]
+  @scala.inline
+  def toCircle(center: Position, radius: Double, interpolate: Double): Feature[Polygon, GeoJsonProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCircle")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], interpolate.asInstanceOf[js.Any])).asInstanceOf[Feature[Polygon, GeoJsonProperties]]
   
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: GeometryCollection): GeometryCollection = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: LineString): LineString = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: MultiLineString): MultiLineString = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: MultiPoint): MultiPoint = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: MultiPolygon): MultiPolygon = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: Point): Point = js.native
-  @JSImport("@terraformer/spatial", "toGeographic")
-  @js.native
-  def toGeographic(geojson: Polygon): Polygon = js.native
+  @scala.inline
+  def toGeographic(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[Geometry, GeoJsonProperties]]
+  @scala.inline
+  def toGeographic(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
+  @scala.inline
+  def toGeographic(geojson: GeometryCollection): GeometryCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeometryCollection]
+  @scala.inline
+  def toGeographic(geojson: LineString): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[LineString]
+  @scala.inline
+  def toGeographic(geojson: MultiLineString): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiLineString]
+  @scala.inline
+  def toGeographic(geojson: MultiPoint): MultiPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPoint]
+  @scala.inline
+  def toGeographic(geojson: MultiPolygon): MultiPolygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPolygon]
+  @scala.inline
+  def toGeographic(geojson: Point): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Point]
+  @scala.inline
+  def toGeographic(geojson: Polygon): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: GeometryCollection): GeometryCollection = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: LineString): LineString = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: MultiLineString): MultiLineString = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: MultiPoint): MultiPoint = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: MultiPolygon): MultiPolygon = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: Point): Point = js.native
-  @JSImport("@terraformer/spatial", "toMercator")
-  @js.native
-  def toMercator(geojson: Polygon): Polygon = js.native
+  @scala.inline
+  def toMercator(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[Geometry, GeoJsonProperties]]
+  @scala.inline
+  def toMercator(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
+  @scala.inline
+  def toMercator(geojson: GeometryCollection): GeometryCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeometryCollection]
+  @scala.inline
+  def toMercator(geojson: LineString): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[LineString]
+  @scala.inline
+  def toMercator(geojson: MultiLineString): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiLineString]
+  @scala.inline
+  def toMercator(geojson: MultiPoint): MultiPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPoint]
+  @scala.inline
+  def toMercator(geojson: MultiPolygon): MultiPolygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPolygon]
+  @scala.inline
+  def toMercator(geojson: Point): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Point]
+  @scala.inline
+  def toMercator(geojson: Polygon): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  @JSImport("@terraformer/spatial", "within")
-  @js.native
-  def within(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = js.native
+  @scala.inline
+  def within(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geojson.asInstanceOf[js.Any], comparisonGeojson.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

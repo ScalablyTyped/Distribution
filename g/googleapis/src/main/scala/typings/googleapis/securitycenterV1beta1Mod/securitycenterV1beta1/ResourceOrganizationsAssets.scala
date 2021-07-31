@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/securitycenter/v1beta1", "securitycenter_v1beta1.Resource$Organizations$Assets")
@@ -32,7 +31,7 @@ class ResourceOrganizationsAssets protected () extends StObject {
     */
   def group(): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(callback: BodyResponseCallback[SchemaGroupAssetsResponse]): Unit = js.native
-  def group(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
+  def group(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(params: ParamsResourceOrganizationsAssetsGroup): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(
     params: ParamsResourceOrganizationsAssetsGroup,
@@ -71,7 +70,7 @@ class ResourceOrganizationsAssets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAssetsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAssetsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(params: ParamsResourceOrganizationsAssetsList): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsAssetsList,
@@ -107,7 +106,7 @@ class ResourceOrganizationsAssets protected () extends StObject {
     */
   def runDiscovery(): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def runDiscovery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def runDiscovery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(params: ParamsResourceOrganizationsAssetsRundiscovery): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(
     params: ParamsResourceOrganizationsAssetsRundiscovery,
@@ -142,7 +141,7 @@ class ResourceOrganizationsAssets protected () extends StObject {
     */
   def updateSecurityMarks(): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(callback: BodyResponseCallback[SchemaSecurityMarks]): Unit = js.native
-  def updateSecurityMarks(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityMarks] = js.native
+  def updateSecurityMarks(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(params: ParamsResourceOrganizationsAssetsUpdatesecuritymarks): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(
     params: ParamsResourceOrganizationsAssetsUpdatesecuritymarks,

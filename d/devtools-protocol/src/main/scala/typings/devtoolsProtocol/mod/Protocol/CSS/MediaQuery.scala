@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQuery extends StObject {
   
   /**
     * Whether the media query condition is satisfied.
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * Array of media query expressions.
     */
-  var expressions: js.Array[MediaQueryExpression] = js.native
+  var expressions: js.Array[MediaQueryExpression]
 }
 object MediaQuery {
   

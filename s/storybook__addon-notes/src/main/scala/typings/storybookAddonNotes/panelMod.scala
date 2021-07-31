@@ -6,29 +6,28 @@ import typings.react.mod.global.JSX.Element
 import typings.storybookApi.mod.API
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
   
-  @JSImport("@storybook/addon-notes/dist/Panel", JSImport.Default)
+  @JSImport("@storybook/addon-notes/dist/Panel", JSImport.Namespace)
   @js.native
-  def default(hasActive: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-notes/dist/Panel", "NotesLink")
-  @js.native
-  def NotesLink(hasHrefChildrenProps: NotesLinkProps): Element = js.native
+  @scala.inline
+  def default(hasActive: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActive.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/addon-notes/dist/Panel", "SyntaxHighlighter")
-  @js.native
-  def SyntaxHighlighter(hasClassNameChildrenProps: SyntaxHighlighterProps): Element = js.native
+  @scala.inline
+  def NotesLink(hasHrefChildrenProps: NotesLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesLink")(hasHrefChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
+  @scala.inline
+  def SyntaxHighlighter(hasClassNameChildrenProps: SyntaxHighlighterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SyntaxHighlighter")(hasClassNameChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait NotesLinkProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var href: String = js.native
+    var href: String
   }
   object NotesLinkProps {
     
@@ -49,12 +48,11 @@ object panelMod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var api: API = js.native
+    var api: API
   }
   object Props {
     
@@ -75,13 +73,13 @@ object panelMod {
     }
   }
   
-  @js.native
   trait SyntaxHighlighterProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object SyntaxHighlighterProps {
     

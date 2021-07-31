@@ -7,7 +7,6 @@ import typings.antvG2.antvG2Strings.default
 import typings.antvG2.antvG2Strings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@antv/g2", "Global")

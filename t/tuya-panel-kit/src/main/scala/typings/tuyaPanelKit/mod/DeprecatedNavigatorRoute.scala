@@ -3,14 +3,13 @@ package typings.tuyaPanelKit.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeprecatedNavigatorRoute
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var id: String = js.native
+  var id: String
 }
 object DeprecatedNavigatorRoute {
   

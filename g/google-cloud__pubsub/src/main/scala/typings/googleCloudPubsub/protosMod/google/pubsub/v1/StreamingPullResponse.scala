@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a StreamingPullResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StreamingPullResponse.
   * @param [properties] Properties to set
   */
-class StreamingPullResponse () extends IStreamingPullResponse {
+class StreamingPullResponse ()
+  extends StObject
+     with IStreamingPullResponse {
   def this(properties: IStreamingPullResponse) = this()
   
   /** StreamingPullResponse receivedMessages. */
@@ -32,18 +33,20 @@ class StreamingPullResponse () extends IStreamingPullResponse {
 }
 object StreamingPullResponse {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new StreamingPullResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns StreamingPullResponse instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.create")
-  @js.native
-  def create(): StreamingPullResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.create")
-  @js.native
-  def create(properties: IStreamingPullResponse): StreamingPullResponse = js.native
+  @scala.inline
+  def create(): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StreamingPullResponse]
+  @scala.inline
+  def create(properties: IStreamingPullResponse): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
   
   /**
     * Decodes a StreamingPullResponse message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object StreamingPullResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decode")
-  @js.native
-  def decode(reader: Reader): StreamingPullResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): StreamingPullResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): StreamingPullResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): StreamingPullResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): StreamingPullResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingPullResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): StreamingPullResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingPullResponse]
   
   /**
     * Decodes a StreamingPullResponse message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object StreamingPullResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): StreamingPullResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): StreamingPullResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
   
   /**
     * Encodes the specified StreamingPullResponse message. Does not implicitly {@link google.pubsub.v1.StreamingPullResponse.verify|verify} messages.
@@ -89,12 +86,10 @@ object StreamingPullResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.encode")
-  @js.native
-  def encode(message: IStreamingPullResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.encode")
-  @js.native
-  def encode(message: IStreamingPullResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStreamingPullResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStreamingPullResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StreamingPullResponse message, length delimited. Does not implicitly {@link google.pubsub.v1.StreamingPullResponse.verify|verify} messages.
@@ -103,12 +98,10 @@ object StreamingPullResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingPullResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingPullResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStreamingPullResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStreamingPullResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StreamingPullResponse message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object StreamingPullResponse {
     * @returns StreamingPullResponse
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): StreamingPullResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): StreamingPullResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StreamingPullResponse]
   
   /**
     * Creates a plain object from a StreamingPullResponse message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object StreamingPullResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.toObject")
-  @js.native
-  def toObject(message: StreamingPullResponse): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.toObject")
-  @js.native
-  def toObject(message: StreamingPullResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: StreamingPullResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: StreamingPullResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StreamingPullResponse message.
@@ -140,7 +130,6 @@ object StreamingPullResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.StreamingPullResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

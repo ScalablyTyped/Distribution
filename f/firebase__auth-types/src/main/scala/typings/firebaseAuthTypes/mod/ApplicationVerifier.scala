@@ -2,15 +2,13 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationVerifier extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
   
-  def verify(): js.Promise[String] = js.native
+  def verify(): js.Promise[String]
 }
 object ApplicationVerifier {
   

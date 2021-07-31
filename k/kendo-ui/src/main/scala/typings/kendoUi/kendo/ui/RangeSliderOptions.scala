@@ -2,39 +2,37 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSliderOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ RangeSliderChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ RangeSliderChangeEvent, Unit]] = js.undefined
   
-  var largeStep: js.UndefOr[Double] = js.native
+  var largeStep: js.UndefOr[Double] = js.undefined
   
-  var leftDragHandleTitle: js.UndefOr[String] = js.native
+  var leftDragHandleTitle: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var rightDragHandleTitle: js.UndefOr[String] = js.native
+  var rightDragHandleTitle: js.UndefOr[String] = js.undefined
   
-  var selectionEnd: js.UndefOr[Double] = js.native
+  var selectionEnd: js.UndefOr[Double] = js.undefined
   
-  var selectionStart: js.UndefOr[Double] = js.native
+  var selectionStart: js.UndefOr[Double] = js.undefined
   
-  var slide: js.UndefOr[js.Function1[/* e */ RangeSliderSlideEvent, Unit]] = js.native
+  var slide: js.UndefOr[js.Function1[/* e */ RangeSliderSlideEvent, Unit]] = js.undefined
   
-  var smallStep: js.UndefOr[Double] = js.native
+  var smallStep: js.UndefOr[Double] = js.undefined
   
-  var tickPlacement: js.UndefOr[String] = js.native
+  var tickPlacement: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[RangeSliderTooltip] = js.native
+  var tooltip: js.UndefOr[RangeSliderTooltip] = js.undefined
 }
 object RangeSliderOptions {
   

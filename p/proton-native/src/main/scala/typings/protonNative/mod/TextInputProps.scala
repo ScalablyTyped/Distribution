@@ -2,49 +2,48 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInputProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
   
   /**
     * The default text in the TextInput.
     */
-  var children: js.UndefOr[String] = js.native
+  var children: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the TextInput can be used.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether multiple lines can be inputted into the TextInput.
     */
-  var multiline: js.UndefOr[Boolean] = js.native
+  var multiline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the TextInput text is changed. The new text is passed as an argument.
     */
-  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
   /**
     * Whether the TextInput can be written to by the user.
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether characters are hidden in the TextInput. Commonly used for passwords.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the TextInput can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object TextInputProps {
   

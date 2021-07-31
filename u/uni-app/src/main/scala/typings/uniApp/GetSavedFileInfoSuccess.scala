@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavedFileInfoSuccess extends StObject {
   
   /**
     * 文件保存时的时间戳，从1970/01/01 08:00:00 到该时刻的秒数
     */
-  var createTime: js.UndefOr[Double] = js.native
+  var createTime: js.UndefOr[Double] = js.undefined
   
   /**
     * 接口调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 文件大小，单位B
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object GetSavedFileInfoSuccess {
   

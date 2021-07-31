@@ -12,7 +12,6 @@ import typings.nodegit.treeMod.Tree
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commitMod {
@@ -163,8 +162,11 @@ object commitMod {
   /* static members */
   object Commit {
     
-    @JSImport("nodegit/commit", "Commit.create")
+    @JSImport("nodegit/commit", "Commit")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def create(
       repo: Repository,
       updateRef: String,
@@ -174,11 +176,10 @@ object commitMod {
       message: String,
       tree: Tree,
       parentCount: Double,
-      parents: js.Array[_]
-    ): Oid = js.native
+      parents: js.Array[js.Any]
+    ): Oid = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[Oid]
     
-    @JSImport("nodegit/commit", "Commit.createV")
-    @js.native
+    @scala.inline
     def createV(
       id: Oid,
       repo: Repository,
@@ -189,30 +190,25 @@ object commitMod {
       message: String,
       tree: Tree,
       parentCount: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createV")(id.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/commit", "Commit.createWithSignature")
-    @js.native
-    def createWithSignature(repo: Repository, commitContent: String, signature: String, signatureField: String): js.Promise[Oid] = js.native
+    @scala.inline
+    def createWithSignature(repo: Repository, commitContent: String, signature: String, signatureField: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], commitContent.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], signatureField.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
     /**
       * Retrieves the commit pointed to by the oid
       *
       *
       */
-    @JSImport("nodegit/commit", "Commit.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String): js.Promise[Commit] = js.native
-    @JSImport("nodegit/commit", "Commit.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Commit): js.Promise[Commit] = js.native
-    @JSImport("nodegit/commit", "Commit.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Oid): js.Promise[Commit] = js.native
+    @scala.inline
+    def lookup(repo: Repository, id: String): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    @scala.inline
+    def lookup(repo: Repository, id: Commit): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    @scala.inline
+    def lookup(repo: Repository, id: Oid): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
     
-    @JSImport("nodegit/commit", "Commit.lookupPrefix")
-    @js.native
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Commit] = js.native
+    @scala.inline
+    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
   }
   
   @js.native

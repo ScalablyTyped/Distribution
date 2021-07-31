@@ -10,9 +10,9 @@ Detect Node.JS (as opposite to browser environment) (reliable)
 | ------------------ | :-------------: |
 | Full name          | detect-node |
 | Keywords           | detect, node |
-| # releases         | 2 |
-| # dependents       | 296 |
-| # downloads        | 292115190 |
+| # releases         | 0 |
+| # dependents       | 313 |
+| # downloads        | 350683877 |
 | # stars            | 3 |
 
 ## Links

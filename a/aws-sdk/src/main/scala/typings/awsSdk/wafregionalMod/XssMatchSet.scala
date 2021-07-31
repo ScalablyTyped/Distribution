@@ -2,26 +2,24 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XssMatchSet extends StObject {
   
   /**
     * The name, if any, of the XssMatchSet.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * A unique identifier for an XssMatchSet. You use XssMatchSetId to get information about an XssMatchSet (see GetXssMatchSet), update an XssMatchSet (see UpdateXssMatchSet), insert an XssMatchSet into a Rule or delete one from a Rule (see UpdateRule), and delete an XssMatchSet from AWS WAF (see DeleteXssMatchSet).  XssMatchSetId is returned by CreateXssMatchSet and by ListXssMatchSets.
     */
-  var XssMatchSetId: ResourceId = js.native
+  var XssMatchSetId: ResourceId
   
   /**
     * Specifies the parts of web requests that you want to inspect for cross-site scripting attacks.
     */
-  var XssMatchTuples: typings.awsSdk.wafregionalMod.XssMatchTuples = js.native
+  var XssMatchTuples: typings.awsSdk.wafregionalMod.XssMatchTuples
 }
 object XssMatchSet {
   

@@ -2,25 +2,25 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterReroute[T] extends Generic {
+trait ClusterReroute[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var dry_run: js.UndefOr[Boolean] = js.native
+  var dry_run: js.UndefOr[Boolean] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var retry_failed: js.UndefOr[Boolean] = js.native
+  var retry_failed: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object ClusterReroute {
   
@@ -31,7 +31,7 @@ object ClusterReroute {
   }
   
   @scala.inline
-  implicit class ClusterRerouteMutableBuilder[Self <: ClusterReroute[_], T] (val x: Self with ClusterReroute[T]) extends AnyVal {
+  implicit class ClusterRerouteMutableBuilder[Self <: ClusterReroute[?], T] (val x: Self & ClusterReroute[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

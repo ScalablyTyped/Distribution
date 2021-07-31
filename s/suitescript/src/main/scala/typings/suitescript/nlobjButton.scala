@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since 2009.2
   */
 @js.native
-trait nlobjButton extends /**
+trait nlobjButton
+  extends StObject
+     with /**
   *
   * @return
   */

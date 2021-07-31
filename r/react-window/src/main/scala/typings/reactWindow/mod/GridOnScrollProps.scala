@@ -2,21 +2,19 @@ package typings.reactWindow.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOnScrollProps extends StObject {
   
-  var horizontalScrollDirection: ScrollDirection = js.native
+  var horizontalScrollDirection: ScrollDirection
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
   
-  var scrollUpdateWasRequested: Boolean = js.native
+  var scrollUpdateWasRequested: Boolean
   
-  var verticalScrollDirection: ScrollDirection = js.native
+  var verticalScrollDirection: ScrollDirection
 }
 object GridOnScrollProps {
   

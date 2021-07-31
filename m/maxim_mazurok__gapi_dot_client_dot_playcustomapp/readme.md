@@ -10,9 +10,9 @@ TypeScript typings for Google Play Custom App Publishing API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.playcustomapp |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 46 |
 | # dependents       | 1 |
-| # downloads        | 168 |
+| # downloads        | 3206 |
 | # stars            | 0 |
 
 ## Links

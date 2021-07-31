@@ -2,10 +2,8 @@ package typings.jqueryTimeentry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimeEntryRegionalOptions extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait ITimeEntryRegionalOptions extends StObject {
     *
     * default: ['AM','PM']
     */
-  var ampmNames: js.UndefOr[js.Array[String]] = js.native
+  var ampmNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The text that separates the time from the AM and PM indicators. This is one of the regional settings fields.
     *
     * default: ''
     */
-  var ampmPrefix: js.UndefOr[String] = js.native
+  var ampmPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * The separator between time portions. This is one of the regional settings fields.
     *
     * default: ':'
     */
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
   /**
     * Indicate whether to use 12-hour (false) or 24-hour (true) time. This is one of the regional settings fields.
     *
     * default: False
     */
-  var show24Hours: js.UndefOr[Boolean] = js.native
+  var show24Hours: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tooltip text for the spinner buttons. This is one of the regional settings fields.
     *
     * default: ['Now', 'Previous field', 'Next field', 'Increment', 'Decrement']
     */
-  var spinnerTexts: js.UndefOr[js.Array[String]] = js.native
+  var spinnerTexts: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ITimeEntryRegionalOptions {
   

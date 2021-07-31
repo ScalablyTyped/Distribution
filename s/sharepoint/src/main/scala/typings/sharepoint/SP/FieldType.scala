@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,104 +11,172 @@ sealed trait FieldType extends StObject
 object FieldType extends StObject {
   
   @js.native
-  sealed trait URL extends FieldType
+  sealed trait URL
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait allDayEvent extends FieldType
+  sealed trait allDayEvent
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait attachments extends FieldType
+  sealed trait attachments
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait boolean extends FieldType
+  sealed trait boolean
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait calculated extends FieldType
+  sealed trait calculated
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait choice extends FieldType
+  sealed trait choice
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait computed extends FieldType
+  sealed trait computed
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait contentTypeId extends FieldType
+  sealed trait contentTypeId
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait counter extends FieldType
+  sealed trait counter
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait crossProjectLink extends FieldType
+  sealed trait crossProjectLink
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait currency extends FieldType
+  sealed trait currency
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait dateTime extends FieldType
+  sealed trait dateTime
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait error extends FieldType
+  sealed trait error
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait file extends FieldType
+  sealed trait file
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait geolocation extends FieldType
+  sealed trait geolocation
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait gridChoice extends FieldType
+  sealed trait gridChoice
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait guid extends FieldType
+  sealed trait guid
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait integer extends FieldType
+  sealed trait integer
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait invalid extends FieldType
+  sealed trait invalid
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait lookup extends FieldType
+  sealed trait lookup
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait maxItems extends FieldType
+  sealed trait maxItems
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait modStat extends FieldType
+  sealed trait modStat
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait multiChoice extends FieldType
+  sealed trait multiChoice
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait note extends FieldType
+  sealed trait note
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait number extends FieldType
+  sealed trait number
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait outcomeChoice extends FieldType
+  sealed trait outcomeChoice
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait pageSeparator extends FieldType
+  sealed trait pageSeparator
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait recurrence extends FieldType
+  sealed trait recurrence
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait text extends FieldType
+  sealed trait text
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait threadIndex extends FieldType
+  sealed trait threadIndex
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait threading extends FieldType
+  sealed trait threading
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait user extends FieldType
+  sealed trait user
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait workflowEventType extends FieldType
+  sealed trait workflowEventType
+    extends StObject
+       with FieldType
   
   @js.native
-  sealed trait workflowStatus extends FieldType
+  sealed trait workflowStatus
+    extends StObject
+       with FieldType
 }

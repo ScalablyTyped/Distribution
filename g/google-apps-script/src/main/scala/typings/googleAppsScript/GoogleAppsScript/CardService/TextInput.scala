@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setTitle("Text input title")
   *         .setHint("Text input hint");
   */
-@js.native
 trait TextInput extends StObject {
   
-  def setFieldName(fieldName: String): TextInput = js.native
+  def setFieldName(fieldName: String): TextInput
   
-  def setHint(hint: String): TextInput = js.native
+  def setHint(hint: String): TextInput
   
-  def setMultiline(multiline: Boolean): TextInput = js.native
+  def setMultiline(multiline: Boolean): TextInput
   
-  def setOnChangeAction(action: Action): TextInput = js.native
+  def setOnChangeAction(action: Action): TextInput
   
-  def setSuggestions(suggestions: Suggestions): TextInput = js.native
+  def setSuggestions(suggestions: Suggestions): TextInput
   
-  def setSuggestionsAction(suggestionsAction: Action): TextInput = js.native
+  def setSuggestionsAction(suggestionsAction: Action): TextInput
   
-  def setTitle(title: String): TextInput = js.native
+  def setTitle(title: String): TextInput
   
-  def setValue(value: String): TextInput = js.native
+  def setValue(value: String): TextInput
 }
 object TextInput {
   

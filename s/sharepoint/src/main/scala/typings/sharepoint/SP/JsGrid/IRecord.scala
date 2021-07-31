@@ -3,43 +3,41 @@ package typings.sharepoint.SP.JsGrid
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRecord extends StObject {
   
   /** Update the specified field with the specified value */
-  def AddFieldValue(fieldKey: String, value: js.Any): Unit = js.native
+  def AddFieldValue(fieldKey: String, value: js.Any): Unit
   
   /** returns raw data value for the specified field */
-  def GetDataValue(fieldKey: String): js.Any = js.native
+  def GetDataValue(fieldKey: String): js.Any
   
   /** returns localized text value for the specified field */
-  def GetLocalizedValue(fieldKey: String): String = js.native
+  def GetLocalizedValue(fieldKey: String): String
   
-  def GetProp(fieldKey: String): IPropertyBase = js.native
+  def GetProp(fieldKey: String): IPropertyBase
   
   /** returns true if data value for the specified field is available */
-  def HasDataValue(fieldKey: String): Boolean = js.native
+  def HasDataValue(fieldKey: String): Boolean
   
   /** returns true if localized text value for the specified field is available */
-  def HasLocalizedValue(fieldKey: String): Boolean = js.native
+  def HasLocalizedValue(fieldKey: String): Boolean
   
   /** Removes value of the specified field.
     Does not refresh the view. */
-  def RemoveFieldValue(fieldKey: String): Unit = js.native
+  def RemoveFieldValue(fieldKey: String): Unit
   
-  def SetProp(fieldKey: String, prop: IPropertyBase): Unit = js.native
+  def SetProp(fieldKey: String, prop: IPropertyBase): Unit
   
   /** True if this is an entry row */
-  var bIsNewRow: Boolean = js.native
+  var bIsNewRow: Boolean
   
   /** returns recordKey */
-  def key(): Double = js.native
+  def key(): Double
   
   /** Please use SetProp and GetProp */
-  var properties: StringDictionary[IPropertyBase] = js.native
+  var properties: StringDictionary[IPropertyBase]
 }
 object IRecord {
   

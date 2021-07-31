@@ -8,52 +8,50 @@ import typings.octokitTypes.octokitTypesStrings.fixed
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dismissedat extends StObject {
   
   /**
     * The time that the alert was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var created_at: String = js.native
+  var created_at: String
   
   /**
     * The time that the alert was dismissed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var dismissed_at: String = js.native
+  var dismissed_at: String
   
-  var dismissed_by: Dictk | Null = js.native
+  var dismissed_by: Dictk | Null
   
   /**
     * **Required when the state is dismissed.** The reason for dismissing or closing the alert. Can be one of: `false positive`, `won't fix`, and `used in tests`.
     */
-  var dismissed_reason: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`) | Null = js.native
+  var dismissed_reason: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`) | Null
   
   /**
     * The GitHub URL of the alert resource.
     */
-  var html_url: String = js.native
+  var html_url: String
   
   /**
     * The code scanning alert number.
     */
-  var number: Double = js.native
+  var number: Double
   
-  var rule: Severity = js.native
+  var rule: Severity
   
   /**
     * State of a code scanning alert.
     */
-  var state: open | dismissed | fixed = js.native
+  var state: open | dismissed | fixed
   
-  var tool: Version = js.native
+  var tool: Version
   
   /**
     * The REST API URL of the alert resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object Dismissedat {
   
@@ -68,7 +66,7 @@ object Dismissedat {
     tool: Version,
     url: String
   ): Dismissedat = {
-    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], dismissed_at = dismissed_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], dismissed_at = dismissed_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], dismissed_by = null, dismissed_reason = null)
     __obj.asInstanceOf[Dismissedat]
   }
   

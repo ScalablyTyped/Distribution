@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "HeaderList")
@@ -15,7 +14,10 @@ class HeaderList protected () extends PropertyList[Header] {
 /* static members */
 object HeaderList {
   
-  @JSImport("postman-collection", "HeaderList.isHeaderList")
+  @JSImport("postman-collection", "HeaderList")
   @js.native
-  def isHeaderList(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isHeaderList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

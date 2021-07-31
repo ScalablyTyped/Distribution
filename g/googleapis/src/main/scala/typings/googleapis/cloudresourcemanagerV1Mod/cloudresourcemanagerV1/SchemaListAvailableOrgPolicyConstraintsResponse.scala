@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (contrast with the response from `ListPolicies`, which returns all policies
   * which are set).
   */
-@js.native
 trait SchemaListAvailableOrgPolicyConstraintsResponse extends StObject {
   
   /**
     * The collection of constraints that are settable on the request resource.
     */
-  var constraints: js.UndefOr[js.Array[SchemaConstraint]] = js.native
+  var constraints: js.UndefOr[js.Array[SchemaConstraint]] = js.undefined
   
   /**
     * Page token used to retrieve the next page. This is currently not used.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAvailableOrgPolicyConstraintsResponse {
   

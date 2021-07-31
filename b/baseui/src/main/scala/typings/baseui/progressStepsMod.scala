@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressStepsMod {
@@ -66,40 +65,39 @@ object progressStepsMod {
   @js.native
   val StyledStep: StyletronComponent[StyleProps] = js.native
   
-  @js.native
   trait NumberedStepOverrides extends StObject {
     
     var Content: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Description: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var IconContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InnerIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Tail: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Title: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object NumberedStepOverrides {
     
@@ -178,22 +176,21 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait NumberedStepProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var isCompleted: js.UndefOr[Boolean] = js.native
+    var isCompleted: js.UndefOr[Boolean] = js.undefined
     
-    var isLast: js.UndefOr[Boolean] = js.native
+    var isLast: js.UndefOr[Boolean] = js.undefined
     
-    var overrides: js.UndefOr[NumberedStepOverrides] = js.native
+    var overrides: js.UndefOr[NumberedStepOverrides] = js.undefined
     
-    var step: js.UndefOr[ReactNode] = js.native
+    var step: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NumberedStepProps {
     
@@ -250,12 +247,11 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait ProgressStepsOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ProgressStepsOverrides {
     
@@ -278,14 +274,13 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait ProgressStepsProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var overrides: js.UndefOr[ProgressStepsOverrides] = js.native
+    var overrides: js.UndefOr[ProgressStepsOverrides] = js.undefined
   }
   object ProgressStepsProps {
     
@@ -318,40 +313,39 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait StepOverrides extends StObject {
     
     var Content: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Description: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var IconContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InnerIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Tail: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Title: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object StepOverrides {
     
@@ -430,20 +424,19 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait StepProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var isCompleted: js.UndefOr[Boolean] = js.native
+    var isCompleted: js.UndefOr[Boolean] = js.undefined
     
-    var isLast: js.UndefOr[Boolean] = js.native
+    var isLast: js.UndefOr[Boolean] = js.undefined
     
-    var overrides: js.UndefOr[StepOverrides] = js.native
+    var overrides: js.UndefOr[StepOverrides] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object StepProps {
     
@@ -494,17 +487,16 @@ object progressStepsMod {
     }
   }
   
-  @js.native
   trait StyleProps extends StObject {
     
     @JSName("$disabled")
-    var $disabled: js.UndefOr[Boolean] = js.native
+    var $disabled: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isActive")
-    var $isActive: js.UndefOr[Boolean] = js.native
+    var $isActive: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isCompleted")
-    var $isCompleted: js.UndefOr[Boolean] = js.native
+    var $isCompleted: js.UndefOr[Boolean] = js.undefined
   }
   object StyleProps {
     

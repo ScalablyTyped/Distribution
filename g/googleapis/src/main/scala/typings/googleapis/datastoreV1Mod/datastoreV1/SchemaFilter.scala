@@ -2,24 +2,22 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A holder for any type of filter.
   */
-@js.native
 trait SchemaFilter extends StObject {
   
   /**
     * A composite filter.
     */
-  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.native
+  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.undefined
   
   /**
     * A filter on a property.
     */
-  var propertyFilter: js.UndefOr[SchemaPropertyFilter] = js.native
+  var propertyFilter: js.UndefOr[SchemaPropertyFilter] = js.undefined
 }
 object SchemaFilter {
   

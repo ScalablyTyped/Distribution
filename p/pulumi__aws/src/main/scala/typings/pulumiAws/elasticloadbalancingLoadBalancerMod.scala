@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancingLoadBalancerMod {
@@ -139,6 +138,10 @@ object elasticloadbalancingLoadBalancerMod {
   /* static members */
   object LoadBalancer {
     
+    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoadBalancer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,116 +151,110 @@ object elasticloadbalancingLoadBalancerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
     
     /**
       * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancer", "LoadBalancer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancer.LoadBalancer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancer.LoadBalancer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancer.LoadBalancer */ Boolean]
   }
   
-  @js.native
   trait LoadBalancerArgs extends StObject {
     
     /**
       * An Access Logs block. Access Logs documented below.
       */
-    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerAccessLogs]] = js.native
+    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerAccessLogs]] = js.undefined
     
     /**
       * The AZ's to serve traffic in.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Boolean to enable connection draining. Default: `false`
       */
-    val connectionDraining: js.UndefOr[Input[Boolean]] = js.native
+    val connectionDraining: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time in seconds to allow for connections to drain. Default: `300`
       */
-    val connectionDrainingTimeout: js.UndefOr[Input[Double]] = js.native
+    val connectionDrainingTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Enable cross-zone load balancing. Default: `true`
       */
-    val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.native
+    val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A healthCheck block. Health Check documented below.
       */
-    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerHealthCheck]] = js.native
+    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerHealthCheck]] = js.undefined
     
     /**
       * The time in seconds that the connection is allowed to be idle. Default: `60`
       */
-    val idleTimeout: js.UndefOr[Input[Double]] = js.native
+    val idleTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of instance ids to place in the ELB pool.
       */
-    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * If true, ELB will be an internal ELB.
       */
-    val internal: js.UndefOr[Input[Boolean]] = js.native
+    val internal: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of listener blocks. Listeners documented below.
       */
     val listeners: Input[
         js.Array[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerListener]]
-      ] = js.native
+      ]
     
     /**
       * The name of the ELB. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to assign to the ELB.
       * Only valid if creating an ELB within a VPC
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the security group that you can use as
       * part of your inbound rules for your load balancer's back-end application
       * instances. Use this for Classic or Default VPC only.
       */
-    val sourceSecurityGroup: js.UndefOr[Input[String]] = js.native
+    val sourceSecurityGroup: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of subnet IDs to attach to the ELB.
       */
-    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LoadBalancerArgs {
     
@@ -388,63 +385,62 @@ object elasticloadbalancingLoadBalancerMod {
     }
   }
   
-  @js.native
   trait LoadBalancerState extends StObject {
     
     /**
       * An Access Logs block. Access Logs documented below.
       */
-    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerAccessLogs]] = js.native
+    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerAccessLogs]] = js.undefined
     
     /**
       * The ARN of the ELB
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AZ's to serve traffic in.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Boolean to enable connection draining. Default: `false`
       */
-    val connectionDraining: js.UndefOr[Input[Boolean]] = js.native
+    val connectionDraining: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time in seconds to allow for connections to drain. Default: `300`
       */
-    val connectionDrainingTimeout: js.UndefOr[Input[Double]] = js.native
+    val connectionDrainingTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Enable cross-zone load balancing. Default: `true`
       */
-    val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.native
+    val crossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The DNS name of the ELB
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A healthCheck block. Health Check documented below.
       */
-    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerHealthCheck]] = js.native
+    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerHealthCheck]] = js.undefined
     
     /**
       * The time in seconds that the connection is allowed to be idle. Default: `60`
       */
-    val idleTimeout: js.UndefOr[Input[Double]] = js.native
+    val idleTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of instance ids to place in the ELB pool.
       */
-    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * If true, ELB will be an internal ELB.
       */
-    val internal: js.UndefOr[Input[Boolean]] = js.native
+    val internal: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of listener blocks. Listeners documented below.
@@ -453,53 +449,53 @@ object elasticloadbalancingLoadBalancerMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticloadbalancing.LoadBalancerListener]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the ELB. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to assign to the ELB.
       * Only valid if creating an ELB within a VPC
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the security group that you can use as
       * part of your inbound rules for your load balancer's back-end application
       * instances. Use this for Classic or Default VPC only.
       */
-    val sourceSecurityGroup: js.UndefOr[Input[String]] = js.native
+    val sourceSecurityGroup: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the security group that you can use as
       * part of your inbound rules for your load balancer's back-end application
       * instances. Only available on ELBs launched in a VPC.
       */
-    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of subnet IDs to attach to the ELB.
       */
-    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerState {
     

@@ -2,13 +2,11 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listid extends StObject {
   
-  var list_id: String = js.native
+  var list_id: String
 }
 object Listid {
   

@@ -7,31 +7,29 @@ import typings.babelTypes.babelTypesStrings.Placeholder
 import typings.babelTypes.babelTypesStrings.StringLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placeholder_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var expectedNode: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern = js.native
+  var expectedNode: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern
   
-  var name: Identifier_ = js.native
+  var name: Identifier_
   
   @JSName("type")
-  var type_Placeholder_ : Placeholder = js.native
+  var type_Placeholder_ : Placeholder
 }
 object Placeholder_ {
   
   @scala.inline
   def apply(
     expectedNode: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern,
-    name: Identifier_,
-    `type`: Placeholder
+    name: Identifier_
   ): Placeholder_ = {
-    val __obj = js.Dynamic.literal(expectedNode = expectedNode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expectedNode = expectedNode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Placeholder")
     __obj.asInstanceOf[Placeholder_]
   }
   

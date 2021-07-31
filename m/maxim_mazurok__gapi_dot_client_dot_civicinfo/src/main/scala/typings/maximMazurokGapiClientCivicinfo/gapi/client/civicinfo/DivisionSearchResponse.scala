@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DivisionSearchResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "civicinfo#divisionSearchResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[js.Array[DivisionSearchResult]] = js.native
+  var results: js.UndefOr[js.Array[DivisionSearchResult]] = js.undefined
 }
 object DivisionSearchResponse {
   

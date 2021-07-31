@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object ContactQueryDesiredFields extends StObject {
   
   /** The contact must have an email address. */
   @js.native
-  sealed trait emailAddress extends ContactQueryDesiredFields
+  sealed trait emailAddress
+    extends StObject
+       with ContactQueryDesiredFields
   
   /** No required fields */
   @js.native
-  sealed trait none extends ContactQueryDesiredFields
+  sealed trait none
+    extends StObject
+       with ContactQueryDesiredFields
   
   /** The contact must have a phone number. */
   @js.native
-  sealed trait phoneNumber extends ContactQueryDesiredFields
+  sealed trait phoneNumber
+    extends StObject
+       with ContactQueryDesiredFields
   
   /** The contact must have a postal address. */
   @js.native
-  sealed trait postalAddress extends ContactQueryDesiredFields
+  sealed trait postalAddress
+    extends StObject
+       with ContactQueryDesiredFields
 }

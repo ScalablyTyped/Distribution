@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait State extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait State extends StObject {
     *
     * @member {boolean}
     */
-  var blend: Boolean = js.native
+  var blend: Boolean
   
   /**
     * The blend mode to be applied when this state is set. Apply a value of `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
@@ -32,14 +30,14 @@ trait State extends StObject {
     * @default PIXI.BLEND_MODES.NORMAL
     * @see PIXI.BLEND_MODES
     */
-  var blendMode: Double = js.native
+  var blendMode: Double
   
   /**
     * Specifies whether or not front or back-facing polygons can be culled.
     * @member {boolean}
     * @default false
     */
-  var clockwiseFrontFace: Boolean = js.native
+  var clockwiseFrontFace: Boolean
   
   /**
     * Activates culling of polygons.
@@ -47,7 +45,7 @@ trait State extends StObject {
     * @member {boolean}
     * @default false
     */
-  var culling: Boolean = js.native
+  var culling: Boolean
   
   /**
     * Activates depth comparisons and updates to the depth buffer.
@@ -55,7 +53,7 @@ trait State extends StObject {
     * @member {boolean}
     * @default false
     */
-  var depthTest: Boolean = js.native
+  var depthTest: Boolean
   
   /**
     * Activates adding an offset to depth values of polygon's fragments
@@ -63,7 +61,7 @@ trait State extends StObject {
     * @member {boolean}
     * @default false
     */
-  var offsets: Boolean = js.native
+  var offsets: Boolean
   
   /**
     * The polygon offset. Setting this property to anything other than 0 will automatically enable polygon offset fill.
@@ -71,7 +69,7 @@ trait State extends StObject {
     * @member {number}
     * @default 0
     */
-  var polygonOffset: Double = js.native
+  var polygonOffset: Double
 }
 object State {
   

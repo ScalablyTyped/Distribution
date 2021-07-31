@@ -2,59 +2,57 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxStateCounts extends StObject {
   
   /**
     * Number of values in alternative state.
     * Integer
     */
-  var qAlternative: Double = js.native
+  var qAlternative: Double
   
   /**
     * Number of values in deselected state.
     * Integer
     */
-  var qDeselected: Double = js.native
+  var qDeselected: Double
   
   /**
     * Number of values in excluded state
     * Integer
     */
-  var qExcluded: Double = js.native
+  var qExcluded: Double
   
   /**
     * Number of values in locked state.
     * Integer
     */
-  var qLocked: Double = js.native
+  var qLocked: Double
   
   /**
     * Number of values in locked excluded state.
     * Integer
     */
-  var qLockedExcluded: Double = js.native
+  var qLockedExcluded: Double
   
   /**
     * Number of values in optional state.
     * Integer
     */
-  var qOption: Double = js.native
+  var qOption: Double
   
   /**
     * Number of values in selected state.
     * Integer
     */
-  var qSelected: Double = js.native
+  var qSelected: Double
   
   /**
     * Number of values in selected excluded state.
     * Integer
     */
-  var qSelectedExcluded: Double = js.native
+  var qSelectedExcluded: Double
 }
 object INxStateCounts {
   

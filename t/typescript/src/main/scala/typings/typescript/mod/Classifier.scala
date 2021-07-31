@@ -2,10 +2,8 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classifier extends StObject {
   
   /**
@@ -28,9 +26,9 @@ trait Classifier extends StObject {
     *                                  subsume the classification.
     * @deprecated Use getLexicalClassifications instead.
     */
-  def getClassificationsForLine(text: java.lang.String, lexState: EndOfLineState, syntacticClassifierAbsent: Boolean): ClassificationResult = js.native
+  def getClassificationsForLine(text: java.lang.String, lexState: EndOfLineState, syntacticClassifierAbsent: Boolean): ClassificationResult
   
-  def getEncodedLexicalClassifications(text: java.lang.String, endOfLineState: EndOfLineState, syntacticClassifierAbsent: Boolean): Classifications = js.native
+  def getEncodedLexicalClassifications(text: java.lang.String, endOfLineState: EndOfLineState, syntacticClassifierAbsent: Boolean): Classifications
 }
 object Classifier {
   

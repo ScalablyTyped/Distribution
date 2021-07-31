@@ -2,41 +2,39 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeploymentResponse extends StObject {
   
   /**
     * Specifies whether a deployment was automatically released.
     */
-  var AutoDeployed: js.UndefOr[boolean] = js.native
+  var AutoDeployed: js.UndefOr[boolean] = js.undefined
   
   /**
     * The date and time when the Deployment resource was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.native
+  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The identifier for the deployment.
     */
-  var DeploymentId: js.UndefOr[Id] = js.native
+  var DeploymentId: js.UndefOr[Id] = js.undefined
   
   /**
     * The status of the deployment: PENDING, FAILED, or SUCCEEDED.
     */
-  var DeploymentStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DeploymentStatus] = js.native
+  var DeploymentStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DeploymentStatus] = js.undefined
   
   /**
     * May contain additional feedback on the status of an API deployment.
     */
-  var DeploymentStatusMessage: js.UndefOr[string] = js.native
+  var DeploymentStatusMessage: js.UndefOr[string] = js.undefined
   
   /**
     * The description for the deployment.
     */
-  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
 }
 object UpdateDeploymentResponse {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserMessage extends StObject {
   
   /**
     * Access permissions string used for this user account.
     */
-  var AccessString: typings.awsSdk.elasticacheMod.AccessString = js.native
+  var AccessString: typings.awsSdk.elasticacheMod.AccessString
   
   /**
     * Must be Redis. 
     */
-  var Engine: EngineType = js.native
+  var Engine: EngineType
   
   /**
     * Indicates a password is not required for this user account.
     */
-  var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.native
+  var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Passwords used for this user account. You can create up to two passwords for each user.
     */
-  var Passwords: js.UndefOr[PasswordListInput] = js.native
+  var Passwords: js.UndefOr[PasswordListInput] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var UserId: typings.awsSdk.elasticacheMod.UserId = js.native
+  var UserId: typings.awsSdk.elasticacheMod.UserId
   
   /**
     * The username of the user.
     */
-  var UserName: typings.awsSdk.elasticacheMod.UserName = js.native
+  var UserName: typings.awsSdk.elasticacheMod.UserName
 }
 object CreateUserMessage {
   

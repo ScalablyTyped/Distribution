@@ -3,19 +3,17 @@ package typings.aframe.anon
 import typings.tweenjsTweenJs.anon.Bernstein
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofInterpolation extends StObject {
   
-  def Bezier(v: js.Array[Double], k: Double): Double = js.native
+  def Bezier(v: js.Array[Double], k: Double): Double
   
-  def CatmullRom(v: js.Array[Double], k: Double): Double = js.native
+  def CatmullRom(v: js.Array[Double], k: Double): Double
   
-  def Linear(v: js.Array[Double], k: Double): Double = js.native
+  def Linear(v: js.Array[Double], k: Double): Double
   
-  var Utils: Bernstein = js.native
+  var Utils: Bernstein
 }
 object TypeofInterpolation {
   

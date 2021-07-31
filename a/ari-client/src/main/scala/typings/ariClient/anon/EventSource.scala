@@ -2,15 +2,13 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSource extends StObject {
   
-  var applicationName: String = js.native
+  var applicationName: String
   
-  var eventSource: String | js.Array[String] = js.native
+  var eventSource: String | js.Array[String]
 }
 object EventSource {
   

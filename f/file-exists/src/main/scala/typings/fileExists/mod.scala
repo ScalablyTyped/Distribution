@@ -3,46 +3,41 @@ package typings.fileExists
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("file-exists", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String): Unit = js.native
-  @JSImport("file-exists", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]): Unit = js.native
-  @JSImport("file-exists", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     filepath: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]
-  ): Unit = js.native
-  @JSImport("file-exists", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, options: Options): Unit = js.native
-  @JSImport("file-exists", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     filepath: String,
     options: Options,
     callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("file-exists", "sync")
+  @JSImport("file-exists", JSImport.Namespace)
   @js.native
-  def sync(filepath: String): Boolean = js.native
-  @JSImport("file-exists", "sync")
-  @js.native
-  def sync(filepath: String, options: Options): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sync(filepath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def sync(filepath: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait Options extends StObject {
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object Options {
     

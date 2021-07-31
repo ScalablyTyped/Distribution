@@ -3,7 +3,6 @@ package typings.inflection
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,12 +32,6 @@ object mod extends Shortcut {
     def humanize(str: String, low_first_letter: Boolean): String = js.native
     
     def indexOf[T, T2](arr: js.Array[T], item: T2): Double = js.native
-    def indexOf[T, T2](
-      arr: js.Array[T],
-      item: T2,
-      from_index: js.UndefOr[scala.Nothing],
-      compare_func: js.Function2[/* arr_item */ T, /* item */ T2, Boolean]
-    ): Double = js.native
     def indexOf[T, T2](arr: js.Array[T], item: T2, from_index: Double): Double = js.native
     def indexOf[T, T2](
       arr: js.Array[T],
@@ -46,11 +39,17 @@ object mod extends Shortcut {
       from_index: Double,
       compare_func: js.Function2[/* arr_item */ T, /* item */ T2, Boolean]
     ): Double = js.native
+    def indexOf[T, T2](
+      arr: js.Array[T],
+      item: T2,
+      from_index: Unit,
+      compare_func: js.Function2[/* arr_item */ T, /* item */ T2, Boolean]
+    ): Double = js.native
     
     def inflect(str: String, count: Double): String = js.native
-    def inflect(str: String, count: Double, singular: js.UndefOr[scala.Nothing], plural: String): String = js.native
     def inflect(str: String, count: Double, singular: String): String = js.native
     def inflect(str: String, count: Double, singular: String, plural: String): String = js.native
+    def inflect(str: String, count: Double, singular: Unit, plural: String): String = js.native
     
     def ordinalize(str: String): String = js.native
     

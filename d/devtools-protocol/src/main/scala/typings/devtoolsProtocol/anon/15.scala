@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.TakeHeapSnapshotRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[TakeHeapSnapshotRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[TakeHeapSnapshotRequest]]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `15` {
   

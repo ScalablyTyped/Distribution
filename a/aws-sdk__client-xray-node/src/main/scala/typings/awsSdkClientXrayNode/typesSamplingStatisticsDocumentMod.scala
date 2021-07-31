@@ -3,43 +3,41 @@ package typings.awsSdkClientXrayNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSamplingStatisticsDocumentMod {
   
-  @js.native
   trait SamplingStatisticsDocument extends StObject {
     
     /**
       * <p>The number of requests recorded with borrowed reservoir quota.</p>
       */
-    var BorrowCount: js.UndefOr[Double] = js.native
+    var BorrowCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>A unique identifier for the service in hexadecimal.</p>
       */
-    var ClientID: String = js.native
+    var ClientID: String
     
     /**
       * <p>The number of requests that matched the rule.</p>
       */
-    var RequestCount: Double = js.native
+    var RequestCount: Double
     
     /**
       * <p>The name of the sampling rule.</p>
       */
-    var RuleName: String = js.native
+    var RuleName: String
     
     /**
       * <p>The number of requests recorded.</p>
       */
-    var SampledCount: Double = js.native
+    var SampledCount: Double
     
     /**
       * <p>The current time.</p>
       */
-    var Timestamp: Date | String | Double = js.native
+    var Timestamp: Date | String | Double
   }
   object SamplingStatisticsDocument {
     
@@ -81,14 +79,15 @@ object typesSamplingStatisticsDocumentMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSamplingStatisticsDocument extends SamplingStatisticsDocument {
+  trait UnmarshalledSamplingStatisticsDocument
+    extends StObject
+       with SamplingStatisticsDocument {
     
     /**
       * <p>The current time.</p>
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledSamplingStatisticsDocument: Date = js.native
+    var Timestamp_UnmarshalledSamplingStatisticsDocument: Date
   }
   object UnmarshalledSamplingStatisticsDocument {
     

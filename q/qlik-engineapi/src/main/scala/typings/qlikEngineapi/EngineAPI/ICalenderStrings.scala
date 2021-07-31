@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CalenderStrings...
   */
-@js.native
 trait ICalenderStrings extends StObject {
   
   /**
     * List of short day names.
     */
-  var qDayNames: js.Array[String] = js.native
+  var qDayNames: js.Array[String]
   
   /**
     * List of long day names.
     */
-  var qLongDayNames: js.Array[String] = js.native
+  var qLongDayNames: js.Array[String]
   
   /**
     * List of long month names.
     */
-  var qLongMonthNames: js.Array[String] = js.native
+  var qLongMonthNames: js.Array[String]
   
   /**
     * List of short month names.
     */
-  var qMonthNames: js.Array[String] = js.native
+  var qMonthNames: js.Array[String]
 }
 object ICalenderStrings {
   

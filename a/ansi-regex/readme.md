@@ -10,9 +10,9 @@ Regular expression for matching ANSI escape codes
 | ------------------ | :-------------: |
 | Full name          | ansi-regex |
 | Keywords           | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, command-line, text, regex, regexp, re, match, test, find, pattern |
-| # releases         | 4 |
-| # dependents       | 313 |
-| # downloads        | 2229509237 |
+| # releases         | 3 |
+| # dependents       | 356 |
+| # downloads        | 2882004196 |
 | # stars            | 8 |
 
 ## Links

@@ -2,23 +2,21 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cx extends StObject {
   
-  var cx: Double = js.native
+  var cx: Double
   
-  var cy: Double = js.native
+  var cy: Double
   
-  var fill: String = js.native
+  var fill: String
   
-  var r: Double = js.native
+  var r: Double
   
-  var transform: String = js.native
+  var transform: String
   
-  var viewBox: String = js.native
+  var viewBox: String
 }
 object Cx {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterDeviceResponse extends StObject {
   
   /**
     * The unique ID generated for this device by Cognito.
     */
-  var DeviceId: js.UndefOr[typings.awsSdk.cognitosyncMod.DeviceId] = js.native
+  var DeviceId: js.UndefOr[typings.awsSdk.cognitosyncMod.DeviceId] = js.undefined
 }
 object RegisterDeviceResponse {
   

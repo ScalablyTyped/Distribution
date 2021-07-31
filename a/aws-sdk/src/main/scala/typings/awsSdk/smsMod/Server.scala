@@ -2,36 +2,34 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Server extends StObject {
   
   /**
     * The ID of the replication job.
     */
-  var replicationJobId: js.UndefOr[ReplicationJobId] = js.native
+  var replicationJobId: js.UndefOr[ReplicationJobId] = js.undefined
   
   /**
     * Indicates whether the replication job is deleted or failed.
     */
-  var replicationJobTerminated: js.UndefOr[ReplicationJobTerminated] = js.native
+  var replicationJobTerminated: js.UndefOr[ReplicationJobTerminated] = js.undefined
   
   /**
     * The ID of the server.
     */
-  var serverId: js.UndefOr[ServerId] = js.native
+  var serverId: js.UndefOr[ServerId] = js.undefined
   
   /**
     * The type of server.
     */
-  var serverType: js.UndefOr[ServerType] = js.native
+  var serverType: js.UndefOr[ServerType] = js.undefined
   
   /**
     * Information about the VM server.
     */
-  var vmServer: js.UndefOr[VmServer] = js.native
+  var vmServer: js.UndefOr[VmServer] = js.undefined
 }
 object Server {
   

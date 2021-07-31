@@ -2,15 +2,13 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOperationManagedZoneContext extends StObject {
   
-  var newValue: js.UndefOr[SchemaManagedZone] = js.native
+  var newValue: js.UndefOr[SchemaManagedZone] = js.undefined
   
-  var oldValue: js.UndefOr[SchemaManagedZone] = js.native
+  var oldValue: js.UndefOr[SchemaManagedZone] = js.undefined
 }
 object SchemaOperationManagedZoneContext {
   

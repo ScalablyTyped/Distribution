@@ -4,19 +4,17 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Convert extends StObject {
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var destination: js.UndefOr[Cartesian3 | typings.cesium.mod.Rectangle] = js.native
+  var destination: js.UndefOr[Cartesian3 | typings.cesium.mod.Rectangle] = js.undefined
   
-  var endTransform: js.UndefOr[Matrix4] = js.native
+  var endTransform: js.UndefOr[Matrix4] = js.undefined
   
-  var orientation: js.UndefOr[Direction | Heading] = js.native
+  var orientation: js.UndefOr[Direction | Heading] = js.undefined
 }
 object Convert {
   

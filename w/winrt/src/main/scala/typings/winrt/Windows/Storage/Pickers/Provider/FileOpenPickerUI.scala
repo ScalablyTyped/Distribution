@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileOpenPickerUI extends IFileOpenPickerUI
+trait FileOpenPickerUI
+  extends StObject
+     with IFileOpenPickerUI
 object FileOpenPickerUI {
   
   @scala.inline

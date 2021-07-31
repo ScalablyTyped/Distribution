@@ -40,19 +40,17 @@ import typings.std.MouseEvent
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
   
-  @js.native
   trait ACCESSIBILITY_TYPE extends StObject {
     
-    var menu: typings.baseui.baseuiStrings.menu = js.native
+    var menu: typings.baseui.baseuiStrings.menu
     
-    var none: typings.baseui.baseuiStrings.none = js.native
+    var none: typings.baseui.baseuiStrings.none
     
-    var tooltip: typings.baseui.baseuiStrings.tooltip = js.native
+    var tooltip: typings.baseui.baseuiStrings.tooltip
   }
   object ACCESSIBILITY_TYPE {
     
@@ -92,34 +90,33 @@ object popoverMod {
   @js.native
   val ARROW_WIDTH: Double = js.native
   
-  @js.native
   trait PLACEMENT extends StObject {
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var bottom: typings.baseui.baseuiStrings.bottom = js.native
+    var bottom: typings.baseui.baseuiStrings.bottom
     
-    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft = js.native
+    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft
     
-    var bottomRight: typings.baseui.baseuiStrings.bottomRight = js.native
+    var bottomRight: typings.baseui.baseuiStrings.bottomRight
     
-    var left: typings.baseui.baseuiStrings.left = js.native
+    var left: typings.baseui.baseuiStrings.left
     
-    var leftBottom: typings.baseui.baseuiStrings.leftBottom = js.native
+    var leftBottom: typings.baseui.baseuiStrings.leftBottom
     
-    var leftTop: typings.baseui.baseuiStrings.leftTop = js.native
+    var leftTop: typings.baseui.baseuiStrings.leftTop
     
-    var right: typings.baseui.baseuiStrings.right = js.native
+    var right: typings.baseui.baseuiStrings.right
     
-    var rightBottom: typings.baseui.baseuiStrings.rightBottom = js.native
+    var rightBottom: typings.baseui.baseuiStrings.rightBottom
     
-    var rightTop: typings.baseui.baseuiStrings.rightTop = js.native
+    var rightTop: typings.baseui.baseuiStrings.rightTop
     
-    var top: typings.baseui.baseuiStrings.top = js.native
+    var top: typings.baseui.baseuiStrings.top
     
-    var topLeft: typings.baseui.baseuiStrings.topLeft = js.native
+    var topLeft: typings.baseui.baseuiStrings.topLeft
     
-    var topRight: typings.baseui.baseuiStrings.topRight = js.native
+    var topRight: typings.baseui.baseuiStrings.topRight
   }
   object PLACEMENT {
     
@@ -249,12 +246,11 @@ object popoverMod {
     def triggerOnMouseLeaveWithDelay(): Unit = js.native
   }
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var close: typings.baseui.baseuiStrings.close = js.native
+    var close: typings.baseui.baseuiStrings.close
     
-    var open: typings.baseui.baseuiStrings.open = js.native
+    var open: typings.baseui.baseuiStrings.open
   }
   object STATE_CHANGE_TYPE {
     
@@ -330,12 +326,11 @@ object popoverMod {
   @js.native
   val StyledPadding: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait TRIGGER_TYPE extends StObject {
     
-    var click: typings.baseui.baseuiStrings.click = js.native
+    var click: typings.baseui.baseuiStrings.click
     
-    var hover: typings.baseui.baseuiStrings.hover = js.native
+    var hover: typings.baseui.baseuiStrings.hover
   }
   object TRIGGER_TYPE {
     
@@ -354,46 +349,45 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait BasePopoverProps extends StObject {
     
-    var accessibilityType: js.UndefOr[none | menu | tooltip] = js.native
+    var accessibilityType: js.UndefOr[none | menu | tooltip] = js.undefined
     
-    var animateOutTime: js.UndefOr[Double] = js.native
+    var animateOutTime: js.UndefOr[Double] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var `data-baseweb`: js.UndefOr[String] = js.undefined
     
-    var focusLock: js.UndefOr[Boolean] = js.native
+    var focusLock: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var ignoreBoundary: js.UndefOr[Boolean] = js.native
+    var ignoreBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var mountNode: js.UndefOr[HTMLElement] = js.native
+    var mountNode: js.UndefOr[HTMLElement] = js.undefined
     
-    var onMouseEnterDelay: js.UndefOr[Double] = js.native
+    var onMouseEnterDelay: js.UndefOr[Double] = js.undefined
     
-    var onMouseLeaveDelay: js.UndefOr[Double] = js.native
+    var onMouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
-    var overrides: js.UndefOr[PopoverOverrides] = js.native
+    var overrides: js.UndefOr[PopoverOverrides] = js.undefined
     
     var placement: js.UndefOr[
         topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ] = js.native
+      ] = js.undefined
     
-    var popoverMargin: js.UndefOr[Double] = js.native
+    var popoverMargin: js.UndefOr[Double] = js.undefined
     
-    var popperOptions: js.UndefOr[js.Any] = js.native
+    var popperOptions: js.UndefOr[js.Any] = js.undefined
     
-    var renderAll: js.UndefOr[Boolean] = js.native
+    var renderAll: js.UndefOr[Boolean] = js.undefined
     
-    var returnFocus: js.UndefOr[Boolean] = js.native
+    var returnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var showArrow: js.UndefOr[Boolean] = js.native
+    var showArrow: js.UndefOr[Boolean] = js.undefined
     
-    var triggerType: js.UndefOr[click | hover] = js.native
+    var triggerType: js.UndefOr[click | hover] = js.undefined
   }
   object BasePopoverProps {
     
@@ -518,12 +512,11 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Offset {
     
@@ -544,20 +537,19 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait PopoverOverrides extends StObject {
     
     var Arrow: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Body: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Inner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PopoverOverrides {
     
@@ -596,20 +588,19 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait PopoverPrivateState extends StObject {
     
-    var arrowOffset: Offset = js.native
+    var arrowOffset: Offset
     
-    var isAnimating: Boolean = js.native
+    var isAnimating: Boolean
     
-    var isLayerMounted: Boolean = js.native
+    var isLayerMounted: Boolean
     
-    var isMounted: Boolean = js.native
+    var isMounted: Boolean
     
-    var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = js.native
+    var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
     
-    var popoverOffset: Offset = js.native
+    var popoverOffset: Offset
   }
   object PopoverPrivateState {
     
@@ -651,67 +642,29 @@ object popoverMod {
     }
   }
   
-  /* Inlined baseui.baseui/popover.BasePopoverProps & {  children :react.react.ReactNode,   content :react.react.ReactNode | (): react.react.ReactNode,   isOpen :boolean,   onBlur :(): any | undefined,   onClick :(e : std.Event): any | undefined,   onClickOutside :(event : std.MouseEvent): any | undefined,   onEsc :(): any | undefined,   onFocus :(): any | undefined,   onMouseEnter :(): any | undefined,   onMouseLeave :(): any | undefined} */
-  @js.native
-  trait PopoverProps extends StObject {
+  trait PopoverProps
+    extends StObject
+       with BasePopoverProps {
     
-    var accessibilityType: js.UndefOr[none | menu | tooltip] = js.native
+    var children: ReactNode
     
-    var animateOutTime: js.UndefOr[Double] = js.native
+    var content: ReactNode | js.Function0[ReactNode]
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var isOpen: Boolean
     
-    var children: ReactNode = js.native
+    var onBlur: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var content: ReactNode | js.Function0[ReactNode] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent, js.Any]] = js.undefined
     
-    var focusLock: js.UndefOr[Boolean] = js.native
+    var onEsc: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var onFocus: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var ignoreBoundary: js.UndefOr[Boolean] = js.native
+    var onMouseEnter: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var isOpen: Boolean = js.native
-    
-    var mountNode: js.UndefOr[HTMLElement] = js.native
-    
-    var onBlur: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onClick: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
-    
-    var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent, _]] = js.native
-    
-    var onEsc: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onFocus: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onMouseEnter: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onMouseEnterDelay: js.UndefOr[Double] = js.native
-    
-    var onMouseLeave: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onMouseLeaveDelay: js.UndefOr[Double] = js.native
-    
-    var overrides: js.UndefOr[PopoverOverrides] = js.native
-    
-    var placement: js.UndefOr[
-        topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ] = js.native
-    
-    var popoverMargin: js.UndefOr[Double] = js.native
-    
-    var popperOptions: js.UndefOr[js.Any] = js.native
-    
-    var renderAll: js.UndefOr[Boolean] = js.native
-    
-    var returnFocus: js.UndefOr[Boolean] = js.native
-    
-    var showArrow: js.UndefOr[Boolean] = js.native
-    
-    var triggerType: js.UndefOr[click | hover] = js.native
+    var onMouseLeave: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object PopoverProps {
     
@@ -723,24 +676,6 @@ object popoverMod {
     
     @scala.inline
     implicit class PopoverPropsMutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAccessibilityType(value: none | menu | tooltip): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAccessibilityTypeUndefined: Self = StObject.set(x, "accessibilityType", js.undefined)
-      
-      @scala.inline
-      def setAnimateOutTime(value: Double): Self = StObject.set(x, "animateOutTime", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimateOutTimeUndefined: Self = StObject.set(x, "animateOutTime", js.undefined)
-      
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -758,49 +693,19 @@ object popoverMod {
       def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       @scala.inline
-      def `setData-baseweb`(value: String): Self = StObject.set(x, "data-baseweb", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
-      
-      @scala.inline
-      def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusLockUndefined: Self = StObject.set(x, "focusLock", js.undefined)
-      
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      @scala.inline
-      def setIgnoreBoundary(value: Boolean): Self = StObject.set(x, "ignoreBoundary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIgnoreBoundaryUndefined: Self = StObject.set(x, "ignoreBoundary", js.undefined)
-      
-      @scala.inline
       def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
-      
-      @scala.inline
-      def setOnBlur(value: () => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* e */ Event => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* e */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnClickOutside(value: /* event */ MouseEvent => _): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      def setOnClickOutside(value: /* event */ MouseEvent => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
@@ -809,118 +714,55 @@ object popoverMod {
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnEsc(value: () => _): Self = StObject.set(x, "onEsc", js.Any.fromFunction0(value))
+      def setOnEsc(value: () => js.Any): Self = StObject.set(x, "onEsc", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: () => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+      def setOnFocus(value: () => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnMouseEnter(value: () => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setOnMouseEnterDelay(value: Double): Self = StObject.set(x, "onMouseEnterDelay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnMouseEnterDelayUndefined: Self = StObject.set(x, "onMouseEnterDelay", js.undefined)
+      def setOnMouseEnter(value: () => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
       @scala.inline
-      def setOnMouseLeave(value: () => _): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setOnMouseLeaveDelay(value: Double): Self = StObject.set(x, "onMouseLeaveDelay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnMouseLeaveDelayUndefined: Self = StObject.set(x, "onMouseLeaveDelay", js.undefined)
+      def setOnMouseLeave(value: () => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
-      
-      @scala.inline
-      def setOverrides(value: PopoverOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      @scala.inline
-      def setPlacement(
-        value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
-      
-      @scala.inline
-      def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
-      
-      @scala.inline
-      def setPopperOptions(value: js.Any): Self = StObject.set(x, "popperOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPopperOptionsUndefined: Self = StObject.set(x, "popperOptions", js.undefined)
-      
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
-      
-      @scala.inline
-      def setReturnFocus(value: Boolean): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
-      
-      @scala.inline
-      def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
-      
-      @scala.inline
-      def setTriggerType(value: click | hover): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
     }
   }
   
-  @js.native
   trait SharedStylePropsArg extends StObject {
     
     @JSName("$arrowOffset")
-    var $arrowOffset: js.UndefOr[Offset] = js.native
+    var $arrowOffset: js.UndefOr[Offset] = js.undefined
     
     @JSName("$isAnimating")
-    var $isAnimating: js.UndefOr[Boolean] = js.native
+    var $isAnimating: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isOpen")
-    var $isOpen: js.UndefOr[Boolean] = js.native
+    var $isOpen: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$placement")
     var $placement: js.UndefOr[
         topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ] = js.native
+      ] = js.undefined
     
     @JSName("$popoverMargin")
-    var $popoverMargin: js.UndefOr[Double] = js.native
+    var $popoverMargin: js.UndefOr[Double] = js.undefined
     
     @JSName("$popoverOffset")
-    var $popoverOffset: js.UndefOr[Offset] = js.native
+    var $popoverOffset: js.UndefOr[Offset] = js.undefined
     
     @JSName("$showArrow")
-    var $showArrow: js.UndefOr[Boolean] = js.native
+    var $showArrow: js.UndefOr[Boolean] = js.undefined
   }
   object SharedStylePropsArg {
     
@@ -979,10 +821,9 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object State {
     
@@ -1038,13 +879,13 @@ object popoverMod {
     
     var mountNode: js.UndefOr[HTMLElement] = js.native
     
-    var onClose: js.UndefOr[js.Function0[_]] = js.native
+    var onClose: js.UndefOr[js.Function0[js.Any]] = js.native
     
     var onMouseEnterDelay: js.UndefOr[Double] = js.native
     
     var onMouseLeaveDelay: js.UndefOr[Double] = js.native
     
-    var onOpen: js.UndefOr[js.Function0[_]] = js.native
+    var onOpen: js.UndefOr[js.Function0[js.Any]] = js.native
     
     var overrides: js.UndefOr[PopoverOverrides] = js.native
     
@@ -1067,63 +908,25 @@ object popoverMod {
     var triggerType: js.UndefOr[click | hover] = js.native
   }
   
-  /* Inlined baseui.baseui/popover.BasePopoverProps & {  children :react.react.ReactNode | undefined,   content :react.react.ReactNode | (args : {close (): void}): react.react.ReactNode | undefined,   dismissOnClickOutside :boolean | undefined,   dismissOnEsc :boolean | undefined,   initialState :baseui.baseui/popover.State | undefined,   onClose :(): any | undefined,   onOpen :(): any | undefined,   stateReducer :baseui.baseui/popover.StateReducer | undefined} */
-  @js.native
-  trait StatefulPopoverProps extends StObject {
+  trait StatefulPopoverProps
+    extends StObject
+       with BasePopoverProps {
     
-    var accessibilityType: js.UndefOr[none | menu | tooltip] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var animateOutTime: js.UndefOr[Double] = js.native
+    var content: js.UndefOr[ReactNode | (js.Function1[/* args */ Close, ReactNode])] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var dismissOnClickOutside: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var dismissOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[ReactNode | (js.Function1[/* args */ Close, ReactNode])] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var onClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var dismissOnClickOutside: js.UndefOr[Boolean] = js.native
+    var onOpen: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var dismissOnEsc: js.UndefOr[Boolean] = js.native
-    
-    var focusLock: js.UndefOr[Boolean] = js.native
-    
-    var id: js.UndefOr[String] = js.native
-    
-    var ignoreBoundary: js.UndefOr[Boolean] = js.native
-    
-    var initialState: js.UndefOr[State] = js.native
-    
-    var mountNode: js.UndefOr[HTMLElement] = js.native
-    
-    var onClose: js.UndefOr[js.Function0[_]] = js.native
-    
-    var onMouseEnterDelay: js.UndefOr[Double] = js.native
-    
-    var onMouseLeaveDelay: js.UndefOr[Double] = js.native
-    
-    var onOpen: js.UndefOr[js.Function0[_]] = js.native
-    
-    var overrides: js.UndefOr[PopoverOverrides] = js.native
-    
-    var placement: js.UndefOr[
-        topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ] = js.native
-    
-    var popoverMargin: js.UndefOr[Double] = js.native
-    
-    var popperOptions: js.UndefOr[js.Any] = js.native
-    
-    var renderAll: js.UndefOr[Boolean] = js.native
-    
-    var returnFocus: js.UndefOr[Boolean] = js.native
-    
-    var showArrow: js.UndefOr[Boolean] = js.native
-    
-    var stateReducer: js.UndefOr[StateReducer] = js.native
-    
-    var triggerType: js.UndefOr[click | hover] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulPopoverProps {
     
@@ -1135,24 +938,6 @@ object popoverMod {
     
     @scala.inline
     implicit class StatefulPopoverPropsMutableBuilder[Self <: StatefulPopoverProps] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAccessibilityType(value: none | menu | tooltip): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAccessibilityTypeUndefined: Self = StObject.set(x, "accessibilityType", js.undefined)
-      
-      @scala.inline
-      def setAnimateOutTime(value: Double): Self = StObject.set(x, "animateOutTime", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimateOutTimeUndefined: Self = StObject.set(x, "animateOutTime", js.undefined)
-      
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -1170,12 +955,6 @@ object popoverMod {
       def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       @scala.inline
-      def `setData-baseweb`(value: String): Self = StObject.set(x, "data-baseweb", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
-      
-      @scala.inline
       def setDismissOnClickOutside(value: Boolean): Self = StObject.set(x, "dismissOnClickOutside", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -1188,102 +967,22 @@ object popoverMod {
       def setDismissOnEscUndefined: Self = StObject.set(x, "dismissOnEsc", js.undefined)
       
       @scala.inline
-      def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusLockUndefined: Self = StObject.set(x, "focusLock", js.undefined)
-      
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      @scala.inline
-      def setIgnoreBoundary(value: Boolean): Self = StObject.set(x, "ignoreBoundary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIgnoreBoundaryUndefined: Self = StObject.set(x, "ignoreBoundary", js.undefined)
-      
-      @scala.inline
       def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
       @scala.inline
-      def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
-      
-      @scala.inline
-      def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnMouseEnterDelay(value: Double): Self = StObject.set(x, "onMouseEnterDelay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnMouseEnterDelayUndefined: Self = StObject.set(x, "onMouseEnterDelay", js.undefined)
-      
-      @scala.inline
-      def setOnMouseLeaveDelay(value: Double): Self = StObject.set(x, "onMouseLeaveDelay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnMouseLeaveDelayUndefined: Self = StObject.set(x, "onMouseLeaveDelay", js.undefined)
-      
-      @scala.inline
-      def setOnOpen(value: () => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      def setOnOpen(value: () => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
-      
-      @scala.inline
-      def setOverrides(value: PopoverOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      @scala.inline
-      def setPlacement(
-        value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
-      
-      @scala.inline
-      def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
-      
-      @scala.inline
-      def setPopperOptions(value: js.Any): Self = StObject.set(x, "popperOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPopperOptionsUndefined: Self = StObject.set(x, "popperOptions", js.undefined)
-      
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
-      
-      @scala.inline
-      def setReturnFocus(value: Boolean): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
-      
-      @scala.inline
-      def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
       @scala.inline
       def setStateReducer(
@@ -1292,12 +991,6 @@ object popoverMod {
       
       @scala.inline
       def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
-      
-      @scala.inline
-      def setTriggerType(value: click | hover): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
     }
   }
 }

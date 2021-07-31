@@ -5,21 +5,22 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SyntaxKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertAstMod {
   
-  @JSImport("tsutils/util/convert-ast", "convertAst")
+  @JSImport("tsutils/util/convert-ast", JSImport.Namespace)
   @js.native
-  def convertAst(sourceFile: SourceFile): ConvertedAst = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def convertAst(sourceFile: SourceFile): ConvertedAst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertAst")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[ConvertedAst]
+  
   trait ConvertedAst extends StObject {
     
-    var flat: js.Array[Node] = js.native
+    var flat: js.Array[Node]
     
-    var wrapped: WrappedAst = js.native
+    var wrapped: WrappedAst
   }
   object ConvertedAst {
     
@@ -43,20 +44,19 @@ object convertAstMod {
     }
   }
   
-  @js.native
   trait NodeWrap extends StObject {
     
-    var children: js.Array[NodeWrap] = js.native
+    var children: js.Array[NodeWrap]
     
-    var kind: SyntaxKind = js.native
+    var kind: SyntaxKind
     
-    var next: js.UndefOr[NodeWrap] = js.native
+    var next: js.UndefOr[NodeWrap] = js.undefined
     
-    var node: Node = js.native
+    var node: Node
     
-    var parent: js.UndefOr[NodeWrap] = js.native
+    var parent: js.UndefOr[NodeWrap] = js.undefined
     
-    var skip: js.UndefOr[NodeWrap] = js.native
+    var skip: js.UndefOr[NodeWrap] = js.undefined
   }
   object NodeWrap {
     
@@ -101,26 +101,34 @@ object convertAstMod {
     }
   }
   
-  @js.native
-  trait WrappedAst extends NodeWrap {
+  trait WrappedAst
+    extends StObject
+       with NodeWrap {
     
     @JSName("next")
-    var next_WrappedAst: NodeWrap = js.native
+    var next_WrappedAst: NodeWrap
     
     @JSName("node")
-    var node_WrappedAst: SourceFile = js.native
+    var node_WrappedAst: SourceFile
     
     @JSName("parent")
-    var parent_WrappedAst: js.UndefOr[scala.Nothing] = js.native
+    var parent_WrappedAst: Unit
     
     @JSName("skip")
-    var skip_WrappedAst: js.UndefOr[scala.Nothing] = js.native
+    var skip_WrappedAst: Unit
   }
   object WrappedAst {
     
     @scala.inline
-    def apply(children: js.Array[NodeWrap], kind: SyntaxKind, next: NodeWrap, node: SourceFile): WrappedAst = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    def apply(
+      children: js.Array[NodeWrap],
+      kind: SyntaxKind,
+      next: NodeWrap,
+      node: SourceFile,
+      parent: Unit,
+      skip: Unit
+    ): WrappedAst = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedAst]
     }
     
@@ -132,6 +140,12 @@ object convertAstMod {
       
       @scala.inline
       def setNode(value: SourceFile): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParent(value: Unit): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSkip(value: Unit): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
 }

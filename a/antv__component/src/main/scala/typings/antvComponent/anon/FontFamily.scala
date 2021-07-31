@@ -2,21 +2,19 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFamily extends StObject {
   
-  var fill: String = js.native
+  var fill: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var textAlign: String = js.native
+  var textAlign: String
 }
 object FontFamily {
   

@@ -6,29 +6,27 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT_BO
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT_TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisLimitLine extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelPosition: js.UndefOr[LEFT_TOP | LEFT_BOTTOM | RIGHT_TOP | RIGHT_BOTTOM] = js.native
+  var labelPosition: js.UndefOr[LEFT_TOP | LEFT_BOTTOM | RIGHT_TOP | RIGHT_BOTTOM] = js.undefined
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var lineColor: js.UndefOr[Color] = js.native
+  var lineColor: js.UndefOr[Color] = js.undefined
   
-  var lineDashLengths: js.UndefOr[js.Array[Double]] = js.native
+  var lineDashLengths: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineDashPhase: js.UndefOr[Double] = js.native
+  var lineDashPhase: js.UndefOr[Double] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var valueFont: js.UndefOr[String] = js.native
+  var valueFont: js.UndefOr[String] = js.undefined
   
-  var valueTextColor: js.UndefOr[Color] = js.native
+  var valueTextColor: js.UndefOr[Color] = js.undefined
 }
 object AxisLimitLine {
   

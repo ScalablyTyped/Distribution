@@ -2,31 +2,29 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rich Media Exit Override.
   */
-@js.native
 trait SchemaRichMediaExitOverride extends StObject {
   
   /**
     * Click-through URL of this rich media exit override. Applicable if the
     * enabled field is set to true.
     */
-  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.native
+  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.undefined
   
   /**
     * Whether to use the clickThroughUrl. If false, the creative-level exit
     * will be used.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID for the override to refer to a specific exit in the creative.
     */
-  var exitId: js.UndefOr[String] = js.native
+  var exitId: js.UndefOr[String] = js.undefined
 }
 object SchemaRichMediaExitOverride {
   

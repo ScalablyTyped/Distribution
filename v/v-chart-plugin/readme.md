@@ -10,9 +10,9 @@ This plugin is designed to allow Vue.js developers to incorporate fully reactive
 | ------------------ | :-------------: |
 | Full name          | v-chart-plugin |
 | Keywords           | vue, d3, graphs, charts, data, data visualization, vue.js, d3.js, plugin |
-| # releases         | 25 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4718 |
+| # downloads        | 3071 |
 | # stars            | 0 |
 
 ## Links

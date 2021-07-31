@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.LayoutData")
 @js.native
 class LayoutData protected ()
-  extends typings.openui5.sap.ui.core.LayoutData {
+  extends StObject
+     with typings.openui5.sap.ui.core.LayoutData {
   /**
     * Constructor for a new LayoutData.
     * @param sId id for the new control, generated automatically if no id is given

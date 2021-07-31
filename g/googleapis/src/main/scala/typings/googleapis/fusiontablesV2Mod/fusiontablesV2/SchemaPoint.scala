@@ -2,24 +2,22 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a point object.
   */
-@js.native
 trait SchemaPoint extends StObject {
   
   /**
     * The coordinates that define the point.
     */
-  var coordinates: js.UndefOr[js.Array[Double]] = js.native
+  var coordinates: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Point: A point geometry.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaPoint {
   

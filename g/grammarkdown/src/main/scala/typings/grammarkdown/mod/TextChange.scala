@@ -3,24 +3,23 @@ package typings.grammarkdown.mod
 import typings.grammarkdown.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextChange {
   
-  @JSImport("grammarkdown", "TextChange.applyChange")
+  @JSImport("grammarkdown", "TextChange")
   @js.native
-  def applyChange(originalText: String, change: typings.grammarkdown.parserMod.TextChange): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("grammarkdown", "TextChange.clone")
-  @js.native
-  def clone_(change: typings.grammarkdown.parserMod.TextChange): Text = js.native
+  @scala.inline
+  def applyChange(originalText: String, change: typings.grammarkdown.parserMod.TextChange): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(originalText.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("grammarkdown", "TextChange.create")
-  @js.native
-  def create(text: String, range: typings.grammarkdown.typesMod.Range): Text = js.native
+  @scala.inline
+  def clone_(change: typings.grammarkdown.parserMod.TextChange): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(change.asInstanceOf[js.Any]).asInstanceOf[Text]
   
-  @JSImport("grammarkdown", "TextChange.isUnchanged")
-  @js.native
-  def isUnchanged(change: typings.grammarkdown.parserMod.TextChange): Boolean = js.native
+  @scala.inline
+  def create(text: String, range: typings.grammarkdown.typesMod.Range): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Text]
+  
+  @scala.inline
+  def isUnchanged(change: typings.grammarkdown.parserMod.TextChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnchanged")(change.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

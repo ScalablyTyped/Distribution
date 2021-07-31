@@ -5,28 +5,27 @@ import typings.std.PropertyKey
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quoteMod {
+  
+  @JSImport("javascript-stringify/dist/quote", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("javascript-stringify/dist/quote", "IS_VALID_IDENTIFIER")
   @js.native
   val IS_VALID_IDENTIFIER: RegExp = js.native
   
-  @JSImport("javascript-stringify/dist/quote", "isValidVariableName")
-  @js.native
-  def isValidVariableName(name: PropertyKey): /* is string */ Boolean = js.native
+  @scala.inline
+  def isValidVariableName(name: PropertyKey): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("javascript-stringify/dist/quote", "quoteKey")
-  @js.native
-  def quoteKey(key: PropertyKey, next: Next): js.UndefOr[String] = js.native
+  @scala.inline
+  def quoteKey(key: PropertyKey, next: Next): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("quoteKey")(key.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("javascript-stringify/dist/quote", "quoteString")
-  @js.native
-  def quoteString(str: String): String = js.native
+  @scala.inline
+  def quoteString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("javascript-stringify/dist/quote", "stringifyPath")
-  @js.native
-  def stringifyPath(path: js.Array[PropertyKey], next: Next): String = js.native
+  @scala.inline
+  def stringifyPath(path: js.Array[PropertyKey], next: Next): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPath")(path.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
 }

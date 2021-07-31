@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaOptions extends StObject {
   
-  var albumsControl: js.UndefOr[Boolean] = js.native
+  var albumsControl: js.UndefOr[Boolean] = js.undefined
   
-  var albumsControlOptions: js.UndefOr[AlbumsControlOptions] = js.native
+  var albumsControlOptions: js.UndefOr[AlbumsControlOptions] = js.undefined
   
-  var indoorSceneSwitchControl: js.UndefOr[Boolean] = js.native
+  var indoorSceneSwitchControl: js.UndefOr[Boolean] = js.undefined
   
-  var linksControl: js.UndefOr[Boolean] = js.native
+  var linksControl: js.UndefOr[Boolean] = js.undefined
   
-  var navigationControl: js.UndefOr[Boolean] = js.native
+  var navigationControl: js.UndefOr[Boolean] = js.undefined
 }
 object PanoramaOptions {
   

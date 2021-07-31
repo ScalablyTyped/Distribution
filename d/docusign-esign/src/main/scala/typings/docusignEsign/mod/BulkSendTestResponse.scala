@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendTestResponse extends StObject {
   
   /**
@@ -15,19 +13,19 @@ trait BulkSendTestResponse extends StObject {
     *
     * [BulkSendRequest]: ./createBulkSendRequest.html
     */
-  var canBeSent: js.UndefOr[Boolean] = js.native
+  var canBeSent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Human-readable details about any validation errors that occurred.
     */
-  var validationErrorDetails: js.UndefOr[js.Array[String]] = js.native
+  var validationErrorDetails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of validation errors that were encountered during the bulk send test.
     *
     * **Note**: This information is intended to be parsed by machine.
     */
-  var validationErrors: js.UndefOr[js.Array[String]] = js.native
+  var validationErrors: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BulkSendTestResponse {
   

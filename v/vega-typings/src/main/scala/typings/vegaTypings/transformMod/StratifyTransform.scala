@@ -3,24 +3,24 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.vegaTypingsStrings.stratify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StratifyTransform extends _Transforms {
+trait StratifyTransform
+  extends StObject
+     with _Transforms {
   
-  var key: FieldRef = js.native
+  var key: FieldRef
   
-  var parentKey: FieldRef = js.native
+  var parentKey: FieldRef
   
-  var `type`: stratify = js.native
+  var `type`: stratify
 }
 object StratifyTransform {
   
   @scala.inline
-  def apply(key: FieldRef, parentKey: FieldRef, `type`: stratify): StratifyTransform = {
+  def apply(key: FieldRef, parentKey: FieldRef): StratifyTransform = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parentKey = parentKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stratify")
     __obj.asInstanceOf[StratifyTransform]
   }
   

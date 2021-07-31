@@ -4,49 +4,47 @@ import typings.typescriptServices.TypeScript.SyntaxKind
 import typings.typescriptServices.TypeScript.SyntaxNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndentationNodeContext extends StObject {
   
-  var _childIndentationAmountDelta: js.Any = js.native
+  var _childIndentationAmountDelta: js.Any
   
-  var _depth: js.Any = js.native
+  var _depth: js.Any
   
-  var _fullStart: js.Any = js.native
+  var _fullStart: js.Any
   
-  var _hasSkippedOrMissingTokenChild: js.Any = js.native
+  var _hasSkippedOrMissingTokenChild: js.Any
   
-  var _indentationAmount: js.Any = js.native
+  var _indentationAmount: js.Any
   
-  var _node: js.Any = js.native
+  var _node: js.Any
   
-  var _parent: js.Any = js.native
+  var _parent: js.Any
   
-  def childIndentationAmountDelta(): Double = js.native
+  def childIndentationAmountDelta(): Double
   
-  def clone(pool: IndentationNodeContextPool): IndentationNodeContext = js.native
+  def clone(pool: IndentationNodeContextPool): IndentationNodeContext
   
-  def depth(): Double = js.native
+  def depth(): Double
   
-  def end(): Double = js.native
+  def end(): Double
   
-  def fullStart(): Double = js.native
+  def fullStart(): Double
   
-  def fullWidth(): Double = js.native
+  def fullWidth(): Double
   
-  def hasSkippedOrMissingTokenChild(): Boolean = js.native
+  def hasSkippedOrMissingTokenChild(): Boolean
   
-  def indentationAmount(): Double = js.native
+  def indentationAmount(): Double
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
   
-  def node(): SyntaxNode = js.native
+  def node(): SyntaxNode
   
-  def parent(): IndentationNodeContext = js.native
+  def parent(): IndentationNodeContext
   
-  def start(): Double = js.native
+  def start(): Double
   
   def update(
     parent: IndentationNodeContext,
@@ -54,7 +52,7 @@ trait IndentationNodeContext extends StObject {
     fullStart: Double,
     indentationAmount: Double,
     childIndentationAmountDelta: Double
-  ): Unit = js.native
+  ): Unit
 }
 object IndentationNodeContext {
   

@@ -2,19 +2,17 @@ package typings.jsonpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Floats extends StObject {
     
-    var floats: js.Array[Double] = js.native
+    var floats: js.Array[Double]
     
-    var integers: js.Array[Double] = js.native
+    var integers: js.Array[Double]
     
-    var strings: js.Array[String] = js.native
+    var strings: js.Array[String]
   }
   object Floats {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Index {
     

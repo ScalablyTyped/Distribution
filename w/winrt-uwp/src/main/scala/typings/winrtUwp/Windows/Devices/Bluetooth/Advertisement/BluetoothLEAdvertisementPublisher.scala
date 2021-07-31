@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to send Bluetooth Low Energy (LE) advertisements. */
 @js.native
 trait BluetoothLEAdvertisementPublisher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statuschanged(
     `type`: statuschanged,
@@ -28,7 +27,7 @@ trait BluetoothLEAdvertisementPublisher extends StObject {
   
   /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
   def onstatuschanged(
-    ev: BluetoothLEAdvertisementPublisherStatusChangedEventArgs with WinRTEvent[BluetoothLEAdvertisementPublisher]
+    ev: BluetoothLEAdvertisementPublisherStatusChangedEventArgs & WinRTEvent[BluetoothLEAdvertisementPublisher]
   ): Unit = js.native
   /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
   @JSName("onstatuschanged")
@@ -37,7 +36,7 @@ trait BluetoothLEAdvertisementPublisher extends StObject {
     BluetoothLEAdvertisementPublisherStatusChangedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(
     `type`: statuschanged,

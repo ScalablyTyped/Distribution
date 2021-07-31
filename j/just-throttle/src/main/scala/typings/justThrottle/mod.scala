@@ -4,21 +4,20 @@ import typings.justThrottle.justThrottleBooleans.`false`
 import typings.justThrottle.justThrottleBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(fn: js.Function1[/* repeated */ js.Any, js.Any], interval: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply(fn: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, callFirst: `false`): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply[T](fn: T, interval: Double): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def apply[T](fn: T, interval: Double, callFirst: `true`): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   @JSImport("just-throttle", JSImport.Namespace)
   @js.native
-  def apply(fn: js.Function1[/* repeated */ js.Any, _], interval: Double): js.Function0[Unit] = js.native
-  @JSImport("just-throttle", JSImport.Namespace)
-  @js.native
-  def apply(fn: js.Function1[/* repeated */ js.Any, _], interval: Double, callFirst: `false`): js.Function0[Unit] = js.native
-  @JSImport("just-throttle", JSImport.Namespace)
-  @js.native
-  def apply[T](fn: T, interval: Double): T = js.native
-  @JSImport("just-throttle", JSImport.Namespace)
-  @js.native
-  def apply[T](fn: T, interval: Double, callFirst: `true`): T = js.native
+  val ^ : js.Any = js.native
 }

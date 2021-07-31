@@ -2,20 +2,18 @@ package typings.jqueryTimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerOptions extends StObject {
   
   /** Selector for an alternate field to store selected time into */
-  var altField: js.UndefOr[String] = js.native
+  var altField: js.UndefOr[String] = js.undefined
   
   /** Define the locale text for periods. */
-  var amPmText: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var amPmText: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
   /** Display text following the input box, e.g. showing the format */
-  var appendText: js.UndefOr[String] = js.native
+  var appendText: js.UndefOr[String] = js.undefined
   
   /**
     * Position of the input element to match
@@ -23,113 +21,113 @@ trait TimePickerOptions extends StObject {
     * Note : if the position utility is not loaded, the timepicker will attach left top to left bottom
     * See the position utility for more info : http://jqueryui.com/demos/position/
     */
-  var atPosition: js.UndefOr[String] = js.native
+  var atPosition: js.UndefOr[String] = js.undefined
   
   /** Define a callback function executed before the timepicker is shown */
-  var beforeShow: js.UndefOr[js.Function0[_]] = js.native
+  var beforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /**
     * 'button' element that will trigger the timepicker.
     *
     * "button" for trigger button, or "both" for either (not yet implemented).
     */
-  var button: js.UndefOr[String] = js.native
+  var button: js.UndefOr[String] = js.undefined
   
   /** Text for the confirmation button (ok button).*/
-  var closeButtonText: js.UndefOr[String] = js.native
+  var closeButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Used as default time when input field is empty or for inline timePicker
     * (set to 'now' for the current time, '' for no highlighted time)
     **/
-  var defaultTime: js.UndefOr[String] = js.native
+  var defaultTime: js.UndefOr[String] = js.undefined
   
   /** Text for the deselect button */
-  var deselectButtonText: js.UndefOr[String] = js.native
+  var deselectButtonText: js.UndefOr[String] = js.undefined
   
   // Localization
   /** Define the locale text for "Hours" */
-  var hourText: js.UndefOr[String] = js.native
+  var hourText: js.UndefOr[String] = js.undefined
   
-  var hours: js.UndefOr[TimePickerHour] = js.native
+  var hours: js.UndefOr[TimePickerHour] = js.undefined
   
   /** Define the locale text for "Minute" */
-  var minuteText: js.UndefOr[String] = js.native
+  var minuteText: js.UndefOr[String] = js.undefined
   
-  var minutes: js.UndefOr[TimePickerMinutes] = js.native
+  var minutes: js.UndefOr[TimePickerMinutes] = js.undefined
   
   /**
     * Position of the dialog relative to the input.
     *
     * See the position utility for more info : http://jqueryui.com/demos/position/
     */
-  var myPosition: js.UndefOr[String] = js.native
+  var myPosition: js.UndefOr[String] = js.undefined
   
   /** Text for the 'now' button.*/
-  var nowButtonText: js.UndefOr[String] = js.native
+  var nowButtonText: js.UndefOr[String] = js.undefined
   
   /** Define a callback function when the timepicker is closed */
-  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, _]] = js.native
+  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, js.Any]] = js.undefined
   
   //NEW: 2011-02-03
   /** callback for enabling / disabling on selectable hours  ex : function(hour) { return true; } */
-  var onHourShow: js.UndefOr[js.Function0[_]] = js.native
+  var onHourShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** callback for enabling / disabling on time selection  ex : function(hour,minute) { return true; } */
-  var onMinuteShow: js.UndefOr[js.Function0[_]] = js.native
+  var onMinuteShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** Define a callback function when a hour / minutes is selected */
-  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, _]] = js.native
+  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, js.Any]] = js.undefined
   
   /** optionally parse inputs of whole hours with minutes omitted */
-  var optionalMinutes: js.UndefOr[Boolean] = js.native
+  var optionalMinutes: js.UndefOr[Boolean] = js.undefined
   
   /** The character to use to separate the time from the time period. */
-  var periodSeparator: js.UndefOr[String] = js.native
+  var periodSeparator: js.UndefOr[String] = js.undefined
   
   /** number of rows for the input tables, minimum 2, makes more sense if you use multiple of 2 */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /** Name of jQuery animation for popup */
-  var showAnim: js.UndefOr[String] = js.native
+  var showAnim: js.UndefOr[String] = js.undefined
   
   // buttons
   /** shows an OK button to confirm the edit */
-  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
   
   /** Shows the deselect time button */
-  var showDeselectButton: js.UndefOr[Boolean] = js.native
+  var showDeselectButton: js.UndefOr[Boolean] = js.undefined
   
   // 2011-08-05 0.2.4
   /** display the hours section of the dialog */
-  var showHours: js.UndefOr[Boolean] = js.native
+  var showHours: js.UndefOr[Boolean] = js.undefined
   
   /** Define whether or not to show a leading zero for hours < 10. [true/false] */
-  var showLeadingZero: js.UndefOr[Boolean] = js.native
+  var showLeadingZero: js.UndefOr[Boolean] = js.undefined
   
   /** display the minute section of the dialog */
-  var showMinutes: js.UndefOr[Boolean] = js.native
+  var showMinutes: js.UndefOr[Boolean] = js.undefined
   
   /** Define whether or not to show a leading zero for minutes < 10. */
-  var showMinutesLeadingZero: js.UndefOr[Boolean] = js.native
+  var showMinutesLeadingZero: js.UndefOr[Boolean] = js.undefined
   
   /** Shows the 'now' button */
-  var showNowButton: js.UndefOr[Boolean] = js.native
+  var showNowButton: js.UndefOr[Boolean] = js.undefined
   
   /** 'focus' for popup on focus, */
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
   /** Options for enhanced animations */
-  var showOptions: js.UndefOr[js.Any] = js.native
+  var showOptions: js.UndefOr[js.Any] = js.undefined
   
   /** Define whether or not to show AM/PM with selected time */
-  var showPeriod: js.UndefOr[Boolean] = js.native
+  var showPeriod: js.UndefOr[Boolean] = js.undefined
   
   /** Show the AM/PM labels on the left of the time picker */
-  var showPeriodLabels: js.UndefOr[Boolean] = js.native
+  var showPeriodLabels: js.UndefOr[Boolean] = js.undefined
   
   /** The character to use to separate hours and minutes. */
-  var timeSeparator: js.UndefOr[String] = js.native
+  var timeSeparator: js.UndefOr[String] = js.undefined
 }
 object TimePickerOptions {
   
@@ -167,7 +165,7 @@ object TimePickerOptions {
     def setAtPositionUndefined: Self = StObject.set(x, "atPosition", js.undefined)
     
     @scala.inline
-    def setBeforeShow(value: () => _): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
+    def setBeforeShow(value: () => js.Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
@@ -233,25 +231,25 @@ object TimePickerOptions {
     def setNowButtonTextUndefined: Self = StObject.set(x, "nowButtonText", js.undefined)
     
     @scala.inline
-    def setOnClose(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    def setOnClose(value: (/* timeText */ String, /* inst */ js.Any) => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnHourShow(value: () => _): Self = StObject.set(x, "onHourShow", js.Any.fromFunction0(value))
+    def setOnHourShow(value: () => js.Any): Self = StObject.set(x, "onHourShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnHourShowUndefined: Self = StObject.set(x, "onHourShow", js.undefined)
     
     @scala.inline
-    def setOnMinuteShow(value: () => _): Self = StObject.set(x, "onMinuteShow", js.Any.fromFunction0(value))
+    def setOnMinuteShow(value: () => js.Any): Self = StObject.set(x, "onMinuteShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnMinuteShowUndefined: Self = StObject.set(x, "onMinuteShow", js.undefined)
     
     @scala.inline
-    def setOnSelect(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    def setOnSelect(value: (/* timeText */ String, /* inst */ js.Any) => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)

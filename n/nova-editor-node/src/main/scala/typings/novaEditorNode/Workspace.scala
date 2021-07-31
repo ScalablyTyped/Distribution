@@ -6,7 +6,6 @@ import typings.novaEditorNode.anon.Label
 import typings.novaEditorNode.anon.Placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/workspace/
@@ -37,18 +36,14 @@ trait Workspace extends StObject {
   def reloadTasks(identifier: String): Unit = js.native
   
   def showActionPanel(message: String): Unit = js.native
-  def showActionPanel(
-    message: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* buttonIndex */ Double | Null, Unit]
-  ): Unit = js.native
+  def showActionPanel(message: String, options: Unit, callback: js.Function1[/* buttonIndex */ Double | Null, Unit]): Unit = js.native
   def showActionPanel(message: String, options: Buttons): Unit = js.native
   def showActionPanel(message: String, options: Buttons, callback: js.Function1[/* buttonIndex */ Double | Null, Unit]): Unit = js.native
   
   def showChoicePalette(choices: js.Array[String]): Unit = js.native
   def showChoicePalette(
     choices: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* choice */ String | Null, /* choiceIndex */ Double | Null, Unit]
   ): Unit = js.native
   def showChoicePalette(choices: js.Array[String], options: Placeholder): Unit = js.native
@@ -61,11 +56,7 @@ trait Workspace extends StObject {
   def showErrorMessage(message: String): Unit = js.native
   
   def showFileChooser(message: String): Unit = js.native
-  def showFileChooser(
-    message: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* paths */ js.Array[String] | Null, Unit]
-  ): Unit = js.native
+  def showFileChooser(message: String, options: Unit, callback: js.Function1[/* paths */ js.Array[String] | Null, Unit]): Unit = js.native
   def showFileChooser(message: String, options: AllowDirectories): Unit = js.native
   def showFileChooser(
     message: String,
@@ -76,20 +67,12 @@ trait Workspace extends StObject {
   def showInformativeMessage(message: String): Unit = js.native
   
   def showInputPalette(message: String): Unit = js.native
-  def showInputPalette(
-    message: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* value */ String | Null, Unit]
-  ): Unit = js.native
+  def showInputPalette(message: String, options: Unit, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   def showInputPalette(message: String, options: Placeholder): Unit = js.native
   def showInputPalette(message: String, options: Placeholder, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   
   def showInputPanel(message: String): Unit = js.native
-  def showInputPanel(
-    message: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* value */ String | Null, Unit]
-  ): Unit = js.native
+  def showInputPanel(message: String, options: Unit, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   def showInputPanel(message: String, options: Label): Unit = js.native
   def showInputPanel(message: String, options: Label, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   

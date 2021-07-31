@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DNSConfig extends StObject {
   
-  var Nameservers: js.UndefOr[js.Array[String]] = js.native
+  var Nameservers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Options: js.UndefOr[js.Array[String]] = js.native
+  var Options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Search: js.UndefOr[js.Array[String]] = js.native
+  var Search: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DNSConfig {
   

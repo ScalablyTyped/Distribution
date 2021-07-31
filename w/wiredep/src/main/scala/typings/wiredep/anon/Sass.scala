@@ -3,29 +3,27 @@ package typings.wiredep.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sass extends StObject {
   
   /**
     * @example:
     *  /@import\s['"](.+css)['"]/gi
     */
-  var css: RegExp = js.native
+  var css: RegExp
   
   /**
     * @example:
     *  /@import\s['"](.+sass)['"]/gi
     */
-  var sass: RegExp = js.native
+  var sass: RegExp
   
   /**
     * @example:
     *  /@import\s['"](.+scss)['"]/gi
     */
-  var scss: RegExp = js.native
+  var scss: RegExp
 }
 object Sass {
   

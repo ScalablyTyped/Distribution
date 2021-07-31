@@ -22,7 +22,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packagerMod {
@@ -68,9 +67,9 @@ object packagerMod {
     
     var _repositoryInfo: js.Any = js.native
     
-    def addAfterPackHandler(handler: js.Function1[/* context */ AfterPackContext, js.Promise[_] | Null]): Unit = js.native
+    def addAfterPackHandler(handler: js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | Null]): Unit = js.native
     
-    def afterPack(context: AfterPackContext): js.Promise[_] = js.native
+    def afterPack(context: AfterPackContext): js.Promise[js.Any] = js.native
     
     val afterPackHandlers: js.Any = js.native
     
@@ -139,23 +138,22 @@ object packagerMod {
     
     def repositoryInfo: js.Promise[SourceRepositoryInfo | Null] = js.native
     
-    def stageDirPathCustomizer(target: Target, packager: PlatformPackager[_], arch: Arch): String = js.native
+    def stageDirPathCustomizer(target: Target, packager: PlatformPackager[js.Any], arch: Arch): String = js.native
     
     val tempDirManager: TmpDir = js.native
     
     val toDispose: js.Any = js.native
   }
   
-  @js.native
   trait BuildResult extends StObject {
     
-    val artifactPaths: js.Array[String] = js.native
+    val artifactPaths: js.Array[String]
     
-    val configuration: Configuration = js.native
+    val configuration: Configuration
     
-    val outDir: String = js.native
+    val outDir: String
     
-    val platformToTargets: Map[Platform, Map[String, Target]] = js.native
+    val platformToTargets: Map[Platform, Map[String, Target]]
   }
   object BuildResult {
     

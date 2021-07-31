@@ -5,42 +5,40 @@ import typings.pulumiAws.inputMod.ec2.GetRouteTablesFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRouteTablesMod {
   
-  @JSImport("@pulumi/aws/ec2/getRouteTables", "getRouteTables")
+  @JSImport("@pulumi/aws/ec2/getRouteTables", JSImport.Namespace)
   @js.native
-  def getRouteTables(): js.Promise[GetRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTables", "getRouteTables")
-  @js.native
-  def getRouteTables(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTables", "getRouteTables")
-  @js.native
-  def getRouteTables(args: GetRouteTablesArgs): js.Promise[GetRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTables", "getRouteTables")
-  @js.native
-  def getRouteTables(args: GetRouteTablesArgs, opts: InvokeOptions): js.Promise[GetRouteTablesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRouteTables(): js.Promise[GetRouteTablesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTables")().asInstanceOf[js.Promise[GetRouteTablesResult]]
+  @scala.inline
+  def getRouteTables(args: Unit, opts: InvokeOptions): js.Promise[GetRouteTablesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTables")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTablesResult]]
+  @scala.inline
+  def getRouteTables(args: GetRouteTablesArgs): js.Promise[GetRouteTablesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTables")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRouteTablesResult]]
+  @scala.inline
+  def getRouteTables(args: GetRouteTablesArgs, opts: InvokeOptions): js.Promise[GetRouteTablesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTables")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTablesResult]]
+  
   trait GetRouteTablesArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetRouteTablesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetRouteTablesFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired route tables.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The VPC ID that you want to filter from.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetRouteTablesArgs {
     
@@ -76,24 +74,23 @@ object getRouteTablesMod {
     }
   }
   
-  @js.native
   trait GetRouteTablesResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetRouteTablesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetRouteTablesFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A set of all the route table ids found. This data source will fail if none are found.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetRouteTablesResult {
     

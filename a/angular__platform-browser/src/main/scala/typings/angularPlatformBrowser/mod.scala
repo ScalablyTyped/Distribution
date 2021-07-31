@@ -20,6 +20,8 @@ import typings.angularCore.mod.RendererFactory2
 import typings.angularCore.mod.Sanitizer
 import typings.angularCore.mod.SecurityContext
 import typings.angularCore.mod.StaticProvider
+import typings.angularCore.mod.Testability
+import typings.angularCore.mod.TestabilityRegistry
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.Version
 import typings.angularCore.mod.ɵConsole
@@ -34,10 +36,13 @@ import typings.std.Node
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@angular/platform-browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/platform-browser", "BrowserModule")
   @js.native
@@ -47,6 +52,10 @@ object mod {
   /* static members */
   object BrowserModule {
     
+    @JSImport("@angular/platform-browser", "BrowserModule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Configures a browser-based app to transition from a server-rendered app, if
       * one is present on the page.
@@ -55,9 +64,8 @@ object mod {
       * The ID must match between the client and server versions of the app.
       * @returns The reconfigured `BrowserModule` to import into the app's root `AppModule`.
       */
-    @JSImport("@angular/platform-browser", "BrowserModule.withServerTransition")
-    @js.native
-    def withServerTransition(params: AppId): ModuleWithProviders[BrowserModule] = js.native
+    @scala.inline
+    def withServerTransition(params: AppId): ModuleWithProviders[BrowserModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withServerTransition")(params.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[BrowserModule]]
   }
   
   @JSImport("@angular/platform-browser", "BrowserTransferStateModule")
@@ -70,6 +78,10 @@ object mod {
   /* static members */
   object By {
     
+    @JSImport("@angular/platform-browser", "By")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Match all nodes.
       *
@@ -78,9 +90,8 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
       */
-    @JSImport("@angular/platform-browser", "By.all")
-    @js.native
-    def all(): Predicate[DebugNode] = js.native
+    @scala.inline
+    def all(): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Predicate[DebugNode]]
     
     /**
       * Match elements by the given CSS selector.
@@ -90,9 +101,8 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_css'}
       */
-    @JSImport("@angular/platform-browser", "By.css")
-    @js.native
-    def css(selector: String): Predicate[DebugElement] = js.native
+    @scala.inline
+    def css(selector: String): Predicate[DebugElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugElement]]
     
     /**
       * Match nodes that have the given directive present.
@@ -102,9 +112,8 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_directive'}
       */
-    @JSImport("@angular/platform-browser", "By.directive")
-    @js.native
-    def directive(`type`: Type[_]): Predicate[DebugNode] = js.native
+    @scala.inline
+    def directive(`type`: Type[js.Any]): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("directive")(`type`.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugNode]]
   }
   
   @JSImport("@angular/platform-browser", "DomSanitizer")
@@ -408,24 +417,19 @@ object mod {
   @js.native
   val VERSION: Version = js.native
   
-  @JSImport("@angular/platform-browser", "disableDebugTools")
-  @js.native
-  def disableDebugTools(): Unit = js.native
+  @scala.inline
+  def disableDebugTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDebugTools")().asInstanceOf[Unit]
   
-  @JSImport("@angular/platform-browser", "enableDebugTools")
-  @js.native
-  def enableDebugTools[T](ref: ComponentRef[T]): ComponentRef[T] = js.native
+  @scala.inline
+  def enableDebugTools[T](ref: ComponentRef[T]): ComponentRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebugTools")(ref.asInstanceOf[js.Any]).asInstanceOf[ComponentRef[T]]
   
-  @JSImport("@angular/platform-browser", "makeStateKey")
-  @js.native
-  def makeStateKey[T](key: String): StateKey[T] = js.native
+  @scala.inline
+  def makeStateKey[T](key: String): StateKey[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStateKey")(key.asInstanceOf[js.Any]).asInstanceOf[StateKey[T]]
   
-  @JSImport("@angular/platform-browser", "platformBrowser")
-  @js.native
-  def platformBrowser(): PlatformRef = js.native
-  @JSImport("@angular/platform-browser", "platformBrowser")
-  @js.native
-  def platformBrowser(extraProviders: js.Array[StaticProvider]): PlatformRef = js.native
+  @scala.inline
+  def platformBrowser(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")().asInstanceOf[PlatformRef]
+  @scala.inline
+  def platformBrowser(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser", "\u0275BROWSER_SANITIZATION_PROVIDERS")
   @js.native
@@ -461,20 +465,35 @@ object mod {
   /* static members */
   object ɵBrowserDomAdapter {
     
-    @JSImport("@angular/platform-browser", "\u0275BrowserDomAdapter.makeCurrent")
+    @JSImport("@angular/platform-browser", "\u0275BrowserDomAdapter")
     @js.native
-    def makeCurrent(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def makeCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCurrent")().asInstanceOf[Unit]
   }
   
   @JSImport("@angular/platform-browser", "\u0275BrowserGetTestability")
   @js.native
-  class ɵBrowserGetTestability () extends GetTestability
+  class ɵBrowserGetTestability ()
+    extends StObject
+       with GetTestability {
+    
+    /* CompleteClass */
+    override def addToWindow(registry: TestabilityRegistry): Unit = js.native
+    
+    /* CompleteClass */
+    override def findTestabilityInTree(registry: TestabilityRegistry, elem: js.Any, findInAncestors: Boolean): Testability | Null = js.native
+  }
   /* static members */
   object ɵBrowserGetTestability {
     
-    @JSImport("@angular/platform-browser", "\u0275BrowserGetTestability.init")
+    @JSImport("@angular/platform-browser", "\u0275BrowserGetTestability")
     @js.native
-    def init(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   }
   
   @JSImport("@angular/platform-browser", "\u0275DomEventsPlugin")
@@ -532,6 +551,13 @@ object mod {
     
     def addHost(hostNode: Node): Unit = js.native
     
+    /**
+      * A callback method that performs custom clean-up, invoked immediately
+      * before a directive, pipe, or service instance is destroyed.
+      */
+    /* CompleteClass */
+    override def ngOnDestroy(): Unit = js.native
+    
     def removeHost(hostNode: Node): Unit = js.native
   }
   
@@ -578,6 +604,10 @@ object mod {
   /* static members */
   object ɵKeyEventsPlugin {
     
+    @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Configures a handler callback for a key event.
       * @param fullKey The event name that combines all simultaneous keystrokes.
@@ -585,17 +615,14 @@ object mod {
       * @param zone The zone in which the event occurred.
       * @returns A callback function.
       */
-    @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin.eventCallback")
-    @js.native
-    def eventCallback(fullKey: js.Any, handler: js.Function, zone: NgZone): js.Function = js.native
+    @scala.inline
+    def eventCallback(fullKey: js.Any, handler: js.Function, zone: NgZone): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("eventCallback")(fullKey.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin.getEventFullKey")
-    @js.native
-    def getEventFullKey(event: KeyboardEvent): String = js.native
+    @scala.inline
+    def getEventFullKey(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventFullKey")(event.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin.parseEventName")
-    @js.native
-    def parseEventName(eventName: String): DomEventName | Null = js.native
+    @scala.inline
+    def parseEventName(eventName: String): DomEventName | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[DomEventName | Null]
   }
   
   @JSImport("@angular/platform-browser", "\u0275SharedStylesHost")
@@ -613,29 +640,24 @@ object mod {
   @js.native
   val ɵTRANSITIONID: InjectionToken[js.Any] = js.native
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_a")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserA(): ErrorHandler = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserA(): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_a")().asInstanceOf[ErrorHandler]
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_b")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserB(): js.Any = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserB(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_b")().asInstanceOf[js.Any]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_c")
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserC: js.Array[StaticProvider] = js.native
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_d")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserD(): Meta = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserD(): Meta = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_d")().asInstanceOf[Meta]
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_e")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserE(): Title = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserE(): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_e")().asInstanceOf[Title]
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_f")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserF(doc: Document, appId: String): TransferState = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserF(doc: Document, appId: String): TransferState = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_f")(doc.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[TransferState]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_g")
   @js.native
@@ -661,21 +683,18 @@ object mod {
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserI: js.Array[Provider] = js.native
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_j")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserJ(injector: Injector): ɵDomSanitizerImpl = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserJ(injector: Injector): ɵDomSanitizerImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_j")(injector.asInstanceOf[js.Any]).asInstanceOf[ɵDomSanitizerImpl]
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_k")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserK(transitionId: String, document: js.Any, injector: Injector): js.Function0[Unit] = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserK(transitionId: String, document: js.Any, injector: Injector): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_k")(transitionId.asInstanceOf[js.Any], document.asInstanceOf[js.Any], injector.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_l")
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserL: js.Array[StaticProvider] = js.native
   
-  @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_m")
-  @js.native
-  def ɵangularPackagesPlatformBrowserPlatformBrowserM(coreTokens: js.Array[NgProbeToken]): js.Any = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserPlatformBrowserM(coreTokens: js.Array[NgProbeToken]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_m")(coreTokens.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_n")
   @js.native
@@ -685,29 +704,23 @@ object mod {
   @js.native
   abstract class ɵangularPackagesPlatformBrowserPlatformBrowserO () extends ɵDomAdapter
   
-  @JSImport("@angular/platform-browser", "\u0275escapeHtml")
-  @js.native
-  def ɵescapeHtml(text: String): String = js.native
+  @scala.inline
+  def ɵescapeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275escapeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@angular/platform-browser", "\u0275flattenStyles")
-  @js.native
-  def ɵflattenStyles(compId: String, styles: js.Array[_ | js.Array[_]], target: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def ɵflattenStyles(compId: String, styles: js.Array[js.Any | js.Array[js.Any]], target: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flattenStyles")(compId.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@angular/platform-browser", "\u0275getDOM")
-  @js.native
-  def ɵgetDOM(): ɵDomAdapter = js.native
+  @scala.inline
+  def ɵgetDOM(): ɵDomAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDOM")().asInstanceOf[ɵDomAdapter]
   
-  @JSImport("@angular/platform-browser", "\u0275initDomAdapter")
-  @js.native
-  def ɵinitDomAdapter(): Unit = js.native
+  @scala.inline
+  def ɵinitDomAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275initDomAdapter")().asInstanceOf[Unit]
   
-  @JSImport("@angular/platform-browser", "\u0275shimContentAttribute")
-  @js.native
-  def ɵshimContentAttribute(componentShortId: String): String = js.native
+  @scala.inline
+  def ɵshimContentAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimContentAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@angular/platform-browser", "\u0275shimHostAttribute")
-  @js.native
-  def ɵshimHostAttribute(componentShortId: String): String = js.native
+  @scala.inline
+  def ɵshimHostAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimHostAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait HammerInstance extends StObject {
@@ -723,26 +736,27 @@ object mod {
   
   type HammerLoader = js.Function0[js.Promise[Unit]]
   
-  @js.native
-  trait MetaDefinition extends /* prop */ StringDictionary[String] {
+  trait MetaDefinition
+    extends StObject
+       with /* prop */ StringDictionary[String] {
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var httpEquiv: js.UndefOr[String] = js.native
+    var httpEquiv: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemprop: js.UndefOr[String] = js.native
+    var itemprop: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object MetaDefinition {
     
@@ -821,8 +835,10 @@ object mod {
   
   type SafeUrl = SafeValue
   
-  @js.native
   trait SafeValue extends StObject
   
-  type StateKey[T] = String with js.Object
+  @js.native
+  trait StateKey[T]
+    extends StObject
+       with typings.std.String
 }

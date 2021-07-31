@@ -10,17 +10,15 @@ import typings.firebaseUtil.subscribeMod.Observer
 import typings.firebaseUtil.subscribeMod.Unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait FcmOptions extends StObject {
     
-    var analyticsLabel: js.UndefOr[String] = js.native
+    var analyticsLabel: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
   }
   object FcmOptions {
     
@@ -60,31 +58,31 @@ object mod {
     
     /** service worker controller */
     def onBackgroundMessage(nextOrObserver: NextFn[MessagePayload]): Unsubscribe = js.native
-    def onBackgroundMessage(nextOrObserver: NextFn[MessagePayload], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
+    def onBackgroundMessage(nextOrObserver: NextFn[MessagePayload], error: Unit, completed: CompleteFn): Unsubscribe = js.native
     def onBackgroundMessage(nextOrObserver: NextFn[MessagePayload], error: ErrorFn): Unsubscribe = js.native
     def onBackgroundMessage(nextOrObserver: NextFn[MessagePayload], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
     def onBackgroundMessage(nextOrObserver: Observer[MessagePayload]): Unsubscribe = js.native
-    def onBackgroundMessage(nextOrObserver: Observer[MessagePayload], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
+    def onBackgroundMessage(nextOrObserver: Observer[MessagePayload], error: Unit, completed: CompleteFn): Unsubscribe = js.native
     def onBackgroundMessage(nextOrObserver: Observer[MessagePayload], error: ErrorFn): Unsubscribe = js.native
     def onBackgroundMessage(nextOrObserver: Observer[MessagePayload], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
     
-    def onMessage(nextOrObserver: NextFn[_]): Unsubscribe = js.native
-    def onMessage(nextOrObserver: NextFn[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
-    def onMessage(nextOrObserver: NextFn[_], error: ErrorFn): Unsubscribe = js.native
-    def onMessage(nextOrObserver: NextFn[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
-    def onMessage(nextOrObserver: Observer[_]): Unsubscribe = js.native
-    def onMessage(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
-    def onMessage(nextOrObserver: Observer[_], error: ErrorFn): Unsubscribe = js.native
-    def onMessage(nextOrObserver: Observer[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: NextFn[js.Any]): Unsubscribe = js.native
+    def onMessage(nextOrObserver: NextFn[js.Any], error: Unit, completed: CompleteFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: NextFn[js.Any], error: ErrorFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: NextFn[js.Any], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: Observer[js.Any]): Unsubscribe = js.native
+    def onMessage(nextOrObserver: Observer[js.Any], error: Unit, completed: CompleteFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: Observer[js.Any], error: ErrorFn): Unsubscribe = js.native
+    def onMessage(nextOrObserver: Observer[js.Any], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
     
-    def onTokenRefresh(nextOrObserver: NextFn[_]): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: NextFn[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: NextFn[_], error: ErrorFn): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: NextFn[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: Observer[_]): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: Observer[_], error: ErrorFn): Unsubscribe = js.native
-    def onTokenRefresh(nextOrObserver: Observer[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: NextFn[js.Any]): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: NextFn[js.Any], error: Unit, completed: CompleteFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: NextFn[js.Any], error: ErrorFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: NextFn[js.Any], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: Observer[js.Any]): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: Observer[js.Any], error: Unit, completed: CompleteFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: Observer[js.Any], error: ErrorFn): Unsubscribe = js.native
+    def onTokenRefresh(nextOrObserver: Observer[js.Any], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
     
     /**
       * @deprecated Use Notification.requestPermission() instead.
@@ -92,7 +90,7 @@ object mod {
       */
     def requestPermission(): js.Promise[Unit] = js.native
     
-    def setBackgroundMessageHandler(callback: js.Function1[/* payload */ js.Any, js.Promise[_] | Unit]): Unit = js.native
+    def setBackgroundMessageHandler(callback: js.Function1[/* payload */ js.Any, js.Promise[js.Any] | Unit]): Unit = js.native
     
     def usePublicVapidKey(b64PublicKey: String): Unit = js.native
     
@@ -101,18 +99,17 @@ object mod {
   
   type FirebaseMessagingName = messaging
   
-  @js.native
   trait MessagePayload extends StObject {
     
-    var collapseKey: String = js.native
+    var collapseKey: String
     
-    var data: js.UndefOr[StringDictionary[String]] = js.native
+    var data: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var fcmOptions: js.UndefOr[FcmOptions] = js.native
+    var fcmOptions: js.UndefOr[FcmOptions] = js.undefined
     
-    var from: String = js.native
+    var from: String
     
-    var notification: js.UndefOr[NotificationPayload] = js.native
+    var notification: js.UndefOr[NotificationPayload] = js.undefined
   }
   object MessagePayload {
     
@@ -151,14 +148,13 @@ object mod {
     }
   }
   
-  @js.native
   trait NotificationPayload extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NotificationPayload {
     
@@ -193,10 +189,9 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var messaging: FirebaseMessaging = js.native
+      var messaging: FirebaseMessaging
     }
     object NameServiceMapping {
       

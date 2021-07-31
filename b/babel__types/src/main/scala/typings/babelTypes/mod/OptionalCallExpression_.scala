@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.OptionalCallExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait OptionalCallExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait OptionalCallExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_] = js.native
+  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_]
   
-  var callee: Expression = js.native
+  var callee: Expression
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var typeArguments: TypeParameterInstantiation_ | Null = js.native
+  var typeArguments: TypeParameterInstantiation_ | Null
   
-  var typeParameters: TSTypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_OptionalCallExpression_ : OptionalCallExpression = js.native
+  var type_OptionalCallExpression_ : OptionalCallExpression
 }
 object OptionalCallExpression_ {
   
@@ -31,11 +30,10 @@ object OptionalCallExpression_ {
   def apply(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
     callee: Expression,
-    optional: Boolean,
-    `type`: OptionalCallExpression
+    optional: Boolean
   ): OptionalCallExpression_ = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
+    __obj.updateDynamic("type")("OptionalCallExpression")
     __obj.asInstanceOf[OptionalCallExpression_]
   }
   

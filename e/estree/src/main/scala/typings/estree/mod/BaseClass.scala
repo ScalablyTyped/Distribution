@@ -2,15 +2,15 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseClass extends BaseNode {
+trait BaseClass
+  extends StObject
+     with BaseNode {
   
-  var body: ClassBody = js.native
+  var body: ClassBody
   
-  var superClass: js.UndefOr[Expression | Null] = js.native
+  var superClass: js.UndefOr[Expression | Null] = js.undefined
 }
 object BaseClass {
   

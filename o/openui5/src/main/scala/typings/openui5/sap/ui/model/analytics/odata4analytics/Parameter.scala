@@ -2,72 +2,70 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * Get parameterization containing this parameter
     * @returns The parameterization        object
     */
-  def getContainingParameterization(): Parameterization = js.native
+  def getContainingParameterization(): Parameterization
   
   /**
     * Get label
     * @returns The (possibly language-dependent) label text for this         parameter
     */
-  def getLabelText(): String = js.native
+  def getLabelText(): String
   
   /**
     * Get the name of the parameter
     * @returns The name of the parameter, which is identical with the         name of the property
     * representing the parameter in the         parameterization entity type
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Get property for the parameter representing the peer boundary of the sameinterval
     * @returns The parameter representing         the peer boundary of the same interval. This means that
     * if         *this* parameter is a lower boundary, the returned object
     */
-  def getPeerIntervalBoundaryParameter(): Parameter = js.native
+  def getPeerIntervalBoundaryParameter(): Parameter
   
   /**
     * Get property
     */
-  def getProperty(): js.Any = js.native
+  def getProperty(): js.Any
   
   /**
     * Get text property related to this parameter
     * @returns The DataJS object representing the text property or         null if it does not exist
     */
-  def getTextProperty(): js.Any = js.native
+  def getTextProperty(): js.Any
   
   /**
     * Get the URI to locate the entity set holding the value set, if it isavailable.
     * @param sServiceRootURI (optional) Identifies the root of the OData           service
     */
-  def getURIToValueEntitySet(sServiceRootURI: String): Unit = js.native
+  def getURIToValueEntitySet(sServiceRootURI: String): Unit
   
   /**
     * Get indicator if the parameter represents an interval boundary
     * @returns True iff it represents an interval boundary, otherwise         false
     */
-  def isIntervalBoundary(): Boolean = js.native
+  def isIntervalBoundary(): Boolean
   
   /**
     * Get indicator if the parameter represents the lower boundary of aninterval
     * @returns True iff it represents the lower boundary of an         interval, otherwise false
     */
-  def isLowerIntervalBoundary(): Boolean = js.native
+  def isLowerIntervalBoundary(): Boolean
   
   /**
     * Get indicator whether or not the parameter is optional
     * @returns True iff the parameter is optional
     */
-  def isOptional(): Boolean = js.native
+  def isOptional(): Boolean
   
   /**
     * Get indicator if a set of values is available for this parameter.Typically, this is true for
@@ -75,7 +73,7 @@ trait Parameter extends StObject {
     * organizationunits, and false for integer or date parameters
     * @returns True iff a value set is available, otherwise false
     */
-  def isValueSetAvailable(): Boolean = js.native
+  def isValueSetAvailable(): Boolean
 }
 object Parameter {
   

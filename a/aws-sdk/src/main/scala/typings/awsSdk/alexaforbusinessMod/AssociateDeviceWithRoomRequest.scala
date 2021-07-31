@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDeviceWithRoomRequest extends StObject {
   
   /**
     * The ARN of the device to associate to a room. Required.
     */
-  var DeviceArn: js.UndefOr[Arn] = js.native
+  var DeviceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the room with which to associate the device. Required.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
 }
 object AssociateDeviceWithRoomRequest {
   

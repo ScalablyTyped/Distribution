@@ -2,44 +2,42 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an individual purchase of a game product.
   */
-@js.native
 trait Purchase extends StObject {
   
   /**
     * A developer-specified string, provided during the purchase of the product
     */
-  var developerPayload: js.UndefOr[String] = js.native
+  var developerPayload: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the purchase transaction
     */
-  var paymentID: String = js.native
+  var paymentID: String
   
   /**
     *  The product's game-specified identifier
     */
-  var productID: String = js.native
+  var productID: String
   
   /**
     * Unix timestamp of when the purchase occurred
     */
-  var purchaseTime: String = js.native
+  var purchaseTime: String
   
   /**
     *  A token representing the purchase that may be used to consume the purchase
     */
-  var purchaseToken: String = js.native
+  var purchaseToken: String
   
   /**
     *  Server-signed encoding of the purchase request
     */
-  var signedRequest: SignedPurchaseRequest = js.native
+  var signedRequest: SignedPurchaseRequest
 }
 object Purchase {
   

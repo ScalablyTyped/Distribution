@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstStepRequired extends StObject {
   
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var firstStepRequired: js.UndefOr[Boolean] = js.native
+  var firstStepRequired: js.UndefOr[Boolean] = js.undefined
   
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
-  var steps: js.UndefOr[js.Array[Number]] = js.native
+  var steps: js.UndefOr[js.Array[Number]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object FirstStepRequired {
   

@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.log4js.anon.Appenders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
-  var appenders: StringDictionary[Appender] = js.native
+  var appenders: StringDictionary[Appender]
   
-  var categories: StringDictionary[Appenders] = js.native
+  var categories: StringDictionary[Appenders]
   
-  var disableClustering: js.UndefOr[Boolean] = js.native
+  var disableClustering: js.UndefOr[Boolean] = js.undefined
   
-  var levels: js.UndefOr[Levels_] = js.native
+  var levels: js.UndefOr[Levels_] = js.undefined
   
-  var pm2: js.UndefOr[Boolean] = js.native
+  var pm2: js.UndefOr[Boolean] = js.undefined
   
-  var pm2InstanceVar: js.UndefOr[String] = js.native
+  var pm2InstanceVar: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

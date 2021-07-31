@@ -2,27 +2,25 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureUrlOptions extends StObject {
   
   // the HTTP method, default is 'GET'
-  var `Content-Type`: js.UndefOr[String] = js.native
+  var `Content-Type`: js.UndefOr[String] = js.undefined
   
   // set the response headers for download
-  var callback: js.UndefOr[ObjectCallback] = js.native
+  var callback: js.UndefOr[ObjectCallback] = js.undefined
   
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
   // after expires seconds, the url will become invalid, default is 1800
-  var method: js.UndefOr[HTTPMethods] = js.native
+  var method: js.UndefOr[HTTPMethods] = js.undefined
   
   // set the request content type
-  var process: js.UndefOr[String] = js.native
+  var process: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[ResponseHeaderType] = js.native
+  var response: js.UndefOr[ResponseHeaderType] = js.undefined
 }
 object SignatureUrlOptions {
   

@@ -4,20 +4,20 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconSet extends XConditionEntry {
+trait IconSet
+  extends StObject
+     with XConditionEntry {
   
-  var IconSetEntries: SafeArray[XIconSetEntry] = js.native
+  var IconSetEntries: SafeArray[XIconSetEntry]
   
   /** See {@link com.sun.star.sheet.IconSetType} for possible values. */
-  var Icons: Double = js.native
+  var Icons: Double
   
-  var Reverse: Boolean = js.native
+  var Reverse: Boolean
   
-  var ShowValue: Boolean = js.native
+  var ShowValue: Boolean
 }
 object IconSet {
   

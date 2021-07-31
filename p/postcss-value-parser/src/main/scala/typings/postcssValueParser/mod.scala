@@ -15,7 +15,6 @@ import typings.postcssValueParser.postcssValueParserStrings.string
 import typings.postcssValueParser.postcssValueParserStrings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("postcss-value-parser/lib", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ParsedValue {
+  class ^ protected ()
+    extends StObject
+       with ParsedValue {
     /**
       * Parse a CSS value into a series of nodes to operate on
       *
@@ -35,18 +36,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : ValueParser = js.native
   
-  @js.native
   trait AdjacentAwareNode extends StObject {
     
     /**
       * The token at the end of the node
       */
-    var after: String = js.native
+    var after: String
     
     /**
       * The token at the start of the node
       */
-    var before: String = js.native
+    var before: String
   }
   object AdjacentAwareNode {
     
@@ -67,18 +67,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait BaseNode extends StObject {
     
     /**
       * The offset inside the CSS value at which the node starts
       */
-    var sourceIndex: Double = js.native
+    var sourceIndex: Double
     
     /**
       * The node's characteristic value
       */
-    var value: String = js.native
+    var value: String
   }
   object BaseNode {
     
@@ -99,13 +98,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ClosableNode extends StObject {
     
     /**
       * Whether the parsed CSS value ended before the node was properly closed
       */
-    var unclosed: js.UndefOr[`true`] = js.native
+    var unclosed: js.UndefOr[`true`] = js.undefined
   }
   object ClosableNode {
     
@@ -126,20 +124,20 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CommentNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with ClosableNode
        with Node {
     
-    var `type`: comment = js.native
+    var `type`: comment
   }
   object CommentNode {
     
     @scala.inline
-    def apply(sourceIndex: Double, `type`: comment, value: String): CommentNode = {
+    def apply(sourceIndex: Double, value: String): CommentNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[CommentNode]
     }
     
@@ -156,12 +154,11 @@ object mod extends Shortcut {
   /**
     * A CSS dimension, decomposed into its numeric and unit parts
     */
-  @js.native
   trait Dimension extends StObject {
     
-    var number: String = js.native
+    var number: String
     
-    var unit: String = js.native
+    var unit: String
   }
   object Dimension {
     
@@ -182,20 +179,20 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DivNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with AdjacentAwareNode
        with Node {
     
-    var `type`: div = js.native
+    var `type`: div
   }
   object DivNode {
     
     @scala.inline
-    def apply(after: String, before: String, sourceIndex: Double, `type`: div, value: String): DivNode = {
+    def apply(after: String, before: String, sourceIndex: Double, value: String): DivNode = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("div")
       __obj.asInstanceOf[DivNode]
     }
     
@@ -207,9 +204,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FunctionNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with ClosableNode
        with AdjacentAwareNode
        with Node {
@@ -217,23 +214,16 @@ object mod extends Shortcut {
     /**
       * Nodes inside the function
       */
-    var nodes: js.Array[Node] = js.native
+    var nodes: js.Array[Node]
     
-    var `type`: function = js.native
+    var `type`: function
   }
   object FunctionNode {
     
     @scala.inline
-    def apply(
-      after: String,
-      before: String,
-      nodes: js.Array[Node],
-      sourceIndex: Double,
-      `type`: function,
-      value: String
-    ): FunctionNode = {
+    def apply(after: String, before: String, nodes: js.Array[Node], sourceIndex: Double, value: String): FunctionNode = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("function")
       __obj.asInstanceOf[FunctionNode]
     }
     
@@ -267,58 +257,51 @@ object mod extends Shortcut {
   object Node {
     
     @scala.inline
-    def CommentNode(sourceIndex: Double, `type`: comment, value: String): typings.postcssValueParser.mod.CommentNode = {
+    def CommentNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.CommentNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[typings.postcssValueParser.mod.CommentNode]
     }
     
     @scala.inline
-    def DivNode(after: String, before: String, sourceIndex: Double, `type`: div, value: String): typings.postcssValueParser.mod.DivNode = {
+    def DivNode(after: String, before: String, sourceIndex: Double, value: String): typings.postcssValueParser.mod.DivNode = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("div")
       __obj.asInstanceOf[typings.postcssValueParser.mod.DivNode]
     }
     
     @scala.inline
-    def FunctionNode(
-      after: String,
-      before: String,
-      nodes: js.Array[Node],
-      sourceIndex: Double,
-      `type`: function,
-      value: String
-    ): typings.postcssValueParser.mod.FunctionNode = {
+    def FunctionNode(after: String, before: String, nodes: js.Array[Node], sourceIndex: Double, value: String): typings.postcssValueParser.mod.FunctionNode = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("function")
       __obj.asInstanceOf[typings.postcssValueParser.mod.FunctionNode]
     }
     
     @scala.inline
-    def SpaceNode(sourceIndex: Double, `type`: space, value: String): typings.postcssValueParser.mod.SpaceNode = {
+    def SpaceNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.SpaceNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("space")
       __obj.asInstanceOf[typings.postcssValueParser.mod.SpaceNode]
     }
     
     @scala.inline
-    def StringNode(quote: Quotationmark | Apostrophe, sourceIndex: Double, `type`: string, value: String): typings.postcssValueParser.mod.StringNode = {
+    def StringNode(quote: Quotationmark | Apostrophe, sourceIndex: Double, value: String): typings.postcssValueParser.mod.StringNode = {
       val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.postcssValueParser.mod.StringNode]
     }
     
     @scala.inline
-    def UnicodeRangeNode(sourceIndex: Double, `type`: `unicode-range`, value: String): typings.postcssValueParser.mod.UnicodeRangeNode = {
+    def UnicodeRangeNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.UnicodeRangeNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unicode-range")
       __obj.asInstanceOf[typings.postcssValueParser.mod.UnicodeRangeNode]
     }
     
     @scala.inline
-    def WordNode(sourceIndex: Double, `type`: word, value: String): typings.postcssValueParser.mod.WordNode = {
+    def WordNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.WordNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("word")
       __obj.asInstanceOf[typings.postcssValueParser.mod.WordNode]
     }
   }
@@ -344,19 +327,19 @@ object mod extends Shortcut {
     def walk(callback: WalkCallback, bubble: Boolean): this.type = js.native
   }
   
-  @js.native
   trait SpaceNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with Node {
     
-    var `type`: space = js.native
+    var `type`: space
   }
   object SpaceNode {
     
     @scala.inline
-    def apply(sourceIndex: Double, `type`: space, value: String): SpaceNode = {
+    def apply(sourceIndex: Double, value: String): SpaceNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("space")
       __obj.asInstanceOf[SpaceNode]
     }
     
@@ -368,25 +351,25 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait StringNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with ClosableNode
        with Node {
     
     /**
       * The quote type delimiting the string
       */
-    var quote: Quotationmark | Apostrophe = js.native
+    var quote: Quotationmark | Apostrophe
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object StringNode {
     
     @scala.inline
-    def apply(quote: Quotationmark | Apostrophe, sourceIndex: Double, `type`: string, value: String): StringNode = {
+    def apply(quote: Quotationmark | Apostrophe, sourceIndex: Double, value: String): StringNode = {
       val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringNode]
     }
     
@@ -401,19 +384,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait UnicodeRangeNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with Node {
     
-    var `type`: `unicode-range` = js.native
+    var `type`: `unicode-range`
   }
   object UnicodeRangeNode {
     
     @scala.inline
-    def apply(sourceIndex: Double, `type`: `unicode-range`, value: String): UnicodeRangeNode = {
+    def apply(sourceIndex: Double, value: String): UnicodeRangeNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unicode-range")
       __obj.asInstanceOf[UnicodeRangeNode]
     }
     
@@ -426,7 +409,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ValueParser extends /**
+  trait ValueParser
+    extends StObject
+       with /**
     * Parse a CSS value into a series of nodes to operate on
     *
     * @param value The value to parse
@@ -473,19 +458,19 @@ object mod extends Shortcut {
   
   type WalkCallback = js.Function3[/* node */ Node, /* index */ Double, /* nodes */ js.Array[Node], Unit | Boolean]
   
-  @js.native
   trait WordNode
-    extends BaseNode
+    extends StObject
+       with BaseNode
        with Node {
     
-    var `type`: word = js.native
+    var `type`: word
   }
   object WordNode {
     
     @scala.inline
-    def apply(sourceIndex: Double, `type`: word, value: String): WordNode = {
+    def apply(sourceIndex: Double, value: String): WordNode = {
       val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("word")
       __obj.asInstanceOf[WordNode]
     }
     

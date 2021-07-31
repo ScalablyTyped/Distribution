@@ -2,17 +2,15 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of SODA operation.replaceOne();
   */
-@js.native
 trait SodaReplaceOneResult extends StObject {
   
   /** This attribute will be true if the document was successfully replaced, false otherwise. */
-  var replaced: Boolean = js.native
+  var replaced: Boolean
 }
 object SodaReplaceOneResult {
   

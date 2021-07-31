@@ -7,22 +7,22 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectsInsert extends StandardParameters {
+trait ParamsResourceObjectsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the bucket in which to store the new object. Overrides the
     * provided object metadata's bucket value, if any.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * If set, sets the contentEncoding property of the final object to this
@@ -31,14 +31,14 @@ trait ParamsResourceObjectsInsert extends StandardParameters {
     * object with uploadType=media to indicate the encoding of the content
     * being uploaded.
     */
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
     * generation matches the given value. Setting to 0 makes the operation
     * succeed only if there are no live versions of the object.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.native
+  var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
@@ -46,19 +46,19 @@ trait ParamsResourceObjectsInsert extends StandardParameters {
     * precondition fails. Setting to 0 makes the operation succeed only if
     * there is a live version of the object.
     */
-  var ifGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
     * metageneration matches the given value.
     */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current
     * metageneration does not match the given value.
     */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name of the Cloud KMS key, of the form
@@ -66,12 +66,12 @@ trait ParamsResourceObjectsInsert extends StandardParameters {
     * that will be used to encrypt the object. Overrides the object metadata's
     * kms_key_name value, if any.
     */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Name of the object. Required when the object metadata is not otherwise
@@ -79,29 +79,29 @@ trait ParamsResourceObjectsInsert extends StandardParameters {
     * information about how to URL encode object names to be path safe, see
     * Encoding URI Path Parts.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Apply a predefined set of access controls to this object.
     */
-  var predefinedAcl: js.UndefOr[String] = js.native
+  var predefinedAcl: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl, unless the object
     * resource specifies the acl property, when it defaults to full.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaObject] = js.native
+  var requestBody: js.UndefOr[SchemaObject] = js.undefined
   
   /**
     * The project to be billed for this request. Required for Requester Pays
     * buckets.
     */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceObjectsInsert {
   

@@ -4,23 +4,24 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object realmRoleMod {
   
-  @JSImport("csw-aas-js/dist/components/authorization/RealmRole", JSImport.Default)
+  @JSImport("csw-aas-js/dist/components/authorization/RealmRole", JSImport.Namespace)
   @js.native
-  def default(hasRealmRoleChildrenError: RealmRoleProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasRealmRoleChildrenError: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRealmRoleChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait RealmRoleProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var error: ReactNode = js.native
+    var error: ReactNode
     
-    var realmRole: String = js.native
+    var realmRole: String
   }
   object RealmRoleProps {
     

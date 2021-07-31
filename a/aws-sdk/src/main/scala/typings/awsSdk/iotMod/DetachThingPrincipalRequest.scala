@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachThingPrincipalRequest extends StObject {
   
   /**
     * If the principal is a certificate, this value must be ARN of the certificate. If the principal is an Amazon Cognito identity, this value must be the ID of the Amazon Cognito identity.
     */
-  var principal: Principal = js.native
+  var principal: Principal
   
   /**
     * The name of the thing.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object DetachThingPrincipalRequest {
   

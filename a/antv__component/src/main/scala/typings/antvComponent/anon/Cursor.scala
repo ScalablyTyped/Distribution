@@ -2,23 +2,21 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cursor extends StObject {
   
-  var cursor: String = js.native
+  var cursor: String
   
-  var fill: String = js.native
+  var fill: String
   
-  var highLightFill: String = js.native
+  var highLightFill: String
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var stroke: String = js.native
+  var stroke: String
 }
 object Cursor {
   

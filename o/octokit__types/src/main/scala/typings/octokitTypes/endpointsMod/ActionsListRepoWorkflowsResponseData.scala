@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Badgeurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListRepoWorkflowsResponseData extends StObject {
   
-  var total_count: Double = js.native
+  var total_count: Double
   
-  var workflows: js.Array[Badgeurl] = js.native
+  var workflows: js.Array[Badgeurl]
 }
 object ActionsListRepoWorkflowsResponseData {
   

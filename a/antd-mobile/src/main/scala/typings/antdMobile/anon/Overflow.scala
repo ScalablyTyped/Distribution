@@ -2,13 +2,11 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overflow extends StObject {
   
-  var overflow: AdjustX = js.native
+  var overflow: AdjustX
 }
 object Overflow {
   

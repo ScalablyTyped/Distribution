@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpeningPeriod extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait OpeningPeriod extends StObject {
     * Clients can rely on always-open being represented as an `open` period containing `day` with value 0
     * and `time` with value 0000, and no `close`.
     */
-  var close: js.UndefOr[OpeningHoursTime] = js.native
+  var close: js.UndefOr[OpeningHoursTime] = js.undefined
   
   /** contains a pair of day and time objects describing when the place opens. */
-  var open: OpeningHoursTime = js.native
+  var open: OpeningHoursTime
 }
 object OpeningPeriod {
   

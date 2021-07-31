@@ -3,15 +3,13 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.browser.manifest.UndefinedChromeResources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chromeresources extends StObject {
   
-  var chrome_resources: UndefinedChromeResources = js.native
+  var chrome_resources: UndefinedChromeResources
   
-  var version: String = js.native
+  var version: String
 }
 object Chromeresources {
   

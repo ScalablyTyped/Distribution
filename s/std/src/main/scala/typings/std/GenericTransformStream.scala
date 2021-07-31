@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericTransformStream extends StObject {
   
   /**
     * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
     */
-  val readable: ReadableStream[_] = js.native
+  val readable: ReadableStream[js.Any]
   
   /**
     * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
@@ -27,12 +25,12 @@ trait GenericTransformStream extends StObject {
     * 
     * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
     */
-  val writable: WritableStream[_] = js.native
+  val writable: WritableStream[js.Any]
 }
 object GenericTransformStream {
   
   @scala.inline
-  def apply(readable: ReadableStream[_], writable: WritableStream[_]): GenericTransformStream = {
+  def apply(readable: ReadableStream[js.Any], writable: WritableStream[js.Any]): GenericTransformStream = {
     val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericTransformStream]
   }
@@ -41,9 +39,9 @@ object GenericTransformStream {
   implicit class GenericTransformStreamMutableBuilder[Self <: GenericTransformStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setReadable(value: ReadableStream[_]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWritable(value: WritableStream[_]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

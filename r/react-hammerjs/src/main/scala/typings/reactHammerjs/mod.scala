@@ -25,7 +25,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -40,27 +39,26 @@ object mod extends Shortcut {
   }
   @JSImport("react-hammerjs", JSImport.Namespace)
   @js.native
-  val ^ : ComponentClass[ReactHammerProps, ComponentState] = js.native
+  val ^ : js.Object & (ComponentClass[ReactHammerProps, ComponentState]) = js.native
   
   /* Inlined std.Omit<hammerjs.HammerOptions, 'recognizers'> & {  recognizers :{[gesture: string] : hammerjs.RecognizerOptions} | undefined} */
-  @js.native
   trait HammerOptionsWithRecognizers extends StObject {
     
-    var cssProps: js.UndefOr[CssProps] = js.native
+    var cssProps: js.UndefOr[CssProps] = js.undefined
     
-    var domEvents: js.UndefOr[Boolean] = js.native
+    var domEvents: js.UndefOr[Boolean] = js.undefined
     
-    var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ HammerManager, Boolean])] = js.native
+    var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ HammerManager, Boolean])] = js.undefined
     
-    var inputClass: js.UndefOr[HammerInput] = js.native
+    var inputClass: js.UndefOr[HammerInput] = js.undefined
     
-    var inputTarget: js.UndefOr[EventTarget] = js.native
+    var inputTarget: js.UndefOr[EventTarget] = js.undefined
     
-    var preset: js.UndefOr[js.Array[RecognizerTuple]] = js.native
+    var preset: js.UndefOr[js.Array[RecognizerTuple]] = js.undefined
     
-    var recognizers: js.UndefOr[StringDictionary[RecognizerOptions]] = js.native
+    var recognizers: js.UndefOr[StringDictionary[RecognizerOptions]] = js.undefined
     
-    var touchAction: js.UndefOr[String] = js.native
+    var touchAction: js.UndefOr[String] = js.undefined
   }
   object HammerOptionsWithRecognizers {
     
@@ -131,60 +129,59 @@ object mod extends Shortcut {
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
   trait ReactHammerProps extends StObject {
     
-    var action: js.UndefOr[HammerListener] = js.native
+    var action: js.UndefOr[HammerListener] = js.undefined
     
     var direction: js.UndefOr[
         DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
-      ] = js.native
+      ] = js.undefined
     
-    var onDoubleTap: js.UndefOr[HammerListener] = js.native
+    var onDoubleTap: js.UndefOr[HammerListener] = js.undefined
     
-    var onPan: js.UndefOr[HammerListener] = js.native
+    var onPan: js.UndefOr[HammerListener] = js.undefined
     
-    var onPanCancel: js.UndefOr[HammerListener] = js.native
+    var onPanCancel: js.UndefOr[HammerListener] = js.undefined
     
-    var onPanEnd: js.UndefOr[HammerListener] = js.native
+    var onPanEnd: js.UndefOr[HammerListener] = js.undefined
     
-    var onPanStart: js.UndefOr[HammerListener] = js.native
+    var onPanStart: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinch: js.UndefOr[HammerListener] = js.native
+    var onPinch: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinchCancel: js.UndefOr[HammerListener] = js.native
+    var onPinchCancel: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinchEnd: js.UndefOr[HammerListener] = js.native
+    var onPinchEnd: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinchIn: js.UndefOr[HammerListener] = js.native
+    var onPinchIn: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinchOut: js.UndefOr[HammerListener] = js.native
+    var onPinchOut: js.UndefOr[HammerListener] = js.undefined
     
-    var onPinchStart: js.UndefOr[HammerListener] = js.native
+    var onPinchStart: js.UndefOr[HammerListener] = js.undefined
     
-    var onPress: js.UndefOr[HammerListener] = js.native
+    var onPress: js.UndefOr[HammerListener] = js.undefined
     
-    var onPressUp: js.UndefOr[HammerListener] = js.native
+    var onPressUp: js.UndefOr[HammerListener] = js.undefined
     
-    var onRotate: js.UndefOr[HammerListener] = js.native
+    var onRotate: js.UndefOr[HammerListener] = js.undefined
     
-    var onRotateCancel: js.UndefOr[HammerListener] = js.native
+    var onRotateCancel: js.UndefOr[HammerListener] = js.undefined
     
-    var onRotateEnd: js.UndefOr[HammerListener] = js.native
+    var onRotateEnd: js.UndefOr[HammerListener] = js.undefined
     
-    var onRotateMove: js.UndefOr[HammerListener] = js.native
+    var onRotateMove: js.UndefOr[HammerListener] = js.undefined
     
-    var onRotateStart: js.UndefOr[HammerListener] = js.native
+    var onRotateStart: js.UndefOr[HammerListener] = js.undefined
     
-    var onSwipe: js.UndefOr[HammerListener] = js.native
+    var onSwipe: js.UndefOr[HammerListener] = js.undefined
     
-    var onTap: js.UndefOr[HammerListener] = js.native
+    var onTap: js.UndefOr[HammerListener] = js.undefined
     
-    var options: js.UndefOr[HammerOptionsWithRecognizers] = js.native
+    var options: js.UndefOr[HammerOptionsWithRecognizers] = js.undefined
     
-    var recognizeWith: js.UndefOr[StringDictionary[Recognizer | String]] = js.native
+    var recognizeWith: js.UndefOr[StringDictionary[Recognizer | String]] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ReactHammerProps {
     
@@ -351,8 +348,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = ComponentClass[ReactHammerProps, ComponentState]
+  type _To = js.Object & (ComponentClass[ReactHammerProps, ComponentState])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ComponentClass[ReactHammerProps, ComponentState] = ^
+  override def _to: js.Object & (ComponentClass[ReactHammerProps, ComponentState]) = ^
 }

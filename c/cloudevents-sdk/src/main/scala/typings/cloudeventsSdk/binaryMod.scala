@@ -3,16 +3,17 @@ package typings.cloudeventsSdk
 import typings.cloudeventsSdk.cloudeventMod.CloudEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryMod {
   
-  @JSImport("cloudevents-sdk/lib/bindings/http/validation/binary", "check")
+  @JSImport("cloudevents-sdk/lib/bindings/http/validation/binary", JSImport.Namespace)
   @js.native
-  def check(payload: js.Any, headers: js.Any, receiver: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cloudevents-sdk/lib/bindings/http/validation/binary", "parse")
-  @js.native
-  def parse(payload: js.Any, headers: js.Any, receiver: js.Any): CloudEvent = js.native
+  @scala.inline
+  def check(payload: js.Any, headers: js.Any, receiver: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(payload.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parse(payload: js.Any, headers: js.Any, receiver: js.Any): CloudEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(payload.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[CloudEvent]
 }

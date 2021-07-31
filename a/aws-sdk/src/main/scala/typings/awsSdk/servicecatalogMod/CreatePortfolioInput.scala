@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePortfolioInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The description of the portfolio.
     */
-  var Description: js.UndefOr[PortfolioDescription] = js.native
+  var Description: js.UndefOr[PortfolioDescription] = js.undefined
   
   /**
     * The name to use for display purposes.
     */
-  var DisplayName: PortfolioDisplayName = js.native
+  var DisplayName: PortfolioDisplayName
   
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken = js.native
+  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
     * The name of the portfolio provider.
     */
-  var ProviderName: typings.awsSdk.servicecatalogMod.ProviderName = js.native
+  var ProviderName: typings.awsSdk.servicecatalogMod.ProviderName
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[AddTags] = js.native
+  var Tags: js.UndefOr[AddTags] = js.undefined
 }
 object CreatePortfolioInput {
   

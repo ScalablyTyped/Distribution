@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAmiProductCode extends StObject {
   
-  var productCodeId: String = js.native
+  var productCodeId: String
   
-  var productCodeType: String = js.native
+  var productCodeType: String
 }
 object GetAmiProductCode {
   

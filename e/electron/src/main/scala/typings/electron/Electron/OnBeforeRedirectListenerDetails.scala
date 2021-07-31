@@ -3,40 +3,38 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBeforeRedirectListenerDetails extends StObject {
   
-  var fromCache: Boolean = js.native
+  var fromCache: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The server IP address that the request was actually sent to.
     */
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var redirectURL: String = js.native
+  var redirectURL: String
   
-  var referrer: String = js.native
+  var referrer: String
   
-  var resourceType: String = js.native
+  var resourceType: String
   
-  var responseHeaders: js.UndefOr[Record[String, js.Array[String]]] = js.native
+  var responseHeaders: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusLine: String = js.native
+  var statusLine: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var url: String = js.native
+  var url: String
   
-  var webContentsId: js.UndefOr[Double] = js.native
+  var webContentsId: js.UndefOr[Double] = js.undefined
 }
 object OnBeforeRedirectListenerDetails {
   

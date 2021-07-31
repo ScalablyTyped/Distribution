@@ -3,20 +3,18 @@ package typings.iobroker.mod.global.ioBroker
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificates extends StObject {
   
   /** chained CA certificates */
-  var ca: js.Array[String | Buffer] = js.native
+  var ca: js.Array[String | Buffer]
   
   /** public certificate */
-  var cert: String | Buffer = js.native
+  var cert: String | Buffer
   
   /** private key file */
-  var key: String | Buffer = js.native
+  var key: String | Buffer
 }
 object Certificates {
   

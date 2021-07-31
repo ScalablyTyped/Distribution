@@ -2,20 +2,18 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedDataProvider extends StObject {
   
   /**
     * The total time the data provider took to resolve its data (in milliseconds)
     */
-  var duration: Double = js.native
+  var duration: Double
   
-  var error: String = js.native
+  var error: String
   
-  var id: String = js.native
+  var id: String
 }
 object ResolvedDataProvider {
   

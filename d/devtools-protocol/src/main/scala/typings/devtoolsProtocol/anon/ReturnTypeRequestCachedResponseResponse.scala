@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestCachedResponseR
 import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestCachedResponseResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRequestCachedResponseResponse extends StObject {
   
-  var paramsType: js.Array[RequestCachedResponseRequest] = js.native
+  var paramsType: js.Array[RequestCachedResponseRequest]
   
-  var returnType: RequestCachedResponseResponse = js.native
+  var returnType: RequestCachedResponseResponse
 }
 object ReturnTypeRequestCachedResponseResponse {
   

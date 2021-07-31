@@ -2,15 +2,13 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockAdditionalSignUpFieldOption extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var value: String = js.native
+  var value: String
 }
 object Auth0LockAdditionalSignUpFieldOption {
   

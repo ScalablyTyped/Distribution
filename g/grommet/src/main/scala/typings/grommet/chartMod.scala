@@ -38,7 +38,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartMod {
@@ -55,50 +54,49 @@ object chartMod {
   @js.native
   val Chart: ComponentClass[ChartProps, ComponentState] = js.native
   
-  @js.native
   trait ChartProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+    var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
     
-    var color: js.UndefOr[ColorType | js.Array[Color] | Opacity] = js.native
+    var color: js.UndefOr[ColorType | js.Array[Color] | Opacity] = js.undefined
     
-    var dash: js.UndefOr[Boolean] = js.native
+    var dash: js.UndefOr[Boolean] = js.undefined
     
-    var gap: js.UndefOr[GapType] = js.native
+    var gap: js.UndefOr[GapType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.native
+    var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
     
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
-    var pad: js.UndefOr[EdgeSizeType | Vertical] = js.native
+    var pad: js.UndefOr[EdgeSizeType | Vertical] = js.undefined
     
-    var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.native
+    var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[
         xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String
-      ] = js.native
+      ] = js.undefined
     
-    var thickness: js.UndefOr[ThicknessType] = js.native
+    var thickness: js.UndefOr[ThicknessType] = js.undefined
     
-    var `type`: js.UndefOr[bar | line | area | point] = js.native
+    var `type`: js.UndefOr[bar | line | area | point] = js.undefined
     
-    var values: js.Array[Double | js.Array[Double] | Label] = js.native
+    var values: js.Array[Double | js.Array[Double] | Label]
   }
   object ChartProps {
     
@@ -172,13 +170,13 @@ object chartMod {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnHover(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+      def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)

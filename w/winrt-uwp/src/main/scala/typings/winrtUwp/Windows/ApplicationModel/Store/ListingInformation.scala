@@ -3,41 +3,39 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the listing info that describes the app in the Windows Store. */
-@js.native
 trait ListingInformation extends StObject {
   
   /** Gets the age rating for the app. */
-  var ageRating: Double = js.native
+  var ageRating: Double
   
-  var currencyCode: js.Any = js.native
+  var currencyCode: js.Any
   
   /* unmapped type */
   /** Gets the country code associated with the user's location, such as US or CA, that is used to identify their market for transactions in the current session. */
-  var currentMarket: String = js.native
+  var currentMarket: String
   
   /** Gets the app's description in the current market. */
-  var description: String = js.native
+  var description: String
   
-  var formattedBasePrice: js.Any = js.native
+  var formattedBasePrice: js.Any
   
   /* unmapped type */
   /** Gets the app's purchase price formatted for the current market and currency. */
-  var formattedPrice: String = js.native
+  var formattedPrice: String
   
-  var isOnSale: js.Any = js.native
+  var isOnSale: js.Any
   
   /* unmapped type */
   /** Gets the app's name in the current market. */
-  var name: String = js.native
+  var name: String
   
   /** Gets information about in-app products available for purchase. */
-  var productListings: IMapView[String, ProductListing] = js.native
+  var productListings: IMapView[String, ProductListing]
   
-  var saleEndDate: js.Any = js.native
+  var saleEndDate: js.Any
 }
 object ListingInformation {
   

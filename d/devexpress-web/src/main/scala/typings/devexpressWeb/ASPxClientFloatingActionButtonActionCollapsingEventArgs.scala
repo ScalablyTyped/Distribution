@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ActionCollapsing event.
   */
-@js.native
-trait ASPxClientFloatingActionButtonActionCollapsingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFloatingActionButtonActionCollapsingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies whether the user action or APIs has collapsed the action group.
     */
-  var collapseReason: ASPxClientFloatingActionButtonCollapseReason = js.native
+  var collapseReason: ASPxClientFloatingActionButtonCollapseReason
   
   /**
     * Specifies the FAB action's context name.
     */
-  var contextName: String = js.native
+  var contextName: String
 }
 object ASPxClientFloatingActionButtonActionCollapsingEventArgs {
   

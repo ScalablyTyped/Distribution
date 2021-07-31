@@ -5,7 +5,6 @@ import typings.lockfileLintApi.lockfileLintApiStrings.success
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -56,13 +55,12 @@ object mod {
     def validateSingle(packageName: String, allowedUrls: Hosts): Boolean = js.native
   }
   
-  @js.native
   trait Error extends StObject {
     
     @JSName("package")
-    var _package: String = js.native
+    var _package: String
     
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -86,14 +84,13 @@ object mod {
   
   type Hosts = js.Array[String]
   
-  @js.native
   trait PackageMetadata extends StObject {
     
-    var dependencies: js.UndefOr[Record[String, String]] = js.native
+    var dependencies: js.UndefOr[Record[String, String]] = js.undefined
     
-    var resolved: js.UndefOr[String] = js.native
+    var resolved: js.UndefOr[String] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object PackageMetadata {
     
@@ -125,12 +122,11 @@ object mod {
   
   type Packages = Record[String, PackageMetadata]
   
-  @js.native
   trait ParseLockfileOptions extends StObject {
     
-    var lockfilePath: String = js.native
+    var lockfilePath: String
     
-    var lockfileType: String = js.native
+    var lockfileType: String
   }
   object ParseLockfileOptions {
     
@@ -151,20 +147,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseLockfileResult extends StObject {
     
-    var `object`: Packages = js.native
+    var `object`: Packages
     
-    var `type`: success = js.native
+    var `type`: success
   }
   object ParseLockfileResult {
     
     @scala.inline
-    def apply(`object`: Packages, `type`: success): ParseLockfileResult = {
+    def apply(`object`: Packages): ParseLockfileResult = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[ParseLockfileResult]
     }
     
@@ -179,19 +174,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait ValidationError extends ValidationResult {
+  trait ValidationError
+    extends StObject
+       with ValidationResult {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var `type`: error = js.native
+    var `type`: error
   }
   object ValidationError {
     
     @scala.inline
-    def apply(errors: js.Array[Error], `type`: error): ValidationError = {
+    def apply(errors: js.Array[Error]): ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("error")
       __obj.asInstanceOf[ValidationError]
     }
     
@@ -209,10 +205,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidationOptions extends StObject {
     
-    var emptyHostname: js.UndefOr[Boolean] = js.native
+    var emptyHostname: js.UndefOr[Boolean] = js.undefined
   }
   object ValidationOptions {
     
@@ -241,35 +236,36 @@ object mod {
   object ValidationResult {
     
     @scala.inline
-    def ValidationError(errors: js.Array[Error], `type`: error): typings.lockfileLintApi.mod.ValidationError = {
+    def ValidationError(errors: js.Array[Error]): typings.lockfileLintApi.mod.ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("error")
       __obj.asInstanceOf[typings.lockfileLintApi.mod.ValidationError]
     }
     
     @scala.inline
-    def ValidationSuccess(`object`: Packages, `type`: success): typings.lockfileLintApi.mod.ValidationSuccess = {
+    def ValidationSuccess(`object`: Packages): typings.lockfileLintApi.mod.ValidationSuccess = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[typings.lockfileLintApi.mod.ValidationSuccess]
     }
   }
   
-  @js.native
-  trait ValidationSuccess extends ValidationResult {
+  trait ValidationSuccess
+    extends StObject
+       with ValidationResult {
     
-    var `object`: Packages = js.native
+    var `object`: Packages
     
-    var `type`: success = js.native
+    var `type`: success
   }
   object ValidationSuccess {
     
     @scala.inline
-    def apply(`object`: Packages, `type`: success): ValidationSuccess = {
+    def apply(`object`: Packages): ValidationSuccess = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[ValidationSuccess]
     }
     

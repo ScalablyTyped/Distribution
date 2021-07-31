@@ -7,52 +7,52 @@ import typings.koaSend.koaSendBooleans.`false`
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-send", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String): js.Promise[String] = js.native
-  @JSImport("koa-send", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String, opts: SendOptions): js.Promise[String] = js.native
+  @scala.inline
+  def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String, opts: SendOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  @JSImport("koa-send", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SendOptions extends StObject {
     
     /** Try to serve the brotli version of a file automatically when brotli is supported by a client and if the requested file with .br extension exists. (defaults to true). */
-    var brotli: js.UndefOr[Boolean] = js.native
+    var brotli: js.UndefOr[Boolean] = js.undefined
     
     /** Try to match extensions from passed array to search for file when no extension is sufficed in URL. First found is served. (defaults to false) */
-    var extensions: js.UndefOr[js.Array[String] | `false`] = js.native
+    var extensions: js.UndefOr[js.Array[String] | `false`] = js.undefined
     
     /** If not false (defaults to true), format the path to serve static file servers and not require a trailing slash for directories, so that you can do both /directory and /directory/. */
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
     /** Try to serve the gzipped version of a file automatically when gzip is supported by a client and if the requested file with .gz extension exists. (defaults to true). */
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
     /** Allow transfer of hidden files. (defaults to false) */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** Tell the browser the resource is immutable and can be cached indefinitely. (defaults to false) */
-    var immutable: js.UndefOr[Boolean] = js.native
+    var immutable: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the index file to serve automatically when visiting the root location. (defaults to none) */
-    var index: js.UndefOr[String | `false`] = js.native
+    var index: js.UndefOr[String | `false`] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /** Browser cache max-age in milliseconds. (defaults to 0) */
-    var maxage: js.UndefOr[Double] = js.native
+    var maxage: js.UndefOr[Double] = js.undefined
     
     /** Root directory to restrict file access. (defaults to '') */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** Function to set custom headers on response. */
-    var setHeaders: js.UndefOr[SetHeaders] = js.native
+    var setHeaders: js.UndefOr[SetHeaders] = js.undefined
   }
   object SendOptions {
     

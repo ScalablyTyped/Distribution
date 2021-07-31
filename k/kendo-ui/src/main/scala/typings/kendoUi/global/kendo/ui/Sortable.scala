@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.SortableOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Sortable")
 @js.native
 class Sortable protected ()
-  extends typings.kendoUi.kendo.ui.Sortable {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Sortable {
   def this(element: Element) = this()
   def this(element: Element, options: SortableOptions) = this()
 }
@@ -21,9 +21,8 @@ object Sortable {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Sortable.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Sortable = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Sortable = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Sortable]
   
   /* static member */
   @JSGlobal("kendo.ui.Sortable.fn")

@@ -2,10 +2,8 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowRootOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ShadowRootOptions extends StObject {
     * around focusability. When a non-focusable part of the shadow DOM is clicked, the first
     * focusable part is given focus, and the shadow host is given any available `:focus` styling.
     */
-  var delegatesFocus: js.UndefOr[Boolean] = js.native
+  var delegatesFocus: js.UndefOr[Boolean] = js.undefined
 }
 object ShadowRootOptions {
   

@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadPreloadMod {
   
-  @js.native
   trait DownloadPreloadInfo extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var success: Boolean = js.native
+    var success: Boolean
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object DownloadPreloadInfo {
     
@@ -41,10 +39,9 @@ object downloadPreloadMod {
     }
   }
   
-  @js.native
   trait DownloadPreloadOption extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object DownloadPreloadOption {
     

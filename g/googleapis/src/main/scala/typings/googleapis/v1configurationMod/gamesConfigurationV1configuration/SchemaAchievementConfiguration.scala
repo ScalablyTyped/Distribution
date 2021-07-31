@@ -2,13 +2,11 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an achievement configuration resource.
   */
-@js.native
 trait SchemaAchievementConfiguration extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaAchievementConfiguration extends StObject {
     * &quot;STANDARD&quot; - Achievement is either locked or unlocked.  -
     * &quot;INCREMENTAL&quot; - Achievement is incremental.
     */
-  var achievementType: js.UndefOr[String] = js.native
+  var achievementType: js.UndefOr[String] = js.undefined
   
   /**
     * The draft data of the achievement.
     */
-  var draft: js.UndefOr[SchemaAchievementConfigurationDetail] = js.native
+  var draft: js.UndefOr[SchemaAchievementConfigurationDetail] = js.undefined
   
   /**
     * The ID of the achievement.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The initial state of the achievement. Possible values are:   -
@@ -34,28 +32,28 @@ trait SchemaAchievementConfiguration extends StObject {
     * Achievement is revealed.  - &quot;UNLOCKED&quot; - Achievement is
     * unlocked.
     */
-  var initialState: js.UndefOr[String] = js.native
+  var initialState: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesConfiguration#achievementConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only published data of the achievement.
     */
-  var published: js.UndefOr[SchemaAchievementConfigurationDetail] = js.native
+  var published: js.UndefOr[SchemaAchievementConfigurationDetail] = js.undefined
   
   /**
     * Steps to unlock. Only applicable to incremental achievements.
     */
-  var stepsToUnlock: js.UndefOr[Double] = js.native
+  var stepsToUnlock: js.UndefOr[Double] = js.undefined
   
   /**
     * The token for this resource.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaAchievementConfiguration {
   

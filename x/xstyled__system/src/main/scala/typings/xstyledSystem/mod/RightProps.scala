@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightProps[TLength] extends StObject {
   
   val right: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object RightProps {
   
@@ -23,12 +21,12 @@ object RightProps {
   }
   
   @scala.inline
-  implicit class RightPropsMutableBuilder[Self <: RightProps[_], TLength] (val x: Self with RightProps[TLength]) extends AnyVal {
+  implicit class RightPropsMutableBuilder[Self <: RightProps[?], TLength] (val x: Self & RightProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setRight(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object RightProps {
     def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def setRightVarargs(value: js.Any*): Self = StObject.set(x, "right", js.Array(value :_*))
+    def setRightVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "right", js.Array(value :_*))
   }
 }

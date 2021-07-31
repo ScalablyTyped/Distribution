@@ -159,10 +159,13 @@ import typings.themeUiComponents.themeUiComponentsStrings.vertical
 import typings.themeUiComponents.themeUiComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@theme-ui/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@theme-ui/components", "Alert")
   @js.native
@@ -220,9 +223,8 @@ object mod {
   @js.native
   val Embed: ForwardRef[HTMLIFrameElement, EmbedProps] = js.native
   
-  @JSImport("@theme-ui/components", "Field")
-  @js.native
-  def Field[T /* <: ElementType[_] */](props: FieldProps[T]): Element = js.native
+  @scala.inline
+  def Field[T /* <: ElementType[js.Any] */](props: FieldProps[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@theme-ui/components", "Flex")
   @js.native
@@ -299,10 +301,9 @@ object mod {
   type AlertProps = BoxProps
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react.react.ComponentProps<'img'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'img'>? react.react.ComponentProps<'img'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ @js.native
-  trait AspectImageProps extends StObject {
+  - Dropped {[ P in keyof react.react.ComponentProps<'img'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'img'>? react.react.ComponentProps<'img'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ trait AspectImageProps extends StObject {
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
   }
   object AspectImageProps {
     
@@ -324,10 +325,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ @js.native
-  trait AspectRatioProps extends StObject {
+  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ trait AspectRatioProps extends StObject {
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
   }
   object AspectRatioProps {
     
@@ -350,13 +350,12 @@ object mod {
   
   type Assign[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T & U ]: P extends keyof T? T[P] : P extends keyof U? U[P] : never}
-    */ typings.themeUiComponents.themeUiComponentsStrings.Assign with TopLevel[js.Any]
+    */ typings.themeUiComponents.themeUiComponentsStrings.Assign & TopLevel[js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react.react.ComponentProps<'img'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'img'>? react.react.ComponentProps<'img'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ @js.native
-  trait AvatarProps extends StObject {
+  - Dropped {[ P in keyof react.react.ComponentProps<'img'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'img'>? react.react.ComponentProps<'img'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ trait AvatarProps extends StObject {
     
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
   }
   object AvatarProps {
     
@@ -379,20 +378,20 @@ object mod {
   
   type BadgeProps = BoxProps
   
-  @js.native
   trait BoxOwnProps
-    extends ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
-       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]] {
+    extends StObject
+       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
+       with ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]] {
     
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var css: js.UndefOr[InterpolationWithTheme[_]] = js.native
+    var css: js.UndefOr[InterpolationWithTheme[js.Any]] = js.undefined
     
     var sx: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SxStyleProp */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
   }
   object BoxOwnProps {
     
@@ -406,16 +405,16 @@ object mod {
     implicit class BoxOwnPropsMutableBuilder[Self <: BoxOwnProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       @scala.inline
-      def setCss(value: InterpolationWithTheme[_]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCssFunction1(value: _ => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+      def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCssNull: Self = StObject.set(x, "css", null)
@@ -455,148 +454,147 @@ object mod {
   
   /* Inlined parent @theme-ui/components.@theme-ui/components.Omit<react.react.SVGProps<std.SVGSVGElement>, 'opacity' | 'color' | 'css' | 'sx' | 'max' | 'min'> */
   /* Inlined parent @theme-ui/components.@theme-ui/components.BoxOwnProps */
-  @js.native
   trait DonutProps extends StObject {
     
-    var accentHeight: js.UndefOr[Double | String] = js.native
+    var accentHeight: js.UndefOr[Double | String] = js.undefined
     
-    var accumulate: js.UndefOr[none | sum] = js.native
+    var accumulate: js.UndefOr[none | sum] = js.undefined
     
-    var additive: js.UndefOr[replace | sum] = js.native
+    var additive: js.UndefOr[replace | sum] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
         auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
-      ] = js.native
+      ] = js.undefined
     
-    var allowReorder: js.UndefOr[no | yes] = js.native
+    var allowReorder: js.UndefOr[no | yes] = js.undefined
     
-    var alphabetic: js.UndefOr[Double | String] = js.native
+    var alphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var amplitude: js.UndefOr[Double | String] = js.native
+    var amplitude: js.UndefOr[Double | String] = js.undefined
     
-    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.native
+    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var ascent: js.UndefOr[Double | String] = js.native
+    var ascent: js.UndefOr[Double | String] = js.undefined
     
-    var attributeName: js.UndefOr[String] = js.native
+    var attributeName: js.UndefOr[String] = js.undefined
     
-    var attributeType: js.UndefOr[String] = js.native
+    var attributeType: js.UndefOr[String] = js.undefined
     
-    var autoReverse: js.UndefOr[Booleanish] = js.native
+    var autoReverse: js.UndefOr[Booleanish] = js.undefined
     
-    var azimuth: js.UndefOr[Double | String] = js.native
+    var azimuth: js.UndefOr[Double | String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var baseFrequency: js.UndefOr[Double | String] = js.native
+    var baseFrequency: js.UndefOr[Double | String] = js.undefined
     
-    var baseProfile: js.UndefOr[Double | String] = js.native
+    var baseProfile: js.UndefOr[Double | String] = js.undefined
     
-    var baselineShift: js.UndefOr[Double | String] = js.native
+    var baselineShift: js.UndefOr[Double | String] = js.undefined
     
-    var bbox: js.UndefOr[Double | String] = js.native
+    var bbox: js.UndefOr[Double | String] = js.undefined
     
-    var begin: js.UndefOr[Double | String] = js.native
+    var begin: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -607,27 +605,27 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var bias: js.UndefOr[Double | String] = js.native
+    var bias: js.UndefOr[Double | String] = js.undefined
     
-    var by: js.UndefOr[Double | String] = js.native
+    var by: js.UndefOr[Double | String] = js.undefined
     
-    var calcMode: js.UndefOr[Double | String] = js.native
+    var calcMode: js.UndefOr[Double | String] = js.undefined
     
-    var capHeight: js.UndefOr[Double | String] = js.native
+    var capHeight: js.UndefOr[Double | String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clip: js.UndefOr[Double | String] = js.native
+    var clip: js.UndefOr[Double | String] = js.undefined
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipPathUnits: js.UndefOr[Double | String] = js.native
+    var clipPathUnits: js.UndefOr[Double | String] = js.undefined
     
-    var clipRule: js.UndefOr[Double | String] = js.native
+    var clipRule: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -638,415 +636,415 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var colorInterpolation: js.UndefOr[Double | String] = js.native
+    var colorInterpolation: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.native
+    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
     
-    var colorProfile: js.UndefOr[Double | String] = js.native
+    var colorProfile: js.UndefOr[Double | String] = js.undefined
     
-    var colorRendering: js.UndefOr[Double | String] = js.native
+    var colorRendering: js.UndefOr[Double | String] = js.undefined
     
-    var contentScriptType: js.UndefOr[Double | String] = js.native
+    var contentScriptType: js.UndefOr[Double | String] = js.undefined
     
-    var contentStyleType: js.UndefOr[Double | String] = js.native
+    var contentStyleType: js.UndefOr[Double | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
-    var css: js.UndefOr[InterpolationWithTheme[_]] = js.native
+    var css: js.UndefOr[InterpolationWithTheme[js.Any]] = js.undefined
     
-    var cursor: js.UndefOr[Double | String] = js.native
+    var cursor: js.UndefOr[Double | String] = js.undefined
     
-    var cx: js.UndefOr[Double | String] = js.native
+    var cx: js.UndefOr[Double | String] = js.undefined
     
-    var cy: js.UndefOr[Double | String] = js.native
+    var cy: js.UndefOr[Double | String] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var decelerate: js.UndefOr[Double | String] = js.native
+    var decelerate: js.UndefOr[Double | String] = js.undefined
     
-    var descent: js.UndefOr[Double | String] = js.native
+    var descent: js.UndefOr[Double | String] = js.undefined
     
-    var diffuseConstant: js.UndefOr[Double | String] = js.native
+    var diffuseConstant: js.UndefOr[Double | String] = js.undefined
     
-    var direction: js.UndefOr[Double | String] = js.native
+    var direction: js.UndefOr[Double | String] = js.undefined
     
-    var display: js.UndefOr[Double | String] = js.native
+    var display: js.UndefOr[Double | String] = js.undefined
     
-    var divisor: js.UndefOr[Double | String] = js.native
+    var divisor: js.UndefOr[Double | String] = js.undefined
     
-    var dominantBaseline: js.UndefOr[Double | String] = js.native
+    var dominantBaseline: js.UndefOr[Double | String] = js.undefined
     
-    var dur: js.UndefOr[Double | String] = js.native
+    var dur: js.UndefOr[Double | String] = js.undefined
     
-    var dx: js.UndefOr[Double | String] = js.native
+    var dx: js.UndefOr[Double | String] = js.undefined
     
-    var dy: js.UndefOr[Double | String] = js.native
+    var dy: js.UndefOr[Double | String] = js.undefined
     
-    var edgeMode: js.UndefOr[Double | String] = js.native
+    var edgeMode: js.UndefOr[Double | String] = js.undefined
     
-    var elevation: js.UndefOr[Double | String] = js.native
+    var elevation: js.UndefOr[Double | String] = js.undefined
     
-    var enableBackground: js.UndefOr[Double | String] = js.native
+    var enableBackground: js.UndefOr[Double | String] = js.undefined
     
-    var end: js.UndefOr[Double | String] = js.native
+    var end: js.UndefOr[Double | String] = js.undefined
     
-    var exponent: js.UndefOr[Double | String] = js.native
+    var exponent: js.UndefOr[Double | String] = js.undefined
     
-    var externalResourcesRequired: js.UndefOr[Booleanish] = js.native
+    var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double | String] = js.native
+    var fillOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.native
+    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var filterRes: js.UndefOr[Double | String] = js.native
+    var filterRes: js.UndefOr[Double | String] = js.undefined
     
-    var filterUnits: js.UndefOr[Double | String] = js.native
+    var filterUnits: js.UndefOr[Double | String] = js.undefined
     
-    var floodColor: js.UndefOr[Double | String] = js.native
+    var floodColor: js.UndefOr[Double | String] = js.undefined
     
-    var floodOpacity: js.UndefOr[Double | String] = js.native
+    var floodOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var focusable: js.UndefOr[Booleanish | auto] = js.native
+    var focusable: js.UndefOr[Booleanish | auto] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+    var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var fontStretch: js.UndefOr[Double | String] = js.native
+    var fontStretch: js.UndefOr[Double | String] = js.undefined
     
-    var fontStyle: js.UndefOr[Double | String] = js.native
+    var fontStyle: js.UndefOr[Double | String] = js.undefined
     
-    var fontVariant: js.UndefOr[Double | String] = js.native
+    var fontVariant: js.UndefOr[Double | String] = js.undefined
     
-    var fontWeight: js.UndefOr[Double | String] = js.native
+    var fontWeight: js.UndefOr[Double | String] = js.undefined
     
-    var format: js.UndefOr[Double | String] = js.native
+    var format: js.UndefOr[Double | String] = js.undefined
     
-    var from: js.UndefOr[Double | String] = js.native
+    var from: js.UndefOr[Double | String] = js.undefined
     
-    var fx: js.UndefOr[Double | String] = js.native
+    var fx: js.UndefOr[Double | String] = js.undefined
     
-    var fy: js.UndefOr[Double | String] = js.native
+    var fy: js.UndefOr[Double | String] = js.undefined
     
-    var g1: js.UndefOr[Double | String] = js.native
+    var g1: js.UndefOr[Double | String] = js.undefined
     
-    var g2: js.UndefOr[Double | String] = js.native
+    var g2: js.UndefOr[Double | String] = js.undefined
     
-    var glyphName: js.UndefOr[Double | String] = js.native
+    var glyphName: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.native
+    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationVertical: js.UndefOr[Double | String] = js.native
+    var glyphOrientationVertical: js.UndefOr[Double | String] = js.undefined
     
-    var glyphRef: js.UndefOr[Double | String] = js.native
+    var glyphRef: js.UndefOr[Double | String] = js.undefined
     
-    var gradientTransform: js.UndefOr[String] = js.native
+    var gradientTransform: js.UndefOr[String] = js.undefined
     
-    var gradientUnits: js.UndefOr[String] = js.native
+    var gradientUnits: js.UndefOr[String] = js.undefined
     
-    var hanging: js.UndefOr[Double | String] = js.native
+    var hanging: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var horizAdvX: js.UndefOr[Double | String] = js.native
+    var horizAdvX: js.UndefOr[Double | String] = js.undefined
     
-    var horizOriginX: js.UndefOr[Double | String] = js.native
+    var horizOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var ideographic: js.UndefOr[Double | String] = js.native
+    var ideographic: js.UndefOr[Double | String] = js.undefined
     
-    var imageRendering: js.UndefOr[Double | String] = js.native
+    var imageRendering: js.UndefOr[Double | String] = js.undefined
     
-    var in: js.UndefOr[String] = js.native
+    var in: js.UndefOr[String] = js.undefined
     
-    var in2: js.UndefOr[Double | String] = js.native
+    var in2: js.UndefOr[Double | String] = js.undefined
     
-    var intercept: js.UndefOr[Double | String] = js.native
+    var intercept: js.UndefOr[Double | String] = js.undefined
     
-    var k: js.UndefOr[Double | String] = js.native
+    var k: js.UndefOr[Double | String] = js.undefined
     
-    var k1: js.UndefOr[Double | String] = js.native
+    var k1: js.UndefOr[Double | String] = js.undefined
     
-    var k2: js.UndefOr[Double | String] = js.native
+    var k2: js.UndefOr[Double | String] = js.undefined
     
-    var k3: js.UndefOr[Double | String] = js.native
+    var k3: js.UndefOr[Double | String] = js.undefined
     
-    var k4: js.UndefOr[Double | String] = js.native
+    var k4: js.UndefOr[Double | String] = js.undefined
     
-    var kernelMatrix: js.UndefOr[Double | String] = js.native
+    var kernelMatrix: js.UndefOr[Double | String] = js.undefined
     
-    var kernelUnitLength: js.UndefOr[Double | String] = js.native
+    var kernelUnitLength: js.UndefOr[Double | String] = js.undefined
     
-    var kerning: js.UndefOr[Double | String] = js.native
+    var kerning: js.UndefOr[Double | String] = js.undefined
     
-    var key: js.UndefOr[Key | Null] = js.native
+    var key: js.UndefOr[Key | Null] = js.undefined
     
-    var keyPoints: js.UndefOr[Double | String] = js.native
+    var keyPoints: js.UndefOr[Double | String] = js.undefined
     
-    var keySplines: js.UndefOr[Double | String] = js.native
+    var keySplines: js.UndefOr[Double | String] = js.undefined
     
-    var keyTimes: js.UndefOr[Double | String] = js.native
+    var keyTimes: js.UndefOr[Double | String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var lengthAdjust: js.UndefOr[Double | String] = js.native
+    var lengthAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var letterSpacing: js.UndefOr[Double | String] = js.native
+    var letterSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var lightingColor: js.UndefOr[Double | String] = js.native
+    var lightingColor: js.UndefOr[Double | String] = js.undefined
     
-    var limitingConeAngle: js.UndefOr[Double | String] = js.native
+    var limitingConeAngle: js.UndefOr[Double | String] = js.undefined
     
-    var local: js.UndefOr[Double | String] = js.native
+    var local: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerHeight: js.UndefOr[Double | String] = js.native
+    var markerHeight: js.UndefOr[Double | String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var markerUnits: js.UndefOr[Double | String] = js.native
+    var markerUnits: js.UndefOr[Double | String] = js.undefined
     
-    var markerWidth: js.UndefOr[Double | String] = js.native
+    var markerWidth: js.UndefOr[Double | String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var maskContentUnits: js.UndefOr[Double | String] = js.native
+    var maskContentUnits: js.UndefOr[Double | String] = js.undefined
     
-    var maskUnits: js.UndefOr[Double | String] = js.native
+    var maskUnits: js.UndefOr[Double | String] = js.undefined
     
-    var mathematical: js.UndefOr[Double | String] = js.native
+    var mathematical: js.UndefOr[Double | String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var mode: js.UndefOr[Double | String] = js.native
+    var mode: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var numOctaves: js.UndefOr[Double | String] = js.native
+    var numOctaves: js.UndefOr[Double | String] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[SVGSVGElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[SVGSVGElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[SVGSVGElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[SVGSVGElement]] = js.undefined
     
     /**
       * The opacity CSS property sets the transparency of an element or the degree to which content
@@ -1056,322 +1054,322 @@ object mod {
       */
     var opacity: js.UndefOr[
         ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
           RequiredTheme
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var operator: js.UndefOr[Double | String] = js.native
+    var operator: js.UndefOr[Double | String] = js.undefined
     
-    var order: js.UndefOr[Double | String] = js.native
+    var order: js.UndefOr[Double | String] = js.undefined
     
-    var orient: js.UndefOr[Double | String] = js.native
+    var orient: js.UndefOr[Double | String] = js.undefined
     
-    var orientation: js.UndefOr[Double | String] = js.native
+    var orientation: js.UndefOr[Double | String] = js.undefined
     
-    var origin: js.UndefOr[Double | String] = js.native
+    var origin: js.UndefOr[Double | String] = js.undefined
     
-    var overflow: js.UndefOr[Double | String] = js.native
+    var overflow: js.UndefOr[Double | String] = js.undefined
     
-    var overlinePosition: js.UndefOr[Double | String] = js.native
+    var overlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var overlineThickness: js.UndefOr[Double | String] = js.native
-    
-    /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var overlineThickness: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    
+    /** Padding on top, left, bottom and right */
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var paintOrder: js.UndefOr[Double | String] = js.native
+    var paintOrder: js.UndefOr[Double | String] = js.undefined
     
-    var panose1: js.UndefOr[Double | String] = js.native
+    var panose1: js.UndefOr[Double | String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathLength: js.UndefOr[Double | String] = js.native
+    var pathLength: js.UndefOr[Double | String] = js.undefined
     
-    var patternContentUnits: js.UndefOr[String] = js.native
+    var patternContentUnits: js.UndefOr[String] = js.undefined
     
-    var patternTransform: js.UndefOr[Double | String] = js.native
+    var patternTransform: js.UndefOr[Double | String] = js.undefined
     
-    var patternUnits: js.UndefOr[String] = js.native
+    var patternUnits: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var pointerEvents: js.UndefOr[Double | String] = js.native
+    var pointerEvents: js.UndefOr[Double | String] = js.undefined
     
-    var points: js.UndefOr[String] = js.native
+    var points: js.UndefOr[String] = js.undefined
     
-    var pointsAtX: js.UndefOr[Double | String] = js.native
+    var pointsAtX: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtY: js.UndefOr[Double | String] = js.native
+    var pointsAtY: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtZ: js.UndefOr[Double | String] = js.native
+    var pointsAtZ: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var preserveAlpha: js.UndefOr[Booleanish] = js.native
+    var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var primitiveUnits: js.UndefOr[Double | String] = js.native
+    var primitiveUnits: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var r: js.UndefOr[Double | String] = js.native
+    var r: js.UndefOr[Double | String] = js.undefined
     
-    var radius: js.UndefOr[Double | String] = js.native
+    var radius: js.UndefOr[Double | String] = js.undefined
     
-    var ref: js.UndefOr[LegacyRef[SVGSVGElement]] = js.native
+    var ref: js.UndefOr[LegacyRef[SVGSVGElement]] = js.undefined
     
-    var refX: js.UndefOr[Double | String] = js.native
+    var refX: js.UndefOr[Double | String] = js.undefined
     
-    var refY: js.UndefOr[Double | String] = js.native
+    var refY: js.UndefOr[Double | String] = js.undefined
     
-    var renderingIntent: js.UndefOr[Double | String] = js.native
+    var renderingIntent: js.UndefOr[Double | String] = js.undefined
     
-    var repeatCount: js.UndefOr[Double | String] = js.native
+    var repeatCount: js.UndefOr[Double | String] = js.undefined
     
-    var repeatDur: js.UndefOr[Double | String] = js.native
+    var repeatDur: js.UndefOr[Double | String] = js.undefined
     
-    var requiredExtensions: js.UndefOr[Double | String] = js.native
+    var requiredExtensions: js.UndefOr[Double | String] = js.undefined
     
-    var requiredFeatures: js.UndefOr[Double | String] = js.native
+    var requiredFeatures: js.UndefOr[Double | String] = js.undefined
     
-    var restart: js.UndefOr[Double | String] = js.native
+    var restart: js.UndefOr[Double | String] = js.undefined
     
-    var result: js.UndefOr[String] = js.native
+    var result: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double | String] = js.native
+    var rotate: js.UndefOr[Double | String] = js.undefined
     
-    var rx: js.UndefOr[Double | String] = js.native
+    var rx: js.UndefOr[Double | String] = js.undefined
     
-    var ry: js.UndefOr[Double | String] = js.native
+    var ry: js.UndefOr[Double | String] = js.undefined
     
-    var scale: js.UndefOr[Double | String] = js.native
+    var scale: js.UndefOr[Double | String] = js.undefined
     
-    var seed: js.UndefOr[Double | String] = js.native
+    var seed: js.UndefOr[Double | String] = js.undefined
     
-    var shapeRendering: js.UndefOr[Double | String] = js.native
+    var shapeRendering: js.UndefOr[Double | String] = js.undefined
     
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
     
-    var slope: js.UndefOr[Double | String] = js.native
+    var slope: js.UndefOr[Double | String] = js.undefined
     
-    var spacing: js.UndefOr[Double | String] = js.native
+    var spacing: js.UndefOr[Double | String] = js.undefined
     
-    var specularConstant: js.UndefOr[Double | String] = js.native
+    var specularConstant: js.UndefOr[Double | String] = js.undefined
     
-    var specularExponent: js.UndefOr[Double | String] = js.native
+    var specularExponent: js.UndefOr[Double | String] = js.undefined
     
-    var speed: js.UndefOr[Double | String] = js.native
+    var speed: js.UndefOr[Double | String] = js.undefined
     
-    var spreadMethod: js.UndefOr[String] = js.native
+    var spreadMethod: js.UndefOr[String] = js.undefined
     
-    var startOffset: js.UndefOr[Double | String] = js.native
+    var startOffset: js.UndefOr[Double | String] = js.undefined
     
-    var stdDeviation: js.UndefOr[Double | String] = js.native
+    var stdDeviation: js.UndefOr[Double | String] = js.undefined
     
-    var stemh: js.UndefOr[Double | String] = js.native
+    var stemh: js.UndefOr[Double | String] = js.undefined
     
-    var stemv: js.UndefOr[Double | String] = js.native
+    var stemv: js.UndefOr[Double | String] = js.undefined
     
-    var stitchTiles: js.UndefOr[Double | String] = js.native
+    var stitchTiles: js.UndefOr[Double | String] = js.undefined
     
-    var stopColor: js.UndefOr[String] = js.native
+    var stopColor: js.UndefOr[String] = js.undefined
     
-    var stopOpacity: js.UndefOr[Double | String] = js.native
+    var stopOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughPosition: js.UndefOr[Double | String] = js.native
+    var strikethroughPosition: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughThickness: js.UndefOr[Double | String] = js.native
+    var strikethroughThickness: js.UndefOr[Double | String] = js.undefined
     
-    var string: js.UndefOr[Double | String] = js.native
+    var string: js.UndefOr[Double | String] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var strokeDasharray: js.UndefOr[String | Double] = js.native
+    var strokeDasharray: js.UndefOr[String | Double] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[String | Double] = js.native
+    var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.native
+    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.native
+    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+    var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Double | String] = js.native
+    var strokeOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double | String] = js.native
+    var strokeWidth: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var surfaceScale: js.UndefOr[Double | String] = js.native
+    var surfaceScale: js.UndefOr[Double | String] = js.undefined
     
     var sx: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SxStyleProp */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var systemLanguage: js.UndefOr[Double | String] = js.native
+    var systemLanguage: js.UndefOr[Double | String] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var tableValues: js.UndefOr[Double | String] = js.native
+    var tableValues: js.UndefOr[Double | String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var targetX: js.UndefOr[Double | String] = js.native
+    var targetX: js.UndefOr[Double | String] = js.undefined
     
-    var targetY: js.UndefOr[Double | String] = js.native
+    var targetY: js.UndefOr[Double | String] = js.undefined
     
-    var textAnchor: js.UndefOr[String] = js.native
+    var textAnchor: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[Double | String] = js.native
+    var textDecoration: js.UndefOr[Double | String] = js.undefined
     
-    var textLength: js.UndefOr[Double | String] = js.native
+    var textLength: js.UndefOr[Double | String] = js.undefined
     
-    var textRendering: js.UndefOr[Double | String] = js.native
+    var textRendering: js.UndefOr[Double | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[Double | String] = js.native
+    var to: js.UndefOr[Double | String] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var u1: js.UndefOr[Double | String] = js.native
+    var u1: js.UndefOr[Double | String] = js.undefined
     
-    var u2: js.UndefOr[Double | String] = js.native
+    var u2: js.UndefOr[Double | String] = js.undefined
     
-    var underlinePosition: js.UndefOr[Double | String] = js.native
+    var underlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var underlineThickness: js.UndefOr[Double | String] = js.native
+    var underlineThickness: js.UndefOr[Double | String] = js.undefined
     
-    var unicode: js.UndefOr[Double | String] = js.native
+    var unicode: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeBidi: js.UndefOr[Double | String] = js.native
+    var unicodeBidi: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeRange: js.UndefOr[Double | String] = js.native
+    var unicodeRange: js.UndefOr[Double | String] = js.undefined
     
-    var unitsPerEm: js.UndefOr[Double | String] = js.native
+    var unitsPerEm: js.UndefOr[Double | String] = js.undefined
     
-    var vAlphabetic: js.UndefOr[Double | String] = js.native
+    var vAlphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var vHanging: js.UndefOr[Double | String] = js.native
+    var vHanging: js.UndefOr[Double | String] = js.undefined
     
-    var vIdeographic: js.UndefOr[Double | String] = js.native
+    var vIdeographic: js.UndefOr[Double | String] = js.undefined
     
-    var vMathematical: js.UndefOr[Double | String] = js.native
+    var vMathematical: js.UndefOr[Double | String] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
     
-    var values: js.UndefOr[String] = js.native
+    var values: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
     
-    var vectorEffect: js.UndefOr[Double | String] = js.native
+    var vectorEffect: js.UndefOr[Double | String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var vertAdvY: js.UndefOr[Double | String] = js.native
+    var vertAdvY: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginX: js.UndefOr[Double | String] = js.native
+    var vertOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginY: js.UndefOr[Double | String] = js.native
+    var vertOriginY: js.UndefOr[Double | String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var viewTarget: js.UndefOr[Double | String] = js.native
+    var viewTarget: js.UndefOr[Double | String] = js.undefined
     
-    var visibility: js.UndefOr[Double | String] = js.native
+    var visibility: js.UndefOr[Double | String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var widths: js.UndefOr[Double | String] = js.native
+    var widths: js.UndefOr[Double | String] = js.undefined
     
-    var wordSpacing: js.UndefOr[Double | String] = js.native
+    var wordSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var writingMode: js.UndefOr[Double | String] = js.native
+    var writingMode: js.UndefOr[Double | String] = js.undefined
     
-    var x: js.UndefOr[Double | String] = js.native
+    var x: js.UndefOr[Double | String] = js.undefined
     
-    var x1: js.UndefOr[Double | String] = js.native
+    var x1: js.UndefOr[Double | String] = js.undefined
     
-    var x2: js.UndefOr[Double | String] = js.native
+    var x2: js.UndefOr[Double | String] = js.undefined
     
-    var xChannelSelector: js.UndefOr[String] = js.native
+    var xChannelSelector: js.UndefOr[String] = js.undefined
     
-    var xHeight: js.UndefOr[Double | String] = js.native
+    var xHeight: js.UndefOr[Double | String] = js.undefined
     
-    var xlinkActuate: js.UndefOr[String] = js.native
+    var xlinkActuate: js.UndefOr[String] = js.undefined
     
-    var xlinkArcrole: js.UndefOr[String] = js.native
+    var xlinkArcrole: js.UndefOr[String] = js.undefined
     
-    var xlinkHref: js.UndefOr[String] = js.native
+    var xlinkHref: js.UndefOr[String] = js.undefined
     
-    var xlinkRole: js.UndefOr[String] = js.native
+    var xlinkRole: js.UndefOr[String] = js.undefined
     
-    var xlinkShow: js.UndefOr[String] = js.native
+    var xlinkShow: js.UndefOr[String] = js.undefined
     
-    var xlinkTitle: js.UndefOr[String] = js.native
+    var xlinkTitle: js.UndefOr[String] = js.undefined
     
-    var xlinkType: js.UndefOr[String] = js.native
+    var xlinkType: js.UndefOr[String] = js.undefined
     
-    var xmlBase: js.UndefOr[String] = js.native
+    var xmlBase: js.UndefOr[String] = js.undefined
     
-    var xmlLang: js.UndefOr[String] = js.native
+    var xmlLang: js.UndefOr[String] = js.undefined
     
-    var xmlSpace: js.UndefOr[String] = js.native
+    var xmlSpace: js.UndefOr[String] = js.undefined
     
-    var xmlns: js.UndefOr[String] = js.native
+    var xmlns: js.UndefOr[String] = js.undefined
     
-    var xmlnsXlink: js.UndefOr[String] = js.native
+    var xmlnsXlink: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[Double | String] = js.native
+    var y: js.UndefOr[Double | String] = js.undefined
     
-    var y1: js.UndefOr[Double | String] = js.native
+    var y1: js.UndefOr[Double | String] = js.undefined
     
-    var y2: js.UndefOr[Double | String] = js.native
+    var y2: js.UndefOr[Double | String] = js.undefined
     
-    var yChannelSelector: js.UndefOr[String] = js.native
+    var yChannelSelector: js.UndefOr[String] = js.undefined
     
-    var z: js.UndefOr[Double | String] = js.native
+    var z: js.UndefOr[Double | String] = js.undefined
     
-    var zoomAndPan: js.UndefOr[String] = js.native
+    var zoomAndPan: js.UndefOr[String] = js.undefined
   }
   object DonutProps {
     
@@ -1725,7 +1723,7 @@ object mod {
       def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -1761,7 +1759,7 @@ object mod {
       def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
       
       @scala.inline
-      def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
@@ -1803,7 +1801,7 @@ object mod {
       def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
       @scala.inline
-      def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBgNull: Self = StObject.set(x, "bg", null)
@@ -1875,7 +1873,7 @@ object mod {
       def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
       @scala.inline
-      def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorInterpolation(value: Double | String): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
@@ -1929,10 +1927,10 @@ object mod {
       def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       @scala.inline
-      def setCss(value: InterpolationWithTheme[_]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCssFunction1(value: _ => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+      def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCssNull: Self = StObject.set(x, "css", null)
@@ -2412,7 +2410,7 @@ object mod {
       def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
       @scala.inline
-      def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMNull: Self = StObject.set(x, "m", null)
@@ -2424,10 +2422,10 @@ object mod {
       def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
       
       @scala.inline
-      def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
@@ -2439,7 +2437,7 @@ object mod {
       def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
       
       @scala.inline
-      def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
@@ -2454,7 +2452,7 @@ object mod {
       def setMarginNull: Self = StObject.set(x, "margin", null)
       
       @scala.inline
-      def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
@@ -2466,7 +2464,7 @@ object mod {
       def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
       
       @scala.inline
-      def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
@@ -2484,7 +2482,7 @@ object mod {
       def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
       
       @scala.inline
-      def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginXNull: Self = StObject.set(x, "marginX", null)
@@ -2496,7 +2494,7 @@ object mod {
       def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
       
       @scala.inline
-      def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginYNull: Self = StObject.set(x, "marginY", null)
@@ -2574,7 +2572,7 @@ object mod {
       def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
       @scala.inline
-      def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMbNull: Self = StObject.set(x, "mb", null)
@@ -2604,7 +2602,7 @@ object mod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMlNull: Self = StObject.set(x, "ml", null)
@@ -2622,7 +2620,7 @@ object mod {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMrNull: Self = StObject.set(x, "mr", null)
@@ -2634,7 +2632,7 @@ object mod {
       def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
       
       @scala.inline
-      def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMtNull: Self = StObject.set(x, "mt", null)
@@ -2646,7 +2644,7 @@ object mod {
       def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
       
       @scala.inline
-      def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMxNull: Self = StObject.set(x, "mx", null)
@@ -2658,7 +2656,7 @@ object mod {
       def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
       
       @scala.inline
-      def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMyNull: Self = StObject.set(x, "my", null)
@@ -3164,7 +3162,7 @@ object mod {
       @scala.inline
       def setOpacity(
         value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
               RequiredTheme
             ]
       ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
@@ -3176,7 +3174,9 @@ object mod {
       def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
       @scala.inline
-      def setOpacityVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      def setOpacityVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
+      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
       
       @scala.inline
       def setOperator(value: Double | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
@@ -3227,7 +3227,7 @@ object mod {
       def setOverlineThicknessUndefined: Self = StObject.set(x, "overlineThickness", js.undefined)
       
       @scala.inline
-      def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPNull: Self = StObject.set(x, "p", null)
@@ -3239,10 +3239,10 @@ object mod {
       def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
       
       @scala.inline
-      def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
@@ -3254,7 +3254,7 @@ object mod {
       def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
@@ -3269,7 +3269,7 @@ object mod {
       def setPaddingNull: Self = StObject.set(x, "padding", null)
       
       @scala.inline
-      def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
@@ -3281,7 +3281,7 @@ object mod {
       def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
@@ -3299,7 +3299,7 @@ object mod {
       def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
@@ -3311,7 +3311,7 @@ object mod {
       def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
@@ -3365,7 +3365,7 @@ object mod {
       def setPatternUnitsUndefined: Self = StObject.set(x, "patternUnits", js.undefined)
       
       @scala.inline
-      def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPbNull: Self = StObject.set(x, "pb", null)
@@ -3377,7 +3377,7 @@ object mod {
       def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
       
       @scala.inline
-      def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlNull: Self = StObject.set(x, "pl", null)
@@ -3419,7 +3419,7 @@ object mod {
       def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
       @scala.inline
-      def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrNull: Self = StObject.set(x, "pr", null)
@@ -3449,7 +3449,7 @@ object mod {
       def setPrimitiveUnitsUndefined: Self = StObject.set(x, "primitiveUnits", js.undefined)
       
       @scala.inline
-      def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPtNull: Self = StObject.set(x, "pt", null)
@@ -3461,7 +3461,7 @@ object mod {
       def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
       
       @scala.inline
-      def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPxNull: Self = StObject.set(x, "px", null)
@@ -3473,7 +3473,7 @@ object mod {
       def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
       
       @scala.inline
-      def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPyNull: Self = StObject.set(x, "py", null)
@@ -4158,18 +4158,17 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ @js.native
-  trait EmbedProps extends StObject {
+  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ trait EmbedProps extends StObject {
     
-    var allow: js.UndefOr[String] = js.native
+    var allow: js.UndefOr[String] = js.undefined
     
-    var allowFullScreen: js.UndefOr[Boolean] = js.native
+    var allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
-    var frameBorder: js.UndefOr[Double | String] = js.native
+    var frameBorder: js.UndefOr[Double | String] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object EmbedProps {
     
@@ -4214,18 +4213,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait FieldOwnProps extends MarginProps[RequiredTheme] {
+  trait FieldOwnProps
+    extends StObject
+       with MarginProps[RequiredTheme] {
     
     /**
       * Text for Label component
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * Used for the for, id, and name attributes
       */
-    var name: String = js.native
+    var name: String
   }
   object FieldOwnProps {
     
@@ -4246,32 +4246,31 @@ object mod {
     }
   }
   
-  type FieldProps[T /* <: ElementType[_] */] = FieldOwnProps with (Omit[ComponentProps[T], as | label | name]) with As[T]
+  type FieldProps[T /* <: ElementType[js.Any] */] = FieldOwnProps & (Omit[ComponentProps[T], as | label | name]) & As[T]
   
   type FlexProps = BoxProps
   
   type FlexStyleProps = BoxOwnProps
   
-  type ForwardRef[T, P] = ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]]
+  type ForwardRef[T, P] = ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ @js.native
-  trait GridProps extends StObject {
+  - Dropped {[ P in keyof react.react.ComponentProps<'div'> & @theme-ui/components.@theme-ui/components.BoxOwnProps ]: P extends keyof react.react.ComponentProps<'div'>? react.react.ComponentProps<'div'>[P] : P extends keyof @theme-ui/components.@theme-ui/components.BoxOwnProps? @theme-ui/components.@theme-ui/components.BoxOwnProps[P] : never} */ trait GridProps extends StObject {
     
     /**
       *     Number of columns to use for the layout (cannot be used in conjunction with the width prop)
       */
-    var columns: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.native
+    var columns: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
     
     /**
       * Space between child elements
       */
-    var gap: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.native
+    var gap: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
     
     /**
       * Minimum width of child elements
       */
-    var width: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.native
+    var width: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
   }
   object GridProps {
     
@@ -4352,148 +4351,147 @@ object mod {
   
   /* Inlined parent @theme-ui/components.@theme-ui/components.Omit<react.react.SVGProps<std.SVGSVGElement>, 'opacity' | 'color' | 'css' | 'sx'> */
   /* Inlined parent @theme-ui/components.@theme-ui/components.BoxOwnProps */
-  @js.native
   trait SpinnerProps extends StObject {
     
-    var accentHeight: js.UndefOr[Double | String] = js.native
+    var accentHeight: js.UndefOr[Double | String] = js.undefined
     
-    var accumulate: js.UndefOr[none | sum] = js.native
+    var accumulate: js.UndefOr[none | sum] = js.undefined
     
-    var additive: js.UndefOr[replace | sum] = js.native
+    var additive: js.UndefOr[replace | sum] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
         auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
-      ] = js.native
+      ] = js.undefined
     
-    var allowReorder: js.UndefOr[no | yes] = js.native
+    var allowReorder: js.UndefOr[no | yes] = js.undefined
     
-    var alphabetic: js.UndefOr[Double | String] = js.native
+    var alphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var amplitude: js.UndefOr[Double | String] = js.native
+    var amplitude: js.UndefOr[Double | String] = js.undefined
     
-    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.native
+    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var ascent: js.UndefOr[Double | String] = js.native
+    var ascent: js.UndefOr[Double | String] = js.undefined
     
-    var attributeName: js.UndefOr[String] = js.native
+    var attributeName: js.UndefOr[String] = js.undefined
     
-    var attributeType: js.UndefOr[String] = js.native
+    var attributeType: js.UndefOr[String] = js.undefined
     
-    var autoReverse: js.UndefOr[Booleanish] = js.native
+    var autoReverse: js.UndefOr[Booleanish] = js.undefined
     
-    var azimuth: js.UndefOr[Double | String] = js.native
+    var azimuth: js.UndefOr[Double | String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var baseFrequency: js.UndefOr[Double | String] = js.native
+    var baseFrequency: js.UndefOr[Double | String] = js.undefined
     
-    var baseProfile: js.UndefOr[Double | String] = js.native
+    var baseProfile: js.UndefOr[Double | String] = js.undefined
     
-    var baselineShift: js.UndefOr[Double | String] = js.native
+    var baselineShift: js.UndefOr[Double | String] = js.undefined
     
-    var bbox: js.UndefOr[Double | String] = js.native
+    var bbox: js.UndefOr[Double | String] = js.undefined
     
-    var begin: js.UndefOr[Double | String] = js.native
+    var begin: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -4504,27 +4502,27 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var bias: js.UndefOr[Double | String] = js.native
+    var bias: js.UndefOr[Double | String] = js.undefined
     
-    var by: js.UndefOr[Double | String] = js.native
+    var by: js.UndefOr[Double | String] = js.undefined
     
-    var calcMode: js.UndefOr[Double | String] = js.native
+    var calcMode: js.UndefOr[Double | String] = js.undefined
     
-    var capHeight: js.UndefOr[Double | String] = js.native
+    var capHeight: js.UndefOr[Double | String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clip: js.UndefOr[Double | String] = js.native
+    var clip: js.UndefOr[Double | String] = js.undefined
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipPathUnits: js.UndefOr[Double | String] = js.native
+    var clipPathUnits: js.UndefOr[Double | String] = js.undefined
     
-    var clipRule: js.UndefOr[Double | String] = js.native
+    var clipRule: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -4535,415 +4533,415 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]] = js.native
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var colorInterpolation: js.UndefOr[Double | String] = js.native
+    var colorInterpolation: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.native
+    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
     
-    var colorProfile: js.UndefOr[Double | String] = js.native
+    var colorProfile: js.UndefOr[Double | String] = js.undefined
     
-    var colorRendering: js.UndefOr[Double | String] = js.native
+    var colorRendering: js.UndefOr[Double | String] = js.undefined
     
-    var contentScriptType: js.UndefOr[Double | String] = js.native
+    var contentScriptType: js.UndefOr[Double | String] = js.undefined
     
-    var contentStyleType: js.UndefOr[Double | String] = js.native
+    var contentStyleType: js.UndefOr[Double | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
-    var css: js.UndefOr[InterpolationWithTheme[_]] = js.native
+    var css: js.UndefOr[InterpolationWithTheme[js.Any]] = js.undefined
     
-    var cursor: js.UndefOr[Double | String] = js.native
+    var cursor: js.UndefOr[Double | String] = js.undefined
     
-    var cx: js.UndefOr[Double | String] = js.native
+    var cx: js.UndefOr[Double | String] = js.undefined
     
-    var cy: js.UndefOr[Double | String] = js.native
+    var cy: js.UndefOr[Double | String] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var decelerate: js.UndefOr[Double | String] = js.native
+    var decelerate: js.UndefOr[Double | String] = js.undefined
     
-    var descent: js.UndefOr[Double | String] = js.native
+    var descent: js.UndefOr[Double | String] = js.undefined
     
-    var diffuseConstant: js.UndefOr[Double | String] = js.native
+    var diffuseConstant: js.UndefOr[Double | String] = js.undefined
     
-    var direction: js.UndefOr[Double | String] = js.native
+    var direction: js.UndefOr[Double | String] = js.undefined
     
-    var display: js.UndefOr[Double | String] = js.native
+    var display: js.UndefOr[Double | String] = js.undefined
     
-    var divisor: js.UndefOr[Double | String] = js.native
+    var divisor: js.UndefOr[Double | String] = js.undefined
     
-    var dominantBaseline: js.UndefOr[Double | String] = js.native
+    var dominantBaseline: js.UndefOr[Double | String] = js.undefined
     
-    var dur: js.UndefOr[Double | String] = js.native
+    var dur: js.UndefOr[Double | String] = js.undefined
     
-    var dx: js.UndefOr[Double | String] = js.native
+    var dx: js.UndefOr[Double | String] = js.undefined
     
-    var dy: js.UndefOr[Double | String] = js.native
+    var dy: js.UndefOr[Double | String] = js.undefined
     
-    var edgeMode: js.UndefOr[Double | String] = js.native
+    var edgeMode: js.UndefOr[Double | String] = js.undefined
     
-    var elevation: js.UndefOr[Double | String] = js.native
+    var elevation: js.UndefOr[Double | String] = js.undefined
     
-    var enableBackground: js.UndefOr[Double | String] = js.native
+    var enableBackground: js.UndefOr[Double | String] = js.undefined
     
-    var end: js.UndefOr[Double | String] = js.native
+    var end: js.UndefOr[Double | String] = js.undefined
     
-    var exponent: js.UndefOr[Double | String] = js.native
+    var exponent: js.UndefOr[Double | String] = js.undefined
     
-    var externalResourcesRequired: js.UndefOr[Booleanish] = js.native
+    var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double | String] = js.native
+    var fillOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.native
+    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var filterRes: js.UndefOr[Double | String] = js.native
+    var filterRes: js.UndefOr[Double | String] = js.undefined
     
-    var filterUnits: js.UndefOr[Double | String] = js.native
+    var filterUnits: js.UndefOr[Double | String] = js.undefined
     
-    var floodColor: js.UndefOr[Double | String] = js.native
+    var floodColor: js.UndefOr[Double | String] = js.undefined
     
-    var floodOpacity: js.UndefOr[Double | String] = js.native
+    var floodOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var focusable: js.UndefOr[Booleanish | auto] = js.native
+    var focusable: js.UndefOr[Booleanish | auto] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+    var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var fontStretch: js.UndefOr[Double | String] = js.native
+    var fontStretch: js.UndefOr[Double | String] = js.undefined
     
-    var fontStyle: js.UndefOr[Double | String] = js.native
+    var fontStyle: js.UndefOr[Double | String] = js.undefined
     
-    var fontVariant: js.UndefOr[Double | String] = js.native
+    var fontVariant: js.UndefOr[Double | String] = js.undefined
     
-    var fontWeight: js.UndefOr[Double | String] = js.native
+    var fontWeight: js.UndefOr[Double | String] = js.undefined
     
-    var format: js.UndefOr[Double | String] = js.native
+    var format: js.UndefOr[Double | String] = js.undefined
     
-    var from: js.UndefOr[Double | String] = js.native
+    var from: js.UndefOr[Double | String] = js.undefined
     
-    var fx: js.UndefOr[Double | String] = js.native
+    var fx: js.UndefOr[Double | String] = js.undefined
     
-    var fy: js.UndefOr[Double | String] = js.native
+    var fy: js.UndefOr[Double | String] = js.undefined
     
-    var g1: js.UndefOr[Double | String] = js.native
+    var g1: js.UndefOr[Double | String] = js.undefined
     
-    var g2: js.UndefOr[Double | String] = js.native
+    var g2: js.UndefOr[Double | String] = js.undefined
     
-    var glyphName: js.UndefOr[Double | String] = js.native
+    var glyphName: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.native
+    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationVertical: js.UndefOr[Double | String] = js.native
+    var glyphOrientationVertical: js.UndefOr[Double | String] = js.undefined
     
-    var glyphRef: js.UndefOr[Double | String] = js.native
+    var glyphRef: js.UndefOr[Double | String] = js.undefined
     
-    var gradientTransform: js.UndefOr[String] = js.native
+    var gradientTransform: js.UndefOr[String] = js.undefined
     
-    var gradientUnits: js.UndefOr[String] = js.native
+    var gradientUnits: js.UndefOr[String] = js.undefined
     
-    var hanging: js.UndefOr[Double | String] = js.native
+    var hanging: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var horizAdvX: js.UndefOr[Double | String] = js.native
+    var horizAdvX: js.UndefOr[Double | String] = js.undefined
     
-    var horizOriginX: js.UndefOr[Double | String] = js.native
+    var horizOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var ideographic: js.UndefOr[Double | String] = js.native
+    var ideographic: js.UndefOr[Double | String] = js.undefined
     
-    var imageRendering: js.UndefOr[Double | String] = js.native
+    var imageRendering: js.UndefOr[Double | String] = js.undefined
     
-    var in: js.UndefOr[String] = js.native
+    var in: js.UndefOr[String] = js.undefined
     
-    var in2: js.UndefOr[Double | String] = js.native
+    var in2: js.UndefOr[Double | String] = js.undefined
     
-    var intercept: js.UndefOr[Double | String] = js.native
+    var intercept: js.UndefOr[Double | String] = js.undefined
     
-    var k: js.UndefOr[Double | String] = js.native
+    var k: js.UndefOr[Double | String] = js.undefined
     
-    var k1: js.UndefOr[Double | String] = js.native
+    var k1: js.UndefOr[Double | String] = js.undefined
     
-    var k2: js.UndefOr[Double | String] = js.native
+    var k2: js.UndefOr[Double | String] = js.undefined
     
-    var k3: js.UndefOr[Double | String] = js.native
+    var k3: js.UndefOr[Double | String] = js.undefined
     
-    var k4: js.UndefOr[Double | String] = js.native
+    var k4: js.UndefOr[Double | String] = js.undefined
     
-    var kernelMatrix: js.UndefOr[Double | String] = js.native
+    var kernelMatrix: js.UndefOr[Double | String] = js.undefined
     
-    var kernelUnitLength: js.UndefOr[Double | String] = js.native
+    var kernelUnitLength: js.UndefOr[Double | String] = js.undefined
     
-    var kerning: js.UndefOr[Double | String] = js.native
+    var kerning: js.UndefOr[Double | String] = js.undefined
     
-    var key: js.UndefOr[Key | Null] = js.native
+    var key: js.UndefOr[Key | Null] = js.undefined
     
-    var keyPoints: js.UndefOr[Double | String] = js.native
+    var keyPoints: js.UndefOr[Double | String] = js.undefined
     
-    var keySplines: js.UndefOr[Double | String] = js.native
+    var keySplines: js.UndefOr[Double | String] = js.undefined
     
-    var keyTimes: js.UndefOr[Double | String] = js.native
+    var keyTimes: js.UndefOr[Double | String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var lengthAdjust: js.UndefOr[Double | String] = js.native
+    var lengthAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var letterSpacing: js.UndefOr[Double | String] = js.native
+    var letterSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var lightingColor: js.UndefOr[Double | String] = js.native
+    var lightingColor: js.UndefOr[Double | String] = js.undefined
     
-    var limitingConeAngle: js.UndefOr[Double | String] = js.native
+    var limitingConeAngle: js.UndefOr[Double | String] = js.undefined
     
-    var local: js.UndefOr[Double | String] = js.native
+    var local: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerHeight: js.UndefOr[Double | String] = js.native
+    var markerHeight: js.UndefOr[Double | String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var markerUnits: js.UndefOr[Double | String] = js.native
+    var markerUnits: js.UndefOr[Double | String] = js.undefined
     
-    var markerWidth: js.UndefOr[Double | String] = js.native
+    var markerWidth: js.UndefOr[Double | String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var maskContentUnits: js.UndefOr[Double | String] = js.native
+    var maskContentUnits: js.UndefOr[Double | String] = js.undefined
     
-    var maskUnits: js.UndefOr[Double | String] = js.native
+    var maskUnits: js.UndefOr[Double | String] = js.undefined
     
-    var mathematical: js.UndefOr[Double | String] = js.native
+    var mathematical: js.UndefOr[Double | String] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.native
+    var max: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.native
+    var min: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var mode: js.UndefOr[Double | String] = js.native
+    var mode: js.UndefOr[Double | String] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var numOctaves: js.UndefOr[Double | String] = js.native
+    var numOctaves: js.UndefOr[Double | String] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[SVGSVGElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[SVGSVGElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[SVGSVGElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[SVGSVGElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[SVGSVGElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[SVGSVGElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[SVGSVGElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[SVGSVGElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[SVGSVGElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[SVGSVGElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[SVGSVGElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[SVGSVGElement]] = js.undefined
     
     /**
       * The opacity CSS property sets the transparency of an element or the degree to which content
@@ -4953,318 +4951,318 @@ object mod {
       */
     var opacity: js.UndefOr[
         ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
           RequiredTheme
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var operator: js.UndefOr[Double | String] = js.native
+    var operator: js.UndefOr[Double | String] = js.undefined
     
-    var order: js.UndefOr[Double | String] = js.native
+    var order: js.UndefOr[Double | String] = js.undefined
     
-    var orient: js.UndefOr[Double | String] = js.native
+    var orient: js.UndefOr[Double | String] = js.undefined
     
-    var orientation: js.UndefOr[Double | String] = js.native
+    var orientation: js.UndefOr[Double | String] = js.undefined
     
-    var origin: js.UndefOr[Double | String] = js.native
+    var origin: js.UndefOr[Double | String] = js.undefined
     
-    var overflow: js.UndefOr[Double | String] = js.native
+    var overflow: js.UndefOr[Double | String] = js.undefined
     
-    var overlinePosition: js.UndefOr[Double | String] = js.native
+    var overlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var overlineThickness: js.UndefOr[Double | String] = js.native
-    
-    /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var overlineThickness: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    
+    /** Padding on top, left, bottom and right */
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var paintOrder: js.UndefOr[Double | String] = js.native
+    var paintOrder: js.UndefOr[Double | String] = js.undefined
     
-    var panose1: js.UndefOr[Double | String] = js.native
+    var panose1: js.UndefOr[Double | String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathLength: js.UndefOr[Double | String] = js.native
+    var pathLength: js.UndefOr[Double | String] = js.undefined
     
-    var patternContentUnits: js.UndefOr[String] = js.native
+    var patternContentUnits: js.UndefOr[String] = js.undefined
     
-    var patternTransform: js.UndefOr[Double | String] = js.native
+    var patternTransform: js.UndefOr[Double | String] = js.undefined
     
-    var patternUnits: js.UndefOr[String] = js.native
+    var patternUnits: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var pointerEvents: js.UndefOr[Double | String] = js.native
+    var pointerEvents: js.UndefOr[Double | String] = js.undefined
     
-    var points: js.UndefOr[String] = js.native
+    var points: js.UndefOr[String] = js.undefined
     
-    var pointsAtX: js.UndefOr[Double | String] = js.native
+    var pointsAtX: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtY: js.UndefOr[Double | String] = js.native
+    var pointsAtY: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtZ: js.UndefOr[Double | String] = js.native
+    var pointsAtZ: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var preserveAlpha: js.UndefOr[Booleanish] = js.native
+    var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var primitiveUnits: js.UndefOr[Double | String] = js.native
+    var primitiveUnits: js.UndefOr[Double | String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.native
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
     
-    var r: js.UndefOr[Double | String] = js.native
+    var r: js.UndefOr[Double | String] = js.undefined
     
-    var radius: js.UndefOr[Double | String] = js.native
+    var radius: js.UndefOr[Double | String] = js.undefined
     
-    var ref: js.UndefOr[LegacyRef[SVGSVGElement]] = js.native
+    var ref: js.UndefOr[LegacyRef[SVGSVGElement]] = js.undefined
     
-    var refX: js.UndefOr[Double | String] = js.native
+    var refX: js.UndefOr[Double | String] = js.undefined
     
-    var refY: js.UndefOr[Double | String] = js.native
+    var refY: js.UndefOr[Double | String] = js.undefined
     
-    var renderingIntent: js.UndefOr[Double | String] = js.native
+    var renderingIntent: js.UndefOr[Double | String] = js.undefined
     
-    var repeatCount: js.UndefOr[Double | String] = js.native
+    var repeatCount: js.UndefOr[Double | String] = js.undefined
     
-    var repeatDur: js.UndefOr[Double | String] = js.native
+    var repeatDur: js.UndefOr[Double | String] = js.undefined
     
-    var requiredExtensions: js.UndefOr[Double | String] = js.native
+    var requiredExtensions: js.UndefOr[Double | String] = js.undefined
     
-    var requiredFeatures: js.UndefOr[Double | String] = js.native
+    var requiredFeatures: js.UndefOr[Double | String] = js.undefined
     
-    var restart: js.UndefOr[Double | String] = js.native
+    var restart: js.UndefOr[Double | String] = js.undefined
     
-    var result: js.UndefOr[String] = js.native
+    var result: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double | String] = js.native
+    var rotate: js.UndefOr[Double | String] = js.undefined
     
-    var rx: js.UndefOr[Double | String] = js.native
+    var rx: js.UndefOr[Double | String] = js.undefined
     
-    var ry: js.UndefOr[Double | String] = js.native
+    var ry: js.UndefOr[Double | String] = js.undefined
     
-    var scale: js.UndefOr[Double | String] = js.native
+    var scale: js.UndefOr[Double | String] = js.undefined
     
-    var seed: js.UndefOr[Double | String] = js.native
+    var seed: js.UndefOr[Double | String] = js.undefined
     
-    var shapeRendering: js.UndefOr[Double | String] = js.native
+    var shapeRendering: js.UndefOr[Double | String] = js.undefined
     
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
-    var slope: js.UndefOr[Double | String] = js.native
+    var slope: js.UndefOr[Double | String] = js.undefined
     
-    var spacing: js.UndefOr[Double | String] = js.native
+    var spacing: js.UndefOr[Double | String] = js.undefined
     
-    var specularConstant: js.UndefOr[Double | String] = js.native
+    var specularConstant: js.UndefOr[Double | String] = js.undefined
     
-    var specularExponent: js.UndefOr[Double | String] = js.native
+    var specularExponent: js.UndefOr[Double | String] = js.undefined
     
-    var speed: js.UndefOr[Double | String] = js.native
+    var speed: js.UndefOr[Double | String] = js.undefined
     
-    var spreadMethod: js.UndefOr[String] = js.native
+    var spreadMethod: js.UndefOr[String] = js.undefined
     
-    var startOffset: js.UndefOr[Double | String] = js.native
+    var startOffset: js.UndefOr[Double | String] = js.undefined
     
-    var stdDeviation: js.UndefOr[Double | String] = js.native
+    var stdDeviation: js.UndefOr[Double | String] = js.undefined
     
-    var stemh: js.UndefOr[Double | String] = js.native
+    var stemh: js.UndefOr[Double | String] = js.undefined
     
-    var stemv: js.UndefOr[Double | String] = js.native
+    var stemv: js.UndefOr[Double | String] = js.undefined
     
-    var stitchTiles: js.UndefOr[Double | String] = js.native
+    var stitchTiles: js.UndefOr[Double | String] = js.undefined
     
-    var stopColor: js.UndefOr[String] = js.native
+    var stopColor: js.UndefOr[String] = js.undefined
     
-    var stopOpacity: js.UndefOr[Double | String] = js.native
+    var stopOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughPosition: js.UndefOr[Double | String] = js.native
+    var strikethroughPosition: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughThickness: js.UndefOr[Double | String] = js.native
+    var strikethroughThickness: js.UndefOr[Double | String] = js.undefined
     
-    var string: js.UndefOr[Double | String] = js.native
+    var string: js.UndefOr[Double | String] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var strokeDasharray: js.UndefOr[String | Double] = js.native
+    var strokeDasharray: js.UndefOr[String | Double] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[String | Double] = js.native
+    var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.native
+    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.native
+    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+    var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Double | String] = js.native
+    var strokeOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double | String] = js.native
+    var strokeWidth: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var surfaceScale: js.UndefOr[Double | String] = js.native
+    var surfaceScale: js.UndefOr[Double | String] = js.undefined
     
     var sx: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SxStyleProp */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var systemLanguage: js.UndefOr[Double | String] = js.native
+    var systemLanguage: js.UndefOr[Double | String] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var tableValues: js.UndefOr[Double | String] = js.native
+    var tableValues: js.UndefOr[Double | String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var targetX: js.UndefOr[Double | String] = js.native
+    var targetX: js.UndefOr[Double | String] = js.undefined
     
-    var targetY: js.UndefOr[Double | String] = js.native
+    var targetY: js.UndefOr[Double | String] = js.undefined
     
-    var textAnchor: js.UndefOr[String] = js.native
+    var textAnchor: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[Double | String] = js.native
+    var textDecoration: js.UndefOr[Double | String] = js.undefined
     
-    var textLength: js.UndefOr[Double | String] = js.native
+    var textLength: js.UndefOr[Double | String] = js.undefined
     
-    var textRendering: js.UndefOr[Double | String] = js.native
+    var textRendering: js.UndefOr[Double | String] = js.undefined
     
-    var to: js.UndefOr[Double | String] = js.native
+    var to: js.UndefOr[Double | String] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var u1: js.UndefOr[Double | String] = js.native
+    var u1: js.UndefOr[Double | String] = js.undefined
     
-    var u2: js.UndefOr[Double | String] = js.native
+    var u2: js.UndefOr[Double | String] = js.undefined
     
-    var underlinePosition: js.UndefOr[Double | String] = js.native
+    var underlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var underlineThickness: js.UndefOr[Double | String] = js.native
+    var underlineThickness: js.UndefOr[Double | String] = js.undefined
     
-    var unicode: js.UndefOr[Double | String] = js.native
+    var unicode: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeBidi: js.UndefOr[Double | String] = js.native
+    var unicodeBidi: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeRange: js.UndefOr[Double | String] = js.native
+    var unicodeRange: js.UndefOr[Double | String] = js.undefined
     
-    var unitsPerEm: js.UndefOr[Double | String] = js.native
+    var unitsPerEm: js.UndefOr[Double | String] = js.undefined
     
-    var vAlphabetic: js.UndefOr[Double | String] = js.native
+    var vAlphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var vHanging: js.UndefOr[Double | String] = js.native
+    var vHanging: js.UndefOr[Double | String] = js.undefined
     
-    var vIdeographic: js.UndefOr[Double | String] = js.native
+    var vIdeographic: js.UndefOr[Double | String] = js.undefined
     
-    var vMathematical: js.UndefOr[Double | String] = js.native
+    var vMathematical: js.UndefOr[Double | String] = js.undefined
     
-    var values: js.UndefOr[String] = js.native
+    var values: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
     
-    var vectorEffect: js.UndefOr[Double | String] = js.native
+    var vectorEffect: js.UndefOr[Double | String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var vertAdvY: js.UndefOr[Double | String] = js.native
+    var vertAdvY: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginX: js.UndefOr[Double | String] = js.native
+    var vertOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginY: js.UndefOr[Double | String] = js.native
+    var vertOriginY: js.UndefOr[Double | String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var viewTarget: js.UndefOr[Double | String] = js.native
+    var viewTarget: js.UndefOr[Double | String] = js.undefined
     
-    var visibility: js.UndefOr[Double | String] = js.native
+    var visibility: js.UndefOr[Double | String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var widths: js.UndefOr[Double | String] = js.native
+    var widths: js.UndefOr[Double | String] = js.undefined
     
-    var wordSpacing: js.UndefOr[Double | String] = js.native
+    var wordSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var writingMode: js.UndefOr[Double | String] = js.native
+    var writingMode: js.UndefOr[Double | String] = js.undefined
     
-    var x: js.UndefOr[Double | String] = js.native
+    var x: js.UndefOr[Double | String] = js.undefined
     
-    var x1: js.UndefOr[Double | String] = js.native
+    var x1: js.UndefOr[Double | String] = js.undefined
     
-    var x2: js.UndefOr[Double | String] = js.native
+    var x2: js.UndefOr[Double | String] = js.undefined
     
-    var xChannelSelector: js.UndefOr[String] = js.native
+    var xChannelSelector: js.UndefOr[String] = js.undefined
     
-    var xHeight: js.UndefOr[Double | String] = js.native
+    var xHeight: js.UndefOr[Double | String] = js.undefined
     
-    var xlinkActuate: js.UndefOr[String] = js.native
+    var xlinkActuate: js.UndefOr[String] = js.undefined
     
-    var xlinkArcrole: js.UndefOr[String] = js.native
+    var xlinkArcrole: js.UndefOr[String] = js.undefined
     
-    var xlinkHref: js.UndefOr[String] = js.native
+    var xlinkHref: js.UndefOr[String] = js.undefined
     
-    var xlinkRole: js.UndefOr[String] = js.native
+    var xlinkRole: js.UndefOr[String] = js.undefined
     
-    var xlinkShow: js.UndefOr[String] = js.native
+    var xlinkShow: js.UndefOr[String] = js.undefined
     
-    var xlinkTitle: js.UndefOr[String] = js.native
+    var xlinkTitle: js.UndefOr[String] = js.undefined
     
-    var xlinkType: js.UndefOr[String] = js.native
+    var xlinkType: js.UndefOr[String] = js.undefined
     
-    var xmlBase: js.UndefOr[String] = js.native
+    var xmlBase: js.UndefOr[String] = js.undefined
     
-    var xmlLang: js.UndefOr[String] = js.native
+    var xmlLang: js.UndefOr[String] = js.undefined
     
-    var xmlSpace: js.UndefOr[String] = js.native
+    var xmlSpace: js.UndefOr[String] = js.undefined
     
-    var xmlns: js.UndefOr[String] = js.native
+    var xmlns: js.UndefOr[String] = js.undefined
     
-    var xmlnsXlink: js.UndefOr[String] = js.native
+    var xmlnsXlink: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[Double | String] = js.native
+    var y: js.UndefOr[Double | String] = js.undefined
     
-    var y1: js.UndefOr[Double | String] = js.native
+    var y1: js.UndefOr[Double | String] = js.undefined
     
-    var y2: js.UndefOr[Double | String] = js.native
+    var y2: js.UndefOr[Double | String] = js.undefined
     
-    var yChannelSelector: js.UndefOr[String] = js.native
+    var yChannelSelector: js.UndefOr[String] = js.undefined
     
-    var z: js.UndefOr[Double | String] = js.native
+    var z: js.UndefOr[Double | String] = js.undefined
     
-    var zoomAndPan: js.UndefOr[String] = js.native
+    var zoomAndPan: js.UndefOr[String] = js.undefined
   }
   object SpinnerProps {
     
@@ -5618,7 +5616,7 @@ object mod {
       def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -5654,7 +5652,7 @@ object mod {
       def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
       
       @scala.inline
-      def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
@@ -5696,7 +5694,7 @@ object mod {
       def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
       @scala.inline
-      def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBgNull: Self = StObject.set(x, "bg", null)
@@ -5768,7 +5766,7 @@ object mod {
       def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
       @scala.inline
-      def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorInterpolation(value: Double | String): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
@@ -5822,10 +5820,10 @@ object mod {
       def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       @scala.inline
-      def setCss(value: InterpolationWithTheme[_]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCssFunction1(value: _ => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+      def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCssNull: Self = StObject.set(x, "css", null)
@@ -6305,7 +6303,7 @@ object mod {
       def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
       @scala.inline
-      def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMNull: Self = StObject.set(x, "m", null)
@@ -6317,10 +6315,10 @@ object mod {
       def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
       
       @scala.inline
-      def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
@@ -6332,7 +6330,7 @@ object mod {
       def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
       
       @scala.inline
-      def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
@@ -6347,7 +6345,7 @@ object mod {
       def setMarginNull: Self = StObject.set(x, "margin", null)
       
       @scala.inline
-      def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
@@ -6359,7 +6357,7 @@ object mod {
       def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
       
       @scala.inline
-      def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
@@ -6377,7 +6375,7 @@ object mod {
       def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
       
       @scala.inline
-      def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginXNull: Self = StObject.set(x, "marginX", null)
@@ -6389,7 +6387,7 @@ object mod {
       def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
       
       @scala.inline
-      def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarginYNull: Self = StObject.set(x, "marginY", null)
@@ -6467,7 +6465,7 @@ object mod {
       def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
       @scala.inline
-      def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMbNull: Self = StObject.set(x, "mb", null)
@@ -6497,7 +6495,7 @@ object mod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMlNull: Self = StObject.set(x, "ml", null)
@@ -6515,7 +6513,7 @@ object mod {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMrNull: Self = StObject.set(x, "mr", null)
@@ -6527,7 +6525,7 @@ object mod {
       def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
       
       @scala.inline
-      def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMtNull: Self = StObject.set(x, "mt", null)
@@ -6539,7 +6537,7 @@ object mod {
       def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
       
       @scala.inline
-      def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMxNull: Self = StObject.set(x, "mx", null)
@@ -6551,7 +6549,7 @@ object mod {
       def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
       
       @scala.inline
-      def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMyNull: Self = StObject.set(x, "my", null)
@@ -7057,7 +7055,7 @@ object mod {
       @scala.inline
       def setOpacity(
         value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
               RequiredTheme
             ]
       ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
@@ -7069,7 +7067,9 @@ object mod {
       def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
       @scala.inline
-      def setOpacityVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      def setOpacityVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
+      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
       
       @scala.inline
       def setOperator(value: Double | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
@@ -7120,7 +7120,7 @@ object mod {
       def setOverlineThicknessUndefined: Self = StObject.set(x, "overlineThickness", js.undefined)
       
       @scala.inline
-      def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPNull: Self = StObject.set(x, "p", null)
@@ -7132,10 +7132,10 @@ object mod {
       def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
       
       @scala.inline
-      def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
@@ -7147,7 +7147,7 @@ object mod {
       def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
@@ -7162,7 +7162,7 @@ object mod {
       def setPaddingNull: Self = StObject.set(x, "padding", null)
       
       @scala.inline
-      def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
@@ -7174,7 +7174,7 @@ object mod {
       def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
@@ -7192,7 +7192,7 @@ object mod {
       def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
@@ -7204,7 +7204,7 @@ object mod {
       def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
       
       @scala.inline
-      def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
@@ -7258,7 +7258,7 @@ object mod {
       def setPatternUnitsUndefined: Self = StObject.set(x, "patternUnits", js.undefined)
       
       @scala.inline
-      def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPbNull: Self = StObject.set(x, "pb", null)
@@ -7270,7 +7270,7 @@ object mod {
       def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
       
       @scala.inline
-      def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlNull: Self = StObject.set(x, "pl", null)
@@ -7312,7 +7312,7 @@ object mod {
       def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
       @scala.inline
-      def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrNull: Self = StObject.set(x, "pr", null)
@@ -7342,7 +7342,7 @@ object mod {
       def setPrimitiveUnitsUndefined: Self = StObject.set(x, "primitiveUnits", js.undefined)
       
       @scala.inline
-      def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPtNull: Self = StObject.set(x, "pt", null)
@@ -7354,7 +7354,7 @@ object mod {
       def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
       
       @scala.inline
-      def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPxNull: Self = StObject.set(x, "px", null)
@@ -7366,7 +7366,7 @@ object mod {
       def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
       
       @scala.inline
-      def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPyNull: Self = StObject.set(x, "py", null)

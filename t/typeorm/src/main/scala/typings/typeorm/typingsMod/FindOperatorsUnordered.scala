@@ -2,49 +2,47 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOperatorsUnordered extends StObject {
   
   /**
     * Get the number of operations in the bulk.
     */
-  var length: scala.Double = js.native
+  var length: scala.Double
   
   /**
     * Add a remove operation to the bulk operation.
     */
-  def remove(): UnorderedBulkOperation = js.native
+  def remove(): UnorderedBulkOperation
   
   /**
     * Add a remove one operation to the bulk operation.
     */
-  def removeOne(): UnorderedBulkOperation = js.native
+  def removeOne(): UnorderedBulkOperation
   
   /**
     * Add a replace one operation to the bulk operation.
     * @param doc The new document to replace the existing one with.
     */
-  def replaceOne(doc: js.Object): UnorderedBulkOperation = js.native
+  def replaceOne(doc: js.Object): UnorderedBulkOperation
   
   /**
     * Add a single update document to the bulk operation.
     * @param doc Update operations
     */
-  def update(doc: js.Object): UnorderedBulkOperation = js.native
+  def update(doc: js.Object): UnorderedBulkOperation
   
   /**
     * Add a single update one document to the bulk operation.
     * @param doc Update operations
     */
-  def updateOne(doc: js.Object): UnorderedBulkOperation = js.native
+  def updateOne(doc: js.Object): UnorderedBulkOperation
   
   /**
     * Upsert modifier for update bulk operation.
     */
-  def upsert(): FindOperatorsUnordered = js.native
+  def upsert(): FindOperatorsUnordered
 }
 object FindOperatorsUnordered {
   

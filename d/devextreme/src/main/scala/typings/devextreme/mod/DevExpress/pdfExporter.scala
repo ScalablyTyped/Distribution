@@ -3,38 +3,36 @@ package typings.devextreme.mod.DevExpress
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pdfExporter {
   
-  @js.native
   trait PdfExportDataGridProps extends StObject {
     
     /**
       * [descr:PdfExportDataGridProps.autoTableOptions]
       */
-    var autoTableOptions: js.UndefOr[js.Any] = js.native
+    var autoTableOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:PdfExportDataGridProps.component]
       */
-    var component: js.UndefOr[dxDataGrid] = js.native
+    var component: js.UndefOr[dxDataGrid] = js.undefined
     
     /**
       * [descr:PdfExportDataGridProps.jsPDFDocument]
       */
-    var jsPDFDocument: js.UndefOr[js.Any] = js.native
+    var jsPDFDocument: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:PdfExportDataGridProps.keepColumnWidths]
       */
-    var keepColumnWidths: js.UndefOr[Boolean] = js.native
+    var keepColumnWidths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:PdfExportDataGridProps.selectedRowsOnly]
       */
-    var selectedRowsOnly: js.UndefOr[Boolean] = js.native
+    var selectedRowsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object PdfExportDataGridProps {
     

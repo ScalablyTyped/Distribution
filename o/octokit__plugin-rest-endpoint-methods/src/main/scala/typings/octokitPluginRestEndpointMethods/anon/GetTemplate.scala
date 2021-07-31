@@ -2,15 +2,13 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTemplate extends StObject {
   
-  var getAllTemplates: `710` = js.native
+  var getAllTemplates: `710`
   
-  var getTemplate: `711` = js.native
+  var getTemplate: `711`
 }
 object GetTemplate {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetCell
   * @see com.sun.star.sheet.CellAnnotation
   */
-@js.native
-trait XSheetAnnotationAnchor extends XInterface {
+trait XSheetAnnotationAnchor
+  extends StObject
+     with XInterface {
   
   /** returns the annotation at this anchor. */
-  val Annotation: XSheetAnnotation = js.native
+  val Annotation: XSheetAnnotation
   
   /** returns the annotation at this anchor. */
-  def getAnnotation(): XSheetAnnotation = js.native
+  def getAnnotation(): XSheetAnnotation
 }
 object XSheetAnnotationAnchor {
   

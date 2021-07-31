@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describing buckets with arbitrary user-provided width.
   */
-@js.native
 trait SchemaExplicitBuckets extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait SchemaExplicitBuckets extends StObject {
     * bound_size()            bound[i-1]     bound[i]  i == bound_size()
     * (overflow)    bound[i-1]     +inf
     */
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaExplicitBuckets {
   

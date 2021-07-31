@@ -12,7 +12,7 @@ A barebones routing solution for Redux applications.
 | Keywords           | redux, router, middleware |
 | # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 211094 |
+| # downloads        | 195279 |
 | # stars            | 2 |
 
 ## Links

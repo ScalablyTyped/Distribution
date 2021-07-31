@@ -2,10 +2,13 @@ package typings.vegaLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeMod {
+  
+  @JSImport("vega-lite/build/src/datetime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/datetime", "DAYS")
   @js.native
@@ -23,23 +26,18 @@ object datetimeMod {
   @js.native
   val SHORT_MONTHS: js.Array[String] = js.native
   
-  @JSImport("vega-lite/build/src/datetime", "dateTimeExprToExpr")
-  @js.native
-  def dateTimeExprToExpr(d: DateTimeExpr): String = js.native
+  @scala.inline
+  def dateTimeExprToExpr(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeExprToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/datetime", "dateTimeToExpr")
-  @js.native
-  def dateTimeToExpr(d: DateTime): String = js.native
+  @scala.inline
+  def dateTimeToExpr(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/datetime", "dateTimeToTimestamp")
-  @js.native
-  def dateTimeToTimestamp(d: DateTime): Double = js.native
+  @scala.inline
+  def dateTimeToTimestamp(d: DateTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToTimestamp")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/datetime", "isDateTime")
-  @js.native
-  def isDateTime(o: js.Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = js.native
+  @scala.inline
+  def isDateTime(o: js.Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean]
   
-  @js.native
   trait DateTime extends StObject {
     
     /**
@@ -48,7 +46,7 @@ object datetimeMod {
       * @maximum 31
       * @TJS-type integer
       */
-    var date: js.UndefOr[Double] = js.native
+    var date: js.UndefOr[Double] = js.undefined
     
     /**
       * Value representing the day of a week. This can be one of:
@@ -58,7 +56,7 @@ object datetimeMod {
       *
       * **Warning:** A DateTime definition object with `day`** should not be combined with `year`, `quarter`, `month`, or `date`.
       */
-    var day: js.UndefOr[Day | String] = js.native
+    var day: js.UndefOr[Day | String] = js.undefined
     
     /**
       * Integer value representing the hour of a day from 0-23.
@@ -66,7 +64,7 @@ object datetimeMod {
       * @maximum 24
       * @TJS-type integer
       */
-    var hours: js.UndefOr[Double] = js.native
+    var hours: js.UndefOr[Double] = js.undefined
     
     /**
       * Integer value representing the millisecond segment of time.
@@ -74,7 +72,7 @@ object datetimeMod {
       * @maximum 1000
       * @TJS-type integer
       */
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
     
     /**
       * Integer value representing the minute segment of time from 0-59.
@@ -82,7 +80,7 @@ object datetimeMod {
       * @maximum 60
       * @TJS-type integer
       */
-    var minutes: js.UndefOr[Double] = js.native
+    var minutes: js.UndefOr[Double] = js.undefined
     
     /**
       * One of:
@@ -90,7 +88,7 @@ object datetimeMod {
       * (2) case-insensitive month name (e.g., `"January"`);
       * (3) case-insensitive, 3-character short month name (e.g., `"Jan"`).
       */
-    var month: js.UndefOr[Month | String] = js.native
+    var month: js.UndefOr[Month | String] = js.undefined
     
     /**
       * Integer value representing the quarter of the year (from 1-4).
@@ -98,7 +96,7 @@ object datetimeMod {
       * @maximum 4
       * @TJS-type integer
       */
-    var quarter: js.UndefOr[Double] = js.native
+    var quarter: js.UndefOr[Double] = js.undefined
     
     /**
       * Integer value representing the second segment (0-59) of a time value
@@ -106,18 +104,18 @@ object datetimeMod {
       * @maximum 60
       * @TJS-type integer
       */
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
     /**
       * A boolean flag indicating if date time is in utc time. If false, the date time is in local time
       */
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Integer value representing the year.
       * @TJS-type integer
       */
-    var year: js.UndefOr[Double] = js.native
+    var year: js.UndefOr[Double] = js.undefined
   }
   object DateTime {
     
@@ -192,28 +190,27 @@ object datetimeMod {
     }
   }
   
-  @js.native
   trait DateTimeExpr extends StObject {
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var hours: js.UndefOr[String] = js.native
+    var hours: js.UndefOr[String] = js.undefined
     
-    var milliseconds: js.UndefOr[String] = js.native
+    var milliseconds: js.UndefOr[String] = js.undefined
     
-    var minutes: js.UndefOr[String] = js.native
+    var minutes: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var quarter: js.UndefOr[String] = js.native
+    var quarter: js.UndefOr[String] = js.undefined
     
-    var seconds: js.UndefOr[String] = js.native
+    var seconds: js.UndefOr[String] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object DateTimeExpr {
     

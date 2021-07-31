@@ -8,14 +8,16 @@ import typings.d3Cloud.mod.d3AugmentingMod.layout.cloud.Word
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
+  
   @JSImport("d3-cloud", JSImport.Namespace)
   @js.native
-  def apply(): Cloud_[Word] = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object d3AugmentingMod {
@@ -24,30 +26,32 @@ object mod {
       
       object cloud {
         
+        @scala.inline
+        def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
+        
         @JSImport("d3", "layout.cloud")
         @js.native
-        def apply(): Cloud_[Word] = js.native
+        val ^ : js.Any = js.native
         
-        @js.native
         trait Word extends StObject {
           
-          var font: js.UndefOr[String] = js.native
+          var font: js.UndefOr[String] = js.undefined
           
-          var padding: js.UndefOr[Double] = js.native
+          var padding: js.UndefOr[Double] = js.undefined
           
-          var rotate: js.UndefOr[Double] = js.native
+          var rotate: js.UndefOr[Double] = js.undefined
           
-          var size: js.UndefOr[Double] = js.native
+          var size: js.UndefOr[Double] = js.undefined
           
-          var style: js.UndefOr[String] = js.native
+          var style: js.UndefOr[String] = js.undefined
           
-          var text: js.UndefOr[String] = js.native
+          var text: js.UndefOr[String] = js.undefined
           
-          var weight: js.UndefOr[String | Double] = js.native
+          var weight: js.UndefOr[String | Double] = js.undefined
           
-          var x: js.UndefOr[Double] = js.native
+          var x: js.UndefOr[Double] = js.undefined
           
-          var y: js.UndefOr[Double] = js.native
+          var y: js.UndefOr[Double] = js.undefined
         }
         object Word {
           

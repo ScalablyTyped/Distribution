@@ -11,7 +11,6 @@ import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tweens {
@@ -23,7 +22,9 @@ object Tweens {
     * of Tweens (each one starting after the previous one) or run multiple Tweens at once during given parts of the Timeline.
     */
   @js.native
-  trait Timeline extends EventEmitter {
+  trait Timeline
+    extends StObject
+       with EventEmitter {
     
     def add(config: js.Object): this.type = js.native
     /**
@@ -72,7 +73,7 @@ object Tweens {
     /**
       * An array of Tween objects, each containing a unique property and target being tweened.
       */
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any] = js.native
     
     /**
       * Internal method that will emit a Timeline based Event and invoke the given callback.
@@ -229,9 +230,9 @@ object Tweens {
       * @param scope The context scope of the callback.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.UndefOr[scala.Nothing], scope: js.Object): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[_]): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Object): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any]): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any], scope: js.Object): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: Unit, scope: js.Object): this.type = js.native
     
     /**
       * Sets the value of the time scale applied to this Timeline. A value of 1 runs in real-time.
@@ -298,7 +299,9 @@ object Tweens {
     * created via the TweenManager.
     */
   @js.native
-  trait Tween extends EventEmitter {
+  trait Tween
+    extends StObject
+       with EventEmitter {
     
     /**
       * Internal method that calculates the overall duration of the Tween.
@@ -567,9 +570,9 @@ object Tweens {
       * @param scope The context the callback will be invoked in.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.UndefOr[scala.Nothing], scope: js.Any): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[_]): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Any): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any]): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any], scope: js.Any): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: Unit, scope: js.Any): this.type = js.native
     
     /**
       * Internal method used as part of the playback process that sets a tween to play in reverse.
@@ -720,7 +723,6 @@ object Tweens {
       */
     def destroy(): Unit = js.native
     
-    def each(callback: js.Function, scope: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /**
       * Passes all Tweens to the given callback.
       * @param callback The function to call.
@@ -728,6 +730,7 @@ object Tweens {
       * @param args The arguments to pass into the function. Its first argument will always be the Tween currently being iterated.
       */
     def each(callback: js.Function, scope: js.Object, args: js.Any*): Unit = js.native
+    def each(callback: js.Function, scope: Unit, args: js.Any*): Unit = js.native
     
     /**
       * Add an existing tween into the active Tween list.
@@ -745,7 +748,7 @@ object Tweens {
       */
     def getGlobalTimeScale(): Double = js.native
     
-    def getTweensOf(target: js.Array[_]): js.Array[Tween] = js.native
+    def getTweensOf(target: js.Array[js.Any]): js.Array[Tween] = js.native
     /**
       * Returns an array of all Tweens or Timelines in the Tween Manager which affect the given target or array of targets.
       * @param target The target to look for. Provide an array to look for multiple targets.
@@ -763,7 +766,7 @@ object Tweens {
       */
     def killAll(): TweenManager = js.native
     
-    def killTweensOf(target: js.Array[_]): TweenManager = js.native
+    def killTweensOf(target: js.Array[js.Any]): TweenManager = js.native
     /**
       * Stops all Tweens which affect the given target or array of targets. The Tweens will be removed from the Tween Manager at the start of the frame.
       * @param target The target to look for. Provide an array to look for multiple targets.

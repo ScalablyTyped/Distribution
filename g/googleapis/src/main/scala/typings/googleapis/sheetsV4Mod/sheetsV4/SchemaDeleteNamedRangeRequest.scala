@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Removes the named range with the given ID from the spreadsheet.
   */
-@js.native
 trait SchemaDeleteNamedRangeRequest extends StObject {
   
   /**
     * The ID of the named range to delete.
     */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
 }
 object SchemaDeleteNamedRangeRequest {
   

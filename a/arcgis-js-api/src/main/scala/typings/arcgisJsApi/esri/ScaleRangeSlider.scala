@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRangeSlider extends Widget_ {
+trait ScaleRangeSlider
+  extends StObject
+     with Widget_ {
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.

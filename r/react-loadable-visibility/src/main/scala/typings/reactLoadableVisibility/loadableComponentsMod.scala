@@ -7,7 +7,6 @@ import typings.loadableComponent.mod.OptionsWithResolver
 import typings.loadableComponent.mod.OptionsWithoutResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadableComponentsMod {
@@ -15,21 +14,18 @@ object loadableComponentsMod {
   /* Inlined {None <Props>(loadFn : (props : Props): std.Promise<@loadable/component.@loadable/component.DefaultComponent<Props>>, options : @loadable/component.@loadable/component.OptionsWithoutResolver<Props> | undefined): @loadable/component.@loadable/component.LoadableComponent<Props>, None <Props, Module = @loadable/component.@loadable/component.DefaultComponent<Props>>(loadFn : (props : Props): std.Promise<Module>, options : @loadable/component.@loadable/component.OptionsWithResolver<Props, Module>): @loadable/component.@loadable/component.LoadableComponent<Props>} & {  lib :{None <Props, Module>(loadFn : (props : Props): std.Promise<Module>, options : @loadable/component.@loadable/component.OptionsWithoutResolver<Props> | undefined): @loadable/component.@loadable/component.LoadableLibrary<Module>}} */
   object default {
     
-    @JSImport("react-loadable-visibility/loadable-components", "default.<apply>")
-    @js.native
-    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = js.native
-    @JSImport("react-loadable-visibility/loadable-components", "default.<apply>")
-    @js.native
+    @scala.inline
+    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = ^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any]).asInstanceOf[LoadableComponent[Props]]
+    @scala.inline
     def apply[Props](
       loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]],
       options: OptionsWithoutResolver[Props]
-    ): LoadableComponent[Props] = js.native
-    @JSImport("react-loadable-visibility/loadable-components", "default.<apply>")
-    @js.native
+    ): LoadableComponent[Props] = (^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LoadableComponent[Props]]
+    @scala.inline
     def apply[Props, Module](
       loadFn: js.Function1[/* props */ Props, js.Promise[Module]],
       options: OptionsWithResolver[Props, Module]
-    ): LoadableComponent[Props] = js.native
+    ): LoadableComponent[Props] = (^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LoadableComponent[Props]]
     
     @JSImport("react-loadable-visibility/loadable-components", JSImport.Default)
     @js.native

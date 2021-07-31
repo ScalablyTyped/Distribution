@@ -2,28 +2,26 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppRouterOptions extends StObject {
   
   /**
     * Define the app routes and the method names on the controller that
     * will be called when accessing the routes.
     */
-  var appRoutes: js.UndefOr[AppRoutes] = js.native
+  var appRoutes: js.UndefOr[AppRoutes] = js.undefined
   
   /**
     * An object that contains the methods specified in appRoutes.
     */
-  var controller: js.UndefOr[js.Any] = js.native
+  var controller: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Define the app routes and the method names on the router that will be
     * called when accessing the routes.
     */
-  var routes: js.UndefOr[AppRoutes] = js.native
+  var routes: js.UndefOr[AppRoutes] = js.undefined
 }
 object AppRouterOptions {
   

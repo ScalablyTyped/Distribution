@@ -4,30 +4,30 @@ import typings.autoSni.anon.Http
 import typings.node.httpsMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("auto-sni", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Server = js.native
-  @JSImport("auto-sni", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, app: js.Any): Server = js.native
+  @scala.inline
+  def apply(opts: Options): Server = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def apply(opts: Options, app: js.Any): Server = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Server]
   
+  @JSImport("auto-sni", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var agreeTos: Boolean = js.native
+    var agreeTos: Boolean
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var domains: js.Array[String | js.Array[String]] = js.native
+    var domains: js.Array[String | js.Array[String]]
     
-    var email: String = js.native
+    var email: String
     
-    var ports: js.UndefOr[Http] = js.native
+    var ports: js.UndefOr[Http] = js.undefined
   }
   object Options {
     

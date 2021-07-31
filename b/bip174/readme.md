@@ -10,9 +10,9 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | bip174 |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 10 |
-| # downloads        | 607061 |
+| # releases         | 19 |
+| # dependents       | 17 |
+| # downloads        | 841509 |
 | # stars            | 0 |
 
 ## Links

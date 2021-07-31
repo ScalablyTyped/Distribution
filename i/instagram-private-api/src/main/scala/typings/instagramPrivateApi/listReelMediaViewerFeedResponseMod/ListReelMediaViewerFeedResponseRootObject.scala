@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseRootObject extends StObject {
   
-  var next_max_id: String | Null = js.native
+  var next_max_id: String | Null
   
-  var status: String = js.native
+  var status: String
   
-  var total_viewer_count: Double = js.native
+  var total_viewer_count: Double
   
-  var updated_media: ListReelMediaViewerFeedResponseUpdatedMedia = js.native
+  var updated_media: ListReelMediaViewerFeedResponseUpdatedMedia
   
-  var user_count: Double = js.native
+  var user_count: Double
   
-  var users: js.Array[ListReelMediaViewerFeedResponseUsersItem] = js.native
+  var users: js.Array[ListReelMediaViewerFeedResponseUsersItem]
 }
 object ListReelMediaViewerFeedResponseRootObject {
   
@@ -30,7 +28,7 @@ object ListReelMediaViewerFeedResponseRootObject {
     user_count: Double,
     users: js.Array[ListReelMediaViewerFeedResponseUsersItem]
   ): ListReelMediaViewerFeedResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], total_viewer_count = total_viewer_count.asInstanceOf[js.Any], updated_media = updated_media.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], total_viewer_count = total_viewer_count.asInstanceOf[js.Any], updated_media = updated_media.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], next_max_id = null)
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseRootObject]
   }
   

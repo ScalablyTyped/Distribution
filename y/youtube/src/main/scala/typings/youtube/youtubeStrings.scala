@@ -3,7 +3,6 @@ package typings.youtube
 import typings.youtube.YT.ProgressBarColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeStrings {
@@ -74,7 +73,9 @@ object youtubeStrings {
   def player: player = "player".asInstanceOf[player]
   
   @js.native
-  sealed trait red extends ProgressBarColor
+  sealed trait red
+    extends StObject
+       with ProgressBarColor
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   
@@ -94,7 +95,9 @@ object youtubeStrings {
   def user_uploads: user_uploads = "user_uploads".asInstanceOf[user_uploads]
   
   @js.native
-  sealed trait white extends ProgressBarColor
+  sealed trait white
+    extends StObject
+       with ProgressBarColor
   @scala.inline
   def white: white = "white".asInstanceOf[white]
 }

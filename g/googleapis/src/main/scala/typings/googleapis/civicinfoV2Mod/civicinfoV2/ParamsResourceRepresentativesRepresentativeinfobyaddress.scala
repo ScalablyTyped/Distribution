@@ -6,47 +6,47 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRepresentativesRepresentativeinfobyaddress extends StandardParameters {
+trait ParamsResourceRepresentativesRepresentativeinfobyaddress
+  extends StObject
+     with StandardParameters {
   
   /**
     * The address to look up. May only be specified if the field ocdId is not
     * given in the URL.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether to return information about offices and officials. If false, only
     * the top-level district information will be returned.
     */
-  var includeOffices: js.UndefOr[Boolean] = js.native
+  var includeOffices: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of office levels to filter by. Only offices that serve at least
     * one of these levels will be returned. Divisions that don't contain a
     * matching office will not be returned.
     */
-  var levels: js.UndefOr[js.Array[String]] = js.native
+  var levels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRepresentativeInfoRequest] = js.native
+  var requestBody: js.UndefOr[SchemaRepresentativeInfoRequest] = js.undefined
   
   /**
     * A list of office roles to filter by. Only offices fulfilling one of these
     * roles will be returned. Divisions that don't contain a matching office
     * will not be returned.
     */
-  var roles: js.UndefOr[js.Array[String]] = js.native
+  var roles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceRepresentativesRepresentativeinfobyaddress {
   

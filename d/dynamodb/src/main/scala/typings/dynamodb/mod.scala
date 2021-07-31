@@ -2,7 +2,6 @@ package typings.dynamodb
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.bunyan.mod.^
 import typings.dynamodb.anon.Dynamodb
 import typings.dynamodb.anon.ReadCapacity
 import typings.dynamodb.anon.TypeofModel
@@ -25,10 +24,13 @@ import typings.dynamodb.scanMod.Scan
 import typings.joi.mod.AnySchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dynamodb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dynamodb", "AWS")
   @js.native
@@ -41,49 +43,44 @@ object mod {
   }
   object Model_ {
     
+    @JSImport("dynamodb", "Model")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("dynamodb", "Model.after")
     @js.native
     val after: js.Any = js.native
     
-    @JSImport("dynamodb", "Model.batchGetItems")
-    @js.native
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb", "Model.batchGetItems")
-    @js.native
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb", "Model.before")
     @js.native
     val before: js.Any = js.native
     
-    @JSImport("dynamodb", "Model.config")
-    @js.native
-    def config(config: Dynamodb): js.Any = js.native
+    @scala.inline
+    def config(config: Dynamodb): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("dynamodb", "Model.create")
     @js.native
     val create: CreateOperation = js.native
     
-    @JSImport("dynamodb", "Model.createTable")
-    @js.native
-    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb", "Model.createTable")
-    @js.native
-    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
-    @JSImport("dynamodb", "Model.deleteTable")
-    @js.native
-    def deleteTable(): js.Promise[_] = js.native
-    @JSImport("dynamodb", "Model.deleteTable")
-    @js.native
-    def deleteTable(callback: Callback): Unit = js.native
+    @scala.inline
+    def deleteTable(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def deleteTable(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("dynamodb", "Model.describeTable")
-    @js.native
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb", "Model.describeTable")
-    @js.native
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb", "Model.destroy")
     @js.native
@@ -103,101 +100,84 @@ object mod {
     
     @JSImport("dynamodb", "Model.log")
     @js.native
-    val log: ^ = js.native
+    val log: typings.bunyan.mod.^ = js.native
     
-    @JSImport("dynamodb", "Model.parallelScan")
-    @js.native
-    def parallelScan(totalSegments: Double): ParallelScan = js.native
+    @scala.inline
+    def parallelScan(totalSegments: Double): ParallelScan = ^.asInstanceOf[js.Dynamic].applyDynamic("parallelScan")(totalSegments.asInstanceOf[js.Any]).asInstanceOf[ParallelScan]
     
-    @JSImport("dynamodb", "Model.query")
-    @js.native
-    def query(hashKey: String): Query = js.native
+    @scala.inline
+    def query(hashKey: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(hashKey.asInstanceOf[js.Any]).asInstanceOf[Query]
     
-    @JSImport("dynamodb", "Model.scan")
-    @js.native
-    def scan(): Scan = js.native
+    @scala.inline
+    def scan(): Scan = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")().asInstanceOf[Scan]
     
-    @JSImport("dynamodb", "Model.tableName")
-    @js.native
-    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] = js.native
-    @JSImport("dynamodb", "Model.tableName")
-    @js.native
-    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = js.native
+    @scala.inline
+    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("dynamodb", "Model.update")
     @js.native
     val update: UpdateOperation = js.native
     
-    @JSImport("dynamodb", "Model.updateTable")
-    @js.native
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb", "Model.updateTable")
-    @js.native
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
   }
   
-  @JSImport("dynamodb", "Set")
-  @js.native
-  def Set(data: js.Array[_], `type`: String): DynamoDbSet = js.native
+  @scala.inline
+  def Set(data: js.Array[js.Any], `type`: String): DynamoDbSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DynamoDbSet]
   
   @JSImport("dynamodb", "createTables")
   @js.native
   val createTables: CreateTables_ = js.native
   
-  @JSImport("dynamodb", "define")
-  @js.native
-  def define(name: String, config: DefineConfig): TypeofModel with (Instantiable1[/* attrs */ js.Any, Model]) = js.native
+  @scala.inline
+  def define(name: String, config: DefineConfig): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
   
-  @JSImport("dynamodb", "documentClient")
-  @js.native
-  def documentClient(): DocumentClient = js.native
-  @JSImport("dynamodb", "documentClient")
-  @js.native
-  def documentClient(docClient: DocumentClient): DocumentClient = js.native
+  @scala.inline
+  def documentClient(): DocumentClient = ^.asInstanceOf[js.Dynamic].applyDynamic("documentClient")().asInstanceOf[DocumentClient]
+  @scala.inline
+  def documentClient(docClient: DocumentClient): DocumentClient = ^.asInstanceOf[js.Dynamic].applyDynamic("documentClient")(docClient.asInstanceOf[js.Any]).asInstanceOf[DocumentClient]
   
-  @JSImport("dynamodb", "dynamoDriver")
-  @js.native
-  def dynamoDriver(): DynamoDB = js.native
-  @JSImport("dynamodb", "dynamoDriver")
-  @js.native
-  def dynamoDriver(driver: DynamoDB): DynamoDB = js.native
+  @scala.inline
+  def dynamoDriver(): DynamoDB = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamoDriver")().asInstanceOf[DynamoDB]
+  @scala.inline
+  def dynamoDriver(driver: DynamoDB): DynamoDB = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamoDriver")(driver.asInstanceOf[js.Any]).asInstanceOf[DynamoDB]
   
   @JSImport("dynamodb", "log")
   @js.native
-  val log: ^ = js.native
+  val log: typings.bunyan.mod.^ = js.native
   
-  @JSImport("dynamodb", "model")
-  @js.native
-  def model(name: String): TypeofModel with (Instantiable1[/* attrs */ js.Any, Model]) = js.native
-  @JSImport("dynamodb", "model")
-  @js.native
-  def model(name: String, model: Model): TypeofModel with (Instantiable1[/* attrs */ js.Any, Model]) = js.native
+  @scala.inline
+  def model(name: String): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
+  @scala.inline
+  def model(name: String, model: Model): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
   
-  @JSImport("dynamodb", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   object types {
     
-    @JSImport("dynamodb", "types.binarySet")
+    @JSImport("dynamodb", "types")
     @js.native
-    def binarySet(): AnySchema = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("dynamodb", "types.numberSet")
-    @js.native
-    def numberSet(): AnySchema = js.native
+    @scala.inline
+    def binarySet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("binarySet")().asInstanceOf[AnySchema]
     
-    @JSImport("dynamodb", "types.stringSet")
-    @js.native
-    def stringSet(): AnySchema = js.native
+    @scala.inline
+    def numberSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSet")().asInstanceOf[AnySchema]
     
-    @JSImport("dynamodb", "types.timeUUID")
-    @js.native
-    def timeUUID(): AnySchema = js.native
+    @scala.inline
+    def stringSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("stringSet")().asInstanceOf[AnySchema]
     
-    @JSImport("dynamodb", "types.uuid")
-    @js.native
-    def uuid(): AnySchema = js.native
+    @scala.inline
+    def timeUUID(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUUID")().asInstanceOf[AnySchema]
+    
+    @scala.inline
+    def uuid(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[AnySchema]
   }
   
   type CreateTablesOptions = StringDictionary[ReadCapacity]
@@ -205,30 +185,29 @@ object mod {
   @js.native
   trait CreateTables_ extends StObject {
     
-    def apply(): js.Promise[_] = js.native
+    def apply(): js.Promise[js.Any] = js.native
     def apply(callback: Callback): Unit = js.native
-    def apply(options: CreateTablesOptions): js.Promise[_] = js.native
+    def apply(options: CreateTablesOptions): js.Promise[js.Any] = js.native
     def apply(options: CreateTablesOptions, callback: Callback): Unit = js.native
   }
   
-  @js.native
   trait DefineConfig extends StObject {
     
-    var createdAt: js.UndefOr[Boolean | String] = js.native
+    var createdAt: js.UndefOr[Boolean | String] = js.undefined
     
-    var hashKey: String = js.native
+    var hashKey: String
     
-    var indexes: js.UndefOr[js.Array[IndexDefinition]] = js.native
+    var indexes: js.UndefOr[js.Array[IndexDefinition]] = js.undefined
     
-    var rangeKey: js.UndefOr[String] = js.native
+    var rangeKey: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[StringDictionary[AnySchema | StringDictionary[AnySchema]]] = js.native
+    var schema: js.UndefOr[StringDictionary[AnySchema | StringDictionary[AnySchema]]] = js.undefined
     
-    var tableName: js.UndefOr[String | js.Function0[String]] = js.native
+    var tableName: js.UndefOr[String | js.Function0[String]] = js.undefined
     
-    var timestamps: js.UndefOr[Boolean] = js.native
+    var timestamps: js.UndefOr[Boolean] = js.undefined
     
-    var updatedAt: js.UndefOr[Boolean | String] = js.native
+    var updatedAt: js.UndefOr[Boolean | String] = js.undefined
   }
   object DefineConfig {
     
@@ -294,18 +273,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IndexDefinition extends StObject {
     
-    var hashKey: String = js.native
+    var hashKey: String
     
-    var name: String = js.native
+    var name: String
     
-    var projection: js.UndefOr[Projection] = js.native
+    var projection: js.UndefOr[Projection] = js.undefined
     
-    var rangeKey: js.UndefOr[String] = js.native
+    var rangeKey: js.UndefOr[String] = js.undefined
     
-    var `type`: local | global = js.native
+    var `type`: local | global
   }
   object IndexDefinition {
     

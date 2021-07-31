@@ -5,21 +5,20 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensor3dMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor3d", "tensor3d")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor3d", JSImport.Namespace)
   @js.native
-  def tensor3d(values: TensorLike3D): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor3d", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor3d", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double]): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor3d", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double], dtype: DataType): Tensor3D = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def tensor3d(values: TensorLike3D): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double]): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double], dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: Unit, dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteLayerUploadRequest extends StObject {
   
   /**
     * The sha256 digest of the image layer.
     */
-  var layerDigests: LayerDigestList = js.native
+  var layerDigests: LayerDigestList
   
   /**
     * The AWS account ID associated with the registry to which to upload layers. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to associate with the image layer.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The upload ID from a previous InitiateLayerUpload operation to associate with the image layer.
     */
-  var uploadId: UploadId = js.native
+  var uploadId: UploadId
 }
 object CompleteLayerUploadRequest {
   

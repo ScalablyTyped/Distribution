@@ -4,7 +4,6 @@ import typings.ngTable.ngTableParamsMod.IParamValues
 import typings.ngTable.ngTableSettingsMod.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableDefaultsMod {
@@ -19,12 +18,11 @@ object ngTableDefaultsMod {
   @scala.inline
   def ngTableDefaults_=(x: IDefaults): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait IDefaults extends StObject {
     
-    var params: js.UndefOr[IParamValues[_]] = js.native
+    var params: js.UndefOr[IParamValues[js.Any]] = js.undefined
     
-    var settings: js.UndefOr[ISettings[_]] = js.native
+    var settings: js.UndefOr[ISettings[js.Any]] = js.undefined
   }
   object IDefaults {
     
@@ -38,13 +36,13 @@ object ngTableDefaultsMod {
     implicit class IDefaultsMutableBuilder[Self <: IDefaults] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setParams(value: IParamValues[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: IParamValues[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setSettings(value: ISettings[_]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      def setSettings(value: ISettings[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)

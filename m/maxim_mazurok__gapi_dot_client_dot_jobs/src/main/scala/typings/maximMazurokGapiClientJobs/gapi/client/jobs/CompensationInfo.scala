@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompensationInfo extends StObject {
   
   /**
     * Output only. Annualized base compensation range. Computed as base compensation entry's CompensationEntry.compensation times CompensationEntry.expected_units_per_year. See
     * CompensationEntry for explanation on compensation annualization.
     */
-  var annualizedBaseCompensationRange: js.UndefOr[CompensationRange] = js.native
+  var annualizedBaseCompensationRange: js.UndefOr[CompensationRange] = js.undefined
   
   /**
     * Output only. Annualized total compensation range. Computed as all compensation entries' CompensationEntry.compensation times CompensationEntry.expected_units_per_year. See
     * CompensationEntry for explanation on compensation annualization.
     */
-  var annualizedTotalCompensationRange: js.UndefOr[CompensationRange] = js.native
+  var annualizedTotalCompensationRange: js.UndefOr[CompensationRange] = js.undefined
   
   /** Optional. Job compensation information. At most one entry can be of type CompensationInfo.CompensationType.BASE, which is referred as ** base compensation entry ** for the job. */
-  var entries: js.UndefOr[js.Array[CompensationEntry]] = js.native
+  var entries: js.UndefOr[js.Array[CompensationEntry]] = js.undefined
 }
 object CompensationInfo {
   

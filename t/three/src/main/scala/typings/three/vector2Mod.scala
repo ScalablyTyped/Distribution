@@ -6,24 +6,40 @@ import typings.three.matrix3Mod.Matrix3
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vector2Mod {
   
   @JSImport("three/src/math/Vector2", "Vector2")
   @js.native
-  class Vector2 () extends Vector {
+  class Vector2 ()
+    extends StObject
+       with Vector {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
     
+    /**
+    	 * NOTE: The second argument is deprecated.
+    	 *
+    	 * add(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def add(v: Vector): this.type = js.native
     /**
     	 * Adds v to this vector.
     	 */
     def add(v: Vector2): this.type = js.native
     def add(v: Vector2, w: Vector2): this.type = js.native
     
+    /**
+    	 * Adds the scalar value s to this vector's values.
+    	 */
+    /* CompleteClass */
+    override def addScalar(scalar: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def addScaledVector(vector: Vector, scale: Double): this.type = js.native
     /**
     	 * Adds the multiple of v and s to this vector.
     	 */
@@ -33,6 +49,11 @@ object vector2Mod {
     	 * Sets this vector to a + b.
     	 */
     def addVectors(a: Vector2, b: Vector2): this.type = js.native
+    /**
+    	 * addVectors(a:T, b:T):T;
+    	 */
+    /* CompleteClass */
+    override def addVectors(a: Vector, b: Vector): this.type = js.native
     
     /**
     	 * computes the angle in radians with respect to the positive x-axis
@@ -74,6 +95,11 @@ object vector2Mod {
     def clampScalar(min: Double, max: Double): this.type = js.native
     
     /**
+    	 * copy(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def copy(v: Vector): this.type = js.native
+    /**
     	 * Copies value of v to this vector.
     	 */
     def copy(v: Vector2): this.type = js.native
@@ -106,10 +132,26 @@ object vector2Mod {
     def divide(v: Vector2): this.type = js.native
     
     /**
+    	 * divideScalar(s:number):T;
+    	 */
+    /* CompleteClass */
+    override def divideScalar(s: Double): this.type = js.native
+    
+    /**
+    	 * dot(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def dot(v: Vector): Double = js.native
+    /**
     	 * Computes dot product of this vector and v.
     	 */
     def dot(v: Vector2): Double = js.native
     
+    /**
+    	 * equals(v:T):boolean;
+    	 */
+    /* CompleteClass */
+    override def equals(v: Vector): Boolean = js.native
     /**
     	 * Checks for strict equality of this vector and v.
     	 */
@@ -142,9 +184,18 @@ object vector2Mod {
     	 */
     def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
     
+    /* CompleteClass */
+    override def getComponent(index: Double): Double = js.native
+    
     var height: Double = js.native
     
     val isVector2: `true` = js.native
+    
+    /**
+    	 * length():number;
+    	 */
+    /* CompleteClass */
+    override def length(): Double = js.native
     
     /**
     	 * @deprecated Use {@link Vector2#manhattanLength .manhattanLength()} instead.
@@ -152,11 +203,22 @@ object vector2Mod {
     def lengthManhattan(): Double = js.native
     
     /**
+    	 * lengthSq():number;
+    	 */
+    /* CompleteClass */
+    override def lengthSq(): Double = js.native
+    
+    /**
     	 * Linearly interpolates between this vector and v, where alpha is the distance along the line - alpha = 0 will be this vector, and alpha = 1 will be v.
     	 * @param v vector to interpolate towards.
     	 * @param alpha interpolation factor in the closed interval [0, 1].
     	 */
     def lerp(v: Vector2, alpha: Double): this.type = js.native
+    /**
+    	 * lerp(v:T, alpha:number):T;
+    	 */
+    /* CompleteClass */
+    override def lerp(v: Vector, alpha: Double): this.type = js.native
     
     /**
     	 * Sets this vector to be the vector linearly interpolated between v1 and v2 where alpha is the distance along the line connecting the two vectors - alpha = 0 will be v1, and alpha = 1 will be v2.
@@ -202,6 +264,24 @@ object vector2Mod {
     def multiply(v: Vector2): this.type = js.native
     
     /**
+    	 * multiplyScalar(s:number):T;
+    	 */
+    /* CompleteClass */
+    override def multiplyScalar(s: Double): this.type = js.native
+    
+    /**
+    	 * negate():T;
+    	 */
+    /* CompleteClass */
+    override def negate(): this.type = js.native
+    
+    /**
+    	 * normalize():T;
+    	 */
+    /* CompleteClass */
+    override def normalize(): this.type = js.native
+    
+    /**
     	 * Sets this vector's x and y from Math.random
     	 */
     def random(): this.type = js.native
@@ -223,10 +303,24 @@ object vector2Mod {
     	 */
     def roundToZero(): this.type = js.native
     
+    /* CompleteClass */
+    override def set(args: Double*): this.type = js.native
     /**
     	 * Sets value of this vector.
     	 */
     def set(x: Double, y: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def setComponent(index: Double, value: Double): this.type = js.native
+    
+    /**
+    	 * setLength(l:number):T;
+    	 */
+    /* CompleteClass */
+    override def setLength(l: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def setScalar(scalar: Double): this.type = js.native
     
     /**
     	 * Sets X component of this vector.
@@ -238,6 +332,11 @@ object vector2Mod {
     	 */
     def setY(y: Double): this.type = js.native
     
+    /**
+    	 * sub(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def sub(v: Vector): this.type = js.native
     /**
     	 * Subtracts v from this vector.
     	 */
@@ -252,6 +351,11 @@ object vector2Mod {
     	 * Sets this vector to a - b.
     	 */
     def subVectors(a: Vector2, b: Vector2): this.type = js.native
+    /**
+    	 * subVectors(a:T, b:T):T;
+    	 */
+    /* CompleteClass */
+    override def subVectors(a: Vector, b: Vector): this.type = js.native
     
     /**
     	 * Returns an array [x, y], or copies x and y into the provided array.
@@ -260,9 +364,9 @@ object vector2Mod {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
     	 * Copies x and y into the provided array-like.
     	 * @param array array-like to store the vector to.
@@ -285,7 +389,6 @@ object vector2Mod {
     var y: Double = js.native
   }
   
-  @js.native
   trait Vector extends StObject {
     
     /**
@@ -293,106 +396,106 @@ object vector2Mod {
     	 *
     	 * add(v:T):T;
     	 */
-    def add(v: Vector): this.type = js.native
+    def add(v: Vector): this.type
     
     /**
     	 * Adds the scalar value s to this vector's values.
     	 */
-    def addScalar(scalar: Double): this.type = js.native
+    def addScalar(scalar: Double): this.type
     
-    def addScaledVector(vector: Vector, scale: Double): this.type = js.native
+    def addScaledVector(vector: Vector, scale: Double): this.type
     
     /**
     	 * addVectors(a:T, b:T):T;
     	 */
-    def addVectors(a: Vector, b: Vector): this.type = js.native
+    def addVectors(a: Vector, b: Vector): this.type
     
     /**
     	 * copy(v:T):T;
     	 */
-    def copy(v: Vector): this.type = js.native
+    def copy(v: Vector): this.type
     
     /**
     	 * NOTE: Vector4 doesn't have the property.
     	 *
     	 * distanceTo(v:T):number;
     	 */
-    var distanceTo: js.UndefOr[js.Function1[/* v */ this.type, Double]] = js.native
+    var distanceTo: js.UndefOr[js.Function1[/* v */ this.type, Double]] = js.undefined
     
     /**
     	 * NOTE: Vector4 doesn't have the property.
     	 *
     	 * distanceToSquared(v:T):number;
     	 */
-    var distanceToSquared: js.UndefOr[js.Function1[/* v */ this.type, Double]] = js.native
+    var distanceToSquared: js.UndefOr[js.Function1[/* v */ this.type, Double]] = js.undefined
     
     /**
     	 * divideScalar(s:number):T;
     	 */
-    def divideScalar(s: Double): this.type = js.native
+    def divideScalar(s: Double): this.type
     
     /**
     	 * dot(v:T):T;
     	 */
-    def dot(v: Vector): Double = js.native
+    def dot(v: Vector): Double
     
     /**
     	 * equals(v:T):boolean;
     	 */
-    def equals(v: Vector): Boolean = js.native
+    def equals(v: Vector): Boolean
     
-    def getComponent(index: Double): Double = js.native
+    def getComponent(index: Double): Double
     
     /**
     	 * length():number;
     	 */
-    def length(): Double = js.native
+    def length(): Double
     
     /**
     	 * lengthSq():number;
     	 */
-    def lengthSq(): Double = js.native
+    def lengthSq(): Double
     
     /**
     	 * lerp(v:T, alpha:number):T;
     	 */
-    def lerp(v: Vector, alpha: Double): this.type = js.native
+    def lerp(v: Vector, alpha: Double): this.type
     
     /**
     	 * multiplyScalar(s:number):T;
     	 */
-    def multiplyScalar(s: Double): this.type = js.native
+    def multiplyScalar(s: Double): this.type
     
     /**
     	 * negate():T;
     	 */
-    def negate(): this.type = js.native
+    def negate(): this.type
     
     /**
     	 * normalize():T;
     	 */
-    def normalize(): this.type = js.native
+    def normalize(): this.type
     
-    def set(args: Double*): this.type = js.native
+    def set(args: Double*): this.type
     
-    def setComponent(index: Double, value: Double): this.type = js.native
+    def setComponent(index: Double, value: Double): this.type
     
     /**
     	 * setLength(l:number):T;
     	 */
-    def setLength(l: Double): this.type = js.native
+    def setLength(l: Double): this.type
     
-    def setScalar(scalar: Double): this.type = js.native
+    def setScalar(scalar: Double): this.type
     
     /**
     	 * sub(v:T):T;
     	 */
-    def sub(v: Vector): this.type = js.native
+    def sub(v: Vector): this.type
     
     /**
     	 * subVectors(a:T, b:T):T;
     	 */
-    def subVectors(a: Vector, b: Vector): this.type = js.native
+    def subVectors(a: Vector, b: Vector): this.type
   }
   object Vector {
     

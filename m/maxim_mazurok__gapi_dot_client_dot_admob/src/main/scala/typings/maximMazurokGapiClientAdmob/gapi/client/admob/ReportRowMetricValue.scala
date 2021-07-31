@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportRowMetricValue extends StObject {
   
   /** Double precision (approximate) decimal values. Rates are from 0 to 1. */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /** Metric integer value. */
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
   /**
     * Amount in micros. One million is equivalent to one unit. Currency value is in the unit (USD, EUR or other) specified by the request. For example, $6.50 whould be represented as
     * 6500000 micros.
     */
-  var microsValue: js.UndefOr[String] = js.native
+  var microsValue: js.UndefOr[String] = js.undefined
 }
 object ReportRowMetricValue {
   

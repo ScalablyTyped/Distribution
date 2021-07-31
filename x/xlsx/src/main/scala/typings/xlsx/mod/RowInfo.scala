@@ -2,25 +2,23 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowInfo extends StObject {
   
   /* --- visibility --- */
   /** if true, the column is hidden */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** height in points */
-  var hpt: js.UndefOr[Double] = js.native
+  var hpt: js.UndefOr[Double] = js.undefined
   
   /* --- row height --- */
   /** height in screen pixels */
-  var hpx: js.UndefOr[Double] = js.native
+  var hpx: js.UndefOr[Double] = js.undefined
   
   /** outline / group level */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
 }
 object RowInfo {
   

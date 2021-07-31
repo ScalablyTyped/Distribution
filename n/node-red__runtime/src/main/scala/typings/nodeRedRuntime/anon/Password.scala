@@ -3,17 +3,15 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.mod.Permission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Password extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var permissions: Permission | js.Array[Permission] = js.native
+  var permissions: Permission | js.Array[Permission]
   
-  var username: String = js.native
+  var username: String
 }
 object Password {
   

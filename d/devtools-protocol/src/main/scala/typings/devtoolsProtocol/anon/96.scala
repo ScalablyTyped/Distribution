@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.DeleteObjectStoreEntriesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `96` extends StObject {
   
-  var paramsType: js.Array[DeleteObjectStoreEntriesRequest] = js.native
+  var paramsType: js.Array[DeleteObjectStoreEntriesRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `96` {
   

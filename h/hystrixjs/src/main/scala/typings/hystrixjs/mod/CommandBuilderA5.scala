@@ -3,43 +3,41 @@ package typings.hystrixjs.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBuilderA5[R, T, U, V, W, X] extends StObject {
   
-  def build(): CommandA5[R, T, U, V, W, X] = js.native
+  def build(): CommandA5[R, T, U, V, W, X]
   
-  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA5[R, T, U, V, W, X]
   
-  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA5[R, T, U, V, W, X]
   
-  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def context(value: js.Any): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def context(value: js.Any): CommandBuilderA5[R, T, U, V, W, X]
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA5[R, T, U, V, W, X]
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple5[T, U, V, W, X], js.Thenable[R]]): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple5[T, U, V, W, X], js.Thenable[R]]): CommandBuilderA5[R, T, U, V, W, X]
   
-  def percentileWindowLength(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def percentileWindowLength(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def run(value: js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, js.Thenable[R]]): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def run(value: js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, js.Thenable[R]]): CommandBuilderA5[R, T, U, V, W, X]
   
-  def statisticalWindowLength(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def statisticalWindowLength(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA5[R, T, U, V, W, X]
   
-  def timeout(value: Double): CommandBuilderA5[R, T, U, V, W, X] = js.native
+  def timeout(value: Double): CommandBuilderA5[R, T, U, V, W, X]
 }
 object CommandBuilderA5 {
   
@@ -67,7 +65,7 @@ object CommandBuilderA5 {
   }
   
   @scala.inline
-  implicit class CommandBuilderA5MutableBuilder[Self <: CommandBuilderA5[_, _, _, _, _, _], R, T, U, V, W, X] (val x: Self with (CommandBuilderA5[R, T, U, V, W, X])) extends AnyVal {
+  implicit class CommandBuilderA5MutableBuilder[Self <: CommandBuilderA5[?, ?, ?, ?, ?, ?], R, T, U, V, W, X] (val x: Self & (CommandBuilderA5[R, T, U, V, W, X])) extends AnyVal {
     
     @scala.inline
     def setBuild(value: () => CommandA5[R, T, U, V, W, X]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))

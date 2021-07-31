@@ -2,17 +2,15 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginDetails extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var publicKey: String = js.native
+  var publicKey: String
   
-  var signature: String = js.native
+  var signature: String
 }
 object LoginDetails {
   

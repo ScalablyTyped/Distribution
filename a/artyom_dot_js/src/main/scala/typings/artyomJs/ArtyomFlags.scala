@@ -2,13 +2,11 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtyomFlags extends StObject {
   
-  var restartRecognition: js.UndefOr[Boolean] = js.native
+  var restartRecognition: js.UndefOr[Boolean] = js.undefined
 }
 object ArtyomFlags {
   

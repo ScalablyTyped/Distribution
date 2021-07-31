@@ -14,7 +14,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.End
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait WorksheetCollection extends ClientObject {
+trait WorksheetCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.
@@ -51,46 +52,12 @@ trait WorksheetCollection extends ClientObject {
     * @returns An array of ids corresponding to each newly inserted worksheet.
     */
   def addFromBase64(base64File: String): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: js.UndefOr[scala.Nothing],
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: js.UndefOr[scala.Nothing],
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: WorksheetPositionType
-  ): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: WorksheetPositionType,
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: WorksheetPositionType,
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
   def addFromBase64(base64File: String, sheetNamesToInsert: js.Array[String]): ClientResult[js.Array[String]] = js.native
+  def addFromBase64(base64File: String, sheetNamesToInsert: js.Array[String], positionType: Unit, relativeTo: String): ClientResult[js.Array[String]] = js.native
   def addFromBase64(
     base64File: String,
     sheetNamesToInsert: js.Array[String],
-    positionType: js.UndefOr[scala.Nothing],
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
-  def addFromBase64(
-    base64File: String,
-    sheetNamesToInsert: js.Array[String],
-    positionType: js.UndefOr[scala.Nothing],
+    positionType: Unit,
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
   def addFromBase64(base64File: String, sheetNamesToInsert: js.Array[String], positionType: WorksheetPositionType): ClientResult[js.Array[String]] = js.native
@@ -106,20 +73,19 @@ trait WorksheetCollection extends ClientObject {
     positionType: WorksheetPositionType,
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
-  @JSName("addFromBase64")
-  def addFromBase64_After(base64File: String, sheetNamesToInsert: js.UndefOr[scala.Nothing], positionType: After): ClientResult[js.Array[String]] = js.native
-  @JSName("addFromBase64")
-  def addFromBase64_After(
+  def addFromBase64(base64File: String, sheetNamesToInsert: Unit, positionType: Unit, relativeTo: String): ClientResult[js.Array[String]] = js.native
+  def addFromBase64(base64File: String, sheetNamesToInsert: Unit, positionType: Unit, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
+  def addFromBase64(base64File: String, sheetNamesToInsert: Unit, positionType: WorksheetPositionType): ClientResult[js.Array[String]] = js.native
+  def addFromBase64(
     base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: After,
+    sheetNamesToInsert: Unit,
+    positionType: WorksheetPositionType,
     relativeTo: String
   ): ClientResult[js.Array[String]] = js.native
-  @JSName("addFromBase64")
-  def addFromBase64_After(
+  def addFromBase64(
     base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: After,
+    sheetNamesToInsert: Unit,
+    positionType: WorksheetPositionType,
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
@@ -134,21 +100,11 @@ trait WorksheetCollection extends ClientObject {
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Before(base64File: String, sheetNamesToInsert: js.UndefOr[scala.Nothing], positionType: Before): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_After(base64File: String, sheetNamesToInsert: Unit, positionType: After): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Before(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: Before,
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_After(base64File: String, sheetNamesToInsert: Unit, positionType: After, relativeTo: String): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Before(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: Before,
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_After(base64File: String, sheetNamesToInsert: Unit, positionType: After, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
   def addFromBase64_Before(base64File: String, sheetNamesToInsert: js.Array[String], positionType: Before): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
@@ -161,21 +117,11 @@ trait WorksheetCollection extends ClientObject {
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Beginning(base64File: String, sheetNamesToInsert: js.UndefOr[scala.Nothing], positionType: Beginning): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Before(base64File: String, sheetNamesToInsert: Unit, positionType: Before): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Beginning(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: Beginning,
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Before(base64File: String, sheetNamesToInsert: Unit, positionType: Before, relativeTo: String): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_Beginning(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: Beginning,
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Before(base64File: String, sheetNamesToInsert: Unit, positionType: Before, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
   def addFromBase64_Beginning(base64File: String, sheetNamesToInsert: js.Array[String], positionType: Beginning): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
@@ -193,21 +139,11 @@ trait WorksheetCollection extends ClientObject {
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_End(base64File: String, sheetNamesToInsert: js.UndefOr[scala.Nothing], positionType: End): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Beginning(base64File: String, sheetNamesToInsert: Unit, positionType: Beginning): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_End(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: End,
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Beginning(base64File: String, sheetNamesToInsert: Unit, positionType: Beginning, relativeTo: String): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_End(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: End,
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_Beginning(base64File: String, sheetNamesToInsert: Unit, positionType: Beginning, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
   def addFromBase64_End(base64File: String, sheetNamesToInsert: js.Array[String], positionType: End): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
@@ -215,21 +151,11 @@ trait WorksheetCollection extends ClientObject {
   @JSName("addFromBase64")
   def addFromBase64_End(base64File: String, sheetNamesToInsert: js.Array[String], positionType: End, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_None(base64File: String, sheetNamesToInsert: js.UndefOr[scala.Nothing], positionType: None): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_End(base64File: String, sheetNamesToInsert: Unit, positionType: End): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_None(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: None,
-    relativeTo: String
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_End(base64File: String, sheetNamesToInsert: Unit, positionType: End, relativeTo: String): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
-  def addFromBase64_None(
-    base64File: String,
-    sheetNamesToInsert: js.UndefOr[scala.Nothing],
-    positionType: None,
-    relativeTo: Worksheet
-  ): ClientResult[js.Array[String]] = js.native
+  def addFromBase64_End(base64File: String, sheetNamesToInsert: Unit, positionType: End, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
   def addFromBase64_None(base64File: String, sheetNamesToInsert: js.Array[String], positionType: None): ClientResult[js.Array[String]] = js.native
   @JSName("addFromBase64")
@@ -241,6 +167,12 @@ trait WorksheetCollection extends ClientObject {
     positionType: None,
     relativeTo: Worksheet
   ): ClientResult[js.Array[String]] = js.native
+  @JSName("addFromBase64")
+  def addFromBase64_None(base64File: String, sheetNamesToInsert: Unit, positionType: None): ClientResult[js.Array[String]] = js.native
+  @JSName("addFromBase64")
+  def addFromBase64_None(base64File: String, sheetNamesToInsert: Unit, positionType: None, relativeTo: String): ClientResult[js.Array[String]] = js.native
+  @JSName("addFromBase64")
+  def addFromBase64_None(base64File: String, sheetNamesToInsert: Unit, positionType: None, relativeTo: Worksheet): ClientResult[js.Array[String]] = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -310,7 +242,7 @@ trait WorksheetCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): WorksheetCollection = js.native
-  def load(options: WorksheetCollectionLoadOptions with CollectionLoadOptions): WorksheetCollection = js.native
+  def load(options: WorksheetCollectionLoadOptions & CollectionLoadOptions): WorksheetCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): WorksheetCollection = js.native
   def load(propertyNames: String): WorksheetCollection = js.native
   def load(propertyNames: js.Array[String]): WorksheetCollection = js.native

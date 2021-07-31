@@ -15,7 +15,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typographyTitleMod extends Shortcut {
@@ -25,44 +24,43 @@ object typographyTitleMod extends Shortcut {
   val default: FC[TitleProps] = js.native
   
   /* Inlined antd.antd/lib/_util/type.Omit<antd.antd/lib/typography/Base.BlockProps & {  level :[1, 2, 3, 4, 5][number] | undefined}, 'strong'> */
-  @js.native
   trait TitleProps extends StObject {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var code: js.UndefOr[Boolean] = js.native
+    var code: js.UndefOr[Boolean] = js.undefined
     
-    var copyable: js.UndefOr[Boolean | CopyConfig] = js.native
+    var copyable: js.UndefOr[Boolean | CopyConfig] = js.undefined
     
-    var delete: js.UndefOr[Boolean] = js.native
+    var delete: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean | EditConfig] = js.native
+    var editable: js.UndefOr[Boolean | EditConfig] = js.undefined
     
-    var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.native
+    var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
+    var level: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[BaseType] = js.native
+    var `type`: js.UndefOr[BaseType] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object TitleProps {
     

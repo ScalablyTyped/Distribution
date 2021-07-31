@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object podTemplateListMod {
@@ -27,7 +26,7 @@ object podTemplateListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PodTemplateListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PodTemplateListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object podTemplateListMod {
   /* static members */
   object PodTemplateList {
     
+    @JSImport("@pulumi/kubernetes/core/v1/podTemplateList", "PodTemplateList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PodTemplateList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object podTemplateListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/podTemplateList", "PodTemplateList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PodTemplateList = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/podTemplateList", "PodTemplateList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PodTemplateList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PodTemplateList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PodTemplateList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PodTemplateList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PodTemplateList]
     
     /**
       * Returns true if the given object is an instance of PodTemplateList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/podTemplateList", "PodTemplateList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/podTemplateList.PodTemplateList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/podTemplateList.PodTemplateList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/podTemplateList.PodTemplateList */ Boolean]
   }
   
-  @js.native
   trait PodTemplateListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * List of pod templates
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.PodTemplate]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.PodTemplate]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodTemplateList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodTemplateList]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object PodTemplateListArgs {
     

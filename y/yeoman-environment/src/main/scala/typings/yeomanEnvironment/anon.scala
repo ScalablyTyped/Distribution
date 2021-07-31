@@ -8,7 +8,6 @@ import typings.yeomanEnvironment.logMod.DefaultCategories
 import typings.yeomanEnvironment.logMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -31,24 +30,24 @@ object anon {
       * Writes a log-message.
       */
     def apply(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ _, Unit]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ js.Any, Unit]]
     ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
-    def apply(format: js.UndefOr[scala.Nothing], params: Record[String, _]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
     def apply(format: String): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
-    def apply(format: String, params: Record[String, _]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
+    def apply(format: String, params: Record[String, js.Any]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
+    def apply(format: Unit, params: Record[String, js.Any]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
     
     /**
       * Writes an error-message with a prepended cross mark.
       */
     def error(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
     
     /**
       * Writes a success status with a check mark `✔`.
       */
     def ok(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
     
     /**
@@ -60,14 +59,14 @@ object anon {
       * Writes a log-message.
       */
     def write(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
     
     /**
       * Writes a log-message with an appended newline character.
       */
     def writeln(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias yeoman-environment.yeoman-environment/lib/util/log.Logger<TCategories> */ js.Object = js.native
   }
   
@@ -105,22 +104,22 @@ object anon {
       * Writes a log-message.
       */
     def apply(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ _, Unit]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ js.Any, Unit]]
     ): Logger[DefaultCategories] = js.native
-    def apply(format: js.UndefOr[scala.Nothing], params: Record[String, _]): Logger[DefaultCategories] = js.native
     def apply(format: String): Logger[DefaultCategories] = js.native
-    def apply(format: String, params: Record[String, _]): Logger[DefaultCategories] = js.native
+    def apply(format: String, params: Record[String, js.Any]): Logger[DefaultCategories] = js.native
+    def apply(format: Unit, params: Record[String, js.Any]): Logger[DefaultCategories] = js.native
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     
     var conflict: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
     var create: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
@@ -131,30 +130,30 @@ object anon {
       * Writes an error-message with a prepended cross mark.
       */
     def error(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): Logger[DefaultCategories] = js.native
     
     def eventNames(): js.Array[String | js.Symbol] = js.native
     
     var force: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
     def getMaxListeners(): Double = js.native
     
     var identical: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
     var info: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
     var invoke: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
@@ -171,7 +170,7 @@ object anon {
       * Writes a success status with a check mark `✔`.
       */
     def ok(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): Logger[DefaultCategories] = js.native
     
     def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -200,7 +199,7 @@ object anon {
     def setMaxListeners(n: Double): this.type = js.native
     
     var skip: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         Logger[DefaultCategories]
       ] = js.native
     
@@ -213,14 +212,14 @@ object anon {
       * Writes a log-message.
       */
     def write(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): Logger[DefaultCategories] = js.native
     
     /**
       * Writes a log-message with an appended newline character.
       */
     def writeln(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): Logger[DefaultCategories] = js.native
   }
 }

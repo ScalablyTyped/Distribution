@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait WriteActivationMode extends StObject
 object WriteActivationMode extends StObject {
   
   @js.native
-  sealed trait afterWrite extends WriteActivationMode
+  sealed trait afterWrite
+    extends StObject
+       with WriteActivationMode
   
   @js.native
-  sealed trait notNeeded extends WriteActivationMode
+  sealed trait notNeeded
+    extends StObject
+       with WriteActivationMode
   
   @js.native
-  sealed trait readOnly extends WriteActivationMode
+  sealed trait readOnly
+    extends StObject
+       with WriteActivationMode
 }

@@ -4,19 +4,17 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait El extends StObject {
     
-    var el: HTMLElement | SVGElement = js.native
+    var el: HTMLElement | SVGElement
     
-    var property: String = js.native
+    var property: String
     
-    var totalLength: Double = js.native
+    var totalLength: Double
   }
   object El {
     

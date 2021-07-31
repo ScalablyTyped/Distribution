@@ -2,54 +2,52 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Photo object in Directory API.
   */
-@js.native
 trait SchemaUserPhoto extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Height in pixels of the photo
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Unique identifier of User (Read-only)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Mime Type of the photo
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Base64 encoded photo data
     */
-  var photoData: js.UndefOr[String] = js.native
+  var photoData: js.UndefOr[String] = js.undefined
   
   /**
     * Primary email of User (Read-only)
     */
-  var primaryEmail: js.UndefOr[String] = js.native
+  var primaryEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Width in pixels of the photo
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaUserPhoto {
   

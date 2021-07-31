@@ -2,27 +2,25 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 基础事件参数 */
-@js.native
 trait BaseEvent[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] extends StObject {
   
   /** 事件绑定的当前组件 */
-  var currentTarget: Target[CurrentTargetDataset] = js.native
+  var currentTarget: Target[CurrentTargetDataset]
   
   /** 事件冒泡路径上所有由 `mark:` 开头的自定义属性组成的集合 */
-  var mark: js.UndefOr[Mark] = js.native
+  var mark: js.UndefOr[Mark] = js.undefined
   
   /** 触发事件的源组件 */
-  var target: Target[TargetDataset] = js.native
+  var target: Target[TargetDataset]
   
   /** 页面打开到触发事件所经过的毫秒数 */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
   /** 事件类型 */
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseEvent {
   
@@ -39,7 +37,7 @@ object BaseEvent {
   }
   
   @scala.inline
-  implicit class BaseEventMutableBuilder[Self <: BaseEvent[_, _, _], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self with (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  implicit class BaseEventMutableBuilder[Self <: BaseEvent[?, ?, ?], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     @scala.inline
     def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])

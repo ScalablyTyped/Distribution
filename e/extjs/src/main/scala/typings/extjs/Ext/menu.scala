@@ -3,40 +3,40 @@ package typings.extjs.Ext
 import typings.extjs.Ext.picker.IColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menu {
   
-  @js.native
-  trait ICheckItem extends IItem {
+  trait ICheckItem
+    extends StObject
+       with IItem {
     
     /** [Config Option] (Boolean) */
-    var checkChangeDisabled: js.UndefOr[Boolean] = js.native
+    var checkChangeDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var checkHandler: js.UndefOr[js.Any] = js.native
+    var checkHandler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var checkedCls: js.UndefOr[java.lang.String] = js.native
+    var checkedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Disables just the checkbox functionality of this menu Item  */
-    var disableCheckChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var disableCheckChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Reenables the checkbox functionality of this menu item after having been disabled by disableCheckChange */
-    var enableCheckChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var enableCheckChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var group: js.UndefOr[java.lang.String] = js.native
+    var group: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var groupCls: js.UndefOr[java.lang.String] = js.native
+    var groupCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the checked state of the item
       * @param checked Boolean True to check, false to uncheck
@@ -44,10 +44,10 @@ object menu {
       */
     var setChecked: js.UndefOr[
         js.Function2[/* checked */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var uncheckedCls: js.UndefOr[java.lang.String] = js.native
+    var uncheckedCls: js.UndefOr[java.lang.String] = js.undefined
   }
   object ICheckItem {
     
@@ -128,17 +128,18 @@ object menu {
     }
   }
   
-  @js.native
-  trait IColorPicker extends IMenu {
+  trait IColorPicker
+    extends StObject
+       with IMenu {
     
     /** [Config Option] (Boolean) */
-    var hideOnClick: js.UndefOr[Boolean] = js.native
+    var hideOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Ext.picker.Color) */
-    var picker: js.UndefOr[IColor] = js.native
+    var picker: js.UndefOr[IColor] = js.undefined
     
     /** [Config Option] (String) */
-    var pickerId: js.UndefOr[java.lang.String] = js.native
+    var pickerId: js.UndefOr[java.lang.String] = js.undefined
   }
   object IColorPicker {
     
@@ -171,17 +172,18 @@ object menu {
     }
   }
   
-  @js.native
-  trait IDatePicker extends IMenu {
+  trait IDatePicker
+    extends StObject
+       with IMenu {
     
     /** [Config Option] (Boolean) */
-    var hideOnClick: js.UndefOr[Boolean] = js.native
+    var hideOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Ext.picker.Date) */
-    var picker: js.UndefOr[typings.extjs.Ext.picker.IDate] = js.native
+    var picker: js.UndefOr[typings.extjs.Ext.picker.IDate] = js.undefined
     
     /** [Config Option] (String) */
-    var pickerId: js.UndefOr[java.lang.String] = js.native
+    var pickerId: js.UndefOr[java.lang.String] = js.undefined
   }
   object IDatePicker {
     
@@ -217,117 +219,118 @@ object menu {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ @js.native
-  trait IItem extends IComponent {
+  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ trait IItem
+    extends StObject
+       with IComponent {
     
     /** [Property] (Boolean) */
-    var activated: js.UndefOr[Boolean] = js.native
+    var activated: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var activeCls: js.UndefOr[java.lang.String] = js.native
+    var activeCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var canActivate: js.UndefOr[Boolean] = js.native
+    var canActivate: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var clickHideDelay: js.UndefOr[Double] = js.native
+    var clickHideDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var destroyMenu: js.UndefOr[Boolean] = js.native
+    var destroyMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.native
+    var glyph: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideOnClick: js.UndefOr[Boolean] = js.native
+    var hideOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var href: js.UndefOr[java.lang.String] = js.native
+    var href: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var hrefTarget: js.UndefOr[java.lang.String] = js.native
+    var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var icon: js.UndefOr[java.lang.String] = js.native
+    var icon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var iconCls: js.UndefOr[java.lang.String] = js.native
+    var iconCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/Object) */
-    var menu: js.UndefOr[js.Any] = js.native
+    var menu: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var menuAlign: js.UndefOr[java.lang.String] = js.native
+    var menuAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var menuExpandDelay: js.UndefOr[Double] = js.native
+    var menuExpandDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var menuHideDelay: js.UndefOr[Double] = js.native
+    var menuHideDelay: js.UndefOr[Double] = js.undefined
     
     /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event  */
     @JSName("onRemoved")
-    var onRemoved_IItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRemoved_IItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_IItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_IItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Ext.menu.Menu) */
-    var parentMenu: js.UndefOr[IMenu] = js.native
+    var parentMenu: js.UndefOr[IMenu] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed selector
       * @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
       * @returns Ext.Component[] Components which matched the selector
       */
-    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed function
       * @param fn Function The matcher function. It will be called with a single argument, the component being tested.
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.native
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
       * @returns Ext.Component The matching id, null if not found
       */
-    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.native
+    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
     
     /** [Method] Sets the click handler of this item
       * @param fn Function The handler function
       * @param scope Object The scope of the handler function
       */
-    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the icon on this item
       * @param icon String The new icon
       */
-    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the iconCls of this item
       * @param iconCls String The CSS class to set to iconCls
       */
-    var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Set a child menu for this item
       * @param menu Ext.menu.Menu/Object A menu, or menu configuration. null may be passed to remove the menu.
@@ -335,27 +338,27 @@ object menu {
       */
     var setMenu: js.UndefOr[
         js.Function2[/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the text of this item
       * @param text String The text
       */
-    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the tooltip for this menu item
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.menu.Item this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.native
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[java.lang.String] = js.native
+    var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var tooltipType: js.UndefOr[java.lang.String] = js.native
+    var tooltipType: js.UndefOr[java.lang.String] = js.undefined
   }
   object IItem {
     
@@ -387,7 +390,7 @@ object menu {
       def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
       @scala.inline
-      def setChild(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
@@ -405,7 +408,7 @@ object menu {
       def setDestroyMenuUndefined: Self = StObject.set(x, "destroyMenu", js.undefined)
       
       @scala.inline
-      def setDown(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
@@ -578,54 +581,54 @@ object menu {
   
   type IManager = IBase
   
-  @js.native
   trait IMenu
-    extends typings.extjs.Ext.panel.IPanel {
+    extends StObject
+       with typings.extjs.Ext.panel.IPanel {
     
     /** [Method] Invoked after the Component is shown after onShow is called */
     @JSName("afterShow")
-    var afterShow_IMenu: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterShow_IMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var allowOtherMenus: js.UndefOr[Boolean] = js.native
+    var allowOtherMenus: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns whether a menu item can be activated or not
       * @param item Object
       * @returns Boolean
       */
-    var canActivateItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.native
+    var canActivateItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Method] Deactivates the current active item on the menu if one exists
       * @param andBlurFocusedItem Object
       */
-    var deactivateActiveItem: js.UndefOr[js.Function1[/* andBlurFocusedItem */ js.UndefOr[js.Any], Unit]] = js.native
+    var deactivateActiveItem: js.UndefOr[js.Function1[/* andBlurFocusedItem */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableKeyNav: js.UndefOr[Boolean] = js.native
+    var enableKeyNav: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Hides this Component setting it to invisible using the configured hideMode
       * @returns Ext.Component this
       */
     @JSName("hide")
-    var hide_IMenu: js.UndefOr[js.Function0[IComponent]] = js.native
+    var hide_IMenu: js.UndefOr[js.Function0[IComponent]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var ignoreParentClicks: js.UndefOr[Boolean] = js.native
+    var ignoreParentClicks: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var isMenu: js.UndefOr[Boolean] = js.native
+    var isMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Menus are never contained and must not ascertain their visibility from the ancestor hierarchy
       * @returns Boolean true if this component is visible, false otherwise.
       */
     @JSName("isVisible")
-    var isVisible_IMenu: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isVisible_IMenu: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Property] (Ext.menu.Menu) */
-    var parentMenu: js.UndefOr[IMenu] = js.native
+    var parentMenu: js.UndefOr[IMenu] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Shows this component by the specified Component or Element
       * @param cmp Object
@@ -641,10 +644,10 @@ object menu {
           /* off */ js.UndefOr[js.Any], 
           IComponent
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showSeparator: js.UndefOr[Boolean] = js.native
+    var showSeparator: js.UndefOr[Boolean] = js.undefined
   }
   object IMenu {
     
@@ -741,11 +744,12 @@ object menu {
   
   type IMenuMgr = IBase
   
-  @js.native
-  trait ISeparator extends IItem {
+  trait ISeparator
+    extends StObject
+       with IItem {
     
     /** [Config Option] (String) */
-    var separatorCls: js.UndefOr[java.lang.String] = js.native
+    var separatorCls: js.UndefOr[java.lang.String] = js.undefined
   }
   object ISeparator {
     
@@ -769,117 +773,118 @@ object menu {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ @js.native
-  trait ITextItem extends IComponent {
+  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ trait ITextItem
+    extends StObject
+       with IComponent {
     
     /** [Property] (Boolean) */
-    var activated: js.UndefOr[Boolean] = js.native
+    var activated: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var activeCls: js.UndefOr[java.lang.String] = js.native
+    var activeCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var canActivate: js.UndefOr[Boolean] = js.native
+    var canActivate: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var clickHideDelay: js.UndefOr[Double] = js.native
+    var clickHideDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var destroyMenu: js.UndefOr[Boolean] = js.native
+    var destroyMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.native
+    var glyph: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideOnClick: js.UndefOr[Boolean] = js.native
+    var hideOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var href: js.UndefOr[java.lang.String] = js.native
+    var href: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var hrefTarget: js.UndefOr[java.lang.String] = js.native
+    var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var icon: js.UndefOr[java.lang.String] = js.native
+    var icon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var iconCls: js.UndefOr[java.lang.String] = js.native
+    var iconCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/Object) */
-    var menu: js.UndefOr[js.Any] = js.native
+    var menu: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var menuAlign: js.UndefOr[java.lang.String] = js.native
+    var menuAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var menuExpandDelay: js.UndefOr[Double] = js.native
+    var menuExpandDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var menuHideDelay: js.UndefOr[Double] = js.native
+    var menuHideDelay: js.UndefOr[Double] = js.undefined
     
     /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event  */
     @JSName("onRemoved")
-    var onRemoved_ITextItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRemoved_ITextItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_ITextItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_ITextItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Ext.menu.Menu) */
-    var parentMenu: js.UndefOr[IMenu] = js.native
+    var parentMenu: js.UndefOr[IMenu] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed selector
       * @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
       * @returns Ext.Component[] Components which matched the selector
       */
-    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed function
       * @param fn Function The matcher function. It will be called with a single argument, the component being tested.
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.native
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
       * @returns Ext.Component The matching id, null if not found
       */
-    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.native
+    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
     
     /** [Method] Sets the click handler of this item
       * @param fn Function The handler function
       * @param scope Object The scope of the handler function
       */
-    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the icon on this item
       * @param icon String The new icon
       */
-    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the iconCls of this item
       * @param iconCls String The CSS class to set to iconCls
       */
-    var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Set a child menu for this item
       * @param menu Ext.menu.Menu/Object A menu, or menu configuration. null may be passed to remove the menu.
@@ -887,27 +892,27 @@ object menu {
       */
     var setMenu: js.UndefOr[
         js.Function2[/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the text of this item
       * @param text String The text
       */
-    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the tooltip for this menu item
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.menu.Item this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], IItem]] = js.native
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], IItem]] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[java.lang.String] = js.native
+    var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var tooltipType: js.UndefOr[java.lang.String] = js.native
+    var tooltipType: js.UndefOr[java.lang.String] = js.undefined
   }
   object ITextItem {
     
@@ -939,7 +944,7 @@ object menu {
       def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
       @scala.inline
-      def setChild(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
@@ -957,7 +962,7 @@ object menu {
       def setDestroyMenuUndefined: Self = StObject.set(x, "destroyMenu", js.undefined)
       
       @scala.inline
-      def setDown(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
@@ -1126,9 +1131,7 @@ object menu {
     }
   }
   
-  @js.native
   trait Manager extends StObject
   
-  @js.native
   trait MenuMgr extends StObject
 }

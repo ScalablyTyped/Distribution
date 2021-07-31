@@ -2,67 +2,65 @@ package typings.nyaapi.mod.pantsu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Torrent extends StObject {
   
-  var anidbid: Double = js.native
+  var anidbid: Double
   
-  var category: String = js.native
+  var category: String
   
-  var comments: js.Array[Comment] = js.native
+  var comments: js.Array[Comment]
   
-  var completed: Double = js.native
+  var completed: Double
   
-  var date: String = js.native
+  var date: String
   
-  var description: String = js.native
+  var description: String
   
-  var dlsite: String = js.native
+  var dlsite: String
   
-  var file_list: js.Array[String] = js.native
+  var file_list: js.Array[String]
   
-  var filesize: Double = js.native
+  var filesize: Double
   
-  var hash: String = js.native
+  var hash: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var languages: js.Array[String] = js.native
+  var languages: js.Array[String]
   
-  var last_scrape: String = js.native
+  var last_scrape: String
   
-  var leechers: Double = js.native
+  var leechers: Double
   
-  var magnet: String = js.native
+  var magnet: String
   
-  var name: String = js.native
+  var name: String
   
-  var seeders: Double = js.native
+  var seeders: Double
   
-  var status: Double = js.native
+  var status: Double
   
-  var sub_category: String = js.native
+  var sub_category: String
   
-  var tags: Null = js.native
+  var tags: Null
   
-  var torrent: String = js.native
+  var torrent: String
   
-  var uploader_id: Double = js.native
+  var uploader_id: Double
   
-  var uploader_name: String = js.native
+  var uploader_name: String
   
-  var uploader_old: String = js.native
+  var uploader_old: String
   
-  var vgmdbid: Double = js.native
+  var vgmdbid: Double
   
-  var videoquality: String = js.native
+  var videoquality: String
   
-  var vndbid: Double = js.native
+  var vndbid: Double
   
-  var website_link: String = js.native
+  var website_link: String
 }
 object Torrent {
   

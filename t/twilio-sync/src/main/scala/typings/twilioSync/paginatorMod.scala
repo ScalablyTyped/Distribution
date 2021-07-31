@@ -2,7 +2,6 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatorMod {
@@ -23,7 +22,7 @@ object paginatorMod {
       * Does not modify existing object.
       * @return {Promise<Paginator>}
       */
-    def nextPage(): js.Promise[_] = js.native
+    def nextPage(): js.Promise[js.Any] = js.native
     
     var nextToken: js.Any = js.native
     
@@ -32,7 +31,7 @@ object paginatorMod {
       * Does not modify existing object.
       * @return {Promise<Paginator>}
       */
-    def prevPage(): js.Promise[_] = js.native
+    def prevPage(): js.Promise[js.Any] = js.native
     
     var prevToken: js.Any = js.native
     

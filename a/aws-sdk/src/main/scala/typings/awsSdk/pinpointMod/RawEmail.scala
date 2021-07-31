@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawEmail extends StObject {
   
   /**
     * The email message, represented as a raw MIME message. The entire message must be base64 encoded.
     */
-  var Data: js.UndefOr[_Blob] = js.native
+  var Data: js.UndefOr[_Blob] = js.undefined
 }
 object RawEmail {
   

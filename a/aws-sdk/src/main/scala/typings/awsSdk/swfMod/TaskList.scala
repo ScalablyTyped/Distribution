@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskList extends StObject {
   
   /**
     * The name of the task list.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object TaskList {
   

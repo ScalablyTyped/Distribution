@@ -2,21 +2,19 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntSet extends StObject {
   
-  def add(value: Double): Boolean = js.native
+  def add(value: Double): Boolean
   
-  var array: js.Array[Double] = js.native
+  var array: js.Array[Double]
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def contains(value: Double): Boolean = js.native
+  def contains(value: Double): Boolean
   
-  def remove(value: Double): Unit = js.native
+  def remove(value: Double): Unit
 }
 object IntSet {
   

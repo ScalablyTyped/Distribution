@@ -6,35 +6,33 @@ import typings.cesium.mod.Property
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepthFailMaterial extends StObject {
   
-  var arcType: js.UndefOr[Property | typings.cesium.mod.ArcType] = js.native
+  var arcType: js.UndefOr[Property | typings.cesium.mod.ArcType] = js.undefined
   
-  var clampToGround: js.UndefOr[Property | Boolean] = js.native
+  var clampToGround: js.UndefOr[Property | Boolean] = js.undefined
   
-  var classificationType: js.UndefOr[Property | typings.cesium.mod.ClassificationType] = js.native
+  var classificationType: js.UndefOr[Property | typings.cesium.mod.ClassificationType] = js.undefined
   
-  var depthFailMaterial: js.UndefOr[MaterialProperty] = js.native
+  var depthFailMaterial: js.UndefOr[MaterialProperty] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property] = js.undefined
   
-  var granularity: js.UndefOr[Property] = js.native
+  var granularity: js.UndefOr[Property] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.native
+  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.undefined
   
-  var positions: js.UndefOr[Property | js.Array[Cartesian3]] = js.native
+  var positions: js.UndefOr[Property | js.Array[Cartesian3]] = js.undefined
   
-  var shadows: js.UndefOr[Property | ShadowMode] = js.native
+  var shadows: js.UndefOr[Property | ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Property | Boolean] = js.native
+  var show: js.UndefOr[Property | Boolean] = js.undefined
   
-  var width: js.UndefOr[Property | Double] = js.native
+  var width: js.UndefOr[Property | Double] = js.undefined
   
-  var zIndex: js.UndefOr[Property | Double] = js.native
+  var zIndex: js.UndefOr[Property | Double] = js.undefined
 }
 object DepthFailMaterial {
   

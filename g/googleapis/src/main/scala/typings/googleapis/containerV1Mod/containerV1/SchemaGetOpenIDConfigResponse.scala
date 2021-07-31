@@ -2,50 +2,48 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GetOpenIDConfigResponse is an OIDC discovery document for the cluster. See
   * the OpenID Connect Discovery 1.0 specification for details.
   */
-@js.native
 trait SchemaGetOpenIDConfigResponse extends StObject {
   
   /**
     * NOLINT
     */
-  var claims_supported: js.UndefOr[js.Array[String]] = js.native
+  var claims_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * NOLINT
     */
-  var grant_types: js.UndefOr[js.Array[String]] = js.native
+  var grant_types: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * NOLINT
     */
-  var id_token_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var id_token_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * NOLINT
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var jwks_uri: js.UndefOr[String] = js.native
+  var jwks_uri: js.UndefOr[String] = js.undefined
   
   /**
     * NOLINT
     */
-  var response_types_supported: js.UndefOr[js.Array[String]] = js.native
+  var response_types_supported: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * NOLINT
     */
-  var subject_types_supported: js.UndefOr[js.Array[String]] = js.native
+  var subject_types_supported: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGetOpenIDConfigResponse {
   

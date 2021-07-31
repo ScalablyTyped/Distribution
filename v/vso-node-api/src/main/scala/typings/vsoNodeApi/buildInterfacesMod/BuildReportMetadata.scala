@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildReportMetadata extends StObject {
   
   /**
     * The Id of the build.
     */
-  var buildId: Double = js.native
+  var buildId: Double
   
   /**
     * The content of the report.
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * The type of the report.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object BuildReportMetadata {
   

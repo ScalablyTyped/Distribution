@@ -2,15 +2,13 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QEndIndex extends StObject {
   
-  var qEndIndex: Double = js.native
+  var qEndIndex: Double
   
-  var qStartIndex: Double = js.native
+  var qStartIndex: Double
 }
 object QEndIndex {
   

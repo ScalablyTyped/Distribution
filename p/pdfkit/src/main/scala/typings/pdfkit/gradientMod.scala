@@ -3,7 +3,6 @@ package typings.pdfkit
 import typings.pdfkit.PDFKit.PDFRadialGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradientMod {
@@ -16,7 +15,8 @@ object gradientMod {
   @JSImport("pdfkit/js/gradient", "PDFGradient")
   @js.native
   class PDFGradient protected ()
-    extends typings.pdfkit.PDFKit.PDFGradient {
+    extends StObject
+       with typings.pdfkit.PDFKit.PDFGradient {
     def this(document: js.Any) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFGradient")
@@ -29,7 +29,8 @@ object gradientMod {
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
   @js.native
   class PDFLinearGradient protected ()
-    extends typings.pdfkit.PDFKit.PDFLinearGradient {
+    extends StObject
+       with typings.pdfkit.PDFKit.PDFLinearGradient {
     def this(document: js.Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
@@ -41,7 +42,9 @@ object gradientMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")
   @js.native
-  class PDFRadialGradiant protected () extends PDFRadialGradient {
+  class PDFRadialGradiant protected ()
+    extends StObject
+       with PDFRadialGradient {
     def this(document: js.Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")

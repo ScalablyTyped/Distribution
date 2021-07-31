@@ -3,35 +3,33 @@ package typings.svg2png
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sourceBuffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(sourceBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(sourceBuffer: Buffer, opts: opts): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(sourceBuffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  
   @JSImport("svg2png", JSImport.Namespace)
   @js.native
-  def apply(sourceBuffer: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("svg2png", JSImport.Namespace)
-  @js.native
-  def apply(sourceBuffer: Buffer, opts: opts): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("svg2png", "sync")
-  @js.native
-  def sync(sourceBuffer: Buffer): Buffer = js.native
-  @JSImport("svg2png", "sync")
-  @js.native
-  def sync(sourceBuffer: Buffer, opts: opts): Buffer = js.native
+  @scala.inline
+  def sync(sourceBuffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(sourceBuffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def sync(sourceBuffer: Buffer, opts: opts): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(sourceBuffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @js.native
   trait opts extends StObject {
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object opts {
     

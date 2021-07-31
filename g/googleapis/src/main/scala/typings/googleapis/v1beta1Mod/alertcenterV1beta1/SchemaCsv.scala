@@ -2,26 +2,24 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation of a CSV file attachment, as a list of column headers and
   * a list of data rows.
   */
-@js.native
 trait SchemaCsv extends StObject {
   
   /**
     * The list of data rows in a CSV file, as string arrays rather than as a
     * single comma-separated string.
     */
-  var dataRows: js.UndefOr[js.Array[SchemaCsvRow]] = js.native
+  var dataRows: js.UndefOr[js.Array[SchemaCsvRow]] = js.undefined
   
   /**
     * The list of headers for data columns in a CSV file.
     */
-  var headers: js.UndefOr[js.Array[String]] = js.native
+  var headers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCsv {
   

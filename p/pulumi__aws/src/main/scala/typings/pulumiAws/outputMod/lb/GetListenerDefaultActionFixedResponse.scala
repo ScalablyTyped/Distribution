@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.lb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetListenerDefaultActionFixedResponse extends StObject {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var messageBody: String = js.native
+  var messageBody: String
   
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object GetListenerDefaultActionFixedResponse {
   

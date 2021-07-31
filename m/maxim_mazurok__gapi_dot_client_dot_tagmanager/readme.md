@@ -10,9 +10,9 @@ TypeScript typings for Tag Manager API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.tagmanager |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 119 |
+| # downloads        | 3840 |
 | # stars            | 0 |
 
 ## Links

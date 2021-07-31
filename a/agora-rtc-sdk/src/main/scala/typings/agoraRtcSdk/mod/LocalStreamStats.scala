@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If the local stream calls {@link getStats} successfully, this interface provides the statistics.
   */
-@js.native
 trait LocalStreamStats extends StObject {
   
   /** Delay in accessing the SD-RTN (ms). */
-  var accessDelay: String = js.native
+  var accessDelay: String
   
   /** Bytes of the sent audio. */
-  var audioSendBytes: String = js.native
+  var audioSendBytes: String
   
   /** Packets of the sent audio. */
-  var audioSendPackets: String = js.native
+  var audioSendPackets: String
   
   /**
     * Number of lost packets of the sent audio.
@@ -29,25 +27,25 @@ trait LocalStreamStats extends StObject {
     *
     * Safari and Firefox do not support this property.
     */
-  var audioSendPacketsLost: String = js.native
+  var audioSendPacketsLost: String
   
   /** Bytes of the sent video. */
-  var videoSendBytes: String = js.native
+  var videoSendBytes: String
   
   /** Frame rate of the sent video. */
-  var videoSendFrameRate: String = js.native
+  var videoSendFrameRate: String
   
   /** Packets of the sent video. */
-  var videoSendPackets: String = js.native
+  var videoSendPackets: String
   
   /** Number of lost packets of the sent video. */
-  var videoSendPacketsLost: String = js.native
+  var videoSendPacketsLost: String
   
   /** Resolution height of the sent video. */
-  var videoSendResolutionHeight: js.UndefOr[String] = js.native
+  var videoSendResolutionHeight: js.UndefOr[String] = js.undefined
   
   /** Resolution width of the sent video. */
-  var videoSendResolutionWidth: js.UndefOr[String] = js.native
+  var videoSendResolutionWidth: js.UndefOr[String] = js.undefined
 }
 object LocalStreamStats {
   

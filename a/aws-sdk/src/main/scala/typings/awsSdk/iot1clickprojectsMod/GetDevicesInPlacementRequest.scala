@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDevicesInPlacementRequest extends StObject {
   
   /**
     * The name of the placement to get the devices from.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The name of the project containing the placement.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object GetDevicesInPlacementRequest {
   

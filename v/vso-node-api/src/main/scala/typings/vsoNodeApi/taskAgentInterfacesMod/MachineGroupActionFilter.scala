@@ -2,7 +2,6 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait MachineGroupActionFilter extends StObject
 object MachineGroupActionFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MachineGroupActionFilter with Double] = js.native
+  def apply(value: Double): js.UndefOr[MachineGroupActionFilter & Double] = js.native
   
   @js.native
-  sealed trait Manage extends MachineGroupActionFilter
-  /* 2 */ val Manage: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.Manage with Double = js.native
+  sealed trait Manage
+    extends StObject
+       with MachineGroupActionFilter
+  /* 2 */ val Manage: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.Manage & Double = js.native
   
   @js.native
-  sealed trait None extends MachineGroupActionFilter
-  /* 0 */ val None: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with MachineGroupActionFilter
+  /* 0 */ val None: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.None & Double = js.native
   
   @js.native
-  sealed trait Use extends MachineGroupActionFilter
-  /* 16 */ val Use: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.Use with Double = js.native
+  sealed trait Use
+    extends StObject
+       with MachineGroupActionFilter
+  /* 16 */ val Use: typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter.Use & Double = js.native
 }

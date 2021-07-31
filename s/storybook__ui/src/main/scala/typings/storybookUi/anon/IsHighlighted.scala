@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.storybookUi.menuMod.MenuList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsHighlighted extends StObject {
   
-  var isHighlighted: Boolean = js.native
+  var isHighlighted: Boolean
   
-  var menu: MenuList = js.native
+  var menu: MenuList
 }
 object IsHighlighted {
   

@@ -2,24 +2,22 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A draft email in the user&#39;s mailbox.
   */
-@js.native
 trait SchemaDraft extends StObject {
   
   /**
     * The immutable ID of the draft.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The message content of the draft.
     */
-  var message: js.UndefOr[SchemaMessage] = js.native
+  var message: js.UndefOr[SchemaMessage] = js.undefined
 }
 object SchemaDraft {
   

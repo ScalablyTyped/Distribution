@@ -5,10 +5,13 @@ import typings.reactNative.reactNativeNumbers.`0`
 import typings.reactNative.reactNativeStrings.absolute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StyleSheet {
+  
+  @JSImport("react-native", "StyleSheet")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-native", "StyleSheet.absoluteFill")
   @js.native
@@ -18,59 +21,49 @@ object StyleSheet {
   @js.native
   val absoluteFillObject: AbsoluteFillStyle = js.native
   
-  @JSImport("react-native", "StyleSheet.compose")
-  @js.native
-  def compose[T](style1: js.Array[StyleProp[T]], style2: js.Array[StyleProp[T]]): StyleProp[T] = js.native
-  @JSImport("react-native", "StyleSheet.compose")
-  @js.native
-  def compose[T](style1: js.Array[StyleProp[T]], style2: StyleProp[T]): StyleProp[T] = js.native
-  @JSImport("react-native", "StyleSheet.compose")
-  @js.native
-  def compose[T](style1: StyleProp[T], style2: js.Array[StyleProp[T]]): StyleProp[T] = js.native
-  @JSImport("react-native", "StyleSheet.compose")
-  @js.native
-  def compose[T](style1: StyleProp[T], style2: StyleProp[T]): StyleProp[T] = js.native
+  @scala.inline
+  def compose[T](style1: js.Array[StyleProp[T]], style2: js.Array[StyleProp[T]]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+  @scala.inline
+  def compose[T](style1: js.Array[StyleProp[T]], style2: StyleProp[T]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+  @scala.inline
+  def compose[T](style1: StyleProp[T], style2: js.Array[StyleProp[T]]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+  @scala.inline
+  def compose[T](style1: StyleProp[T], style2: StyleProp[T]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
   
-  @JSImport("react-native", "StyleSheet.create")
-  @js.native
-  def create[T /* <: NamedStyles[_ | T] */](styles: T): T = js.native
-  @JSImport("react-native", "StyleSheet.create")
-  @js.native
-  def create[T /* <: NamedStyles[_ | T] */](styles: NamedStyles[T]): T = js.native
+  @scala.inline
+  def create[T /* <: NamedStyles[js.Any | T] */](styles: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def create[T /* <: NamedStyles[js.Any | T] */](styles: NamedStyles[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("react-native", "StyleSheet.flatten")
-  @js.native
-  def flatten[T](): T = js.native
-  @JSImport("react-native", "StyleSheet.flatten")
-  @js.native
-  def flatten[T](style: StyleProp[T]): T = js.native
+  @scala.inline
+  def flatten[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[T]
+  @scala.inline
+  def flatten[T](style: StyleProp[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("react-native", "StyleSheet.hairlineWidth")
   @js.native
   val hairlineWidth: Double = js.native
   
-  @JSImport("react-native", "StyleSheet.setStyleAttributePreprocessor")
-  @js.native
-  def setStyleAttributePreprocessor(property: String, process: js.Function1[/* nextProp */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def setStyleAttributePreprocessor(property: String, process: js.Function1[/* nextProp */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyleAttributePreprocessor")(property.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait AbsoluteFillStyle extends StObject {
     
-    var bottom: `0` = js.native
+    var bottom: `0`
     
-    var left: `0` = js.native
+    var left: `0`
     
-    var position: absolute = js.native
+    var position: absolute
     
-    var right: `0` = js.native
+    var right: `0`
     
-    var top: `0` = js.native
+    var top: `0`
   }
   object AbsoluteFillStyle {
     
     @scala.inline
-    def apply(bottom: `0`, left: `0`, position: absolute, right: `0`, top: `0`): AbsoluteFillStyle = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    def apply(): AbsoluteFillStyle = {
+      val __obj = js.Dynamic.literal(bottom = 0, left = 0, position = "absolute", right = 0, top = 0)
       __obj.asInstanceOf[AbsoluteFillStyle]
     }
     
@@ -96,5 +89,5 @@ object StyleSheet {
   
   type NamedStyles[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle}
-    */ typings.reactNative.reactNativeStrings.NamedStyles with TopLevel[js.Any]
+    */ typings.reactNative.reactNativeStrings.NamedStyles & TopLevel[js.Any]
 }

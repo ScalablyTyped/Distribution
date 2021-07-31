@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetCalendars[T] extends Generic {
+trait MlGetCalendars[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var calendar_id: js.UndefOr[String] = js.native
+  var calendar_id: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object MlGetCalendars {
   
@@ -25,7 +25,7 @@ object MlGetCalendars {
   }
   
   @scala.inline
-  implicit class MlGetCalendarsMutableBuilder[Self <: MlGetCalendars[_], T] (val x: Self with MlGetCalendars[T]) extends AnyVal {
+  implicit class MlGetCalendarsMutableBuilder[Self <: MlGetCalendars[?], T] (val x: Self & MlGetCalendars[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

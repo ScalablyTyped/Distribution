@@ -2,31 +2,29 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementSummary extends StObject {
   
   /**
     * The date when the placement was originally created, in UNIX epoch time format.
     */
-  var createdDate: Time = js.native
+  var createdDate: Time
   
   /**
     * The name of the placement being summarized.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The name of the project containing the placement.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
   
   /**
     * The date when the placement was last updated, in UNIX epoch time format. If the placement was not updated, then createdDate and updatedDate are the same.
     */
-  var updatedDate: Time = js.native
+  var updatedDate: Time
 }
 object PlacementSummary {
   

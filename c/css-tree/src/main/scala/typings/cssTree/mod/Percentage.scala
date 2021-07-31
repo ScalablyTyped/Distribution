@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Percentage
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_Percentage: typings.cssTree.cssTreeStrings.Percentage = js.native
+  var type_Percentage: typings.cssTree.cssTreeStrings.Percentage
   
-  var value: String = js.native
+  var value: String
 }
 object Percentage {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.Percentage, value: String): Percentage = {
+  def apply(value: String): Percentage = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Percentage")
     __obj.asInstanceOf[Percentage]
   }
   

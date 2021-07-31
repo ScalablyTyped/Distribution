@@ -2,38 +2,36 @@ package typings.parseGlob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Basename extends StObject {
     
     /**
       * File name with extension.
       */
-    var basename: String = js.native
+    var basename: String
     
     /**
       * Directory.
       */
-    var dirname: String = js.native
+    var dirname: String
     
     /**
       * File extension without dot.
       */
-    var ext: String = js.native
+    var ext: String
     
     /**
       * File extension with dot.
       */
-    var extname: String = js.native
+    var extname: String
     
     /**
       * File name without extension.
       */
-    var filename: String = js.native
+    var filename: String
   }
   object Basename {
     
@@ -63,48 +61,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Braces extends StObject {
     
     /**
       * True if it has braces ({1..2} or .{txt,md}).
       */
-    var braces: Boolean = js.native
+    var braces: Boolean
     
     /**
       * True if it has POSIX brackets ([[:alpha:]]).
       */
-    var brackets: Boolean = js.native
+    var brackets: Boolean
     
     /**
       * True if the pattern should match dot-directories (like .git).
       */
-    var dotdir: Boolean = js.native
+    var dotdir: Boolean
     
     /**
       * True if the pattern should match dotfiles.
       */
-    var dotfile: Boolean = js.native
+    var dotfile: Boolean
     
     /**
       * True if it has extglobs (@(foo|bar)).
       */
-    var extglob: Boolean = js.native
+    var extglob: Boolean
     
     /**
       * True if the pattern actually is a glob pattern.
       */
-    var glob: Boolean = js.native
+    var glob: Boolean
     
     /**
       * True if the pattern has a globstar (double star, **).
       */
-    var globstar: Boolean = js.native
+    var globstar: Boolean
     
     /**
       * True if it's a negation pattern (!/foo.js).
       */
-    var negated: Boolean = js.native
+    var negated: Boolean
   }
   object Braces {
     

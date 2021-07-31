@@ -2,31 +2,29 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParametersForImportResponse extends StObject {
   
   /**
     * The import token to send in a subsequent ImportKeyMaterial request.
     */
-  var ImportToken: js.UndefOr[CiphertextType] = js.native
+  var ImportToken: js.UndefOr[CiphertextType] = js.undefined
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK to use in a subsequent ImportKeyMaterial request. This is the same CMK specified in the GetParametersForImport request.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The time at which the import token and public key are no longer valid. After this time, you cannot use them to make an ImportKeyMaterial request and you must send another GetParametersForImport request to get new ones.
     */
-  var ParametersValidTo: js.UndefOr[DateType] = js.native
+  var ParametersValidTo: js.UndefOr[DateType] = js.undefined
   
   /**
     * The public key to use to encrypt the key material before importing it with ImportKeyMaterial.
     */
-  var PublicKey: js.UndefOr[PlaintextType] = js.native
+  var PublicKey: js.UndefOr[PlaintextType] = js.undefined
 }
 object GetParametersForImportResponse {
   

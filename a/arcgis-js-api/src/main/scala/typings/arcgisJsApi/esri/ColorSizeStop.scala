@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorSizeStop extends Object {
+trait ColorSizeStop
+  extends StObject
+     with Object {
   
   /**
     * Features with the given stop `value` will be rendered with the associated color.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#ColorSizeStop)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * Label describing the given `value`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#ColorSizeStop)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Features with the given stop `value` will be rendered with the associated size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#ColorSizeStop)
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The data value associated with the given `color` and `size`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#ColorSizeStop)
     */
-  var value: Double = js.native
+  var value: Double
 }
 object ColorSizeStop {
   

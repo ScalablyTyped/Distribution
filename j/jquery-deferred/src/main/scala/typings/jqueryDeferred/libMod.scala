@@ -2,80 +2,74 @@ package typings.jqueryDeferred
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
-  @JSImport("jquery-deferred/lib", "Callbacks")
+  @JSImport("jquery-deferred/lib", JSImport.Namespace)
   @js.native
-  def Callbacks(flags: js.Any): JQueryCallback = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jquery-deferred/lib", "Deferred")
-  @js.native
-  def Deferred(): JQueryDeferred = js.native
-  @JSImport("jquery-deferred/lib", "Deferred")
-  @js.native
-  def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, _]): JQueryDeferred = js.native
+  @scala.inline
+  def Callbacks(flags: js.Any): JQueryCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("Callbacks")(flags.asInstanceOf[js.Any]).asInstanceOf[JQueryCallback]
   
-  @JSImport("jquery-deferred/lib", "each")
-  @js.native
+  @scala.inline
+  def Deferred(): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")().asInstanceOf[JQueryDeferred]
+  @scala.inline
+  def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, js.Any]): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")(beforeStart.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred]
+  
+  @scala.inline
   def each(
     collection: js.Any,
-    callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, _]
-  ): js.Any = js.native
+    callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, js.Any]
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jquery-deferred/lib", "extend")
-  @js.native
-  def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = js.native
-  @JSImport("jquery-deferred/lib", "extend")
-  @js.native
-  def extend(target: js.Any, objs: js.Any*): js.Object = js.native
+  @scala.inline
+  def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def extend(target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("jquery-deferred/lib", "isArray")
-  @js.native
-  def isArray(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jquery-deferred/lib", "isFunction")
-  @js.native
-  def isFunction(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jquery-deferred/lib", "isPlainObject")
-  @js.native
-  def isPlainObject(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isPlainObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jquery-deferred/lib", "noop")
-  @js.native
-  def noop(): js.Any = js.native
+  @scala.inline
+  def noop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Any]
   
-  @JSImport("jquery-deferred/lib", "when")
-  @js.native
-  def when(deferreds: js.Any*): JQueryPromise = js.native
+  @scala.inline
+  def `type`(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def when(deferreds: js.Any*): JQueryPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(deferreds.asInstanceOf[js.Any]).asInstanceOf[JQueryPromise]
+  
   trait JQueryCallback extends StObject {
     
-    def add(callbacks: js.Any*): js.Any = js.native
+    def add(callbacks: js.Any*): js.Any
     
-    def disable(): js.Any = js.native
+    def disable(): js.Any
     
-    def disabled(): Boolean = js.native
+    def disabled(): Boolean
     
-    def empty(): js.Any = js.native
+    def empty(): js.Any
     
-    def fire(arguments: js.Any*): js.Any = js.native
+    def fire(arguments: js.Any*): js.Any
     
-    def fireWith(context: js.Any, args: js.Any*): js.Any = js.native
+    def fireWith(context: js.Any, args: js.Any*): js.Any
     
-    def fired(): Boolean = js.native
+    def fired(): Boolean
     
-    def has(callback: js.Any): Boolean = js.native
+    def has(callback: js.Any): Boolean
     
-    def lock(): js.Any = js.native
+    def lock(): js.Any
     
-    def locked(): Boolean = js.native
+    def locked(): Boolean
     
-    def remove(callbacks: js.Any*): js.Any = js.native
+    def remove(callbacks: js.Any*): js.Any
   }
   object JQueryCallback {
     
@@ -136,7 +130,9 @@ object libMod {
   }
   
   @js.native
-  trait JQueryDeferred extends JQueryPromise {
+  trait JQueryDeferred
+    extends StObject
+       with JQueryPromise {
     
     def notify(args: js.Any*): JQueryDeferred = js.native
     
@@ -163,41 +159,33 @@ object libMod {
     def fail(failCallbacks: js.Any*): JQueryDeferred = js.native
     
     def pipe(): JQueryPromise = js.native
+    def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise = js.native
+    def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any], failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise = js.native
     def pipe(
-      doneFilter: js.UndefOr[scala.Nothing],
-      failFilter: js.UndefOr[scala.Nothing],
-      progressFilter: js.Function1[/* x */ js.Any, _]
+      doneFilter: js.Function1[/* x */ js.Any, js.Any],
+      failFilter: js.Function1[/* x */ js.Any, js.Any],
+      progressFilter: js.Function1[/* x */ js.Any, js.Any]
     ): JQueryPromise = js.native
-    def pipe(doneFilter: js.UndefOr[scala.Nothing], failFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise = js.native
     def pipe(
-      doneFilter: js.UndefOr[scala.Nothing],
-      failFilter: js.Function1[/* x */ js.Any, _],
-      progressFilter: js.Function1[/* x */ js.Any, _]
+      doneFilter: js.Function1[/* x */ js.Any, js.Any],
+      failFilter: Unit,
+      progressFilter: js.Function1[/* x */ js.Any, js.Any]
     ): JQueryPromise = js.native
-    def pipe(doneFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise = js.native
+    def pipe(doneFilter: Unit, failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise = js.native
     def pipe(
-      doneFilter: js.Function1[/* x */ js.Any, _],
-      failFilter: js.UndefOr[scala.Nothing],
-      progressFilter: js.Function1[/* x */ js.Any, _]
+      doneFilter: Unit,
+      failFilter: js.Function1[/* x */ js.Any, js.Any],
+      progressFilter: js.Function1[/* x */ js.Any, js.Any]
     ): JQueryPromise = js.native
-    def pipe(doneFilter: js.Function1[/* x */ js.Any, _], failFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise = js.native
-    def pipe(
-      doneFilter: js.Function1[/* x */ js.Any, _],
-      failFilter: js.Function1[/* x */ js.Any, _],
-      progressFilter: js.Function1[/* x */ js.Any, _]
-    ): JQueryPromise = js.native
+    def pipe(doneFilter: Unit, failFilter: Unit, progressFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise = js.native
     
     def promise(): JQueryPromise = js.native
     
     def state(): String = js.native
     
     def `then`(doneCallbacks: js.Any): JQueryDeferred = js.native
-    def `then`(doneCallbacks: js.Any, failCallbacks: js.UndefOr[scala.Nothing], progressCallbacks: js.Any): JQueryDeferred = js.native
     def `then`(doneCallbacks: js.Any, failCallbacks: js.Any): JQueryDeferred = js.native
     def `then`(doneCallbacks: js.Any, failCallbacks: js.Any, progressCallbacks: js.Any): JQueryDeferred = js.native
+    def `then`(doneCallbacks: js.Any, failCallbacks: Unit, progressCallbacks: js.Any): JQueryDeferred = js.native
   }
-  
-  @JSImport("jquery-deferred/lib", "type")
-  @js.native
-  def `type`(obj: js.Any): String = js.native
 }

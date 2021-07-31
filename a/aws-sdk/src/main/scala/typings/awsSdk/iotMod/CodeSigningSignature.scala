@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeSigningSignature extends StObject {
   
   /**
     * A base64 encoded binary representation of the code signing signature.
     */
-  var inlineDocument: js.UndefOr[Signature] = js.native
+  var inlineDocument: js.UndefOr[Signature] = js.undefined
 }
 object CodeSigningSignature {
   

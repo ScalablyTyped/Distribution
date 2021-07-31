@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,22 +25,22 @@ trait SystraceStatic extends StObject {
     * beginEvent/endEvent for starting and then ending a profile within the same call stack frame
     **/
   def beginEvent(): Unit = js.native
-  def beginEvent(profileName: js.UndefOr[scala.Nothing], args: js.Any): Unit = js.native
   def beginEvent(profileName: js.Any): Unit = js.native
   def beginEvent(profileName: js.Any, args: js.Any): Unit = js.native
+  def beginEvent(profileName: Unit, args: js.Any): Unit = js.native
   
   /**
     * counterEvent registers the value to the profileName on the systrace timeline
     **/
   def counterEvent(): Unit = js.native
-  def counterEvent(profileName: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def counterEvent(profileName: js.Any): Unit = js.native
   def counterEvent(profileName: js.Any, value: js.Any): Unit = js.native
+  def counterEvent(profileName: Unit, value: js.Any): Unit = js.native
   
   def endAsyncEvent(): Unit = js.native
-  def endAsyncEvent(profileName: js.UndefOr[scala.Nothing], cookie: js.Any): Unit = js.native
   def endAsyncEvent(profileName: js.Any): Unit = js.native
   def endAsyncEvent(profileName: js.Any, cookie: js.Any): Unit = js.native
+  def endAsyncEvent(profileName: Unit, cookie: js.Any): Unit = js.native
   
   def endEvent(): Unit = js.native
   

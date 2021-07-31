@@ -8,19 +8,17 @@ import typings.vueComponentCompilerUtils.vueComponentCompilerUtilsStrings.preser
 import typings.vueComponentCompilerUtils.vueComponentCompilerUtilsStrings.space
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ErrorWithRange extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var msg: String = js.native
+    var msg: String
     
-    var start: Double = js.native
+    var start: Double
   }
   object ErrorWithRange {
     
@@ -44,18 +42,19 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait RawSourceMap extends StartOfSourceMap {
+  trait RawSourceMap
+    extends StObject
+       with StartOfSourceMap {
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var sources: js.Array[String] = js.native
+    var sources: js.Array[String]
     
-    var sourcesContent: js.UndefOr[js.Array[String]] = js.native
+    var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object RawSourceMap {
     
@@ -97,12 +96,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait StartOfSourceMap extends StObject {
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var sourceRoot: js.UndefOr[String] = js.native
+    var sourceRoot: js.UndefOr[String] = js.undefined
   }
   object StartOfSourceMap {
     
@@ -140,16 +138,15 @@ object typesMod {
     def ssrCompile(template: String, options: VueTemplateCompilerOptions): VueTemplateCompilerResults = js.native
   }
   
-  @js.native
   trait VueTemplateCompilerOptions extends StObject {
     
-    var directives: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var directives: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var modules: js.UndefOr[js.Array[js.Object]] = js.native
+    var modules: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var outputSourceRange: js.UndefOr[Boolean] = js.native
+    var outputSourceRange: js.UndefOr[Boolean] = js.undefined
     
-    var whitespace: js.UndefOr[preserve | condense] = js.native
+    var whitespace: js.UndefOr[preserve | condense] = js.undefined
   }
   object VueTemplateCompilerOptions {
     
@@ -191,10 +188,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait VueTemplateCompilerParseOptions extends StObject {
     
-    var pad: js.UndefOr[line | space] = js.native
+    var pad: js.UndefOr[line | space] = js.undefined
   }
   object VueTemplateCompilerParseOptions {
     
@@ -215,18 +211,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait VueTemplateCompilerResults extends StObject {
     
-    var ast: js.UndefOr[js.Object] = js.native
+    var ast: js.UndefOr[js.Object] = js.undefined
     
-    var errors: js.Array[String | ErrorWithRange] = js.native
+    var errors: js.Array[String | ErrorWithRange]
     
-    var render: String = js.native
+    var render: String
     
-    var staticRenderFns: js.Array[String] = js.native
+    var staticRenderFns: js.Array[String]
     
-    var tips: js.Array[String | ErrorWithRange] = js.native
+    var tips: js.Array[String | ErrorWithRange]
   }
   object VueTemplateCompilerResults {
     

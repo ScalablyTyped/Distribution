@@ -2,41 +2,39 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentSavingsPlanOffering extends StObject {
   
   /**
     * The currency.
     */
-  var currency: js.UndefOr[CurrencyCode] = js.native
+  var currency: js.UndefOr[CurrencyCode] = js.undefined
   
   /**
     * The duration, in seconds.
     */
-  var durationSeconds: js.UndefOr[SavingsPlansDuration] = js.native
+  var durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var offeringId: js.UndefOr[UUID] = js.native
+  var offeringId: js.UndefOr[UUID] = js.undefined
   
   /**
     * The payment option.
     */
-  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.native
+  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.undefined
   
   /**
     * The description.
     */
-  var planDescription: js.UndefOr[SavingsPlanDescription] = js.native
+  var planDescription: js.UndefOr[SavingsPlanDescription] = js.undefined
   
   /**
     * The plan type.
     */
-  var planType: js.UndefOr[SavingsPlanType] = js.native
+  var planType: js.UndefOr[SavingsPlanType] = js.undefined
 }
 object ParentSavingsPlanOffering {
   

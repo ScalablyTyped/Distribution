@@ -2,19 +2,17 @@ package typings.mirrorx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait model extends StObject {
   
-  var effects: js.UndefOr[js.Any] = js.native
+  var effects: js.UndefOr[js.Any] = js.undefined
   
-  var initialState: js.UndefOr[js.Any] = js.native
+  var initialState: js.UndefOr[js.Any] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var reducers: js.UndefOr[js.Any] = js.native
+  var reducers: js.UndefOr[js.Any] = js.undefined
 }
 object model {
   

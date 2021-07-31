@@ -2,46 +2,44 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartyGetProjectConfigResponse extends StObject {
   
   /** Whether to allow password user sign in or sign up. */
-  var allowPasswordUser: js.UndefOr[Boolean] = js.native
+  var allowPasswordUser: js.UndefOr[Boolean] = js.undefined
   
   /** Browser API key, needed when making http request to Apiary. */
-  var apiKey: js.UndefOr[String] = js.native
+  var apiKey: js.UndefOr[String] = js.undefined
   
   /** Authorized domains. */
-  var authorizedDomains: js.UndefOr[js.Array[String]] = js.native
+  var authorizedDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Change email template. */
-  var changeEmailTemplate: js.UndefOr[EmailTemplate] = js.native
+  var changeEmailTemplate: js.UndefOr[EmailTemplate] = js.undefined
   
-  var dynamicLinksDomain: js.UndefOr[String] = js.native
+  var dynamicLinksDomain: js.UndefOr[String] = js.undefined
   
   /** Whether anonymous user is enabled. */
-  var enableAnonymousUser: js.UndefOr[Boolean] = js.native
+  var enableAnonymousUser: js.UndefOr[Boolean] = js.undefined
   
   /** OAuth2 provider configuration. */
-  var idpConfig: js.UndefOr[js.Array[IdpConfig]] = js.native
+  var idpConfig: js.UndefOr[js.Array[IdpConfig]] = js.undefined
   
   /** Legacy reset password email template. */
-  var legacyResetPasswordTemplate: js.UndefOr[EmailTemplate] = js.native
+  var legacyResetPasswordTemplate: js.UndefOr[EmailTemplate] = js.undefined
   
   /** Project ID of the relying party. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Reset password email template. */
-  var resetPasswordTemplate: js.UndefOr[EmailTemplate] = js.native
+  var resetPasswordTemplate: js.UndefOr[EmailTemplate] = js.undefined
   
   /** Whether to use email sending provided by Firebear. */
-  var useEmailSending: js.UndefOr[Boolean] = js.native
+  var useEmailSending: js.UndefOr[Boolean] = js.undefined
   
   /** Verify email template. */
-  var verifyEmailTemplate: js.UndefOr[EmailTemplate] = js.native
+  var verifyEmailTemplate: js.UndefOr[EmailTemplate] = js.undefined
 }
 object IdentitytoolkitRelyingpartyGetProjectConfigResponse {
   

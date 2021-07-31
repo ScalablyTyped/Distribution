@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyTopicEntry extends StObject {
   
   /** Pieces of evidence associated with this policy topic entry. */
-  var evidences: js.UndefOr[js.Array[PolicyTopicEvidence]] = js.native
+  var evidences: js.UndefOr[js.Array[PolicyTopicEvidence]] = js.undefined
   
   /** URL of the help center article describing this policy topic. */
-  var helpCenterUrl: js.UndefOr[String] = js.native
+  var helpCenterUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Policy topic this entry refers to. For example, "ALCOHOL", "TRADEMARKS_IN_AD_TEXT", or "DESTINATION_NOT_WORKING". The set of possible policy topics is not fixed for a particular API
     * version and may change at any time. Can be used to filter the response of the creatives.list method
     */
-  var policyTopic: js.UndefOr[String] = js.native
+  var policyTopic: js.UndefOr[String] = js.undefined
 }
 object PolicyTopicEntry {
   

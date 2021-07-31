@@ -11,10 +11,13 @@ import typings.prex.mod.CancellationToken
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ecmarkup", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ecmarkup", "Boilerplate")
   @js.native
@@ -27,52 +30,47 @@ object mod {
     var license: js.UndefOr[String] = js.native
   }
   
-  @JSImport("ecmarkup", "build")
-  @js.native
+  @scala.inline
   def build(
     path: String,
     fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]]
-  ): js.Promise[Spec] = js.native
-  @JSImport("ecmarkup", "build")
-  @js.native
+  ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
+  @scala.inline
   def build(
     path: String,
     fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     token: CancellationToken
-  ): js.Promise[Spec] = js.native
-  @JSImport("ecmarkup", "build")
-  @js.native
+  ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
+  @scala.inline
   def build(
     path: String,
     fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
     opts: Options
-  ): js.Promise[Spec] = js.native
-  @JSImport("ecmarkup", "build")
-  @js.native
+  ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
+  @scala.inline
   def build(
     path: String,
     fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
     opts: Options,
     token: CancellationToken
-  ): js.Promise[Spec] = js.native
+  ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
   
-  @js.native
   trait EcmarkupError extends StObject {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var nodeType: js.UndefOr[String] = js.native
+    var nodeType: js.UndefOr[String] = js.undefined
     
-    var ruleId: String = js.native
+    var ruleId: String
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object EcmarkupError {
     
@@ -123,48 +121,47 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var assets: js.UndefOr[none | `inline` | external] = js.native
+    var assets: js.UndefOr[none | `inline` | external] = js.undefined
     
-    var boilerplate: js.UndefOr[Boilerplate] = js.native
+    var boilerplate: js.UndefOr[Boilerplate] = js.undefined
     
-    var contributors: js.UndefOr[String] = js.native
+    var contributors: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[Boolean] = js.native
+    var copyright: js.UndefOr[Boolean] = js.undefined
     
-    var cssOut: js.UndefOr[String] = js.native
+    var cssOut: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var ecma262Biblio: js.UndefOr[Boolean] = js.native
+    var ecma262Biblio: js.UndefOr[Boolean] = js.undefined
     
-    var jsOut: js.UndefOr[String] = js.native
+    var jsOut: js.UndefOr[String] = js.undefined
     
-    var lintSpec: js.UndefOr[Boolean] = js.native
+    var lintSpec: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
-    var oldToc: js.UndefOr[Boolean] = js.native
+    var oldToc: js.UndefOr[Boolean] = js.undefined
     
-    var outfile: js.UndefOr[String] = js.native
+    var outfile: js.UndefOr[String] = js.undefined
     
-    var shortname: js.UndefOr[String] = js.native
+    var shortname: js.UndefOr[String] = js.undefined
     
-    var stage: js.UndefOr[String | Null] = js.native
+    var stage: js.UndefOr[String | Null] = js.undefined
     
-    var status: js.UndefOr[proposal | draft | standard] = js.native
+    var status: js.UndefOr[proposal | draft | standard] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toc: js.UndefOr[Boolean] = js.native
+    var toc: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var warn: js.UndefOr[js.Function1[/* err */ EcmarkupError, Unit]] = js.native
+    var warn: js.UndefOr[js.Function1[/* err */ EcmarkupError, Unit]] = js.undefined
   }
   object Options {
     

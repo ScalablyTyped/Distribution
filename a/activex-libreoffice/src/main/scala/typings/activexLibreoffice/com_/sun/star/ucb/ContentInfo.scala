@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentCreator
   * @see XCommandProcessor
   */
-@js.native
 trait ContentInfo extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ContentInfo extends StObject {
     *
     * The value can be one of the {@link ContentInfoAttribute} constants.
     */
-  var Attributes: Double = js.native
+  var Attributes: Double
   
   /**
     * This field contains a list with the properties which must be set at a content that was just created using {@link XContentCreator.createNewContent()}
@@ -41,7 +39,7 @@ trait ContentInfo extends StObject {
     *
     * booleancharbytestringshortlonghyperfloatdouble
     */
-  var Properties: SafeArray[Property] = js.native
+  var Properties: SafeArray[Property]
   
   /**
     * A type identifier string for a content.
@@ -49,7 +47,7 @@ trait ContentInfo extends StObject {
     * This is an implementation specific string characterizing the kind of a content (e.g. "application/vnd.sun.star.hierarchy-link"). The value of this
     * member should match the value returned by {@link XContent.getContentType()} of an appropriate content.
     */
-  var Type: String = js.native
+  var Type: String
 }
 object ContentInfo {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiConfigHandler extends StObject {
   
   /** Action to take when users access resources that require authentication. Defaults to redirect. */
-  var authFailAction: js.UndefOr[String] = js.native
+  var authFailAction: js.UndefOr[String] = js.undefined
   
   /** Level of login required to access this resource. Defaults to optional. */
-  var login: js.UndefOr[String] = js.native
+  var login: js.UndefOr[String] = js.undefined
   
   /** Path to the script from the application root directory. */
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
   
   /** Security (HTTPS) enforcement for this URL. */
-  var securityLevel: js.UndefOr[String] = js.native
+  var securityLevel: js.UndefOr[String] = js.undefined
   
   /** URL to serve the endpoint at. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ApiConfigHandler {
   

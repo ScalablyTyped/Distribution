@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableFastSnapshotRestoresResult extends StObject {
   
   /**
     * Information about the snapshots for which fast snapshot restores were successfully disabled.
     */
-  var Successful: js.UndefOr[DisableFastSnapshotRestoreSuccessSet] = js.native
+  var Successful: js.UndefOr[DisableFastSnapshotRestoreSuccessSet] = js.undefined
   
   /**
     * Information about the snapshots for which fast snapshot restores could not be disabled.
     */
-  var Unsuccessful: js.UndefOr[DisableFastSnapshotRestoreErrorSet] = js.native
+  var Unsuccessful: js.UndefOr[DisableFastSnapshotRestoreErrorSet] = js.undefined
 }
 object DisableFastSnapshotRestoresResult {
   

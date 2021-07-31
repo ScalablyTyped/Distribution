@@ -7,17 +7,15 @@ import typings.pubnub.pubnubStrings.set
 import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventType extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var event: set | delete = js.native
+  var event: set | delete
   
-  var `type`: uuid | channel | membership = js.native
+  var `type`: uuid | channel | membership
 }
 object EventType {
   

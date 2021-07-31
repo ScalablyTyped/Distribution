@@ -2,21 +2,19 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Membership extends StObject {
   
-  var project: typings.asana.mod.resources.Resource = js.native
+  var project: Resource
   
-  var section: typings.asana.mod.resources.Resource | Null = js.native
+  var section: Resource | Null
 }
 object Membership {
   
   @scala.inline
-  def apply(project: typings.asana.mod.resources.Resource): Membership = {
-    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
+  def apply(project: Resource): Membership = {
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], section = null)
     __obj.asInstanceOf[Membership]
   }
   
@@ -24,10 +22,10 @@ object Membership {
   implicit class MembershipMutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setProject(value: typings.asana.mod.resources.Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: typings.asana.mod.resources.Resource): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    def setSection(value: Resource): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSectionNull: Self = StObject.set(x, "section", null)

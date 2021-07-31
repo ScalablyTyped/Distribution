@@ -4,65 +4,65 @@ import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XamlBuildDefinition extends DefinitionReference {
+trait XamlBuildDefinition
+  extends StObject
+     with DefinitionReference {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Batch size of the definition
     */
-  var batchSize: Double = js.native
+  var batchSize: Double
   
-  var buildArgs: String = js.native
+  var buildArgs: String
   
   /**
     * The continuous integration quiet period
     */
-  var continuousIntegrationQuietPeriod: Double = js.native
+  var continuousIntegrationQuietPeriod: Double
   
   /**
     * The build controller
     */
-  var controller: BuildController = js.native
+  var controller: BuildController
   
   /**
     * The date this definition was created
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Default drop location for builds from this definition
     */
-  var defaultDropLocation: String = js.native
+  var defaultDropLocation: String
   
   /**
     * Description of the definition
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The last build on this definition
     */
-  var lastBuild: XamlBuildReference = js.native
+  var lastBuild: XamlBuildReference
   
   /**
     * The repository
     */
-  var repository: BuildRepository = js.native
+  var repository: BuildRepository
   
   /**
     * The reasons supported by the template
     */
-  var supportedReasons: BuildReason = js.native
+  var supportedReasons: BuildReason
   
   /**
     * How builds are triggered from this definition
     */
-  var triggerType: DefinitionTriggerType = js.native
+  var triggerType: DefinitionTriggerType
 }
 object XamlBuildDefinition {
   

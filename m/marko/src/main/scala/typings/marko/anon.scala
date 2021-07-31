@@ -2,15 +2,13 @@ package typings.marko
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AttributeGroups extends StObject {
     
-    var attributeGroups: js.Any = js.native
+    var attributeGroups: js.Any
   }
   object AttributeGroups {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

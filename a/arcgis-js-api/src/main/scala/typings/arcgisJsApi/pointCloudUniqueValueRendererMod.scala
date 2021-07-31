@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointCloudUniqueValueRendererMod extends Shortcut {
   
   @JSImport("esri/renderers/PointCloudUniqueValueRenderer", JSImport.Namespace)
   @js.native
-  val ^ : PointCloudUniqueValueRendererConstructor = js.native
+  val ^ : js.Object & PointCloudUniqueValueRendererConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudUniqueValueRenderer", JSImport.Namespace)
@@ -23,12 +22,22 @@ object pointCloudUniqueValueRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html)
     */
-  class Class () extends PointCloudUniqueValueRenderer {
+  class Class ()
+    extends StObject
+       with PointCloudUniqueValueRenderer {
     def this(properties: PointCloudUniqueValueRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = PointCloudUniqueValueRendererConstructor
+  type _To = js.Object & PointCloudUniqueValueRendererConstructor
   
   /* This means you don't have to write `^`, but can instead just say `pointCloudUniqueValueRendererMod.foo` */
-  override def _to: PointCloudUniqueValueRendererConstructor = ^
+  override def _to: js.Object & PointCloudUniqueValueRendererConstructor = ^
 }

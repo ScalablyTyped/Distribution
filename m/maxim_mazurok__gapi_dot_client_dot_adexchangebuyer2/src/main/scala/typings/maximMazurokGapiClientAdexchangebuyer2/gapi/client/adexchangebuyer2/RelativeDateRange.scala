@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeDateRange extends StObject {
   
   /** The number of days in the requested date range, e.g., for a range spanning today: 1. For a range spanning the last 7 days: 7. */
-  var durationDays: js.UndefOr[Double] = js.native
+  var durationDays: js.UndefOr[Double] = js.undefined
   
   /** The end date of the filter set, specified as the number of days before today, e.g., for a range where the last date is today: 0. */
-  var offsetDays: js.UndefOr[Double] = js.native
+  var offsetDays: js.UndefOr[Double] = js.undefined
 }
 object RelativeDateRange {
   

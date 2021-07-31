@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Input extends InputBase {
+trait Input
+  extends StObject
+     with InputBase {
   
   /**
     * Adds some suggestionColumn to the aggregation <code>suggestionColumns</code>.

@@ -5,32 +5,32 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events from an active data control. */
-@js.native
-trait XStreamListener extends XEventListener {
+trait XStreamListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called when data transfer terminates normally or when data transfer is terminated from outside.
     *
     * The termination could be done using the method {@link XActiveDataControl.terminate()} .
     */
-  def closed(): Unit = js.native
+  def closed(): Unit
   
   /**
     * gets called when an internal error in source or sink has occurred.
     *
     * After the method is called, the close is called on the connected streams.
     */
-  def error(aException: js.Any): Unit = js.native
+  def error(aException: js.Any): Unit
   
   /** gets called as soon as data transfer has started. */
-  def started(): Unit = js.native
+  def started(): Unit
   
   /** gets called when {@link XActiveDataControl.terminate()} is called. */
-  def terminated(): Unit = js.native
+  def terminated(): Unit
 }
 object XStreamListener {
   

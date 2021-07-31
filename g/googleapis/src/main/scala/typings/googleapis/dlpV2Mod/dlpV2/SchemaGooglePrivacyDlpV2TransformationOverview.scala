@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Overview of the modifications that occurred.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2TransformationOverview extends StObject {
   
   /**
     * Transformations applied to the dataset.
     */
-  var transformationSummaries: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]] = js.native
+  var transformationSummaries: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]] = js.undefined
   
   /**
     * Total size in bytes that were transformed in some way.
     */
-  var transformedBytes: js.UndefOr[String] = js.native
+  var transformedBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TransformationOverview {
   

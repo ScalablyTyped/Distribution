@@ -6,24 +6,22 @@ import typings.monacoEditor.monacoEditorNumbers.`2`
 import typings.monacoEditor.monacoEditorNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A linked list of formatted diagnostic messages to be used as part of a multiline message.
   * It is built from the bottom up, leaving the head to be the "main" diagnostic.
   */
-@js.native
 trait DiagnosticMessageChain extends StObject {
   
   /** Diagnostic category: warning = 0, error = 1, suggestion = 2, message = 3 */
-  var category: `0` | `1` | `2` | `3` = js.native
+  var category: `0` | `1` | `2` | `3`
   
-  var code: Double = js.native
+  var code: Double
   
-  var messageText: String = js.native
+  var messageText: String
   
-  var next: js.UndefOr[js.Array[DiagnosticMessageChain]] = js.native
+  var next: js.UndefOr[js.Array[DiagnosticMessageChain]] = js.undefined
 }
 object DiagnosticMessageChain {
   

@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StorageEventInit extends EventInit {
+trait StorageEventInit
+  extends StObject
+     with EventInit {
   
-  var key: js.UndefOr[java.lang.String | Null] = js.native
+  var key: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var newValue: js.UndefOr[java.lang.String | Null] = js.native
+  var newValue: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var oldValue: js.UndefOr[java.lang.String | Null] = js.native
+  var oldValue: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var storageArea: js.UndefOr[Storage | Null] = js.native
+  var storageArea: js.UndefOr[Storage | Null] = js.undefined
   
-  var url: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object StorageEventInit {
   

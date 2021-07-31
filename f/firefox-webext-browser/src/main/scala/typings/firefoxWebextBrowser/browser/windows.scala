@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,64 +12,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object windows {
   
-  @js.native
   trait CreateCreateData extends StObject {
     
     /** Allow scripts to close the window. */
-    var allowScriptsToClose: js.UndefOr[Boolean] = js.native
+    var allowScriptsToClose: js.UndefOr[Boolean] = js.undefined
     
     /** The CookieStoreId to use for all tabs that were created when the window is opened. */
-    var cookieStoreId: js.UndefOr[String] = js.native
+    var cookieStoreId: js.UndefOr[String] = js.undefined
     
     /**
       * If true, opens an active window. If false, opens an inactive window.
       * @deprecated Unsupported on Firefox at this time.
       */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The height in pixels of the new window, including the frame. If not specified defaults to a natural height.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Whether the new window should be an incognito window. */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of pixels to position the new window from the left edge of the screen. If not specified, the new window is offset naturally from the last focused window. This value is ignored for panels.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * The initial state of the window. The 'minimized', 'maximized' and 'fullscreen' states cannot be combined with 'left', 'top', 'width' or 'height'.
       */
-    var state: js.UndefOr[WindowState] = js.native
+    var state: js.UndefOr[WindowState] = js.undefined
     
     /** The id of the tab for which you want to adopt to the new window. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** A string to add to the beginning of the window title. */
-    var titlePreface: js.UndefOr[String] = js.native
+    var titlePreface: js.UndefOr[String] = js.undefined
     
     /**
       * The number of pixels to position the new window from the top edge of the screen. If not specified, the new window is offset naturally from the last focused window. This value is ignored for panels.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies what type of browser window to create. The 'panel' and 'detached_panel' types create a popup unless the '--enable-panels' flag is set.
       */
-    var `type`: js.UndefOr[CreateType] = js.native
+    var `type`: js.UndefOr[CreateType] = js.undefined
     
     /**
       * A URL or array of URLs to open as tabs in the window. Fully-qualified URLs must include a scheme (i.e. 'http://www.google.com', not 'www.google.com'). Relative URLs will be relative to the current page within the extension. Defaults to the New Tab Page.
       */
-    var url: js.UndefOr[String | js.Array[String]] = js.native
+    var url: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The width in pixels of the new window, including the frame. If not specified defaults to a natural width.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CreateCreateData {
     
@@ -194,19 +192,18 @@ object windows {
   /**
     * Specifies properties used to filter the `windows.Window` returned and to determine whether they should contain a list of the `tabs.Tab` objects.
     */
-  @js.native
   trait GetAllGetInfo extends StObject {
     
     /**
       * If true, the `windows.Window` returned will have a `tabs` property that contains a list of the `tabs.Tab` objects. The `Tab` objects only contain the `url`, `title` and `favIconUrl` properties if the extension's manifest file includes the `"tabs"` permission.
       */
-    var populate: js.UndefOr[Boolean] = js.native
+    var populate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, the `windows.Window` returned will be filtered based on its type. If unset the default filter is set to `['app', 'normal', 'panel', 'popup']`, with `'app'` and `'panel'` window types limited to the extension's own windows.
       * @deprecated If set, the `windows.Window` returned will be filtered based on its type. If unset the default filter is set to `['app', 'normal', 'panel', 'popup']`, with `'app'` and `'panel'` window types limited to the extension's own windows.
       */
-    var windowTypes: js.UndefOr[js.Array[WindowType]] = js.native
+    var windowTypes: js.UndefOr[js.Array[WindowType]] = js.undefined
   }
   object GetAllGetInfo {
     
@@ -237,19 +234,18 @@ object windows {
   }
   
   /** Specifies whether the `windows.Window` returned should contain a list of the `tabs.Tab` objects. */
-  @js.native
   trait GetInfo extends StObject {
     
     /**
       * If true, the `windows.Window` returned will have a `tabs` property that contains a list of the `tabs.Tab` objects. The `Tab` objects only contain the `url`, `title` and `favIconUrl` properties if the extension's manifest file includes the `"tabs"` permission.
       */
-    var populate: js.UndefOr[Boolean] = js.native
+    var populate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `windowTypes` is deprecated and ignored on Firefox.
       * @deprecated `windowTypes` is deprecated and ignored on Firefox.
       */
-    var windowTypes: js.UndefOr[js.Array[WindowType]] = js.native
+    var windowTypes: js.UndefOr[js.Array[WindowType]] = js.undefined
   }
   object GetInfo {
     
@@ -279,42 +275,41 @@ object windows {
     }
   }
   
-  @js.native
   trait UpdateUpdateInfo extends StObject {
     
     /**
       * If true, causes the window to be displayed in a manner that draws the user's attention to the window, without changing the focused window. The effect lasts until the user changes focus to the window. This option has no effect if the window already has focus. Set to false to cancel a previous draw attention request.
       */
-    var drawAttention: js.UndefOr[Boolean] = js.native
+    var drawAttention: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, brings the window to the front. If false, brings the next window in the z-order to the front.
       */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /** The height to resize the window to in pixels. This value is ignored for panels. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The offset from the left edge of the screen to move the window to in pixels. This value is ignored for panels.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * The new state of the window. The 'minimized', 'maximized' and 'fullscreen' states cannot be combined with 'left', 'top', 'width' or 'height'.
       */
-    var state: js.UndefOr[WindowState] = js.native
+    var state: js.UndefOr[WindowState] = js.undefined
     
     /** A string to add to the beginning of the window title. */
-    var titlePreface: js.UndefOr[String] = js.native
+    var titlePreface: js.UndefOr[String] = js.undefined
     
     /**
       * The offset from the top edge of the screen to move the window to in pixels. This value is ignored for panels.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /** The width to resize the window to in pixels. This value is ignored for panels. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object UpdateUpdateInfo {
     
@@ -377,57 +372,56 @@ object windows {
     }
   }
   
-  @js.native
   trait Window extends StObject {
     
     /** Whether the window is set to be always on top. */
-    var alwaysOnTop: Boolean = js.native
+    var alwaysOnTop: Boolean
     
     /** Whether the window is currently the focused window. */
-    var focused: Boolean = js.native
+    var focused: Boolean
     
     /**
       * The height of the window, including the frame, in pixels. Under some circumstances a Window may not be assigned height property, for example when querying closed windows from the `sessions` API.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of the window. Window IDs are unique within a browser session. Under some circumstances a Window may not be assigned an ID, for example when querying windows using the `sessions` API, in which case a session ID may be present.
       */
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
     /** Whether the window is incognito. */
-    var incognito: Boolean = js.native
+    var incognito: Boolean
     
     /**
       * The offset of the window from the left edge of the screen in pixels. Under some circumstances a Window may not be assigned left property, for example when querying closed windows from the `sessions` API.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** The session ID used to uniquely identify a Window obtained from the `sessions` API. */
-    var sessionId: js.UndefOr[String] = js.native
+    var sessionId: js.UndefOr[String] = js.undefined
     
     /** The state of this browser window. */
-    var state: js.UndefOr[WindowState] = js.native
+    var state: js.UndefOr[WindowState] = js.undefined
     
     /** Array of `tabs.Tab` objects representing the current tabs in the window. */
-    var tabs: js.UndefOr[js.Array[Tab]] = js.native
+    var tabs: js.UndefOr[js.Array[Tab]] = js.undefined
     
     /** The title of the window. Read-only. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The offset of the window from the top edge of the screen in pixels. Under some circumstances a Window may not be assigned top property, for example when querying closed windows from the `sessions` API.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /** The type of browser window this is. */
-    var `type`: js.UndefOr[WindowType] = js.native
+    var `type`: js.UndefOr[WindowType] = js.undefined
     
     /**
       * The width of the window, including the frame, in pixels. Under some circumstances a Window may not be assigned width property, for example when querying closed windows from the `sessions` API.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Window {
     

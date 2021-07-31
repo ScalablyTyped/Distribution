@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XConnection
   * @since LibreOffice 4.0
   */
-@js.native
 trait XDriverManager2
-  extends XEnumerationAccess
+  extends StObject
      with XDriverManager
      with XDriverAccess
+     with XEnumerationAccess
 object XDriverManager2 {
   
   @scala.inline

@@ -4,18 +4,18 @@ import typings.webicon.svgIconMod.SvgIcon
 import typings.webicon.webiconBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgIconSetMod {
   
-  @js.native
-  trait SvgIconSet extends SvgIcon {
+  trait SvgIconSet
+    extends StObject
+       with SvgIcon {
     
     /**
       * A value indicating whether the icons are loaded separately.
       */
-    var cumulative: js.UndefOr[`false`] = js.native
+    var cumulative: js.UndefOr[`false`] = js.undefined
   }
   object SvgIconSet {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCapacityProviderRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the capacity provider to delete.
     */
-  var capacityProvider: String = js.native
+  var capacityProvider: String
 }
 object DeleteCapacityProviderRequest {
   

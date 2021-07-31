@@ -2,36 +2,34 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Celebrity extends StObject {
   
   /**
     * Provides information about the celebrity's face, such as its location on the image.
     */
-  var Face: js.UndefOr[ComparedFace] = js.native
+  var Face: js.UndefOr[ComparedFace] = js.undefined
   
   /**
     * A unique identifier for the celebrity. 
     */
-  var Id: js.UndefOr[RekognitionUniqueId] = js.native
+  var Id: js.UndefOr[RekognitionUniqueId] = js.undefined
   
   /**
     * The confidence, in percentage, that Amazon Rekognition has that the recognized face is the celebrity.
     */
-  var MatchConfidence: js.UndefOr[Percent] = js.native
+  var MatchConfidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * The name of the celebrity.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * An array of URLs pointing to additional information about the celebrity. If there is no additional information about the celebrity, this list is empty.
     */
-  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.native
+  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.undefined
 }
 object Celebrity {
   

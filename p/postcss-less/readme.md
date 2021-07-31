@@ -10,9 +10,9 @@ LESS parser for PostCSS
 | ------------------ | :-------------: |
 | Full name          | postcss-less |
 | Keywords           | css, postcss, postcss-syntax, parser, less |
-| # releases         | 9 |
-| # dependents       | 101 |
-| # downloads        | 72975425 |
+| # releases         | 3 |
+| # dependents       | 116 |
+| # downloads        | 89676430 |
 | # stars            | 3 |
 
 ## Links

@@ -8,66 +8,66 @@ import typings.koaBodyparser.anon.Form
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-bodyparser", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bodyparser", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-bodyparser", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * custom json request detect function. Default is null
       */
-    var detectJSON: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.native
+    var detectJSON: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.undefined
     
     /**
       *  parser will only parse when request type hits enableTypes, default is ['json', 'form'].
       */
-    var enableTypes: js.UndefOr[js.Array[String]] = js.native
+    var enableTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * requested encoding. Default is utf-8 by co-body
       */
-    var encode: js.UndefOr[String] = js.native
+    var encode: js.UndefOr[String] = js.undefined
     
     /**
       * support extend types
       */
-    var extendTypes: js.UndefOr[Form] = js.native
+    var extendTypes: js.UndefOr[Form] = js.undefined
     
     /**
       * limit of the urlencoded body. If the body ends up being larger than this limit
       * a 413 error code is returned. Default is 56kb
       */
-    var formLimit: js.UndefOr[String] = js.native
+    var formLimit: js.UndefOr[String] = js.undefined
     
     /**
       * limit of the json body. Default is 1mb
       */
-    var jsonLimit: js.UndefOr[String] = js.native
+    var jsonLimit: js.UndefOr[String] = js.undefined
     
     /**
       * support custom error handle
       */
-    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.undefined
     
     /**
       * when set to true, JSON parser will only accept arrays and objects. Default is true
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * limit of the text body. Default is 1mb.
       */
-    var textLimit: js.UndefOr[String] = js.native
+    var textLimit: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -142,12 +142,11 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var body: js.UndefOr[js.Any] = js.native
+      var body: js.UndefOr[js.Any] = js.undefined
       
-      var rawBody: String = js.native
+      var rawBody: String
     }
     object Request {
       

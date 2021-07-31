@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationValue extends StObject {
   
   /**
     * The hourly rate of the reservation.
     */
-  var HourlyPrice: js.UndefOr[String] = js.native
+  var HourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The balance of the total value (the sum of remainingUpfrontValue + hourlyPrice * number of hours remaining).
     */
-  var RemainingTotalValue: js.UndefOr[String] = js.native
+  var RemainingTotalValue: js.UndefOr[String] = js.undefined
   
   /**
     * The remaining upfront cost of the reservation.
     */
-  var RemainingUpfrontValue: js.UndefOr[String] = js.native
+  var RemainingUpfrontValue: js.UndefOr[String] = js.undefined
 }
 object ReservationValue {
   

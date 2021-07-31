@@ -2,41 +2,39 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  var album_cover: String = js.native
+  var album_cover: String
   
-  var author: String = js.native
+  var author: String
   
-  var author_id: Double = js.native
+  var author_id: Double
   
-  var children: js.Array[Comment] = js.native
+  var children: js.Array[Comment]
   
-  var comment: String = js.native
+  var comment: String
   
-  var datetime: Double = js.native
+  var datetime: Double
   
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
-  var downs: Double = js.native
+  var downs: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var image_id: String = js.native
+  var image_id: String
   
-  var on_album: Boolean = js.native
+  var on_album: Boolean
   
-  var parent_id: Double = js.native
+  var parent_id: Double
   
-  var points: Double = js.native
+  var points: Double
   
-  var ups: Double = js.native
+  var ups: Double
   
-  var vote: js.UndefOr[String] = js.native
+  var vote: js.UndefOr[String] = js.undefined
 }
 object Comment {
   

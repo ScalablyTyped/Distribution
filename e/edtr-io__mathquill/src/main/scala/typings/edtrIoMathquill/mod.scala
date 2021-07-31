@@ -5,37 +5,35 @@ import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Config extends StObject {
     
-    var autoCommands: js.UndefOr[String] = js.native
+    var autoCommands: js.UndefOr[String] = js.undefined
     
-    var autoOperatorNames: js.UndefOr[String] = js.native
+    var autoOperatorNames: js.UndefOr[String] = js.undefined
     
-    var autoSubscriptNumerals: js.UndefOr[Boolean] = js.native
+    var autoSubscriptNumerals: js.UndefOr[Boolean] = js.undefined
     
-    var charsThatBreakOutOfSupSub: js.UndefOr[String] = js.native
+    var charsThatBreakOutOfSupSub: js.UndefOr[String] = js.undefined
     
-    var handlers: js.UndefOr[Edit] = js.native
+    var handlers: js.UndefOr[Edit] = js.undefined
     
-    var leftRightIntoCmdGoes: js.UndefOr[String] = js.native
+    var leftRightIntoCmdGoes: js.UndefOr[String] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var restrictMismatchedBrackets: js.UndefOr[Boolean] = js.native
+    var restrictMismatchedBrackets: js.UndefOr[Boolean] = js.undefined
     
-    var spaceBehavesLikeTab: js.UndefOr[Boolean] = js.native
+    var spaceBehavesLikeTab: js.UndefOr[Boolean] = js.undefined
     
-    var substituteTextarea: js.UndefOr[js.Function0[HTMLTextAreaElement]] = js.native
+    var substituteTextarea: js.UndefOr[js.Function0[HTMLTextAreaElement]] = js.undefined
     
-    var sumStartsWithNEquals: js.UndefOr[Boolean] = js.native
+    var sumStartsWithNEquals: js.UndefOr[Boolean] = js.undefined
     
-    var supSubsRequireOperand: js.UndefOr[Boolean] = js.native
+    var supSubsRequireOperand: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -123,7 +121,9 @@ object mod {
   }
   
   @js.native
-  trait MQ extends MathField {
+  trait MQ
+    extends StObject
+       with MathField {
     
     var L: Double = js.native
     
@@ -139,32 +139,31 @@ object mod {
     def revert(): MQ = js.native
   }
   
-  @js.native
   trait MathField extends StObject {
     
-    def blur(): MQ = js.native
+    def blur(): MQ
     
-    def clearSelection(): MQ = js.native
+    def clearSelection(): MQ
     
-    def cmd(latex: String): MQ = js.native
+    def cmd(latex: String): MQ
     
-    def config(config: Config): MQ = js.native
+    def config(config: Config): MQ
     
-    def focus(): MQ = js.native
+    def focus(): MQ
     
-    def keystroke(keys: String): MQ = js.native
+    def keystroke(keys: String): MQ
     
-    def moveToDirEnd(direction: Double): MQ = js.native
+    def moveToDirEnd(direction: Double): MQ
     
-    def moveToLeftEnd(): MQ = js.native
+    def moveToLeftEnd(): MQ
     
-    def moveToRightEnd(): MQ = js.native
+    def moveToRightEnd(): MQ
     
-    def select(): MQ = js.native
+    def select(): MQ
     
-    def typedText(text: String): MQ = js.native
+    def typedText(text: String): MQ
     
-    def write(latex: String): MQ = js.native
+    def write(latex: String): MQ
   }
   object MathField {
     

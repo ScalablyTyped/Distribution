@@ -5,7 +5,6 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.item_entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,7 +21,7 @@ trait ISystemBase extends StObject {
     * different: it makes the component reload on the entity with the new data as if it had just been added to the entity.
     * @param component The component object retrieved from the entity that was returned by either createComponent() or getComponent()
     */
-  def applyComponentChanges(entity: IEntity, component: IComponent[_]): `true` | Null = js.native
+  def applyComponentChanges(entity: IEntity, component: IComponent[js.Any]): `true` | Null = js.native
   
   /**
     * Creates an empty entity with no components and does not place it in the world.

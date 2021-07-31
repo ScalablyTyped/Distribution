@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpAction extends StObject {
   
   /**
     * The authentication method to use when sending data to an HTTPS endpoint.
     */
-  var auth: js.UndefOr[HttpAuthorization] = js.native
+  var auth: js.UndefOr[HttpAuthorization] = js.undefined
   
   /**
     * The URL to which AWS IoT sends a confirmation message. The value of the confirmation URL must be a prefix of the endpoint URL. If you do not specify a confirmation URL AWS IoT uses the endpoint URL as the confirmation URL. If you use substitution templates in the confirmationUrl, you must create and enable topic rule destinations that match each possible value of the substitution template before traffic is allowed to your endpoint URL.
     */
-  var confirmationUrl: js.UndefOr[Url] = js.native
+  var confirmationUrl: js.UndefOr[Url] = js.undefined
   
   /**
     * The HTTP headers to send with the message data.
     */
-  var headers: js.UndefOr[HeaderList] = js.native
+  var headers: js.UndefOr[HeaderList] = js.undefined
   
   /**
     * The endpoint URL. If substitution templates are used in the URL, you must also specify a confirmationUrl. If this is a new destination, a new TopicRuleDestination is created if possible.
     */
-  var url: Url = js.native
+  var url: Url
 }
 object HttpAction {
   

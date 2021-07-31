@@ -2,29 +2,27 @@ package typings.rnFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dirs extends StObject {
   
-  var CacheDir: String = js.native
+  var CacheDir: String
   
-  var DCIMDir: String = js.native
+  var DCIMDir: String
   
-  var DocumentDir: String = js.native
+  var DocumentDir: String
   
-  var DownloadDir: String = js.native
+  var DownloadDir: String
   
-  var MainBundleDir: String = js.native
+  var MainBundleDir: String
   
-  var MovieDir: String = js.native
+  var MovieDir: String
   
-  var MusicDir: String = js.native
+  var MusicDir: String
   
-  var PictureDir: String = js.native
+  var PictureDir: String
   
-  var SDCardDir: String = js.native
+  var SDCardDir: String
 }
 object Dirs {
   

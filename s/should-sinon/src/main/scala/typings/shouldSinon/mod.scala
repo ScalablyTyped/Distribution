@@ -4,14 +4,15 @@ import typings.should.mod.Assertion
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
   @js.native
-  trait ShouldSinonAssertion extends Assertion {
+  trait ShouldSinonAssertion
+    extends StObject
+       with Assertion {
     
     /**
       * Assert stub was called with given object as this always. So if you call stub several times
@@ -110,10 +111,9 @@ object mod {
     def threw(ex: Error): Unit = js.native
   }
   
-  @js.native
   trait SinonSpyCallApi extends StObject {
     
-    var should: ShouldSinonAssertion = js.native
+    var should: ShouldSinonAssertion
   }
   object SinonSpyCallApi {
     

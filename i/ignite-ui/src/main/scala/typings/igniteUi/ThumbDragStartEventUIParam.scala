@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbDragStartEventUIParam extends StObject {
   
   /**
     * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
     */
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets a reference to the igScroll.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ThumbDragStartEventUIParam {
   

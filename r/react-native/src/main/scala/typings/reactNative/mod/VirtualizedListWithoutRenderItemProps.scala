@@ -8,76 +8,76 @@ import typings.reactNative.anon.DistanceFromEnd
 import typings.reactNative.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
+trait VirtualizedListWithoutRenderItemProps[ItemT]
+  extends StObject
+     with ScrollViewProps {
   
-  var CellRendererComponent: js.UndefOr[ComponentType[_]] = js.native
+  var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
   /**
     * Rendered when the list is empty. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListEmptyComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
   /**
     * Rendered at the bottom of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListFooterComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
   /**
     * Rendered at the top of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListHeaderComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
   /**
     * The default accessor functions assume this is an Array<{key: string}> but you can override
     * getItem, getItemCount, and keyExtractor to handle any type of index-based data.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * `debug` will turn on extra logging and visual overlays to aid with debugging both usage and
     * implementation, but with a significant perf hit.
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * DEPRECATED: Virtualization provides significant performance and memory optimizations, but fully
     * unmounts react instances that are outside of the render window. You should only need to disable
     * this for debugging purposes.
     */
-  var disableVirtualization: js.UndefOr[Boolean] = js.native
+  var disableVirtualization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A marker property for telling the list to re-render (since it implements `PureComponent`). If
     * any of your `renderItem`, Header, Footer, etc. functions depend on anything outside of the
     * `data` prop, stick it here and treat it immutably.
     */
-  var extraData: js.UndefOr[js.Any] = js.native
+  var extraData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A generic accessor for extracting an item from any sort of data blob.
     */
-  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, ItemT]] = js.native
+  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, ItemT]] = js.undefined
   
   /**
     * Determines how many items are in the data blob.
     */
-  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.native
+  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
   
-  var getItemLayout: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, Index]] = js.native
+  var getItemLayout: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, Index]] = js.undefined
   
   /**
     * How many items to render in the initial batch. This should be enough to fill the screen but not
     * much more. Note these items will never be unmounted as part of the windowed rendering in order
     * to improve perceived performance of scroll-to-top actions.
     */
-  var initialNumToRender: js.UndefOr[Double] = js.native
+  var initialNumToRender: js.UndefOr[Double] = js.undefined
   
   /**
     * Instead of starting at the top with the first item, start at `initialScrollIndex`. This
@@ -85,72 +85,72 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * always rendered and immediately renders the items starting at this initial index. Requires
     * `getItemLayout` to be implemented.
     */
-  var initialScrollIndex: js.UndefOr[Double | Null] = js.native
+  var initialScrollIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Reverses the direction of scroll. Uses scale transforms of -1.
     */
-  var inverted: js.UndefOr[Boolean | Null] = js.native
+  var inverted: js.UndefOr[Boolean | Null] = js.undefined
   
-  var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.native
+  var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.undefined
   
-  var listKey: js.UndefOr[String] = js.native
+  var listKey: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of items to render in each incremental render batch. The more rendered at
     * once, the better the fill rate, but responsiveness my suffer because rendering content may
     * interfere with responding to button taps or other interactions.
     */
-  var maxToRenderPerBatch: js.UndefOr[Double] = js.native
+  var maxToRenderPerBatch: js.UndefOr[Double] = js.undefined
   
-  var onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.native
+  var onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.undefined
   
-  var onEndReachedThreshold: js.UndefOr[Double | Null] = js.native
+  var onEndReachedThreshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * If provided, a standard RefreshControl will be added for "Pull to Refresh" functionality. Make
     * sure to also set the `refreshing` prop correctly.
     */
-  var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.native
+  var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   
   /**
     * Used to handle failures when scrolling to an index that has not been measured yet.
     * Recommended action is to either compute your own offset and `scrollTo` it, or scroll as far
     * as possible and then try again after more items have been rendered.
     */
-  var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.native
+  var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.undefined
   
   /**
     * Called when the viewability of rows changes, as defined by the
     * `viewabilityConfig` prop.
     */
-  var onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.native
+  var onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.undefined
   
   /**
     * Set this when offset is needed for the loading indicator to show correctly.
     * @platform android
     */
-  var progressViewOffset: js.UndefOr[Double] = js.native
+  var progressViewOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this true while waiting for new data from a refresh.
     */
-  var refreshing: js.UndefOr[Boolean | Null] = js.native
+  var refreshing: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Render a custom scroll component, e.g. with a differently styled `RefreshControl`.
     */
-  var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.native
+  var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.undefined
   
   /**
     * Amount of time between low-pri item render batches, e.g. for rendering items quite a ways off
     * screen. Similar fill rate/responsiveness tradeoff as `maxToRenderPerBatch`.
     */
-  var updateCellsBatchingPeriod: js.UndefOr[Double] = js.native
+  var updateCellsBatchingPeriod: js.UndefOr[Double] = js.undefined
   
-  var viewabilityConfig: js.UndefOr[ViewabilityConfig] = js.native
+  var viewabilityConfig: js.UndefOr[ViewabilityConfig] = js.undefined
   
-  var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.native
+  var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
   
   /**
     * Determines the maximum number of items rendered outside of the visible area, in units of
@@ -159,7 +159,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * this number will reduce memory consumption and may improve performance, but will increase the
     * chance that fast scrolling may reveal momentary blank areas of unrendered content.
     */
-  var windowSize: js.UndefOr[Double] = js.native
+  var windowSize: js.UndefOr[Double] = js.undefined
 }
 object VirtualizedListWithoutRenderItemProps {
   
@@ -170,10 +170,10 @@ object VirtualizedListWithoutRenderItemProps {
   }
   
   @scala.inline
-  implicit class VirtualizedListWithoutRenderItemPropsMutableBuilder[Self <: VirtualizedListWithoutRenderItemProps[_], ItemT] (val x: Self with VirtualizedListWithoutRenderItemProps[ItemT]) extends AnyVal {
+  implicit class VirtualizedListWithoutRenderItemPropsMutableBuilder[Self <: VirtualizedListWithoutRenderItemProps[?], ItemT] (val x: Self & VirtualizedListWithoutRenderItemProps[ItemT]) extends AnyVal {
     
     @scala.inline
-    def setCellRendererComponent(value: ComponentType[_]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
@@ -251,7 +251,7 @@ object VirtualizedListWithoutRenderItemProps {
     def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
     @scala.inline
-    def setListEmptyComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
@@ -260,7 +260,7 @@ object VirtualizedListWithoutRenderItemProps {
     def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
     @scala.inline
-    def setListFooterComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
@@ -269,7 +269,7 @@ object VirtualizedListWithoutRenderItemProps {
     def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
     @scala.inline
-    def setListHeaderComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)

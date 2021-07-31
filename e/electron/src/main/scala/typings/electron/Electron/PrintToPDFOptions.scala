@@ -3,53 +3,51 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintToPDFOptions extends StObject {
   
   /**
     * the header and footer for the PDF.
     */
-  var headerFooter: js.UndefOr[Record[String, String]] = js.native
+  var headerFooter: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * `true` for landscape, `false` for portrait.
     */
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the type of margins to use. Uses 0 for default margin, 1 for no
     * margin, and 2 for minimum margin. and `width` in microns.
     */
-  var marginsType: js.UndefOr[Double] = js.native
+  var marginsType: js.UndefOr[Double] = js.undefined
   
   /**
     * The page range to print.
     */
-  var pageRanges: js.UndefOr[Record[String, Double]] = js.native
+  var pageRanges: js.UndefOr[Record[String, Double]] = js.undefined
   
   /**
     * Specify page size of the generated PDF. Can be `A3`, `A4`, `A5`, `Legal`,
     * `Letter`, `Tabloid` or an Object containing `height`
     */
-  var pageSize: js.UndefOr[String | Size] = js.native
+  var pageSize: js.UndefOr[String | Size] = js.undefined
   
   /**
     * Whether to print CSS backgrounds.
     */
-  var printBackground: js.UndefOr[Boolean] = js.native
+  var printBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to print selection only.
     */
-  var printSelectionOnly: js.UndefOr[Boolean] = js.native
+  var printSelectionOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scale factor of the web page. Can range from 0 to 100.
     */
-  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.undefined
 }
 object PrintToPDFOptions {
   

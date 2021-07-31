@@ -3,7 +3,6 @@ package typings.ionicReact
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionTabsContextMod {
@@ -12,12 +11,11 @@ object ionTabsContextMod {
   @js.native
   val IonTabsContext: Context[IonTabsContextState] = js.native
   
-  @js.native
   trait IonTabsContextState extends StObject {
     
-    var activeTab: js.UndefOr[String] = js.native
+    var activeTab: js.UndefOr[String] = js.undefined
     
-    def selectTab(tab: String): Boolean = js.native
+    def selectTab(tab: String): Boolean
   }
   object IonTabsContextState {
     

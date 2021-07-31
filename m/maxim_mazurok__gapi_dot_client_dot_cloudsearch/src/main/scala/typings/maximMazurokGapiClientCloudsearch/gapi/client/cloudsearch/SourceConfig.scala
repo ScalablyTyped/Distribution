@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceConfig extends StObject {
   
   /** The crowding configuration for the source. */
-  var crowdingConfig: js.UndefOr[SourceCrowdingConfig] = js.native
+  var crowdingConfig: js.UndefOr[SourceCrowdingConfig] = js.undefined
   
   /** The scoring configuration for the source. */
-  var scoringConfig: js.UndefOr[SourceScoringConfig] = js.native
+  var scoringConfig: js.UndefOr[SourceScoringConfig] = js.undefined
   
   /** The source for which this configuration is to be used. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object SourceConfig {
   

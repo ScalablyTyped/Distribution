@@ -2,86 +2,84 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a targeting template. A targeting template
   * encapsulates targeting information which can be reused across multiple ads.
   */
-@js.native
 trait SchemaTargetingTemplate extends StObject {
   
   /**
     * Account ID of this targeting template. This field, if left unset, will be
     * auto-generated on insert and is read-only after insert.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser ID of this targeting template. This is a required field on
     * insert and is read-only after insert.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser. This is a read-only,
     * auto-generated field.
     */
-  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Time and day targeting criteria.
     */
-  var dayPartTargeting: js.UndefOr[SchemaDayPartTargeting] = js.native
+  var dayPartTargeting: js.UndefOr[SchemaDayPartTargeting] = js.undefined
   
   /**
     * Geographical targeting criteria.
     */
-  var geoTargeting: js.UndefOr[SchemaGeoTargeting] = js.native
+  var geoTargeting: js.UndefOr[SchemaGeoTargeting] = js.undefined
   
   /**
     * ID of this targeting template. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Key-value targeting criteria.
     */
-  var keyValueTargetingExpression: js.UndefOr[SchemaKeyValueTargetingExpression] = js.native
+  var keyValueTargetingExpression: js.UndefOr[SchemaKeyValueTargetingExpression] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#targetingTemplate&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Language targeting criteria.
     */
-  var languageTargeting: js.UndefOr[SchemaLanguageTargeting] = js.native
+  var languageTargeting: js.UndefOr[SchemaLanguageTargeting] = js.undefined
   
   /**
     * Remarketing list targeting criteria.
     */
-  var listTargetingExpression: js.UndefOr[SchemaListTargetingExpression] = js.native
+  var listTargetingExpression: js.UndefOr[SchemaListTargetingExpression] = js.undefined
   
   /**
     * Name of this targeting template. This field is required. It must be less
     * than 256 characters long and unique within an advertiser.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this targeting template. This field, if left unset, will
     * be auto-generated on insert and is read-only after insert.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Technology platform targeting criteria.
     */
-  var technologyTargeting: js.UndefOr[SchemaTechnologyTargeting] = js.native
+  var technologyTargeting: js.UndefOr[SchemaTechnologyTargeting] = js.undefined
 }
 object SchemaTargetingTemplate {
   

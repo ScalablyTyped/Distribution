@@ -17,39 +17,37 @@ import typings.gitlab.servicesMod.GroupVariables
 import typings.gitlab.servicesMod.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EpicDiscussions extends StObject {
   
-  var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions] = js.native
+  var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions]
   
-  var EpicIssues: Instantiable0[typings.gitlab.servicesMod.EpicIssues] = js.native
+  var EpicIssues: Instantiable0[typings.gitlab.servicesMod.EpicIssues]
   
-  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicNotes] = js.native
+  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicNotes]
   
-  var Epics: Instantiable0[typings.gitlab.servicesMod.Epics] = js.native
+  var Epics: Instantiable0[typings.gitlab.servicesMod.Epics]
   
-  var GroupAccessRequests: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupAccessRequests] = js.native
+  var GroupAccessRequests: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupAccessRequests]
   
-  var GroupBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupBadges] = js.native
+  var GroupBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupBadges]
   
-  var GroupCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupCustomAttributes] = js.native
+  var GroupCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupCustomAttributes]
   
-  var GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupIssueBoards] = js.native
+  var GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupIssueBoards]
   
-  var GroupLabels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupLabels] = js.native
+  var GroupLabels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupLabels]
   
-  var GroupMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMembers] = js.native
+  var GroupMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMembers]
   
-  var GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMilestones] = js.native
+  var GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMilestones]
   
-  var GroupProjects: Instantiable0[typings.gitlab.servicesMod.GroupProjects] = js.native
+  var GroupProjects: Instantiable0[typings.gitlab.servicesMod.GroupProjects]
   
-  var GroupVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupVariables] = js.native
+  var GroupVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupVariables]
   
-  var Groups: Instantiable0[typings.gitlab.servicesMod.Groups] = js.native
+  var Groups: Instantiable0[typings.gitlab.servicesMod.Groups]
 }
 object EpicDiscussions {
   

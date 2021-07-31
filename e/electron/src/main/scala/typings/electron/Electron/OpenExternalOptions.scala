@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenExternalOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait OpenExternalOptions extends StObject {
     *
     * @platform darwin
     */
-  var activate: js.UndefOr[Boolean] = js.native
+  var activate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The working directory.
     *
     * @platform win32
     */
-  var workingDirectory: js.UndefOr[String] = js.native
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 object OpenExternalOptions {
   

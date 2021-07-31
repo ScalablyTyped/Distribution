@@ -4,58 +4,58 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBatch extends IObservable {
+trait IBatch
+  extends StObject
+     with IObservable {
   
   /** [Method] Adds a new operation to this batch
     * @param operation Object The Operation object.
     */
-  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Number) */
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
   /** [Method] Returns the value of autoStart
     * @returns Boolean
     */
-  var getAutoStart: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoStart: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of pauseOnException
     * @returns Boolean
     */
-  var getPauseOnException: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getPauseOnException: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of proxy
     * @returns Ext.data.Proxy
     */
-  var getProxy: js.UndefOr[js.Function0[IProxy]] = js.native
+  var getProxy: js.UndefOr[js.Function0[IProxy]] = js.undefined
   
   /** [Property] (Boolean) */
-  var hasException: js.UndefOr[Boolean] = js.native
+  var hasException: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isComplete: js.UndefOr[Boolean] = js.native
+  var isComplete: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isRunning: js.UndefOr[Boolean] = js.native
+  var isRunning: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Ext.data.Operation[]) */
-  var operations: js.UndefOr[Array] = js.native
+  var operations: js.UndefOr[Array] = js.undefined
   
   /** [Method] Pauses execution of the batch but does not cancel the current operation  */
-  var pause: js.UndefOr[js.Function0[Unit]] = js.native
+  var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var pauseOnException: js.UndefOr[Boolean] = js.native
+  var pauseOnException: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Proxy) */
-  var proxy: js.UndefOr[IProxy] = js.native
+  var proxy: js.UndefOr[IProxy] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -65,33 +65,33 @@ trait IBatch extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IBatch: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Executes a operation by its numeric index
     * @param index Number The operation index to run.
     */
-  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoStart
     * @param autoStart Boolean The new value.
     */
-  var setAutoStart: js.UndefOr[js.Function1[/* autoStart */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoStart: js.UndefOr[js.Function1[/* autoStart */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of pauseOnException
     * @param pauseOnException Boolean The new value.
     */
-  var setPauseOnException: js.UndefOr[js.Function1[/* pauseOnException */ js.UndefOr[Boolean], Unit]] = js.native
+  var setPauseOnException: js.UndefOr[js.Function1[/* pauseOnException */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of proxy
     * @param proxy Ext.data.Proxy The new value.
     */
-  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[IProxy], Unit]] = js.native
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[IProxy], Unit]] = js.undefined
   
   /** [Method] Kicks off the execution of the batch continuing from the next operation if the previous operation encountered an exc  */
-  var start: js.UndefOr[js.Function0[Unit]] = js.native
+  var start: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Number) */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object IBatch {
   

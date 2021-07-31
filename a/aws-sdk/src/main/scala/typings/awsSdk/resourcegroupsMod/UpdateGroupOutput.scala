@@ -2,16 +2,14 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGroupOutput extends StObject {
   
   /**
     * The update description of the resource group.
     */
-  var Group: js.UndefOr[typings.awsSdk.resourcegroupsMod.Group] = js.native
+  var Group: js.UndefOr[typings.awsSdk.resourcegroupsMod.Group] = js.undefined
 }
 object UpdateGroupOutput {
   

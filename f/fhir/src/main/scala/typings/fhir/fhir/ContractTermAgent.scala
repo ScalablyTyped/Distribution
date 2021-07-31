@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contract Term Agent List
   */
-@js.native
-trait ContractTermAgent extends BackboneElement {
+trait ContractTermAgent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contract Term Agent Subject
     */
-  var actor: Reference = js.native
+  var actor: Reference
   
   /**
     * Type of the Contract Term Agent
     */
-  var role: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var role: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object ContractTermAgent {
   

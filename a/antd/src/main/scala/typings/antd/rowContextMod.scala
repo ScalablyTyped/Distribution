@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowContextMod extends Shortcut {
@@ -13,12 +12,11 @@ object rowContextMod extends Shortcut {
   @js.native
   val default: Context[RowContextState] = js.native
   
-  @js.native
   trait RowContextState extends StObject {
     
-    var gutter: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var gutter: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object RowContextState {
     

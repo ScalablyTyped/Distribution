@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TupleExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TupleExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TupleExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var elements: js.Array[Expression | SpreadElement_] = js.native
+  var elements: js.Array[Expression | SpreadElement_]
   
   @JSName("type")
-  var type_TupleExpression_ : TupleExpression = js.native
+  var type_TupleExpression_ : TupleExpression
 }
 object TupleExpression_ {
   
   @scala.inline
-  def apply(elements: js.Array[Expression | SpreadElement_], `type`: TupleExpression): TupleExpression_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(elements: js.Array[Expression | SpreadElement_]): TupleExpression_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[TupleExpression_]
   }
   

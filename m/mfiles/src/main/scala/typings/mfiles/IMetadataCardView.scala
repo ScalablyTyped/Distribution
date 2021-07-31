@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardView extends StObject {
   
-  var DashboardID: String = js.native
+  var DashboardID: String
   
-  val Events: IEvents = js.native
+  val Events: IEvents
   
-  var Name: String = js.native
+  var Name: String
 }
 object IMetadataCardView {
   

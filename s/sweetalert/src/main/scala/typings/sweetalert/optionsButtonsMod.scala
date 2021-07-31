@@ -3,10 +3,13 @@ package typings.sweetalert
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsButtonsMod {
+  
+  @JSImport("sweetalert/typings/modules/options/buttons", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sweetalert/typings/modules/options/buttons", "CANCEL_KEY")
   @js.native
@@ -20,30 +23,26 @@ object optionsButtonsMod {
   @js.native
   val defaultButtonList: ButtonList = js.native
   
-  @JSImport("sweetalert/typings/modules/options/buttons", "getButtonListOpts")
-  @js.native
-  def getButtonListOpts(opts: String): ButtonList = js.native
-  @JSImport("sweetalert/typings/modules/options/buttons", "getButtonListOpts")
-  @js.native
-  def getButtonListOpts(opts: js.Object): ButtonList = js.native
-  @JSImport("sweetalert/typings/modules/options/buttons", "getButtonListOpts")
-  @js.native
-  def getButtonListOpts(opts: Boolean): ButtonList = js.native
+  @scala.inline
+  def getButtonListOpts(opts: String): ButtonList = ^.asInstanceOf[js.Dynamic].applyDynamic("getButtonListOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[ButtonList]
+  @scala.inline
+  def getButtonListOpts(opts: js.Object): ButtonList = ^.asInstanceOf[js.Dynamic].applyDynamic("getButtonListOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[ButtonList]
+  @scala.inline
+  def getButtonListOpts(opts: Boolean): ButtonList = ^.asInstanceOf[js.Dynamic].applyDynamic("getButtonListOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[ButtonList]
   
   type ButtonList = StringDictionary[ButtonOptions | Boolean]
   
-  @js.native
   trait ButtonOptions extends StObject {
     
-    var className: js.UndefOr[String | js.Array[String]] = js.native
+    var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var closeModal: js.UndefOr[Boolean] = js.native
+    var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ButtonOptions {
     

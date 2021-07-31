@@ -23,10 +23,13 @@ import typings.reactSelect.typesMod.OptionTypeBase
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
+  
+  @JSImport("react-select/src/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Required<react-select.react-select/src/components.DeepNonNullable<react-select.react-select/src/components.SelectComponents<any>>> */
   object components {
@@ -189,22 +192,20 @@ object componentsMod {
     def ValueContainer_=(x: NonNullable[ComponentType[ValueContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueContainer")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select/src/components", "defaultComponents")
-  @js.native
-  def defaultComponents[OptionType /* <: OptionTypeBase */](props: Props[OptionType]): SelectComponents[OptionType] = js.native
+  @scala.inline
+  def defaultComponents[OptionType /* <: OptionTypeBase */](props: Props[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultComponents")(props.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
   
   type DeepNonNullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? std.NonNullable<T[P]>}
-    */ typings.reactSelect.reactSelectStrings.DeepNonNullable with TopLevel[T]
+    */ typings.reactSelect.reactSelectStrings.DeepNonNullable & TopLevel[T]
   
   type IndicatorComponentType[OptionType /* <: OptionTypeBase */] = ComponentType[IndicatorProps[OptionType]]
   
   type PlaceholderOrValue[OptionType /* <: OptionTypeBase */] = ReactElement | js.Array[ReactElement]
   
-  @js.native
   trait Props[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var components: SelectComponentsConfig[OptionType] = js.native
+    var components: SelectComponentsConfig[OptionType]
   }
   object Props {
     
@@ -215,75 +216,74 @@ object componentsMod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], OptionType /* <: OptionTypeBase */] (val x: Self with Props[OptionType]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], OptionType /* <: OptionTypeBase */] (val x: Self & Props[OptionType]) extends AnyVal {
       
       @scala.inline
       def setComponents(value: SelectComponentsConfig[OptionType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait SelectComponents[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var ClearIndicator: IndicatorComponentType[OptionType] | Null = js.native
+    var ClearIndicator: IndicatorComponentType[OptionType] | Null
     
-    var Control: ComponentType[ControlProps[OptionType]] = js.native
+    var Control: ComponentType[ControlProps[OptionType]]
     
-    var CrossIcon: ComponentType[_] = js.native
+    var CrossIcon: ComponentType[js.Any]
     
-    var DownChevron: ComponentType[_] = js.native
+    var DownChevron: ComponentType[js.Any]
     
-    var DropdownIndicator: IndicatorComponentType[OptionType] | Null = js.native
+    var DropdownIndicator: IndicatorComponentType[OptionType] | Null
     
-    var Group: ComponentType[GroupProps[OptionType]] = js.native
+    var Group: ComponentType[GroupProps[OptionType]]
     
-    var GroupHeading: ComponentType[_] = js.native
+    var GroupHeading: ComponentType[js.Any]
     
-    var IndicatorSeparator: IndicatorComponentType[OptionType] | Null = js.native
+    var IndicatorSeparator: IndicatorComponentType[OptionType] | Null
     
-    var IndicatorsContainer: ComponentType[IndicatorContainerProps[OptionType]] = js.native
+    var IndicatorsContainer: ComponentType[IndicatorContainerProps[OptionType]]
     
-    var Input: ComponentType[InputProps] = js.native
+    var Input: ComponentType[InputProps]
     
-    var LoadingIndicator: ComponentType[LoadingIconProps[OptionType]] | Null = js.native
+    var LoadingIndicator: ComponentType[LoadingIconProps[OptionType]] | Null
     
-    var LoadingMessage: ComponentType[NoticeProps[OptionType]] = js.native
+    var LoadingMessage: ComponentType[NoticeProps[OptionType]]
     
-    var Menu: ComponentType[MenuProps[OptionType]] = js.native
+    var Menu: ComponentType[MenuProps[OptionType]]
     
-    var MenuList: ComponentType[MenuListComponentProps[OptionType]] = js.native
+    var MenuList: ComponentType[MenuListComponentProps[OptionType]]
     
-    var MenuPortal: ComponentType[MenuPortalProps[OptionType]] = js.native
+    var MenuPortal: ComponentType[MenuPortalProps[OptionType]]
     
-    var MultiValue: ComponentType[MultiValueProps[OptionType]] = js.native
+    var MultiValue: ComponentType[MultiValueProps[OptionType]]
     
-    var MultiValueContainer: ComponentType[_] = js.native
+    var MultiValueContainer: ComponentType[js.Any]
     
-    var MultiValueLabel: ComponentType[_] = js.native
+    var MultiValueLabel: ComponentType[js.Any]
     
-    var MultiValueRemove: ComponentType[_] = js.native
+    var MultiValueRemove: ComponentType[js.Any]
     
-    var NoOptionsMessage: ComponentType[NoticeProps[OptionType]] = js.native
+    var NoOptionsMessage: ComponentType[NoticeProps[OptionType]]
     
-    var Option: ComponentType[OptionProps[OptionType]] = js.native
+    var Option: ComponentType[OptionProps[OptionType]]
     
-    var Placeholder: ComponentType[PlaceholderProps[OptionType]] = js.native
+    var Placeholder: ComponentType[PlaceholderProps[OptionType]]
     
-    var SelectContainer: ComponentType[ContainerProps[OptionType]] = js.native
+    var SelectContainer: ComponentType[ContainerProps[OptionType]]
     
-    var SingleValue: ComponentType[SingleValueProps[OptionType]] = js.native
+    var SingleValue: ComponentType[SingleValueProps[OptionType]]
     
-    var ValueContainer: ComponentType[ValueContainerProps[OptionType]] = js.native
+    var ValueContainer: ComponentType[ValueContainerProps[OptionType]]
   }
   object SelectComponents {
     
     @scala.inline
     def apply[OptionType /* <: OptionTypeBase */](
       Control: ComponentType[ControlProps[OptionType]],
-      CrossIcon: ComponentType[_],
-      DownChevron: ComponentType[_],
+      CrossIcon: ComponentType[js.Any],
+      DownChevron: ComponentType[js.Any],
       Group: ComponentType[GroupProps[OptionType]],
-      GroupHeading: ComponentType[_],
+      GroupHeading: ComponentType[js.Any],
       IndicatorsContainer: ComponentType[IndicatorContainerProps[OptionType]],
       Input: ComponentType[InputProps],
       LoadingMessage: ComponentType[NoticeProps[OptionType]],
@@ -291,9 +291,9 @@ object componentsMod {
       MenuList: ComponentType[MenuListComponentProps[OptionType]],
       MenuPortal: ComponentType[MenuPortalProps[OptionType]],
       MultiValue: ComponentType[MultiValueProps[OptionType]],
-      MultiValueContainer: ComponentType[_],
-      MultiValueLabel: ComponentType[_],
-      MultiValueRemove: ComponentType[_],
+      MultiValueContainer: ComponentType[js.Any],
+      MultiValueLabel: ComponentType[js.Any],
+      MultiValueRemove: ComponentType[js.Any],
       NoOptionsMessage: ComponentType[NoticeProps[OptionType]],
       Option: ComponentType[OptionProps[OptionType]],
       Placeholder: ComponentType[PlaceholderProps[OptionType]],
@@ -301,12 +301,12 @@ object componentsMod {
       SingleValue: ComponentType[SingleValueProps[OptionType]],
       ValueContainer: ComponentType[ValueContainerProps[OptionType]]
     ): SelectComponents[OptionType] = {
-      val __obj = js.Dynamic.literal(Control = Control.asInstanceOf[js.Any], CrossIcon = CrossIcon.asInstanceOf[js.Any], DownChevron = DownChevron.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], GroupHeading = GroupHeading.asInstanceOf[js.Any], IndicatorsContainer = IndicatorsContainer.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], LoadingMessage = LoadingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuList = MenuList.asInstanceOf[js.Any], MenuPortal = MenuPortal.asInstanceOf[js.Any], MultiValue = MultiValue.asInstanceOf[js.Any], MultiValueContainer = MultiValueContainer.asInstanceOf[js.Any], MultiValueLabel = MultiValueLabel.asInstanceOf[js.Any], MultiValueRemove = MultiValueRemove.asInstanceOf[js.Any], NoOptionsMessage = NoOptionsMessage.asInstanceOf[js.Any], Option = Option.asInstanceOf[js.Any], Placeholder = Placeholder.asInstanceOf[js.Any], SelectContainer = SelectContainer.asInstanceOf[js.Any], SingleValue = SingleValue.asInstanceOf[js.Any], ValueContainer = ValueContainer.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Control = Control.asInstanceOf[js.Any], CrossIcon = CrossIcon.asInstanceOf[js.Any], DownChevron = DownChevron.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], GroupHeading = GroupHeading.asInstanceOf[js.Any], IndicatorsContainer = IndicatorsContainer.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], LoadingMessage = LoadingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuList = MenuList.asInstanceOf[js.Any], MenuPortal = MenuPortal.asInstanceOf[js.Any], MultiValue = MultiValue.asInstanceOf[js.Any], MultiValueContainer = MultiValueContainer.asInstanceOf[js.Any], MultiValueLabel = MultiValueLabel.asInstanceOf[js.Any], MultiValueRemove = MultiValueRemove.asInstanceOf[js.Any], NoOptionsMessage = NoOptionsMessage.asInstanceOf[js.Any], Option = Option.asInstanceOf[js.Any], Placeholder = Placeholder.asInstanceOf[js.Any], SelectContainer = SelectContainer.asInstanceOf[js.Any], SingleValue = SingleValue.asInstanceOf[js.Any], ValueContainer = ValueContainer.asInstanceOf[js.Any], ClearIndicator = null, DropdownIndicator = null, IndicatorSeparator = null, LoadingIndicator = null)
       __obj.asInstanceOf[SelectComponents[OptionType]]
     }
     
     @scala.inline
-    implicit class SelectComponentsMutableBuilder[Self <: SelectComponents[_], OptionType /* <: OptionTypeBase */] (val x: Self with SelectComponents[OptionType]) extends AnyVal {
+    implicit class SelectComponentsMutableBuilder[Self <: SelectComponents[?], OptionType /* <: OptionTypeBase */] (val x: Self & SelectComponents[OptionType]) extends AnyVal {
       
       @scala.inline
       def setClearIndicator(value: IndicatorComponentType[OptionType]): Self = StObject.set(x, "ClearIndicator", value.asInstanceOf[js.Any])
@@ -318,10 +318,10 @@ object componentsMod {
       def setControl(value: ComponentType[ControlProps[OptionType]]): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCrossIcon(value: ComponentType[_]): Self = StObject.set(x, "CrossIcon", value.asInstanceOf[js.Any])
+      def setCrossIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "CrossIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDownChevron(value: ComponentType[_]): Self = StObject.set(x, "DownChevron", value.asInstanceOf[js.Any])
+      def setDownChevron(value: ComponentType[js.Any]): Self = StObject.set(x, "DownChevron", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDropdownIndicator(value: IndicatorComponentType[OptionType]): Self = StObject.set(x, "DropdownIndicator", value.asInstanceOf[js.Any])
@@ -333,7 +333,7 @@ object componentsMod {
       def setGroup(value: ComponentType[GroupProps[OptionType]]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupHeading(value: ComponentType[_]): Self = StObject.set(x, "GroupHeading", value.asInstanceOf[js.Any])
+      def setGroupHeading(value: ComponentType[js.Any]): Self = StObject.set(x, "GroupHeading", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIndicatorSeparator(value: IndicatorComponentType[OptionType]): Self = StObject.set(x, "IndicatorSeparator", value.asInstanceOf[js.Any])
@@ -369,13 +369,13 @@ object componentsMod {
       def setMultiValue(value: ComponentType[MultiValueProps[OptionType]]): Self = StObject.set(x, "MultiValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMultiValueContainer(value: ComponentType[_]): Self = StObject.set(x, "MultiValueContainer", value.asInstanceOf[js.Any])
+      def setMultiValueContainer(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueContainer", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMultiValueLabel(value: ComponentType[_]): Self = StObject.set(x, "MultiValueLabel", value.asInstanceOf[js.Any])
+      def setMultiValueLabel(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueLabel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMultiValueRemove(value: ComponentType[_]): Self = StObject.set(x, "MultiValueRemove", value.asInstanceOf[js.Any])
+      def setMultiValueRemove(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueRemove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNoOptionsMessage(value: ComponentType[NoticeProps[OptionType]]): Self = StObject.set(x, "NoOptionsMessage", value.asInstanceOf[js.Any])
@@ -398,58 +398,57 @@ object componentsMod {
   }
   
   /* Inlined std.Partial<react-select.react-select/src/components.SelectComponents<OptionType>> */
-  @js.native
   trait SelectComponentsConfig[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var ClearIndicator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.native
+    var ClearIndicator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.undefined
     
-    var Control: js.UndefOr[ComponentType[ControlProps[OptionType]]] = js.native
+    var Control: js.UndefOr[ComponentType[ControlProps[OptionType]]] = js.undefined
     
-    var CrossIcon: js.UndefOr[ComponentType[_]] = js.native
+    var CrossIcon: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var DownChevron: js.UndefOr[ComponentType[_]] = js.native
+    var DownChevron: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var DropdownIndicator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.native
+    var DropdownIndicator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.undefined
     
-    var Group: js.UndefOr[ComponentType[GroupProps[OptionType]]] = js.native
+    var Group: js.UndefOr[ComponentType[GroupProps[OptionType]]] = js.undefined
     
-    var GroupHeading: js.UndefOr[ComponentType[_]] = js.native
+    var GroupHeading: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var IndicatorSeparator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.native
+    var IndicatorSeparator: js.UndefOr[IndicatorComponentType[OptionType] | Null] = js.undefined
     
-    var IndicatorsContainer: js.UndefOr[ComponentType[IndicatorContainerProps[OptionType]]] = js.native
+    var IndicatorsContainer: js.UndefOr[ComponentType[IndicatorContainerProps[OptionType]]] = js.undefined
     
-    var Input: js.UndefOr[ComponentType[InputProps]] = js.native
+    var Input: js.UndefOr[ComponentType[InputProps]] = js.undefined
     
-    var LoadingIndicator: js.UndefOr[ComponentType[LoadingIconProps[OptionType]] | Null] = js.native
+    var LoadingIndicator: js.UndefOr[ComponentType[LoadingIconProps[OptionType]] | Null] = js.undefined
     
-    var LoadingMessage: js.UndefOr[ComponentType[NoticeProps[OptionType]]] = js.native
+    var LoadingMessage: js.UndefOr[ComponentType[NoticeProps[OptionType]]] = js.undefined
     
-    var Menu: js.UndefOr[ComponentType[MenuProps[OptionType]]] = js.native
+    var Menu: js.UndefOr[ComponentType[MenuProps[OptionType]]] = js.undefined
     
-    var MenuList: js.UndefOr[ComponentType[MenuListComponentProps[OptionType]]] = js.native
+    var MenuList: js.UndefOr[ComponentType[MenuListComponentProps[OptionType]]] = js.undefined
     
-    var MenuPortal: js.UndefOr[ComponentType[MenuPortalProps[OptionType]]] = js.native
+    var MenuPortal: js.UndefOr[ComponentType[MenuPortalProps[OptionType]]] = js.undefined
     
-    var MultiValue: js.UndefOr[ComponentType[MultiValueProps[OptionType]]] = js.native
+    var MultiValue: js.UndefOr[ComponentType[MultiValueProps[OptionType]]] = js.undefined
     
-    var MultiValueContainer: js.UndefOr[ComponentType[_]] = js.native
+    var MultiValueContainer: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var MultiValueLabel: js.UndefOr[ComponentType[_]] = js.native
+    var MultiValueLabel: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var MultiValueRemove: js.UndefOr[ComponentType[_]] = js.native
+    var MultiValueRemove: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var NoOptionsMessage: js.UndefOr[ComponentType[NoticeProps[OptionType]]] = js.native
+    var NoOptionsMessage: js.UndefOr[ComponentType[NoticeProps[OptionType]]] = js.undefined
     
-    var Option: js.UndefOr[ComponentType[OptionProps[OptionType]]] = js.native
+    var Option: js.UndefOr[ComponentType[OptionProps[OptionType]]] = js.undefined
     
-    var Placeholder: js.UndefOr[ComponentType[PlaceholderProps[OptionType]]] = js.native
+    var Placeholder: js.UndefOr[ComponentType[PlaceholderProps[OptionType]]] = js.undefined
     
-    var SelectContainer: js.UndefOr[ComponentType[ContainerProps[OptionType]]] = js.native
+    var SelectContainer: js.UndefOr[ComponentType[ContainerProps[OptionType]]] = js.undefined
     
-    var SingleValue: js.UndefOr[ComponentType[SingleValueProps[OptionType]]] = js.native
+    var SingleValue: js.UndefOr[ComponentType[SingleValueProps[OptionType]]] = js.undefined
     
-    var ValueContainer: js.UndefOr[ComponentType[ValueContainerProps[OptionType]]] = js.native
+    var ValueContainer: js.UndefOr[ComponentType[ValueContainerProps[OptionType]]] = js.undefined
   }
   object SelectComponentsConfig {
     
@@ -460,7 +459,7 @@ object componentsMod {
     }
     
     @scala.inline
-    implicit class SelectComponentsConfigMutableBuilder[Self <: SelectComponentsConfig[_], OptionType /* <: OptionTypeBase */] (val x: Self with SelectComponentsConfig[OptionType]) extends AnyVal {
+    implicit class SelectComponentsConfigMutableBuilder[Self <: SelectComponentsConfig[?], OptionType /* <: OptionTypeBase */] (val x: Self & SelectComponentsConfig[OptionType]) extends AnyVal {
       
       @scala.inline
       def setClearIndicator(value: IndicatorComponentType[OptionType]): Self = StObject.set(x, "ClearIndicator", value.asInstanceOf[js.Any])
@@ -478,13 +477,13 @@ object componentsMod {
       def setControlUndefined: Self = StObject.set(x, "Control", js.undefined)
       
       @scala.inline
-      def setCrossIcon(value: ComponentType[_]): Self = StObject.set(x, "CrossIcon", value.asInstanceOf[js.Any])
+      def setCrossIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "CrossIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrossIconUndefined: Self = StObject.set(x, "CrossIcon", js.undefined)
       
       @scala.inline
-      def setDownChevron(value: ComponentType[_]): Self = StObject.set(x, "DownChevron", value.asInstanceOf[js.Any])
+      def setDownChevron(value: ComponentType[js.Any]): Self = StObject.set(x, "DownChevron", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDownChevronUndefined: Self = StObject.set(x, "DownChevron", js.undefined)
@@ -502,7 +501,7 @@ object componentsMod {
       def setGroup(value: ComponentType[GroupProps[OptionType]]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupHeading(value: ComponentType[_]): Self = StObject.set(x, "GroupHeading", value.asInstanceOf[js.Any])
+      def setGroupHeading(value: ComponentType[js.Any]): Self = StObject.set(x, "GroupHeading", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupHeadingUndefined: Self = StObject.set(x, "GroupHeading", js.undefined)
@@ -568,19 +567,19 @@ object componentsMod {
       def setMultiValue(value: ComponentType[MultiValueProps[OptionType]]): Self = StObject.set(x, "MultiValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMultiValueContainer(value: ComponentType[_]): Self = StObject.set(x, "MultiValueContainer", value.asInstanceOf[js.Any])
+      def setMultiValueContainer(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueContainer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMultiValueContainerUndefined: Self = StObject.set(x, "MultiValueContainer", js.undefined)
       
       @scala.inline
-      def setMultiValueLabel(value: ComponentType[_]): Self = StObject.set(x, "MultiValueLabel", value.asInstanceOf[js.Any])
+      def setMultiValueLabel(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueLabel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMultiValueLabelUndefined: Self = StObject.set(x, "MultiValueLabel", js.undefined)
       
       @scala.inline
-      def setMultiValueRemove(value: ComponentType[_]): Self = StObject.set(x, "MultiValueRemove", value.asInstanceOf[js.Any])
+      def setMultiValueRemove(value: ComponentType[js.Any]): Self = StObject.set(x, "MultiValueRemove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMultiValueRemoveUndefined: Self = StObject.set(x, "MultiValueRemove", js.undefined)

@@ -2,55 +2,53 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for peer channel diagnostics.
   */
-@js.native
 trait SchemaPeerChannelDiagnostics extends StObject {
   
   /**
     * Number of bytes received.
     */
-  var bytesReceived: js.UndefOr[SchemaAggregateStats] = js.native
+  var bytesReceived: js.UndefOr[SchemaAggregateStats] = js.undefined
   
   /**
     * Number of bytes sent.
     */
-  var bytesSent: js.UndefOr[SchemaAggregateStats] = js.native
+  var bytesSent: js.UndefOr[SchemaAggregateStats] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#peerChannelDiagnostics.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Number of messages lost.
     */
-  var numMessagesLost: js.UndefOr[Double] = js.native
+  var numMessagesLost: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of messages received.
     */
-  var numMessagesReceived: js.UndefOr[Double] = js.native
+  var numMessagesReceived: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of messages sent.
     */
-  var numMessagesSent: js.UndefOr[Double] = js.native
+  var numMessagesSent: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of send failures.
     */
-  var numSendFailures: js.UndefOr[Double] = js.native
+  var numSendFailures: js.UndefOr[Double] = js.undefined
   
   /**
     * Roundtrip latency stats in milliseconds.
     */
-  var roundtripLatencyMillis: js.UndefOr[SchemaAggregateStats] = js.native
+  var roundtripLatencyMillis: js.UndefOr[SchemaAggregateStats] = js.undefined
 }
 object SchemaPeerChannelDiagnostics {
   

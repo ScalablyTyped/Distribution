@@ -8,7 +8,6 @@ import typings.lovefield.mod.schema.Column
 import typings.lovefield.mod.schema.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,7 +20,7 @@ trait Database extends StObject {
   
   def delete(): Delete = js.native
   
-  def export(): js.Promise[js.Object] = js.native
+  def `export`(): js.Promise[js.Object] = js.native
   
   def getSchema(): typings.lovefield.mod.schema.Database = js.native
   

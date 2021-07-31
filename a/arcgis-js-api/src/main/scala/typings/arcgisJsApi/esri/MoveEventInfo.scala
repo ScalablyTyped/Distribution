@@ -7,12 +7,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveEventInfo
-  extends Object
+  extends StObject
+     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -20,28 +19,28 @@ trait MoveEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
     */
-  var dx: Double = js.native
+  var dx: Double
   
   /**
     * Number of pixels moved on the y-axis from the last known position.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
     */
-  var dy: Double = js.native
+  var dy: Double
   
   /**
     * The instance of the graphic that is being moved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
     */
-  var mover: Graphic = js.native
+  var mover: Graphic
   
   /**
     * Returns information indicating the stage of the move operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
     */
-  var `type`: `move-start` | move | `move-stop` = js.native
+  var `type`: `move-start` | move | `move-stop`
 }
 object MoveEventInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLogRecordResponse extends StObject {
   
   /**
     * The requested log event, as a JSON string.
     */
-  var logRecord: js.UndefOr[LogRecord] = js.native
+  var logRecord: js.UndefOr[LogRecord] = js.undefined
 }
 object GetLogRecordResponse {
   

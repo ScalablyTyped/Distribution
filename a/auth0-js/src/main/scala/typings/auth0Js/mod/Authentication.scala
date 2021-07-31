@@ -3,7 +3,6 @@ package typings.auth0Js.mod
 import typings.auth0Js.anon.CountryCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Authentication")
@@ -59,25 +58,25 @@ class Authentication protected () extends StObject {
   /**
     * Makes a call to the `oauth/token` endpoint with `password-realm` grant type
     */
-  def login(options: DefaultLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def login(options: DefaultLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `oauth/token` endpoint with `password` grant type
     *
     * @param options: https://auth0.com/docs/api-auth/grant/password
     */
-  def loginWithDefaultDirectory(options: DefaultDirectoryLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithDefaultDirectory(options: DefaultDirectoryLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `/ro` endpoint
     * @deprecated `loginWithResourceOwner` will be soon deprecated, user `login` instead.
     */
-  def loginWithResourceOwner(options: ResourceOwnerLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithResourceOwner(options: ResourceOwnerLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `oauth/token` endpoint
     */
-  def oauthToken(options: js.Any, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def oauthToken(options: js.Any, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   var passwordless: PasswordlessAuthentication = js.native
   

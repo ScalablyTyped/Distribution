@@ -5,117 +5,115 @@ import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pivotConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datatable: js.UndefOr[js.Any] = js.native
+  var datatable: js.UndefOr[js.Any] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var defaultOperation: js.UndefOr[String] = js.native
+  var defaultOperation: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var externalProcessing: js.UndefOr[Boolean] = js.native
+  var externalProcessing: js.UndefOr[Boolean] = js.undefined
   
-  var fieldMap: js.UndefOr[js.Any] = js.native
+  var fieldMap: js.UndefOr[js.Any] = js.undefined
   
-  var filterLabelAlign: js.UndefOr[String] = js.native
+  var filterLabelAlign: js.UndefOr[String] = js.undefined
   
-  var filterLabelWidth: js.UndefOr[Double] = js.native
+  var filterLabelWidth: js.UndefOr[Double] = js.undefined
   
-  var filterMap: js.UndefOr[js.Any] = js.native
+  var filterMap: js.UndefOr[js.Any] = js.undefined
   
-  var filterMinWidth: js.UndefOr[Double] = js.native
+  var filterMinWidth: js.UndefOr[Double] = js.undefined
   
-  var filterPlaceholder: js.UndefOr[Boolean | String] = js.native
+  var filterPlaceholder: js.UndefOr[Boolean | String] = js.undefined
   
-  var filterWidth: js.UndefOr[Double] = js.native
+  var filterWidth: js.UndefOr[Double] = js.undefined
   
-  var footer: js.UndefOr[String | Boolean] = js.native
+  var footer: js.UndefOr[String | Boolean] = js.undefined
   
-  var format: js.UndefOr[WebixCallback] = js.native
+  var format: js.UndefOr[WebixCallback] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var headerTemplate: js.UndefOr[WebixCallback] = js.native
+  var headerTemplate: js.UndefOr[WebixCallback] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var max: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Boolean] = js.native
+  var min: js.UndefOr[Boolean] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var ping: js.UndefOr[WebixCallback] = js.native
+  var ping: js.UndefOr[WebixCallback] = js.undefined
   
-  var popup: js.UndefOr[js.Any] = js.native
+  var popup: js.UndefOr[js.Any] = js.undefined
   
-  var profile: js.UndefOr[Boolean] = js.native
+  var profile: js.UndefOr[Boolean] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var readonlyTitle: js.UndefOr[String] = js.native
+  var readonlyTitle: js.UndefOr[String] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var separateLabel: js.UndefOr[Boolean] = js.native
+  var separateLabel: js.UndefOr[Boolean] = js.undefined
   
-  var stableRowId: js.UndefOr[Boolean] = js.native
+  var stableRowId: js.UndefOr[Boolean] = js.undefined
   
-  var structure: js.UndefOr[js.Any] = js.native
+  var structure: js.UndefOr[js.Any] = js.undefined
   
-  var totalColumn: js.UndefOr[String | Boolean] = js.native
+  var totalColumn: js.UndefOr[String | Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var webWorker: js.UndefOr[String] = js.native
+  var webWorker: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var yScaleWidth: js.UndefOr[Double] = js.native
+  var yScaleWidth: js.UndefOr[Double] = js.undefined
 }
 object pivotConfig {
   
@@ -159,7 +157,7 @@ object pivotConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -246,7 +244,7 @@ object pivotConfig {
     def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def setFormat(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    def setFormat(value: WebixCallback): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -258,7 +256,7 @@ object pivotConfig {
     def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
     @scala.inline
-    def setHeaderTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
+    def setHeaderTemplate(value: WebixCallback): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
@@ -342,7 +340,7 @@ object pivotConfig {
     def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def setPing(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ping", js.Any.fromFunction1(value))
+    def setPing(value: WebixCallback): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
@@ -372,7 +370,7 @@ object pivotConfig {
     def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)

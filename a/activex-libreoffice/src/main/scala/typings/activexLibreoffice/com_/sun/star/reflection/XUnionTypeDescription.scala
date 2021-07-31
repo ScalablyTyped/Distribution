@@ -5,87 +5,87 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated, UNOIDL does not have a union concept.
   * @deprecated Deprecated
   */
-@js.native
-trait XUnionTypeDescription extends XTypeDescription {
+trait XUnionTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the default discriminant value.
     * @returns default discriminant value
     */
-  val DefaultDiscriminant: js.Any = js.native
+  val DefaultDiscriminant: js.Any
   
   /**
     * Returns the type of the default value.
     * @returns type of the default value
     */
-  val DefaultMemberType: XTypeDescription = js.native
+  val DefaultMemberType: XTypeDescription
   
   /**
     * Returns the (ordinal) discriminant type.
     * @returns type of the discriminant
     */
-  val DiscriminantType: XTypeDescription = js.native
+  val DiscriminantType: XTypeDescription
   
   /**
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  val Discriminants: SafeArray[_] = js.native
+  val Discriminants: SafeArray[js.Any]
   
   /**
     * Returns names of all members in order of IDL declaration.
     * @returns names of all members
     */
-  val MemberNames: SafeArray[String] = js.native
+  val MemberNames: SafeArray[String]
   
   /**
     * Returns types of all members in order of IDL declaration.
     * @returns types of all members
     */
-  val MemberTypes: SafeArray[XTypeDescription] = js.native
+  val MemberTypes: SafeArray[XTypeDescription]
   
   /**
     * Returns the default discriminant value.
     * @returns default discriminant value
     */
-  def getDefaultDiscriminant(): js.Any = js.native
+  def getDefaultDiscriminant(): js.Any
   
   /**
     * Returns the type of the default value.
     * @returns type of the default value
     */
-  def getDefaultMemberType(): XTypeDescription = js.native
+  def getDefaultMemberType(): XTypeDescription
   
   /**
     * Returns the (ordinal) discriminant type.
     * @returns type of the discriminant
     */
-  def getDiscriminantType(): XTypeDescription = js.native
+  def getDiscriminantType(): XTypeDescription
   
   /**
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  def getDiscriminants(): SafeArray[_] = js.native
+  def getDiscriminants(): SafeArray[js.Any]
   
   /**
     * Returns names of all members in order of IDL declaration.
     * @returns names of all members
     */
-  def getMemberNames(): SafeArray[String] = js.native
+  def getMemberNames(): SafeArray[String]
   
   /**
     * Returns types of all members in order of IDL declaration.
     * @returns types of all members
     */
-  def getMemberTypes(): SafeArray[XTypeDescription] = js.native
+  def getMemberTypes(): SafeArray[XTypeDescription]
 }
 object XUnionTypeDescription {
   
@@ -94,7 +94,7 @@ object XUnionTypeDescription {
     DefaultDiscriminant: js.Any,
     DefaultMemberType: XTypeDescription,
     DiscriminantType: XTypeDescription,
-    Discriminants: SafeArray[_],
+    Discriminants: SafeArray[js.Any],
     MemberNames: SafeArray[String],
     MemberTypes: SafeArray[XTypeDescription],
     Name: String,
@@ -103,7 +103,7 @@ object XUnionTypeDescription {
     getDefaultDiscriminant: () => js.Any,
     getDefaultMemberType: () => XTypeDescription,
     getDiscriminantType: () => XTypeDescription,
-    getDiscriminants: () => SafeArray[_],
+    getDiscriminants: () => SafeArray[js.Any],
     getMemberNames: () => SafeArray[String],
     getMemberTypes: () => SafeArray[XTypeDescription],
     getName: () => String,
@@ -128,7 +128,7 @@ object XUnionTypeDescription {
     def setDiscriminantType(value: XTypeDescription): Self = StObject.set(x, "DiscriminantType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscriminants(value: SafeArray[_]): Self = StObject.set(x, "Discriminants", value.asInstanceOf[js.Any])
+    def setDiscriminants(value: SafeArray[js.Any]): Self = StObject.set(x, "Discriminants", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetDefaultDiscriminant(value: () => js.Any): Self = StObject.set(x, "getDefaultDiscriminant", js.Any.fromFunction0(value))
@@ -140,7 +140,7 @@ object XUnionTypeDescription {
     def setGetDiscriminantType(value: () => XTypeDescription): Self = StObject.set(x, "getDiscriminantType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDiscriminants(value: () => SafeArray[_]): Self = StObject.set(x, "getDiscriminants", js.Any.fromFunction0(value))
+    def setGetDiscriminants(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDiscriminants", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))

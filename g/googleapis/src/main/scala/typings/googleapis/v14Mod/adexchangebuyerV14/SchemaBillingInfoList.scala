@@ -2,25 +2,23 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A billing info feed lists Billing Info the Ad Exchange buyer account has
   * access to. Each entry in the feed corresponds to a single billing info.
   */
-@js.native
 trait SchemaBillingInfoList extends StObject {
   
   /**
     * A list of billing info relevant for your account.
     */
-  var items: js.UndefOr[js.Array[SchemaBillingInfo]] = js.native
+  var items: js.UndefOr[js.Array[SchemaBillingInfo]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBillingInfoList {
   

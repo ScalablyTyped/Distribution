@@ -10,9 +10,9 @@ Unzip cross-platform streaming API
 | ------------------ | :-------------: |
 | Full name          | unzipper |
 | Keywords           | zip, unzip, zlib, uncompress, archive, stream, extract |
-| # releases         | 25 |
-| # dependents       | 455 |
-| # downloads        | 28946403 |
+| # releases         | 18 |
+| # dependents       | 542 |
+| # downloads        | 43330240 |
 | # stars            | 9 |
 
 ## Links

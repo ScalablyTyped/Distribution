@@ -2,19 +2,17 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFamily extends StObject {
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var fontStyle: String = js.native
+  var fontStyle: String
   
-  var fontWieght: String = js.native
+  var fontWieght: String
 }
 object FontFamily {
   

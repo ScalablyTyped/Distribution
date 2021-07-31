@@ -2,18 +2,16 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISequentialStream extends StObject {
   
   @JSName("MSXML2.ISequentialStream_typekey")
-  var MSXML2DotISequentialStream_typekey: ISequentialStream = js.native
+  var MSXML2DotISequentialStream_typekey: ISequentialStream
   
-  def RemoteRead(pv: Double, cb: Double, pcbRead: Double): Unit = js.native
+  def RemoteRead(pv: Double, cb: Double, pcbRead: Double): Unit
   
-  def RemoteWrite(pv: Double, cb: Double, pcbWritten: Double): Unit = js.native
+  def RemoteWrite(pv: Double, cb: Double, pcbWritten: Double): Unit
 }
 object ISequentialStream {
   

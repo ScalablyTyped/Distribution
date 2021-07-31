@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bloggerMod {
+  
+  @JSImport("googleapis/build/src/apis/blogger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -93,9 +96,12 @@ object bloggerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/blogger", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/blogger", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -139,16 +145,14 @@ object bloggerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/blogger", "blogger")
-  @js.native
-  def blogger(options: Options): Blogger = js.native
-  @JSImport("googleapis/build/src/apis/blogger", "blogger")
-  @js.native
-  def blogger(options: typings.googleapis.bloggerV3Mod.bloggerV3.Options): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
-  @JSImport("googleapis/build/src/apis/blogger", "blogger")
-  @js.native
-  def blogger_v2(version: v2): Blogger = js.native
-  @JSImport("googleapis/build/src/apis/blogger", "blogger")
-  @js.native
-  def blogger_v3(version: v3): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
+  @scala.inline
+  def blogger(options: Options): Blogger = ^.asInstanceOf[js.Dynamic].applyDynamic("blogger")(options.asInstanceOf[js.Any]).asInstanceOf[Blogger]
+  @scala.inline
+  def blogger(options: typings.googleapis.bloggerV3Mod.bloggerV3.Options): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = ^.asInstanceOf[js.Dynamic].applyDynamic("blogger")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bloggerV3Mod.bloggerV3.Blogger]
+  
+  @scala.inline
+  def blogger_v2(version: v2): Blogger = ^.asInstanceOf[js.Dynamic].applyDynamic("blogger")(version.asInstanceOf[js.Any]).asInstanceOf[Blogger]
+  
+  @scala.inline
+  def blogger_v3(version: v3): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = ^.asInstanceOf[js.Dynamic].applyDynamic("blogger")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bloggerV3Mod.bloggerV3.Blogger]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRepositoryPolicyRequest extends StObject {
   
   /**
     * If the policy you are attempting to set on a repository policy would prevent you from setting another policy in the future, you must force the SetRepositoryPolicy operation. This is intended to prevent accidental repository lock outs.
     */
-  var force: js.UndefOr[ForceFlag] = js.native
+  var force: js.UndefOr[ForceFlag] = js.undefined
   
   /**
     * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
     */
-  var policyText: RepositoryPolicyText = js.native
+  var policyText: RepositoryPolicyText
   
   /**
     * The AWS account ID associated with the registry that contains the repository. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to receive the policy.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object SetRepositoryPolicyRequest {
   

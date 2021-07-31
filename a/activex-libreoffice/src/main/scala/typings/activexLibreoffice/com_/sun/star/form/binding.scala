@@ -24,7 +24,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binding {
@@ -32,7 +31,8 @@ object binding {
   /** specifies the model of a form control which supports binding to an external value supplier. */
   @js.native
   trait BindableControlModel
-    extends FormControlModel
+    extends StObject
+       with FormControlModel
        with XBindableValue {
     
     /**
@@ -101,7 +101,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDataAwareControlModel
-    extends DataAwareControlModel
+    extends StObject
+       with DataAwareControlModel
        with XBindableValue {
     
     /**
@@ -160,7 +161,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseCheckBox
-    extends DatabaseCheckBox
+    extends StObject
+       with DatabaseCheckBox
        with XBindableValue {
     
     /**
@@ -218,7 +220,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseComboBox
-    extends DatabaseComboBox
+    extends StObject
+       with DatabaseComboBox
        with XBindableValue {
     
     /**
@@ -268,7 +271,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseDateField
-    extends DatabaseDateField
+    extends StObject
+       with DatabaseDateField
        with XBindableValue {
     
     /**
@@ -317,7 +321,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseFormattedField
-    extends DatabaseFormattedField
+    extends StObject
+       with DatabaseFormattedField
        with XBindableValue {
     
     /**
@@ -374,7 +379,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseListBox
-    extends DatabaseListBox
+    extends StObject
+       with DatabaseListBox
        with XBindableValue {
     
     /**
@@ -423,7 +429,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseNumericField
-    extends DatabaseNumericField
+    extends StObject
+       with DatabaseNumericField
        with XBindableValue {
     
     /**
@@ -480,7 +487,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseRadioButton
-    extends DatabaseRadioButton
+    extends StObject
+       with DatabaseRadioButton
        with XBindableValue {
     
     /**
@@ -538,7 +546,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseTextField
-    extends DatabaseTextField
+    extends StObject
+       with DatabaseTextField
        with XBindableValue {
     
     /**
@@ -588,7 +597,8 @@ object binding {
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableDataAwareControlModel because var conflicts: BoundField, ClassId, DataField, DefaultControl, Height, InputRequired, LabelControl, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait BindableDatabaseTimeField
-    extends DatabaseTimeField
+    extends StObject
+       with DatabaseTimeField
        with XBindableValue {
     
     /**
@@ -617,25 +627,26 @@ object binding {
     * @see XListEntrySource
     * @see XListEntryListener
     */
-  @js.native
-  trait ListEntryEvent extends EventObject {
+  trait ListEntryEvent
+    extends StObject
+       with EventObject {
     
     /** denotes the number of changed entries, in case a change of an entry **range** is being notified. */
-    var Count: Double = js.native
+    var Count: Double
     
     /**
       * denotes the changed entries
       *
       * The concrete semantics of the value depends on the concrete event being notified.
       */
-    var Entries: SafeArray[String] = js.native
+    var Entries: SafeArray[String]
     
     /**
       * denotes the position where a change occurred.
       *
       * The concrete semantics of the value depends on the concrete event being notified.
       */
-    var Position: Double = js.native
+    var Position: Double
   }
   object ListEntryEvent {
     
@@ -660,9 +671,9 @@ object binding {
   }
   
   /** defines a component which provides a list of string entries */
-  @js.native
   trait ListEntrySource
-    extends XListEntrySource
+    extends StObject
+       with XListEntrySource
        with XComponent
   object ListEntrySource {
     
@@ -692,9 +703,9 @@ object binding {
     *
     * Read/Write access to the value represented by this component is supported, as well as (optionally) active broadcasting of value changes
     */
-  @js.native
   trait ValueBinding
-    extends XPropertySet
+    extends StObject
+       with XPropertySet
        with XValueBinding
        with XModifyBroadcaster
        with XComponent {
@@ -708,7 +719,7 @@ object binding {
       * As long as this property is `TRUE` , the value binding should throw a {@link InvalidBindingStateException} when its {@link XValueBinding.setValue()}
       * method is invoked.
       */
-    var ReadOnly: Boolean = js.native
+    var ReadOnly: Boolean
     
     /**
       * determines the relevance of the value represented by the binding
@@ -721,7 +732,7 @@ object binding {
       * One possible reaction could be that user interface elements which are associated with the {@link XBindableValue} are disabled as long as {@link
       * Relevant} is `FALSE` .
       */
-    var Relevant: Boolean = js.native
+    var Relevant: Boolean
   }
   object ValueBinding {
     
@@ -770,14 +781,15 @@ object binding {
     * specifies support for being bound to an external value
     * @see XValueBinding
     */
-  @js.native
-  trait XBindableValue extends XInterface {
+  trait XBindableValue
+    extends StObject
+       with XInterface {
     
     /** retrieves the external instance which currently controls the value of the component */
-    var ValueBinding: XValueBinding = js.native
+    var ValueBinding: XValueBinding
     
     /** retrieves the external instance which currently controls the value of the component */
-    def getValueBinding(): XValueBinding = js.native
+    def getValueBinding(): XValueBinding
     
     /**
       * sets an external instance which controls the value of the component
@@ -786,7 +798,7 @@ object binding {
       * @param aBinding the new binding which is to be used by the component. May be `NULL` , in this case only the current binding is revoked.
       * @throws IncompatibleTypesException if the new binding (provided it's not `NULL` ) supports only types which are incompatible with the types of the bindab
       */
-    def setValueBinding(aBinding: XValueBinding): Unit = js.native
+    def setValueBinding(aBinding: XValueBinding): Unit
   }
   object XBindableValue {
     
@@ -818,8 +830,9 @@ object binding {
   }
   
   /** specifies a listener for changes in a string entry list */
-  @js.native
-  trait XListEntryListener extends XEventListener {
+  trait XListEntryListener
+    extends StObject
+       with XEventListener {
     
     /**
       * notifies the listener that all entries of the list have changed.
@@ -827,25 +840,25 @@ object binding {
       * The listener should retrieve the complete new list by calling the {@link XListEntrySource.getAllListEntries()} method of the event source (which is
       * denoted by {@link com.sun.star.lang.EventObject.Source} ).
       */
-    def allEntriesChanged(Source: EventObject): Unit = js.native
+    def allEntriesChanged(Source: EventObject): Unit
     
     /**
       * notifies the listener that a single entry in the list has change
       * @param Source is the event describing the change. The {@link ListEntryEvent.Position} member denotes the position of the changed entry, the first (and o
       */
-    def entryChanged(Source: ListEntryEvent): Unit = js.native
+    def entryChanged(Source: ListEntryEvent): Unit
     
     /**
       * notifies the listener that a range of entries has been inserted into the list
       * @param Source is the event describing the change. The {@link ListEntryEvent.Position} member denotes the position of the first inserted entry, the {@lin
       */
-    def entryRangeInserted(Source: ListEntryEvent): Unit = js.native
+    def entryRangeInserted(Source: ListEntryEvent): Unit
     
     /**
       * notifies the listener that a range of entries has been removed from the list
       * @param Source is the event describing the change. The {@link ListEntryEvent.Position} member denotes the position of the first removed entry, the {@link
       */
-    def entryRangeRemoved(Source: ListEntryEvent): Unit = js.native
+    def entryRangeRemoved(Source: ListEntryEvent): Unit
   }
   object XListEntryListener {
     
@@ -882,14 +895,15 @@ object binding {
   }
   
   /** specifies support for indirect manipulation of a string list */
-  @js.native
-  trait XListEntrySink extends XInterface {
+  trait XListEntrySink
+    extends StObject
+       with XInterface {
     
     /** retrieves the current source for the list entries of the component. */
-    var ListEntrySource: XListEntrySource = js.native
+    var ListEntrySource: XListEntrySource
     
     /** retrieves the current source for the list entries of the component. */
-    def getListEntrySource(): XListEntrySource = js.native
+    def getListEntrySource(): XListEntrySource
     
     /**
       * sets the new source for the list entries of the component
@@ -897,7 +911,7 @@ object binding {
       * The list represented by this component will be cleared, and initially filled with the entries from the new list source.
       * @param Source the new source for the list entries. May be `NULL` , in this case, the current source is revoked.
       */
-    def setListEntrySource(Source: XListEntrySource): Unit = js.native
+    def setListEntrySource(Source: XListEntrySource): Unit
   }
   object XListEntrySink {
     
@@ -935,39 +949,40 @@ object binding {
     * changes in the list.
     * @see XListEntrySink
     */
-  @js.native
-  trait XListEntrySource extends XInterface {
+  trait XListEntrySource
+    extends StObject
+       with XInterface {
     
     /** provides access to the entirety of all list entries */
-    val AllListEntries: SafeArray[String] = js.native
+    val AllListEntries: SafeArray[String]
     
     /** retrieves the number of entries in the list */
-    val ListEntryCount: Double = js.native
+    val ListEntryCount: Double
     
     /**
       * adds a listener which will be notified about changes in the list reflected by the component.
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def addListEntryListener(Listener: XListEntryListener): Unit = js.native
+    def addListEntryListener(Listener: XListEntryListener): Unit
     
     /** provides access to the entirety of all list entries */
-    def getAllListEntries(): SafeArray[String] = js.native
+    def getAllListEntries(): SafeArray[String]
     
     /**
       * provides access to a single list entry
       * @see getListEntryCount
       * @throws com::sun::star::lang::IndexOutOfBoundsException if the given position does not denote a valid index in the list
       */
-    def getListEntry(Position: Double): String = js.native
+    def getListEntry(Position: Double): String
     
     /** retrieves the number of entries in the list */
-    def getListEntryCount(): Double = js.native
+    def getListEntryCount(): Double
     
     /**
       * revokes the given listener from the list of components which will be notified about changes in the entry list.
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def removeListEntryListener(Listener: XListEntryListener): Unit = js.native
+    def removeListEntryListener(Listener: XListEntryListener): Unit
   }
   object XListEntrySource {
     
@@ -1015,20 +1030,21 @@ object binding {
   }
   
   /** specifies a binding to a value which can be read and written. */
-  @js.native
-  trait XValueBinding extends XInterface {
+  trait XValueBinding
+    extends StObject
+       with XInterface {
     
     /**
       * determines the types which are supported by this binding for value exchange
       * @see supportsType
       */
-    val SupportedValueTypes: SafeArray[`type`] = js.native
+    val SupportedValueTypes: SafeArray[`type`]
     
     /**
       * determines the types which are supported by this binding for value exchange
       * @see supportsType
       */
-    def getSupportedValueTypes(): SafeArray[`type`] = js.native
+    def getSupportedValueTypes(): SafeArray[`type`]
     
     /**
       * retrieves the current value
@@ -1036,7 +1052,7 @@ object binding {
       * @see supportsType
       * @throws IncompatibleTypesException if the requested value type is not supported by the binding
       */
-    def getValue(aType: `type`): js.Any = js.native
+    def getValue(aType: `type`): js.Any
     
     /**
       * sets the current value
@@ -1047,7 +1063,7 @@ object binding {
       * @throws InvalidBindingStateException if the value currently cannot be changed, since the binding is not fully operational. Possible reasons for this incl
       * @throws com::sun::star::lang::NoSupportException if the binding in general does not support write access to its binding
       */
-    def setValue(aValue: js.Any): Unit = js.native
+    def setValue(aValue: js.Any): Unit
     
     /**
       * determines whether a given type is supported by this binding for value exchange
@@ -1055,7 +1071,7 @@ object binding {
       * Calling this method is equal to calling {@link getSupportedValueTypes()} , and looking up the given type in the resulting type sequence.
       * @see getSupportedValueTypes
       */
-    def supportsType(aType: `type`): Boolean = js.native
+    def supportsType(aType: `type`): Boolean
   }
   object XValueBinding {
     

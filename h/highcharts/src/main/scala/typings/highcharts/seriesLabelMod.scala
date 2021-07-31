@@ -46,14 +46,16 @@ import typings.std.Event
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object seriesLabelMod {
   
-  @JSImport("highcharts/modules/series-label", JSImport.Default)
+  @JSImport("highcharts/modules/series-label", JSImport.Namespace)
   @js.native
-  def default(highcharts: TypeofHighchartsAddEvent): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object Highcharts {
     
@@ -407,27 +409,13 @@ object seriesLabelMod {
         */
       def this(container: HTMLDOMElement, width: Double, height: Double) = this()
       def this(container: HTMLDOMElement, width: Double, height: Double, style: CSSObject) = this()
-      def this(
-        container: HTMLDOMElement,
-        width: Double,
-        height: Double,
-        style: js.UndefOr[scala.Nothing],
-        forExport: Boolean
-      ) = this()
+      def this(container: HTMLDOMElement, width: Double, height: Double, style: Unit, forExport: Boolean) = this()
       def this(container: HTMLDOMElement, width: Double, height: Double, style: CSSObject, forExport: Boolean) = this()
       def this(
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: js.UndefOr[scala.Nothing],
-        forExport: js.UndefOr[scala.Nothing],
-        allowHTML: Boolean
-      ) = this()
-      def this(
-        container: HTMLDOMElement,
-        width: Double,
-        height: Double,
-        style: js.UndefOr[scala.Nothing],
+        style: Unit,
         forExport: Boolean,
         allowHTML: Boolean
       ) = this()
@@ -435,8 +423,8 @@ object seriesLabelMod {
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: CSSObject,
-        forExport: js.UndefOr[scala.Nothing],
+        style: Unit,
+        forExport: Unit,
         allowHTML: Boolean
       ) = this()
       def this(
@@ -451,34 +439,15 @@ object seriesLabelMod {
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: js.UndefOr[scala.Nothing],
-        forExport: js.UndefOr[scala.Nothing],
-        allowHTML: js.UndefOr[scala.Nothing],
-        styledMode: Boolean
+        style: CSSObject,
+        forExport: Unit,
+        allowHTML: Boolean
       ) = this()
       def this(
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: js.UndefOr[scala.Nothing],
-        forExport: js.UndefOr[scala.Nothing],
-        allowHTML: Boolean,
-        styledMode: Boolean
-      ) = this()
-      def this(
-        container: HTMLDOMElement,
-        width: Double,
-        height: Double,
-        style: js.UndefOr[scala.Nothing],
-        forExport: Boolean,
-        allowHTML: js.UndefOr[scala.Nothing],
-        styledMode: Boolean
-      ) = this()
-      def this(
-        container: HTMLDOMElement,
-        width: Double,
-        height: Double,
-        style: js.UndefOr[scala.Nothing],
+        style: Unit,
         forExport: Boolean,
         allowHTML: Boolean,
         styledMode: Boolean
@@ -487,17 +456,17 @@ object seriesLabelMod {
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: CSSObject,
-        forExport: js.UndefOr[scala.Nothing],
-        allowHTML: js.UndefOr[scala.Nothing],
+        style: Unit,
+        forExport: Boolean,
+        allowHTML: Unit,
         styledMode: Boolean
       ) = this()
       def this(
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: CSSObject,
-        forExport: js.UndefOr[scala.Nothing],
+        style: Unit,
+        forExport: Unit,
         allowHTML: Boolean,
         styledMode: Boolean
       ) = this()
@@ -505,9 +474,9 @@ object seriesLabelMod {
         container: HTMLDOMElement,
         width: Double,
         height: Double,
-        style: CSSObject,
-        forExport: Boolean,
-        allowHTML: js.UndefOr[scala.Nothing],
+        style: Unit,
+        forExport: Unit,
+        allowHTML: Unit,
         styledMode: Boolean
       ) = this()
       def this(
@@ -517,6 +486,33 @@ object seriesLabelMod {
         style: CSSObject,
         forExport: Boolean,
         allowHTML: Boolean,
+        styledMode: Boolean
+      ) = this()
+      def this(
+        container: HTMLDOMElement,
+        width: Double,
+        height: Double,
+        style: CSSObject,
+        forExport: Boolean,
+        allowHTML: Unit,
+        styledMode: Boolean
+      ) = this()
+      def this(
+        container: HTMLDOMElement,
+        width: Double,
+        height: Double,
+        style: CSSObject,
+        forExport: Unit,
+        allowHTML: Boolean,
+        styledMode: Boolean
+      ) = this()
+      def this(
+        container: HTMLDOMElement,
+        width: Double,
+        height: Double,
+        style: CSSObject,
+        forExport: Unit,
+        allowHTML: Unit,
         styledMode: Boolean
       ) = this()
     }
@@ -646,34 +642,8 @@ object seriesLabelMod {
         */
       def this(axis: typings.highcharts.mod.Axis, pos: Double) = this()
       def this(axis: typings.highcharts.mod.Axis, pos: Double, `type`: String) = this()
-      def this(
-        axis: typings.highcharts.mod.Axis,
-        pos: Double,
-        `type`: js.UndefOr[scala.Nothing],
-        noLabel: Boolean
-      ) = this()
       def this(axis: typings.highcharts.mod.Axis, pos: Double, `type`: String, noLabel: Boolean) = this()
-      def this(
-        axis: typings.highcharts.mod.Axis,
-        pos: Double,
-        `type`: js.UndefOr[scala.Nothing],
-        noLabel: js.UndefOr[scala.Nothing],
-        parameters: js.Object
-      ) = this()
-      def this(
-        axis: typings.highcharts.mod.Axis,
-        pos: Double,
-        `type`: js.UndefOr[scala.Nothing],
-        noLabel: Boolean,
-        parameters: js.Object
-      ) = this()
-      def this(
-        axis: typings.highcharts.mod.Axis,
-        pos: Double,
-        `type`: String,
-        noLabel: js.UndefOr[scala.Nothing],
-        parameters: js.Object
-      ) = this()
+      def this(axis: typings.highcharts.mod.Axis, pos: Double, `type`: Unit, noLabel: Boolean) = this()
       def this(
         axis: typings.highcharts.mod.Axis,
         pos: Double,
@@ -681,6 +651,21 @@ object seriesLabelMod {
         noLabel: Boolean,
         parameters: js.Object
       ) = this()
+      def this(
+        axis: typings.highcharts.mod.Axis,
+        pos: Double,
+        `type`: String,
+        noLabel: Unit,
+        parameters: js.Object
+      ) = this()
+      def this(
+        axis: typings.highcharts.mod.Axis,
+        pos: Double,
+        `type`: Unit,
+        noLabel: Boolean,
+        parameters: js.Object
+      ) = this()
+      def this(axis: typings.highcharts.mod.Axis, pos: Double, `type`: Unit, noLabel: Unit, parameters: js.Object) = this()
     }
     @JSImport("highcharts/modules/series-label", "Highcharts.Tick")
     @js.native
@@ -750,165 +735,114 @@ object seriesLabelMod {
     @scala.inline
     def Tooltip_=(x: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: js.Function): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.addEvent")
-    @js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
+    @scala.inline
+    def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: Class[T], `type`: String, fn: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: Class[T], `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.animObject")
-    @js.native
-    def animObject(): AnimationOptionsObject = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animObject")
-    @js.native
-    def animObject(animation: Boolean): AnimationOptionsObject = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animObject")
-    @js.native
-    def animObject(animation: AnimationOptionsObject): AnimationOptionsObject = js.native
+    @scala.inline
+    def animObject(): AnimationOptionsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("animObject")().asInstanceOf[AnimationOptionsObject]
+    @scala.inline
+    def animObject(animation: Boolean): AnimationOptionsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[AnimationOptionsObject]
+    @scala.inline
+    def animObject(animation: AnimationOptionsObject): AnimationOptionsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[AnimationOptionsObject]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: HTMLDOMElement, params: CSSObject): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: HTMLDOMElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: HTMLDOMElement, params: SVGAttributes): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: HTMLDOMElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.animate")
-    @js.native
-    def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
+    @scala.inline
+    def animate(el: HTMLDOMElement, params: CSSObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: HTMLDOMElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: HTMLDOMElement, params: SVGAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: HTMLDOMElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.arrayMax")
-    @js.native
-    def arrayMax(data: js.Array[_]): Double = js.native
+    @scala.inline
+    def arrayMax(data: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMax")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.arrayMin")
-    @js.native
-    def arrayMin(data: js.Array[_]): Double = js.native
+    @scala.inline
+    def arrayMin(data: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMin")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.attr")
-    @js.native
-    def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
+    @scala.inline
+    def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    @scala.inline
+    def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(options: Options): Chart_ = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(renderTo: String, options: Options): Chart_ = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(renderTo: HTMLDOMElement, options: Options): Chart_ = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.chart")
-    @js.native
-    def chart(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
+    @scala.inline
+    def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
+    @scala.inline
+    def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
+    @scala.inline
+    def chart(renderTo: String, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
+    @scala.inline
+    def chart(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
+    @scala.inline
+    def chart(renderTo: HTMLDOMElement, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
+    @scala.inline
+    def chart(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
     
     @JSImport("highcharts/modules/series-label", "Highcharts.charts")
     @js.native
@@ -916,130 +850,59 @@ object seriesLabelMod {
     @scala.inline
     def charts_=(x: js.Array[js.UndefOr[Chart_]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charts")(x.asInstanceOf[js.Any])
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.clearTimeout")
-    @js.native
-    def clearTimeout(id: Double): Unit = js.native
+    @scala.inline
+    def clearTimeout(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.color")
-    @js.native
-    def color(input: ColorType): Color_ = js.native
+    @scala.inline
+    def color(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.correctFloat")
-    @js.native
-    def correctFloat(num: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.correctFloat")
-    @js.native
-    def correctFloat(num: Double, prec: Double): Double = js.native
+    @scala.inline
+    def correctFloat(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def correctFloat(num: Double, prec: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any], prec.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: js.UndefOr[scala.Nothing], parent: HTMLDOMElement): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.createElement")
-    @js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
+    @scala.inline
+    def createElement(tag: String): HTMLDOMElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any]).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: CSSObject): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
+    @scala.inline
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[HTMLDOMElement]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.css")
-    @js.native
-    def css(el: HTMLDOMElement, styles: CSSObject): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.css")
-    @js.native
-    def css(el: SVGDOMElement, styles: CSSObject): Unit = js.native
+    @scala.inline
+    def css(el: HTMLDOMElement, styles: CSSObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def css(el: SVGDOMElement, styles: CSSObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.dateFormat")
-    @js.native
-    def dateFormat(format: String, timestamp: Double): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.dateFormat")
-    @js.native
-    def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
+    @scala.inline
+    def dateFormat(format: String, timestamp: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], capitalize.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("highcharts/modules/series-label", "Highcharts.dateFormats")
     @js.native
@@ -1053,508 +916,349 @@ object seriesLabelMod {
     @scala.inline
     def defaultOptions_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.defined")
-    @js.native
-    def defined(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def defined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.destroyObjectProperties")
-    @js.native
-    def destroyObjectProperties(obj: js.Any): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.destroyObjectProperties")
-    @js.native
-    def destroyObjectProperties(obj: js.Any, except: js.Any): Unit = js.native
+    @scala.inline
+    def destroyObjectProperties(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def destroyObjectProperties(obj: js.Any, except: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.discardElement")
-    @js.native
-    def discardElement(element: HTMLDOMElement): Unit = js.native
+    @scala.inline
+    def discardElement(element: HTMLDOMElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("discardElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.each")
-    @js.native
-    def each(arr: js.Array[_], fn: js.Function): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.each")
-    @js.native
-    def each(arr: js.Array[_], fn: js.Function, ctx: js.Any): Unit = js.native
+    @scala.inline
+    def each(arr: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.erase")
-    @js.native
-    def erase(arr: js.Array[_], item: js.Any): Unit = js.native
+    @scala.inline
+    def erase(arr: js.Array[js.Any], item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(
-      code: String,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: Boolean): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(
-      code: Double,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: Boolean): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.error")
-    @js.native
-    def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+    @scala.inline
+    def error(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Boolean, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Unit, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: String, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Boolean, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Unit, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def error(code: Double, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.extend")
-    @js.native
-    def extend[T](a: T, b: js.Object): T = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.extend")
-    @js.native
-    def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
+    @scala.inline
+    def extend[T](a: T, b: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def extend[T](a: Unit, b: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.extendClass")
-    @js.native
-    def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
+    @scala.inline
+    def extendClass[T](parent: Class[T], members: Dictionary[js.Any]): Class[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendClass")(parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Class[T]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.find")
-    @js.native
-    def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
+    @scala.inline
+    def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any], defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def fireEvent[T](
       el: T,
       `type`: String,
-      eventArguments: js.UndefOr[scala.Nothing],
+      eventArguments: Dictionary[js.Any],
       defaultFunction: EventCallbackFunction[T]
-    ): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.fireEvent")
-    @js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.format")
-    @js.native
-    def format(str: String, ctx: Record[String, _]): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.format")
-    @js.native
-    def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
+    @scala.inline
+    def format(str: String, ctx: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def format(str: String, ctx: Record[String, js.Any], chart: Chart_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.getDeferredAnimation")
-    @js.native
-    def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.getDeferredAnimation")
-    @js.native
-    def getDeferredAnimation(chart: Chart_, animation: Boolean, series: typings.highcharts.mod.Series): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.getDeferredAnimation")
-    @js.native
-    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.getDeferredAnimation")
-    @js.native
-    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject, series: typings.highcharts.mod.Series): Double = js.native
+    @scala.inline
+    def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def getDeferredAnimation(chart: Chart_, animation: Boolean, series: typings.highcharts.mod.Series): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject, series: typings.highcharts.mod.Series): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.getMagnitude")
-    @js.native
-    def getMagnitude(num: Double): Double = js.native
+    @scala.inline
+    def getMagnitude(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMagnitude")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.getOptions")
-    @js.native
-    def getOptions(): Options = js.native
+    @scala.inline
+    def getOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[Options]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.getStyle")
-    @js.native
-    def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.getStyle")
-    @js.native
-    def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = js.native
+    @scala.inline
+    def getStyle(el: HTMLDOMElement, prop: String): Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Double | String]
+    @scala.inline
+    def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], toInt.asInstanceOf[js.Any])).asInstanceOf[Double | String]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.grep")
-    @js.native
-    def grep(arr: js.Array[_], callback: js.Function): js.Array[_] = js.native
+    @scala.inline
+    def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("grep")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.inArray")
-    @js.native
-    def inArray(item: js.Any, arr: js.Array[_]): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.inArray")
-    @js.native
-    def inArray(item: js.Any, arr: js.Array[_], fromIndex: Double): Double = js.native
+    @scala.inline
+    def inArray(item: js.Any, arr: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isArray")
-    @js.native
-    def isArray(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isClass")
-    @js.native
-    def isClass(): Boolean = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.isClass")
-    @js.native
-    def isClass(obj: js.Object): Boolean = js.native
+    @scala.inline
+    def isClass(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClass")().asInstanceOf[Boolean]
+    @scala.inline
+    def isClass(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isDOMElement")
-    @js.native
-    def isDOMElement(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isDOMElement(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isNumber")
-    @js.native
-    def isNumber(n: js.Any): Boolean = js.native
+    @scala.inline
+    def isNumber(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isObject")
-    @js.native
-    def isObject(obj: js.Any): Boolean = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.isObject")
-    @js.native
-    def isObject(obj: js.Any, strict: Boolean): Boolean = js.native
+    @scala.inline
+    def isObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isObject(obj: js.Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.isString")
-    @js.native
-    def isString(s: js.Any): Boolean = js.native
+    @scala.inline
+    def isString(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.keys")
-    @js.native
-    def keys(obj: js.Any): js.Array[String] = js.native
+    @scala.inline
+    def keys(obj: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.map")
-    @js.native
-    def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
+    @scala.inline
+    def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.merge")
-    @js.native
-    def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.merge")
-    @js.native
-    def merge[T](a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.merge")
-    @js.native
-    def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.merge")
-    @js.native
-    def merge[T](extend: Boolean, a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+    @scala.inline
+    def merge[T](a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
+    @scala.inline
+    def normalizeTickInterval(interval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double, allowDecimals: Boolean): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Double,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Unit, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
-    ): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double, allowDecimals: Boolean): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.normalizeTickInterval")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
+      multiples: Unit,
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Unit, hasTickAmount: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean, hasTickAmount: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Unit, hasTickAmount: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.numberFormat")
-    @js.native
-    def numberFormat(number: Double, decimals: Double): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.numberFormat")
-    @js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.numberFormat")
-    @js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.numberFormat")
-    @js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
+    @scala.inline
+    def numberFormat(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def numberFormat(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.objectEach")
-    @js.native
-    def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.objectEach")
-    @js.native
-    def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
+    @scala.inline
+    def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.offset")
-    @js.native
-    def offset(el: Element): OffsetObject = js.native
+    @scala.inline
+    def offset(el: Element): OffsetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(el.asInstanceOf[js.Any]).asInstanceOf[OffsetObject]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.pad")
-    @js.native
-    def pad(number: Double): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.pad")
-    @js.native
-    def pad(number: Double, length: js.UndefOr[scala.Nothing], padder: String): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.pad")
-    @js.native
-    def pad(number: Double, length: Double): String = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.pad")
-    @js.native
-    def pad(number: Double, length: Double, padder: String): String = js.native
+    @scala.inline
+    def pad(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def pad(number: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad(number: Double, length: Double, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad(number: Double, length: Unit, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.pick")
-    @js.native
-    def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
+    @scala.inline
+    def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.reduce")
-    @js.native
-    def reduce(arr: js.Array[_], fn: js.Function, initialValue: js.Any): js.Any = js.native
+    @scala.inline
+    def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.relativeLength")
-    @js.native
-    def relativeLength(value: RelativeSize, base: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.relativeLength")
-    @js.native
-    def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
+    @scala.inline
+    def relativeLength(value: RelativeSize, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: T): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: T, `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: T, `type`: String): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: Class[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: Class[T], `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.removeEvent")
-    @js.native
-    def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+    @scala.inline
+    def removeEvent[T](el: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: T, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: T, `type`: Unit, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: Class[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: Class[T], `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeEvent[T](el: Class[T], `type`: Unit, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[_]): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
+    @scala.inline
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
-    ): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
+      options: Dictionary[js.Any],
+      props: Unit,
+      pointProps: Dictionary[js.Any]
+    ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any], props: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
-    ): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
+      options: Dictionary[js.Any],
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
+    ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
+    def seriesType(`type`: String, parent: String, options: SeriesOptionsType): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
-    ): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): typings.highcharts.mod.Series = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.seriesType")
-    @js.native
+      props: Unit,
+      pointProps: Dictionary[js.Any]
+    ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
+    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    @scala.inline
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
-    ): typings.highcharts.mod.Series = js.native
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
+    ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.setAnimation")
-    @js.native
-    def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.setAnimation")
-    @js.native
-    def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.setAnimation")
-    @js.native
-    def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
+    @scala.inline
+    def setAnimation(animation: Boolean, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setAnimation(animation: Unit, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.setOptions")
-    @js.native
-    def setOptions(options: Options): Options = js.native
+    @scala.inline
+    def setOptions(options: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Options]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.some")
-    @js.native
-    def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
+    @scala.inline
+    def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.splat")
-    @js.native
-    def splat(obj: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def splat(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.stableSort")
-    @js.native
-    def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
+    @scala.inline
+    def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], sortFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.stop")
-    @js.native
-    def stop(el: typings.highcharts.mod.SVGElement): Unit = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.stop")
-    @js.native
-    def stop(el: typings.highcharts.mod.SVGElement, prop: String): Unit = js.native
+    @scala.inline
+    def stop(el: typings.highcharts.mod.SVGElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def stop(el: typings.highcharts.mod.SVGElement, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.syncTimeout")
-    @js.native
-    def syncTimeout(fn: js.Function, delay: Double): Double = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.syncTimeout")
-    @js.native
-    def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
+    @scala.inline
+    def syncTimeout(fn: js.Function, delay: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("highcharts/modules/series-label", "Highcharts.theme")
     @js.native
@@ -1568,25 +1272,20 @@ object seriesLabelMod {
     @scala.inline
     def time_=(x: Time_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.uniqueKey")
-    @js.native
-    def uniqueKey(): String = js.native
+    @scala.inline
+    def uniqueKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueKey")().asInstanceOf[String]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.useSerialIds")
-    @js.native
-    def useSerialIds(): js.UndefOr[Boolean] = js.native
-    @JSImport("highcharts/modules/series-label", "Highcharts.useSerialIds")
-    @js.native
-    def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
+    @scala.inline
+    def useSerialIds(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")().asInstanceOf[js.UndefOr[Boolean]]
+    @scala.inline
+    def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
     
-    @JSImport("highcharts/modules/series-label", "Highcharts.wrap")
-    @js.native
-    def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
+    @scala.inline
+    def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("highcharts/modules/series-label", "factory")
-  @js.native
-  def factory(highcharts: TypeofHighchartsAddEvent): Unit = js.native
+  @scala.inline
+  def factory(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* augmented module */
   object highchartsAugmentingMod

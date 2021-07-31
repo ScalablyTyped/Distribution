@@ -13,35 +13,33 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
   /**
     * Location in the source code where scope ends
     */
-  var endLocation: js.UndefOr[Location] = js.native
+  var endLocation: js.UndefOr[Location] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Object representing the scope. For `global` and `with` scopes it represents the actual
     * object; for the rest of the scopes, it is artificial transient object enumerating scope
     * variables as its properties.
     */
-  var `object`: RemoteObject = js.native
+  var `object`: RemoteObject
   
   /**
     * Location in the source code where scope starts
     */
-  var startLocation: js.UndefOr[Location] = js.native
+  var startLocation: js.UndefOr[Location] = js.undefined
   
   /**
     * Scope type. (ScopeType enum)
     */
-  var `type`: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack` = js.native
+  var `type`: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
 }
 object Scope {
   

@@ -34,7 +34,6 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridApiMod {
@@ -56,8 +55,8 @@ object gridApiMod {
     
     def addGlobalListener(listener: js.Function): Unit = js.native
     
-    def addItems(items: js.Array[_]): Unit = js.native
-    def addItems(items: js.Array[_], skipRefresh: Boolean): Unit = js.native
+    def addItems(items: js.Array[js.Any]): Unit = js.native
+    def addItems(items: js.Array[js.Any], skipRefresh: Boolean): Unit = js.native
     
     def addRangeSelection(rangeSelection: AddRangeSelectionParams): Unit = js.native
     
@@ -253,7 +252,7 @@ object gridApiMod {
     
     def getSelectedNodesById(): NumberDictionary[RowNode] = js.native
     
-    def getSelectedRows(): js.Array[_] = js.native
+    def getSelectedRows(): js.Array[js.Any] = js.native
     
     def getSortModel(): js.Array[ColId] = js.native
     
@@ -284,8 +283,8 @@ object gridApiMod {
     
     /* private */ def init(): js.Any = js.native
     
-    def insertItemsAtIndex(index: Double, items: js.Array[_]): Unit = js.native
-    def insertItemsAtIndex(index: Double, items: js.Array[_], skipRefresh: Boolean): Unit = js.native
+    def insertItemsAtIndex(index: Double, items: js.Array[js.Any]): Unit = js.native
+    def insertItemsAtIndex(index: Double, items: js.Array[js.Any], skipRefresh: Boolean): Unit = js.native
     
     def isAdvancedFilterPresent(): Boolean = js.native
     
@@ -412,9 +411,9 @@ object gridApiMod {
     def selectIndex(index: js.Any, tryMulti: js.Any, suppressEvents: js.Any): Unit = js.native
     
     def selectNode(node: RowNode): Unit = js.native
-    def selectNode(node: RowNode, tryMulti: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Unit = js.native
     def selectNode(node: RowNode, tryMulti: Boolean): Unit = js.native
     def selectNode(node: RowNode, tryMulti: Boolean, suppressEvents: Boolean): Unit = js.native
+    def selectNode(node: RowNode, tryMulti: Unit, suppressEvents: Boolean): Unit = js.native
     
     var selectionController: js.Any = js.native
     
@@ -429,11 +428,11 @@ object gridApiMod {
     
     def setFilterModel(model: js.Any): Unit = js.native
     
-    def setFloatingBottomRowData(rows: js.Array[_]): Unit = js.native
+    def setFloatingBottomRowData(rows: js.Array[js.Any]): Unit = js.native
     
     def setFloatingFiltersHeight(headerHeight: Double): Unit = js.native
     
-    def setFloatingTopRowData(rows: js.Array[_]): Unit = js.native
+    def setFloatingTopRowData(rows: js.Array[js.Any]): Unit = js.native
     
     def setFocusedCell(rowIndex: Double, colKey: String): Unit = js.native
     def setFocusedCell(rowIndex: Double, colKey: String, floating: String): Unit = js.native
@@ -455,9 +454,9 @@ object gridApiMod {
     def setInfiniteRowCount(rowCount: Double): Unit = js.native
     def setInfiniteRowCount(rowCount: Double, maxRowFound: Boolean): Unit = js.native
     
-    def setPinnedBottomRowData(rows: js.Array[_]): Unit = js.native
+    def setPinnedBottomRowData(rows: js.Array[js.Any]): Unit = js.native
     
-    def setPinnedTopRowData(rows: js.Array[_]): Unit = js.native
+    def setPinnedTopRowData(rows: js.Array[js.Any]): Unit = js.native
     
     def setPivotGroupHeaderHeight(headerHeight: Double): Unit = js.native
     
@@ -467,7 +466,7 @@ object gridApiMod {
     
     def setQuickFilter(newFilter: js.Any): Unit = js.native
     
-    def setRowData(rowData: js.Array[_]): Unit = js.native
+    def setRowData(rowData: js.Array[js.Any]): Unit = js.native
     
     def setServerSideDatasource(datasource: IServerSideDatasource): Unit = js.native
     
@@ -524,14 +523,13 @@ object gridApiMod {
     var valueService: js.Any = js.native
   }
   
-  @js.native
   trait DetailGridInfo extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var id: String = js.native
+    var id: String
   }
   object DetailGridInfo {
     
@@ -561,12 +559,11 @@ object gridApiMod {
   
   type GetCellRendererInstancesParams = GetCellsParams
   
-  @js.native
   trait GetCellsParams extends StObject {
     
-    var columns: js.UndefOr[js.Array[String | Column]] = js.native
+    var columns: js.UndefOr[js.Array[String | Column]] = js.undefined
     
-    var rowNodes: js.UndefOr[js.Array[RowNode]] = js.native
+    var rowNodes: js.UndefOr[js.Array[RowNode]] = js.undefined
   }
   object GetCellsParams {
     
@@ -599,10 +596,9 @@ object gridApiMod {
     }
   }
   
-  @js.native
   trait RedrawRowsParams extends StObject {
     
-    var rowNodes: js.UndefOr[js.Array[RowNode]] = js.native
+    var rowNodes: js.UndefOr[js.Array[RowNode]] = js.undefined
   }
   object RedrawRowsParams {
     
@@ -626,10 +622,11 @@ object gridApiMod {
     }
   }
   
-  @js.native
-  trait RefreshCellsParams extends GetCellsParams {
+  trait RefreshCellsParams
+    extends StObject
+       with GetCellsParams {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object RefreshCellsParams {
     
@@ -650,18 +647,17 @@ object gridApiMod {
     }
   }
   
-  @js.native
   trait StartEditingCellParams extends StObject {
     
-    var charPress: js.UndefOr[String] = js.native
+    var charPress: js.UndefOr[String] = js.undefined
     
-    var colKey: String | Column = js.native
+    var colKey: String | Column
     
-    var keyPress: js.UndefOr[Double] = js.native
+    var keyPress: js.UndefOr[Double] = js.undefined
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var rowPinned: js.UndefOr[String] = js.native
+    var rowPinned: js.UndefOr[String] = js.undefined
   }
   object StartEditingCellParams {
     

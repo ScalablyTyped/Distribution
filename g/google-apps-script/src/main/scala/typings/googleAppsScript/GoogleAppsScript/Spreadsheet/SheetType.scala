@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait SheetType extends StObject
 object SheetType extends StObject {
   
   @js.native
-  sealed trait GRID extends SheetType
+  sealed trait GRID
+    extends StObject
+       with SheetType
   
   @js.native
-  sealed trait OBJECT extends SheetType
+  sealed trait OBJECT
+    extends StObject
+       with SheetType
 }

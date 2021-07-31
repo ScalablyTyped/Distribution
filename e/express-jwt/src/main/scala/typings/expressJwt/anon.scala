@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.expressUnless.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,15 +14,14 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def apply(options: js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Boolean]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(options: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     

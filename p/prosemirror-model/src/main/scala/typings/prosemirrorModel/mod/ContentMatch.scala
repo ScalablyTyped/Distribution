@@ -3,18 +3,17 @@ package typings.prosemirrorModel.mod
 import typings.prosemirrorModel.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "ContentMatch")
 @js.native
-class ContentMatch[S /* <: Schema[_, _] */] () extends StObject {
+class ContentMatch[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
   
   /**
     * Get the first matching node type at this match position that can
     * be generated.
     */
-  var defaultType: js.UndefOr[NodeType[_]] = js.native
+  var defaultType: js.UndefOr[NodeType[js.Any]] = js.native
   
   /**
     * Get the _n_th outgoing edge from this node in the finite automaton
@@ -37,9 +36,9 @@ class ContentMatch[S /* <: Schema[_, _] */] () extends StObject {
     * content expression.
     */
   def fillBefore(after: Fragment[S]): js.UndefOr[Fragment[S] | Null] = js.native
-  def fillBefore(after: Fragment[S], toEnd: js.UndefOr[scala.Nothing], startIndex: Double): js.UndefOr[Fragment[S] | Null] = js.native
   def fillBefore(after: Fragment[S], toEnd: Boolean): js.UndefOr[Fragment[S] | Null] = js.native
   def fillBefore(after: Fragment[S], toEnd: Boolean, startIndex: Double): js.UndefOr[Fragment[S] | Null] = js.native
+  def fillBefore(after: Fragment[S], toEnd: Unit, startIndex: Double): js.UndefOr[Fragment[S] | Null] = js.native
   
   /**
     * Find a set of wrapping node types that would allow a node of the
@@ -54,9 +53,9 @@ class ContentMatch[S /* <: Schema[_, _] */] () extends StObject {
     * successful.
     */
   def matchFragment(frag: Fragment[S]): js.UndefOr[ContentMatch[S] | Null] = js.native
-  def matchFragment(frag: Fragment[S], start: js.UndefOr[scala.Nothing], end: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   def matchFragment(frag: Fragment[S], start: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   def matchFragment(frag: Fragment[S], start: Double, end: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
+  def matchFragment(frag: Fragment[S], start: Unit, end: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   
   /**
     * Match a node type and marks, returning a match after that node

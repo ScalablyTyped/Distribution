@@ -2,86 +2,84 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentRun extends StObject {
   
   /**
     * The ARN of the assessment run.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The ARN of the assessment template that is associated with the assessment run.
     */
-  var assessmentTemplateArn: Arn = js.native
+  var assessmentTemplateArn: Arn
   
   /**
     * The assessment run completion time that corresponds to the rules packages evaluation completion time or failure.
     */
-  var completedAt: js.UndefOr[Timestamp] = js.native
+  var completedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time when StartAssessmentRun was called.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * A Boolean value (true or false) that specifies whether the process of collecting data from the agents is completed.
     */
-  var dataCollected: Bool = js.native
+  var dataCollected: Bool
   
   /**
     * The duration of the assessment run.
     */
-  var durationInSeconds: AssessmentRunDuration = js.native
+  var durationInSeconds: AssessmentRunDuration
   
   /**
     * Provides a total count of generated findings per severity.
     */
-  var findingCounts: AssessmentRunFindingCounts = js.native
+  var findingCounts: AssessmentRunFindingCounts
   
   /**
     * The auto-generated name for the assessment run.
     */
-  var name: AssessmentRunName = js.native
+  var name: AssessmentRunName
   
   /**
     * A list of notifications for the event subscriptions. A notification about a particular generated finding is added to this list only once.
     */
-  var notifications: AssessmentRunNotificationList = js.native
+  var notifications: AssessmentRunNotificationList
   
   /**
     * The rules packages selected for the assessment run.
     */
-  var rulesPackageArns: AssessmentRulesPackageArnList = js.native
+  var rulesPackageArns: AssessmentRulesPackageArnList
   
   /**
     * The time when StartAssessmentRun was called.
     */
-  var startedAt: js.UndefOr[Timestamp] = js.native
+  var startedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state of the assessment run.
     */
-  var state: AssessmentRunState = js.native
+  var state: AssessmentRunState
   
   /**
     * The last time when the assessment run's state changed.
     */
-  var stateChangedAt: Timestamp = js.native
+  var stateChangedAt: Timestamp
   
   /**
     * A list of the assessment run state changes.
     */
-  var stateChanges: AssessmentRunStateChangeList = js.native
+  var stateChanges: AssessmentRunStateChangeList
   
   /**
     * The user-defined attributes that are assigned to every generated finding.
     */
-  var userAttributesForFindings: UserAttributeList = js.native
+  var userAttributesForFindings: UserAttributeList
 }
 object AssessmentRun {
   

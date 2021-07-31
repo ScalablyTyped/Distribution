@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a collection of the HTTP headers associated with content on an HTTP request or response. */
@@ -56,7 +55,7 @@ trait HttpContentHeaderCollection extends StObject {
     * Retrieves an iterator to the first item in the HttpContentHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpContentHeaderCollection .
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
   
   /**
     * Returns an immutable view of the HttpContentHeaderCollection .

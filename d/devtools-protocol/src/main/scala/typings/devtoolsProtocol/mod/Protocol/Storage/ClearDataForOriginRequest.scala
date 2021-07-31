@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearDataForOriginRequest extends StObject {
   
   /**
     * Security origin.
     */
-  var origin: String = js.native
+  var origin: String
   
   /**
     * Comma separated list of StorageType to clear.
     */
-  var storageTypes: String = js.native
+  var storageTypes: String
 }
 object ClearDataForOriginRequest {
   

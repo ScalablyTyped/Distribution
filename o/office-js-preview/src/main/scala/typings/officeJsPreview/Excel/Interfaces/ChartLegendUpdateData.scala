@@ -10,11 +10,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Right
 import typings.officeJsPreview.officeJsPreviewStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`. */
-@js.native
 trait ChartLegendUpdateData extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartLegendFormatUpdateData] = js.native
+  var format: js.UndefOr[ChartLegendFormatUpdateData] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var overlay: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var position: js.UndefOr[ChartLegendPosition | Invalid | Top | Bottom | Left | Right | Corner | Custom] = js.native
+  var position: js.UndefOr[ChartLegendPosition | Invalid | Top | Bottom | Left | Right | Corner | Custom] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showShadow: js.UndefOr[Boolean] = js.native
+  var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait ChartLegendUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartLegendUpdateData {
   

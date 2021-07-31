@@ -2,38 +2,36 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueChange extends StObject {
   
-  val AllocationMethod: XlAllocationMethod = js.native
+  val AllocationMethod: XlAllocationMethod
   
-  val AllocationValue: XlAllocationValue = js.native
+  val AllocationValue: XlAllocationValue
   
-  val AllocationWeightExpression: String = js.native
+  val AllocationWeightExpression: String
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.ValueChange_typekey")
-  var ExcelDotValueChange_typekey: ValueChange = js.native
+  var ExcelDotValueChange_typekey: ValueChange
   
-  val Order: Double = js.native
+  val Order: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PivotCell: typings.activexExcel.Excel.PivotCell = js.native
+  val PivotCell: typings.activexExcel.Excel.PivotCell
   
-  val Tuple: String = js.native
+  val Tuple: String
   
-  val Value: Double = js.native
+  val Value: Double
   
-  val VisibleInPivotTable: Boolean = js.native
+  val VisibleInPivotTable: Boolean
 }
 object ValueChange {
   

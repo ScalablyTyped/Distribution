@@ -4,58 +4,79 @@ import typings.asn1js.mod.OctetString
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object passwordRecipientinfoMod {
   
   @JSImport("pkijs/src/PasswordRecipientinfo", JSImport.Default)
   @js.native
-  class default () extends PasswordRecipientinfo {
+  class default ()
+    extends StObject
+       with PasswordRecipientinfo {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    var encryptedKey: OctetString = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    
+    /* CompleteClass */
+    var password: ArrayBuffer = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var version: Double = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/PasswordRecipientinfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/PasswordRecipientinfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/PasswordRecipientinfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/PasswordRecipientinfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/PasswordRecipientinfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait PasswordRecipientinfo extends StObject {
     
-    var encryptedKey: OctetString = js.native
+    var encryptedKey: OctetString
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var keyDerivationAlgorithm: js.UndefOr[typings.pkijs.algorithmIdentifierMod.default] = js.native
+    var keyDerivationAlgorithm: js.UndefOr[typings.pkijs.algorithmIdentifierMod.default] = js.undefined
     
-    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default
     
-    var password: ArrayBuffer = js.native
+    var password: ArrayBuffer
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var version: Double = js.native
+    var version: Double
   }
   object PasswordRecipientinfo {
     

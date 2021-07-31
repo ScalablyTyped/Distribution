@@ -2,41 +2,39 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceInstance extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the device instance.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The ARN of the device.
     */
-  var deviceArn: js.UndefOr[AmazonResourceName] = js.native
+  var deviceArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * A object that contains information about the instance profile.
     */
-  var instanceProfile: js.UndefOr[InstanceProfile] = js.native
+  var instanceProfile: js.UndefOr[InstanceProfile] = js.undefined
   
   /**
     * An array of strings that describe the device instance.
     */
-  var labels: js.UndefOr[InstanceLabels] = js.native
+  var labels: js.UndefOr[InstanceLabels] = js.undefined
   
   /**
     * The status of the device instance. Valid values are listed here.
     */
-  var status: js.UndefOr[InstanceStatus] = js.native
+  var status: js.UndefOr[InstanceStatus] = js.undefined
   
   /**
     * Unique device identifier for the device instance.
     */
-  var udid: js.UndefOr[String] = js.native
+  var udid: js.UndefOr[String] = js.undefined
 }
 object DeviceInstance {
   

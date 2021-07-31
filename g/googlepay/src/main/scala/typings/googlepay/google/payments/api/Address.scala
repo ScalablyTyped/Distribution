@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of a user's address.
   */
-@js.native
 trait Address extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Address extends StObject {
     *
     * @default ""
     */
-  var address1: js.UndefOr[String] = js.native
+  var address1: js.UndefOr[String] = js.undefined
   
   /**
     * The second line of the address.
@@ -29,7 +27,7 @@ trait Address extends StObject {
     *
     * @default ""
     */
-  var address2: js.UndefOr[String] = js.native
+  var address2: js.UndefOr[String] = js.undefined
   
   /**
     * The third line of the address.
@@ -39,27 +37,27 @@ trait Address extends StObject {
     *
     * @default ""
     */
-  var address3: js.UndefOr[String] = js.native
+  var address3: js.UndefOr[String] = js.undefined
   
   /**
     * The administrative area (e.g. state or province).
     */
-  var administrativeArea: String = js.native
+  var administrativeArea: String
   
   /**
     * The two-letter ISO-3166 country code.
     */
-  var countryCode: String = js.native
+  var countryCode: String
   
   /**
     * The locality (e.g. city or town).
     */
-  var locality: String = js.native
+  var locality: String
   
   /**
     * Name of the recipient at this address.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number.
@@ -67,7 +65,7 @@ trait Address extends StObject {
     * This field will only be present if the caller requested that a phone
     * number be returned.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code (also known in some places as ZIP code).
@@ -75,7 +73,7 @@ trait Address extends StObject {
     * Note: some regions do not have postal codes. In those cases
     * this field will be set to an empty string.
     */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /**
     * The sorting code.
@@ -83,7 +81,7 @@ trait Address extends StObject {
     * Note: some regions do not have sorting codes. In those cases
     * this field will be set to an empty string.
     */
-  var sortingCode: js.UndefOr[String] = js.native
+  var sortingCode: js.UndefOr[String] = js.undefined
 }
 object Address {
   

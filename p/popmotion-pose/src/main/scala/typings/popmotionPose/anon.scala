@@ -8,167 +8,129 @@ import typings.popmotionPose.popmotionPoseStrings.backOut
 import typings.popmotionPose.popmotionPoseStrings.circIn
 import typings.popmotionPose.popmotionPoseStrings.circInOut
 import typings.popmotionPose.popmotionPoseStrings.circOut
-import typings.popmotionPose.popmotionPoseStrings.decay
 import typings.popmotionPose.popmotionPoseStrings.easeIn
 import typings.popmotionPose.popmotionPoseStrings.easeInOut
 import typings.popmotionPose.popmotionPoseStrings.easeOut
-import typings.popmotionPose.popmotionPoseStrings.keyframes
 import typings.popmotionPose.popmotionPoseStrings.linear
-import typings.popmotionPose.popmotionPoseStrings.physics
-import typings.popmotionPose.popmotionPoseStrings.spring
 import typings.popmotionPose.popmotionPoseStrings.tween
 import typings.popmotionPose.typesMod.CubicBezierArgs
 import typings.stylefire.typesMod.Styler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `0` extends StObject {
-    
-    var `type`: keyframes = js.native
-  }
-  object `0` {
-    
-    @scala.inline
-    def apply(`type`: keyframes): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`]
-    }
-    
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setType(value: keyframes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
-  trait `1` extends StObject {
-    
-    var `type`: physics = js.native
-  }
-  object `1` {
-    
-    @scala.inline
-    def apply(`type`: physics): `1` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`1`]
-    }
-    
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setType(value: physics): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
-  trait `2` extends StObject {
-    
-    var `type`: spring = js.native
-  }
-  object `2` {
-    
-    @scala.inline
-    def apply(`type`: spring): `2` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`2`]
-    }
-    
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setType(value: spring): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
-  trait `3` extends StObject {
-    
-    var `type`: tween = js.native
-  }
-  object `3` {
-    
-    @scala.inline
-    def apply(`type`: tween): `3` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`3`]
-    }
-    
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setType(value: tween): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
   trait Anticipate extends StObject {
     
-    def anticipate(v: Double): Double = js.native
+    def anticipate(v: Double): Double
     @JSName("anticipate")
-    var anticipate_Original: Easing = js.native
+    var anticipate_Original: Easing
     
-    def backIn(v: Double): Double = js.native
+    def backIn(v: Double): Double
     
-    def backInOut(v: Double): Double = js.native
+    def backInOut(v: Double): Double
     @JSName("backInOut")
-    var backInOut_Original: Easing = js.native
+    var backInOut_Original: Easing
     
     @JSName("backIn")
-    var backIn_Original: Easing = js.native
+    var backIn_Original: Easing
     
-    def backOut(v: Double): Double = js.native
+    def backOut(v: Double): Double
     @JSName("backOut")
-    var backOut_Original: Easing = js.native
+    var backOut_Original: Easing
     
-    def circIn(v: Double): Double = js.native
+    def circIn(v: Double): Double
     
-    def circInOut(v: Double): Double = js.native
+    def circInOut(v: Double): Double
     @JSName("circInOut")
-    var circInOut_Original: Easing = js.native
+    var circInOut_Original: Easing
     
     @JSName("circIn")
-    var circIn_Original: Easing = js.native
+    var circIn_Original: Easing
     
-    def circOut(v: Double): Double = js.native
+    def circOut(v: Double): Double
     @JSName("circOut")
-    var circOut_Original: Easing = js.native
+    var circOut_Original: Easing
     
-    def easeIn(v: Double): Double = js.native
+    def easeIn(v: Double): Double
     
-    def easeInOut(v: Double): Double = js.native
+    def easeInOut(v: Double): Double
     @JSName("easeInOut")
-    var easeInOut_Original: Easing = js.native
+    var easeInOut_Original: Easing
     
     @JSName("easeIn")
-    var easeIn_Original: Easing = js.native
+    var easeIn_Original: Easing
     
-    def easeOut(v: Double): Double = js.native
+    def easeOut(v: Double): Double
     @JSName("easeOut")
-    var easeOut_Original: Easing = js.native
+    var easeOut_Original: Easing
     
-    def linear(v: Double): Double = js.native
+    def linear(v: Double): Double
     @JSName("linear")
-    var linear_Original: Easing = js.native
+    var linear_Original: Easing
+  }
+  object Anticipate {
+    
+    @scala.inline
+    def apply(
+      anticipate: /* v */ Double => Double,
+      backIn: /* v */ Double => Double,
+      backInOut: /* v */ Double => Double,
+      backOut: /* v */ Double => Double,
+      circIn: /* v */ Double => Double,
+      circInOut: /* v */ Double => Double,
+      circOut: /* v */ Double => Double,
+      easeIn: /* v */ Double => Double,
+      easeInOut: /* v */ Double => Double,
+      easeOut: /* v */ Double => Double,
+      linear: /* v */ Double => Double
+    ): Anticipate = {
+      val __obj = js.Dynamic.literal(anticipate = js.Any.fromFunction1(anticipate), backIn = js.Any.fromFunction1(backIn), backInOut = js.Any.fromFunction1(backInOut), backOut = js.Any.fromFunction1(backOut), circIn = js.Any.fromFunction1(circIn), circInOut = js.Any.fromFunction1(circInOut), circOut = js.Any.fromFunction1(circOut), easeIn = js.Any.fromFunction1(easeIn), easeInOut = js.Any.fromFunction1(easeInOut), easeOut = js.Any.fromFunction1(easeOut), linear = js.Any.fromFunction1(linear))
+      __obj.asInstanceOf[Anticipate]
+    }
+    
+    @scala.inline
+    implicit class AnticipateMutableBuilder[Self <: Anticipate] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAnticipate(value: /* v */ Double => Double): Self = StObject.set(x, "anticipate", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setBackIn(value: /* v */ Double => Double): Self = StObject.set(x, "backIn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setBackInOut(value: /* v */ Double => Double): Self = StObject.set(x, "backInOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setBackOut(value: /* v */ Double => Double): Self = StObject.set(x, "backOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCircIn(value: /* v */ Double => Double): Self = StObject.set(x, "circIn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCircInOut(value: /* v */ Double => Double): Self = StObject.set(x, "circInOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCircOut(value: /* v */ Double => Double): Self = StObject.set(x, "circOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEaseIn(value: /* v */ Double => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEaseInOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEaseOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLinear(value: /* v */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Ease extends StObject {
     
-    var ease: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TweenProps * / any['ease'] */ js.Any) | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs = js.native
+    var ease: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TweenProps * / any['ease'] */ js.Any) | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs
   }
   object Ease {
     
@@ -190,10 +152,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ElementStyler extends StObject {
     
-    var elementStyler: Styler = js.native
+    var elementStyler: Styler
   }
   object ElementStyler {
     
@@ -211,17 +172,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: decay = js.native
+    var `type`: tween
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: decay): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("tween")
       __obj.asInstanceOf[Type]
     }
     
@@ -229,7 +189,7 @@ object anon {
     implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setType(value: decay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: tween): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

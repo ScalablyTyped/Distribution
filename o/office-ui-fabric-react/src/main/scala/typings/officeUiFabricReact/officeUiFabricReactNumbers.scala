@@ -5,27 +5,30 @@ import typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModif
 import typings.officeUiFabricReact.listTypesMod.ScrollToMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `0`
-    extends DirectionalHint
+    extends StObject
+       with DirectionalHint
        with ScrollToMode
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
-    extends DirectionalHint
+    extends StObject
+       with DirectionalHint
        with ScrollToMode
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `10` extends DirectionalHint
+  sealed trait `10`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
   
@@ -75,7 +78,9 @@ object officeUiFabricReactNumbers {
   def `109`: `109` = 109.asInstanceOf[`109`]
   
   @js.native
-  sealed trait `11` extends DirectionalHint
+  sealed trait `11`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `11`: `11` = 11.asInstanceOf[`11`]
   
@@ -130,7 +135,9 @@ object officeUiFabricReactNumbers {
   def `119`: `119` = 119.asInstanceOf[`119`]
   
   @js.native
-  sealed trait `12` extends DirectionalHint
+  sealed trait `12`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   
@@ -155,7 +162,9 @@ object officeUiFabricReactNumbers {
   def `123`: `123` = 123.asInstanceOf[`123`]
   
   @js.native
-  sealed trait `13` extends DirectionalHint
+  sealed trait `13`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   
@@ -170,17 +179,23 @@ object officeUiFabricReactNumbers {
   def `145`: `145` = 145.asInstanceOf[`145`]
   
   @js.native
-  sealed trait `16` extends KeytipTransitionModifier
+  sealed trait `16`
+    extends StObject
+       with KeytipTransitionModifier
   @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
-  sealed trait `17` extends KeytipTransitionModifier
+  sealed trait `17`
+    extends StObject
+       with KeytipTransitionModifier
   @scala.inline
   def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
-  sealed trait `18` extends KeytipTransitionModifier
+  sealed trait `18`
+    extends StObject
+       with KeytipTransitionModifier
   @scala.inline
   def `18`: `18` = 18.asInstanceOf[`18`]
   
@@ -226,7 +241,8 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `2`
-    extends DirectionalHint
+    extends StObject
+       with DirectionalHint
        with ScrollToMode
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
@@ -263,7 +279,8 @@ object officeUiFabricReactNumbers {
   
   @js.native
   sealed trait `3`
-    extends DirectionalHint
+    extends StObject
+       with DirectionalHint
        with ScrollToMode
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
@@ -309,7 +326,9 @@ object officeUiFabricReactNumbers {
   def `39`: `39` = 39.asInstanceOf[`39`]
   
   @js.native
-  sealed trait `4` extends DirectionalHint
+  sealed trait `4`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   
@@ -339,7 +358,9 @@ object officeUiFabricReactNumbers {
   def `49`: `49` = 49.asInstanceOf[`49`]
   
   @js.native
-  sealed trait `5` extends DirectionalHint
+  sealed trait `5`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
   
@@ -384,7 +405,9 @@ object officeUiFabricReactNumbers {
   def `57`: `57` = 57.asInstanceOf[`57`]
   
   @js.native
-  sealed trait `6` extends DirectionalHint
+  sealed trait `6`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
   
@@ -414,7 +437,9 @@ object officeUiFabricReactNumbers {
   def `69`: `69` = 69.asInstanceOf[`69`]
   
   @js.native
-  sealed trait `7` extends DirectionalHint
+  sealed trait `7`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
   
@@ -469,7 +494,9 @@ object officeUiFabricReactNumbers {
   def `79`: `79` = 79.asInstanceOf[`79`]
   
   @js.native
-  sealed trait `8` extends DirectionalHint
+  sealed trait `8`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   
@@ -524,7 +551,9 @@ object officeUiFabricReactNumbers {
   def `89`: `89` = 89.asInstanceOf[`89`]
   
   @js.native
-  sealed trait `9` extends DirectionalHint
+  sealed trait `9`
+    extends StObject
+       with DirectionalHint
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
   
@@ -534,7 +563,9 @@ object officeUiFabricReactNumbers {
   def `90`: `90` = 90.asInstanceOf[`90`]
   
   @js.native
-  sealed trait `91` extends KeytipTransitionModifier
+  sealed trait `91`
+    extends StObject
+       with KeytipTransitionModifier
   @scala.inline
   def `91`: `91` = 91.asInstanceOf[`91`]
   

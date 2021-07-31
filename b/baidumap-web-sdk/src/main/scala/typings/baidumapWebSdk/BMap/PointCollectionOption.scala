@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointCollectionOption extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var shape: js.UndefOr[ShapeType] = js.native
+  var shape: js.UndefOr[ShapeType] = js.undefined
   
-  var size: js.UndefOr[SizeType] = js.native
+  var size: js.UndefOr[SizeType] = js.undefined
 }
 object PointCollectionOption {
   

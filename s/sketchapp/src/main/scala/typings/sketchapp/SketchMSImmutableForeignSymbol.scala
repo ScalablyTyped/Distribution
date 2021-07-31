@@ -3,36 +3,33 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.MSImmutableForeignSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSImmutableForeignSymbol extends StObject {
   
-  var _class: MSImmutableForeignSymbol = js.native
+  var _class: MSImmutableForeignSymbol
   
-  var libraryID: String = js.native
+  var libraryID: String
   
-  var originalMaster: SketchMSSymbolMasterLayer = js.native
+  var originalMaster: SketchMSSymbolMasterLayer
   
-  var sourceLibraryName: String = js.native
+  var sourceLibraryName: String
   
-  var symbolMaster: SketchMSSymbolMasterLayer = js.native
+  var symbolMaster: SketchMSSymbolMasterLayer
   
-  var symbolPrivate: Boolean = js.native
+  var symbolPrivate: Boolean
 }
 object SketchMSImmutableForeignSymbol {
   
   @scala.inline
   def apply(
-    _class: MSImmutableForeignSymbol,
     libraryID: String,
     originalMaster: SketchMSSymbolMasterLayer,
     sourceLibraryName: String,
     symbolMaster: SketchMSSymbolMasterLayer,
     symbolPrivate: Boolean
   ): SketchMSImmutableForeignSymbol = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], libraryID = libraryID.asInstanceOf[js.Any], originalMaster = originalMaster.asInstanceOf[js.Any], sourceLibraryName = sourceLibraryName.asInstanceOf[js.Any], symbolMaster = symbolMaster.asInstanceOf[js.Any], symbolPrivate = symbolPrivate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "MSImmutableForeignSymbol", libraryID = libraryID.asInstanceOf[js.Any], originalMaster = originalMaster.asInstanceOf[js.Any], sourceLibraryName = sourceLibraryName.asInstanceOf[js.Any], symbolMaster = symbolMaster.asInstanceOf[js.Any], symbolPrivate = symbolPrivate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSImmutableForeignSymbol]
   }
   

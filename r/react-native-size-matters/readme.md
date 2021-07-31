@@ -11,8 +11,8 @@ A React-Native utility belt for scaling the size your apps UI across different s
 | Full name          | react-native-size-matters |
 | Keywords           | javascript, react-native, scaling |
 | # releases         | 16 |
-| # dependents       | 24 |
-| # downloads        | 353955 |
+| # dependents       | 29 |
+| # downloads        | 493610 |
 | # stars            | 0 |
 
 ## Links

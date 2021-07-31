@@ -13,34 +13,32 @@ import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaTypings.encodeMod.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContinuousAxisChannelDef[MD /* <: GenericCompositeMarkDef[M] with (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] extends StObject {
+trait ContinuousAxisChannelDef[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] extends StObject {
   
-  var continuousAxis: x | y = js.native
+  var continuousAxis: x | y
   
-  var continuousAxisChannelDef: PositionFieldDef[String] = js.native
+  var continuousAxisChannelDef: PositionFieldDef[String]
   
-  var encodingWithoutContinuousAxis: ErrorEncoding[String] = js.native
+  var encodingWithoutContinuousAxis: ErrorEncoding[String]
   
-  var groupby: js.Array[String] = js.native
+  var groupby: js.Array[String]
   
-  var markDef: MD = js.native
+  var markDef: MD
   
-  var outerSpec: Height = js.native
+  var outerSpec: Height
   
-  var ticksOrient: Orientation = js.native
+  var ticksOrient: Orientation
   
-  var tooltipEncoding: ErrorEncoding[String] = js.native
+  var tooltipEncoding: ErrorEncoding[String]
   
-  var transform: js.Array[Transform] = js.native
+  var transform: js.Array[Transform]
 }
 object ContinuousAxisChannelDef {
   
   @scala.inline
-  def apply[MD /* <: GenericCompositeMarkDef[M] with (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](
+  def apply[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](
     continuousAxis: x | y,
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: ErrorEncoding[String],
@@ -56,7 +54,7 @@ object ContinuousAxisChannelDef {
   }
   
   @scala.inline
-  implicit class ContinuousAxisChannelDefMutableBuilder[Self <: ContinuousAxisChannelDef[_, _], MD /* <: GenericCompositeMarkDef[M] with (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] (val x: Self with (ContinuousAxisChannelDef[MD, M])) extends AnyVal {
+  implicit class ContinuousAxisChannelDefMutableBuilder[Self <: ContinuousAxisChannelDef[?, ?], MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] (val x: Self & (ContinuousAxisChannelDef[MD, M])) extends AnyVal {
     
     @scala.inline
     def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])

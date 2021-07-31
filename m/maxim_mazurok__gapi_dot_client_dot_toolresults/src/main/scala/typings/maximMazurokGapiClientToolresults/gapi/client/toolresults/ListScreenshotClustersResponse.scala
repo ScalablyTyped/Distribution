@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListScreenshotClustersResponse extends StObject {
   
   /** The set of clusters associated with an execution Always set */
-  var clusters: js.UndefOr[js.Array[ScreenshotCluster]] = js.native
+  var clusters: js.UndefOr[js.Array[ScreenshotCluster]] = js.undefined
 }
 object ListScreenshotClustersResponse {
   

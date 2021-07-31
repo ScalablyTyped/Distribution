@@ -10,9 +10,9 @@ Types for OpenAPI documents.
 | ------------------ | :-------------: |
 | Full name          | openapi-types |
 | Keywords           | openapi, swagger, types, typescript |
-| # releases         | 10 |
-| # dependents       | 71 |
-| # downloads        | 14573562 |
+| # releases         | 8 |
+| # dependents       | 106 |
+| # downloads        | 18369758 |
 | # stars            | 0 |
 
 ## Links

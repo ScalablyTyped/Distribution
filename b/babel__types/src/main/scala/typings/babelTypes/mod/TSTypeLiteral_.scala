@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSTypeLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSTypeLiteral_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSTypeLiteral_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var members: js.Array[TSTypeElement] = js.native
+  var members: js.Array[TSTypeElement]
   
   @JSName("type")
-  var type_TSTypeLiteral_ : TSTypeLiteral = js.native
+  var type_TSTypeLiteral_ : TSTypeLiteral
 }
 object TSTypeLiteral_ {
   
   @scala.inline
-  def apply(members: js.Array[TSTypeElement], `type`: TSTypeLiteral): TSTypeLiteral_ = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(members: js.Array[TSTypeElement]): TSTypeLiteral_ = {
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeLiteral")
     __obj.asInstanceOf[TSTypeLiteral_]
   }
   

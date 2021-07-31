@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,23 +57,23 @@ trait SchedulerStatic extends StObject {
     */
   def backbone(events: js.Any): Unit = js.native
   
-  def blockTime(date: Double, time_points: js.Array[_]): Unit = js.native
-  def blockTime(date: Double, time_points: js.Array[_], items: js.Any): Unit = js.native
+  def blockTime(date: Double, time_points: js.Array[js.Any]): Unit = js.native
+  def blockTime(date: Double, time_points: js.Array[js.Any], items: js.Any): Unit = js.native
   /**
     * blocks the specified date and applies the default 'dimmed' style to it.
     * @param date a date to block ( if a number is provided, the parameter will be treated as a week <br> day: '0' index refers to Sunday,'6' - to Saturday )
     * @param time_points an array <b>[start_minute,end_minute,..,start_minute_N,end_minute_N]</b>, <br> where each pair sets a certain limit range. The array can have any number of <br> such pairs
     * @param items defines specific items of  view(s) to block
     */
-  def blockTime(date: Date, time_points: js.Array[_]): Unit = js.native
-  def blockTime(date: Date, time_points: js.Array[_], items: js.Any): Unit = js.native
+  def blockTime(date: Date, time_points: js.Array[js.Any]): Unit = js.native
+  def blockTime(date: Date, time_points: js.Array[js.Any], items: js.Any): Unit = js.native
   
   /**
     * calls an inner event
     * @param name the event's name, case-insensitive
     * @param params an array of the event-related data
     */
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   /**
     * changes the event's id
@@ -356,7 +355,7 @@ trait SchedulerStatic extends StObject {
     * @param to the end date of the period
     */
   def getEvents(): js.Any = js.native
-  def getEvents(from: js.UndefOr[scala.Nothing], to: Date): js.Any = js.native
+  def getEvents(from: Unit, to: Date): js.Any = js.native
   def getEvents(from: Date): js.Any = js.native
   def getEvents(from: Date, to: Date): js.Any = js.native
   
@@ -429,11 +428,11 @@ trait SchedulerStatic extends StObject {
     * @param view the name of the initial view (by default, "week")
     */
   def init(container: String): Unit = js.native
-  def init(container: String, date: js.UndefOr[scala.Nothing], view: String): Unit = js.native
+  def init(container: String, date: Unit, view: String): Unit = js.native
   def init(container: String, date: Date): Unit = js.native
   def init(container: String, date: Date, view: String): Unit = js.native
   def init(container: HTMLElement): Unit = js.native
-  def init(container: HTMLElement, date: js.UndefOr[scala.Nothing], view: String): Unit = js.native
+  def init(container: HTMLElement, date: Unit, view: String): Unit = js.native
   def init(container: HTMLElement, date: Date): Unit = js.native
   def init(container: HTMLElement, date: Date, view: String): Unit = js.native
   
@@ -441,7 +440,7 @@ trait SchedulerStatic extends StObject {
     * inverts the specified time zones
     * @param zones an array **[start_minute,end_minute,..,start_minute_N,end_minute_N]** <br >where each pair sets a certain limit range (in minutes). The array can have any <br> number of such pairs
     */
-  def invertZones(zones: js.Array[_]): Unit = js.native
+  def invertZones(zones: js.Array[js.Any]): Unit = js.native
   
   /**
     * checks whether the calendar is currently opened in the scheduler
@@ -476,9 +475,9 @@ trait SchedulerStatic extends StObject {
     * @param callback the callback function
     */
   def load(url: String): Unit = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: SchedulerCallback): Unit = js.native
   def load(url: String, `type`: String): Unit = js.native
   def load(url: String, `type`: String, callback: SchedulerCallback): Unit = js.native
+  def load(url: String, `type`: Unit, callback: SchedulerCallback): Unit = js.native
   
   var locale: SchedulerLocale = js.native
   
@@ -558,7 +557,7 @@ trait SchedulerStatic extends StObject {
     * @param options an array of options
     */
   def serverList(list_name: String): Unit = js.native
-  def serverList(list_name: String, options: js.Array[_]): Unit = js.native
+  def serverList(list_name: String, options: js.Array[js.Any]): Unit = js.native
   
   /**
     * displays the specified view and date
@@ -566,7 +565,7 @@ trait SchedulerStatic extends StObject {
     * @param view the name of a view to display
     */
   def setCurrentView(): Unit = js.native
-  def setCurrentView(date: js.UndefOr[scala.Nothing], view: String): Unit = js.native
+  def setCurrentView(date: Unit, view: String): Unit = js.native
   def setCurrentView(date: Date): Unit = js.native
   def setCurrentView(date: Date, view: String): Unit = js.native
   
@@ -703,9 +702,9 @@ trait SchedulerStatic extends StObject {
     * @param sections allows blocking date(s) just for specific items of specific views. BTW, the specified date(s) will be blocked just in the related view(s)
     */
   def unblockTime(days: js.Any): Unit = js.native
-  def unblockTime(days: js.Any, zones: js.UndefOr[scala.Nothing], sections: js.Any): Unit = js.native
-  def unblockTime(days: js.Any, zones: js.Array[_]): Unit = js.native
-  def unblockTime(days: js.Any, zones: js.Array[_], sections: js.Any): Unit = js.native
+  def unblockTime(days: js.Any, zones: js.Array[js.Any]): Unit = js.native
+  def unblockTime(days: js.Any, zones: js.Array[js.Any], sections: js.Any): Unit = js.native
+  def unblockTime(days: js.Any, zones: Unit, sections: js.Any): Unit = js.native
   
   /**
     * removes a css class from the specified date
@@ -715,7 +714,7 @@ trait SchedulerStatic extends StObject {
     */
   def unmarkCalendar(calendar: js.Any, date: Date, css: String): Unit = js.native
   
-  def unmarkTimespan(divs: js.Array[_]): Unit = js.native
+  def unmarkTimespan(divs: js.Array[js.Any]): Unit = js.native
   /**
     * removes marking/blocking set by the markTimespan() method
     * @param divs a timespan to remove marking/blocking from (or an array of timespans)
@@ -741,7 +740,7 @@ trait SchedulerStatic extends StObject {
     * @param collection the name of the collection to update
     * @param options the new values of the collection
     */
-  def updateCollection(collection: String, options: js.Array[_]): Boolean = js.native
+  def updateCollection(collection: String, options: js.Array[js.Any]): Boolean = js.native
   
   /**
     * updates the specified event
@@ -756,7 +755,7 @@ trait SchedulerStatic extends StObject {
     * @param view the view name
     */
   def updateView(): Unit = js.native
-  def updateView(date: js.UndefOr[scala.Nothing], view: String): Unit = js.native
+  def updateView(date: Unit, view: String): Unit = js.native
   def updateView(date: Date): Unit = js.native
   def updateView(date: Date, view: String): Unit = js.native
   

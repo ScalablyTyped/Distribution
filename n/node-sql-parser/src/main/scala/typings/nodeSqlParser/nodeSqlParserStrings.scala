@@ -3,7 +3,6 @@ package typings.nodeSqlParser
 import typings.nodeSqlParser.typesMod.WhilteListCheckMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeSqlParserStrings {
@@ -39,7 +38,9 @@ object nodeSqlParserStrings {
   def alter: alter = "alter".asInstanceOf[alter]
   
   @js.native
-  sealed trait column extends WhilteListCheckMode
+  sealed trait column
+    extends StObject
+       with WhilteListCheckMode
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   
@@ -84,7 +85,9 @@ object nodeSqlParserStrings {
   def star: star = "star".asInstanceOf[star]
   
   @js.native
-  sealed trait table extends WhilteListCheckMode
+  sealed trait table
+    extends StObject
+       with WhilteListCheckMode
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   

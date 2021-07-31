@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the MassIndex class.
   */
-@js.native
-trait ASPxClientMassIndex extends ASPxSeparatePaneIndicator {
+trait ASPxClientMassIndex
+  extends StObject
+     with ASPxSeparatePaneIndicator {
   
   /**
     * Returns the count of points used to calculate the exponential moving average (EMA).
     */
-  var movingAveragePointsCount: Double = js.native
+  var movingAveragePointsCount: Double
   
   /**
     * Returns the count of summable values.
     */
-  var sumPointsCount: Double = js.native
+  var sumPointsCount: Double
 }
 object ASPxClientMassIndex {
   

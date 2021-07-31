@@ -6,7 +6,6 @@ import typings.angularRouter.angularRouterStrings.popstate
 import typings.angularRouter.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "NavigationStart")
@@ -45,7 +44,7 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   url: String,
     /** @docsNotRequired */
-  navigationTrigger: js.UndefOr[scala.Nothing],
+  navigationTrigger: Unit,
     /** @docsNotRequired */
   restoredState: Dictk
   ) = this()

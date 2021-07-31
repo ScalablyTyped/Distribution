@@ -2,20 +2,18 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to export resources.
   */
-@js.native
 trait SchemaExportResourcesRequest extends StObject {
   
   /**
     * The BigQuery destination location. The output will be one BigQuery table
     * per resource type.
     */
-  var bigqueryDestinationLocation: js.UndefOr[SchemaBigQueryLocation] = js.native
+  var bigqueryDestinationLocation: js.UndefOr[SchemaBigQueryLocation] = js.undefined
   
   /**
     * The Cloud Storage destination location. Specify a path to a Cloud Storage
@@ -24,7 +22,7 @@ trait SchemaExportResourcesRequest extends StObject {
     * resource type. Each object contains newline delimited JSON, and each line
     * is a FHIR resource.
     */
-  var gcsDestinationLocation: js.UndefOr[SchemaGcsDataLocation] = js.native
+  var gcsDestinationLocation: js.UndefOr[SchemaGcsDataLocation] = js.undefined
 }
 object SchemaExportResourcesRequest {
   

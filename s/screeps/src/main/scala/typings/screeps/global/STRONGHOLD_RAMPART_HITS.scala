@@ -7,7 +7,6 @@ import typings.screeps.screepsNumbers.`500000`
 import typings.screeps.screepsNumbers.`50000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object STRONGHOLD_RAMPART_HITS {

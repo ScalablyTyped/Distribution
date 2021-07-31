@@ -2,16 +2,14 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response from a geocoder lookup or reverse lookup.
   */
-@js.native
 trait GeocoderResponse extends StObject {
   
-  var results: js.Array[Place] = js.native
+  var results: js.Array[Place]
 }
 object GeocoderResponse {
   

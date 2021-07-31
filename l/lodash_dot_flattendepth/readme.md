@@ -11,8 +11,8 @@ The lodash method `_.flattenDepth` exported as a module.
 | Full name          | lodash.flattendepth |
 | Keywords           | lodash-modularized, flattendepth |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 234855 |
+| # dependents       | 10 |
+| # downloads        | 199229 |
 | # stars            | 0 |
 
 ## Links

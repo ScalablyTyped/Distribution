@@ -2,21 +2,19 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AriaAttrs extends StObject {
   
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: AriaAttrsType = js.native
+  var `type`: AriaAttrsType
   
-  var unsupported: js.UndefOr[Boolean] = js.native
+  var unsupported: js.UndefOr[Boolean] = js.undefined
   
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AriaAttrs {
   

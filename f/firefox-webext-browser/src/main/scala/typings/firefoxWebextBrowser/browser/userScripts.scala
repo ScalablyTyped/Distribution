@@ -6,7 +6,6 @@ import typings.firefoxWebextBrowser.browser.extensionTypes.RunAt
 import typings.firefoxWebextBrowser.browser.manifest.MatchPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,32 +15,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object userScripts {
   
-  @js.native
   trait OnBeforeScriptUserScript extends StObject {
     
     /**
       * Exports all the properties of a given plain object as userScript globals
       * @param sourceObject A plain object whose properties are exported as userScript globals
       */
-    def defineGlobals(sourceObject: js.Object): Unit = js.native
+    def defineGlobals(sourceObject: js.Object): Unit
     
     /**
       * Convert a given value to make it accessible to the userScript code
       * @param value A value to convert into an object accessible to the userScript
       */
-    def export(value: js.Any): js.Any = js.native
+    def `export`(value: js.Any): js.Any
     
     /** The userScript global */
-    var global: js.Any = js.native
+    var global: js.Any
     
     /** The userScript metadata (as set in userScripts.register) */
-    var metadata: js.Any = js.native
+    var metadata: js.Any
   }
   object OnBeforeScriptUserScript {
     
     @scala.inline
-    def apply(defineGlobals: js.Object => Unit, export: js.Any => js.Any, global: js.Any, metadata: js.Any): OnBeforeScriptUserScript = {
-      val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), export = js.Any.fromFunction1(export), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    def apply(defineGlobals: js.Object => Unit, `export`: js.Any => js.Any, global: js.Any, metadata: js.Any): OnBeforeScriptUserScript = {
+      val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+      __obj.updateDynamic("export")(js.Any.fromFunction1(`export`))
       __obj.asInstanceOf[OnBeforeScriptUserScript]
     }
     
@@ -63,16 +62,15 @@ object userScripts {
   }
   
   /** An object that represents a user script registered programmatically */
-  @js.native
   trait RegisteredUserScript extends StObject {
     
     /** Unregister a user script registered programmatically */
-    def unregister(): js.Promise[_] = js.native
+    def unregister(): js.Promise[js.Any]
   }
   object RegisteredUserScript {
     
     @scala.inline
-    def apply(unregister: () => js.Promise[_]): RegisteredUserScript = {
+    def apply(unregister: () => js.Promise[js.Any]): RegisteredUserScript = {
       val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[RegisteredUserScript]
     }
@@ -81,42 +79,41 @@ object userScripts {
     implicit class RegisteredUserScriptMutableBuilder[Self <: RegisteredUserScript] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setUnregister(value: () => js.Promise[_]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      def setUnregister(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
   
   /* userScripts types */
   /** Details of a user script */
-  @js.native
   trait UserScriptOptions extends StObject {
     
     /**
       * If allFrames is `true`, implies that the JavaScript should be injected into all frames of current page. By default, it's `false` and is only injected into the top frame.
       */
-    var allFrames: js.UndefOr[Boolean] = js.native
+    var allFrames: js.UndefOr[Boolean] = js.undefined
     
-    var excludeGlobs: js.UndefOr[js.Array[String]] = js.native
+    var excludeGlobs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var excludeMatches: js.UndefOr[js.Array[MatchPattern]] = js.native
+    var excludeMatches: js.UndefOr[js.Array[MatchPattern]] = js.undefined
     
-    var includeGlobs: js.UndefOr[js.Array[String]] = js.native
+    var includeGlobs: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The list of JS files to inject */
     @JSName("js")
-    var js_ : js.Array[ExtensionFileOrCode] = js.native
+    var js_ : js.Array[ExtensionFileOrCode]
     
     /**
       * If matchAboutBlank is true, then the code is also injected in about:blank and about:srcdoc frames if your extension has access to its parent document. Code cannot be inserted in top-level about:-frames. By default it is `false`.
       */
-    var matchAboutBlank: js.UndefOr[Boolean] = js.native
+    var matchAboutBlank: js.UndefOr[Boolean] = js.undefined
     
-    var matches: js.Array[MatchPattern] = js.native
+    var matches: js.Array[MatchPattern]
     
     /** The soonest that the JavaScript will be injected into the tab. Defaults to "document_idle". */
-    var runAt: js.UndefOr[RunAt] = js.native
+    var runAt: js.UndefOr[RunAt] = js.undefined
     
     /** An opaque user script metadata value */
-    var scriptMetadata: js.UndefOr[PlainJSONValue] = js.native
+    var scriptMetadata: js.UndefOr[PlainJSONValue] = js.undefined
   }
   object UserScriptOptions {
     

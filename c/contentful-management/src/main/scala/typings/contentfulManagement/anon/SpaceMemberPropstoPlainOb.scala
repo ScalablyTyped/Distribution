@@ -5,26 +5,24 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.spaceMemberMod.SpaceMemberProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/entities/space-member.SpaceMemberProps & {toPlainObject (): contentful-management.contentful-management/dist/typings/entities/space-member.SpaceMemberProps} */
-@js.native
 trait SpaceMemberPropstoPlainOb extends StObject {
   
   /**
     * User is an admin
     */
-  var admin: Boolean = js.native
+  var admin: Boolean
   
   /**
     * Array of Role Links
     */
-  var roles: js.Array[MetaLinkProps] = js.native
+  var roles: js.Array[MetaLinkProps]
   
-  var sys: MetaSysProps = js.native
+  var sys: MetaSysProps
   
-  def toPlainObject(): SpaceMemberProps = js.native
+  def toPlainObject(): SpaceMemberProps
 }
 object SpaceMemberPropstoPlainOb {
   

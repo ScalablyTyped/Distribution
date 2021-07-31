@@ -2,14 +2,12 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeT1[T1] extends StObject {
   
   @JSName("$theme")
-  var $theme: T1 = js.native
+  var $theme: T1
 }
 object ThemeT1 {
   
@@ -20,7 +18,7 @@ object ThemeT1 {
   }
   
   @scala.inline
-  implicit class ThemeT1MutableBuilder[Self <: ThemeT1[_], T1] (val x: Self with ThemeT1[T1]) extends AnyVal {
+  implicit class ThemeT1MutableBuilder[Self <: ThemeT1[?], T1] (val x: Self & ThemeT1[T1]) extends AnyVal {
     
     @scala.inline
     def set$theme(value: T1): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])

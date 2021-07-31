@@ -2,26 +2,24 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelp extends StObject {
   
   /**
     * The active parameter of the active signature.
     */
-  var activeParameter: Double = js.native
+  var activeParameter: Double
   
   /**
     * The active signature.
     */
-  var activeSignature: Double = js.native
+  var activeSignature: Double
   
   /**
     * One or more signatures.
     */
-  var signatures: js.Array[SignatureInformation] = js.native
+  var signatures: js.Array[SignatureInformation]
 }
 object SignatureHelp {
   

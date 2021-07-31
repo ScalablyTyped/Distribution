@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewGameServerDeploymentRolloutResponse extends StObject {
   
   /** ETag of the game server deployment. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The target state. */
-  var targetState: js.UndefOr[TargetState] = js.native
+  var targetState: js.UndefOr[TargetState] = js.undefined
   
   /** Locations that could not be reached on this request. */
-  var unavailable: js.UndefOr[js.Array[String]] = js.native
+  var unavailable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PreviewGameServerDeploymentRolloutResponse {
   

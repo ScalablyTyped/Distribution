@@ -3,24 +3,23 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuUtilityMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "getIsChecked")
+  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", JSImport.Namespace)
   @js.native
-  def getIsChecked(item: IContextualMenuItem): Boolean | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "getMenuItemAriaRole")
-  @js.native
-  def getMenuItemAriaRole(item: IContextualMenuItem): String = js.native
+  @scala.inline
+  def getIsChecked(item: IContextualMenuItem): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsChecked")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "hasSubmenu")
-  @js.native
-  def hasSubmenu(item: IContextualMenuItem): Boolean = js.native
+  @scala.inline
+  def getMenuItemAriaRole(item: IContextualMenuItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemAriaRole")(item.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "isItemDisabled")
-  @js.native
-  def isItemDisabled(item: IContextualMenuItem): Boolean = js.native
+  @scala.inline
+  def hasSubmenu(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSubmenu")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isItemDisabled(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemDisabled")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

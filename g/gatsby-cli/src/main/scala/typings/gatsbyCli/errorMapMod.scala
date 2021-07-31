@@ -3,7 +3,6 @@ package typings.gatsbyCli
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMapMod {
@@ -15,19 +14,25 @@ object errorMapMod {
   object ErrorCategory extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ErrorCategory with String] = js.native
+    def apply(value: String): js.UndefOr[ErrorCategory & String] = js.native
     
     @js.native
-    sealed trait SYSTEM extends ErrorCategory
-    /* "SYSTEM" */ val SYSTEM: typings.gatsbyCli.errorMapMod.ErrorCategory.SYSTEM with String = js.native
+    sealed trait SYSTEM
+      extends StObject
+         with ErrorCategory
+    /* "SYSTEM" */ val SYSTEM: typings.gatsbyCli.errorMapMod.ErrorCategory.SYSTEM & String = js.native
     
     @js.native
-    sealed trait THIRD_PARTY extends ErrorCategory
-    /* "THIRD_PARTY" */ val THIRD_PARTY: typings.gatsbyCli.errorMapMod.ErrorCategory.THIRD_PARTY with String = js.native
+    sealed trait THIRD_PARTY
+      extends StObject
+         with ErrorCategory
+    /* "THIRD_PARTY" */ val THIRD_PARTY: typings.gatsbyCli.errorMapMod.ErrorCategory.THIRD_PARTY & String = js.native
     
     @js.native
-    sealed trait USER extends ErrorCategory
-    /* "USER" */ val USER: typings.gatsbyCli.errorMapMod.ErrorCategory.USER with String = js.native
+    sealed trait USER
+      extends StObject
+         with ErrorCategory
+    /* "USER" */ val USER: typings.gatsbyCli.errorMapMod.ErrorCategory.USER & String = js.native
   }
   
   @JSImport("gatsby-cli/lib/structured-errors/error-map", "defaultError")
@@ -96,22 +101,21 @@ object errorMapMod {
   */
   type ErrorId = _ErrorId | String
   
-  @js.native
   trait IErrorMapEntry extends StObject {
     
     var category: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCategory * / any */ String
-      ] = js.native
+      ] = js.undefined
     
-    var docsUrl: js.UndefOr[String] = js.native
+    var docsUrl: js.UndefOr[String] = js.undefined
     
-    var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String = js.native
+    var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
     
-    def text(context: js.Any): String = js.native
+    def text(context: js.Any): String
     
     var `type`: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String
-      ] = js.native
+      ] = js.undefined
   }
   object IErrorMapEntry {
     

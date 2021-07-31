@@ -2,27 +2,25 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the publisher.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher extends StObject {
   
   /**
     * The name of this publisher. For instance, &quot;Awesome Fact
     * Checks&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Host-level site name, without the protocol or &quot;www&quot; prefix. For
     * instance, &quot;awesomefactchecks.com&quot;. This value of this field is
     * based purely on the claim review URL.
     */
-  var site: js.UndefOr[String] = js.native
+  var site: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher {
   

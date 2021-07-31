@@ -11,10 +11,13 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2HelmMod {
+  
+  @JSImport("@pulumi/kubernetes/helm/v2/helm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/kubernetes/helm/v2/helm", "Chart")
   @js.native
@@ -32,94 +35,81 @@ object v2HelmMod {
     
     def parseTemplate(
       text: String,
-      transformations: js.UndefOr[scala.Nothing],
-      resourcePrefix: js.UndefOr[scala.Nothing],
-      dependsOn: js.Array[Resource]
-    ): Output_[StringDictionary[CustomResource]] = js.native
-    def parseTemplate(
-      text: String,
-      transformations: js.UndefOr[scala.Nothing],
-      resourcePrefix: js.UndefOr[scala.Nothing],
-      dependsOn: js.Array[Resource],
-      defaultNamespace: String
-    ): Output_[StringDictionary[CustomResource]] = js.native
-    def parseTemplate(
-      text: String,
-      transformations: js.UndefOr[scala.Nothing],
+      transformations: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]],
       resourcePrefix: String,
       dependsOn: js.Array[Resource]
     ): Output_[StringDictionary[CustomResource]] = js.native
     def parseTemplate(
       text: String,
-      transformations: js.UndefOr[scala.Nothing],
+      transformations: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]],
       resourcePrefix: String,
       dependsOn: js.Array[Resource],
       defaultNamespace: String
     ): Output_[StringDictionary[CustomResource]] = js.native
     def parseTemplate(
       text: String,
-      transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
-      resourcePrefix: js.UndefOr[scala.Nothing],
+      transformations: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]],
+      resourcePrefix: Unit,
       dependsOn: js.Array[Resource]
     ): Output_[StringDictionary[CustomResource]] = js.native
     def parseTemplate(
       text: String,
-      transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
-      resourcePrefix: js.UndefOr[scala.Nothing],
+      transformations: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]],
+      resourcePrefix: Unit,
       dependsOn: js.Array[Resource],
       defaultNamespace: String
     ): Output_[StringDictionary[CustomResource]] = js.native
+    def parseTemplate(text: String, transformations: Unit, resourcePrefix: String, dependsOn: js.Array[Resource]): Output_[StringDictionary[CustomResource]] = js.native
     def parseTemplate(
       text: String,
-      transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
+      transformations: Unit,
       resourcePrefix: String,
-      dependsOn: js.Array[Resource]
+      dependsOn: js.Array[Resource],
+      defaultNamespace: String
     ): Output_[StringDictionary[CustomResource]] = js.native
+    def parseTemplate(text: String, transformations: Unit, resourcePrefix: Unit, dependsOn: js.Array[Resource]): Output_[StringDictionary[CustomResource]] = js.native
     def parseTemplate(
       text: String,
-      transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
-      resourcePrefix: String,
+      transformations: Unit,
+      resourcePrefix: Unit,
       dependsOn: js.Array[Resource],
       defaultNamespace: String
     ): Output_[StringDictionary[CustomResource]] = js.native
   }
   
-  @JSImport("@pulumi/kubernetes/helm/v2/helm", "fetch")
-  @js.native
-  def fetch(chart: String): Unit = js.native
-  @JSImport("@pulumi/kubernetes/helm/v2/helm", "fetch")
-  @js.native
-  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
+  @scala.inline
+  def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait BaseChartOpts extends StObject {
     
     /**
       * The optional kubernetes api versions used for Capabilities.APIVersions.
       */
-    var apiVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var apiVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The optional namespace to install chart resources into.
       */
-    var namespace: js.UndefOr[Input[String]] = js.native
+    var namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An optional prefix for the auto-generated resource names.
       * Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".
       */
-    var resourcePrefix: js.UndefOr[String] = js.native
+    var resourcePrefix: js.UndefOr[String] = js.undefined
     
     /**
       * A set of transformations to apply to Kubernetes resource definitions before registering
       * with engine.
       */
-    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]] = js.native
+    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]] = js.undefined
     
     /**
       * Overrides for chart values.
       */
-    var values: js.UndefOr[Inputs] = js.native
+    var values: js.UndefOr[Inputs] = js.undefined
   }
   object BaseChartOpts {
     
@@ -154,13 +144,13 @@ object v2HelmMod {
       def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
       @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
       @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
       
       @scala.inline
       def setValues(value: Inputs): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
@@ -170,31 +160,32 @@ object v2HelmMod {
     }
   }
   
-  @js.native
-  trait ChartOpts extends BaseChartOpts {
+  trait ChartOpts
+    extends StObject
+       with BaseChartOpts {
     
     /**
       * The name of the chart to deploy.  If [repo] is provided, this chart name will be prefixed by the repo name.
       * Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress"
       * Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
       */
-    var chart: Input[String] = js.native
+    var chart: Input[String]
     
     /**
       * Additional options to customize the fetching of the Helm chart.
       */
-    var fetchOpts: js.UndefOr[Input[FetchOpts]] = js.native
+    var fetchOpts: js.UndefOr[Input[FetchOpts]] = js.undefined
     
     /**
       * The repository name of the chart to deploy.
       * Example: "stable"
       */
-    var repo: js.UndefOr[Input[String]] = js.native
+    var repo: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the chart to deploy. If not provided, the latest version will be deployed.
       */
-    var version: js.UndefOr[Input[String]] = js.native
+    var version: js.UndefOr[Input[String]] = js.undefined
   }
   object ChartOpts {
     
@@ -230,62 +221,61 @@ object v2HelmMod {
     }
   }
   
-  @js.native
   trait FetchOpts extends StObject {
     
     /** Verify certificates of HTTPS-enabled servers using this CA bundle. */
-    var caFile: js.UndefOr[Input[String]] = js.native
+    var caFile: js.UndefOr[Input[String]] = js.undefined
     
     /** Identify HTTPS client using this SSL certificate file. */
-    var certFile: js.UndefOr[Input[String]] = js.native
+    var certFile: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Location to write the chart. If this and tardir are specified, tardir is appended to this
       * (default ".").
       */
-    var destination: js.UndefOr[Input[String]] = js.native
+    var destination: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Use development versions, too. Equivalent to version '>0.0.0-0'. If --version is set, this is
       * ignored.
       */
-    var devel: js.UndefOr[Input[Boolean]] = js.native
+    var devel: js.UndefOr[Input[Boolean]] = js.undefined
     
     /** Location of your Helm config. Overrides $HELM_HOME (default "/Users/alex/.helm"). */
-    var home: js.UndefOr[Input[String]] = js.native
+    var home: js.UndefOr[Input[String]] = js.undefined
     
     /** Identify HTTPS client using this SSL key file. */
-    var keyFile: js.UndefOr[Input[String]] = js.native
+    var keyFile: js.UndefOr[Input[String]] = js.undefined
     
     /** Keyring containing public keys (default "/Users/alex/.gnupg/pubring.gpg"). */
-    var keyring: js.UndefOr[Input[String]] = js.native
+    var keyring: js.UndefOr[Input[String]] = js.undefined
     
     /** Chart repository password. */
-    var password: js.UndefOr[Input[String]] = js.native
+    var password: js.UndefOr[Input[String]] = js.undefined
     
     /** Fetch the provenance file, but don't perform verification. */
-    var prov: js.UndefOr[Input[Boolean]] = js.native
+    var prov: js.UndefOr[Input[Boolean]] = js.undefined
     
     /** Chart repository url where to locate the requested chart. */
-    var repo: js.UndefOr[Input[String]] = js.native
+    var repo: js.UndefOr[Input[String]] = js.undefined
     
     /** If set to false, will leave the chart as a tarball after downloading. */
-    var untar: js.UndefOr[Input[Boolean]] = js.native
+    var untar: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If untar is specified, this flag specifies the name of the directory into which the chart is
       * expanded (default ".").
       */
-    var untardir: js.UndefOr[Input[String]] = js.native
+    var untardir: js.UndefOr[Input[String]] = js.undefined
     
     /** Chart repository username. */
-    var username: js.UndefOr[Input[String]] = js.native
+    var username: js.UndefOr[Input[String]] = js.undefined
     
     /** Verify the package against its signature. */
-    var verify: js.UndefOr[Input[Boolean]] = js.native
+    var verify: js.UndefOr[Input[Boolean]] = js.undefined
     
     /** Specific version of a chart. Without this, the latest version is fetched. */
-    var version: js.UndefOr[Input[String]] = js.native
+    var version: js.UndefOr[Input[String]] = js.undefined
   }
   object FetchOpts {
     
@@ -390,13 +380,14 @@ object v2HelmMod {
     }
   }
   
-  @js.native
-  trait LocalChartOpts extends BaseChartOpts {
+  trait LocalChartOpts
+    extends StObject
+       with BaseChartOpts {
     
     /**
       * The path to the chart directory which contains the `Chart.yaml` file.
       */
-    var path: String = js.native
+    var path: String
   }
   object LocalChartOpts {
     
@@ -414,38 +405,37 @@ object v2HelmMod {
     }
   }
   
-  @js.native
   trait ResolvedFetchOpts extends StObject {
     
-    var caFile: js.UndefOr[String] = js.native
+    var caFile: js.UndefOr[String] = js.undefined
     
-    var certFile: js.UndefOr[String] = js.native
+    var certFile: js.UndefOr[String] = js.undefined
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var devel: js.UndefOr[Boolean] = js.native
+    var devel: js.UndefOr[Boolean] = js.undefined
     
-    var home: js.UndefOr[String] = js.native
+    var home: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var keyring: js.UndefOr[String] = js.native
+    var keyring: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var prov: js.UndefOr[Boolean] = js.native
+    var prov: js.UndefOr[Boolean] = js.undefined
     
-    var repo: js.UndefOr[String] = js.native
+    var repo: js.UndefOr[String] = js.undefined
     
-    var untar: js.UndefOr[Boolean] = js.native
+    var untar: js.UndefOr[Boolean] = js.undefined
     
-    var untardir: js.UndefOr[String] = js.native
+    var untardir: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var verify: js.UndefOr[Boolean] = js.native
+    var verify: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ResolvedFetchOpts {
     

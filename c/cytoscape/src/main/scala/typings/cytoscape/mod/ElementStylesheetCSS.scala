@@ -4,13 +4,13 @@ import typings.cytoscape.mod.Css.Edge
 import typings.cytoscape.mod.Css.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElementStylesheetCSS extends StylesheetCSS {
+trait ElementStylesheetCSS
+  extends StObject
+     with StylesheetCSS {
   
-  def json(): js.Any = js.native
+  def json(): js.Any
 }
 object ElementStylesheetCSS {
   

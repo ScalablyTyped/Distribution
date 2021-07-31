@@ -2,17 +2,15 @@ package typings.stringNaturalCompare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alphabet extends StObject {
     
-    var alphabet: js.UndefOr[String] = js.native
+    var alphabet: js.UndefOr[String] = js.undefined
     
-    var caseInsensitive: js.UndefOr[Boolean] = js.native
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
   }
   object Alphabet {
     

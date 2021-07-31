@@ -2,7 +2,6 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,24 +15,24 @@ trait ServerScope extends StObject {
   
   var db: DatabaseScope = js.native
   
-  def dinosaur(opts: String): js.Promise[_] = js.native
-  def dinosaur(opts: String, callback: Callback[_]): js.Promise[_] = js.native
-  def dinosaur(opts: RequestOptions): js.Promise[_] = js.native
-  def dinosaur(opts: RequestOptions, callback: Callback[_]): js.Promise[_] = js.native
+  def dinosaur(opts: String): js.Promise[js.Any] = js.native
+  def dinosaur(opts: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def dinosaur(opts: RequestOptions): js.Promise[js.Any] = js.native
+  def dinosaur(opts: RequestOptions, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   // https://docs.couchdb.org/en/stable/api/server/common.html#api-server-root
   def info(): js.Promise[InfoResponse] = js.native
   def info(callback: Callback[InfoResponse]): js.Promise[InfoResponse] = js.native
   
-  def relax(opts: String): js.Promise[_] = js.native
-  def relax(opts: String, callback: Callback[_]): js.Promise[_] = js.native
-  def relax(opts: RequestOptions): js.Promise[_] = js.native
-  def relax(opts: RequestOptions, callback: Callback[_]): js.Promise[_] = js.native
+  def relax(opts: String): js.Promise[js.Any] = js.native
+  def relax(opts: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def relax(opts: RequestOptions): js.Promise[js.Any] = js.native
+  def relax(opts: RequestOptions, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
-  def request(opts: String): js.Promise[_] = js.native
-  def request(opts: String, callback: Callback[_]): js.Promise[_] = js.native
-  def request(opts: RequestOptions): js.Promise[_] = js.native
-  def request(opts: RequestOptions, callback: Callback[_]): js.Promise[_] = js.native
+  def request(opts: String): js.Promise[js.Any] = js.native
+  def request(opts: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def request(opts: RequestOptions): js.Promise[js.Any] = js.native
+  def request(opts: RequestOptions, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   def scope[D](db: String): DocumentScope[D] = js.native
   
@@ -51,5 +50,5 @@ trait ServerScope extends StObject {
   def use[D](db: String): DocumentScope[D] = js.native
   
   def uuids(num: Double): js.Promise[UUIDObject] = js.native
-  def uuids(num: Double, callback: Callback[_]): js.Promise[UUIDObject] = js.native
+  def uuids(num: Double, callback: Callback[js.Any]): js.Promise[UUIDObject] = js.native
 }

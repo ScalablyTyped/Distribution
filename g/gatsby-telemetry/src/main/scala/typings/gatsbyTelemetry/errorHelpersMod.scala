@@ -4,32 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorHelpersMod {
   
-  @JSImport("gatsby-telemetry/lib/error-helpers", "cleanPaths")
+  @JSImport("gatsby-telemetry/lib/error-helpers", JSImport.Namespace)
   @js.native
-  def cleanPaths(str: String): String = js.native
-  @JSImport("gatsby-telemetry/lib/error-helpers", "cleanPaths")
-  @js.native
-  def cleanPaths(str: String, separator: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-telemetry/lib/error-helpers", "sanitizeError")
-  @js.native
-  def sanitizeError(error: IErrorWithStdErrAndStdOut): String = js.native
-  @JSImport("gatsby-telemetry/lib/error-helpers", "sanitizeError")
-  @js.native
-  def sanitizeError(error: IErrorWithStdErrAndStdOut, pathSeparator: String): String = js.native
+  @scala.inline
+  def cleanPaths(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def cleanPaths(str: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def sanitizeError(error: IErrorWithStdErrAndStdOut): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sanitizeError(error: IErrorWithStdErrAndStdOut, pathSeparator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any], pathSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait IErrorWithStdErrAndStdOut
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var stderr: js.UndefOr[Buffer | String] = js.native
+    var stderr: js.UndefOr[Buffer | String] = js.undefined
     
-    var stdout: js.UndefOr[Buffer | String] = js.native
+    var stdout: js.UndefOr[Buffer | String] = js.undefined
   }
   object IErrorWithStdErrAndStdOut {
     

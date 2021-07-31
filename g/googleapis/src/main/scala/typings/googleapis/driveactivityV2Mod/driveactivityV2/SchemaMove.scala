@@ -2,24 +2,22 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object was moved.
   */
-@js.native
 trait SchemaMove extends StObject {
   
   /**
     * The added parent object(s).
     */
-  var addedParents: js.UndefOr[js.Array[SchemaTargetReference]] = js.native
+  var addedParents: js.UndefOr[js.Array[SchemaTargetReference]] = js.undefined
   
   /**
     * The removed parent object(s).
     */
-  var removedParents: js.UndefOr[js.Array[SchemaTargetReference]] = js.native
+  var removedParents: js.UndefOr[js.Array[SchemaTargetReference]] = js.undefined
 }
 object SchemaMove {
   

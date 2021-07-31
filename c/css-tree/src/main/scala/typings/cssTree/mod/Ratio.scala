@@ -2,28 +2,27 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ratio
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
-  var left: String = js.native
+  var left: String
   
-  var right: String = js.native
+  var right: String
   
   @JSName("type")
-  var type_Ratio: typings.cssTree.cssTreeStrings.Ratio = js.native
+  var type_Ratio: typings.cssTree.cssTreeStrings.Ratio
 }
 object Ratio {
   
   @scala.inline
-  def apply(left: String, right: String, `type`: typings.cssTree.cssTreeStrings.Ratio): Ratio = {
+  def apply(left: String, right: String): Ratio = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Ratio")
     __obj.asInstanceOf[Ratio]
   }
   

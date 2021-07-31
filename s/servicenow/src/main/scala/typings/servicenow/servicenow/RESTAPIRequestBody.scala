@@ -2,21 +2,19 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTAPIRequestBody[T] extends StObject {
   
-  val data: T = js.native
+  val data: T
   
-  val dataStream: js.Object = js.native
+  val dataStream: js.Object
   
-  val dataString: String = js.native
+  val dataString: String
   
-  def hasNext(): Boolean = js.native
+  def hasNext(): Boolean
   
-  def nextEntry(): js.Any = js.native
+  def nextEntry(): js.Any
 }
 object RESTAPIRequestBody {
   
@@ -33,7 +31,7 @@ object RESTAPIRequestBody {
   }
   
   @scala.inline
-  implicit class RESTAPIRequestBodyMutableBuilder[Self <: RESTAPIRequestBody[_], T] (val x: Self with RESTAPIRequestBody[T]) extends AnyVal {
+  implicit class RESTAPIRequestBodyMutableBuilder[Self <: RESTAPIRequestBody[?], T] (val x: Self & RESTAPIRequestBody[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

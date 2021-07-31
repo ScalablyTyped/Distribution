@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistrationOptions extends StObject {
   
-  var scope: js.UndefOr[java.lang.String] = js.native
+  var scope: js.UndefOr[java.lang.String] = js.undefined
   
-  var `type`: js.UndefOr[WorkerType] = js.native
+  var `type`: js.UndefOr[WorkerType] = js.undefined
   
-  var updateViaCache: js.UndefOr[ServiceWorkerUpdateViaCache] = js.native
+  var updateViaCache: js.UndefOr[ServiceWorkerUpdateViaCache] = js.undefined
 }
 object RegistrationOptions {
   

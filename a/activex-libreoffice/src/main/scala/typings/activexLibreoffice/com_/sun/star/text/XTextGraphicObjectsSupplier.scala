@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the collection of all embedded and linked graphics within this context (i.e. within this document). */
-@js.native
-trait XTextGraphicObjectsSupplier extends XInterface {
+trait XTextGraphicObjectsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of graphic objects in this object (document). */
-  val GraphicObjects: XNameAccess = js.native
+  val GraphicObjects: XNameAccess
   
   /** @returns the collection of graphic objects in this object (document). */
-  def getGraphicObjects(): XNameAccess = js.native
+  def getGraphicObjects(): XNameAccess
 }
 object XTextGraphicObjectsSupplier {
   

@@ -3,13 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWindowEvents extends IEvents {
+trait IWindowEvents
+  extends StObject
+     with IEvents {
   
-  var OnCloseWindow: js.UndefOr[js.Function0[Boolean]] = js.native
+  var OnCloseWindow: js.UndefOr[js.Function0[Boolean]] = js.undefined
 }
 object IWindowEvents {
   

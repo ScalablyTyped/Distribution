@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketInventoryConfigurationOutput extends StObject {
   
   /**
     * Specifies the inventory configuration.
     */
-  var InventoryConfiguration: js.UndefOr[typings.awsSdk.s3Mod.InventoryConfiguration] = js.native
+  var InventoryConfiguration: js.UndefOr[typings.awsSdk.s3Mod.InventoryConfiguration] = js.undefined
 }
 object GetBucketInventoryConfigurationOutput {
   

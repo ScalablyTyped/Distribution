@@ -6,29 +6,29 @@ import typings.awsSdkClientSqsNode.typesDeleteMessageBatchResultEntryMod.Unmarsh
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteMessageBatchOutputMod {
   
-  @js.native
-  trait DeleteMessageBatchOutput extends OutputTypesUnion {
+  trait DeleteMessageBatchOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of <code> <a>BatchResultErrorEntry</a> </code> items.</p>
       */
-    var Failed: js.Array[UnmarshalledBatchResultErrorEntry] = js.native
+    var Failed: js.Array[UnmarshalledBatchResultErrorEntry]
     
     /**
       * <p>A list of <code> <a>DeleteMessageBatchResultEntry</a> </code> items.</p>
       */
-    var Successful: js.Array[UnmarshalledDeleteMessageBatchResultEntry] = js.native
+    var Successful: js.Array[UnmarshalledDeleteMessageBatchResultEntry]
   }
   object DeleteMessageBatchOutput {
     

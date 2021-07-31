@@ -2,21 +2,19 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theta extends StObject {
   
-  val radius: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val radius: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val theta: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val theta: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Theta {
   
   @scala.inline
-  def apply(radius: typings.vegaLite.vegaLiteNumbers.`1`, theta: typings.vegaLite.vegaLiteNumbers.`1`): Theta = {
-    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any])
+  def apply(): Theta = {
+    val __obj = js.Dynamic.literal(radius = 1, theta = 1)
     __obj.asInstanceOf[Theta]
   }
   

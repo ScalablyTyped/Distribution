@@ -2,17 +2,15 @@ package typings.digibyte
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PrevHash extends StObject {
     
-    var prevHash: String = js.native
+    var prevHash: String
     
-    var time: Double = js.native
+    var time: Double
   }
   object PrevHash {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Reverse extends StObject {
     
-    def reverse(a: js.Any): js.Any = js.native
+    def reverse(a: js.Any): js.Any
   }
   object Reverse {
     

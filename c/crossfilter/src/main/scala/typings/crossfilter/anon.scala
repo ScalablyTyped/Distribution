@@ -7,7 +7,6 @@ import typings.crossfilter.CrossFilter.Selector
 import typings.crossfilter.CrossFilter.Sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {

@@ -2,41 +2,39 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeterUsageRequest extends StObject {
   
   /**
     * Checks whether you have the permissions required for the action, but does not make the request. If you have the permissions, the request returns DryRunOperation; otherwise, it returns UnauthorizedException. Defaults to false if not specified.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
     */
-  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode = js.native
+  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode
   
   /**
     * Timestamp, in UTC, for which the usage is being reported. Your application can meter usage for up to one hour in the past. Make sure the timestamp value is not before the start of the software usage.
     */
-  var Timestamp: typings.awsSdk.marketplacemeteringMod.Timestamp = js.native
+  var Timestamp: typings.awsSdk.marketplacemeteringMod.Timestamp
   
   /**
     * The set of UsageAllocations to submit. The sum of all UsageAllocation quantities must equal the UsageQuantity of the MeterUsage request, and each UsageAllocation must have a unique set of tags (include no tags).
     */
-  var UsageAllocations: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageAllocations] = js.native
+  var UsageAllocations: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageAllocations] = js.undefined
   
   /**
     * It will be one of the fcp dimension name provided during the publishing of the product.
     */
-  var UsageDimension: typings.awsSdk.marketplacemeteringMod.UsageDimension = js.native
+  var UsageDimension: typings.awsSdk.marketplacemeteringMod.UsageDimension
   
   /**
     * Consumption value for the hour. Defaults to 0 if not specified.
     */
-  var UsageQuantity: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageQuantity] = js.native
+  var UsageQuantity: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageQuantity] = js.undefined
 }
 object MeterUsageRequest {
   

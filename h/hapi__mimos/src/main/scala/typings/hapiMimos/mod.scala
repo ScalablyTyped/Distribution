@@ -5,7 +5,6 @@ import typings.hapiMimos.anon.MimosOptionsValuepredicat
 import typings.mimeDb.mod.MimeEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,22 +14,35 @@ object mod {
   /**
     * Creates a new Mimos object.
     */
-  class ^ () extends Mimos {
+  class ^ ()
+    extends StObject
+       with Mimos {
     def this(options: MimosOptions) = this()
+    
+    /**
+      * Returns mime object
+      */
+    /* CompleteClass */
+    override def path(path: String): MimosOptionsValue = js.native
+    
+    /**
+      * Returns mime object
+      */
+    /* CompleteClass */
+    override def `type`(`type`: String): MimeEntry = js.native
   }
   
-  @js.native
   trait Mimos extends StObject {
     
     /**
       * Returns mime object
       */
-    def path(path: String): MimosOptionsValue = js.native
+    def path(path: String): MimosOptionsValue
     
     /**
       * Returns mime object
       */
-    def `type`(`type`: String): MimeEntry = js.native
+    def `type`(`type`: String): MimeEntry
   }
   object Mimos {
     
@@ -56,7 +68,6 @@ object mod {
     *
     * @see {@link https://github.com/hapijs/mimos#new-mimosoptions}
     */
-  @js.native
   trait MimosOptions extends StObject {
     
     /**
@@ -66,7 +77,7 @@ object mod {
       *  * the key is the lower-cased correct mime-type. (Ex. "application/javascript").
       *  * the value should an object @see MimosOptionsValue
       */
-    var `override`: StringDictionary[MimosOptionsValuepredicat] = js.native
+    var `override`: StringDictionary[MimosOptionsValuepredicat]
   }
   object MimosOptions {
     
@@ -85,13 +96,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait MimosOptionsValue extends MimeEntry {
+  trait MimosOptionsValue
+    extends StObject
+       with MimeEntry {
     
     /**
       * Specify the type value of result objects, defaults to key.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MimosOptionsValue {
     

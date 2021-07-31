@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nConditionPanel extends Control {
+trait P13nConditionPanel
+  extends StObject
+     with Control {
   
   /**
     * add a single condition.
@@ -94,7 +95,7 @@ trait P13nConditionPanel extends Control {
     * @since 1.26.0
     * @returns array of Conditions
     */
-  def getConditions(): js.Array[_] = js.native
+  def getConditions(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>containerQuery</code>.defines if the mediaQuery or a
@@ -131,7 +132,7 @@ trait P13nConditionPanel extends Control {
     * @since 1.26.0
     * @returns array of KeyFields [{key: "CompanyCode", text: "ID"}, {key:"CompanyName", text : "Name"}]
     */
-  def getKeyFields(): js.Array[_] = js.native
+  def getKeyFields(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>layoutMode</code>.can be used to control the layout behavior.
@@ -154,7 +155,7 @@ trait P13nConditionPanel extends Control {
     * @param sType defines the type for which the operations should be returned.
     * @returns array of operations
     */
-  def getOperations(sType: String): js.Array[_] = js.native
+  def getOperations(sType: String): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>showLabel</code>.show additional labels in the conditionDefault
@@ -251,7 +252,7 @@ trait P13nConditionPanel extends Control {
     * @since 1.26.0
     * @param aConditions array of Conditions.
     */
-  def setConditions(aConditions: js.Array[_]): Unit = js.native
+  def setConditions(aConditions: js.Array[js.Any]): Unit = js.native
   
   /**
     * Sets a new value for property <code>disableFirstRemoveIcon</code>.makes the remove icon on the first
@@ -289,7 +290,7 @@ trait P13nConditionPanel extends Control {
     * @param aKeyFields array of KeyFields [{key: "CompanyCode", text: "ID"}, {key:"CompanyName", text :
     * "Name"}]
     */
-  def setKeyFields(aKeyFields: js.Array[_]): Unit = js.native
+  def setKeyFields(aKeyFields: js.Array[js.Any]): Unit = js.native
   
   /**
     * Sets a new value for property <code>maxConditions</code>.defines the max number of conditions on the
@@ -310,7 +311,7 @@ trait P13nConditionPanel extends Control {
     * @param sType defines the type for which this operations will be used. is sType is not defined the
     * operations will be used as default       operations.
     */
-  def setOperations(aOperations: js.Array[_], sType: String): Unit = js.native
+  def setOperations(aOperations: js.Array[js.Any], sType: String): Unit = js.native
   
   /**
     * Sets a new value for property <code>showLabel</code>.show additional labels in the conditionWhen

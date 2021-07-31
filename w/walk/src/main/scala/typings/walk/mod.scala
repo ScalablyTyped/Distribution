@@ -13,37 +13,35 @@ import typings.walk.walkStrings.socket
 import typings.walk.walkStrings.symbolicLink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("walk", "walk")
+  @JSImport("walk", JSImport.Namespace)
   @js.native
-  def walk(path: String): Walker = js.native
-  @JSImport("walk", "walk")
-  @js.native
-  def walk(path: String, options: WalkOptions): Walker = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("walk", "walkSync")
-  @js.native
-  def walkSync(path: String): Walker = js.native
-  @JSImport("walk", "walkSync")
-  @js.native
-  def walkSync(path: String, options: WalkOptions): Walker = js.native
+  @scala.inline
+  def walk(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  @scala.inline
+  def walk(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  
+  @scala.inline
+  def walkSync(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  @scala.inline
+  def walkSync(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
   
   type WalkNamesEventCallback = js.Function3[/* base */ String, /* names */ js.Array[String], /* next */ WalkNext, Unit]
   
   type WalkNext = js.Function0[Unit]
   
-  @js.native
   trait WalkOptions extends StObject {
     
-    var filters: js.UndefOr[js.Array[String]] = js.native
+    var filters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var followLinks: js.UndefOr[Boolean] = js.native
+    var followLinks: js.UndefOr[Boolean] = js.undefined
     
-    var listeners: js.UndefOr[WalkOptionsListeners] = js.native
+    var listeners: js.UndefOr[WalkOptionsListeners] = js.undefined
   }
   object WalkOptions {
     
@@ -79,26 +77,25 @@ object mod {
     }
   }
   
-  @js.native
   trait WalkOptionsListeners extends StObject {
     
-    var directories: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var directories: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
     
-    var directory: js.UndefOr[WalkStatEventCallback] = js.native
+    var directory: js.UndefOr[WalkStatEventCallback] = js.undefined
     
-    var directoryError: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var directoryError: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
     
-    var end: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var end: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
     
-    var errors: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var errors: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
     
-    var file: js.UndefOr[WalkStatEventCallback] = js.native
+    var file: js.UndefOr[WalkStatEventCallback] = js.undefined
     
-    var files: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var files: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
     
-    var names: js.UndefOr[WalkNamesEventCallback] = js.native
+    var names: js.UndefOr[WalkNamesEventCallback] = js.undefined
     
-    var nodeError: js.UndefOr[WalkStatArrayEventCallback] = js.native
+    var nodeError: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
   }
   object WalkOptionsListeners {
     

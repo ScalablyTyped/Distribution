@@ -12,7 +12,7 @@ Programmatically access the Tinder dating service API
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 912 |
+| # downloads        | 997 |
 | # stars            | 5 |
 
 ## Links

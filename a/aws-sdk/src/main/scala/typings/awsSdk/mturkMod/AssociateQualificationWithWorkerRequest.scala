@@ -2,31 +2,29 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateQualificationWithWorkerRequest extends StObject {
   
   /**
     * The value of the Qualification to assign.
     */
-  var IntegerValue: js.UndefOr[Integer] = js.native
+  var IntegerValue: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the Qualification type to use for the assigned Qualification.
     */
-  var QualificationTypeId: EntityId = js.native
+  var QualificationTypeId: EntityId
   
   /**
     *  Specifies whether to send a notification email message to the Worker saying that the qualification was assigned to the Worker. Note: this is true by default. 
     */
-  var SendNotification: js.UndefOr[Boolean] = js.native
+  var SendNotification: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  The ID of the Worker to whom the Qualification is being assigned. Worker IDs are included with submitted HIT assignments and Qualification requests. 
     */
-  var WorkerId: CustomerId = js.native
+  var WorkerId: CustomerId
 }
 object AssociateQualificationWithWorkerRequest {
   

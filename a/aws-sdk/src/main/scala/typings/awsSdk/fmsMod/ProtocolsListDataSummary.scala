@@ -2,31 +2,29 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolsListDataSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the specified protocols list.
     */
-  var ListArn: js.UndefOr[ResourceArn] = js.native
+  var ListArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The ID of the specified protocols list.
     */
-  var ListId: js.UndefOr[typings.awsSdk.fmsMod.ListId] = js.native
+  var ListId: js.UndefOr[typings.awsSdk.fmsMod.ListId] = js.undefined
   
   /**
     * The name of the specified protocols list.
     */
-  var ListName: js.UndefOr[ResourceName] = js.native
+  var ListName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * An array of protocols in the AWS Firewall Manager protocols list.
     */
-  var ProtocolsList: js.UndefOr[typings.awsSdk.fmsMod.ProtocolsList] = js.native
+  var ProtocolsList: js.UndefOr[typings.awsSdk.fmsMod.ProtocolsList] = js.undefined
 }
 object ProtocolsListDataSummary {
   

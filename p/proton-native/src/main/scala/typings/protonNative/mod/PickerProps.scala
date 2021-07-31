@@ -2,49 +2,48 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickerProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
   
   /**
     * Whether the user can enter their own custom text in addition to the drop down menu.
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the Picker is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When an *editable* Picker is changed. The current text is passed as an argument.
     */
-  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
   /**
     * When a *non-editable* Picker is changed. The current selection is passed as an argument.
     */
-  var onSelect: js.UndefOr[js.Function1[/* selection */ Double, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* selection */ Double, Unit]] = js.undefined
   
   /**
     * What element is selected if the picker *is not* editable.
     */
-  var selected: js.UndefOr[Double] = js.native
+  var selected: js.UndefOr[Double] = js.undefined
   
   /**
     * What text is selected/typed if the picker *is* editable.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the Picker can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PickerProps {
   

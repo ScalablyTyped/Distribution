@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchStopJobRunSuccessfulSubmission extends StObject {
   
   /**
     * The name of the job definition used in the job run that was stopped.
     */
-  var JobName: js.UndefOr[NameString] = js.native
+  var JobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The JobRunId of the job run that was stopped.
     */
-  var JobRunId: js.UndefOr[IdString] = js.native
+  var JobRunId: js.UndefOr[IdString] = js.undefined
 }
 object BatchStopJobRunSuccessfulSubmission {
   

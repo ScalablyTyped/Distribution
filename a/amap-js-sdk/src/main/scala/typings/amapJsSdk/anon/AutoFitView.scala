@@ -3,37 +3,35 @@ package typings.amapJsSdk.anon
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFitView extends StObject {
   
-  var autoFitView: js.UndefOr[Boolean] = js.native
+  var autoFitView: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[Double] = js.native
+  var children: js.UndefOr[Double] = js.undefined
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var citylimit: js.UndefOr[Boolean] = js.native
+  var citylimit: js.UndefOr[Boolean] = js.undefined
   
-  var extensions: js.UndefOr[String] = js.native
+  var extensions: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var map: js.UndefOr[typings.amapJsSdk.AMap.Map] = js.native
+  var map: js.UndefOr[typings.amapJsSdk.AMap.Map] = js.undefined
   
-  var pageIndex: js.UndefOr[Double] = js.native
+  var pageIndex: js.UndefOr[Double] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var panel: js.UndefOr[String | HTMLElement] = js.native
+  var panel: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var renderStyle: js.UndefOr[String] = js.native
+  var renderStyle: js.UndefOr[String] = js.undefined
   
-  var showCover: js.UndefOr[Boolean] = js.native
+  var showCover: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AutoFitView {
   

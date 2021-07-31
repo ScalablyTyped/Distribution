@@ -2,63 +2,61 @@ package typings.solutionCenterCommunicator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScCommunicator {
   
-  @js.native
   trait Environment extends StObject {
     
     /**
       * Domain where to set a cookie in case it's needed for that environment
       */
-    var DOMAIN: String = js.native
+    var DOMAIN: String
     
     /**
       * URL where to reach the GoodData service API
       */
-    var GOODDATA_SERVICE: js.UndefOr[String] = js.native
+    var GOODDATA_SERVICE: js.UndefOr[String] = js.undefined
     
     /**
       * URL where to reach the merchant management service API
       */
-    var MERCHANT_SERVICE: js.UndefOr[String] = js.native
+    var MERCHANT_SERVICE: js.UndefOr[String] = js.undefined
     
     /**
       * URL where to reach the module service API
       */
-    var MODULE_SERVICE: js.UndefOr[String] = js.native
+    var MODULE_SERVICE: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the environment
       */
-    var NAME: String = js.native
+    var NAME: String
     
     /**
       * In case that the domain is localhost, a port can be also specified
       */
-    var PORT: js.UndefOr[String] = js.native
+    var PORT: js.UndefOr[String] = js.undefined
     
     /**
       * URL where to reach the token management service API
       */
-    var TOKEN_SERVICE: js.UndefOr[String] = js.native
+    var TOKEN_SERVICE: js.UndefOr[String] = js.undefined
     
     /**
       * URL where to reach the frontend of the environment
       */
-    var URL: String = js.native
+    var URL: String
     
     /**
       * URL where to reach the user management service API
       */
-    var USER_SERVICE: js.UndefOr[String] = js.native
+    var USER_SERVICE: js.UndefOr[String] = js.undefined
     
     /**
       * URL where to reach the new user service API
       */
-    var USER_SERVICE_NEW: js.UndefOr[String] = js.native
+    var USER_SERVICE_NEW: js.UndefOr[String] = js.undefined
   }
   object Environment {
     
@@ -124,38 +122,37 @@ object ScCommunicator {
     }
   }
   
-  @js.native
   trait Environments extends StObject {
     
     /**
       * Development environment
       */
-    var DEVELOPMENT: Environment = js.native
+    var DEVELOPMENT: Environment
     
     /**
       * Integration environment
       */
-    var INTEGRATION: Environment = js.native
+    var INTEGRATION: Environment
     
     /**
       * Local environment
       */
-    var LOCAL: Environment = js.native
+    var LOCAL: Environment
     
     /**
       * Production environment
       */
-    var PRODUCTION: Environment = js.native
+    var PRODUCTION: Environment
     
     /**
       * Stage environment
       */
-    var STAGE: Environment = js.native
+    var STAGE: Environment
     
     /**
       * Testing environment
       */
-    var TESTING: Environment = js.native
+    var TESTING: Environment
   }
   object Environments {
     
@@ -195,14 +192,13 @@ object ScCommunicator {
     }
   }
   
-  @js.native
   trait ScEnvironmentsProvider extends StObject {
     
     /**
       * Access to the public methods of the service
       */
     @JSName("$get")
-    def $get(): js.Any = js.native
+    def $get(): js.Any
     
     /**
       * Get current environment
@@ -211,7 +207,7 @@ object ScCommunicator {
       * @public
       * @returns {Object} Current or default environment
       */
-    def getCurrentEnvironment(): Environment = js.native
+    def getCurrentEnvironment(): Environment
     
     /**
       * Get specific environment
@@ -220,7 +216,7 @@ object ScCommunicator {
       * @param {string} name - Environment name
       * @returns {Object} Specific or default environment
       */
-    def getSpecificEnvironment(name: String): Environment = js.native
+    def getSpecificEnvironment(name: String): Environment
     
     /**
       * Set current environment
@@ -229,7 +225,7 @@ object ScCommunicator {
       * @param {string|Object} env - Environment name or custom environment object
       * @returns {Object} Named or custom environment
       */
-    def setCurrentEnvironment(env: js.Any): Environment = js.native
+    def setCurrentEnvironment(env: js.Any): Environment
   }
   object ScEnvironmentsProvider {
     

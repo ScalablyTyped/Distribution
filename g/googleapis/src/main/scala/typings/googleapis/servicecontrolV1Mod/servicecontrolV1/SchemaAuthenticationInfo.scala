@@ -3,20 +3,18 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authentication information for the operation.
   */
-@js.native
 trait SchemaAuthenticationInfo extends StObject {
   
   /**
     * The authority selector specified by the requestor, if any. It is not
     * guaranteed that the principal was allowed to use this authority.
     */
-  var authoritySelector: js.UndefOr[String] = js.native
+  var authoritySelector: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the authenticated user (or service account on behalf
@@ -24,7 +22,7 @@ trait SchemaAuthenticationInfo extends StObject {
     * principal email address is redacted for all read-only operations that
     * fail with a &quot;permission denied&quot; error.
     */
-  var principalEmail: js.UndefOr[String] = js.native
+  var principalEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Identity delegation history of an authenticated service account that
@@ -33,7 +31,7 @@ trait SchemaAuthenticationInfo extends StObject {
     * multiple authorities present, they are guaranteed to be sorted based on
     * the original ordering of the identity delegation events.
     */
-  var serviceAccountDelegationInfo: js.UndefOr[js.Array[SchemaServiceAccountDelegationInfo]] = js.native
+  var serviceAccountDelegationInfo: js.UndefOr[js.Array[SchemaServiceAccountDelegationInfo]] = js.undefined
   
   /**
     * The name of the service account key used to create or exchange
@@ -41,14 +39,14 @@ trait SchemaAuthenticationInfo extends StObject {
     * This is a scheme-less URI full resource name. For example:
     * &quot;//iam.googleapis.com/projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}&quot;
     */
-  var serviceAccountKeyName: js.UndefOr[String] = js.native
+  var serviceAccountKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The third party identification (if any) of the authenticated user making
     * the request. When the JSON object represented here has a proto
     * equivalent, the proto name will be indicated in the `@type` property.
     */
-  var thirdPartyPrincipal: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var thirdPartyPrincipal: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaAuthenticationInfo {
   

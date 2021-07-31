@@ -2,15 +2,13 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGetFileInfoSuccessResult extends StObject {
   
-  var digest: String = js.native
+  var digest: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object IGetFileInfoSuccessResult {
   

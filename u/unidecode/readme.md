@@ -11,8 +11,8 @@ ASCII transliterations of Unicode text
 | Full name          | unidecode |
 | Keywords           | unidecode, unicode, utf8 |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 8292418 |
+| # dependents       | 58 |
+| # downloads        | 9515274 |
 | # stars            | 11 |
 
 ## Links

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginGroupMember extends StObject {
   
   /**
     * The unique identifier of the member origin
     */
-  var originId: Input[String] = js.native
+  var originId: Input[String]
 }
 object DistributionOriginGroupMember {
   

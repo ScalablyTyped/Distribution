@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentLabel extends StObject {
   
   /**
     * The name of the label.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The confidence score that Amazon Comprehend has this label correctly attributed.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
 }
 object DocumentLabel {
   

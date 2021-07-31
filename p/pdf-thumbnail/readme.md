@@ -10,9 +10,9 @@ pdf-thumbnail creates a thumbnail of the first page of a pdf file
 | ------------------ | :-------------: |
 | Full name          | pdf-thumbnail |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 40387 |
+| # downloads        | 53219 |
 | # stars            | 0 |
 
 ## Links

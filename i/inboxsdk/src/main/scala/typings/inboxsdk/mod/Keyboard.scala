@@ -2,15 +2,13 @@ package typings.inboxsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Keyboard {
   
-  @js.native
   trait KeyboardInstance extends StObject {
     
-    def createShortcutHandle(keyboardShortcutDescriptor: KeyboardShortcutDescriptor): KeyboardShortcutHandle = js.native
+    def createShortcutHandle(keyboardShortcutDescriptor: KeyboardShortcutDescriptor): KeyboardShortcutHandle
   }
   object KeyboardInstance {
     
@@ -28,12 +26,11 @@ object Keyboard {
     }
   }
   
-  @js.native
   trait KeyboardShortcutDescriptor extends StObject {
     
-    var chord: String = js.native
+    var chord: String
     
-    var description: String = js.native
+    var description: String
   }
   object KeyboardShortcutDescriptor {
     
@@ -54,10 +51,9 @@ object Keyboard {
     }
   }
   
-  @js.native
   trait KeyboardShortcutHandle extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object KeyboardShortcutHandle {
     

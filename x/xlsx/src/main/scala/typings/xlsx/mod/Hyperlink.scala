@@ -2,17 +2,15 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hyperlink extends StObject {
   
   /** Target of the link (HREF) */
-  var Target: String = js.native
+  var Target: String
   
   /** Plaintext tooltip to display when mouse is over cell */
-  var Tooltip: js.UndefOr[String] = js.native
+  var Tooltip: js.UndefOr[String] = js.undefined
 }
 object Hyperlink {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientVpnAuthorizationRuleStatus extends StObject {
   
   /**
     * The state of the authorization rule.
     */
-  var Code: js.UndefOr[ClientVpnAuthorizationRuleStatusCode] = js.native
+  var Code: js.UndefOr[ClientVpnAuthorizationRuleStatusCode] = js.undefined
   
   /**
     * A message about the status of the authorization rule, if applicable.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object ClientVpnAuthorizationRuleStatus {
   

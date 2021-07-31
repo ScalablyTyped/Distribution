@@ -7,7 +7,6 @@ import typings.winrtUwp.anon.OpenStatus
 import typings.winrtUwp.winrtUwpStrings.valuechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types for using general-purpose I/O (GPIO) pins in user mode. */
@@ -22,15 +21,21 @@ object Gpio {
     
     /** The GPIO pin was successfully opened. */
     @js.native
-    sealed trait pinOpened extends GpioOpenStatus
+    sealed trait pinOpened
+      extends StObject
+         with GpioOpenStatus
     
     /** The pin is reserved by the system and is not available to apps that run in user mode. */
     @js.native
-    sealed trait pinUnavailable extends GpioOpenStatus
+    sealed trait pinUnavailable
+      extends StObject
+         with GpioOpenStatus
     
     /** The pin is currently open in an incompatible sharing mode. For example: */
     @js.native
-    sealed trait sharingViolation extends GpioOpenStatus
+    sealed trait sharingViolation
+      extends StObject
+         with GpioOpenStatus
   }
   
   @js.native
@@ -42,35 +47,51 @@ object Gpio {
     
     /** Configures the GPIO pin in floating mode, with high impedance. */
     @js.native
-    sealed trait input extends GpioPinDriveMode
+    sealed trait input
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin as high impedance with a pull-down resistor to ground. */
     @js.native
-    sealed trait inputPullDown extends GpioPinDriveMode
+    sealed trait inputPullDown
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin as high impedance with a pull-up resistor to the voltage charge connection (VCC). */
     @js.native
-    sealed trait inputPullUp extends GpioPinDriveMode
+    sealed trait inputPullUp
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin in strong drive mode, with low impedance. */
     @js.native
-    sealed trait output extends GpioPinDriveMode
+    sealed trait output
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO in open drain mode. */
     @js.native
-    sealed trait outputOpenDrain extends GpioPinDriveMode
+    sealed trait outputOpenDrain
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin in open drain mode with resistive pull-up mode. */
     @js.native
-    sealed trait outputOpenDrainPullUp extends GpioPinDriveMode
+    sealed trait outputOpenDrainPullUp
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin in open collector mode. */
     @js.native
-    sealed trait outputOpenSource extends GpioPinDriveMode
+    sealed trait outputOpenSource
+      extends StObject
+         with GpioPinDriveMode
     
     /** Configures the GPIO pin in open collector mode with resistive pull-down mode. */
     @js.native
-    sealed trait outputOpenSourcePullDown extends GpioPinDriveMode
+    sealed trait outputOpenSourcePullDown
+      extends StObject
+         with GpioPinDriveMode
   }
   
   @js.native
@@ -82,11 +103,15 @@ object Gpio {
     
     /** The value of the GPIO pin changed from high to low. */
     @js.native
-    sealed trait fallingEdge extends GpioPinEdge
+    sealed trait fallingEdge
+      extends StObject
+         with GpioPinEdge
     
     /** The value of the GPIO pin changed from low to high. */
     @js.native
-    sealed trait risingEdge extends GpioPinEdge
+    sealed trait risingEdge
+      extends StObject
+         with GpioPinEdge
   }
   
   @js.native
@@ -98,11 +123,15 @@ object Gpio {
     
     /** The value of the GPIO pin is high. */
     @js.native
-    sealed trait high extends GpioPinValue
+    sealed trait high
+      extends StObject
+         with GpioPinValue
     
     /** The value of the GPIO pin is low. */
     @js.native
-    sealed trait low extends GpioPinValue
+    sealed trait low
+      extends StObject
+         with GpioPinValue
   }
   
   @js.native
@@ -114,11 +143,15 @@ object Gpio {
     
     /** Opens the GPIO pin exclusively, so that no other connection to the pin can be opened. */
     @js.native
-    sealed trait exclusive extends GpioSharingMode
+    sealed trait exclusive
+      extends StObject
+         with GpioSharingMode
     
     /** Opens the GPIO pin as shared, so that other connections in SharedReadOnly mode to the pin can be opened. */
     @js.native
-    sealed trait sharedReadOnly extends GpioSharingMode
+    sealed trait sharedReadOnly
+      extends StObject
+         with GpioSharingMode
   }
   
   /** Represents the default general-purpose I/O (GPIO) controller for the system. */
@@ -154,7 +187,7 @@ object Gpio {
   @js.native
   trait GpioPin extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs]): Unit = js.native
     
@@ -178,7 +211,7 @@ object Gpio {
     def isDriveModeSupported(driveMode: GpioPinDriveMode): Boolean = js.native
     
     /** Occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
-    def onvaluechanged(ev: GpioPinValueChangedEventArgs with WinRTEvent[GpioPin]): Unit = js.native
+    def onvaluechanged(ev: GpioPinValueChangedEventArgs & WinRTEvent[GpioPin]): Unit = js.native
     /** Occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
     @JSName("onvaluechanged")
     var onvaluechanged_Original: TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs] = js.native
@@ -192,7 +225,7 @@ object Gpio {
       */
     def read(): GpioPinValue = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs]): Unit = js.native
     
@@ -213,11 +246,10 @@ object Gpio {
   }
   
   /** Provides data about the GpioPin.ValueChanged event that occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
-  @js.native
   trait GpioPinValueChangedEventArgs extends StObject {
     
     /** Gets the type of change that occurred to the value of the general-purpose I/O (GPIO) pin for the GpioPin.ValueChanged event. */
-    var edge: GpioPinEdge = js.native
+    var edge: GpioPinEdge
   }
   object GpioPinValueChangedEventArgs {
     
@@ -238,10 +270,9 @@ object Gpio {
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The GPIO API needs a GPIO Provider implementation to talk to the GPIO controller. */
   object Provider {
     
-    @js.native
     trait GpioPinProviderValueChangedEventArgs extends StObject {
       
-      var edge: js.Any = js.native
+      var edge: js.Any
     }
     object GpioPinProviderValueChangedEventArgs {
       
@@ -260,10 +291,9 @@ object Gpio {
     }
     
     /** Represents actions common to general-purpose I/O (GPIO) controller providers. */
-    @js.native
     trait IGpioProvider extends StObject {
       
-      var getControllers: js.Any = js.native
+      var getControllers: js.Any
     }
     object IGpioProvider {
       

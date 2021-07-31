@@ -2,17 +2,15 @@ package typings.phaser.spine.webgl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VertexAttribute extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var numElements: Double = js.native
+  var numElements: Double
   
-  var `type`: VertexAttributeType = js.native
+  var `type`: VertexAttributeType
 }
 object VertexAttribute {
   

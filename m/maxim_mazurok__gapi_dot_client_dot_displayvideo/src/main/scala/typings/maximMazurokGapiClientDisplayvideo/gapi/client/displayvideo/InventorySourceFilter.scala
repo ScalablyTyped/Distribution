@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySourceFilter extends StObject {
   
   /**
     * Inventory Sources to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Leave empty to download all Inventory Sources
     * for the selected Advertiser or Partner.
     */
-  var inventorySourceIds: js.UndefOr[js.Array[String]] = js.native
+  var inventorySourceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object InventorySourceFilter {
   

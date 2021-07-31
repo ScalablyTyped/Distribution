@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Setting extends StObject {
   
   /**
     * The Amazon ECS resource name.
     */
-  var name: js.UndefOr[SettingName] = js.native
+  var name: js.UndefOr[SettingName] = js.undefined
   
   /**
     * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If this field is omitted, the authenticated user is assumed.
     */
-  var principalArn: js.UndefOr[String] = js.native
+  var principalArn: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the account setting is enabled or disabled for the specified resource.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Setting {
   

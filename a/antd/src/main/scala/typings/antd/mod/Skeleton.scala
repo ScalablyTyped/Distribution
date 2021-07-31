@@ -8,14 +8,13 @@ import typings.antd.skeletonSkeletonMod.SkeletonProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Skeleton {
   
-  @JSImport("antd", "Skeleton")
-  @js.native
-  def apply(props: SkeletonProps): Element = js.native
+  @scala.inline
+  def apply(props: SkeletonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("antd", "Skeleton")
   @js.native
   val ^ : js.Any = js.native
@@ -32,9 +31,8 @@ object Skeleton {
   @scala.inline
   def Button_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
   
-  @JSImport("antd", "Skeleton.Image")
-  @js.native
-  def Image(props: SkeletonImageProps): Element = js.native
+  @scala.inline
+  def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("antd", "Skeleton.Input")
   @js.native

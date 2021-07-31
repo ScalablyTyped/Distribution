@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an important date for a contact. */
-@js.native
 trait ContactDate extends StObject {
   
   /** Gets and sets the day for an important date for a contact. */
-  var day: Double = js.native
+  var day: Double
   
   /** Gets and sets the description for an important date for a contact. The maximum string length for the description is 512 characters. */
-  var description: String = js.native
+  var description: String
   
   /** Gets and sets the kind of important date for a contact. */
-  var kind: ContactDateKind = js.native
+  var kind: ContactDateKind
   
   /** Gets and sets the month for an important date for a contact. */
-  var month: Double = js.native
+  var month: Double
   
   /** Gets and sets the year for an important date for a contact. */
-  var year: Double = js.native
+  var year: Double
 }
 object ContactDate {
   

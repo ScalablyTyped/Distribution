@@ -5,23 +5,34 @@ import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMessageResultMod {
   
   @JSImport("inversify-express-utils/dts/results/ResponseMessageResult", JSImport.Default)
   @js.native
-  class default protected () extends ResponseMessageResult {
+  class default protected ()
+    extends StObject
+       with ResponseMessageResult {
     def this(message: HttpResponseMessage, apiController: BaseHttpController) = this()
-  }
-  
-  @js.native
-  trait ResponseMessageResult extends IHttpActionResult {
     
+    /* CompleteClass */
     var apiController: js.Any = js.native
     
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
+    
+    /* CompleteClass */
     var message: js.Any = js.native
+  }
+  
+  trait ResponseMessageResult
+    extends StObject
+       with IHttpActionResult {
+    
+    var apiController: js.Any
+    
+    var message: js.Any
   }
   object ResponseMessageResult {
     

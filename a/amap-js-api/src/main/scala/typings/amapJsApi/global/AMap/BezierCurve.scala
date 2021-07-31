@@ -3,13 +3,13 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.BezierCurve.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.BezierCurve")
 @js.native
 class BezierCurve[ExtraData] protected ()
-  extends typings.amapJsApi.AMap.BezierCurve[ExtraData] {
+  extends StObject
+     with typings.amapJsApi.AMap.BezierCurve[ExtraData] {
   /**
     * 贝瑟尔曲线
     * @param options 覆盖物选项

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTemplateInput extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of a change set for which AWS CloudFormation returns the associated template. If you specify a name, you must also specify the StackName.
     */
-  var ChangeSetName: js.UndefOr[ChangeSetNameOrId] = js.native
+  var ChangeSetName: js.UndefOr[ChangeSetNameOrId] = js.undefined
   
   /**
     * The name or the unique stack ID that is associated with the stack, which are not always interchangeable:   Running stacks: You can specify either the stack's name or its unique stack ID.   Deleted stacks: You must specify the unique stack ID.   Default: There is no default value.
     */
-  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.native
+  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.undefined
   
   /**
     * For templates that include transforms, the stage of the template that AWS CloudFormation returns. To get the user-submitted template, specify Original. To get the template after AWS CloudFormation has processed all transforms, specify Processed.  If the template doesn't include transforms, Original and Processed return the same template. By default, AWS CloudFormation specifies Original. 
     */
-  var TemplateStage: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateStage] = js.native
+  var TemplateStage: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateStage] = js.undefined
 }
 object GetTemplateInput {
   

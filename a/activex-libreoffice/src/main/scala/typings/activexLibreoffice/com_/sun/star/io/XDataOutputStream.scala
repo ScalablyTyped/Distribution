@@ -4,42 +4,42 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to write machine-independent simple data types to a stream.
   * @see com.sun.star.io.XDataInputStream
   */
-@js.native
-trait XDataOutputStream extends XOutputStream {
+trait XDataOutputStream
+  extends StObject
+     with XOutputStream {
   
   /** writes a boolean. It is an 8-bit value. 0 means FALSE; all other values mean TRUE. */
-  def writeBoolean(Value: Boolean): Unit = js.native
+  def writeBoolean(Value: Boolean): Unit
   
   /** writes an 8-bit byte. */
-  def writeByte(Value: Double): Unit = js.native
+  def writeByte(Value: Double): Unit
   
   /** writes a 16-bit character. */
-  def writeChar(Value: String): Unit = js.native
+  def writeChar(Value: String): Unit
   
   /** writes a 64-bit IEEE double. */
-  def writeDouble(Value: Double): Unit = js.native
+  def writeDouble(Value: Double): Unit
   
   /** writes a 32-bit IEEE float. */
-  def writeFloat(Value: Double): Unit = js.native
+  def writeFloat(Value: Double): Unit
   
   /** writes a 64-bit big endian integer. */
-  def writeHyper(Value: Double): Unit = js.native
+  def writeHyper(Value: Double): Unit
   
   /** writes a 32-bit big endian integer. */
-  def writeLong(Value: Double): Unit = js.native
+  def writeLong(Value: Double): Unit
   
   /** writes a 16-bit big endian integer. */
-  def writeShort(Value: Double): Unit = js.native
+  def writeShort(Value: Double): Unit
   
   /** writes a string in UTF format. */
-  def writeUTF(Value: String): Unit = js.native
+  def writeUTF(Value: String): Unit
 }
 object XDataOutputStream {
   

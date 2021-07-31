@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PATCH = js.native
+  var method: PATCH
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: `SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings` = js.native
+  var url: `SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`
 }
 object TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PATCH,
-    request: RequestRequestOptions,
-    url: `SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`
-  ): TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/teams/:team_id/team-sync/group-mappings")
     __obj.asInstanceOf[TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions]
   }
   

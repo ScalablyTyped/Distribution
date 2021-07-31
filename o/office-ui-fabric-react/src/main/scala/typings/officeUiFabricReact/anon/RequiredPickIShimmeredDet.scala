@@ -2,14 +2,12 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/ShimmeredDetailsList.types.IShimmeredDetailsListProps, 'theme'>> */
-@js.native
 trait RequiredPickIShimmeredDet extends StObject {
   
-  var theme: js.Any = js.native
+  var theme: js.Any
 }
 object RequiredPickIShimmeredDet {
   

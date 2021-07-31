@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTagsResponse extends StObject {
   
   /**
     * The requested tags.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object GetTagsResponse {
   

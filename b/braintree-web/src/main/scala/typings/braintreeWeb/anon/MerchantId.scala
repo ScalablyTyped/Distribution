@@ -2,13 +2,11 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantId extends StObject {
   
-  var merchantId: String = js.native
+  var merchantId: String
 }
 object MerchantId {
   

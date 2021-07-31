@@ -2,26 +2,24 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeManagedRuleGroupRequest extends StObject {
   
   /**
     * The name of the managed rule group. You use this, along with the vendor name, to identify the rule group.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an API Gateway REST API, or an AppSync GraphQL API.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
-  var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
+  var Scope: typings.awsSdk.wafv2Mod.Scope
   
   /**
     * The name of the managed rule group vendor. You use this, along with the rule group name, to identify the rule group.
     */
-  var VendorName: typings.awsSdk.wafv2Mod.VendorName = js.native
+  var VendorName: typings.awsSdk.wafv2Mod.VendorName
 }
 object DescribeManagedRuleGroupRequest {
   

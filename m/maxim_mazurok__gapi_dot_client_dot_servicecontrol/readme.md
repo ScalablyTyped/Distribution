@@ -10,9 +10,9 @@ TypeScript typings for Service Control API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicecontrol |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 976 |
+| # downloads        | 1082 |
 | # stars            | 0 |
 
 ## Links

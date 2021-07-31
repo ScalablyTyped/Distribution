@@ -4,7 +4,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,11 +39,13 @@ class Picture () extends GraphObject {
 }
 object Picture {
   
+  @JSImport("go", "Picture")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("go", "Picture.clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
-  @JSImport("go", "Picture.clearCache")
-  @js.native
-  def clearCache(url: String): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+  @scala.inline
+  def clearCache(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

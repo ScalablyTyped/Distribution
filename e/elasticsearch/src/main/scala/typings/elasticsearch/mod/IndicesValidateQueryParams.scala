@@ -2,42 +2,42 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesValidateQueryParams extends GenericParams {
+trait IndicesValidateQueryParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var operationThreading: js.UndefOr[js.Any] = js.native
+  var operationThreading: js.UndefOr[js.Any] = js.undefined
   
   // even the docs don't know what this does
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var rewrite: js.UndefOr[Boolean] = js.native
+  var rewrite: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[NameList] = js.native
+  var `type`: js.UndefOr[NameList] = js.undefined
 }
 object IndicesValidateQueryParams {
   

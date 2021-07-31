@@ -2,71 +2,69 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEnvironmentMessage extends StObject {
   
   /**
     * The name of the application with which the environment is associated.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * If this parameter is specified, AWS Elastic Beanstalk updates the description of this environment.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * The ID of the environment to update. If no environment with this ID exists, AWS Elastic Beanstalk returns an InvalidParameterValue error. Condition: You must specify either this or an EnvironmentName, or both. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
     */
-  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.native
+  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.undefined
   
   /**
     * The name of the environment to update. If no environment with this name exists, AWS Elastic Beanstalk returns an InvalidParameterValue error.  Condition: You must specify either this or an EnvironmentId, or both. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * The name of the group to which the target environment belongs. Specify a group name only if the environment's name is specified in an environment manifest and not with the environment name or environment ID parameters. See Environment Manifest (env.yaml) for details.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.GroupName] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk updates the configuration set associated with the running environment and sets the specified configuration options to the requested value.
     */
-  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.native
+  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.undefined
   
   /**
     * A list of custom user-defined configuration options to remove from the configuration set for this environment.
     */
-  var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.native
+  var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.undefined
   
   /**
     * The ARN of the platform, if used.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * This specifies the platform version that the environment will run after the environment is updated.
     */
-  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
+  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.undefined
   
   /**
     * If this parameter is specified, AWS Elastic Beanstalk deploys this configuration template to the environment. If no such configuration template is found, AWS Elastic Beanstalk returns an InvalidParameterValue error. 
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
   
   /**
     * This specifies the tier to use to update the environment. Condition: At this time, if you change the tier version, name, or type, AWS Elastic Beanstalk returns InvalidParameterValue error. 
     */
-  var Tier: js.UndefOr[EnvironmentTier] = js.native
+  var Tier: js.UndefOr[EnvironmentTier] = js.undefined
   
   /**
     * If this parameter is specified, AWS Elastic Beanstalk deploys the named application version to the environment. If no such application version is found, returns an InvalidParameterValue error. 
     */
-  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.native
+  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.undefined
 }
 object UpdateEnvironmentMessage {
   

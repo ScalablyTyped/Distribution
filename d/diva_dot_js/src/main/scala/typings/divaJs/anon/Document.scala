@@ -3,15 +3,13 @@ package typings.divaJs.anon
 import typings.divaJs.interfacesMod.Region
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var document: Region = js.native
+  var document: Region
   
-  var page: Region = js.native
+  var page: Region
 }
 object Document {
   

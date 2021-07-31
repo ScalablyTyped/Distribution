@@ -11,58 +11,56 @@ import typings.std.RequestRedirect
 import typings.wordpressApiFetch.wordpressApiFetchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @wordpress/api-fetch.@wordpress/api-fetch.APIFetchOptions & {  parse :false} */
-@js.native
 trait APIFetchOptionsparsefalse extends StObject {
   
   /**
     * A BodyInit object or null to set request's body.
     */
-  var body: js.UndefOr[BodyInit | Null] = js.native
+  var body: js.UndefOr[BodyInit | Null] = js.undefined
   
   /**
     * A string indicating how the request will interact with the browser's cache to set request's cache.
     */
-  var cache: js.UndefOr[RequestCache] = js.native
+  var cache: js.UndefOr[RequestCache] = js.undefined
   
   /**
     * A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
     */
-  var credentials: js.UndefOr[RequestCredentials] = js.native
+  var credentials: js.UndefOr[RequestCredentials] = js.undefined
   
   /**
     * Shorthand to be used in place of body, accepts an object value to be
     * stringified to JSON.
     */
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
   /**
     * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
     */
-  var headers: js.UndefOr[HeadersInit] = js.native
+  var headers: js.UndefOr[HeadersInit] = js.undefined
   
   /**
     * A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
     */
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean to set request's keepalive.
     */
-  var keepalive: js.UndefOr[Boolean] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string to set request's method.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
     */
-  var mode: js.UndefOr[RequestMode] = js.native
+  var mode: js.UndefOr[RequestMode] = js.undefined
   
   /**
     * Unlike `fetch`, the `Promise` return value of `apiFetch` will resolve to the
@@ -70,48 +68,48 @@ trait APIFetchOptionsparsefalse extends StObject {
     *
     * @defaultValue true
     */
-  var parse: js.UndefOr[Boolean] with `false` = js.native
+  var parse: js.UndefOr[Boolean] & `false`
   
   /**
     * Shorthand to be used in place of url, appended to the REST API root URL
     * for the current site.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
     */
-  var redirect: js.UndefOr[RequestRedirect] = js.native
+  var redirect: js.UndefOr[RequestRedirect] = js.undefined
   
   /**
     * A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer.
     */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /**
     * A referrer policy to set request's referrerPolicy.
     */
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   
   /**
     * An AbortSignal to set request's signal.
     */
-  var signal: js.UndefOr[AbortSignal | Null] = js.native
+  var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   
   /**
     * Absolute URL to the endpoint from which to fetch.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Can only be null. Used to disassociate request from any Window.
     */
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object APIFetchOptionsparsefalse {
   
   @scala.inline
-  def apply(parse: js.UndefOr[Boolean] with `false`): APIFetchOptionsparsefalse = {
+  def apply(parse: js.UndefOr[Boolean] & `false`): APIFetchOptionsparsefalse = {
     val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIFetchOptionsparsefalse]
   }
@@ -180,7 +178,7 @@ object APIFetchOptionsparsefalse {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setParse(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    def setParse(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])

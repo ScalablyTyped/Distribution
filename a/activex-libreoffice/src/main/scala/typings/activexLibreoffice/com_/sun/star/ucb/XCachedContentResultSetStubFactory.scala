@@ -5,19 +5,19 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** creates a {@link CachedContentResultSetStub} . */
-@js.native
-trait XCachedContentResultSetStubFactory extends XInterface {
+trait XCachedContentResultSetStubFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a remote optimized {@link com.sun.star.sdbc.XResultSet} .
     * @param xSource must be an instance of service {@link ContentResultSet} .
     * @returns an instance of service {@link CachedContentResultSetStub} .
     */
-  def createCachedContentResultSetStub(xSource: XResultSet): XResultSet = js.native
+  def createCachedContentResultSetStub(xSource: XResultSet): XResultSet
 }
 object XCachedContentResultSetStubFactory {
   

@@ -5,7 +5,6 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Web {
@@ -17,19 +16,29 @@ object Web {
   object WebAuthenticationOptions extends StObject {
     
     @js.native
-    sealed trait none extends WebAuthenticationOptions
+    sealed trait none
+      extends StObject
+         with WebAuthenticationOptions
     
     @js.native
-    sealed trait silentMode extends WebAuthenticationOptions
+    sealed trait silentMode
+      extends StObject
+         with WebAuthenticationOptions
     
     @js.native
-    sealed trait useCorporateNetwork extends WebAuthenticationOptions
+    sealed trait useCorporateNetwork
+      extends StObject
+         with WebAuthenticationOptions
     
     @js.native
-    sealed trait useHttpPost extends WebAuthenticationOptions
+    sealed trait useHttpPost
+      extends StObject
+         with WebAuthenticationOptions
     
     @js.native
-    sealed trait useTitle extends WebAuthenticationOptions
+    sealed trait useTitle
+      extends StObject
+         with WebAuthenticationOptions
   }
   
   @js.native
@@ -39,13 +48,19 @@ object Web {
   object WebAuthenticationStatus extends StObject {
     
     @js.native
-    sealed trait errorHttp extends WebAuthenticationStatus
+    sealed trait errorHttp
+      extends StObject
+         with WebAuthenticationStatus
     
     @js.native
-    sealed trait success extends WebAuthenticationStatus
+    sealed trait success
+      extends StObject
+         with WebAuthenticationStatus
     
     @js.native
-    sealed trait userCancel extends WebAuthenticationStatus
+    sealed trait userCancel
+      extends StObject
+         with WebAuthenticationStatus
   }
   
   @js.native
@@ -61,14 +76,13 @@ object Web {
     def getCurrentApplicationCallbackUri(): Uri = js.native
   }
   
-  @js.native
   trait IWebAuthenticationResult extends StObject {
     
-    var responseData: String = js.native
+    var responseData: String
     
-    var responseErrorDetail: Double = js.native
+    var responseErrorDetail: Double
     
-    var responseStatus: WebAuthenticationStatus = js.native
+    var responseStatus: WebAuthenticationStatus
   }
   object IWebAuthenticationResult {
     
@@ -92,11 +106,11 @@ object Web {
     }
   }
   
-  @js.native
   trait WebAuthenticationBroker extends StObject
   
-  @js.native
-  trait WebAuthenticationResult extends IWebAuthenticationResult
+  trait WebAuthenticationResult
+    extends StObject
+       with IWebAuthenticationResult
   object WebAuthenticationResult {
     
     @scala.inline

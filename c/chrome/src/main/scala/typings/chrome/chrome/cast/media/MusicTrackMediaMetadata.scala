@@ -3,42 +3,40 @@ package typings.chrome.chrome.cast.media
 import typings.chrome.chrome.cast.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MusicTrackMediaMetadata extends StObject {
   
-  var albumArtist: String = js.native
+  var albumArtist: String
   
-  var albumName: String = js.native
+  var albumName: String
   
-  var artist: String = js.native
+  var artist: String
   
   /** @deprecated. Use artist instead. */
-  var artistName: String = js.native
+  var artistName: String
   
-  var composer: String = js.native
+  var composer: String
   
-  var discNumber: Double = js.native
+  var discNumber: Double
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var metadataType: MetadataType = js.native
+  var metadataType: MetadataType
   
-  var releaseDate: String = js.native
+  var releaseDate: String
   
   /** @deprecated. Use releaseDate instead. */
-  var releaseYear: Double = js.native
+  var releaseYear: Double
   
-  var songName: String = js.native
+  var songName: String
   
-  var title: String = js.native
+  var title: String
   
-  var trackNumber: Double = js.native
+  var trackNumber: Double
   
   /** @deprecated. Use metadataType instead. */
-  var `type`: MetadataType = js.native
+  var `type`: MetadataType
 }
 object MusicTrackMediaMetadata {
   

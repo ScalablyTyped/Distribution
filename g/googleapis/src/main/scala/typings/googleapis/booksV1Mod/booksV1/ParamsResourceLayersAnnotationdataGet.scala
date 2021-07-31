@@ -6,69 +6,69 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLayersAnnotationdataGet extends StandardParameters {
+trait ParamsResourceLayersAnnotationdataGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * For the dictionary layer. Whether or not to allow web definitions.
     */
-  var allowWebDefinitions: js.UndefOr[Boolean] = js.native
+  var allowWebDefinitions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the annotation data to retrieve.
     */
-  var annotationDataId: js.UndefOr[String] = js.native
+  var annotationDataId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The content version for the volume you are trying to retrieve.
     */
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The requested pixel height for any images. If height is provided width
     * must also be provided.
     */
-  var h: js.UndefOr[Double] = js.native
+  var h: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID for the layer to get the annotations.
     */
-  var layerId: js.UndefOr[String] = js.native
+  var layerId: js.UndefOr[String] = js.undefined
   
   /**
     * The locale information for the data. ISO-639-1 language and ISO-3166-1
     * country code. Ex: 'en_US'.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The requested scale for the image.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The volume to retrieve annotations for.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
   
   /**
     * The requested pixel width for any images. If width is provided height
     * must also be provided.
     */
-  var w: js.UndefOr[Double] = js.native
+  var w: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceLayersAnnotationdataGet {
   

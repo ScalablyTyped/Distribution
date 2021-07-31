@@ -7,7 +7,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nameMod {
@@ -19,23 +18,31 @@ object nameMod {
   object ComponentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ComponentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ComponentType & Double] = js.native
     
     @js.native
-    sealed trait GENERIC extends ComponentType
-    /* 8 */ val GENERIC: typings.ndnJs.nameMod.ComponentType.GENERIC with Double = js.native
+    sealed trait GENERIC
+      extends StObject
+         with ComponentType
+    /* 8 */ val GENERIC: typings.ndnJs.nameMod.ComponentType.GENERIC & Double = js.native
     
     @js.native
-    sealed trait IMPLICIT_SHA256_DIGEST extends ComponentType
-    /* 1 */ val IMPLICIT_SHA256_DIGEST: typings.ndnJs.nameMod.ComponentType.IMPLICIT_SHA256_DIGEST with Double = js.native
+    sealed trait IMPLICIT_SHA256_DIGEST
+      extends StObject
+         with ComponentType
+    /* 1 */ val IMPLICIT_SHA256_DIGEST: typings.ndnJs.nameMod.ComponentType.IMPLICIT_SHA256_DIGEST & Double = js.native
     
     @js.native
-    sealed trait OTHER_CODE extends ComponentType
-    /* 0x7fff */ val OTHER_CODE: typings.ndnJs.nameMod.ComponentType.OTHER_CODE with Double = js.native
+    sealed trait OTHER_CODE
+      extends StObject
+         with ComponentType
+    /* 0x7fff */ val OTHER_CODE: typings.ndnJs.nameMod.ComponentType.OTHER_CODE & Double = js.native
     
     @js.native
-    sealed trait PARAMETERS_SHA256_DIGEST extends ComponentType
-    /* 2 */ val PARAMETERS_SHA256_DIGEST: typings.ndnJs.nameMod.ComponentType.PARAMETERS_SHA256_DIGEST with Double = js.native
+    sealed trait PARAMETERS_SHA256_DIGEST
+      extends StObject
+         with ComponentType
+    /* 2 */ val PARAMETERS_SHA256_DIGEST: typings.ndnJs.nameMod.ComponentType.PARAMETERS_SHA256_DIGEST & Double = js.native
   }
   
   @JSImport("ndn-js/name", "Name")
@@ -48,23 +55,23 @@ object nameMod {
     def append(components: Name): Name = js.native
     def append(components: Component): Name = js.native
     def append(value: String): Name = js.native
-    def append(value: String, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
+    def append(value: String, `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: String, `type`: ComponentType): Name = js.native
     def append(value: String, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     def append(value: js.Array[Double]): Name = js.native
-    def append(value: js.Array[Double], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
+    def append(value: js.Array[Double], `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: js.Array[Double], `type`: ComponentType): Name = js.native
     def append(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double): Name = js.native
     def append(value: Blob): Name = js.native
-    def append(value: Blob, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
+    def append(value: Blob, `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: Blob, `type`: ComponentType): Name = js.native
     def append(value: Blob, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     def append(value: ArrayBuffer): Name = js.native
-    def append(value: ArrayBuffer, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
+    def append(value: ArrayBuffer, `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: ArrayBuffer, `type`: ComponentType): Name = js.native
     def append(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     def append(value: Uint8Array): Name = js.native
-    def append(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
+    def append(value: Uint8Array, `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: Uint8Array, `type`: ComponentType): Name = js.native
     def append(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     
@@ -85,19 +92,19 @@ object nameMod {
     def clear(): Unit = js.native
     
     def compare(iStartComponent: Double, nComponents: Double, other: Name): CompareResult = js.native
-    def compare(
-      iStartComponent: Double,
-      nComponents: Double,
-      other: Name,
-      iOtherStartComponent: js.UndefOr[scala.Nothing],
-      nOtherComponents: Double
-    ): CompareResult = js.native
     def compare(iStartComponent: Double, nComponents: Double, other: Name, iOtherStartComponent: Double): CompareResult = js.native
     def compare(
       iStartComponent: Double,
       nComponents: Double,
       other: Name,
       iOtherStartComponent: Double,
+      nOtherComponents: Double
+    ): CompareResult = js.native
+    def compare(
+      iStartComponent: Double,
+      nComponents: Double,
+      other: Name,
+      iOtherStartComponent: Unit,
       nOtherComponents: Double
     ): CompareResult = js.native
     def compare(other: Name): CompareResult = js.native
@@ -130,6 +137,10 @@ object nameMod {
   /* static members */
   object Name {
     
+    @JSImport("ndn-js/name", "Name")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("ndn-js/name", "Name.Component")
     @js.native
     class Component () extends StObject {
@@ -139,23 +150,23 @@ object nameMod {
       def this(value: Blob) = this()
       def this(value: ArrayBuffer) = this()
       def this(value: Uint8Array) = this()
-      def this(value: js.UndefOr[scala.Nothing], `type`: ComponentType) = this()
       def this(value: String, `type`: ComponentType) = this()
       def this(value: js.Array[Double], `type`: ComponentType) = this()
+      def this(value: Unit, `type`: ComponentType) = this()
       def this(value: Blob, `type`: ComponentType) = this()
       def this(value: ArrayBuffer, `type`: ComponentType) = this()
       def this(value: Uint8Array, `type`: ComponentType) = this()
-      def this(value: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
-      def this(value: js.UndefOr[scala.Nothing], `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: String, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+      def this(value: String, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: String, `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: js.Array[Double], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+      def this(value: js.Array[Double], `type`: Unit, otherTypeCode: Double) = this()
       def this(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: Blob, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+      def this(value: Unit, `type`: Unit, otherTypeCode: Double) = this()
+      def this(value: Unit, `type`: ComponentType, otherTypeCode: Double) = this()
+      def this(value: Blob, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: Blob, `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: ArrayBuffer, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+      def this(value: ArrayBuffer, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+      def this(value: Uint8Array, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double) = this()
       
       def compare(other: Component): CompareResult = js.native
@@ -204,64 +215,55 @@ object nameMod {
     }
     object Component {
       
-      /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromImplicitSha256Digest")
+      @JSImport("ndn-js/name", "Name.Component")
       @js.native
-      def fromImplicitSha256Digest(digest: Blob): Component = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromNumber")
-      @js.native
-      def fromNumber(number: Double): Component = js.native
-      @JSImport("ndn-js/name", "Name.Component.fromNumber")
-      @js.native
-      def fromNumber(number: Double, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Component = js.native
-      @JSImport("ndn-js/name", "Name.Component.fromNumber")
-      @js.native
-      def fromNumber(number: Double, `type`: ComponentType): Component = js.native
-      @JSImport("ndn-js/name", "Name.Component.fromNumber")
-      @js.native
-      def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): Component = js.native
+      @scala.inline
+      def fromImplicitSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImplicitSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromNumberWithMarker")
-      @js.native
-      def fromNumberWithMarker(number: Double, marker: Double): Component = js.native
+      @scala.inline
+      def fromNumber(number: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Component]
+      @scala.inline
+      def fromNumber(number: Double, `type`: Unit, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
+      @scala.inline
+      def fromNumber(number: Double, `type`: ComponentType): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Component]
+      @scala.inline
+      def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromParametersSha256Digest")
-      @js.native
-      def fromParametersSha256Digest(digest: Blob): Component = js.native
+      @scala.inline
+      def fromNumberWithMarker(number: Double, marker: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumberWithMarker")(number.asInstanceOf[js.Any], marker.asInstanceOf[js.Any])).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromSegment")
-      @js.native
-      def fromSegment(segment: Double): Component = js.native
+      @scala.inline
+      def fromParametersSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParametersSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromSegmentOffset")
-      @js.native
-      def fromSegmentOffset(segmentOffset: Double): Component = js.native
+      @scala.inline
+      def fromSegment(segment: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromSequenceNumber")
-      @js.native
-      def fromSequenceNumber(sequenceNumber: Double): Component = js.native
+      @scala.inline
+      def fromSegmentOffset(segmentOffset: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegmentOffset")(segmentOffset.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromTimestamp")
-      @js.native
-      def fromTimestamp(timestamp: Double): Component = js.native
+      @scala.inline
+      def fromSequenceNumber(sequenceNumber: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequenceNumber")(sequenceNumber.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @JSImport("ndn-js/name", "Name.Component.fromVersion")
-      @js.native
-      def fromVersion(version: Double): Component = js.native
+      @scala.inline
+      def fromTimestamp(timestamp: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimestamp")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Component]
+      
+      /* static member */
+      @scala.inline
+      def fromVersion(version: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Component]
     }
     
-    @JSImport("ndn-js/name", "Name.fromEscapedString")
-    @js.native
-    def fromEscapedString(uri: String): Name = js.native
+    @scala.inline
+    def fromEscapedString(uri: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEscapedString")(uri.asInstanceOf[js.Any]).asInstanceOf[Name]
   }
   
   /* Rewritten from type alias, can be one of: 

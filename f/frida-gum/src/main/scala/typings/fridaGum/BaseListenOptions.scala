@@ -2,16 +2,14 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseListenOptions extends StObject {
   
   /**
     * Listen backlog. Defaults to 10.
     */
-  var backlog: js.UndefOr[Double] = js.native
+  var backlog: js.UndefOr[Double] = js.undefined
 }
 object BaseListenOptions {
   

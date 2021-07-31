@@ -3,41 +3,39 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchProvider extends StObject {
   
-  var alternate_urls: js.UndefOr[js.Array[String]] = js.native
+  var alternate_urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var favicon_url: js.UndefOr[String] = js.native
+  var favicon_url: js.UndefOr[String] = js.undefined
   
-  var image_url: js.UndefOr[String] = js.native
+  var image_url: js.UndefOr[String] = js.undefined
   
-  var image_url_post_params: js.UndefOr[String] = js.native
+  var image_url_post_params: js.UndefOr[String] = js.undefined
   
-  var instant_url: js.UndefOr[String] = js.native
+  var instant_url: js.UndefOr[String] = js.undefined
   
-  var instant_url_post_params: js.UndefOr[String] = js.native
+  var instant_url_post_params: js.UndefOr[String] = js.undefined
   
-  var is_default: js.UndefOr[Boolean] = js.native
+  var is_default: js.UndefOr[Boolean] = js.undefined
   
-  var keyword: js.UndefOr[String] = js.native
+  var keyword: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var prepopulated_id: js.UndefOr[integer] = js.native
+  var prepopulated_id: js.UndefOr[integer] = js.undefined
   
-  var search_url: String = js.native
+  var search_url: String
   
-  var search_url_post_params: js.UndefOr[String] = js.native
+  var search_url_post_params: js.UndefOr[String] = js.undefined
   
-  var suggest_url: js.UndefOr[String] = js.native
+  var suggest_url: js.UndefOr[String] = js.undefined
   
-  var suggest_url_post_params: js.UndefOr[String] = js.native
+  var suggest_url_post_params: js.UndefOr[String] = js.undefined
 }
 object SearchProvider {
   

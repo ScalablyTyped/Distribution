@@ -2,18 +2,16 @@ package typings.textBuffer.mod.global.TextBuffer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface that should be implemented for all "range-compatible" objects. */
-@js.native
 trait RangeLike extends StObject {
   
   /** A Point representing the end of the Range. */
-  var end: PointLike = js.native
+  var end: PointLike
   
   /** A Point representing the start of the Range. */
-  var start: PointLike = js.native
+  var start: PointLike
 }
 object RangeLike {
   

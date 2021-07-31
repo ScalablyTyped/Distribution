@@ -2,25 +2,23 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISeriesPointer extends StObject {
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var colorEach: Boolean = js.native
+  var colorEach: Boolean
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var height: Double = js.native
+  var height: Double
   
-  var style: String = js.native
+  var style: String
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object ISeriesPointer {
   

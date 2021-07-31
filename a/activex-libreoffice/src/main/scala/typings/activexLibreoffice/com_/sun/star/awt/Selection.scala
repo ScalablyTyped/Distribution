@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a numerical range. */
-@js.native
 trait Selection extends StObject {
   
   /** specifies the upper limit of the range. */
-  var Max: Double = js.native
+  var Max: Double
   
   /** specifies the lower limit of the range. */
-  var Min: Double = js.native
+  var Min: Double
 }
 object Selection {
   

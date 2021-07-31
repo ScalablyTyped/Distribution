@@ -2,17 +2,15 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFMetadata extends StObject {
   
-  def get(name: String): String = js.native
+  def get(name: String): String
   
-  def has(name: String): Boolean = js.native
+  def has(name: String): Boolean
   
-  def parse(): Unit = js.native
+  def parse(): Unit
 }
 object PDFMetadata {
   

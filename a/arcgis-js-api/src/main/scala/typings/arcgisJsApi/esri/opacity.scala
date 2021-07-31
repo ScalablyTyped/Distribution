@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html)
   */
-@js.native
 trait opacity extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait opacity extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#createVisualVariable)
     */
-  def createVisualVariable(params: opacityCreateVisualVariableParams): js.Promise[opacityVisualVariableResult] = js.native
+  def createVisualVariable(params: opacityCreateVisualVariableParams): js.Promise[opacityVisualVariableResult]
 }
 object opacity {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CohortGroup extends StObject {
   
   /** The definition for the cohort. */
-  var cohorts: js.UndefOr[js.Array[Cohort]] = js.native
+  var cohorts: js.UndefOr[js.Array[Cohort]] = js.undefined
   
   /**
     * Enable Life Time Value (LTV). LTV measures lifetime value for users acquired through different channels. Please see: [Cohort
@@ -21,7 +19,7 @@ trait CohortGroup extends StObject {
     * grow during the 90 days after a user is acquired. - The metrics are calculated as a cumulative average per user per the time increment. - The cohort definition date ranges need not
     * be aligned to the calendar week and month boundaries. - The `viewId` must be an [app view ID](https://support.google.com/analytics/answer/2649553#WebVersusAppViews)
     */
-  var lifetimeValue: js.UndefOr[Boolean] = js.native
+  var lifetimeValue: js.UndefOr[Boolean] = js.undefined
 }
 object CohortGroup {
   

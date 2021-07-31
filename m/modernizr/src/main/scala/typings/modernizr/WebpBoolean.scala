@@ -3,17 +3,17 @@ package typings.modernizr
 import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebpBoolean extends Boolean {
+trait WebpBoolean
+  extends StObject
+     with Boolean {
   
-  var alpha: scala.Boolean = js.native
+  var alpha: scala.Boolean
   
-  var animation: scala.Boolean = js.native
+  var animation: scala.Boolean
   
-  var lossless: scala.Boolean = js.native
+  var lossless: scala.Boolean
 }
 object WebpBoolean {
   

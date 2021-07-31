@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandshakeParty extends StObject {
   
   /**
     * The unique identifier (ID) for the party. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lowercase letters or digits.
     */
-  var Id: HandshakePartyId = js.native
+  var Id: HandshakePartyId
   
   /**
     * The type of party.
     */
-  var Type: HandshakePartyType = js.native
+  var Type: HandshakePartyType
 }
 object HandshakeParty {
   

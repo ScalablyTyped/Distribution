@@ -2,29 +2,30 @@ package typings.imsiGrok
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("imsi-grok", "grok")
+  @JSImport("imsi-grok", JSImport.Namespace)
   @js.native
-  def grok(imsi: String): IMSIBreakdown | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def grok(imsi: String): IMSIBreakdown | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("grok")(imsi.asInstanceOf[js.Any]).asInstanceOf[IMSIBreakdown | Null]
+  
   trait IMSIBreakdown extends StObject {
     
-    var country_code: String = js.native
+    var country_code: String
     
-    var country_iso: String = js.native
+    var country_iso: String
     
-    var country_name: String = js.native
+    var country_name: String
     
-    var mcc: String = js.native
+    var mcc: String
     
-    var mnc: String = js.native
+    var mnc: String
     
-    var network_name: String = js.native
+    var network_name: String
   }
   object IMSIBreakdown {
     

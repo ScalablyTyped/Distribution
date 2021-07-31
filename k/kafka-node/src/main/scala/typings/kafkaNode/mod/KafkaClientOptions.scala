@@ -2,33 +2,31 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KafkaClientOptions extends StObject {
   
-  var autoConnect: js.UndefOr[Boolean] = js.native
+  var autoConnect: js.UndefOr[Boolean] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var connectRetryOptions: js.UndefOr[RetryOptions] = js.native
+  var connectRetryOptions: js.UndefOr[RetryOptions] = js.undefined
   
-  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.undefined
   
-  var idleConnection: js.UndefOr[Double] = js.native
+  var idleConnection: js.UndefOr[Double] = js.undefined
   
-  var kafkaHost: js.UndefOr[String] = js.native
+  var kafkaHost: js.UndefOr[String] = js.undefined
   
-  var maxAsyncRequests: js.UndefOr[Double] = js.native
+  var maxAsyncRequests: js.UndefOr[Double] = js.undefined
   
-  var reconnectOnIdle: js.UndefOr[Boolean] = js.native
+  var reconnectOnIdle: js.UndefOr[Boolean] = js.undefined
   
-  var requestTimeout: js.UndefOr[Double] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.undefined
   
-  var sasl: js.UndefOr[js.Any] = js.native
+  var sasl: js.UndefOr[js.Any] = js.undefined
   
-  var sslOptions: js.UndefOr[js.Any] = js.native
+  var sslOptions: js.UndefOr[js.Any] = js.undefined
 }
 object KafkaClientOptions {
   

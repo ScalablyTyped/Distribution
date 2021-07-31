@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidation extends StObject {
   
-  def Clone(): IValidation = js.native
+  def Clone(): IValidation
   
-  var RegularExpression: String = js.native
+  var RegularExpression: String
   
-  var VBScript: String = js.native
+  var VBScript: String
 }
 object IValidation {
   

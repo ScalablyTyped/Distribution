@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Orders")
@@ -30,7 +29,7 @@ class ResourceOrders protected () extends StObject {
     */
   def acknowledge(): GaxiosPromise[SchemaOrdersAcknowledgeResponse] = js.native
   def acknowledge(callback: BodyResponseCallback[SchemaOrdersAcknowledgeResponse]): Unit = js.native
-  def acknowledge(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersAcknowledgeResponse] = js.native
+  def acknowledge(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersAcknowledgeResponse] = js.native
   def acknowledge(params: ParamsResourceOrdersAcknowledge): GaxiosPromise[SchemaOrdersAcknowledgeResponse] = js.native
   def acknowledge(
     params: ParamsResourceOrdersAcknowledge,
@@ -64,7 +63,7 @@ class ResourceOrders protected () extends StObject {
     */
   def advancetestorder(): GaxiosPromise[SchemaOrdersAdvanceTestOrderResponse] = js.native
   def advancetestorder(callback: BodyResponseCallback[SchemaOrdersAdvanceTestOrderResponse]): Unit = js.native
-  def advancetestorder(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersAdvanceTestOrderResponse] = js.native
+  def advancetestorder(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersAdvanceTestOrderResponse] = js.native
   def advancetestorder(params: ParamsResourceOrdersAdvancetestorder): GaxiosPromise[SchemaOrdersAdvanceTestOrderResponse] = js.native
   def advancetestorder(
     params: ParamsResourceOrdersAdvancetestorder,
@@ -98,7 +97,7 @@ class ResourceOrders protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaOrdersCancelResponse] = js.native
   def cancel(callback: BodyResponseCallback[SchemaOrdersCancelResponse]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCancelResponse] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCancelResponse] = js.native
   def cancel(params: ParamsResourceOrdersCancel): GaxiosPromise[SchemaOrdersCancelResponse] = js.native
   def cancel(params: ParamsResourceOrdersCancel, callback: BodyResponseCallback[SchemaOrdersCancelResponse]): Unit = js.native
   def cancel(
@@ -129,7 +128,7 @@ class ResourceOrders protected () extends StObject {
     */
   def cancellineitem(): GaxiosPromise[SchemaOrdersCancelLineItemResponse] = js.native
   def cancellineitem(callback: BodyResponseCallback[SchemaOrdersCancelLineItemResponse]): Unit = js.native
-  def cancellineitem(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCancelLineItemResponse] = js.native
+  def cancellineitem(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCancelLineItemResponse] = js.native
   def cancellineitem(params: ParamsResourceOrdersCancellineitem): GaxiosPromise[SchemaOrdersCancelLineItemResponse] = js.native
   def cancellineitem(
     params: ParamsResourceOrdersCancellineitem,
@@ -164,7 +163,7 @@ class ResourceOrders protected () extends StObject {
     */
   def canceltestorderbycustomer(): GaxiosPromise[SchemaOrdersCancelTestOrderByCustomerResponse] = js.native
   def canceltestorderbycustomer(callback: BodyResponseCallback[SchemaOrdersCancelTestOrderByCustomerResponse]): Unit = js.native
-  def canceltestorderbycustomer(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCancelTestOrderByCustomerResponse] = js.native
+  def canceltestorderbycustomer(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCancelTestOrderByCustomerResponse] = js.native
   def canceltestorderbycustomer(params: ParamsResourceOrdersCanceltestorderbycustomer): GaxiosPromise[SchemaOrdersCancelTestOrderByCustomerResponse] = js.native
   def canceltestorderbycustomer(
     params: ParamsResourceOrdersCanceltestorderbycustomer,
@@ -199,7 +198,7 @@ class ResourceOrders protected () extends StObject {
     */
   def createtestorder(): GaxiosPromise[SchemaOrdersCreateTestOrderResponse] = js.native
   def createtestorder(callback: BodyResponseCallback[SchemaOrdersCreateTestOrderResponse]): Unit = js.native
-  def createtestorder(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCreateTestOrderResponse] = js.native
+  def createtestorder(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCreateTestOrderResponse] = js.native
   def createtestorder(params: ParamsResourceOrdersCreatetestorder): GaxiosPromise[SchemaOrdersCreateTestOrderResponse] = js.native
   def createtestorder(
     params: ParamsResourceOrdersCreatetestorder,
@@ -233,7 +232,7 @@ class ResourceOrders protected () extends StObject {
     */
   def createtestreturn(): GaxiosPromise[SchemaOrdersCreateTestReturnResponse] = js.native
   def createtestreturn(callback: BodyResponseCallback[SchemaOrdersCreateTestReturnResponse]): Unit = js.native
-  def createtestreturn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCreateTestReturnResponse] = js.native
+  def createtestreturn(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCreateTestReturnResponse] = js.native
   def createtestreturn(params: ParamsResourceOrdersCreatetestreturn): GaxiosPromise[SchemaOrdersCreateTestReturnResponse] = js.native
   def createtestreturn(
     params: ParamsResourceOrdersCreatetestreturn,
@@ -265,7 +264,7 @@ class ResourceOrders protected () extends StObject {
     */
   def custombatch(): GaxiosPromise[SchemaOrdersCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaOrdersCustomBatchResponse]): Unit = js.native
-  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersCustomBatchResponse] = js.native
+  def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceOrdersCustombatch): GaxiosPromise[SchemaOrdersCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceOrdersCustombatch,
@@ -298,7 +297,7 @@ class ResourceOrders protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOrder] = js.native
   def get(callback: BodyResponseCallback[SchemaOrder]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrder] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrder] = js.native
   def get(params: ParamsResourceOrdersGet): GaxiosPromise[SchemaOrder] = js.native
   def get(params: ParamsResourceOrdersGet, callback: BodyResponseCallback[SchemaOrder]): Unit = js.native
   def get(
@@ -328,7 +327,7 @@ class ResourceOrders protected () extends StObject {
     */
   def getbymerchantorderid(): GaxiosPromise[SchemaOrdersGetByMerchantOrderIdResponse] = js.native
   def getbymerchantorderid(callback: BodyResponseCallback[SchemaOrdersGetByMerchantOrderIdResponse]): Unit = js.native
-  def getbymerchantorderid(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersGetByMerchantOrderIdResponse] = js.native
+  def getbymerchantorderid(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersGetByMerchantOrderIdResponse] = js.native
   def getbymerchantorderid(params: ParamsResourceOrdersGetbymerchantorderid): GaxiosPromise[SchemaOrdersGetByMerchantOrderIdResponse] = js.native
   def getbymerchantorderid(
     params: ParamsResourceOrdersGetbymerchantorderid,
@@ -363,7 +362,7 @@ class ResourceOrders protected () extends StObject {
     */
   def gettestordertemplate(): GaxiosPromise[SchemaOrdersGetTestOrderTemplateResponse] = js.native
   def gettestordertemplate(callback: BodyResponseCallback[SchemaOrdersGetTestOrderTemplateResponse]): Unit = js.native
-  def gettestordertemplate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersGetTestOrderTemplateResponse] = js.native
+  def gettestordertemplate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersGetTestOrderTemplateResponse] = js.native
   def gettestordertemplate(params: ParamsResourceOrdersGettestordertemplate): GaxiosPromise[SchemaOrdersGetTestOrderTemplateResponse] = js.native
   def gettestordertemplate(
     params: ParamsResourceOrdersGettestordertemplate,
@@ -405,7 +404,7 @@ class ResourceOrders protected () extends StObject {
     */
   def instorerefundlineitem(): GaxiosPromise[SchemaOrdersInStoreRefundLineItemResponse] = js.native
   def instorerefundlineitem(callback: BodyResponseCallback[SchemaOrdersInStoreRefundLineItemResponse]): Unit = js.native
-  def instorerefundlineitem(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersInStoreRefundLineItemResponse] = js.native
+  def instorerefundlineitem(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersInStoreRefundLineItemResponse] = js.native
   def instorerefundlineitem(params: ParamsResourceOrdersInstorerefundlineitem): GaxiosPromise[SchemaOrdersInStoreRefundLineItemResponse] = js.native
   def instorerefundlineitem(
     params: ParamsResourceOrdersInstorerefundlineitem,
@@ -444,7 +443,7 @@ class ResourceOrders protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaOrdersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOrdersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersListResponse] = js.native
   def list(params: ParamsResourceOrdersList): GaxiosPromise[SchemaOrdersListResponse] = js.native
   def list(params: ParamsResourceOrdersList, callback: BodyResponseCallback[SchemaOrdersListResponse]): Unit = js.native
   def list(
@@ -475,7 +474,7 @@ class ResourceOrders protected () extends StObject {
     */
   def refund(): GaxiosPromise[SchemaOrdersRefundResponse] = js.native
   def refund(callback: BodyResponseCallback[SchemaOrdersRefundResponse]): Unit = js.native
-  def refund(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersRefundResponse] = js.native
+  def refund(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersRefundResponse] = js.native
   def refund(params: ParamsResourceOrdersRefund): GaxiosPromise[SchemaOrdersRefundResponse] = js.native
   def refund(params: ParamsResourceOrdersRefund, callback: BodyResponseCallback[SchemaOrdersRefundResponse]): Unit = js.native
   def refund(
@@ -506,7 +505,7 @@ class ResourceOrders protected () extends StObject {
     */
   def rejectreturnlineitem(): GaxiosPromise[SchemaOrdersRejectReturnLineItemResponse] = js.native
   def rejectreturnlineitem(callback: BodyResponseCallback[SchemaOrdersRejectReturnLineItemResponse]): Unit = js.native
-  def rejectreturnlineitem(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersRejectReturnLineItemResponse] = js.native
+  def rejectreturnlineitem(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersRejectReturnLineItemResponse] = js.native
   def rejectreturnlineitem(params: ParamsResourceOrdersRejectreturnlineitem): GaxiosPromise[SchemaOrdersRejectReturnLineItemResponse] = js.native
   def rejectreturnlineitem(
     params: ParamsResourceOrdersRejectreturnlineitem,
@@ -540,7 +539,7 @@ class ResourceOrders protected () extends StObject {
     */
   def returnlineitem(): GaxiosPromise[SchemaOrdersReturnLineItemResponse] = js.native
   def returnlineitem(callback: BodyResponseCallback[SchemaOrdersReturnLineItemResponse]): Unit = js.native
-  def returnlineitem(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersReturnLineItemResponse] = js.native
+  def returnlineitem(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersReturnLineItemResponse] = js.native
   def returnlineitem(params: ParamsResourceOrdersReturnlineitem): GaxiosPromise[SchemaOrdersReturnLineItemResponse] = js.native
   def returnlineitem(
     params: ParamsResourceOrdersReturnlineitem,
@@ -575,7 +574,7 @@ class ResourceOrders protected () extends StObject {
     */
   def returnrefundlineitem(): GaxiosPromise[SchemaOrdersReturnRefundLineItemResponse] = js.native
   def returnrefundlineitem(callback: BodyResponseCallback[SchemaOrdersReturnRefundLineItemResponse]): Unit = js.native
-  def returnrefundlineitem(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersReturnRefundLineItemResponse] = js.native
+  def returnrefundlineitem(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersReturnRefundLineItemResponse] = js.native
   def returnrefundlineitem(params: ParamsResourceOrdersReturnrefundlineitem): GaxiosPromise[SchemaOrdersReturnRefundLineItemResponse] = js.native
   def returnrefundlineitem(
     params: ParamsResourceOrdersReturnrefundlineitem,
@@ -613,7 +612,7 @@ class ResourceOrders protected () extends StObject {
     */
   def setlineitemmetadata(): GaxiosPromise[SchemaOrdersSetLineItemMetadataResponse] = js.native
   def setlineitemmetadata(callback: BodyResponseCallback[SchemaOrdersSetLineItemMetadataResponse]): Unit = js.native
-  def setlineitemmetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersSetLineItemMetadataResponse] = js.native
+  def setlineitemmetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersSetLineItemMetadataResponse] = js.native
   def setlineitemmetadata(params: ParamsResourceOrdersSetlineitemmetadata): GaxiosPromise[SchemaOrdersSetLineItemMetadataResponse] = js.native
   def setlineitemmetadata(
     params: ParamsResourceOrdersSetlineitemmetadata,
@@ -647,7 +646,7 @@ class ResourceOrders protected () extends StObject {
     */
   def shiplineitems(): GaxiosPromise[SchemaOrdersShipLineItemsResponse] = js.native
   def shiplineitems(callback: BodyResponseCallback[SchemaOrdersShipLineItemsResponse]): Unit = js.native
-  def shiplineitems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersShipLineItemsResponse] = js.native
+  def shiplineitems(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersShipLineItemsResponse] = js.native
   def shiplineitems(params: ParamsResourceOrdersShiplineitems): GaxiosPromise[SchemaOrdersShipLineItemsResponse] = js.native
   def shiplineitems(
     params: ParamsResourceOrdersShiplineitems,
@@ -681,7 +680,7 @@ class ResourceOrders protected () extends StObject {
     */
   def updatelineitemshippingdetails(): GaxiosPromise[SchemaOrdersUpdateLineItemShippingDetailsResponse] = js.native
   def updatelineitemshippingdetails(callback: BodyResponseCallback[SchemaOrdersUpdateLineItemShippingDetailsResponse]): Unit = js.native
-  def updatelineitemshippingdetails(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateLineItemShippingDetailsResponse] = js.native
+  def updatelineitemshippingdetails(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateLineItemShippingDetailsResponse] = js.native
   def updatelineitemshippingdetails(params: ParamsResourceOrdersUpdatelineitemshippingdetails): GaxiosPromise[SchemaOrdersUpdateLineItemShippingDetailsResponse] = js.native
   def updatelineitemshippingdetails(
     params: ParamsResourceOrdersUpdatelineitemshippingdetails,
@@ -715,7 +714,7 @@ class ResourceOrders protected () extends StObject {
     */
   def updatemerchantorderid(): GaxiosPromise[SchemaOrdersUpdateMerchantOrderIdResponse] = js.native
   def updatemerchantorderid(callback: BodyResponseCallback[SchemaOrdersUpdateMerchantOrderIdResponse]): Unit = js.native
-  def updatemerchantorderid(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateMerchantOrderIdResponse] = js.native
+  def updatemerchantorderid(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateMerchantOrderIdResponse] = js.native
   def updatemerchantorderid(params: ParamsResourceOrdersUpdatemerchantorderid): GaxiosPromise[SchemaOrdersUpdateMerchantOrderIdResponse] = js.native
   def updatemerchantorderid(
     params: ParamsResourceOrdersUpdatemerchantorderid,
@@ -749,7 +748,7 @@ class ResourceOrders protected () extends StObject {
     */
   def updateshipment(): GaxiosPromise[SchemaOrdersUpdateShipmentResponse] = js.native
   def updateshipment(callback: BodyResponseCallback[SchemaOrdersUpdateShipmentResponse]): Unit = js.native
-  def updateshipment(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateShipmentResponse] = js.native
+  def updateshipment(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrdersUpdateShipmentResponse] = js.native
   def updateshipment(params: ParamsResourceOrdersUpdateshipment): GaxiosPromise[SchemaOrdersUpdateShipmentResponse] = js.native
   def updateshipment(
     params: ParamsResourceOrdersUpdateshipment,

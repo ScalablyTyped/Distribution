@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jointjs.mod.attributes.NativeSVGAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkupNodeJSON extends StObject {
   
-  var attributes: js.UndefOr[NativeSVGAttributes] = js.native
+  var attributes: js.UndefOr[NativeSVGAttributes] = js.undefined
   
-  var children: js.UndefOr[MarkupJSON] = js.native
+  var children: js.UndefOr[MarkupJSON] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var groupSelector: js.UndefOr[String] = js.native
+  var groupSelector: js.UndefOr[String] = js.undefined
   
-  var namespaceUri: js.UndefOr[String] = js.native
+  var namespaceUri: js.UndefOr[String] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var tagName: String = js.native
+  var tagName: String
   
-  var textContent: js.UndefOr[String] = js.native
+  var textContent: js.UndefOr[String] = js.undefined
 }
 object MarkupNodeJSON {
   

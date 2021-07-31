@@ -2,15 +2,13 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsymmetricMatcher[TValue] extends StObject {
   
-  def asymmetricMatch(other: TValue, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
+  def asymmetricMatch(other: TValue, customTesters: js.Array[CustomEqualityTester]): Boolean
   
-  var jasmineToString: js.UndefOr[js.Function0[String]] = js.native
+  var jasmineToString: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object AsymmetricMatcher {
   
@@ -21,7 +19,7 @@ object AsymmetricMatcher {
   }
   
   @scala.inline
-  implicit class AsymmetricMatcherMutableBuilder[Self <: AsymmetricMatcher[_], TValue] (val x: Self with AsymmetricMatcher[TValue]) extends AnyVal {
+  implicit class AsymmetricMatcherMutableBuilder[Self <: AsymmetricMatcher[?], TValue] (val x: Self & AsymmetricMatcher[TValue]) extends AnyVal {
     
     @scala.inline
     def setAsymmetricMatch(value: (TValue, js.Array[CustomEqualityTester]) => Boolean): Self = StObject.set(x, "asymmetricMatch", js.Any.fromFunction2(value))

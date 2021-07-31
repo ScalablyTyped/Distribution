@@ -2,24 +2,24 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelSeriesProps extends AbstractSeriesProps[LabelSeriesPoint] {
+trait LabelSeriesProps
+  extends StObject
+     with AbstractSeriesProps[LabelSeriesPoint] {
   
-  var allowOffsetToBeReversed: js.UndefOr[Boolean] = js.native
+  var allowOffsetToBeReversed: js.UndefOr[Boolean] = js.undefined
   
   // default: 0
-  var labelAnchorX: js.UndefOr[String] = js.native
+  var labelAnchorX: js.UndefOr[String] = js.undefined
   
-  var labelAnchorY: js.UndefOr[String] = js.native
+  var labelAnchorY: js.UndefOr[String] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
 }
 object LabelSeriesProps {
   

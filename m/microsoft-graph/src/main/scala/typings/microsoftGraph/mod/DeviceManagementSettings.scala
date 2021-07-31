@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceManagementSettings extends StObject {
   
   // The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
-  var deviceComplianceCheckinThresholdDays: js.UndefOr[Double] = js.native
+  var deviceComplianceCheckinThresholdDays: js.UndefOr[Double] = js.undefined
   
   // Is feature enabled or not for scheduled action for rule.
-  var isScheduledActionEnabled: js.UndefOr[Boolean] = js.native
+  var isScheduledActionEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Device should be noncompliant when there is no compliance policy targeted when this is true
-  var secureByDefault: js.UndefOr[Boolean] = js.native
+  var secureByDefault: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceManagementSettings {
   

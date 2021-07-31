@@ -2,16 +2,14 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateWebsiteAuthorizationProviderResponse extends StObject {
   
   /**
     * A unique identifier for the authorization provider.
     */
-  var AuthorizationProviderId: js.UndefOr[Id] = js.native
+  var AuthorizationProviderId: js.UndefOr[Id] = js.undefined
 }
 object AssociateWebsiteAuthorizationProviderResponse {
   

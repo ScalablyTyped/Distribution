@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunQueryResponse extends StObject {
   
   /** A batch of query results (always present). */
-  var batch: js.UndefOr[QueryResultBatch] = js.native
+  var batch: js.UndefOr[QueryResultBatch] = js.undefined
   
   /** The parsed form of the `GqlQuery` from the request, if it was set. */
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
 }
 object RunQueryResponse {
   

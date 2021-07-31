@@ -11,8 +11,8 @@ The simplified HTTP request client 'request' with Promise support. Powered by na
 | Full name          | request-promise-native |
 | Keywords           | xhr, http, https, promise, request, then, thenable, native |
 | # releases         | 5 |
-| # dependents       | 2494 |
-| # downloads        | 357080328 |
+| # dependents       | 2570 |
+| # downloads        | 456151744 |
 | # stars            | 17 |
 
 ## Links

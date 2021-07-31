@@ -2,31 +2,29 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSchemaSummary extends StObject {
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[string] = js.native
+  var RegistryName: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the schema.
     */
-  var SchemaArn: js.UndefOr[string] = js.native
+  var SchemaArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[string] = js.native
+  var SchemaName: js.UndefOr[string] = js.undefined
   
   /**
     * An array of schema version summaries.
     */
-  var SchemaVersions: js.UndefOr[listOfSearchSchemaVersionSummary] = js.native
+  var SchemaVersions: js.UndefOr[listOfSearchSchemaVersionSummary] = js.undefined
 }
 object SearchSchemaSummary {
   

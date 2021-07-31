@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,22 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *     var image = CardService.newImage().setAltText("A nice image").setImageUrl("https://image.png");
   */
-@js.native
 trait Image extends StObject {
   
-  def setAltText(altText: String): Image = js.native
+  def setAltText(altText: String): Image
   
-  def setAuthorizationAction(action: AuthorizationAction): Image = js.native
+  def setAuthorizationAction(action: AuthorizationAction): Image
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Image = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Image
   
-  def setImageUrl(url: String): Image = js.native
+  def setImageUrl(url: String): Image
   
-  def setOnClickAction(action: Action): Image = js.native
+  def setOnClickAction(action: Action): Image
   
-  def setOnClickOpenLinkAction(action: Action): Image = js.native
+  def setOnClickOpenLinkAction(action: Action): Image
   
-  def setOpenLink(openLink: OpenLink): Image = js.native
+  def setOpenLink(openLink: OpenLink): Image
 }
 object Image {
   

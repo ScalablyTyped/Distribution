@@ -2,15 +2,13 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var options: SubmitForSettlement = js.native
+  var options: SubmitForSettlement
 }
 object Options {
   

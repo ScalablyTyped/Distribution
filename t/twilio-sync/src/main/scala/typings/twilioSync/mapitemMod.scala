@@ -3,7 +3,6 @@ package typings.twilioSync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapitemMod {
@@ -52,22 +51,21 @@ object mapitemMod {
     def value: js.Object = js.native
   }
   
-  @js.native
   trait MapItemDescriptor extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var date_expires: String = js.native
+    var date_expires: String
     
-    var date_updated: Date = js.native
+    var date_updated: Date
     
-    var key: String = js.native
+    var key: String
     
-    var last_event_id: Double = js.native
+    var last_event_id: Double
     
-    var revision: String = js.native
+    var revision: String
     
-    var url: String = js.native
+    var url: String
   }
   object MapItemDescriptor {
     

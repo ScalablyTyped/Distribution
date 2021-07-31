@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,57 +12,83 @@ sealed trait EnumDWTPixelType extends StObject
 object EnumDWTPixelType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTPixelType with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumDWTPixelType & Double] = js.native
   
   @js.native
-  sealed trait TWPT_BW extends EnumDWTPixelType
-  /* 0 */ val TWPT_BW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_BW with Double = js.native
+  sealed trait TWPT_BW
+    extends StObject
+       with EnumDWTPixelType
+  /* 0 */ val TWPT_BW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_BW & Double = js.native
   
   @js.native
-  sealed trait TWPT_CIEXYZ extends EnumDWTPixelType
-  /* 8 */ val TWPT_CIEXYZ: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CIEXYZ with Double = js.native
+  sealed trait TWPT_CIEXYZ
+    extends StObject
+       with EnumDWTPixelType
+  /* 8 */ val TWPT_CIEXYZ: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CIEXYZ & Double = js.native
   
   @js.native
-  sealed trait TWPT_CMY extends EnumDWTPixelType
-  /* 4 */ val TWPT_CMY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CMY with Double = js.native
+  sealed trait TWPT_CMY
+    extends StObject
+       with EnumDWTPixelType
+  /* 4 */ val TWPT_CMY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CMY & Double = js.native
   
   @js.native
-  sealed trait TWPT_CMYK extends EnumDWTPixelType
-  /* 5 */ val TWPT_CMYK: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CMYK with Double = js.native
+  sealed trait TWPT_CMYK
+    extends StObject
+       with EnumDWTPixelType
+  /* 5 */ val TWPT_CMYK: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_CMYK & Double = js.native
   
   @js.native
-  sealed trait TWPT_GRAY extends EnumDWTPixelType
-  /* 1 */ val TWPT_GRAY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_GRAY with Double = js.native
+  sealed trait TWPT_GRAY
+    extends StObject
+       with EnumDWTPixelType
+  /* 1 */ val TWPT_GRAY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_GRAY & Double = js.native
   
   @js.native
-  sealed trait TWPT_INFRARED extends EnumDWTPixelType
-  /* 16 */ val TWPT_INFRARED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_INFRARED with Double = js.native
+  sealed trait TWPT_INFRARED
+    extends StObject
+       with EnumDWTPixelType
+  /* 16 */ val TWPT_INFRARED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_INFRARED & Double = js.native
   
   @js.native
-  sealed trait TWPT_LAB extends EnumDWTPixelType
-  /* 9 */ val TWPT_LAB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_LAB with Double = js.native
+  sealed trait TWPT_LAB
+    extends StObject
+       with EnumDWTPixelType
+  /* 9 */ val TWPT_LAB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_LAB & Double = js.native
   
   @js.native
-  sealed trait TWPT_PALLETE extends EnumDWTPixelType
-  /* 3 */ val TWPT_PALLETE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_PALLETE with Double = js.native
+  sealed trait TWPT_PALLETE
+    extends StObject
+       with EnumDWTPixelType
+  /* 3 */ val TWPT_PALLETE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_PALLETE & Double = js.native
   
   @js.native
-  sealed trait TWPT_RGB extends EnumDWTPixelType
-  /* 2 */ val TWPT_RGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_RGB with Double = js.native
+  sealed trait TWPT_RGB
+    extends StObject
+       with EnumDWTPixelType
+  /* 2 */ val TWPT_RGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_RGB & Double = js.native
   
   @js.native
-  sealed trait TWPT_SCRGB extends EnumDWTPixelType
-  /* 11 */ val TWPT_SCRGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_SCRGB with Double = js.native
+  sealed trait TWPT_SCRGB
+    extends StObject
+       with EnumDWTPixelType
+  /* 11 */ val TWPT_SCRGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_SCRGB & Double = js.native
   
   @js.native
-  sealed trait TWPT_SRGB extends EnumDWTPixelType
-  /* 10 */ val TWPT_SRGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_SRGB with Double = js.native
+  sealed trait TWPT_SRGB
+    extends StObject
+       with EnumDWTPixelType
+  /* 10 */ val TWPT_SRGB: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_SRGB & Double = js.native
   
   @js.native
-  sealed trait TWPT_YUV extends EnumDWTPixelType
-  /* 6 */ val TWPT_YUV: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_YUV with Double = js.native
+  sealed trait TWPT_YUV
+    extends StObject
+       with EnumDWTPixelType
+  /* 6 */ val TWPT_YUV: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_YUV & Double = js.native
   
   @js.native
-  sealed trait TWPT_YUVK extends EnumDWTPixelType
-  /* 7 */ val TWPT_YUVK: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_YUVK with Double = js.native
+  sealed trait TWPT_YUVK
+    extends StObject
+       with EnumDWTPixelType
+  /* 7 */ val TWPT_YUVK: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType.TWPT_YUVK & Double = js.native
 }

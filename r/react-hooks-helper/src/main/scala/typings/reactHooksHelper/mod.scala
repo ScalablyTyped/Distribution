@@ -7,23 +7,23 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-hooks-helper", "useForm")
+  @JSImport("react-hooks-helper", JSImport.Namespace)
   @js.native
-  def useForm[T](defaultFormConfig: T): js.Tuple2[T, SetForm] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-hooks-helper", "useStep")
-  @js.native
-  def useStep(params: UseStepParams): UseStepResponse = js.native
+  @scala.inline
+  def useForm[T](defaultFormConfig: T): js.Tuple2[T, SetForm] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(defaultFormConfig.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, SetForm]]
   
-  @js.native
+  @scala.inline
+  def useStep(params: UseStepParams): UseStepResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("useStep")(params.asInstanceOf[js.Any]).asInstanceOf[UseStepResponse]
+  
   trait FormTarget extends StObject {
     
-    var target: Checked = js.native
+    var target: Checked
   }
   object FormTarget {
     
@@ -41,18 +41,17 @@ object mod {
     }
   }
   
-  @js.native
   trait NavigationProps extends StObject {
     
-    var go: js.UndefOr[js.Function1[/* step */ Double | String, Unit]] = js.native
+    var go: js.UndefOr[js.Function1[/* step */ Double | String, Unit]] = js.undefined
     
-    def next(): Unit = js.native
+    def next(): Unit
     
-    var pause: js.UndefOr[js.Function0[Unit]] = js.native
+    var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var play: js.UndefOr[js.Function0[Unit]] = js.native
+    var play: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var previous: js.UndefOr[js.Function0[Unit]] = js.native
+    var previous: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object NavigationProps {
     
@@ -99,14 +98,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait UseStepParams extends StObject {
     
-    var autoAdvanceDuration: js.UndefOr[Double] = js.native
+    var autoAdvanceDuration: js.UndefOr[Double] = js.undefined
     
-    var initialStep: js.UndefOr[Double] = js.native
+    var initialStep: js.UndefOr[Double] = js.undefined
     
-    var steps: js.Array[String] | Double = js.native
+    var steps: js.Array[String] | Double
   }
   object UseStepParams {
     
@@ -139,18 +137,17 @@ object mod {
     }
   }
   
-  @js.native
   trait UseStepResponse extends StObject {
     
-    var autoAdvanceDuration: Double = js.native
+    var autoAdvanceDuration: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var isPaused: Boolean = js.native
+    var isPaused: Boolean
     
-    var navigation: NavigationProps = js.native
+    var navigation: NavigationProps
     
-    var step: Double = js.native
+    var step: Double
   }
   object UseStepResponse {
     

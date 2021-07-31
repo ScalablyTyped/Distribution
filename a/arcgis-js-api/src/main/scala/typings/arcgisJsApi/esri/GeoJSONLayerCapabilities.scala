@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONLayerCapabilities extends Object {
+trait GeoJSONLayerCapabilities
+  extends StObject
+     with Object {
   
   /**
     * Describes characteristics of the data in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
-  var data: GeoJSONLayerCapabilitiesData = js.native
+  var data: GeoJSONLayerCapabilitiesData
   
   /**
     * Describes editing capabilities that can be performed on the features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
-  var editing: GeoJSONLayerCapabilitiesEditing = js.native
+  var editing: GeoJSONLayerCapabilitiesEditing
   
   /**
     * Describes operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
-  var operations: GeoJSONLayerCapabilitiesOperations = js.native
+  var operations: GeoJSONLayerCapabilitiesOperations
   
   /**
     * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
-  var query: GeoJSONLayerCapabilitiesQuery = js.native
+  var query: GeoJSONLayerCapabilitiesQuery
   
   /**
     * Indicates if the layer's query operation supports querying features or records related to features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
-  var queryRelated: GeoJSONLayerCapabilitiesQueryRelated = js.native
+  var queryRelated: GeoJSONLayerCapabilitiesQueryRelated
 }
 object GeoJSONLayerCapabilities {
   

@@ -2,29 +2,48 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mutexMod {
   
   @JSImport("browserfs/dist/node/generic/mutex", JSImport.Default)
   @js.native
-  class default () extends Mutex
-  
-  @js.native
-  trait Mutex extends StObject {
+  class default ()
+    extends StObject
+       with Mutex {
     
+    /* CompleteClass */
     var _locked: js.Any = js.native
     
+    /* CompleteClass */
     var _waiters: js.Any = js.native
     
-    def isLocked(): Boolean = js.native
+    /* CompleteClass */
+    override def isLocked(): Boolean = js.native
     
-    def lock(cb: js.Function): Unit = js.native
+    /* CompleteClass */
+    override def lock(cb: js.Function): Unit = js.native
     
-    def tryLock(): Boolean = js.native
+    /* CompleteClass */
+    override def tryLock(): Boolean = js.native
     
-    def unlock(): Unit = js.native
+    /* CompleteClass */
+    override def unlock(): Unit = js.native
+  }
+  
+  trait Mutex extends StObject {
+    
+    var _locked: js.Any
+    
+    var _waiters: js.Any
+    
+    def isLocked(): Boolean
+    
+    def lock(cb: js.Function): Unit
+    
+    def tryLock(): Boolean
+    
+    def unlock(): Unit
   }
   object Mutex {
     

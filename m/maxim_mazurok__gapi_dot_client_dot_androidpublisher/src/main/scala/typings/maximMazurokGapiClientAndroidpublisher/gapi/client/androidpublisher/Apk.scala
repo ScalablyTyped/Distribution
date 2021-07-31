@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apk extends StObject {
   
   /** Information about the binary payload of this APK. */
-  var binary: js.UndefOr[ApkBinary] = js.native
+  var binary: js.UndefOr[ApkBinary] = js.undefined
   
   /** The version code of the APK, as specified in the manifest file. */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
 }
 object Apk {
   

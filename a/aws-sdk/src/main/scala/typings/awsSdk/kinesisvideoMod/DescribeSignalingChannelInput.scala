@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSignalingChannelInput extends StObject {
   
   /**
     * The ARN of the signaling channel that you want to describe.
     */
-  var ChannelARN: js.UndefOr[ResourceARN] = js.native
+  var ChannelARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the signaling channel that you want to describe.
     */
-  var ChannelName: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelName] = js.native
+  var ChannelName: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelName] = js.undefined
 }
 object DescribeSignalingChannelInput {
   

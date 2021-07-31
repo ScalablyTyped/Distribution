@@ -6,26 +6,26 @@ import typings.expressValidator.baseMod.Request
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchedDataMod {
   
-  @JSImport("express-validator/src/matched-data", "matchedData")
+  @JSImport("express-validator/src/matched-data", JSImport.Namespace)
   @js.native
-  def matchedData(req: Request): Record[String, _] = js.native
-  @JSImport("express-validator/src/matched-data", "matchedData")
-  @js.native
-  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def matchedData(req: Request): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  
   trait MatchedDataOptions extends StObject {
     
-    var includeOptionals: Boolean = js.native
+    var includeOptionals: Boolean
     
-    var locations: js.Array[Location] = js.native
+    var locations: js.Array[Location]
     
-    var onlyValidData: Boolean = js.native
+    var onlyValidData: Boolean
   }
   object MatchedDataOptions {
     

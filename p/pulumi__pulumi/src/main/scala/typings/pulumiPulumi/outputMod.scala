@@ -7,31 +7,29 @@ import typings.std.Record
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputMod {
+  
+  @JSImport("@pulumi/pulumi/output", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/pulumi/output", "Output")
   @js.native
   val Output_ : OutputConstructor = js.native
   
-  type Output_[T] = OutputInstance[T] with Lifted[T]
+  type Output_[T] = OutputInstance[T] & Lifted[T]
   
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
-  def all[T](ds: js.Array[js.UndefOr[Input[T]]]): typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
-  def all[T](`val`: Record[String, Input[T]]): typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
-  def all[T1, T2](values: js.Tuple2[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
-  def all[T1, T2, T3](values: js.Tuple3[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]], js.UndefOr[Input[T3]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
+  @scala.inline
+  def all[T](ds: js.Array[js.UndefOr[Input[T]]]): typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ds.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]]]
+  @scala.inline
+  def all[T](`val`: Record[String, Input[T]]): typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]]]
+  @scala.inline
+  def all[T1, T2](values: js.Tuple2[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]]]
+  @scala.inline
+  def all[T1, T2, T3](values: js.Tuple3[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]], js.UndefOr[Input[T3]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]]]
+  @scala.inline
   def all[T1, T2, T3, T4](
     values: js.Tuple4[
       js.UndefOr[Input[T1]], 
@@ -39,9 +37,8 @@ object outputMod {
       js.UndefOr[Input[T3]], 
       js.UndefOr[Input[T4]]
     ]
-  ): typings.pulumiPulumi.outputMod.Output_[js.Tuple4[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
+  ): typings.pulumiPulumi.outputMod.Output_[js.Tuple4[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple4[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4]]]]
+  @scala.inline
   def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
       js.UndefOr[Input[T1]], 
@@ -50,9 +47,8 @@ object outputMod {
       js.UndefOr[Input[T4]], 
       js.UndefOr[Input[T5]]
     ]
-  ): typings.pulumiPulumi.outputMod.Output_[js.Tuple5[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
+  ): typings.pulumiPulumi.outputMod.Output_[js.Tuple5[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple5[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5]]]]
+  @scala.inline
   def all[T1, T2, T3, T4, T5, T6](
     values: js.Tuple6[
       js.UndefOr[Input[T1]], 
@@ -64,9 +60,10 @@ object outputMod {
     ]
   ): typings.pulumiPulumi.outputMod.Output_[
     js.Tuple6[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6]]
-  ] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[
+    js.Tuple6[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6]]
+  ]]
+  @scala.inline
   def all[T1, T2, T3, T4, T5, T6, T7](
     values: js.Tuple7[
       js.UndefOr[Input[T1]], 
@@ -79,9 +76,10 @@ object outputMod {
     ]
   ): typings.pulumiPulumi.outputMod.Output_[
     js.Tuple7[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6], Unwrap[T7]]
-  ] = js.native
-  @JSImport("@pulumi/pulumi/output", "all")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[
+    js.Tuple7[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6], Unwrap[T7]]
+  ]]
+  @scala.inline
   def all[T1, T2, T3, T4, T5, T6, T7, T8](
     values: js.Tuple8[
       js.UndefOr[Input[T1]], 
@@ -95,37 +93,31 @@ object outputMod {
     ]
   ): typings.pulumiPulumi.outputMod.Output_[
     js.Tuple8[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6], Unwrap[T7], Unwrap[T8]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[
+    js.Tuple8[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6], Unwrap[T7], Unwrap[T8]]
+  ]]
   
-  @JSImport("@pulumi/pulumi/output", "concat")
-  @js.native
-  def concat(params: Input[_]*): typings.pulumiPulumi.outputMod.Output_[String] = js.native
+  @scala.inline
+  def concat(params: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(params.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
   
-  @JSImport("@pulumi/pulumi/output", "containsUnknowns")
-  @js.native
-  def containsUnknowns(value: js.Any): Boolean = js.native
+  @scala.inline
+  def containsUnknowns(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containsUnknowns")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/output", "interpolate")
-  @js.native
-  def interpolate(literals: TemplateStringsArray, placeholders: Input[_]*): typings.pulumiPulumi.outputMod.Output_[String] = js.native
+  @scala.inline
+  def interpolate(literals: TemplateStringsArray, placeholders: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(literals.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
   
-  @JSImport("@pulumi/pulumi/output", "isUnknown")
-  @js.native
-  def isUnknown(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isUnknown(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnknown")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/output", "output")
-  @js.native
-  def output[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "output")
-  @js.native
-  def output[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = js.native
+  @scala.inline
+  def output[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
+  @scala.inline
+  def output[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
   
-  @JSImport("@pulumi/pulumi/output", "secret")
-  @js.native
-  def secret[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = js.native
-  @JSImport("@pulumi/pulumi/output", "secret")
-  @js.native
-  def secret[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = js.native
+  @scala.inline
+  def secret[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
+  @scala.inline
+  def secret[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
   
   type Input[T] = T | js.Promise[T] | OutputInstance[T]
   
@@ -133,15 +125,15 @@ object outputMod {
   
   type Lifted[T] = js.Object | (LiftedObject[String | T, NonFunctionPropertyNames[String | T]]) | LiftedArray[js.Any]
   
-  @js.native
   trait LiftedArray[T]
-    extends /* n */ NumberDictionary[typings.pulumiPulumi.outputMod.Output_[T]] {
+    extends StObject
+       with /* n */ NumberDictionary[typings.pulumiPulumi.outputMod.Output_[T]] {
     
     /**
       * Gets the length of the array. This is a number one higher than the highest element defined
       * in an array.
       */
-    val length: typings.pulumiPulumi.outputMod.Output_[Double] = js.native
+    val length: typings.pulumiPulumi.outputMod.Output_[Double]
   }
   object LiftedArray {
     
@@ -152,7 +144,7 @@ object outputMod {
     }
     
     @scala.inline
-    implicit class LiftedArrayMutableBuilder[Self <: LiftedArray[_], T] (val x: Self with LiftedArray[T]) extends AnyVal {
+    implicit class LiftedArrayMutableBuilder[Self <: LiftedArray[?], T] (val x: Self & LiftedArray[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: typings.pulumiPulumi.outputMod.Output_[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -161,7 +153,7 @@ object outputMod {
   
   type LiftedObject[T, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P] extends @pulumi/pulumi.@pulumi/pulumi/output.OutputInstance<infer T1>? @pulumi/pulumi.@pulumi/pulumi/output.Output<any> : T[P] extends std.Promise<infer T2>? @pulumi/pulumi.@pulumi/pulumi/output.Output<any> : @pulumi/pulumi.@pulumi/pulumi/output.Output<T[P]>}
-    */ typings.pulumiPulumi.pulumiPulumiStrings.LiftedObject with TopLevel[js.Any]
+    */ typings.pulumiPulumi.pulumiPulumiStrings.LiftedObject & TopLevel[js.Any]
   
   type NonFunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   
@@ -223,11 +215,13 @@ object outputMod {
   type UnwrapSimple[T] = UnwrappedObject[T] | UnwrappedArray[js.Any] | T
   
   @js.native
-  trait UnwrappedArray[T] extends Array[Unwrap[T]]
+  trait UnwrappedArray[T]
+    extends StObject
+       with Array[Unwrap[T]]
   
   type UnwrappedObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @pulumi/pulumi.@pulumi/pulumi/output.Unwrap<T[P]>}
-    */ typings.pulumiPulumi.pulumiPulumiStrings.UnwrappedObject with TopLevel[T]
+    */ typings.pulumiPulumi.pulumiPulumiStrings.UnwrappedObject & TopLevel[T]
   
   type primitive = js.UndefOr[js.Function | String | Double | Boolean | Null]
 }

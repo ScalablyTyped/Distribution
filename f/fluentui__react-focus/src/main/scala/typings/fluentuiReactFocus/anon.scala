@@ -2,15 +2,13 @@ package typings.fluentuiReactFocus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ComponentPath extends StObject {
     
-    var componentPath: js.UndefOr[String] = js.native
+    var componentPath: js.UndefOr[String] = js.undefined
   }
   object ComponentPath {
     

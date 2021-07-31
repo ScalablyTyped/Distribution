@@ -21,10 +21,10 @@ import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`60`
 import typings.ethersprojectProviders.ethersprojectProvidersStrings.pending
 import typings.ethersprojectProviders.formatterMod.Formatter
 import typings.ethersprojectTransactions.mod.Transaction
+import typings.ethersprojectWeb.ethersprojectWebStrings.block
 import typings.node.NodeJS.Timer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseProviderMod {
@@ -129,6 +129,9 @@ object baseProviderMod {
     def getLogs(filter: js.Promise[Filter | FilterByBlockHash]): js.Promise[js.Array[Log]] = js.native
     def getLogs(filter: FilterByBlockHash): js.Promise[js.Array[Log]] = js.native
     
+    /* CompleteClass */
+    override def getResolver(name: String): js.Promise[EnsResolver] = js.native
+    
     def getTransaction(transactionHash: js.Promise[String]): js.Promise[TransactionResponse] = js.native
     
     def getTransactionReceipt(transactionHash: js.Promise[String]): js.Promise[TransactionReceipt] = js.native
@@ -138,7 +141,12 @@ object baseProviderMod {
     
     def network: Network = js.native
     
-    def perform(method: String, params: js.Any): js.Promise[_] = js.native
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    @JSName("once")
+    override def once_block(eventName: block, handler: js.Function0[Unit]): Unit = js.native
+    
+    def perform(method: String, params: js.Any): js.Promise[js.Any] = js.native
     
     def poll(): js.Promise[Unit] = js.native
     
@@ -159,13 +167,15 @@ object baseProviderMod {
   /* static members */
   object BaseProvider {
     
-    @JSImport("@ethersproject/providers/lib/base-provider", "BaseProvider.getFormatter")
+    @JSImport("@ethersproject/providers/lib/base-provider", "BaseProvider")
     @js.native
-    def getFormatter(): Formatter = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers/lib/base-provider", "BaseProvider.getNetwork")
-    @js.native
-    def getNetwork(network: Networkish): Network = js.native
+    @scala.inline
+    def getFormatter(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")().asInstanceOf[Formatter]
+    
+    @scala.inline
+    def getNetwork(network: Networkish): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetwork")(network.asInstanceOf[js.Any]).asInstanceOf[Network]
   }
   
   @JSImport("@ethersproject/providers/lib/base-provider", "Event")
@@ -192,7 +202,9 @@ object baseProviderMod {
   
   @JSImport("@ethersproject/providers/lib/base-provider", "Resolver")
   @js.native
-  class Resolver protected () extends EnsResolver {
+  class Resolver protected ()
+    extends StObject
+       with EnsResolver {
     def this(provider: BaseProvider, address: String, name: String) = this()
     
     def _fetchBytes(selector: String): js.Promise[String] = js.native
@@ -205,14 +217,13 @@ object baseProviderMod {
     val provider: BaseProvider = js.native
   }
   
-  @js.native
   trait EnsProvider extends StObject {
     
-    def getResolver(name: String): js.Promise[EnsResolver] = js.native
+    def getResolver(name: String): js.Promise[EnsResolver]
     
-    def lookupAddress(address: String): js.Promise[String] = js.native
+    def lookupAddress(address: String): js.Promise[String]
     
-    def resolveName(name: String): js.Promise[String] = js.native
+    def resolveName(name: String): js.Promise[String]
   }
   object EnsProvider {
     

@@ -2,17 +2,15 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobObjOutputPayloadAdvanced extends StObject {
   
-  var exportFileStructure: js.UndefOr[String] = js.native
+  var exportFileStructure: js.UndefOr[String] = js.undefined
   
-  var modelGuid: js.UndefOr[String] = js.native
+  var modelGuid: js.UndefOr[String] = js.undefined
   
-  var objectIds: js.UndefOr[js.Array[String]] = js.native
+  var objectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object JobObjOutputPayloadAdvanced {
   

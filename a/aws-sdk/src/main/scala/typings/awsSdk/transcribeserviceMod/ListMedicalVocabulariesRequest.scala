@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMedicalVocabulariesRequest extends StObject {
   
   /**
     * The maximum number of vocabularies to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
     * Returns vocabularies whose names contain the specified string. The search is not case sensitive. ListMedicalVocabularies returns both "vocabularyname" and "VocabularyName".
     */
-  var NameContains: js.UndefOr[VocabularyName] = js.native
+  var NameContains: js.UndefOr[VocabularyName] = js.undefined
   
   /**
     * If the result of your previous request to ListMedicalVocabularies was truncated, include the NextToken to fetch the next set of vocabularies.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * When specified, returns only vocabularies with the VocabularyState equal to the specified vocabulary state. Use this field to see which vocabularies are ready for your medical transcription jobs.
     */
-  var StateEquals: js.UndefOr[VocabularyState] = js.native
+  var StateEquals: js.UndefOr[VocabularyState] = js.undefined
 }
 object ListMedicalVocabulariesRequest {
   

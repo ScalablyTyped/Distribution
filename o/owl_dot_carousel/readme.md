@@ -11,8 +11,8 @@ Touch enabled jQuery plugin that lets you create beautiful responsive carousel s
 | Full name          | owl.carousel |
 | Keywords           | responsive, carousel, owlcarousel, jQuery, plugin |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 3283554 |
+| # dependents       | 74 |
+| # downloads        | 3553841 |
 | # stars            | 9 |
 
 ## Links

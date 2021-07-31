@@ -13,10 +13,13 @@ import typings.uirouterCore.transitionServiceMod.TransitionService
 import typings.uirouterCore.transitionTransitionMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hookRegistryMod {
+  
+  @JSImport("@uirouter/core/lib/transition/hookRegistry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uirouter/core/lib/transition/hookRegistry", "RegisteredHook")
   @js.native
@@ -118,16 +121,19 @@ object hookRegistryMod {
     var tranSvc: TransitionService = js.native
   }
   
-  @JSImport("@uirouter/core/lib/transition/hookRegistry", "makeEvent")
-  @js.native
+  @scala.inline
   def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
     /* matchObject */ js.Any, 
     /* callback */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
-    _
-  ] = js.native
+    js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* matchObject */ js.Any, 
+    /* callback */ js.Any, 
+    /* options */ js.UndefOr[js.Object], 
+    js.Any
+  ]]
   
-  @JSImport("@uirouter/core/lib/transition/hookRegistry", "matchState")
-  @js.native
-  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = js.native
+  @scala.inline
+  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

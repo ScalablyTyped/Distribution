@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checked extends StObject {
   
-  var checked: js.UndefOr[js.Any] = js.native
+  var checked: js.UndefOr[js.Any] = js.undefined
   
-  var indeterminate: js.UndefOr[js.Any] = js.native
+  var indeterminate: js.UndefOr[js.Any] = js.undefined
 }
 object Checked {
   

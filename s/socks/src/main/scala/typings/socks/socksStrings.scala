@@ -3,18 +3,21 @@ package typings.socks
 import typings.socks.constantsMod.SocksCommandOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socksStrings {
   
   @js.native
-  sealed trait associate extends SocksCommandOption
+  sealed trait associate
+    extends StObject
+       with SocksCommandOption
   @scala.inline
   def associate: associate = "associate".asInstanceOf[associate]
   
   @js.native
-  sealed trait bind extends SocksCommandOption
+  sealed trait bind
+    extends StObject
+       with SocksCommandOption
   @scala.inline
   def bind: bind = "bind".asInstanceOf[bind]
   
@@ -24,7 +27,9 @@ object socksStrings {
   def bound: bound = "bound".asInstanceOf[bound]
   
   @js.native
-  sealed trait connect extends SocksCommandOption
+  sealed trait connect
+    extends StObject
+       with SocksCommandOption
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
   

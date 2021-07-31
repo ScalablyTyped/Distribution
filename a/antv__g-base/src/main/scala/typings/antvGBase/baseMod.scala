@@ -5,7 +5,6 @@ import typings.antvGBase.interfacesMod.IBase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -31,7 +30,7 @@ object baseMod {
     def getDefaultCfg(): js.Object = js.native
     
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -39,11 +38,11 @@ object baseMod {
       * @param callback
       */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -52,7 +51,7 @@ object baseMod {
       * @param once
       */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     def set(name: js.Any, value: js.Any): Unit = js.native
   }

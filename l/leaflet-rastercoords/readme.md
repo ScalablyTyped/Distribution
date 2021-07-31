@@ -12,7 +12,7 @@ Leaflet plugin for plain image map projection to display large images using tile
 | Keywords           | Leaflet, coordinates, raster |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6293 |
+| # downloads        | 9826 |
 | # stars            | 1 |
 
 ## Links

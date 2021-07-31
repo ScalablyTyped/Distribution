@@ -3,23 +3,21 @@ package typings.tablesorter
 import typings.tablesorter.sortOrderMod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesorterConfigBaseMod {
   
-  @js.native
   trait TablesorterConfigBase extends StObject {
     
     /**
       * The date-format for dates inside the table.
       */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /**
       * The order which will be applied when clicking on the heading the first time.
       */
-    var sortInitialOrder: js.UndefOr[SortOrder] = js.native
+    var sortInitialOrder: js.UndefOr[SortOrder] = js.undefined
   }
   object TablesorterConfigBase {
     

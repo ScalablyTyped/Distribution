@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRegionSuccessCallbackResult extends StObject {
   
   /** 东北角经纬度 */
-  var northeast: Double = js.native
+  var northeast: Double
   
   /** 西南角经纬度 */
-  var southwest: Double = js.native
+  var southwest: Double
 }
 object GetRegionSuccessCallbackResult {
   

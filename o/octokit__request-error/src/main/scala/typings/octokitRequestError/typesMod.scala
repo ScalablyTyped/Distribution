@@ -4,17 +4,15 @@ import typings.octokitTypes.requestOptionsMod.RequestOptions
 import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait RequestErrorOptions extends StObject {
     
-    var headers: js.UndefOr[ResponseHeaders] = js.native
+    var headers: js.UndefOr[ResponseHeaders] = js.undefined
     
-    var request: RequestOptions = js.native
+    var request: RequestOptions
   }
   object RequestErrorOptions {
     

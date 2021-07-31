@@ -4,15 +4,13 @@ import typings.reactTable.mod.FilterValue
 import typings.reactTable.mod.IdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value[D /* <: js.Object */] extends StObject {
   
-  var id: IdType[D] = js.native
+  var id: IdType[D]
   
-  var value: FilterValue = js.native
+  var value: FilterValue
 }
 object Value {
   
@@ -23,7 +21,7 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value[_], D /* <: js.Object */] (val x: Self with Value[D]) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value[?], D /* <: js.Object */] (val x: Self & Value[D]) extends AnyVal {
     
     @scala.inline
     def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

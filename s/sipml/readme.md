@@ -11,7 +11,7 @@ NPM package for SIPml.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2057 |
+| # downloads        | 1529 |
 | # stars            | 0 |
 
 ## Links

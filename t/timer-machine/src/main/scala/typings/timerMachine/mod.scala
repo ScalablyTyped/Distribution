@@ -2,26 +2,28 @@ package typings.timerMachine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("timer-machine", JSImport.Namespace)
   @js.native
-  class ^ () extends Timer {
+  class ^ ()
+    extends StObject
+       with Timer {
     def this(started: Boolean) = this()
   }
+  @JSImport("timer-machine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("timer-machine", "destroy")
-  @js.native
-  def destroy(reference: String): Timer = js.native
+  @scala.inline
+  def destroy(reference: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(reference.asInstanceOf[js.Any]).asInstanceOf[Timer]
   
   /* static member */
-  @JSImport("timer-machine", "get")
-  @js.native
-  def get(reference: String): Timer = js.native
+  @scala.inline
+  def get(reference: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(reference.asInstanceOf[js.Any]).asInstanceOf[Timer]
   
   @js.native
   trait Timer extends StObject {

@@ -8,10 +8,13 @@ import typings.wordpressComponents.contextMod.SlotFillContext
 import typings.wordpressComponents.fillMod.Fill.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slotFillMod {
+  
+  @JSImport("@wordpress/components/slot-fill", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@wordpress/components/slot-fill", "Consumer")
   @js.native
@@ -19,9 +22,12 @@ object slotFillMod {
   
   object Fill {
     
+    @scala.inline
+    def apply(props: Props): ReactPortal = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
+    
     @JSImport("@wordpress/components/slot-fill", "Fill")
     @js.native
-    def apply(props: Props): ReactPortal = js.native
+    val ^ : js.Any = js.native
   }
   
   @JSImport("@wordpress/components/slot-fill", "Provider")
@@ -40,7 +46,6 @@ object slotFillMod {
     override def _to: ComponentType[typings.wordpressComponents.slotMod.Slot.Props] = ^
   }
   
-  @JSImport("@wordpress/components/slot-fill", "createSlotFill")
-  @js.native
-  def createSlotFill(name: String): Fill = js.native
+  @scala.inline
+  def createSlotFill(name: String): Fill = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlotFill")(name.asInstanceOf[js.Any]).asInstanceOf[Fill]
 }

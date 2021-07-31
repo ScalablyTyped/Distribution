@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingBailing extends StObject {
   
-  var `baling-type`: js.UndefOr[BalingType] = js.native
+  var `baling-type`: js.UndefOr[BalingType] = js.undefined
   
-  var `baling-when`: js.UndefOr[BalingWhen] = js.native
+  var `baling-when`: js.UndefOr[BalingWhen] = js.undefined
 }
 object FinishingBailing {
   

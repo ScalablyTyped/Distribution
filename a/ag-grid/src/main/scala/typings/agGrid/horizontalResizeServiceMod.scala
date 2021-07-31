@@ -3,7 +3,6 @@ package typings.agGrid
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object horizontalResizeServiceMod {
@@ -43,16 +42,15 @@ object horizontalResizeServiceMod {
     /* private */ def setResizeIcons(): js.Any = js.native
   }
   
-  @js.native
   trait HorizontalResizeParams extends StObject {
     
-    var eResizeBar: HTMLElement = js.native
+    var eResizeBar: HTMLElement
     
-    def onResizeEnd(delta: Double): Unit = js.native
+    def onResizeEnd(delta: Double): Unit
     
-    def onResizeStart(shiftKey: Boolean): Unit = js.native
+    def onResizeStart(shiftKey: Boolean): Unit
     
-    def onResizing(delta: Double): Unit = js.native
+    def onResizing(delta: Double): Unit
   }
   object HorizontalResizeParams {
     

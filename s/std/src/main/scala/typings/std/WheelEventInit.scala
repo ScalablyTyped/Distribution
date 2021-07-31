@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WheelEventInit extends MouseEventInit {
+trait WheelEventInit
+  extends StObject
+     with MouseEventInit {
   
-  var deltaMode: js.UndefOr[Double] = js.native
+  var deltaMode: js.UndefOr[Double] = js.undefined
   
-  var deltaX: js.UndefOr[Double] = js.native
+  var deltaX: js.UndefOr[Double] = js.undefined
   
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
   
-  var deltaZ: js.UndefOr[Double] = js.native
+  var deltaZ: js.UndefOr[Double] = js.undefined
 }
 object WheelEventInit {
   

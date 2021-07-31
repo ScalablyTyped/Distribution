@@ -3,17 +3,15 @@ package typings.lasso
 import typings.lasso.lassoMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Crossorigin extends StObject {
     
-    var crossorigin: String = js.native
+    var crossorigin: String
     
-    var integrity: String = js.native
+    var integrity: String
   }
   object Crossorigin {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lasso extends StObject {
     
-    var lasso: js.UndefOr[default] = js.native
+    var lasso: js.UndefOr[default] = js.undefined
     
-    var sendOptions: js.UndefOr[js.Any] = js.native
+    var sendOptions: js.UndefOr[js.Any] = js.undefined
   }
   object Lasso {
     
@@ -66,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Parts extends StObject {
     
-    var parts: js.Array[String] = js.native
+    var parts: js.Array[String]
     
-    var value: String = js.native
+    var value: String
   }
   object Parts {
     

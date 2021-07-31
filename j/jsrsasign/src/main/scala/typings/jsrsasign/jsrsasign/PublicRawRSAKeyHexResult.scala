@@ -2,17 +2,15 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicRawRSAKeyHexResult extends StObject {
   
   /** hexadecimal string of public exponent */
-  var e: String = js.native
+  var e: String
   
   /** hexadecimal string of public key */
-  var n: String = js.native
+  var n: String
 }
 object PublicRawRSAKeyHexResult {
   

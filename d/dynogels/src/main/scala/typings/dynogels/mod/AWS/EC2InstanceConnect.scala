@@ -3,7 +3,6 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.ec2instanceconnectMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EC2InstanceConnect")

@@ -2,39 +2,37 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasePersistenceInfo extends StObject {
   
-  var aof_current_rewrite_time_sec: String = js.native
+  var aof_current_rewrite_time_sec: String
   
-  var aof_last_bgrewrite_status: String = js.native
+  var aof_last_bgrewrite_status: String
   
-  var aof_last_cow_size: String = js.native
+  var aof_last_cow_size: String
   
-  var aof_last_rewrite_time_sec: String = js.native
+  var aof_last_rewrite_time_sec: String
   
-  var aof_last_write_status: String = js.native
+  var aof_last_write_status: String
   
-  var aof_rewrite_in_progress: Flag = js.native
+  var aof_rewrite_in_progress: Flag
   
-  var aof_rewrite_scheduled: Flag = js.native
+  var aof_rewrite_scheduled: Flag
   
-  var rdb_bgsave_in_progress: Flag = js.native
+  var rdb_bgsave_in_progress: Flag
   
-  var rdb_changes_since_last_save: String = js.native
+  var rdb_changes_since_last_save: String
   
-  var rdb_current_bgsave_time_sec: String = js.native
+  var rdb_current_bgsave_time_sec: String
   
-  var rdb_last_bgsave_status: String = js.native
+  var rdb_last_bgsave_status: String
   
-  var rdb_last_bgsave_time_sec: String = js.native
+  var rdb_last_bgsave_time_sec: String
   
-  var rdb_last_cow_size: String = js.native
+  var rdb_last_cow_size: String
   
-  var rdb_last_save_time: String = js.native
+  var rdb_last_save_time: String
 }
 object BasePersistenceInfo {
   

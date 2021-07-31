@@ -1,6 +1,5 @@
 package typings.connectRedis
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
@@ -12,62 +11,71 @@ import typings.redis.mod.RedisClient
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-redis", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, _, _, Query]
+      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ]
-  ): RedisStore = js.native
+  ): RedisStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RedisStore]
   
+  @JSImport("connect-redis", JSImport.Namespace)
   @js.native
-  trait RedisStore
-    extends Store
-       with Instantiable1[/* options */ RedisStoreOptions, RedisStore] {
+  val ^ : js.Any = js.native
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
+  trait RedisStore extends Store {
     
     var client: RedisClient | Redis = js.native
   }
   
-  @js.native
   trait RedisStoreOptions extends StObject {
     
-    var client: js.UndefOr[RedisClient | Redis] = js.native
+    var client: js.UndefOr[RedisClient | Redis] = js.undefined
     
-    var db: js.UndefOr[Double] = js.native
+    var db: js.UndefOr[Double] = js.undefined
     
-    var disableTTL: js.UndefOr[Boolean] = js.native
+    var disableTTL: js.UndefOr[Boolean] = js.undefined
     
-    var disableTouch: js.UndefOr[Boolean] = js.native
+    var disableTouch: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var logErrors: js.UndefOr[Boolean | (js.Function1[/* error */ String, Unit])] = js.native
+    var logErrors: js.UndefOr[Boolean | (js.Function1[/* error */ String, Unit])] = js.undefined
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var scanCount: js.UndefOr[Double] = js.native
+    var scanCount: js.UndefOr[Double] = js.undefined
     
-    var serializer: js.UndefOr[Serializer | JSON] = js.native
+    var serializer: js.UndefOr[Serializer | JSON] = js.undefined
     
-    var socket: js.UndefOr[String] = js.native
+    var socket: js.UndefOr[String] = js.undefined
     
     var ttl: js.UndefOr[
         Double | String | (js.Function3[/* store */ RedisStore, /* sess */ SessionData, /* sid */ String, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var unref: js.UndefOr[Boolean] = js.native
+    var unref: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object RedisStoreOptions {
     
@@ -180,12 +188,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Serializer extends StObject {
     
-    var parse: js.Function = js.native
+    var parse: js.Function
     
-    var stringify: js.Function = js.native
+    var stringify: js.Function
   }
   object Serializer {
     

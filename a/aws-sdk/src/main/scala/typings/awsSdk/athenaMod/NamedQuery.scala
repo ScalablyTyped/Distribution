@@ -2,41 +2,39 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedQuery extends StObject {
   
   /**
     * The database to which the query belongs.
     */
-  var Database: DatabaseString = js.native
+  var Database: DatabaseString
   
   /**
     * The query description.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The query name.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The unique identifier of the query.
     */
-  var NamedQueryId: js.UndefOr[typings.awsSdk.athenaMod.NamedQueryId] = js.native
+  var NamedQueryId: js.UndefOr[typings.awsSdk.athenaMod.NamedQueryId] = js.undefined
   
   /**
     * The SQL query statements that comprise the query.
     */
-  var QueryString: typings.awsSdk.athenaMod.QueryString = js.native
+  var QueryString: typings.awsSdk.athenaMod.QueryString
   
   /**
     * The name of the workgroup that contains the named query.
     */
-  var WorkGroup: js.UndefOr[WorkGroupName] = js.native
+  var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
 }
 object NamedQuery {
   

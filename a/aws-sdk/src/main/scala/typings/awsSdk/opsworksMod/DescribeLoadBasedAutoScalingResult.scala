@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoadBasedAutoScalingResult extends StObject {
   
   /**
     * An array of LoadBasedAutoScalingConfiguration objects that describe each layer's configuration.
     */
-  var LoadBasedAutoScalingConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.LoadBasedAutoScalingConfigurations] = js.native
+  var LoadBasedAutoScalingConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.LoadBasedAutoScalingConfigurations] = js.undefined
 }
 object DescribeLoadBasedAutoScalingResult {
   

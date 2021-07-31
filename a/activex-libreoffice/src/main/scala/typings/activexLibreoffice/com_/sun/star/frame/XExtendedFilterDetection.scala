@@ -6,21 +6,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link com.sun.star.document.XExtendedFilterDetection} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XExtendedFilterDetection extends XInterface {
+trait XExtendedFilterDetection
+  extends StObject
+     with XInterface {
   
   /**
     * use {@link com.sun.star.document.XExtendedFilterDetection.detect()} instead of this
     * @deprecated Deprecated
     */
-  def detect(URL: String, Argumentlist: SeqEquiv[PropertyValue]): String = js.native
+  def detect(URL: String, Argumentlist: SeqEquiv[PropertyValue]): String
 }
 object XExtendedFilterDetection {
   

@@ -3,23 +3,21 @@ package typings.gulpSass
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Duration extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var end: Date = js.native
+    var end: Date
     
-    var entry: String = js.native
+    var entry: String
     
-    var includedFiles: js.Array[String] = js.native
+    var includedFiles: js.Array[String]
     
-    var start: Date = js.native
+    var start: Date
   }
   object Duration {
     

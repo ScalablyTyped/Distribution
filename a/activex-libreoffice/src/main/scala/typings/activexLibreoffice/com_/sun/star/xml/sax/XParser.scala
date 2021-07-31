@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is an IDL version of the Java interface **org.xml.sax.Parser** with some minor adaptations.
   */
-@js.native
-trait XParser extends XInterface {
+trait XParser
+  extends StObject
+     with XInterface {
   
   /**
     * parses an XML document from a stream.
     *
     * Set the desired handlers before calling this method.
     */
-  def parseStream(aInputSource: InputSource): Unit = js.native
+  def parseStream(aInputSource: InputSource): Unit
   
   /** allows an application to register a DTD-Handler. */
-  def setDTDHandler(xHandler: XDTDHandler): Unit = js.native
+  def setDTDHandler(xHandler: XDTDHandler): Unit
   
   /** allows an application to register a document event handler. */
-  def setDocumentHandler(xHandler: XDocumentHandler): Unit = js.native
+  def setDocumentHandler(xHandler: XDocumentHandler): Unit
   
   /** allows an application to register a DTD-Handler. */
-  def setEntityResolver(xResolver: XEntityResolver): Unit = js.native
+  def setEntityResolver(xResolver: XEntityResolver): Unit
   
   /**
     * allows an application to register an error event handler.
@@ -38,14 +38,14 @@ trait XParser extends XInterface {
     * Note that the error handler can throw an exception when an error or warning occurs. Note that an exception is thrown by the parser when an
     * unrecoverable (fatal) error occurs.
     */
-  def setErrorHandler(xHandler: XErrorHandler): Unit = js.native
+  def setErrorHandler(xHandler: XErrorHandler): Unit
   
   /**
     * sets a locale specified for localization of warnings and error messages.
     *
     * Set the language of the error messages. Useful when the parsing errors will be presented to the user.
     */
-  def setLocale(locale: Locale): Unit = js.native
+  def setLocale(locale: Locale): Unit
 }
 object XParser {
   

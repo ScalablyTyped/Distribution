@@ -2,21 +2,21 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListPartsOpts extends CommonArgs {
+trait ListPartsOpts
+  extends StObject
+     with CommonArgs {
   
-  var fileId: String = js.native
+  var fileId: String
   
   /**
     * maximum part count
     * max value 100
     */
-  var maxPartCount: js.UndefOr[Double] = js.native
+  var maxPartCount: js.UndefOr[Double] = js.undefined
   
-  var startPartNumber: js.UndefOr[Double] = js.native
+  var startPartNumber: js.UndefOr[Double] = js.undefined
 }
 object ListPartsOpts {
   

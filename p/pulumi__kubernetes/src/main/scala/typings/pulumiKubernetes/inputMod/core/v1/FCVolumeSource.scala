@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling.
   */
-@js.native
 trait FCVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Optional: FC target lun number
     */
-  var lun: js.UndefOr[Input[Double]] = js.native
+  var lun: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Optional: FC target worldwide names (WWNs)
     */
-  var targetWWNs: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var targetWWNs: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
     */
-  var wwids: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var wwids: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object FCVolumeSource {
   

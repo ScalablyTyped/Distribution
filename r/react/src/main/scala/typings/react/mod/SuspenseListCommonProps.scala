@@ -3,10 +3,8 @@ package typings.react.mod
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspenseListCommonProps extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SuspenseListCommonProps extends StObject {
     * It does, however, allow those children to be wrapped inside a single
     * level of `<React.Fragment>`.
     */
-  var children: ReactElement | Iterable[ReactElement] = js.native
+  var children: ReactElement | Iterable[ReactElement]
 }
 object SuspenseListCommonProps {
   

@@ -3,19 +3,17 @@ package typings.jsforce
 import typings.jsforce.salesforceIdMod.SalesforceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object salesforceObjectOptionsMod {
   
-  @js.native
   trait SObjectOptions extends StObject {
     
-    var ExtId__c: js.UndefOr[String] = js.native
+    var ExtId__c: js.UndefOr[String] = js.undefined
     
-    var Id: js.UndefOr[SalesforceId] = js.native
+    var Id: js.UndefOr[SalesforceId] = js.undefined
     
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
   }
   object SObjectOptions {
     

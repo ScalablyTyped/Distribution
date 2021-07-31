@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageConfig extends StObject {
   
   /** Determines how to redact text from image. */
-  var textRedactionMode: js.UndefOr[String] = js.native
+  var textRedactionMode: js.UndefOr[String] = js.undefined
 }
 object ImageConfig {
   

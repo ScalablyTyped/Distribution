@@ -2,39 +2,37 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelContentChangedEvent extends StObject {
   
-  val changes: js.Array[IModelContentChange] = js.native
+  val changes: js.Array[IModelContentChange]
   
   /**
     * The (new) end-of-line character.
     */
-  val eol: String = js.native
+  val eol: String
   
   /**
     * Flag that indicates that all decorations were lost with this edit.
     * The model has been reset to a new value.
     */
-  val isFlush: Boolean = js.native
+  val isFlush: Boolean
   
   /**
     * Flag that indicates that this event was generated while redoing.
     */
-  val isRedoing: Boolean = js.native
+  val isRedoing: Boolean
   
   /**
     * Flag that indicates that this event was generated while undoing.
     */
-  val isUndoing: Boolean = js.native
+  val isUndoing: Boolean
   
   /**
     * The new version id the model has transitioned to.
     */
-  val versionId: Double = js.native
+  val versionId: Double
 }
 object IModelContentChangedEvent {
   

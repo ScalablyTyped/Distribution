@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
   /**
     * The range's end position.
     */
-  var end: Position = js.native
+  var end: Position
   
   /**
     * The range's start position
     */
-  var start: Position = js.native
+  var start: Position
 }
 object Range {
   
@@ -26,6 +24,10 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
+  @JSImport("vscode-languageserver-types", "Range")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a new Range liternal.
     * @param startLine The start line number.
@@ -33,24 +35,21 @@ object Range {
     * @param endLine The end line number.
     * @param endCharacter The end character.
     */
-  @JSImport("vscode-languageserver-types", "Range.create")
-  @js.native
-  def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): Range = js.native
+  @scala.inline
+  def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[Range]
   /**
     * Create a new Range liternal.
     * @param start The range's start position.
     * @param end The range's end position.
     */
-  @JSImport("vscode-languageserver-types", "Range.create")
-  @js.native
-  def create(start: Position, end: Position): Range = js.native
+  @scala.inline
+  def create(start: Position, end: Position): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */
-  @JSImport("vscode-languageserver-types", "Range.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
   
   @scala.inline
   implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {

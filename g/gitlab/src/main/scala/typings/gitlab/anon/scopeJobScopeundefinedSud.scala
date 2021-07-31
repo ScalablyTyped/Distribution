@@ -3,16 +3,14 @@ package typings.gitlab.anon
 import typings.gitlab.jobsMod.JobScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  scope :gitlab.gitlab/dist/types/core/services/Jobs.JobScope | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
-@js.native
 trait scopeJobScopeundefinedSud extends StObject {
   
-  var scope: js.UndefOr[JobScope] = js.native
+  var scope: js.UndefOr[JobScope] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object scopeJobScopeundefinedSud {
   

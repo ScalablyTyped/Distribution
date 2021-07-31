@@ -2,62 +2,60 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /** The configuration for this job. */
-  var config: js.UndefOr[JobConfig] = js.native
+  var config: js.UndefOr[JobConfig] = js.undefined
   
   /** Output only. The time the job was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the transcoding finished. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. List of failure details. This property may contain additional information about the failure when `failure_reason` is present. *Note*: This feature is not yet available. */
-  var failureDetails: js.UndefOr[js.Array[FailureDetail]] = js.native
+  var failureDetails: js.UndefOr[js.Array[FailureDetail]] = js.undefined
   
   /** Output only. A description of the reason for the failure. This property is always present when `state` is `FAILED`. */
-  var failureReason: js.UndefOr[String] = js.native
+  var failureReason: js.UndefOr[String] = js.undefined
   
   /**
     * Input only. Specify the `input_uri` to populate empty `uri` fields in each element of `Job.config.inputs` or `JobTemplate.config.inputs` when using template. URI of the media. It
     * must be stored in Cloud Storage. For example, `gs://bucket/inputs/file.mp4`.
     */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
   
   /** The resource name of the job. Format: `projects/{project}/locations/{location}/jobs/{job}` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The origin URI. *Note*: This feature is not yet available. */
-  var originUri: js.UndefOr[OriginUri] = js.native
+  var originUri: js.UndefOr[OriginUri] = js.undefined
   
   /**
     * Input only. Specify the `output_uri` to populate an empty `Job.config.output.uri` or `JobTemplate.config.output.uri` when using template. URI for the output file(s). For example,
     * `gs://my-bucket/outputs/`.
     */
-  var outputUri: js.UndefOr[String] = js.native
+  var outputUri: js.UndefOr[String] = js.undefined
   
   /** Specify the priority of the job. Enter a value between 0 and 100, where 0 is the lowest priority and 100 is the highest priority. The default is 0. */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** Output only. Estimated fractional progress, from `0` to `1` for each step. *Note*: This feature is not yet available. */
-  var progress: js.UndefOr[Progress] = js.native
+  var progress: js.UndefOr[Progress] = js.undefined
   
   /** Output only. The time the transcoding started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The current state of the job. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Input only. Specify the `template_id` to use for populating `Job.config`. The default is `preset/web-hd`. Preset Transcoder templates: - `preset/{preset_id}` - User defined
     * JobTemplate: `{job_template_id}`
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object Job {
   

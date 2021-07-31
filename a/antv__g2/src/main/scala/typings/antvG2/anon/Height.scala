@@ -2,45 +2,43 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   /**
     * 图片结束位置， 值为原始数据值，支持 callback
     */
-  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * x 方向的偏移量
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * y 方向偏移量
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * 图片路径
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * 图片起始位置， 值为原始数据值，支持 callback
     */
-  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
   /**
     * 指定 giude 是否绘制在 canvas 最上层，默认为 false, 即绘制在最下层
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Height {
   

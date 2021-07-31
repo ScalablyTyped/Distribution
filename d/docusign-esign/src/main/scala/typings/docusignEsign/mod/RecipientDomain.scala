@@ -2,19 +2,17 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientDomain extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var domainCode: js.UndefOr[String] = js.native
+  var domainCode: js.UndefOr[String] = js.undefined
   
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
-  var recipientDomainId: js.UndefOr[String] = js.native
+  var recipientDomainId: js.UndefOr[String] = js.undefined
 }
 object RecipientDomain {
   

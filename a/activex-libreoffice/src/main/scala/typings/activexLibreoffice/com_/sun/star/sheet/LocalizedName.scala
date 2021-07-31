@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A name that is valid for a specified locale.
   * @see com.sun.star.sheet.XCompatibilityNames
   */
-@js.native
 trait LocalizedName extends StObject {
   
   /** The locale for which this name is valid. */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** The name itself. */
-  var Name: String = js.native
+  var Name: String
 }
 object LocalizedName {
   

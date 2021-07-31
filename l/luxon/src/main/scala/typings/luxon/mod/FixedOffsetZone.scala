@@ -2,7 +2,6 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "FixedOffsetZone")
@@ -15,13 +14,11 @@ object FixedOffsetZone {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("luxon", "FixedOffsetZone.instance")
-  @js.native
-  def instance(offset: Double): FixedOffsetZone = js.native
+  @scala.inline
+  def instance(offset: Double): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(offset.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
   
-  @JSImport("luxon", "FixedOffsetZone.parseSpecifier")
-  @js.native
-  def parseSpecifier(s: String): FixedOffsetZone = js.native
+  @scala.inline
+  def parseSpecifier(s: String): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
   
   @JSImport("luxon", "FixedOffsetZone.utcInstance")
   @js.native

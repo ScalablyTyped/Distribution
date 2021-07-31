@@ -2,22 +2,20 @@ package typings.semanticUiSite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-site.SemanticUI.Site.NamespaceStubSettings._Impl, keyof semantic-ui-site.SemanticUI.Site.NamespaceStubSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplCache extends StObject {
   
-  var cache: js.UndefOr[js.Any] = js.native
+  var cache: js.UndefOr[js.Any] = js.undefined
   
-  var config: js.UndefOr[js.Any] = js.native
+  var config: js.UndefOr[js.Any] = js.undefined
   
-  var section: js.UndefOr[js.Any] = js.native
+  var section: js.UndefOr[js.Any] = js.undefined
   
-  var sections: js.UndefOr[js.Any] = js.native
+  var sections: js.UndefOr[js.Any] = js.undefined
   
-  var utilities: js.UndefOr[js.Any] = js.native
+  var utilities: js.UndefOr[js.Any] = js.undefined
 }
 object PartialPickImplkeyofImplCache {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridSortingColumnSetting
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,19 +16,19 @@ trait IgGridSortingColumnSetting
     * Enables/disables sorting on the specified column. By default all columns are sortable.
     *
     */
-  var allowSorting: js.UndefOr[Boolean] = js.native
+  var allowSorting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies the grid column by index. Either key or index must be set in every column setting.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the grid column by key. Either key or index must be set in every column setting.
     *
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to a function (string or function) used for custom comparison.
@@ -47,7 +46,7 @@ trait IgGridSortingColumnSetting
     * "string" The name of the function as a string located in the global window object.
     * "function" Function which will be used for custom comparison.
     */
-  var compareFunc: js.UndefOr[String | js.Function] = js.native
+  var compareFunc: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.
@@ -57,7 +56,7 @@ trait IgGridSortingColumnSetting
     * "asc" The initial sort of the column data will be in ascending order.
     * "desc" The initial sort of the column data will be in descending order.
     */
-  var currentSortDirection: js.UndefOr[String] = js.native
+  var currentSortDirection: js.UndefOr[String] = js.undefined
   
   /**
     * This will be the first sort direction when the column hasn't been sorted before.
@@ -67,7 +66,7 @@ trait IgGridSortingColumnSetting
     * "asc" The first sort of the column data will be in ascending order.
     * "desc" The first sort of the column data will be in descending order.
     */
-  var firstSortDirection: js.UndefOr[String] = js.native
+  var firstSortDirection: js.UndefOr[String] = js.undefined
 }
 object IgGridSortingColumnSetting {
   

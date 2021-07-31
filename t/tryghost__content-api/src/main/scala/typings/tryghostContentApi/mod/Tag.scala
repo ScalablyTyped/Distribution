@@ -3,26 +3,25 @@ package typings.tryghostContentApi.mod
 import typings.tryghostContentApi.anon.Posts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag
-  extends Identification
+  extends StObject
+     with Identification
      with Metadata
      with GhostData {
   
-  var count: js.UndefOr[Posts] = js.native
+  var count: js.UndefOr[Posts] = js.undefined
   
-  var description: js.UndefOr[Nullable[String]] = js.native
+  var description: js.UndefOr[Nullable[String]] = js.undefined
   
-  var feature_image: js.UndefOr[Nullable[String]] = js.native
+  var feature_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[TagVisibility] = js.native
+  var visibility: js.UndefOr[TagVisibility] = js.undefined
 }
 object Tag {
   

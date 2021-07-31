@@ -3,12 +3,14 @@ package typings.rxjs
 import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipLastMod {
   
-  @JSImport("rxjs/internal/operators/skipLast", "skipLast")
+  @JSImport("rxjs/internal/operators/skipLast", JSImport.Namespace)
   @js.native
-  def skipLast[T](count: Double): MonoTypeOperatorFunction[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def skipLast[T](count: Double): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipLast")(count.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

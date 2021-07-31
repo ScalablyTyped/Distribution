@@ -2,59 +2,57 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumn extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var decimalDigits: js.UndefOr[Double] = js.native
+  var decimalDigits: js.UndefOr[Double] = js.undefined
   
-  var editField: js.UndefOr[String] = js.native
+  var editField: js.UndefOr[String] = js.undefined
   
-  var editor: js.UndefOr[js.Any] = js.native
+  var editor: js.UndefOr[js.Any] = js.undefined
   
-  var events: js.UndefOr[js.Any] = js.native
+  var events: js.UndefOr[js.Any] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
   
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var headerCssClass: js.UndefOr[String] = js.native
+  var headerCssClass: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var renderer: js.UndefOr[js.Any] = js.native
+  var renderer: js.UndefOr[js.Any] = js.undefined
   
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
-  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var tmpl: js.UndefOr[String] = js.native
+  var tmpl: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GridColumn {
   

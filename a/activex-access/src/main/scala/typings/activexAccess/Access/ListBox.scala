@@ -2,7 +2,6 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -192,13 +191,13 @@ trait ListBox extends StObject {
   var Locked: Boolean = js.native
   
   def Move(Left: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double): Unit = js.native
-  def Move(Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Double, Width: Unit, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Double, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Unit, Height: Double): Unit = js.native
   
   var MultiSelect: Double = js.native
   

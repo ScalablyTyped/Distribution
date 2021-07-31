@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StepDefinition. */
-@js.native
 trait IStepDefinition extends StObject {
   
   /** StepDefinition id */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** StepDefinition pattern */
-  var pattern: js.UndefOr[IStepDefinitionPattern | Null] = js.native
+  var pattern: js.UndefOr[IStepDefinitionPattern | Null] = js.undefined
   
   /** StepDefinition sourceReference */
-  var sourceReference: js.UndefOr[ISourceReference | Null] = js.native
+  var sourceReference: js.UndefOr[ISourceReference | Null] = js.undefined
 }
 object IStepDefinition {
   

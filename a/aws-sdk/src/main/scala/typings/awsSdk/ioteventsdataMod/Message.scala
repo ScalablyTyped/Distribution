@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * The name of the input into which the message payload is transformed.
     */
-  var inputName: InputName = js.native
+  var inputName: InputName
   
   /**
     * The ID to assign to the message. Within each batch sent, each "messageId" must be unique.
     */
-  var messageId: MessageId = js.native
+  var messageId: MessageId
   
   /**
     * The payload of the message. This can be a JSON string or a Base-64-encoded string representing binary data (in which case you must decode it).
     */
-  var payload: Payload = js.native
+  var payload: Payload
 }
 object Message {
   

@@ -36,10 +36,13 @@ import typings.vegaLite.vegaSchemaMod.VgRange
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
+  
+  @JSImport("vega-lite/build/src/compile/scale/range", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/scale/range", "MAX_SIZE_RANGE_STEP_RATIO")
   @js.native
@@ -51,34 +54,27 @@ object rangeMod {
     /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
   ] = js.native
   
-  @JSImport("vega-lite/build/src/compile/scale/range", "defaultContinuousToDiscreteCount")
-  @js.native
-  def defaultContinuousToDiscreteCount_quantile(scaleType: quantile, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = js.native
-  @JSImport("vega-lite/build/src/compile/scale/range", "defaultContinuousToDiscreteCount")
-  @js.native
-  def defaultContinuousToDiscreteCount_quantize(scaleType: quantize, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = js.native
-  @JSImport("vega-lite/build/src/compile/scale/range", "defaultContinuousToDiscreteCount")
-  @js.native
-  def defaultContinuousToDiscreteCount_threshold(scaleType: threshold, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = js.native
+  @scala.inline
+  def defaultContinuousToDiscreteCount_quantile(scaleType: quantile, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultContinuousToDiscreteCount")(scaleType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/compile/scale/range", "interpolateRange")
-  @js.native
-  def interpolateRange(rangeMin: Double, rangeMax: Double, cardinality: Double): SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/scale/range", "interpolateRange")
-  @js.native
-  def interpolateRange(rangeMin: Double, rangeMax: SignalRef, cardinality: Double): SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/scale/range", "interpolateRange")
-  @js.native
-  def interpolateRange(rangeMin: SignalRef, rangeMax: Double, cardinality: Double): SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/scale/range", "interpolateRange")
-  @js.native
-  def interpolateRange(rangeMin: SignalRef, rangeMax: SignalRef, cardinality: Double): SignalRef = js.native
+  @scala.inline
+  def defaultContinuousToDiscreteCount_quantize(scaleType: quantize, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultContinuousToDiscreteCount")(scaleType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/compile/scale/range", "parseRangeForChannel")
-  @js.native
-  def parseRangeForChannel(channel: ScaleChannel, model: UnitModel): Explicit[VgRange] = js.native
+  @scala.inline
+  def defaultContinuousToDiscreteCount_threshold(scaleType: threshold, config: Config[ExprRef | SignalRef], domain: Domain, channel: ScaleChannel): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultContinuousToDiscreteCount")(scaleType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/compile/scale/range", "parseUnitScaleRange")
-  @js.native
-  def parseUnitScaleRange(model: UnitModel): Unit = js.native
+  @scala.inline
+  def interpolateRange(rangeMin: Double, rangeMax: Double, cardinality: Double): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRange")(rangeMin.asInstanceOf[js.Any], rangeMax.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
+  @scala.inline
+  def interpolateRange(rangeMin: Double, rangeMax: SignalRef, cardinality: Double): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRange")(rangeMin.asInstanceOf[js.Any], rangeMax.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
+  @scala.inline
+  def interpolateRange(rangeMin: SignalRef, rangeMax: Double, cardinality: Double): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRange")(rangeMin.asInstanceOf[js.Any], rangeMax.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
+  @scala.inline
+  def interpolateRange(rangeMin: SignalRef, rangeMax: SignalRef, cardinality: Double): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRange")(rangeMin.asInstanceOf[js.Any], rangeMax.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
+  
+  @scala.inline
+  def parseRangeForChannel(channel: ScaleChannel, model: UnitModel): Explicit[VgRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRangeForChannel")(channel.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Explicit[VgRange]]
+  
+  @scala.inline
+  def parseUnitScaleRange(model: UnitModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitScaleRange")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

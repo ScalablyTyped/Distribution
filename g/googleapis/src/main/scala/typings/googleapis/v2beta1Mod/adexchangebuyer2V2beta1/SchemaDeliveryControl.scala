@@ -2,29 +2,27 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message contains details about how the deals will be paced.
   */
-@js.native
 trait SchemaDeliveryControl extends StObject {
   
   /**
     * Specified the creative blocking levels to be applied. @OutputOnly
     */
-  var creativeBlockingLevel: js.UndefOr[String] = js.native
+  var creativeBlockingLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how the impression delivery will be paced. @OutputOnly
     */
-  var deliveryRateType: js.UndefOr[String] = js.native
+  var deliveryRateType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies any frequency caps. @OutputOnly
     */
-  var frequencyCaps: js.UndefOr[js.Array[SchemaFrequencyCap]] = js.native
+  var frequencyCaps: js.UndefOr[js.Array[SchemaFrequencyCap]] = js.undefined
 }
 object SchemaDeliveryControl {
   

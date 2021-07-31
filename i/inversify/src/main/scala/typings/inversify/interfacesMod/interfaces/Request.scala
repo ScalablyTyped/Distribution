@@ -2,16 +2,15 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request extends StObject {
   
-  def addChildRequest(serviceIdentifier: ServiceIdentifier[_], bindings: js.Array[Binding[_]], target: Target): Request = js.native
-  def addChildRequest(serviceIdentifier: ServiceIdentifier[_], bindings: Binding[_], target: Target): Request = js.native
+  def addChildRequest(serviceIdentifier: ServiceIdentifier[js.Any], bindings: js.Array[Binding[js.Any]], target: Target): Request = js.native
+  def addChildRequest(serviceIdentifier: ServiceIdentifier[js.Any], bindings: Binding[js.Any], target: Target): Request = js.native
   
-  var bindings: js.Array[Binding[_]] = js.native
+  var bindings: js.Array[Binding[js.Any]] = js.native
   
   var childRequests: js.Array[Request] = js.native
   
@@ -23,7 +22,7 @@ trait Request extends StObject {
   
   var requestScope: RequestScope = js.native
   
-  var serviceIdentifier: ServiceIdentifier[_] = js.native
+  var serviceIdentifier: ServiceIdentifier[js.Any] = js.native
   
   var target: Target = js.native
 }

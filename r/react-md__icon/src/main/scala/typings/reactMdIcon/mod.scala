@@ -26,22 +26,28 @@ import typings.std.HTMLSpanElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/icon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/icon", "FontIcon")
   @js.native
-  val FontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
+  val FontIcon: ForwardRefExoticComponent[FontIconProps & RefAttributes[HTMLElement]] = js.native
   
   object IconProvider {
     
-    @JSImport("@react-md/icon", "IconProvider")
-    @js.native
+    @scala.inline
     def apply(
       hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort: IconProviderProps
-    ): ReactElement = js.native
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
+    @JSImport("@react-md/icon", "IconProvider")
+    @js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -131,19 +137,22 @@ object mod {
   
   @JSImport("@react-md/icon", "IconRotator")
   @js.native
-  val IconRotator: ForwardRefExoticComponent[IconRotatorProps with RefAttributes[HTMLSpanElement]] = js.native
+  val IconRotator: ForwardRefExoticComponent[IconRotatorProps & RefAttributes[HTMLSpanElement]] = js.native
   
   @JSImport("@react-md/icon", "SVGIcon")
   @js.native
-  val SVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
+  val SVGIcon: ForwardRefExoticComponent[SVGIconProps & RefAttributes[SVGSVGElement]] = js.native
   
   object TextIconSpacing {
     
+    @scala.inline
+    def apply(
+      hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/icon", "TextIconSpacing")
     @js.native
-    def apply(
-      hasClassNameIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -214,76 +223,63 @@ object mod {
     }
   }
   
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_back(name: back): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_back(name: back, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_checkbox(name: checkbox): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_download(name: download): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_download(name: download, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_dropdown(name: dropdown): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_expander(name: expander): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_forward(name: forward): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_menu(name: menu): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_notification(name: notification): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_password(name: password): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_password(name: password, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_radio(name: radio): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_selected(name: selected): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_sort(name: sort): ReactNode = js.native
-  @JSImport("@react-md/icon", "useIcon")
-  @js.native
-  def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = js.native
+  @scala.inline
+  def useIcon_back(name: back): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_back(name: back, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_checkbox(name: checkbox): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_download(name: download): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_download(name: download, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_dropdown(name: dropdown): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_expander(name: expander): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_forward(name: forward): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_menu(name: menu): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_notification(name: notification): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_password(name: password): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_password(name: password, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_radio(name: radio): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_selected(name: selected): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_sort(name: sort): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
 }

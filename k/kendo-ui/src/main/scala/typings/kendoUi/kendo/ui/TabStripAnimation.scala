@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStripAnimation extends StObject {
   
-  var close: js.UndefOr[TabStripAnimationClose] = js.native
+  var close: js.UndefOr[TabStripAnimationClose] = js.undefined
   
-  var open: js.UndefOr[TabStripAnimationOpen] = js.native
+  var open: js.UndefOr[TabStripAnimationOpen] = js.undefined
 }
 object TabStripAnimation {
   

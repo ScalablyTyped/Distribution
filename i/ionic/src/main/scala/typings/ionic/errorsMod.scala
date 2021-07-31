@@ -3,7 +3,6 @@ package typings.ionic
 import typings.ionicCliFramework.mod.BaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -24,8 +23,8 @@ object errorsMod {
   @js.native
   class FatalException () extends BaseException {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], exitCode: Double) = this()
     def this(message: String, exitCode: Double) = this()
+    def this(message: Unit, exitCode: Double) = this()
     
     @JSName("exitCode")
     var exitCode_FatalException: Double = js.native

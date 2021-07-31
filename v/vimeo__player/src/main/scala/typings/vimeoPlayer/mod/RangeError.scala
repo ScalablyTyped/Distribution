@@ -2,20 +2,20 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RangeError extends Error {
+trait RangeError
+  extends StObject
+     with Error {
   
   @JSName("name")
-  var name_RangeError: typings.vimeoPlayer.vimeoPlayerStrings.RangeError = js.native
+  var name_RangeError: typings.vimeoPlayer.vimeoPlayerStrings.RangeError
 }
 object RangeError {
   
   @scala.inline
-  def apply(message: String, method: String, name: typings.vimeoPlayer.vimeoPlayerStrings.RangeError): RangeError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(message: String, method: String): RangeError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "RangeError")
     __obj.asInstanceOf[RangeError]
   }
   

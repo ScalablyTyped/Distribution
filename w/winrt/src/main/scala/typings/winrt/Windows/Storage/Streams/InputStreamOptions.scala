@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait InputStreamOptions extends StObject
 object InputStreamOptions extends StObject {
   
   @js.native
-  sealed trait none extends InputStreamOptions
+  sealed trait none
+    extends StObject
+       with InputStreamOptions
   
   @js.native
-  sealed trait partial extends InputStreamOptions
+  sealed trait partial
+    extends StObject
+       with InputStreamOptions
   
   @js.native
-  sealed trait readAhead extends InputStreamOptions
+  sealed trait readAhead
+    extends StObject
+       with InputStreamOptions
 }

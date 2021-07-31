@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncResponse extends StObject {
   
   /** Devices associated with the third-party user. */
-  var payload: js.UndefOr[SyncResponsePayload] = js.native
+  var payload: js.UndefOr[SyncResponsePayload] = js.undefined
   
   /** Request ID used for debugging. Copied from the request. */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object SyncResponse {
   

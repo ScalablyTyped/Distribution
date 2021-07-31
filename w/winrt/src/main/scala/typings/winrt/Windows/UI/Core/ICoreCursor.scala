@@ -2,15 +2,13 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICoreCursor extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var `type`: CoreCursorType = js.native
+  var `type`: CoreCursorType
 }
 object ICoreCursor {
   

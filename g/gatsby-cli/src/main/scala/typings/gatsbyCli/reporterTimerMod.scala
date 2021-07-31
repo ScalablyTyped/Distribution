@@ -5,25 +5,26 @@ import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterTimerMod {
   
-  @JSImport("gatsby-cli/lib/reporter/reporter-timer", "createTimerReporter")
+  @JSImport("gatsby-cli/lib/reporter/reporter-timer", JSImport.Namespace)
   @js.native
-  def createTimerReporter(hasTextIdSpanReporter: ICreateTimerReporterArguments): ITimerReporter = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createTimerReporter(hasTextIdSpanReporter: ICreateTimerReporterArguments): ITimerReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimerReporter")(hasTextIdSpanReporter.asInstanceOf[js.Any]).asInstanceOf[ITimerReporter]
+  
   trait ICreateTimerReporterArguments extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var reporter: Reporter_ = js.native
+    var reporter: Reporter_
     
-    var span: Span = js.native
+    var span: Span
     
-    var text: String = js.native
+    var text: String
   }
   object ICreateTimerReporterArguments {
     
@@ -50,20 +51,19 @@ object reporterTimerMod {
     }
   }
   
-  @js.native
   trait ITimerReporter extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def panic(arg: js.Any, otherArgs: js.Any*): Unit = js.native
+    def panic(arg: js.Any, otherArgs: js.Any*): Unit
     
-    def panicOnBuild(arg: js.Any, otherArgs: js.Any*): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(arg: js.Any, otherArgs: js.Any*): IStructuredError | js.Array[IStructuredError]
     
-    def setStatus(statusText: String): Unit = js.native
+    def setStatus(statusText: String): Unit
     
-    var span: Span = js.native
+    var span: Span
     
-    def start(): Unit = js.native
+    def start(): Unit
   }
   object ITimerReporter {
     

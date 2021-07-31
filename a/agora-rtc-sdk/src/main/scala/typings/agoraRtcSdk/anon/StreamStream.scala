@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamStream extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait StreamStream extends StObject {
     * - `video`: boolean, marks whether the stream contains a video track.
     * - `audio`: boolean, marks whether the stream contains an audio track.
     */
-  var stream: typings.agoraRtcSdk.mod.Stream = js.native
+  var stream: typings.agoraRtcSdk.mod.Stream
 }
 object StreamStream {
   

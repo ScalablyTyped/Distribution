@@ -2,24 +2,22 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flow extends StObject {
   
   /**
     * @returns {String} The URL used to authorize the user for the app.
     * @return
     */
-  def authorizeUrl(): String = js.native
+  def authorizeUrl(): String
   
   /**
     * Run the appropriate parts of the Oauth flow, attempting to establish user
     * authorization.
     * @returns {Promise<Object>} A promise that resolves to the Oauth credentials.
     */
-  def run(): Unit = js.native
+  def run(): Unit
 }
 object Flow {
   

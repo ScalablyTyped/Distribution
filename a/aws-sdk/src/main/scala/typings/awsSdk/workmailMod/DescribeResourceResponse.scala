@@ -2,51 +2,49 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourceResponse extends StObject {
   
   /**
     * The booking options for the described resource.
     */
-  var BookingOptions: js.UndefOr[typings.awsSdk.workmailMod.BookingOptions] = js.native
+  var BookingOptions: js.UndefOr[typings.awsSdk.workmailMod.BookingOptions] = js.undefined
   
   /**
     * The date and time when a resource was disabled from WorkMail, in UNIX epoch time format.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.native
+  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The email of the described resource.
     */
-  var Email: js.UndefOr[EmailAddress] = js.native
+  var Email: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The date and time when a resource was enabled for WorkMail, in UNIX epoch time format.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.native
+  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the described resource.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The identifier of the described resource.
     */
-  var ResourceId: js.UndefOr[typings.awsSdk.workmailMod.ResourceId] = js.native
+  var ResourceId: js.UndefOr[typings.awsSdk.workmailMod.ResourceId] = js.undefined
   
   /**
     * The state of the resource: enabled (registered to Amazon WorkMail), disabled (deregistered or never registered to WorkMail), or deleted.
     */
-  var State: js.UndefOr[EntityState] = js.native
+  var State: js.UndefOr[EntityState] = js.undefined
   
   /**
     * The type of the described resource.
     */
-  var Type: js.UndefOr[ResourceType] = js.native
+  var Type: js.UndefOr[ResourceType] = js.undefined
 }
 object DescribeResourceResponse {
   

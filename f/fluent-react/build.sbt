@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "fluent-react"
-version := "0.8-dt-20200731Z-7e5f01"
-scalaVersion := "2.13.3"
+version := "0.8-dt-20200731Z-2ffc2a"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
-  "org.scalablytyped" %%% "fluent" % "0.11-dt-20190710Z-e8c866",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "fluent" % "0.11-dt-20190710Z-ecacf4",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

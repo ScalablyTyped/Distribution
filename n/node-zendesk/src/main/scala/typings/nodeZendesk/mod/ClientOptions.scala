@@ -2,25 +2,23 @@ package typings.nodeZendesk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientOptions extends StObject {
   
-  var asUser: js.UndefOr[String] = js.native
+  var asUser: js.UndefOr[String] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var disableGlobalState: js.UndefOr[Boolean] = js.native
+  var disableGlobalState: js.UndefOr[Boolean] = js.undefined
   
-  var oauth: js.UndefOr[Boolean] = js.native
+  var oauth: js.UndefOr[Boolean] = js.undefined
   
-  var remoteUri: String = js.native
+  var remoteUri: String
   
-  var token: String = js.native
+  var token: String
   
-  var username: String = js.native
+  var username: String
 }
 object ClientOptions {
   

@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placeholder extends StObject {
   
-  var client: BoxModel = js.native
+  var client: BoxModel
   
-  var display: String = js.native
+  var display: String
   
-  var tagName: String = js.native
+  var tagName: String
 }
 object Placeholder {
   

@@ -2,27 +2,25 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeFlow extends StObject {
   
   /**
     * A message relevant to the code flow.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the code flow.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * An array of one or more unique threadFlow objects, each of which describes the progress of a program through a
     * thread of execution.
     */
-  var threadFlows: js.Array[ThreadFlow] = js.native
+  var threadFlows: js.Array[ThreadFlow]
 }
 object CodeFlow {
   

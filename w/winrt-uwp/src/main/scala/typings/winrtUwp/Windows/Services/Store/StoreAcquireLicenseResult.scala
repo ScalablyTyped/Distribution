@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides response data for a request to acquire a downloadable content (DLC) package license. */
-@js.native
 trait StoreAcquireLicenseResult extends StObject {
   
   /** Gets the error code for the request, if the operation encountered an error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
   
   /** Gets an object that represents the downloadable content (DLC) package license. */
-  var storePackageLicense: StorePackageLicense = js.native
+  var storePackageLicense: StorePackageLicense
 }
 object StoreAcquireLicenseResult {
   

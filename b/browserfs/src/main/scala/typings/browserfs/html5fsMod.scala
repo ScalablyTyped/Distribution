@@ -14,7 +14,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5fsMod {
@@ -35,22 +34,25 @@ object html5fsMod {
     */
   class default () extends HTML5FS {
     def this(size: Double) = this()
-    def this(size: js.UndefOr[scala.Nothing], `type`: Double) = this()
     def this(size: Double, `type`: Double) = this()
-    def this(size: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
-    def this(size: js.UndefOr[scala.Nothing], `type`: Double, deprecateMsg: Boolean) = this()
-    def this(size: Double, `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+    def this(size: Unit, `type`: Double) = this()
     def this(size: Double, `type`: Double, deprecateMsg: Boolean) = this()
+    def this(size: Double, `type`: Unit, deprecateMsg: Boolean) = this()
+    def this(size: Unit, `type`: Double, deprecateMsg: Boolean) = this()
+    def this(size: Unit, `type`: Unit, deprecateMsg: Boolean) = this()
   }
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/HTML5FS", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates an HTML5FS instance with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/HTML5FS", "default.Create")
-    @js.native
-    def Create(opts: HTML5FSOptions, cb: BFSCallback[HTML5FS]): Unit = js.native
+    @scala.inline
+    def Create(opts: HTML5FSOptions, cb: BFSCallback[HTML5FS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/HTML5FS", "default.Name")
     @js.native
@@ -60,9 +62,8 @@ object html5fsMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/HTML5FS", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/HTML5FS", "HTML5FSFile")
@@ -130,7 +131,7 @@ object html5fsMod {
       * @return [Number] The current file position.
       */
     /* InferMemberOverrides */
-    override def getPos(): Double with js.UndefOr[Double] = js.native
+    override def getPos(): Double & js.UndefOr[Double] = js.native
     
     /**
       * Read data from the file.
@@ -279,7 +280,7 @@ object html5fsMod {
       * Must be called before file system can be used!
       */
     def allocate(): Unit = js.native
-    def allocate(cb: js.UndefOr[scala.Nothing], deprecateMsg: Boolean): Unit = js.native
+    def allocate(cb: Unit, deprecateMsg: Boolean): Unit = js.native
     def allocate(cb: BFSOneArgCallback): Unit = js.native
     def allocate(cb: BFSOneArgCallback, deprecateMsg: Boolean): Unit = js.native
     
@@ -296,7 +297,7 @@ object html5fsMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /**
       * Deletes everything in the FS. Used for testing.
@@ -417,12 +418,11 @@ object html5fsMod {
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
-  @js.native
   trait HTML5FSOptions extends StObject {
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[Double] = js.native
+    var `type`: js.UndefOr[Double] = js.undefined
   }
   object HTML5FSOptions {
     

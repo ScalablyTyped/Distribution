@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrustedAdvisorCheckRefreshStatusesRequest extends StObject {
   
   /**
     * The IDs of the Trusted Advisor checks to get the status of.   If you specify the check ID of a check that is automatically refreshed, you might see an InvalidParameterValue error. 
     */
-  var checkIds: StringList = js.native
+  var checkIds: StringList
 }
 object DescribeTrustedAdvisorCheckRefreshStatusesRequest {
   

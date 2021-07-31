@@ -2,70 +2,69 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMPictureFill
-  extends CIMSymbolLayerBase
+  extends StObject
+     with CIMSymbolLayerBase
      with CIMSymbolLayerType {
   
   /**
     * The color substitutions which allows colors in the image to be substituted with a different color.
     */
-  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.native
+  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
     * The height of the image.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance that the image is offset in the horizontal direction.
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance that the image is offset in the vertical direction.
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Angle of the image within the fill.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the symbol without changing the height (or depth in 3D), as a ratio.
     */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
     * How the image is resampled.
     */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
     */
-  var tintColor: js.UndefOr[js.Array[Double]] = js.native
+  var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMPictureFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureFill = js.native
+  var type_CIMPictureFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureFill
   
   /**
     * The URL of the image. Typically a base64 encoded image.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CIMPictureFill {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureFill): CIMPictureFill = {
+  def apply(): CIMPictureFill = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMPictureFill")
     __obj.asInstanceOf[CIMPictureFill]
   }
   

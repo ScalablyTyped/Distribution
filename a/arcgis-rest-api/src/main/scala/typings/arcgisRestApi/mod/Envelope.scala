@@ -2,27 +2,27 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Envelope extends Geometry {
+trait Envelope
+  extends StObject
+     with Geometry {
   
-  var mmax: js.UndefOr[Double] = js.native
+  var mmax: js.UndefOr[Double] = js.undefined
   
-  var mmin: js.UndefOr[Double] = js.native
+  var mmin: js.UndefOr[Double] = js.undefined
   
-  var xmax: Double = js.native
+  var xmax: Double
   
-  var xmin: Double = js.native
+  var xmin: Double
   
-  var ymax: Double = js.native
+  var ymax: Double
   
-  var ymin: Double = js.native
+  var ymin: Double
   
-  var zmax: js.UndefOr[Double] = js.native
+  var zmax: js.UndefOr[Double] = js.undefined
   
-  var zmin: js.UndefOr[Double] = js.native
+  var zmin: js.UndefOr[Double] = js.undefined
 }
 object Envelope {
   

@@ -3,17 +3,16 @@ package typings.sharedb.sharedbMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotMeta
-  extends // Users can use server middleware to add additional metadata to snapshots.
+  extends StObject
+     with // Users can use server middleware to add additional metadata to snapshots.
 /* key */ StringDictionary[js.Any] {
   
-  var ctime: Double = js.native
+  var ctime: Double
   
-  var mtime: Double = js.native
+  var mtime: Double
 }
 object SnapshotMeta {
   

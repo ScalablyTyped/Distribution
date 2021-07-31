@@ -17,7 +17,6 @@ import typings.activexShdocvw.activexShdocvwNumbers.`65536`
 import typings.activexShdocvw.activexShdocvwNumbers.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-const-enum

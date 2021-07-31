@@ -27,122 +27,120 @@ import typings.reactNative.reactNativeStrings.visible
 import typings.reactNative.reactNativeStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexStyle extends StObject {
   
-  var alignContent: js.UndefOr[`flex-start` | `flex-end` | center | stretch | `space-between` | `space-around`] = js.native
+  var alignContent: js.UndefOr[`flex-start` | `flex-end` | center | stretch | `space-between` | `space-around`] = js.undefined
   
-  var alignItems: js.UndefOr[FlexAlignType] = js.native
+  var alignItems: js.UndefOr[FlexAlignType] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | FlexAlignType] = js.native
+  var alignSelf: js.UndefOr[auto | FlexAlignType] = js.undefined
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[Double] = js.native
+  var borderBottomWidth: js.UndefOr[Double] = js.undefined
   
-  var borderEndWidth: js.UndefOr[Double | String] = js.native
+  var borderEndWidth: js.UndefOr[Double | String] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[Double] = js.native
+  var borderLeftWidth: js.UndefOr[Double] = js.undefined
   
-  var borderRightWidth: js.UndefOr[Double] = js.native
+  var borderRightWidth: js.UndefOr[Double] = js.undefined
   
-  var borderStartWidth: js.UndefOr[Double | String] = js.native
+  var borderStartWidth: js.UndefOr[Double | String] = js.undefined
   
-  var borderTopWidth: js.UndefOr[Double] = js.native
+  var borderTopWidth: js.UndefOr[Double] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var bottom: js.UndefOr[Double | String] = js.native
+  var bottom: js.UndefOr[Double | String] = js.undefined
   
   /**
     * @platform ios
     */
-  var direction: js.UndefOr[inherit | ltr | rtl] = js.native
+  var direction: js.UndefOr[inherit | ltr | rtl] = js.undefined
   
-  var display: js.UndefOr[none | flex] = js.native
+  var display: js.UndefOr[none | flex] = js.undefined
   
-  var end: js.UndefOr[Double | String] = js.native
+  var end: js.UndefOr[Double | String] = js.undefined
   
-  var flex: js.UndefOr[Double] = js.native
+  var flex: js.UndefOr[Double] = js.undefined
   
-  var flexBasis: js.UndefOr[Double | String] = js.native
+  var flexBasis: js.UndefOr[Double | String] = js.undefined
   
-  var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.native
+  var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.undefined
   
-  var flexGrow: js.UndefOr[Double] = js.native
+  var flexGrow: js.UndefOr[Double] = js.undefined
   
-  var flexShrink: js.UndefOr[Double] = js.native
+  var flexShrink: js.UndefOr[Double] = js.undefined
   
-  var flexWrap: js.UndefOr[wrap | nowrap | `wrap-reverse`] = js.native
+  var flexWrap: js.UndefOr[wrap | nowrap | `wrap-reverse`] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   var justifyContent: js.UndefOr[
     `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly`
-  ] = js.native
+  ] = js.undefined
   
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
-  var margin: js.UndefOr[Double | String] = js.native
+  var margin: js.UndefOr[Double | String] = js.undefined
   
-  var marginBottom: js.UndefOr[Double | String] = js.native
+  var marginBottom: js.UndefOr[Double | String] = js.undefined
   
-  var marginEnd: js.UndefOr[Double | String] = js.native
+  var marginEnd: js.UndefOr[Double | String] = js.undefined
   
-  var marginHorizontal: js.UndefOr[Double | String] = js.native
+  var marginHorizontal: js.UndefOr[Double | String] = js.undefined
   
-  var marginLeft: js.UndefOr[Double | String] = js.native
+  var marginLeft: js.UndefOr[Double | String] = js.undefined
   
-  var marginRight: js.UndefOr[Double | String] = js.native
+  var marginRight: js.UndefOr[Double | String] = js.undefined
   
-  var marginStart: js.UndefOr[Double | String] = js.native
+  var marginStart: js.UndefOr[Double | String] = js.undefined
   
-  var marginTop: js.UndefOr[Double | String] = js.native
+  var marginTop: js.UndefOr[Double | String] = js.undefined
   
-  var marginVertical: js.UndefOr[Double | String] = js.native
+  var marginVertical: js.UndefOr[Double | String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double | String] = js.native
+  var maxHeight: js.UndefOr[Double | String] = js.undefined
   
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
-  var minHeight: js.UndefOr[Double | String] = js.native
+  var minHeight: js.UndefOr[Double | String] = js.undefined
   
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
-  var overflow: js.UndefOr[visible | hidden | scroll] = js.native
+  var overflow: js.UndefOr[visible | hidden | scroll] = js.undefined
   
-  var padding: js.UndefOr[Double | String] = js.native
+  var padding: js.UndefOr[Double | String] = js.undefined
   
-  var paddingBottom: js.UndefOr[Double | String] = js.native
+  var paddingBottom: js.UndefOr[Double | String] = js.undefined
   
-  var paddingEnd: js.UndefOr[Double | String] = js.native
+  var paddingEnd: js.UndefOr[Double | String] = js.undefined
   
-  var paddingHorizontal: js.UndefOr[Double | String] = js.native
+  var paddingHorizontal: js.UndefOr[Double | String] = js.undefined
   
-  var paddingLeft: js.UndefOr[Double | String] = js.native
+  var paddingLeft: js.UndefOr[Double | String] = js.undefined
   
-  var paddingRight: js.UndefOr[Double | String] = js.native
+  var paddingRight: js.UndefOr[Double | String] = js.undefined
   
-  var paddingStart: js.UndefOr[Double | String] = js.native
+  var paddingStart: js.UndefOr[Double | String] = js.undefined
   
-  var paddingTop: js.UndefOr[Double | String] = js.native
+  var paddingTop: js.UndefOr[Double | String] = js.undefined
   
-  var paddingVertical: js.UndefOr[Double | String] = js.native
+  var paddingVertical: js.UndefOr[Double | String] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.native
+  var position: js.UndefOr[absolute | relative] = js.undefined
   
-  var right: js.UndefOr[Double | String] = js.native
+  var right: js.UndefOr[Double | String] = js.undefined
   
-  var start: js.UndefOr[Double | String] = js.native
+  var start: js.UndefOr[Double | String] = js.undefined
   
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object FlexStyle {
   

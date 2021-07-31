@@ -2,13 +2,11 @@ package typings.reactNavigationNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  def getInitialState(): js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]] = js.native
+  def getInitialState(): js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]]
 }
 object `0` {
   

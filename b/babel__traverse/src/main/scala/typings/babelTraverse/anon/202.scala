@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSIndexSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `202` extends StObject {
   
-  var `type`: TSIndexSignature = js.native
+  var `type`: TSIndexSignature
 }
 object `202` {
   
   @scala.inline
-  def apply(`type`: TSIndexSignature): `202` = {
+  def apply(): `202` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSIndexSignature")
     __obj.asInstanceOf[`202`]
   }
   

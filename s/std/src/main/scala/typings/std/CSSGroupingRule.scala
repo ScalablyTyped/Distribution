@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any CSS at-rule that contains other rules nested within it. */
 @js.native
-trait CSSGroupingRule extends CSSRule {
+trait CSSGroupingRule
+  extends StObject
+     with CSSRule {
   
   val cssRules: CSSRuleList = js.native
   

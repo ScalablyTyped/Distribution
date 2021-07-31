@@ -2,16 +2,14 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait SaveWidgetOptions extends StObject {
   
-  var attribution: js.UndefOr[Attribution] = js.native
+  var attribution: js.UndefOr[Attribution] = js.undefined
   
-  var place: js.UndefOr[Place] = js.native
+  var place: js.UndefOr[Place] = js.undefined
 }
 object SaveWidgetOptions {
   

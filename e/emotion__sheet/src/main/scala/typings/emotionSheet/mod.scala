@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,16 +35,15 @@ object mod {
     var tags: js.Array[HTMLStyleElement] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
-    var key: String = js.native
+    var key: String
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var speedy: js.UndefOr[Boolean] = js.native
+    var speedy: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

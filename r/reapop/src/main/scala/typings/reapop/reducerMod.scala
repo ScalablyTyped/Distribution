@@ -4,23 +4,28 @@ import typings.reapop.actionsMod.NotificationActions
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reducerMod {
   
-  @JSImport("reapop/dist/reducers/notifications/reducer", JSImport.Default)
+  @JSImport("reapop/dist/reducers/notifications/reducer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function2[
     /* state */ js.UndefOr[js.Array[Notification]], 
     /* action */ NotificationActions | InitReduxAction, 
     js.Array[Notification]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function2[
+    /* state */ js.UndefOr[js.Array[Notification]], 
+    /* action */ NotificationActions | InitReduxAction, 
+    js.Array[Notification]
+  ]]
   
-  @js.native
   trait InitReduxAction extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object InitReduxAction {
     

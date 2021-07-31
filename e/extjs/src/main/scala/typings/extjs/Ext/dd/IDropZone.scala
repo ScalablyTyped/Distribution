@@ -3,17 +3,17 @@ package typings.extjs.Ext.dd
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDropZone extends IDropTarget {
+trait IDropZone
+  extends StObject
+     with IDropTarget {
   
   /** [Method] Returns a custom data object associated with the DOM node that is the target of the event
     * @param e Event The event
     * @returns Object data The custom data
     */
-  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], _]] = js.native
+  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], js.Any]] = js.undefined
   
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped on it but not on any of its registered
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop zone
@@ -28,7 +28,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called while the DropZone determines that a Ext dd DragSource is being dragged over it but not over any of its regis
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop zone
@@ -43,7 +43,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped onto the drop node
     * @param nodeData Object The custom data associated with the drop node (this is the same value returned from getTargetFromEvent for this node)
@@ -60,7 +60,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has entered a drop node that has either been registered
     * @param nodeData Object The custom data associated with the drop node (this is the same value returned from getTargetFromEvent for this node)
@@ -76,7 +76,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dragged out of the drop node without dropping
     * @param nodeData Object The custom data associated with the drop node (this is the same value returned from getTargetFromEvent for this node)
@@ -92,7 +92,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called while the DropZone determines that a Ext dd DragSource is over a drop node that has either been registered or
     * @param nodeData Object The custom data associated with the drop node (this is the same value returned from getTargetFromEvent for this node)
@@ -109,7 +109,7 @@ trait IDropZone extends IDropTarget {
       /* data */ js.UndefOr[js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IDropZone {
   
@@ -123,7 +123,7 @@ object IDropZone {
   implicit class IDropZoneMutableBuilder[Self <: IDropZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => _): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
+    def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetTargetFromEventUndefined: Self = StObject.set(x, "getTargetFromEvent", js.undefined)

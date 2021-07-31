@@ -2,19 +2,19 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StructureMember extends Member {
+trait StructureMember
+  extends StObject
+     with Member {
   
-  var location: js.UndefOr[MemberLocation] = js.native
+  var location: js.UndefOr[MemberLocation] = js.undefined
   
-  var streaming: js.UndefOr[scala.Boolean] = js.native
+  var streaming: js.UndefOr[scala.Boolean] = js.undefined
   
   var xmlNamespace: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any) | java.lang.String
-  ] = js.native
+  ] = js.undefined
 }
 object StructureMember {
   

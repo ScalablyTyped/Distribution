@@ -18,7 +18,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Components {
@@ -80,41 +79,21 @@ object Components {
       * @param bottomRight The alpha value used for the bottom-right of the Game Object. WebGL only.
       */
     def setAlpha(): this.type = js.native
-    def setAlpha(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: Double
-    ): this.type = js.native
-    def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): this.type = js.native
-    def setAlpha(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: Double,
-      bottomRight: Double
-    ): this.type = js.native
-    def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double): this.type = js.native
-    def setAlpha(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: Double,
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: Double
-    ): this.type = js.native
-    def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double, bottomLeft: Double): this.type = js.native
-    def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
     def setAlpha(topLeft: Double): this.type = js.native
-    def setAlpha(
-      topLeft: Double,
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: Double
-    ): this.type = js.native
-    def setAlpha(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): this.type = js.native
-    def setAlpha(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double, bottomRight: Double): this.type = js.native
     def setAlpha(topLeft: Double, topRight: Double): this.type = js.native
-    def setAlpha(topLeft: Double, topRight: Double, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: Double): this.type = js.native
     def setAlpha(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
     def setAlpha(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Double, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Double, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setAlpha(topLeft: Double, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Double, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Double, bottomLeft: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setAlpha(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
   }
   
   /**
@@ -349,17 +328,13 @@ object Components {
       * @param startFrame Optionally start the animation playing from this frame index. Default 0.
       */
     def play(key: String): GameObject = js.native
-    def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): GameObject = js.native
     def play(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
     def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
+    def play(key: String, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
     def play(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
-    def play(
-      key: typings.phaser.Phaser.Animations.Animation,
-      ignoreIfPlaying: js.UndefOr[scala.Nothing],
-      startFrame: integer
-    ): GameObject = js.native
     def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
     def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
+    def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
     
     /**
       * Plays an Animation (in reverse mode) on the Game Object that owns this Animation Component.
@@ -368,17 +343,13 @@ object Components {
       * @param startFrame Optionally start the animation playing from this frame index. Default 0.
       */
     def playReverse(key: String): GameObject = js.native
-    def playReverse(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): GameObject = js.native
     def playReverse(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
     def playReverse(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
+    def playReverse(key: String, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
     def playReverse(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
-    def playReverse(
-      key: typings.phaser.Phaser.Animations.Animation,
-      ignoreIfPlaying: js.UndefOr[scala.Nothing],
-      startFrame: integer
-    ): GameObject = js.native
     def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
     def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
+    def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
     
     /**
       * Advances the animation to the previous frame, regardless of the time or animation state.
@@ -395,9 +366,9 @@ object Components {
       * @param animation The removed Animation.
       */
     def remove(): Unit = js.native
-    def remove(key: js.UndefOr[scala.Nothing], animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
     def remove(key: String): Unit = js.native
     def remove(key: String, animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
+    def remove(key: Unit, animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
     
     /**
       * An internal counter keeping track of how many repeats are left to play.
@@ -580,7 +551,6 @@ object Components {
     * Provides methods used for calculating and setting the size of a non-Frame based Game Object.
     * Should be applied as a mixin and not used directly.
     */
-  @js.native
   trait ComputedSize extends StObject {
     
     /**
@@ -590,7 +560,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayHeight: Double = js.native
+    var displayHeight: Double
     
     /**
       * The displayed width of this Game Object.
@@ -599,7 +569,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayWidth: Double = js.native
+    var displayWidth: Double
     
     /**
       * The native (un-scaled) height of this Game Object.
@@ -608,7 +578,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayHeight` property.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Sets the display size of this Game Object.
@@ -617,7 +587,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setDisplaySize(width: Double, height: Double): this.type = js.native
+    def setDisplaySize(width: Double, height: Double): this.type
     
     /**
       * Sets the internal size of this Game Object, as used for frame or physics body creation.
@@ -632,7 +602,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setSize(width: Double, height: Double): this.type = js.native
+    def setSize(width: Double, height: Double): this.type
     
     /**
       * The native (un-scaled) width of this Game Object.
@@ -641,7 +611,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayWidth` property.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ComputedSize {
     
@@ -727,49 +697,29 @@ object Components {
       * @param height The height of the crop rectangle in pixels.
       */
     def setCrop(): this.type = js.native
-    def setCrop(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
     def setCrop(x: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
     def setCrop(x: Double, y: Double): this.type = js.native
-    def setCrop(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setCrop(x: Double, y: Double, width: Double): this.type = js.native
     def setCrop(x: Double, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
-    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Double): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Unit, height: Double): this.type = js.native
     
     /**
       * The Texture this Game Object is using to render with.
@@ -781,7 +731,6 @@ object Components {
     * Provides methods used for setting the depth of a Game Object.
     * Should be applied as a mixin and not used directly.
     */
-  @js.native
   trait Depth extends StObject {
     
     /**
@@ -795,7 +744,7 @@ object Components {
       * 
       * Setting the depth will queue a depth sort event within the Scene.
       */
-    var depth: Double = js.native
+    var depth: Double
     
     /**
       * The depth of this Game Object within the Scene.
@@ -809,7 +758,7 @@ object Components {
       * Setting the depth will queue a depth sort event within the Scene.
       * @param value The depth of this Game Object.
       */
-    def setDepth(value: integer): this.type = js.native
+    def setDepth(value: integer): this.type
   }
   object Depth {
     
@@ -834,7 +783,6 @@ object Components {
     * Provides methods used for visually flipping a Game Object.
     * Should be applied as a mixin and not used directly.
     */
-  @js.native
   trait Flip extends StObject {
     
     /**
@@ -844,7 +792,7 @@ object Components {
       * Flipping always takes place from the middle of the texture and does not impact the scale value.
       * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
       */
-    var flipX: Boolean = js.native
+    var flipX: Boolean
     
     /**
       * The vertically flipped state of the Game Object.
@@ -853,12 +801,12 @@ object Components {
       * Flipping always takes place from the middle of the texture and does not impact the scale value.
       * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
       */
-    var flipY: Boolean = js.native
+    var flipY: Boolean
     
     /**
       * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
       */
-    def resetFlip(): this.type = js.native
+    def resetFlip(): this.type
     
     /**
       * Sets the horizontal and vertical flipped state of this Game Object.
@@ -869,7 +817,7 @@ object Components {
       * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
       * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
       */
-    def setFlip(x: Boolean, y: Boolean): this.type = js.native
+    def setFlip(x: Boolean, y: Boolean): this.type
     
     /**
       * Sets the horizontal flipped state of this Game Object.
@@ -879,13 +827,13 @@ object Components {
       * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
       * @param value The flipped state. `false` for no flip, or `true` to be flipped.
       */
-    def setFlipX(value: Boolean): this.type = js.native
+    def setFlipX(value: Boolean): this.type
     
     /**
       * Sets the vertical flipped state of this Game Object.
       * @param value The flipped state. `false` for no flip, or `true` to be flipped.
       */
-    def setFlipY(value: Boolean): this.type = js.native
+    def setFlipY(value: Boolean): this.type
     
     /**
       * Toggles the horizontal flipped state of this Game Object.
@@ -894,12 +842,12 @@ object Components {
       * Flipping always takes place from the middle of the texture and does not impact the scale value.
       * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
       */
-    def toggleFlipX(): this.type = js.native
+    def toggleFlipX(): this.type
     
     /**
       * Toggles the vertical flipped state of this Game Object.
       */
-    def toggleFlipY(): this.type = js.native
+    def toggleFlipY(): this.type
   }
   object Flip {
     
@@ -963,7 +911,7 @@ object Components {
     def getBottomCenter[O /* <: Vector2 */](): O = js.native
     def getBottomCenter[O /* <: Vector2 */](output: O): O = js.native
     def getBottomCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getBottomCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bottom-left corner coordinate of this Game Object, regardless of origin.
@@ -974,7 +922,7 @@ object Components {
     def getBottomLeft[O /* <: Vector2 */](): O = js.native
     def getBottomLeft[O /* <: Vector2 */](output: O): O = js.native
     def getBottomLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomLeft[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getBottomLeft[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bottom-right corner coordinate of this Game Object, regardless of origin.
@@ -985,7 +933,7 @@ object Components {
     def getBottomRight[O /* <: Vector2 */](): O = js.native
     def getBottomRight[O /* <: Vector2 */](output: O): O = js.native
     def getBottomRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomRight[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getBottomRight[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bounds of this Game Object, regardless of origin.
@@ -1012,7 +960,7 @@ object Components {
     def getLeftCenter[O /* <: Vector2 */](): O = js.native
     def getLeftCenter[O /* <: Vector2 */](output: O): O = js.native
     def getLeftCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getLeftCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getLeftCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the right-center coordinate of this Game Object, regardless of origin.
@@ -1023,7 +971,7 @@ object Components {
     def getRightCenter[O /* <: Vector2 */](): O = js.native
     def getRightCenter[O /* <: Vector2 */](output: O): O = js.native
     def getRightCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getRightCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getRightCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-center coordinate of this Game Object, regardless of origin.
@@ -1034,7 +982,7 @@ object Components {
     def getTopCenter[O /* <: Vector2 */](): O = js.native
     def getTopCenter[O /* <: Vector2 */](output: O): O = js.native
     def getTopCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getTopCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-left corner coordinate of this Game Object, regardless of origin.
@@ -1045,7 +993,7 @@ object Components {
     def getTopLeft[O /* <: Vector2 */](): O = js.native
     def getTopLeft[O /* <: Vector2 */](output: O): O = js.native
     def getTopLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopLeft[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getTopLeft[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-right corner coordinate of this Game Object, regardless of origin.
@@ -1056,7 +1004,7 @@ object Components {
     def getTopRight[O /* <: Vector2 */](): O = js.native
     def getTopRight[O /* <: Vector2 */](output: O): O = js.native
     def getTopRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopRight[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
+    def getTopRight[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
   }
   
   /**
@@ -1173,9 +1121,9 @@ object Components {
       * @param y The vertical display origin value. If not defined it will be set to the value of `x`. Default x.
       */
     def setDisplayOrigin(): this.type = js.native
-    def setDisplayOrigin(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setDisplayOrigin(x: Double): this.type = js.native
     def setDisplayOrigin(x: Double, y: Double): this.type = js.native
+    def setDisplayOrigin(x: Unit, y: Double): this.type = js.native
     
     /**
       * Sets the origin of this Game Object.
@@ -1185,9 +1133,9 @@ object Components {
       * @param y The vertical origin value. If not defined it will be set to the value of `x`. Default x.
       */
     def setOrigin(): this.type = js.native
-    def setOrigin(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setOrigin(x: Double): this.type = js.native
     def setOrigin(x: Double, y: Double): this.type = js.native
+    def setOrigin(x: Unit, y: Double): this.type = js.native
     
     /**
       * Sets the origin of this Game Object based on the Pivot values in its Frame.
@@ -1271,9 +1219,9 @@ object Components {
       * @param startAt Optional start position of the follow, between 0 and 1. Default 0.
       */
     def startFollow(): this.type = js.native
-    def startFollow(config: js.UndefOr[scala.Nothing], startAt: Double): this.type = js.native
     def startFollow(config: Double): this.type = js.native
     def startFollow(config: Double, startAt: Double): this.type = js.native
+    def startFollow(config: Unit, startAt: Double): this.type = js.native
     def startFollow(config: PathConfig): this.type = js.native
     def startFollow(config: PathConfig, startAt: Double): this.type = js.native
     def startFollow(config: NumberTweenBuilderConfig): this.type = js.native
@@ -1398,7 +1346,6 @@ object Components {
   /**
     * Provides methods used for getting and setting the size of a Game Object.
     */
-  @js.native
   trait Size extends StObject {
     
     /**
@@ -1408,7 +1355,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayHeight: Double = js.native
+    var displayHeight: Double
     
     /**
       * The displayed width of this Game Object.
@@ -1417,7 +1364,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayWidth: Double = js.native
+    var displayWidth: Double
     
     /**
       * The native (un-scaled) height of this Game Object.
@@ -1426,7 +1373,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayHeight` property.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Sets the display size of this Game Object.
@@ -1435,7 +1382,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setDisplaySize(width: Double, height: Double): this.type = js.native
+    def setDisplaySize(width: Double, height: Double): this.type
     
     /**
       * Sets the internal size of this Game Object, as used for frame or physics body creation.
@@ -1450,7 +1397,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setSize(width: Double, height: Double): this.type = js.native
+    def setSize(width: Double, height: Double): this.type
     
     /**
       * Sets the size of this Game Object to be that of the given Frame.
@@ -1464,7 +1411,7 @@ object Components {
       * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
       * @param frame The frame to base the size of this Game Object on.
       */
-    def setSizeToFrame(frame: Frame): this.type = js.native
+    def setSizeToFrame(frame: Frame): this.type
     
     /**
       * The native (un-scaled) width of this Game Object.
@@ -1473,7 +1420,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayWidth` property.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     
@@ -1542,13 +1489,13 @@ object Components {
       * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
       */
     def setFrame(frame: String): this.type = js.native
-    def setFrame(frame: String, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: String, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: integer): this.type = js.native
-    def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
     def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: integer, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1616,49 +1563,29 @@ object Components {
       * @param height The height of the crop rectangle in pixels.
       */
     def setCrop(): this.type = js.native
-    def setCrop(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
-    def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
     def setCrop(x: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
     def setCrop(x: Double, y: Double): this.type = js.native
-    def setCrop(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setCrop(x: Double, y: Double, width: Double): this.type = js.native
     def setCrop(x: Double, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
-    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double): this.type = js.native
-    def setCrop(
-      x: typings.phaser.Phaser.Geom.Rectangle,
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Double): this.type = js.native
     def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Double, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Double, width: Unit, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Double, height: Double): this.type = js.native
+    def setCrop(x: typings.phaser.Phaser.Geom.Rectangle, y: Unit, width: Unit, height: Double): this.type = js.native
     
     /**
       * Sets the frame this Game Object will use to render with.
@@ -1674,13 +1601,13 @@ object Components {
       * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
       */
     def setFrame(frame: String): this.type = js.native
-    def setFrame(frame: String, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: String, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: integer): this.type = js.native
-    def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
     def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: integer, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1740,39 +1667,19 @@ object Components {
       * @param bottomRight The tint being applied to the bottom-right of the Game Object.
       */
     def setTint(): this.type = js.native
-    def setTint(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
-    def setTint(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: integer,
-      bottomRight: integer
-    ): this.type = js.native
-    def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer): this.type = js.native
-    def setTint(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: integer,
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: integer, bottomLeft: integer): this.type = js.native
+    def setTint(topLeft: Unit, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
     def setTint(topLeft: integer): this.type = js.native
-    def setTint(
-      topLeft: integer,
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTint(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: integer, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: integer, topRight: Unit, bottomLeft: integer): this.type = js.native
+    def setTint(topLeft: integer, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
     def setTint(topLeft: integer, topRight: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
+    def setTint(topLeft: integer, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
     def setTint(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
     def setTint(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
     
@@ -1798,39 +1705,19 @@ object Components {
       * @param bottomRight The tint being applied to the bottom-right of the Game Object.
       */
     def setTintFill(): this.type = js.native
-    def setTintFill(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
-    def setTintFill(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: integer,
-      bottomRight: integer
-    ): this.type = js.native
-    def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer): this.type = js.native
-    def setTintFill(
-      topLeft: js.UndefOr[scala.Nothing],
-      topRight: integer,
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: integer): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
     def setTintFill(topLeft: integer): this.type = js.native
-    def setTintFill(
-      topLeft: integer,
-      topRight: js.UndefOr[scala.Nothing],
-      bottomLeft: js.UndefOr[scala.Nothing],
-      bottomRight: integer
-    ): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: integer): this.type = js.native
+    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
     def setTintFill(topLeft: integer, topRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: integer, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
     def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
     def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
     
@@ -1875,7 +1762,6 @@ object Components {
     * 
     * This is typically extended further by Game Object specific implementations.
     */
-  @js.native
   trait ToJSON extends StObject
   
   /**
@@ -1914,7 +1800,7 @@ object Components {
       * @param parentMatrix A temporary matrix to hold parent values during the calculations.
       */
     def getWorldTransformMatrix(): TransformMatrix = js.native
-    def getWorldTransformMatrix(tempMatrix: js.UndefOr[scala.Nothing], parentMatrix: TransformMatrix): TransformMatrix = js.native
+    def getWorldTransformMatrix(tempMatrix: Unit, parentMatrix: TransformMatrix): TransformMatrix = js.native
     def getWorldTransformMatrix(tempMatrix: TransformMatrix): TransformMatrix = js.native
     def getWorldTransformMatrix(tempMatrix: TransformMatrix, parentMatrix: TransformMatrix): TransformMatrix = js.native
     
@@ -1962,26 +1848,21 @@ object Components {
       * @param w The w position of this Game Object. Default 0.
       */
     def setPosition(): this.type = js.native
-    def setPosition(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): this.type = js.native
     def setPosition(x: Double): this.type = js.native
-    def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
-    def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-    def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
     def setPosition(x: Double, y: Double): this.type = js.native
-    def setPosition(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
     def setPosition(x: Double, y: Double, z: Double): this.type = js.native
     def setPosition(x: Double, y: Double, z: Double, w: Double): this.type = js.native
+    def setPosition(x: Double, y: Double, z: Unit, w: Double): this.type = js.native
+    def setPosition(x: Double, y: Unit, z: Double): this.type = js.native
+    def setPosition(x: Double, y: Unit, z: Double, w: Double): this.type = js.native
+    def setPosition(x: Double, y: Unit, z: Unit, w: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double, z: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double, z: Double, w: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double, z: Unit, w: Double): this.type = js.native
+    def setPosition(x: Unit, y: Unit, z: Double): this.type = js.native
+    def setPosition(x: Unit, y: Unit, z: Double, w: Double): this.type = js.native
+    def setPosition(x: Unit, y: Unit, z: Unit, w: Double): this.type = js.native
     
     /**
       * Sets the position of this Game Object to be a random position within the confines of
@@ -1997,26 +1878,21 @@ object Components {
       * @param height The height of the random area.
       */
     def setRandomPosition(): this.type = js.native
-    def setRandomPosition(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
-    def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
     def setRandomPosition(x: Double): this.type = js.native
-    def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-    def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-    def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
     def setRandomPosition(x: Double, y: Double): this.type = js.native
-    def setRandomPosition(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
     def setRandomPosition(x: Double, y: Double, width: Double): this.type = js.native
     def setRandomPosition(x: Double, y: Double, width: Double, height: Double): this.type = js.native
+    def setRandomPosition(x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+    def setRandomPosition(x: Double, y: Unit, width: Double): this.type = js.native
+    def setRandomPosition(x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+    def setRandomPosition(x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Double, width: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Unit, width: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+    def setRandomPosition(x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
     
     /**
       * Sets the rotation of this Game Object.
@@ -2150,7 +2026,7 @@ object Components {
       * Where array indexes 0, 1, 2, 3, 4 and 5 are mapped to a, b, c, d, e and f.
       * @param src The array of values to set into this matrix.
       */
-    def copyFromArray(src: js.Array[_]): this.type = js.native
+    def copyFromArray(src: js.Array[js.Any]): this.type = js.native
     
     /**
       * Copy the values in this Matrix to the array given.
@@ -2158,8 +2034,8 @@ object Components {
       * Where array indexes 0, 1, 2, 3, 4 and 5 are mapped to a, b, c, d, e and f.
       * @param out The array to copy the matrix values in to.
       */
-    def copyToArray(): js.Array[_] = js.native
-    def copyToArray(out: js.Array[_]): js.Array[_] = js.native
+    def copyToArray(): js.Array[js.Any] = js.native
+    def copyToArray(out: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     /**
       * Copy the values from this Matrix to the given Canvas Rendering Context.
@@ -2356,7 +2232,6 @@ object Components {
     * Provides methods used for setting the visibility of a Game Object.
     * Should be applied as a mixin and not used directly.
     */
-  @js.native
   trait Visible extends StObject {
     
     /**
@@ -2365,14 +2240,14 @@ object Components {
       * An invisible Game Object will skip rendering, but will still process update logic.
       * @param value The visible state of the Game Object.
       */
-    def setVisible(value: Boolean): this.type = js.native
+    def setVisible(value: Boolean): this.type
     
     /**
       * The visible state of the Game Object.
       * 
       * An invisible Game Object will skip rendering, but will still process update logic.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object Visible {
     

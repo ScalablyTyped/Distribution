@@ -2,36 +2,34 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates a conditional format rule at the given index, or moves a
   * conditional format rule to another index.
   */
-@js.native
 trait SchemaUpdateConditionalFormatRuleRequest extends StObject {
   
   /**
     * The zero-based index of the rule that should be replaced or moved.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based new index the rule should end up at.
     */
-  var newIndex: js.UndefOr[Double] = js.native
+  var newIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The rule that should replace the rule at the given index.
     */
-  var rule: js.UndefOr[SchemaConditionalFormatRule] = js.native
+  var rule: js.UndefOr[SchemaConditionalFormatRule] = js.undefined
   
   /**
     * The sheet of the rule to move.  Required if new_index is set, unused
     * otherwise.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaUpdateConditionalFormatRuleRequest {
   

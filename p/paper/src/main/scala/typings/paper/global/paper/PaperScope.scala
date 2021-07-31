@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -31,14 +30,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a PaperScope object.
   */
 class PaperScope ()
-  extends typings.paper.paper.PaperScope
+  extends StObject
+     with typings.paper.paper.PaperScope
 object PaperScope {
+  
+  @JSGlobal("paper.PaperScope")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** 
     * Retrieves a PaperScope object with the given scope id.
     */
   /* static member */
-  @JSGlobal("paper.PaperScope.get")
-  @js.native
-  def get(id: js.Any): typings.paper.paper.PaperScope = js.native
+  @scala.inline
+  def get(id: js.Any): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
 }

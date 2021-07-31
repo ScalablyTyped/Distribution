@@ -8,62 +8,60 @@ import typings.openpgp.openpgpStrings.web
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.DecryptOptions & {  format :'binary'} */
-@js.native
 trait DecryptOptionsformatbinar extends StObject {
   
   /**
     * (optional) use the given date for verification instead of the current time
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (optional) whether to return data as a string(Stream) or Uint8Array(Stream). If 'utf8' (the default), also normalize newlines.
     */
-  var format: (js.UndefOr[utf8 | binary]) with binary = js.native
+  var format: (js.UndefOr[utf8 | binary]) & binary
   
   /**
     * the message object with the encrypted data
     */
-  var message: typings.openpgp.mod.message.Message = js.native
+  var message: typings.openpgp.mod.message.Message
   
   /**
     * (optional) passwords to decrypt the message
     */
-  var passwords: js.UndefOr[String | js.Array[String]] = js.native
+  var passwords: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * (optional) private keys with decrypted secret key data or session key
     */
-  var privateKeys: js.UndefOr[typings.openpgp.mod.key.Key | js.Array[typings.openpgp.mod.key.Key]] = js.native
+  var privateKeys: js.UndefOr[typings.openpgp.mod.key.Key | js.Array[typings.openpgp.mod.key.Key]] = js.undefined
   
   /**
     * (optional) array of public keys or single key, to verify signatures
     */
-  var publicKeys: js.UndefOr[typings.openpgp.mod.key.Key | js.Array[typings.openpgp.mod.key.Key]] = js.native
+  var publicKeys: js.UndefOr[typings.openpgp.mod.key.Key | js.Array[typings.openpgp.mod.key.Key]] = js.undefined
   
   /**
     * (optional) session keys in the form: { data:Uint8Array, algorithm:String }
     */
-  var sessionKeys: js.UndefOr[Algorithm | js.Array[Algorithm]] = js.native
+  var sessionKeys: js.UndefOr[Algorithm | js.Array[Algorithm]] = js.undefined
   
   /**
     * (optional) detached signature for verification
     */
-  var signature: js.UndefOr[typings.openpgp.mod.signature.Signature] = js.native
+  var signature: js.UndefOr[typings.openpgp.mod.signature.Signature] = js.undefined
   
   /**
     * (optional) whether to return data as a stream. Defaults to the type of stream `message` was created from, if any.
     */
-  var streaming: js.UndefOr[web | node | `false`] = js.native
+  var streaming: js.UndefOr[web | node | `false`] = js.undefined
 }
 object DecryptOptionsformatbinar {
   
   @scala.inline
-  def apply(format: (js.UndefOr[utf8 | binary]) with binary, message: typings.openpgp.mod.message.Message): DecryptOptionsformatbinar = {
+  def apply(format: (js.UndefOr[utf8 | binary]) & binary, message: typings.openpgp.mod.message.Message): DecryptOptionsformatbinar = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOptionsformatbinar]
   }
@@ -78,7 +76,7 @@ object DecryptOptionsformatbinar {
     def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setFormat(value: (js.UndefOr[utf8 | binary]) with binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    def setFormat(value: (js.UndefOr[utf8 | binary]) & binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

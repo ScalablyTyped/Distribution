@@ -3,12 +3,11 @@ package typings.vscode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattingOptions
-  extends /**
+  extends StObject
+     with /**
   * Signature for further properties.
   */
 /* key */ StringDictionary[Boolean | Double | String] {
@@ -16,12 +15,12 @@ trait FormattingOptions
   /**
     * Prefer spaces over tabs.
     */
-  var insertSpaces: Boolean = js.native
+  var insertSpaces: Boolean
   
   /**
     * Size of a tab in spaces.
     */
-  var tabSize: Double = js.native
+  var tabSize: Double
 }
 object FormattingOptions {
   

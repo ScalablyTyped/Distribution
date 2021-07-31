@@ -9,114 +9,112 @@ import typings.cesium.mod.Resource
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseScreenSpaceError extends StObject {
   
-  var baseScreenSpaceError: js.UndefOr[Double] = js.native
+  var baseScreenSpaceError: js.UndefOr[Double] = js.undefined
   
-  var classificationType: js.UndefOr[typings.cesium.mod.ClassificationType] = js.native
+  var classificationType: js.UndefOr[typings.cesium.mod.ClassificationType] = js.undefined
   
-  var clippingPlane: js.UndefOr[ClippingPlaneCollection] = js.native
+  var clippingPlane: js.UndefOr[ClippingPlaneCollection] = js.undefined
   
-  var cullRequestsWhileMoving: js.UndefOr[Boolean] = js.native
+  var cullRequestsWhileMoving: js.UndefOr[Boolean] = js.undefined
   
-  var cullRequestsWhileMovingMultiplier: js.UndefOr[Double] = js.native
+  var cullRequestsWhileMovingMultiplier: js.UndefOr[Double] = js.undefined
   
-  var cullWithChildrenBounds: js.UndefOr[Boolean] = js.native
+  var cullWithChildrenBounds: js.UndefOr[Boolean] = js.undefined
   
-  var debugColorizeTiles: js.UndefOr[Boolean] = js.native
+  var debugColorizeTiles: js.UndefOr[Boolean] = js.undefined
   
-  var debugFreezeFrame: js.UndefOr[Boolean] = js.native
+  var debugFreezeFrame: js.UndefOr[Boolean] = js.undefined
   
-  var debugHeatmapTilePropertyName: js.UndefOr[String] = js.native
+  var debugHeatmapTilePropertyName: js.UndefOr[String] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowContentBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowContentBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowGeometricError: js.UndefOr[Boolean] = js.native
+  var debugShowGeometricError: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowMemoryUsage: js.UndefOr[Boolean] = js.native
+  var debugShowMemoryUsage: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowRenderingStatistics: js.UndefOr[Boolean] = js.native
+  var debugShowRenderingStatistics: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowUrl: js.UndefOr[Boolean] = js.native
+  var debugShowUrl: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowViewerRequestVolume: js.UndefOr[Boolean] = js.native
+  var debugShowViewerRequestVolume: js.UndefOr[Boolean] = js.undefined
   
-  var debugWireframe: js.UndefOr[Boolean] = js.native
+  var debugWireframe: js.UndefOr[Boolean] = js.undefined
   
-  var dynamicScreenSpaceError: js.UndefOr[Boolean] = js.native
+  var dynamicScreenSpaceError: js.UndefOr[Boolean] = js.undefined
   
-  var dynamicScreenSpaceErrorDensity: js.UndefOr[Double] = js.native
+  var dynamicScreenSpaceErrorDensity: js.UndefOr[Double] = js.undefined
   
-  var dynamicScreenSpaceErrorFactor: js.UndefOr[Double] = js.native
+  var dynamicScreenSpaceErrorFactor: js.UndefOr[Double] = js.undefined
   
-  var dynamicScreenSpaceErrorHeightFalloff: js.UndefOr[Double] = js.native
+  var dynamicScreenSpaceErrorHeightFalloff: js.UndefOr[Double] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var foveatedConeSize: js.UndefOr[Double] = js.native
+  var foveatedConeSize: js.UndefOr[Double] = js.undefined
   
-  var foveatedInterpolationCallback: js.UndefOr[Cesium3DTileset] = js.native
+  var foveatedInterpolationCallback: js.UndefOr[Cesium3DTileset] = js.undefined
   
-  var foveatedMinimumScreenSpaceErrorRelaxation: js.UndefOr[Double] = js.native
+  var foveatedMinimumScreenSpaceErrorRelaxation: js.UndefOr[Double] = js.undefined
   
-  var foveatedScreenSpaceError: js.UndefOr[Boolean] = js.native
+  var foveatedScreenSpaceError: js.UndefOr[Boolean] = js.undefined
   
-  var foveatedTimeDelay: js.UndefOr[Double] = js.native
+  var foveatedTimeDelay: js.UndefOr[Double] = js.undefined
   
-  var imageBasedLightingFactor: js.UndefOr[Cartesian2] = js.native
+  var imageBasedLightingFactor: js.UndefOr[Cartesian2] = js.undefined
   
-  var immediatelyLoadDesiredLevelOfDetail: js.UndefOr[Boolean] = js.native
+  var immediatelyLoadDesiredLevelOfDetail: js.UndefOr[Boolean] = js.undefined
   
-  var lightColor: js.UndefOr[Cartesian3] = js.native
+  var lightColor: js.UndefOr[Cartesian3] = js.undefined
   
-  var loadSiblings: js.UndefOr[Boolean] = js.native
+  var loadSiblings: js.UndefOr[Boolean] = js.undefined
   
-  var luminanceAtZenith: js.UndefOr[Double] = js.native
+  var luminanceAtZenith: js.UndefOr[Double] = js.undefined
   
-  var maximumMemoryUsage: js.UndefOr[Double] = js.native
+  var maximumMemoryUsage: js.UndefOr[Double] = js.undefined
   
-  var maximumNumberOfLoadedTiles: js.UndefOr[Double] = js.native
+  var maximumNumberOfLoadedTiles: js.UndefOr[Double] = js.undefined
   
-  var maximumScreenSpaceError: js.UndefOr[Double] = js.native
+  var maximumScreenSpaceError: js.UndefOr[Double] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
-  var pointCloudShading: js.UndefOr[js.Any] = js.native
+  var pointCloudShading: js.UndefOr[js.Any] = js.undefined
   
-  var preferLeaves: js.UndefOr[Boolean] = js.native
+  var preferLeaves: js.UndefOr[Boolean] = js.undefined
   
-  var preloadFlightDestinations: js.UndefOr[Boolean] = js.native
+  var preloadFlightDestinations: js.UndefOr[Boolean] = js.undefined
   
-  var preloadWhenHidden: js.UndefOr[Boolean] = js.native
+  var preloadWhenHidden: js.UndefOr[Boolean] = js.undefined
   
-  var progressiveResolutionHeightFraction: js.UndefOr[Double] = js.native
+  var progressiveResolutionHeightFraction: js.UndefOr[Double] = js.undefined
   
-  var shadows: js.UndefOr[ShadowMode] = js.native
+  var shadows: js.UndefOr[ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optimization option.
     * Determines if level of detail skipping should be applied during the traversal.
     * @default false
     */
-  var skipLevelOfDetail: js.UndefOr[Boolean] = js.native
+  var skipLevelOfDetail: js.UndefOr[Boolean] = js.undefined
   
-  var skipLevels: js.UndefOr[Double] = js.native
+  var skipLevels: js.UndefOr[Double] = js.undefined
   
-  var skipScreenSpaceErrorFactor: js.UndefOr[Double] = js.native
+  var skipScreenSpaceErrorFactor: js.UndefOr[Double] = js.undefined
   
-  var specularEnvironmentMaps: js.UndefOr[String] = js.native
+  var specularEnvironmentMaps: js.UndefOr[String] = js.undefined
   
-  var sphericalHarmonicCoefficients: js.UndefOr[js.Array[Cartesian3]] = js.native
+  var sphericalHarmonicCoefficients: js.UndefOr[js.Array[Cartesian3]] = js.undefined
   
-  var url: Resource | String | (js.Promise[Resource | String]) = js.native
+  var url: Resource | String | (js.Promise[Resource | String])
 }
 object BaseScreenSpaceError {
   

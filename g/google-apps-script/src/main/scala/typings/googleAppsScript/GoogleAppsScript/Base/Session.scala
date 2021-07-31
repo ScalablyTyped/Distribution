@@ -2,29 +2,27 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Session class provides access to session information, such as the user's email address (in
   * some circumstances) and language setting.
   */
-@js.native
 trait Session extends StObject {
   
-  def getActiveUser(): User = js.native
+  def getActiveUser(): User
   
-  def getActiveUserLocale(): String = js.native
+  def getActiveUserLocale(): String
   
-  def getEffectiveUser(): User = js.native
+  def getEffectiveUser(): User
   
-  def getScriptTimeZone(): String = js.native
+  def getScriptTimeZone(): String
   
-  def getTemporaryActiveUserKey(): String = js.native
+  def getTemporaryActiveUserKey(): String
   
-  /** @deprecated DO NOT USE */ def getTimeZone(): String = js.native
+  /** @deprecated DO NOT USE */ def getTimeZone(): String
   
-  /** @deprecated DO NOT USE */ def getUser(): User = js.native
+  /** @deprecated DO NOT USE */ def getUser(): User
 }
 object Session {
   

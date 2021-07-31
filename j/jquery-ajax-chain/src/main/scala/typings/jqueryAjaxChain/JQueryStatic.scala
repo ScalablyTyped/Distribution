@@ -3,16 +3,14 @@ package typings.jqueryAjaxChain
 import typings.jqueryAjaxChain.ajaxChain.JQueryAjaxChainStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
   /**
     * JQueryAjaxChain constructor
     */
-  var AjaxChain: JQueryAjaxChainStatic = js.native
+  var AjaxChain: JQueryAjaxChainStatic
 }
 object JQueryStatic {
   

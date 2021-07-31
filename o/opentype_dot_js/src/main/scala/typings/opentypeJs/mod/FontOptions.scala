@@ -2,55 +2,53 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontOptions extends StObject {
   
-  var ascender: Double = js.native
+  var ascender: Double
   
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
-  var createdTimestamp: Double = js.native
+  var createdTimestamp: Double
   
-  var descender: Double = js.native
+  var descender: Double
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var designer: js.UndefOr[String] = js.native
+  var designer: js.UndefOr[String] = js.undefined
   
-  var designerURL: js.UndefOr[String] = js.native
+  var designerURL: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var fsSelection: js.UndefOr[String] = js.native
+  var fsSelection: js.UndefOr[String] = js.undefined
   
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
-  var license: js.UndefOr[String] = js.native
+  var license: js.UndefOr[String] = js.undefined
   
-  var licenseURL: js.UndefOr[String] = js.native
+  var licenseURL: js.UndefOr[String] = js.undefined
   
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
-  var manufacturerURL: js.UndefOr[String] = js.native
+  var manufacturerURL: js.UndefOr[String] = js.undefined
   
-  var postScriptName: js.UndefOr[String] = js.native
+  var postScriptName: js.UndefOr[String] = js.undefined
   
-  var styleName: String = js.native
+  var styleName: String
   
-  var trademark: js.UndefOr[String] = js.native
+  var trademark: js.UndefOr[String] = js.undefined
   
-  var unitsPerEm: Double = js.native
+  var unitsPerEm: Double
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var weightClass: js.UndefOr[String] = js.native
+  var weightClass: js.UndefOr[String] = js.undefined
   
-  var widthClass: js.UndefOr[String] = js.native
+  var widthClass: js.UndefOr[String] = js.undefined
 }
 object FontOptions {
   

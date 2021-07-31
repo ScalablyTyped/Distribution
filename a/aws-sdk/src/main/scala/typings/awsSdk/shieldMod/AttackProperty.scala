@@ -2,36 +2,34 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackProperty extends StObject {
   
   /**
     * The type of distributed denial of service (DDoS) event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events.
     */
-  var AttackLayer: js.UndefOr[typings.awsSdk.shieldMod.AttackLayer] = js.native
+  var AttackLayer: js.UndefOr[typings.awsSdk.shieldMod.AttackLayer] = js.undefined
   
   /**
     * Defines the DDoS attack property information that is provided. The WORDPRESS_PINGBACK_REFLECTOR and WORDPRESS_PINGBACK_SOURCE values are valid only for WordPress reflective pingback DDoS attacks.
     */
-  var AttackPropertyIdentifier: js.UndefOr[typings.awsSdk.shieldMod.AttackPropertyIdentifier] = js.native
+  var AttackPropertyIdentifier: js.UndefOr[typings.awsSdk.shieldMod.AttackPropertyIdentifier] = js.undefined
   
   /**
     * The array of contributor objects that includes the top five contributors to an attack. 
     */
-  var TopContributors: js.UndefOr[typings.awsSdk.shieldMod.TopContributors] = js.native
+  var TopContributors: js.UndefOr[typings.awsSdk.shieldMod.TopContributors] = js.undefined
   
   /**
     * The total contributions made to this attack by all contributors, not just the five listed in the TopContributors list.
     */
-  var Total: js.UndefOr[Long] = js.native
+  var Total: js.UndefOr[Long] = js.undefined
   
   /**
     * The unit of the Value of the contributions.
     */
-  var Unit: js.UndefOr[typings.awsSdk.shieldMod.Unit] = js.native
+  var Unit: js.UndefOr[typings.awsSdk.shieldMod.Unit] = js.undefined
 }
 object AttackProperty {
   

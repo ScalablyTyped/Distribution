@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureInfo extends StObject {
   
   /**
     * A message about why the import job failed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.sesv2Mod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.sesv2Mod.ErrorMessage] = js.undefined
   
   /**
     * An Amazon S3 presigned URL that contains all the failed records and related information.
     */
-  var FailedRecordsS3Url: js.UndefOr[typings.awsSdk.sesv2Mod.FailedRecordsS3Url] = js.native
+  var FailedRecordsS3Url: js.UndefOr[typings.awsSdk.sesv2Mod.FailedRecordsS3Url] = js.undefined
 }
 object FailureInfo {
   

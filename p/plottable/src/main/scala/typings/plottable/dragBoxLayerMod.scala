@@ -5,7 +5,6 @@ import typings.plottable.interfacesMod.Bounds
 import typings.plottable.selectionBoxLayerMod.SelectionBoxLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragBoxLayerMod {

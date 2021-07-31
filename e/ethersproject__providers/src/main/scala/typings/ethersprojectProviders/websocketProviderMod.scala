@@ -7,7 +7,6 @@ import typings.ethersprojectProviders.jsonRpcProviderMod.JsonRpcProvider
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object websocketProviderMod {
@@ -26,7 +25,7 @@ object websocketProviderMod {
     
     val _subs: StringDictionary[Subscription] = js.native
     
-    def _subscribe(tag: String, param: js.Array[_], processFunc: js.Function1[/* result */ js.Any, Unit]): js.Promise[Unit] = js.native
+    def _subscribe(tag: String, param: js.Array[js.Any], processFunc: js.Function1[/* result */ js.Any, Unit]): js.Promise[Unit] = js.native
     
     val _websocket: js.Any = js.native
     
@@ -34,22 +33,24 @@ object websocketProviderMod {
     
     def destroy(): js.Promise[Unit] = js.native
     
-    def send(method: String): js.Promise[_] = js.native
+    def send(method: String): js.Promise[js.Any] = js.native
   }
   /* static members */
   object WebSocketProvider {
     
-    @JSImport("@ethersproject/providers/lib/websocket-provider", "WebSocketProvider.defaultUrl")
+    @JSImport("@ethersproject/providers/lib/websocket-provider", "WebSocketProvider")
     @js.native
-    def defaultUrl(): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def defaultUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrl")().asInstanceOf[String]
   }
   
-  @js.native
   trait InflightRequest extends StObject {
     
-    def callback(error: Error, result: js.Any): Unit = js.native
+    def callback(error: Error, result: js.Any): Unit
     
-    var payload: String = js.native
+    var payload: String
   }
   object InflightRequest {
     
@@ -70,12 +71,11 @@ object websocketProviderMod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def processFunc(payload: js.Any): Unit = js.native
+    def processFunc(payload: js.Any): Unit
     
-    var tag: String = js.native
+    var tag: String
   }
   object Subscription {
     

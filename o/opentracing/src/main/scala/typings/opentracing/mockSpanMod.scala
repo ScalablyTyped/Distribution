@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockSpanMod {
@@ -54,16 +53,15 @@ object mockSpanMod {
     def uuid(): String = js.native
   }
   
-  @js.native
   trait DebugInfo extends StObject {
     
-    var millis: js.Tuple3[Double, Double, Double] = js.native
+    var millis: js.Tuple3[Double, Double, Double]
     
-    var operation: String = js.native
+    var operation: String
     
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object DebugInfo {
     

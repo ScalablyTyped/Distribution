@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BroadcastId_ extends StObject {
   
-  var broadcastId: String = js.native
+  var broadcastId: String
   
-  var commentsRequested: js.UndefOr[Double] = js.native
+  var commentsRequested: js.UndefOr[Double] = js.undefined
   
-  var lastCommentTs: js.UndefOr[String | Double] = js.native
+  var lastCommentTs: js.UndefOr[String | Double] = js.undefined
 }
 object BroadcastId_ {
   

@@ -2,13 +2,11 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the aggregation level and interval for pricing of a single SKU.
   */
-@js.native
 trait SchemaAggregationInfo extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait SchemaAggregationInfo extends StObject {
     * is &quot;DAILY&quot; and aggregation_count is 14, aggregation will be
     * over 14 days.
     */
-  var aggregationCount: js.UndefOr[Double] = js.native
+  var aggregationCount: js.UndefOr[Double] = js.undefined
   
-  var aggregationInterval: js.UndefOr[String] = js.native
+  var aggregationInterval: js.UndefOr[String] = js.undefined
   
-  var aggregationLevel: js.UndefOr[String] = js.native
+  var aggregationLevel: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregationInfo {
   

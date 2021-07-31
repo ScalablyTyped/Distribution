@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseAdsManager extends StObject {
   
-  var pending_count: Double = js.native
+  var pending_count: Double
 }
 object NewsRepositoryInboxResponseAdsManager {
   

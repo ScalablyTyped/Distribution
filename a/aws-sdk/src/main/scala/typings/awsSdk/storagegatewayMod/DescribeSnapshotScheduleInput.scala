@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotScheduleInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
     */
-  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN = js.native
+  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN
 }
 object DescribeSnapshotScheduleInput {
   

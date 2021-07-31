@@ -2,14 +2,12 @@ package typings.knockoutDeferredUpdates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Deferred extender
-@js.native
 trait KnockoutExtenders extends StObject {
   
-  def deferred(target: js.Any, value: Boolean): js.Any = js.native
+  def deferred(target: js.Any, value: Boolean): js.Any
 }
 object KnockoutExtenders {
   

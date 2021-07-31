@@ -3,30 +3,28 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectParameters extends StObject {
   
-  var Amount: Double = js.native
+  var Amount: Double
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Color2: ColorFormat = js.native
+  val Color2: ColorFormat
   
-  var Direction: MsoAnimDirection = js.native
+  var Direction: MsoAnimDirection
   
-  var FontName: String = js.native
+  var FontName: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.EffectParameters_typekey")
-  var PowerPointDotEffectParameters_typekey: EffectParameters = js.native
+  var PowerPointDotEffectParameters_typekey: EffectParameters
   
-  var Relative: MsoTriState = js.native
+  var Relative: MsoTriState
   
-  var Size: Double = js.native
+  var Size: Double
 }
 object EffectParameters {
   

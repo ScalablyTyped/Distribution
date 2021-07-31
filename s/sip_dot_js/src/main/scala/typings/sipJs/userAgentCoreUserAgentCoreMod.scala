@@ -28,7 +28,6 @@ import typings.sipJs.userAgentsMod.UserAgentServer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentCoreUserAgentCoreMod {
@@ -86,15 +85,6 @@ object userAgentCoreUserAgentCoreMod {
       fromURI: URI,
       toURI: URI,
       options: OutgoingRequestMessageOptions,
-      extraHeaders: js.UndefOr[scala.Nothing],
-      body: Body
-    ): OutgoingRequestMessage = js.native
-    def makeOutgoingRequestMessage(
-      method: String,
-      requestURI: URI,
-      fromURI: URI,
-      toURI: URI,
-      options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String]
     ): OutgoingRequestMessage = js.native
     def makeOutgoingRequestMessage(
@@ -104,6 +94,15 @@ object userAgentCoreUserAgentCoreMod {
       toURI: URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String],
+      body: Body
+    ): OutgoingRequestMessage = js.native
+    def makeOutgoingRequestMessage(
+      method: String,
+      requestURI: URI,
+      fromURI: URI,
+      toURI: URI,
+      options: OutgoingRequestMessageOptions,
+      extraHeaders: Unit,
       body: Body
     ): OutgoingRequestMessage = js.native
     

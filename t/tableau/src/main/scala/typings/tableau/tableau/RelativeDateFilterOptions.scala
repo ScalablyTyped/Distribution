@@ -3,23 +3,21 @@ package typings.tableau.tableau
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeDateFilterOptions extends StObject {
   
   /** The UTC date from which to filter. */
-  var anchorDate: Date = js.native
+  var anchorDate: Date
   
   /** Year, quarter, month, etc. */
-  var periodType: PeriodType = js.native
+  var periodType: PeriodType
   
   /** The number used when the rangeType is LASTN or NEXTN. */
-  var rangeN: Double = js.native
+  var rangeN: Double
   
   /** LAST, LASTN, NEXT, etc. */
-  var rangeType: DateRangeType = js.native
+  var rangeType: DateRangeType
 }
 object RelativeDateFilterOptions {
   

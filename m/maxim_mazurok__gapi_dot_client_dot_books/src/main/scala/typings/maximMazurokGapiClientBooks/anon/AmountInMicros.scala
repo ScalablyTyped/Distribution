@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmountInMicros extends StObject {
   
-  var amountInMicros: js.UndefOr[Double] = js.native
+  var amountInMicros: js.UndefOr[Double] = js.undefined
   
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
-  var releaseNumber: js.UndefOr[String] = js.native
+  var releaseNumber: js.UndefOr[String] = js.undefined
   
-  var releaseTime: js.UndefOr[String] = js.native
+  var releaseTime: js.UndefOr[String] = js.undefined
 }
 object AmountInMicros {
   

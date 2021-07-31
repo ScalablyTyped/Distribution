@@ -2,18 +2,16 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCasePrepared. */
-@js.native
 trait ITestCasePrepared extends StObject {
   
   /** TestCasePrepared pickleId */
-  var pickleId: js.UndefOr[String | Null] = js.native
+  var pickleId: js.UndefOr[String | Null] = js.undefined
   
   /** TestCasePrepared steps */
-  var steps: js.UndefOr[js.Array[ITestCasePreparedStep] | Null] = js.native
+  var steps: js.UndefOr[js.Array[ITestCasePreparedStep] | Null] = js.undefined
 }
 object ITestCasePrepared {
   

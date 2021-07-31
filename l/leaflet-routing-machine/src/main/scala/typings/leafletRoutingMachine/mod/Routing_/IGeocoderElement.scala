@@ -3,18 +3,16 @@ package typings.leafletRoutingMachine.mod.Routing_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
-@js.native
 trait IGeocoderElement extends StObject {
   
-  var closeButton: HTMLElement = js.native
+  var closeButton: HTMLElement
   
-  var container: HTMLElement = js.native
+  var container: HTMLElement
   
-  var input: HTMLElement = js.native
+  var input: HTMLElement
 }
 object IGeocoderElement {
   

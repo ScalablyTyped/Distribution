@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerType extends StObject {
   
   /**
     * The format used to encode and transmit the block device, which should be TAR. This is just a container and transmission format and not a runtime format. Provided by the client
     * when the disk image is created.
     */
-  var containerType: js.UndefOr[String] = js.native
+  var containerType: js.UndefOr[String] = js.undefined
   
   /** [Deprecated] This field is deprecated. An optional SHA1 checksum of the disk image before unpackaging provided by the client when the disk image is created. */
-  var sha1Checksum: js.UndefOr[String] = js.native
+  var sha1Checksum: js.UndefOr[String] = js.undefined
   
   /** The full Google Cloud Storage URL where the disk image is stored. You must provide either this property or the sourceDisk property but not both. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object ContainerType {
   

@@ -12,62 +12,60 @@ import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.types.IColorPickerGridCellProps> */
-@js.native
 trait PartialIColorPickerGridCe extends StObject {
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var circle: js.UndefOr[Boolean] = js.native
+  var circle: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var idPrefix: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var item: js.UndefOr[IColorCellProps] = js.native
+  var item: js.UndefOr[IColorCellProps] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], scala.Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], scala.Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], scala.Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], scala.Unit]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
   
   var onMouseLeave: js.UndefOr[
     js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
   
   var onWheel: js.UndefOr[
     js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   var styles: js.UndefOr[
     IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]
-  ] = js.native
+  ] = js.undefined
   
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialIColorPickerGridCe {
   

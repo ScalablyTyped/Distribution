@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -13,14 +12,13 @@ object typesMod {
   
   type LogCounters = StringDictionary[Double]
   
-  @js.native
   trait LogEntry extends StObject {
     
-    var message: LogMessage = js.native
+    var message: LogMessage
     
-    var origin: String = js.native
+    var origin: String
     
-    var `type`: LogType = js.native
+    var `type`: LogType
   }
   object LogEntry {
     

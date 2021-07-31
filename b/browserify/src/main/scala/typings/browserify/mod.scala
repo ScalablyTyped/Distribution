@@ -17,7 +17,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,7 +24,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browserify", JSImport.Namespace)
   @js.native
-  class ^ () extends BrowserifyObject {
+  class ^ ()
+    extends StObject
+       with BrowserifyObject {
     def this(files: js.Array[InputFile]) = this()
     def this(file: InputFile) = this()
     def this(opts: Options) = this()
@@ -34,11 +35,12 @@ object mod extends Shortcut {
   }
   @JSImport("browserify", JSImport.Namespace)
   @js.native
-  val ^ : BrowserifyConstructor = js.native
+  val ^ : js.Object & BrowserifyConstructor = js.native
   
   @js.native
   trait BrowserifyConstructor
-    extends Instantiable0[BrowserifyObject]
+    extends StObject
+       with Instantiable0[BrowserifyObject]
        with Instantiable1[
           (/* files */ js.Array[InputFile]) | (/* file */ InputFile) | (/* opts */ Options), 
           BrowserifyObject
@@ -58,7 +60,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait BrowserifyObject extends EventEmitter {
+  trait BrowserifyObject
+    extends StObject
+       with EventEmitter {
     
     def add(file: js.Array[InputFile]): BrowserifyObject = js.native
     def add(file: js.Array[InputFile], opts: FileOptions): BrowserifyObject = js.native
@@ -74,7 +78,7 @@ object mod extends Shortcut {
       * Return a readable stream with the javascript file contents or optionally specify a cb(err, buf) to get the buffered results.
       */
     def bundle(): ReadableStream = js.native
-    def bundle(cb: js.Function2[/* err */ js.Any, /* src */ Buffer, _]): ReadableStream = js.native
+    def bundle(cb: js.Function2[/* err */ js.Any, /* src */ Buffer, js.Any]): ReadableStream = js.native
     
     /**
       * Prevent the module name or file at file from showing up in the output bundle.
@@ -106,29 +110,32 @@ object mod extends Shortcut {
       * When .bundle() is called, this event fires with the bundle output stream.
       */
     @JSName("on")
-    def on_bundle(event: bundle, listener: js.Function1[/* bundle */ ReadableStream, _]): this.type = js.native
+    def on_bundle(event: bundle, listener: js.Function1[/* bundle */ ReadableStream, js.Any]): this.type = js.native
     /**
       * When a file is resolved for the bundle, the bundle emits a 'file' event with the full file path, the id string passed to require(), and the parent object used by browser-resolve.
       * You could use the file event to implement a file watcher to regenerate bundles when files change.
       */
     @JSName("on")
-    def on_file(event: file, listener: js.Function3[/* file */ String, /* id */ String, /* parent */ js.Any, _]): this.type = js.native
+    def on_file(
+      event: file,
+      listener: js.Function3[/* file */ String, /* id */ String, /* parent */ js.Any, js.Any]
+    ): this.type = js.native
     /**
       * When a package.json file is read, this event fires with the contents.
       * The package directory is available at pkg.__dirname.
       */
     @JSName("on")
-    def on_package(event: _package, listener: js.Function1[/* pkg */ js.Any, _]): this.type = js.native
+    def on_package(event: _package, listener: js.Function1[/* pkg */ js.Any, js.Any]): this.type = js.native
     /**
       * When the .reset() method is called or implicitly called by another call to .bundle(), this event fires.
       */
     @JSName("on")
-    def on_reset(event: reset, listener: js.Function0[_]): this.type = js.native
+    def on_reset(event: reset, listener: js.Function0[js.Any]): this.type = js.native
     /**
       * When a transform is applied to a file, the 'transform' event fires on the bundle stream with the transform stream tr and the file that the transform is being applied to.
       */
     @JSName("on")
-    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadWriteStream, /* file */ String, _]): this.type = js.native
+    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadWriteStream, /* file */ String, js.Any]): this.type = js.native
     
     /**
       * Set to any until substack/labeled-stream-splicer is defined
@@ -141,8 +148,8 @@ object mod extends Shortcut {
       */
     def plugin[T /* <: CustomOptions */](plugin: String): BrowserifyObject = js.native
     def plugin[T /* <: CustomOptions */](plugin: String, opts: T): BrowserifyObject = js.native
-    def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, _]): BrowserifyObject = js.native
-    def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, _], opts: T): BrowserifyObject = js.native
+    def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, js.Any]): BrowserifyObject = js.native
+    def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, js.Any], opts: T): BrowserifyObject = js.native
     
     /**
       * Make file available from outside the bundle with require(file).
@@ -175,16 +182,16 @@ object mod extends Shortcut {
   /**
     * Core options pertaining to a Browserify instance, extended by user options
     */
-  @js.native
   trait CustomOptions
-    extends /**
+    extends StObject
+       with /**
     * Custom properties can be defined on Options.
     * These options are forwarded along to module-deps and browser-pack directly.
     */
   /* propName */ StringDictionary[js.Any] {
     
     /** the directory that Browserify starts bundling from for filenames that start with .. */
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
   }
   object CustomOptions {
     
@@ -208,30 +215,29 @@ object mod extends Shortcut {
   /**
     * Options pertaining to an individual file.
     */
-  @js.native
   trait FileOptions extends StObject {
     
     // Basedir to use to resolve this file's path.
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
     // If true, this is considered an entry point to your app.
-    var entry: js.UndefOr[Boolean] = js.native
+    var entry: js.UndefOr[Boolean] = js.undefined
     
     // Expose this file under a custom dependency name.
     // require('./vendor/angular/angular.js', {expose: 'angular'}) enables require('angular')
-    var expose: js.UndefOr[String] = js.native
+    var expose: js.UndefOr[String] = js.undefined
     
     // Forward file to external() to be externalized.
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
     // The name/path to the file.
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     // The ID to use for require() statements.
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     // Disable transforms on file if set to false.
-    var transform: js.UndefOr[Boolean] = js.native
+    var transform: js.UndefOr[Boolean] = js.undefined
   }
   object FileOptions {
     
@@ -295,56 +301,57 @@ object mod extends Shortcut {
   /**
     * Options pertaining to a Browserify instance.
     */
-  @js.native
-  trait Options extends CustomOptions {
+  trait Options
+    extends StObject
+       with CustomOptions {
     
     // sets the list of built-ins to use, which by default is set in lib/builtins.js in this distribution.
-    var builtins: js.UndefOr[js.Array[String] | StringDictionary[String] | Boolean] = js.native
+    var builtins: js.UndefOr[js.Array[String] | StringDictionary[String] | Boolean] = js.undefined
     
     // set if external modules should be bundled. Defaults to true.
-    var bundleExternal: js.UndefOr[Boolean] = js.native
+    var bundleExternal: js.UndefOr[Boolean] = js.undefined
     
     // sets the algorithm used to parse out the common paths. Use false to turn this off, otherwise it uses the commondir module.
-    var commondir: js.UndefOr[Boolean] = js.native
+    var commondir: js.UndefOr[Boolean] = js.undefined
     
     // When true, add a source map inline to the end of the bundle. This makes debugging easier because you can see all the original files if you are in a modern enough browser.
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     // When true, scan all files for process, global, __filename, and __dirname, defining as necessary.
     // With this option npm modules are more likely to work but bundling takes longer. Default true.
-    var detectGlobals: js.UndefOr[Boolean] = js.native
+    var detectGlobals: js.UndefOr[Boolean] = js.undefined
     
     // String, file object, or array of those types (they may be mixed) specifying entry file(s).
-    var entries: js.UndefOr[InputFile | js.Array[InputFile]] = js.native
+    var entries: js.UndefOr[InputFile | js.Array[InputFile]] = js.undefined
     
     // an array of optional extra extensions for the module lookup machinery to use when the extension has not been specified.
     // By default Browserify considers only .js and .json files in such cases.
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     // defaults to 'require' in expose mode but you can use another name.
-    var externalRequireName: js.UndefOr[String] = js.native
+    var externalRequireName: js.UndefOr[String] = js.undefined
     
     // disables converting module ids into numerical indexes. This is useful for preserving the original paths that a bundle was generated with.
-    var fullPaths: js.UndefOr[Boolean] = js.native
+    var fullPaths: js.UndefOr[Boolean] = js.undefined
     
     // will be passed to insert-module-globals as the opts.vars parameter.
-    var insertGlobalVars: js.UndefOr[VarsOption] = js.native
+    var insertGlobalVars: js.UndefOr[VarsOption] = js.undefined
     
     // When true, always insert process, global, __filename, and __dirname without analyzing the AST for faster builds but larger output bundles. Default false.
-    var insertGlobals: js.UndefOr[Boolean] = js.native
+    var insertGlobals: js.UndefOr[Boolean] = js.undefined
     
     // an array which will skip all require() and global parsing for each file in the array.
     // Use this for giant libs like jquery or threejs that don't have any requires or node-style globals but take forever to parse.
-    var noParse: js.UndefOr[js.Array[String]] = js.native
+    var noParse: js.UndefOr[js.Array[String]] = js.undefined
     
     // an array of directories that Browserify searches when looking for modules which are not referenced using relative path.
     // Can be absolute or relative to basedir. Equivalent of setting NODE_PATH environmental variable when calling Browserify command.
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
     
     // When a non-empty string, a standalone module is created with that name and a umd wrapper.
     // You can use namespaces in the standalone global export using a . in the string name as a separator, for example 'A.B.C'.
     // The global export will be sanitized and camel cased.
-    var standalone: js.UndefOr[String] = js.native
+    var standalone: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -458,8 +465,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = BrowserifyConstructor
+  type _To = js.Object & BrowserifyConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: BrowserifyConstructor = ^
+  override def _to: js.Object & BrowserifyConstructor = ^
 }

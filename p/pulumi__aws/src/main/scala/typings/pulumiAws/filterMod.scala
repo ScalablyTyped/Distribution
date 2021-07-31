@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterMod {
@@ -70,6 +69,10 @@ object filterMod {
   /* static members */
   object Filter {
     
+    @JSImport("@pulumi/aws/guardduty/filter", "Filter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Filter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -79,65 +82,59 @@ object filterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty/filter", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Filter = js.native
-    @JSImport("@pulumi/aws/guardduty/filter", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Filter = js.native
-    @JSImport("@pulumi/aws/guardduty/filter", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FilterState): Filter = js.native
-    @JSImport("@pulumi/aws/guardduty/filter", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): Filter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FilterState): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
     
     /**
       * Returns true if the given object is an instance of Filter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty/filter", "Filter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean]
   }
   
-  @js.native
   trait FilterArgs extends StObject {
     
     /**
       * Specifies the action that is to be applied to the findings that match the filter. Can be one of `ARCHIVE` or `NOOP`.
       */
-    val action: Input[String] = js.native
+    val action: Input[String]
     
     /**
       * Description of the filter.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of a GuardDuty detector, attached to your account.
       */
-    val detectorId: Input[String] = js.native
+    val detectorId: Input[String]
     
     /**
       * Represents the criteria to be used in the filter for querying findings. Contains one or more `criterion` blocks, documented below.
       */
-    val findingCriteria: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria] = js.native
+    val findingCriteria: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]
     
     /**
       * The name of your filter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
       */
-    val rank: Input[Double] = js.native
+    val rank: Input[Double]
     
     /**
       * The tags that you want to add to the Filter resource. A tag consists of a key and a value.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FilterArgs {
     
@@ -187,48 +184,47 @@ object filterMod {
     }
   }
   
-  @js.native
   trait FilterState extends StObject {
     
     /**
       * Specifies the action that is to be applied to the findings that match the filter. Can be one of `ARCHIVE` or `NOOP`.
       */
-    val action: js.UndefOr[Input[String]] = js.native
+    val action: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the GuardDuty filter.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the filter.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of a GuardDuty detector, attached to your account.
       */
-    val detectorId: js.UndefOr[Input[String]] = js.native
+    val detectorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Represents the criteria to be used in the filter for querying findings. Contains one or more `criterion` blocks, documented below.
       */
-    val findingCriteria: js.UndefOr[Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]] = js.native
+    val findingCriteria: js.UndefOr[Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]] = js.undefined
     
     /**
       * The name of your filter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
       */
-    val rank: js.UndefOr[Input[Double]] = js.native
+    val rank: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The tags that you want to add to the Filter resource. A tag consists of a key and a value.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FilterState {
     

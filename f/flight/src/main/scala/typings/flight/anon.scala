@@ -2,21 +2,19 @@ package typings.flight
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LogAll extends StObject {
     
-    def logAll(): Unit = js.native
+    def logAll(): Unit
     
-    def logByAction(action: String): Unit = js.native
+    def logByAction(action: String): Unit
     
-    def logByName(name: String): Unit = js.native
+    def logByName(name: String): Unit
     
-    def logNone(): Unit = js.native
+    def logNone(): Unit
   }
   object LogAll {
     

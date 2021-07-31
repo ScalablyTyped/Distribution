@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputSettings extends StObject {
   
   /**
     * Settings for HLS output groups
     */
-  var HlsSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.HlsSettings] = js.native
+  var HlsSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.HlsSettings] = js.undefined
 }
 object OutputSettings {
   

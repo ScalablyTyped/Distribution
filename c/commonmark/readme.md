@@ -10,9 +10,9 @@ a strongly specified, highly compatible variant of Markdown
 | ------------------ | :-------------: |
 | Full name          | commonmark |
 | Keywords           | markdown, commonmark, md, stmd |
-| # releases         | 2 |
-| # dependents       | 155 |
-| # downloads        | 7254601 |
+| # releases         | 5 |
+| # dependents       | 161 |
+| # downloads        | 8577470 |
 | # stars            | 10 |
 
 ## Links

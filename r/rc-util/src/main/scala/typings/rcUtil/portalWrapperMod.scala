@@ -10,10 +10,13 @@ import typings.react.mod.RefObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalWrapperMod {
+  
+  @JSImport("rc-util/lib/PortalWrapper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-util/lib/PortalWrapper", JSImport.Default)
   @js.native
@@ -22,15 +25,17 @@ object portalWrapperMod {
   }
   object default {
     
-    /* static member */
-    @JSImport("rc-util/lib/PortalWrapper", "default.getDerivedStateFromProps")
+    @JSImport("rc-util/lib/PortalWrapper", JSImport.Default)
     @js.native
-    def getDerivedStateFromProps(props: js.Any, hasPrevProps_self: PrevProps): PrevPropsAny = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getDerivedStateFromProps(props: js.Any, hasPrevProps_self: PrevProps): PrevPropsAny = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps_self.asInstanceOf[js.Any])).asInstanceOf[PrevPropsAny]
   }
   
-  @JSImport("rc-util/lib/PortalWrapper", "getOpenCount")
-  @js.native
-  def getOpenCount(): Double = js.native
+  @scala.inline
+  def getOpenCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenCount")().asInstanceOf[Double]
   
   type GetContainer = String | HTMLElement | js.Function0[HTMLElement]
   
@@ -75,18 +80,17 @@ object portalWrapperMod {
     def switchScrollingEffect(): Unit = js.native
   }
   
-  @js.native
   trait PortalWrapperProps extends StObject {
     
-    def children(info: typings.rcUtil.anon.GetContainer): ReactNode = js.native
+    def children(info: typings.rcUtil.anon.GetContainer): ReactNode
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[GetContainer] = js.native
+    var getContainer: js.UndefOr[GetContainer] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var wrapperClassName: js.UndefOr[String] = js.native
+    var wrapperClassName: js.UndefOr[String] = js.undefined
   }
   object PortalWrapperProps {
     
@@ -131,10 +135,9 @@ object portalWrapperMod {
     }
   }
   
-  @js.native
   trait PortalWrapperState extends StObject {
     
-    var _self: PortalWrapper = js.native
+    var _self: PortalWrapper
   }
   object PortalWrapperState {
     

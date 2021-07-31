@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLiasettingsRequestinventoryverification extends StandardParameters {
+trait ParamsResourceLiasettingsRequestinventoryverification
+  extends StObject
+     with StandardParameters {
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The country for which inventory validation is requested.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the managing account. If this parameter is not the same as
     * accountId, then this account must be a multi-client account and accountId
     * must be the ID of a sub-account of this account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceLiasettingsRequestinventoryverification {
   

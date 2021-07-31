@@ -2,21 +2,21 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [pg](https://node-postgres.com/) module.
   */
-@js.native
-trait pg extends Instrumentation {
+trait pg
+  extends StObject
+     with Instrumentation {
   
   /**
     * The service name to be used for this plugin. If a function is used, it will be passed the connection parameters and its return value will be used as the service name.
     */
   @JSName("service")
-  var service_pg: js.UndefOr[String | (js.Function1[/* params */ js.Any, String])] = js.native
+  var service_pg: js.UndefOr[String | (js.Function1[/* params */ js.Any, String])] = js.undefined
 }
 object pg {
   

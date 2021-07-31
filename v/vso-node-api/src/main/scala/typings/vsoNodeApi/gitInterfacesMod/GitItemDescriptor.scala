@@ -2,36 +2,34 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitItemDescriptor extends StObject {
   
   /**
     * Path to item
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Specifies whether to include children (OneLevel), all descendants (Full), or None
     */
-  var recursionLevel: VersionControlRecursionType = js.native
+  var recursionLevel: VersionControlRecursionType
   
   /**
     * Version string (interpretation based on VersionType defined in subclass
     */
-  var version: String = js.native
+  var version: String
   
   /**
     * Version modifiers (e.g. previous)
     */
-  var versionOptions: GitVersionOptions = js.native
+  var versionOptions: GitVersionOptions
   
   /**
     * How to interpret version (branch,tag,commit)
     */
-  var versionType: GitVersionType = js.native
+  var versionType: GitVersionType
 }
 object GitItemDescriptor {
   

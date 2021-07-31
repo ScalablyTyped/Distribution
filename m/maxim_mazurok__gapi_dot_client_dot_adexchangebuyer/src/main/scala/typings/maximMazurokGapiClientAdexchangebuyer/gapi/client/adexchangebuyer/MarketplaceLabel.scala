@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarketplaceLabel extends StObject {
   
   /** The accountId of the party that created the label. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The creation time (in ms since epoch) for the label. */
-  var createTimeMs: js.UndefOr[String] = js.native
+  var createTimeMs: js.UndefOr[String] = js.undefined
   
   /** Information about the party that created the label. */
-  var deprecatedMarketplaceDealParty: js.UndefOr[MarketplaceDealParty] = js.native
+  var deprecatedMarketplaceDealParty: js.UndefOr[MarketplaceDealParty] = js.undefined
   
   /** The label to use. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object MarketplaceLabel {
   

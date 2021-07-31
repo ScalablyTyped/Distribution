@@ -12,7 +12,7 @@ Single component release of embed
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1384 |
+| # downloads        | 1714 |
 | # stars            | 0 |
 
 ## Links

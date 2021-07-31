@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceAssociationMod {
@@ -38,6 +37,10 @@ object resourceAssociationMod {
   /* static members */
   object ResourceAssociation {
     
+    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object resourceAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceAssociationState): ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): ResourceAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceAssociationState): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
     
     /**
       * Returns true if the given object is an instance of ResourceAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram/resourceAssociation", "ResourceAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean]
   }
   
-  @js.native
   trait ResourceAssociationArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
     
     /**
       * Amazon Resource Name (ARN) of the RAM Resource Share.
       */
-    val resourceShareArn: Input[String] = js.native
+    val resourceShareArn: Input[String]
   }
   object ResourceAssociationArgs {
     
@@ -101,18 +98,17 @@ object resourceAssociationMod {
     }
   }
   
-  @js.native
   trait ResourceAssociationState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the RAM Resource Share.
       */
-    val resourceShareArn: js.UndefOr[Input[String]] = js.native
+    val resourceShareArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ResourceAssociationState {
     

@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangyClassApplierOptions extends StObject {
   
-  var applyToEditableOnly: js.UndefOr[Boolean] = js.native
+  var applyToEditableOnly: js.UndefOr[Boolean] = js.undefined
   
-  var elementAttributes: js.UndefOr[StringDictionary[String]] = js.native
+  var elementAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var elementProperties: js.UndefOr[StringDictionary[String]] = js.native
+  var elementProperties: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var elementTagName: js.UndefOr[String] = js.native
+  var elementTagName: js.UndefOr[String] = js.undefined
   
-  var ignoreWhiteSpace: js.UndefOr[Boolean] = js.native
+  var ignoreWhiteSpace: js.UndefOr[Boolean] = js.undefined
   
-  var normalize: js.UndefOr[Boolean] = js.native
+  var normalize: js.UndefOr[Boolean] = js.undefined
   
-  var onElementCreate: js.UndefOr[js.Function2[/* element */ Element, /* classApplier */ RangyClassApplier, Unit]] = js.native
+  var onElementCreate: js.UndefOr[js.Function2[/* element */ Element, /* classApplier */ RangyClassApplier, Unit]] = js.undefined
   
-  var tagNames: js.UndefOr[String | js.Array[String]] = js.native
+  var tagNames: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var useExistingElements: js.UndefOr[Boolean] = js.native
+  var useExistingElements: js.UndefOr[Boolean] = js.undefined
 }
 object RangyClassApplierOptions {
   

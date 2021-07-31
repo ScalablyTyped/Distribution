@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickFeedback extends StObject {
   
   /**
     * The Unix timestamp of the date and time that the result was clicked.
     */
-  var ClickTime: Timestamp = js.native
+  var ClickTime: Timestamp
   
   /**
     * The unique identifier of the search result that was clicked.
     */
-  var ResultId: typings.awsSdk.kendraMod.ResultId = js.native
+  var ResultId: typings.awsSdk.kendraMod.ResultId
 }
 object ClickFeedback {
   

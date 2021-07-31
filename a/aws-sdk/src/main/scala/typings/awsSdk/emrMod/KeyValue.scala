@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValue extends StObject {
   
   /**
     * The unique identifier of a key value pair.
     */
-  var Key: js.UndefOr[XmlString] = js.native
+  var Key: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The value part of the identified key.
     */
-  var Value: js.UndefOr[XmlString] = js.native
+  var Value: js.UndefOr[XmlString] = js.undefined
 }
 object KeyValue {
   

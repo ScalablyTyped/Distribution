@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaOptions extends StObject {
   
   /** Optional. Refers to the "CA" X.509 extension, which is a boolean value. When this value is missing, the extension will be omitted from the CA certificate. */
-  var isCa: js.UndefOr[Boolean] = js.native
+  var isCa: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Refers to the path length restriction X.509 extension. For a CA certificate, this value describes the depth of subordinate CA certificates that are allowed. If this value
     * is less than 0, the request will fail. If this value is missing, the max path length will be omitted from the CA certificate.
     */
-  var maxIssuerPathLength: js.UndefOr[Double] = js.native
+  var maxIssuerPathLength: js.UndefOr[Double] = js.undefined
 }
 object CaOptions {
   

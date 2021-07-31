@@ -2,35 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionScope extends StObject {
   
   /**
     * A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf
     * of all users. This text appears in tenant-wide admin consent experiences.
     */
-  var adminConsentDescription: js.UndefOr[NullableOption[String]] = js.native
+  var adminConsentDescription: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
-  var adminConsentDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var adminConsentDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Unique delegated permission identifier inside the collection of delegated permissions defined for a resource
     * application.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * When creating or updating a permission, this property must be set to true (which is the default). To delete a
     * permission, this property must first be set to false. At that point, in a subsequent call, the permission may be
     * removed.
     */
-  var isEnabled: js.UndefOr[Boolean] = js.native
+  var isEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var origin: js.UndefOr[NullableOption[String]] = js.native
+  var origin: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of
@@ -38,26 +36,26 @@ trait PermissionScope extends StObject {
     * behavior, but each customer can choose to customize the behavior in their organization (by allowing, restricting or
     * limiting user consent to this delegated permission.)
     */
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A description of the delegated permissions, intended to be read by a user granting the permission on their own behalf.
     * This text appears in consent experiences where the user is consenting only on behalf of themselves.
     */
-  var userConsentDescription: js.UndefOr[NullableOption[String]] = js.native
+  var userConsentDescription: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A title for the permission, intended to be read by a user granting the permission on their own behalf. This text
     * appears in consent experiences where the user is consenting only on behalf of themselves.
     */
-  var userConsentDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var userConsentDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the value to include in the scp (scope) claim in access tokens. Must not exceed 120 characters in length.
     * Allowed characters are : ! # $ % &amp; ' ( ) * + , - . / : ; = ? @ [ ] ^ + _ { } ~, as well as characters in the ranges
     * 0-9, A-Z and a-z. Any other character, including the space character, are not allowed.
     */
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PermissionScope {
   

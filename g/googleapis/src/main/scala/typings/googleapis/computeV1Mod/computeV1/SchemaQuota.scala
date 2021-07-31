@@ -2,35 +2,33 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A quotas entry.
   */
-@js.native
 trait SchemaQuota extends StObject {
   
   /**
     * [Output Only] Quota limit for this metric.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] Name of the quota metric.
     */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Owning resource. This is the resource on which this quota
     * is applied.
     */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Current usage of this metric.
     */
-  var usage: js.UndefOr[Double] = js.native
+  var usage: js.UndefOr[Double] = js.undefined
 }
 object SchemaQuota {
   

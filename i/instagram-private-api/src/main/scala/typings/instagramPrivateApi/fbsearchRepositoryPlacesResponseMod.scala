@@ -2,26 +2,23 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fbsearchRepositoryPlacesResponseMod {
   
-  @js.native
   trait FbsearchRepositoryPlacesResponseHeaderMedia extends StObject
   
-  @js.native
   trait FbsearchRepositoryPlacesResponseItemsItem extends StObject {
     
-    var header_media: FbsearchRepositoryPlacesResponseHeaderMedia = js.native
+    var header_media: FbsearchRepositoryPlacesResponseHeaderMedia
     
-    var location: FbsearchRepositoryPlacesResponseLocation = js.native
+    var location: FbsearchRepositoryPlacesResponseLocation
     
-    var media_bundles: js.Array[_] = js.native
+    var media_bundles: js.Array[js.Any]
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var title: String = js.native
+    var title: String
   }
   object FbsearchRepositoryPlacesResponseItemsItem {
     
@@ -29,7 +26,7 @@ object fbsearchRepositoryPlacesResponseMod {
     def apply(
       header_media: FbsearchRepositoryPlacesResponseHeaderMedia,
       location: FbsearchRepositoryPlacesResponseLocation,
-      media_bundles: js.Array[_],
+      media_bundles: js.Array[js.Any],
       subtitle: String,
       title: String
     ): FbsearchRepositoryPlacesResponseItemsItem = {
@@ -47,7 +44,7 @@ object fbsearchRepositoryPlacesResponseMod {
       def setLocation(value: FbsearchRepositoryPlacesResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMedia_bundles(value: js.Array[_]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
+      def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
@@ -60,26 +57,25 @@ object fbsearchRepositoryPlacesResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryPlacesResponseLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var facebook_places_id: Double = js.native
+    var facebook_places_id: Double
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var short_name: String = js.native
+    var short_name: String
   }
   object FbsearchRepositoryPlacesResponseLocation {
     
@@ -131,16 +127,15 @@ object fbsearchRepositoryPlacesResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryPlacesResponseRootObject extends StObject {
     
-    var has_more: Boolean = js.native
+    var has_more: Boolean
     
-    var items: js.Array[FbsearchRepositoryPlacesResponseItemsItem] = js.native
+    var items: js.Array[FbsearchRepositoryPlacesResponseItemsItem]
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var status: String = js.native
+    var status: String
   }
   object FbsearchRepositoryPlacesResponseRootObject {
     

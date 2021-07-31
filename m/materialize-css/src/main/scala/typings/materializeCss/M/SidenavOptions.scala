@@ -5,58 +5,56 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for the Sidenav
   */
-@js.native
 trait SidenavOptions extends StObject {
   
   /**
     * Allow swipe gestures to open/close Sidenav
     * @default true
     */
-  var draggable: Boolean = js.native
+  var draggable: Boolean
   
   /**
     * Side of screen on which Sidenav appears
     * @default 'left'
     */
-  var edge: left | right = js.native
+  var edge: left | right
   
   /**
     * Length in ms of enter transition
     * @default 250
     */
-  var inDuration: Double = js.native
+  var inDuration: Double
   
   /**
     * Function called when sidenav finishes exiting
     */
-  def onCloseEnd(elem: Element): Unit = js.native
+  def onCloseEnd(elem: Element): Unit
   
   /**
     * Function called when sidenav starts exiting
     */
-  def onCloseStart(elem: Element): Unit = js.native
+  def onCloseStart(elem: Element): Unit
   
   /**
     * Function called when sidenav finishes entering
     */
-  def onOpenEnd(elem: Element): Unit = js.native
+  def onOpenEnd(elem: Element): Unit
   
   /**
     * Function called when sidenav starts entering
     */
-  def onOpenStart(elem: Element): Unit = js.native
+  def onOpenStart(elem: Element): Unit
   
   /**
     * Length in ms of exit transition
     * @default 200
     */
-  var outDuration: Double = js.native
+  var outDuration: Double
 }
 object SidenavOptions {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityUpdateData extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var updated: Boolean = js.native
+  var updated: Boolean
 }
 object IdentityUpdateData {
   

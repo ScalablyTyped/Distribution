@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsInput extends StObject {
   
   /**
     * The Amazon EMR resource identifier from which tags will be removed. This value must be a cluster identifier.
     */
-  var ResourceId: typings.awsSdk.emrMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.emrMod.ResourceId
   
   /**
     * A list of tag keys to remove from a resource.
     */
-  var TagKeys: StringList = js.native
+  var TagKeys: StringList
 }
 object RemoveTagsInput {
   

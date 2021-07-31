@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProvisioningTemplateRequest extends StObject {
   
   /**
     * The description of the fleet provisioning template.
     */
-  var description: js.UndefOr[TemplateDescription] = js.native
+  var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
     * True to enable the fleet provisioning template, otherwise false.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * Creates a pre-provisioning hook template.
     */
-  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.native
+  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.undefined
   
   /**
     * The role ARN for the role associated with the fleet provisioning template. This IoT role grants permission to provision a device.
     */
-  var provisioningRoleArn: RoleArn = js.native
+  var provisioningRoleArn: RoleArn
   
   /**
     * Metadata which can be used to manage the fleet provisioning template.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The JSON formatted contents of the fleet provisioning template.
     */
-  var templateBody: TemplateBody = js.native
+  var templateBody: TemplateBody
   
   /**
     * The name of the fleet provisioning template.
     */
-  var templateName: TemplateName = js.native
+  var templateName: TemplateName
 }
 object CreateProvisioningTemplateRequest {
   

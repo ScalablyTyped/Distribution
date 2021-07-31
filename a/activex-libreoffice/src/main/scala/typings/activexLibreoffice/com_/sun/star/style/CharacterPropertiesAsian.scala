@@ -4,53 +4,51 @@ import typings.activexLibreoffice.com_.sun.star.awt.FontSlant
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style of characters in Asian texts. */
-@js.native
 trait CharacterPropertiesAsian extends StObject {
   
   /** This property contains the text encoding of the font as specified in {@link com.sun.star.awt.CharSet} . */
-  var CharFontCharSetAsian: Double = js.native
+  var CharFontCharSetAsian: Double
   
   /** This property contains font family as specified in {@link com.sun.star.awt.FontFamily} . */
-  var CharFontFamilyAsian: Double = js.native
+  var CharFontFamilyAsian: Double
   
   /**
     * This property specifies the name of the font style.
     *
     * It may contain more than one name separated by comma.
     */
-  var CharFontNameAsian: String = js.native
+  var CharFontNameAsian: String
   
   /** This property contains the font pitch as specified in {@link com.sun.star.awt.FontPitch} . */
-  var CharFontPitchAsian: Double = js.native
+  var CharFontPitchAsian: Double
   
   /**
     * This property contains the name of the font style.
     *
     * This property may be empty.
     */
-  var CharFontStyleNameAsian: String = js.native
+  var CharFontStyleNameAsian: String
   
   /** This value contains the height of the characters in point. */
-  var CharHeightAsian: Double = js.native
+  var CharHeightAsian: Double
   
   /** contains the value of the locale. */
-  var CharLocaleAsian: Locale = js.native
+  var CharLocaleAsian: Locale
   
   /**
     * This property contains the value of the posture of the document.
     * @see com.sun.star.awt.FontSlant
     */
-  var CharPostureAsian: FontSlant = js.native
+  var CharPostureAsian: FontSlant
   
   /**
     * This property contains the value of the font weight.
     * @see com.sun.star.awt.FontWeight
     */
-  var CharWeightAsian: Double = js.native
+  var CharWeightAsian: Double
 }
 object CharacterPropertiesAsian {
   

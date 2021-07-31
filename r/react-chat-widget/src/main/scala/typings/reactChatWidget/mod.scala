@@ -6,10 +6,13 @@ import typings.reactChatWidget.anon.Autofocus
 import typings.reactChatWidget.anon.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-chat-widget", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-chat-widget", "Widget")
   @js.native
@@ -23,43 +26,33 @@ object mod {
     def this(props: Autofocus, context: js.Any) = this()
   }
   
-  @JSImport("react-chat-widget", "addLinkSnippet")
-  @js.native
-  def addLinkSnippet(link: String): Unit = js.native
+  @scala.inline
+  def addLinkSnippet(link: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLinkSnippet")(link.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "addResponseMessage")
-  @js.native
-  def addResponseMessage(input: String): Unit = js.native
+  @scala.inline
+  def addResponseMessage(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addResponseMessage")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "addUserMessage")
-  @js.native
-  def addUserMessage(input: String): Unit = js.native
+  @scala.inline
+  def addUserMessage(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUserMessage")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "dropMessages")
-  @js.native
-  def dropMessages(): Unit = js.native
+  @scala.inline
+  def dropMessages(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dropMessages")().asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "isWidgetOpened")
-  @js.native
-  def isWidgetOpened(): Boolean = js.native
+  @scala.inline
+  def isWidgetOpened(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWidgetOpened")().asInstanceOf[Boolean]
   
-  @JSImport("react-chat-widget", "renderCustomComponent")
-  @js.native
-  def renderCustomComponent[P](component: ComponentType[P], props: P, showAvatar: Boolean): Unit = js.native
+  @scala.inline
+  def renderCustomComponent[P](component: ComponentType[P], props: P, showAvatar: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCustomComponent")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any], showAvatar.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "setQuickButtons")
-  @js.native
-  def setQuickButtons(input: js.Array[Label]): Unit = js.native
+  @scala.inline
+  def setQuickButtons(input: js.Array[Label]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQuickButtons")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "toggleInputDisabled")
-  @js.native
-  def toggleInputDisabled(): Unit = js.native
+  @scala.inline
+  def toggleInputDisabled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleInputDisabled")().asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "toggleMsgLoader")
-  @js.native
-  def toggleMsgLoader(): Unit = js.native
+  @scala.inline
+  def toggleMsgLoader(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMsgLoader")().asInstanceOf[Unit]
   
-  @JSImport("react-chat-widget", "toggleWidget")
-  @js.native
-  def toggleWidget(): Unit = js.native
+  @scala.inline
+  def toggleWidget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleWidget")().asInstanceOf[Unit]
 }

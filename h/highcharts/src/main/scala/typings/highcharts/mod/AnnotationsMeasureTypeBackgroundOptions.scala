@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsMeasureTypeBackgroundOptions extends StObject {
   
   /**
     * (Highstock) The color of the rectangle.
     */
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The color of border.
     */
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The width of border.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsMeasureTypeBackgroundOptions {
   

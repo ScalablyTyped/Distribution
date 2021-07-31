@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicsStats extends StObject {
   
   /** Histogram of frame render times. There should be 154 buckets ranging from [5ms, 6ms) to [4950ms, infinity) */
-  var buckets: js.UndefOr[js.Array[GraphicsStatsBucket]] = js.native
+  var buckets: js.UndefOr[js.Array[GraphicsStatsBucket]] = js.undefined
   
   /** Total "high input latency" events. */
-  var highInputLatencyCount: js.UndefOr[String] = js.native
+  var highInputLatencyCount: js.UndefOr[String] = js.undefined
   
   /** Total frames with slow render time. Should be <= total_frames. */
-  var jankyFrames: js.UndefOr[String] = js.native
+  var jankyFrames: js.UndefOr[String] = js.undefined
   
   /** Total "missed vsync" events. */
-  var missedVsyncCount: js.UndefOr[String] = js.native
+  var missedVsyncCount: js.UndefOr[String] = js.undefined
   
   /** 50th percentile frame render time in milliseconds. */
-  var p50Millis: js.UndefOr[String] = js.native
+  var p50Millis: js.UndefOr[String] = js.undefined
   
   /** 90th percentile frame render time in milliseconds. */
-  var p90Millis: js.UndefOr[String] = js.native
+  var p90Millis: js.UndefOr[String] = js.undefined
   
   /** 95th percentile frame render time in milliseconds. */
-  var p95Millis: js.UndefOr[String] = js.native
+  var p95Millis: js.UndefOr[String] = js.undefined
   
   /** 99th percentile frame render time in milliseconds. */
-  var p99Millis: js.UndefOr[String] = js.native
+  var p99Millis: js.UndefOr[String] = js.undefined
   
   /** Total "slow bitmap upload" events. */
-  var slowBitmapUploadCount: js.UndefOr[String] = js.native
+  var slowBitmapUploadCount: js.UndefOr[String] = js.undefined
   
   /** Total "slow draw" events. */
-  var slowDrawCount: js.UndefOr[String] = js.native
+  var slowDrawCount: js.UndefOr[String] = js.undefined
   
   /** Total "slow UI thread" events. */
-  var slowUiThreadCount: js.UndefOr[String] = js.native
+  var slowUiThreadCount: js.UndefOr[String] = js.undefined
   
   /** Total frames rendered by package. */
-  var totalFrames: js.UndefOr[String] = js.native
+  var totalFrames: js.UndefOr[String] = js.undefined
 }
 object GraphicsStats {
   

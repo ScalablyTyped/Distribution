@@ -11,7 +11,7 @@ Utils for easy-xapi
 | Keywords           | xapi, utils |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 527 |
+| # downloads        | 729 |
 | # stars            | 0 |
 
 ## Links

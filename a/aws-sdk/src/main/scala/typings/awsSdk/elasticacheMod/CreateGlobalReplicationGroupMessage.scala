@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGlobalReplicationGroupMessage extends StObject {
   
   /**
     * Provides details of the Global Datastore
     */
-  var GlobalReplicationGroupDescription: js.UndefOr[String] = js.native
+  var GlobalReplicationGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The suffix name of a Global Datastore. Amazon ElastiCache automatically applies a prefix to the Global Datastore ID when it is created. Each AWS Region has its own prefix. For instance, a Global Datastore ID created in the US-West-1 region will begin with "dsdfu" along with the suffix name you provide. The suffix, combined with the auto-generated prefix, guarantees uniqueness of the Global Datastore name across multiple regions.  For a full list of AWS Regions and their respective Global Datastore iD prefixes, see Using the AWS CLI with Global Datastores .
     */
-  var GlobalReplicationGroupIdSuffix: String = js.native
+  var GlobalReplicationGroupIdSuffix: String
   
   /**
     * The name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.
     */
-  var PrimaryReplicationGroupId: String = js.native
+  var PrimaryReplicationGroupId: String
 }
 object CreateGlobalReplicationGroupMessage {
   

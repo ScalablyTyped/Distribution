@@ -2,69 +2,67 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activeanon extends StObject {
   
-  var active_anon: Double = js.native
+  var active_anon: Double
   
-  var active_file: Double = js.native
+  var active_file: Double
   
-  var cache: Double = js.native
+  var cache: Double
   
-  var hierarchical_memory_limit: Double = js.native
+  var hierarchical_memory_limit: Double
   
-  var inactive_anon: Double = js.native
+  var inactive_anon: Double
   
-  var inactive_file: Double = js.native
+  var inactive_file: Double
   
-  var mapped_file: Double = js.native
+  var mapped_file: Double
   
-  var pgfault: Double = js.native
+  var pgfault: Double
   
-  var pgmajfault: Double = js.native
+  var pgmajfault: Double
   
-  var pgpgin: Double = js.native
+  var pgpgin: Double
   
-  var pgpgout: Double = js.native
+  var pgpgout: Double
   
-  var rss: Double = js.native
+  var rss: Double
   
-  var rss_huge: Double = js.native
+  var rss_huge: Double
   
-  var total_active_anon: Double = js.native
+  var total_active_anon: Double
   
-  var total_active_file: Double = js.native
+  var total_active_file: Double
   
-  var total_cache: Double = js.native
+  var total_cache: Double
   
-  var total_inactive_anon: Double = js.native
+  var total_inactive_anon: Double
   
-  var total_inactive_file: Double = js.native
+  var total_inactive_file: Double
   
-  var total_mapped_file: Double = js.native
+  var total_mapped_file: Double
   
-  var total_pgfault: Double = js.native
+  var total_pgfault: Double
   
-  var total_pgmajfault: Double = js.native
+  var total_pgmajfault: Double
   
-  var total_pgpgin: Double = js.native
+  var total_pgpgin: Double
   
-  var total_pgpgout: Double = js.native
+  var total_pgpgout: Double
   
-  var total_rss: Double = js.native
+  var total_rss: Double
   
-  var total_rss_huge: Double = js.native
+  var total_rss_huge: Double
   
-  var total_unevictable: Double = js.native
+  var total_unevictable: Double
   
-  var total_writeback: Double = js.native
+  var total_writeback: Double
   
-  var unevictable: Double = js.native
+  var unevictable: Double
   
-  var writeback: Double = js.native
+  var writeback: Double
 }
 object Activeanon {
   

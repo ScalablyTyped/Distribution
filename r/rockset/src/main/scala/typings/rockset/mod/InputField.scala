@@ -4,23 +4,21 @@ import typings.rockset.rocksetStrings.PASS
 import typings.rockset.rocksetStrings.SKIP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputField extends StObject {
   
   // The name of a field, parsed as a SQL qualified name
-  var field_name: js.UndefOr[String] = js.native
+  var field_name: js.UndefOr[String] = js.undefined
   
   // Define the behaviour if fieldName is missing or is null
-  var if_missing: js.UndefOr[SKIP | PASS] = js.native
+  var if_missing: js.UndefOr[SKIP | PASS] = js.undefined
   
   // If true, then drop fieldName from the document
-  var is_drop: js.UndefOr[Boolean] = js.native
+  var is_drop: js.UndefOr[Boolean] = js.undefined
   
   // Sql parameter name
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
 }
 object InputField {
   

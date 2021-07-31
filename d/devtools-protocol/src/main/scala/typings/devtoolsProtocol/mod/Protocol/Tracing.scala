@@ -11,30 +11,28 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.recordUntilFull
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tracing {
   
-  @js.native
   trait BufferUsageEvent extends StObject {
     
     /**
       * An approximate number of events in the trace log.
       */
-    var eventCount: js.UndefOr[Double] = js.native
+    var eventCount: js.UndefOr[Double] = js.undefined
     
     /**
       * A number in range [0..1] that indicates the used size of event buffer as a fraction of its
       * total size.
       */
-    var percentFull: js.UndefOr[Double] = js.native
+    var percentFull: js.UndefOr[Double] = js.undefined
     
     /**
       * A number in range [0..1] that indicates the used size of event buffer as a fraction of its
       * total size.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object BufferUsageEvent {
     
@@ -67,15 +65,14 @@ object Tracing {
     }
   }
   
-  @js.native
   trait DataCollectedEvent extends StObject {
     
-    var value: js.Array[_] = js.native
+    var value: js.Array[js.Any]
   }
   object DataCollectedEvent {
     
     @scala.inline
-    def apply(value: js.Array[_]): DataCollectedEvent = {
+    def apply(value: js.Array[js.Any]): DataCollectedEvent = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataCollectedEvent]
     }
@@ -84,20 +81,19 @@ object Tracing {
     implicit class DataCollectedEventMutableBuilder[Self <: DataCollectedEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait GetCategoriesResponse extends StObject {
     
     /**
       * A list of supported tracing categories.
       */
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
   }
   object GetCategoriesResponse {
     
@@ -120,13 +116,12 @@ object Tracing {
   
   type MemoryDumpConfig = StringDictionary[String]
   
-  @js.native
   trait RecordClockSyncMarkerRequest extends StObject {
     
     /**
       * The ID of this clock sync marker
       */
-    var syncId: String = js.native
+    var syncId: String
   }
   object RecordClockSyncMarkerRequest {
     
@@ -144,13 +139,12 @@ object Tracing {
     }
   }
   
-  @js.native
   trait RequestMemoryDumpRequest extends StObject {
     
     /**
       * Enables more deterministic results by forcing garbage collection
       */
-    var deterministic: js.UndefOr[Boolean] = js.native
+    var deterministic: js.UndefOr[Boolean] = js.undefined
   }
   object RequestMemoryDumpRequest {
     
@@ -171,18 +165,17 @@ object Tracing {
     }
   }
   
-  @js.native
   trait RequestMemoryDumpResponse extends StObject {
     
     /**
       * GUID of the resulting global memory dump.
       */
-    var dumpGuid: String = js.native
+    var dumpGuid: String
     
     /**
       * True iff the global memory dump succeeded.
       */
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object RequestMemoryDumpResponse {
     
@@ -203,43 +196,42 @@ object Tracing {
     }
   }
   
-  @js.native
   trait StartRequest extends StObject {
     
     /**
       * If set, the agent will issue bufferUsage events at this interval, specified in milliseconds
       */
-    var bufferUsageReportingInterval: js.UndefOr[Double] = js.native
+    var bufferUsageReportingInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Category/tag filter
       */
-    var categories: js.UndefOr[String] = js.native
+    var categories: js.UndefOr[String] = js.undefined
     
     /**
       * Tracing options
       */
-    var options: js.UndefOr[String] = js.native
+    var options: js.UndefOr[String] = js.undefined
     
     /**
       * Compression format to use. This only applies when using `ReturnAsStream`
       * transfer mode (defaults to `none`)
       */
-    var streamCompression: js.UndefOr[StreamCompression] = js.native
+    var streamCompression: js.UndefOr[StreamCompression] = js.undefined
     
     /**
       * Trace data format to use. This only applies when using `ReturnAsStream`
       * transfer mode (defaults to `json`).
       */
-    var streamFormat: js.UndefOr[StreamFormat] = js.native
+    var streamFormat: js.UndefOr[StreamFormat] = js.undefined
     
-    var traceConfig: js.UndefOr[TraceConfig] = js.native
+    var traceConfig: js.UndefOr[TraceConfig] = js.undefined
     
     /**
       * Whether to report trace events as series of dataCollected events or to save trace to a
       * stream (defaults to `ReportEvents`). (StartRequestTransferMode enum)
       */
-    var transferMode: js.UndefOr[ReportEvents | ReturnAsStream] = js.native
+    var transferMode: js.UndefOr[ReportEvents | ReturnAsStream] = js.undefined
   }
   object StartRequest {
     
@@ -338,48 +330,47 @@ object Tracing {
     def proto: typings.devtoolsProtocol.devtoolsProtocolStrings.proto = "proto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.proto]
   }
   
-  @js.native
   trait TraceConfig extends StObject {
     
     /**
       * Turns on argument filter.
       */
-    var enableArgumentFilter: js.UndefOr[Boolean] = js.native
+    var enableArgumentFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turns on JavaScript stack sampling.
       */
-    var enableSampling: js.UndefOr[Boolean] = js.native
+    var enableSampling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turns on system tracing.
       */
-    var enableSystrace: js.UndefOr[Boolean] = js.native
+    var enableSystrace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Excluded category filters.
       */
-    var excludedCategories: js.UndefOr[js.Array[String]] = js.native
+    var excludedCategories: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Included category filters.
       */
-    var includedCategories: js.UndefOr[js.Array[String]] = js.native
+    var includedCategories: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Configuration for memory dump triggers. Used only when "memory-infra" category is enabled.
       */
-    var memoryDumpConfig: js.UndefOr[MemoryDumpConfig] = js.native
+    var memoryDumpConfig: js.UndefOr[MemoryDumpConfig] = js.undefined
     
     /**
       * Controls how the trace buffer stores data. (TraceConfigRecordMode enum)
       */
-    var recordMode: js.UndefOr[recordUntilFull | recordContinuously | recordAsMuchAsPossible | echoToConsole] = js.native
+    var recordMode: js.UndefOr[recordUntilFull | recordContinuously | recordAsMuchAsPossible | echoToConsole] = js.undefined
     
     /**
       * Configuration to synthesize the delays in tracing.
       */
-    var syntheticDelays: js.UndefOr[js.Array[String]] = js.native
+    var syntheticDelays: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TraceConfig {
     
@@ -473,29 +464,28 @@ object Tracing {
     def RecordUntilFull: recordUntilFull = "recordUntilFull".asInstanceOf[recordUntilFull]
   }
   
-  @js.native
   trait TracingCompleteEvent extends StObject {
     
     /**
       * Indicates whether some trace data is known to have been lost, e.g. because the trace ring
       * buffer wrapped around.
       */
-    var dataLossOccurred: Boolean = js.native
+    var dataLossOccurred: Boolean
     
     /**
       * A handle of the stream that holds resulting trace data.
       */
-    var stream: js.UndefOr[StreamHandle] = js.native
+    var stream: js.UndefOr[StreamHandle] = js.undefined
     
     /**
       * Compression format of returned stream.
       */
-    var streamCompression: js.UndefOr[StreamCompression] = js.native
+    var streamCompression: js.UndefOr[StreamCompression] = js.undefined
     
     /**
       * Trace data format of returned stream.
       */
-    var traceFormat: js.UndefOr[StreamFormat] = js.native
+    var traceFormat: js.UndefOr[StreamFormat] = js.undefined
   }
   object TracingCompleteEvent {
     

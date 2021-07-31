@@ -12,7 +12,7 @@ Minimalist virtual dom library
 | Keywords           | javascript, virtual dom |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 3011 |
+| # downloads        | 2626 |
 | # stars            | 0 |
 
 ## Links

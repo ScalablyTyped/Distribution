@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAliasInput extends StObject {
   
   /**
     * The unique identifier for the fleet alias that you want to retrieve. You can use either the alias ID or ARN value. 
     */
-  var AliasId: AliasIdOrArn = js.native
+  var AliasId: AliasIdOrArn
 }
 object DescribeAliasInput {
   

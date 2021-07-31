@@ -11,38 +11,43 @@ import typings.ethersprojectProviders.web3ProviderMod.JsonRpcFetchFunc
 import typings.ethersprojectWeb.mod.ConnectionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ethersproject/providers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/providers", "AlchemyProvider")
   @js.native
   class AlchemyProvider ()
     extends typings.ethersprojectProviders.alchemyProviderMod.AlchemyProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object AlchemyProvider {
     
-    @JSImport("@ethersproject/providers", "AlchemyProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "AlchemyProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "AlchemyProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: String): ConnectionInfo = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@ethersproject/providers", "AlchemyProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers", "AlchemyProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: js.UndefOr[Networkish], apiKey: js.Any): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers", "AlchemyProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: Networkish): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = js.native
+    @scala.inline
+    def getUrl(network: Network, apiKey: String): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    
+    @scala.inline
+    def getWebSocketProvider(): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Unit, apiKey: js.Any): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish, apiKey: js.Any): typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider]
   }
   
   @JSImport("@ethersproject/providers", "AlchemyWebSocketProvider")
@@ -50,7 +55,8 @@ object mod {
   class AlchemyWebSocketProvider ()
     extends typings.ethersprojectProviders.alchemyProviderMod.AlchemyWebSocketProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   
   @JSImport("@ethersproject/providers", "BaseProvider")
@@ -72,13 +78,15 @@ object mod {
   /* static members */
   object BaseProvider {
     
-    @JSImport("@ethersproject/providers", "BaseProvider.getFormatter")
+    @JSImport("@ethersproject/providers", "BaseProvider")
     @js.native
-    def getFormatter(): typings.ethersprojectProviders.formatterMod.Formatter = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "BaseProvider.getNetwork")
-    @js.native
-    def getNetwork(network: Networkish): Network = js.native
+    @scala.inline
+    def getFormatter(): typings.ethersprojectProviders.formatterMod.Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")().asInstanceOf[typings.ethersprojectProviders.formatterMod.Formatter]
+    
+    @scala.inline
+    def getNetwork(network: Networkish): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetwork")(network.asInstanceOf[js.Any]).asInstanceOf[Network]
   }
   
   @JSImport("@ethersproject/providers", "CloudflareProvider")
@@ -86,21 +94,23 @@ object mod {
   class CloudflareProvider ()
     extends typings.ethersprojectProviders.cloudflareProviderMod.CloudflareProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object CloudflareProvider {
     
-    @JSImport("@ethersproject/providers", "CloudflareProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "CloudflareProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "CloudflareProvider.getUrl")
-    @js.native
-    def getUrl(network: Network): String = js.native
-    @JSImport("@ethersproject/providers", "CloudflareProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): String = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getUrl(network: Network): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@ethersproject/providers", "EtherscanProvider")
@@ -108,7 +118,8 @@ object mod {
   class EtherscanProvider ()
     extends typings.ethersprojectProviders.etherscanProviderMod.EtherscanProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: String) = this()
+    def this(network: Unit, apiKey: String) = this()
+    def this(network: Networkish, apiKey: String) = this()
   }
   
   @JSImport("@ethersproject/providers", "FallbackProvider")
@@ -129,24 +140,23 @@ object mod {
   /* static members */
   object Formatter {
     
-    @JSImport("@ethersproject/providers", "Formatter.allowFalsish")
+    @JSImport("@ethersproject/providers", "Formatter")
     @js.native
-    def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "Formatter.allowNull")
-    @js.native
-    def allowNull(format: FormatFunc): FormatFunc = js.native
-    @JSImport("@ethersproject/providers", "Formatter.allowNull")
-    @js.native
-    def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = js.native
+    @scala.inline
+    def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowFalsish")(format.asInstanceOf[js.Any], replaceValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @JSImport("@ethersproject/providers", "Formatter.arrayOf")
-    @js.native
-    def arrayOf(format: FormatFunc): FormatFunc = js.native
+    @scala.inline
+    def allowNull(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    @scala.inline
+    def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @JSImport("@ethersproject/providers", "Formatter.check")
-    @js.native
-    def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = js.native
+    @scala.inline
+    def arrayOf(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    
+    @scala.inline
+    def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(format.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("@ethersproject/providers", "InfuraProvider")
@@ -154,28 +164,30 @@ object mod {
   class InfuraProvider ()
     extends typings.ethersprojectProviders.infuraProviderMod.InfuraProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object InfuraProvider {
     
-    @JSImport("@ethersproject/providers", "InfuraProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "InfuraProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "InfuraProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@ethersproject/providers", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: js.UndefOr[Networkish], apiKey: js.Any): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: Networkish): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = js.native
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    
+    @scala.inline
+    def getWebSocketProvider(): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Unit, apiKey: js.Any): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish, apiKey: js.Any): typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider]
   }
   
   @JSImport("@ethersproject/providers", "InfuraWebSocketProvider")
@@ -183,7 +195,8 @@ object mod {
   class InfuraWebSocketProvider ()
     extends typings.ethersprojectProviders.infuraProviderMod.InfuraWebSocketProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   
   @JSImport("@ethersproject/providers", "IpcProvider")
@@ -200,23 +213,24 @@ object mod {
     extends typings.ethersprojectProviders.jsonRpcProviderMod.JsonRpcProvider {
     def this(url: String) = this()
     def this(url: ConnectionInfo) = this()
-    def this(url: js.UndefOr[scala.Nothing], network: Networkish) = this()
     def this(url: String, network: Networkish) = this()
+    def this(url: Unit, network: Networkish) = this()
     def this(url: ConnectionInfo, network: Networkish) = this()
   }
   /* static members */
   object JsonRpcProvider {
     
-    @JSImport("@ethersproject/providers", "JsonRpcProvider.defaultUrl")
+    @JSImport("@ethersproject/providers", "JsonRpcProvider")
     @js.native
-    def defaultUrl(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "JsonRpcProvider.hexlifyTransaction")
-    @js.native
-    def hexlifyTransaction(transaction: TransactionRequest): StringDictionary[String] = js.native
-    @JSImport("@ethersproject/providers", "JsonRpcProvider.hexlifyTransaction")
-    @js.native
-    def hexlifyTransaction(transaction: TransactionRequest, allowExtra: StringDictionary[Boolean]): StringDictionary[String] = js.native
+    @scala.inline
+    def defaultUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrl")().asInstanceOf[String]
+    
+    @scala.inline
+    def hexlifyTransaction(transaction: TransactionRequest): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexlifyTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+    @scala.inline
+    def hexlifyTransaction(transaction: TransactionRequest, allowExtra: StringDictionary[Boolean]): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hexlifyTransaction")(transaction.asInstanceOf[js.Any], allowExtra.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
   }
   
   @JSImport("@ethersproject/providers", "JsonRpcSigner")
@@ -244,21 +258,23 @@ object mod {
   class NodesmithProvider ()
     extends typings.ethersprojectProviders.nodesmithProviderMod.NodesmithProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object NodesmithProvider {
     
-    @JSImport("@ethersproject/providers", "NodesmithProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "NodesmithProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "NodesmithProvider.getUrl")
-    @js.native
-    def getUrl(network: Network): String = js.native
-    @JSImport("@ethersproject/providers", "NodesmithProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): String = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getUrl(network: Network): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@ethersproject/providers", "PocketProvider")
@@ -266,18 +282,21 @@ object mod {
   class PocketProvider ()
     extends typings.ethersprojectProviders.pocketProviderMod.PocketProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object PocketProvider {
     
-    @JSImport("@ethersproject/providers", "PocketProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "PocketProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "PocketProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
   }
   
   @JSImport("@ethersproject/providers", "Provider")
@@ -287,9 +306,12 @@ object mod {
   /* static members */
   object Provider {
     
-    @JSImport("@ethersproject/providers", "Provider.isProvider")
+    @JSImport("@ethersproject/providers", "Provider")
     @js.native
-    def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
   }
   
   @JSImport("@ethersproject/providers", "Resolver")
@@ -309,8 +331,8 @@ object mod {
     extends typings.ethersprojectProviders.urlJsonRpcProviderMod.StaticJsonRpcProvider {
     def this(url: String) = this()
     def this(url: ConnectionInfo) = this()
-    def this(url: js.UndefOr[scala.Nothing], network: Networkish) = this()
     def this(url: String, network: Networkish) = this()
+    def this(url: Unit, network: Networkish) = this()
     def this(url: ConnectionInfo, network: Networkish) = this()
   }
   
@@ -319,18 +341,21 @@ object mod {
   abstract class UrlJsonRpcProvider ()
     extends typings.ethersprojectProviders.urlJsonRpcProviderMod.UrlJsonRpcProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
   }
   /* static members */
   object UrlJsonRpcProvider {
     
-    @JSImport("@ethersproject/providers", "UrlJsonRpcProvider.getApiKey")
+    @JSImport("@ethersproject/providers", "UrlJsonRpcProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers", "UrlJsonRpcProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): String | ConnectionInfo = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): String | ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String | ConnectionInfo]
   }
   
   @JSImport("@ethersproject/providers", "Web3Provider")
@@ -353,43 +378,36 @@ object mod {
   /* static members */
   object WebSocketProvider {
     
-    @JSImport("@ethersproject/providers", "WebSocketProvider.defaultUrl")
+    @JSImport("@ethersproject/providers", "WebSocketProvider")
     @js.native
-    def defaultUrl(): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def defaultUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrl")().asInstanceOf[String]
   }
   
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(network: js.UndefOr[scala.Nothing], options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(network: String): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(network: String, options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(network: Network): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
-  @JSImport("@ethersproject/providers", "getDefaultProvider")
-  @js.native
-  def getDefaultProvider(network: Network, options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = js.native
+  @scala.inline
+  def getDefaultProvider(): typings.ethersprojectProviders.baseProviderMod.BaseProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")().asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
+  @scala.inline
+  def getDefaultProvider(network: String): typings.ethersprojectProviders.baseProviderMod.BaseProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")(network.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
+  @scala.inline
+  def getDefaultProvider(network: String, options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")(network.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
+  @scala.inline
+  def getDefaultProvider(network: Unit, options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")(network.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
+  @scala.inline
+  def getDefaultProvider(network: Network): typings.ethersprojectProviders.baseProviderMod.BaseProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")(network.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
+  @scala.inline
+  def getDefaultProvider(network: Network, options: js.Any): typings.ethersprojectProviders.baseProviderMod.BaseProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProvider")(network.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectProviders.baseProviderMod.BaseProvider]
   
-  @JSImport("@ethersproject/providers", "getNetwork")
-  @js.native
-  def getNetwork(network: Networkish): Network = js.native
+  @scala.inline
+  def getNetwork(network: Networkish): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetwork")(network.asInstanceOf[js.Any]).asInstanceOf[Network]
   
-  @JSImport("@ethersproject/providers", "isCommunityResourcable")
-  @js.native
-  def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = js.native
+  @scala.inline
+  def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResourcable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean]
   
-  @JSImport("@ethersproject/providers", "isCommunityResource")
-  @js.native
-  def isCommunityResource(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isCommunityResource(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResource")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/providers", "showThrottleMessage")
-  @js.native
-  def showThrottleMessage(): Unit = js.native
+  @scala.inline
+  def showThrottleMessage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showThrottleMessage")().asInstanceOf[Unit]
 }

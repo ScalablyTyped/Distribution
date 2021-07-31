@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,6 +52,14 @@ class WorkflowTaskOutcome protected ()
   @JSName("name")
   val name_FWorkflowTaskOutcome: String = js.native
   
+  /**
+    * Returns the qualified name of this element, or
+    * null if this element is not a part of the model,
+    * or if it or one of its namespace containers does not have a
+    * valid name.
+    */
+  /* CompleteClass */
+  override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MWorkflowTaskOutcome: String | Null = js.native
 }
@@ -68,9 +75,8 @@ object WorkflowTaskOutcome {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTaskOutcome.create")
-  @js.native
-  def create(model: IModel): WorkflowTaskOutcome = js.native
+  @scala.inline
+  def create(model: IModel): WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WorkflowTaskOutcome]
   
   /**
     * Creates and returns a new WorkflowTaskOutcome instance in the SDK and on the server.
@@ -81,9 +87,8 @@ object WorkflowTaskOutcome {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTaskOutcome.createIn")
-  @js.native
-  def createIn(container: WorkflowTask): WorkflowTaskOutcome = js.native
+  @scala.inline
+  def createIn(container: WorkflowTask): WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WorkflowTaskOutcome]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTaskOutcome.structureTypeName")

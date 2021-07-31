@@ -2,14 +2,12 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a documentation page. A page can contain subpages to represent
   * nested documentation set structure.
   */
-@js.native
 trait SchemaPage extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaPage extends StObject {
     * include {path} ==&amp;#41;&lt;/code&gt; to include content from a
     * Markdown file.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the page. It will be used as an identity of the page to
@@ -30,13 +28,13 @@ trait SchemaPage extends StObject {
     * ==&amp;#41; &lt;/code&gt;&lt;/pre&gt; You can reference `Java` page using
     * Markdown reference link syntax: `Java`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Subpages of this page. The order of subpages specified here will be
     * honored in the generated docset.
     */
-  var subpages: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var subpages: js.UndefOr[js.Array[SchemaPage]] = js.undefined
 }
 object SchemaPage {
   

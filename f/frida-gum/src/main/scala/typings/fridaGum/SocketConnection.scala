@@ -2,18 +2,18 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SocketConnection extends IOStream {
+trait SocketConnection
+  extends StObject
+     with IOStream {
   
   /**
     * Disables the Nagle algorithm if `noDelay` is `true`, otherwise enables it. The Nagle algorithm is enabled
     * by default, so it is only necessary to call this method if you wish to optimize for low delay instead of
     * high throughput.
     */
-  def setNoDelay(noDelay: Boolean): js.Promise[Unit] = js.native
+  def setNoDelay(noDelay: Boolean): js.Promise[Unit]
 }
 object SocketConnection {
   

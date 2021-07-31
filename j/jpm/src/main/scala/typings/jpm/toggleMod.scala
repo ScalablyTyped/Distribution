@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.anon.BadgeColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object toggleMod {
   
-  @JSImport("sdk/ui/button/toggle", "ToggleButton")
+  @JSImport("sdk/ui/button/toggle", JSImport.Namespace)
   @js.native
-  def ToggleButton(options: BadgeColor): typings.jpm.FFAddonSDK.ToggleButton = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ToggleButton(options: BadgeColor): typings.jpm.FFAddonSDK.ToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ToggleButton]
 }

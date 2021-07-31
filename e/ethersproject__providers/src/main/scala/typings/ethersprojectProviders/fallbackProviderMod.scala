@@ -5,7 +5,6 @@ import typings.ethersprojectAbstractProvider.mod.Provider
 import typings.ethersprojectProviders.baseProviderMod.BaseProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fallbackProviderMod {
@@ -18,23 +17,22 @@ object fallbackProviderMod {
     
     var _highestBlockNumber: Double = js.native
     
-    def perform(method: String, params: StringDictionary[js.Any]): js.Promise[_] = js.native
+    def perform(method: String, params: StringDictionary[js.Any]): js.Promise[js.Any] = js.native
     
     val providerConfigs: js.Array[FallbackProviderConfig] = js.native
     
     val quorum: Double = js.native
   }
   
-  @js.native
   trait FallbackProviderConfig extends StObject {
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var provider: Provider = js.native
+    var provider: Provider
     
-    var stallTimeout: js.UndefOr[Double] = js.native
+    var stallTimeout: js.UndefOr[Double] = js.undefined
     
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object FallbackProviderConfig {
     

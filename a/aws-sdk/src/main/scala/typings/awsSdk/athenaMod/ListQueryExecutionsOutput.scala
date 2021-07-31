@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueryExecutionsOutput extends StObject {
   
   /**
     * A token to be used by the next request if this request is truncated.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The unique IDs of each query execution as an array of strings.
     */
-  var QueryExecutionIds: js.UndefOr[QueryExecutionIdList] = js.native
+  var QueryExecutionIds: js.UndefOr[QueryExecutionIdList] = js.undefined
 }
 object ListQueryExecutionsOutput {
   

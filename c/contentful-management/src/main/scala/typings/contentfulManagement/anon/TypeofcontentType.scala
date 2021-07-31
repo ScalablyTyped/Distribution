@@ -6,15 +6,13 @@ import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.contentTypeMod.ContentTypeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofcontentType extends StObject {
   
-  def wrapContentType(http: AxiosInstance, data: ContentTypeProps): typings.contentfulManagement.contentTypeMod.ContentType = js.native
+  def wrapContentType(http: AxiosInstance, data: ContentTypeProps): typings.contentfulManagement.contentTypeMod.ContentType
   
-  def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[typings.contentfulManagement.contentTypeMod.ContentType, ContentTypeProps] = js.native
+  def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[typings.contentfulManagement.contentTypeMod.ContentType, ContentTypeProps]
 }
 object TypeofcontentType {
   

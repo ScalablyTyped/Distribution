@@ -2,41 +2,39 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainSummary extends StObject {
   
   /**
     *  The ARN of the domain. 
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  A timestamp that contains the date and time the domain was created. 
     */
-  var createdTime: js.UndefOr[Timestamp] = js.native
+  var createdTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The key used to encrypt the domain. 
     */
-  var encryptionKey: js.UndefOr[Arn] = js.native
+  var encryptionKey: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The name of the domain. 
     */
-  var name: js.UndefOr[DomainName] = js.native
+  var name: js.UndefOr[DomainName] = js.undefined
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var owner: js.UndefOr[AccountId] = js.native
+  var owner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  A string that contains the status of the domain. The valid values are:     Active     Deleted   
     */
-  var status: js.UndefOr[DomainStatus] = js.native
+  var status: js.UndefOr[DomainStatus] = js.undefined
 }
 object DomainSummary {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStorediSCSIVolumeOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the volume target, which includes the iSCSI name that initiators can use to connect to the target.
     */
-  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.native
+  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the configured volume.
     */
-  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.native
+  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.undefined
   
   /**
     * The size of the volume in bytes.
     */
-  var VolumeSizeInBytes: js.UndefOr[long] = js.native
+  var VolumeSizeInBytes: js.UndefOr[long] = js.undefined
 }
 object CreateStorediSCSIVolumeOutput {
   

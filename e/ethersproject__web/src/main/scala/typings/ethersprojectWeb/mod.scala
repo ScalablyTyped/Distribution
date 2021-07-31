@@ -6,122 +6,106 @@ import typings.ethersprojectWeb.ethersprojectWebStrings.poll
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/web", "_fetchData")
+  @JSImport("@ethersproject/web", JSImport.Namespace)
   @js.native
-  def fetchData[T](connection: String): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fetchData[T](connection: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def fetchData[T](
     connection: String,
-    body: js.UndefOr[scala.Nothing],
+    body: Unit,
     processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
-  def fetchData[T](connection: String, body: Uint8Array): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def fetchData[T](connection: String, body: Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def fetchData[T](
     connection: String,
     body: Uint8Array,
     processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
-  def fetchData[T](connection: ConnectionInfo): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def fetchData[T](connection: ConnectionInfo): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def fetchData[T](
     connection: ConnectionInfo,
-    body: js.UndefOr[scala.Nothing],
+    body: Unit,
     processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
-  def fetchData[T](connection: ConnectionInfo, body: Uint8Array): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "_fetchData")
-  @js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def fetchData[T](connection: ConnectionInfo, body: Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def fetchData[T](
     connection: ConnectionInfo,
     body: Uint8Array,
     processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
-  def fetchJson(connection: String): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
-  def fetchJson(
-    connection: String,
-    json: js.UndefOr[scala.Nothing],
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, _]
-  ): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
-  def fetchJson(connection: String, json: String): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
+  @scala.inline
+  def fetchJson(connection: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fetchJson(connection: String, json: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def fetchJson(
     connection: String,
     json: String,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, _]
-  ): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
-  def fetchJson(connection: ConnectionInfo): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
+    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def fetchJson(
-    connection: ConnectionInfo,
-    json: js.UndefOr[scala.Nothing],
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, _]
-  ): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
-  def fetchJson(connection: ConnectionInfo, json: String): js.Promise[_] = js.native
-  @JSImport("@ethersproject/web", "fetchJson")
-  @js.native
+    connection: String,
+    json: Unit,
+    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fetchJson(connection: ConnectionInfo): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fetchJson(connection: ConnectionInfo, json: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def fetchJson(
     connection: ConnectionInfo,
     json: String,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, _]
-  ): js.Promise[_] = js.native
+    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fetchJson(
+    connection: ConnectionInfo,
+    json: Unit,
+    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@ethersproject/web", "poll")
-  @js.native
-  def poll[T](func: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("@ethersproject/web", "poll")
-  @js.native
-  def poll[T](func: js.Function0[js.Promise[T]], options: PollOptions): js.Promise[T] = js.native
+  @scala.inline
+  def poll[T](func: js.Function0[js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def poll[T](func: js.Function0[js.Promise[T]], options: PollOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("poll")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @js.native
   trait ConnectionInfo extends StObject {
     
-    var allowGzip: js.UndefOr[Boolean] = js.native
+    var allowGzip: js.UndefOr[Boolean] = js.undefined
     
-    var allowInsecureAuthentication: js.UndefOr[Boolean] = js.native
+    var allowInsecureAuthentication: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String | Double]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var throttleCallback: js.UndefOr[js.Function2[/* attempt */ Double, /* url */ String, js.Promise[Boolean]]] = js.native
+    var throttleCallback: js.UndefOr[js.Function2[/* attempt */ Double, /* url */ String, js.Promise[Boolean]]] = js.undefined
     
-    var throttleLimit: js.UndefOr[Double] = js.native
+    var throttleLimit: js.UndefOr[Double] = js.undefined
     
-    var throttleSlotInterval: js.UndefOr[Double] = js.native
+    var throttleSlotInterval: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object ConnectionInfo {
     
@@ -193,12 +177,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FetchJsonResponse extends StObject {
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object FetchJsonResponse {
     
@@ -219,11 +202,10 @@ object mod {
     }
   }
   
-  @js.native
   trait OnceBlockable extends StObject {
     
     @JSName("once")
-    def once_block(eventName: block, handler: js.Function0[Unit]): Unit = js.native
+    def once_block(eventName: block, handler: js.Function0[Unit]): Unit
   }
   object OnceBlockable {
     
@@ -241,11 +223,10 @@ object mod {
     }
   }
   
-  @js.native
   trait OncePollable extends StObject {
     
     @JSName("once")
-    def once_poll(eventName: poll, handler: js.Function0[Unit]): Unit = js.native
+    def once_poll(eventName: poll, handler: js.Function0[Unit]): Unit
   }
   object OncePollable {
     
@@ -263,22 +244,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PollOptions extends StObject {
     
-    var ceiling: js.UndefOr[Double] = js.native
+    var ceiling: js.UndefOr[Double] = js.undefined
     
-    var floor: js.UndefOr[Double] = js.native
+    var floor: js.UndefOr[Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var onceBlock: js.UndefOr[OnceBlockable] = js.native
+    var onceBlock: js.UndefOr[OnceBlockable] = js.undefined
     
-    var oncePoll: js.UndefOr[OncePollable] = js.native
+    var oncePoll: js.UndefOr[OncePollable] = js.undefined
     
-    var retryLimit: js.UndefOr[Double] = js.native
+    var retryLimit: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PollOptions {
     

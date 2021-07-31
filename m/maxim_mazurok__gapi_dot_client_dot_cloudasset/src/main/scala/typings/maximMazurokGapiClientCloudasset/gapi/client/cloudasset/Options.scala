@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait Options extends StObject {
     * user A potentially has access to the GCP folder F. And those advanced analysis results will be included in AnalyzeIamPolicyResponse.service_account_impersonation_analysis. Default
     * is false.
     */
-  var analyzeServiceAccountImpersonation: js.UndefOr[Boolean] = js.native
+  var analyzeServiceAccountImpersonation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If true, the identities section of the result will expand any Google groups appearing in an IAM policy binding. If IamPolicyAnalysisQuery.identity_selector is specified,
     * the identity in the result will be determined by the selector, and this flag is not allowed to set. Default is false.
     */
-  var expandGroups: js.UndefOr[Boolean] = js.native
+  var expandGroups: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If true and IamPolicyAnalysisQuery.resource_selector is not specified, the resource section of the result will expand any resource attached to an IAM policy to include
@@ -34,19 +32,19 @@ trait Options extends StObject {
     * cannot be used together with this option. For example, if the request analyzes for which users have permission P on a GCP project with this option enabled, the results will include
     * all users who have permission P on that project or any lower resource. Default is false.
     */
-  var expandResources: js.UndefOr[Boolean] = js.native
+  var expandResources: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If true, the access section of result will expand any roles appearing in IAM policy bindings to include their permissions. If IamPolicyAnalysisQuery.access_selector is
     * specified, the access section of the result will be determined by the selector, and this flag is not allowed to set. Default is false.
     */
-  var expandRoles: js.UndefOr[Boolean] = js.native
+  var expandRoles: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. If true, the result will output group identity edges, starting from the binding's group members, to any expanded identities. Default is false. */
-  var outputGroupEdges: js.UndefOr[Boolean] = js.native
+  var outputGroupEdges: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. If true, the result will output resource edges, starting from the policy attached resource, to any expanded resources. Default is false. */
-  var outputResourceEdges: js.UndefOr[Boolean] = js.native
+  var outputResourceEdges: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

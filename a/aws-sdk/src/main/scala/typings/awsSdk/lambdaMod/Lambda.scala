@@ -11,7 +11,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -46,7 +45,7 @@ trait Lambda extends Service {
   ): Request[AddPermissionResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Lambda: ConfigBase with ClientConfiguration = js.native
+  var config_Lambda: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an alias for a Lambda function version. Use aliases to provide clients with a function identifier that you can update to invoke a different version. You can also map an alias to split invocation requests between two versions. Use the RoutingConfig parameter to specify a second version and the percentage of invocation requests that it receives.

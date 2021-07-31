@@ -9,94 +9,92 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNavigationStack.anon.TintColorString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackHeaderLeftButtonProps extends StObject {
   
   /**
     * Accessibility label for the button for screen readers.
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Whether label font should scale to respect Text Size accessibility settings.
     */
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Function which returns a React Element to display custom image in header's back button.
     */
-  var backImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.native
+  var backImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   /**
     * Whether it's possible to navigate back in stack.
     */
-  var canGoBack: js.UndefOr[Boolean] = js.native
+  var canGoBack: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the button is disabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Label text for the button. Usually the title of the previous screen.
     * By default, this is only shown on iOS.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Style object for the label.
     */
-  var labelStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.native
+  var labelStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.undefined
   
   /**
     * Whether the label text is visible.
     * Defaults to `true` on iOS and `false` on Android.
     */
-  var labelVisible: js.UndefOr[Boolean] = js.native
+  var labelVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Callback to trigger when the size of the label changes.
     */
-  var onLabelLayout: js.UndefOr[js.Function1[/* e */ LayoutChangeEvent, Unit]] = js.native
+  var onLabelLayout: js.UndefOr[js.Function1[/* e */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     * Callback to call when the button is pressed.
     * By default, this triggers `goBack`.
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Color for material ripple (Android >= 5.0 only).
     */
-  var pressColorAndroid: js.UndefOr[String] = js.native
+  var pressColorAndroid: js.UndefOr[String] = js.undefined
   
   /**
     * Layout of the screen.
     */
-  var screenLayout: js.UndefOr[Layout] = js.native
+  var screenLayout: js.UndefOr[Layout] = js.undefined
   
   /**
     * Style object for the button.
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Tint color for the header.
     */
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
   /**
     * Layout of the title element in the header.
     */
-  var titleLayout: js.UndefOr[Layout] = js.native
+  var titleLayout: js.UndefOr[Layout] = js.undefined
   
   /**
     * Label text to show when there isn't enough space for the full label.
     */
-  var truncatedLabel: js.UndefOr[String] = js.native
+  var truncatedLabel: js.UndefOr[String] = js.undefined
 }
 object StackHeaderLeftButtonProps {
   

@@ -10,9 +10,9 @@ handle circular references when stringifying and parsing
 | ------------------ | :-------------: |
 | Full name          | jsan |
 | Keywords           | json |
-| # releases         | 4 |
-| # dependents       | 38 |
-| # downloads        | 2955458 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 2777323 |
 | # stars            | 1 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAgentsRequest extends StObject {
   
   /**
     * The maximum number of agents to list.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin the next list of agents.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
 }
 object ListAgentsRequest {
   

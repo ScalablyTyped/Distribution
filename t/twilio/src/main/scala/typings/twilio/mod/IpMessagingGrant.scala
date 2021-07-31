@@ -2,12 +2,13 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "IpMessagingGrant")
 @js.native
-class IpMessagingGrant () extends Grant {
+class IpMessagingGrant ()
+  extends StObject
+     with Grant {
   def this(options: IpMessagingGrantOptions) = this()
   
   var deploymentRoleSid: String = js.native
@@ -19,4 +20,7 @@ class IpMessagingGrant () extends Grant {
   var pushCredentialSid: String = js.native
   
   var serviceSid: String = js.native
+  
+  /* CompleteClass */
+  override def toPayload(): GrantPayload = js.native
 }

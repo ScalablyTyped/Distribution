@@ -6,26 +6,25 @@ import typings.std.SVGGElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-simple-slider", "sliderBottom")
+  @JSImport("d3-simple-slider", JSImport.Namespace)
   @js.native
-  def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-simple-slider", "sliderLeft")
-  @js.native
-  def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  @scala.inline
+  def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
-  @JSImport("d3-simple-slider", "sliderRight")
-  @js.native
-  def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  @scala.inline
+  def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
-  @JSImport("d3-simple-slider", "sliderTop")
-  @js.native
-  def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  @scala.inline
+  def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
+  
+  @scala.inline
+  def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
   @js.native
   trait Slider[Domain] extends StObject {
@@ -36,8 +35,8 @@ object mod {
       *
       * @param context A [selection](https://github.com/d3/d3-selection) of SVG containers (either SVG or G elements) or a corresponding [transition](https://github.com/d3/d3-transition).
       */
-    def apply(context: Selection_[SVGGElement | SVGSVGElement, _, _, _]): Unit = js.native
-    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, _]): Unit = js.native
+    def apply(context: Selection_[SVGGElement | SVGSVGElement, js.Any, js.Any, js.Any]): Unit = js.native
+    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, js.Any]): Unit = js.native
     
     /**
       * Gets the current domain underlying the slider.

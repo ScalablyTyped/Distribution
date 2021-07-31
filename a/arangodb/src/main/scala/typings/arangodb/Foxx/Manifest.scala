@@ -4,49 +4,47 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Manifest extends StObject {
   
-  var author: String = js.native
+  var author: String
   
-  var configuration: js.UndefOr[StringDictionary[ConfigurationDefinition]] = js.native
+  var configuration: js.UndefOr[StringDictionary[ConfigurationDefinition]] = js.undefined
   
-  var contributors: js.UndefOr[js.Array[_]] = js.native
+  var contributors: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var defaultDocument: js.UndefOr[String] = js.native
+  var defaultDocument: js.UndefOr[String] = js.undefined
   
-  var dependencies: js.UndefOr[StringDictionary[DependencyDefinition]] = js.native
+  var dependencies: js.UndefOr[StringDictionary[DependencyDefinition]] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var engines: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var engines: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var files: js.UndefOr[StringDictionary[AssetDefinition]] = js.native
+  var files: js.UndefOr[StringDictionary[AssetDefinition]] = js.undefined
   
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
-  var lib: String = js.native
+  var lib: String
   
-  var license: js.UndefOr[String] = js.native
+  var license: js.UndefOr[String] = js.undefined
   
-  var main: js.UndefOr[String] = js.native
+  var main: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var provides: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var provides: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var repository: js.UndefOr[Type] = js.native
+  var repository: js.UndefOr[Type] = js.undefined
   
-  var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var tests: js.UndefOr[js.Array[String]] = js.native
+  var tests: js.UndefOr[js.Array[String]] = js.undefined
   
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Manifest {
   
@@ -69,7 +67,7 @@ object Manifest {
     def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setContributors(value: js.Array[_]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
+    def setContributors(value: js.Array[js.Any]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)

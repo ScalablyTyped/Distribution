@@ -6,15 +6,13 @@ import typings.antd.antdStrings.small
 import typings.antd.generatePickerMod.PickerLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var locale: js.UndefOr[PickerLocale] = js.native
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   
-  var size: js.UndefOr[large | default | small] = js.native
+  var size: js.UndefOr[large | default | small] = js.undefined
 }
 object Locale {
   

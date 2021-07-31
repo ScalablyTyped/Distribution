@@ -3,27 +3,28 @@ package typings.antd
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paragraphMod {
   
-  @JSImport("antd/lib/skeleton/Paragraph", JSImport.Default)
+  @JSImport("antd/lib/skeleton/Paragraph", JSImport.Namespace)
   @js.native
-  def default(props: SkeletonParagraphProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: SkeletonParagraphProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait SkeletonParagraphProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var width: js.UndefOr[widthUnit | js.Array[widthUnit]] = js.native
+    var width: js.UndefOr[widthUnit | js.Array[widthUnit]] = js.undefined
   }
   object SkeletonParagraphProps {
     

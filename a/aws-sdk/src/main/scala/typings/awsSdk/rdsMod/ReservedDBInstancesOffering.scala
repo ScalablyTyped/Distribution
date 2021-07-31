@@ -2,61 +2,59 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedDBInstancesOffering extends StObject {
   
   /**
     * The currency code for the reserved DB instance offering.
     */
-  var CurrencyCode: js.UndefOr[String] = js.native
+  var CurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The DB instance class for the reserved DB instance.
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * The duration of the offering in seconds.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The fixed price charged for this offering.
     */
-  var FixedPrice: js.UndefOr[Double] = js.native
+  var FixedPrice: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates if the offering applies to Multi-AZ deployments.
     */
-  var MultiAZ: js.UndefOr[Boolean] = js.native
+  var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The offering type.
     */
-  var OfferingType: js.UndefOr[String] = js.native
+  var OfferingType: js.UndefOr[String] = js.undefined
   
   /**
     * The database engine used by the offering.
     */
-  var ProductDescription: js.UndefOr[String] = js.native
+  var ProductDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The recurring price charged to run this reserved DB instance.
     */
-  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.native
+  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.undefined
   
   /**
     * The offering identifier.
     */
-  var ReservedDBInstancesOfferingId: js.UndefOr[String] = js.native
+  var ReservedDBInstancesOfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * The hourly price charged for this offering.
     */
-  var UsagePrice: js.UndefOr[Double] = js.native
+  var UsagePrice: js.UndefOr[Double] = js.undefined
 }
 object ReservedDBInstancesOffering {
   

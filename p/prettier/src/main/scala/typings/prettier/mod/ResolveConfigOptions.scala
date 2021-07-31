@@ -2,16 +2,14 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveConfigOptions extends StObject {
   
   /**
     * Pass directly the path of the config file if you don't wish to search for it.
     */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
   /**
     * If set to `true` and an `.editorconfig` file is in your project,
@@ -22,12 +20,12 @@ trait ResolveConfigOptions extends StObject {
     * - indent_size/tab_width
     * - max_line_length
     */
-  var editorconfig: js.UndefOr[Boolean] = js.native
+  var editorconfig: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to `false`, all caching will be bypassed.
     */
-  var useCache: js.UndefOr[Boolean] = js.native
+  var useCache: js.UndefOr[Boolean] = js.undefined
 }
 object ResolveConfigOptions {
   

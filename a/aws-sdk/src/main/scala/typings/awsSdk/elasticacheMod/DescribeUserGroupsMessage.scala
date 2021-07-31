@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserGroupsMessage extends StObject {
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. &gt;
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. 
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The ID of the user group.
     */
-  var UserGroupId: js.UndefOr[String] = js.native
+  var UserGroupId: js.UndefOr[String] = js.undefined
 }
 object DescribeUserGroupsMessage {
   

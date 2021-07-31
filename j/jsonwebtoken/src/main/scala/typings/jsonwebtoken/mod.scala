@@ -9,20 +9,30 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("jsonwebtoken", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("jsonwebtoken", "JsonWebTokenError")
   @js.native
   class JsonWebTokenError protected ()
-    extends Error
+    extends StObject
+       with Error
        with VerifyErrors {
     def this(message: String) = this()
     def this(message: String, error: Error) = this()
     
     var inner: Error = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -43,104 +53,68 @@ object mod {
     var expiredAt: Date = js.native
   }
   
-  @JSImport("jsonwebtoken", "decode")
-  @js.native
-  def decode(token: String): Null | StringDictionary[js.Any] | String = js.native
-  @JSImport("jsonwebtoken", "decode")
-  @js.native
-  def decode(token: String, options: DecodeOptionsjsontrue): Null | StringDictionary[js.Any] = js.native
-  @JSImport("jsonwebtoken", "decode")
-  @js.native
-  def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = js.native
+  @scala.inline
+  def decode(token: String): Null | StringDictionary[js.Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[js.Any] | String]
+  @scala.inline
+  def decode(token: String, options: DecodeOptionsjsontrue): Null | StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any]]
+  @scala.inline
+  def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any] | String]
   
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, callback: SignCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): String = js.native
-  @JSImport("jsonwebtoken", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = js.native
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(
-    token: String,
-    secretOrPublicKey: GetPublicKeyOrSecret,
-    options: js.UndefOr[scala.Nothing],
-    callback: VerifyCallback
-  ): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def verify(
     token: String,
     secretOrPublicKey: GetPublicKeyOrSecret,
     options: VerifyOptions,
     callback: VerifyCallback
-  ): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: Secret): js.Object | String = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(
-    token: String,
-    secretOrPublicKey: Secret,
-    options: js.UndefOr[scala.Nothing],
-    callback: VerifyCallback
-  ): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): js.Object | String = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions, callback: VerifyCallback): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify_Unit(token: String, secretOrPublicKey: Secret): Unit = js.native
-  @JSImport("jsonwebtoken", "verify")
-  @js.native
-  def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Secret): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Secret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def verify_Unit(token: String, secretOrPublicKey: Secret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonwebtoken.jsonwebtokenStrings.HS256
@@ -200,12 +174,11 @@ object mod {
     def none: typings.jsonwebtoken.jsonwebtokenStrings.none = "none".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.none]
   }
   
-  @js.native
   trait DecodeOptions extends StObject {
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeOptions {
     
@@ -234,20 +207,19 @@ object mod {
   
   type GetPublicKeyOrSecret = js.Function2[/* header */ JwtHeader, /* callback */ SigningKeyCallback, Unit]
   
-  @js.native
   trait JwtHeader extends StObject {
     
-    var alg: String = js.native
+    var alg: String
     
-    var jku: js.UndefOr[String] = js.native
+    var jku: js.UndefOr[String] = js.undefined
     
-    var kid: js.UndefOr[String] = js.native
+    var kid: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
     
-    var x5t: js.UndefOr[String] = js.native
+    var x5t: js.UndefOr[String] = js.undefined
     
-    var x5u: js.UndefOr[String] = js.native
+    var x5u: js.UndefOr[String] = js.undefined
   }
   object JwtHeader {
     
@@ -299,7 +271,6 @@ object mod {
   
   type SignCallback = js.Function2[/* err */ Error | Null, /* encoded */ js.UndefOr[String], Unit]
   
-  @js.native
   trait SignOptions extends StObject {
     
     /**
@@ -315,31 +286,31 @@ object mod {
       * - ES512:    ECDSA using P-521 curve and SHA-512 hash algorithm
       * - none:     No digital signature or MAC value included
       */
-    var algorithm: js.UndefOr[Algorithm] = js.native
+    var algorithm: js.UndefOr[Algorithm] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
-    
-    /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
-    var expiresIn: js.UndefOr[String | Double] = js.native
-    
-    var header: js.UndefOr[js.Object] = js.native
-    
-    var issuer: js.UndefOr[String] = js.native
-    
-    var jwtid: js.UndefOr[String] = js.native
-    
-    var keyid: js.UndefOr[String] = js.native
-    
-    var mutatePayload: js.UndefOr[Boolean] = js.native
-    
-    var noTimestamp: js.UndefOr[Boolean] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
-    var notBefore: js.UndefOr[String | Double] = js.native
+    var expiresIn: js.UndefOr[String | Double] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
+    
+    var issuer: js.UndefOr[String] = js.undefined
+    
+    var jwtid: js.UndefOr[String] = js.undefined
+    
+    var keyid: js.UndefOr[String] = js.undefined
+    
+    var mutatePayload: js.UndefOr[Boolean] = js.undefined
+    
+    var noTimestamp: js.UndefOr[Boolean] = js.undefined
+    
+    /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
+    var notBefore: js.UndefOr[String | Double] = js.undefined
+    
+    var subject: js.UndefOr[String] = js.undefined
   }
   object SignOptions {
     
@@ -440,41 +411,40 @@ object mod {
   */
   trait VerifyErrors extends StObject
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[Algorithm]] = js.native
+    var algorithms: js.UndefOr[js.Array[Algorithm]] = js.undefined
     
-    var audience: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var audience: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
-    var clockTimestamp: js.UndefOr[Double] = js.native
+    var clockTimestamp: js.UndefOr[Double] = js.undefined
     
-    var clockTolerance: js.UndefOr[Double] = js.native
+    var clockTolerance: js.UndefOr[Double] = js.undefined
     
     /** return an object with the decoded `{ payload, header, signature }` instead of only the usual content of the payload. */
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreExpiration: js.UndefOr[Boolean] = js.native
+    var ignoreExpiration: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNotBefore: js.UndefOr[Boolean] = js.native
+    var ignoreNotBefore: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: js.UndefOr[String | js.Array[String]] = js.native
+    var issuer: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var jwtid: js.UndefOr[String] = js.native
+    var jwtid: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated
       * Max age of token
       */
-    var maxAge: js.UndefOr[String] = js.native
+    var maxAge: js.UndefOr[String] = js.undefined
     
     /**
       * If you want to check `nonce` claim, provide a string value here.
       * It is used on Open ID for the ID Tokens. ([Open ID implementation notes](https://openid.net/specs/openid-connect-core-1_0.html#NonceNotes))
       */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object VerifyOptions {
     

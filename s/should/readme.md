@@ -11,8 +11,8 @@ test framework agnostic BDD-style assertions
 | Full name          | should |
 | Keywords           | test, bdd, assert, should |
 | # releases         | 1 |
-| # dependents       | 967 |
-| # downloads        | 24260338 |
+| # dependents       | 971 |
+| # downloads        | 26972277 |
 | # stars            | 132 |
 
 ## Links

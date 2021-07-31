@@ -3,47 +3,45 @@ package typings.xlsx.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellObject extends StObject {
   
   /** Range of enclosing array if formula is array formula (if applicable) */
-  var F: js.UndefOr[String] = js.native
+  var F: js.UndefOr[String] = js.undefined
   
   /** Comments associated with the cell */
-  var c: js.UndefOr[Comments] = js.native
+  var c: js.UndefOr[Comments] = js.undefined
   
   /** Cell formula (if applicable) */
-  var f: js.UndefOr[String] = js.native
+  var f: js.UndefOr[String] = js.undefined
   
   /** HTML rendering of the rich text (if applicable) */
-  var h: js.UndefOr[String] = js.native
+  var h: js.UndefOr[String] = js.undefined
   
   /** Cell hyperlink object (.Target holds link, .tooltip is tooltip) */
-  var l: js.UndefOr[Hyperlink] = js.native
+  var l: js.UndefOr[Hyperlink] = js.undefined
   
   /** Rich text encoding (if applicable) */
-  var r: js.UndefOr[js.Any] = js.native
+  var r: js.UndefOr[js.Any] = js.undefined
   
   /** The style/theme of the cell (if applicable) */
-  var s: js.UndefOr[js.Any] = js.native
+  var s: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The Excel Data Type of the cell.
     * b Boolean, n Number, e Error, s String, d Date, z Empty
     */
-  var t: ExcelDataType = js.native
+  var t: ExcelDataType
   
   /** The raw value of the cell.  Can be omitted if a formula is specified */
-  var v: js.UndefOr[String | Double | Boolean | Date] = js.native
+  var v: js.UndefOr[String | Double | Boolean | Date] = js.undefined
   
   /** Formatted text (if applicable) */
-  var w: js.UndefOr[String] = js.native
+  var w: js.UndefOr[String] = js.undefined
   
   /** Number format string associated with the cell (if requested) */
-  var z: js.UndefOr[NumberFormat] = js.native
+  var z: js.UndefOr[NumberFormat] = js.undefined
 }
 object CellObject {
   

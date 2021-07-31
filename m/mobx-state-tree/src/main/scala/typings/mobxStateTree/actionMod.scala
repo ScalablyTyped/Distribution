@@ -5,49 +5,49 @@ import typings.mobxStateTree.nodeUtilsMod.IAnyStateTreeNode
 import typings.mobxStateTree.utilsMod.IDisposer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionMod {
   
-  @JSImport("mobx-state-tree/dist/core/action", "addMiddleware")
+  @JSImport("mobx-state-tree/dist/core/action", JSImport.Namespace)
   @js.native
-  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler): IDisposer = js.native
-  @JSImport("mobx-state-tree/dist/core/action", "addMiddleware")
-  @js.native
-  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler, includeHooks: Boolean): IDisposer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/core/action", "decorate")
-  @js.native
-  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T): T = js.native
-  @JSImport("mobx-state-tree/dist/core/action", "decorate")
-  @js.native
-  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T, includeHooks: Boolean): T = js.native
+  @scala.inline
+  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  @scala.inline
+  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler, includeHooks: Boolean): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @js.native
-  trait IMiddlewareEvent extends IActionContext {
+  @scala.inline
+  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T, includeHooks: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  trait IMiddlewareEvent
+    extends StObject
+       with IActionContext {
     
     /** Id of all events, from root until current (excluding current) */
-    val allParentIds: js.Array[Double] = js.native
+    val allParentIds: js.Array[Double]
     
     /** Parent event object */
-    val parentEvent: js.UndefOr[IMiddlewareEvent] = js.native
+    val parentEvent: js.UndefOr[IMiddlewareEvent] = js.undefined
     
     /** Parent event unique id */
-    val parentId: Double = js.native
+    val parentId: Double
     
     /** Root event unique id */
-    val rootId: Double = js.native
+    val rootId: Double
     
     /** Event type */
-    val `type`: IMiddlewareEventType = js.native
+    val `type`: IMiddlewareEventType
   }
   object IMiddlewareEvent {
     
     @scala.inline
     def apply(
       allParentIds: js.Array[Double],
-      args: js.Array[_],
+      args: js.Array[js.Any],
       context: IAnyStateTreeNode,
       id: Double,
       name: String,

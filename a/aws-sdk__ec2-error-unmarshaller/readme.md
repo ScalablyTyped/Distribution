@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/ec2-error-unmarshaller |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 1417 |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 2397 |
 | # stars            | 0 |
 
 ## Links

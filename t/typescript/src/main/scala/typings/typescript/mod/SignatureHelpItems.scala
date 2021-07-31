@@ -2,24 +2,22 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a set of signature help items, and the preferred item that should be selected.
   */
-@js.native
 trait SignatureHelpItems extends StObject {
   
-  var applicableSpan: TextSpan = js.native
+  var applicableSpan: TextSpan
   
-  var argumentCount: Double = js.native
+  var argumentCount: Double
   
-  var argumentIndex: Double = js.native
+  var argumentIndex: Double
   
-  var items: js.Array[SignatureHelpItem] = js.native
+  var items: js.Array[SignatureHelpItem]
   
-  var selectedItemIndex: Double = js.native
+  var selectedItemIndex: Double
 }
 object SignatureHelpItems {
   

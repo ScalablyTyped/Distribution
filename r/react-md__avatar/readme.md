@@ -10,9 +10,9 @@ This package is used to avatars which are used to symbolize people or objects.
 | ------------------ | :-------------: |
 | Full name          | @react-md/avatar |
 | Keywords           | react-md, material design, react, avatar, placeholder, component, components |
-| # releases         | 31 |
+| # releases         | 38 |
 | # dependents       | 2 |
-| # downloads        | 8006 |
+| # downloads        | 22712 |
 | # stars            | 0 |
 
 ## Links

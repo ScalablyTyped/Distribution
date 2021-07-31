@@ -11,14 +11,14 @@ A cryptographically secure random generator for real English words. Contains 370
 | Full name          | rword |
 | Keywords           | random, randomly, generate, generated, generator, words, word, english, real, cryptographically secure, csprng, cprng |
 | # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 19545 |
+| # dependents       | 4 |
+| # downloads        | 19810 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Xyfir/rword#readme)
-- [Bugs](https://github.com/Xyfir/rword/issues)
-- [Repository](https://github.com/Xyfir/rword)
+- [Homepage](https://github.com/xyfir/rword#readme)
+- [Bugs](https://github.com/xyfir/rword/issues)
+- [Repository](https://github.com/xyfir/rword)
 - [Npm](https://www.npmjs.com/package/rword)
     
 

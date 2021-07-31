@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendServiceCdnPolicy extends StObject {
   
   /** The CacheKeyPolicy for this CdnPolicy. */
-  var cacheKeyPolicy: js.UndefOr[CacheKeyPolicy] = js.native
+  var cacheKeyPolicy: js.UndefOr[CacheKeyPolicy] = js.undefined
   
   /**
     * Maximum number of seconds the response to a signed URL request will be considered fresh. After this time period, the response will be revalidated before being served. Defaults to
     * 1hr (3600s). When serving responses to signed URL requests, Cloud CDN will internally behave as though all responses from this backend had a "Cache-Control: public, max-age=[TTL]"
     * header, regardless of any existing Cache-Control header. The actual headers served in responses will not be altered.
     */
-  var signedUrlCacheMaxAgeSec: js.UndefOr[String] = js.native
+  var signedUrlCacheMaxAgeSec: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Names of the keys for signing request URLs. */
-  var signedUrlKeyNames: js.UndefOr[js.Array[String]] = js.native
+  var signedUrlKeyNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BackendServiceCdnPolicy {
   

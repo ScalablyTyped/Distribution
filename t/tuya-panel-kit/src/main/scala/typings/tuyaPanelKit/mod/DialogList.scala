@@ -2,14 +2,14 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogList extends TYFlatListData {
+trait DialogList
+  extends StObject
+     with TYFlatListData {
   
   @JSName("title")
-  var title_DialogList: String = js.native
+  var title_DialogList: String
 }
 object DialogList {
   

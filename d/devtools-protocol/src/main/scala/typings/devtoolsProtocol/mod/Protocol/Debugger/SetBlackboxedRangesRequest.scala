@@ -3,18 +3,16 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBlackboxedRangesRequest extends StObject {
   
-  var positions: js.Array[ScriptPosition] = js.native
+  var positions: js.Array[ScriptPosition]
   
   /**
     * Id of the script.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
 }
 object SetBlackboxedRangesRequest {
   

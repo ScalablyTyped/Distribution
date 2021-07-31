@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxInfo...
   */
-@js.native
 trait INxInfo extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait INxInfo extends StObject {
     * If the chosen identifier is already in use, the engine automatically sets another one.
     * This parameter is optional. If an identifier is not set, the engine automatically sets one.
     */
-  var qId: js.UndefOr[String] = js.native
+  var qId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the object.
     * >> This parameter is mandatory.
     */
-  var qType: String = js.native
+  var qType: String
 }
 object INxInfo {
   

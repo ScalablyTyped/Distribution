@@ -68,41 +68,41 @@ import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayoutAxis extends Axis {
+trait LayoutAxis
+  extends StObject
+     with Axis {
   
-  var anchor: free | AxisName = js.native
+  var anchor: free | AxisName
   
-  var angle: js.Any = js.native
+  var angle: js.Any
   
-  var automargin: Boolean = js.native
+  var automargin: Boolean
   
-  var autotick: Boolean = js.native
+  var autotick: Boolean
   
-  var constrain: range | domain = js.native
+  var constrain: range | domain
   
-  var constraintoward: left | center | right | top | middle | bottom = js.native
+  var constraintoward: left | center | right | top | middle | bottom
   
-  var domain: js.Array[Double] = js.native
+  var domain: js.Array[Double]
   
-  var layer: (`above traces`) | (`below traces`) = js.native
+  var layer: (`above traces`) | (`below traces`)
   
-  var overlaying: free | AxisName = js.native
+  var overlaying: free | AxisName
   
-  var position: Double = js.native
+  var position: Double
   
-  var rangeselector: PartialRangeSelectorActivecolor = js.native
+  var rangeselector: PartialRangeSelectorActivecolor
   
-  var rangeslider: PartialRangeSlider = js.native
+  var rangeslider: PartialRangeSlider
   
-  var scaleanchor: AxisName = js.native
+  var scaleanchor: AxisName
   
-  var scaleratio: Double = js.native
+  var scaleratio: Double
   
-  var side: top | bottom | left | right | clockwise | counterclockwise = js.native
+  var side: top | bottom | left | right | clockwise | counterclockwise
 }
 object LayoutAxis {
   
@@ -114,7 +114,7 @@ object LayoutAxis {
     autorange: `true` | `false` | reversed,
     autotick: Boolean,
     calendar: Calendar,
-    categoryarray: js.Array[_],
+    categoryarray: js.Array[js.Any],
     categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     constrain: range | domain,
@@ -135,7 +135,7 @@ object LayoutAxis {
     nticks: Double,
     overlaying: free | AxisName,
     position: Double,
-    range: js.Array[_],
+    range: js.Array[js.Any],
     rangemode: normal | tozero | nonnegative,
     rangeselector: PartialRangeSelectorActivecolor,
     rangeslider: PartialRangeSlider,
@@ -168,7 +168,7 @@ object LayoutAxis {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: js.Array[String],
-    tickvals: js.Array[_],
+    tickvals: js.Array[js.Any],
     tickwidth: Double,
     title: String | PartialDataTitleFont,
     titlefont: PartialFont,

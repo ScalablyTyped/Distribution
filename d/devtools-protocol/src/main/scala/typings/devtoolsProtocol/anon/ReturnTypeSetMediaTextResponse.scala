@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetMediaTextResponse extends StObject {
   
-  var paramsType: js.Array[SetMediaTextRequest] = js.native
+  var paramsType: js.Array[SetMediaTextRequest]
   
-  var returnType: SetMediaTextResponse = js.native
+  var returnType: SetMediaTextResponse
 }
 object ReturnTypeSetMediaTextResponse {
   

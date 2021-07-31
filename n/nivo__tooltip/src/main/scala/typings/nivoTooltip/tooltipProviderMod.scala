@@ -6,19 +6,20 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipProviderMod {
   
-  @JSImport("@nivo/tooltip/dist/types/TooltipProvider", "TooltipProvider")
+  @JSImport("@nivo/tooltip/dist/types/TooltipProvider", JSImport.Namespace)
   @js.native
-  def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait TooltipProviderProps extends StObject {
     
-    var container: MutableRefObject[HTMLDivElement] = js.native
+    var container: MutableRefObject[HTMLDivElement]
   }
   object TooltipProviderProps {
     

@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsClustersNodepoolsSetautoscaling extends StandardParameters {
+trait ParamsResourceProjectsLocationsClustersNodepoolsSetautoscaling
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name (project, location, cluster, node pool) of the node pool to set
     * autoscaler settings. Specified in the format
     * 'projects/x/locations/x/clusters/x/nodePools/x'.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSetNodePoolAutoscalingRequest] = js.native
+  var requestBody: js.UndefOr[SchemaSetNodePoolAutoscalingRequest] = js.undefined
 }
 object ParamsResourceProjectsLocationsClustersNodepoolsSetautoscaling {
   

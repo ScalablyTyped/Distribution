@@ -3,28 +3,26 @@ package typings.consul.mod
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonOptions extends StObject {
   
-  var consistent: js.UndefOr[Boolean] = js.native
+  var consistent: js.UndefOr[Boolean] = js.undefined
   
-  var ctx: js.UndefOr[EventEmitter] = js.native
+  var ctx: js.UndefOr[EventEmitter] = js.undefined
   
-  var dc: js.UndefOr[String] = js.native
+  var dc: js.UndefOr[String] = js.undefined
   
-  var stale: js.UndefOr[Boolean] = js.native
+  var stale: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   @JSName("wait")
-  var wait_FCommonOptions: js.UndefOr[String] = js.native
+  var wait_FCommonOptions: js.UndefOr[String] = js.undefined
   
-  var wan: js.UndefOr[Boolean] = js.native
+  var wan: js.UndefOr[Boolean] = js.undefined
 }
 object CommonOptions {
   

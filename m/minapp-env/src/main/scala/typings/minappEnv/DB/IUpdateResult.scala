@@ -4,13 +4,13 @@ import typings.minappEnv.IAPISuccessParam
 import typings.minappEnv.anon.Updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IUpdateResult extends IAPISuccessParam {
+trait IUpdateResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var stats: Updated = js.native
+  var stats: Updated
 }
 object IUpdateResult {
   

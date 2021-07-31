@@ -7,26 +7,26 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTimelineAttachmentsInsert extends StandardParameters {
+trait ParamsResourceTimelineAttachmentsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the timeline item the attachment belongs to.
     */
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
 }
 object ParamsResourceTimelineAttachmentsInsert {
   

@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecTcpRoute extends StObject {
   
   /**
     * The action to take if a match is determined.
     */
-  var action: Input[RouteSpecTcpRouteAction] = js.native
+  var action: Input[RouteSpecTcpRouteAction]
   
   /**
     * The types of timeouts.
     */
-  var timeout: js.UndefOr[Input[RouteSpecTcpRouteTimeout]] = js.native
+  var timeout: js.UndefOr[Input[RouteSpecTcpRouteTimeout]] = js.undefined
 }
 object RouteSpecTcpRoute {
   

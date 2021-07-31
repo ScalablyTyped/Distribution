@@ -2,15 +2,13 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASTIfCondition extends StObject {
   
-  var block: ASTElement = js.native
+  var block: ASTElement
   
-  var exp: js.UndefOr[String] = js.native
+  var exp: js.UndefOr[String] = js.undefined
 }
 object ASTIfCondition {
   

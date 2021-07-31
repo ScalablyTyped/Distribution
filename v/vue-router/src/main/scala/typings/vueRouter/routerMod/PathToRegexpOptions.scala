@@ -2,17 +2,15 @@ package typings.vueRouter.routerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathToRegexpOptions extends StObject {
   
-  var end: js.UndefOr[Boolean] = js.native
+  var end: js.UndefOr[Boolean] = js.undefined
   
-  var sensitive: js.UndefOr[Boolean] = js.native
+  var sensitive: js.UndefOr[Boolean] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object PathToRegexpOptions {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcAttachmentMod {
@@ -79,6 +78,10 @@ object vpcAttachmentMod {
   /* static members */
   object VpcAttachment {
     
+    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,75 +91,69 @@ object vpcAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentState): VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): VpcAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentState): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
     
     /**
       * Returns true if the given object is an instance of VpcAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean]
   }
   
-  @js.native
   trait VpcAttachmentArgs extends StObject {
     
     /**
       * Whether Appliance Mode support is enabled. If enabled, a traffic flow between a source and destination uses the same Availability Zone for the VPC attachment for the lifetime of that flow. Valid values: `disable`, `enable`. Default value: `disable`.
       */
-    val applianceModeSupport: js.UndefOr[Input[String]] = js.native
+    val applianceModeSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether DNS support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
       */
-    val dnsSupport: js.UndefOr[Input[String]] = js.native
+    val dnsSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether IPv6 support is enabled. Valid values: `disable`, `enable`. Default value: `disable`.
       */
-    val ipv6Support: js.UndefOr[Input[String]] = js.native
+    val ipv6Support: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifiers of EC2 Subnets.
       */
-    val subnetIds: Input[js.Array[Input[String]]] = js.native
+    val subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * Key-value tags for the EC2 Transit Gateway VPC Attachment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
       */
-    val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.native
+    val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
       */
-    val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.native
+    val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway.
       */
-    val transitGatewayId: Input[String] = js.native
+    val transitGatewayId: Input[String]
     
     /**
       * Identifier of EC2 VPC.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object VpcAttachmentArgs {
     
@@ -219,58 +216,57 @@ object vpcAttachmentMod {
     }
   }
   
-  @js.native
   trait VpcAttachmentState extends StObject {
     
     /**
       * Whether Appliance Mode support is enabled. If enabled, a traffic flow between a source and destination uses the same Availability Zone for the VPC attachment for the lifetime of that flow. Valid values: `disable`, `enable`. Default value: `disable`.
       */
-    val applianceModeSupport: js.UndefOr[Input[String]] = js.native
+    val applianceModeSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether DNS support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
       */
-    val dnsSupport: js.UndefOr[Input[String]] = js.native
+    val dnsSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether IPv6 support is enabled. Valid values: `disable`, `enable`. Default value: `disable`.
       */
-    val ipv6Support: js.UndefOr[Input[String]] = js.native
+    val ipv6Support: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifiers of EC2 Subnets.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway VPC Attachment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
       */
-    val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.native
+    val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
       */
-    val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.native
+    val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 VPC.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the AWS account that owns the EC2 VPC.
       */
-    val vpcOwnerId: js.UndefOr[Input[String]] = js.native
+    val vpcOwnerId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcAttachmentState {
     

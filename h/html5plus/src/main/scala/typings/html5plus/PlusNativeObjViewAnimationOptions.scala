@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.shrink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjViewAnimationOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlusNativeObjViewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 动画帧数
@@ -29,7 +27,7 @@ trait PlusNativeObjViewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var frames: js.UndefOr[Double] = js.native
+  var frames: js.UndefOr[Double] = js.undefined
   
   /**
     * 动画作用区域
@@ -42,7 +40,7 @@ trait PlusNativeObjViewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var region: js.UndefOr[PlusNativeObjRect] = js.native
+  var region: js.UndefOr[PlusNativeObjRect] = js.undefined
   
   /**
     * 动画类型
@@ -51,7 +49,7 @@ trait PlusNativeObjViewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var `type`: js.UndefOr[shrink] = js.native
+  var `type`: js.UndefOr[shrink] = js.undefined
 }
 object PlusNativeObjViewAnimationOptions {
   

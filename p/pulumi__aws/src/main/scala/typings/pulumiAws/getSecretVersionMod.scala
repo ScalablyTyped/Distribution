@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecretVersionMod {
   
-  @JSImport("@pulumi/aws/secretsmanager/getSecretVersion", "getSecretVersion")
+  @JSImport("@pulumi/aws/secretsmanager/getSecretVersion", JSImport.Namespace)
   @js.native
-  def getSecretVersion(args: GetSecretVersionArgs): js.Promise[GetSecretVersionResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager/getSecretVersion", "getSecretVersion")
-  @js.native
-  def getSecretVersion(args: GetSecretVersionArgs, opts: InvokeOptions): js.Promise[GetSecretVersionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecretVersion(args: GetSecretVersionArgs): js.Promise[GetSecretVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretVersionResult]]
+  @scala.inline
+  def getSecretVersion(args: GetSecretVersionArgs, opts: InvokeOptions): js.Promise[GetSecretVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretVersionResult]]
+  
   trait GetSecretVersionArgs extends StObject {
     
     /**
       * Specifies the secret containing the version that you want to retrieve. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret.
       */
-    val secretId: String = js.native
+    val secretId: String
     
     /**
       * Specifies the unique identifier of the version of the secret that you want to retrieve. Overrides `versionStage`.
       */
-    val versionId: js.UndefOr[String] = js.native
+    val versionId: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the secret version that you want to retrieve by the staging label attached to the version. Defaults to `AWSCURRENT`.
       */
-    val versionStage: js.UndefOr[String] = js.native
+    val versionStage: js.UndefOr[String] = js.undefined
   }
   object GetSecretVersionArgs {
     
@@ -61,39 +61,38 @@ object getSecretVersionMod {
     }
   }
   
-  @js.native
   trait GetSecretVersionResult extends StObject {
     
     /**
       * The ARN of the secret.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The decrypted part of the protected secret information that was originally provided as a binary. Base64 encoded.
       */
-    val secretBinary: String = js.native
+    val secretBinary: String
     
-    val secretId: String = js.native
+    val secretId: String
     
     /**
       * The decrypted part of the protected secret information that was originally provided as a string.
       */
-    val secretString: String = js.native
+    val secretString: String
     
     /**
       * The unique identifier of this version of the secret.
       */
-    val versionId: String = js.native
+    val versionId: String
     
-    val versionStage: js.UndefOr[String] = js.native
+    val versionStage: js.UndefOr[String] = js.undefined
     
-    val versionStages: js.Array[String] = js.native
+    val versionStages: js.Array[String]
   }
   object GetSecretVersionResult {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadListElement extends StObject {
   
   /**
     * The description of the archive that was specified in the Initiate Multipart Upload request.
     */
-  var ArchiveDescription: js.UndefOr[String] = js.native
+  var ArchiveDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC time at which the multipart upload was initiated.
     */
-  var CreationDate: js.UndefOr[String] = js.native
+  var CreationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of a multipart upload.
     */
-  var MultipartUploadId: js.UndefOr[String] = js.native
+  var MultipartUploadId: js.UndefOr[String] = js.undefined
   
   /**
     * The part size, in bytes, specified in the Initiate Multipart Upload request. This is the size of all the parts in the upload except the last part, which may be smaller than this size.
     */
-  var PartSizeInBytes: js.UndefOr[long] = js.native
+  var PartSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the vault that contains the archive.
     */
-  var VaultARN: js.UndefOr[String] = js.native
+  var VaultARN: js.UndefOr[String] = js.undefined
 }
 object UploadListElement {
   

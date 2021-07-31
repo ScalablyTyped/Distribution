@@ -3,7 +3,6 @@ package typings.easeljs.createjs
 import typings.easeljs.anon.Rotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,17 +33,6 @@ trait Matrix2D extends StObject {
     rotation: Double,
     skewX: Double,
     skewY: Double,
-    regX: js.UndefOr[scala.Nothing],
-    regY: Double
-  ): Matrix2D = js.native
-  def appendTransform(
-    x: Double,
-    y: Double,
-    scaleX: Double,
-    scaleY: Double,
-    rotation: Double,
-    skewX: Double,
-    skewY: Double,
     regX: Double
   ): Matrix2D = js.native
   def appendTransform(
@@ -56,6 +44,17 @@ trait Matrix2D extends StObject {
     skewX: Double,
     skewY: Double,
     regX: Double,
+    regY: Double
+  ): Matrix2D = js.native
+  def appendTransform(
+    x: Double,
+    y: Double,
+    scaleX: Double,
+    scaleY: Double,
+    rotation: Double,
+    skewX: Double,
+    skewY: Double,
+    regX: Unit,
     regY: Double
   ): Matrix2D = js.native
   
@@ -99,17 +98,6 @@ trait Matrix2D extends StObject {
     rotation: Double,
     skewX: Double,
     skewY: Double,
-    regX: js.UndefOr[scala.Nothing],
-    regY: Double
-  ): Matrix2D = js.native
-  def prependTransform(
-    x: Double,
-    y: Double,
-    scaleX: Double,
-    scaleY: Double,
-    rotation: Double,
-    skewX: Double,
-    skewY: Double,
     regX: Double
   ): Matrix2D = js.native
   def prependTransform(
@@ -121,6 +109,17 @@ trait Matrix2D extends StObject {
     skewX: Double,
     skewY: Double,
     regX: Double,
+    regY: Double
+  ): Matrix2D = js.native
+  def prependTransform(
+    x: Double,
+    y: Double,
+    scaleX: Double,
+    scaleY: Double,
+    rotation: Double,
+    skewX: Double,
+    skewY: Double,
+    regX: Unit,
     regY: Double
   ): Matrix2D = js.native
   

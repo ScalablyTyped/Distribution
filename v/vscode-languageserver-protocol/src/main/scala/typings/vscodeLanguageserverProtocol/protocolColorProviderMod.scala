@@ -16,14 +16,11 @@ import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolColorProviderMod {
   
   object ColorPresentationRequest {
-    
-    type HandlerSignature = RequestHandler[ColorPresentationParams, js.Array[ColorPresentation], Unit]
     
     @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "ColorPresentationRequest.type")
     @js.native
@@ -32,8 +29,10 @@ object protocolColorProviderMod {
         js.Array[ColorPresentation], 
         js.Array[ColorPresentation], 
         Unit, 
-        WorkDoneProgressOptions with TextDocumentRegistrationOptions
+        WorkDoneProgressOptions & TextDocumentRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[ColorPresentationParams, js.Array[ColorPresentation], Unit]
   }
   
   object DocumentColorRequest {
@@ -47,8 +46,6 @@ object protocolColorProviderMod {
     @js.native
     val resultType: ProgressType[js.Array[ColorInformation]] = js.native
     
-    type HandlerSignature = RequestHandler[DocumentColorParams, js.Array[ColorInformation], Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "DocumentColorRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
@@ -58,27 +55,29 @@ object protocolColorProviderMod {
         Unit, 
         DocumentColorRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[DocumentColorParams, js.Array[ColorInformation], Unit]
   }
   
-  @js.native
   trait ColorPresentationParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
     /**
       * The color to request presentations for.
       */
-    var color: Color = js.native
+    var color: Color
     
     /**
       * The range where the color would be inserted. Serves as a context.
       */
-    var range: Range = js.native
+    var range: Range
     
     /**
       * The text document.
       */
-    var textDocument: TextDocumentIdentifier = js.native
+    var textDocument: TextDocumentIdentifier
   }
   object ColorPresentationParams {
     
@@ -102,7 +101,6 @@ object protocolColorProviderMod {
     }
   }
   
-  @js.native
   trait DocumentColorClientCapabilities extends StObject {
     
     /**
@@ -110,7 +108,7 @@ object protocolColorProviderMod {
       * the client supports the new `DocumentColorRegistrationOptions` return value
       * for the corresponding server capability as well.
       */
-    var dynamicRegistration: js.UndefOr[Boolean] = js.native
+    var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   }
   object DocumentColorClientCapabilities {
     
@@ -133,15 +131,15 @@ object protocolColorProviderMod {
   
   type DocumentColorOptions = WorkDoneProgressOptions
   
-  @js.native
   trait DocumentColorParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
     /**
       * The text document.
       */
-    var textDocument: TextDocumentIdentifier = js.native
+    var textDocument: TextDocumentIdentifier
   }
   object DocumentColorParams {
     
@@ -159,16 +157,16 @@ object protocolColorProviderMod {
     }
   }
   
-  @js.native
   trait DocumentColorRegistrationOptions
-    extends TextDocumentRegistrationOptions
+    extends StObject
+       with TextDocumentRegistrationOptions
        with StaticRegistrationOptions
        with WorkDoneProgressOptions
   object DocumentColorRegistrationOptions {
     
     @scala.inline
     def apply(): DocumentColorRegistrationOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[DocumentColorRegistrationOptions]
     }
   }

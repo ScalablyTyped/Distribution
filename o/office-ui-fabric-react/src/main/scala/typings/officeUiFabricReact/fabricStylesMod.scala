@@ -4,21 +4,22 @@ import typings.officeUiFabricReact.fabricTypesMod.IFabricStyleProps
 import typings.officeUiFabricReact.fabricTypesMod.IFabricStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabricStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/Fabric/Fabric.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/Fabric/Fabric.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: IFabricStyleProps): IFabricStyles = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getStyles(props: IFabricStyleProps): IFabricStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IFabricStyles]
+  
   trait IFabricClassNames extends StObject {
     
-    var bodyThemed: String = js.native
+    var bodyThemed: String
     
-    var root: String = js.native
+    var root: String
   }
   object IFabricClassNames {
     

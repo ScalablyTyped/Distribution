@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var params: StringDictionary[js.Any] = js.native
+  var params: StringDictionary[js.Any]
   
-  var state: String | StateDeclaration = js.native
+  var state: String | StateDeclaration
 }
 object State {
   

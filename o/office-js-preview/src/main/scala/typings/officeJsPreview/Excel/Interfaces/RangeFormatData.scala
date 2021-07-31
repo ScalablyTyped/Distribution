@@ -18,11 +18,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.RightToLeft
 import typings.officeJsPreview.officeJsPreviewStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeFormat.toJSON()`. */
-@js.native
 trait RangeFormatData extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var borders: js.UndefOr[js.Array[RangeBorderData]] = js.native
+  var borders: js.UndefOr[js.Array[RangeBorderData]] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var fill: js.UndefOr[RangeFillData] = js.native
+  var fill: js.UndefOr[RangeFillData] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[RangeFontData] = js.native
+  var font: js.UndefOr[RangeFontData] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait RangeFormatData extends StObject {
     */
   var horizontalAlignment: js.UndefOr[
     HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var indentLevel: js.UndefOr[Double] = js.native
+  var indentLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[FormatProtectionData] = js.native
+  var protection: js.UndefOr[FormatProtectionData] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.native
+  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHeight: js.UndefOr[Double] = js.native
+  var rowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -123,7 +121,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -134,7 +132,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardHeight: js.UndefOr[Boolean] = js.native
+  var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -145,7 +143,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardWidth: js.UndefOr[Boolean] = js.native
+  var useStandardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -161,7 +159,7 @@ trait RangeFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object RangeFormatData {
   

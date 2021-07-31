@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container for bytes to inspect or redact.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ByteContentItem extends StObject {
   
   /**
     * Content data to inspect or redact.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The type of data stored in the bytes string. Default will be TEXT_UTF8.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ByteContentItem {
   

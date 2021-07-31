@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.esToPrimitive.anon.ES2015
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,7 @@ object mod extends Shortcut {
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 
     js.UndefOr[String | Double | js.BigInt | Boolean | js.Symbol | Null]
-  ]) with ES2015 = js.native
+  ]) & ES2015 = js.native
   
   type _To = (js.Function2[
     /* input */ js.Any, 
@@ -25,7 +24,7 @@ object mod extends Shortcut {
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 
     js.UndefOr[String | Double | js.BigInt | Boolean | js.Symbol | Null]
-  ]) with ES2015
+  ]) & ES2015
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: (js.Function2[
@@ -34,5 +33,5 @@ object mod extends Shortcut {
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 
     js.UndefOr[String | Double | js.BigInt | Boolean | js.Symbol | Null]
-  ]) with ES2015 = ^
+  ]) & ES2015 = ^
 }

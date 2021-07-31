@@ -2,16 +2,14 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateMemberAccountRequest extends StObject {
   
   /**
     * The ID of the member account that you want to remove from Amazon Macie Classic.
     */
-  var memberAccountId: AWSAccountId = js.native
+  var memberAccountId: AWSAccountId
 }
 object DisassociateMemberAccountRequest {
   

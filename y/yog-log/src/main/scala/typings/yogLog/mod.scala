@@ -21,32 +21,43 @@ import typings.yogLog.yogLogStrings.TRACE
 import typings.yogLog.yogLogStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yog-log", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
-    _
-  ] = js.native
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    js.Any
+  ]]
+  @scala.inline
+  def apply(config: LogConfig): js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    js.Any
+  ]]
+  
   @JSImport("yog-log", JSImport.Namespace)
   @js.native
-  def apply(config: LogConfig): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
-    /* next */ NextFunction, 
-    _
-  ] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yog-log", "Logger")
   @js.native
   class Logger protected () extends StObject {
-    def this(opts: LogConfig, req: Request_[ParamsDictionary, _, _, Query]) = this()
+    def this(opts: LogConfig, req: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
     
     def debug(info: LogInput): Unit | `false` = js.native
     
@@ -60,7 +71,7 @@ object mod {
     
     def getLogFormat(level: LevelName): String | `false` = js.native
     
-    def getLogID(req: Request_[ParamsDictionary, _, _, Query], logIDName: String): String = js.native
+    def getLogID(req: Request_[ParamsDictionary, js.Any, js.Any, Query], logIDName: String): String = js.native
     
     def getLogLevelInt(level: LevelName): LevelInt | `-1` = js.native
     
@@ -83,7 +94,7 @@ object mod {
     // 解析日志配置，生成相应的模板函数的字符串内容
     def parseFormat(format: String): String = js.native
     
-    def parseReqParams(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Unit | `false` = js.native
+    def parseReqParams(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Unit | `false` = js.native
     
     def parseStackInfo(info: Error): Unit = js.native
     def parseStackInfo(info: LogInfo): Unit = js.native
@@ -97,44 +108,41 @@ object mod {
     def writeLog(intLevel: LevelInt, options: WriteLogConfig, log_format: String): Unit | `false` = js.native
   }
   
-  @JSImport("yog-log", "getLogger")
-  @js.native
-  def getLogger(): Logger = js.native
-  @JSImport("yog-log", "getLogger")
-  @js.native
-  def getLogger(config: LogConfig): Logger = js.native
+  @scala.inline
+  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(config: LogConfig): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(config.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @js.native
   trait LEVELS extends StObject {
     
     // 访问日志
-    var `0`: ACCESS = js.native
+    var `0`: ACCESS
     
     // 应用日志等级 ODP格式
-    var `1`: FATAL = js.native
+    var `1`: FATAL
     
-    var `16`: DEBUG = js.native
+    var `16`: DEBUG
     
-    var `2`: WARNING = js.native
+    var `2`: WARNING
     
-    var `3`: ACCESS_ERROR = js.native
+    var `3`: ACCESS_ERROR
     
-    var `4`: NOTICE = js.native
+    var `4`: NOTICE
     
-    var `8`: TRACE = js.native
+    var `8`: TRACE
   }
   object LEVELS {
     
     @scala.inline
-    def apply(`0`: ACCESS, `1`: FATAL, `16`: DEBUG, `2`: WARNING, `3`: ACCESS_ERROR, `4`: NOTICE, `8`: TRACE): LEVELS = {
+    def apply(): LEVELS = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-      __obj.updateDynamic("16")(`16`.asInstanceOf[js.Any])
-      __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-      __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
-      __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+      __obj.updateDynamic("0")("ACCESS")
+      __obj.updateDynamic("1")("FATAL")
+      __obj.updateDynamic("16")("DEBUG")
+      __obj.updateDynamic("2")("WARNING")
+      __obj.updateDynamic("3")("ACCESS_ERROR")
+      __obj.updateDynamic("4")("NOTICE")
+      __obj.updateDynamic("8")("TRACE")
       __obj.asInstanceOf[LEVELS]
     }
     
@@ -217,36 +225,35 @@ object mod {
     def WARNING: typings.yogLog.yogLogStrings.WARNING = "WARNING".asInstanceOf[typings.yogLog.yogLogStrings.WARNING]
   }
   
-  @js.native
   trait LogConfig extends StObject {
     
-    var IS_ODP: js.UndefOr[Boolean] = js.native
+    var IS_ODP: js.UndefOr[Boolean] = js.undefined
     
-    var IS_OMP: js.UndefOr[`0` | `1`] = js.native
+    var IS_OMP: js.UndefOr[`0` | `1`] = js.undefined
     
-    var LogIdName: js.UndefOr[String] = js.native
+    var LogIdName: js.UndefOr[String] = js.undefined
     
-    var access: js.UndefOr[String] = js.native
+    var access: js.UndefOr[String] = js.undefined
     
-    var access_error_log_path: js.UndefOr[String] = js.native
+    var access_error_log_path: js.UndefOr[String] = js.undefined
     
-    var access_log_path: js.UndefOr[String] = js.native
+    var access_log_path: js.UndefOr[String] = js.undefined
     
-    var auto_rotate: js.UndefOr[`0` | `1`] = js.native
+    var auto_rotate: js.UndefOr[`0` | `1`] = js.undefined
     
     // 模板文件地址，可以不填
-    var data_path: js.UndefOr[String] = js.native
+    var data_path: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[`0` | `1`] = js.native
+    var debug: js.UndefOr[`0` | `1`] = js.undefined
     
-    var format_wf: js.UndefOr[String] = js.native
+    var format_wf: js.UndefOr[String] = js.undefined
     
-    var intLevel: js.UndefOr[`16`] = js.native
+    var intLevel: js.UndefOr[`16`] = js.undefined
     
     // 用户只需要填写log_path配置
-    var log_path: js.UndefOr[String] = js.native
+    var log_path: js.UndefOr[String] = js.undefined
     
-    var use_sub_dir: js.UndefOr[`0` | `1`] = js.native
+    var use_sub_dir: js.UndefOr[`0` | `1`] = js.undefined
   }
   object LogConfig {
     
@@ -339,10 +346,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LogInfo extends StObject {
     
-    var msg: String = js.native
+    var msg: String
   }
   object LogInfo {
     
@@ -364,14 +370,13 @@ object mod {
   
   type LogReturn = js.UndefOr[`false`]
   
-  @js.native
   trait WriteLogConfig extends StObject {
     
-    var errno: Double = js.native
+    var errno: Double
     
-    var escape_msg: Boolean = js.native
+    var escape_msg: Boolean
     
-    var filename_suffix: String = js.native
+    var filename_suffix: String
   }
   object WriteLogConfig {
     

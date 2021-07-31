@@ -6,7 +6,6 @@ import typings.expressValidator.contextMod.Context
 import typings.expressValidator.contextMod.Optional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextBuilderMod {

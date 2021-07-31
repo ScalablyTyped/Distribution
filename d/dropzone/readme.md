@@ -10,15 +10,15 @@ Handles drag and drop of files for you.
 | ------------------ | :-------------: |
 | Full name          | dropzone |
 | Keywords           | dragndrop, drag and drop, file upload, upload |
-| # releases         | 6 |
-| # dependents       | 188 |
-| # downloads        | 11569105 |
+| # releases         | 8 |
+| # dependents       | 233 |
+| # downloads        | 13956727 |
 | # stars            | 19 |
 
 ## Links
 - [Homepage](http://www.dropzonejs.com)
-- [Bugs](https://gitlab.com/meno/dropzone/issues)
-- [Repository](https://gitlab.com/meno/dropzone)
+- [Bugs](https://github.com/dropzone/dropzone/issues)
+- [Repository](https://github.com/dropzone/dropzone)
 - [Npm](https://www.npmjs.com/package/dropzone)
     
 

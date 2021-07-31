@@ -6,16 +6,14 @@ import typings.react.mod.ComponentType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'save' | 'supports'> */
-@js.native
-trait BlockDeprecation[T /* <: Record[String, _] */] extends StObject {
+trait BlockDeprecation[T /* <: Record[String, js.Any] */] extends StObject {
   
   var attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation with TopLevel[js.Any] = js.native
+    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[js.Any]
   
   /**
     * A function which, given the attributes and inner blocks of the
@@ -26,41 +24,41 @@ trait BlockDeprecation[T /* <: Record[String, _] */] extends StObject {
     */
   var isEligible: js.UndefOr[
     js.Function2[
-      /* attributes */ Record[String, _], 
-      /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]], 
+      /* attributes */ Record[String, js.Any], 
+      /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A function which, given the old attributes and inner blocks is
     * expected to return either the new attributes or a tuple array of
     * [attributes, innerBlocks] compatible with the block.
     */
-  var migrate: (js.UndefOr[js.Function1[/* attributes */ Record[String, _], T]]) with (js.UndefOr[
+  var migrate: (js.UndefOr[js.Function1[/* attributes */ Record[String, js.Any], T]]) & (js.UndefOr[
     js.Function2[
-      /* attributes */ Record[String, _], 
-      /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]], 
-      js.Tuple2[T, js.Array[BlockInstance[StringDictionary[_]]]]
+      /* attributes */ Record[String, js.Any], 
+      /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], 
+      js.Tuple2[T, js.Array[BlockInstance[StringDictionary[js.Any]]]]
     ]
-  ]) = js.native
+  ])
   
-  var save: ComponentType[BlockSaveProps[T]] = js.native
+  var save: ComponentType[BlockSaveProps[T]]
   
-  var supports: js.UndefOr[BlockSupports] = js.native
+  var supports: js.UndefOr[BlockSupports] = js.undefined
 }
 object BlockDeprecation {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](
+  def apply[T /* <: Record[String, js.Any] */](
     attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation with TopLevel[js.Any],
-    migrate: (js.UndefOr[js.Function1[/* attributes */ Record[String, _], T]]) with (js.UndefOr[
+    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[js.Any],
+    migrate: (js.UndefOr[js.Function1[/* attributes */ Record[String, js.Any], T]]) & (js.UndefOr[
       js.Function2[
-        /* attributes */ Record[String, _], 
-        /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]], 
-        js.Tuple2[T, js.Array[BlockInstance[StringDictionary[_]]]]
+        /* attributes */ Record[String, js.Any], 
+        /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], 
+        js.Tuple2[T, js.Array[BlockInstance[StringDictionary[js.Any]]]]
       ]
     ]),
     save: ComponentType[BlockSaveProps[T]]
@@ -70,18 +68,18 @@ object BlockDeprecation {
   }
   
   @scala.inline
-  implicit class BlockDeprecationMutableBuilder[Self <: BlockDeprecation[_], T /* <: Record[String, _] */] (val x: Self with BlockDeprecation[T]) extends AnyVal {
+  implicit class BlockDeprecationMutableBuilder[Self <: BlockDeprecation[?], T /* <: Record[String, js.Any] */] (val x: Self & BlockDeprecation[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation with TopLevel[js.Any]
+      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIsEligible(
-      value: (/* attributes */ Record[String, _], /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]]) => Boolean
+      value: (/* attributes */ Record[String, js.Any], /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]]) => Boolean
     ): Self = StObject.set(x, "isEligible", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -89,11 +87,11 @@ object BlockDeprecation {
     
     @scala.inline
     def setMigrate(
-      value: (js.UndefOr[js.Function1[/* attributes */ Record[String, _], T]]) with (js.UndefOr[
+      value: (js.UndefOr[js.Function1[/* attributes */ Record[String, js.Any], T]]) & (js.UndefOr[
           js.Function2[
-            /* attributes */ Record[String, _], 
-            /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]], 
-            js.Tuple2[T, js.Array[BlockInstance[StringDictionary[_]]]]
+            /* attributes */ Record[String, js.Any], 
+            /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], 
+            js.Tuple2[T, js.Array[BlockInstance[StringDictionary[js.Any]]]]
           ]
         ])
     ): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])

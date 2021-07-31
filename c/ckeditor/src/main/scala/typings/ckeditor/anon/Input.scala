@@ -2,15 +2,13 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Input extends StObject {
   
-  def input(): Unit = js.native
+  def input(): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object Input {
   

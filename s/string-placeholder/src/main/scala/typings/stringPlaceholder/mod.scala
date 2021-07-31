@@ -3,28 +3,28 @@ package typings.stringPlaceholder
 import typings.stringPlaceholder.anon.ReadonlyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("string-placeholder", JSImport.Namespace)
-  @js.native
-  def apply(str: String, data: js.Any): String = js.native
-  @JSImport("string-placeholder", JSImport.Namespace)
-  @js.native
-  def apply(str: String, data: js.Any, options: ReadonlyOptions): String = js.native
+  @scala.inline
+  def apply(str: String, data: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(str: String, data: js.Any, options: ReadonlyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("string-placeholder", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
     
-    var clean: js.UndefOr[Boolean] = js.native
+    var clean: js.UndefOr[Boolean] = js.undefined
     
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
   }
   object Options {
     

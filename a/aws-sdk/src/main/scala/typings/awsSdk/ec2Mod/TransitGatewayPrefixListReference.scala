@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayPrefixListReference extends StObject {
   
   /**
     * Indicates whether traffic that matches this route is dropped.
     */
-  var Blackhole: js.UndefOr[Boolean] = js.native
+  var Blackhole: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the prefix list.
     */
-  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.native
+  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
   
   /**
     * The ID of the prefix list owner.
     */
-  var PrefixListOwnerId: js.UndefOr[String] = js.native
+  var PrefixListOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the prefix list reference.
     */
-  var State: js.UndefOr[TransitGatewayPrefixListReferenceState] = js.native
+  var State: js.UndefOr[TransitGatewayPrefixListReferenceState] = js.undefined
   
   /**
     * Information about the transit gateway attachment.
     */
-  var TransitGatewayAttachment: js.UndefOr[TransitGatewayPrefixListAttachment] = js.native
+  var TransitGatewayAttachment: js.UndefOr[TransitGatewayPrefixListAttachment] = js.undefined
   
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableId] = js.native
+  var TransitGatewayRouteTableId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableId] = js.undefined
 }
 object TransitGatewayPrefixListReference {
   

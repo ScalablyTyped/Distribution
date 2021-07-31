@@ -2,44 +2,44 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FancyBoxSlide extends FancyBoxGroupItemWithFilledProps {
+trait FancyBoxSlide
+  extends StObject
+     with FancyBoxGroupItemWithFilledProps {
   
   @JSName("$content")
-  var $content: js.UndefOr[JQuery] = js.native
+  var $content: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$iframe")
-  var $iframe: js.UndefOr[JQuery] = js.native
+  var $iframe: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$image")
-  var $image: js.UndefOr[JQuery] = js.native
+  var $image: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$slide")
-  var $slide: js.UndefOr[JQuery] = js.native
+  var $slide: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$spinner")
-  var $spinner: js.UndefOr[JQuery] = js.native
+  var $spinner: js.UndefOr[JQuery] = js.undefined
   
-  var contentSource: js.UndefOr[String] = js.native
+  var contentSource: js.UndefOr[String] = js.undefined
   
-  var forcedDuration: js.UndefOr[Double] = js.native
+  var forcedDuration: js.UndefOr[Double] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var isComplete: Boolean = js.native
+  var isComplete: Boolean
   
-  var isLoaded: Boolean = js.native
+  var isLoaded: Boolean
   
-  var isLoading: Boolean = js.native
+  var isLoading: Boolean
   
-  var isRevealed: Boolean = js.native
+  var isRevealed: Boolean
   
-  var pos: Double = js.native
+  var pos: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object FancyBoxSlide {
   

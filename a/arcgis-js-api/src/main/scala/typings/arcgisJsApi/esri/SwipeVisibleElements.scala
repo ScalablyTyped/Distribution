@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwipeVisibleElements extends Object {
+trait SwipeVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether the divider between the leading and trailing layers is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#VisibleElements)
     */
-  var divider: Boolean = js.native
+  var divider: Boolean
   
   /**
     * Indicates whether the handle from which you drag the widget is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#VisibleElements)
     */
-  var handle: Boolean = js.native
+  var handle: Boolean
 }
 object SwipeVisibleElements {
   

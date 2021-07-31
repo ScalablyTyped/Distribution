@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeBarStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/notice-bar/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/notice-bar/style", JSImport.Namespace)
   @js.native
-  def default(variables: Theme): NoticeBarStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(variables: Theme): NoticeBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[NoticeBarStyle]
+  
   trait NoticeBarStyle extends StObject {
     
-    var actionWrap: ViewStyle = js.native
+    var actionWrap: ViewStyle
     
-    var close: TextStyle = js.native
+    var close: TextStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: TextStyle = js.native
+    var content: TextStyle
     
-    var left15: ViewStyle = js.native
+    var left15: ViewStyle
     
-    var left6: ViewStyle = js.native
+    var left6: ViewStyle
     
-    var link: TextStyle = js.native
+    var link: TextStyle
     
-    var notice: ViewStyle = js.native
+    var notice: ViewStyle
   }
   object NoticeBarStyle {
     

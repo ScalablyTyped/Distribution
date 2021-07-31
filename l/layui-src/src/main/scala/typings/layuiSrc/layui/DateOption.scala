@@ -20,57 +20,55 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateOption extends StObject {
   
-  var btns: js.UndefOr[js.Array[clear | now | confirm]] = js.native
+  var btns: js.UndefOr[js.Array[clear | now | confirm]] = js.undefined
   
-  var calendar: js.UndefOr[Boolean] = js.native
+  var calendar: js.UndefOr[Boolean] = js.undefined
   
   var change: js.UndefOr[
     js.Function3[/* value */ String, /* date */ DateParam, /* endDate */ DateParam, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var done: js.UndefOr[
     js.Function3[/* value */ String, /* date */ DateParam, /* endDate */ DateParam, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var isInitValue: js.UndefOr[Boolean] = js.native
+  var isInitValue: js.UndefOr[Boolean] = js.undefined
   
-  var lang: js.UndefOr[cn | en] = js.native
+  var lang: js.UndefOr[cn | en] = js.undefined
   
-  var mark: js.UndefOr[js.Object] = js.native
+  var mark: js.UndefOr[js.Object] = js.undefined
   
-  var max: js.UndefOr[String | Double] = js.native
+  var max: js.UndefOr[String | Double] = js.undefined
   
-  var min: js.UndefOr[String | Double] = js.native
+  var min: js.UndefOr[String | Double] = js.undefined
   
-  var position: js.UndefOr[abolute | fixed | static] = js.native
+  var position: js.UndefOr[abolute | fixed | static] = js.undefined
   
-  var range: js.UndefOr[String | Boolean] = js.native
+  var range: js.UndefOr[String | Boolean] = js.undefined
   
-  var ready: js.UndefOr[js.Function1[/* date */ DateParam, Unit]] = js.native
+  var ready: js.UndefOr[js.Function1[/* date */ DateParam, Unit]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var showBottom: js.UndefOr[Boolean] = js.native
+  var showBottom: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String | default | molv | grid] = js.native
+  var theme: js.UndefOr[String | default | molv | grid] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[year | month | date | time | datetime] = js.native
+  var `type`: js.UndefOr[year | month | date | time | datetime] = js.undefined
   
-  var value: js.UndefOr[String | Date] = js.native
+  var value: js.UndefOr[String | Date] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object DateOption {
   

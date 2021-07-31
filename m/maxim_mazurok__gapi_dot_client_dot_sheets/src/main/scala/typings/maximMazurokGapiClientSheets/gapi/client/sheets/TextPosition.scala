@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextPosition extends StObject {
   
   /** Horizontal alignment setting for the piece of text. */
-  var horizontalAlignment: js.UndefOr[String] = js.native
+  var horizontalAlignment: js.UndefOr[String] = js.undefined
 }
 object TextPosition {
   

@@ -24,65 +24,63 @@ import typings.cesium.mod.TimeIntervalCollection
 import typings.cesium.mod.WallGraphics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Availability extends StObject {
   
-  var availability: js.UndefOr[TimeIntervalCollection] = js.native
+  var availability: js.UndefOr[TimeIntervalCollection] = js.undefined
   
-  var billboard: js.UndefOr[BillboardGraphics] = js.native
+  var billboard: js.UndefOr[BillboardGraphics] = js.undefined
   
-  var box: js.UndefOr[BoxGraphics] = js.native
+  var box: js.UndefOr[BoxGraphics] = js.undefined
   
-  var corridor: js.UndefOr[CorridorGraphics] = js.native
+  var corridor: js.UndefOr[CorridorGraphics] = js.undefined
   
-  var cylinder: js.UndefOr[CylinderGraphics] = js.native
+  var cylinder: js.UndefOr[CylinderGraphics] = js.undefined
   
-  var description: js.UndefOr[Property] = js.native
+  var description: js.UndefOr[Property] = js.undefined
   
-  var ellipse: js.UndefOr[EllipseGraphics] = js.native
+  var ellipse: js.UndefOr[EllipseGraphics] = js.undefined
   
-  var ellipsoid: js.UndefOr[EllipsoidGraphics] = js.native
+  var ellipsoid: js.UndefOr[EllipsoidGraphics] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[LabelGraphics] = js.native
+  var label: js.UndefOr[LabelGraphics] = js.undefined
   
-  var model: js.UndefOr[ModelGraphics] = js.native
+  var model: js.UndefOr[ModelGraphics] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[Property | Quaternion] = js.native
+  var orientation: js.UndefOr[Property | Quaternion] = js.undefined
   
-  var parent: js.UndefOr[typings.cesium.mod.Entity] = js.native
+  var parent: js.UndefOr[typings.cesium.mod.Entity] = js.undefined
   
-  var path: js.UndefOr[PathGraphics] = js.native
+  var path: js.UndefOr[PathGraphics] = js.undefined
   
-  var plane: js.UndefOr[js.Any] = js.native
+  var plane: js.UndefOr[js.Any] = js.undefined
   
-  var point: js.UndefOr[PointGraphics] = js.native
+  var point: js.UndefOr[PointGraphics] = js.undefined
   
-  var polygon: js.UndefOr[PolygonGraphics] = js.native
+  var polygon: js.UndefOr[PolygonGraphics] = js.undefined
   
-  var polyline: js.UndefOr[PolylineGraphics] = js.native
+  var polyline: js.UndefOr[PolylineGraphics] = js.undefined
   
-  var polylineVolume: js.UndefOr[PolylineVolumeGraphics] = js.native
+  var polylineVolume: js.UndefOr[PolylineVolumeGraphics] = js.undefined
   
-  var position: js.UndefOr[CallbackProperty | PositionProperty] = js.native
+  var position: js.UndefOr[CallbackProperty | PositionProperty] = js.undefined
   
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
-  var rectangle: js.UndefOr[RectangleGraphics] = js.native
+  var rectangle: js.UndefOr[RectangleGraphics] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var tileset: js.UndefOr[Cesium3DTilesetGraphics] = js.native
+  var tileset: js.UndefOr[Cesium3DTilesetGraphics] = js.undefined
   
-  var viewFrom: js.UndefOr[Property] = js.native
+  var viewFrom: js.UndefOr[Property] = js.undefined
   
-  var wall: js.UndefOr[WallGraphics] = js.native
+  var wall: js.UndefOr[WallGraphics] = js.undefined
 }
 object Availability {
   

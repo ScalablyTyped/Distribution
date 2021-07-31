@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.lb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleConditionQueryString extends StObject {
   
   /**
     * Query string key pattern to match.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Query string value pattern to match.
     */
-  var value: String = js.native
+  var value: String
 }
 object ListenerRuleConditionQueryString {
   

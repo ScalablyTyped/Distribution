@@ -1,12 +1,12 @@
 package typings.tabris.mod
 
-import typings.tabris.AnonX
+import typings.tabris.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StatusBarTapEvent[Target] extends EventObject[Target] {
-  val touches: js.Array[AnonX] = js.native
+  
+  val touches: js.Array[X] = js.native
 }
-

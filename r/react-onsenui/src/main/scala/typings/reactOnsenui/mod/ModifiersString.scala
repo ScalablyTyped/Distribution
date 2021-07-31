@@ -2,15 +2,13 @@ package typings.reactOnsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifiersString extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var material: js.UndefOr[String] = js.native
+  var material: js.UndefOr[String] = js.undefined
 }
 object ModifiersString {
   

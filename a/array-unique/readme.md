@@ -11,8 +11,8 @@ Remove duplicate values from an array. Fastest ES5 implementation.
 | Full name          | array-unique |
 | Keywords           | array, unique |
 | # releases         | 0 |
-| # dependents       | 229 |
-| # downloads        | 731452867 |
+| # dependents       | 266 |
+| # downloads        | 823915178 |
 | # stars            | 4 |
 
 ## Links

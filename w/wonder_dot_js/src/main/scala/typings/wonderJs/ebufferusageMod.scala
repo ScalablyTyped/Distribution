@@ -1,39 +1,36 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferUsage", JSImport.Namespace)
-@js.native
-object ebufferusageMod extends js.Object {
-  @js.native
-  sealed trait EBufferUsage extends js.Object
+object ebufferusageMod {
   
   @js.native
-  object EBufferUsage extends js.Object {
-    @js.native
-    sealed trait DYNAMIC_DRAW extends EBufferUsage
-    
-    @js.native
-    sealed trait STATIC_DRAW extends EBufferUsage
-    
-    @js.native
-    sealed trait STREAM_DRAW extends EBufferUsage
+  sealed trait EBufferUsage extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferUsage", "EBufferUsage")
+  @js.native
+  object EBufferUsage extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EBufferUsage with Double] = js.native
-    /* 2 */ @js.native
-    object DYNAMIC_DRAW extends TopLevel[DYNAMIC_DRAW with Double]
+    def apply(value: Double): js.UndefOr[EBufferUsage & Double] = js.native
     
-    /* 1 */ @js.native
-    object STATIC_DRAW extends TopLevel[STATIC_DRAW with Double]
+    @js.native
+    sealed trait DYNAMIC_DRAW
+      extends StObject
+         with EBufferUsage
+    /* 2 */ val DYNAMIC_DRAW: typings.wonderJs.ebufferusageMod.EBufferUsage.DYNAMIC_DRAW & Double = js.native
     
-    /* 0 */ @js.native
-    object STREAM_DRAW extends TopLevel[STREAM_DRAW with Double]
+    @js.native
+    sealed trait STATIC_DRAW
+      extends StObject
+         with EBufferUsage
+    /* 1 */ val STATIC_DRAW: typings.wonderJs.ebufferusageMod.EBufferUsage.STATIC_DRAW & Double = js.native
     
+    @js.native
+    sealed trait STREAM_DRAW
+      extends StObject
+         with EBufferUsage
+    /* 0 */ val STREAM_DRAW: typings.wonderJs.ebufferusageMod.EBufferUsage.STREAM_DRAW & Double = js.native
   }
-  
 }
-

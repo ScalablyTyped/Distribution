@@ -4,3120 +4,3118 @@ import typings.glaze.glazeStrings.scales
 import typings.glaze.themeMod.Tokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ property in keyof react.react.CSSProperties ]: keyof this['scales'] | glaze.glaze/dist-types/theme.Tokens<'scales'>} */
-@js.native
 trait propertyinkeyofCSSPropert extends StObject {
   
   var KhtmlBoxAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxFlexGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxLines: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxOrdinalGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxOrient: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlBoxPack: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlLineBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var KhtmlUserSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationFillMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationIterationCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationName: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationPlayState: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAnimationTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozAppearance: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBackfaceVisibility: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBackgroundClip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBackgroundInlinePolicy: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBackgroundOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBackgroundSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBinding: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderBottomColors: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderEndColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderEndStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderEndWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderLeftColors: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRadiusBottomleft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRadiusBottomright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRadiusTopleft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRadiusTopright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderRightColors: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderStartColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderStartStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBorderTopColors: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxOrdinalGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxOrient: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxPack: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxShadow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozBoxSizing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnFill: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnRuleColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnRuleStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnRuleWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumnWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozColumns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozContextProperties: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozFloatEdge: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozFontFeatureSettings: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozFontLanguageOverride: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozForceBrokenImageIcon: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozHyphens: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozImageRegion: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozMarginEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozMarginStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOrient: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOsxFontSmoothing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineRadiusBottomleft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineRadiusBottomright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineRadiusTopleft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineRadiusTopright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozOutlineWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozPaddingEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozPaddingStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozPerspective: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozPerspectiveOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozStackSizing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTabSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextAlignLast: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextBlink: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextDecorationColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextDecorationLine: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextDecorationStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTextSizeAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransformOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransformStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransitionDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransitionDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransitionProperty: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozTransitionTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozUserFocus: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozUserInput: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozUserModify: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozUserSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozWindowDragging: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var MozWindowShadow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationFillMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationIterationCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationName: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationPlayState: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OAnimationTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OBackgroundSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OBorderImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OObjectFit: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OObjectPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTabSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTextOverflow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransform: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransformOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransitionDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransitionDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransitionProperty: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var OTransitionTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAlignContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAlignItems: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAlignSelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationFillMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationIterationCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationName: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationPlayState: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAnimationTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitAppearance: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBackdropFilter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBackfaceVisibility: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBackgroundClip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBackgroundOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBackgroundSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBefore: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBeforeColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBeforeStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBeforeWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBottomLeftRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderBottomRightRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderImageSlice: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderTopLeftRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBorderTopRightRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxDecorationBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxFlexGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxLines: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxOrdinalGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxOrient: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxPack: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxReflect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxShadow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitBoxSizing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitClipPath: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnFill: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnRuleColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnRuleStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnRuleWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnSpan: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumnWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitColumns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFilter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexBasis: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexFlow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexGrow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexShrink: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFlexWrap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFontFeatureSettings: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFontKerning: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFontSmoothing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitFontVariantLigatures: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitHyphens: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitJustifyContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitLineBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitLineClamp: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMarginEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMarginStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMask: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskAttachment: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskClip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskComposite: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskPositionX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskPositionY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskRepeat: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskRepeatX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskRepeatY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaskSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitMaxInlineSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitOrder: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitOverflowScrolling: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitPaddingEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitPaddingStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitPerspective: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitPerspectiveOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitPrintColorAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitRubyPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitScrollSnapPointsX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitScrollSnapPointsY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitScrollSnapType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitShapeMargin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTapHighlightColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextCombine: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextDecorationColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextDecorationLine: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextDecorationSkip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextDecorationStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextEmphasis: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextEmphasisColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextEmphasisPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextEmphasisStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextFillColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextOrientation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextSizeAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextStroke: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextStrokeColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextStrokeWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTextUnderlinePosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTouchCallout: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransform: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransformOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransformStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransitionDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransitionDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransitionProperty: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitTransitionTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitUserModify: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitUserSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var WebkitWritingMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var alignContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var alignItems: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var alignSelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var alignTracks: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var alignmentBaseline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var all: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationFillMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationIterationCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationName: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationPlayState: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var animationTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var appearance: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var aspectRatio: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var azimuth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backdropFilter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backfaceVisibility: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var background: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundAttachment: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundBlendMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundClip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPositionX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPositionY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundRepeat: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var backgroundSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var baselineShift: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var blockOverflow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var blockSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var border: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomLeftRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomRightRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderCollapse: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderEndEndRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderEndStartRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImageOutset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImageRepeat: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImageSlice: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImageSource: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderImageWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderRightColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderRightStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderRightWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderSpacing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderStartEndRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderStartStartRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTopColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTopLeftRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTopRightRadius: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTopStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderTopWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var borderWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var bottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxDecorationBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxFlexGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxLines: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxOrdinalGroup: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxOrient: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxPack: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxShadow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var boxSizing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var breakAfter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var breakBefore: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var breakInside: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var captionSide: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var caretColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var clear: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var clip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var clipPath: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var clipRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var color: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var colorAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var colorInterpolation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var colorRendering: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnFill: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnSpan: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columnWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var columns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var contain: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var content: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var counterIncrement: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var counterReset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var counterSet: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var cursor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var direction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var display: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var dominantBaseline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var emptyCells: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fill: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fillOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fillRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var filter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexBasis: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexFlow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexGrow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexShrink: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var flexWrap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var float: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var floodColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var floodOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var font: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontFamily: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontFeatureSettings: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontKerning: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontLanguageOverride: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontOpticalSizing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontSizeAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontSmooth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontStretch: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontSynthesis: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariant: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantAlternates: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantCaps: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantEastAsian: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantLigatures: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantNumeric: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontVariationSettings: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var fontWeight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var glyphOrientationVertical: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var grid: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridArea: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoColumns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoFlow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoRows: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridColumn: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridColumnEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridColumnGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridColumnStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridRow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridRowEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridRowGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridRowStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplate: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateAreas: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateColumns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateRows: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var hack: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var hangingPunctuation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var height: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var hyphens: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var imageOrientation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var imageRendering: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var imageResolution: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var imeMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var initialLetter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var inlineSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var inset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var insetInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var isolation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var justifyContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var justifyItems: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var justifySelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var justifyTracks: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var left: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var letterSpacing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var lightingColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var lineBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var lineClamp: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var lineHeight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var lineHeightStep: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var listStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var listStyleImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var listStylePosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var listStyleType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var margin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marginTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var marker: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var markerEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var markerMid: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var markerStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var mask: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorder: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderOutset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderRepeat: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderSlice: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderSource: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskClip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskComposite: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskImage: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskRepeat: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maskType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var masonryAutoFlow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var mathStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maxBlockSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maxHeight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maxInlineSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maxLines: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var maxWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var minBlockSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var minHeight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var minInlineSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var minWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var mixBlendMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var motion: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var motionDistance: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var motionPath: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var motionRotation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msAccelerator: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msAlignSelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msBlockProgression: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomChaining: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomLimit: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomLimitMax: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomLimitMin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomSnap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomSnapPoints: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZoomSnapType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msContentZooming: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFilter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFlex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFlexDirection: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFlexPositive: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFlowFrom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msFlowInto: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msGridColumns: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msGridRows: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msHighContrastAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msHyphenateLimitChars: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msHyphenateLimitLines: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msHyphenateLimitZone: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msHyphens: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msImeAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msImeMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msJustifySelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msLineBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msOrder: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msOverflowStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msOverflowX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msOverflowY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollChaining: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollLimit: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollLimitXMax: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollLimitXMin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollLimitYMax: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollLimitYMin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollRails: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollSnapPointsX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollSnapPointsY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollSnapType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollSnapX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollSnapY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollTranslation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbar3dlightColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarArrowColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarBaseColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarDarkshadowColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarFaceColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarHighlightColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarShadowColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msScrollbarTrackColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTextAutospace: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTextCombineHorizontal: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTextOverflow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTouchAction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTouchSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransform: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransformOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransitionDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransitionDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransitionProperty: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msTransitionTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msUserSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msWordBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msWrapFlow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msWrapMargin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msWrapThrough: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var msWritingMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var objectFit: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var objectPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetAnchor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetDistance: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetPath: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetRotate: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var offsetRotation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var opacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var order: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var orphans: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var outline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var outlineColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var outlineOffset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var outlineStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var outlineWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowAnchor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowClipBox: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowWrap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overflowY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehavior: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var padding: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paddingTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakAfter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakBefore: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakInside: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var paintOrder: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var perspective: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var perspectiveOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var placeContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var placeItems: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var placeSelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var pointerEvents: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var position: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var quotes: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var resize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var right: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var rotate: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var rowGap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var rubyAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var rubyMerge: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var rubyPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scale: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollBehavior: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMargin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPadding: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlock: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlockEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlockStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInlineEnd: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInlineStart: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapCoordinate: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapDestination: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMargin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginBottom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginLeft: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginRight: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginTop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapPointsX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapPointsY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapStop: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapType: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapTypeX: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapTypeY: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarGutter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarTrackColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var shapeImageThreshold: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var shapeMargin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var shapeOutside: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var shapeRendering: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var stopColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var stopOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var stroke: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeDasharray: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeDashoffset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeLinecap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeLinejoin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeMiterlimit: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeOpacity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var strokeWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var tabSize: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var tableLayout: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textAlignLast: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textAnchor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textCombineHorizontal: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textCombineUpright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecoration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationLine: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationSkip: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationSkipInk: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationThickness: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasis: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisColor: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisPosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textIndent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textJustify: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textOrientation: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textOverflow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textRendering: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textShadow: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textSizeAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textTransform: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textUnderlineOffset: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var textUnderlinePosition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var top: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var touchAction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transform: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transformBox: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transformOrigin: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transformStyle: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transition: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transitionDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transitionDuration: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transitionProperty: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var transitionTimingFunction: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var translate: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var unicodeBidi: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var userSelect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var vectorEffect: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var verticalAlign: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var visibility: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var whiteSpace: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var widows: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var width: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var willChange: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var wordBreak: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var wordSpacing: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var wordWrap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var writingMode: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var zIndex: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
   
   var zoom: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.native
+  ] = js.undefined
 }
 object propertyinkeyofCSSPropert {
   

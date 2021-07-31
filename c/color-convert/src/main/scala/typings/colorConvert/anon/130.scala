@@ -4,13 +4,26 @@ import typings.colorConvert.conversionsMod.CMYK_
 import typings.colorConvert.conversionsMod.KEYWORD_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `130` extends StObject {
   
-  def raw(from: KEYWORD_): CMYK_ = js.native
+  def raw(from: KEYWORD_): CMYK_
   @JSName("raw")
-  var raw_Original: js.Function1[/* from */ KEYWORD_, CMYK_] = js.native
+  var raw_Original: js.Function1[/* from */ KEYWORD_, CMYK_]
+}
+object `130` {
+  
+  @scala.inline
+  def apply(raw: /* from */ KEYWORD_ => CMYK_): `130` = {
+    val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
+    __obj.asInstanceOf[`130`]
+  }
+  
+  @scala.inline
+  implicit class `130MutableBuilder`[Self <: `130`] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRaw(value: /* from */ KEYWORD_ => CMYK_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+  }
 }

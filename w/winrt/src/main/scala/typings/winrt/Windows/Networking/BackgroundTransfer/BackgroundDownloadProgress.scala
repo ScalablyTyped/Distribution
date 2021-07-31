@@ -2,21 +2,19 @@ package typings.winrt.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundDownloadProgress extends StObject {
   
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
-  var hasResponseChanged: Boolean = js.native
+  var hasResponseChanged: Boolean
   
-  var hasRestarted: Boolean = js.native
+  var hasRestarted: Boolean
   
-  var status: BackgroundTransferStatus = js.native
+  var status: BackgroundTransferStatus
   
-  var totalBytesToReceive: Double = js.native
+  var totalBytesToReceive: Double
 }
 object BackgroundDownloadProgress {
   

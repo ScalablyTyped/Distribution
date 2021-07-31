@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecondaryIpRange extends StObject {
   
   /** Secondary IP CIDR range in `x.x.x.x/y` format. */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /** Name of the secondary IP range. */
-  var rangeName: js.UndefOr[String] = js.native
+  var rangeName: js.UndefOr[String] = js.undefined
 }
 object SecondaryIpRange {
   

@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApnsVoipChannelResponse extends StObject {
   
-  var APNSVoipChannelResponse: typings.awsSdk.pinpointMod.APNSVoipChannelResponse = js.native
+  var APNSVoipChannelResponse: typings.awsSdk.pinpointMod.APNSVoipChannelResponse
 }
 object UpdateApnsVoipChannelResponse {
   

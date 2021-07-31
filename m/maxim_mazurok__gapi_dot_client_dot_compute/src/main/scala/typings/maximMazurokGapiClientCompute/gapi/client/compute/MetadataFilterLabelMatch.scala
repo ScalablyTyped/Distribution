@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataFilterLabelMatch extends StObject {
   
   /**
     * Name of metadata label.
     * The name can have a maximum length of 1024 characters and must be at least 1 character long.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the label must match the specified value.
     * value can have a maximum length of 1024 characters.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object MetadataFilterLabelMatch {
   

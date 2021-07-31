@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An exception used to notify a name clash. */
-@js.native
-trait NameClashException extends ClassifiedInteractionRequest {
+trait NameClashException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** contains the clashing name. */
-  var Name: String = js.native
+  var Name: String
 }
 object NameClashException {
   

@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -11,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Cartesian3 () extends Packable {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   
   def clone(result: Cartesian3): Cartesian3 = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   def equals(): Boolean = js.native
   def equals(other: Property): Boolean = js.native
@@ -30,7 +29,7 @@ class Cartesian3 () extends Packable {
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
   
   def getValue(): js.Any = js.native
-  def getValue(time: js.UndefOr[scala.Nothing], result: js.Any): js.Any = js.native
+  def getValue(time: Unit, result: js.Any): js.Any = js.native
   def getValue(time: JulianDate): js.Any = js.native
   def getValue(time: JulianDate, result: js.Any): js.Any = js.native
   def getValue(time: JulianDate, result: Cartesian3): Cartesian3 = js.native
@@ -86,341 +85,228 @@ object Cartesian3 {
   def ZERO_=(x: Cartesian3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.abs")
-  @js.native
-  def abs(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def abs(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("abs")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.add")
-  @js.native
-  def add(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def add(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.angleBetween")
-  @js.native
-  def angleBetween(left: Cartesian3, right: Cartesian3): Double = js.native
+  @scala.inline
+  def angleBetween(left: Cartesian3, right: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.clone")
-  @js.native
-  def clone_(cartesian: Cartesian3): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.clone")
-  @js.native
-  def clone_(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def clone_(cartesian: Cartesian3): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def clone_(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.cross")
-  @js.native
-  def cross(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def cross(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.distance")
-  @js.native
-  def distance(left: Cartesian3, right: Cartesian3): Double = js.native
+  @scala.inline
+  def distance(left: Cartesian3, right: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.distanceSquared")
-  @js.native
-  def distanceSquared(left: Cartesian3, right: Cartesian3): Double = js.native
+  @scala.inline
+  def distanceSquared(left: Cartesian3, right: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquared")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.divideByScalar")
-  @js.native
-  def divideByScalar(cartesian: Cartesian3, scalar: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def divideByScalar(cartesian: Cartesian3, scalar: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("divideByScalar")(cartesian.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.dot")
-  @js.native
-  def dot(left: Cartesian3, right: Cartesian3): Double = js.native
+  @scala.inline
+  def dot(left: Cartesian3, right: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.equalsEpsilon")
-  @js.native
-  def equalsEpsilon(left: Cartesian3, right: Cartesian3, relativeEpsilon: Double): Boolean = js.native
-  @JSImport("cesium", "Cartesian3.equalsEpsilon")
-  @js.native
-  def equalsEpsilon(left: Cartesian3, right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
+  @scala.inline
+  def equalsEpsilon(left: Cartesian3, right: Cartesian3, relativeEpsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], relativeEpsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equalsEpsilon(left: Cartesian3, right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], relativeEpsilon.asInstanceOf[js.Any], absoluteEpsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.equals")
-  @js.native
-  def equals_(): Boolean = js.native
-  @JSImport("cesium", "Cartesian3.equals")
-  @js.native
-  def equals_(left: js.UndefOr[scala.Nothing], right: Cartesian3): Boolean = js.native
-  @JSImport("cesium", "Cartesian3.equals")
-  @js.native
-  def equals_(left: Cartesian3): Boolean = js.native
-  @JSImport("cesium", "Cartesian3.equals")
-  @js.native
-  def equals_(left: Cartesian3, right: Cartesian3): Boolean = js.native
+  @scala.inline
+  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Unit, right: Cartesian3): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Cartesian3): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Cartesian3, right: Cartesian3): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double]): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromArray(array: js.Array[Double]): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromCartesian4")
-  @js.native
-  def fromCartesian4(cartesian: Cartesian4): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromCartesian4")
-  @js.native
-  def fromCartesian4(cartesian: Cartesian4, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromCartesian4(cartesian: Cartesian4): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromCartesian4(cartesian: Cartesian4, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(longitude: Double, latitude: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(
-    longitude: Double,
-    latitude: Double,
-    height: js.UndefOr[scala.Nothing],
-    ellipsoid: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(longitude: Double, latitude: Double, height: js.UndefOr[scala.Nothing], ellipsoid: Ellipsoid): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(
-    longitude: Double,
-    latitude: Double,
-    height: js.UndefOr[scala.Nothing],
-    ellipsoid: Ellipsoid,
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(longitude: Double, latitude: Double, height: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(
-    longitude: Double,
-    latitude: Double,
-    height: Double,
-    ellipsoid: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromDegrees")
-  @js.native
-  def fromDegrees(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Double, ellipsoid: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Unit, ellipsoid: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Unit, ellipsoid: Ellipsoid): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromDegrees(longitude: Double, latitude: Double, height: Unit, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegrees")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromDegreesArray")
-  @js.native
-  def fromDegreesArray(coordinates: js.Array[Double]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArray")
-  @js.native
-  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: js.UndefOr[scala.Nothing], result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArray")
-  @js.native
-  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArray")
-  @js.native
-  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
+  @scala.inline
+  def fromDegreesArray(coordinates: js.Array[Double]): js.Array[Cartesian3] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArray")(coordinates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: Unit, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromDegreesArrayHeights")
-  @js.native
-  def fromDegreesArrayHeights(coordinates: js.Array[Double]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArrayHeights")
-  @js.native
-  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: js.UndefOr[scala.Nothing], result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArrayHeights")
-  @js.native
-  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromDegreesArrayHeights")
-  @js.native
-  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
+  @scala.inline
+  def fromDegreesArrayHeights(coordinates: js.Array[Double]): js.Array[Cartesian3] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArrayHeights")(coordinates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: Unit, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromDegreesArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDegreesArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromElements")
-  @js.native
-  def fromElements(x: Double, y: Double, z: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromElements")
-  @js.native
-  def fromElements(x: Double, y: Double, z: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromElements(x: Double, y: Double, z: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElements")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromElements(x: Double, y: Double, z: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElements")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(longitude: Double, latitude: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(
-    longitude: Double,
-    latitude: Double,
-    height: js.UndefOr[scala.Nothing],
-    ellipsoid: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(longitude: Double, latitude: Double, height: js.UndefOr[scala.Nothing], ellipsoid: Ellipsoid): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(
-    longitude: Double,
-    latitude: Double,
-    height: js.UndefOr[scala.Nothing],
-    ellipsoid: Ellipsoid,
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(longitude: Double, latitude: Double, height: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(
-    longitude: Double,
-    latitude: Double,
-    height: Double,
-    ellipsoid: js.UndefOr[scala.Nothing],
-    result: Cartesian3
-  ): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromRadians")
-  @js.native
-  def fromRadians(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Double, ellipsoid: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Double, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Unit, ellipsoid: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Unit, ellipsoid: Ellipsoid): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromRadians(longitude: Double, latitude: Double, height: Unit, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadians")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromRadiansArray")
-  @js.native
-  def fromRadiansArray(coordinates: js.Array[Double]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArray")
-  @js.native
-  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: js.UndefOr[scala.Nothing], result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArray")
-  @js.native
-  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArray")
-  @js.native
-  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
+  @scala.inline
+  def fromRadiansArray(coordinates: js.Array[Double]): js.Array[Cartesian3] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArray")(coordinates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: Unit, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArray(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArray")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromRadiansArrayHeights")
-  @js.native
-  def fromRadiansArrayHeights(coordinates: js.Array[Double]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArrayHeights")
-  @js.native
-  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: js.UndefOr[scala.Nothing], result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArrayHeights")
-  @js.native
-  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = js.native
-  @JSImport("cesium", "Cartesian3.fromRadiansArrayHeights")
-  @js.native
-  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = js.native
+  @scala.inline
+  def fromRadiansArrayHeights(coordinates: js.Array[Double]): js.Array[Cartesian3] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArrayHeights")(coordinates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: Unit, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
+  @scala.inline
+  def fromRadiansArrayHeights(coordinates: js.Array[Double], ellipsoid: Ellipsoid, result: js.Array[Cartesian3]): js.Array[Cartesian3] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRadiansArrayHeights")(coordinates.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cartesian3]]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.fromSpherical")
-  @js.native
-  def fromSpherical(spherical: Spherical): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.fromSpherical")
-  @js.native
-  def fromSpherical(spherical: Spherical, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def fromSpherical(spherical: Spherical): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSpherical")(spherical.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def fromSpherical(spherical: Spherical, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSpherical")(spherical.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.lerp")
-  @js.native
-  def lerp(start: Cartesian3, end: Cartesian3, t: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def lerp(start: Cartesian3, end: Cartesian3, t: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], t.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.magnitude")
-  @js.native
-  def magnitude(cartesian: Cartesian3): Double = js.native
+  @scala.inline
+  def magnitude(cartesian: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magnitude")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.magnitudeSquared")
-  @js.native
-  def magnitudeSquared(cartesian: Cartesian3): Double = js.native
+  @scala.inline
+  def magnitudeSquared(cartesian: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magnitudeSquared")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.maximumByComponent")
-  @js.native
-  def maximumByComponent(first: Cartesian3, second: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def maximumByComponent(first: Cartesian3, second: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("maximumByComponent")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.maximumComponent")
-  @js.native
-  def maximumComponent(cartesian: Cartesian3): Double = js.native
+  @scala.inline
+  def maximumComponent(cartesian: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maximumComponent")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.minimumByComponent")
-  @js.native
-  def minimumByComponent(first: Cartesian3, second: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def minimumByComponent(first: Cartesian3, second: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("minimumByComponent")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.minimumComponent")
-  @js.native
-  def minimumComponent(cartesian: Cartesian3): Double = js.native
+  @scala.inline
+  def minimumComponent(cartesian: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minimumComponent")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.mostOrthogonalAxis")
-  @js.native
-  def mostOrthogonalAxis(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def mostOrthogonalAxis(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mostOrthogonalAxis")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.multiplyByScalar")
-  @js.native
-  def multiplyByScalar(cartesian: Cartesian3, scalar: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def multiplyByScalar(cartesian: Cartesian3, scalar: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(cartesian.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.multiplyComponents")
-  @js.native
-  def multiplyComponents(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def multiplyComponents(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyComponents")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.negate")
-  @js.native
-  def negate(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def negate(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("negate")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.normalize")
-  @js.native
-  def normalize(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def normalize(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.pack")
-  @js.native
-  def pack(value: Cartesian3, array: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("cesium", "Cartesian3.pack")
-  @js.native
-  def pack(value: Cartesian3, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
+  @scala.inline
+  def pack(value: Cartesian3, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def pack(value: Cartesian3, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.subtract")
-  @js.native
-  def subtract(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def subtract(left: Cartesian3, right: Cartesian3, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
   
   /* static member */
-  @JSImport("cesium", "Cartesian3.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): Cartesian3 = js.native
-  @JSImport("cesium", "Cartesian3.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
 }

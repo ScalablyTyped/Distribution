@@ -12,7 +12,6 @@ import typings.node.Buffer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object umdMod extends Shortcut {
@@ -47,11 +46,11 @@ object umdMod extends Shortcut {
         * specified in place of a configuration object.
         */
       def jdenticon(): Unit = js.native
-      def jdenticon(hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def jdenticon(hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def jdenticon(hashOrValue: js.Any): Unit = js.native
       def jdenticon(hashOrValue: js.Any, config: Double): Unit = js.native
       def jdenticon(hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def jdenticon(hashOrValue: Unit, config: Double): Unit = js.native
+      def jdenticon(hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
     }
     
     @js.native
@@ -132,11 +131,11 @@ object umdMod extends Shortcut {
       def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = js.native
       
       def update(elementOrSelector: String): Unit = js.native
-      def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def update(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
       def update(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
       def update(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def update(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = js.native
+      def update(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       /**
         * Updates the identicon in the specified canvas or svg elements.
         * 
@@ -152,18 +151,18 @@ object umdMod extends Shortcut {
         * specified in place of a configuration object.
         */
       def update(elementOrSelector: Element): Unit = js.native
-      def update(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def update(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
       def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
       def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def update(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = js.native
+      def update(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       
       def updateCanvas(elementOrSelector: String): Unit = js.native
-      def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def updateCanvas(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
       def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
       def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = js.native
+      def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       /**
         * Updates the identicon in the specified `<canvas>` elements.
         * 
@@ -179,18 +178,18 @@ object umdMod extends Shortcut {
         *    specified in place of a configuration object.
         */
       def updateCanvas(elementOrSelector: Element): Unit = js.native
-      def updateCanvas(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def updateCanvas(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
       def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
       def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = js.native
+      def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       
       def updateSvg(elementOrSelector: String): Unit = js.native
-      def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def updateSvg(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
       def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
       def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = js.native
+      def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       /**
         * Updates the identicon in the specified `<svg>` elements.
         * 
@@ -206,11 +205,11 @@ object umdMod extends Shortcut {
         *    specified in place of a configuration object.
         */
       def updateSvg(elementOrSelector: Element): Unit = js.native
-      def updateSvg(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-      def updateSvg(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
       def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
       def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
       def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+      def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = js.native
+      def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = js.native
       
       /**
         * Specifies the version of the Jdenticon package in use.
@@ -222,16 +221,15 @@ object umdMod extends Shortcut {
       * This is a subset of `HTMLCanvasElement` to allow using incomplete canvas implementations, 
       * like `canvas-renderer`.
       */
-    @js.native
     trait JdenticonCompatibleCanvas extends StObject {
       
       @JSName("getContext")
-      def getContext_2d(contextId: `2d`): JdenticonCompatibleCanvasRenderingContext2D | Null = js.native
+      def getContext_2d(contextId: `2d`): JdenticonCompatibleCanvasRenderingContext2D | Null
       
       // HTMLCanvasElement
-      val height: Double = js.native
+      val height: Double
       
-      val width: Double = js.native
+      val width: Double
     }
     object JdenticonCompatibleCanvas {
       
@@ -301,7 +299,6 @@ object umdMod extends Shortcut {
       def translate(x: Double, y: Double): Unit = js.native
     }
     
-    @js.native
     trait JdenticonConfig extends StObject {
       
       /**
@@ -313,23 +310,23 @@ object umdMod extends Shortcut {
         *  * `"#rrggbb"`
         *  * `"#rrggbbaa"`
         */
-      var backColor: js.UndefOr[String] = js.native
+      var backColor: js.UndefOr[String] = js.undefined
       
       /**
         * Limits the possible hues in generated icons. The hues are specified as an array of hues in degrees. If the
         * option is omitted or an empty array is specified, all hues are allowed.
         */
-      var hues: js.UndefOr[js.Array[Double]] = js.native
+      var hues: js.UndefOr[js.Array[Double]] = js.undefined
       
       /**
         * Specifies the lightness of the generated icon.
         */
-      var lightness: js.UndefOr[Color] = js.native
+      var lightness: js.UndefOr[Color] = js.undefined
       
       /**
         * Specifies the padding surrounding the icon in percents in the range [0.0, 0.5).
         */
-      var padding: js.UndefOr[Double] = js.native
+      var padding: js.UndefOr[Double] = js.undefined
       
       /**
         * Specifies when icons will be rendered.
@@ -347,7 +344,7 @@ object umdMod extends Shortcut {
         * @remarks
         * This option has no effect in Node environments.
         */
-      var replaceMode: js.UndefOr[never | once | observe] = js.native
+      var replaceMode: js.UndefOr[never | once | observe] = js.undefined
       
       /**
         * Specifies the saturation of the generated icon.
@@ -355,7 +352,7 @@ object umdMod extends Shortcut {
         * For backward compatibility a single number can be specified instead of a `{ color, grayscale }`
         * object. This single number refers to the saturation of colored shapes.
         */
-      var saturation: js.UndefOr[Grayscale | Double] = js.native
+      var saturation: js.UndefOr[Grayscale | Double] = js.undefined
     }
     object JdenticonConfig {
       
@@ -409,7 +406,6 @@ object umdMod extends Shortcut {
       }
     }
     
-    @js.native
     trait Window extends StObject {
       
       /**
@@ -417,7 +413,7 @@ object umdMod extends Shortcut {
         * 
         * See also {@link jdenticon.config} for Node usage.
         */
-      var jdenticon_config: js.UndefOr[JdenticonConfig] = js.native
+      var jdenticon_config: js.UndefOr[JdenticonConfig] = js.undefined
     }
     object Window {
       

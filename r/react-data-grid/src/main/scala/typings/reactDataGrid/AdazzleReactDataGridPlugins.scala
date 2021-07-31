@@ -7,37 +7,35 @@ import typings.reactDataGrid.anon.Id
 import typings.reactDataGrid.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AdazzleReactDataGridPlugins {
   
-  @js.native
   trait AutoCompleteEditorProps extends StObject {
     
-    var column: js.UndefOr[ExcelColumn] = js.native
+    var column: js.UndefOr[ExcelColumn] = js.undefined
     
-    var editorDisplayValue: js.UndefOr[js.Function2[/* column */ ExcelColumn, /* value */ js.Any, String]] = js.native
+    var editorDisplayValue: js.UndefOr[js.Function2[/* column */ ExcelColumn, /* value */ js.Any, String]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
-    var onCommit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCommit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var options: js.UndefOr[js.Array[Id]] = js.native
+    var options: js.UndefOr[js.Array[Id]] = js.undefined
     
-    var resultIdentifier: js.UndefOr[String] = js.native
+    var resultIdentifier: js.UndefOr[String] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
-    var valueParams: js.UndefOr[js.Array[String]] = js.native
+    var valueParams: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AutoCompleteEditorProps {
     
@@ -130,14 +128,13 @@ object AdazzleReactDataGridPlugins {
     }
   }
   
-  @js.native
   trait AutoCompleteTokensEditorProps extends StObject {
     
-    var column: js.UndefOr[ExcelColumn] = js.native
+    var column: js.UndefOr[ExcelColumn] = js.undefined
     
-    var options: js.Array[String | Caption] = js.native
+    var options: js.Array[String | Caption]
     
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object AutoCompleteTokensEditorProps {
     
@@ -163,7 +160,7 @@ object AdazzleReactDataGridPlugins {
       def setOptionsVarargs(value: (String | Caption)*): Self = StObject.set(x, "options", js.Array(value :_*))
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -178,10 +175,9 @@ object AdazzleReactDataGridPlugins {
     type DraggableContainer = Component[js.Any, js.Object, js.Any]
   }
   
-  @js.native
   trait DropDownEditorProps extends StObject {
     
-    var options: js.Array[String | Text] = js.native
+    var options: js.Array[String | Text]
   }
   object DropDownEditorProps {
     

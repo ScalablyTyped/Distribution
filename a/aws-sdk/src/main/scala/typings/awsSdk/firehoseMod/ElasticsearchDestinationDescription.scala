@@ -2,76 +2,74 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchDestinationDescription extends StObject {
   
   /**
     * The buffering options.
     */
-  var BufferingHints: js.UndefOr[ElasticsearchBufferingHints] = js.native
+  var BufferingHints: js.UndefOr[ElasticsearchBufferingHints] = js.undefined
   
   /**
     * The Amazon CloudWatch logging options.
     */
-  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.native
+  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.undefined
   
   /**
     * The endpoint to use when communicating with the cluster. Kinesis Data Firehose uses either this ClusterEndpoint or the DomainARN field to send data to Amazon ES.
     */
-  var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.native
+  var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
   
   /**
     * The ARN of the Amazon ES domain. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Kinesis Data Firehose uses either ClusterEndpoint or DomainARN to send data to Amazon ES.
     */
-  var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.native
+  var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   
   /**
     * The Elasticsearch index name.
     */
-  var IndexName: js.UndefOr[ElasticsearchIndexName] = js.native
+  var IndexName: js.UndefOr[ElasticsearchIndexName] = js.undefined
   
   /**
     * The Elasticsearch index rotation period
     */
-  var IndexRotationPeriod: js.UndefOr[ElasticsearchIndexRotationPeriod] = js.native
+  var IndexRotationPeriod: js.UndefOr[ElasticsearchIndexRotationPeriod] = js.undefined
   
   /**
     * The data processing configuration.
     */
-  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.native
+  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.undefined
   
   /**
     * The Amazon ES retry options.
     */
-  var RetryOptions: js.UndefOr[ElasticsearchRetryOptions] = js.native
+  var RetryOptions: js.UndefOr[ElasticsearchRetryOptions] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.undefined
   
   /**
     * The Amazon S3 backup mode.
     */
-  var S3BackupMode: js.UndefOr[ElasticsearchS3BackupMode] = js.native
+  var S3BackupMode: js.UndefOr[ElasticsearchS3BackupMode] = js.undefined
   
   /**
     * The Amazon S3 destination.
     */
-  var S3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationDescription] = js.native
+  var S3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationDescription] = js.undefined
   
   /**
     * The Elasticsearch type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x, there's no value for TypeName.
     */
-  var TypeName: js.UndefOr[ElasticsearchTypeName] = js.native
+  var TypeName: js.UndefOr[ElasticsearchTypeName] = js.undefined
   
   /**
     * The details of the VPC of the Amazon ES destination.
     */
-  var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.firehoseMod.VpcConfigurationDescription] = js.native
+  var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.firehoseMod.VpcConfigurationDescription] = js.undefined
 }
 object ElasticsearchDestinationDescription {
   

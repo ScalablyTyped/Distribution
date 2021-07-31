@@ -4,12 +4,12 @@ import typings.figma.anon.End
 import typings.figma.figmaStrings.PAGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PageNode
-  extends BaseNodeMixin
+  extends StObject
+     with BaseNodeMixin
      with ChildrenMixin
      with ExportMixin
      with BaseNode {

@@ -2,10 +2,8 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFileNaming extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait TempFileNaming extends StObject {
     *
     * For example: `frida`.
     */
-  var prefix: String = js.native
+  var prefix: String
   
   /**
     * File name suffix to use.
     *
     * For example: `dat`.
     */
-  var suffix: String = js.native
+  var suffix: String
 }
 object TempFileNaming {
   

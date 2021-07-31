@@ -2,56 +2,54 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeMethodRequest extends StObject {
   
   /**
     * The simulated request body of an incoming invocation request.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * A ClientCertificate identifier to use in the test invocation. API Gateway will use the certificate when making the HTTPS request to the defined back-end endpoint.
     */
-  var clientCertificateId: js.UndefOr[String] = js.native
+  var clientCertificateId: js.UndefOr[String] = js.undefined
   
   /**
     * A key-value map of headers to simulate an incoming invocation request.
     */
-  var headers: js.UndefOr[MapOfStringToString] = js.native
+  var headers: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Required] Specifies a test invoke method request's HTTP method.
     */
-  var httpMethod: String = js.native
+  var httpMethod: String
   
   /**
     * The headers as a map from string to list of values to simulate an incoming invocation request.
     */
-  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.native
+  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**
     * The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
     */
-  var pathWithQueryString: js.UndefOr[String] = js.native
+  var pathWithQueryString: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] Specifies a test invoke method request's resource ID.
     */
-  var resourceId: String = js.native
+  var resourceId: String
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * A key-value map of stage variables to simulate an invocation on a deployed Stage.
     */
-  var stageVariables: js.UndefOr[MapOfStringToString] = js.native
+  var stageVariables: js.UndefOr[MapOfStringToString] = js.undefined
 }
 object TestInvokeMethodRequest {
   

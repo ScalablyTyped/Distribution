@@ -5,17 +5,15 @@ import typings.betterScroll.mod.DoubleClick
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fn extends StObject {
     
-    def fn(t: Double): Double = js.native
+    def fn(t: Double): Double
     
-    var style: String = js.native
+    var style: String
   }
   object Fn {
     
@@ -37,90 +35,89 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.BsOption> */
-  @js.native
   trait PartialBsOption extends StObject {
     
-    var HWCompositing: js.UndefOr[Boolean] = js.native
+    var HWCompositing: js.UndefOr[Boolean] = js.undefined
     
-    var autoBlur: js.UndefOr[Boolean] = js.native
+    var autoBlur: js.UndefOr[Boolean] = js.undefined
     
-    var bindToWrapper: js.UndefOr[Boolean] = js.native
+    var bindToWrapper: js.UndefOr[Boolean] = js.undefined
     
-    var bounce: js.UndefOr[Boolean | BounceObjectOption] = js.native
+    var bounce: js.UndefOr[Boolean | BounceObjectOption] = js.undefined
     
-    var bounceTime: js.UndefOr[Double] = js.native
+    var bounceTime: js.UndefOr[Double] = js.undefined
     
-    var click: js.UndefOr[Boolean] = js.native
+    var click: js.UndefOr[Boolean] = js.undefined
     
-    var dblclick: js.UndefOr[Boolean | DoubleClick] = js.native
+    var dblclick: js.UndefOr[Boolean | DoubleClick] = js.undefined
     
-    var deceleration: js.UndefOr[Double] = js.native
+    var deceleration: js.UndefOr[Double] = js.undefined
     
-    var directionLockThreshold: js.UndefOr[Double] = js.native
+    var directionLockThreshold: js.UndefOr[Double] = js.undefined
     
-    var disableMouse: js.UndefOr[Boolean] = js.native
+    var disableMouse: js.UndefOr[Boolean] = js.undefined
     
-    var disableTouch: js.UndefOr[Boolean] = js.native
+    var disableTouch: js.UndefOr[Boolean] = js.undefined
     
-    var eventPassthrough: js.UndefOr[String | Boolean] = js.native
+    var eventPassthrough: js.UndefOr[String | Boolean] = js.undefined
     
-    var flickLimitDistance: js.UndefOr[Double] = js.native
+    var flickLimitDistance: js.UndefOr[Double] = js.undefined
     
-    var flickLimitTime: js.UndefOr[Double] = js.native
+    var flickLimitTime: js.UndefOr[Double] = js.undefined
     
-    var freeScroll: js.UndefOr[Boolean] = js.native
+    var freeScroll: js.UndefOr[Boolean] = js.undefined
     
-    var infinity: js.UndefOr[PartialInfinityOption | Boolean] = js.native
+    var infinity: js.UndefOr[PartialInfinityOption | Boolean] = js.undefined
     
-    var momentum: js.UndefOr[Boolean] = js.native
+    var momentum: js.UndefOr[Boolean] = js.undefined
     
-    var momentumLimitDistance: js.UndefOr[Double] = js.native
+    var momentumLimitDistance: js.UndefOr[Double] = js.undefined
     
-    var momentumLimitTime: js.UndefOr[Double] = js.native
+    var momentumLimitTime: js.UndefOr[Double] = js.undefined
     
-    var mouseWheel: js.UndefOr[PartialMouseWheelOption | Boolean] = js.native
+    var mouseWheel: js.UndefOr[PartialMouseWheelOption | Boolean] = js.undefined
     
-    var observeDOM: js.UndefOr[Boolean] = js.native
+    var observeDOM: js.UndefOr[Boolean] = js.undefined
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var preventDefaultException: js.UndefOr[js.Object] = js.native
+    var preventDefaultException: js.UndefOr[js.Object] = js.undefined
     
-    var probeType: js.UndefOr[Double] = js.native
+    var probeType: js.UndefOr[Double] = js.undefined
     
-    var pullDownRefresh: js.UndefOr[PartialPullDownOption | Boolean] = js.native
+    var pullDownRefresh: js.UndefOr[PartialPullDownOption | Boolean] = js.undefined
     
-    var pullUpLoad: js.UndefOr[PartialPullUpOption | Boolean] = js.native
+    var pullUpLoad: js.UndefOr[PartialPullUpOption | Boolean] = js.undefined
     
-    var resizePolling: js.UndefOr[Double] = js.native
+    var resizePolling: js.UndefOr[Double] = js.undefined
     
-    var scrollX: js.UndefOr[Boolean] = js.native
+    var scrollX: js.UndefOr[Boolean] = js.undefined
     
-    var scrollY: js.UndefOr[Boolean] = js.native
+    var scrollY: js.UndefOr[Boolean] = js.undefined
     
-    var scrollbar: js.UndefOr[PartialScrollBarOption | Boolean] = js.native
+    var scrollbar: js.UndefOr[PartialScrollBarOption | Boolean] = js.undefined
     
-    var snap: js.UndefOr[PartialSlideOption | Boolean] = js.native
+    var snap: js.UndefOr[PartialSlideOption | Boolean] = js.undefined
     
-    var startX: js.UndefOr[Double] = js.native
+    var startX: js.UndefOr[Double] = js.undefined
     
-    var startY: js.UndefOr[Double] = js.native
+    var startY: js.UndefOr[Double] = js.undefined
     
-    var stopPropagation: js.UndefOr[Boolean] = js.native
+    var stopPropagation: js.UndefOr[Boolean] = js.undefined
     
-    var swipeBounceTime: js.UndefOr[Double] = js.native
+    var swipeBounceTime: js.UndefOr[Double] = js.undefined
     
-    var swipeTime: js.UndefOr[Double] = js.native
+    var swipeTime: js.UndefOr[Double] = js.undefined
     
-    var tap: js.UndefOr[Boolean] = js.native
+    var tap: js.UndefOr[Boolean] = js.undefined
     
-    var useTransform: js.UndefOr[Boolean] = js.native
+    var useTransform: js.UndefOr[Boolean] = js.undefined
     
-    var useTransition: js.UndefOr[Boolean] = js.native
+    var useTransition: js.UndefOr[Boolean] = js.undefined
     
-    var wheel: js.UndefOr[PartialWheelOption | Boolean] = js.native
+    var wheel: js.UndefOr[PartialWheelOption | Boolean] = js.undefined
     
-    var zoom: js.UndefOr[PartialZoomOption | Boolean] = js.native
+    var zoom: js.UndefOr[PartialZoomOption | Boolean] = js.undefined
   }
   object PartialBsOption {
     
@@ -382,14 +379,13 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.InfinityOption> */
-  @js.native
   trait PartialInfinityOption extends StObject {
     
-    var createTombstone: js.UndefOr[js.Function0[Element]] = js.native
+    var createTombstone: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var fetch: js.UndefOr[js.Function1[/* count */ Double, Unit]] = js.native
+    var fetch: js.UndefOr[js.Function1[/* count */ Double, Unit]] = js.undefined
     
-    var render: js.UndefOr[js.Function2[/* item */ js.Any, /* div */ Element, Element]] = js.native
+    var render: js.UndefOr[js.Function2[/* item */ js.Any, /* div */ Element, Element]] = js.undefined
   }
   object PartialInfinityOption {
     
@@ -423,14 +419,13 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.MouseWheelOption> */
-  @js.native
   trait PartialMouseWheelOption extends StObject {
     
-    var easeTime: js.UndefOr[Double] = js.native
+    var easeTime: js.UndefOr[Double] = js.undefined
     
-    var invert: js.UndefOr[Boolean] = js.native
+    var invert: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object PartialMouseWheelOption {
     
@@ -464,12 +459,11 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.PullDownOption> */
-  @js.native
   trait PartialPullDownOption extends StObject {
     
-    var stop: js.UndefOr[Double] = js.native
+    var stop: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object PartialPullDownOption {
     
@@ -497,10 +491,9 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.PullUpOption> */
-  @js.native
   trait PartialPullUpOption extends StObject {
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object PartialPullUpOption {
     
@@ -522,10 +515,9 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.ScrollBarOption> */
-  @js.native
   trait PartialScrollBarOption extends StObject {
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
   }
   object PartialScrollBarOption {
     
@@ -547,22 +539,21 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.SlideOption> */
-  @js.native
   trait PartialSlideOption extends StObject {
     
-    var el: js.UndefOr[Element] = js.native
+    var el: js.UndefOr[Element] = js.undefined
     
-    var listenFlick: js.UndefOr[Boolean] = js.native
+    var listenFlick: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var stepX: js.UndefOr[Double] = js.native
+    var stepX: js.UndefOr[Double] = js.undefined
     
-    var stepY: js.UndefOr[Double] = js.native
+    var stepY: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object PartialSlideOption {
     
@@ -620,18 +611,17 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.WheelOption> */
-  @js.native
   trait PartialWheelOption extends StObject {
     
-    var adjustTime: js.UndefOr[Double] = js.native
+    var adjustTime: js.UndefOr[Double] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var wheelItemClass: js.UndefOr[String] = js.native
+    var wheelItemClass: js.UndefOr[String] = js.undefined
     
-    var wheelWrapperClass: js.UndefOr[String] = js.native
+    var wheelWrapperClass: js.UndefOr[String] = js.undefined
   }
   object PartialWheelOption {
     
@@ -677,14 +667,13 @@ object anon {
   }
   
   /* Inlined std.Partial<better-scroll.better-scroll.ZoomOption> */
-  @js.native
   trait PartialZoomOption extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object PartialZoomOption {
     

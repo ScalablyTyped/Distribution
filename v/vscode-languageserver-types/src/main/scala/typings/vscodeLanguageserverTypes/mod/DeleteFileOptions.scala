@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileOptions extends StObject {
   
   /**
     * Ignore the operation if the file doesn't exist.
     */
-  var ignoreIfNotExists: js.UndefOr[Boolean] = js.native
+  var ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Delete the content recursively if a folder is denoted.
     */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteFileOptions {
   

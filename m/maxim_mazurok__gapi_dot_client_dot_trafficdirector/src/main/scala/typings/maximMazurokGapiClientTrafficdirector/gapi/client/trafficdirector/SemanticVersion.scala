@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticVersion extends StObject {
   
-  var majorNumber: js.UndefOr[Double] = js.native
+  var majorNumber: js.UndefOr[Double] = js.undefined
   
-  var minorNumber: js.UndefOr[Double] = js.native
+  var minorNumber: js.UndefOr[Double] = js.undefined
   
-  var patch: js.UndefOr[Double] = js.native
+  var patch: js.UndefOr[Double] = js.undefined
 }
 object SemanticVersion {
   

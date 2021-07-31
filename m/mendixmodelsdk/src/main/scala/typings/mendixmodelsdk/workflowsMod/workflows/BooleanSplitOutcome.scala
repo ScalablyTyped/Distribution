@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object BooleanSplitOutcome {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.create")
-  @js.native
-  def create(model: IModel): BooleanSplitOutcome = js.native
+  @scala.inline
+  def create(model: IModel): BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BooleanSplitOutcome]
   
   /**
     * Creates and returns a new BooleanSplitOutcome instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object BooleanSplitOutcome {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.createIn")
-  @js.native
-  def createIn(container: ExclusiveSplitActivity): BooleanSplitOutcome = js.native
+  @scala.inline
+  def createIn(container: ExclusiveSplitActivity): BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanSplitOutcome]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.structureTypeName")

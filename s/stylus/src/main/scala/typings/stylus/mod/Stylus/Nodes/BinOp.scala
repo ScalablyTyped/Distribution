@@ -3,17 +3,17 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinOp extends Node {
+trait BinOp
+  extends StObject
+     with Node {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var op: java.lang.String = js.native
+  var op: java.lang.String
   
-  var right: Expression = js.native
+  var right: Expression
 }
 object BinOp {
   

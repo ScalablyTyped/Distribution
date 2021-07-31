@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerId extends StObject {
   
   /** Output only. The unique identifier of the customer's account. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /** Output only. Object key. Only relevant if entity.type = "OBJECT" Note: external-facing name of report is "Entities" rather than "Objects". */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /** Output only. The user's immutable G Suite profile identifier. */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /** Output only. The type of item. The value is customer. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Output only. The user's email address. Only relevant if entity.type = "USER" */
-  var userEmail: js.UndefOr[String] = js.native
+  var userEmail: js.UndefOr[String] = js.undefined
 }
 object CustomerId {
   

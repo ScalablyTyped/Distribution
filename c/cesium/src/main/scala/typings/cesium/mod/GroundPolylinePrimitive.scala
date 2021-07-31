@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.DebugShowShadowVolume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GroundPolylinePrimitive")
@@ -45,13 +44,15 @@ class GroundPolylinePrimitive protected () extends StObject {
 }
 object GroundPolylinePrimitive {
   
-  /* static member */
-  @JSImport("cesium", "GroundPolylinePrimitive.initializeTerrainHeights")
+  @JSImport("cesium", "GroundPolylinePrimitive")
   @js.native
-  def initializeTerrainHeights(): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "GroundPolylinePrimitive.isSupported")
-  @js.native
-  def isSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def initializeTerrainHeights(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeTerrainHeights")().asInstanceOf[js.Promise[js.Any]]
+  
+  /* static member */
+  @scala.inline
+  def isSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

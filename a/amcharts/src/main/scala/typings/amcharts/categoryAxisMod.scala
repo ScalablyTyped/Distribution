@@ -3,7 +3,6 @@ package typings.amcharts
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryAxisMod {
@@ -50,7 +49,7 @@ object categoryAxisMod {
       *     {period:'YYYY',format:'YYYY'}
       * ]
       */
-    var dateFormats: js.Array[_] = js.native
+    var dateFormats: js.Array[js.Any] = js.native
     
     /**
       * Number Returns coordinate of the date, in case parseDates is set to true.

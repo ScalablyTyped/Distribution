@@ -3,10 +3,13 @@ package typings.popmotion
 import typings.popmotion.easingTypesMod.Easing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easingMod {
+  
+  @JSImport("popmotion/lib/easing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("popmotion/lib/easing", "anticipate")
   @js.native
@@ -28,13 +31,11 @@ object easingMod {
   @js.native
   val bounceIn: Easing = js.native
   
-  @JSImport("popmotion/lib/easing", "bounceInOut")
-  @js.native
-  def bounceInOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceInOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceInOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("popmotion/lib/easing", "bounceOut")
-  @js.native
-  def bounceOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("popmotion/lib/easing", "circIn")
   @js.native

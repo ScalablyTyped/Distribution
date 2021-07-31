@@ -4,23 +4,21 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.AES256
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.awsColonkms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServerSideEncryptionByDefaultMod {
   
-  @js.native
   trait ServerSideEncryptionByDefault extends StObject {
     
     /**
       * <p>KMS master key ID to use for the default encryption. This parameter is allowed if SSEAlgorithm is aws:kms.</p>
       */
-    var KMSMasterKeyID: js.UndefOr[String] = js.native
+    var KMSMasterKeyID: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Server-side encryption algorithm to use for the default encryption.</p>
       */
-    var SSEAlgorithm: AES256 | awsColonkms | String = js.native
+    var SSEAlgorithm: AES256 | awsColonkms | String
   }
   object ServerSideEncryptionByDefault {
     

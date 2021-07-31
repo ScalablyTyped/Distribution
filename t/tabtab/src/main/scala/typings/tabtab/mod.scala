@@ -4,48 +4,44 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.tabtab.anon.ReadonlyCompletionItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tabtab", "completionItem")
+  @JSImport("tabtab", JSImport.Namespace)
   @js.native
-  def completionItem(item: String): CompletionItem_ = js.native
-  @JSImport("tabtab", "completionItem")
-  @js.native
-  def completionItem(item: CompletionItem_): CompletionItem_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tabtab", "install")
-  @js.native
-  def install(options: InstallOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def completionItem(item: String): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
+  @scala.inline
+  def completionItem(item: CompletionItem_): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
   
-  @JSImport("tabtab", "log")
-  @js.native
-  def log(args: js.Array[String | ReadonlyCompletionItem]): Unit = js.native
+  @scala.inline
+  def install(options: InstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tabtab", "parseEnv")
-  @js.native
-  def parseEnv(env: ProcessEnv): TabtabEnv = js.native
+  @scala.inline
+  def log(args: js.Array[String | ReadonlyCompletionItem]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tabtab", "uninstall")
-  @js.native
-  def uninstall(options: UninstallOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def parseEnv(env: ProcessEnv): TabtabEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnv")(env.asInstanceOf[js.Any]).asInstanceOf[TabtabEnv]
+  
+  @scala.inline
+  def uninstall(options: UninstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   type CompleteItemOrString = String | CompletionItem_
   
-  @js.native
   trait CompletionItem_ extends StObject {
     
     /**
       * The optional description of the completion.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The sub-command or option name.
       */
-    var name: String = js.native
+    var name: String
   }
   object CompletionItem_ {
     
@@ -69,14 +65,13 @@ object mod {
     }
   }
   
-  @js.native
   trait InstallOptions extends StObject {
     
     /** The program that does the completion (can be the same program). */
-    val completer: String = js.native
+    val completer: String
     
     /** The program to complete. */
-    val name: String = js.native
+    val name: String
   }
   object InstallOptions {
     
@@ -97,48 +92,47 @@ object mod {
     }
   }
   
-  @js.native
   trait TabtabEnv extends StObject {
     
     /**
       * A Boolean indicating whether we act in "plumbing mode" or not
       */
-    var complete: Boolean = js.native
+    var complete: Boolean
     
     /**
       * The last String word of the line
       */
-    var last: String = js.native
+    var last: String
     
     /**
       * The last word String of partial
       */
-    var lastPartial: String = js.native
+    var lastPartial: String
     
     /**
       * The String input line
       */
-    var line: String = js.native
+    var line: String
     
     /**
       * The String part of line preceding cursor position
       */
-    var partial: String = js.native
+    var partial: String
     
     /**
       * A Number indicating cursor position
       */
-    var point: Double = js.native
+    var point: Double
     
     /**
       * The String word preceding last
       */
-    var prev: String = js.native
+    var prev: String
     
     /**
       * The Number of words in the completed line
       */
-    var words: Double = js.native
+    var words: Double
   }
   object TabtabEnv {
     
@@ -186,11 +180,10 @@ object mod {
     }
   }
   
-  @js.native
   trait UninstallOptions extends StObject {
     
     /** The program to remove completions for. */
-    val name: String = js.native
+    val name: String
   }
   object UninstallOptions {
     

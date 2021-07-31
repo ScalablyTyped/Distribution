@@ -2,7 +2,6 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contains the result as zero or more sequential `SpeechRecognitionResult`
   * messages.
   */
-@js.native
 trait SchemaRecognizeResponse extends StObject {
   
   /**
     * Output only. Sequential list of transcription results corresponding to
     * sequential portions of audio.
     */
-  var results: js.UndefOr[js.Array[SchemaSpeechRecognitionResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaSpeechRecognitionResult]] = js.undefined
 }
 object SchemaRecognizeResponse {
   

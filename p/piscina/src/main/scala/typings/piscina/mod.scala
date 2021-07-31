@@ -8,7 +8,6 @@ import typings.piscina.piscinaStrings.auto
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,17 +17,17 @@ object mod {
   class ^ () extends Piscina {
     def this(options: Options) = this()
   }
+  @JSImport("piscina", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("piscina", "move")
-  @js.native
-  def move(`val`: Transferable): ArrayBufferView | Transferable = js.native
-  @JSImport("piscina", "move")
-  @js.native
-  def move(`val`: TransferListItem): ArrayBufferView | Transferable = js.native
-  @JSImport("piscina", "move")
-  @js.native
-  def move(`val`: ArrayBufferView): ArrayBufferView | Transferable = js.native
+  @scala.inline
+  def move(`val`: Transferable): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  @scala.inline
+  def move(`val`: TransferListItem): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  @scala.inline
+  def move(`val`: ArrayBufferView): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
   
   /* Rewritten from type alias, can be one of: 
     - typings.piscina.mod.AbortSignalEventTarget
@@ -36,11 +35,12 @@ object mod {
   */
   trait AbortSignalAny extends StObject
   
-  @js.native
-  trait AbortSignalEventEmitter extends AbortSignalAny {
+  trait AbortSignalEventEmitter
+    extends StObject
+       with AbortSignalAny {
     
     @JSName("once")
-    def once_abort(name: abort, listener: js.Function0[Unit]): Unit = js.native
+    def once_abort(name: abort, listener: js.Function0[Unit]): Unit
   }
   object AbortSignalEventEmitter {
     
@@ -59,7 +59,9 @@ object mod {
   }
   
   @js.native
-  trait AbortSignalEventTarget extends AbortSignalAny {
+  trait AbortSignalEventTarget
+    extends StObject
+       with AbortSignalAny {
     
     var aborted: js.UndefOr[Boolean] = js.native
     
@@ -69,10 +71,9 @@ object mod {
     def addEventListener_abort(name: abort, listener: js.Function0[Unit], options: AbortSignalEventTargetAddOptions): Unit = js.native
   }
   
-  @js.native
   trait AbortSignalEventTargetAddOptions extends StObject {
     
-    var once: Boolean = js.native
+    var once: Boolean
   }
   object AbortSignalEventTargetAddOptions {
     
@@ -92,35 +93,36 @@ object mod {
   
   type EnvSpecifier = js.Any
   
-  @js.native
-  trait FilledOptions extends Options {
+  trait FilledOptions
+    extends StObject
+       with Options {
     
     @JSName("concurrentTasksPerWorker")
-    var concurrentTasksPerWorker_FilledOptions: Double = js.native
+    var concurrentTasksPerWorker_FilledOptions: Double
     
     @JSName("filename")
-    var filename_FilledOptions: String | Null = js.native
+    var filename_FilledOptions: String | Null
     
     @JSName("idleTimeout")
-    var idleTimeout_FilledOptions: Double = js.native
+    var idleTimeout_FilledOptions: Double
     
     @JSName("maxQueue")
-    var maxQueue_FilledOptions: Double = js.native
+    var maxQueue_FilledOptions: Double
     
     @JSName("maxThreads")
-    var maxThreads_FilledOptions: Double = js.native
+    var maxThreads_FilledOptions: Double
     
     @JSName("minThreads")
-    var minThreads_FilledOptions: Double = js.native
+    var minThreads_FilledOptions: Double
     
     @JSName("niceIncrement")
-    var niceIncrement_FilledOptions: Double = js.native
+    var niceIncrement_FilledOptions: Double
     
     @JSName("taskQueue")
-    var taskQueue_FilledOptions: TaskQueue = js.native
+    var taskQueue_FilledOptions: TaskQueue
     
     @JSName("useAtomics")
-    var useAtomics_FilledOptions: Boolean = js.native
+    var useAtomics_FilledOptions: Boolean
   }
   object FilledOptions {
     
@@ -135,7 +137,7 @@ object mod {
       taskQueue: TaskQueue,
       useAtomics: Boolean
     ): FilledOptions = {
-      val __obj = js.Dynamic.literal(concurrentTasksPerWorker = concurrentTasksPerWorker.asInstanceOf[js.Any], idleTimeout = idleTimeout.asInstanceOf[js.Any], maxQueue = maxQueue.asInstanceOf[js.Any], maxThreads = maxThreads.asInstanceOf[js.Any], minThreads = minThreads.asInstanceOf[js.Any], niceIncrement = niceIncrement.asInstanceOf[js.Any], taskQueue = taskQueue.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(concurrentTasksPerWorker = concurrentTasksPerWorker.asInstanceOf[js.Any], idleTimeout = idleTimeout.asInstanceOf[js.Any], maxQueue = maxQueue.asInstanceOf[js.Any], maxThreads = maxThreads.asInstanceOf[js.Any], minThreads = minThreads.asInstanceOf[js.Any], niceIncrement = niceIncrement.asInstanceOf[js.Any], taskQueue = taskQueue.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
       __obj.asInstanceOf[FilledOptions]
     }
     
@@ -174,36 +176,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var argv: js.UndefOr[js.Array[String]] = js.native
+    var argv: js.UndefOr[js.Array[String]] = js.undefined
     
-    var concurrentTasksPerWorker: js.UndefOr[Double] = js.native
+    var concurrentTasksPerWorker: js.UndefOr[Double] = js.undefined
     
-    var env: js.UndefOr[EnvSpecifier] = js.native
+    var env: js.UndefOr[EnvSpecifier] = js.undefined
     
-    var execArgv: js.UndefOr[js.Array[String]] = js.native
+    var execArgv: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filename: js.UndefOr[String | Null] = js.native
+    var filename: js.UndefOr[String | Null] = js.undefined
     
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxQueue: js.UndefOr[Double | auto] = js.native
+    var maxQueue: js.UndefOr[Double | auto] = js.undefined
     
-    var maxThreads: js.UndefOr[Double] = js.native
+    var maxThreads: js.UndefOr[Double] = js.undefined
     
-    var minThreads: js.UndefOr[Double] = js.native
+    var minThreads: js.UndefOr[Double] = js.undefined
     
-    var niceIncrement: js.UndefOr[Double] = js.native
+    var niceIncrement: js.UndefOr[Double] = js.undefined
     
-    var resourceLimits: js.UndefOr[ResourceLimits] = js.native
+    var resourceLimits: js.UndefOr[ResourceLimits] = js.undefined
     
-    var taskQueue: js.UndefOr[TaskQueue] = js.native
+    var taskQueue: js.UndefOr[TaskQueue] = js.undefined
     
-    var useAtomics: js.UndefOr[Boolean] = js.native
+    var useAtomics: js.UndefOr[Boolean] = js.undefined
     
-    var workerData: js.UndefOr[js.Any] = js.native
+    var workerData: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     
@@ -327,60 +328,30 @@ object mod {
     
     def queueSize: Double = js.native
     
-    def runTask(task: js.Any): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: js.UndefOr[scala.Nothing],
-      filename: js.UndefOr[scala.Nothing],
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: js.UndefOr[scala.Nothing], filename: String): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: js.UndefOr[scala.Nothing],
-      filename: String,
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: js.UndefOr[scala.Nothing], filename: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: js.UndefOr[scala.Nothing],
-      filename: AbortSignalAny,
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: String): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: String,
-      filename: js.UndefOr[scala.Nothing],
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: String, filename: String): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: String, filename: String, abortSignal: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: AbortSignalAny,
-      filename: js.UndefOr[scala.Nothing],
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String, abortSignal: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: TransferList): js.Promise[_] = js.native
-    def runTask(
-      task: js.Any,
-      transferList: TransferList,
-      filename: js.UndefOr[scala.Nothing],
-      abortSignal: AbortSignalAny
-    ): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: String): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: String, abortSignal: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny): js.Promise[_] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[_] = js.native
+    def runTask(task: js.Any): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String, filename: String): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: Unit, filename: String): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: Unit, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: Unit, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: Unit, filename: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: Unit, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList, filename: String): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny): js.Promise[js.Any] = js.native
+    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
     
     def runTime: js.Any = js.native
     

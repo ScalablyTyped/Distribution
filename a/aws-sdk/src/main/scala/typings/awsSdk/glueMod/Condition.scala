@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * The state of the crawler to which this condition applies.
     */
-  var CrawlState: js.UndefOr[typings.awsSdk.glueMod.CrawlState] = js.native
+  var CrawlState: js.UndefOr[typings.awsSdk.glueMod.CrawlState] = js.undefined
   
   /**
     * The name of the crawler to which this condition applies.
     */
-  var CrawlerName: js.UndefOr[NameString] = js.native
+  var CrawlerName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The name of the job whose JobRuns this condition applies to, and on which this trigger waits.
     */
-  var JobName: js.UndefOr[NameString] = js.native
+  var JobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * A logical operator.
     */
-  var LogicalOperator: js.UndefOr[typings.awsSdk.glueMod.LogicalOperator] = js.native
+  var LogicalOperator: js.UndefOr[typings.awsSdk.glueMod.LogicalOperator] = js.undefined
   
   /**
     * The condition state. Currently, the only job states that a trigger can listen for are SUCCEEDED, STOPPED, FAILED, and TIMEOUT. The only crawler states that a trigger can listen for are SUCCEEDED, FAILED, and CANCELLED.
     */
-  var State: js.UndefOr[JobRunState] = js.native
+  var State: js.UndefOr[JobRunState] = js.undefined
 }
 object Condition {
   

@@ -7,14 +7,15 @@ import typings.jsmediatags.typesMod.TagFrameFlags
 import typings.jsmediatags.typesMod.TagHeaderFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object id3v2tagcontentsMod {
   
   @JSImport("jsmediatags/build2/ID3v2TagContents", JSImport.Default)
   @js.native
-  class default protected () extends ID3v2TagContents {
+  class default protected ()
+    extends StObject
+       with ID3v2TagContents {
     def this(major: Double, revision: Double) = this()
   }
   
@@ -55,7 +56,7 @@ object id3v2tagcontentsMod {
     def _updateSize(): Unit = js.native
     
     def addFrame(id: String, data: ByteArray): ID3v2TagContents = js.native
-    def addFrame(id: String, data: ByteArray, flags: js.UndefOr[scala.Nothing], noFlagsDataLength: Double): ID3v2TagContents = js.native
+    def addFrame(id: String, data: ByteArray, flags: Unit, noFlagsDataLength: Double): ID3v2TagContents = js.native
     def addFrame(id: String, data: ByteArray, flags: TagFrameFlags): ID3v2TagContents = js.native
     def addFrame(id: String, data: ByteArray, flags: TagFrameFlags, noFlagsDataLength: Double): ID3v2TagContents = js.native
     

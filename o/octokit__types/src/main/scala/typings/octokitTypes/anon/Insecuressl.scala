@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Insecuressl extends StObject {
   
-  var content_type: String = js.native
+  var content_type: String
   
-  var insecure_ssl: String = js.native
+  var insecure_ssl: String
   
-  var url: String = js.native
+  var url: String
 }
 object Insecuressl {
   

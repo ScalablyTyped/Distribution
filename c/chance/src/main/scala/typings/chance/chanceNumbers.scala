@@ -3,13 +3,14 @@ package typings.chance
 import typings.chance.Chance._FalsyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chanceNumbers {
   
   @js.native
-  sealed trait `0` extends _FalsyType
+  sealed trait `0`
+    extends StObject
+       with _FalsyType
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   

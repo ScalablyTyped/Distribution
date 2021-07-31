@@ -2,42 +2,40 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The batch-request status. */
-@js.native
 trait BatchStatus extends StObject {
   
   /** The method to be run against the documents. Possible values are `html_conversion`, `element_classification`, and `tables`. */
-  var _function: js.UndefOr[String] = js.native
+  var _function: js.UndefOr[String] = js.undefined
   
   /** The unique identifier for the batch request. */
-  var batch_id: js.UndefOr[String] = js.native
+  var batch_id: js.UndefOr[String] = js.undefined
   
   /** The creation time of the batch request. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Document counts. */
-  var document_counts: js.UndefOr[DocCounts] = js.native
+  var document_counts: js.UndefOr[DocCounts] = js.undefined
   
   /** The geographical location of the Cloud Object Storage input bucket as listed on the **Endpoint** tab of your COS instance; for example, `us-geo`, `eu-geo`, or `ap-geo`. */
-  var input_bucket_location: js.UndefOr[String] = js.native
+  var input_bucket_location: js.UndefOr[String] = js.undefined
   
   /** The name of the Cloud Object Storage input bucket. */
-  var input_bucket_name: js.UndefOr[String] = js.native
+  var input_bucket_name: js.UndefOr[String] = js.undefined
   
   /** The geographical location of the Cloud Object Storage output bucket as listed on the **Endpoint** tab of your COS instance; for example, `us-geo`, `eu-geo`, or `ap-geo`. */
-  var output_bucket_location: js.UndefOr[String] = js.native
+  var output_bucket_location: js.UndefOr[String] = js.undefined
   
   /** The name of the Cloud Object Storage output bucket. */
-  var output_bucket_name: js.UndefOr[String] = js.native
+  var output_bucket_name: js.UndefOr[String] = js.undefined
   
   /** The status of the batch request. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The time of the most recent update to the batch request. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object BatchStatus {
   

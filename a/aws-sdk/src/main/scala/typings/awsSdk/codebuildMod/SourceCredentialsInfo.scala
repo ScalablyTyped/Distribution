@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceCredentialsInfo extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the token. 
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The type of authentication used by the credentials. Valid options are OAUTH, BASIC_AUTH, or PERSONAL_ACCESS_TOKEN. 
     */
-  var authType: js.UndefOr[AuthType] = js.native
+  var authType: js.UndefOr[AuthType] = js.undefined
   
   /**
     *  The type of source provider. The valid options are GITHUB, GITHUB_ENTERPRISE, or BITBUCKET. 
     */
-  var serverType: js.UndefOr[ServerType] = js.native
+  var serverType: js.UndefOr[ServerType] = js.undefined
 }
 object SourceCredentialsInfo {
   

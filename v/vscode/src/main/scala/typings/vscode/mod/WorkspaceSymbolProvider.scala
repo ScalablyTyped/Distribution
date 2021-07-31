@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
     * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined`, `null`, or an empty array.
     */
-  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]] = js.native
+  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]]
   
   /**
     * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
@@ -39,7 +37,7 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
     * @return The resolved symbol or a thenable that resolves to that. When no result is returned,
     * the given `symbol` is used.
     */
-  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
+  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.undefined
 }
 object WorkspaceSymbolProvider {
   
@@ -50,7 +48,7 @@ object WorkspaceSymbolProvider {
   }
   
   @scala.inline
-  implicit class WorkspaceSymbolProviderMutableBuilder[Self <: WorkspaceSymbolProvider[_], T /* <: SymbolInformation */] (val x: Self with WorkspaceSymbolProvider[T]) extends AnyVal {
+  implicit class WorkspaceSymbolProviderMutableBuilder[Self <: WorkspaceSymbolProvider[?], T /* <: SymbolInformation */] (val x: Self & WorkspaceSymbolProvider[T]) extends AnyVal {
     
     @scala.inline
     def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideWorkspaceSymbols", js.Any.fromFunction2(value))

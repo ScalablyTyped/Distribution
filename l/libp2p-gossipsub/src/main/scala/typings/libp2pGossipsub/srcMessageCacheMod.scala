@@ -3,7 +3,6 @@ package typings.libp2pGossipsub
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcMessageCacheMod {
@@ -65,7 +64,7 @@ object srcMessageCacheMod {
     
     var msgs: Map[
         String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InMessage */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InMessage */ js.Any
       ] = js.native
     
     /**
@@ -86,12 +85,11 @@ object srcMessageCacheMod {
     def shift(): Unit = js.native
   }
   
-  @js.native
   trait CacheEntry extends StObject {
     
-    var msgID: String = js.native
+    var msgID: String
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
   }
   object CacheEntry {
     

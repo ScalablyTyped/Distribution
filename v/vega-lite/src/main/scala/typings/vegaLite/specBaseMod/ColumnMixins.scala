@@ -2,10 +2,8 @@ package typings.vegaLite.specBaseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMixins extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ColumnMixins extends StObject {
     *
     * 2) Setting the `columns` to `1` is equivalent to `vconcat` (for `concat`) and to using the `row` channel (for `facet` and `repeat`).
     */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
 }
 object ColumnMixins {
   

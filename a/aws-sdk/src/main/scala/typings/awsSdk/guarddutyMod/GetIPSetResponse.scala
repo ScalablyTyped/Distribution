@@ -2,36 +2,34 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIPSetResponse extends StObject {
   
   /**
     * The format of the file that contains the IPSet.
     */
-  var Format: IpSetFormat = js.native
+  var Format: IpSetFormat
   
   /**
     * The URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
-  var Location: typings.awsSdk.guarddutyMod.Location = js.native
+  var Location: typings.awsSdk.guarddutyMod.Location
   
   /**
     * The user-friendly name for the IPSet.
     */
-  var Name: typings.awsSdk.guarddutyMod.Name = js.native
+  var Name: typings.awsSdk.guarddutyMod.Name
   
   /**
     * The status of IPSet file that was uploaded.
     */
-  var Status: IpSetStatus = js.native
+  var Status: IpSetStatus
   
   /**
     * The tags of the IPSet resource.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object GetIPSetResponse {
   

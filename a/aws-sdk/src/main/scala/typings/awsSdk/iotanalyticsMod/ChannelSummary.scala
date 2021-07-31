@@ -2,41 +2,39 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSummary extends StObject {
   
   /**
     * The name of the channel.
     */
-  var channelName: js.UndefOr[ChannelName] = js.native
+  var channelName: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * Where channel data is stored.
     */
-  var channelStorage: js.UndefOr[ChannelStorageSummary] = js.native
+  var channelStorage: js.UndefOr[ChannelStorageSummary] = js.undefined
   
   /**
     * When the channel was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time when a new message arrived in the channel. AWS IoT Analytics updates this value at most once per minute for one channel. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
     */
-  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.native
+  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the channel was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the channel.
     */
-  var status: js.UndefOr[ChannelStatus] = js.native
+  var status: js.UndefOr[ChannelStatus] = js.undefined
 }
 object ChannelSummary {
   

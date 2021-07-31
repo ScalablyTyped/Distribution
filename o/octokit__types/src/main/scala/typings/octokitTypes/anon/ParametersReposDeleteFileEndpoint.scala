@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposDeleteFileResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposDeleteFileEndpoint extends StObject {
   
-  var parameters: ReposDeleteFileEndpoint = js.native
+  var parameters: ReposDeleteFileEndpoint
   
-  var request: ReposDeleteFileRequestOptions = js.native
+  var request: ReposDeleteFileRequestOptions
   
-  var response: OctokitResponse[ReposDeleteFileResponseData] = js.native
+  var response: OctokitResponse[ReposDeleteFileResponseData]
 }
 object ParametersReposDeleteFileEndpoint {
   

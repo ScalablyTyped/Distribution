@@ -3,15 +3,13 @@ package typings.phantom.anon
 import typings.phantom.mod.IPhantomCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contents extends StObject {
   
-  var contents: IPhantomCallback = js.native
+  var contents: IPhantomCallback
   
-  var height: String = js.native
+  var height: String
 }
 object Contents {
   

@@ -2,13 +2,11 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyDBClusterParameterGroupResult extends StObject {
   
-  var DBClusterParameterGroup: js.UndefOr[typings.awsSdk.docdbMod.DBClusterParameterGroup] = js.native
+  var DBClusterParameterGroup: js.UndefOr[typings.awsSdk.docdbMod.DBClusterParameterGroup] = js.undefined
 }
 object CopyDBClusterParameterGroupResult {
   

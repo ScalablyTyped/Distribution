@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionCondition extends StObject {
   
-  var action: js.UndefOr[`10`] = js.native
+  var action: js.UndefOr[`10`] = js.undefined
   
-  var condition: js.UndefOr[CreatedBefore] = js.native
+  var condition: js.UndefOr[CreatedBefore] = js.undefined
 }
 object ActionCondition {
   

@@ -8,14 +8,15 @@ import typings.shevyjs.typesMod.Scale
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("shevyjs", JSImport.Default)
   @js.native
-  class default () extends Shevy {
+  class default ()
+    extends StObject
+       with Shevy {
     def this(options: PartialOptions) = this()
   }
   

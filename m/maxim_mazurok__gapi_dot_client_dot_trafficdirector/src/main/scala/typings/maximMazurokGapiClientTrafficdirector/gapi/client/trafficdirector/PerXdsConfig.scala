@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerXdsConfig extends StObject {
   
-  var clusterConfig: js.UndefOr[ClustersConfigDump] = js.native
+  var clusterConfig: js.UndefOr[ClustersConfigDump] = js.undefined
   
-  var listenerConfig: js.UndefOr[ListenersConfigDump] = js.native
+  var listenerConfig: js.UndefOr[ListenersConfigDump] = js.undefined
   
-  var routeConfig: js.UndefOr[RoutesConfigDump] = js.native
+  var routeConfig: js.UndefOr[RoutesConfigDump] = js.undefined
   
-  var scopedRouteConfig: js.UndefOr[ScopedRoutesConfigDump] = js.native
+  var scopedRouteConfig: js.UndefOr[ScopedRoutesConfigDump] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object PerXdsConfig {
   

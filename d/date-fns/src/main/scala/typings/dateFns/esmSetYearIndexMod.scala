@@ -3,18 +3,19 @@ package typings.dateFns
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmSetYearIndexMod {
   
   object default {
     
+    @scala.inline
+    def apply(date: Double, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def apply(date: Date, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
+    
     @JSImport("date-fns/esm/setYear/index", JSImport.Default)
     @js.native
-    def apply(date: Double, year: Double): Date = js.native
-    @JSImport("date-fns/esm/setYear/index", JSImport.Default)
-    @js.native
-    def apply(date: Date, year: Double): Date = js.native
+    val ^ : js.Any = js.native
   }
 }

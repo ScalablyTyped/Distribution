@@ -2,81 +2,79 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var baseTileOpacity: js.UndefOr[Double] = js.native
+  var baseTileOpacity: js.UndefOr[Double] = js.undefined
   
-  var bounds: js.UndefOr[js.Any] = js.native
+  var bounds: js.UndefOr[js.Any] = js.undefined
   
-  var center: js.UndefOr[js.Any] = js.native
+  var center: js.UndefOr[js.Any] = js.undefined
   
-  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.native
+  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var disableDoubleTapZoom: js.UndefOr[Boolean] = js.native
+  var disableDoubleTapZoom: js.UndefOr[Boolean] = js.undefined
   
-  var disableKineticPan: js.UndefOr[Boolean] = js.native
+  var disableKineticPan: js.UndefOr[Boolean] = js.undefined
   
-  var disableTwoFingerTapZoom: js.UndefOr[Boolean] = js.native
+  var disableTwoFingerTapZoom: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var logoControl: js.UndefOr[Boolean] = js.native
+  var logoControl: js.UndefOr[Boolean] = js.undefined
   
-  var logoControlOptions: js.UndefOr[js.Any] = js.native
+  var logoControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var mapDataControl: js.UndefOr[Boolean] = js.native
+  var mapDataControl: js.UndefOr[Boolean] = js.undefined
   
-  var mapDataControlOptions: js.UndefOr[js.Any] = js.native
+  var mapDataControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var mapTypeControl: js.UndefOr[Boolean] = js.native
+  var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   
-  var mapTypeControlOptions: js.UndefOr[js.Any] = js.native
+  var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var mapTypeId: js.UndefOr[String] = js.native
+  var mapTypeId: js.UndefOr[String] = js.undefined
   
-  var mapTypes: js.UndefOr[js.Any] = js.native
+  var mapTypes: js.UndefOr[js.Any] = js.undefined
   
-  var maxBounds: js.UndefOr[js.Any] = js.native
+  var maxBounds: js.UndefOr[js.Any] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var overlayZoomEffect: js.UndefOr[Null | String] = js.native
+  var overlayZoomEffect: js.UndefOr[Null | String] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var pinchZoom: js.UndefOr[Boolean] = js.native
+  var pinchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var resizeOrigin: js.UndefOr[js.Any] = js.native
+  var resizeOrigin: js.UndefOr[js.Any] = js.undefined
   
-  var scaleControl: js.UndefOr[Boolean] = js.native
+  var scaleControl: js.UndefOr[Boolean] = js.undefined
   
-  var scaleControlOptions: js.UndefOr[js.Any] = js.native
+  var scaleControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var scrollWheel: js.UndefOr[Boolean] = js.native
+  var scrollWheel: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
   
-  var tileSpare: js.UndefOr[Double] = js.native
+  var tileSpare: js.UndefOr[Double] = js.undefined
   
-  var tileTransition: js.UndefOr[Boolean] = js.native
+  var tileTransition: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
-  var zoomControl: js.UndefOr[Boolean] = js.native
+  var zoomControl: js.UndefOr[Boolean] = js.undefined
   
-  var zoomControlOptions: js.UndefOr[js.Any] = js.native
+  var zoomControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var zoomOrigin: js.UndefOr[js.Any] = js.native
+  var zoomOrigin: js.UndefOr[js.Any] = js.undefined
 }
 object MapOptions {
   

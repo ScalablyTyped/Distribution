@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResultRenderer extends Widget_ {
+trait SearchResultRenderer
+  extends StObject
+     with Widget_ {
   
   /**
     * Indicates whether to display the `Show more results` link within the search result's popup.

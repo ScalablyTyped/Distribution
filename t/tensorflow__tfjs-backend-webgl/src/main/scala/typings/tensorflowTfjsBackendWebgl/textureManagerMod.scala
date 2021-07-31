@@ -8,10 +8,13 @@ import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textureManagerMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", "TextureManager")
   @js.native
@@ -56,13 +59,12 @@ object textureManagerMod {
     var usedTextures: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", "computeBytes")
-  @js.native
+  @scala.inline
   def computeBytes(
     shape: js.Tuple2[Double, Double],
     physicalTexType: PhysicalTextureType,
     gl: WebGLRenderingContext,
     textureConfig: TextureConfig,
     isPacked: Boolean
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBytes")(shape.asInstanceOf[js.Any], physicalTexType.asInstanceOf[js.Any], gl.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any], isPacked.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

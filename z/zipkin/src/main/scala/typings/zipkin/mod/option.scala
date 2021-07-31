@@ -4,10 +4,13 @@ import typings.zipkin.zipkinBooleans.`false`
 import typings.zipkin.zipkinBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object option {
+  
+  @JSImport("zipkin", "option")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("zipkin", "option.None")
   @js.native
@@ -24,7 +27,7 @@ object option {
     def getOrElse(fnOrValue: T): T = js.native
     def getOrElse(fnOrValue: js.Function0[T]): T = js.native
     
-    def ifPresent(fn: js.Function1[/* value */ T, _]): Unit = js.native
+    def ifPresent(fn: js.Function1[/* value */ T, js.Any]): Unit = js.native
     
     def map[V](fn: js.Function1[/* value */ T, V]): IOption[V] = js.native
   }
@@ -42,17 +45,14 @@ object option {
   }
   
   // Throw error is not a valid option
-  @JSImport("zipkin", "option.fromNullable")
-  @js.native
-  def fromNullable[V](nullable: V): IOption[V] = js.native
+  @scala.inline
+  def fromNullable[V](nullable: V): IOption[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[IOption[V]]
   
-  @JSImport("zipkin", "option.isOptional")
-  @js.native
-  def isOptional(data: js.Any): Boolean = js.native
+  @scala.inline
+  def isOptional(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("zipkin", "option.verifyIsOptional")
-  @js.native
-  def verifyIsOptional(data: js.Any): Unit = js.native
+  @scala.inline
+  def verifyIsOptional(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyIsOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait INone[T]

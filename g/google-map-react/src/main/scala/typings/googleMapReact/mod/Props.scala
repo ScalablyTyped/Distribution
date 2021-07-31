@@ -5,87 +5,85 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Props extends StObject {
   
-  var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.native
+  var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.undefined
   
-  var center: js.UndefOr[Coords] = js.native
+  var center: js.UndefOr[Coords] = js.undefined
   
-  var debounced: js.UndefOr[Boolean] = js.native
+  var debounced: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCenter: js.UndefOr[Coords] = js.native
+  var defaultCenter: js.UndefOr[Coords] = js.undefined
   
-  var defaultZoom: js.UndefOr[Double] = js.native
+  var defaultZoom: js.UndefOr[Double] = js.undefined
   
   var distanceToMouse: js.UndefOr[
     js.Function3[/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object], Double]
-  ] = js.native
+  ] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ js.Any, Unit]] = js.native
+  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ js.Any, Unit]] = js.undefined
   
-  var heatmap: js.UndefOr[Heatmap] = js.native
+  var heatmap: js.UndefOr[Heatmap] = js.undefined
   
-  var heatmapLibrary: js.UndefOr[Boolean] = js.native
+  var heatmapLibrary: js.UndefOr[Boolean] = js.undefined
   
-  var hoverDistance: js.UndefOr[Double] = js.native
+  var hoverDistance: js.UndefOr[Double] = js.undefined
   
-  var layerTypes: js.UndefOr[js.Array[String]] = js.native
+  var layerTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var margin: js.UndefOr[js.Array[_]] = js.native
+  var margin: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, js.Any]] = js.undefined
   
-  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.native
+  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
   
   var onChildMouseDown: js.UndefOr[
     js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.native
+  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
   
-  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.native
+  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
   
   var onChildMouseMove: js.UndefOr[
     js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onChildMouseUp: js.UndefOr[
     js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, js.Any]] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
   
-  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Map, Unit]] = js.native
+  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Map, Unit]] = js.undefined
   
-  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
+  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   
-  var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
+  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   
-  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
+  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   
-  var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.native
+  var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.undefined
   
-  var resetBoundsOnResize: js.UndefOr[Boolean] = js.native
+  var resetBoundsOnResize: js.UndefOr[Boolean] = js.undefined
   
-  var shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.native
+  var shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+  var style: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
   
-  var yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.native
+  var yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object Props {
   
@@ -174,7 +172,7 @@ object Props {
     def setLayerTypesVarargs(value: String*): Self = StObject.set(x, "layerTypes", js.Array(value :_*))
     
     @scala.inline
-    def setMargin(value: js.Array[_]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    def setMargin(value: js.Array[js.Any]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
@@ -183,7 +181,7 @@ object Props {
     def setMarginVarargs(value: js.Any*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setOnChange(value: /* value */ ChangeEventValue => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* value */ ChangeEventValue => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -225,7 +223,7 @@ object Props {
     def setOnChildMouseUpUndefined: Self = StObject.set(x, "onChildMouseUp", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* value */ ClickEventValue => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* value */ ClickEventValue => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

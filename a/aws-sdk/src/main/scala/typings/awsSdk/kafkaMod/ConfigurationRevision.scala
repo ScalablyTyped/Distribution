@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationRevision extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait ConfigurationRevision extends StObject {
     The time when the configuration revision was created.
     
     */
-  var CreationTime: timestampIso8601 = js.native
+  var CreationTime: timestampIso8601
   
   /**
     * 
     The description of the configuration revision.
     
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The revision number.
     
     */
-  var Revision: long = js.native
+  var Revision: long
 }
 object ConfigurationRevision {
   

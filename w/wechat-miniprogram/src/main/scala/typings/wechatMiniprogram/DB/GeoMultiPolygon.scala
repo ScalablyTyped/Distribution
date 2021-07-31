@@ -2,15 +2,15 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoMultiPolygon extends GeoInstance {
+trait GeoMultiPolygon
+  extends StObject
+     with GeoInstance {
   
-  var polygons: js.Array[GeoPolygon] = js.native
+  var polygons: js.Array[GeoPolygon]
   
-  def toJSON(): IGeoJSONMultiPolygon = js.native
+  def toJSON(): IGeoJSONMultiPolygon
 }
 object GeoMultiPolygon {
   

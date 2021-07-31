@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1ViewSpec extends StObject {
   
   /** Output only. The query that defines the table view. */
-  var viewQuery: js.UndefOr[String] = js.native
+  var viewQuery: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1ViewSpec {
   

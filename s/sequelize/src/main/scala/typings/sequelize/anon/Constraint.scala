@@ -3,21 +3,19 @@ package typings.sequelize.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Constraint extends StObject {
   
-  var constraint: js.UndefOr[String] = js.native
+  var constraint: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[Error] = js.native
+  var parent: js.UndefOr[Error] = js.undefined
   
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
 }
 object Constraint {
   

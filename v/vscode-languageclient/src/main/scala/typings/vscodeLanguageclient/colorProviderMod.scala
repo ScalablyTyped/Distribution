@@ -14,7 +14,6 @@ import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentCol
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorProviderMod {
@@ -35,7 +34,6 @@ object colorProviderMod {
     var asColorPresentations: js.Any = js.native
   }
   
-  @js.native
   trait ColorProviderMiddleware extends StObject {
     
     var provideColorPresentations: js.UndefOr[
@@ -47,7 +45,7 @@ object colorProviderMod {
           /* next */ ProvideColorPresentationSignature, 
           ProviderResult[js.Array[ColorPresentation]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var provideDocumentColors: js.UndefOr[
         js.ThisFunction3[
@@ -57,7 +55,7 @@ object colorProviderMod {
           /* next */ ProvideDocumentColorsSignature, 
           ProviderResult[js.Array[ColorInformation]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ColorProviderMiddleware {
     

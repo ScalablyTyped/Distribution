@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -439,9 +438,9 @@ trait PKCS11 extends StObject {
     * @returns {string} 32-byte token label (blank padded)
     */
   def C_InitToken(slot: Handle): String = js.native
-  def C_InitToken(slot: Handle, pin: js.UndefOr[scala.Nothing], label: String): String = js.native
   def C_InitToken(slot: Handle, pin: String): String = js.native
   def C_InitToken(slot: Handle, pin: String, label: String): String = js.native
+  def C_InitToken(slot: Handle, pin: Unit, label: String): String = js.native
   
   /**
     * Initializes the Cryptoki library

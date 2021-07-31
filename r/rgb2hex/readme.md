@@ -10,10 +10,10 @@ lightweight rgb/rgba to hex parser
 | ------------------ | :-------------: |
 | Full name          | rgb2hex |
 | Keywords           | rgb, rgba, hex, color, parse, parser |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 23189035 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 24 |
+| # downloads        | 27254044 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/christian-bromann/rgb2hex)

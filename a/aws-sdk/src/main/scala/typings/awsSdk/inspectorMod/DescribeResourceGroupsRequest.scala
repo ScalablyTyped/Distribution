@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourceGroupsRequest extends StObject {
   
   /**
     * The ARN that specifies the resource group that you want to describe.
     */
-  var resourceGroupArns: BatchDescribeArnList = js.native
+  var resourceGroupArns: BatchDescribeArnList
 }
 object DescribeResourceGroupsRequest {
   

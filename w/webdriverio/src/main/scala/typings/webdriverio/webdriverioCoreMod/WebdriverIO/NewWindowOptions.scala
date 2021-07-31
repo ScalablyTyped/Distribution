@@ -1,41 +1,36 @@
 package typings.webdriverio.webdriverioCoreMod.WebdriverIO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NewWindowOptions extends js.Object {
-  var windowFeatures: js.UndefOr[String] = js.native
-  var windowName: js.UndefOr[String] = js.native
+trait NewWindowOptions extends StObject {
+  
+  var windowFeatures: js.UndefOr[String] = js.undefined
+  
+  var windowName: js.UndefOr[String] = js.undefined
 }
-
 object NewWindowOptions {
+  
   @scala.inline
   def apply(): NewWindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewWindowOptions]
   }
-  @scala.inline
-  implicit class NewWindowOptionsOps[Self <: NewWindowOptions] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setWindowFeatures(value: String): Self = this.set("windowFeatures", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWindowFeatures: Self = this.set("windowFeatures", js.undefined)
-    @scala.inline
-    def setWindowName(value: String): Self = this.set("windowName", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWindowName: Self = this.set("windowName", js.undefined)
-  }
   
+  @scala.inline
+  implicit class NewWindowOptionsMutableBuilder[Self <: NewWindowOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setWindowFeatures(value: String): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWindowFeaturesUndefined: Self = StObject.set(x, "windowFeatures", js.undefined)
+    
+    @scala.inline
+    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
+  }
 }
-

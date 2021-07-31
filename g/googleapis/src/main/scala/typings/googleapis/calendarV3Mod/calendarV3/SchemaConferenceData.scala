@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaConferenceData extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait SchemaConferenceData extends StObject {
     * name of the Hangout. - &quot;hangoutsMeet&quot;: the 10-letter meeting
     * code, for example &quot;aaa-bbbb-ccc&quot;.  Optional.
     */
-  var conferenceId: js.UndefOr[String] = js.native
+  var conferenceId: js.UndefOr[String] = js.undefined
   
   /**
     * The conference solution, such as Hangouts or Hangouts Meet. Unset for a
     * conference with a failed create request. Either conferenceSolution and at
     * least one entryPoint, or createRequest is required.
     */
-  var conferenceSolution: js.UndefOr[SchemaConferenceSolution] = js.native
+  var conferenceSolution: js.UndefOr[SchemaConferenceSolution] = js.undefined
   
   /**
     * A request to generate a new conference and attach it to the event. The
@@ -30,7 +28,7 @@ trait SchemaConferenceData extends StObject {
     * check the status field. Either conferenceSolution and at least one
     * entryPoint, or createRequest is required.
     */
-  var createRequest: js.UndefOr[SchemaCreateConferenceRequest] = js.native
+  var createRequest: js.UndefOr[SchemaCreateConferenceRequest] = js.undefined
   
   /**
     * Information about individual conference entry points, such as URLs or
@@ -38,20 +36,20 @@ trait SchemaConferenceData extends StObject {
     * conferenceSolution and at least one entryPoint, or createRequest is
     * required.
     */
-  var entryPoints: js.UndefOr[js.Array[SchemaEntryPoint]] = js.native
+  var entryPoints: js.UndefOr[js.Array[SchemaEntryPoint]] = js.undefined
   
   /**
     * Additional notes (such as instructions from the domain administrator,
     * legal notices) to display to the user. Can contain HTML. The maximum
     * length is 2048 characters. Optional.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Additional properties related to a conference. An example would be a
     * solution-specific setting for enabling video streaming.
     */
-  var parameters: js.UndefOr[SchemaConferenceParameters] = js.native
+  var parameters: js.UndefOr[SchemaConferenceParameters] = js.undefined
   
   /**
     * The signature of the conference data. Genereated on server side. Must be
@@ -59,7 +57,7 @@ trait SchemaConferenceData extends StObject {
     * conference data will not be copied. Unset for a conference with a failed
     * create request. Optional for a conference with a pending create request.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object SchemaConferenceData {
   

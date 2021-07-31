@@ -2,15 +2,13 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mimetype extends StObject {
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var path: String = js.native
+  var path: String
 }
 object Mimetype {
   

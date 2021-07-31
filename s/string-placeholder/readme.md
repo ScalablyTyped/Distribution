@@ -12,7 +12,7 @@ Replaces placeholders from string templates.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 30583 |
+| # downloads        | 27585 |
 | # stars            | 0 |
 
 ## Links

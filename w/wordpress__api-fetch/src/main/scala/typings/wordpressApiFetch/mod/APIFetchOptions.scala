@@ -3,17 +3,17 @@ package typings.wordpressApiFetch.mod
 import typings.std.RequestInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait APIFetchOptions extends RequestInit {
+trait APIFetchOptions
+  extends StObject
+     with RequestInit {
   
   /**
     * Shorthand to be used in place of body, accepts an object value to be
     * stringified to JSON.
     */
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Unlike `fetch`, the `Promise` return value of `apiFetch` will resolve to the
@@ -21,18 +21,18 @@ trait APIFetchOptions extends RequestInit {
     *
     * @defaultValue true
     */
-  var parse: js.UndefOr[Boolean] = js.native
+  var parse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shorthand to be used in place of url, appended to the REST API root URL
     * for the current site.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Absolute URL to the endpoint from which to fetch.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object APIFetchOptions {
   

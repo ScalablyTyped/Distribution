@@ -2,7 +2,6 @@ package typings.akuminaCore.mod.Digispace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.UserContext")
@@ -64,9 +63,8 @@ object UserContext {
   def PostalCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostalCode")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.UserContext.SetLanguage")
-  @js.native
-  def SetLanguage(obj: js.Any): Unit = js.native
+  @scala.inline
+  def SetLanguage(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetLanguage")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.UserContext.State")

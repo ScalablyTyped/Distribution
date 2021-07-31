@@ -12,7 +12,6 @@ import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexMod {
@@ -24,21 +23,21 @@ object indexMod {
     def add(sourceEntry: IndexEntry): Double = js.native
     
     def addAll(): js.Promise[Double] = js.native
-    def addAll(pathspec: js.UndefOr[scala.Nothing], flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
-    def addAll(pathspec: js.UndefOr[scala.Nothing], flags: Double): js.Promise[Double] = js.native
-    def addAll(pathspec: js.UndefOr[scala.Nothing], flags: Double, callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: String): js.Promise[Double] = js.native
-    def addAll(pathspec: String, flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: String, flags: Double): js.Promise[Double] = js.native
     def addAll(pathspec: String, flags: Double, callback: js.Function): js.Promise[Double] = js.native
+    def addAll(pathspec: String, flags: Unit, callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: js.Array[String]): js.Promise[Double] = js.native
-    def addAll(pathspec: js.Array[String], flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: js.Array[String], flags: Double): js.Promise[Double] = js.native
     def addAll(pathspec: js.Array[String], flags: Double, callback: js.Function): js.Promise[Double] = js.native
+    def addAll(pathspec: js.Array[String], flags: Unit, callback: js.Function): js.Promise[Double] = js.native
+    def addAll(pathspec: Unit, flags: Double): js.Promise[Double] = js.native
+    def addAll(pathspec: Unit, flags: Double, callback: js.Function): js.Promise[Double] = js.native
+    def addAll(pathspec: Unit, flags: Unit, callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: Strarray): js.Promise[Double] = js.native
-    def addAll(pathspec: Strarray, flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
     def addAll(pathspec: Strarray, flags: Double): js.Promise[Double] = js.native
     def addAll(pathspec: Strarray, flags: Double, callback: js.Function): js.Promise[Double] = js.native
+    def addAll(pathspec: Strarray, flags: Unit, callback: js.Function): js.Promise[Double] = js.native
     
     def addByPath(path: String): js.Promise[Double] = js.native
     
@@ -112,17 +111,18 @@ object indexMod {
   /* static members */
   object Index {
     
-    @JSImport("nodegit/index_", "Index.entryIsConflict")
+    @JSImport("nodegit/index_", "Index")
     @js.native
-    def entryIsConflict(entry: IndexEntry): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/index_", "Index.entryStage")
-    @js.native
-    def entryStage(entry: IndexEntry): Double = js.native
+    @scala.inline
+    def entryIsConflict(entry: IndexEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("entryIsConflict")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("nodegit/index_", "Index.open")
-    @js.native
-    def open(indexPath: String): js.Promise[Index] = js.native
+    @scala.inline
+    def entryStage(entry: IndexEntry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("entryStage")(entry.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def open(indexPath: String): js.Promise[Index] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(indexPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Index]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

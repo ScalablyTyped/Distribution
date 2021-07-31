@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkTypes.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandlerExecutionContext
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * A logger that may be invoked by any handler during execution of an
     * operation.
     */
-  var logger: js.UndefOr[Logger] = js.native
+  var logger: js.UndefOr[Logger] = js.undefined
 }
 object HandlerExecutionContext {
   

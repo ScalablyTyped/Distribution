@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Links extends StObject {
   
-  def Add(Item: js.Any): Link = js.native
+  def Add(Item: js.Any): Link
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Link = js.native
+  def Item(Index: js.Any): Link
   
   @JSName("Outlook.Links_typekey")
-  var OutlookDotLinks_typekey: Links = js.native
+  var OutlookDotLinks_typekey: Links
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Links {
   

@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileAppInstallTimeSettings extends StObject {
   
   // The time at which the app should be installed.
-  var deadlineDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var deadlineDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time at which the app should be available for installation.
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether the local device time or UTC time should be used when determining the available and deadline times.
-  var useLocalTime: js.UndefOr[Boolean] = js.native
+  var useLocalTime: js.UndefOr[Boolean] = js.undefined
 }
 object MobileAppInstallTimeSettings {
   

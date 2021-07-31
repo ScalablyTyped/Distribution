@@ -8,19 +8,20 @@ import typings.passportHttp.passportHttpBooleans.`false`
 import typings.passportHttp.passportHttpBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-http", "BasicStrategy")
   @js.native
-  class BasicStrategy protected () extends Strategy {
+  class BasicStrategy protected ()
+    extends StObject
+       with Strategy {
     def this(verify: BasicVerifyFunction) = this()
     def this(options: BasicStrategyOptions[`false`], verify: BasicVerifyFunction) = this()
     def this(options: BasicStrategyOptions[`true`], verify: BasicVerifyFunctionWithRequest) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_BasicStrategy: String = js.native
@@ -28,24 +29,25 @@ object mod {
   
   @JSImport("passport-http", "DigestStrategy")
   @js.native
-  class DigestStrategy protected () extends Strategy {
+  class DigestStrategy protected ()
+    extends StObject
+       with Strategy {
     def this(secret: DigestSecretFunction) = this()
     def this(options: DigestStrategyOptions, secret: DigestSecretFunction) = this()
     def this(secret: DigestSecretFunction, validate: DigestValidateFunction) = this()
     def this(options: DigestStrategyOptions, secret: DigestSecretFunction, validate: DigestValidateFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_DigestStrategy: String = js.native
   }
   
-  @js.native
   trait BasicStrategyOptions[req /* <: Boolean */] extends StObject {
     
-    var passReqToCallback: js.UndefOr[req] = js.native
+    var passReqToCallback: js.UndefOr[req] = js.undefined
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
   }
   object BasicStrategyOptions {
     
@@ -56,7 +58,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BasicStrategyOptionsMutableBuilder[Self <: BasicStrategyOptions[_], req /* <: Boolean */] (val x: Self with BasicStrategyOptions[req]) extends AnyVal {
+    implicit class BasicStrategyOptionsMutableBuilder[Self <: BasicStrategyOptions[?], req /* <: Boolean */] (val x: Self & BasicStrategyOptions[req]) extends AnyVal {
       
       @scala.inline
       def setPassReqToCallback(value: req): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
@@ -98,18 +100,17 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait DigestStrategyOptions extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var domain: js.UndefOr[String | js.Array[String]] = js.native
+    var domain: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var opaque: js.UndefOr[String] = js.native
+    var opaque: js.UndefOr[String] = js.undefined
     
-    var qop: js.UndefOr[String | js.Array[String]] = js.native
+    var qop: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
   }
   object DigestStrategyOptions {
     
@@ -166,16 +167,15 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait DigestValidateOptions extends StObject {
     
-    var cnonce: String = js.native
+    var cnonce: String
     
-    var nc: Double = js.native
+    var nc: Double
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var opaque: String = js.native
+    var opaque: String
   }
   object DigestValidateOptions {
     

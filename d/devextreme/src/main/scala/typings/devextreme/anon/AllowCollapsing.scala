@@ -4,21 +4,19 @@ import typings.devextreme.devextremeStrings.buttonClick
 import typings.devextreme.devextremeStrings.rowClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowCollapsing extends StObject {
   
-  var allowCollapsing: js.UndefOr[Boolean] = js.native
+  var allowCollapsing: js.UndefOr[Boolean] = js.undefined
   
-  var autoExpandAll: js.UndefOr[Boolean] = js.native
+  var autoExpandAll: js.UndefOr[Boolean] = js.undefined
   
-  var contextMenuEnabled: js.UndefOr[Boolean] = js.native
+  var contextMenuEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var expandMode: js.UndefOr[buttonClick | rowClick] = js.native
+  var expandMode: js.UndefOr[buttonClick | rowClick] = js.undefined
   
-  var texts: js.UndefOr[GroupByThisColumn] = js.native
+  var texts: js.UndefOr[GroupByThisColumn] = js.undefined
 }
 object AllowCollapsing {
   

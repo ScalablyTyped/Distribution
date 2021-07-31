@@ -3,46 +3,44 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResolverRulesMod {
   
-  @JSImport("@pulumi/aws/route53/getResolverRules", "getResolverRules")
+  @JSImport("@pulumi/aws/route53/getResolverRules", JSImport.Namespace)
   @js.native
-  def getResolverRules(): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRules", "getResolverRules")
-  @js.native
-  def getResolverRules(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRules", "getResolverRules")
-  @js.native
-  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRules", "getResolverRules")
-  @js.native
-  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getResolverRules(): js.Promise[GetResolverRulesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")().asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: Unit, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRulesResult]]
+  
   trait GetResolverRulesArgs extends StObject {
     
     /**
       * When the desired resolver rules are shared with another AWS account, the account ID of the account that the rules are shared with.
       */
-    val ownerId: js.UndefOr[String] = js.native
+    val ownerId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the outbound resolver endpoint for the desired resolver rules.
       */
-    val resolverEndpointId: js.UndefOr[String] = js.native
+    val resolverEndpointId: js.UndefOr[String] = js.undefined
     
     /**
       * The rule type of the desired resolver rules. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
       */
-    val ruleType: js.UndefOr[String] = js.native
+    val ruleType: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the desired resolver rules are shared and, if so, whether the current account is sharing the rules with another account, or another account is sharing the rules with the current account. Valid values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
       */
-    val shareStatus: js.UndefOr[String] = js.native
+    val shareStatus: js.UndefOr[String] = js.undefined
   }
   object GetResolverRulesArgs {
     
@@ -81,26 +79,25 @@ object getResolverRulesMod {
     }
   }
   
-  @js.native
   trait GetResolverRulesResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val ownerId: js.UndefOr[String] = js.native
+    val ownerId: js.UndefOr[String] = js.undefined
     
-    val resolverEndpointId: js.UndefOr[String] = js.native
+    val resolverEndpointId: js.UndefOr[String] = js.undefined
     
     /**
       * The IDs of the matched resolver rules.
       */
-    val resolverRuleIds: js.Array[String] = js.native
+    val resolverRuleIds: js.Array[String]
     
-    val ruleType: js.UndefOr[String] = js.native
+    val ruleType: js.UndefOr[String] = js.undefined
     
-    val shareStatus: js.UndefOr[String] = js.native
+    val shareStatus: js.UndefOr[String] = js.undefined
   }
   object GetResolverRulesResult {
     

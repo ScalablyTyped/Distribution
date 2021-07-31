@@ -5,7 +5,6 @@ import typings.std.NodeListOf
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
@@ -43,28 +42,27 @@ object commonMod {
       var options: TOptions = js.native
     }
     
-    @js.native
     trait InternationalizationOptions extends StObject {
       
-      var cancel: String = js.native
+      var cancel: String
       
-      var clear: String = js.native
+      var clear: String
       
-      var done: String = js.native
+      var done: String
       
-      var months: js.Array[String] = js.native
+      var months: js.Array[String]
       
-      var monthsShort: js.Array[String] = js.native
+      var monthsShort: js.Array[String]
       
-      var nextMonth: String = js.native
+      var nextMonth: String
       
-      var previousMonth: String = js.native
+      var previousMonth: String
       
-      var weekdays: js.Array[String] = js.native
+      var weekdays: js.Array[String]
       
-      var weekdaysAbbrev: js.Array[String] = js.native
+      var weekdaysAbbrev: js.Array[String]
       
-      var weekdaysShort: js.Array[String] = js.native
+      var weekdaysShort: js.Array[String]
     }
     object InternationalizationOptions {
       
@@ -135,14 +133,13 @@ object commonMod {
       }
     }
     
-    @js.native
     trait Openable extends StObject {
       
-      def close(): Unit = js.native
+      def close(): Unit
       
-      var isOpen: Boolean = js.native
+      var isOpen: Boolean
       
-      def open(): Unit = js.native
+      def open(): Unit
     }
     object Openable {
       

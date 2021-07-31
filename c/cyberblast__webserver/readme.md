@@ -12,7 +12,7 @@ A minimal node-based web server
 | Keywords           | node, webserver |
 | # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 843 |
+| # downloads        | 787 |
 | # stars            | 0 |
 
 ## Links

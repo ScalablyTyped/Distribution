@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachDiskRequest extends StObject {
   
   /**
     * The unique Lightsail disk name (e.g., my-disk).
     */
-  var diskName: ResourceName = js.native
+  var diskName: ResourceName
   
   /**
     * The disk path to expose to the instance (e.g., /dev/xvdf).
     */
-  var diskPath: NonEmptyString = js.native
+  var diskPath: NonEmptyString
   
   /**
     * The name of the Lightsail instance where you want to utilize the storage disk.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
 }
 object AttachDiskRequest {
   

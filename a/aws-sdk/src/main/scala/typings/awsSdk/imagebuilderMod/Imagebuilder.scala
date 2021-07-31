@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait Imagebuilder extends Service {
   ): Request[CancelImageCreationResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Imagebuilder: ConfigBase with ClientConfiguration = js.native
+  var config_Imagebuilder: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new component that can be used to build, validate, test, and assess your image.

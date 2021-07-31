@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,18 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see http://www.w3.org/TR/smil20/smil-timing.html
   * @see http://www.w3.org/TR/smil20/smil-timing.html#Timing-TimingConcepts
   */
-@js.native
-trait XTimeContainer extends XAnimationNode {
+trait XTimeContainer
+  extends StObject
+     with XAnimationNode {
   
-  def appendChild(newChild: XAnimationNode): XAnimationNode = js.native
+  def appendChild(newChild: XAnimationNode): XAnimationNode
   
-  def insertAfter(newChild: XAnimationNode, refChild: XAnimationNode): XAnimationNode = js.native
+  def insertAfter(newChild: XAnimationNode, refChild: XAnimationNode): XAnimationNode
   
-  def insertBefore(newChild: XAnimationNode, refChild: XAnimationNode): XAnimationNode = js.native
+  def insertBefore(newChild: XAnimationNode, refChild: XAnimationNode): XAnimationNode
   
-  def removeChild(oldChild: XAnimationNode): XAnimationNode = js.native
+  def removeChild(oldChild: XAnimationNode): XAnimationNode
   
-  def replaceChild(newChild: XAnimationNode, oldChild: XAnimationNode): XAnimationNode = js.native
+  def replaceChild(newChild: XAnimationNode, oldChild: XAnimationNode): XAnimationNode
 }
 object XTimeContainer {
   

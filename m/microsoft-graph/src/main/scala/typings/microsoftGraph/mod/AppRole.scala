@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppRole extends StObject {
   
   /**
@@ -14,34 +12,34 @@ trait AppRole extends StObject {
     * other applications' service principals are also known as application permissions. The 'Application' value is only
     * supported for app roles defined on application entities.
     */
-  var allowedMemberTypes: js.UndefOr[js.Array[String]] = js.native
+  var allowedMemberTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The description for the app role. This is displayed when the app role is being assigned and, if the app role functions
     * as an application permission, during consent experiences.
     */
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display name for the permission that appears in the app role assignment and consent experiences.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Unique role identifier inside the appRoles collection. When creating a new app role, a new Guid identifier must be
     * provided.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * When creating or updating an app role, this must be set to true (which is the default). To delete a role, this must
     * first be set to false. At that point, in a subsequent call, this role may be removed.
     */
-  var isEnabled: js.UndefOr[Boolean] = js.native
+  var isEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if the app role is defined on the application object or on the servicePrincipal entity. Must not be included
     * in any POST or PATCH requests. Read-only.
     */
-  var origin: js.UndefOr[NullableOption[String]] = js.native
+  var origin: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or
@@ -49,7 +47,7 @@ trait AppRole extends StObject {
     * ; = ? @ [ ] ^ + _ { } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space
     * character, are not allowed.
     */
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AppRole {
   

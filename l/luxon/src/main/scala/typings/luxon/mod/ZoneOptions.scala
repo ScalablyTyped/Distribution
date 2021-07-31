@@ -2,18 +2,16 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneOptions extends StObject {
   
   /**
     * @deprecated since 0.2.12. Use keepLocalTime instead
     */
-  var keepCalendarTime: js.UndefOr[Boolean] = js.native
+  var keepCalendarTime: js.UndefOr[Boolean] = js.undefined
   
-  var keepLocalTime: js.UndefOr[Boolean] = js.native
+  var keepLocalTime: js.UndefOr[Boolean] = js.undefined
 }
 object ZoneOptions {
   

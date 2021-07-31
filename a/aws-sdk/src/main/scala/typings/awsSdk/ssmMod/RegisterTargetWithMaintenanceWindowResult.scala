@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterTargetWithMaintenanceWindowResult extends StObject {
   
   /**
     * The ID of the target definition in this maintenance window.
     */
-  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.native
+  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.undefined
 }
 object RegisterTargetWithMaintenanceWindowResult {
   

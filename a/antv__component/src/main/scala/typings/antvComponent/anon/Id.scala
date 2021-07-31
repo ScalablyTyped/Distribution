@@ -2,71 +2,69 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var defaultCfg: Label = js.native
+  var defaultCfg: Label
   
   /**
     * 结束点, x, y
     * @type {object}
     */
-  var end: js.Any = js.native
+  var end: js.Any
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var overlapOrder: js.Array[String] = js.native
+  var overlapOrder: js.Array[String]
   
   /**
     * 起始点, x, y
     * @type {object}
     */
-  var start: js.Any = js.native
+  var start: js.Any
   
-  var subTickLine: js.Any = js.native
+  var subTickLine: js.Any
   
-  var ticks: js.Array[_] = js.native
+  var ticks: js.Array[js.Any]
   
-  var title: js.Any = js.native
+  var title: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var verticalFactor: Double = js.native
+  var verticalFactor: Double
   
-  var verticalLimitLength: js.Any = js.native
+  var verticalLimitLength: js.Any
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Id {
   
@@ -91,7 +89,7 @@ object Id {
     overlapOrder: js.Array[String],
     start: js.Any,
     subTickLine: js.Any,
-    ticks: js.Array[_],
+    ticks: js.Array[js.Any],
     title: js.Any,
     `type`: String,
     updateAutoRender: Boolean,
@@ -168,7 +166,7 @@ object Id {
     def setSubTickLine(value: js.Any): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))

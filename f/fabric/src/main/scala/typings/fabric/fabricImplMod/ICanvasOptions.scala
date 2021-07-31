@@ -2,11 +2,11 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICanvasOptions extends IStaticCanvasOptions {
+trait ICanvasOptions
+  extends StObject
+     with IStaticCanvasOptions {
   
   /**
     * Indicates which key enable alternate action on corner
@@ -17,7 +17,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @type String
     * @default
     */
-  var altActionKey: js.UndefOr[String] = js.native
+  var altActionKey: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates which key enable alternative selection
@@ -31,7 +31,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @type null|String
     * @default
     */
-  var altSelectionKey: js.UndefOr[String | Null] = js.native
+  var altSelectionKey: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Indicates which key enable centered Transform
@@ -42,34 +42,34 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @type String
     * @default
     */
-  var centeredKey: js.UndefOr[String] = js.native
+  var centeredKey: js.UndefOr[String] = js.undefined
   
   /**
     * When true, objects use center point as the origin of rotate transformation.
     * <b>Backwards incompatibility note:</b> This property replaces "centerTransform" (Boolean).
     */
-  var centeredRotation: js.UndefOr[Boolean] = js.native
+  var centeredRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, objects use center point as the origin of scale transformation.
     * <b>Backwards incompatibility note:</b> This property replaces "centerTransform" (Boolean).
     */
-  var centeredScaling: js.UndefOr[Boolean] = js.native
+  var centeredScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default element class that's given to wrapper (div) element of canvas
     */
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Default cursor value used for the entire canvas
     */
-  var defaultCursor: js.UndefOr[String] = js.native
+  var defaultCursor: js.UndefOr[String] = js.undefined
   
   /**
     * Color of object's fill
     */
-  var fill: js.UndefOr[String | Pattern | Gradient] = js.native
+  var fill: js.UndefOr[String | Pattern | Gradient] = js.undefined
   
   /**
     * Indicates if the canvas can fire middle click events
@@ -77,7 +77,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 1.7.8
     * @default
     */
-  var fireMiddleClick: js.UndefOr[Boolean] = js.native
+  var fireMiddleClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the canvas can fire right click events
@@ -85,41 +85,41 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 1.6.5
     * @default
     */
-  var fireRightClick: js.UndefOr[Boolean] = js.native
+  var fireRightClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Cursor value used during free drawing
     */
-  var freeDrawingCursor: js.UndefOr[String] = js.native
+  var freeDrawingCursor: js.UndefOr[String] = js.undefined
   
   /**
     * Canvas height
     * @type number
     * @default
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Default cursor value used when hovering over an object on canvas
     */
-  var hoverCursor: js.UndefOr[String] = js.native
+  var hoverCursor: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that canvas is interactive. This property should not be changed.
     */
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, mouse events on canvas (mousedown/mousemove/mouseup) result in free drawing.
     * After mousedown, mousemove creates a shape,
     * and then mouseup finalizes it and adds an instance of `fabric.Path` onto canvas.
     */
-  var isDrawingMode: js.UndefOr[Boolean] = js.native
+  var isDrawingMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default cursor value used when moving an object on canvas
     */
-  var moveCursor: js.UndefOr[String] = js.native
+  var moveCursor: js.UndefOr[String] = js.undefined
   
   /**
     * Cursor value used for disabled elements ( corners with disabled action )
@@ -127,52 +127,52 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 2.0.0
     * @default
     */
-  var notAllowedCursor: js.UndefOr[String] = js.native
+  var notAllowedCursor: js.UndefOr[String] = js.undefined
   
   /**
     * When true, object detection happens on per-pixel basis rather than on per-bounding-box
     */
-  var perPixelTargetFind: js.UndefOr[Boolean] = js.native
+  var perPixelTargetFind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether objects should remain in current stack position when selected.
     * When false objects are brought to top and rendered as part of the selection group
     * @type Boolean
     */
-  var preserveObjectStacking: js.UndefOr[Boolean] = js.native
+  var preserveObjectStacking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Cursor value used for rotation point
     */
-  var rotationCursor: js.UndefOr[String] = js.native
+  var rotationCursor: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether group selection should be enabled
     */
-  var selection: js.UndefOr[Boolean] = js.native
+  var selection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Color of the border of selection (usually slightly darker than color of selection itself)
     */
-  var selectionBorderColor: js.UndefOr[String] = js.native
+  var selectionBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Color of selection
     */
-  var selectionColor: js.UndefOr[String] = js.native
+  var selectionColor: js.UndefOr[String] = js.undefined
   
   /**
     * Default dash array pattern
     * If not empty the selection border is dashed
     */
-  var selectionDashArray: js.UndefOr[js.Array[Double]] = js.native
+  var selectionDashArray: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Select only shapes that are fully contained in the dragged selection rectangle.
     * @type Boolean
     * @default
     */
-  var selectionFullyContained: js.UndefOr[Boolean] = js.native
+  var selectionFullyContained: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates which key or keys enable multiple click selection
@@ -184,24 +184,24 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @type String|Array
     * @default
     */
-  var selectionKey: js.UndefOr[String | js.Array[String]] = js.native
+  var selectionKey: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Width of a line used in object/group selection
     */
-  var selectionLineWidth: js.UndefOr[Double] = js.native
+  var selectionLineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * When true, target detection is skipped when hovering over canvas. This can be used to improve performance.
     */
-  var skipTargetFind: js.UndefOr[Boolean] = js.native
+  var skipTargetFind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the angle that an object will lock to while rotating.
     * @type Number
     * @since 1.6.7
     */
-  var snapAngle: js.UndefOr[Double] = js.native
+  var snapAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the distance from the snapAngle the rotation will lock to the snapAngle.
@@ -210,7 +210,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 1.6.7
     * @default
     */
-  var snapThreshold: js.UndefOr[Null | Double] = js.native
+  var snapThreshold: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * Indicates if the right click on canvas can output the context menu or not
@@ -218,12 +218,12 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 1.6.5
     * @default
     */
-  var stopContextMenu: js.UndefOr[Boolean] = js.native
+  var stopContextMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of pixels around target pixel to tolerate (consider active) during object detection
     */
-  var targetFindTolerance: js.UndefOr[Double] = js.native
+  var targetFindTolerance: js.UndefOr[Double] = js.undefined
   
   /**
     * Keep track of the subTargets for Mouse Events
@@ -231,7 +231,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 3.6.0
     * @default
     */
-  var targets: js.UndefOr[js.Array[Object]] = js.native
+  var targets: js.UndefOr[js.Array[Object]] = js.undefined
   
   /**
     * Indicates which key enable unproportional scaling
@@ -241,20 +241,20 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @since 1.6.2
     * @type String
     */
-  var uniScaleKey: js.UndefOr[String] = js.native
+  var uniScaleKey: js.UndefOr[String] = js.undefined
   
   /**
     * When true, objects can be transformed by one side (unproportionally)
     * @type Boolean
     */
-  var uniScaleTransform: js.UndefOr[Boolean] = js.native
+  var uniScaleTransform: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Canvas width
     * @type number
     * @default
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ICanvasOptions {
   

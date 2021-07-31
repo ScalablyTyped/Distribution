@@ -3,7 +3,6 @@ package typings.webpackBundleAnalyzer
 import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats._Preset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackBundleAnalyzerStrings {
@@ -24,12 +23,16 @@ object webpackBundleAnalyzerStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `errors-only` extends _Preset
+  sealed trait `errors-only`
+    extends StObject
+       with _Preset
   @scala.inline
   def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
   
   @js.native
-  sealed trait `errors-warnings` extends _Preset
+  sealed trait `errors-warnings`
+    extends StObject
+       with _Preset
   @scala.inline
   def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
   
@@ -49,17 +52,23 @@ object webpackBundleAnalyzerStrings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait minimal extends _Preset
+  sealed trait minimal
+    extends StObject
+       with _Preset
   @scala.inline
   def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait none extends _Preset
+  sealed trait none
+    extends StObject
+       with _Preset
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends _Preset
+  sealed trait normal
+    extends StObject
+       with _Preset
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -89,7 +98,9 @@ object webpackBundleAnalyzerStrings {
   def static: static = "static".asInstanceOf[static]
   
   @js.native
-  sealed trait verbose extends _Preset
+  sealed trait verbose
+    extends StObject
+       with _Preset
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
   

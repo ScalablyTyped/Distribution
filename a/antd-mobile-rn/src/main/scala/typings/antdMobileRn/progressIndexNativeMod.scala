@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressIndexNativeMod {
@@ -51,16 +50,17 @@ object progressIndexNativeMod {
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
   
-  @js.native
-  trait ProgressProps extends ProgressPropsType {
+  trait ProgressProps
+    extends StObject
+       with ProgressPropsType {
     
-    var barStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var barStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var wrapWidth: js.UndefOr[Double] = js.native
+    var wrapWidth: js.UndefOr[Double] = js.undefined
   }
   object ProgressProps {
     

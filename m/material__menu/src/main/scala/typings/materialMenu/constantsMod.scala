@@ -2,7 +2,6 @@ package typings.materialMenu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -14,23 +13,31 @@ object constantsMod {
   object DefaultFocusState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DefaultFocusState with Double] = js.native
+    def apply(value: Double): js.UndefOr[DefaultFocusState & Double] = js.native
     
     @js.native
-    sealed trait FIRST_ITEM extends DefaultFocusState
-    /* 2 */ val FIRST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.FIRST_ITEM with Double = js.native
+    sealed trait FIRST_ITEM
+      extends StObject
+         with DefaultFocusState
+    /* 2 */ val FIRST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.FIRST_ITEM & Double = js.native
     
     @js.native
-    sealed trait LAST_ITEM extends DefaultFocusState
-    /* 3 */ val LAST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.LAST_ITEM with Double = js.native
+    sealed trait LAST_ITEM
+      extends StObject
+         with DefaultFocusState
+    /* 3 */ val LAST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.LAST_ITEM & Double = js.native
     
     @js.native
-    sealed trait LIST_ROOT extends DefaultFocusState
-    /* 1 */ val LIST_ROOT: typings.materialMenu.constantsMod.DefaultFocusState.LIST_ROOT with Double = js.native
+    sealed trait LIST_ROOT
+      extends StObject
+         with DefaultFocusState
+    /* 1 */ val LIST_ROOT: typings.materialMenu.constantsMod.DefaultFocusState.LIST_ROOT & Double = js.native
     
     @js.native
-    sealed trait NONE extends DefaultFocusState
-    /* 0 */ val NONE: typings.materialMenu.constantsMod.DefaultFocusState.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with DefaultFocusState
+    /* 0 */ val NONE: typings.materialMenu.constantsMod.DefaultFocusState.NONE & Double = js.native
   }
   
   /**

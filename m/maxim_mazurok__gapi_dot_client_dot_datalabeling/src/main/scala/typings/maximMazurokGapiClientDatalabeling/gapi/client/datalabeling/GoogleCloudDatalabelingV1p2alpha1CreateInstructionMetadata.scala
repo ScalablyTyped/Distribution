@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1p2alpha1CreateInstructionMetadata extends StObject {
   
   /** Timestamp when create instruction request was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The name of the created Instruction. projects/{project_id}/instructions/{instruction_id} */
-  var instruction: js.UndefOr[String] = js.native
+  var instruction: js.UndefOr[String] = js.undefined
   
   /** Partial failures encountered. E.g. single files that couldn't be read. Status details field will contain standard GCP error details. */
-  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.native
+  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
 }
 object GoogleCloudDatalabelingV1p2alpha1CreateInstructionMetadata {
   

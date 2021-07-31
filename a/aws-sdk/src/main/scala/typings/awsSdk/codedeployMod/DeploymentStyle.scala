@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentStyle extends StObject {
   
   /**
     * Indicates whether to route deployment traffic behind a load balancer.
     */
-  var deploymentOption: js.UndefOr[DeploymentOption] = js.native
+  var deploymentOption: js.UndefOr[DeploymentOption] = js.undefined
   
   /**
     * Indicates whether to run an in-place deployment or a blue/green deployment.
     */
-  var deploymentType: js.UndefOr[DeploymentType] = js.native
+  var deploymentType: js.UndefOr[DeploymentType] = js.undefined
 }
 object DeploymentStyle {
   

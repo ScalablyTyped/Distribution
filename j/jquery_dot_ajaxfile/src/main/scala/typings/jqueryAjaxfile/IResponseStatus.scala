@@ -2,17 +2,15 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResponseStatus extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var isSuccess: Boolean = js.native
+  var isSuccess: Boolean
   
-  var text: String = js.native
+  var text: String
 }
 object IResponseStatus {
   

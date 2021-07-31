@@ -3,15 +3,13 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.shapesIdentityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceLayoutPayload extends StObject {
   
-  var opts: ReplaceLayoutOpts = js.native
+  var opts: ReplaceLayoutOpts
   
-  var target: Identity = js.native
+  var target: Identity
 }
 object ReplaceLayoutPayload {
   

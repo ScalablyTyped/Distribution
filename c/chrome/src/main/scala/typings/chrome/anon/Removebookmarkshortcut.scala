@@ -2,15 +2,13 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Removebookmarkshortcut extends StObject {
   
-  var remove_bookmark_shortcut: js.UndefOr[Boolean] = js.native
+  var remove_bookmark_shortcut: js.UndefOr[Boolean] = js.undefined
   
-  var remove_button: js.UndefOr[Boolean] = js.native
+  var remove_button: js.UndefOr[Boolean] = js.undefined
 }
 object Removebookmarkshortcut {
   

@@ -3,7 +3,6 @@ package typings.miniprogramWxs
 import typings.miniprogramWxs.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // declare var Boolean: BooleanConstructor;
@@ -24,9 +23,9 @@ trait Number extends StObject {
   def toFixed(): java.lang.String = js.native
   def toFixed(fractionDigits: Double): java.lang.String = js.native
   
-  def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: java.lang.String): java.lang.String = js.native
   def toLocaleString(locales: java.lang.String, options: NumberFormatOptions): java.lang.String = js.native
+  def toLocaleString(locales: Unit, options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: Array[java.lang.String]): java.lang.String = js.native
   def toLocaleString(locales: Array[java.lang.String], options: NumberFormatOptions): java.lang.String = js.native
   

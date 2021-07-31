@@ -2,31 +2,29 @@ package typings.box2d.Box2D.Collision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2SimplexCache extends StObject {
   
   /**
     * Number in cache.
     **/
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Vertices on shape a.
     **/
-  var indexA: js.Array[Double] = js.native
+  var indexA: js.Array[Double]
   
   /**
     * Vertices on shape b.
     **/
-  var indexB: js.Array[Double] = js.native
+  var indexB: js.Array[Double]
   
   /**
     * Length or area.
     **/
-  var metric: Double = js.native
+  var metric: Double
 }
 object b2SimplexCache {
   

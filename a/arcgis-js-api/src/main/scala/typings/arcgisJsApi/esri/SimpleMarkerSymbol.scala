@@ -10,17 +10,17 @@ import typings.arcgisJsApi.arcgisJsApiStrings.triangle
 import typings.arcgisJsApi.arcgisJsApiStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
 - typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait SimpleMarkerSymbol
-  extends Symbol2D
+  extends StObject
      with MarkerSymbol
      with typings.arcgisJsApi.esri.symbols.MarkerSymbol
      with typings.arcgisJsApi.esri.symbols.Symbol2D
+     with Symbol2D
      with symbolsMarkerSymbol {
   
   /**

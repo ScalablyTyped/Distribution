@@ -2,38 +2,36 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutableSpecification extends StObject {
   
   /** A Database. */
-  var db: Database = js.native
+  var db: Database
   
   /** True to enable single row/value results processing. */
-  var enhancedFunctions: Boolean = js.native
+  var enhancedFunctions: Boolean
   
   /** Whether a database function accepts variable-length argument lists as the last parameter. */
-  var isVariadic: Boolean = js.native
+  var isVariadic: Boolean
   
   /** The table or view's name. */
-  var name: String = js.native
+  var name: String
   
   /** Number of parameters the executable expects. */
-  var paramCount: Double = js.native
+  var paramCount: Double
   
   /** The name of the schema owning the table or */
-  var schema: String = js.native
+  var schema: String
   
   /** If true, return the first result row as an object (with enhancedFunctions). */
-  var singleRow: Boolean = js.native
+  var singleRow: Boolean
   
   /** If true, return results as a primitive or primitives (with enhancedFunctions). */
-  var singleValue: Boolean = js.native
+  var singleValue: Boolean
   
   /** A function invocation statement or a pg-promise QueryFile. */
-  var sql: js.Any = js.native
+  var sql: js.Any
 }
 object ExecutableSpecification {
   

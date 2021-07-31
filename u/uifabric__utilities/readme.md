@@ -10,9 +10,9 @@ Fluent UI React utilities for building components.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/utilities |
 | Keywords           | - |
-| # releases         | 187 |
-| # dependents       | 40 |
-| # downloads        | 4259717 |
+| # releases         | 178 |
+| # dependents       | 48 |
+| # downloads        | 5171500 |
 | # stars            | 0 |
 
 ## Links

@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioParam extends StObject {
   
-  var contextId: GraphObjectId = js.native
+  var contextId: GraphObjectId
   
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
-  var maxValue: Double = js.native
+  var maxValue: Double
   
-  var minValue: Double = js.native
+  var minValue: Double
   
-  var nodeId: GraphObjectId = js.native
+  var nodeId: GraphObjectId
   
-  var paramId: GraphObjectId = js.native
+  var paramId: GraphObjectId
   
-  var paramType: ParamType = js.native
+  var paramType: ParamType
   
-  var rate: AutomationRate = js.native
+  var rate: AutomationRate
 }
 object AudioParam {
   

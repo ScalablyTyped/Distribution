@@ -2,23 +2,21 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Betweenlines extends StObject {
   
-  var between_lines: Boolean = js.native
+  var between_lines: Boolean
   
-  var code: String = js.native
+  var code: String
   
-  var shift_down: Double = js.native
+  var shift_down: Double
   
-  var shift_right: Double = js.native
+  var shift_right: Double
   
-  var shift_up: Double = js.native
+  var shift_up: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Betweenlines {
   

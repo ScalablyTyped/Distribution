@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayListApiConfigsResponse extends StObject {
   
   /** API Configs. */
-  var apiConfigs: js.UndefOr[js.Array[ApigatewayApiConfig]] = js.native
+  var apiConfigs: js.UndefOr[js.Array[ApigatewayApiConfig]] = js.undefined
   
   /** Next page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachableLocations: js.UndefOr[js.Array[String]] = js.native
+  var unreachableLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ApigatewayListApiConfigsResponse {
   

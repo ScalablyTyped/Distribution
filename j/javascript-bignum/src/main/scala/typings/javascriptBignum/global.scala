@@ -2,7 +2,6 @@ package typings.javascriptBignum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -25,7 +24,6 @@ object global {
   @scala.inline
   def maxIntegerDigits_=(x: Double): Unit = js.Dynamic.global.updateDynamic("maxIntegerDigits")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("raise")
-  @js.native
-  def raise(conditionType: String, message: String, irritants: js.Any*): Unit = js.native
+  @scala.inline
+  def raise(conditionType: String, message: String, irritants: js.Any*): Unit = (js.Dynamic.global.applyDynamic("raise")(conditionType.asInstanceOf[js.Any], message.asInstanceOf[js.Any], irritants.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

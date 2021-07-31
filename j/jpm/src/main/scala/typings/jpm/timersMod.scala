@@ -2,7 +2,6 @@ package typings.jpm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object timersMod {
   
-  @JSImport("sdk/timers", "clearInterval")
+  @JSImport("sdk/timers", JSImport.Namespace)
   @js.native
-  def clearInterval(intervalID: INTERVAL_ID): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sdk/timers", "clearTimeout")
-  @js.native
-  def clearTimeout(timerID: TIMEOUT_ID): Unit = js.native
+  @scala.inline
+  def clearInterval(intervalID: INTERVAL_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(intervalID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("sdk/timers", "setInterval")
-  @js.native
-  def setInterval(callback: js.Function1[/* repeated */ js.Any, _], timeoutMS: Double): INTERVAL_ID = js.native
+  @scala.inline
+  def clearTimeout(timerID: TIMEOUT_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("sdk/timers", "setTimeout")
-  @js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, _], timeoutMS: Double): TIMEOUT_ID = js.native
+  @scala.inline
+  def setInterval(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): INTERVAL_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[INTERVAL_ID]
+  
+  @scala.inline
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): TIMEOUT_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[TIMEOUT_ID]
   
   type INTERVAL_ID = Double
   

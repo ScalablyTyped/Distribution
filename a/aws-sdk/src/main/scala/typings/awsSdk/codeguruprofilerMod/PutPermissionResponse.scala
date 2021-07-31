@@ -2,21 +2,19 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPermissionResponse extends StObject {
   
   /**
     *  The JSON-formatted resource-based policy on the profiling group that includes the added permissions. 
     */
-  var policy: String = js.native
+  var policy: String
   
   /**
     *  A universally unique identifier (UUID) for the revision of the resource-based policy that includes the added permissions. The JSON-formatted policy is in the policy element of the response. 
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object PutPermissionResponse {
   

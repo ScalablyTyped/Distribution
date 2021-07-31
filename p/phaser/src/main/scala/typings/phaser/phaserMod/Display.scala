@@ -12,7 +12,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
@@ -49,6 +48,10 @@ object Display {
     
     object In {
       
+      @JSImport("phaser", "Display.Align.In")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Takes given Game Object and aligns it so that it is positioned in the bottom center of the other.
         * @param gameObject The Game Object that will be positioned.
@@ -56,18 +59,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the bottom left of the other.
@@ -76,18 +75,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the bottom right of the other.
@@ -96,18 +91,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the center of the other.
@@ -116,18 +107,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.Center")
-      @js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.Center")
-      @js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.Center")
-      @js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.Center")
-      @js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the left center of the other.
@@ -136,18 +123,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned relative to the other.
@@ -158,24 +141,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = js.native
-      @JSImport("phaser", "Display.Align.In.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](
-        child: G,
-        alignIn: GameObject,
-        position: integer,
-        offsetX: js.UndefOr[scala.Nothing],
-        offsetY: Double
-      ): G = js.native
-      @JSImport("phaser", "Display.Align.In.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the right center of the other.
@@ -184,18 +157,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the top center of the other.
@@ -204,18 +173,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the top left of the other.
@@ -224,18 +189,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the top right of the other.
@@ -244,18 +205,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.In.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.In.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
     }
     
     /**
@@ -323,6 +280,10 @@ object Display {
     
     object To {
       
+      @JSImport("phaser", "Display.Align.To")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the bottom center position of the other.
         * @param gameObject The Game Object that will be positioned.
@@ -330,18 +291,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomCenter")
-      @js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the bottom left position of the other.
@@ -350,18 +307,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomLeft")
-      @js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the bottom right position of the other.
@@ -370,18 +323,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.BottomRight")
-      @js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("BottomRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the left bottom position of the other.
@@ -390,18 +339,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.LeftBottom")
-      @js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftBottom")
-      @js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftBottom")
-      @js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftBottom")
-      @js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the left center position of the other.
@@ -410,18 +355,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftCenter")
-      @js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the left top position of the other.
@@ -430,18 +371,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.LeftTop")
-      @js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftTop")
-      @js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftTop")
-      @js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.LeftTop")
-      @js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("LeftTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes a Game Object and aligns it next to another, at the given position.
@@ -452,24 +389,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
-      @JSImport("phaser", "Display.Align.To.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](
-        child: G,
-        alignTo: GameObject,
-        position: integer,
-        offsetX: js.UndefOr[scala.Nothing],
-        offsetY: Double
-      ): G = js.native
-      @JSImport("phaser", "Display.Align.To.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.QuickSet")
-      @js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.
@@ -478,18 +405,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.RightBottom")
-      @js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightBottom")
-      @js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightBottom")
-      @js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightBottom")
-      @js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightBottom")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the right center position of the other.
@@ -498,18 +421,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightCenter")
-      @js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the right top position of the other.
@@ -518,18 +437,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.RightTop")
-      @js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightTop")
-      @js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightTop")
-      @js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.RightTop")
-      @js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RightTop")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the top center position of the other.
@@ -538,18 +453,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopCenter")
-      @js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopCenter")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the top left position of the other.
@@ -558,18 +469,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopLeft")
-      @js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopLeft")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the top right position of the other.
@@ -578,18 +485,14 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      @JSImport("phaser", "Display.Align.To.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      @JSImport("phaser", "Display.Align.To.TopRight")
-      @js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      @scala.inline
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("TopRight")(gameObject.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
     }
   }
   
@@ -611,7 +514,8 @@ object Display {
   @JSImport("phaser", "Display.BaseShader")
   @js.native
   class BaseShader protected ()
-    extends typings.phaser.Phaser.Display.BaseShader {
+    extends StObject
+       with typings.phaser.Phaser.Display.BaseShader {
     /**
       * 
       * @param key The key of this shader. Must be unique within the shader cache.
@@ -621,20 +525,43 @@ object Display {
       */
     def this(key: String) = this()
     def this(key: String, fragmentSrc: String) = this()
-    def this(key: String, fragmentSrc: js.UndefOr[scala.Nothing], vertexSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String) = this()
-    def this(
-      key: String,
-      fragmentSrc: js.UndefOr[scala.Nothing],
-      vertexSrc: js.UndefOr[scala.Nothing],
-      uniforms: js.Any
-    ) = this()
-    def this(key: String, fragmentSrc: js.UndefOr[scala.Nothing], vertexSrc: String, uniforms: js.Any) = this()
-    def this(key: String, fragmentSrc: String, vertexSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: Unit, vertexSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: String, vertexSrc: Unit, uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: Unit, vertexSrc: String, uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: Unit, vertexSrc: Unit, uniforms: js.Any) = this()
+    
+    /**
+      * The source code, as a string, of the fragment shader being used.
+      */
+    /* CompleteClass */
+    var fragmentSrc: String = js.native
+    
+    /**
+      * The key of this shader, unique within the shader cache of this Phaser game instance.
+      */
+    /* CompleteClass */
+    var key: String = js.native
+    
+    /**
+      * The default uniforms for this shader.
+      */
+    /* CompleteClass */
+    var uniforms: js.Any = js.native
+    
+    /**
+      * The source code, as a string, of the vertex shader being used.
+      */
+    /* CompleteClass */
+    var vertexSrc: String = js.native
   }
   
   object Bounds {
+    
+    @JSImport("phaser", "Display.Bounds")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Positions the Game Object so that it is centered on the given coordinates.
@@ -642,56 +569,48 @@ object Display {
       * @param x The horizontal coordinate to position the Game Object on.
       * @param y The vertical coordinate to position the Game Object on.
       */
-    @JSImport("phaser", "Display.Bounds.CenterOn")
-    @js.native
-    def CenterOn[G /* <: GameObject */](gameObject: G, x: Double, y: Double): G = js.native
+    @scala.inline
+    def CenterOn[G /* <: GameObject */](gameObject: G, x: Double, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(gameObject.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Returns the bottom coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetBottom")
-    @js.native
-    def GetBottom(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetBottom(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBottom")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the unrotated bounds of the Game Object as a rectangle.
       * @param gameObject The Game Object to get the bounds value from.
       * @param output An object to store the values in.
       */
-    @JSImport("phaser", "Display.Bounds.GetBounds")
-    @js.native
-    def GetBounds(gameObject: GameObject): Rectangle | js.Object = js.native
-    @JSImport("phaser", "Display.Bounds.GetBounds")
-    @js.native
-    def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = js.native
-    @JSImport("phaser", "Display.Bounds.GetBounds")
-    @js.native
-    def GetBounds(gameObject: GameObject, output: Rectangle): Rectangle | js.Object = js.native
+    @scala.inline
+    def GetBounds(gameObject: GameObject): Rectangle | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Rectangle | js.Object]
+    @scala.inline
+    def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(gameObject.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Rectangle | js.Object]
+    @scala.inline
+    def GetBounds(gameObject: GameObject, output: Rectangle): Rectangle | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(gameObject.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Rectangle | js.Object]
     
     /**
       * Returns the center x coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetCenterX")
-    @js.native
-    def GetCenterX(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetCenterX(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCenterX")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the center y coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetCenterY")
-    @js.native
-    def GetCenterY(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetCenterY(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCenterY")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the left coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetLeft")
-    @js.native
-    def GetLeft(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetLeft(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLeft")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the amount the Game Object is visually offset from its x coordinate.
@@ -699,9 +618,8 @@ object Display {
       * This value will only be > 0 if `origin.x` is not equal to zero.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetOffsetX")
-    @js.native
-    def GetOffsetX(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetOffsetX(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOffsetX")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the amount the Game Object is visually offset from its y coordinate.
@@ -709,100 +627,97 @@ object Display {
       * This value will only be > 0 if `origin.y` is not equal to zero.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetOffsetY")
-    @js.native
-    def GetOffsetY(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetOffsetY(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOffsetY")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the right coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetRight")
-    @js.native
-    def GetRight(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetRight(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRight")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the top coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
-    @JSImport("phaser", "Display.Bounds.GetTop")
-    @js.native
-    def GetTop(gameObject: GameObject): Double = js.native
+    @scala.inline
+    def GetTop(gameObject: GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTop")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Positions the Game Object so that the bottom of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetBottom")
-    @js.native
-    def SetBottom[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    @scala.inline
+    def SetBottom[G /* <: GameObject */](gameObject: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBottom")(gameObject.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Positions the Game Object so that the center top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param x The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetCenterX")
-    @js.native
-    def SetCenterX[G /* <: GameObject */](gameObject: G, x: Double): G = js.native
+    @scala.inline
+    def SetCenterX[G /* <: GameObject */](gameObject: G, x: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCenterX")(gameObject.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Positions the Game Object so that the center top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param y The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetCenterY")
-    @js.native
-    def SetCenterY[G /* <: GameObject */](gameObject: G, y: Double): G = js.native
+    @scala.inline
+    def SetCenterY[G /* <: GameObject */](gameObject: G, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCenterY")(gameObject.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Positions the Game Object so that the left of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetLeft")
-    @js.native
-    def SetLeft[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    @scala.inline
+    def SetLeft[G /* <: GameObject */](gameObject: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetLeft")(gameObject.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Positions the Game Object so that the left of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetRight")
-    @js.native
-    def SetRight[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    @scala.inline
+    def SetRight[G /* <: GameObject */](gameObject: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRight")(gameObject.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
     
     /**
       * Positions the Game Object so that the top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
-    @JSImport("phaser", "Display.Bounds.SetTop")
-    @js.native
-    def SetTop[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    @scala.inline
+    def SetTop[G /* <: GameObject */](gameObject: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTop")(gameObject.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   }
   
   object Canvas {
     
+    @JSImport("phaser", "Display.Canvas")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object CanvasInterpolation {
+      
+      @JSImport("phaser", "Display.Canvas.CanvasInterpolation")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'bicubic' (aka 'auto').
         * @param canvas The canvas object to have the style set on.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasInterpolation.setBicubic")
-      @js.native
-      def setBicubic(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+      @scala.inline
+      def setBicubic(canvas: HTMLCanvasElement): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("setBicubic")(canvas.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'crisp' (aka 'optimize contrast' on webkit).
         * @param canvas The canvas object to have the style set on.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasInterpolation.setCrisp")
-      @js.native
-      def setCrisp(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+      @scala.inline
+      def setCrisp(canvas: HTMLCanvasElement): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("setCrisp")(canvas.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
     }
     
     /**
@@ -815,6 +730,10 @@ object Display {
       */
     object CanvasPool {
       
+      @JSImport("phaser", "Display.Canvas.CanvasPool")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
         * @param parent The parent of the Canvas object.
@@ -823,101 +742,38 @@ object Display {
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         * @param selfParent Use the generated Canvas element as the parent? Default false.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
-        canvasType: js.UndefOr[scala.Nothing],
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
-        canvasType: integer
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
-        canvasType: integer,
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: js.UndefOr[scala.Nothing],
-        height: integer,
-        canvasType: js.UndefOr[scala.Nothing],
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer, canvasType: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: js.UndefOr[scala.Nothing],
-        height: integer,
-        canvasType: integer,
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: integer,
-        height: js.UndefOr[scala.Nothing],
-        canvasType: js.UndefOr[scala.Nothing],
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: integer, height: js.UndefOr[scala.Nothing], canvasType: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: integer,
-        height: js.UndefOr[scala.Nothing],
-        canvasType: integer,
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(
-        parent: js.Any,
-        width: integer,
-        height: integer,
-        canvasType: js.UndefOr[scala.Nothing],
-        selfParent: Boolean
-      ): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create")
-      @js.native
-      def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = js.native
+      @scala.inline
+      def create(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: Unit, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: Unit, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: integer, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: integer, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: Unit, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: Unit, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: Unit, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: integer, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
@@ -925,18 +781,14 @@ object Display {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create2D")
-      @js.native
-      def create2D(parent: js.Any): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create2D")
-      @js.native
-      def create2D(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create2D")
-      @js.native
-      def create2D(parent: js.Any, width: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.create2D")
-      @js.native
-      def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      @scala.inline
+      def create2D(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create2D(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create2D(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
@@ -944,69 +796,62 @@ object Display {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.createWebGL")
-      @js.native
-      def createWebGL(parent: js.Any): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.createWebGL")
-      @js.native
-      def createWebGL(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.createWebGL")
-      @js.native
-      def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.createWebGL")
-      @js.native
-      def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      @scala.inline
+      def createWebGL(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def createWebGL(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Disable context smoothing on any new Canvas element created.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.disableSmoothing")
-      @js.native
-      def disableSmoothing(): Unit = js.native
+      @scala.inline
+      def disableSmoothing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableSmoothing")().asInstanceOf[Unit]
       
       /**
         * Enable context smoothing on any new Canvas element created.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.enableSmoothing")
-      @js.native
-      def enableSmoothing(): Unit = js.native
+      @scala.inline
+      def enableSmoothing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableSmoothing")().asInstanceOf[Unit]
       
       /**
         * Gets the first free canvas index from the pool.
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.first")
-      @js.native
-      def first(): HTMLCanvasElement = js.native
-      @JSImport("phaser", "Display.Canvas.CanvasPool.first")
-      @js.native
-      def first(canvasType: integer): HTMLCanvasElement = js.native
+      @scala.inline
+      def first(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[HTMLCanvasElement]
+      @scala.inline
+      def first(canvasType: integer): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(canvasType.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Gets the total number of free canvas elements in the pool.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.free")
-      @js.native
-      def free(): integer = js.native
+      @scala.inline
+      def free(): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("free")().asInstanceOf[integer]
       
       /**
         * Looks up a canvas based on its parent, and if found puts it back in the pool, freeing it up for re-use.
         * The canvas has its width and height set to 1, and its parent attribute nulled.
         * @param parent The canvas or the parent of the canvas to free.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.remove")
-      @js.native
-      def remove(parent: js.Any): Unit = js.native
+      @scala.inline
+      def remove(parent: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Gets the total number of used canvas elements in the pool.
         */
-      @JSImport("phaser", "Display.Canvas.CanvasPool.total")
-      @js.native
-      def total(): integer = js.native
+      @scala.inline
+      def total(): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("total")().asInstanceOf[integer]
     }
     
     object Smoothing {
+      
+      @JSImport("phaser", "Display.Canvas.Smoothing")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
@@ -1016,12 +861,10 @@ object Display {
         * patchy on earlier browsers, especially on mobile.
         * @param context The context on which to disable smoothing.
         */
-      @JSImport("phaser", "Display.Canvas.Smoothing.disable")
-      @js.native
-      def disable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
-      @JSImport("phaser", "Display.Canvas.Smoothing.disable")
-      @js.native
-      def disable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      @scala.inline
+      def disable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(context.asInstanceOf[js.Any]).asInstanceOf[CanvasRenderingContext2D | WebGLRenderingContext]
+      @scala.inline
+      def disable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(context.asInstanceOf[js.Any]).asInstanceOf[CanvasRenderingContext2D | WebGLRenderingContext]
       
       /**
         * Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
@@ -1031,35 +874,29 @@ object Display {
         * patchy on earlier browsers, especially on mobile.
         * @param context The context on which to enable smoothing.
         */
-      @JSImport("phaser", "Display.Canvas.Smoothing.enable")
-      @js.native
-      def enable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
-      @JSImport("phaser", "Display.Canvas.Smoothing.enable")
-      @js.native
-      def enable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      @scala.inline
+      def enable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(context.asInstanceOf[js.Any]).asInstanceOf[CanvasRenderingContext2D | WebGLRenderingContext]
+      @scala.inline
+      def enable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(context.asInstanceOf[js.Any]).asInstanceOf[CanvasRenderingContext2D | WebGLRenderingContext]
       
       /**
         * Gets the Smoothing Enabled vendor prefix being used on the given context, or null if not set.
         * @param context The canvas context to check.
         */
-      @JSImport("phaser", "Display.Canvas.Smoothing.getPrefix")
-      @js.native
-      def getPrefix(context: CanvasRenderingContext2D): String = js.native
-      @JSImport("phaser", "Display.Canvas.Smoothing.getPrefix")
-      @js.native
-      def getPrefix(context: WebGLRenderingContext): String = js.native
+      @scala.inline
+      def getPrefix(context: CanvasRenderingContext2D): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(context.asInstanceOf[js.Any]).asInstanceOf[String]
+      @scala.inline
+      def getPrefix(context: WebGLRenderingContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(context.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Returns `true` if the given context has image smoothing enabled, otherwise returns `false`.
         * Returns null if no smoothing prefix is available.
         * @param context The context to check.
         */
-      @JSImport("phaser", "Display.Canvas.Smoothing.isEnabled")
-      @js.native
-      def isEnabled(context: CanvasRenderingContext2D): Boolean = js.native
-      @JSImport("phaser", "Display.Canvas.Smoothing.isEnabled")
-      @js.native
-      def isEnabled(context: WebGLRenderingContext): Boolean = js.native
+      @scala.inline
+      def isEnabled(context: CanvasRenderingContext2D): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def isEnabled(context: WebGLRenderingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     /**
@@ -1067,24 +904,20 @@ object Display {
       * @param canvas The canvas element to have the style applied to.
       * @param value The touch action value to set on the canvas. Set to `none` to disable touch actions. Default 'none'.
       */
-    @JSImport("phaser", "Display.Canvas.TouchAction")
-    @js.native
-    def TouchAction(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
-    @JSImport("phaser", "Display.Canvas.TouchAction")
-    @js.native
-    def TouchAction(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
+    @scala.inline
+    def TouchAction(canvas: HTMLCanvasElement): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TouchAction")(canvas.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+    @scala.inline
+    def TouchAction(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("TouchAction")(canvas.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
     
     /**
       * Sets the user-select property on the canvas style. Can be used to disable default browser selection actions.
       * @param canvas The canvas element to have the style applied to.
       * @param value The touch callout value to set on the canvas. Set to `none` to disable touch callouts. Default 'none'.
       */
-    @JSImport("phaser", "Display.Canvas.UserSelect")
-    @js.native
-    def UserSelect(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
-    @JSImport("phaser", "Display.Canvas.UserSelect")
-    @js.native
-    def UserSelect(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
+    @scala.inline
+    def UserSelect(canvas: HTMLCanvasElement): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("UserSelect")(canvas.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+    @scala.inline
+    def UserSelect(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("UserSelect")(canvas.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
   }
   
   /**
@@ -1100,47 +933,45 @@ object Display {
     * @param alpha The alpha value. A number between 0 and 255. Default 255.
     */
   class Color ()
-    extends typings.phaser.Phaser.Display.Color {
+    extends StObject
+       with typings.phaser.Phaser.Display.Color {
     def this(red: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer) = this()
+    def this(red: Unit, green: integer) = this()
     def this(red: integer, green: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer) = this()
+    def this(red: Unit, green: Unit, blue: integer) = this()
+    def this(red: Unit, green: integer, blue: integer) = this()
+    def this(red: integer, green: Unit, blue: integer) = this()
     def this(red: integer, green: integer, blue: integer) = this()
-    def this(
-      red: js.UndefOr[scala.Nothing],
-      green: js.UndefOr[scala.Nothing],
-      blue: js.UndefOr[scala.Nothing],
-      alpha: integer
-    ) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer, alpha: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
-    def this(red: integer, green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: Unit, green: Unit, blue: Unit, alpha: integer) = this()
+    def this(red: Unit, green: Unit, blue: integer, alpha: integer) = this()
+    def this(red: Unit, green: integer, blue: Unit, alpha: integer) = this()
+    def this(red: Unit, green: integer, blue: integer, alpha: integer) = this()
+    def this(red: integer, green: Unit, blue: Unit, alpha: integer) = this()
+    def this(red: integer, green: Unit, blue: integer, alpha: integer) = this()
+    def this(red: integer, green: integer, blue: Unit, alpha: integer) = this()
     def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
   }
   object Color {
+    
+    @JSImport("phaser", "Display.Color")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Converts the given color value into an Object containing r,g,b and a properties.
       * @param color A color value, optionally including the alpha value.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.ColorToRGBA")
-    @js.native
-    def ColorToRGBA(color: Double): ColorObject = js.native
+    @scala.inline
+    def ColorToRGBA(color: Double): ColorObject = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorToRGBA")(color.asInstanceOf[js.Any]).asInstanceOf[ColorObject]
     
     /**
       * Returns a string containing a hex representation of the given color component.
       * @param color The color channel to get the hex value for, must be a value between 0 and 255.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.ComponentToHex")
-    @js.native
-    def ComponentToHex(color: integer): String = js.native
+    @scala.inline
+    def ComponentToHex(color: integer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ComponentToHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Given 3 separate color values this will return an integer representation of it.
@@ -1149,9 +980,8 @@ object Display {
       * @param blue The blue color value. A number between 0 and 255.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.GetColor")
-    @js.native
-    def GetColor(red: integer, green: integer, blue: integer): Double = js.native
+    @scala.inline
+    def GetColor(red: integer, green: integer, blue: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given an alpha and 3 color values this will return an integer representation of it.
@@ -1161,9 +991,8 @@ object Display {
       * @param alpha The alpha color value. A number between 0 and 255.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.GetColor32")
-    @js.native
-    def GetColor32(red: integer, green: integer, blue: integer, alpha: integer): Double = js.native
+    @scala.inline
+    def GetColor32(red: integer, green: integer, blue: integer, alpha: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor32")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Converts HSL (hue, saturation and lightness) values to a Phaser Color object.
@@ -1172,9 +1001,8 @@ object Display {
       * @param l The lightness value in the range 0 to 1.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.HSLToColor")
-    @js.native
-    def HSLToColor(h: Double, s: Double, l: Double): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def HSLToColor(h: Double, s: Double, l: Double): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("HSLToColor")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Get HSV color wheel values in an array which will be 360 elements in size.
@@ -1182,18 +1010,14 @@ object Display {
       * @param v The value, in the range 0 - 1. Default 1.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.HSVColorWheel")
-    @js.native
-    def HSVColorWheel(): js.Array[ColorObject] = js.native
-    @JSImport("phaser", "Display.Color.HSVColorWheel")
-    @js.native
-    def HSVColorWheel(s: js.UndefOr[scala.Nothing], v: Double): js.Array[ColorObject] = js.native
-    @JSImport("phaser", "Display.Color.HSVColorWheel")
-    @js.native
-    def HSVColorWheel(s: Double): js.Array[ColorObject] = js.native
-    @JSImport("phaser", "Display.Color.HSVColorWheel")
-    @js.native
-    def HSVColorWheel(s: Double, v: Double): js.Array[ColorObject] = js.native
+    @scala.inline
+    def HSVColorWheel(): js.Array[ColorObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("HSVColorWheel")().asInstanceOf[js.Array[ColorObject]]
+    @scala.inline
+    def HSVColorWheel(s: Double): js.Array[ColorObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("HSVColorWheel")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[ColorObject]]
+    @scala.inline
+    def HSVColorWheel(s: Double, v: Double): js.Array[ColorObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVColorWheel")(s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[ColorObject]]
+    @scala.inline
+    def HSVColorWheel(s: Unit, v: Double): js.Array[ColorObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVColorWheel")(s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[ColorObject]]
     
     /**
       * Converts an HSV (hue, saturation and value) color value to RGB.
@@ -1206,15 +1030,12 @@ object Display {
       * @param out A Color object to store the results in. If not given a new ColorObject will be created.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.HSVToRGB")
-    @js.native
-    def HSVToRGB(h: Double, s: Double, v: Double): ColorObject | typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.HSVToRGB")
-    @js.native
-    def HSVToRGB(h: Double, s: Double, v: Double, out: typings.phaser.Phaser.Display.Color): ColorObject | typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.HSVToRGB")
-    @js.native
-    def HSVToRGB(h: Double, s: Double, v: Double, out: ColorObject): ColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def HSVToRGB(h: Double, s: Double, v: Double): ColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVToRGB")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[ColorObject | typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def HSVToRGB(h: Double, s: Double, v: Double, out: typings.phaser.Phaser.Display.Color): ColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVToRGB")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[ColorObject | typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def HSVToRGB(h: Double, s: Double, v: Double, out: ColorObject): ColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVToRGB")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[ColorObject | typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts a hex string into a Phaser Color object.
@@ -1225,27 +1046,24 @@ object Display {
       * @param hex The hex color value to convert, such as `#0033ff` or the short-hand format: `#03f`.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.HexStringToColor")
-    @js.native
-    def HexStringToColor(hex: String): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def HexStringToColor(hex: String): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("HexStringToColor")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts a hue to an RGB color.
       * Based on code by Michael Jackson (https://github.com/mjijackson)
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.HueToComponent")
-    @js.native
-    def HueToComponent(p: Double, q: Double, t: Double): Double = js.native
+    @scala.inline
+    def HueToComponent(p: Double, q: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HueToComponent")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Converts the given color value into an instance of a Color object.
       * @param input The color value to convert into a Color object.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.IntegerToColor")
-    @js.native
-    def IntegerToColor(input: integer): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def IntegerToColor(input: integer): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Return the component parts of a color as an Object with the properties alpha, red, green, blue.
@@ -1254,11 +1072,14 @@ object Display {
       * @param input The color value to convert into a Color object.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.IntegerToRGB")
-    @js.native
-    def IntegerToRGB(input: integer): ColorObject = js.native
+    @scala.inline
+    def IntegerToRGB(input: integer): ColorObject = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToRGB")(input.asInstanceOf[js.Any]).asInstanceOf[ColorObject]
     
     object Interpolate {
+      
+      @JSImport("phaser", "Display.Color.Interpolate")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Interpolates between the two given color objects over the length supplied.
@@ -1267,32 +1088,28 @@ object Display {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithColor")
-      @js.native
-      def ColorWithColor(color1: typings.phaser.Phaser.Display.Color, color2: typings.phaser.Phaser.Display.Color): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithColor")
-      @js.native
-      def ColorWithColor(
-        color1: typings.phaser.Phaser.Display.Color,
-        color2: typings.phaser.Phaser.Display.Color,
-        length: js.UndefOr[scala.Nothing],
-        index: Double
-      ): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithColor")
-      @js.native
+      @scala.inline
+      def ColorWithColor(color1: typings.phaser.Phaser.Display.Color, color2: typings.phaser.Phaser.Display.Color): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithColor")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
         length: Double
-      ): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithColor")
-      @js.native
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithColor")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
         length: Double,
         index: Double
-      ): ColorObject = js.native
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithColor")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
+      def ColorWithColor(
+        color1: typings.phaser.Phaser.Display.Color,
+        color2: typings.phaser.Phaser.Display.Color,
+        length: Unit,
+        index: Double
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithColor")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
       
       /**
         * Interpolates between the Color object and color values over the length supplied.
@@ -1303,24 +1120,11 @@ object Display {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithRGB")
-      @js.native
-      def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithRGB")
-      @js.native
-      def ColorWithRGB(
-        color1: typings.phaser.Phaser.Display.Color,
-        r: Double,
-        g: Double,
-        b: Double,
-        length: js.UndefOr[scala.Nothing],
-        index: Double
-      ): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithRGB")
-      @js.native
-      def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double, length: Double): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.ColorWithRGB")
-      @js.native
+      @scala.inline
+      def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithRGB")(color1.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
+      def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double, length: Double): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithRGB")(color1.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
       def ColorWithRGB(
         color1: typings.phaser.Phaser.Display.Color,
         r: Double,
@@ -1328,7 +1132,16 @@ object Display {
         b: Double,
         length: Double,
         index: Double
-      ): ColorObject = js.native
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithRGB")(color1.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
+      def ColorWithRGB(
+        color1: typings.phaser.Phaser.Display.Color,
+        r: Double,
+        g: Double,
+        b: Double,
+        length: Unit,
+        index: Double
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ColorWithRGB")(color1.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
       
       /**
         * Interpolates between the two given color ranges over the length supplied.
@@ -1341,26 +1154,11 @@ object Display {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
-      @JSImport("phaser", "Display.Color.Interpolate.RGBWithRGB")
-      @js.native
-      def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.RGBWithRGB")
-      @js.native
-      def RGBWithRGB(
-        r1: Double,
-        g1: Double,
-        b1: Double,
-        r2: Double,
-        g2: Double,
-        b2: Double,
-        length: js.UndefOr[scala.Nothing],
-        index: Double
-      ): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.RGBWithRGB")
-      @js.native
-      def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double, length: Double): ColorObject = js.native
-      @JSImport("phaser", "Display.Color.Interpolate.RGBWithRGB")
-      @js.native
+      @scala.inline
+      def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBWithRGB")(r1.asInstanceOf[js.Any], g1.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
+      def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double, length: Double): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBWithRGB")(r1.asInstanceOf[js.Any], g1.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], b2.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
       def RGBWithRGB(
         r1: Double,
         g1: Double,
@@ -1370,7 +1168,18 @@ object Display {
         b2: Double,
         length: Double,
         index: Double
-      ): ColorObject = js.native
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBWithRGB")(r1.asInstanceOf[js.Any], g1.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], b2.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
+      @scala.inline
+      def RGBWithRGB(
+        r1: Double,
+        g1: Double,
+        b1: Double,
+        r2: Double,
+        g2: Double,
+        b2: Double,
+        length: Unit,
+        index: Double
+      ): ColorObject = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBWithRGB")(r1.asInstanceOf[js.Any], g1.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], b2.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ColorObject]
     }
     
     /**
@@ -1378,9 +1187,8 @@ object Display {
       * @param input An object containing `r`, `g`, `b` and `a` properties in the range 0 to 255.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.ObjectToColor")
-    @js.native
-    def ObjectToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def ObjectToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts a CSS 'web' string into a Phaser Color object.
@@ -1389,9 +1197,8 @@ object Display {
       * @param rgb The CSS format color string, using the `rgb` or `rgba` format.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.RGBStringToColor")
-    @js.native
-    def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBStringToColor")(rgb.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts an RGB color value to HSV (hue, saturation and value).
@@ -1404,15 +1211,12 @@ object Display {
       * @param out An object to store the color values in. If not given an HSV Color Object will be created.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.RGBToHSV")
-    @js.native
-    def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.RGBToHSV")
-    @js.native
-    def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.RGBToHSV")
-    @js.native
-    def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts the color values into an HTML compatible color string, prefixed with either `#` or `0x`.
@@ -1423,18 +1227,14 @@ object Display {
       * @param prefix The prefix of the string. Either `#` or `0x`. Default #.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.RGBToString")
-    @js.native
-    def RGBToString(r: integer, g: integer, b: integer): String = js.native
-    @JSImport("phaser", "Display.Color.RGBToString")
-    @js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: js.UndefOr[scala.Nothing], prefix: String): String = js.native
-    @JSImport("phaser", "Display.Color.RGBToString")
-    @js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: integer): String = js.native
-    @JSImport("phaser", "Display.Color.RGBToString")
-    @js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = js.native
+    @scala.inline
+    def RGBToString(r: integer, g: integer, b: integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def RGBToString(r: integer, g: integer, b: integer, a: Unit, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def RGBToString(r: integer, g: integer, b: integer, a: integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Creates a new Color object where the r, g, and b values have been set to random values
@@ -1443,18 +1243,14 @@ object Display {
       * @param max The maximum value to set the random range from (between 0 and 255) Default 255.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.RandomRGB")
-    @js.native
-    def RandomRGB(): typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.RandomRGB")
-    @js.native
-    def RandomRGB(min: js.UndefOr[scala.Nothing], max: integer): typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.RandomRGB")
-    @js.native
-    def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.RandomRGB")
-    @js.native
-    def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def RandomRGB(): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")().asInstanceOf[typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def RandomRGB(min: Unit, max: integer): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts the given source color value into an instance of a Color class.
@@ -1462,15 +1258,12 @@ object Display {
       * @param input The source color value to convert.
       */
     /* static member */
-    @JSImport("phaser", "Display.Color.ValueToColor")
-    @js.native
-    def ValueToColor(input: String): typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.ValueToColor")
-    @js.native
-    def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = js.native
-    @JSImport("phaser", "Display.Color.ValueToColor")
-    @js.native
-    def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
+    @scala.inline
+    def ValueToColor(input: String): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    @scala.inline
+    def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
   }
   
   object Masks {
@@ -1504,7 +1297,8 @@ object Display {
     @JSImport("phaser", "Display.Masks.BitmapMask")
     @js.native
     class BitmapMask protected ()
-      extends typings.phaser.Phaser.Display.Masks.BitmapMask {
+      extends StObject
+         with typings.phaser.Phaser.Display.Masks.BitmapMask {
       /**
         * 
         * @param scene The Scene which this Bitmap Mask will be used in.
@@ -1533,7 +1327,8 @@ object Display {
     @JSImport("phaser", "Display.Masks.GeometryMask")
     @js.native
     class GeometryMask protected ()
-      extends typings.phaser.Phaser.Display.Masks.GeometryMask {
+      extends StObject
+         with typings.phaser.Phaser.Display.Masks.GeometryMask {
       /**
         * 
         * @param scene This parameter is not used.

@@ -6,25 +6,23 @@ import typings.gestalt.gestaltStrings.info
 import typings.gestalt.gestaltStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutProps extends StObject {
   
-  var dismissButton: js.UndefOr[AccessibilityLabel] = js.native
+  var dismissButton: js.UndefOr[AccessibilityLabel] = js.undefined
   
-  var iconAccessibilityLabel: String = js.native
+  var iconAccessibilityLabel: String
   
-  var message: String = js.native
+  var message: String
   
-  var primaryLink: js.UndefOr[LinkData] = js.native
+  var primaryLink: js.UndefOr[LinkData] = js.undefined
   
-  var secondaryLink: js.UndefOr[LinkData] = js.native
+  var secondaryLink: js.UndefOr[LinkData] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: error | info | warning = js.native
+  var `type`: error | info | warning
 }
 object CalloutProps {
   

@@ -11,29 +11,31 @@ import typings.relayTestUtils.relayMockPayloadGeneratorMod.MockResolvers
 import typings.relayTestUtils.relayModernMockEnvironmentMod.RelayMockEnvironment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("relay-test-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object MockPayloadGenerator {
     
-    @JSImport("relay-test-utils", "MockPayloadGenerator.generate")
+    @JSImport("relay-test-utils", "MockPayloadGenerator")
     @js.native
-    def generate(operation: OperationDescriptor): GraphQLResponse = js.native
-    @JSImport("relay-test-utils", "MockPayloadGenerator.generate")
-    @js.native
-    def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def generate(operation: OperationDescriptor): GraphQLResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any]).asInstanceOf[GraphQLResponse]
+    @scala.inline
+    def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any])).asInstanceOf[GraphQLResponse]
   }
   
-  @JSImport("relay-test-utils", "createMockEnvironment")
-  @js.native
-  def createMockEnvironment(): RelayMockEnvironment = js.native
-  @JSImport("relay-test-utils", "createMockEnvironment")
-  @js.native
-  def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = js.native
+  @scala.inline
+  def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
+  @scala.inline
+  def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
   
-  @JSImport("relay-test-utils", "unwrapContainer")
-  @js.native
-  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = js.native
+  @scala.inline
+  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapContainer")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

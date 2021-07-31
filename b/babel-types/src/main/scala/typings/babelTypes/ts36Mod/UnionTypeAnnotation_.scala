@@ -3,32 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.UnionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnionTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
   @JSName("type")
-  var type_UnionTypeAnnotation_ : UnionTypeAnnotation = js.native
+  var type_UnionTypeAnnotation_ : UnionTypeAnnotation
   
-  var types: js.Array[FlowTypeAnnotation] = js.native
+  var types: js.Array[FlowTypeAnnotation]
 }
 object UnionTypeAnnotation_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: UnionTypeAnnotation,
-    types: js.Array[FlowTypeAnnotation]
-  ): UnionTypeAnnotation_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): UnionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[UnionTypeAnnotation_]
   }
   

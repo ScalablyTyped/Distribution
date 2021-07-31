@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgramPipelineDetail extends StObject {
   
   /**
     * Identifies the channel pipeline that is currently active for the pipeline (identified by PipelineId) in the multiplex.
     */
-  var ActiveChannelPipeline: js.UndefOr[string] = js.native
+  var ActiveChannelPipeline: js.UndefOr[string] = js.undefined
   
   /**
     * Identifies a specific pipeline in the multiplex.
     */
-  var PipelineId: js.UndefOr[string] = js.native
+  var PipelineId: js.UndefOr[string] = js.undefined
 }
 object MultiplexProgramPipelineDetail {
   

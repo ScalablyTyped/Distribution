@@ -7,52 +7,47 @@ import typings.plottable.memoizeMemoizeMod.MemoizedFunction
 import typings.plottable.signatureMod.Signature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoizeMod {
   
-  @JSImport("plottable/build/src/memoize", "memThunk")
+  @JSImport("plottable/build/src/memoize", JSImport.Namespace)
   @js.native
-  def memThunk[I1, O](arg1: Thunk[I1], compute: js.ThisFunction1[/* this */ Unit, /* arg1 */ I1, O]): MemoizedFunction[Thunk[O]] = js.native
-  @JSImport("plottable/build/src/memoize", "memThunk")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def memThunk[I1, O](arg1: Thunk[I1], compute: js.ThisFunction1[/* this */ Unit, /* arg1 */ I1, O]): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
+  @scala.inline
   def memThunk[I1, I2, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     compute: js.ThisFunction2[/* this */ Unit, /* arg1 */ I1, /* arg2 */ I2, O]
-  ): MemoizedFunction[Thunk[O]] = js.native
-  @JSImport("plottable/build/src/memoize", "memThunk")
-  @js.native
+  ): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
+  @scala.inline
   def memThunk[I1, I2, I3, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     arg3: Thunk[I3],
     compute: js.ThisFunction3[/* this */ Unit, /* arg1 */ I1, /* arg2 */ I2, /* arg3 */ I3, O]
-  ): MemoizedFunction[Thunk[O]] = js.native
-  @JSImport("plottable/build/src/memoize", "memThunk")
-  @js.native
+  ): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
+  @scala.inline
   def memThunk[I1, I2, I3, I4, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     arg3: Thunk[I3],
     arg4: Thunk[I4],
     compute: js.ThisFunction4[/* this */ Unit, /* arg1 */ I1, /* arg2 */ I2, /* arg3 */ I3, /* arg4 */ I4, O]
-  ): MemoizedFunction[Thunk[O]] = js.native
+  ): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
   
-  @JSImport("plottable/build/src/memoize", "memoize")
-  @js.native
-  def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = js.native
+  @scala.inline
+  def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(compute.asInstanceOf[js.Any]).asInstanceOf[MemoizedFunction[F]]
   
-  @JSImport("plottable/build/src/memoize", "memoizeProjector")
-  @js.native
-  def memoizeProjector(projector: Projector): Projector = js.native
+  @scala.inline
+  def memoizeProjector(projector: Projector): Projector = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeProjector")(projector.asInstanceOf[js.Any]).asInstanceOf[Projector]
   
-  @JSImport("plottable/build/src/memoize", "memoizeProjectors")
-  @js.native
-  def memoizeProjectors(attrToProjector: AttributeToProjector): AttributeToProjector = js.native
+  @scala.inline
+  def memoizeProjectors(attrToProjector: AttributeToProjector): AttributeToProjector = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeProjectors")(attrToProjector.asInstanceOf[js.Any]).asInstanceOf[AttributeToProjector]
   
-  @JSImport("plottable/build/src/memoize", "sign")
-  @js.native
-  def sign(a: js.Any): Signature = js.native
+  @scala.inline
+  def sign(a: js.Any): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(a.asInstanceOf[js.Any]).asInstanceOf[Signature]
 }

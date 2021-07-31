@@ -2,12 +2,13 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.std.Event because var conflicts: bubbles, cancelable, currentTarget, defaultPrevented, eventPhase, isTrusted, target, timeStamp, `type`. Inlined BUBBLING_PHASE, NONE, cancelBubble, composed, returnValue, AT_TARGET, CAPTURING_PHASE, srcElement, composedPath, initEvent, initEvent, initEvent, initEvent, stopImmediatePropagation */ @js.native
-trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget with T, EventTarget] {
+trait FocusEvent[T]
+  extends StObject
+     with BaseSyntheticEvent[NativeFocusEvent, EventTarget & T, EventTarget] {
   
   val AT_TARGET: Double = js.native
   
@@ -30,9 +31,9 @@ trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget wit
   def composedPath(): js.Array[typings.std.EventTarget] = js.native
   
   def initEvent(`type`: String): Unit = js.native
-  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
   
   var relatedTarget: EventTarget = js.native
   
@@ -47,5 +48,5 @@ trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget wit
   def stopImmediatePropagation(): Unit = js.native
   
   @JSName("target")
-  var target_FocusEvent: EventTarget with T = js.native
+  var target_FocusEvent: EventTarget & T = js.native
 }

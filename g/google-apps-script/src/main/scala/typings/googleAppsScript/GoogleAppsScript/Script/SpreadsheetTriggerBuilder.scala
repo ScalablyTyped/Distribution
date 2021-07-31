@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder for spreadsheet triggers.
   */
-@js.native
 trait SpreadsheetTriggerBuilder extends StObject {
   
-  def create(): Trigger = js.native
+  def create(): Trigger
   
-  def onChange(): SpreadsheetTriggerBuilder = js.native
+  def onChange(): SpreadsheetTriggerBuilder
   
-  def onEdit(): SpreadsheetTriggerBuilder = js.native
+  def onEdit(): SpreadsheetTriggerBuilder
   
-  def onFormSubmit(): SpreadsheetTriggerBuilder = js.native
+  def onFormSubmit(): SpreadsheetTriggerBuilder
   
-  def onOpen(): SpreadsheetTriggerBuilder = js.native
+  def onOpen(): SpreadsheetTriggerBuilder
 }
 object SpreadsheetTriggerBuilder {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,70 +12,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: We use one type for all nodes so that loops that loop over all nodes
   * of a ViewDefinition stay monomorphic!
   */
-@js.native
 trait NodeDef extends StObject {
   
-  var bindingFlags: ɵBindingFlags = js.native
+  var bindingFlags: ɵBindingFlags
   
-  var bindingIndex: Double = js.native
+  var bindingIndex: Double
   
-  var bindings: js.Array[BindingDef] = js.native
+  var bindings: js.Array[BindingDef]
   
-  var checkIndex: Double = js.native
+  var checkIndex: Double
   
   /** number of transitive children */
-  var childCount: Double = js.native
+  var childCount: Double
   
   /** aggregated NodeFlags for all transitive children (does not include self) **/
-  var childFlags: ɵNodeFlags = js.native
+  var childFlags: ɵNodeFlags
   
   /**
     * Binary or of all query ids that are matched by one of the children.
     * This includes query ids from templates as well.
     * Used as a bloom filter.
     */
-  var childMatchedQueries: Double = js.native
+  var childMatchedQueries: Double
   
   /** aggregated NodeFlags for all direct children (does not include self) **/
-  var directChildFlags: ɵNodeFlags = js.native
+  var directChildFlags: ɵNodeFlags
   
-  var element: ElementDef | Null = js.native
+  var element: ElementDef | Null
   
-  var flags: ɵNodeFlags = js.native
+  var flags: ɵNodeFlags
   
   /**
     * ids and value types of all queries that are matched by this node.
     */
-  var matchedQueries: NumberDictionary[ɵQueryValueType] = js.native
+  var matchedQueries: NumberDictionary[ɵQueryValueType]
   
   /** Binary or of all matched query ids of this node. */
-  var matchedQueryIds: Double = js.native
+  var matchedQueryIds: Double
   
-  var ngContent: NgContentDef | Null = js.native
+  var ngContent: NgContentDef | Null
   
   /** this is checked against NgContentDef.index to find matched nodes */
-  var ngContentIndex: Double | Null = js.native
+  var ngContentIndex: Double | Null
   
-  var nodeIndex: Double = js.native
+  var nodeIndex: Double
   
-  var outputIndex: Double = js.native
+  var outputIndex: Double
   
-  var outputs: js.Array[OutputDef] = js.native
+  var outputs: js.Array[OutputDef]
   
-  var parent: NodeDef | Null = js.native
+  var parent: NodeDef | Null
   
-  var provider: ProviderDef | Null = js.native
+  var provider: ProviderDef | Null
   
-  var query: QueryDef | Null = js.native
+  var query: QueryDef | Null
   
   /**
     * references that the user placed on the element
     */
-  var references: StringDictionary[ɵQueryValueType] = js.native
+  var references: StringDictionary[ɵQueryValueType]
   
-  var renderParent: NodeDef | Null = js.native
+  var renderParent: NodeDef | Null
   
-  var text: TextDef | Null = js.native
+  var text: TextDef | Null
 }
 object NodeDef {
   
@@ -98,7 +96,7 @@ object NodeDef {
     outputs: js.Array[OutputDef],
     references: StringDictionary[ɵQueryValueType]
   ): NodeDef = {
-    val __obj = js.Dynamic.literal(bindingFlags = bindingFlags.asInstanceOf[js.Any], bindingIndex = bindingIndex.asInstanceOf[js.Any], bindings = bindings.asInstanceOf[js.Any], checkIndex = checkIndex.asInstanceOf[js.Any], childCount = childCount.asInstanceOf[js.Any], childFlags = childFlags.asInstanceOf[js.Any], childMatchedQueries = childMatchedQueries.asInstanceOf[js.Any], directChildFlags = directChildFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], matchedQueries = matchedQueries.asInstanceOf[js.Any], matchedQueryIds = matchedQueryIds.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any], outputIndex = outputIndex.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindingFlags = bindingFlags.asInstanceOf[js.Any], bindingIndex = bindingIndex.asInstanceOf[js.Any], bindings = bindings.asInstanceOf[js.Any], checkIndex = checkIndex.asInstanceOf[js.Any], childCount = childCount.asInstanceOf[js.Any], childFlags = childFlags.asInstanceOf[js.Any], childMatchedQueries = childMatchedQueries.asInstanceOf[js.Any], directChildFlags = directChildFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], matchedQueries = matchedQueries.asInstanceOf[js.Any], matchedQueryIds = matchedQueryIds.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any], outputIndex = outputIndex.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], element = null, ngContent = null, ngContentIndex = null, parent = null, provider = null, query = null, renderParent = null, text = null)
     __obj.asInstanceOf[NodeDef]
   }
   

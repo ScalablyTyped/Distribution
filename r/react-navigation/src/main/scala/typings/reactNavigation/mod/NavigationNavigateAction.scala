@@ -3,23 +3,22 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashNAVIGATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationNavigateAction
-  extends NavigationStackAction
+  extends StObject
      with NavigationNavigateActionPayload
+     with NavigationStackAction
      with NavigationTabAction {
   
-  var `type`: NavigationSlashNAVIGATE = js.native
+  var `type`: NavigationSlashNAVIGATE
 }
 object NavigationNavigateAction {
   
   @scala.inline
-  def apply(routeName: String, `type`: NavigationSlashNAVIGATE): NavigationNavigateAction = {
+  def apply(routeName: String): NavigationNavigateAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/NAVIGATE")
     __obj.asInstanceOf[NavigationNavigateAction]
   }
   

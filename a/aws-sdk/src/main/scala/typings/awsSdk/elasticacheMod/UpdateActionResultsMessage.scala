@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateActionResultsMessage extends StObject {
   
   /**
     * Update actions that have been processed successfully
     */
-  var ProcessedUpdateActions: js.UndefOr[ProcessedUpdateActionList] = js.native
+  var ProcessedUpdateActions: js.UndefOr[ProcessedUpdateActionList] = js.undefined
   
   /**
     * Update actions that haven't been processed successfully
     */
-  var UnprocessedUpdateActions: js.UndefOr[UnprocessedUpdateActionList] = js.native
+  var UnprocessedUpdateActions: js.UndefOr[UnprocessedUpdateActionList] = js.undefined
 }
 object UpdateActionResultsMessage {
   

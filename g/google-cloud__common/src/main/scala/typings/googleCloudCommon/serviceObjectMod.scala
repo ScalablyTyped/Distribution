@@ -1,7 +1,6 @@
 package typings.googleCloudCommon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleCloudCommon.anon.IgnoreNotFound
 import typings.googleCloudCommon.anon.ReqOpts
 import typings.googleCloudCommon.utilMod.ApiError
 import typings.googleCloudCommon.utilMod.BodyResponseCallback
@@ -13,7 +12,6 @@ import typings.teenyRequest.mod.Request
 import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceObjectMod {
@@ -59,9 +57,9 @@ object serviceObjectMod {
       * @param {?error} callback.err - An error returned while making this request.
       * @param {object} callback.apiResponse - The full API response.
       */
-    def delete(): js.Promise[js.Array[Response[_]]] = js.native
+    def delete(): js.Promise[js.Array[Response[js.Any]]] = js.native
     def delete(callback: DeleteCallback): Unit = js.native
-    def delete(options: DeleteOptions): js.Promise[js.Array[Response[_]]] = js.native
+    def delete(options: DeleteOptions): js.Promise[js.Array[Response[js.Any]]] = js.native
     def delete(options: DeleteOptions, callback: DeleteCallback): Unit = js.native
     
     /**
@@ -174,26 +172,46 @@ object serviceObjectMod {
     Unit
   ]
   
-  @js.native
   trait CreateOptions extends StObject
   
   type CreateResponse[T] = js.Array[js.Any]
   
   type DeleteCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Response[js.Any]], Unit]
   
-  type DeleteOptions = IgnoreNotFound with js.Object
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped object */ trait DeleteOptions extends StObject {
+    
+    var ignoreNotFound: js.UndefOr[Boolean] = js.undefined
+  }
+  object DeleteOptions {
+    
+    @scala.inline
+    def apply(): DeleteOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DeleteOptions]
+    }
+    
+    @scala.inline
+    implicit class DeleteOptionsMutableBuilder[Self <: DeleteOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIgnoreNotFoundUndefined: Self = StObject.set(x, "ignoreNotFound", js.undefined)
+    }
+  }
   
   type ExistsCallback = js.Function2[/* err */ Error | Null, /* exists */ js.UndefOr[Boolean], Unit]
   
   type ExistsOptions = js.Object
   
-  @js.native
   trait GetConfig extends StObject {
     
     /**
       * Create the object if it doesn't already exist.
       */
-    var autoCreate: js.UndefOr[Boolean] = js.native
+    var autoCreate: js.UndefOr[Boolean] = js.undefined
   }
   object GetConfig {
     
@@ -216,7 +234,18 @@ object serviceObjectMod {
   
   type GetMetadataOptions = js.Object
   
-  type GetOrCreateOptions = GetConfig with CreateOptions
+  trait GetOrCreateOptions
+    extends StObject
+       with GetConfig
+       with CreateOptions
+  object GetOrCreateOptions {
+    
+    @scala.inline
+    def apply(): GetOrCreateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetOrCreateOptions]
+    }
+  }
   
   type GetResponse[T] = js.Tuple2[T, Response[js.Any]]
   
@@ -227,10 +256,9 @@ object serviceObjectMod {
     Unit
   ]
   
-  @js.native
   trait Interceptor extends StObject {
     
-    def request(opts: Options): DecorateRequestOptions = js.native
+    def request(opts: Options): DecorateRequestOptions
   }
   object Interceptor {
     
@@ -269,41 +297,40 @@ object serviceObjectMod {
     Unit
   ]
   
-  @js.native
   trait ServiceObjectConfig extends StObject {
     
     /**
       * The base URL to make API requests to.
       */
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The method which creates this object.
       */
-    var createMethod: js.UndefOr[js.Function] = js.native
+    var createMethod: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The identifier of the object. For example, the name of a Storage bucket or
       * Pub/Sub topic.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * A map of each method name that should be inherited.
       */
-    var methods: js.UndefOr[Methods] = js.native
+    var methods: js.UndefOr[Methods] = js.undefined
     
     /**
       * The parent service instance. For example, an instance of Storage if the
       * object is Bucket.
       */
-    var parent: ServiceObjectParent = js.native
+    var parent: ServiceObjectParent
     
     /**
       * For long running operations, how often should the client poll
       * for completion.
       */
-    var pollIntervalMs: js.UndefOr[Double] = js.native
+    var pollIntervalMs: js.UndefOr[Double] = js.undefined
   }
   object ServiceObjectConfig {
     
@@ -351,16 +378,15 @@ object serviceObjectMod {
     }
   }
   
-  @js.native
   trait ServiceObjectParent extends StObject {
     
-    def getRequestInterceptors(): js.Array[js.Function] = js.native
+    def getRequestInterceptors(): js.Array[js.Function]
     
-    var interceptors: js.Array[Interceptor] = js.native
+    var interceptors: js.Array[Interceptor]
     
-    def request(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit = js.native
+    def request(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit
     
-    def requestStream(reqOpts: DecorateRequestOptions): Request = js.native
+    def requestStream(reqOpts: DecorateRequestOptions): Request
   }
   object ServiceObjectParent {
     

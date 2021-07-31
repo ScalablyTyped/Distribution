@@ -2,22 +2,21 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Fragments
-@js.native
 trait FragmentSpread
-  extends Node
+  extends StObject
+     with Node
      with Selection {
   
-  var directives: js.UndefOr[js.Array[Directive]] = js.native
+  var directives: js.UndefOr[js.Array[Directive]] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var name: Name = js.native
+  var name: Name
 }
 object FragmentSpread {
   

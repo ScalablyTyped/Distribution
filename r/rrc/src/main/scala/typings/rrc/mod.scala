@@ -6,18 +6,20 @@ import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
-import typings.react.mod.ReactNode
-import typings.reactRouter.mod.RouteChildrenProps
 import typings.reactRouter.mod.RouteComponentProps
+import typings.reactRouter.mod.RouteProps
 import typings.reactRouter.mod.StaticContext
 import typings.reactRouter.mod.`match`
 import typings.rrc.anon.LocationDescriptorObjectL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rrc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rrc", "ConfigSwitch")
   @js.native
@@ -67,28 +69,23 @@ object mod {
     def this(props: StatusProps, context: js.Any) = this()
   }
   
-  @JSImport("rrc", "whenActive")
-  @js.native
-  def whenActive[Props](): WhenActiveReturnType[Props] = js.native
-  @JSImport("rrc", "whenActive")
-  @js.native
-  def whenActive[Props](options: WhenActiveOptions): WhenActiveReturnType[Props] = js.native
+  @scala.inline
+  def whenActive[Props](): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")().asInstanceOf[WhenActiveReturnType[Props]]
+  @scala.inline
+  def whenActive[Props](options: WhenActiveOptions): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")(options.asInstanceOf[js.Any]).asInstanceOf[WhenActiveReturnType[Props]]
   
-  @JSImport("rrc", "withScroll")
-  @js.native
+  @scala.inline
   def withScroll(
-    component: ComponentConstructor[(RouteComponentProps[_, StaticContext, LocationState]) | js.Object]
-  ): ComponentConstructor[(RouteComponentProps[_, StaticContext, LocationState]) | js.Object] = js.native
-  @JSImport("rrc", "withScroll")
-  @js.native
+    component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]
+  ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
+  @scala.inline
   def withScroll(
-    component: ComponentConstructor[(RouteComponentProps[_, StaticContext, LocationState]) | js.Object],
+    component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object],
     options: WithScrollOptions
-  ): ComponentConstructor[(RouteComponentProps[_, StaticContext, LocationState]) | js.Object] = js.native
+  ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
   
-  @JSImport("rrc", "wrapSwitch")
-  @js.native
-  def wrapSwitch[WrapperProps, Params](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] with WrapperProps] = js.native
+  @scala.inline
+  def wrapSwitch[WrapperProps, Params](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
   
   type ComponentConstructor[Props] = ComponentType[Props]
   
@@ -103,12 +100,11 @@ object mod {
   
   type OnUpdateCall = js.Function1[/* location */ Location[LocationState], Unit]
   
-  @js.native
   trait OnUpdateProps extends StObject {
     
-    var call: OnUpdateCall = js.native
+    var call: OnUpdateCall
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
   }
   object OnUpdateProps {
     
@@ -134,31 +130,11 @@ object mod {
   
   type PropIdCallback = js.Function0[String]
   
-  /* Inlined react-router-dom.react-router-dom.RouteProps & {  inject :{[key: string] : any} | undefined} */
-  @js.native
-  trait RouteConfiguration extends StObject {
+  trait RouteConfiguration
+    extends StObject
+       with RouteProps {
     
-    var children: js.UndefOr[
-        (js.Function1[/* props */ RouteChildrenProps[_, LocationState], ReactNode]) | ReactNode
-      ] = js.native
-    
-    var component: js.UndefOr[ComponentType[_ | (RouteComponentProps[_, StaticContext, LocationState])]] = js.native
-    
-    var exact: js.UndefOr[Boolean] = js.native
-    
-    var inject: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var location: js.UndefOr[Location[LocationState]] = js.native
-    
-    var path: js.UndefOr[String | js.Array[String]] = js.native
-    
-    var render: js.UndefOr[
-        js.Function1[/* props */ RouteComponentProps[_, StaticContext, LocationState], ReactNode]
-      ] = js.native
-    
-    var sensitive: js.UndefOr[Boolean] = js.native
-    
-    var strict: js.UndefOr[Boolean] = js.native
+    var inject: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object RouteConfiguration {
     
@@ -172,73 +148,18 @@ object mod {
     implicit class RouteConfigurationMutableBuilder[Self <: RouteConfiguration] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: (js.Function1[/* props */ RouteChildrenProps[_, LocationState], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ RouteChildrenProps[_, LocationState] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setComponent(value: ComponentType[_ | (RouteComponentProps[_, StaticContext, LocationState])]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-      
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
-      
-      @scala.inline
       def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
-      
-      @scala.inline
-      def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-      
-      @scala.inline
-      def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      @scala.inline
-      def setRender(value: /* props */ RouteComponentProps[_, StaticContext, LocationState] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-      
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
-      
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
-  @js.native
   trait ScrollIntoViewProps extends StObject {
     
-    var alignToTop: js.UndefOr[Boolean] = js.native
+    var alignToTop: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
   }
   object ScrollIntoViewProps {
     
@@ -262,10 +183,9 @@ object mod {
     }
   }
   
-  @js.native
   trait StatusProps extends StObject {
     
-    var code: String = js.native
+    var code: String
   }
   object StatusProps {
     
@@ -283,12 +203,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SwitchProps extends StObject {
     
-    var location: LocationDescriptorObjectL = js.native
+    var location: LocationDescriptorObjectL
     
-    var routes: js.Array[RouteConfiguration] = js.native
+    var routes: js.Array[RouteConfiguration]
   }
   object SwitchProps {
     
@@ -312,20 +231,19 @@ object mod {
     }
   }
   
-  @js.native
   trait WhenActiveOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var isActive: js.UndefOr[IsActiveCallback] = js.native
+    var isActive: js.UndefOr[IsActiveCallback] = js.undefined
     
-    var pathProp: js.UndefOr[String] = js.native
+    var pathProp: js.UndefOr[String] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object WhenActiveOptions {
     
@@ -378,12 +296,11 @@ object mod {
   
   type WhenActiveReturnType[Props] = js.Function1[/* component */ ComponentConstructor[Props], ComponentConstructor[Props]]
   
-  @js.native
   trait WithScrollOptions extends StObject {
     
-    var alignToTop: js.UndefOr[Boolean] = js.native
+    var alignToTop: js.UndefOr[Boolean] = js.undefined
     
-    var propId: js.UndefOr[PropIdCallback] = js.native
+    var propId: js.UndefOr[PropIdCallback] = js.undefined
   }
   object WithScrollOptions {
     
@@ -410,10 +327,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait WrapSwitchProps[Params] extends SwitchProps {
+  trait WrapSwitchProps[Params]
+    extends StObject
+       with SwitchProps {
     
-    var getKey: js.UndefOr[GetKeyFunction[Params]] = js.native
+    var getKey: js.UndefOr[GetKeyFunction[Params]] = js.undefined
   }
   object WrapSwitchProps {
     
@@ -424,7 +342,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WrapSwitchPropsMutableBuilder[Self <: WrapSwitchProps[_], Params] (val x: Self with WrapSwitchProps[Params]) extends AnyVal {
+    implicit class WrapSwitchPropsMutableBuilder[Self <: WrapSwitchProps[?], Params] (val x: Self & WrapSwitchProps[Params]) extends AnyVal {
       
       @scala.inline
       def setGetKey(

@@ -8,14 +8,15 @@ import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("kdbush", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends KDBush[T] {
+  class ^[T] protected ()
+    extends StObject
+       with KDBush[T] {
     def this(points: Points) = this()
     def this(points: js.Array[T], getX: Get[T], getY: Get[T]) = this()
     def this(points: js.Array[T], getX: Get[T], getY: Get[T], nodeSize: Double) = this()
@@ -23,36 +24,53 @@ object mod {
       points: js.Array[T],
       getX: Get[T],
       getY: Get[T],
-      nodeSize: js.UndefOr[scala.Nothing],
+      nodeSize: Double,
       ArrayType: typings.kdbush.mod.ArrayType
     ) = this()
     def this(
       points: js.Array[T],
       getX: Get[T],
       getY: Get[T],
-      nodeSize: Double,
+      nodeSize: Unit,
       ArrayType: typings.kdbush.mod.ArrayType
     ) = this()
+    
+    /* CompleteClass */
+    var coords: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var ids: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var nodeSize: Double = js.native
+    
+    /* CompleteClass */
+    var points: js.Array[T] = js.native
+    
+    /* CompleteClass */
+    override def range(minX: Double, minY: Double, maxX: Double, maxY: Double): js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    override def within(x: Double, y: Double, r: Double): js.Array[Double] = js.native
   }
   
   type ArrayType = Int8ArrayConstructor | Int16ArrayConstructor | Int32ArrayConstructor | Float32ArrayConstructor | Float64ArrayConstructor | ArrayConstructor
   
   type Get[T] = js.Function1[/* point */ T, Double]
   
-  @js.native
   trait KDBush[T] extends StObject {
     
-    var coords: js.Array[Double] = js.native
+    var coords: js.Array[Double]
     
-    var ids: js.Array[Double] = js.native
+    var ids: js.Array[Double]
     
-    var nodeSize: Double = js.native
+    var nodeSize: Double
     
-    var points: js.Array[T] = js.native
+    var points: js.Array[T]
     
-    def range(minX: Double, minY: Double, maxX: Double, maxY: Double): js.Array[Double] = js.native
+    def range(minX: Double, minY: Double, maxX: Double, maxY: Double): js.Array[Double]
     
-    def within(x: Double, y: Double, r: Double): js.Array[Double] = js.native
+    def within(x: Double, y: Double, r: Double): js.Array[Double]
   }
   object KDBush {
     
@@ -70,7 +88,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class KDBushMutableBuilder[Self <: KDBush[_], T] (val x: Self with KDBush[T]) extends AnyVal {
+    implicit class KDBushMutableBuilder[Self <: KDBush[?], T] (val x: Self & KDBush[T]) extends AnyVal {
       
       @scala.inline
       def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])

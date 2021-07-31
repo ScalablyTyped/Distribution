@@ -9,42 +9,41 @@ import typings.exceljs.exceljsStrings.none_
 import typings.exceljs.exceljsStrings.rightToLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataBarRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var axisPosition: js.UndefOr[auto | middle | none_] = js.native
+  var axisPosition: js.UndefOr[auto | middle | none_] = js.undefined
   
-  var border: js.UndefOr[Boolean] = js.native
+  var border: js.UndefOr[Boolean] = js.undefined
   
-  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.native
+  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.undefined
   
-  var direction: js.UndefOr[context | leftToRight | rightToLeft] = js.native
+  var direction: js.UndefOr[context | leftToRight | rightToLeft] = js.undefined
   
-  var gradient: js.UndefOr[Boolean] = js.native
+  var gradient: js.UndefOr[Boolean] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var negativeBarBorderColorSameAsPositive: js.UndefOr[Boolean] = js.native
+  var negativeBarBorderColorSameAsPositive: js.UndefOr[Boolean] = js.undefined
   
-  var negativeBarColorSameAsPositive: js.UndefOr[Boolean] = js.native
+  var negativeBarColorSameAsPositive: js.UndefOr[Boolean] = js.undefined
   
-  var showValue: js.UndefOr[Boolean] = js.native
+  var showValue: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: dataBar = js.native
+  var `type`: dataBar
 }
 object DataBarRuleType {
   
   @scala.inline
-  def apply(priority: Double, `type`: dataBar): DataBarRuleType = {
+  def apply(priority: Double): DataBarRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dataBar")
     __obj.asInstanceOf[DataBarRuleType]
   }
   

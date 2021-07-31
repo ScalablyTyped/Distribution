@@ -2,107 +2,105 @@ package typings.reactBigScheduler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerDataConfig extends StObject {
   
-  var agendaMaxEventWidth: js.UndefOr[Double] = js.native
+  var agendaMaxEventWidth: js.UndefOr[Double] = js.undefined
   
-  var agendaResourceTableWidth: js.UndefOr[Double] = js.native
+  var agendaResourceTableWidth: js.UndefOr[Double] = js.undefined
   
-  var calendarPopoverEnabled: js.UndefOr[Boolean] = js.native
+  var calendarPopoverEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var checkConflict: js.UndefOr[Boolean] = js.native
+  var checkConflict: js.UndefOr[Boolean] = js.undefined
   
-  var creatable: js.UndefOr[Boolean] = js.native
+  var creatable: js.UndefOr[Boolean] = js.undefined
   
-  var crossResourceMove: js.UndefOr[Boolean] = js.native
+  var crossResourceMove: js.UndefOr[Boolean] = js.undefined
   
-  var dayCellWidth: js.UndefOr[Double] = js.native
+  var dayCellWidth: js.UndefOr[Double] = js.undefined
   
-  var dayMaxEvents: js.UndefOr[Double] = js.native
+  var dayMaxEvents: js.UndefOr[Double] = js.undefined
   
-  var dayResourceTableWidth: js.UndefOr[Double] = js.native
+  var dayResourceTableWidth: js.UndefOr[Double] = js.undefined
   
-  var dayStartFrom: js.UndefOr[Double] = js.native
+  var dayStartFrom: js.UndefOr[Double] = js.undefined
   
-  var dayStopTo: js.UndefOr[Double] = js.native
+  var dayStopTo: js.UndefOr[Double] = js.undefined
   
-  var defaultEventBgColor: js.UndefOr[String] = js.native
+  var defaultEventBgColor: js.UndefOr[String] = js.undefined
   
-  var displayWeekend: js.UndefOr[Boolean] = js.native
+  var displayWeekend: js.UndefOr[Boolean] = js.undefined
   
-  var endResizable: js.UndefOr[Boolean] = js.native
+  var endResizable: js.UndefOr[Boolean] = js.undefined
   
-  var eventItemHeight: js.UndefOr[Double] = js.native
+  var eventItemHeight: js.UndefOr[Double] = js.undefined
   
-  var eventItemLineHeight: js.UndefOr[Double] = js.native
+  var eventItemLineHeight: js.UndefOr[Double] = js.undefined
   
-  var eventItemPopoverEnabled: js.UndefOr[Boolean] = js.native
+  var eventItemPopoverEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var headerEnabled: js.UndefOr[Boolean] = js.native
+  var headerEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var minuteStep: js.UndefOr[Double] = js.native
+  var minuteStep: js.UndefOr[Double] = js.undefined
   
-  var monthCellWidth: js.UndefOr[Double] = js.native
+  var monthCellWidth: js.UndefOr[Double] = js.undefined
   
-  var monthMaxEvents: js.UndefOr[Double] = js.native
+  var monthMaxEvents: js.UndefOr[Double] = js.undefined
   
-  var monthResourceTableWidth: js.UndefOr[Double] = js.native
+  var monthResourceTableWidth: js.UndefOr[Double] = js.undefined
   
-  var movable: js.UndefOr[Boolean] = js.native
+  var movable: js.UndefOr[Boolean] = js.undefined
   
-  var nonAgendaSlotMinHeight: js.UndefOr[Double] = js.native
+  var nonAgendaSlotMinHeight: js.UndefOr[Double] = js.undefined
   
-  var nonWorkingTimeBodyBgColor: js.UndefOr[String] = js.native
+  var nonWorkingTimeBodyBgColor: js.UndefOr[String] = js.undefined
   
-  var nonWorkingTimeHeadBgColor: js.UndefOr[String] = js.native
+  var nonWorkingTimeHeadBgColor: js.UndefOr[String] = js.undefined
   
-  var nonWorkingTimeHeadColor: js.UndefOr[String] = js.native
+  var nonWorkingTimeHeadColor: js.UndefOr[String] = js.undefined
   
-  var quarterCellWidth: js.UndefOr[Double] = js.native
+  var quarterCellWidth: js.UndefOr[Double] = js.undefined
   
-  var quarterMaxEvents: js.UndefOr[Double] = js.native
+  var quarterMaxEvents: js.UndefOr[Double] = js.undefined
   
-  var quarterResourceTableWidth: js.UndefOr[Double] = js.native
+  var quarterResourceTableWidth: js.UndefOr[Double] = js.undefined
   
-  var recurringEventsEnabled: js.UndefOr[Boolean] = js.native
+  var recurringEventsEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var relativeMove: js.UndefOr[Boolean] = js.native
+  var relativeMove: js.UndefOr[Boolean] = js.undefined
   
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
-  var schedulerMaxHeight: js.UndefOr[Double] = js.native
+  var schedulerMaxHeight: js.UndefOr[Double] = js.undefined
   
-  var schedulerWidth: js.UndefOr[Double | String] = js.native
+  var schedulerWidth: js.UndefOr[Double | String] = js.undefined
   
-  var scrollToSpecialMomentEnabled: js.UndefOr[Boolean] = js.native
+  var scrollToSpecialMomentEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var selectedAreaColor: js.UndefOr[String] = js.native
+  var selectedAreaColor: js.UndefOr[String] = js.undefined
   
-  var startResizable: js.UndefOr[Boolean] = js.native
+  var startResizable: js.UndefOr[Boolean] = js.undefined
   
-  var summaryColor: js.UndefOr[String] = js.native
+  var summaryColor: js.UndefOr[String] = js.undefined
   
-  var summaryPos: js.UndefOr[SummaryPos] = js.native
+  var summaryPos: js.UndefOr[SummaryPos] = js.undefined
   
-  var tableHeaderHeight: js.UndefOr[Double] = js.native
+  var tableHeaderHeight: js.UndefOr[Double] = js.undefined
   
-  var views: js.UndefOr[js.Array[View]] = js.native
+  var views: js.UndefOr[js.Array[View]] = js.undefined
   
-  var weekCellWidth: js.UndefOr[Double] = js.native
+  var weekCellWidth: js.UndefOr[Double] = js.undefined
   
-  var weekMaxEvents: js.UndefOr[Double] = js.native
+  var weekMaxEvents: js.UndefOr[Double] = js.undefined
   
-  var weekResourceTableWidth: js.UndefOr[Double] = js.native
+  var weekResourceTableWidth: js.UndefOr[Double] = js.undefined
   
-  var yearCellWidth: js.UndefOr[Double] = js.native
+  var yearCellWidth: js.UndefOr[Double] = js.undefined
   
-  var yearMaxEvents: js.UndefOr[Double] = js.native
+  var yearMaxEvents: js.UndefOr[Double] = js.undefined
   
-  var yearResourceTableWidth: js.UndefOr[Double] = js.native
+  var yearResourceTableWidth: js.UndefOr[Double] = js.undefined
 }
 object SchedulerDataConfig {
   

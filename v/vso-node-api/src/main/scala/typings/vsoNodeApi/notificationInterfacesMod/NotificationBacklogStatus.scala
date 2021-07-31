@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationBacklogStatus extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var maxUnprocessedNotificationAgeMs: Double = js.native
+  var maxUnprocessedNotificationAgeMs: Double
   
-  var publisher: String = js.native
+  var publisher: String
   
-  var timeSinceLastProcessedNotificationMs: Double = js.native
+  var timeSinceLastProcessedNotificationMs: Double
   
-  var unprocessedNotifications: Double = js.native
+  var unprocessedNotifications: Double
 }
 object NotificationBacklogStatus {
   

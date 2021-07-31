@@ -2,34 +2,32 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The values that define content padding within the map view frame.
   */
-@js.native
 trait Padding extends StObject {
   
   /**
     * The amount of padding, in CSS pixels, to inset the map from the bottom edge.
     */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /**
     * The amount of padding, in CSS pixels, to inset the map from the left edge.
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * The amount of padding, in CSS pixels, to inset the map from the right edge.
     */
-  var right: Double = js.native
+  var right: Double
   
   /**
     * The amount of padding, in CSS pixels, to inset the map from the top edge.
     */
-  var top: Double = js.native
+  var top: Double
 }
 object Padding {
   

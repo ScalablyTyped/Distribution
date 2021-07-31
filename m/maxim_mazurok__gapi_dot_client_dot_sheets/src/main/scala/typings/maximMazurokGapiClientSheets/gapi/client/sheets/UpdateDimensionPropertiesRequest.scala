@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDimensionPropertiesRequest extends StObject {
   
   /** The columns on a data source sheet to update. */
-  var dataSourceSheetRange: js.UndefOr[DataSourceSheetDimensionRange] = js.native
+  var dataSourceSheetRange: js.UndefOr[DataSourceSheetDimensionRange] = js.undefined
   
   /**
     * The fields that should be updated. At least one field must be specified. The root `properties` is implied and should not be specified. A single `"*"` can be used as short-hand for
     * listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Properties to update. */
-  var properties: js.UndefOr[DimensionProperties] = js.native
+  var properties: js.UndefOr[DimensionProperties] = js.undefined
   
   /** The rows or columns to update. */
-  var range: js.UndefOr[DimensionRange] = js.native
+  var range: js.UndefOr[DimensionRange] = js.undefined
 }
 object UpdateDimensionPropertiesRequest {
   

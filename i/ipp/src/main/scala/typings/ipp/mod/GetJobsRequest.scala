@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobsRequest extends StObject {
   
-  var `operation-attributes-tag`: Limit = js.native
+  var `operation-attributes-tag`: Limit
 }
 object GetJobsRequest {
   

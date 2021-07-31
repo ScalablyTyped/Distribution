@@ -14,10 +14,13 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("chokidar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("chokidar", "FSWatcher")
   @js.native
@@ -91,31 +94,26 @@ object mod {
     def unwatch(paths: js.Array[String]): Unit = js.native
   }
   
-  @JSImport("chokidar", "watch")
-  @js.native
-  def watch(paths: String): FSWatcher = js.native
-  @JSImport("chokidar", "watch")
-  @js.native
-  def watch(paths: String, options: WatchOptions): FSWatcher = js.native
-  @JSImport("chokidar", "watch")
-  @js.native
-  def watch(paths: js.Array[String]): FSWatcher = js.native
-  @JSImport("chokidar", "watch")
-  @js.native
-  def watch(paths: js.Array[String], options: WatchOptions): FSWatcher = js.native
+  @scala.inline
+  def watch(paths: String): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(paths.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(paths: String, options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(paths: js.Array[String]): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(paths.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(paths: js.Array[String], options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  @js.native
   trait AwaitWriteFinishOptions extends StObject {
     
     /**
       * File size polling interval.
       */
-    var pollInterval: js.UndefOr[Double] = js.native
+    var pollInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Amount of time in milliseconds for a file size to remain constant before emitting its event.
       */
-    var stabilityThreshold: js.UndefOr[Double] = js.native
+    var stabilityThreshold: js.UndefOr[Double] = js.undefined
   }
   object AwaitWriteFinishOptions {
     
@@ -142,7 +140,6 @@ object mod {
     }
   }
   
-  @js.native
   trait WatchOptions extends StObject {
     
     /**
@@ -150,7 +147,7 @@ object mod {
       * may get passed with `add`, `addDir`, and `change` events, set this to `true` to ensure it is
       * provided even in cases where it wasn't already available from the underlying watch events.
       */
-    var alwaysStat: js.UndefOr[Boolean] = js.native
+    var alwaysStat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `true` if `useFsEvents` and `usePolling` are `false`). Automatically filters out artifacts
@@ -159,54 +156,54 @@ object mod {
       * event rather than `unlink` then `add`. If the default of 100 ms does not work well for you,
       * you can override it by setting `atomic` to a custom value, in milliseconds.
       */
-    var atomic: js.UndefOr[Boolean | Double] = js.native
+    var atomic: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * can be set to an object in order to adjust timing params:
       */
-    var awaitWriteFinish: js.UndefOr[AwaitWriteFinishOptions | Boolean] = js.native
+    var awaitWriteFinish: js.UndefOr[AwaitWriteFinishOptions | Boolean] = js.undefined
     
     /**
       * Interval of file system polling for binary files. ([see list of binary extensions](https://gi
       * thub.com/sindresorhus/binary-extensions/blob/master/binary-extensions.json))
       */
-    var binaryInterval: js.UndefOr[Double] = js.native
+    var binaryInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * The base directory from which watch `paths` are to be derived. Paths emitted with events will
       * be relative to this.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * If set, limits how many levels of subdirectories will be traversed.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       *  If set to true then the strings passed to .watch() and .add() are treated as literal path
       *  names, even if they look like globs. Default: false.
       */
-    var disableGlobbing: js.UndefOr[Boolean] = js.native
+    var disableGlobbing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `false`, only the symlinks themselves will be watched for changes instead of following
       * the link references and bubbling events through the link's path.
       */
-    var followSymlinks: js.UndefOr[Boolean] = js.native
+    var followSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `false` then `add`/`addDir` events are also emitted for matching paths while
       * instantiating the watching as chokidar discovers these file paths (before the `ready` event).
       */
-    var ignoreInitial: js.UndefOr[Boolean] = js.native
+    var ignoreInitial: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Indicates whether to watch files that don't have read permissions if possible. If watching
       *  fails due to `EPERM` or `EACCES` with this set to `true`, the errors will be suppressed
       *  silently.
       */
-    var ignorePermissionErrors: js.UndefOr[Boolean] = js.native
+    var ignorePermissionErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ([anymatch](https://github.com/micromatch/anymatch)-compatible definition) Defines files/paths to
@@ -215,26 +212,26 @@ object mod {
       * (the path), second time with two arguments (the path and the
       * [`fs.Stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object of that path).
       */
-    var ignored: js.UndefOr[js.Any] = js.native
+    var ignored: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Interval of file system polling.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates whether the process should continue to run as long as files are being watched. If
       * set to `false` when using `fsevents` to watch, no more events will be emitted after `ready`,
       * even if the process continues to run.
       */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use the `fsevents` watching interface if available. When set to `true` explicitly
       * and `fsevents` is available this supercedes the `usePolling` setting. When set to `false` on
       * OS X, `usePolling: true` becomes the default.
       */
-    var useFsEvents: js.UndefOr[Boolean] = js.native
+    var useFsEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use fs.watchFile (backed by polling), or fs.watch. If polling leads to high CPU
@@ -243,7 +240,7 @@ object mod {
       * watch files in other non-standard situations. Setting to `true` explicitly on OS X overrides
       * the `useFsEvents` default.
       */
-    var usePolling: js.UndefOr[Boolean] = js.native
+    var usePolling: js.UndefOr[Boolean] = js.undefined
   }
   object WatchOptions {
     

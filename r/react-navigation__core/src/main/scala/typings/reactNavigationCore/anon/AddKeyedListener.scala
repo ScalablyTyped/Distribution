@@ -8,15 +8,13 @@ import typings.reactNavigationRouters.typesMod.NavigationAction
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddKeyedListener extends StObject {
   
-  var addKeyedListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddKeyedListener] = js.native
+  var addKeyedListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddKeyedListener] = js.undefined
   
-  var addListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddListener] = js.native
+  var addListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddListener] = js.undefined
   
   var onAction: js.UndefOr[
     js.Function2[
@@ -24,13 +22,13 @@ trait AddKeyedListener extends StObject {
       /* visitedNavigators */ js.UndefOr[Set[String]], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  def onDispatchAction(action: NavigationAction, noop: Boolean): Unit = js.native
+  def onDispatchAction(action: NavigationAction, noop: Boolean): Unit
   
-  def onOptionsChange(options: js.Object): Unit = js.native
+  def onOptionsChange(options: js.Object): Unit
   
-  var onRouteFocus: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+  var onRouteFocus: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
 }
 object AddKeyedListener {
   

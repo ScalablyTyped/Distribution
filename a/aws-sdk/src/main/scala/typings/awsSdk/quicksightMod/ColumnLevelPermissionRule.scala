@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnLevelPermissionRule extends StObject {
   
   /**
     * An array of column names.
     */
-  var ColumnNames: js.UndefOr[ColumnNameList] = js.native
+  var ColumnNames: js.UndefOr[ColumnNameList] = js.undefined
   
   /**
     * An array of Amazon Resource Names (ARNs) for QuickSight users or groups.
     */
-  var Principals: js.UndefOr[PrincipalList] = js.native
+  var Principals: js.UndefOr[PrincipalList] = js.undefined
 }
 object ColumnLevelPermissionRule {
   

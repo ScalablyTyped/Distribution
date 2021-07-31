@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpriteSheet extends StObject {
   
   /** The maximum number of sprites per row in a sprite sheet. The default is 0, which indicates no maximum limit. */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /** End time in seconds, relative to the output file timeline. When `end_time_offset` is not specified, the sprites are generated until the end of the output file. */
-  var endTimeOffset: js.UndefOr[String] = js.native
+  var endTimeOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Required. File name prefix for the generated sprite sheets. Each sprite sheet has an incremental 10-digit zero-padded suffix starting from 0 before the extension, such as
     * `"sprite_sheet0000000123.jpeg"`.
     */
-  var filePrefix: js.UndefOr[String] = js.native
+  var filePrefix: js.UndefOr[String] = js.undefined
   
   /** Format type. The default is `"jpeg"`. Supported formats: - 'jpeg' */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** Starting from `0s`, create sprites at regular intervals. Specify the interval value in seconds. */
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
   
   /** The maximum number of rows per sprite sheet. When the sprite sheet is full, a new sprite sheet is created. The default is 0, which indicates no maximum limit. */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /** Required. The height of sprite in pixels. Must be an even integer. */
-  var spriteHeightPixels: js.UndefOr[Double] = js.native
+  var spriteHeightPixels: js.UndefOr[Double] = js.undefined
   
   /** Required. The width of sprite in pixels. Must be an even integer. */
-  var spriteWidthPixels: js.UndefOr[Double] = js.native
+  var spriteWidthPixels: js.UndefOr[Double] = js.undefined
   
   /** Start time in seconds, relative to the output file timeline. Determines the first sprite to pick. The default is `0s`. */
-  var startTimeOffset: js.UndefOr[String] = js.native
+  var startTimeOffset: js.UndefOr[String] = js.undefined
   
   /** Total number of sprites. Create the specified number of sprites distributed evenly across the timeline of the output media. The default is 100. */
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
 }
 object SpriteSheet {
   

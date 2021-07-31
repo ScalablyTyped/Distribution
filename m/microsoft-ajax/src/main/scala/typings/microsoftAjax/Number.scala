@@ -2,7 +2,6 @@ package typings.microsoftAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * Number Type Extensions
 * @see {@link http://msdn.microsoft.com/en-us/library/bb310835(v=vs.100).aspx}
 */
-@js.native
 trait Number extends StObject {
   
   /**
     * Formats a number by using the invariant culture.
     */
-  def format(format: java.lang.String): java.lang.String = js.native
+  def format(format: java.lang.String): java.lang.String
   
   /**
     * Formats a number by using the current culture.
     */
-  def localeFormat(format: java.lang.String): java.lang.String = js.native
+  def localeFormat(format: java.lang.String): java.lang.String
 }
 object Number {
   

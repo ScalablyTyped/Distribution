@@ -2,19 +2,17 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly The auction type the restriction applies to.
   */
-@js.native
 trait SchemaAuctionContext extends StObject {
   
   /**
     * The auction types this restriction applies to.
     */
-  var auctionTypes: js.UndefOr[js.Array[String]] = js.native
+  var auctionTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAuctionContext {
   

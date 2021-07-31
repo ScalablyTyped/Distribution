@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,4 +40,9 @@ trait Date extends StObject {
   def weekStart(date: js.Any): js.Any = js.native
   
   def yearStart(date: js.Any): js.Any = js.native
+}
+object Date {
+  
+  @scala.inline
+  def apply: Date = ^.asInstanceOf[js.Dynamic].selectDynamic("Date").asInstanceOf[Date]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackingOptions extends StObject {
   
   /**
     * The domain that you want to use for tracking open and click events.
     */
-  var CustomRedirectDomain: typings.awsSdk.pinpointemailMod.CustomRedirectDomain = js.native
+  var CustomRedirectDomain: typings.awsSdk.pinpointemailMod.CustomRedirectDomain
 }
 object TrackingOptions {
   

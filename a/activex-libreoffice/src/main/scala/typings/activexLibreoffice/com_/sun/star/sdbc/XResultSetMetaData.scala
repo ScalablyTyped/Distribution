@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** can be used to find out about the types and properties of the columns in a {@link ResultSet} . */
-@js.native
-trait XResultSetMetaData extends XInterface {
+trait XResultSetMetaData
+  extends StObject
+     with XInterface {
   
   /**
     * returns the number of columns in this {@link ResultSet} .
     * @returns the column count
     * @throws SQLException if a database access error occurs.
     */
-  val ColumnCount: Double = js.native
+  val ColumnCount: Double
   
   /**
     * gets a column's table's catalog name.
@@ -24,14 +24,14 @@ trait XResultSetMetaData extends XInterface {
     * @returns the catalog name
     * @throws SQLException if a database access error occurs.
     */
-  def getCatalogName(column: Double): String = js.native
+  def getCatalogName(column: Double): String
   
   /**
     * returns the number of columns in this {@link ResultSet} .
     * @returns the column count
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnCount(): Double = js.native
+  def getColumnCount(): Double
   
   /**
     * indicates the column's normal max width in chars.
@@ -39,7 +39,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the normal maximum number of characters allowed as the width of the designated column
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnDisplaySize(column: Double): Double = js.native
+  def getColumnDisplaySize(column: Double): Double
   
   /**
     * gets the suggested column title for use in printouts and displays.
@@ -47,7 +47,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the suggested column title
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnLabel(column: Double): String = js.native
+  def getColumnLabel(column: Double): String
   
   /**
     * gets a column's name.
@@ -55,7 +55,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the column name
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnName(column: Double): String = js.native
+  def getColumnName(column: Double): String
   
   /**
     * returns the fully-qualified name of the service whose instances are manufactured if the method {@link com.sun.star.sdbc.XResultSet} ::.getObject() is
@@ -64,7 +64,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the service name
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnServiceName(column: Double): String = js.native
+  def getColumnServiceName(column: Double): String
   
   /**
     * retrieves a column's SQL type.
@@ -72,7 +72,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the column type
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnType(column: Double): Double = js.native
+  def getColumnType(column: Double): Double
   
   /**
     * retrieves a column's database-specific type name.
@@ -80,7 +80,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the type name
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnTypeName(column: Double): String = js.native
+  def getColumnTypeName(column: Double): String
   
   /**
     * gets a column's number of decimal digits.
@@ -88,7 +88,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns precision
     * @throws SQLException if a database access error occurs.
     */
-  def getPrecision(column: Double): Double = js.native
+  def getPrecision(column: Double): Double
   
   /**
     * gets a column's number of digits to right of the decimal point.
@@ -96,7 +96,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns scale
     * @throws SQLException if a database access error occurs.
     */
-  def getScale(column: Double): Double = js.native
+  def getScale(column: Double): Double
   
   /**
     * gets a column's table's schema.
@@ -104,7 +104,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the schema name
     * @throws SQLException if a database access error occurs.
     */
-  def getSchemaName(column: Double): String = js.native
+  def getSchemaName(column: Double): String
   
   /**
     * gets a column's table name.
@@ -112,7 +112,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns the table name
     * @throws SQLException if a database access error occurs.
     */
-  def getTableName(column: Double): String = js.native
+  def getTableName(column: Double): String
   
   /**
     * indicates whether the column is automatically numbered, thus read-only.
@@ -120,7 +120,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isAutoIncrement(column: Double): Boolean = js.native
+  def isAutoIncrement(column: Double): Boolean
   
   /**
     * indicates whether a column's case matters.
@@ -128,7 +128,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isCaseSensitive(column: Double): Boolean = js.native
+  def isCaseSensitive(column: Double): Boolean
   
   /**
     * indicates whether the column is a cash value.
@@ -136,7 +136,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isCurrency(column: Double): Boolean = js.native
+  def isCurrency(column: Double): Boolean
   
   /**
     * indicates whether a write on the column will definitely succeed.
@@ -144,7 +144,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isDefinitelyWritable(column: Double): Boolean = js.native
+  def isDefinitelyWritable(column: Double): Boolean
   
   /**
     * indicates the nullability of values in the designated column.
@@ -153,7 +153,7 @@ trait XResultSetMetaData extends XInterface {
     * @see com.sun.star.sdbc.ColumnValue
     * @throws SQLException if a database access error occurs.
     */
-  def isNullable(column: Double): Double = js.native
+  def isNullable(column: Double): Double
   
   /**
     * indicates whether a column is definitely not writable.
@@ -161,7 +161,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isReadOnly(column: Double): Boolean = js.native
+  def isReadOnly(column: Double): Boolean
   
   /**
     * indicates whether the column can be used in a where clause.
@@ -169,7 +169,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isSearchable(column: Double): Boolean = js.native
+  def isSearchable(column: Double): Boolean
   
   /**
     * indicates whether values in the column are signed numbers.
@@ -177,7 +177,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isSigned(column: Double): Boolean = js.native
+  def isSigned(column: Double): Boolean
   
   /**
     * indicates whether it is possible for a write on the column to succeed.
@@ -185,7 +185,7 @@ trait XResultSetMetaData extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isWritable(column: Double): Boolean = js.native
+  def isWritable(column: Double): Boolean
 }
 object XResultSetMetaData {
   

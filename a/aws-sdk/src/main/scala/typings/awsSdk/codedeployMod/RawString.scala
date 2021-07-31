@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawString extends StObject {
   
   /**
     * The YAML-formatted or JSON-formatted revision string. It includes information about which Lambda function to update and optional Lambda functions that validate deployment lifecycle events.
     */
-  var content: js.UndefOr[RawStringContent] = js.native
+  var content: js.UndefOr[RawStringContent] = js.undefined
   
   /**
     * The SHA256 hash value of the revision content.
     */
-  var sha256: js.UndefOr[RawStringSha256] = js.native
+  var sha256: js.UndefOr[RawStringSha256] = js.undefined
 }
 object RawString {
   

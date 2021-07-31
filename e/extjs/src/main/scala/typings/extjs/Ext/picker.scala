@@ -3,43 +3,43 @@ package typings.extjs.Ext
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object picker {
   
-  @js.native
-  trait IColor extends IComponent {
+  trait IColor
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Boolean) */
-    var allowReselect: js.UndefOr[Boolean] = js.native
+    var allowReselect: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Clears any selection and sets the value to null  */
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var clickEvent: js.UndefOr[java.lang.String] = js.native
+    var clickEvent: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (String[]) */
-    var colors: js.UndefOr[Array] = js.native
+    var colors: js.UndefOr[Array] = js.undefined
     
     /** [Method] Get the currently selected color value
       * @returns String value The selected value. Null if nothing is selected.
       */
-    var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var itemCls: js.UndefOr[java.lang.String] = js.native
+    var itemCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_IColor: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_IColor: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Selects the specified color in the picker fires the select event
       * @param color String A valid 6-digit color hex code (# will be stripped if included)
@@ -51,13 +51,13 @@ object picker {
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var selectedCls: js.UndefOr[java.lang.String] = js.native
+    var selectedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var value: js.UndefOr[java.lang.String] = js.native
+    var value: js.UndefOr[java.lang.String] = js.undefined
   }
   object IColor {
     
@@ -144,178 +144,179 @@ object picker {
     }
   }
   
-  @js.native
-  trait IDate extends IComponent {
+  trait IDate
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (String) */
-    var ariaTitle: js.UndefOr[java.lang.String] = js.native
+    var ariaTitle: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var ariaTitleDateFormat: js.UndefOr[java.lang.String] = js.native
+    var ariaTitleDateFormat: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String[]) */
-    var dayNames: js.UndefOr[Array] = js.native
+    var dayNames: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var disableAnim: js.UndefOr[Boolean] = js.native
+    var disableAnim: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var disabledCellCls: js.UndefOr[java.lang.String] = js.native
+    var disabledCellCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String[]) */
-    var disabledDates: js.UndefOr[Array] = js.native
+    var disabledDates: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (RegExp) */
-    var disabledDatesRE: js.UndefOr[RegExp] = js.native
+    var disabledDatesRE: js.UndefOr[RegExp] = js.undefined
     
     /** [Config Option] (String) */
-    var disabledDatesText: js.UndefOr[java.lang.String] = js.native
+    var disabledDatesText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number[]) */
-    var disabledDays: js.UndefOr[Array] = js.native
+    var disabledDays: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String) */
-    var disabledDaysText: js.UndefOr[java.lang.String] = js.native
+    var disabledDaysText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var focusOnShow: js.UndefOr[Boolean] = js.native
+    var focusOnShow: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[java.lang.String] = js.native
+    var format: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Gets a single character to represent the day of the week
       * @param value Object
       * @returns String The character
       */
-    var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.native
+    var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
     
     /** [Method] Gets the current selected value of the date field
       * @returns Date The selected date
       */
-    var getValue: js.UndefOr[js.Function0[_]] = js.native
+    var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Hides the month picker if it s visible
       * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
       * @returns Ext.picker.Date this
       */
-    var hideMonthPicker: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.native
+    var hideMonthPicker: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Config Option] (Object) */
-    var keyNavConfig: js.UndefOr[js.Any] = js.native
+    var keyNavConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var longDayFormat: js.UndefOr[java.lang.String] = js.native
+    var longDayFormat: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Date) */
-    var maxDate: js.UndefOr[js.Any] = js.native
+    var maxDate: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var maxText: js.UndefOr[java.lang.String] = js.native
+    var maxText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Date) */
-    var minDate: js.UndefOr[js.Any] = js.native
+    var minDate: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var minText: js.UndefOr[java.lang.String] = js.native
+    var minText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String[]) */
-    var monthNames: js.UndefOr[Array] = js.native
+    var monthNames: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String) */
-    var monthYearFormat: js.UndefOr[java.lang.String] = js.native
+    var monthYearFormat: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var monthYearText: js.UndefOr[java.lang.String] = js.native
+    var monthYearText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var nextText: js.UndefOr[java.lang.String] = js.native
+    var nextText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var prevText: js.UndefOr[java.lang.String] = js.native
+    var prevText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the current value to today
       * @returns Ext.picker.Date this
       */
-    var selectToday: js.UndefOr[js.Function0[this.type]] = js.native
+    var selectToday: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (String) */
-    var selectedCls: js.UndefOr[java.lang.String] = js.native
+    var selectedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Replaces any existing disabled dates with new values and refreshes the DatePicker
       * @param disabledDates String[]/RegExp An array of date strings (see the disabledDates config for details on supported values), or a JavaScript regular expression used to disable a pattern of dates.
       * @returns Ext.picker.Date this
       */
-    var setDisabledDates: js.UndefOr[js.Function1[/* disabledDates */ js.UndefOr[js.Any], this.type]] = js.native
+    var setDisabledDates: js.UndefOr[js.Function1[/* disabledDates */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Replaces any existing disabled days by index 0 6 with new values and refreshes the DatePicker
       * @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
       * @returns Ext.picker.Date this
       */
-    var setDisabledDays: js.UndefOr[js.Function1[/* disabledDays */ js.UndefOr[Array], this.type]] = js.native
+    var setDisabledDays: js.UndefOr[js.Function1[/* disabledDays */ js.UndefOr[Array], this.type]] = js.undefined
     
     /** [Method] Replaces any existing maxDate with the new value and refreshes the DatePicker
       * @param value Date The maximum date that can be selected
       * @returns Ext.picker.Date this
       */
-    var setMaxDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.native
+    var setMaxDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Replaces any existing minDate with the new value and refreshes the DatePicker
       * @param value Date The minimum date that can be selected
       * @returns Ext.picker.Date this
       */
-    var setMinDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.native
+    var setMinDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the value of the date field
       * @param value Date The date to set
       * @returns Ext.picker.Date this
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.native
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Show the month picker
       * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
       * @returns Ext.picker.Date this
       */
-    var showMonthPicker: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.native
+    var showMonthPicker: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Method] Show the next month
       * @param e Object
       * @returns Ext.picker.Date this
       */
-    var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], this.type]] = js.native
+    var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Show the next year
       * @returns Ext.picker.Date this
       */
-    var showNextYear: js.UndefOr[js.Function0[this.type]] = js.native
+    var showNextYear: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Show the previous month
       * @param e Object
       * @returns Ext.picker.Date this
       */
-    var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], this.type]] = js.native
+    var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Show the previous year
       * @returns Ext.picker.Date this
       */
-    var showPrevYear: js.UndefOr[js.Function0[this.type]] = js.native
+    var showPrevYear: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showToday: js.UndefOr[Boolean] = js.native
+    var showToday: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var startDay: js.UndefOr[Double] = js.native
+    var startDay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var todayText: js.UndefOr[java.lang.String] = js.native
+    var todayText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var todayTip: js.UndefOr[java.lang.String] = js.native
+    var todayTip: js.UndefOr[java.lang.String] = js.undefined
   }
   object IDate {
     
@@ -407,7 +408,7 @@ object picker {
       def setGetDayInitialUndefined: Self = StObject.set(x, "getDayInitial", js.undefined)
       
       @scala.inline
-      def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
@@ -594,44 +595,45 @@ object picker {
     }
   }
   
-  @js.native
-  trait IMonth extends IComponent {
+  trait IMonth
+    extends StObject
+       with IComponent {
     
     /** [Method] Modify the year display by passing an offset
       * @param offset Number The offset to move by.
       */
-    var adjustYear: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.native
+    var adjustYear: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var cancelText: js.UndefOr[java.lang.String] = js.native
+    var cancelText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Gets the selected value
       * @returns Number[] The selected value
       */
-    var getValue: js.UndefOr[js.Function0[Array]] = js.native
+    var getValue: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Checks whether the picker has a selection
       * @returns Boolean Returns true if both a month and year have been selected
       */
-    var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var okText: js.UndefOr[java.lang.String] = js.native
+    var okText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var selectedCls: js.UndefOr[java.lang.String] = js.native
+    var selectedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Set the value for the picker
       * @param value Date/Number[] The value to set. It can be a Date object, where the month/year will be extracted, or it can be an array, with the month as the first index and the year as the second.
       * @returns Ext.picker.Month this
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.native
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Date/Number[]) */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object IMonth {
     
@@ -700,40 +702,40 @@ object picker {
     }
   }
   
-  @js.native
   trait ITime
-    extends typings.extjs.Ext.view.IBoundList {
+    extends StObject
+       with typings.extjs.Ext.view.IBoundList {
     
     /** [Method] Focuses a node in the view
       * @param rec Object
       */
     @JSName("focusNode")
-    var focusNode_ITime: js.UndefOr[js.Function1[/* rec */ js.UndefOr[js.Any], Unit]] = js.native
+    var focusNode_ITime: js.UndefOr[js.Function1[/* rec */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[java.lang.String] = js.native
+    var format: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var increment: js.UndefOr[Double] = js.native
+    var increment: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Date) */
-    var maxValue: js.UndefOr[js.Any] = js.native
+    var maxValue: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Date) */
-    var minValue: js.UndefOr[js.Any] = js.native
+    var minValue: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Set the maxValue and update the list of available times
       * @param value Date
       */
-    var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Set the minValue and update the list of available times
       * @param value Date
       */
-    var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Update the list of available times in the list to be constrained within the minValue and maxValue  */
-    var updateList: js.UndefOr[js.Function0[Unit]] = js.native
+    var updateList: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ITime {
     

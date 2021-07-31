@@ -5,39 +5,38 @@ import typings.blueprintjsCore.dialogMod.IDialogProps
 import typings.blueprintjsCore.hotkeyMod.IHotkeyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotkeysDialogMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", "hideHotkeysDialog")
+  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", JSImport.Namespace)
   @js.native
-  def hideHotkeysDialog(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", "hideHotkeysDialogAfterDelay")
-  @js.native
-  def hideHotkeysDialogAfterDelay(): Unit = js.native
+  @scala.inline
+  def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", "isHotkeysDialogShowing")
-  @js.native
-  def isHotkeysDialogShowing(): Boolean = js.native
+  @scala.inline
+  def hideHotkeysDialogAfterDelay(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialogAfterDelay")().asInstanceOf[Unit]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", "setHotkeysDialogProps")
-  @js.native
-  def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = js.native
+  @scala.inline
+  def isHotkeysDialogShowing(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHotkeysDialogShowing")().asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog", "showHotkeysDialog")
-  @js.native
-  def showHotkeysDialog(hotkeys: js.Array[IHotkeyProps]): Unit = js.native
+  @scala.inline
+  def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait IHotkeysDialogProps extends IDialogProps {
+  @scala.inline
+  def showHotkeysDialog(hotkeys: js.Array[IHotkeyProps]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showHotkeysDialog")(hotkeys.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait IHotkeysDialogProps
+    extends StObject
+       with IDialogProps {
     
     /**
       * This string displayed as the group name in the hotkeys dialog for all
       * global hotkeys.
       */
-    var globalHotkeysGroup: js.UndefOr[String] = js.native
+    var globalHotkeysGroup: js.UndefOr[String] = js.undefined
   }
   object IHotkeysDialogProps {
     

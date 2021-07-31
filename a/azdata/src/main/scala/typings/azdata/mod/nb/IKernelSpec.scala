@@ -2,17 +2,15 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKernelSpec extends StObject {
   
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object IKernelSpec {
   

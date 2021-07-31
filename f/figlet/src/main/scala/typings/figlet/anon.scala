@@ -3,18 +3,16 @@ package typings.figlet
 import typings.figlet.mod.Fonts_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<figlet.figlet.Defaults> */
-  @js.native
   trait PartialDefaults extends StObject {
     
-    var font: js.UndefOr[Fonts_] = js.native
+    var font: js.UndefOr[Fonts_] = js.undefined
     
-    var fontPath: js.UndefOr[String] = js.native
+    var fontPath: js.UndefOr[String] = js.undefined
   }
   object PartialDefaults {
     

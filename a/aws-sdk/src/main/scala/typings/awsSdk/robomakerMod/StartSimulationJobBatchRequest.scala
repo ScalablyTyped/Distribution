@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSimulationJobBatchRequest extends StObject {
   
   /**
     * The batch policy.
     */
-  var batchPolicy: js.UndefOr[BatchPolicy] = js.native
+  var batchPolicy: js.UndefOr[BatchPolicy] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * A list of simulation job requests to create in the batch.
     */
-  var createSimulationJobRequests: CreateSimulationJobRequests = js.native
+  var createSimulationJobRequests: CreateSimulationJobRequests
   
   /**
     * A map that contains tag keys and tag values that are attached to the deployment job batch.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object StartSimulationJobBatchRequest {
   

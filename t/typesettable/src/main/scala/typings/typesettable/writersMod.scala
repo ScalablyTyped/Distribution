@@ -7,7 +7,6 @@ import typings.typesettable.measurersMod.AbstractMeasurer
 import typings.typesettable.wrappersMod.Wrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writersMod {
@@ -16,8 +15,8 @@ object writersMod {
   @js.native
   class Writer protected ()
     extends typings.typesettable.writerMod.Writer {
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[_]) = this()
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[_], _wrapper: Wrapper) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any]) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any], _wrapper: Wrapper) = this()
   }
   /* static members */
   object Writer {

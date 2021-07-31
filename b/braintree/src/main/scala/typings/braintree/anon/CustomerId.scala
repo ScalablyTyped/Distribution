@@ -3,17 +3,15 @@ package typings.braintree.anon
 import typings.braintree.mod.PaymentMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerId extends StObject {
   
-  var customerId: String = js.native
+  var customerId: String
   
-  var revokedPaymentMethod: PaymentMethod = js.native
+  var revokedPaymentMethod: PaymentMethod
   
-  var token: String = js.native
+  var token: String
 }
 object CustomerId {
   

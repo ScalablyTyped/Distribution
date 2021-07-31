@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ExclusionRule extends StObject {
   
   /** Dictionary which defines the rule. */
-  var dictionary: js.UndefOr[GooglePrivacyDlpV2Dictionary] = js.native
+  var dictionary: js.UndefOr[GooglePrivacyDlpV2Dictionary] = js.undefined
   
   /** Set of infoTypes for which findings would affect this rule. */
-  var excludeInfoTypes: js.UndefOr[GooglePrivacyDlpV2ExcludeInfoTypes] = js.native
+  var excludeInfoTypes: js.UndefOr[GooglePrivacyDlpV2ExcludeInfoTypes] = js.undefined
   
   /** How the rule is applied, see MatchingType documentation for details. */
-  var matchingType: js.UndefOr[String] = js.native
+  var matchingType: js.UndefOr[String] = js.undefined
   
   /** Regular expression which defines the rule. */
-  var regex: js.UndefOr[GooglePrivacyDlpV2Regex] = js.native
+  var regex: js.UndefOr[GooglePrivacyDlpV2Regex] = js.undefined
 }
 object GooglePrivacyDlpV2ExclusionRule {
   

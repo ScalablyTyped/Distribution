@@ -9,7 +9,6 @@ import typings.playable.tooltipTypesMod.ITooltipPositionFunction
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipContainerMod {
@@ -18,16 +17,24 @@ object tooltipContainerMod {
   @js.native
   class default protected () extends TooltipContainer {
     def this(tooltip: typings.playable.tooltipTooltipMod.default) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def getTooltipPositionStyles(position: ITooltipPosition): StringDictionary[String | Double] = js.native
   }
   
-  @js.native
   trait ITooltipContainer extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def getTooltipPositionStyles(position: ITooltipPosition): StringDictionary[String | Double] = js.native
+    def getTooltipPositionStyles(position: ITooltipPosition): StringDictionary[String | Double]
   }
   object ITooltipContainer {
     

@@ -3,24 +3,23 @@ package typings.azure.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object date {
   
-  @JSImport("azure", "date.daysFromNow")
+  @JSImport("azure", "date")
   @js.native
-  def daysFromNow(days: Double): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azure", "date.hoursFromNow")
-  @js.native
-  def hoursFromNow(hours: Double): Date = js.native
+  @scala.inline
+  def daysFromNow(days: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("daysFromNow")(days.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("azure", "date.minutesFromNow")
-  @js.native
-  def minutesFromNow(minutes: Double): Date = js.native
+  @scala.inline
+  def hoursFromNow(hours: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("hoursFromNow")(hours.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("azure", "date.secondsFromNow")
-  @js.native
-  def secondsFromNow(seconds: Double): Date = js.native
+  @scala.inline
+  def minutesFromNow(minutes: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("minutesFromNow")(minutes.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def secondsFromNow(seconds: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("secondsFromNow")(seconds.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelTestMatrixResponse extends StObject {
   
   /** The current rolled-up state of the test matrix. If this state is already final, then the cancelation request will have no effect. */
-  var testState: js.UndefOr[String] = js.native
+  var testState: js.UndefOr[String] = js.undefined
 }
 object CancelTestMatrixResponse {
   

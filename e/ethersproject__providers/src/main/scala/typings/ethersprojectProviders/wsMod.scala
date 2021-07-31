@@ -9,7 +9,6 @@ import typings.ws.mod.ServerOptions
 import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wsMod {
@@ -28,18 +27,18 @@ object wsMod {
     def this(address: URL_, options: ClientOptions) = this()
     def this(address: URL_, protocols: String) = this()
     def this(address: URL_, protocols: js.Array[String]) = this()
-    def this(address: String, protocols: js.UndefOr[scala.Nothing], options: ClientRequestArgs) = this()
-    def this(address: String, protocols: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
     def this(address: String, protocols: String, options: ClientRequestArgs) = this()
     def this(address: String, protocols: String, options: ClientOptions) = this()
     def this(address: String, protocols: js.Array[String], options: ClientRequestArgs) = this()
     def this(address: String, protocols: js.Array[String], options: ClientOptions) = this()
-    def this(address: URL_, protocols: js.UndefOr[scala.Nothing], options: ClientRequestArgs) = this()
-    def this(address: URL_, protocols: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
+    def this(address: String, protocols: Unit, options: ClientRequestArgs) = this()
+    def this(address: String, protocols: Unit, options: ClientOptions) = this()
     def this(address: URL_, protocols: String, options: ClientRequestArgs) = this()
     def this(address: URL_, protocols: String, options: ClientOptions) = this()
     def this(address: URL_, protocols: js.Array[String], options: ClientRequestArgs) = this()
     def this(address: URL_, protocols: js.Array[String], options: ClientOptions) = this()
+    def this(address: URL_, protocols: Unit, options: ClientRequestArgs) = this()
+    def this(address: URL_, protocols: Unit, options: ClientOptions) = this()
   }
   object WebSocket {
     
@@ -81,16 +80,14 @@ object wsMod {
     class Server ()
       extends typings.ws.mod.Server {
       def this(options: ServerOptions) = this()
-      def this(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
+      def this(options: Unit, callback: js.Function0[Unit]) = this()
       def this(options: ServerOptions, callback: js.Function0[Unit]) = this()
     }
     
     // WebSocket stream
-    @JSImport("@ethersproject/providers/lib/ws", "WebSocket.createWebSocketStream")
-    @js.native
-    def createWebSocketStream(websocket: typings.ws.mod.WebSocket): Duplex = js.native
-    @JSImport("@ethersproject/providers/lib/ws", "WebSocket.createWebSocketStream")
-    @js.native
-    def createWebSocketStream(websocket: typings.ws.mod.WebSocket, options: DuplexOptions): Duplex = js.native
+    @scala.inline
+    def createWebSocketStream(websocket: typings.ws.mod.WebSocket): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+    @scala.inline
+    def createWebSocketStream(websocket: typings.ws.mod.WebSocket, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   }
 }

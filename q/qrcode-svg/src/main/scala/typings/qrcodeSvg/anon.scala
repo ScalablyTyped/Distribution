@@ -5,15 +5,13 @@ import typings.qrcodeSvg.qrcodeSvgStrings.none
 import typings.qrcodeSvg.qrcodeSvgStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Container extends StObject {
     
-    var container: svg | g | none = js.native
+    var container: svg | g | none
   }
   object Container {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var parsedData: js.Array[Double] = js.native
+    var parsedData: js.Array[Double]
   }
   object Data {
     

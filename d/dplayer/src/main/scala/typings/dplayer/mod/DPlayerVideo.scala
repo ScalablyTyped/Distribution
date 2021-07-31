@@ -2,25 +2,23 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerVideo extends StObject {
   
-  var customType: js.UndefOr[js.Any] = js.native
+  var customType: js.UndefOr[js.Any] = js.undefined
   
-  var defaultQuality: js.UndefOr[Double] = js.native
+  var defaultQuality: js.UndefOr[Double] = js.undefined
   
-  var pic: js.UndefOr[String] = js.native
+  var pic: js.UndefOr[String] = js.undefined
   
-  var quality: js.UndefOr[js.Array[DPlayerVideoQuality]] = js.native
+  var quality: js.UndefOr[js.Array[DPlayerVideoQuality]] = js.undefined
   
-  var thumbnails: js.UndefOr[String] = js.native
+  var thumbnails: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[VideoType | String] = js.native
+  var `type`: js.UndefOr[VideoType | String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object DPlayerVideo {
   

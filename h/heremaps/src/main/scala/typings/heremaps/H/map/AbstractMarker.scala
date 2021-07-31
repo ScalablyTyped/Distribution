@@ -6,14 +6,15 @@ import typings.heremaps.H.geo.Point
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents marker, which offers a means of identifying a location on the map with an icon.
   */
 @js.native
-trait AbstractMarker extends Object {
+trait AbstractMarker
+  extends StObject
+     with Object {
   
   /**
     * @property draggable
@@ -62,22 +63,21 @@ object AbstractMarker {
     * @property icon {(H.map.Icon | H.map.DomIcon)=} - The icon to use for the visual representation, if omitted a default icon is used.
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     */
-  @js.native
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var icon: js.UndefOr[Icon | DomIcon] = js.native
+    var icon: js.UndefOr[Icon | DomIcon] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

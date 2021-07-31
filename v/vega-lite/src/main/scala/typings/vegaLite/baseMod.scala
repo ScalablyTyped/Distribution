@@ -17,25 +17,23 @@ import typings.vegaLite.vegaSchemaMod.VgEncodeEntry
 import typings.vegaLite.vegaSchemaMod.VgPostEncodingTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
-  @js.native
   trait MarkCompiler extends StObject {
     
-    def encodeEntry(model: UnitModel): VgEncodeEntry = js.native
+    def encodeEntry(model: UnitModel): VgEncodeEntry
     
     /**
       * Transform on a mark after render, used for layout and projections
       */
-    var postEncodingTransform: js.UndefOr[js.Function1[/* model */ UnitModel, js.Array[VgPostEncodingTransform]]] = js.native
+    var postEncodingTransform: js.UndefOr[js.Function1[/* model */ UnitModel, js.Array[VgPostEncodingTransform]]] = js.undefined
     
     /**
       * Underlying Vega Mark type for the Vega-Lite mark.
       */
-    var vgMark: arc | area | image | group | line | path | rect | rule | shape | symbol | text | trail = js.native
+    var vgMark: arc | area | image | group | line | path | rect | rule | shape | symbol | text | trail
   }
   object MarkCompiler {
     

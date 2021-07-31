@@ -4,29 +4,29 @@ import typings.voximplantWebsdk.mod.IMHistoryMessage
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when chat history received
   */
-@js.native
-trait ChatHistoryReceived extends VoxImplantIMEvent {
+trait ChatHistoryReceived
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Message id specified in getInstantMessagingHistory method
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     * List of messages
     */
-  var messages: js.Array[IMHistoryMessage] = js.native
+  var messages: js.Array[IMHistoryMessage]
 }
 object ChatHistoryReceived {
   

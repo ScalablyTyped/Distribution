@@ -2,21 +2,21 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoOptions extends BoxOptions {
+trait VideoOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Video to play.
     */
-  var file: String = js.native
+  var file: String
   
   /**
     * Start time in seconds.
     */
-  var start: Double = js.native
+  var start: Double
 }
 object VideoOptions {
   

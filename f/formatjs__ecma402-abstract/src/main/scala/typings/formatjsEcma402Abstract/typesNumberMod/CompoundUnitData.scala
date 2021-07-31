@@ -2,17 +2,15 @@ package typings.formatjsEcma402Abstract.typesNumberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompoundUnitData extends StObject {
   
-  var long: String = js.native
+  var long: String
   
-  var narrow: String = js.native
+  var narrow: String
   
-  var short: String = js.native
+  var short: String
 }
 object CompoundUnitData {
   

@@ -2,25 +2,23 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutSubscribableFunctions[T] extends StObject {
   
-  def clearError(): Unit = js.native
+  def clearError(): Unit
   
-  var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any = js.native
+  var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any
   
-  var isModified: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var isModified: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
   
-  var isValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
+  var isValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
   
-  var isValidating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var isValidating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
   
-  var rules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<KnockoutValidationRule> */ js.Any = js.native
+  var rules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<KnockoutValidationRule> */ js.Any
   
-  def setError(error: String): Unit = js.native
+  def setError(error: String): Unit
 }
 object KnockoutSubscribableFunctions {
   
@@ -39,7 +37,7 @@ object KnockoutSubscribableFunctions {
   }
   
   @scala.inline
-  implicit class KnockoutSubscribableFunctionsMutableBuilder[Self <: KnockoutSubscribableFunctions[_], T] (val x: Self with KnockoutSubscribableFunctions[T]) extends AnyVal {
+  implicit class KnockoutSubscribableFunctionsMutableBuilder[Self <: KnockoutSubscribableFunctions[?], T] (val x: Self & KnockoutSubscribableFunctions[T]) extends AnyVal {
     
     @scala.inline
     def setClearError(value: () => Unit): Self = StObject.set(x, "clearError", js.Any.fromFunction0(value))

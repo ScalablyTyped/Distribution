@@ -9,23 +9,21 @@ import typings.gitlab.servicesMod.UserKeys
 import typings.gitlab.servicesMod.Users
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserCustomAttributes extends StObject {
   
-  var UserCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes] = js.native
+  var UserCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes]
   
-  var UserEmails: Instantiable0[typings.gitlab.servicesMod.UserEmails] = js.native
+  var UserEmails: Instantiable0[typings.gitlab.servicesMod.UserEmails]
   
-  var UserGPGKeys: Instantiable0[typings.gitlab.servicesMod.UserGPGKeys] = js.native
+  var UserGPGKeys: Instantiable0[typings.gitlab.servicesMod.UserGPGKeys]
   
-  var UserImpersonationTokens: Instantiable0[typings.gitlab.servicesMod.UserImpersonationTokens] = js.native
+  var UserImpersonationTokens: Instantiable0[typings.gitlab.servicesMod.UserImpersonationTokens]
   
-  var UserKeys: Instantiable0[typings.gitlab.servicesMod.UserKeys] = js.native
+  var UserKeys: Instantiable0[typings.gitlab.servicesMod.UserKeys]
   
-  var Users: Instantiable0[typings.gitlab.servicesMod.Users] = js.native
+  var Users: Instantiable0[typings.gitlab.servicesMod.Users]
 }
 object UserCustomAttributes {
   

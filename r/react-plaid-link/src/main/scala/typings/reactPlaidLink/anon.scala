@@ -27,19 +27,17 @@ import typings.reactPlaidLink.reactPlaidLinkStrings.requires_questions
 import typings.reactPlaidLink.reactPlaidLinkStrings.requires_selections
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accounts extends StObject {
     
-    var accounts: js.Array[Id] = js.native
+    var accounts: js.Array[Id]
     
-    var institution: Institutionid = js.native
+    var institution: Institutionid
     
-    var link_session_id: String = js.native
+    var link_session_id: String
   }
   object Accounts {
     
@@ -66,16 +64,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Displaymessage extends StObject {
     
-    var display_message: String | Null = js.native
+    var display_message: String | Null
     
-    var error_code: String = js.native
+    var error_code: String
     
-    var error_message: String = js.native
+    var error_message: String
     
-    var error_type: INVALID_REQUEST | INVALID_INPUT | INSTITUTION_ERROR | RATE_LIMIT_EXCEEDED | API_ERROR | ITEM_ERROR | ASSET_REPORT_ERROR = js.native
+    var error_type: INVALID_REQUEST | INVALID_INPUT | INSTITUTION_ERROR | RATE_LIMIT_EXCEEDED | API_ERROR | ITEM_ERROR | ASSET_REPORT_ERROR
   }
   object Displaymessage {
     
@@ -85,7 +82,7 @@ object anon {
       error_message: String,
       error_type: INVALID_REQUEST | INVALID_INPUT | INSTITUTION_ERROR | RATE_LIMIT_EXCEEDED | API_ERROR | ITEM_ERROR | ASSET_REPORT_ERROR
     ): Displaymessage = {
-      val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any], display_message = null)
       __obj.asInstanceOf[Displaymessage]
     }
     
@@ -111,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EmailAddress extends StObject {
     
-    var emailAddress: js.UndefOr[String] = js.native
+    var emailAddress: js.UndefOr[String] = js.undefined
     
-    var legalName: js.UndefOr[String] = js.native
+    var legalName: js.UndefOr[String] = js.undefined
   }
   object EmailAddress {
     
@@ -143,36 +139,35 @@ object anon {
     }
   }
   
-  @js.native
   trait Errorcode extends StObject {
     
-    var error_code: js.UndefOr[String | Null] = js.native
+    var error_code: js.UndefOr[String | Null] = js.undefined
     
-    var error_message: js.UndefOr[String | Null] = js.native
+    var error_message: js.UndefOr[String | Null] = js.undefined
     
     var error_type: js.UndefOr[
         INVALID_REQUEST | INVALID_INPUT | INSTITUTION_ERROR | RATE_LIMIT_EXCEEDED | API_ERROR | ITEM_ERROR | ASSET_REPORT_ERROR | Null
-      ] = js.native
+      ] = js.undefined
     
-    var exit_status: js.UndefOr[String | Double | Null] = js.native
+    var exit_status: js.UndefOr[String | Double | Null] = js.undefined
     
-    var institution_id: String = js.native
+    var institution_id: String
     
-    var institution_name: String = js.native
+    var institution_name: String
     
-    var institution_search_query: js.UndefOr[String | Null] = js.native
+    var institution_search_query: js.UndefOr[String | Null] = js.undefined
     
-    var link_session_id: String = js.native
+    var link_session_id: String
     
-    var mfa_type: js.UndefOr[String | Null] = js.native
+    var mfa_type: js.UndefOr[String | Null] = js.undefined
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var timestamp: String = js.native
+    var timestamp: String
     
     var view_name: js.UndefOr[
         CONNECTED | CREDENTIAL | ERROR | EXIT | LOADING | MFA | RECAPTCHA | SELECT_ACCOUNT | SELECT_INSTITUTION | Null
-      ] = js.native
+      ] = js.undefined
   }
   object Errorcode {
     
@@ -275,26 +270,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var mask: String = js.native
+    var mask: String
     
-    var name: String = js.native
+    var name: String
     
-    var subtype: String = js.native
+    var subtype: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var verification_status: pending_automatic_verification | pending_manual_verification | manually_verified | Null = js.native
+    var verification_status: pending_automatic_verification | pending_manual_verification | manually_verified | Null
   }
   object Id {
     
     @scala.inline
     def apply(id: String, mask: String, name: String, subtype: String, `type`: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], verification_status = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
@@ -325,16 +319,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Institution extends StObject {
     
-    var institution: Name = js.native
+    var institution: Name
     
-    var link_session_id: String | Null = js.native
+    var link_session_id: String | Null
     
-    var request_id: String | Null = js.native
+    var request_id: String | Null
     
-    var status: requires_questions | requires_selections | requires_code | choose_device | requires_credentials | institution_not_found = js.native
+    var status: requires_questions | requires_selections | requires_code | choose_device | requires_credentials | institution_not_found
   }
   object Institution {
     
@@ -343,7 +336,7 @@ object anon {
       institution: Name,
       status: requires_questions | requires_selections | requires_code | choose_device | requires_credentials | institution_not_found
     ): Institution = {
-      val __obj = js.Dynamic.literal(institution = institution.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(institution = institution.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], link_session_id = null, request_id = null)
       __obj.asInstanceOf[Institution]
     }
     
@@ -372,12 +365,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Institutionid extends StObject {
     
-    var institution_id: String = js.native
+    var institution_id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Institutionid {
     
@@ -398,18 +390,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var institution_id: String | Null = js.native
+    var institution_id: String | Null
     
-    var name: String | Null = js.native
+    var name: String | Null
   }
   object Name {
     
     @scala.inline
     def apply(): Name = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(institution_id = null, name = null)
       __obj.asInstanceOf[Name]
     }
     

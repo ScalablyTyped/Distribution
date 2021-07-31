@@ -8,7 +8,6 @@ import typings.monacoEditor.monacoEditorStrings.auto
 import typings.monacoEditor.monacoEditorStrings.force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html {
@@ -27,32 +26,31 @@ object html {
   
   type CompletionConfiguration = StringDictionary[Boolean]
   
-  @js.native
   trait HTMLFormatConfiguration extends StObject {
     
-    val contentUnformatted: String = js.native
+    val contentUnformatted: String
     
-    val endWithNewline: Boolean = js.native
+    val endWithNewline: Boolean
     
-    val extraLiners: String = js.native
+    val extraLiners: String
     
-    val indentHandlebars: Boolean = js.native
+    val indentHandlebars: Boolean
     
-    val indentInnerHtml: Boolean = js.native
+    val indentInnerHtml: Boolean
     
-    val insertSpaces: Boolean = js.native
+    val insertSpaces: Boolean
     
-    val maxPreserveNewLines: Double = js.native
+    val maxPreserveNewLines: Double
     
-    val preserveNewLines: Boolean = js.native
+    val preserveNewLines: Boolean
     
-    val tabSize: Double = js.native
+    val tabSize: Double
     
-    val unformatted: String = js.native
+    val unformatted: String
     
-    val wrapAttributes: auto | force | `force-aligned` | `force-expand-multiline` = js.native
+    val wrapAttributes: auto | force | `force-aligned` | `force-expand-multiline`
     
-    val wrapLineLength: Double = js.native
+    val wrapLineLength: Double
   }
   object HTMLFormatConfiguration {
     
@@ -123,76 +121,75 @@ object html {
     
     val modeConfiguration: ModeConfiguration = js.native
     
-    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _]): IDisposable = js.native
-    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _], thisArg: js.Any): IDisposable = js.native
+    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, js.Any]): IDisposable = js.native
+    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, js.Any], thisArg: js.Any): IDisposable = js.native
     
     val options: Options = js.native
     
     def setOptions(options: Options): Unit = js.native
   }
   
-  @js.native
   trait ModeConfiguration extends StObject {
     
     /**
       * Defines whether the built-in color provider is enabled.
       */
-    val colors: js.UndefOr[Boolean] = js.native
+    val colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in completionItemProvider is enabled.
       */
-    val completionItems: js.UndefOr[Boolean] = js.native
+    val completionItems: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in diagnostic provider is enabled.
       */
-    val diagnostics: js.UndefOr[Boolean] = js.native
+    val diagnostics: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in documentFormattingEdit provider is enabled.
       */
-    val documentFormattingEdits: js.UndefOr[Boolean] = js.native
+    val documentFormattingEdits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in references provider is enabled.
       */
-    val documentHighlights: js.UndefOr[Boolean] = js.native
+    val documentHighlights: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in documentRangeFormattingEdit provider is enabled.
       */
-    val documentRangeFormattingEdits: js.UndefOr[Boolean] = js.native
+    val documentRangeFormattingEdits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in documentSymbolProvider is enabled.
       */
-    val documentSymbols: js.UndefOr[Boolean] = js.native
+    val documentSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in foldingRange provider is enabled.
       */
-    val foldingRanges: js.UndefOr[Boolean] = js.native
+    val foldingRanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in hoverProvider is enabled.
       */
-    val hovers: js.UndefOr[Boolean] = js.native
+    val hovers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in definitions provider is enabled.
       */
-    val links: js.UndefOr[Boolean] = js.native
+    val links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in rename provider is enabled.
       */
-    val rename: js.UndefOr[Boolean] = js.native
+    val rename: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in selection range provider is enabled.
       */
-    val selectionRanges: js.UndefOr[Boolean] = js.native
+    val selectionRanges: js.UndefOr[Boolean] = js.undefined
   }
   object ModeConfiguration {
     
@@ -279,18 +276,17 @@ object html {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * If set, comments are tolerated. If set to false, syntax errors will be emitted for comments.
       */
-    val format: js.UndefOr[HTMLFormatConfiguration] = js.native
+    val format: js.UndefOr[HTMLFormatConfiguration] = js.undefined
     
     /**
       * A list of known schemas and/or associations of schemas to file names.
       */
-    val suggest: js.UndefOr[CompletionConfiguration] = js.native
+    val suggest: js.UndefOr[CompletionConfiguration] = js.undefined
   }
   object Options {
     

@@ -6,27 +6,25 @@ import typings.meteor.Meteor.User
 import typings.meteor.anon.Digest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Accounts {
   
-  @js.native
   trait IValidateLoginAttemptCbOpts extends StObject {
     
-    var allowed: Boolean = js.native
+    var allowed: Boolean
     
-    var connection: Connection = js.native
+    var connection: Connection
     
-    var error: Error = js.native
+    var error: Error
     
-    var methodArguments: js.Array[_] = js.native
+    var methodArguments: js.Array[js.Any]
     
-    var methodName: String = js.native
+    var methodName: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var user: User = js.native
+    var user: User
   }
   object IValidateLoginAttemptCbOpts {
     
@@ -35,7 +33,7 @@ object Accounts {
       allowed: Boolean,
       connection: Connection,
       error: Error,
-      methodArguments: js.Array[_],
+      methodArguments: js.Array[js.Any],
       methodName: String,
       `type`: String,
       user: User
@@ -58,7 +56,7 @@ object Accounts {
       def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMethodArguments(value: js.Array[_]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
@@ -74,31 +72,30 @@ object Accounts {
     }
   }
   
-  @js.native
   trait LoginMethodOptions extends StObject {
     
     /**
       * The arguments for the method
       */
-    var methodArguments: js.UndefOr[js.Array[_]] = js.native
+    var methodArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The method to call (default 'login')
       */
-    var methodName: js.UndefOr[String] = js.native
+    var methodName: js.UndefOr[String] = js.undefined
     
     /**
       * Will be called with no arguments once the user is fully
       * logged in, or with the error on error.
       */
-    var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.native
+    var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * If provided, will be called with the result of the
       * method. If it throws, the client will not be logged in (and
       * its error will be passed to the callback).
       */
-    var validateResult: js.UndefOr[js.Function] = js.native
+    var validateResult: js.UndefOr[js.Function] = js.undefined
   }
   object LoginMethodOptions {
     
@@ -112,7 +109,7 @@ object Accounts {
     implicit class LoginMethodOptionsMutableBuilder[Self <: LoginMethodOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMethodArguments(value: js.Array[_]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)

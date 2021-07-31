@@ -3,15 +3,13 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.mod.MenuItemOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var options: js.Array[MenuItemOption | Null] = js.native
+  var options: js.Array[MenuItemOption | Null]
 }
 object Options {
   

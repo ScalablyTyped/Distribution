@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGroupsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The maximum number of items to return with this call.
     */
-  var Limit: js.UndefOr[PositiveIntegerType] = js.native
+  var Limit: js.UndefOr[PositiveIntegerType] = js.undefined
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.native
+  var OrganizationId: js.UndefOr[IdType] = js.undefined
   
   /**
     * A query to describe groups by group name.
     */
-  var SearchQuery: SearchQueryType = js.native
+  var SearchQuery: SearchQueryType
 }
 object DescribeGroupsRequest {
   

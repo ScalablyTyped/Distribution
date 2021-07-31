@@ -2,20 +2,20 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterEvent extends TableauEvent {
+trait FilterEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the name of the field. */
-  def getFieldName(): String = js.native
+  def getFieldName(): String
   
   /** Gets the Filter object associated with the event. */
-  def getFilterAsync(): js.Promise[ConcreteFilter] = js.native
+  def getFilterAsync(): js.Promise[ConcreteFilter]
   
   /** Gets the Worksheet object associated with the event. */
-  def getWorksheet(): Worksheet = js.native
+  def getWorksheet(): Worksheet
 }
 object FilterEvent {
   

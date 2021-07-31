@@ -3,7 +3,6 @@ package typings.reactScroll
 import typings.reactScroll.scrollEventsMod.Events.ScrollEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollEventsMod {
@@ -17,12 +16,11 @@ object scrollEventsMod {
   
   object Events {
     
-    @js.native
     trait ScrollEvent extends StObject {
       
-      def register(eventName: String, callback: js.Function2[/* to */ String, /* element */ js.Any, Unit]): Unit = js.native
+      def register(eventName: String, callback: js.Function2[/* to */ String, /* element */ js.Any, Unit]): Unit
       
-      def remove(eventName: String): Unit = js.native
+      def remove(eventName: String): Unit
     }
     object ScrollEvent {
       

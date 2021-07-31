@@ -8,63 +8,61 @@ import typings.jui.juiStrings.bottom
 import typings.jui.juiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
   /**
     * @cfg {Integer} [distance=5]
     * Determines each margin value when there are multiple notice messages
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [hideDuration=500]
     * Determines the duration of an effect when a notice message disappears
     */
-  var hideDuration: js.UndefOr[Double] = js.native
+  var hideDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {String} [hideEasing="linear"]
     * Determines an effect when a notice message disappears (see CSS3 specifications)
     */
-  var hideEasing: js.UndefOr[String] = js.native
+  var hideEasing: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {Integer} [padding=12]
     * Determines the margin value of a notice message (the margin value may be in object form rather than a numeric value)
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {"top"/"top-lefet"/"top-right"/"bottom"/"bottom-left"/"bottom-right"} [position="top-right"]
     * Designates the location where a notice message is added
     */
-  var position: js.UndefOr[top | `top-lefet` | `top-right` | bottom | `bottom-left` | `bottom-right`] = js.native
+  var position: js.UndefOr[top | `top-lefet` | `top-right` | bottom | `bottom-left` | `bottom-right`] = js.undefined
   
   /**
     * @cfg {Integer} [showDuration=500]
     * Determines the duration of an effect when a notice message is shown
     */
-  var showDuration: js.UndefOr[Double] = js.native
+  var showDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {String} [showEasing="swing"]
     * Determines an effect when a notice message is shown (see CSS3 specifications)
     */
-  var showEasing: js.UndefOr[String] = js.native
+  var showEasing: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {Integer} [timeout=3000]
     * Determines the duration for which a notice message is displayed (the message does not disappear when the value is 0)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object Distance {
   

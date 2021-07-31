@@ -3,49 +3,49 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing the options that initialize a marker annotation.
   */
-@js.native
-trait MarkerAnnotationConstructorOptions extends AnnotationConstructorOptions {
+trait MarkerAnnotationConstructorOptions
+  extends StObject
+     with AnnotationConstructorOptions {
   
   /**
     * The background color of the balloon.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The fill color of the glyph.
     */
-  var glyphColor: js.UndefOr[String] = js.native
+  var glyphColor: js.UndefOr[String] = js.undefined
   
   /**
     * The image to display in the marker balloon.
     */
-  var glyphImage: js.UndefOr[`1`] = js.native
+  var glyphImage: js.UndefOr[`1`] = js.undefined
   
   /**
     * The text to display in the marker balloon.
     */
-  var glyphText: js.UndefOr[String] = js.native
+  var glyphText: js.UndefOr[String] = js.undefined
   
   /**
     * The image to display in the balloon when the marker is selected.
     */
-  var selectedGlyphImage: js.UndefOr[js.Object] = js.native
+  var selectedGlyphImage: js.UndefOr[js.Object] = js.undefined
   
   /**
     * A value that determines the behavior of the subtitle's visibility.
     */
-  var subtitleVisibility: js.UndefOr[String] = js.native
+  var subtitleVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * A value that determines the behavior of the title's visibility.
     */
-  var titleVisibility: js.UndefOr[String] = js.native
+  var titleVisibility: js.UndefOr[String] = js.undefined
 }
 object MarkerAnnotationConstructorOptions {
   

@@ -12,7 +12,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.WIFI
 import typings.tizenCommonWeb.tizenMod.WebAPIError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadMod {
@@ -24,19 +23,25 @@ object downloadMod {
   object DownloadNetworkType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[DownloadNetworkType with String] = js.native
+    def apply(value: String): js.UndefOr[DownloadNetworkType & String] = js.native
     
     @js.native
-    sealed trait ALL extends DownloadNetworkType
-    /* "ALL" */ val ALL: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.ALL with String = js.native
+    sealed trait ALL
+      extends StObject
+         with DownloadNetworkType
+    /* "ALL" */ val ALL: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.ALL & String = js.native
     
     @js.native
-    sealed trait CELLULAR extends DownloadNetworkType
-    /* "CELLULAR" */ val CELLULAR: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.CELLULAR with String = js.native
+    sealed trait CELLULAR
+      extends StObject
+         with DownloadNetworkType
+    /* "CELLULAR" */ val CELLULAR: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.CELLULAR & String = js.native
     
     @js.native
-    sealed trait WIFI extends DownloadNetworkType
-    /* "WIFI" */ val WIFI: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.WIFI with String = js.native
+    sealed trait WIFI
+      extends StObject
+         with DownloadNetworkType
+    /* "WIFI" */ val WIFI: typings.tizenCommonWeb.downloadMod.DownloadNetworkType.WIFI & String = js.native
   }
   
   @JSImport("tizen-common-web/download", "DownloadRequest")
@@ -61,120 +66,55 @@ object downloadMod {
       */
     def this(url: String) = this()
     def this(url: String, destination: String) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String) = this()
     def this(url: String, destination: String, fileName: String) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: ALL
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: CELLULAR
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: WIFI
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: String,
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: ALL) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: CELLULAR) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: WIFI) = this()
-    def this(
-      url: String,
-      destination: String,
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: ALL) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: CELLULAR) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: String) = this()
     def this(url: String, destination: String, fileName: String, networkType: DownloadNetworkType) = this()
     def this(url: String, destination: String, fileName: String, networkType: ALL) = this()
     def this(url: String, destination: String, fileName: String, networkType: CELLULAR) = this()
     def this(url: String, destination: String, fileName: String, networkType: WIFI) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: ALL) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: CELLULAR) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: ALL) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: CELLULAR) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: ALL) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: CELLULAR) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: WIFI) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: js.UndefOr[scala.Nothing],
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: ALL,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: CELLULAR,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: WIFI,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
-      networkType: js.UndefOr[scala.Nothing],
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
@@ -182,70 +122,105 @@ object downloadMod {
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: js.UndefOr[scala.Nothing],
+      fileName: Unit,
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
-      networkType: js.UndefOr[scala.Nothing],
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
+      networkType: WIFI,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: Unit,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: DownloadNetworkType,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: ALL,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: CELLULAR,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
@@ -268,38 +243,51 @@ object downloadMod {
   object DownloadState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[DownloadState with String] = js.native
+    def apply(value: String): js.UndefOr[DownloadState & String] = js.native
     
     @js.native
-    sealed trait ABANDONED extends DownloadState
-    /* "ABANDONED" */ val ABANDONED: typings.tizenCommonWeb.downloadMod.DownloadState.ABANDONED with String = js.native
+    sealed trait ABANDONED
+      extends StObject
+         with DownloadState
+    /* "ABANDONED" */ val ABANDONED: typings.tizenCommonWeb.downloadMod.DownloadState.ABANDONED & String = js.native
     
     @js.native
-    sealed trait CANCELED extends DownloadState
-    /* "CANCELED" */ val CANCELED: typings.tizenCommonWeb.downloadMod.DownloadState.CANCELED with String = js.native
+    sealed trait CANCELED
+      extends StObject
+         with DownloadState
+    /* "CANCELED" */ val CANCELED: typings.tizenCommonWeb.downloadMod.DownloadState.CANCELED & String = js.native
     
     @js.native
-    sealed trait COMPLETED extends DownloadState
-    /* "COMPLETED" */ val COMPLETED: typings.tizenCommonWeb.downloadMod.DownloadState.COMPLETED with String = js.native
+    sealed trait COMPLETED
+      extends StObject
+         with DownloadState
+    /* "COMPLETED" */ val COMPLETED: typings.tizenCommonWeb.downloadMod.DownloadState.COMPLETED & String = js.native
     
     @js.native
-    sealed trait DOWNLOADING extends DownloadState
-    /* "DOWNLOADING" */ val DOWNLOADING: typings.tizenCommonWeb.downloadMod.DownloadState.DOWNLOADING with String = js.native
+    sealed trait DOWNLOADING
+      extends StObject
+         with DownloadState
+    /* "DOWNLOADING" */ val DOWNLOADING: typings.tizenCommonWeb.downloadMod.DownloadState.DOWNLOADING & String = js.native
     
     @js.native
-    sealed trait FAILED extends DownloadState
-    /* "FAILED" */ val FAILED: typings.tizenCommonWeb.downloadMod.DownloadState.FAILED with String = js.native
+    sealed trait FAILED
+      extends StObject
+         with DownloadState
+    /* "FAILED" */ val FAILED: typings.tizenCommonWeb.downloadMod.DownloadState.FAILED & String = js.native
     
     @js.native
-    sealed trait PAUSED extends DownloadState
-    /* "PAUSED" */ val PAUSED: typings.tizenCommonWeb.downloadMod.DownloadState.PAUSED with String = js.native
+    sealed trait PAUSED
+      extends StObject
+         with DownloadState
+    /* "PAUSED" */ val PAUSED: typings.tizenCommonWeb.downloadMod.DownloadState.PAUSED & String = js.native
     
     @js.native
-    sealed trait QUEUED extends DownloadState
-    /* "QUEUED" */ val QUEUED: typings.tizenCommonWeb.downloadMod.DownloadState.QUEUED with String = js.native
+    sealed trait QUEUED
+      extends StObject
+         with DownloadState
+    /* "QUEUED" */ val QUEUED: typings.tizenCommonWeb.downloadMod.DownloadState.QUEUED & String = js.native
   }
   
-  @js.native
   trait DownloadCallback extends StObject {
     
     /**
@@ -308,7 +296,7 @@ object downloadMod {
       *
       * @param downloadId The ID of the corresponding download operation.
       */
-    var oncanceled: js.UndefOr[js.Function1[/* downloadId */ Double, Unit]] = js.native
+    var oncanceled: js.UndefOr[js.Function1[/* downloadId */ Double, Unit]] = js.undefined
     
     /**
       * Called when the download operation is completed with the final full path or virtual path.
@@ -318,7 +306,7 @@ object downloadMod {
       * @param downloadId The ID of the corresponding download operation.
       * @param path The final full path or virtual path for the downloaded file.
       */
-    var oncompleted: js.UndefOr[js.Function2[/* downloadId */ Double, /* path */ String, Unit]] = js.native
+    var oncompleted: js.UndefOr[js.Function2[/* downloadId */ Double, /* path */ String, Unit]] = js.undefined
     
     /**
       * Called when the download operation fails.
@@ -327,7 +315,7 @@ object downloadMod {
       * @param downloadId The ID of the corresponding download operation.
       * @param error The reason for download failure.
       */
-    var onfailed: js.UndefOr[js.Function2[/* downloadId */ Double, /* error */ WebAPIError, Unit]] = js.native
+    var onfailed: js.UndefOr[js.Function2[/* downloadId */ Double, /* error */ WebAPIError, Unit]] = js.undefined
     
     /**
       * Called when the download operation is paused by the `pause()` method.
@@ -335,7 +323,7 @@ object downloadMod {
       *
       * @param downloadId The ID of the corresponding download operation.
       */
-    var onpaused: js.UndefOr[js.Function1[/* downloadId */ Double, Unit]] = js.native
+    var onpaused: js.UndefOr[js.Function1[/* downloadId */ Double, Unit]] = js.undefined
     
     /**
       * Called when a download is successful and it is called multiple times as the download progresses.
@@ -348,7 +336,7 @@ object downloadMod {
       */
     var onprogress: js.UndefOr[
         js.Function3[/* downloadId */ Double, /* receivedSize */ Double, /* totalSize */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object DownloadCallback {
     
@@ -534,7 +522,8 @@ object downloadMod {
   
   @js.native
   trait DownloadRequestConstructor
-    extends /**
+    extends StObject
+       with /**
     * @param url An attribute to store the URL of the object to download.
     * @param destination? An attribute to store the folder path of the destination folder to which a requested file object will be downloaded.
     * If the destination is not specified or is an empty string, the file will be downloaded to the default storage: "Downloads". For more information, see Filesystem API
@@ -555,22 +544,22 @@ object downloadMod {
        with Instantiable2[/* url */ String, /* destination */ String, DownloadRequest]
        with Instantiable3[
           /* url */ String, 
-          js.UndefOr[/* destination */ String], 
+          (/* destination */ String) | (/* destination */ Unit), 
           /* fileName */ String, 
           DownloadRequest
         ]
        with Instantiable4[
           /* url */ String, 
-          js.UndefOr[/* destination */ String], 
-          js.UndefOr[/* fileName */ String], 
+          (/* destination */ String) | (/* destination */ Unit), 
+          (/* fileName */ String) | (/* fileName */ Unit), 
           ALL | CELLULAR | WIFI | (/* networkType */ DownloadNetworkType), 
           DownloadRequest
         ]
        with Instantiable5[
           /* url */ String, 
-          js.UndefOr[/* destination */ String], 
-          js.UndefOr[/* fileName */ String], 
-          js.UndefOr[ALL | CELLULAR | WIFI | (/* networkType */ DownloadNetworkType)], 
+          (/* destination */ String) | (/* destination */ Unit), 
+          (/* fileName */ String) | (/* fileName */ Unit), 
+          ALL | CELLULAR | WIFI | (/* networkType */ DownloadNetworkType) | (/* networkType */ Unit), 
           /* httpHeader */ DownloadHTTPHeaderFields, 
           DownloadRequest
         ]

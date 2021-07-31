@@ -3,10 +3,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 import typings.googleCloudFirestore.anon.InitialOpsPerSecond
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriterOptions extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait BulkWriterOptions extends StObject {
     * operations per second does not ramp up past the specified operations per
     * second.
     */
-  val throttling: js.UndefOr[Boolean | InitialOpsPerSecond] = js.native
+  val throttling: js.UndefOr[Boolean | InitialOpsPerSecond] = js.undefined
 }
 object BulkWriterOptions {
   

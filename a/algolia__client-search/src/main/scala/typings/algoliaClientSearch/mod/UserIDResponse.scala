@@ -2,31 +2,29 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIDResponse extends StObject {
   
   /**
     * Cluster on which the user is assigned
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * Data size used by the user.
     */
-  var dataSize: Double = js.native
+  var dataSize: Double
   
   /**
     * Number of records belonging to the user.
     */
-  var nbRecords: Double = js.native
+  var nbRecords: Double
   
   /**
     * userID of the user.
     */
-  var userID: String = js.native
+  var userID: String
 }
 object UserIDResponse {
   

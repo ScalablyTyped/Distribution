@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A maintenance window for VMs. When set, we restrict our maintenance
   * operations to this window.
   */
-@js.native
 trait SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow extends StObject {
   
-  var dailyMaintenanceWindow: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.native
+  var dailyMaintenanceWindow: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.undefined
 }
 object SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow {
   

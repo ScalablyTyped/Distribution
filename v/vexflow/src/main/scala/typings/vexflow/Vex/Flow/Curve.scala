@@ -4,21 +4,19 @@ import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Curve extends StObject {
   
-  def draw(): Boolean = js.native
+  def draw(): Boolean
   
-  def isPartial(): Boolean = js.native
+  def isPartial(): Boolean
   
-  def renderCurve(params: Direction): Unit = js.native
+  def renderCurve(params: Direction): Unit
   
-  def setContext(context: IRenderContext): Curve = js.native
+  def setContext(context: IRenderContext): Curve
   
-  def setNotes(from: Note, to: Note): Curve = js.native
+  def setNotes(from: Note, to: Note): Curve
 }
 object Curve {
   
@@ -41,10 +39,14 @@ object Curve {
   object Position extends StObject {
     
     @js.native
-    sealed trait NEAR_HEAD extends Position
+    sealed trait NEAR_HEAD
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait NEAR_TOP extends Position
+    sealed trait NEAR_TOP
+      extends StObject
+         with Position
   }
   
   @scala.inline

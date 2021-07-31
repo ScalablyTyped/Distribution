@@ -2,62 +2,60 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPackageVersionsRequest extends StObject {
   
   /**
     *  The name of the package for which you want to return a list of package versions. 
     */
   @JSName("package")
-  var _package: PackageName = js.native
+  var _package: PackageName
   
   /**
     *  The name of the domain that contains the repository that contains the returned package versions. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The format of the returned packages. The valid package types are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The maximum number of results to return per page. 
     */
-  var maxResults: js.UndefOr[ListPackageVersionsMaxResults] = js.native
+  var maxResults: js.UndefOr[ListPackageVersionsMaxResults] = js.undefined
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The name of the repository that contains the package. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
   
   /**
     *  How to sort the returned list of package versions. 
     */
-  var sortBy: js.UndefOr[PackageVersionSortType] = js.native
+  var sortBy: js.UndefOr[PackageVersionSortType] = js.undefined
   
   /**
     *  A string that specifies the status of the package versions to include in the returned list. It can be one of the following:     Published     Unfinished     Unlisted     Archived     Disposed   
     */
-  var status: js.UndefOr[PackageVersionStatus] = js.native
+  var status: js.UndefOr[PackageVersionStatus] = js.undefined
 }
 object ListPackageVersionsRequest {
   

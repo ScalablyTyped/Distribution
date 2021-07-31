@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AND extends StObject {
   
-  var aND: scala.Double = js.native
+  var aND: scala.Double
   
-  var nONE: scala.Double = js.native
+  var nONE: scala.Double
   
-  var oR: scala.Double = js.native
+  var oR: scala.Double
 }
 object AND {
   

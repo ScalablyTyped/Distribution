@@ -24,7 +24,6 @@ import typings.typeorm.typingsMod.ObjectID
 import typings.typeorm.updateResultMod.UpdateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityManagerMod {
@@ -68,8 +67,8 @@ object entityManagerMod {
     /**
       * Creates a new query builder that can be used to build a sql query.
       */
-    def createQueryBuilder(): SelectQueryBuilder[_] = js.native
-    def createQueryBuilder(queryRunner: QueryRunner): SelectQueryBuilder[_] = js.native
+    def createQueryBuilder(): SelectQueryBuilder[js.Any] = js.native
+    def createQueryBuilder(queryRunner: QueryRunner): SelectQueryBuilder[js.Any] = js.native
     /**
       * Creates a new query builder that can be used to build a sql query.
       */
@@ -123,9 +122,9 @@ object entityManagerMod {
       * Finds entities with ids.
       * Optionally find options can be applied.
       */
-    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[_]): js.Promise[js.Array[Entity]] = js.native
-    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[_], conditions: FindConditions[Entity]): js.Promise[js.Array[Entity]] = js.native
-    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[_], options: FindManyOptions[Entity]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[js.Any]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[js.Any], conditions: FindConditions[Entity]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds[Entity](entityClass: EntityTarget[Entity], ids: js.Array[js.Any], options: FindManyOptions[Entity]): js.Promise[js.Array[Entity]] = js.native
     
     /**
       * Finds first entity that matches given find options.
@@ -137,11 +136,11 @@ object entityManagerMod {
       conditions: FindConditions[Entity],
       options: FindOneOptions[Entity]
     ): js.Promise[js.UndefOr[Entity]] = js.native
-    def findOne[Entity](entityClass: EntityTarget[Entity], id: js.UndefOr[scala.Nothing], options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: String): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: String, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: Double): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: Double, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
+    def findOne[Entity](entityClass: EntityTarget[Entity], id: Unit, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: Date): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: Date, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](entityClass: EntityTarget[Entity], id: ObjectID): js.Promise[js.UndefOr[Entity]] = js.native
@@ -158,11 +157,11 @@ object entityManagerMod {
       conditions: FindConditions[Entity],
       options: FindOneOptions[Entity]
     ): js.Promise[Entity] = js.native
-    def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: js.UndefOr[scala.Nothing], options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: String): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: String, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: Double): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: Double, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
+    def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: Unit, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: Date): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: Date, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail[Entity](entityClass: EntityTarget[Entity], id: ObjectID): js.Promise[Entity] = js.native
@@ -181,7 +180,7 @@ object entityManagerMod {
     /**
       * Gets entity mixed id.
       */
-    def getId(target: EntityTarget[_], entity: js.Any): js.Any = js.native
+    def getId(target: EntityTarget[js.Any], entity: js.Any): js.Any = js.native
     
     /**
       * Gets mongodb repository for the given entity class.
@@ -251,8 +250,8 @@ object entityManagerMod {
     /**
       * Executes raw SQL query and returns raw database results.
       */
-    def query(query: String): js.Promise[_] = js.native
-    def query(query: String, parameters: js.Array[_]): js.Promise[_] = js.native
+    def query(query: String): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Custom query runner to be used for operations in this entity manager.
@@ -312,7 +311,7 @@ object entityManagerMod {
     /**
       * Once created and then reused by en repositories.
       */
-    var repositories: js.Array[Repository[_]] = js.native
+    var repositories: js.Array[Repository[js.Any]] = js.native
     
     /**
       * Restores entities by a given condition(s).

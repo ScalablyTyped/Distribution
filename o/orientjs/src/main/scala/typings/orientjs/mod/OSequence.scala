@@ -4,7 +4,6 @@ import typings.orientjs.orientjsStrings.CACHED
 import typings.orientjs.orientjsStrings.ORDERED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,25 +27,19 @@ class OSequence () extends StObject {
   @JSName("create")
   def create_CACHED(name: String, `type`: CACHED): js.Promise[OSequence] = js.native
   @JSName("create")
-  def create_CACHED(
-    name: String,
-    `type`: CACHED,
-    start: js.UndefOr[scala.Nothing],
-    incerement: js.UndefOr[scala.Nothing],
-    cache: Double
-  ): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: js.UndefOr[scala.Nothing], incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: js.UndefOr[scala.Nothing], incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
   def create_CACHED(name: String, `type`: CACHED, start: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: js.UndefOr[scala.Nothing], cache: Double): js.Promise[OSequence] = js.native
   @JSName("create")
   def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
   @JSName("create")
   def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
   /**
     * Create a new sequence.
     *
@@ -60,25 +53,19 @@ class OSequence () extends StObject {
   @JSName("create")
   def create_ORDERED(name: String, `type`: ORDERED): js.Promise[OSequence] = js.native
   @JSName("create")
-  def create_ORDERED(
-    name: String,
-    `type`: ORDERED,
-    start: js.UndefOr[scala.Nothing],
-    incerement: js.UndefOr[scala.Nothing],
-    cache: Double
-  ): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: js.UndefOr[scala.Nothing], incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: js.UndefOr[scala.Nothing], incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
   def create_ORDERED(name: String, `type`: ORDERED, start: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: js.UndefOr[scala.Nothing], cache: Double): js.Promise[OSequence] = js.native
   @JSName("create")
   def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
   @JSName("create")
   def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  @JSName("create")
+  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
   
   var db: js.UndefOr[ODB] = js.native
   
@@ -139,18 +126,13 @@ class OSequence () extends StObject {
     * @promise {Object} The created sequence object
     */
   def update(name: String): js.Promise[OSequence] = js.native
-  def update(
-    name: String,
-    start: js.UndefOr[scala.Nothing],
-    incerement: js.UndefOr[scala.Nothing],
-    cache: Double
-  ): js.Promise[OSequence] = js.native
-  def update(name: String, start: js.UndefOr[scala.Nothing], incerement: Double): js.Promise[OSequence] = js.native
-  def update(name: String, start: js.UndefOr[scala.Nothing], incerement: Double, cache: Double): js.Promise[OSequence] = js.native
   def update(name: String, start: Double): js.Promise[OSequence] = js.native
-  def update(name: String, start: Double, incerement: js.UndefOr[scala.Nothing], cache: Double): js.Promise[OSequence] = js.native
   def update(name: String, start: Double, incerement: Double): js.Promise[OSequence] = js.native
   def update(name: String, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  def update(name: String, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
+  def update(name: String, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
+  def update(name: String, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  def update(name: String, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
   
   var value: js.UndefOr[Double] = js.native
 }

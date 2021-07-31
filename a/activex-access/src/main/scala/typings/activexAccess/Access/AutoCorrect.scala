@@ -2,18 +2,16 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCorrect extends StObject {
   
   @JSName("Access.AutoCorrect_typekey")
-  var AccessDotAutoCorrect_typekey: AutoCorrect = js.native
+  var AccessDotAutoCorrect_typekey: AutoCorrect
   
-  var DisplayAutoCorrectOptions: Boolean = js.native
+  var DisplayAutoCorrectOptions: Boolean
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
 }
 object AutoCorrect {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ReplaceValueConfig extends StObject {
   
   /** Value to replace it with. */
-  var newValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var newValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
 }
 object GooglePrivacyDlpV2ReplaceValueConfig {
   

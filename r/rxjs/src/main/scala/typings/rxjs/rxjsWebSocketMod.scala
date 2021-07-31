@@ -5,10 +5,13 @@ import typings.rxjs.typesMod.Observer
 import typings.rxjs.webSocketSubjectMod.WebSocketSubjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rxjsWebSocketMod {
+  
+  @JSImport("rxjs/webSocket", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rxjs/webSocket", "WebSocketSubject")
   @js.native
@@ -22,10 +25,8 @@ object rxjsWebSocketMod {
     def this(urlConfigOrSource: WebSocketSubjectConfig[T], destination: Observer[T]) = this()
   }
   
-  @JSImport("rxjs/webSocket", "webSocket")
-  @js.native
-  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
-  @JSImport("rxjs/webSocket", "webSocket")
-  @js.native
-  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
+  @scala.inline
+  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSocket")(urlConfigOrSource.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.webSocketSubjectMod.WebSocketSubject[T]]
+  @scala.inline
+  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSocket")(urlConfigOrSource.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.webSocketSubjectMod.WebSocketSubject[T]]
 }

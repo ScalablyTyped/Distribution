@@ -9,35 +9,33 @@ import typings.pixiJs.PIXI.TYPES
 import typings.pixiJs.PIXI.WRAP_MODES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlphaMode extends StObject {
   
-  var alphaMode: js.UndefOr[ALPHA_MODES] = js.native
+  var alphaMode: js.UndefOr[ALPHA_MODES] = js.undefined
   
-  var anisotropicLevel: js.UndefOr[Double] = js.native
+  var anisotropicLevel: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[FORMATS] = js.native
+  var format: js.UndefOr[FORMATS] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var mipmap: js.UndefOr[MIPMAP_MODES] = js.native
+  var mipmap: js.UndefOr[MIPMAP_MODES] = js.undefined
   
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
-  var resourceOptions: js.UndefOr[js.Any] = js.native
+  var resourceOptions: js.UndefOr[js.Any] = js.undefined
   
-  var scaleMode: js.UndefOr[SCALE_MODES] = js.native
+  var scaleMode: js.UndefOr[SCALE_MODES] = js.undefined
   
-  var target: js.UndefOr[TARGETS] = js.native
+  var target: js.UndefOr[TARGETS] = js.undefined
   
-  var `type`: js.UndefOr[TYPES] = js.native
+  var `type`: js.UndefOr[TYPES] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wrapMode: js.UndefOr[WRAP_MODES] = js.native
+  var wrapMode: js.UndefOr[WRAP_MODES] = js.undefined
 }
 object AlphaMode {
   

@@ -3,15 +3,15 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.map.action.Manager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMapAction extends IEventEmitter {
+trait IMapAction
+  extends StObject
+     with IEventEmitter {
   
-  def begin(mapActionManager: Manager): Unit = js.native
+  def begin(mapActionManager: Manager): Unit
   
-  def end(): Unit = js.native
+  def end(): Unit
 }
 object IMapAction {
   

@@ -9,11 +9,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.nodeClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapTreeView extends Control {
+trait BootstrapTreeView
+  extends StObject
+     with Control {
   
   def collapseAll(): Unit = js.native
   
@@ -32,7 +33,7 @@ trait BootstrapTreeView extends Control {
   def getSelectedNode(): BootstrapTreeViewNode | Null = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[

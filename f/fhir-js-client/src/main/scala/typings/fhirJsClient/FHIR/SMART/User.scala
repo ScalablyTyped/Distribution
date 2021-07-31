@@ -2,19 +2,17 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User in context
   */
-@js.native
 trait User extends StObject {
   
   /**
     * Fetch the current user information from server. The library expects the userId to be of the format "ResourceType/Id"
     */
-  def read(): js.Promise[Response] = js.native
+  def read(): js.Promise[Response]
 }
 object User {
   

@@ -8,37 +8,37 @@ import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrt.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IVideoDeviceController extends IMediaDeviceController {
+trait IVideoDeviceController
+  extends StObject
+     with IMediaDeviceController {
   
-  var backlightCompensation: MediaDeviceControl = js.native
+  var backlightCompensation: MediaDeviceControl
   
-  var brightness: MediaDeviceControl = js.native
+  var brightness: MediaDeviceControl
   
-  var contrast: MediaDeviceControl = js.native
+  var contrast: MediaDeviceControl
   
-  var exposure: MediaDeviceControl = js.native
+  var exposure: MediaDeviceControl
   
-  var focus: MediaDeviceControl = js.native
+  var focus: MediaDeviceControl
   
-  var hue: MediaDeviceControl = js.native
+  var hue: MediaDeviceControl
   
-  var pan: MediaDeviceControl = js.native
+  var pan: MediaDeviceControl
   
-  var roll: MediaDeviceControl = js.native
+  var roll: MediaDeviceControl
   
-  var tilt: MediaDeviceControl = js.native
+  var tilt: MediaDeviceControl
   
-  def tryGetPowerlineFrequency(): Value = js.native
+  def tryGetPowerlineFrequency(): Value
   
-  def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean = js.native
+  def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean
   
-  var whiteBalance: MediaDeviceControl = js.native
+  var whiteBalance: MediaDeviceControl
   
-  var zoom: MediaDeviceControl = js.native
+  var zoom: MediaDeviceControl
 }
 object IVideoDeviceController {
   

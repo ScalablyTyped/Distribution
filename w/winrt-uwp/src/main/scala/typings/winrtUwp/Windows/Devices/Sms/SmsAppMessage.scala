@@ -4,63 +4,61 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface for manipulating an SMS Application message. Application messages are those which cannot be characterized as any other message type. */
-@js.native
 trait SmsAppMessage extends StObject {
   
   /** Reads or writes the binary part of the Application message. */
-  var binaryBody: IBuffer = js.native
+  var binaryBody: IBuffer
   
   /** The plain text body of the message. */
-  var body: String = js.native
+  var body: String
   
   /** The number to be dialed in reply to a received SMS message. */
-  var callbackNumber: String = js.native
+  var callbackNumber: String
   
   /** The class of the cellular device that received the message. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** The device ID of the device that received the message. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** The encoding used to send the message. */
-  var encoding: SmsEncoding = js.native
+  var encoding: SmsEncoding
   
   /** The telephone number of the sender of the message. */
-  var from: String = js.native
+  var from: String
   
   /** Indicates whether an SMS delivery status report was sent by the SMSC. */
-  var isDeliveryNotificationEnabled: Boolean = js.native
+  var isDeliveryNotificationEnabled: Boolean
   
   /** The message class of the message. */
-  var messageClass: SmsMessageClass = js.native
+  var messageClass: SmsMessageClass
   
   /** The message type of the message. */
-  var messageType: SmsMessageType = js.native
+  var messageType: SmsMessageType
   
   /** The port number of the message. */
-  var portNumber: Double = js.native
+  var portNumber: Double
   
   /** The Protocol identifier for the message. */
-  var protocolId: Double = js.native
+  var protocolId: Double
   
   /** The retry attempt count for the message. */
-  var retryAttemptCount: Double = js.native
+  var retryAttemptCount: Double
   
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
-  var simIccId: String = js.native
+  var simIccId: String
   
   /** The Teleservice identifier for the message. */
-  var teleserviceId: Double = js.native
+  var teleserviceId: Double
   
   /** The timestamp of the message. */
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   /** The telephone number of the recipient of this message. */
-  var to: String = js.native
+  var to: String
 }
 object SmsAppMessage {
   

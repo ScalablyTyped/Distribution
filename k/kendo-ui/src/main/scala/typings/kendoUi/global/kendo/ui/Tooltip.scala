@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.TooltipOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Tooltip")
 @js.native
 class Tooltip protected ()
-  extends typings.kendoUi.kendo.ui.Tooltip {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Tooltip {
   def this(element: Element) = this()
   def this(element: Element, options: TooltipOptions) = this()
 }
@@ -21,9 +21,8 @@ object Tooltip {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Tooltip.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Tooltip = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Tooltip]
   
   /* static member */
   @JSGlobal("kendo.ui.Tooltip.fn")

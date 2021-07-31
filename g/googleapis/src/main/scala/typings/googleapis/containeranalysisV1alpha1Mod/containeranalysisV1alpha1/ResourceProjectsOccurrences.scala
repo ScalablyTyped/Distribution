@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1alpha1", "containeranalysis_v1alpha1.Resource$Projects$Occurrences")
@@ -33,7 +32,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOccurrence] = js.native
   def create(callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
   def create(params: ParamsResourceProjectsOccurrencesCreate): GaxiosPromise[SchemaOccurrence] = js.native
   def create(params: ParamsResourceProjectsOccurrencesCreate, callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
   def create(
@@ -63,7 +62,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsOccurrencesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsOccurrencesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -92,7 +91,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOccurrence] = js.native
   def get(callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
   def get(params: ParamsResourceProjectsOccurrencesGet): GaxiosPromise[SchemaOccurrence] = js.native
   def get(params: ParamsResourceProjectsOccurrencesGet, callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
   def get(
@@ -132,7 +131,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsOccurrencesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsOccurrencesGetiampolicy,
@@ -164,7 +163,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def getNotes(): GaxiosPromise[SchemaNote] = js.native
   def getNotes(callback: BodyResponseCallback[SchemaNote]): Unit = js.native
-  def getNotes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNote] = js.native
+  def getNotes(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNote] = js.native
   def getNotes(params: ParamsResourceProjectsOccurrencesGetnotes): GaxiosPromise[SchemaNote] = js.native
   def getNotes(params: ParamsResourceProjectsOccurrencesGetnotes, callback: BodyResponseCallback[SchemaNote]): Unit = js.native
   def getNotes(
@@ -194,7 +193,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def getVulnerabilitySummary(): GaxiosPromise[SchemaGetVulnzOccurrencesSummaryResponse] = js.native
   def getVulnerabilitySummary(callback: BodyResponseCallback[SchemaGetVulnzOccurrencesSummaryResponse]): Unit = js.native
-  def getVulnerabilitySummary(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetVulnzOccurrencesSummaryResponse] = js.native
+  def getVulnerabilitySummary(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetVulnzOccurrencesSummaryResponse] = js.native
   def getVulnerabilitySummary(params: ParamsResourceProjectsOccurrencesGetvulnerabilitysummary): GaxiosPromise[SchemaGetVulnzOccurrencesSummaryResponse] = js.native
   def getVulnerabilitySummary(
     params: ParamsResourceProjectsOccurrencesGetvulnerabilitysummary,
@@ -232,7 +231,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListOccurrencesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOccurrencesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOccurrencesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListOccurrencesResponse] = js.native
   def list(params: ParamsResourceProjectsOccurrencesList): GaxiosPromise[SchemaListOccurrencesResponse] = js.native
   def list(
     params: ParamsResourceProjectsOccurrencesList,
@@ -266,7 +265,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOccurrence] = js.native
   def patch(callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOccurrence] = js.native
   def patch(params: ParamsResourceProjectsOccurrencesPatch): GaxiosPromise[SchemaOccurrence] = js.native
   def patch(params: ParamsResourceProjectsOccurrencesPatch, callback: BodyResponseCallback[SchemaOccurrence]): Unit = js.native
   def patch(
@@ -307,7 +306,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsOccurrencesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsOccurrencesSetiampolicy,
@@ -348,7 +347,7 @@ class ResourceProjectsOccurrences protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsOccurrencesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsOccurrencesTestiampermissions,

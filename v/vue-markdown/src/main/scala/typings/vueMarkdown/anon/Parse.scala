@@ -2,19 +2,17 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parse extends StObject {
   
-  var State: js.Any = js.native
+  var State: js.Any
   
-  var parse: js.Any = js.native
+  var parse: js.Any
   
-  var ruler: After = js.native
+  var ruler: After
   
-  var tokenize: js.Any = js.native
+  var tokenize: js.Any
 }
 object Parse {
   

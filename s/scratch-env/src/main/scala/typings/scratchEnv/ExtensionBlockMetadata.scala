@@ -4,48 +4,46 @@ import typings.scratchEnv.Scratch.BlockType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** All the metadata needed to register an extension block. */
-@js.native
 trait ExtensionBlockMetadata extends StObject {
   
   /** Map of argument placeholder to metadata about each arg. */
-  var arguments: js.UndefOr[Record[String, ExtensionArgumentMetadata]] = js.native
+  var arguments: js.UndefOr[Record[String, ExtensionArgumentMetadata]] = js.undefined
   
   /** The type of block (command, reporter, etc.) being described. */
-  var blockType: ValueOf[BlockType] = js.native
+  var blockType: ValueOf[BlockType]
   
   /** For flow control blocks, the number of branches/substacks for this block. */
-  var branchCount: js.UndefOr[Double] = js.native
+  var branchCount: js.UndefOr[Double] = js.undefined
   
   /** Whether this block is a reporter but should not allow a monitor. */
-  var disableMonitor: js.UndefOr[Boolean] = js.native
+  var disableMonitor: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the function implementing this block. Can be shared by other blocks/opcodes. */
-  var func: js.UndefOr[String] = js.native
+  var func: js.UndefOr[String] = js.undefined
   
   /** Whether this block should not appear in the block palette. */
-  var hideFromPalette: js.UndefOr[Boolean] = js.native
+  var hideFromPalette: js.UndefOr[Boolean] = js.undefined
   
   /** Whether a hat block is edge-activated. */
-  var isEdgeActivated: js.UndefOr[Boolean] = js.native
+  var isEdgeActivated: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the block ends a stack - no blocks can be connected after it. */
-  var isTerminal: js.UndefOr[Boolean] = js.native
+  var isTerminal: js.UndefOr[Boolean] = js.undefined
   
   /** A unique alphanumeric identifier for this block. No special characters allowed. */
-  var opcode: String = js.native
+  var opcode: String
   
   /** If this block is a reporter, this is the scope/context for its value. */
-  var reporterScope: js.UndefOr[ReporterScope] = js.native
+  var reporterScope: js.UndefOr[ReporterScope] = js.undefined
   
   /** Whether a hat/event block should restart existing threads. */
-  var shouldRestartExistingThreads: js.UndefOr[Boolean] = js.native
+  var shouldRestartExistingThreads: js.UndefOr[Boolean] = js.undefined
   
   /** The text on the block, with [PLACEHOLDERS] for arguments. */
-  var text: String = js.native
+  var text: String
 }
 object ExtensionBlockMetadata {
   

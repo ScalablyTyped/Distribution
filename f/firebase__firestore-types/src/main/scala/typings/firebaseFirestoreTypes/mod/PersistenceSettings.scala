@@ -2,17 +2,15 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceSettings extends StObject {
   
-  var experimentalForceOwningTab: js.UndefOr[Boolean] = js.native
+  var experimentalForceOwningTab: js.UndefOr[Boolean] = js.undefined
   
-  var experimentalTabSynchronization: js.UndefOr[Boolean] = js.native
+  var experimentalTabSynchronization: js.UndefOr[Boolean] = js.undefined
   
-  var synchronizeTabs: js.UndefOr[Boolean] = js.native
+  var synchronizeTabs: js.UndefOr[Boolean] = js.undefined
 }
 object PersistenceSettings {
   

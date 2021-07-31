@@ -2,16 +2,16 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsStep extends BaseDirectionsStep {
+trait DirectionsStep
+  extends StObject
+     with BaseDirectionsStep {
   
   /**
     * This field will only be available if travel_mode is set to TRANSIT.
     */
-  var steps: js.Array[BaseDirectionsStep] = js.native
+  var steps: js.Array[BaseDirectionsStep]
 }
 object DirectionsStep {
   

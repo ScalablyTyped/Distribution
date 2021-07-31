@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.SortField
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,31 +19,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This service extends the {@link com.sun.star.table.TableSortDescriptor} service with spreadsheet specific properties.
   */
-@js.native
-trait SheetSortDescriptor extends TableSortDescriptor {
+trait SheetSortDescriptor
+  extends StObject
+     with TableSortDescriptor {
   
   /** specifies if cell formats are moved with the contents they belong to. */
-  var BindFormatsToContent: Boolean = js.native
+  var BindFormatsToContent: Boolean
   
   /** specifies if the sorted data should be copied to another position in the document. */
-  var CopyOutputData: Boolean = js.native
+  var CopyOutputData: Boolean
   
   /** specifies if a user defined sorting list is used. */
-  var IsUserListEnabled: Boolean = js.native
+  var IsUserListEnabled: Boolean
   
   /**
     * specifies the position where sorted data are to be copied.
     *
     * This property is only used, if {@link SheetSortDescriptor.CopyOutputData} is `TRUE` .
     */
-  var OutputPosition: CellAddress = js.native
+  var OutputPosition: CellAddress
   
   /**
     * specifies which user defined sorting list is used.
     *
     * This property is only used, if {@link SheetSortDescriptor.IsUserListEnabled} is `TRUE` .
     */
-  var UserListIndex: Double = js.native
+  var UserListIndex: Double
 }
 object SheetSortDescriptor {
   

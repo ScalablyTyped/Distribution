@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dialog extends Control {
+trait Dialog
+  extends StObject
+     with Control {
   
   /**
     * Returns the custom header instance when the customHeader aggregation is set. Otherwise it returns
@@ -232,13 +233,13 @@ trait Dialog extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
-  def getAriaDescribedBy(): js.Array[_] = js.native
+  def getAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets content of aggregation <code>beginButton</code>.The button which is rendered to the left side
@@ -495,13 +496,13 @@ trait Dialog extends Control {
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  def removeAllAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>buttons</code>.Additionally, it unregisters them

@@ -3,13 +3,13 @@ package typings.bmapgl.global.BMapGL
 import typings.bmapgl.BMapGL.WalkingRouteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMapGL.WalkingRoute")
 @js.native
 class WalkingRoute protected ()
-  extends typings.bmapgl.BMapGL.WalkingRoute {
+  extends StObject
+     with typings.bmapgl.BMapGL.WalkingRoute {
   def this(location: String) = this()
   def this(location: typings.bmapgl.BMapGL.Map) = this()
   def this(location: typings.bmapgl.BMapGL.Point) = this()

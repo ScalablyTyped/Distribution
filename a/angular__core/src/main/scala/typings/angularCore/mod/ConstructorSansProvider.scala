@@ -2,16 +2,16 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConstructorSansProvider extends InjectableProvider {
+trait ConstructorSansProvider
+  extends StObject
+     with InjectableProvider {
   
   /**
     * A list of `token`s to be resolved by the injector.
     */
-  var deps: js.UndefOr[js.Array[_]] = js.native
+  var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ConstructorSansProvider {
   
@@ -25,7 +25,7 @@ object ConstructorSansProvider {
   implicit class ConstructorSansProviderMutableBuilder[Self <: ConstructorSansProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)

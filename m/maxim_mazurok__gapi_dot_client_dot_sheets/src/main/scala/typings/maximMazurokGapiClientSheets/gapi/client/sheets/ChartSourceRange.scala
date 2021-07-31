@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSourceRange extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ChartSourceRange extends StObject {
     * the domain and series. For example, these are valid configurations: domain sources: A1:A5 series1 sources: B1:B5 series2 sources: D6:D10 domain sources: A1:A5, C10:C12 series1
     * sources: B1:B5, D10:D12 series2 sources: C1:C5, E10:E12
     */
-  var sources: js.UndefOr[js.Array[GridRange]] = js.native
+  var sources: js.UndefOr[js.Array[GridRange]] = js.undefined
 }
 object ChartSourceRange {
   

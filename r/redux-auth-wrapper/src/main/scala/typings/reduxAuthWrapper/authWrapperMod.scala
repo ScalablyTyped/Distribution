@@ -5,19 +5,22 @@ import typings.reduxAuthWrapper.mod.AuthConfig
 import typings.reduxAuthWrapper.mod.AuthWrapperDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authWrapperMod {
   
-  @JSImport("redux-auth-wrapper/authWrapper", JSImport.Default)
+  @JSImport("redux-auth-wrapper/authWrapper", JSImport.Namespace)
   @js.native
-  def default[OwnProps](config: AuthWrapperConfig): AuthWrapperDecorator[OwnProps with InjectedAuthProps] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AuthWrapperConfig extends AuthConfig {
+  @scala.inline
+  def default[OwnProps](config: AuthWrapperConfig): AuthWrapperDecorator[OwnProps & InjectedAuthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthProps]]
+  
+  trait AuthWrapperConfig
+    extends StObject
+       with AuthConfig {
     
-    var FailureComponent: js.UndefOr[ReactType[_]] = js.native
+    var FailureComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
   }
   object AuthWrapperConfig {
     
@@ -31,19 +34,18 @@ object authWrapperMod {
     implicit class AuthWrapperConfigMutableBuilder[Self <: AuthWrapperConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFailureComponent(value: ReactType[_]): Self = StObject.set(x, "FailureComponent", value.asInstanceOf[js.Any])
+      def setFailureComponent(value: ReactType[js.Any]): Self = StObject.set(x, "FailureComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFailureComponentUndefined: Self = StObject.set(x, "FailureComponent", js.undefined)
     }
   }
   
-  @js.native
   trait InjectedAuthProps extends StObject {
     
-    var isAuthenticated: Boolean = js.native
+    var isAuthenticated: Boolean
     
-    var isAuthenticating: Boolean = js.native
+    var isAuthenticating: Boolean
   }
   object InjectedAuthProps {
     

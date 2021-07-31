@@ -2,42 +2,40 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoWalls extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Border: IMsoBorder = js.native
+  val Border: IMsoBorder
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: IMsoChartFormat = js.native
+  val Format: IMsoChartFormat
   
-  val Interior: IMsoInterior = js.native
+  val Interior: IMsoInterior
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.IMsoWalls_typekey")
-  var OfficeDotIMsoWalls_typekey: IMsoWalls = js.native
+  var OfficeDotIMsoWalls_typekey: IMsoWalls
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var PictureType: js.Any = js.native
+  var PictureType: js.Any
   
-  var PictureUnit: js.Any = js.native
+  var PictureUnit: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Thickness: Double = js.native
+  var Thickness: Double
 }
 object IMsoWalls {
   

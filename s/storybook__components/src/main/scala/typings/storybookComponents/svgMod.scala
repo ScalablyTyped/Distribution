@@ -7,7 +7,6 @@ import typings.std.SVGSVGElement
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgMod extends Shortcut {
@@ -16,10 +15,9 @@ object svgMod extends Shortcut {
   @js.native
   val default: StyledComponent[SVGProps[SVGSVGElement], SvgProps, Theme] = js.native
   
-  @js.native
   trait SvgProps extends StObject {
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
   }
   object SvgProps {
     

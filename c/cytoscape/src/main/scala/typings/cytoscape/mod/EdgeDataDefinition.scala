@@ -3,23 +3,22 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeDataDefinition
-  extends ElementDataDefinition
+  extends StObject
+     with ElementDataDefinition
      with /* key */ StringDictionary[js.Any] {
   
   /**
     * the source node id (edge comes from this node)
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * the target node id (edge goes to this node)
     */
-  var target: String = js.native
+  var target: String
 }
 object EdgeDataDefinition {
   

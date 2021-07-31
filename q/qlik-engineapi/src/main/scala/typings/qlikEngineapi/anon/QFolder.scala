@@ -2,13 +2,11 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QFolder extends StObject {
   
-  var qFolder: String = js.native
+  var qFolder: String
 }
 object QFolder {
   

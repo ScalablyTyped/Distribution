@@ -12,7 +12,6 @@ import typings.reactNative.mod.ViewProperties
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,16 +23,15 @@ object mod {
   
   type HTMLView = Component[HTMLViewProps, js.Object, js.Any]
   
-  @js.native
   trait HTMLViewNode extends StObject {
     
-    var attribs: StringDictionary[String] = js.native
+    var attribs: StringDictionary[String]
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HTMLViewNode {
     
@@ -69,52 +67,51 @@ object mod {
     }
   }
   
-  @js.native
   trait HTMLViewProps extends StObject {
     
     /*
       * The component used for rendering HTML element nodes
       */
-    var NodeComponent: js.UndefOr[ComponentType[js.Object]] = js.native
+    var NodeComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
     /*
       * The root wrapper component
       */
-    var RootComponent: js.UndefOr[ComponentType[js.Object]] = js.native
+    var RootComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
     /*
       * The component used for rendering text element nodes
       */
-    var TextComponent: js.UndefOr[ComponentType[js.Object]] = js.native
+    var TextComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
     /**
       *  When explicitly false, effectively sets paragraphBreak and lineBreak to null
       */
-    var addLineBreaks: js.UndefOr[Boolean] = js.native
+    var addLineBreaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text which is rendered before every li inside a ul
       */
-    var bullet: js.UndefOr[String] = js.native
+    var bullet: js.UndefOr[String] = js.undefined
     
     /**
       * Text which appears after text elements which create a new line (br, headings)
       */
-    var lineBreak: js.UndefOr[String] = js.native
+    var lineBreak: js.UndefOr[String] = js.undefined
     
     /*
       * Properties for the NodeComponent, can be used independently from NodeComponent
       */
-    var nodeComponentProps: js.UndefOr[TextProperties] = js.native
+    var nodeComponentProps: js.UndefOr[TextProperties] = js.undefined
     
-    var onLinkLongPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.native
+    var onLinkLongPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
     
-    var onLinkPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.native
+    var onLinkPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
     
     /**
       * Text which appears after every p element
       */
-    var paragraphBreak: js.UndefOr[String] = js.native
+    var paragraphBreak: js.UndefOr[String] = js.undefined
     
     /**
       *
@@ -140,24 +137,24 @@ object mod {
           /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*
       * Properties for the RootComponent, can be used independently from RootComponent
       */
-    var rootComponentProps: js.UndefOr[ViewProperties] = js.native
+    var rootComponentProps: js.UndefOr[ViewProperties] = js.undefined
     
-    var stylesheet: js.UndefOr[StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]] = js.native
+    var stylesheet: js.UndefOr[StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]] = js.undefined
     
     /*
       * Properties for the TextComponent, can be used independently from TextComponent
       */
-    var textComponentProps: js.UndefOr[TextProperties] = js.native
+    var textComponentProps: js.UndefOr[TextProperties] = js.undefined
     
     /**
       * a string of HTML content to render
       */
-    var value: String = js.native
+    var value: String
   }
   object HTMLViewProps {
     

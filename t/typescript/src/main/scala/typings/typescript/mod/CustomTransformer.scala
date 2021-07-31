@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTransformer extends StObject {
   
-  def transformBundle(node: Bundle): Bundle = js.native
+  def transformBundle(node: Bundle): Bundle
   
-  def transformSourceFile(node: SourceFile): SourceFile = js.native
+  def transformSourceFile(node: SourceFile): SourceFile
 }
 object CustomTransformer {
   

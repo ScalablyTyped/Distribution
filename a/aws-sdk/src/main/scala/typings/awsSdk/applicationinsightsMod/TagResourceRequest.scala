@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application that you want to add one or more tags to.
     */
-  var ResourceARN: AmazonResourceName = js.native
+  var ResourceARN: AmazonResourceName
   
   /**
     * A list of tags that to add to the application. A tag consists of a required tag key (Key) and an associated tag value (Value). The maximum length of a tag key is 128 characters. The maximum length of a tag value is 256 characters.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

@@ -4,23 +4,23 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDocumentMeta extends Object {
+trait IDocumentMeta
+  extends StObject
+     with Object {
   
-  var _attachments: js.UndefOr[String] = js.native
+  var _attachments: js.UndefOr[String] = js.undefined
   
-  var _etag: js.UndefOr[String] = js.native
+  var _etag: js.UndefOr[String] = js.undefined
   
-  var _rid: js.UndefOr[String] = js.native
+  var _rid: js.UndefOr[String] = js.undefined
   
-  var _self: String = js.native
+  var _self: String
   
-  var _ts: String = js.native
+  var _ts: String
   
-  var id: String = js.native
+  var id: String
 }
 object IDocumentMeta {
   

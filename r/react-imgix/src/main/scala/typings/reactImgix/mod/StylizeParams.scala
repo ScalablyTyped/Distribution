@@ -2,25 +2,23 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StylizeParams extends StObject {
   
-  var blur: js.UndefOr[ImgixParamType] = js.native
+  var blur: js.UndefOr[ImgixParamType] = js.undefined
   
-  var duotone: js.UndefOr[ImgixParamType] = js.native
+  var duotone: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `duotone-alpha`: js.UndefOr[ImgixParamType] = js.native
+  var `duotone-alpha`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var htn: js.UndefOr[ImgixParamType] = js.native
+  var htn: js.UndefOr[ImgixParamType] = js.undefined
   
-  var monochrome: js.UndefOr[ImgixParamType] = js.native
+  var monochrome: js.UndefOr[ImgixParamType] = js.undefined
   
-  var px: js.UndefOr[ImgixParamType] = js.native
+  var px: js.UndefOr[ImgixParamType] = js.undefined
   
-  var sepia: js.UndefOr[ImgixParamType] = js.native
+  var sepia: js.UndefOr[ImgixParamType] = js.undefined
 }
 object StylizeParams {
   

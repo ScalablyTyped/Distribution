@@ -12,7 +12,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Float
 import typings.officeJsPreview.officeJsPreviewStrings.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait CustomProperty extends ClientObject {
+trait CustomProperty
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePatchBaselineResult extends StObject {
   
   /**
     * The ID of the deleted patch baseline.
     */
-  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.native
+  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.undefined
 }
 object DeletePatchBaselineResult {
   

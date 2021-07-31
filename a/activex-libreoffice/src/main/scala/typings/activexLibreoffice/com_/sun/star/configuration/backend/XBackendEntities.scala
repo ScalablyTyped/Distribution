@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.XMultiLayerStratum
   * @since OOo 1.1.2
   */
-@js.native
-trait XBackendEntities extends XInterface {
+trait XBackendEntities
+  extends StObject
+     with XInterface {
   
   /**
     * provides the entity id of an entity for general administrative access.
@@ -22,7 +22,7 @@ trait XBackendEntities extends XInterface {
     * The admin entity is an entity that should be used to read and manage configuration data that applies to all entities within the backend.
     * @returns an entity identifier for the admin entity or an empty string, if there is no entity that can be used for general administrative access.
     */
-  val AdminEntity: String = js.native
+  val AdminEntity: String
   
   /**
     * provides the entity id of the owner entity of the backend.
@@ -30,7 +30,7 @@ trait XBackendEntities extends XInterface {
     * @see com.sun.star.configuration.backend.XBackend.listOwnLayers()
     * @see com.sun.star.configuration.backend.XBackend.getOwnUpdateHandler()
     */
-  val OwnerEntity: String = js.native
+  val OwnerEntity: String
   
   /**
     * provides the entity id of an entity for general administrative access.
@@ -38,7 +38,7 @@ trait XBackendEntities extends XInterface {
     * The admin entity is an entity that should be used to read and manage configuration data that applies to all entities within the backend.
     * @returns an entity identifier for the admin entity or an empty string, if there is no entity that can be used for general administrative access.
     */
-  def getAdminEntity(): String = js.native
+  def getAdminEntity(): String
   
   /**
     * provides the entity id of the owner entity of the backend.
@@ -46,7 +46,7 @@ trait XBackendEntities extends XInterface {
     * @see com.sun.star.configuration.backend.XBackend.listOwnLayers()
     * @see com.sun.star.configuration.backend.XBackend.getOwnUpdateHandler()
     */
-  def getOwnerEntity(): String = js.native
+  def getOwnerEntity(): String
   
   /**
     * determines, if two given entity ids denote the same entity.
@@ -56,7 +56,7 @@ trait XBackendEntities extends XInterface {
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the backend.
     * @throws com::sun::star::lang::IllegalArgumentException if either entity does not exist.
     */
-  def isEqualEntity(aEntity: String, aOtherEntity: String): Boolean = js.native
+  def isEqualEntity(aEntity: String, aOtherEntity: String): Boolean
   
   /**
     * determines, if a given entity id exists in this backend.
@@ -64,7 +64,7 @@ trait XBackendEntities extends XInterface {
     * @returns `TRUE` , if aEntity is a valid, existing entity for this backend, `FALSE` otherwise.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the backend.
     */
-  def supportsEntity(aEntity: String): Boolean = js.native
+  def supportsEntity(aEntity: String): Boolean
 }
 object XBackendEntities {
   

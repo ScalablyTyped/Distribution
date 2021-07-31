@@ -2,21 +2,21 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SinonMapMatcher extends SinonMatcher {
+trait SinonMapMatcher
+  extends StObject
+     with SinonMatcher {
   
   /**
     * Requires a Map to contain each one of the items the given map has.
     */
-  def contains(expected: SimplifiedMap): SinonMatcher = js.native
+  def contains(expected: SimplifiedMap): SinonMatcher
   
   /**
     * Requires a Map to be deep equal another one.
     */
-  def deepEquals(expected: SimplifiedMap): SinonMatcher = js.native
+  def deepEquals(expected: SimplifiedMap): SinonMatcher
 }
 object SinonMapMatcher {
   

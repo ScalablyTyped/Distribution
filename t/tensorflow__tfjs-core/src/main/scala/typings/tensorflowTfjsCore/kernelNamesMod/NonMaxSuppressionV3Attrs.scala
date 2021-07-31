@@ -2,17 +2,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonMaxSuppressionV3Attrs extends StObject {
   
-  var iouThreshold: Double = js.native
+  var iouThreshold: Double
   
-  var maxOutputSize: Double = js.native
+  var maxOutputSize: Double
   
-  var scoreThreshold: Double = js.native
+  var scoreThreshold: Double
 }
 object NonMaxSuppressionV3Attrs {
   

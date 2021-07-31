@@ -6,19 +6,17 @@ import typings.plotlyJs.plotlyJsStrings.svg
 import typings.plotlyJs.plotlyJsStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadImgopts extends StObject {
   
-  var filename: String = js.native
+  var filename: String
   
-  var format: jpeg | png | webp | svg = js.native
+  var format: jpeg | png | webp | svg
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object DownloadImgopts {
   

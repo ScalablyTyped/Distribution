@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object CoreTextFormatUpdatingResult extends StObject {
   
   /** The format update operation was not completed as the text input server expected. */
   @js.native
-  sealed trait failed extends CoreTextFormatUpdatingResult
+  sealed trait failed
+    extends StObject
+       with CoreTextFormatUpdatingResult
   
   /** The format update operation completed successfully. */
   @js.native
-  sealed trait succeeded extends CoreTextFormatUpdatingResult
+  sealed trait succeeded
+    extends StObject
+       with CoreTextFormatUpdatingResult
 }

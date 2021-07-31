@@ -5,7 +5,6 @@ import typings.remarkable.libMod.Rule
 import typings.remarkable.libMod.TagToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rulerMod {
@@ -19,7 +18,9 @@ object rulerMod {
     */
   @JSImport("remarkable/lib/ruler", JSImport.Namespace)
   @js.native
-  class ^[RULE] () extends Ruler[RULE]
+  class ^[RULE] ()
+    extends StObject
+       with Ruler[RULE]
   
   /**
     * Ruler is a helper class for building responsibility chains from

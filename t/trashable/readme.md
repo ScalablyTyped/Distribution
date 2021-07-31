@@ -12,7 +12,7 @@ A wrapper to make promises cancellable and garbage collectable
 | Keywords           | javascript, promise, cancellable, garbage-collection, garbage, collection, cancel, react, es6 |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 166064 |
+| # downloads        | 158240 |
 | # stars            | 0 |
 
 ## Links

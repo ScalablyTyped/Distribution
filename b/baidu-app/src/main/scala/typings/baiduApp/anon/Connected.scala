@@ -2,21 +2,19 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connected extends StObject {
   
   /**
     * 连接目前的状态
     */
-  var connected: Boolean = js.native
+  var connected: Boolean
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
 }
 object Connected {
   

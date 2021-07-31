@@ -8,29 +8,27 @@ import typings.reactVis.reactVisStrings.top
 import typings.reactVis.reactVisStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BOTTOM_ extends StObject {
   
-  var BOTTOM: bottom = js.native
+  var BOTTOM: bottom
   
-  var HORIZONTAL: horizontal = js.native
+  var HORIZONTAL: horizontal
   
-  var LEFT: left = js.native
+  var LEFT: left
   
-  var RIGHT: right = js.native
+  var RIGHT: right
   
-  var TOP: top = js.native
+  var TOP: top
   
-  var VERTICAL: vertical = js.native
+  var VERTICAL: vertical
 }
 object BOTTOM_ {
   
   @scala.inline
-  def apply(BOTTOM: bottom, HORIZONTAL: horizontal, LEFT: left, RIGHT: right, TOP: top, VERTICAL: vertical): BOTTOM_ = {
-    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM.asInstanceOf[js.Any], HORIZONTAL = HORIZONTAL.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], VERTICAL = VERTICAL.asInstanceOf[js.Any])
+  def apply(): BOTTOM_ = {
+    val __obj = js.Dynamic.literal(BOTTOM = "bottom", HORIZONTAL = "horizontal", LEFT = "left", RIGHT = "right", TOP = "top", VERTICAL = "vertical")
     __obj.asInstanceOf[BOTTOM_]
   }
   

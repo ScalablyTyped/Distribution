@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionPathValue extends StObject {
   
   /** A conversion path dimension value, containing a list of interactions with their attributes. */
-  var conversionPathValue: js.UndefOr[js.Array[InteractionType]] = js.native
+  var conversionPathValue: js.UndefOr[js.Array[InteractionType]] = js.undefined
   
   /** A primitive dimension value. A primitive metric value. */
-  var primitiveValue: js.UndefOr[String] = js.native
+  var primitiveValue: js.UndefOr[String] = js.undefined
 }
 object ConversionPathValue {
   

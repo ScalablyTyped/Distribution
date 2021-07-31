@@ -10,9 +10,9 @@ A mirror of Facebook's Warning
 | ------------------ | :-------------: |
 | Full name          | warning |
 | Keywords           | warning, facebook, react, invariant |
-| # releases         | 2 |
-| # dependents       | 1849 |
-| # downloads        | 330370779 |
+| # releases         | 0 |
+| # dependents       | 1943 |
+| # downloads        | 351688629 |
 | # stars            | 12 |
 
 ## Links

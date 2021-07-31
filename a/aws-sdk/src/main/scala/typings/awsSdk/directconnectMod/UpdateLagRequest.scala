@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLagRequest extends StObject {
   
   /**
     * The ID of the LAG.
     */
-  var lagId: LagId = js.native
+  var lagId: LagId
   
   /**
     * The name of the LAG.
     */
-  var lagName: js.UndefOr[LagName] = js.native
+  var lagName: js.UndefOr[LagName] = js.undefined
   
   /**
     * The minimum number of physical connections that must be operational for the LAG itself to be operational.
     */
-  var minimumLinks: js.UndefOr[Count] = js.native
+  var minimumLinks: js.UndefOr[Count] = js.undefined
 }
 object UpdateLagRequest {
   

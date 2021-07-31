@@ -2,13 +2,11 @@ package typings.knockoutPunches
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutPunchesStatic extends StObject {
   
-  def enableAll(): Unit = js.native
+  def enableAll(): Unit
 }
 object KnockoutPunchesStatic {
   

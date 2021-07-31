@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the CustomShapeCreateTemplate event.
   */
-@js.native
-trait ASPxClientDiagramCustomShapeCreateTemplateEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDiagramCustomShapeCreateTemplateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns a container for an instance of the template.
     */
-  var container: js.Any = js.native
+  var container: js.Any
   
   /**
     * Gets the currently processed diagram item.
     */
-  var item: DiagramShape = js.native
+  var item: DiagramShape
 }
 object ASPxClientDiagramCustomShapeCreateTemplateEventArgs {
   

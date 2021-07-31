@@ -2,26 +2,24 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for retrieving a Spreadsheet.
   */
-@js.native
 trait SchemaGetSpreadsheetByDataFilterRequest extends StObject {
   
   /**
     * The DataFilters used to select which ranges to retrieve from the
     * spreadsheet.
     */
-  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.undefined
   
   /**
     * True if grid data should be returned. This parameter is ignored if a
     * field mask was set in the request.
     */
-  var includeGridData: js.UndefOr[Boolean] = js.native
+  var includeGridData: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGetSpreadsheetByDataFilterRequest {
   

@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XDataDescriptorFactory
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XRename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,17 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @since OOo 2.0
   */
-@js.native
 trait DatabaseDocument
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XDataDescriptorFactory
      with XRename {
   
   /** is the name of the document. */
-  var Name: String = js.native
+  var Name: String
   
   /** is the URL of the document. */
-  var URL: String = js.native
+  var URL: String
 }
 object DatabaseDocument {
   

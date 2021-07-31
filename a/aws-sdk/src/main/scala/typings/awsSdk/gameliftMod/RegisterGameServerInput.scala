@@ -2,36 +2,34 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterGameServerInput extends StObject {
   
   /**
     * Information that is needed to make inbound client connections to the game server. This might include the IP address and port, DNS name, and other information.
     */
-  var ConnectionInfo: js.UndefOr[GameServerConnectionInfo] = js.native
+  var ConnectionInfo: js.UndefOr[GameServerConnectionInfo] = js.undefined
   
   /**
     * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer. 
     */
-  var GameServerData: js.UndefOr[typings.awsSdk.gameliftMod.GameServerData] = js.native
+  var GameServerData: js.UndefOr[typings.awsSdk.gameliftMod.GameServerData] = js.undefined
   
   /**
     * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * A custom string that uniquely identifies the game server to register. Game server IDs are developer-defined and must be unique across all game server groups in your AWS account.
     */
-  var GameServerId: typings.awsSdk.gameliftMod.GameServerId = js.native
+  var GameServerId: typings.awsSdk.gameliftMod.GameServerId
   
   /**
     * The unique identifier for the instance where the game server is running. This ID is available in the instance metadata. EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0.
     */
-  var InstanceId: GameServerInstanceId = js.native
+  var InstanceId: GameServerInstanceId
 }
 object RegisterGameServerInput {
   

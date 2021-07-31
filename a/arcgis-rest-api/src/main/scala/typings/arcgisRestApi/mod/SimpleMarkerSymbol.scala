@@ -3,30 +3,30 @@ package typings.arcgisRestApi.mod
 import typings.arcgisRestApi.arcgisRestApiStrings.esriSMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleMarkerSymbol extends MarkerSymbol {
+trait SimpleMarkerSymbol
+  extends StObject
+     with MarkerSymbol {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var outline: js.UndefOr[SimpleLineSymbol] = js.native
+  var outline: js.UndefOr[SimpleLineSymbol] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   @JSName("style")
-  var style_SimpleMarkerSymbol: js.UndefOr[SimpleMarkerSymbolStyle] = js.native
+  var style_SimpleMarkerSymbol: js.UndefOr[SimpleMarkerSymbolStyle] = js.undefined
   
   @JSName("type")
-  var type_SimpleMarkerSymbol: esriSMS = js.native
+  var type_SimpleMarkerSymbol: esriSMS
 }
 object SimpleMarkerSymbol {
   
   @scala.inline
-  def apply(`type`: esriSMS): SimpleMarkerSymbol = {
+  def apply(): SimpleMarkerSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriSMS")
     __obj.asInstanceOf[SimpleMarkerSymbol]
   }
   

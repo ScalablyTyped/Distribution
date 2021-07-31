@@ -2,34 +2,32 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /** The service API associated with the permission is not enabled. */
-  var apiDisabled: js.UndefOr[Boolean] = js.native
+  var apiDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** The current custom role support level. */
-  var customRolesSupportLevel: js.UndefOr[String] = js.native
+  var customRolesSupportLevel: js.UndefOr[String] = js.undefined
   
   /** A brief description of what this Permission is used for. This permission can ONLY be used in predefined roles. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The name of this Permission. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onlyInPredefinedRoles: js.UndefOr[Boolean] = js.native
+  var onlyInPredefinedRoles: js.UndefOr[Boolean] = js.undefined
   
   /** The preferred name for this permission. If present, then this permission is an alias of, and equivalent to, the listed primary_permission. */
-  var primaryPermission: js.UndefOr[String] = js.native
+  var primaryPermission: js.UndefOr[String] = js.undefined
   
   /** The current launch stage of the permission. */
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
   /** The title of this Permission. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Permission {
   

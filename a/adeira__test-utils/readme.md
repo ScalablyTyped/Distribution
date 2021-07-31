@@ -10,13 +10,12 @@ Set of tools for easier testing in JS.
 | ------------------ | :-------------: |
 | Full name          | @adeira/test-utils |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 22612 |
+| # releases         | 9 |
+| # dependents       | 2 |
+| # downloads        | 32141 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/adeira/universe/tree/master/src/test-utils)
 - [Npm](https://www.npmjs.com/package/%40adeira%2Ftest-utils)
     
 

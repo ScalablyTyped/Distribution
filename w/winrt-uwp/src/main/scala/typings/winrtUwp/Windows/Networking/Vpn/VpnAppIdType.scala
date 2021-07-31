@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object VpnAppIdType extends StObject {
   
   /** File path. */
   @js.native
-  sealed trait filePath extends VpnAppIdType
+  sealed trait filePath
+    extends StObject
+       with VpnAppIdType
   
   /** Fully qualified binary name (FQBN). */
   @js.native
-  sealed trait fullyQualifiedBinaryName extends VpnAppIdType
+  sealed trait fullyQualifiedBinaryName
+    extends StObject
+       with VpnAppIdType
   
   /** Package family name. */
   @js.native
-  sealed trait packageFamilyName extends VpnAppIdType
+  sealed trait packageFamilyName
+    extends StObject
+       with VpnAppIdType
 }

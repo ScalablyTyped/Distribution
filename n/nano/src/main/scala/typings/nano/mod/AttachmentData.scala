@@ -2,17 +2,15 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentData extends StObject {
   
-  var content_type: js.Any = js.native
+  var content_type: js.Any
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var name: String = js.native
+  var name: String
 }
 object AttachmentData {
   

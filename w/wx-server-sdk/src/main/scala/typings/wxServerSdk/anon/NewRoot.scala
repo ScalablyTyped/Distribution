@@ -2,13 +2,11 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewRoot extends StObject {
   
-  var newRoot: js.Any = js.native
+  var newRoot: js.Any
 }
 object NewRoot {
   

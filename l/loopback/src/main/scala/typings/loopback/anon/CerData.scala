@@ -2,21 +2,19 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CerData extends StObject {
   
-  var cerData: String = js.native
+  var cerData: String
   
-  var feedBackOptions: BatchFeedback = js.native
+  var feedBackOptions: BatchFeedback
   
-  var keyData: String = js.native
+  var keyData: String
   
-  var production: Boolean = js.native
+  var production: Boolean
   
-  var pushOptions: Gateway = js.native
+  var pushOptions: Gateway
 }
 object CerData {
   

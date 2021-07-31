@@ -4,7 +4,6 @@ import typings.loopback.anon.Connector
 import typings.loopback.anon.Relations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -128,8 +127,11 @@ class Registry () extends StObject {
 }
 object Registry {
   
-  /* static member */
-  @JSImport("loopback", "Registry.addACL")
+  @JSImport("loopback", "Registry")
   @js.native
-  def addACL(acls: js.Array[_], acl: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def addACL(acls: js.Array[js.Any], acl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

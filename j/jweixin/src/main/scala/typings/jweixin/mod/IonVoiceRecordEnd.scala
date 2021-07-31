@@ -2,15 +2,15 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonVoiceRecordEnd extends BaseParams {
+trait IonVoiceRecordEnd
+  extends StObject
+     with BaseParams {
   
   // 录音时间超过一分钟没有停止的时候会执行 complete 回调
   @JSName("complete")
-  def complete_MIonVoiceRecordEnd(res: Resouce): Unit = js.native
+  def complete_MIonVoiceRecordEnd(res: Resouce): Unit
 }
 object IonVoiceRecordEnd {
   

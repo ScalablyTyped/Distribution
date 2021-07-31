@@ -3,24 +3,24 @@ package typings.sequelize.mod
 import typings.sequelize.sequelizeStrings.check
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddCheckConstraintOptions extends AddConstraintOptions {
+trait AddCheckConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: check = js.native
+  var `type`: check
   
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object AddCheckConstraintOptions {
   
   @scala.inline
-  def apply(`type`: check): AddCheckConstraintOptions = {
+  def apply(): AddCheckConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("check")
     __obj.asInstanceOf[AddCheckConstraintOptions]
   }
   

@@ -3,7 +3,6 @@ package typings.webdriverManager
 import typings.webdriverManager.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configSourceMod {
@@ -56,7 +55,7 @@ object configSourceMod {
     
     /* protected */ def getFileName(): String = js.native
     
-    /* protected */ def getXml(): js.Promise[_] = js.native
+    /* protected */ def getXml(): js.Promise[js.Any] = js.native
     
     var name: String = js.native
     

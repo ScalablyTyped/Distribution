@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricePerBuyer extends StObject {
   
   /** Optional access type for this buyer. */
-  var auctionTier: js.UndefOr[String] = js.native
+  var auctionTier: js.UndefOr[String] = js.undefined
   
   /** Reference to the buyer that will get billed. */
-  var billedBuyer: js.UndefOr[Buyer] = js.native
+  var billedBuyer: js.UndefOr[Buyer] = js.undefined
   
   /** The buyer who will pay this price. If unset, all buyers can pay this price (if the advertisers match, and there's no more specific rule matching the buyer). */
-  var buyer: js.UndefOr[Buyer] = js.native
+  var buyer: js.UndefOr[Buyer] = js.undefined
   
   /** The specified price */
-  var price: js.UndefOr[Price] = js.native
+  var price: js.UndefOr[Price] = js.undefined
 }
 object PricePerBuyer {
   

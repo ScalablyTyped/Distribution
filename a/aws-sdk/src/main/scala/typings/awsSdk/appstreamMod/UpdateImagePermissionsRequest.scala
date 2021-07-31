@@ -2,26 +2,24 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateImagePermissionsRequest extends StObject {
   
   /**
     * The permissions for the image.
     */
-  var ImagePermissions: typings.awsSdk.appstreamMod.ImagePermissions = js.native
+  var ImagePermissions: typings.awsSdk.appstreamMod.ImagePermissions
   
   /**
     * The name of the private image.
     */
-  var Name: typings.awsSdk.appstreamMod.Name = js.native
+  var Name: typings.awsSdk.appstreamMod.Name
   
   /**
     * The 12-digit identifier of the AWS account for which you want add or update image permissions.
     */
-  var SharedAccountId: AwsAccountId = js.native
+  var SharedAccountId: AwsAccountId
 }
 object UpdateImagePermissionsRequest {
   

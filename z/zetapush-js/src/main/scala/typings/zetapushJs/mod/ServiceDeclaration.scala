@@ -2,17 +2,15 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceDeclaration extends StObject {
   
-  var Type: Service = js.native
+  var Type: Service
   
-  var deploymentId: js.UndefOr[String] = js.native
+  var deploymentId: js.UndefOr[String] = js.undefined
   
-  var listener: js.UndefOr[js.Any] = js.native
+  var listener: js.UndefOr[js.Any] = js.undefined
 }
 object ServiceDeclaration {
   

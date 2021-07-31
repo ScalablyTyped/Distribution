@@ -2,21 +2,19 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionChangedEvent extends StObject {
   
-  var newBufferRange: Range = js.native
+  var newBufferRange: Range
   
-  var newScreenRange: Range = js.native
+  var newScreenRange: Range
   
-  var oldBufferRange: Range = js.native
+  var oldBufferRange: Range
   
-  var oldScreenRange: Range = js.native
+  var oldScreenRange: Range
   
-  var selection: Selection = js.native
+  var selection: Selection
 }
 object SelectionChangedEvent {
   

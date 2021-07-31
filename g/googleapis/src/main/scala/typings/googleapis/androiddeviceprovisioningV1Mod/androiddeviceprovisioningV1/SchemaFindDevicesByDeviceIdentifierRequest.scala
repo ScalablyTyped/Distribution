@@ -2,30 +2,28 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to find devices.
   */
-@js.native
 trait SchemaFindDevicesByDeviceIdentifierRequest extends StObject {
   
   /**
     * Required. The device identifier to search for.
     */
-  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
   /**
     * Required. The maximum number of devices to show in a page of results.
     * Must be between 1 and 100 inclusive.
     */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /**
     * A token specifying which result page to return.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaFindDevicesByDeviceIdentifierRequest {
   

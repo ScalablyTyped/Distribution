@@ -9,7 +9,6 @@ import typings.reactNativeCommunityPicker.reactNativeCommunityPickerStrings.dial
 import typings.reactNativeCommunityPicker.reactNativeCommunityPickerStrings.dropdown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {
@@ -61,16 +60,15 @@ object pickerMod {
   
   type ItemValue = Double | String
   
-  @js.native
   trait PickerItemProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var value: ItemValue = js.native
+    var value: ItemValue
   }
   object PickerItemProps {
     
@@ -106,21 +104,22 @@ object pickerMod {
     }
   }
   
-  @js.native
-  trait PickerProps extends ViewProps {
+  trait PickerProps
+    extends StObject
+       with ViewProps {
     
     /**
       * If set to false, the picker will be disabled, i.e. the user will not be able to make a
       * selection.
       * @platform android
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Style to apply to each of the item labels.
       * @platform ios
       */
-    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /**
       * On Android, specifies how to display the selection items when the user taps on the picker:
@@ -130,28 +129,28 @@ object pickerMod {
       *
       * @platform android
       */
-    var mode: js.UndefOr[dialog | dropdown] = js.native
+    var mode: js.UndefOr[dialog | dropdown] = js.undefined
     
     /**
       * Callback for when an item is selected. This is called with the following parameters:
       *   - `itemValue`: the `value` prop of the item that was selected
       *   - `itemIndex`: the index of the selected item in this picker
       */
-    var onValueChange: js.UndefOr[js.Function2[/* itemValue */ ItemValue, /* itemIndex */ Double, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function2[/* itemValue */ ItemValue, /* itemIndex */ Double, Unit]] = js.undefined
     
     /**
       * Prompt string for this picker, used on Android in dialog mode as the title of the dialog.
       * @platform android
       */
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
     /**
       * Value matching value of one of the items. Can be a string or an integer.
       */
-    var selectedValue: js.UndefOr[ItemValue] = js.native
+    var selectedValue: js.UndefOr[ItemValue] = js.undefined
     
     @JSName("style")
-    var style_PickerProps: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style_PickerProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object PickerProps {
     

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the event arguments for the DisconnectButtonClicked event on the DialDevicePicker object. */
-@js.native
 trait DialDisconnectButtonClickedEventArgs extends StObject {
   
   /** Gets the DialDevice object that represents the remote device that the user wants to disconnect. */
-  var device: DialDevice = js.native
+  var device: DialDevice
 }
 object DialDisconnectButtonClickedEventArgs {
   

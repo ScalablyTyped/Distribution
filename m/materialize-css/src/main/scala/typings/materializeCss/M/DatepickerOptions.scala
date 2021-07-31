@@ -5,135 +5,133 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerOptions extends StObject {
   
   /**
     * Automatically close picker when date is selected
     * @default false
     */
-  var autoClose: Boolean = js.native
+  var autoClose: Boolean
   
   /**
     * Specify a DOM element to render the calendar in, by default it will be placed before the input
     * @default null
     */
-  var container: Element = js.native
+  var container: Element
   
   /**
     * The initial date to view when first opened.
     */
-  var defaultDate: Date = js.native
+  var defaultDate: Date
   
   /**
     * Custom function to disable certain days.
     */
-  def disableDayFn(day: Date): Boolean = js.native
+  def disableDayFn(day: Date): Boolean
   
   /**
     * Prevent selection of any date on the weekend.
     * @default false
     */
-  var disableWeekends: Boolean = js.native
+  var disableWeekends: Boolean
   
   /**
     * An array of string returned by `Date.toDateString()`, indicating there are events in the specified days.
     * @default []
     */
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
   /**
     * First day of week (0: Sunday, 1: Monday etc).
     * @default 0
     */
-  var firstDay: Double = js.native
+  var firstDay: Double
   
   /**
     * The date output format for the input field value.
     * @default 'mmm dd, yyyy'
     */
-  var format: String = js.native
+  var format: String
   
   /**
     * Internationalization options
     */
   var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
-  ] = js.native
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+  ]
   
   /**
     * Changes Datepicker to RTL.
     * @default false
     */
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
   
   /**
     * The latest date that can be selected.
     */
-  var maxDate: Date = js.native
+  var maxDate: Date
   
   /**
     * The earliest date that can be selected.
     */
-  var minDate: Date = js.native
+  var minDate: Date
   
   /**
     * Callback function when Datepicker is closed
     */
-  def onClose(): Unit = js.native
+  def onClose(): Unit
   
   /**
     * Callback function when Datepicker HTML is refreshed
     */
-  def onDraw(): Unit = js.native
+  def onDraw(): Unit
   
   /**
     * Callback function when Datepicker is opened
     */
-  def onOpen(): Unit = js.native
+  def onOpen(): Unit
   
   /**
     * Callback function when date is selected, first parameter is the newly selected date.
     */
-  def onSelect(selectedDate: Date): Unit = js.native
+  def onSelect(selectedDate: Date): Unit
   
   /**
     * Used to create date object from current input string.
     */
-  def parse(value: String, format: String): Date = js.native
+  def parse(value: String, format: String): Date
   
   /**
     * Make the `defaultDate` the initial selected value
     * @default false
     */
-  var setDefaultDate: Boolean = js.native
+  var setDefaultDate: Boolean
   
   /**
     * Show the clear button in the datepicker
     * @default false
     */
-  var showClearBtn: Boolean = js.native
+  var showClearBtn: Boolean
   
   /**
     * Render days of the calendar grid that fall in the next or previous month.
     * @default false
     */
-  var showDaysInNextAndPreviousMonths: Boolean = js.native
+  var showDaysInNextAndPreviousMonths: Boolean
   
   /**
     * Show month after year in Datepicker title.
     * @default false
     */
-  var showMonthAfterYear: Boolean = js.native
+  var showMonthAfterYear: Boolean
   
   /**
     * Number of years either side, or array of upper/lower range.
     * @default 10
     */
-  var yearRange: Double | js.Array[Double] = js.native
+  var yearRange: Double | js.Array[Double]
 }
 object DatepickerOptions {
   
@@ -148,7 +146,7 @@ object DatepickerOptions {
     firstDay: Double,
     format: String,
     i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
     ],
     isRTL: Boolean,
     maxDate: Date,
@@ -201,7 +199,7 @@ object DatepickerOptions {
     @scala.inline
     def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

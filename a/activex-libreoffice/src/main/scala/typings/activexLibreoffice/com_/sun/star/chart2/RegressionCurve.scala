@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.drawing.LineProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RegressionCurve
-  extends PropertySet
+  extends StObject
+     with PropertySet
      with LineProperties
      with XRegressionCurve {
   

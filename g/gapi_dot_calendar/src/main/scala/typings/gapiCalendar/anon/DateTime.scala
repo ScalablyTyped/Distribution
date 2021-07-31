@@ -4,17 +4,15 @@ import typings.gapiCalendar.gapi.client.calendar.date
 import typings.gapiCalendar.gapi.client.calendar.datetime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTime extends StObject {
   
-  var date: typings.gapiCalendar.gapi.client.calendar.date = js.native
+  var date: typings.gapiCalendar.gapi.client.calendar.date
   
-  var dateTime: datetime = js.native
+  var dateTime: datetime
   
-  var timeZone: String = js.native
+  var timeZone: String
 }
 object DateTime {
   

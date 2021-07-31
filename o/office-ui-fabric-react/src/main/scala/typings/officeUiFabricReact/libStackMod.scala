@@ -10,7 +10,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStackMod {
@@ -18,12 +17,11 @@ object libStackMod {
   /* Inlined react.react.FunctionComponent<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackProps> & {  Item :react.react.FunctionComponent<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/StackItem/StackItem.types.IStackItemProps>} */
   object Stack {
     
-    @JSImport("office-ui-fabric-react/lib/Stack", "Stack")
-    @js.native
-    def apply(props: PropsWithChildren[IStackProps]): ReactElement | Null = js.native
-    @JSImport("office-ui-fabric-react/lib/Stack", "Stack")
-    @js.native
-    def apply(props: PropsWithChildren[IStackProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[IStackProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[IStackProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("office-ui-fabric-react/lib/Stack", "Stack")
     @js.native
     val ^ : js.Any = js.native

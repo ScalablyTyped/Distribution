@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnapshotRequest extends StObject {
   
   /**
     * Whitelist of computed styles to return.
     */
-  var computedStyleWhitelist: js.Array[String] = js.native
+  var computedStyleWhitelist: js.Array[String]
   
   /**
     * Whether or not to retrieve details of DOM listeners (default false).
     */
-  var includeEventListeners: js.UndefOr[Boolean] = js.native
+  var includeEventListeners: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to determine and include the paint order index of LayoutTreeNodes (default false).
     */
-  var includePaintOrder: js.UndefOr[Boolean] = js.native
+  var includePaintOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include UA shadow tree in the snapshot (default false).
     */
-  var includeUserAgentShadowTree: js.UndefOr[Boolean] = js.native
+  var includeUserAgentShadowTree: js.UndefOr[Boolean] = js.undefined
 }
 object GetSnapshotRequest {
   

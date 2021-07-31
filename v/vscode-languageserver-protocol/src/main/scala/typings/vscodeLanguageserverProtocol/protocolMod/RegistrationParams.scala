@@ -2,13 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistrationParams extends StObject {
   
-  var registrations: js.Array[Registration] = js.native
+  var registrations: js.Array[Registration]
 }
 object RegistrationParams {
   

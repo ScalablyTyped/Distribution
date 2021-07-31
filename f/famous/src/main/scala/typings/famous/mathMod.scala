@@ -2,7 +2,6 @@ package typings.famous
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathMod {
@@ -35,8 +34,8 @@ object mathMod {
   @js.native
   class Vec2 () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
     
     def add(v: Vec2): Vec2 = js.native
     
@@ -61,9 +60,9 @@ object mathMod {
     def scale(s: Double): Vec2 = js.native
     
     def set(): Vec3 = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double): Vec3 = js.native
     def set(x: Double): Vec3 = js.native
     def set(x: Double, y: Double): Vec3 = js.native
+    def set(x: Unit, y: Double): Vec3 = js.native
     
     def subtract(v: Vec2): Vec2 = js.native
     
@@ -76,45 +75,42 @@ object mathMod {
   /* static members */
   object Vec2 {
     
-    @JSImport("famous/math", "Vec2.add")
+    @JSImport("famous/math", "Vec2")
     @js.native
-    def add(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/math", "Vec2.clone")
-    @js.native
-    def clone(v: Vec2): Vec2 = js.native
+    @scala.inline
+    def add(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @JSImport("famous/math", "Vec2.cross")
-    @js.native
-    def cross(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
+    @scala.inline
+    def clone(v: Vec2): Vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec2]
     
-    @JSImport("famous/math", "Vec2.dot")
-    @js.native
-    def dot(v1: Vec2, v2: Vec2): Double = js.native
+    @scala.inline
+    def cross(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @JSImport("famous/math", "Vec2.normalize")
-    @js.native
-    def normalize(v: Vec2, output: Vec2): Vec2 = js.native
+    @scala.inline
+    def dot(v1: Vec2, v2: Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("famous/math", "Vec2.scale")
-    @js.native
-    def scale(v: Vec2, s: Vec2, output: Vec2): Vec2 = js.native
+    @scala.inline
+    def normalize(v: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @JSImport("famous/math", "Vec2.subtract")
-    @js.native
-    def subtract(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
+    @scala.inline
+    def scale(v: Vec2, s: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    
+    @scala.inline
+    def subtract(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
   }
   
   @JSImport("famous/math", "Vec3")
   @js.native
   class Vec3 () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     
     def add(v: Vec3): Vec3 = js.native
     
@@ -151,13 +147,13 @@ object mathMod {
     def scale(s: Double): Vec3 = js.native
     
     def set(): Vec3 = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vec3 = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double): Vec3 = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vec3 = js.native
     def set(x: Double): Vec3 = js.native
-    def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vec3 = js.native
     def set(x: Double, y: Double): Vec3 = js.native
     def set(x: Double, y: Double, z: Double): Vec3 = js.native
+    def set(x: Double, y: Unit, z: Double): Vec3 = js.native
+    def set(x: Unit, y: Double): Vec3 = js.native
+    def set(x: Unit, y: Double, z: Double): Vec3 = js.native
+    def set(x: Unit, y: Unit, z: Double): Vec3 = js.native
     
     def subtract(v: Vec3): Vec3 = js.native
     
@@ -172,40 +168,35 @@ object mathMod {
   /* static members */
   object Vec3 {
     
-    @JSImport("famous/math", "Vec3.add")
+    @JSImport("famous/math", "Vec3")
     @js.native
-    def add(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/math", "Vec3.applyRotation")
-    @js.native
-    def applyRotation(v: Vec3, q: Quaternion, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def add(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.clone")
-    @js.native
-    def clone(v: Vec3): Vec3 = js.native
+    @scala.inline
+    def applyRotation(v: Vec3, q: Quaternion, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRotation")(v.asInstanceOf[js.Any], q.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.cross")
-    @js.native
-    def cross(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def clone(v: Vec3): Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.dot")
-    @js.native
-    def dot(v1: Vec3, v2: Vec3): Double = js.native
+    @scala.inline
+    def cross(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.normalize")
-    @js.native
-    def normalize(v: Vec3, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def dot(v1: Vec3, v2: Vec3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("famous/math", "Vec3.project")
-    @js.native
-    def project(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def normalize(v: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.scale")
-    @js.native
-    def scale(v: Vec3, s: Vec3, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def project(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("project")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @JSImport("famous/math", "Vec3.subtract")
-    @js.native
-    def subtract(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
+    @scala.inline
+    def scale(v: Vec3, s: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    
+    @scala.inline
+    def subtract(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
   }
 }

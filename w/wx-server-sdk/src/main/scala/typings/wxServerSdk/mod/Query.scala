@@ -4,7 +4,6 @@ import typings.wxServerSdk.wxServerSdkStrings.asc
 import typings.wxServerSdk.wxServerSdkStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,5 +26,5 @@ trait Query extends StObject {
   
   def skip(offset: Double): Collection | Query = js.native
   
-  def update(options: CommonOption[_]): js.Promise[UpateCollectionResult] = js.native
+  def update(options: CommonOption[js.Any]): js.Promise[UpateCollectionResult] = js.native
 }

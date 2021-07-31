@@ -5,7 +5,6 @@ import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.global.Express.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -19,7 +18,7 @@ object anon {
       * This allows you to alter the session cookie per visitor.
       * For example we can set `req.session.cookie.expires` to `false` to enable the cookie to remain for only the duration of the user-agent.
       */
-    var cookie: Cookie with js.UndefOr[Cookie] = js.native
+    var cookie: Cookie & js.UndefOr[Cookie] = js.native
     
     /** Destroys the session and will unset the `req.session` property. Once complete, the `callback` will be invoked. */
     def destroy(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native

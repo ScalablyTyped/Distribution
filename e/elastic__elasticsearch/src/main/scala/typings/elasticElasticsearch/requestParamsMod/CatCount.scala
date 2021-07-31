@@ -2,23 +2,23 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatCount extends Generic {
+trait CatCount
+  extends StObject
+     with Generic {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatCount {
   

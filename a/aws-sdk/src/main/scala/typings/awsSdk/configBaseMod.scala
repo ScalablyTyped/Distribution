@@ -17,7 +17,6 @@ import typings.std.Error
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configBaseMod {
@@ -259,7 +258,6 @@ object configBaseMod {
     var useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait HTTPOptions extends StObject {
     
     /**
@@ -267,7 +265,7 @@ object configBaseMod {
       * Used for connection pooling.
       * Defaults to the global agent (http.globalAgent) for non-SSL connections.
       */
-    var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.native
+    var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.undefined
     
     /**
       * The maximum time in milliseconds that the connection phase of the request
@@ -275,18 +273,18 @@ object configBaseMod {
       * no impact once the socket has established a connection.
       * Used in node.js environments only.
       */
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * the URL to proxy requests through.
       */
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     /**
       * The number of milliseconds a request can take before automatically being terminated.
       * Defaults to two minutes (120000).
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the SDK will send asynchronous HTTP requests.
@@ -294,14 +292,14 @@ object configBaseMod {
       * Set to false to send requests synchronously.
       * Defaults to true (async on).
       */
-    var xhrAsync: js.UndefOr[Boolean] = js.native
+    var xhrAsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the 'withCredentials' property of an XMLHttpRequest object.
       * Used in the browser environment only.
       * Defaults to false.
       */
-    var xhrWithCredentials: js.UndefOr[Boolean] = js.native
+    var xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object HTTPOptions {
     
@@ -352,10 +350,9 @@ object configBaseMod {
     }
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     var write: js.UndefOr[
         js.Function3[
@@ -364,7 +361,7 @@ object configBaseMod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Logger {
     
@@ -393,29 +390,28 @@ object configBaseMod {
     }
   }
   
-  @js.native
   trait ParamValidation extends StObject {
     
     /**
       * Validates that a string value matches one of the allowable enum values.
       */
-    var enum: js.UndefOr[Boolean] = js.native
+    var `enum`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validates that a value meets the max constraint.
       */
-    var max: js.UndefOr[Boolean] = js.native
+    var max: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validates that a value meets the min constraint.
       * This is enabled by default when paramValidation is set to true.
       */
-    var min: js.UndefOr[Boolean] = js.native
+    var min: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validates that a string value matches a regular expression.
       */
-    var pattern: js.UndefOr[Boolean] = js.native
+    var pattern: js.UndefOr[Boolean] = js.undefined
   }
   object ParamValidation {
     
@@ -454,20 +450,19 @@ object configBaseMod {
     }
   }
   
-  @js.native
   trait RetryDelayOptions extends StObject {
     
     /**
       * The base number of milliseconds to use in the exponential backoff for operation retries.
       * Defaults to 100 ms.
       */
-    var base: js.UndefOr[Double] = js.native
+    var base: js.UndefOr[Double] = js.undefined
     
     /**
       * A custom function that accepts a retry count and error and returns the amount of time to delay in milliseconds. If the result is a non-zero negative value, no further retry attempts will be made.
       * The base option will be ignored if this option is supplied.
       */
-    var customBackoff: js.UndefOr[js.Function2[/* retryCount */ Double, /* err */ js.UndefOr[Error], Double]] = js.native
+    var customBackoff: js.UndefOr[js.Function2[/* retryCount */ Double, /* err */ js.UndefOr[Error], Double]] = js.undefined
   }
   object RetryDelayOptions {
     

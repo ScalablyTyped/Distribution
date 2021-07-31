@@ -4,23 +4,21 @@ import typings.antvComponent.antvComponentBooleans.`false`
 import typings.antvGBase.typesMod.AnimateCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimateOption extends StObject {
   
   /** 初始化渲染时的入场动画，false/null 表示关闭入场动画 */
-  var appear: js.UndefOr[AnimateCfg | `false` | Null] = js.native
+  var appear: js.UndefOr[AnimateCfg | `false` | Null] = js.undefined
   
   /** 发生更新时，新增元素的入场动画，false/null 表示关闭入场动画 */
-  var enter: js.UndefOr[AnimateCfg | `false` | Null] = js.native
+  var enter: js.UndefOr[AnimateCfg | `false` | Null] = js.undefined
   
   /** 销毁动画配置，false/null 表示关闭销毁动画 */
-  var leave: js.UndefOr[AnimateCfg | `false` | Null] = js.native
+  var leave: js.UndefOr[AnimateCfg | `false` | Null] = js.undefined
   
   /** 更新动画配置，false/null 表示关闭更新动画 */
-  var update: js.UndefOr[AnimateCfg | `false` | Null] = js.native
+  var update: js.UndefOr[AnimateCfg | `false` | Null] = js.undefined
 }
 object AnimateOption {
   

@@ -3,17 +3,17 @@ package typings.websocket.mod
 import typings.node.httpsMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IClientConfig extends IConfig {
+trait IClientConfig
+  extends StObject
+     with IConfig {
   
   /**
     * Options to pass to `https.request` if connecting via TLS.
     * @see https://nodejs.org/api/https.html#https_https_request_options_callback
     */
-  var tlsOptions: js.UndefOr[RequestOptions] = js.native
+  var tlsOptions: js.UndefOr[RequestOptions] = js.undefined
   
   /**
     * Which version of the WebSocket protocol to use when making the connection.
@@ -23,7 +23,7 @@ trait IClientConfig extends IConfig {
     * the name of the Origin header.
     * @default 13
     */
-  var webSocketVersion: js.UndefOr[Double] = js.native
+  var webSocketVersion: js.UndefOr[Double] = js.undefined
 }
 object IClientConfig {
   

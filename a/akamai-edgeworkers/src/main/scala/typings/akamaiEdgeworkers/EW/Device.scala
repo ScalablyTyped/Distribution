@@ -2,7 +2,6 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,105 +9,104 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * * If device properties can not be supplied for any reason,
   *   undefined is returned for each property
   */
-@js.native
 trait Device extends StObject {
   
   /**
     * Indicates if the browser accepts third party cookies.
     */
-  val acceptsThirdPartyCookie: js.UndefOr[Boolean] = js.native
+  val acceptsThirdPartyCookie: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Brand name of the device.
     */
-  val brandName: js.UndefOr[String] = js.native
+  val brandName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the device supports all of the following
     * JavaScript functions: "alert confirm access form elements
     * setTimeout setInterval and document.location"
     */
-  val hasAjaxSupport: js.UndefOr[Boolean] = js.native
+  val hasAjaxSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the browser supports cookies.
     */
-  val hasCookieSupport: js.UndefOr[Boolean] = js.native
+  val hasCookieSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the browser supports Flash.
     */
-  val hasFlashSupport: js.UndefOr[Boolean] = js.native
+  val hasFlashSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the device is a mobile device.
     */
-  val isMobile: js.UndefOr[Boolean] = js.native
+  val isMobile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the device is a tablet.
     */
-  val isTablet: js.UndefOr[Boolean] = js.native
+  val isTablet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the device is a wireless device.
     */
-  val isWireless: js.UndefOr[Boolean] = js.native
+  val isWireless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marketing name of the device.
     */
-  val marketingName: js.UndefOr[String] = js.native
+  val marketingName: js.UndefOr[String] = js.undefined
   
   /**
     * The mobile browser name.
     */
-  val mobileBrowser: js.UndefOr[String] = js.native
+  val mobileBrowser: js.UndefOr[String] = js.undefined
   
   /**
     * The mobile browser version.
     */
-  val mobileBrowserVersion: js.UndefOr[String] = js.native
+  val mobileBrowserVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Model name of the device.
     */
-  val modelName: js.UndefOr[String] = js.native
+  val modelName: js.UndefOr[String] = js.undefined
   
   /**
     * The device operation system.
     */
-  val os: js.UndefOr[String] = js.native
+  val os: js.UndefOr[String] = js.undefined
   
   /**
     * The device operating system version.
     */
-  val osVersion: js.UndefOr[String] = js.native
+  val osVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The physical screen height, in millimeters.
     */
-  val physicalScreenHeight: js.UndefOr[Double] = js.native
+  val physicalScreenHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The physical screen width, in millimeters.
     */
-  val physicalScreenWidth: js.UndefOr[Double] = js.native
+  val physicalScreenWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The screen resolution height, in pixels.
     */
-  val resolutionHeight: js.UndefOr[Double] = js.native
+  val resolutionHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The screen resolution width, in pixels.
     */
-  val resolutionWidth: js.UndefOr[Double] = js.native
+  val resolutionWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the level of support for XHTML.
     */
-  val xhtmlSupportLevel: js.UndefOr[Double] = js.native
+  val xhtmlSupportLevel: js.UndefOr[Double] = js.undefined
 }
 object Device {
   

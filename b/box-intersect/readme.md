@@ -10,9 +10,9 @@ Any dimensional box intersection
 | ------------------ | :-------------: |
 | Full name          | box-intersect |
 | Keywords           | box, intersection, collision, detection, aabb, 2d, 3d |
-| # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 2864652 |
+| # releases         | 0 |
+| # dependents       | 17 |
+| # downloads        | 3514527 |
 | # stars            | 1 |
 
 ## Links

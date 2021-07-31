@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** RelationArgument. */
-@js.native
 trait RelationArgument extends StObject {
   
   /** An array of extracted entities. */
-  var entities: js.UndefOr[js.Array[RelationEntity]] = js.native
+  var entities: js.UndefOr[js.Array[RelationEntity]] = js.undefined
   
   /** Character offsets indicating the beginning and end of the mention in the analyzed text. */
-  var location: js.UndefOr[js.Array[Double]] = js.native
+  var location: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Text that corresponds to the argument. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object RelationArgument {
   

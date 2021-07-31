@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateClusterConfig extends StObject {
   
   /** Whether the master's internal IP address is used as the cluster endpoint. */
-  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.native
+  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /** Whether nodes have internal IP addresses only. If enabled, all nodes are given only RFC 1918 private addresses and communicate with the master via private networking. */
-  var enablePrivateNodes: js.UndefOr[Boolean] = js.native
+  var enablePrivateNodes: js.UndefOr[Boolean] = js.undefined
   
   /** Controls master global access settings. */
-  var masterGlobalAccessConfig: js.UndefOr[PrivateClusterMasterGlobalAccessConfig] = js.native
+  var masterGlobalAccessConfig: js.UndefOr[PrivateClusterMasterGlobalAccessConfig] = js.undefined
   
   /**
     * The IP range in CIDR notation to use for the hosted master network. This range will be used for assigning internal IP addresses to the master or set of masters, as well as the ILB
     * VIP. This range must not overlap with any other ranges in use within the cluster's network.
     */
-  var masterIpv4CidrBlock: js.UndefOr[String] = js.native
+  var masterIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /** Output only. The peering name in the customer VPC used by this cluster. */
-  var peeringName: js.UndefOr[String] = js.native
+  var peeringName: js.UndefOr[String] = js.undefined
   
   /** Output only. The internal IP address of this cluster's master endpoint. */
-  var privateEndpoint: js.UndefOr[String] = js.native
+  var privateEndpoint: js.UndefOr[String] = js.undefined
   
   /** Output only. The external IP address of this cluster's master endpoint. */
-  var publicEndpoint: js.UndefOr[String] = js.native
+  var publicEndpoint: js.UndefOr[String] = js.undefined
 }
 object PrivateClusterConfig {
   

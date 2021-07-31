@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDocumentVersionsResponse extends StObject {
   
   /**
     * The document versions.
     */
-  var DocumentVersions: js.UndefOr[DocumentVersionMetadataList] = js.native
+  var DocumentVersions: js.UndefOr[DocumentVersionMetadataList] = js.undefined
   
   /**
     * The marker to use when requesting the next set of results. If there are no additional results, the string is empty.
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
 }
 object DescribeDocumentVersionsResponse {
   

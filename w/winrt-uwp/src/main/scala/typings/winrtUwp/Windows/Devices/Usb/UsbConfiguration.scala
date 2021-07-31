@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Devices.Usb
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a USB configuration, its descriptors and the interfaces defined within that configuration. For an explanation of a USB configuration, see Section 9.6.3 in the Universal Serial Bus (USB) specification. */
-@js.native
 trait UsbConfiguration extends StObject {
   
   /** Gets the object that contains the first 9 bytes of the descriptor associated with the USB configuration. */
-  var configurationDescriptor: UsbConfigurationDescriptor = js.native
+  var configurationDescriptor: UsbConfigurationDescriptor
   
   /** Gets an array of objects that represent the full set of descriptors associated with a USB configuration. */
-  var descriptors: IVectorView[UsbDescriptor] = js.native
+  var descriptors: IVectorView[UsbDescriptor]
   
   /** Gets an array of USB interfaces available in the USB configuration. */
-  var usbInterfaces: IVectorView[UsbInterface] = js.native
+  var usbInterfaces: IVectorView[UsbInterface]
 }
 object UsbConfiguration {
   

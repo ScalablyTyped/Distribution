@@ -6,75 +6,73 @@ import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsColumnCommonOptionsMod {
   
-  @js.native
   trait ColumnCommonOptions extends StObject {
     
     /**
       * Default database value.
       * Note that default value is not supported when column type is 'json' of mysql.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Indicates if this column is an array.
       * Can be simply set to true or array length can be specified.
       * Supported only by postgres.
       */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column comment. Not supported by all database types.
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies if this column will use auto increment (sequence, generated identity, rowid).
       * Note that in some databases only one column in entity can be marked as generated, and it must be a primary column.
       */
-    var generated: js.UndefOr[Boolean | increment | uuid | rowid] = js.native
+    var generated: js.UndefOr[Boolean | increment | uuid | rowid] = js.undefined
     
     /**
       * Column name in the database.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if column's value can be set to NULL.
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ON UPDATE trigger. Works only for MySQL.
       */
-    var onUpdate: js.UndefOr[String] = js.native
+    var onUpdate: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if this column is a primary key.
       * Same can be achieved when @PrimaryColumn decorator is used.
       */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column is always selected by QueryBuilder and find operations.
       * Default value is "true".
       */
-    var select: js.UndefOr[Boolean] = js.native
+    var select: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a value transformer that is to be used to (un)marshal
       * this column when reading or writing to the database.
       */
-    var transformer: js.UndefOr[ValueTransformer | js.Array[ValueTransformer]] = js.native
+    var transformer: js.UndefOr[ValueTransformer | js.Array[ValueTransformer]] = js.undefined
     
     /**
       * Specifies if column's value must be unique or not.
       */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnCommonOptions {
     

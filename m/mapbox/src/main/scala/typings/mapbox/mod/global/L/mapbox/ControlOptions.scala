@@ -2,17 +2,16 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////// CONTROLS ////////////////////////////
 //////////////////////////////////////////////////////////////////////
-@js.native
 trait ControlOptions
-  extends typings.leaflet.mod.ControlOptions {
+  extends StObject
+     with typings.leaflet.mod.ControlOptions {
   
-  var sanitizer: js.UndefOr[js.Function1[/* template */ String, String]] = js.native
+  var sanitizer: js.UndefOr[js.Function1[/* template */ String, String]] = js.undefined
 }
 object ControlOptions {
   

@@ -11,17 +11,15 @@ import typings.dayzed.mod.Calendar
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Calendars extends StObject {
     
-    var calendars: js.Array[Calendar] = js.native
+    var calendars: js.Array[Calendar]
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Calendars {
     
@@ -48,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DateObj extends StObject {
     
-    var dateObj: typings.dayzed.mod.DateObj = js.native
+    var dateObj: typings.dayzed.mod.DateObj
   }
   object DateObj {
     
@@ -70,28 +67,27 @@ object anon {
   }
   
   /* Inlined std.Omit<dayzed.dayzed.Props, 'children' | 'render'> */
-  @js.native
   trait OmitPropschildrenrender extends StObject {
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var monthsToDisplay: js.UndefOr[Double] = js.native
+    var monthsToDisplay: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var onDateSelected: js.Function1[/* selectedDate */ typings.dayzed.mod.DateObj, Unit] = js.native
+    var onDateSelected: js.Function1[/* selectedDate */ typings.dayzed.mod.DateObj, Unit]
     
-    var onOffsetChanged: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.native
+    var onOffsetChanged: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.undefined
     
-    var selected: js.UndefOr[Date | js.Array[Date]] = js.native
+    var selected: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var showOutsideDays: js.UndefOr[Boolean] = js.native
+    var showOutsideDays: js.UndefOr[Boolean] = js.undefined
   }
   object OmitPropschildrenrender {
     

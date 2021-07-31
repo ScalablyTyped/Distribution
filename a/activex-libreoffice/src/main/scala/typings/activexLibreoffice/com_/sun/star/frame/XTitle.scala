@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** an interface representing an entity with a modifyable title. */
-@js.native
-trait XTitle extends XInterface {
+trait XTitle
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the title of the object.
     * @returns The title.
     */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * Returns the title of the object.
     * @returns The title.
     */
-  def getTitle(): String = js.native
+  def getTitle(): String
   
   /**
     * Sets the title of the object.
     * @param sTitle The title.
     */
-  def setTitle(sTitle: String): Unit = js.native
+  def setTitle(sTitle: String): Unit
 }
 object XTitle {
   

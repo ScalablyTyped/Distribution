@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.leafletRoutingMachine.anon.LegCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSRMOptions extends StObject {
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var polylinePrecision: js.UndefOr[Double] = js.native
+  var polylinePrecision: js.UndefOr[Double] = js.undefined
   
-  var profile: js.UndefOr[String] = js.native
+  var profile: js.UndefOr[String] = js.undefined
   
-  var requestParameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var requestParameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var routingOptions: js.UndefOr[js.Any] = js.native
+  var routingOptions: js.UndefOr[js.Any] = js.undefined
   
-  var serviceUrl: js.UndefOr[String] = js.native
+  var serviceUrl: js.UndefOr[String] = js.undefined
   
-  var stepToText: js.UndefOr[js.Function2[/* step */ js.Any, /* leg */ LegCount, _]] = js.native
+  var stepToText: js.UndefOr[js.Function2[/* step */ js.Any, /* leg */ LegCount, js.Any]] = js.undefined
   
-  var suppressDemoServerWarning: js.UndefOr[Boolean] = js.native
+  var suppressDemoServerWarning: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var useHints: js.UndefOr[Boolean] = js.native
+  var useHints: js.UndefOr[Boolean] = js.undefined
 }
 object OSRMOptions {
   
@@ -78,7 +76,7 @@ object OSRMOptions {
     def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
     
     @scala.inline
-    def setStepToText(value: (/* step */ js.Any, /* leg */ LegCount) => _): Self = StObject.set(x, "stepToText", js.Any.fromFunction2(value))
+    def setStepToText(value: (/* step */ js.Any, /* leg */ LegCount) => js.Any): Self = StObject.set(x, "stepToText", js.Any.fromFunction2(value))
     
     @scala.inline
     def setStepToTextUndefined: Self = StObject.set(x, "stepToText", js.undefined)

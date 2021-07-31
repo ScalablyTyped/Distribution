@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Geometry_
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport
      with _GoToTarget2D
      with _GoToTarget3D {

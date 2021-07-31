@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IASTSpan extends StObject {
   
-  var _end: Double = js.native
+  var _end: Double
   
-  var _start: Double = js.native
+  var _start: Double
   
-  def end(): Double = js.native
+  def end(): Double
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object IASTSpan {
   

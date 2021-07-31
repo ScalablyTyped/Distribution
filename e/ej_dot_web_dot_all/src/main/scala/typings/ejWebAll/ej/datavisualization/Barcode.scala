@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Barcode extends Widget_ {
+trait Barcode
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -35,71 +36,94 @@ object Barcode {
     
     //Represents the Codabar barcode
     @js.native
-    sealed trait Codabar extends SymbologyType
+    sealed trait Codabar
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 11 barcode
     @js.native
-    sealed trait Code11 extends SymbologyType
+    sealed trait Code11
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 128 A barcode
     @js.native
-    sealed trait Code128A extends SymbologyType
+    sealed trait Code128A
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 128 B barcode
     @js.native
-    sealed trait Code128B extends SymbologyType
+    sealed trait Code128B
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 128 C barcode
     @js.native
-    sealed trait Code128C extends SymbologyType
+    sealed trait Code128C
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 32 barcode
     @js.native
-    sealed trait Code32 extends SymbologyType
+    sealed trait Code32
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 39 barcode
     @js.native
-    sealed trait Code39 extends SymbologyType
+    sealed trait Code39
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 39 Extended barcode
     @js.native
-    sealed trait Code39Extended extends SymbologyType
+    sealed trait Code39Extended
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 93 barcode
     @js.native
-    sealed trait Code93 extends SymbologyType
+    sealed trait Code93
+      extends StObject
+         with SymbologyType
     
     //Represents the Code 93 Extended barcode
     @js.native
-    sealed trait Code93Extended extends SymbologyType
+    sealed trait Code93Extended
+      extends StObject
+         with SymbologyType
     
     //Represents the Data Matrix barcode
     @js.native
-    sealed trait DataMatrix extends SymbologyType
+    sealed trait DataMatrix
+      extends StObject
+         with SymbologyType
     
     //Represents the QR code
     @js.native
-    sealed trait QRBarcode extends SymbologyType
+    sealed trait QRBarcode
+      extends StObject
+         with SymbologyType
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the barcode model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** return the barcode state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -138,73 +162,72 @@ object Barcode {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the height of bars in the Barcode. By modifying the barHeight, the entire barcode height can be customized. Please refer to xDimension for two dimensional barcode height
       * customization.
       */
-    var barHeight: js.UndefOr[Double] = js.native
+    var barHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance between the barcode and text below it.
       */
-    var barcodeToTextGapHeight: js.UndefOr[Double] = js.native
+    var barcodeToTextGapHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the dark bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
       */
-    var darkBarColor: js.UndefOr[js.Any] = js.native
+    var darkBarColor: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies whether the text below the barcode is visible or hidden.
       */
-    var displayText: js.UndefOr[Boolean] = js.native
+    var displayText: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the control is enabled.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the start and stop encode symbol in the Barcode. In one dimensional barcodes, an additional character is added as start and stop delimiters. These symbols are optional
       * and the unique of the symbol allows the reader to determine the direction of the barcode being scanned.
       */
-    var encodeStartStopSymbol: js.UndefOr[Double] = js.native
+    var encodeStartStopSymbol: js.UndefOr[Double] = js.undefined
     
     /** Specifies the light bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
       */
-    var lightBarColor: js.UndefOr[js.Any] = js.native
+    var lightBarColor: js.UndefOr[js.Any] = js.undefined
     
     /** Fires after Barcode control is loaded.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specifies the width of the narrow bars in the barcode. The dark bars in the one dimensional barcode contains random narrow and wide bars based on the provided input which can be
       * specified during initialization.
       */
-    var narrowBarWidth: js.UndefOr[Double] = js.native
+    var narrowBarWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the quiet zone. In barcode, a quiet zone is the blank margin on either side of a barcode which informs the reader where a barcode's symbology starts and
       * stops. The purpose of a quiet zone is to prevent the reader from picking up unrelated information.
       */
-    var quietZone: js.UndefOr[QuietZone] = js.native
+    var quietZone: js.UndefOr[QuietZone] = js.undefined
     
     /** Specifies the type of the Barcode. See SymbologyType
       */
-    var symbologyType: js.UndefOr[SymbologyType | String] = js.native
+    var symbologyType: js.UndefOr[SymbologyType | String] = js.undefined
     
     /** Specifies the text to be encoded in the barcode.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the color of the text/data at the bottom of the barcode.
       */
-    var textColor: js.UndefOr[js.Any] = js.native
+    var textColor: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the width of the wide bars in the barcode. One dimensional barcode usually contains random narrow and wide bars based on the provided which can be customized during
       * initialization.
       */
-    var wideBarWidth: js.UndefOr[Double] = js.native
+    var wideBarWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the narrowest element(bar or space) in a barcode. The greater the x dimension, the more easily a barcode reader will scan.
       */
-    var xDimension: js.UndefOr[Double] = js.native
+    var xDimension: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -309,28 +332,27 @@ object Barcode {
     }
   }
   
-  @js.native
   trait QuietZone extends StObject {
     
     /** Specifies the quiet zone around the Barcode.
       */
-    var all: js.UndefOr[Double] = js.native
+    var all: js.UndefOr[Double] = js.undefined
     
     /** Specifies the bottom quiet zone of the Barcode.
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Specifies the left quiet zone of the Barcode.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Specifies the right quiet zone of the Barcode.
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Specifies the top quiet zone of the Barcode.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object QuietZone {
     

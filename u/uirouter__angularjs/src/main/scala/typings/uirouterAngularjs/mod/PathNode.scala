@@ -2,7 +2,6 @@ package typings.uirouterAngularjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "PathNode")
@@ -17,11 +16,14 @@ class PathNode protected ()
 /* static members */
 object PathNode {
   
+  @JSImport("@uirouter/angularjs", "PathNode")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns a clone of the PathNode
     * @deprecated use instance method `node.clone()`
     */
-  @JSImport("@uirouter/angularjs", "PathNode.clone")
-  @js.native
-  def clone(node: typings.uirouterCore.pathNodeMod.PathNode): typings.uirouterCore.pathNodeMod.PathNode = js.native
+  @scala.inline
+  def clone(node: typings.uirouterCore.pathNodeMod.PathNode): typings.uirouterCore.pathNodeMod.PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.pathNodeMod.PathNode]
 }

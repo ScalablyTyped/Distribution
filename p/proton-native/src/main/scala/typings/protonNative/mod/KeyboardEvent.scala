@@ -2,19 +2,17 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardEvent extends StObject {
   
-  var extKey: Double = js.native
+  var extKey: Double
   
-  var key: String = js.native
+  var key: String
   
-  var modifierKey: Double = js.native
+  var modifierKey: Double
   
-  var modifiers: Double = js.native
+  var modifiers: Double
 }
 object KeyboardEvent {
   

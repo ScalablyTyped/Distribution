@@ -4,32 +4,30 @@ import typings.pulumiAws.routingRulesMod.RoutingRule
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketWebsite extends StObject {
   
   /**
     * An absolute path to the document to return in case of a 4XX error.
     */
-  var errorDocument: js.UndefOr[Input[String]] = js.native
+  var errorDocument: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
     */
-  var indexDocument: js.UndefOr[Input[String]] = js.native
+  var indexDocument: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`) to use when redirecting requests. The default is the protocol that is used in the original request.
     */
-  var redirectAllRequestsTo: js.UndefOr[Input[String]] = js.native
+  var redirectAllRequestsTo: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html)
     * describing redirect behavior and when redirects are applied.
     */
-  var routingRules: js.UndefOr[Input[String | js.Array[Input[RoutingRule]]]] = js.native
+  var routingRules: js.UndefOr[Input[String | js.Array[Input[RoutingRule]]]] = js.undefined
 }
 object BucketWebsite {
   

@@ -10,34 +10,32 @@ import typings.reactNativeZssRichTextEditor.mod.RichTextEditor
 import typings.reactNativeZssRichTextEditor.mod.RichTextStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-native-zss-rich-text-editor.react-native-zss-rich-text-editor.RichTextEditorProps> */
-  @js.native
   trait PartialRichTextEditorProp extends StObject {
     
-    var contentInset: js.UndefOr[ContentInset] = js.native
+    var contentInset: js.UndefOr[ContentInset] = js.undefined
     
-    var contentPlaceholder: js.UndefOr[String] = js.native
+    var contentPlaceholder: js.UndefOr[String] = js.undefined
     
-    var customCSS: js.UndefOr[RichTextStyles] = js.native
+    var customCSS: js.UndefOr[RichTextStyles] = js.undefined
     
-    var editorInitializedCallback: js.UndefOr[FunctionWithZeroArgs] = js.native
+    var editorInitializedCallback: js.UndefOr[FunctionWithZeroArgs] = js.undefined
     
-    var enableOnChange: js.UndefOr[Boolean] = js.native
+    var enableOnChange: js.UndefOr[Boolean] = js.undefined
     
-    var footerHeight: js.UndefOr[Double] = js.native
+    var footerHeight: js.UndefOr[Double] = js.undefined
     
-    var hiddenTitle: js.UndefOr[Boolean] = js.native
+    var hiddenTitle: js.UndefOr[Boolean] = js.undefined
     
-    var initialContentHTML: js.UndefOr[String] = js.native
+    var initialContentHTML: js.UndefOr[String] = js.undefined
     
-    var initialTitleHTML: js.UndefOr[String] = js.native
+    var initialTitleHTML: js.UndefOr[String] = js.undefined
     
-    var titlePlaceholder: js.UndefOr[String] = js.native
+    var titlePlaceholder: js.UndefOr[String] = js.undefined
   }
   object PartialRichTextEditorProp {
     
@@ -113,28 +111,27 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-zss-rich-text-editor.react-native-zss-rich-text-editor.RichTextToolbarProps> */
-  @js.native
   trait PartialRichTextToolbarPro extends StObject {
     
-    var actions: js.UndefOr[js.Array[ACTIONS]] = js.native
+    var actions: js.UndefOr[js.Array[ACTIONS]] = js.undefined
     
-    var getEditor: js.UndefOr[js.Function0[RichTextEditor]] = js.native
+    var getEditor: js.UndefOr[js.Function0[RichTextEditor]] = js.undefined
     
-    var iconMap: js.UndefOr[IconsMap] = js.native
+    var iconMap: js.UndefOr[IconsMap] = js.undefined
     
-    var iconTint: js.UndefOr[String] = js.native
+    var iconTint: js.UndefOr[String] = js.undefined
     
-    var onPressAddImage: js.UndefOr[FunctionWithZeroArgs] = js.native
+    var onPressAddImage: js.UndefOr[FunctionWithZeroArgs] = js.undefined
     
-    var onPressAddLink: js.UndefOr[FunctionWithZeroArgs] = js.native
+    var onPressAddLink: js.UndefOr[FunctionWithZeroArgs] = js.undefined
     
-    var renderAction: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var renderAction: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
-    var selectedButtonStyle: js.UndefOr[ElementStyles] = js.native
+    var selectedButtonStyle: js.UndefOr[ElementStyles] = js.undefined
     
-    var selectedIconTint: js.UndefOr[String] = js.native
+    var selectedIconTint: js.UndefOr[String] = js.undefined
     
-    var unselectedButtonStyle: js.UndefOr[ElementStyles] = js.native
+    var unselectedButtonStyle: js.UndefOr[ElementStyles] = js.undefined
   }
   object PartialRichTextToolbarPro {
     

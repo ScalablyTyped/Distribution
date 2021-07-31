@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a static list of media marker types. */
 @JSGlobal("Windows.Media.MediaMarkerTypes")
 @js.native
 abstract class MediaMarkerTypes ()
-  extends typings.winrtUwp.Windows.Media.MediaMarkerTypes
+  extends StObject
+     with typings.winrtUwp.Windows.Media.MediaMarkerTypes
 object MediaMarkerTypes {
   
   @JSGlobal("Windows.Media.MediaMarkerTypes")

@@ -2,25 +2,23 @@ package typings.atom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusBarMod {
   
-  @js.native
   trait AddTileOptions extends StObject {
     
     /**
       *  A DOM element, a jQuery object, or a model object for which a view provider
       *  has been registered in the the view registry.
       */
-    var item: js.Object = js.native
+    var item: js.Object
     
     /**
       *  Determines the placement of the tile within the status bar. Lower priority
       *  will result in closer placement to the anchor.
       */
-    var priority: Double = js.native
+    var priority: Double
   }
   object AddTileOptions {
     
@@ -41,26 +39,25 @@ object statusBarMod {
     }
   }
   
-  @js.native
   trait StatusBar extends StObject {
     
     /**
       *  Add a tile to the left side of the status bar. Lower priority tiles are placed
       *  further to the left.
       */
-    def addLeftTile(options: AddTileOptions): Tile = js.native
+    def addLeftTile(options: AddTileOptions): Tile
     
     /**
       *  Add a tile to the right side of the status bar. Lower priority tiles are placed
       *  further to the right.
       */
-    def addRightTile(options: AddTileOptions): Tile = js.native
+    def addRightTile(options: AddTileOptions): Tile
     
     /** Retrieve all of the tiles on the left side of the status bar. */
-    def getLeftTiles(): js.Array[Tile] = js.native
+    def getLeftTiles(): js.Array[Tile]
     
     /** Retrieve all of the tiles on the right side of the status bar. */
-    def getRightTiles(): js.Array[Tile] = js.native
+    def getRightTiles(): js.Array[Tile]
   }
   object StatusBar {
     
@@ -92,17 +89,16 @@ object statusBarMod {
     }
   }
   
-  @js.native
   trait Tile extends StObject {
     
     /** Remove the Tile from the status bar. */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /** Retrieve the Tile's item. */
-    def getItem(): js.Object = js.native
+    def getItem(): js.Object
     
     /** Retrieve the priority that was assigned to the Tile when it was created. */
-    def getPriority(): Double = js.native
+    def getPriority(): Double
   }
   object Tile {
     

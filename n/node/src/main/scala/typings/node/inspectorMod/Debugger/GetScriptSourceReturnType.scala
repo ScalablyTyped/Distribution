@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScriptSourceReturnType extends StObject {
   
   /**
     * Script source.
     */
-  var scriptSource: String = js.native
+  var scriptSource: String
 }
 object GetScriptSourceReturnType {
   

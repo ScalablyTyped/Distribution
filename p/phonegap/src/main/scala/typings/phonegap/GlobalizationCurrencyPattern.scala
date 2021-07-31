@@ -2,23 +2,21 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalizationCurrencyPattern extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var decimal: String = js.native
+  var decimal: String
   
-  var fraction: Double = js.native
+  var fraction: Double
   
-  var grouping: String = js.native
+  var grouping: String
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var rounding: Double = js.native
+  var rounding: Double
 }
 object GlobalizationCurrencyPattern {
   

@@ -17,7 +17,6 @@ import typings.vscodeLanguageserverProtocol.mod.Proposed.SemanticTokensOptions
 import typings.vscodeLanguageserverProtocol.mod.Proposed.SemanticTokensRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticTokensProposedMod {
@@ -101,6 +100,10 @@ object semanticTokensProposedMod {
     
     object languages {
       
+      @JSImport("vscode", "languages")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Register a semantic tokens provider for a document range.
         *
@@ -112,13 +115,12 @@ object semanticTokensProposedMod {
         * @param provider A document range semantic tokens provider.
         * @return A [disposable](#Disposable) that unregisters this provider when being disposed.
         */
-      @JSImport("vscode", "languages.registerDocumentRangeSemanticTokensProvider")
-      @js.native
+      @scala.inline
       def registerDocumentRangeSemanticTokensProvider(
         selector: DocumentSelector,
         provider: DocumentRangeSemanticTokensProvider,
         legend: SemanticTokensLegend
-      ): Disposable = js.native
+      ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentRangeSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
       
       /**
         * Register a semantic tokens provider for a whole document.
@@ -131,22 +133,20 @@ object semanticTokensProposedMod {
         * @param provider A document semantic tokens provider.
         * @return A [disposable](#Disposable) that unregisters this provider when being disposed.
         */
-      @JSImport("vscode", "languages.registerDocumentSemanticTokensProvider")
-      @js.native
-      def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = js.native
+      @scala.inline
+      def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
     }
     
     /**
       * The document range semantic tokens provider interface defines the contract between extensions and
       * semantic tokens.
       */
-    @js.native
     trait DocumentRangeSemanticTokensProvider extends StObject {
       
       /**
         * See [provideDocumentSemanticTokens](#DocumentSemanticTokensProvider.provideDocumentSemanticTokens).
         */
-      def provideDocumentRangeSemanticTokens(document: TextDocument, range: Range, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+      def provideDocumentRangeSemanticTokens(document: TextDocument, range: Range, token: CancellationToken): ProviderResult[SemanticTokens]
     }
     object DocumentRangeSemanticTokensProvider {
       
@@ -170,7 +170,6 @@ object semanticTokensProposedMod {
       * The document semantic tokens provider interface defines the contract between extensions and
       * semantic tokens.
       */
-    @js.native
     trait DocumentSemanticTokensProvider extends StObject {
       
       /**
@@ -231,7 +230,7 @@ object semanticTokensProposedMod {
         *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
         * ```
         */
-      def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+      def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens]
       
       /**
         * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
@@ -293,7 +292,7 @@ object semanticTokensProposedMod {
               /* token */ CancellationToken, 
               ProviderResult[SemanticTokens | SemanticTokensEdits]
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object DocumentSemanticTokensProvider {
       
@@ -343,7 +342,6 @@ object semanticTokensProposedMod {
     ProviderResult[SemanticTokens]
   ]
   
-  @js.native
   trait SemanticTokensMiddleware extends StObject {
     
     var provideDocumentRangeSemanticTokens: js.UndefOr[
@@ -355,7 +353,7 @@ object semanticTokensProposedMod {
           /* next */ DocumentRangeSemanticTokensSignature, 
           ProviderResult[SemanticTokens]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var provideDocumentSemanticTokens: js.UndefOr[
         js.ThisFunction3[
@@ -365,7 +363,7 @@ object semanticTokensProposedMod {
           /* next */ DocumentSemanticsTokensSignature, 
           ProviderResult[SemanticTokens]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var provideDocumentSemanticTokensEdits: js.UndefOr[
         js.ThisFunction4[
@@ -376,7 +374,7 @@ object semanticTokensProposedMod {
           /* next */ DocumentSemanticsTokensEditsSignature, 
           ProviderResult[SemanticTokensEdits | SemanticTokens]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SemanticTokensMiddleware {
     
@@ -435,12 +433,11 @@ object semanticTokensProposedMod {
     }
   }
   
-  @js.native
   trait SemanticTokensProviders extends StObject {
     
-    var document: DocumentSemanticTokensProvider = js.native
+    var document: DocumentSemanticTokensProvider
     
-    var range: js.UndefOr[DocumentRangeSemanticTokensProvider] = js.native
+    var range: js.UndefOr[DocumentRangeSemanticTokensProvider] = js.undefined
   }
   object SemanticTokensProviders {
     

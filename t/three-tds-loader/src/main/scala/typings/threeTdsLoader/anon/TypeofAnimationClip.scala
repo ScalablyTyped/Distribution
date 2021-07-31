@@ -6,11 +6,12 @@ import typings.three.geometryMod.MorphTarget
 import typings.three.mod.AnimationClip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofAnimationClip extends Instantiable0[AnimationClip] {
+trait TypeofAnimationClip
+  extends StObject
+     with Instantiable0[AnimationClip] {
   
   def CreateClipsFromMorphTargetSequences(morphTargets: js.Array[MorphTarget], fps: Double, noLoop: Boolean): js.Array[typings.three.animationClipMod.AnimationClip] = js.native
   

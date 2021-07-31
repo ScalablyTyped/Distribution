@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ColumnType extends StObject
 object ColumnType extends StObject {
   
   @js.native
-  sealed trait DATE extends ColumnType
+  sealed trait DATE
+    extends StObject
+       with ColumnType
   
   @js.native
-  sealed trait NUMBER extends ColumnType
+  sealed trait NUMBER
+    extends StObject
+       with ColumnType
   
   @js.native
-  sealed trait STRING extends ColumnType
+  sealed trait STRING
+    extends StObject
+       with ColumnType
 }

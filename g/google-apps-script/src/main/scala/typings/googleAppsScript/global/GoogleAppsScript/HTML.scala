@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HTML {
@@ -37,13 +36,13 @@ object HTML {
   object SandboxMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode & Double] = js.native
     
-    /* 0 */ val EMULATED: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.EMULATED with Double = js.native
+    /* 0 */ val EMULATED: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.EMULATED & Double = js.native
     
-    /* 1 */ val IFRAME: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.IFRAME with Double = js.native
+    /* 1 */ val IFRAME: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.IFRAME & Double = js.native
     
-    /* 2 */ val NATIVE: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.NATIVE with Double = js.native
+    /* 2 */ val NATIVE: typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode.NATIVE & Double = js.native
   }
   
   /**
@@ -65,10 +64,10 @@ object HTML {
   object XFrameOptionsMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode & Double] = js.native
     
-    /* 0 */ val ALLOWALL: typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode.ALLOWALL with Double = js.native
+    /* 0 */ val ALLOWALL: typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode.ALLOWALL & Double = js.native
     
-    /* 1 */ val DEFAULT: typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode.DEFAULT with Double = js.native
+    /* 1 */ val DEFAULT: typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode.DEFAULT & Double = js.native
   }
 }

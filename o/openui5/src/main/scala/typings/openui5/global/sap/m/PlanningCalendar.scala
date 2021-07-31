@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.PlanningCalendar")
 @js.native
 class PlanningCalendar protected ()
-  extends typings.openui5.sap.m.PlanningCalendar {
+  extends StObject
+     with typings.openui5.sap.m.PlanningCalendar {
   /**
     * Constructor for a new <code>PlanningCalendar</code>.Accepts an object literal <code>mSettings</code>
     * that defines initialproperty values, aggregated and associated objects as well as event handlers.See

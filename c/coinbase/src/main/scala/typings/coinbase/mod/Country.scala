@@ -2,21 +2,19 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
   /**
     * 2-letter country code
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Country name
     */
-  var name: String = js.native
+  var name: String
 }
 object Country {
   

@@ -3,25 +3,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 import typings.googleapis.anon.Apnsdevicetoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a push token ID resource.
   */
-@js.native
 trait SchemaPushTokenId extends StObject {
   
   /**
     * A push token ID for iOS devices.
     */
-  var ios: js.UndefOr[Apnsdevicetoken] = js.native
+  var ios: js.UndefOr[Apnsdevicetoken] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#pushTokenId.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPushTokenId {
   

@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** data returned by docking handler */
-@js.native
 trait DockingData extends StObject {
   
   /** specifies the position and size where the window would be placed if the user releases the mouse */
-  var TrackingRectangle: Rectangle = js.native
+  var TrackingRectangle: Rectangle
   
   /** specifies that the window should be floating (TRUE) or docked (FALSE) */
-  var bFloating: Boolean = js.native
+  var bFloating: Boolean
 }
 object DockingData {
   

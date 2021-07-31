@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Midi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MessageReceived event. */
-@js.native
 trait MidiMessageReceivedEventArgs extends StObject {
   
   /** The MIDI message. */
-  var message: IMidiMessage = js.native
+  var message: IMidiMessage
 }
 object MidiMessageReceivedEventArgs {
   

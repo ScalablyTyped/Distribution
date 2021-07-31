@@ -2,23 +2,21 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Language extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var layouts: js.UndefOr[js.Array[_]] = js.native
+  var layouts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Language {
   
@@ -50,7 +48,7 @@ object Language {
     def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setLayouts(value: js.Array[_]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+    def setLayouts(value: js.Array[js.Any]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)

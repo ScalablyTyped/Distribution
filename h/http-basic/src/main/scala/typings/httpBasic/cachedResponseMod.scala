@@ -4,23 +4,21 @@ import typings.httpBasic.headersMod.Headers
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cachedResponseMod {
   
-  @js.native
   trait CachedResponse extends StObject {
     
-    var body: ReadableStream = js.native
+    var body: ReadableStream
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var requestHeaders: Headers = js.native
+    var requestHeaders: Headers
     
-    var requestTimestamp: Double = js.native
+    var requestTimestamp: Double
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object CachedResponse {
     

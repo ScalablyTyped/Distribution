@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesAddResourcePoliciesRequest extends StObject {
   
   /** Resource policies to be added to this instance. */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
 }
 object InstancesAddResourcePoliciesRequest {
   

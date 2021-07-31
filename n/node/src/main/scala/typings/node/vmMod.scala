@@ -6,10 +6,13 @@ import typings.node.anon.Strings
 import typings.node.nodeStrings.afterEvaluate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vmMod {
+  
+  @JSImport("vm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vm", "Script")
   @js.native
@@ -23,7 +26,7 @@ object vmMod {
     def runInContext(contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
     
     def runInNewContext(): js.Any = js.native
-    def runInNewContext(sandbox: js.UndefOr[scala.Nothing], options: RunningScriptOptions): js.Any = js.native
+    def runInNewContext(sandbox: Unit, options: RunningScriptOptions): js.Any = js.native
     def runInNewContext(sandbox: Context): js.Any = js.native
     def runInNewContext(sandbox: Context, options: RunningScriptOptions): js.Any = js.native
     
@@ -31,35 +34,26 @@ object vmMod {
     def runInThisContext(options: RunningScriptOptions): js.Any = js.native
   }
   
-  @JSImport("vm", "compileFunction")
-  @js.native
-  def compileFunction(code: java.lang.String): js.Function = js.native
-  @JSImport("vm", "compileFunction")
-  @js.native
-  def compileFunction(code: java.lang.String, params: js.UndefOr[scala.Nothing], options: CompileFunctionOptions): js.Function = js.native
-  @JSImport("vm", "compileFunction")
-  @js.native
-  def compileFunction(code: java.lang.String, params: js.Array[java.lang.String]): js.Function = js.native
-  @JSImport("vm", "compileFunction")
-  @js.native
-  def compileFunction(code: java.lang.String, params: js.Array[java.lang.String], options: CompileFunctionOptions): js.Function = js.native
+  @scala.inline
+  def compileFunction(code: java.lang.String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFunction")(code.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def compileFunction(code: java.lang.String, params: js.Array[java.lang.String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFunction")(code.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def compileFunction(code: java.lang.String, params: js.Array[java.lang.String], options: CompileFunctionOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFunction")(code.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def compileFunction(code: java.lang.String, params: Unit, options: CompileFunctionOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFunction")(code.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("vm", "createContext")
-  @js.native
-  def createContext(): Context = js.native
-  @JSImport("vm", "createContext")
-  @js.native
-  def createContext(sandbox: js.UndefOr[scala.Nothing], options: CreateContextOptions): Context = js.native
-  @JSImport("vm", "createContext")
-  @js.native
-  def createContext(sandbox: Context): Context = js.native
-  @JSImport("vm", "createContext")
-  @js.native
-  def createContext(sandbox: Context, options: CreateContextOptions): Context = js.native
+  @scala.inline
+  def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
+  @scala.inline
+  def createContext(sandbox: Unit, options: CreateContextOptions): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Context]
+  @scala.inline
+  def createContext(sandbox: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(sandbox.asInstanceOf[js.Any]).asInstanceOf[Context]
+  @scala.inline
+  def createContext(sandbox: Context, options: CreateContextOptions): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("vm", "isContext")
-  @js.native
-  def isContext(sandbox: Context): Boolean = js.native
+  @scala.inline
+  def isContext(sandbox: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContext")(sandbox.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Measure the memory known to V8 and used by the current execution context or a specified context.
@@ -76,72 +70,57 @@ object vmMod {
     *
     * @experimental
     */
-  @JSImport("vm", "measureMemory")
-  @js.native
-  def measureMemory(): js.Promise[MemoryMeasurement] = js.native
-  @JSImport("vm", "measureMemory")
-  @js.native
-  def measureMemory(options: MeasureMemoryOptions): js.Promise[MemoryMeasurement] = js.native
+  @scala.inline
+  def measureMemory(): js.Promise[MemoryMeasurement] = ^.asInstanceOf[js.Dynamic].applyDynamic("measureMemory")().asInstanceOf[js.Promise[MemoryMeasurement]]
+  @scala.inline
+  def measureMemory(options: MeasureMemoryOptions): js.Promise[MemoryMeasurement] = ^.asInstanceOf[js.Dynamic].applyDynamic("measureMemory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MemoryMeasurement]]
   
-  @JSImport("vm", "runInContext")
-  @js.native
-  def runInContext(code: java.lang.String, contextifiedSandbox: Context): js.Any = js.native
-  @JSImport("vm", "runInContext")
-  @js.native
-  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInContext")
-  @js.native
-  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
+  @scala.inline
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(code.asInstanceOf[js.Any], contextifiedSandbox.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(code.asInstanceOf[js.Any], contextifiedSandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(code.asInstanceOf[js.Any], contextifiedSandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String, sandbox: js.UndefOr[scala.Nothing], options: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String, sandbox: js.UndefOr[scala.Nothing], options: RunningScriptOptions): js.Any = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String, sandbox: Context): js.Any = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String, sandbox: Context, options: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: java.lang.String, sandbox: Context, options: RunningScriptOptions): js.Any = js.native
+  @scala.inline
+  def runInNewContext(code: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def runInNewContext(code: java.lang.String, sandbox: Unit, options: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInNewContext(code: java.lang.String, sandbox: Unit, options: RunningScriptOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInNewContext(code: java.lang.String, sandbox: Context): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInNewContext(code: java.lang.String, sandbox: Context, options: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInNewContext(code: java.lang.String, sandbox: Context, options: RunningScriptOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("vm", "runInThisContext")
-  @js.native
-  def runInThisContext(code: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInThisContext")
-  @js.native
-  def runInThisContext(code: java.lang.String, options: java.lang.String): js.Any = js.native
-  @JSImport("vm", "runInThisContext")
-  @js.native
-  def runInThisContext(code: java.lang.String, options: RunningScriptOptions): js.Any = js.native
+  @scala.inline
+  def runInThisContext(code: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("runInThisContext")(code.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def runInThisContext(code: java.lang.String, options: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInThisContext")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def runInThisContext(code: java.lang.String, options: RunningScriptOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runInThisContext")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
       * Specifies the column number offset that is displayed in stack traces produced by this script.
       * Default: `0`
       */
-    var columnOffset: js.UndefOr[Double] = js.native
+    var columnOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the filename used in stack traces produced by this script.
       * Default: `''`.
       */
-    var filename: js.UndefOr[java.lang.String] = js.native
+    var filename: js.UndefOr[java.lang.String] = js.undefined
     
     /**
       * Specifies the line number offset that is displayed in stack traces produced by this script.
       * Default: `0`.
       */
-    var lineOffset: js.UndefOr[Double] = js.native
+    var lineOffset: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -174,29 +153,30 @@ object vmMod {
     }
   }
   
-  @js.native
-  trait CompileFunctionOptions extends BaseOptions {
+  trait CompileFunctionOptions
+    extends StObject
+       with BaseOptions {
     
     /**
       * Provides an optional data with V8's code cache data for the supplied source.
       */
-    var cachedData: js.UndefOr[Buffer] = js.native
+    var cachedData: js.UndefOr[Buffer] = js.undefined
     
     /**
       * An array containing a collection of context extensions (objects wrapping the current scope) to be applied while compiling
       */
-    var contextExtensions: js.UndefOr[js.Array[js.Object]] = js.native
+    var contextExtensions: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     /**
       * The sandbox/context in which the said function should be compiled in.
       */
-    var parsingContext: js.UndefOr[Context] = js.native
+    var parsingContext: js.UndefOr[Context] = js.undefined
     
     /**
       * Specifies whether to produce new cache data.
       * Default: `false`,
       */
-    var produceCachedData: js.UndefOr[Boolean] = js.native
+    var produceCachedData: js.UndefOr[Boolean] = js.undefined
   }
   object CompileFunctionOptions {
     
@@ -240,16 +220,15 @@ object vmMod {
   
   type Context = Dict[js.Any]
   
-  @js.native
   trait CreateContextOptions extends StObject {
     
-    var codeGeneration: js.UndefOr[Strings] = js.native
+    var codeGeneration: js.UndefOr[Strings] = js.undefined
     
     /**
       * Human-readable name of the newly created context.
       * @default 'VM Context i' Where i is an ascending numerical index of the created context.
       */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /**
       * Corresponds to the newly created context for display purposes.
@@ -258,7 +237,7 @@ object vmMod {
       * Most notably, this string should omit the trailing slash, as that denotes a path.
       * @default ''
       */
-    var origin: js.UndefOr[java.lang.String] = js.native
+    var origin: js.UndefOr[java.lang.String] = js.undefined
   }
   object CreateContextOptions {
     
@@ -305,15 +284,14 @@ object vmMod {
     def summary: typings.node.nodeStrings.summary = "summary".asInstanceOf[typings.node.nodeStrings.summary]
   }
   
-  @js.native
   trait MeasureMemoryOptions extends StObject {
     
-    var context: js.UndefOr[Context] = js.native
+    var context: js.UndefOr[Context] = js.undefined
     
     /**
       * @default 'summary'
       */
-    var mode: js.UndefOr[MeasureMemoryMode] = js.native
+    var mode: js.UndefOr[MeasureMemoryMode] = js.undefined
   }
   object MeasureMemoryOptions {
     
@@ -340,10 +318,9 @@ object vmMod {
     }
   }
   
-  @js.native
   trait MemoryMeasurement extends StObject {
     
-    var total: JsMemoryEstimate = js.native
+    var total: JsMemoryEstimate
   }
   object MemoryMeasurement {
     
@@ -361,8 +338,9 @@ object vmMod {
     }
   }
   
-  @js.native
-  trait RunningScriptOptions extends BaseOptions {
+  trait RunningScriptOptions
+    extends StObject
+       with BaseOptions {
     
     /**
       * If `true`, the execution will be terminated when `SIGINT` (Ctrl+C) is received.
@@ -370,24 +348,24 @@ object vmMod {
       * If execution is terminated, an `Error` will be thrown.
       * Default: `false`.
       */
-    var breakOnSigint: js.UndefOr[Boolean] = js.native
+    var breakOnSigint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true`, if an `Error` occurs while compiling the `code`, the line of code causing the error is attached to the stack trace.
       * Default: `true`.
       */
-    var displayErrors: js.UndefOr[Boolean] = js.native
+    var displayErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `afterEvaluate`, microtasks will be run immediately after the script has run.
       */
-    var microtaskMode: js.UndefOr[afterEvaluate] = js.native
+    var microtaskMode: js.UndefOr[afterEvaluate] = js.undefined
     
     /**
       * Specifies the number of milliseconds to execute code before terminating execution.
       * If execution is terminated, an `Error` will be thrown. This value must be a strictly positive integer.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RunningScriptOptions {
     
@@ -426,16 +404,17 @@ object vmMod {
     }
   }
   
-  @js.native
-  trait ScriptOptions extends BaseOptions {
+  trait ScriptOptions
+    extends StObject
+       with BaseOptions {
     
-    var cachedData: js.UndefOr[Buffer] = js.native
+    var cachedData: js.UndefOr[Buffer] = js.undefined
     
-    var displayErrors: js.UndefOr[Boolean] = js.native
+    var displayErrors: js.UndefOr[Boolean] = js.undefined
     
-    var produceCachedData: js.UndefOr[Boolean] = js.native
+    var produceCachedData: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ScriptOptions {
     

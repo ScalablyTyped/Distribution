@@ -3,36 +3,34 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.Clustering
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTableList extends StObject {
   
   /**
     * A hash of this page of results.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The type of list.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A token to request the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Tables in the requested dataset.
     */
-  var tables: js.UndefOr[js.Array[Clustering]] = js.native
+  var tables: js.UndefOr[js.Array[Clustering]] = js.undefined
   
   /**
     * The total number of tables in the dataset.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaTableList {
   

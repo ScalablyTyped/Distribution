@@ -2,27 +2,25 @@ package typings.expo.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
-  var repeat: js.UndefOr[Boolean] = js.native
+  var repeat: js.UndefOr[Boolean] = js.undefined
   
-  var second: js.UndefOr[Double] = js.native
+  var second: js.UndefOr[Double] = js.undefined
   
-  var weekDay: js.UndefOr[Double] = js.native
+  var weekDay: js.UndefOr[Double] = js.undefined
   
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object Day {
   

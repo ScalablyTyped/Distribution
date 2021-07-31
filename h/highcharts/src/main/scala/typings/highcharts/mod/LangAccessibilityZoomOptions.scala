@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityZoomOptions extends StObject {
   
-  var mapZoomIn: js.UndefOr[String] = js.native
+  var mapZoomIn: js.UndefOr[String] = js.undefined
   
-  var mapZoomOut: js.UndefOr[String] = js.native
+  var mapZoomOut: js.UndefOr[String] = js.undefined
   
-  var resetZoomButton: js.UndefOr[String] = js.native
+  var resetZoomButton: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityZoomOptions {
   

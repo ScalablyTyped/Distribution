@@ -2,26 +2,26 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MipsInstruction extends Instruction {
+trait MipsInstruction
+  extends StObject
+     with Instruction {
   
   /**
     * Array of objects describing each operand.
     */
-  var operands: js.Array[MipsOperand] = js.native
+  var operands: js.Array[MipsOperand]
   
   /**
     * Registers implicitly read by this instruction.
     */
-  var regsRead: js.Array[MipsRegister] = js.native
+  var regsRead: js.Array[MipsRegister]
   
   /**
     * Registers implicitly written to by this instruction.
     */
-  var regsWritten: js.Array[MipsRegister] = js.native
+  var regsWritten: js.Array[MipsRegister]
 }
 object MipsInstruction {
   

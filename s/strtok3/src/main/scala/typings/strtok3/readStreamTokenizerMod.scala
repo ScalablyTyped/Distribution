@@ -5,7 +5,6 @@ import typings.strtok3.abstractTokenizerMod.AbstractTokenizer
 import typings.strtok3.typesMod.IFileInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readStreamTokenizerMod {

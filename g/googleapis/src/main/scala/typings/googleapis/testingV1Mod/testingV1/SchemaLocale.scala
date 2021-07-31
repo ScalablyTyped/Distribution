@@ -2,36 +2,34 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A location/region designation for language.
   */
-@js.native
 trait SchemaLocale extends StObject {
   
   /**
     * The id for this locale. Example: &quot;en_US&quot;.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A human-friendly name for this language/locale. Example:
     * &quot;English&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A human-friendly string representing the region for this locale. Example:
     * &quot;United States&quot;. Not present for every locale.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Tags for this dimension. Example: &quot;default&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaLocale {
   

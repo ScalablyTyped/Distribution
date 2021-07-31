@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_SslHandler")
 @js.native
 class ClassSslHandler protected ()
-  extends typings.fibjs.ClassSslHandler {
+  extends StObject
+     with typings.fibjs.ClassSslHandler {
   /**
     * 
     * @brief SslHandler 构造函数，创建一个新的 SslHandler 对象
@@ -32,7 +32,7 @@ class ClassSslHandler protected ()
     * 
     * 
     */
-  def this(certs: js.Array[_], hdlr: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[js.Any], hdlr: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslHandler 构造函数，创建一个新的 SslHandler 对象

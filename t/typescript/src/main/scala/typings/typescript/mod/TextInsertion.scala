@@ -2,16 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInsertion extends StObject {
   
   /** The position in newText the caret should point to after the insertion. */
-  var caretOffset: Double = js.native
+  var caretOffset: Double
   
-  var newText: java.lang.String = js.native
+  var newText: java.lang.String
 }
 object TextInsertion {
   

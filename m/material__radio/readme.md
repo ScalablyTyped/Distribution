@@ -10,9 +10,9 @@ The Material Components for the web radio component
 | ------------------ | :-------------: |
 | Full name          | @material/radio |
 | Keywords           | material components, material design, radio |
-| # releases         | 667 |
-| # dependents       | 53 |
-| # downloads        | 2137133 |
+| # releases         | 762 |
+| # dependents       | 56 |
+| # downloads        | 2257464 |
 | # stars            | 0 |
 
 ## Links

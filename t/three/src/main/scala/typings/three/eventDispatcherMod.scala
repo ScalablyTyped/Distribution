@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.three.anon.Dictattachment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventDispatcherMod {
@@ -44,13 +43,13 @@ object eventDispatcherMod {
     def removeEventListener(`type`: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Event
-    extends /* attachment */ StringDictionary[js.Any] {
+    extends StObject
+       with /* attachment */ StringDictionary[js.Any] {
     
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     

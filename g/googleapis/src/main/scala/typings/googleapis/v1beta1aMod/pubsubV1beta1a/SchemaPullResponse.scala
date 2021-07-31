@@ -2,25 +2,23 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Either a &lt;code&gt;PubsubMessage&lt;/code&gt; or a truncation event. One
   * of these two must be populated.
   */
-@js.native
 trait SchemaPullResponse extends StObject {
   
   /**
     * This ID must be used to acknowledge the received event or message.
     */
-  var ackId: js.UndefOr[String] = js.native
+  var ackId: js.UndefOr[String] = js.undefined
   
   /**
     * A pubsub message or truncation event.
     */
-  var pubsubEvent: js.UndefOr[SchemaPubsubEvent] = js.native
+  var pubsubEvent: js.UndefOr[SchemaPubsubEvent] = js.undefined
 }
 object SchemaPullResponse {
   

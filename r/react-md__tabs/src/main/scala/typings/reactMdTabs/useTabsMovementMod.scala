@@ -12,31 +12,32 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTabsMovementMod {
   
-  @JSImport("@react-md/tabs/types/useTabsMovement", "useTabsMovement")
+  @JSImport("@react-md/tabs/types/useTabsMovement", JSImport.Namespace)
   @js.native
-  def useTabsMovement(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange: Options): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useTabsMovement(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabsMovement")(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
   trait Options extends StObject {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var automatic: Boolean = js.native
+    var automatic: Boolean
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var horizontal: Boolean = js.native
+    var horizontal: Boolean
     
-    def onActiveIndexChange(activeIndex: Double): Unit = js.native
+    def onActiveIndexChange(activeIndex: Double): Unit
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   }
   object Options {
     
@@ -81,16 +82,15 @@ object useTabsMovementMod {
     }
   }
   
-  @js.native
   trait ReturnValue extends StObject {
     
-    var handleClick: MouseEventHandler[HTMLDivElement] = js.native
+    var handleClick: MouseEventHandler[HTMLDivElement]
     
-    var handleKeyDown: KeyboardEventHandler[HTMLDivElement] = js.native
+    var handleKeyDown: KeyboardEventHandler[HTMLDivElement]
     
-    var itemRefs: ItemRefList[HTMLElement] = js.native
+    var itemRefs: ItemRefList[HTMLElement]
     
-    var tabs: js.Array[ReactNode] = js.native
+    var tabs: js.Array[ReactNode]
   }
   object ReturnValue {
     

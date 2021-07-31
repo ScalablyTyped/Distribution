@@ -2,7 +2,6 @@ package typings.smartystreetsJavascriptSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usStreet {
@@ -36,7 +35,8 @@ object usStreet {
   @JSImport("smartystreets-javascript-sdk", "usStreet.Lookup")
   @js.native
   class Lookup protected ()
-    extends typings.smartystreetsJavascriptSdk.mod.core.Lookup {
+    extends StObject
+       with typings.smartystreetsJavascriptSdk.mod.core.Lookup {
     def this(
       street1: js.UndefOr[String],
       street2: js.UndefOr[String],
@@ -79,28 +79,27 @@ object usStreet {
     var zipCode: String = js.native
   }
   
-  @js.native
   trait Analysis extends StObject {
     
-    var active: String = js.native
+    var active: String
     
-    var cmra: String = js.native
+    var cmra: String
     
-    var dpvFootnotes: String = js.native
+    var dpvFootnotes: String
     
-    var dpvMatchCode: String = js.native
+    var dpvMatchCode: String
     
-    var footnotes: String = js.native
+    var footnotes: String
     
-    var isEwsMatch: Boolean = js.native
+    var isEwsMatch: Boolean
     
-    var isSuiteLinkMatch: Boolean = js.native
+    var isSuiteLinkMatch: Boolean
     
-    var lacsLinkCode: js.Any = js.native
+    var lacsLinkCode: js.Any
     
-    var lacsLinkIndicator: js.Any = js.native
+    var lacsLinkIndicator: js.Any
     
-    var vacant: String = js.native
+    var vacant: String
   }
   object Analysis {
     
@@ -156,46 +155,45 @@ object usStreet {
     }
   }
   
-  @js.native
   trait Componenet extends StObject {
     
-    var cityName: String = js.native
+    var cityName: String
     
-    var defaultCityName: String = js.native
+    var defaultCityName: String
     
-    var deliveryPoint: String = js.native
+    var deliveryPoint: String
     
-    var deliveryPointCheckDigit: String = js.native
+    var deliveryPointCheckDigit: String
     
-    var extraSecondaryDesignator: js.Any = js.native
+    var extraSecondaryDesignator: js.Any
     
-    var extraSecondaryNumber: js.Any = js.native
+    var extraSecondaryNumber: js.Any
     
-    var plus4Code: String = js.native
+    var plus4Code: String
     
-    var pmbDesignator: js.Any = js.native
+    var pmbDesignator: js.Any
     
-    var pmbNumber: js.Any = js.native
+    var pmbNumber: js.Any
     
-    var primaryNumber: String = js.native
+    var primaryNumber: String
     
-    var secondaryDesignator: String = js.native
+    var secondaryDesignator: String
     
-    var secondaryNumber: String = js.native
+    var secondaryNumber: String
     
-    var state: String = js.native
+    var state: String
     
-    var streetName: String = js.native
+    var streetName: String
     
-    var streetPostdirection: String = js.native
+    var streetPostdirection: String
     
-    var streetPredirection: String = js.native
+    var streetPredirection: String
     
-    var streetSuffix: String = js.native
+    var streetSuffix: String
     
-    var urbanization: String = js.native
+    var urbanization: String
     
-    var zipCode: String = js.native
+    var zipCode: String
   }
   object Componenet {
     
@@ -287,42 +285,41 @@ object usStreet {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var buildingDefaultIndicator: js.Any = js.native
+    var buildingDefaultIndicator: js.Any
     
-    var carrierRoute: String = js.native
+    var carrierRoute: String
     
-    var congressionalDistrict: String = js.native
+    var congressionalDistrict: String
     
-    var countyFips: String = js.native
+    var countyFips: String
     
-    var countyName: String = js.native
+    var countyName: String
     
-    var elotSequence: String = js.native
+    var elotSequence: String
     
-    var elotSort: String = js.native
+    var elotSort: String
     
-    var isEwsMatch: Boolean = js.native
+    var isEwsMatch: Boolean
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var obeysDst: Boolean = js.native
+    var obeysDst: Boolean
     
-    var precision: String = js.native
+    var precision: String
     
-    var rdi: String = js.native
+    var rdi: String
     
-    var recordType: String = js.native
+    var recordType: String
     
-    var timeZone: String = js.native
+    var timeZone: String
     
-    var utcOffset: Double = js.native
+    var utcOffset: Double
     
-    var zipType: String = js.native
+    var zipType: String
   }
   object Metadata {
     

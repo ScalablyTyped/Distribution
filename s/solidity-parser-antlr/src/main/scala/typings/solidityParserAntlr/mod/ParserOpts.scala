@@ -2,17 +2,15 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOpts extends StObject {
   
-  var loc: js.UndefOr[Boolean] = js.native
+  var loc: js.UndefOr[Boolean] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var tolerant: js.UndefOr[Boolean] = js.native
+  var tolerant: js.UndefOr[Boolean] = js.undefined
 }
 object ParserOpts {
   

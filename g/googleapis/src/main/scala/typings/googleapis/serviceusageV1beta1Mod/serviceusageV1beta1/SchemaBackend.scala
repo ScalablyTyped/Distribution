@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Backend` defines the backend configuration for a service.
   */
-@js.native
 trait SchemaBackend extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaBackend extends StObject {
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaBackendRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaBackendRule]] = js.undefined
 }
 object SchemaBackend {
   

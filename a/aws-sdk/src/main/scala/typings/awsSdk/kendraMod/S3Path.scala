@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Path extends StObject {
   
   /**
     * The name of the S3 bucket that contains the file.
     */
-  var Bucket: S3BucketName = js.native
+  var Bucket: S3BucketName
   
   /**
     * The name of the file.
     */
-  var Key: S3ObjectKey = js.native
+  var Key: S3ObjectKey
 }
 object S3Path {
   

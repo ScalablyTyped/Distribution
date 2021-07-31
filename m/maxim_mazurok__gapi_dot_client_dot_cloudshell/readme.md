@@ -10,9 +10,9 @@ TypeScript typings for Cloud Shell API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudshell |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 17 |
 | # dependents       | 1 |
-| # downloads        | 86 |
+| # downloads        | 1353 |
 | # stars            | 0 |
 
 ## Links

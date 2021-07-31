@@ -2,7 +2,6 @@ package typings.twilsock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object offlinestorageMod {
@@ -16,9 +15,12 @@ object offlinestorageMod {
   }
   object OfflineProductStorage {
     
-    /* static member */
-    @JSImport("twilsock/lib/offlinestorage", "OfflineProductStorage.create")
+    @JSImport("twilsock/lib/offlinestorage", "OfflineProductStorage")
     @js.native
-    def create(productPayload: js.Any): OfflineProductStorage = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def create(productPayload: js.Any): OfflineProductStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(productPayload.asInstanceOf[js.Any]).asInstanceOf[OfflineProductStorage]
   }
 }
